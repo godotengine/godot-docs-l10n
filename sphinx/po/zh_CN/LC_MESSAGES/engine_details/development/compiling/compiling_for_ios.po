@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -24,12 +24,6 @@ msgstr ""
 
 msgid "Requirements"
 msgstr "需求"
-
-msgid "`Python 3.8+ <https://www.python.org/downloads/macos/>`_."
-msgstr "`Python 3.8+ <https://www.python.org/downloads/macos/>`_."
-
-msgid "`SCons 4.0+ <https://scons.org/pages/download.html>`_ build system."
-msgstr "`SCons 4.0+ <https://scons.org/pages/download.html>`_ 构建系统。"
 
 msgid "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_."
 msgstr "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_\\ 。"
@@ -125,20 +119,6 @@ msgstr ""
 "一旦创建完成，MoltenVK 的静态 ``.xcframework`` 文件夹也必须被放入 "
 "``ios_xcode`` 文件夹中。在 iOS 平台上，MoltenVK 始终采用静态链接；与 macOS 不"
 "同，iOS 上并没有提供动态链接的选项。"
-
-msgid ""
-"Compiling for the iOS simulator is currently not supported as per `GH-102149 "
-"<https://github.com/godotengine/godot/issues/102149>`__."
-msgstr ""
-"目前，编译 iOS 模拟器版本是不受支持的，具体详情请参考 `GH-102149 <https://"
-"github.com/godotengine/godot/issues/102149>`__。"
-
-msgid ""
-"Apple Silicon Macs can run iOS apps natively, so you can run exported iOS "
-"projects directly on an Apple Silicon Mac without needing the iOS simulator."
-msgstr ""
-"Apple Silicon Mac 可以原生运行 iOS 应用，因此你可以直接在 Apple Silicon Mac "
-"上运行导出的 iOS 项目，而无需 iOS 模拟器。"
 
 msgid "Run"
 msgstr "运行"

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -372,9 +372,6 @@ msgstr ""
 "远程过程调用（RPC）是可以在其他对等端上调用的函数。要创建 RPC，请在函数定义之"
 "前使用 ``@rpc`` 注解。要调用 RPC，可使用 ``Callable`` 的 ``rpc()`` 方法在每个"
 "对等端上调用，或使用 ``rpc_id()`` 在特定对等端上调用。"
-
-msgid "RPCs will not serialize objects or callables."
-msgstr "RPC 既不会序列化对象，也不会序列化可调用体。"
 
 msgid ""
 "For a remote call to be successful, the sending and receiving node need to "

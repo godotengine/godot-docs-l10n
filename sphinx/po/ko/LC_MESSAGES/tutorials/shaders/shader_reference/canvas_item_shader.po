@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -279,14 +279,6 @@ msgstr "``if x else``"
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgstr "vec2 **TEXTURE_PIXEL_SIZE**"
 
-msgid ""
-"Normalized pixel size of the default 2D texture. For a Sprite2D with a "
-"texture of size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1.0/64.0, "
-"1.0/32.0)``"
-msgstr ""
-"기본 2D 텍스처의 정규화된 픽셀 크기입니다. 64x32px 크기의 텍스처가 있는 "
-"Sprite2D의 경우 **TEXTURE_PIXEL_SIZE** = ``vec2(1.0/64.0, 1.0/32.0)``"
-
 msgid "inout vec2 **VERTEX**"
 msgstr "inout vec2 **VERTEX**"
 
@@ -412,13 +404,6 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "vec4에서 **FRAGCOORD**"
 
-msgid ""
-"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
-"viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``."
-msgstr ""
-"픽셀 중심의 좌표입니다. 화면 공간에서. ``xy``는 뷰포트의 위치를 지정합니다. "
-"뷰포트의 왼쪽 상단이 원점 ``(0.0, 0.0)``입니다."
-
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "vec2에서 **SCREEN_PIXEL_SIZE**"
 
@@ -428,31 +413,14 @@ msgstr "개별 픽셀의 크기. 해상도의 역수와 같습니다."
 msgid "in vec4 **REGION_RECT**"
 msgstr "vec4 **REGION_RECT**에서"
 
-msgid ""
-"Visible area of the sprite region in format ``(x, y, width, height)``. "
-"Varies according to Sprite2D's ``region_enabled`` property."
-msgstr ""
-"``(x, y, width, height)`` 형식의 스프라이트 영역의 표시 영역입니다. Sprite2D"
-"의 ``region_enabled`` 속성에 따라 다릅니다."
-
 msgid "in vec2 **POINT_COORD**"
 msgstr "vec2 **POINT_COORD**에서"
-
-msgid "Coordinate for drawing points."
-msgstr "점을 그리는 좌표입니다."
 
 msgid "sampler2D **TEXTURE**"
 msgstr "Sampler2D **텍스처**"
 
 msgid "Default 2D texture."
 msgstr "기본 2D 텍스처."
-
-msgid ""
-"Normalized pixel size of the default 2D texture. For a Sprite2D with a "
-"texture of size 64x32px, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1/64, 1/32)``"
-msgstr ""
-"기본 2D 텍스처의 정규화된 픽셀 크기입니다. 64x32px 크기의 텍스처를 가진 "
-"Sprite2D의 경우 ``TEXTURE_PIXEL_SIZE`` = ``vec2(1/64, 1/32)``"
 
 msgid "sampler2D **SPECULAR_SHININESS_TEXTURE**"
 msgstr "Sampler2D **SPECULAR_SHININESS_TEXTURE**"
@@ -601,13 +569,6 @@ msgstr "``vertex()`` 함수의 UV는 ``fragment()`` 함수의 UV와 동일합니
 
 msgid "Current texture in use for the CanvasItem."
 msgstr "CanvasItem에 사용 중인 현재 텍스처입니다."
-
-msgid ""
-"Normalized pixel size of ``TEXTURE``. For a Sprite2D with a ``TEXTURE`` of "
-"size ``64x32`` pixels, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
-msgstr ""
-"``TEXTURE``의 정규화된 픽셀 크기입니다. 크기 ``64x32`` 픽셀의 ``TEXTURE``를 "
-"갖는 Sprite2D의 경우 **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
 
 msgid "UV for Point Sprite."
 msgstr "포인트 스프라이트의 UV."

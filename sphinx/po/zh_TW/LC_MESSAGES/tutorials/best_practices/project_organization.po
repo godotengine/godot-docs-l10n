@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -102,11 +102,6 @@ msgstr ""
 "Godot 3.0 版以前，匯入流程會從專案外部讀取檔案。雖然對於大型專案來說很好用，"
 "但對許多開發者來說卻難以組織。"
 
-msgid ""
-"Because of this, assets are now transparently imported from within the "
-"project folder."
-msgstr "因此，素材現在可以在專案資料夾內透明地匯入。"
-
 msgid "Ignoring specific folders"
 msgstr "忽略特定資料夾"
 
@@ -117,14 +112,6 @@ msgid ""
 msgstr ""
 "若要防止 Godot 從特定資料夾內匯入檔案，可於該資料夾內建立一個空白檔案 "
 "``.gdignore`` (必須以 ``.`` 開頭)。對於初始專案來說能有效提高速度。"
-
-msgid ""
-"To create a file whose name starts with a dot on Windows, place a dot at "
-"both the beginning and end of the filename (\".gdignore.\"). Windows will "
-"automatically remove the trailing dot when you confirm the name."
-msgstr ""
-"若要在 Windows 上建立檔名開頭是點的檔案，請在檔名的開頭和結尾都加上點"
-"（「.gdignore.」）。Windows 會在您確認名稱後自動移除結尾的點。"
 
 msgid ""
 "Alternatively, you can use a text editor such as Notepad++ or use the "

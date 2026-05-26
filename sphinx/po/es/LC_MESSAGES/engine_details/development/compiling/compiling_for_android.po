@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -50,14 +50,6 @@ msgstr "Requerimientos"
 
 msgid "For compiling under Windows, Linux or macOS, the following is required:"
 msgstr "Para compilar en Windows, Linux o macOS, se requiere lo siguiente:"
-
-msgid "`Python 3.8+ <https://www.python.org/downloads/>`_."
-msgstr "`Python 3.8+ <https://www.python.org/downloads/>`_."
-
-msgid "`SCons 4.0+ <https://scons.org/pages/download.html>`_ build system."
-msgstr ""
-"El sistema de construcción `SCons 4.0+ <https://scons.org/pages/"
-"download.html>`_."
 
 msgid "Gradle (will be downloaded and installed automatically if missing)."
 msgstr "Gradle (se descargará e instalará automáticamente si falta)."
@@ -121,10 +113,6 @@ msgstr ""
 "Debug template (se utiliza cuando se exporta con **Debugging Enabled** "
 "encendido)"
 
-msgid "(**Optional**) Dev template (used when troubleshooting)"
-msgstr ""
-"(**Opcional**) Plantilla de desarrollo (se utiliza para solucionar problemas)"
-
 msgid "The resulting templates will be located under the ``bin`` directory:"
 msgstr "Las plantillas resultantes se ubicarán en el directorio ``bin``:"
 
@@ -133,9 +121,6 @@ msgstr "``bin/android_release.apk`` para la plantilla de versión final"
 
 msgid "``bin/android_debug.apk`` for the debug template"
 msgstr "``bin/android_debug.apk`` para la plantilla de desarrollo"
-
-msgid "``bin/android_dev.apk`` for the dev template"
-msgstr "``bin/android_dev.apk`` para la plantilla de desarrollo"
 
 msgid "``bin/android_source.zip`` for the Gradle build template"
 msgstr "``bin/android_source.zip`` para la plantilla de desarrollo"

@@ -1,0 +1,271 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "The .gdextension file"
+msgstr ".gdextension 檔案"
+
+msgid "Introduction"
+msgstr "前言"
+
+msgid ""
+"The ``.gdextension`` file in your project contains the instructions for how "
+"to load the GDExtension. The instructions are separated into specific "
+"sections. This page should give you a quick overview of the different "
+"options available to you. For an introduction how to get started with C++ "
+"(godot-cpp), take a look at the :ref:`GDExtension C++ Example "
+"<doc_godot_cpp_getting_started>`."
+msgstr ""
+"專案中的 ``.gdextension`` 檔案包含如何載入 GDExtension 的指示。這些指示被分成"
+"多個特定區段。本頁會快速總覽你可用的不同選項。若要了解如何開始使用 C++"
+"（godot-cpp），請參閱 :ref:`GDExtension C++ 範例 "
+"<doc_godot_cpp_getting_started>`。"
+
+msgid "Configuration section"
+msgstr "設定區段"
+
+msgid "Property"
+msgstr "屬性"
+
+msgid "Type"
+msgstr "型別"
+
+msgid "Description"
+msgstr "說明"
+
+msgid "**entry_symbol**"
+msgstr "**entry_symbol**"
+
+msgid "String"
+msgstr "字串"
+
+msgid ""
+"Name of the entry function for initializing the GDExtension. This function "
+"should be defined in the ``register_types.cpp`` file when using godot-cpp. "
+"Adding this is necessary for the extension to work."
+msgstr ""
+"初始化 GDExtension 的進入點函式名稱。使用 godot-cpp 時，此函式應定義於 "
+"``register_types.cpp`` 檔案中。若未設定，擴充功能將無法正常運作。"
+
+msgid "**compatibility_minimum**"
+msgstr "**compatibility_minimum**"
+
+msgid ""
+"Minimum compatible version. This prevents older versions of Godot from "
+"loading extensions that depend on features from newer versions of Godot. "
+"**Only supported in Godot 4.1 or later**"
+msgstr ""
+"最低相容版本。此設定可避免舊版 Godot 嘗試載入需要新版功能的擴充功能。**僅支援"
+"於 Godot 4.1 或更新版本**"
+
+msgid "**compatibility_maximum**"
+msgstr "**compatibility_maximum**"
+
+msgid ""
+"Maximum compatible version. This prevents newer versions of Godot from "
+"loading the extension. **Only supported in Godot 4.3 or later**"
+msgstr ""
+"最高相容版本。此設定可避免新版 Godot 嘗試載入本擴充功能。**僅支援於 Godot "
+"4.3 或更新版本**"
+
+msgid "**reloadable**"
+msgstr "**reloadable**"
+
+msgid "Boolean"
+msgstr "布林"
+
+msgid ""
+"Reloads the extension upon recompilation. Reloading is supported for the "
+"godot-cpp binding in Godot 4.2 or later. Other language bindings may or may "
+"not support it as well. This flag should be mainly used for developing or "
+"debugging an extension."
+msgstr ""
+"重新編譯時自動重新載入擴充功能。於 Godot 4.2 或更新版本的 godot-cpp 綁定支援"
+"此功能。其他語言綁定可能不支援。此旗標主要用於擴充功能的開發與除錯階段。"
+
+msgid "**android_aar_plugin**"
+msgstr "**android_aar_plugin**"
+
+msgid ""
+"The GDExtension is part of a :ref:`v2 Android plugin <doc_android_plugin>`. "
+"During export this flag will indicate to the editor that the GDExtension "
+"native shared libraries are exported by the Android plugin AAR binaries."
+msgstr ""
+"此 GDExtension 屬於 :ref:`v2 Android 外掛 <doc_android_plugin>` 的一部分。匯"
+"出時，此旗標會通知編輯器該 GDExtension 的原生共享函式庫由 Android 外掛的 AAR "
+"檔案負責匯出。"
+
+msgid "Libraries section"
+msgstr "函式庫區段"
+
+msgid ""
+"In this section you can set the paths to the compiled binaries of your "
+"GDExtension libraries. By specifying feature flags you can filter which "
+"version should be loaded and exported with your game depending on which "
+"feature flags are active. Every feature flag must match to Godot's feature "
+"flags or your custom export flags to be loaded in an exported game. For "
+"instance ``macos.debug`` means that it will be loaded if Godot has both the "
+"``macos`` and ``debug`` flag active. Each line of the section is evaluated "
+"from top to bottom."
+msgstr ""
+"在本區段中，你可以設定 GDExtension 函式庫的編譯二進位檔路徑。透過指定功能旗"
+"標，可以依據目前啟用的旗標，決定要載入與匯出哪個版本。每個功能旗標必須與 "
+"Godot 的功能旗標或自訂匯出旗標相符，才能在匯出遊戲時正確載入。例如 "
+"``macos.debug`` 表示只有在 Godot 啟用 ``macos`` 與 ``debug`` 旗標時才會載入。"
+"區段中的每一行會自上而下依序判斷。"
+
+msgid "Here is an example of what that can look like:"
+msgstr "範例："
+
+msgid ""
+"Entries are matched in order, so if two sets of feature tags could match the "
+"same system, be sure to put the more specific ones first:"
+msgstr ""
+"項目會依序匹配；因此若兩組功能標籤都可能符合同一系統，請將較具體的組合放在前"
+"面："
+
+msgid ""
+"Here are lists of some of the available built-in options (for more look at "
+"the :ref:`feature tags <doc_feature_tags>`):"
+msgstr ""
+"以下列出部分可用的內建選項（詳情請參閱 :ref:`功能標籤 <doc_feature_tags>`）："
+
+msgid "Running system"
+msgstr "執行系統"
+
+msgid "Flag"
+msgstr "旗標"
+
+msgid "**windows**"
+msgstr "**Windows**"
+
+msgid "Windows operating system"
+msgstr "Windows 作業系統"
+
+msgid "**macos**"
+msgstr "**macos**"
+
+msgid "Mac operating system"
+msgstr "macOS 作業系統"
+
+msgid "**linux**"
+msgstr "**linux**"
+
+msgid "Linux operating system"
+msgstr "Linux 作業系統"
+
+msgid "**bsd**"
+msgstr "**bsd**"
+
+msgid "BSD operating system"
+msgstr "BSD 作業系統"
+
+msgid "**linuxbsd**"
+msgstr "**linuxbsd**"
+
+msgid "Linux or BSD operating system"
+msgstr "Linux 或 BSD 作業系統"
+
+msgid "**android**"
+msgstr "**android**"
+
+msgid "Android operating system"
+msgstr "Android 作業系統"
+
+msgid "**ios**"
+msgstr "**ios**"
+
+msgid "iOS operating system"
+msgstr "iOS 作業系統"
+
+msgid "**web**"
+msgstr "**web**"
+
+msgid "Web browser"
+msgstr "網頁瀏覽器"
+
+msgid "Build"
+msgstr "建構"
+
+msgid "**debug**"
+msgstr "**debug**"
+
+msgid "**release**"
+msgstr "**release**"
+
+msgid "**editor**"
+msgstr "**editor**"
+
+msgid "Editor build"
+msgstr "編輯器建構"
+
+msgid "Architecture"
+msgstr "架構"
+
+msgid "**double**"
+msgstr "**double**"
+
+msgid "double-precision build"
+msgstr "雙精度建構"
+
+msgid "**single**"
+msgstr "**single**"
+
+msgid "single-precision build"
+msgstr "單精度建構"
+
+msgid "**x86_64**"
+msgstr "**x86_64**"
+
+msgid "64-bit x86 build"
+msgstr "64 位元 x86 建構"
+
+msgid "**arm64**"
+msgstr "**arm64**"
+
+msgid "64-bit ARM build"
+msgstr "64 位元 ARM 建構"
+
+msgid "**rv64**"
+msgstr "**rv64**"
+
+msgid "64-bit RISC-V build"
+msgstr "64 位元 RISC-V 建構"
+
+msgid "**riscv**"
+msgstr "**riscv**"
+
+msgid "RISC-V build (any bitness)"
+msgstr "RISC-V 建構（不限位元數）"
+
+msgid "**wasm32**"
+msgstr "**wasm32**"
+
+msgid "32-bit WebAssembly build"
+msgstr "32 位元 WebAssembly 建構"
+
+msgid "Icons section"
+msgstr "圖示區段"
+
+msgid ""
+"By default, Godot uses the Node icon in the scene dock for GDExtension "
+"nodes. A custom icon can be set by reference to its name and resource path "
+"of an SVG file."
+msgstr ""
+"預設情況下，Godot 會在場景面板中為 GDExtension 節點使用 Node 節點圖示。你可以"
+"透過指定 SVG 檔案的名稱與資源路徑來設定自訂圖示。"
+
+msgid "For example:"
+msgstr "例如："
+
+msgid "Dependencies section"
+msgstr "相依性區段"

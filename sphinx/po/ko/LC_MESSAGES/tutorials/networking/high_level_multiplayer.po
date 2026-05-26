@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -396,9 +396,6 @@ msgstr ""
 "들려면 함수 정의 앞에 ``@rpc`` 주석을 사용하세요. RPC를 호출하려면 "
 "``Callable``의 메서드 ``rpc()``를 사용하여 모든 피어를 호출하거나 "
 "``rpc_id()``를 사용하여 특정 피어를 호출합니다."
-
-msgid "RPCs will not serialize objects or callables."
-msgstr "RPC는 객체나 호출 가능 항목을 직렬화하지 않습니다."
 
 msgid ""
 "For a remote call to be successful, the sending and receiving node need to "

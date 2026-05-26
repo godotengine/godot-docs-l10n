@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -47,21 +47,8 @@ msgstr "需求"
 msgid "For compiling under Windows, Linux or macOS, the following is required:"
 msgstr "要在Windows, Linux或macOS下进行编译, 需要以下内容:"
 
-msgid "`Python 3.8+ <https://www.python.org/downloads/>`_."
-msgstr "`Python 3.8+ <https://www.python.org/downloads/>`_ 。"
-
-msgid "`SCons 4.0+ <https://scons.org/pages/download.html>`_ build system."
-msgstr "`SCons 4.0+ <https://scons.org/pages/download.html>`_ 构建系统。"
-
 msgid "Android SDK"
 msgstr "Android SDK"
-
-msgid ""
-"To install the Android SDK, follow the steps here <https://"
-"docs.godotengine.org/en/stable/tutorials/export/exporting_for_android.html>_."
-msgstr ""
-"要安装 Android SDK，请按照这里的步骤操作：<https://docs.godotengine.org/en/"
-"stable/tutorials/export/exporting_for_android.html>_。"
 
 msgid ""
 "On Linux, **do not use an Android SDK provided by your distribution's "
@@ -180,9 +167,6 @@ msgid "Debug template (used when exporting with **Debugging Enabled** checked)"
 msgstr ""
 "调试版模板（在勾选了 **启用调试** （Debugging Enabled）进行导出时使用）"
 
-msgid "(**Optional**) Dev template (used when troubleshooting)"
-msgstr "（**可选**） 开发版模板（在排查故障时使用）"
-
 msgid "The resulting templates will be located under the ``bin`` directory:"
 msgstr "生成的模板将位于 ``bin`` 目录下："
 
@@ -191,9 +175,6 @@ msgstr "``bin/android_release.apk`` 用于调试版（release ）模板"
 
 msgid "``bin/android_debug.apk`` for the debug template"
 msgstr "``bin/android_debug.apk`` 用于调试版（debug）模板"
-
-msgid "``bin/android_dev.apk`` for the dev template"
-msgstr "``bin/android_dev.apk`` 用于开发版（dev）模板"
 
 msgid "``bin/android_source.zip`` for the Gradle build template"
 msgstr "``bin/android_source.zip`` 用于 Gradle 构建模板"

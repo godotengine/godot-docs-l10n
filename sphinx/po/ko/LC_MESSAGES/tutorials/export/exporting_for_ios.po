@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -62,14 +62,6 @@ msgid ""
 msgstr ""
 "Godot 편집기에서, **프로젝트** 메뉴에서 **내보내기** 창으로 갑니다. 내보내기 "
 "창이 열리면, **추가하기..**\\ 를 클릭하고 **iOS**\\ 를 선택합니다."
-
-msgid ""
-"The **App Store Team ID** and (Bundle) **Identifier** options in the "
-"**Application** category are required. Leaving them blank will cause the "
-"exporter to throw an error."
-msgstr ""
-"**애플리케이션** 카테고리에서 **App Store 팀 ID**\\ 와 (번들) **식별자** 옵션"
-"은 필수입니다. 하나라도 공백으로 둔다면 익스포터는 오류가 발생할 것입니다:"
 
 msgid "If you encounter an error during export similar to"
 msgstr "내보내기 중에 다음과 유사한 오류가 발생하는 경우"
@@ -138,18 +130,6 @@ msgstr ""
 
 msgid "When the export completes, the output folder should look like this:"
 msgstr "내보내기를 마치면, 출력 폴더는 다음과 같아야 합니다:"
-
-msgid ""
-"Exporting for the iOS simulator is currently not supported as per `GH-102149 "
-"<https://github.com/godotengine/godot/issues/102149>`__."
-msgstr "https://github.com/godotengine/godot-demo-projects"
-
-msgid ""
-"Apple Silicon Macs can run iOS apps natively, so you can run exported iOS "
-"projects directly on an Apple Silicon Mac without needing the iOS simulator."
-msgstr ""
-"Apple Silicon Mac은 기본적으로 iOS 앱을 실행할 수 있으므로 iOS 시뮬레이터 없"
-"이도 내보낸 iOS 프로젝트를 Apple Silicon Mac에서 직접 실행할 수 있습니다."
 
 msgid ""
 "Opening **exported_xcode_project_name.xcodeproj** lets you build and deploy "
@@ -255,13 +235,6 @@ msgstr ""
 
 msgid "Plugins for iOS"
 msgstr "iOS 용 플러그인"
-
-msgid ""
-"Special iOS plugins can be used in Godot. Check out "
-"the :ref:`doc_plugins_for_ios` page."
-msgstr ""
-"Godot에서는 특수한 iOS 플러그인을 사용할 수 있습니"
-"다. :ref:`doc_plugins_for_ios` 페이지를 확인하세요."
 
 msgid "Environment variables"
 msgstr "환경변수"

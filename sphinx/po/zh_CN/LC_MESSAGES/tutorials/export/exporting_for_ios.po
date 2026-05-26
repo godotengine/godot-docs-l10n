@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -58,14 +58,6 @@ msgid ""
 msgstr ""
 "在 Godot 编辑器中，从\\ **项目**\\ 菜单打开\\ **导出**\\ 窗口。导出窗口打开"
 "后，点击\\ **添加..** 并选择 **iOS**\\ 。"
-
-msgid ""
-"The **App Store Team ID** and (Bundle) **Identifier** options in the "
-"**Application** category are required. Leaving them blank will cause the "
-"exporter to throw an error."
-msgstr ""
-"**应用**\\ 分类中的 **App Store 团队 ID** 和（捆绑包）\\ **标识符**\\ 选项都"
-"是必填的。留空时导出器会报错。"
 
 msgid "If you encounter an error during export similar to"
 msgstr "如果你在导出过程中遇到类似以下错误"
@@ -126,20 +118,6 @@ msgstr ""
 
 msgid "When the export completes, the output folder should look like this:"
 msgstr "导出完成后，输出文件夹应如下所示："
-
-msgid ""
-"Exporting for the iOS simulator is currently not supported as per `GH-102149 "
-"<https://github.com/godotengine/godot/issues/102149>`__."
-msgstr ""
-"根据 `GH-102149 <https://github.com/godotengine/godot/issues/102149>`__\\ ，"
-"目前不支持导出到 iOS 模拟器。"
-
-msgid ""
-"Apple Silicon Macs can run iOS apps natively, so you can run exported iOS "
-"projects directly on an Apple Silicon Mac without needing the iOS simulator."
-msgstr ""
-"Apple Silicon Mac 可以原生运行 iOS 应用，因此你可以直接在 Apple Silicon Mac "
-"上运行导出的 iOS 项目，而无需 iOS 模拟器。"
 
 msgid ""
 "Opening **exported_xcode_project_name.xcodeproj** lets you build and deploy "
@@ -242,13 +220,6 @@ msgstr ""
 
 msgid "Plugins for iOS"
 msgstr "iOS 的插件"
-
-msgid ""
-"Special iOS plugins can be used in Godot. Check out "
-"the :ref:`doc_plugins_for_ios` page."
-msgstr ""
-"在 Godot 中可以使用特殊的 iOS 插件。请查看\\ :ref:`doc_plugins_for_ios`\\ 页"
-"面。"
 
 msgid "Environment variables"
 msgstr "环境变量"

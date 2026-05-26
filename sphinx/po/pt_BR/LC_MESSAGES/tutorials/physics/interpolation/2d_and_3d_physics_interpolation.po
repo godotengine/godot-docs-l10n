@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -13,38 +13,6 @@ msgstr ""
 
 msgid "2D and 3D physics interpolation"
 msgstr "Interpolação de física de 2D e 3D"
-
-msgid "Global versus local interpolation"
-msgstr "Interpolação global versus interpolação local"
-
-msgid ""
-"In 3D, physics interpolation is performed *independently* on the **global "
-"transform** of each 3D instance."
-msgstr ""
-"Em 3D, a interpolação de física é feita *independentemente* na "
-"**transformação global** de cada instância 3D."
-
-msgid ""
-"In 2D by contrast, physics interpolation is performed on the **local "
-"transform** of each 2D instance."
-msgstr ""
-"Por outro lado em 2D, a interpolação de física é feita na **transformação "
-"local** de cada instância 2D."
-
-msgid "This has some implications:"
-msgstr "E isso tem algumas implicações:"
-
-msgid ""
-"However this means that in 3D, pivots that occur in the ``SceneTree`` (due "
-"to parent child relationships) can only be interpolated **approximately** "
-"over the physics tick. In most cases this will not matter, but in some "
-"situations the interpolation can look slightly wrong."
-msgstr ""
-"Entretanto, isso significa que em 3D, pivôs que ocorrem na ``SceneTree`` "
-"(devido às relações de pai e filho) só podem ser interpolados "
-"**aproximadamente** sobre o tick de física. Na maioria dos casos isso não "
-"vai importar, mas em algumas situações a interpolação pode parecer "
-"ligeiramente errada."
 
 msgid "Other"
 msgstr "Outro"

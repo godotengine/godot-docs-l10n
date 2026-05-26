@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -50,22 +50,8 @@ msgstr "Вимоги"
 msgid "For compiling under Windows, Linux or macOS, the following is required:"
 msgstr "Для компіляції під Windows, Linux або macOS необхідно:"
 
-msgid "`Python 3.8+ <https://www.python.org/downloads/>`_."
-msgstr "`Python 3.8+ <https://www.python.org/downloads/>`_."
-
-msgid "`SCons 4.0+ <https://scons.org/pages/download.html>`_ build system."
-msgstr ""
-"`SCons 4.0+ <https://scons.org/pages/download.html>`_ будувати систему."
-
 msgid "Android SDK"
 msgstr "Android SDK"
-
-msgid ""
-"To install the Android SDK, follow the steps here <https://"
-"docs.godotengine.org/en/stable/tutorials/export/exporting_for_android.html>_."
-msgstr ""
-"Щоб встановити Android SDK, виконайте наведені тут кроки <https://"
-"docs.godotengine.org/en/stable/tutorials/export/exporting_for_android.html>_."
 
 msgid ""
 "On Linux, **do not use an Android SDK provided by your distribution's "
@@ -194,11 +180,6 @@ msgstr ""
 "Шаблон налагодження (використовується під час експорту з прапорцем "
 "**Налагодження ввімкнено**)"
 
-msgid "(**Optional**) Dev template (used when troubleshooting)"
-msgstr ""
-"(**Необов’язково**) Шаблон розробника (використовується під час усунення "
-"несправностей)"
-
 msgid "The resulting templates will be located under the ``bin`` directory:"
 msgstr "Отримані шаблони будуть розташовані в каталозі ``bin``:"
 
@@ -207,9 +188,6 @@ msgstr "``bin/android_release.apk`` для шаблону випуску"
 
 msgid "``bin/android_debug.apk`` for the debug template"
 msgstr "``bin/android_debug.apk`` для шаблону налагодження"
-
-msgid "``bin/android_dev.apk`` for the dev template"
-msgstr "``bin/android_dev.apk`` для шаблону розробника"
 
 msgid "``bin/android_source.zip`` for the Gradle build template"
 msgstr "``bin/android_source.zip`` для шаблону збірки Gradle"

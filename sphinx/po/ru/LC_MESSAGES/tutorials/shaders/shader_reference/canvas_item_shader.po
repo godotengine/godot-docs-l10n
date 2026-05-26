@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -359,32 +359,14 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "vec4 **FRAGCOORD**"
 
-msgid ""
-"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
-"viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``."
-msgstr ""
-"Координата центра пикселя. В экранном пространстве. ``xy`` определяет "
-"положение в области просмотра. Начало координат находится в левом верхнем "
-"углу области просмотра, ``(0.0, 0.0)``."
-
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "in vec2 **SCREEN_PIXEL_SIZE**"
 
 msgid "in vec4 **REGION_RECT**"
 msgstr "in vec4 **REGION_RECT**"
 
-msgid ""
-"Visible area of the sprite region in format ``(x, y, width, height)``. "
-"Varies according to Sprite2D's ``region_enabled`` property."
-msgstr ""
-"Видимая область области спрайта в формате ``(x, y, ширина, высота)``. "
-"Зависит от свойства ``region_enabled`` Sprite2D."
-
 msgid "in vec2 **POINT_COORD**"
 msgstr "vec2 **POINT_COORD**"
-
-msgid "Coordinate for drawing points."
-msgstr "Координаты для отрисовки точек."
 
 msgid "sampler2D **TEXTURE**"
 msgstr "sampler2D **TEXTURE**"
@@ -527,13 +509,6 @@ msgid ""
 "UV from the ``vertex()`` function, equivalent to the UV in the "
 "``fragment()`` function."
 msgstr "UV из функции ``vertex()``, эквивалентно UV в функции ``fragment()``."
-
-msgid ""
-"Normalized pixel size of ``TEXTURE``. For a Sprite2D with a ``TEXTURE`` of "
-"size ``64x32`` pixels, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
-msgstr ""
-"Нормализованный размер пикселя ``TEXTURE``. Для Sprite2D с ``TEXTURE`` "
-"размером ``64x32`` пикселей, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
 
 msgid "UV for Point Sprite."
 msgstr "UV для Точечного Спрайта."

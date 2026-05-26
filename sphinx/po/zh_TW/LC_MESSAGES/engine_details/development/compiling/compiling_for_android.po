@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -46,12 +46,6 @@ msgstr "系統需求"
 
 msgid "For compiling under Windows, Linux or macOS, the following is required:"
 msgstr "欲於 Windows、Linux 或 macOS 進行編譯，需具備以下條件："
-
-msgid "`Python 3.8+ <https://www.python.org/downloads/>`_."
-msgstr "`Python 3.8+ <https://www.python.org/downloads/>`_。"
-
-msgid "`SCons 4.0+ <https://scons.org/pages/download.html>`_ build system."
-msgstr "`SCons 4.0+ <https://scons.org/pages/download.html>`_ 建置系統。"
 
 msgid ""
 "On Linux, **do not use an Android SDK provided by your distribution's "
@@ -159,9 +153,6 @@ msgstr "釋出範本（於匯出時未勾選 **Debugging Enabled** 時使用）"
 msgid "Debug template (used when exporting with **Debugging Enabled** checked)"
 msgstr "除錯範本（於匯出時有勾選 **Debugging Enabled** 時使用）"
 
-msgid "(**Optional**) Dev template (used when troubleshooting)"
-msgstr "（**選用**）開發範本（用於疑難排解時）"
-
 msgid "The resulting templates will be located under the ``bin`` directory:"
 msgstr "產生的範本將會位於 ``bin`` 目錄下："
 
@@ -170,9 +161,6 @@ msgstr "``bin/android_release.apk`` 對應釋出範本"
 
 msgid "``bin/android_debug.apk`` for the debug template"
 msgstr "``bin/android_debug.apk`` 對應除錯範本"
-
-msgid "``bin/android_dev.apk`` for the dev template"
-msgstr "``bin/android_dev.apk`` 對應開發範本"
 
 msgid "``bin/android_source.zip`` for the Gradle build template"
 msgstr "``bin/android_source.zip`` 對應 Gradle 建置範本"

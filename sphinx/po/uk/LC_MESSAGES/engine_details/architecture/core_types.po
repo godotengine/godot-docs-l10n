@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -316,15 +316,6 @@ msgstr "|rb_map|"
 msgid "``std::map``"
 msgstr "``std::map``"
 
-msgid ""
-"Map type that uses a `red-black tree <https://en.wikipedia.org/wiki/Red-"
-"black-tree>`__ to find keys. The performance benefits of ``RBMap`` aren't "
-"established, so prefer using other types."
-msgstr ""
-"Тип карти, що використовує `червоно-чорне дерево <https://en.wikipedia.org/"
-"wiki/Red-black-tree>`__ для пошуку ключів. Переваги ``RBMap`` у "
-"продуктивності не встановлені, тому перевагу надають іншим типам."
-
 msgid "|dictionary| 📜"
 msgstr "|dictionary| 📜"
 
@@ -453,9 +444,6 @@ msgstr ""
 
 msgid "|rw_lock|"
 msgstr "|rw_lock|"
-
-msgid "``std::shared_timed_mutex``"
-msgstr "``std::shared_timed_mutex``"
 
 msgid ""
 "Read-write aware mutex type. Use ``RWLockRead lock(mutex)`` or ``RWLockWrite "

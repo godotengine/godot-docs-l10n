@@ -1,0 +1,283 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "The .gdextension file"
+msgstr "Файл .gextension"
+
+msgid "Introduction"
+msgstr "Введение"
+
+msgid ""
+"The ``.gdextension`` file in your project contains the instructions for how "
+"to load the GDExtension. The instructions are separated into specific "
+"sections. This page should give you a quick overview of the different "
+"options available to you. For an introduction how to get started with C++ "
+"(godot-cpp), take a look at the :ref:`GDExtension C++ Example "
+"<doc_godot_cpp_getting_started>`."
+msgstr ""
+"Файл ``.gdextension`` в вашем проекте содержит инструкции по загрузке "
+"GDExtension. Инструкции разделены на отдельные разделы. Эта страница даст "
+"вам краткий обзор различных доступных вам возможностей. Для получения "
+"вводной информации о начале работы с C++ (godot-cpp) ознакомьтесь "
+"с :ref:`GDExtension C++ Example <doc_godot_cpp_getting_started>`."
+
+msgid "Configuration section"
+msgstr "Раздел конфигурации"
+
+msgid "Property"
+msgstr "Свойство"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "**entry_symbol**"
+msgstr "**entry_symbol**"
+
+msgid "String"
+msgstr "Строка"
+
+msgid ""
+"Name of the entry function for initializing the GDExtension. This function "
+"should be defined in the ``register_types.cpp`` file when using godot-cpp. "
+"Adding this is necessary for the extension to work."
+msgstr ""
+"Имя функции входа для инициализации GDExtension. Эта функция должна быть "
+"определена в файле ``register_types.cpp`` при использовании godot-cpp. "
+"Добавление этой функции необходимо для работы расширения."
+
+msgid "**compatibility_minimum**"
+msgstr "**compatibility_minimum**"
+
+msgid ""
+"Minimum compatible version. This prevents older versions of Godot from "
+"loading extensions that depend on features from newer versions of Godot. "
+"**Only supported in Godot 4.1 or later**"
+msgstr ""
+"Минимальная совместимая версия. Это предотвращает загрузку расширений, "
+"зависящих от функций более новых версий Godot. **Поддерживается только в "
+"Godot 4.1 и более поздних версиях**"
+
+msgid "**compatibility_maximum**"
+msgstr "**compatibility_maximum**"
+
+msgid ""
+"Maximum compatible version. This prevents newer versions of Godot from "
+"loading the extension. **Only supported in Godot 4.3 or later**"
+msgstr ""
+"Максимальная совместимая версия. Это предотвращает загрузку расширения в "
+"более новых версиях Godot. **Поддерживается только в Godot 4.3 и более "
+"поздних версиях**"
+
+msgid "**reloadable**"
+msgstr "**reloadable**"
+
+msgid "Boolean"
+msgstr "Boolean"
+
+msgid ""
+"Reloads the extension upon recompilation. Reloading is supported for the "
+"godot-cpp binding in Godot 4.2 or later. Other language bindings may or may "
+"not support it as well. This flag should be mainly used for developing or "
+"debugging an extension."
+msgstr ""
+"Перезагружает расширение при перекомпиляции. Перезагрузка поддерживается для "
+"привязки godot-cpp в Godot 4.2 и более поздних версиях. Привязки других "
+"языков также могут поддерживать её, а могут и не поддерживать. Этот флаг "
+"следует использовать в основном для разработки или отладки расширения."
+
+msgid "**android_aar_plugin**"
+msgstr "**android_aar_plugin**"
+
+msgid ""
+"The GDExtension is part of a :ref:`v2 Android plugin <doc_android_plugin>`. "
+"During export this flag will indicate to the editor that the GDExtension "
+"native shared libraries are exported by the Android plugin AAR binaries."
+msgstr ""
+"GDExtension является частью :ref:`v2 Android plugin <doc_android_plugin>`. "
+"При экспорте этот флаг укажет редактору, что собственные общие библиотеки "
+"GDExtension экспортируются двоичными файлами AAR плагина Android."
+
+msgid "Libraries section"
+msgstr "Раздел библиотек"
+
+msgid ""
+"In this section you can set the paths to the compiled binaries of your "
+"GDExtension libraries. By specifying feature flags you can filter which "
+"version should be loaded and exported with your game depending on which "
+"feature flags are active. Every feature flag must match to Godot's feature "
+"flags or your custom export flags to be loaded in an exported game. For "
+"instance ``macos.debug`` means that it will be loaded if Godot has both the "
+"``macos`` and ``debug`` flag active. Each line of the section is evaluated "
+"from top to bottom."
+msgstr ""
+"В этом разделе можно указать пути к скомпилированным двоичным файлам "
+"библиотек GDExtension. Указав флаги функций, можно отфильтровать версию, "
+"которую следует загрузить и экспортировать вместе с игрой, в зависимости от "
+"того, какие флаги активны. Каждый флаг функции должен соответствовать флагам "
+"Godot или вашим собственным флагам экспорта, чтобы быть загруженным в "
+"экспортированную игру. Например, ``macos.debug`` означает, что игра будет "
+"загружена, если в Godot активны оба флага ``macos`` и ``debug``. Каждая "
+"строка раздела обрабатывается сверху вниз."
+
+msgid "Here is an example of what that can look like:"
+msgstr "Вот пример того, как это может выглядеть:"
+
+msgid ""
+"Entries are matched in order, so if two sets of feature tags could match the "
+"same system, be sure to put the more specific ones first:"
+msgstr ""
+"Записи сопоставляются по порядку, поэтому, если два набора тегов функций "
+"соответствуют одной и той же системе, обязательно поместите более конкретные "
+"из них первыми:"
+
+msgid ""
+"Here are lists of some of the available built-in options (for more look at "
+"the :ref:`feature tags <doc_feature_tags>`):"
+msgstr ""
+"Вот списки некоторых доступных встроенных опций (для получения более "
+"подробной информации см. :ref:`feature tags <doc_feature_tags>`):"
+
+msgid "Running system"
+msgstr "Running system (Ходовая система)"
+
+msgid "Flag"
+msgstr "Flag (Флаг)"
+
+msgid "**windows**"
+msgstr "**windows**"
+
+msgid "Windows operating system"
+msgstr "Операционная система Windows"
+
+msgid "**macos**"
+msgstr "**macOS**"
+
+msgid "Mac operating system"
+msgstr "Операционная система Mac"
+
+msgid "**linux**"
+msgstr "**linux**"
+
+msgid "Linux operating system"
+msgstr "Операционная система Linux"
+
+msgid "**bsd**"
+msgstr "**bsd**"
+
+msgid "BSD operating system"
+msgstr "Операционная система BSD"
+
+msgid "**linuxbsd**"
+msgstr "**linux-bsd**"
+
+msgid "Linux or BSD operating system"
+msgstr "Операционная система Linux или BSD"
+
+msgid "**android**"
+msgstr "**android**"
+
+msgid "Android operating system"
+msgstr "Операционная система Android"
+
+msgid "**ios**"
+msgstr "**ios**"
+
+msgid "iOS operating system"
+msgstr "Операционная система iOS"
+
+msgid "**web**"
+msgstr "**web**"
+
+msgid "Web browser"
+msgstr "Web-браузер"
+
+msgid "Build"
+msgstr "Build (сборка)"
+
+msgid "**debug**"
+msgstr "**debug**"
+
+msgid "**release**"
+msgstr "**release**"
+
+msgid "**editor**"
+msgstr "**editor**"
+
+msgid "Editor build"
+msgstr "Редактор сборки"
+
+msgid "Architecture"
+msgstr "Архитектура"
+
+msgid "**double**"
+msgstr "**double (двойной)**"
+
+msgid "double-precision build"
+msgstr "сборка с двойной точностью"
+
+msgid "**single**"
+msgstr "**single (одинарный)**"
+
+msgid "single-precision build"
+msgstr "сборка с одинарной точностью"
+
+msgid "**x86_64**"
+msgstr "**x86_64**"
+
+msgid "64-bit x86 build"
+msgstr "64-битная сборка x86"
+
+msgid "**arm64**"
+msgstr "**arm64**"
+
+msgid "64-bit ARM build"
+msgstr "64-битная сборка ARM"
+
+msgid "**rv64**"
+msgstr "**rv64**"
+
+msgid "64-bit RISC-V build"
+msgstr "64-битная сборка RISC-V"
+
+msgid "**riscv**"
+msgstr "**risc-v**"
+
+msgid "RISC-V build (any bitness)"
+msgstr "Сборка RISC-V (любой разрядности)"
+
+msgid "**wasm32**"
+msgstr "**wasm-32**"
+
+msgid "32-bit WebAssembly build"
+msgstr "32-битная сборка WebAssembly"
+
+msgid "Icons section"
+msgstr "Раздел иконок"
+
+msgid ""
+"By default, Godot uses the Node icon in the scene dock for GDExtension "
+"nodes. A custom icon can be set by reference to its name and resource path "
+"of an SVG file."
+msgstr ""
+"По умолчанию Godot использует значок Node в панели сцен для узлов "
+"GDExtension. Пользовательский значок можно задать, указав его имя и путь к "
+"ресурсу в SVG-файле."
+
+msgid "For example:"
+msgstr "Например:"
+
+msgid "Dependencies section"
+msgstr "Раздел зависимостей"

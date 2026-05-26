@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -774,9 +774,6 @@ msgstr ""
 msgid "out vec4 **POSITION**"
 msgstr "out vec4 **포지션**"
 
-msgid "If written to, overrides final vertex position in clip space."
-msgstr "기록하는 경우 클립 공간의 최종 정점 위치를 재정의합니다."
-
 msgid "inout vec2 **UV**"
 msgstr "inout vec2 **UV**"
 
@@ -886,17 +883,6 @@ msgid "out float **Z_CLIP_SCALE**"
 msgstr "부동 소수점 **Z_CLIP_SCALE**"
 
 msgid ""
-"If written to, scales the vertex towards the camera to avoid clipping into "
-"things like walls. Lighting and shadows will continue to work correctly when "
-"this is written to, but screen-space effects like SSAO and SSR may break "
-"with lower scales. Try to keep this value as close to ``1.0`` as possible."
-msgstr ""
-"기록하는 경우 정점의 크기를 카메라 방향으로 조정하여 벽과 같은 물체에 잘리는 "
-"것을 방지합니다. 조명과 그림자는 이 글을 쓸 때 계속 올바르게 작동하지만 SSAO "
-"및 SSR과 같은 화면 공간 효과는 낮은 배율에서 중단될 수 있습니다. 이 값을 가능"
-"한 한 ``1.0``에 가깝게 유지하십시오."
-
-msgid ""
 "``MODELVIEW_MATRIX`` combines both the ``MODEL_MATRIX`` and ``VIEW_MATRIX`` "
 "and is better suited when floating point issues may arise. For example, if "
 "the object is very far away from the world origin, you may run into floating "
@@ -934,16 +920,6 @@ msgstr ""
 
 msgid "in vec4 **FRAGCOORD**"
 msgstr "vec4에서 **FRAGCOORD**"
-
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window. Origin is upper left. ``z`` specifies fragment depth. It is also "
-"used as the output value for the fragment depth unless ``DEPTH`` is written "
-"to."
-msgstr ""
-"화면 공간의 픽셀 중심 좌표입니다. ``xy``는 창의 위치를 지정합니다. 원점은 왼"
-"쪽 위입니다. ``z``는 조각 깊이를 지정합니다. ``DEPTH``를 쓰지 않는 한 조각 깊"
-"이의 출력 값으로도 사용됩니다."
 
 msgid "in bool **FRONT_FACING**"
 msgstr "부울 **FRONT_FACING**"
@@ -1113,9 +1089,6 @@ msgstr ""
 
 msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
 msgstr "부동 소수점 **ALPHA_SCISSOR_THRESHOLD**"
-
-msgid "If written to, values below a certain amount of alpha are discarded."
-msgstr "기록하면 특정 양의 알파 미만의 값이 삭제됩니다."
 
 msgid "out float **ALPHA_HASH_SCALE**"
 msgstr "부동 소수점 **ALPHA_HASH_SCALE**"
@@ -1311,30 +1284,11 @@ msgstr "방출 색상(HDR의 경우 ``(1.0, 1.0, 1.0)``를 초과할 수 있음)
 msgid "out vec4 **FOG**"
 msgstr "out vec4 **FOG**"
 
-msgid ""
-"If written to, blends final pixel color with ``FOG.rgb`` based on ``FOG.a``."
-msgstr ""
-"기록된 경우 ``FOG.a``를 기반으로 ``FOG.rgb``와 최종 픽셀 색상을 혼합합니다."
-
 msgid "out vec4 **RADIANCE**"
 msgstr "out vec4 **빛나는**"
 
-msgid ""
-"If written to, blends environment map radiance with ``RADIANCE.rgb`` based "
-"on ``RADIANCE.a``."
-msgstr ""
-"작성하는 경우 ``RADIANCE.a``를 기반으로 환경 맵 광도를 ``RADIANCE.rgb``와 혼"
-"합합니다."
-
 msgid "out vec4 **IRRADIANCE**"
 msgstr "out vec4 **IRRADIANCE**"
-
-msgid ""
-"If written to, blends environment map irradiance with ``IRRADIANCE.rgb`` "
-"based on ``IRRADIANCE.a``."
-msgstr ""
-"작성하는 경우 ``IRRADIANCE.a``를 기반으로 ``IRRADIANCE.rgb``와 환경 맵 방사조"
-"도를 혼합합니다."
 
 msgid ""
 "Shaders going through the transparent pipeline when ``ALPHA`` is written to "
@@ -1396,14 +1350,6 @@ msgstr ""
 "Shading<class_ProjectSettings_property_rendering/shading/overrides/"
 "force_vertex_shading>`가 활성화된 경우 ``light()`` 기능은 실행되지 않습니다. "
 "(모바일 플랫폼에서는 기본적으로 활성화되어 있습니다.)"
-
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
-"lower-left."
-msgstr ""
-"화면 공간의 픽셀 중심 좌표입니다. ``xy``는 창의 위치를 지정하고, ``DEPTH``가 "
-"사용되지 않는 경우 ``z``는 조각 깊이를 지정합니다. 원점은 왼쪽 아래입니다."
 
 msgid "in vec3 **NORMAL**"
 msgstr "vec3에서 **정상**"
@@ -1489,12 +1435,6 @@ msgstr "out vec3 **SPECULAR_LIGHT**"
 
 msgid "Specular light result."
 msgstr "반사광 결과."
-
-msgid ""
-"Alpha (range ``[0.0, 1.0]``). If written to, the material will go to the "
-"transparent pipeline."
-msgstr ""
-"알파(범위 ``[0.0, 1.0]``). 기록된 경우 재질은 투명 파이프라인으로 이동됩니다."
 
 msgid ""
 "Transparent materials also cannot cast shadows or appear in "

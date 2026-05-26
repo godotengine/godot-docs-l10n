@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -28,12 +28,6 @@ msgstr "Требования"
 
 msgid "For compiling under macOS, the following is required:"
 msgstr "Для компиляции под macOS необходимо следующее:"
-
-msgid "`Python 3.8+ <https://www.python.org/downloads/macos/>`_."
-msgstr "`Python 3.8+ <https://www.python.org/downloads/macos/>`_."
-
-msgid "`SCons 4.0+ <https://scons.org/pages/download.html>`_ build system."
-msgstr "`SCons 4.0+ <https://scons.org/pages/download.html>`_ система сборки."
 
 msgid ""
 "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (or the more "
@@ -143,6 +137,12 @@ msgstr ""
 "включить :ref:`doc_data_paths_self_contained_mode`, создав файл с именем "
 "``._sc_`` или ``_sc_`` в папке ``bin/``."
 
+msgid "Run the following command:"
+msgstr "Выполните следующую команду:"
+
+msgid "Compiling with ANGLE support"
+msgstr "Компиляция с поддержкой ANGLE"
+
 msgid ""
 "You can optionally build the godot-angle-static libraries yourself with the "
 "following steps:"
@@ -150,8 +150,12 @@ msgstr ""
 "При желании вы можете самостоятельно собрать библиотеки godot-angle-static, "
 "выполнив следующие шаги:"
 
-msgid "Run the following command:"
-msgstr "Выполните следующую команду:"
+msgid ""
+"Clone the `godot-angle-static <https://github.com/godotengine/godot-angle-"
+"static>`_ directory and navigate to it."
+msgstr ""
+"Клонируйте каталог `godot-angle-static <https://github.com/godotengine/godot-"
+"angle-static>`_ и перейдите в него."
 
 msgid "Automatic ``.app`` bundle creation"
 msgstr "Автоматическое создание ``.app``-бандла"

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -287,15 +287,6 @@ msgstr "Завжди ``false``."
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgstr "In vec2 **TEXTURE_PIXEL_SIZE**"
 
-msgid ""
-"Normalized pixel size of the default 2D texture. For a Sprite2D with a "
-"texture of size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1.0/64.0, "
-"1.0/32.0)``"
-msgstr ""
-"Нормалізований розмір пікселя стандартної 2D-текстури. Для Sprite2D з "
-"текстурою розміром 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1.0/64.0, "
-"1.0/32.0)``"
-
 msgid "inout vec2 **VERTEX**"
 msgstr "Inout vec2 **VERTEX**"
 
@@ -426,14 +417,6 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "In vec4 **FRAGCOORD**"
 
-msgid ""
-"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
-"viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``."
-msgstr ""
-"Координата центру пікселя. В екранному просторі. ``xy`` вказує позицію у "
-"вікні перегляду. У верхній лівій частині вікна перегляду розташовано початок "
-"координат, ``(0.0, 0.0)``."
-
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "In vec2 **SCREEN_PIXEL_SIZE**"
 
@@ -443,31 +426,14 @@ msgstr "Розмір окремих пікселів. Дорівнює обер�
 msgid "in vec4 **REGION_RECT**"
 msgstr "in vec4 **REGION_RECT**"
 
-msgid ""
-"Visible area of the sprite region in format ``(x, y, width, height)``. "
-"Varies according to Sprite2D's ``region_enabled`` property."
-msgstr ""
-"Видима область спрайтової області у форматі ``(x, y, ширина, висота)``. "
-"Змінюється залежно від властивості ``region_enabled`` Sprite2D."
-
 msgid "in vec2 **POINT_COORD**"
 msgstr "In vec2 **POINT_COORD**"
-
-msgid "Coordinate for drawing points."
-msgstr "Координата для малювання точок."
 
 msgid "sampler2D **TEXTURE**"
 msgstr "Sampler2D **TEXTURE**"
 
 msgid "Default 2D texture."
 msgstr "Двовимірна текстура за замовчуванням."
-
-msgid ""
-"Normalized pixel size of the default 2D texture. For a Sprite2D with a "
-"texture of size 64x32px, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1/64, 1/32)``"
-msgstr ""
-"Нормалізований розмір пікселів стандартної 2D-текстури. Для Sprite2D з "
-"текстурою розміром 64x32px., ``TEXTURE_PIXEL_SIZE`` = ``vec2(1/64, 1/32)``"
 
 msgid "sampler2D **SPECULAR_SHININESS_TEXTURE**"
 msgstr "Sampler2D **SPECULAR_SHININESS_TEXTURE**"
@@ -619,13 +585,6 @@ msgstr "UV від функції ``vertex()``, еквівалентне UV у ф
 
 msgid "Current texture in use for the CanvasItem."
 msgstr "Поточна текстура, що використовується для CanvasItem."
-
-msgid ""
-"Normalized pixel size of ``TEXTURE``. For a Sprite2D with a ``TEXTURE`` of "
-"size ``64x32`` pixels, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
-msgstr ""
-"Нормалізований розмір пікселів ``ТЕКСТУРИ``. Для Sprite2D із ``TEXTURE`` "
-"розміром ``64x32`` пікселів, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
 
 msgid "UV for Point Sprite."
 msgstr "УФ для точкового спрайта."

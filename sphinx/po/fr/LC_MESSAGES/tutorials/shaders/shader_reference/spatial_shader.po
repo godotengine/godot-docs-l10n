@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -516,11 +516,6 @@ msgstr "out float **ALPHA**"
 msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
 msgstr "out float **ALPHA_SCISSOR_THRESHOLD**"
 
-msgid "If written to, values below a certain amount of alpha are discarded."
-msgstr ""
-"En cas d'écriture, les valeurs inférieures à une certaine quantité d'alpha "
-"sont rejetées."
-
 msgid "out float **ALPHA_HASH_SCALE**"
 msgstr "out float **ALPHA_HASH_SCALE**"
 
@@ -619,15 +614,6 @@ msgid ""
 msgstr ""
 "Si vous voulez que les lumières s'additionnent, ajoutez la contribution de "
 "la lumière à ``DIFFUSE_LIGHT`` en utilisant ``+=``, plutôt que de l'écraser."
-
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
-"lower-left."
-msgstr ""
-"Coordonnées du centre du pixel dans l'espace de l'écran. ``xy`` indique la "
-"position dans la fenêtre, ``z`` indique la profondeur du fragment si "
-"``DEPTH`` n'est pas utilisé. L'origine est en bas à gauche."
 
 msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"

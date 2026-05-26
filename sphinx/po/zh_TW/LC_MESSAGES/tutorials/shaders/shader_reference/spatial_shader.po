@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -519,9 +519,6 @@ msgstr "副法線向量（模型空間），如啟用 ``world_vertex_coords`` �
 msgid "out vec4 **POSITION**"
 msgstr "out vec4 **POSITION**"
 
-msgid "If written to, overrides final vertex position in clip space."
-msgstr "如有寫入，將覆蓋最終裁剪空間的頂點位置。"
-
 msgid "inout vec2 **UV**"
 msgstr "inout vec2 **UV**"
 
@@ -792,9 +789,6 @@ msgstr "out float **ALPHA**"
 msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
 msgstr "out float **ALPHA_SCISSOR_THRESHOLD**"
 
-msgid "If written to, values below a certain amount of alpha are discarded."
-msgstr "如有寫入，Alpha 值低於此閾值的像素會被丟棄。"
-
 msgid "out float **ALPHA_HASH_SCALE**"
 msgstr "out float **ALPHA_HASH_SCALE**"
 
@@ -949,27 +943,11 @@ msgstr "自發光顏色（HDR 可超過 ``(1.0, 1.0, 1.0)`` ）。"
 msgid "out vec4 **FOG**"
 msgstr "out vec4 **FOG**"
 
-msgid ""
-"If written to, blends final pixel color with ``FOG.rgb`` based on ``FOG.a``."
-msgstr "如有寫入，最終像素顏色將依 ``FOG.a`` 與 ``FOG.rgb`` 混合。"
-
 msgid "out vec4 **RADIANCE**"
 msgstr "out vec4 **RADIANCE**"
 
-msgid ""
-"If written to, blends environment map radiance with ``RADIANCE.rgb`` based "
-"on ``RADIANCE.a``."
-msgstr ""
-"如有寫入，環境貼圖的輻射度將依 ``RADIANCE.a`` 與 ``RADIANCE.rgb`` 混合。"
-
 msgid "out vec4 **IRRADIANCE**"
 msgstr "out vec4 **IRRADIANCE**"
-
-msgid ""
-"If written to, blends environment map irradiance with ``IRRADIANCE.rgb`` "
-"based on ``IRRADIANCE.a``."
-msgstr ""
-"如有寫入，環境貼圖的照度會依 ``IRRADIANCE.a`` 與 ``IRRADIANCE.rgb`` 混合。"
 
 msgid ""
 "Shaders going through the transparent pipeline when ``ALPHA`` is written to "
@@ -1027,14 +1005,6 @@ msgstr ""
 "Shading<class_ProjectSettings_property_rendering/shading/overrides/"
 "force_vertex_shading>` 時，``light()`` 函式將不會執行。（在行動裝置預設啟"
 "用。）"
-
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
-"lower-left."
-msgstr ""
-"像素中心在螢幕空間中的座標。``xy`` 表示視窗中的位置，若未使用 ``DEPTH``，則 "
-"``z`` 為片段深度。原點為左下角。"
 
 msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -516,9 +516,6 @@ msgstr "\\ out float **ALPHA**"
 msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
 msgstr "\\ out float **ALPHA_SCISSOR_THRESHOLD**"
 
-msgid "If written to, values below a certain amount of alpha are discarded."
-msgstr "書き込まれた場合、一定量のアルファ以下の値は破棄されます。"
-
 msgid "out float **ALPHA_HASH_SCALE**"
 msgstr "\\ out float **ALPHA_HASH_SCALE**"
 
@@ -612,15 +609,6 @@ msgid ""
 msgstr ""
 "ライトを一緒に追加する場合は、上書きするのではなく、\\ ``+=`` を使用して "
 "``DIFFUSE_LIGHT`` にライトの関与を追加します。"
-
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
-"lower-left."
-msgstr ""
-"画面空間のピクセル中心の座標。\\ ``xy`` はウィンドウ内の位置を指定し、\\ "
-"``z`` は ``DEPTH`` を使用しない場合のフラグメントの深さを指定します。原点は左"
-"下です。"
 
 msgid "in vec3 **NORMAL**"
 msgstr "\\ in vec3 **NORMAL**"

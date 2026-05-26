@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -114,13 +114,6 @@ msgstr ""
 "を実行しました。これは大規模なプロジェクトでは便利ですが、ほとんどの開発者に"
 "とって構成に手間がかかります。"
 
-msgid ""
-"Because of this, assets are now transparently imported from within the "
-"project folder."
-msgstr ""
-"このため、アセットはプロジェクトフォルダ内から透過的にインポートされるように"
-"なりました。"
-
 msgid "Ignoring specific folders"
 msgstr "特定のフォルダを無視する"
 
@@ -133,15 +126,6 @@ msgstr ""
 "フォルダ内に ``.gdignore`` という空のファイルを作成します (先頭に ``.`` が必"
 "要です)。これは、(既存の構成などからの)初期プロジェクトのインポートを高速化す"
 "るのに役立ちます。"
-
-msgid ""
-"To create a file whose name starts with a dot on Windows, place a dot at "
-"both the beginning and end of the filename (\".gdignore.\"). Windows will "
-"automatically remove the trailing dot when you confirm the name."
-msgstr ""
-"Windows で名前がドットから始まるファイルを作成するには、ファイル名の先頭と末"
-"尾の両方にドットを配置します「 .gdignore. 」。Windows はファイル名を確認して"
-"末尾のドットを自動的に削除します。"
 
 msgid ""
 "Alternatively, you can use a text editor such as Notepad++ or use the "

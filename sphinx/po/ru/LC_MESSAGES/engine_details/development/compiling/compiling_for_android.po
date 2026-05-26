@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -49,12 +49,6 @@ msgstr "Требования"
 msgid "For compiling under Windows, Linux or macOS, the following is required:"
 msgstr ""
 "Для компиляции на системах Windows, Linux или macOS необходимо следующее:"
-
-msgid "`Python 3.8+ <https://www.python.org/downloads/>`_."
-msgstr "`Python 3.8+ <https://www.python.org/downloads/>`_."
-
-msgid "`SCons 4.0+ <https://scons.org/pages/download.html>`_ build system."
-msgstr "`SCons 4.0+ <https://scons.org/pages/download.html>`_ система сборки."
 
 msgid ""
 "On Linux, **do not use an Android SDK provided by your distribution's "
@@ -177,10 +171,6 @@ msgstr ""
 "Debug template (используется при экспорте с установленным флажком "
 "**Debugging Enabled (Отладка включена)**)"
 
-msgid "(**Optional**) Dev template (used when troubleshooting)"
-msgstr ""
-"(**Необязательно**) Dev template (используется при устранении неполадок)"
-
 msgid "The resulting templates will be located under the ``bin`` directory:"
 msgstr "Полученные шаблоны будут расположены в каталоге ``bin``:"
 
@@ -189,9 +179,6 @@ msgstr "``bin/android_release.apk`` для шаблона релиза"
 
 msgid "``bin/android_debug.apk`` for the debug template"
 msgstr "``bin/android_debug.apk`` для шаблона отладки"
-
-msgid "``bin/android_dev.apk`` for the dev template"
-msgstr "``bin/android_dev.apk`` для шаблона dev"
 
 msgid "``bin/android_source.zip`` for the Gradle build template"
 msgstr "``bin/android_source.zip`` для шаблона сборки Gradle"

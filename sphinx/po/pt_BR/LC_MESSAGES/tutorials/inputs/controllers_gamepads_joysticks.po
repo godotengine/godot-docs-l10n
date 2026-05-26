@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -220,17 +220,6 @@ msgstr "Meu controle não é reconhecido pelo Godot."
 msgid "My controller has incorrectly mapped buttons or axes."
 msgstr "Meu controle tem botões ou eixos atribuidos incorretamente."
 
-msgid ""
-"To test mappings on non-desktop platforms or to distribute your project with "
-"additional controller mappings, you can add them by "
-"calling :ref:`Input.add_joy_mapping() <class_Input_method_add_joy_mapping>` "
-"as early as possible in a script's ``_ready()`` function."
-msgstr ""
-"Para testar mapeamentos em plataformas não desktop ou para distribuir seu "
-"projeto com mapeamentos de controladores adicionais, você pode adicioná-los "
-"chamando :ref:`Input.add_joy_mapping() <class_Input_method_add_joy_mapping>` "
-"o mais cedo possível em uma função ``_ready()`` no script."
-
 msgid "My controller works on a given platform, but not on another platform."
 msgstr ""
 "Meu controle funciona em uma determinada plataforma, mas não em outra "
@@ -238,6 +227,9 @@ msgstr ""
 
 msgid "Linux"
 msgstr "Linux"
+
+msgid "Android"
+msgstr "Android"
 
 msgid "Web"
 msgstr "Web"

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -813,10 +813,6 @@ msgstr ""
 msgid "out vec4 **POSITION**"
 msgstr "Out vec4 **POSITION**"
 
-msgid "If written to, overrides final vertex position in clip space."
-msgstr ""
-"У разі запису, перевизначає кінцеву позицію вершини в просторі відсікання."
-
 msgid "inout vec2 **UV**"
 msgstr "Inout vec2 **UV**"
 
@@ -929,18 +925,6 @@ msgid "out float **Z_CLIP_SCALE**"
 msgstr "out float **Z_CLIP_SCALE**"
 
 msgid ""
-"If written to, scales the vertex towards the camera to avoid clipping into "
-"things like walls. Lighting and shadows will continue to work correctly when "
-"this is written to, but screen-space effects like SSAO and SSR may break "
-"with lower scales. Try to keep this value as close to ``1.0`` as possible."
-msgstr ""
-"Якщо записано в, масштабує вершину в напрямку камери, щоб уникнути обрізання "
-"об такі речі, як стіни. Освітлення та тіні продовжуватимуть працювати "
-"правильно, коли це записується в, але ефекти екранного простору, такі як "
-"SSAO та SSR, можуть працювати нестабільно при менших масштабах. Намагайтеся, "
-"щоб це значення було якомога ближчим до ``1.0``."
-
-msgid ""
 "``MODELVIEW_MATRIX`` combines both the ``MODEL_MATRIX`` and ``VIEW_MATRIX`` "
 "and is better suited when floating point issues may arise. For example, if "
 "the object is very far away from the world origin, you may run into floating "
@@ -981,17 +965,6 @@ msgstr ""
 
 msgid "in vec4 **FRAGCOORD**"
 msgstr "In vec4 **FRAGCOORD**"
-
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window. Origin is upper left. ``z`` specifies fragment depth. It is also "
-"used as the output value for the fragment depth unless ``DEPTH`` is written "
-"to."
-msgstr ""
-"Координата центру пікселя в просторі екрана. ``xy`` визначає положення у "
-"вікні. Початок координат знаходиться у верхньому лівому куті. ``z`` визначає "
-"глибину фрагмента. Він також використовується як вихідне значення для "
-"глибини фрагмента, якщо не записується ``DEPTH``."
 
 msgid "in bool **FRONT_FACING**"
 msgstr "In bool **FRONT_FACING**"
@@ -1165,9 +1138,6 @@ msgstr ""
 
 msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
 msgstr "Out float **ALPHA_SCISSOR_THRESHOLD**"
-
-msgid "If written to, values below a certain amount of alpha are discarded."
-msgstr "У разі запису значення, нижчі за певну кількість альфа, відкидаються."
 
 msgid "out float **ALPHA_HASH_SCALE**"
 msgstr "Out float **ALPHA_HASH_SCALE**"
@@ -1369,31 +1339,11 @@ msgstr "Колір випромінювання (може перевищуват
 msgid "out vec4 **FOG**"
 msgstr "Out vec4 **FOG**"
 
-msgid ""
-"If written to, blends final pixel color with ``FOG.rgb`` based on ``FOG.a``."
-msgstr ""
-"У разі запису змішує кінцевий колір пікселя з ``FOG.rgb`` на основі "
-"``FOG.a``."
-
 msgid "out vec4 **RADIANCE**"
 msgstr "Out vec4 **RADIANCE**"
 
-msgid ""
-"If written to, blends environment map radiance with ``RADIANCE.rgb`` based "
-"on ``RADIANCE.a``."
-msgstr ""
-"Якщо написати, поєднує випромінювання карти середовища з ``RADIANCE.rgb`` на "
-"основі ``RADIANCE.a``."
-
 msgid "out vec4 **IRRADIANCE**"
 msgstr "Out vec4 **IRRADIANCE**"
-
-msgid ""
-"If written to, blends environment map irradiance with ``IRRADIANCE.rgb`` "
-"based on ``IRRADIANCE.a``."
-msgstr ""
-"Якщо написати, поєднує освітленість карти середовища з ``IRRADIANCE.rgb`` на "
-"основі ``IRRADIANCE.a``."
 
 msgid ""
 "Shaders going through the transparent pipeline when ``ALPHA`` is written to "
@@ -1457,15 +1407,6 @@ msgstr ""
 "Vertex Shading<class_ProjectSettings_property_rendering/shading/overrides/"
 "force_vertex_shading>` увімкнено в налаштуваннях проекту. (Це ввімкнено за "
 "замовчуванням на мобільних платформах.)"
-
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
-"lower-left."
-msgstr ""
-"Координата центру пікселя в просторі екрана. ``xy`` вказує позицію у вікні, "
-"``z`` визначає глибину фрагмента, якщо ``DEPTH`` не використовується. "
-"Початок нижній лівий."
 
 msgid "in vec3 **NORMAL**"
 msgstr "In vec3 **NORMAL**"
@@ -1552,13 +1493,6 @@ msgstr "Out vec3 **SPECULAR_LIGHT**"
 
 msgid "Specular light result."
 msgstr "Результат дзеркального світла."
-
-msgid ""
-"Alpha (range ``[0.0, 1.0]``). If written to, the material will go to the "
-"transparent pipeline."
-msgstr ""
-"Альфа (діапазон ``[0.0, 1.0]``). Якщо записати до, матеріал перейде до "
-"прозорого конвеєра."
 
 msgid ""
 "Transparent materials also cannot cast shadows or appear in "

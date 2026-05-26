@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -306,15 +306,6 @@ msgstr "|rb_map|"
 msgid "``std::map``"
 msgstr "``std::map``"
 
-msgid ""
-"Map type that uses a `red-black tree <https://en.wikipedia.org/wiki/Red-"
-"black-tree>`__ to find keys. The performance benefits of ``RBMap`` aren't "
-"established, so prefer using other types."
-msgstr ""
-"`레드-블랙 트리 <https://en.wikipedia.org/wiki/Red-black-tree>`__을 사용하여 "
-"키를 찾는 맵 유형입니다. ``RBMap``의 성능 이점은 확립되지 않았으므로 다른 유"
-"형을 사용하는 것이 좋습니다."
-
 msgid "|dictionary| 📜"
 msgstr "딕셔너리"
 
@@ -434,9 +425,6 @@ msgstr ""
 
 msgid "|rw_lock|"
 msgstr "|rw_lock|"
-
-msgid "``std::shared_timed_mutex``"
-msgstr "또는 순서가 없는 집합이 될 수 있습니다:"
 
 msgid ""
 "Read-write aware mutex type. Use ``RWLockRead lock(mutex)`` or ``RWLockWrite "

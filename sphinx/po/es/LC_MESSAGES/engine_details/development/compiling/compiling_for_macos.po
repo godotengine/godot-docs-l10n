@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -28,14 +28,6 @@ msgstr "Requerimientos"
 
 msgid "For compiling under macOS, the following is required:"
 msgstr "Para compilar en macOS, se requiere lo siguiente:"
-
-msgid "`Python 3.8+ <https://www.python.org/downloads/macos/>`_."
-msgstr "`Python 3.8+ <https://www.python.org/downloads/macos/>`_."
-
-msgid "`SCons 4.0+ <https://scons.org/pages/download.html>`_ build system."
-msgstr ""
-"El sistema de construcción `SCons 4.0+ <https://scons.org/pages/"
-"download.html>`_."
 
 msgid ""
 "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (or the more "
@@ -81,6 +73,9 @@ msgstr ""
 "compilaciones de Godot y las versiones oficiales, puedes "
 "habilitar :ref:`doc_data_paths_self_contained_mode` creando un archivo "
 "llamado ``._sc_`` o ``_sc_`` en la carpeta ``bin/``."
+
+msgid "Compiling with ANGLE support"
+msgstr "Compilación con soporte ANGLE"
 
 msgid ""
 "You can optionally build the godot-angle-static libraries yourself with the "

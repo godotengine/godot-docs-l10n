@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -763,9 +763,6 @@ msgstr ""
 msgid "out vec4 **POSITION**"
 msgstr "out vec4 **POSITION**"
 
-msgid "If written to, overrides final vertex position in clip space."
-msgstr "如果对其写入数值，将覆盖裁剪空间中的最终顶点位置。"
-
 msgid "inout vec2 **UV**"
 msgstr "inout vec2 **UV**"
 
@@ -875,17 +872,6 @@ msgid "out float **Z_CLIP_SCALE**"
 msgstr "out float **Z_CLIP_SCALE**"
 
 msgid ""
-"If written to, scales the vertex towards the camera to avoid clipping into "
-"things like walls. Lighting and shadows will continue to work correctly when "
-"this is written to, but screen-space effects like SSAO and SSR may break "
-"with lower scales. Try to keep this value as close to ``1.0`` as possible."
-msgstr ""
-"如果对其写入数值，会将顶点向摄像机方向缩放，以避免穿模（例如穿进墙壁里）。当"
-"写入该值时，光照和阴影依然能正常工作，但像 SSAO（屏幕空间环境光遮蔽）和 SSR"
-"（屏幕空间反射）这类屏幕空间特效，在缩放比例较小时可能会失效。尽量让该值保持"
-"在 ``1.0`` 附近。"
-
-msgid ""
 "``MODELVIEW_MATRIX`` combines both the ``MODEL_MATRIX`` and ``VIEW_MATRIX`` "
 "and is better suited when floating point issues may arise. For example, if "
 "the object is very far away from the world origin, you may run into floating "
@@ -922,16 +908,6 @@ msgstr ""
 
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
-
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window. Origin is upper left. ``z`` specifies fragment depth. It is also "
-"used as the output value for the fragment depth unless ``DEPTH`` is written "
-"to."
-msgstr ""
-"屏幕空间中像素中心的坐标。其中 ``xy`` 指定了该像素在窗口中的位置，坐标原点位"
-"于左上角。 ``z`` 则指定了片段的深度值。除非你在代码中显式地写入了 ``DEPTH`` "
-"变量，否则 z 的值也会直接被当作该片段的最终深度输出值。"
 
 msgid "in bool **FRONT_FACING**"
 msgstr "in bool **FRONT_FACING**"
@@ -1098,9 +1074,6 @@ msgstr ""
 
 msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
 msgstr "out float **ALPHA_SCISSOR_THRESHOLD**"
-
-msgid "If written to, values below a certain amount of alpha are discarded."
-msgstr "如果写入, 则丢弃低于一定量alpha的值."
 
 msgid "out float **ALPHA_HASH_SCALE**"
 msgstr "out float **ALPHA_HASH_SCALE**"
@@ -1293,33 +1266,11 @@ msgstr "自发光颜色（可以超过 ``(1.0, 1.0, 1.0)`` 以实现高动态范
 msgid "out vec4 **FOG**"
 msgstr "out vec4 **FOG**"
 
-msgid ""
-"If written to, blends final pixel color with ``FOG.rgb`` based on ``FOG.a``."
-msgstr ""
-"如果对该变量进行了写入（赋值）操作，系统就会根据 ``FOG.a`` （Alpha通道）的"
-"值，将最终的像素颜色与 ``FOG.rgb`` （颜色通道）进行混合。"
-
 msgid "out vec4 **RADIANCE**"
 msgstr "out vec4 **RADIANCE**"
 
-msgid ""
-"If written to, blends environment map radiance with ``RADIANCE.rgb`` based "
-"on ``RADIANCE.a``."
-msgstr ""
-"如果对该变量进行了写入（赋值）操作，系统就会根据 ``RADIANCE.a`` （Alpha通道）"
-"的值，将环境贴图（Environment Map）的辐射度与 ``RADIANCE.rgb`` （颜色通道）进"
-"行混合。"
-
 msgid "out vec4 **IRRADIANCE**"
 msgstr "out vec4 **IRRADIANCE**"
-
-msgid ""
-"If written to, blends environment map irradiance with ``IRRADIANCE.rgb`` "
-"based on ``IRRADIANCE.a``."
-msgstr ""
-"如果对该变量进行了写入（赋值）操作，系统就会根据 ``IRRADIANCE.a`` （Alpha通"
-"道）的值，将环境贴图（Environment Map）的辐照度与 ``IRRADIANCE.rgb`` （颜色通"
-"道）进行混合。"
 
 msgid ""
 "Shaders going through the transparent pipeline when ``ALPHA`` is written to "
@@ -1379,14 +1330,6 @@ msgstr ""
 "Shading<class_ProjectSettings_property_rendering/shading/overrides/"
 "force_vertex_shading>` ，那么 ``light()`` 函数将不会被执行。（在移动平台上，"
 "该选项默认是开启的。）"
-
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
-"lower-left."
-msgstr ""
-"屏幕空间中像素中心的坐标. ``xy`` 表示窗口位置, 如果不使用 ``DEPTH``, 则 "
-"``z`` 表示片段深度. 原点在左下角."
 
 msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
@@ -1475,13 +1418,6 @@ msgstr "out vec3 **SPECULAR_LIGHT**"
 
 msgid "Specular light result."
 msgstr "镜面反射光效果。"
-
-msgid ""
-"Alpha (range ``[0.0, 1.0]``). If written to, the material will go to the "
-"transparent pipeline."
-msgstr ""
-"Alpha（透明度，取值范围为 ``[0.0, 1.0]`` ）。如果对该变量进行了写入（赋值）操"
-"作，该材质就会被自动归入透明渲染管线。"
 
 msgid ""
 "Transparent materials also cannot cast shadows or appear in "
