@@ -339,7 +339,7 @@ msgid "This prevents the overlay from receiving keyboard input, and also hides f
 msgstr ""
 
 #: ../../docs/tutorials/ui/creating_applications.rst:464
-msgid "Remember to poosition and resize the window using scripts, as a borderless window can generally not be moved by the user."
+msgid "Remember to position and resize the window using scripts, as a borderless window can generally not be moved by the user."
 msgstr ""
 
 #: ../../docs/tutorials/ui/creating_applications.rst:467
@@ -563,57 +563,93 @@ msgid "The size reduction is often significant (relative to the project's size),
 msgstr ""
 
 #: ../../docs/tutorials/ui/creating_applications.rst:742
-msgid "Creating installers"
+msgid "Creating a single-executable distribution"
 msgstr ""
 
 #: ../../docs/tutorials/ui/creating_applications.rst:744
-msgid "While games are typically installed through launchers such as Steam or downloaded as a ZIP, applications are often distributed as installers for better desktop integration. The installer can perform actions like adding shortcuts to the Start Menu or desktop, setting up file associations, and more. Installers can also be run automatically through the command line, which makes them more desirable for corporate environments."
+msgid "By default, Godot creates a PCK file containing the project data next to the executable. This means that if the executable is moved without moving the PCK file at the same time, the application will not run. This is not ideal for applications, which are increasingly being distributed as a single executable file."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:751
-msgid "Godot does not have built-in support for creating installers for exported projects. However, it is still possible to create your own installers using third-party tools."
+#: ../../docs/tutorials/ui/creating_applications.rst:750
+msgid "To make the application entirely self-contained to a single executable, you can enable **Embed PCK** in the export preset options. This will embed the PCK data within the executable, so that the application can be moved around without breaking. This also makes it possible to run the application directly from a ZIP archive without having to extract it first."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:754
-msgid "Here is a non-exhaustive list of tools that can be used to create installers:"
+#: ../../docs/tutorials/ui/creating_applications.rst:758
+msgid "PCK embedding has a size limitation depending on the platform. Very large applications (several GBs) may not be able to use this feature on all platforms. Check the export documentation for the target platform for more details."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:756
-msgid "**Windows:** `Inno Setup <https://jrsoftware.org/isinfo.php>`__, `NSIS <https://nsis.sourceforge.io/Main_Page>`__"
-msgstr ""
-
-#: ../../docs/tutorials/ui/creating_applications.rst:759
-msgid "If you have a code signing certificate, remember to sign *both* the installer and project executable. To do so, :ref:`sign the exported project executable <doc_exporting_for_windows_code_signing>`, create the installer containing the exported project, then manually sign the installer that you just created."
+#: ../../docs/tutorials/ui/creating_applications.rst:763
+msgid "Creating portable applications"
 msgstr ""
 
 #: ../../docs/tutorials/ui/creating_applications.rst:765
-msgid "**macOS:** `create-dmg <https://github.com/create-dmg/create-dmg>`__"
+msgid "An application is called *portable* when it can be run without installation, and when its configuration is entirely self-contained to the folder it was extracted to. This allows placing the application files on an USB drive or similar, and running it on different machines without having to go through an installation process."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:767
-msgid "**Linux:** `Flatpak <https://docs.flatpak.org/en/latest/first-build.html>`__"
-msgstr ""
-
-#: ../../docs/tutorials/ui/creating_applications.rst:769
-msgid "There is a `Godot BaseApp <https://github.com/flathub/org.godotengine.Godot.BaseApp>`__ that can be used as a base for creating Flatpak packages for Godot projects. See `the Pixelorama Flatpak <https://github.com/flathub/com.orama_interactive.Pixelorama>`__ for an example Flatpak that makes use of this BaseApp."
-msgstr ""
-
-#: ../../docs/tutorials/ui/creating_applications.rst:775
-msgid "Resources"
-msgstr ""
-
-#: ../../docs/tutorials/ui/creating_applications.rst:777
-msgid "These pages cover tasks commonly performed in non-game applications:"
-msgstr ""
-
-#: ../../docs/tutorials/ui/creating_applications.rst:779
-msgid ":ref:`doc_runtime_loading_and_saving`"
+#: ../../docs/tutorials/ui/creating_applications.rst:771
+msgid "The Godot editor's own :ref:`self-contained mode <doc_data_paths_self_contained_mode>` currently can't be used within projects. However, you can still choose to save your own configuration files to the folder containing the executable as follows:"
 msgstr ""
 
 #: ../../docs/tutorials/ui/creating_applications.rst:780
+msgid "You may want to make portable mode optional as it's not always desired. Typically, this is performed by detecting the presence of a specific file in the executable's folder (e.g. a file named ``portable.txt``), and only using the executable's folder for configuration if that file is present."
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:787
+msgid "Remember that this will only work if the application is extracted to a writable location. This will result in permission errors if the executable is run from a read-only location, such as ``C:\\Program Files`` on Windows."
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:792
+msgid "Creating installers"
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:794
+msgid "While games are typically installed through launchers such as Steam or downloaded as a ZIP, applications are often distributed as installers for better desktop integration. The installer can perform actions like adding shortcuts to the Start Menu or desktop, setting up file associations, and more. Installers can also be run automatically through the command line, which makes them more desirable for corporate environments."
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:801
+msgid "Godot does not have built-in support for creating installers for exported projects. However, it is still possible to create your own installers using third-party tools."
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:804
+msgid "Here is a non-exhaustive list of tools that can be used to create installers:"
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:806
+msgid "**Windows:** `Inno Setup <https://jrsoftware.org/isinfo.php>`__, `NSIS <https://nsis.sourceforge.io/Main_Page>`__"
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:809
+msgid "If you have a code signing certificate, remember to sign *both* the installer and project executable. To do so, :ref:`sign the exported project executable <doc_exporting_for_windows_code_signing>`, create the installer containing the exported project, then manually sign the installer that you just created."
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:815
+msgid "**macOS:** `create-dmg <https://github.com/create-dmg/create-dmg>`__"
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:817
+msgid "**Linux:** `Flatpak <https://docs.flatpak.org/en/latest/first-build.html>`__"
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:819
+msgid "There is a `Godot BaseApp <https://github.com/flathub/org.godotengine.Godot.BaseApp>`__ that can be used as a base for creating Flatpak packages for Godot projects. See `the Pixelorama Flatpak <https://github.com/flathub/com.orama_interactive.Pixelorama>`__ for an example Flatpak that makes use of this BaseApp."
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:825
+msgid "Resources"
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:827
+msgid "These pages cover tasks commonly performed in non-game applications:"
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:829
+msgid ":ref:`doc_runtime_loading_and_saving`"
+msgstr ""
+
+#: ../../docs/tutorials/ui/creating_applications.rst:830
 msgid ":ref:`doc_http_request_class`"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:781
+#: ../../docs/tutorials/ui/creating_applications.rst:831
 msgid ":ref:`class_ConfigFile` (used to save user preferences)"
 msgstr ""

@@ -168,7 +168,7 @@ msgid "You can test whether a project is fill rate-limited quite easily. Turn of
 msgstr ""
 
 #: ../../docs/tutorials/performance/gpu_optimization.rst:174
-msgid "You can increase performance in a fill rate-limited project by reducing the amount of work the GPU has to do. You can do this by simplifying the shader (perhaps turn off expensive options if you are using a :ref:`StandardMaterial3D <class_StandardMaterial3D>`), or reducing the number and size of textures used. Also, when using non-unshaded particles, consider forcing vertex shading in their material to decrease the shading cost."
+msgid "You can increase performance in a fill rate-limited project by reducing the amount of work the GPU has to do. You can do this by simplifying the shader (perhaps turn off expensive options if you are using a :ref:`StandardMaterial3D <class_StandardMaterial3D>`), or reducing the number and size of textures used. Also, when using shaded particles, consider forcing vertex shading in their material to decrease the shading cost."
 msgstr ""
 
 #: ../../docs/tutorials/performance/gpu_optimization.rst:183

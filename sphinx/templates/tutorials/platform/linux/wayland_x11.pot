@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.6\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:4
+msgid "Wayland/X11"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:7
+msgid "Overview"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:9
+msgid "One of the important components of any operating system is its display server. Windows and macOS only provide one option, Linux however has two, X11 and Wayland."
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:12
+msgid "X11 is an older standard and is currently being gradually phased out by the majority of linux distributions in favor of supporting Wayland, which has been developed as a replacement. Applications running on X11 can still work when a distribution is using Wayland thanks to a compatibility layer known as Xwayland."
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:17
+msgid "Godot's support is still a work in progress, so for now X11 remains the default setting for game projects, that will likely change in a future version."
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:21
+msgid "When to use Wayland"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:23
+msgid "If you're an engine developer who wants to help improve support, or if you think Xwayland might be causing visual glitches in your exported project for whatever reason, then we would recommend using Wayland. But outside of that it's recommended to stick with X11 for now. It's important to note that while X11 applications can run on Wayland, the reverse is not true."
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:29
+msgid "As of January 2026 most popular distributions are using Wayland by default, including, but not limited to, the following:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:32
+msgid "SteamOS"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:33
+msgid "Bazzite"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:34
+msgid "CachyOS"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:35
+msgid "Fedora"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:36
+msgid "Fedora Silverblue"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:37
+msgid "Ubuntu"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:38
+msgid "OpenSuse"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:40
+msgid "Keep in mind that for some distributions, like Ubuntu, users may have changed the display server to X11 manually themselves."
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:44
+msgid "Changing the setting"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:46
+msgid "To change your display server to Wayland click on :menu:`Project > project settings`, from here, go to :button:`Display Server` and change the :button:`driver.linuxbsd` option to ``wayland``."
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:51
+msgid "Disabling Libdecor loading"
+msgstr ""
+
+#: ../../docs/tutorials/platform/linux/wayland_x11.rst:53
+msgid "Libdecor loading on Wayland has some quirks and it may be useful to disable it depending on your situation. To do that you need to set the ``GODOT_WAYLAND_DISABLE_LIBDECOR`` environment variable to ``1`` like this:"
+msgstr ""

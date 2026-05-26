@@ -195,82 +195,86 @@ msgstr ""
 msgid "Only other agents on the same map that are registered for avoidance themself will be considered in the avoidance calculation."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:115
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:117
+msgid "The NavigationAgent **must** be supplied with a ``target_position`` attribute, even if you are only using the agent for avoidance. Otherwise, the ``safe_velocity`` received from the ``velocity_computed`` signal will always be the zero vector."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:121
 msgid "The following NavigationAgent properties are relevant for avoidance:"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:117
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:123
 msgid "The property ``height`` is available in 3D only. The height together with the current global y-axis position of the agent determines the vertical placement of the agent in the avoidance simulation. Agents using the 2D avoidance will automatically ignore other agents or obstacles that are below or above them."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:118
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:124
 msgid "The property ``radius`` controls the size of the avoidance circle, or in case of 3D sphere, around the agent. This area describes the agents body and not the avoidance maneuver distance."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:119
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:125
 msgid "The property ``neighbor_distance`` controls the search radius of the agent when searching for other agents that should be avoided. A lower value reduces processing cost."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:120
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:126
 msgid "The property ``max_neighbors`` controls how many other agents are considered in the avoidance calculation if they all have overlapping radius. A lower value reduces processing cost but a too low value may result in agents ignoring the avoidance."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:122
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:128
 msgid "The properties ``time_horizon_agents`` and ``time_horizon_obstacles`` control the avoidance prediction time for other agents or obstacles in seconds. When agents calculate their safe velocities they choose velocities that can be kept for this amount of seconds without colliding with another avoidance object. The prediction time should be kept as low as possible as agents will slow down their velocities to avoid collision in that timeframe."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:123
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:129
 msgid "The property ``max_speed`` controls the maximum velocity allowed for the agents avoidance calculation. If the agents parents moves faster than this value the avoidance ``safe_velocity`` might not be accurate enough to avoid collision."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:125
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:131
 msgid "The property ``use_3d_avoidance`` switches the agent between the 2D avoidance (xz axis) and the 3D avoidance (xyz axis) on the next update. Note that 2D avoidance and 3D avoidance run in separate avoidance simulations so agents split between them do not affect each other."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:127
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:133
 msgid "The properties ``avoidance_layers`` and ``avoidance_mask`` are bitmasks similar to e.g. physics layers. Agents will only avoid other avoidance objects that are on an avoidance layer that matches at least one of their own avoidance mask bits."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:128
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:134
 msgid "The ``avoidance_priority`` makes agents with a higher priority ignore agents with a lower priority. This can be used to give certain agents more importance in the avoidance simulation, e.g. important non-playable characters, without constantly changing their entire avoidance layers or mask."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:131
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:137
 msgid "Avoidance exists in its own space and has no information from navigation meshes or physics collision. Behind the scene avoidance agents are just circles with different radius on a flat 2D plane or spheres in an otherwise empty 3D space. NavigationObstacles can be used to add some environment constrains to the avoidance simulation, see :ref:`doc_navigation_using_navigationobstacles`."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:137
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:143
 msgid "Avoidance does not affect the pathfinding. It should be seen as an additional option for constantly moving objects that cannot be (re)baked to a navigation mesh efficiently in order to move around them."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:141
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:147
 msgid "RVO avoidance makes implicit assumptions about natural agent behavior. E.g. that agents move on reasonable passing sides that can be assigned when they encounter each other. This means that very clinical avoidance test scenarios will commonly fail. E.g. agents moved directly against each other with perfect opposite velocities will fail because the agents can not get their passing sides assigned."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:144
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:150
 msgid "Using the NavigationAgent ``avoidance_enabled`` property is the preferred option to toggle avoidance. The following code snippets can be used to toggle avoidance on agents, create or delete avoidance callbacks or switch avoidance modes."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:236
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:242
 msgid "NavigationAgent Script Templates"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:238
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:244
 msgid "The following sections provides script templates for nodes commonly used with NavigationAgents."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:242
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:248
 msgid "2D GDScript"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:339
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:345
 msgid "2D C#"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:502
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:508
 msgid "3D GDScript"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:600
+#: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:606
 msgid "3D C#"
 msgstr ""

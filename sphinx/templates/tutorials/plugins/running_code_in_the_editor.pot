@@ -216,46 +216,74 @@ msgstr ""
 msgid "This will automatically select a script template that is suited for EditorScripts, with a ``_run()`` method already inserted:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:537
-msgid "This ``_run()`` method is executed when you use **File > Run** or the keyboard shortcut :kbd:`Ctrl + Shift + X` while the EditorScript is the currently open script in the script editor. This keyboard shortcut is only effective when currently focused on the script editor."
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:552
+msgid "This ``_run()`` method is executed when you use any of the 4 approaches that can be used to run an EditorScript:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:542
-msgid "Scripts that extend EditorScript must be ``@tool`` scripts to function."
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:555
+msgid "Use :menu:`File > Run` at the top of the script editor with the EditorScript being the current tab."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:546
-msgid "EditorScripts can only be run from the Godot script editor. If you are using an external editor, open the script inside the Godot script editor to run it."
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:557
+msgid "Press the keyboard shortcut :kbd:`Ctrl + Shift + X` while the EditorScript is the current tab. This keyboard shortcut is only effective when focused on the script editor."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:551
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:560
+msgid "Right-click the script in the FileSystem dock and choose :menu:`Run`."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:561
+msgid "Add a ``class_name <name>`` at the top of the script, bring up the command palette by pressing :kbd:`Ctrl + Shift + P`, and enter the class name to run it. The entry will be named according to the class name, with automatic capitalization applied."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:566
+msgid "Scripts that extend EditorScript **must** be ``@tool`` scripts to function."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:570
+msgid "EditorScripts can only be run from the Godot script editor. If you are using an external editor, use one of the last two approaches to run the script."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:575
+msgid "C# EditorScripts cannot be run from the script editor as it only supports GDScript. Please refer to the above alternative approaches to run custom C# EditorScripts."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:579
+msgid "Keep in mind C# tool scripts will only appear in the command palette when denoted by the :ref:`GlobalClass <doc_c_sharp_global_classes>` attribute."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:585
 msgid "EditorScripts have no undo/redo functionality, so **make sure to save your scene before running one** if the script is designed to modify any data."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:554
-msgid "To access nodes in the currently edited scene, use the :ref:`EditorScript.get_scene <class_EditorScript_method_get_scene>` method which returns the root Node of the currently edited scene. Here's an example that recursively gets all nodes in the currently edited scene and doubles the range of all OmniLight3D nodes:"
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:588
+msgid "To access nodes in the currently edited scene, use the :ref:`EditorInterface.get_edited_scene_root() <class_EditorInterface_method_get_edited_scene_root>` method which returns the root Node of the currently edited scene. Here's an example that recursively gets all nodes in the currently edited scene and doubles the range of all OmniLight3D nodes:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:587
-msgid "You can change the currently edited scene at the top of the editor even while the Script view is open. This will affect the return value of :ref:`EditorScript.get_scene <class_EditorScript_method_get_scene>`, so make sure you've selected the scene you intend to iterate upon before running the script."
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:641
+msgid "In the above example, we also call :ref:`EditorScript.mark_scene_as_unsaved() <class_EditorInterface_method_mark_scene_as_unsaved>` after any modification that affects the scene's state. This allows the editor to display the scene as \"unsaved\" (i.e. with an asterisk next to the name). This way, you also get a confirmation when trying to close the scene with unsaved changes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:594
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:649
+msgid "You can change the currently edited scene at the top of the editor even while the Script view is open. This will affect the return value of :ref:`EditorInterface.get_edited_scene_root <class_EditorInterface_method_get_edited_scene_root>`, so make sure you've selected the scene you intend to iterate upon before running the script."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:656
 msgid "Instancing scenes"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:596
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:658
 msgid "You can instantiate packed scenes normally and add them to the scene currently opened in the editor. By default, nodes or scenes added with :ref:`Node.add_child(node) <class_Node_method_add_child>` are **not** visible in the Scene tree dock and are **not** persisted to disk. If you wish the node or scene to be visible in the scene tree dock and persisted to disk when saving the scene, you need to set the child node's :ref:`owner <class_Node_property_owner>` property to the currently edited scene root."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:604
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:666
 msgid "If you are using ``@tool``:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:629
-msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:691
+msgid "If you are using :ref:`EditorScript <class_EditorScript>`:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:660
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:722
 msgid "Using ``@tool`` improperly can yield many errors. It is advised to first write the code how you want it, and only then add the ``@tool`` annotation to the top. Also, make sure to separate code that runs in-editor from code that runs in-game. This way, you can find bugs more easily."
 msgstr ""

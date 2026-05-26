@@ -36,7 +36,7 @@ msgid "Clone the ``godot`` repository containing all the editor icons:"
 msgstr ""
 
 #: ../../docs/engine_details/editor/creating_icons.rst:23
-msgid "The icons must be created in a vector graphics editor in SVG format. There are two main requirements to follow:"
+msgid "The icons must be created in a vector graphics editor in SVG format. There are three main requirements to follow:"
 msgstr ""
 
 #: ../../docs/engine_details/editor/creating_icons.rst:26
@@ -47,78 +47,94 @@ msgstr ""
 msgid "Lines should be snapped to pixels whenever possible to remain crisp at lower DPI. You can create a 16×16 grid in Inkscape to make this easier."
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:31
-msgid "Once you're satisfied with the icon's design, save the icon in the cloned repository's ``editor/icons`` folder. The icon name should match the intended name in a case-sensitive manner. For example, to create an icon for CPUParticles2D, name the file ``CPUParticles2D.svg``."
-msgstr ""
-
-#: ../../docs/engine_details/editor/creating_icons.rst:37
-msgid "Color conversion for light editor themes"
-msgstr ""
-
-#: ../../docs/engine_details/editor/creating_icons.rst:39
+#: ../../docs/engine_details/editor/creating_icons.rst:30
 msgid "If the user has configured their editor to use a light theme, Godot will convert the icon's colors based on a `set of predefined color mappings <https://github.com/godotengine/godot/blob/master/editor/themes/editor_color_map.cpp>`__. This is to ensure the icon always displays with a sufficient contrast rate. Try to restrict your icon's color palette to colors found in the list above. Otherwise, your icon may become difficult to read on a light background."
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:47
-msgid "To enable color conversion for light editor themes:"
+#: ../../docs/engine_details/editor/creating_icons.rst:37
+msgid "Once you're satisfied with the icon's design, save the icon in the cloned repository's ``editor/icons`` folder. The icon name should match the intended name in a case-sensitive manner. For example, to create an icon for CPUParticles2D, name the file ``CPUParticles2D.svg``."
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:48
-msgid ":ui:`Import > Import As > Texture2D`"
+#: ../../docs/engine_details/editor/creating_icons.rst:44
+msgid "You can also browse all existing icons on the `Godot editor icons <https://godotengine.github.io/editor-icons/>`__ website."
 msgstr ""
 
 #: ../../docs/engine_details/editor/creating_icons.rst:49
-msgid "Set ``editor/convert_colors_with_editor_theme`` to ``true``"
+msgid "Import options for custom icons"
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:52
-msgid "Icon optimization"
+#: ../../docs/engine_details/editor/creating_icons.rst:51
+msgid "For custom icons that are present in projects (as opposed to the engine source code), there are two import options you should enable:"
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:54
-msgid "Because the editor renders SVGs once at load time, they need to be small in size so they can be efficiently parsed. When the `pre-commit hook <https://contributing.godotengine.org/en/latest/engine/guidelines/code_style.html#pre-commit-hook>`__ runs, it automatically optimizes the SVG using `svgo <https://github.com/svg/svgo>`_."
+#: ../../docs/engine_details/editor/creating_icons.rst:55
+msgid "Scaling for hiDPI displays"
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:61
-msgid "While this optimization step won't impact the icon's quality noticeably, it will still remove editor-only information such as guides. Therefore, it's recommended to keep the source SVG around if you need to make further changes."
+#: ../../docs/engine_details/editor/creating_icons.rst:57
+msgid "Icons need to be scaled properly on hiDPI displays to ensure they remain crisp and large enough to be readable."
+msgstr ""
+
+#: ../../docs/engine_details/editor/creating_icons.rst:60
+msgid "To ensure the icon is rendered at a correct scale on hiDPI displays, select the SVG file in the FileSystem dock, enable the **Editor > Scale with Editor Scale** option in the Import dock and click :button:`Reimport`. Note that this option is only available for icons in SVG format, as it requires the use of a vector format to work."
 msgstr ""
 
 #: ../../docs/engine_details/editor/creating_icons.rst:67
-msgid "Integrating and sharing the icons"
+msgid "Color conversion for light editor themes"
 msgstr ""
 
 #: ../../docs/engine_details/editor/creating_icons.rst:69
-msgid "If you're contributing to the engine itself, you should make a pull request to add optimized icons to ``editor/icons`` in the main repository. Recompile the engine to make it pick up new icons for classes."
+msgid "To ensure the icon has its colors converted when the user is using a light theme, select the SVG file in the FileSystem dock, enable the **Editor > Convert Colors with Editor Theme** option in the Import dock and click :button:`Reimport`. Note that this option is only available for icons in SVG format, as it requires the use of a vector format to work."
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:73
-msgid "It's also possible to create custom icons within a module. If you're creating your own module and don't plan to integrate it with Godot, you don't need to make a separate pull request for your icons to be available within the editor as they can be self-contained."
+#: ../../docs/engine_details/editor/creating_icons.rst:76
+msgid "Icon optimization"
 msgstr ""
 
 #: ../../docs/engine_details/editor/creating_icons.rst:78
-msgid "For specific instructions on how to create module icons, refer to :ref:`Creating custom module icons<doc_custom_module_icons>`."
+msgid "Because the editor renders SVGs once at load time, they need to be small in size so they can be efficiently parsed. When the `pre-commit hook <https://contributing.godotengine.org/en/latest/engine/guidelines/code_style.html#pre-commit-hook>`__ runs, it automatically optimizes the SVG using `svgo <https://github.com/svg/svgo>`_."
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:82
+#: ../../docs/engine_details/editor/creating_icons.rst:85
+msgid "While this optimization step won't impact the icon's quality noticeably, it will still remove editor-only information such as guides. Therefore, it's recommended to keep the source SVG around if you need to make further changes."
+msgstr ""
+
+#: ../../docs/engine_details/editor/creating_icons.rst:91
+msgid "Integrating and sharing the icons"
+msgstr ""
+
+#: ../../docs/engine_details/editor/creating_icons.rst:93
+msgid "If you're contributing to the engine itself, you should make a pull request to add optimized icons to ``editor/icons`` in the main repository. Recompile the engine to make it pick up new icons for classes."
+msgstr ""
+
+#: ../../docs/engine_details/editor/creating_icons.rst:97
+msgid "It's also possible to create custom icons within a module. If you're creating your own module and don't plan to integrate it with Godot, you don't need to make a separate pull request for your icons to be available within the editor as they can be self-contained."
+msgstr ""
+
+#: ../../docs/engine_details/editor/creating_icons.rst:102
+msgid "For specific instructions on how to create module icons, refer to :ref:`Creating custom module icons <doc_custom_module_icons>`."
+msgstr ""
+
+#: ../../docs/engine_details/editor/creating_icons.rst:106
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:84
+#: ../../docs/engine_details/editor/creating_icons.rst:108
 msgid "If icons don't appear in the editor, make sure that:"
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:86
+#: ../../docs/engine_details/editor/creating_icons.rst:110
 msgid "Each icon's filename matches the naming requirement as described previously."
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:88
-msgid "``modules/svg`` is enabled (it should be enabled by default). Without it, icons won't appear in the editor at all."
+#: ../../docs/engine_details/editor/creating_icons.rst:111
+msgid "The ``svg`` module is enabled at compile-time (it is enabled by default). Without this module, icons won't appear in the editor at all."
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:92
+#: ../../docs/engine_details/editor/creating_icons.rst:115
 msgid "References"
 msgstr ""
 
-#: ../../docs/engine_details/editor/creating_icons.rst:94
+#: ../../docs/engine_details/editor/creating_icons.rst:117
 msgid "`editor/icons <https://github.com/godotengine/godot/tree/master/editor/icons>`__"
 msgstr ""

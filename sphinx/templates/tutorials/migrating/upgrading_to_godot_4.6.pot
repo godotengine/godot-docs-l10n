@@ -44,6 +44,7 @@ msgid "**Source compatible** - Source code will compile successfully without cha
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:25
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:187
 msgid "Core"
 msgstr ""
 
@@ -99,9 +100,9 @@ msgstr ""
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:98
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:114
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:130
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:222
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:237
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:256
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:270
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:285
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:304
 msgid "Introduced"
 msgstr ""
 
@@ -272,7 +273,7 @@ msgid "Signal ``current_animation_changed`` changes ``name`` parameter type from
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:52
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:219
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:267
 msgid "3D"
 msgstr ""
 
@@ -314,8 +315,8 @@ msgid "Method ``set_rotation_axis`` changes ``axis`` parameter type from ``Sprin
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:67
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:187
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:234
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:212
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:282
 msgid "Rendering"
 msgstr ""
 
@@ -340,7 +341,7 @@ msgid "`GH-112379`_"
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:78
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:253
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:301
 msgid "GUI nodes"
 msgstr ""
 
@@ -681,230 +682,274 @@ msgid "For example, ``GodotApp.java`` moved from ``src/com/godot/game/GodotApp.j
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:191
-msgid "Soft Light blend mode now always behaves as it did previously with ``use_hdr_2d``, regardless of the Viewport's ``use_hdr_2d`` setting (`GH-109971`_)."
+msgid "The :ref:`doc_tscn_file_format` has changed in two ways in Godot 4.6:"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:193
+msgid "``load_steps`` is no longer written in scene files (`GH-103352`_). This attribute wasn't used by the editor."
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:195
+msgid "Unique node IDs are now saved to scene files to help track nodes when they are moved or renamed (`GH-106837`_). This makes scene refactoring significantly more robust."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:198
+msgid "The changes are backwards-compatible and forwards-compatible, which means scenes saved in Godot 4.5 can still be loaded in Godot 4.6 and vice-versa (notwithstanding other incompatible changes performed in the scene itself)."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:202
+msgid "As a result, when saving a scene that was last edited in Godot 4.5 in Godot 4.6, significant diffs will occur in version control programs. These diffs are expected."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:206
+msgid "As a reminder, you can upgrade all files in a project to the latest format using :menu:`Project > Tools > Upgrade Project Files...` in the editor, then committing the changes to version control. This allows you to avoid large diffs later on when editing scenes."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:216
+msgid "The default blend mode for Glow is now Screen, which looks more correct but is significantly brighter than the previous Soft Light mode (`GH-110671`_)."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:219
+msgid "Several other glow defaults were changed to ensure the glow didn't become too strong, but you will likely need to tweak glow properties in Environment after upgrading."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:223
+msgid "In addition, glow's Soft Light blend mode now always behaves as it did previously with ``use_hdr_2d``, regardless of the Viewport's ``use_hdr_2d`` setting (`GH-109971`_)."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:227
+msgid "When using the Mobile renderer, the rewritten glow effect will look significantly different to the previous one for performance reasons (`GH-110077`_). You may need to further adjust glow settings in Environment to achieve a similar look to before."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:234
+msgid "Volumetric fog blending has been changed to be more physically accurate (`GH-112494`_). This will cause volumetric fog to appear brighter in most scenes."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:238
+msgid "To compensate for this, you will need to decrease volumetric fog density or brightness in Environment, or decrease the **Volumetric Fog Energy** property on specific lights."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:243
 msgid "Navigation"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:199
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:247
 msgid "``AStar2D.get_point_path``, ``AStar3D.get_point_path``, ``AStarGrid2D.get_id_path`` and ``AStarGrid2D.get_point_path`` will now return an empty path when ``from_id`` is a disabled/solid point (`GH-113988`_)."
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:203
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:251
 msgid "Changed defaults"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:205
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:253
 msgid "The following default values have been changed. If your project relies on the previous defaults, you may need to explicitly set them to the old values."
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:210
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:258
 msgid "The default rendering driver on Windows for **newly created** projects is now :abbr:`D3D12 (Direct3D 12)` (`GH-113213`_). This can be changed in Project Settings under ``rendering/rendering_device/driver.windows``."
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:215
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:263
 msgid "The default 3D physics engine for **newly created** projects is now Jolt Physics (`GH-105737`_). This can be changed in Project Settings under ``physics/3d/physics_engine``."
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:222
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:237
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:270
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:285
 msgid "Member"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:222
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:237
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:256
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:270
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:285
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:304
 msgid "Old Value"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:222
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:237
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:256
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:270
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:285
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:304
 msgid "New Value"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:224
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:272
 msgid "**MeshInstance3D**"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:225
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:273
 msgid "Property ``skeleton``"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:225
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:273
 msgid "NodePath(\"..\")"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:225
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:273
 msgid "NodePath(\"\")"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:225
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:273
 msgid "`GH-112267`_"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:230
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:278
 msgid "The default value of ``skeleton`` has changed. Enable ``animation/compatibility/default_parent_skeleton_in_mesh_instance_3d`` in Project Settings if the old behavior is needed for compatibility."
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:239
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:287
 msgid "**ProjectSettings**"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:240
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:288
 msgid "Property ``rendering/reflections/sky_reflections/roughness_layers``"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:240
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:288
 msgid "8"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:240
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:288
 msgid "7"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:240
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:288
 msgid "`GH-107902`_"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:241
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:289
 msgid "Property ``rendering/rendering_device/d3d12/agility_sdk_version``"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:241
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:289
 msgid "613"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:241
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:289
 msgid "618"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:241
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:289
 msgid "`GH-114043`_"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:242
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:290
 msgid "**Environment**"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:243
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:291
 msgid "Property ``glow_blend_mode``"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:243
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:291
 msgid "2"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:243
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:261
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:291
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:309
 msgid "1"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:243
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:244
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:245
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:246
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:247
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:248
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:291
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:292
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:293
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:294
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:295
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:296
 msgid "`GH-110671`_"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:244
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:292
 msgid "Property ``glow_intensity``"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:244
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:245
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:292
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:293
 msgid "0.8"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:244
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:259
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:292
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:307
 msgid "0.3"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:245
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:293
 msgid "Property ``glow_levels/2``"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:245
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:247
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:248
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:293
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:295
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:296
 msgid "0.0"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:246
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:294
 msgid "Property ``glow_levels/3``"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:246
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:248
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:294
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:296
 msgid "1.0"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:246
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:294
 msgid "0.4"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:247
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:295
 msgid "Property ``glow_levels/4``"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:247
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:295
 msgid "0.1"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:248
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:296
 msgid "Property ``glow_levels/5``"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:249
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:297
 msgid "Property ``ssr_depth_tolerance``"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:249
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:259
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:297
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:307
 msgid "0.2"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:249
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:297
 msgid "0.5"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:249
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:297
 msgid "`GH-111210`_"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:256
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:304
 msgid "Property/Parameter"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:258
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:306
 msgid "**PopupMenu**"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:259
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:307
 msgid "Property ``submenu_popup_delay``"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:259
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:307
 msgid "`GH-110256`_"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:260
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:308
 msgid "**ResourceImporterCSVTranslation**"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:261
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:309
 msgid "Property ``compress``"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:261
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:309
 msgid "true"
 msgstr ""
 
-#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:261
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:309
 msgid "`GH-112073`_"
 msgstr ""

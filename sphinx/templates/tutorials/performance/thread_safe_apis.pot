@@ -96,17 +96,41 @@ msgid "**PhysicsServer3D:** :ref:`Physics > 3D > Run on Separate Thread <class_P
 msgstr ""
 
 #: ../../docs/tutorials/performance/thread_safe_apis.rst:113
-msgid "GDScript arrays and dictionaries"
+msgid "Navigation"
 msgstr ""
 
 #: ../../docs/tutorials/performance/thread_safe_apis.rst:115
+msgid ":ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>` are both thread-safe and thread-friendly."
+msgstr ""
+
+#: ../../docs/tutorials/performance/thread_safe_apis.rst:117
+msgid "The navigation-related query functions can be called by threads and run in true parallel."
+msgstr ""
+
+#: ../../docs/tutorials/performance/thread_safe_apis.rst:119
+msgid "By default, a conservative number of threads is supported running in true parallel on navigation maps before additional threads have to wait for map data access at a semaphore. To increase the number of threads that can run simultaneously on map data, set :ref:`Navigation > Pathfinding > Max Threads <class_ProjectSettings_property_navigation/pathfinding/max_threads>`."
+msgstr ""
+
+#: ../../docs/tutorials/performance/thread_safe_apis.rst:124
+msgid "The navigation server-related resources like NavigationSourceGeometryData, NavigationMesh, and NavigationPolygon are all thread-safe but not necessarily thread-friendly. They use internal read-write locks for thread-safety so editing the same resource (e.g. a single big navmesh) on multiple threads at the same time can cause thread congestion."
+msgstr ""
+
+#: ../../docs/tutorials/performance/thread_safe_apis.rst:127
+msgid "The navigation-related helper classes like :ref:`AStar2D<class_AStar2D>`, :ref:`AStar3D<class_AStar3D>`, and :ref:`AStarGrid2D<class_AStarGrid2D>` are **not** thread-safe. They can be used with threads to some limited capacity, but using two or more threads on the same AStar object causes corruption. For example, using a dedicated background thread per AStar object to populate points or do queries works, but two threads using the same AStar object would corrupt each other's data."
+msgstr ""
+
+#: ../../docs/tutorials/performance/thread_safe_apis.rst:133
+msgid "GDScript arrays and dictionaries"
+msgstr ""
+
+#: ../../docs/tutorials/performance/thread_safe_apis.rst:135
 msgid "In GDScript, reading and writing elements from multiple threads is OK, but anything that changes the container size (resizing, adding, or removing elements) requires locking a :ref:`mutex <doc_using_multiple_threads_mutexes>`."
 msgstr ""
 
-#: ../../docs/tutorials/performance/thread_safe_apis.rst:120
+#: ../../docs/tutorials/performance/thread_safe_apis.rst:140
 msgid "Resources"
 msgstr ""
 
-#: ../../docs/tutorials/performance/thread_safe_apis.rst:122
+#: ../../docs/tutorials/performance/thread_safe_apis.rst:142
 msgid "Modifying a unique resource from multiple threads is not supported. However, handling references on multiple threads *is* supported. Hence loading resources on a thread is as well - scenes, textures, meshes, etc - can be loaded and manipulated on a thread and then added to the active scene on the main thread. The limitation here is as described above: one must be careful not to load the same resource from multiple threads at once. Therefore, it's easiest to use **one** thread for loading and modifying resources, and then the main thread for adding them."
 msgstr ""

@@ -32,37 +32,93 @@ msgid "Godot offers a more elegant approach for PC distribution when using the e
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:22
-msgid "Environment variables"
+msgid "Architecture"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:24
-msgid "You can use the following environment variables to set export options outside of the editor. During the export process, these override the values that you set in the export menu."
+msgid "There are 7 different processor architectures that exported Godot projects can run on in Linux:"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:27
+msgid "x86_64"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:28
-msgid "Linux export environment variables"
+msgid "x86_32"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:29
+msgid "arm64"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:30
+msgid "arm32"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:31
-msgid "Export option"
+msgid "rv64"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:32
-msgid "Environment variable"
+msgid "ppc64"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_linux.rst:33
+msgid "loongarch64"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:35
+msgid "The default is x86_64, this is the most common architecture of PC processors today. All modern Intel and AMD processors as of writing this are x86_64."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:38
+msgid "x86_32 will give you a 32bit executable that can run on 32bit only distributions of Linux as well as some modern distributions that are 64bit. It is NOT recommended to use this option unless you are trying to get your project to run on an old 32bit distribution and processor. It should also be noted that several prominent distributions, such as Fedora, have been discussing removing their 32bit libraries which would prevent executables made this way from running on future versions of that distribution."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:46
+msgid "arm64 executables can run on 64bit ARM processors. If you're familiar with the Raspberry Pi, those have utilized 64bit ARM processors since the Pi 3 (older versions used 32bit ARM processors). If you're uploading to a platform that supports multiple executables, such as itch.io, and you're confident your game could run on a common ARM computer, such as the Pi 5, then we'd recommend exporting this version and providing it as an option."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:53
+msgid "arm32 executables are for older 32bit arm processors, such as what the Raspberry Pi 1 and 2 used. Given that they're not common at all these days we do not recommend exporting for this unless you have a computer with one of these processors you know you can, and want to have your game running on."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:58
+msgid "rv64 is for RISC-V processors, ppc64 is for 64bit PowerPC processors, and loongarch64 is for 64bit LoongArch processors. All of these architectures are substantially more niche when it comes to running videogames on them. And we only recommend exporting for them if you have a reason to, such as if you're an enthusiast who owns hardware. Official export templates are not provided by Godot, you will have to create them on your own. Instructions for compiling the engine for RISC-V and creating export templates can be found on the :ref:`doc_compiling_for_linuxbsd` page."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:69
+msgid "Environment variables"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:71
+msgid "You can use the following environment variables to set export options outside of the editor. During the export process, these override the values that you set in the export menu."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:75
+msgid "Linux export environment variables"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:78
+msgid "Export option"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:79
+msgid "Environment variable"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_linux.rst:80
 msgid "Encryption / Encryption Key"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_linux.rst:34
+#: ../../docs/tutorials/export/exporting_for_linux.rst:81
 msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_linux.rst:37
+#: ../../docs/tutorials/export/exporting_for_linux.rst:84
 msgid "Export options"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_linux.rst:39
+#: ../../docs/tutorials/export/exporting_for_linux.rst:86
 msgid "You can find a full list of export options available in the :ref:`class_EditorExportPlatformLinuxBSD` class reference."
 msgstr ""

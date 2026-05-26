@@ -32,101 +32,133 @@ msgid "Godot offers a more elegant approach for PC distribution when using the e
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:22
-msgid "Changing the executable icon"
+msgid "Architecture"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:24
-msgid "Godot will automatically use whatever image is set as your project's icon in the project settings, and convert it to an ICO file for the exported project. If you want to manually create an ICO file for greater control over how the icon looks at different resolutions then see the :ref:`doc_changing_application_icon_for_windows` page."
+msgid "There are 3 different processor architectures that exported Godot projects can run on in Windows:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:32
-msgid "Code signing"
+#: ../../docs/tutorials/export/exporting_for_windows.rst:27
+msgid "x86_64"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:28
+msgid "x86_32"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:29
+msgid "arm64"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:31
+msgid "The default is x86_64, this is the most common architecture of PC processors today. All modern Intel and AMD processors as of writing this are x86_64."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:34
-msgid "Godot is capable of automatic code signing on export. To do this you must have the ``Windows SDK`` (on Windows) or `osslsigncode <https://github.com/mtrojnar/osslsigncode>`__ (on any other OS) installed. You will also need a package signing certificate, information on creating one can be found `here <https://learn.microsoft.com/en-us/windows/msix/package/create-certificate-package-signing>`__."
+msgid "x86_32 will give you a 32bit executable that can run on 32bit-only versions of Windows as well as modern versions which are 64bit. It is **not** recommended to use this option unless you are trying to get your project to run on an old 32bit version of Windows. And it should be noted that no 32bit versions of Windows receive Microsoft support anymore."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:41
-msgid "If you export for Windows with embedded PCK files, you will not be able to sign the program as it will break."
+#: ../../docs/tutorials/export/exporting_for_windows.rst:40
+msgid "arm64 processors are modern but less common than x86_64, and run Windows on ARM. Snapdragon X Elite is an example of a modern Windows ARM processor. Using this export option will allow your project to run natively on arm processors without Microsoft's Prism emulator. Executables made using this option will **not** run on regular Windows with an x86_64 processor. If you're uploading your project to a platform that allows multiple executables, such as itch.io, and are confident a Snapdragon X Elite processor is powerful enough to run it, we would recommend providing an ARM version. Prism emulation is far from perfect, and Godot does not require you to build or design your game in any special way to run on ARM."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:44
-msgid "On Windows, PCK embedding is also known to cause false positives in antivirus programs. Therefore, it's recommended to avoid using it unless you're distributing your project via Steam as it bypasses code signing and antivirus checks."
+#: ../../docs/tutorials/export/exporting_for_windows.rst:51
+msgid "Changing the executable icon"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:50
-msgid "Setup"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_windows.rst:52
-msgid "Settings need to be changed in two places. First, in the editor settings, under **Export > Windows**. Click on the folder next to the ``Sign Tool`` setting, if you're using Windows navigate to and select ``SignTool.exe``, if you're on a different OS select ``osslsigncode``."
+#: ../../docs/tutorials/export/exporting_for_windows.rst:53
+msgid "Godot will automatically use whatever image is set as your project's icon in the project settings, and convert it to an ICO file for the exported project. If you want to manually create an ICO file for greater control over how the icon looks at different resolutions then see the :ref:`doc_changing_application_icon_for_windows` page."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:59
-msgid "The second location is the Windows export preset, which can be found in **Project > Export...**. Add a windows desktop preset if you haven't already. Under options there is a code signing category."
+msgid "PCK embedding"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:65
-msgid "``Enabled`` must be set to true, and ``Identity`` must be set to the signing certificate. The other settings can be adjusted as needed. Once this is Done Godot will sign your project on export."
+#: ../../docs/tutorials/export/exporting_for_windows.rst:61
+msgid "PCK embedding is only supported on executables up to ~3.89 GB in size. This metric includes both the executable and embedded PCK size, so in practice, the PCK file may only weigh up to ~3.75 GB. This can also vary depending on build options when using a custom export template."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:70
-msgid "Environment variables"
+#: ../../docs/tutorials/export/exporting_for_windows.rst:69
+msgid "Code signing"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:72
-msgid "You can use the following environment variables to set export options outside of the editor. During the export process, these override the values that you set in the export menu."
+#: ../../docs/tutorials/export/exporting_for_windows.rst:71
+msgid "Godot is capable of automatic code signing on export. To do this you must have the ``Windows SDK`` (on Windows) or `osslsigncode <https://github.com/mtrojnar/osslsigncode>`__ (on any other OS) installed. You will also need a package signing certificate, information on creating one can be found `here <https://learn.microsoft.com/en-us/windows/msix/package/create-certificate-package-signing>`__."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:76
-msgid "Windows export environment variables"
+#: ../../docs/tutorials/export/exporting_for_windows.rst:77
+msgid "Setup"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:79
-msgid "Export option"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_windows.rst:80
-msgid "Environment variable"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_windows.rst:81
-msgid "Encryption / Encryption Key"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_windows.rst:82
-msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_windows.rst:83
-msgid "Options / Codesign / Identity Type"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_windows.rst:84
-msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_windows.rst:85
-msgid "Options / Codesign / Identity"
+msgid "Settings need to be changed in two places. First, in the editor settings, under **Export > Windows**. Click on the folder next to the ``Sign Tool`` setting, if you're using Windows navigate to and select ``SignTool.exe``, if you're on a different OS select ``osslsigncode``."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:86
+msgid "The second location is the Windows export preset, which can be found in **Project > Export...**. Add a windows desktop preset if you haven't already. Under options there is a code signing category."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:92
+msgid "``Enabled`` must be set to true, and ``Identity`` must be set to the signing certificate. The other settings can be adjusted as needed. Once this is Done Godot will sign your project on export."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:97
+msgid "Environment variables"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:99
+msgid "You can use the following environment variables to set export options outside of the editor. During the export process, these override the values that you set in the export menu."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:103
+msgid "Windows export environment variables"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:106
+msgid "Export option"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:107
+msgid "Environment variable"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:108
+msgid "Encryption / Encryption Key"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:109
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:110
+msgid "Options / Codesign / Identity Type"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:111
+msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:112
+msgid "Options / Codesign / Identity"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:113
 msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:87
+#: ../../docs/tutorials/export/exporting_for_windows.rst:114
 msgid "Options / Codesign / Password"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:88
+#: ../../docs/tutorials/export/exporting_for_windows.rst:115
 msgid "``GODOT_WINDOWS_CODESIGN_PASSWORD``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:91
+#: ../../docs/tutorials/export/exporting_for_windows.rst:118
 msgid "Export options"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:93
+#: ../../docs/tutorials/export/exporting_for_windows.rst:120
 msgid "You can find a full list of export options available in the :ref:`class_EditorExportPlatformWindows` class reference."
 msgstr ""

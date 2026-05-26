@@ -124,73 +124,73 @@ msgid "Click the down arrow next to \"[empty]\" and choose \"Load\". Select ``mo
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:110
-msgid "Next, select the instance of the ``Player`` scene under ``Main`` node in the Scene dock, and access the Node dock on the sidebar. Make sure to have the Signals tab selected in the Node dock."
+msgid "Next, select the instance of the ``Player`` scene under ``Main`` node in the Scene dock, and access the Signals dock on the sidebar."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:114
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:113
 msgid "You should see a list of the signals for the ``Player`` node. Find and double-click the ``hit`` signal in the list (or right-click it and select \"Connect...\"). This will open the signal connection dialog. We want to make a new function named ``game_over``, which will handle what needs to happen when a game ends. Type \"game_over\" in the \"Receiver Method\" box at the bottom of the signal connection dialog and click \"Connect\". You are aiming to have the ``hit`` signal emitted from ``Player`` and handled in the ``Main`` script. Add the following code to the new function, as well as a ``new_game`` function that will set everything up for a new game:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:155
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:154
 msgid "Now we'll connect the ``timeout()`` signal of each Timer node (``StartTimer``, ``ScoreTimer``, and ``MobTimer``) to the main script. For each of the three timers, select the timer in the Scene dock, open the Signals tab of the Node dock, then double-click the ``timeout()`` signal in the list. This will open a new signal connection dialog. The default settings in this dialog should be fine, so select **Connect** to create a new signal connection."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:162
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:161
 msgid "Once all three timers have this set up, you should be able to see each timer have a Signal connection for their respective ``timeout()`` signal, showing in green, within their respective Signals tabs:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:166
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:165
 msgid "(For MobTimer): ``_on_mob_timer_timeout()``"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:167
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:166
 msgid "(For ScoreTimer): ``_on_score_timer_timeout()``"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:168
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:167
 msgid "(For StartTimer): ``_on_start_timer_timeout()``"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:170
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:169
 msgid "Now we define how each of these timers operate by adding the code below. Notice that ``StartTimer`` will start the other two timers, and that ``ScoreTimer`` will increment the score by 1."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:199
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:198
 msgid "In ``_on_mob_timer_timeout()``, we will create a mob instance, pick a random starting location along the ``Path2D``, and set the mob in motion. The ``PathFollow2D`` node will automatically rotate as it follows the path, so we will use that to select the mob's direction as well as its position. When we spawn a mob, we'll pick a random value between ``150.0`` and ``250.0`` for how fast each mob will move (it would be boring if they were all moving at the same speed)."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:207
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:206
 msgid "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:267
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:266
 msgid "Why ``PI``? In functions requiring angles, Godot uses *radians*, not degrees. Pi represents a half turn in radians, about ``3.1415`` (there is also ``TAU`` which is equal to ``2 * PI``). If you're more comfortable working with degrees, you'll need to use the ``deg_to_rad()`` and ``rad_to_deg()`` functions to convert between the two."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:275
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:274
 msgid "Testing the scene"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:277
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:276
 msgid "Let's test the scene to make sure everything is working. Add this ``new_game`` call to ``_ready()``:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:293
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:292
 msgid "Let's also assign ``Main`` as our \"Main Scene\" - the one that runs automatically when the game launches. Press the \"Play\" button and select ``main.tscn`` when prompted."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:297
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:296
 msgid "If you had already set another scene as the \"Main Scene\", you can right click ``main.tscn`` in the FileSystem dock and select \"Set As Main Scene\"."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:300
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:299
 msgid "You should be able to move the player around, see mobs spawning, and see the player disappear when hit by a mob."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:303
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:302
 msgid "When you're sure everything is working, remove the call to ``new_game()`` from ``_ready()`` and replace it with ``pass``."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:306
+#: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:305
 msgid "What's our game lacking? Some user interface. In the next lesson, we'll add a title screen and display the player's score."
 msgstr ""
