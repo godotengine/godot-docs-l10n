@@ -14,15 +14,15 @@ HTTPRequest
 Опис
 --------
 
-Вузол з можливістю надсилання HTTP-запитів. Використовує :ref:`HTTPClient<class_HTTPClient>` внутрішньо.
+A node with the ability to send HTTP requests. Uses :ref:`HTTPClient<class_HTTPClient>` internally.
 
-Може використовуватися для здійснення HTTP-запитів, тобто завантаження або вивантаження файлів чи веб-контенту через HTTP.
+Can be used to make HTTP requests, i.e. download or upload files or web content via HTTP.
 
-\ **Попередження:** Див. примітки та попередження щодо :ref:`HTTPClient<class_HTTPClient>` щодо обмежень, особливо щодо безпеки TLS.
+\ **Warning:** See the notes and warnings on :ref:`HTTPClient<class_HTTPClient>` for limitations, especially regarding TLS security.
 
-\ **Примітка:** Під час експорту в Android переконайтеся, що ви ввімкнули дозвіл ``INTERNET`` у попередньому налаштуванні експорту Android, перш ніж експортувати проект або використовувати розгортання одним клацанням миші. В іншому випадку Android блокуватиме мережевий зв'язок будь-якого типу.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **Приклад:** Зверніться до REST API та виведіть одне з його повернутих полів:
+\ **Example:** Contact a REST API and print one of its returned fields:
 
 
 .. tabs::
@@ -30,77 +30,77 @@ HTTPRequest
  .. code-tab:: gdscript
 
     func _ready():
-        # Створіть вузол HTTP-запиту та підключіть його сигнал завершення.
+        # Create an HTTP request node and connect its completion signal.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # Виконайте GET-запит. URL-адреса нижче повертає JSON на момент написання.
+        # Perform a GET request. The URL below returns JSON as of writing.
         var error = http_request.request("https://httpbin.org/get")
         if error != OK:
-            push_error("У HTTP-запиті сталася помилка.")
+            push_error("An error occurred in the HTTP request.")
 
-        # Виконайте POST-запит. URL-адреса нижче повертає JSON на момент написання.
-        # Примітка: Не робіть одночасні запити, використовуючи один вузол HTTPRequest.
-        # Фрагмент нижче наведено лише для довідки.
-        var body = JSON.new().stringify({"name": "Godette"})
+        # Perform a POST request. The URL below returns JSON as of writing.
+        # Note: Don't make simultaneous requests using a single HTTPRequest node.
+        # The snippet below is provided for reference only.
+        var body = JSON.stringify({"name": "Godette"})
         error = http_request.request("https://httpbin.org/post", [], HTTPClient.METHOD_POST, body)
         if error != OK:
-            push_error("У HTTP-запиті сталася помилка.")
+            push_error("An error occurred in the HTTP request.")
 
-    # Викликається, коли HTTP-запит завершено.
+    # Called when the HTTP request is completed.
     func _http_request_completed(result, response_code, headers, body):
         var json = JSON.new()
         json.parse(body.get_string_from_utf8())
         var response = json.get_data()
 
-        # Виведе рядок користувацького агента, який використовується вузлом HTTPRequest (як розпізнається httpbin.org).
+        # Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
         print(response.headers["User-Agent"])
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        // Створіть вузол HTTP-запиту та підключіть його сигнал завершення.
+        // Create an HTTP request node and connect its completion signal.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // Виконайте GET-запит. URL-адреса нижче повертає JSON на момент написання.
+        // Perform a GET request. The URL below returns JSON as of writing.
         Error error = httpRequest.Request("https://httpbin.org/get");
         if (error != Error.Ok)
         {
-            GD.PushError("У HTTP-запиті сталася помилка.");
+            GD.PushError("An error occurred in the HTTP request.");
         }
 
-        // Виконайте POST-запит. URL-адреса нижче повертає JSON на момент написання.
-        // Примітка: Не робіть одночасні запити, використовуючи один вузол HTTPRequest.
-        // Фрагмент нижче наведено лише для довідки.
-        string body = new Json().Stringify(new Godot.Collections.Dictionary
+        // Perform a POST request. The URL below returns JSON as of writing.
+        // Note: Don't make simultaneous requests using a single HTTPRequest node.
+        // The snippet below is provided for reference only.
+        string body = Json.Stringify(new Godot.Collections.Dictionary
         {
             { "name", "Godette" }
         });
         error = httpRequest.Request("https://httpbin.org/post", null, HttpClient.Method.Post, body);
         if (error != Error.Ok)
         {
-            GD.PushError("Сталася помилка в HTTP-запиті.");
+            GD.PushError("An error occurred in the HTTP request.");
         }
     }
 
-    // Викликається після завершення HTTP-запиту.
+    // Called when the HTTP request is completed.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         var json = new Json();
         json.Parse(body.GetStringFromUtf8());
         var response = json.GetData().AsGodotDictionary();
 
-        // Виведе рядок користувацького агента, який використовується вузлом HTTPRequest (як розпізнається httpbin.org).
+        // Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
         GD.Print((response["headers"].AsGodotDictionary())["User-Agent"]);
     }
 
 
 
-\ **Приклад:** Завантажте зображення за допомогою **HTTPRequest** та відобразіть його:
+\ **Example:** Load an image using **HTTPRequest** and display it:
 
 
 .. tabs::
@@ -108,29 +108,29 @@ HTTPRequest
  .. code-tab:: gdscript
 
     func _ready():
-        # Створіть вузол HTTP-запиту та підключіть його сигнал завершення.
+        # Create an HTTP request node and connect its completion signal.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # Виконайте HTTP-запит. URL-адреса нижче повертає зображення PNG на момент написання.
+        # Perform the HTTP request. The URL below returns a PNG image as of writing.
         var error = http_request.request("https://placehold.co/512.png")
         if error != OK:
-            push_error("Сталася помилка в HTTP-запиті.")
+            push_error("An error occurred in the HTTP request.")
 
-    # Викликається, коли HTTP-запит завершено.
+    # Called when the HTTP request is completed.
     func _http_request_completed(result, response_code, headers, body):
         if result != HTTPRequest.RESULT_SUCCESS:
-            push_error("Не вдалося завантажити зображення. Спробуйте інше зображення.")
+            push_error("Image couldn't be downloaded. Try a different image.")
 
         var image = Image.new()
         var error = image.load_png_from_buffer(body)
         if error != OK:
-            push_error("Не вдалося завантажити зображення.")
+            push_error("Couldn't load the image.")
 
         var texture = ImageTexture.create_from_image(image)
 
-        # Відобразити зображення у вузлі TextureRect.
+        # Display the image in a TextureRect node.
         var texture_rect = TextureRect.new()
         add_child(texture_rect)
         texture_rect.texture = texture
@@ -139,31 +139,31 @@ HTTPRequest
 
     public override void _Ready()
     {
-        // Створіть вузол HTTP-запиту та підключіть його сигнал завершення.
+        // Create an HTTP request node and connect its completion signal.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // Виконайте HTTP-запит. URL-адреса нижче повертає зображення PNG на момент написання.
+        // Perform the HTTP request. The URL below returns a PNG image as of writing.
         Error error = httpRequest.Request("https://placehold.co/512.png");
         if (error != Error.Ok)
         {
-            GD.PushError("Сталася помилка в HTTP-запиті.");
+            GD.PushError("An error occurred in the HTTP request.");
         }
     }
 
-    // Викликається після завершення HTTP-запиту.
+    // Called when the HTTP request is completed.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         if (result != (long)HttpRequest.Result.Success)
         {
-            GD.PushError("Не вдалося завантажити зображення. Спробуйте інше зображення..");
+            GD.PushError("Image couldn't be downloaded. Try a different image.");
         }
         var image = new Image();
         Error error = image.LoadPngFromBuffer(body);
         if (error != Error.Ok)
         {
-            GD.PushError("Не вдалося завантажити зображення.");
+            GD.PushError("Couldn't load the image.");
         }
 
         var texture = ImageTexture.CreateFromImage(image);
@@ -176,7 +176,7 @@ HTTPRequest
 
 
 
-\ **Примітка:** Вузли **HTTPRequest** автоматично оброблятимуть розпакування тіл відповідей. Заголовок ``Accept-Encoding`` буде автоматично додано до кожного вашого запиту, якщо він ще не вказано. Будь-яка відповідь із заголовком ``Content-Encoding: gzip`` буде автоматично розпакована та доставлена вам у вигляді нестиснених байтів.
+\ **Note:** **HTTPRequest** nodes will automatically handle decompression of response bodies. An ``Accept-Encoding`` header will be automatically added to each of your requests, unless one is already specified. Any response with a ``Content-Encoding: gzip`` header will automatically be decompressed and delivered to you as uncompressed bytes.
 
 .. rst-class:: classref-introduction-group
 

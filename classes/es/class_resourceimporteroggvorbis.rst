@@ -76,9 +76,9 @@ Descripciones de Propiedades
 
 :ref:`int<class_int>` **bar_beats** = ``4`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bar_beats>`
 
-El número de compases dentro de un solo tiempo en la pista de audio. Esto solo es relevante para la música que desee hacer uso de la música interactiva funcionalidad, no efectos de sonido.
+The number of beats within a single bar in the audio track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-Un editor más conveniente para :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` se proporciona en el diálogo **Configuración avanzada de importación**, ya que te permite previsualizar tus cambios sin tener que volver a importar el audio.
+A more convenient editor for :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ Un editor más conveniente para :ref:`bar_beats<class_ResourceImporterOggVorbis_
 
 :ref:`int<class_int>` **beat_count** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_beat_count>`
 
-El conteo de tiempos de la pista de audio. Esto solo es relevante para la música que desee hacer uso de la funcionalidad de música interactiva, no efectos de sonido.
+The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-Un editor más conveniente para :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` se proporciona en el diálogo **Configuración avanzada de importación**, ya que te permite previsualizar tus cambios sin tener que volver a importar el audio.
+A more convenient editor for :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -104,9 +104,9 @@ Un editor más conveniente para :ref:`beat_count<class_ResourceImporterOggVorbis
 
 :ref:`float<class_float>` **bpm** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bpm>`
 
-Los tiempos por minuto de la pista de audio. Esto debería coincidir con la medida de BPM que se utilizó para componer la pista. Esto solo es relevante para la música que desee hacer uso de la funcionalidad de música interactiva, no efectos de sonido.
+The tempo of the audio track, measured in beats per minute. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-Un editor más conveniente para :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` se proporciona en el **Avanzado Configuración de importación** diálogo, ya que te permite previsualizar tus cambios sin tener que volver a importar el audio.
+A more convenient editor for :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -118,9 +118,9 @@ Un editor más conveniente para :ref:`bpm<class_ResourceImporterOggVorbis_proper
 
 :ref:`bool<class_bool>` **loop** = ``false`` :ref:`🔗<class_ResourceImporterOggVorbis_property_loop>`
 
-Si está habilitado, el audio comenzará a reproducirse al principio después de que la reproducción termine al llegar al final del audio.
+If enabled, the audio will begin playing either from the beginning or from :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>`, after playback ends by either reaching the end of the audio or reaching the end of the last beat according to the amount specified in :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>`.
 
-\ **Nota:** En :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, la señal :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` no se emitirá para el audio en bucle cuando llegue al final del archivo de audio, ya que el audio seguirá reproduciéndose indefinidamente.
+\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
 
 .. rst-class:: classref-item-separator
 

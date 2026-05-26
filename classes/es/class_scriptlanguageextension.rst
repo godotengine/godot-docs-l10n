@@ -32,7 +32,7 @@ Métodos
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Dictionary<class_Dictionary>`                              | :ref:`_complete_code<class_ScriptLanguageExtension_private_method__complete_code>`\ (\ code\: :ref:`String<class_String>`, path\: :ref:`String<class_String>`, owner\: :ref:`Object<class_Object>`\ ) |virtual| |required| |const|                                                                                                                                         |
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Object<class_Object>`                                      | :ref:`_create_script<class_ScriptLanguageExtension_private_method__create_script>`\ (\ ) |virtual| |required| |const|                                                                                                                                                                                                                                                      |
+   | :ref:`Object<class_Object>`                                      | :ref:`_create_script<class_ScriptLanguageExtension_private_method__create_script>`\ (\ ) |virtual| |const|                                                                                                                                                                                                                                                                 |
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] | :ref:`_debug_get_current_stack_info<class_ScriptLanguageExtension_private_method__debug_get_current_stack_info>`\ (\ ) |virtual| |required|                                                                                                                                                                                                                                |
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -470,11 +470,23 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_ScriptLanguageExtension_CodeComplet
 
 
 
+.. _class_ScriptLanguageExtension_constant_CODE_COMPLETION_KIND_KEYWORD:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CodeCompletionKind<enum_ScriptLanguageExtension_CodeCompletionKind>` **CODE_COMPLETION_KIND_KEYWORD** = ``10``
+
+.. container:: contribute
+
+	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+
+
+
 .. _class_ScriptLanguageExtension_constant_CODE_COMPLETION_KIND_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`CodeCompletionKind<enum_ScriptLanguageExtension_CodeCompletionKind>` **CODE_COMPLETION_KIND_MAX** = ``10``
+:ref:`CodeCompletionKind<enum_ScriptLanguageExtension_CodeCompletionKind>` **CODE_COMPLETION_KIND_MAX** = ``11``
 
 .. container:: contribute
 
@@ -579,11 +591,9 @@ Descripciones de Métodos
 
 .. rst-class:: classref-method
 
-:ref:`Object<class_Object>` **_create_script**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_ScriptLanguageExtension_private_method__create_script>`
+:ref:`Object<class_Object>` **_create_script**\ (\ ) |virtual| |const| :ref:`🔗<class_ScriptLanguageExtension_private_method__create_script>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+**Obsoleto:** This method is not called by the engine.
 
 .. rst-class:: classref-item-separator
 
@@ -1205,9 +1215,7 @@ Devuelve la línea donde se define la función en el código, o ``-1`` si la fun
 
 |void| **_reload_scripts**\ (\ scripts\: :ref:`Array<class_Array>`, soft_reload\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_ScriptLanguageExtension_private_method__reload_scripts>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Reloads all ``scripts`` from disk and the specifics of how that happens is **ScriptLanguageExtension** specific.
 
 .. rst-class:: classref-item-separator
 
@@ -1219,9 +1227,7 @@ Devuelve la línea donde se define la función en el código, o ``-1`` si la fun
 
 |void| **_reload_tool_script**\ (\ script\: :ref:`Script<class_Script>`, soft_reload\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_ScriptLanguageExtension_private_method__reload_tool_script>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Reloads the given ``script`` from disk and the specifics of how that happens is **ScriptLanguageExtension** specific.
 
 .. rst-class:: classref-item-separator
 

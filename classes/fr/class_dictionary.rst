@@ -12,216 +12,218 @@ Une structure de données intégrée qui contient des paires clé-valeur.
 Description
 -----------
 
-Les dictionnaires sont des conteneurs associatifs qui contient des valeurs référencées par des clés uniques. Les dictionnaires préservent l'ordre d'insertion lors de l'ajout d'éléments. Dans d'autres langages de programmation, cette structure de données est souvent appelée table de hachage ou tableau associatif.
+Dictionaries are associative containers that contain values referenced by unique keys. Dictionaries will preserve the insertion order when adding new entries. In other programming languages, this data structure is often referred to as a hash map or an associative array.
 
-Vous pouvez définir un dictionnaire avec une liste de paires au format ``clé : valeur`` séparées par des virgules entre des accolades ``{}``.
+You can define a dictionary by placing a comma-separated list of ``key: value`` pairs inside curly braces ``{}``.
 
-Créer un dictionnaire :
+Creating a dictionary:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var mon_dict = {} # Crée un dictionnaire vide.
+    var my_dict = {} # Creates an empty dictionary.
 
-    var dict_variable_cle = "Une autre clé"
-    var dict_variable_valeur = "valeur2"
-    var autre_dict = {
-        "Une clé": "valeur1",
-        dict_variable_cle : dict_variable_valeur,
+    var dict_variable_key = "Another key name"
+    var dict_variable_value = "value2"
+    var another_dict = {
+        "Some key name": "value1",
+        dict_variable_key: dict_variable_value,
     }
 
-    var dict_points = {"Blanc": 50, "Jaune": 75, "Orange": 100}
+    var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
 
-    # Syntaxe alternative façon Lua.
-    # Ne nécessite pas de guillemets autour des clés, mais seules les chaines de caractères constantes peuvent être utilisées comme nom pour les clés.
-    # De plus, les noms des clés doivent commencer par une lettre ou un tiret du bas ("_").
-    # Ici, `une_cle` est une chaine de caractère, pas une variable !
+    # Alternative Lua-style syntax.
+    # Doesn't require quotes around keys, but only string constants can be used as key names.
+    # Additionally, key names must start with a letter or an underscore.
+    # Here, `some_key` is a string literal, not a variable!
     another_dict = {
-        une_cle = 42,
+        some_key = 42,
     }
 
  .. code-tab:: csharp
 
-    var monDict = new Godot.Collections.Dictionary(); // Crée un dictionnaire vide.
-    var dictPoints= new Godot.Collections.Dictionary
+    var myDict = new Godot.Collections.Dictionary(); // Creates an empty dictionary.
+    var pointsDict = new Godot.Collections.Dictionary
     {
-        {"Blanc", 50},
-        {"Jaune", 75},
-        {"Orange", 100}
+        { "White", 50 },
+        { "Yellow", 75 },
+        { "Orange", 100 },
     };
 
 
 
-Vous pouvez accéder aux valeurs d'un dictionnaire en utilisant la clé associée. Dans l'exemple suivant, ``dict_points["Blanc"]`` renverra ``50``. Vous pouvez aussi écrire ``dict_points.Blanc``, qui est équivalent. Par contre, vous devez utiliser la syntaxe avec les accolades si la clé n'est pas une chaine de caractère constante (comme un nombre ou une variable).
+You can access a dictionary's value by referencing its corresponding key. In the above example, ``points_dict["White"]`` will return ``50``. You can also write ``points_dict.White``, which is equivalent. However, you'll have to use the bracket syntax if the key you're accessing the dictionary with isn't a fixed string (such as a number or variable).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    export(string, "Blanc", "Jaune", "Orange") var ma_couleur: String
-    var dict_points = {"Blanc": 50, "Jaune": 75, "Orange": 100}
+    @export_enum("White", "Yellow", "Orange") var my_color: String
+    var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
     func _ready():
-        # On ne peut pas utiliser la syntaxe en point puisque `ma_couleur` est une variable.
-        var points = dict_points[ma_couleur]
+        # We can't use dot syntax here as `my_color` is a variable.
+        var points = points_dict[my_color]
 
  .. code-tab:: csharp
 
-    [Export(PropertyHint.Enum, "Blanc,Jaune,Orange")]
-    public string MaCouleur { get; set; }
-    private Godot.Collections.Dictionary _dictPoints= new Godot.Collections.Dictionary
+    [Export(PropertyHint.Enum, "White,Yellow,Orange")]
+    public string MyColor { get; set; }
+    private Godot.Collections.Dictionary _pointsDict = new Godot.Collections.Dictionary
     {
-        {"Blanc", 50},
-        {"Jaune", 75},
-        {"Orange", 100}
+        { "White", 50 },
+        { "Yellow", 75 },
+        { "Orange", 100 },
     };
 
     public override void _Ready()
     {
-        int points = (int)_dictPoints[MaCouleur];
+        int points = (int)_pointsDict[MyColor];
     }
 
 
 
-Dans l'exemple au-dessus, ``points`` sera assigné à une valeur associée à la couleur choisie dans ``ma_couleur``.
+In the above code, ``points`` will be assigned the value that is paired with the appropriate color selected in ``my_color``.
 
-Les dictionnaires peuvent contenir des données plus complexes :
+Dictionaries can contain more complex data:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var mon_dict = {
-        "Premier tableau": [1, 2, 3, 4] # Assigne un Array (Tableau) à un clé String.
+    var my_dict = {
+        "First Array": [1, 2, 3, 4] # Assigns an Array to a String key.
     }
 
  .. code-tab:: csharp
 
-    var monDict= new Godot.Collections.Dictionary
+    var myDict = new Godot.Collections.Dictionary
     {
-        {"Premier tableau", new Godot.Collections.Array{1, 2, 3, 4}}
+        { "First Array", new Godot.Collections.Array { 1, 2, 3, 4 } }
     };
 
 
 
-Pour ajouter une clé à un dictionnaire déjà existant, accédez-y comme si c'était une clé existante et associez lui une valeur :
+To add a key to an existing dictionary, access it like an existing key and assign to it:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var dict_points = {"Blanc": 50, "Jaune": 75, "Orange": 100}
-    points_dict["Bleu"] = 150 # Ajoute "Bleu" comme clé et assigne 150 pour sa valeur.
+    var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
+    points_dict["Blue"] = 150 # Add "Blue" as a key and assign 150 as its value.
 
  .. code-tab:: csharp
 
-    var dictPoints = new Godot.Collections.Dictionary
+    var pointsDict = new Godot.Collections.Dictionary
     {
-        {"Blanc", 50},
-        {"Jaune", 75},
-        {"Orange", 100}
+        { "White", 50 },
+        { "Yellow", 75 },
+        { "Orange", 100 },
     };
-    pointsDict["Blue"] = 150; // Ajoute "Bleu" comme clé et assigne 150 pour sa valeur.
+    pointsDict["Blue"] = 150; // Add "Blue" as a key and assign 150 as its value.
 
 
 
-Enfin, les dictionnaires non typés peuvent utiliser différents types de clés et de valeurs dans le même dictionnaire :
+Finally, untyped dictionaries can contain different types of keys and values in the same dictionary:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Ceci est un dictionnaire valide.
-    # Pour accéder à "Sous valeur" en-dessous, utilisez `mon_dict.sous_dict.sous_cle` ou `mon_dict["sous_dict"]["sous_cle"]`.
-    # Les styles d'accès peuvent être mélangés suivant les besoins.
-    var mon_dict = {
-        "Clé String": 5,
+    # This is a valid dictionary.
+    # To access the string "Nested value" below, use `my_dict.sub_dict.sub_key` or `my_dict["sub_dict"]["sub_key"]`.
+    # Indexing styles can be mixed and matched depending on your needs.
+    var my_dict = {
+        "String Key": 5,
         4: [1, 2, 3],
         7: "Hello",
-        "sous_dict": {"sous_cle": "Sous valeur"},
+        "sub_dict": { "sub_key": "Nested value" },
     }
 
  .. code-tab:: csharp
 
-    // Ceci est un dictionnaire valide.
-    // Pour accéder à "Sous valeur" en-dessous, utilisez`((Godot.Collections.Dictionary)monDict["sous_dict"])["sous_cle"]`.
-    var monDict = new Godot.Collections.Dictionary {
-        {"Clé String", 5},
-        {4, new Godot.Collections.Array{1,2,3}},
-        {7, "Hello"},
-        {"sous_dict", new Godot.Collections.Dictionary{{"sous_cle", "Sous valeur"}}}
+    // This is a valid dictionary.
+    // To access the string "Nested value" below, use `((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]`.
+    var myDict = new Godot.Collections.Dictionary {
+        { "String Key", 5 },
+        { 4, new Godot.Collections.Array { 1, 2, 3 } },
+        { 7, "Hello" },
+        { "sub_dict", new Godot.Collections.Dictionary { { "sub_key", "Nested value" } } },
     };
 
 
 
-Les clés d'un dictionnaire peuvent être itérées dessus avec le mot-clé ``for``\  :
+The keys of a dictionary can be iterated with the ``for`` keyword:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var courses = {"Orange": 20, "Pomme": 2, "Banane": 4}
-    for fruit in courses :
-        var quantite = courses[fruit]
+    var groceries = { "Orange": 20, "Apple": 2, "Banana": 4 }
+    for fruit in groceries:
+        var amount = groceries[fruit]
 
  .. code-tab:: csharp
 
-    var courses = new Godot.Collections.Dictionary{{"Orange", 20}, {"Pomme", 2}, {"Banane", 4}};
-    foreach (var (fruit, quantite) in courses)
+    var groceries = new Godot.Collections.Dictionary { { "Orange", 20 }, { "Apple", 2 }, { "Banana", 4 } };
+    foreach (var (fruit, amount) in groceries)
     {
-        // `fruit` est la clé, `quantite` est la valeur.
+        // `fruit` is the key, `amount` is the value.
     }
 
 
 
-Pour imposer un certain type pour les clés et les valeurs, vous pouvez créer un *dictionnaire typé*. Les dictionnaires typés ne peuvent contenir que des clés et des valeurs des types donnés, ou qui héritent des classes données :
+To enforce a certain type for keys and values, you can create a *typed dictionary*. Typed dictionaries can only contain keys and values of the given types, or that inherit from the given classes:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Crée un dictionnaire typé avec des clés de type String et des valeurs de type int.
-    # Essayer d'utiliser un autre type pour les clés ou les valeurs résultera en une erreur.
-    var dict_type: Dictionary[String, int] = {
-        "une_cle": 1,
-        "une_autre_cle": 2,
+    # Creates a typed dictionary with String keys and int values.
+    # Attempting to use any other type for keys or values will result in an error.
+    var typed_dict: Dictionary[String, int] = {
+        "some_key": 1,
+        "some_other_key": 2,
     }
 
-    # Crée un dictionnaire typé avec des clés de type String et des valeurs de n'importe quel type.
-    # Essayer d'utiliser un autre type pour les clés résultera en une erreur.
-    var dict_type_cle_seulement: Dictionary[String, Variant] = {
-        "une_cle": 12.34,
-        "une_autre_cle": "string",
+    # Creates a typed dictionary with String keys and values of any type.
+    # Attempting to use any other type for keys will result in an error.
+    var typed_dict_key_only: Dictionary[String, Variant] = {
+        "some_key": 12.34,
+        "some_other_key": "string",
     }
 
  .. code-tab:: csharp
 
-    // Crée un dictionnaire typé avec des clés de type String et des valeurs de type int.
-    // Essayer d'utiliser un autre type pour les clés ou les valeurs résultera en une erreur.
-    var dictType = new Godot.Collections.Dictionary<String, int> {
-        {"une_cle", 1},
-        {"une_autre_cle", 2},
+    // Creates a typed dictionary with String keys and int values.
+    // Attempting to use any other type for keys or values will result in an error.
+    var typedDict = new Godot.Collections.Dictionary<String, int> {
+        {"some_key", 1},
+        {"some_other_key", 2},
     };
 
-    // Crée un dictionnaire typé avec des clés de type String et des valeurs de n'importe quel type.
-    // Essayer d'utiliser un autre type pour les clés résultera en une erreur.
-    var dictTypeCleSeulement = new Godot.Collections.Dictionary<String, Variant> {
-        {"une_cle", 12.34},
-        {"une_autre_cle", "string"},
+    // Creates a typed dictionary with String keys and values of any type.
+    // Attempting to use any other type for keys will result in an error.
+    var typedDictKeyOnly = new Godot.Collections.Dictionary<String, Variant> {
+        {"some_key", 12.34},
+        {"some_other_key", "string"},
     };
 
 
 
-\ **Note :** Les dictionnaires sont toujours passés par référence. Pour obtenir une copie d'un dictionnaire qui peut être modifié de manière indépendante de l'original, utilisez :ref:`duplicate()<class_Dictionary_method_duplicate>`.
+\ **Note:** Dictionaries are always passed by reference. To get a copy of a dictionary which can be modified independently of the original dictionary, use :ref:`duplicate()<class_Dictionary_method_duplicate>`.
 
-\ **Note :** Effacer des éléments lors de l'itération d'un dictionnaire n'est **pas** supporté et va résulter en un comportement imprévisible.
+\ **Note:** Erasing elements while iterating over dictionaries is **not** supported and will result in unpredictable behavior.
+
+\ **Note:** In a boolean context, a dictionary will evaluate to ``false`` if it's empty (``{}``). Otherwise, a dictionary will always evaluate to ``true``.
 
 .. note::
 
@@ -482,7 +484,16 @@ Trouve et renvoie la première clé dont la valeur associée est égale à ``val
 
 :ref:`Variant<class_Variant>` **get**\ (\ key\: :ref:`Variant<class_Variant>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Dictionary_method_get>`
 
-Renvoie la valeur correspondante de la clé ``key`` donnée dans le dictionnaire. Si la clé ``key`` n'existe pas, renvoie ``default`` ou ``null`` si le paramètre est omis.
+Returns the corresponding value for the given ``key`` in the dictionary. If the ``key`` does not exist, returns ``default``, or ``null`` if the parameter is omitted.
+
+\ **Note:** If the ``default`` argument is computationally expensive or has unwanted side effects, consider using the :ref:`has()<class_Dictionary_method_has>` method instead:
+
+::
+
+    # Always calls `expensive_function()`.
+    dict.get("key", expensive_function())
+    # Calls `expensive_function()` only if the key does not exist.
+    dict.get("key") if dict.has("key") else expensive_function()
 
 .. rst-class:: classref-item-separator
 

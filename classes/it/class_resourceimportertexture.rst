@@ -258,9 +258,9 @@ Se ``true``, converte i colori dell'immagine importata per abbinarli a :ref:`Edi
 
 :ref:`bool<class_bool>` **editor/scale_with_editor_scale** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_editor/scale_with_editor_scale>`
 
-Se ``true``, ridimensiona l'immagine importata in modo che corrisponda a :ref:`EditorSettings.interface/editor/custom_display_scale<class_EditorSettings_property_interface/editor/custom_display_scale>`. Dovrebbe essere abilitato per le icone dei plugin dell'editor e le icone delle classi personalizzate, ma dovrebbe essere disabilitato altrimenti.
+If ``true``, scales the imported image to match :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`. This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise.
 
-\ **Nota:** Disponibile solo per le immagini SVG.
+\ **Note:** Only available for SVG images.
 
 .. rst-class:: classref-item-separator
 
@@ -500,11 +500,11 @@ Se ``true``, converte la mappa normale da Y- (stile DirectX) a Y+ (stile OpenGL)
 
 :ref:`bool<class_bool>` **process/premult_alpha** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_process/premult_alpha>`
 
-Un'alternativa per correggere i bordi scuriti con :ref:`process/fix_alpha_border<class_ResourceImporterTexture_property_process/fix_alpha_border>` è quella di usare un alfa premoltiplicato. Abilitando questa opzione, la texture sarà convertita in questo formato. Una texture con alfa premoltiplicato richiede materiali specifici per essere visualizzata correttamente:
+An alternative to fixing darkened borders with :ref:`process/fix_alpha_border<class_ResourceImporterTexture_property_process/fix_alpha_border>` is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. A premultiplied alpha texture requires specific materials to be displayed correctly:
 
-- In 2D, sarà necessario creare un :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` e configurarlo per usare la modalità di fusione :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` sui :ref:`CanvasItem<class_CanvasItem>` che usano questa texture. Negli shader ``@canvas_item`` personalizzati, dovrebbe essere usato ``render_mode blend_premul_alpha;``.
+- In 2D, a :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` will need to be created and configured to use the :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on :ref:`CanvasItem<class_CanvasItem>`\ s that use this texture. In custom ``canvas_item`` shaders, ``render_mode blend_premul_alpha;`` should be used.
 
-- In 3D, sarà necessario creare un :ref:`BaseMaterial3D<class_BaseMaterial3D>` e configurarlo per usare la modalità di fusione :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` sui materiali che usano questa texture. Negli shader ``spatial`` personalizzati, dovrebbe essere utilizzato ``render_mode blend_premul_alpha;``.
+- In 3D, a :ref:`BaseMaterial3D<class_BaseMaterial3D>` will need to be created and configured to use the :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on materials that use this texture. In custom ``spatial`` shaders, ``render_mode blend_premul_alpha;`` should be used.
 
 .. rst-class:: classref-item-separator
 

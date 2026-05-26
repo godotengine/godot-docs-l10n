@@ -38,6 +38,8 @@
    :widths: auto
 
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`AccessibilityServer<class_AccessibilityServer>`             | :ref:`AccessibilityServer<class_@GlobalScope_property_AccessibilityServer>`             |
+   +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`AudioServer<class_AudioServer>`                             | :ref:`AudioServer<class_@GlobalScope_property_AudioServer>`                             |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`CameraServer<class_CameraServer>`                           | :ref:`CameraServer<class_@GlobalScope_property_CameraServer>`                           |
@@ -53,6 +55,8 @@
    | :ref:`EngineDebugger<class_EngineDebugger>`                       | :ref:`EngineDebugger<class_@GlobalScope_property_EngineDebugger>`                       |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`GDExtensionManager<class_GDExtensionManager>`               | :ref:`GDExtensionManager<class_@GlobalScope_property_GDExtensionManager>`               |
+   +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>`   | :ref:`GDScriptLanguageProtocol<class_@GlobalScope_property_GDScriptLanguageProtocol>`   |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`Geometry2D<class_Geometry2D>`                               | :ref:`Geometry2D<class_@GlobalScope_property_Geometry2D>`                               |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
@@ -710,7 +714,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_XYZ** = ``0``
 
-Указывает что углы Эйлера должны быть в порядке XYZ. При составлении порядок X, Y, Z. А при разложении порядок меняется на противоположный, сначала Z, потом Y, а в конце X.
+Specifies that Euler angles should be in intrinsic XYZ order. When composing, the rotations happen around the local X, Y, and Z axes, in that order. When decomposing, the order is reversed, first Z, then Y, and X last.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_XZY:
 
@@ -718,7 +722,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_XZY** = ``1``
 
-Указывает что углы Эйлера должны быть в порядке XZY. При составлении порядок X, Z, Y. А при разложении порядок меняется на противоположный, сначала Y, потом Z, а в конце X.
+Specifies that Euler angles should be in intrinsic XZY order. When composing, the rotations happen around the local X, Z, and Y axes, in that order. When decomposing, the order is reversed, first Y, then Z, and X last.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YXZ:
 
@@ -726,7 +730,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YXZ** = ``2``
 
-Указывает что углы Эйлера должны быть в порядке YXZ. При составлении порядок Y,X,Z. А при разложении порядок меняется на противоположный, сначала Z, потом X, а в конце Y.
+Specifies that Euler angles should be in intrinsic YXZ order. When composing, the rotations happen around the local Y, X, and Z axes, in that order. When decomposing, the order is reversed, first Z, then X, and Y last.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YZX:
 
@@ -734,7 +738,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YZX** = ``3``
 
-Указывает что углы Эйлера должны быть в порядке YZX. При составлении порядок Y, Z, X. А при разложении порядок меняется на противоположный, сначала X, потом Z, а в конце X.
+Specifies that Euler angles should be in intrinsic YZX order. When composing, the rotations happen around the local Y, Z, and X axes, in that order. When decomposing, the order is reversed, first X, then Z, and Y last.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZXY:
 
@@ -742,7 +746,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_ZXY** = ``4``
 
-Указывает что углы Эйлера должны быть в порядке ZXY. При составлении порядок Z, X, Y. А при разложении порядок меняется на противоположный, сначала Y, потом X, а в конце Z.
+Specifies that Euler angles should be in intrinsic ZXY order. When composing, the rotations happen around the local Z, X, and Y axes, in that order. When decomposing, the order is reversed, first Y, then X, and Z last.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZYX:
 
@@ -750,7 +754,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_ZYX** = ``5``
 
-Указывает что углы Эйлера должны быть в порядке ZYX. При составлении порядок Z, Y, X. А при разложении порядок меняется на противоположный, сначала X, потом Y, а в конце Z.
+Specifies that Euler angles should be in intrinsic ZYX order. When composing, the rotations happen around the local Z, Y, and X axes, in that order. When decomposing, the order is reversed, first X, then Y, and Z last.
 
 .. rst-class:: classref-item-separator
 
@@ -2322,7 +2326,13 @@ flags **KeyModifierMask**: :ref:`🔗<enum_@GlobalScope_KeyModifierMask>`
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_CODE_MASK** = ``8388607``
 
-Клавиша Маска Кода.
+Bit mask with all bits enabled except for modifier keys. Apply it to remove modifiers.
+
+::
+
+    var keycode = KEY_A | KEY_MASK_SHIFT
+    keycode = keycode & KEY_CODE_MASK
+    print(keycode) # KEY_A
 
 .. _class_@GlobalScope_constant_KEY_MODIFIER_MASK:
 
@@ -2330,7 +2340,13 @@ flags **KeyModifierMask**: :ref:`🔗<enum_@GlobalScope_KeyModifierMask>`
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_MODIFIER_MASK** = ``2130706432``
 
-Маска клавиши-модификатора.
+Bit mask with all modifier bits enabled. Apply it to isolate modifiers.
+
+::
+
+    var keycode = KEY_A | KEY_MASK_SHIFT
+    keycode = keycode & KEY_MODIFIER_MASK
+    print(keycode) # KEY_MASK_SHIFT
 
 .. _class_@GlobalScope_constant_KEY_MASK_CMD_OR_CTRL:
 
@@ -2750,11 +2766,51 @@ enum **JoyButton**: :ref:`🔗<enum_@GlobalScope_JoyButton>`
 
 Кнопка сенсорной панели игрового контроллера SDL.
 
+.. _class_@GlobalScope_constant_JOY_BUTTON_MISC2:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC2** = ``21``
+
+Game controller SDL miscellaneous button. Used by Nintendo Switch 2 Pro Controller and Horipad Steam controllers.
+
+.. _class_@GlobalScope_constant_JOY_BUTTON_MISC3:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC3** = ``22``
+
+Game controller SDL miscellaneous button.
+
+.. _class_@GlobalScope_constant_JOY_BUTTON_MISC4:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC4** = ``23``
+
+Game controller SDL miscellaneous button.
+
+.. _class_@GlobalScope_constant_JOY_BUTTON_MISC5:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC5** = ``24``
+
+Game controller SDL miscellaneous button.
+
+.. _class_@GlobalScope_constant_JOY_BUTTON_MISC6:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC6** = ``25``
+
+Game controller SDL miscellaneous button.
+
 .. _class_@GlobalScope_constant_JOY_BUTTON_SDL_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_SDL_MAX** = ``21``
+:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_SDL_MAX** = ``26``
 
 Количество кнопок игрового контроллера SDL.
 
@@ -3442,7 +3498,7 @@ enum **Error**: :ref:`🔗<enum_@GlobalScope_Error>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **ERR_PRINTER_ON_FIRE** = ``48``
 
-Ошибка «Принтер в огне» (это пасхальное яйцо, ни один встроенный метод не возвращает этот код ошибки).
+Printer on fire error (this is an easter egg, no built-in methods return this error code).
 
 .. rst-class:: classref-item-separator
 
@@ -3460,7 +3516,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_NONE** = ``0``
 
-Свойство не имеет подсказку в редакторе.
+The property has no hint for the editor. However, the hint string is still read, which can be used to specify a suffix for a property that has no range limit (see :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`'s description).
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_RANGE:
 
@@ -3468,11 +3524,11 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_RANGE** = ``1``
 
-Подсказка указывает, что свойство типа :ref:`int<class_int>` или :ref:`float<class_float>` должно находиться в диапазоне, указанном в строке подсказки ``"min,max"`` или ``"min,max,step"``. Строка подсказки может дополнительно включать ``"or_greater"`` и/или ``"or_less"``, чтобы разрешить ручной ввод значений, превышающих или не превышающих минимальное значение соответственно.
+Hints that an :ref:`int<class_int>`, :ref:`float<class_float>`, or packed/typed :ref:`Array<class_Array>` property containing :ref:`int<class_int>` or :ref:`float<class_float>` types should be within a range specified via the hint string ``"min,max"`` or ``"min,max,step"``. The hint string can optionally include ``"or_greater"`` and/or ``"or_less"`` to allow manual input going respectively above the max or below the min values.
 
-\ **Пример:** ``"-360,360,1,or_greater,or_less"``.
+\ **Example:** ``"-360,360,1,or_greater,or_less"``.
 
-Кроме того, можно добавить другие ключевые слова: ``"exp"`` для редактирования диапазона в экспоненциальных значениях, ``"radians_as_degrees"`` для редактирования углов в радианах в градусах (значения диапазона также указываются в градусах), ``"degrees"`` для указания угла, ``"prefer_slider"`` для отображения ползунка для целых чисел, ``"hide_control"`` для скрытия ползунка или стрелок вверх-вниз и ``"suffix:px/s"`` для отображения суффикса, указывающего единицу измерения значения (например, ``px/s`` для пикселей в секунду).
+Additionally, other keywords can be included: ``"exp"`` for exponential range editing, ``"radians_as_degrees"`` for editing radian angles in degrees (the range values are also in degrees), ``"degrees"`` to hint at an angle, ``"prefer_slider"`` to show the slider for integers, ``"hide_control"`` to hide the slider or up-down arrows, and ``"suffix:px/s"`` to display a suffix indicating the value's unit (e.g. ``px/s`` for pixels per second).
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM:
 
@@ -3500,7 +3556,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_EXP_EASING** = ``4``
 
-Подсказки, что свойство :ref:`float<class_float>` должно быть отредактировано с помощью функции экспоненциального смягчения. Строка подсказки может включать ``"attenuation"`` для переворота кривой по горизонтали и/или ``"positive_only"`` для исключения смягчения внутрь/наружу и ограничения значений до значений, которые должны быть больше или равны нулю.
+Hints that a :ref:`float<class_float>` property should be edited using a curve editor showing an exponential easing function. The hint string can include ``"attenuation"`` to flip the curve horizontally and/or ``"positive_only"`` to exclude in/out easing and limit values to be greater than or equal to zero. This displays differently to a property that uses :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` with the ``"exp"`` keyword, as it's edited with a slider instead of a curve editor.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LINK:
 
@@ -3508,7 +3564,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_LINK** = ``5``
 
-Указывает, что векторное свойство позволяет связать его компоненты. Например, это позволяет редактировать :ref:`Vector2.x<class_Vector2_property_x>` и :ref:`Vector2.y<class_Vector2_property_y>` вместе.
+Hints that a vector property should allow its components to be linked. For example, this allows :ref:`Vector2.x<class_Vector2_property_x>` and :ref:`Vector2.y<class_Vector2_property_y>` to be edited together. This hint is supported on :ref:`Vector2<class_Vector2>`, :ref:`Vector2i<class_Vector2i>`, :ref:`Vector3<class_Vector3>`, :ref:`Vector3i<class_Vector3i>`, :ref:`Vector4<class_Vector4>`, and :ref:`Vector4i<class_Vector4i>`. The hint string can be used to specify a suffix indicating each value's unit with the ``"suffix:px/s"`` syntax.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_FLAGS:
 
@@ -3670,76 +3726,76 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_TYPE_STRING** = ``23``
 
-Если свойство - :ref:`String<class_String>`, то это намекает, что свойство представляет определенный тип (класс). Это позволяет выбрать тип из диалогового окна создания. Свойство сохранит выбранный тип как строку.
+If a property is :ref:`String<class_String>`, hints that the property represents a particular type (class). This allows to select a type from the create dialog. The property will store the selected type as a string.
 
-Если свойство - :ref:`Array<class_Array>`, то оно подсказывает редактору, как отображать элементы. ``hint_string`` должен кодировать вложенные типы с помощью ``":"`` и ``"/"``.
+If a property is :ref:`Array<class_Array>`, hints the editor how to show elements. The ``hint_string`` must encode nested types using ``":"`` and ``"/"``.
 
-Если свойство - :ref:`Dictionary<class_Dictionary>`, то оно подсказывает редактору, как отображать элементы. ``hint_string`` работает также, как и с :ref:`Array<class_Array>`, с ``";"``, разделяющий ключ и значение.
+If a property is :ref:`Dictionary<class_Dictionary>`, hints the editor how to show elements. The ``hint_string`` is the same as :ref:`Array<class_Array>`, with a ``";"`` separating the key and value.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Массив с elem_type.
+    # Array of elem_type.
     hint_string = "%d:" % [elem_type]
     hint_string = "%d/%d:%s" % [elem_type, elem_hint, elem_hint_string]
-    # Двумерный массив с elem_type (массив массивов с elem_type).
+    # Two-dimensional array of elem_type (array of arrays of elem_type).
     hint_string = "%d:%d:" % [TYPE_ARRAY, elem_type]
     hint_string = "%d:%d/%d:%s" % [TYPE_ARRAY, elem_type, elem_hint, elem_hint_string]
-    #Трехмерный массив с elem_type (массив массивов внутри массивов с elem_type).
+    # Three-dimensional array of elem_type (array of arrays of arrays of elem_type).
     hint_string = "%d:%d:%d:" % [TYPE_ARRAY, TYPE_ARRAY, elem_type]
     hint_string = "%d:%d:%d/%d:%s" % [TYPE_ARRAY, TYPE_ARRAY, elem_type, elem_hint, elem_hint_string]
 
  .. code-tab:: csharp
 
-    // Массив с elemType.
+    // Array of elemType.
     hintString = $"{elemType:D}:";
-    hintString = $"{elemType:}/{elemHint:D}:{elemHintString}";
-    // Двумерный массив с elemType (массив массивов с elemType).
+    hintString = $"{elemType:D}/{elemHint:D}:{elemHintString}";
+    // Two-dimensional array of elemType (array of arrays of elemType).
     hintString = $"{Variant.Type.Array:D}:{elemType:D}:";
     hintString = $"{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
-    // Трехмерный массив elemType (массив массивов внутри массивов с elemType).
+    // Three-dimensional array of elemType (array of arrays of arrays of elemType).
     hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}:";
     hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
 
 
 
-\ **Примеры:**\ 
+\ **Examples:**\ 
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    hint_string = "%d:" % [TYPE_INT] # Массив с целыми числами.
-    hint_string = "%d/%d:1,10,1" % [TYPE_INT, PROPERTY_HINT_RANGE] # Массив с целыми числами (в диапазоне от 1 до 10).
-    hint_string = "%d/%d:Zero,One,Two" % [TYPE_INT, PROPERTY_HINT_ENUM] # Массив с целыми числами (enum).
-    hint_string = "%d/%d:Zero,One,Three:3,Six:6" % [TYPE_INT, PROPERTY_HINT_ENUM] # Массив с целыми числами (enum).
-    hint_string = "%d/%d:*.png" % [TYPE_STRING, PROPERTY_HINT_FILE] # Массив со строками (пути к файлам).
-    hint_string = "%d/%d:Texture2D" % [TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Массив с текстурами.
+    hint_string = "%d:" % [TYPE_INT] # Array of integers.
+    hint_string = "%d/%d:1,10,1" % [TYPE_INT, PROPERTY_HINT_RANGE] # Array of integers (in range from 1 to 10).
+    hint_string = "%d/%d:Zero,One,Two" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array of integers (an enum).
+    hint_string = "%d/%d:Zero,One,Three:3,Six:6" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array of integers (an enum).
+    hint_string = "%d/%d:*.png" % [TYPE_STRING, PROPERTY_HINT_FILE] # Array of strings (file paths).
+    hint_string = "%d/%d:Texture2D" % [TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Array of textures.
 
-    hint_string = "%d:%d:" % [TYPE_ARRAY, TYPE_FLOAT] # Двумерный массив чисел с плавающей точкой (тип float)
-    hint_string = "%d:%d/%d:" % [TYPE_ARRAY, TYPE_STRING, PROPERTY_HINT_MULTILINE_TEXT] # Двумерный массив с многострочными строками.
-    hint_string = "%d:%d/%d:-1,1,0.1" % [TYPE_ARRAY, TYPE_FLOAT, PROPERTY_HINT_RANGE] # Двумерный массив чисел с плавающей точкой (в диапазоне от -1 до 1).
-    hint_string = "%d:%d/%d:Texture2D" % [TYPE_ARRAY, TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Двумерный масив с текстурами.
+    hint_string = "%d:%d:" % [TYPE_ARRAY, TYPE_FLOAT] # Two-dimensional array of floats.
+    hint_string = "%d:%d/%d:" % [TYPE_ARRAY, TYPE_STRING, PROPERTY_HINT_MULTILINE_TEXT] # Two-dimensional array of multiline strings.
+    hint_string = "%d:%d/%d:-1,1,0.1" % [TYPE_ARRAY, TYPE_FLOAT, PROPERTY_HINT_RANGE] # Two-dimensional array of floats (in range from -1 to 1).
+    hint_string = "%d:%d/%d:Texture2D" % [TYPE_ARRAY, TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Two-dimensional array of textures.
 
  .. code-tab:: csharp
 
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // Массив с целыми числами (в диапазоне от 1 до 10).
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Two"; // Массив с целыми числами (enum).
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Three:3,Six:6"; // Массив с целыми числами (enum).
-    hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // Массив со строками (пути к файлам).
-    hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Массив с текстурами.
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // Array of integers (in range from 1 to 10).
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Two"; // Array of integers (an enum).
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Three:3,Six:6"; // Array of integers (an enum).
+    hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // Array of strings (file paths).
+    hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Array of textures.
 
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}:"; // Двумерный массив чисел с плавающей точкой .
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:"; // Двумерный массив с многострочными строками.
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1"; // Двумерный массив чисел с плавающей точкой (в диапазоне от -1 до 1).
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Двумерный масив с текстурами.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}:"; // Two-dimensional array of floats.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:"; // Two-dimensional array of multiline strings.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1"; // Two-dimensional array of floats (in range from -1 to 1).
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Two-dimensional array of textures.
 
 
 
-\ **Примечание:** Завершающее двоеточие необходимо для правильного определения встроенных типов.
+\ **Note:** The trailing colon is required for properly detecting built-in types.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_NODE_PATH_TO_EDITED_NODE:
 
@@ -4844,8 +4900,117 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 .. rst-class:: classref-descriptions-group
 
+Константы
+------------------
+
+.. _class_@GlobalScope_constant_UINT8_MAX:
+
+.. rst-class:: classref-constant
+
+**UINT8_MAX** = ``255`` :ref:`🔗<class_@GlobalScope_constant_UINT8_MAX>`
+
+Maximum value of an 8-bit unsigned integer.
+
+.. _class_@GlobalScope_constant_UINT16_MAX:
+
+.. rst-class:: classref-constant
+
+**UINT16_MAX** = ``65535`` :ref:`🔗<class_@GlobalScope_constant_UINT16_MAX>`
+
+Maximum value of a 16-bit unsigned integer.
+
+.. _class_@GlobalScope_constant_UINT32_MAX:
+
+.. rst-class:: classref-constant
+
+**UINT32_MAX** = ``4294967295`` :ref:`🔗<class_@GlobalScope_constant_UINT32_MAX>`
+
+Maximum value of a 32-bit unsigned integer.
+
+.. _class_@GlobalScope_constant_INT8_MIN:
+
+.. rst-class:: classref-constant
+
+**INT8_MIN** = ``-128`` :ref:`🔗<class_@GlobalScope_constant_INT8_MIN>`
+
+Minimum value of an 8-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT8_MAX:
+
+.. rst-class:: classref-constant
+
+**INT8_MAX** = ``127`` :ref:`🔗<class_@GlobalScope_constant_INT8_MAX>`
+
+Maximum value of an 8-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT16_MIN:
+
+.. rst-class:: classref-constant
+
+**INT16_MIN** = ``-32768`` :ref:`🔗<class_@GlobalScope_constant_INT16_MIN>`
+
+Minimum value of a 16-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT16_MAX:
+
+.. rst-class:: classref-constant
+
+**INT16_MAX** = ``32767`` :ref:`🔗<class_@GlobalScope_constant_INT16_MAX>`
+
+Maximum value of a 16-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT32_MIN:
+
+.. rst-class:: classref-constant
+
+**INT32_MIN** = ``-2147483648`` :ref:`🔗<class_@GlobalScope_constant_INT32_MIN>`
+
+Minimum value of a 32-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT32_MAX:
+
+.. rst-class:: classref-constant
+
+**INT32_MAX** = ``2147483647`` :ref:`🔗<class_@GlobalScope_constant_INT32_MAX>`
+
+Maximum value of a 32-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT64_MIN:
+
+.. rst-class:: classref-constant
+
+**INT64_MIN** = ``-9223372036854775808`` :ref:`🔗<class_@GlobalScope_constant_INT64_MIN>`
+
+Minimum value of a 64-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT64_MAX:
+
+.. rst-class:: classref-constant
+
+**INT64_MAX** = ``9223372036854775807`` :ref:`🔗<class_@GlobalScope_constant_INT64_MAX>`
+
+Maximum value of a 64-bit signed integer.
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
 Описания свойств
 --------------------------------
+
+.. _class_@GlobalScope_property_AccessibilityServer:
+
+.. rst-class:: classref-property
+
+:ref:`AccessibilityServer<class_AccessibilityServer>` **AccessibilityServer** :ref:`🔗<class_@GlobalScope_property_AccessibilityServer>`
+
+The :ref:`AccessibilityServer<class_AccessibilityServer>` singleton.
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_@GlobalScope_property_AudioServer:
 
@@ -4940,6 +5105,20 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 :ref:`GDExtensionManager<class_GDExtensionManager>` **GDExtensionManager** :ref:`🔗<class_@GlobalScope_property_GDExtensionManager>`
 
 Синглтон :ref:`GDExtensionManager<class_GDExtensionManager>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_@GlobalScope_property_GDScriptLanguageProtocol:
+
+.. rst-class:: classref-property
+
+:ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` **GDScriptLanguageProtocol** :ref:`🔗<class_@GlobalScope_property_GDScriptLanguageProtocol>`
+
+The :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` singleton.
+
+\ **Note:** Only available in editor builds.
 
 .. rst-class:: classref-item-separator
 
@@ -6284,15 +6463,15 @@ Prints:
 
 :ref:`float<class_float>` **log**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_log>`
 
-Возвращает `натуральный логарифм <https://en.wikipedia.org/wiki/Natural_logarithm>`__ ``x`` (основание `[i]e[/i] <https://en.wikipedia.org/wiki/E_(mathematical_constant)>`__, где *e* приблизительно равно 2,71828). Это количество времени, необходимое для достижения определенного уровня непрерывного роста.
+Returns the `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>`__ of ``x`` (base `e <https://en.wikipedia.org/wiki/E_(mathematical_constant)>`__, with *e* being approximately 2.71828). This is the amount of time needed to reach a certain level of continuous growth.
 
-\ **Примечание:** Это не то же самое, что функция "log" на большинстве калькуляторов, которая использует логарифм по основанию 10. Чтобы использовать логарифм по основанию 10, используйте ``log(x) / log(10)``.
+\ **Note:** This is not the same as the "log" function on most calculators, which uses a base 10 logarithm. To use base 10 logarithm, use ``log(x) / log(10)``.
 
 ::
 
     log(10) # Returns 2.302585
 
-\ **Примечание:** Логарифм ``0`` возвращает ``-inf``, тогда как отрицательные значения возвращают ``-nan``.
+\ **Note:** The logarithm of ``0`` returns ``-inf``, while negative values return ``-nan``.
 
 .. rst-class:: classref-item-separator
 

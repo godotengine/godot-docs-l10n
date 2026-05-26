@@ -7,14 +7,16 @@ AudioEffectStereoEnhance
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-可用於調整立體聲聲像強度的音訊效果。
+Adds a stereo manipulation audio effect to an audio bus.
+
+Controls gain of the side channels, and widens the stereo image.
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-可用於調整立體聲聲像強度的音訊效果。
+Adjusts gain of the left and right channels, and makes mono sounds stereo through phase shifting.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +24,8 @@ AudioEffectStereoEnhance
 ----
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -59,7 +63,7 @@ AudioEffectStereoEnhance
 - |void| **set_pan_pullout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pan_pullout**\ (\ )
 
-放大左右聲道差異以增強或減弱原有的聲像；0.0 會將立體聲下混為單聲道。對單聲道訊號無效。
+Gain of the side channels, if they exist. A value of 0 will downmix stereo to mono. Value can range from 0 to 4.
 
 .. rst-class:: classref-item-separator
 
@@ -76,7 +80,7 @@ AudioEffectStereoEnhance
 - |void| **set_surround**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_surround**\ (\ )
 
-與 :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>` 搭配透過相位偏移擴展音場；若 :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>` 為 0，僅將聲音平移至左聲道。
+Widens the stereo image through phase shifting in conjunction with :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>`. Just pans sound to the left channel if :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>` is 0. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +97,7 @@ AudioEffectStereoEnhance
 - |void| **set_time_pullout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_pullout**\ (\ )
 
-與 :ref:`surround<class_AudioEffectStereoEnhance_property_surround>` 搭配透過相位偏移擴展音場；若 :ref:`surround<class_AudioEffectStereoEnhance_property_surround>` 為 0，僅延遲右聲道。
+Widens the stereo image through phase shifting in conjunction with :ref:`surround<class_AudioEffectStereoEnhance_property_surround>`. Just delays the right channel if :ref:`surround<class_AudioEffectStereoEnhance_property_surround>` is 0. Value is in milliseconds, and can range from 0 to 50.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -23,6 +23,10 @@ AudioEffectSpectrumAnalyzerInstance
 Посібники
 ------------------
 
+- :doc:`Звукові шини <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+
 - `Демонстрація візуалізатора аудіоспектру <https://godotengine.org/asset-library/asset/2762>`__
 
 .. rst-class:: classref-reftable-group

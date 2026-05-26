@@ -144,6 +144,8 @@ DirAccess
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`get_drive_count<class_DirAccess_method_get_drive_count>`\ (\ ) |static|                                                                                                             |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`get_drive_label<class_DirAccess_method_get_drive_label>`\ (\ idx\: :ref:`int<class_int>`\ ) |static|                                                                                |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`get_drive_name<class_DirAccess_method_get_drive_name>`\ (\ idx\: :ref:`int<class_int>`\ ) |static|                                                                                  |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_files<class_DirAccess_method_get_files>`\ (\ )                                                                                                                                  |
@@ -451,21 +453,35 @@ DirAccess
 
 ----
 
+.. _class_DirAccess_method_get_drive_label:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **get_drive_label**\ (\ idx\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_drive_label>`
+
+On Windows, returns the label of the drive (partition) passed as an argument.
+
+On other platforms, or if the requested drive does not exist, returns an empty String.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_DirAccess_method_get_drive_name:
 
 .. rst-class:: classref-method
 
 :ref:`String<class_String>` **get_drive_name**\ (\ idx\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_drive_name>`
 
-В Windows возвращает имя диска (раздела), переданное в качестве аргумента (например, ``C:``).
+On Windows, returns the name of the drive (partition) passed as an argument (e.g. ``C:``).
 
-В macOS возвращает путь к смонтированному тому, переданному в качестве аргумента.
+On macOS, returns the path to the mounted volume passed as an argument.
 
-В Linux возвращает путь к смонтированному тому или закладке GTK 3, переданной в качестве аргумента.
+On Linux, returns the path to the mounted volume or GTK 3 bookmark passed as an argument.
 
-В Android (уровень API 30+) возвращает путь к смонтированному тому в качестве аргумента.
+On Android (API level 30+), returns the path to the mounted volume as an argument.
 
-На других платформах или если запрошенный диск не существует, метод возвращает пустую строку.
+On other platforms, or if the requested drive does not exist, returns an empty String.
 
 .. rst-class:: classref-item-separator
 

@@ -16,9 +16,9 @@ Un bouton à thème qui peut contenir du texte et une icône.
 Description
 -----------
 
-**Button** est le bouton à thème standard. Il peut contenir du texte et une icône, et les affichera suivant le :ref:`Theme<class_Theme>` actuellement défini.
+**Button** is the standard themed button. It can contain text and an icon, and it will display them according to the current :ref:`Theme<class_Theme>`.
 
-\ **Exemple :** Créer un bouton et lui connecter une méthode qui sera appelée quand le bouton est appuyé :
+\ **Example:** Create a button and connect a method that will be called when the button is pressed:
 
 
 .. tabs::
@@ -26,34 +26,34 @@ Description
  .. code-tab:: gdscript
 
     func _ready():
-        var bouton = Button.new()
-        bouton.text = "Cliquez moi"
-        bouton.pressed.connect(_bouton_appuye)
-        add_child(bouton)
+        var button = Button.new()
+        button.text = "Click me"
+        button.pressed.connect(_button_pressed)
+        add_child(button)
 
-    func _bouton_appuye():
-        print("On m'a cliqué !")
+    func _button_pressed():
+        print("Hello world!")
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        var bouton = new Button();
-        bouton.Text = "Cliquez moi"
-        bouton.Pressed += BoutonAppuye;
-        AddChild(bouton);
+        var button = new Button();
+        button.Text = "Click me";
+        button.Pressed += ButtonPressed;
+        AddChild(button);
     }
 
-    private void BoutonAppuye()
+    private void ButtonPressed()
     {
-        GD.Print("On m'a cliqué !");
+        GD.Print("Hello world!");
     }
 
 
 
-Voir aussi :ref:`BaseButton<class_BaseButton>` qui contient les propriétés et méthodes communes associées à ce nœud.
+See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
 
-\ **Note :** Les boutons n'interceptent pas les entrées tactiles et ne supporte donc pas le multi appui tactile, puisque l'émulation de la souris ne peut presser qu'un seul bouton à la fois. Utilisez :ref:`TouchScreenButton<class_TouchScreenButton>` pour les boutons qui déclenchent des actions ou des mouvements du gameplay.
+\ **Note:** Buttons support multitouch via touch input, allowing multiple buttons to be pressed at the same time. Otherwise, mouse input is used, limiting interaction to one button press at a time.
 
 .. rst-class:: classref-introduction-group
 

@@ -610,9 +610,9 @@ Y 轴的枚举值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`float<class_float>` **distance_squared_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_distance_squared_to>`
 
-返回该向量与 ``to`` 之间的距离的平方。
+Returns the squared `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
 
-该方法比 :ref:`distance_to()<class_Vector2_method_distance_to>` 运行得更快，因此请在需要比较向量或者用于某些公式的平方距离时，优先使用这个方法。
+This method runs faster than :ref:`distance_to()<class_Vector2_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ Y 轴的枚举值。由 :ref:`max_axis_index()<class_Vector2_method_max_axis_ind
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_distance_to>`
 
-返回该向量与 ``to`` 之间的距离。
+Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
 
 .. rst-class:: classref-item-separator
 

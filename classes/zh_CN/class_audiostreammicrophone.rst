@@ -23,6 +23,8 @@ AudioStreamMicrophone
 教程
 ----
 
+- :doc:`音频流 <../tutorials/audio/audio_streams>`
+
 - :doc:`使用麦克风录音 <../tutorials/audio/recording_with_microphone>`
 
 - `音频麦克风录音演示 <https://github.com/godotengine/godot-demo-projects/tree/master/audio/mic_record>`__

@@ -1021,22 +1021,22 @@ Restituisce un :ref:`Color<class_Color>` costruito da rosso (``r8``), verde (``g
 
 |void| **assert**\ (\ condition\: :ref:`bool<class_bool>`, message\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_method_assert>`
 
-Controlla che la ``condition`` sia vera (``true``). Se la ``condition`` è falsa (``false``), è generato un errore. Quando in esecuzione dall'editor, il progetto verrà anche messo in pausa, finché non lo riprendi. Questo può essere usato come una forma più potente di :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` per riportare errori agli sviluppatori del progetto o utenti di estensioni.
+Asserts that the ``condition`` is ``true``. If the ``condition`` is ``false``, an error is generated and the current method returns a default value. When running from the editor, failed asserts also cause a debugger break. This can be used as a stronger form of :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` for reporting errors to project developers or add-on users.
 
-L'argomento opzionale ``message`` è mostrato in aggiunta al generico messaggio "Assertion failed" (Asserzione fallita). Può essere usato per fornire più dettagli sul motivo per cui l'asserzione ha fallito.
+An optional ``message`` can be shown in addition to the generic "Assertion failed" message. You can use this to provide additional details about why the assertion failed.
 
-\ **Attenzione:** Per motivi di prestazioni, il codice all'interno di :ref:`assert()<class_@GDScript_method_assert>` è eseguito solo nelle build di debug o quando il progetto è eseguito dall'editor. Non includere codice che ha effetti collaterali in una chiamata di :ref:`assert()<class_@GDScript_method_assert>`. Altrimenti, il progetto si comporterà in modo diverso quando esportato in modalità release.
+\ **Warning:** For performance reasons, the code inside :ref:`assert()<class_@GDScript_method_assert>` is only executed in debug builds or when running the project from the editor. Don't include code that has side effects in an :ref:`assert()<class_@GDScript_method_assert>` call. Otherwise, the project will behave differently when exported in release mode.
 
 ::
 
-    # Immaginati di voler sempre avere una velocità (speed) tra 0 e 20.
+    # Imagine we always want speed to be between 0 and 20.
     var speed = -10
-    assert(speed < 20) # Vero (true), il programma continuerà.
-    assert(speed >= 0) # Falso (false), il programma si fermerà.
-    assert(speed >= 0 && speed < 20) # Puoi anche combinare due condizioni in un singolo controllo.
-    assert(speed < 20, "Il limite di velocità è 20") # Mostra un messaggio per chiarire i dettagli
+    assert(speed < 20) # True, the program will continue.
+    assert(speed >= 0) # False, the program will stop.
+    assert(speed >= 0 and speed < 20) # You can also combine the two conditional statements in one check.
+    assert(speed < 20, "the speed limit is 20") # Show a message.
 
-\ **Note:** :ref:`assert()<class_@GDScript_method_assert>` è una parola chiave, non una funzione. Perciò non puoi accedervi come un :ref:`Callable<class_Callable>` o usarla all'interno di espressioni.
+\ **Note:** :ref:`assert()<class_@GDScript_method_assert>` is a keyword, not a function. So you cannot access it as a :ref:`Callable<class_Callable>` or use it inside expressions.
 
 .. rst-class:: classref-item-separator
 
@@ -1170,17 +1170,17 @@ Stampa:
 
 :ref:`bool<class_bool>` **is_instance_of**\ (\ value\: :ref:`Variant<class_Variant>`, type\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GDScript_method_is_instance_of>`
 
-Restituisce ``true`` se ``value`` è un'istanza del tipo ``type``. Il valore ``type`` deve essere uno dei seguenti:
+Returns ``true`` if ``value`` is an instance of ``type``. The ``type`` value must be one of the following:
 
-- Una costante dall'enumerazione :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`, per esempio :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>`.
+- A constant from the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` enumeration, for example :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>`.
 
-- Una classe derivante da :ref:`Object<class_Object>` che esiste in :ref:`ClassDB<class_ClassDB>`, per esempio :ref:`Node<class_Node>`.
+- An :ref:`Object<class_Object>`-derived class which exists in :ref:`ClassDB<class_ClassDB>`, for example :ref:`Node<class_Node>`.
 
-- Uno :ref:`Script<class_Script>` (è possibile utilizzare qualsiasi classe, comprese quelle interne).
+- A :ref:`Script<class_Script>` (you can use any class, including inner one).
 
-A differenza dell'operando destro dell'operatore ``is``, ``type`` può essere un valore non costante. L'operatore ``is`` supporta più funzionalità (ad esempio array tipizzati). Utilizza l'operatore invece di questo metodo se non hai bisogno di verificare il tipo dinamicamente.
+Unlike the right operand of the ``is`` operator, ``type`` can be a non-constant value. The ``is`` operator supports more features (such as typed arrays and dictionaries). Use the operator instead of this method if you do not need to check the type dynamically.
 
-\ **Esempi:**\ 
+\ **Examples:**\ 
 
 ::
 
@@ -1189,9 +1189,9 @@ A differenza dell'operando destro dell'operatore ``is``, ``type`` può essere un
     print(is_instance_of(a, MyClass))
     print(is_instance_of(a, MyClass.InnerClass))
 
-\ **Nota:** Se ``value`` e/o ``type`` sono oggetti liberati (vedi :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`), o ``type`` non è una delle opzioni precedenti, questo metodo genererà un errore durante l'esecuzione.
+\ **Note:** If ``value`` and/or ``type`` are freed objects (see :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`), or ``type`` is not one of the above options, this method will raise a runtime error.
 
-Vedi anche :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`type_exists()<class_@GDScript_method_type_exists>`, :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>` (e altri metodi di :ref:`Array<class_Array>`).
+See also :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`Object.is_class()<class_Object_method_is_class>`, :ref:`Object.get_script()<class_Object_method_get_script>`, :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>` (and other :ref:`Array<class_Array>` methods), :ref:`Dictionary.is_same_typed()<class_Dictionary_method_is_same_typed>` (and other :ref:`Dictionary<class_Dictionary>` methods).
 
 .. rst-class:: classref-item-separator
 
@@ -1396,6 +1396,8 @@ Risultato:
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **type_exists**\ (\ type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_@GDScript_method_type_exists>`
+
+**Deprecato:** Use :ref:`ClassDB.class_exists()<class_ClassDB_method_class_exists>` instead.
 
 Restituisce ``true`` se la classe specificata, derivata da :ref:`Object<class_Object>`, esiste in :ref:`ClassDB<class_ClassDB>`. Nota che i tipi di dato :ref:`Variant<class_Variant>` non sono registrati in :ref:`ClassDB<class_ClassDB>`.
 

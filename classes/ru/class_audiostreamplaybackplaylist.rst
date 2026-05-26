@@ -9,6 +9,13 @@ AudioStreamPlaybackPlaylist
 
 Класс воспроизведения, используемый для :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`.
 
+.. rst-class:: classref-introduction-group
+
+Описание
+----------------
+
+Playback component of :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`. Handles the playback of multiple :ref:`AudioStream<class_AudioStream>`\ s in sequence.
+
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Этот метод не имеет побочных эффектов. Он не изменяет ни одну из переменных-членов экземпляра.)`

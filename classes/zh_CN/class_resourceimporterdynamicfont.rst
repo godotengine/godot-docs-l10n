@@ -50,7 +50,7 @@ ResourceImporterDynamicFont
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`             | :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>`                                     | ``false`` |
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`               | :ref:`hinting<class_ResourceImporterDynamicFont_property_hinting>`                                                       | ``1``     |
+   | :ref:`int<class_int>`               | :ref:`hinting<class_ResourceImporterDynamicFont_property_hinting>`                                                       | ``3``     |
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`             | :ref:`keep_rounding_remainders<class_ResourceImporterDynamicFont_property_keep_rounding_remainders>`                     | ``true``  |
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------+
@@ -182,15 +182,19 @@ ResourceImporterDynamicFont
 
 .. rst-class:: classref-property
 
-:ref:`int<class_int>` **hinting** = ``1`` :ref:`🔗<class_ResourceImporterDynamicFont_property_hinting>`
+:ref:`int<class_int>` **hinting** = ``3`` :ref:`🔗<class_ResourceImporterDynamicFont_property_hinting>`
 
-要使用的提示模式。这控制在光栅化字体时应如何积极地将字形边缘吸附到像素。根据个人喜好，你可能更喜欢使用一种提示模式而不是另一种。除 **None** 之外的提示模式仅在字体包含提示数据时才有效（请参阅 :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`\ ）。
+The hinting mode to use. This controls how aggressively glyph edges should be snapped to pixels when rasterizing the font. Depending on personal preference, you may prefer using one hinting mode over the other. Hinting modes other than **None** are only effective if the font contains hinting data (see :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`).
 
-\ **None：**\ 最平滑的外观，这会使字体在小尺寸下看起来模糊。
+\ **None:** Smoothest appearance, which can make the font look blurry at small sizes.
 
-\ **Light：**\ 通过仅将字形边缘吸附到 Y 轴上的像素来获得清晰的结果。
+\ **Light:** Sharp result by snapping glyph edges to pixels on the Y axis only.
 
-\ **Normal：**\ 通过将字形边缘吸附到 X 轴和 Y 轴上的像素获得最清晰的结果。
+\ **Normal:** Sharpest by snapping glyph edges to pixels on both X and Y axes.
+
+\ **Light (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Light** for other fonts.
+
+\ **Normal (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Normal** for other fonts.
 
 .. rst-class:: classref-item-separator
 
@@ -324,17 +328,17 @@ MSDF 字体渲染可以与 :ref:`generate_mipmaps<class_ResourceImporterDynamicF
 
 :ref:`int<class_int>` **subpixel_positioning** = ``4`` :ref:`🔗<class_ResourceImporterDynamicFont_property_subpixel_positioning>`
 
-子像素定位可改善字体渲染外观，尤其是在较小的字体大小下。缺点是初始渲染字体需要更多时间，这可能会导致游戏过程中出现卡顿，特别是在使用大字体时。对于具有像素艺术外观的字体，应将其设置为 **Disabled**\ 。
+Subpixel positioning improves font rendering appearance, especially at smaller font sizes. The downside is that it takes more time to initially render the font, which can cause stuttering during gameplay, especially if used with large font sizes. This should be set to **Disabled** for fonts with a pixel art appearance.
 
-\ **Disabled：**\ 无子像素定位。质量最低，渲染最快。
+\ **Disabled:** No subpixel positioning. Lowest quality, fastest rendering.
 
-\ **Auto：**\ 在小字体大小下使用子像素定位（所选质量根据字体大小而变化）。大字体不会使用子像素定位。这是性能和质量之间的良好权衡。
+\ **Auto:** Use subpixel positioning at small font sizes (the chosen quality varies depending on font size). Large fonts will not use subpixel positioning. This is a good tradeoff between performance and quality.
 
-\ **One Half of a Pixel：**\ 无论字体大小如何，始终执行中间子像素定位。质量高，渲染速度慢。
+\ **One Half of a Pixel:** Always perform intermediate subpixel positioning regardless of font size. High quality, slow rendering.
 
-\ **One Quarter of a Pixel：**\ 无论字体大小如何，始终执行精确的子像素定位。质量最高，渲染最慢。
+\ **One Quarter of a Pixel:** Always perform precise subpixel positioning regardless of font size. Highest quality, slowest rendering.
 
-\ **Auto (Except Pixel Fonts)：**\ 像素风字体（字形轮廓中仅包含水平线或垂直线）使用 **Disabled**\ ，其他字体使用 **Auto**\ 。
+\ **Auto (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Auto** for other fonts.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

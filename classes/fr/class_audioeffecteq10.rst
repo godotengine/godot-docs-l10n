@@ -7,9 +7,9 @@ AudioEffectEQ10
 
 **Hérite de :** :ref:`AudioEffectEQ<class_AudioEffectEQ>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Ajoute un effet audio d'égaliseur de 10 bandes à un bus audio. Vous donne le contrôle des fréquences de 31 Hz à 16000 Hz.
+Adds a 10-band equalizer audio effect to an audio bus.
 
-Chaque fréquence peut être modulée entre -60/+24 dB.
+Gives you control over frequencies from 31 Hz to 16000 Hz. Each frequency can be modulated between -60/+24 dB.
 
 .. rst-class:: classref-introduction-group
 
@@ -46,6 +46,8 @@ Tutoriels
 ------------------
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

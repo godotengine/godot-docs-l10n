@@ -648,9 +648,9 @@ Z компонент вектора. Также может быть доступ
 
 :ref:`float<class_float>` **distance_squared_to**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_distance_squared_to>`
 
-Возвращает квадрат расстояния между этим вектором и ``to``.
+Returns the squared `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
 
-Этот метод работает быстрее, чем :ref:`distance_to()<class_Vector3_method_distance_to>`, поэтому предпочитайте его, если вам нужно сравнить векторы или вам нужен квадрат расстояния для какой-то формулы.
+This method runs faster than :ref:`distance_to()<class_Vector3_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 .. rst-class:: classref-item-separator
 
@@ -662,7 +662,7 @@ Z компонент вектора. Также может быть доступ
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_distance_to>`
 
-Возвращает расстояние между данным вектором и ``to``.
+Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
 
 .. rst-class:: classref-item-separator
 

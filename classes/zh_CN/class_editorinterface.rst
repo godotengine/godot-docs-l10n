@@ -123,6 +123,8 @@ Godot 编辑器的接口。
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`EditorSelection<class_EditorSelection>`                  | :ref:`get_selection<class_EditorInterface_method_get_selection>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                 |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>`              | :ref:`get_unsaved_scenes<class_EditorInterface_method_get_unsaved_scenes>`\ (\ ) |const|                                                                                                                                                                                                                                                                                       |
+   +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                         | :ref:`inspect_object<class_EditorInterface_method_inspect_object>`\ (\ object\: :ref:`Object<class_Object>`, for_property\: :ref:`String<class_String>` = "", inspector_only\: :ref:`bool<class_bool>` = false\ )                                                                                                                                                              |
    +----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                        | :ref:`is_multi_window_enabled<class_EditorInterface_method_is_multi_window_enabled>`\ (\ ) |const|                                                                                                                                                                                                                                                                             |
@@ -422,9 +424,9 @@ Godot 编辑器的接口。
 
 :ref:`float<class_float>` **get_editor_scale**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_scale>`
 
-返回编辑器 UI 的实际缩放（\ ``1.0`` 表示缩放为 100%）。可以用来调整由插件添加的用户 UI 的位置和尺寸。
+Returns the actual scale of the editor UI (``1.0`` being 100% scale). This can be used to adjust position and dimensions of the UI added by plugins.
 
-\ **注意：**\ 这个值是通过 :ref:`EditorSettings.interface/editor/display_scale<class_EditorSettings_property_interface/editor/display_scale>` 和 :ref:`EditorSettings.interface/editor/custom_display_scale<class_EditorSettings_property_interface/editor/custom_display_scale>` 来设置。编辑器必须重新启动才能正确应用这些变化。
+\ **Note:** This value is set via the :ref:`EditorSettings.interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` and :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>` settings. The editor must be restarted for changes to be properly applied.
 
 .. rst-class:: classref-item-separator
 
@@ -666,6 +668,18 @@ Godot 编辑器的接口。
 
 ----
 
+.. _class_EditorInterface_method_get_unsaved_scenes:
+
+.. rst-class:: classref-method
+
+:ref:`PackedStringArray<class_PackedStringArray>` **get_unsaved_scenes**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_unsaved_scenes>`
+
+Returns an array of file paths of currently unsaved scenes.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorInterface_method_inspect_object:
 
 .. rst-class:: classref-method
@@ -684,13 +698,13 @@ Godot 编辑器的接口。
 
 :ref:`bool<class_bool>` **is_multi_window_enabled**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_is_multi_window_enabled>`
 
-如果编辑器启用了多窗口支持，则返回 ``true``\ 。以下所有条件\ *都满足*\ 时才会启用多窗口支持：
+Returns ``true`` if multiple window support is enabled in the editor. Multiple window support is enabled if *all* of these statements are true:
 
-- :ref:`EditorSettings.interface/multi_window/enable<class_EditorSettings_property_interface/multi_window/enable>` 为 ``true``\ 。
+- :ref:`EditorSettings.interface/multi_window/enable<class_EditorSettings_property_interface/multi_window/enable>` is ``true``.
 
-- :ref:`EditorSettings.interface/editor/single_window_mode<class_EditorSettings_property_interface/editor/single_window_mode>` 为 ``false``\ 。
+- :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` is ``false``.
 
-- :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` 为 ``false``\ 。如果平台是 Web 等不支持多窗口的平台，或者使用了 ``--single-window`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>`\ ，则强制为 ``true``\ 。
+- :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` is ``false``. This is forced to ``true`` on platforms that don't support multiple windows such as Web, or when the ``--single-window`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>` is used.
 
 .. rst-class:: classref-item-separator
 
@@ -978,7 +992,7 @@ Godot 编辑器的接口。
 
 |void| **reload_scene_from_path**\ (\ scene_filepath\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_reload_scene_from_path>`
 
-重新加载给定路径的场景。
+Reloads the scene at the given path. Fails if the scene is not open.
 
 .. rst-class:: classref-item-separator
 
@@ -1066,7 +1080,7 @@ Godot 编辑器的接口。
 
 |void| **set_main_screen_editor**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_set_main_screen_editor>`
 
-将编辑器的当前主屏幕设置为 ``name`` 中指定的屏幕。\ ``name`` 必须与相关选项卡的文本完全匹配（默认选项卡为 ``2D``\ 、\ ``3D``\ 、\ ``Script``\ 、\ ``Game``\ 、\ ``AssetLib``\ ）。
+Sets the editor's current main screen to the one specified in ``name``. ``name`` must match the title of the tab in question exactly (e.g. ``2D``, ``3D``, ``Script``, ``Game``, or ``Asset Store`` for default tabs).
 
 .. rst-class:: classref-item-separator
 

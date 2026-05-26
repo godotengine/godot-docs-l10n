@@ -180,11 +180,19 @@ Uno shader per il cielo di un ambiente 3D.
 
 Uno shader di calcolo che viene eseguito per ogni froxel della mappa della nebbia volumetrica.
 
+.. _class_VisualShader_constant_TYPE_TEXTURE_BLIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Type<enum_VisualShader_Type>` **TYPE_TEXTURE_BLIT** = ``10``
+
+A shader used to process blit calls to a DrawableTexture.
+
 .. _class_VisualShader_constant_TYPE_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Type<enum_VisualShader_Type>` **TYPE_MAX** = ``10``
+:ref:`Type<enum_VisualShader_Type>` **TYPE_MAX** = ``11``
 
 Rappresenta la dimensione dell'enumerazione :ref:`Type<enum_VisualShader_Type>`.
 

@@ -9,16 +9,18 @@ AudioEffectEQ
 
 **Hérité par :** :ref:`AudioEffectEQ10<class_AudioEffectEQ10>`, :ref:`AudioEffectEQ21<class_AudioEffectEQ21>`, :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`
 
-Classe de base pour les égaliseurs audio. Ils vous donnent le contrôle des fréquences.
+Base class for audio equalizers (EQ). Gives you control over frequencies.
 
-Utilisez la pour créer un égaliseur customisé si :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`, :ref:`AudioEffectEQ10<class_AudioEffectEQ10>` ou :ref:`AudioEffectEQ21<class_AudioEffectEQ21>` ne satisfont pas vos besoins.
+Use it to create a custom equalizer if :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`, :ref:`AudioEffectEQ10<class_AudioEffectEQ10>`, or :ref:`AudioEffectEQ21<class_AudioEffectEQ21>` don't fit your needs.
 
 .. rst-class:: classref-introduction-group
 
 Description
 -----------
 
-AudioEffectEQ vous donne le contrôle des fréquences. Utilisez-le pour compenser les lacunes existantes dans l'audio. Les AudioEffectEQs sont utiles sur le bus Master pour maîtriser complètement un mix et lui donner plus de caractère. Ils sont également utiles quand un jeu est exécuté sur un appareil mobile, pour ajuster le mix à ce type de haut-parleurs (il peut être ajouté mais désactivé lorsque les écouteurs sont branchés).
+An "equalizer" gives you control over the gain of frequencies in the entire spectrum, by allowing their adjustment through bands. A band is a point in the frequency spectrum, and each band means a division of the spectrum that can be adjusted.
+
+Use equalizers to compensate for existing deficiencies in the audio, make room for other elements, or remove undesirable frequencies. AudioEffectEQs are useful on the Master bus to balance the entire mix or give it more character. They are also useful when a game is run on a mobile device, to adjust the mix to that kind of speakers (it can be disabled when headphones are plugged in).
 
 .. rst-class:: classref-introduction-group
 
@@ -26,6 +28,8 @@ Tutoriels
 ------------------
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 

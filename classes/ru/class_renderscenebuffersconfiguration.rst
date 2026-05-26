@@ -202,7 +202,9 @@ RenderSceneBuffersConfiguration
 - |void| **set_texture_mipmap_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_mipmap_bias**\ (\ )
 
-Смещение, применяемое к MIP-текстурам.
+Bias applied to mipmaps.
+
+\ **Note:** This property is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this property is always treated as if it was set to ``0.0``.
 
 .. rst-class:: classref-item-separator
 

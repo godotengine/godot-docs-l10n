@@ -16,7 +16,7 @@ Clase base para las transmisiones de audio.
 Descripción
 ----------------------
 
-Clase base para transmisiones de audio. Las transmisiones de audio se utilizan para efectos de sonido y reproducción de música, y admiten los formatos de archivo WAV (mediante :ref:`AudioStreamWAV<class_AudioStreamWAV>`) y Ogg (mediante :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`).
+Base class for audio streams. Audio streams are used for sound effects and music playback, and support WAV (via :ref:`AudioStreamWAV<class_AudioStreamWAV>`), Ogg (via :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`), and MP3 (via :ref:`AudioStreamMP3<class_AudioStreamMP3>`) file formats.
 
 .. rst-class:: classref-introduction-group
 

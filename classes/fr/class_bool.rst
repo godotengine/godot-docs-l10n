@@ -139,7 +139,7 @@ Construit un **bool** comme copie du **bool** donné.
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`float<class_float>`\ )
 
-Cast une valeur :ref:`float<class_float>` en valeur booléenne. Renvoie ``false`` si ``from`` est égal à ``0.0`` (y compris ``-0.0``), et ``true`` pour toutes les autres valeurs (y compris :ref:`@GDScript.INF<class_@GDScript_constant_INF>` et :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`).
+Casts a :ref:`float<class_float>` value to a **bool**. Returns ``false`` if ``from`` is equal to ``0.0`` (including ``-0.0``), and ``true`` for all other values (including :ref:`@GDScript.INF<class_@GDScript_constant_INF>` and :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`).
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Cast une valeur :ref:`float<class_float>` en valeur booléenne. Renvoie ``false`
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`int<class_int>`\ )
 
-Cast une valeur :ref:`int<class_int>` en valeur booléenne. Renvoie ``false`` si ``from`` est égal à ``0.0``, et ``true`` pour toutes les autres valeurs.
+Casts an :ref:`int<class_int>` value to a **bool**. Returns ``false`` if ``from`` is equal to ``0``, and ``true`` for all other values.
 
 .. rst-class:: classref-section-separator
 
@@ -166,7 +166,7 @@ Descriptions des opérateurs
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_neq_bool>`
 
-Renvoie ``true`` si les booléens ne sont pas égaux. C'est à dire, l'un vaut ``true`` et l'autre vaut ``false``. Cette opération peut être vue comme un XOR logique.
+Returns ``true`` if one **bool** is ``true`` and the other **bool** is ``false``. Equivalent to logical XOR (NEQ).
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Renvoie ``true`` si les booléens ne sont pas égaux. C'est à dire, l'un vaut `
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_lt_bool>`
 
-Renvoie ``true`` si l'opérande de gauche vaut ``false`` et l'opérande de droite vaut ``true``.
+Returns ``true`` if the left **bool** is ``false`` and ``right`` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Renvoie ``true`` si l'opérande de gauche vaut ``false`` et l'opérande de droit
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_eq_bool>`
 
-Renvoie ``true`` si les booléens sont égaux. C'est à dire, les deux valent ``true`` et les deux valent ``false``. Cette opération peut être vue comme un EQ ou XNOR logique.
+Returns ``true`` if both **bool**\ s are ``true``, or if both **bool**\ s are ``false``. Equivalent to logical XNOR (EQ).
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ Renvoie ``true`` si les booléens sont égaux. C'est à dire, les deux valent ``
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_gt_bool>`
 
-Renvoie ``true`` si l'opérande de gauche vaut ``true`` et l'opérande de droite vaut ``false``.
+Returns ``true`` if the left **bool** is ``true`` and ``right`` is ``false``.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -18,6 +18,13 @@ Questo è un flusso audio che può riprodurre musica in modo interattivo, combin
 
 Il modo in cui è utilizzato è inserendo un certo numero di clip, quindi configurando la tabella di transizione. Da lì, le clip sono selezionate per la riproduzione e la musica passerà gradualmente da quella attuale a quella nuova, utilizzando la regola di transizione corrispondente definita nella tabella di transizione.
 
+.. rst-class:: classref-introduction-group
+
+Tutorial
+----------------
+
+- :doc:`Flussi audio <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 Proprietà
@@ -152,6 +159,14 @@ Passa alla stessa posizione nella clip di destinazione. Questo è utile quando e
 :ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_START** = ``1``
 
 Passa all'inizio della clip di destinazione.
+
+.. _class_AudioStreamInteractive_constant_TRANSITION_TO_TIME_PREVIOUS_POSITION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_PREVIOUS_POSITION** = ``2``
+
+Transition to the last played position in the destination clip, if there was a previous transition from that clip. Otherwise, plays from the start of the destination clip.
 
 .. rst-class:: classref-item-separator
 

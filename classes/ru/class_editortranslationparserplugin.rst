@@ -14,13 +14,13 @@ EditorTranslationParserPlugin
 Описание
 ----------------
 
-**EditorTranslationParserPlugin** вызывается при разборе файла для извлечения строк, требующих перевода. Для определения логики разбора и извлечения строк переопределите метод :ref:`_parse_file()<class_EditorTranslationParserPlugin_private_method__parse_file>` в скрипте.
+**EditorTranslationParserPlugin** is invoked when a file is being parsed to extract strings that require translation. To define the parsing and string extraction logic, override the :ref:`_parse_file()<class_EditorTranslationParserPlugin_private_method__parse_file>` method in script.
 
-Возвращаемое значение должно представлять собой массив :ref:`Array<class_Array>` из :ref:`PackedStringArray<class_PackedStringArray>`, по одному для каждой извлеченной переводимой строки. Каждая запись должна содержать ``[msgid, msgctxt, msgid_plural, comment, source_line]``, где все, кроме ``msgid``, являются необязательными. Пустые строки будут игнорироваться.
+The return value should be an :ref:`Array<class_Array>` of :ref:`PackedStringArray<class_PackedStringArray>`\ s, one for each extracted translatable string. Each entry should contain ``[msgid, msgctxt, msgid_plural, comment, source_line]``, where all except ``msgid`` are optional. Empty strings will be ignored.
 
-Извлеченные строки будут записаны в файл шаблона перевода, выбранный пользователем в разделе «Генерация шаблонов» на вкладке «Локализация» в меню «Настройки проекта».
+The extracted strings will be written into a translation template file selected by user under "Template Generation" in "Localization" tab in "Project Settings" menu.
 
-Ниже приведен пример пользовательского парсера, который извлекает строки из CSV-файла для записи в шаблон.
+Below shows an example of a custom parser that extracts strings from a CSV file to write into a template.
 
 
 .. tabs::
@@ -37,7 +37,7 @@ EditorTranslationParserPlugin
         var split_strs = text.split(",", false)
         for s in split_strs:
             ret.append(PackedStringArray([s]))
-            #print("Извлеченная строка: " + s)
+            #print("Extracted string: " + s)
 
         return ret
 
@@ -60,7 +60,7 @@ EditorTranslationParserPlugin
             foreach (string s in splitStrs)
             {
                 ret.Add([s]);
-                //GD.Print($"Извлеченная строка: {s}");
+                //GD.Print($"Extracted string: {s}");
             }
             return ret;
         }
@@ -73,32 +73,32 @@ EditorTranslationParserPlugin
 
 
 
-Чтобы добавить переводимую строку, связанную с контекстом, множественным числом, комментарием или исходной строкой:
+To add a translatable string associated with a context, plural, comment, or source line:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Это добавит сообщение с msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment" и строкой источника "7".
+    # This will add a message with msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment", and source line "7".
     ret.append(PackedStringArray(["Test 1", "context", "test 1 plurals", "test 1 comment", "7"]))
-    # Это добавит сообщение с идентификатором msgid "Тест без контекста" и значением msgid_plural "множественное число".
+    # This will add a message with msgid "A test without context" and msgid_plural "plurals".
     ret.append(PackedStringArray(["A test without context", "", "plurals"]))
-    # Это добавит сообщение с идентификатором msgid "Только с контекстом" и текстом msgctxt "дружественный контекст".
+    # This will add a message with msgid "Only with context" and msgctxt "a friendly context".
     ret.append(PackedStringArray(["Only with context", "a friendly context"]))
 
  .. code-tab:: csharp
 
-    // Это добавит сообщение с msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment" и строкой источника "7".
+    // This will add a message with msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment", and source line "7".
     ret.Add(["Test 1", "context", "test 1 plurals", "test 1 comment", "7"]);
-    // Это добавит сообщение с идентификатором msgid "Тест без контекста" и значением msgid_plural "множественное число".
+    // This will add a message with msgid "A test without context" and msgid_plural "plurals".
     ret.Add(["A test without context", "", "plurals"]);
-    // Это добавит сообщение с идентификатором msgid "Только с контекстом" и текстом msgctxt "дружественный контекст".
+    // This will add a message with msgid "Only with context" and msgctxt "a friendly context".
     ret.Add(["Only with context", "a friendly context"]);
 
 
 
-\ **Примечание:** Если вы переопределяете логику парсинга для стандартных типов скриптов (GDScript, C# и т. д.), лучше загружать аргумент ``path`` с помощью :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`. Это связано с тем, что встроенные скрипты загружаются как тип :ref:`Resource<class_Resource>`, а не :ref:`FileAccess<class_FileAccess>`. Например:
+\ **Note:** If you override parsing logic for standard script types (GDScript, C#, etc.), it would be better to load the ``path`` argument using :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`. This is because built-in scripts are loaded as :ref:`Resource<class_Resource>` type, not :ref:`FileAccess<class_FileAccess>` type. For example:
 
 
 .. tabs::
@@ -108,7 +108,7 @@ EditorTranslationParserPlugin
     func _parse_file(path):
         var res = ResourceLoader.load(path, "Script")
         var text = res.source_code
-        # Логика синтаксического анализа.
+        # Parsing logic.
 
     func _get_recognized_extensions():
         return ["gd"]
@@ -119,7 +119,7 @@ EditorTranslationParserPlugin
     {
         var res = ResourceLoader.Load<Script>(path, "Script");
         string text = res.SourceCode;
-        // Логика синтаксического анализа.
+        // Parsing logic.
     }
 
     public override string[] _GetRecognizedExtensions()
@@ -129,7 +129,9 @@ EditorTranslationParserPlugin
 
 
 
-Чтобы использовать **EditorTranslationParserPlugin**, сначала зарегистрируйте его с помощью :ref:`EditorPlugin.add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>`.
+Alternatively, the plugin can directly modify the final list of strings, by implementing :ref:`_customize_strings()<class_EditorTranslationParserPlugin_private_method__customize_strings>`.
+
+To use **EditorTranslationParserPlugin**, register it using the :ref:`EditorPlugin.add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>` method first.
 
 .. rst-class:: classref-reftable-group
 
@@ -139,11 +141,13 @@ EditorTranslationParserPlugin
 .. table::
    :widths: auto
 
-   +--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedStringArray<class_PackedStringArray>`                              | :ref:`_get_recognized_extensions<class_EditorTranslationParserPlugin_private_method__get_recognized_extensions>`\ (\ ) |virtual| |const| |
-   +--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\] | :ref:`_parse_file<class_EditorTranslationParserPlugin_private_method__parse_file>`\ (\ path\: :ref:`String<class_String>`\ ) |virtual|   |
-   +--------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+   +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\] | :ref:`_customize_strings<class_EditorTranslationParserPlugin_private_method__customize_strings>`\ (\ strings\: :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\]\ ) |virtual| |const| |
+   +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>`                              | :ref:`_get_recognized_extensions<class_EditorTranslationParserPlugin_private_method__get_recognized_extensions>`\ (\ ) |virtual| |const|                                                                           |
+   +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\] | :ref:`_parse_file<class_EditorTranslationParserPlugin_private_method__parse_file>`\ (\ path\: :ref:`String<class_String>`\ ) |virtual|                                                                             |
+   +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -153,6 +157,32 @@ EditorTranslationParserPlugin
 
 Описания метода
 ------------------------------
+
+.. _class_EditorTranslationParserPlugin_private_method__customize_strings:
+
+.. rst-class:: classref-method
+
+:ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\] **_customize_strings**\ (\ strings\: :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\]\ ) |virtual| |const| :ref:`🔗<class_EditorTranslationParserPlugin_private_method__customize_strings>`
+
+Called after parsing all files. You can modify the ``strings`` array to add or remove entries from the final list of strings, then return it after modifications. Each entry is a :ref:`PackedStringArray<class_PackedStringArray>` like explained in the **EditorTranslationParserPlugin**'s description.
+
+::
+
+    @tool
+    extends EditorTranslationParserPlugin
+
+    func _customize_strings(strings):
+        # Add new string.
+        strings.append(["Test 1", "context", "test 1 plurals", "test 1 comment"])
+
+        # Remove all strings that begin with $.
+        strings = strings.filter(func(s): return not s[0].begins_with("$"))
+
+        return strings
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_EditorTranslationParserPlugin_private_method__get_recognized_extensions:
 

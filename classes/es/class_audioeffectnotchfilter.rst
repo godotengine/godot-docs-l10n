@@ -7,14 +7,16 @@ AudioEffectNotchFilter
 
 **Hereda:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Añade un filtro eliminador de banda al bus de Audio.
+Adds a notch filter to an audio bus.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Atenúa las frecuencias en una banda estrecha alrededor del :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` y corta las frecuencias fuera de este rango.
+A "notch" filter attenuates frequencies at :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` and allows frequencies outside the frequency threshold to pass unchanged. It is a narrower and stronger version of :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, and is the opposite of :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
+
+This filter can be used to give more room for other sounds to play at that frequency. Because of how much it attenuates frequencies, it can also be used to completely remove undesired frequencies.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +24,8 @@ Tutoriales
 --------------------
 
 - :doc:`Buses de audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

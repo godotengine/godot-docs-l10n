@@ -7,14 +7,16 @@ AudioEffectHighPassFilter
 
 **Hereda:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Agrega un filtro de paso alto al bus de audio.
+Adds a high-pass filter to an audio bus.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Corta las frecuencias más bajas que el :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` y permite que pasen las frecuencias más altas.
+A "high-pass" filter attenuates frequencies lower than :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` and allows higher frequencies to pass unchanged.
+
+This filter can be used to remove "strength" from a sound, and give low-end space for basses and impact sounds.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +24,8 @@ Tutoriales
 --------------------
 
 - :doc:`Buses de audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

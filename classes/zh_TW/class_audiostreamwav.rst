@@ -23,6 +23,8 @@ AudioStreamWAV 會儲存自 WAV 檔載入的聲音取樣。播放時可使用 :r
 教學
 ----
 
+- :doc:`音訊流 <../tutorials/audio/audio_streams>`
+
 - :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group

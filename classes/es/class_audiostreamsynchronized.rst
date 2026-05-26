@@ -16,6 +16,13 @@ Descripción
 
 Este es un flujo que puede contener sub-flujos, los cuales se reproducirán de manera sincronizada. Los flujos comienzan exactamente al mismo tiempo al presionar reproducir, y terminarán cuando finalice el último de ellos. Si uno de los sub-flujos se repite en bucle, la reproducción continuará.
 
+.. rst-class:: classref-introduction-group
+
+Tutoriales
+--------------------
+
+- :doc:`Corriente de Audio <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 Propiedades

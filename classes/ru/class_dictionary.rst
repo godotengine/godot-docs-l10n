@@ -12,18 +12,18 @@ Dictionary
 Описание
 ----------------
 
-Dictionaries (Словари) — это ассоциативные контейнеры, содержащие значения, на которые ссылаются уникальные ключи. Словари сохраняют порядок добавления новых записей. В других языках программирования эта структура данных часто называется "hash map" или ассоциативным массивом.
+Dictionaries are associative containers that contain values referenced by unique keys. Dictionaries will preserve the insertion order when adding new entries. In other programming languages, this data structure is often referred to as a hash map or an associative array.
 
-Вы можете определить словарь, поместив список пар ``ключ: значение``, разделенных запятыми, в фигурные скобки ``{}``.
+You can define a dictionary by placing a comma-separated list of ``key: value`` pairs inside curly braces ``{}``.
 
-Создание словаря:
+Creating a dictionary:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var my_dict = {} # Создает пустой словарь.
+    var my_dict = {} # Creates an empty dictionary.
 
     var dict_variable_key = "Another key name"
     var dict_variable_value = "value2"
@@ -34,17 +34,17 @@ Dictionaries (Словари) — это ассоциативные контей
 
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
 
-    # Альтернативный синтаксис в стиле Lua.
-    # Не требует заключения ключей в кавычки, но в качестве имен ключей можно использовать только строковые константы.
-    # Кроме того, имена ключей должны начинаться с буквы или символа подчеркивания.
-    # Здесь `some_key` — это строковый литерал, а не переменная!
+    # Alternative Lua-style syntax.
+    # Doesn't require quotes around keys, but only string constants can be used as key names.
+    # Additionally, key names must start with a letter or an underscore.
+    # Here, `some_key` is a string literal, not a variable!
     another_dict = {
         some_key = 42,
     }
 
  .. code-tab:: csharp
 
-    var myDict = new Godot.Collections.Dictionary(); // Создает пустой словарь.
+    var myDict = new Godot.Collections.Dictionary(); // Creates an empty dictionary.
     var pointsDict = new Godot.Collections.Dictionary
     {
         { "White", 50 },
@@ -54,7 +54,7 @@ Dictionaries (Словари) — это ассоциативные контей
 
 
 
-Доступ к значению словаря можно получить, указав соответствующий ключ. В приведенном выше примере ``points_dict["White"]`` вернет ``50``. Вы также можете написать ``points_dict.White``, что эквивалентно. Однако вам придется использовать синтаксис скобок, если ключ, с помощью которого вы обращаетесь к словарю, не является фиксированной строкой (например, числом или переменной).
+You can access a dictionary's value by referencing its corresponding key. In the above example, ``points_dict["White"]`` will return ``50``. You can also write ``points_dict.White``, which is equivalent. However, you'll have to use the bracket syntax if the key you're accessing the dictionary with isn't a fixed string (such as a number or variable).
 
 
 .. tabs::
@@ -64,7 +64,7 @@ Dictionaries (Словари) — это ассоциативные контей
     @export_enum("White", "Yellow", "Orange") var my_color: String
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
     func _ready():
-        # Здесь мы не можем использовать точечный синтаксис, поскольку `my_color` — это переменная.
+        # We can't use dot syntax here as `my_color` is a variable.
         var points = points_dict[my_color]
 
  .. code-tab:: csharp
@@ -85,9 +85,9 @@ Dictionaries (Словари) — это ассоциативные контей
 
 
 
-В приведенном выше коде ``points`` будет присвоено значение, которое сочетается с соответствующим цветом, выбранным в ``my_color``.
+In the above code, ``points`` will be assigned the value that is paired with the appropriate color selected in ``my_color``.
 
-Словари могут содержать более сложные данные:
+Dictionaries can contain more complex data:
 
 
 .. tabs::
@@ -95,7 +95,7 @@ Dictionaries (Словари) — это ассоциативные контей
  .. code-tab:: gdscript
 
     var my_dict = {
-        "First Array": [1, 2, 3, 4] # Назначает Массив Строковому ключу (String key).
+        "First Array": [1, 2, 3, 4] # Assigns an Array to a String key.
     }
 
  .. code-tab:: csharp
@@ -107,7 +107,7 @@ Dictionaries (Словари) — это ассоциативные контей
 
 
 
-Чтобы добавить ключ в существующий словарь, получите к нему доступ как к существующему ключу и назначьте ему:
+To add a key to an existing dictionary, access it like an existing key and assign to it:
 
 
 .. tabs::
@@ -129,16 +129,16 @@ Dictionaries (Словари) — это ассоциативные контей
 
 
 
-Наконец, нетипизированные словари могут содержать различные типы ключей и значений в одном и том же словаре:
+Finally, untyped dictionaries can contain different types of keys and values in the same dictionary:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Это действительный словарь.
-    # Чтобы получить доступ к строке "Nested value" (Вложенное значение) ниже, используйте `my_dict.sub_dict.sub_key` или`my_dict["sub_dict"]["sub_key"]`.
-    # Стили индексации можно комбинировать и подбирать в зависимости от ваших потребностей.
+    # This is a valid dictionary.
+    # To access the string "Nested value" below, use `my_dict.sub_dict.sub_key` or `my_dict["sub_dict"]["sub_key"]`.
+    # Indexing styles can be mixed and matched depending on your needs.
     var my_dict = {
         "String Key": 5,
         4: [1, 2, 3],
@@ -148,8 +148,8 @@ Dictionaries (Словари) — это ассоциативные контей
 
  .. code-tab:: csharp
 
-    // Это действительный словарь.
-    // Чтобы получить доступ к строке "Nested value" ниже, используйте `((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]`.
+    // This is a valid dictionary.
+    // To access the string "Nested value" below, use `((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]`.
     var myDict = new Godot.Collections.Dictionary {
         { "String Key", 5 },
         { 4, new Godot.Collections.Array { 1, 2, 3 } },
@@ -159,7 +159,7 @@ Dictionaries (Словари) — это ассоциативные контей
 
 
 
-Ключи словаря можно перебирать с помощью ключевого слова ``for``:
+The keys of a dictionary can be iterated with the ``for`` keyword:
 
 
 .. tabs::
@@ -175,27 +175,27 @@ Dictionaries (Словари) — это ассоциативные контей
     var groceries = new Godot.Collections.Dictionary { { "Orange", 20 }, { "Apple", 2 }, { "Banana", 4 } };
     foreach (var (fruit, amount) in groceries)
     {
-        // `fruit` - ключ, `amount` - значение.
+        // `fruit` is the key, `amount` is the value.
     }
 
 
 
-Чтобы обеспечить определённый тип ключей и значений, можно создать *typed dictionary*. Типизированные словари могут содержать только ключи и значения заданных типов или наследуемые от заданных классов:
+To enforce a certain type for keys and values, you can create a *typed dictionary*. Typed dictionaries can only contain keys and values of the given types, or that inherit from the given classes:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Создает типизированный словарь со строковыми ключами и целочисленными значениями.
-    # Попытка использовать любой другой тип для ключей или значений приведет к ошибке.
+    # Creates a typed dictionary with String keys and int values.
+    # Attempting to use any other type for keys or values will result in an error.
     var typed_dict: Dictionary[String, int] = {
         "some_key": 1,
         "some_other_key": 2,
     }
 
-    # Создает типизированный словарь со строковыми ключами и значениями любого типа.
-    # Попытка использовать любой другой тип ключей приведет к ошибке.
+    # Creates a typed dictionary with String keys and values of any type.
+    # Attempting to use any other type for keys will result in an error.
     var typed_dict_key_only: Dictionary[String, Variant] = {
         "some_key": 12.34,
         "some_other_key": "string",
@@ -203,15 +203,15 @@ Dictionaries (Словари) — это ассоциативные контей
 
  .. code-tab:: csharp
 
-    // Создает типизированный словарь со строковыми ключами и целочисленными значениями.
-    // Попытка использовать любой другой тип для ключей или значений приведет к ошибке.
+    // Creates a typed dictionary with String keys and int values.
+    // Attempting to use any other type for keys or values will result in an error.
     var typedDict = new Godot.Collections.Dictionary<String, int> {
         {"some_key", 1},
         {"some_other_key", 2},
     };
 
-    // Создает типизированный словарь со строковыми ключами и значениями любого типа.
-    // Попытка использовать любой другой тип ключей приведет к ошибке.
+    // Creates a typed dictionary with String keys and values of any type.
+    // Attempting to use any other type for keys will result in an error.
     var typedDictKeyOnly = new Godot.Collections.Dictionary<String, Variant> {
         {"some_key", 12.34},
         {"some_other_key", "string"},
@@ -219,9 +219,11 @@ Dictionaries (Словари) — это ассоциативные контей
 
 
 
-\ **Примечание:** Словари всегда передаются по ссылке. Чтобы получить копию словаря, которую можно изменять независимо от исходного, используйте :ref:`duplicate()<class_Dictionary_method_duplicate>`.
+\ **Note:** Dictionaries are always passed by reference. To get a copy of a dictionary which can be modified independently of the original dictionary, use :ref:`duplicate()<class_Dictionary_method_duplicate>`.
 
-\ **Примечание:** Удаление элементов при итерации по словарям **не** поддерживается и приведет к непредсказуемому поведению.
+\ **Note:** Erasing elements while iterating over dictionaries is **not** supported and will result in unpredictable behavior.
+
+\ **Note:** In a boolean context, a dictionary will evaluate to ``false`` if it's empty (``{}``). Otherwise, a dictionary will always evaluate to ``true``.
 
 .. note::
 
@@ -482,7 +484,16 @@ Dictionaries (Словари) — это ассоциативные контей
 
 :ref:`Variant<class_Variant>` **get**\ (\ key\: :ref:`Variant<class_Variant>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Dictionary_method_get>`
 
-Возвращает соответствующее значение для указанного ``key`` в словаре. Если ``key`` не существует, возвращает ``default`` или ``null``, если параметр пропущен.
+Returns the corresponding value for the given ``key`` in the dictionary. If the ``key`` does not exist, returns ``default``, or ``null`` if the parameter is omitted.
+
+\ **Note:** If the ``default`` argument is computationally expensive or has unwanted side effects, consider using the :ref:`has()<class_Dictionary_method_has>` method instead:
+
+::
+
+    # Always calls `expensive_function()`.
+    dict.get("key", expensive_function())
+    # Calls `expensive_function()` only if the key does not exist.
+    dict.get("key") if dict.has("key") else expensive_function()
 
 .. rst-class:: classref-item-separator
 

@@ -12,27 +12,29 @@ Una matriz de 3×3 para representar la rotación y la escala 3D.
 Descripción
 ----------------------
 
-El tipo :ref:`Variant<class_Variant>` incorporado **Basis** es una `matriz <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ de 3×3 utilizada para representar rotación, escala y cizallamiento en 3D. Se utiliza frecuentemente dentro de un :ref:`Transform3D<class_Transform3D>`.
+The **Basis** built-in :ref:`Variant<class_Variant>` type is a 3×3 `matrix <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ used to represent 3D rotation, scale, and shear. It is frequently used within a :ref:`Transform3D<class_Transform3D>`.
 
-Un **Basis** está compuesto por 3 vectores de eje, cada uno representando una columna de la matriz: :ref:`x<class_Basis_property_x>`, :ref:`y<class_Basis_property_y>` y :ref:`z<class_Basis_property_z>`. La longitud de cada eje (:ref:`Vector3.length()<class_Vector3_method_length>`) influye en la escala de la base, mientras que la dirección de todos los ejes influye en la rotación. Por lo general, estos ejes son perpendiculares entre sí. Sin embargo, cuando rotas cualquier eje individualmente, la base se vuelve cizallada. Aplicar una base cizallada a un modelo 3D hará que el modelo aparezca distorsionado.
+A **Basis** is composed by 3 axis vectors, each representing a column of the matrix: :ref:`x<class_Basis_property_x>`, :ref:`y<class_Basis_property_y>`, and :ref:`z<class_Basis_property_z>`. The length of each axis (:ref:`Vector3.length()<class_Vector3_method_length>`) influences the basis's scale, while the direction of all axes influence the rotation. Usually, these axes are perpendicular to one another. However, when you rotate any axis individually, the basis becomes sheared. Applying a sheared basis to a 3D model will make the model appear distorted.
 
-Un **Basis** es:
+A **Basis** is:
 
-- **Ortogonal** si sus ejes son perpendiculares entre sí.
+- **Orthogonal** if its axes are perpendicular to each other.
 
-- **Normalizado** si la longitud de cada eje es ``1.0``.
+- **Normalized** if the length of every axis is ``1.0``.
 
-- **Uniforme** si todos los ejes comparten la misma longitud (consulta :ref:`get_scale()<class_Basis_method_get_scale>`).
+- **Uniform** if all axes share the same length (see :ref:`get_scale()<class_Basis_method_get_scale>`).
 
-- **Ortonormal** si es tanto ortogonal como normalizado, lo que le permite representar solo rotaciones (consulta :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+- **Orthonormal** if it is both orthogonal and normalized, which allows it to only represent rotations (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
 
-- **Conforme** si es tanto ortogonal como uniforme, lo que asegura que no esté distorsionado.
+- **Conformal** if it is both orthogonal and uniform, which ensures it is not distorted.
 
-Para una introducción general, consulta el tutorial :doc:`Matrices y transformaciones <../tutorials/math/matrices_and_transforms>`.
+For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
 
-\ **Nota:** Godot utiliza un `sistema de coordenadas derecho <https://en.wikipedia.org/wiki/Right-hand_rule>`__, que es un estándar común. Para las direcciones, la convención para tipos incorporados como :ref:`Camera3D<class_Camera3D>` es que -Z apunte hacia adelante (+X es derecha, +Y es arriba y +Z es atrás). Otros objetos pueden usar diferentes convenciones de dirección. Para más información, consulta el tutorial `Convenciones de dirección de activos 3D <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__.
+\ **Note:** Godot uses a `right-handed coordinate system <https://en.wikipedia.org/wiki/Right-hand_rule>`__, which is a common standard. For directions, the convention for built-in types like :ref:`Camera3D<class_Camera3D>` is for -Z to point forward (+X is right, +Y is up, and +Z is back). Other objects may use different direction conventions. For more information, see the `3D asset direction conventions <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ tutorial.
 
-\ **Nota:** Las matrices de base se exponen en orden `column-major <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__, que es el mismo que OpenGL. Sin embargo, se almacenan internamente en orden row-major, que es el mismo que DirectX.
+\ **Note:** The basis matrices are exposed as `column-major <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__ order, which is the same as OpenGL. However, they are stored internally in row-major order, which is the same as DirectX.
+
+\ **Note:** In a boolean context, a basis will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Basis_constant_IDENTITY>`. Otherwise, a basis will always evaluate to ``true``.
 
 .. note::
 
@@ -121,6 +123,8 @@ Métodos
    | :ref:`bool<class_bool>`             | :ref:`is_equal_approx<class_Basis_method_is_equal_approx>`\ (\ b\: :ref:`Basis<class_Basis>`\ ) |const|                                                                                                           |
    +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`             | :ref:`is_finite<class_Basis_method_is_finite>`\ (\ ) |const|                                                                                                                                                      |
+   +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`             | :ref:`is_orthonormal<class_Basis_method_is_orthonormal>`\ (\ ) |const|                                                                                                                                            |
    +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Basis<class_Basis>`           | :ref:`looking_at<class_Basis_method_looking_at>`\ (\ target\: :ref:`Vector3<class_Vector3>`, up\: :ref:`Vector3<class_Vector3>` = Vector3(0, 1, 0), use_model_front\: :ref:`bool<class_bool>` = false\ ) |static| |
    +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -384,34 +388,34 @@ Returns the `determinant <https://en.wikipedia.org/wiki/Determinant>`__ of this 
 
 :ref:`Basis<class_Basis>` **from_euler**\ (\ euler\: :ref:`Vector3<class_Vector3>`, order\: :ref:`int<class_int>` = 2\ ) |static| :ref:`🔗<class_Basis_method_from_euler>`
 
-Construye una nueva **Basis** que solo representa la rotación respecto al :ref:`Vector3<class_Vector3>` dado de `ángulos de Euler <https://en.wikipedia.org/wiki/Euler_angles>`__, en radianes.
+Constructs a new **Basis** that only represents rotation from the given :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians.
 
-- El :ref:`Vector3.x<class_Vector3_property_x>` debe contener el ángulo alrededor del :ref:`x<class_Basis_property_x>` (cabeceo);
+- The :ref:`Vector3.x<class_Vector3_property_x>` should contain the angle around the :ref:`x<class_Basis_property_x>` axis (pitch);
 
-- El :ref:`Vector3.y<class_Vector3_property_y>` debe contener el ángulo alrededor del :ref:`y<class_Basis_property_y>` (guiñada);
+- The :ref:`Vector3.y<class_Vector3_property_y>` should contain the angle around the :ref:`y<class_Basis_property_y>` axis (yaw);
 
-- El :ref:`Vector3.z<class_Vector3_property_z>` debe contener el ángulo alrededor del :ref:`z<class_Basis_property_z>` (balanceo).
+- The :ref:`Vector3.z<class_Vector3_property_z>` should contain the angle around the :ref:`z<class_Basis_property_z>` axis (roll).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Crea una Base cuyo eje z apunta hacia abajo.
+    # Creates a Basis whose z axis points down.
     var my_basis = Basis.from_euler(Vector3(TAU / 4, 0, 0))
 
-    print(my_basis.z) # Imprime (0.0, -1.0, 0.0)
+    print(my_basis.z) # Prints (0.0, -1.0, 0.0)
 
  .. code-tab:: csharp
 
-    // Crea una base cuyo eje z apunta hacia abajo.
+    // Creates a Basis whose z axis points down.
     var myBasis = Basis.FromEuler(new Vector3(Mathf.Tau / 4.0f, 0.0f, 0.0f));
 
-    GD.Print(myBasis.Z); // Imprime (0, -1, 0)
+    GD.Print(myBasis.Z); // Prints (0, -1, 0)
 
 
 
-El orden de cada rotación consecutiva se puede cambiar con ``order`` (ver constantes :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`). Por defecto, se utiliza la convención YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): la base gira primero alrededor del eje Y (guiñada), luego del eje X (cabeceo) y, por último, del eje Z (balanceo). Al utilizar el método opuesto :ref:`get_euler()<class_Basis_method_get_euler>`, este orden se invierte.
+The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): the basis rotates first around the local Y axis (yaw), then local X (pitch), and lastly local Z (roll). When using the opposite method :ref:`get_euler()<class_Basis_method_get_euler>` to decompose a rotation, this order is reversed.
 
 .. rst-class:: classref-item-separator
 
@@ -458,21 +462,21 @@ Construye una nueva **Basis** que solo representa la escala, sin rotación ni de
 
 :ref:`Vector3<class_Vector3>` **get_euler**\ (\ order\: :ref:`int<class_int>` = 2\ ) |const| :ref:`🔗<class_Basis_method_get_euler>`
 
-Devuelve la rotación de esta base como un :ref:`Vector3<class_Vector3>` de `ángulos de Euler <https://en.wikipedia.org/wiki/Euler_angles>`__, en radianes. Para el valor devuelto:
+Returns this basis's rotation as a :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians. For the returned value:
 
-- El :ref:`Vector3.x<class_Vector3_property_x>` contiene el ángulo alrededor del :ref:`x<class_Basis_property_x>` (cabeceo);
+- The :ref:`Vector3.x<class_Vector3_property_x>` contains the angle around the :ref:`x<class_Basis_property_x>` axis (pitch);
 
-- El :ref:`Vector3.y<class_Vector3_property_y>` contiene el ángulo alrededor del :ref:`y<class_Basis_property_y>` (guiñada);
+- The :ref:`Vector3.y<class_Vector3_property_y>` contains the angle around the :ref:`y<class_Basis_property_y>` axis (yaw);
 
-- El :ref:`Vector3.z<class_Vector3_property_z>` contiene el ángulo alrededor del :ref:`z<class_Basis_property_z>` (balanceo).
+- The :ref:`Vector3.z<class_Vector3_property_z>` contains the angle around the :ref:`z<class_Basis_property_z>` axis (roll).
 
-El orden de cada rotación consecutiva se puede cambiar con ``order`` (ver constantes :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`). Por defecto, se utiliza la convención YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): primero se calcula Z (balanceo), luego X (cabeceo) y, por último, Y (guiñada). Al usar el método opuesto :ref:`from_euler()<class_Basis_method_from_euler>`, este orden se invierte.
+The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): since we are decomposing, local Z (roll) is calculated first, then local X (pitch), and lastly local Y (yaw). When using the opposite method :ref:`from_euler()<class_Basis_method_from_euler>` to compose a rotation, this order is reversed.
 
-\ **Nota:** Para que este método funcione correctamente, la base debe ser *ortonormal* (véase :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+\ **Note:** For this method to return correctly, the basis needs to be *orthonormal* (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
 
-\ **Nota:** Los ángulos de Euler son mucho más intuitivos, pero no son adecuados para matemáticas 3D. Por ello, considere utilizar el método :ref:`get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>`, que devuelve un :ref:`Quaternion<class_Quaternion>`.
+\ **Note:** Euler angles are much more intuitive but are not suitable for 3D math. Because of this, consider using the :ref:`get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>` method instead, which returns a :ref:`Quaternion<class_Quaternion>`.
 
-\ **Nota:** En el panel Inspector, la rotación de una base suele mostrarse en ángulos de Euler (en grados), como ocurre con la propiedad :ref:`Node3D.rotation<class_Node3D_property_rotation>`.
+\ **Note:** In the Inspector dock, a basis's rotation is often displayed in Euler angles (in degrees), as is the case with the :ref:`Node3D.rotation<class_Node3D_property_rotation>` property.
 
 .. rst-class:: classref-item-separator
 
@@ -580,6 +584,18 @@ Devuelve ``true`` si esta base y ``b`` son aproximadamente iguales, llamando a :
 :ref:`bool<class_bool>` **is_finite**\ (\ ) |const| :ref:`🔗<class_Basis_method_is_finite>`
 
 Devuelve ``true`` si esta base es finita, llamando a :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>` en todos los componentes vectoriales.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Basis_method_is_orthonormal:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_orthonormal**\ (\ ) |const| :ref:`🔗<class_Basis_method_is_orthonormal>`
+
+Returns ``true`` if this basis is orthonormal. An orthonormal basis is both *orthogonal* (the axes are perpendicular to each other) and *normalized* (the length of every axis is ``1.0``). This method can be especially useful during physics calculations.
 
 .. rst-class:: classref-item-separator
 

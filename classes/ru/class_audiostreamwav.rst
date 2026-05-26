@@ -23,6 +23,8 @@ AudioStreamWAV хранит звуковые образцы, загруженн�
 Обучающие материалы
 --------------------------------------
 
+- :doc:`Аудиопотоки <../tutorials/audio/audio_streams>`
+
 - :doc:`Загрузка и сохранение файла времени выполнения <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group

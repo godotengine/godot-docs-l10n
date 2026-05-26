@@ -12,15 +12,17 @@ Quaternion
 描述
 ----
 
-内置的 **Quaternion**\ （四元数）\ :ref:`Variant<class_Variant>`\ （变体）类型是一种 4D 数据结构，它采用 `哈密顿约定四元数 <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__ 的形式来表示旋转。与既能存储旋转又能存储缩放的 :ref:`Basis<class_Basis>`\ （基）类型相比，四元数\ *只能*\ 存储旋转。
+The **Quaternion** built-in :ref:`Variant<class_Variant>` type is a 4D data structure that represents rotation in the form of a `Hamilton convention quaternion <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__. Compared to the :ref:`Basis<class_Basis>` type which can store both rotation and scale, quaternions can *only* store rotation.
 
-一个 **Quaternion** 由 4 个浮点分量组成：\ :ref:`w<class_Quaternion_property_w>`\ 、\ :ref:`x<class_Quaternion_property_x>`\ 、\ :ref:`y<class_Quaternion_property_y>` 和 :ref:`z<class_Quaternion_property_z>`\ 。这些分量在内存中非常紧凑，正因如此，某些运算会更加高效，并且更不容易引发浮点数误差。诸如 :ref:`get_angle()<class_Quaternion_method_get_angle>`\ 、\ :ref:`get_axis()<class_Quaternion_method_get_axis>` 和 :ref:`slerp()<class_Quaternion_method_slerp>` 等方法，都比它们在 :ref:`Basis<class_Basis>` 中的对应方法速度更快。
+A **Quaternion** is composed by 4 floating-point components: :ref:`w<class_Quaternion_property_w>`, :ref:`x<class_Quaternion_property_x>`, :ref:`y<class_Quaternion_property_y>`, and :ref:`z<class_Quaternion_property_z>`. These components are very compact in memory, and because of this some operations are more efficient and less likely to cause floating-point errors. Methods such as :ref:`get_angle()<class_Quaternion_method_get_angle>`, :ref:`get_axis()<class_Quaternion_method_get_axis>`, and :ref:`slerp()<class_Quaternion_method_slerp>` are faster than their :ref:`Basis<class_Basis>` counterparts.
 
-想要深入了解四元数，推荐观看 `3Blue1Brown 的这个视频 <https://www.youtube.com/watch?v=d4EgbgTm0Bg>`__\ 。不过，你并不需要完全搞懂四元数背后的数学原理，因为 Godot 提供了多种辅助方法来为你处理这些底层逻辑，其中包括 :ref:`slerp()<class_Quaternion_method_slerp>`\ （球面线性插值）、\ :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>`\ （球面三次插值）以及 ``*``\ （乘号）运算符。
+For a great introduction to quaternions, see `this video by 3Blue1Brown <https://www.youtube.com/watch?v=d4EgbgTm0Bg>`__. You do not need to know the math behind quaternions, as Godot provides several helper methods that handle it for you. These include :ref:`slerp()<class_Quaternion_method_slerp>` and :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>`, as well as the ``*`` operator.
 
-\ **注意：** 四元数在用于旋转之前必须先进行归一化处理（请见 :ref:`normalized()<class_Quaternion_method_normalized>`\ ）。
+\ **Note:** Quaternions must be normalized before being used for rotation (see :ref:`normalized()<class_Quaternion_method_normalized>`).
 
-\ **注意：** 与 :ref:`Vector2<class_Vector2>` 和 :ref:`Vector3<class_Vector3>` 类似，四元数的分量默认使用 32 位精度，这与始终为 64 位的 :ref:`float<class_float>` 类型不同。如果需要双精度，请使用 ``precision=double`` 选项重新编译引擎。
+\ **Note:** Similarly to :ref:`Vector2<class_Vector2>` and :ref:`Vector3<class_Vector3>`, the components of a quaternion use 32-bit precision by default, unlike :ref:`float<class_float>` which is always 64-bit. If double precision is needed, compile the engine with the option ``precision=double``.
+
+\ **Note:** In a boolean context, a quaternion will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Quaternion_constant_IDENTITY>`. Otherwise, a quaternion will always evaluate to ``true``.
 
 .. note::
 
@@ -375,7 +377,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **from_euler**\ (\ euler\: :ref:`Vector3<class_Vector3>`\ ) |static| :ref:`🔗<class_Quaternion_method_from_euler>`
 
-从给定的 `欧拉角 <https://en.wikipedia.org/wiki/Euler_angles>`__\ 的 :ref:`Vector3<class_Vector3>` 弧度角构造一个新的 **Quaternion**\ 。该方法始终使用 YXZ 约定（\ :ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`\ ）。
+Constructs a new **Quaternion** from the given :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians. In Godot, Euler angles always use intrinsic order. This method always uses the intrinsic YXZ convention (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
 
 .. rst-class:: classref-item-separator
 
@@ -413,9 +415,9 @@ Quaternion
 
 :ref:`Vector3<class_Vector3>` **get_euler**\ (\ order\: :ref:`int<class_int>` = 2\ ) |const| :ref:`🔗<class_Quaternion_method_get_euler>`
 
-返回该四元数的旋转作为\ `欧拉角 <https://en.wikipedia.org/wiki/Euler_angles>`__\ 弧度角的 :ref:`Vector3<class_Vector3>`\ 。
+Returns this quaternion's rotation as a :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians.
 
-每个连续旋转的顺序可以使用 ``order`` 更改（请参阅 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` 常量）。默认情况下，使用 YXZ 约定（\ :ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`\ ）：首先计算 Z（翻滚），然后计算 X（俯仰），最后计算 Y（偏航）。当使用相反的方法 :ref:`from_euler()<class_Quaternion_method_from_euler>` 时，该顺序相反。
+The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): since we are decomposing, local Z (roll) is calculated first, then local X (pitch), and lastly local Y (yaw). When using the opposite method :ref:`from_euler()<class_Quaternion_method_from_euler>` to compose a rotation, this order is reversed.
 
 .. rst-class:: classref-item-separator
 

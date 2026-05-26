@@ -96,6 +96,22 @@ InputEvent
 
 Ідентифікатор пристрою використовується для емуляції введення мишки з сенсорного екрана, або для емульсійного входу з миші. Це може бути використаний для розрізнення емуляції введення мишки від фізичного введення мишки, або емульсійного входу з фізичного дотику.
 
+.. _class_InputEvent_constant_DEVICE_ID_KEYBOARD:
+
+.. rst-class:: classref-constant
+
+**DEVICE_ID_KEYBOARD** = ``16`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_KEYBOARD>`
+
+Device ID used for input from a keyboard. This can be used to distinguish keyboard input events from joypad input events.
+
+.. _class_InputEvent_constant_DEVICE_ID_MOUSE:
+
+.. rst-class:: classref-constant
+
+**DEVICE_ID_MOUSE** = ``32`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_MOUSE>`
+
+Device ID used for input from a mouse. This can be used to distinguish mouse input events from joypad input events.
+
 .. rst-class:: classref-section-separator
 
 ----

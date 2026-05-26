@@ -7,16 +7,18 @@ XRCamera3D
 
 **继承：** :ref:`Camera3D<class_Camera3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-应用了一些 AR/VR 规则的相机节点，例如位置跟踪。
+A camera node which automatically positions itself based on XR tracking data.
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-这是用于我们相机的一种辅助 3D 节点；请注意，如果立体渲染适用（VR-HMD），则大多数相机属性都会被忽略，因为 HMD 信息会覆盖它们。可以信任的属性只有近平面和远平面。
+A camera node which automatically positions itself based on XR tracking data.
 
-如果此类跟踪可用，则该节点的位置和方向由 XR 服务器自动更新，以表示 HMD 的位置，因此可以被游戏逻辑使用。请注意，与 XR 控制器相比，渲染线程可以访问 HMD 的最新跟踪数据，因此 XRCamera3D 的位置可能比用于渲染的位置滞后几毫秒。
+In contrast to :ref:`XRController3D<class_XRController3D>`, the render thread has access to more up-to-date tracking data, and the location of the **XRCamera3D** node can lag a few milliseconds behind what is used for rendering.
+
+\ **Note:** If :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` is ``true``, most of the camera properties are overridden by the active :ref:`XRInterface<class_XRInterface>`. The only properties that can be trusted are the near and far planes.
 
 .. rst-class:: classref-introduction-group
 

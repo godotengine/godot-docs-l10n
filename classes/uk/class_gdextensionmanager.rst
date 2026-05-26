@@ -23,7 +23,7 @@ GDExtensionManager навантажень, ініціалізує та відс�
 Посібники
 ------------------
 
-- :doc:`Огляд GDExtension <../tutorials/scripting/gdextension/what_is_gdextension>`
+- :doc:`Огляд GDExtension <../engine_details/engine_api/gdextension/what_is_gdextension>`
 
 - :doc:`Приклад GDExtension в C++ <../tutorials/scripting/cpp/gdextension_cpp_example>`
 

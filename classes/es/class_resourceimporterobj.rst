@@ -128,9 +128,9 @@ Si es ``true``, habilita la generación de mallas de sombra en la importación. 
 
 :ref:`bool<class_bool>` **generate_tangents** = ``true`` :ref:`🔗<class_ResourceImporterOBJ_property_generate_tangents>`
 
-Si es ``true``, genera tangentes de vértices usando `Mikktspace <http://www.mikktspace.com/>`__ si la malla de origen no tiene datos de tangente. Cuando sea posible, se recomienda dejar que el software de modelado 3D genere tangentes en la exportación en lugar de depender de esta opción. Se requieren tangentes para la visualización correcta de los mapas normales y de altura, junto con cualquier característica de material/sombreador que requiera tangentes.
+If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the source mesh doesn't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
 
-Si no necesitas características de material que requieran tangentes, deshabilitar esto puede reducir el tamaño del archivo de salida y acelerar la importación si el archivo 3D de origen no contiene tangentes.
+If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
 
 .. rst-class:: classref-item-separator
 

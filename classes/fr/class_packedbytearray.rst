@@ -12,11 +12,13 @@ Un tableau compacté d'octets.
 Description
 -----------
 
-Un tableau spécialement conçu pour contenir des octets. Compacte les données de manière serrée, il sauve de la mémoire pour les grandes tailles de tableaux.
+An array specifically designed to hold bytes. Packs data tightly, so it saves memory for large array sizes.
 
-\ **PackedByteArray** fournit également des méthodes pour encoder/décoder différents types vers/depuis des octets. La façon dont les valeurs sont encodées est un détail d'implémentation et ne devrait pas être utilisé lors de l'interaction avec des applications externes.
+\ **PackedByteArray** also provides methods to encode/decode various types to/from bytes. The way values are encoded is an implementation detail and shouldn't be relied upon when interacting with external apps.
 
-\ **Note :** Les tableaux compactés sont toujours passés par référence. Pour obtenir une copie d'un tableau qui peut être modifié indépendamment du tableau original, utilisez :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. Ceci n'est *pas* le cas pour les propriétés et les méthodes intégrées. Le tableau compacté renvoyé de ceux-ci est une copie, et le changer n'affectera *pas* la valeur originale. Pour mettre à jour une propriété intégrée, vous devez modifier le tableau renvoyé, puis l'affecter à nouveau à la propriété.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 

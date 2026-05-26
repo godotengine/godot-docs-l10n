@@ -12,7 +12,7 @@ Callable
 描述
 ----
 
-可调用体 **Callable** 是表示函数的内置 :ref:`Variant<class_Variant>` 类型。它可以是 :ref:`Object<class_Object>` 实例中的方法，也可以是用于不同目的的自定义可调用函数（请参阅 :ref:`is_custom()<class_Callable_method_is_custom>`\ ）。与所有 :ref:`Variant<class_Variant>` 类型一样，它可以存储在变量中，也可以传递给其他函数。它最常用于信号回调。
+**Callable** is a built-in :ref:`Variant<class_Variant>` type that represents a function. It can either be a method within an :ref:`Object<class_Object>` instance, or a custom callable used for different purposes (see :ref:`is_custom()<class_Callable_method_is_custom>`). Like all :ref:`Variant<class_Variant>` types, it can be stored in variables and passed to other functions. It is most commonly used for signal callbacks.
 
 
 .. tabs::
@@ -24,13 +24,13 @@ Callable
 
     func test():
         var callable = Callable(self, "print_args")
-        callable.call("hello", "world")  # 输出“hello world ”。
-        callable.call(Vector2.UP, 42, callable)  # 输出“(0.0, -1.0) 42 Node(node.gd)::print_args”
-        callable.call("invalid")  # 无效调用，应当至少有 2 个参数。
+        callable.call("hello", "world")  # Prints "hello world ".
+        callable.call(Vector2.UP, 42, callable)  # Prints "(0.0, -1.0) 42 Node(node.gd)::print_args"
+        callable.call("invalid")  # Invalid call, should have at least 2 arguments.
 
  .. code-tab:: csharp
 
-    // 不支持参数默认值。
+    // Default parameter values are not supported.
     public void PrintArgs(Variant arg1, Variant arg2, Variant arg3 = default)
     {
         GD.PrintS(arg1, arg2, arg3);
@@ -40,14 +40,14 @@ Callable
     {
         // Invalid calls fail silently.
         Callable callable = new Callable(this, MethodName.PrintArgs);
-        callable.Call("hello", "world"); // 不支持参数默认值，应当有 3 个参数。
-        callable.Call(Vector2.Up, 42, callable); // 输出“(0.0, -1.0) 42 Node(node.gd)::print_args”
-        callable.Call("invalid"); // 无效调用，应当有 3 个参数。
+        callable.Call("hello", "world"); // Default parameter values are not supported, should have 3 arguments.
+        callable.Call(Vector2.Up, 42, callable); // Prints "(0, -1) 42 Node(Node.cs)::PrintArgs"
+        callable.Call("invalid"); // Invalid call, should have 3 arguments.
     }
 
 
 
-GDScript 中可以在方法里创建 lambda 函数。Lambda 函数是自定义的可调用体，不与 :ref:`Object<class_Object>` 实例关联。也可以为 Lambda 函数命名。该名称会显示在调试器中，也会在 :ref:`get_method()<class_Callable_method_get_method>` 中使用。
+In GDScript, it's possible to create lambda functions within a method. Lambda functions are custom callables that are not associated with an :ref:`Object<class_Object>` instance. Optionally, lambda functions can also be named. The name will be displayed in the debugger, or when calling :ref:`get_method()<class_Callable_method_get_method>`.
 
 ::
 
@@ -55,31 +55,33 @@ GDScript 中可以在方法里创建 lambda 函数。Lambda 函数是自定义�
         var my_lambda = func (message):
             print(message)
 
-        # 输出“大家好呀！”
-        my_lambda.call("大家好呀！")
+        # Prints "Hello everyone!"
+        my_lambda.call("Hello everyone!")
 
-        # 发出 button_pressed 信号时输出“全军出击！”。
-        button_pressed.connect(func(): print("全军出击！"))
+        # Prints "Attack!", when the button_pressed signal is emitted.
+        button_pressed.connect(func(): print("Attack!"))
 
-在 GDScript 中，可以将方法和全局函数作为 **Callable** 进行访问：
+In GDScript, you can access methods and global functions as **Callable**\ s:
 
 ::
 
-    tween.tween_callback(node.queue_free)  # Object 的方法。
-    tween.tween_callback(array.clear)  # 内置类型的方法。
-    tween.tween_callback(print.bind("Test"))  # 全局函数。
+    tween.tween_callback(node.queue_free)  # Object methods.
+    tween.tween_callback(array.clear)  # Methods of built-in types.
+    tween.tween_callback(print.bind("Test"))  # Global functions.
 
-\ **注意：**\ 由于键不明确，\ :ref:`Dictionary<class_Dictionary>` 不支持上述内容。
+\ **Note:** :ref:`Dictionary<class_Dictionary>` does not support the above due to ambiguity with keys.
 
 ::
 
     var dictionary = { "hello": "world" }
 
-    # 不行，“clear” 被视为一个键。
+    # This will not work, `clear` is treated as a key.
     tween.tween_callback(dictionary.clear)
 
-    # 有效。
+    # This will work.
     tween.tween_callback(Callable.create(dictionary, "clear"))
+
+\ **Note:** In a boolean context, a callable will evaluate to ``false`` if it's null (see :ref:`is_null()<class_Callable_method_is_null>`). Otherwise, a callable will always evaluate to ``true``.
 
 .. note::
 

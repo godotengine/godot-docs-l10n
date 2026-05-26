@@ -16,6 +16,13 @@ Descripción
 
 Logger personalizado para recibir mensajes del flujo interno de errores/advertencias. Los loggers se registran a través de :ref:`OS.add_logger()<class_OS_method_add_logger>`.
 
+.. rst-class:: classref-introduction-group
+
+Tutoriales
+--------------------
+
+- :doc:`Logging <../tutorials/scripting/logging>`
+
 .. rst-class:: classref-reftable-group
 
 Métodos
@@ -92,17 +99,17 @@ Descripciones de Métodos
 
 |void| **_log_error**\ (\ function\: :ref:`String<class_String>`, file\: :ref:`String<class_String>`, line\: :ref:`int<class_int>`, code\: :ref:`String<class_String>`, rationale\: :ref:`String<class_String>`, editor_notify\: :ref:`bool<class_bool>`, error_type\: :ref:`int<class_int>`, script_backtraces\: :ref:`Array<class_Array>`\[:ref:`ScriptBacktrace<class_ScriptBacktrace>`\]\ ) |virtual| :ref:`🔗<class_Logger_private_method__log_error>`
 
-Llamado cuando se registra un error. El error proporciona la ``function``, el ``file`` y la ``line`` de donde se originó, así como el ``code`` que generó el error o una ``rationale``.
+Called when an error is logged. The error provides the ``function``, ``file``, and ``line`` that it originated from, as well as either the ``code`` that generated the error or a ``rationale``.
 
-El tipo de error proporcionado por ``error_type`` se describe en la enumeración :ref:`ErrorType<enum_Logger_ErrorType>`.
+The type of error provided by ``error_type`` is described in the :ref:`ErrorType<enum_Logger_ErrorType>` enumeration.
 
-Además, ``script_backtraces`` proporciona rastreos de pila para cada uno de los lenguajes de script. Estos solo contendrán marcos de pila en las compilaciones del editor y las compilaciones de depuración por defecto. Para habilitarlos también para las compilaciones de lanzamiento, debes habilitar :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`.
+Additionally, ``script_backtraces`` provides backtraces for each of the script languages. These will only contain stack frames in editor builds and debug builds by default. To enable them for release builds as well, you need to enable :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`.
 
-\ **Advertencia:** Este método será llamado desde hilos distintos al hilo principal, posiblemente al mismo tiempo, por lo que necesitarás tener algún tipo de seguridad de hilos en tu implementación, como un :ref:`Mutex<class_Mutex>`.
+\ **Warning:** This method will be called from threads other than the main thread, possibly at the same time, so you will need to have some kind of thread-safety in your implementation of it, like a :ref:`Mutex<class_Mutex>`.
 
-\ **Nota:** ``script_backtraces`` no contendrá ninguna variable capturada, debido a su costo prohibitivo. Para obtenerlas, deberás capturar los rastreos de pila tú mismo, desde dentro de los métodos virtuales de **Logger**, usando :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`.
+\ **Note:** ``script_backtraces`` will not contain any captured variables, due to its prohibitively high cost. To get those, you will need to capture the backtraces yourself, from within the **Logger** virtual methods, using :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`.
 
-\ **Nota:** No se admite el registro de errores desde este método usando funciones como :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` o :ref:`@GlobalScope.push_warning()<class_@GlobalScope_method_push_warning>`, ya que podría causar una recursión infinita. Estos errores solo aparecerán en la salida de la consola.
+\ **Note:** Logging errors from this method using functions like :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` or :ref:`@GlobalScope.push_warning()<class_@GlobalScope_method_push_warning>` is not supported, as it could cause infinite recursion. These errors will only show up in the console output.
 
 .. rst-class:: classref-item-separator
 

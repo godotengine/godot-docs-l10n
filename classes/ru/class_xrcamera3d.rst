@@ -7,16 +7,18 @@ XRCamera3D
 
 **Наследует:** :ref:`Camera3D<class_Camera3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Узел камеры с несколькими дополнительными правилами для дополненной и виртуальной (AR/VR) реальности, такими как отслеживание местоположения.
+A camera node which automatically positions itself based on XR tracking data.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Это вспомогательный 3D-узел для нашей камеры. Обратите внимание, что если применим стереоскопический рендеринг (VR-HMD), большинство свойств камеры игнорируются, поскольку информация HMD переопределяет их. Единственными свойствами, которым можно доверять, являются ближняя и дальняя плоскости.
+A camera node which automatically positions itself based on XR tracking data.
 
-Положение и ориентация этого узла автоматически обновляются Сервером XR для представления местоположения HMD, если такое отслеживание доступно, и, таким образом, могут использоваться игровой логикой. Обратите внимание, что, в отличие от контроллера XR, поток рендеринга имеет доступ к самым последним данным отслеживания HMD, и в результате местоположение XRCamera3D может отставать на несколько миллисекунд от того, что используется для рендеринга.
+In contrast to :ref:`XRController3D<class_XRController3D>`, the render thread has access to more up-to-date tracking data, and the location of the **XRCamera3D** node can lag a few milliseconds behind what is used for rendering.
+
+\ **Note:** If :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` is ``true``, most of the camera properties are overridden by the active :ref:`XRInterface<class_XRInterface>`. The only properties that can be trusted are the near and far planes.
 
 .. rst-class:: classref-introduction-group
 

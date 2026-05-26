@@ -7,7 +7,7 @@ Light3D
 
 **繼承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**被繼承：** :ref:`DirectionalLight3D<class_DirectionalLight3D>`, :ref:`OmniLight3D<class_OmniLight3D>`, :ref:`SpotLight3D<class_SpotLight3D>`
+**被繼承：** :ref:`AreaLight3D<class_AreaLight3D>`, :ref:`DirectionalLight3D<class_DirectionalLight3D>`, :ref:`OmniLight3D<class_OmniLight3D>`, :ref:`SpotLight3D<class_SpotLight3D>`
 
 為不同型別的光節點提供基底類別。
 
@@ -641,11 +641,11 @@ The light will affect objects in the selected layers.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-燈光的大小，使用 Godot 的單位。僅適用於 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>`\ 。增加此值將使光線淡出速度變慢，並且陰影看起來更模糊（也稱為百分比接近軟陰影或 PCSS）。這可用於在一定程度上類比區域光。對於啟用了陰影的燈光，將此值增加到 ``0.0`` 以上，將由於 PCSS 而產生明顯的性能成本。
+The simulated size of the light in Godot units, affecting shading and shadows. For :ref:`OmniLight3D<class_OmniLight3D>`\ s and :ref:`SpotLight3D<class_SpotLight3D>`\ s, increasing this value simulates a spherical area light, expanding the size of specular highlights. If shadows are enabled, a penumbra is rendered, making shadows appear blurrier. For :ref:`AreaLight3D<class_AreaLight3D>`\ s, only the shadows are affected. Penumbras are simulated with percentage-closer soft shadows, or PCSS, which has a noticeable performance cost for values above ``0.0``.
 
-\ **注意：**\ :ref:`light_size<class_Light3D_property_light_size>` 不受 :ref:`Node3D.scale<class_Node3D_property_scale>`\ （燈光的縮放或其父級的縮放）的影響。
+\ **Note:** :ref:`light_size<class_Light3D_property_light_size>` is not affected by :ref:`Node3D.scale<class_Node3D_property_scale>` (the light's scale or its parent's scale).
 
-\ **注意：**\ 定位光的 PCSS 僅支援 Forward+ 和 Mobile 算繪方法，不支援 Compatibility。
+\ **Note:** PCSS for positional lights is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
 
 .. rst-class:: classref-item-separator
 

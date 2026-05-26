@@ -12,13 +12,15 @@ Un array empaquetado de enteros de 64 bits.
 Descripción
 ----------------------
 
-Un array diseñado específicamente para almacenar valores enteros de 64 bits. Empaqueta los datos de forma compacta, ahorrando memoria para arrays grandes.
+An array specifically designed to hold 64-bit integer values. Packs data tightly, so it saves memory for large array sizes.
 
-\ **Nota:** Este tipo almacena enteros con signo de 64 bits, lo que significa que puede tomar valores en el intervalo ``[-2^63, 2^63 - 1]``, es decir, ``[-9223372036854775808, 9223372036854775807]``. Exceder esos límites hará que se ajusten. Si solo necesitas empaquetar enteros de 32 bits de forma compacta, véase :ref:`PackedInt32Array<class_PackedInt32Array>` para una alternativa que ahorra más memoria.
+\ **Note:** This type stores signed 64-bit integers, which means it can take values in the interval ``[-2^63, 2^63 - 1]``, i.e. ``[-9223372036854775808, 9223372036854775807]``. Exceeding those bounds will wrap around. If you only need to pack 32-bit integers tightly, see :ref:`PackedInt32Array<class_PackedInt32Array>` for a more memory-friendly alternative.
 
-\ **Diferencias entre arrays empaquetados, arrays tipados y arrays sin tipo:** Los arrays empaquetados son generalmente más rápidos para iterar y modificar en comparación con un array tipado del mismo tipo (por ejemplo, **PackedInt64Array** versus ``Array[int]``). Además, los arrays empaquetados consumen menos memoria. Como desventaja, los arrays empaquetados son menos flexibles ya que no ofrecen tantos métodos de conveniencia como :ref:`Array.map()<class_Array_method_map>`. Los arrays tipados son a su vez más rápidos para iterar y modificar que los arrays sin tipo.
+\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedInt64Array** versus ``Array[int]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
 
-\ **Nota:** Los arrays empaquetados siempre se pasan por referencia. Para obtener una copia de un array que pueda modificarse independientemente del array original, usa :ref:`duplicate()<class_PackedInt64Array_method_duplicate>`. Este *no* es el caso de las propiedades y métodos incorporados. En estos casos, el array empaquetado devuelto es una copia, y cambiarlo *no* afectará al valor original. Para actualizar una propiedad incorporada de este tipo, modifica el array devuelto y luego asígnalo a la propiedad de nuevo.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedInt64Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 

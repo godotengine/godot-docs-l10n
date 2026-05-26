@@ -38,6 +38,8 @@
    :widths: auto
 
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`AccessibilityServer<class_AccessibilityServer>`             | :ref:`AccessibilityServer<class_@GlobalScope_property_AccessibilityServer>`             |
+   +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`AudioServer<class_AudioServer>`                             | :ref:`AudioServer<class_@GlobalScope_property_AudioServer>`                             |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`CameraServer<class_CameraServer>`                           | :ref:`CameraServer<class_@GlobalScope_property_CameraServer>`                           |
@@ -53,6 +55,8 @@
    | :ref:`EngineDebugger<class_EngineDebugger>`                       | :ref:`EngineDebugger<class_@GlobalScope_property_EngineDebugger>`                       |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`GDExtensionManager<class_GDExtensionManager>`               | :ref:`GDExtensionManager<class_@GlobalScope_property_GDExtensionManager>`               |
+   +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>`   | :ref:`GDScriptLanguageProtocol<class_@GlobalScope_property_GDScriptLanguageProtocol>`   |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | :ref:`Geometry2D<class_Geometry2D>`                               | :ref:`Geometry2D<class_@GlobalScope_property_Geometry2D>`                               |
    +-------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
@@ -710,7 +714,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_XYZ** = ``0``
 
-指定欧拉角应按 XYZ 顺序排列。组合时顺序为 X、Y、Z。分解时顺序相反，先 Z、再 Y、最后 X。
+Specifies that Euler angles should be in intrinsic XYZ order. When composing, the rotations happen around the local X, Y, and Z axes, in that order. When decomposing, the order is reversed, first Z, then Y, and X last.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_XZY:
 
@@ -718,7 +722,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_XZY** = ``1``
 
-指定欧拉角应按 XZY 顺序排列。组合时顺序为 X、Z、Y。分解时顺序相反，先 Y、再 Z、最后 X。
+Specifies that Euler angles should be in intrinsic XZY order. When composing, the rotations happen around the local X, Z, and Y axes, in that order. When decomposing, the order is reversed, first Y, then Z, and X last.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YXZ:
 
@@ -726,7 +730,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YXZ** = ``2``
 
-指定欧拉角应按 YXZ 顺序排列。组合时顺序为 Y、X、Z。分解时顺序相反，先 Z、再 X、最后 Y。
+Specifies that Euler angles should be in intrinsic YXZ order. When composing, the rotations happen around the local Y, X, and Z axes, in that order. When decomposing, the order is reversed, first Z, then X, and Y last.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YZX:
 
@@ -734,7 +738,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YZX** = ``3``
 
-指定欧拉角应按 YZX 顺序排列。组合时顺序为 Y、Z、X。分解时顺序相反，先 X、再 Z、最后 Y。
+Specifies that Euler angles should be in intrinsic YZX order. When composing, the rotations happen around the local Y, Z, and X axes, in that order. When decomposing, the order is reversed, first X, then Z, and Y last.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZXY:
 
@@ -742,7 +746,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_ZXY** = ``4``
 
-指定欧拉角应按 ZXY 顺序排列。组合时顺序为 Z、X、Y。分解时顺序相反，先 Y、再 X、最后 Z。
+Specifies that Euler angles should be in intrinsic ZXY order. When composing, the rotations happen around the local Z, X, and Y axes, in that order. When decomposing, the order is reversed, first Y, then X, and Z last.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZYX:
 
@@ -750,7 +754,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_ZYX** = ``5``
 
-指定欧拉角应按 ZYX 顺序排列。组合时顺序为 Z、Y、X。分解时顺序相反，先 X、再 Y、最后 Z。
+Specifies that Euler angles should be in intrinsic ZYX order. When composing, the rotations happen around the local Z, Y, and X axes, in that order. When decomposing, the order is reversed, first X, then Y, and Z last.
 
 .. rst-class:: classref-item-separator
 
@@ -2322,7 +2326,13 @@ flags **KeyModifierMask**: :ref:`🔗<enum_@GlobalScope_KeyModifierMask>`
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_CODE_MASK** = ``8388607``
 
-键码掩码。
+Bit mask with all bits enabled except for modifier keys. Apply it to remove modifiers.
+
+::
+
+    var keycode = KEY_A | KEY_MASK_SHIFT
+    keycode = keycode & KEY_CODE_MASK
+    print(keycode) # KEY_A
 
 .. _class_@GlobalScope_constant_KEY_MODIFIER_MASK:
 
@@ -2330,7 +2340,13 @@ flags **KeyModifierMask**: :ref:`🔗<enum_@GlobalScope_KeyModifierMask>`
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_MODIFIER_MASK** = ``2130706432``
 
-修饰键掩码。
+Bit mask with all modifier bits enabled. Apply it to isolate modifiers.
+
+::
+
+    var keycode = KEY_A | KEY_MASK_SHIFT
+    keycode = keycode & KEY_MODIFIER_MASK
+    print(keycode) # KEY_MASK_SHIFT
 
 .. _class_@GlobalScope_constant_KEY_MASK_CMD_OR_CTRL:
 
@@ -2750,11 +2766,51 @@ enum **JoyButton**: :ref:`🔗<enum_@GlobalScope_JoyButton>`
 
 游戏控制器 SDL 触摸板按钮。
 
+.. _class_@GlobalScope_constant_JOY_BUTTON_MISC2:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC2** = ``21``
+
+Game controller SDL miscellaneous button. Used by Nintendo Switch 2 Pro Controller and Horipad Steam controllers.
+
+.. _class_@GlobalScope_constant_JOY_BUTTON_MISC3:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC3** = ``22``
+
+Game controller SDL miscellaneous button.
+
+.. _class_@GlobalScope_constant_JOY_BUTTON_MISC4:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC4** = ``23``
+
+Game controller SDL miscellaneous button.
+
+.. _class_@GlobalScope_constant_JOY_BUTTON_MISC5:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC5** = ``24``
+
+Game controller SDL miscellaneous button.
+
+.. _class_@GlobalScope_constant_JOY_BUTTON_MISC6:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC6** = ``25``
+
+Game controller SDL miscellaneous button.
+
 .. _class_@GlobalScope_constant_JOY_BUTTON_SDL_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_SDL_MAX** = ``21``
+:ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_SDL_MAX** = ``26``
 
 SDL 游戏控制器按钮的数量。
 
@@ -3442,7 +3498,7 @@ Bug 错误，由方法中的实现问题引起。
 
 :ref:`Error<enum_@GlobalScope_Error>` **ERR_PRINTER_ON_FIRE** = ``48``
 
-打印机起火错误（这是个彩蛋，引擎中没有内置方法会返回此错误码）。
+Printer on fire error (this is an easter egg, no built-in methods return this error code).
 
 .. rst-class:: classref-item-separator
 
@@ -3460,7 +3516,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_NONE** = ``0``
 
-该属性没有编辑器提示。
+The property has no hint for the editor. However, the hint string is still read, which can be used to specify a suffix for a property that has no range limit (see :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`'s description).
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_RANGE:
 
@@ -3468,11 +3524,11 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_RANGE** = ``1``
 
-提示 :ref:`int<class_int>` 或 :ref:`float<class_float>` 属性应处于指定范围内。范围通过提示字符串 ``"最小值,最大值"`` 或 ``"最小值,最大值,步长"`` 指定。该提示字符串可选包含 ``"or_greater"`` 和/或 ``"or_less"``\ ，从而允许手动输入值分别超出最大值或最小值。
+Hints that an :ref:`int<class_int>`, :ref:`float<class_float>`, or packed/typed :ref:`Array<class_Array>` property containing :ref:`int<class_int>` or :ref:`float<class_float>` types should be within a range specified via the hint string ``"min,max"`` or ``"min,max,step"``. The hint string can optionally include ``"or_greater"`` and/or ``"or_less"`` to allow manual input going respectively above the max or below the min values.
 
-\ **示例：**\ ``"-360,360,1,or_greater,or_less"``\ 。
+\ **Example:** ``"-360,360,1,or_greater,or_less"``.
 
-此外，还可以包含其他关键字：\ ``"exp"`` 表示按指数范围编辑；\ ``"radians_as_degrees"`` 表示以角度编辑弧度（同时范围值也以角度为单位）；\ ``"degrees"`` 表示属性为角度；\ ``"prefer_slider"`` 表示对整数显示滑块；\ ``"hide_control"`` 表示隐藏滑块或上下箭头；\ ``"suffix:unit"`` 表示显示单位后缀（例如 ``"suffix:px/s"`` 表示像素每秒）。
+Additionally, other keywords can be included: ``"exp"`` for exponential range editing, ``"radians_as_degrees"`` for editing radian angles in degrees (the range values are also in degrees), ``"degrees"`` to hint at an angle, ``"prefer_slider"`` to show the slider for integers, ``"hide_control"`` to hide the slider or up-down arrows, and ``"suffix:px/s"`` to display a suffix indicating the value's unit (e.g. ``px/s`` for pixels per second).
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM:
 
@@ -3500,7 +3556,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_EXP_EASING** = ``4``
 
-提示应通过指数缓动函数编辑 :ref:`float<class_float>` 属性。提示字符串可以包括 ``"attenuation"`` 以水平翻转曲线，和/或 ``"positive_only"`` 以排除 in/out 缓动并限制值大于或等于零。
+Hints that a :ref:`float<class_float>` property should be edited using a curve editor showing an exponential easing function. The hint string can include ``"attenuation"`` to flip the curve horizontally and/or ``"positive_only"`` to exclude in/out easing and limit values to be greater than or equal to zero. This displays differently to a property that uses :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` with the ``"exp"`` keyword, as it's edited with a slider instead of a curve editor.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LINK:
 
@@ -3508,7 +3564,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_LINK** = ``5``
 
-提示向量属性应该允许分量链接。例如，这能够让 :ref:`Vector2.x<class_Vector2_property_x>` 和 :ref:`Vector2.y<class_Vector2_property_y>` 被一起编辑。
+Hints that a vector property should allow its components to be linked. For example, this allows :ref:`Vector2.x<class_Vector2_property_x>` and :ref:`Vector2.y<class_Vector2_property_y>` to be edited together. This hint is supported on :ref:`Vector2<class_Vector2>`, :ref:`Vector2i<class_Vector2i>`, :ref:`Vector3<class_Vector3>`, :ref:`Vector3i<class_Vector3i>`, :ref:`Vector4<class_Vector4>`, and :ref:`Vector4i<class_Vector4i>`. The hint string can be used to specify a suffix indicating each value's unit with the ``"suffix:px/s"`` syntax.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_FLAGS:
 
@@ -3670,76 +3726,76 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_TYPE_STRING** = ``23``
 
-如果属性为 :ref:`String<class_String>`\ ，则提示该属性代表特定的类型（类）。这样就能使用创建对话框选择类型。该属性中存放的是所选类型，是一个字符串。
+If a property is :ref:`String<class_String>`, hints that the property represents a particular type (class). This allows to select a type from the create dialog. The property will store the selected type as a string.
 
-如果属性为 :ref:`Array<class_Array>`\ ，则提示编辑器如何显示其中的元素。\ ``hint_string`` 必须使用 ``":"`` 和 ``"/"`` 对内嵌的类型进行编码。
+If a property is :ref:`Array<class_Array>`, hints the editor how to show elements. The ``hint_string`` must encode nested types using ``":"`` and ``"/"``.
 
-如果属性为 :ref:`Dictionary<class_Dictionary>`\ ，则提示编辑器如何显示其中的元素。\ ``hint_string`` 与 :ref:`Array<class_Array>` 相同，使用 ``";"`` 分隔键和值。
+If a property is :ref:`Dictionary<class_Dictionary>`, hints the editor how to show elements. The ``hint_string`` is the same as :ref:`Array<class_Array>`, with a ``";"`` separating the key and value.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # elem_type 数组。
+    # Array of elem_type.
     hint_string = "%d:" % [elem_type]
     hint_string = "%d/%d:%s" % [elem_type, elem_hint, elem_hint_string]
-    # elem_type 二维数组（elem_type 数组的数组）。
+    # Two-dimensional array of elem_type (array of arrays of elem_type).
     hint_string = "%d:%d:" % [TYPE_ARRAY, elem_type]
     hint_string = "%d:%d/%d:%s" % [TYPE_ARRAY, elem_type, elem_hint, elem_hint_string]
-    # elem_type 三维数组（elem_type 数组的数组的数组）。
+    # Three-dimensional array of elem_type (array of arrays of arrays of elem_type).
     hint_string = "%d:%d:%d:" % [TYPE_ARRAY, TYPE_ARRAY, elem_type]
     hint_string = "%d:%d:%d/%d:%s" % [TYPE_ARRAY, TYPE_ARRAY, elem_type, elem_hint, elem_hint_string]
 
  .. code-tab:: csharp
 
-    // elem_type 数组。
+    // Array of elemType.
     hintString = $"{elemType:D}:";
-    hintString = $"{elemType:}/{elemHint:D}:{elemHintString}";
-    // elem_type 二维数组（elem_type 数组的数组）。
+    hintString = $"{elemType:D}/{elemHint:D}:{elemHintString}";
+    // Two-dimensional array of elemType (array of arrays of elemType).
     hintString = $"{Variant.Type.Array:D}:{elemType:D}:";
     hintString = $"{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
-    // elem_type 三维数组（elem_type 数组的数组的数组）。
+    // Three-dimensional array of elemType (array of arrays of arrays of elemType).
     hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}:";
     hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
 
 
 
-\ **示例：**\ 
+\ **Examples:**\ 
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    hint_string = "%d:" % [TYPE_INT] # 整数数组。
-    hint_string = "%d/%d:1,10,1" % [TYPE_INT, PROPERTY_HINT_RANGE] # 整数数组（范围为 1 到 10）。
-    hint_string = "%d/%d:Zero,One,Two" % [TYPE_INT, PROPERTY_HINT_ENUM] # 整数数组（枚举）。
-    hint_string = "%d/%d:Zero,One,Three:3,Six:6" % [TYPE_INT, PROPERTY_HINT_ENUM] # 整数数组（枚举）。
-    hint_string = "%d/%d:*.png" % [TYPE_STRING, PROPERTY_HINT_FILE] # 字符串数组（文件路径）。
-    hint_string = "%d/%d:Texture2D" % [TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # 纹理数组。
+    hint_string = "%d:" % [TYPE_INT] # Array of integers.
+    hint_string = "%d/%d:1,10,1" % [TYPE_INT, PROPERTY_HINT_RANGE] # Array of integers (in range from 1 to 10).
+    hint_string = "%d/%d:Zero,One,Two" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array of integers (an enum).
+    hint_string = "%d/%d:Zero,One,Three:3,Six:6" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array of integers (an enum).
+    hint_string = "%d/%d:*.png" % [TYPE_STRING, PROPERTY_HINT_FILE] # Array of strings (file paths).
+    hint_string = "%d/%d:Texture2D" % [TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Array of textures.
 
-    hint_string = "%d:%d:" % [TYPE_ARRAY, TYPE_FLOAT] # 浮点数二维数组。
-    hint_string = "%d:%d/%d:" % [TYPE_ARRAY, TYPE_STRING, PROPERTY_HINT_MULTILINE_TEXT] # 多行字符串二维数组。
-    hint_string = "%d:%d/%d:-1,1,0.1" % [TYPE_ARRAY, TYPE_FLOAT, PROPERTY_HINT_RANGE] # 浮点数二维数组（范围为 -1 到 1）。
-    hint_string = "%d:%d/%d:Texture2D" % [TYPE_ARRAY, TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # 纹理二维数组。
+    hint_string = "%d:%d:" % [TYPE_ARRAY, TYPE_FLOAT] # Two-dimensional array of floats.
+    hint_string = "%d:%d/%d:" % [TYPE_ARRAY, TYPE_STRING, PROPERTY_HINT_MULTILINE_TEXT] # Two-dimensional array of multiline strings.
+    hint_string = "%d:%d/%d:-1,1,0.1" % [TYPE_ARRAY, TYPE_FLOAT, PROPERTY_HINT_RANGE] # Two-dimensional array of floats (in range from -1 to 1).
+    hint_string = "%d:%d/%d:Texture2D" % [TYPE_ARRAY, TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Two-dimensional array of textures.
 
  .. code-tab:: csharp
 
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // 整数数组（范围为 1 到 10）。
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Two"; // 整数数组（枚举）。
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Three:3,Six:6"; // 整数数组（枚举）。
-    hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // 字符串数组（文件路径）。
-    hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // 纹理数组。
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // Array of integers (in range from 1 to 10).
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Two"; // Array of integers (an enum).
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Three:3,Six:6"; // Array of integers (an enum).
+    hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // Array of strings (file paths).
+    hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Array of textures.
 
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}:"; // 浮点数二维数组。
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:"; // 多行字符串二维数组。
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1"; // 浮点数二维数组（范围为 -1 到 1）。
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // 纹理二维数组。
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}:"; // Two-dimensional array of floats.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:"; // Two-dimensional array of multiline strings.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1"; // Two-dimensional array of floats (in range from -1 to 1).
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Two-dimensional array of textures.
 
 
 
-\ **注意：**\ 后缀冒号是必须的，否则无法正确识别内置类型。
+\ **Note:** The trailing colon is required for properly detecting built-in types.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_NODE_PATH_TO_EDITED_NODE:
 
@@ -4844,8 +4900,117 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 .. rst-class:: classref-descriptions-group
 
+常量
+----
+
+.. _class_@GlobalScope_constant_UINT8_MAX:
+
+.. rst-class:: classref-constant
+
+**UINT8_MAX** = ``255`` :ref:`🔗<class_@GlobalScope_constant_UINT8_MAX>`
+
+Maximum value of an 8-bit unsigned integer.
+
+.. _class_@GlobalScope_constant_UINT16_MAX:
+
+.. rst-class:: classref-constant
+
+**UINT16_MAX** = ``65535`` :ref:`🔗<class_@GlobalScope_constant_UINT16_MAX>`
+
+Maximum value of a 16-bit unsigned integer.
+
+.. _class_@GlobalScope_constant_UINT32_MAX:
+
+.. rst-class:: classref-constant
+
+**UINT32_MAX** = ``4294967295`` :ref:`🔗<class_@GlobalScope_constant_UINT32_MAX>`
+
+Maximum value of a 32-bit unsigned integer.
+
+.. _class_@GlobalScope_constant_INT8_MIN:
+
+.. rst-class:: classref-constant
+
+**INT8_MIN** = ``-128`` :ref:`🔗<class_@GlobalScope_constant_INT8_MIN>`
+
+Minimum value of an 8-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT8_MAX:
+
+.. rst-class:: classref-constant
+
+**INT8_MAX** = ``127`` :ref:`🔗<class_@GlobalScope_constant_INT8_MAX>`
+
+Maximum value of an 8-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT16_MIN:
+
+.. rst-class:: classref-constant
+
+**INT16_MIN** = ``-32768`` :ref:`🔗<class_@GlobalScope_constant_INT16_MIN>`
+
+Minimum value of a 16-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT16_MAX:
+
+.. rst-class:: classref-constant
+
+**INT16_MAX** = ``32767`` :ref:`🔗<class_@GlobalScope_constant_INT16_MAX>`
+
+Maximum value of a 16-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT32_MIN:
+
+.. rst-class:: classref-constant
+
+**INT32_MIN** = ``-2147483648`` :ref:`🔗<class_@GlobalScope_constant_INT32_MIN>`
+
+Minimum value of a 32-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT32_MAX:
+
+.. rst-class:: classref-constant
+
+**INT32_MAX** = ``2147483647`` :ref:`🔗<class_@GlobalScope_constant_INT32_MAX>`
+
+Maximum value of a 32-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT64_MIN:
+
+.. rst-class:: classref-constant
+
+**INT64_MIN** = ``-9223372036854775808`` :ref:`🔗<class_@GlobalScope_constant_INT64_MIN>`
+
+Minimum value of a 64-bit signed integer.
+
+.. _class_@GlobalScope_constant_INT64_MAX:
+
+.. rst-class:: classref-constant
+
+**INT64_MAX** = ``9223372036854775807`` :ref:`🔗<class_@GlobalScope_constant_INT64_MAX>`
+
+Maximum value of a 64-bit signed integer.
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
 属性说明
 --------
+
+.. _class_@GlobalScope_property_AccessibilityServer:
+
+.. rst-class:: classref-property
+
+:ref:`AccessibilityServer<class_AccessibilityServer>` **AccessibilityServer** :ref:`🔗<class_@GlobalScope_property_AccessibilityServer>`
+
+The :ref:`AccessibilityServer<class_AccessibilityServer>` singleton.
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_@GlobalScope_property_AudioServer:
 
@@ -4940,6 +5105,20 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 :ref:`GDExtensionManager<class_GDExtensionManager>` **GDExtensionManager** :ref:`🔗<class_@GlobalScope_property_GDExtensionManager>`
 
 :ref:`GDExtensionManager<class_GDExtensionManager>` 单例。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_@GlobalScope_property_GDScriptLanguageProtocol:
+
+.. rst-class:: classref-property
+
+:ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` **GDScriptLanguageProtocol** :ref:`🔗<class_@GlobalScope_property_GDScriptLanguageProtocol>`
+
+The :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` singleton.
+
+\ **Note:** Only available in editor builds.
 
 .. rst-class:: classref-item-separator
 
@@ -6284,15 +6463,15 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`float<class_float>` **log**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_log>`
 
-返回 `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>`__ of ``x`` (base `[i]e[/i] <https://en.wikipedia.org/wiki/E_(mathematical_constant)>`__, with *e* being approximately 2.71828). 这就是达到某种程度的连续增长所需要的时间。
+Returns the `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>`__ of ``x`` (base `e <https://en.wikipedia.org/wiki/E_(mathematical_constant)>`__, with *e* being approximately 2.71828). This is the amount of time needed to reach a certain level of continuous growth.
 
-\ **注意：** 这和大多数计算器上的 "log" 函数不一样，计算器上那个用的是以 10 为底的对数。 如果想要使用以 10 为底的对数，请使用 ``log(x) / log(10)``\ 。
+\ **Note:** This is not the same as the "log" function on most calculators, which uses a base 10 logarithm. To use base 10 logarithm, use ``log(x) / log(10)``.
 
 ::
 
-    log(10) # 返回 2.302585
+    log(10) # Returns 2.302585
 
-\ **注意：** 当输入为 ``0`` 时，对数函数会返回 ``-inf``\ ，而输入负数则会返回 ``-nan``\ ）。
+\ **Note:** The logarithm of ``0`` returns ``-inf``, while negative values return ``-nan``.
 
 .. rst-class:: classref-item-separator
 

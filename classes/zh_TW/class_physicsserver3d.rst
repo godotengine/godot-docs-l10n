@@ -471,9 +471,9 @@ enum **PinJointParam**: :ref:`🔗<enum_PhysicsServer3D_PinJointParam>`
 
 :ref:`PinJointParam<enum_PhysicsServer3D_PinJointParam>` **PIN_JOINT_BIAS** = ``0``
 
-固定物件試圖保持彼此位置關係的力度。
+The strength with which the pinned objects try to stay in positional relation to each other. The higher, the stronger.
 
-越高越強。
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_PIN_JOINT_DAMPING:
 
@@ -481,9 +481,9 @@ enum **PinJointParam**: :ref:`🔗<enum_PhysicsServer3D_PinJointParam>`
 
 :ref:`PinJointParam<enum_PhysicsServer3D_PinJointParam>` **PIN_JOINT_DAMPING** = ``1``
 
-被固定的物體試圖保持彼此速度關係的力度。
+The strength with which the pinned objects try to stay in velocity relation to each other. The higher, the stronger.
 
-越高越強。
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_PIN_JOINT_IMPULSE_CLAMP:
 
@@ -491,7 +491,9 @@ enum **PinJointParam**: :ref:`🔗<enum_PhysicsServer3D_PinJointParam>`
 
 :ref:`PinJointParam<enum_PhysicsServer3D_PinJointParam>` **PIN_JOINT_IMPULSE_CLAMP** = ``2``
 
-如果高於 0，則此值是此 Joint3D 施加在其末端的脈衝的最大值。
+If above 0, this value is the maximum value for an impulse that this Joint3D puts on its ends.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -509,7 +511,9 @@ enum **HingeJointParam**: :ref:`🔗<enum_PhysicsServer3D_HingeJointParam>`
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_BIAS** = ``0``
 
-兩個物體向不同方向移動時被拉回到一起的速度。
+The speed with which the two bodies get pulled together when they move in different directions.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_LIMIT_UPPER:
 
@@ -533,7 +537,9 @@ enum **HingeJointParam**: :ref:`🔗<enum_PhysicsServer3D_HingeJointParam>`
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_LIMIT_BIAS** = ``3``
 
-垂直於鉸鏈的軸線上的旋轉得到糾正的速度。
+The speed with which the rotation across the axis perpendicular to the hinge gets corrected.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_LIMIT_SOFTNESS:
 
@@ -541,11 +547,7 @@ enum **HingeJointParam**: :ref:`🔗<enum_PhysicsServer3D_HingeJointParam>`
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_LIMIT_SOFTNESS** = ``4``
 
-.. container:: contribute
-
-	There is currently no description for this enum. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
-
-
+**Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_LIMIT_RELAXATION:
 
@@ -553,7 +555,9 @@ enum **HingeJointParam**: :ref:`🔗<enum_PhysicsServer3D_HingeJointParam>`
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_LIMIT_RELAXATION** = ``5``
 
-該值越低，旋轉速度越慢。
+The lower this value, the more the rotation gets slowed down.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_MOTOR_TARGET_VELOCITY:
 
@@ -629,7 +633,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_LIMIT_SOFTNESS** = ``2``
 
-一旦超過極限，套用於滑桿軸上移動的係數。越低，運動越慢。
+A factor applied to the movement across the slider axis once the limits get surpassed. The lower, the slower the movement.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_LIMIT_RESTITUTION:
 
@@ -637,7 +643,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_LIMIT_RESTITUTION** = ``3``
 
-超出限制後的補償。數值越低，損失的速度能量越多。
+The amount of restitution once the limits are surpassed. The lower, the more velocity-energy gets lost.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_LIMIT_DAMPING:
 
@@ -645,7 +653,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_LIMIT_DAMPING** = ``4``
 
-一旦超過滑桿的極限，阻尼的數量。
+The amount of damping once the slider limits are surpassed.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_MOTION_SOFTNESS:
 
@@ -653,7 +663,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_MOTION_SOFTNESS** = ``5``
 
-只要滑桿在限制範圍內，就套用於滑桿軸上移動的係數。越低，運動越慢。
+A factor applied to the movement across the slider axis as long as the slider is in the limits. The lower, the slower the movement.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_MOTION_RESTITUTION:
 
@@ -661,7 +673,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_MOTION_RESTITUTION** = ``6``
 
-滑桿限制內的恢復量。
+The amount of restitution inside the slider limits.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_MOTION_DAMPING:
 
@@ -669,7 +683,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_MOTION_DAMPING** = ``7``
 
-滑桿內部的阻尼量受到限制。
+The amount of damping inside the slider limits.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_ORTHOGONAL_SOFTNESS:
 
@@ -677,7 +693,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_ORTHOGONAL_SOFTNESS** = ``8``
 
-套用於在垂直於滑桿的軸上移動的係數。
+A factor applied to the movement across axes orthogonal to the slider.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_ORTHOGONAL_RESTITUTION:
 
@@ -685,7 +703,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_ORTHOGONAL_RESTITUTION** = ``9``
 
-當移動穿過垂直於滑桿的軸時的恢復量。
+The amount of restitution when movement is across axes orthogonal to the slider.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_ORTHOGONAL_DAMPING:
 
@@ -693,7 +713,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_ORTHOGONAL_DAMPING** = ``10``
 
-當移動穿過垂直於滑桿的軸時的阻尼量。
+The amount of damping when movement is across axes orthogonal to the slider.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_UPPER:
 
@@ -701,7 +723,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_UPPER** = ``11``
 
-滑桿旋轉的上限。
+The upper limit of rotation in the slider.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_LOWER:
 
@@ -709,7 +733,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_LOWER** = ``12``
 
-滑桿旋轉的下限。
+The lower limit of rotation in the slider.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_SOFTNESS:
 
@@ -717,7 +743,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_SOFTNESS** = ``13``
 
-一旦超過極限，套用於所有旋轉的係數。
+A factor applied to the all rotation once the limit is surpassed.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_RESTITUTION:
 
@@ -725,7 +753,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_RESTITUTION** = ``14``
 
-超過限制時旋轉的恢復量。
+The amount of restitution of the rotation when the limit is surpassed.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_DAMPING:
 
@@ -733,7 +763,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_DAMPING** = ``15``
 
-超過極限時旋轉的阻尼量。
+The amount of damping of the rotation when the limit is surpassed.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_MOTION_SOFTNESS:
 
@@ -741,7 +773,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_MOTION_SOFTNESS** = ``16``
 
-套用於所有極限旋轉的因數。
+A factor that gets applied to the all rotation in the limits.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_MOTION_RESTITUTION:
 
@@ -749,7 +783,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_MOTION_RESTITUTION** = ``17``
 
-極限內旋轉的恢復量。
+The amount of restitution of the rotation in the limits.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_MOTION_DAMPING:
 
@@ -757,7 +793,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_MOTION_DAMPING** = ``18``
 
-極限內旋轉的阻尼量。
+The amount of damping of the rotation in the limits.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_ORTHOGONAL_SOFTNESS:
 
@@ -765,7 +803,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_ORTHOGONAL_SOFTNESS** = ``19``
 
-套用於垂直於滑桿的軸上的所有旋轉的因數。
+A factor that gets applied to the all rotation across axes orthogonal to the slider.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_ORTHOGONAL_RESTITUTION:
 
@@ -773,7 +813,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_ORTHOGONAL_RESTITUTION** = ``20``
 
-垂直於滑桿的軸上的旋轉恢復量。
+The amount of restitution of the rotation across axes orthogonal to the slider.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_ORTHOGONAL_DAMPING:
 
@@ -781,7 +823,9 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_ORTHOGONAL_DAMPING** = ``21``
 
-垂直於滑桿的軸上的旋轉阻尼量。
+The amount of damping of the rotation across axes orthogonal to the slider.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_MAX:
 
@@ -807,13 +851,11 @@ enum **ConeTwistJointParam**: :ref:`🔗<enum_PhysicsServer3D_ConeTwistJointPara
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_SWING_SPAN** = ``0``
 
-擺動是圍繞垂直於扭轉軸的軸線，從一邊到另一邊的旋轉。
+Swing is rotation from side to side, around the axis perpendicular to the twist axis.
 
-擺動跨度定義了沿擺動軸旋轉多少不會得到校正。
+The swing span defines, how much rotation will not get corrected along the swing axis.
 
-可以被定義為 :ref:`ConeTwistJoint3D<class_ConeTwistJoint3D>` 中的鬆動。
-
-如果低於 0.05，該行為將被鎖定。
+Could be defined as looseness in the :ref:`ConeTwistJoint3D<class_ConeTwistJoint3D>`. If below 0.05, this behavior is locked.
 
 .. _class_PhysicsServer3D_constant_CONE_TWIST_JOINT_TWIST_SPAN:
 
@@ -821,9 +863,7 @@ enum **ConeTwistJointParam**: :ref:`🔗<enum_PhysicsServer3D_ConeTwistJointPara
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_TWIST_SPAN** = ``1``
 
-扭轉是繞扭轉軸的旋轉，此值定義了關節可以扭轉多遠。
-
-如果低於 0.05，則扭轉被鎖定。
+Twist is the rotation around the twist axis, this value defined how far the joint can twist. Twist is locked if below 0.05.
 
 .. _class_PhysicsServer3D_constant_CONE_TWIST_JOINT_BIAS:
 
@@ -831,9 +871,9 @@ enum **ConeTwistJointParam**: :ref:`🔗<enum_PhysicsServer3D_ConeTwistJointPara
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_BIAS** = ``2``
 
-擺動或扭轉的速度。
+The speed with which the swing or twist will take place. The higher, the faster.
 
-越高，速度越快。
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_CONE_TWIST_JOINT_SOFTNESS:
 
@@ -841,7 +881,9 @@ enum **ConeTwistJointParam**: :ref:`🔗<enum_PhysicsServer3D_ConeTwistJointPara
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_SOFTNESS** = ``3``
 
-Joint3D 的扭曲彈性，如果太低，就需要更大的力才能扭曲關節。
+The ease with which the Joint3D twists, if it's too low, it takes more force to twist the joint.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_CONE_TWIST_JOINT_RELAXATION:
 
@@ -849,7 +891,9 @@ Joint3D 的扭曲彈性，如果太低，就需要更大的力才能扭曲關節
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_RELAXATION** = ``4``
 
-定義兩側的擺動速度和扭轉速度差異同步的速度。
+Defines, how fast the swing- and twist-speed-difference on both sides gets synced.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -883,7 +927,9 @@ enum **G6DOFJointAxisParam**: :ref:`🔗<enum_PhysicsServer3D_G6DOFJointAxisPara
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_LIMIT_SOFTNESS** = ``2``
 
-套用於跨軸移動的因數。越低，運動越慢。
+A factor that gets applied to the movement across the axes. The lower, the slower the movement.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_RESTITUTION:
 
@@ -891,7 +937,9 @@ enum **G6DOFJointAxisParam**: :ref:`🔗<enum_PhysicsServer3D_G6DOFJointAxisPara
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_RESTITUTION** = ``3``
 
-軸運動的恢復量。速度越低，能量損失越多。
+The amount of restitution on the axes movement. The lower, the more velocity-energy gets lost.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_DAMPING:
 
@@ -899,7 +947,9 @@ enum **G6DOFJointAxisParam**: :ref:`🔗<enum_PhysicsServer3D_G6DOFJointAxisPara
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_DAMPING** = ``4``
 
-發生在跨軸線性運動的阻尼量。
+The amount of damping that happens at the linear motion across the axes.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_MOTOR_TARGET_VELOCITY:
 
@@ -975,7 +1025,9 @@ enum **G6DOFJointAxisParam**: :ref:`🔗<enum_PhysicsServer3D_G6DOFJointAxisPara
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_LIMIT_SOFTNESS** = ``12``
 
-乘以所有軸旋轉的因數。
+A factor that gets multiplied onto all rotations across the axes.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_DAMPING:
 
@@ -983,7 +1035,9 @@ enum **G6DOFJointAxisParam**: :ref:`🔗<enum_PhysicsServer3D_G6DOFJointAxisPara
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_DAMPING** = ``13``
 
-跨該軸的旋轉阻尼量。值越低，發生的阻尼就越多。
+The amount of rotational damping across the axes. The lower, the more damping occurs.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_RESTITUTION:
 
@@ -991,7 +1045,9 @@ enum **G6DOFJointAxisParam**: :ref:`🔗<enum_PhysicsServer3D_G6DOFJointAxisPara
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_RESTITUTION** = ``14``
 
-在各軸上的旋轉恢復量。值越低，發生的恢復量越大。
+The amount of rotational restitution across the axes. The lower, the more restitution occurs.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_FORCE_LIMIT:
 
@@ -999,7 +1055,9 @@ enum **G6DOFJointAxisParam**: :ref:`🔗<enum_PhysicsServer3D_G6DOFJointAxisPara
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_FORCE_LIMIT** = ``15``
 
-圍繞 Z 軸旋轉時，可能發生的最大力。
+The maximum amount of force that can occur, when rotating around the axes.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_ERP:
 
@@ -1007,7 +1065,9 @@ enum **G6DOFJointAxisParam**: :ref:`🔗<enum_PhysicsServer3D_G6DOFJointAxisPara
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_ERP** = ``16``
 
-當校正軸旋轉中的極限交叉時，該誤差容限因數定義了校正的減慢程度。越低越慢。
+When correcting the crossing of limits in rotation across the axes, this error tolerance factor defines how much the correction gets slowed down. The lower, the slower.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_MOTOR_TARGET_VELOCITY:
 
@@ -1739,7 +1799,9 @@ enum **SpaceParameter**: :ref:`🔗<enum_PhysicsServer3D_SpaceParameter>`
 
 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` **SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD** = ``4``
 
-常數，用於設定/獲取活躍的閾值線速度。一個被標記為線性速度和角速度都可能不活躍的物體將在給定的時間後進入睡眠狀態。
+Constant to set/get the threshold linear velocity of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after the time given.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD:
 
@@ -1747,7 +1809,9 @@ enum **SpaceParameter**: :ref:`🔗<enum_PhysicsServer3D_SpaceParameter>`
 
 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` **SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD** = ``5``
 
-常數，用於設定/獲取活動的閾值角速度。一個被標記為線性和角速度都可能不活躍的物體，在給定的時間後將會進入睡眠狀態。
+Constant to set/get the threshold angular velocity of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after the time given.
+
+\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP:
 
@@ -3202,7 +3266,9 @@ Sets a hinge joint parameter.
 
 :ref:`int<class_int>` **joint_get_solver_priority**\ (\ joint\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_joint_get_solver_priority>`
 
-獲取該 Joint3D 的優先順序。
+Gets the priority value of the Joint3D.
+
+\ **Note:** Only supported when using GodotPhysics3D. This method always returns ``1`` when using Jolt Physics, as it does not support joint solver priority.
 
 .. rst-class:: classref-item-separator
 
@@ -3306,7 +3372,9 @@ Make the joint a generic six degrees of freedom (6DOF) joint. Use :ref:`generic_
 
 |void| **joint_set_solver_priority**\ (\ joint\: :ref:`RID<class_RID>`, priority\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_joint_set_solver_priority>`
 
-設定該 Joint3D 的優先順序。
+Sets the priority value of the Joint3D.
+
+\ **Note:** Only supported when using GodotPhysics3D. This method has no effect when using Jolt Physics, as it does not support joint solver priority.
 
 .. rst-class:: classref-item-separator
 

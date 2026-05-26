@@ -131,6 +131,14 @@ Menu contestuale del menu di scelta rapida di base dell'editor 2D. :ref:`_popup_
 
 L'array dei percorsi è vuoto se non ci sono nodi sotto il cursore. Il callback d'opzione riceverà un array tipizzato di nodi :ref:`CanvasItem<class_CanvasItem>`.
 
+.. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_INSPECTOR_PROPERTY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_INSPECTOR_PROPERTY** = ``7``
+
+Context menu of the inspectors right-click menu. :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` will be called with an array of two items: The first will be the object's ID, the second will be the property name. An object can be retrieved from it's ID via :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` after converting it to an int. The option callback will receive the EditorProperty directly.
+
 .. rst-class:: classref-section-separator
 
 ----

@@ -128,9 +128,9 @@ Controls the size of each texel on the baked lightmap. A smaller value results i
 
 :ref:`bool<class_bool>` **generate_tangents** = ``true`` :ref:`🔗<class_ResourceImporterOBJ_property_generate_tangents>`
 
-如果\ ``true``\ ，則使用\ `Mikktspace <http://www.mikktspace.com/>`__ 產生頂點切線（如果來源網格不存在）沒有切線資料。如果可能，建議讓 3D 建模軟體在匯出時產生切線，而不是依賴此選項。需要切線才能正確顯示法線和高度貼圖，以及需要切線的任何材質/著色器功能。
+If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the source mesh doesn't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
 
-如果您不需要需要切線的材質特徵，則停用此功能可以減少輸出檔案大小並加快匯入速度（如果來源 3D 檔案不包含切線）。
+If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
 
 .. rst-class:: classref-item-separator
 

@@ -421,11 +421,21 @@ Ulteriori informazioni: `MetalFX <https://developer.apple.com/documentation/meta
 
 \ **Nota:** Supportato solo quando è in uso il driver di rendering Metal, il che limita questa modalità di ridimensionamento a macOS e iOS.
 
+.. _class_Viewport_constant_SCALING_3D_MODE_NEAREST:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_NEAREST** = ``5``
+
+Use nearest-neighbor filtering for the viewport's 3D buffer. This looks crisper than :ref:`SCALING_3D_MODE_BILINEAR<class_Viewport_constant_SCALING_3D_MODE_BILINEAR>` and has no additional rendering cost. The amount of scaling can be set using :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Values greater than ``1.0`` are not supported and bilinear downsampling will be used instead. A value of ``1.0`` disables scaling.
+
+\ **Note:** When using the **Nearest** scaling mode, to avoid uneven pixel scaling, it's highly recommended to use a value equal to an integer divisor with a dividend of ``1``. For example, it's best to use a scale of ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5), and so on.
+
 .. _class_Viewport_constant_SCALING_3D_MODE_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_MAX** = ``5``
+:ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_MAX** = ``6``
 
 Rappresenta la dimensione dell'enumerazione :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>`.
 
@@ -715,9 +725,11 @@ Gli oggetti sono visualizzati semi-trasparenti con fusione additiva, così per v
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_WIREFRAME** = ``4``
 
-Gli oggetti sono visualizzati come modelli fildiferro.
+Objects are displayed as wireframe models.
 
-\ **Nota:** È necessario chiamare :ref:`RenderingServer.set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` prima di caricare qualsiasi mesh affinché i fildiferro siano visibili quando si utilizza il renderer Compatibilità.
+\ **Note:** :ref:`RenderingServer.set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` must be called before loading any meshes for wireframes to be visible when using the Compatibility renderer.
+
+\ **Note:** In the Compatibility renderer, backfaces are always visible when using wireframe rendering. In the Forward+ and Mobile renderers, wireframes follow the material's backface culling properties instead.
 
 .. _class_Viewport_constant_DEBUG_DRAW_NORMAL_BUFFER:
 
@@ -941,6 +953,26 @@ Disegna il buffer interno di risoluzione della scena in uno spazio colore linear
 
 \ **Nota:** Supportato solo quando si utilizzano i metodi di rendering Forward+ o Mobile.
 
+.. _class_Viewport_constant_DEBUG_DRAW_CLUSTER_AREA_LIGHTS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_AREA_LIGHTS** = ``27``
+
+Draws the cluster used by :ref:`AreaLight3D<class_AreaLight3D>` nodes to optimize light rendering.
+
+\ **Note:** Only supported when using the Forward+ rendering method.
+
+.. _class_Viewport_constant_DEBUG_DRAW_AREA_LIGHT_ATLAS:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_AREA_LIGHT_ATLAS** = ``28``
+
+Draws the atlas used by :ref:`AreaLight3D<class_AreaLight3D>` nodes in the upper left quadrant of the **Viewport**.
+
+\ **Note:** Only supported when using the Forward+ or Mobile rendering method.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -987,11 +1019,19 @@ Il filtro della texture legge dal pixel più vicino e lo fonde tra le 2 mipmap p
 
 Usa questo filtro per texture non pixel art che potrebbero visualizzarsi a bassa scala (ad esempio a causa dello zoom :ref:`Camera2D<class_Camera2D>` o del ridimensionamento degli sprite), poiché le mipmap sono importanti per smussare i pixel più piccoli dei pixel sullo schermo.
 
+.. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_PARENT_NODE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_PARENT_NODE** = ``4``
+
+The **Viewport** will inherit the filter from its parent :ref:`CanvasItem<class_CanvasItem>` or **Viewport**.
+
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_MAX** = ``4``
+:ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_MAX** = ``5``
 
 Rappresenta la dimensione dell'enumerazione :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>`.
 
@@ -1029,11 +1069,19 @@ Abilita la ripetizione della texture quando le coordinate UV sono all di fuori d
 
 Capovolte la texture per la ripetizione in modo che i bordi si allineano invece di cambiare bruscamente.
 
+.. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_PARENT_NODE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_PARENT_NODE** = ``3``
+
+The **Viewport** will inherit the repeat mode from its parent :ref:`CanvasItem<class_CanvasItem>` or **Viewport**.
+
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MAX** = ``3``
+:ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MAX** = ``4``
 
 Rappresenta la dimensione dell'enumerazione :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>`.
 
@@ -1519,11 +1567,13 @@ Vedi anche :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handl
 - |void| **set_mesh_lod_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mesh_lod_threshold**\ (\ )
 
-Il bias LOD automatico da usare per le mesh renderizzate all'interno della **Viewport** (analogo a :ref:`ReflectionProbe.mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>`). Valori più alti useranno versioni meno dettagliate delle mesh che hanno variazioni LOD generate. Se impostato su ``0.0``, il LOD automatico è disabilitato. Aumenta :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` per migliorare le prestazioni a scapito dei dettagli della geometria.
+The automatic LOD bias to use for meshes rendered within the **Viewport** (this is analogous to :ref:`ReflectionProbe.mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>`). Higher values will use less detailed versions of meshes that have LOD variations generated. If set to ``0.0``, automatic LOD is disabled. Increase :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` to improve performance at the cost of geometry detail.
 
-Per controllare questa proprietà sulla viewport radice, cambia l'impostazione del progetto :ref:`ProjectSettings.rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>`.
+To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` project setting.
 
-\ **Nota:** :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` non influisce sugli intervalli di visibilità :ref:`GeometryInstance3D<class_GeometryInstance3D>` (noti anche come LOD "manuale" o LOD gerarchico).
+\ **Note:** Depending on the mesh's attributes (vertex colors, blend shapes, ...), a mesh may have fewer levels of LOD generated to avoid visible distortion of the mesh once it is affected by vertex colors or blend shapes. Meshes with a very low vertex count will also not have any LODs generated, which means this setting will not affect them at all. In general, this setting makes the largest impact on static meshes with a high vertex count.
+
+\ **Note:** :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` does not affect :ref:`GeometryInstance3D<class_GeometryInstance3D>` visibility ranges (also known as "manual" LOD or hierarchical LOD).
 
 .. rst-class:: classref-item-separator
 
@@ -1923,13 +1973,15 @@ Se ``true``, i vertici dei nodi :ref:`CanvasItem<class_CanvasItem>` si allineano
 - |void| **set_texture_mipmap_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_mipmap_bias**\ (\ )
 
-Influisce sulla nitidezza finale della texture leggendo da una mipmap inferiore o superiore (chiamata anche "texture LOD bias"). I valori negativi rendono le texture mipmap più nitide ma più granulose se viste da lontano, mentre i valori positivi rendono le texture mipmap più sfocate (anche da vicino).
+Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close).
 
-L'attivazione dell'antialiasing temporale (:ref:`use_taa<class_Viewport_property_use_taa>`) applicherà automaticamente un offset di ``-0,5`` a questo valore, mentre l'attivazione di FXAA (:ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`) applicherà automaticamente un offset di ``-0,25`` a questo valore. Se TAA e FXAA sono abilitati allo stesso tempo, a questo valore viene applicato un offset di ``-0,75``.
+Enabling temporal antialiasing (:ref:`use_taa<class_Viewport_property_use_taa>`) will automatically apply a ``-0.5`` offset to this value, while enabling FXAA (:ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`) will automatically apply a ``-0.25`` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of ``-0.75`` is applied to this value.
 
-\ **Nota:** Se :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` è inferiore a ``1.0`` (esclusivo), :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` viene utilizzato per regolare il bias mipmap automatico calcolato internamente in base al fattore di scala. La formula per questo è ``log2(scaling_3d_scale) + mipmap_bias``.
+To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` project setting.
 
-Per controllare questa proprietà nella viewport radice, cambia l'impostazione del progetto :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`.
+\ **Note:** If :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` is lower than ``1.0`` (exclusive), :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``log2(scaling_3d_scale) + mipmap_bias``.
+
+\ **Note:** This property is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this property is always treated as if it was set to ``0.0``.
 
 .. rst-class:: classref-item-separator
 

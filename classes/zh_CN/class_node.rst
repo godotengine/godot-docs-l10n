@@ -487,7 +487,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Node_ProcessMode>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_PAUSABLE** = ``1``
 
-当 :ref:`SceneTree.paused<class_SceneTree_property_paused>` 为 ``true`` 时停止处理。这是 :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>` 的逆，也是根节点的默认值。
+Processes when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``false``. This is the inverse of :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>`, and the default for the root node.
 
 .. _class_Node_constant_PROCESS_MODE_WHEN_PAUSED:
 
@@ -495,7 +495,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Node_ProcessMode>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_WHEN_PAUSED** = ``2``
 
-**仅**\ 当 :ref:`SceneTree.paused<class_SceneTree_property_paused>` 为 ``true`` 时处理。与 :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>` 相反。
+Processes **only** when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``true``. This is the inverse of :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`.
 
 .. _class_Node_constant_PROCESS_MODE_ALWAYS:
 
@@ -503,7 +503,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Node_ProcessMode>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_ALWAYS** = ``3``
 
-始终处理。忽略 :ref:`SceneTree.paused<class_SceneTree_property_paused>` 的取值，保持处理。与 :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 相反。
+Always processes. Keeps processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
 
 .. _class_Node_constant_PROCESS_MODE_DISABLED:
 
@@ -511,7 +511,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Node_ProcessMode>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_DISABLED** = ``4``
 
-从不处理。完全禁用处理，忽略 :ref:`SceneTree.paused<class_SceneTree_property_paused>`\ 。与 :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>` 相反。
+Never processes. Completely disables processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1061,6 +1061,16 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 窗口移动时收到的通知。
 
+.. _class_Node_constant_NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED:
+
+.. rst-class:: classref-constant
+
+**NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED** = ``1013`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED>`
+
+Notification received when the output max linear value returned by :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed.
+
+This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen.
+
 .. _class_Node_constant_NOTIFICATION_OS_MEMORY_WARNING:
 
 .. rst-class:: classref-constant
@@ -1168,6 +1178,22 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 **NOTIFICATION_TEXT_SERVER_CHANGED** = ``2018`` :ref:`🔗<class_Node_constant_NOTIFICATION_TEXT_SERVER_CHANGED>`
 
 :ref:`TextServer<class_TextServer>` 被更改时收到的通知。
+
+.. _class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_ENTERED:
+
+.. rst-class:: classref-constant
+
+**NOTIFICATION_APPLICATION_PIP_MODE_ENTERED** = ``2019`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_ENTERED>`
+
+Notification received when the application enters picture-in-picture mode.
+
+.. _class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED:
+
+.. rst-class:: classref-constant
+
+**NOTIFICATION_APPLICATION_PIP_MODE_EXITED** = ``2020`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED>`
+
+Notification received when the application exits picture-in-picture mode.
 
 .. _class_Node_constant_NOTIFICATION_ACCESSIBILITY_UPDATE:
 
@@ -1943,17 +1969,17 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **find_children**\ (\ pattern\: :ref:`String<class_String>`, type\: :ref:`String<class_String>` = "", recursive\: :ref:`bool<class_bool>` = true, owned\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Node_method_find_children>`
 
-查找该节点的后代节点中，其名称与 ``pattern`` 匹配的所有节点。如果找不到匹配项，则返回空 :ref:`Array<class_Array>`\ 。匹配是通过 :ref:`String.match()<class_String_method_match>` 针对节点名称完成的，而\ *不*\ 是针对其路径。因此，它区分大小写，\ ``"*"`` 匹配零个或多个字符，\ ``"?"`` 匹配任意单个字符。
+Finds all descendants of this node whose names match ``pattern``, returning an empty :ref:`Array<class_Array>` if no match is found. The matching is done against node names, *not* their paths, through :ref:`String.match()<class_String_method_match>`. As such, it is case-sensitive, ``"*"`` matches zero or more characters, and ``"?"`` matches any single character.
 
-如果 ``type`` 不为空，则仅包含从 ``type`` 继承的后代节点（请参阅 :ref:`Object.is_class()<class_Object_method_is_class>`\ ）。
+If ``type`` is not empty, only descendants inheriting from ``type`` are included (see :ref:`Object.is_class()<class_Object_method_is_class>`).
 
-如果 ``recursive`` 为 ``false``\ ，则仅检查该节点的直接子节点。节点按树顺序检查，因此首先检查该节点的第一个直接子节点，然后检查它自己的直接子节点，依此类推；然后移动到第二个直接子节点，依此类推。内部子级也包含在该搜索中（请参阅 :ref:`add_child()<class_Node_method_add_child>` 中的 ``internal`` 参数）。
+If ``recursive`` is ``false``, only this node's direct children are checked. Nodes are checked in tree order, so this node's first direct child is checked first, then its own direct children, etc., before moving to the second direct child, and so on. Internal children are also included in the search (see ``internal`` parameter in :ref:`add_child()<class_Node_method_add_child>`).
 
-如果 ``owned`` 为 ``true``\ ，则仅检查具有有效 :ref:`owner<class_Node_property_owner>` 节点的后代。
+If ``owned`` is ``true``, only descendants with a valid :ref:`owner<class_Node_property_owner>` node are checked.
 
-\ **注意：**\ 该方法可能非常慢。考虑将找到的节点的引用存储在变量中。
+\ **Note:** This method can be very slow. Consider storing references to the found nodes in a variable.
 
-\ **注意：**\ 如果只想查找匹配一个模式的单个后代节点，请参阅 :ref:`find_child()<class_Node_method_find_child>`\ 。
+\ **Note:** To find a single descendant node matching a pattern, see :ref:`find_child()<class_Node_method_find_child>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2873,9 +2899,11 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 |void| **reparent**\ (\ new_parent\: :ref:`Node<class_Node>`, keep_global_transform\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Node_method_reparent>`
 
-将这个 **Node** 的父节点更改为 ``new_parent``\ 。该节点需要已经有一个父节点。如果该节点的所有者仍然可以从新位置访问（即，该节点在操作后仍然是新父节点的后代），则该节点的 :ref:`owner<class_Node_property_owner>` 将被保留。
+Changes the parent of this **Node** to the ``new_parent``. The node needs to already have a parent. The node's :ref:`owner<class_Node_property_owner>` is preserved if its owner is still reachable from the new location (i.e., the node is still a descendant of the new parent after the operation).
 
-如果 ``keep_global_transform`` 为 ``true``\ ，则会在支持时保持该节点的全局变换。\ :ref:`Node2D<class_Node2D>`\ 、\ :ref:`Node3D<class_Node3D>`\ 、\ :ref:`Control<class_Control>` 支持这个参数（但 :ref:`Control<class_Control>` 只会保留位置）。
+If ``keep_global_transform`` is ``true``, the node's global transform will be preserved if supported. :ref:`Node2D<class_Node2D>`, :ref:`Node3D<class_Node3D>` and :ref:`Control<class_Control>` support this argument (but :ref:`Control<class_Control>` keeps only position).
+
+\ **Warning:** If :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` is enabled and reparenting causes a large change in global transform, the object may appear to move from its old position to its new one over the next physics tick. To avoid this, call :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` after reparenting.
 
 .. rst-class:: classref-item-separator
 

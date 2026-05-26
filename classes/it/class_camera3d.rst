@@ -691,7 +691,7 @@ In base a ``value``, abilita o disabilita il livello specificato in :ref:`cull_m
 
 |void| **set_frustum**\ (\ size\: :ref:`float<class_float>`, offset\: :ref:`Vector2<class_Vector2>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Camera3D_method_set_frustum>`
 
-Imposta la proiezione della telecamera sulla modalità tronco (vedi :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`), specificando un ``size``, un ``offset`` e i piani di ritaglio ``z_near`` e ``z_far`` in unità di spazio mondiale. Vedi anche :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`.
+Sets the camera projection to frustum mode (see :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`), by specifying a ``size``, an ``offset``, and the ``z_near`` and ``z_far`` clip planes in world space units. The ``size`` parameter represents the size of the near plane, either its width or height depending on the value of :ref:`keep_aspect<class_Camera3D_property_keep_aspect>`. See also :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`.
 
 .. rst-class:: classref-item-separator
 

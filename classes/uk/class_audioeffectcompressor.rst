@@ -7,26 +7,26 @@ AudioEffectCompressor
 
 **Успадковує:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Додає звуковий ефект компресора до звукової шини.
+Adds a downward compressor audio effect to an audio bus.
 
- Зменшує звуки, що перевищують певний пороговий рівень, згладжує динаміку і збільшує загальну гучність.
+Allows control of the dynamic range via a volume threshold and timing controls.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Компресор динамічного діапазону зменшує рівень звуку, коли амплітуда перевищує певний поріг у децибелах. Одним з основних застосувань компресора є збільшення динамічного діапазону шляхом мінімального кліппінгу (коли звук перевищує 0 дБ).
+A "compressor" decreases the volume of sounds when it exceeds a certain volume threshold level.
 
-Компресор має багато застосувань у міксі:
+A compressor can have many uses in a mix:
 
-- На головній шині для стиснення всього виходу (хоча :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>`, ймовірно, краще).
+- To compress the whole volume in the Master bus (although an :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` is probably better).
 
-- У голосових каналах, щоб забезпечити їх максимально збалансоване звучання.
+- To ensure balance of voice audio clips.
 
-- З боковим ланцюгом. Це може зменшити рівень звуку, з'єднаний з боковим ланцюгом з іншою аудіошиною для виявлення порогу. Цей метод поширений у міксуванні відеоігор до рівня музики та звукових ефектів, коли чути голоси.
+- To sidechain, using another bus as a trigger. This decreases the volume of the bus it is attached to, by using the volume from another audio bus for threshold detection. This technique is common in video game mixing to decrease the volume of music and SFX while voices are being heard. This effect is also known as "ducking".
 
-- Акцентує перехідні процеси, використовуючи ширшу атаку, роблячи ефекти більш потужними.
+- To accentuate transients by using a long attack, letting sounds exceed the volume threshold level for a short period before compressing them. This can be used to make SFX more punchy.
 
 .. rst-class:: classref-introduction-group
 
@@ -34,6 +34,8 @@ AudioEffectCompressor
 ------------------
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -79,7 +81,7 @@ AudioEffectCompressor
 - |void| **set_attack_us**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attack_us**\ (\ )
 
-Час реакції компресора, коли сигнал перевищує порогове значення, у мікросекундах. Вартість може коливатися від 20 до 2000.
+Compressor's reaction time when the audio exceeds the volume threshold level, in microseconds. Value can range from 20 to 2000.
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +98,7 @@ AudioEffectCompressor
 - |void| **set_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gain**\ (\ )
 
-Посилення, застосоване до вихідного сигналу.
+Gain of the audio signal, in dB. Value can range from -20 to 20.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +115,7 @@ AudioEffectCompressor
 - |void| **set_mix**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mix**\ (\ )
 
-Баланс між оригінальним сигналом і сигналом ефекту. Значення може коливатися від 0 (повністю сухий) до 1 (повністю вологий).
+Balance between the original audio and the compressed audio. Value can range from 0 (totally dry) to 1 (totally wet).
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +132,7 @@ AudioEffectCompressor
 - |void| **set_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ratio**\ (\ )
 
-Ступінь стиснення, застосованого до аудіо, коли воно досягає порогового рівня. Чим вищий коефіцієнт, тим сильніше стискатимуться гучні частини аудіо. Значення може коливатися від 1 до 48.
+Amount of compression applied to the audio once it passes the volume threshold level. The higher the ratio, the stronger the compression applied to audio signals that pass the volume threshold level. Value can range from 1 to 48.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +149,7 @@ AudioEffectCompressor
 - |void| **set_release_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release_ms**\ (\ )
 
-Час затримки компресора для припинення зниження сигналу після того, як рівень сигналу впаде нижче порогового значення, у мілісекундах. Вартість може коливатися від 20 до 2000.
+Compressor's delay time to stop decreasing the volume after the it falls below the volume threshold level, in milliseconds. Value can range from 20 to 2000.
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +166,7 @@ AudioEffectCompressor
 - |void| **set_sidechain**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_sidechain**\ (\ )
 
-Зменшіть рівень звуку за допомогою іншої звукової шини для виявлення порогу.
+Audio bus to use for the volume threshold detection.
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +183,7 @@ AudioEffectCompressor
 - |void| **set_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold**\ (\ )
 
-Рівень, вище якого стискається звук. Значення може коливатися від -60 до 0.
+The volume level above which compression is applied to the audio, in dB. Value can range from -60 to 0.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

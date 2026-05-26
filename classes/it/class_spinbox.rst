@@ -17,11 +17,11 @@ Un campo di input per i numeri.
 Descrizione
 ----------------------
 
-**SpinBox** è un campo di testo di input numerico. Consente di immettere numeri interi e numeri in virgola mobile. **SpinBox** include anche due pulsanti su e giù che si possono cliccare per aumentare o diminuire il valore. Il valore si può cambiare trascinando il mouse verso l'alto o verso il basso sulle frecce dello **SpinBox**.
+**SpinBox** is a numerical input text field. It allows entering integers and floating-point numbers. The **SpinBox** also has up and down buttons that can be clicked to increase or decrease the value. The value can also be changed by dragging the mouse up or down over the **SpinBox**'s arrows.
 
-Inoltre, è possibile inserire espressioni matematiche. Queste vengono valutate quando l'utente preme :kbd:`Invio` mentre il campo di testo dello **SpinBox** viene modificato. Ciò utilizza la classe :ref:`Expression<class_Expression>` per analizzare e valutare l'espressione. Il risultato dell'espressione viene quindi impostato come valore dello **SpinBox**. Alcuni esempi di espressioni valide sono ``5 + 2 * 3``, ``pow(2, 4)`` e ``PI + sin(0.5)``. Le espressioni distinguono tra maiuscole e minuscole.
+Additionally, mathematical expressions can be entered. These are evaluated when the user presses :kbd:`Enter` while editing the **SpinBox**'s text field. This uses the :ref:`Expression<class_Expression>` class to parse and evaluate the expression. The result of the expression is then set as the value of the **SpinBox**. Some examples of valid expressions are ``5 + 2 * 3``, ``pow(2, 4)``, and ``PI + sin(0.5)``. Expressions are case-sensitive.
 
-\ **Esempio:** Crea uno **SpinBox**, disattiva il suo menu contestuale e imposta l'allineamento del testo a destra.
+\ **Example:** Create a **SpinBox**, disable its context menu and set its text alignment to right.
 
 
 .. tabs::
@@ -44,13 +44,13 @@ Inoltre, è possibile inserire espressioni matematiche. Queste vengono valutate 
 
 
 
-Consulta la classe :ref:`Range<class_Range>` per altre opzioni su **SpinBox**.
+See :ref:`Range<class_Range>` class for more options over the **SpinBox**.
 
-\ **Nota:** Con il menu contestuale di **SpinBox** disabilitato, puoi cliccare con il destro sulla metà inferiore dello spinbox per impostare il valore al minimo, mentre cliccando con il destro sulla metà superiore, il valore viene impostato al massimo.
+\ **Note:** With the **SpinBox**'s context menu disabled, you can right-click the bottom half of the spinbox to set the value to its minimum, while right-clicking the top half sets the value to its maximum.
 
-\ **Nota:** **SpinBox** dipende su un nodo :ref:`LineEdit<class_LineEdit>` sottostante. Per applicare un tema allo sfondo di uno **SpinBox**, aggiungi elementi del tema per :ref:`LineEdit<class_LineEdit>` e personalizzali. Tale :ref:`LineEdit<class_LineEdit>` ha la variazione del tema ``SpinBoxInnerLineEdit``, in modo da potergli dare un aspetto distinto dai normali :ref:`LineEdit<class_LineEdit>`.
+\ **Note:** **SpinBox** relies on an underlying :ref:`LineEdit<class_LineEdit>` node. To theme a **SpinBox**'s background, add theme items for :ref:`LineEdit<class_LineEdit>` and customize them. The :ref:`LineEdit<class_LineEdit>` has the ``SpinBoxInnerLineEdit`` theme variation, so that you can give it a distinct appearance from regular :ref:`LineEdit<class_LineEdit>`\ s.
 
-\ **Nota:** Se vuoi implementare il trascinamento della selezione per il :ref:`LineEdit<class_LineEdit>` sottostante, puoi usare :ref:`Control.set_drag_forwarding()<class_Control_method_set_drag_forwarding>` sul nodo restituito da :ref:`get_line_edit()<class_SpinBox_method_get_line_edit>`.
+\ **Note:** If you want to implement drag and drop for the underlying :ref:`LineEdit<class_LineEdit>`, you can use :ref:`Control.set_drag_forwarding()<class_Control_method_set_drag_forwarding>` on the node returned by :ref:`get_line_edit()<class_SpinBox_method_get_line_edit>`.
 
 .. rst-class:: classref-reftable-group
 

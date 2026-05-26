@@ -366,6 +366,8 @@ TextEdit
    +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`is_line_gutter_clickable<class_TextEdit_method_is_line_gutter_clickable>`\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`\ ) |const|                                                                                                                        |
    +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                      | :ref:`is_line_in_viewport<class_TextEdit_method_is_line_in_viewport>`\ (\ line\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                  |
+   +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`is_line_wrapped<class_TextEdit_method_is_line_wrapped>`\ (\ line\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                          |
    +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`is_menu_visible<class_TextEdit_method_is_menu_visible>`\ (\ ) |const|                                                                                                                                                                                                        |
@@ -1588,7 +1590,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 - |void| **set_fit_content_height_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_height_enabled**\ (\ )
 
-Если ``true``, **TextEdit** отключит вертикальную прокрутку и подгонит минимальную высоту под количество видимых строк. Когда и это свойство, и :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` равны ``true``, полосы прокрутки отображаться не будут.
+If ``true``, **TextEdit** fits its minimum height to the number of visible lines instead of scrolling vertically. If a maximum height is set (for example via :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) and content exceeds it, a vertical scrollbar is shown.
 
 .. rst-class:: classref-item-separator
 
@@ -1605,7 +1607,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 - |void| **set_fit_content_width_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_width_enabled**\ (\ )
 
-Если ``true``, **TextEdit** отключит горизонтальную прокрутку и подгонит минимальную ширину к самой широкой строке в тексте. Когда и это свойство, и :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` равны ``true``, полосы прокрутки отображаться не будут.
+If ``true``, **TextEdit** fits its minimum width to the widest line instead of scrolling horizontally. If a maximum width is set (for example via :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) and content exceeds it, a horizontal scrollbar is shown.
 
 .. rst-class:: classref-item-separator
 
@@ -3242,9 +3244,11 @@ Cut — текущий выбор. Может быть переопределе�
 
 :ref:`bool<class_bool>` **is_caret_visible**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_is_caret_visible>`
 
-Возвращает ``true``, если курсор виден, ``false`` в противном случае. Курсор будет считаться скрытым, если он находится за пределами прокручиваемой области, когда прокрутка включена.
+Returns ``true`` if the caret is visible, ``false`` otherwise. A caret will be considered hidden if it is outside the scrollable area when scrolling is enabled.
 
-\ **Примечание:** :ref:`is_caret_visible()<class_TextEdit_method_is_caret_visible>` не учитывает, что курсор находится вне экрана, если он все еще находится в прокручиваемой области. Он вернет ``true``, даже если курсор находится вне экрана, пока он соответствует собственным условиям **TextEdit** для видимости. Это включает использование :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` и :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>`, которые заставляют **TextEdit** расширяться за пределы области просмотра.
+\ **Note:** :ref:`is_caret_visible()<class_TextEdit_method_is_caret_visible>` does not account for a caret being off-screen if it is still within the scrollable area. It will return ``true`` even if the caret is off-screen as long as it meets **TextEdit**'s own conditions for being visible. This includes uses of :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` and :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` that cause the **TextEdit** to expand beyond the viewport's bounds.
+
+\ **Note:** This method does *not* guarantee an accurate visibility check immediately after setting the caret position. The correct value may only be available in the next frame after the **TextEdit** has finished drawing. This also applies to any operation that causes the **TextEdit** to change in size.
 
 .. rst-class:: classref-item-separator
 
@@ -3317,6 +3321,18 @@ Cut — текущий выбор. Может быть переопределе�
 :ref:`bool<class_bool>` **is_line_gutter_clickable**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_is_line_gutter_clickable>`
 
 Возвращает ``true``, если разделительная полоса в указанном индексе на указанной строке является кликабельной. См. :ref:`set_line_gutter_clickable()<class_TextEdit_method_set_line_gutter_clickable>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextEdit_method_is_line_in_viewport:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_line_in_viewport**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_is_line_in_viewport>`
+
+Returns ``true`` if the given line is within the scope of the scrollable area of the viewport.
 
 .. rst-class:: classref-item-separator
 

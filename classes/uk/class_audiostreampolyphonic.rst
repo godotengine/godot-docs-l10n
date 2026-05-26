@@ -18,6 +18,13 @@ AudioStream, який дозволяє користувачеві відтвор
 
 Керування відтворенням здійснюється за допомогою набору :ref:`AudioStreamPlaybackPolyphonic<class_AudioStreamPlaybackPolyphonic>` екземпляра всередині програвача, який можна отримати за допомогою методів :ref:`AudioStreamPlayer.get_stream_playback()<class_AudioStreamPlayer_method_get_stream_playback>`, :ref:`AudioStreamPlayer2D.get_stream_playback()<class_AudioStreamPlayer2D_method_get_stream_playback>` або :ref:`AudioStreamPlayer3D.get_stream_playback()<class_AudioStreamPlayer3D_method_get_stream_playback>`. Отримання екземпляра відтворення дійсне лише після встановлення властивості ``stream`` як **AudioStreamPolyphonic** у цих програвачах.
 
+.. rst-class:: classref-introduction-group
+
+Посібники
+------------------
+
+- :doc:`Звукові потоки <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 Властивості

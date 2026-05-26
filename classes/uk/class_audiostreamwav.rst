@@ -23,6 +23,8 @@ AudioStreamWAV зберігає зразки звуку, завантажені 
 Посібники
 ------------------
 
+- :doc:`Звукові потоки <../tutorials/audio/audio_streams>`
+
 - :doc:`Завантаження та збереження файлів під час виконання <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group

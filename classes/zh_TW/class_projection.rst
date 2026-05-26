@@ -18,6 +18,8 @@ For purely linear transformations (translation, rotation, and scale), it is reco
 
 Used internally as :ref:`Camera3D<class_Camera3D>`'s projection matrix.
 
+\ **Note:** In a boolean context, a projection will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Projection_constant_IDENTITY>`. Otherwise, a projection will always evaluate to ``true``.
+
 .. note::
 
 	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。

@@ -226,7 +226,7 @@ enum **RenderingDriver**: :ref:`🔗<enum_OS_RenderingDriver>`
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_VULKAN** = ``0``
 
-Vulkan 渲染驱动。需要支持 Vulkan 1.0，而 Vulkan 1.1 和 1.2 的功能则会在支持时自动使用。
+The Vulkan rendering driver. It requires Vulkan 1.0 support and automatically uses features from Vulkan 1.1, 1.2, and 1.3 if available.
 
 .. _class_OS_constant_RENDERING_DRIVER_OPENGL3:
 
@@ -242,7 +242,7 @@ OpenGL 3 渲染驱动。在桌面平台上使用 OpenGL 3.3 核心配置，在�
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_D3D12** = ``2``
 
-Direct3D 12 渲染驱动。
+The Direct3D 12 rendering driver. It requires the 12_0 feature level and Shader Model 6.0 support.
 
 .. _class_OS_constant_RENDERING_DRIVER_METAL:
 
@@ -1912,21 +1912,21 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **shell_open**\ (\ uri\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OS_method_shell_open>`
 
-请求操作系统使用最合适的程序打开由 ``uri`` 标识的资源。例如：
+Requests the OS to open a resource identified by ``uri`` with the most appropriate program. For example:
 
-- ``OS.shell_open("C:\\Users\\name\\Downloads")`` 在 Windows 上会用资源管理器打开用户的 Downloads 文件夹。
+- ``OS.shell_open("C:\\Users\\name\\Downloads")`` on Windows opens the file explorer at the user's Downloads folder.
 
-- ``OS.shell_open("C:/Users/name/Downloads")`` 在 Windows 也会用资源管理器打开用户的 Downloads 文件夹。
+- ``OS.shell_open("C:/Users/name/Downloads")`` also works on Windows and opens the file explorer at the user's Downloads folder.
 
-- ``OS.shell_open("https://godotengine.org")`` 会使用默认网页浏览器打开 Godot 官方网站。
+- ``OS.shell_open("https://godotengine.org")`` opens the default web browser on the official Godot website.
 
-- ``OS.shell_open("mailto:example@example.com")`` 会打开默认电子邮件客户端并将“收件人”字段设置为 ``example@example.com``\ 。其他支持自定义的字段见 `RFC 2368 - [code]mailto[/code] URL 方案 <https://datatracker.ietf.org/doc/html/rfc2368>`__\ 。
+- ``OS.shell_open("mailto:example@example.com")`` opens the default email client with the "To" field set to ``example@example.com``. See `RFC 2368 - The mailto URL scheme <https://datatracker.ietf.org/doc/html/rfc2368>`__ for a list of fields that can be added.
 
-可以使用 :ref:`ProjectSettings.globalize_path()<class_ProjectSettings_method_globalize_path>` 将 ``res://`` 和 ``user://`` 项目路径转换为系统路径，以便与该方法一起使用。
+Use :ref:`ProjectSettings.globalize_path()<class_ProjectSettings_method_globalize_path>` to convert a ``res://`` or ``user://`` project path into a system path for use with this method.
 
-\ **注意：**\ 请使用 :ref:`String.uri_encode()<class_String_method_uri_encode>` 对 URL 中的字符进行编码，得到的 URL 才能安全使用、可移植。尤其是在包含换行的情况下。否则项目导出至 Web 平台后 :ref:`shell_open()<class_OS_method_shell_open>` 可能无法正常工作。
+\ **Note:** Use :ref:`String.uri_encode()<class_String_method_uri_encode>` to encode characters within URLs in a URL-safe, portable way. This is especially required for line breaks. Otherwise, :ref:`shell_open()<class_OS_method_shell_open>` may not work correctly in a project exported to the Web platform.
 
-\ **注意：**\ 这个方法在 Android、iOS、Web、Linux、macOS 以及 Windows 上实现。
+\ **Note:** This method is implemented on Android, iOS, Web, Linux, macOS and Windows.
 
 .. rst-class:: classref-item-separator
 

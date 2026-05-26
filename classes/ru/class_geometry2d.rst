@@ -404,9 +404,9 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 :ref:`Variant<class_Variant>` **line_intersects_line**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, dir_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, dir_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_line_intersects_line>`
 
-Возвращает точку пересечения между двумя линиями (``from_a``, ``dir_a``) и (``from_b``, ``dir_b``). Возвращает :ref:`Vector2<class_Vector2>` или ``null``, если линии параллельны.
+Returns the point of intersection between the two lines (``from_a``, ``dir_a``) and (``from_b``, ``dir_b``). Returns a :ref:`Vector2<class_Vector2>`, or ``null`` if the lines are parallel.
 
-\ ``from`` и ``dir`` являются *не* конечными точками отрезка линии или луча, а наклоном (``dir``) и известной точкой (``from``) на этой линии.
+\ ``from`` and ``dir`` are *not* endpoints of a line segment or ray but the slope (``dir``) and a known point (``from``) on that line. To get the intersection between two line segments, use :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
 
 
 .. tabs::
@@ -417,11 +417,11 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
     var dir_a = Vector2.RIGHT
     var from_b = Vector2.DOWN
 
-    # Возвращает Vector2(1, 0)
+    # Returns Vector2(1, 0)
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(1, -1))
-    # Возвращает Vector2(-1, 0)
+    # Returns Vector2(-1, 0)
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(-1, -1))
-    # Возвращает null
+    # Returns null
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2.RIGHT)
 
  .. code-tab:: csharp
@@ -430,11 +430,11 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
     var dirA = Vector2.Right;
     var fromB = Vector2.Down;
 
-    // Возвращает new Vector2(1, 0)
+    // Returns new Vector2(1, 0)
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(1, -1));
-    // Возвращает new Vector2(-1, 0)
+    // Returns new Vector2(-1, 0)
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(-1, -1));
-    # Возвращает null
+    // Returns null
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, Vector2.Right);
 
 
@@ -554,7 +554,7 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 :ref:`Variant<class_Variant>` **segment_intersects_segment**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, to_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, to_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_segment_intersects_segment>`
 
-Проверяет, пересекаются ли два сегмента (``from_a``, ``to_a``) и (``from_b``, ``to_b``). Если да, возвращает точку пересечения как :ref:`Vector2<class_Vector2>`. Если пересечения не происходит, возвращает ``null``.
+Checks if two line segments intersect, with line ``a`` between ``from_a`` and ``to_a`` and line ``b`` between ``from_b`` and ``to_b``. If the line segments intersect, the point of intersection is returned as a :ref:`Vector2<class_Vector2>`. If no intersection takes place, ``null`` is returned.
 
 .. rst-class:: classref-item-separator
 

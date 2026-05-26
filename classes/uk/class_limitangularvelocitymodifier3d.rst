@@ -14,9 +14,11 @@ LimitAngularVelocityModifier3D
 Опис
 --------
 
-Цей модифікатор обмежує кутову швидкість обертання кісток, порівнюючи пози між попереднім та поточним кадрами.
+This modifier limits bone rotation angular velocity by comparing poses between previous and current frame.
 
-Ви можете додавати ланцюжки кісток, вказуючи їх кореневі та кінцеві кістки, а потім додавати кістки між ними до списку. Модифікатор обробляє або цей список, або кістки, виключаючи ті, що у списку, залежно від опції :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
+You can add bone chains by specifying their root and end bones, then add the bones between them to a list. Modifier processes either that list or the bones excluding those in the list depending on the option :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
+
+\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 

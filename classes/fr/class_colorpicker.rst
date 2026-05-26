@@ -108,6 +108,8 @@ Propriétés du thème
    +-----------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------+
    | :ref:`Texture2D<class_Texture2D>` | :ref:`bar_arrow<class_ColorPicker_theme_icon_bar_arrow>`                                                |                           |
    +-----------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`color_copy<class_ColorPicker_theme_icon_color_copy>`                                              |                           |
+   +-----------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------+
    | :ref:`Texture2D<class_Texture2D>` | :ref:`color_hue<class_ColorPicker_theme_icon_color_hue>`                                                |                           |
    +-----------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------+
    | :ref:`Texture2D<class_Texture2D>` | :ref:`color_script<class_ColorPicker_theme_icon_color_script>`                                          |                           |
@@ -713,6 +715,18 @@ L'icône du bouton pour ajouter un préréglage.
 :ref:`Texture2D<class_Texture2D>` **bar_arrow** :ref:`🔗<class_ColorPicker_theme_icon_bar_arrow>`
 
 La texture pour l’ascenseur en forme de flèche.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ColorPicker_theme_icon_color_copy:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Texture2D<class_Texture2D>` **color_copy** :ref:`🔗<class_ColorPicker_theme_icon_color_copy>`
+
+The icon for the button that copies the color in text format to the clipboard.
 
 .. rst-class:: classref-item-separator
 

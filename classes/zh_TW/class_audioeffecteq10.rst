@@ -7,9 +7,9 @@ AudioEffectEQ10
 
 **繼承：** :ref:`AudioEffectEQ<class_AudioEffectEQ>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-為音訊匯流排新增 10 段等化器，控制 31–16000 Hz 的頻率。
+Adds a 10-band equalizer audio effect to an audio bus.
 
-每段可調整 -60 至 +24 dB。
+Gives you control over frequencies from 31 Hz to 16000 Hz. Each frequency can be modulated between -60/+24 dB.
 
 .. rst-class:: classref-introduction-group
 
@@ -46,6 +46,8 @@ AudioEffectEQ10
 ----
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

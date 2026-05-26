@@ -180,11 +180,19 @@ Un shader pour un ciel d'environnement 3D.
 
 Un shader de calcul qui s'exécute pour chaque froxel de la carte de brouillard volumétrique.
 
+.. _class_VisualShader_constant_TYPE_TEXTURE_BLIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Type<enum_VisualShader_Type>` **TYPE_TEXTURE_BLIT** = ``10``
+
+A shader used to process blit calls to a DrawableTexture.
+
 .. _class_VisualShader_constant_TYPE_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Type<enum_VisualShader_Type>` **TYPE_MAX** = ``10``
+:ref:`Type<enum_VisualShader_Type>` **TYPE_MAX** = ``11``
 
 Représente la taille de l'énumération :ref:`Type<enum_VisualShader_Type>`.
 

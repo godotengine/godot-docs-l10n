@@ -16,9 +16,9 @@ Un pulsante con tema che può contenere testo e un'icona.
 Descrizione
 ----------------------
 
-**Button** è il pulsante standard con tema. Può contenere testo e un'icona e li visualizzerà in base al :ref:`Theme<class_Theme>` attuale.
+**Button** is the standard themed button. It can contain text and an icon, and it will display them according to the current :ref:`Theme<class_Theme>`.
 
-\ **Esempio**: Crea di un pulsante e connetti un metodo che verrà chiamato quando il pulsante viene premuto:
+\ **Example:** Create a button and connect a method that will be called when the button is pressed:
 
 
 .. tabs::
@@ -27,33 +27,33 @@ Descrizione
 
     func _ready():
         var button = Button.new()
-        button.text = "Cliccami"
-        button.pressed.connect(self._button_pressed)
+        button.text = "Click me"
+        button.pressed.connect(_button_pressed)
         add_child(button)
 
     func _button_pressed():
-        print("Ciao mondo!")
+        print("Hello world!")
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
         var button = new Button();
-        button.Text = "Cliccami";
+        button.Text = "Click me";
         button.Pressed += ButtonPressed;
         AddChild(button);
     }
 
     private void ButtonPressed()
     {
-        GD.Print("Ciao mondo!");
+        GD.Print("Hello world!");
     }
 
 
 
-Vedi anche :ref:`BaseButton<class_BaseButton>` che contiene proprietà e metodi comuni associati a questo nodo.
+See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
 
-\ **Nota:** I pulsanti non interpretano gli input di tocco e quindi non supportano il multitouch, poiché l'emulazione del mouse può premere solo un pulsante alla volta. Utilizza :ref:`TouchScreenButton<class_TouchScreenButton>` per i pulsanti che attivano movimenti o azioni di gioco.
+\ **Note:** Buttons support multitouch via touch input, allowing multiple buttons to be pressed at the same time. Otherwise, mouse input is used, limiting interaction to one button press at a time.
 
 .. rst-class:: classref-introduction-group
 

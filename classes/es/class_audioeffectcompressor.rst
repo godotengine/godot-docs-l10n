@@ -7,26 +7,26 @@ AudioEffectCompressor
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Añade un efecto de audio de compresion al bus de audio.
+Adds a downward compressor audio effect to an audio bus.
 
-Reduces los sonidos que exceden un cierto umbral de sonido, suaviza la dinamica y aumenta el volumen total.
+Allows control of the dynamic range via a volume threshold and timing controls.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Dynamic range compressor reduces the level of the sound when the amplitude goes over a certain threshold in Decibels. One of the main uses of a compressor is to increase the dynamic range by clipping as little as possible (when sound goes over 0dB).
+A "compressor" decreases the volume of sounds when it exceeds a certain volume threshold level.
 
-Compressor has many uses in the mix:
+A compressor can have many uses in a mix:
 
-- In the Master bus to compress the whole output (although an :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` is probably better).
+- To compress the whole volume in the Master bus (although an :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` is probably better).
 
-- In voice channels to ensure they sound as balanced as possible.
+- To ensure balance of voice audio clips.
 
-- Sidechained. This can reduce the sound level sidechained with another audio bus for threshold detection. This technique is common in video game mixing to the level of music and SFX while voices are being heard.
+- To sidechain, using another bus as a trigger. This decreases the volume of the bus it is attached to, by using the volume from another audio bus for threshold detection. This technique is common in video game mixing to decrease the volume of music and SFX while voices are being heard. This effect is also known as "ducking".
 
-- Accentuates transients by using a wider attack, making effects sound more punchy.
+- To accentuate transients by using a long attack, letting sounds exceed the volume threshold level for a short period before compressing them. This can be used to make SFX more punchy.
 
 .. rst-class:: classref-introduction-group
 
@@ -34,6 +34,8 @@ Tutoriales
 --------------------
 
 - :doc:`Buses de audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -79,7 +81,7 @@ Descripciones de Propiedades
 - |void| **set_attack_us**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attack_us**\ (\ )
 
-Tiempo de reaccion del compreso cuando la señal excede el umbral, en microsegundos. El valor puede variar entre 20 y 2000.
+Compressor's reaction time when the audio exceeds the volume threshold level, in microseconds. Value can range from 20 to 2000.
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +98,7 @@ Tiempo de reaccion del compreso cuando la señal excede el umbral, en microsegun
 - |void| **set_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gain**\ (\ )
 
-Ganancia aplicada a la señal de salida.
+Gain of the audio signal, in dB. Value can range from -20 to 20.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +115,7 @@ Ganancia aplicada a la señal de salida.
 - |void| **set_mix**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mix**\ (\ )
 
-Balance entre la señal original y el efecto de señal. Valores pueden variar desde 0 (totalmente seco) a 1 (totalmente humedo).
+Balance between the original audio and the compressed audio. Value can range from 0 (totally dry) to 1 (totally wet).
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +132,7 @@ Balance entre la señal original y el efecto de señal. Valores pueden variar de
 - |void| **set_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ratio**\ (\ )
 
-La cantidad de compresion aplicada al audio una ves pasa el nivel del umbral. A mas alto el ratio, mas compresion a las partes altas se hara. Valores se encuentran entre 1 y 48.
+Amount of compression applied to the audio once it passes the volume threshold level. The higher the ratio, the stronger the compression applied to audio signals that pass the volume threshold level. Value can range from 1 to 48.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +149,7 @@ La cantidad de compresion aplicada al audio una ves pasa el nivel del umbral. A 
 - |void| **set_release_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release_ms**\ (\ )
 
-Tiempo de retraso del compresor para parar de reducir la señal despues de que el nivel caiga por debajo del umbral, en milisegundos. El valor puede variar entre 20 y 2000.
+Compressor's delay time to stop decreasing the volume after the it falls below the volume threshold level, in milliseconds. Value can range from 20 to 2000.
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +166,7 @@ Tiempo de retraso del compresor para parar de reducir la señal despues de que e
 - |void| **set_sidechain**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_sidechain**\ (\ )
 
-Reduce el nivel de sonido usando otro bus de audio para la deteccion del umbral.
+Audio bus to use for the volume threshold detection.
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +183,7 @@ Reduce el nivel de sonido usando otro bus de audio para la deteccion del umbral.
 - |void| **set_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold**\ (\ )
 
-El nivel por encima por el cual la compresion es aplicada al audio. El valor puede variar entre -60 y 0.
+The volume level above which compression is applied to the audio, in dB. Value can range from -60 to 0.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

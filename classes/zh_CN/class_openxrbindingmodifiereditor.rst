@@ -18,18 +18,6 @@ OpenXR 动作映射所使用的默认绑定修改器编辑器。
 
 .. rst-class:: classref-reftable-group
 
-属性
-----
-
-.. table::
-   :widths: auto
-
-   +--------------------------------------------------------+-----------------------+--------------------------------------------------------------------------------+
-   | |bitfield|\[:ref:`SizeFlags<enum_Control_SizeFlags>`\] | size_flags_horizontal | ``3`` (overrides :ref:`Control<class_Control_property_size_flags_horizontal>`) |
-   +--------------------------------------------------------+-----------------------+--------------------------------------------------------------------------------+
-
-.. rst-class:: classref-reftable-group
-
 方法
 ----
 

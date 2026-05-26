@@ -20,6 +20,8 @@ For a general introduction, see the :doc:`Matrices and transforms <../tutorials/
 
 \ **Note:** Unlike :ref:`Transform3D<class_Transform3D>`, there is no 2D equivalent to the :ref:`Basis<class_Basis>` type. All mentions of "basis" refer to the :ref:`x<class_Transform2D_property_x>` and :ref:`y<class_Transform2D_property_y>` components of **Transform2D**.
 
+\ **Note:** In a boolean context, a Transform2D will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Transform2D_constant_IDENTITY>`. Otherwise, a Transform2D will always evaluate to ``true``.
+
 .. note::
 
 	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。

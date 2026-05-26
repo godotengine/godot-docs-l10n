@@ -114,6 +114,14 @@ enum **Mode**: :ref:`🔗<enum_Shader_Mode>`
 
 用於設定體積霧效果的顏色和密度的模式。
 
+.. _class_Shader_constant_MODE_TEXTURE_BLIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Mode<enum_Shader_Mode>` **MODE_TEXTURE_BLIT** = ``5``
+
+Mode used for drawing to DrawableTexture resources via blit calls.
+
 .. rst-class:: classref-section-separator
 
 ----

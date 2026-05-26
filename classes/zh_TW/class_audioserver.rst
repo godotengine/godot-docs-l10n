@@ -679,7 +679,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`float<class_float>` **get_time_since_last_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_since_last_mix>`
 
-返回距離上次混音的相對時間。
+Returns the relative time since the last mix occurred, in seconds.
 
 .. rst-class:: classref-item-separator
 
@@ -691,7 +691,7 @@ Returns the number of frames available to read using :ref:`get_input_frames()<cl
 
 :ref:`float<class_float>` **get_time_to_next_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_to_next_mix>`
 
-返回距離下次混音的剩餘時間。
+Returns the relative time until the next mix occurs, in seconds.
 
 .. rst-class:: classref-item-separator
 

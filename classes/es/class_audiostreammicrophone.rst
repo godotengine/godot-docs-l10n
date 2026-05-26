@@ -23,6 +23,8 @@ Cuando se utiliza directamente en un nodo :ref:`AudioStreamPlayer<class_AudioStr
 Tutoriales
 --------------------
 
+- :doc:`Corriente de Audio <../tutorials/audio/audio_streams>`
+
 - :doc:`Grabando con micrófono <../tutorials/audio/recording_with_microphone>`
 
 - `Demo de Grabación de Micrófono de Audio <https://github.com/godotengine/godot-demo-projects/tree/master/audio/mic_record>`__

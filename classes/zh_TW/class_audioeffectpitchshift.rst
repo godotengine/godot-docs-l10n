@@ -7,16 +7,16 @@ AudioEffectPitchShift
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-為音訊匯流排新增音高位移效果。
+Adds a pitch-shifting audio effect to an audio bus.
 
-可提升或降低原始聲音的音高。
+Raises or lowers the pitch of the input audio.
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-可在不改變速度的情況下調變音高；所有頻率皆可升降，且對瞬態的影響極小。
+Allows modulation of pitch without modifying speed. All frequencies can be raised or lowered with minimal effect on transients.
 
 .. rst-class:: classref-introduction-group
 
@@ -24,6 +24,8 @@ AudioEffectPitchShift
 ----
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -124,7 +126,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectPitchShift_FFTSize>`
 - |void| **set_fft_size**\ (\ value\: :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>`\ )
 - :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **get_fft_size**\ (\ )
 
-`快速傅立葉轉換 <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__\ 緩衝區大小。數值越高效果隨時間越平滑，但延遲也越大；此延遲對瞬間振幅變化的聲音尤為明顯。
+The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__ buffer. Higher values smooth out the effect over time, but have greater latency. The effects of this higher latency are especially noticeable on audio signals that have sudden amplitude changes.
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +160,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectPitchShift_FFTSize>`
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-音高縮放倍率。\ ``1.0`` 為預設音高且不改變播放。\ :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` 取值範圍為 ``0.0``\ （無限低，聽不見）到 ``16``\ （高出原音高 16 倍）。
+The pitch scale to use. ``1.0`` is the default pitch and plays sounds unaffected. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` can range from 0 (infinitely low pitch, inaudible) to 16 (16 times higher than the initial pitch).
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

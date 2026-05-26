@@ -86,6 +86,8 @@ AudioStreamGenerator
 教程
 ----
 
+- :doc:`音频流 <../tutorials/audio/audio_streams>`
+
 - `音频生成器演示 <https://godotengine.org/asset-library/asset/2759>`__
 
 .. rst-class:: classref-reftable-group

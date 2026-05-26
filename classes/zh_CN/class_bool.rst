@@ -139,7 +139,7 @@ bool
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`float<class_float>`\ )
 
-将 :ref:`float<class_float>` 值转换为布尔值。如果 ``from`` 等于 ``0.0``\ （包括 ``-0.0``\ ）则返回 ``false``\ ，其他值则返回 ``true``\ （包括 :ref:`@GDScript.INF<class_@GDScript_constant_INF>` 和 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`\ ）。
+Casts a :ref:`float<class_float>` value to a **bool**. Returns ``false`` if ``from`` is equal to ``0.0`` (including ``-0.0``), and ``true`` for all other values (including :ref:`@GDScript.INF<class_@GDScript_constant_INF>` and :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`).
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ bool
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`int<class_int>`\ )
 
-将 :ref:`int<class_int>` 值转换为布尔值。如果 ``from`` 等于 ``0`` 则返回 ``false``\ ，其他值则返回 ``true``\ 。
+Casts an :ref:`int<class_int>` value to a **bool**. Returns ``false`` if ``from`` is equal to ``0``, and ``true`` for all other values.
 
 .. rst-class:: classref-section-separator
 
@@ -166,7 +166,7 @@ bool
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_neq_bool>`
 
-如果两个布尔值不同则返回 ``true``\ ，即一个是 ``true``\ 、一个是 ``false`` 的情况。这个运算可以视为逻辑异或（XOR）。
+Returns ``true`` if one **bool** is ``true`` and the other **bool** is ``false``. Equivalent to logical XOR (NEQ).
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ bool
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_lt_bool>`
 
-如果左操作数为 ``false`` 且右操作数为 ``true``\ ，则返回 ``true``\ 。
+Returns ``true`` if the left **bool** is ``false`` and ``right`` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ bool
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_eq_bool>`
 
-如果两个布尔值相同则返回 ``true``\ ，即都是 ``true`` 或都是 ``false`` 的情况。这个运算可以视为逻辑相等（EQ）或者同或（XNOR）。
+Returns ``true`` if both **bool**\ s are ``true``, or if both **bool**\ s are ``false``. Equivalent to logical XNOR (EQ).
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ bool
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_gt_bool>`
 
-如果左操作数为 ``true`` 且右操作数为 ``false``\ ，则返回 ``true``\ 。
+Returns ``true`` if the left **bool** is ``true`` and ``right`` is ``false``.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

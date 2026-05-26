@@ -168,7 +168,7 @@ AnimationPlayer
 
 .. rst-class:: classref-signal
 
-**current_animation_changed**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationPlayer_signal_current_animation_changed>`
+**current_animation_changed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationPlayer_signal_current_animation_changed>`
 
 當 :ref:`current_animation<class_AnimationPlayer_property_current_animation>` 變更時發出。
 

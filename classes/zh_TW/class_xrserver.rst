@@ -156,6 +156,18 @@ Emitted when the reference frame transform changes.
 
 當現有追蹤器被更新時發出。如果使用者切換控制器，則可能會發生這種情況。
 
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_XRServer_signal_world_origin_changed:
+
+.. rst-class:: classref-signal
+
+**world_origin_changed**\ (\ ) :ref:`🔗<class_XRServer_signal_world_origin_changed>`
+
+Emitted when the world origin transform changes.
+
 .. rst-class:: classref-section-separator
 
 ----

@@ -42,8 +42,6 @@ Tutoriels
 
 - :doc:`BBCode dans RichTextLabel <../tutorials/ui/bbcode_in_richtextlabel>`
 
-- `Projet de test pour RichTextEffect (tierce partie) <https://github.com/Eoin-ONeill-Yokai/Godot-Rich-Text-Effect-Test-Project>`__
-
 .. rst-class:: classref-reftable-group
 
 Méthodes

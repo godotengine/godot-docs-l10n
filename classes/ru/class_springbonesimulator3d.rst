@@ -14,19 +14,21 @@ SpringBoneSimulator3D
 Описание
 ----------------
 
-Этот :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` можно использовать для покачивания волос, ткани и хвостов. Этот модификатор ведет себя иначе, чем :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>`, поскольку он пытается вернуть исходную позу после модификации.
+This :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` can be used to wiggle hair, cloth, and tails. This modifier behaves differently from :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` as it attempts to return the original pose after modification.
 
-Если вы настроите :ref:`set_root_bone()<class_SpringBoneSimulator3D_method_set_root_bone>` и :ref:`set_end_bone()<class_SpringBoneSimulator3D_method_set_end_bone>`, он будет рассматриваться как одна цепочка костей. Обратите внимание, что он не поддерживает разветвленную цепь, например, Y-образные цепи.
+If you setup :ref:`set_root_bone()<class_SpringBoneSimulator3D_method_set_root_bone>` and :ref:`set_end_bone()<class_SpringBoneSimulator3D_method_set_end_bone>`, it is treated as one bone chain. Note that it does not support a branched chain like Y-shaped chains.
 
-Когда создается цепочка костей, из костей, которые находятся между ними и перечислены в списке суставов, генерируется массив.
+When a bone chain is created, an array is generated from the bones that exist in between and listed in the joint list.
 
-К каждому суставу можно применить несколько свойств, например :ref:`set_joint_stiffness()<class_SpringBoneSimulator3D_method_set_joint_stiffness>`, :ref:`set_joint_drag()<class_SpringBoneSimulator3D_method_set_joint_drag>` и :ref:`set_joint_gravity()<class_SpringBoneSimulator3D_method_set_joint_gravity>`.
+Several properties can be applied to each joint, such as :ref:`set_joint_stiffness()<class_SpringBoneSimulator3D_method_set_joint_stiffness>`, :ref:`set_joint_drag()<class_SpringBoneSimulator3D_method_set_joint_drag>`, and :ref:`set_joint_gravity()<class_SpringBoneSimulator3D_method_set_joint_gravity>`.
 
-Для простоты вы можете задать значения для всех суставов одновременно с помощью :ref:`Curve<class_Curve>`. Если вы хотите указать подробные значения по отдельности, установите :ref:`set_individual_config()<class_SpringBoneSimulator3D_method_set_individual_config>` на ``true``.
+For simplicity, you can set values to all joints at the same time by using a :ref:`Curve<class_Curve>`. If you want to specify detailed values individually, set :ref:`set_individual_config()<class_SpringBoneSimulator3D_method_set_individual_config>` to ``true``.
 
-Для физического моделирования **SpringBoneSimulator3D** может иметь дочерние элементы для самостоятельного столкновения, не связанным с :ref:`PhysicsServer3D<class_PhysicsServer3D>`, см. также :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>`.
+For physical simulation, **SpringBoneSimulator3D** can have children as self-standing collisions that are not related to :ref:`PhysicsServer3D<class_PhysicsServer3D>`, see also :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>`.
 
-\ **Предупреждение:** Масштабированный **SpringBoneSimulator3D** скорее всего не будет вести себя так, как ожидается. Убедитесь, что родительский :ref:`Skeleton3D<class_Skeleton3D>` и его кости не масштабированы.
+\ **Warning:** A scaled **SpringBoneSimulator3D** will likely not behave as expected. Make sure that the parent :ref:`Skeleton3D<class_Skeleton3D>` and its bones are not scaled.
+
+\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 
@@ -1144,11 +1146,13 @@ enum **CenterFrom**: :ref:`🔗<enum_SpringBoneSimulator3D_CenterFrom>`
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis>`
 
-Устанавливает ось вращения в ``joint`` в списке суставов цепочки костей, когда :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` имеет значение ``true``.
+Sets the rotation axis at ``joint`` in the bone chain's joint list when :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` is ``true``.
 
-Оси основаны на пространстве :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`. Если ``axis`` равно :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, можно указать любую ось.
+The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
 
-\ **Примечание:** Ось вращения и вектор направления не должны быть коллинеарными, чтобы избежать непреднамеренного вращения, поскольку **SpringBoneSimulator3D** не учитывает силы скручивания.
+In here, the reference pose is the bone pose immediately before the simulation.
+
+\ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
 
 .. rst-class:: classref-item-separator
 
@@ -1238,11 +1242,13 @@ enum **CenterFrom**: :ref:`🔗<enum_SpringBoneSimulator3D_CenterFrom>`
 
 |void| **set_rotation_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_rotation_axis>`
 
-Задает ось вращения цепочки костей. Если задана конкретная ось, она действует как шарнирный сустав. Значение кэшируется в настройках каждого сустава в списке суставов.
+Sets the rotation axis of the bone chain. If set to a specific axis, it acts like a hinge joint. The value is cached in each joint setting in the joint list.
 
-Оси основаны на пространстве :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`. Если ``axis`` — :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, можно указать любую ось.
+The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
 
-\ **Примечание:** Вектор оси вращения и вектор направления вращения не должны быть коллинеарными, чтобы избежать непреднамеренного вращения, поскольку **SpringBoneSimulator3D** не учитывает силы скручивания.
+In here, the reference pose is the bone pose immediately before the simulation.
+
+\ **Note:** The rotation axis vector and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
 
 .. rst-class:: classref-item-separator
 

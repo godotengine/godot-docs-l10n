@@ -132,7 +132,9 @@ Escala para ajustarse al rectángulo delimitador del nodo.
 
 :ref:`StretchMode<enum_TextureRect_StretchMode>` **STRETCH_TILE** = ``1``
 
-Tile dentro del rectángulo delimitador del nodo.
+Tile inside the node's bounding rectangle.
+
+\ **Note:** :ref:`STRETCH_TILE<class_TextureRect_constant_STRETCH_TILE>` mode is not supported for :ref:`texture<class_TextureRect_property_texture>` set to an :ref:`AtlasTexture<class_AtlasTexture>` with non-zero :ref:`AtlasTexture.margin<class_AtlasTexture_property_margin>`.
 
 .. _class_TextureRect_constant_STRETCH_KEEP:
 

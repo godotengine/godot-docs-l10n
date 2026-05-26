@@ -185,9 +185,11 @@ This virtual method can be implemented to handle context menu items not handled 
 
 |void| **_set_create_options**\ (\ menu_node\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__set_create_options>`
 
-Cette méthode virtuelle est appelée lors de la mise à jour du menu contextuel de **EditorResourcePicker**. Implémenter cette méthode pour remplacer les éléments dans « Nouveau... » par vos propres options. ``menu_node`` est une référence au nœud :ref:`PopupMenu<class_PopupMenu>`.
+This virtual method is called when updating the context menu of an :ref:`editable<class_EditorResourcePicker_property_editable>` **EditorResourcePicker**. Implement this method to override the "New" items section with your own options. ``menu_node`` is a reference to the :ref:`PopupMenu<class_PopupMenu>` node.
 
-\ **Note :** Implémentez :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` pour traiter ces éléments personnalisés.
+\ **Note:** Implement :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` to handle these custom items.
+
+\ **Note:** Relevant built-in options ("Load", "Copy", "Paste", etc.) are automatically added to the ``menu_node`` afterwards, using their hard-coded IDs starting from ``0``. Custom options need to use non-colliding IDs to be handled properly. Using ``id = 100 + custom_option_index`` is safe (this is what the default items in the "New" section use).
 
 .. rst-class:: classref-item-separator
 

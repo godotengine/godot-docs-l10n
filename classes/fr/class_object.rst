@@ -5,7 +5,7 @@
 Object
 ======
 
-**Hérité par :** :ref:`AudioServer<class_AudioServer>`, :ref:`CameraServer<class_CameraServer>`, :ref:`ClassDB<class_ClassDB>`, :ref:`DisplayServer<class_DisplayServer>`, :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>`, :ref:`EditorInterface<class_EditorInterface>`, :ref:`EditorPaths<class_EditorPaths>`, :ref:`EditorSelection<class_EditorSelection>`, :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`, :ref:`EditorVCSInterface<class_EditorVCSInterface>`, :ref:`Engine<class_Engine>`, :ref:`EngineDebugger<class_EngineDebugger>`, :ref:`FramebufferCacheRD<class_FramebufferCacheRD>`, :ref:`GDExtensionManager<class_GDExtensionManager>`, :ref:`Geometry2D<class_Geometry2D>`, :ref:`Geometry3D<class_Geometry3D>`, :ref:`GodotInstance<class_GodotInstance>`, :ref:`Input<class_Input>`, :ref:`InputMap<class_InputMap>`, :ref:`IP<class_IP>`, :ref:`JavaClassWrapper<class_JavaClassWrapper>`, :ref:`JavaScriptBridge<class_JavaScriptBridge>`, :ref:`JNISingleton<class_JNISingleton>`, :ref:`JSONRPC<class_JSONRPC>`, :ref:`MainLoop<class_MainLoop>`, :ref:`Marshalls<class_Marshalls>`, :ref:`MovieWriter<class_MovieWriter>`, :ref:`NativeMenu<class_NativeMenu>`, :ref:`NavigationMeshGenerator<class_NavigationMeshGenerator>`, :ref:`NavigationServer2D<class_NavigationServer2D>`, :ref:`NavigationServer2DManager<class_NavigationServer2DManager>`, :ref:`NavigationServer3D<class_NavigationServer3D>`, :ref:`NavigationServer3DManager<class_NavigationServer3DManager>`, :ref:`Node<class_Node>`, :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`, :ref:`OpenXRInteractionProfileMetadata<class_OpenXRInteractionProfileMetadata>`, :ref:`OS<class_OS>`, :ref:`Performance<class_Performance>`, :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`, :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`, :ref:`PhysicsServer2D<class_PhysicsServer2D>`, :ref:`PhysicsServer2DManager<class_PhysicsServer2DManager>`, :ref:`PhysicsServer3D<class_PhysicsServer3D>`, :ref:`PhysicsServer3DManager<class_PhysicsServer3DManager>`, :ref:`PhysicsServer3DRenderingServerHandler<class_PhysicsServer3DRenderingServerHandler>`, :ref:`ProjectSettings<class_ProjectSettings>`, :ref:`RefCounted<class_RefCounted>`, :ref:`RenderData<class_RenderData>`, :ref:`RenderingDevice<class_RenderingDevice>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`ResourceLoader<class_ResourceLoader>`, :ref:`ResourceSaver<class_ResourceSaver>`, :ref:`ResourceUID<class_ResourceUID>`, :ref:`ScriptLanguage<class_ScriptLanguage>`, :ref:`ShaderIncludeDB<class_ShaderIncludeDB>`, :ref:`TextServerManager<class_TextServerManager>`, :ref:`ThemeDB<class_ThemeDB>`, :ref:`TileData<class_TileData>`, :ref:`Time<class_Time>`, :ref:`TranslationServer<class_TranslationServer>`, :ref:`TreeItem<class_TreeItem>`, :ref:`UndoRedo<class_UndoRedo>`, :ref:`UniformSetCacheRD<class_UniformSetCacheRD>`, :ref:`WorkerThreadPool<class_WorkerThreadPool>`, :ref:`XRServer<class_XRServer>`, :ref:`XRVRS<class_XRVRS>`
+**Hérité par :** :ref:`AccessibilityServer<class_AccessibilityServer>`, :ref:`AudioServer<class_AudioServer>`, :ref:`CameraServer<class_CameraServer>`, :ref:`ClassDB<class_ClassDB>`, :ref:`DisplayServer<class_DisplayServer>`, :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>`, :ref:`EditorInterface<class_EditorInterface>`, :ref:`EditorPaths<class_EditorPaths>`, :ref:`EditorSelection<class_EditorSelection>`, :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`, :ref:`EditorVCSInterface<class_EditorVCSInterface>`, :ref:`Engine<class_Engine>`, :ref:`EngineDebugger<class_EngineDebugger>`, :ref:`FramebufferCacheRD<class_FramebufferCacheRD>`, :ref:`GDExtensionManager<class_GDExtensionManager>`, :ref:`Geometry2D<class_Geometry2D>`, :ref:`Geometry3D<class_Geometry3D>`, :ref:`GodotInstance<class_GodotInstance>`, :ref:`Input<class_Input>`, :ref:`InputMap<class_InputMap>`, :ref:`IP<class_IP>`, :ref:`JavaClassWrapper<class_JavaClassWrapper>`, :ref:`JavaScriptBridge<class_JavaScriptBridge>`, :ref:`JNISingleton<class_JNISingleton>`, :ref:`JSONRPC<class_JSONRPC>`, :ref:`MainLoop<class_MainLoop>`, :ref:`Marshalls<class_Marshalls>`, :ref:`MovieWriter<class_MovieWriter>`, :ref:`NativeMenu<class_NativeMenu>`, :ref:`NavigationMeshGenerator<class_NavigationMeshGenerator>`, :ref:`NavigationServer2D<class_NavigationServer2D>`, :ref:`NavigationServer2DManager<class_NavigationServer2DManager>`, :ref:`NavigationServer3D<class_NavigationServer3D>`, :ref:`NavigationServer3DManager<class_NavigationServer3DManager>`, :ref:`Node<class_Node>`, :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`, :ref:`OpenXRInteractionProfileMetadata<class_OpenXRInteractionProfileMetadata>`, :ref:`OS<class_OS>`, :ref:`Performance<class_Performance>`, :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`, :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`, :ref:`PhysicsServer2D<class_PhysicsServer2D>`, :ref:`PhysicsServer2DManager<class_PhysicsServer2DManager>`, :ref:`PhysicsServer3D<class_PhysicsServer3D>`, :ref:`PhysicsServer3DManager<class_PhysicsServer3DManager>`, :ref:`PhysicsServer3DRenderingServerHandler<class_PhysicsServer3DRenderingServerHandler>`, :ref:`ProjectSettings<class_ProjectSettings>`, :ref:`RefCounted<class_RefCounted>`, :ref:`RenderData<class_RenderData>`, :ref:`RenderingDevice<class_RenderingDevice>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`ResourceLoader<class_ResourceLoader>`, :ref:`ResourceSaver<class_ResourceSaver>`, :ref:`ResourceUID<class_ResourceUID>`, :ref:`ScriptLanguage<class_ScriptLanguage>`, :ref:`ShaderIncludeDB<class_ShaderIncludeDB>`, :ref:`TextServerManager<class_TextServerManager>`, :ref:`ThemeDB<class_ThemeDB>`, :ref:`TileData<class_TileData>`, :ref:`Time<class_Time>`, :ref:`TranslationServer<class_TranslationServer>`, :ref:`TreeItem<class_TreeItem>`, :ref:`UndoRedo<class_UndoRedo>`, :ref:`UniformSetCacheRD<class_UniformSetCacheRD>`, :ref:`WorkerThreadPool<class_WorkerThreadPool>`, :ref:`XRServer<class_XRServer>`, :ref:`XRVRS<class_XRVRS>`
 
 Classe de base pour toutes les autres classes du moteur.
 
@@ -150,7 +150,7 @@ Méthodes
    +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                          | :ref:`is_blocking_signals<class_Object_method_is_blocking_signals>`\ (\ ) |const|                                                                                                                                                        |
    +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                          | :ref:`is_class<class_Object_method_is_class>`\ (\ class\: :ref:`String<class_String>`\ ) |const|                                                                                                                                         |
+   | :ref:`bool<class_bool>`                                          | :ref:`is_class<class_Object_method_is_class>`\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const|                                                                                                                                 |
    +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                          | :ref:`is_connected<class_Object_method_is_connected>`\ (\ signal\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`\ ) |const|                                                                            |
    +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -235,7 +235,7 @@ Signaux
 
 .. rst-class:: classref-enumeration
 
-enum **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
+flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 .. _class_Object_constant_CONNECT_DEFERRED:
 
@@ -340,37 +340,38 @@ Descriptions des méthodes
 
 :ref:`Variant<class_Variant>` **_get**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__get>`
 
-Redéfinissez cette méthode pour personnaliser le comportement de :ref:`get()<class_Object_method_get>`. Devrait renvoyer la valeur de la propriété ``property`` donnée, ou ``null`` si ``property`` devrait être traitée normalement.
+Override this method to customize the behavior of :ref:`get()<class_Object_method_get>`. Should return the given ``property``'s value, or ``null`` if the ``property`` should be handled normally.
 
-Combiné avec :ref:`_set()<class_Object_private_method__set>` et :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, cette méthode permet de définir des propriétés personnalisées, ce qui est particulièrement utile pour les plugins éditeurs.
+Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
 
-\ **Note :** Cette méthode n'est pas appelée pour obtenir des propriétés intégrées d'un objet, y compris les propriétés définies avec :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **Note:** This method is not called when getting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    func _get(property) :
-        if property == "fausse_propriete" :
-            print("Obtenir ma propriété !")
+    func _get(property):
+        if property == "fake_property":
+            print("Getting my property!")
             return 4
+        return null
 
-    func _get_property_list() :
+    func _get_property_list():
         return [
-            { "name" : "fausse_propriete", "type" : TYPE_INT }
+            { "name": "fake_property", "type": TYPE_INT }
         ]
 
  .. code-tab:: csharp
 
     public override Variant _Get(StringName property)
     {
-        if (property == "FaussePropriete")
+        if (property == "FakeProperty")
         {
-            GD.Print("Obtenir ma propriété !") ;
-            return 4 ;
+            GD.Print("Getting my property!");
+            return 4;
         }
-        return default ;
+        return default;
     }
 
     public override Godot.Collections.Array<Godot.Collections.Dictionary> _GetPropertyList()
@@ -379,15 +380,17 @@ Combiné avec :ref:`_set()<class_Object_private_method__set>` et :ref:`_get_prop
         [
             new Godot.Collections.Dictionary()
             {
-                { "name", "FaussePropriete" },
+                { "name", "FakeProperty" },
                 { "type", (int)Variant.Type.Int },
             },
-        ] ;
+        ];
     }
 
 
 
-\ **Note :** Contrairement à d'autres méthodes virtuelles, cette méthode est appelée automatiquement pour chaque script qui l'écrase. Cela signifie que la mise en œuvre de base ne doit pas être appelée via ``super`` dans GDScript ou ses équivalents dans d'autres langues. La sous-classe la plus basse sera appelée en premier, avec des appels subséquents ascendant la hiérarchie de classe. La chaîne d'appels s'arrête sur la première classe qui retourne une valeur non-``null``.
+\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns a non-``null`` value.
+
+\ **Warning:** This method must be :doc:`thread-safe <../tutorials/performance/thread_safe_apis>` if overridden. Otherwise, the engine may crash when trying to save a resource containing the object.
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +427,7 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
     var numbers = PackedInt32Array([0, 0, 0])
 
     func _get_property_list():
-        var properties = []
+        var properties: Array[Dictionary] = []
 
         for i in range(number_count):
             properties.append({
@@ -440,6 +443,7 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
         if property.begins_with("number_"):
             var index = property.get_slice("_", 1).to_int()
             return numbers[index]
+        return null
 
     func _set(property, value):
         if property.begins_with("number_"):
@@ -519,6 +523,8 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
 
 \ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy.
 
+\ **Warning:** This method must be :doc:`thread-safe <../tutorials/performance/thread_safe_apis>` if overridden. Otherwise, the engine may crash when trying to save a resource containing the object.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -557,36 +563,38 @@ Renvoie la valeur itérable courante. ``iter`` stocke l'état de l'itération, m
 
 :ref:`bool<class_bool>` **_iter_init**\ (\ iter\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_Object_private_method__iter_init>`
 
-Initialise l'itérateur. ``iter`` stocke l'état d'itération. Puisque GDScript ne supporte pas le passage d'arguments par référence, un tableau avec un seul élément est utilisé comme wrapper. Renvoie ``true`` tant que l'itérateur n'a pas atteint la fin.
+Initializes the iterator. ``iter`` stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. Returns ``true`` so long as the iterator has not reached the end.
 
 ::
 
-    class MonIntervalle:
-        var _de
-        var _vers
+    class MyRange:
+        var _from
+        var _to
 
-        func _init(de, vers):
-            assert(de <= vers)
-            _de = de
-            _vers = vers
+        func _init(from, to):
+            assert(from <= to)
+            _from = from
+            _to = to
 
         func _iter_init(iter):
-            iter[0] = _de
-            return iter[0] < _vers
+            iter[0] = _from
+            return iter[0] < _to
 
         func _iter_next(iter):
             iter[0] += 1
-            return iter[0] < _vers
+            return iter[0] < _to
 
         func _iter_get(iter):
             return iter
 
     func _ready():
-        var mon_intervalle = MonIntervalle.new(2, 5)
-        for x in mon_intervalle:
-            print(x) # Affiche 2, 3, 4.
+        var my_range = MyRange.new(2, 5)
+        for x in my_range:
+            print(x) # Prints 2, 3, 4.
 
-\ **Note :** Sinon, vous pouvez ignorer ``iter`` et utiliser l'état de l'objet à la place, voir `la documentation en ligne <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__ par exemple. Notez que dans ce cas vous ne serez pas en mesure de réutiliser la même instance d'itérateur dans les boucles imbriquées. Assurez-vous également de réinitialiser l'état de l'itérateur dans cette méthode si vous voulez réutiliser la même instance plusieurs fois.
+\ **Note:** Avoid storing iterator state in a member variable, use the ``iter`` parameter instead. Otherwise, you won't be able to reuse the same iterator instance in nested loops.
+
+See also `online docs <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1419,7 +1427,7 @@ Renvoie ``true`` si l'objet bloque l'émission de ses signaux. Voir :ref:`set_bl
 
 .. rst-class:: classref-method
 
-:ref:`bool<class_bool>` **is_class**\ (\ class\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Object_method_is_class>`
+:ref:`bool<class_bool>` **is_class**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_is_class>`
 
 Renvoie ``true`` si l'objet hérite de la ``class`` donnée. Voir aussi :ref:`get_class()<class_Object_method_get_class>`.
 
@@ -1468,7 +1476,9 @@ Renvoie ``true`` si une connexion existe entre le nom de ``signal`` et le ``call
 
 :ref:`bool<class_bool>` **is_queued_for_deletion**\ (\ ) |const| :ref:`🔗<class_Object_method_is_queued_for_deletion>`
 
-Renvoie ``true`` si la méthode :ref:`Node.queue_free()<class_Node_method_queue_free>` a été appelée pour cet objet.
+Returns ``true`` if the methods :ref:`Node.queue_free()<class_Node_method_queue_free>` or :ref:`SceneTree.queue_delete()<class_SceneTree_method_queue_delete>` was called for the object.
+
+\ **Note:** This method does not return ``true`` on children of the node that :ref:`Node.queue_free()<class_Node_method_queue_free>` has been called on, even though they will be freed together with the parent.
 
 .. rst-class:: classref-item-separator
 

@@ -7,9 +7,9 @@ AudioEffectEQ10
 
 **Успадковує:** :ref:`AudioEffectEQ<class_AudioEffectEQ>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Додає 10-смуговий звуковий ефект еквалайзера до аудіошини. Дозволяє контролювати частоти від 31 Гц до 16000 Гц.
+Adds a 10-band equalizer audio effect to an audio bus.
 
- Кожну частоту можна модулювати між -60/+24 дБ.
+Gives you control over frequencies from 31 Hz to 16000 Hz. Each frequency can be modulated between -60/+24 dB.
 
 .. rst-class:: classref-introduction-group
 
@@ -46,6 +46,8 @@ AudioEffectEQ10
 ------------------
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -679,7 +679,7 @@ Devuelve la configuración de los altavoces.
 
 :ref:`float<class_float>` **get_time_since_last_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_since_last_mix>`
 
-Devuelve el tiempo relativo desde que se produjo la última mezcla.
+Returns the relative time since the last mix occurred, in seconds.
 
 .. rst-class:: classref-item-separator
 
@@ -691,7 +691,7 @@ Devuelve el tiempo relativo desde que se produjo la última mezcla.
 
 :ref:`float<class_float>` **get_time_to_next_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_to_next_mix>`
 
-Devuelve el tiempo relativo hasta que se produce la siguiente mezcla.
+Returns the relative time until the next mix occurs, in seconds.
 
 .. rst-class:: classref-item-separator
 

@@ -18,6 +18,13 @@ AudioStreamInteractive
 
 用法是先填充一些剪辑，然后配置过渡表。音频流会根据过渡表选择要播放的剪辑，并根据表中定义的对应过渡规则平滑地将当前音乐过渡到新的剪辑。
 
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`音频流 <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 属性
@@ -152,6 +159,14 @@ enum **TransitionToTime**: :ref:`🔗<enum_AudioStreamInteractive_TransitionToTi
 :ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_START** = ``1``
 
 过渡至目标剪辑的开头。
+
+.. _class_AudioStreamInteractive_constant_TRANSITION_TO_TIME_PREVIOUS_POSITION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_PREVIOUS_POSITION** = ``2``
+
+Transition to the last played position in the destination clip, if there was a previous transition from that clip. Otherwise, plays from the start of the destination clip.
 
 .. rst-class:: classref-item-separator
 

@@ -303,7 +303,7 @@ enum **VisibilityRangeFadeMode**: :ref:`🔗<enum_GeometryInstance3D_VisibilityR
 - |void| **set_custom_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_custom_aabb**\ (\ )
 
-使用自定义边界框覆盖该节点的边界框。骨架使用 :ref:`MeshInstance3D<class_MeshInstance3D>` 时可以避免重新计算 :ref:`AABB<class_AABB>` 节省性能，也可以用来对 :ref:`MeshInstance3D<class_MeshInstance3D>` 的边界框进行精确控制。要使用默认的 AABB，请将其设为所有字段均为 ``0.0`` 的 :ref:`AABB<class_AABB>`\ 。要避免视锥剔除，请将 :ref:`custom_aabb<class_GeometryInstance3D_property_custom_aabb>` 设为大到能够覆盖整个游戏世界的 AABB，例如 ``AABB(-10000, -10000, -10000, 20000, 20000, 20000)``\ 。要禁用所有形式的剔除（包括遮挡剔除），请使用该 **GeometryInstance3D** 的 :ref:`RID<class_RID>` 调用 :ref:`RenderingServer.instance_set_ignore_culling()<class_RenderingServer_method_instance_set_ignore_culling>`\ 。
+Overrides the bounding box of this node with a custom one. This can be used to avoid the expensive :ref:`AABB<class_AABB>` recalculation that happens when a skeleton is used with a :ref:`MeshInstance3D<class_MeshInstance3D>` or to have precise control over the :ref:`MeshInstance3D<class_MeshInstance3D>`'s bounding box. To use the default AABB, set value to an :ref:`AABB<class_AABB>` with all fields set to ``0.0``. To avoid frustum culling, set :ref:`custom_aabb<class_GeometryInstance3D_property_custom_aabb>` to a very large AABB that covers your entire game world such as ``AABB(-10000, -10000, -10000, 20000, 20000, 20000)``. To disable all forms of culling (including occlusion and layer culling), call :ref:`RenderingServer.instance_set_ignore_culling()<class_RenderingServer_method_instance_set_ignore_culling>` on the **GeometryInstance3D**'s :ref:`RID<class_RID>`.
 
 .. rst-class:: classref-item-separator
 

@@ -7,16 +7,18 @@ AudioEffectDelay
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-為音訊匯流排新增延遲效果。於指定時間後回放輸入訊號。
+Adds a delay audio effect to an audio bus.
 
-支援雙 Tap 與回饋設定。
+Emulates an echo by playing the input audio back after a period of time.
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-延遲會在一段時間後回放輸入訊號，可多次回放形成衰減回聲。效果可從輕微迴響到明顯混合舊聲與新聲。
+A "delay" effect plays the input audio signal back after a period of time. Each repetition is called a "delay tap" or simply "tap". Delay taps may be played back multiple times to create the sound of a repeating, decaying echo. Delay effects range from a subtle echo to a pronounced blending of previous sounds with new sounds.
+
+See also :ref:`AudioEffectReverb<class_AudioEffectReverb>` for a blurry, continuous echo.
 
 .. rst-class:: classref-introduction-group
 
@@ -24,6 +26,8 @@ AudioEffectDelay
 ----
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -81,7 +85,7 @@ AudioEffectDelay
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-原始聲音在輸出中的比例；0 為純延遲聲，可設 0–1。
+The volume ratio of the original audio. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +102,7 @@ AudioEffectDelay
 - |void| **set_feedback_active**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_feedback_active**\ (\ )
 
-若為 ``true``\ ，啟用回饋。
+If ``true``, feedback is enabled, repeating taps after they are played.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +119,7 @@ AudioEffectDelay
 - |void| **set_feedback_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_delay_ms**\ (\ )
 
-回饋延遲（ms）。
+Feedback delay time in milliseconds. Value can range from 0 to 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +136,7 @@ AudioEffectDelay
 - |void| **set_feedback_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_level_db**\ (\ )
 
-回饋音量。
+Gain for feedback, in dB. Value can range from -60 to 0.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +153,7 @@ AudioEffectDelay
 - |void| **set_feedback_lowpass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_lowpass**\ (\ )
 
-回饋所用的低通濾波器（Hz），低於此值者將被過濾。
+Low-pass filter for feedback, in Hz. Frequencies above this value are filtered out. Value can range from 1 to 16000.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +187,7 @@ AudioEffectDelay
 - |void| **set_tap1_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_delay_ms**\ (\ )
 
-第一 Tap 延遲（ms）。
+First tap delay time in milliseconds, compared to the original audio. Value can range from 0 to 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +204,7 @@ AudioEffectDelay
 - |void| **set_tap1_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_level_db**\ (\ )
 
-第一 Tap 音量。
+Gain for the first tap, in dB. Value can range from -60 to 0.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +221,7 @@ AudioEffectDelay
 - |void| **set_tap1_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_pan**\ (\ )
 
-第一 Tap 聲像，-1 為全左、1 為全右。
+Pan position for the first tap. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +255,7 @@ AudioEffectDelay
 - |void| **set_tap2_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_delay_ms**\ (\ )
 
-第二 Tap 延遲（ms）。
+Second tap delay time in milliseconds, compared to the original audio. Value can range from 0 to 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -268,7 +272,7 @@ AudioEffectDelay
 - |void| **set_tap2_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_level_db**\ (\ )
 
-第二 Tap 音量。
+Gain for the second tap, in dB. Value can range from -60 to 0.
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +289,7 @@ AudioEffectDelay
 - |void| **set_tap2_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_pan**\ (\ )
 
-第二 Tap 聲像，-1 為全左、1 為全右。
+Pan position for the second tap. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

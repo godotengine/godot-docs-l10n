@@ -7,9 +7,9 @@ AudioEffectEQ21
 
 **Hereda:** :ref:`AudioEffectEQ<class_AudioEffectEQ>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Añade un efecto de audio ecualizador de 21 bandas a un Audiobus. Te da control sobre las frecuencias de 22 Hz a 22000 Hz.
+Adds a 21-band equalizer audio effect to an audio bus.
 
-Cada frecuencia puede ser modulada entre -60/+24 dB.
+Gives you control over frequencies from 22 Hz to 22000 Hz. Each frequency can be modulated between -60/+24 dB.
 
 .. rst-class:: classref-introduction-group
 
@@ -68,6 +68,8 @@ Tutoriales
 --------------------
 
 - :doc:`Buses de audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -202,7 +202,7 @@ El :ref:`FoldableGroup<class_FoldableGroup>` asociado con el contenedor. Cuando 
 - |void| **set_folded**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_folded**\ (\ )
 
-Si es ``true``, el contenedor se plegará y ocultará a todos sus hijos.
+If ``true``, the container will become folded and will hide all its children.
 
 .. rst-class:: classref-item-separator
 

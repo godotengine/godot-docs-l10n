@@ -7,7 +7,7 @@ AudioEffectAmplify
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Agrega un efecto de amplificación de audio a un bus de audio.
+Adds a volume manipulation audio effect to an audio bus.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +22,8 @@ Tutoriales
 --------------------
 
 - :doc:`Buses de audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -57,7 +59,7 @@ Descripciones de Propiedades
 - |void| **set_volume_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_db**\ (\ )
 
-Cantidad de amplificacion en decibelios. Valores positivos hacen el sonido mas fuerte, valores negativos mas debiles. Valores pueden alcanzar el rango de -80 a 24.
+Amount of amplification in dB. Positive values make the sound louder, negative values make it quieter. Value can range from -80 to 24.
 
 .. rst-class:: classref-item-separator
 

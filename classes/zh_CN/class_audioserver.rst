@@ -679,7 +679,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`float<class_float>` **get_time_since_last_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_since_last_mix>`
 
-返回自上次混合以来的相对时间。
+Returns the relative time since the last mix occurred, in seconds.
 
 .. rst-class:: classref-item-separator
 
@@ -691,7 +691,7 @@ enum **PlaybackType**: :ref:`🔗<enum_AudioServer_PlaybackType>`
 
 :ref:`float<class_float>` **get_time_to_next_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_to_next_mix>`
 
-返回下一次混合之前的相对时间。
+Returns the relative time until the next mix occurs, in seconds.
 
 .. rst-class:: classref-item-separator
 

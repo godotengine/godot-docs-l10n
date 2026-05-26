@@ -23,6 +23,8 @@ AudioStreamWAV 存储从 WAV 文件加载的声音样本。要播放存储的声
 教程
 ----
 
+- :doc:`音频流 <../tutorials/audio/audio_streams>`
+
 - :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group

@@ -14,17 +14,19 @@ Mezcla dos de tres animaciones sumandolas dentro de un :ref:`AnimationNodeBlendT
 Descripción
 ----------------------
 
-Un recurso para añadir a un :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Combina dos animaciones de tres de forma aditiva en función del valor de la cantidad.
+A resource to add to an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Blends two animations out of three additively out of three based on the amount value.
 
-Este nodo de animación tiene tres entradas:
+This animation node has three inputs:
 
-- La animación base a la que se va a añadir
+- The base animation to add to
 
-- Una animación "-add" para mezclar cuando la cantidad de mezcla es negativa
+- A "-add" animation to blend with when the blend amount is negative
 
-- Una animación "+add" para mezclar cuando la cantidad de mezcla es positiva
+- A "+add" animation to blend with when the blend amount is positive
 
-Si el valor absoluto de la cantidad es mayor que ``1.0``, la animación conectada al puerto "in" se combina con la animación amplificada conectada al puerto "-add"/"+add".
+If the absolute value of the amount is greater than ``1.0``, the animation connected to "in" port is blended with the amplified animation connected to "-add"/"+add" port.
+
+\ **Note:** The signs are only used to distinguish ports, and additive blending occurs based on absolute values always, meaning the animation of a "-add" port does not subtract from the animation of an "in" port.
 
 .. rst-class:: classref-introduction-group
 

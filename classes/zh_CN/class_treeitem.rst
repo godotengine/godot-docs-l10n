@@ -69,6 +69,8 @@ TreeItem
    +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`                 | :ref:`get_autowrap_mode<class_TreeItem_method_get_autowrap_mode>`\ (\ column\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                     |
    +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] | :ref:`get_autowrap_trim_flags<class_TreeItem_method_get_autowrap_trim_flags>`\ (\ column\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                         |
+   +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Texture2D<class_Texture2D>`                                 | :ref:`get_button<class_TreeItem_method_get_button>`\ (\ column\: :ref:`int<class_int>`, button_index\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                             |
    +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                             | :ref:`get_button_by_id<class_TreeItem_method_get_button_by_id>`\ (\ column\: :ref:`int<class_int>`, id\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                           |
@@ -159,6 +161,8 @@ TreeItem
    +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Tree<class_Tree>`                                           | :ref:`get_tree<class_TreeItem_method_get_tree>`\ (\ ) |const|                                                                                                                                                                                                                                                       |
    +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                           | :ref:`is_accepting_children<class_TreeItem_method_is_accepting_children>`\ (\ ) |const|                                                                                                                                                                                                                             |
+   +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                           | :ref:`is_any_collapsed<class_TreeItem_method_is_any_collapsed>`\ (\ only_visible\: :ref:`bool<class_bool>` = false\ )                                                                                                                                                                                               |
    +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                           | :ref:`is_button_disabled<class_TreeItem_method_is_button_disabled>`\ (\ column\: :ref:`int<class_int>`, button_index\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                             |
@@ -187,11 +191,15 @@ TreeItem
    +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                            | :ref:`remove_child<class_TreeItem_method_remove_child>`\ (\ child\: :ref:`TreeItem<class_TreeItem>`\ )                                                                                                                                                                                                              |
    +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                                                            | :ref:`select<class_TreeItem_method_select>`\ (\ column\: :ref:`int<class_int>`\ )                                                                                                                                                                                                                                   |
+   | |void|                                                            | :ref:`select<class_TreeItem_method_select>`\ (\ column\: :ref:`int<class_int>`, set_as_cursor\: :ref:`bool<class_bool>` = true\ )                                                                                                                                                                                   |
+   +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                            | :ref:`set_accept_children<class_TreeItem_method_set_accept_children>`\ (\ allowed\: :ref:`bool<class_bool>`\ )                                                                                                                                                                                                      |
    +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                            | :ref:`set_auto_translate_mode<class_TreeItem_method_set_auto_translate_mode>`\ (\ column\: :ref:`int<class_int>`, mode\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ )                                                                                                                                   |
    +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                            | :ref:`set_autowrap_mode<class_TreeItem_method_set_autowrap_mode>`\ (\ column\: :ref:`int<class_int>`, autowrap_mode\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )                                                                                                                                          |
+   +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                            | :ref:`set_autowrap_trim_flags<class_TreeItem_method_set_autowrap_trim_flags>`\ (\ column\: :ref:`int<class_int>`, flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\]\ )                                                                                                                      |
    +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                            | :ref:`set_button<class_TreeItem_method_set_button>`\ (\ column\: :ref:`int<class_int>`, button_index\: :ref:`int<class_int>`, button\: :ref:`Texture2D<class_Texture2D>`\ )                                                                                                                                         |
    +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -546,6 +554,18 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_autowrap_mode>`
 
 返回给定列 ``column`` 的文本自动换行模式。默认为 :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TreeItem_method_get_autowrap_trim_flags:
+
+.. rst-class:: classref-method
+
+|bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] **get_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_autowrap_trim_flags>`
+
+Returns the autowrap trim flags for the given ``column``. By default, both :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` and :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>` are enabled.
 
 .. rst-class:: classref-item-separator
 
@@ -1101,6 +1121,18 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 ----
 
+.. _class_TreeItem_method_is_accepting_children:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_accepting_children**\ (\ ) |const| :ref:`🔗<class_TreeItem_method_is_accepting_children>`
+
+Returns ``true`` if this **TreeItem** is allowed to accept children.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_TreeItem_method_is_any_collapsed:
 
 .. rst-class:: classref-method
@@ -1281,9 +1313,21 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 .. rst-class:: classref-method
 
-|void| **select**\ (\ column\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TreeItem_method_select>`
+|void| **select**\ (\ column\: :ref:`int<class_int>`, set_as_cursor\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_TreeItem_method_select>`
 
-选中 ``column`` 指定的列。
+Selects the given ``column``. If ``set_as_cursor`` is ``true``, the :ref:`Tree<class_Tree>`'s cursor will be moved to this item (only matters if :ref:`Tree.select_mode<class_Tree_property_select_mode>` is set to :ref:`Tree.SELECT_MULTI<class_Tree_constant_SELECT_MULTI>`).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TreeItem_method_set_accept_children:
+
+.. rst-class:: classref-method
+
+|void| **set_accept_children**\ (\ allowed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TreeItem_method_set_accept_children>`
+
+Sets **TreeItem**'s ability to accept children.
 
 .. rst-class:: classref-item-separator
 
@@ -1310,6 +1354,18 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 |void| **set_autowrap_mode**\ (\ column\: :ref:`int<class_int>`, autowrap_mode\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ ) :ref:`🔗<class_TreeItem_method_set_autowrap_mode>`
 
 设置给定 ``column`` 的自动换行模式。如果设置为 :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>` 以外的值，则文本将在节点的边界矩形内换行。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TreeItem_method_set_autowrap_trim_flags:
+
+.. rst-class:: classref-method
+
+|void| **set_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`, flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\]\ ) :ref:`🔗<class_TreeItem_method_set_autowrap_trim_flags>`
+
+Sets the autowrap trim flags for the given ``column``. These flags control whether leading and trailing spaces are trimmed on wrapped lines. Set to ``0`` to disable all trimming.
 
 .. rst-class:: classref-item-separator
 
@@ -1471,9 +1527,11 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 |void| **set_custom_draw_callback**\ (\ column\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_draw_callback>`
 
-设置给定列的自定义绘制回调。使用空的 :ref:`Callable<class_Callable>`\ （\ ``Callable()``\ ）清除自定义回调。单元格必须处于 :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` 模式才能使用该功能。
+Sets the given column's custom draw callback. Use an empty :ref:`Callable<class_Callable>` (``Callable()``) to clear the custom callback. The cell has to be in :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` to use this feature.
 
-名为 ``callback`` 的方法应接受两个参数：被绘制的 **TreeItem** 及其作为一个 :ref:`Rect2<class_Rect2>` 的位置和大小。
+The ``callback`` should accept two arguments: the **TreeItem** that is drawn and its position and size as a :ref:`Rect2<class_Rect2>`.
+
+To draw custom content over the native style, please use :ref:`Tree.get_custom_drawing_canvas_item()<class_Tree_method_get_custom_drawing_canvas_item>`.
 
 .. rst-class:: classref-item-separator
 

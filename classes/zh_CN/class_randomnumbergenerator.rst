@@ -91,19 +91,19 @@ RandomNumberGenerator 是一个用于生成伪随机数的类。它目前使用 
 - |void| **set_seed**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_seed**\ (\ )
 
-根据给定的种子值初始化随机数生成器状态。给定的种子将给出一个可重现的伪随机数序列。
+Initializes the random number generator state based on the given seed value. A given seed will give a reproducible sequence of pseudo-random numbers.
 
-\ **注意：**\ RNG 没有雪崩效应，给定相似的种子可以输出相似的随机流。如果种子来自外部，请考虑使用哈希函数来提高种子质量。
+\ **Note:** The RNG does not have an avalanche effect, and can output similar random streams given similar seeds. Consider using a hash function to improve your seed quality if they're sourced externally.
 
-\ **注意：**\ 设置该属性会产生改变内部 :ref:`state<class_RandomNumberGenerator_property_state>` 的副作用，因此请确保在修改 :ref:`state<class_RandomNumberGenerator_property_state>` *之前*\ 初始化种子：
+\ **Note:** The default value of this property is pseudo-random, and changes when calling :ref:`randomize()<class_RandomNumberGenerator_method_randomize>`. The ``0`` value documented here is a placeholder, and not the actual default seed.
 
-\ **注意：**\ 该属性的默认值是伪随机的，会在调用 :ref:`randomize()<class_RandomNumberGenerator_method_randomize>` 时改变。文档中记录的 ``0`` 是占位符，不是实际的默认种子。
+\ **Note:** Setting this property produces a side effect of changing the internal :ref:`state<class_RandomNumberGenerator_property_state>`, so make sure to initialize the seed *before* modifying the :ref:`state<class_RandomNumberGenerator_property_state>`:
 
 ::
 
     var rng = RandomNumberGenerator.new()
     rng.seed = hash("Godot")
-    rng.state = 100 # 恢复到之前保存的一些状态。
+    rng.state = 100 # Restore to some previously saved state.
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,11 @@ RandomNumberGenerator 是一个用于生成伪随机数的类。它目前使用 
 
 :ref:`int<class_int>` **rand_weighted**\ (\ weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_RandomNumberGenerator_method_rand_weighted>`
 
-返回具有非均匀权重的随机索引。如果数组为空，则输出错误并返回 ``-1``\ 。
+Returns a random integer between ``0`` and the size of the array that is passed as a parameter. Each value in the array should be a floating-point number that represents the relative likelihood that it will be returned as an index. A higher value means the value is more likely to be returned as an index, while a value of ``0`` means it will never be returned as an index.
+
+For example, if ``[0.5, 1, 1, 2]`` is passed as a parameter, then the method is twice as likely to return ``3`` (the index of the value ``2``) and twice as unlikely to return ``0`` (the index of the value ``0.5``) compared to the indices ``1`` and ``2``.
+
+Prints an error and returns ``-1`` if the array is empty.
 
 
 .. tabs::
@@ -162,8 +166,8 @@ RandomNumberGenerator 是一个用于生成伪随机数的类。它目前使用 
     var my_array = ["one", "two", "three", "four"]
     var weights = PackedFloat32Array([0.5, 1, 1, 2])
 
-    # 输出 `my_array` 中的四个元素之一。
-    # 更有可能输出 “four”，而不太可能输出 “one”。
+    # Prints one of the four elements in `my_array`.
+    # It is more likely to print "four", and less likely to print "one".
     print(my_array[rng.rand_weighted(weights)])
 
 

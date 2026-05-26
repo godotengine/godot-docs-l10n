@@ -12,11 +12,13 @@ Projection
 Описание
 ----------------
 
-Матрица 4×4, используемая для 3D-проективных преобразований. Она может представлять такие преобразования, как перемещение, вращение, масштабирование, сдвиг и перспективное деление. Она состоит из четырех столбцов :ref:`Vector4<class_Vector4>`.
+A 4×4 matrix used for 3D projective transformations. It can represent transformations such as translation, rotation, scaling, shearing, and perspective division. It consists of four :ref:`Vector4<class_Vector4>` columns.
 
-Для чисто линейных преобразований (перемещение, вращение и масштабирование) рекомендуется использовать :ref:`Transform3D<class_Transform3D>`, так как она более производительна и требует меньше памяти.
+For purely linear transformations (translation, rotation, and scale), it is recommended to use :ref:`Transform3D<class_Transform3D>`, as it is more performant and requires less memory.
 
-Используется внутренне как матрица проекции :ref:`Camera3D<class_Camera3D>`.
+Used internally as :ref:`Camera3D<class_Camera3D>`'s projection matrix.
+
+\ **Note:** In a boolean context, a projection will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Projection_constant_IDENTITY>`. Otherwise, a projection will always evaluate to ``true``.
 
 .. note::
 

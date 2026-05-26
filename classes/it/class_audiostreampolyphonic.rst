@@ -18,6 +18,13 @@ AudioStream che consente all'utente di riprodurre flussi personalizzati in quals
 
 Il controllo della riproduzione avviene tramite l'istanza :ref:`AudioStreamPlaybackPolyphonic<class_AudioStreamPlaybackPolyphonic>` impostata all'interno del riproduttore, che può essere ottenuta tramite i metodi :ref:`AudioStreamPlayer.get_stream_playback()<class_AudioStreamPlayer_method_get_stream_playback>`, :ref:`AudioStreamPlayer2D.get_stream_playback()<class_AudioStreamPlayer2D_method_get_stream_playback>` o :ref:`AudioStreamPlayer3D.get_stream_playback()<class_AudioStreamPlayer3D_method_get_stream_playback>`. Ottenere l'istanza di riproduzione è valido solo dopo che la proprietà ``stream`` è impostata come **AudioStreamPolyphonic** in quei riproduttori.
 
+.. rst-class:: classref-introduction-group
+
+Tutorial
+----------------
+
+- :doc:`Flussi audio <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 Proprietà

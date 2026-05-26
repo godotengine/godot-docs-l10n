@@ -12,7 +12,9 @@ Plane
 說明
 ----
 
-代表正規化的平面方程。\ :ref:`normal<class_Plane_property_normal>` 是平面的法線（正規化的 a、b、c），而 :ref:`d<class_Plane_property_d>` 是原點到平面的距離（沿“法線”方向）。平面的“上方”是平面朝向法線方向的一面。
+Represents a normalized plane equation. :ref:`normal<class_Plane_property_normal>` is the normal of the plane (a, b, c normalized), and :ref:`d<class_Plane_property_d>` is the distance from the origin to the plane (in the direction of "normal"). "Over" or "Above" the plane is considered the side of the plane towards where the normal is pointing.
+
+\ **Note:** In a boolean context, a plane will evaluate to ``false`` if all its components equal ``0``. Otherwise, a plane will always evaluate to ``true``.
 
 .. rst-class:: classref-introduction-group
 

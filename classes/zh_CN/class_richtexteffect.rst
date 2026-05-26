@@ -42,8 +42,6 @@ RichTextEffect
 
 - :doc:`RichTextLabel 中的 BBCode <../tutorials/ui/bbcode_in_richtextlabel>`
 
-- `RichTextEffect 测试项目（第三方） <https://github.com/Eoin-ONeill-Yokai/Godot-Rich-Text-Effect-Test-Project>`__
-
 .. rst-class:: classref-reftable-group
 
 方法

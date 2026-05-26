@@ -26,19 +26,29 @@ Please note that many resources and nodes assume they are given *unit curves*. A
 .. table::
    :widths: auto
 
-   +---------------------------+--------------------------------------------------------------+---------+
-   | :ref:`int<class_int>`     | :ref:`bake_resolution<class_Curve_property_bake_resolution>` | ``100`` |
-   +---------------------------+--------------------------------------------------------------+---------+
-   | :ref:`float<class_float>` | :ref:`max_domain<class_Curve_property_max_domain>`           | ``1.0`` |
-   +---------------------------+--------------------------------------------------------------+---------+
-   | :ref:`float<class_float>` | :ref:`max_value<class_Curve_property_max_value>`             | ``1.0`` |
-   +---------------------------+--------------------------------------------------------------+---------+
-   | :ref:`float<class_float>` | :ref:`min_domain<class_Curve_property_min_domain>`           | ``0.0`` |
-   +---------------------------+--------------------------------------------------------------+---------+
-   | :ref:`float<class_float>` | :ref:`min_value<class_Curve_property_min_value>`             | ``0.0`` |
-   +---------------------------+--------------------------------------------------------------+---------+
-   | :ref:`int<class_int>`     | :ref:`point_count<class_Curve_property_point_count>`         | ``0``   |
-   +---------------------------+--------------------------------------------------------------+---------+
+   +-------------------------------+--------------------------------------------------------------------------------------+-------------------+
+   | :ref:`int<class_int>`         | :ref:`bake_resolution<class_Curve_property_bake_resolution>`                         | ``100``           |
+   +-------------------------------+--------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>`     | :ref:`max_domain<class_Curve_property_max_domain>`                                   | ``1.0``           |
+   +-------------------------------+--------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>`     | :ref:`max_value<class_Curve_property_max_value>`                                     | ``1.0``           |
+   +-------------------------------+--------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>`     | :ref:`min_domain<class_Curve_property_min_domain>`                                   | ``0.0``           |
+   +-------------------------------+--------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>`     | :ref:`min_value<class_Curve_property_min_value>`                                     | ``0.0``           |
+   +-------------------------------+--------------------------------------------------------------------------------------+-------------------+
+   | :ref:`int<class_int>`         | :ref:`point_count<class_Curve_property_point_count>`                                 | ``0``             |
+   +-------------------------------+--------------------------------------------------------------------------------------+-------------------+
+   | :ref:`int<class_int>`         | :ref:`point_{index}/left_mode<class_Curve_property_point_{index}/left_mode>`         | ``0``             |
+   +-------------------------------+--------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>`     | :ref:`point_{index}/left_tangent<class_Curve_property_point_{index}/left_tangent>`   | ``0.0``           |
+   +-------------------------------+--------------------------------------------------------------------------------------+-------------------+
+   | :ref:`Vector2<class_Vector2>` | :ref:`point_{index}/position<class_Curve_property_point_{index}/position>`           | ``Vector2(0, 0)`` |
+   +-------------------------------+--------------------------------------------------------------------------------------+-------------------+
+   | :ref:`int<class_int>`         | :ref:`point_{index}/right_mode<class_Curve_property_point_{index}/right_mode>`       | ``0``             |
+   +-------------------------------+--------------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>`     | :ref:`point_{index}/right_tangent<class_Curve_property_point_{index}/right_tangent>` | ``0.0``           |
+   +-------------------------------+--------------------------------------------------------------------------------------+-------------------+
 
 .. rst-class:: classref-reftable-group
 
@@ -265,6 +275,76 @@ The minimum value (y-coordinate) that points can have. Tangents can cause lower 
 
 描述該曲線的點的數量。
 
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Curve_property_point_{index}/left_mode:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **point_{index}/left_mode** = ``0`` :ref:`🔗<class_Curve_property_point_{index}/left_mode>`
+
+The left :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Curve_property_point_{index}/left_tangent:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **point_{index}/left_tangent** = ``0.0`` :ref:`🔗<class_Curve_property_point_{index}/left_tangent>`
+
+The left tangent angle (in degrees) for the point at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Curve_property_point_{index}/position:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2<class_Vector2>` **point_{index}/position** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve_property_point_{index}/position>`
+
+The position of the point at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Curve_property_point_{index}/right_mode:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **point_{index}/right_mode** = ``0`` :ref:`🔗<class_Curve_property_point_{index}/right_mode>`
+
+The right :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Curve_property_point_{index}/right_tangent:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **point_{index}/right_tangent** = ``0.0`` :ref:`🔗<class_Curve_property_point_{index}/right_tangent>`
+
+The right tangent angle (in degrees) for the point at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+
 .. rst-class:: classref-section-separator
 
 ----
@@ -472,7 +552,7 @@ Returns the difference between :ref:`min_value<class_Curve_property_min_value>` 
 
 :ref:`int<class_int>` **set_point_offset**\ (\ index\: :ref:`int<class_int>`, offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Curve_method_set_point_offset>`
 
-設定相對於 ``0.5`` 的偏移量。
+Assigns the horizontal position ``offset`` to the point at ``index``.
 
 .. rst-class:: classref-item-separator
 

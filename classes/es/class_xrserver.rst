@@ -156,6 +156,18 @@ Emitida al eliminar un rastreador. Debe eliminar cualquier punto :ref:`XRControl
 
 Emitida cuando se actualiza un rastreador existente. Esto puede ocurrir si el usuario cambia de controlador.
 
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_XRServer_signal_world_origin_changed:
+
+.. rst-class:: classref-signal
+
+**world_origin_changed**\ (\ ) :ref:`🔗<class_XRServer_signal_world_origin_changed>`
+
+Emitted when the world origin transform changes.
+
 .. rst-class:: classref-section-separator
 
 ----

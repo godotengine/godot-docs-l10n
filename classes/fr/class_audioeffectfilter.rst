@@ -9,14 +9,22 @@ AudioEffectFilter
 
 **Hérité par :** :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`, :ref:`AudioEffectHighPassFilter<class_AudioEffectHighPassFilter>`, :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`, :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFilter>`, :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>`, :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`
 
-Ajoute un filtre au bus audio.
+Base class for filters. Use effects that inherit this class instead of using it directly.
 
 .. rst-class:: classref-introduction-group
 
 Description
 -----------
 
-Autorise les fréquences autres que :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` à passer.
+A "filter" controls the gain of frequencies, using :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` as a frequency threshold. Filters can help to give room for each sound, and create interesting effects.
+
+There are different types of filter that inherit this class:
+
+Shelf filters: :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` and :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`\ 
+
+Band-pass and notch filters: :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`, :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, and :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`\ 
+
+Low/high-pass filters: :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFilter>` and :ref:`AudioEffectHighPassFilter<class_AudioEffectHighPassFilter>`
 
 .. rst-class:: classref-introduction-group
 
@@ -24,6 +32,8 @@ Tutoriels
 ------------------
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -64,7 +74,7 @@ enum **FilterDB**: :ref:`🔗<enum_AudioEffectFilter_FilterDB>`
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_6DB** = ``0``
 
-Coupe de 6 dB par octave.
+Cutting off at 6 dB per octave. One octave is twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
 .. _class_AudioEffectFilter_constant_FILTER_12DB:
 
@@ -72,7 +82,7 @@ Coupe de 6 dB par octave.
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_12DB** = ``1``
 
-Coupe de 12 dB par octave.
+Cutting off at 12 dB per octave. One octave is twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
 .. _class_AudioEffectFilter_constant_FILTER_18DB:
 
@@ -80,7 +90,7 @@ Coupe de 12 dB par octave.
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_18DB** = ``2``
 
-Coupe de 18 dB par octave.
+Cutting off at 18 dB per octave. One octave is twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
 .. _class_AudioEffectFilter_constant_FILTER_24DB:
 
@@ -88,7 +98,7 @@ Coupe de 18 dB par octave.
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_24DB** = ``3``
 
-Coupe de 24 dB par octave.
+Cutting off at 24 dB per octave. One octave is twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
 .. rst-class:: classref-section-separator
 
@@ -110,7 +120,7 @@ Descriptions des propriétés
 - |void| **set_cutoff**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cutoff**\ (\ )
 
-Le fréquence seuil pour le filtre, en Hz.
+Frequency threshold for the filter, in Hz. Value can range from 1 to 20500.
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +137,7 @@ Le fréquence seuil pour le filtre, en Hz.
 - |void| **set_db**\ (\ value\: :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>`\ )
 - :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **get_db**\ (\ )
 
-Pente de la courbe de coupure en dB par octave, également appelée l'ordre du filtre. Les ordres supérieurs ont une coupure plus agressive.
+Steepness of the cutoff curve in dB per octave (twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`), also known as the "order" of the filter. Higher orders have a more aggressive cutoff.
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +154,7 @@ Pente de la courbe de coupure en dB par octave, également appelée l'ordre du f
 - |void| **set_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gain**\ (\ )
 
-La valeur du gain de fréquences après le filtre.
+Gain of the frequencies affected by the filter. This property is only available for :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` and :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`. Value can range from 0 to 4.
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +171,15 @@ La valeur du gain de fréquences après le filtre.
 - |void| **set_resonance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_resonance**\ (\ )
 
-Quantité de boost dans les harmoniques près de la fréquence de coupure.
+Gain at or directly next to the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` frequency threshold. Value can range from 0 to 1.
+
+Its exact behavior depends on the selected filter type:
+
+- For shelf filters, it accentuates or masks the order by increasing frequencies right next to the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` frequency and decreasing frequencies on the opposite side.
+
+- For the band-pass and notch filters, it widens or narrows the filter at the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` frequency threshold.
+
+- For low/high-pass filters, it increases or decreases frequencies at the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` frequency threshold.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

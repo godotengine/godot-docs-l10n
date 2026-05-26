@@ -372,9 +372,9 @@ Si es ``true``, el botón se resaltará durante un breve periodo de tiempo cuand
 - |void| **set_shortcut_in_tooltip**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_in_tooltip_enabled**\ (\ )
 
-Si es ``true``, el botón añadirá información sobre su atajo en la descripción emergente (tooltip).
+If ``true``, the button will add information about its shortcut in the tooltip. This includes the shortcut's events and its :ref:`Resource.resource_name<class_Resource_property_resource_name>`. If both events and name are empty, the shortcut will not be included.
 
-\ **Nota:** Esta propiedad no hace nada cuando el control de la descripción emergente se personaliza mediante :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
+\ **Note:** This property does nothing when the tooltip control is customized using :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
 
 .. rst-class:: classref-item-separator
 

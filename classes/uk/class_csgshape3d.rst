@@ -42,6 +42,8 @@ CSGShape3D
    :widths: auto
 
    +---------------------------------------------+-------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`                     | :ref:`autosmooth<class_CSGShape3D_property_autosmooth>`                 | ``false`` |
+   +---------------------------------------------+-------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`                     | :ref:`calculate_tangents<class_CSGShape3D_property_calculate_tangents>` | ``true``  |
    +---------------------------------------------+-------------------------------------------------------------------------+-----------+
    | :ref:`int<class_int>`                       | :ref:`collision_layer<class_CSGShape3D_property_collision_layer>`       | ``1``     |
@@ -51,6 +53,8 @@ CSGShape3D
    | :ref:`float<class_float>`                   | :ref:`collision_priority<class_CSGShape3D_property_collision_priority>` | ``1.0``   |
    +---------------------------------------------+-------------------------------------------------------------------------+-----------+
    | :ref:`Operation<enum_CSGShape3D_Operation>` | :ref:`operation<class_CSGShape3D_property_operation>`                   | ``0``     |
+   +---------------------------------------------+-------------------------------------------------------------------------+-----------+
+   | :ref:`float<class_float>`                   | :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>`       | ``50.0``  |
    +---------------------------------------------+-------------------------------------------------------------------------+-----------+
    | :ref:`float<class_float>`                   | :ref:`snap<class_CSGShape3D_property_snap>`                             |           |
    +---------------------------------------------+-------------------------------------------------------------------------+-----------+
@@ -130,6 +134,25 @@ enum **Operation**: :ref:`🔗<enum_CSGShape3D_Operation>`
 
 Описи властивостей
 ------------------------------------
+
+.. _class_CSGShape3D_property_autosmooth:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **autosmooth** = ``false`` :ref:`🔗<class_CSGShape3D_property_autosmooth>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_autosmooth**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_autosmooth**\ (\ )
+
+Enables automatic smoothing. This overrides any smoothing on the CSG node and instead uses :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>` to calculate normals based on the angle between faces.
+
+Children of a :ref:`CSGCombiner3D<class_CSGCombiner3D>` node will be treated as a single mesh.
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_CSGShape3D_property_calculate_tangents:
 
@@ -215,6 +238,25 @@ enum **Operation**: :ref:`🔗<enum_CSGShape3D_Operation>`
 - :ref:`Operation<enum_CSGShape3D_Operation>` **get_operation**\ (\ )
 
 Операція, яка виконується за цією формою. Це ігнорується для першого CSG дочірнього вузла, оскільки операція є між цією вершиною і попередньої дитини цього вершини батьків.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_CSGShape3D_property_smoothing_angle:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **smoothing_angle** = ``50.0`` :ref:`🔗<class_CSGShape3D_property_smoothing_angle>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_smoothing_angle**\ (\ value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_smoothing_angle**\ (\ )
+
+When autosmooth is enabled, faces with an angle between them greater than this will be smoothed, while faces with a smaller angle will remain sharp.
+
+Note: An angle lower than 0.1 will cause all smoothing to be disabled, this can be used to increase performance.
 
 .. rst-class:: classref-item-separator
 

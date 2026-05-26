@@ -16,6 +16,13 @@ Description
 
 C'est un flux qui peut être équipé de sous-flux, qui seront joués en synchro. Les flux commencent exactement en même temps quand "jouer" est appuyé, et se termineront quand le dernier d'entre eux se terminera. Si l'un des sous-flux boucle, la lecture se poursuivra.
 
+.. rst-class:: classref-introduction-group
+
+Tutoriels
+------------------
+
+- :doc:`Flux audio <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 Propriétés

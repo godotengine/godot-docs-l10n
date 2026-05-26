@@ -12,11 +12,13 @@ Un array compatto di byte.
 Descrizione
 ----------------------
 
-Un array specificamente progettato per contenere byte. Impacchetta i dati in modo compatto, in modo da risparmiare memoria per array di grandi dimensioni.
+An array specifically designed to hold bytes. Packs data tightly, so it saves memory for large array sizes.
 
-\ **PackedByteArray** fornisce anche metodi per codificare/decodificare vari tipi da/a byte. Il modo in cui i valori sono codificati è un dettaglio di implementazione e non ci si dovrebbe dipendere quando si interagisce con applicazioni esterne.
+\ **PackedByteArray** also provides methods to encode/decode various types to/from bytes. The way values are encoded is an implementation detail and shouldn't be relied upon when interacting with external apps.
 
-\ **Nota:** Gli array impacchettati sono sempre passati per riferimento. Per ottenere una copia di un array che può essere modificata indipendentemente dall'array originale, usa :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. Questo *non* è il caso per le proprietà e per i metodi integrati. L'array impacchettato restituito da essi è una copia e modificarlo *non* influenzerà il valore originale. Per aggiornare una proprietà integrata è necessario modificare l'array restituito e successivamente riassegnarlo alla proprietà.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 

@@ -76,9 +76,9 @@ Ogg Vorbis 比 :ref:`ResourceImporterWAV<class_ResourceImporterWAV>` 需要更�
 
 :ref:`int<class_int>` **bar_beats** = ``4`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bar_beats>`
 
-音轨中单个节拍内的小节数。这仅与希望利用交互式音乐功能的音乐相关，与声音效果无关。
+The number of beats within a single bar in the audio track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-\ **高级导入设置**\ 对话框中为 :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` 提供了更方便的编辑器，因为它可以让你预览更改，且无需重新导入音频。
+A more convenient editor for :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ Ogg Vorbis 比 :ref:`ResourceImporterWAV<class_ResourceImporterWAV>` 需要更�
 
 :ref:`int<class_int>` **beat_count** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_beat_count>`
 
-该音轨的节拍数。这仅与希望利用交互式音乐功能的音乐相关，与声音效果无关。
+The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-\ **高级导入设置**\ 对话框中为 :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` 提供了更方便的编辑器，因为它可以让你预览更改，且无需重新导入音频。
+A more convenient editor for :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -104,9 +104,9 @@ Ogg Vorbis 比 :ref:`ResourceImporterWAV<class_ResourceImporterWAV>` 需要更�
 
 :ref:`float<class_float>` **bpm** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bpm>`
 
-音轨的每分钟节拍数。这应该与用于创作曲目的 BPM 测量相匹配。这仅与希望利用交互式音乐功能的音乐相关，与声音效果无关。
+The tempo of the audio track, measured in beats per minute. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-\ **高级导入设置**\ 对话框中为 :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` 提供了更方便的编辑器，因为它可以让你预览更改，且无需重新导入音频。
+A more convenient editor for :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -118,9 +118,9 @@ Ogg Vorbis 比 :ref:`ResourceImporterWAV<class_ResourceImporterWAV>` 需要更�
 
 :ref:`bool<class_bool>` **loop** = ``false`` :ref:`🔗<class_ResourceImporterOggVorbis_property_loop>`
 
-如果启用，音频将在播放因到达音频末尾而结束后从头开始播放。
+If enabled, the audio will begin playing either from the beginning or from :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>`, after playback ends by either reaching the end of the audio or reaching the end of the last beat according to the amount specified in :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>`.
 
-\ **注意：**\ 在 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 中，当循环音频到达音频文件末尾时，不会发出 :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` 信号，因为音频将无限期地继续播放。
+\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
 
 .. rst-class:: classref-item-separator
 

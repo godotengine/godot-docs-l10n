@@ -1133,9 +1133,9 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 |void| **seek_end**\ (\ position\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_FileAccess_method_seek_end>`
 
-Устанавливает файловый курсор в указанную позицию в байтах от конца файла. Это изменяет значение, возвращаемое методом :ref:`get_position()<class_FileAccess_method_get_position>`.
+Sets the file cursor to the specified position in bytes, from the end of the file. This changes the value returned by :ref:`get_position()<class_FileAccess_method_get_position>`.
 
-\ **Примечание:** Это смещение, поэтому следует использовать отрицательные числа, иначе файловый курсор будет в конце файла.
+\ **Note:** This is an offset, so you should use negative numbers otherwise the file cursor will move past the end of the file.
 
 .. rst-class:: classref-item-separator
 

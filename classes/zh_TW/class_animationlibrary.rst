@@ -60,9 +60,9 @@ AnimationLibrary
 
 .. rst-class:: classref-signal
 
-**animation_added**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_added>`
+**animation_added**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_added>`
 
-當新增鍵為 ``name`` 的 :ref:`Animation<class_Animation>` 時發出。
+Emitted when an :ref:`Animation<class_Animation>` is added, under the key ``anim_name``.
 
 .. rst-class:: classref-item-separator
 
@@ -72,11 +72,11 @@ AnimationLibrary
 
 .. rst-class:: classref-signal
 
-**animation_changed**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_changed>`
+**animation_changed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_changed>`
 
-當某個動畫發生變化（如新增、移動軌道或變更路徑）時發出。\ ``name`` 為變更之動畫的鍵。
+Emitted when there's a change in one of the animations, e.g. tracks are added, moved or have changed paths. ``anim_name`` is the key of the animation that was changed.
 
-亦可參閱作為轉接之 :ref:`Resource.changed<class_Resource_signal_changed>`\ 。
+See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts as a relay for.
 
 .. rst-class:: classref-item-separator
 
@@ -86,9 +86,9 @@ AnimationLibrary
 
 .. rst-class:: classref-signal
 
-**animation_removed**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_removed>`
+**animation_removed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_removed>`
 
-當移除鍵為 ``name`` 的 :ref:`Animation<class_Animation>` 時發出。
+Emitted when an :ref:`Animation<class_Animation>` stored with the key ``anim_name`` is removed.
 
 .. rst-class:: classref-item-separator
 
@@ -98,9 +98,9 @@ AnimationLibrary
 
 .. rst-class:: classref-signal
 
-**animation_renamed**\ (\ name\: :ref:`StringName<class_StringName>`, to_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_renamed>`
+**animation_renamed**\ (\ old_name\: :ref:`StringName<class_StringName>`, new_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_renamed>`
 
-當某 :ref:`Animation<class_Animation>` 的鍵由 ``name`` 改為 ``to_name`` 時發出。
+Emitted when the key for an :ref:`Animation<class_Animation>` is changed, from ``old_name`` to ``new_name``.
 
 .. rst-class:: classref-section-separator
 

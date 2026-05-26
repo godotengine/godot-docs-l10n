@@ -7,14 +7,18 @@ AudioEffectReverb
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Agrega un efecto de audio de reverberación a un bus de audio.
+Adds a reverberation audio effect to an audio bus.
+
+Emulates an echo by playing a blurred version of the input audio.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Simula el sonido de entornos acústicos como habitaciones, salas de conciertos, cavernas o espacios abiertos.
+A "reverb" effect plays the input audio back continuously, decaying over a period of time. It simulates sounds in different kinds of spaces, ranging from small rooms, to big caverns.
+
+See also :ref:`AudioEffectDelay<class_AudioEffectDelay>` for a non-blurry type of echo.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +26,8 @@ Tutoriales
 --------------------
 
 - :doc:`Buses de audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 - `Demo de Shooter en Tercera Persona (TPS) <https://godotengine.org/asset-library/asset/2710>`__
 
@@ -71,7 +77,7 @@ Descripciones de Propiedades
 - |void| **set_damping**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping**\ (\ )
 
-Define cuán reflexivas son las paredes de la sala imaginaria. El valor puede variar entre 0 y 1.
+Defines how reflective the imaginary room's walls are. The more reflective, the more high frequency content the reverb has. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +94,7 @@ Define cuán reflexivas son las paredes de la sala imaginaria. El valor puede va
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-El porcentaje de salida del sonido original. A 0, sólo se emite el sonido modificado. El valor puede variar entre 0 y 1.
+The volume ratio of the original audio. At 0, only the modified audio is outputted. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +111,7 @@ El porcentaje de salida del sonido original. A 0, sólo se emite el sonido modif
 - |void| **set_hpf**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_hpf**\ (\ )
 
-El filtro de paso alto pasa señales con una frecuencia superior a una determinada frecuencia de corte y atenúa las señales con frecuencias inferiores a la frecuencia de corte. El valor puede variar entre 0 y 1.
+High-pass filter allows frequencies higher than a certain cutoff threshold and attenuates frequencies lower than the cutoff threshold. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +128,7 @@ El filtro de paso alto pasa señales con una frecuencia superior a una determina
 - |void| **set_predelay_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_feedback**\ (\ )
 
-El porcentaje de salida de la preretardo. El valor puede variar entre 0 y 1.
+Gain of early reflection copies. At higher values, early reflection copies are louder and ring out for longer. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +145,7 @@ El porcentaje de salida de la preretardo. El valor puede variar entre 0 y 1.
 - |void| **set_predelay_msec**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_msec**\ (\ )
 
-Tiempo entre la señal original y las primeras reflexiones de la señal de reverberación, en milisegundos.
+Time between the original audio and the early reflections of the reverb signal, in milliseconds. Value can range from 20 to 500.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +179,7 @@ Dimensiones de la habitación simulada. Más grande significa más ecos. El valo
 - |void| **set_spread**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_spread**\ (\ )
 
-Amplía o estrecha la imagen estéreo de la cola de reverberación. 1 significa que se ensancha completamente. El valor puede variar entre 0 y 1.
+Widens or narrows the stereo image of the reverb tail. At 1, it fully widens. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +196,7 @@ Amplía o estrecha la imagen estéreo de la cola de reverberación. 1 significa 
 - |void| **set_wet**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wet**\ (\ )
 
-El porcentaje de salida del sonido modificado. A 0, sólo se emite el sonido original. El valor puede variar entre 0 y 1.
+The volume ratio of the modified audio. At 0, only the original audio is outputted. Value can range from 0 to 1.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

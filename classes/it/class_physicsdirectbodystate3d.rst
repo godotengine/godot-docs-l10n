@@ -735,7 +735,9 @@ Restituisce lo stato attuale dello spazio, utile per le interrogazioni.
 
 :ref:`Vector3<class_Vector3>` **get_velocity_at_local_position**\ (\ local_position\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_velocity_at_local_position>`
 
-Restituisce la velocità del corpo nella posizione relativa specificata, includendo sia la traslazione sia la rotazione.
+Returns the body's velocity at the given relative position.
+
+\ ``local_position`` is the offset from the body origin in global coordinates.
 
 .. rst-class:: classref-item-separator
 

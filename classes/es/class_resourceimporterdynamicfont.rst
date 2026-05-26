@@ -50,7 +50,7 @@ Propiedades
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`             | :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>`                                     | ``false`` |
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`               | :ref:`hinting<class_ResourceImporterDynamicFont_property_hinting>`                                                       | ``1``     |
+   | :ref:`int<class_int>`               | :ref:`hinting<class_ResourceImporterDynamicFont_property_hinting>`                                                       | ``3``     |
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`             | :ref:`keep_rounding_remainders<class_ResourceImporterDynamicFont_property_keep_rounding_remainders>`                     | ``true``  |
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------+
@@ -182,7 +182,7 @@ Activar :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_genera
 
 .. rst-class:: classref-property
 
-:ref:`int<class_int>` **hinting** = ``1`` :ref:`🔗<class_ResourceImporterDynamicFont_property_hinting>`
+:ref:`int<class_int>` **hinting** = ``3`` :ref:`🔗<class_ResourceImporterDynamicFont_property_hinting>`
 
 The hinting mode to use. This controls how aggressively glyph edges should be snapped to pixels when rasterizing the font. Depending on personal preference, you may prefer using one hinting mode over the other. Hinting modes other than **None** are only effective if the font contains hinting data (see :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`).
 
@@ -191,6 +191,10 @@ The hinting mode to use. This controls how aggressively glyph edges should be sn
 \ **Light:** Sharp result by snapping glyph edges to pixels on the Y axis only.
 
 \ **Normal:** Sharpest by snapping glyph edges to pixels on both X and Y axes.
+
+\ **Light (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Light** for other fonts.
+
+\ **Normal (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Normal** for other fonts.
 
 .. rst-class:: classref-item-separator
 
@@ -324,17 +328,17 @@ Sobrescribe la lista de escrituras de idiomas compatibles con esta fuente. Si se
 
 :ref:`int<class_int>` **subpixel_positioning** = ``4`` :ref:`🔗<class_ResourceImporterDynamicFont_property_subpixel_positioning>`
 
-El posicionamiento de subpíxeles mejora la apariencia del renderizado de la fuente, especialmente en tamaños de fuente más pequeños. La desventaja es que lleva más tiempo renderizar inicialmente la fuente, lo que puede causar tartamudeo durante el juego, especialmente si se usa con tamaños de fuente grandes. Esto debería establecerse en **Desactivado** para fuentes con apariencia de pixel art.
+Subpixel positioning improves font rendering appearance, especially at smaller font sizes. The downside is that it takes more time to initially render the font, which can cause stuttering during gameplay, especially if used with large font sizes. This should be set to **Disabled** for fonts with a pixel art appearance.
 
-\ **Desactivado:** Sin posicionamiento de subpíxeles. La calidad más baja, el renderizado más rápido.
+\ **Disabled:** No subpixel positioning. Lowest quality, fastest rendering.
 
-\ **Automático:** Usar posicionamiento de subpíxeles en tamaños de fuente pequeños (la calidad elegida varía según el tamaño de la fuente). Las fuentes grandes no usarán posicionamiento de subpíxeles. Esta es una buena compensación entre rendimiento y calidad.
+\ **Auto:** Use subpixel positioning at small font sizes (the chosen quality varies depending on font size). Large fonts will not use subpixel positioning. This is a good tradeoff between performance and quality.
 
-\ **Medio Píxel:** Realizar siempre un posicionamiento de subpíxeles intermedio independientemente del tamaño de la fuente. Alta calidad, renderizado lento.
+\ **One Half of a Pixel:** Always perform intermediate subpixel positioning regardless of font size. High quality, slow rendering.
 
-\ **Un Cuarto de Píxel:** Realizar siempre un posicionamiento de subpíxeles preciso independientemente del tamaño de la fuente. La más alta calidad, el renderizado más lento.
+\ **One Quarter of a Pixel:** Always perform precise subpixel positioning regardless of font size. Highest quality, slowest rendering.
 
-\ **Automático (Excepto Fuentes Pixel):** **Desactivado** para las fuentes de estilo píxel (los contornos de cada glifo contienen solo líneas rectas horizontales y verticales), **Automático** para las demás fuentes.
+\ **Auto (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Auto** for other fonts.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

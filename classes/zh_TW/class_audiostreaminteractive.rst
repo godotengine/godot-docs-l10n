@@ -18,6 +18,13 @@ AudioStreamInteractive
 
 使用方式為先填入多個片段，再設定轉場表。之後會依轉場表中定義的規則選擇片段播放，音樂將會從目前片段順暢地銜接到下一個片段。
 
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`音訊流 <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 屬性
@@ -152,6 +159,14 @@ enum **TransitionToTime**: :ref:`🔗<enum_AudioStreamInteractive_TransitionToTi
 :ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_START** = ``1``
 
 轉場到目的片段的開始。
+
+.. _class_AudioStreamInteractive_constant_TRANSITION_TO_TIME_PREVIOUS_POSITION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_PREVIOUS_POSITION** = ``2``
+
+Transition to the last played position in the destination clip, if there was a previous transition from that clip. Otherwise, plays from the start of the destination clip.
 
 .. rst-class:: classref-item-separator
 

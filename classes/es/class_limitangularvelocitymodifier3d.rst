@@ -14,9 +14,11 @@ Limita la velocidad angular de rotación del hueso.
 Descripción
 ----------------------
 
-Este modificador limita la velocidad angular de rotación de los huesos comparando poses entre el fotograma anterior y el actual.
+This modifier limits bone rotation angular velocity by comparing poses between previous and current frame.
 
-Puedes añadir cadenas de huesos especificando sus huesos raíz y final, y luego añadir los huesos intermedios a una lista. El modificador procesa esa lista o los huesos excluyendo los de la lista, dependiendo de la opción :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
+You can add bone chains by specifying their root and end bones, then add the bones between them to a list. Modifier processes either that list or the bones excluding those in the list depending on the option :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
+
+\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 

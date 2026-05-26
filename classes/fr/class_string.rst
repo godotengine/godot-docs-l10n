@@ -470,22 +470,24 @@ Renvoie une copie de la chaîne avec les caractères d'échappement remplacés p
 
 :ref:`String<class_String>` **capitalize**\ (\ ) |const| :ref:`🔗<class_String_method_capitalize>`
 
-Change l'apparence de la chaîne de caractères : remplace les tirets bas (``_``) par des espaces, ajoute des espaces avant les lettres majuscules au milieu d'un mot, convertit toutes les lettres en minuscule, puis convertit la première lettre et chacune après un espace en majuscules.
+Returns a copy of the string with changed appearance. Replaces underscores (``_``) and hyphens (``-``) with spaces, adds spaces before uppercase letters in the middle of a word, converts all letters to lowercase, then converts the first one and each one following a space to uppercase.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    "move_local_x".capitalize() # Renvoie "Move Local X"
-    "sceneFile_path".capitalize() # Renvoie "Scene File Path"
-    "2D, FPS, PNG".capitalize() # Renvoie "2d, Fps, Png"
+    "move_local_x".capitalize()   # Returns "Move Local X"
+    "sceneFile_path".capitalize() # Returns "Scene File Path"
+    "2D, FPS, PNG".capitalize()   # Returns "2d, Fps, Png"
+    "example-name".capitalize()   # Returns "Example Name"
 
  .. code-tab:: csharp
 
-    "move_local_x".Capitalize(); // Renvoie "Move Local X"
-    "sceneFile_path".Capitalize(); // Renvoie "Scene File Path"
-    "2D, FPS, PNG".Capitalize(); // Renvoie "2d, Fps, Png"
+    "move_local_x".Capitalize();   // Returns "Move Local X"
+    "sceneFile_path".Capitalize(); // Returns "Scene File Path"
+    "2D, FPS, PNG".Capitalize();   // Returns "2d, Fps, Png"
+    "example-name".Capitalize();   // Returns "Example Name"
 
 
 

@@ -14,12 +14,16 @@ AudioStreamOggVorbis
 Опис
 --------
 
-Клас AudioStreamOggVorbis є спеціалізованим :ref:`AudioStream<class_AudioStream>` для обробки форматів файлів Ogg Vorbis. Він пропонує функціональність для завантаження та відтворення файлів Ogg Vorbis, а також керування циклом та іншими властивостями відтворення. Цей клас є частиною системи аудіопотоку, яка також підтримує файли WAV через клас :ref:`AudioStreamWAV<class_AudioStreamWAV>`.
+The AudioStreamOggVorbis class is a specialized :ref:`AudioStream<class_AudioStream>` for handling Ogg Vorbis file formats. It offers functionality for loading and playing back Ogg Vorbis files, as well as managing looping and other playback properties. More info can be found in :ref:`ResourceImporterOggVorbis<class_ResourceImporterOggVorbis>`.
+
+This class is part of the audio stream system, which also supports WAV files through the :ref:`AudioStreamWAV<class_AudioStreamWAV>` class, and MP3 files through the :ref:`AudioStreamMP3<class_AudioStreamMP3>` class.
 
 .. rst-class:: classref-introduction-group
 
 Посібники
 ------------------
+
+- :doc:`Звукові потоки <../tutorials/audio/audio_streams>`
 
 - :doc:`Завантаження та збереження файлів під час виконання <../tutorials/io/runtime_file_loading_and_saving>`
 
@@ -81,9 +85,7 @@ AudioStreamOggVorbis
 - |void| **set_bar_beats**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bar_beats**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+The number of beats within a single bar in the audio track.
 
 .. rst-class:: classref-item-separator
 
@@ -100,9 +102,7 @@ AudioStreamOggVorbis
 - |void| **set_beat_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_beat_count**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. It defines the end of the audio for looping, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`, and :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
 
 .. rst-class:: classref-item-separator
 
@@ -119,9 +119,7 @@ AudioStreamOggVorbis
 - |void| **set_bpm**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bpm**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+The tempo of the audio track, measured in beats per minute.
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +136,7 @@ AudioStreamOggVorbis
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-Якщо ``true``, аудіо відтворюватиметься знову з указаного :ref:`loop_offset<class_AudioStreamOggVorbis_property_loop_offset>` після завершення відтворення. Корисно для навколишніх звуків і фонової музики.
+If ``true``, the stream will play again from the specified :ref:`loop_offset<class_AudioStreamOggVorbis_property_loop_offset>` once it reaches the end of the audio track, or once it reaches the end of the last beat according to the amount specified in :ref:`beat_count<class_AudioStreamOggVorbis_property_beat_count>`. Useful for ambient sounds and background music.
 
 .. rst-class:: classref-item-separator
 

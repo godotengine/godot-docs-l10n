@@ -7,23 +7,25 @@ AudioEffectSpectrumAnalyzer
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Efecto de audio que puede usarse para visualizaciones de audio en tiempo real.
+Creates an :ref:`AudioEffectInstance<class_AudioEffectInstance>` which performs frequency analysis and exposes results to be accessed in real-time.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Este efecto de audio no afecta la salida de sonido, pero puede utilizarse para visualizaciones de audio en tiempo real.
+Calculates a Fourier Transform of the audio signal. This effect does not alter the audio. Can be used for creating real-time audio visualizations, like a spectrogram.
 
-Este recurso configura una instancia de :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`, que realiza el análisis propiamente dicho en tiempo de ejecución. Se puede obtener una instancia mediante :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>`.
-
-Véase también :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` para generar sonidos de forma procedural.
+This resource configures an :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`, which performs the actual analysis at runtime. An instance should be obtained with :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` to make use of this effect.
 
 .. rst-class:: classref-introduction-group
 
 Tutoriales
 --------------------
+
+- :doc:`Buses de audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 - `Demo de Visualizador de Espectro de Audio <https://godotengine.org/asset-library/asset/2762>`__
 
@@ -35,13 +37,11 @@ Propiedades
 .. table::
    :widths: auto
 
-   +----------------------------------------------------------+--------------------------------------------------------------------------------+----------+
-   | :ref:`float<class_float>`                                | :ref:`buffer_length<class_AudioEffectSpectrumAnalyzer_property_buffer_length>` | ``2.0``  |
-   +----------------------------------------------------------+--------------------------------------------------------------------------------+----------+
-   | :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` | :ref:`fft_size<class_AudioEffectSpectrumAnalyzer_property_fft_size>`           | ``2``    |
-   +----------------------------------------------------------+--------------------------------------------------------------------------------+----------+
-   | :ref:`float<class_float>`                                | :ref:`tap_back_pos<class_AudioEffectSpectrumAnalyzer_property_tap_back_pos>`   | ``0.01`` |
-   +----------------------------------------------------------+--------------------------------------------------------------------------------+----------+
+   +----------------------------------------------------------+--------------------------------------------------------------------------------+---------+
+   | :ref:`float<class_float>`                                | :ref:`buffer_length<class_AudioEffectSpectrumAnalyzer_property_buffer_length>` | ``2.0`` |
+   +----------------------------------------------------------+--------------------------------------------------------------------------------+---------+
+   | :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` | :ref:`fft_size<class_AudioEffectSpectrumAnalyzer_property_fft_size>`           | ``2``   |
+   +----------------------------------------------------------+--------------------------------------------------------------------------------+---------+
 
 .. rst-class:: classref-section-separator
 
@@ -126,7 +126,7 @@ Descripciones de Propiedades
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-La duración del búfer que se mantendrá (en segundos). Los valores más altos conservan los datos durante más tiempo, pero requieren más memoria.
+The length of the buffer to keep, in seconds. Higher values keep data around for longer, but require more memory. Value can range from 0.1 to 4.
 
 .. rst-class:: classref-item-separator
 
@@ -144,25 +144,6 @@ La duración del búfer que se mantendrá (en segundos). Los valores más altos 
 - :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` **get_fft_size**\ (\ )
 
 El tamaño del búfer de `Transformada rápida de Fourier <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__. Valores más altos suavizan el análisis del espectro a lo largo del tiempo, pero generan mayor latencia. Los efectos de esta mayor latencia son especialmente notables con cambios repentinos de amplitud.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_AudioEffectSpectrumAnalyzer_property_tap_back_pos:
-
-.. rst-class:: classref-property
-
-:ref:`float<class_float>` **tap_back_pos** = ``0.01`` :ref:`🔗<class_AudioEffectSpectrumAnalyzer_property_tap_back_pos>`
-
-.. rst-class:: classref-property-setget
-
-- |void| **set_tap_back_pos**\ (\ value\: :ref:`float<class_float>`\ )
-- :ref:`float<class_float>` **get_tap_back_pos**\ (\ )
-
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

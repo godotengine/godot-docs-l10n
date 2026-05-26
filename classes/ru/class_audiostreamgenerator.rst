@@ -86,6 +86,8 @@ AudioStreamGenerator
 Обучающие материалы
 --------------------------------------
 
+- :doc:`Аудиопотоки <../tutorials/audio/audio_streams>`
+
 - `Демонстрация звукового генератора <https://godotengine.org/asset-library/asset/2759>`__
 
 .. rst-class:: classref-reftable-group

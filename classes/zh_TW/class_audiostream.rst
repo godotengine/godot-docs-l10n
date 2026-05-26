@@ -16,7 +16,7 @@ AudioStream
 說明
 ----
 
-音訊流的基底類別。音訊流用於音效與音樂播放，支援 WAV（透過 :ref:`AudioStreamWAV<class_AudioStreamWAV>`\ ）與 Ogg（透過 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`\ ）格式。
+Base class for audio streams. Audio streams are used for sound effects and music playback, and support WAV (via :ref:`AudioStreamWAV<class_AudioStreamWAV>`), Ogg (via :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`), and MP3 (via :ref:`AudioStreamMP3<class_AudioStreamMP3>`) file formats.
 
 .. rst-class:: classref-introduction-group
 

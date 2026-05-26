@@ -137,7 +137,7 @@ bool
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`float<class_float>`\ )
 
-將 :ref:`float<class_float>` 值轉換為布林值。如果傳入 ``0.0``\ ，本方法將返回 ``false``\ ，傳入其他值則返回 ``true``\ 。
+Casts a :ref:`float<class_float>` value to a **bool**. Returns ``false`` if ``from`` is equal to ``0.0`` (including ``-0.0``), and ``true`` for all other values (including :ref:`@GDScript.INF<class_@GDScript_constant_INF>` and :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`).
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ bool
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`int<class_int>`\ )
 
-將 :ref:`int<class_int>` 值轉換為布林值。如果傳入 ``0``\ ，本方法將返回 ``false``\ ，傳入其他值則返回 ``true``\ 。
+Casts an :ref:`int<class_int>` value to a **bool**. Returns ``false`` if ``from`` is equal to ``0``, and ``true`` for all other values.
 
 .. rst-class:: classref-section-separator
 
@@ -164,7 +164,7 @@ bool
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_neq_bool>`
 
-如果兩個布林值不同，即一個是 ``true``\ ，另一個是 ``false``\ ，則返回 ``true``\ 。
+Returns ``true`` if one **bool** is ``true`` and the other **bool** is ``false``. Equivalent to logical XOR (NEQ).
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ bool
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_lt_bool>`
 
-如果左運算元為 ``false`` 且右運算元為 ``true``\ ，則返回 ``true``\ 。
+Returns ``true`` if the left **bool** is ``false`` and ``right`` is ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ bool
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_eq_bool>`
 
-如果兩個布林值相等，即都為 ``true`` 或都為 ``false``\ ，則返回 ``true``\ 。
+Returns ``true`` if both **bool**\ s are ``true``, or if both **bool**\ s are ``false``. Equivalent to logical XNOR (EQ).
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ bool
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_gt_bool>`
 
-如果左運算元為 ``true`` 且右運算元為 ``false``\ ，則返回 ``true``\ 。
+Returns ``true`` if the left **bool** is ``true`` and ``right`` is ``false``.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

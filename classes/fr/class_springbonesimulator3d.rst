@@ -28,6 +28,8 @@ For physical simulation, **SpringBoneSimulator3D** can have children as self-sta
 
 \ **Warning:** A scaled **SpringBoneSimulator3D** will likely not behave as expected. Make sure that the parent :ref:`Skeleton3D<class_Skeleton3D>` and its bones are not scaled.
 
+\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+
 .. rst-class:: classref-reftable-group
 
 Propriétés
@@ -1144,11 +1146,13 @@ Définit le rayon de liaison à la liaison ``joint`` dans la liste de liaisons d
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis>`
 
-Définit l'axe de rotation de la liaison ``joint`` dans la liste des liaisons de la chaîne d'os lorsque :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` vaut ``true``.
+Sets the rotation axis at ``joint`` in the bone chain's joint list when :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` is ``true``.
 
-Les axes sont basés sur l'espace de :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`, si ``axis`` vaut :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, vous pouvez spécifier n'importe quel axe.
+The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
 
-\ **Note :** L'axe de rotation et le vecteur avant ne devraient pas être colinéaires pour éviter une rotation intempestive car **SpringBoneSimulator3D** ne prend pas en compte les forces de torsion.
+In here, the reference pose is the bone pose immediately before the simulation.
+
+\ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
 
 .. rst-class:: classref-item-separator
 
@@ -1238,11 +1242,13 @@ Définit le nom de l'os racine de la chaîne d'os.
 
 |void| **set_rotation_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_rotation_axis>`
 
-Définit l'axe de rotation de la chaîne d'os. S'il est défini à un axe spécifique, il agit comme une liaison avec charnière. La valeur est mise en cache dans chaque paramètre de liaison dans la liste des liaisons.
+Sets the rotation axis of the bone chain. If set to a specific axis, it acts like a hinge joint. The value is cached in each joint setting in the joint list.
 
-Les axes sont basés sur l'espace de :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`, si ``axis`` vaut :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, vous pouvez spécifier n'importe quel axe.
+The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
 
-\ **Note :** Le vecteur d'axe de rotation et le vecteur avant ne devraient pas être colinéaires pour éviter une rotation intempestive car **SpringBoneSimulator3D** ne prend pas en compte les forces de torsion.
+In here, the reference pose is the bone pose immediately before the simulation.
+
+\ **Note:** The rotation axis vector and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
 
 .. rst-class:: classref-item-separator
 

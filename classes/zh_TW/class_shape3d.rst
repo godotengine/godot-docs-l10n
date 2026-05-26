@@ -73,9 +73,11 @@ Shape3D
 - |void| **set_custom_solver_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_custom_solver_bias**\ (\ )
 
-該形狀的的自訂求解器偏差。定義了強制接觸分離涉及到這個形狀時，物體會做出多大的反應。
+The shape's custom solver bias. Defines how much bodies react to enforce contact separation when this shape is involved.
 
-設為 ``0.0`` 時，使用的預設值為 :ref:`ProjectSettings.physics/3d/solver/default_contact_bias<class_ProjectSettings_property_physics/3d/solver/default_contact_bias>`\ 。
+When set to ``0``, the default value from :ref:`ProjectSettings.physics/3d/solver/default_contact_bias<class_ProjectSettings_property_physics/3d/solver/default_contact_bias>` is used.
+
+\ **Note:** :ref:`custom_solver_bias<class_Shape3D_property_custom_solver_bias>` is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
 
 .. rst-class:: classref-item-separator
 

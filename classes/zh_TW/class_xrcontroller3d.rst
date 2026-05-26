@@ -62,7 +62,7 @@ The current :ref:`XRInterface<class_XRInterface>` defines the names of inputs. I
 
 .. rst-class:: classref-signal
 
-**button_pressed**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRController3D_signal_button_pressed>`
+**button_pressed**\ (\ action_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRController3D_signal_button_pressed>`
 
 當該控制器上的一個按鈕被按下時觸發。
 
@@ -74,7 +74,7 @@ The current :ref:`XRInterface<class_XRInterface>` defines the names of inputs. I
 
 .. rst-class:: classref-signal
 
-**button_released**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRController3D_signal_button_released>`
+**button_released**\ (\ action_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRController3D_signal_button_released>`
 
 當該控制器上的一個按鈕被釋放時觸發。
 
@@ -86,7 +86,7 @@ The current :ref:`XRInterface<class_XRInterface>` defines the names of inputs. I
 
 .. rst-class:: classref-signal
 
-**input_float_changed**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRController3D_signal_input_float_changed>`
+**input_float_changed**\ (\ action_name\: :ref:`String<class_String>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRController3D_signal_input_float_changed>`
 
 當該控制器上的觸發器或類似輸入更改值時發出。
 
@@ -98,7 +98,7 @@ The current :ref:`XRInterface<class_XRInterface>` defines the names of inputs. I
 
 .. rst-class:: classref-signal
 
-**input_vector2_changed**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_XRController3D_signal_input_vector2_changed>`
+**input_vector2_changed**\ (\ action_name\: :ref:`String<class_String>`, value\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_XRController3D_signal_input_vector2_changed>`
 
 當該控制器上的拇指杆或拇指板被移動時發出。
 

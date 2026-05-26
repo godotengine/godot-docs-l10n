@@ -74,8 +74,6 @@ ImageTexture
    +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
    | :ref:`ImageTexture<class_ImageTexture>` | :ref:`create_from_image<class_ImageTexture_method_create_from_image>`\ (\ image\: :ref:`Image<class_Image>`\ ) |static| |
    +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Format<enum_Image_Format>`        | :ref:`get_format<class_ImageTexture_method_get_format>`\ (\ ) |const|                                                   |
-   +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
    | |void|                                  | :ref:`set_image<class_ImageTexture_method_set_image>`\ (\ image\: :ref:`Image<class_Image>`\ )                          |
    +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
    | |void|                                  | :ref:`set_size_override<class_ImageTexture_method_set_size_override>`\ (\ size\: :ref:`Vector2i<class_Vector2i>`\ )     |
@@ -99,18 +97,6 @@ ImageTexture
 :ref:`ImageTexture<class_ImageTexture>` **create_from_image**\ (\ image\: :ref:`Image<class_Image>`\ ) |static| :ref:`🔗<class_ImageTexture_method_create_from_image>`
 
 创建一个新的 **ImageTexture**\ ，并通过分配和设置来自 :ref:`Image<class_Image>` 的数据来初始化它。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_ImageTexture_method_get_format:
-
-.. rst-class:: classref-method
-
-:ref:`Format<enum_Image_Format>` **get_format**\ (\ ) |const| :ref:`🔗<class_ImageTexture_method_get_format>`
-
-返回该纹理的格式。
 
 .. rst-class:: classref-item-separator
 

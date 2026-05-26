@@ -7,18 +7,18 @@ AudioEffectCapture
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Captura el audio de un bus de audio en tiempo real.
+Exposes audio samples from an audio bus in real-time, such that it can be accessed as data.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-AudioEffectCapture es un AudioEffect que copia todos los fotogramas de audio del bus de efectos de audio adjunto en su búfer de anillo interno.
+Copies all audio frames, also known as "samples" or "audio samples", from the attached audio bus into its internal ring buffer. This effect does not alter the audio. Can be used for storing real-time audio data for playback, and for creating real-time audio visualizations, like an oscilloscope.
 
-El código de la aplicación debe consumir estos fotogramas de audio de este búfer de anillo utilizando :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` y procesarlos según sea necesario, por ejemplo, para capturar datos de un :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, implementar efectos definidos por la aplicación o para transmitir audio a través de la red. Al capturar datos de audio de un micrófono, el formato de las muestras será PCM estéreo de punto flotante de 32 bits.
+Application code should consume these audio frames from this ring buffer using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` and process it as needed, for example to capture data from an :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, implement application-defined effects, or to transmit audio over the network. When capturing audio data from a microphone, the format of the samples will be stereo 32-bit floating-point PCM.
 
-A diferencia de :ref:`AudioEffectRecord<class_AudioEffectRecord>`, este efecto solo devuelve las muestras de audio sin procesar en lugar de codificarlas en un :ref:`AudioStream<class_AudioStream>`.
+Unlike :ref:`AudioEffectRecord<class_AudioEffectRecord>`, this effect only returns the raw audio samples instead of encoding them into an :ref:`AudioStream<class_AudioStream>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -83,7 +83,9 @@ Descripciones de Propiedades
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-Longitud del búfer de anillo interno, en segundos. Establecer la longitud del búfer no tendrá efecto si ya ha sido inicializado.
+Length of the internal ring buffer, in seconds. Higher values keep data around for longer, but require more memory. Value can range from 0.01 to 10.
+
+\ **Note:** Setting the buffer length will have no effect if already initialized.
 
 .. rst-class:: classref-section-separator
 
@@ -100,7 +102,7 @@ Descripciones de Métodos
 
 :ref:`bool<class_bool>` **can_get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_can_get_buffer>`
 
-Devuelve ``true`` si al menos ``frames`` fotogramas de audio están disponibles para leer en el búfer de anillo interno.
+Returns ``true`` if at least ``frames`` samples are available to read in the internal ring buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -126,9 +128,9 @@ Borra el búfer circular interno.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioEffectCapture_method_get_buffer>`
 
-Gets the next ``frames`` audio samples from the internal ring buffer.
+Gets the next ``frames`` samples from the internal ring buffer.
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` audio samples if available, or an empty :ref:`PackedVector2Array<class_PackedVector2Array>` if insufficient data was available.
+Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` samples if available, or an empty :ref:`PackedVector2Array<class_PackedVector2Array>` if insufficient data was available.
 
 The samples are signed floating-point PCM between ``-1`` and ``1``. You will have to scale them if you want to use them as 8 or 16-bit integer samples. (``v = 0x7fff * samples[0].x``)
 
@@ -142,7 +144,7 @@ The samples are signed floating-point PCM between ``-1`` and ``1``. You will hav
 
 :ref:`int<class_int>` **get_buffer_length_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_buffer_length_frames>`
 
-Returns the total size of the internal ring buffer in frames.
+Returns the total size of the internal ring buffer in number of samples.
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +156,7 @@ Returns the total size of the internal ring buffer in frames.
 
 :ref:`int<class_int>` **get_discarded_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_discarded_frames>`
 
-Returns the number of audio frames discarded from the audio bus due to full buffer.
+Returns the number of samples discarded from the audio bus due to full buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +168,7 @@ Returns the number of audio frames discarded from the audio bus due to full buff
 
 :ref:`int<class_int>` **get_frames_available**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_frames_available>`
 
-Returns the number of frames available to read using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
+Returns the number of samples available to read using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +180,7 @@ Returns the number of frames available to read using :ref:`get_buffer()<class_Au
 
 :ref:`int<class_int>` **get_pushed_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_pushed_frames>`
 
-Devuelve el número de frames de audio insertados desde el bus de audio.
+Returns the number of samples inserted from the audio bus.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

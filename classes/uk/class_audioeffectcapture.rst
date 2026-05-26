@@ -7,18 +7,18 @@ AudioEffectCapture
 
 **Успадковує:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Захоплює аудіо з аудіошини в реальному часі.
+Exposes audio samples from an audio bus in real-time, such that it can be accessed as data.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-AudioEffectCapture — це AudioEffect, який копіює всі аудіокадри з приєднаної шини аудіоефектів у внутрішній кільцевий буфер.
+Copies all audio frames, also known as "samples" or "audio samples", from the attached audio bus into its internal ring buffer. This effect does not alter the audio. Can be used for storing real-time audio data for playback, and for creating real-time audio visualizations, like an oscilloscope.
 
- Код програми повинен споживати ці аудіокадри з цього кільцевого буфера за допомогою :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` і обробляти його за потреби, наприклад, щоб захопити дані з :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, реалізувати визначені програмою ефекти або передавати аудіо через мережу. Під час захоплення аудіоданих із мікрофона формат зразків буде стереофонічним 32-розрядним PCM із плаваючою комою.
+Application code should consume these audio frames from this ring buffer using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` and process it as needed, for example to capture data from an :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, implement application-defined effects, or to transmit audio over the network. When capturing audio data from a microphone, the format of the samples will be stereo 32-bit floating-point PCM.
 
- На відміну від :ref:`AudioEffectRecord<class_AudioEffectRecord>`, цей ефект повертає лише необроблені зразки звуку, а не кодує їх у :ref:`AudioStream<class_AudioStream>`.
+Unlike :ref:`AudioEffectRecord<class_AudioEffectRecord>`, this effect only returns the raw audio samples instead of encoding them into an :ref:`AudioStream<class_AudioStream>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -83,7 +83,9 @@ AudioEffectCapture — це AudioEffect, який копіює всі аудіо
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-Довжина внутрішнього кільцевого буфера, у секундах. Встановлення довжини буфера не матиме ефекту, якщо вже ініціалізовано.
+Length of the internal ring buffer, in seconds. Higher values keep data around for longer, but require more memory. Value can range from 0.01 to 10.
+
+\ **Note:** Setting the buffer length will have no effect if already initialized.
 
 .. rst-class:: classref-section-separator
 
@@ -100,7 +102,7 @@ AudioEffectCapture — це AudioEffect, який копіює всі аудіо
 
 :ref:`bool<class_bool>` **can_get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_can_get_buffer>`
 
-Повертає ``true``, якщо принаймні ``frames`` аудіокадри доступні для читання у внутрішньому кільцевому буфері.
+Returns ``true`` if at least ``frames`` samples are available to read in the internal ring buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -126,11 +128,11 @@ AudioEffectCapture — це AudioEffect, який копіює всі аудіо
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioEffectCapture_method_get_buffer>`
 
-Отримує наступні ``frames`` зразки звуку з внутрішнього кільцевого буфера.
+Gets the next ``frames`` samples from the internal ring buffer.
 
- Повертає :ref:`PackedVector2Array<class_PackedVector2Array>`, що містить саме ``frames`` аудіо зразки, якщо доступно, або порожній :ref:`PackedVector2Array<class_PackedVector2Array>`, якщо доступних даних недостатньо.
+Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` samples if available, or an empty :ref:`PackedVector2Array<class_PackedVector2Array>` if insufficient data was available.
 
- Зразки мають знак PCM із плаваючою комою між ``-1`` і ``1``. Вам доведеться масштабувати їх, якщо ви хочете використовувати їх як 8- або 16-розрядні цілі зразки. (``v = 0x7fff * зразки[0].x``)
+The samples are signed floating-point PCM between ``-1`` and ``1``. You will have to scale them if you want to use them as 8 or 16-bit integer samples. (``v = 0x7fff * samples[0].x``)
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +144,7 @@ AudioEffectCapture — це AudioEffect, який копіює всі аудіо
 
 :ref:`int<class_int>` **get_buffer_length_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_buffer_length_frames>`
 
-Повертає загальний розмір внутрішнього кільцевого буфера в кадрах.
+Returns the total size of the internal ring buffer in number of samples.
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +156,7 @@ AudioEffectCapture — це AudioEffect, який копіює всі аудіо
 
 :ref:`int<class_int>` **get_discarded_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_discarded_frames>`
 
-Повертає кількість звукових кадрів, відкинутих із звукової шини через заповнення буфера.
+Returns the number of samples discarded from the audio bus due to full buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +168,7 @@ AudioEffectCapture — це AudioEffect, який копіює всі аудіо
 
 :ref:`int<class_int>` **get_frames_available**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_frames_available>`
 
-Повертає кількість кадрів, доступних для читання за допомогою :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
+Returns the number of samples available to read using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +180,7 @@ AudioEffectCapture — це AudioEffect, який копіює всі аудіо
 
 :ref:`int<class_int>` **get_pushed_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_pushed_frames>`
 
-Повертає кількість звукових кадрів, вставлених із звукової шини.
+Returns the number of samples inserted from the audio bus.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

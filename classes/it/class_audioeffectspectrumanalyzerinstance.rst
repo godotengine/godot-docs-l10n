@@ -23,6 +23,10 @@ La parte in esecuzione di un :ref:`AudioEffectSpectrumAnalyzer<class_AudioEffect
 Tutorial
 ----------------
 
+- :doc:`Bus audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+
 - `Demo di visualizzatore spettro audio <https://godotengine.org/asset-library/asset/2762>`__
 
 .. rst-class:: classref-reftable-group

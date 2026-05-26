@@ -16,9 +16,9 @@ Un botón temático que puede contener texto y un icono.
 Descripción
 ----------------------
 
-**Button** es el botón con tema estándar. Puede contener texto y un icono, y los mostrará de acuerdo con el :ref:`Theme<class_Theme>` actual.
+**Button** is the standard themed button. It can contain text and an icon, and it will display them according to the current :ref:`Theme<class_Theme>`.
 
-\ **Ejemplo:** Crea un botón y conecta un método que se llamará cuando se presione el botón:
+\ **Example:** Create a button and connect a method that will be called when the button is pressed:
 
 
 .. tabs::
@@ -51,9 +51,9 @@ Descripción
 
 
 
-Véase también :ref:`BaseButton<class_BaseButton>`, que contiene las propiedades y métodos comunes asociados con este nodo.
+See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
 
-\ **Nota:** Los botones no detectan entrada táctil y, por lo tanto, no admiten multitáctil, ya que la emulación del ratón solo puede presionar un botón a la vez. Usa :ref:`TouchScreenButton<class_TouchScreenButton>` para botones que activan movimientos o acciones de juego.
+\ **Note:** Buttons support multitouch via touch input, allowing multiple buttons to be pressed at the same time. Otherwise, mouse input is used, limiting interaction to one button press at a time.
 
 .. rst-class:: classref-introduction-group
 

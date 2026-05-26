@@ -7,26 +7,26 @@ AudioEffectCompressor
 
 **Hérite de :** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Ajoute un effet de compresseur audio à un bus audio.
+Adds a downward compressor audio effect to an audio bus.
 
-Réduit les sons qui dépassent un certain seuil, lisse les dynamiques et augmente le volume global.
+Allows control of the dynamic range via a volume threshold and timing controls.
 
 .. rst-class:: classref-introduction-group
 
 Description
 -----------
 
-Le compresseur dynamique d'intensité réduit le niveau du son lorsque le volume dépasse un certain seuil de décibels. L'une des principales utilisations d'un compresseur est d'augmenter la gamme dynamique en essayant de saturer le moins possible le son (quand le son dépasse 0dB).
+A "compressor" decreases the volume of sounds when it exceeds a certain volume threshold level.
 
-Le compresseur a de nombreuses utilisations dans le mixage :
+A compressor can have many uses in a mix:
 
-- Dans le bus Maître pour compresser toute la sortie (même si un :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` est souvent plus adapté).
+- To compress the whole volume in the Master bus (although an :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` is probably better).
 
-- Dans les canaux de voix pour s'assurer qu'ils sonnent aussi équilibré que possible.
+- To ensure balance of voice audio clips.
 
-- Pour le "Sidechained". Cela peut réduire le niveau de son enchaîné avec un autre bus audio pour la détection des seuils. Cette technique est courante dans le jeu vidéo pour mixer le niveau de la musique et les effets spéciaux tandis que les voix sont entendues.
+- To sidechain, using another bus as a trigger. This decreases the volume of the bus it is attached to, by using the volume from another audio bus for threshold detection. This technique is common in video game mixing to decrease the volume of music and SFX while voices are being heard. This effect is also known as "ducking".
 
-- Accentue les transitions en utilisant une attaque plus grande, rendant les effets sonores plus percutants.
+- To accentuate transients by using a long attack, letting sounds exceed the volume threshold level for a short period before compressing them. This can be used to make SFX more punchy.
 
 .. rst-class:: classref-introduction-group
 
@@ -34,6 +34,8 @@ Tutoriels
 ------------------
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -79,7 +81,7 @@ Descriptions des propriétés
 - |void| **set_attack_us**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attack_us**\ (\ )
 
-Temps de réaction du compresseur quand le signal dépasse le seuil, en microsecondes. La valeur peut aller de 20 à 2000.
+Compressor's reaction time when the audio exceeds the volume threshold level, in microseconds. Value can range from 20 to 2000.
 
 .. rst-class:: classref-item-separator
 
@@ -96,7 +98,7 @@ Temps de réaction du compresseur quand le signal dépasse le seuil, en microsec
 - |void| **set_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gain**\ (\ )
 
-Gain appliqué au signal de sortie.
+Gain of the audio signal, in dB. Value can range from -20 to 20.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +115,7 @@ Gain appliqué au signal de sortie.
 - |void| **set_mix**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mix**\ (\ )
 
-Équilibre entre le signal original et le signal avec effet. La valeur peut aller de 0 (totalement dry) à 1 (totalement wet).
+Balance between the original audio and the compressed audio. Value can range from 0 (totally dry) to 1 (totally wet).
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +132,7 @@ Gain appliqué au signal de sortie.
 - |void| **set_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ratio**\ (\ )
 
-La quantité de compression appliquée à l'audio après avoir franchi le seuil. Plus le rapport est élevé, plus les parties hautes de l'audio seront comprimées. La valeur peut aller de 1 à 48.
+Amount of compression applied to the audio once it passes the volume threshold level. The higher the ratio, the stronger the compression applied to audio signals that pass the volume threshold level. Value can range from 1 to 48.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +149,7 @@ La quantité de compression appliquée à l'audio après avoir franchi le seuil.
 - |void| **set_release_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release_ms**\ (\ )
 
-Le retard du compresseur avant d'arrêter de réduire le signal après que le niveau de signal sous le seuil, en millisecondes. La valeur peut aller de 20 à 2000.
+Compressor's delay time to stop decreasing the volume after the it falls below the volume threshold level, in milliseconds. Value can range from 20 to 2000.
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +166,7 @@ Le retard du compresseur avant d'arrêter de réduire le signal après que le ni
 - |void| **set_sidechain**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_sidechain**\ (\ )
 
-Réduit le niveau sonore en utilisant un autre bus audio pour détecter les seuils.
+Audio bus to use for the volume threshold detection.
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +183,7 @@ Réduit le niveau sonore en utilisant un autre bus audio pour détecter les seui
 - |void| **set_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold**\ (\ )
 
-Le niveau au-dessus duquel la compression est appliquée à l'audio. La valeur peut aller de -60 à 0.
+The volume level above which compression is applied to the audio, in dB. Value can range from -60 to 0.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

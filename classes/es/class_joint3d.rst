@@ -130,7 +130,9 @@ Si se deja vacío y :ref:`node_a<class_Joint3D_property_node_a>` está estableci
 - |void| **set_solver_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_solver_priority**\ (\ )
 
-La prioridad usada para definir qué solucionador se ejecuta primero para múltiples articulaciones. Cuanto más bajo es el valor, más alta es la prioridad.
+The priority used to define which solver is executed first for multiple joints. The lower the value, the higher the priority.
+
+\ **Note:** Only supported when using GodotPhysics3D. This property is ignored when using Jolt Physics.
 
 .. rst-class:: classref-section-separator
 

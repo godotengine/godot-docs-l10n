@@ -156,6 +156,18 @@ AR/VR 服务器是我们“高级虚拟现实”解决方案的核心，负责�
 
 当现有追踪器被更新时发出。如果用户切换控制器，则可能会发生这种情况。
 
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_XRServer_signal_world_origin_changed:
+
+.. rst-class:: classref-signal
+
+**world_origin_changed**\ (\ ) :ref:`🔗<class_XRServer_signal_world_origin_changed>`
+
+Emitted when the world origin transform changes.
+
 .. rst-class:: classref-section-separator
 
 ----

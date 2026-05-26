@@ -37,17 +37,19 @@ Propriétés
 .. table::
    :widths: auto
 
-   +-------------------------------+-------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`Color<class_Color>`     | :ref:`debug_color<class_CollisionShape2D_property_debug_color>`                           | ``Color(0, 0, 0, 0)`` |
-   +-------------------------------+-------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`bool<class_bool>`       | :ref:`disabled<class_CollisionShape2D_property_disabled>`                                 | ``false``             |
-   +-------------------------------+-------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`bool<class_bool>`       | :ref:`one_way_collision<class_CollisionShape2D_property_one_way_collision>`               | ``false``             |
-   +-------------------------------+-------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`float<class_float>`     | :ref:`one_way_collision_margin<class_CollisionShape2D_property_one_way_collision_margin>` | ``1.0``               |
-   +-------------------------------+-------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`Shape2D<class_Shape2D>` | :ref:`shape<class_CollisionShape2D_property_shape>`                                       |                       |
-   +-------------------------------+-------------------------------------------------------------------------------------------+-----------------------+
+   +-------------------------------+-------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Color<class_Color>`     | :ref:`debug_color<class_CollisionShape2D_property_debug_color>`                                 | ``Color(0, 0, 0, 0)`` |
+   +-------------------------------+-------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`bool<class_bool>`       | :ref:`disabled<class_CollisionShape2D_property_disabled>`                                       | ``false``             |
+   +-------------------------------+-------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`bool<class_bool>`       | :ref:`one_way_collision<class_CollisionShape2D_property_one_way_collision>`                     | ``false``             |
+   +-------------------------------+-------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Vector2<class_Vector2>` | :ref:`one_way_collision_direction<class_CollisionShape2D_property_one_way_collision_direction>` | ``Vector2(0, 1)``     |
+   +-------------------------------+-------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`float<class_float>`     | :ref:`one_way_collision_margin<class_CollisionShape2D_property_one_way_collision_margin>`       | ``1.0``               |
+   +-------------------------------+-------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Shape2D<class_Shape2D>` | :ref:`shape<class_CollisionShape2D_property_shape>`                                             |                       |
+   +-------------------------------+-------------------------------------------------------------------------------------------------+-----------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -105,9 +107,28 @@ Une forme de collision désactivée n’a aucun effet dans le monde. Cette propr
 - |void| **set_one_way_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_one_way_collision_enabled**\ (\ )
 
-Définit si cette forme de collision doit uniquement détecter la collision sur un côté (en haut ou en bas).
+Sets whether this collision shape should only detect collision on one side (top or bottom).
 
-\ **Note :** Cette propriété n'a aucun effet si cette **CollisionShape2D** est un enfant d'un nœud :ref:`Area2D<class_Area2D>`.
+\ **Note:** This property has no effect if this **CollisionShape2D** is a child of an :ref:`Area2D<class_Area2D>` node.
+
+\ **Note:** The one way collision direction can be configured by setting :ref:`one_way_collision_direction<class_CollisionShape2D_property_one_way_collision_direction>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_CollisionShape2D_property_one_way_collision_direction:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2<class_Vector2>` **one_way_collision_direction** = ``Vector2(0, 1)`` :ref:`🔗<class_CollisionShape2D_property_one_way_collision_direction>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_one_way_collision_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
+- :ref:`Vector2<class_Vector2>` **get_one_way_collision_direction**\ (\ )
+
+The direction used for one-way collision.
 
 .. rst-class:: classref-item-separator
 

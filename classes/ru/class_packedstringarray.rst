@@ -12,9 +12,9 @@ PackedStringArray
 Описание
 ----------------
 
-Массив, специально разработанный для хранения :ref:`String<class_String>`. Плотно упаковывает данные, поэтому экономит память для больших размеров массива.
+An array specifically designed to hold :ref:`String<class_String>`\ s. Packs data tightly, so it saves memory for large array sizes.
 
-Если вы хотите объединить строки в массиве, используйте :ref:`String.join()<class_String_method_join>`.
+If you want to join the strings in the array, use :ref:`String.join()<class_String_method_join>`.
 
 ::
 
@@ -22,9 +22,11 @@ PackedStringArray
     var string = " ".join(string_array)
     print(string) # "hello world"
 
-\ **Различия между упакованными массивами, типизированными массивами и нетипизированными массивами:** Упакованные массивы, как правило, быстрее итерируются и изменяются по сравнению с типизированным массивом того же типа (например, **PackedStringArray** по сравнению с ``Array[String]``). Кроме того, упакованные массивы потребляют меньше памяти. Недостатком упакованных массивов является то, что они менее гибкие, поскольку не предлагают столько удобных методов, как :ref:`Array.map()<class_Array_method_map>`. Типизированные массивы, в свою очередь, быстрее перебирать и изменять, чем нетипизированные массивы.
+\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedStringArray** versus ``Array[String]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
 
-\ **Примечание:** Упакованные массивы всегда передаются по ссылке. Чтобы получить копию массива, которую можно изменить независимо от исходного массива, используйте :ref:`duplicate()<class_PackedStringArray_method_duplicate>`. Это *не* касается встроенных свойств и методов. В этих случаях возвращаемый упакованный массив является копией, и его изменение *не* повлияет на исходное значение. Чтобы обновить встроенное свойство этого типа, измените возвращаемый массив, а затем снова назначьте его свойству.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedStringArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 

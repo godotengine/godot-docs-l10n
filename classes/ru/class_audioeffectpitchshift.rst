@@ -7,16 +7,16 @@ AudioEffectPitchShift
 
 **Наследует:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Добавляет звуковой эффект изменения высоты тона к звуковой шине.
+Adds a pitch-shifting audio effect to an audio bus.
 
-Повышает или понижает высоту исходного звука.
+Raises or lowers the pitch of the input audio.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Позволяет модулировать высоту тона независимо от темпа. Все частоты могут быть увеличены/уменьшены с минимальным влиянием на переходные процессы.
+Allows modulation of pitch without modifying speed. All frequencies can be raised or lowered with minimal effect on transients.
 
 .. rst-class:: classref-introduction-group
 
@@ -24,6 +24,8 @@ AudioEffectPitchShift
 --------------------------------------
 
 - :doc:`Аудиошины <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -124,7 +126,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectPitchShift_FFTSize>`
 - |void| **set_fft_size**\ (\ value\: :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>`\ )
 - :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **get_fft_size**\ (\ )
 
-Размер буфера `Быстрого преобразования Фурье (Fourier) <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__. Более высокие значения сглаживают эффект с течением времени, но имеют большую задержку. Эффект этой большей задержки особенно заметен на звуках с резкими изменениями амплитуды.
+The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__ buffer. Higher values smooth out the effect over time, but have greater latency. The effects of this higher latency are especially noticeable on audio signals that have sudden amplitude changes.
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +160,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectPitchShift_FFTSize>`
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-Используемая шкала высоты тона. ``1.0`` — это высота тона по умолчанию, которая воспроизводит звуки без изменений. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` может находиться в диапазоне от ``0.0`` (бесконечно низкая высота тона, неслышимая) до ``16`` (в 16 раз выше начальной высоты тона).
+The pitch scale to use. ``1.0`` is the default pitch and plays sounds unaffected. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` can range from 0 (infinitely low pitch, inaudible) to 16 (16 times higher than the initial pitch).
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

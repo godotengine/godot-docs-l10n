@@ -32,47 +32,55 @@ Proprietà
 .. table::
    :widths: auto
 
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                 | :ref:`allow_reselect<class_ItemList_property_allow_reselect>`               | ``false``                                                                 |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                 | :ref:`allow_rmb_select<class_ItemList_property_allow_rmb_select>`           | ``false``                                                                 |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                 | :ref:`allow_search<class_ItemList_property_allow_search>`                   | ``true``                                                                  |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                 | :ref:`auto_height<class_ItemList_property_auto_height>`                     | ``false``                                                                 |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                 | :ref:`auto_width<class_ItemList_property_auto_width>`                       | ``false``                                                                 |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                 | clip_contents                                                               | ``true`` (overrides :ref:`Control<class_Control_property_clip_contents>`) |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                                   | :ref:`fixed_column_width<class_ItemList_property_fixed_column_width>`       | ``0``                                                                     |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`Vector2i<class_Vector2i>`                         | :ref:`fixed_icon_size<class_ItemList_property_fixed_icon_size>`             | ``Vector2i(0, 0)``                                                        |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`FocusMode<enum_Control_FocusMode>`                | focus_mode                                                                  | ``2`` (overrides :ref:`Control<class_Control_property_focus_mode>`)       |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`IconMode<enum_ItemList_IconMode>`                 | :ref:`icon_mode<class_ItemList_property_icon_mode>`                         | ``1``                                                                     |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`float<class_float>`                               | :ref:`icon_scale<class_ItemList_property_icon_scale>`                       | ``1.0``                                                                   |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                                   | :ref:`item_count<class_ItemList_property_item_count>`                       | ``0``                                                                     |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                                   | :ref:`max_columns<class_ItemList_property_max_columns>`                     | ``1``                                                                     |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                                   | :ref:`max_text_lines<class_ItemList_property_max_text_lines>`               | ``1``                                                                     |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                 | :ref:`same_column_width<class_ItemList_property_same_column_width>`         | ``false``                                                                 |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>`     | :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`           | ``0``                                                                     |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`SelectMode<enum_ItemList_SelectMode>`             | :ref:`select_mode<class_ItemList_property_select_mode>`                     | ``0``                                                                     |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` | :ref:`text_overrun_behavior<class_ItemList_property_text_overrun_behavior>` | ``3``                                                                     |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                 | :ref:`tile_scroll_hint<class_ItemList_property_tile_scroll_hint>`           | ``false``                                                                 |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                 | :ref:`wraparound_items<class_ItemList_property_wraparound_items>`           | ``true``                                                                  |
-   +---------------------------------------------------------+-----------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                 | :ref:`allow_reselect<class_ItemList_property_allow_reselect>`                   | ``false``                                                                 |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                 | :ref:`allow_rmb_select<class_ItemList_property_allow_rmb_select>`               | ``false``                                                                 |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                 | :ref:`allow_search<class_ItemList_property_allow_search>`                       | ``true``                                                                  |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                 | :ref:`auto_height<class_ItemList_property_auto_height>`                         | ``false``                                                                 |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                 | :ref:`auto_width<class_ItemList_property_auto_width>`                           | ``false``                                                                 |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                 | clip_contents                                                                   | ``true`` (overrides :ref:`Control<class_Control_property_clip_contents>`) |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                   | :ref:`fixed_column_width<class_ItemList_property_fixed_column_width>`           | ``0``                                                                     |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`Vector2i<class_Vector2i>`                         | :ref:`fixed_icon_size<class_ItemList_property_fixed_icon_size>`                 | ``Vector2i(0, 0)``                                                        |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`FocusMode<enum_Control_FocusMode>`                | focus_mode                                                                      | ``2`` (overrides :ref:`Control<class_Control_property_focus_mode>`)       |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`IconMode<enum_ItemList_IconMode>`                 | :ref:`icon_mode<class_ItemList_property_icon_mode>`                             | ``1``                                                                     |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                               | :ref:`icon_scale<class_ItemList_property_icon_scale>`                           | ``1.0``                                                                   |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                   | :ref:`item_count<class_ItemList_property_item_count>`                           | ``0``                                                                     |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                 | :ref:`item_{index}/disabled<class_ItemList_property_item_{index}/disabled>`     | ``false``                                                                 |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`                       | :ref:`item_{index}/icon<class_ItemList_property_item_{index}/icon>`             |                                                                           |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                 | :ref:`item_{index}/selectable<class_ItemList_property_item_{index}/selectable>` | ``true``                                                                  |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                             | :ref:`item_{index}/text<class_ItemList_property_item_{index}/text>`             | ``""``                                                                    |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                   | :ref:`max_columns<class_ItemList_property_max_columns>`                         | ``1``                                                                     |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                   | :ref:`max_text_lines<class_ItemList_property_max_text_lines>`                   | ``1``                                                                     |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                 | :ref:`same_column_width<class_ItemList_property_same_column_width>`             | ``false``                                                                 |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>`     | :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`               | ``0``                                                                     |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`SelectMode<enum_ItemList_SelectMode>`             | :ref:`select_mode<class_ItemList_property_select_mode>`                         | ``0``                                                                     |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` | :ref:`text_overrun_behavior<class_ItemList_property_text_overrun_behavior>`     | ``3``                                                                     |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                 | :ref:`tile_scroll_hint<class_ItemList_property_tile_scroll_hint>`               | ``false``                                                                 |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                 | :ref:`wraparound_items<class_ItemList_property_wraparound_items>`               | ``true``                                                                  |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------+
 
 .. rst-class:: classref-reftable-group
 
@@ -86,6 +94,8 @@ Metodi
    | :ref:`int<class_int>`                                 | :ref:`add_icon_item<class_ItemList_method_add_icon_item>`\ (\ icon\: :ref:`Texture2D<class_Texture2D>`, selectable\: :ref:`bool<class_bool>` = true\ )                                   |
    +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                 | :ref:`add_item<class_ItemList_method_add_item>`\ (\ text\: :ref:`String<class_String>`, icon\: :ref:`Texture2D<class_Texture2D>` = null, selectable\: :ref:`bool<class_bool>` = true\ )  |
+   +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                | :ref:`center_on_current<class_ItemList_method_center_on_current>`\ (\ center_verically\: :ref:`bool<class_bool>` = true, center_horizontally\: :ref:`bool<class_bool>` = true\ )         |
    +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                | :ref:`clear<class_ItemList_method_clear>`\ (\ )                                                                                                                                          |
    +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -599,6 +609,62 @@ Il numero di elementi attualmente nell'elenco.
 
 ----
 
+.. _class_ItemList_property_item_{index}/disabled:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **item_{index}/disabled** = ``false`` :ref:`🔗<class_ItemList_property_item_{index}/disabled>`
+
+If ``true``, the item at ``index`` is disabled.
+
+\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ItemList_property_item_{index}/icon:
+
+.. rst-class:: classref-property
+
+:ref:`Texture2D<class_Texture2D>` **item_{index}/icon** :ref:`🔗<class_ItemList_property_item_{index}/icon>`
+
+The icon of the item at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ItemList_property_item_{index}/selectable:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **item_{index}/selectable** = ``true`` :ref:`🔗<class_ItemList_property_item_{index}/selectable>`
+
+If ``true``, the item at ``index`` is selectable.
+
+\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ItemList_property_item_{index}/text:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **item_{index}/text** = ``""`` :ref:`🔗<class_ItemList_property_item_{index}/text>`
+
+The text of the item at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ItemList_property_max_columns:
 
 .. rst-class:: classref-property
@@ -778,6 +844,20 @@ Se ``selectable`` è ``true``, l'elemento sarà selezionabile.
 
 ----
 
+.. _class_ItemList_method_center_on_current:
+
+.. rst-class:: classref-method
+
+|void| **center_on_current**\ (\ center_verically\: :ref:`bool<class_bool>` = true, center_horizontally\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_center_on_current>`
+
+Ensures the currently selected item (the first selected item if multiple selection is enabled) is visible, adjusting the scroll position as necessary to place the item at the center of the list if possible. See also :ref:`ensure_current_is_visible()<class_ItemList_method_ensure_current_is_visible>`.
+
+Fails and prints an error if both arguments are ``false``.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ItemList_method_clear:
 
 .. rst-class:: classref-method
@@ -820,7 +900,7 @@ Assicura che nessun elemento sia selezionato.
 
 |void| **ensure_current_is_visible**\ (\ ) :ref:`🔗<class_ItemList_method_ensure_current_is_visible>`
 
-Assicura che la selezione attuale sia visibile, regolando la posizione di scorrimento se necessario.
+Ensures the currently selected item (the first selected item if multiple selection is enabled) is visible, adjusting the scroll position as necessary. See also :ref:`center_on_current()<class_ItemList_method_center_on_current>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1142,9 +1222,9 @@ Rimuove l'elemento specificato dall'indice ``idx`` dall'elenco.
 
 |void| **select**\ (\ idx\: :ref:`int<class_int>`, single\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_select>`
 
-Seleziona l'elemento all'indice specificato.
+Selects the item at the specified index.
 
-\ **Nota:** Questo metodo non attiva il segnale di selezione dell'elemento.
+\ **Note:** This method does not trigger the item selection signal.
 
 .. rst-class:: classref-item-separator
 

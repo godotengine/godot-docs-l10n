@@ -12,11 +12,13 @@ PackedByteArray
 Описание
 ----------------
 
-Массив, специально разработанный для хранения байтов. Плотно упаковывает данные, поэтому экономит память для больших размеров массива.
+An array specifically designed to hold bytes. Packs data tightly, so it saves memory for large array sizes.
 
-\ **PackedByteArray** также предоставляет методы для кодирования/декодирования различных типов в/из байтов. Способ кодирования значений является деталью реализации и не должен использоваться при взаимодействии с внешними приложениями.
+\ **PackedByteArray** also provides methods to encode/decode various types to/from bytes. The way values are encoded is an implementation detail and shouldn't be relied upon when interacting with external apps.
 
-\ **Примечание:** Упакованные массивы всегда передаются по ссылке. Чтобы получить копию массива, которую можно изменять независимо от исходного массива, используйте :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. Это *не* касается встроенных свойств и методов. В этих случаях возвращаемый упакованный массив является копией, и его изменение *не* повлияет на исходное значение. Чтобы обновить встроенное свойство этого типа, измените возвращаемый массив, а затем снова назначьте его свойству.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 

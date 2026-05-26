@@ -7,16 +7,18 @@ AudioEffectDelay
 
 **Успадковує:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Додає звуковий ефект затримки до звукової шини. Через деякий час відтворює вхідний сигнал.
+Adds a delay audio effect to an audio bus.
 
- Два варіанти затримки та зворотного зв’язку.
+Emulates an echo by playing the input audio back after a period of time.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Через деякий час відтворює вхідний сигнал. Сигнал із затримкою може відтворюватися кілька разів, щоб створити звук повторюваної затихаючої луни. Ефекти затримки варіюються від тонкого ефекту луни до яскраво вираженого змішування попередніх звуків із новими звуками.
+A "delay" effect plays the input audio signal back after a period of time. Each repetition is called a "delay tap" or simply "tap". Delay taps may be played back multiple times to create the sound of a repeating, decaying echo. Delay effects range from a subtle echo to a pronounced blending of previous sounds with new sounds.
+
+See also :ref:`AudioEffectReverb<class_AudioEffectReverb>` for a blurry, continuous echo.
 
 .. rst-class:: classref-introduction-group
 
@@ -24,6 +26,8 @@ AudioEffectDelay
 ------------------
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -81,7 +85,7 @@ AudioEffectDelay
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-Виведення відсотка оригінального звуку. При 0 виводяться лише затримані звуки. Значення може варіюватися від 0 до 1.
+The volume ratio of the original audio. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +102,7 @@ AudioEffectDelay
 - |void| **set_feedback_active**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_feedback_active**\ (\ )
 
-Якщо ``true``, зворотній зв’язок увімкнено.
+If ``true``, feedback is enabled, repeating taps after they are played.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +119,7 @@ AudioEffectDelay
 - |void| **set_feedback_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_delay_ms**\ (\ )
 
-Час затримки зворотного зв'язку в мілісекундах.
+Feedback delay time in milliseconds. Value can range from 0 to 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +136,7 @@ AudioEffectDelay
 - |void| **set_feedback_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_level_db**\ (\ )
 
-Рівень звуку для зворотного зв'язку.
+Gain for feedback, in dB. Value can range from -60 to 0.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +153,7 @@ AudioEffectDelay
 - |void| **set_feedback_lowpass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_lowpass**\ (\ )
 
-Фільтр низьких частот для зворотного зв'язку, Гц. Частоти нижче цього значення відфільтровуються з джерела сигналу.
+Low-pass filter for feedback, in Hz. Frequencies above this value are filtered out. Value can range from 1 to 16000.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +187,7 @@ AudioEffectDelay
 - |void| **set_tap1_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_delay_ms**\ (\ )
 
-Час затримки першого дотику в мілісекундах.
+First tap delay time in milliseconds, compared to the original audio. Value can range from 0 to 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +204,7 @@ AudioEffectDelay
 - |void| **set_tap1_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_level_db**\ (\ )
 
-Рівень звуку для першого торкання.
+Gain for the first tap, in dB. Value can range from -60 to 0.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +221,7 @@ AudioEffectDelay
 - |void| **set_tap1_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_pan**\ (\ )
 
-Позиція панорамування для першого торкання. Значення може варіюватися від -1 (повністю ліворуч) до 1 (повністю праворуч).
+Pan position for the first tap. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +255,7 @@ AudioEffectDelay
 - |void| **set_tap2_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_delay_ms**\ (\ )
 
-Час затримки другого дотику в мілісекундах.
+Second tap delay time in milliseconds, compared to the original audio. Value can range from 0 to 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -268,7 +272,7 @@ AudioEffectDelay
 - |void| **set_tap2_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_level_db**\ (\ )
 
-Рівень звуку для другого натискання.
+Gain for the second tap, in dB. Value can range from -60 to 0.
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +289,7 @@ AudioEffectDelay
 - |void| **set_tap2_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_pan**\ (\ )
 
-Позиція панорамування для другого торкання. Значення може варіюватися від -1 (повністю ліворуч) до 1 (повністю праворуч).
+Pan position for the second tap. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

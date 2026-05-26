@@ -33,6 +33,8 @@ OpenXR 空间功能配置标头的包装器基类。对于 OpenXR 空间实体�
    +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>` | :ref:`_has_valid_configuration<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__has_valid_configuration>`\ (\ ) |virtual| |const| |
    +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`   | :ref:`get_configuration<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_get_configuration>`\ (\ )                                         |
+   +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>` | :ref:`has_valid_configuration<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_has_valid_configuration>`\ (\ ) |const|                     |
    +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -64,6 +66,20 @@ OpenXR 空间功能配置标头的包装器基类。对于 OpenXR 空间实体�
 :ref:`bool<class_bool>` **_has_valid_configuration**\ (\ ) |virtual| |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__has_valid_configuration>`
 
 如果该对象包含有效的配置，并且可以通过调用 :ref:`_get_configuration()<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__get_configuration>` 方法检索该配置，则返回 ``true``\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_get_configuration:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **get_configuration**\ (\ ) :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_get_configuration>`
+
+Gets a pointer to the ``XrSpatialCapabilityConfigurationBaseHeaderEXT`` struct.
+
+\ **Note:** This method is intended to be used from GDExtensions.
 
 .. rst-class:: classref-item-separator
 

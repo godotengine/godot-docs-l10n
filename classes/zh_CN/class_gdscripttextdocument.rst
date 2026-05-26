@@ -1,0 +1,338 @@
+:github_url: hide
+
+.. _class_GDScriptTextDocument:
+
+GDScriptTextDocument
+====================
+
+**已弃用：** This class may be changed or removed in future versions.
+
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+
+Document related language server functionality.
+
+.. rst-class:: classref-introduction-group
+
+描述
+----
+
+Provides language server functionality related to documents.
+
+.. rst-class:: classref-reftable-group
+
+方法
+----
+
+.. table::
+   :widths: auto
+
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`           | :ref:`codeLens<class_GDScriptTextDocument_method_codeLens>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                                    |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`           | :ref:`colorPresentation<class_GDScriptTextDocument_method_colorPresentation>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                  |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`           | :ref:`completion<class_GDScriptTextDocument_method_completion>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                                |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Variant<class_Variant>`       | :ref:`declaration<class_GDScriptTextDocument_method_declaration>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                              |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`           | :ref:`definition<class_GDScriptTextDocument_method_definition>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                                |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`didChange<class_GDScriptTextDocument_method_didChange>`\ (\ params\: :ref:`Variant<class_Variant>`\ )                                        |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`didClose<class_GDScriptTextDocument_method_didClose>`\ (\ params\: :ref:`Variant<class_Variant>`\ )                                          |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`didOpen<class_GDScriptTextDocument_method_didOpen>`\ (\ params\: :ref:`Variant<class_Variant>`\ )                                            |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`didSave<class_GDScriptTextDocument_method_didSave>`\ (\ params\: :ref:`Variant<class_Variant>`\ )                                            |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`           | :ref:`documentLink<class_GDScriptTextDocument_method_documentLink>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                            |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`           | :ref:`documentSymbol<class_GDScriptTextDocument_method_documentSymbol>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                        |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`           | :ref:`foldingRange<class_GDScriptTextDocument_method_foldingRange>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                            |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Variant<class_Variant>`       | :ref:`hover<class_GDScriptTextDocument_method_hover>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                                          |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Variant<class_Variant>`       | :ref:`nativeSymbol<class_GDScriptTextDocument_method_nativeSymbol>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                            |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Variant<class_Variant>`       | :ref:`prepareRename<class_GDScriptTextDocument_method_prepareRename>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                          |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`           | :ref:`references<class_GDScriptTextDocument_method_references>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                                |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Dictionary<class_Dictionary>` | :ref:`rename<class_GDScriptTextDocument_method_rename>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                                        |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Dictionary<class_Dictionary>` | :ref:`resolve<class_GDScriptTextDocument_method_resolve>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                                      |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`show_native_symbol_in_editor<class_GDScriptTextDocument_method_show_native_symbol_in_editor>`\ (\ symbol_id\: :ref:`String<class_String>`\ ) |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Variant<class_Variant>`       | :ref:`signatureHelp<class_GDScriptTextDocument_method_signatureHelp>`\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ )                          |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                              | :ref:`willSaveWaitUntil<class_GDScriptTextDocument_method_willSaveWaitUntil>`\ (\ params\: :ref:`Variant<class_Variant>`\ )                        |
+   +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+方法说明
+--------
+
+.. _class_GDScriptTextDocument_method_codeLens:
+
+.. rst-class:: classref-method
+
+:ref:`Array<class_Array>` **codeLens**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_codeLens>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_colorPresentation:
+
+.. rst-class:: classref-method
+
+:ref:`Array<class_Array>` **colorPresentation**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_colorPresentation>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_completion:
+
+.. rst-class:: classref-method
+
+:ref:`Array<class_Array>` **completion**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_completion>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_declaration:
+
+.. rst-class:: classref-method
+
+:ref:`Variant<class_Variant>` **declaration**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_declaration>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_definition:
+
+.. rst-class:: classref-method
+
+:ref:`Array<class_Array>` **definition**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_definition>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_didChange:
+
+.. rst-class:: classref-method
+
+|void| **didChange**\ (\ params\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_didChange>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_didClose:
+
+.. rst-class:: classref-method
+
+|void| **didClose**\ (\ params\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_didClose>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_didOpen:
+
+.. rst-class:: classref-method
+
+|void| **didOpen**\ (\ params\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_didOpen>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_didSave:
+
+.. rst-class:: classref-method
+
+|void| **didSave**\ (\ params\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_didSave>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_documentLink:
+
+.. rst-class:: classref-method
+
+:ref:`Array<class_Array>` **documentLink**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_documentLink>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_documentSymbol:
+
+.. rst-class:: classref-method
+
+:ref:`Array<class_Array>` **documentSymbol**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_documentSymbol>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_foldingRange:
+
+.. rst-class:: classref-method
+
+:ref:`Array<class_Array>` **foldingRange**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_foldingRange>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_hover:
+
+.. rst-class:: classref-method
+
+:ref:`Variant<class_Variant>` **hover**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_hover>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_nativeSymbol:
+
+.. rst-class:: classref-method
+
+:ref:`Variant<class_Variant>` **nativeSymbol**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_nativeSymbol>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_prepareRename:
+
+.. rst-class:: classref-method
+
+:ref:`Variant<class_Variant>` **prepareRename**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_prepareRename>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_references:
+
+.. rst-class:: classref-method
+
+:ref:`Array<class_Array>` **references**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_references>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_rename:
+
+.. rst-class:: classref-method
+
+:ref:`Dictionary<class_Dictionary>` **rename**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_rename>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_resolve:
+
+.. rst-class:: classref-method
+
+:ref:`Dictionary<class_Dictionary>` **resolve**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_resolve>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_show_native_symbol_in_editor:
+
+.. rst-class:: classref-method
+
+|void| **show_native_symbol_in_editor**\ (\ symbol_id\: :ref:`String<class_String>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_show_native_symbol_in_editor>`
+
+**已弃用：** Use :ref:`ScriptEditor.goto_help()<class_ScriptEditor_method_goto_help>` instead.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_signatureHelp:
+
+.. rst-class:: classref-method
+
+:ref:`Variant<class_Variant>` **signatureHelp**\ (\ params\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_signatureHelp>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GDScriptTextDocument_method_willSaveWaitUntil:
+
+.. rst-class:: classref-method
+
+|void| **willSaveWaitUntil**\ (\ params\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GDScriptTextDocument_method_willSaveWaitUntil>`
+
+**已弃用：** Accessing LSP endpoints directly might lead to unwanted side effects. Connect to the server via TCP, like a regular language server client.
+
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

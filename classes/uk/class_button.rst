@@ -16,9 +16,9 @@ Button
 Опис
 --------
 
-**Button** — стандартна тематична кнопка. Він може містити текст і значок і відображатиме їх відповідно до поточної :ref:`Theme<class_Theme>`.
+**Button** is the standard themed button. It can contain text and an icon, and it will display them according to the current :ref:`Theme<class_Theme>`.
 
-\ **Приклад створення кнопки та призначення дії при натисканні кодом:**\ 
+\ **Example:** Create a button and connect a method that will be called when the button is pressed:
 
 
 .. tabs::
@@ -26,34 +26,34 @@ Button
  .. code-tab:: gdscript
 
     func _ready():
-         var bottom = Button.new()
-         button.text = "Натисни мене"
-         button.pressed.connect(self._button_pressed)
-         add_child (кнопка)
+        var button = Button.new()
+        button.text = "Click me"
+        button.pressed.connect(_button_pressed)
+        add_child(button)
 
     func _button_pressed():
-         print("Привіт, світ!")
+        print("Hello world!")
 
  .. code-tab:: csharp
 
     public override void _Ready()
-     {
-         var bottom = new bottom();
-         button.Text = "Натисни мене";
-         button.Pressed += ButtonPressed;
-         AddChild(кнопка);
-     }
+    {
+        var button = new Button();
+        button.Text = "Click me";
+        button.Pressed += ButtonPressed;
+        AddChild(button);
+    }
 
     private void ButtonPressed()
-     {
-         GD.Print("Привіт, світ!");
-     }
+    {
+        GD.Print("Hello world!");
+    }
 
 
 
-Дивіться також :ref:`BaseButton<class_BaseButton>`, який містить загальні властивості та методи, пов’язані з цим вузлом.
+See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
 
-\ **Примітка:** кнопки не інтерпретують сенсорний ввід і тому не підтримують мультидотик, оскільки емуляція миші може натискати лише одну кнопку в певний момент часу. Використовуйте :ref:`TouchScreenButton<class_TouchScreenButton>` для кнопок, які запускають рух або дії під час гри.
+\ **Note:** Buttons support multitouch via touch input, allowing multiple buttons to be pressed at the same time. Otherwise, mouse input is used, limiting interaction to one button press at a time.
 
 .. rst-class:: classref-introduction-group
 

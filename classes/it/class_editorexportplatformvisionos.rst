@@ -91,6 +91,8 @@ Proprietà
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`icons/icon_1024x1024_tinted<class_EditorExportPlatformVisionOS_property_icons/icon_1024x1024_tinted>`                                                                               |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`modules/camera<class_EditorExportPlatformVisionOS_property_modules/camera>`                                                                                                         |
+   +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`privacy/active_keyboard_access_reasons<class_EditorExportPlatformVisionOS_property_privacy/active_keyboard_access_reasons>`                                                         |
    +---------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`privacy/camera_usage_description<class_EditorExportPlatformVisionOS_property_privacy/camera_usage_description>`                                                                     |
@@ -822,6 +824,18 @@ File icona base dell'applicazione usata per generare le altre icone, versione sc
 :ref:`String<class_String>` **icons/icon_1024x1024_tinted** :ref:`🔗<class_EditorExportPlatformVisionOS_property_icons/icon_1024x1024_tinted>`
 
 File icona base dell'applicazione usata per generare le altre icone, versione tinta. Consulta `Icone delle app <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformVisionOS_property_modules/camera:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **modules/camera** :ref:`🔗<class_EditorExportPlatformVisionOS_property_modules/camera>`
+
+If ``true``, :ref:`CameraServer<class_CameraServer>` module is added to the exported project.
 
 .. rst-class:: classref-item-separator
 

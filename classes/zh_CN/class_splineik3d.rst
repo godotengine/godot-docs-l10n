@@ -14,15 +14,17 @@ SplineIK3D
 描述
 ----
 
-用于沿 :ref:`Path3D<class_Path3D>` 对齐骨骼的 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ 。拟合的平滑度取决于 :ref:`Curve3D.bake_interval<class_Curve3D_property_bake_interval>`\ 。
+A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` for aligning bones along a :ref:`Path3D<class_Path3D>`. The smoothness of the fitting depends on the :ref:`Curve3D.bake_interval<class_Curve3D_property_bake_interval>`.
 
-如果希望 :ref:`Path3D<class_Path3D>` 附加到特定骨骼，建议在 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 列表中（\ :ref:`Skeleton3D<class_Skeleton3D>` 的子级）将 :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` 放置在 **SplineIK3D** 之前，然后将 :ref:`Path3D<class_Path3D>` 放置为 :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` 的子节点。
+If you want the :ref:`Path3D<class_Path3D>` to attach to a specific bone, it is recommended to place a :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` before the **SplineIK3D** in the :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` list (children of the :ref:`Skeleton3D<class_Skeleton3D>`), and then place a :ref:`Path3D<class_Path3D>` as the :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>`'s child.
 
-骨骼扭转根据 :ref:`Curve3D.get_point_tilt()<class_Curve3D_method_get_point_tilt>` 确定。
+Bone twist is determined based on the :ref:`Curve3D.get_point_tilt()<class_Curve3D_method_get_point_tilt>`.
 
-如果根骨骼关节与 :ref:`Curve3D<class_Curve3D>` 的起点不重合，则假定它们之间存在一条直线段。这意味着指向 :ref:`Curve3D<class_Curve3D>` 起点的向量优先于沿 :ref:`Curve3D<class_Curve3D>` 的最短交点。
+If the root bone joint and the start point of the :ref:`Curve3D<class_Curve3D>` are separated, it assumes that there is a linear line segment between them. This means that the vector pointing toward the start point of the :ref:`Curve3D<class_Curve3D>` takes precedence over the shortest intersection point along the :ref:`Curve3D<class_Curve3D>`.
 
-如果末端骨骼关节超出路径长度，则会将其弯曲到尽可能靠近 :ref:`Curve3D<class_Curve3D>` 终点的位置。
+If the end bone joint exceeds the path length, it is bent as close as possible to the end point of the :ref:`Curve3D<class_Curve3D>`.
+
+\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 

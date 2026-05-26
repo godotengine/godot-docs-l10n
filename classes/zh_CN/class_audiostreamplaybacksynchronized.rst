@@ -7,9 +7,14 @@ AudioStreamPlaybackSynchronized
 
 **继承：** :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-.. container:: contribute
+Playback class used for :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`.
 
-	There is currently no description for this class. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+.. rst-class:: classref-introduction-group
+
+描述
+----
+
+Playback component of :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`. Handles the playback of multiple :ref:`AudioStream<class_AudioStream>`\ s in synchrony.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,15 +14,15 @@ HTTPRequest
 描述
 ----
 
-一种具有发送 HTTP 请求能力的节点。内部使用 :ref:`HTTPClient<class_HTTPClient>`\ 。
+A node with the ability to send HTTP requests. Uses :ref:`HTTPClient<class_HTTPClient>` internally.
 
-可用于发出 HTTP 请求，即通过 HTTP 下载或上传文件或网络内容。
+Can be used to make HTTP requests, i.e. download or upload files or web content via HTTP.
 
-\ **警告：**\ 请参阅 :ref:`HTTPClient<class_HTTPClient>` 中的注释和警告以了解限制，尤其是有关 TLS 安全性的限制。
+\ **Warning:** See the notes and warnings on :ref:`HTTPClient<class_HTTPClient>` for limitations, especially regarding TLS security.
 
-\ **注意：**\ 导出到 Android 时，在导出项目或使用一键部署前，请确保在 Android 导出预设中启用 ``INTERNET`` 权限。否则，任何类型的网络通信都将被 Android 阻止。
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **示例：**\ 联系 REST API 并输出一个返回字段：
+\ **Example:** Contact a REST API and print one of its returned fields:
 
 
 .. tabs::
@@ -30,77 +30,77 @@ HTTPRequest
  .. code-tab:: gdscript
 
     func _ready():
-        # 创建一个 HTTP 请求节点并连接其完成信号。
+        # Create an HTTP request node and connect its completion signal.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # 执行一个 GET 请求。以下 URL 会将写入作为 JSON 返回。
+        # Perform a GET request. The URL below returns JSON as of writing.
         var error = http_request.request("https://httpbin.org/get")
         if error != OK:
-            push_error("在HTTP请求中发生了一个错误。")
+            push_error("An error occurred in the HTTP request.")
 
-        # 执行一个 POST 请求。 以下 URL 会将写入作为 JSON 返回。
-        # 注意：不要使用单个 HTTPRequest 节点同时发出请求。
-        # 下面的代码片段仅供参考。
-        var body = JSON.new().stringify({"name": "Godette"})
+        # Perform a POST request. The URL below returns JSON as of writing.
+        # Note: Don't make simultaneous requests using a single HTTPRequest node.
+        # The snippet below is provided for reference only.
+        var body = JSON.stringify({"name": "Godette"})
         error = http_request.request("https://httpbin.org/post", [], HTTPClient.METHOD_POST, body)
         if error != OK:
-            push_error("在HTTP请求中发生了一个错误。")
+            push_error("An error occurred in the HTTP request.")
 
-    # 当 HTTP 请求完成时调用。
+    # Called when the HTTP request is completed.
     func _http_request_completed(result, response_code, headers, body):
         var json = JSON.new()
         json.parse(body.get_string_from_utf8())
         var response = json.get_data()
 
-        # 将打印 HTTPRequest 节点使用的用户代理字符串（由 httpbin.org 识别）。
+        # Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
         print(response.headers["User-Agent"])
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        // 创建一个 HTTP 请求节点并连接其完成信号。
+        // Create an HTTP request node and connect its completion signal.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // 执行一个 GET 请求。以下 URL 会将写入作为 JSON 返回。
+        // Perform a GET request. The URL below returns JSON as of writing.
         Error error = httpRequest.Request("https://httpbin.org/get");
         if (error != Error.Ok)
         {
-            GD.PushError("在HTTP请求中发生了一个错误。");
+            GD.PushError("An error occurred in the HTTP request.");
         }
 
-        // 执行一个 POST 请求。 以下 URL 会将写入作为 JSON 返回。
-        // 注意：不要使用单个 HTTPRequest 节点同时发出请求。
-        // 下面的代码片段仅供参考。
-        string body = new Json().Stringify(new Godot.Collections.Dictionary
+        // Perform a POST request. The URL below returns JSON as of writing.
+        // Note: Don't make simultaneous requests using a single HTTPRequest node.
+        // The snippet below is provided for reference only.
+        string body = Json.Stringify(new Godot.Collections.Dictionary
         {
             { "name", "Godette" }
         });
         error = httpRequest.Request("https://httpbin.org/post", null, HttpClient.Method.Post, body);
         if (error != Error.Ok)
         {
-            GD.PushError("在HTTP请求中发生了一个错误。");
+            GD.PushError("An error occurred in the HTTP request.");
         }
     }
 
-    // 当 HTTP 请求完成时调用。
+    // Called when the HTTP request is completed.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         var json = new Json();
         json.Parse(body.GetStringFromUtf8());
         var response = json.GetData().AsGodotDictionary();
 
-        // 将打印 HTTPRequest 节点使用的用户代理字符串（由 httpbin.org 识别）。
+        // Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
         GD.Print((response["headers"].AsGodotDictionary())["User-Agent"]);
     }
 
 
 
-\ **示例：**\ 使用 **HTTPRequest** 加载并显示图像：
+\ **Example:** Load an image using **HTTPRequest** and display it:
 
 
 .. tabs::
@@ -108,29 +108,29 @@ HTTPRequest
  .. code-tab:: gdscript
 
     func _ready():
-        # 创建一个 HTTP 请求节点并连接其完成信号。
+        # Create an HTTP request node and connect its completion signal.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # 执行一个 HTTP 请求。下面的 URL 将写入作为一个 PNG 图像返回。
+        # Perform the HTTP request. The URL below returns a PNG image as of writing.
         var error = http_request.request("https://placehold.co/512.png")
         if error != OK:
-            push_error("在HTTP请求中发生了一个错误。")
+            push_error("An error occurred in the HTTP request.")
 
-    # 当 HTTP 请求完成时调用。
+    # Called when the HTTP request is completed.
     func _http_request_completed(result, response_code, headers, body):
         if result != HTTPRequest.RESULT_SUCCESS:
-            push_error("无法下载图像。尝试一个不同的图像。")
+            push_error("Image couldn't be downloaded. Try a different image.")
 
         var image = Image.new()
         var error = image.load_png_from_buffer(body)
         if error != OK:
-            push_error("无法加载图像。")
+            push_error("Couldn't load the image.")
 
         var texture = ImageTexture.create_from_image(image)
 
-        # 在 TextureRect 节点中显示图像。
+        # Display the image in a TextureRect node.
         var texture_rect = TextureRect.new()
         add_child(texture_rect)
         texture_rect.texture = texture
@@ -139,36 +139,36 @@ HTTPRequest
 
     public override void _Ready()
     {
-        // 创建一个 HTTP 请求节点并连接其完成信号。
+        // Create an HTTP request node and connect its completion signal.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // 执行一个 HTTP 请求。下面的 URL 将写入作为一个 PNG 图像返回。
+        // Perform the HTTP request. The URL below returns a PNG image as of writing.
         Error error = httpRequest.Request("https://placehold.co/512.png");
         if (error != Error.Ok)
         {
-            GD.PushError("在HTTP请求中发生了一个错误。");
+            GD.PushError("An error occurred in the HTTP request.");
         }
     }
 
-    // 当 HTTP 请求完成时调用。
+    // Called when the HTTP request is completed.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         if (result != (long)HttpRequest.Result.Success)
         {
-            GD.PushError("无法下载图像。尝试一个不同的图像。");
+            GD.PushError("Image couldn't be downloaded. Try a different image.");
         }
         var image = new Image();
         Error error = image.LoadPngFromBuffer(body);
         if (error != Error.Ok)
         {
-            GD.PushError("无法加载图像。");
+            GD.PushError("Couldn't load the image.");
         }
 
         var texture = ImageTexture.CreateFromImage(image);
 
-        // 在 TextureRect 节点中显示图像。
+        // Display the image in a TextureRect node.
         var textureRect = new TextureRect();
         AddChild(textureRect);
         textureRect.Texture = texture;
@@ -176,7 +176,7 @@ HTTPRequest
 
 
 
-\ **注意：**\ **HTTPRequest** 节点会自动处理响应体的解压缩。除非已经指定了一个，否则 ``Accept-Encoding`` 报头将自动添加到你的每个请求中。任何带有 ``Content-Encoding: gzip`` 报头的响应都将自动解压，并作为未压缩的字节传送给你。
+\ **Note:** **HTTPRequest** nodes will automatically handle decompression of response bodies. An ``Accept-Encoding`` header will be automatically added to each of your requests, unless one is already specified. Any response with a ``Content-Encoding: gzip`` header will automatically be decompressed and delivered to you as uncompressed bytes.
 
 .. rst-class:: classref-introduction-group
 

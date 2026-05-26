@@ -191,6 +191,8 @@ Métodos
    +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                          | :ref:`is_line_folded<class_CodeEdit_method_is_line_folded>`\ (\ line\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                                                                                                                                                                |
    +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                           | :ref:`join_lines<class_CodeEdit_method_join_lines>`\ (\ line_ending\: :ref:`String<class_String>` = " "\ )                                                                                                                                                                                                                                                                                                                                             |
+   +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`move_lines_down<class_CodeEdit_method_move_lines_down>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                    |
    +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`move_lines_up<class_CodeEdit_method_move_lines_up>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -455,6 +457,14 @@ Marca la opción como una ruta de archivo.
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_PLAIN_TEXT** = ``9``
 
 Marca la opción como no clasificada o texto plano.
+
+.. _class_CodeEdit_constant_KIND_KEYWORD:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_KEYWORD** = ``10``
+
+Marks the option as a keyword.
 
 .. rst-class:: classref-item-separator
 
@@ -1549,6 +1559,18 @@ Devuelve ``true`` si la línea dada está marcada como en ejecución. Véase :re
 :ref:`bool<class_bool>` **is_line_folded**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_is_line_folded>`
 
 Devuelve ``true`` si la línea dada está plegada. Véase :ref:`fold_line()<class_CodeEdit_method_fold_line>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_CodeEdit_method_join_lines:
+
+.. rst-class:: classref-method
+
+|void| **join_lines**\ (\ line_ending\: :ref:`String<class_String>` = " "\ ) :ref:`🔗<class_CodeEdit_method_join_lines>`
+
+Joins all selected lines or lines containing a caret with their next line. Whitespace in between will be removed. If the next line has content, the ``line_ending`` will be inserted in between.
 
 .. rst-class:: classref-item-separator
 

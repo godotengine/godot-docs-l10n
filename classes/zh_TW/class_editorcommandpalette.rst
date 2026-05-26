@@ -41,18 +41,6 @@ Godot 編輯器的命令面板。
 
 .. rst-class:: classref-reftable-group
 
-屬性
-----
-
-.. table::
-   :widths: auto
-
-   +-------------------------+-------------------+------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | dialog_hide_on_ok | ``false`` (overrides :ref:`AcceptDialog<class_AcceptDialog_property_dialog_hide_on_ok>`) |
-   +-------------------------+-------------------+------------------------------------------------------------------------------------------+
-
-.. rst-class:: classref-reftable-group
-
 方法
 ----
 

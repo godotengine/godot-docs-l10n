@@ -60,6 +60,8 @@ SubViewport
    +------------------------------------------------+----------------------------------------------------------------------------------------+------------------------+
    | :ref:`bool<class_bool>`                        | :ref:`size_2d_override_stretch<class_SubViewport_property_size_2d_override_stretch>`   | ``false``              |
    +------------------------------------------------+----------------------------------------------------------------------------------------+------------------------+
+   | :ref:`int<class_int>`                          | :ref:`view_count<class_SubViewport_property_view_count>`                               | ``1``                  |
+   +------------------------------------------------+----------------------------------------------------------------------------------------+------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -243,6 +245,23 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 - :ref:`bool<class_bool>` **is_size_2d_override_stretch_enabled**\ (\ )
 
 如果為 ``true``\ ，則 2D 尺寸覆蓋也會影響拉伸。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_SubViewport_property_view_count:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **view_count** = ``1`` :ref:`🔗<class_SubViewport_property_view_count>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_view_count**\ (\ value\: :ref:`int<class_int>`\ )
+- :ref:`int<class_int>` **get_view_count**\ (\ )
+
+The number of view layers we are rendering to. Set this to ``2`` to enable stereo rendering.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

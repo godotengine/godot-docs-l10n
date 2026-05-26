@@ -7,6 +7,8 @@ JSONRPC
 
 **Наследует:** :ref:`Object<class_Object>`
 
+**Наследуется от:** :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>`
+
 Помощник для работы со словарями, которые выглядят как документы JSONRPC.
 
 .. rst-class:: classref-introduction-group

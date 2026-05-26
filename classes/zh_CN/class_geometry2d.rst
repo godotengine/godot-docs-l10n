@@ -404,9 +404,9 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 :ref:`Variant<class_Variant>` **line_intersects_line**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, dir_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, dir_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_line_intersects_line>`
 
-返回直线 (``from_a``, ``dir_a``) 和直线 (``from_b``, ``dir_b``) 的交点。返回 :ref:`Vector2<class_Vector2>`\ ，直线平行则返回 ``null``\ 。
+Returns the point of intersection between the two lines (``from_a``, ``dir_a``) and (``from_b``, ``dir_b``). Returns a :ref:`Vector2<class_Vector2>`, or ``null`` if the lines are parallel.
 
-\ ``from`` 和 ``dir`` *不是*\ 线段或射线的端点，而是直线的斜率（\ ``dir``\ ）和直线上的一个已知点（\ ``from``\ ）。
+\ ``from`` and ``dir`` are *not* endpoints of a line segment or ray but the slope (``dir``) and a known point (``from``) on that line. To get the intersection between two line segments, use :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
 
 
 .. tabs::
@@ -417,11 +417,11 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
     var dir_a = Vector2.RIGHT
     var from_b = Vector2.DOWN
 
-    # 返回 Vector2(1, 0)
+    # Returns Vector2(1, 0)
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(1, -1))
-    # 返回 Vector2(-1, 0)
+    # Returns Vector2(-1, 0)
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(-1, -1))
-    # 返回 null
+    # Returns null
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2.RIGHT)
 
  .. code-tab:: csharp
@@ -430,11 +430,11 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
     var dirA = Vector2.Right;
     var fromB = Vector2.Down;
 
-    // 返回新的 Vector2(1, 0)
+    // Returns new Vector2(1, 0)
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(1, -1));
-    // 返回新的 Vector2(-1, 0)
+    // Returns new Vector2(-1, 0)
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(-1, -1));
-    // 返回 null
+    // Returns null
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, Vector2.Right);
 
 
@@ -554,7 +554,7 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 :ref:`Variant<class_Variant>` **segment_intersects_segment**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, to_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, to_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_segment_intersects_segment>`
 
-检查两条线段 (``from_a``, ``to_a``) 和 (``from_b``, ``to_b``) 是否相交。如果相交，则返回交点 :ref:`Vector2<class_Vector2>`\ 。如果不相交，则返回 ``null``\ 。
+Checks if two line segments intersect, with line ``a`` between ``from_a`` and ``to_a`` and line ``b`` between ``from_b`` and ``to_b``. If the line segments intersect, the point of intersection is returned as a :ref:`Vector2<class_Vector2>`. If no intersection takes place, ``null`` is returned.
 
 .. rst-class:: classref-item-separator
 

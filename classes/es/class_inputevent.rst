@@ -96,6 +96,22 @@ Constantes
 
 ID de dispositivo utilizado para la entrada de ratón emulada desde una pantalla táctil, o para la entrada táctil emulada desde un ratón. Esto se puede utilizar para distinguir la entrada de ratón emulada de la entrada de ratón física, o la entrada táctil emulada de la entrada táctil física.
 
+.. _class_InputEvent_constant_DEVICE_ID_KEYBOARD:
+
+.. rst-class:: classref-constant
+
+**DEVICE_ID_KEYBOARD** = ``16`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_KEYBOARD>`
+
+Device ID used for input from a keyboard. This can be used to distinguish keyboard input events from joypad input events.
+
+.. _class_InputEvent_constant_DEVICE_ID_MOUSE:
+
+.. rst-class:: classref-constant
+
+**DEVICE_ID_MOUSE** = ``32`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_MOUSE>`
+
+Device ID used for input from a mouse. This can be used to distinguish mouse input events from joypad input events.
+
 .. rst-class:: classref-section-separator
 
 ----

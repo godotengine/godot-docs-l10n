@@ -7,14 +7,18 @@ AudioEffectHardLimiter
 
 **Eredita:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Aggiunge un effetto audio di limitatore rigido a un bus audio.
+Adds a limiter audio effect to an audio bus.
+
+Prevents audio signals from exceeding a specified volume level.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Un limitatore è un effetto progettato per impedire al suono di andare oltre una determinata soglia in dB. I Limitatori rigidi prevedono i picchi di volume, e applicheranno gradualmente una riduzione del guadagno quando un picco attraversa la soglia superiore per evitare clipping e distorsione. Conserva la forma d'onda e la impedisce di attraversare la soglia superiore. Aggiungere questo effetto nel bus Master è raccomandato come misura di sicurezza per evitare che si verifichino picchi di volume improvvisi, e per evitare distorsioni causate da clipping.
+A "limiter" disallows audio signals from exceeding a given volume threshold level in dB. Hard limiters predict volume peaks, and will smoothly apply gain reduction when a peak crosses the ceiling threshold level to prevent clipping. It preserves the waveform and prevents it from crossing the ceiling threshold level. Adding one in the Master bus is recommended as a safety measure to prevent sudden volume peaks from occurring, and to prevent distortion caused by clipping, when the volume exceeds 0 dB.
+
+If clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +26,8 @@ Tutorial
 ----------------
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -59,9 +65,9 @@ Descrizioni delle proprietà
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-Il valore massimo consentito della forma d'onda, in decibel. Questo valore può variare da ``-24.0`` a ``0.0``.
+The waveform's maximum allowed value, in dB. This value can range from -24 to 0.
 
-Il valore predefinito di ``-0.3`` impedisce potenziali picchi all'interno dei campioni (ISP) di oltrepassare 0 dB, che possono causare una lieve distorsione su alcuni vecchi dispositivi.
+The default value of -0.3 prevents potential inter-sample peaks (ISP) from crossing over 0 dB, which can cause slight distortion on some older hardware.
 
 .. rst-class:: classref-item-separator
 
@@ -78,7 +84,7 @@ Il valore predefinito di ``-0.3`` impedisce potenziali picchi all'interno dei ca
 - |void| **set_pre_gain_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain_db**\ (\ )
 
-Guadagno da applicare prima di limitare, in decibel.
+Gain before limiting, in dB. Value can range from -24 to 24.
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +101,7 @@ Guadagno da applicare prima di limitare, in decibel.
 - |void| **set_release**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release**\ (\ )
 
-Tempo necessario in secondi affinché la riduzione del guadagno venga rilasciata completamente.
+Time it takes in seconds for the gain reduction to fully release. Value can range from 0.01 to 3.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

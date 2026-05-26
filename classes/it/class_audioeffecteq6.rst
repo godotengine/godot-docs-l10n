@@ -7,9 +7,9 @@ AudioEffectEQ6
 
 **Eredita:** :ref:`AudioEffectEQ<class_AudioEffectEQ>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Aggiunge un effetto audio equalizzatore a 6 bande a un bus audio. Ti dà il controllo sulle frequenze da 32 Hz a 10000 Hz.
+Adds a 6-band equalizer audio effect to an audio bus.
 
-Ogni frequenza può essere modulata tra -60/+24 dB.
+Gives you control over frequencies from 32 Hz to 10000 Hz. Each frequency can be modulated between -60/+24 dB.
 
 .. rst-class:: classref-introduction-group
 
@@ -38,6 +38,8 @@ Tutorial
 ----------------
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

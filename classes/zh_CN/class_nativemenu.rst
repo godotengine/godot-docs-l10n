@@ -169,6 +169,8 @@ NativeMenu
    +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                            | :ref:`set_item_indentation_level<class_NativeMenu_method_set_item_indentation_level>`\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, level\: :ref:`int<class_int>`\ )                                                                                                                                                                                                                                                                                                  |
    +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`             | :ref:`set_item_index<class_NativeMenu_method_set_item_index>`\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, target_idx\: :ref:`int<class_int>`\ )                                                                                                                                                                                                                                                                                                                     |
+   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                            | :ref:`set_item_key_callback<class_NativeMenu_method_set_item_key_callback>`\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, key_callback\: :ref:`Callable<class_Callable>`\ )                                                                                                                                                                                                                                                                                           |
    +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                            | :ref:`set_item_max_states<class_NativeMenu_method_set_item_max_states>`\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, max_states\: :ref:`int<class_int>`\ )                                                                                                                                                                                                                                                                                                           |
@@ -544,9 +546,9 @@ Dock 图标右键菜单 ID（在 macOS 上，该菜单包括标准应用程序�
 
 :ref:`int<class_int>` **find_item_index_with_submenu**\ (\ rid\: :ref:`RID<class_RID>`, submenu_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_submenu>`
 
-返回由 ``submenu_rid`` 指定的子菜单项的索引。索引由引擎自动分配给每个菜单项，无法手动设置。
+Returns the index of the item with the submenu specified by ``submenu_rid``. Indices are automatically assigned to each item by the engine.
 
-\ **注意：**\ 该方法在 macOS 和 Windows 上实现。
+\ **Note:** This method is implemented on macOS and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -558,9 +560,9 @@ Dock 图标右键菜单 ID（在 macOS 上，该菜单包括标准应用程序�
 
 :ref:`int<class_int>` **find_item_index_with_tag**\ (\ rid\: :ref:`RID<class_RID>`, tag\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_tag>`
 
-返回具有指定 ``tag`` 的菜单项的索引。引擎会自动为每个菜单项分配索引，无法手动设置。
+Returns the index of the item with the specified ``tag``. Indices are automatically assigned to each item by the engine.
 
-\ **注意：**\ 该方法在 macOS 和 Windows 上实现。
+\ **Note:** This method is implemented on macOS and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -572,9 +574,9 @@ Dock 图标右键菜单 ID（在 macOS 上，该菜单包括标准应用程序�
 
 :ref:`int<class_int>` **find_item_index_with_text**\ (\ rid\: :ref:`RID<class_RID>`, text\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_text>`
 
-返回具有指定 ``text`` 的菜单项的索引。引擎会自动为每个菜单项分配索引，无法手动设置。
+Returns the index of the item with the specified ``text``. Indices are automatically assigned to each item by the engine.
 
-\ **注意：**\ 该方法在 macOS 和 Windows 上实现。
+\ **Note:** This method is implemented on macOS and Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -1177,6 +1179,24 @@ Dock 图标右键菜单 ID（在 macOS 上，该菜单包括标准应用程序�
 设置索引为 ``idx`` 的菜单项的水平偏移量。
 
 \ **注意：**\ 该方法仅在 macOS 上实现。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_index:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **set_item_index**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, target_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_index>`
+
+Changes the index of the item at index ``idx`` to be at index ``target_idx``. This can be used to move an item above other items.
+
+Returns the new index of the moved item, it's not guaranteed to be the same as ``target_idx``.
+
+\ **Note:** The indices of any items between index ``idx`` and index ``target_idx`` will be shifted by one.
+
+\ **Note:** This method is implemented on macOS and Windows.
 
 .. rst-class:: classref-item-separator
 

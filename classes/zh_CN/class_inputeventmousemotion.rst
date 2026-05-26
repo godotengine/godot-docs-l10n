@@ -153,9 +153,9 @@ InputEventMouseMotion
 - |void| **set_screen_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_velocity**\ (\ )
 
-屏幕坐标中未缩放的鼠标速度（单位为每秒像素数）。该速度\ *不会*\ 根据内容缩放系数或对 :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>` 的调用进行缩放。
+The unscaled mouse velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`.
 
-\ **注意：**\ 使用 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` 鼠标模式时，请使用 :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` 实现鼠标瞄准。
+\ **Note:** In :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mode, :ref:`screen_velocity<class_InputEventMouseMotion_property_screen_velocity>` returns ``(0, 0)`` because the mouse cursor is hidden and locked. Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
 
 .. rst-class:: classref-item-separator
 
@@ -189,11 +189,11 @@ InputEventMouseMotion
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-鼠标速度，单位为像素每秒。
+The mouse velocity in pixels per second.
 
-\ **注意：**\ :ref:`velocity<class_InputEventMouseMotion_property_velocity>` 会根据内容缩放系数自动缩放，内容缩放系数由项目的拉伸模式设置定义。这意味着鼠标灵敏度将根据分辨率而有所不同。
+\ **Note:** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. That means mouse sensitivity may appear different depending on resolution.
 
-\ **注意：**\ 使用 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` 鼠标模式时，请使用 :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` 实现鼠标瞄准。
+\ **Note:** In :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mode, :ref:`velocity<class_InputEventMouseMotion_property_velocity>` returns ``(0, 0)`` because the mouse cursor is hidden and locked. Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

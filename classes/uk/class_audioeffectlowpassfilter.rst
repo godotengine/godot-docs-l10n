@@ -7,14 +7,16 @@ AudioEffectLowPassFilter
 
 **Успадковує:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Додає фільтр низьких частот до звукової шини.
+Adds a low-pass filter to an audio bus.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Зрізає частоти, вищі за :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, і пропускає нижчі частоти.
+A "low-pass" filter attenuates frequencies higher than :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` and allows lower frequencies to pass unchanged.
+
+This filter can be used to muffle sounds.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +24,8 @@ AudioEffectLowPassFilter
 ------------------
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

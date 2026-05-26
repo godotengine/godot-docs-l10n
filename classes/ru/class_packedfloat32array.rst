@@ -12,11 +12,13 @@ PackedFloat32Array
 Описание
 ----------------
 
-Массив, специально разработанный для хранения 32-битных значений с плавающей точкой (float). Плотно упаковывает данные, поэтому экономит память для больших размеров массива.
+An array specifically designed to hold 32-bit floating-point values (float). Packs data tightly, so it saves memory for large array sizes.
 
-Если вам нужно плотно упаковать 64-битные значения с плавающей точкой, см. :ref:`PackedFloat64Array<class_PackedFloat64Array>`.
+If you need to pack 64-bit floats tightly, see :ref:`PackedFloat64Array<class_PackedFloat64Array>`.
 
-\ **Примечание:** Упакованные массивы всегда передаются по ссылке. Чтобы получить копию массива, которую можно изменять независимо от исходного массива, используйте :ref:`duplicate()<class_PackedFloat32Array_method_duplicate>`. Это *не* касается встроенных свойств и методов. В этих случаях возвращаемый упакованный массив является копией, и его изменение *не* повлияет на исходное значение. Чтобы обновить встроенное свойство этого типа, измените возвращаемый массив, а затем снова назначьте его свойству.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedFloat32Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 

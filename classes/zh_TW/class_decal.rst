@@ -391,11 +391,13 @@ enum **DecalTexture**: :ref:`🔗<enum_Decal_DecalTexture>`
 - |void| **set_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`\ ) |const|
 
-存有裝飾的環境光遮蔽、粗糙度、金屬性的 :ref:`Texture2D<class_Texture2D>`\ 。可用於為裝飾新增額外的細節。
+:ref:`Texture2D<class_Texture2D>` storing ambient occlusion, roughness, and metallic for the decal. Use this to add extra detail to decals.
 
-\ **注意：**\ :ref:`BaseMaterial3D<class_BaseMaterial3D>` 的篩選模式可以對每個材質進行調整，而 **Decal** 紋理的篩選模式是通過 :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` 全域設定的。
+\ **Note:** Unlike :ref:`BaseMaterial3D<class_BaseMaterial3D>` whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
 
-\ **注意：**\ 單獨設定此紋理時裝飾不可見，因為還必須設定 :ref:`texture_albedo<class_Decal_property_texture_albedo>`\ 。要建立僅包含 ORM 的裝飾，請將反照率紋理載入到 :ref:`texture_albedo<class_Decal_property_texture_albedo>`\ ，並將 :ref:`albedo_mix<class_Decal_property_albedo_mix>` 設定為 ``0.0``\ 。反照率紋理的 Alpha 通道將用於確定應在何處覆蓋底層表面的 ORM 貼圖（及其強度）。
+\ **Note:** Setting this texture alone will not result in a visible decal, as :ref:`texture_albedo<class_Decal_property_texture_albedo>` must also be set. To create an ORM-only decal, load an albedo texture into :ref:`texture_albedo<class_Decal_property_texture_albedo>` and set :ref:`albedo_mix<class_Decal_property_albedo_mix>` to ``0.0``. The albedo texture's alpha channel will be used to determine where the underlying surface's ORM map should be overridden (and its intensity).
+
+\ **Note:** Due to technical limitations, modifying the underlying surface's roughness using :ref:`texture_orm<class_Decal_property_texture_orm>` does *not* affect screen-space reflections (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`), reflections from :ref:`VoxelGI<class_VoxelGI>`, and reflections from SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`). Only reflections from :ref:`ReflectionProbe<class_ReflectionProbe>`\ s are affected.
 
 .. rst-class:: classref-item-separator
 

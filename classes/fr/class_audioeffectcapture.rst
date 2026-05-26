@@ -7,18 +7,18 @@ AudioEffectCapture
 
 **Hérite de :** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Capture l'audio depuis un bus audio en temps réel.
+Exposes audio samples from an audio bus in real-time, such that it can be accessed as data.
 
 .. rst-class:: classref-introduction-group
 
 Description
 -----------
 
-AudioEffectCapture est un AudioEffect qui copie toutes les trames audio du bus d'effet audio joint dans son buffer circulaire interne.
+Copies all audio frames, also known as "samples" or "audio samples", from the attached audio bus into its internal ring buffer. This effect does not alter the audio. Can be used for storing real-time audio data for playback, and for creating real-time audio visualizations, like an oscilloscope.
 
-Le code d'application devrait consommer ces trames audio du buffer circulaire de l'anneau en utilisant :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` et les traiter au besoin, par exemple pour capturer des données d'un :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, implémenter des effets définis par l'application, ou transmettre de l'audio sur le réseau. Lors de la capture de données audio à partir d'un microphone, le format des échantillons sera en stéréo 32 bits à point flottant PCM.
+Application code should consume these audio frames from this ring buffer using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` and process it as needed, for example to capture data from an :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, implement application-defined effects, or to transmit audio over the network. When capturing audio data from a microphone, the format of the samples will be stereo 32-bit floating-point PCM.
 
-Contrairement à :ref:`AudioEffectRecord<class_AudioEffectRecord>`, cet effet ne renvoie que les échantillons audio bruts au lieu de les encoder dans un :ref:`AudioStream<class_AudioStream>`.
+Unlike :ref:`AudioEffectRecord<class_AudioEffectRecord>`, this effect only returns the raw audio samples instead of encoding them into an :ref:`AudioStream<class_AudioStream>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -83,7 +83,9 @@ Descriptions des propriétés
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-Longueur du buffer circulaire interne, en secondes. Définir la longueur du buffer n'aura aucun effet s'il est déjà initialisé.
+Length of the internal ring buffer, in seconds. Higher values keep data around for longer, but require more memory. Value can range from 0.01 to 10.
+
+\ **Note:** Setting the buffer length will have no effect if already initialized.
 
 .. rst-class:: classref-section-separator
 
@@ -100,7 +102,7 @@ Descriptions des méthodes
 
 :ref:`bool<class_bool>` **can_get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_can_get_buffer>`
 
-Renvoie ``true`` si au moins ``frames`` trames audio sont disponibles dans le buffer circulaire.
+Returns ``true`` if at least ``frames`` samples are available to read in the internal ring buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -126,11 +128,11 @@ Efface le buffer circulaire interne.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioEffectCapture_method_get_buffer>`
 
-Obtient les ``frames`` prochaines trames d'échantillonnage audio depuis le buffer circulaire interne.
+Gets the next ``frames`` samples from the internal ring buffer.
 
-Renvoie un :ref:`PackedVector2Array<class_PackedVector2Array>` contenant exactement ``frames`` échantillons audio si disponible, ou un :ref:`PackedVector2Array<class_PackedVector2Array>` vide s'il n'y a pas assez de données disponibles.
+Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` samples if available, or an empty :ref:`PackedVector2Array<class_PackedVector2Array>` if insufficient data was available.
 
-Les échantillons sont des PCM flottants signés entre ``-1`` et ``1``. Vous devrez les mettre à l'échelle si vous voulez les utilisez comme échantillons d'entiers 8 ou 16 bits. (``v = 0x7fff * samples[0].x``)
+The samples are signed floating-point PCM between ``-1`` and ``1``. You will have to scale them if you want to use them as 8 or 16-bit integer samples. (``v = 0x7fff * samples[0].x``)
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +144,7 @@ Les échantillons sont des PCM flottants signés entre ``-1`` et ``1``. Vous dev
 
 :ref:`int<class_int>` **get_buffer_length_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_buffer_length_frames>`
 
-Renvoie la taille totale du buffer circulaire interne en trames.
+Returns the total size of the internal ring buffer in number of samples.
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +156,7 @@ Renvoie la taille totale du buffer circulaire interne en trames.
 
 :ref:`int<class_int>` **get_discarded_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_discarded_frames>`
 
-Renvoie le nombre de trames audio perdue dans le bus audio parce que son buffer est plein.
+Returns the number of samples discarded from the audio bus due to full buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +168,7 @@ Renvoie le nombre de trames audio perdue dans le bus audio parce que son buffer 
 
 :ref:`int<class_int>` **get_frames_available**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_frames_available>`
 
-Renvoie le nombre de trames disponibles à lire en utilisant :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
+Returns the number of samples available to read using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +180,7 @@ Renvoie le nombre de trames disponibles à lire en utilisant :ref:`get_buffer()<
 
 :ref:`int<class_int>` **get_pushed_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_pushed_frames>`
 
-Renvoie le nombre de trames audio insérées depuis le bus audio.
+Returns the number of samples inserted from the audio bus.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

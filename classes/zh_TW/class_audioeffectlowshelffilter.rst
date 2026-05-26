@@ -7,14 +7,16 @@ AudioEffectLowShelfFilter
 
 **繼承：** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-為音訊匯流排新增低架濾波器。
+Adds a low-shelf filter to an audio bus.
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-降低所有低於 :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 的頻率。
+A "low-shelf" filter controls the gain of all frequencies below :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+
+This filter can be used to adjust the "strength" of a sound, by increasing or decreasing its low-end.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +24,8 @@ AudioEffectLowShelfFilter
 ----
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

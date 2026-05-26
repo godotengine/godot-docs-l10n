@@ -9,6 +9,20 @@ AudioStreamPlaylist
 
 包含子串流並以播放清單方式播放的 :ref:`AudioStream<class_AudioStream>`\ 。
 
+.. rst-class:: classref-introduction-group
+
+說明
+----
+
+An audio stream that can play back sub-streams in sequence. Streams can be added to the Playlist with :ref:`set_list_stream()<class_AudioStreamPlaylist_method_set_list_stream>`, and shuffled with :ref:`shuffle<class_AudioStreamPlaylist_property_shuffle>`.
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`音訊流 <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 屬性

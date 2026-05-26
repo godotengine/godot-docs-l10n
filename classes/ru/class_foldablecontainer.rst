@@ -202,7 +202,7 @@ enum **TitlePosition**: :ref:`🔗<enum_FoldableContainer_TitlePosition>`
 - |void| **set_folded**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_folded**\ (\ )
 
-Если ``true``, контейнер будет свернут и скроет все свои дочерние элементы.
+If ``true``, the container will become folded and will hide all its children.
 
 .. rst-class:: classref-item-separator
 

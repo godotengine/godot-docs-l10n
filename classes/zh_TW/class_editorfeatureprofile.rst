@@ -87,7 +87,7 @@ enum **Feature**: :ref:`🔗<enum_EditorFeatureProfile_Feature>`
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_ASSET_LIB** = ``2``
 
-AssetLib 分頁。如果禁用此功能，則不會顯示 AssetLib 分頁。
+The Asset Store tab. If this feature is disabled, the Asset Store tab won't display.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SCENE_TREE:
 

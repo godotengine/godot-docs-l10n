@@ -180,11 +180,19 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 为体积雾贴图的每个片段体素运行的一种计算着色器。
 
+.. _class_VisualShader_constant_TYPE_TEXTURE_BLIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Type<enum_VisualShader_Type>` **TYPE_TEXTURE_BLIT** = ``10``
+
+A shader used to process blit calls to a DrawableTexture.
+
 .. _class_VisualShader_constant_TYPE_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Type<enum_VisualShader_Type>` **TYPE_MAX** = ``10``
+:ref:`Type<enum_VisualShader_Type>` **TYPE_MAX** = ``11``
 
 代表 :ref:`Type<enum_VisualShader_Type>` 枚举的大小。
 

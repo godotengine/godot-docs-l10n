@@ -7,16 +7,16 @@ AudioEffectPitchShift
 
 **继承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-为音频总线添加音高变换的音频效果。
+Adds a pitch-shifting audio effect to an audio bus.
 
-升高或降低原始声音的音高。
+Raises or lowers the pitch of the input audio.
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-允许独立于速度调制音高。所有频率都可以增加或减少，而对瞬态的影响最小。
+Allows modulation of pitch without modifying speed. All frequencies can be raised or lowered with minimal effect on transients.
 
 .. rst-class:: classref-introduction-group
 
@@ -24,6 +24,8 @@ AudioEffectPitchShift
 ----
 
 - :doc:`音频总线 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -124,7 +126,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectPitchShift_FFTSize>`
 - |void| **set_fft_size**\ (\ value\: :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>`\ )
 - :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **get_fft_size**\ (\ )
 
-`快速傅里叶变换 <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__\ 缓冲区的大小。较高的数值可以使效果随时间平滑，但有较大的延迟。这种较高的延迟对有突然幅度变化的声音的影响特别明显。
+The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__ buffer. Higher values smooth out the effect over time, but have greater latency. The effects of this higher latency are especially noticeable on audio signals that have sudden amplitude changes.
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +160,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectPitchShift_FFTSize>`
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-要使用的音高缩放。\ ``1.0`` 是默认的音高，声音会按原样播放。\ :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` 的范围从 ``0.0``\ （无限低的音高，听不见）到 ``16``\ （比初始音高要高 16 倍）。
+The pitch scale to use. ``1.0`` is the default pitch and plays sounds unaffected. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` can range from 0 (infinitely low pitch, inaudible) to 16 (16 times higher than the initial pitch).
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

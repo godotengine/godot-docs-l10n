@@ -194,7 +194,9 @@ Véase también :ref:`area_shape_entered<class_Area3D_signal_area_shape_entered>
 
 **body_entered**\ (\ body\: :ref:`Node3D<class_Node3D>`\ ) :ref:`🔗<class_Area3D_signal_body_entered>`
 
-Emitida cuando el ``body`` recibido entra en esta área. ``body`` puede ser un :ref:`PhysicsBody3D<class_PhysicsBody3D>` o un :ref:`GridMap<class_GridMap>`. Los :ref:`GridMap<class_GridMap>` se detectan si su :ref:`MeshLibrary<class_MeshLibrary>` tiene formas de colisión configuradas. Requiere que :ref:`monitoring<class_Area3D_property_monitoring>` esté establecido en ``true``.
+Emitted when the received ``body`` enters this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` or :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+
+\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not emit this signal in such cases.
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +208,9 @@ Emitida cuando el ``body`` recibido entra en esta área. ``body`` puede ser un :
 
 **body_exited**\ (\ body\: :ref:`Node3D<class_Node3D>`\ ) :ref:`🔗<class_Area3D_signal_body_exited>`
 
-Emitida cuando el ``body`` recibido sale de esta área. ``body`` puede ser un :ref:`PhysicsBody3D<class_PhysicsBody3D>` o un :ref:`GridMap<class_GridMap>`. Los :ref:`GridMap<class_GridMap>` se detectan si su :ref:`MeshLibrary<class_MeshLibrary>` tiene formas de colisión configuradas. Requiere que :ref:`monitoring<class_Area3D_property_monitoring>` esté establecido en ``true``.
+Emitted when the received ``body`` exits this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` or :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+
+\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not emit this signal in such cases.
 
 .. rst-class:: classref-item-separator
 
@@ -218,11 +222,13 @@ Emitida cuando el ``body`` recibido sale de esta área. ``body`` puede ser un :r
 
 **body_shape_entered**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node3D<class_Node3D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_body_shape_entered>`
 
-Emitida cuando una forma :ref:`Shape3D<class_Shape3D>` del cuerpo recibido ``body`` entra en una forma de ésta área. ``body`` puede ser un :ref:`PhysicsBody3D<class_PhysicsBody3D>` o un :ref:`GridMap<class_GridMap>`. Los :ref:`GridMap<class_GridMap>` se detectan si su :ref:`MeshLibrary<class_MeshLibrary>` tiene formas de colisión configuradas. Requiere que :ref:`monitoring<class_Area3D_property_monitoring>` esté establecido en ``true``.
+Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``body`` enters a shape of this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` or :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
 
-\ ``local_shape_index`` y ``body_shape_index`` contienen los índices de las formas que interactúan de ésta área y del cuerpo externo, respectivamente. ``body_rid`` contiene el :ref:`RID<class_RID>` del cuerpo. Estos valores pueden utilizarse con :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
+\ ``local_shape_index`` and ``body_shape_index`` contain indices of the interacting shapes from this area and the interacting body, respectively. ``body_rid`` contains the :ref:`RID<class_RID>` of the body. These values can be used with the :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
 
-\ **Ejemplo:** Obtener el nodo :ref:`CollisionShape3D<class_CollisionShape3D>` a partir del índice de la forma:
+\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not emit this signal in such cases.
+
+\ **Example:** Get the :ref:`CollisionShape3D<class_CollisionShape3D>` node from the shape index:
 
 
 .. tabs::
@@ -247,9 +253,11 @@ Emitida cuando una forma :ref:`Shape3D<class_Shape3D>` del cuerpo recibido ``bod
 
 **body_shape_exited**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node3D<class_Node3D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_body_shape_exited>`
 
-Emitida cuando una :ref:`Shape3D<class_Shape3D>` del ``body`` recibido sale de una forma de esta área. ``body`` puede ser un :ref:`PhysicsBody3D<class_PhysicsBody3D>` o un :ref:`GridMap<class_GridMap>`. Los :ref:`GridMap<class_GridMap>` se detectan si su :ref:`MeshLibrary<class_MeshLibrary>` tiene formas de colisión configuradas. Requiere que :ref:`monitoring<class_Area3D_property_monitoring>` esté establecido en ``true``.
+Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``body`` exits a shape of this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` or :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
 
-Véase también :ref:`body_shape_entered<class_Area3D_signal_body_shape_entered>`.
+See also :ref:`body_shape_entered<class_Area3D_signal_body_shape_entered>`.
+
+\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not emit this signal in such cases.
 
 .. rst-class:: classref-section-separator
 
@@ -726,9 +734,11 @@ Por razones de rendimiento (todas las colisiones se procesan al mismo tiempo), e
 
 :ref:`Array<class_Array>`\[:ref:`Node3D<class_Node3D>`\] **get_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area3D_method_get_overlapping_bodies>`
 
-Devuelve una lista de :ref:`PhysicsBody3D<class_PhysicsBody3D>` y :ref:`GridMap<class_GridMap>` que se intersecan. El :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` del cuerpo superpuesto debe formar parte del :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` de esta área para que se detecte.
+Returns a list of intersecting :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s, :ref:`SoftBody3D<class_SoftBody3D>`\ s, and :ref:`GridMap<class_GridMap>`\ s. The overlapping body's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
 
-Por razones de rendimiento (todas las colisiones se procesan al mismo tiempo), esta lista se modifica una vez durante el paso de física, no inmediatamente después de que se muevan los objetos. Considera usar señales en su lugar.
+For performance reasons (collisions are all processed at the same time) this list is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+
+\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not return any such bodies.
 
 .. rst-class:: classref-item-separator
 
@@ -754,9 +764,11 @@ Por razones de rendimiento (todas las colisiones se procesan al mismo tiempo), l
 
 :ref:`bool<class_bool>` **has_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area3D_method_has_overlapping_bodies>`
 
-Devuelve ``true`` si interseca cualquier :ref:`PhysicsBody3D<class_PhysicsBody3D>` o :ref:`GridMap<class_GridMap>`, de lo contrario devuelve ``false``. El :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` del cuerpo superpuesto debe ser parte del :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` de esta área para que se detecte.
+Returns ``true`` if intersecting any :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s, :ref:`SoftBody3D<class_SoftBody3D>`\ s, or :ref:`GridMap<class_GridMap>`\ s, otherwise returns ``false``. The overlapping body's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
 
-Por razones de rendimiento (todas las colisiones se procesan al mismo tiempo), la lista de cuerpos superpuestos se modifica una vez durante el paso de física, no inmediatamente después de que se mueven los objetos. Considera usar señales en su lugar.
+For performance reasons (collisions are all processed at the same time) the list of overlapping bodies is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+
+\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will not consider such bodies.
 
 .. rst-class:: classref-item-separator
 
@@ -782,11 +794,13 @@ Devuelve ``true`` si el **Area3D** dado interseca o se superpone con este **Area
 
 :ref:`bool<class_bool>` **overlaps_body**\ (\ body\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Area3D_method_overlaps_body>`
 
-Devuelve ``true`` si el cuerpo físico dado interseca o se superpone con este **Area3D**, ``false`` en caso contrario.
+Returns ``true`` if the given physics body intersects or overlaps this **Area3D**, ``false`` otherwise.
 
-\ **Nota:** El resultado de esta prueba no es inmediato después de mover objetos. Por rendimiento, la lista de superposiciones se actualiza una vez por fotograma y antes del paso de física. Considera usar señales en su lugar.
+\ ``body`` argument can either be a :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>`, or a :ref:`GridMap<class_GridMap>` instance. While GridMaps are not physics body themselves, they register their tiles with collision shapes as a virtual physics body.
 
-El argumento ``body`` puede ser una instancia de :ref:`PhysicsBody3D<class_PhysicsBody3D>` o de :ref:`GridMap<class_GridMap>`. Aunque los GridMaps no son cuerpos físicos en sí mismos, registran sus baldosas con formas de colisión como un cuerpo físico virtual.
+\ **Note:** The result of this test is not immediate after moving objects. For performance, list of overlaps is updated once per frame and before the physics step. Consider using signals instead.
+
+\ **Note:** Godot Physics does not support reporting overlaps with :ref:`SoftBody3D<class_SoftBody3D>`, so will return ``false`` in such cases.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

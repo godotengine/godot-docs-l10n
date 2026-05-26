@@ -128,9 +128,9 @@ ResourceImporterOBJ
 
 :ref:`bool<class_bool>` **generate_tangents** = ``true`` :ref:`🔗<class_ResourceImporterOBJ_property_generate_tangents>`
 
-Если ``true``, сгенерируйте касательные вершин с помощью `Mikktspace <http://www.mikktspace.com/>`__, если исходная сетка не имеет данных касательных. Когда это возможно, рекомендуется позволить программному обеспечению для 3D-моделирования генерировать касательные при экспорте вместо того, чтобы полагаться на эту опцию. Касательные требуются для правильного отображения карт нормалей и высот, а также любых функций материалов/шейдеров, которым требуются касательные.
+If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the source mesh doesn't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
 
-Если вам не нужны функции материалов, которым требуются касательные, отключение этого параметра может уменьшить размер выходного файла и ускорить импорт, если исходный 3D-файл не содержит касательных.
+If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
 
 .. rst-class:: classref-item-separator
 

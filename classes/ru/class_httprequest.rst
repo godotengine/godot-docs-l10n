@@ -14,15 +14,15 @@ HTTPRequest
 Описание
 ----------------
 
-Узел с возможностью отправки HTTP-запросов. Использует :ref:`HTTPClient<class_HTTPClient>` для внутренних целей.
+A node with the ability to send HTTP requests. Uses :ref:`HTTPClient<class_HTTPClient>` internally.
 
-Может использоваться для выполнения HTTP-запросов, т. е. загрузки или выгрузки файлов или веб-контента через HTTP.
+Can be used to make HTTP requests, i.e. download or upload files or web content via HTTP.
 
-\ **Предупреждение:** Ознакомьтесь с примечаниями и предупреждениями по :ref:`HTTPClient<class_HTTPClient>` относительно ограничений, особенно касающихся безопасности TLS.
+\ **Warning:** See the notes and warnings on :ref:`HTTPClient<class_HTTPClient>` for limitations, especially regarding TLS security.
 
-\ **Примечание:** При экспорте на Android убедитесь, что в настройках экспорта Android включено разрешение ``INTERNET`` перед экспортом проекта или использованием развертывания в один клик. В противном случае Android будет блокировать любые сетевые соединения.
+\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
 
-\ **Пример:** Обратиться к REST API и вывести одно из возвращенных им полей:
+\ **Example:** Contact a REST API and print one of its returned fields:
 
 
 .. tabs::
@@ -30,53 +30,53 @@ HTTPRequest
  .. code-tab:: gdscript
 
     func _ready():
-        # Создайте узел HTTP-запроса и подключите его сигнал завершения.
+        # Create an HTTP request node and connect its completion signal.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # Выполните GET-запрос. URL-адрес ниже возвращает JSON на момент написания статьи.
+        # Perform a GET request. The URL below returns JSON as of writing.
         var error = http_request.request("https://httpbin.org/get")
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-        # Выполните POST-запрос. URL-адрес ниже возвращает JSON на момент написания статьи.
-        # Примечание: не отправляйте одновременные запросы с использованием одного узла HTTPRequest.
-        # Фрагмент ниже предоставлен только для справки.
-        var body = JSON.new().stringify({"name": "Godette"})
+        # Perform a POST request. The URL below returns JSON as of writing.
+        # Note: Don't make simultaneous requests using a single HTTPRequest node.
+        # The snippet below is provided for reference only.
+        var body = JSON.stringify({"name": "Godette"})
         error = http_request.request("https://httpbin.org/post", [], HTTPClient.METHOD_POST, body)
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-    # Вызывается после завершения HTTP-запроса.
+    # Called when the HTTP request is completed.
     func _http_request_completed(result, response_code, headers, body):
         var json = JSON.new()
         json.parse(body.get_string_from_utf8())
         var response = json.get_data()
 
-        # Выведет строку пользовательского агента, используемую узлом HTTPRequest (распознанную httpbin.org).
+        # Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
         print(response.headers["User-Agent"])
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        // Создайте узел HTTP-запроса и подключите его сигнал завершения.
+        // Create an HTTP request node and connect its completion signal.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // Выполните GET-запрос. URL-адрес ниже возвращает JSON на момент написания статьи.
+        // Perform a GET request. The URL below returns JSON as of writing.
         Error error = httpRequest.Request("https://httpbin.org/get");
         if (error != Error.Ok)
         {
             GD.PushError("An error occurred in the HTTP request.");
         }
 
-        // Выполните POST-запрос. URL-адрес ниже возвращает JSON на момент написания статьи.
-        // Примечание: не отправляйте одновременные запросы с использованием одного узла HTTPRequest.
-        // Фрагмент ниже предоставлен только для справки.
-        string body = new Json().Stringify(new Godot.Collections.Dictionary
+        // Perform a POST request. The URL below returns JSON as of writing.
+        // Note: Don't make simultaneous requests using a single HTTPRequest node.
+        // The snippet below is provided for reference only.
+        string body = Json.Stringify(new Godot.Collections.Dictionary
         {
             { "name", "Godette" }
         });
@@ -87,20 +87,20 @@ HTTPRequest
         }
     }
 
-    // Вызывается после завершения HTTP-запроса.
+    // Called when the HTTP request is completed.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         var json = new Json();
         json.Parse(body.GetStringFromUtf8());
         var response = json.GetData().AsGodotDictionary();
 
-        // Выведет строку пользовательского агента, используемую узлом HTTPRequest (распознанную httpbin.org).
+        // Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
         GD.Print((response["headers"].AsGodotDictionary())["User-Agent"]);
     }
 
 
 
-\ **Пример:** Загрузите изображение с помощью **HTTPRequest** и отобразите его:
+\ **Example:** Load an image using **HTTPRequest** and display it:
 
 
 .. tabs::
@@ -108,17 +108,17 @@ HTTPRequest
  .. code-tab:: gdscript
 
     func _ready():
-        # Создайте узел HTTP-запроса и подключите его сигнал завершения.
+        # Create an HTTP request node and connect its completion signal.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # Выполните HTTP-запрос. URL-адрес ниже возвращает изображение в формате PNG (на момент написания статьи).
+        # Perform the HTTP request. The URL below returns a PNG image as of writing.
         var error = http_request.request("https://placehold.co/512.png")
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-    # Вызывается после завершения HTTP-запроса.
+    # Called when the HTTP request is completed.
     func _http_request_completed(result, response_code, headers, body):
         if result != HTTPRequest.RESULT_SUCCESS:
             push_error("Image couldn't be downloaded. Try a different image.")
@@ -130,7 +130,7 @@ HTTPRequest
 
         var texture = ImageTexture.create_from_image(image)
 
-        # Отобразите изображение в узле TextureRect.
+        # Display the image in a TextureRect node.
         var texture_rect = TextureRect.new()
         add_child(texture_rect)
         texture_rect.texture = texture
@@ -139,12 +139,12 @@ HTTPRequest
 
     public override void _Ready()
     {
-        // Создайте узел HTTP-запроса и подключите его сигнал завершения.
+        // Create an HTTP request node and connect its completion signal.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // Выполните HTTP-запрос. URL-адрес ниже возвращает изображение в формате PNG (на момент написания статьи).
+        // Perform the HTTP request. The URL below returns a PNG image as of writing.
         Error error = httpRequest.Request("https://placehold.co/512.png");
         if (error != Error.Ok)
         {
@@ -152,7 +152,7 @@ HTTPRequest
         }
     }
 
-    // Вызывается после завершения HTTP-запроса.
+    // Called when the HTTP request is completed.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         if (result != (long)HttpRequest.Result.Success)
@@ -168,7 +168,7 @@ HTTPRequest
 
         var texture = ImageTexture.CreateFromImage(image);
 
-        // Отобразите изображение в узле TextureRect.
+        // Display the image in a TextureRect node.
         var textureRect = new TextureRect();
         AddChild(textureRect);
         textureRect.Texture = texture;
@@ -176,7 +176,7 @@ HTTPRequest
 
 
 
-\ **Примечание:** Узлы **HTTPRequest** автоматически распаковывают тела ответов. Заголовок ``Accept-Encoding`` будет автоматически добавлен к каждому вашему запросу, если он ещё не указан. Любой ответ с заголовком ``Content-Encoding: gzip`` будет автоматически распакован и доставлен вам в виде несжатых байтов.
+\ **Note:** **HTTPRequest** nodes will automatically handle decompression of response bodies. An ``Accept-Encoding`` header will be automatically added to each of your requests, unless one is already specified. Any response with a ``Content-Encoding: gzip`` header will automatically be decompressed and delivered to you as uncompressed bytes.
 
 .. rst-class:: classref-introduction-group
 

@@ -189,6 +189,8 @@ iOS 导出器。
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`icons/spotlight_120x120_tinted<class_EditorExportPlatformIOS_property_icons/spotlight_120x120_tinted>`                                                                         |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`                                                                                                         |
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`privacy/active_keyboard_access_reasons<class_EditorExportPlatformIOS_property_privacy/active_keyboard_access_reasons>`                                                         |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`privacy/camera_usage_description<class_EditorExportPlatformIOS_property_privacy/camera_usage_description>`                                                                     |
@@ -1516,6 +1518,18 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），暗色版本。见 
 :ref:`String<class_String>` **icons/spotlight_120x120_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/spotlight_120x120_tinted>`
 
 iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 `App 图标 <https://developer.apple.com/cn/design/human-interface-guidelines/app-icons>`__\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlatformIOS_property_modules/camera:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **modules/camera** :ref:`🔗<class_EditorExportPlatformIOS_property_modules/camera>`
+
+If ``true``, :ref:`CameraServer<class_CameraServer>` module is added to the exported project.
 
 .. rst-class:: classref-item-separator
 

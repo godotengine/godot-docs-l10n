@@ -130,7 +130,9 @@ Joint3D
 - |void| **set_solver_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_solver_priority**\ (\ )
 
-用于定义哪个解算器在多个关节中被首先执行的优先级。数值越低，优先级越高。
+The priority used to define which solver is executed first for multiple joints. The lower the value, the higher the priority.
+
+\ **Note:** Only supported when using GodotPhysics3D. This property is ignored when using Jolt Physics.
 
 .. rst-class:: classref-section-separator
 

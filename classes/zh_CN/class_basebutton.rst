@@ -372,9 +372,9 @@ enum **ActionMode**: :ref:`🔗<enum_BaseButton_ActionMode>`
 - |void| **set_shortcut_in_tooltip**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_in_tooltip_enabled**\ (\ )
 
-如果为 ``true``\ ，该按钮将在工具提示中加入快捷键信息。
+If ``true``, the button will add information about its shortcut in the tooltip. This includes the shortcut's events and its :ref:`Resource.resource_name<class_Resource_property_resource_name>`. If both events and name are empty, the shortcut will not be included.
 
-\ **注意：**\ 使用 :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` 方法自定义工具提示控件时，该属性无效。
+\ **Note:** This property does nothing when the tooltip control is customized using :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
 
 .. rst-class:: classref-item-separator
 

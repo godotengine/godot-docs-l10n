@@ -420,9 +420,9 @@ Devuelve un nuevo vector con todos los componentes restringidos entre ``min`` y 
 
 :ref:`int<class_int>` **distance_squared_to**\ (\ to\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_distance_squared_to>`
 
-Devuelve la distancia al cuadrado entre este vector y ``to``.
+Returns the squared `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
 
-Este método se ejecuta más rápido que :ref:`distance_to()<class_Vector3i_method_distance_to>`, así que es preferible si necesitas comparar vectores o necesitas la distancia al cuadrado para alguna fórmula.
+This method runs faster than :ref:`distance_to()<class_Vector3i_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ Este método se ejecuta más rápido que :ref:`distance_to()<class_Vector3i_meth
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_distance_to>`
 
-Devuelve la distancia entre este vector y ``to``.
+Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
 
 .. rst-class:: classref-item-separator
 

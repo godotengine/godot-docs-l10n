@@ -258,9 +258,9 @@ BPTC и ASTC поддерживают сжатие VRAM для текстур HD
 
 :ref:`bool<class_bool>` **editor/scale_with_editor_scale** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_editor/scale_with_editor_scale>`
 
-Если ``true``, масштабирует импортированное изображение в соответствии с :ref:`EditorSettings.interface/editor/custom_display_scale<class_EditorSettings_property_interface/editor/custom_display_scale>`. Это должно быть включено для значков плагинов редактора и значков пользовательских классов, но должно быть отключено в противном случае.
+If ``true``, scales the imported image to match :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`. This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise.
 
-\ **Примечание:** Доступно только для изображений SVG.
+\ **Note:** Only available for SVG images.
 
 .. rst-class:: classref-item-separator
 
@@ -500,11 +500,11 @@ BPTC и ASTC поддерживают сжатие VRAM для текстур HD
 
 :ref:`bool<class_bool>` **process/premult_alpha** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_process/premult_alpha>`
 
-Альтернативой исправлению затемненных границ с помощью :ref:`process/fix_alpha_border<class_ResourceImporterTexture_property_process/fix_alpha_border>` является использование предварительно умноженной альфы. При включении этой опции текстура будет преобразована в этот формат. Для корректного отображения предварительно умноженной альфы требуются определенные материалы:
+An alternative to fixing darkened borders with :ref:`process/fix_alpha_border<class_ResourceImporterTexture_property_process/fix_alpha_border>` is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. A premultiplied alpha texture requires specific materials to be displayed correctly:
 
-- В 2D необходимо создать :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` и настроить его для использования режима смешивания :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` на :ref:`CanvasItem<class_CanvasItem>`, которые используют эту текстуру. В пользовательских шейдерах ``@canvas_item`` следует использовать ``render_mode blend_premul_alpha;``.
+- In 2D, a :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` will need to be created and configured to use the :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on :ref:`CanvasItem<class_CanvasItem>`\ s that use this texture. In custom ``canvas_item`` shaders, ``render_mode blend_premul_alpha;`` should be used.
 
-- В 3D необходимо создать :ref:`BaseMaterial3D<class_BaseMaterial3D>` и настроить его для использования режима смешивания :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` на материалах, которые используют эту текстуру. В пользовательских ``пространственных`` шейдерах следует использовать ``render_mode blend_premul_alpha;``.
+- In 3D, a :ref:`BaseMaterial3D<class_BaseMaterial3D>` will need to be created and configured to use the :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on materials that use this texture. In custom ``spatial`` shaders, ``render_mode blend_premul_alpha;`` should be used.
 
 .. rst-class:: classref-item-separator
 

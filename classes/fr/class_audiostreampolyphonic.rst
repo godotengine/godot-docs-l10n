@@ -18,6 +18,13 @@ AudioStream qui permet à l'utilisateur de jouer des flux personnalisés à tout
 
 Le contrôle de lecture se fait via l'instance :ref:`AudioStreamPlaybackPolyphonic<class_AudioStreamPlaybackPolyphonic>` définie dans le lecteur, qui peut être obtenue via les méthodes :ref:`AudioStreamPlayer.get_stream_playback()<class_AudioStreamPlayer_method_get_stream_playback>`, :ref:`AudioStreamPlayer2D.get_stream_playback()<class_AudioStreamPlayer2D_method_get_stream_playback>` ou :ref:`AudioStreamPlayer3D.get_stream_playback()<class_AudioStreamPlayer3D_method_get_stream_playback>`. L'obtention de l'instance de lecture n'est valide que lorsque la propriété ``stream`` est définie comme un **AudioStreamPolyphonic** dans ces lecteurs.
 
+.. rst-class:: classref-introduction-group
+
+Tutoriels
+------------------
+
+- :doc:`Flux audio <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 Propriétés

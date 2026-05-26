@@ -7,7 +7,7 @@ AudioEffectAmplify
 
 **Наследует:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Добавляет эффект усиления звука к аудио-шине.
+Adds a volume manipulation audio effect to an audio bus.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +22,8 @@ AudioEffectAmplify
 --------------------------------------
 
 - :doc:`Аудиошины <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -57,7 +59,7 @@ AudioEffectAmplify
 - |void| **set_volume_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_db**\ (\ )
 
-Величина усиления в децибелах. Положительные значения делают звук громче, отрицательные — тише. Значение может быть в диапазоне от -80 до 24.
+Amount of amplification in dB. Positive values make the sound louder, negative values make it quieter. Value can range from -80 to 24.
 
 .. rst-class:: classref-item-separator
 

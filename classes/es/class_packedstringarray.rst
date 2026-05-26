@@ -12,19 +12,21 @@ Un array empaquetado de :ref:`String<class_String>`\ s.
 Descripción
 ----------------------
 
-Un array diseñado específicamente para contener :ref:`String<class_String>`\ s. Empaqueta los datos de forma compacta, lo que ahorra memoria para arrays de gran tamaño.
+An array specifically designed to hold :ref:`String<class_String>`\ s. Packs data tightly, so it saves memory for large array sizes.
 
-Si quieres unir las strings en el array, usa :ref:`String.join()<class_String_method_join>`.
+If you want to join the strings in the array, use :ref:`String.join()<class_String_method_join>`.
 
 ::
 
-    var string_array = PackedStringArray(["hola", "mundo"])
+    var string_array = PackedStringArray(["hello", "world"])
     var string = " ".join(string_array)
-    print(string) # "hola mundo"
+    print(string) # "hello world"
 
-\ **Diferencias entre arrays empaquetados, arrays tipados y arrays sin tipo:** Los arrays empaquetados son generalmente más rápidos de iterar y modificar en comparación con un array tipado del mismo tipo (por ejemplo, **PackedStringArray** versus ``Array[String]``). Además, los arrays empaquetados consumen menos memoria. Como desventaja, los arrays empaquetados son menos flexibles ya que no ofrecen tantos métodos de conveniencia como :ref:`Array.map()<class_Array_method_map>`. Los arrays tipados, a su vez, son más rápidos de iterar y modificar que los arrays sin tipo.
+\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedStringArray** versus ``Array[String]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
 
-\ **Nota:** Los arrays empaquetados siempre se pasan por referencia. Para obtener una copia de un array que pueda ser modificado independientemente del array original, usa :ref:`duplicate()<class_PackedStringArray_method_duplicate>`. Este *no* es el caso para propiedades y métodos integrados. En estos casos, el array empaquetado devuelto es una copia, y modificarlo *no* afectará al valor original. Para actualizar una propiedad integrada de este tipo, modifica el array devuelto y luego asígnalo a la propiedad de nuevo.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedStringArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 

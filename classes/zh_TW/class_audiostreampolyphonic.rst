@@ -18,6 +18,13 @@ AudioStreamPolyphonic
 
 播放控制透過播放器內的 :ref:`AudioStreamPlaybackPolyphonic<class_AudioStreamPlaybackPolyphonic>` 實例完成，可呼叫 :ref:`AudioStreamPlayer.get_stream_playback()<class_AudioStreamPlayer_method_get_stream_playback>`\ 、\ :ref:`AudioStreamPlayer2D.get_stream_playback()<class_AudioStreamPlayer2D_method_get_stream_playback>` 或 :ref:`AudioStreamPlayer3D.get_stream_playback()<class_AudioStreamPlayer3D_method_get_stream_playback>` 取得。僅當這些播放器的 ``stream`` 屬性已設為 **AudioStreamPolyphonic** 時，才能取得該實例。
 
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`音訊流 <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 屬性

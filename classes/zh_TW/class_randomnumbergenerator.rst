@@ -91,19 +91,19 @@ To generate a random float number (within a given range) based on a time-depende
 - |void| **set_seed**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_seed**\ (\ )
 
-根據給定的種子值初始化亂數產生器狀態。給定的種子將給出一個可重現的偽亂數序列。
+Initializes the random number generator state based on the given seed value. A given seed will give a reproducible sequence of pseudo-random numbers.
 
-\ **注意：**\ RNG 沒有雪崩效應，給定相似的種子可以輸出相似的隨機流。如果種子來自外部，請考慮使用雜湊函式來提高種子品質。
+\ **Note:** The RNG does not have an avalanche effect, and can output similar random streams given similar seeds. Consider using a hash function to improve your seed quality if they're sourced externally.
 
-\ **注意：**\ 設定該屬性會產生改變內部 :ref:`state<class_RandomNumberGenerator_property_state>` 的副作用，因此請確保在修改 :ref:`state<class_RandomNumberGenerator_property_state>` *之前*\ 初始化種子：
+\ **Note:** The default value of this property is pseudo-random, and changes when calling :ref:`randomize()<class_RandomNumberGenerator_method_randomize>`. The ``0`` value documented here is a placeholder, and not the actual default seed.
 
-\ **注意：**\ 該屬性的預設值是偽隨機的，會在呼叫 :ref:`randomize()<class_RandomNumberGenerator_method_randomize>` 時改變。文檔中記錄的 ``0`` 是預留位置，不是實際的預設種子。
+\ **Note:** Setting this property produces a side effect of changing the internal :ref:`state<class_RandomNumberGenerator_property_state>`, so make sure to initialize the seed *before* modifying the :ref:`state<class_RandomNumberGenerator_property_state>`:
 
 ::
 
     var rng = RandomNumberGenerator.new()
     rng.seed = hash("Godot")
-    rng.state = 100 # 恢復到之前保存的一些狀態。
+    rng.state = 100 # Restore to some previously saved state.
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,11 @@ The current state of the random number generator. Save and restore this property
 
 :ref:`int<class_int>` **rand_weighted**\ (\ weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_RandomNumberGenerator_method_rand_weighted>`
 
-Returns a random index with non-uniform weights. Prints an error and returns ``-1`` if the array is empty.
+Returns a random integer between ``0`` and the size of the array that is passed as a parameter. Each value in the array should be a floating-point number that represents the relative likelihood that it will be returned as an index. A higher value means the value is more likely to be returned as an index, while a value of ``0`` means it will never be returned as an index.
+
+For example, if ``[0.5, 1, 1, 2]`` is passed as a parameter, then the method is twice as likely to return ``3`` (the index of the value ``2``) and twice as unlikely to return ``0`` (the index of the value ``0.5``) compared to the indices ``1`` and ``2``.
+
+Prints an error and returns ``-1`` if the array is empty.
 
 
 .. tabs::

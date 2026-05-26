@@ -62,9 +62,9 @@ Descrizioni delle proprietà
 
 :ref:`int<class_int>` **bar_beats** = ``4`` :ref:`🔗<class_ResourceImporterMP3_property_bar_beats>`
 
-Il numero di battute in un singolo battito nella traccia audio. Rilevante solo per la musica con funzionalità interattiva, non gli effetti sonori.
+The number of beats within a single bar in the audio track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-Nella finestra di dialogo **Impostazioni d'importazione avanzate** è fornito un editor più comodo per :ref:`bar_beats<class_ResourceImporterMP3_property_bar_beats>`, in quanto consente di visualizzare le modifiche in anteprima senza dover reimportare l'audio.
+A more convenient editor for :ref:`bar_beats<class_ResourceImporterMP3_property_bar_beats>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -76,9 +76,9 @@ Nella finestra di dialogo **Impostazioni d'importazione avanzate** è fornito un
 
 :ref:`int<class_int>` **beat_count** = ``0`` :ref:`🔗<class_ResourceImporterMP3_property_beat_count>`
 
-Il numero di battiti nella traccia audio. Rilevante solo per la musica con funzionalità interattiva, non gli effetti sonori.
+The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-Nella finestra di dialogo **Impostazioni d'importazione avanzate** è fornito un editor più comodo per :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>`, in quanto consente di visualizzare le modifiche in anteprima senza dover reimportare l'audio.
+A more convenient editor for :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ Nella finestra di dialogo **Impostazioni d'importazione avanzate** è fornito un
 
 :ref:`float<class_float>` **bpm** = ``0`` :ref:`🔗<class_ResourceImporterMP3_property_bpm>`
 
-I battiti al minuto della traccia audio. Dovrebbe corrispondere alla misura del BPM che è stata usata per comporre la traccia. Rilevante solo per la musica con funzionalità interattiva, non gli effetti sonori.
+The tempo of the audio track, measured in beats per minute. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-Nella finestra di dialogo **Impostazioni d'importazione avanzate** è fornito un editor più comodo per :ref:`bpm<class_ResourceImporterMP3_property_bpm>`, in quanto consente di visualizzare le modifiche in anteprima senza dover reimportare l'audio.
+A more convenient editor for :ref:`bpm<class_ResourceImporterMP3_property_bpm>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -104,9 +104,9 @@ Nella finestra di dialogo **Impostazioni d'importazione avanzate** è fornito un
 
 :ref:`bool<class_bool>` **loop** = ``false`` :ref:`🔗<class_ResourceImporterMP3_property_loop>`
 
-Se abilitato, l'audio sarà riprodotto dall'inizio dopo che la riproduzione termina raggiungendo la fine dell'audio.
+If enabled, the audio will begin playing either from the beginning or from :ref:`loop_offset<class_ResourceImporterMP3_property_loop_offset>`, after playback ends by either reaching the end of the audio or reaching the end of the last beat according to the amount specified in :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>`.
 
-\ **Nota:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, il segnale :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` non sarà emesso per l'audio in ripetizione quando raggiunge la fine del file audio, poiché l'audio continuerà a essere riprodotto indefinitamente.
+\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
 
 .. rst-class:: classref-item-separator
 

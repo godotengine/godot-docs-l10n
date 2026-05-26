@@ -7,14 +7,16 @@ AudioEffectHighShelfFilter
 
 **继承：** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-向音频总线添加一个高架滤波器。
+Adds a high-shelf filter to an audio bus.
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-降低所有高于 :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 的频率。
+A "high-shelf" filter controls the gain of all frequencies above :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+
+This filter can be used to increase or decrease clarity of a sound.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +24,8 @@ AudioEffectHighShelfFilter
 ----
 
 - :doc:`音频总线 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

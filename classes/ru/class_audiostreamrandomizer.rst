@@ -16,6 +16,13 @@ AudioStreamRandomizer
 
 Выбирает случайный аудиопоток из пула в зависимости от режима воспроизведения и применяет случайное смещение высоты тона и громкости во время воспроизведения.
 
+.. rst-class:: classref-introduction-group
+
+Обучающие материалы
+--------------------------------------
+
+- :doc:`Аудиопотоки <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 Свойства
@@ -32,6 +39,10 @@ AudioStreamRandomizer
    | :ref:`float<class_float>`                                    | :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`   | ``0.0`` |
    +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
    | :ref:`float<class_float>`                                    | :ref:`random_volume_offset_db<class_AudioStreamRandomizer_property_random_volume_offset_db>` | ``0.0`` |
+   +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
+   | :ref:`AudioStream<class_AudioStream>`                        | :ref:`stream_{index}/stream<class_AudioStreamRandomizer_property_stream_{index}/stream>`     |         |
+   +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
+   | :ref:`float<class_float>`                                    | :ref:`stream_{index}/weight<class_AudioStreamRandomizer_property_stream_{index}/weight>`     | ``1.0`` |
    +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
    | :ref:`int<class_int>`                                        | :ref:`streams_count<class_AudioStreamRandomizer_property_streams_count>`                     | ``0``   |
    +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
@@ -175,6 +186,34 @@ enum **PlaybackMode**: :ref:`🔗<enum_AudioStreamRandomizer_PlaybackMode>`
 - :ref:`float<class_float>` **get_random_volume_offset_db**\ (\ )
 
 Интенсивность случайных колебаний громкости. Громкость будет увеличиваться или уменьшаться на случайное значение до ``random_volume_offset_db``. Значение ``0.0`` означает отсутствие колебаний. Значение ``3.0`` означает, что громкость будет случайным образом изменяться в диапазоне от ``-3.0 dB`` до ``+3.0 dB``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_AudioStreamRandomizer_property_stream_{index}/stream:
+
+.. rst-class:: classref-property
+
+:ref:`AudioStream<class_AudioStream>` **stream_{index}/stream** :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/stream>`
+
+The :ref:`AudioStream<class_AudioStream>` at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_AudioStreamRandomizer_property_stream_{index}/weight:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **stream_{index}/weight** = ``1.0`` :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/weight>`
+
+The probability weight of the :ref:`AudioStream<class_AudioStream>` at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
 
 .. rst-class:: classref-item-separator
 

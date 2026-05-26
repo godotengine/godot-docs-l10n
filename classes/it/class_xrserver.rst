@@ -156,6 +156,18 @@ Emesso quando un tracciatore viene rimosso. Dovresti rimuovere tutti i punti :re
 
 Emesso quando un tracciatore esistente è stato aggiornato. Ciò può accadere se l'utente cambia controller.
 
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_XRServer_signal_world_origin_changed:
+
+.. rst-class:: classref-signal
+
+**world_origin_changed**\ (\ ) :ref:`🔗<class_XRServer_signal_world_origin_changed>`
+
+Emitted when the world origin transform changes.
+
 .. rst-class:: classref-section-separator
 
 ----

@@ -50,7 +50,7 @@ ResourceImporterDynamicFont
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`             | :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>`                                     | ``false`` |
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`               | :ref:`hinting<class_ResourceImporterDynamicFont_property_hinting>`                                                       | ``1``     |
+   | :ref:`int<class_int>`               | :ref:`hinting<class_ResourceImporterDynamicFont_property_hinting>`                                                       | ``3``     |
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`             | :ref:`keep_rounding_remainders<class_ResourceImporterDynamicFont_property_keep_rounding_remainders>`                     | ``true``  |
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-----------+
@@ -106,7 +106,7 @@ ResourceImporterDynamicFont
 
 要使用的字型抗鋸齒方法。
 
-\ **禁用：**\ 最適合像素藝術字形，儘管如果字形檔案良好的話，您沒有*\ 更改預設\ **灰度**\ 的抗鋸齒效果-建立並且字形以其預期大小的整數倍使用。如果像素藝術字形在其預期大小下外觀不佳，請嘗試將 :ref:`subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>` 設定為 **Disabled**\ 。
+\ **禁用：**\ 最適合像素藝術字形，儘管如果字形檔案良好的話，您沒\ *有*\ 更改預設\ **灰度**\ 的抗鋸齒效果-建立並且字形以其預期大小的整數倍使用。如果像素藝術字形在其預期大小下外觀不佳，請嘗試將 :ref:`subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>` 設定為 **Disabled**\ 。
 
 \ **灰階：**\ 使用灰階抗鋸齒。這是 macOS、Android 和 iOS 上的作業系統所使用的方法。
 
@@ -182,7 +182,7 @@ Enabling :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_gener
 
 .. rst-class:: classref-property
 
-:ref:`int<class_int>` **hinting** = ``1`` :ref:`🔗<class_ResourceImporterDynamicFont_property_hinting>`
+:ref:`int<class_int>` **hinting** = ``3`` :ref:`🔗<class_ResourceImporterDynamicFont_property_hinting>`
 
 The hinting mode to use. This controls how aggressively glyph edges should be snapped to pixels when rasterizing the font. Depending on personal preference, you may prefer using one hinting mode over the other. Hinting modes other than **None** are only effective if the font contains hinting data (see :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`).
 
@@ -191,6 +191,10 @@ The hinting mode to use. This controls how aggressively glyph edges should be sn
 \ **Light:** Sharp result by snapping glyph edges to pixels on the Y axis only.
 
 \ **Normal:** Sharpest by snapping glyph edges to pixels on both X and Y axes.
+
+\ **Light (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Light** for other fonts.
+
+\ **Normal (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Normal** for other fonts.
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +338,7 @@ Subpixel positioning improves font rendering appearance, especially at smaller f
 
 \ **One Quarter of a Pixel:** Always perform precise subpixel positioning regardless of font size. Highest quality, slowest rendering.
 
-\ **Auto (Except Pixel Fonts):** **Disabled** for the pixel style fonts (each glyph contours contain only straight horizontal and vertical lines), **Auto** for the other fonts.
+\ **Auto (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Auto** for other fonts.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

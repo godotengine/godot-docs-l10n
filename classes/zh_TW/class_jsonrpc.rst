@@ -7,6 +7,8 @@ JSONRPC
 
 **繼承：** :ref:`Object<class_Object>`
 
+**被繼承：** :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>`
+
 用於處理看起來像 JSONRPC 文件的字典的輔助類。
 
 .. rst-class:: classref-introduction-group

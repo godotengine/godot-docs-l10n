@@ -87,7 +87,7 @@ L'onglet "Script", qui contient l'éditeur de script et le navigateur de documen
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_ASSET_LIB** = ``2``
 
-L'onglet AssetLib. Si cette caractéristique est désactivée, l'onglet AssetLib ne sera pas affiché.
+The Asset Store tab. If this feature is disabled, the Asset Store tab won't display.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SCENE_TREE:
 

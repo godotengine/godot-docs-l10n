@@ -349,9 +349,7 @@ enum **DisableMode**: :ref:`🔗<enum_SoftBody3D_DisableMode>`
 - |void| **set_total_mass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_total_mass**\ (\ )
 
-SoftBody3D 的质量。
-
-\ **注意：**\ 使用 Jolt Physics 时，该属性的默认值将变为 ``0.0``\ ，这将导致物体自动将质量计算为每点 1 千克。这是一个 bug，将在 Godot 4.7 中修复。
+The SoftBody3D's mass.
 
 .. rst-class:: classref-section-separator
 

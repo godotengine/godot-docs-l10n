@@ -223,6 +223,8 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
 \ **Note:** Erasing elements while iterating over dictionaries is **not** supported and will result in unpredictable behavior.
 
+\ **Note:** In a boolean context, a dictionary will evaluate to ``false`` if it's empty (``{}``). Otherwise, a dictionary will always evaluate to ``true``.
+
 .. note::
 
 	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。
@@ -482,7 +484,16 @@ Duplicates this dictionary, deeply, like :ref:`duplicate()<class_Dictionary_meth
 
 :ref:`Variant<class_Variant>` **get**\ (\ key\: :ref:`Variant<class_Variant>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Dictionary_method_get>`
 
-返回該字典中與給定的鍵 ``key`` 對應的值。如果 ``key`` 不存在，則返回 ``default``\ ，如果省略了該參數則返回 ``null``\ 。
+Returns the corresponding value for the given ``key`` in the dictionary. If the ``key`` does not exist, returns ``default``, or ``null`` if the parameter is omitted.
+
+\ **Note:** If the ``default`` argument is computationally expensive or has unwanted side effects, consider using the :ref:`has()<class_Dictionary_method_has>` method instead:
+
+::
+
+    # Always calls `expensive_function()`.
+    dict.get("key", expensive_function())
+    # Calls `expensive_function()` only if the key does not exist.
+    dict.get("key") if dict.has("key") else expensive_function()
 
 .. rst-class:: classref-item-separator
 

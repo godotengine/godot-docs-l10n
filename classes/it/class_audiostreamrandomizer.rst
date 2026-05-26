@@ -16,6 +16,13 @@ Descrizione
 
 Sceglie un AudioStream casuale dal pool, a seconda della modalità di riproduzione, e applica una variazione casuale del tono e del volume durante la riproduzione.
 
+.. rst-class:: classref-introduction-group
+
+Tutorial
+----------------
+
+- :doc:`Flussi audio <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 Proprietà
@@ -32,6 +39,10 @@ Proprietà
    | :ref:`float<class_float>`                                    | :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`   | ``0.0`` |
    +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
    | :ref:`float<class_float>`                                    | :ref:`random_volume_offset_db<class_AudioStreamRandomizer_property_random_volume_offset_db>` | ``0.0`` |
+   +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
+   | :ref:`AudioStream<class_AudioStream>`                        | :ref:`stream_{index}/stream<class_AudioStreamRandomizer_property_stream_{index}/stream>`     |         |
+   +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
+   | :ref:`float<class_float>`                                    | :ref:`stream_{index}/weight<class_AudioStreamRandomizer_property_stream_{index}/weight>`     | ``1.0`` |
    +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
    | :ref:`int<class_int>`                                        | :ref:`streams_count<class_AudioStreamRandomizer_property_streams_count>`                     | ``0``   |
    +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
@@ -175,6 +186,34 @@ The largest possible distance, in semitones, of the random pitch variation. A va
 - :ref:`float<class_float>` **get_random_volume_offset_db**\ (\ )
 
 The intensity of random volume variation. Volume will be increased or decreased by a random value up to ``random_volume_offset_db``. A value of ``0.0`` means no variation. A value of ``3.0`` means volume will be randomized between ``-3.0 dB`` and ``+3.0 dB``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_AudioStreamRandomizer_property_stream_{index}/stream:
+
+.. rst-class:: classref-property
+
+:ref:`AudioStream<class_AudioStream>` **stream_{index}/stream** :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/stream>`
+
+The :ref:`AudioStream<class_AudioStream>` at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_AudioStreamRandomizer_property_stream_{index}/weight:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **stream_{index}/weight** = ``1.0`` :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/weight>`
+
+The probability weight of the :ref:`AudioStream<class_AudioStream>` at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
 
 .. rst-class:: classref-item-separator
 

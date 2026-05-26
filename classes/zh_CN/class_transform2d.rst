@@ -12,13 +12,15 @@ Transform2D
 描述
 ----
 
-**Transform2D** 内置 :ref:`Variant<class_Variant>` 类型是一个 2×3 `矩阵 <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__\ ，表示 2D 空间中的变换。它包含三个 :ref:`Vector2<class_Vector2>` 值：\ :ref:`x<class_Transform2D_property_x>`\ 、\ :ref:`y<class_Transform2D_property_y>` 和 :ref:`origin<class_Transform2D_property_origin>`\ 。它们一起可以表示平移、旋转、缩放和倾斜。
+The **Transform2D** built-in :ref:`Variant<class_Variant>` type is a 2×3 `matrix <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ representing a transformation in 2D space. It contains three :ref:`Vector2<class_Vector2>` values: :ref:`x<class_Transform2D_property_x>`, :ref:`y<class_Transform2D_property_y>`, and :ref:`origin<class_Transform2D_property_origin>`. Together, they can represent translation, rotation, scale, and skew.
 
-\ :ref:`x<class_Transform2D_property_x>` 和 :ref:`y<class_Transform2D_property_y>` 轴形成一个 2×2 矩阵，称为该变换的\ **基**\ 。每个轴的长度（\ :ref:`Vector2.length()<class_Vector2_method_length>`\ ）会影响该变换的缩放，而所有轴的方向会影响旋转。通常，两个轴彼此垂直。但是，当单独旋转一个轴时，变换会变得倾斜。将倾斜变换应用于 2D 精灵会使精灵看起来扭曲。
+The :ref:`x<class_Transform2D_property_x>` and :ref:`y<class_Transform2D_property_y>` axes form a 2×2 matrix, known as the transform's **basis**. The length of each axis (:ref:`Vector2.length()<class_Vector2_method_length>`) influences the transform's scale, while the direction of all axes influence the rotation. Usually, both axes are perpendicular to one another. However, when you rotate one axis individually, the transform becomes skewed. Applying a skewed transform to a 2D sprite will make the sprite appear distorted.
 
-有关一般介绍，请参阅\ :doc:`《矩阵和变换》 <../tutorials/math/matrices_and_transforms>`\ 教程。
+For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
 
-\ **注意：**\ 与 :ref:`Transform3D<class_Transform3D>` 不同，没有与 :ref:`Basis<class_Basis>` 类型等效的 2D 类型。所有提及的“基”均指 **Transform2D** 的 :ref:`x<class_Transform2D_property_x>` 和 :ref:`y<class_Transform2D_property_y>` 分量。
+\ **Note:** Unlike :ref:`Transform3D<class_Transform3D>`, there is no 2D equivalent to the :ref:`Basis<class_Basis>` type. All mentions of "basis" refer to the :ref:`x<class_Transform2D_property_x>` and :ref:`y<class_Transform2D_property_y>` components of **Transform2D**.
+
+\ **Note:** In a boolean context, a Transform2D will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Transform2D_constant_IDENTITY>`. Otherwise, a Transform2D will always evaluate to ``true``.
 
 .. note::
 

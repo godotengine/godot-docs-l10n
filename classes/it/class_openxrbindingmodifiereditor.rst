@@ -18,18 +18,6 @@ Questo è l'editor predefinito dei modificatori di associazioni, utilizzato nell
 
 .. rst-class:: classref-reftable-group
 
-Proprietà
-------------------
-
-.. table::
-   :widths: auto
-
-   +--------------------------------------------------------+-----------------------+--------------------------------------------------------------------------------+
-   | |bitfield|\[:ref:`SizeFlags<enum_Control_SizeFlags>`\] | size_flags_horizontal | ``3`` (overrides :ref:`Control<class_Control_property_size_flags_horizontal>`) |
-   +--------------------------------------------------------+-----------------------+--------------------------------------------------------------------------------+
-
-.. rst-class:: classref-reftable-group
-
 Metodi
 ------------
 

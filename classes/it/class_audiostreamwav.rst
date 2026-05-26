@@ -23,6 +23,8 @@ Questa classe può essere utilizzata anche per memorizzare dei dati audio PCM ge
 Tutorial
 ----------------
 
+- :doc:`Flussi audio <../tutorials/audio/audio_streams>`
+
 - :doc:`Caricamento e salvataggio di file a tempo di esecuzione <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group

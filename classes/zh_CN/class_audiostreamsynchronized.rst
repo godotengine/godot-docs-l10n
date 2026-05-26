@@ -16,6 +16,13 @@ AudioStreamSynchronized
 
 这是一种能够适配子音频流的音频流，子音频流会同步播放。按下播放时，各条音频流会同时开始播放，最后一条音频流结束播放后该音频流才会结束。如果存在循环的子音频流，那么播放就会继续。
 
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`音频流 <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 属性

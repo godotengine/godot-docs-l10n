@@ -1021,22 +1021,22 @@ The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but value
 
 |void| **assert**\ (\ condition\: :ref:`bool<class_bool>`, message\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_method_assert>`
 
-斷言 ``condition`` 為 ``true``\ 。如果 ``condition`` 為 ``false`` ，會產生一個錯誤。從編輯器執行時，運行中的專案也會暫停，直到你繼續執行。這可以作為比 :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` 更強的錯誤回報方式，用於專案開發者或外掛使用者。
+Asserts that the ``condition`` is ``true``. If the ``condition`` is ``false``, an error is generated and the current method returns a default value. When running from the editor, failed asserts also cause a debugger break. This can be used as a stronger form of :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` for reporting errors to project developers or add-on users.
 
-你可選擇性傳入 ``message`` ，在通用的「Assertion failed」訊息之外顯示更多資訊，說明為什麼斷言失敗。
+An optional ``message`` can be shown in addition to the generic "Assertion failed" message. You can use this to provide additional details about why the assertion failed.
 
-\ **警告：** 出於效能考量，\ :ref:`assert()<class_@GDScript_method_assert>` 包含的程式碼只會在除錯版本或從編輯器執行專案時執行。不要在 :ref:`assert()<class_@GDScript_method_assert>` 呼叫中加入有副作用的程式碼，否則專案於發行模式匯出時行為會出現差異。
+\ **Warning:** For performance reasons, the code inside :ref:`assert()<class_@GDScript_method_assert>` is only executed in debug builds or when running the project from the editor. Don't include code that has side effects in an :ref:`assert()<class_@GDScript_method_assert>` call. Otherwise, the project will behave differently when exported in release mode.
 
 ::
 
-    # 假設我們總希望 speed 介於 0 到 20 之間。
+    # Imagine we always want speed to be between 0 and 20.
     var speed = -10
-    assert(speed < 20) # True，程式會繼續執行。
-    assert(speed >= 0) # False，程式將停止。
-    assert(speed >= 0 and speed < 20) # 也可將兩個條件合併檢查。
-    assert(speed < 20, "限速為 20") # 顯示訊息。
+    assert(speed < 20) # True, the program will continue.
+    assert(speed >= 0) # False, the program will stop.
+    assert(speed >= 0 and speed < 20) # You can also combine the two conditional statements in one check.
+    assert(speed < 20, "the speed limit is 20") # Show a message.
 
-\ **注意：** :ref:`assert()<class_@GDScript_method_assert>` 是關鍵字，不是函式，無法作為 :ref:`Callable<class_Callable>` 呼叫，也不能用於運算式中。
+\ **Note:** :ref:`assert()<class_@GDScript_method_assert>` is a keyword, not a function. So you cannot access it as a :ref:`Callable<class_Callable>` or use it inside expressions.
 
 .. rst-class:: classref-item-separator
 
@@ -1170,17 +1170,17 @@ The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but value
 
 :ref:`bool<class_bool>` **is_instance_of**\ (\ value\: :ref:`Variant<class_Variant>`, type\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GDScript_method_is_instance_of>`
 
-若 ``value`` 為 ``type`` 的實例，則回傳 ``true``\ 。\ ``type`` 必須符合以下其中一種：
+Returns ``true`` if ``value`` is an instance of ``type``. The ``type`` value must be one of the following:
 
-- :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 列舉常數，例如 :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>`\ 。
+- A constant from the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` enumeration, for example :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>`.
 
-- 登錄在 :ref:`ClassDB<class_ClassDB>` 且繼承自 :ref:`Object<class_Object>` 的類別，例如 :ref:`Node<class_Node>`\ 。
+- An :ref:`Object<class_Object>`-derived class which exists in :ref:`ClassDB<class_ClassDB>`, for example :ref:`Node<class_Node>`.
 
-- :ref:`Script<class_Script>`\ （可使用任何類別，包含巢狀類）。
+- A :ref:`Script<class_Script>` (you can use any class, including inner one).
 
-與 ``is`` 運算子的右元不同，\ ``type`` 可為變數。\ ``is`` 支援更多功能（如型別化陣列），若不需動態檢查請優先使用該運算子。
+Unlike the right operand of the ``is`` operator, ``type`` can be a non-constant value. The ``is`` operator supports more features (such as typed arrays and dictionaries). Use the operator instead of this method if you do not need to check the type dynamically.
 
-\ **範例：**\ 
+\ **Examples:**\ 
 
 ::
 
@@ -1189,9 +1189,9 @@ The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but value
     print(is_instance_of(a, MyClass))
     print(is_instance_of(a, MyClass.InnerClass))
 
-\ **注意：**\ 若 ``value`` 或 ``type`` 為已釋放物件（參見 :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`\ ），或 ``type`` 不屬於上述項目，執行時將拋出錯誤。
+\ **Note:** If ``value`` and/or ``type`` are freed objects (see :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`), or ``type`` is not one of the above options, this method will raise a runtime error.
 
-另見 :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`\ 、\ :ref:`type_exists()<class_@GDScript_method_type_exists>`\ 、\ :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>`\ （與其他 :ref:`Array<class_Array>` 方法）。
+See also :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`Object.is_class()<class_Object_method_is_class>`, :ref:`Object.get_script()<class_Object_method_get_script>`, :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>` (and other :ref:`Array<class_Array>` methods), :ref:`Dictionary.is_same_typed()<class_Dictionary_method_is_same_typed>` (and other :ref:`Dictionary<class_Dictionary>` methods).
 
 .. rst-class:: classref-item-separator
 
@@ -1396,6 +1396,8 @@ See also :ref:`print_stack()<class_@GDScript_method_print_stack>`, :ref:`get_sta
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **type_exists**\ (\ type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_@GDScript_method_type_exists>`
+
+**已棄用：** Use :ref:`ClassDB.class_exists()<class_ClassDB_method_class_exists>` instead.
 
 如果 :ref:`ClassDB<class_ClassDB>` 中存在給定的 :ref:`Object<class_Object>` 衍生類，則返回 ``true``\ 。請注意，\ :ref:`Variant<class_Variant>` 資料型別未在 :ref:`ClassDB<class_ClassDB>` 中註冊。
 

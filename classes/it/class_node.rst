@@ -487,7 +487,7 @@ Eredita :ref:`process_mode<class_Node_property_process_mode>` dal nodo padre. Qu
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_PAUSABLE** = ``1``
 
-Interrompe l'elaborazione quando :ref:`SceneTree.paused<class_SceneTree_property_paused>` è ``true``. Questo è l'inverso di :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>` e l'impostazione predefinita per il nodo radice.
+Processes when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``false``. This is the inverse of :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>`, and the default for the root node.
 
 .. _class_Node_constant_PROCESS_MODE_WHEN_PAUSED:
 
@@ -495,7 +495,7 @@ Interrompe l'elaborazione quando :ref:`SceneTree.paused<class_SceneTree_property
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_WHEN_PAUSED** = ``2``
 
-Elabora **solo** quando :ref:`SceneTree.paused<class_SceneTree_property_paused>` è ``true``. Questo è l'inverso di :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`.
+Processes **only** when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``true``. This is the inverse of :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`.
 
 .. _class_Node_constant_PROCESS_MODE_ALWAYS:
 
@@ -503,7 +503,7 @@ Elabora **solo** quando :ref:`SceneTree.paused<class_SceneTree_property_paused>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_ALWAYS** = ``3``
 
-Elabora sempre. Continua a elaborare, ignorando :ref:`SceneTree.paused<class_SceneTree_property_paused>`. Questo è l'inverso di :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
+Always processes. Keeps processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
 
 .. _class_Node_constant_PROCESS_MODE_DISABLED:
 
@@ -511,7 +511,7 @@ Elabora sempre. Continua a elaborare, ignorando :ref:`SceneTree.paused<class_Sce
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_DISABLED** = ``4``
 
-Non elaborare mai. Disattiva completamente l'elaborazione, ignorando :ref:`SceneTree.paused<class_SceneTree_property_paused>`. Questo è l'inverso di :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
+Never processes. Completely disables processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1061,6 +1061,16 @@ Notifica ricevuta quando il cursore del mouse esce dall'area visibile della :ref
 
 Notifica ricevuta quando la finestra viene mossa.
 
+.. _class_Node_constant_NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED:
+
+.. rst-class:: classref-constant
+
+**NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED** = ``1013`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED>`
+
+Notification received when the output max linear value returned by :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed.
+
+This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen.
+
 .. _class_Node_constant_NOTIFICATION_OS_MEMORY_WARNING:
 
 .. rst-class:: classref-constant
@@ -1168,6 +1178,22 @@ Implementato su piattaforme desktop e mobili.
 **NOTIFICATION_TEXT_SERVER_CHANGED** = ``2018`` :ref:`🔗<class_Node_constant_NOTIFICATION_TEXT_SERVER_CHANGED>`
 
 Notifica ricevuta quando il :ref:`TextServer<class_TextServer>` viene modificato.
+
+.. _class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_ENTERED:
+
+.. rst-class:: classref-constant
+
+**NOTIFICATION_APPLICATION_PIP_MODE_ENTERED** = ``2019`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_ENTERED>`
+
+Notification received when the application enters picture-in-picture mode.
+
+.. _class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED:
+
+.. rst-class:: classref-constant
+
+**NOTIFICATION_APPLICATION_PIP_MODE_EXITED** = ``2020`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED>`
+
+Notification received when the application exits picture-in-picture mode.
 
 .. _class_Node_constant_NOTIFICATION_ACCESSIBILITY_UPDATE:
 
@@ -1943,17 +1969,17 @@ Se ``owned`` è ``true``, sono controllati solo i discendenti con un nodo :ref:`
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **find_children**\ (\ pattern\: :ref:`String<class_String>`, type\: :ref:`String<class_String>` = "", recursive\: :ref:`bool<class_bool>` = true, owned\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Node_method_find_children>`
 
-Trova tutti i discendenti di questo nodo i cui nomi corrispondono a ``pattern``, restituendo un :ref:`Array<class_Array>` vuoto se nessuna corrispondenza viene trovata. La corrispondenza viene effettuata sui nomi dei nodi, *non* sui loro percorsi, tramite :ref:`String.match()<class_String_method_match>`. Pertanto, è sensibile alle maiuscole e alle minuscole, ``"*"`` corrisponde a zero o più caratteri e ``"?"`` corrisponde a qualsiasi singolo carattere.
+Finds all descendants of this node whose names match ``pattern``, returning an empty :ref:`Array<class_Array>` if no match is found. The matching is done against node names, *not* their paths, through :ref:`String.match()<class_String_method_match>`. As such, it is case-sensitive, ``"*"`` matches zero or more characters, and ``"?"`` matches any single character.
 
-Se ``type`` non è vuoto, solo gli antenati che ereditano da ``type`` sono inclusi (vedi :ref:`Object.is_class()<class_Object_method_is_class>`).
+If ``type`` is not empty, only descendants inheriting from ``type`` are included (see :ref:`Object.is_class()<class_Object_method_is_class>`).
 
-Se ``recursive`` è ``false``, solo i figli diretti di questo nodo sono controllati. I nodi sono controllati in ordine ad albero, quindi è controllato prima il primo figlio diretto di questo nodo, poi i suoi figli diretti, ecc., prima di passare al secondo figlio diretto e così via. Nella ricerca sono inclusi anche i figli interni (vedi il parametro ``internal`` in :ref:`add_child()<class_Node_method_add_child>`).
+If ``recursive`` is ``false``, only this node's direct children are checked. Nodes are checked in tree order, so this node's first direct child is checked first, then its own direct children, etc., before moving to the second direct child, and so on. Internal children are also included in the search (see ``internal`` parameter in :ref:`add_child()<class_Node_method_add_child>`).
 
-Se ``owned`` è ``true``, sono controllati solo i discendenti con un nodo :ref:`owner<class_Node_property_owner>` valido.
+If ``owned`` is ``true``, only descendants with a valid :ref:`owner<class_Node_property_owner>` node are checked.
 
-\ **Nota:** Questo metodo può essere molto lento. Considera di memorizzare i riferimenti ai nodi trovati in una variabile
+\ **Note:** This method can be very slow. Consider storing references to the found nodes in a variable.
 
-\ **Nota:** Per trovare un singolo nodo discendente che corrisponde a uno schema, vedi :ref:`find_child()<class_Node_method_find_child>`.
+\ **Note:** To find a single descendant node matching a pattern, see :ref:`find_child()<class_Node_method_find_child>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2873,9 +2899,11 @@ Rimuove il nodo dal gruppo nominato ``group``. Non fa nulla se il nodo non è ne
 
 |void| **reparent**\ (\ new_parent\: :ref:`Node<class_Node>`, keep_global_transform\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Node_method_reparent>`
 
-Cambia il genitore di questo **Node** al nuovo genitore ``new_parent``. Il nodo deve già avere un genitore. Il :ref:`owner<class_Node_property_owner>` del nodo è preservato se il suo proprietario è ancora raggiungibile dalla nuova posizione (ad esempio, il nodo è ancora un discendente del nuovo genitore dopo l'operazione).
+Changes the parent of this **Node** to the ``new_parent``. The node needs to already have a parent. The node's :ref:`owner<class_Node_property_owner>` is preserved if its owner is still reachable from the new location (i.e., the node is still a descendant of the new parent after the operation).
 
-Se ``keep_global_transform`` è ``true``, la trasformazione globale del nodo sarà preservata se supportata. :ref:`Node2D<class_Node2D>`, :ref:`Node3D<class_Node3D>` e :ref:`Control<class_Control>` supportano questo argomento (ma :ref:`Control<class_Control>` mantiene solo la posizione).
+If ``keep_global_transform`` is ``true``, the node's global transform will be preserved if supported. :ref:`Node2D<class_Node2D>`, :ref:`Node3D<class_Node3D>` and :ref:`Control<class_Control>` support this argument (but :ref:`Control<class_Control>` keeps only position).
+
+\ **Warning:** If :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` is enabled and reparenting causes a large change in global transform, the object may appear to move from its old position to its new one over the next physics tick. To avoid this, call :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` after reparenting.
 
 .. rst-class:: classref-item-separator
 

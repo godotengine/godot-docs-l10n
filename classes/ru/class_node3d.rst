@@ -204,7 +204,7 @@ enum **RotationEditMode**: :ref:`🔗<enum_Node3D_RotationEditMode>`
 
 :ref:`RotationEditMode<enum_Node3D_RotationEditMode>` **ROTATION_EDIT_MODE_EULER** = ``0``
 
-Вращение редактируется с помощью :ref:`Vector3<class_Vector3>` в `Углах Эйлера <https://en.wikipedia.org/wiki/Euler_angles>`__.
+The rotation is edited using a :ref:`Vector3<class_Vector3>` in `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__. In Godot, Euler angles always use intrinsic order, meaning that rotation happens around the local axes of the object.
 
 .. _class_Node3D_constant_ROTATION_EDIT_MODE_QUATERNION:
 
@@ -212,7 +212,7 @@ enum **RotationEditMode**: :ref:`🔗<enum_Node3D_RotationEditMode>`
 
 :ref:`RotationEditMode<enum_Node3D_RotationEditMode>` **ROTATION_EDIT_MODE_QUATERNION** = ``1``
 
-Вращение редактируется с помощью :ref:`Quaternion<class_Quaternion>`.
+The rotation is edited using a :ref:`Quaternion<class_Quaternion>`. Quaternions avoid :doc:`gimbal lock <../tutorials/3d/using_transforms>` and having to choose an order of rotation, but are less intuitive. Quaternion rotation is mostly the same as rotors in 3D geometric algebra, except that the numbers are labeled differently.
 
 .. _class_Node3D_constant_ROTATION_EDIT_MODE_BASIS:
 
@@ -457,17 +457,17 @@ enum **RotationEditMode**: :ref:`🔗<enum_Node3D_RotationEditMode>`
 - |void| **set_rotation**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation**\ (\ )
 
-Вращение этого узла как `углы Эйлера <https://en.wikipedia.org/wiki/Euler_angles>`__, в радианах и в родительском пространстве (относительно родительского узла). Это значение получается из вращения :ref:`basic<class_Node3D_property_basic>`.
+Rotation of this node as `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians and in parent space (relative to the parent node). This value is obtained from :ref:`basis<class_Node3D_property_basis>`'s rotation.
 
-- :ref:`Vector3.x<class_Vector3_property_x>` - это угол вокруг локальной оси X (тангаж);
+- The :ref:`Vector3.x<class_Vector3_property_x>` is the angle around the local X axis (pitch);
 
-- :ref:`Vector3.y<class_Vector3_property_y>` - это угол вокруг локальной оси Y (рыскание);
+- The :ref:`Vector3.y<class_Vector3_property_y>` is the angle around the local Y axis (yaw);
 
-- :ref:`Vector3.z<class_Vector3_property_z>` - это угол вокруг локальной оси Z (крен).
+- The :ref:`Vector3.z<class_Vector3_property_z>` is the angle around the local Z axis (roll).
 
-Порядок каждого последовательного вращения можно изменить с помощью :ref:`rotation_order<class_Node3D_property_rotation_order>` (см. константы :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`). По умолчанию используется соглашение YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
+The order of each consecutive rotation can be changed with :ref:`rotation_order<class_Node3D_property_rotation_order>` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
 
-\ **Примечание:** Это свойство редактируется в градусах в инспекторе. Если вы хотите использовать градусы в скрипте, используйте :ref:`rotation_degrees<class_Node3D_property_rotation_degrees>`.
+\ **Note:** This property is edited in degrees in the inspector. If you want to use degrees in a script, use :ref:`rotation_degrees<class_Node3D_property_rotation_degrees>`.
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ enum **RotationEditMode**: :ref:`🔗<enum_Node3D_RotationEditMode>`
 - |void| **set_rotation_order**\ (\ value\: :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`\ )
 - :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **get_rotation_order**\ (\ )
 
-Порядок вращения осей свойства :ref:`rotation<class_Node3D_property_rotation>`. Окончательная ориентация вычисляется путем вращения вокруг локальных осей X, Y и Z в этом порядке.
+The axis rotation order of the :ref:`rotation<class_Node3D_property_rotation>` property. In Godot, Euler angles always use intrinsic order, meaning that the final orientation is calculated by rotating around the local axes in this order.
 
 .. rst-class:: classref-item-separator
 

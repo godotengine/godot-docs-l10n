@@ -114,6 +114,14 @@ Mode utilisé pour dessiner le ciel. Fonctionne seulement e avec des shaders att
 
 Mode utilisé pour définir la couleur et la densité de l'effet de brouillard volumétrique.
 
+.. _class_Shader_constant_MODE_TEXTURE_BLIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Mode<enum_Shader_Mode>` **MODE_TEXTURE_BLIT** = ``5``
+
+Mode used for drawing to DrawableTexture resources via blit calls.
+
 .. rst-class:: classref-section-separator
 
 ----

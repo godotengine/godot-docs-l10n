@@ -16,9 +16,11 @@ Un :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` para acercarse al objetiv
 Descripción
 ----------------------
 
-Clase base de :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` para acercarse al objetivo repitiendo pequeñas rotaciones.
+Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to approach the goal by repeating small rotations.
 
-Cada cadena de huesos (configuración) tiene un efector, que se procesa en el orden de la lista de configuraciones. Puedes establecer algunas limitaciones para cada articulación.
+Each bone chain (setting) has one effector, which is processed in order of the setting list. You can set some limitations for each joint.
+
+\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/target_node``).
 
 .. rst-class:: classref-reftable-group
 
@@ -225,13 +227,15 @@ Si :ref:`get_joint_limitation_right_axis()<class_IterateIK3D_method_get_joint_li
 
 :ref:`Quaternion<class_Quaternion>` **get_joint_limitation_rotation_offset**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation_rotation_offset>`
 
-Devuelve el desplazamiento de rotación de la limitación de la articulación en ``joint`` en la lista de articulaciones de la cadena de huesos.
+Returns the joint limitation rotation offset at ``joint`` in the bone chain's joint list.
 
-La rotación se realiza en el espacio local, que se construye con la dirección del hueso (generalmente de padre a hijo) como el eje +Y y :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` como el eje +X.
+Rotation is done in the local space which is constructed by the bone direction (in general parent to child) as the +Y axis and :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` as the +X axis.
 
-Si los ejes +X y +Y no son ortogonales, el eje +X se modifica implícitamente para hacerlo ortogonal.
+If the +X and +Y axes are not orthogonal, the +X axis is implicitly modified to make it orthogonal.
 
-Además, si la longitud de :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` es cero, el espacio se crea rotando el hueso en reposo utilizando el arco más corto que rota el eje +Y del hueso en reposo para que coincida con la dirección del hueso.
+Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` is zero, the space is created by rotating the reference pose using the shortest arc that rotates the +Y axis of the reference pose to match the bone direction.
+
+In here, the reference pose is the bone pose immediately before processing IK.
 
 .. rst-class:: classref-item-separator
 
@@ -317,13 +321,15 @@ Establece el vector opcional del eje derecho de la limitación de la articulaci�
 
 |void| **set_joint_limitation_rotation_offset**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, offset\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation_rotation_offset>`
 
-Establece el desplazamiento de rotación de la limitación de la articulación en ``joint`` en la lista de articulaciones de la cadena ósea.
+Sets the joint limitation rotation offset at ``joint`` in the bone chain's joint list.
 
-La rotación se realiza en el espacio local que se construye a partir de la dirección del hueso (generalmente de padre a hijo) como el eje +Y y :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` como el eje +X.
+Rotation is done in the local space which is constructed by the bone direction (in general parent to child) as the +Y axis and :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` as the +X axis.
 
-Si los ejes +X y +Y no son ortogonales, el eje +X se modifica implícitamente para hacerlo ortogonal.
+If the +X and +Y axes are not orthogonal, the +X axis is implicitly modified to make it orthogonal.
 
-Además, si la longitud de :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` es cero, el espacio se crea rotando el reposo del hueso usando el arco más corto que rota el eje +Y del reposo del hueso para que coincida con la dirección del hueso.
+Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` is zero, the space is created by rotating the reference pose using the shortest arc that rotates the +Y axis of the reference pose to match the bone direction.
+
+In here, the reference pose is the bone pose immediately before processing IK.
 
 .. rst-class:: classref-item-separator
 
@@ -335,11 +341,13 @@ Además, si la longitud de :ref:`get_joint_limitation_right_axis_vector()<class_
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_rotation_axis>`
 
-Establece el eje de rotación en ``joint`` en la lista de articulaciones de la cadena ósea.
+Sets the rotation axis at ``joint`` in the bone chain's joint list.
 
-Los ejes se basan en el espacio de :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`, si ``axis`` es :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, puedes especificar cualquier eje.
+The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
 
-\ **Nota:** El eje de rotación y el vector frontal no deben ser colineales para evitar una rotación no intencionada, ya que :ref:`ChainIK3D<class_ChainIK3D>` no tiene en cuenta las fuerzas de torsión.
+In here, the reference pose is the bone pose immediately before processing IK.
+
+\ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since :ref:`ChainIK3D<class_ChainIK3D>` does not factor in twisting forces.
 
 .. rst-class:: classref-item-separator
 

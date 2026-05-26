@@ -7,14 +7,18 @@ AudioEffectHardLimiter
 
 **Успадковує:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Додає звуковий ефект жорсткого обмежувача до звукової шини.
+Adds a limiter audio effect to an audio bus.
+
+Prevents audio signals from exceeding a specified volume level.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Обмежувач — це ефект, призначений для запобігання перевищенню заданого порогового значення дБ. Жорсткі обмежувачі передбачають піки гучності та плавно застосовуватимуть зниження посилення, коли пік перетинає порогове значення, щоб запобігти обрізанню та спотворенню. Він зберігає форму хвилі та не дозволяє їй перетинати поріг стелі. Додавання одного до головної шини рекомендовано як захід безпеки, щоб запобігти виникненню раптових піків гучності та запобігти спотворенню, спричиненому обрізанням.
+A "limiter" disallows audio signals from exceeding a given volume threshold level in dB. Hard limiters predict volume peaks, and will smoothly apply gain reduction when a peak crosses the ceiling threshold level to prevent clipping. It preserves the waveform and prevents it from crossing the ceiling threshold level. Adding one in the Master bus is recommended as a safety measure to prevent sudden volume peaks from occurring, and to prevent distortion caused by clipping, when the volume exceeds 0 dB.
+
+If clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +26,8 @@ AudioEffectHardLimiter
 ------------------
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -59,9 +65,9 @@ AudioEffectHardLimiter
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-Максимально допустиме значення форми сигналу в децибелах. Це значення може коливатися від ``-24,0`` до ``0,0``.
+The waveform's maximum allowed value, in dB. This value can range from -24 to 0.
 
- Значення за замовчуванням ``-0,3`` запобігає перетину потенційних піків між вибірками (ISP) понад 0 дБ, що може спричинити невеликі спотворення на старішому обладнанні.
+The default value of -0.3 prevents potential inter-sample peaks (ISP) from crossing over 0 dB, which can cause slight distortion on some older hardware.
 
 .. rst-class:: classref-item-separator
 
@@ -78,7 +84,7 @@ AudioEffectHardLimiter
 - |void| **set_pre_gain_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain_db**\ (\ )
 
-Коефіцієнт посилення перед обмеженням у децибелах.
+Gain before limiting, in dB. Value can range from -24 to 24.
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +101,7 @@ AudioEffectHardLimiter
 - |void| **set_release**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release**\ (\ )
 
-Час, необхідний у секундах для повного звільнення зменшення посилення.
+Time it takes in seconds for the gain reduction to fully release. Value can range from 0.01 to 3.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

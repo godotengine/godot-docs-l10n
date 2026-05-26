@@ -34,7 +34,7 @@ TabContainer
    :widths: auto
 
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`                           | :ref:`all_tabs_in_front<class_TabContainer_property_all_tabs_in_front>`                       | ``false`` |
+   | :ref:`bool<class_bool>`                           | :ref:`all_tabs_in_front<class_TabContainer_property_all_tabs_in_front>`                       |           |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`                           | :ref:`clip_tabs<class_TabContainer_property_clip_tabs>`                                       | ``true``  |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
@@ -49,6 +49,14 @@ TabContainer
    | :ref:`AlignmentMode<enum_TabBar_AlignmentMode>`   | :ref:`tab_alignment<class_TabContainer_property_tab_alignment>`                               | ``0``     |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
    | :ref:`FocusMode<enum_Control_FocusMode>`          | :ref:`tab_focus_mode<class_TabContainer_property_tab_focus_mode>`                             | ``2``     |
+   +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`                           | :ref:`tab_{index}/disabled<class_TabContainer_property_tab_{index}/disabled>`                 | ``false`` |
+   +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`                           | :ref:`tab_{index}/hidden<class_TabContainer_property_tab_{index}/hidden>`                     | ``false`` |
+   +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
+   | :ref:`Texture2D<class_Texture2D>`                 | :ref:`tab_{index}/icon<class_TabContainer_property_tab_{index}/icon>`                         |           |
+   +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
+   | :ref:`String<class_String>`                       | :ref:`tab_{index}/title<class_TabContainer_property_tab_{index}/title>`                       | ``""``    |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
    | :ref:`TabPosition<enum_TabContainer_TabPosition>` | :ref:`tabs_position<class_TabContainer_property_tabs_position>`                               | ``0``     |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
@@ -336,14 +344,16 @@ enum **TabPosition**: :ref:`🔗<enum_TabContainer_TabPosition>`
 
 .. rst-class:: classref-property
 
-:ref:`bool<class_bool>` **all_tabs_in_front** = ``false`` :ref:`🔗<class_TabContainer_property_all_tabs_in_front>`
+:ref:`bool<class_bool>` **all_tabs_in_front** :ref:`🔗<class_TabContainer_property_all_tabs_in_front>`
 
 .. rst-class:: classref-property-setget
 
 - |void| **set_all_tabs_in_front**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_all_tabs_in_front**\ (\ )
 
-如果为 ``true``\ ，所有选项卡都会被绘制在面板之前。如果为 ``false``\ ，未激活的选项卡会被绘制在面板之后。
+**已弃用：** Due to internal changes this doesn't do anything anymore, as they're always in front.
+
+This doesn't do anything.
 
 .. rst-class:: classref-item-separator
 
@@ -467,6 +477,62 @@ enum **TabPosition**: :ref:`🔗<enum_TabContainer_TabPosition>`
 - :ref:`FocusMode<enum_Control_FocusMode>` **get_tab_focus_mode**\ (\ )
 
 内部 :ref:`TabBar<class_TabBar>` 节点的焦点访问模式。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_property_tab_{index}/disabled:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **tab_{index}/disabled** = ``false`` :ref:`🔗<class_TabContainer_property_tab_{index}/disabled>`
+
+If ``true``, the tab at ``index`` is disabled.
+
+\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_property_tab_{index}/hidden:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **tab_{index}/hidden** = ``false`` :ref:`🔗<class_TabContainer_property_tab_{index}/hidden>`
+
+If ``true``, the tab at ``index`` is hidden.
+
+\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_property_tab_{index}/icon:
+
+.. rst-class:: classref-property
+
+:ref:`Texture2D<class_Texture2D>` **tab_{index}/icon** :ref:`🔗<class_TabContainer_property_tab_{index}/icon>`
+
+The title text of the tab at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_property_tab_{index}/title:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **tab_{index}/title** = ``""`` :ref:`🔗<class_TabContainer_property_tab_{index}/title>`
+
+The tooltip text of the tab at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
 
 .. rst-class:: classref-item-separator
 
@@ -1120,7 +1186,7 @@ enum **TabPosition**: :ref:`🔗<enum_TabContainer_TabPosition>`
 
 :ref:`Texture2D<class_Texture2D>` **drop_mark** :ref:`🔗<class_TabContainer_theme_icon_drop_mark>`
 
-图标，用于指示拖动的选项卡将被放置到哪里（见 :ref:`drag_to_rearrange_enabled<class_TabContainer_property_drag_to_rearrange_enabled>`\ ）。
+Icon shown to indicate where a dragged tab will be dropped (see :ref:`drag_to_rearrange_enabled<class_TabContainer_property_drag_to_rearrange_enabled>`).
 
 .. rst-class:: classref-item-separator
 

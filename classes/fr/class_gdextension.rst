@@ -23,7 +23,7 @@ The **GDExtension** resource type represents a `shared library <https://en.wikip
 Tutoriels
 ------------------
 
-- :doc:`Vue d'ensemble GDExtension <../tutorials/scripting/gdextension/what_is_gdextension>`
+- :doc:`Vue d'ensemble GDExtension <../engine_details/engine_api/gdextension/what_is_gdextension>`
 
 - :doc:`Exemple de GDExtension en C++ <../tutorials/scripting/cpp/gdextension_cpp_example>`
 

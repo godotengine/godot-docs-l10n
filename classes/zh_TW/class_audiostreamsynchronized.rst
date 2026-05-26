@@ -16,6 +16,13 @@ AudioStreamSynchronized
 
 這是一種可裝載子串流並同步播放的串流。當開始播放時，所有子串流會在同一時間點一併開始，並在最後一個子串流結束時停止。若其中任一子串流設定為循環，播放將持續進行。
 
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`音訊流 <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 屬性

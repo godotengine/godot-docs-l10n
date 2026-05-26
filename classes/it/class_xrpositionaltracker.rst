@@ -78,7 +78,7 @@ Segnali
 
 .. rst-class:: classref-signal
 
-**button_pressed**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_button_pressed>`
+**button_pressed**\ (\ action_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_button_pressed>`
 
 Emesso quando viene premuto un pulsante su questo tracciatore. Nota che molti runtime XR consentono di mappare altri input sui pulsanti.
 
@@ -90,7 +90,7 @@ Emesso quando viene premuto un pulsante su questo tracciatore. Nota che molti ru
 
 .. rst-class:: classref-signal
 
-**button_released**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_button_released>`
+**button_released**\ (\ action_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_button_released>`
 
 Emesso quando viene rilasciato un pulsante su questo tracciatore.
 
@@ -102,7 +102,7 @@ Emesso quando viene rilasciato un pulsante su questo tracciatore.
 
 .. rst-class:: classref-signal
 
-**input_float_changed**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_input_float_changed>`
+**input_float_changed**\ (\ action_name\: :ref:`String<class_String>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_input_float_changed>`
 
 Emesso quando un grilletto o un input simile su questo tracciatore cambia valore.
 
@@ -114,7 +114,7 @@ Emesso quando un grilletto o un input simile su questo tracciatore cambia valore
 
 .. rst-class:: classref-signal
 
-**input_vector2_changed**\ (\ name\: :ref:`String<class_String>`, vector\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_input_vector2_changed>`
+**input_vector2_changed**\ (\ action_name\: :ref:`String<class_String>`, vector\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_XRPositionalTracker_signal_input_vector2_changed>`
 
 Emesso quando una levetta o un thumbpad di questo tracciatore si muove.
 

@@ -7,14 +7,16 @@ AudioEffectLowShelfFilter
 
 **Eredita:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Aggiunge un filtro a pendenza per bassi al bus audio.
+Adds a low-shelf filter to an audio bus.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Riduce tutte le frequenze al di sotto di :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+A "low-shelf" filter controls the gain of all frequencies below :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+
+This filter can be used to adjust the "strength" of a sound, by increasing or decreasing its low-end.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +24,8 @@ Tutorial
 ----------------
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

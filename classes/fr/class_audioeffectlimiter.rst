@@ -9,16 +9,18 @@ AudioEffectLimiter
 
 **Hérite de :** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Ajoute un effet audio de limiteur soft-clip (coupure douce) à un bus audio.
+Adds a soft-clip limiter audio effect to an audio bus.
 
 .. rst-class:: classref-introduction-group
 
 Description
 -----------
 
-Un limiteur est semblable à un compresseur, mais il est moins flexible et conçu pour limiter le son au delà d'un certain seuil de décibels donné. L'ajout d'un limiteur dans le bus "Master" est toujours recommandé pour réduire les effets de la coupure.
+A "limiter" is an audio effect designed to stop audio signals from exceeding a specified volume threshold level, and usually works by decreasing the volume or soft-clipping the audio. Adding one in the Master bus is always recommended to prevent clipping when the volume goes above 0 dB.
 
-La coupure douce commence à réduire les pics un peu en dessous du seuil et augmente progressivement son effet puisque le niveau d'entrée augmente de sorte que le seuil n'est jamais dépassé.
+Soft clipping starts to decrease the peaks a little below the volume threshold level and progressively increases its effect as the input volume increases such that the threshold level is never exceeded.
+
+If hard clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -26,6 +28,8 @@ Tutoriels
 ------------------
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -65,7 +69,7 @@ Descriptions des propriétés
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-La valeur maximale autorisée pour l'onde, en décibels. La valeur peut varier entre -20 et -0.1.
+The waveform's maximum allowed value, in dB. Value can range from -20 to -0.1.
 
 .. rst-class:: classref-item-separator
 
@@ -82,7 +86,7 @@ La valeur maximale autorisée pour l'onde, en décibels. La valeur peut varier e
 - |void| **set_soft_clip_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_db**\ (\ )
 
-Applique un gain aux ondes limitées, en décibels. La valeur peut aller de 0 à 6.
+Modifies the volume of the limited waves, in dB. Value can range from 0 to 6.
 
 .. rst-class:: classref-item-separator
 
@@ -99,9 +103,7 @@ Applique un gain aux ondes limitées, en décibels. La valeur peut aller de 0 à
 - |void| **set_soft_clip_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_ratio**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+This property has no effect on the audio. Use :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` instead, as this Limiter effect is deprecated.
 
 .. rst-class:: classref-item-separator
 
@@ -118,7 +120,7 @@ Applique un gain aux ondes limitées, en décibels. La valeur peut aller de 0 à
 - |void| **set_threshold_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold_db**\ (\ )
 
-Seuil à partir duquel le limiteur commence à être actif, en décibels. La valeur peut aller de -30 à 0.
+The volume threshold level from which the limiter begins to be active, in dB. Value can range from -30 to 0.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

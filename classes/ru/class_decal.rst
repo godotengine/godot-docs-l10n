@@ -391,11 +391,13 @@ enum **DecalTexture**: :ref:`🔗<enum_Decal_DecalTexture>`
 - |void| **set_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`\ ) |const|
 
-:ref:`Texture2D<class_Texture2D>` сохраняет окружающее затенение, шероховатость и металл для декали. Используйте это, чтобы добавить дополнительную детализацию к декалям.
+:ref:`Texture2D<class_Texture2D>` storing ambient occlusion, roughness, and metallic for the decal. Use this to add extra detail to decals.
 
-\ **Примечание:** В отличие от :ref:`BaseMaterial3D<class_BaseMaterial3D>`, режим фильтра которого можно настраивать для каждого материала, режим фильтра для текстур **Decal** устанавливается глобально с помощью :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
+\ **Note:** Unlike :ref:`BaseMaterial3D<class_BaseMaterial3D>` whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
 
-\ **Примечание:** Установка только этой текстуры не приведет к появлению видимой декали, так как :ref:`texture_albedo<class_Decal_property_texture_albedo>` также должен быть установлен. Чтобы создать декаль только для ORM, загрузите текстуру альбедо в :ref:`texture_albedo<class_Decal_property_texture_albedo>` и установите :ref:`albedo_mix<class_Decal_property_albedo_mix>` на ``0.0``. Альфа-канал текстуры альбедо будет использоваться для определения того, где должна быть переопределена карта ORM подстилающей поверхности (и ее интенсивность).
+\ **Note:** Setting this texture alone will not result in a visible decal, as :ref:`texture_albedo<class_Decal_property_texture_albedo>` must also be set. To create an ORM-only decal, load an albedo texture into :ref:`texture_albedo<class_Decal_property_texture_albedo>` and set :ref:`albedo_mix<class_Decal_property_albedo_mix>` to ``0.0``. The albedo texture's alpha channel will be used to determine where the underlying surface's ORM map should be overridden (and its intensity).
+
+\ **Note:** Due to technical limitations, modifying the underlying surface's roughness using :ref:`texture_orm<class_Decal_property_texture_orm>` does *not* affect screen-space reflections (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`), reflections from :ref:`VoxelGI<class_VoxelGI>`, and reflections from SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`). Only reflections from :ref:`ReflectionProbe<class_ReflectionProbe>`\ s are affected.
 
 .. rst-class:: classref-item-separator
 

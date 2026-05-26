@@ -62,9 +62,9 @@ MP3 是一種有損音訊格式，在相同位元率下音質不如 :ref:`Resour
 
 :ref:`int<class_int>` **bar_beats** = ``4`` :ref:`🔗<class_ResourceImporterMP3_property_bar_beats>`
 
-音軌中每一拍所包含的小節數。僅對欲使用互動式音樂功能的樂曲有意義，與音效無關。
+The number of beats within a single bar in the audio track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-\ **進階匯入設定** 對話方塊提供了更方便的 :ref:`bar_beats<class_ResourceImporterMP3_property_bar_beats>` 編輯器，可讓你在不重新匯入音訊的情況下預覽變更。
+A more convenient editor for :ref:`bar_beats<class_ResourceImporterMP3_property_bar_beats>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -76,9 +76,9 @@ MP3 是一種有損音訊格式，在相同位元率下音質不如 :ref:`Resour
 
 :ref:`int<class_int>` **beat_count** = ``0`` :ref:`🔗<class_ResourceImporterMP3_property_beat_count>`
 
-音軌的拍數。僅對欲使用互動式音樂功能的樂曲有意義，與音效無關。
+The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-\ **進階匯入設定** 對話方塊提供了更方便的 :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>` 編輯器，可讓你在不重新匯入音訊的情況下預覽變更。
+A more convenient editor for :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ MP3 是一種有損音訊格式，在相同位元率下音質不如 :ref:`Resour
 
 :ref:`float<class_float>` **bpm** = ``0`` :ref:`🔗<class_ResourceImporterMP3_property_bpm>`
 
-音軌的每分鐘拍數（BPM），應與創作此曲時使用的 BPM 相同。僅對欲使用互動式音樂功能的樂曲有意義，與音效無關。
+The tempo of the audio track, measured in beats per minute. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-\ **進階匯入設定** 對話方塊提供了更方便的 :ref:`bpm<class_ResourceImporterMP3_property_bpm>` 編輯器，可讓你在不重新匯入音訊的情況下預覽變更。
+A more convenient editor for :ref:`bpm<class_ResourceImporterMP3_property_bpm>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -104,9 +104,9 @@ MP3 是一種有損音訊格式，在相同位元率下音質不如 :ref:`Resour
 
 :ref:`bool<class_bool>` **loop** = ``false`` :ref:`🔗<class_ResourceImporterMP3_property_loop>`
 
-啟用後，音訊播放至結尾時會自動從開頭重新開始播放。
+If enabled, the audio will begin playing either from the beginning or from :ref:`loop_offset<class_ResourceImporterMP3_property_loop_offset>`, after playback ends by either reaching the end of the audio or reaching the end of the last beat according to the amount specified in :ref:`beat_count<class_ResourceImporterMP3_property_beat_count>`.
 
-\ **注意：** 在 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 中，對於循環播放的音訊，播放到檔案末端時不會觸發 :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` 訊號，因為音訊會持續播放。
+\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
 
 .. rst-class:: classref-item-separator
 

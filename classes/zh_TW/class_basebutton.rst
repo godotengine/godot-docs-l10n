@@ -372,9 +372,9 @@ If ``true``, the button is in disabled state and can't be clicked or toggled.
 - |void| **set_shortcut_in_tooltip**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_in_tooltip_enabled**\ (\ )
 
-若為 ``true``\ ，工具提示會自動附加此按鈕的快捷鍵資訊。
+If ``true``, the button will add information about its shortcut in the tooltip. This includes the shortcut's events and its :ref:`Resource.resource_name<class_Resource_property_resource_name>`. If both events and name are empty, the shortcut will not be included.
 
-\ **注意：** 若透過 :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` 自訂了工具提示，此屬性將不會生效。
+\ **Note:** This property does nothing when the tooltip control is customized using :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
 
 .. rst-class:: classref-item-separator
 

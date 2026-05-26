@@ -204,7 +204,7 @@ EditorPlugin
 
 **main_screen_changed**\ (\ screen_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_signal_main_screen_changed>`
 
-Виникає, коли користувач змінює робочий простір (**2D**, **3D**, **Script**, **Game**, **AssetLib**). Також працює з користувацькими екранами, визначеними плагінами.
+Emitted when user changes the workspace (**2D**, **3D**, **Script**, **Game**, **Asset Store**). Also works with custom screens defined by plugins.
 
 .. rst-class:: classref-item-separator
 
@@ -848,11 +848,11 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`Texture2D<class_Texture2D>` **_get_plugin_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_icon>`
 
-Перевизначте цей метод у вашому плагіні, щоб повернути :ref:`Texture2D<class_Texture2D>` та надати йому піктограму.
+Override this method in your plugin to return a :ref:`Texture2D<class_Texture2D>` in order to give it an icon.
 
-Для плагінів головного екрана це відображається у верхній частині екрана, праворуч від кнопок «2D», «3D», «Скрипт», «Гра» та «AssetLib».
+For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", "Game", and "Asset Store" buttons.
 
-В ідеалі піктограма плагіна має бути білою з прозорим фоном та розміром 16×16 пікселів.
+Ideally, the plugin icon should be white with a transparent background and 16×16 pixels in size.
 
 
 .. tabs::
@@ -860,19 +860,19 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
  .. code-tab:: gdscript
 
     func _get_plugin_icon():
-    # Ви можете використовувати власну іконку:
-    return preload("res://addons/my_plugin/my_plugin_icon.svg")
-    # Або використовуйте вбудовану іконку:
-    return EditorInterface.get_editor_theme().get_icon("Node", "EditorIcons")
+        # You can use a custom icon:
+        return preload("res://addons/my_plugin/my_plugin_icon.svg")
+        # Or use a built-in icon:
+        return EditorInterface.get_editor_theme().get_icon("Node", "EditorIcons")
 
  .. code-tab:: csharp
 
     public override Texture2D _GetPluginIcon()
     {
-    // Ви можете використовувати власну іконку:
-    return ResourceLoader.Load<Texture2D>("res://addons/my_plugin/my_plugin_icon.svg");
-    // Або використовуйте вбудовану іконку:
-    return EditorInterface.Singleton.GetEditorTheme().GetIcon("Node", "EditorIcons");
+        // You can use a custom icon:
+        return ResourceLoader.Load<Texture2D>("res://addons/my_plugin/my_plugin_icon.svg");
+        // Or use a built-in icon:
+        return EditorInterface.Singleton.GetEditorTheme().GetIcon("Node", "EditorIcons");
     }
 
 
@@ -887,9 +887,9 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`String<class_String>` **_get_plugin_name**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_name>`
 
-Перевизначте цей метод у вашому плагіні, щоб відображати назву плагіна в редакторі Godot.
+Override this method in your plugin to provide the name of the plugin when displayed in the Godot editor.
 
-Для плагінів головного екрана це відображається у верхній частині екрана, праворуч від кнопок «2D», «3D», «Скрипт», «Гра» та «AssetLib».
+For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", "Game", and "Asset Store" buttons.
 
 .. rst-class:: classref-item-separator
 
@@ -997,32 +997,32 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`bool<class_bool>` **_has_main_screen**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__has_main_screen>`
 
-Повертає ``true``, якщо це плагін редактора головного екрана (він поміщається в селектор робочої області разом з **2D**, **3D**, **Script**, **Game** та **AssetLib**).
+Returns ``true`` if this is a main screen editor plugin (it goes in the workspace selector together with **2D**, **3D**, **Script**, **Game**, and **Asset Store**).
 
-Коли робоча область плагіна вибрана, інші плагіни головного екрана будуть приховані, але ваш плагін не з'явиться автоматично. Його потрібно додати як дочірній елемент :ref:`EditorInterface.get_editor_main_screen()<class_EditorInterface_method_get_editor_main_screen>` та зробити видимим всередині :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>`.
+When the plugin's workspace is selected, other main screen plugins will be hidden, but your plugin will not appear automatically. It needs to be added as a child of :ref:`EditorInterface.get_editor_main_screen()<class_EditorInterface_method_get_editor_main_screen>` and made visible inside :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>`.
 
-Використовуйте :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>` та :ref:`_get_plugin_icon()<class_EditorPlugin_private_method__get_plugin_icon>`, щоб налаштувати зовнішній вигляд кнопки плагіна.
+Use :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>` and :ref:`_get_plugin_icon()<class_EditorPlugin_private_method__get_plugin_icon>` to customize the plugin button's appearance.
 
 ::
 
     var plugin_control
 
     func _enter_tree():
-    plugin_control = preload("my_plugin_control.tscn").instantiate()
-    EditorInterface.get_editor_main_screen().add_child(plugin_control)
-    plugin_control.hide()
+        plugin_control = preload("my_plugin_control.tscn").instantiate()
+        EditorInterface.get_editor_main_screen().add_child(plugin_control)
+        plugin_control.hide()
 
     func _has_main_screen():
-    return true
+        return true
 
     func _make_visible(visible):
-    plugin_control.visible = visible
+        plugin_control.visible = visible
 
     func _get_plugin_name():
-    return "Мій суперкрутий плагін 3000"
+        return "My Super Cool Plugin 3000"
 
     func _get_plugin_icon():
-    return EditorInterface.get_editor_theme().get_icon("Вузол", "EditorIcons")
+        return EditorInterface.get_editor_theme().get_icon("Node", "EditorIcons")
 
 .. rst-class:: classref-item-separator
 

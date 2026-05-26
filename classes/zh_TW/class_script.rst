@@ -70,6 +70,8 @@ Script
    +------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] | :ref:`get_script_signal_list<class_Script_method_get_script_signal_list>`\ (\ )                                                         |
    +------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                          | :ref:`has_script_method<class_Script_method_has_script_method>`\ (\ method_name\: :ref:`StringName<class_StringName>`\ ) |const|        |
+   +------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                          | :ref:`has_script_signal<class_Script_method_has_script_signal>`\ (\ signal_name\: :ref:`StringName<class_StringName>`\ ) |const|        |
    +------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                          | :ref:`has_source_code<class_Script_method_has_source_code>`\ (\ ) |const|                                                               |
@@ -261,6 +263,18 @@ Returns the list of signals defined in this **Script**.
 
 ----
 
+.. _class_Script_method_has_script_method:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_script_method**\ (\ method_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Script_method_has_script_method>`
+
+Returns ``true`` if the script, or a base class, defines a method with the given name.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Script_method_has_script_signal:
 
 .. rst-class:: classref-method
@@ -292,6 +306,8 @@ Returns ``true`` if the script contains non-empty source code.
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **instance_has**\ (\ base_object\: :ref:`Object<class_Object>`\ ) |const| :ref:`🔗<class_Script_method_instance_has>`
+
+**已棄用：** Compare this script with :ref:`Object.get_script()<class_Object_method_get_script>` instead.
 
 如果 ``base_object`` 是該腳本的實例，則返回 ``true``\ 。
 

@@ -26,17 +26,19 @@ Propriétés
 .. table::
    :widths: auto
 
-   +-----------------------------------------------------+---------------------------------------------------------------------------------------------+--------------------------+
-   | :ref:`BuildMode<enum_CollisionPolygon2D_BuildMode>` | :ref:`build_mode<class_CollisionPolygon2D_property_build_mode>`                             | ``0``                    |
-   +-----------------------------------------------------+---------------------------------------------------------------------------------------------+--------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`disabled<class_CollisionPolygon2D_property_disabled>`                                 | ``false``                |
-   +-----------------------------------------------------+---------------------------------------------------------------------------------------------+--------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`one_way_collision<class_CollisionPolygon2D_property_one_way_collision>`               | ``false``                |
-   +-----------------------------------------------------+---------------------------------------------------------------------------------------------+--------------------------+
-   | :ref:`float<class_float>`                           | :ref:`one_way_collision_margin<class_CollisionPolygon2D_property_one_way_collision_margin>` | ``1.0``                  |
-   +-----------------------------------------------------+---------------------------------------------------------------------------------------------+--------------------------+
-   | :ref:`PackedVector2Array<class_PackedVector2Array>` | :ref:`polygon<class_CollisionPolygon2D_property_polygon>`                                   | ``PackedVector2Array()`` |
-   +-----------------------------------------------------+---------------------------------------------------------------------------------------------+--------------------------+
+   +-----------------------------------------------------+---------------------------------------------------------------------------------------------------+--------------------------+
+   | :ref:`BuildMode<enum_CollisionPolygon2D_BuildMode>` | :ref:`build_mode<class_CollisionPolygon2D_property_build_mode>`                                   | ``0``                    |
+   +-----------------------------------------------------+---------------------------------------------------------------------------------------------------+--------------------------+
+   | :ref:`bool<class_bool>`                             | :ref:`disabled<class_CollisionPolygon2D_property_disabled>`                                       | ``false``                |
+   +-----------------------------------------------------+---------------------------------------------------------------------------------------------------+--------------------------+
+   | :ref:`bool<class_bool>`                             | :ref:`one_way_collision<class_CollisionPolygon2D_property_one_way_collision>`                     | ``false``                |
+   +-----------------------------------------------------+---------------------------------------------------------------------------------------------------+--------------------------+
+   | :ref:`Vector2<class_Vector2>`                       | :ref:`one_way_collision_direction<class_CollisionPolygon2D_property_one_way_collision_direction>` | ``Vector2(0, 1)``        |
+   +-----------------------------------------------------+---------------------------------------------------------------------------------------------------+--------------------------+
+   | :ref:`float<class_float>`                           | :ref:`one_way_collision_margin<class_CollisionPolygon2D_property_one_way_collision_margin>`       | ``1.0``                  |
+   +-----------------------------------------------------+---------------------------------------------------------------------------------------------------+--------------------------+
+   | :ref:`PackedVector2Array<class_PackedVector2Array>` | :ref:`polygon<class_CollisionPolygon2D_property_polygon>`                                         | ``PackedVector2Array()`` |
+   +-----------------------------------------------------+---------------------------------------------------------------------------------------------------+--------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -123,9 +125,28 @@ Si ``true``, aucune collision ne sera détectée. Cette propriété devrait êtr
 - |void| **set_one_way_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_one_way_collision_enabled**\ (\ )
 
-Si ``true``, seuls les bords qui font face, par rapport à la rotation du **CollisionPolygon2D**, entreront en collision avec d'autres objets.
+If ``true``, only edges that face up, relative to **CollisionPolygon2D**'s rotation, will collide with other objects.
 
-\ **Note :** Cette propriété n'a aucun effet si cette **CollisionPolygon2D** est un enfant d'un nœud :ref:`Area2D<class_Area2D>`.
+\ **Note:** This property has no effect if this **CollisionPolygon2D** is a child of an :ref:`Area2D<class_Area2D>` node.
+
+\ **Note:** The one way collision direction can be configured by setting :ref:`one_way_collision_direction<class_CollisionPolygon2D_property_one_way_collision_direction>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_CollisionPolygon2D_property_one_way_collision_direction:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2<class_Vector2>` **one_way_collision_direction** = ``Vector2(0, 1)`` :ref:`🔗<class_CollisionPolygon2D_property_one_way_collision_direction>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_one_way_collision_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
+- :ref:`Vector2<class_Vector2>` **get_one_way_collision_direction**\ (\ )
+
+The direction used for one-way collision.
 
 .. rst-class:: classref-item-separator
 

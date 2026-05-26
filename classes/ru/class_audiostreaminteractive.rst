@@ -18,6 +18,13 @@ AudioStreamInteractive
 
 Это используется путем заполнения ряда клипов, а затем настройки таблицы переходов. Оттуда клипы выбираются для воспроизведения, и музыка будет плавно переходить от текущего к новому, используя соответствующее правило перехода, определенное в таблице переходов.
 
+.. rst-class:: classref-introduction-group
+
+Обучающие материалы
+--------------------------------------
+
+- :doc:`Аудиопотоки <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 Свойства
@@ -152,6 +159,14 @@ enum **TransitionToTime**: :ref:`🔗<enum_AudioStreamInteractive_TransitionToTi
 :ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_START** = ``1``
 
 Переход к началу целевого клипа.
+
+.. _class_AudioStreamInteractive_constant_TRANSITION_TO_TIME_PREVIOUS_POSITION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_PREVIOUS_POSITION** = ``2``
+
+Transition to the last played position in the destination clip, if there was a previous transition from that clip. Otherwise, plays from the start of the destination clip.
 
 .. rst-class:: classref-item-separator
 

@@ -697,7 +697,9 @@ PhysicsDirectBodyState2D
 
 :ref:`Vector2<class_Vector2>` **get_velocity_at_local_position**\ (\ local_position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_velocity_at_local_position>`
 
-Возвращает скорость тела в заданном относительном положении, включая как перемещение, так и вращение.
+Returns the body's velocity at the given relative position.
+
+\ ``local_position`` is the offset from the body origin in global coordinates.
 
 .. rst-class:: classref-item-separator
 

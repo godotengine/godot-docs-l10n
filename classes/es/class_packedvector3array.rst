@@ -12,11 +12,13 @@ Un array empaquetado de :ref:`Vector3<class_Vector3>`\ s.
 Descripción
 ----------------------
 
-Un array diseñado específicamente para contener :ref:`Vector3<class_Vector3>`. Empaqueta los datos de forma compacta, por lo que ahorra memoria para arrays de gran tamaño.
+An array specifically designed to hold :ref:`Vector3<class_Vector3>`. Packs data tightly, so it saves memory for large array sizes.
 
-\ **Diferencias entre arrays empaquetados, tipados y no tipados:** Los arrays empaquetados son generalmente más rápidos de iterar y modificar en comparación con un array tipado del mismo tipo (por ejemplo, **PackedVector3Array** frente a ``Array[Vector3]``). Además, los arrays empaquetados consumen menos memoria. Como desventaja, los arrays empaquetados son menos flexibles, ya que no ofrecen tantos métodos de conveniencia como :ref:`Array.map()<class_Array_method_map>`. Los arrays tipados son a su vez más rápidos de iterar y modificar que los arrays no tipados.
+\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedVector3Array** versus ``Array[Vector3]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
 
-\ **Nota:** Los arrays empaquetados siempre se pasan por referencia. Para obtener una copia de un array que se pueda modificar independientemente del original, utiliza :ref:`duplicate()<class_PackedVector3Array_method_duplicate>`. Este *no* es el caso de las propiedades y métodos incorporados. En estos casos, el array empaquetado devuelto es una copia, y su modificación *no* afectará al valor original. Para actualizar una propiedad incorporada de este tipo, modifica el array devuelto y luego asígnalo de nuevo a la propiedad.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedVector3Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 

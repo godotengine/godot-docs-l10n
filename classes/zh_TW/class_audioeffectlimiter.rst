@@ -9,16 +9,18 @@ AudioEffectLimiter
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-為音訊匯流排新增軟削波限制器效果。
+Adds a soft-clip limiter audio effect to an audio bus.
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-限制器類似壓縮器，但較固定，目的在阻止音量超過門檻。建議於 Master 匯流排加入，以降低削波影響。
+A "limiter" is an audio effect designed to stop audio signals from exceeding a specified volume threshold level, and usually works by decreasing the volume or soft-clipping the audio. Adding one in the Master bus is always recommended to prevent clipping when the volume goes above 0 dB.
 
-軟削波會在接近門檻前開始壓低峰值，隨輸入增大而逐漸加強，確保不會越界。
+Soft clipping starts to decrease the peaks a little below the volume threshold level and progressively increases its effect as the input volume increases such that the threshold level is never exceeded.
+
+If hard clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -26,6 +28,8 @@ AudioEffectLimiter
 ----
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -65,7 +69,7 @@ AudioEffectLimiter
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-波形允許的最大值（dB），可設 -20 至 -0.1。
+The waveform's maximum allowed value, in dB. Value can range from -20 to -0.1.
 
 .. rst-class:: classref-item-separator
 
@@ -82,7 +86,7 @@ AudioEffectLimiter
 - |void| **set_soft_clip_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_db**\ (\ )
 
-對被限制後的波形加上的增益（dB），可設 0–6。
+Modifies the volume of the limited waves, in dB. Value can range from 0 to 6.
 
 .. rst-class:: classref-item-separator
 
@@ -99,9 +103,7 @@ AudioEffectLimiter
 - |void| **set_soft_clip_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_ratio**\ (\ )
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+This property has no effect on the audio. Use :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` instead, as this Limiter effect is deprecated.
 
 .. rst-class:: classref-item-separator
 
@@ -118,7 +120,7 @@ AudioEffectLimiter
 - |void| **set_threshold_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold_db**\ (\ )
 
-限制器開始作用的門檻（dB），可設 -30 至 0。
+The volume threshold level from which the limiter begins to be active, in dB. Value can range from -30 to 0.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

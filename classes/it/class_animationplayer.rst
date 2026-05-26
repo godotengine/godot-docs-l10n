@@ -168,7 +168,7 @@ Emesso quando un'animazione in coda d'attesa viene riprodotta dopo che la animaz
 
 .. rst-class:: classref-signal
 
-**current_animation_changed**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationPlayer_signal_current_animation_changed>`
+**current_animation_changed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationPlayer_signal_current_animation_changed>`
 
 Emesso quando :ref:`current_animation<class_AnimationPlayer_property_current_animation>` cambia.
 

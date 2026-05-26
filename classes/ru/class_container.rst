@@ -33,9 +33,13 @@ Container
 .. table::
    :widths: auto
 
-   +----------------------------------------------+--------------+-----------------------------------------------------------------------+
-   | :ref:`MouseFilter<enum_Control_MouseFilter>` | mouse_filter | ``1`` (overrides :ref:`Control<class_Control_property_mouse_filter>`) |
-   +----------------------------------------------+--------------+-----------------------------------------------------------------------+
+   +----------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                      | :ref:`accessibility_region<class_Container_property_accessibility_region>` | ``false``                                                                          |
+   +----------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+   | :ref:`MouseFilter<enum_Control_MouseFilter>` | mouse_filter                                                               | ``1`` (overrides :ref:`Control<class_Control_property_mouse_filter>`)              |
+   +----------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                      | propagate_maximum_size                                                     | ``true`` (overrides :ref:`Control<class_Control_property_propagate_maximum_size>`) |
+   +----------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-reftable-group
 
@@ -108,6 +112,28 @@ Container
 **NOTIFICATION_SORT_CHILDREN** = ``51`` :ref:`🔗<class_Container_constant_NOTIFICATION_SORT_CHILDREN>`
 
 Уведомление о необходимости немедленного выполнения при сортировке детей.
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описания свойств
+--------------------------------
+
+.. _class_Container_property_accessibility_region:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **accessibility_region** = ``false`` :ref:`🔗<class_Container_property_accessibility_region>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_accessibility_region**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_accessibility_region**\ (\ )
+
+If ``true``, this container is marked as a region for accessibility. Use :ref:`Control.accessibility_name<class_Control_property_accessibility_name>` to give the region a descriptive name. Screen readers can navigate between regions using landmark navigation.
 
 .. rst-class:: classref-section-separator
 

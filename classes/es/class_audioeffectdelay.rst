@@ -7,16 +7,18 @@ AudioEffectDelay
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Añade un efecto de retraso al bus de audio. Reproduce la señal de entrada despues de un periodo de tiempo. 
+Adds a delay audio effect to an audio bus.
 
-Dos opciones de retardo y de retroalimentacion.
+Emulates an echo by playing the input audio back after a period of time.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Reproduce la señal de entrada después de un período de tiempo. La señal retardada puede ser reproducida varias veces para crear el sonido de un eco repetitivo y en decadencia. Los efectos de retardo van desde un sutil efecto de eco hasta una pronunciada mezcla de los sonidos anteriores con los nuevos sonidos.
+A "delay" effect plays the input audio signal back after a period of time. Each repetition is called a "delay tap" or simply "tap". Delay taps may be played back multiple times to create the sound of a repeating, decaying echo. Delay effects range from a subtle echo to a pronounced blending of previous sounds with new sounds.
+
+See also :ref:`AudioEffectReverb<class_AudioEffectReverb>` for a blurry, continuous echo.
 
 .. rst-class:: classref-introduction-group
 
@@ -24,6 +26,8 @@ Tutoriales
 --------------------
 
 - :doc:`Buses de audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -81,7 +85,7 @@ Descripciones de Propiedades
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-El porcentaje de salida del sonido original. A 0, sólo se emiten sonidos retrasados. El valor puede variar entre 0 y 1.
+The volume ratio of the original audio. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +102,7 @@ El porcentaje de salida del sonido original. A 0, sólo se emiten sonidos retras
 - |void| **set_feedback_active**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_feedback_active**\ (\ )
 
-Si es ``true``, la retroalimentación está activada.
+If ``true``, feedback is enabled, repeating taps after they are played.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +119,7 @@ Si es ``true``, la retroalimentación está activada.
 - |void| **set_feedback_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_delay_ms**\ (\ )
 
-Tiempo de retraso de la retroalimentación en milisegundos.
+Feedback delay time in milliseconds. Value can range from 0 to 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +136,7 @@ Tiempo de retraso de la retroalimentación en milisegundos.
 - |void| **set_feedback_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_level_db**\ (\ )
 
-Nivel de sonido para retroalimentación.
+Gain for feedback, in dB. Value can range from -60 to 0.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +153,7 @@ Nivel de sonido para retroalimentación.
 - |void| **set_feedback_lowpass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_lowpass**\ (\ )
 
-Filtro de paso bajo para retroalimentación, en Hz. Las frecuencias por debajo de este valor se filtran de la señal de origen.
+Low-pass filter for feedback, in Hz. Frequencies above this value are filtered out. Value can range from 1 to 16000.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +187,7 @@ Si es ``true``, se habilitará el primer toque.
 - |void| **set_tap1_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_delay_ms**\ (\ )
 
-Tiempo de retardo del primer toque en milisegundos.
+First tap delay time in milliseconds, compared to the original audio. Value can range from 0 to 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +204,7 @@ Tiempo de retardo del primer toque en milisegundos.
 - |void| **set_tap1_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_level_db**\ (\ )
 
-Sound level for the first tap.
+Gain for the first tap, in dB. Value can range from -60 to 0.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +221,7 @@ Sound level for the first tap.
 - |void| **set_tap1_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_pan**\ (\ )
 
-Pan position for the first tap. Value can range from -1 (fully left) to 1 (fully right).
+Pan position for the first tap. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +255,7 @@ If ``true``, the second tap will be enabled.
 - |void| **set_tap2_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_delay_ms**\ (\ )
 
-Segundo tiempo de retardo de toque en milisegundos.
+Second tap delay time in milliseconds, compared to the original audio. Value can range from 0 to 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -268,7 +272,7 @@ Segundo tiempo de retardo de toque en milisegundos.
 - |void| **set_tap2_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_level_db**\ (\ )
 
-Nivel de sonido para el segundo toque.
+Gain for the second tap, in dB. Value can range from -60 to 0.
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +289,7 @@ Nivel de sonido para el segundo toque.
 - |void| **set_tap2_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_pan**\ (\ )
 
-Posición panorámica para el segundo toque. El valor puede variar entre -1 (totalmente a la izquierda) y 1 (totalmente a la derecha).
+Pan position for the second tap. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

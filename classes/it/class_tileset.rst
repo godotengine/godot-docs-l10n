@@ -92,6 +92,8 @@ Metodi
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`cleanup_invalid_tile_proxies<class_TileSet_method_cleanup_invalid_tile_proxies>`\ (\ )                                                                                                                                                                                                                                                               |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`clear_terrains<class_TileSet_method_clear_terrains>`\ (\ terrain_set\: :ref:`int<class_int>`\ )                                                                                                                                                                                                                                                      |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`clear_tile_proxies<class_TileSet_method_clear_tile_proxies>`\ (\ )                                                                                                                                                                                                                                                                                   |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Array<class_Array>`                           | :ref:`get_alternative_level_tile_proxy<class_TileSet_method_get_alternative_level_tile_proxy>`\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`\ )                                                                                                                         |
@@ -200,7 +202,7 @@ Metodi
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`set_alternative_level_tile_proxy<class_TileSet_method_set_alternative_level_tile_proxy>`\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`, alternative_to\: :ref:`int<class_int>`\ ) |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                                              | :ref:`set_coords_level_tile_proxy<class_TileSet_method_set_coords_level_tile_proxy>`\ (\ p_source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ )                                                                                           |
+   | |void|                                              | :ref:`set_coords_level_tile_proxy<class_TileSet_method_set_coords_level_tile_proxy>`\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ )                                                                                             |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`set_custom_data_layer_name<class_TileSet_method_set_custom_data_layer_name>`\ (\ layer_index\: :ref:`int<class_int>`, layer_name\: :ref:`String<class_String>`\ )                                                                                                                                                                                    |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -752,6 +754,18 @@ Aggiunge un nuovo insieme di terreni nella posizione ``to_position`` nell'array.
 |void| **cleanup_invalid_tile_proxies**\ (\ ) :ref:`🔗<class_TileSet_method_cleanup_invalid_tile_proxies>`
 
 Cancella i tile proxy che puntano a tasselli non validi.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSet_method_clear_terrains:
+
+.. rst-class:: classref-method
+
+|void| **clear_terrains**\ (\ terrain_set\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_clear_terrains>`
+
+Clears all terrain properties for the given terrain set.
 
 .. rst-class:: classref-item-separator
 
@@ -1421,7 +1435,7 @@ I tasselli con proxy si possono sostituire automaticamente nei nodi TileMapLayer
 
 .. rst-class:: classref-method
 
-|void| **set_coords_level_tile_proxy**\ (\ p_source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSet_method_set_coords_level_tile_proxy>`
+|void| **set_coords_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSet_method_set_coords_level_tile_proxy>`
 
 Crea un proxy a livello di coordinate per gli identificatori forniti. Un proxy mapperà un insieme di identificatori di tasselli su un altro insieme di identificatori. L'ID tassello alternativo rimane invariato quando si utilizzano proxy a livello di coordinate.
 

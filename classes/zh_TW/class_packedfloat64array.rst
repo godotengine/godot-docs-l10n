@@ -20,6 +20,8 @@ If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<cla
 
 \ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedFloat64Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
 
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
+
 .. note::
 
 	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。

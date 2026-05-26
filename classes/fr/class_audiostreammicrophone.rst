@@ -23,6 +23,8 @@ Lorsqu'il est utilisé directement dans un nœud :ref:`AudioStreamPlayer<class_A
 Tutoriels
 ------------------
 
+- :doc:`Flux audio <../tutorials/audio/audio_streams>`
+
 - :doc:`L'enregistrement avec le microphone <../tutorials/audio/recording_with_microphone>`
 
 - `Démo d'enregistrement du microphone <https://github.com/godotengine/godot-demo-projects/tree/master/audio/mic_record>`__

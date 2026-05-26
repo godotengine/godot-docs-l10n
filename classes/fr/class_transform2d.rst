@@ -12,13 +12,15 @@ Une matrice 2×3 représentant une transformation 2D.
 Description
 -----------
 
-Le type :ref:`Variant<class_Variant>` intégré **Transform2D** est une `matrice <https://fr.wikipedia.org/wiki/Matrice_(math%C3%A9matiques)>`__ 2×3 représentant une transformation de l'espace 2D. Il contient trois valeurs :ref:`Vector2<class_Vector2>`\  : :ref:`x<class_Transform2D_property_x>`, :ref:`y<class_Transform2D_property_y>`, et :ref:`origin<class_Transform2D_property_origin>`. Ensemble, ils peuvent représenter la translation, la rotation, l'échelle et le cisaillement.
+The **Transform2D** built-in :ref:`Variant<class_Variant>` type is a 2×3 `matrix <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ representing a transformation in 2D space. It contains three :ref:`Vector2<class_Vector2>` values: :ref:`x<class_Transform2D_property_x>`, :ref:`y<class_Transform2D_property_y>`, and :ref:`origin<class_Transform2D_property_origin>`. Together, they can represent translation, rotation, scale, and skew.
 
-Les axes :ref:`x<class_Transform2D_property_x>` et :ref:`y<class_Transform2D_property_y>` forment une matrice 2×2, connue sous le nom de **base** de la transformation. La longueur de chaque axe (:ref:`Vector2.length()<class_Vector2_method_length>`) influence l'échelle de la transformation, tandis que la direction de tous les axes influence la rotation. Habituellement, les deux axes sont perpendiculaires l'un avec l'autre. Cependant, lorsque vous tournez un axe individuellement, la transformation devient cisaillée. L'application d'une transformation cisaillée sur un sprite 2D fera apparaître le sprite comme déformé.
+The :ref:`x<class_Transform2D_property_x>` and :ref:`y<class_Transform2D_property_y>` axes form a 2×2 matrix, known as the transform's **basis**. The length of each axis (:ref:`Vector2.length()<class_Vector2_method_length>`) influences the transform's scale, while the direction of all axes influence the rotation. Usually, both axes are perpendicular to one another. However, when you rotate one axis individually, the transform becomes skewed. Applying a skewed transform to a 2D sprite will make the sprite appear distorted.
 
-Pour une introduction générale, voir le tutoriel :doc:`Matrices et transformations <../tutorials/math/matrices_and_transforms>`.
+For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
 
-\ **Note :** Contrairement à :ref:`Transform3D<class_Transform3D>`, il n'y a pas d'équivalent 2D du type :ref:`Basis<class_Basis>`. Toutes les mentions de "base" renvoient aux composants :ref:`x<class_Transform2D_property_x>` et :ref:`y<class_Transform2D_property_y>` de **Transform2D**.
+\ **Note:** Unlike :ref:`Transform3D<class_Transform3D>`, there is no 2D equivalent to the :ref:`Basis<class_Basis>` type. All mentions of "basis" refer to the :ref:`x<class_Transform2D_property_x>` and :ref:`y<class_Transform2D_property_y>` components of **Transform2D**.
+
+\ **Note:** In a boolean context, a Transform2D will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Transform2D_constant_IDENTITY>`. Otherwise, a Transform2D will always evaluate to ``true``.
 
 .. note::
 

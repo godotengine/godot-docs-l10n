@@ -14,9 +14,9 @@ Un script qui est exécuté à l'export du projet.
 Description
 -----------
 
-Les **EditorExportPlugin** sont automatiquement invoqués lorsque l'utilisateur exporte le projet. Ils sont plus le souvent utilisés de déterminer quels fichiers doivent être inclus dans le projet exporté. Pour chaque greffon, :ref:`_export_begin()<class_EditorExportPlugin_private_method__export_begin>` est appelé au début du processus d'exportation, et :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` est appelé pour chaque fichier exporté.
+**EditorExportPlugin**\ s are automatically invoked whenever the user exports the project. They can be used to modify scenes and resources during project export based on what :doc:`Feature Tags <../tutorials/export/feature_tags>` are set. For each plugin, :ref:`_export_begin()<class_EditorExportPlugin_private_method__export_begin>` is called at the beginning of the export process and then :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` is called for each exported file.
 
-Pour utiliser **EditorExportPlugin**, enregistrez-le d'abord avec la méthode :ref:`EditorPlugin.add_export_plugin()<class_EditorPlugin_method_add_export_plugin>`.
+Register a **EditorExportPlugin** by creating a new :ref:`EditorPlugin<class_EditorPlugin>` and calling its :ref:`EditorPlugin.add_export_plugin()<class_EditorPlugin_method_add_export_plugin>` method.
 
 .. rst-class:: classref-introduction-group
 
@@ -45,6 +45,8 @@ Méthodes
    | |void|                                                           | :ref:`_end_customize_resources<class_EditorExportPlugin_private_method__end_customize_resources>`\ (\ ) |virtual|                                                                                                                                                                  |
    +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`_end_customize_scenes<class_EditorExportPlugin_private_method__end_customize_scenes>`\ (\ ) |virtual|                                                                                                                                                                        |
+   +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                           | :ref:`_end_generate_apple_embedded_project<class_EditorExportPlugin_private_method__end_generate_apple_embedded_project>`\ (\ path\: :ref:`String<class_String>`, will_build_archive\: :ref:`bool<class_bool>`\ ) |virtual|                                                        |
    +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`_export_begin<class_EditorExportPlugin_private_method__export_begin>`\ (\ features\: :ref:`PackedStringArray<class_PackedStringArray>`, is_debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: :ref:`int<class_int>`\ ) |virtual|                   |
    +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -206,6 +208,8 @@ Customize a scene. If changes are made to it, return the same or a new scene. Ot
 
 Implementing this method is required if :ref:`_begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` returns ``true``.
 
+\ **Note:** To change a variable in your scene, use the ``@export`` annotation when declaring it.
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -229,6 +233,20 @@ This is called when the customization process for resources ends.
 |void| **_end_customize_scenes**\ (\ ) |virtual| :ref:`🔗<class_EditorExportPlugin_private_method__end_customize_scenes>`
 
 Ceci est appelé lorsque le processus de personnalisation pour les scènes se termine.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorExportPlugin_private_method__end_generate_apple_embedded_project:
+
+.. rst-class:: classref-method
+
+|void| **_end_generate_apple_embedded_project**\ (\ path\: :ref:`String<class_String>`, will_build_archive\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorExportPlugin_private_method__end_generate_apple_embedded_project>`
+
+This is called after Xcode project generation, but before it is built.
+
+\ **Note:** Only supported on iOS and visionOS.
 
 .. rst-class:: classref-item-separator
 
@@ -373,6 +391,8 @@ Virtual method to be overridden by the user. This is used at export time to upda
 Return a hash based on the configuration passed (for both scenes and resources). This helps keep separate caches for separate export configurations.
 
 Implementing this method is required if :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` returns ``true``.
+
+\ **Note:** :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` and :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` will not be called when the **EditorExportPlugin** script is modified unless this hash changes too.
 
 .. rst-class:: classref-item-separator
 

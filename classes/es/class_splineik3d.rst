@@ -14,15 +14,17 @@ A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` for aligning bones along a
 Descripción
 ----------------------
 
-Un :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` para alinear huesos a lo largo de una :ref:`Path3D<class_Path3D>`. La suavidad del ajuste depende de :ref:`Curve3D.bake_interval<class_Curve3D_property_bake_interval>`.
+A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` for aligning bones along a :ref:`Path3D<class_Path3D>`. The smoothness of the fitting depends on the :ref:`Curve3D.bake_interval<class_Curve3D_property_bake_interval>`.
 
-Si quieres que la :ref:`Path3D<class_Path3D>` se adjunte a un hueso específico, se recomienda colocar un :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` antes del **SplineIK3D** en la lista de :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` (hijos del :ref:`Skeleton3D<class_Skeleton3D>`), y luego colocar una :ref:`Path3D<class_Path3D>` como hijo del :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>`.
+If you want the :ref:`Path3D<class_Path3D>` to attach to a specific bone, it is recommended to place a :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` before the **SplineIK3D** in the :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` list (children of the :ref:`Skeleton3D<class_Skeleton3D>`), and then place a :ref:`Path3D<class_Path3D>` as the :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>`'s child.
 
-La torsión del hueso se determina basándose en el :ref:`Curve3D.get_point_tilt()<class_Curve3D_method_get_point_tilt>`.
+Bone twist is determined based on the :ref:`Curve3D.get_point_tilt()<class_Curve3D_method_get_point_tilt>`.
 
-Si la articulación del hueso raíz y el punto de inicio de la :ref:`Curve3D<class_Curve3D>` están separados, asume que hay un segmento de línea recta entre ellos. Esto significa que el vector que apunta hacia el punto de inicio de la :ref:`Curve3D<class_Curve3D>` tiene prioridad sobre el punto de intersección más corto a lo largo de la :ref:`Curve3D<class_Curve3D>`.
+If the root bone joint and the start point of the :ref:`Curve3D<class_Curve3D>` are separated, it assumes that there is a linear line segment between them. This means that the vector pointing toward the start point of the :ref:`Curve3D<class_Curve3D>` takes precedence over the shortest intersection point along the :ref:`Curve3D<class_Curve3D>`.
 
-Si la articulación del hueso final excede la longitud de la ruta, se dobla lo más cerca posible del punto final de la :ref:`Curve3D<class_Curve3D>`.
+If the end bone joint exceeds the path length, it is bent as close as possible to the end point of the :ref:`Curve3D<class_Curve3D>`.
+
+\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 

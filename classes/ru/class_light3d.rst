@@ -7,7 +7,7 @@ Light3D
 
 **Наследует:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Наследуется от:** :ref:`DirectionalLight3D<class_DirectionalLight3D>`, :ref:`OmniLight3D<class_OmniLight3D>`, :ref:`SpotLight3D<class_SpotLight3D>`
+**Наследуется от:** :ref:`AreaLight3D<class_AreaLight3D>`, :ref:`DirectionalLight3D<class_DirectionalLight3D>`, :ref:`OmniLight3D<class_OmniLight3D>`, :ref:`SpotLight3D<class_SpotLight3D>`
 
 Предоставляет базовый класс для различных видов световых узлов.
 
@@ -641,11 +641,11 @@ enum **BakeMode**: :ref:`🔗<enum_Light3D_BakeMode>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-Размер источника света в единицах Godot. Доступно только для :ref:`OmniLight3D<class_OmniLight3D>` и :ref:`SpotLight3D<class_SpotLight3D>`. Увеличение этого значения замедлит затухание света и сделает тени более размытыми (также называемыми процентно-ближенными мягкими тенями или PCSS). Это можно использовать для имитации площадного освещения в определенной степени. Увеличение этого значения выше ``0.0`` для источников света с включенными тенями приведет к заметному снижению производительности из-за PCSS.
+The simulated size of the light in Godot units, affecting shading and shadows. For :ref:`OmniLight3D<class_OmniLight3D>`\ s and :ref:`SpotLight3D<class_SpotLight3D>`\ s, increasing this value simulates a spherical area light, expanding the size of specular highlights. If shadows are enabled, a penumbra is rendered, making shadows appear blurrier. For :ref:`AreaLight3D<class_AreaLight3D>`\ s, only the shadows are affected. Penumbras are simulated with percentage-closer soft shadows, or PCSS, which has a noticeable performance cost for values above ``0.0``.
 
-\ **Примечание:** :ref:`light_size<class_Light3D_property_light_size>` не зависит от :ref:`Node3D.scale<class_Node3D_property_scale>` (масштаба источника света или масштаба его родителя).
+\ **Note:** :ref:`light_size<class_Light3D_property_light_size>` is not affected by :ref:`Node3D.scale<class_Node3D_property_scale>` (the light's scale or its parent's scale).
 
-\ **Примечание:** PCSS для позиционного освещения поддерживается только в методах рендеринга Forward+ и Mobile, но не Compatibility.
+\ **Note:** PCSS for positional lights is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
 
 .. rst-class:: classref-item-separator
 

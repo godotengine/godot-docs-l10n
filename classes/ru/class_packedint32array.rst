@@ -12,11 +12,13 @@ PackedInt32Array
 Описание
 ----------------
 
-Массив, специально разработанный для хранения 32-битных целочисленных значений. Плотно упаковывает данные, поэтому экономит память для больших размеров массива.
+An array specifically designed to hold 32-bit integer values. Packs data tightly, so it saves memory for large array sizes.
 
-\ **Примечание:** Этот тип хранит 32-битные целые числа со знаком, что означает, что он может принимать значения в интервале ``[-2^31, 2^31 - 1]``, т. е. ``[-2147483648, 2147483647]``. Превышение этих границ приведет к циклическому переносу. Для сравнения, :ref:`int<class_int>` использует 64-битные целые числа со знаком, которые могут хранить гораздо большие значения. Если вам нужно плотно упаковать 64-битные целые числа, см. :ref:`PackedInt64Array<class_PackedInt64Array>`.
+\ **Note:** This type stores signed 32-bit integers, which means it can take values in the interval ``[-2^31, 2^31 - 1]``, i.e. ``[-2147483648, 2147483647]``. Exceeding those bounds will wrap around. In comparison, :ref:`int<class_int>` uses signed 64-bit integers which can hold much larger values. If you need to pack 64-bit integers tightly, see :ref:`PackedInt64Array<class_PackedInt64Array>`.
 
-\ **Примечание:** Упакованные массивы всегда передаются по ссылке. Чтобы получить копию массива, которую можно изменять независимо от исходного массива, используйте :ref:`duplicate()<class_PackedInt32Array_method_duplicate>`. Это *не* касается встроенных свойств и методов. В этих случаях возвращаемый упакованный массив является копией, и его изменение *не* повлияет на исходное значение. Чтобы обновить встроенное свойство этого типа, измените возвращаемый массив, а затем снова присвойте его свойству.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedInt32Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 

@@ -118,7 +118,7 @@ AnimationNode
 
 .. rst-class:: classref-signal
 
-**animation_node_removed**\ (\ object_id\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AnimationNode_signal_animation_node_removed>`
+**animation_node_removed**\ (\ object_id\: :ref:`int<class_int>`, node_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AnimationNode_signal_animation_node_removed>`
 
 Выдается узлами, которые наследуют этот класс и имеют внутреннее дерево, когда один из их узлов анимации удаляется. Узлы анимации, которые выдают этот сигнал – :ref:`AnimationNodeBlendSpace1D<class_AnimationNodeBlendSpace1D>`, :ref:`AnimationNodeBlendSpace2D<class_AnimationNodeBlendSpace2D>`, :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` и :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
@@ -133,6 +133,20 @@ AnimationNode
 **animation_node_renamed**\ (\ object_id\: :ref:`int<class_int>`, old_name\: :ref:`String<class_String>`, new_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AnimationNode_signal_animation_node_renamed>`
 
 Выпускается узлами, которые наследуют этот класс и имеют внутреннее дерево, когда изменяется одно из имен их узлов анимации. Узлы анимации, которые выдают этот сигнал – :ref:`AnimationNodeBlendSpace1D<class_AnimationNodeBlendSpace1D>`, :ref:`AnimationNodeBlendSpace2D<class_AnimationNodeBlendSpace2D>`, :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` и :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_AnimationNode_signal_node_updated:
+
+.. rst-class:: classref-signal
+
+**node_updated**\ (\ object_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AnimationNode_signal_node_updated>`
+
+**Экспериментальное:** Этот сигнал может быть изменён или удалён в будущих версиях.
+
+Emitted by :ref:`AnimationNodeAnimation<class_AnimationNodeAnimation>` when its :ref:`AnimationNodeAnimation.animation<class_AnimationNodeAnimation_property_animation>` resource is changed, or by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` when its connections change.
 
 .. rst-class:: classref-item-separator
 

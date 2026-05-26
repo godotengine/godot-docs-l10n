@@ -12,11 +12,13 @@ Un array empaquetado de enteros de 32 bits.
 Descripción
 ----------------------
 
-Un array diseñado específicamente para contener valores enteros de 32 bits. Empaqueta los datos de forma compacta, por lo que ahorra memoria para arrays de gran tamaño.
+An array specifically designed to hold 32-bit integer values. Packs data tightly, so it saves memory for large array sizes.
 
-\ **Nota:** Este tipo almacena enteros de 32 bits con signo, lo que significa que puede tomar valores en el intervalo ``[-2^31, 2^31 - 1]``, es decir, ``[-2147483648, 2147483647]``. Si se exceden estos límites, se dará la vuelta. En comparación, :ref:`int<class_int>` utiliza enteros de 64 bits con signo que pueden contener valores mucho mayores. Si necesitas empaquetar enteros de 64 bits de forma compacta, véase :ref:`PackedInt64Array<class_PackedInt64Array>`.
+\ **Note:** This type stores signed 32-bit integers, which means it can take values in the interval ``[-2^31, 2^31 - 1]``, i.e. ``[-2147483648, 2147483647]``. Exceeding those bounds will wrap around. In comparison, :ref:`int<class_int>` uses signed 64-bit integers which can hold much larger values. If you need to pack 64-bit integers tightly, see :ref:`PackedInt64Array<class_PackedInt64Array>`.
 
-\ **Nota:** Los arrays empaquetados siempre se pasan por referencia. Para obtener una copia de un array que pueda modificarse independientemente del array original, utiliza :ref:`duplicate()<class_PackedInt32Array_method_duplicate>`. Este *no* es el caso de las propiedades y métodos incorporados. En estos casos, el array empaquetado devuelto es una copia, y cambiarlo *no* afectará al valor original. Para actualizar una propiedad incorporada de este tipo, modifica el array devuelto y luego asígnalo a la propiedad de nuevo.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedInt32Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 

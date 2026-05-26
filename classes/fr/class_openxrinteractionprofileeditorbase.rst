@@ -20,20 +20,6 @@ Il s'agit d'une classe de base pour les éditeurs de profil d'interaction utilis
 
 .. rst-class:: classref-reftable-group
 
-Propriétés
---------------------
-
-.. table::
-   :widths: auto
-
-   +--------------------------------------------------------+-----------------------+--------------------------------------------------------------------------------+
-   | |bitfield|\[:ref:`SizeFlags<enum_Control_SizeFlags>`\] | size_flags_horizontal | ``3`` (overrides :ref:`Control<class_Control_property_size_flags_horizontal>`) |
-   +--------------------------------------------------------+-----------------------+--------------------------------------------------------------------------------+
-   | |bitfield|\[:ref:`SizeFlags<enum_Control_SizeFlags>`\] | size_flags_vertical   | ``3`` (overrides :ref:`Control<class_Control_property_size_flags_vertical>`)   |
-   +--------------------------------------------------------+-----------------------+--------------------------------------------------------------------------------+
-
-.. rst-class:: classref-reftable-group
-
 Méthodes
 ----------------
 

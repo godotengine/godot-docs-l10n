@@ -7,14 +7,16 @@ AudioEffectStereoEnhance
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Un efecto de audio que se puede utilizar para ajustar la intensidad de la panorámica estéreo.
+Adds a stereo manipulation audio effect to an audio bus.
+
+Controls gain of the side channels, and widens the stereo image.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Un efecto de audio que se puede utilizar para ajustar la intensidad de la panorámica estéreo.
+Adjusts gain of the left and right channels, and makes mono sounds stereo through phase shifting.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +24,8 @@ Tutoriales
 --------------------
 
 - :doc:`Buses de audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -59,7 +63,7 @@ Descripciones de Propiedades
 - |void| **set_pan_pullout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pan_pullout**\ (\ )
 
-Amplifica la diferencia entre canales estéreo, aumentando o disminuyendo la panoramización existente. Un valor de 0.0 convierte de estéreo a mono. No afecta a la señal mono.
+Gain of the side channels, if they exist. A value of 0 will downmix stereo to mono. Value can range from 0 to 4.
 
 .. rst-class:: classref-item-separator
 
@@ -76,7 +80,7 @@ Amplifica la diferencia entre canales estéreo, aumentando o disminuyendo la pan
 - |void| **set_surround**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_surround**\ (\ )
 
-Amplía el escenario sonoro mediante el desplazamiento de fase junto con :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>`. Simplemente desplaza el sonido hacia el canal izquierdo si :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>` es 0.
+Widens the stereo image through phase shifting in conjunction with :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>`. Just pans sound to the left channel if :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>` is 0. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +97,7 @@ Amplía el escenario sonoro mediante el desplazamiento de fase junto con :ref:`t
 - |void| **set_time_pullout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_pullout**\ (\ )
 
-Amplía el escenario sonoro mediante el desplazamiento de fase junto con :ref:`surround<class_AudioEffectStereoEnhance_property_surround>`. Solo retrasa el canal derecho si :ref:`surround<class_AudioEffectStereoEnhance_property_surround>` es 0.
+Widens the stereo image through phase shifting in conjunction with :ref:`surround<class_AudioEffectStereoEnhance_property_surround>`. Just delays the right channel if :ref:`surround<class_AudioEffectStereoEnhance_property_surround>` is 0. Value is in milliseconds, and can range from 0 to 50.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

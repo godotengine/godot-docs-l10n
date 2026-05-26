@@ -404,9 +404,9 @@ Devuelve ``true`` si los vértices de ``polygon`` están ordenados en el sentido
 
 :ref:`Variant<class_Variant>` **line_intersects_line**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, dir_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, dir_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_line_intersects_line>`
 
-Devuelve el punto de intersección entre las dos líneas (``from_a``, ``dir_a``) y (``from_b``, ``dir_b``). Devuelve un :ref:`Vector2<class_Vector2>`, o ``null`` si las líneas son paralelas.
+Returns the point of intersection between the two lines (``from_a``, ``dir_a``) and (``from_b``, ``dir_b``). Returns a :ref:`Vector2<class_Vector2>`, or ``null`` if the lines are parallel.
 
-\ ``from`` y ``dir`` *no* son puntos finales de un segmento de línea o rayo, sino la pendiente (``dir``) y un punto conocido (``from``) en esa línea.
+\ ``from`` and ``dir`` are *not* endpoints of a line segment or ray but the slope (``dir``) and a known point (``from``) on that line. To get the intersection between two line segments, use :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
 
 
 .. tabs::
@@ -417,11 +417,11 @@ Devuelve el punto de intersección entre las dos líneas (``from_a``, ``dir_a``)
     var dir_a = Vector2.RIGHT
     var from_b = Vector2.DOWN
 
-    # Devuelve Vector2(1, 0)
+    # Returns Vector2(1, 0)
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(1, -1))
-    # Devuelve Vector2(-1, 0)
+    # Returns Vector2(-1, 0)
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(-1, -1))
-    # Devuelve null
+    # Returns null
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2.RIGHT)
 
  .. code-tab:: csharp
@@ -430,11 +430,11 @@ Devuelve el punto de intersección entre las dos líneas (``from_a``, ``dir_a``)
     var dirA = Vector2.Right;
     var fromB = Vector2.Down;
 
-    // Devuelve new Vector2(1, 0)
+    // Returns new Vector2(1, 0)
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(1, -1));
-    // Devuelve new Vector2(-1, 0)
+    // Returns new Vector2(-1, 0)
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(-1, -1));
-    // Devuelve null
+    // Returns null
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, Vector2.Right);
 
 
@@ -554,7 +554,7 @@ Dado el segmento 2D (``segment_from``, ``segment_to``), devuelve la posición en
 
 :ref:`Variant<class_Variant>` **segment_intersects_segment**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, to_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, to_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_segment_intersects_segment>`
 
-Comprueba si los dos segmentos (``from_a``, ``to_a``) y (``from_b``, ``to_b``) se intersecan. Si es así, devuelve el punto de intersección como :ref:`Vector2<class_Vector2>`. Si no hay intersección, devuelve ``null``.
+Checks if two line segments intersect, with line ``a`` between ``from_a`` and ``to_a`` and line ``b`` between ``from_b`` and ``to_b``. If the line segments intersect, the point of intersection is returned as a :ref:`Vector2<class_Vector2>`. If no intersection takes place, ``null`` is returned.
 
 .. rst-class:: classref-item-separator
 

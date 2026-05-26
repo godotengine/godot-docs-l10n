@@ -7,16 +7,18 @@ AudioEffectPhaser
 
 **Eredita:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Aggiunge un effetto audio di phaser a un bus audio.
+Adds a phaser audio effect to an audio bus.
 
-Combina il segnale originale con una copia leggermente fuori fase con l'originale.
+Creates several notch and peak filters that sweep across the spectrum.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Combina i segnali sfasati con il segnale originale. Il movimento dei segnali sfasati è controllato utilizzando un oscillatore a bassa frequenza.
+A "phaser" effect creates a copy of the original audio that phase-rotates differently across the entire frequency spectrum, with the use of a series of all-pass filter stages (6 in this effect). This copy modulates with a low-frequency oscillator and combines with the original audio, resulting in peaks and troughs that sweep across the spectrum.
+
+This effect can be used to create a "glassy" or "bubbly" sound.
 
 .. rst-class:: classref-introduction-group
 
@@ -24,6 +26,8 @@ Tutorial
 ----------------
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -65,7 +69,7 @@ Descrizioni delle proprietà
 - |void| **set_depth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth**\ (\ )
 
-Determina quanto in alto si spostano le frequenze del filtro. Un valore basso influenzerà principalmente le frequenze dei bassi. Un valore elevato può arrivare fino agli acuti. Il valore può variare da ``0.1`` a ``4.0``.
+Intensity of the effect. Value can range from 0.1 to 4.0.
 
 .. rst-class:: classref-item-separator
 
@@ -82,7 +86,7 @@ Determina quanto in alto si spostano le frequenze del filtro. Un valore basso in
 - |void| **set_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback**\ (\ )
 
-Percentuale in uscita del suono modificato. Il valore può variare da 0,1 a 0,9.
+The volume ratio of the filtered audio that is fed back to the all-pass filters. The higher the value, the sharper and louder the peak filters created by the effect. Value can range from 0.1 to 0.9.
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +103,7 @@ Percentuale in uscita del suono modificato. Il valore può variare da 0,1 a 0,9.
 - |void| **set_range_max_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_max_hz**\ (\ )
 
-Determina la frequenza massima influenzata dalle modulazioni di LFO, in Hz. Il valore può variare da 10 a 10000.
+Determines the maximum frequency affected by the low-frequency oscillator modulations, in Hz. Value can range from 10 to 10000.
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +120,7 @@ Determina la frequenza massima influenzata dalle modulazioni di LFO, in Hz. Il v
 - |void| **set_range_min_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_min_hz**\ (\ )
 
-Determina la frequenza minima influenzata dalle modulazioni di LFO, in Hz. Il valore può variare da 10 a 10000.
+Determines the minimum frequency affected by the low-frequency oscillator modulations, in Hz. Value can range from 10 to 10000.
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +137,7 @@ Determina la frequenza minima influenzata dalle modulazioni di LFO, in Hz. Il va
 - |void| **set_rate_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rate_hz**\ (\ )
 
-Regola la velocità in Hz alla quale l'effetto scorre in alto e in basso lungo l'intervallo di frequenza.
+Adjusts the rate in Hz at which the effect sweeps up and down across the frequency range. Value can range from 0.01 to 20.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

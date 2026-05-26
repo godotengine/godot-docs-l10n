@@ -76,9 +76,9 @@ Ogg Vorbis требует больше ресурсов ЦП для декоди
 
 :ref:`int<class_int>` **bar_beats** = ``4`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bar_beats>`
 
-Количество тактов в пределах одного такта в звуковой дорожке. Это актуально только для музыки, которая хочет использовать интерактивные музыкальные функции, а не звуковые эффекты.
+The number of beats within a single bar in the audio track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-Более удобный редактор для :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` представлен в диалоговом окне **Расширенные настройки импорта**, поскольку он позволяет вам предварительно просматривать изменения без необходимости повторного импорта аудио.
+A more convenient editor for :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ Ogg Vorbis требует больше ресурсов ЦП для декоди
 
 :ref:`int<class_int>` **beat_count** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_beat_count>`
 
-Количество ударов аудиодорожки. Это актуально только для музыки, которая хочет использовать интерактивную музыкальную функциональность, а не звуковые эффекты.
+The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-Более удобный редактор для :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` представлен в диалоговом окне **Расширенные настройки импорта**, так как он позволяет вам предварительно просматривать изменения без необходимости повторного импорта аудио.
+A more convenient editor for :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -104,9 +104,9 @@ Ogg Vorbis требует больше ресурсов ЦП для декоди
 
 :ref:`float<class_float>` **bpm** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bpm>`
 
-Удары в минуту аудиодорожки. Это должно соответствовать показателю BPM, который использовался для создания дорожки. Это актуально только для музыки, которая хочет использовать интерактивную музыкальную функциональность, а не звуковые эффекты.
+The tempo of the audio track, measured in beats per minute. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
 
-Более удобный редактор для :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` предоставляется в диалоговом окне **Расширенные настройки импорта**, так как он позволяет вам предварительно просматривать ваши изменения без необходимости повторного импорта аудио.
+A more convenient editor for :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
 
 .. rst-class:: classref-item-separator
 
@@ -118,9 +118,9 @@ Ogg Vorbis требует больше ресурсов ЦП для декоди
 
 :ref:`bool<class_bool>` **loop** = ``false`` :ref:`🔗<class_ResourceImporterOggVorbis_property_loop>`
 
-Если включено, аудио начнет воспроизводиться с начала после завершения воспроизведения по достижении конца аудио.
+If enabled, the audio will begin playing either from the beginning or from :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>`, after playback ends by either reaching the end of the audio or reaching the end of the last beat according to the amount specified in :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>`.
 
-\ **Примечание:** В :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` сигнал :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` не будет выдаваться для зацикливания аудио при достижении конца аудиофайла, поскольку аудио будет воспроизводиться бесконечно.
+\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
 
 .. rst-class:: classref-item-separator
 

@@ -86,6 +86,8 @@ AudioStreamGenerator
 Посібники
 ------------------
 
+- :doc:`Звукові потоки <../tutorials/audio/audio_streams>`
+
 - `Демонстрація аудіогенератора <https://godotengine.org/asset-library/asset/2759>`__
 
 .. rst-class:: classref-reftable-group

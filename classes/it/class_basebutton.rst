@@ -372,9 +372,9 @@ Se ``true``, il pulsante verrà evidenziato per un breve periodo di tempo quando
 - |void| **set_shortcut_in_tooltip**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_in_tooltip_enabled**\ (\ )
 
-Se ``true``, il pulsante aggiungerà informazioni sulla sua scorciatoia nel tooltip.
+If ``true``, the button will add information about its shortcut in the tooltip. This includes the shortcut's events and its :ref:`Resource.resource_name<class_Resource_property_resource_name>`. If both events and name are empty, the shortcut will not be included.
 
-\ **Nota:** Questa proprietà non fa nulla quando il controllo del tooltip viene personalizzato attraverso :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
+\ **Note:** This property does nothing when the tooltip control is customized using :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
 
 .. rst-class:: classref-item-separator
 

@@ -41,7 +41,7 @@ Propriétés
    :widths: auto
 
    +----------------------------------------------------+------------------------------------------------------------------------------+---------------+
-   | :ref:`int<class_int>`                              | :ref:`area_mask<class_AudioStreamPlayer2D_property_area_mask>`               | ``1``         |
+   | :ref:`int<class_int>`                              | :ref:`area_mask<class_AudioStreamPlayer2D_property_area_mask>`               | ``0``         |
    +----------------------------------------------------+------------------------------------------------------------------------------+---------------+
    | :ref:`float<class_float>`                          | :ref:`attenuation<class_AudioStreamPlayer2D_property_attenuation>`           | ``1.0``       |
    +----------------------------------------------------+------------------------------------------------------------------------------+---------------+
@@ -122,7 +122,7 @@ Descriptions des propriétés
 
 .. rst-class:: classref-property
 
-:ref:`int<class_int>` **area_mask** = ``1`` :ref:`🔗<class_AudioStreamPlayer2D_property_area_mask>`
+:ref:`int<class_int>` **area_mask** = ``0`` :ref:`🔗<class_AudioStreamPlayer2D_property_area_mask>`
 
 .. rst-class:: classref-property-setget
 

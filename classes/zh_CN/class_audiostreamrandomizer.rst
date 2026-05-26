@@ -16,6 +16,13 @@ AudioStreamRandomizer
 
 根据播放模式，从池中随机选择一个 AudioStream，并在播放期间应用随机音高偏移和音量偏移。
 
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`音频流 <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 属性
@@ -32,6 +39,10 @@ AudioStreamRandomizer
    | :ref:`float<class_float>`                                    | :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`   | ``0.0`` |
    +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
    | :ref:`float<class_float>`                                    | :ref:`random_volume_offset_db<class_AudioStreamRandomizer_property_random_volume_offset_db>` | ``0.0`` |
+   +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
+   | :ref:`AudioStream<class_AudioStream>`                        | :ref:`stream_{index}/stream<class_AudioStreamRandomizer_property_stream_{index}/stream>`     |         |
+   +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
+   | :ref:`float<class_float>`                                    | :ref:`stream_{index}/weight<class_AudioStreamRandomizer_property_stream_{index}/weight>`     | ``1.0`` |
    +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
    | :ref:`int<class_int>`                                        | :ref:`streams_count<class_AudioStreamRandomizer_property_streams_count>`                     | ``0``   |
    +--------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------+
@@ -175,6 +186,34 @@ enum **PlaybackMode**: :ref:`🔗<enum_AudioStreamRandomizer_PlaybackMode>`
 - :ref:`float<class_float>` **get_random_volume_offset_db**\ (\ )
 
 随机音量变化的强度。音量将根据一个最大为 ``random_volume_offset_db`` 的值随机增加或减少。值为 ``0.0`` 表示没有变化。值为 ``3.0`` 表示音量将在 ``-3.0 dB`` 和 ``+3.0 dB`` 之间随机变化。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_AudioStreamRandomizer_property_stream_{index}/stream:
+
+.. rst-class:: classref-property
+
+:ref:`AudioStream<class_AudioStream>` **stream_{index}/stream** :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/stream>`
+
+The :ref:`AudioStream<class_AudioStream>` at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_AudioStreamRandomizer_property_stream_{index}/weight:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **stream_{index}/weight** = ``1.0`` :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/weight>`
+
+The probability weight of the :ref:`AudioStream<class_AudioStream>` at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
 
 .. rst-class:: classref-item-separator
 

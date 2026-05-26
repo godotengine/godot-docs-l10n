@@ -191,6 +191,8 @@ CodeEdit 是一種專門用於編輯純文字程式碼檔的 :ref:`TextEdit<clas
    +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                          | :ref:`is_line_folded<class_CodeEdit_method_is_line_folded>`\ (\ line\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                                                                                                                                                                |
    +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                           | :ref:`join_lines<class_CodeEdit_method_join_lines>`\ (\ line_ending\: :ref:`String<class_String>` = " "\ )                                                                                                                                                                                                                                                                                                                                             |
+   +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`move_lines_down<class_CodeEdit_method_move_lines_down>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                    |
    +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                                           | :ref:`move_lines_up<class_CodeEdit_method_move_lines_up>`\ (\ )                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -455,6 +457,14 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_PLAIN_TEXT** = ``9``
 
 將該選項標記為未分類或純文字。
+
+.. _class_CodeEdit_constant_KIND_KEYWORD:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_KEYWORD** = ``10``
+
+Marks the option as a keyword.
 
 .. rst-class:: classref-item-separator
 
@@ -1549,6 +1559,18 @@ Returns ``true`` if the given line is marked as executing. See :ref:`set_line_as
 :ref:`bool<class_bool>` **is_line_folded**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_is_line_folded>`
 
 Returns ``true`` if the given line is folded. See :ref:`fold_line()<class_CodeEdit_method_fold_line>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_CodeEdit_method_join_lines:
+
+.. rst-class:: classref-method
+
+|void| **join_lines**\ (\ line_ending\: :ref:`String<class_String>` = " "\ ) :ref:`🔗<class_CodeEdit_method_join_lines>`
+
+Joins all selected lines or lines containing a caret with their next line. Whitespace in between will be removed. If the next line has content, the ``line_ending`` will be inserted in between.
 
 .. rst-class:: classref-item-separator
 

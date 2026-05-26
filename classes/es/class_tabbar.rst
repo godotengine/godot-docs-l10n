@@ -53,6 +53,14 @@ Propiedades
    +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
    | :ref:`int<class_int>`                                                 | :ref:`tab_count<class_TabBar_property_tab_count>`                                 | ``0``                                                               |
    +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`tab_{index}/disabled<class_TabBar_property_tab_{index}/disabled>`           | ``false``                                                           |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`                                     | :ref:`tab_{index}/icon<class_TabBar_property_tab_{index}/icon>`                   |                                                                     |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`String<class_String>`                                           | :ref:`tab_{index}/title<class_TabBar_property_tab_{index}/title>`                 | ``""``                                                              |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`String<class_String>`                                           | :ref:`tab_{index}/tooltip<class_TabBar_property_tab_{index}/tooltip>`             | ``""``                                                              |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
    | :ref:`int<class_int>`                                                 | :ref:`tabs_rearrange_group<class_TabBar_property_tabs_rearrange_group>`           | ``-1``                                                              |
    +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
 
@@ -630,6 +638,62 @@ Cuando aparezca el botón cerrar en las pestañas.
 - :ref:`int<class_int>` **get_tab_count**\ (\ )
 
 El número de pestañas que hay actualmente en la barra.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabBar_property_tab_{index}/disabled:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **tab_{index}/disabled** = ``false`` :ref:`🔗<class_TabBar_property_tab_{index}/disabled>`
+
+If ``true``, the tab at ``index`` is disabled.
+
+\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabBar_property_tab_{index}/icon:
+
+.. rst-class:: classref-property
+
+:ref:`Texture2D<class_Texture2D>` **tab_{index}/icon** :ref:`🔗<class_TabBar_property_tab_{index}/icon>`
+
+If ``true``, the tab at ``index`` is hidden.
+
+\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabBar_property_tab_{index}/title:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **tab_{index}/title** = ``""`` :ref:`🔗<class_TabBar_property_tab_{index}/title>`
+
+The title text of the tab at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabBar_property_tab_{index}/tooltip:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **tab_{index}/tooltip** = ``""`` :ref:`🔗<class_TabBar_property_tab_{index}/tooltip>`
+
+The tooltip text of the tab at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
 
 .. rst-class:: classref-item-separator
 
@@ -1298,7 +1362,7 @@ Icono para el botón de la flecha izquierda que aparece cuando hay demasiadas pe
 
 :ref:`Texture2D<class_Texture2D>` **drop_mark** :ref:`🔗<class_TabBar_theme_icon_drop_mark>`
 
-Icono que se muestra para indicar dónde se va a soltar una pestaña arrastrada (véase :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`).
+Icon shown to indicate where a dragged tab will be dropped (see :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`).
 
 .. rst-class:: classref-item-separator
 

@@ -42,8 +42,6 @@ A custom effect for a :ref:`RichTextLabel<class_RichTextLabel>`, which can be lo
 
 - :doc:`RichTextLabel 中的 BBCode <../tutorials/ui/bbcode_in_richtextlabel>`
 
-- `RichTextEffect 測試專案（協力廠商） <https://github.com/Eoin-ONeill-Yokai/Godot-Rich-Text-Effect-Test-Project>`__
-
 .. rst-class:: classref-reftable-group
 
 方法

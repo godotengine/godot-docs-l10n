@@ -12,11 +12,13 @@ Une matrice 3×4 représentant une transformation 3D.
 Description
 -----------
 
-Le type :ref:`Variant<class_Variant>` intégré **Transform3D** est une matrice 3×4 représentant une transformation dans l'espace 3D. Elle contient une :ref:`Basis<class_Basis>` qui, à elle seule peut représenter la rotation, l'échelle et le cisaillement. En plus, combinée à sa propre origine :ref:`origin<class_Transform3D_property_origin>`, la transformation peut également représenter une translation.
+The **Transform3D** built-in :ref:`Variant<class_Variant>` type is a 3×4 matrix representing a transformation in 3D space. It contains a :ref:`Basis<class_Basis>`, which on its own can represent rotation, scale, and shear. Additionally, combined with its own :ref:`origin<class_Transform3D_property_origin>`, the transform can also represent a translation.
 
-Pour une introduction générale, voir le tutoriel :doc:`Matrices et transformations <../tutorials/math/matrices_and_transforms>`.
+For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
 
-\ **Note :** Godot utilise un `système de coordonnées main-droite <https://fr.wikipedia.org/wiki/R%C3%A8gle_de_la_main_droite>`__, qui est une norme habituelle. Pour les directions, la convention pour les types intégrés comme :ref:`Camera3D<class_Camera3D>` est que -Z pointe vers l'avant (+X vers la droite, +Y vers le haut, et +Z vers l'arrière). D'autres objets peuvent utiliser des conventions de direction différentes. Pour plus d'informations, voir le tutoriel `Conventions de direction de ressource 3D <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__.
+\ **Note:** Godot uses a `right-handed coordinate system <https://en.wikipedia.org/wiki/Right-hand_rule>`__, which is a common standard. For directions, the convention for built-in types like :ref:`Camera3D<class_Camera3D>` is for -Z to point forward (+X is right, +Y is up, and +Z is back). Other objects may use different direction conventions. For more information, see the `3D asset direction conventions <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ tutorial.
+
+\ **Note:** In a boolean context, a Transform3D will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Transform3D_constant_IDENTITY>`. Otherwise, a Transform3D will always evaluate to ``true``.
 
 .. note::
 

@@ -12,11 +12,13 @@ float
 Опис
 --------
 
-Вбудований тип **float** — це 64-розрядне число з плаваючою комою подвійної точності, еквівалентне ``double`` у C++. Цей тип має 14 надійних десяткових цифр точності. Максимальне значення **float** становить приблизно ``1.79769e308``, а мінімальне — приблизно ``-1.79769e308``.
+The **float** built-in type is a 64-bit double-precision floating-point number, equivalent to ``double`` in C++. This type has 14 reliable decimal digits of precision. The maximum value of **float** is approximately ``1.79769e308``, and the minimum is approximately ``-1.79769e308``.
 
-Натомість багато методів і властивостей механізму використовують 32-розрядні числа з плаваючою комою одинарної точності, еквівалентні ``float`` у C++, які мають 6 надійних десяткових цифр точності. Для таких структур даних, як :ref:`Vector2<class_Vector2>` і :ref:`Vector3<class_Vector3>`, Godot за замовчуванням використовує 32-розрядні числа з плаваючою комою, але його можна змінити на використання 64-розрядних подвійних значень, якщо Godot скомпільовано з ``precision=double``.
+Many methods and properties in the engine use 32-bit single-precision floating-point numbers instead, equivalent to ``float`` in C++, which have 6 reliable decimal digits of precision. For data structures such as :ref:`Vector2<class_Vector2>` and :ref:`Vector3<class_Vector3>`, Godot uses 32-bit floating-point numbers by default, but it can be changed to use 64-bit doubles if Godot is compiled with the ``precision=double`` option.
 
-Математичні обчислення, виконані за допомогою типу **float**, не гарантовано точні та часто призводять до невеликих помилок. Зазвичай вам слід використовувати методи :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` і :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>` замість ``==``, щоб порівняти значення **float** на рівність.
+Math done using the **float** type is not guaranteed to be exact and will often result in small errors. You should usually use the :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` and :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>` methods instead of ``==`` to compare **float** values for equality.
+
+\ **Note:** In a boolean context, a **float** will evaluate to ``false`` if it's exactly equal to ``0.0``, and to ``true`` otherwise.
 
 .. rst-class:: classref-introduction-group
 

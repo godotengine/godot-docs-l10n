@@ -91,19 +91,19 @@ Descrizioni delle proprietà
 - |void| **set_seed**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_seed**\ (\ )
 
-Inizializza lo stato del generatore di numeri casuali in base al valore del seed specificato. Un seed specificato fornirà una sequenza riproducibile di numeri pseudocasuali.
+Initializes the random number generator state based on the given seed value. A given seed will give a reproducible sequence of pseudo-random numbers.
 
-\ **Nota:** L'RNG non ha un effetto valanga e può generare serie di risultati simili, se forniti seed simili. Considera di utilizzare una funzione hash per migliorare la qualità dei tuoi seed se provengono esternamente.
+\ **Note:** The RNG does not have an avalanche effect, and can output similar random streams given similar seeds. Consider using a hash function to improve your seed quality if they're sourced externally.
 
-\ **Nota:** L'impostazione di questa proprietà produce un effetto collaterale di modifica dello :ref:`state<class_RandomNumberGenerator_property_state>` interno, quindi assicurati di inizializzare il seed *prima* di modificare lo :ref:`state<class_RandomNumberGenerator_property_state>`:
+\ **Note:** The default value of this property is pseudo-random, and changes when calling :ref:`randomize()<class_RandomNumberGenerator_method_randomize>`. The ``0`` value documented here is a placeholder, and not the actual default seed.
 
-\ **Nota:** Il valore predefinito di questa proprietà è pseudocasuale e cambia quando si chiama :ref:`randomize()<class_RandomNumberGenerator_method_randomize>`. Il valore ``0`` documentato qui è un segnaposto e non il seed predefinito effettivo. 
+\ **Note:** Setting this property produces a side effect of changing the internal :ref:`state<class_RandomNumberGenerator_property_state>`, so make sure to initialize the seed *before* modifying the :ref:`state<class_RandomNumberGenerator_property_state>`:
 
 ::
 
     var rng = RandomNumberGenerator.new()
     rng.seed = hash("Godot")
-    rng.state = 100 # Ripristina uno stato salvato in precedenza.
+    rng.state = 100 # Restore to some previously saved state.
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,11 @@ Descrizioni dei metodi
 
 :ref:`int<class_int>` **rand_weighted**\ (\ weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_RandomNumberGenerator_method_rand_weighted>`
 
-Restituisce un indice casuale con pesi non uniformi. Stampa un errore e restituisce ``-1`` se l'array è vuoto.
+Returns a random integer between ``0`` and the size of the array that is passed as a parameter. Each value in the array should be a floating-point number that represents the relative likelihood that it will be returned as an index. A higher value means the value is more likely to be returned as an index, while a value of ``0`` means it will never be returned as an index.
+
+For example, if ``[0.5, 1, 1, 2]`` is passed as a parameter, then the method is twice as likely to return ``3`` (the index of the value ``2``) and twice as unlikely to return ``0`` (the index of the value ``0.5``) compared to the indices ``1`` and ``2``.
+
+Prints an error and returns ``-1`` if the array is empty.
 
 
 .. tabs::
@@ -159,12 +163,12 @@ Restituisce un indice casuale con pesi non uniformi. Stampa un errore e restitui
 
     var rng = RandomNumberGenerator.new()
 
-    var mio_array = ["uno", "due", "tre", "quattro"]
-    var pesi = PackedFloat32Array([0.5, 1, 1, 2])
+    var my_array = ["one", "two", "three", "four"]
+    var weights = PackedFloat32Array([0.5, 1, 1, 2])
 
-    # Stampa uno dei quattro elementi in `mio_array`.
-    # È più probabile che stampi "quattro" e meno probabile che stampi "uno".
-    print(mio_array[rng.rand_weighted(pesi)])
+    # Prints one of the four elements in `my_array`.
+    # It is more likely to print "four", and less likely to print "one".
+    print(my_array[rng.rand_weighted(weights)])
 
 
 

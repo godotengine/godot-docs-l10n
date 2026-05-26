@@ -7,23 +7,25 @@ AudioEffectSpectrumAnalyzer
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-可用於即時音訊視覺化的音訊效果。
+Creates an :ref:`AudioEffectInstance<class_AudioEffectInstance>` which performs frequency analysis and exposes results to be accessed in real-time.
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-此效果不會改變聲音輸出，但可用於即時音訊視覺化。
+Calculates a Fourier Transform of the audio signal. This effect does not alter the audio. Can be used for creating real-time audio visualizations, like a spectrogram.
 
-該資源會配置一個 :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`\ ，於執行時進行實際分析，可透過 :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` 取得。
-
-若需程式化產生聲音，請參閱 :ref:`AudioStreamGenerator<class_AudioStreamGenerator>`\ 。
+This resource configures an :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`, which performs the actual analysis at runtime. An instance should be obtained with :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` to make use of this effect.
 
 .. rst-class:: classref-introduction-group
 
 教學
 ----
+
+- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 - `音訊頻譜視覺化範例 <https://godotengine.org/asset-library/asset/2762>`__
 
@@ -35,13 +37,11 @@ AudioEffectSpectrumAnalyzer
 .. table::
    :widths: auto
 
-   +----------------------------------------------------------+--------------------------------------------------------------------------------+----------+
-   | :ref:`float<class_float>`                                | :ref:`buffer_length<class_AudioEffectSpectrumAnalyzer_property_buffer_length>` | ``2.0``  |
-   +----------------------------------------------------------+--------------------------------------------------------------------------------+----------+
-   | :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` | :ref:`fft_size<class_AudioEffectSpectrumAnalyzer_property_fft_size>`           | ``2``    |
-   +----------------------------------------------------------+--------------------------------------------------------------------------------+----------+
-   | :ref:`float<class_float>`                                | :ref:`tap_back_pos<class_AudioEffectSpectrumAnalyzer_property_tap_back_pos>`   | ``0.01`` |
-   +----------------------------------------------------------+--------------------------------------------------------------------------------+----------+
+   +----------------------------------------------------------+--------------------------------------------------------------------------------+---------+
+   | :ref:`float<class_float>`                                | :ref:`buffer_length<class_AudioEffectSpectrumAnalyzer_property_buffer_length>` | ``2.0`` |
+   +----------------------------------------------------------+--------------------------------------------------------------------------------+---------+
+   | :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` | :ref:`fft_size<class_AudioEffectSpectrumAnalyzer_property_fft_size>`           | ``2``   |
+   +----------------------------------------------------------+--------------------------------------------------------------------------------+---------+
 
 .. rst-class:: classref-section-separator
 
@@ -126,7 +126,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectSpectrumAnalyzer_FFTSize>`
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-緩衝區保留時長（秒）。值越大資料保存越久，但佔用記憶體越多。
+The length of the buffer to keep, in seconds. Higher values keep data around for longer, but require more memory. Value can range from 0.1 to 4.
 
 .. rst-class:: classref-item-separator
 
@@ -144,25 +144,6 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectSpectrumAnalyzer_FFTSize>`
 - :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` **get_fft_size**\ (\ )
 
 `快速傅立葉轉換 <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__\ 緩衝區大小。值越高頻譜分析隨時間越平滑，但延遲也越大；突發振幅變化時此延遲特別明顯。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_AudioEffectSpectrumAnalyzer_property_tap_back_pos:
-
-.. rst-class:: classref-property
-
-:ref:`float<class_float>` **tap_back_pos** = ``0.01`` :ref:`🔗<class_AudioEffectSpectrumAnalyzer_property_tap_back_pos>`
-
-.. rst-class:: classref-property-setget
-
-- |void| **set_tap_back_pos**\ (\ value\: :ref:`float<class_float>`\ )
-- :ref:`float<class_float>` **get_tap_back_pos**\ (\ )
-
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

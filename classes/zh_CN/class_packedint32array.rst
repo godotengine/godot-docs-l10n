@@ -12,11 +12,13 @@ PackedInt32Array
 描述
 ----
 
-专门设计用于存放 32 位整数值的数组。数据是紧密存放的，因此能够在数组较大时节省内存。
+An array specifically designed to hold 32-bit integer values. Packs data tightly, so it saves memory for large array sizes.
 
-\ **注意：**\ 该类型存储的是 32 位有符号整数，也就是说它可以取区间 ``[-2^31, 2^31 - 1]`` 内的值，即 ``[-2147483648, 2147483647]``\ 。超过界限时会从另一端绕回。相比之下，\ :ref:`int<class_int>` 使用带符号的 64 位整数，可以容纳更大的值。紧密存放 64 位整数见 :ref:`PackedInt64Array<class_PackedInt64Array>`\ 。
+\ **Note:** This type stores signed 32-bit integers, which means it can take values in the interval ``[-2^31, 2^31 - 1]``, i.e. ``[-2147483648, 2147483647]``. Exceeding those bounds will wrap around. In comparison, :ref:`int<class_int>` uses signed 64-bit integers which can hold much larger values. If you need to pack 64-bit integers tightly, see :ref:`PackedInt64Array<class_PackedInt64Array>`.
 
-\ **注意：**\ 紧缩数组始终通过引用传递。要获取可以独立于原始数组进行修改的数组副本，请使用 :ref:`duplicate()<class_PackedInt32Array_method_duplicate>`\ 。内置属性和方法\ *并非*\ 如此，它们返回的是紧缩数组的副本，对其进行修改\ *不会*\ 影响原值。更新此类内置属性请修改返回的数组，然后将其重新赋值给该属性。
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedInt32Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 

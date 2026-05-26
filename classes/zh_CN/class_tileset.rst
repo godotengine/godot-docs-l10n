@@ -92,6 +92,8 @@ TileSet 可以配置图块暴露哪些属性。为了做到这一点，TileSet �
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`cleanup_invalid_tile_proxies<class_TileSet_method_cleanup_invalid_tile_proxies>`\ (\ )                                                                                                                                                                                                                                                               |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`clear_terrains<class_TileSet_method_clear_terrains>`\ (\ terrain_set\: :ref:`int<class_int>`\ )                                                                                                                                                                                                                                                      |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`clear_tile_proxies<class_TileSet_method_clear_tile_proxies>`\ (\ )                                                                                                                                                                                                                                                                                   |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Array<class_Array>`                           | :ref:`get_alternative_level_tile_proxy<class_TileSet_method_get_alternative_level_tile_proxy>`\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`\ )                                                                                                                         |
@@ -200,7 +202,7 @@ TileSet 可以配置图块暴露哪些属性。为了做到这一点，TileSet �
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`set_alternative_level_tile_proxy<class_TileSet_method_set_alternative_level_tile_proxy>`\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`, alternative_to\: :ref:`int<class_int>`\ ) |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                                              | :ref:`set_coords_level_tile_proxy<class_TileSet_method_set_coords_level_tile_proxy>`\ (\ p_source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ )                                                                                           |
+   | |void|                                              | :ref:`set_coords_level_tile_proxy<class_TileSet_method_set_coords_level_tile_proxy>`\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ )                                                                                             |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`set_custom_data_layer_name<class_TileSet_method_set_custom_data_layer_name>`\ (\ layer_index\: :ref:`int<class_int>`, layer_name\: :ref:`String<class_String>`\ )                                                                                                                                                                                    |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -752,6 +754,18 @@ enum **TerrainMode**: :ref:`🔗<enum_TileSet_TerrainMode>`
 |void| **cleanup_invalid_tile_proxies**\ (\ ) :ref:`🔗<class_TileSet_method_cleanup_invalid_tile_proxies>`
 
 清除指向无效图块的图块代理。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSet_method_clear_terrains:
+
+.. rst-class:: classref-method
+
+|void| **clear_terrains**\ (\ terrain_set\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_clear_terrains>`
+
+Clears all terrain properties for the given terrain set.
 
 .. rst-class:: classref-item-separator
 
@@ -1421,7 +1435,7 @@ enum **TerrainMode**: :ref:`🔗<enum_TileSet_TerrainMode>`
 
 .. rst-class:: classref-method
 
-|void| **set_coords_level_tile_proxy**\ (\ p_source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSet_method_set_coords_level_tile_proxy>`
+|void| **set_coords_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSet_method_set_coords_level_tile_proxy>`
 
 为给定的标识符创建坐标级代理。代理会将一组图块标识符映射到另一组标识符。使用坐标级代理时，备选图块 ID 保持不变。
 

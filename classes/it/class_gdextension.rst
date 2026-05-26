@@ -23,7 +23,7 @@ Il tipo di risorsa **GDExtension** rappresenta una `libreria condivisa <https://
 Tutorial
 ----------------
 
-- :doc:`Panoramica di GDExtension <../tutorials/scripting/gdextension/what_is_gdextension>`
+- :doc:`Panoramica di GDExtension <../engine_details/engine_api/gdextension/what_is_gdextension>`
 
 - :doc:`Esempio di GDExtension in C++ <../tutorials/scripting/cpp/gdextension_cpp_example>`
 

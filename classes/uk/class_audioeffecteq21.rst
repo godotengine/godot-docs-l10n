@@ -7,9 +7,9 @@ AudioEffectEQ21
 
 **Успадковує:** :ref:`AudioEffectEQ<class_AudioEffectEQ>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Додає 21-смуговий звуковий ефект еквалайзера до звукової шини. Дозволяє контролювати частоти від 22 Гц до 22000 Гц.
+Adds a 21-band equalizer audio effect to an audio bus.
 
- Кожну частоту можна модулювати між -60/+24 дБ.
+Gives you control over frequencies from 22 Hz to 22000 Hz. Each frequency can be modulated between -60/+24 dB.
 
 .. rst-class:: classref-introduction-group
 
@@ -68,6 +68,8 @@ AudioEffectEQ21
 ------------------
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

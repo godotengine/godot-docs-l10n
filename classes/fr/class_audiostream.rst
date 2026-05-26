@@ -16,7 +16,7 @@ Classe de base pour les flux audio.
 Description
 -----------
 
-Classe de base pour les flux audio. Les flux audio sont utilisés pour les effets sonores et la lecture de musique, et supportent les formats de fichiers WAV (via :ref:`AudioStreamWAV<class_AudioStreamWAV>`) et Ogg (via :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`).
+Base class for audio streams. Audio streams are used for sound effects and music playback, and support WAV (via :ref:`AudioStreamWAV<class_AudioStreamWAV>`), Ogg (via :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`), and MP3 (via :ref:`AudioStreamMP3<class_AudioStreamMP3>`) file formats.
 
 .. rst-class:: classref-introduction-group
 

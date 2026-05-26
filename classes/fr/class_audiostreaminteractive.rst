@@ -18,6 +18,13 @@ C'est un flux audio qui peut jouer de la musique de manière interactive, en com
 
 La façon dont cela est utilisé est de remplir un certain nombre de clips, puis de configurer la table de transition. De là, les clips sont sélectionnés pour la lecture et la musique passera en douceur du clip courant au nouveau tout en utilisant la règle de transition correspondante définie dans la table de transition.
 
+.. rst-class:: classref-introduction-group
+
+Tutoriels
+------------------
+
+- :doc:`Flux audio <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 Propriétés
@@ -152,6 +159,14 @@ Transitionne à la même position dans le clip de destination. Ceci est utile lo
 :ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_START** = ``1``
 
 Transitionne au début du clip de destination.
+
+.. _class_AudioStreamInteractive_constant_TRANSITION_TO_TIME_PREVIOUS_POSITION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_PREVIOUS_POSITION** = ``2``
+
+Transition to the last played position in the destination clip, if there was a previous transition from that clip. Otherwise, plays from the start of the destination clip.
 
 .. rst-class:: classref-item-separator
 

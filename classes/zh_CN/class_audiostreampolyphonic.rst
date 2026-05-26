@@ -18,6 +18,13 @@ AudioStream 允许用户随时通过代码，同时使用单个播放器播放�
 
 播放控制是通过播放器内部设置的 :ref:`AudioStreamPlaybackPolyphonic<class_AudioStreamPlaybackPolyphonic>` 实例完成的，可以通过 :ref:`AudioStreamPlayer.get_stream_playback()<class_AudioStreamPlayer_method_get_stream_playback>`\ 、\ :ref:`AudioStreamPlayer2D.get_stream_playback()<class_AudioStreamPlayer2D_method_get_stream_playback>` 或 :ref:`AudioStreamPlayer3D.get_stream_playback()<class_AudioStreamPlayer3D_method_get_stream_playback>` 方法获取该实例。只有在这些播放器中将 ``stream`` 属性设置为 **AudioStreamPolyphonic** 后，才能获取该播放实例。
 
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`音频流 <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 属性

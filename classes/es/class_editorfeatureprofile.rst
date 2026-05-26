@@ -87,7 +87,7 @@ La pestaña Script, que contiene el editor de scripts y el navegador de referenc
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_ASSET_LIB** = ``2``
 
-La pestaña Librería de Assets. Si esta característica está deshabilitada, la pestaña Librería de Assets no se mostrará.
+The Asset Store tab. If this feature is disabled, the Asset Store tab won't display.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SCENE_TREE:
 

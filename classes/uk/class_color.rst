@@ -12,17 +12,19 @@ Color
 Опис
 --------
 
-Колір, представлений у форматі RGBA червоним (:ref:`r<class_Color_property_r>`), зеленим (:ref:`g<class_Color_property_g>`), синім (:ref:`b<class_Color_property_b>`) та альфа-компонентом (:ref:`a<class_Color_property_a>`). Кожен компонент є 32-бітним значенням з плаваючою комою, зазвичай у діапазоні від ``0.0`` до ``1.0``. Деякі властивості (такі як :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`) можуть підтримувати значення більше, ніж ``1.0``, для надто яскравих або HDR (розширений динамічний діапазон) кольорів.
+A color represented in RGBA format by a red (:ref:`r<class_Color_property_r>`), green (:ref:`g<class_Color_property_g>`), blue (:ref:`b<class_Color_property_b>`), and alpha (:ref:`a<class_Color_property_a>`) component. Each component is a 32-bit floating-point value, usually ranging from ``0.0`` to ``1.0``. Some properties (such as :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`) may support values greater than ``1.0``, for overbright or HDR (High Dynamic Range) colors.
 
-Кольори можна створювати кількома способами: за допомогою різних конструкторів **Color**, статичних методів, таких як :ref:`from_hsv()<class_Color_method_from_hsv>`, та використовуючи назву з набору стандартизованих кольорів на основі `назв кольорів X11 <https://en.wikipedia.org/wiki/X11_color_names>`__ з додаванням ``константи TRANSPARENT``.
+Colors can be created in a number of ways: By the various **Color** constructors, by static methods such as :ref:`from_hsv()<class_Color_method_from_hsv>`, and by using a name from the set of standardized colors based on `X11 color names <https://en.wikipedia.org/wiki/X11_color_names>`__ with the addition of :ref:`TRANSPARENT<class_Color_constant_TRANSPARENT>`.
 
- `Шпаргалка з колірних констант <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/color_constants.png>`__\ 
+\ `Color constants cheatsheet <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/color_constants.png>`__\ 
 
-Хоча **Color** може використовуватися для зберігання значень будь-якого кодування, Godot очікує, що властивості червоного (:ref:`r<class_Color_property_r>`), зеленого (:ref:`g<class_Color_property_g>`) та синього (:ref:`b<class_Color_property_b>`) кольору **Color** будуть закодовані за допомогою `нелінійної передавальної функції sRGB <https://en.wikipedia.org/wiki/SRGB#Transfer_function_(%22gamma%22)>`__, якщо не зазначено інше. Це колірне кодування використовується багатьма традиційними художніми та веб-інструментами, що спрощує зіставлення кольорів між Godot та цими інструментами. Godot використовує основні кольори `Rec. ITU-R BT.709 <https://en.wikipedia.org/wiki/Rec._709>`__, які використовуються стандартом sRGB.
+Although **Color** may be used to store values of any encoding, the red (:ref:`r<class_Color_property_r>`), green (:ref:`g<class_Color_property_g>`), and blue (:ref:`b<class_Color_property_b>`) properties of **Color** are expected by Godot to be encoded using the `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB#Transfer_function_(%22gamma%22)>`__ unless otherwise stated. This color encoding is used by many traditional art and web tools, making it easy to match colors between Godot and these tools. Godot uses `Rec. ITU-R BT.709 <https://en.wikipedia.org/wiki/Rec._709>`__ color primaries, which are used by the sRGB standard.
 
- Усі фізичні симуляції, такі як розрахунки освітлення та колориметричні перетворення, такі як :ref:`get_luminance()<class_Color_method_get_luminance>`, повинні виконуватися на лінійно закодованих значеннях для отримання правильних результатів. Під час виконання цих обчислень конвертуйте **Color** в лінійне кодування та з лінійного за допомогою :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` та ``метод linear_to_srgb``.
+All physical simulation, such as lighting calculations, and colorimetry transformations, such as :ref:`get_luminance()<class_Color_method_get_luminance>`, must be performed on linearly encoded values to produce correct results. When performing these calculations, convert **Color** to and from linear encoding using :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` and :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>`.
 
-\ **Примітка:** У логічному контексті Color буде оцінюватися як ``false``, якщо він дорівнює ``Color(0, 0, 0, 1)`` (непрозорий чорний). В іншому випадку Color завжди буде оцінюватися як ``true``.
+\ **Note:** In a boolean context, a Color will evaluate to ``false`` if it is equal to ``Color(0, 0, 0, 1)`` (opaque black). Otherwise, a Color will always evaluate to ``true``.
+
+\ **Note:** In C#, color constants are defined in the ``Colors`` static class instead of ``Color``. Additionally, named colors use ``PascalCase`` syntax instead of ``UPPER_SNAKE_CASE``. For example, ``Color.ALICE_BLUE`` in GDScript is ``Colors.AliceBlue`` in C#.
 
 .. note::
 

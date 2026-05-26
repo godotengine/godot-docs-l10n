@@ -14,11 +14,11 @@ CameraServer
 描述
 ----
 
-**CameraServer** 记录了 Godot 中可访问的不同相机。此处的相机指外部相机，例如网络摄像头或手机上的摄像头。
+The **CameraServer** keeps track of different cameras accessible in Godot. These are external cameras such as webcams or the cameras on your phone.
 
-主要用于为 AR 模块提供来自相机的视频源。
+It is notably used to provide AR modules with a video feed from the camera.
 
-\ **注意：**\ 这个类目前只在 Linux、Android、macOS 和 iOS 上实现。在其他平台上没有可用的 :ref:`CameraFeed<class_CameraFeed>`\ 。在 iOS 上获取 :ref:`CameraFeed<class_CameraFeed>` 需要 `godot-ios-plugins <https://github.com/godotengine/godot-ios-plugins>`__ 中的相机插件。
+\ **Note:** This class is currently only implemented on Linux, Android, macOS, and iOS. On other platforms no :ref:`CameraFeed<class_CameraFeed>`\ s will be available. To get a :ref:`CameraFeed<class_CameraFeed>` on iOS, enable :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`.
 
 .. rst-class:: classref-reftable-group
 

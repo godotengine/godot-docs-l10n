@@ -14,13 +14,13 @@ AudioEffectRecord
 Описание
 ----------------
 
-Позволяет пользователю записывать звук с аудиошины в :ref:`AudioStreamWAV<class_AudioStreamWAV>`. При использовании на аудиошине «Master» это включает весь аудиовыход Godot.
+Allows the user to record the sound from an audio bus into an :ref:`AudioStreamWAV<class_AudioStreamWAV>`. When used on the Master audio bus, this includes all audio output by Godot.
 
-В отличие от :ref:`AudioEffectCapture<class_AudioEffectCapture>`, этот эффект кодирует запись в заданном формате (8-битный, 16-битный или сжатый) вместо предоставления доступа к необработанным аудиосэмплам.
+Unlike :ref:`AudioEffectCapture<class_AudioEffectCapture>`, this effect encodes the recording with the given format (8-bit, 16-bit, or compressed) instead of giving access to the raw audio samples.
 
-Может использоваться (с :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`) для записи с микрофона.
+Can be used (with an :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`) to record from a microphone.
 
-\ **Примечание:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` должен быть ``true`` для работы аудиовхода. См. также описание этого параметра для предостережений, связанных с разрешениями и настройками конфиденциальности операционной системы.
+\ **Note:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` must be ``true`` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
 
 .. rst-class:: classref-introduction-group
 

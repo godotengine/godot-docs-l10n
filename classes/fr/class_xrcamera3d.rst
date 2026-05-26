@@ -7,16 +7,18 @@ XRCamera3D
 
 **Hérite de :** :ref:`Camera3D<class_Camera3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Un nœud de caméra avec quelques dérogations pour AR / VR appliquée, comme le suivi de localisation.
+A camera node which automatically positions itself based on XR tracking data.
 
 .. rst-class:: classref-introduction-group
 
 Description
 -----------
 
-Ceci est un nœud 3D d'aide pour notre caméra. Notez que, si le rendu stéréoscopique est applicable (VR-HMD), la plupart des propriétés de la caméra sont ignorées, car l'information du HMD les redéfinit. Les seules propriétés qui peuvent être fiables sont les plans de coupe proche et lointain.
+A camera node which automatically positions itself based on XR tracking data.
 
-La position et l'orientation de ce nœud sont automatiquement mises à jour par le serveur XR pour représenter l'emplacement du HMD si ce suivi est disponible et peut donc être utilisé par la logique du jeu. Notez que, contrairement au XRController3D, le fil d'exécution de rendu a accès aux données de suivi les plus récentes du HMD et donc l'emplacement de la XRCamera3D peut être à la traîne de quelques millisecondes derrière ce qui est utilisé pour le rendu.
+In contrast to :ref:`XRController3D<class_XRController3D>`, the render thread has access to more up-to-date tracking data, and the location of the **XRCamera3D** node can lag a few milliseconds behind what is used for rendering.
+
+\ **Note:** If :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` is ``true``, most of the camera properties are overridden by the active :ref:`XRInterface<class_XRInterface>`. The only properties that can be trusted are the near and far planes.
 
 .. rst-class:: classref-introduction-group
 

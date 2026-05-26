@@ -180,11 +180,19 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 Вычислительный шейдер, который запускается для каждого фрокселя карты объемного тумана.
 
+.. _class_VisualShader_constant_TYPE_TEXTURE_BLIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Type<enum_VisualShader_Type>` **TYPE_TEXTURE_BLIT** = ``10``
+
+A shader used to process blit calls to a DrawableTexture.
+
 .. _class_VisualShader_constant_TYPE_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Type<enum_VisualShader_Type>` **TYPE_MAX** = ``10``
+:ref:`Type<enum_VisualShader_Type>` **TYPE_MAX** = ``11``
 
 Представляет размер перечисления :ref:`Type<enum_VisualShader_Type>`.
 

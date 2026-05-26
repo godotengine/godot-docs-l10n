@@ -12,11 +12,13 @@ Une matrice 4×4 pour les transformations projectives 3D.
 Description
 -----------
 
-Une matrice 4×4 utilisée pour les transformations projectives 3D. Elle peut représenter des transformations telles que la translation, la rotation, l'échelle, le cisaillement et la division de perspective. Elle se compose de quatre colonnes :ref:`Vector4<class_Vector4>`.
+A 4×4 matrix used for 3D projective transformations. It can represent transformations such as translation, rotation, scaling, shearing, and perspective division. It consists of four :ref:`Vector4<class_Vector4>` columns.
 
-Pour des transformations purement linéaires (translation, rotation et échelle), il est recommandé d'utiliser :ref:`Transform3D<class_Transform3D>`, car il est plus performant et nécessite moins de mémoire.
+For purely linear transformations (translation, rotation, and scale), it is recommended to use :ref:`Transform3D<class_Transform3D>`, as it is more performant and requires less memory.
 
-Utilisé de manière interne comme matrice de projection pour :ref:`Camera3D<class_Camera3D>`.
+Used internally as :ref:`Camera3D<class_Camera3D>`'s projection matrix.
+
+\ **Note:** In a boolean context, a projection will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Projection_constant_IDENTITY>`. Otherwise, a projection will always evaluate to ``true``.
 
 .. note::
 

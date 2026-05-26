@@ -12,48 +12,50 @@ Una estructura de datos incorporada que contiene una secuencia de elementos.
 Descripción
 ----------------------
 
-Una estructura de datos de tipo arreglo que puede contener una secuencia de elementos de cualquier tipo :ref:`Variant<class_Variant>` de forma predeterminada. Opcionalmente, los valores pueden restringirse a un tipo específico creando un *arreglo tipado*. Se accede a los elementos mediante un índice numérico que comienza en ``0``. Los índices negativos se utilizan para contar desde el final (``-1`` es el último elemento, ``-2`` es el penúltimo, etc.).
+An array data structure that can contain a sequence of elements of any :ref:`Variant<class_Variant>` type by default. Values can optionally be constrained to a specific type by creating a *typed array*. Elements are accessed by a numerical index starting at ``0``. Negative indices are used to count from the back (``-1`` is the last element, ``-2`` is the second to last, etc.).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var array = ["Primero", 2, 3, "Ultimo"]
-    print(array[0]) # Imprime "Primero"
-    print(array[2]) # Imprime 3
-    print(array[-1]) # Imprime "Ultimo"
+    var array = ["First", 2, 3, "Last"]
+    print(array[0])  # Prints "First"
+    print(array[2])  # Prints 3
+    print(array[-1]) # Prints "Last"
 
-    array[1] = "Segundo"
-    print(array[1]) # Imprime "Segundo"
-    print(array[-3]) # Imprime "Segundo"
+    array[1] = "Second"
+    print(array[1])  # Prints "Second"
+    print(array[-3]) # Prints "Second"
 
-    # Este arreglo tipado solo puede contener enteros.
-    # Intentar agregar un valor de otro tipo provocará un error.
+    # This typed array can only contain integers.
+    # Attempting to add any other type will result in an error.
     var typed_array: Array[int] = [1, 2, 3]
 
  .. code-tab:: csharp
 
-    Godot.Collections.Array array = ["Primero", 2, 3, "Ultimo"];
-    GD.Print(array[0]); // Imprime "Primero"
-    GD.Print(array[2]); // Imprime 3
-    GD.Print(array[^1]); // Imprime "Ultimo"
+    Godot.Collections.Array array = ["First", 2, 3, "Last"];
+    GD.Print(array[0]); // Prints "First"
+    GD.Print(array[2]); // Prints 3
+    GD.Print(array[^1]); // Prints "Last"
 
-    array[1] = "Segundo";
-    GD.Print(array[1]); // Imprime "Segundo"
-    GD.Print(array[^3]); // Imprime "Segundo"
+    array[1] = "Second";
+    GD.Print(array[1]); // Prints "Second"
+    GD.Print(array[^3]); // Prints "Second"
 
-    // Este arreglo tipado solo puede contener enteros.
-    // Intentar agregar un valor de otro tipo provocará un error.
+    // This typed array can only contain integers.
+    // Attempting to add any other type will result in an error.
     Godot.Collections.Array<int> typedArray = [1, 2, 3];
 
 
 
-\ **Nota:** Los arreglos siempre se pasan por **referencia**. Para obtener una copia de un arreglo que pueda modificarse independientemente del original, use :ref:`duplicate()<class_Array_method_duplicate>`.
+\ **Note:** Arrays are always passed by **reference**. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_Array_method_duplicate>`.
 
-\ **Nota:** **No** está soportado eliminar elementos mientras se itera sobre arreglos, y hacerlo dará como resultado un comportamiento impredecible.
+\ **Note:** Erasing elements while iterating over arrays is **not** supported and will result in unpredictable behavior.
 
-\ **Diferencias entre arreglos empaquetados, tipados y no tipados:** Los arreglos empaquetados suelen ser más rápidos de iterar y modificar que un arreglo tipado del mismo tipo (por ejemplo, :ref:`PackedInt64Array<class_PackedInt64Array>` frente a ``Array[int]``). Además, los arreglos empaquetados consumen menos memoria. Como desventaja, son menos flexibles, ya que no ofrecen tantos métodos de conveniencia como :ref:`map()<class_Array_method_map>`. A su vez, los arreglos tipados son más rápidos de iterar y modificar que los arreglos no tipados.
+\ **Note:** In a boolean context, an array will evaluate to ``false`` if it's empty (``[]``). Otherwise, an array will always evaluate to ``true``.
+
+\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. :ref:`PackedInt64Array<class_PackedInt64Array>` versus ``Array[int]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
 
 .. note::
 
@@ -788,11 +790,11 @@ Devuelve el índice de la **primera** aparición de ``what`` en este arreglo, o 
 
 :ref:`int<class_int>` **find_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
 
-Devuelve el índice del **primer** elemento del arreglo que hace que ``method`` devuelva ``true``, o ``-1`` si no existe ninguno. El inicio de la búsqueda puede especificarse con ``from``, continuando hasta el final del arreglo.
+Returns the index of the **first** element in the array that causes ``method`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
 
-\ ``method`` es un callable que recibe un elemento del arreglo y devuelve un :ref:`bool<class_bool>`.
+\ ``method`` is a callable that takes an element of the array, and returns a :ref:`bool<class_bool>`.
 
-\ **Nota:** Si solo desea comprobar si el arreglo contiene *algún* elemento que satisfaga ``method``, utilice :ref:`any()<class_Array_method_any>`.
+\ **Note:** If you just want to know whether the array contains *anything* that satisfies ``method``, use :ref:`any()<class_Array_method_any>`.
 
 
 .. tabs::
@@ -803,7 +805,14 @@ Devuelve el índice del **primer** elemento del arreglo que hace que ``method`` 
         return number % 2 == 0
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_even.bind())) # Imprime 2
+        print([1, 3, 4, 7].find_custom(is_even.bind())) # Prints 2
+
+    # Another example using `bind()` to pass an additional parameter:
+    func is_specific_number(number, expected):
+        return number == expected
+
+    func _ready():
+        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # Prints 2
 
 
 

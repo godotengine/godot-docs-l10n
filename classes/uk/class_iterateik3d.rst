@@ -16,9 +16,11 @@ IterateIK3D
 Опис
 --------
 
-Базовий клас :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` для досягнення мети шляхом повторення невеликих обертань.
+Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to approach the goal by repeating small rotations.
 
-Кожен ланцюг кісток (налаштування) має один ефектор, який обробляється в порядку списку налаштувань. Ви можете встановити деякі обмеження для кожного суглоба.
+Each bone chain (setting) has one effector, which is processed in order of the setting list. You can set some limitations for each joint.
+
+\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/target_node``).
 
 .. rst-class:: classref-reftable-group
 
@@ -225,13 +227,15 @@ IterateIK3D
 
 :ref:`Quaternion<class_Quaternion>` **get_joint_limitation_rotation_offset**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation_rotation_offset>`
 
-Повертає зміщення обертання обмеження суглоба в ``joint`` у списку суглобів ланцюжка кісток.
+Returns the joint limitation rotation offset at ``joint`` in the bone chain's joint list.
 
-Обертання виконується в локальному просторі, який утворюється напрямком кістки (загалом від батьківського елемента до дочірнього) як віссю +Y та методом :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` як віссю +X.
+Rotation is done in the local space which is constructed by the bone direction (in general parent to child) as the +Y axis and :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` as the +X axis.
 
-Якщо осі +X та +Y не ортогональні, вісь +X неявно змінюється, щоб зробити її ортогональною.
+If the +X and +Y axes are not orthogonal, the +X axis is implicitly modified to make it orthogonal.
 
-Також, якщо довжина методу :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` дорівнює нулю, простір створюється шляхом обертання залишку кістки за допомогою найкоротшої дуги, яка обертає вісь +Y залишку кістки, щоб він відповідав напрямку кістки.
+Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` is zero, the space is created by rotating the reference pose using the shortest arc that rotates the +Y axis of the reference pose to match the bone direction.
+
+In here, the reference pose is the bone pose immediately before processing IK.
 
 .. rst-class:: classref-item-separator
 
@@ -317,13 +321,15 @@ IterateIK3D
 
 |void| **set_joint_limitation_rotation_offset**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, offset\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation_rotation_offset>`
 
-Встановлює зміщення обертання обмеження суглоба в ``joint`` у списку суглобів ланцюжка кісток.
+Sets the joint limitation rotation offset at ``joint`` in the bone chain's joint list.
 
-Обертання виконується в локальному просторі, який утворюється напрямком кістки (загалом від батьківського елемента до дочірнього) як віссю +Y та методом :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` як віссю +X.
+Rotation is done in the local space which is constructed by the bone direction (in general parent to child) as the +Y axis and :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` as the +X axis.
 
-Якщо осі +X та +Y не ортогональні, вісь +X неявно змінюється, щоб зробити її ортогональною.
+If the +X and +Y axes are not orthogonal, the +X axis is implicitly modified to make it orthogonal.
 
-Також, якщо довжина методу :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` дорівнює нулю, простір створюється шляхом обертання залишку кістки за допомогою найкоротшої дуги, яка обертає вісь +Y залишку кістки, щоб він відповідав напрямку кістки.
+Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` is zero, the space is created by rotating the reference pose using the shortest arc that rotates the +Y axis of the reference pose to match the bone direction.
+
+In here, the reference pose is the bone pose immediately before processing IK.
 
 .. rst-class:: classref-item-separator
 
@@ -335,11 +341,13 @@ IterateIK3D
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_rotation_axis>`
 
-Встановлює вісь обертання в ``joint`` у списку з'єднань ланцюжка кісток.
+Sets the rotation axis at ``joint`` in the bone chain's joint list.
 
-Осі базуються на просторі :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`. Якщо ``axis`` має значення :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, можна вказати будь-яку вісь.
+The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
 
-\ **Примітка:** Вісь обертання та вектор руху вперед не повинні бути колінеарними, щоб уникнути ненавмисного обертання, оскільки :ref:`ChainIK3D<class_ChainIK3D>` не враховує сили скручування.
+In here, the reference pose is the bone pose immediately before processing IK.
+
+\ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since :ref:`ChainIK3D<class_ChainIK3D>` does not factor in twisting forces.
 
 .. rst-class:: classref-item-separator
 

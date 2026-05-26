@@ -12,7 +12,7 @@ Array
 Опис
 --------
 
-Масив даних, який за замовчуванням може містити послідовність елементів будь-якого типу :ref:`Variant<class_Variant>`. Значення можна обмежити певним типом, створивши *типізований масив*. Доступ до елементів здійснюється за допомогою числового індексу, що починається з ``0``. Негативні індекси використовуються для підрахунку з кінця (``-1`` — останній елемент, ``-2`` — передостанній тощо).
+An array data structure that can contain a sequence of elements of any :ref:`Variant<class_Variant>` type by default. Values can optionally be constrained to a specific type by creating a *typed array*. Elements are accessed by a numerical index starting at ``0``. Negative indices are used to count from the back (``-1`` is the last element, ``-2`` is the second to last, etc.).
 
 
 .. tabs::
@@ -20,40 +20,42 @@ Array
  .. code-tab:: gdscript
 
     var array = ["First", 2, 3, "Last"]
-    print(array[0])  # Виводить «First»
-    print(array[2])  # Виводить 3
-    print(array[-1]) # Виводить «Last»
+    print(array[0])  # Prints "First"
+    print(array[2])  # Prints 3
+    print(array[-1]) # Prints "Last"
 
-    array[1] = «Second»
-    print(array[1])  # Виводить «Second»
-    print(array[-3]) # Виводить «Second»
+    array[1] = "Second"
+    print(array[1])  # Prints "Second"
+    print(array[-3]) # Prints "Second"
 
-    # Цей типізований масив може містити тільки цілі числа.
-    # Спроба додати будь-який інший тип призведе до помилки.
+    # This typed array can only contain integers.
+    # Attempting to add any other type will result in an error.
     var typed_array: Array[int] = [1, 2, 3]
 
  .. code-tab:: csharp
 
     Godot.Collections.Array array = ["First", 2, 3, "Last"];
-    GD.Print(array[0]); // Виводить "Перший"
-    GD.Print(array[2]); // Виводить 3
-    GD.Print(array[^1]); // Виводить "Останній"
+    GD.Print(array[0]); // Prints "First"
+    GD.Print(array[2]); // Prints 3
+    GD.Print(array[^1]); // Prints "Last"
 
-    array[1] = "Другий";
-    GD.Print(array[1]); // Виводить "Second"
-    GD.Print(array[^3]); // Виводить "Second"
+    array[1] = "Second";
+    GD.Print(array[1]); // Prints "Second"
+    GD.Print(array[^3]); // Prints "Second"
 
-    // Цей типізований масив може містити тільки цілі числа.
-    // Спроба додати будь-який інший тип призведе до помилки.
+    // This typed array can only contain integers.
+    // Attempting to add any other type will result in an error.
     Godot.Collections.Array<int> typedArray = [1, 2, 3];
 
 
 
-\ **Примітка:** Масиви завжди передаються за **посиланням**. Щоб отримати копію масиву, яку можна модифікувати незалежно від оригінального масиву, використовуйте ``метод duplicate``.
+\ **Note:** Arrays are always passed by **reference**. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_Array_method_duplicate>`.
 
-\ **Примітка:** Видалення елементів під час ітерації масивів **не** підтримується і призведе до непередбачуваної поведінки.
+\ **Note:** Erasing elements while iterating over arrays is **not** supported and will result in unpredictable behavior.
 
-\ **Відмінності між упакованими масивами, типізованими масивами та нетипізованими масивами:** Упаковані масиви, як правило, швидше ітераються та модифікуються порівняно з типізованими масивами того ж типу (наприклад, :ref:`PackedInt64Array<class_PackedInt64Array>` проти ``Array[int]``). Крім того, упаковані масиви споживають менше пам'яті. Недоліком упакованих масивів є менша гнучкість, оскільки вони не пропонують стільки зручних методів, як :ref:`map()<class_Array_method_map>`. Типізовані масиви, в свою чергу, швидше ітеруються та модифікуються, ніж нетипізовані масиви.
+\ **Note:** In a boolean context, an array will evaluate to ``false`` if it's empty (``[]``). Otherwise, an array will always evaluate to ``true``.
+
+\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. :ref:`PackedInt64Array<class_PackedInt64Array>` versus ``Array[int]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
 
 .. note::
 
@@ -788,22 +790,29 @@ Array
 
 :ref:`int<class_int>` **find_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
 
-Повертає індекс **першого** елемента в масиві, який змушує ``method`` повертати ``true`` або ``-1``, якщо їх немає. Початок пошуку можна вказати за допомогою ``from``, продовжуючи до кінця масиву. 
+Returns the index of the **first** element in the array that causes ``method`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
 
-\ ``method`` — це виклик, який приймає елемент масиву та повертає :ref:`bool<class_bool>`. 
+\ ``method`` is a callable that takes an element of the array, and returns a :ref:`bool<class_bool>`.
 
-\ **Примітка:** Якщо ви просто хочете знати, чи містить масив *щось*, що задовольняє ``method``, використовуйте :ref:`any()<class_Array_method_any>`. 
+\ **Note:** If you just want to know whether the array contains *anything* that satisfies ``method``, use :ref:`any()<class_Array_method_any>`.
 
 
-.. tabs:: 
+.. tabs::
 
  .. code-tab:: gdscript
- 
-    func is_even(число): 
-        return number% 2 == 0 
 
-    func _ready(): 
-        print([1, 3, 4, 7].find_custom(is_even.bind())) # Виводить 2  
+    func is_even(number):
+        return number % 2 == 0
+
+    func _ready():
+        print([1, 3, 4, 7].find_custom(is_even.bind())) # Prints 2
+
+    # Another example using `bind()` to pass an additional parameter:
+    func is_specific_number(number, expected):
+        return number == expected
+
+    func _ready():
+        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # Prints 2
 
 
 

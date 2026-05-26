@@ -26,9 +26,9 @@ OptimizedTranslation
 .. table::
    :widths: auto
 
-   +--------+-----------------------------------------------------------------------------------------------------------------+
-   | |void| | :ref:`generate<class_OptimizedTranslation_method_generate>`\ (\ from\: :ref:`Translation<class_Translation>`\ ) |
-   +--------+-----------------------------------------------------------------------------------------------------------------+
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`generate<class_OptimizedTranslation_method_generate>`\ (\ from\: :ref:`Translation<class_Translation>`\ ) |
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -43,13 +43,13 @@ OptimizedTranslation
 
 .. rst-class:: classref-method
 
-|void| **generate**\ (\ from\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_OptimizedTranslation_method_generate>`
+:ref:`bool<class_bool>` **generate**\ (\ from\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_OptimizedTranslation_method_generate>`
 
-Генерирует и устанавливает оптимизированный перевод на основе заданного ресурса :ref:`Translation<class_Translation>`.
+Generates and sets an optimized translation from the given :ref:`Translation<class_Translation>` resource. Returns ``true`` if successful.
 
-\ **Примечание:** В сообщениях в ``from`` не следует использовать контекст или множественное число.
+\ **Note:** Messages in ``from`` should not use context or plural forms.
 
-\ **Примечание:** Этот метод предназначен для использования в редакторе. Он ничего не делает при вызове из экспортированного проекта.
+\ **Note:** This method is intended to be used in the editor. It does nothing when called from an exported project.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

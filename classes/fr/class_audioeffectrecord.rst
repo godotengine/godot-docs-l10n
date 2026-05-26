@@ -14,13 +14,13 @@ L'effet audio utilisé pour l'enregistrement des sons venants d'un bus audio.
 Description
 -----------
 
-Permet à l'utilisateur d'enregistrer le son d'un bus audio dans un :ref:`AudioStreamWAV<class_AudioStreamWAV>`. Lorsqu'il est utilisé sur le bus audio « Master », cela inclut toutes les sorties audio de Godot.
+Allows the user to record the sound from an audio bus into an :ref:`AudioStreamWAV<class_AudioStreamWAV>`. When used on the Master audio bus, this includes all audio output by Godot.
 
-Contrairement à :ref:`AudioEffectCapture<class_AudioEffectCapture>`, cet effet encode l'enregistrement au format donné (8-bit, 16-bit ou compressé) au lieu de donner accès aux échantillons audio bruts.
+Unlike :ref:`AudioEffectCapture<class_AudioEffectCapture>`, this effect encodes the recording with the given format (8-bit, 16-bit, or compressed) instead of giving access to the raw audio samples.
 
-Peut être utilisé (avec un :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`) pour enregistrer à partir d'un microphone.
+Can be used (with an :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`) to record from a microphone.
 
-\ **Note :** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` doit être ``true`` pour que l'entrée audio marche. Voir aussi la description de ce paramètre pour les avertissements liés aux autorisations et aux paramètres de confidentialité du système d'exploitation.
+\ **Note:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` must be ``true`` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
 
 .. rst-class:: classref-introduction-group
 

@@ -134,6 +134,8 @@ Tree
    +-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                             | :ref:`get_column_width<class_Tree_method_get_column_width>`\ (\ column\: :ref:`int<class_int>`\ ) |const|                                                                                                  |
    +-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`RID<class_RID>`                                             | :ref:`get_custom_drawing_canvas_item<class_Tree_method_get_custom_drawing_canvas_item>`\ (\ ) |const|                                                                                                      |
+   +-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Rect2<class_Rect2>`                                         | :ref:`get_custom_popup_rect<class_Tree_method_get_custom_popup_rect>`\ (\ ) |const|                                                                                                                        |
    +-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                             | :ref:`get_drop_section_at_position<class_Tree_method_get_drop_section_at_position>`\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const|                                                                |
@@ -197,6 +199,8 @@ Tree
    | :ref:`Color<class_Color>`         | :ref:`children_hl_line_color<class_Tree_theme_color_children_hl_line_color>`             | ``Color(0.27, 0.27, 0.27, 1)``      |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`Color<class_Color>`         | :ref:`custom_button_font_highlight<class_Tree_theme_color_custom_button_font_highlight>` | ``Color(0.95, 0.95, 0.95, 1)``      |
+   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`drop_on_item_color<class_Tree_theme_color_drop_on_item_color>`                     | ``Color(1, 1, 1, 1)``               |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`Color<class_Color>`         | :ref:`drop_position_color<class_Tree_theme_color_drop_position_color>`                   | ``Color(1, 1, 1, 1)``               |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
@@ -766,7 +770,9 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 - |void| **set_columns**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_columns**\ (\ )
 
-列数。
+The number of columns.
+
+Prints an error and does not allow setting the columns during mouse selection.
 
 .. rst-class:: classref-item-separator
 
@@ -955,7 +961,9 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 
 |void| **clear**\ (\ ) :ref:`🔗<class_Tree_method_clear>`
 
-清除树。这将删除所有项目。
+Clears the tree. This removes all items.
+
+Prints an error and does not allow clearing the tree if called during mouse selection.
 
 .. rst-class:: classref-item-separator
 
@@ -967,11 +975,13 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 
 :ref:`TreeItem<class_TreeItem>` **create_item**\ (\ parent\: :ref:`TreeItem<class_TreeItem>` = null, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_Tree_method_create_item>`
 
-在树中创建一个项，并将其添加为父项 ``parent`` 的子项，该父项可以是一个有效的 :ref:`TreeItem<class_TreeItem>` 或 ``null``\ 。
+Creates an item in the tree and adds it as a child of ``parent``, which can be either a valid :ref:`TreeItem<class_TreeItem>` or ``null``.
 
-如果 ``parent`` 为 ``null``\ ，则根项将是父项；或者如果该树为空，则该新项将是根本身。
+If ``parent`` is ``null``, the root item will be the parent, or the new item will be the root itself if the tree is empty.
 
-新项将是父项的第 ``index`` 个子项，如果没有足够的同级项，它将是最后一个子项。
+The new item will be the ``index``-th child of parent, or it will be the last child if there are not enough siblings.
+
+Prints an error and returns ``null`` if called during mouse selection, or if the ``parent`` does not belong to this tree.
 
 .. rst-class:: classref-item-separator
 
@@ -1124,6 +1134,20 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 :ref:`int<class_int>` **get_column_width**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Tree_method_get_column_width>`
 
 返回列的宽度，单位是像素。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Tree_method_get_custom_drawing_canvas_item:
+
+.. rst-class:: classref-method
+
+:ref:`RID<class_RID>` **get_custom_drawing_canvas_item**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_custom_drawing_canvas_item>`
+
+Returns the internal canvas item designated for custom drawing. See :ref:`TreeItem.set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>`.
+
+\ **Note:** This canvas item clears automatically on each Tree draw call.
 
 .. rst-class:: classref-item-separator
 
@@ -1492,6 +1516,18 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 :ref:`Color<class_Color>` **custom_button_font_highlight** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_Tree_theme_color_custom_button_font_highlight>`
 
 当 :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` 模式的单元格被悬停时的文本 :ref:`Color<class_Color>` 颜色。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Tree_theme_color_drop_on_item_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **drop_on_item_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Tree_theme_color_drop_on_item_color>`
+
+:ref:`Color<class_Color>` used to draw the highlight outline when dragging items that can only be dropped "on" other items.
 
 .. rst-class:: classref-item-separator
 

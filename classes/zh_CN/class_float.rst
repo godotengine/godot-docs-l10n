@@ -12,11 +12,13 @@ float
 描述
 ----
 
-**float** 内置类型是 64 位双精度浮点数，相当于 C++ 中的 ``double``\ 。这个类型有 14 个可靠的十进制小数位精度。\ **float** 的最大值约为 ``1.79769e308``\ ，最小值约为 ``-1.79769e308``\ 。
+The **float** built-in type is a 64-bit double-precision floating-point number, equivalent to ``double`` in C++. This type has 14 reliable decimal digits of precision. The maximum value of **float** is approximately ``1.79769e308``, and the minimum is approximately ``-1.79769e308``.
 
-不过引擎中的许多方法和属性默认使用的都是 32 位单精度浮点数，相当于 C++ 中的 ``float``\ ，有 6 位可靠的十进制小数位精度。Godot 在 :ref:`Vector2<class_Vector2>` 和 :ref:`Vector3<class_Vector3>` 等数据结构中默认使用 32 位浮点数，但如果 Godot 编译时使用了 ``precision=double`` 选项，就会改为 64 位的 double。
+Many methods and properties in the engine use 32-bit single-precision floating-point numbers instead, equivalent to ``float`` in C++, which have 6 reliable decimal digits of precision. For data structures such as :ref:`Vector2<class_Vector2>` and :ref:`Vector3<class_Vector3>`, Godot uses 32-bit floating-point numbers by default, but it can be changed to use 64-bit doubles if Godot is compiled with the ``precision=double`` option.
 
-使用 **float** 类型进行的数学运算无法保证精确与稳定，经常会产生较小的误差。你通常应该使用 :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` 和 :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>` 方法来比较 **float** 值是否相等，不应该用 ``==``\ 。
+Math done using the **float** type is not guaranteed to be exact and will often result in small errors. You should usually use the :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` and :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>` methods instead of ``==`` to compare **float** values for equality.
+
+\ **Note:** In a boolean context, a **float** will evaluate to ``false`` if it's exactly equal to ``0.0``, and to ``true`` otherwise.
 
 .. rst-class:: classref-introduction-group
 

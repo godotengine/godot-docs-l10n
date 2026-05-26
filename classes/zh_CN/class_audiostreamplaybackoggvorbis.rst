@@ -7,9 +7,14 @@ AudioStreamPlaybackOggVorbis
 
 **继承：** :ref:`AudioStreamPlaybackResampled<class_AudioStreamPlaybackResampled>` **<** :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-.. container:: contribute
+Playback class used for :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`.
 
-	There is currently no description for this class. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+.. rst-class:: classref-introduction-group
+
+描述
+----
+
+Playback component of :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`. Uses :ref:`OggPacketSequencePlayback<class_OggPacketSequencePlayback>` for playback data.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -7,9 +7,9 @@ AudioEffectEQ21
 
 **Наследует:** :ref:`AudioEffectEQ<class_AudioEffectEQ>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Добавляет аудиоэффект 21-полосного эквалайзера к аудиошине. Дает вам контроль над частотами от 22 Гц до 22000 Гц.
+Adds a 21-band equalizer audio effect to an audio bus.
 
-Каждая частота может быть модулирована в диапазоне -60/+24 дБ.
+Gives you control over frequencies from 22 Hz to 22000 Hz. Each frequency can be modulated between -60/+24 dB.
 
 .. rst-class:: classref-introduction-group
 
@@ -68,6 +68,8 @@ AudioEffectEQ21
 --------------------------------------
 
 - :doc:`Аудиошины <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

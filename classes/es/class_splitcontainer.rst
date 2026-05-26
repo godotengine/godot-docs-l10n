@@ -44,6 +44,8 @@ Propiedades
    +-----------------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`int<class_int>`                                           | :ref:`drag_area_offset<class_SplitContainer_property_drag_area_offset>`                           | ``0``                   |
    +-----------------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`bool<class_bool>`                                         | :ref:`drag_nested_intersections<class_SplitContainer_property_drag_nested_intersections>`         | ``false``               |
+   +-----------------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`DraggerVisibility<enum_SplitContainer_DraggerVisibility>` | :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>`                       | ``0``                   |
    +-----------------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`bool<class_bool>`                                         | :ref:`dragging_enabled<class_SplitContainer_property_dragging_enabled>`                           | ``true``                |
@@ -284,6 +286,23 @@ Reduce el tamaño del área de arrastre y la barra divisoria :ref:`split_bar_bac
 - :ref:`int<class_int>` **get_drag_area_offset**\ (\ )
 
 Desplaza el área de arrastre en el eje del contenedor para evitar que el área de arrastre se superponga al :ref:`ScrollBar<class_ScrollBar>` u otro :ref:`Control<class_Control>` seleccionable de un nodo hijo.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_SplitContainer_property_drag_nested_intersections:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **drag_nested_intersections** = ``false`` :ref:`🔗<class_SplitContainer_property_drag_nested_intersections>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_drag_nested_intersections**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_dragging_nested_intersections**\ (\ )
+
+Adds extra draggers at the intersection of the draggers of two SplitContainers to allow dragging both at once. This must be set to ``true`` for both SplitContainers, and one needs to be a descendant of the other. They also must be orthogonal (their :ref:`vertical<class_SplitContainer_property_vertical>` are different) and the descendant must be next to at least one of the ancestor's draggers (within :ref:`minimum_grab_thickness<class_SplitContainer_theme_constant_minimum_grab_thickness>`).
 
 .. rst-class:: classref-item-separator
 

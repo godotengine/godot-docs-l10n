@@ -12,11 +12,13 @@ Un tableau compacté de :ref:`Vector2<class_Vector2>`\ s.
 Description
 -----------
 
-Un tableau spécialement conçu pour contenir des :ref:`Vector2<class_Vector2>`. Compacte les données de manière serrée, il sauve de la mémoire pour les grandes tailles de tableaux.
+An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data tightly, so it saves memory for large array sizes.
 
-\ **Différences entre les tableaux compactés, les tableaux typés et les tableaux non typés :** Les tableaux compactés sont généralement plus rapides pour itérer et modifier par rapport à un tableau typé du même type (par exemple **PackedVector2Array** contre ``Array[Vector2]``). De plus, les tableaux compactés consomment moins de mémoire. À l'inverse, les tableaux compactés sont moins flexibles car ils ne proposent pas autant de méthodes de commodité comme :ref:`Array.map()<class_Array_method_map>`. Les tableaux typés sont à leur tour plus rapides pour itérer dessus et modifier que les tableaux non typés.
+\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedVector2Array** versus ``Array[Vector2]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
 
-\ **Note :** Les tableaux compactés sont toujours passés par référence. Pour obtenir une copie d'un tableau qui peut être modifié indépendamment du tableau original, utilisez :ref:`duplicate()<class_PackedVector2Array_method_duplicate>`. Ceci n'est *pas* le cas pour les propriétés et les méthodes intégrées. Le tableau compacté renvoyé de ceux-ci est une copie, et le changer n'affectera *pas* la valeur originale. Pour mettre à jour une propriété intégrée, vous devez modifier le tableau renvoyé, puis l'affecter à nouveau à la propriété.
+\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedVector2Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+
+\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
 
 .. note::
 

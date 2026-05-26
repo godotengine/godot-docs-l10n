@@ -33,6 +33,8 @@ Métodos
    +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>` | :ref:`_has_valid_configuration<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__has_valid_configuration>`\ (\ ) |virtual| |const| |
    +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`   | :ref:`get_configuration<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_get_configuration>`\ (\ )                                         |
+   +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>` | :ref:`has_valid_configuration<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_has_valid_configuration>`\ (\ ) |const|                     |
    +-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -64,6 +66,20 @@ Devuelve un puntero (codificado como un ``int64_t``) a una estructura que contie
 :ref:`bool<class_bool>` **_has_valid_configuration**\ (\ ) |virtual| |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__has_valid_configuration>`
 
 Devuelve ``true`` si este objeto contiene una configuración válida que se puede recuperar al llamar a :ref:`_get_configuration()<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__get_configuration>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_get_configuration:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **get_configuration**\ (\ ) :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_get_configuration>`
+
+Gets a pointer to the ``XrSpatialCapabilityConfigurationBaseHeaderEXT`` struct.
+
+\ **Note:** This method is intended to be used from GDExtensions.
 
 .. rst-class:: classref-item-separator
 

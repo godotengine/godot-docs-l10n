@@ -23,6 +23,10 @@ Une instance de cette classe peut être obtenue avec :ref:`AudioServer.get_bus_e
 Tutoriels
 ------------------
 
+- :doc:`Bus audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+
 - `Démo de visualiseur de spectre audio <https://godotengine.org/asset-library/asset/2762>`__
 
 .. rst-class:: classref-reftable-group

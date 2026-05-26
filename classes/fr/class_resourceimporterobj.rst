@@ -128,9 +128,9 @@ Si ``true``, active la génération des maillages d'ombre lors de l'import. Cela
 
 :ref:`bool<class_bool>` **generate_tangents** = ``true`` :ref:`🔗<class_ResourceImporterOBJ_property_generate_tangents>`
 
-Si ``true``, génère les tangentes aux sommets en utilisant `Mikktspace <http://www.mikktspace.com/>`__ si le maillage source n'a pas de données de tangentes. Lorsque c'est possible, il est recommandé de laisser le logiciel de modélisation 3D générer des tangentes lors de l'export au lieu de compter sur cette option. Les tangentes sont requises pour l'affichage correct des normal maps et des height maps, ainsi que pour toutes les fonctionnalités de matériau/shader qui nécessitent des tangentes.
+If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the source mesh doesn't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
 
-Si vous n'avez pas besoin de fonctionnalités de matériau qui nécessitent des tangentes, désactiver cela peut réduire la taille du fichier de sortie et accélérer l'import si le fichier 3D source ne contient pas de tangentes.
+If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
 
 .. rst-class:: classref-item-separator
 

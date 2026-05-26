@@ -16,9 +16,9 @@ Button
 Описание
 ----------------
 
-**Button** — это стандартная тематическая кнопка. Она может содержать текст и значок, и она будет отображать их в соответствии с текущей :ref:`Theme<class_Theme>`.
+**Button** is the standard themed button. It can contain text and an icon, and it will display them according to the current :ref:`Theme<class_Theme>`.
 
-\ **Пример:** Создайте кнопку и подключите метод, который будет вызываться при нажатии кнопки:
+\ **Example:** Create a button and connect a method that will be called when the button is pressed:
 
 
 .. tabs::
@@ -51,9 +51,9 @@ Button
 
 
 
-См. также :ref:`BaseButton<class_BaseButton>`, который содержит общие свойства и методы, связанные с этим узлом.
+See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
 
-\ **Примечание:** Кнопки не обнаруживают сенсорный ввод и, следовательно, не поддерживают мультитач, поскольку эмуляция мыши может нажимать только одну кнопку в определенный момент времени. Используйте :ref:`TouchScreenButton<class_TouchScreenButton>` для кнопок, которые запускают игровое движение или действия.
+\ **Note:** Buttons support multitouch via touch input, allowing multiple buttons to be pressed at the same time. Otherwise, mouse input is used, limiting interaction to one button press at a time.
 
 .. rst-class:: classref-introduction-group
 

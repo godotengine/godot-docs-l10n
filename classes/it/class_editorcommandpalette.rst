@@ -41,18 +41,6 @@ I nomi dei tasti dei comandi utilizzano delimitatori barra per distinguere le se
 
 .. rst-class:: classref-reftable-group
 
-Proprietà
-------------------
-
-.. table::
-   :widths: auto
-
-   +-------------------------+-------------------+------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | dialog_hide_on_ok | ``false`` (overrides :ref:`AcceptDialog<class_AcceptDialog_property_dialog_hide_on_ok>`) |
-   +-------------------------+-------------------+------------------------------------------------------------------------------------------+
-
-.. rst-class:: classref-reftable-group
-
 Metodi
 ------------
 

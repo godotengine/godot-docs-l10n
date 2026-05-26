@@ -7,6 +7,8 @@ JSONRPC
 
 **Успадковує:** :ref:`Object<class_Object>`
 
+**Успадковано від:** :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>`
+
 Допоможець для обробки словників, які виглядають як JSONRPC документи.
 
 .. rst-class:: classref-introduction-group

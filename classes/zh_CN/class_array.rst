@@ -12,48 +12,50 @@ Array
 描述
 ----
 
-数组数据类型，默认可以包含任意 :ref:`Variant<class_Variant>` 类型元素的序列。创建\ *类型化数组*\ 可以将其中的值限制为特定的类型。可以使用从 ``0`` 开始的索引号来访问元素。可以使用负的索引号从结尾开始计数（\ ``-1`` 表示倒数第一个元素、\ ``-2`` 表示倒数第二个元素，以此类推）。
+An array data structure that can contain a sequence of elements of any :ref:`Variant<class_Variant>` type by default. Values can optionally be constrained to a specific type by creating a *typed array*. Elements are accessed by a numerical index starting at ``0``. Negative indices are used to count from the back (``-1`` is the last element, ``-2`` is the second to last, etc.).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var array = ["第一", 2, 3, "最后"]
-    print(array[0])  # 输出“第一”
-    print(array[2])  # 输出 3
-    print(array[-1]) # 输出“最后”
+    var array = ["First", 2, 3, "Last"]
+    print(array[0])  # Prints "First"
+    print(array[2])  # Prints 3
+    print(array[-1]) # Prints "Last"
 
-    array[1] = "第二"
-    print(array[1])  # 输出“第二”
-    print(array[-3]) # 输出“第二”
+    array[1] = "Second"
+    print(array[1])  # Prints "Second"
+    print(array[-3]) # Prints "Second"
 
-    # 这个类型化数组中只能包含整数。
-    # 尝试向其中添加其他类型会报错。
+    # This typed array can only contain integers.
+    # Attempting to add any other type will result in an error.
     var typed_array: Array[int] = [1, 2, 3]
 
  .. code-tab:: csharp
 
-    Godot.Collections.Array array = ["第一", 2, 3, "最后"];
-    GD.Print(array[0]); // 输出“开头”
-    GD.Print(array[2]); // 输出 3
-    GD.Print(array[^1]); // 输出“最后”
+    Godot.Collections.Array array = ["First", 2, 3, "Last"];
+    GD.Print(array[0]); // Prints "First"
+    GD.Print(array[2]); // Prints 3
+    GD.Print(array[^1]); // Prints "Last"
 
-    array[2] = "第二";
-    GD.Print(array[1]); // 输出“第二”
-    GD.Print(array[^3]); // 输出“第二”
+    array[1] = "Second";
+    GD.Print(array[1]); // Prints "Second"
+    GD.Print(array[^3]); // Prints "Second"
 
-    // 这个类型化数组中只能包含整数。
-    // 尝试向其中添加其他类型会报错。
+    // This typed array can only contain integers.
+    // Attempting to add any other type will result in an error.
     Godot.Collections.Array<int> typedArray = [1, 2, 3];
 
 
 
-\ **注意：**\ 数组始终按\ **引用**\ 传递。如果要获取数组的副本，让改动独立于原始数组，请使用 :ref:`duplicate()<class_Array_method_duplicate>`\ 。
+\ **Note:** Arrays are always passed by **reference**. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_Array_method_duplicate>`.
 
-\ **注意：**\ **不支持**\ 在遍历数组元素时擦除元素，这样做可能造成预料之外的行为。
+\ **Note:** Erasing elements while iterating over arrays is **not** supported and will result in unpredictable behavior.
 
-\ **紧缩数组、类型数组、无类型数组：**\ 紧缩数组在遍历和修改时通常比同类型的类型数组要快（例如将 :ref:`PackedInt64Array<class_PackedInt64Array>` 和 ``Array[int]`` 相比）。紧缩数组占据的内存也相对较少。但紧缩数组的缺点是不够灵活，因为没有提供 :ref:`map()<class_Array_method_map>` 之类的便捷方法。相应地，类型数组在遍历和修改时要比无类型数组要快。
+\ **Note:** In a boolean context, an array will evaluate to ``false`` if it's empty (``[]``). Otherwise, an array will always evaluate to ``true``.
+
+\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. :ref:`PackedInt64Array<class_PackedInt64Array>` versus ``Array[int]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
 
 .. note::
 
@@ -788,11 +790,11 @@ Array
 
 :ref:`int<class_int>` **find_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
 
-返回数组中使得 ``method`` 返回 ``true`` 的\ **第一个**\ 元素的索引，若元素不存在则返回 ``-1``\ 。搜索的起始位置可以由 ``from`` 指定，搜索将继续直至数组结束。
+Returns the index of the **first** element in the array that causes ``method`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
 
-\ ``method`` 是可调用对象，接受数组元素，返回的是 :ref:`bool<class_bool>`\ 。
+\ ``method`` is a callable that takes an element of the array, and returns a :ref:`bool<class_bool>`.
 
-\ **注意：**\ 如果你只想知道数组中是否包含\ *任何*\ 能够满足 ``method`` 的东西，请使用 :ref:`any()<class_Array_method_any>`\ 。
+\ **Note:** If you just want to know whether the array contains *anything* that satisfies ``method``, use :ref:`any()<class_Array_method_any>`.
 
 
 .. tabs::
@@ -803,7 +805,14 @@ Array
         return number % 2 == 0
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_even.bind())) # 输出 2
+        print([1, 3, 4, 7].find_custom(is_even.bind())) # Prints 2
+
+    # Another example using `bind()` to pass an additional parameter:
+    func is_specific_number(number, expected):
+        return number == expected
+
+    func _ready():
+        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # Prints 2
 
 
 

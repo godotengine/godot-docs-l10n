@@ -128,9 +128,9 @@ ResourceImporterOBJ
 
 :ref:`bool<class_bool>` **generate_tangents** = ``true`` :ref:`🔗<class_ResourceImporterOBJ_property_generate_tangents>`
 
-如果为 ``true``\ ，如果源网格没有切线数据，则使用 `Mikktspace <http://www.mikktspace.com/>`__ 生成顶点切线。如果可能，建议让 3D 建模软件在导出时生成切线，而不是依赖该选项。正确显示法线和高度贴图，以及任何需要切线的材质/着色器功能都需要切线。
+If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the source mesh doesn't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
 
-如果你不需要那些需要切线的材质特性，则禁用该功能可以减少输出文件大小，并在源 3D 文件不包含切线的情况下加快导入速度。
+If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
 
 .. rst-class:: classref-item-separator
 

@@ -258,9 +258,9 @@ UASTC 编码级别。值越高质量越好，但编码耗时更长。
 
 :ref:`bool<class_bool>` **editor/scale_with_editor_scale** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_editor/scale_with_editor_scale>`
 
-如果为 ``true``\ ，则缩放导入的图像以匹配 :ref:`EditorSettings.interface/editor/custom_display_scale<class_EditorSettings_property_interface/editor/custom_display_scale>`\ 。应该为编辑器插件图标和自定义类图标启用该功能，否则应保持禁用状态。
+If ``true``, scales the imported image to match :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`. This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise.
 
-\ **注意：**\ 仅适用于 SVG 图像。
+\ **Note:** Only available for SVG images.
 
 .. rst-class:: classref-item-separator
 
@@ -500,11 +500,11 @@ UASTC 编码级别。值越高质量越好，但编码耗时更长。
 
 :ref:`bool<class_bool>` **process/premult_alpha** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_process/premult_alpha>`
 
-使用 :ref:`process/fix_alpha_border<class_ResourceImporterTexture_property_process/fix_alpha_border>` 修复黑色边框的另一种方法是使用预乘 Alpha。通过启用该选项，纹理将被转换为该格式。预乘 Alpha 纹理需要特定材质才能正确显示：
+An alternative to fixing darkened borders with :ref:`process/fix_alpha_border<class_ResourceImporterTexture_property_process/fix_alpha_border>` is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. A premultiplied alpha texture requires specific materials to be displayed correctly:
 
-- 在 2D 中，需要创建并配置 :ref:`CanvasItemMaterial<class_CanvasItemMaterial>`\ ，以便在使用该纹理的 :ref:`CanvasItem<class_CanvasItem>` 上使用 :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` 混合模式。在自定义 ``@canvas_item`` 着色器中应使用 ``render_mode blend_premul_alpha;``\ 。
+- In 2D, a :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` will need to be created and configured to use the :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on :ref:`CanvasItem<class_CanvasItem>`\ s that use this texture. In custom ``canvas_item`` shaders, ``render_mode blend_premul_alpha;`` should be used.
 
-- 在 3D 中，需要创建并配置 :ref:`BaseMaterial3D<class_BaseMaterial3D>`\ ，以便在使用该纹理的材质上使用 :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` 混合模式。在自定义 ``spatial`` 着色器中应使用 ``render_mode blend_premul_alpha;``\ 。
+- In 3D, a :ref:`BaseMaterial3D<class_BaseMaterial3D>` will need to be created and configured to use the :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on materials that use this texture. In custom ``spatial`` shaders, ``render_mode blend_premul_alpha;`` should be used.
 
 .. rst-class:: classref-item-separator
 

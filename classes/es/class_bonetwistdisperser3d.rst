@@ -14,11 +14,13 @@ Un nodo que propaga y dispersa la torsión del hueso hijo hacia los huesos padre
 Descripción
 ----------------------
 
-Este **BoneTwistDisperser3D** permite una interpolación de torsión suave entre múltiples huesos al dispersar la torsión del hueso final a los padres. Esto solo cambia la torsión sin cambiar la posición global de cada articulación.
+This **BoneTwistDisperser3D** allows for smooth twist interpolation between multiple bones by dispersing the end bone's twist to the parents. This only changes the twist without changing the global position of each joint.
 
-Esto es útil para torcer huesos suavemente en combinación con :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` e IK.
+This is useful for smoothly twisting bones in combination with :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` and IK.
 
-\ **Nota:** Si una torsión extraída es mayor de 180 grados, se produce un volteo. Esto es similar a :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
+\ **Note:** If an extracted twist is greater than 180 degrees, flipping occurs. This is similar to :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
+
+\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 

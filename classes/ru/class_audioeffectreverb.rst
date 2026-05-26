@@ -7,14 +7,18 @@ AudioEffectReverb
 
 **Наследует:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Добавляет эффект реверберации к аудиошине.
+Adds a reverberation audio effect to an audio bus.
+
+Emulates an echo by playing a blurred version of the input audio.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Имитирует звук акустических сред, таких как комнаты, концертные залы, пещеры или открытые пространства.
+A "reverb" effect plays the input audio back continuously, decaying over a period of time. It simulates sounds in different kinds of spaces, ranging from small rooms, to big caverns.
+
+See also :ref:`AudioEffectDelay<class_AudioEffectDelay>` for a non-blurry type of echo.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +26,8 @@ AudioEffectReverb
 --------------------------------------
 
 - :doc:`Аудиошины <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 - `Демонстрация шутера от третьего лица (TPS) <https://godotengine.org/asset-library/asset/2710>`__
 
@@ -71,7 +77,7 @@ AudioEffectReverb
 - |void| **set_damping**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping**\ (\ )
 
-Определяет, насколько отражающими являются стены воображаемой комнаты. Значение может быть от 0 до 1.
+Defines how reflective the imaginary room's walls are. The more reflective, the more high frequency content the reverb has. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +94,7 @@ AudioEffectReverb
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-Вывод процентов исходного звука. При 0 выводится только измененный звук. Значение может быть от 0 до 1.
+The volume ratio of the original audio. At 0, only the modified audio is outputted. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +111,7 @@ AudioEffectReverb
 - |void| **set_hpf**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_hpf**\ (\ )
 
-Фильтр верхних частот пропускает сигналы с частотой выше определенной частоты среза и ослабляет сигналы с частотой ниже частоты среза. Значение может быть в диапазоне от 0 до 1.
+High-pass filter allows frequencies higher than a certain cutoff threshold and attenuates frequencies lower than the cutoff threshold. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +128,7 @@ AudioEffectReverb
 - |void| **set_predelay_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_feedback**\ (\ )
 
-Процент выходного сигнала предварительной задержки. Значение может быть от 0 до 1.
+Gain of early reflection copies. At higher values, early reflection copies are louder and ring out for longer. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +145,7 @@ AudioEffectReverb
 - |void| **set_predelay_msec**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_msec**\ (\ )
 
-Время между исходным сигналом и ранними отражениями сигнала реверберации в миллисекундах.
+Time between the original audio and the early reflections of the reverb signal, in milliseconds. Value can range from 20 to 500.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +179,7 @@ AudioEffectReverb
 - |void| **set_spread**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_spread**\ (\ )
 
-Расширяет или сужает стереоизображение хвоста реверберации. 1 означает полное расширение. Значение может быть от 0 до 1.
+Widens or narrows the stereo image of the reverb tail. At 1, it fully widens. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +196,7 @@ AudioEffectReverb
 - |void| **set_wet**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wet**\ (\ )
 
-Вывести процент измененного звука. При 0 выводится только оригинальный звук. Значение может быть от 0 до 1.
+The volume ratio of the modified audio. At 0, only the original audio is outputted. Value can range from 0 to 1.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -156,6 +156,18 @@ Signaux
 
 Émis lorsqu'un tracker existant a été mis à jour. Cela peut se produire si l'utilisateur change de contrôleurs.
 
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_XRServer_signal_world_origin_changed:
+
+.. rst-class:: classref-signal
+
+**world_origin_changed**\ (\ ) :ref:`🔗<class_XRServer_signal_world_origin_changed>`
+
+Emitted when the world origin transform changes.
+
 .. rst-class:: classref-section-separator
 
 ----

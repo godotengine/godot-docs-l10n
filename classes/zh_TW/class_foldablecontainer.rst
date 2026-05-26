@@ -202,7 +202,7 @@ The :ref:`FoldableGroup<class_FoldableGroup>` associated with the container. Whe
 - |void| **set_folded**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_folded**\ (\ )
 
-If ``true``, the container will becomes folded and will hide all its children.
+If ``true``, the container will become folded and will hide all its children.
 
 .. rst-class:: classref-item-separator
 

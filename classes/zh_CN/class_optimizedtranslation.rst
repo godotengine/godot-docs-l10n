@@ -26,9 +26,9 @@ OptimizedTranslation
 .. table::
    :widths: auto
 
-   +--------+-----------------------------------------------------------------------------------------------------------------+
-   | |void| | :ref:`generate<class_OptimizedTranslation_method_generate>`\ (\ from\: :ref:`Translation<class_Translation>`\ ) |
-   +--------+-----------------------------------------------------------------------------------------------------------------+
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`generate<class_OptimizedTranslation_method_generate>`\ (\ from\: :ref:`Translation<class_Translation>`\ ) |
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -43,13 +43,13 @@ OptimizedTranslation
 
 .. rst-class:: classref-method
 
-|void| **generate**\ (\ from\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_OptimizedTranslation_method_generate>`
+:ref:`bool<class_bool>` **generate**\ (\ from\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_OptimizedTranslation_method_generate>`
 
-根据给定的 :ref:`Translation<class_Translation>` 资源生成并设置优化翻译。
+Generates and sets an optimized translation from the given :ref:`Translation<class_Translation>` resource. Returns ``true`` if successful.
 
-\ **注意：**\ ``from`` 中的消息不应使用上下文或复数形式。
+\ **Note:** Messages in ``from`` should not use context or plural forms.
 
-\ **注意：**\ 该方法旨在用于编辑器中。从导出的项目中调用时，它不会执行任何操作。
+\ **Note:** This method is intended to be used in the editor. It does nothing when called from an exported project.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

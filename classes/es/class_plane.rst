@@ -12,7 +12,9 @@ Un plano en forma normal de Hesse.
 Descripción
 ----------------------
 
-Representa una ecuación de plano normalizada. :ref:`normal<class_Plane_property_normal>` es la normal del plano (a, b, c normalizados), y :ref:`d<class_Plane_property_d>` es la distancia desde el origen al plano (en la dirección de "normal"). Se considera "Sobre" o "Por encima" del plano el lado del plano hacia donde apunta la normal.
+Represents a normalized plane equation. :ref:`normal<class_Plane_property_normal>` is the normal of the plane (a, b, c normalized), and :ref:`d<class_Plane_property_d>` is the distance from the origin to the plane (in the direction of "normal"). "Over" or "Above" the plane is considered the side of the plane towards where the normal is pointing.
+
+\ **Note:** In a boolean context, a plane will evaluate to ``false`` if all its components equal ``0``. Otherwise, a plane will always evaluate to ``true``.
 
 .. rst-class:: classref-introduction-group
 

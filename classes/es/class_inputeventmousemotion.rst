@@ -153,9 +153,9 @@ La posición del ratón sin escalar relativa a la posición anterior en el siste
 - |void| **set_screen_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_velocity**\ (\ )
 
-La velocidad del ratón sin escalar en píxeles por segundo en coordenadas de pantalla. Esta velocidad *no* se escala según el factor de escala del contenido o las llamadas a :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`.
+The unscaled mouse velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`.
 
-\ **Nota:** Usa :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` para la puntería del ratón usando el modo de ratón :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`.
+\ **Note:** In :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mode, :ref:`screen_velocity<class_InputEventMouseMotion_property_screen_velocity>` returns ``(0, 0)`` because the mouse cursor is hidden and locked. Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
 
 .. rst-class:: classref-item-separator
 
@@ -189,11 +189,11 @@ Representa los ángulos de inclinación del bolígrafo. El valor positivo de la 
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-La velocidad del ratón en píxeles por segundo.
+The mouse velocity in pixels per second.
 
-\ **Nota:** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` se escala automáticamente según el factor de escala del contenido, que se define por la configuración del modo de estiramiento del proyecto. Eso significa que la sensibilidad del ratón puede parecer diferente dependiendo de la resolución.
+\ **Note:** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. That means mouse sensitivity may appear different depending on resolution.
 
-\ **Nota:** Usa :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` para la puntería del ratón usando el modo de ratón :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`.
+\ **Note:** In :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mode, :ref:`velocity<class_InputEventMouseMotion_property_velocity>` returns ``(0, 0)`` because the mouse cursor is hidden and locked. Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

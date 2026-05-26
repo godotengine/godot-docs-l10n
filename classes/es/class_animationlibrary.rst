@@ -60,9 +60,9 @@ Señales
 
 .. rst-class:: classref-signal
 
-**animation_added**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_added>`
+**animation_added**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_added>`
 
-Emitida cuando se agrega una :ref:`Animation<class_Animation>`, bajo la clave ``name``.
+Emitted when an :ref:`Animation<class_Animation>` is added, under the key ``anim_name``.
 
 .. rst-class:: classref-item-separator
 
@@ -72,11 +72,11 @@ Emitida cuando se agrega una :ref:`Animation<class_Animation>`, bajo la clave ``
 
 .. rst-class:: classref-signal
 
-**animation_changed**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_changed>`
+**animation_changed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_changed>`
 
-Emitida cuando hay un cambio en una de las animaciones, por ejemplo, se añaden, mueven o cambian las rutas de las pistas. ``name`` es la clave de la animación que se ha cambiado.
+Emitted when there's a change in one of the animations, e.g. tracks are added, moved or have changed paths. ``anim_name`` is the key of the animation that was changed.
 
-Véase también :ref:`Resource.changed<class_Resource_signal_changed>`, para lo que esto actua como un relé.
+See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts as a relay for.
 
 .. rst-class:: classref-item-separator
 
@@ -86,9 +86,9 @@ Véase también :ref:`Resource.changed<class_Resource_signal_changed>`, para lo 
 
 .. rst-class:: classref-signal
 
-**animation_removed**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_removed>`
+**animation_removed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_removed>`
 
-Emitida cuando se elimina una :ref:`Animation<class_Animation>` almacenada con la clave ``name``.
+Emitted when an :ref:`Animation<class_Animation>` stored with the key ``anim_name`` is removed.
 
 .. rst-class:: classref-item-separator
 
@@ -98,9 +98,9 @@ Emitida cuando se elimina una :ref:`Animation<class_Animation>` almacenada con l
 
 .. rst-class:: classref-signal
 
-**animation_renamed**\ (\ name\: :ref:`StringName<class_StringName>`, to_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_renamed>`
+**animation_renamed**\ (\ old_name\: :ref:`StringName<class_StringName>`, new_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_renamed>`
 
-Emitida cuando se cambia la clave de una :ref:`Animation<class_Animation>`, de ``name`` a ``to_name``.
+Emitted when the key for an :ref:`Animation<class_Animation>` is changed, from ``old_name`` to ``new_name``.
 
 .. rst-class:: classref-section-separator
 

@@ -26,11 +26,17 @@ Propriétés
 .. table::
    :widths: auto
 
-   +---------------------------+------------------------------------------------------------+---------+
-   | :ref:`float<class_float>` | :ref:`bake_interval<class_Curve2D_property_bake_interval>` | ``5.0`` |
-   +---------------------------+------------------------------------------------------------+---------+
-   | :ref:`int<class_int>`     | :ref:`point_count<class_Curve2D_property_point_count>`     | ``0``   |
-   +---------------------------+------------------------------------------------------------+---------+
+   +-------------------------------+------------------------------------------------------------------------------+-------------------+
+   | :ref:`float<class_float>`     | :ref:`bake_interval<class_Curve2D_property_bake_interval>`                   | ``5.0``           |
+   +-------------------------------+------------------------------------------------------------------------------+-------------------+
+   | :ref:`int<class_int>`         | :ref:`point_count<class_Curve2D_property_point_count>`                       | ``0``             |
+   +-------------------------------+------------------------------------------------------------------------------+-------------------+
+   | :ref:`Vector2<class_Vector2>` | :ref:`point_{index}/in<class_Curve2D_property_point_{index}/in>`             | ``Vector2(0, 0)`` |
+   +-------------------------------+------------------------------------------------------------------------------+-------------------+
+   | :ref:`Vector2<class_Vector2>` | :ref:`point_{index}/out<class_Curve2D_property_point_{index}/out>`           | ``Vector2(0, 0)`` |
+   +-------------------------------+------------------------------------------------------------------------------+-------------------+
+   | :ref:`Vector2<class_Vector2>` | :ref:`point_{index}/position<class_Curve2D_property_point_{index}/position>` | ``Vector2(0, 0)`` |
+   +-------------------------------+------------------------------------------------------------------------------+-------------------+
 
 .. rst-class:: classref-reftable-group
 
@@ -118,6 +124,48 @@ La distance en pixels entre deux points du cache qui sont voisins. Le changement
 - :ref:`int<class_int>` **get_point_count**\ (\ )
 
 Le nombre de points décrivant la courbe.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Curve2D_property_point_{index}/in:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2<class_Vector2>` **point_{index}/in** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve2D_property_point_{index}/in>`
+
+The position of the control point leading to the vertex at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Curve2D_property_point_{index}/out:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2<class_Vector2>` **point_{index}/out** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve2D_property_point_{index}/out>`
+
+The position of the control point leading out of the vertex at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Curve2D_property_point_{index}/position:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2<class_Vector2>` **point_{index}/position** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve2D_property_point_{index}/position>`
+
+The position of for the vertex at ``index``.
+
+\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
 
 .. rst-class:: classref-section-separator
 

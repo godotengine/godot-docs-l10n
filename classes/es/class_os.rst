@@ -226,7 +226,7 @@ enum **RenderingDriver**: :ref:`🔗<enum_OS_RenderingDriver>`
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_VULKAN** = ``0``
 
-El controlador de renderizado de Vulkan. Requiere soporte para Vulkan 1.0 y utiliza automáticamente las características de Vulkan 1.1 y 1.2 si están disponibles.
+The Vulkan rendering driver. It requires Vulkan 1.0 support and automatically uses features from Vulkan 1.1, 1.2, and 1.3 if available.
 
 .. _class_OS_constant_RENDERING_DRIVER_OPENGL3:
 
@@ -242,7 +242,7 @@ The OpenGL 3 rendering driver. It uses OpenGL 3.3 Core Profile on desktop platfo
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_D3D12** = ``2``
 
-El controlador de renderizado de Direct3D 12.
+The Direct3D 12 rendering driver. It requires the 12_0 feature level and Shader Model 6.0 support.
 
 .. _class_OS_constant_RENDERING_DRIVER_METAL:
 
@@ -1912,21 +1912,21 @@ Esto puede ser útil cuando los archivos pueden ser abiertos por otras aplicacio
 
 :ref:`Error<enum_@GlobalScope_Error>` **shell_open**\ (\ uri\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OS_method_shell_open>`
 
-Solicita al sistema operativo abrir un recurso identificado por ``uri`` con el programa más apropiado. Por ejemplo:
+Requests the OS to open a resource identified by ``uri`` with the most appropriate program. For example:
 
-- ``OS.shell_open("C:\\Users\\name\\Downloads")`` en Windows abre el explorador de archivos en la carpeta Descargas del usuario.
+- ``OS.shell_open("C:\\Users\\name\\Downloads")`` on Windows opens the file explorer at the user's Downloads folder.
 
-- ``OS.shell_open("C:/Users/name/Downloads")`` también funciona en Windows y abre el explorador de archivos en la carpeta Descargas del usuario.
+- ``OS.shell_open("C:/Users/name/Downloads")`` also works on Windows and opens the file explorer at the user's Downloads folder.
 
-- ``OS.shell_open("https://godotengine.org")`` abre el navegador web predeterminado en el sitio oficial de Godot.
+- ``OS.shell_open("https://godotengine.org")`` opens the default web browser on the official Godot website.
 
-- ``OS.shell_open("mailto:example@example.com")`` abre el cliente de correo electrónico predeterminado con el campo "Para" configurado en ``example@example.com``. Véase `RFC 2368 - El esquema de URL [code]mailto[/code] <https://datatracker.ietf.org/doc/html/rfc2368>`__ para obtener una lista de campos que se pueden agregar.
+- ``OS.shell_open("mailto:example@example.com")`` opens the default email client with the "To" field set to ``example@example.com``. See `RFC 2368 - The mailto URL scheme <https://datatracker.ietf.org/doc/html/rfc2368>`__ for a list of fields that can be added.
 
-Utiliza :ref:`ProjectSettings.globalize_path()<class_ProjectSettings_method_globalize_path>` para convertir una ruta de proyecto ``res://`` o ``user://`` en una ruta del sistema para usar con este método.
+Use :ref:`ProjectSettings.globalize_path()<class_ProjectSettings_method_globalize_path>` to convert a ``res://`` or ``user://`` project path into a system path for use with this method.
 
-\ **Nota:** Usa :ref:`String.uri_encode()<class_String_method_uri_encode>` para codificar caracteres dentro de URLs de forma segura y portable. Esto es especialmente necesario para los saltos de línea. De lo contrario, :ref:`shell_open()<class_OS_method_shell_open>` puede no funcionar correctamente en un proyecto exportado a la plataforma Web.
+\ **Note:** Use :ref:`String.uri_encode()<class_String_method_uri_encode>` to encode characters within URLs in a URL-safe, portable way. This is especially required for line breaks. Otherwise, :ref:`shell_open()<class_OS_method_shell_open>` may not work correctly in a project exported to the Web platform.
 
-\ **Nota:** Este método está implementado en Android, iOS, Web, Linux, macOS y Windows.
+\ **Note:** This method is implemented on Android, iOS, Web, Linux, macOS and Windows.
 
 .. rst-class:: classref-item-separator
 

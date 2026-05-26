@@ -610,9 +610,9 @@ Returns the normalized vector pointing from this vector to ``to``.
 
 :ref:`float<class_float>` **distance_squared_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_distance_squared_to>`
 
-Restituisce la distanza al quadrato tra questo vettore e ``to``.
+Returns the squared `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
 
-Questo metodo è più veloce di :ref:`distance_to()<class_Vector2_method_distance_to>`, quindi è preferibile se è necessario confrontare vettori o se è necessaria la distanza al quadrato per una formula.
+This method runs faster than :ref:`distance_to()<class_Vector2_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ Questo metodo è più veloce di :ref:`distance_to()<class_Vector2_method_distanc
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_distance_to>`
 
-Restituisce la distanza tra questo vettore e ``to``.
+Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
 
 .. rst-class:: classref-item-separator
 

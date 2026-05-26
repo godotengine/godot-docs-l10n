@@ -14,11 +14,13 @@ EditorFileDialog
 Опис
 --------
 
-**EditorFileDialog** – це :ref:`FileDialog<class_FileDialog>`, налаштований для роботи в редакторі. Він автоматично обробляє списки обраних та нещодавніх каталогів, а також синхронізує деякі властивості з відповідними налаштуваннями редактора.
+**EditorFileDialog** is a :ref:`FileDialog<class_FileDialog>` tweaked to work in the editor. It automatically handles favorite and recent directory lists, and synchronizes some properties with their corresponding editor settings.
 
-\ **EditorFileDialog** автоматично відображатиме рідне діалогове вікно на основі налаштувань редактора :ref:`EditorSettings.interface/editor/use_native_file_dialogs<class_EditorSettings_property_interface/editor/use_native_file_dialogs>` та ігноруватиме :ref:`FileDialog.use_native_dialog<class_FileDialog_property_use_native_dialog>`.
+\ **EditorFileDialog** will automatically show a native dialog based on the :ref:`EditorSettings.interface/editor/appearance/use_native_file_dialogs<class_EditorSettings_property_interface/editor/appearance/use_native_file_dialogs>` editor setting and ignores :ref:`FileDialog.use_native_dialog<class_FileDialog_property_use_native_dialog>`.
 
-\ **Примітка:** **EditorFileDialog** за замовчуванням невидимий. Щоб зробити його видимим, викличте один із методів ``popup_*`` з :ref:`Window<class_Window>` на вузлі, наприклад, :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Note:** **EditorFileDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+
+\ **Note:** On Linux and macOS, sandboxed apps always use native dialogs to access the host file system.
 
 .. rst-class:: classref-reftable-group
 

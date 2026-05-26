@@ -53,6 +53,8 @@ An array data structure that can contain a sequence of elements of any :ref:`Var
 
 \ **Note:** Erasing elements while iterating over arrays is **not** supported and will result in unpredictable behavior.
 
+\ **Note:** In a boolean context, an array will evaluate to ``false`` if it's empty (``[]``). Otherwise, an array will always evaluate to ``true``.
+
 \ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. :ref:`PackedInt64Array<class_PackedInt64Array>` versus ``Array[int]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
 
 .. note::
@@ -779,11 +781,11 @@ Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplica
 
 :ref:`int<class_int>` **find_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
 
-回傳陣列中第一個令 ``method`` 回傳 ``true`` 的元素索引；若無則回傳 ``-1``\ 。可以用 ``from`` 指定起始索引，搜尋將持續到陣列結尾。
+Returns the index of the **first** element in the array that causes ``method`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
 
-\ ``method`` 為可呼叫物件，接收一個陣列元素並回傳 :ref:`bool<class_bool>`\ 。
+\ ``method`` is a callable that takes an element of the array, and returns a :ref:`bool<class_bool>`.
 
-\ **注意：**\ 若只想知道陣列中是否存在任何符合條件的元素，可改用 :ref:`any()<class_Array_method_any>`\ 。
+\ **Note:** If you just want to know whether the array contains *anything* that satisfies ``method``, use :ref:`any()<class_Array_method_any>`.
 
 
 .. tabs::
@@ -794,7 +796,14 @@ Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplica
         return number % 2 == 0
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_even.bind())) # 印出 2
+        print([1, 3, 4, 7].find_custom(is_even.bind())) # Prints 2
+
+    # Another example using `bind()` to pass an additional parameter:
+    func is_specific_number(number, expected):
+        return number == expected
+
+    func _ready():
+        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # Prints 2
 
 
 

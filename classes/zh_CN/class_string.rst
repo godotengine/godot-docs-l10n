@@ -470,22 +470,24 @@ String
 
 :ref:`String<class_String>` **capitalize**\ (\ ) |const| :ref:`🔗<class_String_method_capitalize>`
 
-改变字符串的外观：用空格代替下划线（\ ``_``\ ），在单词中间的大写字母前添加空格，将所有字母转换为小写，然后将第一个字母和空格后的每个字母转换为大写。
+Returns a copy of the string with changed appearance. Replaces underscores (``_``) and hyphens (``-``) with spaces, adds spaces before uppercase letters in the middle of a word, converts all letters to lowercase, then converts the first one and each one following a space to uppercase.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    "move_local_x".capitalize()   # 返回 "Move Local X"
-    "sceneFile_path".capitalize() # 返回 "Scene File Path"
-    "2D, FPS, PNG".capitalize()   # 返回 "2d, Fps, Png"
+    "move_local_x".capitalize()   # Returns "Move Local X"
+    "sceneFile_path".capitalize() # Returns "Scene File Path"
+    "2D, FPS, PNG".capitalize()   # Returns "2d, Fps, Png"
+    "example-name".capitalize()   # Returns "Example Name"
 
  .. code-tab:: csharp
 
-    "move_local_x".Capitalize();   // 返回 "Move Local X"
-    "sceneFile_path".Capitalize(); // 返回 "Scene File Path"
-    "2D, FPS, PNG".Capitalize();   // 返回 "2d, Fps, Png"
+    "move_local_x".Capitalize();   // Returns "Move Local X"
+    "sceneFile_path".Capitalize(); // Returns "Scene File Path"
+    "2D, FPS, PNG".Capitalize();   // Returns "2d, Fps, Png"
+    "example-name".Capitalize();   // Returns "Example Name"
 
 
 

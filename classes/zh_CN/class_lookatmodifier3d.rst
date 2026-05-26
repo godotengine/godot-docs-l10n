@@ -483,9 +483,9 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_relative**\ (\ )
 
-相对选项。如果为 ``true``\ ，则旋转是相对于该姿势应用的。如果为 ``false``\ ，则旋转是相对于放松姿势应用的。这意味着用 **LookAtModifier3D** 的结果替换当前姿势。
+The relative option. If ``true``, the rotation is applied relative to the pose. If ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **LookAtModifier3D**'s result.
 
-\ **注意：**\ 与 :ref:`IterateIK3D<class_IterateIK3D>` 的 :ref:`JointLimitation3D<class_JointLimitation3D>` 不同，该选项会影响 :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>` 的基准角度。由于 **LookAtModifier3D** 强烈依赖于欧拉旋转，因此决定限制的轴与实际旋转紧密相关。
+\ **Note:** This option affects the base angle for :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`. Since the **LookAtModifier3D** relies strongly on Euler rotation, the axis that determines the limitation and the actual rotation are strongly tied together.
 
 .. rst-class:: classref-item-separator
 

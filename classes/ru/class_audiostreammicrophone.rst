@@ -23,6 +23,8 @@ AudioStreamMicrophone
 Обучающие материалы
 --------------------------------------
 
+- :doc:`Аудиопотоки <../tutorials/audio/audio_streams>`
+
 - :doc:`Запись с микрофона <../tutorials/audio/recording_with_microphone>`
 
 - `Audio Mic Record Демо <https://github.com/godotengine/godot-demo-projects/tree/master/audio/mic_record>`__

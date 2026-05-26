@@ -7,6 +7,8 @@ JSONRPC
 
 **Hérite de :** :ref:`Object<class_Object>`
 
+**Hérité par :** :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>`
+
 Une classe d'aide pour gérer les dictionnaires qui ressemblent à des documents JSONRPC.
 
 .. rst-class:: classref-introduction-group

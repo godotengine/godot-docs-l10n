@@ -23,7 +23,7 @@ GDExtension 的原生库。
 教程
 ----
 
-- :doc:`GDExtension 概述 <../tutorials/scripting/gdextension/what_is_gdextension>`
+- :doc:`GDExtension 概述 <../engine_details/engine_api/gdextension/what_is_gdextension>`
 
 - :doc:`C++ 的 GDExtension 示例 <../tutorials/scripting/cpp/gdextension_cpp_example>`
 

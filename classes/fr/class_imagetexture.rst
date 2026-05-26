@@ -74,8 +74,6 @@ Méthodes
    +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
    | :ref:`ImageTexture<class_ImageTexture>` | :ref:`create_from_image<class_ImageTexture_method_create_from_image>`\ (\ image\: :ref:`Image<class_Image>`\ ) |static| |
    +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Format<enum_Image_Format>`        | :ref:`get_format<class_ImageTexture_method_get_format>`\ (\ ) |const|                                                   |
-   +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
    | |void|                                  | :ref:`set_image<class_ImageTexture_method_set_image>`\ (\ image\: :ref:`Image<class_Image>`\ )                          |
    +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
    | |void|                                  | :ref:`set_size_override<class_ImageTexture_method_set_size_override>`\ (\ size\: :ref:`Vector2i<class_Vector2i>`\ )     |
@@ -99,18 +97,6 @@ Descriptions des méthodes
 :ref:`ImageTexture<class_ImageTexture>` **create_from_image**\ (\ image\: :ref:`Image<class_Image>`\ ) |static| :ref:`🔗<class_ImageTexture_method_create_from_image>`
 
 Crée une nouvelle **ImageTexture** et l'initialise en allouant et en définissant les données depuis une :ref:`Image<class_Image>`.
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_ImageTexture_method_get_format:
-
-.. rst-class:: classref-method
-
-:ref:`Format<enum_Image_Format>` **get_format**\ (\ ) |const| :ref:`🔗<class_ImageTexture_method_get_format>`
-
-Renvoie le format de la texture.
 
 .. rst-class:: classref-item-separator
 

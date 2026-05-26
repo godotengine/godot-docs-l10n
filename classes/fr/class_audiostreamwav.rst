@@ -23,6 +23,8 @@ Cette classe peut également être utilisée pour stocker des données audio gé
 Tutoriels
 ------------------
 
+- :doc:`Flux audio <../tutorials/audio/audio_streams>`
+
 - :doc:`Chargement et sauvegarde de fichiers durant l’exécution <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group

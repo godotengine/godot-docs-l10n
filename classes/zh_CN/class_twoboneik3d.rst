@@ -14,9 +14,11 @@ TwoBoneIK3D
 描述
 ----
 
-该 :ref:`IKModifier3D<class_IKModifier3D>` 需要一个极点目标。它通过从每个关节和极点目标构建一个平面，并找到两个圆（3D 中的圆盘）的交点来提供确定性的结果。
+This :ref:`IKModifier3D<class_IKModifier3D>` requires a pole target. It provides deterministic results by constructing a plane from each joint and pole target and finding the intersection of two circles (disks in 3D).
 
-该 IK 可以通过设置极点方向来处理扭转。如果每组骨骼之间有多根骨骼，则忽略它们的旋转，并将连接根部中间关节和中间末端关节的直线视为虚拟骨骼。
+This IK can handle twist by setting the pole direction. If there are more than one bone between each set bone, their rotations are ignored, and the straight line connecting the root-middle and middle-end joints are treated as virtual bones.
+
+\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 

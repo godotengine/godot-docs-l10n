@@ -7,16 +7,18 @@ AudioEffectPhaser
 
 **继承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-向音频总线添加一个移相器音频效果。
+Adds a phaser audio effect to an audio bus.
 
-将原始信号和与原始信号稍有相位偏差的副本组合在一起。
+Creates several notch and peak filters that sweep across the spectrum.
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-将相移信号与原始信号相结合。使用低频振荡器控制相移信号的移动。
+A "phaser" effect creates a copy of the original audio that phase-rotates differently across the entire frequency spectrum, with the use of a series of all-pass filter stages (6 in this effect). This copy modulates with a low-frequency oscillator and combines with the original audio, resulting in peaks and troughs that sweep across the spectrum.
+
+This effect can be used to create a "glassy" or "bubbly" sound.
 
 .. rst-class:: classref-introduction-group
 
@@ -24,6 +26,8 @@ AudioEffectPhaser
 ----
 
 - :doc:`音频总线 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -65,7 +69,7 @@ AudioEffectPhaser
 - |void| **set_depth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth**\ (\ )
 
-控制滤波器频率扫描的高度。较低的值主要影响低音频率。较高的值可以推高高音。取值范围为 ``0.1`` 到 ``4.0``\ 。
+Intensity of the effect. Value can range from 0.1 to 4.0.
 
 .. rst-class:: classref-item-separator
 
@@ -82,7 +86,7 @@ AudioEffectPhaser
 - |void| **set_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback**\ (\ )
 
-修改后声音的输出百分比。数值范围从 0.1 到 0.9。
+The volume ratio of the filtered audio that is fed back to the all-pass filters. The higher the value, the sharper and louder the peak filters created by the effect. Value can range from 0.1 to 0.9.
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +103,7 @@ AudioEffectPhaser
 - |void| **set_range_max_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_max_hz**\ (\ )
 
-决定受 LFO 调制影响的最大频率，单位为 Hz。数值范围为 10-10000。
+Determines the maximum frequency affected by the low-frequency oscillator modulations, in Hz. Value can range from 10 to 10000.
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +120,7 @@ AudioEffectPhaser
 - |void| **set_range_min_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_min_hz**\ (\ )
 
-决定受 LFO 调制影响的最小频率，单位为 Hz。数值范围为 10-10000。
+Determines the minimum frequency affected by the low-frequency oscillator modulations, in Hz. Value can range from 10 to 10000.
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +137,7 @@ AudioEffectPhaser
 - |void| **set_rate_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rate_hz**\ (\ )
 
-以 Hz 为单位调整效果在整个频率范围内上下扫描的速度。
+Adjusts the rate in Hz at which the effect sweeps up and down across the frequency range. Value can range from 0.01 to 20.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -96,6 +96,22 @@ InputEvent
 
 模拟设备 ID，用于根据触屏事件生成的鼠标输入，或根据鼠标事件生成的触摸输入。可以据此来区分模拟鼠标输入和物理鼠标输入，以及模拟触摸输入和物理触摸输入。
 
+.. _class_InputEvent_constant_DEVICE_ID_KEYBOARD:
+
+.. rst-class:: classref-constant
+
+**DEVICE_ID_KEYBOARD** = ``16`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_KEYBOARD>`
+
+Device ID used for input from a keyboard. This can be used to distinguish keyboard input events from joypad input events.
+
+.. _class_InputEvent_constant_DEVICE_ID_MOUSE:
+
+.. rst-class:: classref-constant
+
+**DEVICE_ID_MOUSE** = ``32`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_MOUSE>`
+
+Device ID used for input from a mouse. This can be used to distinguish mouse input events from joypad input events.
+
 .. rst-class:: classref-section-separator
 
 ----

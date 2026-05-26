@@ -7,14 +7,18 @@ AudioEffectPanner
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-為音訊匯流排新增聲像效果，可將聲音左右移動。
+Adds a panner audio effect to an audio bus.
+
+Pans the sound left or right.
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-決定輸出到左／右匯流排的訊號比例。
+Determines how much of the audio signal is sent to the left and right channels. This helps with audio spatialization, giving sounds distinct places in a mix.
+
+\ :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` and :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` handle panning automatically, following where the source of the sound is on the screen.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +26,8 @@ AudioEffectPanner
 ----
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -55,7 +61,7 @@ AudioEffectPanner
 - |void| **set_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pan**\ (\ )
 
-聲像位置。值的範圍可從 -1（最左）到 1（最右）。
+Pan position. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

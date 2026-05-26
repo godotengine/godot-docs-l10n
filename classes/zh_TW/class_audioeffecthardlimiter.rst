@@ -7,14 +7,18 @@ AudioEffectHardLimiter
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-為音訊匯流排新增硬限制器效果。
+Adds a limiter audio effect to an audio bus.
+
+Prevents audio signals from exceeding a specified volume level.
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-限制器能阻止音量超過指定門檻。硬限制器會預測峰值，於碰觸天花板前平順地降低增益，避免削波與失真；並維持波形不超出門檻。建議在 Master 匯流排加入一個硬限制器，作為防止突波與削波失真的保護機制。
+A "limiter" disallows audio signals from exceeding a given volume threshold level in dB. Hard limiters predict volume peaks, and will smoothly apply gain reduction when a peak crosses the ceiling threshold level to prevent clipping. It preserves the waveform and prevents it from crossing the ceiling threshold level. Adding one in the Master bus is recommended as a safety measure to prevent sudden volume peaks from occurring, and to prevent distortion caused by clipping, when the volume exceeds 0 dB.
+
+If clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +26,8 @@ AudioEffectHardLimiter
 ----
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -59,9 +65,9 @@ AudioEffectHardLimiter
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-波形允許的最大值（分貝）。可設定範圍為 ``-24.0`` 到 ``0.0``\ 。
+The waveform's maximum allowed value, in dB. This value can range from -24 to 0.
 
-預設值 ``-0.3`` 可防止跨取樣峰值 (ISP) 超過 0 dB，避免部分舊硬體產生輕微失真。
+The default value of -0.3 prevents potential inter-sample peaks (ISP) from crossing over 0 dB, which can cause slight distortion on some older hardware.
 
 .. rst-class:: classref-item-separator
 
@@ -78,7 +84,7 @@ AudioEffectHardLimiter
 - |void| **set_pre_gain_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain_db**\ (\ )
 
-限制前的前級增益（dB）。
+Gain before limiting, in dB. Value can range from -24 to 24.
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +101,7 @@ AudioEffectHardLimiter
 - |void| **set_release**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release**\ (\ )
 
-增益完全復原所需時間（秒）。
+Time it takes in seconds for the gain reduction to fully release. Value can range from 0.01 to 3.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

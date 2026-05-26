@@ -96,6 +96,22 @@ Costanti
 
 ID dispositivo utilizzato per l'input del mouse emulato da un touchscreen o per l'input touch emulato da un mouse. Può essere utilizzato per distinguere l'input del mouse emulato dall'input del mouse fisico o l'input touch emulato dall'input touch fisico.
 
+.. _class_InputEvent_constant_DEVICE_ID_KEYBOARD:
+
+.. rst-class:: classref-constant
+
+**DEVICE_ID_KEYBOARD** = ``16`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_KEYBOARD>`
+
+Device ID used for input from a keyboard. This can be used to distinguish keyboard input events from joypad input events.
+
+.. _class_InputEvent_constant_DEVICE_ID_MOUSE:
+
+.. rst-class:: classref-constant
+
+**DEVICE_ID_MOUSE** = ``32`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_MOUSE>`
+
+Device ID used for input from a mouse. This can be used to distinguish mouse input events from joypad input events.
+
 .. rst-class:: classref-section-separator
 
 ----

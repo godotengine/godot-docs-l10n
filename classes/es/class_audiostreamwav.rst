@@ -23,6 +23,8 @@ This class can also be used to store dynamically-generated PCM audio data. See a
 Tutoriales
 --------------------
 
+- :doc:`Corriente de Audio <../tutorials/audio/audio_streams>`
+
 - :doc:`Carga y guardado de archivos en tiempo de ejecución <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group

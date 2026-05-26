@@ -391,11 +391,13 @@ Sets the size of the :ref:`AABB<class_AABB>` used by the decal. All dimensions m
 - |void| **set_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`\ ) |const|
 
-:ref:`Texture2D<class_Texture2D>` stockant l'occlusion ambiante, la rugosité et le métallique pour le décalque. Utilisez cela pour ajouter des détails supplémentaires aux décalques.
+:ref:`Texture2D<class_Texture2D>` storing ambient occlusion, roughness, and metallic for the decal. Use this to add extra detail to decals.
 
-\ **Note :** Contrairement à :ref:`BaseMaterial3D<class_BaseMaterial3D>` dont le mode de filtrage peut être ajusté selon le matériau, le mode de filtrage pour les textures de **Decal** est défini globalement avec :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
+\ **Note:** Unlike :ref:`BaseMaterial3D<class_BaseMaterial3D>` whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
 
-\ **Note :** Définir seulement cette texture ne résultera pas en un décalque visible, car :ref:`texture_albedo<class_Decal_property_texture_albedo>` doit également être définie. Pour créer un décalque avec seulement un ORM, chargez une texture d'albedo dans :ref:`texture_albedo<class_Decal_property_texture_albedo>` et définissez :ref:`albedo_mix<class_Decal_property_albedo_mix>` à ``0.0``. Le canal alpha de la texture de l'albédo sera utilisé pour déterminer où l'ORM map de la surface sous-jacente devrait être redéfinie (et son intensité).
+\ **Note:** Setting this texture alone will not result in a visible decal, as :ref:`texture_albedo<class_Decal_property_texture_albedo>` must also be set. To create an ORM-only decal, load an albedo texture into :ref:`texture_albedo<class_Decal_property_texture_albedo>` and set :ref:`albedo_mix<class_Decal_property_albedo_mix>` to ``0.0``. The albedo texture's alpha channel will be used to determine where the underlying surface's ORM map should be overridden (and its intensity).
+
+\ **Note:** Due to technical limitations, modifying the underlying surface's roughness using :ref:`texture_orm<class_Decal_property_texture_orm>` does *not* affect screen-space reflections (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`), reflections from :ref:`VoxelGI<class_VoxelGI>`, and reflections from SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`). Only reflections from :ref:`ReflectionProbe<class_ReflectionProbe>`\ s are affected.
 
 .. rst-class:: classref-item-separator
 

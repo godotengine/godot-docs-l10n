@@ -9,6 +9,13 @@ AudioStreamPlaybackPlaylist
 
 供 :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>` 使用的播放類別。
 
+.. rst-class:: classref-introduction-group
+
+說明
+----
+
+Playback component of :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`. Handles the playback of multiple :ref:`AudioStream<class_AudioStream>`\ s in sequence.
+
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`

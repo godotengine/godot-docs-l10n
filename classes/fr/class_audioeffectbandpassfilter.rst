@@ -7,14 +7,16 @@ AudioEffectBandPassFilter
 
 **Hérite de :** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Ajouter un passe-bande au bus audio.
+Adds a band-pass filter to an audio bus.
 
 .. rst-class:: classref-introduction-group
 
 Description
 -----------
 
-Atténue les fréquences à l'intérieur de la gamme autour de :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` et coupe les fréquences en dehors de cette gamme.
+A "band-pass" filter allows the frequencies at :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` to pass unchanged, and attenuates frequencies outside the frequency threshold. It is the opposite of :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>` and :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`.
+
+This filter can be used to emulate sounds coming from weak speakers.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +24,8 @@ Tutoriels
 ------------------
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -92,6 +92,8 @@ TileSet можно настроить так, чтобы его тайлы пр�
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`cleanup_invalid_tile_proxies<class_TileSet_method_cleanup_invalid_tile_proxies>`\ (\ )                                                                                                                                                                                                                                                               |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`clear_terrains<class_TileSet_method_clear_terrains>`\ (\ terrain_set\: :ref:`int<class_int>`\ )                                                                                                                                                                                                                                                      |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`clear_tile_proxies<class_TileSet_method_clear_tile_proxies>`\ (\ )                                                                                                                                                                                                                                                                                   |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Array<class_Array>`                           | :ref:`get_alternative_level_tile_proxy<class_TileSet_method_get_alternative_level_tile_proxy>`\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`\ )                                                                                                                         |
@@ -200,7 +202,7 @@ TileSet можно настроить так, чтобы его тайлы пр�
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`set_alternative_level_tile_proxy<class_TileSet_method_set_alternative_level_tile_proxy>`\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, alternative_from\: :ref:`int<class_int>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`, alternative_to\: :ref:`int<class_int>`\ ) |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |void|                                              | :ref:`set_coords_level_tile_proxy<class_TileSet_method_set_coords_level_tile_proxy>`\ (\ p_source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ )                                                                                           |
+   | |void|                                              | :ref:`set_coords_level_tile_proxy<class_TileSet_method_set_coords_level_tile_proxy>`\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ )                                                                                             |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`set_custom_data_layer_name<class_TileSet_method_set_custom_data_layer_name>`\ (\ layer_index\: :ref:`int<class_int>`, layer_name\: :ref:`String<class_String>`\ )                                                                                                                                                                                    |
    +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -752,6 +754,18 @@ enum **TerrainMode**: :ref:`🔗<enum_TileSet_TerrainMode>`
 |void| **cleanup_invalid_tile_proxies**\ (\ ) :ref:`🔗<class_TileSet_method_cleanup_invalid_tile_proxies>`
 
 Очищает прокси тайлов, указывающие на недействительные тайлы.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSet_method_clear_terrains:
+
+.. rst-class:: classref-method
+
+|void| **clear_terrains**\ (\ terrain_set\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_clear_terrains>`
+
+Clears all terrain properties for the given terrain set.
 
 .. rst-class:: classref-item-separator
 
@@ -1421,7 +1435,7 @@ enum **TerrainMode**: :ref:`🔗<enum_TileSet_TerrainMode>`
 
 .. rst-class:: classref-method
 
-|void| **set_coords_level_tile_proxy**\ (\ p_source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSet_method_set_coords_level_tile_proxy>`
+|void| **set_coords_level_tile_proxy**\ (\ source_from\: :ref:`int<class_int>`, coords_from\: :ref:`Vector2i<class_Vector2i>`, source_to\: :ref:`int<class_int>`, coords_to\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSet_method_set_coords_level_tile_proxy>`
 
 Создает прокси на уровне координат для заданных идентификаторов. Прокси сопоставляет набор идентификаторов тайлов с другим набором идентификаторов. Альтернативный идентификатор тайла остается тем же при использовании прокси на уровне координат.
 

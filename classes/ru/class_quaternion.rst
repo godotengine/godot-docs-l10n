@@ -12,15 +12,17 @@ Quaternion
 Описание
 ----------------
 
-Встроенный тип :ref:`Variant<class_Variant>` **Quaternion** — это 4D-структура данных, которая представляет вращение в виде `кватерниона соглашения Гамильтона <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__. По сравнению с типом :ref:`Basis<class_Basis>`, который может хранить как вращение, так и масштаб, кватернионы могут хранить *только* вращение.
+The **Quaternion** built-in :ref:`Variant<class_Variant>` type is a 4D data structure that represents rotation in the form of a `Hamilton convention quaternion <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__. Compared to the :ref:`Basis<class_Basis>` type which can store both rotation and scale, quaternions can *only* store rotation.
 
-\ **Quaternion** состоит из 4 компонентов с плавающей точкой: :ref:`w<class_Quaternion_property_w>`, :ref:`x<class_Quaternion_property_x>`, :ref:`y<class_Quaternion_property_y>` и :ref:`z<class_Quaternion_property_z>`. Эти компоненты очень компактны в памяти, и из-за этого некоторые операции более эффективны и менее склонны вызывать ошибки с плавающей точкой. Такие методы, как :ref:`get_angle()<class_Quaternion_method_get_angle>`, :ref:`get_axis()<class_Quaternion_method_get_axis>` и :ref:`slerp()<class_Quaternion_method_slerp>`, быстрее своих аналогов из :ref:`Basis<class_Basis>`.
+A **Quaternion** is composed by 4 floating-point components: :ref:`w<class_Quaternion_property_w>`, :ref:`x<class_Quaternion_property_x>`, :ref:`y<class_Quaternion_property_y>`, and :ref:`z<class_Quaternion_property_z>`. These components are very compact in memory, and because of this some operations are more efficient and less likely to cause floating-point errors. Methods such as :ref:`get_angle()<class_Quaternion_method_get_angle>`, :ref:`get_axis()<class_Quaternion_method_get_axis>`, and :ref:`slerp()<class_Quaternion_method_slerp>` are faster than their :ref:`Basis<class_Basis>` counterparts.
 
-Для отличного введения в кватернионы посмотрите `это видео от 3Blue1Brown <https://www.youtube.com/watch?v=d4EgbgTm0Bg>`__. Вам не нужно знать математику, лежащую в основе кватернионов, так как Godot предоставляет несколько вспомогательных методов, которые справляются с этим за вас. К ним относятся :ref:`slerp()<class_Quaternion_method_slerp>` и :ref:`spheric_cubic_interpolate()<class_Quaternion_method_spheric_cubic_interpolate>`, а также оператор ``*``.
+For a great introduction to quaternions, see `this video by 3Blue1Brown <https://www.youtube.com/watch?v=d4EgbgTm0Bg>`__. You do not need to know the math behind quaternions, as Godot provides several helper methods that handle it for you. These include :ref:`slerp()<class_Quaternion_method_slerp>` and :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>`, as well as the ``*`` operator.
 
-\ **Примечание:** Кватернионы должны быть нормализованы перед использованием для вращения (см. :ref:`normalized()<class_Quaternion_method_normalized>`).
+\ **Note:** Quaternions must be normalized before being used for rotation (see :ref:`normalized()<class_Quaternion_method_normalized>`).
 
-\ **Примечание:** Аналогично :ref:`Vector2<class_Vector2>` и :ref:`Vector3<class_Vector3>`, компоненты кватерниона по умолчанию используют 32-битную точность, в отличие от :ref:`float<class_float>`, который всегда 64-битный. Если требуется двойная точность, скомпилируйте движок с опцией ``precision=double``.
+\ **Note:** Similarly to :ref:`Vector2<class_Vector2>` and :ref:`Vector3<class_Vector3>`, the components of a quaternion use 32-bit precision by default, unlike :ref:`float<class_float>` which is always 64-bit. If double precision is needed, compile the engine with the option ``precision=double``.
+
+\ **Note:** In a boolean context, a quaternion will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Quaternion_constant_IDENTITY>`. Otherwise, a quaternion will always evaluate to ``true``.
 
 .. note::
 
@@ -375,7 +377,7 @@ Z-компонента кватерниона. Это значение вдол�
 
 :ref:`Quaternion<class_Quaternion>` **from_euler**\ (\ euler\: :ref:`Vector3<class_Vector3>`\ ) |static| :ref:`🔗<class_Quaternion_method_from_euler>`
 
-Создает новый **Quaternion** из заданного :ref:`Vector3<class_Vector3>` `углов Эйлера <https://en.wikipedia.org/wiki/Euler_angles>`__, в радианах. Этот метод всегда использует соглашение YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
+Constructs a new **Quaternion** from the given :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians. In Godot, Euler angles always use intrinsic order. This method always uses the intrinsic YXZ convention (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
 
 .. rst-class:: classref-item-separator
 
@@ -413,9 +415,9 @@ Z-компонента кватерниона. Это значение вдол�
 
 :ref:`Vector3<class_Vector3>` **get_euler**\ (\ order\: :ref:`int<class_int>` = 2\ ) |const| :ref:`🔗<class_Quaternion_method_get_euler>`
 
-Возвращает вращение этого кватерниона как :ref:`Vector3<class_Vector3>` `углов Эйлера <https://en.wikipedia.org/wiki/Euler_angles>`__ в радианах.
+Returns this quaternion's rotation as a :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians.
 
-Порядок каждого последовательного вращения можно изменить с помощью ``order`` (см. константы :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`). По умолчанию используется соглашение YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): сначала вычисляется Z (roll), затем X (pitch) и, наконец, Y (yaw). При использовании противоположного метода :ref:`from_euler()<class_Quaternion_method_from_euler>` этот порядок меняется на обратный.
+The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): since we are decomposing, local Z (roll) is calculated first, then local X (pitch), and lastly local Y (yaw). When using the opposite method :ref:`from_euler()<class_Quaternion_method_from_euler>` to compose a rotation, this order is reversed.
 
 .. rst-class:: classref-item-separator
 

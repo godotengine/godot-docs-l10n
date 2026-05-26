@@ -114,6 +114,14 @@ Modalità utilizzata per disegnare i cieli. Funziona solo con gli shader assegna
 
 Modalità utilizzata per impostare il colore e la densità dell'effetto nebbia volumetrica.
 
+.. _class_Shader_constant_MODE_TEXTURE_BLIT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Mode<enum_Shader_Mode>` **MODE_TEXTURE_BLIT** = ``5``
+
+Mode used for drawing to DrawableTexture resources via blit calls.
+
 .. rst-class:: classref-section-separator
 
 ----

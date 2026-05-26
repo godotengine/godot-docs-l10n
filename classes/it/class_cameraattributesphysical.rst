@@ -14,13 +14,15 @@ Impostazioni di telecamera basate sulla fisica.
 Descrizione
 ----------------------
 
-**CameraAttributesPhysical** serve per cambiare le impostazioni di rendering in base alle impostazioni di una fotocamera reale. È responsabile dell'esposizione, dell'esposizione automatica e della profondità di campo.
+**CameraAttributesPhysical** is used to set rendering settings based on a physically-based camera's settings. It is responsible for exposure, auto-exposure, and depth of field.
 
-Quando è utilizzato in un :ref:`WorldEnvironment<class_WorldEnvironment>`, fornisce impostazioni predefinite per l'esposizione, l'esposizione automatica e la profondità di campo che saranno utilizzate da tutte le telecamere senza i propri :ref:`CameraAttributes<class_CameraAttributes>`, inclusa la telecamera dell'editor. Quando è utilizzato in un :ref:`Camera3D<class_Camera3D>`, sostituirà qualsiasi :ref:`CameraAttributes<class_CameraAttributes>` impostato nel :ref:`WorldEnvironment<class_WorldEnvironment>` e sostituirà le proprietà :ref:`Camera3D.far<class_Camera3D_property_far>`, :ref:`Camera3D.near<class_Camera3D_property_near>`, :ref:`Camera3D.fov<class_Camera3D_property_fov>` e :ref:`Camera3D.keep_aspect<class_Camera3D_property_keep_aspect>` del :ref:`Camera3D<class_Camera3D>`. Quando è utilizzato in :ref:`VoxelGI<class_VoxelGI>` o :ref:`LightmapGI<class_LightmapGI>`, solo le impostazioni di esposizione saranno utilizzate.
+When used in a :ref:`WorldEnvironment<class_WorldEnvironment>` it provides default settings for exposure, auto-exposure, and depth of field that will be used by all cameras without their own :ref:`CameraAttributes<class_CameraAttributes>`, including the editor camera. When used in a :ref:`Camera3D<class_Camera3D>` it will override any :ref:`CameraAttributes<class_CameraAttributes>` set in the :ref:`WorldEnvironment<class_WorldEnvironment>` and will override the :ref:`Camera3D<class_Camera3D>`\ s :ref:`Camera3D.far<class_Camera3D_property_far>`, :ref:`Camera3D.near<class_Camera3D_property_near>`, :ref:`Camera3D.fov<class_Camera3D_property_fov>`, and :ref:`Camera3D.keep_aspect<class_Camera3D_property_keep_aspect>` properties. When used in :ref:`VoxelGI<class_VoxelGI>` or :ref:`LightmapGI<class_LightmapGI>`, only the exposure settings will be used.
 
-Le impostazioni predefinite sono pensate per l'uso in un ambiente esterno, ma nella documentazione di ciascuna impostazione è possibile trovare ulteriori suggerimenti per l'uso in un ambiente interno.
+The default settings are intended for use in an outdoor environment, tips for settings for use in an indoor environment can be found in each setting's documentation.
 
-\ **Nota:** La sfocatura della profondità di campo è supportata solo nei metodi di rendering Forward+ e Mobile, non in Compatibilità.
+\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+
+\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
 
 .. rst-class:: classref-introduction-group
 

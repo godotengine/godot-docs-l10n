@@ -7,14 +7,18 @@ AudioEffectReverb
 
 **繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-向音訊匯流排新增混響效果。
+Adds a reverberation audio effect to an audio bus.
+
+Emulates an echo by playing a blurred version of the input audio.
 
 .. rst-class:: classref-introduction-group
 
 說明
 ----
 
-模擬房間、音樂廳、洞穴或開放空間等聲學環境。
+A "reverb" effect plays the input audio back continuously, decaying over a period of time. It simulates sounds in different kinds of spaces, ranging from small rooms, to big caverns.
+
+See also :ref:`AudioEffectDelay<class_AudioEffectDelay>` for a non-blurry type of echo.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +26,8 @@ AudioEffectReverb
 ----
 
 - :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 - `第三人稱射擊（TPS）示範 <https://godotengine.org/asset-library/asset/2710>`__
 
@@ -71,7 +77,7 @@ AudioEffectReverb
 - |void| **set_damping**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping**\ (\ )
 
-定義虛擬房間牆面的反射度，取值 0–1。
+Defines how reflective the imaginary room's walls are. The more reflective, the more high frequency content the reverb has. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +94,7 @@ AudioEffectReverb
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-原始聲音的輸出百分比；0 時僅輸出處理後的聲音。取值 0–1。
+The volume ratio of the original audio. At 0, only the modified audio is outputted. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +111,7 @@ AudioEffectReverb
 - |void| **set_hpf**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_hpf**\ (\ )
 
-高通濾波器會通過高於截止頻率的訊號並衰減低於該頻率的訊號。取值 0–1。
+High-pass filter allows frequencies higher than a certain cutoff threshold and attenuates frequencies lower than the cutoff threshold. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +128,7 @@ AudioEffectReverb
 - |void| **set_predelay_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_feedback**\ (\ )
 
-預延遲輸出百分比，取值 0–1。
+Gain of early reflection copies. At higher values, early reflection copies are louder and ring out for longer. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +145,7 @@ AudioEffectReverb
 - |void| **set_predelay_msec**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_msec**\ (\ )
 
-原始訊號與混響早期反射間的時間（毫秒）。
+Time between the original audio and the early reflections of the reverb signal, in milliseconds. Value can range from 20 to 500.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +179,7 @@ AudioEffectReverb
 - |void| **set_spread**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_spread**\ (\ )
 
-調整混響尾音的立體聲寬度；1 為最寬。取值 0–1。
+Widens or narrows the stereo image of the reverb tail. At 1, it fully widens. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +196,7 @@ AudioEffectReverb
 - |void| **set_wet**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wet**\ (\ )
 
-處理後聲音的輸出百分比；0 時僅輸出原始聲音。取值 0–1。
+The volume ratio of the modified audio. At 0, only the original audio is outputted. Value can range from 0 to 1.
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

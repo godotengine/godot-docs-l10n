@@ -85,6 +85,14 @@ enum **Fill**: :ref:`🔗<enum_GradientTexture2D_Fill>`
 
 Цвета линейно интерполируются в квадратный узор.
 
+.. _class_GradientTexture2D_constant_FILL_CONIC:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Fill<enum_GradientTexture2D_Fill>` **FILL_CONIC** = ``3``
+
+The colors are linearly interpolated in a cone pattern.
+
 .. rst-class:: classref-item-separator
 
 ----

@@ -23,7 +23,7 @@ GDExtension
 Обучающие материалы
 --------------------------------------
 
-- :doc:`Обзор расширения GDExtension <../tutorials/scripting/gdextension/what_is_gdextension>`
+- :doc:`Обзор расширения GDExtension <../engine_details/engine_api/gdextension/what_is_gdextension>`
 
 - :doc:`Пример GDExtension на C++ <../tutorials/scripting/cpp/gdextension_cpp_example>`
 

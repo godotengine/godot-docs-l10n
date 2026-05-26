@@ -20,6 +20,13 @@ Un nœud qui crée une fenêtre. La fenêtre peut être soit une fenêtre du sys
 
 Durant l'exécution, les **Window**\ s ne fermeront pas automatiquement lorsque demandé. Vous devez le manipuler manuellement en utilisant le signal :ref:`close_requested<class_Window_signal_close_requested>` (ceci s'applique à la fois à l'appui sur le bouton de fermeture et au clic en dehors d'une popup).
 
+.. rst-class:: classref-introduction-group
+
+Tutoriels
+------------------
+
+- :doc:`HDR output <../tutorials/rendering/hdr_output>`
+
 .. rst-class:: classref-reftable-group
 
 Propriétés
@@ -58,6 +65,8 @@ Propriétés
    | :ref:`bool<class_bool>`                                         | :ref:`extend_to_title<class_Window_property_extend_to_title>`                     | ``false``                |
    +-----------------------------------------------------------------+-----------------------------------------------------------------------------------+--------------------------+
    | :ref:`bool<class_bool>`                                         | :ref:`force_native<class_Window_property_force_native>`                           | ``false``                |
+   +-----------------------------------------------------------------+-----------------------------------------------------------------------------------+--------------------------+
+   | :ref:`bool<class_bool>`                                         | :ref:`hdr_output_requested<class_Window_property_hdr_output_requested>`           | ``false``                |
    +-----------------------------------------------------------------+-----------------------------------------------------------------------------------+--------------------------+
    | :ref:`WindowInitialPosition<enum_Window_WindowInitialPosition>` | :ref:`initial_position<class_Window_property_initial_position>`                   | ``0``                    |
    +-----------------------------------------------------------------+-----------------------------------------------------------------------------------+--------------------------+
@@ -148,6 +157,8 @@ Méthodes
    | :ref:`Window<class_Window>`                         | :ref:`get_focused_window<class_Window_method_get_focused_window>`\ (\ ) |static|                                                                                                                                                                        |
    +-----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`LayoutDirection<enum_Window_LayoutDirection>` | :ref:`get_layout_direction<class_Window_method_get_layout_direction>`\ (\ ) |const|                                                                                                                                                                     |
+   +-----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                           | :ref:`get_output_max_linear_value<class_Window_method_get_output_max_linear_value>`\ (\ ) |const|                                                                                                                                                       |
    +-----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Vector2i<class_Vector2i>`                     | :ref:`get_position_with_decorations<class_Window_method_get_position_with_decorations>`\ (\ ) |const|                                                                                                                                                   |
    +-----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -258,6 +269,10 @@ Méthodes
    | |void|                                              | :ref:`set_ime_position<class_Window_method_set_ime_position>`\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ )                                                                                                                                         |
    +-----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`set_layout_direction<class_Window_method_set_layout_direction>`\ (\ direction\: :ref:`LayoutDirection<enum_Window_LayoutDirection>`\ )                                                                                                            |
+   +-----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`set_taskbar_progress_state<class_Window_method_set_taskbar_progress_state>`\ (\ state\: :ref:`ProgressState<enum_DisplayServer_ProgressState>`\ )                                                                                                 |
+   +-----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                              | :ref:`set_taskbar_progress_value<class_Window_method_set_taskbar_progress_value>`\ (\ value\: :ref:`float<class_float>`\ )                                                                                                                              |
    +-----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                                              | :ref:`set_unparent_when_invisible<class_Window_method_set_unparent_when_invisible>`\ (\ unparent\: :ref:`bool<class_bool>`\ )                                                                                                                           |
    +-----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -444,6 +459,18 @@ Ce signal peut être utilisé pour traiter la fermeture de la fenêtre, par exem
 **nonclient_window_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) :ref:`🔗<class_Window_signal_nonclient_window_input>`
 
 Emitted when the mouse event is received by the custom decoration area defined by :ref:`nonclient_area<class_Window_property_nonclient_area>`, and normal input to the window is blocked (such as when it has an exclusive child opened). ``event``'s position is in the embedder's coordinate system.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Window_signal_output_max_linear_value_changed:
+
+.. rst-class:: classref-signal
+
+**output_max_linear_value_changed**\ (\ output_max_linear_value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_signal_output_max_linear_value_changed>`
+
+Emitted when the output max linear value returned by :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed. This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen. ``output_max_linear_value`` is the new value.
 
 .. rst-class:: classref-item-separator
 
@@ -1279,6 +1306,23 @@ Si ``true``, une fenêtre native sera utilisée indépendamment des paramètres 
 
 ----
 
+.. _class_Window_property_hdr_output_requested:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **hdr_output_requested** = ``false`` :ref:`🔗<class_Window_property_hdr_output_requested>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_hdr_output_requested**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_hdr_output_requested**\ (\ )
+
+If ``true``, requests HDR output for the **Window**, falling back to SDR if not supported, and automatically switching between HDR and SDR as the window moves between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of this **Window** must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Window_property_initial_position:
 
 .. rst-class:: classref-property
@@ -1973,6 +2017,51 @@ Renvoie la fenêtre ayant le focus.
 :ref:`LayoutDirection<enum_Window_LayoutDirection>` **get_layout_direction**\ (\ ) |const| :ref:`🔗<class_Window_method_get_layout_direction>`
 
 Renvoie la direction de la mise en page et la direction d'écriture du texte.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Window_method_get_output_max_linear_value:
+
+.. rst-class:: classref-method
+
+:ref:`float<class_float>` **get_output_max_linear_value**\ (\ ) |const| :ref:`🔗<class_Window_method_get_output_max_linear_value>`
+
+Returns the maximum value for linear color components that can be displayed in this window, regardless of SDR or HDR output. Returns ``1.0`` if HDR is not enabled or not supported. The :ref:`output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` signal will be emitted whenever this value changes.
+
+This value is used by tonemapping and other :ref:`Environment<class_Environment>` effects to ensure that bright colors are presented in the range that can be displayed by this window. When using this maximum linear value in your project, it should only be used to present colors directly to the screen without tonemapping and without influencing lighting, post-processing effects, or surrounding color. The following is an example that produces the brightest purple color that the screen can produce:
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    func _process(_delta):
+        # output_max_linear_value may change often, so do this every frame.
+        var max_linear_value = get_window().get_output_max_linear_value()
+        # Replace this with your color:
+        var original_color = Color.PURPLE
+        # Normalize to max_linear_value to produce the brightest color possible,
+        # regardless of SDR or HDR output:
+        var bright_color = normalize_color(original_color, max_linear_value)
+
+
+    func normalize_color(srgb_color, max_linear_value = 1.0):
+        # Color must be linear-encoded to use math operations.
+        var linear_color = srgb_color.srgb_to_linear()
+        var max_rgb_value = maxf(linear_color.r, maxf(linear_color.g, linear_color.b))
+        var brightness_scale = max_linear_value / max_rgb_value
+        linear_color *= brightness_scale
+        # Undo changes to the alpha channel, which should not be modified.
+        linear_color.a = srgb_color.a
+        # Convert back to nonlinear sRGB encoding, which is required for Color in
+        # Godot unless stated otherwise.
+        return linear_color.linear_to_srgb()
+
+
+
+\ **Note:** You will need to convert sRGB colors to linear before multiplying by this value to get correct results.
 
 .. rst-class:: classref-item-separator
 
@@ -2703,6 +2792,36 @@ Déplace l'IME à la position donnée.
 |void| **set_layout_direction**\ (\ direction\: :ref:`LayoutDirection<enum_Window_LayoutDirection>`\ ) :ref:`🔗<class_Window_method_set_layout_direction>`
 
 Définit la direction de mise en page et la direction d'écriture de texte. Les mises en page de droite à gauche sont nécessaires pour certaines langues (par exemple, l'arabe et l'hébreu).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Window_method_set_taskbar_progress_state:
+
+.. rst-class:: classref-method
+
+|void| **set_taskbar_progress_state**\ (\ state\: :ref:`ProgressState<enum_DisplayServer_ProgressState>`\ ) :ref:`🔗<class_Window_method_set_taskbar_progress_state>`
+
+Sets the type and state of the progress bar on the taskbar/dock icon of the **Window**. See :ref:`ProgressState<enum_DisplayServer_ProgressState>` for possible values and how each mode behaves.
+
+\ **Note:** This method is implemented only on Windows and macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Window_method_set_taskbar_progress_value:
+
+.. rst-class:: classref-method
+
+|void| **set_taskbar_progress_value**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_method_set_taskbar_progress_value>`
+
+Creates a progress bar on the taskbar/dock icon of the **Window** if it does not exist, sets the progress of the icon.
+
+\ ``value`` acts as a relative percentage value, ranges from ``0.0`` (lowest) to ``1.0`` (highest).
+
+\ **Note:** This method is implemented only on Windows and macOS.
 
 .. rst-class:: classref-item-separator
 

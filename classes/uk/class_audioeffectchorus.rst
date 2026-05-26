@@ -7,14 +7,22 @@ AudioEffectChorus
 
 **Успадковує:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Додає звуковий ефект хору.
+Adds a chorus audio effect to an audio bus.
+
+Gives the impression of multiple audio sources.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Додає звуковий ефект хору. Ефект застосовує фільтр із голосами, щоб дублювати джерело звуку та керувати ним через фільтр.
+A "chorus" effect creates multiple copies of the original audio (called "voices") with variations in pitch, and layers on top of the original, giving the impression that the sound comes from multiple sources. This creates spectral and spatial movement.
+
+Each voice is played a short period of time after the original audio, controlled by ``delay``. An internal low-frequency oscillator (LFO) controls their pitch, and ``depth`` controls the LFO's maximum amount.
+
+In the real world, this kind of effect is found in pianos, choirs, and instrument ensembles.
+
+This effect can also be used to widen mono audio and make digital sounds have a more natural or analog quality.
 
 .. rst-class:: classref-introduction-group
 
@@ -22,6 +30,8 @@ AudioEffectChorus
 ------------------
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -141,7 +151,7 @@ AudioEffectChorus
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-Необроблений сигнал ефекту.
+The volume ratio of the original audio. Value can range from 0 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +168,7 @@ AudioEffectChorus
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Частота зрізу голосу.
+The frequency threshold of the voice's low-pass filter in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +185,7 @@ AudioEffectChorus
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Затримка голосового сигналу.
+The delay of the voice in milliseconds, compared to the original audio.
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +202,7 @@ AudioEffectChorus
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Глибина голосового фільтра.
+The depth of the voice's low-frequency oscillator in milliseconds.
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +219,7 @@ AudioEffectChorus
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Гучність голосу.
+The gain of the voice in dB.
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +236,7 @@ AudioEffectChorus
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Рівень панорамування голосу.
+The pan position of the voice.
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +253,7 @@ AudioEffectChorus
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Швидкість фільтрації голосу.
+The rate of the voice's low-frequency oscillator in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +270,7 @@ AudioEffectChorus
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Частота зрізу голосу.
+The frequency threshold of the voice's low-pass filter in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +287,7 @@ AudioEffectChorus
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Затримка голосового сигналу.
+The delay of the voice in milliseconds, compared to the original audio.
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +304,7 @@ AudioEffectChorus
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Глибина голосового фільтра.
+The depth of the voice's low-frequency oscillator in milliseconds.
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +321,7 @@ AudioEffectChorus
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Гучність голосу.
+The gain of the voice in dB.
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +338,7 @@ AudioEffectChorus
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Рівень панорамування голосу.
+The pan position of the voice.
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +355,7 @@ AudioEffectChorus
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Швидкість фільтрації голосу.
+The rate of the voice's low-frequency oscillator in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +372,7 @@ AudioEffectChorus
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Частота зрізу голосу.
+The frequency threshold of the voice's low-pass filter in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +389,7 @@ AudioEffectChorus
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Затримка голосового сигналу.
+The delay of the voice in milliseconds, compared to the original audio.
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +406,7 @@ AudioEffectChorus
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Глибина голосового фільтра.
+The depth of the voice's low-frequency oscillator in milliseconds.
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +423,7 @@ AudioEffectChorus
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Гучність голосу.
+The gain of the voice in dB.
 
 .. rst-class:: classref-item-separator
 
@@ -430,7 +440,7 @@ AudioEffectChorus
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Рівень панорамування голосу.
+The pan position of the voice.
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +457,7 @@ AudioEffectChorus
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Швидкість фільтрації голосу.
+The rate of the voice's low-frequency oscillator in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -464,7 +474,7 @@ AudioEffectChorus
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Частота зрізу голосу.
+The frequency threshold of the voice's low-pass filter in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -481,7 +491,7 @@ AudioEffectChorus
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Затримка голосового сигналу.
+The delay of the voice in milliseconds, compared to the original audio.
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +508,7 @@ AudioEffectChorus
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Глибина голосового фільтра.
+The depth of the voice's low-frequency oscillator in milliseconds.
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +525,7 @@ AudioEffectChorus
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Гучність голосу.
+The gain of the voice in dB.
 
 .. rst-class:: classref-item-separator
 
@@ -532,7 +542,7 @@ AudioEffectChorus
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Рівень панорамування голосу.
+The pan position of the voice.
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +559,7 @@ AudioEffectChorus
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-Швидкість фільтрації голосу.
+The rate of the voice's low-frequency oscillator in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +576,7 @@ AudioEffectChorus
 - |void| **set_voice_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_voice_count**\ (\ )
 
-Кількість голосів в ефекті.
+The number of voices in the effect. Value can range from 1 to 4.
 
 .. rst-class:: classref-item-separator
 
@@ -583,7 +593,7 @@ AudioEffectChorus
 - |void| **set_wet**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wet**\ (\ )
 
-Оброблений сигнал ефекту.
+The volume ratio of all voices. Value can range from 0 to 1.
 
 .. rst-class:: classref-section-separator
 
@@ -600,9 +610,7 @@ AudioEffectChorus
 
 :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_cutoff_hz>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Returns the frequency threshold of a given ``voice_idx``'s low-pass filter in Hz. Frequencies above this value are removed from the voice.
 
 .. rst-class:: classref-item-separator
 
@@ -614,9 +622,7 @@ AudioEffectChorus
 
 :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_delay_ms>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Returns the delay of a given ``voice_idx`` in milliseconds, compared to the original audio.
 
 .. rst-class:: classref-item-separator
 
@@ -628,9 +634,7 @@ AudioEffectChorus
 
 :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_depth_ms>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Returns the depth of a given ``voice_idx``'s low-frequency oscillator in milliseconds.
 
 .. rst-class:: classref-item-separator
 
@@ -642,9 +646,7 @@ AudioEffectChorus
 
 :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_level_db>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Returns the gain of a given ``voice_idx`` in dB.
 
 .. rst-class:: classref-item-separator
 
@@ -656,9 +658,7 @@ AudioEffectChorus
 
 :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_pan>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Returns the pan position of a given ``voice_idx``. Negative values mean the left channel, positive mean the right.
 
 .. rst-class:: classref-item-separator
 
@@ -670,9 +670,7 @@ AudioEffectChorus
 
 :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_rate_hz>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Returns the rate of a given ``voice_idx``'s low-frequency oscillator in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -684,9 +682,7 @@ AudioEffectChorus
 
 |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_cutoff_hz>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Sets the frequency threshold of a given ``voice_idx``'s low-pass filter in Hz. Frequencies above ``cutoff_hz`` are removed from ``voice_idx``. Value can range from 1 to 20500.
 
 .. rst-class:: classref-item-separator
 
@@ -698,9 +694,7 @@ AudioEffectChorus
 
 |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_delay_ms>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Sets the delay of a given ``voice_idx`` in milliseconds, compared to the original audio. Value can range from 0 to 50.
 
 .. rst-class:: classref-item-separator
 
@@ -712,9 +706,7 @@ AudioEffectChorus
 
 |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_depth_ms>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Sets the depth of a given ``voice_idx``'s low-frequency oscillator in milliseconds. Value can range from 0 to 20.
 
 .. rst-class:: classref-item-separator
 
@@ -726,9 +718,7 @@ AudioEffectChorus
 
 |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_level_db>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Sets the gain of a given ``voice_idx`` in dB. Value can range from -60 to 24.
 
 .. rst-class:: classref-item-separator
 
@@ -740,9 +730,7 @@ AudioEffectChorus
 
 |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_pan>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Sets the pan position of a given ``voice_idx``. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
 
 .. rst-class:: classref-item-separator
 
@@ -754,9 +742,7 @@ AudioEffectChorus
 
 |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_rate_hz>`
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
+Sets the rate of a given ``voice_idx``'s low-frequency oscillator in Hz. Value can range from 0.1 to 20.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

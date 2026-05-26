@@ -87,7 +87,7 @@ La scheda Script, che contiene l'editor di script e il browser di riferimento de
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_ASSET_LIB** = ``2``
 
-La scheda AssetLib. Se questa funzionalità è disabilitata, la scheda AssetLib non sarà visualizzata.
+The Asset Store tab. If this feature is disabled, the Asset Store tab won't display.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SCENE_TREE:
 

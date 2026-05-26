@@ -23,6 +23,10 @@ AudioEffectSpectrumAnalyzerInstance
 教學
 ----
 
+- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+
+- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+
 - `音訊頻譜視覺化範例 <https://godotengine.org/asset-library/asset/2762>`__
 
 .. rst-class:: classref-reftable-group

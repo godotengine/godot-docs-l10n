@@ -185,9 +185,11 @@ Godot 編輯器用於選擇 :ref:`Resource<class_Resource>` 型別屬性的控�
 
 |void| **_set_create_options**\ (\ menu_node\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__set_create_options>`
 
-在更新 **EditorResourcePicker** 的本文功能表時呼叫該虛方法。實作該方法以使用你自己的選項覆蓋“新建 ...”專案。\ ``menu_node`` 是對 :ref:`PopupMenu<class_PopupMenu>` 節點的引用。
+This virtual method is called when updating the context menu of an :ref:`editable<class_EditorResourcePicker_property_editable>` **EditorResourcePicker**. Implement this method to override the "New" items section with your own options. ``menu_node`` is a reference to the :ref:`PopupMenu<class_PopupMenu>` node.
 
-\ **注意：**\ 實作 :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` 來處理這些自訂項。
+\ **Note:** Implement :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` to handle these custom items.
+
+\ **Note:** Relevant built-in options ("Load", "Copy", "Paste", etc.) are automatically added to the ``menu_node`` afterwards, using their hard-coded IDs starting from ``0``. Custom options need to use non-colliding IDs to be handled properly. Using ``id = 100 + custom_option_index`` is safe (this is what the default items in the "New" section use).
 
 .. rst-class:: classref-item-separator
 

@@ -134,6 +134,8 @@ Méthodes
    +-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                             | :ref:`get_column_width<class_Tree_method_get_column_width>`\ (\ column\: :ref:`int<class_int>`\ ) |const|                                                                                                  |
    +-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`RID<class_RID>`                                             | :ref:`get_custom_drawing_canvas_item<class_Tree_method_get_custom_drawing_canvas_item>`\ (\ ) |const|                                                                                                      |
+   +-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Rect2<class_Rect2>`                                         | :ref:`get_custom_popup_rect<class_Tree_method_get_custom_popup_rect>`\ (\ ) |const|                                                                                                                        |
    +-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                             | :ref:`get_drop_section_at_position<class_Tree_method_get_drop_section_at_position>`\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const|                                                                |
@@ -197,6 +199,8 @@ Propriétés du thème
    | :ref:`Color<class_Color>`         | :ref:`children_hl_line_color<class_Tree_theme_color_children_hl_line_color>`             | ``Color(0.27, 0.27, 0.27, 1)``      |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`Color<class_Color>`         | :ref:`custom_button_font_highlight<class_Tree_theme_color_custom_button_font_highlight>` | ``Color(0.95, 0.95, 0.95, 1)``      |
+   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`drop_on_item_color<class_Tree_theme_color_drop_on_item_color>`                     | ``Color(1, 1, 1, 1)``               |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`Color<class_Color>`         | :ref:`drop_position_color<class_Tree_theme_color_drop_position_color>`                   | ``Color(1, 1, 1, 1)``               |
    +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
@@ -766,7 +770,9 @@ Si ``true``, les titres des colonnes sont visibles.
 - |void| **set_columns**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_columns**\ (\ )
 
-Le nombre de colonnes.
+The number of columns.
+
+Prints an error and does not allow setting the columns during mouse selection.
 
 .. rst-class:: classref-item-separator
 
@@ -955,7 +961,9 @@ Descriptions des méthodes
 
 |void| **clear**\ (\ ) :ref:`🔗<class_Tree_method_clear>`
 
-Efface l'arborescence. Cela retire tous les éléments.
+Clears the tree. This removes all items.
+
+Prints an error and does not allow clearing the tree if called during mouse selection.
 
 .. rst-class:: classref-item-separator
 
@@ -972,6 +980,8 @@ Creates an item in the tree and adds it as a child of ``parent``, which can be e
 If ``parent`` is ``null``, the root item will be the parent, or the new item will be the root itself if the tree is empty.
 
 The new item will be the ``index``-th child of parent, or it will be the last child if there are not enough siblings.
+
+Prints an error and returns ``null`` if called during mouse selection, or if the ``parent`` does not belong to this tree.
 
 .. rst-class:: classref-item-separator
 
@@ -1124,6 +1134,20 @@ Returns the column title's tooltip text.
 :ref:`int<class_int>` **get_column_width**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Tree_method_get_column_width>`
 
 Renvoie la largeur de la colonne en pixels.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Tree_method_get_custom_drawing_canvas_item:
+
+.. rst-class:: classref-method
+
+:ref:`RID<class_RID>` **get_custom_drawing_canvas_item**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_custom_drawing_canvas_item>`
+
+Returns the internal canvas item designated for custom drawing. See :ref:`TreeItem.set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>`.
+
+\ **Note:** This canvas item clears automatically on each Tree draw call.
 
 .. rst-class:: classref-item-separator
 
@@ -1492,6 +1516,18 @@ La :ref:`Color<class_Color>` des liens relationnels entre le :ref:`TreeItem<clas
 :ref:`Color<class_Color>` **custom_button_font_highlight** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_Tree_theme_color_custom_button_font_highlight>`
 
 La :ref:`Color<class_Color>` du texte pour un mode de cellule :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` quand elle est survolée.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Tree_theme_color_drop_on_item_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **drop_on_item_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Tree_theme_color_drop_on_item_color>`
+
+:ref:`Color<class_Color>` used to draw the highlight outline when dragging items that can only be dropped "on" other items.
 
 .. rst-class:: classref-item-separator
 

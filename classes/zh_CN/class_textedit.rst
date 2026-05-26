@@ -366,6 +366,8 @@ TextEdit
    +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`is_line_gutter_clickable<class_TextEdit_method_is_line_gutter_clickable>`\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`\ ) |const|                                                                                                                        |
    +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                      | :ref:`is_line_in_viewport<class_TextEdit_method_is_line_in_viewport>`\ (\ line\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                  |
+   +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`is_line_wrapped<class_TextEdit_method_is_line_wrapped>`\ (\ line\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                          |
    +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                      | :ref:`is_menu_visible<class_TextEdit_method_is_menu_visible>`\ (\ ) |const|                                                                                                                                                                                                        |
@@ -1588,7 +1590,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 - |void| **set_fit_content_height_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_height_enabled**\ (\ )
 
-如果为 ``true``\ ，则 **TextEdit** 将禁用垂直滚动，让最小高度与可见行数相匹配。该属性与 :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` 同时为 ``true`` 时不会显示滚动条。
+If ``true``, **TextEdit** fits its minimum height to the number of visible lines instead of scrolling vertically. If a maximum height is set (for example via :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) and content exceeds it, a vertical scrollbar is shown.
 
 .. rst-class:: classref-item-separator
 
@@ -1605,7 +1607,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 - |void| **set_fit_content_width_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_width_enabled**\ (\ )
 
-如果为 ``true``\ ，则 **TextEdit** 将禁用水平滚动，让最小宽度与文本中最宽的行相匹配。该属性与 :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` 同时为 ``true`` 时不会显示滚动条。
+If ``true``, **TextEdit** fits its minimum width to the widest line instead of scrolling horizontally. If a maximum width is set (for example via :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) and content exceeds it, a horizontal scrollbar is shown.
 
 .. rst-class:: classref-item-separator
 
@@ -3242,9 +3244,11 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 
 :ref:`bool<class_bool>` **is_caret_visible**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_is_caret_visible>`
 
-如果光标可见则返回 ``true``\ ，否则返回 ``false``\ 。启用滚动时，可以将超出可滚动区域的光标视为隐藏。
+Returns ``true`` if the caret is visible, ``false`` otherwise. A caret will be considered hidden if it is outside the scrollable area when scrolling is enabled.
 
-\ **注意：**\ 如果光标仍然在可滚动区域内，\ :ref:`is_caret_visible()<class_TextEdit_method_is_caret_visible>` 就不会考虑它是否在屏幕外。即便光标位于屏幕外，只要它满足 **TextEdit** 自身的可见条件，该函数就会返回 ``true``\ 。这包括使用 :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` 和 :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` 导致 **TextEdit** 超出视口边界的情况。
+\ **Note:** :ref:`is_caret_visible()<class_TextEdit_method_is_caret_visible>` does not account for a caret being off-screen if it is still within the scrollable area. It will return ``true`` even if the caret is off-screen as long as it meets **TextEdit**'s own conditions for being visible. This includes uses of :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` and :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` that cause the **TextEdit** to expand beyond the viewport's bounds.
+
+\ **Note:** This method does *not* guarantee an accurate visibility check immediately after setting the caret position. The correct value may only be available in the next frame after the **TextEdit** has finished drawing. This also applies to any operation that causes the **TextEdit** to change in size.
 
 .. rst-class:: classref-item-separator
 
@@ -3317,6 +3321,18 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 :ref:`bool<class_bool>` **is_line_gutter_clickable**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_is_line_gutter_clickable>`
 
 如果给定索引处的边栏在给定的行处可点击，则返回 ``true``\ 。见 :ref:`set_line_gutter_clickable()<class_TextEdit_method_set_line_gutter_clickable>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextEdit_method_is_line_in_viewport:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_line_in_viewport**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_is_line_in_viewport>`
+
+Returns ``true`` if the given line is within the scope of the scrollable area of the viewport.
 
 .. rst-class:: classref-item-separator
 

@@ -16,6 +16,13 @@ Descrizione
 
 Questo è un flusso che può essere dotato di sotto-flussi, i quali saranno riprodotti in sincronia. I flussi cominciano esattamente allo stesso momento quando si preme play, e termineranno quando termina l'ultimo di essi. Se uno dei sotto-flussi va in ripetizione, la riproduzione continuerà.
 
+.. rst-class:: classref-introduction-group
+
+Tutorial
+----------------
+
+- :doc:`Flussi audio <../tutorials/audio/audio_streams>`
+
 .. rst-class:: classref-reftable-group
 
 Proprietà

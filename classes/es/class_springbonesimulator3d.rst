@@ -14,19 +14,21 @@ Un :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` para aplicar un bamboleo 
 Descripción
 ----------------------
 
-Este :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` puede usarse para menear el pelo, la ropa y las colas.Este modificador se comporta de forma diferente a :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>`, ya que intenta devolver la pose original después de la modificación.
+This :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` can be used to wiggle hair, cloth, and tails. This modifier behaves differently from :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` as it attempts to return the original pose after modification.
 
-Si configuras :ref:`set_root_bone()<class_SpringBoneSimulator3D_method_set_root_bone>` y :ref:`set_end_bone()<class_SpringBoneSimulator3D_method_set_end_bone>`, se tratará como una cadena de huesos. Ten en cuenta que no admite una cadena ramificada como las cadenas en forma de Y.
+If you setup :ref:`set_root_bone()<class_SpringBoneSimulator3D_method_set_root_bone>` and :ref:`set_end_bone()<class_SpringBoneSimulator3D_method_set_end_bone>`, it is treated as one bone chain. Note that it does not support a branched chain like Y-shaped chains.
 
-Cuando se crea una cadena de huesos, se genera un array a partir de los huesos que existen entre ellos y se enumeran en la lista de articulaciones.
+When a bone chain is created, an array is generated from the bones that exist in between and listed in the joint list.
 
-Se pueden aplicar varias propiedades a cada articulación, como :ref:`set_joint_stiffness()<class_SpringBoneSimulator3D_method_set_joint_stiffness>`, :ref:`set_joint_drag()<class_SpringBoneSimulator3D_method_set_joint_drag>` y :ref:`set_joint_gravity()<class_SpringBoneSimulator3D_method_set_joint_gravity>`.
+Several properties can be applied to each joint, such as :ref:`set_joint_stiffness()<class_SpringBoneSimulator3D_method_set_joint_stiffness>`, :ref:`set_joint_drag()<class_SpringBoneSimulator3D_method_set_joint_drag>`, and :ref:`set_joint_gravity()<class_SpringBoneSimulator3D_method_set_joint_gravity>`.
 
-Para simplificar, puedes establecer valores para todas las articulaciones al mismo tiempo utilizando una :ref:`Curve<class_Curve>`. Si deseas especificar valores detallados individualmente, establece :ref:`set_individual_config()<class_SpringBoneSimulator3D_method_set_individual_config>` a ``true``.
+For simplicity, you can set values to all joints at the same time by using a :ref:`Curve<class_Curve>`. If you want to specify detailed values individually, set :ref:`set_individual_config()<class_SpringBoneSimulator3D_method_set_individual_config>` to ``true``.
 
-Para la simulación física, **SpringBoneSimulator3D** puede tener hijos como colisiones independientes que no están relacionadas con :ref:`PhysicsServer3D<class_PhysicsServer3D>`, véase también :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>`.
+For physical simulation, **SpringBoneSimulator3D** can have children as self-standing collisions that are not related to :ref:`PhysicsServer3D<class_PhysicsServer3D>`, see also :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>`.
 
-\ **Advertencia:** Un **SpringBoneSimulator3D** escalado probablemente no se comportará como se espera. Asegúrate de que el :ref:`Skeleton3D<class_Skeleton3D>` padre y sus huesos no estén escalados.
+\ **Warning:** A scaled **SpringBoneSimulator3D** will likely not behave as expected. Make sure that the parent :ref:`Skeleton3D<class_Skeleton3D>` and its bones are not scaled.
+
+\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 
@@ -1146,7 +1148,9 @@ Establece el radio de la articulación en ``joint`` en la lista de articulacione
 
 Sets the rotation axis at ``joint`` in the bone chain's joint list when :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` is ``true``.
 
-The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`'s space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+
+In here, the reference pose is the bone pose immediately before the simulation.
 
 \ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
 
@@ -1240,7 +1244,9 @@ Establece el nombre del hueso raíz de la cadena de huesos.
 
 Sets the rotation axis of the bone chain. If set to a specific axis, it acts like a hinge joint. The value is cached in each joint setting in the joint list.
 
-The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`'s space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+
+In here, the reference pose is the bone pose immediately before the simulation.
 
 \ **Note:** The rotation axis vector and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
 

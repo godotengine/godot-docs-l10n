@@ -23,7 +23,7 @@ GDExtensionManager carga, inicializa y realiza un seguimiento de todas las bibli
 Tutoriales
 --------------------
 
-- :doc:`Descripción general de GDExtension <../tutorials/scripting/gdextension/what_is_gdextension>`
+- :doc:`Descripción general de GDExtension <../engine_details/engine_api/gdextension/what_is_gdextension>`
 
 - :doc:`Ejemplo de GDExtension en C++ <../tutorials/scripting/cpp/gdextension_cpp_example>`
 

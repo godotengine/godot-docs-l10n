@@ -75,6 +75,8 @@ SkeletonModification2DJiggle
    +---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`         | :ref:`get_use_colliders<class_SkeletonModification2DJiggle_method_get_use_colliders>`\ (\ ) |const|                                                                                                 |
    +---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                          | :ref:`reset<class_SkeletonModification2DJiggle_method_reset>`\ (\ )                                                                                                                                 |
+   +---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                          | :ref:`set_collision_mask<class_SkeletonModification2DJiggle_method_set_collision_mask>`\ (\ collision_mask\: :ref:`int<class_int>`\ )                                                               |
    +---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |void|                          | :ref:`set_jiggle_joint_bone2d_node<class_SkeletonModification2DJiggle_method_set_jiggle_joint_bone2d_node>`\ (\ joint_idx\: :ref:`int<class_int>`, bone2d_node\: :ref:`NodePath<class_NodePath>`\ ) |
@@ -344,6 +346,18 @@ SkeletonModification2DJiggle
 :ref:`bool<class_bool>` **get_use_colliders**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DJiggle_method_get_use_colliders>`
 
 返回 Jiggle 修改器在求解时是否考虑物理碰撞器。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_SkeletonModification2DJiggle_method_reset:
+
+.. rst-class:: classref-method
+
+|void| **reset**\ (\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_reset>`
+
+Resets the internal jiggle simulation state to the current bone positions, clearing velocity, acceleration, and accumulated forces.
 
 .. rst-class:: classref-item-separator
 
