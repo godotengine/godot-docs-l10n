@@ -63,6 +63,7 @@ tutorials/editor/project_settings.pot
 tutorials/editor/script_editor.pot
 tutorials/editor/default_key_mapping.pot
 tutorials/editor/customizing_editor.pot
+tutorials/editor/game_embedding.pot
 tutorials/editor/using_the_xr_editor.pot
 tutorials/editor/using_the_android_editor.pot
 tutorials/editor/using_the_web_editor.pot
@@ -279,7 +280,6 @@ tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.pot
 tutorials/platform/android/resolving_crashes_on_android.pot
 tutorials/platform/ios/index.pot
 tutorials/platform/ios/ios_plugin.pot
-tutorials/platform/ios/plugins_for_ios.pot
 tutorials/platform/web/index.pot
 tutorials/platform/web/javascript_bridge.pot
 tutorials/platform/web/html5_shell_classref.pot
@@ -300,6 +300,7 @@ tutorials/rendering/viewports.pot
 tutorials/rendering/multiple_resolutions.pot
 tutorials/rendering/jitter_stutter.pot
 tutorials/rendering/compositor.pot
+tutorials/rendering/hdr_output.pot
 tutorials/scripting/index.pot
 tutorials/scripting/gdscript/index.pot
 tutorials/scripting/gdscript/gdscript_basics.pot
@@ -347,16 +348,11 @@ tutorials/scripting/cpp/index.pot
 tutorials/scripting/cpp/about_godot_cpp.pot
 tutorials/scripting/cpp/gdextension_cpp_example.pot
 tutorials/scripting/cpp/build_system/index.pot
-tutorials/scripting/cpp/build_system/cmake.pot
 tutorials/scripting/cpp/build_system/scons.pot
+tutorials/scripting/cpp/build_system/cmake.pot
 tutorials/scripting/cpp/core_types.pot
 tutorials/scripting/cpp/gdextension_docs_system.pot
 tutorials/scripting/other_languages.pot
-tutorials/scripting/gdextension/index.pot
-tutorials/scripting/gdextension/what_is_gdextension.pot
-tutorials/scripting/gdextension/gdextension_file.pot
-tutorials/scripting/gdextension/gdextension_interface_json_file.pot
-tutorials/scripting/gdextension/gdextension_c_example.pot
 tutorials/scripting/how_to_read_the_godot_api.pot
 tutorials/scripting/debug/index.pot
 tutorials/scripting/debug/overview_of_debugging_tools.pot
@@ -418,6 +414,7 @@ tutorials/ui/gui_using_fonts.pot
 tutorials/ui/bbcode_in_richtextlabel.pot
 tutorials/ui/creating_applications.pot
 tutorials/xr/index.pot
+tutorials/xr/xr_terminology.pot
 tutorials/xr/setting_up_xr.pot
 tutorials/xr/deploying_to_android.pot
 tutorials/xr/a_better_xr_start_script.pot
@@ -446,6 +443,11 @@ engine_details/architecture/2d_coordinate_systems.pot
 engine_details/architecture/unit_testing.pot
 engine_details/engine_api/index.pot
 engine_details/engine_api/custom_modules_in_cpp.pot
+engine_details/engine_api/gdextension/index.pot
+engine_details/engine_api/gdextension/what_is_gdextension.pot
+engine_details/engine_api/gdextension/gdextension_file.pot
+engine_details/engine_api/gdextension/gdextension_interface_json_file.pot
+engine_details/engine_api/gdextension/gdextension_c_example.pot
 engine_details/engine_api/binding_to_external_libraries.pot
 engine_details/engine_api/custom_godot_servers.pot
 engine_details/engine_api/custom_resource_format_loaders.pot
@@ -493,7 +495,6 @@ engine_details/editor/introduction_to_editor_development.pot
 engine_details/editor/creating_icons.pot
 engine_details/class_reference/index.pot
 engine_details/file_formats/index.pot
-engine_details/file_formats/gdscript_grammar.pot
 engine_details/file_formats/tscn.pot
 community/asset_library/index.pot
 community/asset_library/what_is_assetlib.pot
