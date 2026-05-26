@@ -62,7 +62,7 @@
 # mareknovakz <mareknovak.z@gmail.com>, 2025.
 # Vojtech Krajnansky <vojtech.krajnansky@gmail.com>, 2025.
 # freezerbox <freezercz111@gmail.com>, 2025.
-# Jakub Szydlowski <kubkii27@gmail.com>, 2025.
+# Jakub Szydlowski <kubkii27@gmail.com>, 2025, 2026.
 # Uri <ondrasekuriasek@gmail.com>, 2025.
 # GrenewerearE <grenewereare@seznam.cz>, 2025.
 # Pixeluted <pixeluted@proton.me>, 2025.
@@ -73,8 +73,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-30 16:58+0100\n"
-"PO-Revision-Date: 2026-01-30 06:10+0000\n"
-"Last-Translator: Marek Poustka <noskrat@gmail.com>\n"
+"PO-Revision-Date: 2026-05-24 10:11+0000\n"
+"Last-Translator: Jakub Szydlowski <kubkii27@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
 "Language: cs\n"
@@ -82,7 +82,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -1803,9 +1803,8 @@ msgid "**Post-processing:**"
 msgstr "**Následné zpracování:**"
 
 #: ../../docs/about/list_of_features.rst:359
-#, fuzzy
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES, AgX)."
-msgstr "Tonemapování (lineární, Reinhard, Filmic, ACES)."
+msgstr "Tonemapování (lineární, Reinhard, Filmic, ACES, AgX)."
 
 #: ../../docs/about/list_of_features.rst:360
 msgid ""
@@ -2056,7 +2055,7 @@ msgstr ":ref:`doc_soft_body`"
 #: ../../docs/about/list_of_features.rst:435
 #, fuzzy
 msgid ":ref:`Ragdolls <doc_ragdoll_system>`."
-msgstr ":ref:`doc_ragdoll_system`"
+msgstr ":ref:`doc_ragdoll_system`."
 
 #: ../../docs/about/list_of_features.rst:440
 msgid ""
@@ -2149,7 +2148,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:464
 #, fuzzy
 msgid ":ref:`GDScript: <doc_gdscript>`"
-msgstr ":ref:`int <class_int>`"
+msgstr ":ref:`GDScript: <doc_gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:466
 #, fuzzy
@@ -2342,10 +2341,13 @@ msgid "Audio input to record microphones."
 msgstr "Zvukový vstup pro snímání mikrofonů."
 
 #: ../../docs/about/list_of_features.rst:524
+#, fuzzy
 msgid ""
 ":ref:`Text to speech <doc_text_to_speech>` using platform-provided TTS "
 "engines."
 msgstr ""
+":ref:`Převod textu na řeč <doc_text_to_speech>` využívá platformou "
+"poskytované enginy pro převod textu na řeč."
 
 #: ../../docs/about/list_of_features.rst:525
 msgid "MIDI input."
@@ -2643,6 +2645,8 @@ msgstr "Plná podpora Unicode včetně emoji."
 #: ../../docs/about/list_of_features.rst:615
 msgid "Support for loading system fonts on Windows, macOS, and Linux."
 msgstr ""
+"Podpora pro načítání systémových fontů na operačních systémech Windows, "
+"MacOS a Linux."
 
 #: ../../docs/about/list_of_features.rst:617
 msgid ""
@@ -2748,8 +2752,9 @@ msgid "Keep a window always on top."
 msgstr "Schopnost udržet okno vždy nahoře."
 
 #: ../../docs/about/list_of_features.rst:650
+#, fuzzy
 msgid "Make a window ignore focus (useful for overlays)."
-msgstr ""
+msgstr "Donutit okno ignorovat zaměření (užitečné pro overlaye)."
 
 #: ../../docs/about/list_of_features.rst:651
 msgid ""

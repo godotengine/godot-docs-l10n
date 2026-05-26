@@ -33,13 +33,16 @@
 # aintdrian <aintdrian@gmail.com>, 2025.
 # SimonMaracine <simonmaracine@gmail.com>, 2025.
 # richard01000 <richard.potop@colegiu.utm.md>, 2025.
+# Mihai Andrei <mihoi25@yahoo.com>, 2026.
+# AlexTECPlayz <alextecplayz@vantainteractive.com>, 2026.
+# benq <madalin.lost@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-30 16:58+0100\n"
-"PO-Revision-Date: 2025-08-09 15:02+0000\n"
-"Last-Translator: richard01000 <richard.potop@colegiu.utm.md>\n"
+"PO-Revision-Date: 2026-04-23 18:09+0000\n"
+"Last-Translator: benq <madalin.lost@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ro/>\n"
 "Language: ro\n"
@@ -48,15 +51,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 #: ../../docs/_templates/layout.html:58
-#, fuzzy
 msgid "Previous"
 msgstr "Fila anterioară"
 
 #: ../../docs/_templates/layout.html:61
-#, fuzzy
 msgid "Next"
 msgstr "Fila următoare"
 
@@ -74,9 +75,8 @@ msgid "On Read the Docs"
 msgstr "Citește Documentația"
 
 #: ../../docs/_templates/versions.html:41
-#, fuzzy
 msgid "Project Home"
-msgstr "Se Testează"
+msgstr "Pagina principală a proiectului"
 
 #: ../../docs/_templates/versions.html:44
 msgid "Builds"
@@ -106,9 +106,8 @@ msgid "Manual"
 msgstr "Manual"
 
 #: ../../docs/index.rst:206
-#, fuzzy
 msgid "Engine details"
-msgstr "Despre Godot Engine"
+msgstr "Detalii despre Godot Engine"
 
 #: ../../docs/index.rst:220
 msgid "Community"
@@ -119,9 +118,8 @@ msgid "Class reference"
 msgstr "Referință clasă"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *4.6* branch"
-msgstr "Documentație Godot - ramura *master*"
+msgstr "Documentație Godot - *4.6* ramură"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -184,9 +182,10 @@ msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
 msgstr ""
+"Pentru a incepe citirea documentației relevante, selectați dala care se "
+"potrivește profilului dumneavoastră:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to easily access any "
 "section of the documentation for your topic of interest. You can also use "
@@ -262,7 +261,6 @@ msgstr ""
 "după deschide nivelul superior ``index.html``într-un browser web."
 
 #: ../../docs/index.rst:137
-#, fuzzy
 msgid ""
 "For mobile devices or e-readers, you can also download an ePub copy (updated "
 "every Monday): `stable <https://nightly.link/godotengine/godot-docs/"
@@ -273,10 +271,14 @@ msgid ""
 "epub-3.6.zip>`__. Extract the ZIP archive then open the ``GodotEngine.epub`` "
 "file in an e-book reader application."
 msgstr ""
-"Puteți, de asemenea, să descărcați o copie HTML <https://nightly.link/"
-"godotengine/godot-docs/workflows/build_offline_docs/master/godot-docs-html-"
-"stable.zip>`__ pentru citire offline (actualizat în fiecare luni). Extrageți "
-"arhiva ZIP, apoi deschideți ``index.html`` într-un browser web."
+"Pentru dispozitive mobile sau e-readere, puteți de asemenea să descărcați o "
+"copie ePub (actualizată în fiecare Luni); ` stabil <https://nightly.link/"
+"godotengine/godot-docs/workflows/build_offline_docs/master/godot-docs-epub-"
+"stable.zip>`__, `cel mai nou <https://nightly.link/godotengine/godot-docs/"
+"workflows/build_offline_docs/master/godot-docs-epub-master.zip>`__, `3.6 "
+"<https://nightly.link/godotengine/godot-docs/workflows/build_offline_docs/"
+"master/godot-docs-epub-3.6.zip>`__. Extrageți arhiva ZIP și deschideți "
+"fișierul ``GodotEngine.epub`` într-o aplicație e-book de citit."
 
 #: ../../docs/404.rst:5
 msgid "Page not found"
@@ -368,22 +370,19 @@ msgid "Introduction"
 msgstr "Introducere"
 
 #: ../../docs/about/introduction.rst:21
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of **Godot Engine**, the free and open "
 "source community-driven 2D and 3D game engine! Behind this mouthful, you "
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"Bine ai venit la documentația oficială a Godot Engine, motorul de jocuri 2D "
-"și 3D gratuit, open source și dezvoltat de către comunitate! În spatele "
-"acestei povestioare, tu vei găsi o unealtă puternică însă în același timp "
-"prietenoasă cu utilizatorul pe care o poți folosi pentru a dezvolta orice "
-"tip de joc, pentru orice platformă și fără absolut nicio restricție de "
-"folosire."
+"Bine ați venit la documentația oficială a **Godot Engine**, motorul de "
+"jocuri 2D și 3D gratuit cu cod sursă deschis dezvoltat de comunitate. În "
+"spatele acestui șir complex de cuvinte, veți descoperi o unealtă puternică "
+"dar ușor de utilizat pe care o puteți folosi pentru a dezvolta orice tip de "
+"joc, pentru orice platformă fără restricții."
 
 #: ../../docs/about/introduction.rst:26
-#, fuzzy
 msgid ""
 "This page gives a broad overview of the engine and of this documentation, so "
 "that you know where to start if you are a beginner or where to look if you "
@@ -391,27 +390,27 @@ msgid ""
 msgstr ""
 "Această pagină încearcă să realizeze o prezentare generală a motorului și a "
 "conținutului acestei documentații, în așa fel încât să știi de unde să "
-"pornești dacă ești un începător sau unde să cauți dacă ai nevoie de info "
-"despre o caracteristică anume."
+"pornești dacă ești un începător sau unde să cauți dacă ai nevoie de "
+"informații despre o caracteristică anume."
 
 #: ../../docs/about/introduction.rst:31
 msgid "Before you start"
 msgstr "Înainte sa începem"
 
 #: ../../docs/about/introduction.rst:33
-#, fuzzy
 msgid ""
 "The :ref:`Tutorials and resources <doc_community_tutorials>` page lists "
 "video tutorials contributed by the community. If you prefer video to text, "
 "consider checking them out. Otherwise, :ref:`Getting Started "
 "<doc_getting_started_intro>` is a great starting point."
 msgstr ""
-"Pagina :ref:` Tutoriale și resurse <doc_community_tutorials>`` enumeră "
-"tutoriale video realizate de către comunitate. Dacă preferați video în locul "
-"textului, ar putea merita să le aruncați o privire."
+"Pagina :ref:`Tutoriale și resurse <doc_community_tutorials>` enumeră "
+"tutoriale video realizate de către comunitate. Dacă preferați video în loc "
+"de a citi, ar putea merita să aruncați o privire. Altfel, :ref:`Noțiuni de "
+"Bază <doc_getting_started_intro>` este un bun punct de referință pentru "
+"început."
 
 #: ../../docs/about/introduction.rst:38
-#, fuzzy
 msgid ""
 "In case you have trouble with one of the tutorials or your project, you can "
 "find help on the various `Community channels <https://godotengine.org/"
@@ -419,28 +418,27 @@ msgid ""
 "godotengine>`_ community and `Forum <https://forum.godotengine.org/>`_."
 msgstr ""
 "În cazul în care aveți probleme cu unul dintre tutoriale sau cu proiectul "
-"dumneavoastră, puteți găsi ajutor pe diversele :ref:`Canale ale comunității "
-"<doc_community_channels>`, în special în comunitatea Godot Discord, Q&A și "
-"IRC."
+"dumneavoastră, puteți găsi ajutor pe diversele `Canale ale comunității "
+"<https://godotengine.org/community/>`_, în special în comunitatea Godot de "
+"pe `Discord <https://discord.gg/godotengine>`_ comunitate și pe `Forum "
+"<https://forum.godotengine.org/>`_."
 
 #: ../../docs/about/introduction.rst:44
 msgid "About Godot Engine"
 msgstr "Despre Motorul Godot"
 
 #: ../../docs/about/introduction.rst:46
-#, fuzzy
 msgid ""
 "A game engine is a complex tool and difficult to present in a few words. "
 "Here's a quick synopsis, which you are free to reuse if you need a quick "
 "write-up about Godot Engine:"
 msgstr ""
 "Un motor de joc este un instrument complex, și, prin urmare, este dificil să "
-"prezinți Godot în câteva cuvinte. Iată un sinopsis rapid, pe care sunteți "
-"liber să reutilizați dacă aveți nevoie de o notare rapidă despre Godot "
+"prezinți Godot în câteva cuvinte. Iată un rezumat rapid, pe care sunteți "
+"liber să îl reutilizați dacă aveți nevoie de o descriere rapidă despre Godot "
 "Engine."
 
 #: ../../docs/about/introduction.rst:50
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -449,13 +447,14 @@ msgid ""
 "platforms, including the major desktop platforms (Linux, macOS, Windows), "
 "mobile platforms (Android, iOS), as well as Web-based platforms and consoles."
 msgstr ""
-"Godot Engine este un motor de joc plin de caracteristici, motorul de joc "
-"multiplatformă pentru a crea jocuri 2D și 3D dintr-o interfață unificată. "
+"Godot Engine este un motor de joc plin de caracteristici, cu suport pentru "
+"multiple platforme pentru a crea jocuri 2D și 3D dintr-o singură interfață. "
 "Acesta oferă un set cuprinzător de instrumente comune, astfel încât "
-"utilizatorii se pot concentra pe a face jocuri fără a fi nevoie să "
+"utilizatorii să se poată concentra pe a face jocuri fără a fi nevoie să "
 "reinventeze roata. Jocurile pot fi exportate cu un singur clic pe mai multe "
 "platforme, inclusiv pe marile platforme desktop (Linux, macOS, Windows), "
-"precum și pe platforme mobile (Android, iOS) și web (HTML5)."
+"precum și pe platforme mobile (Android, iOS) dar și platforme web sau "
+"console."
 
 #: ../../docs/about/introduction.rst:57
 #, fuzzy
@@ -495,18 +494,17 @@ msgstr ""
 "conține :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:74
-#, fuzzy
 msgid ""
 "**Getting Started** contains all necessary information on using the engine "
 "to make games. It starts with the :ref:`doc_getting_started_intro` section "
 "which should be the entry point for all new users. **This is the best place "
 "to start if you're new!**"
 msgstr ""
-"Secțiunea :ref:`sec-learn` este principalul *raison d'être* (motiv de "
-"existență) al acestui document, conținând toate informațiile necesare despre "
-"motor pentru a putea crea jocuri. Începe cu tutorialul :ref:`Pas cu pas <toc-"
-"learn-step_by_step>` ce ar trebui să fie punctul de pornire pentru toți "
-"utilizatorii noi."
+"**Noțiuni introductive** conține toate informațiile necesare privind "
+"utilizarea motorului pentru crearea de jocuri. Secțiunea începe cu "
+":ref:`doc_getting_started_intro`, care ar trebui să fie punctul de pornire "
+"pentru toți utilizatorii noi. **Acesta este cel mai bun loc de unde să "
+"începi dacă ești începător!**"
 
 #: ../../docs/about/introduction.rst:78
 #, fuzzy
@@ -540,6 +538,11 @@ msgid ""
 "to list Godot communities, which are now listed on the `Godot website "
 "<https://godotengine.org/community/>`_."
 msgstr ""
+"**Comunitate** este dedicată vieții comunității Godot și conține o listă de "
+"tutoriale și resurse recomandate de la terți, care nu fac parte din această "
+"documentație. De asemenea, oferă detalii despre Biblioteca de resurse. În "
+"trecut, secțiunea includea și o listă a comunităților Godot, care sunt acum "
+"disponibile pe `site-ul web Godot <https://godotengine.org/community/>`_."
 
 #: ../../docs/about/introduction.rst:87
 msgid ""
@@ -568,7 +571,6 @@ msgid "About this documentation"
 msgstr "Despre documentație"
 
 #: ../../docs/about/introduction.rst:97
-#, fuzzy
 msgid ""
 "Members of the Godot Engine community continuously write, correct, edit, and "
 "improve this documentation. We are always looking for more help. You can "
@@ -581,15 +583,14 @@ msgid ""
 "#documentation>`_ on `Godot Contributors Chat <https://chat.godotengine.org/"
 ">`_."
 msgstr ""
-"Membrii comunității Engine-ului Godot scrie, corectează, editează și "
+"Membrii comunității Engine-ului Godot scriu, corectează, editează și "
 "îmbunătățesc continuu această documentație. Mereu suntem în căutare de "
-"ajutor. Poți și tu contribui prin deschiderea unui issue Github sau prin "
-"traducerea documentației în limba ta. Dacă ești interesat să ajuți, "
-"vezi :ref: `Moduri pentru a contribui <doc_ways_to_contribute>` "
-"și :ref:`Scrierea documentației <doc_contributing_writing_documentation>`, "
-"sau contactează `Echipa documentațiilor <https://godotengine.org/teams/"
-"#documentation>`_ pe `Chat-ul Contribuitorilor Godot <https://"
-"chat.godotengine.org/>`_."
+"ajutor. Poți și tu contribui prin deschiderea unui tichet Github sau prin "
+"traducerea documentației în limba ta. Dacă ești interesat să ajuți, vezi "
+":ref: `Moduri pentru a contribui <doc_ways_to_contribute>` și :ref:`Scrierea "
+"documentației <doc_contributing_writing_documentation>`, sau contactează "
+"`Echipa documentațiilor <https://godotengine.org/teams/#documentation>`_ pe "
+"`Chat-ul Contribuitorilor Godot <https://chat.godotengine.org/>`_."
 
 #: ../../docs/about/introduction.rst:105
 #, fuzzy

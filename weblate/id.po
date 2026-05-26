@@ -73,13 +73,16 @@
 # Achmad Maulana Siregar <achmadmaulanasiregar@gmail.com>, 2025.
 # Dandihk <n00b38d@gmail.com>, 2025.
 # Belang Sumerlang <belangsumerlang@gmail.com>, 2026.
+# Sapatekno <sapatekno@gmail.com>, 2026.
+# BOTTOMFRAGGER523 <dastancoding@gmail.com>, 2026.
+# "Oscar :D" <robloxgamingindonesia7@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-30 16:58+0100\n"
-"PO-Revision-Date: 2026-01-05 16:02+0000\n"
-"Last-Translator: Belang Sumerlang <belangsumerlang@gmail.com>\n"
+"PO-Revision-Date: 2026-05-26 03:27+0000\n"
+"Last-Translator: \"Oscar :D\" <robloxgamingindonesia7@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -87,7 +90,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -154,9 +157,8 @@ msgid "Class reference"
 msgstr "Referensi Kelas"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *4.6* branch"
-msgstr "Dokumentasi Godot – cabang *4.5*"
+msgstr "Dokumentasi Godot – cabang *4.6*"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -218,6 +220,8 @@ msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
 msgstr ""
+"Untuk mulai membaca dokumentasi  relevan, pilih judul yang sesuai dengan "
+"profil Anda:"
 
 #: ../../docs/index.rst:111
 #, fuzzy
@@ -969,12 +973,9 @@ msgstr ""
 "kelas bawah. Digunakan secara default pada platform web."
 
 #: ../../docs/about/list_of_features.rst:121
-#, fuzzy
 msgid ""
 "See :ref:`doc_renderers` for a detailed comparison of the rendering methods."
-msgstr ""
-"Lihat :ref:`doc_system_requirements` untuk persyaratan versi perangkat keras "
-"dan perangkat lunak."
+msgstr "Lihat :ref:`doc_renderers`Untuk perbandingan metode rendering"
 
 #: ../../docs/about/list_of_features.rst:124
 msgid "2D graphics"
@@ -1310,24 +1311,20 @@ msgid "Detail mapping for the albedo and normal maps."
 msgstr "Pemetaan detail untuk albedo dan peta normal."
 
 #: ../../docs/about/list_of_features.rst:216
-#, fuzzy
 msgid "Sub-surface scattering and transmittance."
-msgstr "* GLES3: * Hamburan dan transmisi sub-permukaan."
+msgstr "Hamburan dan transmisi sub-permukaan."
 
 #: ../../docs/about/list_of_features.rst:217
-#, fuzzy
 msgid ""
 "Screen-space refraction with support for material roughness (resulting in "
 "blurry refraction)."
 msgstr ""
-"*GLES3:* Pembiasan dengan dukungan untuk kekasaran material (menghasilkan "
-"pembiasan buram). Pada GLES2, pembiasan masih berfungsi tetapi kurang "
-"mendukung kekasaran material."
+"Pembiasan dengan dukungan untuk kekasaran material (menghasilkan pembiasan "
+"buram)."
 
 #: ../../docs/about/list_of_features.rst:218
 msgid "Proximity fade (soft particles) and distance fade."
-msgstr ""
-"*GLES3:* Pemudaran jarak dekat (partikel halus) dan pemudaran jarak jauh."
+msgstr "Pemudaran jarak dekat (untuk partikel halus) dan pemudaran jarak jauh."
 
 #: ../../docs/about/list_of_features.rst:219
 msgid ""
@@ -1347,11 +1344,11 @@ msgstr "**Pencahayaan secara langsung:**"
 
 #: ../../docs/about/list_of_features.rst:225
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr "Directional lights (sun/moon). Up to 4 per scene."
+msgstr "Cahaya berarah (matahari/bulan). Bisa digunakan 4 kali untuk 1 scene."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid "Omnidirectional lights."
-msgstr "Omnidirectional lights."
+msgstr "Cahaya segala arah."
 
 #: ../../docs/about/list_of_features.rst:227
 msgid "Spot lights with adjustable cone angle and attenuation."
@@ -1414,7 +1411,7 @@ msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
-"* DirectionalLight: * Orthogonal (tercepat), PSSM 2-split dan 4-split. "
+"*DirectionalLight:* Orthogonal (tercepat), PSSM 2-split dan 4-split. "
 "Mendukung pencampuran antar split."
 
 #: ../../docs/about/list_of_features.rst:242
@@ -1422,7 +1419,7 @@ msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
-"* OmniLight: * Dual paraboloid (cepat) atau cubemap (lebih lambat tapi lebih "
+"*OmniLight:* Dual paraboloid (cepat) atau cubemap (lebih lambat tapi lebih "
 "akurat). Mendukung tekstur proyektor berwarna dalam bentuk panorama."
 
 #: ../../docs/about/list_of_features.rst:244
@@ -1452,7 +1449,7 @@ msgstr "Pemudaran bayangan (blur) dapat disesuaikan per sumber cahaya."
 
 #: ../../docs/about/list_of_features.rst:251
 msgid "**Global illumination with indirect lighting:**"
-msgstr "**Global illumination with indirect lighting:**"
+msgstr "**Pencahayaan Global dengan cahaya tidak langsung:**"
 
 #: ../../docs/about/list_of_features.rst:253
 #, fuzzy
@@ -1501,13 +1498,12 @@ msgstr ""
 "editor, bukan di proyek yang diekspor."
 
 #: ../../docs/about/list_of_features.rst:264
-#, fuzzy
 msgid ""
 "Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
 "JNLM, or CPU/GPU-based denoising with OIDN."
 msgstr ""
-"Mendukung GPU-based:ref:`denoising <doc_using_lightmap_gi_denoising>` dengan "
-"JNLM, atau CPU / GPU-based denoising dengan OIDN."
+"Mendukung GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` "
+"dengan JNLM, atau CPU / GPU-based denoising dengan OIDN."
 
 #: ../../docs/about/list_of_features.rst:267
 #, fuzzy
@@ -1557,7 +1553,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "**Reflections:**"
-msgstr "**Reflections:**"
+msgstr "**Pantulan - pantulan:**"
 
 #: ../../docs/about/list_of_features.rst:282
 msgid ""
@@ -1581,9 +1577,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:288
 msgid "Screen-space reflections with support for material roughness."
-msgstr ""
-"Pantulan searea layar dengan dukungan untuk kekasaran material (material "
-"roughness)."
+msgstr "Pantulan searea layar dengan dukungan untuk kekasaran material."
 
 #: ../../docs/about/list_of_features.rst:289
 msgid ""
@@ -1693,7 +1687,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:314
 msgid "**Sky:**"
-msgstr "**Sky:**"
+msgstr "**Langit:**"
 
 #: ../../docs/about/list_of_features.rst:316
 msgid "Panorama sky (using an HDRI)."
@@ -2229,9 +2223,8 @@ msgstr ""
 "asinkron atau menggunakan beberapa inti prosesor."
 
 #: ../../docs/about/list_of_features.rst:473
-#, fuzzy
 msgid ":ref:`C#: <doc_c_sharp>`"
-msgstr ":ref:`doc_2d_sprite_animation`"
+msgstr ":ref:`C#: <doc_c_sharp>`"
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
@@ -2336,7 +2329,7 @@ msgstr "Suara"
 
 #: ../../docs/about/list_of_features.rst:509
 msgid "Mono, stereo, 5.1 and 7.1 output."
-msgstr "Mono, stereo, 5.1 and 7.1 output."
+msgstr "Keluaran Mono, stereo, 5.1 dan 7.1."
 
 #: ../../docs/about/list_of_features.rst:510
 msgid "Non-positional and positional playback in 2D and 3D."
@@ -2344,7 +2337,7 @@ msgstr "Pemutaran non-posisi dan posisi dalam 2D dan 3D."
 
 #: ../../docs/about/list_of_features.rst:512
 msgid "Optional Doppler effect in 2D and 3D."
-msgstr "Optional Doppler effect in 2D and 3D."
+msgstr "Efek doppler opsional di 2D dan 3D."
 
 #: ../../docs/about/list_of_features.rst:514
 msgid ""
@@ -2413,7 +2406,7 @@ msgstr "Belum ada dukungan untuk keluaran MIDI."
 
 #: ../../docs/about/list_of_features.rst:529
 msgid "**APIs used:**"
-msgstr "**APIs used:**"
+msgstr "**API yang digunakan:**"
 
 #: ../../docs/about/list_of_features.rst:531
 msgid "*Windows:* WASAPI."
@@ -2425,7 +2418,7 @@ msgstr "*macOS:* CoreAudio."
 
 #: ../../docs/about/list_of_features.rst:533
 msgid "*Linux:* PulseAudio or ALSA."
-msgstr "*Linux:* PulseAudio or ALSA."
+msgstr "*Linux:* PulseAudio atau ALSA."
 
 #: ../../docs/about/list_of_features.rst:536
 msgid "Import"
@@ -2433,7 +2426,7 @@ msgstr "Impor"
 
 #: ../../docs/about/list_of_features.rst:538
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
-msgstr "Support for :ref:`custom import plugins <doc_import_plugins>`."
+msgstr "Dukungan untuk :ref:`plugin impor kustom <doc_import_plugins>`."
 
 #: ../../docs/about/list_of_features.rst:540
 msgid "**Formats:**"
@@ -2441,7 +2434,7 @@ msgstr "**Format:**"
 
 #: ../../docs/about/list_of_features.rst:542
 msgid "*Images:* See :ref:`doc_importing_images`."
-msgstr "*Gambar:* Lihat :ref:`doc_import_images`."
+msgstr "*Gambar:* Lihat :ref:`doc_importing_images`."
 
 #: ../../docs/about/list_of_features.rst:543
 msgid "*Audio:*"
@@ -2449,7 +2442,7 @@ msgstr "*Audio:*"
 
 #: ../../docs/about/list_of_features.rst:545
 msgid "WAV with optional IMA-ADPCM compression."
-msgstr "WAV with optional IMA-ADPCM compression."
+msgstr "WAV dengan kompresi IMA-ADPCM yang opsional."
 
 #: ../../docs/about/list_of_features.rst:546
 msgid "Ogg Vorbis."
@@ -2465,10 +2458,9 @@ msgstr "*Scene 3D:* Lihat :ref:`doc_importing_3d_scenes`."
 
 #: ../../docs/about/list_of_features.rst:551
 msgid "glTF 2.0 *(recommended)*."
-msgstr "glTF 2.0 *(recommended)*."
+msgstr "glTF 2.0 *(direkomendasikan)*."
 
 #: ../../docs/about/list_of_features.rst:552
-#, fuzzy
 msgid ""
 "``.blend`` (by calling Blender's glTF export functionality transparently)."
 msgstr ""
@@ -2496,7 +2488,6 @@ msgstr ""
 "atau diimpor sebagai Scene 3D)."
 
 #: ../../docs/about/list_of_features.rst:557
-#, fuzzy
 msgid ""
 "Support for loading glTF 2.0 scenes at runtime, including from an exported "
 "project."
@@ -2831,9 +2822,8 @@ msgid "Native file dialog support on Windows, macOS, Linux, and Android."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:654
-#, fuzzy
 msgid "Tray icon support on Windows and macOS."
-msgstr "* GLES3: * ETC2 (tidak didukung di macOS)."
+msgstr "Dukungan ikon Tray di Windows dan macOS."
 
 #: ../../docs/about/list_of_features.rst:655
 msgid "Global menu integration on macOS."
@@ -2989,10 +2979,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:712
-#, fuzzy
 msgid ""
 "Dropdown menus using :ref:`class_PopupMenu` and :ref:`class_OptionButton`."
-msgstr "Menu dropdown menggunakan PopupMenu dan OptionButton."
+msgstr ""
+"Menu dropdown menggunakan :ref:`class_PopupMenu` dan "
+":ref:`class_OptionButton`."
 
 #: ../../docs/about/list_of_features.rst:713
 msgid "Scrollbars."
@@ -3047,10 +3038,10 @@ msgid ":ref:`Grid <class_GridContainer>` layouts."
 msgstr "Tata letak :ref:`kisi <class_GridContainer>`."
 
 #: ../../docs/about/list_of_features.rst:728
-#, fuzzy
 msgid ""
 ":ref:`Flow <class_FlowContainer>` layouts (similar to autowrapping text)."
-msgstr "Tata letak :ref:`bertumpuk <class_BoxContainer>`."
+msgstr ""
+":ref:`Tata Letak Arus <class_FlowContainer>`(mirip seperti teks autowrap)."
 
 #: ../../docs/about/list_of_features.rst:729
 #, fuzzy
@@ -3067,19 +3058,19 @@ msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
 msgstr "Tata letak :ref:`pemisah bisa digeser <class_SplitContainer>`."
 
 #: ../../docs/about/list_of_features.rst:733
-#, fuzzy
 msgid ""
 "Scale to :ref:`multiple resolutions <doc_multiple_resolutions>` using the "
 "``canvas_items`` or ``viewport`` stretch modes."
 msgstr ""
-"Perbesar ke multi resolusi menggunakan mode stretch ``2d`` atau ``viewport``."
+"Perbesar ke:ref:` multi resolusi <doc_multiple_resolutions>` menggunakan "
+"``canvas_items`` atau ``viewport``."
 
 #: ../../docs/about/list_of_features.rst:735
 msgid ""
 "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
 msgstr ""
-"Dukungan berbagai aspek rasipo menggunakan jangkar dan aspek "
-"strech``expand``."
+"Dukung rasio aspek apa pun menggunakan anchor (jangkar) dan mode regang "
+"aspek ``expand`` (perluas)."
 
 #: ../../docs/about/list_of_features.rst:737
 msgid "**Theming:**"
@@ -3182,9 +3173,9 @@ msgstr ""
 "yang besar."
 
 #: ../../docs/about/list_of_features.rst:769
-#, fuzzy
 msgid "Read and write text or binary files using :ref:`class_FileAccess`."
-msgstr "Baca dan tulis berkas teks atau biner menggunakan :ref:`class_File`."
+msgstr ""
+"Baca dan tulis berkas teks atau biner menggunakan :ref:`class_FileAccess`."
 
 #: ../../docs/about/list_of_features.rst:771
 msgid "Can optionally be compressed or encrypted."
@@ -3263,10 +3254,10 @@ msgstr ""
 "memperbolehkan untuk melewati pohon skena \"overhead\" ketika diperlukan."
 
 #: ../../docs/about/list_of_features.rst:794
-#, fuzzy
 msgid ""
 ":ref:`Command line interface <doc_command_line_tutorial>` for automation."
-msgstr "Command line interface untuk otomatisasi."
+msgstr ""
+":ref:`Command line interface <doc_command_line_tutorial>` untuk otomatisasi."
 
 #: ../../docs/about/list_of_features.rst:796
 msgid "Export and deploy projects using continuous integration platforms."
@@ -3296,12 +3287,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:806
-#, fuzzy
 msgid ""
 "Support for :ref:`C++ modules <doc_custom_modules_in_cpp>` statically linked "
 "into the engine binary."
 msgstr ""
-"Dukungan untuk :ref:`C++ modules<doc_custom_modules_in_c++>` dengan tetap "
+"Dukungan untuk :ref:`C++ modules<doc_custom_modules_in_cpp>` dengan tetap "
 "disambungkan ke binary game enginenya."
 
 #: ../../docs/about/list_of_features.rst:809
@@ -3311,9 +3301,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:812
-#, fuzzy
 msgid "Engine and editor written in C++17."
-msgstr "Game engine dan editornya dibuat dengan C++03."
+msgstr "Game engine dan editornya ditulis menggunakan C++17."
 
 #: ../../docs/about/list_of_features.rst:814
 msgid ""
@@ -3338,14 +3327,14 @@ msgid "Licensed under the permissive MIT license."
 msgstr "DIlisensikan dengan lisensi MIT yang serbaguna."
 
 #: ../../docs/about/list_of_features.rst:822
-#, fuzzy
 msgid ""
 "Open development process with `contributions welcome <https://"
 "contributing.godotengine.org/en/latest/organization/"
 "how_to_contribute.html>`__."
 msgstr ""
-"Kontribusi ke proses pengembangan :ref:`sangat dianjurkan "
-"<doc_ways_to_contribute>`."
+"Kontribusi ke proses pengembangan `contributions welcome <https://"
+"contributing.godotengine.org/en/latest/organization/how_to_contribute.html>"
+"`__."
 
 #: ../../docs/about/list_of_features.rst:826
 msgid ""
@@ -3359,7 +3348,7 @@ msgstr ""
 
 #: ../../docs/about/system_requirements.rst:6
 msgid "System requirements"
-msgstr ""
+msgstr "Persyaratan Sistem"
 
 #: ../../docs/about/system_requirements.rst:8
 msgid ""
@@ -3370,20 +3359,21 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/system_requirements.rst:13
-#, fuzzy
 msgid "Godot editor"
-msgstr "Mengonfigurasi Proyek"
+msgstr "Editor Godot"
 
 #: ../../docs/about/system_requirements.rst:15
 msgid ""
 "These are the **minimum** specifications required to run the Godot editor "
 "and work on a simple 2D or 3D project:"
 msgstr ""
+"Ini adalah standar **minimum** yang diperlukan untuk menjalankan Editor "
+"Godot dan mengerjakan proyek 2D atau 3D yang simpel:"
 
 #: ../../docs/about/system_requirements.rst:19
 #: ../../docs/about/system_requirements.rst:204
 msgid "Desktop or laptop PC - Minimum"
-msgstr ""
+msgstr "Desktop atau laptop PC - Minimal"
 
 #: ../../docs/about/system_requirements.rst:26
 #: ../../docs/about/system_requirements.rst:79
@@ -3402,23 +3392,25 @@ msgid ""
 "**Windows:** x86_32 CPU with SSE2 support, x86_64 CPU with SSE4.2 support, "
 "ARMv8 CPU"
 msgstr ""
+"**Windows:** x86_32 CPU yang didukung SSE2, x86_64 CPU yang didukung SSE4.2, "
+"ARMv8 CPU"
 
 #: ../../docs/about/system_requirements.rst:28
 #: ../../docs/about/system_requirements.rst:214
 msgid "*Example: Intel Core 2 Duo E8200, AMD FX-4100, Snapdragon X Elite*"
-msgstr ""
+msgstr "*Contoh: Intel Core 2 Duo E8200, AMD FX-4100, Snapdragon X Elite*"
 
 #: ../../docs/about/system_requirements.rst:30
 #: ../../docs/about/system_requirements.rst:120
 #: ../../docs/about/system_requirements.rst:216
 #: ../../docs/about/system_requirements.rst:302
 msgid "**macOS:** x86_64 or ARM CPU (Apple Silicon)"
-msgstr ""
+msgstr "**macOS:** x86_64 atau ARM CPU (Apple Silicon)"
 
 #: ../../docs/about/system_requirements.rst:32
 #: ../../docs/about/system_requirements.rst:218
 msgid "*Example: Intel Core 2 Duo SU9400, Apple M1*"
-msgstr ""
+msgstr "*Contoh: Intel Core 2 Duo SU9400, Apple M1*"
 
 #: ../../docs/about/system_requirements.rst:34
 #: ../../docs/about/system_requirements.rst:220
@@ -3426,11 +3418,13 @@ msgid ""
 "**Linux:** x86_32 CPU with SSE2 support, x86_64 CPU with SSE4.2 support, "
 "ARMv7 or ARMv8 CPU"
 msgstr ""
+"**Linux:** x86_32 CPU yang didukung SSE2, x86_64 CPU yang didukung SSE4.2 , "
+"ARMv7 atau ARMv8 CPU"
 
 #: ../../docs/about/system_requirements.rst:37
 #: ../../docs/about/system_requirements.rst:223
 msgid "*Example: Intel Core 2 Duo E8200, AMD FX-4100, Raspberry Pi 4*"
-msgstr ""
+msgstr "*Contoh: Intel Core 2 Duo E8200, AMD FX-4100, Raspberry Pi 4*"
 
 #: ../../docs/about/system_requirements.rst:39
 #: ../../docs/about/system_requirements.rst:85
@@ -3446,6 +3440,7 @@ msgstr ""
 #: ../../docs/about/system_requirements.rst:39
 msgid "**Forward+ renderer:** Integrated graphics with full Vulkan 1.0 support"
 msgstr ""
+"**Renderer Forward+:** Grafik terintegrasi dengan dukungan penuh Vulkan 1.0"
 
 #: ../../docs/about/system_requirements.rst:41
 #: ../../docs/about/system_requirements.rst:45
@@ -3454,15 +3449,19 @@ msgstr ""
 msgid ""
 "*Example: Intel HD Graphics 510 (Skylake), AMD Radeon R5 Graphics (Kaveri)*"
 msgstr ""
+"*Contoh: Intel HD Graphics 510 (Skylake), AMD Radeon R5 Graphics (Kaveri)*"
 
 #: ../../docs/about/system_requirements.rst:43
 msgid "**Mobile renderer:** Integrated graphics with full Vulkan 1.0 support"
 msgstr ""
+"**Renderer Mobile:** Grafik Terintegrasi dengan dukungan penuh Vulkan 1.0"
 
 #: ../../docs/about/system_requirements.rst:47
 msgid ""
 "**Compatibility renderer:** Integrated graphics with full OpenGL 3.3 support"
 msgstr ""
+"**Renderer Kompatibilitas:** Grafik Terintegrasi dengan dukungan penuh "
+"OpenGL 3.3"
 
 #: ../../docs/about/system_requirements.rst:49
 #: ../../docs/about/system_requirements.rst:238
@@ -3470,6 +3469,8 @@ msgid ""
 "*Example: Intel HD Graphics 2500 (Ivy Bridge), AMD Radeon R5 Graphics "
 "(Kaveri)*"
 msgstr ""
+"*Contoh: Intel HD Graphics 2500 (Ivy Bridge), AMD Radeon R5 Graphics (Kaveri)"
+"*"
 
 #: ../../docs/about/system_requirements.rst:51
 #: ../../docs/about/system_requirements.rst:97
@@ -3483,15 +3484,13 @@ msgid "**RAM**"
 msgstr ""
 
 #: ../../docs/about/system_requirements.rst:51
-#, fuzzy
 msgid "**Native editor:** 4 GB"
-msgstr "**Untuk editor.**"
+msgstr "**Editor Bawaan:** 4 GB"
 
 #: ../../docs/about/system_requirements.rst:52
 #: ../../docs/about/system_requirements.rst:173
-#, fuzzy
 msgid "**Web editor:** 8 GB"
-msgstr "**Untuk editor.**"
+msgstr "**Editor Web:** 8 GB"
 
 #: ../../docs/about/system_requirements.rst:54
 #: ../../docs/about/system_requirements.rst:100
@@ -3501,9 +3500,8 @@ msgstr "**Untuk editor.**"
 #: ../../docs/about/system_requirements.rst:283
 #: ../../docs/about/system_requirements.rst:328
 #: ../../docs/about/system_requirements.rst:364
-#, fuzzy
 msgid "**Storage**"
-msgstr "Penyimpanan"
+msgstr "**Penyimpanan**"
 
 #: ../../docs/about/system_requirements.rst:54
 msgid ""
@@ -3511,6 +3509,9 @@ msgid ""
 "projects requires downloading export templates separately (1.3 GB after "
 "installation)."
 msgstr ""
+"200 MB (digunakan untuk executables, file proyek and cache). Mengekspor "
+"projek membutuhkan unduhan templat ekspor yang terpisah (1.3 GB setelah "
+"instalasi)."
 
 #: ../../docs/about/system_requirements.rst:58
 #: ../../docs/about/system_requirements.rst:104
@@ -3520,15 +3521,16 @@ msgstr ""
 #: ../../docs/about/system_requirements.rst:285
 #: ../../docs/about/system_requirements.rst:330
 #: ../../docs/about/system_requirements.rst:366
-#, fuzzy
 msgid "**Operating system**"
-msgstr "**Operator**"
+msgstr "**Sistem Operasi**"
 
 #: ../../docs/about/system_requirements.rst:58
 msgid ""
 "**Native editor:** Windows 10, macOS 10.13 (Compatibility) or macOS 10.15 "
 "(Forward+/Mobile), Linux distribution released after 2018"
 msgstr ""
+"**Editor Bawaan:** Windows 10, macOS 10.13 (Kompatibilitas) or macOS 10.15 "
+"(Forward+/Mobile), distribusi Linux dirilis setelah 2018"
 
 #: ../../docs/about/system_requirements.rst:60
 #: ../../docs/about/system_requirements.rst:105
@@ -3539,6 +3541,9 @@ msgid ""
 "derivatives (including ESR), Chrome and Chromium derivatives, Safari and "
 "WebKit derivatives."
 msgstr ""
+"**Editor web**: Versi terbaru dari peramban (browser) arus utama: Firefox "
+"dan turunannya (termasuk ESR), Chrome dan turunan Chromium, serta Safari dan "
+"turunan WebKit."
 
 #: ../../docs/about/system_requirements.rst:66
 msgid ""
@@ -3546,6 +3551,9 @@ msgid ""
 "Godot executable which only has a SSE2 requirement (all x86_64 CPUs support "
 "SSE2)."
 msgstr ""
+"Jika CPU x86_64 anda tidak mendukung SSE4.2, anda masih bisa menjalankan "
+"executable Godot 32-bit yang hanya membutuhkan SSE2 (semua CPU x86_64 "
+"mendukung SSE2)."
 
 #: ../../docs/about/system_requirements.rst:69
 msgid ""
@@ -3556,6 +3564,12 @@ msgid ""
 "compiling instructions can be found on the :ref:`doc_compiling_for_linuxbsd` "
 "page."
 msgstr ""
+"Meskipun didukung di Linux, kami tidak memiliki persyaratan minimum resmi "
+"untuk dijalankan di rv64 (RISC-V), ppc64 & ppc32 (PowerPC), dan loongarch64. "
+"Tambahan, anda harus mengkompilasi editor untuk platform itu (beserta "
+"templat ekspornya) sendiri, tidak ada link download resmi yang disiapkan "
+"saat ini. Instrukis mengkompilasi RISC-V bisa ditemukan di halaman "
+":ref:`doc_compiling_for_linuxbsd`."
 
 #: ../../docs/about/system_requirements.rst:76
 #: ../../docs/about/system_requirements.rst:253
@@ -3565,74 +3579,83 @@ msgstr ""
 #: ../../docs/about/system_requirements.rst:79
 #: ../../docs/about/system_requirements.rst:256
 msgid "**Android:** SoC with any 32-bit or 64-bit ARM or x86 CPU"
-msgstr ""
+msgstr "**Android:** SoC dengan 32-bit or 64-bit ARM or x86 CPU apapun"
 
 #: ../../docs/about/system_requirements.rst:81
 #: ../../docs/about/system_requirements.rst:258
 msgid "*Example: Qualcomm Snapdragon 430, Samsung Exynos 5 Octa 5430*"
-msgstr ""
+msgstr "*Contoh: Qualcomm Snapdragon 430, Samsung Exynos 5 Octa 5430*"
 
 #: ../../docs/about/system_requirements.rst:83
 #: ../../docs/about/system_requirements.rst:158
-#, fuzzy
 msgid "**iOS:** *Cannot run the editor*"
-msgstr "**Untuk editor.**"
+msgstr "**iOS:** *Tidak bisa menjalankan editor.*"
 
 #: ../../docs/about/system_requirements.rst:85
 msgid "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.0 support"
 msgstr ""
+"**Renderer Forward+:** SoC yang memiliki fitur GPU dengan dukungan penuh "
+"Vulkan 1.0"
 
 #: ../../docs/about/system_requirements.rst:87
 #: ../../docs/about/system_requirements.rst:91
 msgid "*Example: Qualcomm Adreno 505, Mali-G71 MP2*"
-msgstr ""
+msgstr "*Contoh: Qualcomm Adreno 505, Mali-G71 MP2*"
 
 #: ../../docs/about/system_requirements.rst:89
 msgid "**Mobile renderer:** SoC featuring GPU with full Vulkan 1.0 support"
-msgstr ""
+msgstr "**Renderer Mobile:** SoC, GPU yang memiliki dukungan penuh Vulkan 1.0"
 
 #: ../../docs/about/system_requirements.rst:93
 #: ../../docs/about/system_requirements.rst:276
 msgid ""
 "**Compatibility renderer:** SoC featuring GPU with full OpenGL ES 3.0 support"
 msgstr ""
+"**Renderer Kompatibilitas:** SoC, memiliki fitur GPU dengan dukungan penuh "
+"OpenGL ES 3.0"
 
 #: ../../docs/about/system_requirements.rst:95
 msgid "*Example: Qualcomm Adreno 306, Mali-T628 MP6*"
-msgstr ""
+msgstr "*Contoh: Qualcomm Adreno 306, Mali-T628 MP6*"
 
 #: ../../docs/about/system_requirements.rst:97
-#, fuzzy
 msgid "**Native editor:** 3 GB"
-msgstr "**Untuk editor.**"
+msgstr "**Editor Bawaan:** 3 GB"
 
 #: ../../docs/about/system_requirements.rst:98
-#, fuzzy
 msgid "**Web editor:** 6 GB"
-msgstr "**Untuk editor.**"
+msgstr "**Editor Web:** 6 GB"
 
 #: ../../docs/about/system_requirements.rst:100
 msgid ""
 "200 MB (used for the executable, project files and cache) Exporting projects "
 "requires downloading export templates separately (1.3 GB after installation)"
 msgstr ""
+"200 MB (digunakan untuk executable, file projek dan cache). Untuk mengekspor "
+"project, diperlukan mengunduh templat ekspor secara terpisah (1.3 GB setelah "
+"instalasi)"
 
 #: ../../docs/about/system_requirements.rst:104
 msgid ""
 "**Native editor:** Android 6.0 (Compatibility) or Android 9.0 (Forward+/"
 "Mobile)"
 msgstr ""
+"**Editor Bawaan:** Android 6.0 (Kompatibilitas) atau Android 9.0 (Forward+/"
+"Mobile)"
 
 #: ../../docs/about/system_requirements.rst:109
 msgid ""
 "These are the **recommended** specifications to get a smooth experience with "
 "the Godot editor on a simple 2D or 3D project:"
 msgstr ""
+"Ini adalah spek yang **direkomendasikan** untuk mendapatkan pengalaman "
+"menggunakan editor Godot yang halus dalam mengerjakan proyek 2D atau 3D yang "
+"simpel:"
 
 #: ../../docs/about/system_requirements.rst:113
 #: ../../docs/about/system_requirements.rst:295
 msgid "Desktop or laptop PC - Recommended"
-msgstr ""
+msgstr "Desktop atau laptop PC - Direkomendasikan"
 
 #: ../../docs/about/system_requirements.rst:116
 #: ../../docs/about/system_requirements.rst:298

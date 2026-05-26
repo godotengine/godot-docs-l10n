@@ -48,7 +48,7 @@
 # EJAMI <q0932732330000@gmail.com>, 2023.
 # jolene xu <loqwqol@163.com>, 2023.
 # Youuin Wang <los2516lir@gmail.com>, 2023.
-# Skyter Lin <linskyter@gmail.com>, 2023.
+# Skyter Lin <linskyter@gmail.com>, 2023, 2026.
 # powder <hhurhxhdyruw@gmail.com>, 2023, 2025.
 # snow-The <qq1346126834@gmail.com>, 2023.
 # LNF <enfu.liao.cs10@nycu.edu.tw>, 2023.
@@ -77,13 +77,14 @@
 # 林立 <nxlmoz@gmail.com>, 2025.
 # Wei-Fu Chen <410477jimmy@gmail.com>, 2026.
 # Xiang990293 <990293kwi@gmail.com>, 2026.
+# "Chen,Wei-Ting" <benson94879453@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-30 16:58+0100\n"
-"PO-Revision-Date: 2026-01-28 10:46+0000\n"
-"Last-Translator: Xiang990293 <990293kwi@gmail.com>\n"
+"PO-Revision-Date: 2026-03-18 04:10+0000\n"
+"Last-Translator: \"Chen,Wei-Ting\" <benson94879453@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/godot-engine/godot-docs/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -91,7 +92,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -218,14 +219,13 @@ msgid ""
 msgstr "若要開始閱讀相關文件，請選取符合您使用情境的圖塊："
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to easily access any "
 "section of the documentation for your topic of interest. You can also use "
 "the search function in the top-left corner."
 msgstr ""
-"下方的目錄以及側邊欄能讓你在文件中輕鬆找到感興趣的主題，亦可以利用左上角的搜"
-"尋功能。"
+"您可以透過側邊欄的目錄，輕鬆在文件中查閱感興趣的主題，亦可以利用左上角的搜尋"
+"功能。"
 
 #: ../../docs/index.rst:116
 msgid "Get involved"
@@ -128380,7 +128380,6 @@ msgstr ""
 "型別，不需要明確指定型別（請參考下方「範例」章節）。"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:22
-#, fuzzy
 msgid ""
 "One of the fundamental benefits of exporting member variables is to have "
 "them visible and editable in the editor. This way, artists and game "
@@ -128390,7 +128389,9 @@ msgid ""
 "descriptions, visible on mouse over."
 msgstr ""
 "匯出成員變數的主要好處之一，是能讓它們在編輯器中顯示並編輯。這樣美術和遊戲設"
-"計師就可以直接調整影響程式執行的數值。為此，Godot 提供了專屬的匯出語法。"
+"計師就可以直接調整影響程式執行的數值。為此，Godot 提供了專屬的匯出語法。此外"
+"，:ref:`文件註釋<doc_gdscript_documentation_comments>` 也可用於提示描述，滑鼠"
+"懸停時即可顯示。"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:30
 msgid ""

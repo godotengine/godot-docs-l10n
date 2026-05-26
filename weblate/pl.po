@@ -140,13 +140,16 @@
 # Paweł Ruszkiewicz <pawel66031@protonmail.com>, 2025.
 # Pcniado <bratuspro2137@gmail.com>, 2025.
 # Paweł Szlubecki <szlube@szlube.net>, 2025, 2026.
+# Andrzej Manderla <andrzejmmm1@gmail.com>, 2026.
+# Mikołaj Mądrzyk <matvete@hotmail.com>, 2026.
+# Adam <xjooker11@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-30 16:58+0100\n"
-"PO-Revision-Date: 2026-01-05 16:02+0000\n"
-"Last-Translator: Cyprian Klimaszewski <cyprian.klimaszewski@gmail.com>\n"
+"PO-Revision-Date: 2026-04-15 13:13+0000\n"
+"Last-Translator: Adam <xjooker11@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -155,7 +158,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -285,17 +288,18 @@ msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
 msgstr ""
+"Aby rozpocząć czytanie odpowiedniej dokumentacji, wybierz kafelek "
+"odpowiadający Twojemu profilowi:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to easily access any "
 "section of the documentation for your topic of interest. You can also use "
 "the search function in the top-left corner."
 msgstr ""
 "Spis treści na pasku bocznym pozwoli Ci w łatwy sposób dotrzeć do "
-"interesujących Cię materiałów. Możesz też skorzystać z funkcji wyszukiwania "
-"w lewym górnym rogu."
+"interesujących Cię sekcji dokumentacji. Możesz też skorzystać z funkcji "
+"wyszukiwania w lewym górnym rogu."
 
 #: ../../docs/index.rst:116
 msgid "Get involved"
@@ -734,12 +738,12 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
-"Zobacz również `stronę z licencją Godota <https://godotengine.org/license>`_."
+"Po więcej informacji o wsparciu dla konsoli, wejdź na`stronę Godota <https://"
+"godotengine.org/consoles/>`_."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
@@ -1688,11 +1692,13 @@ msgid ""
 "Texture channels are smoothly overlaid on top of the underlying material, "
 "with support for normal/ORM-only decals."
 msgstr ""
+"Kanały tekstury są płynnie nakładane na materiał bazowy, z obsługą naklejek "
+"normalnych/tylko ORM."
 
 #: ../../docs/about/list_of_features.rst:303
 msgid ""
 "Support for normal fade to fade the decal depending on its incidence angle."
-msgstr ""
+msgstr "Obsługa normalnego zanikania naklejki w zależności od kąta padania."
 
 #: ../../docs/about/list_of_features.rst:304
 msgid ""
@@ -1700,6 +1706,9 @@ msgid ""
 "complex skinned meshes with no performance penalty, even if the decal moves "
 "every frame."
 msgstr ""
+"Nie opiera się na generowaniu siatki w czasie rzeczywistym. Oznacza to, że "
+"naklejki mogą być używane na złożonych siatkach skórowanych bez utraty "
+"wydajności, nawet jeśli naklejka porusza się w każdej klatce."
 
 #: ../../docs/about/list_of_features.rst:306
 msgid ""
@@ -1767,6 +1776,9 @@ msgid ""
 "The radiance map used for ambient and specular light can be updated in real-"
 "time depending on the quality settings chosen."
 msgstr ""
+"Mapa promieniowania używana do oświetlenia otoczenia i światła odbicia może "
+"być aktualizowana w czasie rzeczywistym w zależności od wybranych ustawień "
+"jakości."
 
 #: ../../docs/about/list_of_features.rst:322
 msgid "**Fog:**"
@@ -1813,6 +1825,8 @@ msgid ""
 "Global :ref:`volumetric fog <doc_volumetric_fog>` that reacts to lights and "
 "shadows."
 msgstr ""
+"Global :ref:`mgła objętościowa <doc_volumetric_fog>` która reaguje na "
+"światła i cienie."
 
 #: ../../docs/about/list_of_features.rst:335
 msgid ""
@@ -1828,14 +1842,17 @@ msgid ""
 "fog from specific areas). Supported shapes include box, ellipse, cone, "
 "cylinder, and 3D texture-based density maps."
 msgstr ""
+"Węzły objętości mgły, które mogą być rozmieszczane żeby dodać mgłę do danego "
+"miejsca (lub usunąć mgłę z danego miejsca). Wspierane kształty to: sześcian, "
+"elipsa, stożek, cylinder, oraz"
 
 #: ../../docs/about/list_of_features.rst:338
 msgid "Each fog volume can have its own custom shader."
-msgstr ""
+msgstr "Każda chmura mgły morze posiadać własny shader."
 
 #: ../../docs/about/list_of_features.rst:339
 msgid "Can be used together with traditional fog."
-msgstr ""
+msgstr "Może zostać użyta wraz ze zwykłą mgłą."
 
 #: ../../docs/about/list_of_features.rst:341
 msgid "**Particles:**"
@@ -176415,6 +176432,8 @@ msgid ""
 "You'll probably need to zoom a bit before you're able to see the individual "
 "events from Godot."
 msgstr ""
+"Prawdopodobnie będziesz musiał trochę przybliżyć obraz, aby zobaczyć "
+"poszczególne wydarzenia w Godot."
 
 #: ../../docs/engine_details/development/profiling/perfetto.rst:111
 msgid ""
@@ -178223,7 +178242,7 @@ msgstr ""
 
 #: ../../docs/community/asset_library/using_assetlib.rst:59
 msgid "Asset's thumbnail/icon."
-msgstr ""
+msgstr "Ikona Zasobu."
 
 #: ../../docs/community/asset_library/using_assetlib.rst:60
 msgid "Asset's name."
@@ -178247,11 +178266,11 @@ msgstr "Licencja pod którą dystrybuowany jest zasób."
 
 #: ../../docs/community/asset_library/using_assetlib.rst:65
 msgid "The date of the asset's latest edit/update."
-msgstr ""
+msgstr "Data ostatniej edycji/aktualizacji zasobu."
 
 #: ../../docs/community/asset_library/using_assetlib.rst:66
 msgid "A textual description of the asset."
-msgstr ""
+msgstr "Opis tekstowy zasobu."
 
 #: ../../docs/community/asset_library/using_assetlib.rst:67
 msgid "Links related to the asset (download link, file list, issue tracker)."
@@ -178755,7 +178774,7 @@ msgstr "**Type**:"
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:201
 msgid "Either an image, or a video."
-msgstr ""
+msgstr "Albo obraz, albo wideo."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:202
 msgid "**Image/YouTube URL**:"
@@ -178791,6 +178810,9 @@ msgid ""
 "will be told why that may have been, and you will be able to submit it again "
 "with the appropriate changes."
 msgstr ""
+"Poinformujemy cię, gdy twój zasób zostanie sprawdzony. Jeśli został "
+"odrzucony, dowiesz się dlaczego tak się stało oraz będziesz w stanie go "
+"wysłać na nowo z odpowiednimi zmianami."
 
 #: ../../docs/community/channels.rst:4
 msgid "Community channels"

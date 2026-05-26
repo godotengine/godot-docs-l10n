@@ -111,13 +111,16 @@
 # shaches <shaches7@proton.me>, 2025.
 # Hasan Kara <hasanbeytullahkara@gmail.com>, 2026.
 # Melih Uçgun <melihucgun@gmail.com>, 2026.
+# hora kon <covesin653@algarr.com>, 2026.
+# Poyraz <zpoyrazcoskun@gmail.com>, 2026.
+# can unal <justplay95@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-30 16:58+0100\n"
-"PO-Revision-Date: 2026-01-25 09:04+0000\n"
-"Last-Translator: Melih Uçgun <melihucgun@gmail.com>\n"
+"PO-Revision-Date: 2026-04-12 15:10+0000\n"
+"Last-Translator: can unal <justplay95@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -125,7 +128,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -192,9 +195,8 @@ msgid "Class reference"
 msgstr "Sınıf referansı"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *4.6* branch"
-msgstr "Godot Belgeleri - *master* dalı"
+msgstr "Godot Dokümantasyonu – *4.6* dalı"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -262,15 +264,14 @@ msgstr ""
 "İlgili dokümanı okumaya başlamak için, profilinize uygun kutucuğu seçin:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to easily access any "
 "section of the documentation for your topic of interest. You can also use "
 "the search function in the top-left corner."
 msgstr ""
-"Kenar çubuğundaki içindekiler tablosu, ilgilendiğiniz konuya ilişkin "
-"belgelere kolayca erişmenize olanak sağlamaktadır. Ayrıca sol-üst köşedeki "
-"arama işlevini de kullanabilirsiniz."
+"İlgilendiğiniz konuyla ilgili dokümantasyonun herhangi bir bölümüne kolayca "
+"erişmek için yan menüdeki (sidebar) içindekiler tablosunu kullanabilirsiniz. "
+"Ayrıca sol üst köşedeki arama işlevinden de yararlanabilirsiniz."
 
 #: ../../docs/index.rst:116
 msgid "Get involved"
@@ -714,13 +715,12 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
-"Ayrıca, `Godot web sitesinde bulunan lisans sayfası <https://godotengine.org/"
-"license>`_ 'na bakınız."
+"Konsol desteği hakkında bilgi için `Godot web sitesine <https://"
+"godotengine.org/consoles/>`_. bakın."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
@@ -1294,12 +1294,11 @@ msgstr ""
 "azaltarak performansı artırmak için derinlik ön-geçişi kullanılır."
 
 #: ../../docs/about/list_of_features.rst:204
-#, fuzzy
 msgid ""
 ":ref:`doc_variable_rate_shading` on supported GPUs in Forward+ and Mobile."
 msgstr ""
-"İleri+ ve Mobil'de desteklenen GPU'lar "
-"üzerinde :ref:`doc_variable_rate_shading`."
+"Forward+ ve Mobile modlarında, desteklenen GPU'larda "
+":ref:`doc_variable_rate_shading`  (Değişken Hızlı Gölgelendirme)."
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "**Physically-based rendering (built-in material features):**"
@@ -1417,17 +1416,17 @@ msgstr ""
 "isteğe bağlı uzaklık solma sistemi."
 
 #: ../../docs/about/list_of_features.rst:231
-#, fuzzy
 msgid ""
 "When using the Forward+ renderer (default on desktop), lights are rendered "
 "with clustered forward optimizations to decrease their individual cost. "
 "Clustered rendering also lifts any limits on the number of lights that can "
 "be used on a mesh."
 msgstr ""
-"İleri+ arka-ucunu kullanırken (masaüstü için varsayılan) ışıklar, kendi "
-"bireysel maliyetlerini düşürmek için kümeli ileri iyileştirmeleri ile "
-"işlenirler. Kümeli işleme ayrıca bir örgü üzerinde kullanılabilen ışık "
-"sayısındaki tüm kısıtlamaları kaldırır."
+"Forward+ işleyici (masaüstünde varsayılan), ışıkları daha verimli işlemek "
+"için “clustered forward” (kümelenmiş ileri) adı verilen bir optimizasyon "
+"kullanır. Kümelenmiş işleme (clustered rendering), sahneyi parçalara bölerek "
+"ışık hesaplamalarını optimize eder. Bu sayede tek bir mesh üzerinde "
+"kullanılabilecek ışık sayısı üzerindeki pratik sınırlamalar ortadan kalkar."
 
 #: ../../docs/about/list_of_features.rst:234
 msgid ""
@@ -1497,6 +1496,8 @@ msgid ""
 ":ref:`Baked lightmaps <doc_using_lightmap_gi>` (fast, but can't be updated "
 "at runtime)."
 msgstr ""
+":ref:`Baked lightmaps <doc_using_lightmap_gi>` (Hızlıdır, ancak çalışma "
+"zamanında güncellenemez)."
 
 #: ../../docs/about/list_of_features.rst:255
 msgid ""
@@ -1543,17 +1544,16 @@ msgstr ""
 "veya OIDN ile CPU/GPU tabanlı gürültü gidermeyi destekler."
 
 #: ../../docs/about/list_of_features.rst:267
-#, fuzzy
 msgid ""
 ":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
 "*and* dynamic occluders, while also supporting reflections. Requires a fast "
 "baking step which can be performed in the editor or at runtime (including "
 "from an exported project)."
 msgstr ""
-":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Dinamik ışıklar *ve* "
-"dinamik örtücüleri desteklerken yansımaları da destekler. Editörde veya  "
-"runtime'da (dışa aktarılan bir proje dahil) gerçekleştirilebilen hızlı bir "
-"pişirme adımı gerektirir."
+":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Dinamik ışıkları ve "
+"dinamik engelleyicileri destekler, ayrıca yansımaları da destekler. Editörde "
+"veya çalışma zamanında (export edilmiş projeler dahil) gerçekleştirilebilen "
+"hızlı bir bake (ön hesaplama) adımı gerektirir."
 
 #: ../../docs/about/list_of_features.rst:271
 msgid ""
@@ -1625,27 +1625,28 @@ msgstr ""
 "kullanılabilirler."
 
 #: ../../docs/about/list_of_features.rst:290
-#, fuzzy
 msgid ""
 "When using the Forward+ renderer (default on desktop), reflection probes are "
 "rendered with clustered forward optimizations to decrease their individual "
 "cost. Clustered rendering also lifts any limits on the number of reflection "
 "probes that can be used on a mesh."
 msgstr ""
-"İleri+ arka ucunu kullanırken (masaüstünde varsayılan), yansıma sondaları, "
-"bireysel maliyetlerini azaltmak için kümelenmiş ileri en iyileştirmeler ile "
-"işlenir. Kümelenmiş işleme, bir örgü üzerinde kullanılabilecek yansıma "
-"sondalarının sayısı üzerindeki tüm sınırları da kaldırır."
+"Forward+ işleyici (masaüstünde varsayılan) kullanıldığında, reflection "
+"probeları (reflection probes), her birinin performans maliyetini düşürmek "
+"için “clustered forward” (kümelenmiş ileri) optimizasyonlarıyla işlenir. "
+"Kümelenmiş işleme (clustered rendering), ayrıca bir mesh üzerinde "
+"kullanılabilecek reflection probe sayısı üzerindeki pratik sınırlamaları "
+"ortadan kaldırır."
 
 #: ../../docs/about/list_of_features.rst:293
-#, fuzzy
 msgid ""
 "When using the Mobile renderer, up to 8 reflection probes can be displayed "
 "per mesh resource. When using the Compatibility renderer, up to 2 reflection "
 "probes can be displayed per mesh resource."
 msgstr ""
-"İleri Mobil arka ucunu kullanırken, örgü kaynağı başına 8 taneye kadar "
-"yansıma sondası görüntülenebilir."
+"Mobile işleyici kullanıldığında, bir mesh başına en fazla 8 adet reflection "
+"probe görüntülenebilir. Compatibility işleyici kullanıldığında ise, bir mesh "
+"başına en fazla 2 adet reflection probe görüntülenebilir."
 
 #: ../../docs/about/list_of_features.rst:297
 msgid "**Decals:**"
@@ -1674,15 +1675,14 @@ msgstr ""
 "Geliş açısına bağlı olarak çıkartmanın solması için normal solma desteği."
 
 #: ../../docs/about/list_of_features.rst:304
-#, fuzzy
 msgid ""
 "Does not rely on runtime mesh generation. This means decals can be used on "
 "complex skinned meshes with no performance penalty, even if the decal moves "
 "every frame."
 msgstr ""
-"Çalışma zamanı örgü üretimine bağımlı değildir. Bu, çıkartmanın her kare "
-"hareket etmesi durumunda bile, çıkartmaların karmaşık kaplamalı kafeslerde "
-"performans cezası olmadan kullanılabileceği anlamına gelir."
+"Çalışma zamanında mesh oluşturulmasına bağlı değildir. Bu sayede decal’ler, "
+"decal her kare hareket etse bile karmaşık skinli mesh’lerde performans kaybı "
+"olmadan kullanılabilir."
 
 #: ../../docs/about/list_of_features.rst:306
 msgid ""
@@ -1700,26 +1700,25 @@ msgstr ""
 "performansı artırır."
 
 #: ../../docs/about/list_of_features.rst:308
-#, fuzzy
 msgid ""
 "When using the Forward+ renderer (default on desktop), decals are rendered "
 "with clustered forward optimizations to decrease their individual cost. "
 "Clustered rendering also lifts any limits on the number of decals that can "
 "be used on a mesh."
 msgstr ""
-"İleri+ arka ucunu kullanırken (masaüstünde varsayılan), çıkartmalar bireysel "
-"maliyetlerini azaltmak için kümelenmiş ileri en iyileştirme ile işlenir. "
-"Kümelenmiş işleme, bir örgü üzerinde kullanılabilecek çıkartma sayısı "
-"üzerindeki tüm sınırları da kaldırır."
+"Forward+ işleyici (masaüstünde varsayılan) kullanıldığında, decal’ler her "
+"birinin performans maliyetini azaltmak için “clustered forward” (kümelenmiş "
+"ileri) optimizasyonlarıyla render edilir. Kümelenmiş işleme (clustered "
+"rendering), ayrıca bir mesh üzerinde kullanılabilecek decal sayısı "
+"üzerindeki pratik sınırlamaları ortadan kaldırır."
 
 #: ../../docs/about/list_of_features.rst:311
-#, fuzzy
 msgid ""
 "When using the Mobile renderer, up to 8 decals can be displayed per mesh "
 "resource."
 msgstr ""
-"İleri Mobil arka ucunu kullanırken, ağ kaynağı başına 8 taneye kadar "
-"çıkartma görüntülenebilir."
+"Mobile işleyici kullanıldığında, bir mesh başına en fazla 8 adet decal "
+"görüntülenebilir."
 
 #: ../../docs/about/list_of_features.rst:314
 msgid "**Sky:**"
@@ -1879,9 +1878,8 @@ msgid "**Post-processing:**"
 msgstr "**Sonra-işleme**"
 
 #: ../../docs/about/list_of_features.rst:359
-#, fuzzy
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES, AgX)."
-msgstr "Ton haritalaması (Doğrusal, Reinhard, Filmic, ACES)."
+msgstr "Tonemapping (Ton Eşleme) türleri: Linear, Reinhard, Filmic, ACES, AgX."
 
 #: ../../docs/about/list_of_features.rst:360
 msgid ""
@@ -2105,13 +2103,12 @@ msgid ":ref:`3D geometry helper class <class_Geometry3D>`."
 msgstr ":ref:`3B geometri yardımcı sınıfı <class_Geometry3D>`."
 
 #: ../../docs/about/list_of_features.rst:420
-#, fuzzy
 msgid ""
 "Support for exporting the current scene as a glTF 2.0 file, both from the "
 "editor and at runtime from an exported project."
 msgstr ""
-"Mevcut sahneyi, hem düzenleyiciden hem de dışa aktarılan bir projeden "
-"çalışma zamanında, glTF 2.0 dosyası olarak dışa aktarma desteği."
+"Mevcut sahnenin glTF 2.0 dosyası olarak dışa aktarılmasını destekler; hem "
+"editörden hem de export edilmiş bir projeden çalışma zamanında yapılabilir."
 
 #: ../../docs/about/list_of_features.rst:424
 msgid "3D physics"
@@ -2123,14 +2120,12 @@ msgstr ""
 "Araç cisimleri (arcade oyun fiziği için tasarlanmıştır, benzetim için değil)."
 
 #: ../../docs/about/list_of_features.rst:434
-#, fuzzy
 msgid ":ref:`Soft bodies <doc_soft_body>`."
-msgstr ":ref:`doc_soft_body`"
+msgstr ":ref:`Yumuşak cisimler <doc_soft_body>`."
 
 #: ../../docs/about/list_of_features.rst:435
-#, fuzzy
 msgid ":ref:`Ragdolls <doc_ragdoll_system>`."
-msgstr ":ref:`doc_ragdoll_system`"
+msgstr ":ref:`Ragdoll’lar <doc_ragdoll_system>`."
 
 #: ../../docs/about/list_of_features.rst:440
 msgid ""
@@ -2182,9 +2177,8 @@ msgid "Visual shader editor."
 msgstr "Görsel gölgelendirici düzenleyici."
 
 #: ../../docs/about/list_of_features.rst:452
-#, fuzzy
 msgid "Support for :ref:`visual shader plugins <doc_visual_shader_plugins>`."
-msgstr ":ref:`Özel içe aktarma eklentileri <doc_import_plugins>` için destek."
+msgstr ":ref:`visual shader plugins <doc_visual_shader_plugins>`desteği."
 
 #: ../../docs/about/list_of_features.rst:455
 #: ../../docs/about/docs_changelog.rst:38
@@ -2221,18 +2215,16 @@ msgstr ""
 "Vektörler ve dönüşümler gibi birçok 2B, 3B ve 4B doğrusal cebir veri türleri."
 
 #: ../../docs/about/list_of_features.rst:464
-#, fuzzy
 msgid ":ref:`GDScript: <doc_gdscript>`"
-msgstr ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
+msgstr ":ref:`GDScript: <doc_gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:466
-#, fuzzy
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript_reference>` "
 "with :ref:`optional static typing <doc_gdscript_static_typing>`."
 msgstr ""
-":ref:`İsteğe bağlı sabit tip yazımı <doc_gdscript_static_typing>` "
-"kullanan :ref:`yüksek-düzeyli yorumlanan dil <doc_gdscript>` 'dir."
+":ref:`Yüksek seviyeli yorumlanan dil  <doc_gdscript_reference>` with "
+":ref:`isteğe bağlı statik tip kontrolü  <doc_gdscript_static_typing>`."
 
 #: ../../docs/about/list_of_features.rst:468
 msgid ""
@@ -2256,7 +2248,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:473
 #, fuzzy
 msgid ":ref:`C#: <doc_c_sharp>`"
-msgstr ":ref:`doc_c_sharp_variant`"
+msgstr ":ref:`C#: <doc_c_sharp>`"
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
@@ -2265,24 +2257,20 @@ msgstr ""
 "dosya olarak paketlenmiştir."
 
 #: ../../docs/about/list_of_features.rst:476
-#, fuzzy
 msgid "Supports .NET 8 and higher."
-msgstr ".NET 6 ve üstünü destekler."
+msgstr ".NET 8 ve üstünü destekler."
 
 #: ../../docs/about/list_of_features.rst:478
-#, fuzzy
 msgid "Full support for the C# 12.0 syntax and features."
-msgstr "C# 10.0 sözdizimi ve özellikleri için tam destek."
+msgstr "C# 12.0 sözdizimi ve özellikleri için tam destek."
 
 #: ../../docs/about/list_of_features.rst:480
-#, fuzzy
 msgid ""
 "Supports Windows, Linux, and macOS. Since Godot 4.2, experimental support "
 "for Android and iOS is also available."
 msgstr ""
-"Windows, Linux ve macOS'u destekler. 4.2'den itibaren Android ve iOS için "
-"deneysel destek de mevcuttur (Android için .NET 7.0 ve iOS için 8.0 projesi "
-"gerektirir)."
+"Windows, Linux ve macOS’u destekler. Godot 4.2’den itibaren, Android ve iOS "
+"için de deneysel destek mevcuttur."
 
 #: ../../docs/about/list_of_features.rst:482
 msgid "On the iOS platform only some architectures are supported: ``arm64``."
@@ -2336,7 +2324,6 @@ msgid "Use any build system and language features you wish."
 msgstr "İstediğiniz herhangi bir derleme sistemini ve dil özelliğini kullanın."
 
 #: ../../docs/about/list_of_features.rst:500
-#, fuzzy
 msgid ""
 "Actively developed GDExtension bindings for `D <https://github.com/godot-"
 "dlang/godot-dlang>`__, `Swift <https://github.com/migueldeicaza/"
@@ -2344,12 +2331,11 @@ msgid ""
 "bindings provided by the community. (Some of these bindings may be "
 "experimental and not production-ready)."
 msgstr ""
-"Topluluk tarafından sağlanan `D <https://github.com/godot-dlang/godot-"
-"dlang>`__, `Haxe <https://hxgodot.github.io/>`__, `Swift <https://github.com/"
-"migueldeicaza/SwiftGodot>`__, ve `Rust <https://github.com/godot-rust/"
-"gdextension>`__ bağlayıcıları için aktif olarak geliştirilen GDExtension "
-"bağlayıcıları. (Bu bağlayıcılardan bazıları deneysel olabilir ve üretime "
-"hazır olmayabilir)."
+"Topluluk tarafından sağlanan ve aktif olarak geliştirilen GDExtension "
+"bağlayıcıları: `D <https://github.com/godot-dlang/godot-dlang>`__, `Swift "
+"<https://github.com/migueldeicaza/SwiftGodot>`__, ve `Rust <https://"
+"github.com/godot-rust/gdextension>`__ (Bazı bağlayıcılar deneysel olabilir "
+"ve üretim ortamı için hazır olmayabilir)."
 
 #: ../../docs/about/list_of_features.rst:505
 #: ../../docs/about/docs_changelog.rst:381
@@ -2425,6 +2411,8 @@ msgid ""
 ":ref:`Text to speech <doc_text_to_speech>` using platform-provided TTS "
 "engines."
 msgstr ""
+":ref:`Metin okuma Text to speech <doc_text_to_speech>` özelliği, platform "
+"tarafından sağlanan TTS motorlarını kullanır."
 
 #: ../../docs/about/list_of_features.rst:525
 msgid "MIDI input."
@@ -2518,7 +2506,6 @@ msgstr ""
 "yüklenebilir veya 3B sahne olarak içe aktarılabilir)."
 
 #: ../../docs/about/list_of_features.rst:557
-#, fuzzy
 msgid ""
 "Support for loading glTF 2.0 scenes at runtime, including from an exported "
 "project."
@@ -2726,15 +2713,20 @@ msgid "Full support for Unicode including emoji."
 msgstr "Emoji dahil Unicode için tam destek."
 
 #: ../../docs/about/list_of_features.rst:615
+#, fuzzy
 msgid "Support for loading system fonts on Windows, macOS, and Linux."
-msgstr ""
+msgstr "Windows, macOS ve Linux için Sistem Font'u Yükleme Desteği"
 
 #: ../../docs/about/list_of_features.rst:617
+#, fuzzy
 msgid ""
 "By default, system fonts are used as a fallback to display unsupported "
 "characters. This allows proper display of multilingual text without having "
 "to bundle large font files with a project."
 msgstr ""
+"Varsayılan olarak, Sistem Fontları Desteklenmeyen Karakterleri göstermek "
+"için kullanılır. Bu çok dilli yazıları, proje içerisinde büyük font "
+"dosyaları barındırmadan göstermeye yarar."
 
 #: ../../docs/about/list_of_features.rst:621
 msgid ""

@@ -101,7 +101,7 @@
 # James Phillips <XFX@users.noreply.hosted.weblate.org>, 2024.
 # Shigefumi Sasaki <polycharacter@gmail.com>, 2024.
 # Binnaga <polycharacter@gmail.com>, 2024, 2025.
-# Chikashi Suzuki <underground.resources823@gmail.com>, 2024.
+# Chikashi Suzuki <underground.resources823@gmail.com>, 2024, 2026.
 # Joshua Folkken <joshuafolkken@gmail.com>, 2024, 2025.
 # Tomoo Amano <sh.eer.cat@gmail.com>, 2024.
 # Shotaro Kitamura <shot.kit.garact@gmail.com>, 2024.
@@ -131,13 +131,20 @@
 # kakeudon17 <tazayuu17@gmail.com>, 2025.
 # Amir Sabbagh <amir420c@gmail.com>, 2025.
 # Acotto <perc.fg.music@gmail.com>, 2025.
+# Rudeus <95301440+7Luminaries@users.noreply.github.com>, 2026.
+# KOMAKI Ryosuke <rskkmkmk@gmail.com>, 2026.
+# Geekazodium <59382423+geekazodium@users.noreply.github.com>, 2026.
+# Meteor2 <ryumeteor175@gmail.com>, 2026.
+# Sigma 7863 <mukae.yuta.0811@gmail.com>, 2026.
+# "IndigoCarmine (Yuhei Yamada)" <tamanisikaminai@gmail.com>, 2026.
+# jumpei okazaki <pokegames1578@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-30 16:58+0100\n"
-"PO-Revision-Date: 2025-12-17 10:00+0000\n"
-"Last-Translator: Amir Sabbagh <amir420c@gmail.com>\n"
+"PO-Revision-Date: 2026-05-21 17:12+0000\n"
+"Last-Translator: Chikashi Suzuki <underground.resources823@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ja/>\n"
 "Language: ja\n"
@@ -145,7 +152,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.1-dev\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -272,16 +279,17 @@ msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
 msgstr ""
+"関連ドキュメントを読み始めるには、以下のタイルからプロフィールに合ったものを"
+"選択してください："
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to easily access any "
 "section of the documentation for your topic of interest. You can also use "
 "the search function in the top-left corner."
 msgstr ""
-"サイドバーにある目次から、関心のあるトピックにすぐアクセスすることができま"
-"す。また、左上の検索機能を利用することも出来ます。"
+"サイドバーにある目次から、関心のあるトピックにすぐアクセスすることができます"
+"。また、左上の検索機能を利用することも出来ます。"
 
 #: ../../docs/index.rst:116
 msgid "Get involved"
@@ -710,13 +718,12 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
-"また、\\ `Godotウェブサイトのライセンス情報ページ <https://godotengine.org/"
-"license>`_\\ も見てみて下さい。"
+"コンソール対応に関する情報は、\\`Godot Webサイト<https://godotengine.org/"
+"consoles/>`_\\をご覧ください。"
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
@@ -2133,7 +2140,6 @@ msgid "Visual shader editor."
 msgstr "ビジュアルシェーダーエディタ。"
 
 #: ../../docs/about/list_of_features.rst:452
-#, fuzzy
 msgid "Support for :ref:`visual shader plugins <doc_visual_shader_plugins>`."
 msgstr ":ref:`カスタムのインポート用プラグイン <doc_import_plugins>` に対応。"
 
@@ -2173,7 +2179,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:464
 msgid ":ref:`GDScript: <doc_gdscript>`"
-msgstr ":ref:`GDScript: <doc_gdscript>`"
+msgstr ":ref:`GDスクリプト: <doc_gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:466
 msgid ""
@@ -2187,8 +2193,8 @@ msgstr ""
 msgid ""
 "Syntax inspired by Python. However, GDScript is **not** based on Python."
 msgstr ""
-"Pythonにインスパイアされた文法。 しかし、GDScript は Python を基にしてはいま"
-"せん。"
+"Pythonにインスパイアされた文法。 しかし、GDScript は Python を基に**してはい"
+"ません**。"
 
 #: ../../docs/about/list_of_features.rst:469
 msgid "Syntax highlighting is provided on GitHub."
@@ -2366,6 +2372,8 @@ msgid ""
 ":ref:`Text to speech <doc_text_to_speech>` using platform-provided TTS "
 "engines."
 msgstr ""
+":ref:`Text to speech <doc_text_to_speech>` プラットフォームが提供するTTS"
+"エンジンを使えます。"
 
 #: ../../docs/about/list_of_features.rst:525
 msgid "MIDI input."
@@ -2664,11 +2672,10 @@ msgid "Full support for Unicode including emoji."
 msgstr "絵文字を含むUnicodeに完全対応。"
 
 #: ../../docs/about/list_of_features.rst:615
-#, fuzzy
 msgid "Support for loading system fonts on Windows, macOS, and Linux."
 msgstr ""
-"Godotは、Windows、macOS、Linux、Android、およびiOSのゲーム内オーディオ録音を"
-"サポートしています。"
+"GodotはWindows、macOS、およびLinuxでのシステムフォントの読み込みに対応してい"
+"ます。"
 
 #: ../../docs/about/list_of_features.rst:617
 msgid ""
@@ -2676,6 +2683,9 @@ msgid ""
 "characters. This allows proper display of multilingual text without having "
 "to bundle large font files with a project."
 msgstr ""
+"デフォルトでは、サポートされていない文字を表示するための代替手段として"
+"システムフォントが使用されます。これにより、大きなフォントファイルを"
+"プロジェクトに同梱することなく、多言語テキストを適切に表示できます。"
 
 #: ../../docs/about/list_of_features.rst:621
 msgid ""
@@ -2698,9 +2708,8 @@ msgstr ""
 "``tr()`` 関数を使ってください。"
 
 #: ../../docs/about/list_of_features.rst:628
-#, fuzzy
 msgid "Support for pluralization and translation contexts."
-msgstr "gettext 翻訳を使用する際、複数形対応およびコンテキスト指定翻訳に対応。"
+msgstr "複数形の翻訳、および文脈に沿った翻訳のサポート。"
 
 #: ../../docs/about/list_of_features.rst:629
 msgid ""
@@ -2744,6 +2753,8 @@ msgid ""
 "Create transparent windows to use as overlays, with polygon-based mouse "
 "passthrough support."
 msgstr ""
+"ポリゴンベースのマウスパススルーに対応した、オーバーレイとして使用できる透明"
+"なウィンドウを作成します。"
 
 #: ../../docs/about/list_of_features.rst:642
 msgid ""
@@ -2769,40 +2780,38 @@ msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "ボーダーレスウィンドウ (全画面または非全画面)。"
 
 #: ../../docs/about/list_of_features.rst:649
-#, fuzzy
 msgid "Keep a window always on top."
-msgstr "ウィンドウを常に最前面に保つ機能。"
+msgstr "ウィンドウを常に最前面に表示する機能。"
 
 #: ../../docs/about/list_of_features.rst:650
 msgid "Make a window ignore focus (useful for overlays)."
-msgstr ""
+msgstr "ウィンドウがフォーカスを無視するようにする（オーバーレイに便利）。"
 
 #: ../../docs/about/list_of_features.rst:651
 msgid ""
 "Declare a window as a popup (hidden from task switcher) or exclusive "
 "(prevents interacting with other windows from the same process)."
 msgstr ""
+"ウィンドウをポップアップ（タスクスイッチャーから非表示）または排他ウィンドウ"
+"（同じプロセス内の他のウィンドウとのやり取りを禁止）として宣言します。"
 
 #: ../../docs/about/list_of_features.rst:653
-#, fuzzy
 msgid "Native file dialog support on Windows, macOS, Linux, and Android."
 msgstr ""
-"Godotは、Windows、macOS、Linux、Android、およびiOSのゲーム内オーディオ録音を"
-"サポートしています。"
+"Godotは、Windows、macOS、Linux、およびAndroidにおけるOS標準の"
+"ファイルダイアログに対応しています。"
 
 #: ../../docs/about/list_of_features.rst:654
-#, fuzzy
 msgid "Tray icon support on Windows and macOS."
-msgstr "ETC2 (macOSには未対応)。"
+msgstr "WindowsおよびmacOSでのトレイアイコンのサポート。"
 
 #: ../../docs/about/list_of_features.rst:655
 msgid "Global menu integration on macOS."
 msgstr "macOS でのグローバルメニュー統合。"
 
 #: ../../docs/about/list_of_features.rst:656
-#, fuzzy
 msgid "Client-side decorations on macOS."
-msgstr "macOS でのグローバルメニュー統合。"
+msgstr "macOSにおけるクライアントサイドのデコレーション。"
 
 #: ../../docs/about/list_of_features.rst:657
 msgid ""
@@ -2825,11 +2834,8 @@ msgid "Parse custom command line arguments."
 msgstr "カスタムのコマンドライン引数をパース。"
 
 #: ../../docs/about/list_of_features.rst:661
-#, fuzzy
 msgid "Support for screen readers on Windows, macOS, and Linux."
-msgstr ""
-"Godotは、Windows、macOS、Linux、Android、およびiOSのゲーム内オーディオ録音を"
-"サポートしています。"
+msgstr "Windows、macOS、およびLinuxにおけるスクリーンリーダーのサポート。"
 
 #: ../../docs/about/list_of_features.rst:662
 msgid ""
@@ -2844,12 +2850,11 @@ msgstr ""
 "バー無しでエンジンを起動できます."
 
 #: ../../docs/about/list_of_features.rst:669
-#, fuzzy
 msgid ""
 "See :ref:`doc_creating_applications` for details on using these features."
 msgstr ""
-"フォントのインポートを構成するためのガイドラインについて"
-"は、 :ref:`doc_gui_using_fonts` を参照してください。"
+"これらの機能の使用方法の詳細については、 :ref:`doc_creating_applications` を"
+"参照してください。"
 
 #: ../../docs/about/list_of_features.rst:672
 #: ../../docs/tutorials/3d/3d_antialiasing.rst:342
@@ -3931,9 +3936,8 @@ msgstr ""
 
 #: ../../docs/about/system_requirements.rst:268
 #: ../../docs/about/system_requirements.rst:274
-#, fuzzy
 msgid "*Example (Metal): Apple A12 (iPhone XR/XS)*"
-msgstr "*例 (Metal): Apple A11 (iPhone 8/X)*"
+msgstr "*例 (Metal): Apple A12 (iPhone XR/XS)*"
 
 #: ../../docs/about/system_requirements.rst:270
 msgid ""
@@ -4270,13 +4274,12 @@ msgstr ""
 "もいくつかあります。"
 
 #: ../../docs/about/faq.rst:65
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`__."
 msgstr ""
-"また、\\ `Godotウェブサイトのライセンス情報ページ <https://godotengine.org/"
-"license>`_\\ も見てみて下さい。"
+"コンソールのサポートに関する情報は、 \\ `GodotのWebサイト <https://"
+"godotengine.org/consoles/>`__ \\ をご覧ください。"
 
 #: ../../docs/about/faq.rst:67
 msgid ""
@@ -5228,10 +5231,8 @@ msgstr ""
 "さいため、ElectronやQtのようなフレームワークの代替としても適しています。"
 
 #: ../../docs/about/faq.rst:471
-#, fuzzy
 msgid "See :ref:`doc_creating_applications` for more information."
-msgstr ""
-"詳細については、\\ :ref:`doc_running_code_in_the_editor` を参照してください。"
+msgstr "詳細については、\\ :ref:`doc_creating_applications` \\ を参照してください。"
 
 #: ../../docs/about/faq.rst:476
 msgid "Is it possible to use Godot as a library?"
@@ -5243,6 +5244,9 @@ msgid ""
 "to be used with its editor. We recommend you give it a try, as it will most "
 "likely save you time in the long term."
 msgstr ""
+"Godotでゲームを作る上で、専用のエディタと一緒に使うことを前提にGodotが設計さ"
+"れていることを忘れないでください。ぜひ一度専用のエディタを試してみることをお"
+"勧めします。長い目でみれば時間の節約になるはずです。"
 
 #: ../../docs/about/faq.rst:482
 msgid ""
@@ -5252,6 +5256,11 @@ msgid ""
 "currently supported on Windows, macOS, and Linux. Support for Android and "
 "iOS is planned for a future release."
 msgstr ""
+"より専門的な用途として、Godotをライブラリとして活用するのも良いかもしれません"
+"。Godot 4.6以降、LibGodotという形式でGodotを静的ライブラリまたは共有"
+"ライブラリとして使用する機能が **実験的** にサポートされています。これは現在"
+"、Windows、macOS、およびLinuxで利用可能です。AndroidおよびiOSへの対応は、今後"
+"のリリースで予定されています。"
 
 #: ../../docs/about/faq.rst:488
 msgid ""
@@ -5259,6 +5268,9 @@ msgid ""
 "libgodot_project GitHub repository <https://github.com/migeran/"
 "libgodot_project>`__."
 msgstr ""
+"Godotをライブラリとして使用したサンプルアプリケーションは、 \\ `migeran/"
+"libgodot_project GitHubレポジトリ <https://github.com/migeran/"
+"libgodot_project>`__ \\ でご覧いただけます。"
 
 #: ../../docs/about/faq.rst:492
 msgid "What user interface toolkit does Godot use?"
@@ -5282,19 +5294,14 @@ msgstr ""
 "用できます。"
 
 #: ../../docs/about/faq.rst:499
-#, fuzzy
 msgid ""
 "This toolkit is exposed in the form of Control nodes, which are used to "
 "render the editor (which is written in C++). These Control nodes can also be "
 "used in projects from any scripting language supported by Godot."
 msgstr ""
-"Godotは、GTK、Qt、wxWidgetsなどの標準の :abbr:`GUI (Graphical User "
-"Interface)` ツールキットを使用しません。代わりに、Godotは、OpenGLESまたは"
-"Vulkanを使用してレンダリングされた独自のユーザーインターフェイスツールキット"
-"を使用します。このツールキットは、エディター (C ++で記述されている) のレンダ"
-"リングに使用されるコントロールノードの形式で公開されます。これらのコントロー"
-"ルノードは、Godotでサポートされている任意のスクリプト言語のプロジェクトでも使"
-"用できます。"
+"このツールキットは、エディター (C ++で記述されている) のレンダリングに使用さ"
+"れるコントロールノードの形式で公開されます。これらのコントロールノードは、"
+"Godotでサポートされている任意のスクリプト言語のプロジェクトでも使用できます。"
 
 #: ../../docs/about/faq.rst:503
 msgid ""
@@ -7735,8 +7742,8 @@ msgid ""
 "This is by no means an exhaustive overview. We will introduce many more "
 "features in this getting started series."
 msgstr ""
-"すべてを網羅した概要というわけではありませが、この入門シリーズで、かなり多く"
-"の機能を紹介しています。"
+"すべてを網羅した概要というわけではありませんが、この入門シリーズで、かなり多"
+"くの機能を紹介しています。"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:15
 msgid "What is Godot?"
@@ -7757,8 +7764,9 @@ msgid ""
 "You can also create console games with it, although you either need strong "
 "programming skills or a developer to port the game for you."
 msgstr ""
-"これを使用してコンソール ゲームを作成することもできますが、高度なプログラミン"
-"グ スキルか、あたなのゲームを移植してくれるデベロッパーのいずれかが必要です。"
+"これを使用してコンソール ゲームを作成することもできますが、高度な"
+"プログラミング スキルか、あなたのゲームを移植してくれるデベロッパーのいずれか"
+"が必要です。"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:27
 msgid "What can the engine do?"
@@ -7857,9 +7865,9 @@ msgid ""
 "or :ref:`C# <doc_c_sharp>`, which is popular in the games industry. These "
 "are the two main scripting languages we support."
 msgstr ""
-"ゲームのコーディングには、Godot 固有の軽量な構文を持つ統合言語であ"
-"る :ref:`GDScript <doc_gdscript>` 、またはゲーム業界で人気の :ref:`C# "
-"<doc_c_sharp>`  を使用できます。この2つは私たちがサポートする主要なスクリプト"
+"ゲームのコーディングには、Godot 固有の軽量な構文を持つ統合言語である "
+":ref:`GDScript <doc_gdscript>` 、またはゲーム業界で人気の :ref:`C# "
+"<doc_c_sharp>` を使用できます。この2つは私たちがサポートする主要なスクリプト"
 "言語です。"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:89
@@ -7870,10 +7878,11 @@ msgid ""
 "recompiling the engine. You can use this technology to integrate third-party "
 "libraries and other Software Development Kits (SDK) in the engine."
 msgstr ""
-"GDExtensionを使用すると、エンジンを再コンパイルせずにC または C++ でゲームプ"
-"レイや高速なアルゴリズムを実装することができます。 また、これを使用してサード"
-"パーティのライブラリや他のソフトウェア開発キット (SDK) をエンジンに統合するこ"
-"ともできます。"
+":ref:`GDExtension <doc_what_is_gdextension>` を使用すると、エンジンを再"
+"コンパイルせずに :ref:`C++ <doc_godot_cpp>` や他の言語 :ref:`other languages "
+"<doc_scripting_languages>` でゲームプレイや高速なアルゴリズムを実装することが"
+"できます。 また、これを使用してサードパーティのライブラリや他のソフトウェア開"
+"発キット (SDK) をエンジンに統合することもできます。"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:95
 msgid ""
@@ -7909,7 +7918,6 @@ msgstr ""
 "オブジェクトなどの概念に慣れると、効率的にコーディングできるようになります。"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:111
-#, fuzzy
 msgid ""
 "If you are entirely new to programming, GDQuest's *Learn GDScript From Zero* "
 "is a free and open source interactive tutorial for absolute beginners to "
@@ -7918,10 +7926,10 @@ msgid ""
 "`in the browser <https://gdquest.github.io/learn-gdscript>`__."
 msgstr ""
 "GDQuestの *Learn GDScript From Zero* は完全な初心者がGodotのGDScript言語によ"
-"るプログラムを学ぶための無料かつオープンソースのインタラクティブチュートリア"
-"ルです。 `デスクトップアプリケーション <https://gdquest.itch.io/learn-godot-"
-"gdscript>`_  または `ブラウザ上で <https://gdquest.github.io/learn-"
-"gdscript>`_ 利用できます。"
+"るプログラムを学ぶための無料かつオープンソースの"
+"インタラクティブチュートリアルです。 `デスクトップアプリケーション <https://"
+"gdquest.itch.io/learn-godot-gdscript>`_ または `ブラウザ上で <https://"
+"gdquest.github.io/learn-gdscript>`_ 利用できます。"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:117
 msgid ""
@@ -8726,7 +8734,6 @@ msgstr ""
 "の優れた無料リソースをお勧めします。"
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:69
-#, fuzzy
 msgid ""
 "GDQuest's *Learn GDScript From Zero* is a free and open source interactive "
 "tutorial for absolute beginners to learn to program with Godot's GDScript "
@@ -8735,10 +8742,10 @@ msgid ""
 "gdscript>`__."
 msgstr ""
 "GDQuestの *Learn GDScript From Zero* は完全な初心者がGodotのGDScript言語によ"
-"るプログラムを学ぶための無料かつオープンソースのインタラクティブチュートリア"
-"ルです。 `デスクトップアプリケーション <https://gdquest.itch.io/learn-godot-"
-"gdscript>`_  または `ブラウザ上で <https://gdquest.github.io/learn-"
-"gdscript>`_ 利用できます。"
+"るプログラムを学ぶための無料かつオープンソースの"
+"インタラクティブチュートリアルです。 `デスクトップアプリケーション <https://"
+"gdquest.itch.io/learn-godot-gdscript>`_ または `ブラウザ上で <https://"
+"gdquest.github.io/learn-gdscript>`_ 利用できます。"
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:75
 msgid ""
@@ -14246,37 +14253,32 @@ msgid "Draw a user interface on a 3D game."
 msgstr "3D ゲームにユーザー インターフェイスを描画します。"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:32
-#, fuzzy
 msgid ""
 "This tutorial is for beginners who followed the complete getting started "
 "series. We'll start slow with detailed instructions and shorten them as we "
 "do similar steps. If you're an experienced programmer, you can browse the "
 "complete demo's source code here:"
 msgstr ""
-"このチュートリアルは、完全な入門シリーズに従った初心者のためのものです。この"
-"チュートリアルでは、詳細な説明をゆっくりと始め、類似の手順を行うにつれて説明"
-"を簡略化していきます。もしあなたが経験豊富なプログラマーなら、ここで完全なデ"
-"モのソースコードを閲覧することができます。`Squash the Creep source code "
-"<https://github.com/godotengine/godot-demo-projects/tree/master/3d/"
-"squash_the_creeps>`__."
+"このチュートリアルは、入門シリーズをすべて完了した初心者向けです。最初は詳細"
+"な手順でゆっくりと進め、同様の手順を繰り返すにつれて説明を簡潔にしていきます"
+"。経験豊富なプログラマーの方は、こちらのリンクからデモのソースコード全体を参"
+"照できます。"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:37
-#, fuzzy
 msgid ""
 "`Squash the Creeps source code (GDScript) <https://github.com/godotengine/"
 "godot-demo-projects/tree/master/3d/squash_the_creeps>`__"
 msgstr ""
-"https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
-"dodge_the_creeps"
+"`「Squash the Creeps」のソースコード (GDScript) <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/3d/squash_the_creeps>`__"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:38
-#, fuzzy
 msgid ""
 "`Squash the Creeps source code (C#) <https://github.com/godotengine/godot-"
 "demo-projects/tree/master/mono/squash_the_creeps>`__"
 msgstr ""
-"https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
-"dodge_the_creeps"
+"`「Squash the Creeps」のソースコード (C#) <https://github.com/godotengine/"
+"godot-demo-projects/tree/master/mono/squash_the_creeps>`__"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:42
 msgid ""
@@ -14328,7 +14330,6 @@ msgstr ""
 "インポートして、ゲームシーンを設定しましょう。"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:9
-#, fuzzy
 msgid ""
 "We've prepared a Godot project with the 3D models and sounds we'll use for "
 "this tutorial, linked in the index page. If you haven't done so yet, you can "
@@ -14336,10 +14337,11 @@ msgid ""
 "godotengine/godot-docs-project-starters/releases/download/latest-4.x/"
 "3d_squash_the_creeps_starter.zip>`_."
 msgstr ""
-"このチュートリアルで使用する 3D モデルとサウンドを含む Godot プロジェクトを用"
-"意しました。まだの方は `Squash the Creeps assets <https://github.com/"
-"godotengine/godot-3d-dodge-the-creeps/releases/tag/1.1.0>`__ からアーカイブを"
-"ダウンロードしてください。"
+"このチュートリアルで使用する3DモデルとサウンドをまとめたGodotプロジェクトを用"
+"意しました。インデックスページにリンクがあります。まだダウンロードしていない"
+"場合は、こちらからアーカイブをダウンロードできます： `Squash the Creeps "
+"アセット <https://github.com/godotengine/godot-docs-project-starters/"
+"releases/download/latest-4.x/3d_squash_the_creeps_starter.zip>`_。"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:13
 msgid ""
@@ -14350,39 +14352,34 @@ msgstr ""
 "クトマネージャーを開き、 *インポート* ボタンをクリックします。"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:18
-#, fuzzy
 msgid ""
 "In the import popup, enter the full path to the freshly created directory "
 "``3d_squash_the_creeps_starter/``. You can click the *Browse* button on the "
 "right to open a file browser and navigate to the ``project.godot`` file the "
 "folder contains."
 msgstr ""
-"インポートポップアップで、作成したばかりのディレクトリ\\ "
-"``squash_the_creeps_start/``\\ へのフルパスを入力します。右側の \\ *参照"
-"(Browse)*\\ ボタンをクリックしてファイル ブラウザを開き、フォルダに含まれる"
-"\\ ``project.godot``\\ ファイルに移動することも可能です。"
+"インポートポップアップで、新しく作成したディレクトリ "
+"``3d_squash_the_creeps_starter/`` へのフルパスを入力します。右側の *Browse* "
+"ボタンをクリックするとファイルブラウザが開き、そのフォルダ内にある "
+"``project.godot`` ファイルに移動できます。"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:25
-#, fuzzy
 msgid "Click *Import* to open the project in the editor."
-msgstr ""
-"\\ *インポートして編集(Install & Edit)*\\ をクリックすると、エディタのプロ"
-"ジェクトが開きます。"
+msgstr "*Import (インポート)* をクリックして、エディタでプロジェクトを開きます。"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:29
-#, fuzzy
 msgid ""
 "A window notifying you that the project was generated by an older Godot "
 "version may appear. Click *OK* to convert the project to your current Godot "
 "version."
 msgstr ""
-"プロジェクトが古いGodotバージョンで生成されたことを通知するウィンドウが表示さ"
-"れる場合があります。 *フルプロジェクトを変換* をクリックして、プロジェクトを"
-"現在のGodotバージョンに変換してください。"
+"プロジェクトが古いバージョンの Godot で生成されたことを知らせるウィンドウが表"
+"示される場合があります。 *OK* をクリックして、プロジェクトを現在の Godot "
+"バージョンに変換してください。"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:34
 msgid "If it doesn't open immediately open the project from your project list."
-msgstr ""
+msgstr "すぐに開かない場合は、プロジェクトリストからプロジェクトを開いてください。"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:36
 msgid ""
@@ -14539,7 +14536,6 @@ msgstr ""
 "す。"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:107
-#, fuzzy
 msgid ""
 "We're going to move the ground down so we can see the floor grid. To do "
 "this, the grid snapping feature can be used. Grid snapping can be activated "
@@ -14548,13 +14544,12 @@ msgid ""
 "handle on the gizmo **then** holding :kbd:`Ctrl` (:kbd:`Cmd` on macOS) while "
 "holding the selected node."
 msgstr ""
-"地面を下に移動して、床のグリッドを見えるようにしましょう。そのためにグリッド"
-"スナップ機能を使うことができます。グリッドスナップ機能を3Dエディタで使用する"
-"方法は2つあります。1つ目は、 *スナップを使用* (Use Snap)ボタンを押す"
-"（ :kbd:`Y` キーを押しても良いです）ことです。もう1つの方法は、ノードを選択"
-"し、ギズモまでマウスカーソルを移動させ、 :kbd:`Ctrl` を押しながらギズモをク"
-"リックすると、 :kbd:`Ctrl` を押している間、スナップが有効になり、整数値で位置"
-"調整を行うことがます。"
+"床のグリッドが見えるように、地面を下に動かします。これを行うには、"
+"グリッドスナップ機能を使用します。3Dエディタでは、2 つの方法で"
+"グリッドスナップを有効にできます。1 つ目は、 *Use Snap* ボタン (または "
+":kbd:`Y` キー) を押す方法です。2 つ目は、ノードを選択し、ギズモのハンドルを"
+"ドラッグした **その後** 、選択したノードを保持したまま :kbd:`Ctrl` キー "
+"(macOSの場合は :kbd:`Cmd` キー) を押す方法です。"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:114
 msgid ""
@@ -14565,14 +14560,13 @@ msgstr ""
 "使って ``Ground`` ノードを動かしましょう。"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:120
-#, fuzzy
 msgid ""
 "If you can't see the 3D object manipulator like on the image above, ensure "
 "the *Transform Mode* is active in the toolbar above the view."
 msgstr ""
-"上の画像のように 3D オブジェクト マニピュレーターが表示されない場合は、ビュー"
-"の上のツールバーで *選択モード(Select Mode)* がアクティブになっていることを確"
-"認してください。"
+"上の画像のように3Dオブジェクトマニピュレータが表示されない場合は、ビューの上"
+"にあるツールバーで *Transform Mode (変換モード)* が有効になっていることを確認"
+"してください。"
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:125
 msgid ""
@@ -21892,7 +21886,7 @@ msgstr ""
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:87
 msgid "Git LFS"
-msgstr ""
+msgstr "Git LFS"
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:89
 msgid ""
@@ -21902,6 +21896,11 @@ msgid ""
 "useful for managing large assets, such as textures, audio files, and 3D "
 "models, without bloating your Git repository."
 msgstr ""
+"Git LFS (Large File Storage) は、Git リポジトリで大容量ファイルを管理するため"
+"のGit 拡張機能です。大きなファイルをテキスト形式のポインタに置き換え、実際の"
+"ファイル内容はリモートサーバーに保存します。これにより、テクスチャ、音声"
+"ファイル、3D モデルなどの大容量アセットを管理しながら、Git リポジトリのサイズ"
+"肥大化を防ぐことができます。"
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:97
 msgid ""
@@ -162466,12 +162465,11 @@ msgid "inout vec4 **CUSTOM**"
 msgstr "\\ inout vec4 **CUSTOM**"
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:106
-#, fuzzy
 msgid ""
 "Custom particle data. Accessible from the mesh's shader as "
 "``INSTANCE_CUSTOM``."
 msgstr ""
-"カスタムパーティクルデータ。メッシュのシェーダーから **INSTANCE_CUSTOM** とし"
+"カスタムパーティクルデータ。メッシュのシェーダーから ``INSTANCE_CUSTOM`` とし"
 "てアクセス可能。"
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:108
@@ -162490,14 +162488,13 @@ msgid "in vec4 **USERDATAX**"
 msgstr "\\in vec4 **USERDATAX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:110
-#, fuzzy
 msgid ""
 "Vector that enables the integration of supplementary user-defined data into "
 "the particle process shader. ``USERDATAX`` are six built-ins identified by "
 "number, ``X`` can be numbers between 1 and 6, for example ``USERDATA3``."
 msgstr ""
-"補足的なユーザー定義データをParticleシェーダーに統合できるようにするベクト"
-"ル。 ``USERDATAX`` は番号で識別される 6 つのビルトインであり、``X`` には 1 か"
+"補足的なユーザー定義データをParticleシェーダーに統合できるようにするベクトル"
+"。 ``USERDATAX`` は番号で識別される 6 つのビルトインであり、``X`` には 1 か"
 "ら 6 までの番号を指定できます。"
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:113
@@ -162690,7 +162687,7 @@ msgid ""
 "(i.e. this particle was created by ``emit_subparticle()`` without the "
 "``FLAG_EMIT_CUSTOM`` flag)."
 msgstr ""
-"``true``のとき、パーティクルが再起動された、またはカスタムのプロパティが設定"
+"``true`` のとき、パーティクルが再起動された、またはカスタムのプロパティが設定"
 "されずに放出された (つまりこのパーティクルが ``FLAG_EMIT_CUSTOM`` フラグなし"
 "で ``emit_subparticle()`` によって作成された)。"
 
@@ -198499,6 +198496,8 @@ msgid ""
 "`GameDev Academy by Zenva <https://gamedevacademy.org/category/godot-"
 "tutorials/godot-4/>`__"
 msgstr ""
+"`Zenvaによるゲーム開発アカデミー <https://gamedevacademy.org/category/godot-"
+"tutorials/godot-4/>`__"
 
 #: ../../docs/community/tutorials.rst:37
 msgid "`Game Dev Artisan website <https://gamedevartisan.com/>`__"

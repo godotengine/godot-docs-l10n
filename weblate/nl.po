@@ -52,7 +52,7 @@
 # Luka van der Plas <lukavdplas@users.noreply.hosted.weblate.org>, 2024.
 # Chris Meijer <chrismeijer05@gmail.com>, 2024.
 # Matthijs <m4tthijsbl0m@gmail.com>, 2024.
-# Philip Goto <philip.goto@gmail.com>, 2024.
+# Philip Goto <philip.goto@gmail.com>, 2024, 2026.
 # Sam Plimmer <sam.g.plimmer@gmail.com>, 2024.
 # Luka Verbrugghe <verbruggheluka0@gmail.com>, 2024.
 # tristanvong <tristan.vong@student.ehb.be>, 2025.
@@ -63,13 +63,15 @@
 # Thijs-Jan <thijsjan.huisman@gmail.com>, 2025.
 # Jesse Kroon <jessekroon2@gmail.com>, 2025.
 # Daniel koezema <koezema0903@gmail.com>, 2025.
+# Flying Piano <flyingpiano27@gmail.com>, 2026.
+# cheese <deanlemans5646@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-30 16:58+0100\n"
-"PO-Revision-Date: 2025-11-24 07:52+0000\n"
-"Last-Translator: Daniel koezema <koezema0903@gmail.com>\n"
+"PO-Revision-Date: 2026-05-14 21:11+0000\n"
+"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/nl/>\n"
 "Language: nl\n"
@@ -77,7 +79,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 2026.5.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -144,9 +146,8 @@ msgid "Class reference"
 msgstr "Klasse­referentie"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *4.6* branch"
-msgstr "Godot Documentatie – *master* branch"
+msgstr "Godot Documentatie – *4.6* branch"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -209,17 +210,18 @@ msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
 msgstr ""
+"om relevante documentatie te beginnen lezen, selecteer de tegel dat "
+"overeenkomt met uw profiel:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to easily access any "
 "section of the documentation for your topic of interest. You can also use "
 "the search function in the top-left corner."
 msgstr ""
-"De inhoudsopgave in de zijbalk geven je makkelijke toegang tot de "
+"De inhoudsopgave in de zijbalk geven je ook makkelijke toegang tot de "
 "documentatie van het onderwerp waarin je geïnteresseerd bent. Je kan ook de "
-"zoek functionaliteit gebruiken in de linker bovenhoek."
+"zoekfunctionaliteit gebruiken in de linkerbovenhoek."
 
 #: ../../docs/index.rst:116
 msgid "Get involved"
@@ -538,18 +540,14 @@ msgstr ""
 "specifieke handleidingen voor functionaliteiten en documentatie."
 
 #: ../../docs/about/introduction.rst:80
-#, fuzzy
 msgid ""
 "**Engine details** contains sections intended for advanced users and "
 "contributors, with information on compiling the engine, working on the "
 "editor, or developing C++ modules."
 msgstr ""
-"**Bijdragen** geeft informatie gerelateerd aan Godot, voor zowel de kern van "
-"Godot als documentatie, demos of andere delen van Godot. Het beschrijft hoe "
-"je fouten moet melden, hoe er bijgedragen kan worden, etc. Het bevat ook "
-"secties die bedoeld zijn voor geavanceerde gebruikers en bijdragers, met "
-"informatie over het compilen van de engine, bijdragen aan de editor zelf, of "
-"het ontwikkelen van C++ modules."
+"**Engine details** bevat secties die bedoeld zijn voor geavanceerde "
+"gebruikers en bijdragers, met informatie over het compileren van de engine, "
+"bijdragen aan de editor zelf, of het ontwikkelen van C++ modules."
 
 #: ../../docs/about/introduction.rst:83
 msgid ""
@@ -590,7 +588,6 @@ msgid "About this documentation"
 msgstr "Over deze documentatie"
 
 #: ../../docs/about/introduction.rst:97
-#, fuzzy
 msgid ""
 "Members of the Godot Engine community continuously write, correct, edit, and "
 "improve this documentation. We are always looking for more help. You can "
@@ -603,12 +600,12 @@ msgid ""
 "#documentation>`_ on `Godot Contributors Chat <https://chat.godotengine.org/"
 ">`_."
 msgstr ""
-"Leden van de Godot Engine community zijn constant deze documentatie aan het "
-"schrijven, corrigeren, bewerken en verbeteren. Hiervoor zijn wij ook altijd "
-"opzoek naar nieuwe vrijwilligers. Je kan al helpen door op Github problemen "
-"te melden, of mee te helpen met de documentatie vertalen. Om te helpen kan "
-"je hier terecht: :ref:`Manieren om bij te dragen <doc_ways_to_contribute>` "
-"en :ref:`Documentatie schrijven en vertalen "
+"Leden van de Godot Engine gemeenschap zijn constant deze documentatie aan "
+"het schrijven, corrigeren, bewerken en verbeteren. Hiervoor zijn wij ook "
+"altijd opzoek naar nieuwe vrijwilligers. Je kan al helpen door op Github "
+"problemen te melden, of mee te helpen met de documentatie vertalen. Om te "
+"helpen kan je hier terecht: `Manieren om bij te dragen "
+"<doc_ways_to_contribute>` en `Documentatie schrijven en vertalen "
 "<doc_contributing_writing_documentation>`, of neem contact op met het "
 "`Documentatie team <https://godotengine.org/teams/#documentation>`_ op "
 "`Godot Contributors Chat <https://chat.godotengine.org/>`_."
@@ -640,15 +637,14 @@ msgstr ""
 "Godot worden ondersteund."
 
 #: ../../docs/about/list_of_features.rst:12
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot. "
 "Some of these features are not available in the `3.x release series <https://"
 "docs.godotengine.org/en/3.6/about/list_of_features.html>`__."
 msgstr ""
 "Deze pagina bevat de functionaliteiten ondersteund door de huidige stabiele "
-"versie van Godot (4.0) Sommige hiervan zijn niet beschikbaar in de `LTS "
-"release series (3.x) <https://docs.godotengine.org/en/3.5/about/"
+"versie van Godot. Sommige hiervan zijn niet beschikbaar in de `LTS release "
+"series (3.x) <https://docs.godotengine.org/en/3.5/about/"
 "list_of_features.html>`__."
 
 #: ../../docs/about/list_of_features.rst:17
@@ -664,13 +660,12 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
-"Bekijk ook `de licentie pagina op de Godot website <https://godotengine.org/"
-"license>`_."
+"Voor informatie over ondersteuning voor consoles, bekijk `de console pagina "
+"op de Godot website <https://godotengine.org/consoles/>`_."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
@@ -697,21 +692,18 @@ msgstr ""
 "de base distribution oud genoeg is."
 
 #: ../../docs/about/list_of_features.rst:35
-#, fuzzy
 msgid ""
 "Official binaries are compiled using the `Godot Engine buildroot <https://"
 "github.com/godotengine/buildroot>`__, allowing for binaries that work across "
 "common Linux distributions."
 msgstr ""
 "Officiële binaire bestanden worden gecompileerd door middel van de `Godot "
-"Engine buildroot <https://github.com/godotengine/buildroot>`__,wat ervoor "
-"zorgt dat de binaire bestanden op alle Linux distributies werken (inclusief "
-"LTS varianten)."
+"Engine buildroot <https://github.com/godotengine/buildroot>`__, wat ervoor "
+"zorgt dat de binaire bestanden op alle Linux distributies werken."
 
 #: ../../docs/about/list_of_features.rst:39
-#, fuzzy
 msgid "Android (editor support is experimental)."
-msgstr "Android 6.0 en later (editor ondersteuning is experimenteel)."
+msgstr "Android (editor ondersteuning is experimenteel)."
 
 #: ../../docs/about/list_of_features.rst:40
 msgid ""
@@ -798,9 +790,8 @@ msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript :ref:`debugger <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:75
-#, fuzzy
 msgid "Support for debugging in threads is available since 4.2."
-msgstr "Nog geen ondersteuning voor debuggen in threads."
+msgstr "Ondersteuning voor debuggen in threads. is er in 4.2"
 
 #: ../../docs/about/list_of_features.rst:76
 msgid ""
@@ -918,7 +909,7 @@ msgstr "Renderen"
 #: ../../docs/about/list_of_features.rst:108
 #: ../../docs/tutorials/rendering/renderers.rst:15
 msgid "Godot 4 includes three renderers:"
-msgstr ""
+msgstr "Godot 4 bevat drie renderers:"
 
 #: ../../docs/about/list_of_features.rst:110
 #: ../../docs/tutorials/rendering/renderers.rst:17
@@ -1225,14 +1216,13 @@ msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "Perspectief, ortographisch en frustrum-offset camera's."
 
 #: ../../docs/about/list_of_features.rst:202
-#, fuzzy
 msgid ""
 "When using the Forward+ renderer, a depth prepass is used to improve "
 "performance in complex scenes by reducing the cost of overdraw."
 msgstr ""
-"Bij gebruik van de Forward+-backend wordt een diepte-prepass gebruikt om "
-"prestaties te verbeteren in complexe scènes door de kosten van overtekenen "
-"te reduceren."
+"Bij gebruik van de Forward+-backend wordt een depth prepass gebruikt om "
+"prestaties te verbeteren in complexe scènes door de kosten van overdraw te "
+"reduceren."
 
 #: ../../docs/about/list_of_features.rst:204
 #, fuzzy
@@ -12007,7 +11997,7 @@ msgstr "https://github.com/godotengine/godot-demo-projects"
 #: ../../docs/getting_started/first_2d_game/index.rst:49
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:34
 msgid "Prerequisites"
-msgstr ""
+msgstr "Vereisten"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:51
 msgid ""
@@ -13433,7 +13423,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:59
 msgid "ScoreLabel"
-msgstr ""
+msgstr "ScoreLabel"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:61
 msgid "Add the text ``0``."
@@ -13475,7 +13465,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:75
 msgid "StartButton"
-msgstr ""
+msgstr "Startknop"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:77
 msgid "Add the text ``Start``."
@@ -13653,7 +13643,7 @@ msgstr ""
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:12
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:133
 msgid "Background"
-msgstr ""
+msgstr "Achtergrond"
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:14
 msgid ""
@@ -14668,7 +14658,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:55
 #: ../../docs/community/asset_library/using_assetlib.rst:98
 msgid "|image6|"
-msgstr ""
+msgstr "|image6|"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:457
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:339
@@ -15700,7 +15690,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:102
 msgid "Jumping"
-msgstr ""
+msgstr "Springen"
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:104
 msgid ""
@@ -28517,7 +28507,7 @@ msgstr "GPUParticles2D"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:260
 msgid "ParticlesMaterial"
-msgstr ""
+msgstr "Deeltjesmateriaal"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:260
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:55
@@ -35701,7 +35691,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:38
 msgid "CanvasLayers"
-msgstr ""
+msgstr "Canvaslagen"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:40
 msgid ""
@@ -36886,7 +36876,7 @@ msgstr "2D particle systems"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:9
 msgid "Intro"
-msgstr ""
+msgstr "Intro"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:11
 msgid ""
@@ -36970,7 +36960,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:69
 msgid "Texture"
-msgstr ""
+msgstr "Textuur"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:71
 msgid ""
@@ -37067,7 +37057,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:143
 msgid "Lifetime"
-msgstr ""
+msgstr "Levens­duur"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:145
 msgid ""
@@ -37095,7 +37085,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:163
 msgid "Preprocess"
-msgstr ""
+msgstr "Voorbewerking"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:165
 msgid ""
@@ -37119,7 +37109,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:179
 msgid "Explosiveness"
-msgstr ""
+msgstr "Explosiviteit"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:181
 msgid ""
@@ -37144,7 +37134,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:194
 msgid "Randomness"
-msgstr ""
+msgstr "Willekeurigheid"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:196
 msgid ""
@@ -37338,7 +37328,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:43
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:93
 msgid "Angle"
-msgstr ""
+msgstr "Hoek"
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:45
 msgid ""
@@ -37372,7 +37362,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:69
 msgid "Spread"
-msgstr ""
+msgstr "Spreiding"
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:71
 msgid ""
@@ -37384,7 +37374,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:79
 msgid "Flatness"
-msgstr ""
+msgstr "Vlakheid"
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:81
 msgid "This property is only useful for 3D particles."
@@ -37433,7 +37423,7 @@ msgstr "**Versie**"
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:114
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:151
 msgid "Gravity"
-msgstr ""
+msgstr "Zwaarte­kracht"
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:116
 msgid "The gravity applied to every particle."
@@ -37470,7 +37460,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:142
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:244
 msgid "Damping"
-msgstr ""
+msgstr "Demping"
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:144
 msgid ""
@@ -38953,7 +38943,7 @@ msgstr ""
 #: ../../docs/tutorials/xr/deploying_to_android.rst:7
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:26
 msgid "Setup"
-msgstr ""
+msgstr "Opstelling"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:21
 msgid ""

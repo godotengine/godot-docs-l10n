@@ -28,13 +28,17 @@
 # Simon Malik Mikkelsen <simonm-personal@proton.me>, 2025.
 # Tobias Matthiesen <tobber07@gmail.com>, 2025.
 # Vandreic <32039622+Vandreic@users.noreply.github.com>, 2025.
+# cat <catsnote@proton.me>, 2026.
+# Jaypph <linu1114@daksnet.dk>, 2026.
+# "Peter Jørgensen (tehwave)" <peterchrjoergensen@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-30 16:58+0100\n"
-"PO-Revision-Date: 2025-12-21 18:00+0000\n"
-"Last-Translator: Vandreic <32039622+Vandreic@users.noreply.github.com>\n"
+"PO-Revision-Date: 2026-05-10 02:11+0000\n"
+"Last-Translator: \"Peter Jørgensen (tehwave)\" <peterchrjoergensen@gmail.com>"
+"\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/da/>\n"
 "Language: da\n"
@@ -42,7 +46,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.5-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -67,11 +71,11 @@ msgstr "På Read the Docs"
 
 #: ../../docs/_templates/versions.html:41
 msgid "Project Home"
-msgstr "Projekt hjem"
+msgstr "Projekthjem"
 
 #: ../../docs/_templates/versions.html:44
 msgid "Builds"
-msgstr "Byg"
+msgstr "Builds"
 
 #: ../../docs/_templates/versions.html:47
 msgid "Downloads"
@@ -97,9 +101,8 @@ msgid "Manual"
 msgstr "Brugervejledning"
 
 #: ../../docs/index.rst:206
-#, fuzzy
 msgid "Engine details"
-msgstr "Om Godot Engine"
+msgstr "Engine-detaljer"
 
 #: ../../docs/index.rst:220
 msgid "Community"
@@ -110,27 +113,25 @@ msgid "Class reference"
 msgstr "Klasse-reference"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *4.6* branch"
-msgstr "Godot Docs – *master* branch"
+msgstr "Godot-dokumentation – *4.6*-grenen"
 
 #: ../../docs/index.rst:8
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"Godots dokumentation er tilgængelig på forskellige sprog og versioner. Udvid "
-"\"Læs Dokumentationen\" panelet i bunden af sidebaren for at se listen."
+"Godots dokumentation findes på flere sprog og i forskellige versioner. Udvid "
+"panelet \"Læs dokumentationen\" nederst i sidebjælken for at se listen."
 
 #: ../../docs/index.rst:14
-#, fuzzy
 msgid ""
 "This documentation is translated from the `original English one <https://"
 "docs.godotengine.org/en/stable>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
 "Denne dokumentation er oversat fra den `originale Engelske <https://"
-"docs.godotengine.org/en/latest>`_ af fællesskabs medlemmer på `Weblate "
+"docs.godotengine.org/en/stable>`_ af fællesskabsmedlemmer på `Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:18
@@ -152,9 +153,9 @@ msgid ""
 "engine versions using the \"Read the Docs\" panel at the bottom of the "
 "sidebar."
 msgstr ""
-"Indtil videre er oversættelser kun tilgængelige for den \"stabile\" "
-"udviklingsgren. Du kan stadig se den engelske dokumentation af andre "
-"versioner ved at bruge \"Læs dokumentation\" panelet i bunden af sidebaren."
+"Indtil videre er oversættelser kun tilgængelige for den \"stabile\" gren. Du "
+"kan stadig se den engelske dokumentation af andre versioner ved at bruge "
+"\"Læs dokumentation\" panelet i bunden af sidebjælken."
 
 #: ../../docs/index.rst:28
 msgid ""
@@ -165,27 +166,27 @@ msgid ""
 "what this documentation has to offer."
 msgstr ""
 "Velkommen til den officielle dokumentation for `Godot Engine <https://"
-"godotengine.org>`__, den gratis, open source og fællesskabsdrevne 2D- og 3D "
-"spilmotor! Hvis du er ny til denne dokumentation, anbefaler vi at du "
-"læser :ref:`vores introduktionsside<doc_about_intro>` for at få et overblik "
-"over hvad dokumentationen indeholder."
+"godotengine.org>`__, den gratis, open source og fællesskabsdrevne 2D- og 3D-"
+"spilmotor! Hvis du er ny til denne dokumentation, anbefaler vi, at du læser "
+":ref:`vores introduktionsside<doc_about_intro>` for at få et overblik over, "
+"hvad dokumentationen indeholder."
 
 #: ../../docs/index.rst:34
 msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
 msgstr ""
+"Vælg den flise, der passer til din profil, for at læse den relevante "
+"dokumentation:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to easily access any "
 "section of the documentation for your topic of interest. You can also use "
 "the search function in the top-left corner."
 msgstr ""
-"Indholdsfortegnelsen nedenunder og i sidebaren gør det nemt for dig at tilgå "
-"dokumentationen i den kategori, du søger. Du kan også bruge søgefunktionen i "
-"hjørnet øverst til venstre."
+"Brug indholdsfortegnelsen i sidepanelet for at finde den ønskede sektion. Du "
+"kan også søge via feltet øverst til venstre."
 
 #: ../../docs/index.rst:116
 msgid "Get involved"
@@ -199,14 +200,13 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
-"Godot Engine er et open-source projekt udviklet af frivillige. Holdet bag "
-"dokumentationen kan altid bruge din feedback og hjælp til at forbedre "
-"tutorials'ne og referencer til de forskellige classes. Hvis der er noget du "
-"ikke forstår, eller ikke kan finde hvad du leder efter, så hjælp os med at "
-"gøre platformen bedre ved at fortælle os det!"
+"Godot Engine er et open source-projekt drevet af frivillige. "
+"Dokumentationsteamet modtager gerne feedback og hjælp til at forbedre "
+"vejledninger og klassereference. Forstår du noget ikke, eller mangler du "
+"information i dokumentationen, så hjælp os med at gøre den bedre ved at "
+"fortælle os det!"
 
 #: ../../docs/index.rst:124
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://"
 "github.com/godotengine/godot-docs/issues>`_, help us `translate the "
@@ -214,12 +214,11 @@ msgid ""
 "language, or talk to us on the ``#documentation`` channel on the `Godot "
 "Contributors Chat <https://chat.godotengine.org/>`_!"
 msgstr ""
-"Indsend en \"issue\" eller \"pull request\" på vores `GitHub-depot <https://"
-"github.com/godotengine/godot-docs/issues>`_, hjælp os med at `oversætte "
-"dokumentationen <https://hosted.weblate.org/engage/godot-engine/>`_ til dit "
-"eget sprog, eller diskutér med os på enten vores ``#documentation`` kanal på "
-"`Discord <https://discord.gg/zH7NUgz>`_, eller på vores ``#documentation`` "
-"kanal på `Godot Contributors Chat <https://chat.godotengine.org/>`_!"
+"Opret en issue eller pull request i `GitHub-repositoriet <https://github.com/"
+"godotengine/godot-docs/issues>`_, hjælp med at `oversætte dokumentationen "
+"<https://hosted.weblate.org/engage/godot-engine/>`_ til dit sprog, eller tal "
+"med os i kanalen ``#documentation`` på `Godot Contributors Chat <https://"
+"chat.godotengine.org/>`_!"
 
 #: ../../docs/index.rst:130
 msgid "weblate_widget"
@@ -227,14 +226,13 @@ msgstr "weblate_widget"
 
 #: ../../docs/<rst_epilog>:2
 msgid "Translation status"
-msgstr "Status på oversættelse"
+msgstr "Oversættelsesstatus"
 
 #: ../../docs/index.rst:132
 msgid "Offline documentation"
 msgstr "Offline dokumentation"
 
 #: ../../docs/index.rst:134
-#, fuzzy
 msgid ""
 "To browse the documentation offline, you can download an HTML copy (updated "
 "every Monday): `stable <https://nightly.link/godotengine/godot-docs/"
@@ -245,13 +243,18 @@ msgid ""
 "html-3.6.zip>`__. Extract the ZIP archive then open the top-level "
 "``index.html`` in a web browser."
 msgstr ""
-"Du kan også `downloade en HTML-kopi <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
-"offline læsning (opdateres hver mandag). Udpak ZIP-arkivet og åbn derefter "
-"``index.html`` i en webbrowser."
+"For at browse dokumentationen offline kan du downloade en HTML-kopi "
+"(opdateres hver mandag):\n"
+"stable: https://nightly.link/godotengine/godot-docs/workflows/"
+"build_offline_docs/master/godot-docs-html-stable.zip\n"
+"latest: https://nightly.link/godotengine/godot-docs/workflows/"
+"build_offline_docs/master/godot-docs-html-master.zip\n"
+"3.6: https://nightly.link/godotengine/godot-docs/workflows/"
+"build_offline_docs/master/godot-docs-html-3.6.zip\n"
+"Pak ZIP-arkivet ud og åbn derefter den øverste fil ``index.html`` i en "
+"webbrowser."
 
 #: ../../docs/index.rst:137
-#, fuzzy
 msgid ""
 "For mobile devices or e-readers, you can also download an ePub copy (updated "
 "every Monday): `stable <https://nightly.link/godotengine/godot-docs/"
@@ -262,10 +265,13 @@ msgid ""
 "epub-3.6.zip>`__. Extract the ZIP archive then open the ``GodotEngine.epub`` "
 "file in an e-book reader application."
 msgstr ""
-"Du kan også `downloade en HTML-kopi <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
-"offline læsning (opdateres hver mandag). Udpak ZIP-arkivet og åbn derefter "
-"``index.html`` i en webbrowser."
+"Til mobile enheder eller e-bogslæsere kan du også downloade en ePub-kopi "
+"(opdateres hver mandag): stable <https://nightly.link/godotengine/godot-docs/"
+"workflows/build_offline_docs/master/godot-docs-epub-stable.zip>, latest "
+"<https://nightly.link/godotengine/godot-docs/workflows/build_offline_docs/"
+"master/godot-docs-epub-master.zip>, 3.6 <https://nightly.link/godotengine/"
+"godot-docs/workflows/build_offline_docs/master/godot-docs-epub-3.6.zip>__. "
+"Udpak ZIP-arkivet, og åbn derefter filen GodotEngine.epub i en e-bogslæser."
 
 #: ../../docs/404.rst:5
 msgid "Page not found"
@@ -363,22 +369,19 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"Velkommen til den officielle dokumentation af **Godot Engine**, den gratis "
-"og open source fællesskabsdrevne 2D og 3D spilmotor! Bag ved denne mundfuld "
-"finder du et kraftfuldt og brugervenligt værktøj, som du kan bruge til at "
-"udvikle spil af en hver art til en vilkårlig platform, uden nogen "
-"brugsrestriktioner overhovedet."
+"Velkommen til den officielle dokumentation for **Godot Engine** – en gratis, "
+"open source og fællesskabsdrevet 2D- og 3D-spilmotor. Bag den lange titel "
+"gemmer sig et kraftfuldt, brugervenligt værktøj til at udvikle alle typer "
+"spil til enhver platform uden brugsbegrænsninger."
 
 #: ../../docs/about/introduction.rst:26
-#, fuzzy
 msgid ""
 "This page gives a broad overview of the engine and of this documentation, so "
 "that you know where to start if you are a beginner or where to look if you "
 "need information on a specific feature."
 msgstr ""
-"Denne side har til hensigt at tilbyde en bred præsentation af spilmotoren og "
-"indholdet af denne dokumentation, således at du ved hvor du kan starte, hvis "
-"du er en begynder, eller hvor du kan finde information om en specifik "
+"Denne side giver et overblik over motoren og dokumentationen, så du ved, "
+"hvor du skal starte som nybegynder, eller hvor du finder info om en bestemt "
 "funktion."
 
 #: ../../docs/about/introduction.rst:31
@@ -386,28 +389,28 @@ msgid "Before you start"
 msgstr "Før du begynder"
 
 #: ../../docs/about/introduction.rst:33
-#, fuzzy
 msgid ""
 "The :ref:`Tutorials and resources <doc_community_tutorials>` page lists "
 "video tutorials contributed by the community. If you prefer video to text, "
 "consider checking them out. Otherwise, :ref:`Getting Started "
 "<doc_getting_started_intro>` is a great starting point."
 msgstr ""
-"Siden :ref: `Tutorials and resources <doc_community_tutorials>` har en liste "
-"over video-tutorials, som fællesskabet har biddraget med. Hvis du "
-"foretrækker video frem for tekst, kunne de være gode at se."
+"Siden :ref:`Vejledninger og ressourcer <doc_community_tutorials>` samler "
+"videovejledninger fra fællesskabet. Foretrækker du video frem for tekst, så "
+"tag et kig. Ellers er :ref:`Kom godt i gang <doc_getting_started_intro>` et "
+"godt sted at starte."
 
 #: ../../docs/about/introduction.rst:38
-#, fuzzy
 msgid ""
 "In case you have trouble with one of the tutorials or your project, you can "
 "find help on the various `Community channels <https://godotengine.org/"
 "community/>`_, especially the Godot `Discord <https://discord.gg/"
 "godotengine>`_ community and `Forum <https://forum.godotengine.org/>`_."
 msgstr ""
-"I tilfælde af at du har problemer med en tutorial eller en af dine "
-"projekter, kan du finde hjælp på de adskillige :ref:`Fællesskabs-kanaler "
-"<doc_community_channels>`, især vores Godot Discord fællesskab, Q&A og IRC."
+"Har du problemer med en vejledning eller dit projekt, kan du få hjælp via de "
+"forskellige `Fællesskabskanaler <https://godotengine.org/community/>`_ – "
+"især på Godots `Discord <https://discord.gg/godotengine>`_ og `Forummet "
+"<https://forum.godotengine.org/>`_."
 
 #: ../../docs/about/introduction.rst:44
 msgid "About Godot Engine"
@@ -419,9 +422,9 @@ msgid ""
 "Here's a quick synopsis, which you are free to reuse if you need a quick "
 "write-up about Godot Engine:"
 msgstr ""
-"En spilmotor er et komplekst værktøj, og det er derfor svært at fremvise "
-"Godot på få ord. Her er dog vores PR præsentation, hvilken du frit kan "
-"genanvende hvis du mangler en hurtig fremvisning af Godot Engine."
+"En spilmotor er et komplekst værktøj, som er svært at beskrive kort. Her er "
+"en kort præsentation, du frit kan genbruge, hvis du har brug for en hurtig "
+"beskrivelse af Godot Engine:"
 
 #: ../../docs/about/introduction.rst:50
 msgid ""
@@ -432,12 +435,11 @@ msgid ""
 "platforms, including the major desktop platforms (Linux, macOS, Windows), "
 "mobile platforms (Android, iOS), as well as Web-based platforms and consoles."
 msgstr ""
-"Godot Engine er en funktionsspækket platformsuafhængig spilmotor til "
-"udvikling af 2D- og 3D-spil gennem en solid grænseflade. Den tilbyder et "
-"omfattende sæt af ordinære værktøjer, så brugere kan fokusere på at udvikle "
-"spil uden at skulle genopfinde hjulet. Spil kan eksporteres i ét klik til "
-"diverse platforme, som bl.a. de mest populære PC platforme (Linux, macOS, "
-"Windows) så vel som mobile (Android, iOS) og web-baserede (HTML5) platforme."
+"Godot Engine er en funktionsrig, tværplatform spilmotor til udvikling af 2D- "
+"og 3D-spil fra én samlet grænseflade. Den samler de mest brugte værktøjer, "
+"så brugere kan fokusere på spiludvikling uden at genopfinde det "
+"grundlæggende. Spil kan eksporteres med ét klik til bl.a. Linux, macOS, "
+"Windows, Android, iOS, web og konsoller."
 
 #: ../../docs/about/introduction.rst:57
 msgid ""
@@ -465,18 +467,15 @@ msgid "This documentation is organized into several sections:"
 msgstr "Denne dokumentation er inddelt i flere sektioner:"
 
 #: ../../docs/about/introduction.rst:71
-#, fuzzy
 msgid ""
 "**About** contains this introduction as well as information about the "
 "engine, its history, its licensing, authors, etc. It also contains "
 "the :ref:`doc_faq`."
 msgstr ""
-":ref:`sec-general` sektionen indeholder denne introduktion såvel som "
-"informationen om spilmotoren, dens historie, dens licensering, forfattere, "
-"osv. Det indeholder også :ref:`doc_faq`."
+"**About** indeholder denne introduktion samt information om motoren, dens "
+"historie, licens, forfattere osv. Den indeholder også :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:74
-#, fuzzy
 msgid ""
 "**Getting Started** contains all necessary information on using the engine "
 "to make games. It starts with the :ref:`doc_getting_started_intro` section "
@@ -487,34 +486,28 @@ msgstr ""
 "dokumentation, da den indeholder al nødvendig information omkring brug af "
 "spilmotoren til kreering af spil. Det starter med :ref:`Step by step <toc-"
 "learn-step_by_step>` guiden, hvilken bør være indgangspunktet for alle nye "
-"brugere."
+"brugere"
 
 #: ../../docs/about/introduction.rst:78
-#, fuzzy
 msgid ""
 "The **Manual** can be read or referenced as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-":ref:`sec-tutorials` sektionen på den anden side kan blive læst om "
-"nødvendigt i vilkårlig rækkefølge. Den indeholder mange funktionsspecifikke "
-"guider og dokumentationer."
+"**Manualen** kan læses eller bruges som reference efter behov, i vilkårlig "
+"rækkefølge. Den indeholder funktionsspecifikke vejledninger og "
+"dokumentationer."
 
 #: ../../docs/about/introduction.rst:80
-#, fuzzy
 msgid ""
 "**Engine details** contains sections intended for advanced users and "
 "contributors, with information on compiling the engine, working on the "
 "editor, or developing C++ modules."
 msgstr ""
-"**Bidrag** giver information angående bidrag til Godot, hvad end det er til "
-"spilmotoren, dokumentationen, demoer eller andre dele. Her beskrives det, "
-"hvordan man rapporterer fejl, hvordan bidragsyderworkflows er organiseret, "
-"osv. Det indeholder også afsnit beregnet til avancerede brugere og "
-"bidragsydere, med information om kompilering af spilmotoren, bidrag til "
-"redaktionsprogrammet, eller udvikling af C++-moduler."
+"**Motor detaljer** indeholder sektioner til avancerede brugere og "
+"bidragydere, med information om at kompilere motoren, arbejde på editoren "
+"eller udvikle C++-moduler."
 
 #: ../../docs/about/introduction.rst:83
-#, fuzzy
 msgid ""
 "**Community** is dedicated to the life of Godot's community and contains a "
 "list of recommended third-party tutorials and materials outside of this "
@@ -522,12 +515,11 @@ msgid ""
 "to list Godot communities, which are now listed on the `Godot website "
 "<https://godotengine.org/community/>`_."
 msgstr ""
-"**Fællesskab (Community)** fokuserer på Godots fællesskab og indeholder en "
-"samling af anbefalede tredjepartsvejledninger og materialer, som ikke er en "
-"del af denne dokumentation. Afsnittet indeholder også information om "
-"aktivbiblioteket (Asset Library). Tidligere blev Godot-fællesskaber også "
-"listet her, men de er nu tilgængelige på Godots hjemmeside. `Godots "
-"hjemmeside <https://godotengine.org/community/>`_."
+"**Community** er dedikeret til Godots fællesskabsliv og indeholder en liste "
+"over anbefalede tredjeparts tutorials og materialer uden for denne "
+"dokumentation. Den giver også information om Asset Library. Den plejede også "
+"at liste Godot-fællesskaber, som nu findes på Godot-websitet <https://"
+"godotengine.org/community/>_."
 
 #: ../../docs/about/introduction.rst:87
 msgid ""
@@ -549,9 +541,8 @@ msgstr ""
 "demo projects <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/about/introduction.rst:95
-#, fuzzy
 msgid "About this documentation"
-msgstr "Om dokumentationen"
+msgstr "Om denne dokumentation"
 
 #: ../../docs/about/introduction.rst:97
 msgid ""
@@ -566,6 +557,16 @@ msgid ""
 "#documentation>`_ on `Godot Contributors Chat <https://chat.godotengine.org/"
 ">`_."
 msgstr ""
+"Medlemmer af Godot Engine-fællesskabet skriver, retter, redigerer og "
+"forbedrer løbende denne dokumentation. Vi leder altid efter mere hjælp. Du "
+"kan også bidrage ved at oprette GitHub-issues eller oversætte "
+"dokumentationen til dit sprog. Hvis du er interesseret i at hjælpe, så se "
+"Sådan bidrager du <https://contributing.godotengine.org/en/latest/"
+"organization/how_to_contribute.html>__ og Skrivning af dokumentation "
+"<https://contributing.godotengine.org/en/latest/documentation/manual/"
+"index.html>__, eller kontakt Dokumentationsholdet <https://godotengine.org/"
+"teams/#documentation>_ på Godot Contributors Chat <https://"
+"chat.godotengine.org/>_."
 
 #: ../../docs/about/introduction.rst:105
 msgid ""
@@ -581,7 +582,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:110
 msgid "*Have fun reading and making games with Godot Engine!*"
-msgstr "\"Hav det sjovt med at læse om og lave spil med Godot Engine!\""
+msgstr "*God fornøjelse med at læse om og lave spil med Godot Engine!*"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "List of features"
@@ -599,6 +600,10 @@ msgid ""
 "Some of these features are not available in the `3.x release series <https://"
 "docs.godotengine.org/en/3.6/about/list_of_features.html>`__."
 msgstr ""
+"Denne side viser funktioner, som understøttes af den nuværende stabile "
+"version af Godot. Nogle af disse funktioner er ikke tilgængelige i 3.x-"
+"udgivelsesserien <https://docs.godotengine.org/en/3.6/about/"
+"list_of_features.html>__."
 
 #: ../../docs/about/list_of_features.rst:17
 msgid "Platforms"
@@ -609,25 +614,24 @@ msgid ""
 "See :ref:`doc_system_requirements` for hardware and software version "
 "requirements."
 msgstr ""
+"Se :ref:`doc_system_requirements` for krav til hardware og softwareversioner."
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
-"Se også `licens siden på Godot hjemmesiden <https://godotengine.org/"
-"license>`_."
+"For information om konsolunderstøttelse, se Godot-websitet <https://"
+"godotengine.org/consoles/>_."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
-msgstr ""
+msgstr "**Kan køre både editoren og eksporterede projekter:**"
 
 #: ../../docs/about/list_of_features.rst:29
-#, fuzzy
 msgid "Windows (x86 and ARM, 64-bit and 32-bit)."
-msgstr "Linux (x86 og ARM, 64-bit og 32-bit)."
+msgstr "Windows (x86 og ARM, 64-bit og 32-bit)."
 
 #: ../../docs/about/list_of_features.rst:30
 msgid "macOS (x86 and ARM, 64-bit only)."
@@ -642,6 +646,8 @@ msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
+"Binære filer er statisk linket og kan køre på enhver distribution, hvis de "
+"er kompileret på en gammel nok base-distribution."
 
 #: ../../docs/about/list_of_features.rst:35
 msgid ""
@@ -649,17 +655,21 @@ msgid ""
 "github.com/godotengine/buildroot>`__, allowing for binaries that work across "
 "common Linux distributions."
 msgstr ""
+"Officielle binære filer er kompileret ved hjælp af Godot Engine buildroot "
+"<https://github.com/godotengine/buildroot>__, hvilket gør det muligt at lave "
+"binære filer, der virker på tværs af almindelige Linux-distributioner."
 
 #: ../../docs/about/list_of_features.rst:39
-#, fuzzy
 msgid "Android (editor support is experimental)."
-msgstr "Android"
+msgstr "Android (editor-understøttelse er eksperimentel)."
 
 #: ../../docs/about/list_of_features.rst:40
 msgid ""
 ":ref:`Web browsers <doc_using_the_web_editor>`. Experimental in 4.0, using "
 "Godot 3.x is recommended instead when targeting HTML5."
 msgstr ""
+":ref`Webbrowsere <doc_using_the_web_editor>`. Eksperimentelt i 4.0, det "
+"anbefales at bruge Godot 3.x i stedet, når man målretter HTML5."
 
 #: ../../docs/about/list_of_features.rst:45
 msgid ""
@@ -669,6 +679,10 @@ msgid ""
 "compiling instructions can be found on the :ref:`doc_compiling_for_linuxbsd` "
 "page."
 msgstr ""
+"Linux understøtter rv64 (RISC-V), ppc64 og ppc32 (PowerPC) samt loongarch64. "
+"Du skal dog selv kompilere editoren til disse platforme (samt eksport-"
+"skabeloner), da der ikke findes officielle downloads. Instruktioner til "
+"kompilering for RISC-V findes på siden :ref:`doc_compiling_for_linuxbsd`"
 
 #: ../../docs/about/list_of_features.rst:50
 msgid "**Runs exported projects:**"
@@ -683,6 +697,8 @@ msgid ""
 "Godot aims to be as platform-independent as possible and can be :ref:`ported "
 "to new platforms <doc_custom_platform_ports>` with relative ease."
 msgstr ""
+"Godot har som mål at være så platformuafhængig som muligt og kan relativt "
+"nemt :ref:`porteres til nye platforme <doc_custom_platform_ports>`."
 
 #: ../../docs/about/list_of_features.rst:59
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:129
@@ -862,6 +878,8 @@ msgstr ""
 msgid ""
 "See :ref:`doc_renderers` for a detailed comparison of the rendering methods."
 msgstr ""
+"Se :ref:`doc_renderers` for en detajleret sammenligning af de forskellige "
+"renderingsmetoder."
 
 #: ../../docs/about/list_of_features.rst:124
 msgid "2D graphics"
@@ -2659,7 +2677,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:757
 msgid "Support for calling methods in animation tracks."
-msgstr ""
+msgstr "Understøttelse af metodekald i animeringsspor."
 
 #: ../../docs/about/list_of_features.rst:758
 msgid "Support for playing sounds in animation tracks."

@@ -53,13 +53,15 @@
 # Максим Горпиніч <maksimgorpinic4@gmail.com>, 2025.
 # Максим Горпиніч <gorpinicmaksim0@gmail.com>, 2025, 2026.
 # "A Thousand Ships (she/her)" <over999ships@gmail.com>, 2025.
+# Димко <Term0@ukr.net>, 2026.
+# Максим Горпиніч <gorpinicmaksim2005ukr@protonmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-30 16:58+0100\n"
-"PO-Revision-Date: 2026-01-25 00:34+0000\n"
-"Last-Translator: Максим Горпиніч <gorpinicmaksim0@gmail.com>\n"
+"PO-Revision-Date: 2026-05-06 18:29+0000\n"
+"Last-Translator: Максим Горпиніч <gorpinicmaksim2005ukr@protonmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
 "Language: uk\n"
@@ -68,7 +70,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -124,7 +126,7 @@ msgstr "Посібник"
 
 #: ../../docs/index.rst:206
 msgid "Engine details"
-msgstr "Деталі двигуна"
+msgstr "Деталі рушія"
 
 #: ../../docs/index.rst:220
 msgid "Community"
@@ -201,7 +203,6 @@ msgstr ""
 "вашому профілю:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to easily access any "
 "section of the documentation for your topic of interest. You can also use "
@@ -405,9 +406,9 @@ msgid ""
 "that you know where to start if you are a beginner or where to look if you "
 "need information on a specific feature."
 msgstr ""
-"Ця сторінка надає загальний огляд двигуна та цієї документації, щоб ви "
-"знали, з чого почати, якщо ви новачок, або де шукати інформацію про певну "
-"функцію, якщо вам потрібно."
+"Ця сторінка надає загальний огляд рушія та цієї документації, щоб ви знали, "
+"з чого почати, якщо ви новачок, або де шукати інформацію про певну функцію, "
+"якщо вам потрібно."
 
 #: ../../docs/about/introduction.rst:31
 msgid "Before you start"
@@ -480,7 +481,7 @@ msgid ""
 msgstr ""
 "Godot є абсолютно безкоштовним і відкритим вихідним кодом :ref:`permissive "
 "MIT license <doc_complying_with_licenses>`. Ніяких умов, жодних роялті, "
-"нічого. Ігри користувачів належать їм, аж до останнього рядка коду двигуна. "
+"нічого. Ігри користувачів належать їм, аж до останнього рядка коду рушія. "
 "Розробка Godot повна незалежні та керовані спільнотою, що дозволяє "
 "користувачам допомогти сформувати свій механізм відповідно до їхніх "
 "очікувань. Це підтримується `Godot Foundation <https://godot.foundation/>`_ "
@@ -1130,7 +1131,7 @@ msgstr "Вузол PathFollow2D, щоб змусити вузли рухатис
 
 #: ../../docs/about/list_of_features.rst:178
 msgid ":ref:`2D geometry helper class <class_Geometry2D>`."
-msgstr ":ref:`2D geometry helper class <class_Geometry2D>`."
+msgstr ":ref:`Допоміжний клас для роботи з 2D-геометрією <class_Geometry2D>`."
 
 #: ../../docs/about/list_of_features.rst:181
 msgid "2D physics"
@@ -2027,7 +2028,7 @@ msgstr "Вузол PathFollow3D, щоб заставити вузли рухат
 
 #: ../../docs/about/list_of_features.rst:419
 msgid ":ref:`3D geometry helper class <class_Geometry3D>`."
-msgstr ":ref:`3D geometry helper class <class_Geometry3D>`."
+msgstr ":ref:`Допоміжний клас для роботи з 3D-геометрією <class_Geometry3D>`."
 
 #: ../../docs/about/list_of_features.rst:420
 msgid ""
@@ -2046,14 +2047,12 @@ msgid "Vehicle bodies (intended for arcade physics, not simulation)."
 msgstr "Транспортні тіла (призначена для аркадної фізики, не симуляцій)."
 
 #: ../../docs/about/list_of_features.rst:434
-#, fuzzy
 msgid ":ref:`Soft bodies <doc_soft_body>`."
-msgstr ":ref:`doc_soft_body`"
+msgstr ":ref:`М'які тіла <doc_soft_body>`."
 
 #: ../../docs/about/list_of_features.rst:435
-#, fuzzy
 msgid ":ref:`Ragdolls <doc_ragdoll_system>`."
-msgstr ":ref:`doc_ragdoll_system`"
+msgstr ":ref:`Рагдолли <doc_ragdoll_system>`."
 
 #: ../../docs/about/list_of_features.rst:440
 msgid ""
@@ -2105,9 +2104,8 @@ msgid "Visual shader editor."
 msgstr "Візуальний редактор шейдерів."
 
 #: ../../docs/about/list_of_features.rst:452
-#, fuzzy
 msgid "Support for :ref:`visual shader plugins <doc_visual_shader_plugins>`."
-msgstr "Підтримка для :ref:`custom import plugins <doc_import_plugins>`."
+msgstr "Підтримка для :ref:`visual shader plugins <doc_visual_shader_plugins>`."
 
 #: ../../docs/about/list_of_features.rst:455
 #: ../../docs/about/docs_changelog.rst:38
@@ -2343,6 +2341,8 @@ msgid ""
 ":ref:`Text to speech <doc_text_to_speech>` using platform-provided TTS "
 "engines."
 msgstr ""
+":ref:`Text to speech <doc_text_to_speech>` використовуючи механізми синтезу "
+"мовлення, що надаються платформою."
 
 #: ../../docs/about/list_of_features.rst:525
 msgid "MIDI input."
@@ -2638,11 +2638,8 @@ msgid "Full support for Unicode including emoji."
 msgstr "Повна підтримка Unicode, включаючи емодзі."
 
 #: ../../docs/about/list_of_features.rst:615
-#, fuzzy
 msgid "Support for loading system fonts on Windows, macOS, and Linux."
-msgstr ""
-"Завантаження системних шрифтів підтримується лише в Windows, macOS, Linux, "
-"Android та iOS."
+msgstr "Підтримка завантаження системних шрифтів у Windows, macOS та Linux."
 
 #: ../../docs/about/list_of_features.rst:617
 msgid ""
@@ -2650,6 +2647,9 @@ msgid ""
 "characters. This allows proper display of multilingual text without having "
 "to bundle large font files with a project."
 msgstr ""
+"За замовчуванням системні шрифти використовуються як резервний варіант для "
+"відображення непідтримуваних символів. Це дозволяє правильно відображати "
+"багатомовний текст без необхідності додавати великі файли шрифтів до проекту."
 
 #: ../../docs/about/list_of_features.rst:621
 msgid ""
@@ -2673,11 +2673,8 @@ msgstr ""
 "графічного інтерфейсу, або за допомогою функції ``tr ()``."
 
 #: ../../docs/about/list_of_features.rst:628
-#, fuzzy
 msgid "Support for pluralization and translation contexts."
-msgstr ""
-"Реалізована підтримку контекстів множини та перекладу при використанні "
-"перекладів gettext."
+msgstr "Підтримка множинності та контекстів перекладу."
 
 #: ../../docs/about/list_of_features.rst:629
 msgid ""
@@ -2725,6 +2722,8 @@ msgid ""
 "Create transparent windows to use as overlays, with polygon-based mouse "
 "passthrough support."
 msgstr ""
+"Створюйте прозорі вікна для використання як накладок з підтримкою руху миші "
+"на основі полігонів."
 
 #: ../../docs/about/list_of_features.rst:642
 msgid ""
@@ -2750,40 +2749,38 @@ msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "Вікна без меж (повноекранні або неповноекранні)."
 
 #: ../../docs/about/list_of_features.rst:649
-#, fuzzy
 msgid "Keep a window always on top."
-msgstr "Можливість тримати вікно завжди зверху."
+msgstr "Завжди тримайте вікно зверху."
 
 #: ../../docs/about/list_of_features.rst:650
 msgid "Make a window ignore focus (useful for overlays)."
-msgstr ""
+msgstr "Зробити так, щоб вікно ігнорувало фокус (корисно для накладень)."
 
 #: ../../docs/about/list_of_features.rst:651
 msgid ""
 "Declare a window as a popup (hidden from task switcher) or exclusive "
 "(prevents interacting with other windows from the same process)."
 msgstr ""
+"Оголосити вікно як спливаюче (приховане від перемикача завдань) або "
+"ексклюзивне (запобігає взаємодії з іншими вікнами того ж процесу)."
 
 #: ../../docs/about/list_of_features.rst:653
-#, fuzzy
 msgid "Native file dialog support on Windows, macOS, Linux, and Android."
 msgstr ""
-"Завантаження системних шрифтів підтримується лише в Windows, macOS, Linux, "
-"Android та iOS."
+"Вбудована підтримка діалогових вікон файлів у Windows, macOS, Linux та "
+"Android."
 
 #: ../../docs/about/list_of_features.rst:654
-#, fuzzy
 msgid "Tray icon support on Windows and macOS."
-msgstr "ETC2 (не підтримується на macOS)."
+msgstr "Підтримка значків у треї у Windows та macOS."
 
 #: ../../docs/about/list_of_features.rst:655
 msgid "Global menu integration on macOS."
 msgstr "Інтеграція глобального меню на macOS."
 
 #: ../../docs/about/list_of_features.rst:656
-#, fuzzy
 msgid "Client-side decorations on macOS."
-msgstr "Інтеграція глобального меню на macOS."
+msgstr "Декорації на стороні клієнта в macOS."
 
 #: ../../docs/about/list_of_features.rst:657
 msgid ""
@@ -2806,10 +2803,8 @@ msgid "Parse custom command line arguments."
 msgstr "Аналіз користувацьких аргументів командного рядка."
 
 #: ../../docs/about/list_of_features.rst:661
-#, fuzzy
 msgid "Support for screen readers on Windows, macOS, and Linux."
-msgstr ""
-"Ці функції контролера наразі підтримуються лише у Windows, macOS та Linux."
+msgstr "Підтримка програм зчитування з екрана у Windows, macOS та Linux."
 
 #: ../../docs/about/list_of_features.rst:662
 msgid ""
@@ -2825,12 +2820,11 @@ msgstr ""
 "процесора, або дисплейного сервера."
 
 #: ../../docs/about/list_of_features.rst:669
-#, fuzzy
 msgid ""
 "See :ref:`doc_creating_applications` for details on using these features."
 msgstr ""
-"Дивіться :ref:`doc_gui_using_fonts` для вказівок щодо налаштування імпорту "
-"шрифтів."
+"Див. :ref:`doc_creating_applications` для отримання детальної інформації про "
+"використання цих функцій."
 
 #: ../../docs/about/list_of_features.rst:672
 #: ../../docs/tutorials/3d/3d_antialiasing.rst:342
@@ -4547,12 +4541,11 @@ msgid ""
 msgstr ""
 "У більшості ігор *мова сценаріїв* сама по собі не є причиною проблем з "
 "продуктивністю. Натомість продуктивність сповільнюється через неефективні "
-"алгоритми (які повільні в усіх мовах), через продуктивність графічного "
-"процесора або звичайний код двигуна C++, як-от фізика чи навігація. Усі "
-"мови, які підтримує Godot, достатньо швидкі для створення сценаріїв "
-"загального призначення. Вам слід вибрати мову на основі інших факторів, як-"
-"от простота використання, знайомство, підтримка платформи або мовні "
-"особливості."
+"алгоритми (які є повільними в усіх мовах), через продуктивність графічного "
+"процесора або звичайний код рушія C++, як-от фізика чи навігація. Усі мови, "
+"які підтримує Godot, достатньо швидкі для створення сценаріїв загального "
+"призначення. Вам слід вибрати мову на основі інших факторів, як-от простота "
+"використання, знайомство, підтримка платформи або мовні особливості."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
@@ -5261,10 +5254,9 @@ msgstr ""
 "Electron, чи Qt."
 
 #: ../../docs/about/faq.rst:471
-#, fuzzy
 msgid "See :ref:`doc_creating_applications` for more information."
 msgstr ""
-"Перегляньте :ref:`doc_3d_antialiasing` для отримання додаткової інформації."
+"Див. :ref:`doc_creating_applications` для отримання додаткової інформації."
 
 #: ../../docs/about/faq.rst:476
 msgid "Is it possible to use Godot as a library?"
@@ -5473,7 +5465,7 @@ msgstr ""
 "Vector, який використовує копіювання при записі, яке ми використовуємо для "
 "передачі даних, або систему RID, яка вимагає O (1) часу доступу для "
 "продуктивності. Аналогічно, наші реалізації хеш-карт призначені для "
-"безшовних інтеграції з внутрішніми типами двигунів."
+"безшовних інтеграції з внутрішніми типами рушіїв."
 
 #: ../../docs/about/faq.rst:557
 msgid ""
@@ -9015,7 +9007,7 @@ msgid ""
 "v=yS9cuu5o5Ug>`_ if you're looking for an overview of the engine's features."
 msgstr ""
 "Будь ласка, подивіться `Godot пояснив за 7 хвилин <https://www.youtube.com/"
-"watch?v=yS9cuu5o5Ug>`_, якщо вам потрібен огляд функцій двигуна."
+"watch?v=yS9cuu5o5Ug>`_, якщо вам потрібен огляд функцій рушія."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:24
 msgid "Object-oriented design and composition"
@@ -9971,14 +9963,13 @@ msgid "Finally, click the :button:`Import` button."
 msgstr "Нарешті, натисніть кнопку :button:`Import`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:71
-#, fuzzy
 msgid ""
 "A window notifying you that the project was last opened in an older Godot "
 "version may appear. That's not an issue. Click :button:`OK` to open the "
 "project."
 msgstr ""
 "Може з’явитися вікно з повідомленням про те, що проєкт востаннє відкривався "
-"у старішій версії Godot, але це не проблема. Натисніть :button:`Ok`, щоб "
+"у старішій версії Godot. Це не проблема. Натисніть :button:`OK`, щоб "
 "відкрити проєкт."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:74
@@ -10835,17 +10826,16 @@ msgstr ""
 "доці :ui:`Inspector`, як-от ``текстура`` нашого вузла."
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:128
-#, fuzzy
 msgid ""
 "By default, the :ui:`Inspector` displays a node's properties in \"Title "
 "Case\", with capitalized words separated by a space. In GDScript code, these "
 "properties are in \"snake_case\", which is lowercase with each word "
 "separated by an underscore."
 msgstr ""
-"За замовчуванням :ui:`Inspector` відображає властивості вузла в «Title "
-"Case», з великими літерами, розділеними пробілом. У коді GDScript ці "
-"властивості представлені в «snake_case», тобто малими літерами, розділеними "
-"підкресленням."
+"За замовчуванням :ui:`Inspector` відображає властивості вузла у \"Title "
+"Case\", слова з великої літери, розділені пробілом. У коді GDScript ці "
+"властивості відображаються у \"snake_case\", тобто у нижньому регістрі, де "
+"кожне слово розділене символом підкреслення."
 
 #: ../../docs/getting_started/step_by_step/scripting_first_script.rst:132
 msgid ""
@@ -14631,14 +14621,13 @@ msgstr ""
 "перемістіть вузол ``Ground`` за допомогою осі Y (зелена стрілка на gizmo)."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:120
-#, fuzzy
 msgid ""
 "If you can't see the 3D object manipulator like on the image above, ensure "
 "the *Transform Mode* is active in the toolbar above the view."
 msgstr ""
-"Якщо маніпулятор 3D-об'єктів не відображається, як на зображенні вище, "
-"переконайтеся, що *Режим виділення* активний на панелі інструментів над "
-"вікном перегляду."
+"Якщо ви не бачите маніпулятор 3D-об'єктів, як на зображенні вище, "
+"переконайтеся, що на панелі інструментів над виглядом активовано *Режим "
+"трансформації*."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:125
 msgid ""
@@ -15853,7 +15842,6 @@ msgstr ""
 "macOS)."
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:224
-#, fuzzy
 msgid ""
 "Select the :ref:`VisibleOnScreenNotifier3D "
 "<class_VisibleOnScreenNotifier3D>` node and on the right side of the "
@@ -15861,8 +15849,8 @@ msgid ""
 "``screen_exited()`` signal."
 msgstr ""
 "Виберіть вузол :ref:`VisibleOnScreenNotifier3D "
-"<class_VisibleOnScreenNotifier3D>` і в правій частині інтерфейсу перейдіть "
-"до док-станції *Node*. Двічі клацніть сигнал ``screen_exited()``."
+"<class_VisibleOnScreenNotifier3D>` та у правій частині інтерфейсу перейдіть "
+"до панелі *Сигнали*. Двічі клацніть сигнал ``screen_exited()``."
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:229
 msgid "Connect the signal to the ``Mob``"
@@ -16376,13 +16364,12 @@ msgstr ""
 "появу монстрів кожні ``0.5`` секунди."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:203
-#, fuzzy
 msgid ""
 "With the *MobTimer* still selected, head to the *Signals* dock on the right, "
 "and double-click the ``timeout`` signal."
 msgstr ""
-"Коли *MobTimer* все ще вибрано, перейдіть до док-станції *Node* праворуч і "
-"двічі клацніть сигнал ``timeout``."
+"З вибраним *MobTimer* перейдіть до панелі *Signals* праворуч і двічі "
+"клацніть сигнал ``timeout``."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:206
 msgid "|image23|"
@@ -16783,18 +16770,16 @@ msgstr ""
 "<doc_groups>` Godot."
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:181
-#, fuzzy
 msgid ""
 "Open the scene ``mob.tscn`` again and select the *Mob* node. Go to the "
 "*Groups* dock on the right to see a list of groups, which allows you to "
 "assign tags to nodes. Click on the *+* button to open the *Create new Group* "
 "dialog."
 msgstr ""
-"Відкрийте сцену ``mob.tscn`` знову і виберіть вузол *Mob*. Перейдіть до дока "
-"*Node* праворуч, щоб переглянути список сигналів. Док *Node* має дві "
-"вкладки: *Signals*, яку ви вже використовували, та *Groups*, яка дозволяє "
-"присвоювати теги вузлам. Натисніть кнопку *+*, щоб відкрити діалогове вікно "
-"*Create new Group*."
+"Знову відкрийте сцену ``mob.tscn`` та виберіть вузол *Mob*. Перейдіть до "
+"панелі *Groups* праворуч, щоб побачити список груп, який дозволяє призначати "
+"теги вузлам. Натисніть кнопку *+*, щоб відкрити діалогове вікно *Створити "
+"нову групу*."
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:187
 msgid "Enter \"mob\" in the *Name* field and click the *Ok* button."
@@ -17074,16 +17059,15 @@ msgstr ""
 "«вороги»."
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:50
-#, fuzzy
 msgid ""
 "When areas detect a collision, they emit signals. We're going to connect one "
 "to the ``Player`` node. Select ``MobDetector`` and go to the Signals dock, "
 "double-click the ``body_entered`` signal and connect it to the ``Player``"
 msgstr ""
 "Коли області виявляють зіткнення, вони випромінюють сигнали. Ми підключимо "
-"один із них до вузла ``Player``. Виберіть ``MobDetector`` та перейдіть на "
-"вкладку *Node* *Inspector*, двічі клацніть сигнал ``body_entered`` та "
-"підключіть його до ``Player``"
+"один із них до вузла ``Player``. Виберіть ``MobDetector`` та перейдіть до "
+"панелі Signals, двічі клацніть сигнал ``body_entered`` та підключіть його до "
+"``Player``"
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:56
 msgid ""
@@ -17123,13 +17107,12 @@ msgstr ""
 "зупинити ``MobTimer`` у відповідь."
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:110
-#, fuzzy
 msgid ""
 "Open ``main.tscn``, select the ``Player`` node, and in the *Signals* dock, "
 "connect its ``hit`` signal to the ``Main`` node."
 msgstr ""
-"Відкрийте ``main.tscn``, виберіть вузол ``Player`` і в доку *Node* "
-"підключіть його сигнал ``hit`` до ``Main`` вузла."
+"Відкрийте файл ``main.tscn``, виберіть вузол ``Player`` та в доці *Signals* "
+"підключіть його сигнал ``hit`` до вузла ``Main``."
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:115
 msgid "Get the timer, and stop it, in the ``_on_player_hit()`` function."
@@ -19375,7 +19358,7 @@ msgstr "Існує дві системи реєстрації типів:"
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:87
 msgid ":ref:`Custom Types <doc_making_plugins>`"
-msgstr ":ref:`Custom Types <doc_making_plugins>`"
+msgstr ":ref:`Налаштовані типи <doc_making_plugins>`"
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:89
 msgid "Editor-only. Typenames are not accessible at runtime."
@@ -19420,7 +19403,7 @@ msgstr ""
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:104
 msgid ":ref:`Script Classes <doc_gdscript_basics_class_name>`"
-msgstr ":ref:`Script Classes <doc_gdscript_basics_class_name>`"
+msgstr ":ref:`Класи скриптів <doc_gdscript_basics_class_name>`"
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:106
 msgid "Editor and runtime accessible."
@@ -21293,7 +21276,6 @@ msgstr ""
 "дилема: коли слід змінити ці значення?"
 
 #: ../../docs/tutorials/best_practices/logic_preferences.rst:16
-#, fuzzy
 msgid ""
 "It is the best practice to change values on a node before adding it to the "
 "scene tree. Some properties' setters have code to update other corresponding "
@@ -21301,12 +21283,12 @@ msgid ""
 "on your game's performance, but in heavy use cases such as procedural "
 "generation, it can bring your game to a crawl."
 msgstr ""
-"Найкраще змінити значення на вузлі перед додаванням його до дерева сцени. "
-"Деякі засоби встановлення властивостей мають код для оновлення інших "
-"відповідних значень, і цей код може бути повільним! У більшості випадків цей "
-"код не впливає на продуктивність вашої гри, але у випадках інтенсивного "
-"використання, як-от процедурна генерація, він може привести вашу гру до "
-"повзання."
+"Найкращою практикою є зміна значень вузла перед його додаванням до дерева "
+"сцени. Деякі сетери властивостей мають код для оновлення інших відповідних "
+"значень, і цей код може бути повільним! У більшості випадків цей код не "
+"впливає на продуктивність вашої гри, але у випадках інтенсивного "
+"використання, таких як процедурна генерація, він може призвести до повного "
+"зависання вашої гри."
 
 #: ../../docs/tutorials/best_practices/logic_preferences.rst:22
 msgid ""
@@ -29335,18 +29317,16 @@ msgid "debug"
 msgstr "налагоджувати"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:39
-#, fuzzy
 msgid ""
 "|extended| Only available in editor builds, and export templates compiled "
 "with ``disable_path_overrides=false``."
 msgstr ""
-"|release| Доступно в збірках редакторів, шаблонах експорту налагодження та "
-"випуску шаблонів експорту."
+"|extended| Доступно лише у збірках редактора та шаблонах експорту, "
+"скомпільованих за допомогою ``disable_path_overrides=false``."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:32
-#, fuzzy
 msgid "extended"
-msgstr "extends"
+msgstr "розширений"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:40
 msgid "|editor| Only available in editor builds."
@@ -29649,46 +29629,44 @@ msgid "``--path <directory>``"
 msgstr "``--path <каталог>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:89
-#, fuzzy
 msgid ""
 "|extended| Path to a project (``<directory>`` must contain a "
 "\"project.godot\" file)."
 msgstr ""
-"|release| Шлях до проекту (``<directory>`` має містити файл 'project.godot')."
+"|extended| Шлях до проєкту (``<каталог>`` має містити файл \"project.godot\")"
+"."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:91
 msgid "``--scene <path>``"
 msgstr "``--scene <path>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:91
-#, fuzzy
 msgid ""
 "|extended| Path or UID of a scene in the project that should be started."
-msgstr "|release| Шлях або UID сцени в проєкті, яку слід запустити."
+msgstr "|extended| Шлях або UID сцени в проєкті, яку слід запустити."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:93
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <file>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:93
-#, fuzzy
 msgid "|extended| Path to a pack (.pck) file to load."
-msgstr "|release| Шлях до пакетного файлу (.pck) для завантаження."
+msgstr "|extended| Шлях до файлу пакету (.pck) для завантаження."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:95
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <mode>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:95
-#, fuzzy
 msgid ""
 "|release| Render thread mode (\"unsafe\", \"safe\", \"separate\"). "
 "See :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
 "threads/thread_model>` for more details."
 msgstr ""
-"|release| Режим потоку відтворення («небезпечний», «безпечний», «окремий»). "
-"Перегляньте :ref:`Модель потоку <class_ProjectSettings_property_rendering/"
-"driver/threads/thread_model>` для отримання додаткової інформації."
+"|release| Режим рендерингу потоку (\"небезпечний\", \"безпечний\", "
+"\"окремий\"). Див. :ref:`Thread Model "
+"<class_ProjectSettings_property_rendering/driver/threads/thread_model>` для "
+"отримання додаткової інформації."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:98
 msgid "``--remote-fs <address>``"
@@ -29731,12 +29709,10 @@ msgstr ""
 "``--help``, щоб відобразити список доступних драйверів."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:106
-#, fuzzy
 msgid "``--audio-output-latency <ms>``"
-msgstr "``--audio-output-latency`` <ms>"
+msgstr "``--audio-output-latency <ms>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:106
-#, fuzzy
 msgid ""
 "|release| Override audio output latency in milliseconds (default is 15 ms). "
 "Lower values make sound playback more reactive but increase CPU usage, and "
@@ -29745,7 +29721,7 @@ msgstr ""
 "|release| Змінити затримку виведення аудіо в мілісекундах (за замовчуванням "
 "15 мс). Нижчі значення роблять відтворення звуку більш реактивним, але "
 "збільшують використання процесора та можуть призвести до переривання звуку, "
-"якщо процесор не встигає за ним"
+"якщо процесор не встигає за цим."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:109
 msgid "``--rendering-method <renderer>``"
@@ -29812,14 +29788,13 @@ msgid "``--log-file``"
 msgstr "``--log-file``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:121
-#, fuzzy
 msgid ""
 "|release| Write output/error log to the specified path instead of the "
 "default location defined by the project. ``<file>`` path should be absolute "
 "or relative to the project directory."
 msgstr ""
 "|release| Записувати вивід/журнал помилок за вказаним шляхом, а не за місцем "
-"розташування за замовчуванням, визначеним проектом. Шлях <файл> має бути "
+"розташування за замовчуванням, визначеним проектом. Шлях ``<файл>`` має бути "
 "абсолютним або відносним до каталогу проекту."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:124
@@ -29914,9 +29889,8 @@ msgid "``--xr-mode <mode>``"
 msgstr "``--xr-mode <режим>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:151
-#, fuzzy
 msgid "|release| Select XR mode (\"default\", \"off\", \"on\")."
-msgstr "|release| Виберіть режим XR (\"default\", \"off\", \"on\")."
+msgstr "|release| Виберіть режим XR («за замовчуванням», «вимк.», «увімк.»)."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:153
 msgid "``--wid <window_id>``"
@@ -29931,7 +29905,6 @@ msgid "``--accessibility <mode>``"
 msgstr "``--accessibility <mode>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:155
-#, fuzzy
 msgid ""
 "|release| Select accessibility mode ['auto\" (when screen reader is running, "
 "default), \"always\", \"disabled']."
@@ -30160,14 +30133,13 @@ msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:208
-#, fuzzy
 msgid ""
 "|release| Simulate high CPU load (delay each frame by <ms> milliseconds). Do "
 "not use as a FPS limiter; use ``--max-fps`` instead."
 msgstr ""
 "|release| Імітувати високе навантаження на процесор (затримувати кожен кадр "
-"на <мс> мілісекунд). Не використовувати як обмежувач FPS; натомість "
-"використовувати --max-fps."
+"на <мс> мілісекунд). Не використовувати як обмежувач FPS; замість цього "
+"використовуйте ``--max-fps``."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:211
 msgid "``--time-scale <scale>``"
@@ -30231,12 +30203,11 @@ msgid "``--delta-smoothing <enable>``"
 msgstr "``--delta-smoothing <включити>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:222
-#, fuzzy
 msgid ""
 "|release| Enable or disable frame delta smoothing (\"enable\", \"disable\")."
 msgstr ""
-"|release| Увімкнути або вимкнути дельта-згладжування кадру («ввімкнути», "
-"«вимкнути»)."
+"|release| Увімкнути або вимкнути згладжування дельти кадру («увімкнути», «"
+"вимкнути»)."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:224
 msgid "``--print-fps``"
@@ -30265,37 +30236,34 @@ msgid "``-s``, ``--script <script>``"
 msgstr "``-s``, ``--script <script>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:234
-#, fuzzy
 msgid ""
 "|extended| Run a script. ``<script>`` must be a resource path relative to "
 "the project (``myscript.gd`` will be interpreted as ``res://my_script.gd``) "
 "or an absolute filesystem path (for example, on Windows: ``C:/tmp/"
 "my_script.gd``)."
 msgstr ""
-"|release| Запустіть скрипт. ``<script>`` має бути шляхом до ресурсу відносно "
-"проекту (``myscript.gd`` буде інтерпретуватися як ``res://myscript.gd``) або "
-"абсолютним шляхом до файлової системи (наприклад, у Windows ``C:/tmp/"
-"myscript.gd``)"
+"|extended| Запустіть скрипт. ``<script>`` має бути шляхом до ресурсу "
+"відносно проекту (``myscript.gd`` буде інтерпретовано як ``res://"
+"my_script.gd``) або абсолютним шляхом до файлової системи (наприклад, у "
+"Windows: ``C:/tmp/my_script.gd``)."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:237
 msgid "``--main-loop <main_loop_name>``"
 msgstr "``--main-loop <main_loop_name>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:237
-#, fuzzy
 msgid "|extended| Run a MainLoop specified by its global class name."
-msgstr "|release| Запустити MainLoop, визначений його глобальною назвою класу."
+msgstr "|extended| Запустити MainLoop, визначений його глобальною назвою класу."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:239
 msgid "``--check-only``"
 msgstr "``--check-only``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:239
-#, fuzzy
 msgid "|extended| Only parse for errors and quit (use with ``--script``)."
 msgstr ""
-"|release| Лише аналізуйте помилки та виходьте (використовуйте з ``--"
-"script``)."
+"|extended| Тільки аналізувати на наявність помилок та завершувати роботу "
+"(використовувати з ``--script``)."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:241
 msgid "``--import``"
@@ -30314,7 +30282,6 @@ msgid "``--export-release <preset> <path>``"
 msgstr "``--export-release <попереднє налаштування> <шлях>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:243
-#, fuzzy
 msgid ""
 "|editor| Export the project in release mode using the given preset and "
 "output path. The preset name should match one defined in "
@@ -30323,10 +30290,10 @@ msgid ""
 "game.exe\"). The target directory must exist."
 msgstr ""
 "|editor| Експортуйте проєкт у режимі випуску, використовуючи заданий пресет "
-"та вихідний шлях. Назва пресету повинна збігатися з назвою, визначеною у "
-"'export_presets.cfg'. ``<path>`` має бути абсолютним або відносним до "
+"та вихідний шлях. Назва пресету повинна збігатися з назвою, визначеною в "
+"\"export_presets.cfg\". ``<шлях>`` має бути абсолютним або відносним до "
 "каталогу проєкту та містити назву файлу для бінарного файлу (наприклад, "
-"'builds/game.exe'). Цільовий каталог має існувати."
+"\"builds/game.exe\"). Цільовий каталог має існувати."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:247
 msgid "``--export-debug <preset> <path>``"
@@ -30359,25 +30326,23 @@ msgid "``--export-patch <preset> <path>``"
 msgstr "``--export-patch <preset> <path>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:252
-#, fuzzy
 msgid ""
 "|editor| Export pack with changed files only. See ``--export-pack`` "
 "description for other considerations."
 msgstr ""
-"|editor| Експортувати пакет лише зі зміненими файлами. Див. опис --export-"
-"pack для інших міркувань."
+"|editor| Експортувати пакет лише зі зміненими файлами. Див. опис ``--export-"
+"pack`` для інших міркувань."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:254
 msgid "``--patches <paths>``"
 msgstr "``--patches <paths>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:254
-#, fuzzy
 msgid ""
 "|editor| List of patches to use with ``--export-patch``. The list is comma-"
 "separated."
 msgstr ""
-"|editor| Список патчів для використання з --export-patch. Список "
+"|editor| Список патчів для використання з ``--export-patch``. Список "
 "розділяється комами."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:256
@@ -30385,13 +30350,12 @@ msgid "``--install-android-build-template``"
 msgstr "``--install-android-build-template``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:256
-#, fuzzy
 msgid ""
 "|editor| Install the Android build template. Used in conjunction with ``--"
 "export-release`` or ``--export-debug``."
 msgstr ""
-"|editor| Встановлює шаблон збірки Android. Використовується разом з --export-"
-"release або --export-debug."
+"|editor| Встановіть шаблон збірки Android. Використовується разом з ``--"
+"export-release`` або ``--export-debug``."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:258
 msgid "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
@@ -30436,34 +30400,31 @@ msgstr ""
 "doctool``)."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:266
-#, fuzzy
 msgid "``--gdextension-docs``"
-msgstr "``--dump-extension-api``"
+msgstr "``--gdextension-docs``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:266
-#, fuzzy
 msgid ""
 "|editor| Rather than dumping the engine API, generate API reference from all "
 "the GDExtensions loaded in the current project (used with ``--doctool``)."
 msgstr ""
-"|editor| Замість того, щоб створювати дамп API двигуна, згенеруйте посилання "
-"на API із вбудованої документації у файлах GDScript, знайдених у <path> "
-"(використовується з ``--doctool``)."
+"|editor| Замість створення дампу API рушія, згенеруйте посилання на API з "
+"усіх GDExtensions, завантажених у поточному проєкті (використовується з ``--"
+"doctool``)."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:269
 msgid "``--gdscript-docs <path>``"
 msgstr "``--gdscript-docs <шлях>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:269
-#, fuzzy
 msgid ""
 "|editor| Rather than dumping the engine API, generate API reference from the "
 "inline documentation in the GDScript files found in ``<path>`` (used with "
 "``--doctool``)."
 msgstr ""
-"|editor| Замість того, щоб створювати дамп API двигуна, згенеруйте посилання "
-"на API із вбудованої документації у файлах GDScript, знайдених у <path> "
-"(використовується з ``--doctool``)."
+"|editor| Замість того, щоб створювати дамп API рушія, згенеруйте посилання "
+"на API з вбудованої документації у файлах GDScript, що знаходяться в ``<шлях>"
+"`` (використовується з ``--doctool``)."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:272
 msgid "``--build-solutions``"
@@ -30482,56 +30443,50 @@ msgid "``--dump-gdextension-interface``"
 msgstr "``--dump-gdextension-interface``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:274
-#, fuzzy
 msgid ""
 "|editor| Generate GDExtension header file \"gdextension_interface.h\" in the "
 "current folder. This file is the base file required to implement a "
 "GDExtension."
 msgstr ""
-"|editor| Створіть файл заголовка GDExtension 'gdnative_interface.h' у "
-"поточній папці. Цей файл є базовим файлом, необхідним для впровадження "
-"GDExtension."
+"|editor| Згенерувати заголовковий файл GDExtension "
+"\"gdextension_interface.h\" у поточній папці. Цей файл є базовим файлом, "
+"необхідним для реалізації GDExtension."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:277
-#, fuzzy
 msgid "``--dump-gdextension-interface-json``"
-msgstr "``--dump-gdextension-interface``"
+msgstr "``--dump-gdextension-interface-json``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:277
-#, fuzzy
 msgid ""
 "|editor| Generate a JSON dump of the GDExtension interface named "
 "\"gdextension_interface.json\" in the current folder."
 msgstr ""
-"|editor| Створіть JSON-дамп API Godot для прив’язок GDExtension під назвою "
-"«extension_api.json» у поточній папці."
+"|editor| Згенерувати JSON-дамп інтерфейсу GDExtension з назвою "
+"\"gdextension_interface.json\" у поточній папці."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:279
 msgid "``--dump-extension-api``"
 msgstr "``--dump-extension-api``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:279
-#, fuzzy
 msgid ""
 "|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
 "\"extension_api.json\" in the current folder."
 msgstr ""
-"|editor| Створіть JSON-дамп API Godot для прив’язок GDExtension під назвою "
-"«extension_api.json» у поточній папці."
+"|editor| Згенерувати JSON-дамп Godot API для прив'язок GDExtension з назвою "
+"\"extension_api.json\" у поточній папці."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:281
-#, fuzzy
 msgid "``--dump-extension-api-with-docs``"
-msgstr "``--dump-extension-api``"
+msgstr "``--dump-extension-api-with-docs``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:281
-#, fuzzy
 msgid ""
 "|editor| Generate JSON dump of the Godot API like the previous option, but "
 "including documentation."
 msgstr ""
-"|editor| Створіть JSON-дамп API Godot для прив’язок GDExtension під назвою "
-"«extension_api.json» у поточній папці."
+"|editor| Згенеруйте JSON-дамп Godot API, як і в попередньому варіанті, але з "
+"документацією."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:283
 msgid "``--validate-extension-api <path>``"
@@ -30572,13 +30527,13 @@ msgid "``--test [--help]``"
 msgstr "``--test [--help]``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:290
-#, fuzzy
 msgid ""
 "|editor| Run :ref:`unit tests <doc_unit_testing>` (requires compiling the "
 "engine with ``tests=yes``). Use ``--test --help`` for more information."
 msgstr ""
-"|editor| Запускайте модульні тести. Використовуйте --test --help для "
-"отримання додаткової інформації."
+"|editor| Запустіть :ref:`unit tests <doc_unit_testing>` (потрібна компіляція "
+"рушія з ``tests=yes``). Використовуйте ``--test --help`` для отримання "
+"додаткової інформації."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:295
 msgid "Path"
@@ -39371,6 +39326,10 @@ msgid ""
 "return an empty path when ``from_id`` is a disabled/solid point "
 "(`GH-113988`_)."
 msgstr ""
+"``AStar2D.get_point_path``, ``AStar3D.get_point_path``, "
+"``AStarGrid2D.get_id_path`` а ``AStarGrid2D.get_point_path`` тепер "
+"повертатиме порожній шлях, якщо ``from_id`` є вимкненою/суцільною точкою "
+"(`GH-113988`_)."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:203
 msgid "Changed defaults"
@@ -42748,24 +42707,22 @@ msgid "Local Coords"
 msgstr "Локальні координати"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:250
-#, fuzzy
 msgid ""
 "By default, this option is off. It means that the space that particles are "
 "emitted to is global, and **not** relative to the node. If the node is "
 "moved, existing particles are not moved with it:"
 msgstr ""
-"За замовчуванням цей параметр увімкнений, і це означає, що простір, куди "
-"випромінюються частинки, визначається відносно вузла. Якщо вузол "
-"переміщений, усі частинки переміщуються разом з ним:"
+"За замовчуванням ця опція вимкнена. Це означає, що простір, у який "
+"випромінюються частинки, є глобальним і **не** відносним до вузла. Якщо "
+"вузол переміщується, існуючі частинки не переміщуються разом з ним:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:256
-#, fuzzy
 msgid ""
 "If enabled, particles will emit to local space, meaning that if the node is "
 "moved, already emitted particles are also affected:"
 msgstr ""
-"Якщо його вимкнути, частинки будуть випромінюватися у глобальний простір, це "
-"означає, що переміщення вузла, не вплине на вже випущені частинки:"
+"Якщо увімкнено, частинки випромінюватимуть у локальний простір, тобто якщо "
+"вузол переміщується, це також впливає на вже випромінені частинки:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:262
 msgid "Draw Order"
@@ -77739,20 +77696,26 @@ msgid ""
 ":download:`2×3 cubemap template (default layout option) <img/"
 "cubemap_template_2x3.webp>`"
 msgstr ""
-":download:`2×3 cubemap template (default layout option) <img/"
-"cubemap_template_2x3.webp>`"
+":download:`Шаблон кубічної карти розміром 2×3 (стандартний варіант "
+"розміщення) <img/cubemap_template_2x3.webp>`"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:111
 msgid ":download:`3×2 cubemap template <img/cubemap_template_3x2.webp>`"
-msgstr ":download:`3×2 cubemap template <img/cubemap_template_3x2.webp>`"
+msgstr ""
+":download:`Шаблон кубічної карти розміром 3×2 <img/cubemap_template_3x2.webp>"
+"`"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:112
 msgid ":download:`1×6 cubemap template <img/cubemap_template_1x6.webp>`"
-msgstr ":download:`1×6 cubemap template <img/cubemap_template_1x6.webp>`"
+msgstr ""
+":download:`Шаблон кубічної карти розміром 1×6 <img/cubemap_template_1x6.webp>"
+"`"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:113
 msgid ":download:`6×1 cubemap template <img/cubemap_template_6x1.webp>`"
-msgstr ":download:`6×1 cubemap template <img/cubemap_template_6x1.webp>`"
+msgstr ""
+":download:`Шаблон кубічної карти розміром 6×1 <img/cubemap_template_6x1.webp>"
+"`"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:116
 msgid "Detect 3D"
@@ -84582,13 +84545,12 @@ msgid "Resource options"
 msgstr "Параметри ресурсу"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:119
-#, fuzzy
 msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 5 different modes for exporting:"
 msgstr ""
-"При експортуванні, Godot складає список усіх файлів, які потрібно "
-"експортувати, а потім створює пакет. Існує 3 режими експортування:"
+"Під час експорту Godot створює список усіх файлів для експорту, а потім "
+"пакет. Існує 5 різних режимів експорту:"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:122
 msgid "Export all resources in the project"
@@ -84603,14 +84565,12 @@ msgid "Export selected resources (and dependencies)"
 msgstr "Експортувати позначені ресурси (і залежності)"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:125
-#, fuzzy
 msgid "Export all resources in the project except resources checked below"
-msgstr "Експортувати усі ресурси у проєкті"
+msgstr "Експортувати всі ресурси проєкту, окрім ресурсів, позначених нижче"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:126
-#, fuzzy
 msgid "Export as dedicated server"
-msgstr "Експорт для виділених серверів"
+msgstr "Експортувати як виділений сервер"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:130
 msgid ""
@@ -115312,23 +115272,21 @@ msgid "Optimization using Servers"
 msgstr "Оптимізація за допомогою серверів"
 
 #: ../../docs/tutorials/performance/using_servers.rst:6
-#, fuzzy
 msgid ""
 "Engines like Godot provide increased ease of use thanks to their high-level "
 "constructs and features. Most of them are accessed and used via "
 "the :ref:`scene system <doc_scene_tree>`. Using nodes and resources "
 "simplifies project organization and asset management in complex games."
 msgstr ""
-"Двигуни, такі як Godot, забезпечують підвищену простоту використання завдяки "
-"своїм високорівневим конструкціям і функціям. Більшість із них доступні та "
-"використовуються через :ref:`Scene System<doc_scene_tree>`. Використання "
-"вузлів і ресурсів спрощує організацію проекту та управління активами в "
+"Такі рушії, як Godot, забезпечують підвищену зручність використання завдяки "
+"своїм високорівневим конструкціям та функціям. Більшість із них доступні та "
+"використовуються через :ref:`систему сцен <doc_scene_tree>`. Використання "
+"вузлів та ресурсів спрощує організацію проекту та управління активами у "
 "складних іграх."
 
 #: ../../docs/tutorials/performance/using_servers.rst:11
-#, fuzzy
 msgid "There are several drawbacks to this:"
-msgstr "Є кілька причин для цього:"
+msgstr "У цьому є кілька недоліків:"
 
 #: ../../docs/tutorials/performance/using_servers.rst:13
 msgid "There is an extra layer of complexity."
@@ -115340,18 +115298,18 @@ msgstr ""
 "Продуктивність нижча, ніж при безпосередньому використанні простих API."
 
 #: ../../docs/tutorials/performance/using_servers.rst:15
-#, fuzzy
 msgid ""
 "It is not possible to :ref:`use multiple threads "
 "<doc_using_multiple_threads>` to control them."
-msgstr "Неможливо використовувати декілька потоків для керування ними."
+msgstr ""
+"Неможливо :ref:`використовувати кілька потоків <doc_using_multiple_threads>` "
+"для керування ними."
 
 #: ../../docs/tutorials/performance/using_servers.rst:17
 msgid "More memory is needed."
 msgstr "Потрібно більше пам'яті."
 
 #: ../../docs/tutorials/performance/using_servers.rst:19
-#, fuzzy
 msgid ""
 "In most cases, this is not really a problem. Godot is well-optimized, and "
 "most operations are handled with signals, which means no polling is "
@@ -115360,10 +115318,12 @@ msgid ""
 "example, dealing with tens of thousands of instances for something that "
 "needs to be processed every frame can be a bottleneck."
 msgstr ""
-"У багатьох випадках це насправді не проблема (Godot дуже оптимізований, і "
-"більшість операцій обробляються за допомогою сигналів, тому опитування не "
-"потрібне). Проте не завжди. Наприклад, робота з десятками тисяч екземплярів "
-"чогось, що потрібно обробити кожен кадр, може бути вузьким місцем."
+"У більшості випадків це насправді не є проблемою. Godot добре оптимізований, "
+"і більшість операцій обробляються за допомогою сигналів, що означає, що "
+"опитування не потрібне. Тим не менш, іноді ми хочемо отримати кращу "
+"продуктивність від апаратного забезпечення, коли інші шляхи оптимізації "
+"вичерпані. Наприклад, обробка десятків тисяч екземплярів чогось, що потрібно "
+"обробляти кожен кадр, може бути вузьким місцем."
 
 #: ../../docs/tutorials/performance/using_servers.rst:26
 msgid ""
@@ -115380,77 +115340,65 @@ msgid "Still, Godot is designed to work around this problem."
 msgstr "Тим не менш, Godot спроектований так, щоб вирішити цю проблему."
 
 #: ../../docs/tutorials/performance/using_servers.rst:34
-#, fuzzy
 msgid ""
 "You can see how using low-level servers works in action using the `Bullet "
 "Shower demo project <https://github.com/godotengine/godot-demo-projects/tree/"
 "master/2d/bullet_shower>`__."
 msgstr ""
-"Ви можете побачити, як працює використання низькорівневих серверів у дії за "
-"допомогою демонстраційного проекту `Bullet Shower <https://github.com/"
-"godotengine/godot-demo-projects/tree/master/2d/bullet_shower>`__"
+"Ви можете побачити, як працює використання низькорівневих серверів у дії, "
+"використовуючи демонстраційний проект `Bullet Shower <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/2d/bullet_shower>`__."
 
 #: ../../docs/tutorials/performance/using_servers.rst:38
 msgid "Servers"
 msgstr "Сервери"
 
 #: ../../docs/tutorials/performance/using_servers.rst:40
-#, fuzzy
 msgid ""
 "One of the most interesting design decisions for Godot is the fact that the "
 "whole scene system is *optional*. While it is not possible to compile it "
 "out, it can be completely bypassed."
 msgstr ""
-"Одним з найцікавіших архітектурних рішень Godot є той факт, що вся система "
-"сцен є *необов'язковою*. Хоча наразі неможливо скомпілювати його, зате можна "
+"Одним із найцікавіших дизайнерських рішень для Godot є той факт, що вся "
+"система сцен є *необов'язковою*. Хоча її неможливо скомпілювати, її можна "
 "повністю обійти."
 
 #: ../../docs/tutorials/performance/using_servers.rst:44
-#, fuzzy
 msgid ""
 "At the core, Godot uses the concept of Servers. They are low-level APIs to "
 "control rendering, physics, sound, etc. The scene system is built on top of "
 "them and uses them directly. The most common servers are:"
 msgstr ""
-"По суті, Godot використовує концепцію Серверів. Це API дуже низького рівня "
-"для керування рендерингом, фізикою, звуком тощо. Система сцен побудована на "
-"їх основі і використовує їх безпосередньо. Найпоширенішими серверами є:"
+"В основі Godot лежить концепція Серверів. Це низькорівневі API для керування "
+"рендерингом, фізикою, звуком тощо. Система сцен побудована на їх основі та "
+"використовує їх безпосередньо. Найпоширенішими серверами є:"
 
 #: ../../docs/tutorials/performance/using_servers.rst:48
-#, fuzzy
 msgid ":ref:`class_RenderingServer`: Handles everything related to graphics."
-msgstr ""
-":ref:`RenderingServer <class_RenderingServer>`: обробляє все, що стосується "
-"графіки."
+msgstr ":ref:`class_RenderingServer`: Вивчає все, що пов'язано з графікою."
 
 #: ../../docs/tutorials/performance/using_servers.rst:49
-#, fuzzy
 msgid ":ref:`class_PhysicsServer3D`: Handles everything related to 3D physics."
 msgstr ""
-":ref:`PhysicsServer3D <class_PhysicsServer3D>`: обробляє все, що стосується "
-"3D фізики."
+":ref:`class_PhysicsServer3D`: Займається всім, що пов'язано з 3D-фізикою."
 
 #: ../../docs/tutorials/performance/using_servers.rst:50
-#, fuzzy
 msgid ":ref:`class_PhysicsServer2D`: Handles everything related to 2D physics."
 msgstr ""
-":ref:`PhysicsServer2D <class_PhysicsServer2D>`: обробляє все, що стосується "
-"2D фізики."
+":ref:`class_PhysicsServer2D`: Займається всім, що пов'язано з двовимірною "
+"фізикою."
 
 #: ../../docs/tutorials/performance/using_servers.rst:51
-#, fuzzy
 msgid ":ref:`class_AudioServer`: Handles everything related to audio."
-msgstr ""
-":ref:`AudioServer <class_AudioServer>`: обробляє все, що стосується аудіо."
+msgstr ":ref:`class_AudioServer`: Вирішує все, що пов'язано зі звуком."
 
 #: ../../docs/tutorials/performance/using_servers.rst:53
-#, fuzzy
 msgid ""
 "Explore their APIs, and you will realize that all the functions provided are "
 "low-level implementations of everything Godot allows you to do using nodes."
 msgstr ""
 "Дослідіть їхні API, і ви зрозумієте, що всі надані функції є низькорівневими "
-"реалізаціями всього, що дозволяє Godot."
+"реалізаціями всього, що Godot дозволяє робити за допомогою вузлів."
 
 #: ../../docs/tutorials/performance/using_servers.rst:57
 msgid "RIDs"
@@ -115484,7 +115432,6 @@ msgstr ""
 "порожнім. Тоді ресурс можна передати API сервера, як RID."
 
 #: ../../docs/tutorials/performance/using_servers.rst:72
-#, fuzzy
 msgid ""
 "Resources are reference-counted (see :ref:`RefCounted <class_RefCounted>`), "
 "and references to a resource's RID are *not* counted when determining "
@@ -115493,9 +115440,10 @@ msgid ""
 "will be erased."
 msgstr ""
 "Ресурси підраховуються за посиланнями (див. :ref:`RefCounted "
-"<class_RefCounted>`), а посилання на RID ресурсу *не* зараховуються під час "
-"визначення того, чи ресурс ще використовується. Обов’язково зберігайте "
-"посилання на ресурс за межами сервера, інакше його та його RID буде видалено."
+"<class_RefCounted>`), а посилання на RID ресурсу *не* враховуються під час "
+"визначення того, чи ресурс все ще використовується. Переконайтеся, що ви "
+"**зберігаєш посилання** на ресурс поза сервером. В іншому випадку і ресурс, "
+"і його RID будуть видалені."
 
 #: ../../docs/tutorials/performance/using_servers.rst:77
 msgid "For nodes, there are many functions available:"
@@ -115531,7 +115479,6 @@ msgstr ""
 "сервері."
 
 #: ../../docs/tutorials/performance/using_servers.rst:85
-#, fuzzy
 msgid ""
 "For 2D, the :ref:`class_World2D` resource (obtainable in "
 "the :ref:`class_Viewport` and :ref:`CanvasItem <class_CanvasItem>` nodes) "
@@ -115539,28 +115486,25 @@ msgid ""
 "*PhysicsServer2D Space*. This allows creating 2D objects directly with the "
 "server API and using them."
 msgstr ""
-"Для 2D ресурс :ref:`World2D <class_World2D>` (отриманий у "
-"вузлах :ref:`Viewport <class_Viewport>` і :ref:`CanvasItem "
-"<class_CanvasItem>`) містить функції для отримання *RenderingServer Canvas* "
-"і Простір *Physics2DServer*. Це дозволяє створювати 2D-об’єкти безпосередньо "
-"за допомогою API сервера та використовувати їх."
+"Для 2D, ресурс :ref:`class_World2D` (доступний у вузлах "
+":ref:`class_Viewport` та :ref:`CanvasItem <class_CanvasItem>`) містить "
+"функції для отримання *RenderingServer Canvas* та *PhysicsServer2D Space*. "
+"Це дозволяє створювати 2D-об'єкти безпосередньо за допомогою API сервера та "
+"використовувати їх."
 
 #: ../../docs/tutorials/performance/using_servers.rst:89
-#, fuzzy
 msgid ""
 "For 3D, the :ref:`class_World3D` resource (obtainable in "
 "the :ref:`class_Viewport` and :ref:`class_Node3D` nodes) contains functions "
 "to get the *RenderingServer Scenario*, and the *PhysicsServer Space*. This "
 "allows creating 3D objects directly with the server API and using them."
 msgstr ""
-"Для 3D ресурс :ref:`World3D <class_World3D>` (доступний у "
-"вузлах :ref:`Viewport <class_Viewport>` і :ref:`Node3D <class_Node3D>`) "
-"містить функції для отримання сценарію *RenderingServer* і Простір "
-"*PhysicsServer*. Це дозволяє створювати 3D-об’єкти безпосередньо за "
-"допомогою API сервера та використовувати їх."
+"Для 3D ресурс :ref:`class_World3D` (доступний у вузлах :ref:`class_Viewport` "
+"та :ref:`class_Node3D`) містить функції для отримання сценарію "
+"*RenderingServer* та простору *PhysicsServer*. Це дозволяє створювати 3D-"
+"об'єкти безпосередньо за допомогою API сервера та використовувати їх."
 
 #: ../../docs/tutorials/performance/using_servers.rst:93
-#, fuzzy
 msgid ""
 "The :ref:`class_VisualInstance3D` class, allows getting the scenario "
 "*instance* and *instance base* via the :ref:`VisualInstance3D.get_instance() "
@@ -115568,11 +115512,11 @@ msgid ""
 "and :ref:`VisualInstance3D.get_base() "
 "<class_VisualInstance3D_method_get_base>` respectively."
 msgstr ""
-"Клас :ref:`VisualInstance3D<class_VisualInstance3D>` дозволяє отримати "
-"*екземпляр* і *базу* сценарію через :ref:`VisualInstance3D.get_instance() "
-"<class_VisualInstance3D_method_get_instance>` "
-"і :ref:`VisualInstance3D.get_base() "
-"<class_VisualInstance3D_method_get_base>` відповідно."
+"Клас :ref:`class_VisualInstance3D` дозволяє отримати *екземпляр* сценарію та "
+"*базу екземплярів* через :ref:`VisualInstance3D.get_instance() "
+"<class_VisualInstance3D_method_get_instance>` та "
+":ref:`VisualInstance3D.get_base() <class_VisualInstance3D_method_get_base>` "
+"відповідно."
 
 #: ../../docs/tutorials/performance/using_servers.rst:97
 msgid ""
@@ -115597,13 +115541,12 @@ msgid "Creating a sprite"
 msgstr "Створення спрайта"
 
 #: ../../docs/tutorials/performance/using_servers.rst:105
-#, fuzzy
 msgid ""
 "This is an example of how to create a sprite from code and move it using the "
 "low-level :ref:`class_CanvasItem` API."
 msgstr ""
-"Це приклад того, як створити спрайт із коду та перемістити його за допомогою "
-"низькорівневого API :ref:`CanvasItem <class_CanvasItem>`."
+"Це приклад того, як створити спрайт з коду та перемістити його за допомогою "
+"низькорівневого API :ref:`class_CanvasItem`."
 
 #: ../../docs/tutorials/performance/using_servers.rst:110
 msgid ""
@@ -115625,19 +115568,21 @@ msgid ""
 "If this is not done, the canvas item may appear to teleport in when the "
 "scene is loaded, rather than appearing directly at its intended location."
 msgstr ""
+"Якщо цього не зробити, елемент полотна може телепортуватися всередину під "
+"час завантаження сцени, а не з'являтися безпосередньо у своєму призначеному "
+"місці."
 
 #: ../../docs/tutorials/performance/using_servers.rst:170
-#, fuzzy
 msgid ""
 "The Canvas Item API in the server allows you to add draw primitives to it. "
 "Once added, they can't be modified. The Item needs to be cleared and the "
 "primitives re-added. This is not the case for setting the transform, which "
 "can be done as many times as desired."
 msgstr ""
-"API елементів Canvas на сервері дозволяє додавати до нього примітиви "
+"API елементів Canvas на сервері дозволяє додавати до них примітиви "
 "малювання. Після додавання їх не можна змінювати. Елемент потрібно очистити, "
-"а примітиви додати повторно (це не стосується налаштування перетворення, яке "
-"можна робити скільки завгодно разів)."
+"а примітиви додати повторно. Це не стосується налаштування перетворення, яке "
+"можна робити скільки завгодно разів."
 
 #: ../../docs/tutorials/performance/using_servers.rst:175
 msgid "Primitives are cleared this way:"
@@ -115660,33 +115605,30 @@ msgid "Creating a 2D RigidBody and moving a sprite with it"
 msgstr "Створення 2D RigidBody і переміщення спрайта за допомогою нього"
 
 #: ../../docs/tutorials/performance/using_servers.rst:245
-#, fuzzy
 msgid ""
 "This creates a :ref:`class_RigidBody2D` using "
 "the :ref:`class_PhysicsServer2D` API, and moves a :ref:`class_CanvasItem` "
 "when the body moves."
 msgstr ""
-"Це створює :ref:`RigidBody2D <class_RigidBody2D>` за допомогою "
-"API :ref:`PhysicsServer2D <class_PhysicsServer2D>` і "
-"переміщує :ref:`CanvasItem <class_CanvasItem>`, коли тіло рухається."
+"Це створює :ref:`class_RigidBody2D` за допомогою "
+":ref:`class_PhysicsServer2D` API та переміщує :ref:`class_CanvasItem`, коли "
+"тіло рухається."
 
 #: ../../docs/tutorials/performance/using_servers.rst:328
-#, fuzzy
 msgid ""
 "The 3D version should be very similar, as the 2D and 3D physics servers are "
 "identical (using :ref:`class_RigidBody3D` and :ref:`class_PhysicsServer3D` "
 "respectively)."
 msgstr ""
-"3D-версія має бути дуже схожою, оскільки сервери 2D і 3D фізики ідентичні (з "
-"використанням :ref:`RigidBody3D <class_RigidBody3D>` і :ref:`PhysicsServer3D "
-"<class_PhysicsServer3D>` відповідно)."
+"3D-версія має бути дуже схожою, оскільки 2D- та 3D-сервери фізики ідентичні "
+"(використовуючи :ref:`class_RigidBody3D` та :ref:`class_PhysicsServer3D` "
+"відповідно)."
 
 #: ../../docs/tutorials/performance/using_servers.rst:333
 msgid "Getting data from the servers"
 msgstr "Отримання даних із серверів"
 
 #: ../../docs/tutorials/performance/using_servers.rst:335
-#, fuzzy
 msgid ""
 "Try to **never** request any information "
 "from :ref:`class_RenderingServer`, :ref:`class_PhysicsServer2D`, "
@@ -115697,13 +115639,14 @@ msgid ""
 "severely decrease performance if you call them every frame (and it won't be "
 "obvious why)."
 msgstr ""
-"Намагайтеся **ніколи** не запитувати будь-яку інформацію від "
-"``RenderingServer``, ``PhysicsServer2D`` або ``PhysicsServer3D`` шляхом "
-"виклику функцій, якщо ви не знаєте, що робите. Ці сервери часто працюють "
-"асинхронно для продуктивності, і виклик будь-якої функції, яка повертає "
-"значення, зупинить їх і змусить їх обробляти все, що очікує, доки функція "
-"фактично не буде викликана. Це суттєво знизить продуктивність, якщо ви "
-"будете викликати їх кожен кадр (і це буде незрозуміло чому)."
+"Намагайтеся **ніколи** не запитувати будь-яку інформацію з "
+":ref:`class_RenderingServer`, :ref:`class_PhysicsServer2D` або "
+":ref:`class_PhysicsServer3D`, викликаючи функції, якщо ви не знаєте, що "
+"робите. Ці сервери часто працюють асинхронно для підвищення продуктивності, "
+"і виклик будь-якої функції, яка повертає значення, зупинить їх і змусить "
+"обробляти все, що очікує обробки, доки функція фактично не буде викликана. "
+"Це значно знизить продуктивність, якщо ви викликатимете їх кожного кадру (і "
+"не буде очевидно, чому)."
 
 #: ../../docs/tutorials/performance/using_servers.rst:343
 msgid ""
@@ -124496,15 +124439,15 @@ msgstr ""
 "запобігти «смугам»."
 
 #: ../../docs/tutorials/physics/interpolation/physics_interpolation_quick_start_guide.rst:13
-#, fuzzy
 msgid ""
 "Temporarily try setting :ref:`Project Settings > Physics > Common > Physics "
 "Ticks per Second<class_ProjectSettings_property_physics/common/"
 "physics_ticks_per_second>` to 10 to see the difference with and without "
 "interpolation."
 msgstr ""
-"Тимчасово спробуйте встановити :ref:`Project Settings > Physics > Common > "
-"Physics Tick per Second<class_ProjectSettings_property_physics/common/"
+"Тимчасово спробуйте встановити :ref:`Налаштування проекту > Фізика > "
+"Загальні > Кількість тактів фізики за "
+"секунду<class_ProjectSettings_property_physics/common/"
 "physics_ticks_per_second>` на 10, щоб побачити різницю з інтерполяцією та "
 "без неї."
 
@@ -125392,6 +125335,9 @@ msgid ""
 "Visible Collision Shapes` option **will** take physics interpolation into "
 "account."
 msgstr ""
+"У 2D положення видимих форм зіткнень, що відображається опцією "
+":menu:`Debug > Visible Collision Shapes`, **буде** враховувати інтерполяцію "
+"фізики."
 
 #: ../../docs/tutorials/physics/interpolation/using_physics_interpolation.rst:164
 msgid ""
@@ -125401,6 +125347,11 @@ msgid ""
 "object's visual representation when the object is moving. This is not a bug, "
 "but a consequence of how physics interpolation is implemented in 3D."
 msgstr ""
+"Натомість, у 3D положення видимих фігур зіткнень **не** враховуватиме "
+"фізичну інтерполяцію. Це означає, що видимі фігури зіткнень можуть рухатися "
+"менш плавно та з'являтися трохи попереду візуального представлення об'єкта, "
+"коли він рухається. Це не помилка, а наслідок того, як реалізована фізична "
+"інтерполяція у 3D."
 
 #: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:4
 msgid "Advanced physics interpolation"
@@ -125909,6 +125860,13 @@ msgid ""
 "`pull request description <https://github.com/godotengine/godot/pull/"
 "104269>`__ for the rationale on this design decision."
 msgstr ""
+"Фізична інтерполяція у 2D реалізована на стороні сервера, що означає, що "
+"вона ефективна для фізичних тіл, створених за допомогою :ref:`low-level "
+"servers <doc_using_servers>`. Натомість, фізична інтерполяція у 3D "
+"реалізована на стороні сцени. Це означає, що вона не впливає на фізичні "
+"тіла, створені за допомогою серверів. Натомість їх потрібно інтерполювати "
+"вручну. Дивіться `опис запиту на зняття <https://github.com/godotengine/"
+"godot/pull/104269>`__ для обґрунтування цього дизайнерського рішення."
 
 #: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:4
 msgid "Troubleshooting physics issues"
@@ -127753,9 +127711,8 @@ msgstr ""
 "дізнатися, як це зробити."
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:388
-#, fuzzy
 msgid "Supported data types"
-msgstr "Підтримувані формати"
+msgstr "Підтримувані типи даних"
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:390
 msgid ""
@@ -127766,6 +127723,12 @@ msgid ""
 "javaclasswrapper_and_androidruntimeplugin.html#javaclasswrapper-godot-"
 "singleton>`_ to access it."
 msgstr ""
+"Підтримуються всі типи даних. Поширені типи зіставляються з їхніми "
+"еквівалентами Godot (наприклад, ``String[]`` зіставляється з "
+"``PackedStringArray()``), але для інших типів можна використовувати "
+"`JavaClassWrapper <https://docs.godotengine.org/en/stable/tutorials/platform/"
+"android/javaclasswrapper_and_androidruntimeplugin.html#javaclasswrapper-"
+"godot-singleton>`_ для доступу до нього."
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:394
 msgid "Godot crashes upon load"
@@ -127776,6 +127739,8 @@ msgid ""
 "Check `adb logcat <https://developer.android.com/tools/logcat>`_ for "
 "possible problems."
 msgstr ""
+"Перевірте `adb logcat <https://developer.android.com/tools/logcat>`_ на "
+"наявність можливих проблем."
 
 #: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:4
 msgid "Android in-app purchases"
@@ -130438,8 +130403,8 @@ msgid ""
 ":ref:`Show Image <class_ProjectSettings_property_application/boot_splash/"
 "show_image>`: ``show-image--true``, ``show-image--false``"
 msgstr ""
-":ref:`Show Image <class_ProjectSettings_property_application/boot_splash/"
-"show_image>`: ``show-image--true``, ``show-image--false``"
+":ref:`Показати зображення <class_ProjectSettings_property_application/"
+"boot_splash/show_image>`: ``show-image--true``, ``show-image--false``"
 
 #: ../../docs/tutorials/platform/web/customizing_html5_shell.rst:93
 msgid ""
@@ -130455,8 +130420,8 @@ msgid ""
 ":ref:`Use Filter <class_ProjectSettings_property_application/boot_splash/"
 "use_filter>`: ``use-filter--true``, ``use-filter--false``"
 msgstr ""
-":ref:`Use Filter <class_ProjectSettings_property_application/boot_splash/"
-"use_filter>`: ``use-filter--true``, ``use-filter--false``"
+":ref:`Використати фільтр <class_ProjectSettings_property_application/"
+"boot_splash/use_filter>`: ``use-filter--true``, ``use-filter--false``"
 
 #: ../../docs/tutorials/platform/web/customizing_html5_shell.rst:98
 msgid ""
@@ -135599,26 +135564,23 @@ msgstr ""
 "Зберігайте значення режиму розтягування за замовчуванням, ``вимкнено``."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:492
-#, fuzzy
 msgid ""
 "Keep the stretch aspect to its default value, ``keep`` (its value won't be "
 "used since the stretch mode is ``disabled``)."
 msgstr ""
-"Зберігайте для аспекту розтягування значення за замовчуванням, ``ignore`` "
-"(його значення не використовуватиметься, оскільки режим розтягування "
-"``вимкнено``)."
+"Збережіть значення аспекту розтягування за замовчуванням, ``keep`` (його "
+"значення не використовуватиметься, оскільки режим розтягування ``вимкнено``)."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:494
-#, fuzzy
 msgid ""
 "You can define a minimum window size by setting ``get_window().min_size`` in "
 "a script's ``_ready()`` function. This prevents the user from resizing the "
 "application below a certain size, which could break the UI layout."
 msgstr ""
-"Ви можете визначити мінімальний розмір вікна, викликавши "
-"``get_window().set_min_size()`` у функції ``_ready()`` сценарію. Це не "
-"дозволяє користувачеві змінювати розмір програми нижче певного розміру, що "
-"може порушити макет інтерфейсу користувача."
+"Ви можете визначити мінімальний розмір вікна, встановивши ``get_window()"
+".min_size`` у функції ``_ready()`` скрипта. Це запобігає зміні користувачем "
+"розміру програми нижче певного значення, що може порушити макет інтерфейсу "
+"користувача."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:497
 msgid ""
@@ -144473,7 +144435,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:118
 msgid ":ref:`Built-in types <doc_gdscript_builtin_types>`."
-msgstr ":ref:`Built-in types <doc_gdscript_builtin_types>`."
+msgstr ":ref:`Вбудовані типи <doc_gdscript_builtin_types>`."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:119
 msgid "Native classes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)."
@@ -144481,11 +144443,11 @@ msgstr "Нативні класи (``Object``, ``Node``, ``Area2D``, ``Camera2D`
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:120
 msgid ":ref:`Global classes <doc_gdscript_basics_class_name>`."
-msgstr ":ref:`Global classes <doc_gdscript_basics_class_name>`."
+msgstr ":ref:`Глобальні класи <doc_gdscript_basics_class_name>`."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:121
 msgid ":ref:`Inner classes <doc_gdscript_basics_inner_classes>`."
-msgstr ":ref:`Inner classes <doc_gdscript_basics_inner_classes>`."
+msgstr ":ref:`Внутрішні класи <doc_gdscript_basics_inner_classes>`."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:122
 msgid ""
@@ -144516,13 +144478,13 @@ msgstr ""
 "константу:"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:135
-#, fuzzy
 msgid ""
 "The second method is to use the ``class_name`` keyword when you create the "
 "script. For the example above, your ``rifle.gd`` would look like this:"
 msgstr ""
 "Другий метод полягає у використанні ключового слова ``class_name`` під час "
-"створення. Для наведеного вище прикладу ваш ``rifle.gd`` виглядатиме так:"
+"створення скрипта. Для наведеного вище прикладу ваш ``rifle.gd`` виглядатиме "
+"так:"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:143
 msgid ""
@@ -154428,23 +154390,21 @@ msgstr ""
 "порожнього проекту Godot, у якому ми розмістимо кілька файлів."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:106
-#, fuzzy
 msgid ""
 "Open Godot and create a new project. For this example, we will place it in a "
 "folder called ``project`` inside our GDExtension's folder structure."
 msgstr ""
-"Відкрийте Godot і створіть новий проект. Для цього прикладу ми розмістимо "
-"його в папці під назвою ``demo`` у структурі папок нашого GDExtension."
+"Відкрийте Godot та створіть новий проєкт. У цьому прикладі ми розмістимо "
+"його в папці під назвою ``project`` всередині структури папок нашого "
+"GDExtension."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:109
-#, fuzzy
 msgid ""
 "In our project, we'll create a scene containing a Node called \"Main\" and "
 "we'll save it as ``main.tscn``. We'll come back to that later."
 msgstr ""
-"У нашому демонстраційному проекті ми створимо сцену, що містить вузол під "
-"назвою «Main» і збережемо його як ``main.tscn``. Ми повернемося до цього "
-"пізніше."
+"У нашому проєкті ми створимо сцену, що містить вузол під назвою \"Main\", і "
+"збережемо її як ``main.tscn``. Ми повернемося до цього пізніше."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:112
 msgid ""
@@ -154456,13 +154416,12 @@ msgstr ""
 "вихідні файли."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:115
-#, fuzzy
 msgid ""
 "You should now have ``project``, ``godot-cpp``, and ``src`` directories in "
 "your GDExtension module."
 msgstr ""
-"Тепер у вашому модулі GDExtension повинні бути каталоги ``demo``, ``godot-"
-"cpp`` і ``src``."
+"Тепер у вашому модулі GDExtension мають бути каталоги ``project``, ``godot-"
+"cpp`` та ``src``."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:118
 msgid "Your folder structure should now look like this:"
@@ -154660,19 +154619,18 @@ msgstr ""
 "4 .x документація."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:310
-#, fuzzy
 msgid ""
 "Once you've downloaded the ``SConstruct`` file, place it in your GDExtension "
 "folder structure alongside ``godot-cpp``, ``src``, and ``project``, then run:"
 msgstr ""
-"Завантаживши файл ``SConstruct``, розмістіть його в структурі папок "
-"GDExtension поряд з ``godot-cpp``, ``src`` і ``demo``, а потім запустіть:"
+"Після завантаження файлу ``SConstruct``, помістіть його в структуру папок "
+"GDExtension разом з ``godot-cpp``, ``src`` та ``project``, а потім виконайте "
+"команду:"
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:317
-#, fuzzy
 msgid ""
 "You should now be able to find the module in ``project/bin/<platform>``."
-msgstr "Тепер ви зможете знайти модуль у ``demo/bin/<platform>``."
+msgstr "Тепер ви маєте змогу знайти модуль у ``project/bin/<platform>``."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:321
 msgid ""
@@ -154689,13 +154647,12 @@ msgid "Using the GDExtension module"
 msgstr "Використання модуля GDExtension"
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:328
-#, fuzzy
 msgid ""
 "Before we jump back into Godot, we need to create one more file in ``project/"
 "bin/``."
 msgstr ""
-"Перш ніж повернутися до Godot, нам потрібно створити ще один файл у ``demo/"
-"bin/``."
+"Перш ніж ми повернемося до Godot, нам потрібно створити ще один файл у "
+"``project/bin/``."
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:331
 msgid ""
@@ -156209,7 +156166,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/other_languages.rst:8
 msgid ":ref:`GDScript (all versions)<doc_gdscript>`"
-msgstr ":ref:`GDScript (all versions)<doc_gdscript>`"
+msgstr ":ref:`GDScript (усі версії)<doc_gdscript>`"
 
 #: ../../docs/tutorials/scripting/other_languages.rst:9
 msgid ":ref:`C# (.NET version)<doc_c_sharp>`"
@@ -156217,7 +156174,7 @@ msgstr ":ref:`C# (.NET version)<doc_c_sharp>`"
 
 #: ../../docs/tutorials/scripting/other_languages.rst:10
 msgid ":ref:`C++ (via GDExtension) <doc_godot_cpp>`"
-msgstr ":ref:`C++ (via GDExtension) <doc_godot_cpp>`"
+msgstr ":ref:`C++ (через GDExtension) <doc_godot_cpp>`"
 
 #: ../../docs/tutorials/scripting/other_languages.rst:14
 msgid ""
@@ -157927,7 +157884,6 @@ msgid "A demo project"
 msgstr "Демонстраційний проект"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:639
-#, fuzzy
 msgid ""
 "Now that we can create and free our custom object, we should be able to try "
 "it out in an actual project. For this, you need to open Godot and create a "
@@ -157935,11 +157891,12 @@ msgid ""
 "folder isn't empty if you have compiled the extension before, you can safely "
 "ignore this warning this time."
 msgstr ""
-"Тепер, коли ми можемо створити та звільнити наш власний об’єкт, ми маємо "
-"можливість випробувати його в реальному проекті. Для цього вам потрібно "
-"відкрити Godot і створити новий проект у папці ``demo``. Керівник проекту "
-"може попередити вас, що папка не порожня, якщо ви скомпілювали розширення "
-"раніше, цього разу ви можете спокійно проігнорувати це попередження."
+"Тепер, коли ми можемо створити та звільнити наш власний об'єкт, ми повинні "
+"мати змогу випробувати його в реальному проекті. Для цього вам потрібно "
+"відкрити Godot та створити новий проект у папці ``project``. Керівник "
+"проекту може попередити вас, що папка не порожня, якщо ви вже компілювали "
+"розширення раніше, цього разу ви можете сміливо проігнорувати це "
+"попередження."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:645
 msgid ""
@@ -157954,15 +157911,14 @@ msgstr ""
 "розширення дуже просте."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:650
-#, fuzzy
 msgid ""
 "Then, create a file called ``gdexample.gdextension`` inside the ``project`` "
 "folder. This is a Godot resource that describes the extension, allowing the "
 "engine to properly load it. Put the following content in this file:"
 msgstr ""
-"Потім створіть файл під назвою ``gdexample.gdextension`` у папці ``demo``. "
-"Це ресурс Godot, який описує розширення, що дозволяє механізму правильно "
-"його завантажувати. Розмістіть у цьому файлі такий вміст:"
+"Потім створіть файл під назвою ``gdexample.gdextension`` у папці "
+"``project``. Це ресурс Godot, який описує розширення, дозволяючи рушію "
+"правильно його завантажити. Помістіть у цей файл наступний вміст:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:666
 msgid ""
@@ -158513,18 +158469,16 @@ msgstr ""
 "повторюваною. Це також спрощує додавання іншого методу в майбутньому."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:1311
-#, fuzzy
 msgid ""
 "If you compile the code and reopen the Godot project, nothing will be "
 "different at first, since we only added two new methods. To ensure those are "
 "registered properly, you can search for ``GDExample`` in the editor help and "
 "verify they are present in the documentation page."
 msgstr ""
-"Якщо ви скомпілюєте код і знову відкриєте демонстраційний проект, спочатку "
-"нічого не зміниться, оскільки ми додали лише два нові методи. Щоб "
-"переконатися, що вони зареєстровані належним чином, ви можете знайти "
-"``GDExample`` у довідці редактора та перевірити їх присутність на сторінці "
-"документації."
+"Якщо ви скомпілюєте код і знову відкриєте проєкт Godot, спочатку нічого не "
+"зміниться, оскільки ми додали лише два нових методи. Щоб переконатися, що "
+"вони зареєстровані правильно, ви можете знайти ``GDExample`` у довідці "
+"редактора та перевірити, чи вони присутні на сторінці документації."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:1320
 msgid "Custom properties"
@@ -158800,18 +158754,17 @@ msgstr ""
 "використовувалося раніше:"
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:1620
-#, fuzzy
 msgid ""
 "This is enough to bind the virtual method. If you build the extension and "
 "run the Godot project again, the ``_process()`` function will be called. You "
 "just won't be able to tell since the function itself does nothing visible. "
 "We will solve this now by making the custom node move following a pattern."
 msgstr ""
-"Цього достатньо для прив'язки віртуального методу. Якщо ви створите "
-"розширення та знову запустите демонстраційний проект, буде викликана функція "
-"``_process()``. Ви просто не зможете сказати, оскільки сама функція не "
-"робить нічого видимого. Зараз ми вирішимо цю проблему, змусивши настроюваний "
-"вузол рухатися за зразком."
+"Цього достатньо для прив'язки віртуального методу. Якщо ви зберете "
+"розширення та знову запустите проект Godot, буде викликана функція ``_process"
+"()``. Ви просто не зможете цього сказати, оскільки сама функція не робить "
+"нічого видимого. Ми вирішимо це зараз, змусивши користувацький вузол "
+"рухатися за певним шаблоном."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:1625
 msgid ""
@@ -159199,13 +159152,12 @@ msgstr ""
 "передаючи назву сигналу та нову позицію як аргументи."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:2117
-#, fuzzy
 msgid ""
 "Now we're done with our C GDExtension. Build it once more and reopen the "
 "Godot project in the editor."
 msgstr ""
-"Тепер ми закінчили з нашим C GDExtension. Знову створіть його та знову "
-"відкрийте демонстраційний проект у редакторі."
+"Тепер ми закінчили з нашим розширенням C GDExtension. Зберіть його ще раз і "
+"знову відкрийте проєкт Godot у редакторі."
 
 #: ../../docs/tutorials/scripting/gdextension/gdextension_c_example.rst:2120
 msgid ""
@@ -164384,7 +164336,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/resources.rst:22
 msgid ":ref:`Texture <class_Texture>`"
-msgstr ":ref:`Texture <class_Texture>`"
+msgstr ":ref:`Текстура <class_Texture>`"
 
 #: ../../docs/tutorials/scripting/resources.rst:23
 msgid ":ref:`Script <class_Script>`"
@@ -164396,7 +164348,7 @@ msgstr ":ref:`Mesh <class_Mesh>`"
 
 #: ../../docs/tutorials/scripting/resources.rst:25
 msgid ":ref:`Animation <class_Animation>`"
-msgstr ":ref:`Animation <class_Animation>`"
+msgstr ":ref:`Анімація <class_Animation>`"
 
 #: ../../docs/tutorials/scripting/resources.rst:26
 msgid ":ref:`AudioStream <class_AudioStream>`"
@@ -168539,23 +168491,23 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:1304
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr ":ref:`Spatial shaders <doc_spatial_shader>`"
+msgstr ":ref:`Просторові шейдери <doc_spatial_shader>`"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:1305
 msgid ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
-msgstr ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
+msgstr ":ref:`Шейдери об’єктів Canvas <doc_canvas_item_shader>`"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:1306
 msgid ":ref:`Particle shaders <doc_particle_shader>`"
-msgstr ":ref:`Particle shaders <doc_particle_shader>`"
+msgstr ":ref:`Шейдери частинок <doc_particle_shader>`"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:1307
 msgid ":ref:`Sky shaders <doc_sky_shader>`"
-msgstr ":ref:`Sky shaders <doc_sky_shader>`"
+msgstr ":ref:`Шейдери неба <doc_sky_shader>`"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:1308
 msgid ":ref:`Fog shaders <doc_fog_shader>`"
-msgstr ":ref:`Fog shaders <doc_fog_shader>`"
+msgstr ":ref:`Шейдери туману <doc_fog_shader>`"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:1313
 msgid ""
@@ -184071,12 +184023,11 @@ msgid "User interface (UI)"
 msgstr "Інтерфейс користувача (UI)"
 
 #: ../../docs/tutorials/ui/index.rst:8
-#, fuzzy
 msgid ""
 "In this section of the tutorial, we explain the basics of creating a "
 "graphical user interface (GUI) in Godot."
 msgstr ""
-"У цьому розділі підручника ми пояснюємо основи створення графічного "
+"У цьому розділі посібника ми пояснюємо основи створення графічного "
 "інтерфейсу користувача (GUI) у Godot."
 
 #: ../../docs/tutorials/ui/index.rst:12
@@ -184084,7 +184035,6 @@ msgid "UI building blocks"
 msgstr "Будівельні блоки інтерфейсу користувача"
 
 #: ../../docs/tutorials/ui/index.rst:14
-#, fuzzy
 msgid ""
 "Like everything else in Godot, the user interface is built using nodes, "
 "specifically :ref:`Control <class_Control>` nodes. There are many different "
@@ -184093,8 +184043,9 @@ msgid ""
 msgstr ""
 "Як і все інше в Godot, інтерфейс користувача побудовано за допомогою вузлів, "
 "зокрема вузлів :ref:`Control <class_Control>`. Існує багато різних типів "
-"елементів керування, які корисні для створення певних типів GUI. Для "
-"простоти ми можемо розділити їх на дві групи: контент і макет."
+"елементів керування, корисних для створення певних типів графічних "
+"інтерфейсів. Для спрощення ми можемо розділити їх на дві групи: контент та "
+"макет."
 
 #: ../../docs/tutorials/ui/index.rst:19
 msgid "Typical content controls include:"
@@ -184102,7 +184053,7 @@ msgstr "Типові елементи керування вмістом вклю
 
 #: ../../docs/tutorials/ui/index.rst:21
 msgid ":ref:`Buttons <class_Button>`"
-msgstr ":ref:`Buttons <class_Button>`"
+msgstr ":ref:`Кнопки <class_Button>`"
 
 #: ../../docs/tutorials/ui/index.rst:22
 msgid ":ref:`Labels <class_Label>`"
@@ -184170,13 +184121,12 @@ msgstr ""
 
 #: ../../docs/tutorials/ui/index.rst:72
 #: ../../docs/tutorials/ui/creating_applications.rst:4
-#, fuzzy
 msgid "Creating applications"
-msgstr "Створення значків"
+msgstr "Створення додатків"
 
 #: ../../docs/tutorials/ui/index.rst:74
 msgid "Godot can also be used to create applications (rather than games)."
-msgstr ""
+msgstr "Godot також можна використовувати для створення програм (а не ігор)."
 
 #: ../../docs/tutorials/ui/size_and_anchors.rst:5
 msgid "Size and anchors"
@@ -190789,14 +190739,13 @@ msgid "This will add a few new BBCode commands, which can be used like so:"
 msgstr "Це додасть кілька нових команд BBCode, які можна використовувати так:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:6
-#, fuzzy
 msgid ""
 "Godot features an extensive built-in UI system, and its small distribution "
 "size can make it a suitable alternative to frameworks like Electron or Qt."
 msgstr ""
-"Так! Godot має об'ємну вбудовану систему інтерфейсу користувача, і невеликий "
-"розмір, що робить його непоганою альтернативою для таких фреймворків, як "
-"Electron, чи Qt."
+"Godot має розгалужену вбудовану систему інтерфейсу користувача, а його "
+"невеликий розмір дистрибутива може зробити його придатною альтернативою "
+"таким фреймворкам, як Electron або Qt."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:9
 msgid ""
@@ -190804,6 +190753,9 @@ msgid ""
 "as well as instructions on performing common tasks to improve desktop "
 "integration."
 msgstr ""
+"На цій сторінці наведено рекомендації щодо створення неігрових програм за "
+"допомогою Godot, а також інструкції щодо виконання поширених завдань для "
+"покращення інтеграції з робочим столом."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:14
 msgid ""
@@ -190811,6 +190763,9 @@ msgid ""
 "applications with Godot is a byproduct of its feature set, and not its "
 "primary focus of development."
 msgstr ""
+"Godot — це, перш за все, ігровий рушій. Це означає, що створення додатків за "
+"допомогою Godot є побічним продуктом його набору функцій, а не основною "
+"метою розробки."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:20
 #: ../../docs/tutorials/ui/creating_applications.rst:667
@@ -190824,23 +190779,20 @@ msgstr ""
 "прикладів застосунків із відкритим кодом, зроблених за допомогою Godot."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:25
-#, fuzzy
 msgid "Performing common tasks"
-msgstr "Порівняння продуктивності"
+msgstr "Виконання поширених завдань"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:28
-#, fuzzy
 msgid "Spawning multiple windows"
-msgstr "Використання кількох потоків"
+msgstr "Створення кількох вікон"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:30
-#, fuzzy
 msgid ""
 "*This is only supported on Windows, macOS, and Linux (X11/XWayland only, not "
 "in native Wayland mode).*"
 msgstr ""
-"Завантаження системних шрифтів підтримується лише в Windows, macOS, Linux, "
-"Android та iOS."
+"*Це підтримується лише у Windows, macOS та Linux (лише X11/XWayland, не у "
+"рідному режимі Wayland).).*"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:33
 msgid ""
@@ -190848,6 +190800,9 @@ msgid ""
 "Windows can be moved, resized, minimized, and closed independently from the "
 "main application window."
 msgstr ""
+"Додаткові вікна можна створювати за допомогою вузла :ref:`class_Window`. "
+"Вікна можна переміщувати, змінювати їх розмір, мінімізувати та закривати "
+"незалежно від головного вікна програми."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:37
 msgid ""
@@ -190860,11 +190815,18 @@ msgid ""
 "the application in this case, such as a :ref:`tray icon "
 "<doc_creating_applications_tray_icon>`."
 msgstr ""
+"Однак, якщо ви закриєте головне вікно, всі інші вікна також будуть закриті, "
+"оскільки закриття головного вікна завершує процес. Ви можете уникнути цього, "
+"згорнувши головне вікно, встановивши його властивість :ref:`unfocusable "
+"<class_Window_property_unfocusable>` на ``true`` (щоб приховати його від "
+"панелі завдань та перемикача завдань), а потім створивши додаткові вузли "
+"Window одразу під час запуску. Не забудьте надати альтернативний спосіб "
+"виходу з програми в цьому випадку, наприклад :ref:`tray icon "
+"<doc_creating_applications_tray_icon>`."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:46
-#, fuzzy
 msgid "Constraining the window size"
-msgstr "Оптимізація розміру файлу"
+msgstr "Обмеження розміру вікна"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:48
 msgid ""
@@ -190872,6 +190834,9 @@ msgid ""
 "window size. For more specific use cases, it may also be desired to force a "
 "maximum window size."
 msgstr ""
+"Більшість програм можуть коректно відображати зображення лише з певного "
+"мінімального розміру вікна. Для більш специфічних випадків використання "
+"також може знадобитися встановити максимальний розмір вікна."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:52
 msgid ""
@@ -190881,24 +190846,28 @@ msgid ""
 "multiply these size limits according to the application's scale factor "
 "(see :ref:`doc_creating_applications_scaling_to_hidpi_displays` for details)."
 msgstr ""
+"Обмеження розміру можна встановити за допомогою властивостей :ref:`min_size "
+"<class_Window_property_min_size>` та :ref:`max_size "
+"<class_Window_property_max_size>` вузла Window. Не забудьте помножити ці "
+"обмеження розміру відповідно до коефіцієнта масштабування програми "
+"(докладніше див. :ref:`doc_creating_applications_scaling_to_hidpi_displays`)."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:59
 msgid ""
 "As a reminder, you can retrieve the root Window node to set properties on it "
 "using :ref:`get_window() <class_Node_method_get_window>` on any Node."
 msgstr ""
+"Нагадуємо, що ви можете отримати кореневий вузол Window, щоб встановити для "
+"нього властивості, використовуючи :ref:`get_window() "
+"<class_Node_method_get_window>` на будь-якому вузлі."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:63
-#, fuzzy
 msgid "Using native file dialogs"
-msgstr "Використання файлового браузера"
+msgstr "Використання рідних діалогових вікон файлів"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:65
-#, fuzzy
 msgid "*This is only supported on Windows, macOS, Linux, and Android.*"
-msgstr ""
-"Завантаження системних шрифтів підтримується лише в Windows, macOS, Linux, "
-"Android та iOS."
+msgstr "*Це підтримується лише у Windows, macOS, Linux та Android.*"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:67
 msgid ""
@@ -190908,6 +190877,12 @@ msgid ""
 "dialogs better integrate with the desktop environment and provide a more "
 "familiar experience."
 msgstr ""
+"За замовчуванням Godot використовує власну реалізацію "
+":ref:`class_FileDialog` для діалогових вікон файлів. Однак, ви можете "
+"використовувати нативні діалогові вікна файлів операційної системи. Зазвичай "
+"користувачі віддають перевагу цьому, оскільки нативні діалогові вікна файлів "
+"краще інтегруються з середовищем робочого столу та забезпечують більш "
+"звичний інтерфейс."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:72
 msgid ""
@@ -190916,16 +190891,20 @@ msgid ""
 "node. This must be done on each FileDialog node used in the project, as "
 "there is no project setting to control this behavior globally."
 msgstr ""
+"Ви можете ввімкнути нативні діалогові вікна файлів, увімкнувши властивість "
+":ref:`use_native_dialog <class_FileDialog_property_use_native_dialog>` для "
+"вузла FileDialog. Це необхідно зробити для кожного вузла FileDialog, що "
+"використовується в проекті, оскільки немає налаштувань проекту, які б "
+"контролювали цю поведінку глобально."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:78
 #: ../../docs/tutorials/ui/creating_applications.rst:82
-#, fuzzy
 msgid ""
 "Comparison between standard FileDialog (left) and native file dialog (right) "
 "on macOS"
 msgstr ""
-"Порівняння між відсутністю згладжування (ліворуч) і FSR2 у рідній роздільній "
-"здатності (праворуч):"
+"Порівняння стандартного FileDialog (ліворуч) та рідного діалогового вікна "
+"файлів (праворуч) на macOS"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:86
 msgid ""
@@ -190933,6 +190912,8 @@ msgid ""
 "<class_FileDialog_property_use_native_dialog>` for details on platform "
 "support."
 msgstr ""
+"Див. :ref:`опис властивості <class_FileDialog_property_use_native_dialog>` "
+"для отримання детальної інформації про підтримку платформи."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:89
 msgid ""
@@ -190942,18 +190923,19 @@ msgid ""
 "the :menu:`Game` screen, clicking the 3 vertical dots and "
 "unchecking :menu:`Embed Game on Next Play`."
 msgstr ""
+"Крім того, на macOS діалогові вікна нативних файлів не підтримуються, якщо в "
+"редакторі ввімкнено вбудовування ігор. Щоб перевірити цю функціональність "
+"під час запуску проєкту, переконайтеся, що ви вимикаєте вбудовування ігор, "
+"перейшовши на екран :menu:`Game`, натиснувши на 3 вертикальні крапки та "
+"знявши позначку :menu:`Embed Game on Next Play`."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:97
-#, fuzzy
 msgid "Creating an icon in the system tray"
-msgstr "Створення фізичного скелета в редакторі"
+msgstr "Створення значка в системному треї"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:99
-#, fuzzy
 msgid "*This is only supported on Windows and macOS.*"
-msgstr ""
-"Завантаження системних шрифтів підтримується лише в Windows, macOS, Linux, "
-"Android та iOS."
+msgstr "*Це підтримується лише у Windows та macOS.*"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:101
 msgid ""
@@ -190962,6 +190944,11 @@ msgid ""
 "a tooltip, this node can have a :ref:`class_PopupMenu` node assigned, so "
 "that a dropdown can be shown when clicking the icon."
 msgstr ""
+"Ви можете створити одну або декілька значків у системному треї (також "
+"відомому як область сповіщень) за допомогою вузла "
+":ref:`class_StatusIndicator`. Окрім підказки, цьому вузлу може бути "
+"призначено вузол :ref:`class_PopupMenu`, щоб при натисканні на значок "
+"відображався випадаючий список."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:106
 msgid ""
@@ -190970,6 +190957,11 @@ msgid ""
 "is clicked. Use this to perform an action without making a dropdown show up, "
 "or perform different actions depending on which mouse button was pressed."
 msgstr ""
+"StatusIndicator також має сигнал :ref:`pressed "
+"<class_StatusIndicator_signal_pressed>`, який випромінюється при натисканні "
+"на значок. Використовуйте його для виконання дії без відображення "
+"випадаючого списку або для виконання різних дій залежно від того, яка кнопка "
+"миші була натиснута."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:111
 msgid ""
@@ -190979,6 +190971,11 @@ msgid ""
 "instead. To do so, attach this script to an :ref:`Autoload "
 "<doc_singletons_autoload>` *scene* with a StatusIndicator as the root node:"
 msgstr ""
+"Після створення іконки в треї ви також можете реалізувати поведінку "
+"\"згортання при закритті\". Це означає, що коли користувач намагається "
+"закрити програму за допомогою кнопки X віконного менеджера, вона "
+"згортатиметься в трей. Для цього приєднайте цей скрипт до *сцени* "
+":ref:`Autoload <doc_singletons_autoload>` з кореневим вузлом StatusIndicator:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:158
 msgid ""
@@ -190986,23 +190983,27 @@ msgid ""
 "when the user tries to close the application. This is important to handle "
 "when the user has unsaved changes to avoid data loss."
 msgstr ""
+"Див. :ref:`doc_handling_quit_requests` для отримання детальної інформації "
+"про зміну поведінки, коли користувач намагається закрити програму. Це "
+"важливо врахувати, коли у користувача є незбережені зміни, щоб уникнути "
+"втрати даних."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:164
 msgid ""
 "When multiple StatusIndicator nodes are present, their order in the system "
 "tray is determined by the order in which they are added to the scene tree."
 msgstr ""
+"Коли присутні кілька вузлів StatusIndicator, їхній порядок у системному треї "
+"визначається порядком, у якому вони додані до дерева сцен."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:169
-#, fuzzy
 msgid "Using the global menu"
-msgstr "Користування модулем"
+msgstr "Використання глобального меню"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:171
 #: ../../docs/tutorials/ui/creating_applications.rst:232
-#, fuzzy
 msgid "*This is only supported on macOS.*"
-msgstr "ETC2 (не підтримується на macOS)."
+msgstr "*Це підтримується лише на macOS.*"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:173
 msgid ""
@@ -191010,6 +191011,9 @@ msgid ""
 "displaying a menu bar inside the application window. This is also referred "
 "to as a *native menu* in Godot."
 msgstr ""
+"У macOS програми можуть використовувати глобальний рядок меню системи "
+"замість відображення рядка меню всередині вікна програми. Це також "
+"називається *власним меню* у Godot."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:177
 #: ../../docs/tutorials/ui/creating_applications.rst:181
@@ -191017,6 +191021,8 @@ msgid ""
 "Comparison between standard MenuBar (left), MenuBar with native popups "
 "(middle), and native menu (right) on macOS"
 msgstr ""
+"Порівняння стандартного меню (ліворуч), меню з нативними спливаючими вікнами "
+"(посередині) та нативного меню (праворуч) на macOS"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:183
 msgid ""
@@ -191030,6 +191036,16 @@ msgid ""
 "display its menus inside the application window as usual, but native popups "
 "are still used when supported by the operating system."
 msgstr ""
+"Godot підтримує створення меню через вузол :ref:`class_MenuBar`, який "
+"відображає свої дочірні елементи :ref:`class_PopupMenu` як меню. Ви можете "
+"ввімкнути підтримку глобального меню для певного вузла MenuBar, увімкнувши "
+"його властивість :ref:`prefer_global_menu "
+"<class_MenuBar_property_prefer_global_menu>` в інспекторі. У macOS це "
+"призведе до того, що вузол MenuBar зникне і не займатиме місця, а його меню "
+"відображатимуться в глобальному рядку меню системи. Якщо цю властивість "
+"вимкнено, вузол MenuBar відображатиме свої меню у вікні програми, як завжди, "
+"але власні спливаючі вікна все одно використовуються, якщо це підтримується "
+"операційною системою."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:195
 msgid ""
@@ -191037,6 +191053,9 @@ msgid ""
 "and :menu:`Help` menus are always present on macOS. You should not add these "
 "to the global menu manually."
 msgstr ""
+"Меню програми (з назвою проекту, виділеною жирним шрифтом), а також меню "
+":menu:`Window` та :menu:`Help` завжди присутні в macOS. Не слід додавати їх "
+"до глобального меню вручну."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:199
 msgid ""
@@ -191048,11 +191067,18 @@ msgid ""
 "Standard menu items that are already present in those menus will be "
 "preserved:"
 msgstr ""
+"У Godot 4.6 та пізніших версіях ви можете додавати нові елементи в ці меню, "
+"змінюючи властивість :ref:`system_menu_id "
+"<class_PopupMenu_property_system_menu_id>` вузла PopupMenu. Ви можете "
+"вибрати між **Меню програми** (перше меню з назвою програми, виділеною "
+"жирним шрифтом), **Меню вікна**, **Меню довідки** та **Док** (відображається "
+"при клацанні правою кнопкою миші на значку в Доку). Стандартні елементи "
+"меню, які вже присутні в цих меню, будуть збережені:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:206
 #: ../../docs/tutorials/ui/creating_applications.rst:210
 msgid "Custom options added to the system Window menu on macOS"
-msgstr ""
+msgstr "Додано користувацькі параметри до системного меню Window у macOS"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:212
 msgid ""
@@ -191063,12 +191089,21 @@ msgid ""
 "the end of the menu bar, so that the first menu options stay in place when "
 "the additional menu bar is added or removed."
 msgstr ""
+"Проєкт може мати кілька вузлів MenuBar. Якщо для кількох вузлів MenuBar "
+"увімкнено властивість **Надавати перевагу глобальному меню**, пункти меню "
+"будуть додані за індексом, визначеним властивістю **Початок індексу**, коли "
+"вузол MenuBar додається до дерева сцени. Це дозволяє розміщувати контекстно-"
+"залежні меню в кінці рядка меню, щоб перші пункти меню залишалися на місці "
+"під час додавання або видалення додаткового рядка меню."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:219
 msgid ""
 "For more advanced use cases, you can also use the :ref:`class_NativeMenu` "
 "singleton directly without using the MenuBar node."
 msgstr ""
+"Для більш складних випадків використання ви також можете використовувати "
+"синглтон :ref:`class_NativeMenu` безпосередньо, без використання вузла "
+"MenuBar."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:224
 msgid ""
@@ -191077,11 +191112,15 @@ msgid ""
 "you disable game embedding by switching to the :menu:`Game` screen, clicking "
 "the 3 vertical dots and unchecking :menu:`Embed Game on Next Play`."
 msgstr ""
+"Глобальна інтеграція меню не підтримується, якщо в редакторі ввімкнено "
+"вбудовування ігор. Щоб перевірити цю функціональність під час запуску "
+"проєкту, переконайтеся, що ви вимикаєте вбудовування ігор, перейшовши на "
+"екран :menu:`Game`, натиснувши на 3 вертикальні крапки та знявши позначку "
+":menu:`Embed Game on Next Play`."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:230
-#, fuzzy
 msgid "Using client-side decorations"
-msgstr "Розгляд хостингу"
+msgstr "Використання декорацій на стороні клієнта"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:234
 msgid ""
@@ -191090,6 +191129,11 @@ msgid ""
 "window borders (server-side decorations). This allows for a more "
 "customizable appearance and better integration with the application's UI."
 msgstr ""
+"Багато сучасних програм використовують *клієнтські декорації* (CSD) замість "
+"того, щоб покладатися на менеджер вікон операційної системи для малювання "
+"рядка заголовка та меж вікна (серверні декорації). Це дозволяє створити "
+"більш настроюваний зовнішній вигляд та краще інтегруватися з інтерфейсом "
+"програми."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:239
 msgid ""
@@ -191098,6 +191142,10 @@ msgid ""
 "<class_ProjectSettings_property_display/window/size/extend_to_title>` "
 "project setting."
 msgstr ""
+"Наразі Godot підтримує лише клієнтське оформлення на macOS. Це можна "
+"зробити, увімкнувши параметр проекту :ref:`display/window/size/"
+"extend_to_title <class_ProjectSettings_property_display/window/size/"
+"extend_to_title>`."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:244
 #: ../../docs/tutorials/ui/creating_applications.rst:248
@@ -191105,6 +191153,8 @@ msgid ""
 "Comparison between standard window decorations (top) and client-side "
 "decorations (bottom) on macOS"
 msgstr ""
+"Порівняння стандартних декорацій вікон (зверху) та декорацій на стороні "
+"клієнта (знизу) на macOS"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:250
 msgid ""
@@ -191114,6 +191164,11 @@ msgid ""
 "margin at the top for the buttons to display comfortably, while also "
 "displaying the window title using a Label node or similar."
 msgstr ""
+"Після ввімкнення декорування на стороні клієнта рамка вікна більше не "
+"відображатиметься, а кнопки згортання/розгортання/закриття відображатимуться "
+"як накладання в програмі. Вам потрібно переконатися, що програма забезпечує "
+"достатній відступ зверху для зручного відображення кнопок, а також "
+"відображає заголовок вікна за допомогою вузла Label або подібного."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:256
 msgid ""
@@ -191123,6 +191178,12 @@ msgid ""
 "of :ref:`Window.extend_to_title <class_Window_property_extend_to_title>` "
 "(which is what the project setting changes):"
 msgstr ""
+"Щоб умовно адаптувати ваш інтерфейс користувача відповідно до того, чи "
+"ввімкнено декорації на стороні клієнта, використовуйте "
+":ref:`DisplayServer.has_feature <class_DisplayServer_method_has_feature>`, а "
+"також перевірте поточне значення :ref:`Window.extend_to_title "
+"<class_Window_property_extend_to_title>` (саме це змінюється в налаштуваннях "
+"проекту):"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:274
 msgid ""
@@ -191137,11 +191198,21 @@ msgid ""
 "position of the close/minimize/maximize buttons (usually to vertically "
 "center them)."
 msgstr ""
+"Щоб правильно розташувати заголовок вікна, спробуйте використати "
+":ref:`DisplayServer.window_get_safe_title_margins() "
+"<class_DisplayServer_method_window_get_safe_title_margins>`, який повертає "
+"Vector3, де ``x`` – ліве поле, ``y`` – праве поле (збільшиться, коли система "
+"використовуватиме набір тексту справа наліво), а ``z`` – висота. Крім того, "
+"ви можете викликати :ref:`DisplayServer.window_set_window_buttons_offset() "
+"<class_DisplayServer_method_window_set_window_buttons_offset>`, щоб "
+"налаштувати положення кнопок закриття/згортання/розгортання (зазвичай для їх "
+"вертикального центрування)."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:283
 #: ../../docs/tutorials/ui/creating_applications.rst:287
 msgid "Safe title margins when using client-side decorations on macOS"
 msgstr ""
+"Безпечні поля заголовка під час використання клієнтських декорацій у macOS"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:291
 msgid ""
@@ -191151,33 +191222,43 @@ msgid ""
 "screen, clicking the 3 vertical dots and unchecking :menu:`Embed Game on "
 "Next Play`."
 msgstr ""
+"У macOS клієнтські декорації не підтримуються, якщо в редакторі ввімкнено "
+"вбудовування ігор. Щоб перевірити цю функціональність під час запуску "
+"проєкту, переконайтеся, що ви вимикаєте вбудовування ігор, перейшовши на "
+"екран :menu:`Game`, натиснувши на 3 вертикальні крапки та знявши позначку "
+":menu:`Embed Game on Next Play`."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:297
-#, fuzzy
 msgid "Sending desktop notifications"
-msgstr "Обробка сповіщення"
+msgstr "Надсилання сповіщень на робочому столі"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:299
 msgid ""
 "Godot currently does not have native support for sending desktop "
 "notifications."
 msgstr ""
+"Godot наразі не має вбудованої підтримки для надсилання сповіщень на робочий "
+"стіл."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:301
 msgid ""
 "However, on macOS and Linux, you can use the ``osascript`` and ``notify-"
 "send`` command line utilities respectively to send desktop notifications:"
 msgstr ""
+"Однак, у macOS та Linux ви можете використовувати утиліти командного рядка "
+"``osascript`` та ``notify-send`` відповідно для надсилання сповіщень на "
+"робочий стіл:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:328
 msgid ""
 "Unfortunately, there is no equivalent that's available out of the box on "
 "Windows."
 msgstr ""
+"На жаль, у Windows немає еквівалента, який би був готовий до використання."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:332
 msgid "Remembering window position and size across sessions"
-msgstr ""
+msgstr "Запам'ятовування положення та розміру вікна протягом сеансів"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:334
 msgid ""
@@ -191186,6 +191267,10 @@ msgid ""
 "example that supports multi-monitor setups would be an :ref:`Autoload "
 "<doc_singletons_autoload>` with this script:"
 msgstr ""
+"Godot не має вбудованої підтримки запам'ятовування положення та розміру "
+"вікна протягом сеансів, але це можна реалізувати вручну за допомогою "
+"скрипта. Базовим прикладом, який підтримує налаштування з кількома "
+"моніторами, буде :ref:`Autoload <doc_singletons_autoload>` з таким скриптом:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:388
 msgid ""
@@ -191193,10 +191278,13 @@ msgid ""
 "that spawn multiple windows, you will need to save and load each window "
 "position's and size separately."
 msgstr ""
+"У наведеному вище прикладі відстежується лише положення головного вікна. У "
+"програмах, які створюють кілька вікон, вам потрібно буде окремо зберігати та "
+"завантажувати положення та розмір кожного вікна."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:393
 msgid "Hiding the window during the splash screen"
-msgstr ""
+msgstr "Приховування вікна під час заставки"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:395
 msgid ""
@@ -191204,6 +191292,9 @@ msgid ""
 "a custom splash screen with a progress bar instead (or even no splash screen "
 "at all, if the application boots quickly)."
 msgstr ""
+"Для деяких програм може бути кращим приховати заставку, щоб натомість "
+"відобразити власну заставку з індикатором виконання (або навіть взагалі без "
+"заставки, якщо програма завантажується швидко)."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:399
 msgid ""
@@ -191212,11 +191303,14 @@ msgid ""
 "project settings, then resizing the window and disabling transparency once "
 "the main scene is loaded."
 msgstr ""
+"У Godot бракує вбудованої підтримки для приховування вікна під час заставки, "
+"але ви можете досягти цього, використовуючи дуже маленьке прозоре вікно в "
+"налаштуваннях проекту, а потім змінюючи розмір вікна та вимикаючи прозорість "
+"після завантаження головної сцени."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:404
-#, fuzzy
 msgid "To do so, project settings should be configured as follows:"
-msgstr "Ці налаштування використовуються таким чином:"
+msgstr "Для цього параметри проекту слід налаштувати наступним чином:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:406
 msgid ""
@@ -191224,28 +191318,35 @@ msgid ""
 "<class_ProjectSettings_property_application/boot_splash/bg_color>` set to a "
 "transparent black color (RGBA: 0, 0, 0, 0)."
 msgstr ""
+":ref:`application/boot_splash/bg_color "
+"<class_ProjectSettings_property_application/boot_splash/bg_color>` "
+"встановити прозорий чорний колір (RGBA: 0, 0, 0, 0)."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:408
-#, fuzzy
 msgid ""
 ":ref:`application/boot_splash/show_image "
 "<class_ProjectSettings_property_application/boot_splash/show_image>` "
 "disabled."
 msgstr ""
-":ref:`Show Image <class_ProjectSettings_property_application/boot_splash/"
-"show_image>`: ``show-image--true``, ``show-image--false``"
+":ref:`application/boot_splash/show_image "
+"<class_ProjectSettings_property_application/boot_splash/show_image>` "
+"вимкнено."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:410
 msgid ""
 ":ref:`display/window/size/borderless <class_ProjectSettings_property_display/"
 "window/size/borderless>` enabled."
 msgstr ""
+":ref:`display/window/size/borderless <class_ProjectSettings_property_display/"
+"window/size/borderless>` увімкнено."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:412
 msgid ""
 ":ref:`display/window/size/no_focus <class_ProjectSettings_property_display/"
 "window/size/no_focus>` enabled."
 msgstr ""
+":ref:`display/window/size/no_focus <class_ProjectSettings_property_display/"
+"window/size/no_focus>` увімкнено."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:414
 msgid ""
@@ -191253,6 +191354,9 @@ msgid ""
 "<class_ProjectSettings_property_display/window/size/window_width_override>` "
 "set to ``1``."
 msgstr ""
+":ref:`display/window/size/window_width_override "
+"<class_ProjectSettings_property_display/window/size/window_width_override>` "
+"встановлено на ``1``."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:416
 msgid ""
@@ -191260,6 +191364,9 @@ msgid ""
 "<class_ProjectSettings_property_display/window/size/window_height_override>` "
 "set to ``1``."
 msgstr ""
+":ref:`display/window/size/window_height_override "
+"<class_ProjectSettings_property_display/window/size/window_height_override>` "
+"встановлено на ``1``."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:418
 msgid ""
@@ -191267,12 +191374,17 @@ msgid ""
 "<class_ProjectSettings_property_display/window/per_pixel_transparency/"
 "allowed>` enabled."
 msgstr ""
+":ref:`display/window/per_pixel_transparency/allowed "
+"<class_ProjectSettings_property_display/window/per_pixel_transparency/"
+"allowed>` увімкнено."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:420
 msgid ""
 ":ref:`display/window/size/transparent "
 "<class_ProjectSettings_property_display/window/size/transparent>` enabled."
 msgstr ""
+":ref:`display/window/size/transparent "
+"<class_ProjectSettings_property_display/window/size/transparent>` увімкнено."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:422
 msgid ""
@@ -191280,21 +191392,22 @@ msgid ""
 "<class_ProjectSettings_property_rendering/viewport/transparent_background>` "
 "enabled."
 msgstr ""
+":ref:`rendering/viewport/transparent_background "
+"<class_ProjectSettings_property_rendering/viewport/transparent_background>` "
+"увімкнено."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:425
-#, fuzzy
 msgid ""
 "This script can be used as an :ref:`Autoload <doc_singletons_autoload>` to "
 "restore original settings once the splash screen is done displaying:"
 msgstr ""
-"Цей локальний сервер сигналізації має використовуватися, як :ref:`singleton "
-"<doc_singletons_autoload>` для з’єднання двох однорангових вузлів в одній "
-"сцені."
+"Цей скрипт можна використовувати як :ref:`Autoload <doc_singletons_autoload>"
+"` для відновлення початкових налаштувань після завершення відображення "
+"заставного екрана:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:445
-#, fuzzy
 msgid "Displaying the application as an overlay"
-msgstr "Відображення документації при наведенні курсора"
+msgstr "Відображення програми як оверлея"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:447
 msgid ""
@@ -191302,17 +191415,21 @@ msgid ""
 "top of other windows. This can be useful for applications like widgets or "
 "system monitors."
 msgstr ""
+"Вікно програми можна відображати як накладання, яке залишається поверх інших "
+"вікон. Це може бути корисним для таких програм, як віджети або системні "
+"монітори."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:451
-#, fuzzy
 msgid "To do so, enable **all** the following project settings:"
-msgstr "Наприклад, з такими налаштуваннями проекту:"
+msgstr "Для цього увімкніть **всі** наступні налаштування проекту:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:453
 msgid ""
 ":ref:`display/window/size/borderless <class_ProjectSettings_property_display/"
 "window/size/borderless>`"
 msgstr ""
+":ref:`display/window/size/borderless <class_ProjectSettings_property_display/"
+"window/size/borderless>`"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:454
 msgid ""
@@ -191320,30 +191437,41 @@ msgid ""
 "<class_ProjectSettings_property_display/window/per_pixel_transparency/"
 "allowed>`"
 msgstr ""
+":ref:`display/window/per_pixel_transparency/allowed "
+"<class_ProjectSettings_property_display/window/per_pixel_transparency/"
+"allowed>`"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:455
 msgid ""
 ":ref:`display/window/size/transparent "
 "<class_ProjectSettings_property_display/window/size/transparent>`"
 msgstr ""
+":ref:`display/window/size/transparent "
+"<class_ProjectSettings_property_display/window/size/transparent>`"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:456
 msgid ""
 ":ref:`rendering/viewport/transparent_background "
 "<class_ProjectSettings_property_rendering/viewport/transparent_background>`"
 msgstr ""
+":ref:`rendering/viewport/transparent_background "
+"<class_ProjectSettings_property_rendering/viewport/transparent_background>`"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:457
 msgid ""
 ":ref:`display/window/size/always_on_top "
 "<class_ProjectSettings_property_display/window/size/always_on_top>`"
 msgstr ""
+":ref:`display/window/size/always_on_top "
+"<class_ProjectSettings_property_display/window/size/always_on_top>`"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:458
 msgid ""
 ":ref:`display/window/size/no_focus <class_ProjectSettings_property_display/"
 "window/size/no_focus>`"
 msgstr ""
+":ref:`display/window/size/no_focus <class_ProjectSettings_property_display/"
+"window/size/no_focus>`"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:460
 msgid ""
@@ -191351,12 +191479,18 @@ msgid ""
 "the taskbar and task switcher. Mouse input can still be received by the "
 "overlay (see below)."
 msgstr ""
+"Це запобігає отриманню накладанням вводу з клавіатури, а також приховує його "
+"від панелі завдань і перемикача завдань. Накладання все ще може отримувати "
+"введення з миші (див. нижче)."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:464
 msgid ""
 "Remember to poosition and resize the window using scripts, as a borderless "
 "window can generally not be moved by the user."
 msgstr ""
+"Пам’ятайте про те, що потрібно розташувати та змінити розмір вікна за "
+"допомогою скриптів, оскільки вікно без рамок зазвичай не може бути "
+"переміщене користувачем."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:467
 msgid ""
@@ -191367,6 +191501,12 @@ msgid ""
 "<class_Window_property_mouse_passthrough_polygon>`, so that certain areas "
 "can still intercept mouse input on the overlay."
 msgstr ""
+"Щоб дозволити введення миші проходити до фонової програми, встановіть "
+"властивість :ref:`mouse_passthrough <class_Window_property_mouse_passthrough>"
+"` у значення ``true`` для вікна, яке малюється як накладання. Ви також "
+"можете визначити полігон у :ref:`mouse_passthrough_polygon "
+"<class_Window_property_mouse_passthrough_polygon>`, щоб певні області все ще "
+"могли перехоплювати введення миші на накладенні."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:474
 msgid ""
@@ -191376,6 +191516,11 @@ msgid ""
 "is implemented on Windows and macOS only, and it is on a best-effort basis, "
 "so it should not be used as an absolute security measure or DRM."
 msgstr ""
+"Крім того, ви можете встановити властивість :ref:`exclude_from_capture "
+"<class_Window_property_exclude_from_capture>` у значення ``true``, щоб "
+"запобігти появі накладання на скріншотах або записах. Ця підказка "
+"реалізована лише у Windows та macOS і діє на основі найкращих зусиль, тому "
+"її не слід використовувати як абсолютний захід безпеки або DRM."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:482
 msgid ""
@@ -191384,6 +191529,11 @@ msgid ""
 "you disable game embedding by switching to the :menu:`Game` screen, clicking "
 "the 3 vertical dots and unchecking :menu:`Embed Game on Next Play`."
 msgstr ""
+"Відображення як накладання не підтримується, якщо в редакторі ввімкнено "
+"вбудовування ігор. Щоб перевірити цю функціональність під час запуску "
+"проєкту, переконайтеся, що ви вимикаєте вбудовування ігор, перейшовши на "
+"екран :menu:`Game`, натиснувши на 3 вертикальні крапки та знявши позначку "
+":menu:`Embed Game on Next Play`."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:488
 msgid ""
@@ -191391,6 +191541,10 @@ msgid ""
 "application if the application in question uses exclusive fullscreen. "
 "Borderless fullscreen must be used instead for overlays to be visible."
 msgstr ""
+"Крім того, пам’ятайте, що накладання не можна відображати поверх іншої "
+"програми, якщо відповідна програма використовує ексклюзивний повноекранний "
+"режим. Щоб накладання були видимими, потрібно використовувати повноекранний "
+"режим без рамок."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:493
 msgid ""
@@ -191398,16 +191552,22 @@ msgid ""
 "76167>`__ with transparent window display on Windows with hybrid GPU setups "
 "(such as NVIDIA Optimus). Switching renderers may help resolve the issue."
 msgstr ""
+"Також існують `відомі проблеми <https://github.com/godotengine/godot/issues/"
+"76167>`__ з прозорим відображенням вікон у Windows з гібридними "
+"налаштуваннями графічного процесора (наприклад, NVIDIA Optimus). Перемикання "
+"рендерерів може допомогти вирішити цю проблему."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:498
 msgid ""
 "On Linux with X11, transparency will not work if the user has disabled "
 "compositing in the window manager settings."
 msgstr ""
+"У Linux з X11 прозорість не працюватиме, якщо користувач вимкнув композитинг "
+"у налаштуваннях менеджера вікон."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:504
 msgid "Scaling to hiDPI displays"
-msgstr ""
+msgstr "Масштабування до дисплеїв hiDPI"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:506
 msgid ""
@@ -191416,6 +191576,11 @@ msgid ""
 "The scaling factor can also be provided as a manual adjustment for the user, "
 "so that the application remains comfortable to use."
 msgstr ""
+"Сучасні дисплеї дуже різняться за щільністю пікселів, а це означає, що часто "
+"потрібен різний коефіцієнт масштабування, щоб забезпечити читабельність "
+"елементів інтерфейсу користувача. Коефіцієнт масштабування також може бути "
+"налаштований користувачем вручну, щоб користування застосунком залишалося "
+"комфортним."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:512
 msgid ""
@@ -191424,6 +191589,10 @@ msgid ""
 "application section of the Multiple resolutions documentation "
 "<doc_multiple_resolutions_non_game_application>`."
 msgstr ""
+"Підтримка кількох роздільних здатностей Godot добре підходить для "
+"масштабування програм за умови правильного налаштування. Дотримуйтесь "
+"інструкцій у :ref:`non-game application section of the Multiple resolutions "
+"documentation <doc_multiple_resolutions_non_game_application>`."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:519
 msgid ""
@@ -191432,11 +191601,14 @@ msgid ""
 "Windows, you will need to provide a manual scaling option for the user to "
 "adjust the UI scale as needed."
 msgstr ""
+"Наразі Godot підтримує зчитування коефіцієнта масштабування екрана лише з "
+"налаштувань ОС на macOS, Android та Linux (лише Wayland). У Linux (X11) та "
+"Windows вам потрібно буде надати користувачеві опцію ручного масштабування, "
+"щоб він міг налаштувати масштаб інтерфейсу за потреби."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:525
-#, fuzzy
 msgid "Screen reader integration"
-msgstr "Лінійна інтерполяція"
+msgstr "Інтеграція зчитувача з екрана"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:527
 msgid ""
@@ -191445,6 +191617,10 @@ msgid ""
 "displays are another approach that also rely on accessibility information to "
 "function properly."
 msgstr ""
+"Програми зчитування з екрана дозволяють людям з вадами зору використовувати "
+"програму, зчитуючи елементи інтерфейсу користувача та надаючи елементи "
+"керування навігацією. Дисплеї Брайля – це ще один підхід, який також "
+"залежить від інформації про доступність для належного функціонування."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:532
 msgid ""
@@ -191456,12 +191632,21 @@ msgid ""
 "It can also be forcibly enabled, which is useful when using accessibility "
 "debugging tools that are not recognized as screen readers by Godot."
 msgstr ""
+"Godot автоматично вмикає підтримку зчитувачів з екрана, якщо виявлено, що "
+"зчитувач з екрана запущено. Це можна налаштувати в налаштуваннях проекту за "
+"допомогою :ref:`accessibility/general/accessibility_support "
+"<class_ProjectSettings_property_accessibility/general/accessibility_support>"
+"`, щоб вимкнути її в ситуаціях, коли вона небажана. Її також можна примусово "
+"ввімкнути, що корисно під час використання інструментів налагодження "
+"доступності, які Godot не розпізнає як зчитувачі з екрана."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:539
 msgid ""
 "Godot uses the `AccessKit <https://accesskit.dev/>`__ library for screen "
 "reader integration."
 msgstr ""
+"Godot використовує бібліотеку `AccessKit <https://accesskit.dev/>`__ для "
+"інтеграції зчитувачів з екрана."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:544
 msgid ""
@@ -191469,6 +191654,10 @@ msgid ""
 "play audio (rather than the Godot project), it will work even if the audio "
 "driver is set to ``Dummy`` in the project settings as described below."
 msgstr ""
+"Оскільки підтримка програми зчитування з екрана використовує саму програму "
+"зчитування з екрана для відтворення аудіо (а не проєкт Godot), вона "
+"працюватиме, навіть якщо аудіодрайвер встановлено на ``Dummy`` у "
+"налаштуваннях проєкту, як описано нижче."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:549
 msgid ""
@@ -191479,6 +191668,12 @@ msgid ""
 "features/?vision>`__ on macOS, and `Orca <https://help.gnome.org/orca/>`__ "
 "on Linux."
 msgstr ""
+"Наполегливо рекомендується протестувати вашу програму за допомогою "
+"популярних програм зчитування з екрана на цільових платформах, щоб "
+"забезпечити належний користувацький досвід для користувачів із вадами зору. "
+"Приклади включають `NVDA <https://www.nvaccess.org/download/>`__ у Windows, "
+"`VoiceOver <https://www.apple.com/accessibility/features/?vision>`__ у macOS "
+"та `Orca <https://help.gnome.org/orca/>`__ у Linux."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:556
 msgid ""
@@ -191490,28 +191685,38 @@ msgid ""
 "<class_Control_property_accessibility_description>` properties, and ensure "
 "the UI flows in a logical order when read by a screen reader."
 msgstr ""
+"Щоб підтримка програм зчитування з екрана досягла належного рівня зручності "
+"використання, потрібна значна робота. Вам потрібно визначити мітки "
+"доступності за допомогою властивостей :ref:`Control.accessibility_name "
+"<class_Control_property_accessibility_name>` та "
+":ref:`Control.accessibility_description "
+"<class_Control_property_accessibility_description>`, а також забезпечити "
+"логічне відображення інтерфейсу користувача під час читання програмою "
+"зчитування з екрана."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:564
 msgid ""
 "See also :ref:`doc_text_to_speech` for text-to-speech functionality that is "
 "separate from screen readers."
 msgstr ""
+"Див. також :ref:`doc_text_to_speech` щодо функції перетворення тексту в "
+"мовлення, окремої від програм зчитування з екрана."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:568
-#, fuzzy
 msgid "Recommended project settings"
-msgstr "Читання налаштувань проекту"
+msgstr "Рекомендовані налаштування проєкту"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:571
-#, fuzzy
 msgid "Desktop integration"
-msgstr "Векторна інтерполяція"
+msgstr "Інтеграція з робочим столом"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:573
 msgid ""
 "To allow the application to better integrate with the desktop environment, "
 "you can set these project settings as follows:"
 msgstr ""
+"Щоб програма краще інтегрувалася з робочим середовищем, ви можете встановити "
+"ці параметри проекту наступним чином:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:576
 msgid ""
@@ -191525,6 +191730,16 @@ msgid ""
 "idea to use normal case on Windows (e.g. ``Application Name``) and kebab-"
 "case (e.g. ``application-name``) on macOS and Linux."
 msgstr ""
+"Увімкніть :ref:`application/config/use_custom_user_dir "
+"<class_ProjectSettings_property_application/config/use_custom_user_dir>` та "
+"встановіть :ref:`application/config/custom_user_dir_name "
+"<class_ProjectSettings_property_application/config/custom_user_dir_name>` на "
+"відповідну назву для вашої програми. Це гарантує, що налаштування "
+"користувача та файли зберігатимуться у спеціальній папці, а не в :ref:`папці "
+"Godot за замовчуванням <doc_data_paths_accessing_persistent_user_data>`. За "
+"домовленістю, рекомендується використовувати звичайний регістр літер у "
+"Windows (наприклад, ``Application Name``) та кебабний регістр (наприклад, "
+"``application-name``) у macOS та Linux."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:585
 msgid ""
@@ -191536,6 +191751,14 @@ msgid ""
 "ICNS format). By default, Godot will automatically generate native icons "
 "based on the project icon, but this is not always optimal."
 msgstr ""
+"Налаштуйте нативні значки, які відповідають рекомендаціям щодо дизайну "
+"операційної системи, використовуючи :ref:`application/config/"
+"windows_native_icon <class_ProjectSettings_property_application/config/"
+"windows_native_icon>` (у форматі ICO) та :ref:`application/config/"
+"macos_native_icon <class_ProjectSettings_property_application/config/"
+"macos_native_icon>` (у форматі ICNS). За замовчуванням Godot автоматично "
+"генеруватиме нативні значки на основі значка проекту, але це не завжди "
+"оптимально."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:592
 msgid ""
@@ -191543,6 +191766,10 @@ msgid ""
 "icons for different resolutions. This can be used to create a special design "
 "at lower resolutions for better readability."
 msgstr ""
+"У Windows використання файлу ICO, створеного вручну, дозволяє "
+"використовувати різні значки для різних роздільних здатностей. Це можна "
+"використовувати для створення спеціального дизайну з нижчою роздільною "
+"здатністю для кращої читабельності."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:596
 msgid ""
@@ -191551,6 +191778,10 @@ msgid ""
 "platforms. Using a tailored native icon design ensures the application "
 "better fits in its desktop environment."
 msgstr ""
+"У macOS є `інструкції щодо значків програм <https://developer.apple.com/"
+"design/human-interface-guidelines/app-icons/>`__, які суттєво відрізняються "
+"від інших платформ. Використання індивідуального дизайну значків забезпечує "
+"кращу адаптацію програми до робочого середовища."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:601
 msgid ""
@@ -191559,12 +191790,18 @@ msgid ""
 "embed_subwindows>`, so that additional windows use the operating system "
 "theming and are seen as native operating system windows."
 msgstr ""
+"Вимкнути :ref:`display/window/subwindows/embed_subwindows "
+"<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>"
+"`, щоб додаткові вікна використовували тематику операційної системи та "
+"відображалися як вікна нативної операційної системи."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:609
 msgid ""
 "Here are some project settings you can use to reduce CPU, GPU, and memory "
 "utilization:"
 msgstr ""
+"Ось деякі налаштування проекту, які можна використовувати для зменшення "
+"використання процесора, графічного процесора та пам'яті:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:611
 msgid ""
@@ -191573,19 +191810,23 @@ msgid ""
 "requirements and generally launches faster, which makes it a better option "
 "for applications. Creating new windows is also faster with this renderer."
 msgstr ""
+"Використовуйте засіб рендерингу сумісності, якщо вам не потрібні функції, "
+"ексклюзивні для Forward+ або Mobile. Засіб рендерингу сумісності має нижчі "
+"вимоги до обладнання та загалом запускається швидше, що робить його кращим "
+"варіантом для програм. Створення нових вікон також відбувається швидше за "
+"допомогою цього засобу рендерингу."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:616
-#, fuzzy
 msgid ""
 "Enable :ref:`application/run/low_processor_mode "
 "<class_ProjectSettings_property_application/run/low_processor_mode>` to "
 "decrease CPU and GPU usage. This makes the project only render a frame if "
 "something on screen has changed."
 msgstr ""
-"При створенні не ігрового застосунку не забудьте увімкнути :ref:`low-"
-"processor mode <class_ProjectSettings_property_application/run/"
-"low_processor_mode>` в Параметрах Проєкту щоб зменшити використання CPU і "
-"GPU."
+"Увімкніть :ref:`application/run/low_processor_mode "
+"<class_ProjectSettings_property_application/run/low_processor_mode>`, щоб "
+"зменшити використання процесора та графічного процесора. Це призведе до "
+"того, що проєкт відтворюватиме кадр, лише якщо щось на екрані змінилося."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:620
 msgid ""
@@ -191602,6 +191843,19 @@ msgid ""
 "<class_ProjectSettings_property_debug/canvas_items/debug_redraw_color>` "
 "project settings."
 msgstr ""
+"Зверніть увагу, що в певних випадках проект має перемальовуватися "
+"безперервно (наприклад, якщо видно анімацію або шейдер, що використовує "
+"``TIME``). Це призведе до значного споживання енергії, якщо це робити "
+"протягом тривалого часу, що призводить до скорочення часу роботи від батареї "
+"та збільшення шуму вентилятора. Щоб усунути проблеми з перемальовуванням "
+"проекту безперервно, ви можете ввімкнути :menu:`Debug > Debug Canvas Item "
+"Redraws` у верхній частині редактора, а потім запустити проект. "
+"Перемальовані області будуть виділені червоним кольором на секунду. Колір та "
+"тривалість підсвічування можна налаштувати за допомогою налаштувань проекту "
+":ref:`debug/canvas_items/debug_redraw_time "
+"<class_ProjectSettings_property_debug/canvas_items/debug_redraw_time>` та "
+":ref:`debug/canvas_items/debug_redraw_color "
+"<class_ProjectSettings_property_debug/canvas_items/debug_redraw_color>`."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:632
 msgid ""
@@ -191614,6 +191868,15 @@ msgid ""
 "maximum of approximately 145 FPS. You can increase this value to further "
 "reduce CPU and GPU usage, at the cost of a less smooth experience."
 msgstr ""
+"Максимальна частота кадрів, з якою програма може відображати зображення, "
+"визначається параметром :ref:`application/run/low_processor_mode_sleep_usec "
+"<class_ProjectSettings_property_application/run/"
+"low_processor_mode_sleep_usec>`. Це значення виражається в мікросекундах на "
+"кадр, тому максимальний FPS можна отримати за формулою ``1000000.0 / "
+"sleep_usec``. За замовчуванням це значення встановлено на ``6900``, що "
+"відповідає максимуму приблизно 145 FPS. Ви можете збільшити це значення, щоб "
+"ще більше зменшити використання процесора та графічного процесора, але за "
+"рахунок менш плавної роботи."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:640
 msgid ""
@@ -191625,6 +191888,13 @@ msgid ""
 "applications, we want the screen to turn off to save power when the user is "
 "not actively using the application."
 msgstr ""
+"Вимкніть :ref:`display/window/energy_saving/keep_screen_on "
+"<class_ProjectSettings_property_display/window/energy_saving/keep_screen_on>"
+"`, щоб екран міг вимикатися відповідно до налаштувань живлення операційної "
+"системи, коли програма не працює. Така поведінка зазвичай небажана в грі "
+"(наприклад, під час перегляду кат-сцен), але в програмах ми хочемо, щоб "
+"екран вимикався для економії енергії, коли користувач активно не "
+"використовує програму."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:646
 msgid ""
@@ -191636,6 +191906,13 @@ msgid ""
 "operating system's audio mixer. On macOS, this also ensures the application "
 "does not prevent the device from sleeping."
 msgstr ""
+"Встановіть для :ref:`audio/driver/driver "
+"<class_ProjectSettings_property_audio/driver/driver>` значення ``Dummy`` *"
+"(враховуючи регістр)*, якщо вашій програмі не потрібен аудіовивід або вхід. "
+"Це запобігає запуску аудіосервера, що заощаджує деякі ресурси процесора та "
+"пам'яті. Це також запобігає відображенню програми у списку програм, які "
+"відтворюють аудіо в аудіомікшері операційної системи. У macOS це також "
+"гарантує, що програма не перешкоджатиме переходу пристрою в режим сну."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:653
 msgid ""
@@ -191648,6 +191925,14 @@ msgid ""
 "configuration editor <doc_engine_compilation_configuration_editor>` to "
 "automatically detect the fact that the project doesn't use physics."
 msgstr ""
+"Встановіть для :ref:`physics/2d/physics_engine "
+"<class_ProjectSettings_property_physics/2d/physics_engine>` та :ref:`physics/"
+"3d/physics_engine <class_ProjectSettings_property_physics/3d/physics_engine>"
+"` значення ``Dummy``, якщо ваш застосунок не потребує фізичного моделювання "
+"(включаючи вибір об'єктів). Це запобігає запуску серверів фізики, що "
+"економить ресурси процесора та пам'яті. Це також дозволяє :ref:`редактору "
+"конфігурації компіляції engine <doc_engine_compilation_configuration_editor>"
+"` автоматично виявляти той факт, що проект не використовує фізику."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:661
 msgid ""
@@ -191658,12 +191943,21 @@ msgid ""
 "usage and cause screen tearing, so it's recommended to provide an option for "
 "the user to toggle V-Sync as needed."
 msgstr ""
+"Розгляньте можливість встановлення для :ref:`display/window/vsync/vsync_mode "
+"<class_ProjectSettings_property_display/window/vsync/vsync_mode>` значення "
+"**Вимкнено**, щоб зменшити затримку введення. Це особливо корисно в "
+"проектах, чутливих до затримки, таких як програми для малювання. Це може "
+"збільшити споживання енергії та спричинити розриви екрана, тому "
+"рекомендується надати користувачеві опцію перемикання вертикальної "
+"синхронізації за потреби."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:674
 msgid ""
 "When designing an application for mobile platforms, there are several "
 "settings you can enable to improve usability:"
 msgstr ""
+"Під час розробки застосунку для мобільних платформ є кілька налаштувань, які "
+"можна ввімкнути для покращення зручності використання:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:679
 msgid ""
@@ -191672,6 +191966,11 @@ msgid ""
 "enable_long_press_as_right_click>` to allow users to perform right-click "
 "actions using a long press gesture."
 msgstr ""
+"Увімкніть :ref:`input_devices/pointing/android/"
+"enable_long_press_as_right_click "
+"<class_ProjectSettings_property_input_devices/pointing/android/"
+"enable_long_press_as_right_click>`, щоб дозволити користувачам виконувати "
+"дії клацання правою кнопкою миші за допомогою жесту тривалого натискання."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:682
 msgid ""
@@ -191682,6 +191981,13 @@ msgid ""
 "and :ref:`class_InputEventMagnifyGesture` events, which can be handled in "
 "your project's code and are normally emitted by laptop trackpads."
 msgstr ""
+"Увімкніть :ref:`input_devices/pointing/android/enable_pan_and_scale_gestures "
+"<class_ProjectSettings_property_input_devices/pointing/android/"
+"enable_pan_and_scale_gestures>`, щоб дозволити користувачам панорамувати та "
+"масштабувати за допомогою сенсорних жестів. Це емулюватиме події "
+":ref:`class_InputEventPanGesture` та :ref:`class_InputEventMagnifyGesture`, "
+"які можна обробляти в коді вашого проєкту та зазвичай генеруються трекпадами "
+"ноутбуків."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:688
 msgid ""
@@ -191697,6 +192003,17 @@ msgid ""
 "<class_DisplayServer_method_get_display_cutouts>` to query the area in which "
 "your application can safely draw."
 msgstr ""
+"Вимкніть :menu:`Screen > Immersive Mode` у пресеті експорту Android, щоб "
+"відображати панель стану системи та навігації, коли програма активна. Крім "
+"того, увімкніть :menu:`Screen > Edge to Edge`, щоб зробити панелі стану та "
+"значки навігації напівпрозорими та малювати їх поверх програми. Якщо ви це "
+"зробите, переконайтеся, що ваша програма залишає достатньо місця для панелі "
+"стану та значків навігації. Ви можете використовувати "
+":ref:`DisplayServer.get_display_safe_area "
+"<class_DisplayServer_method_get_display_safe_area>` та "
+":ref:`DisplayServer.get_display_cutouts "
+"<class_DisplayServer_method_get_display_cutouts>`, щоб запитувати область, в "
+"якій ваша програма може безпечно малювати."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:700
 msgid ""
@@ -191704,6 +192021,9 @@ msgid ""
 "<class_ProjectSettings_property_display/window/ios/hide_home_indicator>` to "
 "show the home indicator on top of the application."
 msgstr ""
+"Вимкніть :ref:`display/window/ios/hide_home_indicator "
+"<class_ProjectSettings_property_display/window/ios/hide_home_indicator>`, "
+"щоб відображати індикатор домашньої сторінки поверх програми."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:703
 msgid ""
@@ -191711,6 +192031,9 @@ msgid ""
 "<class_ProjectSettings_property_display/window/ios/hide_status_bar>` to keep "
 "the status bar visible when the application is active."
 msgstr ""
+"Вимкніть :ref:`display/window/ios/hide_status_bar "
+"<class_ProjectSettings_property_display/window/ios/hide_status_bar>`, щоб "
+"рядок стану залишався видимим, коли програма активна."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:706
 msgid ""
@@ -191719,11 +192042,14 @@ msgid ""
 "allow UI gestures to work immediately, without requiring them to be done "
 "twice."
 msgstr ""
+"Вимкніть :ref:`display/window/ios/suppress_ui_gesture "
+"<class_ProjectSettings_property_display/window/ios/suppress_ui_gesture>`, "
+"щоб жести інтерфейсу користувача працювали негайно, без необхідності їх "
+"повторного виконання."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:711
-#, fuzzy
 msgid "Adding unit tests"
-msgstr "Написання індивідуальних тестів"
+msgstr "Додавання модульних тестів"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:713
 msgid ""
@@ -191733,34 +192059,43 @@ msgid ""
 "be easier to do in an application scenario where logic can be cleanly "
 "separated."
 msgstr ""
+"У застосунку часто є більш цінним використання налаштування `модульного "
+"тестування <https://en.wikipedia.org/wiki/Unit_testing>`__ порівняно з грою. "
+"Це можна використовувати для автоматичного виявлення регресій, що, як "
+"правило, легше зробити в сценарії застосунку, де логіку можна чітко "
+"розділити."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:719
 msgid ""
 "GDScript does not feature an integrated unit testing framework, but several "
 "plugins for unit testing maintained by the community exist:"
 msgstr ""
+"GDScript не має інтегрованого фреймворку для модульного тестування, але "
+"існує кілька плагінів для модульного тестування, що підтримуються спільнотою:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:722
-#, fuzzy
 msgid "`Gut <https://github.com/bitwes/Gut>`__"
-msgstr "`Rust <https://github.com/godot-rust/gdext>`__"
+msgstr "`Gut <https://github.com/bitwes/Gut>`__"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:723
-#, fuzzy
 msgid ""
 "`GdUnit4 <https://github.com/godot-gdunit-labs/gdUnit4>`__ (also supports C#)"
-msgstr "`Nim <https://github.com/godot-nim/gdext-nim>`__"
+msgstr ""
+"`GdUnit4 <https://github.com/godot-gdunit-labs/gdUnit4>`__ (також підтримує "
+"C#)"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:725
 msgid ""
 "With C# and GDExtension (C++, Rust, etc.), you can use standard testing "
 "frameworks such as NUnit or `doctest <https://github.com/doctest/doctest>`__."
 msgstr ""
+"З C# та GDExtension (C++, Rust тощо) ви можете використовувати стандартні "
+"фреймворки для тестування, такі як NUnit або `doctest <https://github.com/"
+"doctest/doctest>`__."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:729
-#, fuzzy
 msgid "Optimizing distribution size"
-msgstr "Оптимізація збірки за розміром"
+msgstr "Оптимізація розміру дистрибутива"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:731
 msgid ""
@@ -191770,6 +192105,11 @@ msgid ""
 "especially on the web platform where binary size is directly linked to "
 "initialization speeds."
 msgstr ""
+"Оскільки неігрові програми зазвичай уникають використання великих частин "
+"движка, таких як аудіо чи 3D-функціональність, ви можете скомпілювати "
+"оптимізований шаблон експорту, щоб зменшити розмір файлу. Це також покращить "
+"час запуску, особливо на веб-платформі, де розмір двійкового файлу "
+"безпосередньо пов'язаний зі швидкістю ініціалізації."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:737
 msgid ""
@@ -191777,11 +192117,14 @@ msgid ""
 "since applications contain fewer large assets compared to games. "
 "See :ref:`doc_optimizing_for_size` for more information on how to do this."
 msgstr ""
+"Зменшення розміру часто є значним (порівняно з розміром проєкту), оскільки "
+"програми містять менше великих ресурсів порівняно з іграми. Див. "
+":ref:`doc_optimizing_for_size` для отримання додаткової інформації про те, "
+"як це зробити."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:742
-#, fuzzy
 msgid "Creating installers"
-msgstr "Створення екземплярів"
+msgstr "Створення інсталяторів"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:744
 msgid ""
@@ -191792,6 +192135,13 @@ msgid ""
 "more. Installers can also be run automatically through the command line, "
 "which makes them more desirable for corporate environments."
 msgstr ""
+"Хоча ігри зазвичай встановлюються через лаунчери, такі як Steam, або "
+"завантажуються у вигляді ZIP-архіву, програми часто розповсюджуються як "
+"інсталятори для кращої інтеграції з робочим столом. Інсталятор може "
+"виконувати такі дії, як додавання ярликів до меню «Пуск» або на робочий "
+"стіл, налаштування асоціацій файлів тощо. Інсталятори також можуть "
+"запускатися автоматично через командний рядок, що робить їх більш бажаними "
+"для корпоративних середовищ."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:751
 msgid ""
@@ -191799,18 +192149,24 @@ msgid ""
 "projects. However, it is still possible to create your own installers using "
 "third-party tools."
 msgstr ""
+"Godot не має вбудованої підтримки для створення інсталяторів для "
+"експортованих проектів. Однак, все ще можна створювати власні інсталятори за "
+"допомогою сторонніх інструментів."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:754
-#, fuzzy
 msgid ""
 "Here is a non-exhaustive list of tools that can be used to create installers:"
-msgstr "Ось повний список того, що можна використовувати як підказку типу:"
+msgstr ""
+"Ось неповний список інструментів, які можна використовувати для створення "
+"інсталяторів:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:756
 msgid ""
 "**Windows:** `Inno Setup <https://jrsoftware.org/isinfo.php>`__, `NSIS "
 "<https://nsis.sourceforge.io/Main_Page>`__"
 msgstr ""
+"**Windows:** `Inno Setup <https://jrsoftware.org/isinfo.php>`__, `NSIS "
+"<https://nsis.sourceforge.io/Main_Page>`__"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:759
 msgid ""
@@ -191820,16 +192176,21 @@ msgid ""
 "containing the exported project, then manually sign the installer that you "
 "just created."
 msgstr ""
+"Якщо у вас є сертифікат підпису коду, не забудьте підписати *як* інсталятор, "
+"так і виконуваний файл проекту. Для цього :ref:`підпишіть експортований "
+"виконуваний файл проекту <doc_exporting_for_windows_code_signing>`, створіть "
+"інсталятор, що містить експортований проект, а потім вручну підпишіть щойно "
+"створений інсталятор."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:765
-#, fuzzy
 msgid "**macOS:** `create-dmg <https://github.com/create-dmg/create-dmg>`__"
-msgstr "`Nim <https://github.com/godot-nim/gdext-nim>`__"
+msgstr "**macOS:** `create-dmg <https://github.com/create-dmg/create-dmg>`__"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:767
 msgid ""
 "**Linux:** `Flatpak <https://docs.flatpak.org/en/latest/first-build.html>`__"
 msgstr ""
+"**Linux:** `Flatpak <https://docs.flatpak.org/en/latest/first-build.html>`__"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:769
 msgid ""
@@ -191839,19 +192200,27 @@ msgid ""
 "github.com/flathub/com.orama_interactive.Pixelorama>`__ for an example "
 "Flatpak that makes use of this BaseApp."
 msgstr ""
+"Існує `Godot BaseApp <https://github.com/flathub/"
+"org.godotengine.Godot.BaseApp>`__, який можна використовувати як основу для "
+"створення пакетів Flatpak для проектів Godot. Дивіться `Pixelorama Flatpak "
+"<https://github.com/flathub/com.orama_interactive.Pixelorama>`__ для "
+"прикладу Flatpak, який використовує цей BaseApp."
 
 #: ../../docs/tutorials/ui/creating_applications.rst:777
 msgid "These pages cover tasks commonly performed in non-game applications:"
 msgstr ""
+"Ці сторінки охоплюють завдання, які зазвичай виконуються в неігрових "
+"програмах:"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:780
-#, fuzzy
 msgid ":ref:`doc_http_request_class`"
-msgstr ":ref:`doc_what_are_godot_classes`"
+msgstr ":ref:`doc_http_request_class`"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:781
 msgid ":ref:`class_ConfigFile` (used to save user preferences)"
 msgstr ""
+":ref:`class_ConfigFile` (використовується для збереження налаштувань "
+"користувача)"
 
 #: ../../docs/tutorials/xr/index.rst:6
 msgid ""
@@ -206154,7 +206523,7 @@ msgid ""
 ":ref:`Introduction to the buildsystem - Custom modules build option "
 "<doc_buildsystem_custom_modules>`."
 msgstr ""
-":ref:`Introduction to the buildsystem - Custom modules build option "
+":ref:`Вступ до системи збірки — Параметр збірки користувацьких модулів "
 "<doc_buildsystem_custom_modules>`."
 
 #: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:318
@@ -214599,16 +214968,18 @@ msgid ""
 "Note that the commands suggested above do **not** persist the variables "
 "across terminal sessions."
 msgstr ""
+"Зверніть увагу, що запропоновані вище команди **не** зберігають змінні між "
+"термінальними сеансами."
 
 #: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:67
-#, fuzzy
 msgid ""
 "Compile Godot export templates and set them as custom export templates in "
 "the export preset options. If the environment variable is set correctly, the "
 "following message is printed at the beginning of compilation:"
 msgstr ""
-"Скомпілюйте шаблони експорту Godot і встановіть їх як власні шаблони "
-"експорту в попередньо встановлених параметрах експорту."
+"Скомпілюйте шаблони експорту Godot та встановіть їх як власні шаблони "
+"експорту в параметрах пресетів експорту. Якщо змінну середовища встановлено "
+"правильно, на початку компіляції буде виведено таке повідомлення:"
 
 #: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:76
 msgid "Set the encryption key in the **Encryption** tab of the export preset:"
@@ -218305,7 +218676,6 @@ msgstr ""
 "godotengine/godot/pull/59980>`__ для деталей."
 
 #: ../../docs/engine_details/file_formats/tscn.rst:251
-#, fuzzy
 msgid ""
 "If the library name is empty, then it acts as the unique source of "
 "animations for this AnimationPlayer. This allows using ``<animation_name>`` "
@@ -218314,10 +218684,10 @@ msgid ""
 "compatibility and keeps the existing workflow if you don't want to use "
 "multiple animation libraries."
 msgstr ""
-"Якщо назва бібліотеки порожня, тоді вона виступає унікальним джерелом "
+"Якщо назва бібліотеки порожня, то вона виступає в якості єдиного джерела "
 "анімації для цього AnimationPlayer. Це дозволяє використовувати "
-"``<animation_name>`` безпосередньо для відтворення анімації зі сценарію. "
-"Якщо ви назвете бібліотеку, ви повинні відтворити її як ``<library_name>/"
+"``<animation_name>`` безпосередньо для відтворення анімації зі скрипта. Якщо "
+"ви даєте назву бібліотеці, то ви повинні відтворювати її як ``<library_name>/"
 "<animation_name>``. Це забезпечує зворотну сумісність і зберігає існуючий "
 "робочий процес, якщо ви не хочете використовувати кілька бібліотек анімації."
 

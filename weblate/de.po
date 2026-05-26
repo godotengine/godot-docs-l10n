@@ -199,7 +199,7 @@
 # HolonProduction <holonproduction@gmail.com>, 2023.
 # Leon Bekker <leon.bekk1@gmail.com>, 2023, 2024.
 # Dominic <domi@tracefog.de>, 2024.
-# Flyon <fcbf97@gmail.com>, 2024.
+# Flyon <fcbf97@gmail.com>, 2024, 2026.
 # Dirk Graf <bb3234@web.de>, 2024.
 # Tristan Leo <vileda+git@vileda.cc>, 2024.
 # tct123 <tct1234@protonmail.com>, 2024.
@@ -210,7 +210,7 @@
 # "Heratz A." <roadslocker@gmail.com>, 2025.
 # Yaskee Pants <deadwing.mtra03@gmail.com>, 2025.
 # hizoto <lars.hinder@hotmail.com>, 2025.
-# Fox-Alpha <fox-alpha@tarnhoerner.de>, 2025.
+# Fox-Alpha <fox-alpha@tarnhoerner.de>, 2025, 2026.
 # Timeo Buergler <buergler.timeo@gmail.com>, 2025.
 # Alexander Klaus <alexander-klaus@outlook.de>, 2025.
 # Silas Manuel Plank <silbastick@gmail.com>, 2025.
@@ -218,16 +218,19 @@
 # Winfried Gerlach <firmen@schoech.de>, 2025.
 # Albert Sobral <albertsobral610@gmail.com>, 2025.
 # Hephaistos-Gaming <supermaxyotu@gmail.com>, 2025.
-# IDontPutRealNames <scriptoblox@gmail.com>, 2025.
+# IDontPutRealNames <scriptoblox@gmail.com>, 2025, 2026.
 # clride <david.g.schilcher@gmail.com>, 2025.
 # Maximilian Wey <wey.maximilian@gmail.com>, 2026.
+# Marco Koennecke <marco.koennecke@t-online.de>, 2026.
+# alxhu <hosted.weblate.org@alxhu.de>, 2026.
+# Julius Stelldinger <julius.stelldinger@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-30 16:58+0100\n"
-"PO-Revision-Date: 2026-01-28 01:30+0000\n"
-"Last-Translator: Martin <martinreininger@gmx.net>\n"
+"PO-Revision-Date: 2026-04-12 15:10+0000\n"
+"Last-Translator: IDontPutRealNames <scriptoblox@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -235,7 +238,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -372,7 +375,6 @@ msgstr ""
 "Dokumentation zu beginnen:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to easily access any "
 "section of the documentation for your topic of interest. You can also use "
@@ -688,11 +690,11 @@ msgid ""
 "which should be the entry point for all new users. **This is the best place "
 "to start if you're new!**"
 msgstr ""
-"**Erste Schritte** enthält alle notwendigen Informationen zur Verwendung der "
-"Engine, um Spiele zu entwickeln. Es beginnt mit dem :ref:`Schritt für "
-"Schritt <toc-learn-step_by_step>`-Tutorial, das der Einstiegspunkt für alle "
-"neuen Benutzer sein sollte. **Das ist der beste Ort, um anzufangen, wenn Sie "
-"neu dabei sind!**"
+":ref:`doc_getting_started_intro`**Erste Schritte** enthält alle notwendigen "
+"Informationen zur Verwendung der Engine, um Spiele zu entwickeln. Es beginnt "
+"mit dem Abschnitt :ref:`doc_getting_started_intro`-Tutorial, welcher der "
+"Einstiegspunkt für alle neuen Benutzer sein sollte. **Das ist der beste Ort, "
+"um anzufangen, wenn Sie neu dabei sind!**"
 
 #: ../../docs/about/introduction.rst:78
 msgid ""
@@ -2087,9 +2089,8 @@ msgid "S3TC (not supported on mobile/Web platforms)."
 msgstr "S3TC (keine Unterstützung auf mobilen/Web-Plattformen)."
 
 #: ../../docs/about/list_of_features.rst:383
-#, fuzzy
 msgid "**Antialiasing:**"
-msgstr "**Anti-Aliasing:**"
+msgstr "**Kantenglättung:**"
 
 #: ../../docs/about/list_of_features.rst:385
 msgid "Temporal :ref:`antialiasing <doc_3d_antialiasing>` (TAA)."
@@ -2535,6 +2536,8 @@ msgid ""
 ":ref:`Text to speech <doc_text_to_speech>` using platform-provided TTS "
 "engines."
 msgstr ""
+":ref:`Text to speech <doc_text_to_speech>` unter Verwendung plattformeigener "
+"TTS-Engines."
 
 #: ../../docs/about/list_of_features.rst:525
 msgid "MIDI input."
@@ -2845,6 +2848,9 @@ msgid ""
 "characters. This allows proper display of multilingual text without having "
 "to bundle large font files with a project."
 msgstr ""
+"Standardmäßig werden Systemschriftarten verwendet, um nicht unterstützte "
+"Zeichen anzizeigen. Dies ermöglicht die Darstellung multilingualer Texte, "
+"ohne dass große Schriftart-Dateien bei einem Projekt beigelegt werden müssen."
 
 #: ../../docs/about/list_of_features.rst:621
 msgid ""
@@ -2923,6 +2929,8 @@ msgid ""
 "Create transparent windows to use as overlays, with polygon-based mouse "
 "passthrough support."
 msgstr ""
+"Erstelle transparente Fenster als Overlays, mit polygonbasierter Maus-"
+"Passthrough-Unterstützung."
 
 #: ../../docs/about/list_of_features.rst:642
 msgid ""
@@ -2955,13 +2963,16 @@ msgstr "Möglichkeit, das Fenster immer im Vordergrund zu behalten."
 
 #: ../../docs/about/list_of_features.rst:650
 msgid "Make a window ignore focus (useful for overlays)."
-msgstr ""
+msgstr "Lass ein Fenster den Fokus ignorieren (nützlich für Overlays)."
 
 #: ../../docs/about/list_of_features.rst:651
 msgid ""
 "Declare a window as a popup (hidden from task switcher) or exclusive "
 "(prevents interacting with other windows from the same process)."
 msgstr ""
+"Deklariere ein Fenster als ein Popup (versteckt vor dem Task Switcher) oder "
+"exklusiv (verhindert, dass mit anderen Fenstern des gleichen Prozesses "
+"interagiert werden kann)."
 
 #: ../../docs/about/list_of_features.rst:653
 #, fuzzy
@@ -8715,13 +8726,12 @@ msgid "First look at Godot's editor"
 msgstr "Ein erster Blick auf den Godot-Editor"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:51
-#, fuzzy
 msgid ""
 "When you open a new or an existing project, the editor's interface appears. "
 "Let's look at its main areas:"
 msgstr ""
 "Wenn Sie ein neues oder ein bestehendes Projekt öffnen, erscheint die "
-"Benutzeroberfläche des Editors. Schauen wir uns die Hauptbereiche an."
+"Benutzeroberfläche des Editors. Schauen wir uns die Hauptbereiche an:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:56
 msgid ""
@@ -8730,6 +8740,10 @@ msgid ""
 "highlighted), and **playtest** buttons and the **Movie Maker Mode** toggle "
 "on the right:"
 msgstr ""
+"Standardmäßig befindet sich an der oberen Fensterkante **Hauptmenü** auf der "
+"linken Seite, Buttons zum Wechseln des **Arbeitsbereiches** in der Mitte "
+"(der aktive Arbeitsbereich ist hervorgehoben) und die **Testen**-Buttons "
+"sowie der **Videoersteller-Modus** auf der rechten Seite:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:62
 msgid ""
@@ -8741,7 +8755,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:69
-#, fuzzy
 msgid ""
 "In the center, below the scene selector is the **viewport** with its "
 "**toolbar** at the top, where you'll find different tools to move, scale, or "
@@ -8749,16 +8762,15 @@ msgid ""
 msgstr ""
 "In der Mitte befindet sich der **Viewport** mit der **Toolbar** am oberen "
 "Rand, in der Sie Tools zum Verschieben, Skalieren oder Sperren von Nodes der "
-"Szene finden."
+"Szene finden (momentan ist der 3D-Workspace aktiv):"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:74
-#, fuzzy
 msgid ""
 "This toolbar changes based on the context and selected node. Here is the 2D "
 "toolbar:"
 msgstr ""
 "Die Toolbar ändert sich je nach Kontext und ausgewähltem Node. Hier ist die "
-"2D-Toolbar."
+"2D-Toolbar:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:78
 msgid "Below is the 3D one:"
@@ -8790,25 +8802,22 @@ msgstr ""
 "Rand des Fensters befindet sich das **Untere Bedienfeld**."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:89
-#, fuzzy
 msgid ""
 "Let's look at the docks. The **FileSystem** dock lists your project files, "
 "including scripts, images, audio samples, and more:"
 msgstr ""
 "Schauen wir uns die Docks an. Das **Dateisystem**-Dock listet Ihre "
-"Projektdateien auf, darunter Skripte, Bilder, Audio-Samples und mehr."
+"Projektdateien auf, darunter Skripte, Bilder, Audio-Samples und mehr:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:94
-#, fuzzy
 msgid "The **Scene** dock lists the active scene's nodes:"
-msgstr "Das **Szenen**-Dock listet die aktiven Nodes der Szene auf."
+msgstr "Das **Szenen**-Dock listet die aktiven Nodes der Szene auf:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:98
-#, fuzzy
 msgid "The **Inspector** allows you to edit the properties of a selected node:"
 msgstr ""
-"Mit dem **Inspektor** können Sie die Propertys eines ausgewählten Nodes "
-"bearbeiten."
+"Mit dem **Inspektor** können Sie die Properties (Eigenschaften) eines "
+"ausgewählten Nodes bearbeiten:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:102
 msgid "To read more on inspector, see :ref:`doc_editor_inspector_dock`."
@@ -8848,6 +8857,8 @@ msgid ""
 "Bottom panels can also be shown or hidden using the shortcuts defined in "
 "**Editor Settings > Shortcuts**, under the **Bottom Panels** category."
 msgstr ""
+"Die unteren Bedienfelder können, mit den unter **Editor > Befehlsluste** "
+"konfigurierten  Tastenkombinationen, ein- ausgeblendet werden."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:122
 msgid "The five main screens"
@@ -8893,6 +8904,11 @@ msgid ""
 "adjust it in real time. Note that this is for testing how adjustments would "
 "work, any changes made here are not saved when the game stops running."
 msgstr ""
+"Im **Spielbildschirm** wird dein Projekt sein, wenn es aus dem Editor "
+"gestartet wird. Sie können durch Ihr Projekt gehen, um es zu testen, und es "
+"in Echtzeit pausieren und anpassen. Beachten Sie, dass dies nur zum Testen "
+"ist, wie Anpassungen funktionieren würden. Jegliche Änderungen, die hier "
+"gemacht werden, werden nicht gespeichert sobald das Spiel beendet wird."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:147
 msgid ""
@@ -8995,11 +9011,15 @@ msgstr ""
 "Funktionsnamen oder eine integrierte Variable im Skript-Editor."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:192
+#, fuzzy
 msgid ""
 "Right-clicking on nodes and choosing **Open Documentation** or choosing "
 "**Lookup Symbol** for elements in script editor will directly open their "
 "documentation."
 msgstr ""
+"Mit einem Rechts-Klick auf eine Node und Auswahl von **Dokumentation "
+"öffnen**, oder bei Auswahl von **Symbol nachschlagen** eines Elements im "
+"Skript Editor, wird die dazugehörige Dokumentation geöffnet."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:8
 msgid "Learning new features"
@@ -9658,6 +9678,10 @@ msgid ""
 "be legally compatible with this open source license. Therefore, most parts "
 "of Godot are developed from the ground up by community contributors."
 msgstr ""
+"Alle Technologien, die mit Godot ausgeliefert werden, inklusive "
+"Drittanbieter-Bibliotheken, müssen gesetzlich kompatibel mit dieser Open-"
+"Source-Lizenz sein. Daher werden die meisten Teile von Godot von Grund auf "
+"von der Community entwickelt."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:109
 msgid ""
@@ -10114,15 +10138,14 @@ msgid "Running the scene"
 msgstr "Ausführen der Szene"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:141
-#, fuzzy
 msgid ""
 "Everything's ready to run the scene! Press the :button:`Run Current Scene` "
 "button in the top-right of the screen or press :kbd:`F6` (:kbd:`Cmd + R` on "
 "macOS)."
 msgstr ""
-"Alles ist bereit, die Szene abzuspielen! Drücken Sie den \"Szene abspielen\"-"
-"Button oben rechts auf dem Bildschirm oder drücken Sie :kbd:`F6` (:kbd:`Cmd "
-"+ R` unter macOS)."
+"Alles ist bereit, die Szene abzuspielen! Drücken Sie den :button:`Aktuelle "
+"Szene abspielen`-Button oben rechts auf dem Bildschirm oder drücken Sie "
+":kbd:`F6` (:kbd:`Cmd + R` unter macOS)."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:147
 #, fuzzy
@@ -10188,6 +10211,9 @@ msgid ""
 "scene*. If you encounter unexpected behavior, check to ensure you are "
 "running the correct scene."
 msgstr ""
+"Das Ausführen der *Hauptszene* eines Projekts ist etwas anderes, als die "
+"*aktuelle Szene* auszuführen. Falls Sie auf unerwartetes Verhalten stoßen, "
+"überprüfen Sie, ob Sie die korrekte Szene ausführen."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:177
 msgid "A popup window appears and invites you to select the main scene."
@@ -14921,7 +14947,6 @@ msgid "Draw a user interface on a 3D game."
 msgstr "eine Benutzeroberfläche für ein 3D-Spiel zu zeichnen."
 
 #: ../../docs/getting_started/first_3d_game/index.rst:32
-#, fuzzy
 msgid ""
 "This tutorial is for beginners who followed the complete getting started "
 "series. We'll start slow with detailed instructions and shorten them as we "
@@ -14929,11 +14954,10 @@ msgid ""
 "complete demo's source code here:"
 msgstr ""
 "Dieses Tutorial ist für Anfänger gedacht, die aber die komplette "
-"Artikelreihe \"Erste Schritte\" durchlaufen haben. Wir fangen langsam mit "
+"Artikelreihe „Erste Schritte“ durchlaufen haben. Wir fangen langsam mit "
 "detaillierten Anweisungen an und kürzen sie, wenn wir ähnliche Schritte "
 "durchführen. Wenn Sie ein erfahrener Programmierer sind, können Sie den "
-"kompletten Quellcode der Demo hier einsehen: `Squash the Creep Quellcode "
-"<https://github.com/godotengine/godot-3d-dodge-the-creeps>`__."
+"kompletten Quellcode der Demo hier einsehen:"
 
 #: ../../docs/getting_started/first_3d_game/index.rst:37
 #, fuzzy
@@ -22043,7 +22067,7 @@ msgid ""
 msgstr ""
 ":ref:`AnimatedTexture <class_AnimatedTexture>` ist eine Textur, die von der "
 "Engine als animierte Schleife und nicht als statisches Bild gezeichnet wird. "
-"Benutzer können Folgendes verändern:"
+"Benutzer können Folgendes verändern ..."
 
 #: ../../docs/tutorials/best_practices/data_preferences.rst:318
 msgid "the rate at which it moves across each section of the texture (FPS)."
@@ -23769,23 +23793,21 @@ msgid "Using the Project Manager"
 msgstr "Verwenden des Projektmanagers"
 
 #: ../../docs/tutorials/editor/project_manager.rst:6
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you see is the Project Manager. It "
 "lets you create, remove, import, or play game projects:"
 msgstr ""
 "Wenn Sie Godot starten, ist das erste Fenster, das Sie sehen, der "
 "Projektmanager. Hier können Sie Spieleprojekte erstellen, entfernen, "
-"importieren oder spielen."
+"importieren oder spielen:"
 
 #: ../../docs/tutorials/editor/project_manager.rst:11
-#, fuzzy
 msgid ""
 "To change the editors language click on the **Settings** Button in the top "
 "right corner:"
 msgstr ""
-"Um die Sprache des Editors zu ändern, klicken Sie auf den Button "
-"\"Einstellungen\" in der oberen rechten Ecke."
+"Um die Sprache des Editors zu ändern, klicken Sie auf die Schaltfläche "
+"**Einstellungen** in der oberen rechten Ecke:"
 
 #: ../../docs/tutorials/editor/project_manager.rst:16
 msgid ""
@@ -23831,9 +23853,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/project_manager.rst:42
-#, fuzzy
 msgid "Select one of the renderers (this can also be changed later)."
-msgstr "Der **Blending-Modus** des Effekts kann ebenfalls geändert werden:"
+msgstr "Wähle einen dieser Renderer (dies kann später geändert werden)."
 
 #: ../../docs/tutorials/editor/project_manager.rst:43
 #, fuzzy
@@ -24227,9 +24248,8 @@ msgid "Saves the currently edited resource to disk."
 msgstr ""
 
 #: ../../docs/tutorials/editor/inspector_dock.rst:32
-#, fuzzy
 msgid "Provides options to:"
-msgstr "Bereitstellung von Eingabedaten"
+msgstr "Stellt Optionen bereit für:"
 
 #: ../../docs/tutorials/editor/inspector_dock.rst:34
 msgid "**Edit Resource from Clipboard** by pasting the copied resource."
@@ -29527,15 +29547,13 @@ msgid "Browser support"
 msgstr "Browser-Unterstützung"
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:20
-#, fuzzy
 msgid ""
 "The Web editor requires support for WebAssembly's SharedArrayBuffer. This is "
 "in turn required to support threading in the browser."
 msgstr ""
 "Der Web-Editor benötigt Unterstützung für den SharedArrayBuffer von "
-"WebAssembly. Das ist wiederum Vorraussetzung um Multithreading im Browser zu "
-"unterstützen. Folgende Desktop-Browser unterstützen WebAssembly und können "
-"deshalb den Web-Editor abspielen:"
+"WebAssembly. Das ist wiederum Voraussetzung, um Threading im Browser zu "
+"unterstützen."
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:23
 msgid ""
@@ -43921,13 +43939,12 @@ msgstr ""
 "ihren Spawnpunkten erben."
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:277
-#, fuzzy
 msgid ""
 "Once you click \"OK\", the mask will be generated and set to the "
 "ParticleProcessMaterial, under ``Spawn`` and  then ``Position``"
 msgstr ""
-"Sobald Sie auf \"OK\" klicken, wird die Maske erzeugt und auf das "
-"ParticleProcessMaterial unter dem Abschnitt ``Emissions-Shape`` gesetzt:"
+"Sobald Sie auf „OK“ klicken, wird die Maske erzeugt und auf das "
+"ParticleProcessMaterial unter ``Spawn`` und dann ``Position`` gesetzt."
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:282
 msgid ""
@@ -48667,7 +48684,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:210
-#, fuzzy
 msgid ""
 "The default 3D scene navigation controls are similar to Blender (aiming to "
 "have some sort of consistency in the free software pipeline), but options "
@@ -48676,11 +48692,13 @@ msgid ""
 "controls, you can navigate to **Editor Settings > Editors > 3D**. Then, "
 "under *Navigation*, search for *Navigation Scheme*."
 msgstr ""
-"Die Default-steuerelemente für die 3D-Szenennavigation ähneln denen von "
-"Blender (um eine gewisse Konsistenz in der Pipeline freier Software zu "
-"erreichen...), aber in den Editor-Einstellungen sind Optionen enthalten, mit "
-"denen die Maustasten und das Verhalten ähnlich zu anderen Tools angepasst "
-"werden können:"
+"Die Default-Steuerung für die 3D-Szenennavigation ähnelt der von Blender (um "
+"eine gewisse Konsistenz in der Pipeline freier Software zu erreichen), aber "
+"in den Editor-Einstellungen sind Optionen enthalten, mit denen die "
+"Maustasten und das Verhalten ähnlich zu anderen Tools angepasst werden "
+"können. Um die Steuerung auf die von Maya oder Modo zu ändern, navigieren "
+"Sie zu **Editoreinstellungen > Editoren > 3D**. Dann suchen Sie unter "
+"*Navigation* nach *Navigation Scheme*."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:219
 msgid ""
@@ -53615,14 +53633,15 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:852
-#, fuzzy
 msgid ""
 "Materials that write to the stencil buffer are always drawn in the "
 "transparent pass, so they are subject to the usual :ref:`transparency "
 "limitations <doc_3d_rendering_limitations_transparency_sorting>`."
 msgstr ""
-"Alpha-Blending-Transparenz hat mehrere :ref:`Einschränkungen "
-"<doc_3d_rendering_limitations_transparency_sorting>`:"
+"Materialien, die in den Stencil Buffer schreiben, werden immer im "
+"Transparent Pass gerendert und unterliegen daher den üblichen "
+"Einschränkungen der Transparenzdarstellung :ref:`transparency limitations "
+"<doc_3d_rendering_limitations_transparency_sorting>`."
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:858
 msgid ""
@@ -71714,16 +71733,15 @@ msgid "Custom meshes"
 msgstr "Benutzerdefinierte Meshes"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:93
-#, fuzzy
 msgid ""
 "Custom meshes can be used for :ref:`CSGMesh3D <class_CSGMesh3D>` as long as "
 "the mesh is *manifold*. The mesh can be modeled in other software and "
 "imported into Godot. Multiple materials are supported."
 msgstr ""
-"Jedes Mesh kann für :ref:`CSGMesh3D <class_CSGMesh3D>` verwendet werden; das "
-"Mesh kann in anderer Software modelliert und in Godot importiert werden. Es "
-"werden mehrere Materialien unterstützt. Es gibt einige Einschränkungen für "
-"die Geometrie:"
+"Benutzerdefinierte Meshes können für :ref:`CSGMesh3D <class_CSGMesh3D>` "
+"verwendet werden, solange das Mesh *manifold* ist. Das Mesh kann in anderer "
+"Software modelliert und dann in Godot importiert werden. Es werden mehrere "
+"Materialien unterstützt."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:97
 msgid "For a mesh to be used as a CSG mesh, it is required to:"

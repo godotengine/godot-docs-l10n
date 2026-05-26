@@ -8,13 +8,14 @@
 # Petar Ples <against.time.petar@gmail.com>, 2018.
 # Vojislav Bajakic <ch3d4.ns@gmail.com>, 2018.
 # Ivana Nikolic <ivanan2002@gmail.com>, 2024.
+# Infiland <ljubica.citydesign@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-01-30 16:58+0100\n"
-"PO-Revision-Date: 2024-11-22 03:01+0000\n"
-"Last-Translator: Ivana Nikolic <ivanan2002@gmail.com>\n"
+"PO-Revision-Date: 2026-04-09 18:10+0000\n"
+"Last-Translator: Infiland <ljubica.citydesign@gmail.com>\n"
 "Language-Team: Serbian (Latin script) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/sr_Latn/>\n"
 "Language: sr_Latn\n"
@@ -23,16 +24,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: ../../docs/_templates/layout.html:58
-#, fuzzy
 msgid "Previous"
-msgstr "Prethodna Skripta"
+msgstr "Prethodno"
 
 #: ../../docs/_templates/layout.html:61
 msgid "Next"
-msgstr ""
+msgstr "Sledeće"
 
 #: ../../docs/_templates/versions.html:26
 #: ../../docs/tutorials/performance/cpu_optimization.rst:160
@@ -45,20 +45,20 @@ msgstr "Verzije"
 
 #: ../../docs/_templates/versions.html:39
 msgid "On Read the Docs"
-msgstr "Na \"Pročitaj dokumentaciju\""
+msgstr "Na Pročitaj dokumentaciju"
 
 #: ../../docs/_templates/versions.html:41
 #, fuzzy
 msgid "Project Home"
-msgstr "Uvod / Početak"
+msgstr "Početna stranica projekta"
 
 #: ../../docs/_templates/versions.html:44
 msgid "Builds"
-msgstr ""
+msgstr "Izgrade"
 
 #: ../../docs/_templates/versions.html:47
 msgid "Downloads"
-msgstr ""
+msgstr "Preuzimanja"
 
 #: ../../docs/index.rst:143 ../../docs/about/docs_changelog.rst:99
 #: ../../docs/about/docs_changelog.rst:295
@@ -73,7 +73,7 @@ msgstr "O Godot-u"
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:4
 #: ../../docs/tutorials/scripting/cpp/build_system/scons.rst:14
 msgid "Getting started"
-msgstr "Uvod / Početak"
+msgstr "Početak"
 
 #: ../../docs/index.rst:172
 msgid "Manual"
@@ -82,7 +82,7 @@ msgstr "Priručnik"
 #: ../../docs/index.rst:206
 #, fuzzy
 msgid "Engine details"
-msgstr "O Godot pokretaču igre"
+msgstr "Detalji motora"
 
 #: ../../docs/index.rst:220
 msgid "Community"
@@ -95,16 +95,15 @@ msgstr "Referenca klase"
 #: ../../docs/index.rst:4
 #, fuzzy
 msgid "Godot Docs – *4.6* branch"
-msgstr "Godot dokumentacija - *master* grana"
+msgstr "Godot dokumentacija – *4.6* grana"
 
 #: ../../docs/index.rst:8
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"Godo-ova dokumentacija je dostupna na raznim jezicima i za razne verzije. "
-"Proširite \"Pročitaj dokumentaciju\" panel na dnu bočne trake kako biste "
-"videli spisak."
+"Godotova dokumentacija je dostupna na raznim jezicima i verzijama. Proširite "
+"panelu da biste videli sve dostupne jezike."
 
 #: ../../docs/index.rst:14
 msgid ""
@@ -112,9 +111,8 @@ msgid ""
 "docs.godotengine.org/en/stable>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
-"Ova dokumentacija je prevedena sa `izvorne verzije na engleskom jeziku "
-"<https://docs.godotengine.org/en/stable>` od strane članova zajednice na "
-"`Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs>`_."
+"Ova dokumentacija je prevedena iz originalnog engleskog jezika dostupnog na "
+"https://docs.godotengine.org/en/stable sa povremenim ažuriranjima."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -134,10 +132,8 @@ msgid ""
 "engine versions using the \"Read the Docs\" panel at the bottom of the "
 "sidebar."
 msgstr ""
-"Za sada, lokalizovani prevodi su dostupni samo na \"najnovijoj\" (razvojnoj) "
-"grani. Možete i dalje pregledati englesku verziju dokumentacije za druge "
-"verzije Godo-a korišćenjem \"Pročitaj dokumentaciju\" panela na dnu bočne "
-"trake."
+"Za sada su lokalizovani prevodi dostupni samo za englesku verziju sa "
+"ograničenim jezicima."
 
 #: ../../docs/index.rst:28
 msgid ""
@@ -147,12 +143,8 @@ msgid ""
 "read the :ref:`introduction page <doc_about_intro>` to get an overview of "
 "what this documentation has to offer."
 msgstr ""
-"Dobrodošli na zvaničnu dokumentaciju `Godo Endžina <https://"
-"godotengine.org>`__, besplatnog endžina otvorenog koda za izradu 2D i 3D "
-"igara, vođenog od strane zajednice! Ako se niste do sada susreli sa ovom "
-"dokumentacijom, preporučujemo da pročitate :ref:`uvodnu stranicu "
-"<doc_about_intro>`, kako biste dobili pregled svega što ova dokumentacija "
-"nudi."
+"Dobrodošli u zvaničnu dokumentaciju Godot Engine-a, besplatnog i otvorenog "
+"izvornog motora za igre."
 
 #: ../../docs/index.rst:34
 msgid ""
@@ -171940,14 +171932,14 @@ msgstr ""
 msgid ""
 "`awesome-godot: A curated list of free/libre plugins, scripts and add-ons "
 "<https://github.com/godotengine/awesome-godot>`_"
-msgstr ""
+msgstr "odličan-godot: kurizirani popis slobodnih dodaka i dodataka"
 
 #: ../../docs/community/tutorials.rst:44
 msgid "`Godot Asset Library <https://godotengine.org/asset-library/asset>`_"
-msgstr ""
+msgstr "Godot biblioteka imovine"
 
 #: ../../docs/community/tutorials.rst:45
 msgid ""
 "`Godot Shaders: A community-driven shader library <https://godotshaders.com/"
 ">`_"
-msgstr ""
+msgstr "Godot Shader-i: biblioteka šejdera koju upravlja zajednica"
