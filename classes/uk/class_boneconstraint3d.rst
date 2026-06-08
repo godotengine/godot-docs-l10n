@@ -16,9 +16,9 @@ BoneConstraint3D
 Опис
 --------
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that modifies the bone set in :ref:`set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` based on the transform of the bone retrieved by :ref:`get_reference_bone()<class_BoneConstraint3D_method_get_reference_bone>`.
+Базовий клас :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`, який змінює набір кісток у :ref:`set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` на основі трансформації кістки, отриманої за допомогою :ref:`get_reference_bone()<class_BoneConstraint3D_method_get_reference_bone>`.
 
-\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/amount``).
+\ **Примітка:** Більшість методів у цьому класі приймають параметр ``index``. Цей параметр визначає, який запис зі списку налаштувань повернути, якщо IK має кілька записів (наприклад, ``settings/<index>/amount``).
 
 .. rst-class:: classref-reftable-group
 

@@ -7,14 +7,14 @@ AudioStreamPlaybackSynchronized
 
 **Наследует:** :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Playback class used for :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`.
+Класс воспроизведения, используемый для :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Playback component of :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`. Handles the playback of multiple :ref:`AudioStream<class_AudioStream>`\ s in synchrony.
+Компонент воспроизведения :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`. Обрабатывает синхронное воспроизведение нескольких :ref:`AudioStream<class_AudioStream>`.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

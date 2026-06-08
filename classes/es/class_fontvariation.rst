@@ -186,7 +186,7 @@ An array of colors to override predefined palette. Use ``Color(0, 0, 0, 0)``, to
 - |void| **set_palette_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_palette_index**\ (\ )
 
-A palette index.
+Un índice de paleta de colores.
 
 .. rst-class:: classref-item-separator
 

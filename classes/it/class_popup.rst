@@ -16,9 +16,9 @@ Classe di base per le finestre e i pannelli contestuali con una posizione fissa.
 Descrizione
 ----------------------
 
-**Popup** is a base class for contextual windows and panels with fixed position. It's a modal by default (see :ref:`Window.popup_window<class_Window_property_popup_window>`) and provides methods for implementing custom popup behavior.
+**Popup** è una classe di base per le finestre e i pannelli contestuali con una posizione fissa. È una modale per impostazione predefinita (vedi :ref:`Window.popup_window<class_Window_property_popup_window>`) e fornisce metodi per implementare un comportamento di popup personalizzato.
 
-\ **Note:** **Popup** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Nota:** **Popup** è inizialmente invisibile. Per renderlo visibile, chiama uno dei metodi ``popup_*`` da :ref:`Window<class_Window>` sul nodo, come ad esempio :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 

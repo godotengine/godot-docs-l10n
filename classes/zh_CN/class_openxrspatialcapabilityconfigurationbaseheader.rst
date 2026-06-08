@@ -77,9 +77,9 @@ OpenXR 空间功能配置标头的包装器基类。对于 OpenXR 空间实体�
 
 :ref:`int<class_int>` **get_configuration**\ (\ ) :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_get_configuration>`
 
-Gets a pointer to the ``XrSpatialCapabilityConfigurationBaseHeaderEXT`` struct.
+获取指向 ``XrSpatialCapabilityConfigurationBaseHeaderEXT`` 结构体的指针。
 
-\ **Note:** This method is intended to be used from GDExtensions.
+\ **注意：** 此方法旨在供 GDExtension（GD扩展）使用。
 
 .. rst-class:: classref-item-separator
 

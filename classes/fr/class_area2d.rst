@@ -21,7 +21,7 @@ Description
 
 Ce nœud peut également modifier ou redéfinir localement les paramètres physiques (gravité, amortissement) et dévier l'audio vers des bus audio personnalisés.
 
-\ **Note:** Les zones et corps créés avec :ref:`PhysicsServer2D<class_PhysicsServer2D>` peuvent ne pas interagir comme prévu avec les **Area2D**\ s, et peuvent ne pas émettre des signaux ou suivre des objets correctement.
+\ **Note :** Les zones et corps créés avec :ref:`PhysicsServer2D<class_PhysicsServer2D>` peuvent ne pas interagir comme prévu avec les **Area2D**\ s, et peuvent ne pas émettre des signaux ou suivre des objets correctement.
 
 .. rst-class:: classref-introduction-group
 

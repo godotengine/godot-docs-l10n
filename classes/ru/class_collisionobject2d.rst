@@ -443,7 +443,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 
 :ref:`Vector2<class_Vector2>` **get_shape_owner_one_way_collision_direction**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_get_shape_owner_one_way_collision_direction>`
 
-Returns the ``one_way_collision_direction`` of the shape owner identified by the given ``owner_id``.
+Возвращает ``one_way_collision_direction`` владельца фигуры, идентифицированного заданным ``owner_id``.
 
 .. rst-class:: classref-item-separator
 
@@ -671,7 +671,7 @@ Returns the ``one_way_collision_direction`` of the shape owner identified by the
 
 |void| **shape_owner_set_one_way_collision_direction**\ (\ owner_id\: :ref:`int<class_int>`, direction\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_CollisionObject2D_method_shape_owner_set_one_way_collision_direction>`
 
-Sets the ``one_way_collision_direction`` of the shape owner identified by the given ``owner_id`` to ``direction``.
+Устанавливает параметр ``one_way_collision_direction`` владельца фигуры, идентифицированного заданным параметром ``owner_id``, равным ``direction``.
 
 .. rst-class:: classref-item-separator
 

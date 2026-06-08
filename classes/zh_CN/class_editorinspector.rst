@@ -200,7 +200,7 @@ EditorInspector
 
 |void| **collapse_all_folding**\ (\ ) :ref:`🔗<class_EditorInspector_method_collapse_all_folding>`
 
-Collapses all foldable sections.
+折叠所有可折叠的区域。
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ Collapses all foldable sections.
 
 :ref:`EditorInspector<class_EditorInspector>` **create_default_inspector**\ (\ filter_line_edit\: :ref:`LineEdit<class_LineEdit>` = null\ ) |static| :ref:`🔗<class_EditorInspector_method_create_default_inspector>`
 
-Creates an inspector with the same configuration as the one used in the editor's Inspector dock. When passing a :ref:`LineEdit<class_LineEdit>` into ``filter_line_edit``, the inspector will filter its properties based on :ref:`LineEdit.text<class_LineEdit_property_text>` whenever :ref:`LineEdit.text_changed<class_LineEdit_signal_text_changed>` is emitted.
+创建一个属性检查器，其配置与编辑器 Inspector 面板中使用的完全相同。当向 ``filter_line_edit`` 参数传入一个 :ref:`LineEdit<class_LineEdit>`\ （单行文本输入框）时，每当 :ref:`LineEdit.text_changed<class_LineEdit_signal_text_changed>` 信号被触发，该检查器就会根据 :ref:`LineEdit.text<class_LineEdit_property_text>`\ （输入框中的文本内容）来过滤显示的属性。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Creates an inspector with the same configuration as the one used in the editor's
 
 |void| **expand_all_folding**\ (\ ) :ref:`🔗<class_EditorInspector_method_expand_all_folding>`
 
-Expands all foldable sections.
+展开所有可折叠的区域。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Expands all foldable sections.
 
 |void| **expand_revertable**\ (\ ) :ref:`🔗<class_EditorInspector_method_expand_revertable>`
 
-Expands only the foldable sections that contain a revertable (i.e. non-default) property.
+仅展开包含可还原属性（即非默认值属性）的可折叠部分。
 
 .. rst-class:: classref-item-separator
 

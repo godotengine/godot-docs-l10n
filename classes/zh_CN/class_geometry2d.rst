@@ -404,9 +404,9 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 :ref:`Variant<class_Variant>` **line_intersects_line**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, dir_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, dir_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_line_intersects_line>`
 
-Returns the point of intersection between the two lines (``from_a``, ``dir_a``) and (``from_b``, ``dir_b``). Returns a :ref:`Vector2<class_Vector2>`, or ``null`` if the lines are parallel.
+返回两条直线 (``from_a``, ``dir_a``) 和 (``from_b``, ``dir_b``) 之间的交点。返回一个 :ref:`Vector2<class_Vector2>`\ （二维向量），如果两条直线平行，则返回 ``null``\ 。
 
-\ ``from`` and ``dir`` are *not* endpoints of a line segment or ray but the slope (``dir``) and a known point (``from``) on that line. To get the intersection between two line segments, use :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
+注意：\ ``from`` 和 ``dir`` *并不是* 线段或射线的端点，而是代表该直线上一个已知的点（\ ``from``\ ）和它的斜率/方向（\ ``dir``\ ）。如果你想获取两条线段之间的交点，请使用 :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`\ 。
 
 
 .. tabs::
@@ -554,7 +554,7 @@ Returns the point of intersection between the two lines (``from_a``, ``dir_a``) 
 
 :ref:`Variant<class_Variant>` **segment_intersects_segment**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, to_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, to_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_segment_intersects_segment>`
 
-Checks if two line segments intersect, with line ``a`` between ``from_a`` and ``to_a`` and line ``b`` between ``from_b`` and ``to_b``. If the line segments intersect, the point of intersection is returned as a :ref:`Vector2<class_Vector2>`. If no intersection takes place, ``null`` is returned.
+检查两条线段是否相交，其中线段 ``a`` 位于 ``from_a`` 和 ``to_a`` 之间，线段 ``b`` 位于 ``from_b`` 和 ``to_b`` 之间。如果这两条线段相交，会将交点作为一个 :ref:`Vector2<class_Vector2>`\ （二维向量）返回。如果没有发生相交，则返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 

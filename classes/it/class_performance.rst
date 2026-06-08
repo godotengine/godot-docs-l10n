@@ -143,7 +143,7 @@ Numero di risorse attualmente utilizzate. *Più basso è, meglio è.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_NODE_COUNT** = ``9``
 
-Numero di nodi attualmente istanziati nell'albero di scena. Include anche il nodo radice. *Più basso è, meglio è.*
+Numero di nodi attualmente istanziati nell'albero di scene. Include anche il nodo radice. *Più basso è, meglio è.*
 
 .. _class_Performance_constant_OBJECT_ORPHAN_NODE_COUNT:
 
@@ -151,9 +151,9 @@ Numero di nodi attualmente istanziati nell'albero di scena. Include anche il nod
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_ORPHAN_NODE_COUNT** = ``10``
 
-Number of orphan nodes, i.e. nodes which are not parented to a node of the scene tree. *Lower is better.*\ 
+Numero di nodi orfani, ovvero nodi che non sono imparentati a un nodo dell'albero di scene. *Più basso è, meglio è.*\ 
 
-\ **Note:** This is only available in debug mode and will always return ``0`` when used in a project exported in release mode.
+\ **Nota:** Questo è disponibile solo in modalità debug e restituirà sempre ``0`` se utilizzata in un progetto esportato in modalità rilascio.
 
 .. _class_Performance_constant_RENDER_TOTAL_OBJECTS_IN_FRAME:
 

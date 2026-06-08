@@ -16,7 +16,7 @@ Descrizione
 
 Questo è un nodo speciale all'interno del sistema AR/VR che mappa la posizione fisica del centro del nostro spazio di tracciamento alla posizione virtuale all'interno del nostro mondo di gioco.
 
-È possibile aggiungere più punti di origine all'albero di scena, ma solo uno può essere utilizzato alla volta. Tutti i nodi :ref:`XRCamera3D<class_XRCamera3D>`, :ref:`XRController3D<class_XRController3D>` e :ref:`XRAnchor3D<class_XRAnchor3D>` dovrebbero essere figli diretti di questo nodo affinché il tracciamento spaziale funzioni correttamente.
+È possibile aggiungere più punti di origine all'albero di scene, ma solo uno può essere utilizzato alla volta. Tutti i nodi :ref:`XRCamera3D<class_XRCamera3D>`, :ref:`XRController3D<class_XRController3D>` e :ref:`XRAnchor3D<class_XRAnchor3D>` dovrebbero essere figli diretti di questo nodo affinché il tracciamento spaziale funzioni correttamente.
 
 È la posizione di questo nodo che aggiorni quando il tuo personaggio deve muoversi nel tuo mondo di gioco mentre non ci stiamo muovendo nel mondo reale. Il movimento nel mondo reale è sempre in relazione a questo punto di origine.
 

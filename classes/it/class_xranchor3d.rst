@@ -14,11 +14,11 @@ Un punto di ancoraggio nello spazio AR.
 Descrizione
 ----------------------
 
-Il punto **XRAnchor3D** è un :ref:`XRNode3D<class_XRNode3D>` che mappa una posizione del mondo reale identificata dalla piattaforma AR in una posizione all'interno del mondo di gioco. Ad esempio, finché il rilevamento del piano in ARKit è attivo, ARKit identificherà e aggiornerà la posizione dei piani (tavoli, pavimenti, ecc.) e creerà ancore per essi.
+Il punto **XRAnchor3D** è un :ref:`XRNode3D<class_XRNode3D>` che mappa una posizione del mondo reale identificata dalla piattaforma AR in una posizione all'interno del mondo di gioco. Ad esempio, finché il rilevamento del piano in ARKit è attivo, ARKit identificherà e aggiornerà la posizione dei piani (tavoli, pavimenti, ecc.) e creerà ancoraggi per essi.
 
-Questo nodo è mappato su una delle ancore tramite il suo ID univoco. Quando ricevi un segnale che è disponibile una nuova ancora, dovresti aggiungere questo nodo alla tua scena per quell'ancora. Puoi predefinire i nodi e impostare l'ID; i nodi rimarranno semplicemente su ``(0, 0, 0)`` finché non sarà riconosciuto un piano.
+Questo nodo è mappato su uno degli ancoraggitramite il suo ID univoco. Quando ricevi un segnale che è disponibile un nuovo ancoraggio, dovresti aggiungere questo nodo alla tua scena per quell'ancoraggio. Puoi predefinire i nodi e impostare l'ID; i nodi rimarranno semplicemente su ``(0, 0, 0)`` finché non sarà riconosciuto un piano.
 
-Tieni presente che, finché il rilevamento del piano è abilitato, le dimensioni, il posizionamento e l'orientamento di un'ancora saranno aggiornati man mano che la logica di rilevamento scopre di più sul mondo reale là fuori, soprattutto se solo una parte della superficie è in vista.
+Tieni presente che, finché il rilevamento del piano è abilitato, le dimensioni, il posizionamento e l'orientamento di un ancoraggio saranno aggiornati man mano che la logica di rilevamento scopre di più sul mondo reale là fuori, soprattutto se solo una parte della superficie è in vista.
 
 .. rst-class:: classref-introduction-group
 
@@ -56,7 +56,7 @@ Descrizioni dei metodi
 
 :ref:`Plane<class_Plane>` **get_plane**\ (\ ) |const| :ref:`🔗<class_XRAnchor3D_method_get_plane>`
 
-Restituisce un piano allineato con la nostra ancora; utile per i test di intersezione.
+Restituisce un piano allineato con il nostro ancoraggio; utile per i test di intersezione.
 
 .. rst-class:: classref-item-separator
 
@@ -68,7 +68,7 @@ Restituisce un piano allineato con la nostra ancora; utile per i test di interse
 
 :ref:`Vector3<class_Vector3>` **get_size**\ (\ ) |const| :ref:`🔗<class_XRAnchor3D_method_get_size>`
 
-Restituisce la dimensione stimata del piano che è stato rilevato. Diciamo che quando l'ancora si riferisce a un tavolo nel mondo reale, questa è la dimensione stimata della superficie di quel tavolo.
+Restituisce la dimensione stimata del piano che è stato rilevato. Diciamo che quando l'ancoraggio si riferisce a un tavolo nel mondo reale, questa è la dimensione stimata della superficie di quel tavolo.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -7,18 +7,18 @@ AudioEffectReverb
 
 **Успадковує:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a reverberation audio effect to an audio bus.
+Додає аудіоефект реверберації до аудіошини.
 
-Emulates an echo by playing a blurred version of the input audio.
+Імітує відлуння шляхом відтворення розмитої версії вхідного аудіосигналу.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-A "reverb" effect plays the input audio back continuously, decaying over a period of time. It simulates sounds in different kinds of spaces, ranging from small rooms, to big caverns.
+Ефект «реверберації» безперервно відтворює вхідний аудіосигнал, який з часом затихає. Він імітує звучання в різних приміщеннях — від невеликих кімнат до великих печер.
 
-See also :ref:`AudioEffectDelay<class_AudioEffectDelay>` for a non-blurry type of echo.
+Див. також :ref:`AudioEffectDelay<class_AudioEffectDelay>` для отримання ехо без ефекту розмиття.
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ See also :ref:`AudioEffectDelay<class_AudioEffectDelay>` for a non-blurry type o
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Аудіоефекти <../tutorials/audio/audio_effects>`
 
 - `Демо-версія шутера від третьої особи (TPS) <https://godotengine.org/asset-library/asset/2710>`__
 
@@ -77,7 +77,7 @@ See also :ref:`AudioEffectDelay<class_AudioEffectDelay>` for a non-blurry type o
 - |void| **set_damping**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping**\ (\ )
 
-Defines how reflective the imaginary room's walls are. The more reflective, the more high frequency content the reverb has. Value can range from 0 to 1.
+Визначає ступінь відбиття звуку від стін уявної кімнати. Чим сильніше відбиття, тим більше у реверберації високочастотних складових. Значення може коливатися від 0 до 1.
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ Defines how reflective the imaginary room's walls are. The more reflective, the 
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-The volume ratio of the original audio. At 0, only the modified audio is outputted. Value can range from 0 to 1.
+Коефіцієнт гучності вихідного аудіо. При значенні 0 виводиться лише модифікований аудіосигнал. Значення може бути в діапазоні від 0 до 1.
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ The volume ratio of the original audio. At 0, only the modified audio is outputt
 - |void| **set_hpf**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_hpf**\ (\ )
 
-High-pass filter allows frequencies higher than a certain cutoff threshold and attenuates frequencies lower than the cutoff threshold. Value can range from 0 to 1.
+Фільтр високих частот пропускає частоти, що перевищують певний поріг відсічення, і ослаблює частоти, нижчі за цей поріг. Значення може коливатися в діапазоні від 0 до 1.
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ High-pass filter allows frequencies higher than a certain cutoff threshold and a
 - |void| **set_predelay_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_feedback**\ (\ )
 
-Gain of early reflection copies. At higher values, early reflection copies are louder and ring out for longer. Value can range from 0 to 1.
+Коефіцієнт посилення ранніх відбитків. При більших значеннях ранні відбитки звучать гучніше і довше. Значення може коливатися в діапазоні від 0 до 1.
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Gain of early reflection copies. At higher values, early reflection copies are l
 - |void| **set_predelay_msec**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_msec**\ (\ )
 
-Time between the original audio and the early reflections of the reverb signal, in milliseconds. Value can range from 20 to 500.
+Час між вихідним звуком і ранніми відбиттями сигналу реверберації, у мілісекундах. Значення може коливатися від 20 до 500.
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ Time between the original audio and the early reflections of the reverb signal, 
 - |void| **set_spread**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_spread**\ (\ )
 
-Widens or narrows the stereo image of the reverb tail. At 1, it fully widens. Value can range from 0 to 1.
+Розширює або звужує стереозображення хвоста реверберації. При значенні 1 зображення розширюється до максимуму. Значення може змінюватися в діапазоні від 0 до 1.
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Widens or narrows the stereo image of the reverb tail. At 1, it fully widens. Va
 - |void| **set_wet**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wet**\ (\ )
 
-The volume ratio of the modified audio. At 0, only the original audio is outputted. Value can range from 0 to 1.
+Коефіцієнт гучності модифікованого аудіо. При значенні 0 відтворюється лише оригінальний аудіозапис. Значення може коливатися в діапазоні від 0 до 1.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

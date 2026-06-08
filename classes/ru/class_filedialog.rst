@@ -790,9 +790,9 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 
 :ref:`int<class_int>` **option_{index}/default** = ``0`` :ref:`🔗<class_FileDialog_property_option_{index}/default>`
 
-The default value for the option at ``index``.
+Значение по умолчанию для параметра в ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. option_count - 1`` range.
+\ **Примечание:** ``index`` — это значение в диапазоне ``0 .. option_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -804,9 +804,9 @@ The default value for the option at ``index``.
 
 :ref:`String<class_String>` **option_{index}/name** = ``""`` :ref:`🔗<class_FileDialog_property_option_{index}/name>`
 
-The name of the option at ``index``.
+Название опции по адресу ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. option_count - 1`` range.
+\ **Примечание:** ``index`` — это значение в диапазоне ``0 .. option_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -818,9 +818,9 @@ The name of the option at ``index``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **option_{index}/values** = ``PackedStringArray()`` :ref:`🔗<class_FileDialog_property_option_{index}/values>`
 
-The list of values for the option at ``index``.
+Список значений для параметра по адресу ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. option_count - 1`` range.
+\ **Примечание:** ``index`` — это значение в диапазоне ``0 .. option_count - 1``.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -911,17 +911,17 @@ The list of values for the option at ``index``.
 - |void| **set_use_native_dialog**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_native_dialog**\ (\ )
 
-If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplayServer>`, OS native dialog will be used instead of custom one.
+Если ``true`` и если это поддерживается текущим :ref:`DisplayServer<class_DisplayServer>`, вместо пользовательского диалогового окна будет использоваться собственное диалоговое окно ОС.
 
-\ **Note:** On Android, it is only supported when using :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. For access mode :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` and :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>`, the system will fall back to custom FileDialog.
+\ **Примечание:** На Android это поддерживается только при использовании :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. Для режимов доступа :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` и :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>` система будет использовать пользовательское диалоговое окно FileDialog.
 
-\ **Note:** On Linux and macOS, sandboxed apps always use native dialogs to access the host file system.
+\ **Примечание:** В Linux и macOS изолированные приложения всегда используют собственные диалоговые окна для доступа к файловой системе хоста.
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **Примечание:** В macOS изолированные приложения сохраняют закладки с ограниченным доступом, чтобы сохранить доступ к открытым папкам в нескольких сессиях. Используйте :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>`, чтобы получить список сохраненных закладок.
 
-\ **Note:** Native dialogs are isolated from the base process, file dialog properties can't be modified once the dialog is shown.
+\ **Примечание:** Собственные диалоговые окна изолированы от базового процесса, свойства диалогового окна файла нельзя изменить после его отображения.
 
-\ **Note:** This property is ignored in :ref:`EditorFileDialog<class_EditorFileDialog>`.
+\ **Примечание:** Это свойство игнорируется в :ref:`EditorFileDialog<class_EditorFileDialog>`.
 
 .. rst-class:: classref-section-separator
 
@@ -1447,7 +1447,7 @@ If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplaySe
 
 :ref:`Texture2D<class_Texture2D>` **menu_copy_path** :ref:`🔗<class_FileDialog_theme_icon_menu_copy_path>`
 
-Icon for the "Copy Path" context menu option.
+Значок для пункта контекстного меню «Копировать путь».
 
 .. rst-class:: classref-item-separator
 
@@ -1459,7 +1459,7 @@ Icon for the "Copy Path" context menu option.
 
 :ref:`Texture2D<class_Texture2D>` **menu_delete** :ref:`🔗<class_FileDialog_theme_icon_menu_delete>`
 
-Icon for the "Delete" context menu option.
+Значок для пункта контекстного меню «Удалить».
 
 .. rst-class:: classref-item-separator
 
@@ -1471,7 +1471,7 @@ Icon for the "Delete" context menu option.
 
 :ref:`Texture2D<class_Texture2D>` **menu_new_folder** :ref:`🔗<class_FileDialog_theme_icon_menu_new_folder>`
 
-Icon for the "New Folder..." context menu option. Usually it should be the same as :ref:`create_folder<class_FileDialog_theme_icon_create_folder>`; leave it empty if you want the context menu to show no icons.
+Значок для пункта контекстного меню "Создать папку...". Обычно он должен совпадать с :ref:`create_folder<class_FileDialog_theme_icon_create_folder>`; оставьте его пустым, если хотите, чтобы в контекстном меню не отображались значки.
 
 .. rst-class:: classref-item-separator
 
@@ -1483,7 +1483,7 @@ Icon for the "New Folder..." context menu option. Usually it should be the same 
 
 :ref:`Texture2D<class_Texture2D>` **menu_open_bundle** :ref:`🔗<class_FileDialog_theme_icon_menu_open_bundle>`
 
-Icon for the "Show Package Contents" context menu option. The option only appears for macOS bundles.
+Значок для пункта контекстного меню «Показать содержимое пакета». Этот пункт отображается только для пакетов macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1495,7 +1495,7 @@ Icon for the "Show Package Contents" context menu option. The option only appear
 
 :ref:`Texture2D<class_Texture2D>` **menu_refresh** :ref:`🔗<class_FileDialog_theme_icon_menu_refresh>`
 
-Icon for the "Refresh" context menu option. Usually it should be the same as :ref:`reload<class_FileDialog_theme_icon_reload>`; leave it empty if you want the context menu to show no icons.
+Значок для пункта контекстного меню «Обновить». Обычно он должен совпадать с :ref:`reload<class_FileDialog_theme_icon_reload>`; оставьте его пустым, если хотите, чтобы в контекстном меню не отображались значки.
 
 .. rst-class:: classref-item-separator
 
@@ -1507,7 +1507,7 @@ Icon for the "Refresh" context menu option. Usually it should be the same as :re
 
 :ref:`Texture2D<class_Texture2D>` **menu_show_in_file_manager** :ref:`🔗<class_FileDialog_theme_icon_menu_show_in_file_manager>`
 
-Icon for the "Show in File Manager" context menu option.
+Значок для пункта контекстного меню «Показать в файловом менеджере».
 
 .. rst-class:: classref-item-separator
 

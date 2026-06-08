@@ -7,16 +7,16 @@ AudioEffectLowPassFilter
 
 **继承：** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a low-pass filter to an audio bus.
+向音频总线添加一个低通滤波器。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-A "low-pass" filter attenuates frequencies higher than :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` and allows lower frequencies to pass unchanged.
+“低通”滤波器衰减高于 :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 的频率，并允许更低频率的信号原样通过。
 
-This filter can be used to muffle sounds.
+该滤波器可用于使声音变得低沉。
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ This filter can be used to muffle sounds.
 
 - :doc:`音频总线 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

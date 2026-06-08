@@ -14,9 +14,9 @@ Un singleton pour gérer les entrées.
 Description
 -----------
 
-Le singleton **Input** gère les pressions de touches, les clics et mouvements de souris, les manettes et les points d'entrées d'actions. Les actions et leurs évènements peuvent être configurés depuis l'onglet **Contrôles** dans **Projet > Paramètres du projet...**, ou avec la classe :ref:`InputMap<class_InputMap>`.
+Le singleton **Input** gère les pressions de touches, les clics et mouvements de souris, les manettes et les actions d'entrée. Les actions et leurs évènements peuvent être configurés depuis l'onglet **Contrôles** dans **Projet > Paramètres du projet...**, ou avec la classe :ref:`InputMap<class_InputMap>`.
 
-\ **Note:** Les méthodes d'**Input** reflètent l'état général des entrées et ne sont pas altérées par :ref:`Control.accept_event()<class_Control_method_accept_event>` ou :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>`, étant donné que ces méthodes ne s'occupent que de la manière dont les entrées sont propagées dans le :ref:`SceneTree<class_SceneTree>`.
+\ **Note :** Les méthodes d'**Input** reflètent l'état général des entrées et ne sont pas altérées par :ref:`Control.accept_event()<class_Control_method_accept_event>` ou :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>`, étant donné que ces méthodes ne s'occupent que de la manière dont les entrées sont propagées dans le :ref:`SceneTree<class_SceneTree>`.
 
 .. rst-class:: classref-introduction-group
 

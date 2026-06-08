@@ -477,7 +477,7 @@ I 形光标。通常用于指示点击鼠标后文本光标的位置。
 - |void| **set_ignore_joypad_on_unfocused_application**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignoring_joypad_on_unfocused_application**\ (\ )
 
-If ``true``, joypad input (including motion sensors) and LED light changes will be ignored and joypad vibration will be stopped when the application is not focused.
+如果为 ``true``\ ，当应用程序失去焦点时，游戏手柄输入（包括运动传感器）和 LED 灯光变化将被忽略，且游戏手柄的振动将被停止。
 
 .. rst-class:: classref-item-separator
 
@@ -574,11 +574,11 @@ If ``true``, joypad input (including motion sensors) and LED light changes will 
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Clears the calibration information for the specified joypad's motion sensors, if it has any and if they were calibrated.
+清除指定游戏手柄的运动传感器的校准信息，仅当该手柄拥有传感器且已完成校准时有效。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+有关在项目中使用游戏手柄运动传感器及校准的示例，请参见 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能仅支持 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -664,9 +664,9 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 :ref:`Array<class_Array>`\[:ref:`int<class_int>`\] **get_connected_joypads**\ (\ ) :ref:`🔗<class_Input_method_get_connected_joypads>`
 
-Returns an :ref:`Array<class_Array>` containing the device IDs of all currently connected joypads.
+返回一个包含所有当前已连接游戏手柄的设备 ID 的 :ref:`Array<class_Array>` 数组。
 
-\ **Note:** The order of connected joypads can not be guaranteed to be the same after a project and/or the editor is restarted, because Godot doesn't save the order of joypad connections. Joypads are registered in the order they are discovered by Godot.
+\ **注意：** 由于 Godot 不会保存游戏手柄的连接顺序，因此无法保证在项目和/或编辑器重启后，手柄的顺序保持不变。游戏手柄会按照 Godot 发现它们的顺序进行注册。
 
 .. rst-class:: classref-item-separator
 
@@ -724,19 +724,19 @@ Returns an :ref:`Array<class_Array>` containing the device IDs of all currently 
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns the acceleration, including the force of gravity, in m/s² of the joypad's accelerometer sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`get_joy_gravity()<class_Input_method_get_joy_gravity>` and :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+如果游戏手柄拥有加速度计传感器且当前已启用，则返回该传感器的加速度（包含重力）数值，单位为 m/s²。否则，该方法返回 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。另见 :ref:`get_joy_gravity()<class_Input_method_get_joy_gravity>` 和 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`\ 。
 
-For a joypad held in front of you, the returned axes are defined as follows:
+对于握在面前的游戏手柄，返回的坐标轴定义如下：
 
-+X ... -X: left ... right;
++X ... -X：左 ... 右；
 
-+Y ... -Y: bottom ... top;
++Y ... -Y：下 ... 上；
 
-+Z ... -Z: farther ... closer.
++Z ... -Z：远 ... 近。
 
-The gravity part value is measured as a vector with length of ``9.8`` away from the center of the Earth, which is a negative Y value.
+重力分量的值被测量为一个长度为 ``9.8`` 的向量，方向背离地心，即负 Y 值。
 
-\ **Note:** This feature is only supported on Windows, Linux, and macOS. On iOS, joypad accelerometer sensor reading is not supported due to OS limitations.
+\ **注意：** 此功能仅支持 Windows、Linux 和 macOS 平台。由于操作系统限制，iOS 平台不支持读取游戏手柄的加速度计传感器数据。
 
 .. rst-class:: classref-item-separator
 
@@ -762,19 +762,19 @@ The gravity part value is measured as a vector with length of ``9.8`` away from 
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns the gravity in m/s² of the joypad's accelerometer sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`get_joy_accelerometer()<class_Input_method_get_joy_accelerometer>` and :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+如果游戏手柄拥有加速度计传感器且当前已启用，则返回该传感器测得的重力值（单位为 m/s²）。否则，该方法返回 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。另见 :ref:`get_joy_accelerometer()<class_Input_method_get_joy_accelerometer>` 和 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`\ 。
 
-For a joypad held in front of you, the returned axes are defined as follows:
+对于握在面前的游戏手柄，返回的坐标轴定义如下：
 
-+X ... -X: left ... right;
++X ... -X：左 ... 右；
 
-+Y ... -Y: bottom ... top;
++Y ... -Y：下 ... 上；
 
-+Z ... -Z: farther ... closer.
++Z ... -Z：远 ... 近。
 
-The gravity part value is measured as a vector with length of ``9.8`` away from the center of the Earth, which is a negative Y value.
+重力分量的值被测量为一个长度为 ``9.8`` 的向量，方向背离地心，即负 Y 值。
 
-\ **Note:** This feature is only supported on Windows, Linux, and macOS. On iOS, joypad accelerometer sensor reading is not supported due to OS limitations.
+\ **注意：** 此功能仅支持 Windows、Linux 和 macOS 平台。由于操作系统限制，iOS 平台不支持读取游戏手柄的加速度计传感器数据。
 
 .. rst-class:: classref-item-separator
 
@@ -786,9 +786,9 @@ The gravity part value is measured as a vector with length of ``9.8`` away from 
 
 :ref:`String<class_String>` **get_joy_guid**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_guid>`
 
-Returns an SDL-compatible device GUID on platforms that use gamepad remapping, e.g. ``030000004c050000c405000000010000``. Returns an empty string if it cannot be found. Godot uses SDL's internal mappings, supplemented by community-contributed mappings, to determine gamepad names and mappings based on this GUID.
+在使用手柄重映射的平台上，返回一个与 SDL 兼容的设备 GUID（例如 ``030000004c050000c405000000010000``\ ）。如果找不到，则返回一个空字符串。Godot 会利用 SDL 内置的映射规则，并结合社区贡献的映射数据，根据这个 GUID 来确定手柄的名称和按键映射。
 
-On Windows, all XInput joypad GUIDs will be overridden by Godot to ``__XINPUT_DEVICE__``, because their mappings are the same.
+在 Windows 平台上，所有 XInput 手柄的 GUID 都会被 Godot 强制覆盖为 ``__XINPUT_DEVICE__``\ ，因为它们的映射规则都是完全一样的。
 
 .. rst-class:: classref-item-separator
 
@@ -802,21 +802,21 @@ On Windows, all XInput joypad GUIDs will be overridden by Godot to ``__XINPUT_DE
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns the rotation rate in rad/s around a joypad's X, Y, and Z axes of the gyroscope sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+如果游戏手柄拥有陀螺仪传感器且当前已启用，则返回该传感器围绕手柄 X、Y、Z 轴的旋转速率（单位为 rad/s）。否则，该方法返回 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。另见 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`\ 。
 
-The rotation is positive in the counter-clockwise direction.
+旋转方向遵循逆时针为正。
 
-For a joypad held in front of you, the returned axes are defined as follows:
+对于握在面前的游戏手柄，返回的坐标轴定义如下：
 
-X: Angular speed around the X axis (pitch);
+X：围绕 X 轴的角速度（俯仰）；
 
-Y: Angular speed around the Y axis (yaw);
+Y：围绕 Y 轴的角速度（偏航）；
 
-Z: Angular speed around the Z axis (roll).
+Z：围绕 Z 轴的角速度（翻滚）。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad gyroscope and gyroscope calibration in your games.
+有关在项目中如何使用游戏手柄陀螺仪及陀螺仪校准的示例，请参见 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能仅支持 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -828,25 +828,25 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 :ref:`Dictionary<class_Dictionary>` **get_joy_info**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_info>`
 
-Returns a dictionary with extra platform-specific information about the device, e.g. the raw gamepad name from the OS or the Steam Input index.
+返回一个包含关于该设备的额外平台特定信息的字典，例如来自操作系统的原始手柄名称，或者是 Steam Input 的索引。
 
-On Windows, Linux, macOS, and iOS, the dictionary contains the following fields:
+在 Windows、Linux、macOS 和 iOS 平台上，该字典包含以下字段：
 
-\ ``raw_name``: The name of the controller as it came from the OS, before getting renamed by the controller database.
+\ ``raw_name``: 控制器在操作系统中原本的原始名称，也就是在被控制器数据库重命名之前的名字。
 
-\ ``vendor_id``: The USB vendor ID of the device.
+\ ``vendor_id``: 设备的 USB 供应商 ID。
 
-\ ``product_id``: The USB product ID of the device.
+\ ``product_id``: 设备的 USB 产品 ID。
 
-\ ``serial_number``: The serial number of the device. This key won't be present if the serial number is unavailable.
+\ ``serial_number``: 设备的序列号。如果无法获取序列号，则不会包含这个键。
 
-The dictionary can also include the following fields under selected platforms:
+在特定的平台上，这个字典还可能包含以下字段：
 
-\ ``steam_input_index``: The Steam Input gamepad index (Windows, Linux, and macOS only). If the device is not a Steam Input device this key won't be present.
+\ ``steam_input_index``: Steam Input 手柄的索引（仅限 Windows、Linux 和 macOS 平台）。如果该设备不是 Steam Input 设备，则不会包含这个键。
 
-\ ``xinput_index``: The index of the controller in the XInput system (Windows only). This key won't be present for devices not handled by XInput.
+\ ``xinput_index``: XInput 系统中该控制器的索引（仅限 Windows 平台）。对于不由 XInput 处理的设备，不会包含这个键。
 
-\ **Note:** The returned dictionary is always empty on Android and Web.
+\ **Note:** 在 Android 和 Web 平台上，返回的字典永远是空的。
 
 .. rst-class:: classref-item-separator
 
@@ -860,15 +860,15 @@ The dictionary can also include the following fields under selected platforms:
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns the calibration information about the specified joypad's motion sensors in the form of a :ref:`Dictionary<class_Dictionary>`, if it has any and if they have been calibrated, otherwise returns an empty :ref:`Dictionary<class_Dictionary>`.
+如果指定的游戏手柄拥有运动传感器且已完成校准，则以 :ref:`Dictionary<class_Dictionary>`\ （字典）的形式返回关于其运动传感器的校准信息；否则，返回一个空的 :ref:`Dictionary<class_Dictionary>`\ 。
 
-The dictionary contains the following fields:
+该字典包含以下字段：
 
-\ ``gyroscope_offset``: average offset in gyroscope values from :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>` in rad/s.
+\ ``gyroscope_offset``\ ：陀螺仪数值相对于 :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>` 的平均偏移量，单位为 rad/s。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+有关在项目中如何使用游戏手柄运动传感器及校准的示例，请参见 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能仅支持 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -882,9 +882,9 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns the joypad's motion sensor rate in Hz, if the joypad has motion sensors and they're currently enabled. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+如果该手柄配备了运动传感器，并且当前处于开启状态，则返回该手柄运动传感器的采样频率（单位为赫兹 Hz）。另请参阅 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>` 方法。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：**\ 该功能仅在 Windows、Linux、macOS 和 iOS 平台上受支持。
 
 .. rst-class:: classref-item-separator
 
@@ -908,11 +908,11 @@ Returns the joypad's motion sensor rate in Hz, if the joypad has motion sensors 
 
 :ref:`float<class_float>` **get_joy_vibration_duration**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_vibration_duration>`
 
-Returns the duration of the current vibration effect in seconds.
+返回当前振动效果的持续时间，单位为秒。
 
-\ **Note:** This method returns the same value that was passed to :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`, and this value does **not** change when the joypad's vibration runs out, it only gets reset after a call to :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
+\ **注意：** 此方法返回的值即为传递给 :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>` 的原始数值。当游戏手柄的振动效果结束时，该数值\ **不会**\ 自动改变，只有在调用 :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>` 后才会被重置。
 
-If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>` instead.
+如果你想检查游戏手柄是否仍在振动，请改用 :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -926,7 +926,7 @@ If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating(
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns the remaining duration of the current vibration effect in seconds.
+返回当前震动效果剩余的持续时间（以秒为单位）。
 
 .. rst-class:: classref-item-separator
 
@@ -938,11 +938,11 @@ Returns the remaining duration of the current vibration effect in seconds.
 
 :ref:`Vector2<class_Vector2>` **get_joy_vibration_strength**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_vibration_strength>`
 
-Returns the strength of the joypad vibration: x is the strength of the weak motor, and y is the strength of the strong motor.
+返回游戏手柄振动的强度：x 分量是弱马达的强度，y 分量是强马达的强度。
 
-\ **Note:** This method returns the same values that were passed to :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`, and these values do **not** change when the joypad's vibration runs out, they only get reset after a call to :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
+\ **注意：** 此方法返回的值即为传递给 :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>` 的原始数值。当游戏手柄的振动效果结束时，这些数值\ **不会**\ 自动改变，只有在调用 :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>` 后才会被重置。
 
-If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>` instead.
+如果你想检查游戏手柄是否仍在振动，请改用 :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1022,9 +1022,9 @@ If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating(
 
 :ref:`bool<class_bool>` **has_joy_light**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_has_joy_light>`
 
-Returns ``true`` if the joypad has an LED light that can change colors and/or brightness. See also :ref:`set_joy_light()<class_Input_method_set_joy_light>`.
+如果该手柄带有可以改变颜色和/或亮度的 LED 指示灯，则返回 ``true``\ （真）。另请参阅 :ref:`set_joy_light()<class_Input_method_set_joy_light>` 方法。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 该功能仅在 Windows、Linux、macOS 和 iOS 平台上受支持。
 
 .. rst-class:: classref-item-separator
 
@@ -1038,11 +1038,11 @@ Returns ``true`` if the joypad has an LED light that can change colors and/or br
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns ``true`` if the joypad has motion sensors (accelerometer and gyroscope).
+如果该手柄配备了运动传感器（包括加速度计和陀螺仪），则返回 ``true``\ （真）。
 
-\ **Note:** On iOS, joypad accelerometer sensor reading is not supported due to OS limitations.
+\ **注意：** 受限于 iOS 系统，不支持读取手柄的加速度计传感器数据。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 该功能仅在 Windows、Linux、macOS 和 iOS 平台上受支持。
 
 .. rst-class:: classref-item-separator
 
@@ -1054,9 +1054,9 @@ Returns ``true`` if the joypad has motion sensors (accelerometer and gyroscope).
 
 :ref:`bool<class_bool>` **has_joy_vibration**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_has_joy_vibration>`
 
-Returns ``true`` if the joypad supports vibration. See also :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
+如果游戏手柄支持振动，则返回 ``true``\ 。另见 :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`\ 。
 
-\ **Note:** For macOS, vibration is only supported in macOS 11 and later. When connected via USB, vibration is only supported for major brand controllers (except Xbox One and Xbox Series X/S controllers) due to macOS limitations.
+\ **注意：** 对于 macOS 系统，仅在 macOS 11 及更高版本中支持振动功能。由于 macOS 的限制，当通过 USB 连接时，仅支持主流品牌的游戏手柄（不包括 Xbox One 和 Xbox Series X/S 手柄）。
 
 .. rst-class:: classref-item-separator
 
@@ -1174,9 +1174,9 @@ Returns ``true`` if the joypad supports vibration. See also :ref:`start_joy_vibr
 
 :ref:`bool<class_bool>` **is_joy_button_pressed**\ (\ device\: :ref:`int<class_int>`, button\: :ref:`JoyButton<enum_@GlobalScope_JoyButton>`\ ) |const| :ref:`🔗<class_Input_method_is_joy_button_pressed>`
 
-Returns ``true`` if you are pressing the joypad button at index ``button``.
+如果你当前正按着手柄上索引为 ``button`` 的按键，则返回 ``true``\ （真）。
 
-\ **Note:** If you want to check if a joypad button was just pressed, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **注意：** 如果你想检测手柄按键是不是刚刚被按下（也就是按下的那一瞬间），请使用 Godot 的输入动作系统，配合 :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 方法；或者像下面这样，改用 :ref:`Node._input()<class_Node_private_method__input>` 方法来处理：
 
 
 .. tabs::
@@ -1223,11 +1223,11 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns ``true`` if the joypad's motion sensors have been calibrated.
+如果该手柄的运动传感器已经完成了校准，则返回 ``true``\ （真）。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+想了解如何在你的游戏中使用手柄运动传感器及校准功能，可以查看 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` 里的示例。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 该功能仅在 Windows、Linux、macOS 和 iOS 平台上受支持。
 
 .. rst-class:: classref-item-separator
 
@@ -1241,11 +1241,11 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns ``true`` if the joypad's motion sensors are currently being calibrated.
+如果该手柄的运动传感器当前正在进行校准，则返回 ``true``\ （真）。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+想了解如何在你的游戏中使用手柄运动传感器及校准功能，可以查看 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` 里的示例。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 该功能仅在 Windows、Linux、macOS 和 iOS 平台上受支持。
 
 .. rst-class:: classref-item-separator
 
@@ -1259,11 +1259,11 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns ``true`` if the requested joypad has motion sensors (accelerometer and gyroscope) and they are currently enabled. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>` and :ref:`has_joy_motion_sensors()<class_Input_method_has_joy_motion_sensors>`.
+如果请求的游戏手柄拥有运动传感器（加速度计和陀螺仪）且当前已启用，则返回 ``true``\ 。另见 :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>` 和 :ref:`has_joy_motion_sensors()<class_Input_method_has_joy_motion_sensors>`\ 。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+有关在项目中如何使用游戏手柄运动传感器及校准的示例，请参见 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能仅支持 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -1277,9 +1277,9 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns ``true`` if the joypad is still vibrating after a call to :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
+如果在调用 :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>` 后，游戏手柄仍在振动，则返回 ``true``\ 。
 
-Unlike :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` and :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`, this method returns ``false`` after the joypad's vibration runs out.
+与 :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` 和 :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>` 不同，当游戏手柄的振动结束后，此方法会返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1291,9 +1291,9 @@ Unlike :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_s
 
 :ref:`bool<class_bool>` **is_key_label_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_key_label_pressed>`
 
-Returns ``true`` if you are pressing the key with the ``keycode`` printed on it. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant or any Unicode character code.
+如果正在按下键盘上印有 ``keycode`` 标签的键，则返回 ``true``\ 。你可以传递一个 :ref:`Key<enum_@GlobalScope_Key>` 常量或任何 Unicode 字符编码。
 
-\ **Note:** If you want to check if a key was just pressed by using its label, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **注意：** 如果你想通过按键的标签（Label）来检查该键是否刚刚被按下，应使用 Godot 的输入动作系统配合 :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>`\ ，或者像下面这样改用 :ref:`Node._input()<class_Node_private_method__input>` 方法：
 
 
 .. tabs::
@@ -1326,13 +1326,13 @@ Returns ``true`` if you are pressing the key with the ``keycode`` printed on it.
 
 :ref:`bool<class_bool>` **is_key_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_key_pressed>`
 
-Returns ``true`` if you are pressing the Latin key in the current keyboard layout. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant.
+如果你当前正按着当前键盘布局下的某个拉丁字母键，则返回 ``true``\ （真）。你可以传入一个 :ref:`Key<enum_@GlobalScope_Key>` 枚举常量。
 
-\ :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` is only recommended over :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` in non-game applications. This ensures that shortcut keys behave as expected depending on the user's keyboard layout, as keyboard shortcuts are generally dependent on the keyboard layout in non-game applications. If in doubt, use :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
+在非游戏类的应用程序中，才推荐使用 :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` 而不是 :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`\ 。这是因为非游戏应用中的键盘快捷键通常依赖于用户的键盘布局，这样能确保快捷键在不同布局下都能按预期工作。如果你不确定该用哪个，那就直接用 :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 吧。
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **注意：** 由于键盘“按键冲突”（ghosting）现象的存在，即使你按下了某个操作对应的按键，\ :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` 也可能会返回 ``false``\ 。想了解更多信息，可以查看文档中的 `输入示例 <$ DOCS_URL/tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
 
-\ **Note:** If you want to check if a key was just pressed by using its keycode, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **注意：** 如果你想通过按键码（keycode）来检测某个键是不是刚刚被按下，请使用 Godot 的输入动作系统配合 :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 方法，或者像下面这样改用 :ref:`Node._input()<class_Node_private_method__input>` 方法来处理：
 
 
 .. tabs::
@@ -1365,9 +1365,9 @@ Returns ``true`` if you are pressing the Latin key in the current keyboard layou
 
 :ref:`bool<class_bool>` **is_mouse_button_pressed**\ (\ button\: :ref:`MouseButton<enum_@GlobalScope_MouseButton>`\ ) |const| :ref:`🔗<class_Input_method_is_mouse_button_pressed>`
 
-Returns ``true`` if you are pressing the mouse button specified with :ref:`MouseButton<enum_@GlobalScope_MouseButton>`.
+如果你当前正按着 :ref:`MouseButton<enum_@GlobalScope_MouseButton>` 枚举中指定的鼠标按键，则返回 ``true``\ （真）。
 
-\ **Note:** If you want to check if a mouse button was just pressed, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **注意：** 如果你想检测鼠标按键是不是刚刚被按下（也就是按下的那一瞬间），请使用 Godot 的输入动作系统配合 :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 方法，或者像下面这样改用 :ref:`Node._input()<class_Node_private_method__input>` 方法来处理：
 
 
 .. tabs::
@@ -1400,13 +1400,13 @@ Returns ``true`` if you are pressing the mouse button specified with :ref:`Mouse
 
 :ref:`bool<class_bool>` **is_physical_key_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_physical_key_pressed>`
 
-Returns ``true`` if you are pressing the key in the physical location on the 101/102-key US QWERTY keyboard. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant.
+如果你当前正按着 101/102 键美式 QWERTY 键盘上的某个物理按键，则返回 ``true``\ （真）。你可以传入一个 :ref:`Key<enum_@GlobalScope_Key>` 枚举常量。
 
-\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` is recommended over :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` for in-game actions, as it will make :kbd:`W`/:kbd:`A`/:kbd:`S`/:kbd:`D` layouts work regardless of the user's keyboard layout. :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` will also ensure that the top row number keys work on any keyboard layout. If in doubt, use :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
+对于游戏内的操作，推荐使用 :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 而不是 :ref:`is_key_pressed()<class_Input_method_is_key_pressed>`\ 。因为使用物理按键检测，无论用户是什么键盘布局，都能确保 :kbd:`W`/:kbd:`A`/:kbd:`S`/:kbd:`D` 的布局正常工作。同时，\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 也能确保键盘最上方那一排数字键在任何键盘布局下都能正常响应。如果你不确定该用哪个，那就直接用 :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 吧。
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **注意：** 由于键盘“按键冲突”（ghosting）现象的存在，即使你按下了某个操作对应的按键，\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` 也可能会返回 ``false``\ 。想了解更多信息，可以查看文档中的 `输入示例 <$ DOCS_URL/tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
 
-\ **Note:** If you want to check if a key was just pressed by using its physical keycode, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **注意：** 如果你想通过物理按键码（physical keycode）来检测某个键是不是刚刚被按下，请使用 Godot 的输入动作系统配合 :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` 方法，或者像下面这样改用 :ref:`Node._input()<class_Node_private_method__input>` 方法来处理：
 
 
 .. tabs::
@@ -1566,11 +1566,11 @@ Returns ``true`` if you are pressing the key in the physical location on the 101
 
 |void| **set_joy_light**\ (\ device\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Input_method_set_joy_light>`
 
-Sets the joypad's LED light, if available, to the specified color. See also :ref:`has_joy_light()<class_Input_method_has_joy_light>`.
+如果该手柄配备了 LED 指示灯，则将其设置为指定的颜色。另请参阅 :ref:`has_joy_light()<class_Input_method_has_joy_light>` 方法。
 
-\ **Note:** There is no way to get the color of the light from a joypad. If you need to know the assigned color, store it separately.
+\ **注意：** 无法从手柄直接获取当前灯光的颜色。如果你需要知道当前设定的颜色，请自行将其单独存储起来。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 该功能仅在 Windows、Linux、macOS 和 iOS 平台上受支持。
 
 .. rst-class:: classref-item-separator
 
@@ -1584,11 +1584,11 @@ Sets the joypad's LED light, if available, to the specified color. See also :ref
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Sets the specified joypad's calibration information. See also :ref:`get_joy_motion_sensors_calibration()<class_Input_method_get_joy_motion_sensors_calibration>`.
+设置指定游戏手柄的校准信息。另见 :ref:`get_joy_motion_sensors_calibration()<class_Input_method_get_joy_motion_sensors_calibration>`\ 。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+有关在项目中如何使用游戏手柄运动传感器及校准的示例，请参见 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能仅支持 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -1602,13 +1602,13 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Enables or disables the motion sensors (accelerometer and gyroscope), if available, on the specified joypad.
+启用或禁用指定游戏手柄上的运动传感器（加速度计和陀螺仪），如果该设备支持的话。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+有关在项目中如何使用游戏手柄运动传感器及校准的示例，请参见 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>`\ 。
 
-It's recommended to disable the motion sensors when they're no longer being used, because otherwise it might drain the controller battery faster.
+建议在不再使用运动传感器时将其禁用，因为否则可能会导致控制器电池消耗得更快。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能仅支持 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -1650,11 +1650,11 @@ It's recommended to disable the motion sensors when they're no longer being used
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Starts the process of calibrating the specified joypad's gyroscope, if it has one.
+启动对指定游戏手柄陀螺仪的校准过程（如果该手柄具备陀螺仪）。
 
-Once a joypad's gyroscope has been calibrated correctly (e.g. laying still on a table without being rotated), :ref:`get_joy_gyroscope()<class_Input_method_get_joy_gyroscope>` will return values close or equal to :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>` when the joypad is not being rotated.
+一旦游戏手柄的陀螺仪被正确校准（例如，将其静止放置在桌面上且未发生旋转），当手柄未被转动时，\ :ref:`get_joy_gyroscope()<class_Input_method_get_joy_gyroscope>` 将返回接近或等于 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>` 的值。
 
-Here's an example of how to use joypad gyroscope and gyroscope calibration in your games:
+以下是在游戏中使用游戏手柄陀螺仪及陀螺仪校准的示例：
 
 
 .. tabs::
@@ -1758,9 +1758,9 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
 
 
 
-\ **Note:** Accelerometer sensor doesn't usually require calibration.
+\ **注意：** 加速度计传感器通常不需要校准。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 此功能仅支持 Windows、Linux、macOS 和 iOS 平台。
 
 .. rst-class:: classref-item-separator
 
@@ -1772,21 +1772,21 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
 
 |void| **start_joy_vibration**\ (\ device\: :ref:`int<class_int>`, weak_magnitude\: :ref:`float<class_float>`, strong_magnitude\: :ref:`float<class_float>`, duration\: :ref:`float<class_float>` = 0\ ) :ref:`🔗<class_Input_method_start_joy_vibration>`
 
-Starts to vibrate the joypad. See also :ref:`has_joy_vibration()<class_Input_method_has_joy_vibration>` and :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`.
+开始让手柄震动。另请参阅 :ref:`has_joy_vibration()<class_Input_method_has_joy_vibration>` 和 :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>` 方法。
 
-Joypads usually come with two rumble motors, a strong and a weak one.
+手柄通常配有两个震动马达：一个强力马达和一个弱力马达。
 
-\ ``weak_magnitude`` is the strength of the weak motor (between ``0.0`` and ``1.0``).
+\ ``weak_magnitude`` 是弱力马达的强度（取值范围在 ``0.0`` 到 ``1.0`` 之间）。
 
-\ ``strong_magnitude`` is the strength of the strong motor (between ``0.0`` and ``1.0``).
+\ ``strong_magnitude`` 是强力马达的强度（取值范围在 ``0.0`` 到 ``1.0`` 之间）。
 
-\ ``duration`` is the duration of the effect in seconds (a duration of ``0.0`` will try to play the vibration as long as possible, which is about 65 seconds).
+\ ``duration`` 是震动效果的持续时间，单位为秒（如果将持续时间设为 ``0.0``\ ，系统会尽可能长时间地播放震动，大约能持续 65 秒）。
 
-The vibration can be stopped early by calling :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
+你可以通过调用 :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>` 来提前停止震动。
 
-See also :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` and :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`.
+另请参阅 :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` 和 :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`\ 。
 
-\ **Note:** For macOS, vibration is only supported in macOS 11 and later. When connected via USB, vibration is only supported for major brand controllers (except Xbox One and Xbox Series X/S controllers) due to macOS limitations.
+\ **注意：** 在 macOS 平台上，仅 macOS 11 及更高版本支持震动功能。当通过 USB 连接时，受限于 macOS 的系统限制，仅主流品牌的手柄支持震动（Xbox One 和 Xbox Series X/S 手柄除外）。
 
 .. rst-class:: classref-item-separator
 
@@ -1800,11 +1800,11 @@ See also :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Stops the calibration process of the specified joypad's motion sensors.
+停止指定手柄运动传感器的校准过程。
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+想了解如何在你的游戏中使用手柄运动传感器及校准功能，可以查看 :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` 里的示例。
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **注意：** 该功能仅在 Windows、Linux、macOS 和 iOS 平台上受支持。
 
 .. rst-class:: classref-item-separator
 
@@ -1828,21 +1828,21 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 |void| **vibrate_handheld**\ (\ duration_ms\: :ref:`int<class_int>` = 500, amplitude\: :ref:`float<class_float>` = -1.0\ ) :ref:`🔗<class_Input_method_vibrate_handheld>`
 
-Vibrate the handheld device for the specified duration in milliseconds.
+让手持设备（比如手机）按照指定的毫秒数进行震动。
 
-\ ``amplitude`` is the strength of the vibration, as a value between ``0.0`` and ``1.0``. If set to ``-1.0``, the default vibration strength of the device is used.
+\ ``amplitude`` 是震动的强度，取值范围在 ``0.0`` 到 ``1.0`` 之间。如果设置为 ``-1.0``\ ，则会使用设备默认的震动强度。
 
-\ **Note:** This method is implemented on Android, iOS, and Web. It has no effect on other platforms.
+\ **注意：** 该方法仅在 Android、iOS 和 Web 平台上有效，在其他平台上没有任何效果。
 
-\ **Note:** For Android, :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` requires enabling the ``VIBRATE`` permission in the export preset. Otherwise, :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` will have no effect.
+\ **注意：** 在 Android 平台上，\ :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` 需要在导出预设中开启 ``VIBRATE`` 权限，否则该方法将不会生效。
 
-\ **Note:** For iOS, specifying the duration is only supported in iOS 13 and later.
+\ **注意：** 在 iOS 平台上，仅 iOS 13 及更高版本支持指定震动时长。
 
-\ **Note:** For Web, the amplitude cannot be changed.
+\ **注意：** 在 Web 平台上，无法更改震动幅度（即 amplitude 参数无效）。
 
-\ **Note:** Some web browsers such as Safari and Firefox for Android do not support :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>`.
+\ **注意：** 部分网页浏览器（如 Safari 和 Firefox for Android）不支持 :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>`\ 。
 
-\ **Note:** Device settings such as vibration on/off, "do not disturb" mode or specific haptic feedback on/off may prevent :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` effects.
+\ **注意：** 设备的系统设置（例如震动开关、勿扰模式或特定的触感反馈开关）可能会阻止 :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` 产生效果。
 
 .. rst-class:: classref-item-separator
 

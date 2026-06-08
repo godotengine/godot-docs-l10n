@@ -224,7 +224,7 @@ MainLoop
 
 **NOTIFICATION_APPLICATION_PIP_MODE_ENTERED** = ``2019`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_APPLICATION_PIP_MODE_ENTERED>`
 
-Notification received when the application enters picture-in-picture mode.
+当应用程序进入画中画模式时收到的通知。
 
 .. _class_MainLoop_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED:
 
@@ -232,7 +232,7 @@ Notification received when the application enters picture-in-picture mode.
 
 **NOTIFICATION_APPLICATION_PIP_MODE_EXITED** = ``2020`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED>`
 
-Notification received when the application exits picture-in-picture mode.
+当应用程序退出画中画模式时收到的通知。
 
 .. rst-class:: classref-section-separator
 

@@ -426,11 +426,11 @@ Oggetto di ingresso di livello superiore nell'API grafica (il parametro ``rid`` 
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_COMMAND_QUEUE** = ``3``
 
-The main graphics-compute command queue (``rid`` parameter is ignored).
+La coda principale dei comandi di elaborazione grafica (il parametro ``rid`` è ignorato).
 
 - Vulkan: ``VkQueue``.
 
-- D3D12: ``ID3D12CommandQueue``.
+- Metal: ``MTLCommandQueue``.
 
 - Metal: ``MTLCommandQueue``.
 
@@ -3279,7 +3279,7 @@ Imposta questo flag in modo che venga creato come storage. Ciò è utile se i Co
 
 **Sperimentale:** Questa costante potrebbe essere cambiata o rimossa in versioni future.
 
-Allows usage of this buffer as input data for an acceleration structure build operation. You must first check that the GPU supports it:
+Consente di usare questo buffer come dati di input per un'operazione di costruzione della struttura di accelerazione. È necessario prima verificare che la GPU lo supporti:
 
 
 .. tabs::
@@ -5862,11 +5862,11 @@ Sets the push constant data to ``buffer`` for the specified ``compute_list``. Th
 
 :ref:`RID<class_RID>` **compute_pipeline_create**\ (\ shader\: :ref:`RID<class_RID>`, specialization_constants\: :ref:`Array<class_Array>`\[:ref:`RDPipelineSpecializationConstant<class_RDPipelineSpecializationConstant>`\] = []\ ) :ref:`🔗<class_RenderingDevice_method_compute_pipeline_create>`
 
-Creates a new compute pipeline. It can be accessed with the RID that is returned.
+Crea una nuova pipeline di calcolo. È possibile accedervi con il RID restituito.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingDevice_method_free_rid>` del RenderingServer.
 
-This will be freed automatically when the ``shader`` is freed.
+L'RID si libererà automaticamente quando si libera lo ``shader``.
 
 .. rst-class:: classref-item-separator
 
@@ -6187,11 +6187,11 @@ Questo metodo non fa nulla e restituisce sempre un :ref:`PackedInt64Array<class_
 
 :ref:`RID<class_RID>` **framebuffer_create**\ (\ textures\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], validate_with_format\: :ref:`int<class_int>` = -1, view_count\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_RenderingDevice_method_framebuffer_create>`
 
-Creates a new framebuffer. It can be accessed with the RID that is returned.
+Crea un nuovo framebuffer. È possibile accedervi con il RID restituito.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingDevice_method_free_rid>` del RenderingServer.
 
-This will be freed automatically when any of the ``textures`` is freed.
+L'RID si libererà automaticamente quando si libera una qualsiasi delle texture passate in ``textures``.
 
 .. rst-class:: classref-item-separator
 
@@ -6217,11 +6217,11 @@ Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`f
 
 :ref:`RID<class_RID>` **framebuffer_create_multipass**\ (\ textures\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], passes\: :ref:`Array<class_Array>`\[:ref:`RDFramebufferPass<class_RDFramebufferPass>`\], validate_with_format\: :ref:`int<class_int>` = -1, view_count\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_RenderingDevice_method_framebuffer_create_multipass>`
 
-Creates a new multipass framebuffer. It can be accessed with the RID that is returned.
+Crea un nuovo framebuffer multipassaggio. È possibile accedervi con il RID restituito.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingDevice_method_free_rid>` del RenderingServer.
 
-This will be freed automatically when any of the ``textures`` is freed.
+L'RID si libererà automaticamente quando si libera una qualsiasi delle texture passate in ``textures``.
 
 .. rst-class:: classref-item-separator
 
@@ -6685,13 +6685,13 @@ Restituisce ``true`` se la funzionalità ``feature`` è supportata dalla GPU.
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Creates a new hit shader binding table (SBT). It can be accessed with the RID that is returned.
+Crea una nuova shader binding table (SBT) di impatto. È possibile accedervi con il RID restituito.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingDevice_method_free_rid>` del RenderingServer.
 
-This will be freed automatically when the ``raytracing_pipeline`` is freed.
+L'RID si libererà automaticamente quando si libera la ``raytracing_pipeline``.
 
-The hit SBT resizes itself as needed. ``initial_hit_group_capacity`` is used to allocate the initial backing memory.
+La SBT di impatto si ridimensiona automaticamente se necessario. ``initial_hit_group_capacity`` è la quantità di memoria allocata inizialmente.
 
 .. rst-class:: classref-item-separator
 
@@ -6789,11 +6789,11 @@ The previous pipeline must remain valid during the call.
 
 :ref:`RID<class_RID>` **index_array_create**\ (\ index_buffer\: :ref:`RID<class_RID>`, index_offset\: :ref:`int<class_int>`, index_count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_index_array_create>`
 
-Creates a new index array. It can be accessed with the RID that is returned.
+Crea un nuovo array di indici. È possibile accedervi con il RID restituito.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingDevice_method_free_rid>` del RenderingServer.
 
-This will be freed automatically when the ``index_buffer`` is freed.
+L'RID si libererà automaticamente quando si libera l'``index_buffer``.
 
 .. rst-class:: classref-item-separator
 
@@ -7015,11 +7015,11 @@ Returns ``true`` if the raytracing pipeline specified by the ``raytracing_pipeli
 
 :ref:`RID<class_RID>` **render_pipeline_create**\ (\ shader\: :ref:`RID<class_RID>`, framebuffer_format\: :ref:`int<class_int>`, vertex_format\: :ref:`int<class_int>`, primitive\: :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>`, rasterization_state\: :ref:`RDPipelineRasterizationState<class_RDPipelineRasterizationState>`, multisample_state\: :ref:`RDPipelineMultisampleState<class_RDPipelineMultisampleState>`, stencil_state\: :ref:`RDPipelineDepthStencilState<class_RDPipelineDepthStencilState>`, color_blend_state\: :ref:`RDPipelineColorBlendState<class_RDPipelineColorBlendState>`, dynamic_state_flags\: |bitfield|\[:ref:`PipelineDynamicStateFlags<enum_RenderingDevice_PipelineDynamicStateFlags>`\] = 0, for_render_pass\: :ref:`int<class_int>` = 0, specialization_constants\: :ref:`Array<class_Array>`\[:ref:`RDPipelineSpecializationConstant<class_RDPipelineSpecializationConstant>`\] = []\ ) :ref:`🔗<class_RenderingDevice_method_render_pipeline_create>`
 
-Creates a new render pipeline. It can be accessed with the RID that is returned.
+Crea una nuova pipeline di rendering. È possibile accedervi con il RID restituito.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingDevice_method_free_rid>` del RenderingServer.
 
-This will be freed automatically when the ``shader`` is freed.
+L'RID si libererà automaticamente quando si libera lo ``shader``.
 
 .. rst-class:: classref-item-separator
 
@@ -7113,7 +7113,7 @@ Restituisce la larghezza (in pixel) della finestra corrispondente al contesto de
 
 Imposta il nome della risorsa per l'``id`` su ``name``. È utilizzato per il debug con strumenti di terze parti come `RenderDoc <https://renderdoc.org/>`__.
 
-È possibile assegnare un nome ai seguenti tipi di risorse: texture, sampler, vertex buffer, index buffer, uniform buffer, texture buffer, storage buffer, uniform set buffer, shader, render pipeline e compute pipeline. I framebuffer non possono avere un nome. Tentare di nominare un tipo di risorsa incompatibile stamperà un errore.
+È possibile assegnare un nome ai seguenti tipi di risorse: texture, sampler, vertex buffer, index buffer, uniform buffer, texture buffer, storage buffer, uniform set buffer, shader, render pipeline e compute pipeline. I framebuffer non possono avere un nome. Tentare di denominare un tipo di risorsa incompatibile stamperà un errore.
 
 \ **Nota:** I nomi delle risorse vengono impostati solo quando il motore è eseguito in modalità verbosa (:ref:`OS.is_stdout_verbose()<class_OS_method_is_stdout_verbose>` = ``true``) o quando si utilizza una build del motore compilata con l'opzione ``dev_mode=yes`` SCons. Il driver grafico deve anche supportare l'estensione Vulkan ``VK_EXT_DEBUG_UTILS_EXTENSION_NAME`` affinché le risorse con nome funzionino.
 
@@ -7279,17 +7279,17 @@ Cancella la ``texture`` specificata sostituendo tutti i suoi pixel con il colore
 
 :ref:`Error<enum_@GlobalScope_Error>` **texture_copy**\ (\ from_texture\: :ref:`RID<class_RID>`, to_texture\: :ref:`RID<class_RID>`, from_pos\: :ref:`Vector3<class_Vector3>`, to_pos\: :ref:`Vector3<class_Vector3>`, size\: :ref:`Vector3<class_Vector3>`, src_mipmap\: :ref:`int<class_int>`, dst_mipmap\: :ref:`int<class_int>`, src_layer\: :ref:`int<class_int>`, dst_layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_copy>`
 
-Copies the ``from_texture`` to ``to_texture`` with the specified ``from_pos``, ``to_pos`` and ``size`` coordinates. For 2-dimensional textures, ``from_pos`` and ``to_pos`` must have a Z axis of ``0``, and ``size`` must have a Z axis of ``1``. Source and destination mipmaps/layers must also be specified, with these parameters being ``0`` for textures without mipmaps or single-layer textures. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the texture copy was successful or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` otherwise.
+Copia la texture ``from_texture`` in ``to_texture`` con le coordinate specificate da ``from_pos``, ``to_pos`` e ``size``. Per le texture bidimensionali, l'asse Z di ``from_pos``, ``to_pos`` deve essere ``0`` e l'asse Z di ``size`` deve essere ``1``. Devono essere specificati anche le mipmap/livelli di origine e destinazione, con questi parametri pari a ``0`` per le texture senza mipmap o con un solo livello. Restituisce :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` se la copia della texture è riuscita o :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` in caso contrario.
 
-\ **Note:** ``from_texture`` texture can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) to copy this texture.
+\ **Nota:** La texture ``from_texture`` non può essere copiata mentre viene creata una lista di disegno che la usa come parte di un framebuffer. Assicurati che la lista di disegno sia finalizzata (e che la texture di colore/profondità che lo usa non sia impostata su :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) per copiare questa texture.
 
-\ **Note:** ``from_texture`` texture requires the :ref:`TEXTURE_USAGE_CAN_COPY_FROM_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_FROM_BIT>` to be retrieved.
+\ **Nota:** La texture ``from_texture`` richiede che :ref:`TEXTURE_USAGE_CAN_COPY_FROM_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_FROM_BIT>` sia recuperata.
 
-\ **Note:** ``to_texture`` can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) to copy this texture.
+\ **Nota:** Non è possibile copiare ``to_texture`` mentre viene creato una lista di disegno che la utilizza come parte di un framebuffer. Assicurati che la lista di disegno sia finalizzata (e che la texture di colore/profondità che la usa non sia impostata su :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) per copiare questa texture.
 
-\ **Note:** ``to_texture`` requires the :ref:`TEXTURE_USAGE_CAN_COPY_TO_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_TO_BIT>` to be retrieved.
+\ **Nota:** ``to_texture`` richiede che :ref:`TEXTURE_USAGE_CAN_COPY_TO_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_TO_BIT>` sia recuperata.
 
-\ **Note:** ``from_texture`` and ``to_texture`` must be of the same type (color or depth).
+\ **Nota:** ``from_texture`` e ``to_texture`` devono essere dello stesso tipo (colore o profondità).
 
 .. rst-class:: classref-item-separator
 
@@ -7331,9 +7331,9 @@ Restituisce un RID per un'immagine ``image`` esistente (``VkImage``) con il tipo
 
 :ref:`RID<class_RID>` **texture_create_shared**\ (\ view\: :ref:`RDTextureView<class_RDTextureView>`, with_texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_create_shared>`
 
-Creates a shared texture using the specified ``view`` and the texture information from ``with_texture``.
+Crea una texture condivisa utilizzando la vista ``view`` e le informazioni sulla texture da ``with_texture``.
 
-This will be freed automatically when the ``with_texture`` is freed.
+L'RID si libererà automaticamente quando si libera ``with_texture``.
 
 .. rst-class:: classref-item-separator
 
@@ -7345,13 +7345,13 @@ This will be freed automatically when the ``with_texture`` is freed.
 
 :ref:`RID<class_RID>` **texture_create_shared_from_slice**\ (\ view\: :ref:`RDTextureView<class_RDTextureView>`, with_texture\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`, mipmap\: :ref:`int<class_int>`, mipmaps\: :ref:`int<class_int>` = 1, slice_type\: :ref:`TextureSliceType<enum_RenderingDevice_TextureSliceType>` = 0\ ) :ref:`🔗<class_RenderingDevice_method_texture_create_shared_from_slice>`
 
-Creates a shared texture using the specified ``view`` and the texture information from ``with_texture``'s ``layer`` and ``mipmap``. The number of included mipmaps from the original texture can be controlled using the ``mipmaps`` parameter. Only relevant for textures with multiple layers, such as 3D textures, texture arrays and cubemaps. For single-layer textures, use :ref:`texture_create_shared()<class_RenderingDevice_method_texture_create_shared>`.
+Crea una texture condivisa utilizzando la vista ``view`` e le informazioni sulla texture da ``with_texture`` con il livello ``layer`` e la mipmap ``mipmap``. È possibile controllare il numero di mipmap incluse dalla texture originale tramite il parametro ``mipmaps``. Rilevante solo per texture con più livelli, come texture 3D, array di texture e cubemap. Per texture con un singolo livello, usa :ref:`texture_create_shared()<class_RenderingDevice_method_texture_create_shared>`.
 
-For 2D textures (which only have one layer), ``layer`` must be ``0``.
+Per texture 2D (che hanno un solo livello), ``layer`` deve essere ``0``.
 
-\ **Note:** Layer slicing is only supported for 2D texture arrays, not 3D textures or cubemaps.
+\ **Nota:** Il layer slicing è supportato solo per array di texture 2D, non per texture 3D o cubemap.
 
-This will be freed automatically when the ``with_texture`` is freed.
+Questa si libererà automaticamente quando si libera ``with_texture``.
 
 .. rst-class:: classref-item-separator
 
@@ -7592,11 +7592,11 @@ Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`f
 
 :ref:`RID<class_RID>` **uniform_set_create**\ (\ uniforms\: :ref:`Array<class_Array>`\[:ref:`RDUniform<class_RDUniform>`\], shader\: :ref:`RID<class_RID>`, shader_set\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_uniform_set_create>`
 
-Creates a new uniform set. It can be accessed with the RID that is returned.
+Crea un nuovo set di uniformi. È possibile accedervi con il RID restituito.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingDevice_method_free_rid>` del RenderingServer.
 
-This will be freed automatically when the ``shader`` or any of the RIDs in the ``uniforms`` is freed.
+L'RID si libererà automaticamente quando si libera lo ``shader`` o uno qualsiasi degli RID in ``uniforms``.
 
 .. rst-class:: classref-item-separator
 
@@ -7620,11 +7620,11 @@ Verifica se ``uniform_set`` è valido, ovvero se qualcosa lo possiede.
 
 :ref:`RID<class_RID>` **vertex_array_create**\ (\ vertex_count\: :ref:`int<class_int>`, vertex_format\: :ref:`int<class_int>`, src_buffers\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], offsets\: :ref:`PackedInt64Array<class_PackedInt64Array>` = PackedInt64Array()\ ) :ref:`🔗<class_RenderingDevice_method_vertex_array_create>`
 
-Creates a vertex array based on the specified buffers. Optionally, ``offsets`` (in bytes) may be defined for each buffer.
+Crea un array di vertici basato sui buffer specificati. Facoltativamente, è possibile definire gli ``offsets`` (in byte) per ciascun buffer.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingDevice_method_free_rid>` del RenderingServer.
 
-This will be freed automatically when any of the ``src_buffers`` is freed.
+L'RID si libererà automaticamente quando si libera uno qualsiasi dei buffer passati in ``src_buffers``.
 
 .. rst-class:: classref-item-separator
 

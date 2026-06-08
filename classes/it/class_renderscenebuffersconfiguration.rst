@@ -202,9 +202,9 @@ Le dimensioni (sovracampionamento) se si utilizza il ridimensionamento.
 - |void| **set_texture_mipmap_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_mipmap_bias**\ (\ )
 
-Bias applied to mipmaps.
+Bias applicato alle mipmap.
 
-\ **Note:** This property is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this property is always treated as if it was set to ``0.0``.
+\ **Nota:** Questa proprietà è supportata solo nei renderer Forward+ e Mobile, non in Compatibilità. In Compatibilità, questa proprietà è sempre trattata come se fosse impostata su ``0.0``.
 
 .. rst-class:: classref-item-separator
 

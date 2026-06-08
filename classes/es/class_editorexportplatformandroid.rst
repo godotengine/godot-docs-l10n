@@ -7,7 +7,7 @@ EditorExportPlatformAndroid
 
 **Hereda:** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Exporter for Android.
+Exportador para Android.
 
 .. rst-class:: classref-introduction-group
 
@@ -2889,11 +2889,11 @@ If ``true``, shaders will be compiled and embedded in the application. This opti
 
 :ref:`Color<class_Color>` **splash_screen/background_color** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/background_color>`
 
-The background color used for the system splash screen window.
+Color de fondo utilizado para la pantalla de inicio del sistema.
 
-If not set, it will fallback to :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
+Si no se especifica, se utilizará el color predeterminado :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
 
-\ **Note:** This is only applied if :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` is enabled.
+\ **Nota:** Esto solo se aplica si :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` está habilitado.
 
 .. rst-class:: classref-item-separator
 

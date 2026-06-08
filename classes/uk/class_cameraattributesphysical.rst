@@ -14,15 +14,15 @@ CameraAttributesPhysical
 Опис
 --------
 
-**CameraAttributesPhysical** is used to set rendering settings based on a physically-based camera's settings. It is responsible for exposure, auto-exposure, and depth of field.
+**CameraAttributesPhysical** використовується для налаштування параметрів візуалізації на основі налаштувань фізично-орієнтованої камери. Він відповідає за експозицію, автоекспозицію та глибину різкості.
 
-When used in a :ref:`WorldEnvironment<class_WorldEnvironment>` it provides default settings for exposure, auto-exposure, and depth of field that will be used by all cameras without their own :ref:`CameraAttributes<class_CameraAttributes>`, including the editor camera. When used in a :ref:`Camera3D<class_Camera3D>` it will override any :ref:`CameraAttributes<class_CameraAttributes>` set in the :ref:`WorldEnvironment<class_WorldEnvironment>` and will override the :ref:`Camera3D<class_Camera3D>`\ s :ref:`Camera3D.far<class_Camera3D_property_far>`, :ref:`Camera3D.near<class_Camera3D_property_near>`, :ref:`Camera3D.fov<class_Camera3D_property_fov>`, and :ref:`Camera3D.keep_aspect<class_Camera3D_property_keep_aspect>` properties. When used in :ref:`VoxelGI<class_VoxelGI>` or :ref:`LightmapGI<class_LightmapGI>`, only the exposure settings will be used.
+При використанні в :ref:`WorldEnvironment<class_WorldEnvironment>` він надає стандартні налаштування експозиції, автоекспозиції та глибини різкості, які будуть застосовуватися до всіх камер, що не мають власних :ref:`CameraAttributes<class_CameraAttributes>`, включаючи камеру редактора. При використанні в :ref:`Camera3D<class_Camera3D>` він замінить будь-які :ref:`CameraAttributes<class_CameraAttributes>`, встановлені в :ref:`WorldEnvironment<class_WorldEnvironment>`, а також замінить властивості :ref:`Camera3D<class_Camera3D>` :ref:`Camera3D.far<class_Camera3D_property_far>`, :ref:`Camera3D.near<class_Camera3D_property_near>`, :ref:`Camera3D.fov<class_Camera3D_property_fov>` та :ref:`Camera3D.keep_aspect<class_Camera3D_property_keep_aspect>`. При використанні в :ref:`VoxelGI<class_VoxelGI>` або :ref:`LightmapGI<class_LightmapGI>` будуть використовуватися лише налаштування експозиції.
 
-The default settings are intended for use in an outdoor environment, tips for settings for use in an indoor environment can be found in each setting's documentation.
+Налаштування за замовчуванням призначені для використання у зовнішньому середовищі; поради щодо налаштувань для використання у приміщенні можна знайти в документації до кожного налаштування.
 
-\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Примітка:** Розмиття глибини різкості підтримується лише в методах рендерингу Forward+ та Mobile, а не в Compatibility.
 
-\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **Примітка:** Автоекспозиція підтримується лише в методі рендерингу Forward+, а не в Mobile або Compatibility.
 
 .. rst-class:: classref-introduction-group
 

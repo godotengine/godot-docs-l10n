@@ -1104,7 +1104,7 @@ EditorSettings
 
 :ref:`Dictionary<class_Dictionary>` **asset_store/available_urls** :ref:`🔗<class_EditorSettings_property_asset_store/available_urls>`
 
-A list of the available URLs that can be chosen in the Asset Store to fetch asset data. With the key being the name, and the value being the URL.
+Список доступних URL-адрес, які можна вибрати в Asset Store для отримання даних про ресурси. Ключем є назва, а значенням — URL-адреса.
 
 .. rst-class:: classref-item-separator
 
@@ -1116,7 +1116,7 @@ A list of the available URLs that can be chosen in the Asset Store to fetch asse
 
 :ref:`bool<class_bool>` **asset_store/use_threads** :ref:`🔗<class_EditorSettings_property_asset_store/use_threads>`
 
-If ``true``, the Asset Store uses multiple threads for its HTTP requests. This prevents the Asset Store from blocking the main thread for every loaded asset.
+Якщо ``true``, Asset Store використовує кілька потоків для своїх HTTP-запитів. Це запобігає блокуванню Asset Store головного потоку під час завантаження кожного ресурсу.
 
 .. rst-class:: classref-item-separator
 
@@ -1256,7 +1256,7 @@ If ``true``, the Asset Store uses multiple threads for its HTTP requests. This p
 
 :ref:`bool<class_bool>` **docks/filesystem/ask_before_moving_files** :ref:`🔗<class_EditorSettings_property_docks/filesystem/ask_before_moving_files>`
 
-If ``true``, displays a confirmation dialog when moving or duplicating items in the FileSystem dock. This dialog can also be bypassed by holding :kbd:`Shift`.
+Якщо ``true``, під час переміщення або дублювання елементів у панелі «Файлова система» відображається діалогове вікно підтвердження. Це діалогове вікно також можна пропустити, утримуючи клавішу :kbd:`Shift`.
 
 .. rst-class:: classref-item-separator
 
@@ -1268,7 +1268,7 @@ If ``true``, displays a confirmation dialog when moving or duplicating items in 
 
 :ref:`bool<class_bool>` **docks/filesystem/automatically_open_created_scripts** :ref:`🔗<class_EditorSettings_property_docks/filesystem/automatically_open_created_scripts>`
 
-If ``true``, scripts created in FileSystem dock will be automatically edited.
+Якщо ``true``, скрипти, створені в панелі «Файлова система», будуть автоматично редагуватися.
 
 .. rst-class:: classref-item-separator
 
@@ -1548,7 +1548,7 @@ If ``true``, scripts created in FileSystem dock will be automatically edited.
 
 :ref:`Color<class_Color>` **editors/2d/locked_selection_rectangle_color** :ref:`🔗<class_EditorSettings_property_editors/2d/locked_selection_rectangle_color>`
 
-The color to use for the selection rectangle that surrounds selected locked nodes in the 2D editor viewport.
+Колір, який буде використовуватися для прямокутника виділення, що оточує вибрані заблоковані вузли у вікні 2D-редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -1572,7 +1572,7 @@ The color to use for the selection rectangle that surrounds selected locked node
 
 :ref:`Color<class_Color>` **editors/2d/selection_rectangle_color** :ref:`🔗<class_EditorSettings_property_editors/2d/selection_rectangle_color>`
 
-The color to use for the selection rectangle outlines that surrounds selected nodes in the 2D editor viewport.
+Колір, який буде використовуватися для прямокутника виділення, що оточує вибрані заблоковані вузли у вікні 2D-редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -1632,9 +1632,9 @@ The color to use for the selection rectangle outlines that surrounds selected no
 
 :ref:`Color<class_Color>` **editors/3d/active_selection_box_color** :ref:`🔗<class_EditorSettings_property_editors/3d/active_selection_box_color>`
 
-The color to use for the active selection box that surrounds selected nodes in the 3D editor viewport.
+Колір, який буде використовуватися для активного контуру виділення, що оточує вибрані вузли у вікні 3D-редактора.
 
-\ **Note:** The term "active" indicates that this object is the primary selection used as the basis for certain operations. This is the last selected :ref:`Node3D<class_Node3D>`, which can be reordered with :kbd:`Shift + Left mouse button`.
+\ **Примітка:** Термін «активний» означає, що цей об’єкт є основним виділенням, яке використовується як основа для певних операцій. Це останній вибраний :ref:`Node3D<class_Node3D>`, порядок якого можна змінити за допомогою комбінації клавіш :kbd:`Shift + ліва кнопка миші`.
 
 .. rst-class:: classref-item-separator
 
@@ -1724,7 +1724,7 @@ The color to use for the active selection box that surrounds selected nodes in t
 
 :ref:`bool<class_bool>` **editors/3d/freelook/freelook_invert_y_axis** :ref:`🔗<class_EditorSettings_property_editors/3d/freelook/freelook_invert_y_axis>`
 
-If ``true``, invert the vertical mouse axis when using freelook mode in the 3D editor.
+Якщо ``true``, то при використанні режиму вільного огляду в 3D-редакторі слід змінити напрямок вертикальної осі миші на протилежний.
 
 .. rst-class:: classref-item-separator
 
@@ -1926,7 +1926,7 @@ If ``true``, invert the vertical mouse axis when using freelook mode in the 3D e
 
 :ref:`bool<class_bool>` **editors/3d/navigation/invert_y_axis** :ref:`🔗<class_EditorSettings_property_editors/3d/navigation/invert_y_axis>`
 
-If ``true``, invert the vertical mouse axis when panning or orbiting in the 3D editor.
+Якщо ``true``, інвертувати вертикальну вісь миші під час панорамування або обертання в 3D-редакторі.
 
 .. rst-class:: classref-item-separator
 
@@ -2156,7 +2156,7 @@ If ``true``, invert the vertical mouse axis when panning or orbiting in the 3D e
 
 :ref:`Color<class_Color>` **editors/3d/selection_box_color** :ref:`🔗<class_EditorSettings_property_editors/3d/selection_box_color>`
 
-The color to use for the selection box that surrounds selected nodes in the 3D editor viewport.
+Колір, який слід використовувати для рамки виділення, що оточує вибрані вузли у вікні 3D-редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -2180,7 +2180,7 @@ The color to use for the selection box that surrounds selected nodes in the 3D e
 
 :ref:`float<class_float>` **editors/3d/view_plane_rotation_gizmo_scale** :ref:`🔗<class_EditorSettings_property_editors/3d/view_plane_rotation_gizmo_scale>`
 
-The scale of the outer circle of the rotation gizmo as view plane rotation in the 3D editor. If set to ``2.0``, the outer circle has twice the radius of the XYZ rotation gizmo sphere.
+Масштаб зовнішнього кола інструменту обертання відповідає обертанню площини огляду в 3D-редакторі. Якщо встановити значення ``2.0``, радіус зовнішнього кола буде вдвічі більшим за радіус сфери інструменту обертання XYZ.
 
 .. rst-class:: classref-item-separator
 
@@ -2564,7 +2564,7 @@ The scale of the outer circle of the rotation gizmo as view plane rotation in th
 
 :ref:`bool<class_bool>` **editors/3d_gizmos/gizmo_settings/show_collision_shapes_only_when_selected** :ref:`🔗<class_EditorSettings_property_editors/3d_gizmos/gizmo_settings/show_collision_shapes_only_when_selected>`
 
-If ``true``, collision shapes in the 3D editor are visible only when selected. If ``false``, collision shapes are always visible.
+Якщо ``true``, фігури зіткнення в 3D-редакторі видно лише тоді, коли вони виділені. Якщо ``false``, фігури зіткнення завжди видно.
 
 .. rst-class:: classref-item-separator
 
@@ -2702,7 +2702,7 @@ If ``true``, collision shapes in the 3D editor are visible only when selected. I
 
 :ref:`Color<class_Color>` **editors/audio_buses/active_max_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/active_max_db_color>`
 
-The color at the top of the VU meter gradient when it is active.
+Колір у верхній частині градієнта індикатора VU, коли він активний.
 
 .. rst-class:: classref-item-separator
 
@@ -2714,7 +2714,7 @@ The color at the top of the VU meter gradient when it is active.
 
 :ref:`Color<class_Color>` **editors/audio_buses/active_min_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/active_min_db_color>`
 
-The color at the bottom of the VU meter gradient when it is active.
+Колір у нижній частині градієнта індикатора VU, коли він активний.
 
 .. rst-class:: classref-item-separator
 
@@ -2726,7 +2726,7 @@ The color at the bottom of the VU meter gradient when it is active.
 
 :ref:`Color<class_Color>` **editors/audio_buses/active_normalized_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/active_normalized_db_color>`
 
-The color at 0 dB of the VU meter gradient when it is active.
+Колір на позначці 0 дБ шкали VU-метра, коли він увімкнений.
 
 .. rst-class:: classref-item-separator
 
@@ -2738,7 +2738,7 @@ The color at 0 dB of the VU meter gradient when it is active.
 
 :ref:`Color<class_Color>` **editors/audio_buses/inactive_max_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/inactive_max_db_color>`
 
-The color at the top of the VU meter gradient when it is inactive.
+Колір у верхній частині градієнта індикатора VU, коли він неактивний.
 
 .. rst-class:: classref-item-separator
 
@@ -2750,7 +2750,7 @@ The color at the top of the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/inactive_min_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/inactive_min_db_color>`
 
-The color at the bottom of the VU meter gradient when it is inactive.
+Колір у нижній частині градієнта індикатора VU, коли він неактивний.
 
 .. rst-class:: classref-item-separator
 
@@ -2762,7 +2762,7 @@ The color at the bottom of the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/inactive_normalized_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/inactive_normalized_db_color>`
 
-The color at 0 dB of the VU meter gradient when it is inactive.
+Колір на позначці 0 дБ шкали VU-метра, коли він неактивний.
 
 .. rst-class:: classref-item-separator
 
@@ -2774,7 +2774,7 @@ The color at 0 dB of the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/tint_over_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/tint_over_color>`
 
-The multiplier color for the VU meter gradient when it is inactive.
+Колір-множник для градієнта індикатора VU, коли він неактивний.
 
 .. rst-class:: classref-item-separator
 
@@ -2786,7 +2786,7 @@ The multiplier color for the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/tint_under_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/tint_under_color>`
 
-The multiplier color for the VU meter gradient where audio is not reaching.
+Колір мультиплікатора для градієнта індикатора VU в тих місцях, де звук не досягає.
 
 .. rst-class:: classref-item-separator
 
@@ -3530,11 +3530,11 @@ The multiplier color for the VU meter gradient where audio is not reaching.
 
 :ref:`String<class_String>` **filesystem/import/blender/blender_path** :ref:`🔗<class_EditorSettings_property_filesystem/import/blender/blender_path>`
 
-The path to the Blender executable used for converting the Blender 3D scene files ``.blend`` to glTF 2.0 format during import. Blender 3.0 or later is required.
+Шлях до виконуваного файлу Blender, який використовується для перетворення файлів 3D-сцен Blender ``.blend`` у формат glTF 2.0 під час імпорту. Потрібна версія Blender 3.0 або пізніша.
 
-To enable this feature for your specific project, use :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
+Щоб увімкнути цю функцію для вашого конкретного проєкту, скористайтеся :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
 
-If this setting is empty, Blender's default paths will be detected and used automatically if present in this order:
+Якщо це поле залишити порожнім, система автоматично виявить і використає стандартні шляхи до Blender, якщо вони присутні в такому порядку:
 
 \ **Windows:**\ 
 
@@ -3807,7 +3807,7 @@ If this setting is empty, Blender's default paths will be detected and used auto
 
 :ref:`bool<class_bool>` **interface/accessibility/property_descriptions** :ref:`🔗<class_EditorSettings_property_interface/accessibility/property_descriptions>`
 
-If ``true``, editor inspector uses property documentation as an accessible description of the property.
+Якщо ``true``, інспектор редактора використовує документацію властивості як доступний опис цієї властивості.
 
 .. rst-class:: classref-item-separator
 
@@ -3839,11 +3839,11 @@ If ``true``, editor inspector uses property documentation as an accessible descr
 
 :ref:`bool<class_bool>` **interface/editor/appearance/collapse_main_menu** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/collapse_main_menu>`
 
-If ``true``, the main menu collapses into a :ref:`MenuButton<class_MenuButton>`.
+Якщо ``true``, головне меню згортається у :ref:`MenuButton<class_MenuButton>`.
 
-\ **Note:** This setting is only applicable on macOS when :ref:`interface/editor/appearance/use_embedded_menu<class_EditorSettings_property_interface/editor/appearance/use_embedded_menu>` is ``true``.
+\ **Примітка:** Цей параметр діє в macOS лише тоді, коли :ref:`interface/editor/appearance/use_embedded_menu<class_EditorSettings_property_interface/editor/appearance/use_embedded_menu>` має значення ``true``.
 
-\ **Note:** Defaults to ``true`` on the Android editor.
+\ **Примітка:** У редакторі для Android за замовчуванням встановлено значення ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -3855,9 +3855,9 @@ If ``true``, the main menu collapses into a :ref:`MenuButton<class_MenuButton>`.
 
 :ref:`float<class_float>` **interface/editor/appearance/custom_display_scale** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`
 
-The custom editor scale factor to use. This can be used for displays with very high DPI where a scale factor of 200% is not sufficient.
+Коефіцієнт масштабування редактора, який слід використовувати. Ця опція може знадобитися для дисплеїв із дуже високою роздільною здатністю (DPI), коли коефіцієнта масштабування 200% недостатньо.
 
-\ **Note:** Only effective if :ref:`interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` is set to **Custom**.
+\ **Примітка:** Діє лише в тому випадку, якщо для параметра :ref:`interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` встановлено значення **Custom**.
 
 .. rst-class:: classref-item-separator
 
@@ -3869,11 +3869,11 @@ The custom editor scale factor to use. This can be used for displays with very h
 
 :ref:`int<class_int>` **interface/editor/appearance/display_scale** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/display_scale>`
 
-The display scale factor to use for the editor interface. Higher values are more suited to hiDPI/Retina displays.
+Коефіцієнт масштабування екрану, який слід використовувати для інтерфейсу редактора. Більші значення краще підходять для дисплеїв hiDPI/Retina.
 
-If set to **Auto**, the editor scale is automatically determined based on the screen resolution and reported display DPI. This heuristic is not always ideal, which means you can get better results by setting the editor scale manually.
+Якщо встановлено значення **Auto**, масштаб редактора визначається автоматично на основі роздільної здатності екрану та заявленого DPI дисплея. Цей алгоритм не завжди є ідеальним, тому ви можете отримати кращі результати, встановивши масштаб редактора вручну.
 
-If set to **Custom**, the scaling value in :ref:`interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>` will be used.
+Якщо встановлено значення **Custom**, буде використано значення масштабування в :ref:`interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3923,7 +3923,7 @@ If set to **Custom**, the scaling value in :ref:`interface/editor/appearance/cus
 
 :ref:`bool<class_bool>` **interface/editor/appearance/show_renderer_selector** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/show_renderer_selector>`
 
-If ``true``, a renderer selector that can be used to change the :ref:`ProjectSettings.rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>` project setting will be shown in the top right of the main editor window.
+Якщо ``true``, у правому верхньому куті головного вікна редактора з’явиться селектор рендерера, за допомогою якого можна змінити параметр проекту :ref:`ProjectSettings.rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3935,15 +3935,15 @@ If ``true``, a renderer selector that can be used to change the :ref:`ProjectSet
 
 :ref:`int<class_int>` **interface/editor/appearance/show_update_spinner** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/show_update_spinner>`
 
-If enabled, displays an icon in the top-right corner of the editor that spins when the editor redraws a frame. This can be used to diagnose situations where the engine is constantly redrawing, which should be avoided as this increases CPU and GPU utilization for no good reason. To further troubleshoot these situations, start the editor with the ``--debug-canvas-item-redraw`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
+Якщо ця опція увімкнена, у правому верхньому куті редактора відображається піктограма, яка обертається під час оновлення кадру. Цю функцію можна використовувати для діагностики ситуацій, коли движок постійно оновлює зображення, чого слід уникати, оскільки це безпідставно збільшує навантаження на процесор і відеокарту. Для подальшого усунення таких проблем запустіть редактор із ``--debug-canvas-item-redraw`` :doc:`аргументом командного рядка <../tutorials/editor/command_line_tutorial>`.
 
-Consider enabling this if you are developing editor plugins to ensure they only make the editor redraw when required.
+Розгляньте можливість увімкнення цієї опції, якщо ви розробляєте плагіни для редактора, щоб гарантувати, що вони змушують редактор перемальовувати лише тоді, коли це потрібно.
 
-The default **Auto** value will only enable this if the editor was compiled with the ``dev_build=yes`` SCons option (the default is ``dev_build=no``).
+Значення за замовчуванням **Auto** увімкне цю функцію лише в тому випадку, якщо редактор було скомпільовано з опцією SCons ``dev_build=yes`` (за замовчуванням — ``dev_build=no``).
 
-\ **Note:** If :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` is ``true``, the spinner icon displays in red.
+\ **Примітка:** Якщо :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` має значення ``true``, значок завантаження відображається червоним кольором.
 
-\ **Note:** If the editor was started with the ``--debug-canvas-item-redraw`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`, the update spinner will *never* display regardless of this setting's value. This is to avoid confusion with what would cause redrawing in real world scenarios.
+\ **Примітка:** Якщо редактор було запущено з аргументом командного рядка ``--debug-canvas-item-redraw`` [url=$DOCS_URL/tutorials/editor/command_line_tutorial.html], індикатор оновлення [i]ніколи[/i] не відображатиметься незалежно від значення цього параметра. Це зроблено, щоб уникнути плутанини з тим, що спричиняє перемальовування в реальних сценаріях.
 
 .. rst-class:: classref-item-separator
 
@@ -4085,9 +4085,9 @@ The default **Auto** value will only enable this if the editor was compiled with
 
 :ref:`bool<class_bool>` **interface/editor/display/update_continuously** :ref:`🔗<class_EditorSettings_property_interface/editor/display/update_continuously>`
 
-If ``true``, redraws the editor every frame even if nothing has changed on screen. When this setting is enabled, the update spinner displays in red (see :ref:`interface/editor/appearance/show_update_spinner<class_EditorSettings_property_interface/editor/appearance/show_update_spinner>`).
+Якщо ``true``, редактор оновлюється в кожному кадрі, навіть якщо на екрані нічого не змінилося. Коли цей параметр увімкнено, індикатор оновлення відображається червоним кольором (див. :ref:`interface/editor/appearance/show_update_spinner<class_EditorSettings_property_interface/editor/appearance/show_update_spinner>`).
 
-\ **Warning:** This greatly increases CPU and GPU utilization, leading to increased power usage. This should only be enabled for troubleshooting purposes.
+\ **Попередження:** Це значно збільшує навантаження на процесор і відеокарту, що призводить до зростання енергоспоживання. Цю опцію слід вмикати лише для усунення несправностей.
 
 .. rst-class:: classref-item-separator
 
@@ -4405,9 +4405,9 @@ If ``true``, redraws the editor every frame even if nothing has changed on scree
 
 :ref:`int<class_int>` **interface/editor/timers/low_processor_mode_sleep_usec** :ref:`🔗<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`
 
-The amount of sleeping between frames in the editor (in microseconds). Higher values will result in lower CPU/GPU usage, which can improve battery life on laptops. However, higher values will result in a less responsive editor. The default value is set to allow for maximum smoothness on monitors up to 144 Hz. See also :ref:`interface/editor/timers/unfocused_low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/unfocused_low_processor_mode_sleep_usec>`.
+Тривалість паузи між кадрами в редакторі (у мікросекундах). Більші значення призведуть до зниження завантаження процесора/графічного процесора, що може подовжити час роботи ноутбука від акумулятора. Однак більші значення спричинять зниження чутливості редактора. Значення за замовчуванням встановлено так, щоб забезпечити максимальну плавність роботи на моніторах із частотою оновлення до 144 Гц. Див. також :ref:`interface/editor/timers/unfocused_low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/unfocused_low_processor_mode_sleep_usec>`.
 
-\ **Note:** This setting is ignored if :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` is ``true``, as enabling that setting disables low-processor mode.
+\ **Примітка:** Це налаштування ігнорується, якщо :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` має значення ``true``, оскільки увімкнення цього налаштування вимикає режим низького навантаження на процесор.
 
 .. rst-class:: classref-item-separator
 
@@ -4419,9 +4419,9 @@ The amount of sleeping between frames in the editor (in microseconds). Higher va
 
 :ref:`int<class_int>` **interface/editor/timers/unfocused_low_processor_mode_sleep_usec** :ref:`🔗<class_EditorSettings_property_interface/editor/timers/unfocused_low_processor_mode_sleep_usec>`
 
-When the editor window is unfocused, the amount of sleeping between frames when the low-processor usage mode is enabled (in microseconds). Higher values will result in lower CPU/GPU usage, which can improve battery life on laptops (in addition to improving the running project's performance if the editor has to redraw continuously). However, higher values will result in a less responsive editor. The default value is set to limit the editor to 10 FPS when the editor window is unfocused. See also :ref:`interface/editor/timers/low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`.
+Коли вікно редактора не знаходиться у фокусі, тривалість паузи між кадрами при увімкненому режимі низького навантаження на процесор (у мікросекундах). Більші значення призведуть до зниження завантаження процесора/графічного процесора, що може подовжити час роботи ноутбука від акумулятора (а також покращити продуктивність запущеного проєкту, якщо редактору доводиться постійно оновлювати зображення). Однак більші значення призведуть до зниження чутливості редактора. Значення за замовчуванням встановлено так, щоб обмежити частоту оновлення редактора до 10 кадрів на секунду, коли вікно редактора не знаходиться у фокусі. Див. також :ref:`interface/editor/timers/low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`.
 
-\ **Note:** This setting is ignored if :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` is ``true``, as enabling that setting disables low-processor mode.
+\ **Примітка:** Це налаштування ігнорується, якщо :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` має значення ``true``, оскільки увімкнення цього налаштування вимикає режим низького навантаження на процесор.
 
 .. rst-class:: classref-item-separator
 
@@ -4507,15 +4507,15 @@ When the editor window is unfocused, the amount of sleeping between frames when 
 
 :ref:`int<class_int>` **interface/inspector/default_property_name_style** :ref:`🔗<class_EditorSettings_property_interface/inspector/default_property_name_style>`
 
-The default property name style to display in the Inspector dock. This style can be temporarily adjusted in the Inspector dock's menu.
+Стиль назви властивостей за замовчуванням, який відображається у вікні «Інспектор». Цей стиль можна тимчасово змінити в меню вікна «Інспектор».
 
-- **Raw:** Displays properties in ``snake_case``.
+- **Raw:** Відображає властивості у форматі ``snake_case``.
 
-- **Capitalized:** Displays properties capitalized.
+- **Capitalized:** Відображає властивості з великими літерами.
 
-- **Localized:** Displays the localized string for the current editor language if a translation is available for the given property. If no translation is available, falls back to **Capitalized**.
+- **Локалізовано:** Відображає локалізований рядок для поточної мови редактора, якщо для даного властивості доступний переклад. Якщо переклад недоступний, використовується стиль **З великої літери**.
 
-\ **Note:** To display translated setting names in Project Settings and Editor Settings, use :ref:`interface/editor/localization/localize_settings<class_EditorSettings_property_interface/editor/localization/localize_settings>` instead.
+\ **Примітка:** Щоб відображати перекладені назви налаштувань у налаштуваннях проекту та налаштуваннях редактора, використовуйте замість цього :ref:`interface/editor/localization/localize_settings<class_EditorSettings_property_interface/editor/localization/localize_settings>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4669,11 +4669,11 @@ The default property name style to display in the Inspector dock. This style can
 
 :ref:`bool<class_bool>` **interface/multi_window/enable** :ref:`🔗<class_EditorSettings_property_interface/multi_window/enable>`
 
-If ``true``, multiple window support in editor is enabled. The following panels can become dedicated windows (i.e. made floating): Docks, Script editor, Shader editor, and Game Workspace.
+Якщо ``true``, у редакторі ввімкнено підтримку декількох вікон. Наступні панелі можуть стати окремими вікнами (тобто плаваючими): «Доки», «Редактор скриптів», «Редактор шейдерів» та «Робоча область гри».
 
-\ **Note:** When :ref:`interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` is ``true``, the multi window support is always disabled.
+\ **Примітка:** Коли :ref:`interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` має значення ``true``, підтримка декількох вікон завжди вимкнена.
 
-\ **Note:** To query whether the editor can use multiple windows in an editor plugin, use :ref:`EditorInterface.is_multi_window_enabled()<class_EditorInterface_method_is_multi_window_enabled>` instead of querying the value of this editor setting.
+\ **Примітка:** Щоб дізнатися, чи може редактор використовувати декілька вікон у плагіні редактора, використовуйте :ref:`EditorInterface.is_multi_window_enabled()<class_EditorInterface_method_is_multi_window_enabled>` замість того, щоб запитувати значення цього параметра редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -4859,7 +4859,7 @@ If ``true``, multiple window support in editor is enabled. The following panels 
 
 :ref:`float<class_float>` **interface/theme/contrast** :ref:`🔗<class_EditorSettings_property_interface/theme/contrast>`
 
-The contrast factor to use when deriving the editor theme's base color (see :ref:`interface/theme/base_color<class_EditorSettings_property_interface/theme/base_color>`). When using positive values, the derived colors will be *darker* than the base color. This contrast factor can be set to a negative value, which will make the derived colors *brighter* than the base color. Negative contrast rates often look better for light themes.
+Коефіцієнт контрастності, який використовується при обчисленні базового кольору теми редактора (див. :ref:`interface/theme/base_color<class_EditorSettings_property_interface/theme/base_color>`). При використанні додатних значень отримані кольори будуть *темнішими* за базовий колір. Цей коефіцієнт контрастності можна встановити на від’ємне значення, що зробить отримані кольори *світлішими* за базовий колір. Від’ємні значення коефіцієнта контрастності часто краще виглядають у світлих темах.
 
 .. rst-class:: classref-item-separator
 
@@ -5005,7 +5005,7 @@ The contrast factor to use when deriving the editor theme's base color (see :ref
 
 :ref:`bool<class_bool>` **interface/theme/use_monospace_font_for_editor_symbols** :ref:`🔗<class_EditorSettings_property_interface/theme/use_monospace_font_for_editor_symbols>`
 
-If ``true``, use the monospace font for some labels in the editor that display code symbols, such as signals, properties, and methods.
+Якщо ``true``, для деяких міток у редакторі, що відображають символи коду, таких як сигнали, властивості та методи, слід використовувати моноширинний шрифт.
 
 .. rst-class:: classref-item-separator
 
@@ -5017,9 +5017,9 @@ If ``true``, use the monospace font for some labels in the editor that display c
 
 :ref:`bool<class_bool>` **interface/theme/use_system_accent_color** :ref:`🔗<class_EditorSettings_property_interface/theme/use_system_accent_color>`
 
-If ``true``, set accent color based on system settings.
+Якщо ``true``, колір виділення визначається відповідно до системних налаштувань.
 
-\ **Note:** This setting is effective on Windows, macOS, Linux, and Android.
+\ **Примітка:** Це налаштування діє в системах Windows, macOS, Linux та Android.
 
 .. rst-class:: classref-item-separator
 
@@ -5073,9 +5073,9 @@ If ``true``, set accent color based on system settings.
 
 :ref:`bool<class_bool>` **interface/touchscreen/haptic_on_long_press** :ref:`🔗<class_EditorSettings_property_interface/touchscreen/haptic_on_long_press>`
 
-If ``true``, the device will vibrate when a long-press gesture triggers a right-click context menu in the editor.
+Якщо ``true``, пристрій буде вібрувати, коли довге натискання викликає контекстне меню правого кліка в редакторі.
 
-\ **Note:** Only has an effect on devices with haptic feedback hardware. Defaults to ``true`` on touchscreen devices.
+\ **Примітка:** Діє лише на пристроях, оснащених апаратним забезпеченням для тактильного зворотного зв'язку. За замовчуванням встановлено значення ``true`` на пристроях із сенсорним екраном.
 
 .. rst-class:: classref-item-separator
 
@@ -5115,19 +5115,19 @@ If ``true``, the device will vibrate when a long-press gesture triggers a right-
 
 :ref:`int<class_int>` **network/connection/check_for_updates** :ref:`🔗<class_EditorSettings_property_network/connection/check_for_updates>`
 
-Specifies how the engine should check for updates.
+Вказує, як движок повинен перевіряти наявність оновлень.
 
-- **Disable Update Checks** will block the engine from checking updates (see also :ref:`network/connection/network_mode<class_EditorSettings_property_network/connection/network_mode>`).
+- **Вимкнути перевірку оновлень** заборонить движку перевіряти наявність оновлень (див. також :ref:`network/connection/network_mode<class_EditorSettings_property_network/connection/network_mode>`).
 
-- **Auto** (default) will check for newest stable or unstable version, depending on which version are you currently using. Switch to another option if you want to lock in.
+- **Автоматично** (за замовчуванням) перевірятиме наявність новітньої стабільної або нестабільної версії, залежно від того, яку версію ви використовуєте зараз. Перейдіть на інший варіант, якщо ви хочете зафіксувати версію.
 
-- **Check Newest Preview** will check for the newest available development snapshot.
+- **Перевірити найновіший попередній перегляд** перевірить наявність найновішого доступного знімка розробки.
 
-- **Check Newest Stable** will check for the newest available stable version.
+- **Перевірити найновішу стабільну версію** перевірить наявність найновішої доступної стабільної версії.
 
-- **Check Newest Patch** will check for the latest available stable version, but only within the same minor version. E.g. if your version is ``4.3.stable``, you will be notified about ``4.3.1.stable``, but not ``4.4.stable``.
+- **Перевірити найновіший патч** перевірить наявність найновішої доступної стабільної версії, але лише в межах тієї ж другорядної версії. Наприклад, якщо ваша версія — ``4.3.stable``, ви отримаєте повідомлення про ``4.3.1.stable``, але не про ``4.4.stable``.
 
-All update modes will ignore builds with different major versions (e.g. Godot 4 -> Godot 5).
+Усі режими оновлення ігноруватимуть збірки з іншими основними версіями (наприклад, Godot 4 -> Godot 5).
 
 .. rst-class:: classref-item-separator
 
@@ -5139,9 +5139,9 @@ All update modes will ignore builds with different major versions (e.g. Godot 4 
 
 :ref:`int<class_int>` **network/connection/network_mode** :ref:`🔗<class_EditorSettings_property_network/connection/network_mode>`
 
-Determines whether online features, such as the Asset Store or update checks, are enabled in the editor. If this is a privacy concern, disabling these online features prevents the editor from making HTTP requests to the Godot website or third-party platforms hosting assets from the Asset Store.
+Визначає, чи ввімкнено в редакторі онлайн-функції, такі як Asset Store або перевірка оновлень. Якщо це викликає занепокоєння щодо конфіденційності, вимкнення цих онлайн-функцій запобігає надсиланню редактором HTTP-запитів на веб-сайт Godot або сторонні платформи, що розміщують ресурси з Asset Store.
 
-Editor plugins and tool scripts are recommended to follow this setting. However, Godot can't prevent them from violating this rule.
+Рекомендується, щоб плагіни редактора та скрипти інструментів дотримувалися цього налаштування. Однак Godot не може запобігти їхньому порушенню цього правила.
 
 .. rst-class:: classref-item-separator
 
@@ -5177,9 +5177,9 @@ Editor plugins and tool scripts are recommended to follow this setting. However,
 
 :ref:`String<class_String>` **network/http_proxy/host** :ref:`🔗<class_EditorSettings_property_network/http_proxy/host>`
 
-The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset store and export template downloads). See also :ref:`network/http_proxy/port<class_EditorSettings_property_network/http_proxy/port>`.
+Хост, який слід використовувати для зв'язку з проксі-сервером HTTP та HTTPS у редакторі (для завантаження ресурсів із магазину та шаблонів експорту). Див. також :ref:`network/http_proxy/port<class_EditorSettings_property_network/http_proxy/port>`.
 
-\ **Note:** Godot currently doesn't automatically use system proxy settings, so you have to enter them manually here if needed.
+\ **Примітка:** Наразі Godot не використовує налаштування проксі-сервера системи автоматично, тому за потреби їх потрібно ввести тут вручну.
 
 .. rst-class:: classref-item-separator
 
@@ -5191,9 +5191,9 @@ The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset
 
 :ref:`int<class_int>` **network/http_proxy/port** :ref:`🔗<class_EditorSettings_property_network/http_proxy/port>`
 
-The port number to use to contact the HTTP and HTTPS proxy in the editor (for the asset store and export template downloads). See also :ref:`network/http_proxy/host<class_EditorSettings_property_network/http_proxy/host>`.
+Номер порту, який використовується для зв'язку з проксі-сервером HTTP та HTTPS у редакторі (для завантаження ресурсів із магазину та шаблонів експорту). Див. також :ref:`network/http_proxy/host<class_EditorSettings_property_network/http_proxy/host>`.
 
-\ **Note:** Godot currently doesn't automatically use system proxy settings, so you have to enter them manually here if needed.
+\ **Примітка:** Наразі Godot не використовує автоматично системні налаштування проксі-сервера, тому за потреби їх потрібно ввести тут вручну.
 
 .. rst-class:: classref-item-separator
 
@@ -5205,18 +5205,18 @@ The port number to use to contact the HTTP and HTTPS proxy in the editor (for th
 
 :ref:`bool<class_bool>` **network/language_server/enable_smart_resolve** :ref:`🔗<class_EditorSettings_property_network/language_server/enable_smart_resolve>`
 
-If ``true`` the language server will try to provide additional results when resolving symbols at the cost of showing wrong results. All symbols in the project are checked and resolved just based on their name, without taking context into account.
+Якщо ``true``, мовний сервер намагатиметься надати додаткові результати під час розпізнавання символів, навіть якщо це призведе до відображення неправильних результатів. Усі символи в проєкті перевіряються та розпізнаються виключно на основі їхніх імен, без урахування контексту.
 
 ::
 
     func untyped(param):
-        param.print() # Will resolve to the global print method for e.g. hover hints.
+     param.print() # Буде розпізнано як глобальний метод print, наприклад, для підказки при наведенні курсору.
 
-When using static typing it is recommended to disable this setting, since it will mostly add false positives for typed code.
+При використанні статичної типізації рекомендується вимкнути цей параметр, оскільки він здебільшого додаватиме помилкові спрацьовування для типізованого коду.
 
-\ **Note:** This setting also influences how symbols are resolved when using renaming capabilities.
+\ **Примітка:** Цей параметр також впливає на те, як розпізнаються символи при використанні можливостей перейменування.
 
-\ **Note:** The default value of this setting might change in future versions.
+\ **Примітка:** Значення цього параметра за замовчуванням може змінитися в майбутніх версіях.
 
 .. rst-class:: classref-item-separator
 
@@ -5228,7 +5228,7 @@ When using static typing it is recommended to disable this setting, since it wil
 
 :ref:`int<class_int>` **network/language_server/poll_limit_usec** :ref:`🔗<class_EditorSettings_property_network/language_server/poll_limit_usec>`
 
-The upper limit of time, that the language server spends for IO each poll.
+Максимальний час, який мовний сервер витрачає на операції вводу-виводу під час кожного запиту.
 
 .. rst-class:: classref-item-separator
 
@@ -5240,7 +5240,7 @@ The upper limit of time, that the language server spends for IO each poll.
 
 :ref:`String<class_String>` **network/language_server/remote_host** :ref:`🔗<class_EditorSettings_property_network/language_server/remote_host>`
 
-The host used to listen for language server clients.
+Раніше цей хост очікував підключення клієнтів мовного сервера.
 
 .. rst-class:: classref-item-separator
 
@@ -5252,9 +5252,9 @@ The host used to listen for language server clients.
 
 :ref:`int<class_int>` **network/language_server/remote_port** :ref:`🔗<class_EditorSettings_property_network/language_server/remote_port>`
 
-The port used to listen for language server clients.
+Порт, який використовується для прийому запитів від клієнтів мовного сервера.
 
-\ **Note:** A port configured with command-line options will take priority over this setting: ``--lsp-port <port>``.
+\ **Примітка:** Порт, налаштований за допомогою параметрів командного рядка, матиме пріоритет над цим параметром: ``--lsp-port <порт>``.
 
 .. rst-class:: classref-item-separator
 
@@ -5266,9 +5266,9 @@ The port used to listen for language server clients.
 
 :ref:`bool<class_bool>` **network/language_server/show_native_symbols_in_editor** :ref:`🔗<class_EditorSettings_property_network/language_server/show_native_symbols_in_editor>`
 
-The declaration of native symbols can't be resolved to a position in the file system. If ``true`` the language server will instead open the documentation for native symbols in the editor.
+Оголошення нативних символів не вдається перетворити на шлях у файловій системі. Якщо ``true``, мовний сервер замість цього відкриє документацію щодо нативних символів у редакторі.
 
-\ **Note:** The VSCode plugin adds additional functionality which allows viewing Godot documentation directly in VSCode, so this option is usually not needed in VSCode.
+\ **Примітка:** Плагін VSCode додає додаткову функціональність, яка дозволяє переглядати документацію Godot безпосередньо у VSCode, тому ця опція зазвичай не потрібна у VSCode.
 
 .. rst-class:: classref-item-separator
 
@@ -5280,7 +5280,7 @@ The declaration of native symbols can't be resolved to a position in the file sy
 
 :ref:`bool<class_bool>` **network/language_server/use_thread** :ref:`🔗<class_EditorSettings_property_network/language_server/use_thread>`
 
-If ``true`` the language server will run in a separate thread, if ``false`` it will run on the main thread.
+Якщо ``true``, сервер мови працюватиме в окремому потоці, якщо ``false``, він працюватиме в головному потоці.
 
 .. rst-class:: classref-item-separator
 
@@ -5292,7 +5292,7 @@ If ``true`` the language server will run in a separate thread, if ``false`` it w
 
 :ref:`String<class_String>` **network/tls/editor_tls_certificates** :ref:`🔗<class_EditorSettings_property_network/tls/editor_tls_certificates>`
 
-The TLS certificate bundle to use for HTTP requests made within the editor (e.g. from the Asset Store tab). If left empty, the `included Mozilla certificate bundle <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__ will be used.
+Набір сертифікатів TLS, який слід використовувати для HTTP-запитів, що надсилаються з редактора (наприклад, з вкладки «Магазин ресурсів»). Якщо це поле залишити порожнім, буде використано `вбудований набір сертифікатів Mozilla <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -5406,7 +5406,7 @@ The TLS certificate bundle to use for HTTP requests made within the editor (e.g.
 
 :ref:`int<class_int>` **run/output/font_size** :ref:`🔗<class_EditorSettings_property_run/output/font_size>`
 
-The size of the font in the **Output** panel at the bottom of the editor. This setting does not impact the font size of the script editor (see :ref:`interface/editor/fonts/code_font_size<class_EditorSettings_property_interface/editor/fonts/code_font_size>`).
+Розмір шрифту на панелі **Вивід** у нижній частині редактора. Це налаштування не впливає на розмір шрифту в редакторі скриптів (див. :ref:`interface/editor/fonts/code_font_size<class_EditorSettings_property_interface/editor/fonts/code_font_size>`).
 
 .. rst-class:: classref-item-separator
 
@@ -5572,7 +5572,7 @@ The size of the font in the **Output** panel at the bottom of the editor. This s
 
 :ref:`bool<class_bool>` **text_editor/appearance/drag_and_drop_info/show_drag_and_drop_info** :ref:`🔗<class_EditorSettings_property_text_editor/appearance/drag_and_drop_info/show_drag_and_drop_info>`
 
-If ``true``, shows an info label listing available drop options when dragging an object into the script text editor.
+Якщо ``true``, під час перетягування об’єкта в текстовий редактор скрипту відображається інформаційний напис із переліком доступних варіантів розміщення.
 
 .. rst-class:: classref-item-separator
 
@@ -5764,7 +5764,7 @@ If ``true``, shows an info label listing available drop options when dragging an
 
 :ref:`int<class_int>` **text_editor/appearance/whitespace/line_spacing** :ref:`🔗<class_EditorSettings_property_text_editor/appearance/whitespace/line_spacing>`
 
-The space to add between lines (in pixels). Greater line spacing can help improve readability at the cost of displaying fewer lines on screen. Negative values allow for even more compact text, but may look broken with certain fonts.
+Відстань між рядками (у пікселях). Більший міжрядковий інтервал може покращити читабельність, але при цьому на екрані відображатиметься менше рядків. Негативні значення дозволяють зробити текст ще компактнішим, але при використанні певних шрифтів можуть спричиняти порушення вирівнювання.
 
 .. rst-class:: classref-item-separator
 

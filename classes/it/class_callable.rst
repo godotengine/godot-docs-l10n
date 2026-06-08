@@ -12,7 +12,7 @@ Un tipo integrato che rappresenta un metodo o una funzione autonoma.
 Descrizione
 ----------------------
 
-**Callable** is a built-in :ref:`Variant<class_Variant>` type that represents a function. It can either be a method within an :ref:`Object<class_Object>` instance, or a custom callable used for different purposes (see :ref:`is_custom()<class_Callable_method_is_custom>`). Like all :ref:`Variant<class_Variant>` types, it can be stored in variables and passed to other functions. It is most commonly used for signal callbacks.
+Il **Callable** (chiamabile) è un tipo di :ref:`Variant<class_Variant>` incorporato che rappresenta una funzione. Può essere un metodo all'interno di un'istanza di :ref:`Object<class_Object>` o un chiamabile personalizzato utilizzato per diversi scopi (vedi :ref:`is_custom()<class_Callable_method_is_custom>`). Come tutti i tipi di :ref:`Variant<class_Variant>`, può essere memorizzato in variabili e passato ad altre funzioni. È più comunemente usato per le richiamate di segnale.
 
 
 .. tabs::
@@ -24,13 +24,13 @@ Descrizione
 
     func test():
         var callable = Callable(self, "print_args")
-        callable.call("hello", "world")  # Prints "hello world ".
-        callable.call(Vector2.UP, 42, callable)  # Prints "(0.0, -1.0) 42 Node(node.gd)::print_args"
-        callable.call("invalid")  # Invalid call, should have at least 2 arguments.
+        callable.call("ciao", "mondo")  # Stampa "ciao modo".
+        callable.call(Vector2.UP, 42, callable)  # Stampa "(0.0, -1.0) 42 Node(node.gd)::print_args"
+        callable.call("invalid")  # Chiamata non valida, deve avere almeno 2 argomenti.
 
  .. code-tab:: csharp
 
-    // Default parameter values are not supported.
+    // I valori predefiniti dei parametri non sono supportati
     public void PrintArgs(Variant arg1, Variant arg2, Variant arg3 = default)
     {
         GD.PrintS(arg1, arg2, arg3);
@@ -38,16 +38,16 @@ Descrizione
 
     public void Test()
     {
-        // Invalid calls fail silently.
+        // Le chiamate non valide falliscono silenziosamente.
         Callable callable = new Callable(this, MethodName.PrintArgs);
-        callable.Call("hello", "world"); // Default parameter values are not supported, should have 3 arguments.
-        callable.Call(Vector2.Up, 42, callable); // Prints "(0, -1) 42 Node(Node.cs)::PrintArgs"
-        callable.Call("invalid"); // Invalid call, should have 3 arguments.
+        callable.Call("ciao", "mondo"); // I valori predefiniti dei parametri non sono supportati, deve avere 3 argomenti.
+        callable.Call(Vector2.Up, 42, callable); // Stampa "(0, -1) 42 Node(Node.cs)::PrintArgs"
+        callable.Call("invalid"); // Chiamata non valida, deve avere 3 argomenti.
     }
 
 
 
-In GDScript, it's possible to create lambda functions within a method. Lambda functions are custom callables that are not associated with an :ref:`Object<class_Object>` instance. Optionally, lambda functions can also be named. The name will be displayed in the debugger, or when calling :ref:`get_method()<class_Callable_method_get_method>`.
+In GDScript è possibile creare funzioni lambda all'interno di un metodo. Le funzioni lambda sono chiamabili personalizzati che non sono associati a un'istanza di :ref:`Object<class_Object>`. Facoltativamente, è anche possibile denominare le funzioni lambda. Il nome sarà visualizzato nel debugger o quando si chiama :ref:`get_method()<class_Callable_method_get_method>`.
 
 ::
 
@@ -55,33 +55,33 @@ In GDScript, it's possible to create lambda functions within a method. Lambda fu
         var my_lambda = func (message):
             print(message)
 
-        # Prints "Hello everyone!"
-        my_lambda.call("Hello everyone!")
+        # Stampa "Ciao a tutti!"
+        my_lambda.call("Ciao a tutti!")
 
-        # Prints "Attack!", when the button_pressed signal is emitted.
-        button_pressed.connect(func(): print("Attack!"))
+        # Stampa "Attacca!", quando il segnale button_pressed viene emesso.
+        button_pressed.connect(func(): print("Attacca!"))
 
-In GDScript, you can access methods and global functions as **Callable**\ s:
+In GDScript, è possibile accedere a metodi e funzioni globali come **Callable**:
 
 ::
 
-    tween.tween_callback(node.queue_free)  # Object methods.
-    tween.tween_callback(array.clear)  # Methods of built-in types.
-    tween.tween_callback(print.bind("Test"))  # Global functions.
+    tween.tween_callback(node.queue_free)  # Metodi di Object.
+    tween.tween_callback(array.clear)  # Metodi di tipi integrati.
+    tween.tween_callback(print.bind("Test"))  # Funzioni globali.
 
-\ **Note:** :ref:`Dictionary<class_Dictionary>` does not support the above due to ambiguity with keys.
+\ **Nota:** :ref:`Dictionary<class_Dictionary>` non supporta quanto descritto sopra a causa dell'ambiguità con le chiavi.
 
 ::
 
     var dictionary = { "hello": "world" }
 
-    # This will not work, `clear` is treated as a key.
+    # Questo non funzionerà, `clear` è trattato come chiave.
     tween.tween_callback(dictionary.clear)
 
-    # This will work.
+    # Questo funzionerà.
     tween.tween_callback(Callable.create(dictionary, "clear"))
 
-\ **Note:** In a boolean context, a callable will evaluate to ``false`` if it's null (see :ref:`is_null()<class_Callable_method_is_null>`). Otherwise, a callable will always evaluate to ``true``.
+\ **Nota:** In un contesto booleano, un chiamabile verrà valutato come ``false`` se è nullo (vedi :ref:`is_null()<class_Callable_method_is_null>`). Altrimenti, un chiamabile verrà sempre valutato come ``true``.
 
 .. note::
 

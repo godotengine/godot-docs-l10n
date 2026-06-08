@@ -16,11 +16,11 @@ GLTFDocumentExtension
 描述
 ----
 
-Extends the functionality of the :ref:`GLTFDocument<class_GLTFDocument>` class by allowing you to run arbitrary code at various stages of glTF import or export.
+通过允许你在 glTF 导入或导出的各个阶段运行任意代码，来扩展 :ref:`GLTFDocument<class_GLTFDocument>` 类的功能。
 
-To use, make a new class extending GLTFDocumentExtension, override any methods you need, make an instance of your class, and register it using :ref:`GLTFDocument.register_gltf_document_extension()<class_GLTFDocument_method_register_gltf_document_extension>`.
+要使用它，请创建一个继承自 GLTFDocumentExtension 的新类，重写（override）任何你需要的方法，创建该类的实例，然后使用 :ref:`GLTFDocument.register_gltf_document_extension()<class_GLTFDocument_method_register_gltf_document_extension>` 方法进行注册。
 
-\ **Note:** All GLTFDocumentExtension classes are duplicated when beginning the import or export process. Except for configuration values, these classes must be stateless in order to function properly. If you need to store data, use the ``set_additional_data`` and ``get_additional_data`` methods in :ref:`GLTFState<class_GLTFState>` or :ref:`GLTFNode<class_GLTFNode>`.
+\ **注意：** 所有 GLTFDocumentExtension 类在开始导入或导出流程时都会被复制（duplication）。除了配置值之外，这些类必须是无状态的（stateless）才能正常工作。如果你需要存储数据，请使用 :ref:`GLTFState<class_GLTFState>` 或 :ref:`GLTFNode<class_GLTFNode>` 中的 ``set_additional_data`` 和 ``get_additional_data`` 方法。
 
 .. rst-class:: classref-introduction-group
 
@@ -116,9 +116,9 @@ To use, make a new class extending GLTFDocumentExtension, override any methods y
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_export_get_property_list**\ (\ root_node\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__export_get_property_list>`
 
-Runs prior to the export process. This method is run before :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>` when exporting a scene from the editor, or it may not be run at all in other situations.
+在导出过程之前运行。在编辑器中导出场景时，该方法会在 :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>` 之前运行；但在其他情况下可能完全不运行。
 
-Unlike the rest of the export methods, this does not run when calling a :ref:`GLTFDocument<class_GLTFDocument>`'s export methods in sequence with everything else, but rather runs before that entire process occurs, allowing configuration to occur beforehand, potentially minutes or hours in advance of :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>`. This allows extensions to decide which properties to show in the editor export settings dialog based on the contents of the scene, hiding any settings that are not relevant for that scene. The ``root_node`` parameter may be ``null``, in which case all properties should be shown.
+与其余的导出方法不同，这不会在按顺序调用 :ref:`GLTFDocument<class_GLTFDocument>` 的导出方法时运行，而是在整个过程发生之前运行，从而允许预先进行配置，可能比 :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>` 提前数分钟或数小时。这允许扩展根据场景的内容决定在编辑器导出设置对话框中显示哪些属性，并隐藏对该场景不相关的任何设置。\ ``root_node`` 参数可能为 ``null``\ ，此时应显示所有属性。
 
 .. rst-class:: classref-item-separator
 

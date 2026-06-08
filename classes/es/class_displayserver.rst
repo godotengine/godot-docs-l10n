@@ -4630,9 +4630,9 @@ The names of built-in display servers are ``Windows``, ``macOS``, ``X11`` (Linux
 
 :ref:`int<class_int>` **get_primary_screen**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_get_primary_screen>`
 
-Returns the index of the primary screen.
+Devuelve el índice de la pantalla principal.
 
-\ **Note:** This method is implemented on Linux/X11, macOS, and Windows. On other platforms, this method always returns ``0``.
+\ **Nota:** Este método está implementado en Linux/X11, macOS y Windows. En otras plataformas, este método siempre devuelve ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -7237,9 +7237,9 @@ Sets the reference white luminance in nits (cd/m²) for HDR output by the window
 
 |void| **window_set_icon**\ (\ icon\: :ref:`Image<class_Image>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_icon>`
 
-Sets the window icon (usually displayed in the top-left corner) for the window specified by ``window_id``.
+Establece el icono de la ventana (normalmente se muestra en la esquina superior izquierda) para la ventana especificada por ``window_id``.
 
-\ **Note:** This method is implemented on Linux and Windows.
+\ **Nota:** Este método está implementado en Linux y Windows.
 
 .. rst-class:: classref-item-separator
 

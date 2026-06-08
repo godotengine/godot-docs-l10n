@@ -14,11 +14,11 @@ CameraServer
 Описание
 ----------------
 
-The **CameraServer** keeps track of different cameras accessible in Godot. These are external cameras such as webcams or the cameras on your phone.
+Класс **CameraServer** отслеживает различные камеры, доступные в Godot. Это внешние камеры, такие как веб-камеры или камеры вашего телефона.
 
-It is notably used to provide AR modules with a video feed from the camera.
+Он используется, в частности, для предоставления модулям дополненной реальности видеопотока с камеры.
 
-\ **Note:** This class is currently only implemented on Linux, Android, macOS, and iOS. On other platforms no :ref:`CameraFeed<class_CameraFeed>`\ s will be available. To get a :ref:`CameraFeed<class_CameraFeed>` on iOS, enable :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`.
+\ **Примечание:** В настоящее время этот класс реализован только для Linux, Android, macOS и iOS. На других платформах :ref:`CameraFeed<class_CameraFeed>` будут недоступны. Чтобы получить :ref:`CameraFeed<class_CameraFeed>` на iOS, включите :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`.
 
 .. rst-class:: classref-reftable-group
 

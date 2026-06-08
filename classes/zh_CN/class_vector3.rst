@@ -648,9 +648,9 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3_method_max_axis_ind
 
 :ref:`float<class_float>` **distance_squared_to**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_distance_squared_to>`
 
-Returns the squared `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+返回该向量与 ``to`` 之间的\ ``平方欧几里得距离``\ 。
 
-This method runs faster than :ref:`distance_to()<class_Vector3_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
+这个方法的运行速度比 :ref:`distance_to()<class_Vector3_method_distance_to>` 更快，所以如果你需要比较向量的远近，或者某些公式里恰好需要用到距离的平方，建议优先使用它。
 
 .. rst-class:: classref-item-separator
 
@@ -662,7 +662,7 @@ This method runs faster than :ref:`distance_to()<class_Vector3_method_distance_t
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Vector3_method_distance_to>`
 
-Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+返回该向量与 ``to`` 之间的 `欧几里得距离 <https://en.wikipedia.org/wiki/Euclidean_distance>`__\ 。
 
 .. rst-class:: classref-item-separator
 

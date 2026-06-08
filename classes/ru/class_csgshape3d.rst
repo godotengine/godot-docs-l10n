@@ -146,9 +146,9 @@ enum **Operation**: :ref:`🔗<enum_CSGShape3D_Operation>`
 - |void| **set_autosmooth**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_autosmooth**\ (\ )
 
-Enables automatic smoothing. This overrides any smoothing on the CSG node and instead uses :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>` to calculate normals based on the angle between faces.
+Включает автоматическое сглаживание. Это отменяет любое сглаживание на узле CSG и вместо этого использует :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>` для вычисления нормалей на основе угла между гранями.
 
-Children of a :ref:`CSGCombiner3D<class_CSGCombiner3D>` node will be treated as a single mesh.
+Дочерние элементы узла :ref:`CSGCombiner3D<class_CSGCombiner3D>` будут рассматриваться как единая сетка.
 
 .. rst-class:: classref-item-separator
 
@@ -254,9 +254,9 @@ Children of a :ref:`CSGCombiner3D<class_CSGCombiner3D>` node will be treated as 
 - |void| **set_smoothing_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_smoothing_angle**\ (\ )
 
-When autosmooth is enabled, faces with an angle between them greater than this will be smoothed, while faces with a smaller angle will remain sharp.
+При включении автоматического сглаживания грани с углом между ними, превышающим указанное значение, будут сглаживаться, а грани с меньшим углом останутся острыми.
 
-Note: An angle lower than 0.1 will cause all smoothing to be disabled, this can be used to increase performance.
+Примечание: угол меньше 0,1 приведет к отключению всего сглаживания; это можно использовать для повышения производительности.
 
 .. rst-class:: classref-item-separator
 

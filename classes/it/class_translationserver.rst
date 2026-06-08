@@ -384,7 +384,7 @@ Restituisce l'istanza di :ref:`Translation<class_Translation>` che corrisponde d
 
 :ref:`Array<class_Array>`\[:ref:`Translation<class_Translation>`\] **get_translations**\ (\ ) |const| :ref:`🔗<class_TranslationServer_method_get_translations>`
 
-Returns all available :ref:`Translation<class_Translation>` instances in the main translation domain as added by :ref:`add_translation()<class_TranslationServer_method_add_translation>`.
+Restituisce tutte le istanze di :ref:`Translation<class_Translation>` disponibili nel dominio di traduzione principale, come sono state aggiunte tramite :ref:`add_translation()<class_TranslationServer_method_add_translation>`.
 
 .. rst-class:: classref-item-separator
 

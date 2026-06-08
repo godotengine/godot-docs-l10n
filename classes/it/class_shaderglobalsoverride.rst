@@ -16,9 +16,9 @@ Descrizione
 
 Similmente a come un nodo :ref:`WorldEnvironment<class_WorldEnvironment>` può essere utilizzato per sovrascrivere l'ambiente mentre una scena specifica è caricata, **ShaderGlobalsOverride** può essere utilizzato per sovrascrivere temporaneamente i parametri globali di shader. Una volta rimosso il nodo, i valori dell'intero progetto per i parametri globali di shader sono ripristinati. Vedi i metodi ``global_shader_parameter_*`` del :ref:`RenderingServer<class_RenderingServer>` per ulteriori informazioni.
 
-\ **Nota:** Può essere utilizzato solo uno **ShaderGlobalsOverride** per scena. Se c'è più di un nodo **ShaderGlobalsOverride** nell'albero di scena, solo il primo nodo (in ordine di albero) sarà preso in considerazione.
+\ **Nota:** Può essere utilizzato solo uno **ShaderGlobalsOverride** per scena. Se c'è più di un nodo **ShaderGlobalsOverride** nell'albero di scene, solo il primo nodo (in ordine di albero) sarà preso in considerazione.
 
-\ **Nota:** Tutti i nodi **ShaderGlobalsOverride** sono resi parte di un gruppo ``"shader_overrides_group"`` quando sono aggiunti all'albero di scena. Il nodo **ShaderGlobalsOverride** attualmente attivo ha anche un gruppo ``"shader_overrides_group_active"`` aggiunto. Puoi usarlo per verificare quale nodo **ShaderGlobalsOverride** è attualmente attivo.
+\ **Nota:** Tutti i nodi **ShaderGlobalsOverride** sono resi parte di un gruppo ``"shader_overrides_group"`` quando sono aggiunti all'albero di scene. Il nodo **ShaderGlobalsOverride** attualmente attivo ha anche un gruppo ``"shader_overrides_group_active"`` aggiunto. Puoi usarlo per verificare quale nodo **ShaderGlobalsOverride** è attualmente attivo.
 
 .. rst-class:: classref-introduction-group
 

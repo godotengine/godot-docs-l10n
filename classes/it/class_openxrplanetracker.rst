@@ -16,7 +16,7 @@ Spatial entity tracker for our spatial entity plane tracking extension.
 Descrizione
 ----------------------
 
-Spatial entity tracker for our OpenXR spatial entity plane tracking extension. These trackers identify entities in our real space such as walls, floors, tables, etc. and map their location to our virtual space.
+Tracker di entità spaziali per la nostra estensione di tracciamento dei piani sulle entità spaziali per OpenXR. Questi tracker identificano entità nel nostro spazio reale, come muri, pavimenti, tavoli, ecc., e ne mappano la posizione nel nostro spazio virtuale.
 
 .. rst-class:: classref-reftable-group
 
@@ -142,7 +142,7 @@ Descrizioni dei metodi
 
 |void| **clear_mesh_data**\ (\ ) :ref:`🔗<class_OpenXRPlaneTracker_method_clear_mesh_data>`
 
-Clears the mesh data for this tracker. You should only call this if you are handling your own discovery logic.
+Cancella i dati di mesh per questo tracker. Dovresti chiamare questa funzione solo se gestisci la tua logica di individuazione.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Gets a collision shape built either from the mesh data or from our bounding size
 
 |void| **set_mesh_data**\ (\ origin\: :ref:`Transform3D<class_Transform3D>`, vertices\: :ref:`PackedVector2Array<class_PackedVector2Array>`, indices\: :ref:`PackedInt32Array<class_PackedInt32Array>` = PackedInt32Array()\ ) :ref:`🔗<class_OpenXRPlaneTracker_method_set_mesh_data>`
 
-Sets the mesh data for this plane. You should only call this if you are handling your own discovery logic.
+Imposta i dati di mesh per questo piano. Dovresti chiamare questa funzione solo se gestisci la tua logica di individuazione.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

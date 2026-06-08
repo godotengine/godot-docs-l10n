@@ -1150,11 +1150,11 @@ Aggiunge un'estensione al menu contestuale. ``slot`` è il menu contestuale in c
 
 **Deprecato:** Use :ref:`add_dock()<class_EditorPlugin_method_add_dock>` instead, with :ref:`EditorDock.default_slot<class_EditorDock_property_default_slot>` set to :ref:`DOCK_SLOT_BOTTOM<class_EditorPlugin_constant_DOCK_SLOT_BOTTOM>`.
 
-Adds a control to the bottom panel (together with Output, Debug, Animation, etc.). Returns a reference to a button that is outside the scene tree. It's up to you to hide/show the button when needed. When your plugin is deactivated, make sure to remove your custom control with :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+Aggiunge un controllo al pannello inferiore (insieme a Output, Debug, Animazione, ecc.). Restituisce un riferimento a un pulsante che è fuori dall'albero di scene. Sta a te nascondere/mostrare il pulsante quando necessario. Quando l'estensione è disattivata, assicurati di rimuovere il tuo controllo personalizzato con :ref:`remove_control_from_bottom_panel()<class_EditorPlugin_method_remove_control_from_bottom_panel>` e liberarlo con :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
-\ ``shortcut`` is a shortcut that, when activated, will toggle the bottom panel's visibility. The shortcut object is only set when this control is added to the bottom panel.
+\ ``shortcut`` è una scorciatoia che, una volta attivata, cambia la visibilità del pannello inferiore. L'oggetto scorciatoia viene impostato solo quando questo controllo viene aggiunto al pannello inferiore.
 
-\ **Note** See the default editor bottom panel shortcuts in the Editor Settings for inspiration. By convention, they all use :kbd:`Alt` modifier.
+\ **Note** Vedi i tasti di scelta rapida predefiniti del pannello inferiore nelle Impostazioni dell'editor per ispirazione. Per convenzione, usano tutti il modificatore :kbd:`Alt`.
 
 .. rst-class:: classref-item-separator
 
@@ -1236,9 +1236,9 @@ Aggiunge uno :ref:`Script<class_Script>` come estensione di debugger al Debugger
 
 |void| **add_dock**\ (\ dock\: :ref:`EditorDock<class_EditorDock>`\ ) :ref:`🔗<class_EditorPlugin_method_add_dock>`
 
-Adds a new dock.
+Aggiunge un nuovo pannello.
 
-When your plugin is deactivated, make sure to remove your custom dock with :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` and free it with :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+Quando la propria estensione viene disattivata, assicurarsi di rimuovere il pannello personalizzato con :ref:`remove_dock()<class_EditorPlugin_method_remove_dock>` e liberarlo con :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
 .. rst-class:: classref-item-separator
 

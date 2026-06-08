@@ -256,7 +256,7 @@ Si ``true`` et que la polyligne a plus de 2 points, le dernier point et le premi
 
 \ **Note :** La forme du segment de fermeture n'est pas garantie d'être transparente si une courbe de largeur :ref:`width_curve<class_Line2D_property_width_curve>` est fournie.
 
-\ **Note:** La liaison entre le segment de fermeture et le premier segment est dessinée en premier et échantillonne le :ref:`gradient<class_Line2D_property_gradient>` et la :ref:`width_curve<class_Line2D_property_width_curve>` au début. C'est un détail d'implémentation qui pourrait changer dans une version future.
+\ **Note: ** La liaison entre le segment de fermeture et le premier segment est dessinée en premier et échantillonne le :ref:`gradient<class_Line2D_property_gradient>` et la :ref:`width_curve<class_Line2D_property_width_curve>` au début. Il s'agit d'un détail d'implémentation qui pourrait changer dans une version future.
 
 .. rst-class:: classref-item-separator
 

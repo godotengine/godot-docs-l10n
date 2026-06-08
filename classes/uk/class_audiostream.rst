@@ -16,7 +16,7 @@ AudioStream
 Опис
 --------
 
-Base class for audio streams. Audio streams are used for sound effects and music playback, and support WAV (via :ref:`AudioStreamWAV<class_AudioStreamWAV>`), Ogg (via :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`), and MP3 (via :ref:`AudioStreamMP3<class_AudioStreamMP3>`) file formats.
+Базовий клас для аудіопотоків. Аудіопотоки використовуються для відтворення звукових ефектів та музики і підтримують такі формати файлів: WAV (через :ref:`AudioStreamWAV<class_AudioStreamWAV>`), Ogg (через :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`) та MP3 (через :ref:`AudioStreamMP3<class_AudioStreamMP3>`).
 
 .. rst-class:: classref-introduction-group
 

@@ -444,9 +444,9 @@ enum **ToneMapper**: :ref:`🔗<enum_Environment_ToneMapper>`
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_FILMIC** = ``2``
 
-Uses a film-like tonemapping curve to prevent clipping of bright values and provide better contrast than :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`. Slightly slower than :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`.
+使用一种类似胶片质感的色调映射曲线，既能防止高亮数值被裁切（即避免亮部细节丢失变成死白），又能提供比 :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>` 更好的对比度。不过，它的运算速度比 :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>` 稍慢一些。
 
-\ **Note:** This tonemapper does not support HDR output because it produces output in the SDR range. It is recommended to use a different tonemapper when rendering to an HDR screen.
+\ **注意：** 该色调映射器不支持 HDR（高动态范围）输出，因为它生成的输出结果仅限于 SDR（标准动态范围）区间。因此，当渲染目标是 HDR 屏幕时，建议改用其他色调映射器。
 
 .. _class_Environment_constant_TONE_MAPPER_ACES:
 
@@ -454,11 +454,11 @@ Uses a film-like tonemapping curve to prevent clipping of bright values and prov
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_ACES** = ``3``
 
-Uses a high-contrast film-like tonemapping curve and desaturates bright values for a more realistic appearance. Slightly slower than :ref:`TONE_MAPPER_FILMIC<class_Environment_constant_TONE_MAPPER_FILMIC>`.
+使用一种高对比度的胶片质感色调映射曲线，并且会对高亮数值进行去饱和处理，从而呈现出更逼真的视觉效果。它的运算速度比 :ref:`TONE_MAPPER_FILMIC<class_Environment_constant_TONE_MAPPER_FILMIC>` 稍慢一些。
 
-\ **Note:** This tonemapping operator is called "ACES Fitted" in Godot 3.x.
+\ **注意：** 该色调映射算子在 Godot 3.x 版本中被称为“ACES Fitted”。
 
-\ **Note:** This tonemapper does not support HDR output because it produces output in the SDR range. It is recommended to use a different tonemapper when rendering to an HDR screen.
+\ **注意：** 该色调映射器不支持 HDR（高动态范围）输出，因为它生成的输出结果仅限于 SDR（标准动态范围）区间。因此，当渲染目标是 HDR 屏幕时，建议改用其他色调映射器。
 
 .. _class_Environment_constant_TONE_MAPPER_AGX:
 
@@ -492,7 +492,7 @@ enum **GlowBlendMode**: :ref:`🔗<enum_Environment_GlowBlendMode>`
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_SCREEN** = ``1``
 
-Adds the glow effect to the scene after modifying the glow influence based on the scene value; dark values will be highly influenced by glow and bright values will not be influenced by glow. This approach avoids bright values becoming overly bright from the glow effect. :ref:`tonemap_white<class_Environment_property_tonemap_white>` is used to determine the maximum scene value where the glow should have no influence. When :ref:`tonemap_mode<class_Environment_property_tonemap_mode>` is set to :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` and :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true``, the parent window's :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` will be used as the maximum scene value.
+在基于场景亮度调整辉光的影响后，将辉光效果添加到场景中；较暗的数值会受到辉光的强烈影响，而较亮的数值则不会受到辉光的影响。这种方法可以避免明亮的区域因为辉光效果而变得过度曝光（过亮）。\ :ref:`tonemap_white<class_Environment_property_tonemap_white>` 用于确定辉光不再产生影响的场景最大亮度值。当 :ref:`tonemap_mode<class_Environment_property_tonemap_mode>` 被设置为 :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` 且 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 为 ``true`` 时，将使用父窗口的 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 作为场景的最大亮度值。
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_SOFTLIGHT:
 
@@ -500,9 +500,9 @@ Adds the glow effect to the scene after modifying the glow influence based on th
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_SOFTLIGHT** = ``2``
 
-Adds the glow effect to the tonemapped image after modifying the glow influence based on the image value; dark values and bright values will not be influenced by glow and mid-range values will be highly influenced by glow. This approach avoids bright values becoming overly bright from the glow effect. The glow will have the largest influence on image values of ``0.25`` and will have no influence when applied to image values greater than ``1.0``.
+在基于图像亮度调整辉光的影响后，将辉光效果添加到经过色调映射（tonemapped）的图像上；暗部数值和亮部数值都不会受到辉光的影响，而中间调数值则会受到辉光的强烈影响。这种方法可以避免亮部区域因为辉光效果而变得过度明亮。辉光对数值为 ``0.25`` 的图像亮度影响最大，而当图像亮度数值大于 ``1.0`` 时，辉光将完全不起作用。
 
-\ **Note:** This blend mode does not support HDR output because expects a maximum output value of ``1.0``. It is recommended to use a different blend mode when rendering to an HDR screen.
+\ **注意：** 此混合模式不支持 HDR 输出，因为它预设的最大输出亮度值为 ``1.0``\ 。因此，当在 HDR 屏幕上渲染时，建议使用其他的混合模式。
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_REPLACE:
 
@@ -617,9 +617,9 @@ enum **SDFGIYScale**: :ref:`🔗<enum_Environment_SDFGIYScale>`
 - |void| **set_adjustment_color_correction**\ (\ value\: :ref:`Texture<class_Texture>`\ )
 - :ref:`Texture<class_Texture>` **get_adjustment_color_correction**\ (\ )
 
-The :ref:`Texture2D<class_Texture2D>` or :ref:`Texture3D<class_Texture3D>` lookup table (LUT) to use for the built-in post-process color grading. Can use a :ref:`GradientTexture1D<class_GradientTexture1D>` for a 1-dimensional LUT, or a :ref:`Texture3D<class_Texture3D>` for a more complex LUT. Effective only if :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` is ``true``.
+用于内置后处理颜色分级的 :ref:`Texture2D<class_Texture2D>` 或 :ref:`Texture3D<class_Texture3D>` 查找表（LUT）。你可以使用 :ref:`GradientTexture1D<class_GradientTexture1D>` 作为一维 LUT，或者使用 :ref:`Texture3D<class_Texture3D>` 来实现更复杂的 LUT。该属性仅在 :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` 为 ``true`` 时生效。
 
-\ **Note:** Color correction does not currently support HDR output due to only supporting values in the SDR (0.0 to 1.0) range.
+\ **注意：** 颜色校正目前不支持 HDR（高动态范围）输出，因为它仅支持标准动态范围（SDR，即 0.0 到 1.0）内的数值。
 
 .. rst-class:: classref-item-separator
 
@@ -2081,9 +2081,9 @@ SDFGI 可见的最大距离。超出该距离，环境照明或其他 GI 来源�
 - |void| **set_tonemap_agx_white**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tonemap_agx_white**\ (\ )
 
-The white reference value for tonemapping, which indicates where bright white is located in the scale of values provided to the tonemapper. For photorealistic lighting, it is recommended to set :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` to at least ``6.0``. Higher values result in less blown out highlights, but may make the scene appear lower contrast. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` is the same as :ref:`tonemap_white<class_Environment_property_tonemap_white>`, but is only effective with the :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` tonemapper. See also :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
+用于色调映射的白色参考值，它决定了在提供给色调映射器的数值范围内，“亮白色”具体位于哪个位置。为了获得逼真的光照效果，建议将 :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 至少设置为 ``6.0``\ 。数值越高，高光部分越不容易过曝（即避免出现死白一片），但可能会让整体场景看起来对比度偏低。\ :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 的作用和 :ref:`tonemap_white<class_Environment_property_tonemap_white>` 是一样的，但它仅在使用 :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` 这种色调映射器时才会生效。相关参数也可以参考 :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`\ 。
 
-\ **Note:** When using the Mobile renderer with :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` disabled, :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` is ignored and a white value of ``2.0`` will always be used instead. Otherwise, :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` will be dynamically adjusted at runtime by multiplying it by the parent window's :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` when using :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to ensure good behavior with both SDR and HDR output.
+\ **注意：** 如果在移动端渲染器（Mobile renderer）中禁用了 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`\ ，那么 :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 将会被直接忽略，系统会始终强制使用 ``2.0`` 作为白色值。否则，当启用了 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 时，为了保证在 SDR 和 HDR 输出下都有良好的显示效果，\ :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 会在运行时通过乘以父窗口的 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 来动态调整。
 
 .. rst-class:: classref-item-separator
 
@@ -2136,11 +2136,11 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_tonemap_white**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tonemap_white**\ (\ )
 
-The white reference value for tonemapping, which indicates where bright white is located in the scale of values provided to the tonemapper. For photorealistic lighting, it is recommended to set :ref:`tonemap_white<class_Environment_property_tonemap_white>` to at least ``6.0``. Higher values result in less blown out highlights, but may make the scene appear lower contrast. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` will be used instead when using the :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` tonemapper. See also :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
+用于色调映射的白色参考值，它决定了在提供给色调映射器的数值范围内，“亮白色”具体位于哪个位置。为了获得逼真的光照效果，建议将 :ref:`tonemap_white<class_Environment_property_tonemap_white>` 至少设置为 ``6.0``\ 。数值越高，高光部分越不容易过曝（即避免出现死白一片），但可能会让整体场景看起来对比度偏低。当使用 :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` 色调映射器时，将会改用 :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 参数。相关参数也可以参考 :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`\ 。
 
-\ **Note:** :ref:`tonemap_white<class_Environment_property_tonemap_white>` must be set to ``2.0`` or lower on the Mobile renderer to produce bright images.
+\ **注意：** 在移动端渲染器（Mobile renderer）中，必须将 :ref:`tonemap_white<class_Environment_property_tonemap_white>` 设置为 ``2.0`` 或更低，才能呈现出明亮的画面。
 
-\ **Note:** :ref:`tonemap_white<class_Environment_property_tonemap_white>` is ignored when using :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` and will be dynamically adjusted at runtime to never be less than the parent window's :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` when using :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>` with :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`.
+\ **注意：** 当使用 :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` 色调映射器时，\ :ref:`tonemap_white<class_Environment_property_tonemap_white>` 将会被忽略；而当使用 :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>` 色调映射器且启用了 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 时，该参数会在运行时动态调整，以确保其数值永远不会低于父窗口的 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`\ 。
 
 .. rst-class:: classref-item-separator
 

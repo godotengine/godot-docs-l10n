@@ -7,22 +7,22 @@ AudioEffectChorus
 
 **继承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a chorus audio effect to an audio bus.
+向音频总线添加合唱音频效果。
 
-Gives the impression of multiple audio sources.
+营造出多重音频源的听感。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-A "chorus" effect creates multiple copies of the original audio (called "voices") with variations in pitch, and layers on top of the original, giving the impression that the sound comes from multiple sources. This creates spectral and spatial movement.
+合唱（Chorus）效果会生成原始音频的多个副本（称为“声部”），并对这些副本的音高进行细微的变化处理，然后将它们叠加在原始音频之上，从而营造出声音来自多个不同声源的听感。这会产生一种频谱和空间上的流动感。
 
-Each voice is played a short period of time after the original audio, controlled by ``delay``. An internal low-frequency oscillator (LFO) controls their pitch, and ``depth`` controls the LFO's maximum amount.
+每个声部都会在原始音频播放后的一小段时间后才开始播放，这个时间差由 ``delay``\ （延迟）来控制。一个内部的低频振荡器（LFO）负责控制它们的音高变化，而 ``depth``\ （深度）则决定了 LFO 的最大作用量。
 
-In the real world, this kind of effect is found in pianos, choirs, and instrument ensembles.
+在现实世界中，这种效果常见于钢琴、合唱团以及各类乐器合奏中。
 
-This effect can also be used to widen mono audio and make digital sounds have a more natural or analog quality.
+这种效果也可以用来拓宽单声道（Mono）音频的声场，并让数字生成的声音听起来更具自然感或模拟设备的质感。
 
 .. rst-class:: classref-introduction-group
 
@@ -31,7 +31,7 @@ This effect can also be used to widen mono audio and make digital sounds have a 
 
 - :doc:`音频总线 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -151,7 +151,7 @@ This effect can also be used to widen mono audio and make digital sounds have a 
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-The volume ratio of the original audio. Value can range from 0 to 1.
+原始音频的音量比例。取值范围为 0 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ The volume ratio of the original audio. Value can range from 0 to 1.
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The frequency threshold of the voice's low-pass filter in Hz.
+语音低通滤波器的频率阈值，单位为 Hz。
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ The frequency threshold of the voice's low-pass filter in Hz.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The delay of the voice in milliseconds, compared to the original audio.
+该声部相对于原始音频的延迟时间，单位为毫秒（ms）。
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ The delay of the voice in milliseconds, compared to the original audio.
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The depth of the voice's low-frequency oscillator in milliseconds.
+语音低频振荡器的深度，以毫秒为单位。
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ The depth of the voice's low-frequency oscillator in milliseconds.
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The gain of the voice in dB.
+语音的增益，单位为分贝。
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ The gain of the voice in dB.
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The pan position of the voice.
+语音的声像位置。
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ The pan position of the voice.
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The rate of the voice's low-frequency oscillator in Hz.
+该声部低频振荡器（low-frequency oscillator）的速率，单位为赫兹（Hz）。
 
 .. rst-class:: classref-item-separator
 
@@ -270,7 +270,7 @@ The rate of the voice's low-frequency oscillator in Hz.
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The frequency threshold of the voice's low-pass filter in Hz.
+语音低通滤波器的频率阈值，单位为 Hz。
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +287,7 @@ The frequency threshold of the voice's low-pass filter in Hz.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The delay of the voice in milliseconds, compared to the original audio.
+该声部相对于原始音频的延迟时间，单位为毫秒（ms）。
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +304,7 @@ The delay of the voice in milliseconds, compared to the original audio.
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The depth of the voice's low-frequency oscillator in milliseconds.
+语音低频振荡器的深度，以毫秒为单位。
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ The depth of the voice's low-frequency oscillator in milliseconds.
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The gain of the voice in dB.
+语音的增益，单位为分贝。
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ The gain of the voice in dB.
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The pan position of the voice.
+语音的声像位置。
 
 .. rst-class:: classref-item-separator
 
@@ -355,7 +355,7 @@ The pan position of the voice.
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The rate of the voice's low-frequency oscillator in Hz.
+该声部低频振荡器（low-frequency oscillator）的速率，单位为赫兹（Hz）。
 
 .. rst-class:: classref-item-separator
 
@@ -372,7 +372,7 @@ The rate of the voice's low-frequency oscillator in Hz.
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The frequency threshold of the voice's low-pass filter in Hz.
+语音低通滤波器的频率阈值，单位为 Hz。
 
 .. rst-class:: classref-item-separator
 
@@ -389,7 +389,7 @@ The frequency threshold of the voice's low-pass filter in Hz.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The delay of the voice in milliseconds, compared to the original audio.
+该声部相对于原始音频的延迟时间，单位为毫秒（ms）。
 
 .. rst-class:: classref-item-separator
 
@@ -406,7 +406,7 @@ The delay of the voice in milliseconds, compared to the original audio.
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The depth of the voice's low-frequency oscillator in milliseconds.
+语音低频振荡器的深度，以毫秒为单位。
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ The depth of the voice's low-frequency oscillator in milliseconds.
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The gain of the voice in dB.
+语音的增益，单位为分贝。
 
 .. rst-class:: classref-item-separator
 
@@ -440,7 +440,7 @@ The gain of the voice in dB.
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The pan position of the voice.
+语音的声像位置。
 
 .. rst-class:: classref-item-separator
 
@@ -457,7 +457,7 @@ The pan position of the voice.
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The rate of the voice's low-frequency oscillator in Hz.
+该声部低频振荡器（low-frequency oscillator）的速率，单位为赫兹（Hz）。
 
 .. rst-class:: classref-item-separator
 
@@ -474,7 +474,7 @@ The rate of the voice's low-frequency oscillator in Hz.
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The frequency threshold of the voice's low-pass filter in Hz.
+语音低通滤波器的频率阈值，单位为 Hz。
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ The frequency threshold of the voice's low-pass filter in Hz.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The delay of the voice in milliseconds, compared to the original audio.
+该声部相对于原始音频的延迟时间，单位为毫秒（ms）。
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +508,7 @@ The delay of the voice in milliseconds, compared to the original audio.
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The depth of the voice's low-frequency oscillator in milliseconds.
+语音低频振荡器的深度，以毫秒为单位。
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ The depth of the voice's low-frequency oscillator in milliseconds.
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The gain of the voice in dB.
+语音的增益，单位为分贝。
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ The gain of the voice in dB.
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The pan position of the voice.
+语音的声像位置。
 
 .. rst-class:: classref-item-separator
 
@@ -559,7 +559,7 @@ The pan position of the voice.
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The rate of the voice's low-frequency oscillator in Hz.
+该声部低频振荡器（low-frequency oscillator）的速率，单位为赫兹（Hz）。
 
 .. rst-class:: classref-item-separator
 
@@ -576,7 +576,7 @@ The rate of the voice's low-frequency oscillator in Hz.
 - |void| **set_voice_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_voice_count**\ (\ )
 
-The number of voices in the effect. Value can range from 1 to 4.
+该效果中的声部数量。取值范围为 1 到 4。
 
 .. rst-class:: classref-item-separator
 
@@ -593,7 +593,7 @@ The number of voices in the effect. Value can range from 1 to 4.
 - |void| **set_wet**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wet**\ (\ )
 
-The volume ratio of all voices. Value can range from 0 to 1.
+所有声部的音量比例。取值范围为 0 到 1。
 
 .. rst-class:: classref-section-separator
 
@@ -610,7 +610,7 @@ The volume ratio of all voices. Value can range from 0 to 1.
 
 :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_cutoff_hz>`
 
-Returns the frequency threshold of a given ``voice_idx``'s low-pass filter in Hz. Frequencies above this value are removed from the voice.
+返回指定 ``voice_idx``\ （声部索引）的低通滤波器的频率阈值（以赫兹 Hz 为单位）。高于该值的频率将会从该声部中被移除。
 
 .. rst-class:: classref-item-separator
 
@@ -622,7 +622,7 @@ Returns the frequency threshold of a given ``voice_idx``'s low-pass filter in Hz
 
 :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_delay_ms>`
 
-Returns the delay of a given ``voice_idx`` in milliseconds, compared to the original audio.
+返回指定 ``voice_idx``\ （声部索引）的低通滤波器的频率阈值（以赫兹 Hz 为单位）。高于该值的频率将会从该声部中被移除。
 
 .. rst-class:: classref-item-separator
 
@@ -634,7 +634,7 @@ Returns the delay of a given ``voice_idx`` in milliseconds, compared to the orig
 
 :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_depth_ms>`
 
-Returns the depth of a given ``voice_idx``'s low-frequency oscillator in milliseconds.
+返回给定 ``voice_idx`` 的低频振荡器深度，以毫秒为单位。
 
 .. rst-class:: classref-item-separator
 
@@ -646,7 +646,7 @@ Returns the depth of a given ``voice_idx``'s low-frequency oscillator in millise
 
 :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_level_db>`
 
-Returns the gain of a given ``voice_idx`` in dB.
+返回给定 ``voice_idx`` 的增益，单位为分贝。
 
 .. rst-class:: classref-item-separator
 
@@ -658,7 +658,7 @@ Returns the gain of a given ``voice_idx`` in dB.
 
 :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_pan>`
 
-Returns the pan position of a given ``voice_idx``. Negative values mean the left channel, positive mean the right.
+返回指定 ``voice_idx``\ （声部索引）的声像（Pan）位置。负值代表左声道，正值代表右声道。
 
 .. rst-class:: classref-item-separator
 
@@ -670,7 +670,7 @@ Returns the pan position of a given ``voice_idx``. Negative values mean the left
 
 :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_rate_hz>`
 
-Returns the rate of a given ``voice_idx``'s low-frequency oscillator in Hz.
+返回指定 ``voice_idx``\ （声部索引）的低频振荡器（low-frequency）的速率，单位为赫兹（Hz）。
 
 .. rst-class:: classref-item-separator
 
@@ -682,7 +682,7 @@ Returns the rate of a given ``voice_idx``'s low-frequency oscillator in Hz.
 
 |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_cutoff_hz>`
 
-Sets the frequency threshold of a given ``voice_idx``'s low-pass filter in Hz. Frequencies above ``cutoff_hz`` are removed from ``voice_idx``. Value can range from 1 to 20500.
+以赫兹（Hz）为单位，设置指定 ``voice_idx``\ （声部索引）的低通滤波器的频率阈值。高于 ``cutoff_hz`` 的频率将会从该 ``voice_idx``\ （声部）中被移除。该值的取值范围是 1 到 20500。
 
 .. rst-class:: classref-item-separator
 
@@ -694,7 +694,7 @@ Sets the frequency threshold of a given ``voice_idx``'s low-pass filter in Hz. F
 
 |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_delay_ms>`
 
-Sets the delay of a given ``voice_idx`` in milliseconds, compared to the original audio. Value can range from 0 to 50.
+设置指定 ``voice_idx`` 相对于原始音频的延迟，以毫秒为单位。取值范围为 0 到 50。
 
 .. rst-class:: classref-item-separator
 
@@ -706,7 +706,7 @@ Sets the delay of a given ``voice_idx`` in milliseconds, compared to the origina
 
 |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_depth_ms>`
 
-Sets the depth of a given ``voice_idx``'s low-frequency oscillator in milliseconds. Value can range from 0 to 20.
+以毫秒（ms）为单位，设置指定 ``voice_idx``\ （声部索引）的低频振荡器（low-frequency oscillator）的深度。该值的取值范围是 0 到 20。
 
 .. rst-class:: classref-item-separator
 
@@ -718,7 +718,7 @@ Sets the depth of a given ``voice_idx``'s low-frequency oscillator in millisecon
 
 |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_level_db>`
 
-Sets the gain of a given ``voice_idx`` in dB. Value can range from -60 to 24.
+设置指定 ``voice_idx`` 的增益，单位为分贝。取值范围为 -60 至 24。
 
 .. rst-class:: classref-item-separator
 
@@ -730,7 +730,7 @@ Sets the gain of a given ``voice_idx`` in dB. Value can range from -60 to 24.
 
 |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_pan>`
 
-Sets the pan position of a given ``voice_idx``. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
+设置指定 ``voice_idx``\ （声部索引）的声像（pan）位置。负值会将声音偏向左侧，正值会将声音偏向右侧。该值的取值范围是 -1 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -742,7 +742,7 @@ Sets the pan position of a given ``voice_idx``. Negative values pan the sound to
 
 |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_rate_hz>`
 
-Sets the rate of a given ``voice_idx``'s low-frequency oscillator in Hz. Value can range from 0.1 to 20.
+以赫兹（Hz）为单位，设置指定 ``voice_idx``\ （声部索引）的低频振荡器（low-frequency oscillator）的速率。该值的取值范围是 0.1 到 20。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

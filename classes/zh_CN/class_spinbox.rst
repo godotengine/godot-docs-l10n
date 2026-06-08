@@ -17,11 +17,11 @@ SpinBox
 描述
 ----
 
-**SpinBox** is a numerical input text field. It allows entering integers and floating-point numbers. The **SpinBox** also has up and down buttons that can be clicked to increase or decrease the value. The value can also be changed by dragging the mouse up or down over the **SpinBox**'s arrows.
+**SpinBox**\ （数值调节框）是一个用于输入数字的文本框。它允许用户输入整数和浮点数（小数）。\ **SpinBox** 还带有上、下按钮，点击它们可以增加或减少数值。此外，在 **SpinBox** 的箭头区域按住鼠标上下拖动，也可以改变数值。
 
-Additionally, mathematical expressions can be entered. These are evaluated when the user presses :kbd:`Enter` while editing the **SpinBox**'s text field. This uses the :ref:`Expression<class_Expression>` class to parse and evaluate the expression. The result of the expression is then set as the value of the **SpinBox**. Some examples of valid expressions are ``5 + 2 * 3``, ``pow(2, 4)``, and ``PI + sin(0.5)``. Expressions are case-sensitive.
+另外，它还可以直接输入数学表达式。当用户在编辑 **SpinBox** 文本框时按下 :kbd:`Enter`\ （回车键），这些表达式就会被自动计算。这是通过 :ref:`Expression<class_Expression>` 类来解析和求值的，计算得出的结果会被直接设为 **SpinBox** 的当前值。一些有效的表达式示例包括：\ ``5 + 2 * 3``\ 、\ ``pow(2, 4)`` 以及 ``PI + sin(0.5)``\ 。需要注意的是，表达式是区分大小写的。
 
-\ **Example:** Create a **SpinBox**, disable its context menu and set its text alignment to right.
+\ **示例：** 创建一个 **SpinBox**\ ，禁用它的右键上下文菜单，并将其文本对齐方式设置为右对齐。
 
 
 .. tabs::
@@ -44,13 +44,13 @@ Additionally, mathematical expressions can be entered. These are evaluated when 
 
 
 
-See :ref:`Range<class_Range>` class for more options over the **SpinBox**.
+请参阅 :ref:`Range<class_Range>`\ （范围）类，了解 **SpinBox** 的更多选项。
 
-\ **Note:** With the **SpinBox**'s context menu disabled, you can right-click the bottom half of the spinbox to set the value to its minimum, while right-clicking the top half sets the value to its maximum.
+\ **注意：** 如果禁用了 **SpinBox** 的上下文菜单（右键菜单），你可以在数值调节框的下半部分点击右键，将值设为其最小值；而在上半部分点击右键，则会将值设为其最大值。
 
-\ **Note:** **SpinBox** relies on an underlying :ref:`LineEdit<class_LineEdit>` node. To theme a **SpinBox**'s background, add theme items for :ref:`LineEdit<class_LineEdit>` and customize them. The :ref:`LineEdit<class_LineEdit>` has the ``SpinBoxInnerLineEdit`` theme variation, so that you can give it a distinct appearance from regular :ref:`LineEdit<class_LineEdit>`\ s.
+\ **注意：** **SpinBox** 底层依赖于一个 :ref:`LineEdit<class_LineEdit>`\ （单行文本框）节点。如果想要修改 **SpinBox** 的背景主题，需要添加并自定义 :ref:`LineEdit<class_LineEdit>` 的主题项。该 :ref:`LineEdit<class_LineEdit>` 带有 ``SpinBoxInnerLineEdit`` 主题变体，这样你就可以让它拥有区别于普通 :ref:`LineEdit<class_LineEdit>` 的独特外观。
 
-\ **Note:** If you want to implement drag and drop for the underlying :ref:`LineEdit<class_LineEdit>`, you can use :ref:`Control.set_drag_forwarding()<class_Control_method_set_drag_forwarding>` on the node returned by :ref:`get_line_edit()<class_SpinBox_method_get_line_edit>`.
+\ **注意：** 如果你想为底层的 :ref:`LineEdit<class_LineEdit>` 实现拖放（Drag and Drop）功能，可以在 :ref:`get_line_edit()<class_SpinBox_method_get_line_edit>` 方法返回的节点上使用 :ref:`Control.set_drag_forwarding()<class_Control_method_set_drag_forwarding>`\ 。
 
 .. rst-class:: classref-reftable-group
 

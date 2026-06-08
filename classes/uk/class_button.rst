@@ -16,9 +16,9 @@ Button
 Опис
 --------
 
-**Button** is the standard themed button. It can contain text and an icon, and it will display them according to the current :ref:`Theme<class_Theme>`.
+**Button** — це стандартна кнопка, що відповідає темі. Вона може містити текст та піктограму, які відображатимуться відповідно до поточної :ref:`Theme<class_Theme>`.
 
-\ **Example:** Create a button and connect a method that will be called when the button is pressed:
+\ **Приклад:** Створіть кнопку та підключіть метод, який буде викликатися при натисканні кнопки:
 
 
 .. tabs::
@@ -26,10 +26,10 @@ Button
  .. code-tab:: gdscript
 
     func _ready():
-        var button = Button.new()
-        button.text = "Click me"
-        button.pressed.connect(_button_pressed)
-        add_child(button)
+     var button = Button.new()
+     button.text = "Click me"
+     button.pressed.connect(_button_pressed)
+     add_child(button)
 
     func _button_pressed():
         print("Hello world!")
@@ -38,22 +38,22 @@ Button
 
     public override void _Ready()
     {
-        var button = new Button();
-        button.Text = "Click me";
-        button.Pressed += ButtonPressed;
-        AddChild(button);
+     var button = new Button();
+     button.Text = "Click me";
+     button.Pressed += ButtonPressed;
+     AddChild(button);
     }
 
     private void ButtonPressed()
     {
-        GD.Print("Hello world!");
+     GD.Print("Hello world!");
     }
 
 
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+Див. також :ref:`BaseButton<class_BaseButton>`, що містить загальні властивості та методи, пов'язані з цим вузлом.
 
-\ **Note:** Buttons support multitouch via touch input, allowing multiple buttons to be pressed at the same time. Otherwise, mouse input is used, limiting interaction to one button press at a time.
+\ **Примітка:** Кнопки підтримують мультитач через сенсорний ввід, що дозволяє натискати кілька кнопок одночасно. В іншому випадку використовується ввід за допомогою миші, що обмежує взаємодію одним натисканням кнопки за раз.
 
 .. rst-class:: classref-introduction-group
 

@@ -64,9 +64,9 @@ CameraAttributes
 - |void| **set_auto_exposure_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_auto_exposure_enabled**\ (\ )
 
-If ``true``, enables the tonemapping auto exposure mode of the scene renderer. If ``true``, the renderer will automatically determine the exposure setting to adapt to the scene's illumination and the observed light.
+Якщо ``true``, увімкнеться режим автоматичної експозиції з тональним маппінгом у рендерері сцен. Якщо ``true``, рендерер автоматично визначить налаштування експозиції відповідно до освітлення сцени та наявного світла.
 
-\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **Примітка:** Автоматична експозиція підтримується лише в методі рендерингу Forward+, а не в Mobile чи Compatibility.
 
 .. rst-class:: classref-item-separator
 

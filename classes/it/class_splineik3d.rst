@@ -14,17 +14,17 @@ A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` for aligning bones along a
 Descrizione
 ----------------------
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` for aligning bones along a :ref:`Path3D<class_Path3D>`. The smoothness of the fitting depends on the :ref:`Curve3D.bake_interval<class_Curve3D_property_bake_interval>`.
+Un :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` per allineare le ossa lungo un :ref:`Path3D<class_Path3D>`. La fluidità dell'allineamento dipende da :ref:`Curve3D.bake_interval<class_Curve3D_property_bake_interval>`.
 
-If you want the :ref:`Path3D<class_Path3D>` to attach to a specific bone, it is recommended to place a :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` before the **SplineIK3D** in the :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` list (children of the :ref:`Skeleton3D<class_Skeleton3D>`), and then place a :ref:`Path3D<class_Path3D>` as the :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>`'s child.
+Se si desidera che il :ref:`Path3D<class_Path3D>` si attacchi a un osso specifico, si consiglia di posizionare un :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` prima dello **SplineIK3D** nell'elenco di :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` (i figli dello :ref:`Skeleton3D<class_Skeleton3D>`), e poi inserire un :ref:`Path3D<class_Path3D>` come figlio del :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>`.
 
-Bone twist is determined based on the :ref:`Curve3D.get_point_tilt()<class_Curve3D_method_get_point_tilt>`.
+La torsione delle ossa è determinata in base a :ref:`Curve3D.get_point_tilt()<class_Curve3D_method_get_point_tilt>`.
 
-If the root bone joint and the start point of the :ref:`Curve3D<class_Curve3D>` are separated, it assumes that there is a linear line segment between them. This means that the vector pointing toward the start point of the :ref:`Curve3D<class_Curve3D>` takes precedence over the shortest intersection point along the :ref:`Curve3D<class_Curve3D>`.
+Se l'articolazione dell'osso radice e il punto di partenza della :ref:`Curve3D<class_Curve3D>` sono separati, si presume che ci sia un segmento lineare tra di essi. Ciò significa che il vettore che punta verso il punto di partenza della :ref:`Curve3D<class_Curve3D>` ha la precedenza sul punto di intersezione più breve lungo la :ref:`Curve3D<class_Curve3D>`.
 
-If the end bone joint exceeds the path length, it is bent as close as possible to the end point of the :ref:`Curve3D<class_Curve3D>`.
+Se l'articolazione dell'osso finale supera la lunghezza del percorso, è piegata il più vicino possibile al punto finale della ``Curva3D``.
 
-\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **Nota:** Tutti i metodi di questa classe accettano un parametro ``index``. Questo parametro specifica quale voce nell'elenco delle impostazioni restituire, se l'IK ha più voci (ad esempio, ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 
@@ -137,7 +137,7 @@ Returns the tilt interpolation method used between the end bone and the end poin
 
 :ref:`bool<class_bool>` **is_tilt_enabled**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SplineIK3D_method_is_tilt_enabled>`
 
-Returns if the tilt property of the :ref:`Curve3D<class_Curve3D>` affects the bone twist.
+Restituisce se la proprietà di inclinazione del :ref:`Curve3D<class_Curve3D>` influisce sulla torsione dell'osso.
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ Sets the node path of the :ref:`Path3D<class_Path3D>` which is describing the pa
 
 |void| **set_tilt_enabled**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SplineIK3D_method_set_tilt_enabled>`
 
-Sets if the tilt property of the :ref:`Curve3D<class_Curve3D>` should affect the bone twist.
+Imposta se la proprietà di inclinazione del :ref:`Curve3D<class_Curve3D>` influisce sulla torsione dell'osso.
 
 .. rst-class:: classref-item-separator
 

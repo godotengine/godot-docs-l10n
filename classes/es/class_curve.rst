@@ -341,9 +341,9 @@ The right :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
 
 :ref:`float<class_float>` **point_{index}/right_tangent** = ``0.0`` :ref:`🔗<class_Curve_property_point_{index}/right_tangent>`
 
-The right tangent angle (in degrees) for the point at ``index``.
+El ángulo de la tangente derecha (en grados) para el punto en ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` es un valor en el rango ``0 .. point_count - 1``.
 
 .. rst-class:: classref-section-separator
 

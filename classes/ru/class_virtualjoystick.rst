@@ -7,16 +7,16 @@ VirtualJoystick
 
 **Наследует:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A virtual joystick control for touchscreen devices.
+Виртуальный джойстик для управления сенсорными экранами.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-A customizable on-screen joystick control designed for touchscreen devices. It allows users to provide directional input by dragging a virtual tip within a defined circular area.
+Настраиваемый экранный джойстик, разработанный для сенсорных устройств. Он позволяет пользователям вводить направления движения, перетаскивая виртуальный наконечник в пределах заданной круговой области.
 
-This control can simulate directional actions (see :ref:`action_up<class_VirtualJoystick_property_action_up>`, :ref:`action_down<class_VirtualJoystick_property_action_down>`, :ref:`action_left<class_VirtualJoystick_property_action_left>`, and :ref:`action_right<class_VirtualJoystick_property_action_right>`), which are triggered when the joystick is moved in the corresponding directions.
+Этот элемент управления может имитировать действия, направленные в нужное положение (см. :ref:`action_up<class_VirtualJoystick_property_action_up>`, :ref:`action_down<class_VirtualJoystick_property_action_down>`, :ref:`action_left<class_VirtualJoystick_property_action_left>` и :ref:`action_right<class_VirtualJoystick_property_action_right>`), которые запускаются при перемещении джойстика в соответствующих направлениях.
 
 .. rst-class:: classref-reftable-group
 
@@ -83,7 +83,7 @@ This control can simulate directional actions (see :ref:`action_up<class_Virtual
 
 **flick_canceled**\ (\ ) :ref:`🔗<class_VirtualJoystick_signal_flick_canceled>`
 
-Emitted when the tip enters the deadzone after being outside of it.
+Генерируется, когда наконечник входит в мертвую зону после того, как находился за ее пределами.
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ Emitted when the tip enters the deadzone after being outside of it.
 
 **flicked**\ (\ input_vector\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_VirtualJoystick_signal_flicked>`
 
-Emitted when the tip moved outside the deadzone and the joystick is released. The ``input_vector`` contains the last input direction and strength before release. Its length is between ``0.0`` and ``1.0``.
+Генерируется, когда кончик выходит за пределы мертвой зоны и джойстик отпускается. Параметр ``input_vector`` содержит последнее направление и силу входного сигнала перед отпусканием. Его длина находится в диапазоне от ``0.0`` до ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Emitted when the tip moved outside the deadzone and the joystick is released. Th
 
 **pressed**\ (\ ) :ref:`🔗<class_VirtualJoystick_signal_pressed>`
 
-Emitted when the joystick is pressed.
+Излучается при нажатии на джойстик.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Emitted when the joystick is pressed.
 
 **released**\ (\ input_vector\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_VirtualJoystick_signal_released>`
 
-Emitted when the joystick is released. The ``input_vector`` is the final input direction and strength, with a length between ``0.0`` and ``1.0``.
+Генерируется при отпускании джойстика. Параметр ``input_vector`` обозначает конечное направление и силу входного сигнала, длина которого находится в диапазоне от ``0.0`` до ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ Emitted when the joystick is released. The ``input_vector`` is the final input d
 
 **tapped**\ (\ ) :ref:`🔗<class_VirtualJoystick_signal_tapped>`
 
-Emitted when the joystick is released without moving the tip.
+Излучается при отпускании джойстика без перемещения его кончика.
 
 .. rst-class:: classref-section-separator
 
@@ -154,7 +154,7 @@ enum **JoystickMode**: :ref:`🔗<enum_VirtualJoystick_JoystickMode>`
 
 :ref:`JoystickMode<enum_VirtualJoystick_JoystickMode>` **JOYSTICK_FIXED** = ``0``
 
-The joystick doesn't move.
+Джойстик не двигается.
 
 .. _class_VirtualJoystick_constant_JOYSTICK_DYNAMIC:
 
@@ -162,7 +162,7 @@ The joystick doesn't move.
 
 :ref:`JoystickMode<enum_VirtualJoystick_JoystickMode>` **JOYSTICK_DYNAMIC** = ``1``
 
-The joystick is moved to the initial touch position as long as it's within the joystick's bounds. It moves back to its original position when released.
+Джойстик перемещается в исходное положение касания, пока находится в пределах его зоны действия. При отпускании он возвращается в исходное положение.
 
 .. _class_VirtualJoystick_constant_JOYSTICK_FOLLOWING:
 
@@ -170,7 +170,7 @@ The joystick is moved to the initial touch position as long as it's within the j
 
 :ref:`JoystickMode<enum_VirtualJoystick_JoystickMode>` **JOYSTICK_FOLLOWING** = ``2``
 
-The joystick is moved to the initial touch position as long as it's within the joystick's bounds. It will follow the touch input if it goes outside the joystick's range. It moves back to its original position when released.
+Джойстик перемещается в исходное положение касания, пока находится в пределах его зоны действия. Он будет следовать за касанием, если оно выйдет за пределы зоны действия джойстика. При отпускании он возвращается в исходное положение.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ enum **VisibilityMode**: :ref:`🔗<enum_VirtualJoystick_VisibilityMode>`
 
 :ref:`VisibilityMode<enum_VirtualJoystick_VisibilityMode>` **VISIBILITY_ALWAYS** = ``0``
 
-The joystick is always visible.
+Джойстик всегда на виду.
 
 .. _class_VirtualJoystick_constant_VISIBILITY_WHEN_TOUCHED:
 
@@ -196,7 +196,7 @@ The joystick is always visible.
 
 :ref:`VisibilityMode<enum_VirtualJoystick_VisibilityMode>` **VISIBILITY_WHEN_TOUCHED** = ``1``
 
-The joystick is only visible when being touched.
+Джойстик виден только при прикосновении.
 
 .. rst-class:: classref-section-separator
 
@@ -218,7 +218,7 @@ The joystick is only visible when being touched.
 - |void| **set_action_down**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_action_down**\ (\ )
 
-The action to trigger when the joystick is moved down.
+Действие, которое срабатывает при перемещении джойстика вниз.
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ The action to trigger when the joystick is moved down.
 - |void| **set_action_left**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_action_left**\ (\ )
 
-The action to trigger when the joystick is moved left.
+Действие, которое срабатывает при перемещении джойстика влево.
 
 .. rst-class:: classref-item-separator
 
@@ -252,7 +252,7 @@ The action to trigger when the joystick is moved left.
 - |void| **set_action_right**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_action_right**\ (\ )
 
-The action to trigger when the joystick is moved right.
+Действие, которое срабатывает при перемещении джойстика вправо.
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ The action to trigger when the joystick is moved right.
 - |void| **set_action_up**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_action_up**\ (\ )
 
-The action to trigger when the joystick is moved up.
+Действие, которое срабатывает при перемещении джойстика вверх.
 
 .. rst-class:: classref-item-separator
 
@@ -286,13 +286,13 @@ The action to trigger when the joystick is moved up.
 - |void| **set_clampzone_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_clampzone_ratio**\ (\ )
 
-The multiplier applied to the joystick's radius that defines the clamp zone.
+Множитель, применяемый к радиусу джойстика, определяет зону зажима.
 
-This zone limits how far the joystick tip can move from its center before being clamped.
+Эта зона ограничивает расстояние, на которое кончик джойстика может переместиться от своего центра, прежде чем он будет зафиксирован.
 
-A value of ``1.0`` means the tip can move up to the edge of the joystick's visual size.
+Значение ``1.0`` означает, что кончик может переместиться до края визуального размера джойстика.
 
-In :ref:`JOYSTICK_FOLLOWING<class_VirtualJoystick_constant_JOYSTICK_FOLLOWING>` mode, this radius also determines how far the finger can move before the joystick base starts following the touch input.
+В режиме :ref:`JOYSTICK_FOLLOWING<class_VirtualJoystick_constant_JOYSTICK_FOLLOWING>` этот радиус также определяет, на какое расстояние может переместиться палец, прежде чем основание джойстика начнет следовать за касанием.
 
 .. rst-class:: classref-item-separator
 
@@ -309,13 +309,13 @@ In :ref:`JOYSTICK_FOLLOWING<class_VirtualJoystick_constant_JOYSTICK_FOLLOWING>` 
 - |void| **set_deadzone_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_deadzone_ratio**\ (\ )
 
-The ratio of the joystick size that defines the joystick deadzone. The joystick tip must move beyond this ratio before being considered active.
+Соотношение размеров джойстика, определяющее мертвую зону джойстика. Кончик джойстика должен выйти за пределы этого соотношения, прежде чем он будет считаться активным.
 
-This deadzone is applied before triggering input actions and affects the joystick's input vector and all related signals.
+Эта мертвая зона применяется перед запуском действий ввода и влияет на вектор ввода джойстика и все связанные сигналы.
 
-Note that input actions may also define their own deadzones in the InputMap. If both are set, the joystick deadzone is applied first, followed by the action's deadzone.
+Обратите внимание, что действия ввода также могут определять свои собственные мертвые зоны в InputMap. Если заданы оба параметра, сначала применяется мертвая зона джойстика, а затем мертвая зона действия.
 
-By default, this value is ``0.0``, meaning the joystick does not apply its own deadzone and relies entirely on the InputMap action deadzones.
+По умолчанию это значение равно ``0.0``, что означает, что джойстик не применяет свою собственную мертвую зону и полностью полагается на мертвые зоны действий InputMap.
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ By default, this value is ``0.0``, meaning the joystick does not apply its own d
 - |void| **set_initial_offset_ratio**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_initial_offset_ratio**\ (\ )
 
-The initial position of the joystick as a ratio of the control's size. ``(0, 0)`` is top-left and ``(1, 1)`` is bottom-right.
+Начальное положение джойстика определяется как отношение размера элемента управления. ``(0, 0)`` — это верхний левый угол, а ``(1, 1)`` — нижний правый угол.
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ The initial position of the joystick as a ratio of the control's size. ``(0, 0)`
 - |void| **set_joystick_mode**\ (\ value\: :ref:`JoystickMode<enum_VirtualJoystick_JoystickMode>`\ )
 - :ref:`JoystickMode<enum_VirtualJoystick_JoystickMode>` **get_joystick_mode**\ (\ )
 
-The joystick mode to use.
+Режим работы джойстика.
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ The joystick mode to use.
 - |void| **set_joystick_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_joystick_size**\ (\ )
 
-The size of the joystick in pixels.
+Размер джойстика в пикселях.
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ The size of the joystick in pixels.
 - |void| **set_tip_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tip_size**\ (\ )
 
-The size of the joystick tip in pixels.
+Размер кончика джойстика в пикселях.
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ The size of the joystick tip in pixels.
 - |void| **set_visibility_mode**\ (\ value\: :ref:`VisibilityMode<enum_VirtualJoystick_VisibilityMode>`\ )
 - :ref:`VisibilityMode<enum_VirtualJoystick_VisibilityMode>` **get_visibility_mode**\ (\ )
 
-The visibility mode to use.
+Режим видимости при использовании.
 
 .. rst-class:: classref-section-separator
 
@@ -417,7 +417,7 @@ The visibility mode to use.
 
 :ref:`StyleBox<class_StyleBox>` **normal_joystick** :ref:`🔗<class_VirtualJoystick_theme_style_normal_joystick>`
 
-Base joystick :ref:`StyleBox<class_StyleBox>`.
+Базовый джойстик :ref:`StyleBox<class_StyleBox>`.
 
 .. rst-class:: classref-item-separator
 
@@ -429,7 +429,7 @@ Base joystick :ref:`StyleBox<class_StyleBox>`.
 
 :ref:`StyleBox<class_StyleBox>` **normal_tip** :ref:`🔗<class_VirtualJoystick_theme_style_normal_tip>`
 
-Tip joystick :ref:`StyleBox<class_StyleBox>`.
+Подсказка для джойстика :ref:`StyleBox<class_StyleBox>`.
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ Tip joystick :ref:`StyleBox<class_StyleBox>`.
 
 :ref:`StyleBox<class_StyleBox>` **pressed_joystick** :ref:`🔗<class_VirtualJoystick_theme_style_pressed_joystick>`
 
-Base joystick :ref:`StyleBox<class_StyleBox>` when pressed.
+Базовый джойстик :ref:`StyleBox<class_StyleBox>` при нажатии.
 
 .. rst-class:: classref-item-separator
 

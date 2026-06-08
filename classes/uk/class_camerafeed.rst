@@ -14,11 +14,11 @@ CameraFeed
 Опис
 --------
 
-A camera feed gives you access to a single physical camera attached to your device. When enabled, Godot will start capturing frames from the camera which can then be used. See also :ref:`CameraServer<class_CameraServer>`.
+Потік камери надає доступ до однієї фізичної камери, підключеної до вашого пристрою. Якщо ця функція увімкнена, Godot почне знімати кадри з камери, які потім можна використовувати. Див. також :ref:`CameraServer<class_CameraServer>`.
 
-\ **Note:** Many cameras will return YCbCr images which are split into two textures and need to be combined in a shader. Godot does this automatically for you if you set the environment to show the camera image in the background.
+\ **Примітка:** Багато камер повертають зображення у форматі YCbCr, які розділені на дві текстури і потребують об’єднання в шейдері. Godot робить це автоматично, якщо ви налаштуєте середовище так, щоб зображення з камери відображалося у фоновому режимі.
 
-\ **Note:** This class is currently only implemented on Linux, Android, macOS, and iOS. On other platforms no **CameraFeed**\ s will be available. To get a **CameraFeed** on iOS, enable :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`.
+\ **Примітка:** Цей клас наразі реалізовано лише на Linux, Android, macOS та iOS. На інших платформах **CameraFeed**\ s не буде доступним. Щоб отримати **CameraFeed** на iOS, увімкніть :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -290,7 +290,7 @@ enum **FeedPosition**: :ref:`🔗<enum_CameraFeed_FeedPosition>`
 
 :ref:`Array<class_Array>` **_get_formats**\ (\ ) |virtual| |const| :ref:`🔗<class_CameraFeed_private_method__get_formats>`
 
-Override this method to define supported formats of the camera feed.
+Переопределите цей метод, щоб визначити формати, які підтримує камера.
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ Override this method to define supported formats of the camera feed.
 
 :ref:`bool<class_bool>` **_set_format**\ (\ index\: :ref:`int<class_int>`, parameters\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| :ref:`🔗<class_CameraFeed_private_method__set_format>`
 
-Override this method to set the format of the camera feed.
+Переопределите цей метод, щоб встановити формат відеопотоку з камери.
 
 .. rst-class:: classref-item-separator
 

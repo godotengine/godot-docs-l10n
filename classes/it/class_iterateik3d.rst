@@ -16,11 +16,11 @@ A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to approach the goal by re
 Descrizione
 ----------------------
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to approach the goal by repeating small rotations.
+Classe base di :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` per raggiungere l'obiettivo ripetendo piccole rotazioni.
 
-Each bone chain (setting) has one effector, which is processed in order of the setting list. You can set some limitations for each joint.
+Ogni catena di ossa (impostazione) ha un effettore, che è elaborato nell'ordine dell'elenco delle impostazioni. È possibile impostare alcune limitazioni per ogni articolazione.
 
-\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/target_node``).
+\ **Nota:** Tutti i metodi di questa classe accettano un parametro ``index``. Questo parametro specifica quale voce nell'elenco delle impostazioni restituire, se l'IK ha più voci (ad esempio, ``settings/<index>/target_node``).
 
 .. rst-class:: classref-reftable-group
 
@@ -227,15 +227,15 @@ If :ref:`get_joint_limitation_right_axis()<class_IterateIK3D_method_get_joint_li
 
 :ref:`Quaternion<class_Quaternion>` **get_joint_limitation_rotation_offset**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation_rotation_offset>`
 
-Returns the joint limitation rotation offset at ``joint`` in the bone chain's joint list.
+Restituisce l'offset di rotazione della limitazione dell'articolazione in ``joint`` nell'elenco delle articolazioni della catena d'ossa.
 
-Rotation is done in the local space which is constructed by the bone direction (in general parent to child) as the +Y axis and :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` as the +X axis.
+La rotazione è effettuata nello spazio locale, definito dalla direzione dell'osso (in generale da genitore a figlio) come asse +Y e da :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` come asse +X.
 
-If the +X and +Y axes are not orthogonal, the +X axis is implicitly modified to make it orthogonal.
+Se gli assi +X e +Y non sono ortogonali, l'asse +X viene implicitamente modificato per renderlo ortogonale.
 
-Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` is zero, the space is created by rotating the reference pose using the shortest arc that rotates the +Y axis of the reference pose to match the bone direction.
+Inoltre, se la lunghezza di :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` è zero, lo spazio viene creato ruotando la posa di riferimento attraverso l'arco più breve che ruota l'asse +Y della posa di riferimento, in modo da farlo coincidere con la direzione dell'osso.
 
-In here, the reference pose is the bone pose immediately before processing IK.
+Qui, la posa di riferimento è la posa dell'osso immediatamente prima dell'elaborazione dell'IK.
 
 .. rst-class:: classref-item-separator
 
@@ -321,15 +321,15 @@ Sets the optional joint limitation right axis vector at ``joint`` in the bone ch
 
 |void| **set_joint_limitation_rotation_offset**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, offset\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation_rotation_offset>`
 
-Sets the joint limitation rotation offset at ``joint`` in the bone chain's joint list.
+Imposta l'offset di rotazione della limitazione dell'articolazione in ``joint`` nell'elenco delle articolazioni della catena d'ossa.
 
-Rotation is done in the local space which is constructed by the bone direction (in general parent to child) as the +Y axis and :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` as the +X axis.
+La rotazione è effettuata nello spazio locale, definito dalla direzione dell'osso (in generale da genitore a figlio) come asse +Y e da :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` come asse +X.
 
-If the +X and +Y axes are not orthogonal, the +X axis is implicitly modified to make it orthogonal.
+Se gli assi +X e +Y non sono ortogonali, l'asse +X viene implicitamente modificato per renderlo ortogonale.
 
-Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` is zero, the space is created by rotating the reference pose using the shortest arc that rotates the +Y axis of the reference pose to match the bone direction.
+Inoltre, se la lunghezza di :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` è zero, lo spazio viene creato ruotando la posa di riferimento attraverso l'arco più breve che ruota l'asse +Y della posa di riferimento, in modo da farlo coincidere con la direzione dell'osso.
 
-In here, the reference pose is the bone pose immediately before processing IK.
+Qui, la posa di riferimento è la posa dell'osso immediatamente prima dell'elaborazione dell'IK.
 
 .. rst-class:: classref-item-separator
 
@@ -341,13 +341,13 @@ In here, the reference pose is the bone pose immediately before processing IK.
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_rotation_axis>`
 
-Sets the rotation axis at ``joint`` in the bone chain's joint list.
+Imposta l'asse di rotazione dell'articolazione ``joint`` nell'elenco delle articolazioni della catena d'ossa.
 
-The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+Gli assi si basano sullo spazio della posa di riferimento. Se ``axis`` è :ref:`ROTATION_AXIS_CUSTOM<class_IterateIK3D_constant_ROTATION_AXIS_CUSTOM>`, è possibile specificare qualsiasi asse.
 
-In here, the reference pose is the bone pose immediately before processing IK.
+Qui, la posa di riferimento è la posa dell'osso immediatamente prima dell'elaborazione dell'IK.
 
-\ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since :ref:`ChainIK3D<class_ChainIK3D>` does not factor in twisting forces.
+\ **Nota:** L'asse di rotazione e il vettore in avanti non dovrebbero essere collineari per evitare rotazioni indesiderate poiché :ref:`ChainIK3D<class_ChainIK3D>` non tiene conto delle forze di torsione.
 
 .. rst-class:: classref-item-separator
 

@@ -2982,9 +2982,9 @@ Contesto OpenGL (solo con il renderer Compatibilità):
 
 :ref:`HandleType<enum_DisplayServer_HandleType>` **GLX_VISUALID** = ``6``
 
-The GLX ``VisualID`` for the window.
+Il ``VisualID`` GLX per la finestra.
 
-\ **Note:** Only available on Linux when using X11.
+\ **Nota:** Disponibile solo su Linux quando si utilizza X11.
 
 .. _class_DisplayServer_constant_GLX_FBCONFIG:
 
@@ -2992,9 +2992,9 @@ The GLX ``VisualID`` for the window.
 
 :ref:`HandleType<enum_DisplayServer_HandleType>` **GLX_FBCONFIG** = ``7``
 
-The ``GLXFBConfig`` for the window.
+Il ``GLXFBConfig`` per la finestra.
 
-\ **Note:** Only available on Linux when using X11.
+\ **Nota:** Disponibile solo su Linux quando si utilizza X11.
 
 .. rst-class:: classref-item-separator
 
@@ -3166,9 +3166,9 @@ Crea una nuova risorsa vuota per i sotto-elementi di accessibilità. I sotto-ele
 
 **Deprecato:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Creates a new, empty accessibility sub-element from the shaped text buffer. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`accessibility_free_element()<class_DisplayServer_method_accessibility_free_element>` method.
+Crea un nuovo sotto-elemento di accessibilità vuoto dal buffer di testo sagomato. I sotto-elementi sono liberati automaticamente quando l'elemento padre è liberato, oppure si possono liberare in anticipo attraverso il metodo :ref:`accessibility_free_element()<class_DisplayServer_method_accessibility_free_element>`.
 
-If ``is_last_line`` is ``true``, no trailing newline is appended to the text content. Set to ``true`` for the last line in multi-line text fields and for single-line text fields.
+Se ``is_last_line`` è impostato su ``true``, non viene aggiunta alcuna nuova riga finale al contenuto del testo. Impostare su ``true`` per l'ultima riga nei campi di testo multilinea e per i campi di testo a riga singola.
 
 .. rst-class:: classref-item-separator
 
@@ -4364,11 +4364,11 @@ Restituisce la forma predefinita del cursore del mouse come impostata da :ref:`c
 
 |void| **cursor_set_custom_image**\ (\ cursor\: :ref:`Resource<class_Resource>`, shape\: :ref:`CursorShape<enum_DisplayServer_CursorShape>` = 0, hotspot\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_DisplayServer_method_cursor_set_custom_image>`
 
-Sets a custom mouse cursor image for the given ``shape``. This means the user's operating system and mouse cursor theme will no longer influence the mouse cursor's appearance.
+Imposta un'immagine personalizzata del cursore del mouse per la forma ``shape``. Ciò significa che il sistema operativo dell'utente e il tema del cursore del mouse non influenzeranno più l'aspetto del cursore del mouse.
 
-\ ``cursor`` can be either a :ref:`Texture2D<class_Texture2D>` or an :ref:`Image<class_Image>`, and it should not be larger than 256×256 to display correctly. Optionally, ``hotspot`` can be set to offset the image's position relative to the click point. By default, ``hotspot`` is set to the top-left corner of the image. See also :ref:`cursor_set_shape()<class_DisplayServer_method_cursor_set_shape>`.
+\ ``cursor`` può essere una :ref:`Texture2D<class_Texture2D>` o un':ref:`Image<class_Image>` e non dovrebbe essere più grande di 256×256 per essere visualizzato correttamente. Facoltativamente, ``hotspot`` può essere impostato per compensare la posizione dell'immagine rispetto al punto di clic. Normalmente, ``hotspot`` è impostato sull'angolo in alto a sinistra dell'immagine. Vedi anche :ref:`cursor_set_shape()<class_DisplayServer_method_cursor_set_shape>`.
 
-\ **Note:** On Web, calling this method every frame can cause the cursor to flicker.
+\ **Nota:** Sul Web, chiamare questo metodo a ogni frame può causare lo sfarfallio del cursore.
 
 .. rst-class:: classref-item-separator
 
@@ -6132,11 +6132,11 @@ Restituisce l'orientamento attuale dello schermo ``screen``. Vedi anche :ref:`sc
 
 :ref:`Color<class_Color>` **screen_get_pixel**\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_pixel>`
 
-Returns the color of the pixel at the given screen ``position``. On multi-monitor setups, the screen position is relative to the virtual desktop area.
+Restituisce il colore del pixel alla posizione ``position`` dello schermo. Nelle configurazioni multi-monitor, la posizione dello schermo è relativa all'area del desktop virtuale.
 
-\ **Note:** This method is implemented on Linux (X11, excluding XWayland), macOS, and Windows. On other platforms, this method always returns ``Color(0, 0, 0, 1)``.
+\ **Nota:** Questo metodo è implementato su Linux (X11, eccetto XWayland), macOS e Windows. Su altre piattaforme, questo metodo restituisce sempre ``Color(0, 0, 0, 1)``.
 
-\ **Note:** On macOS, this method requires the "Screen Recording" permission. If permission is not granted, this method returns a color from a screenshot that will not include other application windows or OS elements not related to the application.
+\ **Nota:** Su macOS, questo metodo richiede l'autorizzazione "Registrazione schermo". Se l'autorizzazione non viene concessa, questo metodo restituisce uno screenshot che non includerà altre finestre dell'applicazione o elementi del sistema operativo che non riguardano l'applicazione.
 
 .. rst-class:: classref-item-separator
 
@@ -6289,9 +6289,9 @@ Imposta l'orientamento dello schermo all'indice ``screen`` su ``orientation``. V
 
 |void| **set_hardware_keyboard_connection_change_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_set_hardware_keyboard_connection_change_callback>`
 
-Sets the callback that should be called when a hardware keyboard is connected or disconnected. ``callable`` should accept a single :ref:`bool<class_bool>` argument indicating whether the keyboard has been connected (``true``) or disconnected (``false``).
+Imposta il callback che deve essere richiamato quando la tastiera hardware è connessa/disconnessa. ``callable`` deve accettare un singolo parametro :ref:`bool<class_bool>` che indica se la tastiera è connessa (``true``) o disconnessa (``false``).
 
-\ **Note:** This method is only implemented on Android.
+\ **Nota:** Questo metodo è implementato solo su Android.
 
 .. rst-class:: classref-item-separator
 
@@ -6665,9 +6665,9 @@ Annulla la registrazione di un :ref:`Object<class_Object>` che rappresenta un'us
 
 :ref:`int<class_int>` **virtual_keyboard_get_height**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_virtual_keyboard_get_height>`
 
-Returns the on-screen keyboard's height in pixels. Returns ``0`` if there is no keyboard or if it is currently hidden.
+Restituisce l'altezza della tastiera su schermo in pixel. Restituisce ``0`` se nessuna tastiera è presente o se è attualmente nascosta.
 
-\ **Note:** On Android 7 and 8, the keyboard height may return ``0`` the first time the keyboard is opened in non-immersive mode. This behavior does not occur in immersive mode.
+\ **Nota:** Su Android 7 e 8, l'altezza della tastiera potrebbe restituire ``0`` la prima volta che la tastiera viene aperta in modalità non immersiva. Questo comportamento non si verifica in modalità immersiva.
 
 .. rst-class:: classref-item-separator
 

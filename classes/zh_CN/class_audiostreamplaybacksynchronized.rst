@@ -7,14 +7,14 @@ AudioStreamPlaybackSynchronized
 
 **继承：** :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Playback class used for :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`.
+用于 :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>` 的播放类。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Playback component of :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`. Handles the playback of multiple :ref:`AudioStream<class_AudioStream>`\ s in synchrony.
+:ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>` 的播放组件。处理多个 :ref:`AudioStream<class_AudioStream>` 的同步播放。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

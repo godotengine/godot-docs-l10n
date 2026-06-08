@@ -102,7 +102,7 @@ InputEvent
 
 **DEVICE_ID_KEYBOARD** = ``16`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_KEYBOARD>`
 
-Device ID used for input from a keyboard. This can be used to distinguish keyboard input events from joypad input events.
+用于键盘输入的设备 ID。这可用于区分键盘输入事件和游戏手柄输入事件。
 
 .. _class_InputEvent_constant_DEVICE_ID_MOUSE:
 
@@ -110,7 +110,7 @@ Device ID used for input from a keyboard. This can be used to distinguish keyboa
 
 **DEVICE_ID_MOUSE** = ``32`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_MOUSE>`
 
-Device ID used for input from a mouse. This can be used to distinguish mouse input events from joypad input events.
+用于鼠标输入的设备 ID。这可用于区分鼠标输入事件和游戏手柄输入事件。
 
 .. rst-class:: classref-section-separator
 

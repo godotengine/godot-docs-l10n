@@ -7,14 +7,14 @@ AudioStreamPlaybackOggVorbis
 
 **Успадковує:** :ref:`AudioStreamPlaybackResampled<class_AudioStreamPlaybackResampled>` **<** :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Playback class used for :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`.
+Клас відтворення, що використовується для :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Playback component of :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`. Uses :ref:`OggPacketSequencePlayback<class_OggPacketSequencePlayback>` for playback data.
+Компонент відтворення :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`. Використовує :ref:`OggPacketSequencePlayback<class_OggPacketSequencePlayback>` для відтворення даних.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

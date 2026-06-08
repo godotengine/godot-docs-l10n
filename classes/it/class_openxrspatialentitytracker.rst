@@ -18,7 +18,7 @@ Base class for Positional trackers managed by OpenXR's spatial entity extensions
 Descrizione
 ----------------------
 
-These are trackers created and managed by OpenXR's spatial entity extensions that give access to specific data related to OpenXR's spatial entities. They will always be of type ``TRACKER_ANCHOR``.
+Questi sono tracker creati e gestiti dalle estensioni di entità spaziali di OpenXR che forniscono accesso a dati specifici relativi alle entità spaziali di OpenXR. Saranno sempre di tipo ``TRACKER_ANCHOR``.
 
 .. rst-class:: classref-reftable-group
 
@@ -108,7 +108,7 @@ enum **EntityTrackingState**: :ref:`🔗<enum_OpenXRSpatialEntityTracker_EntityT
 
 :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **ENTITY_TRACKING_STATE_STOPPED** = ``1``
 
-This anchor has stopped tracking.
+Questo ancoraggio ha smesso di tracciare.
 
 .. _class_OpenXRSpatialEntityTracker_constant_ENTITY_TRACKING_STATE_PAUSED:
 
@@ -124,7 +124,7 @@ Tracking is currently paused.
 
 :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **ENTITY_TRACKING_STATE_TRACKING** = ``3``
 
-This anchor is currently being tracked.
+Questo ancoraggio è attualmente tracciato.
 
 .. rst-class:: classref-section-separator
 

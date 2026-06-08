@@ -1452,9 +1452,9 @@ Cancella la selezione attuale.
 
 |void| **edit**\ (\ hide_focus\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_LineEdit_method_edit>`
 
-Allows entering edit mode whether the **LineEdit** is focused or not. If ``hide_focus`` is ``true``, the focused state will not be shown (see :ref:`Control.grab_focus()<class_Control_method_grab_focus>`).
+Consente di entrare in modalità di modifica, a prescindere dal fatto che **LineEdit** abbia il focus o meno. Se ``hide_focus`` è ``true``, lo stato di focus non sarà visualizzato (vedi :ref:`Control.grab_focus()<class_Control_method_grab_focus>`).
 
-See also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`.
+Vedi anche :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`.
 
 .. rst-class:: classref-item-separator
 

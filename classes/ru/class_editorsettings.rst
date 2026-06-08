@@ -1268,7 +1268,7 @@ If ``true``, displays a confirmation dialog when moving or duplicating items in 
 
 :ref:`bool<class_bool>` **docks/filesystem/automatically_open_created_scripts** :ref:`🔗<class_EditorSettings_property_docks/filesystem/automatically_open_created_scripts>`
 
-If ``true``, scripts created in FileSystem dock will be automatically edited.
+Если ``true``, скрипты, созданные в панели инструментов FileSystem, будут автоматически редактироваться.
 
 .. rst-class:: classref-item-separator
 
@@ -1548,7 +1548,7 @@ If ``true``, scripts created in FileSystem dock will be automatically edited.
 
 :ref:`Color<class_Color>` **editors/2d/locked_selection_rectangle_color** :ref:`🔗<class_EditorSettings_property_editors/2d/locked_selection_rectangle_color>`
 
-The color to use for the selection rectangle that surrounds selected locked nodes in the 2D editor viewport.
+Цвет, используемый для прямоугольника выделения, окружающего выбранные заблокированные узлы в окне просмотра 2D-редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -1572,7 +1572,7 @@ The color to use for the selection rectangle that surrounds selected locked node
 
 :ref:`Color<class_Color>` **editors/2d/selection_rectangle_color** :ref:`🔗<class_EditorSettings_property_editors/2d/selection_rectangle_color>`
 
-The color to use for the selection rectangle outlines that surrounds selected nodes in the 2D editor viewport.
+Цвет, используемый для контуров выделенной области, окружающих выбранные узлы в окне просмотра 2D-редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -1632,9 +1632,9 @@ The color to use for the selection rectangle outlines that surrounds selected no
 
 :ref:`Color<class_Color>` **editors/3d/active_selection_box_color** :ref:`🔗<class_EditorSettings_property_editors/3d/active_selection_box_color>`
 
-The color to use for the active selection box that surrounds selected nodes in the 3D editor viewport.
+Цвет, используемый для активной рамки выделения, окружающей выбранные узлы в окне просмотра 3D-редактора.
 
-\ **Note:** The term "active" indicates that this object is the primary selection used as the basis for certain operations. This is the last selected :ref:`Node3D<class_Node3D>`, which can be reordered with :kbd:`Shift + Left mouse button`.
+\ **Примечание:** Термин «активный» указывает на то, что этот объект является основным выделением, используемым в качестве основы для определенных операций. Это последний выбранный :ref:`Node3D<class_Node3D>`, порядок которых можно изменить с помощью :kbd:`Shift + левая кнопка мыши`.
 
 .. rst-class:: classref-item-separator
 
@@ -1724,7 +1724,7 @@ The color to use for the active selection box that surrounds selected nodes in t
 
 :ref:`bool<class_bool>` **editors/3d/freelook/freelook_invert_y_axis** :ref:`🔗<class_EditorSettings_property_editors/3d/freelook/freelook_invert_y_axis>`
 
-If ``true``, invert the vertical mouse axis when using freelook mode in the 3D editor.
+Если ``true``, инвертирует вертикальную ось мыши при использовании режима свободного обзора в 3D-редакторе.
 
 .. rst-class:: classref-item-separator
 
@@ -1926,7 +1926,7 @@ If ``true``, invert the vertical mouse axis when using freelook mode in the 3D e
 
 :ref:`bool<class_bool>` **editors/3d/navigation/invert_y_axis** :ref:`🔗<class_EditorSettings_property_editors/3d/navigation/invert_y_axis>`
 
-If ``true``, invert the vertical mouse axis when panning or orbiting in the 3D editor.
+Если ``true``, инвертирует вертикальную ось мыши при панорамировании или вращении в 3D-редакторе.
 
 .. rst-class:: classref-item-separator
 
@@ -2156,7 +2156,7 @@ If ``true``, invert the vertical mouse axis when panning or orbiting in the 3D e
 
 :ref:`Color<class_Color>` **editors/3d/selection_box_color** :ref:`🔗<class_EditorSettings_property_editors/3d/selection_box_color>`
 
-The color to use for the selection box that surrounds selected nodes in the 3D editor viewport.
+Цвет, используемый для рамки выделения, окружающей выбранные узлы в окне просмотра 3D-редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -2180,7 +2180,7 @@ The color to use for the selection box that surrounds selected nodes in the 3D e
 
 :ref:`float<class_float>` **editors/3d/view_plane_rotation_gizmo_scale** :ref:`🔗<class_EditorSettings_property_editors/3d/view_plane_rotation_gizmo_scale>`
 
-The scale of the outer circle of the rotation gizmo as view plane rotation in the 3D editor. If set to ``2.0``, the outer circle has twice the radius of the XYZ rotation gizmo sphere.
+Масштаб внешней окружности манипулятора вращения в качестве вращения плоскости вида в 3D-редакторе. Если установить значение ``2.0``, радиус внешней окружности будет вдвое больше радиуса сферы манипулятора вращения XYZ.
 
 .. rst-class:: classref-item-separator
 
@@ -2564,7 +2564,7 @@ The scale of the outer circle of the rotation gizmo as view plane rotation in th
 
 :ref:`bool<class_bool>` **editors/3d_gizmos/gizmo_settings/show_collision_shapes_only_when_selected** :ref:`🔗<class_EditorSettings_property_editors/3d_gizmos/gizmo_settings/show_collision_shapes_only_when_selected>`
 
-If ``true``, collision shapes in the 3D editor are visible only when selected. If ``false``, collision shapes are always visible.
+Если ``true``, фигуры столкновений в 3D-редакторе видны только при выборе. Если ``false``, фигуры столкновений видны всегда.
 
 .. rst-class:: classref-item-separator
 
@@ -2702,7 +2702,7 @@ If ``true``, collision shapes in the 3D editor are visible only when selected. I
 
 :ref:`Color<class_Color>` **editors/audio_buses/active_max_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/active_max_db_color>`
 
-The color at the top of the VU meter gradient when it is active.
+Цвет верхней части градиента индикатора уровня звука, когда он активен.
 
 .. rst-class:: classref-item-separator
 
@@ -2714,7 +2714,7 @@ The color at the top of the VU meter gradient when it is active.
 
 :ref:`Color<class_Color>` **editors/audio_buses/active_min_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/active_min_db_color>`
 
-The color at the bottom of the VU meter gradient when it is active.
+Цвет в нижней части градиента индикатора уровня звука, когда он активен.
 
 .. rst-class:: classref-item-separator
 
@@ -2726,7 +2726,7 @@ The color at the bottom of the VU meter gradient when it is active.
 
 :ref:`Color<class_Color>` **editors/audio_buses/active_normalized_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/active_normalized_db_color>`
 
-The color at 0 dB of the VU meter gradient when it is active.
+Цвет градиента индикатора уровня звука (VU-метра) при 0 дБ, когда он активен.
 
 .. rst-class:: classref-item-separator
 
@@ -2738,7 +2738,7 @@ The color at 0 dB of the VU meter gradient when it is active.
 
 :ref:`Color<class_Color>` **editors/audio_buses/inactive_max_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/inactive_max_db_color>`
 
-The color at the top of the VU meter gradient when it is inactive.
+Цвет верхней части градиента VU-метра, когда он неактивен.
 
 .. rst-class:: classref-item-separator
 
@@ -2750,7 +2750,7 @@ The color at the top of the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/inactive_min_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/inactive_min_db_color>`
 
-The color at the bottom of the VU meter gradient when it is inactive.
+Цвет в нижней части градиента VU-метра, когда он неактивен.
 
 .. rst-class:: classref-item-separator
 
@@ -2762,7 +2762,7 @@ The color at the bottom of the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/inactive_normalized_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/inactive_normalized_db_color>`
 
-The color at 0 dB of the VU meter gradient when it is inactive.
+Цвет градиента индикатора уровня звука при 0 дБ, когда он неактивен.
 
 .. rst-class:: classref-item-separator
 
@@ -2774,7 +2774,7 @@ The color at 0 dB of the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/tint_over_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/tint_over_color>`
 
-The multiplier color for the VU meter gradient when it is inactive.
+Цвет множителя для градиента индикатора уровня звука, когда он неактивен.
 
 .. rst-class:: classref-item-separator
 
@@ -2786,7 +2786,7 @@ The multiplier color for the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/tint_under_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/tint_under_color>`
 
-The multiplier color for the VU meter gradient where audio is not reaching.
+Цвет множителя для градиента индикатора уровня звука в тех местах, куда не доходит звук.
 
 .. rst-class:: classref-item-separator
 
@@ -3530,11 +3530,11 @@ The multiplier color for the VU meter gradient where audio is not reaching.
 
 :ref:`String<class_String>` **filesystem/import/blender/blender_path** :ref:`🔗<class_EditorSettings_property_filesystem/import/blender/blender_path>`
 
-The path to the Blender executable used for converting the Blender 3D scene files ``.blend`` to glTF 2.0 format during import. Blender 3.0 or later is required.
+Путь к исполняемому файлу Blender, используемому для преобразования файлов 3D-сцен Blender ``.blend`` в формат glTF 2.0 во время импорта. Требуется Blender 3.0 или более поздней версии.
 
-To enable this feature for your specific project, use :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
+Чтобы включить эту функцию для вашего конкретного проекта, используйте :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
 
-If this setting is empty, Blender's default paths will be detected and used automatically if present in this order:
+Если этот параметр пуст, будут автоматически определены и использованы пути Blender по умолчанию, если они присутствуют в указанном порядке:
 
 \ **Windows:**\ 
 
@@ -3807,7 +3807,7 @@ If this setting is empty, Blender's default paths will be detected and used auto
 
 :ref:`bool<class_bool>` **interface/accessibility/property_descriptions** :ref:`🔗<class_EditorSettings_property_interface/accessibility/property_descriptions>`
 
-If ``true``, editor inspector uses property documentation as an accessible description of the property.
+Если ``true``, инспектор редактора использует документацию свойства в качестве доступного описания свойства.
 
 .. rst-class:: classref-item-separator
 
@@ -3839,11 +3839,11 @@ If ``true``, editor inspector uses property documentation as an accessible descr
 
 :ref:`bool<class_bool>` **interface/editor/appearance/collapse_main_menu** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/collapse_main_menu>`
 
-If ``true``, the main menu collapses into a :ref:`MenuButton<class_MenuButton>`.
+Если ``true``, главное меню сворачивается в :ref:`MenuButton<class_MenuButton>`.
 
-\ **Note:** This setting is only applicable on macOS when :ref:`interface/editor/appearance/use_embedded_menu<class_EditorSettings_property_interface/editor/appearance/use_embedded_menu>` is ``true``.
+\ **Примечание:** Этот параметр применим только в macOS, когда :ref:`interface/editor/appearance/use_embedded_menu<class_EditorSettings_property_interface/editor/appearance/use_embedded_menu>` имеет значение ``true``.
 
-\ **Note:** Defaults to ``true`` on the Android editor.
+\ **Примечание:** По умолчанию в редакторе Android значение ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -3855,9 +3855,9 @@ If ``true``, the main menu collapses into a :ref:`MenuButton<class_MenuButton>`.
 
 :ref:`float<class_float>` **interface/editor/appearance/custom_display_scale** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`
 
-The custom editor scale factor to use. This can be used for displays with very high DPI where a scale factor of 200% is not sufficient.
+Пользовательский коэффициент масштабирования редактора. Это можно использовать для дисплеев с очень высоким разрешением (DPI), где коэффициента масштабирования в 200% недостаточно.
 
-\ **Note:** Only effective if :ref:`interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` is set to **Custom**.
+\ **Примечание:** Действует только в том случае, если для параметра :ref:`interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` установлено значение **Custom**.
 
 .. rst-class:: classref-item-separator
 
@@ -4419,9 +4419,9 @@ The amount of sleeping between frames in the editor (in microseconds). Higher va
 
 :ref:`int<class_int>` **interface/editor/timers/unfocused_low_processor_mode_sleep_usec** :ref:`🔗<class_EditorSettings_property_interface/editor/timers/unfocused_low_processor_mode_sleep_usec>`
 
-When the editor window is unfocused, the amount of sleeping between frames when the low-processor usage mode is enabled (in microseconds). Higher values will result in lower CPU/GPU usage, which can improve battery life on laptops (in addition to improving the running project's performance if the editor has to redraw continuously). However, higher values will result in a less responsive editor. The default value is set to limit the editor to 10 FPS when the editor window is unfocused. See also :ref:`interface/editor/timers/low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`.
+Когда окно редактора не находится в фокусе, значение параметра «Задержка между кадрами» задается в микросекундах при включенном режиме низкой загрузки процессора. Более высокие значения приведут к снижению загрузки ЦП/ГП, что может улучшить время автономной работы ноутбуков (помимо повышения производительности запущенного проекта, если редактору приходится постоянно перерисовывать изображение). Однако более высокие значения приведут к снижению отзывчивости редактора. Значение по умолчанию ограничивает работу редактора до 10 кадров в секунду, когда окно редактора не находится в фокусе. См. также :ref:`interface/editor/timers/low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`.
 
-\ **Note:** This setting is ignored if :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` is ``true``, as enabling that setting disables low-processor mode.
+\ **Примечание:** Этот параметр игнорируется, если :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` имеет значение ``true``, поскольку включение этого параметра отключает режим низкой загрузки процессора.
 
 .. rst-class:: classref-item-separator
 
@@ -4669,11 +4669,11 @@ The default property name style to display in the Inspector dock. This style can
 
 :ref:`bool<class_bool>` **interface/multi_window/enable** :ref:`🔗<class_EditorSettings_property_interface/multi_window/enable>`
 
-If ``true``, multiple window support in editor is enabled. The following panels can become dedicated windows (i.e. made floating): Docks, Script editor, Shader editor, and Game Workspace.
+Если ``true``, поддержка нескольких окон в редакторе включена. Следующие панели могут стать отдельными окнами (т.е. плавающими): панели Dock, редактор скриптов, редактор шейдеров и игровая рабочая область.
 
-\ **Note:** When :ref:`interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` is ``true``, the multi window support is always disabled.
+\ **Примечание:** Когда :ref:`interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` имеет значение ``true``, поддержка нескольких окон всегда отключена.
 
-\ **Note:** To query whether the editor can use multiple windows in an editor plugin, use :ref:`EditorInterface.is_multi_window_enabled()<class_EditorInterface_method_is_multi_window_enabled>` instead of querying the value of this editor setting.
+\ **Примечание:** Чтобы узнать, может ли редактор использовать несколько окон в плагине редактора, используйте :ref:`EditorInterface.is_multi_window_enabled()<class_EditorInterface_method_is_multi_window_enabled>` вместо запроса значения этого параметра редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -4859,7 +4859,7 @@ If ``true``, multiple window support in editor is enabled. The following panels 
 
 :ref:`float<class_float>` **interface/theme/contrast** :ref:`🔗<class_EditorSettings_property_interface/theme/contrast>`
 
-The contrast factor to use when deriving the editor theme's base color (see :ref:`interface/theme/base_color<class_EditorSettings_property_interface/theme/base_color>`). When using positive values, the derived colors will be *darker* than the base color. This contrast factor can be set to a negative value, which will make the derived colors *brighter* than the base color. Negative contrast rates often look better for light themes.
+Коэффициент контрастности, используемый при определении базового цвета темы редактора (см. :ref:`interface/theme/base_color<class_EditorSettings_property_interface/theme/base_color>`). При использовании положительных значений полученные цвета будут *темнее* базового цвета. Этот коэффициент контрастности можно установить на отрицательное значение, что сделает полученные цвета *ярче* базового цвета. Отрицательные значения коэффициента контрастности часто лучше подходят для светлых тем.
 
 .. rst-class:: classref-item-separator
 
@@ -5005,7 +5005,7 @@ The contrast factor to use when deriving the editor theme's base color (see :ref
 
 :ref:`bool<class_bool>` **interface/theme/use_monospace_font_for_editor_symbols** :ref:`🔗<class_EditorSettings_property_interface/theme/use_monospace_font_for_editor_symbols>`
 
-If ``true``, use the monospace font for some labels in the editor that display code symbols, such as signals, properties, and methods.
+Если ``true``, используйте моноширинный шрифт для некоторых Label'ов в редакторе, отображающих символы кода, таких как сигналы, свойства и методы.
 
 .. rst-class:: classref-item-separator
 
@@ -5017,9 +5017,9 @@ If ``true``, use the monospace font for some labels in the editor that display c
 
 :ref:`bool<class_bool>` **interface/theme/use_system_accent_color** :ref:`🔗<class_EditorSettings_property_interface/theme/use_system_accent_color>`
 
-If ``true``, set accent color based on system settings.
+Если ``true``, установите акцентный цвет в соответствии с системными настройками.
 
-\ **Note:** This setting is effective on Windows, macOS, Linux, and Android.
+\ **Примечание:** Этот параметр действует в Windows, macOS, Linux и Android.
 
 .. rst-class:: classref-item-separator
 
@@ -5073,9 +5073,9 @@ If ``true``, set accent color based on system settings.
 
 :ref:`bool<class_bool>` **interface/touchscreen/haptic_on_long_press** :ref:`🔗<class_EditorSettings_property_interface/touchscreen/haptic_on_long_press>`
 
-If ``true``, the device will vibrate when a long-press gesture triggers a right-click context menu in the editor.
+Если ``true``, устройство будет вибрировать при длительном нажатии, активирующем контекстное меню правой кнопки мыши в редакторе.
 
-\ **Note:** Only has an effect on devices with haptic feedback hardware. Defaults to ``true`` on touchscreen devices.
+\ **Примечание:** Действует только на устройствах с аппаратной тактильной обратной связью. По умолчанию ``true`` для сенсорных устройств.
 
 .. rst-class:: classref-item-separator
 
@@ -5139,9 +5139,9 @@ All update modes will ignore builds with different major versions (e.g. Godot 4 
 
 :ref:`int<class_int>` **network/connection/network_mode** :ref:`🔗<class_EditorSettings_property_network/connection/network_mode>`
 
-Determines whether online features, such as the Asset Store or update checks, are enabled in the editor. If this is a privacy concern, disabling these online features prevents the editor from making HTTP requests to the Godot website or third-party platforms hosting assets from the Asset Store.
+Определяет, включены ли в редакторе онлайн-функции, такие как Asset Store или проверка обновлений. Если это вызывает опасения по поводу конфиденциальности, отключение этих онлайн-функций предотвратит отправку редактором HTTP-запросов к веб-сайту Godot или сторонним платформам, размещающим ресурсы из Asset Store.
 
-Editor plugins and tool scripts are recommended to follow this setting. However, Godot can't prevent them from violating this rule.
+Рекомендуется, чтобы плагины редактора и скрипты инструментов следовали этой настройке. Однако Godot не может предотвратить нарушение ими этого правила.
 
 .. rst-class:: classref-item-separator
 
@@ -5177,9 +5177,9 @@ Editor plugins and tool scripts are recommended to follow this setting. However,
 
 :ref:`String<class_String>` **network/http_proxy/host** :ref:`🔗<class_EditorSettings_property_network/http_proxy/host>`
 
-The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset store and export template downloads). See also :ref:`network/http_proxy/port<class_EditorSettings_property_network/http_proxy/port>`.
+Хост, используемый для связи с HTTP и HTTPS-прокси в редакторе (для магазина ресурсов и загрузки шаблонов экспорта). См. также :ref:`network/http_proxy/port<class_EditorSettings_property_network/http_proxy/port>`.
 
-\ **Note:** Godot currently doesn't automatically use system proxy settings, so you have to enter them manually here if needed.
+\ **Примечание:** В настоящее время Godot не использует автоматически системные настройки прокси, поэтому при необходимости их необходимо ввести вручную.
 
 .. rst-class:: classref-item-separator
 
@@ -5191,9 +5191,9 @@ The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset
 
 :ref:`int<class_int>` **network/http_proxy/port** :ref:`🔗<class_EditorSettings_property_network/http_proxy/port>`
 
-The port number to use to contact the HTTP and HTTPS proxy in the editor (for the asset store and export template downloads). See also :ref:`network/http_proxy/host<class_EditorSettings_property_network/http_proxy/host>`.
+Номер порта, используемый для связи с HTTP и HTTPS-прокси в редакторе (для магазина ресурсов и загрузки шаблонов экспорта). См. также :ref:`network/http_proxy/host<class_EditorSettings_property_network/http_proxy/host>`.
 
-\ **Note:** Godot currently doesn't automatically use system proxy settings, so you have to enter them manually here if needed.
+\ **Примечание:** В настоящее время Godot не использует автоматически системные настройки прокси, поэтому при необходимости их необходимо ввести вручную.
 
 .. rst-class:: classref-item-separator
 
@@ -5205,18 +5205,18 @@ The port number to use to contact the HTTP and HTTPS proxy in the editor (for th
 
 :ref:`bool<class_bool>` **network/language_server/enable_smart_resolve** :ref:`🔗<class_EditorSettings_property_network/language_server/enable_smart_resolve>`
 
-If ``true`` the language server will try to provide additional results when resolving symbols at the cost of showing wrong results. All symbols in the project are checked and resolved just based on their name, without taking context into account.
+Если ``true``, языковой сервер попытается предоставить дополнительные результаты при разрешении символов, но при этом может отобразить неверные результаты. Все символы в проекте проверяются и разрешаются только на основе их имени, без учета контекста.
 
 ::
 
     func untyped(param):
-        param.print() # Will resolve to the global print method for e.g. hover hints.
+        param.print() # Будет использоваться глобальный метод печати, например, для подсказок при наведении курсора.
 
-When using static typing it is recommended to disable this setting, since it will mostly add false positives for typed code.
+При использовании статической типизации рекомендуется отключить эту настройку, поскольку она, скорее всего, приведет к ложным срабатываниям для типизированного кода.
 
-\ **Note:** This setting also influences how symbols are resolved when using renaming capabilities.
+\ **Примечание:** Этот параметр также влияет на то, как обрабатываются символы при использовании функций переименования.
 
-\ **Note:** The default value of this setting might change in future versions.
+\ **Примечание:** Значение по умолчанию для этого параметра может измениться в будущих версиях.
 
 .. rst-class:: classref-item-separator
 
@@ -5228,7 +5228,7 @@ When using static typing it is recommended to disable this setting, since it wil
 
 :ref:`int<class_int>` **network/language_server/poll_limit_usec** :ref:`🔗<class_EditorSettings_property_network/language_server/poll_limit_usec>`
 
-The upper limit of time, that the language server spends for IO each poll.
+Верхний предел времени, которое языковой сервер тратит на операции ввода-вывода (IO) при каждом опросе.
 
 .. rst-class:: classref-item-separator
 
@@ -5252,9 +5252,9 @@ The host used to listen for language server clients.
 
 :ref:`int<class_int>` **network/language_server/remote_port** :ref:`🔗<class_EditorSettings_property_network/language_server/remote_port>`
 
-The port used to listen for language server clients.
+Порт, используемый для прослушивания клиентов языкового сервера.
 
-\ **Note:** A port configured with command-line options will take priority over this setting: ``--lsp-port <port>``.
+\ **Примечание:** Порт, настроенный с помощью параметров командной строки, будет иметь приоритет над этой настройкой: ``--lsp-port <port>``.
 
 .. rst-class:: classref-item-separator
 
@@ -5266,9 +5266,9 @@ The port used to listen for language server clients.
 
 :ref:`bool<class_bool>` **network/language_server/show_native_symbols_in_editor** :ref:`🔗<class_EditorSettings_property_network/language_server/show_native_symbols_in_editor>`
 
-The declaration of native symbols can't be resolved to a position in the file system. If ``true`` the language server will instead open the documentation for native symbols in the editor.
+Объявление нативных символов не может быть разрешено в позиции файловой системы. Если ``true``, языковой сервер вместо этого откроет документацию для нативных символов в редакторе.
 
-\ **Note:** The VSCode plugin adds additional functionality which allows viewing Godot documentation directly in VSCode, so this option is usually not needed in VSCode.
+\ **Примечание:** Плагин VSCode добавляет дополнительную функциональность, которая позволяет просматривать документацию Godot непосредственно в VSCode, поэтому эта опция обычно не требуется в VSCode.
 
 .. rst-class:: classref-item-separator
 
@@ -5280,7 +5280,7 @@ The declaration of native symbols can't be resolved to a position in the file sy
 
 :ref:`bool<class_bool>` **network/language_server/use_thread** :ref:`🔗<class_EditorSettings_property_network/language_server/use_thread>`
 
-If ``true`` the language server will run in a separate thread, if ``false`` it will run on the main thread.
+Если ``true``, языковой сервер будет работать в отдельном потоке, если ``false``, он будет работать в основном потоке.
 
 .. rst-class:: classref-item-separator
 
@@ -5292,7 +5292,7 @@ If ``true`` the language server will run in a separate thread, if ``false`` it w
 
 :ref:`String<class_String>` **network/tls/editor_tls_certificates** :ref:`🔗<class_EditorSettings_property_network/tls/editor_tls_certificates>`
 
-The TLS certificate bundle to use for HTTP requests made within the editor (e.g. from the Asset Store tab). If left empty, the `included Mozilla certificate bundle <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__ will be used.
+Пакет TLS-сертификатов, используемый для HTTP-запросов, выполняемых внутри редактора (например, со вкладки «Asset Store»). Если оставить поле пустым, будет использоваться `включенный пакет сертификатов Mozilla <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -5406,7 +5406,7 @@ The TLS certificate bundle to use for HTTP requests made within the editor (e.g.
 
 :ref:`int<class_int>` **run/output/font_size** :ref:`🔗<class_EditorSettings_property_run/output/font_size>`
 
-The size of the font in the **Output** panel at the bottom of the editor. This setting does not impact the font size of the script editor (see :ref:`interface/editor/fonts/code_font_size<class_EditorSettings_property_interface/editor/fonts/code_font_size>`).
+Размер шрифта на панели **Вывод** в нижней части редактора. Этот параметр не влияет на размер шрифта в редакторе скриптов (см. :ref:`interface/editor/fonts/code_font_size<class_EditorSettings_property_interface/editor/fonts/code_font_size>`).
 
 .. rst-class:: classref-item-separator
 
@@ -5572,7 +5572,7 @@ The size of the font in the **Output** panel at the bottom of the editor. This s
 
 :ref:`bool<class_bool>` **text_editor/appearance/drag_and_drop_info/show_drag_and_drop_info** :ref:`🔗<class_EditorSettings_property_text_editor/appearance/drag_and_drop_info/show_drag_and_drop_info>`
 
-If ``true``, shows an info label listing available drop options when dragging an object into the script text editor.
+Если ``true``, отобразится информационный Label со списком доступных вариантов перетаскивания при перетаскивании объекта в текстовый редактор скрипта.
 
 .. rst-class:: classref-item-separator
 
@@ -5764,7 +5764,7 @@ If ``true``, shows an info label listing available drop options when dragging an
 
 :ref:`int<class_int>` **text_editor/appearance/whitespace/line_spacing** :ref:`🔗<class_EditorSettings_property_text_editor/appearance/whitespace/line_spacing>`
 
-The space to add between lines (in pixels). Greater line spacing can help improve readability at the cost of displaying fewer lines on screen. Negative values allow for even more compact text, but may look broken with certain fonts.
+Расстояние между строками (в пикселях). Большее межстрочное расстояние может улучшить читаемость за счет уменьшения количества строк на экране. Отрицательные значения позволяют сделать текст еще более компактным, но могут выглядеть некорректно с некоторыми шрифтами.
 
 .. rst-class:: classref-item-separator
 

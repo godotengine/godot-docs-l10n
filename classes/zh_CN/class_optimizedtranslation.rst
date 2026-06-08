@@ -45,11 +45,11 @@ OptimizedTranslation
 
 :ref:`bool<class_bool>` **generate**\ (\ from\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_OptimizedTranslation_method_generate>`
 
-Generates and sets an optimized translation from the given :ref:`Translation<class_Translation>` resource. Returns ``true`` if successful.
+根据给定的 :ref:`Translation<class_Translation>`\ （翻译）资源，生成并设置一套优化后的翻译。如果操作成功，则返回 ``true``\ 。
 
-\ **Note:** Messages in ``from`` should not use context or plural forms.
+\ **注意：** ``from`` 中的消息不应使用上下文（context）或复数形式。
 
-\ **Note:** This method is intended to be used in the editor. It does nothing when called from an exported project.
+\ **注意：** 此方法旨在编辑器内使用。在导出的项目（即打包发布后的游戏或应用）中调用它不会产生任何效果。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

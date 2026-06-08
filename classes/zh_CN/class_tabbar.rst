@@ -649,9 +649,9 @@ enum **CloseButtonDisplayPolicy**: :ref:`🔗<enum_TabBar_CloseButtonDisplayPoli
 
 :ref:`bool<class_bool>` **tab_{index}/disabled** = ``false`` :ref:`🔗<class_TabBar_property_tab_{index}/disabled>`
 
-If ``true``, the tab at ``index`` is disabled.
+如果为 ``true``\ ，则 ``index`` 处的选项卡将被禁用。
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. tab_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -663,9 +663,9 @@ If ``true``, the tab at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **tab_{index}/icon** :ref:`🔗<class_TabBar_property_tab_{index}/icon>`
 
-If ``true``, the tab at ``index`` is hidden.
+如果为 ``true``\ ，则 ``index`` 处的选项卡将被隐藏。
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. tab_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -677,9 +677,9 @@ If ``true``, the tab at ``index`` is hidden.
 
 :ref:`String<class_String>` **tab_{index}/title** = ``""`` :ref:`🔗<class_TabBar_property_tab_{index}/title>`
 
-The title text of the tab at ``index``.
+``index``\ 处选项卡的标题文本。
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. tab_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -691,9 +691,9 @@ The title text of the tab at ``index``.
 
 :ref:`String<class_String>` **tab_{index}/tooltip** = ``""`` :ref:`🔗<class_TabBar_property_tab_{index}/tooltip>`
 
-The tooltip text of the tab at ``index``.
+``index`` 处选项卡的工具提示文本。
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. tab_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1362,7 +1362,7 @@ The tooltip text of the tab at ``index``.
 
 :ref:`Texture2D<class_Texture2D>` **drop_mark** :ref:`🔗<class_TabBar_theme_icon_drop_mark>`
 
-Icon shown to indicate where a dragged tab will be dropped (see :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`).
+用于指示拖拽的标签页将放置在何处的图标（参见 :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`\ ）。
 
 .. rst-class:: classref-item-separator
 

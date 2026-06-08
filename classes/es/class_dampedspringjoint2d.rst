@@ -14,7 +14,7 @@ Una unión física que conecta dos cuerpos físicos 2D con una fuerza similar a 
 Descripción
 ----------------------
 
-A physics joint that connects two 2D physics bodies with a spring-like force. This behaves like a spring that always wants to stretch to a given length.
+Una articulación física que conecta dos cuerpos físicos 2D con una fuerza similar a un resorte. Se comporta como un resorte que siempre quiere estirarse a una longitud dada.
 
 .. rst-class:: classref-reftable-group
 

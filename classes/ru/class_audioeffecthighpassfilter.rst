@@ -7,16 +7,16 @@ AudioEffectHighPassFilter
 
 **Наследует:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a high-pass filter to an audio bus.
+Добавляет фильтр верхних частот к аудиошине.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-A "high-pass" filter attenuates frequencies lower than :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` and allows higher frequencies to pass unchanged.
+Фильтр верхних частот ослабляет частоты ниже :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` и пропускает более высокие частоты без изменений.
 
-This filter can be used to remove "strength" from a sound, and give low-end space for basses and impact sounds.
+Этот фильтр можно использовать для уменьшения «силы» звука и освобождения пространства для басов и ударных звуков в низкочастотном диапазоне.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ This filter can be used to remove "strength" from a sound, and give low-end spac
 
 - :doc:`Аудиошины <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Звуковые эффекты <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

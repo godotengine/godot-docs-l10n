@@ -188,7 +188,7 @@ EditorFileSystem
 
 :ref:`bool<class_bool>` **is_importing**\ (\ ) |const| :ref:`🔗<class_EditorFileSystem_method_is_importing>`
 
-Returns ``true`` if resources are currently being imported.
+如果资源当前正在被导入，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

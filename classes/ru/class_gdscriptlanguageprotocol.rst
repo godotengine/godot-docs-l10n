@@ -9,16 +9,16 @@ GDScriptLanguageProtocol
 
 **Наследует:** :ref:`JSONRPC<class_JSONRPC>` **<** :ref:`Object<class_Object>`
 
-GDScript language server.
+Языковой сервер GDScript.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Provides access to certain features that are implemented in the language server.
+Предоставляет доступ к определенным функциям, реализованным в языковом сервере.
 
-\ **Note:** This class is not a language server client that can be used to access LSP functionality. It only provides access to a limited set of features that is implemented using the same technical foundation as the language server.
+\ **Примечание:** Этот класс не является клиентом языкового сервера, который можно использовать для доступа к функциональности LSP. Он предоставляет доступ только к ограниченному набору функций, реализованных на той же технической основе, что и языковой сервер.
 
 .. rst-class:: classref-reftable-group
 
@@ -65,7 +65,7 @@ Provides access to certain features that are implemented in the language server.
 
 **Устарело:** :ref:`GDScriptTextDocument<class_GDScriptTextDocument>` is deprecated.
 
-Returns the language server's :ref:`GDScriptTextDocument<class_GDScriptTextDocument>` instance.
+Возвращает экземпляр :ref:`GDScriptTextDocument<class_GDScriptTextDocument>` языкового сервера.
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Returns the language server's :ref:`GDScriptTextDocument<class_GDScriptTextDocum
 
 :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` **get_workspace**\ (\ ) :ref:`🔗<class_GDScriptLanguageProtocol_method_get_workspace>`
 
-Returns the language server's :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` instance.
+Возвращает экземпляр :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` языкового сервера.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Returns the language server's :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` 
 
 :ref:`bool<class_bool>` **is_initialized**\ (\ ) |const| :ref:`🔗<class_GDScriptLanguageProtocol_method_is_initialized>`
 
-Returns ``true`` if the language server was initialized by a language server client, ``false`` otherwise.
+Возвращает ``true``, если языковой сервер был инициализирован клиентом языкового сервера, ``false`` в противном случае.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Returns ``true`` if the language server was initialized by a language server cli
 
 :ref:`bool<class_bool>` **is_smart_resolve_enabled**\ (\ ) |const| :ref:`🔗<class_GDScriptLanguageProtocol_method_is_smart_resolve_enabled>`
 
-Returns ``true`` if the language server is providing the smart resolve feature, ``false`` otherwise. The feature can be configured through the editor settings.
+Возвращает ``true``, если языковой сервер предоставляет функцию интеллектуального разрешения имен, ``false`` в противном случае. Эту функцию можно настроить в параметрах редактора.
 
 .. rst-class:: classref-item-separator
 

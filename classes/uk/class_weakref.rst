@@ -1,0 +1,56 @@
+:github_url: hide
+
+.. _class_WeakRef:
+
+WeakRef
+=======
+
+**Успадковує:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+
+Затримувати :ref:`Object<class_Object>`. Якщо об'єкт є :ref:`RefCounted<class_RefCounted>`, він не змінює кількість посилань.
+
+.. rst-class:: classref-introduction-group
+
+Опис
+--------
+
+Слабкий рефлектор може тримати :ref:`RefCounted<class_RefCounted>` без внесення до довідника. Слабкий рефлектор може бути створений з :ref:`Object<class_Object>` за допомогою :ref:`@GlobalScope.weakref()<class_@GlobalScope_method_weakref>`. Якщо цей об'єкт не є довідником, слабким рефлектором все ще працює, проте не має ніякого ефекту на об'єкті. Микреф є корисним у випадках, коли кілька класів мають змінні, які відносяться до одного. Без слабких рефлувань, використовуючи ці класи можуть призвести до витоків пам'яті, так як обидва посилання зберігають один від одного. Здійснення частини змінної слабкого рефлектора може запобігти цьому циклічної залежності, і дозволяє посилання, щоб бути випущені.
+
+.. rst-class:: classref-reftable-group
+
+Методи
+------------
+
+.. table::
+   :widths: auto
+
+   +-------------------------------+------------------------------------------------------------+
+   | :ref:`Variant<class_Variant>` | :ref:`get_ref<class_WeakRef_method_get_ref>`\ (\ ) |const| |
+   +-------------------------------+------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описи методів
+--------------------------
+
+.. _class_WeakRef_method_get_ref:
+
+.. rst-class:: classref-method
+
+:ref:`Variant<class_Variant>` **get_ref**\ (\ ) |const| :ref:`🔗<class_WeakRef_method_get_ref>`
+
+Повернутися до :ref:`Object<class_Object>` цей слабкий рефлектор відноситься до. Повертає ``null`` якщо цей об'єкт не існує.
+
+.. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
+.. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
+.. |const| replace:: :abbr:`const (Цей метод не має побічних ефектів. Не змінює ніяку змінну екземпляра об'єкта.)`
+.. |vararg| replace:: :abbr:`vararg (Цей метод приймає будь-яке число аргументів після описаних тут.)`
+.. |constructor| replace:: :abbr:`constructor (Цей метод використовується для побудови типів.)`
+.. |static| replace:: :abbr:`static (Цей метод не потребує екземпляра для виклику, його можна викликати безпосередньо за допомогою назви класу.)`
+.. |operator| replace:: :abbr:`operator (Цей метод описує дійсний оператор для взаємодії з цим типом як з лівим операндом.)`
+.. |bitfield| replace:: :abbr:`BitField (Це значення є цілим числом, складеним у вигляді бітової маски з наступних прапорів.)`
+.. |void| replace:: :abbr:`void (Значення не повертається.)`

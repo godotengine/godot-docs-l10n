@@ -7,16 +7,16 @@ AwaitTweener
 
 **Наследует:** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Awaits a specified signal.
+Ожидает получения указанного сигнала.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-**AwaitTweener** is used to await a specified signal, allowing asynchronous steps in :ref:`Tween<class_Tween>` animation. See :ref:`Tween.tween_await()<class_Tween_method_tween_await>` for more usage information.
+**AwaitTweener** используется для ожидания указанного сигнала, что позволяет выполнять асинхронные шаги в анимации :ref:`Tween<class_Tween>`. Дополнительную информацию об использовании см. в методе :ref:`Tween.tween_await()<class_Tween_method_tween_await>`.
 
-The :ref:`Tweener.finished<class_Tweener_signal_finished>` signal is emitted when either the awaited signal is received, when timeout is reached, or when the target object is freed.
+Сигнал :ref:`Tweener.finished<class_Tweener_signal_finished>` испускается при получении ожидаемого сигнала, по истечении времени ожидания или при освобождении целевого объекта.
 
 .. rst-class:: classref-reftable-group
 
@@ -45,7 +45,7 @@ The :ref:`Tweener.finished<class_Tweener_signal_finished>` signal is emitted whe
 
 :ref:`AwaitTweener<class_AwaitTweener>` **set_timeout**\ (\ timeout\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AwaitTweener_method_set_timeout>`
 
-Sets the maximum time an **AwaitTweener** can wait for the signal. Can be used as a safeguard for signals that may never be emitted. If not specified, the tweener will wait indefinitely.
+Устанавливает максимальное время ожидания сигнала для объекта **AwaitTweener**. Может использоваться в качестве защиты от сигналов, которые могут никогда не быть испущены. Если не указано иное, объект будет ожидать бесконечно.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

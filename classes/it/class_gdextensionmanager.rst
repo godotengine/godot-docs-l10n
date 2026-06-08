@@ -214,7 +214,7 @@ Carica un'estensione dal suo percorso di file assoluto. ``path`` deve puntare a 
 
 :ref:`LoadStatus<enum_GDExtensionManager_LoadStatus>` **load_extension_from_function**\ (\ path\: :ref:`String<class_String>`, init_func\: ``const GDExtensionInitializationFunction*``\ ) :ref:`🔗<class_GDExtensionManager_method_load_extension_from_function>`
 
-Loads the extension already in address space via the given path and initialization function. The ``path`` needs to be unique and start with ``"libgodot://"``. Returns :ref:`LOAD_STATUS_OK<class_GDExtensionManager_constant_LOAD_STATUS_OK>` if successful.
+Carica l'estensione già presente nello spazio degli indirizzi tramite il percorso e la funzione di inizializzazione specificati. ``path`` deve essere univoco e iniziare con ``"libgodot://"``. Restituisce :ref:`LOAD_STATUS_OK<class_GDExtensionManager_constant_LOAD_STATUS_OK>` in caso di successo.
 
 .. rst-class:: classref-item-separator
 

@@ -205,7 +205,7 @@ enum **ControlState**: :ref:`🔗<enum_EditorSpinSlider_ControlState>`
 - |void| **set_deferred_drag_mode_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deferred_drag_mode_enabled**\ (\ )
 
-If ``true``, changing via dragging is applied only at the end of the input (for example, when the user releases a mouse button).
+Якщо ``true``, зміна шляхом перетягування застосовується лише в кінці введення (наприклад, коли користувач відпускає кнопку миші).
 
 .. rst-class:: classref-item-separator
 

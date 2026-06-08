@@ -7,16 +7,16 @@ AudioEffectPitchShift
 
 **Успадковує:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a pitch-shifting audio effect to an audio bus.
+Додає аудіоефект зміни висоти тону до аудіошини.
 
-Raises or lowers the pitch of the input audio.
+Підвищує або знижує висоту тону вхідного аудіосигналу.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Allows modulation of pitch without modifying speed. All frequencies can be raised or lowered with minimal effect on transients.
+Дозволяє змінювати висоту звуку без зміни швидкості. Усі частоти можна підвищувати або знижувати з мінімальним впливом на перехідні процеси.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ Allows modulation of pitch without modifying speed. All frequencies can be raise
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Аудіоефекти <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -126,7 +126,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectPitchShift_FFTSize>`
 - |void| **set_fft_size**\ (\ value\: :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>`\ )
 - :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **get_fft_size**\ (\ )
 
-The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__ buffer. Higher values smooth out the effect over time, but have greater latency. The effects of this higher latency are especially noticeable on audio signals that have sudden amplitude changes.
+Розмір буфера `швидкого перетворення Фур'є <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__. Більші значення згладжують ефект у часі, але призводять до більшої затримки. Вплив цієї більшої затримки особливо помітний на аудіосигналах, що мають різкі зміни амплітуди.
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Four
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-The pitch scale to use. ``1.0`` is the default pitch and plays sounds unaffected. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` can range from 0 (infinitely low pitch, inaudible) to 16 (16 times higher than the initial pitch).
+Шкала висоти тону, яку слід використовувати. ``1.0`` — це стандартна висота тону, при якій звуки відтворюються без змін. Значення :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` може коливатися від 0 (безмежно низька висота тону, нечутна) до 16 (у 16 разів вища за початкову висоту тону).
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

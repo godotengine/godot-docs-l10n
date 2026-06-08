@@ -194,7 +194,7 @@ enum **DebugVisibilityMode**: :ref:`🔗<enum_GridMap_DebugVisibilityMode>`
 
 :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_DEFAULT** = ``0``
 
-Hide the collisions debug shapes in the editor, and use the debug settings to determine their visibility in game (i.e. :ref:`SceneTree.debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` or :ref:`SceneTree.debug_navigation_hint<class_SceneTree_property_debug_navigation_hint>`).
+在编辑器中隐藏碰撞调试形状，并使用调试设置来决定它们在游戏内的可见性（例如 :ref:`SceneTree.debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` 或 :ref:`SceneTree.debug_navigation_hint<class_SceneTree_property_debug_navigation_hint>`\ ）。
 
 .. _class_GridMap_constant_DEBUG_VISIBILITY_MODE_FORCE_SHOW:
 
@@ -202,7 +202,7 @@ Hide the collisions debug shapes in the editor, and use the debug settings to de
 
 :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_FORCE_SHOW** = ``1``
 
-Always show the collisions debug shapes.
+始终显示碰撞调试形状。
 
 .. _class_GridMap_constant_DEBUG_VISIBILITY_MODE_FORCE_HIDE:
 
@@ -210,7 +210,7 @@ Always show the collisions debug shapes.
 
 :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_FORCE_HIDE** = ``2``
 
-Always hide the collisions debug shapes.
+始终隐藏碰撞调试形状。
 
 .. rst-class:: classref-section-separator
 
@@ -425,7 +425,7 @@ GridMap 作为静态体，意味着它们不会受到重力或是其他力的影
 - |void| **set_collision_visibility_mode**\ (\ value\: :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>`\ )
 - :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **get_collision_visibility_mode**\ (\ )
 
-Show or hide the **GridMap**'s collision shapes. If set to :ref:`DEBUG_VISIBILITY_MODE_DEFAULT<class_GridMap_constant_DEBUG_VISIBILITY_MODE_DEFAULT>`, this depends on the show collision debug settings.
+显示或隐藏 **GridMap** 的碰撞形状（collision shapes）。如果设置为 :ref:`DEBUG_VISIBILITY_MODE_DEFAULT<class_GridMap_constant_DEBUG_VISIBILITY_MODE_DEFAULT>`\ ，则取决于“显示碰撞调试”（show collision debug）的全局设置。
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ Show or hide the **GridMap**'s collision shapes. If set to :ref:`DEBUG_VISIBILIT
 
 :ref:`Vector3i<class_Vector3i>` **get_octant_coords_from_cell_coords**\ (\ cell_coords\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_octant_coords_from_cell_coords>`
 
-Returns the :ref:`Vector3i<class_Vector3i>` octant coordinates of the octant that the cell at ``cell_coords`` belongs to.
+返回 ``cell_coords``\ （单元格坐标）所在的八分体（octant）的 :ref:`Vector3i<class_Vector3i>`\ （三维整数向量）坐标。
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,7 @@ Returns the :ref:`Vector3i<class_Vector3i>` octant coordinates of the octant tha
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_octants_in_bounds**\ (\ bounds\: :ref:`AABB<class_AABB>`\ ) |const| :ref:`🔗<class_GridMap_method_get_octants_in_bounds>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>` octant coordinates that are inside the given ``bounds``, including octants that have no cells in use.
+返回一个包含 :ref:`Vector3i<class_Vector3i>` 卦限坐标的数组，这些卦限位于给定的 ``bounds`` 范围内，包括那些未被使用的单元格所在的卦限。
 
 .. rst-class:: classref-item-separator
 
@@ -684,7 +684,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>` octant coordinates that are 
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_cells_in_octant**\ (\ octant_coords\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_cells_in_octant>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates of non-empty cells inside the octant at ``octant_coords``.
+返回一个包含 :ref:`Vector3i<class_Vector3i>` 的数组，其中包含位于 ``octant_coords``\ （八分体坐标）处的八分体（octant）内所有非空单元格的坐标。
 
 .. rst-class:: classref-item-separator
 
@@ -696,7 +696,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_cells_in_octant_by_item**\ (\ octant_coords\: :ref:`Vector3i<class_Vector3i>`, item\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_cells_in_octant_by_item>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates of cells inside the octant at ``octant_coords`` that use the specified cell ``item``.
+返回一个包含 :ref:`Vector3i<class_Vector3i>` 的数组， 表示位于 ``octant_coords`` 指定卦限内、且使用了指定单元格 ``item`` 的单元格坐标。
 
 .. rst-class:: classref-item-separator
 
@@ -708,7 +708,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_octants**\ (\ ) |const| :ref:`🔗<class_GridMap_method_get_used_octants>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinates of the non-empty octants in the grid map.
+返回一个包含 :ref:`Vector3i<class_Vector3i>` 的数组，其中包含网格地图（grid map）中所有非空八分体（octant）的坐标。
 
 .. rst-class:: classref-item-separator
 
@@ -720,7 +720,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinat
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_octants_by_item**\ (\ item\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_octants_by_item>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinates of the octants that use the specified ``item`` in the grid map.
+返回一个包含 :ref:`Vector3i<class_Vector3i>` 的数组，其中包含网格地图（grid map）中所有使用了指定 ``item``\ （物品）的八分体（octant）的坐标。
 
 .. rst-class:: classref-item-separator
 
@@ -732,7 +732,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinat
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_octants_in_bounds**\ (\ bounds\: :ref:`AABB<class_AABB>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_octants_in_bounds>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinates of non-empty octants that are inside the local ``bounds``.
+返回一个包含 :ref:`Vector3i<class_Vector3i>` 的数组，其中包含在局部 ``bounds``\ （边界范围）内、所有非空八分体（octant）的坐标。
 
 .. rst-class:: classref-item-separator
 

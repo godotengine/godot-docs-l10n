@@ -1928,9 +1928,9 @@ Y/Z 平面中的 :ref:`spread<class_CPUParticles3D_property_spread>` 数量。�
 
 |void| **request_particles_process**\ (\ process_time\: :ref:`float<class_float>`, process_time_residual\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_CPUParticles3D_method_request_particles_process>`
 
-Requests the particles to process for extra process time during a single frame.
+请求粒子在单帧内额外处理指定的时间。
 
-\ ``process_time`` defines the time that the particles will process while emitting is on. ``process_time_residual`` defines the time that particles will process with emitting turned off for the simulation. When combined with :ref:`speed_scale<class_CPUParticles3D_property_speed_scale>` set to ``0.0``, this is useful to be able to seek a particle system timeline.
+\ ``process_time`` 定义了粒子在发射（emitting）开启状态下将要模拟的时间。\ ``process_time_residual`` 定义了粒子在发射关闭状态下，为了维持模拟效果将要额外处理的时间。当把 :ref:`speed_scale<class_CPUParticles3D_property_speed_scale>` 设置为 ``0.0`` 并结合使用时，这个方法非常适用于对粒子系统的时间轴进行‘搜寻’（seek，即跳转到特定时间点）。
 
 .. rst-class:: classref-item-separator
 

@@ -42,7 +42,7 @@ Tutorial
 
 - `Demo di viewport 2D in 3D <https://godotengine.org/asset-library/asset/2803>`__
 
-- `Demo di scala della risoluzione 3D <https://godotengine.org/asset-library/asset/2805>`__
+- `Demo di scaling della risoluzione 3D <https://godotengine.org/asset-library/asset/2805>`__
 
 .. rst-class:: classref-reftable-group
 

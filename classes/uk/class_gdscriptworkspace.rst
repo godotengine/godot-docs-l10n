@@ -9,14 +9,14 @@ GDScriptWorkspace
 
 **Успадковує:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Workspace related language server functionality.
+Функції мовного сервера, пов’язані з робочим простором.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Provides language server functionality related to the workspace.
+Забезпечує роботу мовного сервера, пов’язаного з робочою областю.
 
 .. rst-class:: classref-reftable-group
 
@@ -83,7 +83,7 @@ Provides language server functionality related to the workspace.
 
 :ref:`Dictionary<class_Dictionary>` **generate_script_api**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_GDScriptWorkspace_method_generate_script_api>`
 
-Returns the interface of the script in a machine-readable format.
+Повертає інтерфейс скрипта у машиночитаному форматі.
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ Returns the interface of the script in a machine-readable format.
 
 :ref:`String<class_String>` **get_file_path**\ (\ uri\: :ref:`String<class_String>`\ ) :ref:`🔗<class_GDScriptWorkspace_method_get_file_path>`
 
-Converts a URI to a file path.
+Перетворює URI на шлях до файлу.
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Converts a URI to a file path.
 
 :ref:`String<class_String>` **get_file_uri**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_GDScriptWorkspace_method_get_file_uri>`
 
-Converts a file path to a URI.
+Перетворює шлях до файлу в URI.
 
 .. rst-class:: classref-item-separator
 

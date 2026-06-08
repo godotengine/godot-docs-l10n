@@ -116,7 +116,7 @@ El brillo o suavidad del material.
 - |void| **set_spec_gloss_img**\ (\ value\: :ref:`Image<class_Image>`\ )
 - :ref:`Image<class_Image>` **get_spec_gloss_img**\ (\ )
 
-The specular-glossiness texture.
+La textura de brillo especular.
 
 .. rst-class:: classref-item-separator
 

@@ -287,7 +287,7 @@ enum **EyeVisibility**: :ref:`🔗<enum_OpenXRCompositionLayer_EyeVisibility>`
 
 :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>` **EYE_VISIBILITY_BOTH** = ``0``
 
-The layer is visible to both the left and right eyes.
+该图层对左眼和右眼均可见。
 
 .. _class_OpenXRCompositionLayer_constant_EYE_VISIBILITY_LEFT:
 
@@ -295,7 +295,7 @@ The layer is visible to both the left and right eyes.
 
 :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>` **EYE_VISIBILITY_LEFT** = ``1``
 
-The layer is visible only to the left eye.
+该层仅对左眼可见。
 
 .. _class_OpenXRCompositionLayer_constant_EYE_VISIBILITY_RIGHT:
 
@@ -303,7 +303,7 @@ The layer is visible only to the left eye.
 
 :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>` **EYE_VISIBILITY_RIGHT** = ``2``
 
-The layer is visible only to the right eye.
+该图层仅对右眼可见。
 
 .. rst-class:: classref-section-separator
 
@@ -380,9 +380,9 @@ The layer is visible only to the right eye.
 - |void| **set_eye_visibility**\ (\ value\: :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>`\ )
 - :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>` **get_eye_visibility**\ (\ )
 
-The eye(s) the composition layer is visible to.
+该合成层可见的眼镜（视觉）范围。
 
-\ **Note:** Not all composition layer types or runtimes support restricting visibility to a single eye.
+\ **注意：**\ \*\* 并非所有合成层类型或运行时环境都支持将可见性限制在单只眼睛上。
 
 .. rst-class:: classref-item-separator
 

@@ -209,7 +209,7 @@ enum **TreeArea**: :ref:`🔗<enum_EditorVCSInterface_TreeArea>`
 
 :ref:`bool<class_bool>` **_allow_amends**\ (\ ) |virtual| :ref:`🔗<class_EditorVCSInterface_private_method__allow_amends>`
 
-Returns whether or not the plugin allows commit amends.
+返回该插件是否允许对提交进行修正（amend）。
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ Returns whether or not the plugin allows commit amends.
 
 |void| **_commit**\ (\ msg\: :ref:`String<class_String>`, amend\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorVCSInterface_private_method__commit>`
 
-Commits the currently staged changes and applies the commit ``msg`` to the resulting commit. If ``amend`` is ``true`` the commit will modify the most recent commit instead.
+提交当前已暂存（staged）的更改，并将参数 ``msg`` 作为提交信息应用到生成的提交记录中。如果参数 ``amend`` 为 ``true``\ ，则该操作将会修改最近一次的提交记录（而不是生成一个新的提交）。
 
 .. rst-class:: classref-item-separator
 

@@ -62,7 +62,7 @@ AnimationLibrary
 
 **animation_added**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_added>`
 
-Emitted when an :ref:`Animation<class_Animation>` is added, under the key ``anim_name``.
+Видається при додаванні :ref:`Animation<class_Animation>` під ключем ``anim_name``.
 
 .. rst-class:: classref-item-separator
 
@@ -74,9 +74,9 @@ Emitted when an :ref:`Animation<class_Animation>` is added, under the key ``anim
 
 **animation_changed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_changed>`
 
-Emitted when there's a change in one of the animations, e.g. tracks are added, moved or have changed paths. ``anim_name`` is the key of the animation that was changed.
+Видається при зміні однієї з анімацій, наприклад, коли додаються, переміщуються або змінюють траєкторію доріжки. ``anim_name`` — це ключ анімації, яка зазнала змін.
 
-See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts as a relay for.
+Див. також :ref:`Resource.changed<class_Resource_signal_changed>`, для якого цей сигнал виступає ретранслятором.
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts
 
 **animation_removed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_removed>`
 
-Emitted when an :ref:`Animation<class_Animation>` stored with the key ``anim_name`` is removed.
+Видається, коли анімація, збережена під ключем ``anim_name``, видаляється.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ Emitted when an :ref:`Animation<class_Animation>` stored with the key ``anim_nam
 
 **animation_renamed**\ (\ old_name\: :ref:`StringName<class_StringName>`, new_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_renamed>`
 
-Emitted when the key for an :ref:`Animation<class_Animation>` is changed, from ``old_name`` to ``new_name``.
+Видається при зміні імені параметра :ref:`Animation<class_Animation>` з ``old_name`` на ``new_name``.
 
 .. rst-class:: classref-section-separator
 

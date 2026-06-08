@@ -487,7 +487,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Node_ProcessMode>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_PAUSABLE** = ``1``
 
-Processes when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``false``. This is the inverse of :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>`, and the default for the root node.
+仅在 :ref:`SceneTree.paused<class_SceneTree_property_paused>`\ （场景树暂停状态）为 ``false`` 时进行处理。这是 :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>`\ （暂停时处理）的反向模式，也是根节点的默认设置。
 
 .. _class_Node_constant_PROCESS_MODE_WHEN_PAUSED:
 
@@ -495,7 +495,7 @@ Processes when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``fal
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_WHEN_PAUSED** = ``2``
 
-Processes **only** when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``true``. This is the inverse of :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`.
+**仅**\ 在 :ref:`SceneTree.paused<class_SceneTree_property_paused>` 为 ``true`` 时进行处理。这是 :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>` 的反向模式。
 
 .. _class_Node_constant_PROCESS_MODE_ALWAYS:
 
@@ -503,7 +503,7 @@ Processes **only** when :ref:`SceneTree.paused<class_SceneTree_property_paused>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_ALWAYS** = ``3``
 
-Always processes. Keeps processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
+始终进行处理。保持处理状态，无视（忽略）\ :ref:`SceneTree.paused<class_SceneTree_property_paused>`\ （场景树暂停状态）。这是 :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`\ （禁用处理）的反向模式。
 
 .. _class_Node_constant_PROCESS_MODE_DISABLED:
 
@@ -511,7 +511,7 @@ Always processes. Keeps processing, ignoring :ref:`SceneTree.paused<class_SceneT
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_DISABLED** = ``4``
 
-Never processes. Completely disables processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
+从不进行处理。完全禁用处理，无视（忽略）\ :ref:`SceneTree.paused<class_SceneTree_property_paused>`\ （场景树暂停状态）。这是 :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`\ （始终处理）的反向模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1067,9 +1067,9 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 **NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED** = ``1013`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED>`
 
-Notification received when the output max linear value returned by :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed.
+当窗口的输出最大线性值（由 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 返回）发生改变时收到的通知。
 
-This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen.
+当启用或禁用 HDR 输出，以及窗口的任何 HDR 输出亮度值发生改变时（例如玩家调整屏幕亮度设置或将窗口移动到另一个显示器上），都会触发此通知。
 
 .. _class_Node_constant_NOTIFICATION_OS_MEMORY_WARNING:
 
@@ -1185,7 +1185,7 @@ This occurs when HDR output is enabled or disabled and when any HDR output lumin
 
 **NOTIFICATION_APPLICATION_PIP_MODE_ENTERED** = ``2019`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_ENTERED>`
 
-Notification received when the application enters picture-in-picture mode.
+当应用程序进入画中画模式时收到的通知。
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED:
 
@@ -1193,7 +1193,7 @@ Notification received when the application enters picture-in-picture mode.
 
 **NOTIFICATION_APPLICATION_PIP_MODE_EXITED** = ``2020`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED>`
 
-Notification received when the application exits picture-in-picture mode.
+当应用程序退出画中画模式时收到的通知。
 
 .. _class_Node_constant_NOTIFICATION_ACCESSIBILITY_UPDATE:
 
@@ -1969,17 +1969,17 @@ Notification received when the application exits picture-in-picture mode.
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **find_children**\ (\ pattern\: :ref:`String<class_String>`, type\: :ref:`String<class_String>` = "", recursive\: :ref:`bool<class_bool>` = true, owned\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Node_method_find_children>`
 
-Finds all descendants of this node whose names match ``pattern``, returning an empty :ref:`Array<class_Array>` if no match is found. The matching is done against node names, *not* their paths, through :ref:`String.match()<class_String_method_match>`. As such, it is case-sensitive, ``"*"`` matches zero or more characters, and ``"?"`` matches any single character.
+查找此节点下所有名称符合 ``pattern``\ （模式）的后代节点，如果未找到匹配项，则返回一个空的 :ref:`Array<class_Array>`\ （数组）。匹配是通过 :ref:`String.match()<class_String_method_match>` 针对节点名称进行的，\ *不是*\ 针对它们的路径。因此，它是区分大小写的，\ ``"*"`` 匹配零个或多个字符，而 ``"?"`` 匹配任意单个字符。
 
-If ``type`` is not empty, only descendants inheriting from ``type`` are included (see :ref:`Object.is_class()<class_Object_method_is_class>`).
+如果 ``type``\ （类型）不为空，则只包含继承自 ``type`` 的后代（详见 :ref:`Object.is_class()<class_Object_method_is_class>`\ ）。
 
-If ``recursive`` is ``false``, only this node's direct children are checked. Nodes are checked in tree order, so this node's first direct child is checked first, then its own direct children, etc., before moving to the second direct child, and so on. Internal children are also included in the search (see ``internal`` parameter in :ref:`add_child()<class_Node_method_add_child>`).
+如果 ``recursive``\ （递归）为 ``false``\ ，则只检查此节点的直接子节点。节点按树形顺序进行检查，因此会先检查此节点的第一个直接子节点，然后是它自己的直接子节点，依此类推，之后才会去检查第二个直接子节点，以此类推。内部子节点也会包含在搜索中（详见 :ref:`add_child()<class_Node_method_add_child>` 中的 ``internal`` 参数）。
 
-If ``owned`` is ``true``, only descendants with a valid :ref:`owner<class_Node_property_owner>` node are checked.
+如果 ``owned``\ （拥有者）为 ``true``\ ，则只检查具有有效 :ref:`owner<class_Node_property_owner>`\ （拥有者）节点的后代。
 
-\ **Note:** This method can be very slow. Consider storing references to the found nodes in a variable.
+\ **注意：** 此方法可能非常缓慢。建议将找到的节点引用存储在变量中。
 
-\ **Note:** To find a single descendant node matching a pattern, see :ref:`find_child()<class_Node_method_find_child>`.
+\ **注意：** 如果要查找单个符合模式的后代节点，请参阅 :ref:`find_child()<class_Node_method_find_child>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2899,11 +2899,11 @@ If ``owned`` is ``true``, only descendants with a valid :ref:`owner<class_Node_p
 
 |void| **reparent**\ (\ new_parent\: :ref:`Node<class_Node>`, keep_global_transform\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Node_method_reparent>`
 
-Changes the parent of this **Node** to the ``new_parent``. The node needs to already have a parent. The node's :ref:`owner<class_Node_property_owner>` is preserved if its owner is still reachable from the new location (i.e., the node is still a descendant of the new parent after the operation).
+将当前 **Node**\ （节点）的父级更改为 ``new_parent``\ （新父节点）。该节点在调用此方法前必须已经拥有一个父节点。如果节点的 :ref:`owner<class_Node_property_owner>`\ （所有者）在更改后依然可以从新位置访问到（也就是说，操作完成后该节点依然是新父节点的后代），那么它的所有者将会被保留。
 
-If ``keep_global_transform`` is ``true``, the node's global transform will be preserved if supported. :ref:`Node2D<class_Node2D>`, :ref:`Node3D<class_Node3D>` and :ref:`Control<class_Control>` support this argument (but :ref:`Control<class_Control>` keeps only position).
+如果 ``keep_global_transform``\ （保持全局变换）设置为 ``true``\ ，那么节点的全局变换（Global Transform）将会被保留（前提是支持该功能）。\ :ref:`Node2D<class_Node2D>`\ 、\ :ref:`Node3D<class_Node3D>` 和 :ref:`Control<class_Control>` 都支持这个参数（不过 :ref:`Control<class_Control>` 只会保留位置信息）。
 
-\ **Warning:** If :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` is enabled and reparenting causes a large change in global transform, the object may appear to move from its old position to its new one over the next physics tick. To avoid this, call :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` after reparenting.
+\ **警告：** 如果启用了 :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>`\ （物理插值）并且重新设置父级导致了全局变换发生剧烈变化，物体可能会在下一个物理帧中，从旧位置“平滑移动”到新位置。为了避免这种视觉上的异常，请在重新设置父级后调用 :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` 方法。
 
 .. rst-class:: classref-item-separator
 

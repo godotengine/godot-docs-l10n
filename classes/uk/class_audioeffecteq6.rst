@@ -7,9 +7,9 @@ AudioEffectEQ6
 
 **Успадковує:** :ref:`AudioEffectEQ<class_AudioEffectEQ>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a 6-band equalizer audio effect to an audio bus.
+Додає до аудіошини аудіоефект у вигляді 6-смугового еквалайзера.
 
-Gives you control over frequencies from 32 Hz to 10000 Hz. Each frequency can be modulated between -60/+24 dB.
+Дозволяє регулювати частоти в діапазоні від 32 Гц до 10 000 Гц. Кожна частота може модулюватися в діапазоні від -60 до +24 дБ.
 
 .. rst-class:: classref-introduction-group
 
@@ -39,7 +39,7 @@ Gives you control over frequencies from 32 Hz to 10000 Hz. Each frequency can be
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Аудіоефекти <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

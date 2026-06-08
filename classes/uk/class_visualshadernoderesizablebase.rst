@@ -1,0 +1,63 @@
+:github_url: hide
+
+.. _class_VisualShaderNodeResizableBase:
+
+VisualShaderNodeResizableBase
+=============================
+
+**Успадковує:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+
+**Успадковано від:** :ref:`VisualShaderNodeCurveTexture<class_VisualShaderNodeCurveTexture>`, :ref:`VisualShaderNodeCurveXYZTexture<class_VisualShaderNodeCurveXYZTexture>`, :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>`, :ref:`VisualShaderNodeGroupBase<class_VisualShaderNodeGroupBase>`
+
+Базовий клас для багаторазових вузлів в графі візуального відтінку.
+
+.. rst-class:: classref-introduction-group
+
+Опис
+--------
+
+Увімкнені вузли мають ручку, яка дозволяє користувачеві регулювати розмір, як необхідний.
+
+.. rst-class:: classref-reftable-group
+
+Властивості
+----------------------
+
+.. table::
+   :widths: auto
+
+   +-------------------------------+----------------------------------------------------------------+-------------------+
+   | :ref:`Vector2<class_Vector2>` | :ref:`size<class_VisualShaderNodeResizableBase_property_size>` | ``Vector2(0, 0)`` |
+   +-------------------------------+----------------------------------------------------------------+-------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описи властивостей
+------------------------------------
+
+.. _class_VisualShaderNodeResizableBase_property_size:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2<class_Vector2>` **size** = ``Vector2(0, 0)`` :ref:`🔗<class_VisualShaderNodeResizableBase_property_size>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
+- :ref:`Vector2<class_Vector2>` **get_size**\ (\ )
+
+Розмір вузла в графі візуального відтінку.
+
+.. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
+.. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
+.. |const| replace:: :abbr:`const (Цей метод не має побічних ефектів. Не змінює ніяку змінну екземпляра об'єкта.)`
+.. |vararg| replace:: :abbr:`vararg (Цей метод приймає будь-яке число аргументів після описаних тут.)`
+.. |constructor| replace:: :abbr:`constructor (Цей метод використовується для побудови типів.)`
+.. |static| replace:: :abbr:`static (Цей метод не потребує екземпляра для виклику, його можна викликати безпосередньо за допомогою назви класу.)`
+.. |operator| replace:: :abbr:`operator (Цей метод описує дійсний оператор для взаємодії з цим типом як з лівим операндом.)`
+.. |bitfield| replace:: :abbr:`BitField (Це значення є цілим числом, складеним у вигляді бітової маски з наступних прапорів.)`
+.. |void| replace:: :abbr:`void (Значення не повертається.)`

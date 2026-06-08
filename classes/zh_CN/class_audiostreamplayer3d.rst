@@ -146,7 +146,7 @@ enum **AttenuationModel**: :ref:`🔗<enum_AudioStreamPlayer3D_AttenuationModel>
 
 :ref:`AttenuationModel<enum_AudioStreamPlayer3D_AttenuationModel>` **ATTENUATION_INVERSE_DISTANCE** = ``0``
 
-根据距离对响度进行线性衰减。
+响度随线性距离衰减。
 
 .. _class_AudioStreamPlayer3D_constant_ATTENUATION_INVERSE_SQUARE_DISTANCE:
 
@@ -154,7 +154,7 @@ enum **AttenuationModel**: :ref:`🔗<enum_AudioStreamPlayer3D_AttenuationModel>
 
 :ref:`AttenuationModel<enum_AudioStreamPlayer3D_AttenuationModel>` **ATTENUATION_INVERSE_SQUARE_DISTANCE** = ``1``
 
-根据距离对响度进行平方衰减。
+响度随平方距离衰减。
 
 .. _class_AudioStreamPlayer3D_constant_ATTENUATION_LOGARITHMIC:
 
@@ -162,7 +162,7 @@ enum **AttenuationModel**: :ref:`🔗<enum_AudioStreamPlayer3D_AttenuationModel>
 
 :ref:`AttenuationModel<enum_AudioStreamPlayer3D_AttenuationModel>` **ATTENUATION_LOGARITHMIC** = ``2``
 
-根据距离对响度进行对数衰减。
+响度随对数距离衰减。
 
 .. _class_AudioStreamPlayer3D_constant_ATTENUATION_DISABLED:
 
@@ -170,7 +170,7 @@ enum **AttenuationModel**: :ref:`🔗<enum_AudioStreamPlayer3D_AttenuationModel>
 
 :ref:`AttenuationModel<enum_AudioStreamPlayer3D_AttenuationModel>` **ATTENUATION_DISABLED** = ``3``
 
-不根据距离衰减响度。与 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 不同，声音仍会在位置上被听到。\ :ref:`ATTENUATION_DISABLED<class_AudioStreamPlayer3D_constant_ATTENUATION_DISABLED>` 可以与大于 ``0.0`` 的 :ref:`max_distance<class_AudioStreamPlayer3D_property_max_distance>` 值结合使用，以实现线性衰减，限制在定义的球体大小。
+响度不随距离衰减。与 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 不同，声音仍具有空间定位感。\ :ref:`ATTENUATION_DISABLED<class_AudioStreamPlayer3D_constant_ATTENUATION_DISABLED>` 可与大于 ``0.0`` 的 :ref:`max_distance<class_AudioStreamPlayer3D_property_max_distance>` 值结合使用，从而实现一种限制在定义的球体大小范围内的线性衰减效果。
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioStreamPlayer3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_AudioStreamPlayer3D_DopplerTracking>` **DOPPLER_TRACKING_IDLE_STEP** = ``1``
 
-在过程帧期间执行多普勒跟踪（请参阅 :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`\ ）。
+在渲染帧期间执行多普勒跟踪（请参阅 :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`\ ）。
 
 .. _class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_PHYSICS_STEP:
 
@@ -349,7 +349,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioStreamPlayer3D_DopplerTracking>`
 - |void| **set_emission_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_angle**\ (\ )
 
-音频到达听者而不衰减的角度。
+音频到达侦听者而不衰减的角度。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioStreamPlayer3D_DopplerTracking>`
 - |void| **set_emission_angle_filter_attenuation_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_angle_filter_attenuation_db**\ (\ )
 
-听者在 :ref:`emission_angle_degrees<class_AudioStreamPlayer3D_property_emission_angle_degrees>` 之外且 :ref:`emission_angle_enabled<class_AudioStreamPlayer3D_property_emission_angle_enabled>` 被设置时使用的衰减系数，单位是分贝。
+侦听者在 :ref:`emission_angle_degrees<class_AudioStreamPlayer3D_property_emission_angle_degrees>` 之外且 :ref:`emission_angle_enabled<class_AudioStreamPlayer3D_property_emission_angle_enabled>` 被设置时使用的衰减系数，单位是分贝。
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioStreamPlayer3D_DopplerTracking>`
 - |void| **set_max_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_db**\ (\ )
 
-设置声级的绝对最大值，以分贝为单位。
+设置声音电平的绝对最大值，以分贝为单位。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioStreamPlayer3D_DopplerTracking>`
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-音频的音高和节奏，作为音频样本的采样率的倍数。
+音频的音高和拍速，作为音频样本的采样率的倍数。
 
 .. rst-class:: classref-item-separator
 
@@ -576,7 +576,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioStreamPlayer3D_DopplerTracking>`
 - |void| **set_volume_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_db**\ (\ )
 
-不受衰减影响的基础声级，单位为分贝。
+不受衰减影响的基础声音电平，单位为分贝。
 
 .. rst-class:: classref-item-separator
 
@@ -593,7 +593,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioStreamPlayer3D_DopplerTracking>`
 - |void| **set_volume_linear**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_linear**\ (\ )
 
-线性形式的不受衰减影响的基础声级。
+线性形式的不受衰减影响的基础声音电平。
 
 \ **注意：**\ 该成员会帮助修改 :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>`\ 。返回的值等价于使用 :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>` 调用 :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` 的结果。设置该成员等价于将 :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>` 设置为使用新值调用 :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>` 的结果。
 

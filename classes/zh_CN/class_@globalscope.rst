@@ -714,7 +714,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_XYZ** = ``0``
 
-Specifies that Euler angles should be in intrinsic XYZ order. When composing, the rotations happen around the local X, Y, and Z axes, in that order. When decomposing, the order is reversed, first Z, then Y, and X last.
+指定欧拉角应按内旋 XYZ 顺序排列。组合时旋转依次绕局部 X、Y、Z 轴的顺序执行。分解时顺序相反，先 Z、再 Y、最后 X。
 
 .. _class_@GlobalScope_constant_EULER_ORDER_XZY:
 
@@ -722,7 +722,7 @@ Specifies that Euler angles should be in intrinsic XYZ order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_XZY** = ``1``
 
-Specifies that Euler angles should be in intrinsic XZY order. When composing, the rotations happen around the local X, Z, and Y axes, in that order. When decomposing, the order is reversed, first Y, then Z, and X last.
+指定欧拉角应按内旋 XZY 顺序排列。组合时旋转依次绕局部 X、Z、Y 轴的顺序执行。分解时顺序相反，先 Y、再 Z、最后 X。
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YXZ:
 
@@ -730,7 +730,7 @@ Specifies that Euler angles should be in intrinsic XZY order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YXZ** = ``2``
 
-Specifies that Euler angles should be in intrinsic YXZ order. When composing, the rotations happen around the local Y, X, and Z axes, in that order. When decomposing, the order is reversed, first Z, then X, and Y last.
+指定欧拉角应按内旋 YXZ 顺序排列。组合时旋转依次绕局部 Y、X、Z 轴的顺序执行。分解时顺序相反，先 Z、再 X、最后 Y。
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YZX:
 
@@ -738,7 +738,7 @@ Specifies that Euler angles should be in intrinsic YXZ order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YZX** = ``3``
 
-Specifies that Euler angles should be in intrinsic YZX order. When composing, the rotations happen around the local Y, Z, and X axes, in that order. When decomposing, the order is reversed, first X, then Z, and Y last.
+指定欧拉角应按内旋 YZX 顺序排列。组合时旋转依次绕局部 Y、Z、X 轴的顺序执行。分解时顺序相反，先 X、再 Z、最后 Y。
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZXY:
 
@@ -746,7 +746,7 @@ Specifies that Euler angles should be in intrinsic YZX order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_ZXY** = ``4``
 
-Specifies that Euler angles should be in intrinsic ZXY order. When composing, the rotations happen around the local Z, X, and Y axes, in that order. When decomposing, the order is reversed, first Y, then X, and Z last.
+指定欧拉角应按内旋 ZXY 顺序排列。组合时旋转依次绕局部 Z、X、Y 轴的顺序执行。分解时顺序相反，先 Y、再 X、最后 Z。
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZYX:
 
@@ -754,7 +754,7 @@ Specifies that Euler angles should be in intrinsic ZXY order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_ZYX** = ``5``
 
-Specifies that Euler angles should be in intrinsic ZYX order. When composing, the rotations happen around the local Z, Y, and X axes, in that order. When decomposing, the order is reversed, first X, then Y, and Z last.
+指定欧拉角应按内旋 ZYX 顺序排列。组合时旋转依次绕局部 Z、Y、X 轴的顺序执行。分解时顺序相反，先 X、再 Y、最后 Z。
 
 .. rst-class:: classref-item-separator
 
@@ -2326,7 +2326,7 @@ flags **KeyModifierMask**: :ref:`🔗<enum_@GlobalScope_KeyModifierMask>`
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_CODE_MASK** = ``8388607``
 
-Bit mask with all bits enabled except for modifier keys. Apply it to remove modifiers.
+这是一个除了修饰键之外、所有位都已启用的位掩码。使用它来剥离修饰键。
 
 ::
 
@@ -2340,7 +2340,7 @@ Bit mask with all bits enabled except for modifier keys. Apply it to remove modi
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_MODIFIER_MASK** = ``2130706432``
 
-Bit mask with all modifier bits enabled. Apply it to isolate modifiers.
+一个包含所有修饰键位的位掩码。使用它来提取修饰键。
 
 ::
 
@@ -2772,7 +2772,7 @@ enum **JoyButton**: :ref:`🔗<enum_@GlobalScope_JoyButton>`
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC2** = ``21``
 
-Game controller SDL miscellaneous button. Used by Nintendo Switch 2 Pro Controller and Horipad Steam controllers.
+游戏手柄 SDL 杂项按钮。适用于任天堂 Switch 2 Pro 手柄以及 Horipad Steam 手柄。
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC3:
 
@@ -2780,7 +2780,7 @@ Game controller SDL miscellaneous button. Used by Nintendo Switch 2 Pro Controll
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC3** = ``22``
 
-Game controller SDL miscellaneous button.
+游戏控制器 SDL 杂项按钮。
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC4:
 
@@ -2788,7 +2788,7 @@ Game controller SDL miscellaneous button.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC4** = ``23``
 
-Game controller SDL miscellaneous button.
+游戏控制器 SDL 杂项按钮。
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC5:
 
@@ -2796,7 +2796,7 @@ Game controller SDL miscellaneous button.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC5** = ``24``
 
-Game controller SDL miscellaneous button.
+游戏控制器 SDL 杂项按钮。
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC6:
 
@@ -2804,7 +2804,7 @@ Game controller SDL miscellaneous button.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC6** = ``25``
 
-Game controller SDL miscellaneous button.
+游戏控制器 SDL 杂项按钮。
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_SDL_MAX:
 
@@ -3498,7 +3498,7 @@ Bug 错误，由方法中的实现问题引起。
 
 :ref:`Error<enum_@GlobalScope_Error>` **ERR_PRINTER_ON_FIRE** = ``48``
 
-Printer on fire error (this is an easter egg, no built-in methods return this error code).
+打印机起火错误（这是个彩蛋，引擎中没有内置方法会返回此错误码）。
 
 .. rst-class:: classref-item-separator
 
@@ -3516,7 +3516,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_NONE** = ``0``
 
-The property has no hint for the editor. However, the hint string is still read, which can be used to specify a suffix for a property that has no range limit (see :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`'s description).
+该属性在编辑器中没有设置提示（Hint）。不过，提示字符串（hint string）依然会被读取，这可以用来为那些没有范围限制的属性指定一个后缀（详见 :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` 的描述）。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_RANGE:
 
@@ -3524,11 +3524,11 @@ The property has no hint for the editor. However, the hint string is still read,
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_RANGE** = ``1``
 
-Hints that an :ref:`int<class_int>`, :ref:`float<class_float>`, or packed/typed :ref:`Array<class_Array>` property containing :ref:`int<class_int>` or :ref:`float<class_float>` types should be within a range specified via the hint string ``"min,max"`` or ``"min,max,step"``. The hint string can optionally include ``"or_greater"`` and/or ``"or_less"`` to allow manual input going respectively above the max or below the min values.
+提示 :ref:`int<class_int>`\ ，\ :ref:`float<class_float>`\ ，或紧缩/类型化 :ref:`Array<class_Array>` 属性中包含的 :ref:`int<class_int>`\ 、\ :ref:`float<class_float>` 类型应处于指定范围内。范围通过提示字符串 ``"最小值,最大值"`` 或 ``"最小值,最大值,步长"`` 指定。该提示字符串可选包含 ``"or_greater"`` 和/或 ``"or_less"``\ ，从而允许手动输入值分别超出最大值或最小值。
 
-\ **Example:** ``"-360,360,1,or_greater,or_less"``.
+\ **示例：**\ ``"-360,360,1,or_greater,or_less"``\ 。
 
-Additionally, other keywords can be included: ``"exp"`` for exponential range editing, ``"radians_as_degrees"`` for editing radian angles in degrees (the range values are also in degrees), ``"degrees"`` to hint at an angle, ``"prefer_slider"`` to show the slider for integers, ``"hide_control"`` to hide the slider or up-down arrows, and ``"suffix:px/s"`` to display a suffix indicating the value's unit (e.g. ``px/s`` for pixels per second).
+此外，还可以包含其他关键字：\ ``"exp"`` 表示按指数范围编辑；\ ``"radians_as_degrees"`` 表示以角度编辑弧度（同时范围值也以角度为单位）；\ ``"degrees"`` 表示属性为角度；\ ``"prefer_slider"`` 表示对整数显示滑块；\ ``"hide_control"`` 表示隐藏滑块或上下箭头；\ ``"suffix:unit"`` 表示显示单位后缀（例如 ``"suffix:px/s"`` 表示像素每秒）。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM:
 
@@ -3556,7 +3556,7 @@ Additionally, other keywords can be included: ``"exp"`` for exponential range ed
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_EXP_EASING** = ``4``
 
-Hints that a :ref:`float<class_float>` property should be edited using a curve editor showing an exponential easing function. The hint string can include ``"attenuation"`` to flip the curve horizontally and/or ``"positive_only"`` to exclude in/out easing and limit values to be greater than or equal to zero. This displays differently to a property that uses :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` with the ``"exp"`` keyword, as it's edited with a slider instead of a curve editor.
+这个提示表明，一个 :ref:`float<class_float>` 类型的属性应该使用曲线编辑器来进行编辑，并且默认会展示一个指数缓动函数。该提示字符串中可以包含 ``"attenuation"`` 来将曲线水平翻转，和/或包含 ``"positive_only"`` 来排除入/出（in/out）缓动，并将数值限制为大于或等于零。它的显示方式与使用了 ``"exp"`` 关键字的 :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` 属性不同，因为后者是通过滑块（slider）而不是曲线编辑器来编辑的。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LINK:
 
@@ -3564,7 +3564,7 @@ Hints that a :ref:`float<class_float>` property should be edited using a curve e
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_LINK** = ``5``
 
-Hints that a vector property should allow its components to be linked. For example, this allows :ref:`Vector2.x<class_Vector2_property_x>` and :ref:`Vector2.y<class_Vector2_property_y>` to be edited together. This hint is supported on :ref:`Vector2<class_Vector2>`, :ref:`Vector2i<class_Vector2i>`, :ref:`Vector3<class_Vector3>`, :ref:`Vector3i<class_Vector3i>`, :ref:`Vector4<class_Vector4>`, and :ref:`Vector4i<class_Vector4i>`. The hint string can be used to specify a suffix indicating each value's unit with the ``"suffix:px/s"`` syntax.
+该提示表明，向量属性应该允许将其各个分量关联（或锁定）起来。例如，这允许将 :ref:`Vector2.x<class_Vector2_property_x>` 和 :ref:`Vector2.y<class_Vector2_property_y>` 放在一起进行编辑。该提示支持 :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector2i<class_Vector2i>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector3i<class_Vector3i>`\ 、\ :ref:`Vector4<class_Vector4>` 和 :ref:`Vector4i<class_Vector4i>`\ 。此外，提示字符串还可以用来通过 ``"suffix:px/s"`` 这样的语法，为每个数值指定表示单位的后缀。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_FLAGS:
 
@@ -3726,76 +3726,76 @@ Hints that a vector property should allow its components to be linked. For examp
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_TYPE_STRING** = ``23``
 
-If a property is :ref:`String<class_String>`, hints that the property represents a particular type (class). This allows to select a type from the create dialog. The property will store the selected type as a string.
+如果属性为 :ref:`String<class_String>`\ ，则提示该属性代表特定的类型（类）。这样就能使用创建对话框选择类型。该属性中存放的是所选类型，是一个字符串。
 
-If a property is :ref:`Array<class_Array>`, hints the editor how to show elements. The ``hint_string`` must encode nested types using ``":"`` and ``"/"``.
+如果属性为 :ref:`Array<class_Array>`\ ，则提示编辑器如何显示其中的元素。\ ``hint_string`` 必须使用 ``":"`` 和 ``"/"`` 对内嵌的类型进行编码。
 
-If a property is :ref:`Dictionary<class_Dictionary>`, hints the editor how to show elements. The ``hint_string`` is the same as :ref:`Array<class_Array>`, with a ``";"`` separating the key and value.
+如果属性为 :ref:`Dictionary<class_Dictionary>`\ ，则提示编辑器如何显示其中的元素。\ ``hint_string`` 与 :ref:`Array<class_Array>` 相同，使用 ``";"`` 分隔键和值。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Array of elem_type.
+    # elem_type 数组。
     hint_string = "%d:" % [elem_type]
     hint_string = "%d/%d:%s" % [elem_type, elem_hint, elem_hint_string]
-    # Two-dimensional array of elem_type (array of arrays of elem_type).
+    # elem_type 二维数组（elem_type 数组的数组）。
     hint_string = "%d:%d:" % [TYPE_ARRAY, elem_type]
     hint_string = "%d:%d/%d:%s" % [TYPE_ARRAY, elem_type, elem_hint, elem_hint_string]
-    # Three-dimensional array of elem_type (array of arrays of arrays of elem_type).
+    # elem_type 三维数组（elem_type 数组的数组的数组）。
     hint_string = "%d:%d:%d:" % [TYPE_ARRAY, TYPE_ARRAY, elem_type]
     hint_string = "%d:%d:%d/%d:%s" % [TYPE_ARRAY, TYPE_ARRAY, elem_type, elem_hint, elem_hint_string]
 
  .. code-tab:: csharp
 
-    // Array of elemType.
+    // elem_type 数组。
     hintString = $"{elemType:D}:";
     hintString = $"{elemType:D}/{elemHint:D}:{elemHintString}";
-    // Two-dimensional array of elemType (array of arrays of elemType).
+    // elem_type 二维数组（elem_type 数组的数组）。
     hintString = $"{Variant.Type.Array:D}:{elemType:D}:";
     hintString = $"{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
-    // Three-dimensional array of elemType (array of arrays of arrays of elemType).
+    // elem_type 三维数组（elem_type 数组的数组的数组）。
     hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}:";
     hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
 
 
 
-\ **Examples:**\ 
+\ **示例：**\ 
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    hint_string = "%d:" % [TYPE_INT] # Array of integers.
-    hint_string = "%d/%d:1,10,1" % [TYPE_INT, PROPERTY_HINT_RANGE] # Array of integers (in range from 1 to 10).
-    hint_string = "%d/%d:Zero,One,Two" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array of integers (an enum).
-    hint_string = "%d/%d:Zero,One,Three:3,Six:6" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array of integers (an enum).
-    hint_string = "%d/%d:*.png" % [TYPE_STRING, PROPERTY_HINT_FILE] # Array of strings (file paths).
-    hint_string = "%d/%d:Texture2D" % [TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Array of textures.
+    hint_string = "%d:" % [TYPE_INT] # 整数数组。
+    hint_string = "%d/%d:1,10,1" % [TYPE_INT, PROPERTY_HINT_RANGE] # 整数数组（范围为 1 到 10）。
+    hint_string = "%d/%d:Zero,One,Two" % [TYPE_INT, PROPERTY_HINT_ENUM] # 整数数组（枚举）。
+    hint_string = "%d/%d:Zero,One,Three:3,Six:6" % [TYPE_INT, PROPERTY_HINT_ENUM] # 整数数组（枚举）。
+    hint_string = "%d/%d:*.png" % [TYPE_STRING, PROPERTY_HINT_FILE] # 字符串数组（文件路径）。
+    hint_string = "%d/%d:Texture2D" % [TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # 纹理数组。
 
-    hint_string = "%d:%d:" % [TYPE_ARRAY, TYPE_FLOAT] # Two-dimensional array of floats.
-    hint_string = "%d:%d/%d:" % [TYPE_ARRAY, TYPE_STRING, PROPERTY_HINT_MULTILINE_TEXT] # Two-dimensional array of multiline strings.
-    hint_string = "%d:%d/%d:-1,1,0.1" % [TYPE_ARRAY, TYPE_FLOAT, PROPERTY_HINT_RANGE] # Two-dimensional array of floats (in range from -1 to 1).
-    hint_string = "%d:%d/%d:Texture2D" % [TYPE_ARRAY, TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Two-dimensional array of textures.
+    hint_string = "%d:%d:" % [TYPE_ARRAY, TYPE_FLOAT] # 浮点数二维数组。
+    hint_string = "%d:%d/%d:" % [TYPE_ARRAY, TYPE_STRING, PROPERTY_HINT_MULTILINE_TEXT] # 多行字符串二维数组。
+    hint_string = "%d:%d/%d:-1,1,0.1" % [TYPE_ARRAY, TYPE_FLOAT, PROPERTY_HINT_RANGE] # 浮点数二维数组（范围为 -1 到 1）。
+    hint_string = "%d:%d/%d:Texture2D" % [TYPE_ARRAY, TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # 纹理二维数组。
 
  .. code-tab:: csharp
 
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // Array of integers (in range from 1 to 10).
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Two"; // Array of integers (an enum).
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Three:3,Six:6"; // Array of integers (an enum).
-    hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // Array of strings (file paths).
-    hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Array of textures.
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // 整数数组（范围为 1 到 10）。
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Two"; // 整数数组（枚举）。
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Three:3,Six:6"; // 整数数组（枚举）。
+    hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // 字符串数组（文件路径）。
+    hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // 纹理数组。
 
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}:"; // Two-dimensional array of floats.
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:"; // Two-dimensional array of multiline strings.
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1"; // Two-dimensional array of floats (in range from -1 to 1).
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Two-dimensional array of textures.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}:"; // 浮点数二维数组。
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:"; // 多行字符串二维数组。
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1"; // 浮点数二维数组（范围为 -1 到 1）。
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // 纹理二维数组。
 
 
 
-\ **Note:** The trailing colon is required for properly detecting built-in types.
+\ **注意：**\ 后缀冒号是必须的，否则无法正确识别内置类型。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_NODE_PATH_TO_EDITED_NODE:
 
@@ -4909,7 +4909,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 **UINT8_MAX** = ``255`` :ref:`🔗<class_@GlobalScope_constant_UINT8_MAX>`
 
-Maximum value of an 8-bit unsigned integer.
+8 位无符号整数的最大值。
 
 .. _class_@GlobalScope_constant_UINT16_MAX:
 
@@ -4917,7 +4917,7 @@ Maximum value of an 8-bit unsigned integer.
 
 **UINT16_MAX** = ``65535`` :ref:`🔗<class_@GlobalScope_constant_UINT16_MAX>`
 
-Maximum value of a 16-bit unsigned integer.
+16 位无符号整数的最大值。
 
 .. _class_@GlobalScope_constant_UINT32_MAX:
 
@@ -4925,7 +4925,7 @@ Maximum value of a 16-bit unsigned integer.
 
 **UINT32_MAX** = ``4294967295`` :ref:`🔗<class_@GlobalScope_constant_UINT32_MAX>`
 
-Maximum value of a 32-bit unsigned integer.
+32 位无符号整数的最大值。
 
 .. _class_@GlobalScope_constant_INT8_MIN:
 
@@ -4933,7 +4933,7 @@ Maximum value of a 32-bit unsigned integer.
 
 **INT8_MIN** = ``-128`` :ref:`🔗<class_@GlobalScope_constant_INT8_MIN>`
 
-Minimum value of an 8-bit signed integer.
+8 位有符号整数的最小值。
 
 .. _class_@GlobalScope_constant_INT8_MAX:
 
@@ -4941,7 +4941,7 @@ Minimum value of an 8-bit signed integer.
 
 **INT8_MAX** = ``127`` :ref:`🔗<class_@GlobalScope_constant_INT8_MAX>`
 
-Maximum value of an 8-bit signed integer.
+8 位有符号整数的最大值。
 
 .. _class_@GlobalScope_constant_INT16_MIN:
 
@@ -4949,7 +4949,7 @@ Maximum value of an 8-bit signed integer.
 
 **INT16_MIN** = ``-32768`` :ref:`🔗<class_@GlobalScope_constant_INT16_MIN>`
 
-Minimum value of a 16-bit signed integer.
+16 位有符号整数的最小值。
 
 .. _class_@GlobalScope_constant_INT16_MAX:
 
@@ -4957,7 +4957,7 @@ Minimum value of a 16-bit signed integer.
 
 **INT16_MAX** = ``32767`` :ref:`🔗<class_@GlobalScope_constant_INT16_MAX>`
 
-Maximum value of a 16-bit signed integer.
+16 位有符号整数的最大值。
 
 .. _class_@GlobalScope_constant_INT32_MIN:
 
@@ -4965,7 +4965,7 @@ Maximum value of a 16-bit signed integer.
 
 **INT32_MIN** = ``-2147483648`` :ref:`🔗<class_@GlobalScope_constant_INT32_MIN>`
 
-Minimum value of a 32-bit signed integer.
+32 位有符号整数的最小值。
 
 .. _class_@GlobalScope_constant_INT32_MAX:
 
@@ -4973,7 +4973,7 @@ Minimum value of a 32-bit signed integer.
 
 **INT32_MAX** = ``2147483647`` :ref:`🔗<class_@GlobalScope_constant_INT32_MAX>`
 
-Maximum value of a 32-bit signed integer.
+32 位有符号整数的最大值。
 
 .. _class_@GlobalScope_constant_INT64_MIN:
 
@@ -4981,7 +4981,7 @@ Maximum value of a 32-bit signed integer.
 
 **INT64_MIN** = ``-9223372036854775808`` :ref:`🔗<class_@GlobalScope_constant_INT64_MIN>`
 
-Minimum value of a 64-bit signed integer.
+64 位有符号整数的最小值。
 
 .. _class_@GlobalScope_constant_INT64_MAX:
 
@@ -4989,7 +4989,7 @@ Minimum value of a 64-bit signed integer.
 
 **INT64_MAX** = ``9223372036854775807`` :ref:`🔗<class_@GlobalScope_constant_INT64_MAX>`
 
-Maximum value of a 64-bit signed integer.
+64 位有符号整数的最大值。
 
 .. rst-class:: classref-section-separator
 
@@ -5006,7 +5006,7 @@ Maximum value of a 64-bit signed integer.
 
 :ref:`AccessibilityServer<class_AccessibilityServer>` **AccessibilityServer** :ref:`🔗<class_@GlobalScope_property_AccessibilityServer>`
 
-The :ref:`AccessibilityServer<class_AccessibilityServer>` singleton.
+:ref:`AccessibilityServer<class_AccessibilityServer>` 单例。
 
 .. rst-class:: classref-item-separator
 
@@ -5116,9 +5116,9 @@ The :ref:`AccessibilityServer<class_AccessibilityServer>` singleton.
 
 :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` **GDScriptLanguageProtocol** :ref:`🔗<class_@GlobalScope_property_GDScriptLanguageProtocol>`
 
-The :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` singleton.
+:ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` 单例。
 
-\ **Note:** Only available in editor builds.
+\ **注意：**\ 仅在编辑器构建中可用。
 
 .. rst-class:: classref-item-separator
 
@@ -6463,15 +6463,15 @@ The :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` singleton.
 
 :ref:`float<class_float>` **log**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_log>`
 
-Returns the `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>`__ of ``x`` (base `e <https://en.wikipedia.org/wiki/E_(mathematical_constant)>`__, with *e* being approximately 2.71828). This is the amount of time needed to reach a certain level of continuous growth.
+返回 `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>`__ of ``x`` (base `e <https://en.wikipedia.org/wiki/E_(mathematical_constant)>`__, with *e* being approximately 2.71828). 这就是达到某种程度的连续增长所需要的时间。
 
-\ **Note:** This is not the same as the "log" function on most calculators, which uses a base 10 logarithm. To use base 10 logarithm, use ``log(x) / log(10)``.
+\ **注意：** 这和大多数计算器上的 "log" 函数不一样，计算器上那个用的是以 10 为底的对数。 如果想要使用以 10 为底的对数，请使用 ``log(x) / log(10)``\ 。
 
 ::
 
-    log(10) # Returns 2.302585
+    log(10) # 返回 2.302585
 
-\ **Note:** The logarithm of ``0`` returns ``-inf``, while negative values return ``-nan``.
+\ **注意：** 当输入为 ``0`` 时，对数函数会返回 ``-inf``\ ，而输入负数则会返回 ``-nan``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -7078,7 +7078,7 @@ URL 标签仅支持在 URL 标签中包含 URL，不支持使用不同标题的 
 
 :ref:`int<class_int>` **randi_range**\ (\ from\: :ref:`int<class_int>`, to\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_randi_range>`
 
-返回一个介于 ``from`` 和 ``to`` 之间的随机有符号 32 位整数（包含这两个边界值）。如果 ``to`` 比 ``from`` 小，它们会自动交换。
+返回一个介于 ``from`` 和 ``to`` 之间（包含两端）的随机有符号 32 位整数。如果 ``to`` 小于 ``from``\ ，这两个参数的值会自动互换。
 
 
 .. tabs::
@@ -7086,12 +7086,12 @@ URL 标签仅支持在 URL 标签中包含 URL，不支持使用不同标题的 
  .. code-tab:: gdscript
 
     randi_range(0, 1)      # 返回 0 或 1
-    randi_range(-10, 1000) # 返回介于 -10 和 1000 之间的随机整数
+    randi_range(-10, 1000) # 返回 -10 到 1000 之间的随机整数
 
  .. code-tab:: csharp
 
     GD.RandRange(0, 1);      // 返回 0 或 1
-    GD.RandRange(-10, 1000); // 返回介于 -10 和 1000 之间的随机整数
+    GD.RandRange(-10, 1000); // 返回 -10 到 1000 之间的随机整数
 
 
 

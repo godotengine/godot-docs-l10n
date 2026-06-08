@@ -185,11 +185,11 @@ Godot 编辑器用于选择 :ref:`Resource<class_Resource>` 类型属性的控�
 
 |void| **_set_create_options**\ (\ menu_node\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__set_create_options>`
 
-This virtual method is called when updating the context menu of an :ref:`editable<class_EditorResourcePicker_property_editable>` **EditorResourcePicker**. Implement this method to override the "New" items section with your own options. ``menu_node`` is a reference to the :ref:`PopupMenu<class_PopupMenu>` node.
+当更新一个\ ``可编辑的`` **EditorResourcePicker**\ （编辑器资源选择器）的上下文菜单（也就是右键菜单）时，会调用这个虚拟方法。你可以重写这个方法，用你自己的选项来替换掉原本的“新建（New）”项目区域。\ ``menu_node`` 是对该 :ref:`PopupMenu<class_PopupMenu>`\ （弹出菜单）节点的引用。
 
-\ **Note:** Implement :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` to handle these custom items.
+\ **注意：** 需要实现 :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` 方法来处理这些自定义的菜单项。
 
-\ **Note:** Relevant built-in options ("Load", "Copy", "Paste", etc.) are automatically added to the ``menu_node`` afterwards, using their hard-coded IDs starting from ``0``. Custom options need to use non-colliding IDs to be handled properly. Using ``id = 100 + custom_option_index`` is safe (this is what the default items in the "New" section use).
+\ **注意：** 相关的内置选项（如“加载”、“复制”、“粘贴”等）会在此之后自动添加到 ``menu_node`` 中，它们使用的是从 ``0`` 开始的硬编码 ID。因此，自定义的菜单项需要使用不会发生冲突的 ID 才能被正确处理。使用 ``id = 100 + 自定义选项索引`` 是安全的（这也是“新建”区域中默认项目所使用的 ID 规则）。
 
 .. rst-class:: classref-item-separator
 

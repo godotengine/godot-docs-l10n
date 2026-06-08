@@ -251,9 +251,9 @@ Le connessioni differite attivano i loro :ref:`Callable<class_Callable>` durante
 
 :ref:`ConnectFlags<enum_Object_ConnectFlags>` **CONNECT_PERSIST** = ``2``
 
-Persisting connections are stored when the object is serialized (such as when using :ref:`PackedScene.pack()<class_PackedScene_method_pack>`). In the editor, connections created through the Signals dock are always persisting.
+Le connessioni persistenti sono memorizzate quando l'oggetto viene serializzato (ad esempio quando si usa :ref:`PackedScene.pack()<class_PackedScene_method_pack>`). Nell'editor, le connessioni create tramite il pannello Segnali sono sempre persistenti.
 
-\ **Note:** Connections to lambda functions (that is, when the function code is embedded in the :ref:`connect()<class_Object_method_connect>` call) cannot be made persistent.
+\ **Nota:** Le connessioni alle funzioni lambda (ovvero, quando il codice della funzione è incorporato nella chiamata a :ref:`connect()<class_Object_method_connect>`) non si possono rendere persistenti.
 
 .. _class_Object_constant_CONNECT_ONE_SHOT:
 
@@ -313,9 +313,9 @@ Notifica ricevuta quando l'oggetto viene inizializzato, prima che il suo script 
 
 **NOTIFICATION_PREDELETE** = ``1`` :ref:`🔗<class_Object_constant_NOTIFICATION_PREDELETE>`
 
-Notification received when the object is about to be deleted. Can be used like destructors in object-oriented programming languages.
+Notifica ricevuta quando l'oggetto sta per essere eliminato. Può fungere da distruttore nei linguaggi di programmazione orientati agli oggetti.
 
-This notification is sent in reversed order.
+Questa notifica è inviata in ordine inverso.
 
 .. _class_Object_constant_NOTIFICATION_EXTENSION_RELOADED:
 
@@ -563,7 +563,7 @@ Restituisce il valore iterabile attuale. ``iter`` memorizza lo stato dell'iteraz
 
 :ref:`bool<class_bool>` **_iter_init**\ (\ iter\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_Object_private_method__iter_init>`
 
-Initializes the iterator. ``iter`` stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. Returns ``true`` so long as the iterator has not reached the end.
+Inizializza l'iteratore. ``iter`` memorizza lo stato dell'iterazione. Poiché GDScript non supporta il passaggio di argomenti per riferimento, è utilizzato un array con un singolo elemento come wrapper. Restituisce ``true`` finché l'iteratore non ha raggiunto la fine.
 
 ::
 
@@ -592,9 +592,9 @@ Initializes the iterator. ``iter`` stores the iteration state. Since GDScript do
         for x in my_range:
             print(x) # Prints 2, 3, 4.
 
-\ **Note:** Avoid storing iterator state in a member variable, use the ``iter`` parameter instead. Otherwise, you won't be able to reuse the same iterator instance in nested loops.
+\ **Nota:** Evita di memorizzare lo stato dell'iteratore in una variabile membro, utilizza invece il parametro ``iter``. Altrimenti, non sarà possibile riutilizzare la stessa istanza dell'iteratore nei cicli annidati.
 
-See also `online docs <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__.
+Consulta anche la `documentazione online <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -618,7 +618,7 @@ Sposta l'iteratore all'iterazione successiva. ``iter`` memorizza lo stato dell'i
 
 |void| **_notification**\ (\ what\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_Object_private_method__notification>`
 
-Called when the object receives a notification, which can be identified in ``what`` by comparing it with a constant. See also :ref:`notification()<class_Object_method_notification>`.
+Chiamato quando l'oggetto riceve una notifica, la quale può essere identificata in ``what`` confrontandola con una costante. Vedi anche :ref:`notification()<class_Object_method_notification>`.
 
 
 .. tabs::
@@ -627,7 +627,7 @@ Called when the object receives a notification, which can be identified in ``wha
 
     func _notification(what):
         if what == NOTIFICATION_PREDELETE:
-            print("Goodbye!")
+            print("Addio!")
 
  .. code-tab:: csharp
 
@@ -635,15 +635,15 @@ Called when the object receives a notification, which can be identified in ``wha
     {
         if (what == NotificationPredelete)
         {
-            GD.Print("Goodbye!");
+            GD.Print("Addio!");
         }
     }
 
 
 
-\ **Note:** The base **Object** defines a few notifications (:ref:`NOTIFICATION_POSTINITIALIZE<class_Object_constant_NOTIFICATION_POSTINITIALIZE>` and :ref:`NOTIFICATION_PREDELETE<class_Object_constant_NOTIFICATION_PREDELETE>`). Inheriting classes such as :ref:`Node<class_Node>` define a lot more notifications, which are also received by this method.
+\ **Nota:** L'**Object** base definisce alcune notifiche (:ref:`NOTIFICATION_POSTINITIALIZE<class_Object_constant_NOTIFICATION_POSTINITIALIZE>` e :ref:`NOTIFICATION_PREDELETE<class_Object_constant_NOTIFICATION_PREDELETE>`). Le classi che lo ereditano come :ref:`Node<class_Node>` definiscono molte più notifiche, che sono anche ricevute da questo metodo.
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. Call order depends on the ``reversed`` argument of :ref:`notification()<class_Object_method_notification>` and varies between different notifications. Most notifications are sent in the forward order (i.e. Object class first, most derived class last).
+\ **Nota:** A differenza di altri metodi virtuali, questo metodo viene chiamato automaticamente per ogni script che lo sovrascrive. Ciò significa che non si dovrebbe chiamare l'implementazione di base tramite ``super`` in GDScript o i suoi equivalenti in altri linguaggi. L'ordine delle chiamate dipende dall'argomento ``reversed`` di :ref:`notification()<class_Object_method_notification>` e varia tra le diverse notifiche. La maggior parte delle notifiche è inviata in avanti (ovvero, prima la classe Object, poi la classe più derivata).
 
 .. rst-class:: classref-item-separator
 
@@ -655,11 +655,11 @@ Called when the object receives a notification, which can be identified in ``wha
 
 :ref:`bool<class_bool>` **_property_can_revert**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__property_can_revert>`
 
-Override this method to customize the given ``property``'s revert behavior. Should return ``true`` if the ``property`` has a custom default value and is revertible in the Inspector dock. Use :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` to specify the ``property``'s default value.
+Sovrascrivi questo metodo per personalizzare il comportamento di ripristino della proprietà denominata ``property``. Dovrebbe restituire ``true`` se ``property`` ha un valore predefinito personalizzato ed è ripristinabile nel pannello dell'Ispettore. Usa :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` per specificare il valore predefinito di ``property``.
 
-\ **Note:** This method must return consistently, regardless of the current value of the ``property``.
+\ **Nota:** Questo metodo deve restituire in modo costante, a prescindere dal valore attuale della proprietà denominata ``property``.
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns ``true``.
+\ **Nota:** A differenza di altri metodi virtuali, questo metodo viene chiamato automaticamente per ogni script che lo sovrascrive. Ciò significa che non si dovrebbe chiamare l'implementazione di base tramite ``super`` in GDScript o i suoi equivalenti in altri linguaggi. La sottoclasse più in basso verrà chiamata per prima, risalendo la gerarchia della classe a ogni chiamata successiva. La catena di chiamate si interromperà sulla prima classe che restituisce ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -671,11 +671,11 @@ Override this method to customize the given ``property``'s revert behavior. Shou
 
 :ref:`Variant<class_Variant>` **_property_get_revert**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__property_get_revert>`
 
-Override this method to customize the given ``property``'s revert behavior. Should return the default value for the ``property``. If the default value differs from the ``property``'s current value, a revert icon is displayed in the Inspector dock.
+Sovrascrivi questo metodo per personalizzare il comportamento di ripristino della proprietà denominata ``property``. Dovrebbe restituire il valore predefinito per ``property``. Se il valore predefinito è diverso dal valore attuale della proprietà denominata ``property``, è visualizzata un'icona di ripristino nel pannello dell'Ispettore.
 
-\ **Note:** :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` must also be overridden for this method to be called.
+\ **Nota:** :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` deve essere sovrascritto affinché questo metodo sia chiamato.
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns a non-``null`` value.
+\ **Nota:** A differenza di altri metodi virtuali, questo metodo viene chiamato automaticamente per ogni script che lo sovrascrive. Ciò significa che non si dovrebbe chiamare l'implementazione di base tramite ``super`` in GDScript o i suoi equivalenti in altri linguaggi. La sottoclasse più in basso verrà chiamata per prima, con le chiamate successive che risalgono la gerarchia delle classi. La catena di chiamate si interromperà sulla prima classe che restituisce un valore non ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -907,11 +907,11 @@ Chiama il metodo denominato ``method`` sull'oggetto e restituisce il risultato. 
 
 :ref:`Variant<class_Variant>` **call_deferred**\ (\ method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Object_method_call_deferred>`
 
-Calls the ``method`` on the object during idle time. Always returns ``null``, **not** the method's result.
+Chiama il metodo denominato ``method`` sull'oggetto durante il tempo di inattività. Restituisce sempre ``null``, **non** il risultato del metodo.
 
-Idle time happens mainly at the end of process and physics frames. In it, deferred calls will be run until there are none left, which means you can defer calls from other deferred calls and they'll still be run in the current idle time cycle. This means you should not call a method deferred from itself (or from a method called by it), as this causes infinite recursion the same way as if you had called the method directly.
+Il tempo di inattività si verifica principalmente alla fine dei frame di processo e di fisica. In esso, le chiamate differite saranno eseguite finché non ne rimarrà nessuna, il che significa che è possibile differire le chiamate da altre chiamate differite e saranno comunque eseguite nel ciclo di tempo di inattività attuale. Ciò significa che non dovresti chiamare un metodo differito da se stesso (o da un metodo chiamato da esso), poiché ciò causa una ricorsione infinita allo stesso modo di se avessi chiamato il metodo direttamente.
 
-This method supports a variable number of arguments, so parameters can be passed as a comma separated list.
+Questo metodo supporta un numero variabile di argomenti, quindi è possibile passare i parametri come un elenco separato da virgole.
 
 
 .. tabs::
@@ -928,21 +928,21 @@ This method supports a variable number of arguments, so parameters can be passed
 
 
 
-For methods that are deferred from the same thread, the order of execution at idle time is identical to the order in which ``call_deferred`` was called.
+Per i metodi che sono differiti dallo stesso thread, l'ordine di esecuzione in fase di inattività è identico all'ordine in cui è stato chiamato ``call_deferred``.
 
-See also :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>`.
+Vedi anche :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>`.
 
-\ **Note:** In C#, ``method`` must be in snake_case when referring to built-in Godot methods. Prefer using the names exposed in the ``MethodName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **Nota:** In C#, ``method`` deve essere in snake_case quando si fa riferimento ai metodi integrati di Godot. Preferisci usare i nomi esposti nella classe ``MethodName`` per evitare di allocare un nuovo :ref:`StringName<class_StringName>` a ogni chiamata.
 
-\ **Note:** If you're looking to delay the function call by a frame, refer to the :ref:`SceneTree.process_frame<class_SceneTree_signal_process_frame>` and :ref:`SceneTree.physics_frame<class_SceneTree_signal_physics_frame>` signals.
+\ **Nota:** Se vuoi ritardare la chiamata alla funzione di un frame, usa i segnali :ref:`SceneTree.process_frame<class_SceneTree_signal_process_frame>` e :ref:`SceneTree.physics_frame<class_SceneTree_signal_physics_frame>`.
 
 ::
 
     var node = Node3D.new()
-    # Make a Callable and bind the arguments to the node's rotate() call.
+    # Crea un chiamabile e associa gli argomenti alla chiamata rotate() del nodo.
     var callable = node.rotate.bind(Vector3(1.0, 0.0, 0.0), 1.571)
-    # Connect the callable to the process_frame signal, so it gets called in the next process frame.
-    # CONNECT_ONE_SHOT makes sure it only gets called once instead of every frame.
+    # Collega il chiamabile al segnale process_frame, in modo che sia chiamato nel frame di processo successivo.
+    # CONNECT_ONE_SHOT assicura che sia chiamato solo una volta invece di ogni frame.
     get_tree().process_frame.connect(callable, CONNECT_ONE_SHOT)
 
 .. rst-class:: classref-item-separator

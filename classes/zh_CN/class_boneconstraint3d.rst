@@ -16,9 +16,9 @@ BoneConstraint3D
 描述
 ----
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that modifies the bone set in :ref:`set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` based on the transform of the bone retrieved by :ref:`get_reference_bone()<class_BoneConstraint3D_method_get_reference_bone>`.
+:ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 的基类，能够根据 :ref:`get_reference_bone()<class_BoneConstraint3D_method_get_reference_bone>` 所获得骨骼的变换修改 :ref:`set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` 中设置的骨骼。
 
-\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/amount``).
+\ **注意：**\ 此类中的大多数方法都接受一个\ ``index``\ 参数。如果 IK 包含多个条目（例如 ``settings/<index>/amount``\ ），该参数用于指定应返回哪个设置列表条目。
 
 .. rst-class:: classref-reftable-group
 

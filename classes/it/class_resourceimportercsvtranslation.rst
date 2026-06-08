@@ -7,7 +7,7 @@ ResourceImporterCSVTranslation
 
 **Eredita:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports comma-separated values as :ref:`Translation<class_Translation>`\ s.
+Importa valori separati da virgole sotto forma di :ref:`Translation<class_Translation>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -88,9 +88,9 @@ Descrizioni delle proprietà
 
 :ref:`int<class_int>` **compress** = ``1`` :ref:`🔗<class_ResourceImporterCSVTranslation_property_compress>`
 
-- **Disabled**: Creates a :ref:`Translation<class_Translation>`.
+- **Disabled**: Crea un :ref:`Translation<class_Translation>`.
 
-- **Auto**: Creates an :ref:`OptimizedTranslation<class_OptimizedTranslation>` when possible. This makes the resulting file smaller at the cost of a small CPU overhead. Falls back to :ref:`Translation<class_Translation>` for translations with context or plural forms.
+- **Auto**: Crea un :ref:`OptimizedTranslation<class_OptimizedTranslation>` se possibile. Ciò rende il file risultante più piccolo a costo di un piccolo sovraccarico della CPU. Utilizza :ref:`Translation<class_Translation>` per le traduzioni con contesto o forme plurali.
 
 .. rst-class:: classref-item-separator
 

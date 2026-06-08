@@ -245,9 +245,9 @@ Font
 
 :ref:`float<class_float>` **get_ascent**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_ascent>`
 
-Returns the maximum font ascent (number of pixels above the baseline) of this font and all fallback fonts.
+返回该字体及其所有备用字体（fallback fonts）的最大上升高度（即基线以上的像素数）。
 
-\ **Note:** Real ascent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the ascent of empty line).
+\ **注意：** 字符串的实际上升高度是取决于具体上下文（具体文字内容）的，可能会与该函数返回的值有显著差异。请仅将其作为粗略的估算值使用（例如，用于估算空行的上升高度）。
 
 .. rst-class:: classref-item-separator
 
@@ -273,9 +273,9 @@ Returns the maximum font ascent (number of pixels above the baseline) of this fo
 
 :ref:`float<class_float>` **get_descent**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_descent>`
 
-Returns the maximum font descent (number of pixels below the baseline) of this font and all fallback fonts.
+返回该字体及其所有备用字体（fallback fonts）的最大下降高度（即基线以下的像素数）。
 
-\ **Note:** Real descent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the descent of empty line).
+\ **注意：** 字符串的实际下降高度是取决于具体上下文（具体文字内容）的，可能会与该函数返回的值有显著差异。请仅将其作为粗略的估算值使用（例如，用于估算空行的下降高度）。
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ Returns the maximum font descent (number of pixels below the baseline) of this f
 
 :ref:`PackedColorArray<class_PackedColorArray>` **get_palette_colors**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Font_method_get_palette_colors>`
 
-Returns the array in the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors. Colors can be overridden using :ref:`FontVariation<class_FontVariation>`.
+返回 ``index`` 处预定义颜色调色板中的数组。调色板包含用于渲染字体字形的所有颜色。每个调色板的颜色数量相同。可以使用 :ref:`FontVariation<class_FontVariation>` 覆盖颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ Returns the array in the predefined color palette at ``index``. Palette contains
 
 :ref:`int<class_int>` **get_palette_count**\ (\ ) |const| :ref:`🔗<class_Font_method_get_palette_count>`
 
-Returns the number of predefined color palettes. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+返回预定义颜色调色板的数量。调色板包含用于渲染字体字形的所有颜色。每个调色板的颜色数量相同。
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ Returns the number of predefined color palettes. Palette contains all colors use
 
 :ref:`String<class_String>` **get_palette_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Font_method_get_palette_name>`
 
-Returns the name of the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+返回 ``index`` 处预定义颜色调色板的名称。调色板包含用于渲染字体字形的所有颜色。每个调色板的颜色数量相同。
 
 .. rst-class:: classref-item-separator
 

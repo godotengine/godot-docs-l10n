@@ -204,11 +204,11 @@ L'implementazione di questo metodo è obbligatoria se :ref:`_begin_customize_res
 
 :ref:`Node<class_Node>` **_customize_scene**\ (\ scene\: :ref:`Node<class_Node>`, path\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorExportPlugin_private_method__customize_scene>`
 
-Customize a scene. If changes are made to it, return the same or a new scene. Otherwise, return ``null``. If a new scene is returned, it is up to you to dispose of the old one.
+Personalizza una scena. Se vengono apportate modifiche, restituisci la stessa scena o una nuova. Altrimenti, restituisci ``null``. Se viene restituita una nuova scena, spetta a te eliminare quella precedente.
 
-Implementing this method is required if :ref:`_begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` returns ``true``.
+L'implementazione di questo metodo è obbligatoria se :ref:`_begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` restituisce ``true``.
 
-\ **Note:** To change a variable in your scene, use the ``@export`` annotation when declaring it.
+\ **Nota:** Per modificare una variabile nella tua scena, usa l'annotazione ``@export`` quando la dichiari.
 
 .. rst-class:: classref-item-separator
 
@@ -388,11 +388,11 @@ Metodo virtuale che può essere sovrascritto dall'utente. Viene utilizzato nell'
 
 :ref:`int<class_int>` **_get_customization_configuration_hash**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_customization_configuration_hash>`
 
-Return a hash based on the configuration passed (for both scenes and resources). This helps keep separate caches for separate export configurations.
+Restituisce un hash basato sulla configurazione passata (sia per le scene sia per le risorse). Ciò aiuta a mantenere le cache separate per configurazioni di esportazione separate.
 
-Implementing this method is required if :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` returns ``true``.
+L'implementazione di questo metodo è obbligatoria se :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` restituisce ``true``.
 
-\ **Note:** :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` and :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` will not be called when the **EditorExportPlugin** script is modified unless this hash changes too.
+\ **Nota:** :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` e :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` non verranno chiamati quando lo script **EditorExportPlugin** viene modificato, a meno che anche questo hash non cambi.
 
 .. rst-class:: classref-item-separator
 

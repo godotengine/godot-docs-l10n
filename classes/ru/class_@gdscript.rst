@@ -1021,22 +1021,22 @@
 
 |void| **assert**\ (\ condition\: :ref:`bool<class_bool>`, message\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_method_assert>`
 
-Asserts that the ``condition`` is ``true``. If the ``condition`` is ``false``, an error is generated and the current method returns a default value. When running from the editor, failed asserts also cause a debugger break. This can be used as a stronger form of :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` for reporting errors to project developers or add-on users.
+Проверяет, что ``condition`` ``true``. Если ``condition`` равен ``false``, генерируется ошибка, и текущий метод возвращает значение по умолчанию. При запуске из редактора неудачные проверки также приводят к остановке отладчика. Это можно использовать как более надежную форму :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` для сообщения об ошибках разработчикам проекта или пользователям плагинов.
 
-An optional ``message`` can be shown in addition to the generic "Assertion failed" message. You can use this to provide additional details about why the assertion failed.
+В дополнение к общему сообщению «Проверка не удалась» можно отобразить необязательное ``message``. Вы можете использовать его для предоставления дополнительных сведений о причинах сбоя проверки.
 
-\ **Warning:** For performance reasons, the code inside :ref:`assert()<class_@GDScript_method_assert>` is only executed in debug builds or when running the project from the editor. Don't include code that has side effects in an :ref:`assert()<class_@GDScript_method_assert>` call. Otherwise, the project will behave differently when exported in release mode.
+\ **Предупреждение:** В целях повышения производительности код внутри :ref:`assert()<class_@GDScript_method_assert>` выполняется только в отладочных сборках или при запуске проекта из редактора. Не включайте код с побочными эффектами в вызов :ref:`assert()<class_@GDScript_method_assert>`. В противном случае проект будет вести себя иначе при экспорте в режиме выпуска.
 
 ::
 
-    # Imagine we always want speed to be between 0 and 20.
+    # Представьте, что мы всегда хотим, чтобы скорость находилась в диапазоне от 0 до 20.
     var speed = -10
-    assert(speed < 20) # True, the program will continue.
-    assert(speed >= 0) # False, the program will stop.
-    assert(speed >= 0 and speed < 20) # You can also combine the two conditional statements in one check.
-    assert(speed < 20, "the speed limit is 20") # Show a message.
+    assert(speed < 20) # Истина, программа будет продолжена.
+    assert(speed >= 0) # Ложь, программа будет остановлена.
+    assert(speed >= 0 and speed < 20) # Также можно объединить два условных оператора в одну проверку.
+    assert(speed < 20, "Ограничение скорости — 20") # Показать сообщение.
 
-\ **Note:** :ref:`assert()<class_@GDScript_method_assert>` is a keyword, not a function. So you cannot access it as a :ref:`Callable<class_Callable>` or use it inside expressions.
+\ **Примечание:** :ref:`assert()<class_@GDScript_method_assert>` — это ключевое слово, а не функция. Поэтому вы не можете получить к нему доступ как к :ref:`Callable<class_Callable>` или использовать его внутри выражений.
 
 .. rst-class:: classref-item-separator
 
@@ -1170,17 +1170,17 @@ An optional ``message`` can be shown in addition to the generic "Assertion faile
 
 :ref:`bool<class_bool>` **is_instance_of**\ (\ value\: :ref:`Variant<class_Variant>`, type\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GDScript_method_is_instance_of>`
 
-Returns ``true`` if ``value`` is an instance of ``type``. The ``type`` value must be one of the following:
+Возвращает ``true``, если ``value`` является экземпляром ``type``. Значение ``type`` должно быть одним из следующих:
 
-- A constant from the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` enumeration, for example :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>`.
+- Константа из перечисления :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`, например :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>`.
 
-- An :ref:`Object<class_Object>`-derived class which exists in :ref:`ClassDB<class_ClassDB>`, for example :ref:`Node<class_Node>`.
+- Класс, производный от :ref:`Object<class_Object>`, существующий в :ref:`ClassDB<class_ClassDB>`, например :ref:`Node<class_Node>`.
 
-- A :ref:`Script<class_Script>` (you can use any class, including inner one).
+- :ref:`Script<class_Script>` (можно использовать любой класс, включая внутренний).
 
-Unlike the right operand of the ``is`` operator, ``type`` can be a non-constant value. The ``is`` operator supports more features (such as typed arrays and dictionaries). Use the operator instead of this method if you do not need to check the type dynamically.
+В отличие от правого операнда оператора ``is``, ``type`` может быть неконстантным значением. Оператор ``is`` поддерживает больше возможностей (таких как типизированные массивы и словари). Используйте оператор вместо этого метода, если вам не нужно динамически проверять тип.
 
-\ **Examples:**\ 
+\ **Примеры:**\ 
 
 ::
 
@@ -1189,9 +1189,9 @@ Unlike the right operand of the ``is`` operator, ``type`` can be a non-constant 
     print(is_instance_of(a, MyClass))
     print(is_instance_of(a, MyClass.InnerClass))
 
-\ **Note:** If ``value`` and/or ``type`` are freed objects (see :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`), or ``type`` is not one of the above options, this method will raise a runtime error.
+\ **Примечание:** Если ``value`` и/или ``type`` являются освобожденными объектами (см. :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`), или ``type`` не является одним из вышеперечисленных вариантов, этот метод вызовет ошибку во время выполнения.
 
-See also :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`Object.is_class()<class_Object_method_is_class>`, :ref:`Object.get_script()<class_Object_method_get_script>`, :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>` (and other :ref:`Array<class_Array>` methods), :ref:`Dictionary.is_same_typed()<class_Dictionary_method_is_same_typed>` (and other :ref:`Dictionary<class_Dictionary>` methods).
+См. также :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`Object.is_class()<class_Object_method_is_class>`, :ref:`Object.get_script()<class_Object_method_get_script>`, :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>` (и другие методы :ref:`Array<class_Array>`), :ref:`Dictionary.is_same_typed()<class_Dictionary_method_is_same_typed>` (и другие методы :ref:`Dictionary<class_Dictionary>`).
 
 .. rst-class:: classref-item-separator
 

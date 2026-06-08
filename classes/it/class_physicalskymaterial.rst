@@ -16,7 +16,7 @@ Descrizione
 
 **PhysicalSkyMaterial** usa il modello analitico di luce diurna Preetham per disegnare un cielo basato su proprietà fisiche. Ciò si traduce in un cielo sostanzialmente più realistico rispetto a :ref:`ProceduralSkyMaterial<class_ProceduralSkyMaterial>`, ma è leggermente più lento e meno flessibile.
 
-\ **PhysicalSkyMaterial** supporta solo un sole. Il colore, l'energia e la direzione del sole sono presi dal primo :ref:`DirectionalLight3D<class_DirectionalLight3D>` nell'albero di scena.
+\ **PhysicalSkyMaterial** supporta solo un sole. Il colore, l'energia e la direzione del sole sono presi dal primo :ref:`DirectionalLight3D<class_DirectionalLight3D>` nell'albero di scene.
 
 .. rst-class:: classref-reftable-group
 

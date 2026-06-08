@@ -2685,9 +2685,9 @@ The reasons your app use user defaults API. See `Describing use of required reas
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformVisionOS_property_shader_baker/enabled>`
 
-Si ``true``, les shaders seront compilées et intégrées dans l'application. Cette option n'est prise en charge que lors de l'utilisation des rendus Forward+ et Mobile.
+Si ``true``, les shaders seront compilés et intégrés dans l'application. Cette option n'est prise en charge que lors de l'utilisation des moteurs de rendu Forward+ et Mobile.
 
-\ **Note:** Lors de l'exportation en tant que serveur dédié, le compilateur de shaders est toujours désactivé car aucun rendu n'est effectué.
+\ **Note :** Lors de l'export en tant que serveur dédié, le compilateur de shaders est toujours désactivé car aucun rendu n'est effectué.
 
 .. rst-class:: classref-item-separator
 

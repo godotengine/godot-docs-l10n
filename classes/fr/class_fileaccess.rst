@@ -53,7 +53,7 @@ Une instance de **FileAccess** a son propre curseur de fichier, qui est la posit
 
 Une instance de **FileAccess** est fermée lorsque sont instance est libérée. Étant donné qu'elle hérite de :ref:`RefCounted<class_RefCounted>`, cette opération est réalisée automatiquement lorsqu'elle n'est plus utilisée. :ref:`close()<class_FileAccess_method_close>` peut être appelée pour la fermer plus tôt. En C#, la référence peut être supprimée manuellement, ce qui peut être réalisé avec l'instruction ``using`` ou en appelant la méthode ``Dispose`` directement.
 
-\ **Note:** Pour accéder aux ressources du projet une fois exporté, il est recommandé d'utiliser :ref:`ResourceLoader<class_ResourceLoader>` au lieu de **FileAccess**, car certains fichiers sont convertis en formats spécifiques au moteur et leurs fichiers sources originaux pourraient ne pas être présents dans le paquet PCK exporté. Si vous utilisez **FileAccess**, assurez-vous que le fichier est inclus dans l'exportation en changeant son mode d'importation à **Keep File (exported as is)** dans le dock d'importation, ou, pour les fichiers où cette option n'est pas disponible, modifiez le filtre d'exportation non-ressource dans le dialogue Exporter pour inclure l'extension du fichier (e.g. ``*.txt``).
+\ **Note :** Pour accéder aux ressources du projet une fois exporté, il est recommandé d'utiliser :ref:`ResourceLoader<class_ResourceLoader>` au lieu de **FileAccess**, car certains fichiers sont convertis en formats spécifiques au moteur et leurs fichiers sources originaux pourraient ne pas être présents dans le paquet PCK exporté. Si vous utilisez **FileAccess**, assurez-vous que le fichier est inclus dans l'exportation en changeant son mode d'importation à **Keep File (exported as is)** dans le dock d'importation, ou, pour les fichiers où cette option n'est pas disponible, modifiez le filtre d'exportation non-ressource dans le dialogue Exporter pour inclure l'extension du fichier (e.g. ``*.txt``).
 
 \ **Note : ** Les fichiers sont automatiquement fermés seulement si le processus termine « normalement » (comme en cliquant sur le bouton de fermeture du gestionnaire de fenêtre ou en appuyant sur :kbd:`Alt + F4`). Si vous arrêtez l'exécution du projet en appuyant sur :kbd:`F8` pendant que le projet est en cours d'exécution, le fichier ne sera pas fermé car le processus de jeu sera arrêté. Vous pouvez contourner cela en appelant :ref:`flush()<class_FileAccess_method_flush>` à intervalles réguliers.
 
@@ -935,9 +935,9 @@ Returns the file cursor's position in bytes from the beginning of the file. This
 
 :ref:`bool<class_bool>` **get_read_only_attribute**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_read_only_attribute>`
 
-Retourne ``true`` si l'attribut **read only** est défini sur le fichier sur le chemin donné.
+Renvoie ``true`` si l'attribut **read only** est défini sur le fichier au chemin donné.
 
-\ **Note:** Cette méthode est implémentée sur iOS, BSD, macOS et Windows.
+\ **Note :** Cette méthode est implémentée sur iOS, BSD, macOS et Windows.
 
 .. rst-class:: classref-item-separator
 

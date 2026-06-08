@@ -12,50 +12,50 @@ Une structure de données intégrée qui contient une suite d'éléments.
 Description
 -----------
 
-An array data structure that can contain a sequence of elements of any :ref:`Variant<class_Variant>` type by default. Values can optionally be constrained to a specific type by creating a *typed array*. Elements are accessed by a numerical index starting at ``0``. Negative indices are used to count from the back (``-1`` is the last element, ``-2`` is the second to last, etc.).
+Une structure de données en tableau qui peut contenir une suite d'éléments de n'importe quel type :ref:`Variant<class_Variant>` par défaut. Les valeurs peuvent être limitées à un type spécifique en créant un *tableau typé*. Les éléments sont accessibles par un indice numérique commençant à ``0``. Les indices négatifs peuvent être utilisés pour obtenir une position à partir de la fin du tableau (``-1`` est le dernier élément, ``-2`` est l'avant-dernier, etc...).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var array = ["First", 2, 3, "Last"]
-    print(array[0])  # Prints "First"
-    print(array[2])  # Prints 3
-    print(array[-1]) # Prints "Last"
+    var tableau= ["Premier", 2, 3, "Dernier"]
+    print(tableau[0]) # Affiche "Premier"
+    print(tableau[2]) # Affiche 3
+    print(tableau[-1]) # Affiche "Dernier"
 
-    array[1] = "Second"
-    print(array[1])  # Prints "Second"
-    print(array[-3]) # Prints "Second"
+    tableau[1] = "Second"
+    print(tableau[1]) # Affiche "Second"
+    print(tableau[-3]) # Affiche "Second"
 
-    # This typed array can only contain integers.
-    # Attempting to add any other type will result in an error.
-    var typed_array: Array[int] = [1, 2, 3]
+    # Ce tableau typé ne peut contenir que des nombres entiers.
+    # Tenter d'ajouter un autre type renvoie une erreur.
+    var tableau_typé: Array[int] = [1, 2, 3]
 
  .. code-tab:: csharp
 
-    Godot.Collections.Array array = ["First", 2, 3, "Last"];
-    GD.Print(array[0]); // Prints "First"
-    GD.Print(array[2]); // Prints 3
-    GD.Print(array[^1]); // Prints "Last"
+    Godot.Collections.Array tableau= ["Premier", 2, 3, "Dernier"];
+    GD.Print(tableau[0]); // Affiche "Premier"
+    GD.Print(tableau[2]); // Affiche 3
+    GD.Print(tableau[^1]); // Affiche "Dernier"
 
-    array[1] = "Second";
-    GD.Print(array[1]); // Prints "Second"
-    GD.Print(array[^3]); // Prints "Second"
+    tableau[1] = "Second";
+    GD.Print(tableau[1]); // Affiche "Second"
+    GD.Print(tableau[^3]); // Affiche "Second"
 
-    // This typed array can only contain integers.
-    // Attempting to add any other type will result in an error.
-    Godot.Collections.Array<int> typedArray = [1, 2, 3];
+    // Ce tableau typé ne peut contenir que des nombres entiers.
+    // Tenter d'ajouter un autre type renvoie une erreur.
+    Godot.Collections.Array<int> tableauTypé = [1, 2, 3];
 
 
 
-\ **Note:** Arrays are always passed by **reference**. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_Array_method_duplicate>`.
+\ **Note :** Les tableaux sont toujours passés par **référence**. Pour obtenir une copie d'un tableau qui peut être modifié indépendamment de l'original, utilisez :ref:`duplicate()<class_Array_method_duplicate>`.
 
-\ **Note:** Erasing elements while iterating over arrays is **not** supported and will result in unpredictable behavior.
+\ **Note :** Effacer des éléments lors de l'itération d'un tableau n'est **pas** supporté et va résulter en un comportement imprévisible.
 
-\ **Note:** In a boolean context, an array will evaluate to ``false`` if it's empty (``[]``). Otherwise, an array will always evaluate to ``true``.
+\ **Note :** Dans le cas d'un booléen, un tableau sera évalué  ``faux`` s'il est vide (``[]``). Dans le cas inverse, un tableau sera toujours évalué ``vrai``.
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. :ref:`PackedInt64Array<class_PackedInt64Array>` versus ``Array[int]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **Différences entre les tableaux compactés, les tableaux typés et les tableaux non typés :** Les tableaux compactés sont généralement plus rapides pour itérer et modifier par rapport à un tableau typé du même type (par exemple :ref:`PackedInt64Array<class_PackedInt64Array>` contre ``Array[int]``). De plus, les tableaux compactés consomment moins de mémoire. À l'envers, les tableaux compactés sont moins flexibles car ils ne proposent pas autant de méthodes de commodité comme :ref:`map()<class_Array_method_map>`. Les tableaux typés sont à leur tour plus rapides pour itérer dessus et modifier que les tableaux non typés.
 
 .. note::
 
@@ -682,9 +682,9 @@ Si ``deep`` vaut ``true``, une copie **profonde** est renvoyée : tous les tabl
 
 :ref:`Array<class_Array>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`int<class_int>` = 1\ ) |const| :ref:`🔗<class_Array_method_duplicate_deep>`
 
-Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+Duplique ce tableau, profondément, comme :ref:`duplicate()<class_Array_method_duplicate>` lorsqu'on passe\ ``(true)``, avec du contrôle supplémentaire sur la façon dont les sous-ressources sont gérées.
 
-\ ``deep_subresources_mode`` must be one of the values from :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. By default, only internal resources will be duplicated (recursively).
+\ ``deep_subresources_mode`` doit être l'une des valeurs de :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. Par défaut, seules les ressources internes seront dupliquées (récursivement).
 
 .. rst-class:: classref-item-separator
 
@@ -790,29 +790,29 @@ Renvoie l'index de la **première** occurrence de l'objet ``what`` dans ce table
 
 :ref:`int<class_int>` **find_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
 
-Returns the index of the **first** element in the array that causes ``method`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
+Renvoie l'index du **premier** élément du tableau qui cause la méthode ``method`` de renvoyer ``true``, ou ``-1`` s'il n'y en a aucun. Le début de la recherche peut être spécifié avec ``from``, continuant vers la fin du tableau.
 
-\ ``method`` is a callable that takes an element of the array, and returns a :ref:`bool<class_bool>`.
+\ ``method`` est un objet appelable qui attend un élément du tableau et renvoie un booléen :ref:`bool<class_bool>`.
 
-\ **Note:** If you just want to know whether the array contains *anything* that satisfies ``method``, use :ref:`any()<class_Array_method_any>`.
+\ **Note :** Si vous voulez juste savoir si le tableau contient *quelque chose* qui satisfait ``method``, utilisez :ref:`any()<class_Array_method_any>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    func is_even(number):
-        return number % 2 == 0
+    func est_pair(nombre):
+        return nombre % 2 == 0
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_even.bind())) # Prints 2
+        print([1, 3, 4, 7].find_custom(est_pair.bind())) # Affiche 2
 
-    # Another example using `bind()` to pass an additional parameter:
-    func is_specific_number(number, expected):
-        return number == expected
+    # Autre exemple utilisant `bind()` pour passer un paramètre supplémentaire :
+    func est_nombre_particulier(nombre, attendu):
+        return nombre == attendu
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_specific_number.bind(4))) # Prints 2
+        print([1, 3, 4, 7].find_custom(est_nombre_particulier.bind(4))) # Affiche 2
 
 
 

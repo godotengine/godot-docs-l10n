@@ -87,7 +87,7 @@ enum **LoopMode**: :ref:`🔗<enum_SpriteFrames_LoopMode>`
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_NONE** = ``0``
 
-The animation plays once and stops when it reaches the end, or the start if played in reverse.
+动画只播放一次，播放到末尾时就会停止；如果是倒放，则播放到开头时停止。
 
 .. _class_SpriteFrames_constant_LOOP_LINEAR:
 
@@ -95,7 +95,7 @@ The animation plays once and stops when it reaches the end, or the start if play
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_LINEAR** = ``1``
 
-The animation restarts from the beginning when it reaches the end, or from the end if played in reverse, repeating continuously.
+当动画到达结尾时，会从开头重新开始；如果逆序播放，则从结尾重新开始，从而实现连续不断的循环。
 
 .. _class_SpriteFrames_constant_LOOP_PINGPONG:
 
@@ -103,9 +103,9 @@ The animation restarts from the beginning when it reaches the end, or from the e
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_PINGPONG** = ``2``
 
-The animation alternates direction each time it reaches the end or start, playing forward and then in reverse repeatedly.
+动画每次到达结尾或开头时都会交替播放方向，反复进行正向播放和逆向播放。
 
-\ **Note:** Both :ref:`AnimatedSprite2D<class_AnimatedSprite2D>` and :ref:`AnimatedSprite3D<class_AnimatedSprite3D>` play the first/last frame for its duration only once at each end of the animation loop (instead of twice, once per forward/backward animation direction).
+\ **注意：** :ref:`AnimatedSprite2D<class_AnimatedSprite2D>` 和 :ref:`AnimatedSprite3D<class_AnimatedSprite3D>` 在动画循环的每一端，仅播放一次首帧/尾帧的完整时长（而不是两次，即不会在正向和逆向播放方向各播放一次）。
 
 .. rst-class:: classref-section-separator
 
@@ -184,7 +184,7 @@ The animation alternates direction each time it reaches the end or start, playin
 
 **已弃用：** Use :ref:`get_animation_loop_mode()<class_SpriteFrames_method_get_animation_loop_mode>` instead.
 
-Returns ``true`` if ``get_animation_loop_mode(anim) == LOOP_LINEAR``. Otherwise, returns ``false``.
+如果 ``get_animation_loop_mode(anim) == LOOP_LINEAR``\ （即获取到的动画循环模式为线性循环），则返回 ``true``\ 。否则，返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Returns ``true`` if ``get_animation_loop_mode(anim) == LOOP_LINEAR``. Otherwise,
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **get_animation_loop_mode**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_SpriteFrames_method_get_animation_loop_mode>`
 
-Returns the loop mode for the ``anim`` animation.
+返回 ``anim`` 动画的循环模式。
 
 .. rst-class:: classref-item-separator
 
@@ -324,9 +324,9 @@ Returns the loop mode for the ``anim`` animation.
 
 **已弃用：** Use :ref:`set_animation_loop_mode()<class_SpriteFrames_method_set_animation_loop_mode>` instead.
 
-If ``loop`` is ``false`` equivalent to ``set_animation_loop_mode(LOOP_NONE)``.
+如果 ``loop`` 为 ``false``\ ，则等同于 ``set_animation_loop_mode(LOOP_NONE)``\ ；
 
-If ``loop`` is ``true`` equivalent to ``set_animation_loop_mode(LOOP_LINEAR)``.
+如果 ``loop`` 为 ``true``\ ，则等同于 ``set_animation_loop_mode(LOOP_LINEAR)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ If ``loop`` is ``true`` equivalent to ``set_animation_loop_mode(LOOP_LINEAR)``.
 
 |void| **set_animation_loop_mode**\ (\ anim\: :ref:`StringName<class_StringName>`, loop_mode\: :ref:`LoopMode<enum_SpriteFrames_LoopMode>`\ ) :ref:`🔗<class_SpriteFrames_method_set_animation_loop_mode>`
 
-Sets the ``loop_mode`` for the ``anim`` animation.
+为 ``anim`` 动画设置 ``loop_mode``\ （循环模式）。
 
 .. rst-class:: classref-item-separator
 

@@ -606,7 +606,7 @@ Restituisce un valore che indica se il **Tween** è attualmente in esecuzione, o
 
 :ref:`bool<class_bool>` **is_valid**\ (\ ) :ref:`🔗<class_Tween_method_is_valid>`
 
-Restituisce un valore che indica se il **Tween** è valido. Un **Tween** valido è un **Tween** contenuto nell'albero della scena (ad esempio, l'array da :ref:`SceneTree.get_processed_tweens()<class_SceneTree_method_get_processed_tweens>` conterrà questo **Tween**). Un **Tween** potrebbe diventare non valido quando ha terminato il tweening, è interrotto o quando è creato con ``Tween.new()``. I **Tween** non validi non possono avere :ref:`Tweener<class_Tweener>` aggiunti.
+Restituisce un valore che indica se il **Tween** è valido. Un **Tween** valido è un **Tween** contenuto nell'albero di scene (ad esempio, l'array da :ref:`SceneTree.get_processed_tweens()<class_SceneTree_method_get_processed_tweens>` conterrà questo **Tween**). Un **Tween** potrebbe diventare non valido quando ha terminato il tweening, è interrotto o quando è creato con ``Tween.new()``. I **Tween** non validi non possono avere :ref:`Tweener<class_Tweener>` aggiunti.
 
 .. rst-class:: classref-item-separator
 
@@ -691,9 +691,9 @@ Riprende un **Tween** in pausa o interrotto.
 
 :ref:`Tween<class_Tween>` **set_ease**\ (\ ease\: :ref:`EaseType<enum_Tween_EaseType>`\ ) :ref:`🔗<class_Tween_method_set_ease>`
 
-Sets the default ease type for :ref:`PropertyTweener<class_PropertyTweener>`\ s and :ref:`MethodTweener<class_MethodTweener>`\ s appended after this method.
+Imposta il tipo di allentamento predefinito per i :ref:`PropertyTweener<class_PropertyTweener>` e i :ref:`MethodTweener<class_MethodTweener>` accodati dopo questo metodo.
 
-Before this method is called, the default ease type is :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>`.
+Prima che questo metodo venga chiamato, il tipo di allentamento predefinito è :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>`.
 
 
 .. tabs::
@@ -701,16 +701,16 @@ Before this method is called, the default ease type is :ref:`EASE_IN_OUT<class_T
  .. code-tab:: gdscript
 
     var tween = create_tween()
-    tween.tween_property(self, "position", Vector2(300, 0), 0.5) # Uses EASE_IN_OUT.
+    tween.tween_property(self, "position", Vector2(300, 0), 0.5) # Usa EASE_IN_OUT.
     tween.set_ease(Tween.EASE_IN)
-    tween.tween_property(self, "rotation_degrees", 45.0, 0.5) # Uses EASE_IN.
+    tween.tween_property(self, "rotation_degrees", 45.0, 0.5) # Usa EASE_IN.
 
  .. code-tab:: csharp
 
     Tween tween = CreateTween();
-    tween.TweenProperty(this, "position", new Vector2(300, 0), 0.5); // Uses EaseType.InOut.
+    tween.TweenProperty(this, "position", new Vector2(300, 0), 0.5); // Usa EaseType.InOut.
     tween.SetEase(Tween.EaseType.In);
-    tween.TweenProperty(this, "rotation_degrees", 45.0, 0.5); // Uses EaseType.In.
+    tween.TweenProperty(this, "rotation_degrees", 45.0, 0.5); // Usa EaseType.In.
 
 
 

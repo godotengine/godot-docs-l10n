@@ -1496,7 +1496,7 @@ Imposta il valore di una chiave esistente.
 
 |void| **track_set_path**\ (\ track_idx\: :ref:`int<class_int>`, path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_Animation_method_track_set_path>`
 
-Imposta il percorso di una traccia. I percorsi devono essere validi percorsi di albero di scena a un nodo e devono essere specificati a partire da :ref:`AnimationMixer.root_node<class_AnimationMixer_property_root_node>` che riprodurrà l'animazione. Le tracce che controllano le proprietà o le ossa devono aggiungere il loro nome dopo il percorso, separato da ``":"``.
+Imposta il percorso di una traccia. I percorsi devono essere validi percorsi di albero di scene a un nodo e devono essere specificati a partire da :ref:`AnimationMixer.root_node<class_AnimationMixer_property_root_node>` che riprodurrà l'animazione. Le tracce che controllano le proprietà o le ossa devono aggiungere il loro nome dopo il percorso, separato da ``":"``.
 
 Ad esempio, ``"character/skeleton:ankle"`` o ``"character/mesh:transform/local"``.
 

@@ -14,13 +14,13 @@ Tipo di dati d'immagine.
 Descrizione
 ----------------------
 
-Native image datatype. Contains image data which can be converted to an :ref:`ImageTexture<class_ImageTexture>` and provides commonly used *image processing* methods. The maximum width and height for an **Image** are :ref:`MAX_WIDTH<class_Image_constant_MAX_WIDTH>` and :ref:`MAX_HEIGHT<class_Image_constant_MAX_HEIGHT>`.
+Tipo di dati d'immagine nativo. Contiene dati d'immagine che possono essere convertiti in un :ref:`ImageTexture<class_ImageTexture>` e fornisce metodi di *elaborazione delle immagini* di uso comune. La larghezza e l'altezza massime per un **Image** sono :ref:`MAX_WIDTH<class_Image_constant_MAX_WIDTH>` e :ref:`MAX_HEIGHT<class_Image_constant_MAX_HEIGHT>`.
 
-An **Image** cannot be assigned to a texture property of an object directly (such as :ref:`Sprite2D.texture<class_Sprite2D_property_texture>`), and has to be converted manually to an :ref:`ImageTexture<class_ImageTexture>` first.
+Un **Image** non può essere assegnato direttamente a una proprietà texture di un oggetto (come :ref:`Sprite2D.texture<class_Sprite2D_property_texture>`) e deve essere prima convertito manualmente in un :ref:`ImageTexture<class_ImageTexture>`.
 
-\ **Note:** Methods that modify the image data cannot be used on VRAM-compressed images. Use :ref:`decompress()<class_Image_method_decompress>` to convert the image to an uncompressed format first.
+\ **Nota:** I metodi che modificano i dati di un immagine non si possono utilizzare su immagini compresse in VRAM. Usa :ref:`decompress()<class_Image_method_decompress>` per convertire prima l'immagine in un formato non compresso.
 
-\ **Note:** The maximum image size is 16384×16384 pixels due to graphics hardware limitations. Larger images may fail to import.
+\ **Nota:** Le dimensioni massime di un'immagine sono 16384×16384 pixel a causa di limitazioni hardware grafiche. Immagini più grandi potrebbero non essere importate.
 
 .. rst-class:: classref-introduction-group
 
@@ -1057,13 +1057,13 @@ Rimuove i mipmap dell'immagine.
 
 :ref:`Error<enum_@GlobalScope_Error>` **compress**\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, source\: :ref:`CompressSource<enum_Image_CompressSource>` = 0, astc_format\: :ref:`ASTCFormat<enum_Image_ASTCFormat>` = 0\ ) :ref:`🔗<class_Image_method_compress>`
 
-Compresses the image with a VRAM-compressed format to use less memory. Can not directly access pixel data while the image is compressed. Returns error if the chosen compression mode is not available.
+Comprime l'immagine per usare meno memoria. Non è possibile accedere direttamente ai dati dei pixel mentre l'immagine è compressa. Restituisce un errore se la modalità di compressione scelta non è disponibile.
 
-The ``source`` parameter helps to pick the best compression method for DXT and ETC2 formats. It is ignored for ASTC compression.
+Il parametro ``source`` aiuta a scegliere il metodo di compressione migliore per i formati DXT ed ETC2. È ignorato per la compressione ASTC.
 
-The ``astc_format`` parameter is only taken into account when using ASTC compression; it is ignored for all other formats.
+Il parametro ``astc_format`` viene considerato solo quando si utilizza la compressione ASTC; è ignorato per tutti gli altri formati.
 
-\ **Note:** :ref:`compress()<class_Image_method_compress>` is only supported in editor builds. When run in an exported project, this method always returns :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`.
+\ **Nota:** :ref:`compress()<class_Image_method_compress>` è supportato solo nelle build dell'editor. Quando è eseguito in un progetto esportato, questo metodo restituisce sempre :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1075,13 +1075,13 @@ The ``astc_format`` parameter is only taken into account when using ASTC compres
 
 :ref:`Error<enum_@GlobalScope_Error>` **compress_from_channels**\ (\ mode\: :ref:`CompressMode<enum_Image_CompressMode>`, channels\: :ref:`UsedChannels<enum_Image_UsedChannels>`, astc_format\: :ref:`ASTCFormat<enum_Image_ASTCFormat>` = 0\ ) :ref:`🔗<class_Image_method_compress_from_channels>`
 
-Compresses the image with a VRAM-compressed format to use less memory. Can not directly access pixel data while the image is compressed. Returns error if the chosen compression mode is not available.
+Comprime l'immagine per usare meno memoria. Non è possibile accedere direttamente ai dati pixel mentre l'immagine è compressa. Restituisce un errore se la modalità di compressione scelta non è disponibile.
 
-This is an alternative to :ref:`compress()<class_Image_method_compress>` that lets the user supply the channels used in order for the compressor to pick the best DXT and ETC2 formats. For other formats (non DXT or ETC2), this argument is ignored.
+Questa è un'alternativa a :ref:`compress()<class_Image_method_compress>` che consente all'utente di fornire i canali utilizzati affinché il compressore scelga i migliori formati DXT ed ETC2. Per altri formati (non DXT o ETC2), questo argomento è ignorato.
 
-The ``astc_format`` parameter is only taken into account when using ASTC compression; it is ignored for all other formats.
+Il parametro ``astc_format`` viene considerato solo quando si utilizza la compressione ASTC; è ignorato per tutti gli altri formati.
 
-\ **Note:** :ref:`compress_from_channels()<class_Image_method_compress_from_channels>` is only supported in editor builds. When run in an exported project, this method always returns :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`.
+\ **Nota:** :ref:`compress_from_channels()<class_Image_method_compress_from_channels>` è supportato solo nelle build dell'editor. Quando è eseguito in un progetto esportato, questo metodo restituisce sempre :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1181,7 +1181,7 @@ Ritaglia l'immagine in base ai parametri ``width`` e ``height``. Se le dimension
 
 :ref:`Error<enum_@GlobalScope_Error>` **decompress**\ (\ ) :ref:`🔗<class_Image_method_decompress>`
 
-Decompresses the image if it is VRAM-compressed in a supported format. This increases memory utilization, but allows modifying the image. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the format is supported, otherwise :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`. All VRAM-compressed formats supported by Godot can be decompressed with this method, except :ref:`FORMAT_ETC2_R11S<class_Image_constant_FORMAT_ETC2_R11S>`, :ref:`FORMAT_ETC2_RG11S<class_Image_constant_FORMAT_ETC2_RG11S>`, and :ref:`FORMAT_ETC2_RGB8A1<class_Image_constant_FORMAT_ETC2_RGB8A1>`.
+Decomprime l'immagine se è compressa in VRAM in un formato supportato. Ciò aumenta l'utilizzo della memoria, ma consente di modificare l'immagine. Restituisce :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` se il formato è supportato, altrimenti :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`. È possibile decomprimere tutti i formati compressi in VRAM supportati da Godot con questo metodo, tranne :ref:`FORMAT_ETC2_R11S<class_Image_constant_FORMAT_ETC2_R11S>`, :ref:`FORMAT_ETC2_RG11S<class_Image_constant_FORMAT_ETC2_RG11S>` e :ref:`FORMAT_ETC2_RGB8A1<class_Image_constant_FORMAT_ETC2_RGB8A1>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1899,7 +1899,7 @@ Sovrascrive i dati di un'**Image** esistente. Equivalente non statico di :ref:`c
 
 |void| **set_pixel**\ (\ x\: :ref:`int<class_int>`, y\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Image_method_set_pixel>`
 
-Sets the :ref:`Color<class_Color>` of the pixel at ``(x, y)`` to ``color``.
+Imposta il :ref:`Color<class_Color>` del pixel nelle coordinate ``(x, y)`` su ``color``.
 
 
 .. tabs::
@@ -1910,7 +1910,7 @@ Sets the :ref:`Color<class_Color>` of the pixel at ``(x, y)`` to ``color``.
     var img_height = 5
     var img = Image.create(img_width, img_height, false, Image.FORMAT_RGBA8)
 
-    img.set_pixel(1, 2, Color.RED) # Sets the color at (1, 2) to red.
+    img.set_pixel(1, 2, Colore.ROSSO) # Imposta il colore in (1, 2) su rosso.
 
  .. code-tab:: csharp
 
@@ -1918,15 +1918,15 @@ Sets the :ref:`Color<class_Color>` of the pixel at ``(x, y)`` to ``color``.
     int imgHeight = 5;
     var img = Image.Create(imgWidth, imgHeight, false, Image.Format.Rgba8);
 
-    img.SetPixel(1, 2, Colors.Red); // Sets the color at (1, 2) to red.
+    img.SetPixel(1, 2, Colori.Rosso); // Imposta il colore in (1, 2) su rosso.
 
 
 
-This is the same as :ref:`set_pixelv()<class_Image_method_set_pixelv>`, but with a two integer arguments instead of a :ref:`Vector2i<class_Vector2i>` argument.
+Questo è lo stesso di :ref:`set_pixelv()<class_Image_method_set_pixelv>`, ma con due argomenti interi invece di un argomento :ref:`Vector2i<class_Vector2i>`.
 
-\ **Note:** Depending on the image's format, the color set here may be clamped or lose precision. Do not assume the color returned by :ref:`get_pixel()<class_Image_method_get_pixel>` to be identical to the one set here; any comparisons will likely need to use an approximation like :ref:`Color.is_equal_approx()<class_Color_method_is_equal_approx>`.
+\ **Nota:** A seconda del formato dell'immagine, il colore impostato qui potrebbe essere limitato o perdere precisione. Non è garantito che il colore restituito da :ref:`get_pixel()<class_Image_method_get_pixel>` sia identico a quello impostato qui; qualsiasi confronto richiederà probabilmente l'uso di un'approssimazione come :ref:`Color.is_equal_approx()<class_Color_method_is_equal_approx>`.
 
-\ **Note:** On grayscale image formats, only the red channel of ``color`` is used (and alpha if relevant). The green and blue channels are ignored.
+\ **Nota:** Nei formati di immagine in scala di grigi, è utilizzato solo il canale rosso di ``color`` (e il canale alfa, se pertinente). I canali verde e blu sono ignorati.
 
 .. rst-class:: classref-item-separator
 
@@ -1938,7 +1938,7 @@ This is the same as :ref:`set_pixelv()<class_Image_method_set_pixelv>`, but with
 
 |void| **set_pixelv**\ (\ point\: :ref:`Vector2i<class_Vector2i>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Image_method_set_pixelv>`
 
-Sets the :ref:`Color<class_Color>` of the pixel at ``point`` to ``color``.
+Imposta il :ref:`Color<class_Color>` del pixel nelle coordinate ``point`` su ``color``.
 
 
 .. tabs::
@@ -1949,7 +1949,7 @@ Sets the :ref:`Color<class_Color>` of the pixel at ``point`` to ``color``.
     var img_height = 5
     var img = Image.create(img_width, img_height, false, Image.FORMAT_RGBA8)
 
-    img.set_pixelv(Vector2i(1, 2), Color.RED) # Sets the color at (1, 2) to red.
+    img.set_pixelv(Vector2i(1, 2), Color.RED) # Imposta il colore in (1, 2) su rosso.
 
  .. code-tab:: csharp
 
@@ -1957,15 +1957,15 @@ Sets the :ref:`Color<class_Color>` of the pixel at ``point`` to ``color``.
     int imgHeight = 5;
     var img = Image.Create(imgWidth, imgHeight, false, Image.Format.Rgba8);
 
-    img.SetPixelv(new Vector2I(1, 2), Colors.Red); // Sets the color at (1, 2) to red.
+    img.SetPixelv(new Vector2I(1, 2), Colors.Red); // Imposta il colore in (1, 2) su rosso.
 
 
 
-This is the same as :ref:`set_pixel()<class_Image_method_set_pixel>`, but with a :ref:`Vector2i<class_Vector2i>` argument instead of two integer arguments.
+Questo è lo stesso di :ref:`set_pixel()<class_Image_method_set_pixel>`, ma con un argomento :ref:`Vector2i<class_Vector2i>` invece di due argomenti interi.
 
-\ **Note:** Depending on the image's format, the color set here may be clamped or lose precision. Do not assume the color returned by :ref:`get_pixelv()<class_Image_method_get_pixelv>` to be identical to the one set here; any comparisons will likely need to use an approximation like :ref:`Color.is_equal_approx()<class_Color_method_is_equal_approx>`.
+\ **Nota:** A seconda del formato dell'immagine, il colore impostato qui potrebbe essere limitato o perdere precisione. Non è garantito che il colore restituito da :ref:`get_pixel()<class_Image_method_get_pixel>` sia identico a quello impostato qui; qualsiasi confronto richiederà probabilmente l'uso di un'approssimazione come :ref:`Color.is_equal_approx()<class_Color_method_is_equal_approx>`.
 
-\ **Note:** On grayscale image formats, only the red channel of ``color`` is used (and alpha if relevant). The green and blue channels are ignored.
+\ **Nota:** Nei formati di immagine in scala di grigi, è utilizzato solo il canale rosso di ``color`` (e il canale alfa, se pertinente). I canali verde e blu sono ignorati.
 
 .. rst-class:: classref-item-separator
 

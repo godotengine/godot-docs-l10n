@@ -140,7 +140,7 @@ Descrizioni dei metodi
 
 Se ``true``, il rettangolo di delimitazione è sullo schermo.
 
-\ **Nota:** Ci vuole un frame per determinare la visibilità di **VisibleOnScreenNotifier2D** una volta aggiunto all'albero di scena, quindi questo metodo restituirà sempre ``false`` subito dopo essere stato istanziato, prima del passaggio di disegno.
+\ **Nota:** Ci vuole un frame per determinare la visibilità di **VisibleOnScreenNotifier2D** una volta aggiunto all'albero di scene, quindi questo metodo restituirà sempre ``false`` subito dopo essere stato istanziato, prima del passaggio di disegno.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

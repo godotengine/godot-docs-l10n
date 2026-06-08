@@ -16,7 +16,7 @@ Document related language server functionality.
 Descripción
 ----------------------
 
-Provides language server functionality related to documents.
+Proporciona funcionalidad de servidor de lenguaje relacionada con documentos.
 
 .. rst-class:: classref-reftable-group
 

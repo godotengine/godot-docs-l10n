@@ -1133,9 +1133,9 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 |void| **seek_end**\ (\ position\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_FileAccess_method_seek_end>`
 
-Sets the file cursor to the specified position in bytes, from the end of the file. This changes the value returned by :ref:`get_position()<class_FileAccess_method_get_position>`.
+将文件光标设置到距离文件末尾指定字节数的位置。这会改变 :ref:`get_position()<class_FileAccess_method_get_position>` 返回的值。
 
-\ **Note:** This is an offset, so you should use negative numbers otherwise the file cursor will move past the end of the file.
+\ **注意：** 这是一个偏移量，所以你应该使用负数，否则文件光标会移动到文件末尾之外。
 
 .. rst-class:: classref-item-separator
 

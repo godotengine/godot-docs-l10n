@@ -45,37 +45,39 @@ Proprietà
 .. table::
    :widths: auto
 
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` | :ref:`clip_children<class_CanvasItem_property_clip_children>`             | ``0``                 |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`int<class_int>`                                     | :ref:`light_mask<class_CanvasItem_property_light_mask>`                   | ``1``                 |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`Material<class_Material>`                           | :ref:`material<class_CanvasItem_property_material>`                       |                       |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`Color<class_Color>`                                 | :ref:`modulate<class_CanvasItem_property_modulate>`                       | ``Color(1, 1, 1, 1)`` |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`Color<class_Color>`                                 | :ref:`self_modulate<class_CanvasItem_property_self_modulate>`             | ``Color(1, 1, 1, 1)`` |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`bool<class_bool>`                                   | :ref:`show_behind_parent<class_CanvasItem_property_show_behind_parent>`   | ``false``             |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`TextureFilter<enum_CanvasItem_TextureFilter>`       | :ref:`texture_filter<class_CanvasItem_property_texture_filter>`           | ``0``                 |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>`       | :ref:`texture_repeat<class_CanvasItem_property_texture_repeat>`           | ``0``                 |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`bool<class_bool>`                                   | :ref:`top_level<class_CanvasItem_property_top_level>`                     | ``false``             |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`bool<class_bool>`                                   | :ref:`use_parent_material<class_CanvasItem_property_use_parent_material>` | ``false``             |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`int<class_int>`                                     | :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>`       | ``1``                 |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`bool<class_bool>`                                   | :ref:`visible<class_CanvasItem_property_visible>`                         | ``true``              |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`bool<class_bool>`                                   | :ref:`y_sort_enabled<class_CanvasItem_property_y_sort_enabled>`           | ``false``             |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`bool<class_bool>`                                   | :ref:`z_as_relative<class_CanvasItem_property_z_as_relative>`             | ``true``              |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
-   | :ref:`int<class_int>`                                     | :ref:`z_index<class_CanvasItem_property_z_index>`                         | ``0``                 |
-   +-----------------------------------------------------------+---------------------------------------------------------------------------+-----------------------+
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>`           | :ref:`clip_children<class_CanvasItem_property_clip_children>`                     | ``0``                 |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`int<class_int>`                                               | :ref:`light_mask<class_CanvasItem_property_light_mask>`                           | ``1``                 |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Material<class_Material>`                                     | :ref:`material<class_CanvasItem_property_material>`                               |                       |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Color<class_Color>`                                           | :ref:`modulate<class_CanvasItem_property_modulate>`                               | ``Color(1, 1, 1, 1)`` |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` | :ref:`oversampling_with_scale<class_CanvasItem_property_oversampling_with_scale>` | ``0``                 |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`Color<class_Color>`                                           | :ref:`self_modulate<class_CanvasItem_property_self_modulate>`                     | ``Color(1, 1, 1, 1)`` |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`bool<class_bool>`                                             | :ref:`show_behind_parent<class_CanvasItem_property_show_behind_parent>`           | ``false``             |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`TextureFilter<enum_CanvasItem_TextureFilter>`                 | :ref:`texture_filter<class_CanvasItem_property_texture_filter>`                   | ``0``                 |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>`                 | :ref:`texture_repeat<class_CanvasItem_property_texture_repeat>`                   | ``0``                 |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`bool<class_bool>`                                             | :ref:`top_level<class_CanvasItem_property_top_level>`                             | ``false``             |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`bool<class_bool>`                                             | :ref:`use_parent_material<class_CanvasItem_property_use_parent_material>`         | ``false``             |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`int<class_int>`                                               | :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>`               | ``1``                 |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`bool<class_bool>`                                             | :ref:`visible<class_CanvasItem_property_visible>`                                 | ``true``              |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`bool<class_bool>`                                             | :ref:`y_sort_enabled<class_CanvasItem_property_y_sort_enabled>`                   | ``false``             |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`bool<class_bool>`                                             | :ref:`z_as_relative<class_CanvasItem_property_z_as_relative>`                     | ``true``              |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+   | :ref:`int<class_int>`                                               | :ref:`z_index<class_CanvasItem_property_z_index>`                                 | ``0``                 |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
 
 .. rst-class:: classref-reftable-group
 
@@ -447,6 +449,48 @@ Questo nodo è utilizzato come maschera ed è anche disegnato. La maschera si ba
 
 Rappresenta la dimensione dell'enumerazione :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>`.
 
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_CanvasItem_OversamplingWithScale:
+
+.. rst-class:: classref-enumeration
+
+enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale>`
+
+.. _class_CanvasItem_constant_OVERSAMPLING_WITH_SCALE_PARENT_NODE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_PARENT_NODE** = ``0``
+
+The **CanvasItem** will inherit the oversampling mode from its parent.
+
+.. _class_CanvasItem_constant_OVERSAMPLING_WITH_SCALE_DISABLED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_DISABLED** = ``1``
+
+The oversampling is not affected by **CanvasItem** scale, and is equal to the :ref:`Viewport<class_Viewport>` oversampling.
+
+.. _class_CanvasItem_constant_OVERSAMPLING_WITH_SCALE_ENABLED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_ENABLED** = ``2``
+
+The oversampling is a product of **CanvasItem** scale and :ref:`Viewport<class_Viewport>` oversampling.
+
+.. _class_CanvasItem_constant_OVERSAMPLING_WITH_SCALE_MAX:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_MAX** = ``3``
+
+Represents the size of the :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` enum.
+
 .. rst-class:: classref-section-separator
 
 ----
@@ -508,9 +552,9 @@ Il **CanvasItem** è entrato nel canvas.
 
 **NOTIFICATION_EXIT_CANVAS** = ``33`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_EXIT_CANVAS>`
 
-The **CanvasItem** has exited the canvas.
+Il **CanvasItem** è uscito dal canvas.
 
-This notification is sent in reversed order.
+Questa notifica è inviata in ordine inverso.
 
 .. _class_CanvasItem_constant_NOTIFICATION_WORLD_2D_CHANGED:
 
@@ -594,6 +638,23 @@ Il materiale applicato a questo **CanvasItem**.
 - :ref:`Color<class_Color>` **get_modulate**\ (\ )
 
 Il colore applicato a questo **CanvasItem**. Questa proprietà influisce sui **CanvasItem** figli, a differenza di :ref:`self_modulate<class_CanvasItem_property_self_modulate>` che influisce solo sul nodo stesso.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_CanvasItem_property_oversampling_with_scale:
+
+.. rst-class:: classref-property
+
+:ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **oversampling_with_scale** = ``0`` :ref:`🔗<class_CanvasItem_property_oversampling_with_scale>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_oversampling_with_scale**\ (\ value\: :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>`\ )
+- :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **get_oversampling_with_scale**\ (\ )
+
+If enabled, oversampling for this **CanvasItem** is automatically adjusted with scale.
 
 .. rst-class:: classref-item-separator
 
@@ -899,11 +960,11 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 |void| **draw_colored_polygon**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, color\: :ref:`Color<class_Color>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>` = PackedVector2Array(), texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_colored_polygon>`
 
-Draws a colored polygon of any number of points, convex or concave. The points in the ``points`` array are defined in local space. Unlike :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`, a single color must be specified for the whole polygon.
+Disegna un poligono colorato con un numero qualsiasi di punti, convesso o concavo. I punti nell'array ``points`` sono definiti in spazio locale. A differenza di :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`, è necessario specificare un singolo colore per l'intero poligono.
 
-\ **Note:** If you frequently redraw the same polygon with a large number of vertices, consider pre-calculating the triangulation with :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` and using :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>`, or :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+\ **Nota:** Se spesso viene ridisegnato lo stesso poligono con un numero elevato di vertici, considera di precalcolare la triangolazione con :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` e di usare :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>` o :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -983,9 +1044,9 @@ Dopo aver inviato tutte le sezioni di animazione tramite :ref:`draw_animation_sl
 
 |void| **draw_lcd_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_lcd_texture_rect_region>`
 
-Draws a textured rectangle region of the font texture with LCD subpixel anti-aliasing at a given position, optionally modulated by a color. The ``rect`` is defined in local space.
+Disegna una regione rettangolare texturizzata della texture del font con anti-aliasing dei subpixel LCD in una posizione specifica, opzionalmente modulata da un colore. Il rettangolo ``rect`` è definito in spazio locale.
 
-Texture is drawn using the following blend operation, blend mode of the :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` is ignored:
+La texture viene disegnata attraverso la seguente operazione di fusione, ignorando la modalità di fusione del :ref:`CanvasItemMaterial<class_CanvasItemMaterial>`:
 
 ::
 
@@ -994,7 +1055,7 @@ Texture is drawn using the following blend operation, blend mode of the :ref:`Ca
     dst.b = texture.b * modulate.b * modulate.a + dst.b * (1.0 - texture.b * modulate.a);
     dst.a = modulate.a + dst.a * (1.0 - modulate.a);
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -1034,13 +1095,13 @@ Draws a :ref:`Mesh<class_Mesh>` in 2D, using the provided texture. See :ref:`Mes
 
 |void| **draw_msdf_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), outline\: :ref:`float<class_float>` = 0.0, pixel_range\: :ref:`float<class_float>` = 4.0, scale\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_CanvasItem_method_draw_msdf_texture_rect_region>`
 
-Draws a textured rectangle region of the multichannel signed distance field texture at a given position, optionally modulated by a color. The ``rect`` is defined in local space. See :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` for more information and caveats about MSDF font rendering.
+Disegna una regione rettangolare con texture della texture MSDF in una posizione specificata, modulata facoltativamente da un colore. Il rettangolo ``rect`` è definito in spazio locale. Vedi :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` per ulteriori informazioni e avvertimenti sul rendering dei font MSDF.
 
-If ``outline`` is positive, each alpha channel value of pixel in region is set to maximum value of true distance in the ``outline`` radius.
+Se ``outline`` è positivo, ogni valore del canale alfa del pixel nella regione viene impostato sul valore massimo della distanza reale nel raggio ``outline``.
 
-Value of the ``pixel_range`` should the same that was used during distance field texture generation.
+Il valore di ``pixel_range`` dovrebbe essere lo stesso usato durante la generazione della texture MSDF.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -1122,11 +1183,11 @@ Draws a :ref:`MultiMesh<class_MultiMesh>` in 2D with the provided texture. See :
 
 |void| **draw_polygon**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>` = PackedVector2Array(), texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_polygon>`
 
-Draws a solid polygon of any number of points, convex or concave. Unlike :ref:`draw_colored_polygon()<class_CanvasItem_method_draw_colored_polygon>`, each point's color can be changed individually. The ``points`` array is defined in local space. See also :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` and :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`. If you need more flexibility (such as being able to use bones), use :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>` instead.
+Disegna un poligono solido con un numero qualsiasi di punti, convessi o concavi. A differenza di :ref:`draw_colored_polygon()<class_CanvasItem_method_draw_colored_polygon>`, è possibile modificare il colore di ogni punto individualmente. L'array ``points`` è definito in spazio locale. Vedi anche :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` e :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`. Se c'è bisogno di maggiore flessibilità (ad esempio, per poter utilizzare ossa), usa invece :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
 
-\ **Note:** If you frequently redraw the same polygon with a large number of vertices, consider pre-calculating the triangulation with :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` and using :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>`, or :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+\ **Nota:** Se spesso viene ridisegnato lo stesso poligono con un numero elevato di vertici, considera di precalcolare la triangolazione con :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` e di usare :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>` o :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -1166,9 +1227,9 @@ Se ``width`` è negativo, verrà ignorato e la polilinea verrà disegnata utiliz
 
 |void| **draw_primitive**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>`, texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_primitive>`
 
-Draws a custom primitive. 1 point for a point, 2 points for a line, 3 points for a triangle, and 4 points for a quad. If 0 points or more than 4 points are specified, nothing will be drawn and an error message will be printed. The ``points`` array is defined in local space. See also :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`, and :ref:`draw_rect()<class_CanvasItem_method_draw_rect>`.
+Disegna una primitiva personalizzata. 1 punto per un punto, 2 punti per una linea, 3 punti per un triangolo e 4 punti per un quadrato. Se vengono specificati 0 punti o più di 4 punti, nulla verrà disegnato e verrà stampato un messaggio di errore. L'array ``points`` è definito in spazio locale. Vedi anche :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>` e :ref:`draw_rect()<class_CanvasItem_method_draw_rect>`.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -1226,9 +1287,9 @@ Imposta una trasformazione locale personalizzata per il passaggio di disegno, tr
 
 |void| **draw_string**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_string>`
 
-Draws ``text`` using the specified ``font`` at the ``pos`` in local space (bottom-left corner using the baseline of the font). The text will have its color multiplied by ``modulate``. If ``width`` is greater than or equal to 0, the text will be clipped if it exceeds the specified width. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+Disegna il testo ``text`` attraverso il ``font`` specificato nella posizione ``pos`` in spazio locale (angolo in basso a sinistra, usando la linea di base del font). Il colore del testo verrà moltiplicato per ``modulate``. Se ``width`` è maggiore o uguale a 0, il testo verrà troncato se supera la larghezza specificata. Se ``oversampling`` è maggiore di zero, è utilizzato come fattore di sovracampionamento del font, altrimenti sono utilizzate le impostazioni di sovracampionamento della viewport.
 
-\ **Example:** Draw "Hello world", using the project's default font:
+\ **Esempio:** Disegna "Ciao mondo", usando il font predefinito del progetto:
 
 
 .. tabs::
@@ -1243,7 +1304,7 @@ Draws ``text`` using the specified ``font`` at the ``pos`` in local space (botto
 
 
 
-See also :ref:`Font.draw_string()<class_Font_method_draw_string>`.
+Vedi anche :ref:`Font.draw_string()<class_Font_method_draw_string>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1295,9 +1356,9 @@ Draws a texture at a given position. The ``position`` is defined in local space.
 
 |void| **draw_texture_rect**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, tile\: :ref:`bool<class_bool>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_texture_rect>`
 
-Draws a textured rectangle at a given position, optionally modulated by a color. The ``rect`` is defined in local space. If ``transpose`` is ``true``, the texture will have its X and Y coordinates swapped. See also :ref:`draw_rect()<class_CanvasItem_method_draw_rect>` and :ref:`draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>`.
+Disegna un rettangolo con texture in una determinata posizione, modulato facoltativamente da un colore. Il rettangolo ``rect`` è definito in spazio locale. Se ``transpose`` è ``true``, la texture avrà le sue coordinate X e Y scambiate. Vedi anche :ref:`draw_rect()<class_CanvasItem_method_draw_rect>` e :ref:`draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>`.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -1309,9 +1370,9 @@ Draws a textured rectangle at a given position, optionally modulated by a color.
 
 |void| **draw_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false, clip_uv\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_CanvasItem_method_draw_texture_rect_region>`
 
-Draws a textured rectangle from a texture's region (specified by ``src_rect``) at a given position in local space, optionally modulated by a color. If ``transpose`` is ``true``, the texture will have its X and Y coordinates swapped. See also :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
+Disegna un rettangolo con texture da una regione di texture (specificata da ``src_rect``) in una determinata posizione in spazio locale, modulato facoltativamente da un colore. Se ``transpose`` è ``true``, la texture avrà le sue coordinate X e Y scambiate. Vedi anche :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
 .. rst-class:: classref-item-separator
 

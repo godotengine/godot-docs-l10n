@@ -429,11 +429,11 @@ ArrayMesh
 
 |void| **surface_update_attribute_region**\ (\ surf_idx\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ArrayMesh_method_surface_update_attribute_region>`
 
-Updates the attribute buffer of this mesh's surface with the given ``data``. The expected data per attribute is 12 or 8 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector3<class_Vector3>` or :ref:`Vector2<class_Vector2>` vertices. This value can be determined with :ref:`RenderingServer.mesh_surface_get_format_attribute_stride()<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>`.
+使用给定的 ``data``\ （数据）来更新该网格表面的属性缓冲区。根据网格使用的是 :ref:`Vector3<class_Vector3>` 还是 :ref:`Vector2<class_Vector2>` 顶点，每个属性的预期数据大小为 12 字节或 8 字节（每 4 字节对应一个浮点数，每 2 个浮点数对应一个 :ref:`Vector2<class_Vector2>`\ ，每 3 个浮点数对应一个 :ref:`Vector3<class_Vector3>`\ ）。这个具体的数值可以通过 :ref:`RenderingServer.mesh_surface_get_format_attribute_stride()<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>` 方法来确定。
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each attribute.
+可以通过 ``offset``\ （偏移量）来更改更新的起始位置。在大多数情况下，\ ``offset`` 的值应该是 12 字节的倍数，以便与每个属性对齐。
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of attribute locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+用于 ``data`` 参数的属性位置 :ref:`PackedVector3Array<class_PackedVector3Array>`\ （打包的三维向量数组），可以使用 :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` 方法转换成 :ref:`PackedByteArray<class_PackedByteArray>`\ （打包的字节数组）来使用。
 
 .. rst-class:: classref-item-separator
 
@@ -445,11 +445,11 @@ A :ref:`PackedVector3Array<class_PackedVector3Array>` of attribute locations can
 
 |void| **surface_update_skin_region**\ (\ surf_idx\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ArrayMesh_method_surface_update_skin_region>`
 
-Updates the skin buffer of this mesh's surface with the given ``data``. The expected data per skin is 12 or 8 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector3<class_Vector3>` or :ref:`Vector2<class_Vector2>` vertices. This value can be determined with :ref:`RenderingServer.mesh_surface_get_format_skin_stride()<class_RenderingServer_method_mesh_surface_get_format_skin_stride>`.
+使用给定的 ``data``\ （数据）来更新该网格表面的蒙皮缓冲区。根据网格使用的是 :ref:`Vector3<class_Vector3>` 还是 :ref:`Vector2<class_Vector2>` 顶点，每个蒙皮数据的预期大小为 12 字节或 8 字节（每 4 字节对应一个浮点数，每 2 个浮点数对应一个 :ref:`Vector2<class_Vector2>`\ ，每 3 个浮点数对应一个 :ref:`Vector3<class_Vector3>`\ ）。这个具体的数值可以通过 :ref:`RenderingServer.mesh_surface_get_format_skin_stride()<class_RenderingServer_method_mesh_surface_get_format_skin_stride>` 方法来确定。
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each skin.
+可以通过 ``offset``\ （偏移量）来更改更新的起始位置。在大多数情况下，\ ``offset`` 的值应该是 12 字节的倍数，以便与每个蒙皮数据对齐。
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of skin locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+用于 ``data`` 参数的蒙皮位置 :ref:`PackedVector3Array<class_PackedVector3Array>`\ （打包的三维向量数组），可以使用 :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` 方法转换成 :ref:`PackedByteArray<class_PackedByteArray>`\ （打包的字节数组）来使用。
 
 .. rst-class:: classref-item-separator
 
@@ -461,11 +461,11 @@ A :ref:`PackedVector3Array<class_PackedVector3Array>` of skin locations can be c
 
 |void| **surface_update_vertex_region**\ (\ surf_idx\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ArrayMesh_method_surface_update_vertex_region>`
 
-Updates the vertex buffer of this mesh's surface with the given ``data``. The expected data per vertex is 12 or 8 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector3<class_Vector3>` or :ref:`Vector2<class_Vector2>` vertices. This value can be determined with :ref:`RenderingServer.mesh_surface_get_format_vertex_stride()<class_RenderingServer_method_mesh_surface_get_format_vertex_stride>`.
+使用给定的 ``data``\ （数据）来更新该网格表面的顶点缓冲区。根据网格使用的是 :ref:`Vector3<class_Vector3>` 还是 :ref:`Vector2<class_Vector2>` 顶点，每个顶点的预期数据大小为 12 字节或 8 字节（每 4 字节对应一个浮点数，每 2 个浮点数对应一个 :ref:`Vector2<class_Vector2>`\ ，每 3 个浮点数对应一个 :ref:`Vector3<class_Vector3>`\ ）。这个具体的数值可以通过 :ref:`RenderingServer.mesh_surface_get_format_vertex_stride()<class_RenderingServer_method_mesh_surface_get_format_vertex_stride>` 方法来确定。
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each vertex.
+可以通过 ``offset``\ （偏移量）来更改更新的起始位置。在大多数情况下，\ ``offset`` 的值应该是 12 字节的倍数，以便与每个顶点对齐。
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of vertex locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+用于 ``data`` 参数的顶点位置 :ref:`PackedVector3Array<class_PackedVector3Array>`\ （打包的三维向量数组），可以使用 :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` 方法转换成 :ref:`PackedByteArray<class_PackedByteArray>`\ （打包的字节数组）来使用。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

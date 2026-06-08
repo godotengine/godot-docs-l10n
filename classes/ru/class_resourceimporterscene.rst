@@ -274,9 +274,9 @@ If ``true``, the mesh names will be set to the names of the nodes in the 3D mode
 
 :ref:`bool<class_bool>` **meshes/ensure_tangents** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_meshes/ensure_tangents>`
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+Если ``true``, сгенерируйте касательные вершины с помощью `Mikktspace <http://www.mikktspace.com/>`__, если входные сетки не содержат данных о касательных. По возможности рекомендуется позволить программному обеспечению для 3D-моделирования генерировать касательные при экспорте, а не полагаться на эту опцию. Касательные необходимы для корректного отображения карт нормалей и высот, а также любых функций материала/шейдера, требующих касательных.
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+Если вам не нужны функции материала, требующие касательных, отключение этой опции может уменьшить размер выходного файла и ускорить импорт, если исходный 3D-файл не содержит касательных.
 
 .. rst-class:: classref-item-separator
 

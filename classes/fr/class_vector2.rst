@@ -506,7 +506,7 @@ Renvoie le point au ``t`` donné sur la `courbe de Bézier <https://fr.wikipedia
 
 Renvoie le vecteur "réfléchi" d'une ligne définie par la normale ``n`` donnée perpendiculaire à la ligne.
 
-\ **Note:** :ref:`bounce()<class_Vector2_method_bounce>` effectue l'opération que la plupart des moteurs et des frameworks appellent ``reflect()``.
+\ **Note :** :ref:`bounce()<class_Vector2_method_bounce>` effectue l'opération que la plupart des moteurs et des frameworks appellent ``reflect()``.
 
 .. rst-class:: classref-item-separator
 

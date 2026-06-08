@@ -16,11 +16,11 @@ IterateIK3D
 描述
 ----
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to approach the goal by repeating small rotations.
+这是 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 的一个基类，它通过反复进行微小的旋转来逐步逼近目标位置。
 
-Each bone chain (setting) has one effector, which is processed in order of the setting list. You can set some limitations for each joint.
+每个骨骼链（也就是每个设置项）都有一个效应器（effector），这些效应器会按照设置列表的顺序依次进行处理。你可以为每个关节设置一些限制条件。
 
-\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/target_node``).
+\ **注意：** 这个类里的所有方法都带有一个 ``index``\ （索引）参数。这个参数用来指定当 IK 包含多个设置项时，具体返回哪一个（比如 ``settings//target_node``\ ）。
 
 .. rst-class:: classref-reftable-group
 
@@ -227,15 +227,15 @@ IK 求解器用于生成更精确结果的迭代循环次数。
 
 :ref:`Quaternion<class_Quaternion>` **get_joint_limitation_rotation_offset**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation_rotation_offset>`
 
-Returns the joint limitation rotation offset at ``joint`` in the bone chain's joint list.
+返回骨骼链关节列表中，指定 ``joint``\ （关节）处的关节限制旋转偏移量。
 
-Rotation is done in the local space which is constructed by the bone direction (in general parent to child) as the +Y axis and :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` as the +X axis.
+该旋转是在局部空间中进行的，这个局部空间的构建规则如下：以骨骼的朝向（通常是从父节点指向子节点）作为 +Y 轴，以 :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` 作为 +X 轴。
 
-If the +X and +Y axes are not orthogonal, the +X axis is implicitly modified to make it orthogonal.
+如果 +X 轴和 +Y 轴不垂直（正交），系统会自动修改 +X 轴，使其与 +Y 轴保持垂直。
 
-Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` is zero, the space is created by rotating the reference pose using the shortest arc that rotates the +Y axis of the reference pose to match the bone direction.
+此外，如果 :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` 的长度为零，系统会通过“最短弧”旋转的方式，将参考姿态（reference pose）中原本的 +Y 轴旋转至与当前骨骼朝向一致，以此构建出该局部空间。
 
-In here, the reference pose is the bone pose immediately before processing IK.
+这里的“参考姿态”，指的是在处理 IK（反向运动学）之前的那一瞬间的骨骼姿态。
 
 .. rst-class:: classref-item-separator
 
@@ -321,15 +321,15 @@ In here, the reference pose is the bone pose immediately before processing IK.
 
 |void| **set_joint_limitation_rotation_offset**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, offset\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation_rotation_offset>`
 
-Sets the joint limitation rotation offset at ``joint`` in the bone chain's joint list.
+设置骨骼链关节列表中，指定 ``joint``\ （关节）处的关节限制旋转偏移量。
 
-Rotation is done in the local space which is constructed by the bone direction (in general parent to child) as the +Y axis and :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` as the +X axis.
+旋转是在局部空间中进行的，这个局部空间的构建规则如下：以骨骼的朝向（通常是从父节点指向子节点）作为 +Y 轴，以 :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` 作为 +X 轴。
 
-If the +X and +Y axes are not orthogonal, the +X axis is implicitly modified to make it orthogonal.
+如果 +X 轴和 +Y 轴不垂直（正交），系统会自动修改 +X 轴，使其与 +Y 轴保持垂直。
 
-Also, if the length of :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` is zero, the space is created by rotating the reference pose using the shortest arc that rotates the +Y axis of the reference pose to match the bone direction.
+此外，如果 :ref:`get_joint_limitation_right_axis_vector()<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>` 的长度为零，系统会通过“最短弧”旋转的方式，将参考姿态（reference pose）中原本的 +Y 轴旋转至与当前骨骼朝向一致，以此构建出该局部空间。
 
-In here, the reference pose is the bone pose immediately before processing IK.
+这里的“参考姿态”，指的是在处理 IK（反向运动学）之前的那一瞬间的骨骼姿态。
 
 .. rst-class:: classref-item-separator
 
@@ -341,13 +341,13 @@ In here, the reference pose is the bone pose immediately before processing IK.
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_rotation_axis>`
 
-Sets the rotation axis at ``joint`` in the bone chain's joint list.
+设置骨骼链关节列表中，指定 ``joint``\ （关节）处的旋转轴。
 
-The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+这些轴是基于“参考姿态”的空间来定义的。如果 ``axis`` 被设为 :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`\ （自定义旋转轴），你可以指定任意轴。
 
-In here, the reference pose is the bone pose immediately before processing IK.
+在这里，“参考姿态”指的是在处理 IK（反向运动学）之前的那一瞬间的骨骼姿态。
 
-\ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since :ref:`ChainIK3D<class_ChainIK3D>` does not factor in twisting forces.
+\ **注意：** 旋转轴和前进向量（forward vector）不应该共线（即不能在同一条直线上），否则会导致意外的旋转，因为 :ref:`ChainIK3D<class_ChainIK3D>` 并不会计算扭力（twisting forces）。
 
 .. rst-class:: classref-item-separator
 

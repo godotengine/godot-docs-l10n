@@ -790,21 +790,21 @@ Voir aussi :ref:`@GlobalScope.PROPERTY_HINT_TOOL_BUTTON<class_@GlobalScope_const
     @tool
     extends Sprite2D
 
-    @export_tool_button("Bonjour") var Bonjour_action = Bonjour
+    @export_tool_button("Bonjour") var action_bonjour = bonjour
     @export_tool_button("Randomiser la couleur !", "ColorRect")
-    var randomiser_couleur_action = randomiser_couleur
+    var action_randomiser_couleur = randomiser_couleur
 
-    func Bonjour():
-    print("Bonjour monde !")
+    func bonjour():
+        print("Bonjour monde !")
 
     func randomiser_couleur():
-    var undo_redo = EditorInterface.get_editor_undo_redo()
-    undo_redo.create_action("Randomiser couleur du Sprite2D")
-    undo_redo.add_do_property(self, "self_modulate" , Color(randf(), randf(), randf())
-    undo_redo.add_undo_property(self, "self_modulate" , self_modulate)
-    undo_redo.commit_action()
+        var undo_redo = EditorInterface.get_editor_undo_redo()
+        undo_redo.create_action("Randomiser couleur du Sprite2D")
+        undo_redo.add_do_property(self, "self_modulate" , Color(randf(), randf(), randf())
+        undo_redo.add_undo_property(self, "self_modulate" , self_modulate)
+        undo_redo.commit_action()
 
-\ **Note: ** La propriété est exportée sans le drapeau :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` parce qu'un :ref:`Callable<class_Callable>` ne peut pas être correctement sérialisé et stocké dans un fichier.
+\ **Note : ** La propriété est exportée sans le drapeau :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` parce qu'un :ref:`Callable<class_Callable>` ne peut pas être correctement sérialisé et stocké dans un fichier.
 
 \ **Note :** Dans un projet exporté, il n'existe ni :ref:`EditorInterface<class_EditorInterface>` ni :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`, ce qui peut casser certains scripts. Pour éviter cela, vous pouvez utiliser :ref:`Engine.get_singleton()<class_Engine_method_get_singleton>` et omettre le type statique de la déclaration de variable :
 
@@ -812,7 +812,7 @@ Voir aussi :ref:`@GlobalScope.PROPERTY_HINT_TOOL_BUTTON<class_@GlobalScope_const
 
     var undo_redo = Engine.get_singleton(&"EditorInterface").get_editor_undo_redo()
 
-\ **Note :** Évitez de stocker fes callables lambda dans les variables de membres des classes basées sur :ref:`RefCounted<class_RefCounted>` (p. ex. les ressources), car cela peut conduire à des fuites de mémoire. Utilisez uniquement les callables de méthode et optionnellement :ref:`Callable.bind()<class_Callable_method_bind>` ou :ref:`Callable.unbind()<class_Callable_method_unbind>`.
+\ **Note :** Évitez de stocker des callables lambda dans les variables de membres des classes basées sur :ref:`RefCounted<class_RefCounted>` (p. ex. les ressources), car cela peut conduire à des fuites de mémoire. Utilisez uniquement les callables de méthode et optionnellement :ref:`Callable.bind()<class_Callable_method_bind>` ou :ref:`Callable.unbind()<class_Callable_method_unbind>`.
 
 .. rst-class:: classref-item-separator
 

@@ -14,13 +14,13 @@ EditorFileDialog
 描述
 ----
 
-**EditorFileDialog** is a :ref:`FileDialog<class_FileDialog>` tweaked to work in the editor. It automatically handles favorite and recent directory lists, and synchronizes some properties with their corresponding editor settings.
+**EditorFileDialog** 是一个专门针对编辑器工作流进行了微调优化的 :ref:`FileDialog<class_FileDialog>`\ （文件对话框）。它会自动处理‘收藏夹’和‘最近访问’的目录列表，并且会将部分属性与对应的编辑器设置保持同步。
 
-\ **EditorFileDialog** will automatically show a native dialog based on the :ref:`EditorSettings.interface/editor/appearance/use_native_file_dialogs<class_EditorSettings_property_interface/editor/appearance/use_native_file_dialogs>` editor setting and ignores :ref:`FileDialog.use_native_dialog<class_FileDialog_property_use_native_dialog>`.
+\ **EditorFileDialog** 会根据编辑器设置中的 :ref:`EditorSettings.interface/editor/appearance/use_native_file_dialogs<class_EditorSettings_property_interface/editor/appearance/use_native_file_dialogs>` 自动决定是否显示系统原生的对话框，并且会直接忽略 :ref:`FileDialog.use_native_dialog<class_FileDialog_property_use_native_dialog>` 的设置。
 
-\ **Note:** **EditorFileDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **注意：** **EditorFileDialog** 默认是隐藏的。如果想要让它显示出来，你需要在该节点上调用 :ref:`Window<class_Window>` 类中的某个 ``popup_*`` 方法，比如 :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`\ 。
 
-\ **Note:** On Linux and macOS, sandboxed apps always use native dialogs to access the host file system.
+\ **注意：** 在 Linux 和 macOS 系统上，处于沙盒模式（sandboxed）的应用程序总是会使用系统原生对话框来访问宿主机的文件系统。
 
 .. rst-class:: classref-reftable-group
 

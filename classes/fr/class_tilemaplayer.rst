@@ -468,7 +468,7 @@ Cette méthode n'est appelée que si :ref:`_use_tile_data_runtime_update()<class
 
 \ **Avertissement :** Les sous-ressources de l'objet ``tile_data`` sont les mêmes que celui dans le TileSet. Les modifier pourrait avoir un impact sur le TileSet entier. Assurez-vous de dupliquer ces ressources.
 
-\ **Note: ** Si les propriétés de l'objet ``tile_data`` devraient changer au fil du temps, utilisez :ref:`notify_runtime_tile_data_update()<class_TileMapLayer_method_notify_runtime_tile_data_update>` pour notifier au **TileMapLayer** qu'il doit se mettre à jour.
+\ **Note :** Si les propriétés de l'objet ``tile_data`` devraient changer au fil du temps, utilisez :ref:`notify_runtime_tile_data_update()<class_TileMapLayer_method_notify_runtime_tile_data_update>` pour notifier au **TileMapLayer** qu'il doit se mettre à jour.
 
 .. rst-class:: classref-item-separator
 

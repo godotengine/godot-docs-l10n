@@ -302,7 +302,7 @@ enum **DraggerVisibility**: :ref:`🔗<enum_SplitContainer_DraggerVisibility>`
 - |void| **set_drag_nested_intersections**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_dragging_nested_intersections**\ (\ )
 
-Adds extra draggers at the intersection of the draggers of two SplitContainers to allow dragging both at once. This must be set to ``true`` for both SplitContainers, and one needs to be a descendant of the other. They also must be orthogonal (their :ref:`vertical<class_SplitContainer_property_vertical>` are different) and the descendant must be next to at least one of the ancestor's draggers (within :ref:`minimum_grab_thickness<class_SplitContainer_theme_constant_minimum_grab_thickness>`).
+在两个 SplitContainer 的拖动器交界处添加额外的拖动器，以允许同时拖动两者。必须将两个 SplitContainer 的该属性都设置为 ``true``\ ，且其中一个必须是另一个的子节点（后代）。它们还必须是正交的（它们的 :ref:`vertical<class_SplitContainer_property_vertical>` 属性不同），并且后代节点必须紧邻祖先节点的至少一个拖动器（在 :ref:`minimum_grab_thickness<class_SplitContainer_theme_constant_minimum_grab_thickness>` 范围内）。
 
 .. rst-class:: classref-item-separator
 

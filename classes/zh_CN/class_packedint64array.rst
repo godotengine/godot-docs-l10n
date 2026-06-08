@@ -12,15 +12,15 @@ PackedInt64Array
 描述
 ----
 
-An array specifically designed to hold 64-bit integer values. Packs data tightly, so it saves memory for large array sizes.
+一种专门用于存储 64 位整数值的数组。它会对数据进行紧密打包，因此在数组规模较大时能节省内存。
 
-\ **Note:** This type stores signed 64-bit integers, which means it can take values in the interval ``[-2^63, 2^63 - 1]``, i.e. ``[-9223372036854775808, 9223372036854775807]``. Exceeding those bounds will wrap around. If you only need to pack 32-bit integers tightly, see :ref:`PackedInt32Array<class_PackedInt32Array>` for a more memory-friendly alternative.
+\ **注意：** 该类型存储的是有符号 64 位整数，这意味着它的取值范围是 ``[-2^63, 2^63 - 1]``\ ，即 ``[-9223372036854775808, 9223372036854775807]``\ 。如果超出这个范围，数值将会发生环绕（即溢出后从另一端重新开始）。如果你只需要紧密打包 32 位整数，可以查看 :ref:`PackedInt32Array<class_PackedInt32Array>`\ ，它是更节省内存的替代方案。
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedInt64Array** versus ``Array[int]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **打包数组、类型化数组与无类型数组之间的区别：**\ 与相同类型的类型化数组（例如 **PackedInt64Array** 对比 ``Array[int]``\ ）相比，打包数组在迭代和修改时通常速度更快。同时，打包数组占用的内存也更少。但缺点在于，打包数组的灵活性较差，因为它们没有提供像 :ref:`Array.map()<class_Array_method_map>` 这样丰富的便捷方法。而类型化数组在迭代和修改速度上，又优于无类型数组。
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedInt64Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **注意：** 打包数组总是通过引用（reference）传递。如果你想获取一个可以独立于原数组进行修改的副本，请使用 :ref:`duplicate()<class_PackedInt64Array_method_duplicate>` 方法。不过，内置属性和方法的情况并\ *非*\ 如此。在这些情况下，返回的打包数组是一个副本，修改它并\ *不会*\ 影响原始值。若要更新此类内置属性，你需要修改返回的数组，然后将其重新赋值给该属性。
 
-\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
+\ **注意：** 在布尔值上下文中，如果打包数组为空，其计算结果将为 ``false``\ 。否则，打包数组总是会被计算为 ``true``\ 。
 
 .. note::
 

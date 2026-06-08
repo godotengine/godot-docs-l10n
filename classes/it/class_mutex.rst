@@ -14,15 +14,15 @@ Un :ref:`Semaphore<class_Semaphore>` binario per la sincronizzazione di più :re
 Descrizione
 ----------------------
 
-A synchronization mutex (mutual exclusion). This is used to synchronize multiple :ref:`Thread<class_Thread>`\ s, and is equivalent to a binary :ref:`Semaphore<class_Semaphore>`. It guarantees that only one thread can access a critical section at a time.
+Un mutex di sincronizzazione (mutua esclusione). Serve per sincronizzare più :ref:`Thread<class_Thread>` ed è equivalente a un :ref:`Semaphore<class_Semaphore>` binario. Garantisce che solo un thread alla volta possa accedere a una sezione critica.
 
-This is a reentrant mutex, meaning that it can be locked multiple times by one thread, provided it also unlocks it as many times.
+Questo è un mutex rientrante, il che significa che può essere bloccato più volte da un thread, a condizione che lo sblocchi altrettante volte.
 
-\ **Warning:** To ensure proper cleanup without crashes or deadlocks, the following conditions must be met:
+\ **Attenzione:** Per garantire una pulizia corretta senza arresti anomali o deadlock, devono essere soddisfatte le seguenti condizioni:
 
-- When a **Mutex**'s reference count reaches zero and it is therefore destroyed, no threads (including the one on which the destruction will happen) must have it locked.
+- Quando il conteggio dei riferimenti di un **Mutex** raggiunge zero e viene quindi distrutto, nessun thread (incluso quello su cui avverrà la distruzione) deve averlo bloccato.
 
-- When a :ref:`Thread<class_Thread>`'s reference count reaches zero and it is therefore destroyed, it must not have any mutex locked.
+- Quando il conteggio dei riferimenti di un :ref:`Thread<class_Thread>` raggiunge zero e viene quindi distrutto, non deve avere alcun mutex bloccato.
 
 .. rst-class:: classref-introduction-group
 

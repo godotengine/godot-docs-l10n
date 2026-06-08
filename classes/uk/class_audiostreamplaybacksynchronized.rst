@@ -7,14 +7,14 @@ AudioStreamPlaybackSynchronized
 
 **Успадковує:** :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Playback class used for :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`.
+Клас відтворення, що використовується для :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Playback component of :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`. Handles the playback of multiple :ref:`AudioStream<class_AudioStream>`\ s in synchrony.
+Компонент відтворення класу :ref:`AudioStreamSynchronized<class_AudioStreamSynchronized>`. Забезпечує синхронне відтворення декількох потоків :ref:`AudioStream<class_AudioStream>`.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

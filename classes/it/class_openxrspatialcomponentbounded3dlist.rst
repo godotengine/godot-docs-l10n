@@ -16,7 +16,7 @@ Object for storing the queries bounded3d result data.
 Descrizione
 ----------------------
 
-Object for storing the queries 3d bounding box result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Oggetto per memorizzare i dati risultanti di una richiesta sui bounding box 3D quando si chiama :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 

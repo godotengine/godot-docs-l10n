@@ -16,9 +16,9 @@ Finestra di dialogo utilizzata per confermare le azioni.
 Descrizione
 ----------------------
 
-A dialog used for confirmation of actions. This window is similar to :ref:`AcceptDialog<class_AcceptDialog>`, but pressing its Cancel button can have a different outcome from pressing the OK button. The order of the two buttons varies depending on the host OS.
+Una finestra di dialogo utilizzata per la conferma delle azioni. Questa finestra è simile a :ref:`AcceptDialog<class_AcceptDialog>`, ma premendo il pulsante Annulla è possibile ottenere un risultato diverso rispetto alla pressione del pulsante OK. L'ordine dei due pulsanti varia a seconda del sistema operativo.
 
-To get cancel action, you can use:
+Per ottenere l'azione di annullamento, puoi usare:
 
 
 .. tabs::
@@ -33,7 +33,7 @@ To get cancel action, you can use:
 
 
 
-\ **Note:** :ref:`AcceptDialog<class_AcceptDialog>` is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Nota:** :ref:`AcceptDialog<class_AcceptDialog>` è inizialmente invisibile. Per renderlo visibile, chiama uno dei metodi ``popup_*`` da :ref:`Window<class_Window>` sul nodo, come ad esempio :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 

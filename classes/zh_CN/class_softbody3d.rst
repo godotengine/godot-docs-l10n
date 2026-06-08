@@ -349,7 +349,7 @@ enum **DisableMode**: :ref:`🔗<enum_SoftBody3D_DisableMode>`
 - |void| **set_total_mass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_total_mass**\ (\ )
 
-The SoftBody3D's mass.
+SoftBody3D 的质量。
 
 .. rst-class:: classref-section-separator
 

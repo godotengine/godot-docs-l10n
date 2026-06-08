@@ -12,7 +12,7 @@ Callable
 描述
 ----
 
-**Callable** is a built-in :ref:`Variant<class_Variant>` type that represents a function. It can either be a method within an :ref:`Object<class_Object>` instance, or a custom callable used for different purposes (see :ref:`is_custom()<class_Callable_method_is_custom>`). Like all :ref:`Variant<class_Variant>` types, it can be stored in variables and passed to other functions. It is most commonly used for signal callbacks.
+**Callable** 是一种内置的 :ref:`Variant<class_Variant>` 类型，它代表了一个函数。它可以是 :ref:`Object<class_Object>` 实例中的一个方法，也可以是用于不同目的的自定义可调用对象（详见 :ref:`is_custom()<class_Callable_method_is_custom>`\ ）。和所有的 :ref:`Variant<class_Variant>` 类型一样，它可以被存储在变量中，也可以作为参数传递给其他函数。它最常见的用途就是用于信号（signal）的回调。
 
 
 .. tabs::
@@ -30,7 +30,7 @@ Callable
 
  .. code-tab:: csharp
 
-    // Default parameter values are not supported.
+    // 不支持默认参数值。
     public void PrintArgs(Variant arg1, Variant arg2, Variant arg3 = default)
     {
         GD.PrintS(arg1, arg2, arg3);
@@ -38,16 +38,16 @@ Callable
 
     public void Test()
     {
-        // Invalid calls fail silently.
+        // 无效的调用会静默失败。
         Callable callable = new Callable(this, MethodName.PrintArgs);
-        callable.Call("hello", "world"); // Default parameter values are not supported, should have 3 arguments.
+        callable.Call("hello", "world"); // 不支持默认参数值，应该有 3 个参数。
         callable.Call(Vector2.Up, 42, callable); // Prints "(0, -1) 42 Node(Node.cs)::PrintArgs"
-        callable.Call("invalid"); // Invalid call, should have 3 arguments.
+        callable.Call("invalid"); // 无效的调用，应该有 3 个参数。
     }
 
 
 
-In GDScript, it's possible to create lambda functions within a method. Lambda functions are custom callables that are not associated with an :ref:`Object<class_Object>` instance. Optionally, lambda functions can also be named. The name will be displayed in the debugger, or when calling :ref:`get_method()<class_Callable_method_get_method>`.
+在 GDScript 中，你可以在一个方法内部创建 Lambda 函数。Lambda 函数是一种自定义的可调用对象（Callable），它并不绑定在某个具体的 :ref:`Object<class_Object>`\ （对象）实例上。此外，你还可以选择给 Lambda 函数起个名字。如果起了名字，这个名字将会在调试器中显示，或者在调用 :ref:`get_method()<class_Callable_method_get_method>` 方法时显示出来。
 
 ::
 
@@ -55,13 +55,13 @@ In GDScript, it's possible to create lambda functions within a method. Lambda fu
         var my_lambda = func (message):
             print(message)
 
-        # Prints "Hello everyone!"
+        # 打印 "Hello everyone!"
         my_lambda.call("Hello everyone!")
 
-        # Prints "Attack!", when the button_pressed signal is emitted.
+        # 当 button_pressed 信号被触发时，会打印出 "Attack!"。
         button_pressed.connect(func(): print("Attack!"))
 
-In GDScript, you can access methods and global functions as **Callable**\ s:
+在 GDScript 中，你可以把方法和全局函数当作 **Callable**\ （可调用对象）来访问：
 
 ::
 
@@ -69,19 +69,19 @@ In GDScript, you can access methods and global functions as **Callable**\ s:
     tween.tween_callback(array.clear)  # Methods of built-in types.
     tween.tween_callback(print.bind("Test"))  # Global functions.
 
-\ **Note:** :ref:`Dictionary<class_Dictionary>` does not support the above due to ambiguity with keys.
+\ **注意：** 由于与键（keys）存在歧义，\ :ref:`Dictionary<class_Dictionary>` 不支持上述操作。
 
 ::
 
     var dictionary = { "hello": "world" }
 
-    # This will not work, `clear` is treated as a key.
+    # 这样是行不通的，clear 会被当成一个键（key）。
     tween.tween_callback(dictionary.clear)
 
-    # This will work.
+    # 这样是可以的
     tween.tween_callback(Callable.create(dictionary, "clear"))
 
-\ **Note:** In a boolean context, a callable will evaluate to ``false`` if it's null (see :ref:`is_null()<class_Callable_method_is_null>`). Otherwise, a callable will always evaluate to ``true``.
+\ **注意：** 在布尔（boolean）环境下，如果一个 callable 是空的（null），它会被判定为 ``false``\ （详见 :ref:`is_null()<class_Callable_method_is_null>`\ ）。除此之外，callable 永远会被判定为 ``true``\ 。
 
 .. note::
 

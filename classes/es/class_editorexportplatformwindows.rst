@@ -172,7 +172,7 @@ Si es ``true``, y se establece :ref:`application/export_d3d12<class_EditorExport
 
 :ref:`int<class_int>` **application/export_angle** :ref:`🔗<class_EditorExportPlatformWindows_property_application/export_angle>`
 
-If set to ``1``, ANGLE libraries are exported with the exported application. If set to ``0``, ANGLE libraries are exported only if :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` is set to ``"opengl3_angle"``.
+Si se establece en ``1``, las bibliotecas ANGLE se exportan con la aplicación exportada. Si se establece en ``0``, las bibliotecas ANGLE solo se exportan si :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` se establece en ``"opengl3_angle"``.
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ Array de argumentos de línea de comando adicionales pasados al SCP.
 
 :ref:`String<class_String>` **ssh_remote_deploy/extra_args_ssh** :ref:`🔗<class_EditorExportPlatformWindows_property_ssh_remote_deploy/extra_args_ssh>`
 
-Array of the additional command line arguments passed to the SSH.
+Array de los argumentos adicionales de la línea de comandos que se pasan a SSH.
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ Array of the additional command line arguments passed to the SSH.
 
 :ref:`String<class_String>` **ssh_remote_deploy/host** :ref:`🔗<class_EditorExportPlatformWindows_property_ssh_remote_deploy/host>`
 
-Remote host SSH user name and address, in ``user@address`` format.
+Nombre de usuario y dirección SSH del host remoto, en formato ``usuario@dirección``.
 
 .. rst-class:: classref-item-separator
 
@@ -588,7 +588,7 @@ The following variables can be used in the script:
 
 :ref:`bool<class_bool>` **texture_format/etc2_astc** :ref:`🔗<class_EditorExportPlatformWindows_property_texture_format/etc2_astc>`
 
-If ``true``, project textures are exported in the ETC2/ASTC format.
+Si ``true``, las texturas del proyecto se exportan en formato ETC2/ASTC.
 
 .. rst-class:: classref-item-separator
 
@@ -600,7 +600,7 @@ If ``true``, project textures are exported in the ETC2/ASTC format.
 
 :ref:`bool<class_bool>` **texture_format/s3tc_bptc** :ref:`🔗<class_EditorExportPlatformWindows_property_texture_format/s3tc_bptc>`
 
-If ``true``, project textures are exported in the S3TC/BPTC format.
+Si ``true``, las texturas del proyecto se exportan en formato S3TC/BPTC.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

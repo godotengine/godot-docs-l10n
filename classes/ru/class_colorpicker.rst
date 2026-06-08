@@ -726,7 +726,7 @@ enum **PickerShapeType**: :ref:`🔗<enum_ColorPicker_PickerShapeType>`
 
 :ref:`Texture2D<class_Texture2D>` **color_copy** :ref:`🔗<class_ColorPicker_theme_icon_color_copy>`
 
-The icon for the button that copies the color in text format to the clipboard.
+Значок кнопки, которая копирует цвет в текстовом формате в буфер обмена.
 
 .. rst-class:: classref-item-separator
 

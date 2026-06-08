@@ -364,7 +364,7 @@ La rotation globale de ce nœud en tant qu'`angles d'Euler <https://fr.wikipedia
 
 - Le :ref:`Vector3.z<class_Vector3_property_z>` est l'angle autour de l'axe Z global (lacet).
 
-\ **Note:** Contrairement à :ref:`rotation<class_Node3D_property_rotation>`, cette propriété suit toujours la convention YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
+\ **Note :** Contrairement à :ref:`rotation<class_Node3D_property_rotation>`, cette propriété suit toujours la convention YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
 
 \ **Note :** Si le nœud n'est pas à l'intérieur de l’arborescence, obtenir cette propriété échoue et renvoie :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
 

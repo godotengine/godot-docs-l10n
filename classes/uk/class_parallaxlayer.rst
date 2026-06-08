@@ -1,0 +1,113 @@
+:github_url: hide
+
+.. _class_ParallaxLayer:
+
+ParallaxLayer
+=============
+
+**Застаріло:** Use the :ref:`Parallax2D<class_Parallax2D>` node instead.
+
+**Успадковує:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+
+Параллакс шар прокручування для використання з :ref:`ParallaxBackground<class_ParallaxBackground>`.
+
+.. rst-class:: classref-introduction-group
+
+Опис
+--------
+
+Параллакс Шар повинен бути дитиною :ref:`ParallaxBackground<class_ParallaxBackground>` вершини. Кожен Параллакс Шар може бути встановлений для переміщення на різних швидкостях відносно руху камери або значення :ref:`ParallaxBackground.scroll_offset<class_ParallaxBackground_property_scroll_offset>`.
+
+Це діти вершини будуть вражені своїм зміщенням прокручування.
+
+\ **Примітка:** Будь-які зміни положення цієї вершини та масштаби, зроблені після того, як він надходить до сцени, будуть ігноруватися.
+
+.. rst-class:: classref-reftable-group
+
+Властивості
+----------------------
+
+.. table::
+   :widths: auto
+
+   +---------------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------+
+   | :ref:`Vector2<class_Vector2>`                                       | :ref:`motion_mirroring<class_ParallaxLayer_property_motion_mirroring>` | ``Vector2(0, 0)``                                                             |
+   +---------------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------+
+   | :ref:`Vector2<class_Vector2>`                                       | :ref:`motion_offset<class_ParallaxLayer_property_motion_offset>`       | ``Vector2(0, 0)``                                                             |
+   +---------------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------+
+   | :ref:`Vector2<class_Vector2>`                                       | :ref:`motion_scale<class_ParallaxLayer_property_motion_scale>`         | ``Vector2(1, 1)``                                                             |
+   +---------------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------+
+   | :ref:`PhysicsInterpolationMode<enum_Node_PhysicsInterpolationMode>` | physics_interpolation_mode                                             | ``2`` (overrides :ref:`Node<class_Node_property_physics_interpolation_mode>`) |
+   +---------------------------------------------------------------------+------------------------------------------------------------------------+-------------------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описи властивостей
+------------------------------------
+
+.. _class_ParallaxLayer_property_motion_mirroring:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2<class_Vector2>` **motion_mirroring** = ``Vector2(0, 0)`` :ref:`🔗<class_ParallaxLayer_property_motion_mirroring>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_mirroring**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
+- :ref:`Vector2<class_Vector2>` **get_mirroring**\ (\ )
+
+Проміжок, в пікселях, при якому повторюється **ParallaxLayer**. Корисне створення нескінченно прокрученого фону. Якщо вісь встановлена до ``0``, то **ParallaxLayer** буде намальовано тільки один раз по цьому напрямку.
+
+\ **Примітка:** Якщо ви хочете повторити підписку на піксель-перфект матчу :ref:`Texture2D<class_Texture2D>`, що відображається дочірньою вершиною, ви повинні враховувати будь-яку вагу, що наноситься на текстуру при визначенні цього інтервалу. Наприклад, якщо ви використовуєте дитину :ref:`Sprite2D<class_Sprite2D>`, масштабовані до ``0.5``, щоб відобразити текстуру 600x600, і хочете, щоб цей спрайт був повторений безперервно горизонтально, ви повинні встановити дзеркалювання до ``Vector2(300, 0)``.
+
+\ **Примітка:** Якщо довжина осі огляду більше, ніж в два рази повторне розмір осі, вона не буде повторюватися нескінченно, так як шар паралаксу тільки виводить 2 екземпляри шару в будь-який час. Вікна видимості обчислюється з батьків :ref:`ParallaxBackground<class_ParallaxBackground>`, а не власне положення шару. Отже, якщо ви використовуєте дзеркала, **до не** змінити позицію **ParallaxLayer** відносно його батька. Замість цього, якщо вам необхідно налаштувати позицію фону, встановіть :ref:`CanvasLayer.offset<class_CanvasLayer_property_offset>` майно в батьківстві :ref:`ParallaxBackground<class_ParallaxBackground>`.
+
+\ **Примітка:** Незважаючи на назву, шар не буде дзеркальним, він буде повторюватися.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParallaxLayer_property_motion_offset:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2<class_Vector2>` **motion_offset** = ``Vector2(0, 0)`` :ref:`🔗<class_ParallaxLayer_property_motion_offset>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_motion_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
+- :ref:`Vector2<class_Vector2>` **get_motion_offset**\ (\ )
+
+Зсув ParallaxLayer відносно зсуву батьківського ParallaxBackground :ref:`ParallaxBackground.scroll_offset<class_ParallaxBackground_property_scroll_offset>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParallaxLayer_property_motion_scale:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2<class_Vector2>` **motion_scale** = ``Vector2(1, 1)`` :ref:`🔗<class_ParallaxLayer_property_motion_scale>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_motion_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
+- :ref:`Vector2<class_Vector2>` **get_motion_scale**\ (\ )
+
+Множить рух шару ParallaxLayer. Якщо вісь встановлено на ``0``, воно не прокручуватиметься.
+
+.. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
+.. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
+.. |const| replace:: :abbr:`const (Цей метод не має побічних ефектів. Не змінює ніяку змінну екземпляра об'єкта.)`
+.. |vararg| replace:: :abbr:`vararg (Цей метод приймає будь-яке число аргументів після описаних тут.)`
+.. |constructor| replace:: :abbr:`constructor (Цей метод використовується для побудови типів.)`
+.. |static| replace:: :abbr:`static (Цей метод не потребує екземпляра для виклику, його можна викликати безпосередньо за допомогою назви класу.)`
+.. |operator| replace:: :abbr:`operator (Цей метод описує дійсний оператор для взаємодії з цим типом як з лівим операндом.)`
+.. |bitfield| replace:: :abbr:`BitField (Це значення є цілим числом, складеним у вигляді бітової маски з наступних прапорів.)`
+.. |void| replace:: :abbr:`void (Значення не повертається.)`

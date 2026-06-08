@@ -3244,11 +3244,11 @@ Restituisce ``true`` se il cursore della selezione è dopo l'origine della selez
 
 :ref:`bool<class_bool>` **is_caret_visible**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_is_caret_visible>`
 
-Returns ``true`` if the caret is visible, ``false`` otherwise. A caret will be considered hidden if it is outside the scrollable area when scrolling is enabled.
+Restituisce ``true`` se il cursore è visibile, altrimenti ``false``. Un cursore sarà considerato nascosto se si trova al di fuori dell'area scorrevole quando lo scorrimento è abilitato.
 
-\ **Note:** :ref:`is_caret_visible()<class_TextEdit_method_is_caret_visible>` does not account for a caret being off-screen if it is still within the scrollable area. It will return ``true`` even if the caret is off-screen as long as it meets **TextEdit**'s own conditions for being visible. This includes uses of :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` and :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` that cause the **TextEdit** to expand beyond the viewport's bounds.
+\ **Nota:** :ref:`is_caret_visible()<class_TextEdit_method_is_caret_visible>` non tiene conto del fatto che un cursore sia fuori dallo schermo se si trova ancora all'interno dell'area scorrevole. Restituirà ``true`` anche se il cursore è fuori dallo schermo, purché soddisfi le condizioni di **TextEdit** per essere visibile. Ciò include gli usi di :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` e :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` che causano l'espansione del **TextEdit** oltre i limiti della viewport.
 
-\ **Note:** This method does *not* guarantee an accurate visibility check immediately after setting the caret position. The correct value may only be available in the next frame after the **TextEdit** has finished drawing. This also applies to any operation that causes the **TextEdit** to change in size.
+\ **Nota:** Questo metodo *non* è garantito di essere accurato subito dopo aver impostato la posizione del cursore. Il valore corretto potrebbe essere disponibile solo nel frame successivo, dopo che il **TextEdit** ha finito di disegnare. Questo vale anche per qualsiasi operazione che potrebbe cambiare le dimensioni del **TextEdit**.
 
 .. rst-class:: classref-item-separator
 

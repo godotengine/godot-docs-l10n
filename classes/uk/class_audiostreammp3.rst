@@ -14,9 +14,9 @@ AudioStreamMP3
 Опис
 --------
 
-MP3 audio stream driver. See :ref:`data<class_AudioStreamMP3_property_data>` if you want to load an MP3 file at run-time. More info can be found in :ref:`ResourceImporterMP3<class_ResourceImporterMP3>`.
+Драйвер аудіопотоку MP3. Дивіться :ref:`data<class_AudioStreamMP3_property_data>`, якщо ви хочете завантажити файл MP3 під час виконання. Більше інформації можна знайти в :ref:`ResourceImporterMP3<class_ResourceImporterMP3>`.
 
-\ **Note:** This class can optionally support legacy MP1 and MP2 formats, provided that the engine is compiled with the ``minimp3_extra_formats=yes`` SCons option. These extra formats are not enabled by default.
+\ **Примітка:** Цей клас може опціонально підтримувати застарілі формати MP1 та MP2, за умови, що движок скомпільовано з опцією SCons ``minimp3_extra_formats=yes``. Ці додаткові формати не ввімкнені за замовчуванням.
 
 .. rst-class:: classref-introduction-group
 
@@ -83,7 +83,7 @@ MP3 audio stream driver. See :ref:`data<class_AudioStreamMP3_property_data>` if 
 - |void| **set_bar_beats**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bar_beats**\ (\ )
 
-The number of beats within a single bar in the audio track.
+Кількість ударів у одному такті аудіодоріжки.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ The number of beats within a single bar in the audio track.
 - |void| **set_beat_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_beat_count**\ (\ )
 
-The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. It defines the end of the audio for looping, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`, and :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
+Тривалість аудіодоріжки в тактах. Фактична тривалість аудіофайлу може перевищувати значення, вказане в цьому параметрі. Цей параметр визначає кінець аудіо для циклічного відтворення, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>` та :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ The length of the audio track, in beats. The actual duration of the audio file m
 - |void| **set_bpm**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bpm**\ (\ )
 
-The tempo of the audio track, measured in beats per minute.
+Темп аудіодоріжки, що вимірюється в ударах на хвилину.
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ The tempo of the audio track, measured in beats per minute.
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-If ``true``, the stream will play again from the specified :ref:`loop_offset<class_AudioStreamMP3_property_loop_offset>` once it reaches the end of the audio track, or once it reaches the end of the last beat according to the amount specified in :ref:`beat_count<class_AudioStreamMP3_property_beat_count>`. Useful for ambient sounds and background music.
+Якщо ``true``, потік почне відтворюватися знову з вказаного :ref:`loop_offset<class_AudioStreamMP3_property_loop_offset>` після досягнення кінця аудіодоріжки або після досягнення кінця останнього такту відповідно до значення, вказаного в :ref:`beat_count<class_AudioStreamMP3_property_beat_count>`. Корисно для звуків навколишнього середовища та фонової музики.
 
 .. rst-class:: classref-item-separator
 

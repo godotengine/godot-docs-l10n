@@ -470,24 +470,24 @@ Restituisce una copia della stringa con i caratteri di escape sostituiti dai lor
 
 :ref:`String<class_String>` **capitalize**\ (\ ) |const| :ref:`🔗<class_String_method_capitalize>`
 
-Returns a copy of the string with changed appearance. Replaces underscores (``_``) and hyphens (``-``) with spaces, adds spaces before uppercase letters in the middle of a word, converts all letters to lowercase, then converts the first one and each one following a space to uppercase.
+Restituisce una copia della stringa cambiandogli l'aspetto: sostituisce i trattini bassi (``_``) con spazi, aggiunge spazi prima delle lettere maiuscole nel mezzo di una parola, converte tutte le lettere in minuscole, e infine converte la prima e ciascuna successiva a uno spazio in maiuscolo.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    "move_local_x".capitalize()   # Returns "Move Local X"
-    "sceneFile_path".capitalize() # Returns "Scene File Path"
-    "2D, FPS, PNG".capitalize()   # Returns "2d, Fps, Png"
-    "example-name".capitalize()   # Returns "Example Name"
+    "move_local_x".capitalize()   # Restituisce "Move Local X"
+    "sceneFile_path".capitalize() # Restituisce "Scene File Path"
+    "2D, FPS, PNG".capitalize()   # Restituisce "2d, Fps, Png"
+    "example-name".capitalize()   # Restituisce "Example Name"
 
  .. code-tab:: csharp
 
-    "move_local_x".Capitalize();   // Returns "Move Local X"
-    "sceneFile_path".Capitalize(); // Returns "Scene File Path"
-    "2D, FPS, PNG".Capitalize();   // Returns "2d, Fps, Png"
-    "example-name".Capitalize();   // Returns "Example Name"
+    "move_local_x".Capitalize();   // Restituisce "Move Local X"
+    "sceneFile_path".Capitalize(); // Restituisce "Scene File Path"
+    "2D, FPS, PNG".Capitalize();   // Restituisce "2d, Fps, Png"
+    "example-name".Capitalize();   // Restituisce "Example Name"
 
 
 
@@ -668,32 +668,32 @@ Per ottenere un risultato :ref:`bool<class_bool>` da un confronto di stringhe, u
 
 :ref:`int<class_int>` **find**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_String_method_find>`
 
-Returns the index of the **first** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the string.
+Restituisce l'indice della **prima** occorrenza di ``what`` in questa stringa, o ``-1`` se non ce ne sono. L'inizio della ricerca può essere specificato con ``from``, continuando fino alla fine della stringa.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print("Team".find("I")) # Prints -1
+    print("Team".find("I")) # Stampa -1
 
-    print("Potato".find("t"))    # Prints 2
-    print("Potato".find("t", 3)) # Prints 4
-    print("Potato".find("t", 5)) # Prints -1
+    print("Potato".find("t"))    # Stampa 2
+    print("Potato".find("t", 3)) # Stampa 4
+    print("Potato".find("t", 5)) # Stampa -1
 
  .. code-tab:: csharp
 
-    GD.Print("Team".Find("I")); // Prints -1
+    GD.Print("Team".Find("I")); // Stampa -1
 
-    GD.Print("Potato".Find("t"));    // Prints 2
-    GD.Print("Potato".Find("t", 3)); // Prints 4
-    GD.Print("Potato".Find("t", 5)); // Prints -1
+    GD.Print("Potato".Find("t"));    // Stampa 2
+    GD.Print("Potato".Find("t", 3)); // Stampa 4
+    GD.Print("Patata".Find("t", 5)); // Stampa -1
 
 
 
-\ **Note:** If you just want to know whether the string contains ``what``, use :ref:`contains()<class_String_method_contains>`. In GDScript, you may also use the ``in`` operator.
+\ **Nota:** Se vuoi solo sapere se la stringa contiene ``what``, usa :ref:`contains()<class_String_method_contains>`. In GDScript, puoi anche usare l'operatore ``in``.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Nota:** Un valore negativo di ``from`` è convertito in un indice iniziale contando all'indietro dall'ultimo indice possibile con abbastanza spazio per trovare ``what``.
 
 .. rst-class:: classref-item-separator
 
@@ -878,11 +878,11 @@ Use :ref:`get_slice()<class_String_method_get_slice>` to extract a specific slic
 
 :ref:`String<class_String>` **get_slicec**\ (\ delimiter\: :ref:`int<class_int>`, slice\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_String_method_get_slicec>`
 
-Splits the string using a Unicode character with code ``delimiter`` and returns the substring at index ``slice``. Returns an empty string if the ``slice`` does not exist.
+Divide la stringa tramite un carattere Unicode con codice ``delimiter`` e restituisce la sottostringa all'indice ``slice``. Restituisce una stringa vuota se la sezione all'indice ``slice`` non esiste.
 
-This is faster than :ref:`split()<class_String_method_split>`, if you only need one or two substrings.
+Questo è più veloce di :ref:`split()<class_String_method_split>`, se c'è solo bisogno di una o due sottostringhe.
 
-This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
+Questa è la versione Unicode di :ref:`get_slice()<class_String_method_get_slice>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1669,11 +1669,11 @@ Restituisce la copia di questa stringa in ordine inverso. Questa operazione funz
 
 :ref:`int<class_int>` **rfind**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_String_method_rfind>`
 
-Returns the index of the **last** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the string. This method is the reverse of :ref:`find()<class_String_method_find>`.
+Restituisce l'indice dell'**ultima** occorrenza di ``what`` in questa stringa, o ``-1`` se non ce ne sono. L'inizio della ricerca può essere specificato con ``from``, continuando fino all'inizio della stringa. Questo metodo è l'inverso di :ref:`find()<class_String_method_find>`.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Nota:** Un valore negativo di ``from`` è convertito in un indice iniziale contando all'indietro dall'ultimo indice possibile con abbastanza spazio per trovare ``what``.
 
-\ **Note:** A value of ``from`` that is greater than the last possible index with enough space to find ``what`` is considered out-of-bounds, and returns ``-1``.
+\ **Nota:** Un valore di ``from`` maggiore dell'ultimo indice possibile con abbastanza spazio per trovare ``what`` è considerato fuori dai limiti e restituisce ``-1``.
 
 .. rst-class:: classref-item-separator
 

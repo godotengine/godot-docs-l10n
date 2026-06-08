@@ -245,9 +245,9 @@ Font
 
 :ref:`float<class_float>` **get_ascent**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_ascent>`
 
-Returns the maximum font ascent (number of pixels above the baseline) of this font and all fallback fonts.
+Повертає максимальну висоту шрифту (кількість пікселів над базовою лінією) для цього шрифту та всіх запасних шрифтів.
 
-\ **Note:** Real ascent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the ascent of empty line).
+\ **Примітка:** Фактична висота рядка залежить від контексту і може суттєво відрізнятися від значення, яке повертає ця функція. Використовуйте це значення лише як приблизну оцінку (наприклад, як висоту порожнього рядка).
 
 .. rst-class:: classref-item-separator
 
@@ -273,9 +273,9 @@ Returns the maximum font ascent (number of pixels above the baseline) of this fo
 
 :ref:`float<class_float>` **get_descent**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_descent>`
 
-Returns the maximum font descent (number of pixels below the baseline) of this font and all fallback fonts.
+Повертає максимальний відступ шрифту (кількість пікселів нижче базової лінії) для цього шрифту та всіх запасних шрифтів.
 
-\ **Note:** Real descent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the descent of empty line).
+\ **Примітка:** Фактичний відступ рядка залежить від контексту і може суттєво відрізнятися від значення, яке повертає ця функція. Використовуйте його лише як приблизну оцінку (наприклад, як відступ порожнього рядка).
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ Returns the maximum font descent (number of pixels below the baseline) of this f
 
 :ref:`PackedColorArray<class_PackedColorArray>` **get_palette_colors**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Font_method_get_palette_colors>`
 
-Returns the array in the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors. Colors can be overridden using :ref:`FontVariation<class_FontVariation>`.
+Повертає масив у заздалегідь визначеній палітрі кольорів за індексом ``index``. Палітра містить усі кольори, що використовуються для візуалізації символів шрифту. Кожна палітра має однакову кількість кольорів. Кольори можна замінити за допомогою :ref:`FontVariation<class_FontVariation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ Returns the array in the predefined color palette at ``index``. Palette contains
 
 :ref:`int<class_int>` **get_palette_count**\ (\ ) |const| :ref:`🔗<class_Font_method_get_palette_count>`
 
-Returns the number of predefined color palettes. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+Повертає кількість попередньо визначених палітр кольорів. Палітра містить усі кольори, що використовуються для відображення символів шрифту. Кожна палітра містить однакову кількість кольорів.
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ Returns the number of predefined color palettes. Palette contains all colors use
 
 :ref:`String<class_String>` **get_palette_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Font_method_get_palette_name>`
 
-Returns the name of the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+Повертає назву попередньо визначеної палітри кольорів за індексом ``index``. Палітра містить усі кольори, що використовуються для візуалізації символів шрифту. Кожна палітра має однакову кількість кольорів.
 
 .. rst-class:: classref-item-separator
 

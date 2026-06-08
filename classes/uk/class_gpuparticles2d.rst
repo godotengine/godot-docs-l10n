@@ -749,9 +749,9 @@ Multiplier для радіусу зіткнення частинок. ``1.0`` в
 
 |void| **request_particles_process**\ (\ process_time\: :ref:`float<class_float>`, process_time_residual\: :ref:`float<class_float>` = 0\ ) :ref:`🔗<class_GPUParticles2D_method_request_particles_process>`
 
-Requests the particles to process for extra process time during a single frame.
+Запитує у частинок додатковий час обробки протягом одного кадру.
 
-\ ``process_time`` defines the time that the particles will process while emitting is on. ``process_time_residual`` defines the time that particles will process with emitting turned off for the simulation. When combined with :ref:`speed_scale<class_GPUParticles2D_property_speed_scale>` set to ``0.0``, this is useful to be able to seek a particle system timeline.
+\ ``process_time`` визначає час, протягом якого частинки будуть оброблятися, коли випромінювання увімкнено. ``process_time_residual`` визначає час, протягом якого частинки будуть оброблятися, коли випромінювання вимкнено для симуляції. У поєднанні з :ref:`speed_scale<class_GPUParticles2D_property_speed_scale>`, встановленим на ``0.0``, це корисно для перемотування часової шкали системи частинок.
 
 .. rst-class:: classref-item-separator
 

@@ -118,9 +118,9 @@ Rimuove la documentazione per lo ``script`` specificato.
 
 :ref:`Error<enum_@GlobalScope_Error>` **close_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditor_method_close_file>`
 
-Closes the file at the given ``path``, discarding any unsaved changes.
+Chiude il file al percorso ``path``, ignorando tutte le modifiche non salvate.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success or :ref:`@GlobalScope.ERR_FILE_NOT_FOUND<class_@GlobalScope_constant_ERR_FILE_NOT_FOUND>` if the file is not found.
+Restituisce :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` in caso di successo oppure :ref:`@GlobalScope.ERR_FILE_NOT_FOUND<class_@GlobalScope_constant_ERR_FILE_NOT_FOUND>` se il file non viene trovato.
 
 .. rst-class:: classref-item-separator
 

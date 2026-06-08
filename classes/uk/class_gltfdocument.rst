@@ -144,7 +144,7 @@ enum **TextureMapMode**: :ref:`🔗<enum_GLTFDocument_TextureMapMode>`
 
 :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **TEXTURE_MAP_MODE_DO_NOT_REMAP** = ``0``
 
-Import the texture maps in the glTF file as they are, without trying to fit them into specific texture slots suitable for Godot's built-in materials. This may be desirable if using the glTF file with custom shaders, but may not display correctly with Godot's built-in materials. This is equivalent to the behavior in Godot 4.6 and earlier.
+Імпортуйте карти текстур у файлі glTF у тому вигляді, в якому вони є, не намагаючись підганяти їх під конкретні слоти текстур, що відповідають вбудованим матеріалам Godot. Це може бути доцільним у разі використання файлу glTF із власними шейдерами, але зображення може відображатися некоректно з вбудованими матеріалами Godot. Це відповідає поведінці в Godot 4.6 та попередніх версіях.
 
 .. _class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL:
 
@@ -152,7 +152,7 @@ Import the texture maps in the glTF file as they are, without trying to fit them
 
 :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL** = ``1``
 
-Import the texture maps in the glTF file remapped to the most suitable texture slots based on Godot's :ref:`StandardMaterial3D<class_StandardMaterial3D>` class. This is the default behavior.
+Імпортуйте карти текстур із файлу glTF, перерозподіливши їх у найбільш підходящі слоти текстур на основі класу :ref:`StandardMaterial3D<class_StandardMaterial3D>` у Godot. Це стандартна поведінка.
 
 .. rst-class:: classref-item-separator
 
@@ -204,9 +204,9 @@ flags **ImportFlags**: :ref:`🔗<enum_GLTFDocument_ImportFlags>`
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_GENERATE_TANGENT_ARRAYS** = ``8``
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+Якщо ``true``, генерувати тангенси вершин за допомогою `Mikktspace <http://www.mikktspace.com/>`__, якщо вхідні сітки не містять даних про тангенси. Якщо це можливо, рекомендується дозволити програмі 3D-моделювання генерувати тангенси під час експорту, замість того щоб покладатися на цю опцію. Тангенти необхідні для коректного відображення карт нормалей та висот, а також будь-яких функцій матеріалів/шейдерів, що вимагають тангентів.
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+Якщо вам не потрібні функції матеріалів, що вимагають тангентів, вимкнення цієї опції може зменшити розмір вихідного файлу та пришвидшити імпорт, якщо вихідний 3D-файл не містить тангентів.
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_USE_NAMED_SKIN_BINDS:
 
@@ -214,15 +214,15 @@ If you don't need material features that require tangents, disabling this can re
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_USE_NAMED_SKIN_BINDS** = ``16``
 
-If checked, use named :ref:`Skin<class_Skin>`\ s for animation. The :ref:`MeshInstance3D<class_MeshInstance3D>` node contains 3 properties of relevance here: a skeleton :ref:`NodePath<class_NodePath>` pointing to the :ref:`Skeleton3D<class_Skeleton3D>` node (usually ``..``), a mesh, and a skin:
+Якщо встановлено прапорець, для анімації використовуються іменовані :ref:`Skin<class_Skin>`. Вузол :ref:`MeshInstance3D<class_MeshInstance3D>` містить 3 властивості, що мають тут значення: скелет :ref:`NodePath<class_NodePath>`, який вказує на вузол :ref:`Skeleton3D<class_Skeleton3D>` (зазвичай ``..``), сітку та скін:
 
-- The :ref:`Skeleton3D<class_Skeleton3D>` node contains a list of bones with names, their pose and rest, a name, and a parent bone.
+- Вузол :ref:`Skeleton3D<class_Skeleton3D>` містить список кісток з іменами, їх позою та положенням спокою, ім'ям та батьківською кісткою.
 
-- The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
+- Сітка — це всі необроблені дані про вершини, необхідні для відображення сітки. Щодо сітки, вона знає, як вершини розфарбовуються за вагою, та використовує внутрішню нумерацію, часто імпортовану з програмного забезпечення для 3D-моделювання.
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For each of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the :ref:`Skin<class_Skin>` contains each bone's name (if this flag is enabled), or the bone's index within the :ref:`Skeleton3D<class_Skeleton3D>` list (if this flag is disabled).
+- Скін містить інформацію, необхідну для прив'язки цієї сітки до цього Skeleton3D. Для кожного з внутрішніх ідентифікаторів кісток, обраних програмним забезпеченням для 3D-моделювання, він містить дві речі. По-перше, матрицю, відому як матриця позиції прив'язки (Bind Pose Matrix), обернена матриця прив'язки (Inverse Bind Matrix) або, скорочено, IBM. По-друге, :ref:`Skin<class_Skin>` містить назву кожної кістки (якщо цей прапорець увімкнено) або індекс кістки у списку :ref:`Skeleton3D<class_Skeleton3D>` (якщо цей прапорець вимкнено).
 
-Together, this information is enough to tell Godot how to use the bone poses in the :ref:`Skeleton3D<class_Skeleton3D>` node to render the mesh from each :ref:`MeshInstance3D<class_MeshInstance3D>`. Note that each :ref:`MeshInstance3D<class_MeshInstance3D>` may share binds, as is common in models exported from Blender, or each :ref:`MeshInstance3D<class_MeshInstance3D>` may use a separate :ref:`Skin<class_Skin>` object, as is common in models exported from other tools such as Maya.
+Разом ця інформація достатня, щоб повідомити Godot, як використовувати пози кісток у вузлі :ref:`Skeleton3D<class_Skeleton3D>` для рендерингу сітки з кожного :ref:`MeshInstance3D<class_MeshInstance3D>`. Зверніть увагу, що кожен :ref:`MeshInstance3D<class_MeshInstance3D>` може використовувати спільні прив'язки, як це зазвичай буває у моделях, експортованих з Blender, або кожен :ref:`MeshInstance3D<class_MeshInstance3D>` може використовувати окремий об'єкт :ref:`Skin<class_Skin>`, як це зазвичай буває у моделях, експортованих з інших інструментів, таких як Maya.
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_DISCARD_MESHES_AND_MATERIALS:
 
@@ -230,7 +230,7 @@ Together, this information is enough to tell Godot how to use the bone poses in 
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_DISCARD_MESHES_AND_MATERIALS** = ``32``
 
-Ignore meshes and materials on import. When importing a scene as an :ref:`AnimationLibrary<class_AnimationLibrary>`, this flag is always enabled.
+Ігнорувати сітки та матеріали під час імпорту. Під час імпорту сцени як :ref:`AnimationLibrary<class_AnimationLibrary>` цей прапорець завжди увімкнено.
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_FORCE_DISABLE_MESH_COMPRESSION:
 
@@ -351,7 +351,7 @@ Ignore meshes and materials on import. When importing a scene as an :ref:`Animat
 - |void| **set_texture_map_mode**\ (\ value\: :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>`\ )
 - :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **get_texture_map_mode**\ (\ )
 
-How to handle texture maps during import. The default and recommended value is :ref:`TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL<class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL>`, which automatically remaps from glTF's flexible texture map system to the more specific texture map slots in Godot's :ref:`StandardMaterial3D<class_StandardMaterial3D>` class. Alternatively, :ref:`TEXTURE_MAP_MODE_DO_NOT_REMAP<class_GLTFDocument_constant_TEXTURE_MAP_MODE_DO_NOT_REMAP>` can be used to preserve the original texture maps from the glTF file, which may be desirable if using the glTF file with custom shaders, but may not display correctly with Godot's built-in materials.
+Як поводитися з картами текстур під час імпорту. Значенням за замовчуванням і рекомендованим є :ref:`TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL<class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL>`, яка автоматично перемапує гнучку систему карт текстур glTF на більш конкретні слоти карт текстур у класі :ref:`StandardMaterial3D<class_StandardMaterial3D>` Godot. Як альтернатива, можна використовувати :ref:`TEXTURE_MAP_MODE_DO_NOT_REMAP<class_GLTFDocument_constant_TEXTURE_MAP_MODE_DO_NOT_REMAP>`, щоб зберегти оригінальні карти текстур з файлу glTF, що може бути бажаним при використанні файлу glTF з власними шейдерами, але може не відображатися коректно з вбудованими матеріалами Godot.
 
 .. rst-class:: classref-item-separator
 

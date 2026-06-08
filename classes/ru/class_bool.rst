@@ -139,7 +139,7 @@ bool
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`float<class_float>`\ )
 
-Casts a :ref:`float<class_float>` value to a **bool**. Returns ``false`` if ``from`` is equal to ``0.0`` (including ``-0.0``), and ``true`` for all other values (including :ref:`@GDScript.INF<class_@GDScript_constant_INF>` and :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`).
+Преобразует значение типа :ref:`float<class_float>` в тип **bool**. Возвращает ``false``, если ``from`` равно ``0.0`` (включая ``-0.0``), и ``true`` для всех остальных значений (включая :ref:`@GDScript.INF<class_@GDScript_constant_INF>` и :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`).
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Casts a :ref:`float<class_float>` value to a **bool**. Returns ``false`` if ``fr
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`int<class_int>`\ )
 
-Casts an :ref:`int<class_int>` value to a **bool**. Returns ``false`` if ``from`` is equal to ``0``, and ``true`` for all other values.
+Преобразует значение типа :ref:`int<class_int>` в тип **bool**. Возвращает ``false``, если ``from`` равно ``0``, и ``true`` для всех остальных значений.
 
 .. rst-class:: classref-section-separator
 
@@ -166,7 +166,7 @@ Casts an :ref:`int<class_int>` value to a **bool**. Returns ``false`` if ``from`
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_neq_bool>`
 
-Returns ``true`` if one **bool** is ``true`` and the other **bool** is ``false``. Equivalent to logical XOR (NEQ).
+Возвращает ``true``, если один **bool** равен ``true``, а другой **bool** равен ``false``. Эквивалентно логическому XOR (NEQ).
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Returns ``true`` if one **bool** is ``true`` and the other **bool** is ``false``
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_lt_bool>`
 
-Returns ``true`` if the left **bool** is ``false`` and ``right`` is ``true``.
+Возвращает ``true``, если левый **bool** равен ``false``, а ``right`` равен ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Returns ``true`` if the left **bool** is ``false`` and ``right`` is ``true``.
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_eq_bool>`
 
-Returns ``true`` if both **bool**\ s are ``true``, or if both **bool**\ s are ``false``. Equivalent to logical XNOR (EQ).
+Возвращает ``true``, если оба **bool** равны ``true`` или если оба **bool** равны ``false``. Эквивалентно логическому XNOR (EQ).
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ Returns ``true`` if both **bool**\ s are ``true``, or if both **bool**\ s are ``
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_gt_bool>`
 
-Returns ``true`` if the left **bool** is ``true`` and ``right`` is ``false``.
+Возвращает ``true``, если левый **bool** равен ``true``, а ``right`` равен ``false``.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

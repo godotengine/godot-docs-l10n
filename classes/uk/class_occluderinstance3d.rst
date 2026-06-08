@@ -1,0 +1,171 @@
+:github_url: hide
+
+.. _class_OccluderInstance3D:
+
+OccluderInstance3D
+==================
+
+**Успадковує:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+
+Забезпечує оклюзійну кульку для вузлів 3D, що покращує продуктивність в закритих приміщеннях.
+
+.. rst-class:: classref-introduction-group
+
+Опис
+--------
+
+Вибракування оклюзії може покращити продуктивність візуалізації в закритих/напіввідкритих областях, приховуючи геометрію, яка закрита іншими об’єктами. 
+
+Система оклюзії здебільшого статична. **OccluderInstance3D** можна перемістити або приховати під час виконання, але це запустить фонове повторне обчислення, яке може зайняти кілька кадрів. Рекомендується лише спорадично переміщувати **OccluderInstance3D** (наприклад, для цілей процедурної генерації), а не робити це кожного кадру. 
+
+Система відсічення оклюзії працює шляхом паралельного рендерингу оклюдерів на ЦП за допомогою `Embree <https://www.embree.org/>`__, перенесення результату в буфер із низькою роздільною здатністю, а потім використання цього для відсікання 3D-вузлів окремо. У 3D-редакторі ви можете попередньо переглянути буфер відсічення оклюзії, вибравши **Перспектива > Відобразити розширені... > Буфер відсікання оклюзії** у верхньому лівому куті вікна 3D. Якість буфера відсічення оклюзії можна налаштувати в налаштуваннях проекту. 
+
+\ **Запікання:** Виберіть вузол **OccluderInstance3D**, а потім скористайтеся кнопкою **Bake Occluders** у верхній частині 3D-редактора. До уваги братимуться лише непрозорі матеріали; прозорі матеріали (альфа-змішані або альфа-випробувані) ігноруватимуться поколінням оклюдерів. 
+
+\ **Примітка:** Вибракування оклюзії ефективне, лише якщо :ref:`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>` має значення ``true``. Увімкнення блокування оклюзії коштує ЦП. Увімкніть оклюзію, лише якщо ви дійсно плануєте її використовувати. Великі відкриті сцени з невеликою кількістю або без об’єктів, що блокують огляд, як правило, не отримають великої користі від оклюзії. Великі відкриті сцени зазвичай більше виграють від LOD сітки та діапазонів видимості (:ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` і :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`) порівняно з відбракуванням оклюзії. 
+
+\ **Примітка:** Через обмеження пам’яті відбір оклюзії не підтримується за замовчуванням у шаблонах веб-експорту. Його можна ввімкнути шляхом компіляції спеціальних веб-шаблонів експорту за допомогою ``module_raycast_enabled=yes``.
+
+.. rst-class:: classref-introduction-group
+
+Посібники
+------------------
+
+- :doc:`Вибракування оклюзії <../tutorials/3d/occlusion_culling>`
+
+.. rst-class:: classref-reftable-group
+
+Властивості
+----------------------
+
+.. table::
+   :widths: auto
+
+   +-------------------------------------+-----------------------------------------------------------------------------------------------------+----------------+
+   | :ref:`int<class_int>`               | :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>`                                       | ``4294967295`` |
+   +-------------------------------------+-----------------------------------------------------------------------------------------------------+----------------+
+   | :ref:`float<class_float>`           | :ref:`bake_simplification_distance<class_OccluderInstance3D_property_bake_simplification_distance>` | ``0.1``        |
+   +-------------------------------------+-----------------------------------------------------------------------------------------------------+----------------+
+   | :ref:`Occluder3D<class_Occluder3D>` | :ref:`occluder<class_OccluderInstance3D_property_occluder>`                                         |                |
+   +-------------------------------------+-----------------------------------------------------------------------------------------------------+----------------+
+
+.. rst-class:: classref-reftable-group
+
+Методи
+------------
+
+.. table::
+   :widths: auto
+
+   +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`get_bake_mask_value<class_OccluderInstance3D_method_get_bake_mask_value>`\ (\ layer_number\: :ref:`int<class_int>`\ ) |const|                          |
+   +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                  | :ref:`set_bake_mask_value<class_OccluderInstance3D_method_set_bake_mask_value>`\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) |
+   +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описи властивостей
+------------------------------------
+
+.. _class_OccluderInstance3D_property_bake_mask:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **bake_mask** = ``4294967295`` :ref:`🔗<class_OccluderInstance3D_property_bake_mask>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_bake_mask**\ (\ value\: :ref:`int<class_int>`\ )
+- :ref:`int<class_int>` **get_bake_mask**\ (\ )
+
+Візуальні шари для обліку при випіканні оклюцерів. Тільки :ref:`MeshInstance3D<class_MeshInstance3D>`, чи :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` матч з цим :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>` буде включений в створену оклюцерну сітку. За замовчуванням всі об'єкти з *opaque* матеріали враховуються для оклюцерної випічки.
+
+Щоб поліпшити продуктивність і уникнути артефактів, рекомендується виключити динамічні об'єкти, невеликі предмети і світильники з процесу випічки шляхом переміщення їх на окремий візуальний шар і виключення цього шару в :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_OccluderInstance3D_property_bake_simplification_distance:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **bake_simplification_distance** = ``0.1`` :ref:`🔗<class_OccluderInstance3D_property_bake_simplification_distance>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_bake_simplification_distance**\ (\ value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_bake_simplification_distance**\ (\ )
+
+Дистанція спрощування для спрощення генерованого оклюцера полігону (в 3D одиниці). Більшість значень призводить до менш детальної оклюцерної сітки, яка покращує продуктивність, але зменшує точність культивування.
+
+Геометрія оклюцера надається на ЦП, тому важливо зберегти геометрію максимально просто. Так як буфер відрізняється низькою роздільною здатністю, менш докладними оклюцерними сітками, як правило, ще добре працюють. Значення за замовчуванням є досить агресивним, тому ви можете зменшити його, якщо ви запустили в помилкові негативні речовини (об'єкти, що включаються, навіть якщо вони видимі камерою). Значення ``0.01`` буде діяти консервативно, і буде тримати геометрію *perceptually* неафілійовано в буфері відчуження. Залежно від сцени, значення ``0.01`` може все ще спрощувати сіточку помітно порівняно з відключенням спрощення.
+
+Налаштування цього до ``0.0`` розбірки повністю, але вершини в точному ж положенні все ще будуть об'єднані. Сітчаста сіточка також буде повторно знезаражена, щоб зменшити кількість вершин і індексів.
+
+\ **Примітка:** Це використовує бібліотеку `meshoptimizer <https://meshoptimizer.org/>`__ під кришкою, схожу на LOD-генерацію.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_OccluderInstance3D_property_occluder:
+
+.. rst-class:: classref-property
+
+:ref:`Occluder3D<class_Occluder3D>` **occluder** :ref:`🔗<class_OccluderInstance3D_property_occluder>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_occluder**\ (\ value\: :ref:`Occluder3D<class_Occluder3D>`\ )
+- :ref:`Occluder3D<class_Occluder3D>` **get_occluder**\ (\ )
+
+Оклюцерний ресурс для цього **OccluderInstance3D**. Ви можете генерувати ресурс occluder, вибравши вузол **OccluderInstance3D**, після чого за допомогою **Bake Occluders** кнопка у верхній частині редактора.
+
+Ви також можете намалювати свій власний полігон 2D, додавши новий :ref:`PolygonOccluder3D<class_PolygonOccluder3D>` ресурс до :ref:`occluder<class_OccluderInstance3D_property_occluder>` в Інспекторі.
+
+Крім того, ви можете вибрати примітивний октейнер для використання: :ref:`QuadOccluder3D<class_QuadOccluder3D>`, :ref:`BoxOccluder3D<class_BoxOccluder3D>` або :ref:`SphereOccluder3D<class_SphereOccluder3D>`.
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описи методів
+--------------------------
+
+.. _class_OccluderInstance3D_method_get_bake_mask_value:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **get_bake_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OccluderInstance3D_method_get_bake_mask_value>`
+
+Повертає, чи увімкнено вказаний шар :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>`, якщо задано ``layer_number`` значення від 1 до 32.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_OccluderInstance3D_method_set_bake_mask_value:
+
+.. rst-class:: classref-method
+
+|void| **set_bake_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_OccluderInstance3D_method_set_bake_mask_value>`
+
+На основі значення параметра ``value`` вмикає або вимикає вказаний шар у :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>`, маючи значення параметра ``layer_number`` від 1 до 32.
+
+.. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
+.. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
+.. |const| replace:: :abbr:`const (Цей метод не має побічних ефектів. Не змінює ніяку змінну екземпляра об'єкта.)`
+.. |vararg| replace:: :abbr:`vararg (Цей метод приймає будь-яке число аргументів після описаних тут.)`
+.. |constructor| replace:: :abbr:`constructor (Цей метод використовується для побудови типів.)`
+.. |static| replace:: :abbr:`static (Цей метод не потребує екземпляра для виклику, його можна викликати безпосередньо за допомогою назви класу.)`
+.. |operator| replace:: :abbr:`operator (Цей метод описує дійсний оператор для взаємодії з цим типом як з лівим операндом.)`
+.. |bitfield| replace:: :abbr:`BitField (Це значення є цілим числом, складеним у вигляді бітової маски з наступних прапорів.)`
+.. |void| replace:: :abbr:`void (Значення не повертається.)`

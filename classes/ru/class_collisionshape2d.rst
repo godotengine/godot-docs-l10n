@@ -107,11 +107,11 @@ CollisionShape2D
 - |void| **set_one_way_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_one_way_collision_enabled**\ (\ )
 
-Sets whether this collision shape should only detect collision on one side (top or bottom).
+Определяет, должна ли эта форма столкновения обнаруживать столкновение только с одной стороны (сверху или снизу).
 
-\ **Note:** This property has no effect if this **CollisionShape2D** is a child of an :ref:`Area2D<class_Area2D>` node.
+\ **Примечание:** Это свойство не действует, если этот **CollisionShape2D** является дочерним узлом узла :ref:`Area2D<class_Area2D>`.
 
-\ **Note:** The one way collision direction can be configured by setting :ref:`one_way_collision_direction<class_CollisionShape2D_property_one_way_collision_direction>`.
+\ **Примечание:** Направление одностороннего столкновения можно настроить, установив :ref:`one_way_collision_direction<class_CollisionShape2D_property_one_way_collision_direction>`.
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ Sets whether this collision shape should only detect collision on one side (top 
 - |void| **set_one_way_collision_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_one_way_collision_direction**\ (\ )
 
-The direction used for one-way collision.
+Направление, используемое при одностороннем столкновении.
 
 .. rst-class:: classref-item-separator
 

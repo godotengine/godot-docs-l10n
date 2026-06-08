@@ -14,7 +14,7 @@ Timer a colpo singolo.
 Descrizione
 ----------------------
 
-Un timer a colpo singolo gestito dall'albero della scena, che emette :ref:`timeout<class_SceneTreeTimer_signal_timeout>` al completamento. Vedi anche :ref:`SceneTree.create_timer()<class_SceneTree_method_create_timer>`.
+Un timer a colpo singolo gestito dall'albero di scene, che emette :ref:`timeout<class_SceneTreeTimer_signal_timeout>` al completamento. Vedi anche :ref:`SceneTree.create_timer()<class_SceneTree_method_create_timer>`.
 
 A differenza di :ref:`Timer<class_Timer>`, non richiede l'istanziazione di un nodo. Comunemente utilizzato per creare un timer di ritardo a colpo singolo come nel seguente esempio:
 

@@ -233,7 +233,7 @@ AudioStreamPlayer2D
 - |void| **set_panning_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_panning_strength**\ (\ )
 
-通过将基础 :ref:`ProjectSettings.audio/general/2d_panning_strength<class_ProjectSettings_property_audio/general/2d_panning_strength>` 乘以该因子，来缩放该节点的声像强度。与较低的值相比，较高的值将从左到右更显著地声像移动音频。
+通过将基础 :ref:`ProjectSettings.audio/general/2d_panning_strength<class_ProjectSettings_property_audio/general/2d_panning_strength>` 与该因子相乘，来缩放该节点的声像强度。与较低的值相比，较高的值将从左到右更显著地声像移动音频。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ AudioStreamPlayer2D
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-音频的音高和节奏，作为音频样本的采样率的倍数。
+音频的音高和拍速，作为音频样本的采样率的倍数。
 
 .. rst-class:: classref-item-separator
 

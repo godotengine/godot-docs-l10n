@@ -414,7 +414,7 @@ Emitida cuando se hace clic en el título de una columna con :ref:`@GlobalScope.
 
 **custom_item_clicked**\ (\ mouse_button_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tree_signal_custom_item_clicked>`
 
-Emitted when an item with :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` is clicked with a mouse button.
+Emitida cuando se hace clic con un botón del ratón en un elemento con :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -462,9 +462,9 @@ Emitida cuando se hace doble clic en un elemento, o se selecciona con un evento 
 
 **item_collapsed**\ (\ item\: :ref:`TreeItem<class_TreeItem>`\ ) :ref:`🔗<class_Tree_signal_item_collapsed>`
 
-Emitted when an item is expanded or collapsed by clicking on the folding arrow or through code.
+Emitida cuando un elemento se expande o colapsa al hacer clic en la flecha de plegado o mediante código.
 
-\ **Note:** Despite its name, this signal is also emitted when an item is expanded.
+\ **Nota:** A pesar de su nombre, esta señal también se emite cuando un elemento se expande.
 
 .. rst-class:: classref-item-separator
 
@@ -770,9 +770,9 @@ Si es ``true``, los títulos de las columnas son visibles.
 - |void| **set_columns**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_columns**\ (\ )
 
-The number of columns.
+El número de columnas.
 
-Prints an error and does not allow setting the columns during mouse selection.
+Imprime un error y no permite establecer las columnas durante la selección con el ratón.
 
 .. rst-class:: classref-item-separator
 
@@ -808,7 +808,7 @@ Esto controla las secciones de drop, es decir, la decisión y el dibujo de las p
 - |void| **set_enable_drag_unfolding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drag_unfolding_enabled**\ (\ )
 
-If ``true``, tree items will unfold when hovered over during a drag-and-drop. The delay for when this happens is dictated by :ref:`dragging_unfold_wait_msec<class_Tree_theme_constant_dragging_unfold_wait_msec>`.
+Si es ``true``, los elementos del árbol se desplegarán al pasar el puntero sobre ellos durante una operación de arrastrar y soltar. El retraso para que esto ocurra viene dictado por :ref:`dragging_unfold_wait_msec<class_Tree_theme_constant_dragging_unfold_wait_msec>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1527,7 +1527,7 @@ Texto :ref:`Color<class_Color>` para una celda de modo :ref:`TreeItem.CELL_MODE_
 
 :ref:`Color<class_Color>` **drop_on_item_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Tree_theme_color_drop_on_item_color>`
 
-:ref:`Color<class_Color>` used to draw the highlight outline when dragging items that can only be dropped "on" other items.
+:ref:`Color<class_Color>` utilizado para dibujar el contorno de resaltado al arrastrar elementos que solo pueden soltarse "sobre" otros elementos.
 
 .. rst-class:: classref-item-separator
 
@@ -1707,7 +1707,7 @@ El espacio horizontal entre cada botón de una celda.
 
 :ref:`int<class_int>` **check_h_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_check_h_separation>`
 
-The horizontal space between the checkbox and the text in a :ref:`TreeItem.CELL_MODE_CHECK<class_TreeItem_constant_CELL_MODE_CHECK>` mode cell.
+El espacio horizontal entre la casilla de verificación y el texto en una celda de modo :ref:`TreeItem.CELL_MODE_CHECK<class_TreeItem_constant_CELL_MODE_CHECK>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1731,7 +1731,7 @@ El ancho de las líneas de relación entre el :ref:`TreeItem<class_TreeItem>` se
 
 :ref:`int<class_int>` **dragging_unfold_wait_msec** = ``500`` :ref:`🔗<class_Tree_theme_constant_dragging_unfold_wait_msec>`
 
-During a drag-and-drop, this is how many milliseconds to wait over a section before the section unfolds.
+Durante una operación de arrastrar y soltar, esta es la cantidad de milisegundos a esperar sobre una sección antes de que esta se despliegue.
 
 .. rst-class:: classref-item-separator
 
@@ -1779,7 +1779,7 @@ El espacio horizontal entre las celdas de los artículos. También se utiliza co
 
 :ref:`int<class_int>` **icon_h_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_icon_h_separation>`
 
-The horizontal space between the icon and the text in item's cells.
+El espacio horizontal entre el icono y el texto en las celdas de los elementos.
 
 .. rst-class:: classref-item-separator
 

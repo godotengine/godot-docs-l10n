@@ -860,15 +860,15 @@ The dictionary can also include the following fields under selected platforms:
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns the calibration information about the specified joypad's motion sensors in the form of a :ref:`Dictionary<class_Dictionary>`, if it has any and if they have been calibrated, otherwise returns an empty :ref:`Dictionary<class_Dictionary>`.
+Возвращает информацию о калибровке датчиков движения указанного джойстика в виде :ref:`Dictionary<class_Dictionary>`, если таковые имеются и если они были откалиброваны; в противном случае возвращает пустой :ref:`Dictionary<class_Dictionary>`.
 
-The dictionary contains the following fields:
+Словарь содержит следующие поля:
 
-\ ``gyroscope_offset``: average offset in gyroscope values from :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>` in rad/s.
+\ ``gyroscope_offset``: среднее смещение значений гироскопа относительно :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>` в рад/с.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+См. :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` для примера использования датчиков движения и калибровки джойстика в ваших играх.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -882,9 +882,9 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns the joypad's motion sensor rate in Hz, if the joypad has motion sensors and they're currently enabled. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+Возвращает частоту срабатывания датчика движения геймпада в Гц, если геймпад оснащен датчиками движения и они в данный момент включены. См. также :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -908,11 +908,11 @@ Returns the joypad's motion sensor rate in Hz, if the joypad has motion sensors 
 
 :ref:`float<class_float>` **get_joy_vibration_duration**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_vibration_duration>`
 
-Returns the duration of the current vibration effect in seconds.
+Возвращает длительность текущего эффекта вибрации в секундах.
 
-\ **Note:** This method returns the same value that was passed to :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`, and this value does **not** change when the joypad's vibration runs out, it only gets reset after a call to :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
+\ **Примечание:** Этот метод возвращает то же значение, которое было передано в :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`, и это значение **не** изменяется после окончания вибрации джойстика, оно сбрасывается только после вызова :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
 
-If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>` instead.
+Если вы хотите проверить, продолжает ли вибрировать джойстик, используйте вместо этого :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`.
 
 .. rst-class:: classref-item-separator
 
@@ -926,7 +926,7 @@ If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating(
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns the remaining duration of the current vibration effect in seconds.
+Возвращает оставшуюся продолжительность текущего вибрационного эффекта в секундах.
 
 .. rst-class:: classref-item-separator
 
@@ -938,11 +938,11 @@ Returns the remaining duration of the current vibration effect in seconds.
 
 :ref:`Vector2<class_Vector2>` **get_joy_vibration_strength**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_vibration_strength>`
 
-Returns the strength of the joypad vibration: x is the strength of the weak motor, and y is the strength of the strong motor.
+Возвращает силу вибрации джойстика: x — сила слабого двигателя, а y — сила сильного двигателя.
 
-\ **Note:** This method returns the same values that were passed to :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`, and these values do **not** change when the joypad's vibration runs out, they only get reset after a call to :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
+\ **Примечание:** Этот метод возвращает те же значения, которые были переданы в :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`, и эти значения **не** изменяются, когда вибрация джойстика заканчивается, они сбрасываются только после вызова :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
 
-If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>` instead.
+Если вы хотите проверить, продолжает ли вибрировать джойстик, используйте вместо этого :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1022,9 +1022,9 @@ If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating(
 
 :ref:`bool<class_bool>` **has_joy_light**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_has_joy_light>`
 
-Returns ``true`` if the joypad has an LED light that can change colors and/or brightness. See also :ref:`set_joy_light()<class_Input_method_set_joy_light>`.
+Возвращает ``true``, если геймпад имеет светодиодную подсветку, которая может менять цвет и/или яркость. См. также :ref:`set_joy_light()<class_Input_method_set_joy_light>`.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1038,11 +1038,11 @@ Returns ``true`` if the joypad has an LED light that can change colors and/or br
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns ``true`` if the joypad has motion sensors (accelerometer and gyroscope).
+Возвращает ``true``, если геймпад оснащен датчиками движения (акселерометром и гироскопом).
 
-\ **Note:** On iOS, joypad accelerometer sensor reading is not supported due to OS limitations.
+\ **Примечание:** На iOS считывание данных с акселерометра геймпада не поддерживается из-за ограничений операционной системы.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1054,9 +1054,9 @@ Returns ``true`` if the joypad has motion sensors (accelerometer and gyroscope).
 
 :ref:`bool<class_bool>` **has_joy_vibration**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_has_joy_vibration>`
 
-Returns ``true`` if the joypad supports vibration. See also :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
+Возвращает ``true``, если геймпад поддерживает вибрацию. См. также :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
 
-\ **Note:** For macOS, vibration is only supported in macOS 11 and later. When connected via USB, vibration is only supported for major brand controllers (except Xbox One and Xbox Series X/S controllers) due to macOS limitations.
+\ **Примечание:** Для macOS вибрация поддерживается только в macOS 11 и более поздних версиях. При подключении через USB вибрация поддерживается только для контроллеров основных производителей (кроме контроллеров Xbox One и Xbox Series X/S) из-за ограничений macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1174,9 +1174,9 @@ Returns ``true`` if the joypad supports vibration. See also :ref:`start_joy_vibr
 
 :ref:`bool<class_bool>` **is_joy_button_pressed**\ (\ device\: :ref:`int<class_int>`, button\: :ref:`JoyButton<enum_@GlobalScope_JoyButton>`\ ) |const| :ref:`🔗<class_Input_method_is_joy_button_pressed>`
 
-Returns ``true`` if you are pressing the joypad button at index ``button``.
+Возвращает ``true``, если вы нажимаете кнопку джойстика по индексу ``button``.
 
-\ **Note:** If you want to check if a joypad button was just pressed, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **Примечание:** Если вы хотите проверить, была ли только что нажата кнопка джойстика, используйте систему действий ввода Godot с помощью :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` или используйте метод :ref:`Node._input()<class_Node_private_method__input>` следующим образом:
 
 
 .. tabs::
@@ -1185,7 +1185,7 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
 
     func _input(event):
         if event is InputEventJoypadButton and event.is_pressed() and event.button_index == JOY_BUTTON_A:
-            pass # Your code here.
+            pass # Ваш код здесь.
 
  .. code-tab:: csharp
 
@@ -1193,7 +1193,7 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
     {
         if (@event is InputEventJoypadButton eventButton && eventButton.Pressed && eventButton.ButtonIndex == JoyButton.A)
         {
-            // Your code here.
+            // Ваш код здесь.
         }
     }
 
@@ -1223,11 +1223,11 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns ``true`` if the joypad's motion sensors have been calibrated.
+Возвращает ``true``, если датчики движения геймпада откалиброваны.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+См. :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` для примера использования датчиков движения и калибровки геймпада в играх.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1241,11 +1241,11 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns ``true`` if the joypad's motion sensors are currently being calibrated.
+Возвращает ``true``, если датчики движения геймпада в данный момент калибруются.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+См. :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` для примера использования датчиков движения и калибровки геймпада в ваших играх.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1259,11 +1259,11 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns ``true`` if the requested joypad has motion sensors (accelerometer and gyroscope) and they are currently enabled. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>` and :ref:`has_joy_motion_sensors()<class_Input_method_has_joy_motion_sensors>`.
+Возвращает ``true``, если запрошенный геймпад имеет датчики движения (акселерометр и гироскоп) и они в данный момент включены. См. также :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>` и :ref:`has_joy_motion_sensors()<class_Input_method_has_joy_motion_sensors>`.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+См. :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` для примера использования датчиков движения и калибровки геймпада в ваших играх.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1277,9 +1277,9 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns ``true`` if the joypad is still vibrating after a call to :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
+Возвращает ``true``, если джойстик продолжает вибрировать после вызова :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
 
-Unlike :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` and :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`, this method returns ``false`` after the joypad's vibration runs out.
+В отличие от :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` и :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`, этот метод возвращает ``false`` после того, как вибрация джойстика прекращается.
 
 .. rst-class:: classref-item-separator
 
@@ -1291,9 +1291,9 @@ Unlike :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_s
 
 :ref:`bool<class_bool>` **is_key_label_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_key_label_pressed>`
 
-Returns ``true`` if you are pressing the key with the ``keycode`` printed on it. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant or any Unicode character code.
+Возвращает ``true``, если вы нажимаете клавишу с напечатанным на ней ``keycode``. Вы можете передать константу :ref:`Key<enum_@GlobalScope_Key>` или любой код символа Unicode.
 
-\ **Note:** If you want to check if a key was just pressed by using its label, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **Примечание:** Если вы хотите проверить, была ли только что нажата клавиша, используя её метку, используйте систему действий ввода Godot с помощью :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` или используйте метод :ref:`Node._input()<class_Node_private_method__input>` следующим образом:
 
 
 .. tabs::
@@ -1302,7 +1302,7 @@ Returns ``true`` if you are pressing the key with the ``keycode`` printed on it.
 
     func _input(event):
         if event is InputEventKey and not event.is_echo() and event.is_pressed() and event.key_label == KEY_SPACE:
-            pass # Your code here.
+            pass # Ваш код здесь.
 
  .. code-tab:: csharp
 
@@ -1310,7 +1310,7 @@ Returns ``true`` if you are pressing the key with the ``keycode`` printed on it.
     {
         if (@event is InputEventKey eventKey && !eventKey.IsEcho() && eventKey.Pressed && eventKey.KeyLabel == Key.Space)
         {
-            // Your code here.
+            // Ваш код здесь.
         }
     }
 

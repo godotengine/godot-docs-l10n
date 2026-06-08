@@ -186,7 +186,7 @@ enum **Type**: :ref:`🔗<enum_VisualShader_Type>`
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_TEXTURE_BLIT** = ``10``
 
-A shader used to process blit calls to a DrawableTexture.
+Шейдер, используемый для обработки вызовов blit к DrawableTexture.
 
 .. _class_VisualShader_constant_TYPE_MAX:
 

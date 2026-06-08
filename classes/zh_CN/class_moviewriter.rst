@@ -99,7 +99,7 @@ Godot 内置的 **MovieWriter** 有 3 个：
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_supported_extensions**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MovieWriter_private_method__get_supported_extensions>`
 
-Returns the list of supported filename extensions for movies written with this **MovieWriter**.
+返回此 **MovieWriter** 在生成（写入）影片时所支持的文件名扩展名列表。
 
 .. rst-class:: classref-item-separator
 

@@ -9,18 +9,18 @@ RDHitGroup
 
 **继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Hit group (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+命中组（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Defines a hit group for use with :ref:`RenderingDevice.raytracing_pipeline_create()<class_RenderingDevice_method_raytracing_pipeline_create>`.
+定义一个用于 :ref:`RenderingDevice.raytracing_pipeline_create()<class_RenderingDevice_method_raytracing_pipeline_create>` 的 命中组（Hit Group）。
 
-A hit group combines shaders that are executed when a ray intersects geometry. It may include a closest-hit shader, any-hit shader, and intersection shader.
+当光线与几何体相交时，命中组会组合执行相应的着色器。它可能包含一个 最近命中（closest-hit） 着色器、任意命中（any-hit） 着色器和 相交（intersection） 着色器。
 
-Hit groups are referenced by index when populating hit shader binding tables using :ref:`RenderingDevice.hit_sbt_range_update()<class_RenderingDevice_method_hit_sbt_range_update>`.
+在使用 :ref:`RenderingDevice.hit_sbt_range_update()<class_RenderingDevice_method_hit_sbt_range_update>` 填充命中着色器绑定表（Hit Shader Binding Tables）时，通过索引引用命中组。
 
 .. rst-class:: classref-reftable-group
 
@@ -58,7 +58,7 @@ Hit groups are referenced by index when populating hit shader binding tables usi
 - |void| **set_any_hit_shader**\ (\ value\: :ref:`RDPipelineShader<class_RDPipelineShader>`\ )
 - :ref:`RDPipelineShader<class_RDPipelineShader>` **get_any_hit_shader**\ (\ )
 
-Any-hit shader for this hit group. Executed for each potential intersection. Can be ``null``.
+该命中组的“任意命中”（Any-hit）着色器。针对每一个潜在的相交点执行。可以为 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ Any-hit shader for this hit group. Executed for each potential intersection. Can
 - |void| **set_closest_hit_shader**\ (\ value\: :ref:`RDPipelineShader<class_RDPipelineShader>`\ )
 - :ref:`RDPipelineShader<class_RDPipelineShader>` **get_closest_hit_shader**\ (\ )
 
-Closest-hit shader for this hit group. Executed for the closest intersection. Can be ``null``.
+该命中组的“最近命中”（Closest-hit）着色器。仅针对距离光线起点最近的那个交点执行。可以为 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -92,7 +92,7 @@ Closest-hit shader for this hit group. Executed for the closest intersection. Ca
 - |void| **set_intersection_shader**\ (\ value\: :ref:`RDPipelineShader<class_RDPipelineShader>`\ )
 - :ref:`RDPipelineShader<class_RDPipelineShader>` **get_intersection_shader**\ (\ )
 
-Intersection shader for this hit group. Required for non-triangle geometry. Must be ``null`` when using for triangle geometry.
+该命中组的“相交”（Intersection）着色器。针对非三角形几何体为必需项。若用于三角形几何体，则必须设为 ``null``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

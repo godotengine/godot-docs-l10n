@@ -55,13 +55,13 @@ Descrizioni dei metodi
 
 |void| **do_entity_update**\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next_snapshot_create\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, next_snapshot_query\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_do_entity_update>`
 
-Calls :ref:`OpenXRSpatialEntityExtension.update_spatial_entities()<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>` and :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` with the marker entities associated with ``spatial_context``.
+Chiama :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>` e :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` con le entità di marcatore associate al contesto spaziale ``spatial_context``.
 
-\ ``component_data`` are the :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\ s to update for this marker capability.
+\ ``component_data`` sono i :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` da aggiornare per questa capacità di marcatore.
 
-If ``next_snapshot_create`` is non-null, then pass this to the ``next`` parameter in :ref:`OpenXRSpatialEntityExtension.update_spatial_entities()<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>`.
+Se ``next_snapshot_create`` non è nullo, passalo al parametro ``next`` di :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`.
 
-If ``next_snapshot_query`` is non-null, then pass this to the ``next`` parameter in :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Se ``next_snapshot_query`` non è nullo, passalo al parametro ``next`` di :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ If ``next_snapshot_query`` is non-null, then pass this to the ``next`` parameter
 
 :ref:`bool<class_bool>` **is_april_tag_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_april_tag_supported>`
 
-Returns ``true`` if April tag marker tracking is supported by the current device.
+Restituisce ``true`` se il tracciamento dei marcatori April tag è supportato dal dispositivo attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ Returns ``true`` if April tag marker tracking is supported by the current device
 
 :ref:`bool<class_bool>` **is_aruco_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_aruco_supported>`
 
-Returns ``true`` if Aruco marker tracking is supported by the current device.
+Restituisce ``true`` se il tracciamento dei marcatori Aruco è supportato dal dispositivo attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ Returns ``true`` if Aruco marker tracking is supported by the current device.
 
 :ref:`bool<class_bool>` **is_micro_qrcode_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_micro_qrcode_supported>`
 
-Returns ``true`` if micro QR code marker tracking is supported by the current device.
+Restituisce ``true`` se il tracciamento dei marcatori dei codici micro QR è supportato dal dispositivo attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ Returns ``true`` if micro QR code marker tracking is supported by the current de
 
 :ref:`bool<class_bool>` **is_qrcode_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_qrcode_supported>`
 
-Returns ``true`` if QR code marker tracking is supported by the current device.
+Restituisce ``true`` se il tracciamento dei marcatori dei codici QR è supportato dal dispositivo attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -121,17 +121,17 @@ Returns ``true`` if QR code marker tracking is supported by the current device.
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **start_entity_discovery**\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next_snapshot_create\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, next_snapshot_query\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_start_entity_discovery>`
 
-Calls :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>` and :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` with the marker entities associated with ``spatial_context``.
+Chiama :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>` e :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` con le entità di marcatore associate al contesto spaziale ``spatial_context``.
 
-\ ``component_data`` are the :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\ s to discover for this marker capability.
+\ ``component_data`` sono i :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` da individuare per questa capacità di marcatore.
 
-If ``next_snapshot_create`` is non-null, then pass this to the ``next`` parameter in :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`.
+Se ``next_snapshot_create`` non è nullo, passalo al parametro ``next`` di :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`.
 
-If ``next_snapshot_query`` is non-null, then pass this to the ``next`` parameter in :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Se ``next_snapshot_query`` non è nullo, passalo al parametro ``next`` di :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
-\ ``user_callback``, when non-null, is called with two parameters usually twice. The first parameter is the :ref:`RID<class_RID>` of the discovery snapshot and the second parameter is a boolean where ``false`` indicates the discovery snapshot is about to be processed, and ``true`` indicates the discovery snapshot has been processed and ``component_data`` has valid data. The second call is skipped if an error was encountered.
+\ ``user_callback``, se non è nullo, viene chiamato con due parametri, solitamente due volte. Il primo parametro è l':ref:`RID<class_RID>` dello snapshot di individuazione e il secondo parametro è un valore booleano: ``false`` indica che lo snapshot di individuazione sta per essere elaborato, mentre ``true`` indica che lo snapshot di individuazione è stato elaborato e che ``component_data`` contiene dati validi. La seconda chiamata viene saltata in caso di errore.
 
-The returned :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` is identical to the return from :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`.
+Il :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` restituito è identico a quello restituito da :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

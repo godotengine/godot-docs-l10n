@@ -77,7 +77,7 @@ The BLAS referenced by this instance. If ``null``, the instance is treated as a 
 - |void| **set_flags**\ (\ value\: |bitfield|\[:ref:`AccelerationStructureInstanceFlagBits<enum_RenderingDevice_AccelerationStructureInstanceFlagBits>`\]\ )
 - |bitfield|\[:ref:`AccelerationStructureInstanceFlagBits<enum_RenderingDevice_AccelerationStructureInstanceFlagBits>`\] **get_flags**\ (\ )
 
-Flags for the instance.
+Banderas para la instancia.
 
 .. rst-class:: classref-item-separator
 

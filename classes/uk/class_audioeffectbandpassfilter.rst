@@ -7,16 +7,16 @@ AudioEffectBandPassFilter
 
 **Успадковує:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a band-pass filter to an audio bus.
+Додає смуговий фільтр до аудіошини.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-A "band-pass" filter allows the frequencies at :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` to pass unchanged, and attenuates frequencies outside the frequency threshold. It is the opposite of :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>` and :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`.
+«Смуговий» фільтр пропускає частоти на рівні :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` без змін і ослаблює частоти, що виходять за межі цього діапазону. Він є протилежністю фільтрів :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>` та :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`.
 
-This filter can be used to emulate sounds coming from weak speakers.
+Цей фільтр можна використовувати для імітації звуків, що лунають зі слабких динаміків.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ This filter can be used to emulate sounds coming from weak speakers.
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Аудіоефекти <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

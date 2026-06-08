@@ -382,9 +382,9 @@ Descripciones de Métodos
 
 :ref:`int<class_int>` **add_bone**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Skeleton3D_method_add_bone>`
 
-Adds a new bone with the given name. Returns the new bone's index, or ``-1`` if this method fails.
+Añade un nuevo hueso con el nombre dado. Devuelve el índice del nuevo hueso, o ``-1`` si este método falla.
 
-\ **Note:** Bone names should be unique, non empty, and cannot include the ``:`` and ``/`` characters.
+\ **Nota:** Los nombres de los huesos deben ser únicos, no vacíos, y no pueden incluir los caracteres ``:`` y ``/``.
 
 .. rst-class:: classref-item-separator
 
@@ -396,9 +396,9 @@ Adds a new bone with the given name. Returns the new bone's index, or ``-1`` if 
 
 |void| **advance**\ (\ delta\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Skeleton3D_method_advance>`
 
-Manually advance the child :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ s by the specified time (in seconds).
+Avanza manualmente los :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` hijos por el tiempo especificado (en segundos).
 
-\ **Note:** The ``delta`` is temporarily accumulated in the **Skeleton3D**, and the deferred process uses the accumulated value to process the modification.
+\ **Nota:** El ``delta`` se acumula temporalmente en el **Skeleton3D**, y el proceso diferido usa el valor acumulado para procesar la modificación.
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ Devuelve la transformación general del hueso especificado, con respecto al esqu
 
 **Obsoleto:** Este método podría ser modificado o eliminado en versiones futuras.
 
-Returns the global pose override transform for ``bone_idx``.
+Devuelve la transformación de sobreescritura de la pose global para el ``bone_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ Devuelve la transformación de reposo global para ``bone_idx``.
 
 :ref:`Variant<class_Variant>` **get_bone_meta**\ (\ bone_idx\: :ref:`int<class_int>`, key\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_meta>`
 
-Returns the metadata with the given ``key`` for the bone at index ``bone_idx``.
+Devuelve los metadatos con la clave dada ``key`` para el hueso en el índice ``bone_idx``.
 
 .. rst-class:: classref-item-separator
 

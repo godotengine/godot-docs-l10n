@@ -114,7 +114,7 @@ Se impostato, rimappa i colori della texture in base alla mappa :ref:`Color<clas
 - |void| **set_fix_alpha_border**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_fix_alpha_border**\ (\ )
 
-If ``true``, puts pixels of the same surrounding color in transition from transparent to opaque areas. For textures displayed with bilinear filtering, this helps to reduce the outline effect when exporting images from an image editor.
+Se ``true``, inserisce pixel dello stesso colore circostante in transizione dalle aree trasparenti alle aree opache. Per le texture visualizzate con il filtro bilineare, questo aiuta a ridurre l'effetto contorno quando si esportano immagini da un editor di immagini.
 
 .. rst-class:: classref-item-separator
 

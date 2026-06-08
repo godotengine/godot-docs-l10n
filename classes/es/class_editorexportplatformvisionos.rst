@@ -835,7 +835,7 @@ Icono de la aplicación base utilizado para generar otros iconos, versión tinta
 
 :ref:`bool<class_bool>` **modules/camera** :ref:`🔗<class_EditorExportPlatformVisionOS_property_modules/camera>`
 
-If ``true``, :ref:`CameraServer<class_CameraServer>` module is added to the exported project.
+Si es ``true``, el módulo :ref:`CameraServer<class_CameraServer>` se añade al proyecto exportado.
 
 .. rst-class:: classref-item-separator
 
@@ -847,7 +847,7 @@ If ``true``, :ref:`CameraServer<class_CameraServer>` module is added to the expo
 
 :ref:`int<class_int>` **privacy/active_keyboard_access_reasons** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/active_keyboard_access_reasons>`
 
-The reasons your app use active keyboard API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+Las razones por las que tu app usa la API de teclado activo. Véase `Describir el uso de la API de motivos requeridos <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -895,7 +895,7 @@ Indica si tu aplicación recopila datos publicitarios.
 
 :ref:`int<class_int>` **privacy/collected_data/advertising_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformVisionOS_property_privacy/collected_data/advertising_data/collection_purposes>`
 
-The reasons your app collects advertising data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu app recopila datos publicitarios. Véase `Describir el uso de datos en los manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 

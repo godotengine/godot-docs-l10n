@@ -166,7 +166,7 @@ OptionButton
 
 **item_focused**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OptionButton_signal_item_focused>`
 
-Emitted when the user navigates to an item using the :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` or :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` input actions. The index of the item focused is passed as argument.
+当用户通过 :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>`\ （向上）或 :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>`\ （向下）输入动作导航到某个项目时，会触发（发射）此信号。被聚焦的项目的索引（index）会作为参数传递进来。
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ Emitted when the user navigates to an item using the :ref:`ProjectSettings.input
 
 :ref:`bool<class_bool>` **popup/item_{index}/disabled** = ``false`` :ref:`🔗<class_OptionButton_property_popup/item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+如果为 ``true``\ ，则禁用位于 ``index`` 处的项目。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -264,9 +264,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **popup/item_{index}/icon** :ref:`🔗<class_OptionButton_property_popup/item_{index}/icon>`
 
-The icon of the item at ``index``.
+位于 ``index`` 处的项目的图标。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -278,9 +278,9 @@ The icon of the item at ``index``.
 
 :ref:`int<class_int>` **popup/item_{index}/id** = ``0`` :ref:`🔗<class_OptionButton_property_popup/item_{index}/id>`
 
-The ID of the item at ``index``.
+索引为 ``index`` 的菜单项的 ID。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必须在 ``0 .. item_count - 1`` 范围内。
 
 .. rst-class:: classref-item-separator
 
@@ -292,9 +292,9 @@ The ID of the item at ``index``.
 
 :ref:`bool<class_bool>` **popup/item_{index}/separator** = ``false`` :ref:`🔗<class_OptionButton_property_popup/item_{index}/separator>`
 
-If ``true``, the item at ``index`` is a separator.
+如果为 ``true``\ ，则索引为 ``index`` 的菜单项是一个分隔符。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必须在 ``0 .. item_count - 1`` 范围内。
 
 .. rst-class:: classref-item-separator
 
@@ -306,9 +306,9 @@ If ``true``, the item at ``index`` is a separator.
 
 :ref:`String<class_String>` **popup/item_{index}/text** = ``""`` :ref:`🔗<class_OptionButton_property_popup/item_{index}/text>`
 
-The text of the item at ``index``.
+位于 ``index`` 处的项目的文本。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ The text of the item at ``index``.
 - |void| **set_search_bar_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_enabled**\ (\ )
 
-If ``true``, shows a search bar at the top of the :ref:`PopupMenu<class_PopupMenu>` for filtering items. See :ref:`search_bar_min_item_count<class_OptionButton_property_search_bar_min_item_count>` for dynamically controlling its visibility based on the number of items.
+如果为 ``true``\ ，则在 :ref:`PopupMenu<class_PopupMenu>` 顶部显示一个用于筛选项目的搜索栏。请参阅 :ref:`search_bar_min_item_count<class_OptionButton_property_search_bar_min_item_count>`\ ，以了解基于项目数量动态控制其可见性的方法。
 
 .. rst-class:: classref-item-separator
 
@@ -342,9 +342,9 @@ If ``true``, shows a search bar at the top of the :ref:`PopupMenu<class_PopupMen
 - |void| **set_search_bar_fuzzy_search_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_fuzzy_search_enabled**\ (\ )
 
-If ``true``, enables fuzzy searching in the :ref:`PopupMenu<class_PopupMenu>` search bar. This allows the search results to include items that almost match the search query, as well items that match the individual characters of the search query, but not in sequence.
+如果为 ``true``\ ，则在 :ref:`PopupMenu<class_PopupMenu>` 的搜索栏中启用模糊搜索。这允许搜索结果包含与搜索查询几乎匹配的条目，以及那些单独字符与搜索查询匹配但不按顺序排列的条目。
 
-Use :ref:`search_bar_fuzzy_search_max_misses<class_OptionButton_property_search_bar_fuzzy_search_max_misses>` to set the maximum number of mismatches allowed in the search results.
+请使用 :ref:`search_bar_fuzzy_search_max_misses<class_OptionButton_property_search_bar_fuzzy_search_max_misses>` 来设置搜索结果中允许的最大不匹配数量。
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ Use :ref:`search_bar_fuzzy_search_max_misses<class_OptionButton_property_search_
 - |void| **set_search_bar_fuzzy_search_max_misses**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_fuzzy_search_max_misses**\ (\ )
 
-Sets the maximum number of mismatches allowed in each search result when fuzzy searching is enabled for the :ref:`PopupMenu<class_PopupMenu>` search bar. Any item with more mismatches will be hidden from the search results.
+设置为 :ref:`PopupMenu<class_PopupMenu>` 的搜索栏启用模糊搜索时，每个搜索结果中允许的最大不匹配数量。任何超过该数量的菜单项都将从搜索结果中被隐藏。
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ Sets the maximum number of mismatches allowed in each search result when fuzzy s
 - |void| **set_search_bar_min_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_min_item_count**\ (\ )
 
-Sets the minimum number of items required for the :ref:`PopupMenu<class_PopupMenu>` search bar to be visible. :ref:`search_bar_enabled<class_OptionButton_property_search_bar_enabled>` must be ``true`` for this to have any effect.
+设置让 :ref:`PopupMenu<class_PopupMenu>`\ （弹出菜单）的搜索栏显示出来所需的最少项目数量。\ :ref:`search_bar_enabled<class_OptionButton_property_search_bar_enabled>` 必须为 ``true``\ ，这个设置才会生效。
 
 .. rst-class:: classref-item-separator
 

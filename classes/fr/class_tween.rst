@@ -754,13 +754,13 @@ Appeler cette méthode sans argument fera s'exécuter le **Tween** de manière i
 
 Si ``parallel`` vaut ``true``, les :ref:`Tweener<class_Tweener>`\ s ajoutés après cette méthode s'exécuteront par défaut simultanément, au lieu de séquentiellement.
 
-\ **Note:** Tout comme avec :ref:`parallel()<class_Tween_method_parallel>`, le tweener ajouté juste avant cette méthode fera également partie de l'étape parallèle.
+\ **Note :** Tout comme avec :ref:`parallel()<class_Tween_method_parallel>`, le tweener ajouté juste avant cette méthode fera également partie de l'étape parallèle.
 
 ::
 
     tween.tween_property(self, "position", Vector2(300, 0), 0.5)
     tween.set_parallel()
-    tween.tween_property(self, "modulate", Couleur. GREEN, 0.5) # S'exécute ensemble avec le tweener de position.
+    tween.tween_property(self, "modulate", Color.GREEN, 0.5) # S'exécute ensemble avec le tweener de position.
 
 .. rst-class:: classref-item-separator
 

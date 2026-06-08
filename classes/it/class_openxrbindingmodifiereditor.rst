@@ -74,7 +74,7 @@ Restituisce l':ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` attualme
 
 |void| **setup**\ (\ action_map\: :ref:`OpenXRActionMap<class_OpenXRActionMap>`, binding_modifier\: :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>`\ ) :ref:`🔗<class_OpenXRBindingModifierEditor_method_setup>`
 
-Configura questo editor per la mappa di azioni ``action_map`` e e il modificatore di associazione ``binding_modifier``.
+Configura questo editor per la mappa di azioni ``action_map`` e il modificatore di associazione ``binding_modifier``.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

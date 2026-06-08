@@ -1512,7 +1512,7 @@ enum **StencilFlags**: :ref:`🔗<enum_BaseMaterial3D_StencilFlags>`
 
 :ref:`StencilFlags<enum_BaseMaterial3D_StencilFlags>` **STENCIL_FLAG_READ** = ``1``
 
-The material will only be rendered where it passes a stencil comparison with existing stencil buffer values.
+Il materiale sarà renderizzato solo se passa un confronto di stencil con i valori esistenti nel buffer stencil.
 
 .. _class_BaseMaterial3D_constant_STENCIL_FLAG_WRITE:
 
@@ -1520,7 +1520,7 @@ The material will only be rendered where it passes a stencil comparison with exi
 
 :ref:`StencilFlags<enum_BaseMaterial3D_StencilFlags>` **STENCIL_FLAG_WRITE** = ``2``
 
-Il materiale scriverà il valore di riferimento nel buffer dello stencil dove passa il test di profondità.
+Il materiale scriverà il valore di riferimento nel buffer stencil dove passa il test di profondità.
 
 .. _class_BaseMaterial3D_constant_STENCIL_FLAG_WRITE_DEPTH_FAIL:
 
@@ -1528,7 +1528,7 @@ Il materiale scriverà il valore di riferimento nel buffer dello stencil dove pa
 
 :ref:`StencilFlags<enum_BaseMaterial3D_StencilFlags>` **STENCIL_FLAG_WRITE_DEPTH_FAIL** = ``4``
 
-Il materiale scriverà il valore di riferimento nel buffer dello stencil dove fallisce il test di profondità.
+Il materiale scriverà il valore di riferimento nel buffer stencil dove fallisce il test di profondità.
 
 .. rst-class:: classref-item-separator
 
@@ -3430,9 +3430,9 @@ Il valore di riferimento di stencil (0-255). Solitamente una potenza di 2.
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, subsurface scattering is enabled. Emulates light that penetrates an object's surface, is scattered, and then emerges. Subsurface scattering quality is controlled by :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>`.
+Se ``true``, il subsurface scattering è abilitato. Emula la luce che penetra nella superficie di un oggetto, è dispersa e poi emerge. La qualità della dispersione è controllata da :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>`.
 
-\ **Note:** Subsurface scattering is not supported on viewports that have a transparent background (where :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is ``true``).
+\ **Nota:** Il subsurface scattering non è supportato nelle viewport che hanno uno sfondo trasparente (dove :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` è ``true``).
 
 .. rst-class:: classref-item-separator
 

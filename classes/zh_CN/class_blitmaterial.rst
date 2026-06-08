@@ -7,14 +7,14 @@ BlitMaterial
 
 **继承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A material that processes blit calls to a DrawableTexture.
+一种用于处理向 DrawableTexture 执行位块传输调用的材质。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-A material resource that can be used by DrawableTextures when processing blit calls to draw.
+一种可供 DrawableTextures 在处理位块传输调用时使用的材质资源。
 
 .. rst-class:: classref-reftable-group
 
@@ -81,7 +81,7 @@ enum **BlendMode**: :ref:`🔗<enum_BlitMaterial_BlendMode>`
 
 :ref:`BlendMode<enum_BlitMaterial_BlendMode>` **BLEND_MODE_DISABLED** = ``4``
 
-No blending mode, direct color copy.
+无混合模式，直接进行颜色复制。
 
 .. rst-class:: classref-section-separator
 
@@ -103,7 +103,7 @@ No blending mode, direct color copy.
 - |void| **set_blend_mode**\ (\ value\: :ref:`BlendMode<enum_BlitMaterial_BlendMode>`\ )
 - :ref:`BlendMode<enum_BlitMaterial_BlendMode>` **get_blend_mode**\ (\ )
 
-The manner in which the newly blitted texture is blended with the original DrawableTexture.
+新执行位块传输的纹理与原始 DrawableTexture 进行混合的方式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -1485,9 +1485,9 @@ Visualizza una cella con :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MOD
 
 |void| **set_custom_bg_color**\ (\ column\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, just_outline\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_TreeItem_method_set_custom_bg_color>`
 
-Sets the given column's custom background color and whether to just use it as an outline.
+Imposta il colore personalizzato di sfondo della colonna specificata e se utilizzarlo solo come contorno.
 
-\ **Note:** If a custom :ref:`StyleBox<class_StyleBox>` is set, the background color will be drawn behind it.
+\ **Nota:** Se uno :ref:`StyleBox<class_StyleBox>` personalizzato è impostato, il colore di sfondo sarà disegnato dietro di esso.
 
 .. rst-class:: classref-item-separator
 
@@ -1527,11 +1527,11 @@ Il metodo denominato ``callback`` deve accettare due argomenti: il **TreeItem** 
 
 |void| **set_custom_draw_callback**\ (\ column\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_draw_callback>`
 
-Sets the given column's custom draw callback. Use an empty :ref:`Callable<class_Callable>` (``Callable()``) to clear the custom callback. The cell has to be in :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` to use this feature.
+Imposta il callback di disegno personalizzato della colonna specificata. Utilizza un :ref:`Callable<class_Callable>` vuoto (``Callable()``) per cancellare il callback personalizzato. La cella deve essere in :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` per utilizzare questa funzionalità.
 
-The ``callback`` should accept two arguments: the **TreeItem** that is drawn and its position and size as a :ref:`Rect2<class_Rect2>`.
+Il ``callback`` dovrebbe accettare due argomenti: il **TreeItem** disegnato e la sua posizione e dimensione come :ref:`Rect2<class_Rect2>`.
 
-To draw custom content over the native style, please use :ref:`Tree.get_custom_drawing_canvas_item()<class_Tree_method_get_custom_drawing_canvas_item>`.
+Per disegnare contenuti personalizzati sopra lo stile nativo, usa :ref:`Tree.get_custom_drawing_canvas_item()<class_Tree_method_get_custom_drawing_canvas_item>`.
 
 .. rst-class:: classref-item-separator
 

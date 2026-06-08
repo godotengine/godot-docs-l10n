@@ -240,7 +240,7 @@ enum **MixTarget**: :ref:`🔗<enum_AudioStreamPlayer_MixTarget>`
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-音频的音高和速度，是 :ref:`stream<class_AudioStreamPlayer_property_stream>` 采样率的乘数。取值为 ``2.0`` 时音频的音高翻倍，为 ``0.5`` 时音高减半。
+音频的音高和拍速，是 :ref:`stream<class_AudioStreamPlayer_property_stream>` 采样率的乘数。取值为 ``2.0`` 时音频的音高翻倍，为 ``0.5`` 时音高减半。
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +331,7 @@ enum **MixTarget**: :ref:`🔗<enum_AudioStreamPlayer_MixTarget>`
 
 音量，单位为分贝。这是相对于 :ref:`stream<class_AudioStreamPlayer_property_stream>` 音量的偏移。
 
-\ **注意：**\ 如需在分贝和线性能量间进行转换（常见于音量滑块），请使用 :ref:`volume_linear<class_AudioStreamPlayer_property_volume_linear>`\ 、\ :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` 和 :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>`\ 。
+\ **注意：**\ 如需在分贝和线性能量（常见于音量滑块）间进行转换，请使用 :ref:`volume_linear<class_AudioStreamPlayer_property_volume_linear>`\ 、\ :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` 和 :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>`\ 。
 
 .. rst-class:: classref-item-separator
 

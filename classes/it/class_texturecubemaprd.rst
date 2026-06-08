@@ -14,9 +14,9 @@ Texture per Cubemap associata a una texture creata sul :ref:`RenderingDevice<cla
 Descrizione
 ----------------------
 
-This texture class allows you to use a cubemap texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+Questa classe di texture consente di utilizzare texture cubemap creata direttamente sul :ref:`RenderingDevice<class_RenderingDevice>` come texture per materiali, mesh, ecc.
 
-\ **Note:** **TextureCubemapRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Cubemap<class_Cubemap>` instead.
+\ **Nota:** **TextureCubemapRD** è pensato per un utilizzo di basso livello con :ref:`RenderingDevice<class_RenderingDevice>`. Per la maggior parte dei casi d'uso, utilizza :ref:`Cubemap<class_Cubemap>` al suo posto.
 
 .. rst-class:: classref-introduction-group
 

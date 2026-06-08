@@ -353,7 +353,7 @@ Descripciones de Propiedades
 
 **Obsoleto:** Due to internal changes this doesn't do anything anymore, as they're always in front.
 
-This doesn't do anything.
+Esto no hace nada.
 
 .. rst-class:: classref-item-separator
 

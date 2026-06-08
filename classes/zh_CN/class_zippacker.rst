@@ -183,9 +183,9 @@ enum **CompressionLevel**: :ref:`🔗<enum_ZIPPacker_CompressionLevel>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_directory**\ (\ path\: :ref:`String<class_String>`, permissions\: |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\] = 493, modified_time\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ZIPPacker_method_add_directory>`
 
-Adds directory to the archive. If ``modified_time`` is set to ``0``, current system time is used.
+将目录添加到归档文件中。如果 ``modified_time`` 被设置为 ``0``\ ，则使用当前系统时间。
 
-\ **Note:** Directories are automatically created when :ref:`start_file()<class_ZIPPacker_method_start_file>` is called, use this function before adding files to create directories with custom permissions and modification time.
+\ **注意：** 调用 :ref:`start_file()<class_ZIPPacker_method_start_file>` 时会自动创建目录，若要创建具有自定义权限和修改时间的目录，请在添加文件前调用此函数。
 
 .. rst-class:: classref-item-separator
 
@@ -237,9 +237,9 @@ Adds directory to the archive. If ``modified_time`` is set to ``0``, current sys
 
 :ref:`Error<enum_@GlobalScope_Error>` **start_file**\ (\ path\: :ref:`String<class_String>`, permissions\: |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\] = 420, modified_time\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ZIPPacker_method_start_file>`
 
-Starts writing to a file within the archive. Only one file can be written at the same time. If ``modified_time`` is set to ``0``, current system time is used.
+开始向压缩包内的文件写入数据。同一时间只能写入一个文件。如果将 ``modified_time`` 设置为 ``0``\ ，则会使用当前的系统时间。
 
-Must be called after :ref:`open()<class_ZIPPacker_method_open>`.
+必须在调用 :ref:`open()<class_ZIPPacker_method_open>` 之后才能调用此方法。
 
 .. rst-class:: classref-item-separator
 

@@ -548,7 +548,7 @@ Renvoie le point au ``t`` donné sur la `courbe de Bézier <https://fr.wikipedia
 
 Renvoie le vecteur "réfléchi" d'un plan défini par la normale ``n`` donnée.
 
-\ **Note:** :ref:`bounce()<class_Vector3_method_bounce>` effectue l'opération que la plupart des moteurs et des frameworks appellent ``reflect()``.
+\ **Note :** :ref:`bounce()<class_Vector3_method_bounce>` effectue l'opération que la plupart des moteurs et des frameworks appellent ``reflect()``.
 
 .. rst-class:: classref-item-separator
 

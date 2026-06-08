@@ -212,7 +212,7 @@ VoxelGIData
 
 |void| **allocate**\ (\ to_cell_xform\: :ref:`Transform3D<class_Transform3D>`, aabb\: :ref:`AABB<class_AABB>`, octree_size\: :ref:`Vector3<class_Vector3>`, octree_cells\: :ref:`PackedByteArray<class_PackedByteArray>`, data_cells\: :ref:`PackedByteArray<class_PackedByteArray>`, distance_field\: :ref:`PackedByteArray<class_PackedByteArray>`, level_counts\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_VoxelGIData_method_allocate>`
 
-Initializes this **VoxelGIData** with the specified data. ``octree_cells`` must be a multiple of 32. ``octree_cells`` must be double the size of ``data_cells``. The allocated data can be retrieved later using the various getter methods.
+用指定的数据初始化此 **VoxelGIData**\ 。\ ``octree_cells`` 必须是 32 的倍数，且 ``octree_cells`` 的大小必须是 ``data_cells`` 的两倍。分配的数据日后可通过各种取值方法（getter methods）进行检索。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Initializes this **VoxelGIData** with the specified data. ``octree_cells`` must 
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_data_cells**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_data_cells>`
 
-Returns the baked cell data for this **VoxelGIData**.
+返回这个 **VoxelGIData** 的烘焙单元格数据。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Returns the baked cell data for this **VoxelGIData**.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_level_counts**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_level_counts>`
 
-Returns the baked level counts for this **VoxelGIData**.
+返回这个 **VoxelGIData** 的烘焙层级数量。
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ Returns the baked level counts for this **VoxelGIData**.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_octree_cells**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_octree_cells>`
 
-Returns the baked octree cell data for this **VoxelGIData**.
+返回这个 **VoxelGIData** 的烘焙八叉树单元格数据。
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ Returns the baked octree cell data for this **VoxelGIData**.
 
 :ref:`Vector3<class_Vector3>` **get_octree_size**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_octree_size>`
 
-Returns the baked octree size for this **VoxelGIData**, which corresponds to the number of subdivisions per axis. This can be viewed in the editor by hovering the **Bake VoxelGI** button at the top of the 3D editor viewport when a :ref:`VoxelGI<class_VoxelGI>` node is selected and looking at the **Subdivisions** field in the tooltip.
+返回此 **VoxelGIData** 烘焙后的八叉树大小，该数值对应于每个轴向的细分数量。当选择 :ref:`VoxelGI<class_VoxelGI>` 节点时，将鼠标悬停在 3D 编辑器视口顶部的 **烘焙 VoxelGI** 按钮上，即可在工具提示中查看 **细分** 字段。
 
 .. rst-class:: classref-item-separator
 
@@ -286,7 +286,7 @@ Returns the baked octree size for this **VoxelGIData**, which corresponds to the
 
 :ref:`Transform3D<class_Transform3D>` **get_to_cell_xform**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_to_cell_xform>`
 
-Returns the baked cell transform for this **VoxelGIData**.
+返回这个 **VoxelGIData** 的烘焙单元格变换。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

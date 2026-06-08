@@ -546,9 +546,9 @@ Dock 图标右键菜单 ID（在 macOS 上，该菜单包括标准应用程序�
 
 :ref:`int<class_int>` **find_item_index_with_submenu**\ (\ rid\: :ref:`RID<class_RID>`, submenu_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_submenu>`
 
-Returns the index of the item with the submenu specified by ``submenu_rid``. Indices are automatically assigned to each item by the engine.
+返回由 ``submenu_rid`` 指定的子菜单项的索引。索引是由引擎自动分配给每个菜单项的。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：** 此方法仅在 macOS 和 Windows 系统上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -560,9 +560,9 @@ Returns the index of the item with the submenu specified by ``submenu_rid``. Ind
 
 :ref:`int<class_int>` **find_item_index_with_tag**\ (\ rid\: :ref:`RID<class_RID>`, tag\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_tag>`
 
-Returns the index of the item with the specified ``tag``. Indices are automatically assigned to each item by the engine.
+返回带有指定 ``tag``\ （标签）的项目的索引。索引是由引擎自动分配给每个项目的。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：** 此方法仅在 macOS 和 Windows 系统上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -574,9 +574,9 @@ Returns the index of the item with the specified ``tag``. Indices are automatica
 
 :ref:`int<class_int>` **find_item_index_with_text**\ (\ rid\: :ref:`RID<class_RID>`, text\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_text>`
 
-Returns the index of the item with the specified ``text``. Indices are automatically assigned to each item by the engine.
+返回带有指定 ``text``\ （文本）的项目的索引。索引是由引擎自动分配给每个项目的。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：** 此方法仅在 macOS 和 Windows 系统上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -1190,13 +1190,13 @@ Returns the index of the item with the specified ``text``. Indices are automatic
 
 :ref:`int<class_int>` **set_item_index**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, target_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_index>`
 
-Changes the index of the item at index ``idx`` to be at index ``target_idx``. This can be used to move an item above other items.
+将位于索引 ``idx`` 处的项目，更改其位置至索引 ``target_idx`` 处。这可以用来把一个项目移动到其它项目的前面。
 
-Returns the new index of the moved item, it's not guaranteed to be the same as ``target_idx``.
+返回被移动项目的新索引，不能保证该返回值一定与 ``target_idx`` 相同。
 
-\ **Note:** The indices of any items between index ``idx`` and index ``target_idx`` will be shifted by one.
+\ **注意：** 位于索引 ``idx`` 和索引 ``target_idx`` 之间的所有其他项目，其索引都会相应地发生一位的偏移。
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **注意：** 此方法仅在 macOS 和 Windows 系统上实现。
 
 .. rst-class:: classref-item-separator
 

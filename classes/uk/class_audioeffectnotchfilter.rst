@@ -7,16 +7,16 @@ AudioEffectNotchFilter
 
 **Успадковує:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a notch filter to an audio bus.
+Додає фільтр з виїмкою до аудіошини.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-A "notch" filter attenuates frequencies at :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` and allows frequencies outside the frequency threshold to pass unchanged. It is a narrower and stronger version of :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, and is the opposite of :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
+Фільтр типу «ноч» (notch) ослаблює частоти на рівні :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` і пропускає без змін частоти, що знаходяться за межами цього частотного порогу. Це більш вузькосмуговий і потужніший варіант фільтра :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, а також протилежність фільтру :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
 
-This filter can be used to give more room for other sounds to play at that frequency. Because of how much it attenuates frequencies, it can also be used to completely remove undesired frequencies.
+Цей фільтр можна використовувати, щоб звільнити місце для відтворення інших звуків на цій частоті. Завдяки сильному ослабленню частот його також можна використовувати для повного видалення небажаних частот.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ This filter can be used to give more room for other sounds to play at that frequ
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Аудіоефекти <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

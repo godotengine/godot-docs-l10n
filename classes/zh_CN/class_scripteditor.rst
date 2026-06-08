@@ -118,9 +118,9 @@ Godot 编辑器的脚本编辑器。
 
 :ref:`Error<enum_@GlobalScope_Error>` **close_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditor_method_close_file>`
 
-Closes the file at the given ``path``, discarding any unsaved changes.
+关闭给定 ``path`` 路径处的文件，并丢弃任何未保存的更改。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success or :ref:`@GlobalScope.ERR_FILE_NOT_FOUND<class_@GlobalScope_constant_ERR_FILE_NOT_FOUND>` if the file is not found.
+操作成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，如果未找到该文件，则返回 :ref:`@GlobalScope.ERR_FILE_NOT_FOUND<class_@GlobalScope_constant_ERR_FILE_NOT_FOUND>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success or :re
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_unsaved_files**\ (\ ) |const| :ref:`🔗<class_ScriptEditor_method_get_unsaved_files>`
 
-Returns an array of file paths of scripts with unsaved changes open in the editor.
+返回一个数组，包含当前在编辑器中打开且有未保存更改的脚本的文件路径。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Returns an array of file paths of scripts with unsaved changes open in the edito
 
 |void| **reload_open_files**\ (\ ) :ref:`🔗<class_ScriptEditor_method_reload_open_files>`
 
-Reloads all currently opened files. This should be used when opened files are changed outside of the script editor. The user may be prompted to resolve file conflicts, see :ref:`EditorSettings.text_editor/behavior/files/auto_reload_scripts_on_external_change<class_EditorSettings_property_text_editor/behavior/files/auto_reload_scripts_on_external_change>`.
+重新加载所有当前打开的文件。当在脚本编辑器外部修改了已打开的文件时，应使用此功能。系统可能会提示用户解决文件冲突，请参阅 :ref:`EditorSettings.text_editor/behavior/files/auto_reload_scripts_on_external_change<class_EditorSettings_property_text_editor/behavior/files/auto_reload_scripts_on_external_change>`.
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ Reloads all currently opened files. This should be used when opened files are ch
 
 |void| **save_all_scripts**\ (\ ) :ref:`🔗<class_ScriptEditor_method_save_all_scripts>`
 
-Saves all open scripts.
+保存所有已打开的脚本。
 
 .. rst-class:: classref-item-separator
 

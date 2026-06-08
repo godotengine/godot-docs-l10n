@@ -2086,7 +2086,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_PhysicsServer2D_ProcessInfo>`
 
 |void| **body_set_shape_as_one_way_collision**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`, margin\: :ref:`float<class_float>`, direction\: :ref:`Vector2<class_Vector2>` = Vector2(0, 1)\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_shape_as_one_way_collision>`
 
-Sets the one-way collision properties of the body's shape with the given index. If ``enable`` is ``true``, the one-way collision direction given by ``direction`` in the shape's local space (that is ``body_get_shape_transform(body, shape_idx).basis_xform(direction).normalized()`` in the body's local space) will be used to ignore collisions with the shape in the opposite direction, and to ensure depenetration of kinematic bodies happens in this direction.
+设置指定索引形状的单向碰撞属性。如果 ``enable`` 为 ``true``\ ，系统将使用形状局部空间中的 ``direction`` 所给定的单向碰撞方向（即物体局部空间中的 ``body_get_shape_transform(body, shape_idx).basis_xform(direction).normalized()``\ ）来忽略反方向的碰撞，并确保运动学刚体（KinematicBody）在反方向穿透时能朝该方向进行去穿透（depenetration）处理。
 
 .. rst-class:: classref-item-separator
 

@@ -7,16 +7,16 @@ AudioEffectLowShelfFilter
 
 **Успадковує:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a low-shelf filter to an audio bus.
+Додає фільтр нижніх частот до аудіошини.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-A "low-shelf" filter controls the gain of all frequencies below :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+Фільтр «низьких частот» регулює рівень посилення всіх частот нижче :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
-This filter can be used to adjust the "strength" of a sound, by increasing or decreasing its low-end.
+Цей фільтр можна використовувати для регулювання «інтенсивності» звуку шляхом посилення або ослаблення його низькочастотного діапазону.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ This filter can be used to adjust the "strength" of a sound, by increasing or de
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Аудіоефекти <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -183,7 +183,7 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 Tutoriales
 --------------------
 
-- :doc:`Making HTTP requests <../tutorials/networking/http_request_class>`
+- :doc:`Realizar solicitudes HTTP <../tutorials/networking/http_request_class>`
 
 - :doc:`Certificados TLS <../tutorials/networking/ssl_certificates>`
 

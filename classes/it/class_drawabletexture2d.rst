@@ -73,7 +73,7 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBA8** = ``0``
 
-OpenGL texture format RGBA with four components, each with a bitdepth of 8.
+Formato di texture OpenGL RGBA con quattro componenti, ciascuno di 8 bit.
 
 .. _class_DrawableTexture2D_constant_DRAWABLE_FORMAT_RGBA8_SRGB:
 
@@ -81,9 +81,9 @@ OpenGL texture format RGBA with four components, each with a bitdepth of 8.
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBA8_SRGB** = ``1``
 
-OpenGL texture format RGBA with four components, each with a bitdepth of 8.
+Formato di texture OpenGL RGBA con quattro componenti, ciascuno di 8 bit.
 
-When drawn to, an sRGB to linear color space conversion is performed.
+Se disegnata su, viene effettuata una conversione da sRGB a spazio colore lineare.
 
 .. _class_DrawableTexture2D_constant_DRAWABLE_FORMAT_RGBAH:
 
@@ -91,7 +91,7 @@ When drawn to, an sRGB to linear color space conversion is performed.
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBAH** = ``2``
 
-OpenGL texture format GL_RGBA16F where there are four components, each a 16-bit "half-precision" floating-point value.
+Formato di texture OpenGL GL_RGBA16F in cui sono presenti quattro componenti, ciascuno un valore in virgola mobile "a mezza precisione" di 16 bit.
 
 .. _class_DrawableTexture2D_constant_DRAWABLE_FORMAT_RGBAF:
 
@@ -99,7 +99,7 @@ OpenGL texture format GL_RGBA16F where there are four components, each a 16-bit 
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBAF** = ``3``
 
-OpenGL texture format GL_RGBA32F where there are four components, each a 32-bit floating-point value.
+Formato di texture OpenGL GL_RGBA32F in cui sono presenti quattro componenti, ciascuno un valore in virgola mobile di 32 bit.
 
 .. rst-class:: classref-section-separator
 

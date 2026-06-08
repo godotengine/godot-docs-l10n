@@ -146,7 +146,7 @@ AnimationNode
 
 **Экспериментальное:** Этот сигнал может быть изменён или удалён в будущих версиях.
 
-Emitted by :ref:`AnimationNodeAnimation<class_AnimationNodeAnimation>` when its :ref:`AnimationNodeAnimation.animation<class_AnimationNodeAnimation_property_animation>` resource is changed, or by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` when its connections change.
+Испускается :ref:`AnimationNodeAnimation<class_AnimationNodeAnimation>` при изменении ресурса :ref:`AnimationNodeAnimation.animation<class_AnimationNodeAnimation_property_animation>` или :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` при изменении его соединений.
 
 .. rst-class:: classref-item-separator
 

@@ -213,7 +213,7 @@ Il tracciatore traccia la posizione di una stazione base.
 
 :ref:`TrackerType<enum_XRServer_TrackerType>` **TRACKER_ANCHOR** = ``8``
 
-Il tracciatore traccia la posizione e le dimensioni di un'ancoraggio in AR.
+Il tracciatore traccia la posizione e le dimensioni di un ancoraggio in AR.
 
 .. _class_XRServer_constant_TRACKER_HAND:
 

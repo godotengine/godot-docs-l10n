@@ -7,7 +7,7 @@ AreaLight3D
 
 **Успадковує:** :ref:`Light3D<class_Light3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-An area light, such as a neon light tube or a screen.
+Площинне джерело світла, наприклад, неонова лампа або екран.
 
 .. rst-class:: classref-introduction-group
 
@@ -21,6 +21,8 @@ Light is emitted in the -Z direction of the node's global basis. For an unrotate
 Area lights can cast soft shadows using PCSS, which you can control by tweaking the size parameter. The shadow map is drawn from the center of the light.
 
 \ **Note:** Area lights have limited support in the Mobile and Compatibility renderers. In the Mobile renderer, the size of the penumbra doesn't vary as it should with PCSS. In Compatibility, area lights cannot cast shadows.
+
+\ **Performance:** Area lights are more demanding on the GPU compared to omni and spot lights. In Forward+, there is an additional GPU cost on *all* rendered objects as soon as one area light is present in the view frustum (due to the nature of clustered lighting). Consider using them only for cinematics or when targeting high-end devices.
 
 .. rst-class:: classref-reftable-group
 
@@ -66,13 +68,13 @@ Area lights can cast soft shadows using PCSS, which you can control by tweaking 
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-Controls the distance attenuation function for this area light.
+Регулює функцію ослаблення світла залежно від відстані для цього джерела розсіяного світла.
 
-A value of ``0.0`` will maintain a constant brightness through most of the range, but will smoothly attenuate the light at the edge of the range. Use a value of ``2.0`` for physically accurate lights as it results in the proper inverse square attenuation.
+Значення ``0.0`` забезпечить постійну яскравість на більшій частині діапазону, але світло плавно ослаблюватиметься на краях діапазону. Використовуйте значення ``2.0`` для фізично точних джерел світла, оскільки це забезпечує правильне ослаблення світла пропорційно до квадрату відстані.
 
-\ **Note:** Setting attenuation to ``2.0`` or higher may result in distant objects receiving minimal light, even when within range. For example, with a range of ``4096``, an object at ``100`` units is attenuated by a factor of ``0.0001``. With a default brightness of ``1``, the light would not be visible at that distance.
+\ **Примітка:** Встановлення ослаблення на ``2.0`` або вище може призвести до того, що віддалені об'єкти отримуватимуть мінімальне освітлення, навіть якщо вони знаходяться в межах діапазону. Наприклад, при діапазоні ``4096`` об'єкт на відстані ``100`` одиниць ослаблюється з коефіцієнтом ``0.0001``. При стандартній яскравості ``1`` світло не буде видно на такій відстані.
 
-\ **Note:** Using negative values or values higher than ``10.0`` may lead to unexpected results.
+\ **Примітка:** Використання від’ємних значень або значень, більших за ``10.0``, може призвести до несподіваних результатів.
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +91,7 @@ A value of ``0.0`` will maintain a constant brightness through most of the range
 - |void| **set_area_normalize_energy**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_area_normalizing_energy**\ (\ )
 
-Defines whether the energy is normalized (divided) by the surface area of the light. If set to ``true``, changing the size does not affect the total energy output, and does not dramatically alter the brightness of the scene.
+Визначає, чи нормалізується (ділиться) енергія на площу поверхні джерела світла. Якщо встановлено значення ``true``, зміна розміру не впливає на загальну потужність випромінювання і не призводить до істотної зміни яскравості сцени.
 
 .. rst-class:: classref-item-separator
 
@@ -106,7 +108,7 @@ Defines whether the energy is normalized (divided) by the surface area of the li
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The range of the area in meters. This determines the maximum distance from any point on the area at which the area can still emit light.
+Площа зони в метрах. Цей параметр визначає максимальну відстань від будь-якої точки зони, на якій зона все ще може випромінювати світло.
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +125,7 @@ The range of the area in meters. This determines the maximum distance from any p
 - |void| **set_area_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_area_size**\ (\ )
 
-The extents (width and height) of the area in meters.
+Розміри (ширина та висота) ділянки в метрах.
 
 .. rst-class:: classref-item-separator
 
@@ -140,11 +142,11 @@ The extents (width and height) of the area in meters.
 - |void| **set_area_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_area_texture**\ (\ )
 
-An optional texture to use as a light source. Changing the texture at runtime might impact performance, as it needs to be drawn to the area light atlas with filtered mipmaps.
+Додаткова текстура, яку можна використовувати як джерело світла. Зміна текстури під час виконання може вплинути на продуктивність, оскільки її потрібно відтворити в атласі площинного світла з використанням відфільтрованих міпмап.
 
-If no texture is assigned, the area light emits uniform light across its surface.
+Якщо текстура не призначена, площинне світло випромінює рівномірне світло по всій своїй поверхні.
 
-\ **Note:** Area light textures are only supported in the Forward+ and Mobile rendering methods, not Compatibility. To reduce the performance impact of switching textures at runtime, make sure each dimension of an area texture is either a multiple of 128 pixels, or a power of two. This removes the need for a scaling pass, which slows down texture changes. The textures don't necessarily have to be square to be optimal. Examples of optimal texture sizes include 32x64, 128x128, and 256x384.
+\ **Примітка:** Текстури площинного світла підтримуються лише в методах рендерингу «Forward+» та «Mobile», але не в методі «Compatibility». Щоб зменшити вплив на продуктивність при зміні текстур під час виконання, переконайтеся, що кожен розмір площинної текстури є кратним 128 пікселів або степенем числа 2. Це усуває необхідність у проході масштабування, що уповільнює зміну текстур. Текстури не обов'язково мають бути квадратними, щоб бути оптимальними. Прикладами оптимальних розмірів текстур є 32x64, 128x128 та 256x384.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

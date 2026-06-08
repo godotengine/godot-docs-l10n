@@ -7,7 +7,7 @@ AwaitTweener
 
 **Hereda:** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Awaits a specified signal.
+Espera una señal específica.
 
 .. rst-class:: classref-introduction-group
 

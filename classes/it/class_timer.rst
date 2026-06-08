@@ -144,7 +144,7 @@ Descrizioni delle proprietà
 - |void| **set_autostart**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_autostart**\ (\ )
 
-Se ``true``, il timer si avvierà immediatamente quando entra nell'albero di scena.
+Se ``true``, il timer si avvierà immediatamente quando entra nell'albero di scene.
 
 \ **Nota:** Dopo che il timer entra nell'albero, questa proprietà viene automaticamente impostata su ``false``.
 

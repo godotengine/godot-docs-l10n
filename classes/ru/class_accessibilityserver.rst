@@ -7,7 +7,7 @@ AccessibilityServer
 
 **Наследует:** :ref:`Object<class_Object>`
 
-A server interface for screen reader support.
+Серверный интерфейс для поддержки программ чтения с экрана.
 
 .. rst-class:: classref-reftable-group
 
@@ -558,7 +558,7 @@ enum **AccessibilityRole**: :ref:`🔗<enum_AccessibilityServer_AccessibilityRol
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_REGION** = ``46``
 
-Region/landmark element. Screen readers can navigate between regions using landmark navigation.
+Региональный/ориентиральный элемент. Программы чтения с экрана могут перемещаться между регионами, используя навигацию по ориентирам.
 
 .. _class_AccessibilityServer_constant_ROLE_TEXT_RUN:
 
@@ -568,7 +568,7 @@ Region/landmark element. Screen readers can navigate between regions using landm
 
 Unifor text run.
 
-Note: This role is used for internal text elements, and should not be assigned to nodes.
+Примечание: Эта роль используется для внутренних текстовых элементов и не должна назначаться узлам.
 
 .. rst-class:: classref-item-separator
 
@@ -1051,7 +1051,7 @@ enum **AccessibilityScrollHint**: :ref:`🔗<enum_AccessibilityServer_Accessibil
 
 :ref:`RID<class_RID>` **create_sub_element**\ (\ parent_rid\: :ref:`RID<class_RID>`, role\: :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>`, insert_pos\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AccessibilityServer_method_create_sub_element>`
 
-Creates a new, empty accessibility sub-element resource. Sub-elements can be used to provide accessibility information for objects which are not :ref:`Node<class_Node>`\ s, such as list items, table cells, or menu items. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`free_element()<class_AccessibilityServer_method_free_element>` method.
+Создает новый пустой ресурс подэлемента доступности. Подэлементы могут использоваться для предоставления информации о доступности для объектов, которые не являются :ref:`Node<class_Node>`, таких как элементы списков, ячейки таблиц или пункты меню. Подэлементы автоматически освобождаются при освобождении родительского элемента или могут быть освобождены досрочно с помощью метода :ref:`free_element()<class_AccessibilityServer_method_free_element>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1063,9 +1063,9 @@ Creates a new, empty accessibility sub-element resource. Sub-elements can be use
 
 :ref:`RID<class_RID>` **create_sub_text_edit_elements**\ (\ parent_rid\: :ref:`RID<class_RID>`, shaped_text\: :ref:`RID<class_RID>`, min_height\: :ref:`float<class_float>`, insert_pos\: :ref:`int<class_int>` = -1, is_last_line\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AccessibilityServer_method_create_sub_text_edit_elements>`
 
-Creates a new, empty accessibility sub-element from the shaped text buffer. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`free_element()<class_AccessibilityServer_method_free_element>` method.
+Создает новый пустой подэлемент доступности из буфера текста определенной формы. Подэлементы освобождаются автоматически при освобождении родительского элемента или могут быть освобождены досрочно с помощью метода :ref:`free_element()<class_AccessibilityServer_method_free_element>`.
 
-If ``is_last_line`` is ``true``, no trailing newline is appended to the text content. Set to ``true`` for the last line in multi-line text fields and for single-line text fields.
+Если ``is_last_line`` имеет значение ``true``, к содержимому текста не добавляется завершающая новая строка. Установите значение ``true`` для последней строки в многострочных текстовых полях и для однострочных текстовых полей.
 
 .. rst-class:: classref-item-separator
 
@@ -1101,7 +1101,7 @@ If ``is_last_line`` is ``true``, no trailing newline is appended to the text con
 
 |void| **free_element**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_free_element>`
 
-Frees the accessibility element ``id`` created by :ref:`create_element()<class_AccessibilityServer_method_create_element>`, :ref:`create_sub_element()<class_AccessibilityServer_method_create_sub_element>`, or :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`.
+Освобождает элемент доступности ``id``, созданный методами :ref:`create_element()<class_AccessibilityServer_method_create_element>`, :ref:`create_sub_element()<class_AccessibilityServer_method_create_sub_element>` или :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1137,7 +1137,7 @@ Frees the accessibility element ``id`` created by :ref:`create_element()<class_A
 
 :ref:`bool<class_bool>` **is_supported**\ (\ ) |const| :ref:`🔗<class_AccessibilityServer_method_is_supported>`
 
-Returns ``true`` if screen reader is support by this implementation.
+Возвращает ``true``, если данная реализация поддерживает программу чтения с экрана.
 
 .. rst-class:: classref-item-separator
 
@@ -1329,7 +1329,7 @@ Returns ``true`` if screen reader is support by this implementation.
 
 |void| **update_set_braille_label**\ (\ id\: :ref:`RID<class_RID>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_braille_label>`
 
-Sets element accessibility label for Braille display.
+Устанавливает метку доступности элемента для брайлевского дисплея.
 
 .. rst-class:: classref-item-separator
 
@@ -1341,7 +1341,7 @@ Sets element accessibility label for Braille display.
 
 |void| **update_set_braille_role_description**\ (\ id\: :ref:`RID<class_RID>`, description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_braille_role_description>`
 
-Sets element accessibility role description for Braille display.
+Задает описание роли доступности элемента для дисплея Брайля.
 
 .. rst-class:: classref-item-separator
 
@@ -1893,7 +1893,7 @@ Sets element accessibility role description for Braille display.
 
 |void| **update_set_text_selection**\ (\ id\: :ref:`RID<class_RID>`, text_start_id\: :ref:`RID<class_RID>`, start_char\: :ref:`int<class_int>`, text_end_id\: :ref:`RID<class_RID>`, end_char\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_text_selection>`
 
-Sets text selection to the text field. ``text_start_id`` and ``text_end_id`` should be elements created by :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`. Character offsets are relative to the corresponding element.
+Устанавливает выделение текста в текстовом поле. ``text_start_id`` и ``text_end_id`` должны быть элементами, созданными методом :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`. Смещения символов указываются относительно соответствующего элемента.
 
 .. rst-class:: classref-item-separator
 

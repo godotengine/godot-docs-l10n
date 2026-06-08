@@ -429,11 +429,11 @@ Définit le nom donné à cette surface.
 
 |void| **surface_update_attribute_region**\ (\ surf_idx\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ArrayMesh_method_surface_update_attribute_region>`
 
-Updates the attribute buffer of this mesh's surface with the given ``data``. The expected data per attribute is 12 or 8 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector3<class_Vector3>` or :ref:`Vector2<class_Vector2>` vertices. This value can be determined with :ref:`RenderingServer.mesh_surface_get_format_attribute_stride()<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>`.
+Met à jour l'attribut du tampon de cette surface maillée avec le ``data`` fourni. La donnée attendue par attribut est 12 ou 8 octets (4 octets par flottant, 2 flottants par :ref:`Vector2<class_Vector2>`, et 3 flottants par :ref:`Vector3<class_Vector3>`) selon si le maillage utilise :ref:`Vector3<class_Vector3>` ou :ref:`Vector2<class_Vector2>` points. Cette valeur peut être déterminée avec :ref:`RenderingServer.mesh_surface_get_format_attribute_stride()<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each attribute.
+Le point de départ des mises à jour peut être changé avec ``offset``. La valeur de ``offset`` sera un multiple de 12 octets dans la plupart des cas afin d'aligner à chaque attribut.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of attribute locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+Un :ref:`PackedVector3Array<class_PackedVector3Array>` de position d'attribut peut être converti en :ref:`PackedByteArray<class_PackedByteArray>` en utilisant :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` pour être utilisé dans ``data``.
 
 .. rst-class:: classref-item-separator
 

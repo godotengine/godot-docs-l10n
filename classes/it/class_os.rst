@@ -802,17 +802,17 @@ You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_cmdline_user_args**\ (\ ) :ref:`🔗<class_OS_method_get_cmdline_user_args>`
 
-Returns the command-line user arguments passed to the engine. User arguments are ignored by the engine and reserved for the user. They are passed after the double dash ``--`` argument. ``++`` may be used when ``--`` is intercepted by another program (such as ``startx``).
+Restituisce gli argomenti utente della riga di comando passati al motore. Gli argomenti utente sono ignorati dal motore e riservati all'utente. Sono passati dopo l'argomento con doppio trattino ``--``. Si può utilizzare ``++`` quando ``--`` è intercettato da un altro programma (ad esempio ``startx``).
 
 ::
 
-    # Godot has been executed with the following command:
+    # Godot è stato eseguito con il seguente comando:
     # godot --fullscreen --custom -- --level=2 --hardcore
 
-    OS.get_cmdline_args()      # Returns ["--custom"]
-    OS.get_cmdline_user_args() # Returns ["--level=2", "--hardcore"]
+    OS.get_cmdline_args()      # Restituisce ["--custom"]
+    OS.get_cmdline_user_args() # Restituisce ["--level=2", "--hardcore"]
 
-To get arguments passed before ``--`` or ``++``, use :ref:`get_cmdline_args()<class_OS_method_get_cmdline_args>`.
+Per ottenere tutti gli argomenti passati prima di ``--`` o ``++``, utilizza :ref:`get_cmdline_args()<class_OS_method_get_cmdline_args>`.
 
 .. rst-class:: classref-item-separator
 

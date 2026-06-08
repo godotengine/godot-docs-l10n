@@ -63,7 +63,7 @@ flags **ImportFlags**: :ref:`🔗<enum_EditorSceneFormatImporter_ImportFlags>`
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_SCENE** = ``1``
 
-Unused flag (this has no effect when enabled).
+未使用的标志（启用它没有任何效果）。
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_ANIMATION:
 
@@ -71,7 +71,7 @@ Unused flag (this has no effect when enabled).
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_ANIMATION** = ``2``
 
-Import animations from the 3D scene. When importing a scene as an :ref:`AnimationLibrary<class_AnimationLibrary>`, this flag is always enabled.
+从 3D 场景中导入动画。当将场景作为 :ref:`AnimationLibrary<class_AnimationLibrary>`\ （动画库）进行导入时，此选项会始终处于启用状态。
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_FAIL_ON_MISSING_DEPENDENCIES:
 
@@ -79,7 +79,7 @@ Import animations from the 3D scene. When importing a scene as an :ref:`Animatio
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_FAIL_ON_MISSING_DEPENDENCIES** = ``4``
 
-Unused flag (this has no effect when enabled).
+未使用的标志（启用它没有任何效果）。
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_GENERATE_TANGENT_ARRAYS:
 
@@ -87,9 +87,9 @@ Unused flag (this has no effect when enabled).
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_GENERATE_TANGENT_ARRAYS** = ``8``
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+如果设为 ``true``\ ，当输入的网格体（meshes）没有切线数据时，将使用 `Mikktspace <http://www.mikktspace.com/>`__ 算法来生成顶点切线。如果条件允许，更推荐让 3D 建模软件在导出模型时直接生成切线，而不是依赖这个选项。法线贴图（normal maps）和高度贴图（height maps），以及任何需要切线的材质或着色器（shader）功能，都必须要有切线数据才能正确显示。
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+如果你不需要那些依赖切线的材质功能，禁用此选项可以在源 3D 文件不包含切线的情况下，减小输出文件的大小，并加快导入速度。
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_USE_NAMED_SKIN_BINDS:
 
@@ -97,15 +97,15 @@ If you don't need material features that require tangents, disabling this can re
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_USE_NAMED_SKIN_BINDS** = ``16``
 
-If checked, use named :ref:`Skin<class_Skin>`\ s for animation. The :ref:`MeshInstance3D<class_MeshInstance3D>` node contains 3 properties of relevance here: a skeleton :ref:`NodePath<class_NodePath>` pointing to the :ref:`Skeleton3D<class_Skeleton3D>` node (usually ``..``), a mesh, and a skin:
+如果勾选此项，动画将使用带名称的 :ref:`Skin<class_Skin>`\ （皮肤）资源。\ :ref:`MeshInstance3D<class_MeshInstance3D>`\ （网格实例 3D）节点在这里包含 3 个关键属性：一个指向 :ref:`Skeleton3D<class_Skeleton3D>`\ （骨骼 3D）节点的骨架 :ref:`NodePath<class_NodePath>`\ （节点路径，通常是 ``..``\ ）、一个网格（mesh），以及一个皮肤（skin）。
 
-- The :ref:`Skeleton3D<class_Skeleton3D>` node contains a list of bones with names, their pose and rest, a name, and a parent bone.
+- :ref:`Skeleton3D<class_Skeleton3D>` 节点包含一个骨骼列表，其中记录了骨骼的名称、姿态（pose）和静止状态（rest），以及父级骨骼的信息。
 
-- The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
+- 网格（mesh）包含了显示模型所需的所有原始顶点数据。就网格本身而言，它知道顶点是如何进行权重绘制（weight-painted）的，并且使用了一些通常从 3D 建模软件导入的内部编号。
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For each of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the :ref:`Skin<class_Skin>` contains each bone's name (if this flag is enabled), or the bone's index within the :ref:`Skeleton3D<class_Skeleton3D>` list (if this flag is disabled).
+- 皮肤（skin）包含了将这个网格绑定到该 :ref:`Skeleton3D<class_Skeleton3D>` 上所需的必要信息。对于 3D 建模软件选定的每一个内部骨骼 ID，它都包含两项内容。首先，是一个被称为“绑定姿态矩阵”、“反向绑定矩阵”或简称 IBM 的矩阵。其次，\ :ref:`Skin<class_Skin>` 还包含每根骨骼的名称（如果启用了此标志），或者包含该骨骼在 :ref:`Skeleton3D<class_Skeleton3D>` 列表中的索引（如果禁用了此标志）。
 
-Together, this information is enough to tell Godot how to use the bone poses in the :ref:`Skeleton3D<class_Skeleton3D>` node to render the mesh from each :ref:`MeshInstance3D<class_MeshInstance3D>`. Note that each :ref:`MeshInstance3D<class_MeshInstance3D>` may share binds, as is common in models exported from Blender, or each :ref:`MeshInstance3D<class_MeshInstance3D>` may use a separate :ref:`Skin<class_Skin>` object, as is common in models exported from other tools such as Maya.
+综合这些信息，就足以告诉 Godot 如何利用 :ref:`Skeleton3D<class_Skeleton3D>` 节点中的骨骼姿态，来渲染每个 :ref:`MeshInstance3D<class_MeshInstance3D>`\ 。请注意，每个 :ref:`MeshInstance3D<class_MeshInstance3D>` 可以共享绑定信息（这在从 Blender 导出的模型中很常见），或者每个 :ref:`MeshInstance3D<class_MeshInstance3D>` 也可以使用独立的 :ref:`Skin<class_Skin>` 对象（这在从 Maya 等其他工具导出的模型中很常见）。
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_DISCARD_MESHES_AND_MATERIALS:
 
@@ -113,7 +113,7 @@ Together, this information is enough to tell Godot how to use the bone poses in 
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_DISCARD_MESHES_AND_MATERIALS** = ``32``
 
-Ignore meshes and materials on import. When importing a scene as an :ref:`AnimationLibrary<class_AnimationLibrary>`, this flag is always enabled.
+在导入时忽略网格（Meshes）和材质（Materials）。当将场景作为 :ref:`AnimationLibrary<class_AnimationLibrary>`\ （动画库）进行导入时，此选项会始终处于启用状态。
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_FORCE_DISABLE_MESH_COMPRESSION:
 

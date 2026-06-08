@@ -197,9 +197,9 @@ enum **PlaybackMode**: :ref:`🔗<enum_AudioStreamRandomizer_PlaybackMode>`
 
 :ref:`AudioStream<class_AudioStream>` **stream_{index}/stream** :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/stream>`
 
-The :ref:`AudioStream<class_AudioStream>` at ``index``.
+:ref:`AudioStream<class_AudioStream>` по адресу ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+\ **Примечание:** ``index`` — это значение в диапазоне ``0 .. streams_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -211,9 +211,9 @@ The :ref:`AudioStream<class_AudioStream>` at ``index``.
 
 :ref:`float<class_float>` **stream_{index}/weight** = ``1.0`` :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/weight>`
 
-The probability weight of the :ref:`AudioStream<class_AudioStream>` at ``index``.
+Вероятностный вес :ref:`AudioStream<class_AudioStream>` по ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+\ **Примечание:** ``index`` — это значение в диапазоне от ``0 .. streams_count - 1``.
 
 .. rst-class:: classref-item-separator
 

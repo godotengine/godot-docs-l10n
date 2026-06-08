@@ -144,7 +144,7 @@ enum **TextureMapMode**: :ref:`🔗<enum_GLTFDocument_TextureMapMode>`
 
 :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **TEXTURE_MAP_MODE_DO_NOT_REMAP** = ``0``
 
-Import the texture maps in the glTF file as they are, without trying to fit them into specific texture slots suitable for Godot's built-in materials. This may be desirable if using the glTF file with custom shaders, but may not display correctly with Godot's built-in materials. This is equivalent to the behavior in Godot 4.6 and earlier.
+Импортируйте текстурные карты из файла glTF как есть, не пытаясь подогнать их под конкретные слоты текстур, подходящие для встроенных материалов Godot. Это может быть желательно при использовании файла glTF с пользовательскими шейдерами, но может отображаться некорректно со встроенными материалами Godot. Это эквивалентно поведению в Godot 4.6 и более ранних версиях.
 
 .. _class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL:
 
@@ -152,7 +152,7 @@ Import the texture maps in the glTF file as they are, without trying to fit them
 
 :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL** = ``1``
 
-Import the texture maps in the glTF file remapped to the most suitable texture slots based on Godot's :ref:`StandardMaterial3D<class_StandardMaterial3D>` class. This is the default behavior.
+Импортируйте текстурные карты из файла glTF, переназначив их на наиболее подходящие слоты текстур в соответствии с классом :ref:`StandardMaterial3D<class_StandardMaterial3D>` Godot. Это поведение по умолчанию.
 
 .. rst-class:: classref-item-separator
 
@@ -204,9 +204,9 @@ flags **ImportFlags**: :ref:`🔗<enum_GLTFDocument_ImportFlags>`
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_GENERATE_TANGENT_ARRAYS** = ``8``
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+Если ``true``, сгенерируйте касательные вершины с помощью `Mikktspace <http://www.mikktspace.com/>`__, если входные сетки не содержат данных о касательных. По возможности рекомендуется позволить программному обеспечению для 3D-моделирования генерировать касательные при экспорте, а не полагаться на эту опцию. Касательные необходимы для корректного отображения карт нормалей и высот, а также любых функций материала/шейдера, требующих касательных.
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+Если вам не нужны функции материала, требующие касательных, отключение этой опции может уменьшить размер выходного файла и ускорить импорт, если исходный 3D-файл не содержит касательных.
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_USE_NAMED_SKIN_BINDS:
 
@@ -351,7 +351,7 @@ Ignore meshes and materials on import. When importing a scene as an :ref:`Animat
 - |void| **set_texture_map_mode**\ (\ value\: :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>`\ )
 - :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **get_texture_map_mode**\ (\ )
 
-How to handle texture maps during import. The default and recommended value is :ref:`TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL<class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL>`, which automatically remaps from glTF's flexible texture map system to the more specific texture map slots in Godot's :ref:`StandardMaterial3D<class_StandardMaterial3D>` class. Alternatively, :ref:`TEXTURE_MAP_MODE_DO_NOT_REMAP<class_GLTFDocument_constant_TEXTURE_MAP_MODE_DO_NOT_REMAP>` can be used to preserve the original texture maps from the glTF file, which may be desirable if using the glTF file with custom shaders, but may not display correctly with Godot's built-in materials.
+Как обрабатывать текстурные карты во время импорта. Значение по умолчанию и рекомендуемое значение — :ref:`TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL<class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL>`, которое автоматически переназначает карты текстур из гибкой системы текстурных карт glTF на более специфические слоты текстурных карт в классе :ref:`StandardMaterial3D<class_StandardMaterial3D>` Godot. В качестве альтернативы можно использовать :ref:`TEXTURE_MAP_MODE_DO_NOT_REMAP<class_GLTFDocument_constant_TEXTURE_MAP_MODE_DO_NOT_REMAP>` для сохранения исходных текстурных карт из файла glTF, что может быть желательно при использовании файла glTF с пользовательскими шейдерами, но может отображаться некорректно со встроенными материалами Godot.
 
 .. rst-class:: classref-item-separator
 

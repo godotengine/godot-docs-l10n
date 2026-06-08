@@ -7,14 +7,14 @@ DrawableTexture2D
 
 **Наследует:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 2D texture that supports drawing to itself via Blit calls.
+2D текстура, поддерживающая отрисовку самой на себя с помощью вызовов Blit.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-A 2D texture that can be modified via blit calls, copying from a target texture to itself. Primarily intended to be managed in code, a user must call :ref:`setup()<class_DrawableTexture2D_method_setup>` to initialize the state before drawing. Each :ref:`blit_rect()<class_DrawableTexture2D_method_blit_rect>` call takes at least a rectangle, the area to draw to, and another texture, what to be drawn. The draw calls use a Texture_Blit Shader to process and calculate the result, pixel by pixel. Users can supply their own ShaderMaterial with custom Texture_Blit shaders for more complex behaviors.
+2D текстура, которую можно изменять с помощью вызовов blit, копируя изображение с целевой текстуры на себя. В основном предназначена для управления в коде; пользователь должен вызвать :ref:`setup()<class_DrawableTexture2D_method_setup>` для инициализации состояния перед отрисовкой. Каждый вызов :ref:`blit_rect()<class_DrawableTexture2D_method_blit_rect>` принимает как минимум прямоугольник (область для отрисовки) и другую текстуру (что именно нужно отрисовать). Вызовы отрисовки используют шейдер Texture_Blit для обработки и вычисления результата, пиксель за пикселем. Пользователи могут предоставлять собственные ShaderMaterial с пользовательскими шейдерами Texture_Blit для более сложных сценариев поведения.
 
 .. rst-class:: classref-reftable-group
 
@@ -73,7 +73,7 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBA8** = ``0``
 
-OpenGL texture format RGBA with four components, each with a bitdepth of 8.
+Текстурный формат OpenGL RGBA, состоящий из четырех компонентов, каждый с 8-битной глубиной цвета.
 
 .. _class_DrawableTexture2D_constant_DRAWABLE_FORMAT_RGBA8_SRGB:
 
@@ -81,9 +81,9 @@ OpenGL texture format RGBA with four components, each with a bitdepth of 8.
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBA8_SRGB** = ``1``
 
-OpenGL texture format RGBA with four components, each with a bitdepth of 8.
+Текстурный формат OpenGL RGBA с четырьмя компонентами, каждый с 8-битной глубиной цвета.
 
-When drawn to, an sRGB to linear color space conversion is performed.
+При отрисовке выполняется преобразование цветового пространства sRGB в линейное.
 
 .. _class_DrawableTexture2D_constant_DRAWABLE_FORMAT_RGBAH:
 
@@ -91,7 +91,7 @@ When drawn to, an sRGB to linear color space conversion is performed.
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBAH** = ``2``
 
-OpenGL texture format GL_RGBA16F where there are four components, each a 16-bit "half-precision" floating-point value.
+Текстурный формат OpenGL GL_RGBA16F, состоящий из четырех компонентов, каждый из которых представляет собой 16-битное значение с плавающей запятой "половинной точности".
 
 .. _class_DrawableTexture2D_constant_DRAWABLE_FORMAT_RGBAF:
 
@@ -99,7 +99,7 @@ OpenGL texture format GL_RGBA16F where there are four components, each a 16-bit 
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBAF** = ``3``
 
-OpenGL texture format GL_RGBA32F where there are four components, each a 32-bit floating-point value.
+Текстурный формат OpenGL GL_RGBA32F, состоящий из четырех компонентов, каждый из которых представляет собой 32-битное значение с плавающей запятой.
 
 .. rst-class:: classref-section-separator
 
@@ -118,7 +118,7 @@ OpenGL texture format GL_RGBA32F where there are four components, each a 32-bit 
 
 **Экспериментальное:** This function and its parameters are likely to change in the 4.7 Dev Cycle
 
-Draws to given ``rect`` on this texture by copying from the given ``source``. A ``modulate`` color can be passed in for the shader to use, but defaults to White. The ``mipmap`` value can specify a draw to a lower mipmap level. The ``material`` parameter can take a ShaderMaterial with a TextureBlit Shader for custom drawing behavior.
+Рисует на заданном ``rect`` участке этой текстуры, копируя изображение из заданного ``source``. В качестве цвета для шейдера можно передать ``modulate``, но по умолчанию он белый. Значение ``mipmap`` позволяет указать отрисовку на более низком уровне мипмапа. Параметр ``material`` может принимать объект ShaderMaterial с шейдером TextureBlit для настройки поведения отрисовки.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ Draws to given ``rect`` on this texture by copying from the given ``source``. A 
 
 **Экспериментальное:** This function and its parameters are likely to change in the 4.7 Dev Cycle
 
-Draws to the given ``rect`` on this texture, as well as on up to 3 DrawableTexture ``extra_targets``. All ``extra_targets`` must be the same size and DrawableFormat as the original target, otherwise the Shader may fail. Expects up to 4 Texture ``sources``, but will replace missing ``sources`` with default Black Textures.
+Рисует на заданном ``rect`` участке этой текстуры, а также на не более чем 3 объектах DrawableTexture ``extra_targets``. Все ``extra_targets`` должны иметь тот же размер и формат DrawableFormat, что и исходный целевой объект, иначе шейдер может завершиться ошибкой. Ожидает до 4 объектов Texture ``sources``, но заменит отсутствующие ``sources`` текстурами Black по умолчанию.
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ Draws to the given ``rect`` on this texture, as well as on up to 3 DrawableTextu
 
 |void| **generate_mipmaps**\ (\ ) :ref:`🔗<class_DrawableTexture2D_method_generate_mipmaps>`
 
-Re-calculates the mipmaps for this texture on demand.
+Пересчитывает мипмапы для этой текстуры по запросу.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Re-calculates the mipmaps for this texture on demand.
 
 :ref:`bool<class_bool>` **get_use_mipmaps**\ (\ ) |const| :ref:`🔗<class_DrawableTexture2D_method_get_use_mipmaps>`
 
-Returns ``true`` if mipmaps are set to be used on this DrawableTexture.
+Возвращает ``true``, если для этого объекта DrawableTexture задано использование мипмапов.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ Returns ``true`` if mipmaps are set to be used on this DrawableTexture.
 
 |void| **set_format**\ (\ format\: :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>`\ ) :ref:`🔗<class_DrawableTexture2D_method_set_format>`
 
-Sets the format of this DrawableTexture.
+Задает формат этого DrawableTexture.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Sets the format of this DrawableTexture.
 
 |void| **set_use_mipmaps**\ (\ mipmaps\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_DrawableTexture2D_method_set_use_mipmaps>`
 
-Sets if mipmaps should be used on this DrawableTexture.
+Определяет, следует ли использовать мипмапы для этого объекта DrawableTexture.
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ Sets if mipmaps should be used on this DrawableTexture.
 
 **Экспериментальное:** This function and its parameters are likely to change in the 4.7 Dev Cycle
 
-Initializes the DrawableTexture to a White texture of the given ``width``, ``height``, and ``format``.
+Инициализирует DrawableTexture белой текстурой заданных параметров: ``width``, ``height`` и ``format``.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

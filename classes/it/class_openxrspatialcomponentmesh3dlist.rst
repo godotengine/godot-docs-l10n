@@ -16,7 +16,7 @@ Object for storing the queries mesh3d result data.
 Descrizione
 ----------------------
 
-Object for storing the queries 3d mesh result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Oggetto per memorizzare i dati risultanti di una richiesta sulle mesh 3D quando si chiama :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 

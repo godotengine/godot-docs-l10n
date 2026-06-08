@@ -22,6 +22,8 @@ Area lights can cast soft shadows using PCSS, which you can control by tweaking 
 
 \ **Note:** Area lights have limited support in the Mobile and Compatibility renderers. In the Mobile renderer, the size of the penumbra doesn't vary as it should with PCSS. In Compatibility, area lights cannot cast shadows.
 
+\ **Performance:** Area lights are more demanding on the GPU compared to omni and spot lights. In Forward+, there is an additional GPU cost on *all* rendered objects as soon as one area light is present in the view frustum (due to the nature of clustered lighting). Consider using them only for cinematics or when targeting high-end devices.
+
 .. rst-class:: classref-reftable-group
 
 Propiedades

@@ -137,7 +137,7 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_INSPECTOR_PROPERTY** = ``7``
 
-Context menu of the inspectors right-click menu. :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` will be called with an array of two items: The first will be the object's ID, the second will be the property name. An object can be retrieved from it's ID via :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` after converting it to an int. The option callback will receive the EditorProperty directly.
+Контекстное меню инспектора, вызываемое правой кнопкой мыши. Метод :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` будет вызван с массивом из двух элементов: первым будет идентификатор объекта, вторым — имя свойства. Объект можно получить по его идентификатору через :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>`, предварительно преобразовав ID в целое число. Функция обратного вызова опции получит напрямую экземпляр EditorProperty.
 
 .. rst-class:: classref-section-separator
 

@@ -98,7 +98,7 @@ Una :ref:`Curve3D<class_Curve3D>` che descrive il percorso.
 - |void| **set_debug_custom_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_debug_custom_color**\ (\ )
 
-The custom color used to draw the path in the editor. If set to :ref:`Color.BLACK<class_Color_constant_BLACK>` (as by default), the color set in :ref:`ProjectSettings.debug/shapes/paths/geometry_color<class_ProjectSettings_property_debug/shapes/paths/geometry_color>` is used.
+Il colore personalizzato da utilizzare per disegnare il percorso nell'editor. Se impostato su :ref:`Color.BLACK<class_Color_constant_BLACK>` (come predefinito), è utilizzato il colore impostato in :ref:`ProjectSettings.debug/shapes/paths/geometry_color<class_ProjectSettings_property_debug/shapes/paths/geometry_color>`.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

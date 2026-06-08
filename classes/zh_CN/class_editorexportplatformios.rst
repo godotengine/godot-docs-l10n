@@ -1529,7 +1529,7 @@ iPad 和 iPhone 上的“聚焦”图标文件（3x DPI），着色版本。见 
 
 :ref:`bool<class_bool>` **modules/camera** :ref:`🔗<class_EditorExportPlatformIOS_property_modules/camera>`
 
-If ``true``, :ref:`CameraServer<class_CameraServer>` module is added to the exported project.
+如果设为 ``true``\ ，则会将 :ref:`CameraServer<class_CameraServer>`\ （相机服务）模块添加到导出的项目中。
 
 .. rst-class:: classref-item-separator
 

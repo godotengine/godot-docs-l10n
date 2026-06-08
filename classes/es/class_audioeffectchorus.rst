@@ -31,7 +31,7 @@ Tutoriales
 
 - :doc:`Buses de audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Efectos de audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 

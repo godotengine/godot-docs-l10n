@@ -138,7 +138,7 @@ EditorDock — это узел :ref:`Container<class_Container>`, который
 
 **opened**\ (\ ) :ref:`🔗<class_EditorDock_signal_opened>`
 
-Emitted when the dock is opened via the Editor > Editor Docks menu, before it's made visible.
+Вызывается при открытии панели Dock через меню «Редактор > Панели редактора», до того, как она станет видимой.
 
 .. rst-class:: classref-section-separator
 
@@ -169,7 +169,7 @@ flags **DockLayout**: :ref:`🔗<enum_EditorDock_DockLayout>`
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_HORIZONTAL** = ``2``
 
-Allows placing the dock in the horizontal dock slots at the bottom.
+Позволяет расположить док-станцию в горизонтальные слоты внизу.
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_FLOATING:
 
@@ -283,7 +283,7 @@ enum **DockSlot**: :ref:`🔗<enum_EditorDock_DockSlot>`
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_BOTTOM_L** = ``9``
 
-Dock slot at the bottom, below bottom panel, on the left side.
+Док слот расположен внизу, под нижней панелью, с левой стороны.
 
 .. _class_EditorDock_constant_DOCK_SLOT_BOTTOM_R:
 
@@ -291,7 +291,7 @@ Dock slot at the bottom, below bottom panel, on the left side.
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_BOTTOM_R** = ``10``
 
-Dock slot at the bottom, below bottom panel, on the right side.
+Док слот расположен внизу, под нижней панелью, с правой стороны.
 
 .. _class_EditorDock_constant_DOCK_SLOT_MAX:
 
@@ -408,7 +408,7 @@ Dock slot at the bottom, below bottom panel, on the right side.
 - |void| **set_force_show_icon**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_force_show_icon**\ (\ )
 
-If ``true``, the dock will always display an icon, regardless of :ref:`EditorSettings.interface/editor/docks/dock_tab_style<class_EditorSettings_property_interface/editor/docks/dock_tab_style>` or :ref:`EditorSettings.interface/editor/docks/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/docks/bottom_dock_tab_style>`.
+Если ``true``, то на панели Dock всегда будет отображаться значок, независимо от :ref:`EditorSettings.interface/editor/docks/dock_tab_style<class_EditorSettings_property_interface/editor/docks/dock_tab_style>` или :ref:`EditorSettings.interface/editor/docks/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/docks/bottom_dock_tab_style>`.
 
 .. rst-class:: classref-item-separator
 

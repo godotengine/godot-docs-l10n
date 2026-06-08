@@ -2011,11 +2011,11 @@ ProjectSettings
 
 :ref:`String<class_String>` **accessibility/general/accessibility_driver** = ``"accesskit"`` :ref:`🔗<class_ProjectSettings_property_accessibility/general/accessibility_driver>`
 
-Accessibility driver:
+可访问性驱动程序：
 
--**accesskit** (default): AccessKit driver.
+-**accesskit**\ （默认）：AccessKit 驱动程序。
 
--**dummy**: Dummy driver, screen reader support is disabled.
+-**dummy**\ ：虚拟驱动程序，屏幕阅读器支持已禁用。
 
 .. rst-class:: classref-item-separator
 
@@ -2085,7 +2085,7 @@ Accessibility driver:
 
 :ref:`bool<class_bool>` **animation/warnings/check_invalid_skeleton_modifier_node_paths** = ``true`` :ref:`🔗<class_ProjectSettings_property_animation/warnings/check_invalid_skeleton_modifier_node_paths>`
 
-If ``true``, :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` prints a warning if there's no matching object for the track path in the scene when assigning.
+如果设为 ``true``\ ，当分配轨道路径时，如果在场景里找不到与之匹配的对象，\ :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 就会打印一条警告信息。
 
 .. rst-class:: classref-item-separator
 
@@ -3039,7 +3039,7 @@ Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级�
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_temporary_modification** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_temporary_modification>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a built-in property of type ``Packed*Array`` is modified using a complex assignment chain or a non-``const`` method call. In this case, you are only modifying a temporary value, and the property's value remains unchanged.
+当设置为 **Warn（警告）** 或 **Error（错误）** 时，如果你通过复杂的赋值链，或者调用非 ``const（非常量）`` 的方法来修改一个 ``Packed*Array`` 类型的内置属性，系统会分别产生一条警告或报错。在这种情况下，你实际上仅仅是在修改一个临时的副本数值，而原本的属性值根本不会发生任何改变。
 
 .. rst-class:: classref-item-separator
 
@@ -4717,9 +4717,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/hdr/request_hdr_output** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/hdr/request_hdr_output>`
 
-If ``true``, HDR output is requested for the main window and the editor. The main window and editor will automatically switch between HDR and SDR if it is moved between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of the :ref:`Window<class_Window>` must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output.
+如果为 ``true``\ ，则为主窗口和编辑器请求 HDR 输出。如果窗口在不同显示器间移动、显示器功能发生变化或系统设置被修改，主窗口和编辑器将自动在 HDR 和 SDR 之间切换。这将在内部强制主 :ref:`Viewport<class_Viewport>` 上的 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 属性被启用。窗口的所有其他 :ref:`SubViewport<class_SubViewport>` 都必须手动启用其 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 属性才能产生 HDR 输出。
 
-\ **Note:** This property is only read when the project starts. To change this property at runtime, set :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
+\ **注意：** 此属性仅在项目启动时读取。若要在运行时更改此属性，请设置 :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5039,17 +5039,17 @@ If ``true``, HDR output is requested for the main window and the editor. The mai
 
 :ref:`String<class_String>` **display/window/stretch/aspect** = ``"keep"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/aspect>`
 
-Defines how the aspect ratio of the base size is preserved when stretching to fit the resolution of the window or screen.
+定义了在拉伸以适应窗口或屏幕分辨率时，如何保留基础尺寸（base size）的宽高比。
 
-\ ``"ignore"``: Ignore the aspect ratio when stretching the screen. This means that the original resolution will be stretched to exactly fill the screen, even if it's wider or narrower. This may result in non-uniform stretching: things looking wider or taller than designed.
+\ ``"ignore"``\ （忽略）：拉伸屏幕时忽略宽高比。这意味着原始分辨率会被强行拉伸，以严丝合缝地填满整个屏幕，哪怕屏幕比原始画面更宽或更窄。这可能会导致非均匀拉伸：游戏里的物体看起来会比设计时显得更宽或更高（也就是画面变形了）。
 
-\ ``"keep"``: Keep aspect ratio when stretching the screen. This means that the viewport retains its original size regardless of the screen resolution, and black bars will be added to the top/bottom of the screen ("letterboxing") or the sides ("pillarboxing").
+\ ``"keep"``\ （保留）：拉伸屏幕时保留宽高比。这意味着视口（Viewport）会保持其原始尺寸比例，不受屏幕分辨率影响。为了填满屏幕，会在屏幕的顶部/底部（黑边，即“信箱模式”）或者左右两侧（黑边，即“邮筒模式”）添加黑条。
 
-\ ``"keep_width"``: Keep aspect ratio when stretching the screen. If the screen is wider than the base size, black bars are added at the left and right (pillarboxing). But if the screen is taller than the base resolution, the viewport will be grown in the vertical direction (and more content will be visible at the bottom). You can also think of this as "Expand Vertically".
+\ ``"keep_width"``\ （保留宽度）：拉伸屏幕时保留宽高比。如果屏幕比基础尺寸更宽，会在左右两侧添加黑边（邮筒模式）。但如果屏幕比基础分辨率更高，视口会在垂直方向上扩大（底部的可见内容会变多）。你也可以把它理解为“垂直方向扩展（Expand Vertically）”。
 
-\ ``"keep_height"``: Keep aspect ratio when stretching the screen. If the screen is taller than the base size, black bars are added at the top and bottom (letterboxing). But if the screen is wider than the base resolution, the viewport will be grown in the horizontal direction (and more content will be visible to the right). You can also think of this as "Expand Horizontally".
+\ ``"keep_height"``\ （保留高度）：拉伸屏幕时保留宽高比。如果屏幕比基础尺寸更高，会在顶部和底部添加黑边（信箱模式）。但如果屏幕比基础分辨率更宽，视口会在水平方向上扩大（右侧的可见内容会变多）。你也可以把它理解为“水平方向扩展（Expand Horizontally）”。
 
-\ ``"expand"``: Keep aspect ratio when stretching the screen, but keep neither the base width nor height. Depending on the screen aspect ratio, the viewport will either be larger in the horizontal direction (if the screen is wider than the base size) or in the vertical direction (if the screen is taller than the original size). This is the default for projects created starting in Godot 4.7.
+\ ``"expand"``\ （扩展）：拉伸屏幕时保留宽高比，但既不强行保留基础宽度，也不强行保留基础高度。根据屏幕的宽高比，视口要么在水平方向上变大（如果屏幕比基础尺寸更宽），要么在垂直方向上变大（如果屏幕比原始尺寸更高）。这是从 Godot 4.7 开始创建的新项目的默认设置。
 
 .. rst-class:: classref-item-separator
 
@@ -5061,13 +5061,13 @@ Defines how the aspect ratio of the base size is preserved when stretching to fi
 
 :ref:`String<class_String>` **display/window/stretch/mode** = ``"disabled"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/mode>`
 
-Defines how the base size is stretched to fit the resolution of the window or screen.
+定义了基础尺寸（base size）如何拉伸以适应窗口或屏幕的分辨率。
 
-\ ``"disabled"``: No stretching happens. One unit in the scene corresponds to one pixel on the screen. In this mode, :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` has no effect. Recommended for non-game applications.
+\ ``"disabled"``\ （禁用）：不进行任何拉伸。游戏场景中的 1 个单位严格对应屏幕上的 1 个像素。在这种模式下，\ :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>`\ （宽高比）设置将不生效。通常推荐用于非游戏类的应用程序。
 
-\ ``"canvas_items"``: The base size specified in width and height in the project settings is stretched to cover the whole screen (taking :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` into account). This means that everything is rendered directly at the target resolution. 3D is unaffected, while in 2D, there is no longer a 1:1 correspondence between sprite pixels and screen pixels, which may result in scaling artifacts. Recommended for most games that don't use a pixel art aesthetic, although it is possible to use this stretch mode for pixel art games too (especially in 3D). This is the default for projects created starting in Godot 4.7.
+\ ``"canvas_items"``\ （画布项目）：在 Project Settings（项目设置）中指定的基础宽度和高度会被拉伸以覆盖整个屏幕（同时会考虑 :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` 宽高比的影响）。这意味着所有内容都会直接在目标分辨率下进行渲染。此模式不影响 3D 画面；但在 2D 中，精灵（Sprite）的像素和屏幕像素之间不再保持 1:1 的对应关系，这可能会导致一些缩放伪影（画面轻微模糊或失真）。推荐用于大多数不使用像素艺术（Pixel Art）风格的游戏，不过它也可以用于像素风游戏（尤其是 3D 像素游戏）。这是 Godot 4.7 起创建的新项目的默认设置。
 
-\ ``"viewport"``: The size of the root :ref:`Viewport<class_Viewport>` is set precisely to the base size specified in the Project Settings' Display section. The scene is rendered to this viewport first. Finally, this viewport is scaled to fit the screen (taking :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` into account). Recommended for games that use a pixel art aesthetic.
+\ ``"viewport"``\ （视口）：根 :ref:`Viewport<class_Viewport>`\ （视口）的大小会被精确地设置为项目设置“显示（Display）”部分中指定的基础尺寸。场景会先被渲染到这个固定大小的视口中，最后，这个视口整体被缩放以适应屏幕（同样会考虑 :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` 宽高比的影响）。强烈推荐用于使用像素艺术（Pixel Art）风格的游戏，因为它能完美保留像素的颗粒感。
 
 .. rst-class:: classref-item-separator
 
@@ -5109,11 +5109,11 @@ Defines how the base size is stretched to fit the resolution of the window or sc
 
 :ref:`bool<class_bool>` **display/window/subwindows/embed_subwindows** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>`
 
-If ``true``, subwindows are embedded in the main window (this is also called single-window mode). Single-window mode can be faster as it does not need to create a separate window for every popup and tooltip, which can be a slow operation depending on the operating system and rendering method in use.
+如果设为 ``true``\ ，子窗口将嵌入到主窗口中（这也被称为单窗口模式）。单窗口模式通常运行速度更快，因为它不需要为每一个弹出窗口和提示框（tooltip）单独创建新窗口——而在某些操作系统或渲染方式下，创建新窗口是一个比较耗时的操作。
 
-If ``false``, subwindows are created as separate windows (this is also called multi-window mode). This allows them to be moved outside the main window and use native operating system window decorations.
+如果设为 ``false``\ ，子窗口将被创建为独立的窗口（这也被称为多窗口模式）。这允许你将这些子窗口拖拽到主窗口之外，并使用操作系统原生的窗口装饰（比如系统自带的标题栏、最小化/关闭按钮等）。
 
-This is equivalent to :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` in the editor.
+这与编辑器设置中 :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` 选项的作用相同。
 
 .. rst-class:: classref-item-separator
 
@@ -5125,17 +5125,17 @@ This is equivalent to :ref:`EditorSettings.interface/editor/display/single_windo
 
 :ref:`int<class_int>` **display/window/vsync/vsync_mode** = ``1`` :ref:`🔗<class_ProjectSettings_property_display/window/vsync/vsync_mode>`
 
-Sets the V-Sync mode for the main game window. The editor's own V-Sync mode can be set using :ref:`EditorSettings.interface/editor/display/vsync_mode<class_EditorSettings_property_interface/editor/display/vsync_mode>`.
+设置主游戏窗口的垂直同步（V-Sync）模式。编辑器自身的垂直同步模式可以通过 :ref:`EditorSettings.interface/editor/display/vsync_mode<class_EditorSettings_property_interface/editor/display/vsync_mode>` 来设置。
 
-See :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` for possible values and how they affect the behavior of your application.
+关于可能的取值以及它们如何影响应用程序的行为，请参阅 :ref:`VSyncMode<enum_DisplayServer_VSyncMode>`\ 。
 
-Depending on the platform and rendering method, the engine will fall back to **Enabled** if the desired mode is not supported.
+根据平台和渲染方法的不同，如果所需的模式不受支持，引擎会自动回退到 **Enabled（启用）** 模式。
 
-V-Sync can be disabled on the command line using the ``--disable-vsync`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
+垂直同步也可以通过 ``--disable-vsync`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>` 来禁用。
 
-\ **Note:** The **Adaptive** and **Mailbox** V-Sync modes are only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：** **Adaptive（自适应）** 和 **Mailbox（邮箱）** 这两种垂直同步模式仅在 Forward+ 和 Mobile 渲染方法中受支持，在 Compatibility（兼容）渲染方法中不可用。
 
-\ **Note:** This property is only read when the project starts. To change the V-Sync mode at runtime, call :ref:`DisplayServer.window_set_vsync_mode()<class_DisplayServer_method_window_set_vsync_mode>` instead.
+\ **注意：** 此属性仅在项目启动时读取。如果你想在游戏运行过程中（运行时）更改垂直同步模式，请调用 :ref:`DisplayServer.window_set_vsync_mode()<class_DisplayServer_method_window_set_vsync_mode>` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -5623,13 +5623,13 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`int<class_int>` **gui/common/show_focus_state_on_pointer_event** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>`
 
-Determines whether a :ref:`Control<class_Control>` should visually indicate focus when that focus is gained using a mouse or touch input.
+决定当 :ref:`Control<class_Control>`\ （控件）通过鼠标或触摸输入获得焦点时，是否应该在视觉上显示出焦点状态。
 
-- **Never** (``0``) show the focused state for mouse/touch input.
+- **Never（从不）** (``0``)：当通过鼠标或触摸获得焦点时，从不显示焦点状态。
 
-- **Text Input Controls** (``1``) show the focused state even if that focus was gained via mouse/touch input (similar to browser behavior).
+- **Text Input Controls（文本输入控件）** (``1``)：即使是文本输入类的控件通过鼠标或触摸获得焦点，也会显示焦点状态（这类似于我们在网页浏览器中点击输入框时的行为）。
 
-- **Always** (``2``) show the focused state, even if that focus was gained via mouse/touch input.
+- **Always（总是）** (``2``)：总是显示焦点状态，哪怕这个焦点是通过鼠标或触摸获得的。
 
 .. rst-class:: classref-item-separator
 
@@ -5823,7 +5823,7 @@ LCD 次像素布局，用于字体抗锯齿。见 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`float<class_float>` **gui/timers/button_shortcut_feedback_highlight_time** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_gui/timers/button_shortcut_feedback_highlight_time>`
 
-启用 :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` 时，按下快捷键后 :ref:`BaseButton<class_BaseButton>` 保持高亮的时间。
+When :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` is enabled, this is the time the :ref:`BaseButton<class_BaseButton>` will remain highlighted after a shortcut. This duration is not affected by :ref:`Engine.time_scale<class_Engine_property_time_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7159,7 +7159,7 @@ macOS 特有的用于在 :ref:`FileDialog<class_FileDialog>` 中聚焦路径编�
 
 :ref:`bool<class_bool>` **input_devices/joypads/ignore_joypad_on_unfocused_application** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/joypads/ignore_joypad_on_unfocused_application>`
 
-If ``true``, joypad input (including motion sensors) and LED light changes will be ignored and joypad vibration will be stopped when the application is not focused.
+如果为 ``true``\ ，当应用程序失去焦点时，游戏手柄输入（包括运动传感器）和 LED 灯光变化将被忽略，且游戏手柄的振动将被停止。
 
 .. rst-class:: classref-item-separator
 
@@ -10577,9 +10577,9 @@ Godot 使用一个消息队列来延迟一些函数调用。如果你的空间�
 
 :ref:`float<class_float>` **physics/2d/sleep_threshold_linear** = ``2.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/sleep_threshold_linear>`
 
-Threshold linear velocity under which a 2D physics body will be considered inactive. See :ref:`PhysicsServer2D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
+当 2D 物理刚体的线速度低于这个阈值时，它就会被判定为“不活跃”（即进入休眠状态）。详情请参考 :ref:`PhysicsServer2D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`\ 。
 
-\ **Note:** Only supported when using GodotPhysics3D. This project setting is ignored when using Jolt Physics.
+\ **注意：** 只有在使用 Godot 自带的 3D 物理引擎（GodotPhysics3D）时才支持该设置。如果使用的是 Jolt Physics 物理插件，此项目设置将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -10591,9 +10591,9 @@ Threshold linear velocity under which a 2D physics body will be considered inact
 
 :ref:`float<class_float>` **physics/2d/solver/contact_max_allowed_penetration** = ``0.3`` :ref:`🔗<class_ProjectSettings_property_physics/2d/solver/contact_max_allowed_penetration>`
 
-Maximum distance a shape can penetrate another shape before it is considered a collision. See :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
+在一个形状被判定为发生碰撞之前，允许它穿透另一个形状的最大距离。详情请参考 :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`\ 。
 
-\ **Note:** Only supported when using GodotPhysics3D. This project setting is ignored when using Jolt Physics.
+\ **注意：** 只有在使用 Godot 自带的 3D 物理引擎（GodotPhysics3D）时才支持该设置。如果使用的是 Jolt Physics 物理插件，此项目设置将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -10833,9 +10833,9 @@ Maximum distance a shape can penetrate another shape before it is considered a c
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_angular** = ``0.13962634`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_angular>`
 
-Threshold angular velocity under which a 3D physics body will be considered inactive. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
+当 3D 物理刚体的角速度低于这个阈值时，它就会被判定为“不活跃”（即进入休眠状态）。详情请参考 :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 只有在使用 Godot 自带的 3D 物理引擎（GodotPhysics3D）时才支持该设置。如果使用的是 Jolt Physics 物理插件，此项目设置将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -10847,9 +10847,9 @@ Threshold angular velocity under which a 3D physics body will be considered inac
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_linear** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_linear>`
 
-Threshold linear velocity under which a 3D physics body will be considered inactive. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
+当 3D 物理刚体的线速度低于这个阈值时，它就会被判定为“不活跃”（即进入休眠状态）。详情请参考 :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 只有在使用 Godot 自带的 3D 物理引擎（GodotPhysics3D）时才支持该设置。如果使用的是 Jolt Physics 物理插件，此项目设置将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -10861,9 +10861,9 @@ Threshold linear velocity under which a 3D physics body will be considered inact
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_allowed_penetration** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_allowed_penetration>`
 
-Maximum distance a shape can penetrate another shape before it is considered a collision. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
+在一个形状被判定为发生碰撞之前，允许它穿透另一个形状的最大距离。详情请参考 :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 此项目设置仅在使用 GodotPhysics3D（Godot 自带的 3D 物理引擎）时有效。当使用 Jolt Physics 物理插件时，该设置不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -10875,9 +10875,9 @@ Maximum distance a shape can penetrate another shape before it is considered a c
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_separation** = ``0.05`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_separation>`
 
-Maximum distance a shape can be from another before they are considered separated and the contact is discarded. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`.
+在两个形状被判定为“已经分开”并且丢弃接触点之前，它们之间允许存在的最大距离。详情请参考 :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 此项目设置仅在使用 GodotPhysics3D（Godot 自带的 3D 物理引擎）时有效。当使用 Jolt Physics 物理插件时，该设置不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -10889,9 +10889,9 @@ Maximum distance a shape can be from another before they are considered separate
 
 :ref:`float<class_float>` **physics/3d/solver/contact_recycle_radius** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_recycle_radius>`
 
-Maximum distance a pair of bodies has to move before their collision status has to be recalculated. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`.
+在两个物体的碰撞状态需要被重新计算之前，它们之间允许移动的最大距离。详情请参考 :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 此项目设置仅在使用 GodotPhysics3D（Godot 自带的 3D 物理引擎）时有效。当使用 Jolt Physics 物理插件时，该设置不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -10903,11 +10903,11 @@ Maximum distance a pair of bodies has to move before their collision status has 
 
 :ref:`float<class_float>` **physics/3d/solver/default_contact_bias** = ``0.8`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/default_contact_bias>`
 
-Default solver bias for all physics contacts. Defines how much bodies react to enforce contact separation. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`.
+所有物理接触点的默认求解器偏差（Solver Bias）。它定义了物体为了强制分离接触（避免互相穿透）而产生的反应强度。具体可以参考 :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`\ 。
 
-Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`).
+单个的碰撞形状也可以拥有特定的偏差值（具体请参考 :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`\ ）。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 此项目设置仅在使用 GodotPhysics3D 时生效。如果你使用的是 Jolt Physics，它将不起任何作用。
 
 .. rst-class:: classref-item-separator
 
@@ -10919,9 +10919,9 @@ Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solve
 
 :ref:`int<class_int>` **physics/3d/solver/solver_iterations** = ``16`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/solver_iterations>`
 
-Number of solver iterations for all contacts and constraints. The greater the number of iterations, the more accurate the collisions will be. However, a greater number of iterations requires more CPU power, which can decrease performance. See :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`.
+所有接触和约束的求解器迭代次数。迭代次数越多，碰撞的计算结果就越精确。但是，更多的迭代次数需要消耗更多的 CPU 资源，这可能会降低游戏的运行性能。详情请参考 :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 此项目设置仅在使用 GodotPhysics3D（Godot 自带的 3D 物理引擎）时有效。当使用 Jolt Physics 物理插件时，该设置不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -10933,9 +10933,9 @@ Number of solver iterations for all contacts and constraints. The greater the nu
 
 :ref:`float<class_float>` **physics/3d/time_before_sleep** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_physics/3d/time_before_sleep>`
 
-Time (in seconds) of inactivity before which a 3D physics body will put to sleep. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`.
+一个 3D 物理刚体在进入休眠状态前，允许保持不活跃状态的时间（以秒为单位）。详情请参考 :ref:`PhysicsServer3D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`\ 。
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **注意：** 此项目设置仅在使用 GodotPhysics3D（Godot 自带的 3D 物理引擎）时有效。当使用 Jolt Physics 物理插件时，该设置不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -11803,7 +11803,7 @@ CPU 使用率大致与物理周期速率成正比。然而，在周期速率非�
 
 :ref:`bool<class_bool>` **rendering/environment/fog/use_legacy_blending** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending>`
 
-Enables legacy fog blending behavior from version 4.5 and earlier. This is intended for users who are developing on pre-4.6 versions and want to upgrade to 4.6 with the smallest possible change to their visuals.
+启用 4.5 及更早版本的旧版雾效混合行为。此选项面向在 4.6 版本之前进行开发的用户，旨在让他们升级到 4.6 版本时，视觉效果发生尽可能小的变化。
 
 .. rst-class:: classref-item-separator
 
@@ -12561,9 +12561,9 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`float<class_float>` **rendering/lightmapping/probe_capture/update_speed** = ``15`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/probe_capture/update_speed>`
 
-The framerate-independent update speed when representing dynamic object lighting from :ref:`LightmapProbe<class_LightmapProbe>`\ s. Higher values make dynamic object lighting update faster. Higher values can prevent fast-moving objects from having "outdated" indirect lighting displayed on them, at the cost of possible flickering when an object moves from a bright area to a shaded area.
+当使用 :ref:`LightmapProbe<class_LightmapProbe>`\ （光照贴图探针）来表现动态物体的光照时，该属性代表一个与帧率无关的更新速度。数值越大，动态物体的光照更新得就越快。较高的数值可以防止快速移动的物体上出现“过时”的间接光照显示；但代价是，当物体从明亮区域移动到阴影区域时，可能会出现闪烁的现象。
 
-\ **Note:** This property is only read when the project starts. To adjust the BVH build quality at runtime, use :ref:`RenderingServer.lightmap_set_probe_capture_update_speed()<class_RenderingServer_method_lightmap_set_probe_capture_update_speed>`.
+\ **注意：** 该属性仅在项目启动时被读取。如果想在运行时调整 BVH 的构建质量，请使用 :ref:`RenderingServer.lightmap_set_probe_capture_update_speed()<class_RenderingServer_method_lightmap_set_probe_capture_update_speed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12889,13 +12889,13 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`float<class_float>` **rendering/mesh_lod/lod_change/threshold_pixels** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>`
 
-The automatic LOD bias to use for meshes rendered within the :ref:`ReflectionProbe<class_ReflectionProbe>`. Higher values will use less detailed versions of meshes that have LOD variations generated. If set to ``0.0``, automatic LOD is disabled. Increase :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` to improve performance at the cost of geometry detail.
+用于 :ref:`ReflectionProbe<class_ReflectionProbe>`\ （反射探针）内渲染网格的自动 LOD 偏差。数值越高，就会使用细节度更低的网格版本（前提是该网格已生成了 LOD 变体）。如果设置为 ``0.0``\ ，则会禁用自动 LOD。你可以调高 :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` 的值，通过牺牲几何细节来换取更好的性能。
 
-\ **Note:** Depending on the mesh's attributes (vertex colors, blend shapes, ...), a mesh may have fewer levels of LOD generated to avoid visible distortion of the mesh once it is affected by vertex colors or blend shapes. Meshes with a very low vertex count will also not have any LODs generated, which means this setting will not affect them at all. In general, this setting makes the largest impact on static meshes with a high vertex count.
+\ **注意：** 根据网格自身的属性（比如顶点颜色、混合形状等），引擎可能会生成较少数量的 LOD 层级，以避免网格在受到顶点颜色或混合形状影响时出现明显的形变。此外，顶点数量极少的网格根本不会生成任何 LOD，这意味着该设置对它们完全不起作用。总的来说，这个设置对顶点数量较多的静态网格影响最大。
 
-\ **Note:** :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` does not affect :ref:`GeometryInstance3D<class_GeometryInstance3D>` visibility ranges (also known as "manual" LOD or hierarchical LOD).
+\ **注意：** :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` 不会影响 :ref:`GeometryInstance3D<class_GeometryInstance3D>` 的可见范围（也就是大家常说的“手动”LOD 或层级 LOD）。
 
-\ **Note:** This property is only read when the project starts. To adjust the automatic LOD threshold at runtime, set :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` on the root :ref:`Viewport<class_Viewport>`.
+\ **注意：** 该属性仅在项目启动时被读取。如果想在运行时调整自动 LOD 的阈值，请设置根 :ref:`Viewport<class_Viewport>` 上的 :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -13541,9 +13541,9 @@ Direct3D 12 渲染驱动程序用于大多数渲染操作的采样器描述符�
 
 :ref:`float<class_float>` **rendering/scaling_3d/scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/scale>`
 
-Scales the 3D render buffer based on the viewport size uses an image filter specified in :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` to scale the output image to the full viewport size. Values lower than ``1.0`` can be used to speed up 3D rendering at the cost of quality (undersampling). Values greater than ``1.0`` are only valid for bilinear mode and can be used to improve 3D rendering quality at a high performance cost (supersampling). See also :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` for multi-sample antialiasing, which is significantly cheaper but only smooths the edges of polygons.
+根据视口大小来缩放 3D 渲染缓冲区，并使用在 :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` 中指定的图像滤镜，将输出图像缩放回完整的视口大小。数值小于 ``1.0`` 时，可以通过降低画质（欠采样）来加快 3D 渲染速度。数值大于 ``1.0`` 时，仅在双线性（bilinear）模式下有效，可以通过牺牲大量性能来提升 3D 渲染画质（超采样）。如果你只是想平滑多边形的边缘，也可以参考 :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` 来使用多重采样抗锯齿，它的性能开销要小得多。
 
-\ **Note:** When using the **Nearest** scaling mode, to avoid uneven pixel scaling, it's highly recommended to use a value equal to an integer divisor with a dividend of ``1``. For example, it's best to use a scale of ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5), and so on.
+\ **注意：** 当使用 **最近邻（Nearest）** 缩放模式时，为了避免出现像素大小不均的现象，强烈建议将数值设置为 ``1`` 的整数分之一。例如，最好使用 ``0.5`` (1/2)、\ ``0.3333`` (1/3)、\ ``0.25`` (1/4)、\ ``0.2`` (1/5) 等比例。
 
 .. rst-class:: classref-item-separator
 
@@ -13755,13 +13755,13 @@ Scales the 3D render buffer based on the viewport size uses an image filter spec
 
 :ref:`float<class_float>` **rendering/textures/default_filters/texture_mipmap_bias** = ``0.0`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`
 
-Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close).
+通过从更低或更高的 Mipmap 层级（也称为“纹理 LOD 偏差”）读取数据，来影响最终纹理的锐利度。负数值会让带有 Mipmap 的纹理看起来更锐利，但在远距离观察时会出现更多颗粒感；正数值则会让纹理变得更模糊（即使在近距离观察时也是如此）。
 
-Enabling temporal antialiasing (:ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) will automatically apply a ``-0.5`` offset to this value, while enabling FXAA (:ref:`rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`) will automatically apply a ``-0.25`` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of ``-0.75`` is applied to this value.
+启用时间性抗锯齿（\ :ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`\ ）会自动给该数值应用 ``-0.5`` 的偏移量；而启用 FXAA（\ :ref:`rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`\ ）会自动应用 ``-0.25`` 的偏移量。如果同时启用 TAA 和 FXAA，则会应用 ``-0.75`` 的偏移量。
 
-\ **Note:** If :ref:`rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` is lower than ``1.0`` (exclusive), :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``log2(scaling_3d_scale) + mipmap_bias``.
+\ **注意：** 如果 :ref:`rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>`\ （3D渲染缩放比例）低于 ``1.0``\ （不包含1.0），\ :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` 会被用来调整引擎根据缩放比例在内部自动计算出的 Mipmap 偏差值。具体的计算公式为：\ ``log2(scaling_3d_scale) + mipmap_bias``\ 。
 
-\ **Note:** This property is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this property is always treated as if it was set to ``0.0``.
+\ **注意：** 此属性仅在 Forward+ 和 Mobile 渲染器中受支持，Compatibility（兼容）渲染器不支持。在 Compatibility 渲染器下，此属性始终会被视为 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -14300,7 +14300,7 @@ ArUco 标记类型，内置标记跟踪被设置以识别（如果 ArUco 标记�
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/user_presence** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/user_presence>`
 
-If ``true``, the user presence extension is enabled if available.
+如果设为 ``true``\ ，且用户在线状态扩展功能可用的话，就会启用它。
 
 .. rst-class:: classref-item-separator
 
@@ -14336,7 +14336,7 @@ If ``true``, the user presence extension is enabled if available.
 
 :ref:`bool<class_bool>` **xr/openxr/foveation_eye_tracked** = ``true`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_eye_tracked>`
 
-If ``true`` and foveation level is set to anything other than "Disabled", eye-tracked foveation will be used, so long as it's supported by the headset.
+如果为 ``true`` 且注视点级别被设置为“已禁用”以外的任何值，只要头显设备支持，就会使用眼动追踪注视点渲染（eye-tracked foveation）。
 
 .. rst-class:: classref-item-separator
 
@@ -14362,9 +14362,9 @@ If ``true`` and foveation level is set to anything other than "Disabled", eye-tr
 
 :ref:`bool<class_bool>` **xr/openxr/foveation_with_subsampled_images** = ``true`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_with_subsampled_images>`
 
-If ``true`` and foveation is also enabled, subsampled images will be used on Vulkan. This can improve the performance gain from foveated rendering, especially when using high foveation levels.
+如果为 ``true`` 且同时启用了注视点渲染（foveation），Vulkan 将会使用下采样图像（subsampled images）。这可以提高注视点渲染带来的性能增益，尤其是在使用高注视点级别时。
 
-\ **Note:**: Using subsampled images is incompatible with many screen-space rendering features or post-processing effects like FXAA or glow. If any such effects are enabled, subsampled images will automatically be disabled and a warning shown in the log.
+\ **注意：** 使用下采样图像与许多屏幕空间渲染功能或后期处理效果（如 FXAA 或辉光）不兼容。如果启用了任何此类效果，下采样图像将自动被禁用，并且日志中会显示警告。
 
 .. rst-class:: classref-item-separator
 

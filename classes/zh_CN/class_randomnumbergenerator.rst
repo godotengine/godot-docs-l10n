@@ -91,19 +91,19 @@ RandomNumberGenerator 是一个用于生成伪随机数的类。它目前使用 
 - |void| **set_seed**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_seed**\ (\ )
 
-Initializes the random number generator state based on the given seed value. A given seed will give a reproducible sequence of pseudo-random numbers.
+根据给定的种子值来初始化随机数生成器的状态。使用相同的种子，将会生成一组完全可复现的伪随机数序列。
 
-\ **Note:** The RNG does not have an avalanche effect, and can output similar random streams given similar seeds. Consider using a hash function to improve your seed quality if they're sourced externally.
+\ **注意：** 该随机数生成器（RNG）不具备雪崩效应，这意味着如果使用相近的种子值，可能会输出相似的随机数序列。如果你的种子是从外部获取的，建议考虑使用哈希函数来提升种子的质量。
 
-\ **Note:** The default value of this property is pseudo-random, and changes when calling :ref:`randomize()<class_RandomNumberGenerator_method_randomize>`. The ``0`` value documented here is a placeholder, and not the actual default seed.
+\ **注意：** 该属性的默认值其实是伪随机的，并且会在调用 :ref:`randomize()<class_RandomNumberGenerator_method_randomize>` 方法时发生改变。这里文档中标注的默认值 ``0`` 仅仅是一个占位符，并不是它实际的默认种子。
 
-\ **Note:** Setting this property produces a side effect of changing the internal :ref:`state<class_RandomNumberGenerator_property_state>`, so make sure to initialize the seed *before* modifying the :ref:`state<class_RandomNumberGenerator_property_state>`:
+\ **注意：** 设置该属性会产生一个副作用，即改变内部的 :ref:`state<class_RandomNumberGenerator_property_state>`\ （状态）。因此，请务必在修改 :ref:`state<class_RandomNumberGenerator_property_state>` *之前* 先初始化种子：
 
 ::
 
     var rng = RandomNumberGenerator.new()
     rng.seed = hash("Godot")
-    rng.state = 100 # Restore to some previously saved state.
+    rng.state = 100 # 恢复到之前保存的某个状态。
 
 .. rst-class:: classref-item-separator
 
@@ -150,11 +150,11 @@ Initializes the random number generator state based on the given seed value. A g
 
 :ref:`int<class_int>` **rand_weighted**\ (\ weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_RandomNumberGenerator_method_rand_weighted>`
 
-Returns a random integer between ``0`` and the size of the array that is passed as a parameter. Each value in the array should be a floating-point number that represents the relative likelihood that it will be returned as an index. A higher value means the value is more likely to be returned as an index, while a value of ``0`` means it will never be returned as an index.
+返回一个介于 ``0`` 和作为参数传入的数组大小之间的随机整数。数组中的每个值都应该是一个浮点数，代表其作为索引被返回的相对概率。值越高，该索引被返回的可能性就越大；而值为 ``0`` 则意味着该索引永远不会被返回。
 
-For example, if ``[0.5, 1, 1, 2]`` is passed as a parameter, then the method is twice as likely to return ``3`` (the index of the value ``2``) and twice as unlikely to return ``0`` (the index of the value ``0.5``) compared to the indices ``1`` and ``2``.
+例如，如果传入参数 ``[0.5, 1, 1, 2]``\ ，那么该方法返回 ``3``\ （值 ``2`` 的索引）的概率是返回索引 ``1`` 和 ``2`` 的两倍，而返回 ``0``\ （值 ``0.5`` 的索引）的概率则只有它们的一半。
 
-Prints an error and returns ``-1`` if the array is empty.
+如果数组为空，则打印错误信息并返回 ``-1``\ 。
 
 
 .. tabs::

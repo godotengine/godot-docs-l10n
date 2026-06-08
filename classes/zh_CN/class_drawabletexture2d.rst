@@ -7,14 +7,14 @@ DrawableTexture2D
 
 **继承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 2D texture that supports drawing to itself via Blit calls.
+一种支持通过 Blit 调用对自身进行绘制的 2D 纹理。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-A 2D texture that can be modified via blit calls, copying from a target texture to itself. Primarily intended to be managed in code, a user must call :ref:`setup()<class_DrawableTexture2D_method_setup>` to initialize the state before drawing. Each :ref:`blit_rect()<class_DrawableTexture2D_method_blit_rect>` call takes at least a rectangle, the area to draw to, and another texture, what to be drawn. The draw calls use a Texture_Blit Shader to process and calculate the result, pixel by pixel. Users can supply their own ShaderMaterial with custom Texture_Blit shaders for more complex behaviors.
+一种可以通过 blit 调用进行修改的 2D 纹理，它能够将目标纹理的内容复制到自身上。这种纹理主要设计用于代码中进行管理，用户必须先调用 :ref:`setup()<class_DrawableTexture2D_method_setup>` 来初始化状态，然后才能开始绘制。每一次 :ref:`blit_rect()<class_DrawableTexture2D_method_blit_rect>` 调用至少需要传入一个矩形（指定绘制的目标区域）以及另一张纹理（作为绘制的内容来源）。这些绘制调用会使用一个名为 Texture_Blit 的着色器（Shader）来逐像素处理和计算最终结果。用户也可以提供自己编写的 ShaderMaterial，配合自定义的 Texture_Blit 着色器来实现更复杂的绘制行为。
 
 .. rst-class:: classref-reftable-group
 
@@ -73,7 +73,7 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBA8** = ``0``
 
-OpenGL texture format RGBA with four components, each with a bitdepth of 8.
+一种具有四个分量的 OpenGL 纹理格式 RGBA，每个分量的位深度均为 8 位。
 
 .. _class_DrawableTexture2D_constant_DRAWABLE_FORMAT_RGBA8_SRGB:
 
@@ -81,9 +81,9 @@ OpenGL texture format RGBA with four components, each with a bitdepth of 8.
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBA8_SRGB** = ``1``
 
-OpenGL texture format RGBA with four components, each with a bitdepth of 8.
+一种具有四个分量、每个分量位深度均为 8 位的 OpenGL RGBA 纹理格式。
 
-When drawn to, an sRGB to linear color space conversion is performed.
+当向其进行绘制时，会执行从 sRGB 到线性颜色空间的转换。
 
 .. _class_DrawableTexture2D_constant_DRAWABLE_FORMAT_RGBAH:
 
@@ -91,7 +91,7 @@ When drawn to, an sRGB to linear color space conversion is performed.
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBAH** = ``2``
 
-OpenGL texture format GL_RGBA16F where there are four components, each a 16-bit "half-precision" floating-point value.
+一种 OpenGL 纹理格式 GL_RGBA16F，它包含四个分量，每个分量都是一个 16 位的 "半精度" 浮点数值。
 
 .. _class_DrawableTexture2D_constant_DRAWABLE_FORMAT_RGBAF:
 
@@ -99,7 +99,7 @@ OpenGL texture format GL_RGBA16F where there are four components, each a 16-bit 
 
 :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>` **DRAWABLE_FORMAT_RGBAF** = ``3``
 
-OpenGL texture format GL_RGBA32F where there are four components, each a 32-bit floating-point value.
+一种 OpenGL 纹理格式 GL_RGBA32F，它包含四个分量，每个分量都是一个 32 位的浮点数值。
 
 .. rst-class:: classref-section-separator
 
@@ -118,7 +118,7 @@ OpenGL texture format GL_RGBA32F where there are four components, each a 32-bit 
 
 **实验性：** This function and its parameters are likely to change in the 4.7 Dev Cycle
 
-Draws to given ``rect`` on this texture by copying from the given ``source``. A ``modulate`` color can be passed in for the shader to use, but defaults to White. The ``mipmap`` value can specify a draw to a lower mipmap level. The ``material`` parameter can take a ShaderMaterial with a TextureBlit Shader for custom drawing behavior.
+通过从指定的 ``source``\ （源纹理）复制内容，绘制到本纹理的指定 ``rect``\ （矩形区域）上。可以传入一个 ``modulate``\ （调制）颜色供着色器使用，默认值为白色。\ ``mipmap`` 值可以指定将内容绘制到更低的 mipmap 层级上。\ ``material`` 参数可以接收一个带有 TextureBlit 着色器的 ShaderMaterial，从而实现自定义的绘制行为。
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ Draws to given ``rect`` on this texture by copying from the given ``source``. A 
 
 **实验性：** This function and its parameters are likely to change in the 4.7 Dev Cycle
 
-Draws to the given ``rect`` on this texture, as well as on up to 3 DrawableTexture ``extra_targets``. All ``extra_targets`` must be the same size and DrawableFormat as the original target, otherwise the Shader may fail. Expects up to 4 Texture ``sources``, but will replace missing ``sources`` with default Black Textures.
+绘制到本纹理的指定 ``rect``\ （矩形区域）上，同时也会绘制到最多 3 个 DrawableTexture ``extra_targets``\ （额外目标）上。所有 ``extra_targets`` 必须与原始目标（也就是调用该方法的纹理本身）具有相同的大小和 DrawableFormat（可绘制格式），否则着色器（Shader）可能会运行失败。该方法最多支持传入 4 张 Texture ``sources``\ （源纹理），如果传入的源纹理不足 4 张，缺失的部分将会自动替换为默认的黑色纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ Draws to the given ``rect`` on this texture, as well as on up to 3 DrawableTextu
 
 |void| **generate_mipmaps**\ (\ ) :ref:`🔗<class_DrawableTexture2D_method_generate_mipmaps>`
 
-Re-calculates the mipmaps for this texture on demand.
+按需重新计算该纹理的 Mipmap（多级渐远纹理）。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Re-calculates the mipmaps for this texture on demand.
 
 :ref:`bool<class_bool>` **get_use_mipmaps**\ (\ ) |const| :ref:`🔗<class_DrawableTexture2D_method_get_use_mipmaps>`
 
-Returns ``true`` if mipmaps are set to be used on this DrawableTexture.
+如果这个 DrawableTexture（可绘制纹理）被设置为使用 Mipmap，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ Returns ``true`` if mipmaps are set to be used on this DrawableTexture.
 
 |void| **set_format**\ (\ format\: :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>`\ ) :ref:`🔗<class_DrawableTexture2D_method_set_format>`
 
-Sets the format of this DrawableTexture.
+设置这个 DrawableTexture（可绘制纹理）的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Sets the format of this DrawableTexture.
 
 |void| **set_use_mipmaps**\ (\ mipmaps\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_DrawableTexture2D_method_set_use_mipmaps>`
 
-Sets if mipmaps should be used on this DrawableTexture.
+设置此 DrawableTexture 是否应该使用 mipmap（多级渐远纹理）。
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ Sets if mipmaps should be used on this DrawableTexture.
 
 **实验性：** This function and its parameters are likely to change in the 4.7 Dev Cycle
 
-Initializes the DrawableTexture to a White texture of the given ``width``, ``height``, and ``format``.
+将 DrawableTexture 初始化为一张指定 ``width``\ （宽度）、\ ``height``\ （高度）和 ``format``\ （格式）的白色纹理。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -166,7 +166,7 @@ AR/VR 服务器是我们“高级虚拟现实”解决方案的核心，负责�
 
 **world_origin_changed**\ (\ ) :ref:`🔗<class_XRServer_signal_world_origin_changed>`
 
-Emitted when the world origin transform changes.
+当世界原点变换发生改变时触发。
 
 .. rst-class:: classref-section-separator
 

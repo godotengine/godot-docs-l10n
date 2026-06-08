@@ -1689,9 +1689,9 @@ enum **ASTCFormat**: :ref:`🔗<enum_Image_ASTCFormat>`
 
 |void| **resize**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, interpolation\: :ref:`Interpolation<enum_Image_Interpolation>` = 1\ ) :ref:`🔗<class_Image_method_resize>`
 
-Resizes the image to the given ``width`` and ``height``. New pixels are calculated using the ``interpolation`` mode defined via :ref:`Interpolation<enum_Image_Interpolation>` constants.
+将图像调整为指定的 ``width``\ （宽度）和 ``height``\ （高度）。新的像素将使用通过 :ref:`Interpolation<enum_Image_Interpolation>` 常量定义的 ``interpolation``\ （插值）模式进行计算。
 
-\ **Note:** If the image's format is :ref:`FORMAT_RGBA4444<class_Image_constant_FORMAT_RGBA4444>`, :ref:`FORMAT_RGB565<class_Image_constant_FORMAT_RGB565>`, or :ref:`FORMAT_RGBE9995<class_Image_constant_FORMAT_RGBE9995>`, it will be temporarily converted to either :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` or :ref:`FORMAT_RGBAH<class_Image_constant_FORMAT_RGBAH>`. This can affect the quality of the resized image.
+\ **注意：** 如果图像的格式为 :ref:`FORMAT_RGBA4444<class_Image_constant_FORMAT_RGBA4444>`\ 、\ :ref:`FORMAT_RGB565<class_Image_constant_FORMAT_RGB565>` 或 :ref:`FORMAT_RGBE9995<class_Image_constant_FORMAT_RGBE9995>`\ ，它将被临时转换为 :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` 或 :ref:`FORMAT_RGBAH<class_Image_constant_FORMAT_RGBAH>`\ 。这可能会影响调整大小后图像的质量。
 
 .. rst-class:: classref-item-separator
 
@@ -1779,9 +1779,9 @@ Resizes the image to the given ``width`` and ``height``. New pixels are calculat
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_exr**\ (\ path\: :ref:`String<class_String>`, grayscale\: :ref:`bool<class_bool>` = false, color_image\: :ref:`bool<class_bool>` = false, max_linear_value\: :ref:`float<class_float>` = -1.0\ ) |const| :ref:`🔗<class_Image_method_save_exr>`
 
-Saves the image as an EXR file to ``path``. If ``grayscale`` is ``true`` and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. Set ``color_image`` to ``true`` when saving a color image, such as a screenshot. Negative values will be included when ``color_image`` is ``false``, which may be useful for saving raw floating point data such as a lightmap that includes negative light information. Color component values in the resulting EXR file will not exceed ``max_linear_value`` if ``max_linear_value`` is not negative. This function will return :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>` if Godot was compiled without the TinyEXR module.
+将图像作为 EXR 文件保存到 ``path``\ 。如果 ``grayscale`` 为 ``true`` 且图像仅有一个通道，则会将其明确保存为单色，而不是一个红色通道。在保存彩色图像（例如截图）时，将 ``color_image`` 设置为 ``true``\ 。当 ``color_image`` 为 ``false`` 时，将包含负值，这在保存包含负向光照信息的光照贴图等原始浮点数据时非常有用。如果 ``max_linear_value`` 不为负数，则生成的 EXR 文件中的颜色分量值不会超过 ``max_linear_value``\ 。如果编译 Godot 时未包含 TinyEXR 模块，该函数将返回 :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`\ 。
 
-When saving screenshots of a project that uses HDR output, use :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` for ``max_linear_value``.
+在保存使用 HDR 输出的项目的截图时，请对 ``max_linear_value`` 使用 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1793,9 +1793,9 @@ When saving screenshots of a project that uses HDR output, use :ref:`Window.get_
 
 :ref:`PackedByteArray<class_PackedByteArray>` **save_exr_to_buffer**\ (\ grayscale\: :ref:`bool<class_bool>` = false, color_image\: :ref:`bool<class_bool>` = false, max_linear_value\: :ref:`float<class_float>` = -1.0\ ) |const| :ref:`🔗<class_Image_method_save_exr_to_buffer>`
 
-Saves the image as an EXR file to a byte array. If ``grayscale`` is ``true`` and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. Set ``color_image`` to ``true`` when saving a color image, such as a screenshot. Negative values will be included when ``color_image`` is ``false``, which may be useful for saving raw floating point data such as a lightmap that includes negative light information. Color component values in the resulting EXR file will not exceed ``max_linear_value`` if ``max_linear_value`` is not negative. This function will return an empty byte array if Godot was compiled without the TinyEXR module.
+将图像作为 EXR 文件保存到字节数组中。如果 ``grayscale`` 为 ``true`` 且图像仅有一个通道，则会将其明确保存为单色，而不是一个红色通道。在保存彩色图像（例如截图）时，将 ``color_image`` 设置为 ``true``\ 。当 ``color_image`` 为 ``false`` 时，将包含负值，这在保存包含负向光照信息的光照贴图等原始浮点数据时非常有用。如果 ``max_linear_value`` 不为负数，则生成的 EXR 文件中的颜色分量值不会超过 ``max_linear_value``\ 。如果编译 Godot 时未包含 TinyEXR 模块，该函数将返回一个空字节数组。
 
-When saving screenshots of a project that uses HDR output, use :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` for ``max_linear_value``.
+在保存使用 HDR 输出的项目的截图时，请对 ``max_linear_value`` 使用 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`\ 。
 
 .. rst-class:: classref-item-separator
 

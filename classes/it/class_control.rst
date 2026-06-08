@@ -1326,9 +1326,9 @@ Inviato quando il nodo cattura il focus.
 
 **NOTIFICATION_FOCUS_EXIT** = ``44`` :ref:`🔗<class_Control_constant_NOTIFICATION_FOCUS_EXIT>`
 
-Sent when the node loses focus.
+Inviata quando il nodo perde il focus.
 
-This notification is sent in reversed order.
+Questa notifica è inviata in ordine inverso.
 
 .. _class_Control_constant_NOTIFICATION_THEME_CHANGED:
 
@@ -1650,9 +1650,9 @@ The maximum size of this Control's bounding rectangle. If set to a value greater
 - |void| **set_custom_minimum_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_custom_minimum_size**\ (\ )
 
-The minimum size of the node's bounding rectangle. If you set it to a value greater than ``(0, 0)``, the node's bounding rectangle will always have at least this size. Note that **Control** nodes have their internal minimum size returned by :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`. It depends on the control's contents, like text, textures, or style boxes. The actual minimum size is the maximum value of this property and the internal minimum size (see :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`).
+Le dimensioni minime del rettangolo di delimitazione del nodo. Se impostate su un valore maggiore di ``(0, 0)``, il rettangolo di delimitazione del nodo avrà sempre almeno questa dimensioni. Nota che i nodi **Control** hanno le loro dimensioni minime interne restituite da :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`. Dipende dal contenuto del controllo, come testo, texture o stylebox. Le dimensioni minime effettive sono il valore massimo di questa proprietà e le dimensioni minime interne (vedi :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`).
 
-\ **Note:** :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` has priority over this property. For example, if you set :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` to ``(200, 200)`` and :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` to ``(100, 100)``, the resulting size will be ``(100, 100)``.
+\ **Nota:** :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` ha la priorità su questa proprietà. Ad esempio, se si imposta :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` su ``(200, 200)`` e :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` su ``(100, 100)``, le dimensioni risultanti saranno ``(100, 100)``.
 
 .. rst-class:: classref-item-separator
 
@@ -2203,9 +2203,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_pivot_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_pivot_offset**\ (\ )
 
-By default, the node's pivot is its top-left corner. When you change its :ref:`rotation<class_Control_property_rotation>` or :ref:`scale<class_Control_property_scale>`, it will rotate or scale around this pivot.
+Normalmente, il perno del nodo è il suo angolo in alto a sinistra. Quando modifichi :ref:`rotation<class_Control_property_rotation>` o :ref:`scale<class_Control_property_scale>`, ruoterà o si scalerà attorno a questo perno.
 
-The actual offset is the combined value of this property and :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>`.
+L'offset effettivo è il valore combinato di questa proprietà e di :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2639,9 +2639,9 @@ Sovrascrivi questo metodo per restituire una descrizione leggibile in chiaro dal
 
 :ref:`int<class_int>` **_get_cursor_shape**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_cursor_shape>`
 
-Virtual method to be implemented by the user. Returns the cursor shape for the position ``at_position`` in the control's local coordinates, which will typically be used while hovering over this control. See :ref:`get_cursor_shape()<class_Control_method_get_cursor_shape>`.
+Metodo virtuale da implementare dall'utente. Restituisce la forma del cursore per la posizione ``at_position`` nelle coordinate locali del controllo, che servirà tipicamente al passaggio del cursore sopra questo controllo. Vedi :ref:`get_cursor_shape()<class_Control_method_get_cursor_shape>`.
 
-If not overridden, defaults to :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`.
+Se non sovrascritto, il valore predefinito è derivato da :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2690,13 +2690,13 @@ Un'anteprima che seguirà il mouse che dovrebbe rappresentare i dati può essere
 
 :ref:`Vector2<class_Vector2>` **_get_maximum_size**\ (\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_maximum_size>`
 
-Virtual method to be implemented by the user. Returns the maximum size for this control. Alternative to :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` for controlling maximum size via code. The actual maximum size will be the max value of these two (in each axis separately).
+Metodo virtuale da implementare dall'utente. Restituisce le dimensioni massime per questo controllo. Alternativa a :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` per regolare le dimensioni massime tramite codice. Le dimensioni massime effettive saranno il valore più alto tra i due (in ogni asse separatamente).
 
-If not overridden, defaults to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
+Se non sovrascritto, il valore predefinito è :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
 
-\ **Note:** This method will not be called when the script is attached to a **Control** node that already overrides its maximum size (e.g. :ref:`ScrollContainer<class_ScrollContainer>`).
+\ **Nota:** Questo metodo non verrà chiamato quando lo script è allegato a un nodo **Control** che sovrascrive già le sue dimensioni massime (ad esempio :ref:`ScrollContainer<class_ScrollContainer>`).
 
-\ **Note:** It is recommended to use :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` instead of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` when implementing this method, as the former respects maximum size limits when calculating the minimum size, while the latter does not.
+\ **Nota:** Si consiglia di utilizzare :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` anziché :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` quando si implementa questo metodo, poiché il primo rispetta i limiti di dimensioni massime per calcolare la dimensione minima, mentre il secondo no.
 
 .. rst-class:: classref-item-separator
 
@@ -2708,11 +2708,11 @@ If not overridden, defaults to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
 
 :ref:`Vector2<class_Vector2>` **_get_minimum_size**\ (\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_minimum_size>`
 
-Metodo virtuale da implementare dall'utente. Restituisce le dimensioni minime per questo controllo. Alternativa a :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` per regolare le dimensioni minime tramite codice. Le dimensioni minime effettive saranno i valori massimi tra i due (in ogni asse separatamente).
+Metodo virtuale da implementare dall'utente. Restituisce le dimensioni minime per questo controllo. Alternativa a :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` per regolare le dimensioni minime tramite codice. Le dimensioni minime effettive saranno il valore più alto tra i due (in ogni asse separatamente).
 
 Se non sovrascritto, il valore predefinito è :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
 
-\ **Nota:** Questo metodo non verrà chiamato quando lo script è collegato a un nodo **Control** che sovrascrive già le sue dimensioni minime (ad esempio :ref:`Label<class_Label>`, :ref:`Button<class_Button>`, :ref:`PanelContainer<class_PanelContainer>`, ecc.). Può essere utilizzato solo con la maggior parte dei nodi GUI basilari, come **Control**, :ref:`Container<class_Container>`, :ref:`Panel<class_Panel>`, ecc.
+\ **Nota:** Questo metodo non verrà chiamato quando lo script è allegato a un nodo **Control** che sovrascrive già le sue dimensioni minime (ad esempio :ref:`Label<class_Label>`, :ref:`Button<class_Button>`, :ref:`PanelContainer<class_PanelContainer>`, ecc.). Si può utilizzare soltanto con la maggior parte dei nodi GUI basilari, come **Control**, :ref:`Container<class_Container>`, :ref:`Panel<class_Panel>`, ecc.
 
 .. rst-class:: classref-item-separator
 
@@ -3231,9 +3231,9 @@ Returns the combined value of :ref:`pivot_offset<class_Control_property_pivot_of
 
 :ref:`CursorShape<enum_Control_CursorShape>` **get_cursor_shape**\ (\ at_position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const| :ref:`🔗<class_Control_method_get_cursor_shape>`
 
-Returns the mouse cursor shape for this control when hovered over ``at_position`` in local coordinates. For most controls, this is the same as :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`, but some built-in controls implement more complex logic.
+Restituisce la forma del cursore del mouse per questo controllo quando si passa il mouse sulla posizione ``position`` in coordinate locali. Per la maggior parte dei controlli, questo è uguale a :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`, ma alcuni controlli integrati implementano una logica più complessa.
 
-You can override :ref:`_get_cursor_shape()<class_Control_private_method__get_cursor_shape>` to implement custom behavior for this method.
+È possibile sovrascrivere :ref:`_get_cursor_shape()<class_Control_private_method__get_cursor_shape>` per implementare un comportamento personalizzato per questo metodo.
 
 .. rst-class:: classref-item-separator
 
@@ -3299,7 +3299,7 @@ Restituisce la posizione e la dimensione del controllo relativamente al canvas c
 
 :ref:`Vector2<class_Vector2>` **get_maximum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_maximum_size>`
 
-Returns the maximum size for this control. See :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>`.
+Restituisce le dimensioni massime per questo controllo. Vedi :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3387,17 +3387,17 @@ Restituisce la posizione e la dimensione del controllo nel sistema di coordinate
 
 :ref:`Vector2<class_Vector2>` **get_screen_position**\ (\ ) |const| :ref:`🔗<class_Control_method_get_screen_position>`
 
-Returns the position of this **Control** in global screen coordinates (i.e. taking window position into account). Mostly useful for editor plugins.
+Restituisce la posizione di questo **Control** nelle coordinate globali dello schermo (ossia tenendo conto della posizione della finestra). Utile soprattutto per le estensioni dell'editor.
 
-Equivalent to ``get_screen_transform().origin`` (see :ref:`CanvasItem.get_screen_transform()<class_CanvasItem_method_get_screen_transform>`).
+Equivalente a ``get_screen_transform().origin`` (vedi :ref:`CanvasItem.get_screen_transform()<class_CanvasItem_method_get_screen_transform>`).
 
-\ **Example:** Show a popup at the mouse position:
+\ **Esempio:** Mostra un popup alla posizione del mouse:
 
 ::
 
     popup_menu.position = get_screen_position() + get_screen_transform().basis_xform(get_local_mouse_position())
 
-    # The above code is equivalent to:
+    # Il codice precedente è equivalente a:
     popup_menu.position = get_screen_transform() * get_local_mouse_position()
 
     popup_menu.reset_size()
@@ -4151,9 +4151,9 @@ Se ``keep_offsets`` è ``true``, gli ancoraggi del controllo saranno aggiornati 
 
 |void| **update_maximum_size**\ (\ ) :ref:`🔗<class_Control_method_update_maximum_size>`
 
-Invalidates the maximum size cache in this node and in parent nodes up to top level. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
+Invalida la cache delle dimensioni massime in questo nodo e nei nodi padre fino al livello superiore. Pensato per essere utilizzato con :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` quando il valore restituito viene modificato. Impostare :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` richiama questo metodo automaticamente.
 
-\ **Note:** Calling this method also calls :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` since the combined minimum size may be affected by the maximum size change.
+\ **Nota:** Chiamare questo metodo richiama anche :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` poiché le dimensioni minime combinate potrebbero essere influenzate dalla modifica delle dimensioni massime.
 
 .. rst-class:: classref-item-separator
 
@@ -4165,7 +4165,7 @@ Invalidates the maximum size cache in this node and in parent nodes up to top le
 
 |void| **update_minimum_size**\ (\ ) :ref:`🔗<class_Control_method_update_minimum_size>`
 
-Invalidates the minimum size cache in this node and in parent nodes up to top level. Intended to be used with :ref:`get_minimum_size()<class_Control_method_get_minimum_size>` when the return value is changed. Setting :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` directly calls this method automatically.
+Invalida la cache delle dimensioni minime in questo nodo e nei nodi padre fino al livello superiore. Pensato per essere utilizzato con :ref:`get_minimum_size()<class_Control_method_get_minimum_size>` quando il valore restituito viene modificato. Impostare :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` richiama questo metodo automaticamente.
 
 .. rst-class:: classref-item-separator
 

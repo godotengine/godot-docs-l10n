@@ -216,17 +216,17 @@ Tenta di elaborare la stringa in JSON ``json_string`` e restituisce i dati elabo
 
 :ref:`String<class_String>` **stringify**\ (\ data\: :ref:`Variant<class_Variant>`, indent\: :ref:`String<class_String>` = "", sort_keys\: :ref:`bool<class_bool>` = true, full_precision\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_JSON_method_stringify>`
 
-Converts a :ref:`Variant<class_Variant>` var to JSON text and returns the result. Useful for serializing data to store or send over the network.
+Converte una variabile :ref:`Variant<class_Variant>` in testo JSON e restituisce il risultato. Utile per serializzare i dati da archiviare o inviare in rete.
 
-\ **Note:** The JSON specification does not define integer or float types, but only a *number* type. Therefore, converting a Variant to JSON text will convert all numerical values to :ref:`float<class_float>` types.
+\ **Nota:** La specifica JSON non definisce i tipi intero o float, ma solo un tipo *numero*. Pertanto, la conversione di una variante in testo JSON convertirà tutti i valori numerici in tipi :ref:`float<class_float>`.
 
-\ **Note:** If ``full_precision`` is ``true``, when stringifying floats, the unreliable digits are stringified in addition to the reliable digits to guarantee exact decoding.
+\ **Nota:** Se ``full_precision`` è ``true``, quando si convertono i float in stringhe, le cifre inaffitabili sono convertite oltre alle cifre affidabili per garantire una decodifica esatta.
 
-The ``indent`` parameter controls if and how something is indented; its contents will be used where there should be an indent in the output. Even spaces like ``"   "`` will work. ``\t`` and ``\n`` can also be used for a tab indent, or to make a newline for each indent respectively.
+Il parametro ``indent`` controlla se e come qualcosa è indentato; il suo contenuto verrà utilizzato dove dovrebbe esserci un rientro nel risultato. Anche spazi come ``" "`` funzioneranno. ``\t`` e ``\n`` possono anche essere utilizzati per un rientro con tabulazione o per creare una nuova riga per ogni rientro, rispettivamente.
 
-\ **Warning:** Non-finite numbers are not supported in JSON. Any occurrences of :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``1e99999``, and negative :ref:`@GDScript.INF<class_@GDScript_constant_INF>` will be replaced with ``-1e99999``, but they will be interpreted correctly as infinity by most JSON parsers. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` will be replaced with ``null``, and it will not be interpreted as NaN in JSON parsers. If you expect non-finite numbers, consider passing your data through :ref:`from_native()<class_JSON_method_from_native>` first.
+\ **Attenzione:** I numeri non finiti non sono supportati in JSON. Qualsiasi occorrenza di :ref:`@GDScript.INF<class_@GDScript_constant_INF>` sarà sostituita con ``1e99999``, e :ref:`@GDScript.INF<class_@GDScript_constant_INF>` negativo sarà sostituito con ``-1e99999``, ma saranno interpretati correttamente come infiniti dalla maggior parte dei parser JSON. :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` sarà sostituito con ``null`` e non sarà interpretato come NaN nei parser JSON. Se si prevedono numeri non finiti, si consiglia di passare prima i dati attraverso :ref:`from_native()<class_JSON_method_from_native>`.
 
-\ **Example output:**\ 
+\ **Esempio di risultato:**\ 
 
 ::
 

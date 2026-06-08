@@ -63,7 +63,7 @@ This method is generally not needed, and only used to force the subsequent call 
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_host**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_StreamPeerUDS_method_connect_to_host>`
 
-Connects to the specified UNIX Domain Socket path. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success.
+Si connette al percorso specificato del socket di dominio UNIX. Restituisce :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` in caso di successo.
 
 .. rst-class:: classref-item-separator
 

@@ -14,11 +14,11 @@ Un feed della telecamera ti dà accesso a una singola telecamera fisica collegat
 Descrizione
 ----------------------
 
-A camera feed gives you access to a single physical camera attached to your device. When enabled, Godot will start capturing frames from the camera which can then be used. See also :ref:`CameraServer<class_CameraServer>`.
+Un feed di fotocamera dà accesso a una singola fotocamera fisica collegata al un dispositivo. Quando abilitato, Godot inizierà a catturare fotogrammi dalla fotocamera da poi utilizzare. Vedi anche :ref:`CameraServer<class_CameraServer>`.
 
-\ **Note:** Many cameras will return YCbCr images which are split into two textures and need to be combined in a shader. Godot does this automatically for you if you set the environment to show the camera image in the background.
+\ **Nota:** Molte fotocamere restituiscono immagini in YCbCr che sono divise in due texture e che devono essere combinate in uno shader. Godot fa ciò automaticamente se l'ambiente è impostato per mostrare l'immagine della fotocamera nello sfondo.
 
-\ **Note:** This class is currently only implemented on Linux, Android, macOS, and iOS. On other platforms no **CameraFeed**\ s will be available. To get a **CameraFeed** on iOS, enable :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`.
+\ **Nota:** Questa classe è attualmente implementata solo su Linux, Android, macOS e iOS. Su altre piattaforme i **CameraFeed** non saranno disponibili. Per ottenere un **CameraFeed** su iOS, abilita :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`.
 
 .. rst-class:: classref-reftable-group
 

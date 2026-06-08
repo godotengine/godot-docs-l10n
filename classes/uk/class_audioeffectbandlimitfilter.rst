@@ -7,16 +7,16 @@ AudioEffectBandLimitFilter
 
 **Успадковує:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a band-limit filter to an audio bus.
+Додає фільтр обмеження смуги пропускання до аудіошини.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-A "band-limit" filter attenuates the frequencies at :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, and allows frequencies outside the frequency threshold to pass unchanged. It is a wider and weaker version of :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`, and is the opposite of :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
+Фільтр «смуговий» (band-limit) ослаблює частоти на рівні :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` і пропускає без змін частоти, що знаходяться за межами цього частотного порогу. Це більш широка та слабша версія фільтра :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>` і протилежність фільтру :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
 
-This filter can be used to give more room for other sounds to play at that frequency.
+Цей фільтр можна використовувати, щоб звільнити місце для відтворення інших звуків на цій частоті.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ This filter can be used to give more room for other sounds to play at that frequ
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Аудіоефекти <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

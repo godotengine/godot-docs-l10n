@@ -391,7 +391,7 @@ Constructs a new **Quaternion** from the given :ref:`Vector3<class_Vector3>` of 
 
 Renvoie l'angle de la rotation représentée par ce quaternion.
 
-\ **Note:** Le quaternion doit être normalisé.
+\ **Note :** Le quaternion doit être normalisé.
 
 .. rst-class:: classref-item-separator
 

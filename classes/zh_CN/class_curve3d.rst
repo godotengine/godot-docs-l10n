@@ -168,9 +168,9 @@ Curve3D
 
 :ref:`Vector3<class_Vector3>` **point_{index}/in** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/in>`
 
-The position of the control point leading to the vertex at ``index``.
+通向 ``index`` 处顶点的那个控制点的位置。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值范围是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -182,9 +182,9 @@ The position of the control point leading to the vertex at ``index``.
 
 :ref:`Vector3<class_Vector3>` **point_{index}/out** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/out>`
 
-The position of the control point leading out of the vertex at ``index``.
+从 ``index`` 处顶点引出的那个控制点的位置。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值范围是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -196,9 +196,9 @@ The position of the control point leading out of the vertex at ``index``.
 
 :ref:`Vector3<class_Vector3>` **point_{index}/position** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/position>`
 
-The position of for the vertex at ``index``.
+位于 ``index`` 处的那个顶点的位置。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值范围是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -210,9 +210,9 @@ The position of for the vertex at ``index``.
 
 :ref:`float<class_float>` **point_{index}/tilt** = ``0.0`` :ref:`🔗<class_Curve3D_property_point_{index}/tilt>`
 
-The tilt angle in radians for the point at ``index``.
+“位于 ``index`` 处那个点的倾斜角度（以弧度为单位）。
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **注意：** ``index`` 的取值范围是 ``0 到 point_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 

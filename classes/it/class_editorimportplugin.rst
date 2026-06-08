@@ -212,9 +212,9 @@ If not overridden, returns ``false``.
 
 :ref:`int<class_int>` **_get_format_version**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_format_version>`
 
-Gets the format version of this importer. Increment this version when making incompatible changes to the format of the imported resources.
+Ottiene la versione del formato di questo importatore. Incrementa questa versione quando si apportano modifiche incompatibili al formato delle risorse importate.
 
-If not overridden, the format version is ``0``.
+Se non sovrascritto, la versione del formato è ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -301,9 +301,9 @@ Determina se bisogna mostrare l'opzione di importazione specificata da ``option_
 
 :ref:`int<class_int>` **_get_preset_count**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_preset_count>`
 
-Gets the number of initial presets defined by the plugin. Use :ref:`_get_import_options()<class_EditorImportPlugin_private_method__get_import_options>` to get the default options for the preset and :ref:`_get_preset_name()<class_EditorImportPlugin_private_method__get_preset_name>` to get the name of the preset.
+Ottiene il numero di preimpostazioni iniziali definite dalle estensioni. Usa :ref:`_get_import_options()<class_EditorImportPlugin_private_method__get_import_options>` per ottenere le opzioni predefinite per la preimpostazione e :ref:`_get_preset_name()<class_EditorImportPlugin_private_method__get_preset_name>` per ottenere il nome della preimpostazione.
 
-By default, there are no presets.
+Normalmente, non ci sono preimpostazioni.
 
 .. rst-class:: classref-item-separator
 

@@ -891,7 +891,7 @@ If ``true``, this app will show in Android TV launcher UI.
 
 Si ``true``, cette application apparaîtra dans la bibliothèque d'applications de l'appareil.
 
-\ **Note:** Ceci est ``true`` par défaut.
+\ **Note :** Ceci vaut ``true`` par défaut.
 
 .. rst-class:: classref-item-separator
 

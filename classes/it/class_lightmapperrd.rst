@@ -14,9 +14,9 @@ Il lightmapper integrato basato su GPU da utilizzare con :ref:`LightmapGI<class_
 Descrizione
 ----------------------
 
-LightmapperRD ("RD" stands for :ref:`RenderingDevice<class_RenderingDevice>`) is the built-in GPU-based lightmapper for use with :ref:`LightmapGI<class_LightmapGI>`. On most dedicated GPUs, it can bake lightmaps much faster than most CPU-based lightmappers. LightmapperRD uses compute shaders to bake lightmaps, so it does not require CUDA or OpenCL libraries to be installed to be usable.
+LightmapperRD ("RD" sta per :ref:`RenderingDevice<class_RenderingDevice>`) è il lightmapper integrato basato su GPU per l'uso con :ref:`LightmapGI<class_LightmapGI>`. Sulla maggior parte delle GPU dedicate, può preparare le lightmap molto più velocemente della maggior parte dei lightmapper basati su CPU. LightmapperRD usa shader di calcolo per preparare le lightmap, quindi non richiede l'installazione di librerie CUDA o OpenCL per essere utilizzabile.
 
-\ **Note:** This lightmapper requires the GPU to support the :ref:`RenderingDevice<class_RenderingDevice>` backend (Forward+ and Mobile renderers). When using the Compatibility renderer, baking will use a temporary :ref:`RenderingDevice<class_RenderingDevice>`. Support for :ref:`RenderingDevice<class_RenderingDevice>` is not required to *render* lightmaps that were already baked beforehand.
+\ **Nota:** Questo lightmapper richiede che la GPU supporti il backend :ref:`RenderingDevice<class_RenderingDevice>` (renderer Forward+ e Mobile). Quando si utilizza il renderer Compatibilità, la preparazione delle lightmap utilizzerà un :ref:`RenderingDevice<class_RenderingDevice>` temporaneo. Il supporto per :ref:`RenderingDevice<class_RenderingDevice>` non è necessario per *renderizzare* lightmap già preparate in precedenza.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

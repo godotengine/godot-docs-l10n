@@ -273,7 +273,7 @@ enum **LoopMode**: :ref:`🔗<enum_AudioStreamWAV_LoopMode>`
 
 在游戏中，常用的采样率有 ``11025``\ 、\ ``16000``\ 、\ ``22050``\ 、\ ``32000``\ 、\ ``44100``\ 、\ ``48000``\ 。
 
-根据 `Nyquist-Shannon sampling theorem <https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem>`__ ，当超过 40000 赫兹时，人类的听觉没有质量上的差别（因为大多数人只能听到 ~20000 赫兹，往往更少）。如果你要使用语音等音高较低的声音，则可以使用 ``32000`` 或 ``22050`` 等较低的采样率，不会降低质量。
+根据\ `奈奎斯特–香农采样定理 <https://zh.wikipedia.org/wiki/%E9%87%87%E6%A0%B7%E5%AE%9A%E7%90%86>`__\ ，当超过 40000 赫兹时，人类的听觉没有质量上的差别（因为大多数人只能听到 ~20000 赫兹，往往更少）。如果你要使用语音等音高较低的声音，则可以使用 ``32000`` 或 ``22050`` 等较低的采样率，不会降低质量。
 
 .. rst-class:: classref-item-separator
 

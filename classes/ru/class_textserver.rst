@@ -2289,7 +2289,7 @@ Returns the array in the predefined color palette at ``index``. Palette contains
 
 :ref:`int<class_int>` **font_get_palette_count**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_palette_count>`
 
-Returns the number of predefined color palettes. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+Возвращает количество предопределенных цветовых палитр. Палитра содержит все цвета, используемые для отображения глифов шрифта. Каждая палитра содержит одинаковое количество цветов.
 
 .. rst-class:: classref-item-separator
 
@@ -2313,7 +2313,7 @@ Returns array of custom colors to override predefined palette.
 
 :ref:`String<class_String>` **font_get_palette_name**\ (\ font_rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_palette_name>`
 
-Returns the name of the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+Возвращает название предопределенной цветовой палитры по адресу ``index``. Палитра содержит все цвета, используемые для отображения глифов шрифта. Каждая палитра содержит одинаковое количество цветов.
 
 .. rst-class:: classref-item-separator
 

@@ -1289,7 +1289,7 @@ Archivo de icono de notificación en iPhone (3x DPI). Si se deja vacío, volver�
 
 :ref:`String<class_String>` **icons/notification_60x60_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60_dark>`
 
-Notification icon file on iPhone (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Archivo de icono de notificación en iPhone (3x DPI), versión oscura. Véase `Iconos de apps <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1301,7 +1301,7 @@ Notification icon file on iPhone (3x DPI), dark version. See `App icons <https:/
 
 :ref:`String<class_String>` **icons/notification_60x60_tinted** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_60x60_tinted>`
 
-Notification icon file on iPhone (3x DPI), tinted version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Archivo de icono de notificación en iPhone (3x DPI), versión tintada. Véase `Iconos de apps <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1349,7 +1349,7 @@ Archivo de icono de notificación en iPad y iPhone (2x DPI), versión tintada. V
 
 :ref:`String<class_String>` **icons/notification_114x114** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114>`
 
-Notification icon file on iPad and iPhone (3x DPI). If left empty, it will fallback to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Archivo de icono de notificación en iPad y iPhone (DPI 3x). Si se deja vacío, usará el valor de :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`. Véase `Iconos de App <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1361,7 +1361,7 @@ Notification icon file on iPad and iPhone (3x DPI). If left empty, it will fallb
 
 :ref:`String<class_String>` **icons/notification_114x114_dark** :ref:`🔗<class_EditorExportPlatformIOS_property_icons/notification_114x114_dark>`
 
-Notification icon file on iPad and iPhone (3x DPI), dark version. See `App icons <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
+Archivo de icono de notificación en iPad y iPhone (DPI 3x), versión oscura. Véase `Iconos de App <https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1529,7 +1529,7 @@ Spotlight icon file on iPad and iPhone (3x DPI), tinted version. See `App icons 
 
 :ref:`bool<class_bool>` **modules/camera** :ref:`🔗<class_EditorExportPlatformIOS_property_modules/camera>`
 
-If ``true``, :ref:`CameraServer<class_CameraServer>` module is added to the exported project.
+Si es ``true``, el módulo :ref:`CameraServer<class_CameraServer>` se añade al proyecto exportado.
 
 .. rst-class:: classref-item-separator
 
@@ -1541,7 +1541,7 @@ If ``true``, :ref:`CameraServer<class_CameraServer>` module is added to the expo
 
 :ref:`int<class_int>` **privacy/active_keyboard_access_reasons** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/active_keyboard_access_reasons>`
 
-The reasons your app use active keyboard API. See `Describing use of required reason API <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
+Las razones por las que tu app usa la API de teclado activo. Véase `Describir el uso de la API de motivos requeridos <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1589,7 +1589,7 @@ Indica si tu aplicación recopila datos publicitarios.
 
 :ref:`int<class_int>` **privacy/collected_data/advertising_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/advertising_data/collection_purposes>`
 
-The reasons your app collects advertising data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu app recopila datos publicitarios. Véase `Describir el uso de datos en los manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 

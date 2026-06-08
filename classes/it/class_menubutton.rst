@@ -136,9 +136,9 @@ The checkable item type of the item at ``index``.
 
 :ref:`bool<class_bool>` **popup/item_{index}/checked** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/checked>`
 
-If ``true``, the item at ``index`` is checked.
+Se ``true``, l'elemento all'indice ``index`` è spuntato.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso tra ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 

@@ -9,18 +9,18 @@ AudioEffectEQ
 
 **Наследуется от:** :ref:`AudioEffectEQ10<class_AudioEffectEQ10>`, :ref:`AudioEffectEQ21<class_AudioEffectEQ21>`, :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`
 
-Base class for audio equalizers (EQ). Gives you control over frequencies.
+Базовый класс для аудиоэквалайзеров (EQ). Предоставляет вам контроль над частотами.
 
-Use it to create a custom equalizer if :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`, :ref:`AudioEffectEQ10<class_AudioEffectEQ10>`, or :ref:`AudioEffectEQ21<class_AudioEffectEQ21>` don't fit your needs.
+Используйте его для создания пользовательского эквалайзера, если :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`, :ref:`AudioEffectEQ10<class_AudioEffectEQ10>` или :ref:`AudioEffectEQ21<class_AudioEffectEQ21>` не соответствуют вашим потребностям.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-An "equalizer" gives you control over the gain of frequencies in the entire spectrum, by allowing their adjustment through bands. A band is a point in the frequency spectrum, and each band means a division of the spectrum that can be adjusted.
+Эквалайзер позволяет управлять усилением частот во всем спектре, регулируя их по полосам. Полоса — это точка в частотном спектре, и каждая полоса представляет собой деление спектра, которое можно регулировать.
 
-Use equalizers to compensate for existing deficiencies in the audio, make room for other elements, or remove undesirable frequencies. AudioEffectEQs are useful on the Master bus to balance the entire mix or give it more character. They are also useful when a game is run on a mobile device, to adjust the mix to that kind of speakers (it can be disabled when headphones are plugged in).
+Используйте эквалайзеры для компенсации существующих недостатков в звуке, освобождения места для других элементов или удаления нежелательных частот. Эквалайзеры AudioEffectEQ полезны на мастер-шине для балансировки всего микса или придания ему большей выразительности. Они также полезны при запуске игры на мобильном устройстве, позволяя настроить микс под тип динамиков (их можно отключить при подключении наушников).
 
 .. rst-class:: classref-introduction-group
 
@@ -29,7 +29,7 @@ Use equalizers to compensate for existing deficiencies in the audio, make room f
 
 - :doc:`Аудиошины <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Звуковые эффекты <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 

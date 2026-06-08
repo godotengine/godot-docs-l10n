@@ -14,15 +14,15 @@ Un unità di esecuzione in un processo.
 Descrizione
 ----------------------
 
-A unit of execution in a process. Can run methods on :ref:`Object<class_Object>`\ s simultaneously. The use of synchronization via :ref:`Mutex<class_Mutex>` or :ref:`Semaphore<class_Semaphore>` is advised if working with shared objects.
+Un'unità di esecuzione in un processo. Può eseguire metodi sui :ref:`Object<class_Object>` simultaneamente. Si consiglia di utilizzare la sincronizzazione tramite :ref:`Mutex<class_Mutex>` o :ref:`Semaphore<class_Semaphore>` se si lavora con oggetti condivisi.
 
-\ **Warning:** To ensure proper cleanup without crashes or deadlocks, when a **Thread**'s reference count reaches zero and it is therefore destroyed, the following conditions must be met:
+\ **Avviso:** Per garantire una pulizia corretta senza crash o deadlock, quando il conteggio dei riferimenti di un **Thread** raggiunge zero e viene quindi distrutto, devono essere soddisfatte le seguenti condizioni:
 
-- It must not have any :ref:`Mutex<class_Mutex>` objects locked.
+- Non deve avere alcun oggetto :ref:`Mutex<class_Mutex>` bloccato.
 
-- It must not be waiting on any :ref:`Semaphore<class_Semaphore>` objects.
+- Non deve essere in attesa di alcun oggetto :ref:`Semaphore<class_Semaphore>`.
 
-- :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>` should have been called on it.
+- Si sarebbe dovuto richiamare :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>` su di esso.
 
 .. rst-class:: classref-introduction-group
 

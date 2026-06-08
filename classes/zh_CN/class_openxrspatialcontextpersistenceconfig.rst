@@ -61,7 +61,7 @@ OpenXRSpatialContextPersistenceConfig
 
 :ref:`Array<class_Array>` **get_persistence_contexts**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialContextPersistenceConfig_method_get_persistence_contexts>`
 
-Gets the persistence context(s) (as :ref:`RID<class_RID>`\ s) received by :ref:`add_persistence_context()<class_OpenXRSpatialContextPersistenceConfig_method_add_persistence_context>`.
+获取由 :ref:`add_persistence_context()<class_OpenXRSpatialContextPersistenceConfig_method_add_persistence_context>` 方法接收到的持久化上下文（persistence context）（以 :ref:`RID<class_RID>` 的形式返回）。
 
 .. rst-class:: classref-item-separator
 

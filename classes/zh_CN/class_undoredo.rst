@@ -518,7 +518,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`bool<class_bool>` **redo**\ (\ ) :ref:`🔗<class_UndoRedo_method_redo>`
 
-Redo the last action. Returns ``false`` if there was no action to redo.
+重做上一步操作。如果没有可以重做的操作，则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ Redo the last action. Returns ``false`` if there was no action to redo.
 
 :ref:`bool<class_bool>` **undo**\ (\ ) :ref:`🔗<class_UndoRedo_method_undo>`
 
-Undo the last action. Returns ``false`` if there was no action to undo.
+撤销上一步操作。如果没有可以撤销的操作，则返回 ``false``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

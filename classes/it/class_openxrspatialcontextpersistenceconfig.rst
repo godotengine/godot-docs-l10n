@@ -49,7 +49,7 @@ Descrizioni dei metodi
 
 |void| **add_persistence_context**\ (\ persistence_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialContextPersistenceConfig_method_add_persistence_context>`
 
-Adds a persistence context to this configuration. You must add at least one persistence context to create a valid configuration. You can create a persistence context by calling :ref:`OpenXRSpatialAnchorCapability.create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>`.
+Aggiunge un contesto di persistenza a questa configurazione. È necessario aggiungere almeno un contesto di persistenza per creare una configurazione valida. È possibile creare un contesto di persistenza chiamando :ref:`OpenXRSpatialAnchorCapability.create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>`.
 
 .. rst-class:: classref-item-separator
 

@@ -455,9 +455,9 @@ DirAccess
 
 :ref:`String<class_String>` **get_drive_label**\ (\ idx\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_drive_label>`
 
-On Windows, returns the label of the drive (partition) passed as an argument.
+У Windows повертає мітку диска (розділу), передану як аргумент.
 
-On other platforms, or if the requested drive does not exist, returns an empty String.
+На інших платформах або якщо запитуваний диск не існує, повертає порожній рядок.
 
 .. rst-class:: classref-item-separator
 
@@ -469,15 +469,15 @@ On other platforms, or if the requested drive does not exist, returns an empty S
 
 :ref:`String<class_String>` **get_drive_name**\ (\ idx\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_drive_name>`
 
-On Windows, returns the name of the drive (partition) passed as an argument (e.g. ``C:``).
+У Windows повертає ім'я диска (розділу), передане як аргумент (наприклад, ``C:``).
 
-On macOS, returns the path to the mounted volume passed as an argument.
+У macOS повертає шлях до підключеного тома, переданого як аргумент.
 
-On Linux, returns the path to the mounted volume or GTK 3 bookmark passed as an argument.
+У Linux повертає шлях до підключеного тома або закладки GTK 3, переданої як аргумент.
 
-On Android (API level 30+), returns the path to the mounted volume as an argument.
+У Android (рівень API 30+) повертає шлях до підключеного тома як аргумент.
 
-On other platforms, or if the requested drive does not exist, returns an empty String.
+На інших платформах або якщо запитуваний диск не існує, повертає порожній рядок.
 
 .. rst-class:: classref-item-separator
 

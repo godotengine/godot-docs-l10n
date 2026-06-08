@@ -434,7 +434,7 @@ This method runs faster than :ref:`distance_to()<class_Vector3i_method_distance_
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_distance_to>`
 
-Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+Devuelve la `distancia euclidiana <https://en.wikipedia.org/wiki/Euclidean_distance>`__ entre este vector y ``to``.
 
 .. rst-class:: classref-item-separator
 

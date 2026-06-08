@@ -271,9 +271,9 @@ Emesso quando si clicca su una scheda, anche se è la scheda attuale.
 
 **tab_close_pressed**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_close_pressed>`
 
-Emitted when a tab's close button is pressed or, if :ref:`close_with_middle_mouse<class_TabBar_property_close_with_middle_mouse>` is ``true``, when middle-clicking on a tab.
+Emesso quando si preme il pulsante di chiusura di una scheda oppure, se :ref:`close_with_middle_mouse<class_TabBar_property_close_with_middle_mouse>` è ``true``, quando si clicca con il pulsante centrale su una scheda.
 
-\ **Note:** Tabs are not removed automatically; this behavior needs to be coded manually. For example:
+\ **Nota:** Le schede non vengono rimosse automaticamente; questo comportamento deve essere programmato manualmente. Ad esempio:
 
 
 .. tabs::

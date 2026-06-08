@@ -199,7 +199,7 @@ enum **ScrollMode**: :ref:`🔗<enum_ScrollContainer_ScrollMode>`
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_MAXIMIZE_FIRST** = ``5``
 
-Behaves like :ref:`SCROLL_MODE_AUTO<class_ScrollContainer_constant_SCROLL_MODE_AUTO>`, but makes the **ScrollContainer** report a minimum size based on its content (limited by :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` when set on the corresponding axis). This allows it to grow first and only start scrolling once constrained.
+其行为类似于 :ref:`SCROLL_MODE_AUTO<class_ScrollContainer_constant_SCROLL_MODE_AUTO>`\ ，但会使 **ScrollContainer** 根据其内容报告一个最小尺寸（受对应轴向上设置的 :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` 限制）。这允许容器优先扩展自身，仅在空间受限时才开始出现滚动条。
 
 .. rst-class:: classref-item-separator
 
@@ -374,9 +374,9 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ScrollContainer_ScrollHintMode>`
 - |void| **set_scroll_horizontal_by_default**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_horizontal_by_default**\ (\ )
 
-If ``true``, the mouse wheel scrolls the view horizontally, and holding :kbd:`Shift` scrolls vertically.
+如果设置为 ``true``\ ，鼠标滚轮将水平滚动视图，而按住 :kbd:`Shift` 键则进行垂直滚动。
 
-If ``false`` (default), the mouse wheel scrolls the view vertically, and holding :kbd:`Shift` scrolls horizontally.
+如果设置为 ``false``\ （默认），鼠标滚轮将垂直滚动视图，而按住 :kbd:`Shift` 键则进行水平滚动。
 
 .. rst-class:: classref-item-separator
 

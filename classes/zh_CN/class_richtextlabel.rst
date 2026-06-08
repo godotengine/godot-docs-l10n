@@ -610,7 +610,7 @@ flags **ImageUpdateMask**: :ref:`🔗<enum_RichTextLabel_ImageUpdateMask>`
 
 :ref:`ImageUpdateMask<enum_RichTextLabel_ImageUpdateMask>` **UPDATE_WIDTH_UNIT** = ``128``
 
-If this bit is set, :ref:`update_image()<class_RichTextLabel_method_update_image>` changes the units used to calculate image size.
+如果设置了该位，\ :ref:`update_image()<class_RichTextLabel_method_update_image>` 将会改变用于计算图像尺寸的单位。
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +628,7 @@ enum **ImageUnit**: :ref:`🔗<enum_RichTextLabel_ImageUnit>`
 
 :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` **IMAGE_UNIT_PIXEL** = ``0``
 
-Images drawn with this unit will be in pixels.
+使用该单位绘制的图像将以像素为单位。
 
 .. _class_RichTextLabel_constant_IMAGE_UNIT_PERCENT:
 
@@ -636,7 +636,7 @@ Images drawn with this unit will be in pixels.
 
 :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` **IMAGE_UNIT_PERCENT** = ``1``
 
-Images drawn with this unit will be in percentages of the control width.
+使用该单位绘制的图像，其尺寸将以控件宽度的百分比来计算。
 
 .. _class_RichTextLabel_constant_IMAGE_UNIT_EM:
 
@@ -644,7 +644,7 @@ Images drawn with this unit will be in percentages of the control width.
 
 :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` **IMAGE_UNIT_EM** = ``2``
 
-Images drawn with this unit will be in percentages of the surrounding font size.
+使用该单位绘制的图像，其尺寸将以周围字体大小的百分比来计算。
 
 .. rst-class:: classref-section-separator
 
@@ -666,9 +666,9 @@ Images drawn with this unit will be in percentages of the surrounding font size.
 - |void| **set_autowrap_mode**\ (\ value\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )
 - :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ )
 
-If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, the text gets wrapped inside the node's bounding rectangle.
+如果设置为非 :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>` 的值，文本将在节点的边界矩形内进行换行。
 
-\ **Note:** RichTextLabels with autowrapping and :ref:`fit_content<class_RichTextLabel_property_fit_content>` enabled must have a custom maximum width configured to work correctly, either through the RichTextLabel's own :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` or as a result of a propagated maximum size from a parent Control with :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` enabled.
+\ **注意：** 对于启用了自动换行和 :ref:`fit_content<class_RichTextLabel_property_fit_content>` 的 RichTextLabel，必须配置自定义的最大宽度才能正常工作。这可以通过 RichTextLabel 自身的 :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` 属性设置，或者由启用了 :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` 的父级 Control 控件传递最大尺寸来实现。
 
 .. rst-class:: classref-item-separator
 
@@ -791,9 +791,9 @@ If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_co
 - |void| **set_fit_content**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_enabled**\ (\ )
 
-If ``true``, the label's minimum size will be automatically updated to fit its content, matching the behavior of :ref:`Label<class_Label>`.
+如果设置为 ``true``\ ，则标签的最小尺寸将自动更新以适应其内容，从而匹配 :ref:`Label<class_Label>` 控件的行为。
 
-\ **Note:** RichTextLabels with autowrapping and :ref:`fit_content<class_RichTextLabel_property_fit_content>` enabled must have a custom maximum width configured to work correctly, either through the RichTextLabel's own :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` or as a result of a propagated maximum size from a parent Control with :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` enabled.
+\ **注意：** 对于启用了自动换行和 :ref:`fit_content<class_RichTextLabel_property_fit_content>` 的 RichTextLabel，必须配置自定义的最大宽度才能正常工作。这可以通过 RichTextLabel 自身的 :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` 属性设置，或者由启用了 :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` 的父级 Control 控件传递最大尺寸来实现。
 
 .. rst-class:: classref-item-separator
 
@@ -1212,19 +1212,19 @@ If ``true``, the label's minimum size will be automatically updated to fit its c
 
 |void| **add_image**\ (\ image\: :ref:`Texture2D<class_Texture2D>`, width\: :ref:`float<class_float>` = 0, height\: :ref:`float<class_float>` = 0, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), inline_align\: :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` = 5, region\: :ref:`Rect2<class_Rect2>` = Rect2(0, 0, 0, 0), key\: :ref:`Variant<class_Variant>` = null, pad\: :ref:`bool<class_bool>` = false, tooltip\: :ref:`String<class_String>` = "", width_unit\: :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` = 0, height_unit\: :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` = 0, alt_text\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_RichTextLabel_method_add_image>`
 
-Adds an image's opening and closing tags to the tag stack, optionally providing a ``width`` and ``height`` to resize the image, a ``color`` to tint the image and a ``region`` to only use parts of the image.
+向标签堆栈中添加一张图片的起始和结束标签。你可以选择性地提供 ``width``\ （宽度）和 ``height``\ （高度）来调整图片大小，提供 ``color``\ （颜色）来给图片着色，或者提供 ``region``\ （区域）来只使用图片的某一部分。
 
-If ``width`` or ``height`` is set to 0, the image size will be adjusted in order to keep the original aspect ratio.
+如果 ``width`` 或 ``height`` 被设为 0，图片的对应尺寸将会被自动调整，以保持原始的宽高比。
 
-If ``width`` and ``height`` are not set, but ``region`` is, the region's rect will be used.
+如果 ``width`` 和 ``height`` 都没有设置，但是设置了 ``region``\ ，那么将直接使用区域矩形的大小。
 
-\ ``key`` is an optional identifier, that can be used to modify the image via :ref:`update_image()<class_RichTextLabel_method_update_image>`.
+\ ``key`` 是一个可选的标识符，可以通过 :ref:`update_image()<class_RichTextLabel_method_update_image>` 方法来利用它修改这张图片。
 
-If ``pad`` is set, and the image is smaller than the size specified by ``width`` and ``height``, the image padding is added to match the size instead of upscaling.
+如果 ``pad`` 设为开启，且图片的实际尺寸小于 ``width`` 和 ``height`` 指定的大小，将会通过添加内边距（padding）的方式来匹配指定大小，而不是强行拉伸放大图片。
 
-Parameters ``width_unit`` and ``height_unit`` determine the units used to calculate the image width and height, respectively.
+参数 ``width_unit`` 和 ``height_unit`` 分别决定了计算图片宽度和高度时所使用的单位。
 
-\ ``alt_text`` is used as the image description for assistive apps.
+\ ``alt_text`` 用于作为图片的文字描述，方便辅助功能应用（如屏幕阅读器）读取。
 
 .. rst-class:: classref-item-separator
 

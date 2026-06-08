@@ -89,7 +89,7 @@ ResourceImporterSVG
 
 :ref:`bool<class_bool>` **fix_alpha_border** = ``false`` :ref:`🔗<class_ResourceImporterSVG_property_fix_alpha_border>`
 
-If ``true``, puts pixels of the same surrounding color in transition from transparent to opaque areas. For textures displayed with bilinear filtering, this helps to reduce the outline effect when exporting images from an image editor.
+如果设为 ``true``\ ，它会在从透明到不透明的过渡区域，填充周围相同颜色的像素。对于使用双线性过滤（bilinear filtering）显示的纹理，这有助于减少从图像编辑器导出图片时产生的边缘轮廓效应。
 
 .. rst-class:: classref-item-separator
 
@@ -101,11 +101,11 @@ If ``true``, puts pixels of the same surrounding color in transition from transp
 
 :ref:`bool<class_bool>` **premult_alpha** = ``false`` :ref:`🔗<class_ResourceImporterSVG_property_premult_alpha>`
 
-An alternative to fixing darkened borders with :ref:`fix_alpha_border<class_ResourceImporterSVG_property_fix_alpha_border>` is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. A premultiplied alpha texture requires specific materials to be displayed correctly:
+除了使用 :ref:`fix_alpha_border<class_ResourceImporterSVG_property_fix_alpha_border>` 来修复发黑的边缘，另一种替代方案是使用预乘 Alpha（premultiplied alpha）。启用此选项后，纹理会被自动转换成这种格式。不过，预乘 Alpha 纹理需要配合特定的材质才能正确显示：
 
-- In 2D, a :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` will need to be created and configured to use the :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on :ref:`CanvasItem<class_CanvasItem>`\ s that use this texture. In custom ``canvas_item`` shaders, ``render_mode blend_premul_alpha;`` should be used.
+- 在 2D 中：需要创建一个 :ref:`CanvasItemMaterial<class_CanvasItemMaterial>`\ ，并在使用了该纹理的 :ref:`CanvasItem<class_CanvasItem>` 上，将其混合模式配置为 :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>`\ 。如果你使用的是自定义的 ``canvas_item`` 着色器，则需要在代码中加入 ``render_mode blend_premul_alpha;``\ 。
 
-- In 3D, a :ref:`BaseMaterial3D<class_BaseMaterial3D>` will need to be created and configured to use the :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on materials that use this texture. In custom ``spatial`` shaders, ``render_mode blend_premul_alpha;`` should be used.
+- 在 3D 中：需要创建一个 :ref:`BaseMaterial3D<class_BaseMaterial3D>`\ ，并在使用了该纹理的材质上，将其混合模式配置为 :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>`\ 。如果你使用的是自定义的 ``spatial`` 着色器，则需要在代码中加入 ``render_mode blend_premul_alpha;``\ 。
 
 .. rst-class:: classref-item-separator
 

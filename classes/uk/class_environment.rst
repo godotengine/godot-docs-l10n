@@ -444,9 +444,9 @@ enum **ToneMapper**: :ref:`🔗<enum_Environment_ToneMapper>`
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_FILMIC** = ``2``
 
-Uses a film-like tonemapping curve to prevent clipping of bright values and provide better contrast than :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`. Slightly slower than :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`.
+Використовує криву тонального маппінгу, що імітує плівку, щоб запобігти обрізанню яскравих значень і забезпечити кращий контраст, ніж :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`. Працює дещо повільніше, ніж :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`.
 
-\ **Note:** This tonemapper does not support HDR output because it produces output in the SDR range. It is recommended to use a different tonemapper when rendering to an HDR screen.
+\ **Примітка:** Цей тонометр не підтримує HDR-вивід, оскільки генерує вихідні дані в діапазоні SDR. Для рендерингу на HDR-екран рекомендується використовувати інший тонометр.
 
 .. _class_Environment_constant_TONE_MAPPER_ACES:
 
@@ -454,11 +454,11 @@ Uses a film-like tonemapping curve to prevent clipping of bright values and prov
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_ACES** = ``3``
 
-Uses a high-contrast film-like tonemapping curve and desaturates bright values for a more realistic appearance. Slightly slower than :ref:`TONE_MAPPER_FILMIC<class_Environment_constant_TONE_MAPPER_FILMIC>`.
+Використовує висококонтрастну криву тонального відображення, що імітує плівку, та зменшує насиченість світлих відтінків для досягнення більш реалістичного вигляду. Працює дещо повільніше, ніж :ref:`TONE_MAPPER_FILMIC<class_Environment_constant_TONE_MAPPER_FILMIC>`.
 
-\ **Note:** This tonemapping operator is called "ACES Fitted" in Godot 3.x.
+\ **Примітка:** Цей оператор тонального відображення у Godot 3.x називається «ACES Fitted».
 
-\ **Note:** This tonemapper does not support HDR output because it produces output in the SDR range. It is recommended to use a different tonemapper when rendering to an HDR screen.
+\ **Примітка:** Цей тонометр не підтримує HDR-вивід, оскільки генерує вихідні дані в діапазоні SDR. Для рендерингу на HDR-екран рекомендується використовувати інший тонометр.
 
 .. _class_Environment_constant_TONE_MAPPER_AGX:
 
@@ -492,7 +492,7 @@ enum **GlowBlendMode**: :ref:`🔗<enum_Environment_GlowBlendMode>`
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_SCREEN** = ``1``
 
-Adds the glow effect to the scene after modifying the glow influence based on the scene value; dark values will be highly influenced by glow and bright values will not be influenced by glow. This approach avoids bright values becoming overly bright from the glow effect. :ref:`tonemap_white<class_Environment_property_tonemap_white>` is used to determine the maximum scene value where the glow should have no influence. When :ref:`tonemap_mode<class_Environment_property_tonemap_mode>` is set to :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` and :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true``, the parent window's :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` will be used as the maximum scene value.
+Додає ефект світіння до сцени після коригування його впливу на основі значення сцени; на темні значення ефект світіння впливатиме сильно, а на світлі — майже не впливатиме. Такий підхід дозволяє уникнути надмірного освітлення світлих значень через ефект світіння. Параметр :ref:`tonemap_white<class_Environment_property_tonemap_white>` використовується для визначення максимального значення сцени, на яке ефект світіння не повинен впливати. Коли :ref:`tonemap_mode<class_Environment_property_tonemap_mode>` встановлено на :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>`, а :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` дорівнює ``true``, як максимальне значення сцени буде використовуватися :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` батьківського вікна.
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_SOFTLIGHT:
 
@@ -500,9 +500,9 @@ Adds the glow effect to the scene after modifying the glow influence based on th
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_SOFTLIGHT** = ``2``
 
-Adds the glow effect to the tonemapped image after modifying the glow influence based on the image value; dark values and bright values will not be influenced by glow and mid-range values will be highly influenced by glow. This approach avoids bright values becoming overly bright from the glow effect. The glow will have the largest influence on image values of ``0.25`` and will have no influence when applied to image values greater than ``1.0``.
+Додає ефект світіння до зображення з тональною корекцією після коригування інтенсивності світіння на основі значень зображення; на темні та світлі значення ефект світіння не впливатиме, тоді як на середні значення він впливатиме найсильніше. Такий підхід дозволяє уникнути надмірного освітлення світлих ділянок зображення внаслідок ефекту світіння. Світіння матиме найбільший вплив на значення зображення ``0.25`` і не матиме впливу при застосуванні до значень зображення, більших за ``1.0``.
 
-\ **Note:** This blend mode does not support HDR output because expects a maximum output value of ``1.0``. It is recommended to use a different blend mode when rendering to an HDR screen.
+\ **Примітка:** Цей режим накладання не підтримує HDR-вивід, оскільки очікує максимальне вихідне значення ``1.0``. Рекомендується використовувати інший режим накладання при візуалізації на HDR-екрані.
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_REPLACE:
 
@@ -617,9 +617,9 @@ enum **SDFGIYScale**: :ref:`🔗<enum_Environment_SDFGIYScale>`
 - |void| **set_adjustment_color_correction**\ (\ value\: :ref:`Texture<class_Texture>`\ )
 - :ref:`Texture<class_Texture>` **get_adjustment_color_correction**\ (\ )
 
-The :ref:`Texture2D<class_Texture2D>` or :ref:`Texture3D<class_Texture3D>` lookup table (LUT) to use for the built-in post-process color grading. Can use a :ref:`GradientTexture1D<class_GradientTexture1D>` for a 1-dimensional LUT, or a :ref:`Texture3D<class_Texture3D>` for a more complex LUT. Effective only if :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` is ``true``.
+Таблиця перегляду (LUT) :ref:`Texture2D<class_Texture2D>` або :ref:`Texture3D<class_Texture3D>`, яка використовується для вбудованої постобробки кольору. Для одновимірної LUT можна використовувати :ref:`GradientTexture1D<class_GradientTexture1D>`, а для більш складної LUT — :ref:`Texture3D<class_Texture3D>`. Діє лише в тому випадку, якщо значення :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` дорівнює ``true``.
 
-\ **Note:** Color correction does not currently support HDR output due to only supporting values in the SDR (0.0 to 1.0) range.
+\ **Примітка:** Корекція кольору наразі не підтримує HDR-вивід, оскільки підтримує лише значення в діапазоні SDR (від 0,0 до 1,0).
 
 .. rst-class:: classref-item-separator
 
@@ -2081,9 +2081,9 @@ Y для використання для SDFGI клітин. Низьке зна
 - |void| **set_tonemap_agx_white**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tonemap_agx_white**\ (\ )
 
-The white reference value for tonemapping, which indicates where bright white is located in the scale of values provided to the tonemapper. For photorealistic lighting, it is recommended to set :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` to at least ``6.0``. Higher values result in less blown out highlights, but may make the scene appear lower contrast. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` is the same as :ref:`tonemap_white<class_Environment_property_tonemap_white>`, but is only effective with the :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` tonemapper. See also :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
+Значення білого для тонового маппінгу, яке вказує, де на шкалі значень, що передається модулю тонового маппінгу, розташований яскравий білий колір. Для фотореалістичного освітлення рекомендується встановити для параметра :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` значення не менше ``6.0``. Більші значення призводять до меншої кількості пересвічених ділянок, але можуть зробити сцену менш контрастною. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` є таким самим, як :ref:`tonemap_white<class_Environment_property_tonemap_white>`, але діє лише з тонометром :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>`. Див. також :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
 
-\ **Note:** When using the Mobile renderer with :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` disabled, :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` is ignored and a white value of ``2.0`` will always be used instead. Otherwise, :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` will be dynamically adjusted at runtime by multiplying it by the parent window's :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` when using :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to ensure good behavior with both SDR and HDR output.
+\ **Примітка:** При використанні мобільного рендерера з вимкненим :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`, :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` ігнорується, і замість нього завжди буде використовуватися значення білого ``2.0``. В іншому випадку :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` буде динамічно коригуватися під час виконання шляхом множення на :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` батьківського вікна при використанні :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`, щоб забезпечити коректну роботу як з SDR, так і з HDR-виходом.
 
 .. rst-class:: classref-item-separator
 
@@ -2136,11 +2136,11 @@ The white reference value for tonemapping, which indicates where bright white is
 - |void| **set_tonemap_white**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tonemap_white**\ (\ )
 
-The white reference value for tonemapping, which indicates where bright white is located in the scale of values provided to the tonemapper. For photorealistic lighting, it is recommended to set :ref:`tonemap_white<class_Environment_property_tonemap_white>` to at least ``6.0``. Higher values result in less blown out highlights, but may make the scene appear lower contrast. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` will be used instead when using the :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` tonemapper. See also :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
+Значення білого для тонального маппінгу, яке вказує, де на шкалі значень, що передаються тональному мапперу, розташований яскравий білий колір. Для фотореалістичного освітлення рекомендується встановити значення :ref:`tonemap_white<class_Environment_property_tonemap_white>` не менше ``6.0``. Більші значення зменшують кількість переекспонованих світлих ділянок, але можуть призвести до зниження контрастності сцени. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` буде використовуватися замість цього при використанні тонального маппера :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>`. Див. також :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
 
-\ **Note:** :ref:`tonemap_white<class_Environment_property_tonemap_white>` must be set to ``2.0`` or lower on the Mobile renderer to produce bright images.
+\ **Примітка:** :ref:`tonemap_white<class_Environment_property_tonemap_white>` має бути встановлено на ``2.0`` або нижче на мобільному рендерері для створення яскравих зображень.
 
-\ **Note:** :ref:`tonemap_white<class_Environment_property_tonemap_white>` is ignored when using :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` and will be dynamically adjusted at runtime to never be less than the parent window's :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` when using :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>` with :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`.
+\ **Примітка:** :ref:`tonemap_white<class_Environment_property_tonemap_white>` ігнорується при використанні :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` і буде динамічно коригуватися під час виконання, щоб ніколи не бути меншим за :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` батьківського вікна при використанні :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>` з :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`.
 
 .. rst-class:: classref-item-separator
 

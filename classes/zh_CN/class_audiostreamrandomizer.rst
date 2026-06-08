@@ -7,7 +7,7 @@ AudioStreamRandomizer
 
 **继承：** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用音高和音量偏移，包装一个音频流池。
+封装了一个支持音高和音量偏移的音频流池。
 
 .. rst-class:: classref-introduction-group
 
@@ -197,9 +197,9 @@ enum **PlaybackMode**: :ref:`🔗<enum_AudioStreamRandomizer_PlaybackMode>`
 
 :ref:`AudioStream<class_AudioStream>` **stream_{index}/stream** :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/stream>`
 
-The :ref:`AudioStream<class_AudioStream>` at ``index``.
+位于 ``index`` 索引处的 :ref:`AudioStream<class_AudioStream>`\ （音频流）。
 
-\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+\ **注意：** ``index`` 的取值范围是 ``0 .. streams_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -211,9 +211,9 @@ The :ref:`AudioStream<class_AudioStream>` at ``index``.
 
 :ref:`float<class_float>` **stream_{index}/weight** = ``1.0`` :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/weight>`
 
-The probability weight of the :ref:`AudioStream<class_AudioStream>` at ``index``.
+位于 ``index`` 索引处的 :ref:`AudioStream<class_AudioStream>`\ （音频流）的概率权重。
 
-\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+\ **注意：** ``index`` 的取值范围是 ``0 .. streams_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ The probability weight of the :ref:`AudioStream<class_AudioStream>` at ``index``
 - |void| **set_streams_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_streams_count**\ (\ )
 
-流池中流的数量。
+音频流池中流的数量。
 
 .. rst-class:: classref-section-separator
 

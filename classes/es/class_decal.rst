@@ -192,7 +192,7 @@ Especifica en qué :ref:`VisualInstance3D.layers<class_VisualInstance3D_property
 - |void| **set_distance_fade_begin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_begin**\ (\ )
 
-The distance from the camera at which the Decal begins to fade away (in 3D units).
+La distancia desde la cámara a la que el Decal comienza a desvanecerse (en unidades 3D).
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ La distancia sobre la cual el Decal se desvanece (en unidades 3D). El Decal se v
 - |void| **set_emission_energy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_energy**\ (\ )
 
-Energy multiplier for the emission texture. This will make the decal emit light at a higher or lower intensity, independently of the albedo color. See also :ref:`modulate<class_Decal_property_modulate>`.
+Multiplicador de energía para la textura de emisión. Esto hará que el decal emita luz con una intensidad mayor o menor, independientemente del color del albedo. Véase también :ref:`modulate<class_Decal_property_modulate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ Energy multiplier for the emission texture. This will make the decal emit light 
 - |void| **set_lower_fade**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_lower_fade**\ (\ )
 
-Sets the curve over which the decal will fade as the surface gets further from the center of the :ref:`AABB<class_AABB>`. Only positive values are valid (negative values will be clamped to ``0.0``). See also :ref:`upper_fade<class_Decal_property_upper_fade>`.
+Establece la curva sobre la cual el Decal se desvanecerá a medida que la superficie se aleje del centro de la :ref:`AABB<class_AABB>`. Solo los valores positivos son válidos (los valores negativos se limitarán a ``0.0``). Véase también :ref:`upper_fade<class_Decal_property_upper_fade>`.
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Sets the curve over which the decal will fade as the surface gets further from t
 - |void| **set_modulate**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_modulate**\ (\ )
 
-Changes the :ref:`Color<class_Color>` of the Decal by multiplying the albedo and emission colors with this value. The alpha component is only taken into account when multiplying the albedo color, not the emission color. See also :ref:`emission_energy<class_Decal_property_emission_energy>` and :ref:`albedo_mix<class_Decal_property_albedo_mix>` to change the emission and albedo intensity independently of each other.
+Cambia el :ref:`Color<class_Color>` del Decal multiplicando los colores del albedo y la emisión por este valor. El componente alfa solo se tiene en cuenta al multiplicar el color del albedo, no el color de la emisión. Véase también :ref:`emission_energy<class_Decal_property_emission_energy>` y :ref:`albedo_mix<class_Decal_property_albedo_mix>` para cambiar la intensidad de la emisión y del albedo de forma independiente.
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ Sets the size of the :ref:`AABB<class_AABB>` used by the decal. All dimensions m
 - |void| **set_upper_fade**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_upper_fade**\ (\ )
 
-Sets the curve over which the decal will fade as the surface gets further from the center of the :ref:`AABB<class_AABB>`. Only positive values are valid (negative values will be clamped to ``0.0``). See also :ref:`lower_fade<class_Decal_property_lower_fade>`.
+Establece la curva sobre la que el Decal se desvanecerá a medida que la superficie se aleje del centro del :ref:`AABB<class_AABB>`. Solo los valores positivos son válidos (los valores negativos se limitarán a ``0.0``). Véase también :ref:`lower_fade<class_Decal_property_lower_fade>`.
 
 .. rst-class:: classref-section-separator
 

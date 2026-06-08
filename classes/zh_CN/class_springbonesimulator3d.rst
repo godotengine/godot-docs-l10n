@@ -14,21 +14,21 @@ SpringBoneSimulator3D
 描述
 ----
 
-This :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` can be used to wiggle hair, cloth, and tails. This modifier behaves differently from :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` as it attempts to return the original pose after modification.
+这个 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ （3D骨骼修改器）可以用来让头发、布料和尾巴等物体产生自然的晃动效果。它与 :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>`\ （物理骨骼模拟器）的表现有所不同，因为它在模拟物理晃动后，会尝试让骨骼回归到原本的姿势。
 
-If you setup :ref:`set_root_bone()<class_SpringBoneSimulator3D_method_set_root_bone>` and :ref:`set_end_bone()<class_SpringBoneSimulator3D_method_set_end_bone>`, it is treated as one bone chain. Note that it does not support a branched chain like Y-shaped chains.
+如果你设置了 :ref:`set_root_bone()<class_SpringBoneSimulator3D_method_set_root_bone>`\ （设置根骨骼）和 :ref:`set_end_bone()<class_SpringBoneSimulator3D_method_set_end_bone>`\ （设置末端骨骼），它们会被视为一条单一的骨骼链。请注意，它不支持像 Y 字形那样的分支骨骼链。
 
-When a bone chain is created, an array is generated from the bones that exist in between and listed in the joint list.
+当一条骨骼链被创建时，系统会生成一个数组，其中包含了介于根骨骼和末端骨骼之间、且列在关节列表中的所有骨骼。
 
-Several properties can be applied to each joint, such as :ref:`set_joint_stiffness()<class_SpringBoneSimulator3D_method_set_joint_stiffness>`, :ref:`set_joint_drag()<class_SpringBoneSimulator3D_method_set_joint_drag>`, and :ref:`set_joint_gravity()<class_SpringBoneSimulator3D_method_set_joint_gravity>`.
+你可以为每个关节应用多种物理属性，例如 :ref:`set_joint_stiffness()<class_SpringBoneSimulator3D_method_set_joint_stiffness>`\ （设置关节刚度/硬度）、\ :ref:`set_joint_drag()<class_SpringBoneSimulator3D_method_set_joint_drag>`\ （设置关节阻力/阻尼）以及 :ref:`set_joint_gravity()<class_SpringBoneSimulator3D_method_set_joint_gravity>`\ （设置关节重力）。
 
-For simplicity, you can set values to all joints at the same time by using a :ref:`Curve<class_Curve>`. If you want to specify detailed values individually, set :ref:`set_individual_config()<class_SpringBoneSimulator3D_method_set_individual_config>` to ``true``.
+为了简便起见，你可以通过一条 :ref:`Curve<class_Curve>`\ （曲线）来同时为所有关节设置数值。如果你想要单独为每个关节指定更详细的数值，可以将 :ref:`set_individual_config()<class_SpringBoneSimulator3D_method_set_individual_config>`\ （设置独立配置）设为 ``true``\ 。
 
-For physical simulation, **SpringBoneSimulator3D** can have children as self-standing collisions that are not related to :ref:`PhysicsServer3D<class_PhysicsServer3D>`, see also :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>`.
+在物理模拟方面，\ **SpringBoneSimulator3D** 可以拥有子节点作为独立的碰撞体，这些碰撞体与 :ref:`PhysicsServer3D<class_PhysicsServer3D>`\ （物理服务器3D）无关，具体可参考 :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>`\ （弹簧骨骼碰撞3D）。
 
-\ **Warning:** A scaled **SpringBoneSimulator3D** will likely not behave as expected. Make sure that the parent :ref:`Skeleton3D<class_Skeleton3D>` and its bones are not scaled.
+\ **警告：** 经过缩放（scaled）的 **SpringBoneSimulator3D** 很可能无法按预期运行。请确保其父节点 :ref:`Skeleton3D<class_Skeleton3D>` 以及它的骨骼都没有被缩放。
 
-\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **注意：** 该类中的大多数方法都带有一个 ``index``\ （索引）参数。如果 IK（反向动力学）有多个条目（例如 ``settings//root_bone_name``\ ），该参数用于指定要返回哪一个设置列表条目。
 
 .. rst-class:: classref-reftable-group
 
@@ -1146,13 +1146,13 @@ enum **CenterFrom**: :ref:`🔗<enum_SpringBoneSimulator3D_CenterFrom>`
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis>`
 
-Sets the rotation axis at ``joint`` in the bone chain's joint list when :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` is ``true``.
+当 :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>`\ （独立配置）为 ``true`` 时，此方法用于设置骨骼链关节列表里指定 ``joint``\ （关节）的旋转轴。
 
-The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+这些轴向是基于参考姿势的空间来确定的；如果 ``axis``\ （轴向）被设为 :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`\ （自定义旋转轴），你就可以指定任意轴向。
 
-In here, the reference pose is the bone pose immediately before the simulation.
+在这里，“参考姿势”指的是模拟开始前那一瞬间的骨骼姿势。
 
-\ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
+\ **注意：** 旋转轴和前进向量不应处于同一直线上（共线），否则会导致意外的旋转。这是因为 **SpringBoneSimulator3D**\ （弹簧骨骼模拟器）本身并不会计算扭转力。
 
 .. rst-class:: classref-item-separator
 
@@ -1242,13 +1242,13 @@ In here, the reference pose is the bone pose immediately before the simulation.
 
 |void| **set_rotation_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_rotation_axis>`
 
-Sets the rotation axis of the bone chain. If set to a specific axis, it acts like a hinge joint. The value is cached in each joint setting in the joint list.
+设置骨骼链的旋转轴。如果设置为特定轴，则其行为类似于铰链关节。该值会缓存在关节列表中的每个关节设置中。
 
-The axes are based on the reference pose's space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+坐标轴基于参考姿势的空间；如果\ ``参数轴``\ 为\ ``常量 SkeletonModifier3D.ROTATION_AXIS_CUSTOM``\ ，则您可以指定任意轴。
 
-In here, the reference pose is the bone pose immediately before the simulation.
+在此处，参考姿势是模拟前的骨骼 姿势姿势。
 
-\ **Note:** The rotation axis vector and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
+\ **注意：**\ 旋转轴向量与前向向量不应共线，以避免出现意外旋转，因为\ **SpringBoneSimulator3D**\ 不会考虑扭转力。
 
 .. rst-class:: classref-item-separator
 

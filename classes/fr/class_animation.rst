@@ -553,7 +553,7 @@ Renvoie ``true`` si la piste de capture est incluse. C'est une valeur en lecture
 
 La longueur totale de l’animation (en secondes).
 
-\ **Note:** Longueur n’est pas délimitée par la dernière clé, car celle-ci peut-être avant ou après la fin pour assurer une interpolation correcte et le bouclage.
+\ **Note :** La longueur n’est pas délimitée par la dernière clé, car celle-ci peut-être avant ou après la fin pour assurer une interpolation et un bouclage corrects.
 
 .. rst-class:: classref-item-separator
 

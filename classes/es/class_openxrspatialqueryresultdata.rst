@@ -49,7 +49,7 @@ Descripciones de Métodos
 
 :ref:`int<class_int>` **get_capacity**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialQueryResultData_method_get_capacity>`
 
-Returns the number of entities that were retrieved.
+Devuelve el número de entidades recuperadas.
 
 .. rst-class:: classref-item-separator
 

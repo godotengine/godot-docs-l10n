@@ -83,7 +83,7 @@ El enlace de la variable uniforme.
 - |void| **set_uniform_type**\ (\ value\: :ref:`UniformType<enum_RenderingDevice_UniformType>`\ )
 - :ref:`UniformType<enum_RenderingDevice_UniformType>` **get_uniform_type**\ (\ )
 
-The uniform's data type.
+El tipo de datos de la variable uniforme.
 
 .. rst-class:: classref-section-separator
 

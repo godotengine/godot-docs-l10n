@@ -470,9 +470,9 @@ Se ``true``, un eseguibile wrapper della console viene esportato insieme all'ese
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformWindows_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ and Mobile renderers.
+Se ``true``, gli shader saranno compilati e incorporati nell'applicazione. Questa opzione è supportata solo quando si utilizzano i renderer Forward+ e Mobile.
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **Nota:** Quando si esporta come server dedicato, lo shader baker è sempre disabilitato poiché nessun rendering viene eseguito.
 
 .. rst-class:: classref-item-separator
 

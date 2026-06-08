@@ -55,7 +55,7 @@ Proprietà
    +-------------------------------+--------------------------------------------------------------------------------------------------------------+-----------------------+
    | :ref:`Color<class_Color>`     | :ref:`stacked_shadow_{index}/color<class_LabelSettings_property_stacked_shadow_{index}/color>`               | ``Color(0, 0, 0, 1)`` |
    +-------------------------------+--------------------------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`Vector2<class_Vector2>` | :ref:`stacked_shadow_{index}/offset<class_LabelSettings_property_stacked_shadow_{index}/offset>`             | ``Vector2i(1, 1)``    |
+   | :ref:`Vector2<class_Vector2>` | :ref:`stacked_shadow_{index}/offset<class_LabelSettings_property_stacked_shadow_{index}/offset>`             | ``Vector2(1, 1)``     |
    +-------------------------------+--------------------------------------------------------------------------------------------------------------+-----------------------+
    | :ref:`int<class_int>`         | :ref:`stacked_shadow_{index}/outline_size<class_LabelSettings_property_stacked_shadow_{index}/outline_size>` | ``0``                 |
    +-------------------------------+--------------------------------------------------------------------------------------------------------------+-----------------------+
@@ -361,7 +361,7 @@ The color of the shadow at ``index``.
 
 .. rst-class:: classref-property
 
-:ref:`Vector2<class_Vector2>` **stacked_shadow_{index}/offset** = ``Vector2i(1, 1)`` :ref:`🔗<class_LabelSettings_property_stacked_shadow_{index}/offset>`
+:ref:`Vector2<class_Vector2>` **stacked_shadow_{index}/offset** = ``Vector2(1, 1)`` :ref:`🔗<class_LabelSettings_property_stacked_shadow_{index}/offset>`
 
 The offset of the shadow at ``index``.
 

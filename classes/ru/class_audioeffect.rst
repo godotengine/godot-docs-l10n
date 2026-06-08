@@ -16,9 +16,9 @@ AudioEffect
 Описание
 ----------------
 
-The base :ref:`Resource<class_Resource>` for every audio effect. In the editor, an audio effect can be added to the current bus layout through the Audio panel. At run-time, it is also possible to manipulate audio effects through :ref:`AudioServer.add_bus_effect()<class_AudioServer_method_add_bus_effect>`, :ref:`AudioServer.remove_bus_effect()<class_AudioServer_method_remove_bus_effect>`, and :ref:`AudioServer.get_bus_effect()<class_AudioServer_method_get_bus_effect>`.
+Базовый :ref:`Resource<class_Resource>` для каждого звукового эффекта. В редакторе звуковой эффект можно добавить к текущей схеме шины через панель «Аудио». Во время выполнения также можно управлять звуковыми эффектами с помощью :ref:`AudioServer.add_bus_effect()<class_AudioServer_method_add_bus_effect>`, :ref:`AudioServer.remove_bus_effect()<class_AudioServer_method_remove_bus_effect>` и :ref:`AudioServer.get_bus_effect()<class_AudioServer_method_get_bus_effect>`.
 
-When applied on a bus, an audio effect creates a corresponding :ref:`AudioEffectInstance<class_AudioEffectInstance>`. The instance is directly responsible for manipulating sound, based on the original audio effect's properties.
+При применении к шине звуковой эффект создает соответствующий :ref:`AudioEffectInstance<class_AudioEffectInstance>`. Этот экземпляр напрямую отвечает за управление звуком на основе свойств исходного звукового эффекта.
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ When applied on a bus, an audio effect creates a corresponding :ref:`AudioEffect
 
 - :doc:`Аудиошины <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Звуковые эффекты <../tutorials/audio/audio_effects>`
 
 - `Демонстрация записи аудио с микрофона <https://godotengine.org/asset-library/asset/2760>`__
 

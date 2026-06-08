@@ -2889,11 +2889,11 @@ EditorExportPlatformAndroid
 
 :ref:`Color<class_Color>` **splash_screen/background_color** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/background_color>`
 
-The background color used for the system splash screen window.
+Колір фону, що використовується для вікна заставного екрана системи.
 
-If not set, it will fallback to :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
+Якщо значення не вказано, буде використано значення за замовчуванням :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
 
-\ **Note:** This is only applied if :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` is enabled.
+\ **Примітка:** Цей параметр застосовується лише в тому випадку, якщо ввімкнено :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2905,9 +2905,9 @@ If not set, it will fallback to :ref:`launcher_icons/adaptive_background_432x432
 
 :ref:`String<class_String>` **splash_screen/branding_image** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/branding_image>`
 
-System splash screen branding image file. If left empty, no branding image will be used. See `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
+Файл зображення для брендингу заставного екрану системи. Якщо поле залишити порожнім, зображення для брендингу не буде використовуватися. Див. `розміри заставного екрану <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
 
-\ **Note:** Can be used to set an image to be shown at the bottom of the splash screen.
+\ **Примітка:** Може використовуватися для налаштування зображення, яке відображатиметься внизу заставного екрану.
 
 .. rst-class:: classref-item-separator
 
@@ -2919,7 +2919,7 @@ System splash screen branding image file. If left empty, no branding image will 
 
 :ref:`bool<class_bool>` **splash_screen/disable_godot_boot_splash** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/disable_godot_boot_splash>`
 
-If ``true``, Godot's boot splash will not be shown, and the system boot splash will remain visible for a longer time, until the mainloop starts.
+Якщо ``true``, заставка завантаження Godot не відображатиметься, а заставка завантаження системи залишатиметься на екрані довше — до запуску головного циклу.
 
 .. rst-class:: classref-item-separator
 
@@ -2931,9 +2931,9 @@ If ``true``, Godot's boot splash will not be shown, and the system boot splash w
 
 :ref:`String<class_String>` **splash_screen/icon** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/icon>`
 
-System splash screen icon file. If left empty, it will fall back to :ref:`launcher_icons/adaptive_foreground_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_foreground_432x432>`. See `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
+Файл іконки заставного екрану системи. Якщо поле залишити порожнім, система використає файл :ref:`launcher_icons/adaptive_foreground_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_foreground_432x432>`. Див. `розміри заставного екрану <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
 
-\ **Note:** You can provide an `AnimatedVectorDrawable (AVD) <https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable>`__ XML. However, the XML file will only be used if :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` is enabled. If not, it will fall back to :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
+\ **Примітка:** Ви можете надати XML-файл `AnimatedVectorDrawable (AVD) <https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable>`__. Однак XML-файл буде використано лише у разі, якщо увімкнено :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`. Якщо ні, буде використано :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
 
 .. rst-class:: classref-item-separator
 

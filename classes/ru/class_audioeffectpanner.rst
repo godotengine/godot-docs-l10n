@@ -7,18 +7,18 @@ AudioEffectPanner
 
 **Наследует:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a panner audio effect to an audio bus.
+Добавляет эффект панорамирования звука к аудиошине.
 
-Pans the sound left or right.
+Панорамирует звук влево или вправо.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Determines how much of the audio signal is sent to the left and right channels. This helps with audio spatialization, giving sounds distinct places in a mix.
+Определяет, какая часть аудиосигнала направляется в левый и правый каналы. Это помогает в пространственной обработке звука, выделяя звуки в миксе на отдельных участках.
 
-\ :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` and :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` handle panning automatically, following where the source of the sound is on the screen.
+\ :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` и :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` автоматически управляют панорамированием, следуя за местоположением источника звука на экране.
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ Determines how much of the audio signal is sent to the left and right channels. 
 
 - :doc:`Аудиошины <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Звуковые эффекты <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -61,7 +61,7 @@ Determines how much of the audio signal is sent to the left and right channels. 
 - |void| **set_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pan**\ (\ )
 
-Pan position. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
+Положение панорамирования. Отрицательные значения панорамируют звук влево, положительные — вправо. Значение может варьироваться от -1 до 1.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

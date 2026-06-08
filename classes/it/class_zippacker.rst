@@ -237,9 +237,9 @@ Questo deve essere chiamato prima di tutto il resto.
 
 :ref:`Error<enum_@GlobalScope_Error>` **start_file**\ (\ path\: :ref:`String<class_String>`, permissions\: |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\] = 420, modified_time\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ZIPPacker_method_start_file>`
 
-Starts writing to a file within the archive. Only one file can be written at the same time. If ``modified_time`` is set to ``0``, current system time is used.
+Inizia a scrivere in un file all'interno dell'archivio. Solamente un file può essere scritto allo stesso tempo. Se ``modified_time`` è impostato su ``0``, viene utilizzata l'ora attuale del sistema.
 
-Must be called after :ref:`open()<class_ZIPPacker_method_open>`.
+Deve essere chiamato dopo :ref:`open()<class_ZIPPacker_method_open>`.
 
 .. rst-class:: classref-item-separator
 

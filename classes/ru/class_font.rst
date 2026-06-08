@@ -245,9 +245,9 @@ Font
 
 :ref:`float<class_float>` **get_ascent**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_ascent>`
 
-Returns the maximum font ascent (number of pixels above the baseline) of this font and all fallback fonts.
+Возвращает максимальное значение подъема шрифта (количество пикселей над базовой линией) для данного шрифта и всех резервных шрифтов.
 
-\ **Note:** Real ascent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the ascent of empty line).
+\ **Примечание:** Реальный подъем строки зависит от контекста и может значительно отличаться от значения, возвращаемого этой функцией. Используйте его только в качестве приблизительной оценки (например, как подъем пустой строки).
 
 .. rst-class:: classref-item-separator
 
@@ -273,9 +273,9 @@ Returns the maximum font ascent (number of pixels above the baseline) of this fo
 
 :ref:`float<class_float>` **get_descent**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_descent>`
 
-Returns the maximum font descent (number of pixels below the baseline) of this font and all fallback fonts.
+Возвращает максимальное значение наклона шрифта (количество пикселей ниже базовой линии) для данного шрифта и всех резервных шрифтов.
 
-\ **Note:** Real descent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the descent of empty line).
+\ **Примечание:** Реальный наклон строки зависит от контекста и может значительно отличаться от значения, возвращаемого этой функцией. Используйте его только в качестве приблизительной оценки (например, как наклон пустой строки).
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ Returns the maximum font descent (number of pixels below the baseline) of this f
 
 :ref:`PackedColorArray<class_PackedColorArray>` **get_palette_colors**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Font_method_get_palette_colors>`
 
-Returns the array in the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors. Colors can be overridden using :ref:`FontVariation<class_FontVariation>`.
+Возвращает массив в предопределенной цветовой палитре по адресу ``index``. Палитра содержит все цвета, используемые для отображения глифов шрифта. Каждая палитра содержит одинаковое количество цветов. Цвета можно переопределить с помощью :ref:`FontVariation<class_FontVariation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ Returns the array in the predefined color palette at ``index``. Palette contains
 
 :ref:`int<class_int>` **get_palette_count**\ (\ ) |const| :ref:`🔗<class_Font_method_get_palette_count>`
 
-Returns the number of predefined color palettes. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+Возвращает количество предопределенных цветовых палитр. Палитра содержит все цвета, используемые для отображения глифов шрифта. Каждая палитра содержит одинаковое количество цветов.
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ Returns the number of predefined color palettes. Palette contains all colors use
 
 :ref:`String<class_String>` **get_palette_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Font_method_get_palette_name>`
 
-Returns the name of the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+Возвращает название предопределенной цветовой палитры по адресу ``index``. Палитра содержит все цвета, используемые для отображения глифов шрифта. Каждая палитра содержит одинаковое количество цветов.
 
 .. rst-class:: classref-item-separator
 

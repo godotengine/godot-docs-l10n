@@ -7,18 +7,18 @@ AudioEffectPanner
 
 **Успадковує:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a panner audio effect to an audio bus.
+Додає аудіоефект панорамування до аудіошини.
 
-Pans the sound left or right.
+Зміщує звук вліво або вправо.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Determines how much of the audio signal is sent to the left and right channels. This helps with audio spatialization, giving sounds distinct places in a mix.
+Визначає, яка частина аудіосигналу надходить на лівий і правий канали. Це сприяє просторовій локалізації звуку, надаючи звукам чітко визначені місця в міксі.
 
-\ :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` and :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` handle panning automatically, following where the source of the sound is on the screen.
+\ :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` та :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` автоматично регулюють панорамування, слідуючи за положенням джерела звуку на екрані.
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ Determines how much of the audio signal is sent to the left and right channels. 
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Аудіоефекти <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -61,7 +61,7 @@ Determines how much of the audio signal is sent to the left and right channels. 
 - |void| **set_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pan**\ (\ )
 
-Pan position. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
+Параметр панорамування. Негативні значення зміщують звук вліво, позитивні — вправо. Значення може коливатися в діапазоні від -1 до 1.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

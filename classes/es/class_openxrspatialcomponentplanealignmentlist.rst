@@ -59,7 +59,7 @@ El plano apunta hacia arriba.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_HORIZONTAL_DOWNWARD** = ``1``
 
-Plane is facing downwards.
+El plano apunta hacia abajo.
 
 .. _class_OpenXRSpatialComponentPlaneAlignmentList_constant_PLANE_ALIGNMENT_VERTICAL:
 
@@ -75,7 +75,7 @@ El plano está alineado verticalmente.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_ARBITRARY** = ``3``
 
-Plane has an arbitrary alignment.
+El plano tiene una alineación arbitraria.
 
 .. rst-class:: classref-section-separator
 

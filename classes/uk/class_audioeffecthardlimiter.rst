@@ -7,18 +7,18 @@ AudioEffectHardLimiter
 
 **Успадковує:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a limiter audio effect to an audio bus.
+Додає аудіоефект лімітера до аудіошини.
 
-Prevents audio signals from exceeding a specified volume level.
+Запобігає перевищенню аудіосигналами заданого рівня гучності.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-A "limiter" disallows audio signals from exceeding a given volume threshold level in dB. Hard limiters predict volume peaks, and will smoothly apply gain reduction when a peak crosses the ceiling threshold level to prevent clipping. It preserves the waveform and prevents it from crossing the ceiling threshold level. Adding one in the Master bus is recommended as a safety measure to prevent sudden volume peaks from occurring, and to prevent distortion caused by clipping, when the volume exceeds 0 dB.
+«Лімітер» не дозволяє аудіосигналам перевищувати заданий поріг гучності в дБ. «Жорсткі» лімітери прогнозують піки гучності та плавно зменшують підсилення, коли пік перевищує верхній поріг, щоб запобігти кліпінгу. Це зберігає форму сигналу та не дозволяє йому перевищувати верхній поріг. Рекомендується встановити лімітер на головній шині як запобіжний захід, щоб уникнути раптових стрибків гучності та запобігти спотворенням, спричиненим кліпінгом, коли гучність перевищує 0 дБ.
 
-If clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
+Якщо кліпінг бажаний, розгляньте :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ If clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_Aud
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Аудіоефекти <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -65,9 +65,9 @@ If clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_Aud
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-The waveform's maximum allowed value, in dB. This value can range from -24 to 0.
+Максимально допустиме значення амплітуди сигналу в дБ. Це значення може коливатися в діапазоні від -24 до 0.
 
-The default value of -0.3 prevents potential inter-sample peaks (ISP) from crossing over 0 dB, which can cause slight distortion on some older hardware.
+Значення за замовчуванням (-0,3) запобігає перевищенню потенційними міжвибірковими піками (ISP) рівня 0 дБ, що може спричинити незначні спотворення на деяких застарілих апаратних платформах.
 
 .. rst-class:: classref-item-separator
 
@@ -84,7 +84,7 @@ The default value of -0.3 prevents potential inter-sample peaks (ISP) from cross
 - |void| **set_pre_gain_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain_db**\ (\ )
 
-Gain before limiting, in dB. Value can range from -24 to 24.
+Коефіцієнт підсилення до обмеження, у дБ. Значення може коливатися в діапазоні від -24 до 24.
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ Gain before limiting, in dB. Value can range from -24 to 24.
 - |void| **set_release**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_release**\ (\ )
 
-Time it takes in seconds for the gain reduction to fully release. Value can range from 0.01 to 3.
+Час у секундах, необхідний для повного відновлення рівня посилення. Значення може коливатися в діапазоні від 0,01 до 3.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

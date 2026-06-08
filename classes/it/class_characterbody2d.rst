@@ -439,9 +439,9 @@ Vettore che punta verso l'alto, utilizzato per determinare cosa è un muro e cos
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-Current velocity vector in pixels per second, used and modified during calls to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`.
+Vettore di velocità attuale in pixel al secondo, utilizzato e modificato durante le chiamate a :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`.
 
-\ **Note:** A common mistake is setting this property to the desired velocity multiplied by ``delta``, which produces a motion vector in pixels.
+\ **Nota:** Un errore comune è impostare questa proprietà sulla velocità desiderata moltiplicata per ``delta``, il che produce un vettore di movimento in pixel.
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ Restituisce l'ultimo movimento applicato al **CharacterBody2D** durante l'ultima
 
 :ref:`KinematicCollision2D<class_KinematicCollision2D>` **get_last_slide_collision**\ (\ ) :ref:`🔗<class_CharacterBody2D_method_get_last_slide_collision>`
 
-Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>` if a collision occurred. The returned value contains information about the latest collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Returns ``null`` if no collision occurred. See also :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`.
+Restituisce un :ref:`KinematicCollision2D<class_KinematicCollision2D>` se è avvenuta una collisione. Il valore restituito contiene informazioni sull'ultima collisione avvenuta durante l'ultima chiamata a :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Restituisce ``null`` se nessuna collisione è avvenuta. Vedi anche :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`.
 
 .. rst-class:: classref-item-separator
 

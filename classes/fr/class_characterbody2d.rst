@@ -441,7 +441,7 @@ Vecteur pointant vers le haut, utilisé pour déterminer ce qui est un mur et ce
 
 Vecteur de vitesse actuel en pixels par seconde, utilisé et modifié pendant les appels à :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`.
 
-\ **Note:** Une erreur courante est de définir cette propriété à la vitesse souhaitée multipliée par ``delta``, qui produit un vecteur de mouvement en pixels.
+\ **Note :** Une erreur courante est de définir cette propriété à la vitesse souhaitée multipliée par ``delta``, ce qui produit un vecteur de mouvement en pixels.
 
 .. rst-class:: classref-item-separator
 

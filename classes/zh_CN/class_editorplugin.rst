@@ -204,7 +204,7 @@ EditorPlugin
 
 **main_screen_changed**\ (\ screen_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_signal_main_screen_changed>`
 
-Emitted when user changes the workspace (**2D**, **3D**, **Script**, **Game**, **Asset Store**). Also works with custom screens defined by plugins.
+当用户切换工作区（\ **2D**\ 、\ **3D**\ 、\ **脚本**\ 、\ **游戏**\ 、\ **资产商店**\ ）时触发。该信号同样适用于由插件定义的自定义屏幕。
 
 .. rst-class:: classref-item-separator
 
@@ -852,11 +852,11 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`Texture2D<class_Texture2D>` **_get_plugin_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_icon>`
 
-Override this method in your plugin to return a :ref:`Texture2D<class_Texture2D>` in order to give it an icon.
+在你的插件中重写此方法并返回一个 :ref:`Texture2D<class_Texture2D>`\ （2D纹理），就可以为你的插件设置一个图标。
 
-For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", "Game", and "Asset Store" buttons.
+对于主屏幕插件（Main Screen Plugins）来说，这个图标会显示在屏幕顶部的工具栏上，位于“2D”、“3D”、“脚本”、“游戏”和“资产商店”这些按钮的右侧。
 
-Ideally, the plugin icon should be white with a transparent background and 16×16 pixels in size.
+理想情况下，插件图标应该是带有透明背景的白色图案，且尺寸为 16×16 像素。
 
 
 .. tabs::
@@ -891,9 +891,9 @@ Ideally, the plugin icon should be white with a transparent background and 16×1
 
 :ref:`String<class_String>` **_get_plugin_name**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_name>`
 
-Override this method in your plugin to provide the name of the plugin when displayed in the Godot editor.
+在你的插件中重写此方法，以提供该插件在 Godot 编辑器中显示的名称。
 
-For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", "Game", and "Asset Store" buttons.
+对于主屏幕插件（Main Screen Plugins）来说，这个名称会显示在屏幕顶部的工具栏上，位于“2D”、“3D”、“脚本”、“游戏”和“资产商店”这些按钮的右侧。
 
 .. rst-class:: classref-item-separator
 
@@ -1001,11 +1001,11 @@ For main screen plugins, this appears at the top of the screen, to the right of 
 
 :ref:`bool<class_bool>` **_has_main_screen**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__has_main_screen>`
 
-Returns ``true`` if this is a main screen editor plugin (it goes in the workspace selector together with **2D**, **3D**, **Script**, **Game**, and **Asset Store**).
+如果这是一个主屏幕编辑器插件，则返回 ``true``\ （它会和工作区选择器里的 **2D**\ 、\ **3D**\ 、\ **脚本**\ 、\ **游戏** 以及 **资产商店** 排在一起）。
 
-When the plugin's workspace is selected, other main screen plugins will be hidden, but your plugin will not appear automatically. It needs to be added as a child of :ref:`EditorInterface.get_editor_main_screen()<class_EditorInterface_method_get_editor_main_screen>` and made visible inside :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>`.
+当该插件的工作区被选中时，其他主屏幕插件会被隐藏，但你的插件并不会自动显示出来。它需要被添加为 :ref:`EditorInterface.get_editor_main_screen()<class_EditorInterface_method_get_editor_main_screen>` 的子节点，并在 :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>` 方法中将其设置为可见。
 
-Use :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>` and :ref:`_get_plugin_icon()<class_EditorPlugin_private_method__get_plugin_icon>` to customize the plugin button's appearance.
+可以使用 :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>` 和 :ref:`_get_plugin_icon()<class_EditorPlugin_private_method__get_plugin_icon>` 来自定义插件按钮的外观。
 
 ::
 

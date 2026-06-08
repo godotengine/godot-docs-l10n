@@ -64,9 +64,9 @@ Descrizioni delle proprietà
 - |void| **set_auto_exposure_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_auto_exposure_enabled**\ (\ )
 
-If ``true``, enables the tonemapping auto exposure mode of the scene renderer. If ``true``, the renderer will automatically determine the exposure setting to adapt to the scene's illumination and the observed light.
+Se ``true``, abilita la modalità di esposizione automatica con mappatura dei toni del renderer di scene. Se ``true``, il renderer determinerà automaticamente il valore dell'esposizione per adattarsi all'illuminazione della scena e alla luce osservata.
 
-\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **Nota:** L'esposizione automatica è supportata solo nel metodo di rendering Forward+, non in Mobile o Compatibilità.
 
 .. rst-class:: classref-item-separator
 

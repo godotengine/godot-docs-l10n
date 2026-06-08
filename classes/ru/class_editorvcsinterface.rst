@@ -209,7 +209,7 @@ enum **TreeArea**: :ref:`🔗<enum_EditorVCSInterface_TreeArea>`
 
 :ref:`bool<class_bool>` **_allow_amends**\ (\ ) |virtual| :ref:`🔗<class_EditorVCSInterface_private_method__allow_amends>`
 
-Returns whether or not the plugin allows commit amends.
+Возвращает значение, указывающее, разрешает ли плагин внесение изменений в коммит.
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ Returns whether or not the plugin allows commit amends.
 
 |void| **_commit**\ (\ msg\: :ref:`String<class_String>`, amend\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorVCSInterface_private_method__commit>`
 
-Commits the currently staged changes and applies the commit ``msg`` to the resulting commit. If ``amend`` is ``true`` the commit will modify the most recent commit instead.
+Фиксирует текущие изменения в индексе и применяет коммит ``msg`` к результирующему коммиту. Если ``amend`` имеет значение ``true``, коммит изменит самый последний коммит.
 
 .. rst-class:: classref-item-separator
 

@@ -135,9 +135,9 @@ El número de puntos que describen la curva.
 
 :ref:`Vector2<class_Vector2>` **point_{index}/in** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve2D_property_point_{index}/in>`
 
-The position of the control point leading to the vertex at ``index``.
+La posición del punto de control que conduce al vértice en ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` es un valor en el rango ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -149,9 +149,9 @@ The position of the control point leading to the vertex at ``index``.
 
 :ref:`Vector2<class_Vector2>` **point_{index}/out** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve2D_property_point_{index}/out>`
 
-The position of the control point leading out of the vertex at ``index``.
+La posición del punto de control que sale del vértice en el ``índice``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** El ``índice`` es un valor en el rango de ``0 .. contar_puntos - 1``.
 
 .. rst-class:: classref-item-separator
 

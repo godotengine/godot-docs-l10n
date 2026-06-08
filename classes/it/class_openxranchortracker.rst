@@ -57,7 +57,7 @@ Segnali
 
 **uuid_changed**\ (\ ) :ref:`🔗<class_OpenXRAnchorTracker_signal_uuid_changed>`
 
-Emitted when the UUID for this anchor was changed.
+Emesso quando l'UUID per questo ancoraggio è stato cambiato.
 
 .. rst-class:: classref-section-separator
 
@@ -79,7 +79,7 @@ Descrizioni delle proprietà
 - |void| **set_uuid**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_uuid**\ (\ )
 
-The UUID provided for persistent anchors.
+L'UUID fornito per gli ancoraggi persistenti.
 
 .. rst-class:: classref-section-separator
 

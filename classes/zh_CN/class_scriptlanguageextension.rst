@@ -1215,7 +1215,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_ScriptLanguageExtension_CodeComplet
 
 |void| **_reload_scripts**\ (\ scripts\: :ref:`Array<class_Array>`, soft_reload\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_ScriptLanguageExtension_private_method__reload_scripts>`
 
-Reloads all ``scripts`` from disk and the specifics of how that happens is **ScriptLanguageExtension** specific.
+从磁盘重新加载所有 ``scripts``\ ，具体的行为细节取决于 **ScriptLanguageExtension** 的实现。
 
 .. rst-class:: classref-item-separator
 
@@ -1227,7 +1227,7 @@ Reloads all ``scripts`` from disk and the specifics of how that happens is **Scr
 
 |void| **_reload_tool_script**\ (\ script\: :ref:`Script<class_Script>`, soft_reload\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_ScriptLanguageExtension_private_method__reload_tool_script>`
 
-Reloads the given ``script`` from disk and the specifics of how that happens is **ScriptLanguageExtension** specific.
+从磁盘重新加载给定的 ``script``\ ，具体的行为细节取决于 **ScriptLanguageExtension** 的实现。
 
 .. rst-class:: classref-item-separator
 

@@ -151,7 +151,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` **DEEP_DUPLICATE_NONE** = ``0``
 
-No subresources at all are duplicated. This is useful even in a deep duplication to have all the arrays and dictionaries duplicated but still pointing to the original resources.
+完全不会复制任何子资源（subresources）。即使在执行深度复制时，这也非常有用，因为它能让所有的数组和字典都被成功复制，但里面的元素依然指向原本的那些资源。
 
 .. _class_Resource_constant_DEEP_DUPLICATE_INTERNAL:
 
@@ -246,13 +246,13 @@ No subresources at all are duplicated. This is useful even in a deep duplication
 - |void| **set_scene_unique_id**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_scene_unique_id**\ (\ )
 
-A unique identifier relative to this resource's scene. If left empty, the ID is automatically generated when this resource is saved inside a :ref:`PackedScene<class_PackedScene>`. If the resource is not inside a scene, this property is empty by default.
+一个相对于该资源所属场景的唯一标识符。如果留空，当此资源被保存在一个 :ref:`PackedScene<class_PackedScene>`\ （打包场景）中时，ID 将会被自动生成。如果该资源不属于任何场景，此属性默认为空。
 
-\ **Note:** When the :ref:`PackedScene<class_PackedScene>` is saved, if multiple resources in the same scene use the same ID, only the earliest resource in the scene hierarchy keeps the original ID. The other resources are assigned new IDs from :ref:`generate_scene_unique_id()<class_Resource_method_generate_scene_unique_id>`.
+\ **注意：** 当保存 :ref:`PackedScene<class_PackedScene>` 时，如果同一场景中的多个资源使用了相同的 ID，只有场景层级中最早出现的那个资源会保留原 ID。其他重复的资源会被分配由 :ref:`generate_scene_unique_id()<class_Resource_method_generate_scene_unique_id>` 方法生成的新 ID。
 
-\ **Note:** Setting this property does not emit the :ref:`changed<class_Resource_signal_changed>` signal.
+\ **注意：** 设置此属性不会触发 :ref:`changed<class_Resource_signal_changed>`\ （已更改）信号。
 
-\ **Warning:** When setting, the ID must only consist of letters, numbers, and underscores. Otherwise, it will fail and default to a randomly generated ID.
+\ **警告：** 在设置时，该 ID 必须仅由字母、数字和下划线组成。否则设置将失败，并默认回退为一个随机生成的 ID。
 
 .. rst-class:: classref-section-separator
 
@@ -328,7 +328,7 @@ A unique identifier relative to this resource's scene. If left empty, the ID is 
 
 :ref:`Error<enum_@GlobalScope_Error>` **copy_from_resource**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_Resource_method_copy_from_resource>`
 
-Copies the data from ``resource`` into this resource. Both resources must share the same class.
+将数据从 ``resource`` 复制到此资源中。两个资源必须属于同一类别（class）。
 
 .. rst-class:: classref-item-separator
 

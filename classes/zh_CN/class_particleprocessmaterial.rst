@@ -612,7 +612,7 @@ enum **SubEmitterMode**: :ref:`🔗<enum_ParticleProcessMaterial_SubEmitterMode>
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_DISABLED** = ``0``
 
-The subemitter is disabled.
+子发射器已禁用。
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_CONSTANT:
 
@@ -620,7 +620,7 @@ The subemitter is disabled.
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_CONSTANT** = ``1``
 
-The submitter is emitted on the constant interval defined by :ref:`sub_emitter_frequency<class_ParticleProcessMaterial_property_sub_emitter_frequency>`.
+子发射器将按照 :ref:`sub_emitter_frequency<class_ParticleProcessMaterial_property_sub_emitter_frequency>` 定义的固定时间间隔进行发射。
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_AT_END:
 
@@ -628,7 +628,7 @@ The submitter is emitted on the constant interval defined by :ref:`sub_emitter_f
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_AT_END** = ``2``
 
-The subemitter is emitted at the end of the particle's lifetime.
+子发射器将在粒子生命周期结束时被发射。
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_AT_COLLISION:
 
@@ -636,7 +636,7 @@ The subemitter is emitted at the end of the particle's lifetime.
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_AT_COLLISION** = ``3``
 
-The subemitter is emitted when the particle collides.
+当粒子发生碰撞时，将发射子发射器。
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_AT_START:
 
@@ -644,7 +644,7 @@ The subemitter is emitted when the particle collides.
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_AT_START** = ``4``
 
-The subemitter is emitted when the particle spawns.
+当粒子生成时，将发射子发射器。
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_MAX:
 
@@ -1793,9 +1793,9 @@ enum **CollisionMode**: :ref:`🔗<enum_ParticleProcessMaterial_CollisionMode>`
 - |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`\ ) |const|
 
-If ``true``, particles will inherit the scale of the emitter.
+如果为 ``true``\ ，则粒子将继承发射器的缩放。
 
-\ **Note:** This has no effect when :ref:`GPUParticles3D.local_coords<class_GPUParticles3D_property_local_coords>` is ``true``, since particles in local space are already affected by the emitter's scale.
+\ **注意：** 当 :ref:`GPUParticles3D.local_coords<class_GPUParticles3D_property_local_coords>` 为 ``true`` 时，此设置无效，因为在局部空间中的粒子已经受到发射器缩放的影响。
 
 .. rst-class:: classref-item-separator
 
@@ -1937,7 +1937,7 @@ If ``true``, particles will inherit the scale of the emitter.
 - |void| **set_rotation_3d_max**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_3d_max**\ (\ )
 
-The maximum 3D orientation, in degrees. Works only in 3D and if :ref:`use_rotation_3d<class_ParticleProcessMaterial_property_use_rotation_3d>` is enabled.
+最大 3D 朝向角度（以度为单位）。仅在 3D 环境中且启用 :ref:`use_rotation_3d<class_ParticleProcessMaterial_property_use_rotation_3d>` 时生效。
 
 .. rst-class:: classref-item-separator
 
@@ -1954,7 +1954,7 @@ The maximum 3D orientation, in degrees. Works only in 3D and if :ref:`use_rotati
 - |void| **set_rotation_3d_min**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_3d_min**\ (\ )
 
-The minimum 3D orientation, in degrees. Works only in 3D and if :ref:`use_rotation_3d<class_ParticleProcessMaterial_property_use_rotation_3d>` is enabled.
+最小 3D 朝向角度（以度为单位）。仅在 3D 环境中且启用 :ref:`use_rotation_3d<class_ParticleProcessMaterial_property_use_rotation_3d>` 时生效。
 
 .. rst-class:: classref-item-separator
 
@@ -1971,7 +1971,7 @@ The minimum 3D orientation, in degrees. Works only in 3D and if :ref:`use_rotati
 - |void| **set_rotation_velocity_3d_curve**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_rotation_velocity_3d_curve**\ (\ )
 
-Rotation velocity curve over lifetime, per-axis. Enable :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` to use this.
+各轴向的粒子生命周期旋转速度曲线。启用 :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` 以使用此功能。
 
 .. rst-class:: classref-item-separator
 
@@ -1988,7 +1988,7 @@ Rotation velocity curve over lifetime, per-axis. Enable :ref:`use_rotation_veloc
 - |void| **set_rotation_velocity_3d_max**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_velocity_3d_max**\ (\ )
 
-Maximum 3D rotation velocity on the particle's local axis. Enable :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` to use this.
+粒子局部坐标轴上的最大 3D 旋转速度。启用 :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` 以使用此功能。
 
 .. rst-class:: classref-item-separator
 
@@ -2005,7 +2005,7 @@ Maximum 3D rotation velocity on the particle's local axis. Enable :ref:`use_rota
 - |void| **set_rotation_velocity_3d_min**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_velocity_3d_min**\ (\ )
 
-Minimum 3D rotation velocity on the particle's local axis. Enable :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` to use this.
+粒子局部坐标轴上的最小 3D 旋转速度。启用 :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` 以使用此功能。
 
 .. rst-class:: classref-item-separator
 
@@ -2022,9 +2022,9 @@ Minimum 3D rotation velocity on the particle's local axis. Enable :ref:`use_rota
 - |void| **set_scale_3d_max**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_scale_3d_max**\ (\ )
 
-The maximum value of the random scale vector for each particle.
+每个粒子的随机缩放向量的最大值。
 
-Works only if :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scale_3d>` is enabled.
+仅在启用了 :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scale_3d>` 时生效。
 
 .. rst-class:: classref-item-separator
 
@@ -2041,9 +2041,9 @@ Works only if :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scal
 - |void| **set_scale_3d_min**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_scale_3d_min**\ (\ )
 
-The minimum value of the random scale vector for each particle.
+每个粒子的随机缩放向量的最小值。
 
-Works only if :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scale_3d>` is enabled.
+仅在启用了 :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scale_3d>` 时生效。
 
 .. rst-class:: classref-item-separator
 
@@ -2530,7 +2530,7 @@ Works only if :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scal
 - |void| **set_use_rotation_3d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_rotation_3d**\ (\ )
 
-Enable the usage of :ref:`rotation_3d_min<class_ParticleProcessMaterial_property_rotation_3d_min>` and :ref:`rotation_3d_max<class_ParticleProcessMaterial_property_rotation_3d_max>`.
+启用 :ref:`rotation_3d_min<class_ParticleProcessMaterial_property_rotation_3d_min>` 和 :ref:`rotation_3d_max<class_ParticleProcessMaterial_property_rotation_3d_max>` 的使用。
 
 .. rst-class:: classref-item-separator
 
@@ -2547,7 +2547,7 @@ Enable the usage of :ref:`rotation_3d_min<class_ParticleProcessMaterial_property
 - |void| **set_using_rotation_velocity_3d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_rotation_velocity_3d**\ (\ )
 
-Enable 3D rotation velocity.
+启用 3D 旋转速度。
 
 .. rst-class:: classref-item-separator
 
@@ -2564,7 +2564,7 @@ Enable 3D rotation velocity.
 - |void| **set_use_scale_3d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_scale_3d**\ (\ )
 
-Enable the usage of :ref:`scale_3d_min<class_ParticleProcessMaterial_property_scale_3d_min>` and :ref:`scale_3d_max<class_ParticleProcessMaterial_property_scale_3d_max>`.
+启用 :ref:`scale_3d_min<class_ParticleProcessMaterial_property_scale_3d_min>` 和 :ref:`scale_3d_max<class_ParticleProcessMaterial_property_scale_3d_max>` 的使用。
 
 .. rst-class:: classref-item-separator
 

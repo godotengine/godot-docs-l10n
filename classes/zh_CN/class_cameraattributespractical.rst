@@ -14,13 +14,13 @@ CameraAttributesPractical
 描述
 ----
 
-Controls camera-specific attributes such as auto-exposure, depth of field, and exposure override.
+控制相机的特定属性，如自动曝光、景深、以及曝光覆盖。
 
-When used in a :ref:`WorldEnvironment<class_WorldEnvironment>` it provides default settings for exposure, auto-exposure, and depth of field that will be used by all cameras without their own :ref:`CameraAttributes<class_CameraAttributes>`, including the editor camera. When used in a :ref:`Camera3D<class_Camera3D>` it will override any :ref:`CameraAttributes<class_CameraAttributes>` set in the :ref:`WorldEnvironment<class_WorldEnvironment>`. When used in :ref:`VoxelGI<class_VoxelGI>` or :ref:`LightmapGI<class_LightmapGI>`, only the exposure settings will be used.
+当在 :ref:`WorldEnvironment<class_WorldEnvironment>` 中使用时，它提供了曝光、自动曝光、以及景深的默认设置，这些设置将由所有没有自己的 :ref:`CameraAttributes<class_CameraAttributes>` 的相机使用，包括编辑器相机。当在 :ref:`Camera3D<class_Camera3D>` 中使用时，它将覆盖 :ref:`WorldEnvironment<class_WorldEnvironment>` 中设置的任何 :ref:`CameraAttributes<class_CameraAttributes>`\ 。当在 :ref:`VoxelGI<class_VoxelGI>` 或 :ref:`LightmapGI<class_LightmapGI>` 中使用时，只会使用曝光设置。
 
-\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：**\ 景深模糊仅在 Forward+ 和 Mobile 渲染方法中受支持，Compatibility 中不受支持。
 
-\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **注意：**\ 自动曝光仅在 Forward+ 渲染方法中受支持，在 Mobile 或 Compatibility 中不受支持。
 
 .. rst-class:: classref-reftable-group
 

@@ -835,7 +835,7 @@ UUID профілю забезпечення. Якщо залишити поро
 
 :ref:`bool<class_bool>` **modules/camera** :ref:`🔗<class_EditorExportPlatformVisionOS_property_modules/camera>`
 
-If ``true``, :ref:`CameraServer<class_CameraServer>` module is added to the exported project.
+Якщо ``true``, модуль :ref:`CameraServer<class_CameraServer>` додається до експортованого проєкту.
 
 .. rst-class:: classref-item-separator
 

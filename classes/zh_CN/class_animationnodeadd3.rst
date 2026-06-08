@@ -14,19 +14,19 @@ AnimationNodeAdd3
 描述
 ----
 
-A resource to add to an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Blends two animations out of three additively out of three based on the amount value.
+一种可以添加到 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`\ （动画混合树）中的资源。它会根据 amount（混合量）的值，在三个动画中选择两个进行加法混合。
 
-This animation node has three inputs:
+这个动画节点有三个输入端：
 
-- The base animation to add to
+作为基础的动画（即要往上面添加效果的动画）
 
-- A "-add" animation to blend with when the blend amount is negative
+一个 “-add” 动画，当混合量为负数时，会与基础动画进行混合
 
-- A "+add" animation to blend with when the blend amount is positive
+一个 “+add” 动画，当混合量为正数时，会与基础动画进行混合
 
-If the absolute value of the amount is greater than ``1.0``, the animation connected to "in" port is blended with the amplified animation connected to "-add"/"+add" port.
+如果 amount 的绝对值大于 ``1.0``\ ，那么连接到 “in” 端口的动画会与连接到 “-add” 或 “+add” 端口的动画进行增强混合。
 
-\ **Note:** The signs are only used to distinguish ports, and additive blending occurs based on absolute values always, meaning the animation of a "-add" port does not subtract from the animation of an "in" port.
+\ **注意：** 正负号仅用于区分端口，加法混合始终是基于绝对值进行的，这意味着连接到 “-add” 端口的动画并不会从 “in” 端口的动画中做减法。
 
 .. rst-class:: classref-introduction-group
 

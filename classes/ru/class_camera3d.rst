@@ -691,7 +691,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_Camera3D_DopplerTracking>`
 
 |void| **set_frustum**\ (\ size\: :ref:`float<class_float>`, offset\: :ref:`Vector2<class_Vector2>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Camera3D_method_set_frustum>`
 
-Sets the camera projection to frustum mode (see :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`), by specifying a ``size``, an ``offset``, and the ``z_near`` and ``z_far`` clip planes in world space units. The ``size`` parameter represents the size of the near plane, either its width or height depending on the value of :ref:`keep_aspect<class_Camera3D_property_keep_aspect>`. See also :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`.
+Устанавливает проекцию камеры в режим усеченного конуса (см. :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`), указывая ``size``, ``offset`` и плоскости отсечения ``z_near`` и ``z_far`` в единицах мирового пространства. Параметр ``size`` представляет размер ближней плоскости, либо ее ширину, либо высоту в зависимости от значения :ref:`keep_aspect<class_Camera3D_property_keep_aspect>`. См. также :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`.
 
 .. rst-class:: classref-item-separator
 

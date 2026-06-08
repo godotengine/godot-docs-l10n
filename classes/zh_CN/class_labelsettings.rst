@@ -55,7 +55,7 @@ LabelSettings
    +-------------------------------+--------------------------------------------------------------------------------------------------------------+-----------------------+
    | :ref:`Color<class_Color>`     | :ref:`stacked_shadow_{index}/color<class_LabelSettings_property_stacked_shadow_{index}/color>`               | ``Color(0, 0, 0, 1)`` |
    +-------------------------------+--------------------------------------------------------------------------------------------------------------+-----------------------+
-   | :ref:`Vector2<class_Vector2>` | :ref:`stacked_shadow_{index}/offset<class_LabelSettings_property_stacked_shadow_{index}/offset>`             | ``Vector2i(1, 1)``    |
+   | :ref:`Vector2<class_Vector2>` | :ref:`stacked_shadow_{index}/offset<class_LabelSettings_property_stacked_shadow_{index}/offset>`             | ``Vector2(1, 1)``     |
    +-------------------------------+--------------------------------------------------------------------------------------------------------------+-----------------------+
    | :ref:`int<class_int>`         | :ref:`stacked_shadow_{index}/outline_size<class_LabelSettings_property_stacked_shadow_{index}/outline_size>` | ``0``                 |
    +-------------------------------+--------------------------------------------------------------------------------------------------------------+-----------------------+
@@ -304,9 +304,9 @@ LabelSettings
 
 :ref:`Color<class_Color>` **stacked_outline_{index}/color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_LabelSettings_property_stacked_outline_{index}/color>`
 
-The color of the outline at ``index``.
+索引为 ``index`` 的轮廓的颜色。
 
-\ **Note:** ``index`` is a value in the ``0 .. stacked_outline_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. stacked_outline_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -318,9 +318,9 @@ The color of the outline at ``index``.
 
 :ref:`int<class_int>` **stacked_outline_{index}/size** = ``0`` :ref:`🔗<class_LabelSettings_property_stacked_outline_{index}/size>`
 
-The size of the outline at ``index``.
+索引为 ``index`` 的轮廓的大小。
 
-\ **Note:** ``index`` is a value in the ``0 .. stacked_outline_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. stacked_outline_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -349,9 +349,9 @@ The size of the outline at ``index``.
 
 :ref:`Color<class_Color>` **stacked_shadow_{index}/color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_LabelSettings_property_stacked_shadow_{index}/color>`
 
-The color of the shadow at ``index``.
+索引为 ``index`` 的阴影的颜色。
 
-\ **Note:** ``index`` is a value in the ``0 .. stacked_shadow_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. stacked_shadow_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -361,11 +361,11 @@ The color of the shadow at ``index``.
 
 .. rst-class:: classref-property
 
-:ref:`Vector2<class_Vector2>` **stacked_shadow_{index}/offset** = ``Vector2i(1, 1)`` :ref:`🔗<class_LabelSettings_property_stacked_shadow_{index}/offset>`
+:ref:`Vector2<class_Vector2>` **stacked_shadow_{index}/offset** = ``Vector2(1, 1)`` :ref:`🔗<class_LabelSettings_property_stacked_shadow_{index}/offset>`
 
-The offset of the shadow at ``index``.
+索引为 ``index`` 的阴影的偏移量。
 
-\ **Note:** ``index`` is a value in the ``0 .. stacked_shadow_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. stacked_shadow_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -377,9 +377,9 @@ The offset of the shadow at ``index``.
 
 :ref:`int<class_int>` **stacked_shadow_{index}/outline_size** = ``0`` :ref:`🔗<class_LabelSettings_property_stacked_shadow_{index}/outline_size>`
 
-The size of the shadow outline at ``index``.
+索引为 ``index`` 的阴影轮廓的大小。
 
-\ **Note:** ``index`` is a value in the ``0 .. stacked_shadow_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. stacked_shadow_count - 1``\ 。
 
 .. rst-class:: classref-section-separator
 

@@ -162,9 +162,9 @@ Label
 - |void| **set_autowrap_mode**\ (\ value\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )
 - :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ )
 
-If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text.
+如果设置为非 :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>` 的值，文本将在节点的边界矩形内进行换行。如果你调整节点的大小，它将自动改变高度以显示所有文本。
 
-\ **Note:** Labels with autowrapping enabled must have a custom maximum width configured to work correctly, either through the Label's own :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` or as a result of a propagated maximum size from a parent Control with :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` enabled.
+\ **注意：** 启用了自动换行的标签必须配置自定义的最大宽度才能正常工作，这可以通过标签自身的 :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` 实现，或者作为启用了 :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` 的父控件传递过来的最大尺寸的结果。
 
 .. rst-class:: classref-item-separator
 

@@ -7,14 +7,14 @@ BlitMaterial
 
 **Успадковує:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A material that processes blit calls to a DrawableTexture.
+Матеріал, який обробляє виклики blit до DrawableTexture.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-A material resource that can be used by DrawableTextures when processing blit calls to draw.
+Ресурс, який може використовуватися DrawableTextures під час обробки викликів blit для малювання.
 
 .. rst-class:: classref-reftable-group
 
@@ -81,7 +81,7 @@ enum **BlendMode**: :ref:`🔗<enum_BlitMaterial_BlendMode>`
 
 :ref:`BlendMode<enum_BlitMaterial_BlendMode>` **BLEND_MODE_DISABLED** = ``4``
 
-No blending mode, direct color copy.
+Без режиму накладання, пряме копіювання кольору.
 
 .. rst-class:: classref-section-separator
 
@@ -103,7 +103,7 @@ No blending mode, direct color copy.
 - |void| **set_blend_mode**\ (\ value\: :ref:`BlendMode<enum_BlitMaterial_BlendMode>`\ )
 - :ref:`BlendMode<enum_BlitMaterial_BlendMode>` **get_blend_mode**\ (\ )
 
-The manner in which the newly blitted texture is blended with the original DrawableTexture.
+Спосіб, у який новостворена текстура поєднується з вихідною DrawableTexture.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

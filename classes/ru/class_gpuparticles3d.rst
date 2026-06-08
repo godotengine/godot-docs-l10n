@@ -261,7 +261,7 @@ enum **TransformAlign**: :ref:`🔗<enum_GPUParticles3D_TransformAlign>`
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_DISABLED** = ``0``
 
-Do not align particle transforms relative to the camera or velocity.
+Не следует выравнивать преобразования частиц относительно камеры или скорости.
 
 .. _class_GPUParticles3D_constant_TRANSFORM_ALIGN_Z_BILLBOARD:
 
@@ -269,7 +269,7 @@ Do not align particle transforms relative to the camera or velocity.
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_Z_BILLBOARD** = ``1``
 
-Align each particle's Z axis to face the camera.
+Расположите ось Z каждой частицы так, чтобы она была направлена в сторону камеры.
 
 .. _class_GPUParticles3D_constant_TRANSFORM_ALIGN_Y_TO_VELOCITY:
 
@@ -277,7 +277,7 @@ Align each particle's Z axis to face the camera.
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_Y_TO_VELOCITY** = ``2``
 
-Align each particle's Y axis to the velocity vector.
+Выровняйте ось Y каждой частицы по вектору скорости.
 
 .. _class_GPUParticles3D_constant_TRANSFORM_ALIGN_Z_BILLBOARD_Y_TO_VELOCITY:
 
@@ -285,7 +285,7 @@ Align each particle's Y axis to the velocity vector.
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_Z_BILLBOARD_Y_TO_VELOCITY** = ``3``
 
-Align each particle's Z axis to face the camera and Y axis to the velocity vector.
+Расположите ось Z каждой частицы напротив камеры, а ось Y — относительно вектора скорости.
 
 .. _class_GPUParticles3D_constant_TRANSFORM_ALIGN_LOCAL_BILLBOARD:
 
@@ -293,7 +293,7 @@ Align each particle's Z axis to face the camera and Y axis to the velocity vecto
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_LOCAL_BILLBOARD** = ``4``
 
-Align each particle's Z axis to face the camera, while preserving a given axis (X or Y).
+Выровняйте ось Z каждой частицы так, чтобы она была направлена в сторону камеры, сохраняя при этом заданную ось (X или Y).
 
 .. rst-class:: classref-section-separator
 
@@ -815,7 +815,7 @@ Align each particle's Z axis to face the camera, while preserving a given axis (
 - |void| **set_transform_align**\ (\ value\: :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>`\ )
 - :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **get_transform_align**\ (\ )
 
-The alignment of particles. Use this for billboarding and aligning to velocity.
+Выравнивание частиц. Используйте это для создания рекламных щитов и выравнивания по скорости.
 
 .. rst-class:: classref-item-separator
 
@@ -832,7 +832,7 @@ The alignment of particles. Use this for billboarding and aligning to velocity.
 - |void| **set_transform_align_axis**\ (\ value\: :ref:`ParticlesTransformAlignAxis<enum_RenderingServer_ParticlesTransformAlignAxis>`\ )
 - :ref:`ParticlesTransformAlignAxis<enum_RenderingServer_ParticlesTransformAlignAxis>` **get_transform_align_axis**\ (\ )
 
-When using transform align local billboard, which axis to use for the billboarding. Supports only X or Y.
+При использовании функции transform align local billboard указывается, какую ось использовать для билбординга. Поддерживаются только оси X или Y.
 
 .. rst-class:: classref-item-separator
 
@@ -849,7 +849,7 @@ When using transform align local billboard, which axis to use for the billboardi
 - |void| **set_transform_align_channel_filter**\ (\ value\: :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>`\ )
 - :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **get_transform_align_channel_filter**\ (\ )
 
-In the case of billboarded particles, which custom channel to read from to calculate their angle.
+В случае с частицами, отображаемыми на билборде, используется специальный канал для считывания данных с целью вычисления их угла.
 
 .. rst-class:: classref-item-separator
 
@@ -956,9 +956,9 @@ ParticleProcessMaterial по умолчанию перезапишет ``color``
 
 |void| **request_particles_process**\ (\ process_time\: :ref:`float<class_float>`, process_time_residual\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_GPUParticles3D_method_request_particles_process>`
 
-Requests the particles to process for extra process time during a single frame.
+Запрашивает у частиц дополнительное время обработки в течение одного кадра.
 
-\ ``process_time`` defines the time that the particles will process while emitting is on. ``process_time_residual`` defines the time that particles will process with emitting turned off for the simulation. When combined with :ref:`speed_scale<class_GPUParticles3D_property_speed_scale>` set to ``0.0``, this is useful to be able to seek a particle system timeline.
+\ ``process_time`` определяет время обработки частиц при включенном излучении. ``process_time_residual`` определяет время обработки частиц при выключенном излучении для моделирования. В сочетании с :ref:`speed_scale<class_GPUParticles3D_property_speed_scale>`, установленным на ``0.0``, это полезно для возможности поиска временной шкалы системы частиц.
 
 .. rst-class:: classref-item-separator
 

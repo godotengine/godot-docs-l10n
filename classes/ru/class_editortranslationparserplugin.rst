@@ -164,7 +164,7 @@ To use **EditorTranslationParserPlugin**, register it using the :ref:`EditorPlug
 
 :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\] **_customize_strings**\ (\ strings\: :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\]\ ) |virtual| |const| :ref:`🔗<class_EditorTranslationParserPlugin_private_method__customize_strings>`
 
-Called after parsing all files. You can modify the ``strings`` array to add or remove entries from the final list of strings, then return it after modifications. Each entry is a :ref:`PackedStringArray<class_PackedStringArray>` like explained in the **EditorTranslationParserPlugin**'s description.
+Вызывается после анализа всех файлов. Вы можете изменить массив ``strings``, чтобы добавить или удалить элементы из итогового списка строк, а затем вернуть его после внесения изменений. Каждый элемент представляет собой :ref:`PackedStringArray<class_PackedStringArray>`, как объяснено в описании **EditorTranslationParserPlugin**.
 
 ::
 
@@ -172,10 +172,10 @@ Called after parsing all files. You can modify the ``strings`` array to add or r
     extends EditorTranslationParserPlugin
 
     func _customize_strings(strings):
-        # Add new string.
+        # Добавить новую строку.
         strings.append(["Test 1", "context", "test 1 plurals", "test 1 comment"])
 
-        # Remove all strings that begin with $.
+        # Удалите все строки, начинающиеся с $.
         strings = strings.filter(func(s): return not s[0].begins_with("$"))
 
         return strings

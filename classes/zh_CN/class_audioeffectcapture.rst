@@ -7,18 +7,18 @@ AudioEffectCapture
 
 **继承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Exposes audio samples from an audio bus in real-time, such that it can be accessed as data.
+实时公开来自音频总线的音频采样，使其可作为数据进行访问。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Copies all audio frames, also known as "samples" or "audio samples", from the attached audio bus into its internal ring buffer. This effect does not alter the audio. Can be used for storing real-time audio data for playback, and for creating real-time audio visualizations, like an oscilloscope.
+将来自所连接音频总线的所有音频帧，也称为“样本”或“音频样本”，复制到其内部环形缓冲区中。该效果不会对音频内容进行任何修改。它可用于存储实时音频数据以供回放，也可用于生成实时音频可视化效果，如示波器显示。
 
-Application code should consume these audio frames from this ring buffer using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` and process it as needed, for example to capture data from an :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, implement application-defined effects, or to transmit audio over the network. When capturing audio data from a microphone, the format of the samples will be stereo 32-bit floating-point PCM.
+应用程序代码应使用 :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` 从该环形缓冲区中消耗这些音频帧，并根据需要对其进行处理，例如从 :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>` 捕获数据，实现应用程序定义的效果，或通过网络传输音频。从麦克风捕获音频数据时，样本格式将为立体声 32 位浮点 PCM。
 
-Unlike :ref:`AudioEffectRecord<class_AudioEffectRecord>`, this effect only returns the raw audio samples instead of encoding them into an :ref:`AudioStream<class_AudioStream>`.
+与 :ref:`AudioEffectRecord<class_AudioEffectRecord>` 不同，该效果仅返回原始音频样本，而不是将它们编码到 :ref:`AudioStream<class_AudioStream>` 中。
 
 .. rst-class:: classref-introduction-group
 
@@ -83,9 +83,9 @@ Unlike :ref:`AudioEffectRecord<class_AudioEffectRecord>`, this effect only retur
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-Length of the internal ring buffer, in seconds. Higher values keep data around for longer, but require more memory. Value can range from 0.01 to 10.
+内部环形缓冲区的长度，单位为秒。数值越大，数据保留的时间就越长，但同时也需要占用更多的内存。该值的范围可以在 0.01 到 10 之间。
 
-\ **Note:** Setting the buffer length will have no effect if already initialized.
+\ **注意：** 如果（该缓冲区）已经初始化，设置缓冲区长度将不会生效。
 
 .. rst-class:: classref-section-separator
 
@@ -102,7 +102,7 @@ Length of the internal ring buffer, in seconds. Higher values keep data around f
 
 :ref:`bool<class_bool>` **can_get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_can_get_buffer>`
 
-Returns ``true`` if at least ``frames`` samples are available to read in the internal ring buffer.
+如果内部环形缓冲区中至少有 ``frames`` 个样本可供读取，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -128,11 +128,11 @@ Returns ``true`` if at least ``frames`` samples are available to read in the int
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioEffectCapture_method_get_buffer>`
 
-Gets the next ``frames`` samples from the internal ring buffer.
+从内部环形缓冲区获取后续 ``frames`` 个样本。
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` samples if available, or an empty :ref:`PackedVector2Array<class_PackedVector2Array>` if insufficient data was available.
+如果足够的话，则返回一个恰好包含 ``frames`` 个样本的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ；如果可用数据不足，则返回一个空的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ 。
 
-The samples are signed floating-point PCM between ``-1`` and ``1``. You will have to scale them if you want to use them as 8 or 16-bit integer samples. (``v = 0x7fff * samples[0].x``)
+样本是有符号浮点 PCM，在 ``-1`` 和 ``1`` 之间。如果想要作为 8 位或 16 位整型样本使用则需要进行缩放。（\ ``v = 0x7fff * samples[0].x``\ ）
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ The samples are signed floating-point PCM between ``-1`` and ``1``. You will hav
 
 :ref:`int<class_int>` **get_buffer_length_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_buffer_length_frames>`
 
-Returns the total size of the internal ring buffer in number of samples.
+返回内部环形缓冲区的总大小，以样本数计。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Returns the total size of the internal ring buffer in number of samples.
 
 :ref:`int<class_int>` **get_discarded_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_discarded_frames>`
 
-Returns the number of samples discarded from the audio bus due to full buffer.
+返回由于缓冲区满而从音频总线上丢弃的样本的数量。
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ Returns the number of samples discarded from the audio bus due to full buffer.
 
 :ref:`int<class_int>` **get_frames_available**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_frames_available>`
 
-Returns the number of samples available to read using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
+返回可使用 :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` 读取的样本数。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Returns the number of samples available to read using :ref:`get_buffer()<class_A
 
 :ref:`int<class_int>` **get_pushed_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_pushed_frames>`
 
-Returns the number of samples inserted from the audio bus.
+返回从音频总线插入的样本的数量。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

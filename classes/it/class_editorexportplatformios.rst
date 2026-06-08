@@ -1529,7 +1529,7 @@ File icona in evidenza su iPad e iPhone (3x DPI), versione tinta. Consulta `Icon
 
 :ref:`bool<class_bool>` **modules/camera** :ref:`🔗<class_EditorExportPlatformIOS_property_modules/camera>`
 
-If ``true``, :ref:`CameraServer<class_CameraServer>` module is added to the exported project.
+Se ``true``, il modulo del :ref:`CameraServer<class_CameraServer>` è incluso nel progetto esportato.
 
 .. rst-class:: classref-item-separator
 
@@ -3379,9 +3379,9 @@ I motivi per cui l'app utilizza l'API predefinita dell'utente. Consulta `Descriv
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformIOS_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ or Mobile renderers.
+Se ``true``, gli shader saranno compilati e incorporati nell'applicazione. Questa opzione è supportata solo quando si utilizzano i renderer Forward+ o Mobile.
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **Nota:** Quando si esporta come server dedicato, lo shader baker è sempre disabilitato poiché nessun rendering viene eseguito.
 
 .. rst-class:: classref-item-separator
 

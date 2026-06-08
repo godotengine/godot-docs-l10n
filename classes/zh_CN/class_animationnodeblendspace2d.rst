@@ -171,7 +171,7 @@ enum **SyncMode**: :ref:`🔗<enum_AnimationNodeBlendSpace2D_SyncMode>`
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>` **SYNC_MODE_NONE** = ``0``
 
-Inactive animations are frozen and do not advance.
+处于非活动状态的动画会被冻结，且不会继续播放（不会推进进度）。
 
 .. _class_AnimationNodeBlendSpace2D_constant_SYNC_MODE_INDEPENDENT:
 
@@ -179,7 +179,7 @@ Inactive animations are frozen and do not advance.
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>` **SYNC_MODE_INDEPENDENT** = ``1``
 
-Inactive animations advance with a weight of ``0``. This is equivalent to the previous ``sync = true`` behavior.
+非活动状态的动画会以 ``0`` 的权重继续播放（推进进度）。这等同于以前 ``sync = true`` 时的行为。
 
 .. _class_AnimationNodeBlendSpace2D_constant_SYNC_MODE_CYCLIC_MUTABLE:
 
@@ -187,9 +187,9 @@ Inactive animations advance with a weight of ``0``. This is equivalent to the pr
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>` **SYNC_MODE_CYCLIC_MUTABLE** = ``2``
 
-All animations are time-scaled so they stay in sync, with the cycle length dynamically computed from active blend weights. This is self-normalizing: a solo animation plays at normal speed.
+所有动画都会进行时间缩放以保持同步，其周期长度会根据活动的混合权重动态计算。这是一种自我归一化（self-normalizing）的机制：当只有一个动画单独播放时，它会以正常速度播放。
 
-\ **Note:** If you apply :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>` to the result when handling animations of different lengths, synchronization will be broken. In such cases, it is recommended to use :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` to align the animation lengths.
+\ **注意：** 如果你在混合不同长度的动画时，对结果应用了 :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>`\ （时间查找）节点，同步将会被破坏。在这种情况下，建议使用 :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>`\ （使用自定义时间轴）来对齐动画的长度。
 
 .. _class_AnimationNodeBlendSpace2D_constant_SYNC_MODE_CYCLIC_CONSTANT:
 
@@ -197,9 +197,9 @@ All animations are time-scaled so they stay in sync, with the cycle length dynam
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>` **SYNC_MODE_CYCLIC_CONSTANT** = ``3``
 
-All animations are time-scaled so they complete one cycle in :ref:`cyclic_length<class_AnimationNodeBlendSpace2D_property_cyclic_length>` seconds, keeping them in sync regardless of their individual lengths.
+所有动画都会进行时间缩放，以确保它们都在 :ref:`cyclic_length<class_AnimationNodeBlendSpace2D_property_cyclic_length>` 秒内刚好完成一个循环，从而让它们保持同步，完全不受各自原始长度的影响。
 
-\ **Note:** If you apply :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>` to the result when handling animations of different lengths, synchronization will be broken. In such cases, it is recommended to use :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` to align the animation lengths.
+\ **注意：** 如果你在混合不同长度的动画时，对结果应用了 :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>`\ （时间查找）节点，同步将会被破坏。在这种情况下，建议使用 :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>`\ （使用自定义时间轴）来对齐动画的长度。
 
 .. rst-class:: classref-section-separator
 
@@ -255,7 +255,7 @@ All animations are time-scaled so they complete one cycle in :ref:`cyclic_length
 - |void| **set_cyclic_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cyclic_length**\ (\ )
 
-The cycle length in seconds used by :ref:`SYNC_MODE_CYCLIC_CONSTANT<class_AnimationNodeBlendSpace2D_constant_SYNC_MODE_CYCLIC_CONSTANT>`. All animations are time-scaled so they complete one full cycle in this duration. Must be greater than ``0`` for cyclic sync to take effect.
+:ref:`SYNC_MODE_CYCLIC_CONSTANT<class_AnimationNodeBlendSpace2D_constant_SYNC_MODE_CYCLIC_CONSTANT>` 模式所使用的周期长度（以秒为单位）。所有的动画都会进行时间缩放，以确保在这个时长内刚好完整地循环一次。该数值必须大于 ``0``\ ，循环同步（cyclic sync）才会生效。
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ The cycle length in seconds used by :ref:`SYNC_MODE_CYCLIC_CONSTANT<class_Animat
 
 **已弃用：** Use :ref:`sync_mode<class_AnimationNodeBlendSpace2D_property_sync_mode>` instead.
 
-If ``true``, sync mode is enabled (equivalent to :ref:`SYNC_MODE_INDEPENDENT<class_AnimationNodeBlendSpace2D_constant_SYNC_MODE_INDEPENDENT>`). This property is kept for backward compatibility.
+如果设为 ``true``\ （真），则启用同步模式（等同于 :ref:`SYNC_MODE_INDEPENDENT<class_AnimationNodeBlendSpace2D_constant_SYNC_MODE_INDEPENDENT>`\ ）。保留该属性是为了向后兼容。
 
 .. rst-class:: classref-item-separator
 
@@ -342,7 +342,7 @@ If ``true``, sync mode is enabled (equivalent to :ref:`SYNC_MODE_INDEPENDENT<cla
 - |void| **set_sync_mode**\ (\ value\: :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>`\ )
 - :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>` **get_sync_mode**\ (\ )
 
-Controls how animations are synced when blended. See :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>` for available options.
+控制动画在混合时的同步方式。可用的选项见 :ref:`SyncMode<enum_AnimationNodeBlendSpace2D_SyncMode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -393,9 +393,9 @@ Controls how animations are synced when blended. See :ref:`SyncMode<enum_Animati
 
 |void| **add_blend_point**\ (\ node\: :ref:`AnimationRootNode<class_AnimationRootNode>`, pos\: :ref:`Vector2<class_Vector2>`, at_index\: :ref:`int<class_int>` = -1, name\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_add_blend_point>`
 
-Adds a new point with ``name`` that represents a ``node`` at the position set by ``pos``. You can insert it at a specific index using the ``at_index`` argument. If you use the default value for ``at_index``, the point is inserted at the end of the blend points array.
+在 ``pos``\ （位置）处，添加一个带有 ``name``\ （名称）且代表 ``node``\ （节点）的新点。你可以使用 ``at_index`` 参数将其插入到指定的索引位置。如果你使用 ``at_index`` 的默认值，该点会被插入到混合点数组的末尾。
 
-\ **Note:** If no name is provided, safe index is used as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+\ **注意：** 如果没有提供名称，系统会使用安全的索引作为参考。未来空名称将会被弃用，因此强烈建议显式地传入一个名称。
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +419,7 @@ Adds a new point with ``name`` that represents a ``node`` at the position set by
 
 :ref:`int<class_int>` **find_blend_point_by_name**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace2D_method_find_blend_point_by_name>`
 
-Returns the index of the blend point with the given ``name``. Returns ``-1`` if no blend point with that name is found.
+返回具有给定 ``name`` 的混合点的索引。如果未找到具有该名称的混合点，则返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -443,7 +443,7 @@ Returns the index of the blend point with the given ``name``. Returns ``-1`` if 
 
 :ref:`StringName<class_StringName>` **get_blend_point_name**\ (\ point\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace2D_method_get_blend_point_name>`
 
-Returns the name of the blend point at index ``point``.
+返回索引 ``point`` 处的混合点的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +527,7 @@ Returns the name of the blend point at index ``point``.
 
 |void| **reorder_blend_point**\ (\ from_index\: :ref:`int<class_int>`, to_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_reorder_blend_point>`
 
-Swaps the blend points at indices ``from_index`` and ``to_index``, exchanging their positions and properties.
+交换位于 ``from_index`` 和 ``to_index`` 索引处的混合点（blend points），互换它们的位置和属性。
 
 .. rst-class:: classref-item-separator
 
@@ -539,7 +539,7 @@ Swaps the blend points at indices ``from_index`` and ``to_index``, exchanging th
 
 |void| **set_blend_point_name**\ (\ point\: :ref:`int<class_int>`, name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_set_blend_point_name>`
 
-Sets the name of the blend point at index ``point``. If the name conflicts with an existing point, a unique name will be generated automatically.
+设置索引为 ``point`` 的混合点的名称。如果该名称与现有的点发生冲突（即重名），系统会自动生成一个唯一的名称。
 
 .. rst-class:: classref-item-separator
 

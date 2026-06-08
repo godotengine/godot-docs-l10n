@@ -459,9 +459,9 @@ En otras plataformas, el método devuelve 0.
 
 :ref:`String<class_String>` **get_drive_label**\ (\ idx\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_drive_label>`
 
-On Windows, returns the label of the drive (partition) passed as an argument.
+En Windows, devuelve la etiqueta de la unidad (partición) pasada como argumento.
 
-On other platforms, or if the requested drive does not exist, returns an empty String.
+En otras plataformas, o si la unidad solicitada no existe, devuelve una cadena vacía.
 
 .. rst-class:: classref-item-separator
 

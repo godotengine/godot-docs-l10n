@@ -204,7 +204,7 @@ EditorPlugin
 
 **main_screen_changed**\ (\ screen_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorPlugin_signal_main_screen_changed>`
 
-Emitted when user changes the workspace (**2D**, **3D**, **Script**, **Game**, **Asset Store**). Also works with custom screens defined by plugins.
+Видається, коли користувач змінює робочу область (**2D**, **3D**, **Скрипт**, **Гра**, **Магазин ресурсів**). Також працює з користувацькими екранами, визначеними плагінами.
 
 .. rst-class:: classref-item-separator
 
@@ -848,11 +848,11 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`Texture2D<class_Texture2D>` **_get_plugin_icon**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_icon>`
 
-Override this method in your plugin to return a :ref:`Texture2D<class_Texture2D>` in order to give it an icon.
+Переопределите цей метод у своєму плагіні, щоб повернути об’єкт типу :ref:`Texture2D<class_Texture2D>` і надати йому іконку.
 
-For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", "Game", and "Asset Store" buttons.
+Для плагінів головного екрану ця іконка відображається у верхній частині екрана, праворуч від кнопок «2D», «3D», «Script», «Game» та «Asset Store».
 
-Ideally, the plugin icon should be white with a transparent background and 16×16 pixels in size.
+В ідеалі іконка плагіна повинна бути білою з прозорим фоном та розміром 16×16 пікселів.
 
 
 .. tabs::
@@ -860,19 +860,19 @@ Ideally, the plugin icon should be white with a transparent background and 16×1
  .. code-tab:: gdscript
 
     func _get_plugin_icon():
-        # You can use a custom icon:
-        return preload("res://addons/my_plugin/my_plugin_icon.svg")
-        # Or use a built-in icon:
-        return EditorInterface.get_editor_theme().get_icon("Node", "EditorIcons")
+     # Ви можете використовувати власну іконку:
+     return preload("res://addons/my_plugin/my_plugin_icon.svg")
+        # Або використайте вбудовану іконку:
+     return EditorInterface.get_editor_theme().get_icon("Node", "EditorIcons")
 
  .. code-tab:: csharp
 
     public override Texture2D _GetPluginIcon()
     {
-        // You can use a custom icon:
+     // Ви можете використовувати власну іконку:
         return ResourceLoader.Load<Texture2D>("res://addons/my_plugin/my_plugin_icon.svg");
-        // Or use a built-in icon:
-        return EditorInterface.Singleton.GetEditorTheme().GetIcon("Node", "EditorIcons");
+     // Або використайте вбудовану іконку:
+     return EditorInterface.Singleton.GetEditorTheme().GetIcon("Node", "EditorIcons");
     }
 
 
@@ -887,9 +887,9 @@ Ideally, the plugin icon should be white with a transparent background and 16×1
 
 :ref:`String<class_String>` **_get_plugin_name**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__get_plugin_name>`
 
-Override this method in your plugin to provide the name of the plugin when displayed in the Godot editor.
+Переопределите цей метод у своєму плагіні, щоб вказати назву плагіна, яка відображатиметься в редакторі Godot.
 
-For main screen plugins, this appears at the top of the screen, to the right of the "2D", "3D", "Script", "Game", and "Asset Store" buttons.
+У плагінів головного екрану ця назва з’являється у верхній частині екрана, праворуч від кнопок «2D», «3D», «Скрипт», «Гра» та «Магазин ресурсів».
 
 .. rst-class:: classref-item-separator
 
@@ -997,32 +997,32 @@ For main screen plugins, this appears at the top of the screen, to the right of 
 
 :ref:`bool<class_bool>` **_has_main_screen**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__has_main_screen>`
 
-Returns ``true`` if this is a main screen editor plugin (it goes in the workspace selector together with **2D**, **3D**, **Script**, **Game**, and **Asset Store**).
+Повертає ``true``, якщо це плагін редактора головного екрану (він відображається у списку робочих просторів разом із **2D**, **3D**, **Script**, **Game** та **Asset Store**).
 
-When the plugin's workspace is selected, other main screen plugins will be hidden, but your plugin will not appear automatically. It needs to be added as a child of :ref:`EditorInterface.get_editor_main_screen()<class_EditorInterface_method_get_editor_main_screen>` and made visible inside :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>`.
+Коли робоча область плагіна вибрана, інші плагіни головного екрану будуть приховані, але ваш плагін не з'явиться автоматично. Його потрібно додати як дочірній елемент :ref:`EditorInterface.get_editor_main_screen()<class_EditorInterface_method_get_editor_main_screen>` і зробити видимим всередині :ref:`_make_visible()<class_EditorPlugin_private_method__make_visible>`.
 
-Use :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>` and :ref:`_get_plugin_icon()<class_EditorPlugin_private_method__get_plugin_icon>` to customize the plugin button's appearance.
+Використовуйте :ref:`_get_plugin_name()<class_EditorPlugin_private_method__get_plugin_name>` та :ref:`_get_plugin_icon()<class_EditorPlugin_private_method__get_plugin_icon>`, щоб налаштувати зовнішній вигляд кнопки плагіна.
 
 ::
 
     var plugin_control
 
     func _enter_tree():
-        plugin_control = preload("my_plugin_control.tscn").instantiate()
-        EditorInterface.get_editor_main_screen().add_child(plugin_control)
-        plugin_control.hide()
+     plugin_control = preload("my_plugin_control.tscn").instantiate()
+     EditorInterface.get_editor_main_screen().add_child(plugin_control)
+     plugin_control.hide()
 
     func _has_main_screen():
-        return true
+     return true
 
     func _make_visible(visible):
-        plugin_control.visible = visible
+     plugin_control.visible = visible
 
     func _get_plugin_name():
-        return "My Super Cool Plugin 3000"
+     return "My Super Cool Plugin 3000"
 
     func _get_plugin_icon():
-        return EditorInterface.get_editor_theme().get_icon("Node", "EditorIcons")
+     return EditorInterface.get_editor_theme().get_icon("Node", "EditorIcons")
 
 .. rst-class:: classref-item-separator
 

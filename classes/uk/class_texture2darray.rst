@@ -1,0 +1,60 @@
+:github_url: hide
+
+.. _class_Texture2DArray:
+
+Texture2DArray
+==============
+
+**Успадковує:** :ref:`ImageTextureLayered<class_ImageTextureLayered>` **<** :ref:`TextureLayered<class_TextureLayered>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+
+Єдиний фактурний ресурс, який складається з декількох, окремих зображень. Кожен образ має однакові розміри і кількість рівнів mipmap.
+
+.. rst-class:: classref-introduction-group
+
+Опис
+--------
+
+Texture2DArray відрізняється від Texture3D: Texture2DArray не підтримує трилінійну інтерполяцію між :ref:`Image<class_Image>`\ s, тобто немає змішування. Дивіться також :ref:`Cubemap<class_Cubemap>` і :ref:`CubemapArray<class_CubemapArray>`, які є масивами текстур зі спеціалізованими функціями кубічної карти. 
+
+Texture2DArray також відрізняється від :ref:`AtlasTexture<class_AtlasTexture>`: у Texture2DArray усі зображення обробляються окремо. В атласі області (тобто окремі зображення) можуть бути різного розміру. Крім того, вам зазвичай потрібно додати відступи навколо регіонів, щоб запобігти випадковому відображенню УФ-променів до кількох регіонів. Те саме стосується mipmapping: ланцюжки Mipmap обробляються окремо для кожного шару. В атласі нарізку потрібно виконувати вручну в шейдері фрагментів. 
+
+Щоб самостійно створити такий файл текстури, повторно імпортуйте файли зображень за допомогою попередніх налаштувань імпорту редактора Godot. Щоб створити Texture2DArray із коду, використовуйте :ref:`ImageTextureLayered.create_from_images()<class_ImageTextureLayered_method_create_from_images>` для екземпляра класу Texture2DArray.
+
+.. rst-class:: classref-reftable-group
+
+Методи
+------------
+
+.. table::
+   :widths: auto
+
+   +---------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`Resource<class_Resource>` | :ref:`create_placeholder<class_Texture2DArray_method_create_placeholder>`\ (\ ) |const| |
+   +---------------------------------+-----------------------------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описи методів
+--------------------------
+
+.. _class_Texture2DArray_method_create_placeholder:
+
+.. rst-class:: classref-method
+
+:ref:`Resource<class_Resource>` **create_placeholder**\ (\ ) |const| :ref:`🔗<class_Texture2DArray_method_create_placeholder>`
+
+Створює заповнювач для цього ресурсу (:ref:`PlaceholderTexture2DArray<class_PlaceholderTexture2DArray>`).
+
+.. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
+.. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
+.. |const| replace:: :abbr:`const (Цей метод не має побічних ефектів. Не змінює ніяку змінну екземпляра об'єкта.)`
+.. |vararg| replace:: :abbr:`vararg (Цей метод приймає будь-яке число аргументів після описаних тут.)`
+.. |constructor| replace:: :abbr:`constructor (Цей метод використовується для побудови типів.)`
+.. |static| replace:: :abbr:`static (Цей метод не потребує екземпляра для виклику, його можна викликати безпосередньо за допомогою назви класу.)`
+.. |operator| replace:: :abbr:`operator (Цей метод описує дійсний оператор для взаємодії з цим типом як з лівим операндом.)`
+.. |bitfield| replace:: :abbr:`BitField (Це значення є цілим числом, складеним у вигляді бітової маски з наступних прапорів.)`
+.. |void| replace:: :abbr:`void (Значення не повертається.)`

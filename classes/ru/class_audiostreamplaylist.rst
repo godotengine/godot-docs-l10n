@@ -14,7 +14,7 @@ AudioStreamPlaylist
 Описание
 ----------------
 
-An audio stream that can play back sub-streams in sequence. Streams can be added to the Playlist with :ref:`set_list_stream()<class_AudioStreamPlaylist_method_set_list_stream>`, and shuffled with :ref:`shuffle<class_AudioStreamPlaylist_property_shuffle>`.
+Аудиопоток, позволяющий воспроизводить подпотоки последовательно. Потоки можно добавлять в плейлист с помощью :ref:`set_list_stream()<class_AudioStreamPlaylist_method_set_list_stream>` и перемешивать с помощью :ref:`shuffle<class_AudioStreamPlaylist_property_shuffle>`.
 
 .. rst-class:: classref-introduction-group
 

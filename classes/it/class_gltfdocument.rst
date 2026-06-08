@@ -214,15 +214,15 @@ If you don't need material features that require tangents, disabling this can re
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_USE_NAMED_SKIN_BINDS** = ``16``
 
-If checked, use named :ref:`Skin<class_Skin>`\ s for animation. The :ref:`MeshInstance3D<class_MeshInstance3D>` node contains 3 properties of relevance here: a skeleton :ref:`NodePath<class_NodePath>` pointing to the :ref:`Skeleton3D<class_Skeleton3D>` node (usually ``..``), a mesh, and a skin:
+Se spuntato, usa :ref:`Skin<class_Skin>` denominate per l'animazione. Il nodo :ref:`MeshInstance3D<class_MeshInstance3D>` contiene 3 proprietà qui rilevanti: un :ref:`NodePath<class_NodePath>` che punta al nodo :ref:`Skeleton3D<class_Skeleton3D>` (solitamente ``..``), una mesh e una skin:
 
-- The :ref:`Skeleton3D<class_Skeleton3D>` node contains a list of bones with names, their pose and rest, a name, and a parent bone.
+- Il nodo :ref:`Skeleton3D<class_Skeleton3D>` contiene una lista di ossa con nomi, la loro posa e il loro riposo, un nome e un osso padre.
 
-- The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
+- La mesh è composta da tutti i dati grezzi dei vertici necessari per visualizzare una mesh. In termini di mesh, sa come i vertici sono dipinti con peso e usa una numerazione interna spesso importata dal software di modellazione 3D.
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For each of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the :ref:`Skin<class_Skin>` contains each bone's name (if this flag is enabled), or the bone's index within the :ref:`Skeleton3D<class_Skeleton3D>` list (if this flag is disabled).
+- La skin contiene le informazioni necessarie per associare questa mesh a questo Skeleton3D. Per ognuno degli ID delle ossa interne scelti dal software di modellazione 3D, contiene due cose. Innanzitutto, una matrice nota come Bind Pose Matrix, Inverse Bind Matrix o IBM in breve. Inoltre, la :ref:`Skin<class_Skin>` contiene il nome di ogni osso (se questo flag è abilitato), o l'indice dell'osso all'interno della lista dello :ref:`Skeleton3D<class_Skeleton3D>` (se questo flag è disabilitato).
 
-Together, this information is enough to tell Godot how to use the bone poses in the :ref:`Skeleton3D<class_Skeleton3D>` node to render the mesh from each :ref:`MeshInstance3D<class_MeshInstance3D>`. Note that each :ref:`MeshInstance3D<class_MeshInstance3D>` may share binds, as is common in models exported from Blender, or each :ref:`MeshInstance3D<class_MeshInstance3D>` may use a separate :ref:`Skin<class_Skin>` object, as is common in models exported from other tools such as Maya.
+Insieme, queste informazioni sono sufficienti per dire a Godot come usare le pose dell'osso nel nodo :ref:`Skeleton3D<class_Skeleton3D>` per renderizzare la mesh da ogni :ref:`MeshInstance3D<class_MeshInstance3D>`. Nota che ogni :ref:`MeshInstance3D<class_MeshInstance3D>` può condividere i bind, come è comune nei modelli esportati da Blender, oppure ogni :ref:`MeshInstance3D<class_MeshInstance3D>` può usare un oggetto :ref:`Skin<class_Skin>` separato, come è comune nei modelli esportati da altri strumenti come Maya.
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_DISCARD_MESHES_AND_MATERIALS:
 

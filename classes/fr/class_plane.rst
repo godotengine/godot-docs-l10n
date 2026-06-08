@@ -486,7 +486,7 @@ Transforme (multiplie) de manière inverse le **Plane** par la matrice de transf
 
 Renvoie ``true`` si les plans sont exactement égaux.
 
-\ **Note:** En raison d'erreurs de précision des flottants, envisagez d'utiliser :ref:`is_equal_approx()<class_Plane_method_is_equal_approx>` qui est plus fiable.
+\ **Note :** En raison d'erreurs de précision des flottants, envisagez d'utiliser :ref:`is_equal_approx()<class_Plane_method_is_equal_approx>` qui est plus fiable.
 
 .. rst-class:: classref-item-separator
 

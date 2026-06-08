@@ -65,9 +65,9 @@ Descrizioni delle proprietà
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-The waveform's maximum allowed value, in dB. This value can range from -24 to 0.
+Il valore massimo consentito della forma d'onda, in decibel. Questo valore può variare da -24.0 a 0.0.
 
-The default value of -0.3 prevents potential inter-sample peaks (ISP) from crossing over 0 dB, which can cause slight distortion on some older hardware.
+Il valore predefinito di -0.3 impedisce eventuali picchi all'interno dei campioni (ISP) di oltrepassare 0 dB, che possono causare una lieve distorsione su alcuni vecchi dispositivi.
 
 .. rst-class:: classref-item-separator
 

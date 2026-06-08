@@ -2293,7 +2293,7 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 Spécifie un fichier pour redéfinir les paramètres du projet. Par exemple : ``user://custom_settings.cfg``. Voir "Redéfinition" dans la description de la classe **ProjectSettings** en haut pour plus d'informations.
 
-\ **Note: ** Quelle que soit la valeur de ce paramètre, ``res://override.cfg`` sera toujours lu pour redéfinir les paramètres du projet.
+\ **Note :** Quelle que soit la valeur de ce paramètre, ``res://override.cfg`` sera toujours lu pour redéfinir les paramètres du projet.
 
 .. rst-class:: classref-item-separator
 
@@ -5823,7 +5823,7 @@ Disposition de sous-pixel LCD utilisée pour l'anti-crénelage de police. Voir :
 
 :ref:`float<class_float>` **gui/timers/button_shortcut_feedback_highlight_time** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_gui/timers/button_shortcut_feedback_highlight_time>`
 
-Lorsque :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` est activé, il s'agit du temps pendant lequel :ref:`BaseButton<class_BaseButton>` restera mis en évidence après un raccourci.
+When :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` is enabled, this is the time the :ref:`BaseButton<class_BaseButton>` will remain highlighted after a shortcut. This duration is not affected by :ref:`Engine.time_scale<class_Engine_property_time_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10803,11 +10803,11 @@ Third-party extensions and modules can add other physics engines to select with 
 
 L'approche utilisée pour la traversée de scène 3D lorsque l'interpolation physique est activée.
 
-- ``DEFAULT``: La méthode optimisée par défaut.
+- ``DEFAULT``\  : La méthode optimisée par défaut.
 
-- ``Legacy``: La méthode de référence précédente utilisée pour la traversée de arborescence de scène, qui est plus lente.
+- ``Legacy``\  : La méthode de référence précédente utilisée pour la traversée de arborescence de scène, qui est plus lente.
 
-- ``Debug``: Échange entre les méthodes ``DEFAULT`` et ``Legacy`` alternativement entre chaque trame, et fournit des informations de logging (ce qui, à son tour, la rend plus lente). Pensée pour du débogage seulement, vous devriez utiliser la méthode ``DEFAULT`` dans la plupart des cas.
+- ``Debug``\  : Échange entre les méthodes ``DEFAULT`` et ``Legacy`` alternativement entre chaque trame, et fournit des informations de logging (ce qui, à son tour, la rend plus lente). Pensée pour du débogage seulement, vous devriez utiliser la méthode ``DEFAULT`` dans la plupart des cas.
 
 .. rst-class:: classref-item-separator
 

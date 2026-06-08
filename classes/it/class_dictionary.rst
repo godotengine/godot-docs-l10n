@@ -12,18 +12,18 @@ Una struttura dati incorporata che contiene coppie chiave-valore.
 Descrizione
 ----------------------
 
-Dictionaries are associative containers that contain values referenced by unique keys. Dictionaries will preserve the insertion order when adding new entries. In other programming languages, this data structure is often referred to as a hash map or an associative array.
+I dizionari sono contenitori associativi che contengono valori riferiti con chiavi univoche. I dizionari manterranno l'ordine di inserimento quando si aggiungono nuove voci. In altri linguaggi di programmazione, questa struttura dati è spesso definita come mappa hash o array associativo.
 
-You can define a dictionary by placing a comma-separated list of ``key: value`` pairs inside curly braces ``{}``.
+Puoi definire un dizionario inserendo un elenco separato da virgole di coppie ``key: value`` all'interno di parentesi graffe ``{}``.
 
-Creating a dictionary:
+Creazione di un dizionario:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var my_dict = {} # Creates an empty dictionary.
+    var my_dict = {} # Crea un dizionario vuoto.
 
     var dict_variable_key = "Another key name"
     var dict_variable_value = "value2"
@@ -34,27 +34,27 @@ Creating a dictionary:
 
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
 
-    # Alternative Lua-style syntax.
-    # Doesn't require quotes around keys, but only string constants can be used as key names.
-    # Additionally, key names must start with a letter or an underscore.
-    # Here, `some_key` is a string literal, not a variable!
+    # Sintassi alternativa in stile Lua.
+    # Non richiede virgolette attorno alle chiavi, ma solo le stringe costanti possono essere utilizzate come nomi di chiave.
+    # Inoltre, i nomi di chiavi devono iniziare con una lettera o un trattino basso.
+    # Qui, `some_key` è una stringa letterale, non una variabile!
     another_dict = {
         some_key = 42,
     }
 
  .. code-tab:: csharp
 
-    var myDict = new Godot.Collections.Dictionary(); // Creates an empty dictionary.
+    var myDict = new Godot.Collections.Dictionary(); // Crea un dizionario vuoto.
     var pointsDict = new Godot.Collections.Dictionary
     {
         { "White", 50 },
         { "Yellow", 75 },
-        { "Orange", 100 },
+        { "Orange", 100 }
     };
 
 
 
-You can access a dictionary's value by referencing its corresponding key. In the above example, ``points_dict["White"]`` will return ``50``. You can also write ``points_dict.White``, which is equivalent. However, you'll have to use the bracket syntax if the key you're accessing the dictionary with isn't a fixed string (such as a number or variable).
+È possibile accedere al valore di un dizionario facendo riferimento alla chiave corrispondente. Nell'esempio precedente, ``points_dict["White"]`` restituirà ``50``. Puoi anche scrivere ``points_dict.White``, che è equivalente. Tuttavia, dovrai usare la sintassi tra parentesi se la chiave con cui accedi al dizionario non è una stringa fissa (come un numero o una variabile).
 
 
 .. tabs::
@@ -64,7 +64,7 @@ You can access a dictionary's value by referencing its corresponding key. In the
     @export_enum("White", "Yellow", "Orange") var my_color: String
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
     func _ready():
-        # We can't use dot syntax here as `my_color` is a variable.
+        # Non possiamo usare la sintassi con i punti qui perché `my_color` è una variabile.
         var points = points_dict[my_color]
 
  .. code-tab:: csharp
@@ -75,7 +75,7 @@ You can access a dictionary's value by referencing its corresponding key. In the
     {
         { "White", 50 },
         { "Yellow", 75 },
-        { "Orange", 100 },
+        { "Orange", 100 }
     };
 
     public override void _Ready()
@@ -85,9 +85,9 @@ You can access a dictionary's value by referencing its corresponding key. In the
 
 
 
-In the above code, ``points`` will be assigned the value that is paired with the appropriate color selected in ``my_color``.
+Nel codice sopra, a ``points`` verrà assegnato il valore associato al colore appropriato selezionato in ``my_color``.
 
-Dictionaries can contain more complex data:
+I dizionari possono contenere dati più complessi:
 
 
 .. tabs::
@@ -95,19 +95,19 @@ Dictionaries can contain more complex data:
  .. code-tab:: gdscript
 
     var my_dict = {
-        "First Array": [1, 2, 3, 4] # Assigns an Array to a String key.
+        "First Array": [1, 2, 3, 4] # Assegna un Array a una chiave String.
     }
 
  .. code-tab:: csharp
 
     var myDict = new Godot.Collections.Dictionary
     {
-        { "First Array", new Godot.Collections.Array { 1, 2, 3, 4 } }
+        {"First Array", new Godot.Collections.Array{1, 2, 3, 4}}
     };
 
 
 
-To add a key to an existing dictionary, access it like an existing key and assign to it:
+Per aggiungere una chiave a un dizionario esistente, accedi ad essa come a una chiave esistente e assegnale:
 
 
 .. tabs::
@@ -115,7 +115,7 @@ To add a key to an existing dictionary, access it like an existing key and assig
  .. code-tab:: gdscript
 
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
-    points_dict["Blue"] = 150 # Add "Blue" as a key and assign 150 as its value.
+    points_dict["Blue"] = 150 # Aggiungi "Blue" come chiave e assegna 150 come valore.
 
  .. code-tab:: csharp
 
@@ -123,22 +123,22 @@ To add a key to an existing dictionary, access it like an existing key and assig
     {
         { "White", 50 },
         { "Yellow", 75 },
-        { "Orange", 100 },
+        { "Orange", 100 }
     };
-    pointsDict["Blue"] = 150; // Add "Blue" as a key and assign 150 as its value.
+    pointsDict["Blue"] = 150; // Aggiungi "Blue" come chiave e assegna 150 come valore.
 
 
 
-Finally, untyped dictionaries can contain different types of keys and values in the same dictionary:
+Infine, i dizionari non tipizzati possono contenere diversi tipi di chiavi e valori nello stesso dizionario:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # This is a valid dictionary.
-    # To access the string "Nested value" below, use `my_dict.sub_dict.sub_key` or `my_dict["sub_dict"]["sub_key"]`.
-    # Indexing styles can be mixed and matched depending on your needs.
+    # Questo è un dizionario valido.
+    # Per accedere alla stringa "Nested value" di seguito, usa `my_dict.sub_dict.sub_key` o `my_dict["sub_dict"]["sub_key"]`.
+    # Gli stili di indicizzazione possono essere mescolati e abbinati in base alle tue esigenze.
     var my_dict = {
         "String Key": 5,
         4: [1, 2, 3],
@@ -148,18 +148,18 @@ Finally, untyped dictionaries can contain different types of keys and values in 
 
  .. code-tab:: csharp
 
-    // This is a valid dictionary.
-    // To access the string "Nested value" below, use `((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]`.
+    // Questo è un dizionario valido.
+    // Per accedere alla stringa "Nested value" qui sotto, usa `((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]`.
     var myDict = new Godot.Collections.Dictionary {
         { "String Key", 5 },
-        { 4, new Godot.Collections.Array { 1, 2, 3 } },
+        { 4, new Godot.Collections.Array{1,2,3} },
         { 7, "Hello" },
-        { "sub_dict", new Godot.Collections.Dictionary { { "sub_key", "Nested value" } } },
+        { "sub_dict", new Godot.Collections.Dictionary{ { "sub_key", "Nested value" } } }
     };
 
 
 
-The keys of a dictionary can be iterated with the ``for`` keyword:
+Le chiavi di un dizionario possono essere iterate con la parola chiave ``for``:
 
 
 .. tabs::
@@ -172,30 +172,30 @@ The keys of a dictionary can be iterated with the ``for`` keyword:
 
  .. code-tab:: csharp
 
-    var groceries = new Godot.Collections.Dictionary { { "Orange", 20 }, { "Apple", 2 }, { "Banana", 4 } };
+    var groceries = new Godot.Collections.Dictionary{ { "Orange", 20 }, { "Apple", 2 }, { "Banana", 4 } };
     foreach (var (fruit, amount) in groceries)
     {
-        // `fruit` is the key, `amount` is the value.
+        // `fruit` è la chiave, `amount` è il valore.
     }
 
 
 
-To enforce a certain type for keys and values, you can create a *typed dictionary*. Typed dictionaries can only contain keys and values of the given types, or that inherit from the given classes:
+Per imporre un determinato tipo per le chiavi e i valori, è possibile creare un *dizionario tipizzato*. I dizionari tipizzati possono contenere solo chiavi e valori dei tipi specificati o che ereditano dalle classi specificate:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Creates a typed dictionary with String keys and int values.
-    # Attempting to use any other type for keys or values will result in an error.
+    # Crea un dizionario tipizzato con chiavi String e valori int.
+    # Utilizzare qualsiasi altro tipo per le chiavi o i valori genererà un errore.
     var typed_dict: Dictionary[String, int] = {
         "some_key": 1,
         "some_other_key": 2,
     }
 
-    # Creates a typed dictionary with String keys and values of any type.
-    # Attempting to use any other type for keys will result in an error.
+    # Crea un dizionario tipizzato con chiavi String e valori di qualsiasi tipo.
+    # Utilizzare qualsiasi altro tipo per le chiavi genererà un errore.
     var typed_dict_key_only: Dictionary[String, Variant] = {
         "some_key": 12.34,
         "some_other_key": "string",
@@ -203,15 +203,15 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
  .. code-tab:: csharp
 
-    // Creates a typed dictionary with String keys and int values.
-    // Attempting to use any other type for keys or values will result in an error.
+    // Crea un dizionario tipizzato con chiavi String e valori int.
+    // Utilizzare qualsiasi altro tipo per le chiavi o i valori genererà un errore.
     var typedDict = new Godot.Collections.Dictionary<String, int> {
         {"some_key", 1},
         {"some_other_key", 2},
     };
 
-    // Creates a typed dictionary with String keys and values of any type.
-    // Attempting to use any other type for keys will result in an error.
+    // Crea un dizionario tipizzato con chiavi String e valori di qualsiasi tipo.
+    // Utilizzare qualsiasi altro tipo per le chiavi genererà un errore.
     var typedDictKeyOnly = new Godot.Collections.Dictionary<String, Variant> {
         {"some_key", 12.34},
         {"some_other_key", "string"},
@@ -219,11 +219,11 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
 
 
-\ **Note:** Dictionaries are always passed by reference. To get a copy of a dictionary which can be modified independently of the original dictionary, use :ref:`duplicate()<class_Dictionary_method_duplicate>`.
+\ **Nota:** I dizionari sono sempre passati per riferimento. Per ottenere una copia di un dizionario che si può modificare indipendentemente dal dizionario originale, usa :ref:`duplicate()<class_Dictionary_method_duplicate>`.
 
-\ **Note:** Erasing elements while iterating over dictionaries is **not** supported and will result in unpredictable behavior.
+\ **Nota:** Rimuovere elementi durante un'iterazione su un dizionario **non** è supportato e causerà comportamenti imprevedibili.
 
-\ **Note:** In a boolean context, a dictionary will evaluate to ``false`` if it's empty (``{}``). Otherwise, a dictionary will always evaluate to ``true``.
+\ **Nota:** In un contesto booleano, un dizionario sarà valutato come ``false`` se è vuoto (``{}``). Altrimenti, un dizionario sarà sempre valutato come ``true``.
 
 .. note::
 
@@ -900,7 +900,7 @@ Restituisce ``true`` se i due dizionari contengono le stesse chiavi e valori, le
 
 :ref:`bool<class_bool>` **set**\ (\ key\: :ref:`Variant<class_Variant>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Dictionary_method_set>`
 
-Sets the value of the element at the given ``key`` to the given ``value``. Returns ``true`` if the value is set successfully. Fails and returns ``false`` if the dictionary is read-only, or if ``key`` and ``value`` don't match the dictionary's types. This is the same as using the ``[]`` operator (``dict[key] = value``).
+Imposta il valore dell'elemento alla chiave ``key`` sul valore ``value``. Restituisce ``true`` se il valore è impostato correttamente. Fallisce e restituisce ``false`` se il dizionario è di sola lettura o se ``key`` e ``value`` non corrispondono ai tipi del dizionario. Questo equivale a usare l'operatore ``[]`` (``dict[key] = value``).
 
 .. rst-class:: classref-item-separator
 

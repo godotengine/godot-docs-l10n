@@ -474,7 +474,7 @@ Emitted when the node's maximum size changes.
 
 Émis quand le curseur de la souris entre dans la zone visible du contrôle (ou un de ses enfants), qui n'est pas masqué derrière d'autres Contrôles ou Fenêtres, fourni son :ref:`mouse_filter<class_Control_property_mouse_filter>`, laisse l’événement l'atteindre, et peu importe s’il est actuellement ciblé ou non.
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` n'affecte pas quel Contrôle reçoit le signal.
+\ **Note :** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` n'affecte pas quel Contrôle reçoit le signal.
 
 .. rst-class:: classref-item-separator
 
@@ -1268,7 +1268,7 @@ Envoyé quand le nœud change de taille. Utilisez :ref:`size<class_Control_prope
 
 Envoyé quand le curseur de la souris entre dans la zone visible du contrôle (ou un de ses enfants), qui n'est pas masqué derrière d'autres Contrôles ou Fenêtres, fourni son :ref:`mouse_filter<class_Control_property_mouse_filter>`, laisse l’événement l'atteindre, et peu importe s’il est actuellement ciblé ou non.
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` n'affecte pas quel Contrôle reçoit la notification.
+\ **Note :** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` n'affecte pas quel Contrôle reçoit la notification.
 
 Voir aussi :ref:`NOTIFICATION_MOUSE_ENTER_SELF<class_Control_constant_NOTIFICATION_MOUSE_ENTER_SELF>`.
 
@@ -1280,7 +1280,7 @@ Voir aussi :ref:`NOTIFICATION_MOUSE_ENTER_SELF<class_Control_constant_NOTIFICATI
 
 Envoyé quand le curseur de la souris sort de la zone visible du contrôle (ou un de ses enfants), qui n'est pas masqué derrière d'autres Contrôles ou Fenêtres, fourni son :ref:`mouse_filter<class_Control_property_mouse_filter>`, laisse l’événement l'atteindre, et peu importe s’il est actuellement ciblé ou non.
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` n'affecte pas quel Contrôle reçoit la notification.
+\ **Note :** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` n'affecte pas quel Contrôle reçoit la notification.
 
 Voir aussi :ref:`NOTIFICATION_MOUSE_EXIT_SELF<class_Control_constant_NOTIFICATION_MOUSE_EXIT_SELF>`.
 
@@ -1294,7 +1294,7 @@ Voir aussi :ref:`NOTIFICATION_MOUSE_EXIT_SELF<class_Control_constant_NOTIFICATIO
 
 Envoyé quand le curseur de la souris entre dans la zone visible du contrôle, qui n'est pas masqué derrière d'autres Contrôles ou Fenêtres, fourni son :ref:`mouse_filter<class_Control_property_mouse_filter>`, laisse l’événement l'atteindre, et peu importe s’il est actuellement ciblé ou non.
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` n'affecte pas quel Contrôle reçoit la notification.
+\ **Note :** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` n'affecte pas quel Contrôle reçoit la notification.
 
 Voir aussi :ref:`NOTIFICATION_MOUSE_ENTER<class_Control_constant_NOTIFICATION_MOUSE_ENTER>`.
 
@@ -1308,7 +1308,7 @@ Voir aussi :ref:`NOTIFICATION_MOUSE_ENTER<class_Control_constant_NOTIFICATION_MO
 
 Envoyé quand le curseur de la souris sort de la zone visible du contrôle, qui n'est pas masqué derrière d'autres Contrôles ou Fenêtres, fourni son :ref:`mouse_filter<class_Control_property_mouse_filter>`, laisse l’événement l'atteindre, et peu importe s’il est actuellement ciblé ou non.
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` n'affecte pas quel Contrôle reçoit la notification.
+\ **Note :** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` n'affecte pas quel Contrôle reçoit la notification.
 
 Voir aussi :ref:`NOTIFICATION_MOUSE_EXIT<class_Control_constant_NOTIFICATION_MOUSE_EXIT>`.
 
@@ -2314,7 +2314,7 @@ L'échelle du nœud, relative à :ref:`size<class_Control_property_size>`. Chang
 
 \ **Note :** Cette propriété est principalement destinée à être utilisée pour des animations. Pour supporter plusieurs résolutions dans votre projet, utilisez un mode d'étirement approprié comme décrit dans la :doc:`documentation <../tutorials/rendering/multiple_resolutions>` au lieu de dimensionner chaque Control individuellement.
 
-\ **Note:** :ref:`FontFile.oversampling<class_FontFile_property_oversampling>` ne prend *pas* la :ref:`scale<class_Control_property_scale>` du **Control** en compte. Cela signifie que l'agrandissement/rétrécissement causera un aspect flou et pixelisé aux polices bitmap et des polices dynamiques rasterisées (non-MSDF). Pour garantir que le texte reste net indépendamment de l'échelle, vous pouvez activer le rendu de police MSDF en activant :ref:`ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>` (s'applique uniquement à la police du projet par défaut), ou en activant **Champ de Distance Signé Multicanal** dans les options d'import d'une DynamicFont pour les polices personnalisées. Sur les polices système, :ref:`SystemFont.multichannel_signed_distance_field<class_SystemFont_property_multichannel_signed_distance_field>` peut être activé dans l'inspecteur.
+\ **Note :** :ref:`FontFile.oversampling<class_FontFile_property_oversampling>` ne prend *pas* la :ref:`scale<class_Control_property_scale>` du **Control** en compte. Cela signifie que l'agrandissement/rétrécissement causera un aspect flou et pixelisé aux polices bitmap et des polices dynamiques rasterisées (non-MSDF). Pour garantir que le texte reste net indépendamment de l'échelle, vous pouvez activer le rendu de police MSDF en activant :ref:`ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>` (s'applique uniquement à la police du projet par défaut), ou en activant **Champ de Distance Signé Multicanal** dans les options d'import d'une DynamicFont pour les polices personnalisées. Sur les polices système, :ref:`SystemFont.multichannel_signed_distance_field<class_SystemFont_property_multichannel_signed_distance_field>` peut être activé dans l'inspecteur.
 
 \ **Note :** Si le nœud Control est un enfant d'un nœud :ref:`Container<class_Container>`, l'échelle sera réinitialisée à ``Vector2(1, 1)`` lorsque la scène est instanciée. Pour définir l'échelle du Control lors de son instanciation, attendez une trame avec ``await get_tree().process_frame`` puis définissez sa propriété :ref:`scale<class_Control_property_scale>`.
 

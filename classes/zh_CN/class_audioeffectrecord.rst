@@ -14,13 +14,13 @@ AudioEffectRecord
 描述
 ----
 
-Allows the user to record the sound from an audio bus into an :ref:`AudioStreamWAV<class_AudioStreamWAV>`. When used on the Master audio bus, this includes all audio output by Godot.
+允许用户将音频总线的声音录制到 :ref:`AudioStreamWAV<class_AudioStreamWAV>` 中。当在主音频总线上使用时，这包括 Godot 的所有音频输出。
 
-Unlike :ref:`AudioEffectCapture<class_AudioEffectCapture>`, this effect encodes the recording with the given format (8-bit, 16-bit, or compressed) instead of giving access to the raw audio samples.
+与 :ref:`AudioEffectCapture<class_AudioEffectCapture>` 不同，该效果以给定格式（8 位、16 位或压缩）对录音进行编码，而不是提供对原始音频样本的访问。
 
-Can be used (with an :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`) to record from a microphone.
+可被用于（与 :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>` 一起）从麦克风进行录音。
 
-\ **Note:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` must be ``true`` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
+\ **注意：**\ :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` 必须为 ``true`` 音频输入才能正常工作。另见该设置的说明，了解与权限和操作系统隐私设置相关的注意事项。
 
 .. rst-class:: classref-introduction-group
 

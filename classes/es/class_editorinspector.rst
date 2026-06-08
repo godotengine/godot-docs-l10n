@@ -200,7 +200,7 @@ Descripciones de Métodos
 
 |void| **collapse_all_folding**\ (\ ) :ref:`🔗<class_EditorInspector_method_collapse_all_folding>`
 
-Collapses all foldable sections.
+Pliega todas las secciones plegables.
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Shows the properties of the given ``object`` in this inspector for editing. To c
 
 |void| **expand_all_folding**\ (\ ) :ref:`🔗<class_EditorInspector_method_expand_all_folding>`
 
-Expands all foldable sections.
+Expande todas las secciones plegables.
 
 .. rst-class:: classref-item-separator
 

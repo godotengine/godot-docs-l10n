@@ -1,0 +1,82 @@
+:github_url: hide
+
+.. _class_WorldBoundaryShape2D:
+
+WorldBoundaryShape2D
+====================
+
+**Успадковує:** :ref:`Shape2D<class_Shape2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+
+Форма 2D світу, що використовується для фізичного зіткнення.
+
+.. rst-class:: classref-introduction-group
+
+Опис
+--------
+
+A 2D світ граничної форми, призначеної для використання в фізиці. **WorldBoundaryShape2D** працює як нескінченна пряма лінія, яка змушує всіх фізико-фізичних органів триматися над нею. Нормальний ряд визначає, який напрямок вважається "вище" і в редакторі, менша лінія над ним представляє цей напрямок. Наприклад, можна використовувати для нескінченних плоских підлог.
+
+.. rst-class:: classref-reftable-group
+
+Властивості
+----------------------
+
+.. table::
+   :widths: auto
+
+   +-------------------------------+---------------------------------------------------------------+--------------------+
+   | :ref:`float<class_float>`     | :ref:`distance<class_WorldBoundaryShape2D_property_distance>` | ``0.0``            |
+   +-------------------------------+---------------------------------------------------------------+--------------------+
+   | :ref:`Vector2<class_Vector2>` | :ref:`normal<class_WorldBoundaryShape2D_property_normal>`     | ``Vector2(0, -1)`` |
+   +-------------------------------+---------------------------------------------------------------+--------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описи властивостей
+------------------------------------
+
+.. _class_WorldBoundaryShape2D_property_distance:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **distance** = ``0.0`` :ref:`🔗<class_WorldBoundaryShape2D_property_distance>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_distance**\ (\ value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_distance**\ (\ )
+
+Відстань від походження до лінії, вираженої в плані :ref:`normal<class_WorldBoundaryShape2D_property_normal>` (за його напрямком і величиною). Фактична абсолютна відстань від походження до лінії може бути розрахована як ``abs(distance) / normal.length()``.
+
+У співвідношенні лінії ``ax + номінальний = d``, це ``d``, в той час як ``(a, b)`` координати представлені :ref:`normal<class_WorldBoundaryShape2D_property_normal>` майном.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_WorldBoundaryShape2D_property_normal:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2<class_Vector2>` **normal** = ``Vector2(0, -1)`` :ref:`🔗<class_WorldBoundaryShape2D_property_normal>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_normal**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
+- :ref:`Vector2<class_Vector2>` **get_normal**\ (\ )
+
+Нормальний ряд, як правило, вектор блоків. Його напрямок вказує на незбираний півлітак. Може бути будь-якої довжини, але нуль. За замовчуванням до :ref:`Vector2.UP<class_Vector2_constant_UP>`.
+
+.. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
+.. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
+.. |const| replace:: :abbr:`const (Цей метод не має побічних ефектів. Не змінює ніяку змінну екземпляра об'єкта.)`
+.. |vararg| replace:: :abbr:`vararg (Цей метод приймає будь-яке число аргументів після описаних тут.)`
+.. |constructor| replace:: :abbr:`constructor (Цей метод використовується для побудови типів.)`
+.. |static| replace:: :abbr:`static (Цей метод не потребує екземпляра для виклику, його можна викликати безпосередньо за допомогою назви класу.)`
+.. |operator| replace:: :abbr:`operator (Цей метод описує дійсний оператор для взаємодії з цим типом як з лівим операндом.)`
+.. |bitfield| replace:: :abbr:`BitField (Це значення є цілим числом, складеним у вигляді бітової маски з наступних прапорів.)`
+.. |void| replace:: :abbr:`void (Значення не повертається.)`

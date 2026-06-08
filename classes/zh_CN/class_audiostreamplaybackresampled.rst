@@ -9,14 +9,14 @@ AudioStreamPlaybackResampled
 
 **派生：** :ref:`AudioStreamGeneratorPlayback<class_AudioStreamGeneratorPlayback>`, :ref:`AudioStreamPlaybackOggVorbis<class_AudioStreamPlaybackOggVorbis>`
 
-Playback class used for resampled :ref:`AudioStream<class_AudioStream>`\ s.
+用于重采样 :ref:`AudioStream<class_AudioStream>` 的播放类。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Playback class used to mix an :ref:`AudioStream<class_AudioStream>`'s audio samples to :ref:`AudioServer.get_mix_rate()<class_AudioServer_method_get_mix_rate>` using cubic interpolation.
+用于将 :ref:`AudioStream<class_AudioStream>` 的音频样本通过三次插值混合至 :ref:`AudioServer.get_mix_rate()<class_AudioServer_method_get_mix_rate>` 的播放类。
 
 .. rst-class:: classref-reftable-group
 
@@ -49,7 +49,7 @@ Playback class used to mix an :ref:`AudioStream<class_AudioStream>`'s audio samp
 
 :ref:`float<class_float>` **_get_stream_sampling_rate**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_AudioStreamPlaybackResampled_private_method__get_stream_sampling_rate>`
 
-Returns an :ref:`AudioStream<class_AudioStream>`'s sample rate, in Hz. Used to perform resampling.
+返回 :ref:`AudioStream<class_AudioStream>` 的采样率，单位为 Hz。用于执行重采样。
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ Returns an :ref:`AudioStream<class_AudioStream>`'s sample rate, in Hz. Used to p
 
 :ref:`int<class_int>` **_mix_resampled**\ (\ dst_buffer\: ``AudioFrame*``, frame_count\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_AudioStreamPlaybackResampled_private_method__mix_resampled>`
 
-Called by :ref:`begin_resample()<class_AudioStreamPlaybackResampled_method_begin_resample>` to mix an :ref:`AudioStream<class_AudioStream>` to :ref:`AudioServer.get_mix_rate()<class_AudioServer_method_get_mix_rate>`. Uses :ref:`_get_stream_sampling_rate()<class_AudioStreamPlaybackResampled_private_method__get_stream_sampling_rate>` as the source sample rate. Returns the number of mixed frames.
+由 :ref:`begin_resample()<class_AudioStreamPlaybackResampled_method_begin_resample>` 调用，用于将 :ref:`AudioStream<class_AudioStream>` 混音至 :ref:`AudioServer.get_mix_rate()<class_AudioServer_method_get_mix_rate>` 指定的采样率。使用 :ref:`_get_stream_sampling_rate()<class_AudioStreamPlaybackResampled_private_method__get_stream_sampling_rate>` 作为源采样率。返回已混音的帧数。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Called by :ref:`begin_resample()<class_AudioStreamPlaybackResampled_method_begin
 
 |void| **begin_resample**\ (\ ) :ref:`🔗<class_AudioStreamPlaybackResampled_method_begin_resample>`
 
-Called when an :ref:`AudioStream<class_AudioStream>` is played. Clears the cubic interpolation history and starts mixing by calling :ref:`_mix_resampled()<class_AudioStreamPlaybackResampled_private_method__mix_resampled>`.
+当 :ref:`AudioStream<class_AudioStream>` 开始播放时调用。清除三次插值历史记录，并通过调用 :ref:`_mix_resampled()<class_AudioStreamPlaybackResampled_private_method__mix_resampled>` 开始混音。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

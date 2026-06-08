@@ -3430,9 +3430,9 @@ La valeur de référence du pochoir (0-255). Typiquement une puissance de 2.
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-Si ``true``, la diffusion de la surface est activée. Émule la lumière qui pénètre la surface d'un objet, est dispersée, puis émerge. La qualité de diffusion de la surface est contrôlée par :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>`.
+Si ``true``, la transluminescence est activée. Émule la lumière qui pénètre la surface d'un objet, est dispersée, puis émerge. La qualité de la transluminescence est contrôlée par :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>`.
 
-\ **Note:** La diffusion de la surface n'est pas pris en charge dans les vues qui ont un fond transparent (où :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` est ``true``).
+\ **Note :** La transluminescence n'est pas pris en charge dans les viewports qui ont un fond transparent (où :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` vaut ``true``).
 
 .. rst-class:: classref-item-separator
 

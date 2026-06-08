@@ -122,9 +122,9 @@ MenuButton
 
 :ref:`int<class_int>` **popup/item_{index}/checkable** = ``0`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/checkable>`
 
-The checkable item type of the item at ``index``.
+索引为 ``index`` 的可勾选菜单项的类型。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必须在 ``0 .. item_count - 1`` 范围内。
 
 .. rst-class:: classref-item-separator
 
@@ -136,9 +136,9 @@ The checkable item type of the item at ``index``.
 
 :ref:`bool<class_bool>` **popup/item_{index}/checked** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/checked>`
 
-If ``true``, the item at ``index`` is checked.
+如果设置为 ``true``\ ，那么位于 ``index`` 位置的选项就会被勾选。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围在 ``0 到 item_count - 1`` 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -150,9 +150,9 @@ If ``true``, the item at ``index`` is checked.
 
 :ref:`bool<class_bool>` **popup/item_{index}/disabled** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+如果为 ``true``\ ，则禁用位于 ``index`` 处的项目。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -164,9 +164,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **popup/item_{index}/icon** :ref:`🔗<class_MenuButton_property_popup/item_{index}/icon>`
 
-The icon of the item at ``index``.
+位于 ``index`` 处的项目的图标。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -178,9 +178,9 @@ The icon of the item at ``index``.
 
 :ref:`int<class_int>` **popup/item_{index}/id** = ``0`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/id>`
 
-The ID of the item at ``index``.
+索引为 ``index`` 的菜单项的 ID。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必须在 ``0 .. item_count - 1`` 范围内。
 
 .. rst-class:: classref-item-separator
 
@@ -192,9 +192,9 @@ The ID of the item at ``index``.
 
 :ref:`bool<class_bool>` **popup/item_{index}/separator** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/separator>`
 
-If ``true``, the item at ``index`` is a separator.
+如果为 ``true``\ ，则索引为 ``index`` 的菜单项是一个分隔符。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必须在 ``0 .. item_count - 1`` 范围内。
 
 .. rst-class:: classref-item-separator
 
@@ -206,9 +206,9 @@ If ``true``, the item at ``index`` is a separator.
 
 :ref:`String<class_String>` **popup/item_{index}/text** = ``""`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/text>`
 
-The text of the item at ``index``.
+位于 ``index`` 处的项目的文本。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 

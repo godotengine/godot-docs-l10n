@@ -79,7 +79,7 @@ OpenXRSpatialComponentData
 
 |void| **_set_capacity**\ (\ capacity\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__set_capacity>`
 
-Sets the expected capacity as provided by the spatial entities query system. Buffers should be initialized with the correct storage.
+设置由空间实体查询系统提供的预期容量（expected capacity）。缓冲区（buffers）应当使用正确的存储空间进行初始化。
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ Sets the expected capacity as provided by the spatial entities query system. Buf
 
 :ref:`int<class_int>` **get_component_type**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentData_method_get_component_type>`
 
-Gets this **OpenXRSpatialComponentData**'s ``XrSpatialComponentTypeEXT``.
+获取此 **OpenXRSpatialComponentData** 的 ``XrSpatialComponentTypeEXT``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Gets this **OpenXRSpatialComponentData**'s ``XrSpatialComponentTypeEXT``.
 
 |void| **set_capacity**\ (\ capacity\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialComponentData_method_set_capacity>`
 
-Sets the expected capacity as provided by the spatial entities query system. Buffers should be initialized with the correct storage.
+设置由空间实体查询系统提供的预期容量（expected capacity）。缓冲区（buffers）应当使用正确的存储空间进行初始化。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

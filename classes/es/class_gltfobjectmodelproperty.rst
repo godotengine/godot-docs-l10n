@@ -94,7 +94,7 @@ enum **GLTFObjectModelType**: :ref:`🔗<enum_GLTFObjectModelProperty_GLTFObject
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_UNKNOWN** = ``0``
 
-Unknown or not set object model type. If the object model type is set to this value, the real type still needs to be determined.
+Tipo de modelo de objeto desconocido o no establecido. Si el tipo de modelo de objeto se establece en este valor, aún es necesario determinar el tipo real.
 
 .. _class_GLTFObjectModelProperty_constant_GLTF_OBJECT_MODEL_TYPE_BOOL:
 
@@ -102,7 +102,7 @@ Unknown or not set object model type. If the object model type is set to this va
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_BOOL** = ``1``
 
-Object model type "bool". Represented in the glTF JSON as a boolean, and encoded in a :ref:`GLTFAccessor<class_GLTFAccessor>` as "SCALAR". When encoded in an accessor, a value of ``0`` is ``false``, and any other value is ``true``.
+Tipo de modelo de objeto "bool". Representado en el JSON de glTF como un booleano, y codificado en un :ref:`GLTFAccessor<class_GLTFAccessor>` como "SCALAR". Cuando se codifica en un accessor, un valor de ``0`` es ``false``, y cualquier otro valor es ``true``.
 
 .. _class_GLTFObjectModelProperty_constant_GLTF_OBJECT_MODEL_TYPE_FLOAT:
 
@@ -266,7 +266,7 @@ In most cases :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths
 - |void| **set_object_model_type**\ (\ value\: :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>`\ )
 - :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **get_object_model_type**\ (\ )
 
-The type of data stored in the glTF file as defined by the object model. This is a superset of the available accessor types, and determines the accessor type.
+El tipo de datos almacenados en el archivo glTF tal como lo define el modelo de objeto. Este es un superconjunto de los tipos de acceso disponibles y determina el tipo de acceso (accessor).
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ The type of data stored in the glTF file as defined by the object model. This is
 - |void| **set_variant_type**\ (\ value\: :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`\ )
 - :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` **get_variant_type**\ (\ )
 
-The type of data stored in the Godot property. This is the type of the property that the :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>` point to.
+El tipo de datos almacenados en la propiedad de Godot. Este es el tipo de la propiedad a la que apuntan las :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>`.
 
 .. rst-class:: classref-section-separator
 

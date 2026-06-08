@@ -14,11 +14,11 @@ Rotation based intersection of two circles inverse kinematics solver.
 Descrizione
 ----------------------
 
-This :ref:`IKModifier3D<class_IKModifier3D>` requires a pole target. It provides deterministic results by constructing a plane from each joint and pole target and finding the intersection of two circles (disks in 3D).
+Questo :ref:`IKModifier3D<class_IKModifier3D>` richiede un obiettivo di polo. Fornisce risultati deterministici costruendo un piano a partire da ogni articolazione e obiettivo di polo, e trovando l'intersezione di due cerchi (dischi in 3D).
 
-This IK can handle twist by setting the pole direction. If there are more than one bone between each set bone, their rotations are ignored, and the straight line connecting the root-middle and middle-end joints are treated as virtual bones.
+Questo IK può gestire la torsione impostando la direzione del polo. Se ci sono più ossa tra ciascun osso impostato, le loro rotazioni sono ignorate e la linea retta che collega le articolazioni radice-centro e centro-fine sono trattate come ossa virtuali.
 
-\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **Nota:** Tutti i metodi di questa classe accettano un parametro ``index``. Questo parametro specifica quale voce nell'elenco delle impostazioni restituire, se l'IK ha più voci (ad esempio, ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 

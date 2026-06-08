@@ -45,11 +45,11 @@ Descrizioni dei metodi
 
 :ref:`bool<class_bool>` **generate**\ (\ from\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_OptimizedTranslation_method_generate>`
 
-Generates and sets an optimized translation from the given :ref:`Translation<class_Translation>` resource. Returns ``true`` if successful.
+Genera e imposta una traduzione ottimizzata dalla risorsa :ref:`Translation<class_Translation>` specificata. Restituisce ``true`` in caso di successo.
 
-\ **Note:** Messages in ``from`` should not use context or plural forms.
+\ **Nota:** I messaggi in ``from`` non devono utilizzare i contesti o le forme plurali.
 
-\ **Note:** This method is intended to be used in the editor. It does nothing when called from an exported project.
+\ **Nota:** Questo metodo è destinato all'uso nell'editor. Non fa nulla quando viene chiamato da un progetto esportato.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -153,9 +153,9 @@ InputEventMouseMotion
 - |void| **set_screen_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_velocity**\ (\ )
 
-The unscaled mouse velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`.
+Немасштабована швидкість руху миші в пікселях за секунду в екранних координатах. Ця швидкість *не* масштабується відповідно до коефіцієнта масштабування вмісту або викликів методу :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`.
 
-\ **Note:** In :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mode, :ref:`screen_velocity<class_InputEventMouseMotion_property_screen_velocity>` returns ``(0, 0)`` because the mouse cursor is hidden and locked. Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
+\ **Примітка:** У режимі :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` :ref:`screen_velocity<class_InputEventMouseMotion_property_screen_velocity>` повертає ``(0, 0)``, оскільки курсор миші прихований і заблокований. Використовуйте :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` для наведення миші у режимі :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`.
 
 .. rst-class:: classref-item-separator
 
@@ -189,11 +189,11 @@ The unscaled mouse velocity in pixels per second in screen coordinates. This vel
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-The mouse velocity in pixels per second.
+Швидкість руху миші в пікселях за секунду.
 
-\ **Note:** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. That means mouse sensitivity may appear different depending on resolution.
+\ **Примітка:** Значення :ref:`velocity<class_InputEventMouseMotion_property_velocity>` автоматично масштабується відповідно до коефіцієнта масштабування вмісту, який визначається налаштуваннями режиму розтягування проекту. Це означає, що чутливість миші може відрізнятися залежно від роздільної здатності.
 
-\ **Note:** In :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mode, :ref:`velocity<class_InputEventMouseMotion_property_velocity>` returns ``(0, 0)`` because the mouse cursor is hidden and locked. Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
+\ **Примітка:** У режимі :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` :ref:`velocity<class_InputEventMouseMotion_property_velocity>` повертає ``(0, 0)``, оскільки курсор миші прихований і заблокований. Використовуйте :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` для наведення миші у режимі :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -191,9 +191,9 @@ Si ``true``, la boîte de dialogue sera cachée lorsque l'action ``ui_close_dial
 - |void| **set_hide_on_ok**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_hide_on_ok**\ (\ )
 
-Si ``true``, la boîte de dialogue est cachée quand le bouton OK est pressé. Vous pouvez le mettre à ``false`` si vous voulez, par exemple, valider l'entrée quand le signal :ref:`confirmed<class_AcceptDialog_signal_confirmed>` est reçu et masquer manuellement la boîte de dialogue.
+Si ``true``, la boîte de dialogue est cachée quand le bouton OK est appuyé. Vous pouvez le définir à ``false`` si vous voulez, par exemple, valider l'entrée quand le signal :ref:`confirmed<class_AcceptDialog_signal_confirmed>` est reçu et masquer manuellement la boîte de dialogue avec votre propre logique.
 
-\ **Note:** Plusieurs nœuds dérivés de cette classe peuvent avoir une valeur par défaut différente mais aussi leur propre logique intégrée qui outrepassera ce réglage. Par exemple :ref:`FileDialog<class_FileDialog>` utilise par défaut ``false``, et contient sa propre logique pour valider l'entrée qui est appelée quand vous pressez OK, puis va cacher le dialogue si cette entrée est valide. Telle quelle, cette propriété ne peut pas être utilisée dans :ref:`FileDialog<class_FileDialog>` pour désactiver la dissimulation de la boîte de dialogue quand OK est pressé.
+\ **Note :** Plusieurs nœuds dérivés de cette classe peuvent avoir une valeur par défaut différente mais aussi leur propre logique intégrée qui redéfinira ce paramètre. Par exemple :ref:`FileDialog<class_FileDialog>` utilise par défaut ``false``, et contient sa propre logique pour valider l'entrée qui est appelée quand vous pressez OK, ce qui va cacher le dialogue si l'entrée est valide. Telle quelle, cette propriété ne peut pas être utilisée dans :ref:`FileDialog<class_FileDialog>` pour désactiver la dissimulation de la boîte de dialogue quand OK est appuyé.
 
 .. rst-class:: classref-item-separator
 

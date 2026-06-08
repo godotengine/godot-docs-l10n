@@ -582,7 +582,7 @@ Aviso de derechos de autor del paquete visible para el usuario (localizado).
 
 :ref:`int<class_int>` **application/export_angle** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/export_angle>`
 
-If set to ``1``, ANGLE libraries are exported with the exported application. If set to ``0``, ANGLE libraries are exported only if :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` is set to ``"opengl3_angle"``.
+Si se establece en ``1``, las bibliotecas ANGLE se exportan con la aplicación exportada. Si se establece en ``0``, las bibliotecas ANGLE solo se exportan si :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` se establece en ``"opengl3_angle"``.
 
 .. rst-class:: classref-item-separator
 
@@ -1351,7 +1351,7 @@ Indica si tu aplicación recopila datos publicitarios.
 
 :ref:`int<class_int>` **privacy/collected_data/advertising_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/advertising_data/collection_purposes>`
 
-The reasons your app collects advertising data. See `Describing data use in privacy manifests <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu app recopila datos publicitarios. Véase `Describir el uso de datos en los manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3297,7 +3297,7 @@ Array de argumentos de línea de comando adicionales pasados al SCP.
 
 :ref:`String<class_String>` **ssh_remote_deploy/extra_args_ssh** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/extra_args_ssh>`
 
-Array of the additional command line arguments passed to the SSH.
+Array de los argumentos adicionales de la línea de comandos que se pasan a SSH.
 
 .. rst-class:: classref-item-separator
 
@@ -3309,7 +3309,7 @@ Array of the additional command line arguments passed to the SSH.
 
 :ref:`String<class_String>` **ssh_remote_deploy/host** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/host>`
 
-Remote host SSH user name and address, in ``user@address`` format.
+Nombre de usuario y dirección SSH del host remoto, en formato ``usuario@dirección``.
 
 .. rst-class:: classref-item-separator
 

@@ -25,7 +25,7 @@ AudioEffectSpectrumAnalyzerInstance
 
 - :doc:`音频总线 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 - `音频频谱可视化演示 <https://godotengine.org/asset-library/asset/2762>`__
 
@@ -87,9 +87,9 @@ enum **MagnitudeMode**: :ref:`🔗<enum_AudioEffectSpectrumAnalyzerInstance_Magn
 
 :ref:`Vector2<class_Vector2>` **get_magnitude_for_frequency_range**\ (\ from_hz\: :ref:`float<class_float>`, to_hz\: :ref:`float<class_float>`, mode\: :ref:`MagnitudeMode<enum_AudioEffectSpectrumAnalyzerInstance_MagnitudeMode>` = 1\ ) |const| :ref:`🔗<class_AudioEffectSpectrumAnalyzerInstance_method_get_magnitude_for_frequency_range>`
 
-返回从 ``from_hz`` 到 ``to_hz`` 频率范围内的幅度，使用线性能量单位，返回的是 Vector2。返回值的 ``x`` 分量代表左声道、\ ``y`` 分量代表右声道。
+返回从 ``from_hz`` 到 ``to_hz`` 频率范围内的幅度，使用线性能量单位，返回的是 Vector2。返回值的 ``x`` 分量代表立体声左声道、\ ``y`` 分量代表右声道。
 
-\ ``mode`` 决定的是频率范围的处理方式。
+\ ``mode`` 决定的是该频率范围的处理方式。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -16,7 +16,7 @@ AudioEffectInstance
 描述
 ----
 
-音频效果实例操纵它接收到的音频以获得给定的效果。该实例在添加到总线时由 :ref:`AudioEffect<class_AudioEffect>` 自动创建，通常不应直接创建。如果需要，可以在运行时使用 :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` 获取它。
+音频效果实例操纵它接收到的音频以获得给定的效果。该实例在被添加到总线时由 :ref:`AudioEffect<class_AudioEffect>` 自动创建，通常不应直接创建。如果需要，可以在运行时使用 :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` 获取它。
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ AudioEffectInstance
 
 - :doc:`音频总线 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -58,7 +58,7 @@ AudioEffectInstance
 
 由 :ref:`AudioServer<class_AudioServer>` 调用来处理该效果。当 :ref:`_process_silence()<class_AudioEffectInstance_private_method__process_silence>` 未被覆盖或返回 ``false`` 时，该方法仅在总线处于活动状态时调用。
 
-\ **注意：**\ 在 GDScript 或 C# 中覆盖该方法没有用。只有 GDExtension 可以利用它。
+\ **注意：**\ 在 GDScript 或 C# 中覆盖该方法没用。只有 GDExtension 可以利用它。
 
 .. rst-class:: classref-item-separator
 

@@ -144,7 +144,7 @@ enum **TextureMapMode**: :ref:`🔗<enum_GLTFDocument_TextureMapMode>`
 
 :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **TEXTURE_MAP_MODE_DO_NOT_REMAP** = ``0``
 
-Import the texture maps in the glTF file as they are, without trying to fit them into specific texture slots suitable for Godot's built-in materials. This may be desirable if using the glTF file with custom shaders, but may not display correctly with Godot's built-in materials. This is equivalent to the behavior in Godot 4.6 and earlier.
+直接导入 glTF 文件中的纹理贴图，而不尝试将其适配到适合 Godot 内置材质的特定纹理槽位中。如果将 glTF 文件与自定义着色器一起使用，这可能很理想；但在 Godot 的内置材质中可能无法正确显示。此设置等同于 Godot 4.6 及更早版本中的行为。
 
 .. _class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL:
 
@@ -152,7 +152,7 @@ Import the texture maps in the glTF file as they are, without trying to fit them
 
 :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL** = ``1``
 
-Import the texture maps in the glTF file remapped to the most suitable texture slots based on Godot's :ref:`StandardMaterial3D<class_StandardMaterial3D>` class. This is the default behavior.
+将 glTF 文件中的纹理贴图重新映射到基于 Godot :ref:`StandardMaterial3D<class_StandardMaterial3D>` 类的最合适的纹理槽位中。这是默认行为。
 
 .. rst-class:: classref-item-separator
 
@@ -204,9 +204,9 @@ flags **ImportFlags**: :ref:`🔗<enum_GLTFDocument_ImportFlags>`
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_GENERATE_TANGENT_ARRAYS** = ``8``
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+如果设为 ``true``\ ，当输入的网格体（meshes）没有切线数据时，将使用 `Mikktspace <http://www.mikktspace.com/>`__ 算法来生成顶点切线。如果条件允许，更推荐让 3D 建模软件在导出模型时直接生成切线，而不是依赖这个选项。法线贴图（normal maps）和高度贴图（height maps），以及任何需要切线的材质或着色器（shader）功能，都必须要有切线数据才能正确显示。
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+如果你不需要那些依赖切线的材质功能，禁用此选项可以在源 3D 文件不包含切线的情况下，减小输出文件的大小，并加快导入速度。
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_USE_NAMED_SKIN_BINDS:
 
@@ -214,15 +214,15 @@ If you don't need material features that require tangents, disabling this can re
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_USE_NAMED_SKIN_BINDS** = ``16``
 
-If checked, use named :ref:`Skin<class_Skin>`\ s for animation. The :ref:`MeshInstance3D<class_MeshInstance3D>` node contains 3 properties of relevance here: a skeleton :ref:`NodePath<class_NodePath>` pointing to the :ref:`Skeleton3D<class_Skeleton3D>` node (usually ``..``), a mesh, and a skin:
+如果勾选此项，动画将使用带名称的 :ref:`Skin<class_Skin>`\ （皮肤）资源。\ :ref:`MeshInstance3D<class_MeshInstance3D>`\ （网格实例 3D）节点在这里包含 3 个关键属性：一个指向 :ref:`Skeleton3D<class_Skeleton3D>`\ （骨骼 3D）节点的骨架 :ref:`NodePath<class_NodePath>`\ （节点路径，通常是 ``..``\ ）、一个网格（mesh），以及一个皮肤（skin）。
 
-- The :ref:`Skeleton3D<class_Skeleton3D>` node contains a list of bones with names, their pose and rest, a name, and a parent bone.
+- :ref:`Skeleton3D<class_Skeleton3D>` 节点包含一个骨骼列表，其中记录了骨骼的名称、姿态（pose）和静止状态（rest），以及父级骨骼的信息。
 
-- The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
+- 网格（mesh）包含了显示模型所需的所有原始顶点数据。就网格本身而言，它知道顶点是如何进行权重绘制（weight-painted）的，并且使用了一些通常从 3D 建模软件导入的内部编号。
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For each of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the :ref:`Skin<class_Skin>` contains each bone's name (if this flag is enabled), or the bone's index within the :ref:`Skeleton3D<class_Skeleton3D>` list (if this flag is disabled).
+- 皮肤（skin）包含了将这个网格绑定到该 :ref:`Skeleton3D<class_Skeleton3D>` 上所需的必要信息。对于 3D 建模软件选定的每一个内部骨骼 ID，它都包含两项内容。首先，是一个被称为“绑定姿态矩阵”、“反向绑定矩阵”或简称 IBM 的矩阵。其次，\ :ref:`Skin<class_Skin>` 还包含每根骨骼的名称（如果启用了此标志），或者包含该骨骼在 :ref:`Skeleton3D<class_Skeleton3D>` 列表中的索引（如果禁用了此标志）。
 
-Together, this information is enough to tell Godot how to use the bone poses in the :ref:`Skeleton3D<class_Skeleton3D>` node to render the mesh from each :ref:`MeshInstance3D<class_MeshInstance3D>`. Note that each :ref:`MeshInstance3D<class_MeshInstance3D>` may share binds, as is common in models exported from Blender, or each :ref:`MeshInstance3D<class_MeshInstance3D>` may use a separate :ref:`Skin<class_Skin>` object, as is common in models exported from other tools such as Maya.
+综合这些信息，就足以告诉 Godot 如何利用 :ref:`Skeleton3D<class_Skeleton3D>` 节点中的骨骼姿态，来渲染每个 :ref:`MeshInstance3D<class_MeshInstance3D>`\ 。请注意，每个 :ref:`MeshInstance3D<class_MeshInstance3D>` 可以共享绑定信息（这在从 Blender 导出的模型中很常见），或者每个 :ref:`MeshInstance3D<class_MeshInstance3D>` 也可以使用独立的 :ref:`Skin<class_Skin>` 对象（这在从 Maya 等其他工具导出的模型中很常见）。
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_DISCARD_MESHES_AND_MATERIALS:
 
@@ -230,7 +230,7 @@ Together, this information is enough to tell Godot how to use the bone poses in 
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_DISCARD_MESHES_AND_MATERIALS** = ``32``
 
-Ignore meshes and materials on import. When importing a scene as an :ref:`AnimationLibrary<class_AnimationLibrary>`, this flag is always enabled.
+在导入时忽略网格（Meshes）和材质（Materials）。当将场景作为 :ref:`AnimationLibrary<class_AnimationLibrary>`\ （动画库）进行导入时，此选项会始终处于启用状态。
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_FORCE_DISABLE_MESH_COMPRESSION:
 
@@ -351,7 +351,7 @@ Ignore meshes and materials on import. When importing a scene as an :ref:`Animat
 - |void| **set_texture_map_mode**\ (\ value\: :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>`\ )
 - :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **get_texture_map_mode**\ (\ )
 
-How to handle texture maps during import. The default and recommended value is :ref:`TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL<class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL>`, which automatically remaps from glTF's flexible texture map system to the more specific texture map slots in Godot's :ref:`StandardMaterial3D<class_StandardMaterial3D>` class. Alternatively, :ref:`TEXTURE_MAP_MODE_DO_NOT_REMAP<class_GLTFDocument_constant_TEXTURE_MAP_MODE_DO_NOT_REMAP>` can be used to preserve the original texture maps from the glTF file, which may be desirable if using the glTF file with custom shaders, but may not display correctly with Godot's built-in materials.
+导入时如何处理纹理贴图。默认且推荐的值是 :ref:`TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL<class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL>`\ ，它会自动将 glTF 灵活的纹理映射系统重新映射到 Godot 的 :ref:`StandardMaterial3D<class_StandardMaterial3D>` 类中更具体的纹理贴图槽位。或者，可以使用 :ref:`TEXTURE_MAP_MODE_DO_NOT_REMAP<class_GLTFDocument_constant_TEXTURE_MAP_MODE_DO_NOT_REMAP>` 来保留 glTF 文件中的原始纹理贴图，这在将 glTF 文件与自定义着色器一起使用时可能很理想，但在 Godot 的内置材质中可能无法正确显示。
 
 .. rst-class:: classref-item-separator
 

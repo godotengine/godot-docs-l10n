@@ -106,7 +106,7 @@ SPIR-V 中间表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分�
 - |void| **set_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, bytecode\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The SPIR-V bytecode for the any hit shader stage.
+任意命中着色器阶段的 SPIR-V 字节码。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -125,7 +125,7 @@ The SPIR-V bytecode for the any hit shader stage.
 - |void| **set_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, bytecode\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The SPIR-V bytecode for the closest hit shader stage.
+最近命中着色器阶段的 SPIR-V 字节码。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -182,7 +182,7 @@ The SPIR-V bytecode for the closest hit shader stage.
 - |void| **set_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, bytecode\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The SPIR-V bytecode for the intersection shader stage.
+相交着色器阶段的 SPIR-V 字节码。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -201,7 +201,7 @@ The SPIR-V bytecode for the intersection shader stage.
 - |void| **set_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, bytecode\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The SPIR-V bytecode for the miss shader stage.
+未命中着色器阶段的 SPIR-V 字节码。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -220,7 +220,7 @@ The SPIR-V bytecode for the miss shader stage.
 - |void| **set_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, bytecode\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_stage_bytecode**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The SPIR-V bytecode for the ray generation shader stage.
+光线生成着色器阶段的 SPIR-V 字节码。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -296,7 +296,7 @@ The SPIR-V bytecode for the ray generation shader stage.
 - |void| **set_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, compile_error\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The compilation error message for the any hit shader stage (set by the SPIR-V compiler and Godot). If empty, shader compilation was successful.
+“任意命中”着色器阶段的编译错误信息（由 SPIR-V 编译器和 Godot 设定）。如果这里为空，则说明着色器编译成功。
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ The compilation error message for the any hit shader stage (set by the SPIR-V co
 - |void| **set_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, compile_error\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The compilation error message for the closest hit shader stage (set by the SPIR-V compiler and Godot). If empty, shader compilation was successful.
+“最近命中”着色器阶段的编译错误信息（由 SPIR-V 编译器和 Godot 引擎提供）。如果此处为空，则说明着色器编译成功。
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ The compilation error message for the closest hit shader stage (set by the SPIR-
 - |void| **set_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, compile_error\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The compilation error message for the intersection shader stage (set by the SPIR-V compiler and Godot). If empty, shader compilation was successful.
+“相交”着色器阶段的编译错误信息（由 SPIR-V 编译器和 Godot 引擎提供）。如果此处为空，则说明着色器编译成功。
 
 .. rst-class:: classref-item-separator
 
@@ -381,7 +381,7 @@ The compilation error message for the intersection shader stage (set by the SPIR
 - |void| **set_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, compile_error\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The compilation error message for the miss shader stage (set by the SPIR-V compiler and Godot). If empty, shader compilation was successful.
+“未命中”着色器阶段的编译错误信息（由 SPIR-V 编译器和 Godot 引擎提供）。如果此处为空，则说明着色器编译成功。
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ The compilation error message for the miss shader stage (set by the SPIR-V compi
 - |void| **set_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, compile_error\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_compile_error**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-The compilation error message for the ray generation shader stage (set by the SPIR-V compiler and Godot). If empty, shader compilation was successful.
+光线生成着色器阶段的编译错误信息（由 SPIR-V 编译器和 Godot 设置）。如果此处为空，则表示着色器编译成功。
 
 .. rst-class:: classref-item-separator
 

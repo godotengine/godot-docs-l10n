@@ -179,9 +179,9 @@ Descrizioni delle proprietà
 - |void| **set_keep_compressed_buffer**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_keeping_compressed_buffer**\ (\ )
 
-If ``true``, when running in the editor, this texture will keep the source-compressed data in memory, allowing the data to persist after loading. Otherwise, the source-compressed data is lost after loading and the texture can't be re-saved.
+Se ``true``, quando in esecuzione nell'editor, questa classe manterrà i dati compressi di origine in memoria, facendo persistere i dati dopo il caricamento. Altrimenti, i dati compressi di origine sono persi dopo il caricamento e la texture non si può salvare nuovamente.
 
-\ **Note:** This property must be set before :ref:`create_from_image()<class_PortableCompressedTexture2D_method_create_from_image>` for this to work.
+\ **Nota:** Questa proprietà deve essere impostata prima di chiamare :ref:`create_from_image()<class_PortableCompressedTexture2D_method_create_from_image>` affinché abbia effetto.
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ Restituisce la modalità di compressione utilizzata (valida dopo l'inizializzazi
 
 :ref:`bool<class_bool>` **is_keeping_all_compressed_buffers**\ (\ ) |static| :ref:`🔗<class_PortableCompressedTexture2D_method_is_keeping_all_compressed_buffers>`
 
-Returns ``true`` if the flag is overridden for all textures of this type.
+Restituisce ``true`` se il flag è sovrascritto per tutte le texture di questo tipo.
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ Sets the compressor parameters for Basis Universal compression. See also the set
 
 |void| **set_keep_all_compressed_buffers**\ (\ keep\: :ref:`bool<class_bool>`\ ) |static| :ref:`🔗<class_PortableCompressedTexture2D_method_set_keep_all_compressed_buffers>`
 
-If ``keep`` is ``true``, overrides the flag globally for all textures of this type. This is used primarily by the editor.
+Se ``keep`` is ``true``, sovrascrive il flag globalmente per tutte le texture di questo tipo. È utilizzato principalmente dall'editor.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

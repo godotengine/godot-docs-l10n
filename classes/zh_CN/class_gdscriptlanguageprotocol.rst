@@ -9,16 +9,16 @@ GDScriptLanguageProtocol
 
 **继承：** :ref:`JSONRPC<class_JSONRPC>` **<** :ref:`Object<class_Object>`
 
-GDScript language server.
+GDScript 语言服务器。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Provides access to certain features that are implemented in the language server.
+提供对语言服务器中已实现的特定功能的访问。
 
-\ **Note:** This class is not a language server client that can be used to access LSP functionality. It only provides access to a limited set of features that is implemented using the same technical foundation as the language server.
+\ **注意：** 此类并非可用于访问 LSP（语言服务器协议）功能的语言服务器客户端。它仅提供对一组有限功能的访问，这些功能是使用与语言服务器相同的技术基础实现的。
 
 .. rst-class:: classref-reftable-group
 
@@ -65,7 +65,7 @@ Provides access to certain features that are implemented in the language server.
 
 **已弃用：** :ref:`GDScriptTextDocument<class_GDScriptTextDocument>` is deprecated.
 
-Returns the language server's :ref:`GDScriptTextDocument<class_GDScriptTextDocument>` instance.
+返回语言服务器的 :ref:`GDScriptTextDocument<class_GDScriptTextDocument>` 实例。
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Returns the language server's :ref:`GDScriptTextDocument<class_GDScriptTextDocum
 
 :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` **get_workspace**\ (\ ) :ref:`🔗<class_GDScriptLanguageProtocol_method_get_workspace>`
 
-Returns the language server's :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` instance.
+返回语言服务器的 :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` 实例。
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Returns the language server's :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` 
 
 :ref:`bool<class_bool>` **is_initialized**\ (\ ) |const| :ref:`🔗<class_GDScriptLanguageProtocol_method_is_initialized>`
 
-Returns ``true`` if the language server was initialized by a language server client, ``false`` otherwise.
+如果语言服务器已经被语言服务器客户端初始化，则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Returns ``true`` if the language server was initialized by a language server cli
 
 :ref:`bool<class_bool>` **is_smart_resolve_enabled**\ (\ ) |const| :ref:`🔗<class_GDScriptLanguageProtocol_method_is_smart_resolve_enabled>`
 
-Returns ``true`` if the language server is providing the smart resolve feature, ``false`` otherwise. The feature can be configured through the editor settings.
+如果语言服务器正在提供智能解析（smart resolve）功能，则返回 ``true``\ ，否则返回 ``false``\ 。该功能可以通过编辑器设置来进行配置。
 
 .. rst-class:: classref-item-separator
 

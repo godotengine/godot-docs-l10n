@@ -12,49 +12,49 @@ Dictionary
 Опис
 --------
 
-Dictionaries are associative containers that contain values referenced by unique keys. Dictionaries will preserve the insertion order when adding new entries. In other programming languages, this data structure is often referred to as a hash map or an associative array.
+Словники — це асоціативні контейнери, що містять значення, на які посилаються унікальні ключі. При додаванні нових записів словники зберігають порядок вставки. В інших мовах програмування цю структуру даних часто називають хеш-картою або асоціативним масивом.
 
-You can define a dictionary by placing a comma-separated list of ``key: value`` pairs inside curly braces ``{}``.
+Словник можна визначити, розмістивши список пар ``ключ: значення``, розділених комами, у фігурних дужках ``{}``.
 
-Creating a dictionary:
+Створення словника:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var my_dict = {} # Creates an empty dictionary.
+    var my_dict = {} # Створює порожній словник.
 
-    var dict_variable_key = "Another key name"
+    var dict_variable_key = "Інша назва ключа"
     var dict_variable_value = "value2"
     var another_dict = {
-        "Some key name": "value1",
+     "Деяка назва ключа": "value1",
         dict_variable_key: dict_variable_value,
     }
 
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
 
-    # Alternative Lua-style syntax.
-    # Doesn't require quotes around keys, but only string constants can be used as key names.
-    # Additionally, key names must start with a letter or an underscore.
-    # Here, `some_key` is a string literal, not a variable!
+    # Альтернативний синтаксис у стилі Lua.
+    # Не вимагає лапок навколо ключів, але як імена ключів можна використовувати лише рядкові константи.
+    # Крім того, імена ключів повинні починатися з літери або підкреслення.
+    # Тут `some_key` — це рядковий літерал, а не змінна!
     another_dict = {
-        some_key = 42,
+     some_key = 42,
     }
 
  .. code-tab:: csharp
 
-    var myDict = new Godot.Collections.Dictionary(); // Creates an empty dictionary.
+    var myDict = new Godot.Collections.Dictionary(); // Створює порожній словник.
     var pointsDict = new Godot.Collections.Dictionary
     {
-        { "White", 50 },
-        { "Yellow", 75 },
-        { "Orange", 100 },
+     { "White", 50 },
+     { "Yellow", 75 },
+     { "Orange", 100 },
     };
 
 
 
-You can access a dictionary's value by referencing its corresponding key. In the above example, ``points_dict["White"]`` will return ``50``. You can also write ``points_dict.White``, which is equivalent. However, you'll have to use the bracket syntax if the key you're accessing the dictionary with isn't a fixed string (such as a number or variable).
+Ви можете отримати доступ до значення словника, посилаючись на відповідний ключ. У наведеному вище прикладі ``points_dict["White"]`` поверне ``50``. Ви також можете написати ``points_dict.White``, що є еквівалентним. Однак вам доведеться використовувати синтаксис з дужками, якщо ключ, за яким ви отримуєте доступ до словника, не є фіксованим рядком (наприклад, число або змінна).
 
 
 .. tabs::
@@ -64,7 +64,7 @@ You can access a dictionary's value by referencing its corresponding key. In the
     @export_enum("White", "Yellow", "Orange") var my_color: String
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
     func _ready():
-        # We can't use dot syntax here as `my_color` is a variable.
+     # Тут ми не можемо використовувати синтаксис з крапкою, оскільки `my_color` є змінною.
         var points = points_dict[my_color]
 
  .. code-tab:: csharp
@@ -74,20 +74,20 @@ You can access a dictionary's value by referencing its corresponding key. In the
     private Godot.Collections.Dictionary _pointsDict = new Godot.Collections.Dictionary
     {
         { "White", 50 },
-        { "Yellow", 75 },
-        { "Orange", 100 },
+     { "Yellow", 75 },
+     { "Orange", 100 },
     };
 
     public override void _Ready()
     {
-        int points = (int)_pointsDict[MyColor];
+     int points = (int)_pointsDict[MyColor];
     }
 
 
 
-In the above code, ``points`` will be assigned the value that is paired with the appropriate color selected in ``my_color``.
+У наведеному вище коді ``points`` буде присвоєно значення, яке відповідає кольору, вибраному в ``my_color``.
 
-Dictionaries can contain more complex data:
+Словники можуть містити більш складні дані:
 
 
 .. tabs::
@@ -95,19 +95,19 @@ Dictionaries can contain more complex data:
  .. code-tab:: gdscript
 
     var my_dict = {
-        "First Array": [1, 2, 3, 4] # Assigns an Array to a String key.
+     "First Array": [1, 2, 3, 4] # Присвоює масив ключу-рядку.
     }
 
  .. code-tab:: csharp
 
     var myDict = new Godot.Collections.Dictionary
     {
-        { "First Array", new Godot.Collections.Array { 1, 2, 3, 4 } }
+     { "First Array", new Godot.Collections.Array { 1, 2, 3, 4 } }
     };
 
 
 
-To add a key to an existing dictionary, access it like an existing key and assign to it:
+Щоб додати ключ до існуючого словника, зверніться до нього як до існуючого ключа та присвойте йому значення:
 
 
 .. tabs::
@@ -115,51 +115,51 @@ To add a key to an existing dictionary, access it like an existing key and assig
  .. code-tab:: gdscript
 
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
-    points_dict["Blue"] = 150 # Add "Blue" as a key and assign 150 as its value.
+    points_dict["Blue"] = 150 # Додайте "Blue" як ключ і присвойте йому значення 150.
 
  .. code-tab:: csharp
 
     var pointsDict = new Godot.Collections.Dictionary
     {
-        { "White", 50 },
-        { "Yellow", 75 },
-        { "Orange", 100 },
+     { "White", 50 },
+     { "Yellow", 75 },
+     { "Orange", 100 },
     };
-    pointsDict["Blue"] = 150; // Add "Blue" as a key and assign 150 as its value.
+    pointsDict["Blue"] = 150; // Додаємо "Blue" як ключ і присвоюємо йому значення 150.
 
 
 
-Finally, untyped dictionaries can contain different types of keys and values in the same dictionary:
+Нарешті, нетипізовані словники можуть містити різні типи ключів і значень в одному словнику:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # This is a valid dictionary.
-    # To access the string "Nested value" below, use `my_dict.sub_dict.sub_key` or `my_dict["sub_dict"]["sub_key"]`.
-    # Indexing styles can be mixed and matched depending on your needs.
+    # Це дійсний словник.
+    # Щоб отримати доступ до рядка "Nested value" нижче, використовуйте `my_dict.sub_dict.sub_key` або `my_dict["sub_dict"][" sub_key"]`.
+    # Стилі індексації можна змішувати та поєднувати залежно від ваших потреб.
     var my_dict = {
-        "String Key": 5,
-        4: [1, 2, 3],
-        7: "Hello",
-        "sub_dict": { "sub_key": "Nested value" },
+     "String Key": 5,
+     4: [1, 2, 3],
+     7: "Hello",
+     "sub_dict": { "sub_key": "Nested value" },
     }
 
  .. code-tab:: csharp
 
-    // This is a valid dictionary.
-    // To access the string "Nested value" below, use `((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]`.
-    var myDict = new Godot.Collections.Dictionary {
-        { "String Key", 5 },
-        { 4, new Godot.Collections.Array { 1, 2, 3 } },
-        { 7, "Hello" },
-        { "sub_dict", new Godot.Collections.Dictionary { { "sub_key", "Nested value" } } },
+    // Це дійсний словник.
+    // Щоб отримати доступ до рядка "Nested value" нижче, використовуйте `((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]`.
+    var myDict = new Godot.Collections. Dictionary {
+     { "String Key", 5 },
+     { 4, new Godot.Collections.Array { 1, 2, 3 } },
+     { 7, "Hello" },
+     { "sub_dict", new Godot.Collections.Dictionary { { "sub_key", "Nested value" } } },
     };
 
 
 
-The keys of a dictionary can be iterated with the ``for`` keyword:
+Ключі словника можна перебирати за допомогою ключового слова ``for``:
 
 
 .. tabs::
@@ -168,62 +168,62 @@ The keys of a dictionary can be iterated with the ``for`` keyword:
 
     var groceries = { "Orange": 20, "Apple": 2, "Banana": 4 }
     for fruit in groceries:
-        var amount = groceries[fruit]
+     var amount = groceries[fruit]
 
  .. code-tab:: csharp
 
     var groceries = new Godot.Collections.Dictionary { { "Orange", 20 }, { "Apple", 2 }, { "Banana", 4 } };
     foreach (var (fruit, amount) in groceries)
     {
-        // `fruit` is the key, `amount` is the value.
+        // `fruit` — це ключ, `amount` — це значення.
     }
 
 
 
-To enforce a certain type for keys and values, you can create a *typed dictionary*. Typed dictionaries can only contain keys and values of the given types, or that inherit from the given classes:
+Щоб забезпечити дотримання певного типу для ключів і значень, можна створити *типізований словник*. Типізовані словники можуть містити лише ключі та значення заданих типів або таких, що успадковуються від заданих класів:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Creates a typed dictionary with String keys and int values.
-    # Attempting to use any other type for keys or values will result in an error.
+    # Створює типізований словник із ключами типу String та значеннями типу int.
+    # Спроба використання будь-якого іншого типу для ключів або значень призведе до помилки.
     var typed_dict: Dictionary[String, int] = {
-        "some_key": 1,
-        "some_other_key": 2,
+     "some_key": 1,
+     "some_other_key": 2,
     }
 
-    # Creates a typed dictionary with String keys and values of any type.
-    # Attempting to use any other type for keys will result in an error.
+    # Створює типізований словник із ключами типу String та значеннями будь-якого типу.
+    # Спроба використання будь-якого іншого типу для ключів призведе до помилки.
     var typed_dict_key_only: Dictionary[String, Variant] = {
-        "some_key": 12.34,
-        "some_other_key": "string",
+     "some_key": 12.34,
+     "some_other_key": "string",
     }
 
  .. code-tab:: csharp
 
-    // Creates a typed dictionary with String keys and int values.
-    // Attempting to use any other type for keys or values will result in an error.
+    // Створює типізований словник із ключами типу String та значеннями типу int.
+    // Спроба використання будь-якого іншого типу для ключів або значень призведе до помилки.
     var typedDict = new Godot.Collections.Dictionary<String, int> {
-        {"some_key", 1},
-        {"some_other_key", 2},
+     {"some_key", 1},
+     {"some_other_key", 2},
     };
 
-    // Creates a typed dictionary with String keys and values of any type.
-    // Attempting to use any other type for keys will result in an error.
+    // Створює типізований словник із ключами типу String та значеннями будь-якого типу.
+    // Спроба використання будь-якого іншого типу для ключів призведе до помилки.
     var typedDictKeyOnly = new Godot.Collections.Dictionary<String, Variant> {
-        {"some_key", 12.34},
-        {"some_other_key", "string"},
+     {"some_key", 12.34},
+     {"some_other_key", "string"},
     };
 
 
 
-\ **Note:** Dictionaries are always passed by reference. To get a copy of a dictionary which can be modified independently of the original dictionary, use :ref:`duplicate()<class_Dictionary_method_duplicate>`.
+\ **Примітка:** Словники завжди передаються за посиланням. Щоб отримати копію словника, яку можна змінювати незалежно від оригінального словника, використовуйте :ref:`duplicate()<class_Dictionary_method_duplicate>`.
 
-\ **Note:** Erasing elements while iterating over dictionaries is **not** supported and will result in unpredictable behavior.
+\ **Примітка:** Видалення елементів під час ітерації по словниках **не** підтримується і призведе до непередбачуваної поведінки.
 
-\ **Note:** In a boolean context, a dictionary will evaluate to ``false`` if it's empty (``{}``). Otherwise, a dictionary will always evaluate to ``true``.
+\ **Примітка:** У булевому контексті словник буде обчислюватися як ``false``, якщо він порожній (``{}``). В іншому випадку словник завжди обчислюватиметься як ``true``.
 
 .. note::
 
@@ -484,15 +484,15 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
 :ref:`Variant<class_Variant>` **get**\ (\ key\: :ref:`Variant<class_Variant>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Dictionary_method_get>`
 
-Returns the corresponding value for the given ``key`` in the dictionary. If the ``key`` does not exist, returns ``default``, or ``null`` if the parameter is omitted.
+Повертає відповідне значення для заданого ``key`` у словнику. Якщо ``key`` не існує, повертає ``default`` або ``null``, якщо параметр не вказано.
 
-\ **Note:** If the ``default`` argument is computationally expensive or has unwanted side effects, consider using the :ref:`has()<class_Dictionary_method_has>` method instead:
+\ **Примітка:** Якщо аргумент ``default`` є обчислювально ресурсоємним або має небажані побічні ефекти, рекомендується замість нього використовувати метод :ref:`has()<class_Dictionary_method_has>`:
 
 ::
 
-    # Always calls `expensive_function()`.
+    # Завжди викликає `expensive_function()`.
     dict.get("key", expensive_function())
-    # Calls `expensive_function()` only if the key does not exist.
+    # Викликає `expensive_function()` тільки якщо ключ не існує.
     dict.get("key") if dict.has("key") else expensive_function()
 
 .. rst-class:: classref-item-separator

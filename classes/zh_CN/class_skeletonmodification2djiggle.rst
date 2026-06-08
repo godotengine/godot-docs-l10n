@@ -357,7 +357,7 @@ SkeletonModification2DJiggle
 
 |void| **reset**\ (\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_reset>`
 
-Resets the internal jiggle simulation state to the current bone positions, clearing velocity, acceleration, and accumulated forces.
+将内部摇晃（Jiggle）模拟状态重置为当前的骨骼位置，并清除速度、加速度以及累积的受力。
 
 .. rst-class:: classref-item-separator
 

@@ -14,9 +14,9 @@ EditorExportPlugin
 Опис
 --------
 
-**EditorExportPlugin**\ s are automatically invoked whenever the user exports the project. They can be used to modify scenes and resources during project export based on what :doc:`Feature Tags <../tutorials/export/feature_tags>` are set. For each plugin, :ref:`_export_begin()<class_EditorExportPlugin_private_method__export_begin>` is called at the beginning of the export process and then :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` is called for each exported file.
+**EditorExportPlugin** автоматично викликаються щоразу, коли користувач експортує проект. Їх можна використовувати для модифікації сцен та ресурсів під час експорту проекту на основі встановлених :doc:`тегів функцій <../tutorials/export/feature_tags>`. Для кожного плагіна на початку процесу експорту викликається ``метод _export_begin``, а потім для кожного експортованого файлу викликається :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>`.
 
-Register a **EditorExportPlugin** by creating a new :ref:`EditorPlugin<class_EditorPlugin>` and calling its :ref:`EditorPlugin.add_export_plugin()<class_EditorPlugin_method_add_export_plugin>` method.
+Зареєструйте **EditorExportPlugin**, створивши новий :ref:`EditorPlugin<class_EditorPlugin>` і викликавши його метод :ref:`EditorPlugin.add_export_plugin()<class_EditorPlugin_method_add_export_plugin>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -204,11 +204,11 @@ Register a **EditorExportPlugin** by creating a new :ref:`EditorPlugin<class_Edi
 
 :ref:`Node<class_Node>` **_customize_scene**\ (\ scene\: :ref:`Node<class_Node>`, path\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorExportPlugin_private_method__customize_scene>`
 
-Customize a scene. If changes are made to it, return the same or a new scene. Otherwise, return ``null``. If a new scene is returned, it is up to you to dispose of the old one.
+Налаштуйте сцену. Якщо до неї внесено зміни, поверніть ту саму або нову сцену. В іншому випадку поверніть ``null``. Якщо повертається нова сцена, ви повинні самостійно звільнити пам’ять для старої.
 
-Implementing this method is required if :ref:`_begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` returns ``true``.
+Реалізація цього методу необхідна, якщо :ref:`_begin_customize_scenes()<class_EditorExportPlugin_private_method__begin_customize_scenes>` повертає ``true``.
 
-\ **Note:** To change a variable in your scene, use the ``@export`` annotation when declaring it.
+\ **Примітка:** Щоб змінити змінну у вашій сцені, використовуйте анотацію ``@export`` під час її оголошення.
 
 .. rst-class:: classref-item-separator
 
@@ -244,9 +244,9 @@ Implementing this method is required if :ref:`_begin_customize_scenes()<class_Ed
 
 |void| **_end_generate_apple_embedded_project**\ (\ path\: :ref:`String<class_String>`, will_build_archive\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorExportPlugin_private_method__end_generate_apple_embedded_project>`
 
-This is called after Xcode project generation, but before it is built.
+Ця функція викликається після створення проекту в Xcode, але до його компіляції.
 
-\ **Note:** Only supported on iOS and visionOS.
+\ **Примітка:** Підтримується лише в iOS та macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -388,11 +388,11 @@ This is called after Xcode project generation, but before it is built.
 
 :ref:`int<class_int>` **_get_customization_configuration_hash**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_customization_configuration_hash>`
 
-Return a hash based on the configuration passed (for both scenes and resources). This helps keep separate caches for separate export configurations.
+Повертає хеш на основі переданої конфігурації (як для сцен, так і для ресурсів). Це дозволяє зберігати окремі кеші для різних конфігурацій експорту.
 
-Implementing this method is required if :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` returns ``true``.
+Реалізація цього методу є обов'язковою, якщо :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` повертає ``true``.
 
-\ **Note:** :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` and :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` will not be called when the **EditorExportPlugin** script is modified unless this hash changes too.
+\ **Примітка:** :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` та :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` не викликатимуться при модифікації скрипта **EditorExportPlugin**, якщо цей хеш також не зміниться.
 
 .. rst-class:: classref-item-separator
 

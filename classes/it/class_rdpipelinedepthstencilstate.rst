@@ -122,7 +122,7 @@ Seleziona quali bit del valore dello stencil posteriore saranno confrontati.
 - |void| **set_back_op_depth_fail**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_back_op_depth_fail**\ (\ )
 
-L'operazione da effettuare sul buffer dello stencil per i pixel posteriori che superano il test dello stencil ma non il test di profondità.
+L'operazione da effettuare sul buffer stencil per i pixel posteriori che superano il test dello stencil ma non il test di profondità.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ L'operazione da effettuare sul buffer dello stencil per i pixel posteriori che s
 - |void| **set_back_op_fail**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_back_op_fail**\ (\ )
 
-L'operazione da effettuare sul buffer dello stencil per i pixel posteriori che non superano il test dello stencil.
+L'operazione da effettuare sul buffer stencil per i pixel posteriori che non superano il test dello stencil.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ L'operazione da effettuare sul buffer dello stencil per i pixel posteriori che n
 - |void| **set_back_op_pass**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_back_op_pass**\ (\ )
 
-L'operazione da effettuare sul buffer dello stencil per i pixel posteriori che superano il test dello stencil.
+L'operazione da effettuare sul buffer stencil per i pixel posteriori che superano il test dello stencil.
 
 .. rst-class:: classref-item-separator
 
@@ -360,7 +360,7 @@ Seleziona quali bit del valore dello stencil anteriore saranno confrontati.
 - |void| **set_front_op_depth_fail**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_front_op_depth_fail**\ (\ )
 
-L'operazione da effettuare sul buffer dello stencil per i pixel anteriori che superano il test dello stencil ma non il test di profondità.
+L'operazione da effettuare sul buffer stencil per i pixel anteriori che superano il test dello stencil ma non il test di profondità.
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ L'operazione da effettuare sul buffer dello stencil per i pixel anteriori che su
 - |void| **set_front_op_fail**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_front_op_fail**\ (\ )
 
-L'operazione da effettuare sul buffer dello stencil per i pixel anteriori che non superano il test dello stencil.
+L'operazione da effettuare sul buffer stencil per i pixel anteriori che non superano il test dello stencil.
 
 .. rst-class:: classref-item-separator
 
@@ -394,7 +394,7 @@ L'operazione da effettuare sul buffer dello stencil per i pixel anteriori che no
 - |void| **set_front_op_pass**\ (\ value\: :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>`\ )
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_front_op_pass**\ (\ )
 
-L'operazione da effettuare sul buffer dello stencil per i pixel anteriori che superano il test dello stencil.
+L'operazione da effettuare sul buffer stencil per i pixel anteriori che superano il test dello stencil.
 
 .. rst-class:: classref-item-separator
 

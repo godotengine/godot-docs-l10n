@@ -9,14 +9,14 @@ OpenXRSpatialComponentAnchorList
 
 **Eredita:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries anchor result data.
+Oggetto per memorizzare i dati dei risultati delle richieste sugli ancoraggi.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Object for storing the queries anchor result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Oggetto per memorizzare i dati risultanti di una richiesta sugli ancoraggi quando si chiama :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 

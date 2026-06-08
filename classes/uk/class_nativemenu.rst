@@ -486,3 +486,898 @@ Dock icon right-click меню ID (на macOS це меню включає в с
 
 :ref:`int<class_int>` **add_separator**\ (\ rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_NativeMenu_method_add_separator>`
 
+Додає роздільник між предметами в глобальне меню ``rid``. Сепаратори також займають індекс.
+
+Повертає індекс вставленого пункту, не гарантується таким же, як ``index значення.
+
+[b``\ Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_add_submenu_item:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **add_submenu_item**\ (\ rid\: :ref:`RID<class_RID>`, label\: :ref:`String<class_String>`, submenu_rid\: :ref:`RID<class_RID>`, tag\: :ref:`Variant<class_Variant>` = null, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_NativeMenu_method_add_submenu_item>`
+
+Додає елемент, який буде діяти як підменю глобального меню ``rid``. ``submenu_rid`` аргумент є RID глобального меню, яке буде показано, коли пункт натискається.
+
+Повертає індекс вставленого пункту, не гарантується таким же, як ``index`` значення.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_clear:
+
+.. rst-class:: classref-method
+
+|void| **clear**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NativeMenu_method_clear>`
+
+Видаляє всі елементи з глобального меню ``rid``.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_create_menu:
+
+.. rst-class:: classref-method
+
+:ref:`RID<class_RID>` **create_menu**\ (\ ) :ref:`🔗<class_NativeMenu_method_create_menu>`
+
+Створення нового об’єкту глобального меню.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_find_item_index_with_submenu:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **find_item_index_with_submenu**\ (\ rid\: :ref:`RID<class_RID>`, submenu_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_submenu>`
+
+Повертає індекс елемента з підменю, вказаним у параметрі ``submenu_rid``. Індекси автоматично присвоюються кожному елементу движком.
+
+\ **Примітка:** Цей метод реалізовано в macOS та Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_find_item_index_with_tag:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **find_item_index_with_tag**\ (\ rid\: :ref:`RID<class_RID>`, tag\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_tag>`
+
+Повертає індекс елемента із вказаним тегом ``tag``. Індекси автоматично присвоюються кожному елементу механізмом системи.
+
+\ **Примітка:** Цей метод реалізовано в macOS та Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_find_item_index_with_text:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **find_item_index_with_text**\ (\ rid\: :ref:`RID<class_RID>`, text\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_text>`
+
+Повертає індекс елемента із вказаним ``text``. Індекси автоматично присвоюються кожному елементу механізмом системи.
+
+\ **Примітка:** Цей метод реалізовано в macOS та Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_free_menu:
+
+.. rst-class:: classref-method
+
+|void| **free_menu**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NativeMenu_method_free_menu>`
+
+Звільняє глобальний об'єкт меню, створений цим **NativeMenu**.
+
+\ **Примітка:** Цей метод реалізовано в macOS та Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_item_accelerator:
+
+.. rst-class:: classref-method
+
+:ref:`Key<enum_@GlobalScope_Key>` **get_item_accelerator**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_accelerator>`
+
+Повернення акселератора пункту за індексом ``idx``. Прискорювачі - це спеціальні комбінації ключів, які активують предмет, незалежно від того, який контроль фокусується.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_item_callback:
+
+.. rst-class:: classref-method
+
+:ref:`Callable<class_Callable>` **get_item_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_callback>`
+
+Повертає обернений виклик елемента за індексом ``idx``.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_item_count:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **get_item_count**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_count>`
+
+Повертаємо кількість предметів у глобальному меню ``rid``.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_item_icon:
+
+.. rst-class:: classref-method
+
+:ref:`Texture2D<class_Texture2D>` **get_item_icon**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_icon>`
+
+Повертає ікону елемента в індексі ``idx``.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_item_indentation_level:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **get_item_indentation_level**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_indentation_level>`
+
+Повертає горизонтальний зсув елемента на даній ``idx``.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_item_key_callback:
+
+.. rst-class:: classref-method
+
+:ref:`Callable<class_Callable>` **get_item_key_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_key_callback>`
+
+Повернення виклику прискорювача пункту за індексом ``idx``.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_item_max_states:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **get_item_max_states**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_max_states>`
+
+Повертає кількість станів багатодержавного пункту. Див. :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` для деталей.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_item_state:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **get_item_state**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_state>`
+
+Повертає стан багатодержавного елемента. Див. :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` для деталей.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_item_submenu:
+
+.. rst-class:: classref-method
+
+:ref:`RID<class_RID>` **get_item_submenu**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_submenu>`
+
+Повернення субмену на індекс ``idx``. Детальніше про те, як додати підменю.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_item_tag:
+
+.. rst-class:: classref-method
+
+:ref:`Variant<class_Variant>` **get_item_tag**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_tag>`
+
+Повернення метаданих зазначеного елемента, який може бути будь-яким типом. Ви можете встановити його з :ref:`set_item_tag()<class_NativeMenu_method_set_item_tag>`, що забезпечує простий спосіб присвоєння контекстних даних до елементів.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_item_text:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **get_item_text**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_text>`
+
+Повертає текст пункту за індексом ``idx``.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_item_tooltip:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **get_item_tooltip**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_tooltip>`
+
+Повертає інструмент, пов'язаний з вказаним індексом ``idx``.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_minimum_width:
+
+.. rst-class:: classref-method
+
+:ref:`float<class_float>` **get_minimum_width**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_minimum_width>`
+
+Повернутися до глобального меню мінімальної ширини.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_popup_close_callback:
+
+.. rst-class:: classref-method
+
+:ref:`Callable<class_Callable>` **get_popup_close_callback**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_popup_close_callback>`
+
+Повертає зворотний виклик із закриття глобального меню.
+
+\ **Примітка.** Цей метод реалізовано в macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_popup_open_callback:
+
+.. rst-class:: classref-method
+
+:ref:`Callable<class_Callable>` **get_popup_open_callback**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_popup_open_callback>`
+
+Повертає зворотний виклик відкритого глобального меню.
+
+\ **Примітка.** Цей метод реалізовано лише в macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_size:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2<class_Vector2>` **get_size**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_size>`
+
+Повертаємо розмір глобального меню.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_system_menu:
+
+.. rst-class:: classref-method
+
+:ref:`RID<class_RID>` **get_system_menu**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_system_menu>`
+
+Повернення RID спеціального меню системи.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_system_menu_name:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **get_system_menu_name**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_system_menu_name>`
+
+Повернення читабельного імені спеціального меню системи.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_get_system_menu_text:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **get_system_menu_text**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_system_menu_text>`
+
+Повертає текст елемента системного меню.
+
+\ **Примітка:** Цей метод реалізовано на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_has_feature:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_feature**\ (\ feature\: :ref:`Feature<enum_NativeMenu_Feature>`\ ) |const| :ref:`🔗<class_NativeMenu_method_has_feature>`
+
+Повертає ``true``, якщо вказаний ``feature`` підтримується поточним **NativeMenu**, в іншому випадку ``false``.
+
+\ **Примітка:** Цей метод реалізовано в macOS та Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_has_menu:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_menu**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_has_menu>`
+
+Повернення ``true``, якщо ``rid`` є чинним глобальним меню.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_has_system_menu:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_system_menu**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`\ ) |const| :ref:`🔗<class_NativeMenu_method_has_system_menu>`
+
+Повернення ``true``, якщо підтримується спеціальне меню системи.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_is_item_checkable:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_item_checkable**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_checkable>`
+
+Повертаємо ``true``, якщо пункт в індексі ``idx`` перевіряється якось, тобто якщо він має прапорець або радіокнопку.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_is_item_checked:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_item_checked**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_checked>`
+
+Повертає ``true``, якщо товар у позиції ``idx`` відмічено.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_is_item_disabled:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_item_disabled**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_disabled>`
+
+Повертає ``true``, якщо товар в індексі ``idx`` вимкнено. Коли його вимкнено, він не може бути обраний, а його дія — викликана.
+
+Дивитися :ref:`set_item_disabled()<class_NativeMenu_method_set_item_disabled>` для подробиць про те, як вимкнути елемент.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_is_item_hidden:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_item_hidden**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_hidden>`
+
+Повертаємо ``true``, якщо товар в індексі ``idx`` прихований.
+
+Дивитися :ref:`set_item_hidden()<class_NativeMenu_method_set_item_hidden>` для подробиць про те, як приховати елемент.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_is_item_radio_checkable:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_item_radio_checkable**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_radio_checkable>`
+
+Повертаємо ``true``, якщо пункт в індексі ``idx`` має можливість перевірки кнопки-стиль.
+
+\ **Примітка:** Це чисто косметичний, необхідно додати логіку для перевірки/розшуку предметів в радіо групах.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_is_opened:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_opened**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_opened>`
+
+Повертаємо ``true``, якщо меню вже відкрито.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_is_system_menu:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_system_menu**\ (\ rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_system_menu>`
+
+``true`` є глобальним меню.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_popup:
+
+.. rst-class:: classref-method
+
+|void| **popup**\ (\ rid\: :ref:`RID<class_RID>`, position\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_NativeMenu_method_popup>`
+
+Відображається глобальне меню в ``position`` в координатах екрана.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_remove_item:
+
+.. rst-class:: classref-method
+
+|void| **remove_item**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_remove_item>`
+
+Видаліть пункт в індексі ``idx`` з глобального меню ``rid``.
+
+\ **Примітка:** Індикатори елементів після вилученого елемента будуть переміщені одним.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_interface_direction:
+
+.. rst-class:: classref-method
+
+|void| **set_interface_direction**\ (\ rid\: :ref:`RID<class_RID>`, is_rtl\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_interface_direction>`
+
+Встановлює напрямок текстового макета меню з правого вліво, якщо ``is_rtl`` ``true``.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_accelerator:
+
+.. rst-class:: classref-method
+
+|void| **set_item_accelerator**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_accelerator>`
+
+Встановлює прискорювач елемента за індексом ``idx``. ``keycode`` може бути одним :ref:`Key<enum_@GlobalScope_Key>` або комбінацією :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` і :ref:`Key<enum_@GlobalScope_Key>` з використанням побітового АБО, наприклад ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+
+\ **Примітка:** Цей метод реалізовано лише в macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_callback:
+
+.. rst-class:: classref-method
+
+|void| **set_item_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_callback>`
+
+Встановлює зворотний виклик пункту в індексі ``idx``. Зворотний виклик викликається при натисканні елемента.
+
+\ **Примітка:** ``callback`` значення має приймати точно один параметр Variant, параметр, що надходить до Callable, буде передано як параметр ``tag`` при створенні пункту меню.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_checkable:
+
+.. rst-class:: classref-method
+
+|void| **set_item_checkable**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, checkable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_checkable>`
+
+Встановлює, чи є пункт в індексі ``idx``, має прапорець. Якщо ``false``, встановлюємо тип пункту на звичайний текст.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_checked:
+
+.. rst-class:: classref-method
+
+|void| **set_item_checked**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, checked\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_checked>`
+
+Встановлює стан контрольного стану елемента в індексі ``idx``.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_disabled:
+
+.. rst-class:: classref-method
+
+|void| **set_item_disabled**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_disabled>`
+
+Увімкнути/вимкнути елемент в індексі ``idx``. Коли він вимкнений, він не може бути обраний і його дія не може бути викликана.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_hidden:
+
+.. rst-class:: classref-method
+
+|void| **set_item_hidden**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, hidden\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_hidden>`
+
+Приховує/показує індекс в індексі ``idx``. Коли він прихований, елемент не з'являється в меню і його дію не можна викликати.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_hover_callbacks:
+
+.. rst-class:: classref-method
+
+|void| **set_item_hover_callbacks**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_hover_callbacks>`
+
+Встановлює зворотний виклик пункту в індексі ``idx``. Зворотний виклик викликається при наведенні на елемент.
+
+\ **Note:** Callable ``callback`` значення, що має прийняти точно один параметр Variant-а, параметр, що надходить до Callable, буде значенням, переданим до параметра ``tag``, при створенні пункту меню.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_icon:
+
+.. rst-class:: classref-method
+
+|void| **set_item_icon**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_icon>`
+
+Заміна іконки :ref:`Texture2D<class_Texture2D>` вказаного ``idx``.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+\ **Примітка:** Цей метод не підтримується пунктами меню macOS Dock.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_indentation_level:
+
+.. rst-class:: classref-method
+
+|void| **set_item_indentation_level**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, level\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_indentation_level>`
+
+Встановлює горизонтальний зсув елемента на даній ``idx``.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_index:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **set_item_index**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, target_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_index>`
+
+Змінює індекс елемента з індексу ``idx`` на індекс ``target_idx``. Цю функцію можна використовувати для переміщення елемента над іншими елементами.
+
+Повертає новий індекс переміщеного елемента, який не обов'язково буде збігатися з ``target_idx``.
+
+\ **Примітка:** Індекси всіх елементів між індексом ``idx`` та індексом ``target_idx`` будуть зміщені на один.
+
+\ **Примітка:** Цей метод реалізовано в macOS та Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_key_callback:
+
+.. rst-class:: classref-method
+
+|void| **set_item_key_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, key_callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_key_callback>`
+
+Встановлює зворотний зв'язок пункту в індексі ``idx``. Під час активації його акселератора видається зворотний дзвінок.
+
+\ **Примітка:** ``key_callback`` Увімкнено значення, що необхідно прийняти точно один параметр Variant, параметр, що надходить до Callable, буде значення, передане параметру ``tag`` при створенні пункту меню.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_max_states:
+
+.. rst-class:: classref-method
+
+|void| **set_item_max_states**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, max_states\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_max_states>`
+
+Встановлює кількість стану багатостатевого елемента. Див. :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` для деталей.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_radio_checkable:
+
+.. rst-class:: classref-method
+
+|void| **set_item_radio_checkable**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, checkable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_radio_checkable>`
+
+Встановлює тип пункту за вказаним індексом ``idx`` на кнопку радіо. Якщо ``false``, встановлюємо тип пункту на звичайний текст.
+
+\ **Примітка:** Це чисто косметичний, необхідно додати логіку для перевірки/розшуку предметів в радіо групах.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_state:
+
+.. rst-class:: classref-method
+
+|void| **set_item_state**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, state\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_state>`
+
+Встановлює стан багатодержавного елемента. Див. :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` для деталей.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_submenu:
+
+.. rst-class:: classref-method
+
+|void| **set_item_submenu**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, submenu_rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_submenu>`
+
+Встановлює субмену RID пункту в індексі ``idx``. Підмену є глобальним меню, яке буде показано при натисканні пункту.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_tag:
+
+.. rst-class:: classref-method
+
+|void| **set_item_tag**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, tag\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_tag>`
+
+Встановлює метадані елемента, який може бути будь-яким типом. Ви можете отримати його за допомогою :ref:`get_item_tag()<class_NativeMenu_method_get_item_tag>`, який забезпечує простий спосіб присвоєння контекстних даних до предметів.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_text:
+
+.. rst-class:: classref-method
+
+|void| **set_item_text**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_text>`
+
+Встановлює текст елемента в індексі ``idx``.
+
+\ **Примітка:** Цей метод реалізується на macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_item_tooltip:
+
+.. rst-class:: classref-method
+
+|void| **set_item_tooltip**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_tooltip>`
+
+Налаштовує інструментарій :ref:`String<class_String>` пункту за вказаним індексом ``idx``.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_minimum_width:
+
+.. rst-class:: classref-method
+
+|void| **set_minimum_width**\ (\ rid\: :ref:`RID<class_RID>`, width\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NativeMenu_method_set_minimum_width>`
+
+Налаштування мінімальної ширини глобального меню.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_popup_close_callback:
+
+.. rst-class:: classref-method
+
+|void| **set_popup_close_callback**\ (\ rid\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_popup_close_callback>`
+
+Реєстри, що викликаються, щоб випустити, коли меню ось-ось відобразиться. 
+
+\ **Примітка:** ОС може імітувати відкриття меню для відстеження змін пунктів меню та глобальних ярликів, у цьому випадку відповідний зворотний виклик закриття не запускається. Використовуйте :ref:`is_opened()<class_NativeMenu_method_is_opened>`, щоб перевірити, чи відкрито меню в даний момент. 
+
+\ **Примітка.** Цей метод реалізовано в macOS і Windows.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_popup_open_callback:
+
+.. rst-class:: classref-method
+
+|void| **set_popup_open_callback**\ (\ rid\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_popup_open_callback>`
+
+Записи, що випускаються після закінчення меню.
+
+\ **Примітка:** Цей метод реалізується тільки на macOS.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NativeMenu_method_set_system_menu_text:
+
+.. rst-class:: classref-method
+
+|void| **set_system_menu_text**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_NativeMenu_method_set_system_menu_text>`
+
+Встановлює текст елемента системного меню.
+
+\ **Примітка:** Цей метод реалізовано в macOS.
+
+.. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
+.. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
+.. |const| replace:: :abbr:`const (Цей метод не має побічних ефектів. Не змінює ніяку змінну екземпляра об'єкта.)`
+.. |vararg| replace:: :abbr:`vararg (Цей метод приймає будь-яке число аргументів після описаних тут.)`
+.. |constructor| replace:: :abbr:`constructor (Цей метод використовується для побудови типів.)`
+.. |static| replace:: :abbr:`static (Цей метод не потребує екземпляра для виклику, його можна викликати безпосередньо за допомогою назви класу.)`
+.. |operator| replace:: :abbr:`operator (Цей метод описує дійсний оператор для взаємодії з цим типом як з лівим операндом.)`
+.. |bitfield| replace:: :abbr:`BitField (Це значення є цілим числом, складеним у вигляді бітової маски з наступних прапорів.)`
+.. |void| replace:: :abbr:`void (Значення не повертається.)`

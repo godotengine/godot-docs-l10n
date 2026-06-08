@@ -5823,7 +5823,7 @@ LCD 次圖元佈局，用於字形抗鋸齒。見 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`float<class_float>` **gui/timers/button_shortcut_feedback_highlight_time** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_gui/timers/button_shortcut_feedback_highlight_time>`
 
-啟用 :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` 時，按下快捷鍵後 :ref:`BaseButton<class_BaseButton>` 保持高亮的時間。
+When :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` is enabled, this is the time the :ref:`BaseButton<class_BaseButton>` will remain highlighted after a shortcut. This duration is not affected by :ref:`Engine.time_scale<class_Engine_property_time_scale>`.
 
 .. rst-class:: classref-item-separator
 

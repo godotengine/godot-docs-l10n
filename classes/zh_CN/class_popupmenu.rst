@@ -483,9 +483,9 @@ ID 为 ``id`` 的项目被按下时发出。在 macOS 系统上，当其快捷�
 
 :ref:`int<class_int>` **item_{index}/checkable** = ``0`` :ref:`🔗<class_PopupMenu_property_item_{index}/checkable>`
 
-The checkable item type of the item at ``index``.
+索引为 ``index`` 的可勾选菜单项的类型。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必须在 ``0 .. item_count - 1`` 范围内。
 
 .. rst-class:: classref-item-separator
 
@@ -497,9 +497,9 @@ The checkable item type of the item at ``index``.
 
 :ref:`bool<class_bool>` **item_{index}/checked** = ``false`` :ref:`🔗<class_PopupMenu_property_item_{index}/checked>`
 
-If ``true``, the item at ``index`` is checked.
+如果设置为 ``true``\ ，那么位于 ``index`` 位置的选项就会被勾选。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围在 ``0 到 item_count - 1`` 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -511,9 +511,9 @@ If ``true``, the item at ``index`` is checked.
 
 :ref:`bool<class_bool>` **item_{index}/disabled** = ``false`` :ref:`🔗<class_PopupMenu_property_item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+如果为 ``true``\ ，则禁用位于 ``index`` 处的项目。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -525,9 +525,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **item_{index}/icon** :ref:`🔗<class_PopupMenu_property_item_{index}/icon>`
 
-The icon of the item at ``index``.
+位于 ``index`` 处的项目的图标。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -539,9 +539,9 @@ The icon of the item at ``index``.
 
 :ref:`int<class_int>` **item_{index}/id** = ``0`` :ref:`🔗<class_PopupMenu_property_item_{index}/id>`
 
-The ID of the item at ``index``.
+索引为 ``index`` 的菜单项的 ID。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必须在 ``0 .. item_count - 1`` 范围内。
 
 .. rst-class:: classref-item-separator
 
@@ -553,9 +553,9 @@ The ID of the item at ``index``.
 
 :ref:`bool<class_bool>` **item_{index}/separator** = ``false`` :ref:`🔗<class_PopupMenu_property_item_{index}/separator>`
 
-If ``true``, the item at ``index`` is a separator.
+如果为 ``true``\ ，则索引为 ``index`` 的菜单项是一个分隔符。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值必须在 ``0 .. item_count - 1`` 范围内。
 
 .. rst-class:: classref-item-separator
 
@@ -567,9 +567,9 @@ If ``true``, the item at ``index`` is a separator.
 
 :ref:`String<class_String>` **item_{index}/text** = ``""`` :ref:`🔗<class_PopupMenu_property_item_{index}/text>`
 
-The text of the item at ``index``.
+位于 ``index`` 处的项目的文本。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -605,9 +605,9 @@ The text of the item at ``index``.
 - |void| **set_search_bar_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_enabled**\ (\ )
 
-If ``true``, shows a search bar at the top of the **PopupMenu** for filtering items. See :ref:`search_bar_min_item_count<class_PopupMenu_property_search_bar_min_item_count>` for dynamically controlling its visibility based on the number of items.
+如果为 ``true``\ ，则在 **PopupMenu** 顶部显示一个用于筛选项目项的搜索栏。请参阅 :ref:`search_bar_min_item_count<class_PopupMenu_property_search_bar_min_item_count>`\ ，以了解基于项目项数量动态控制其可见性的方法。
 
-\ **Note:** When enabled, :ref:`allow_search<class_PopupMenu_property_allow_search>` is ignored.
+\ **注意：** 启用后，\ :ref:`allow_search<class_PopupMenu_property_allow_search>` 将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -624,9 +624,9 @@ If ``true``, shows a search bar at the top of the **PopupMenu** for filtering it
 - |void| **set_search_bar_fuzzy_search_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_fuzzy_search_enabled**\ (\ )
 
-If ``true``, enables fuzzy searching in the **PopupMenu** search bar. This allows the search results to include items that almost match the search query, as well items that match the individual characters of the search query, but not in sequence.
+如果为 ``true``\ ，则在 **PopupMenu** 的搜索栏中启用模糊搜索。这允许搜索结果包含与搜索查询几乎匹配的条目，以及那些单独字符与搜索查询匹配但不按顺序排列的条目。
 
-Use :ref:`search_bar_fuzzy_search_max_misses<class_PopupMenu_property_search_bar_fuzzy_search_max_misses>` to set the maximum number of mismatches allowed in the search results.
+请使用 :ref:`search_bar_fuzzy_search_max_misses<class_PopupMenu_property_search_bar_fuzzy_search_max_misses>` 来设置搜索结果中允许的最大不匹配数量。
 
 .. rst-class:: classref-item-separator
 
@@ -643,7 +643,7 @@ Use :ref:`search_bar_fuzzy_search_max_misses<class_PopupMenu_property_search_bar
 - |void| **set_search_bar_fuzzy_search_max_misses**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_fuzzy_search_max_misses**\ (\ )
 
-Sets the maximum number of mismatches allowed in each search result when fuzzy searching is enabled for the **PopupMenu** search bar. Any item with more mismatches will be hidden from the search results.
+设置为 **PopupMenu** 的搜索栏启用模糊搜索时，每个搜索结果中允许的最大不匹配数量。任何超过该数量的菜单项都将从搜索结果中被隐藏。
 
 .. rst-class:: classref-item-separator
 
@@ -660,7 +660,7 @@ Sets the maximum number of mismatches allowed in each search result when fuzzy s
 - |void| **set_search_bar_min_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_min_item_count**\ (\ )
 
-Sets the minimum number of items required for the search bar to be visible. :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` must be ``true`` for this to have any effect.
+Sets the minimum number of items required for the search bar to be visible. :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` must be ``true`` for this to have any effect. Separator items are not counted.
 
 .. rst-class:: classref-item-separator
 
@@ -1109,7 +1109,7 @@ Sets the minimum number of items required for the search bar to be visible. :ref
 
 :ref:`int<class_int>` **get_item_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_id>`
 
-Returns the ID of the item at the given ``index``.
+返回给定 ``index``\ （索引）处的项目 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -1133,7 +1133,7 @@ Returns the ID of the item at the given ``index``.
 
 :ref:`int<class_int>` **get_item_index**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_index>`
 
-Returns the index of the item containing the specified ``id``. The index is automatically assigned to each item by the engine when added and represents the order items will be displayed.
+返回包含指定 ``id`` 的项目的索引。该索引会在项目被添加时由引擎自动分配，它代表了项目显示的先后顺序。
 
 .. rst-class:: classref-item-separator
 
@@ -1559,9 +1559,9 @@ Returns the index of the item containing the specified ``id``. The index is auto
 
 |void| **set_item_index**\ (\ index\: :ref:`int<class_int>`, target_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_index>`
 
-Changes the index of the item at index ``index`` to be at index ``target_index``. This can be used to move an item above other items. The moved item will keep the same ID, even if it was generated from the original index.
+将位于索引 ``index`` 处的菜单项的索引更改为 ``target_index``\ 。这可用于将一个菜单项移动到其他菜单项的上方。即使被移动的菜单项的 ID 是从原始索引生成的，它也会保持相同的 ID。
 
-\ **Note:** The indices of any items between index ``index`` and index ``target_index`` will be shifted by one.
+\ **注意：** 位于索引 ``index`` 和索引 ``target_index`` 之间的任何菜单项的索引都将移动一位。
 
 .. rst-class:: classref-item-separator
 
@@ -1906,7 +1906,7 @@ Changes the index of the item at index ``index`` to be at index ``target_index``
 
 :ref:`int<class_int>` **search_bar_separation** = ``4`` :ref:`🔗<class_PopupMenu_theme_constant_search_bar_separation>`
 
-The vertical space between search bar and menu items.
+搜索栏与菜单项之间的垂直间距。
 
 .. rst-class:: classref-item-separator
 
@@ -2062,7 +2062,7 @@ The vertical space between search bar and menu items.
 
 :ref:`Texture2D<class_Texture2D>` **search** :ref:`🔗<class_PopupMenu_theme_icon_search>`
 
-:ref:`Texture2D<class_Texture2D>` icon for the search bar's search icon.
+搜索栏中搜索图标的 :ref:`Texture2D<class_Texture2D>`\ （2D纹理/图片）。
 
 .. rst-class:: classref-item-separator
 

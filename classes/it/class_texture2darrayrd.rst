@@ -14,9 +14,9 @@ Un array di texture per il 2D associata a una texture creata sul :ref:`Rendering
 Descrizione
 ----------------------
 
-This texture array class allows you to use a 2D array texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+Questa classe di array di texture consente di utilizzare una texture di array 2D creata direttamente sul :ref:`RenderingDevice<class_RenderingDevice>` come texture per materiali, mesh, ecc.
 
-\ **Note:** **Texture2DArrayRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Texture2DArray<class_Texture2DArray>` instead.
+\ **Nota:** **Texture2DArrayRD** è pensato per un utilizzo di basso livello con :ref:`RenderingDevice<class_RenderingDevice>`. Per la maggior parte dei casi d'uso, utilizza :ref:`Texture2DArray<class_Texture2DArray>` al suo posto.
 
 .. rst-class:: classref-introduction-group
 

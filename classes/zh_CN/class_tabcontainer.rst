@@ -353,7 +353,7 @@ enum **TabPosition**: :ref:`🔗<enum_TabContainer_TabPosition>`
 
 **已弃用：** Due to internal changes this doesn't do anything anymore, as they're always in front.
 
-This doesn't do anything.
+这没有任何作用。
 
 .. rst-class:: classref-item-separator
 
@@ -488,9 +488,9 @@ This doesn't do anything.
 
 :ref:`bool<class_bool>` **tab_{index}/disabled** = ``false`` :ref:`🔗<class_TabContainer_property_tab_{index}/disabled>`
 
-If ``true``, the tab at ``index`` is disabled.
+如果为 ``true``\ ，则禁用 ``index`` 处的选项卡。
 
-\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. get_tab_count() - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -502,9 +502,9 @@ If ``true``, the tab at ``index`` is disabled.
 
 :ref:`bool<class_bool>` **tab_{index}/hidden** = ``false`` :ref:`🔗<class_TabContainer_property_tab_{index}/hidden>`
 
-If ``true``, the tab at ``index`` is hidden.
+如果为 ``true``\ ，则隐藏 ``index`` 处的选项卡。
 
-\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. get_tab_count() - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -516,9 +516,9 @@ If ``true``, the tab at ``index`` is hidden.
 
 :ref:`Texture2D<class_Texture2D>` **tab_{index}/icon** :ref:`🔗<class_TabContainer_property_tab_{index}/icon>`
 
-The title text of the tab at ``index``.
+``index`` 处选项卡的标题文本。
 
-\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. get_tab_count() - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -530,9 +530,9 @@ The title text of the tab at ``index``.
 
 :ref:`String<class_String>` **tab_{index}/title** = ``""`` :ref:`🔗<class_TabContainer_property_tab_{index}/title>`
 
-The tooltip text of the tab at ``index``.
+``index`` 处选项卡的工具提示文本。
 
-\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. get_tab_count() - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1186,7 +1186,7 @@ The tooltip text of the tab at ``index``.
 
 :ref:`Texture2D<class_Texture2D>` **drop_mark** :ref:`🔗<class_TabContainer_theme_icon_drop_mark>`
 
-Icon shown to indicate where a dragged tab will be dropped (see :ref:`drag_to_rearrange_enabled<class_TabContainer_property_drag_to_rearrange_enabled>`).
+用于指示拖拽的标签页将放置在何处的图标（参见 :ref:`drag_to_rearrange_enabled<class_TabContainer_property_drag_to_rearrange_enabled>`\ ）。
 
 .. rst-class:: classref-item-separator
 

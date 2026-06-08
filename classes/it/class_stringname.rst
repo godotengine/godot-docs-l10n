@@ -618,32 +618,32 @@ Per ottenere un risultato :ref:`bool<class_bool>` da un confronto di stringhe, u
 
 :ref:`int<class_int>` **find**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_StringName_method_find>`
 
-Returns the index of the **first** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the string.
+Restituisce l'indice della **prima** occorrenza di ``what`` in questa stringa, o ``-1`` se non ce ne sono. L'inizio della ricerca può essere specificato con ``from``, continuando fino alla fine della stringa.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print("Team".find("I")) # Prints -1
+    print("Team".find("I")) # Stampa -1
 
-    print("Potato".find("t"))    # Prints 2
-    print("Potato".find("t", 3)) # Prints 4
-    print("Potato".find("t", 5)) # Prints -1
+    print("Potato".find("t"))    # Stampa 2
+    print("Potato".find("t", 3)) # Stampa 4
+    print("Potato".find("t", 5)) # Stampa -1
 
  .. code-tab:: csharp
 
-    GD.Print("Team".Find("I")); // Prints -1
+    GD.Print("Team".Find("I")); // Stampa -1
 
-    GD.Print("Potato".Find("t"));    // Prints 2
-    GD.Print("Potato".Find("t", 3)); // Prints 4
-    GD.Print("Potato".Find("t", 5)); // Prints -1
+    GD.Print("Potato".Find("t"));    // Stampa 2
+    GD.Print("Potato".Find("t", 3)); // Stampa 4
+    GD.Print("Patata".Find("t", 5)); // Stampa -1
 
 
 
-\ **Note:** If you just want to know whether the string contains ``what``, use :ref:`contains()<class_StringName_method_contains>`. In GDScript, you may also use the ``in`` operator.
+\ **Nota:** Se vuoi solo sapere se la stringa contiene ``what``, usa :ref:`contains()<class_StringName_method_contains>`. In GDScript, puoi anche usare l'operatore ``in``.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Nota:** Un valore negativo di ``from`` è convertito in un indice iniziale contando all'indietro dall'ultimo indice possibile con abbastanza spazio per trovare ``what``.
 
 .. rst-class:: classref-item-separator
 
@@ -1501,11 +1501,11 @@ Restituisce la copia di questa stringa in ordine inverso. Questa operazione funz
 
 :ref:`int<class_int>` **rfind**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_StringName_method_rfind>`
 
-Returns the index of the **last** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the string. This method is the reverse of :ref:`find()<class_StringName_method_find>`.
+Restituisce l'indice dell'**ultima** occorrenza di ``what`` in questa stringa, o ``-1`` se non ce ne sono. L'inizio della ricerca può essere specificato con ``from``, continuando fino all'inizio della stringa. Questo metodo è l'inverso di :ref:`find()<class_StringName_method_find>`.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Nota:** Un valore negativo di ``from`` è convertito in un indice iniziale contando all'indietro dall'ultimo indice possibile con abbastanza spazio per trovare ``what``.
 
-\ **Note:** A value of ``from`` that is greater than the last possible index with enough space to find ``what`` is considered out-of-bounds, and returns ``-1``.
+\ **Nota:** Un valore di ``from`` maggiore dell'ultimo indice possibile con abbastanza spazio per trovare ``what`` è considerato fuori dai limiti e restituisce ``-1``.
 
 .. rst-class:: classref-item-separator
 

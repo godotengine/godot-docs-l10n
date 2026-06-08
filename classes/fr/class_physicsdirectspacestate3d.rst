@@ -114,7 +114,7 @@ Vérifie les intersections d'une forme, donnée avec un objet :ref:`PhysicsShape
 
 Si la forme n'intersecte rien, alors un dictionnaire vide est renvoyé à la place.
 
-\ **Note:** Cette méthode ne tient pas compte de la propriété ``motion`` de l'objet.
+\ **Note :** Cette méthode ne tient pas compte de la propriété ``motion`` de l'objet.
 
 .. rst-class:: classref-item-separator
 

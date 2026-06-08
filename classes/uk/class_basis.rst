@@ -12,29 +12,29 @@ Basis
 Опис
 --------
 
-The **Basis** built-in :ref:`Variant<class_Variant>` type is a 3×3 `matrix <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ used to represent 3D rotation, scale, and shear. It is frequently used within a :ref:`Transform3D<class_Transform3D>`.
+Вбудований тип **Basis** :ref:`Variant<class_Variant>` — це `матриця <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ розміром 3×3, яка використовується для представлення 3D-обертання, масштабування та зсуву. Вона часто застосовується в об’єкті :ref:`Transform3D<class_Transform3D>`.
 
-A **Basis** is composed by 3 axis vectors, each representing a column of the matrix: :ref:`x<class_Basis_property_x>`, :ref:`y<class_Basis_property_y>`, and :ref:`z<class_Basis_property_z>`. The length of each axis (:ref:`Vector3.length()<class_Vector3_method_length>`) influences the basis's scale, while the direction of all axes influence the rotation. Usually, these axes are perpendicular to one another. However, when you rotate any axis individually, the basis becomes sheared. Applying a sheared basis to a 3D model will make the model appear distorted.
+\ **Basis** складається з 3 векторів осей, кожен з яких представляє стовпець матриці: :ref:`x<class_Basis_property_x>`, :ref:`y<class_Basis_property_y>` та :ref:`z<class_Basis_property_z>`. Довжина кожної осі (:ref:`Vector3.length()<class_Vector3_method_length>`) впливає на масштаб базису, тоді як напрямок усіх осей впливає на обертання. Зазвичай ці осі перпендикулярні одна до одної. Однак, коли ви обертаєте будь-яку вісь окремо, базис зазнає зсуву. Застосування зсунутого базису до 3D-моделі призведе до спотворення моделі.
 
-A **Basis** is:
+\ **Basis** є:
 
-- **Orthogonal** if its axes are perpendicular to each other.
+- **Ортогональним**, якщо його осі перпендикулярні одна до одної.
 
-- **Normalized** if the length of every axis is ``1.0``.
+- **Нормованим**, якщо довжина кожної осі дорівнює ``1.0``.
 
-- **Uniform** if all axes share the same length (see :ref:`get_scale()<class_Basis_method_get_scale>`).
+- **Однорідною**, якщо всі осі мають однакову довжину (див. ``метод get_scale``).
 
-- **Orthonormal** if it is both orthogonal and normalized, which allows it to only represent rotations (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+- **Ортонормованою**, якщо вона є одночасно ортогональною та нормалізованою, що дозволяє їй відображати лише обертання (див. ``метод orthonormalized``).
 
-- **Conformal** if it is both orthogonal and uniform, which ensures it is not distorted.
+- **Конформна**, якщо вона є одночасно ортогональною та рівномірною, що гарантує відсутність спотворень.
 
-For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
+Загальне введення дивіться у підручнику :doc:`Матриці та перетворення <../tutorials/math/matrices_and_transforms>`.
 
-\ **Note:** Godot uses a `right-handed coordinate system <https://en.wikipedia.org/wiki/Right-hand_rule>`__, which is a common standard. For directions, the convention for built-in types like :ref:`Camera3D<class_Camera3D>` is for -Z to point forward (+X is right, +Y is up, and +Z is back). Other objects may use different direction conventions. For more information, see the `3D asset direction conventions <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ tutorial.
+\ **Примітка:** Godot використовує `праворучну систему координат <https://en.wikipedia.org/wiki/Right-hand_rule>`__, що є загальноприйнятим стандартом. Щодо напрямків, у вбудованих типах, таких як :ref:`Camera3D<class_Camera3D>`, прийнято, що вісь -Z спрямована вперед (+X — праворуч, +Y — вгору, а +Z — назад). Інші об'єкти можуть використовувати інші угоди щодо напрямків. Для отримання додаткової інформації дивіться підручник `Угоди щодо напрямків 3D-ресурсів <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__.
 
-\ **Note:** The basis matrices are exposed as `column-major <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__ order, which is the same as OpenGL. However, they are stored internally in row-major order, which is the same as DirectX.
+\ **Примітка:** Матриці бази представлені у порядку `column-major <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__, що відповідає OpenGL. Однак внутрішньо вони зберігаються у порядку row-major, що відповідає DirectX.
 
-\ **Note:** In a boolean context, a basis will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Basis_constant_IDENTITY>`. Otherwise, a basis will always evaluate to ``true``.
+\ **Примітка:** У булевому контексті базис буде обчислюватися як ``false``, якщо він дорівнює :ref:`IDENTITY<class_Basis_constant_IDENTITY>`. В іншому випадку базис завжди обчислюватиметься як ``true``.
 
 .. note::
 
@@ -388,34 +388,34 @@ For a general introduction, see the :doc:`Matrices and transforms <../tutorials/
 
 :ref:`Basis<class_Basis>` **from_euler**\ (\ euler\: :ref:`Vector3<class_Vector3>`, order\: :ref:`int<class_int>` = 2\ ) |static| :ref:`🔗<class_Basis_method_from_euler>`
 
-Constructs a new **Basis** that only represents rotation from the given :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians.
+Створює новий об’єкт **Basis**, який відображає лише обертання навколо заданого :ref:`Vector3<class_Vector3>` з `кутів Ейлера <https://en.wikipedia.org/wiki/Euler_angles>`__ у радіанах.
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` should contain the angle around the :ref:`x<class_Basis_property_x>` axis (pitch);
+- :ref:`Vector3.x<class_Vector3_property_x>` повинен містити кут навколо осі :ref:`x<class_Basis_property_x>` (нахил);
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` should contain the angle around the :ref:`y<class_Basis_property_y>` axis (yaw);
+- :ref:`Vector3.y<class_Vector3_property_y>` повинен містити кут навколо осі :ref:`y<class_Basis_property_y>` (відхилення);
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` should contain the angle around the :ref:`z<class_Basis_property_z>` axis (roll).
+- :ref:`Vector3.z<class_Vector3_property_z>` повинен містити кут навколо осі :ref:`z<class_Basis_property_z>` (крен).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Creates a Basis whose z axis points down.
+    # Створює Basis, вісь z якого спрямована вниз.
     var my_basis = Basis.from_euler(Vector3(TAU / 4, 0, 0))
 
-    print(my_basis.z) # Prints (0.0, -1.0, 0.0)
+    print(my_basis.z) # Виводить (0.0, -1.0, 0.0)
 
  .. code-tab:: csharp
 
-    // Creates a Basis whose z axis points down.
+    // Створює базис, вісь z якого спрямована вниз.
     var myBasis = Basis.FromEuler(new Vector3(Mathf.Tau / 4.0f, 0.0f, 0.0f));
 
-    GD.Print(myBasis.Z); // Prints (0, -1, 0)
+    GD.Print(myBasis.Z); // Виводить (0, -1, 0)
 
 
 
-The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): the basis rotates first around the local Y axis (yaw), then local X (pitch), and lastly local Z (roll). When using the opposite method :ref:`get_euler()<class_Basis_method_get_euler>` to decompose a rotation, this order is reversed.
+Порядок кожного послідовного обертання можна змінити за допомогою ``order`` (див. константи :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`). У Godot кути Ейлера завжди використовують внутрішній порядок. За замовчуванням використовується внутрішня конвенція YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): базис спочатку обертається навколо локальної осі Y (рискання), потім навколо локальної осі X (нахил) і, нарешті, навколо локальної осі Z (крен). При використанні протилежного методу :ref:`get_euler()<class_Basis_method_get_euler>` для розкладання обертання цей порядок змінюється на зворотний.
 
 .. rst-class:: classref-item-separator
 
@@ -462,21 +462,21 @@ The order of each consecutive rotation can be changed with ``order`` (see :ref:`
 
 :ref:`Vector3<class_Vector3>` **get_euler**\ (\ order\: :ref:`int<class_int>` = 2\ ) |const| :ref:`🔗<class_Basis_method_get_euler>`
 
-Returns this basis's rotation as a :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians. For the returned value:
+Повертає обертання цієї бази у вигляді :ref:`Vector3<class_Vector3>` з `кутами Ейлера <https://en.wikipedia.org/wiki/Euler_angles>`__ у радіанах. Щодо повернутого значення:
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` contains the angle around the :ref:`x<class_Basis_property_x>` axis (pitch);
+- :ref:`Vector3.x<class_Vector3_property_x>` містить кут обертання навколо осі :ref:`x<class_Basis_property_x>` (нахил);
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` contains the angle around the :ref:`y<class_Basis_property_y>` axis (yaw);
+- :ref:`Vector3.y<class_Vector3_property_y>` містить кут навколо осі :ref:`y<class_Basis_property_y>` (відхилення);
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` contains the angle around the :ref:`z<class_Basis_property_z>` axis (roll).
+- :ref:`Vector3.z<class_Vector3_property_z>` містить кут навколо осі :ref:`z<class_Basis_property_z>` (крен).
 
-The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): since we are decomposing, local Z (roll) is calculated first, then local X (pitch), and lastly local Y (yaw). When using the opposite method :ref:`from_euler()<class_Basis_method_from_euler>` to compose a rotation, this order is reversed.
+Порядок кожного послідовного обертання можна змінити за допомогою ``order`` (див. константи :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`). У Godot кути Ейлера завжди використовують внутрішній порядок. За замовчуванням використовується внутрішня конвенція YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): оскільки ми розкладаємо, спочатку обчислюється локальна Z (крен), потім локальна X (нахил), і нарешті локальна Y (відхилення). При використанні протилежного методу :ref:`from_euler()<class_Basis_method_from_euler>` для складання обертання цей порядок змінюється на зворотний.
 
-\ **Note:** For this method to return correctly, the basis needs to be *orthonormal* (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+\ ** Примітка:** Щоб цей метод повертав правильний результат, базис повинен бути *ортонормальним* (див. ``метод orthonormalized``).
 
-\ **Note:** Euler angles are much more intuitive but are not suitable for 3D math. Because of this, consider using the :ref:`get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>` method instead, which returns a :ref:`Quaternion<class_Quaternion>`.
+\ **Примітка:** Кути Ейлера набагато інтуїтивніші, але не підходять для 3D-математики. З огляду на це, розгляньте можливість використання методу :ref:`get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>` замість цього, який повертає :ref:`Quaternion<class_Quaternion>`.
 
-\ **Note:** In the Inspector dock, a basis's rotation is often displayed in Euler angles (in degrees), as is the case with the :ref:`Node3D.rotation<class_Node3D_property_rotation>` property.
+\ **Примітка:** У доці Inspector обертання бази часто відображається в кутах Ейлера (у градусах), як це відбувається у випадку властивості :ref:`Node3D.rotation<class_Node3D_property_rotation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -595,7 +595,7 @@ The order of each consecutive rotation can be changed with ``order`` (see :ref:`
 
 :ref:`bool<class_bool>` **is_orthonormal**\ (\ ) |const| :ref:`🔗<class_Basis_method_is_orthonormal>`
 
-Returns ``true`` if this basis is orthonormal. An orthonormal basis is both *orthogonal* (the axes are perpendicular to each other) and *normalized* (the length of every axis is ``1.0``). This method can be especially useful during physics calculations.
+Повертає ``true``, якщо цей базис є ортонормальним. Ортонормальний базис є одночасно *ортогональним* (осі перпендикулярні одна до одної) та *нормалізованим* (довжина кожної осі дорівнює ``1.0``). Цей метод може бути особливо корисним під час фізичних розрахунків.
 
 .. rst-class:: classref-item-separator
 

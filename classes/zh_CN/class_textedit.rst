@@ -1590,7 +1590,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 - |void| **set_fit_content_height_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_height_enabled**\ (\ )
 
-If ``true``, **TextEdit** fits its minimum height to the number of visible lines instead of scrolling vertically. If a maximum height is set (for example via :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) and content exceeds it, a vertical scrollbar is shown.
+如果为 ``true``\ ，则 **TextEdit** 会根据可见行数调整其最小高度，而不是进行垂直滚动。如果设置了最大高度（例如通过 :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`\ ），且内容超出该高度，则会显示垂直滚动条。
 
 .. rst-class:: classref-item-separator
 
@@ -1607,7 +1607,7 @@ If ``true``, **TextEdit** fits its minimum height to the number of visible lines
 - |void| **set_fit_content_width_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_width_enabled**\ (\ )
 
-If ``true``, **TextEdit** fits its minimum width to the widest line instead of scrolling horizontally. If a maximum width is set (for example via :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) and content exceeds it, a horizontal scrollbar is shown.
+如果为 ``true``\ ，则 **TextEdit** 会根据最长的一行文本调整其最小宽度，而不是进行水平滚动。如果设置了最大宽度（例如通过 :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`\ ），且内容超出该宽度，则会显示水平滚动条。
 
 .. rst-class:: classref-item-separator
 
@@ -3244,11 +3244,11 @@ If ``true``, **TextEdit** fits its minimum width to the widest line instead of s
 
 :ref:`bool<class_bool>` **is_caret_visible**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_is_caret_visible>`
 
-Returns ``true`` if the caret is visible, ``false`` otherwise. A caret will be considered hidden if it is outside the scrollable area when scrolling is enabled.
+如果光标可见，返回 ``true``\ ；否则返回 ``false``\ 。当滚动功能开启时，如果光标位于可滚动区域之外，它将被视为已隐藏。
 
-\ **Note:** :ref:`is_caret_visible()<class_TextEdit_method_is_caret_visible>` does not account for a caret being off-screen if it is still within the scrollable area. It will return ``true`` even if the caret is off-screen as long as it meets **TextEdit**'s own conditions for being visible. This includes uses of :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` and :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` that cause the **TextEdit** to expand beyond the viewport's bounds.
+\ **注意：** :ref:`is_caret_visible()<class_TextEdit_method_is_caret_visible>` 不会考虑光标虽然还在可滚动区域内、但实际已经超出屏幕（即当前视口）的情况。只要光标满足 **TextEdit** 自身设定的可见条件，即使它在屏幕外，该方法也会返回 ``true``\ 。这包括使用了 :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` 和 :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` 导致 **TextEdit** 扩展到视口边界之外的情况。
 
-\ **Note:** This method does *not* guarantee an accurate visibility check immediately after setting the caret position. The correct value may only be available in the next frame after the **TextEdit** has finished drawing. This also applies to any operation that causes the **TextEdit** to change in size.
+\ **注意：** 在刚刚设置完光标位置后，此方法并不能\ *立刻*\ 保证给出准确的可见性检查结果。正确的值可能只有在 **TextEdit** 完成绘制后的下一帧才能获取。任何导致 **TextEdit** 尺寸发生变化的操作，也同样适用这条规则。
 
 .. rst-class:: classref-item-separator
 
@@ -3332,7 +3332,7 @@ Returns ``true`` if the caret is visible, ``false`` otherwise. A caret will be c
 
 :ref:`bool<class_bool>` **is_line_in_viewport**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_is_line_in_viewport>`
 
-Returns ``true`` if the given line is within the scope of the scrollable area of the viewport.
+如果指定的行处于视口可滚动区域的范围内，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

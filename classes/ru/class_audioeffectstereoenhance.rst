@@ -7,16 +7,16 @@ AudioEffectStereoEnhance
 
 **Наследует:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a stereo manipulation audio effect to an audio bus.
+Добавляет эффект стереоманипуляции к аудиошине.
 
-Controls gain of the side channels, and widens the stereo image.
+Управляет усилением боковых каналов и расширяет стереоизображение.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Adjusts gain of the left and right channels, and makes mono sounds stereo through phase shifting.
+Регулирует усиление левого и правого каналов и преобразует моно звук в стерео за счет сдвига фазы.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ Adjusts gain of the left and right channels, and makes mono sounds stereo throug
 
 - :doc:`Аудиошины <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Звуковые эффекты <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -63,7 +63,7 @@ Adjusts gain of the left and right channels, and makes mono sounds stereo throug
 - |void| **set_pan_pullout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pan_pullout**\ (\ )
 
-Gain of the side channels, if they exist. A value of 0 will downmix stereo to mono. Value can range from 0 to 4.
+Усиление боковых каналов, если они есть. Значение 0 приведет к преобразованию стереосигнала в моно. Значение может варьироваться от 0 до 4.
 
 .. rst-class:: classref-item-separator
 
@@ -80,7 +80,7 @@ Gain of the side channels, if they exist. A value of 0 will downmix stereo to mo
 - |void| **set_surround**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_surround**\ (\ )
 
-Widens the stereo image through phase shifting in conjunction with :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>`. Just pans sound to the left channel if :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>` is 0. Value can range from 0 to 1.
+Расширяет стереоизображение за счет сдвига фазы в сочетании с параметром :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>`. Просто перемещает звук в левый канал, если :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>` равен 0. Значение может варьироваться от 0 до 1.
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ Widens the stereo image through phase shifting in conjunction with :ref:`time_pu
 - |void| **set_time_pullout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_pullout**\ (\ )
 
-Widens the stereo image through phase shifting in conjunction with :ref:`surround<class_AudioEffectStereoEnhance_property_surround>`. Just delays the right channel if :ref:`surround<class_AudioEffectStereoEnhance_property_surround>` is 0. Value is in milliseconds, and can range from 0 to 50.
+Расширяет стереоизображение за счет сдвига фазы в сочетании с :ref:`surround<class_AudioEffectStereoEnhance_property_surround>`. Задерживает правый канал, если :ref:`surround<class_AudioEffectStereoEnhance_property_surround>` равно 0. Значение указывается в миллисекундах и может варьироваться от 0 до 50.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

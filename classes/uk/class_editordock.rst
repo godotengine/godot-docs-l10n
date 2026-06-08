@@ -138,7 +138,7 @@ EditorDock — це вузол :ref:`Container<class_Container>`, який мо�
 
 **opened**\ (\ ) :ref:`🔗<class_EditorDock_signal_opened>`
 
-Emitted when the dock is opened via the Editor > Editor Docks menu, before it's made visible.
+Видається під час відкриття панелі через меню «Редактор» > «Панелі редактора», до того, як вона стане видимою.
 
 .. rst-class:: classref-section-separator
 
@@ -169,7 +169,7 @@ flags **DockLayout**: :ref:`🔗<enum_EditorDock_DockLayout>`
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_HORIZONTAL** = ``2``
 
-Allows placing the dock in the horizontal dock slots at the bottom.
+Дозволяє розміщувати док-станцію в горизонтальних гніздах для док-станцій у нижній частині.
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_FLOATING:
 
@@ -283,7 +283,7 @@ enum **DockSlot**: :ref:`🔗<enum_EditorDock_DockSlot>`
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_BOTTOM_L** = ``9``
 
-Dock slot at the bottom, below bottom panel, on the left side.
+Слот для док-станції розташований знизу, під нижньою панеллю, зліва.
 
 .. _class_EditorDock_constant_DOCK_SLOT_BOTTOM_R:
 
@@ -291,7 +291,7 @@ Dock slot at the bottom, below bottom panel, on the left side.
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_BOTTOM_R** = ``10``
 
-Dock slot at the bottom, below bottom panel, on the right side.
+Слот для док-станції розташований знизу, під нижньою панеллю, праворуч.
 
 .. _class_EditorDock_constant_DOCK_SLOT_MAX:
 
@@ -408,7 +408,7 @@ Dock slot at the bottom, below bottom panel, on the right side.
 - |void| **set_force_show_icon**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_force_show_icon**\ (\ )
 
-If ``true``, the dock will always display an icon, regardless of :ref:`EditorSettings.interface/editor/docks/dock_tab_style<class_EditorSettings_property_interface/editor/docks/dock_tab_style>` or :ref:`EditorSettings.interface/editor/docks/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/docks/bottom_dock_tab_style>`.
+Якщо ``true``, док завжди відображатиме піктограму, незалежно від значень :ref:`EditorSettings.interface/editor/docks/dock_tab_style<class_EditorSettings_property_interface/editor/docks/dock_tab_style>` або :ref:`EditorSettings.interface/editor/docks/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/docks/bottom_dock_tab_style>`.
 
 .. rst-class:: classref-item-separator
 

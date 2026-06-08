@@ -193,7 +193,7 @@ Renvoie le nombre de ports de sortie utilisés. C'est une alternative à :ref:`g
 
 :ref:`String<class_String>` **get_outputs**\ (\ ) |const| :ref:`🔗<class_VisualShaderNodeGroupBase_method_get_outputs>`
 
-Renvoie une :ref:`String<class_String>` de description des ports sortants sous forme de liste séparée par une virgule avec le format ``identifiant,type,nom;`` (voir :ref:`add_output_port()<class_VisualShaderNodeGroupBase_method_add_output_port>`).
+Renvoie une :ref:`String<class_String>` de description des ports sortants sous forme de liste séparée par des virgules avec le format ``identifiant,type,nom;`` (voir :ref:`add_output_port()<class_VisualShaderNodeGroupBase_method_add_output_port>`).
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ Définit le type du port d'entrée spécifié (voir :ref:`PortType<enum_VisualSh
 
 |void| **set_inputs**\ (\ inputs\: :ref:`String<class_String>`\ ) :ref:`🔗<class_VisualShaderNodeGroupBase_method_set_inputs>`
 
-Définit tous les ports entrants avec une :ref:`String<class_String>` composée de valeurs séparées par un point-virgule : ``identifiant,type,nom;`` (voir :ref:`add_input_port()<class_VisualShaderNodeGroupBase_method_add_input_port>`).
+Définit tous les ports entrants avec une :ref:`String<class_String>` composée de valeurs séparées par des points-virgules : ``identifiant,type,nom;`` (voir :ref:`add_input_port()<class_VisualShaderNodeGroupBase_method_add_input_port>`).
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ Définit le type du port de sortie spécifié (voir :ref:`PortType<enum_VisualSh
 
 |void| **set_outputs**\ (\ outputs\: :ref:`String<class_String>`\ ) :ref:`🔗<class_VisualShaderNodeGroupBase_method_set_outputs>`
 
-Définit tous les ports sortants avec une :ref:`String<class_String>` composée de valeurs séparées par un point-virgule : ``identifiant,type,nom;`` (voir :ref:`add_input_port()<class_VisualShaderNodeGroupBase_method_add_input_port>`).
+Définit tous les ports sortants avec une :ref:`String<class_String>` composée de valeurs séparées par des points-virgules : ``identifiant,type,nom;`` (voir :ref:`add_input_port()<class_VisualShaderNodeGroupBase_method_add_input_port>`).
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

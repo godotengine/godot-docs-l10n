@@ -7,18 +7,18 @@ AudioEffectPhaser
 
 **Наследует:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a phaser audio effect to an audio bus.
+Добавляет эффект фазера к аудиошине.
 
-Creates several notch and peak filters that sweep across the spectrum.
+Создает несколько режекторных и пиковых фильтров, которые изменяют частоту дискретизации.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-A "phaser" effect creates a copy of the original audio that phase-rotates differently across the entire frequency spectrum, with the use of a series of all-pass filter stages (6 in this effect). This copy modulates with a low-frequency oscillator and combines with the original audio, resulting in peaks and troughs that sweep across the spectrum.
+Эффект «фазер» создает копию исходного звука, фаза которого изменяется по-разному во всем частотном спектре, с использованием ряда всепропускающих фильтрующих каскадов (6 в этом эффекте). Эта копия модулируется низкочастотным осциллятором и объединяется с исходным звуком, в результате чего образуются пики и впадины, которые распространяются по всему спектру.
 
-This effect can be used to create a "glassy" or "bubbly" sound.
+Этот эффект можно использовать для создания «стеклянного» или «пузырчатого» звука.
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ This effect can be used to create a "glassy" or "bubbly" sound.
 
 - :doc:`Аудиошины <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Звуковые эффекты <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -69,7 +69,7 @@ This effect can be used to create a "glassy" or "bubbly" sound.
 - |void| **set_depth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth**\ (\ )
 
-Intensity of the effect. Value can range from 0.1 to 4.0.
+Интенсивность эффекта. Значение может варьироваться от 0,1 до 4,0.
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ Intensity of the effect. Value can range from 0.1 to 4.0.
 - |void| **set_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback**\ (\ )
 
-The volume ratio of the filtered audio that is fed back to the all-pass filters. The higher the value, the sharper and louder the peak filters created by the effect. Value can range from 0.1 to 0.9.
+Коэффициент громкости отфильтрованного звука, поступающего обратно на всепропускающие фильтры. Чем выше значение, тем резче и громче пиковые фильтры, создаваемые эффектом. Значение может варьироваться от 0,1 до 0,9.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ The volume ratio of the filtered audio that is fed back to the all-pass filters.
 - |void| **set_range_max_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_max_hz**\ (\ )
 
-Determines the maximum frequency affected by the low-frequency oscillator modulations, in Hz. Value can range from 10 to 10000.
+Определяет максимальную частоту, на которую влияют модуляции низкочастотного генератора, в Гц. Значение может варьироваться от 10 до 10000.
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ Determines the maximum frequency affected by the low-frequency oscillator modula
 - |void| **set_range_min_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_min_hz**\ (\ )
 
-Determines the minimum frequency affected by the low-frequency oscillator modulations, in Hz. Value can range from 10 to 10000.
+Определяет минимальную частоту, на которую влияют модуляции низкочастотного генератора, в Гц. Значение может варьироваться от 10 до 10000.
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ Determines the minimum frequency affected by the low-frequency oscillator modula
 - |void| **set_rate_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rate_hz**\ (\ )
 
-Adjusts the rate in Hz at which the effect sweeps up and down across the frequency range. Value can range from 0.01 to 20.
+Регулирует частоту изменения эффекта в Гц в пределах частотного диапазона. Значение может варьироваться от 0,01 до 20.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

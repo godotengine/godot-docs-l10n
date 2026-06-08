@@ -39,7 +39,7 @@ Tutorial
 
 - `Demo di schermo diviso dinamico <https://godotengine.org/asset-library/asset/2806>`__
 
-- `Demo di scala della risoluzione 3D <https://godotengine.org/asset-library/asset/2805>`__
+- `Demo di scaling della risoluzione 3D <https://godotengine.org/asset-library/asset/2805>`__
 
 .. rst-class:: classref-reftable-group
 

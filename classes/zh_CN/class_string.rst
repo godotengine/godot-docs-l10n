@@ -470,7 +470,7 @@ String
 
 :ref:`String<class_String>` **capitalize**\ (\ ) |const| :ref:`🔗<class_String_method_capitalize>`
 
-Returns a copy of the string with changed appearance. Replaces underscores (``_``) and hyphens (``-``) with spaces, adds spaces before uppercase letters in the middle of a word, converts all letters to lowercase, then converts the first one and each one following a space to uppercase.
+返回一个外观经过修改的字符串副本。它会将下划线（\ ``_``\ ）和连字符（\ ``-``\ ）替换为空格，并在单词中间的大写字母前添加空格，然后将所有字母转换为小写，最后再将首字母以及每个空格后的字母转换为大写。
 
 
 .. tabs::

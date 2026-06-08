@@ -14,9 +14,9 @@ Texture per il 3D associata a una texture creata sul :ref:`RenderingDevice<class
 Descrizione
 ----------------------
 
-This texture class allows you to use a 3D texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+Questa classe di texture consente di utilizzare una texture 3D creata direttamente sul :ref:`RenderingDevice<class_RenderingDevice>` come texture per materiali, mesh, ecc.
 
-\ **Note:** **Texture3DRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Texture3D<class_Texture3D>` instead.
+\ **Nota:** **Texture3DRD** è pensato per un utilizzo di basso livello con :ref:`RenderingDevice<class_RenderingDevice>`. Per la maggior parte dei casi d'uso, utilizza :ref:`Texture3D<class_Texture3D>` al suo posto.
 
 .. rst-class:: classref-introduction-group
 

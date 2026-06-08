@@ -142,7 +142,7 @@ Active le flou de profondeur de champ pour les objets plus loin que la distance 
 
 \ **Note :** Le flou de profondeur de champ n'est supporté que dans les moteur de rendu Forward+ et Mobile, pas Compatibilité.
 
-\ **Note:** La profondeur du flou de champ n'est pas supportée sur les points de vue qui ont un fond transparent (où :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` est ``true``).
+\ **Note :** La profondeur du flou de champ n'est pas supportée sur les points de vue qui ont un fond transparent (où :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` vaut ``true``).
 
 .. rst-class:: classref-item-separator
 

@@ -1318,7 +1318,7 @@ Renvoie le numéro de paragraphe de la position de caractère fournie. Les numé
 
 Renvoie la hauteur du contenu.
 
-\ **Note:** Cette méthode renvoie toujours la taille de contenu complet, et n'est pas affectée par :ref:`visible_ratio<class_RichTextLabel_property_visible_ratio>` et :ref:`visible_characters<class_RichTextLabel_property_visible_characters>`. Pour obtenir la taille du contenu visible, utilisez :ref:`get_visible_content_rect()<class_RichTextLabel_method_get_visible_content_rect>`.
+\ **Note :** Cette méthode renvoie toujours la taille du contenu complet, et n'est pas affectée par :ref:`visible_ratio<class_RichTextLabel_property_visible_ratio>` et :ref:`visible_characters<class_RichTextLabel_property_visible_characters>`. Pour obtenir la taille du contenu visible, utilisez :ref:`get_visible_content_rect()<class_RichTextLabel_method_get_visible_content_rect>`.
 
 \ **Note :** Si :ref:`threaded<class_RichTextLabel_property_threaded>` est activé, cette méthode renvoie une valeur pour la partie chargée du document. Utilisez :ref:`is_finished()<class_RichTextLabel_method_is_finished>` ou :ref:`finished<class_RichTextLabel_signal_finished>` pour déterminer si le document est entièrement chargé.
 
@@ -1334,7 +1334,7 @@ Renvoie la hauteur du contenu.
 
 Renvoie la largeur du contenu.
 
-\ **Note:** Cette méthode renvoie toujours la taille de contenu complet, et n'est pas affectée par :ref:`visible_ratio<class_RichTextLabel_property_visible_ratio>` et :ref:`visible_characters<class_RichTextLabel_property_visible_characters>`. Pour obtenir la taille du contenu visible, utilisez :ref:`get_visible_content_rect()<class_RichTextLabel_method_get_visible_content_rect>`.
+\ **Note :** Cette méthode renvoie toujours la taille de contenu complet, et n'est pas affectée par :ref:`visible_ratio<class_RichTextLabel_property_visible_ratio>` et :ref:`visible_characters<class_RichTextLabel_property_visible_characters>`. Pour obtenir la taille du contenu visible, utilisez :ref:`get_visible_content_rect()<class_RichTextLabel_method_get_visible_content_rect>`.
 
 \ **Note :** Si :ref:`threaded<class_RichTextLabel_property_threaded>` est activé, cette méthode renvoie une valeur pour la partie chargée du document. Utilisez :ref:`is_finished()<class_RichTextLabel_method_is_finished>` ou :ref:`finished<class_RichTextLabel_signal_finished>` pour déterminer si le document est entièrement chargé.
 

@@ -2789,7 +2789,7 @@ Consente a un'applicazione di scrivere nel dizionario utente.
 
 :ref:`Color<class_Color>` **screen/background_color** :ref:`🔗<class_EditorExportPlatformAndroid_property_screen/background_color>`
 
-The background color used for the root window. By default it's :ref:`Color.BLACK<class_Color_constant_BLACK>`.
+Il colore di sfondo utilizzato per la finestra principale. Predefinito su :ref:`Color.BLACK<class_Color_constant_BLACK>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2875,9 +2875,9 @@ Indica se l'applicazione supporta fattori forma di schermi di grandi dimensioni.
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformAndroid_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ or Mobile renderers.
+Se ``true``, gli shader saranno compilati e incorporati nell'applicazione. Questa opzione è supportata solo quando si utilizzano i renderer Forward+ o Mobile.
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **Nota:** Quando si esporta come server dedicato, lo shader baker è sempre disabilitato poiché nessun rendering viene eseguito.
 
 .. rst-class:: classref-item-separator
 
@@ -2889,11 +2889,11 @@ If ``true``, shaders will be compiled and embedded in the application. This opti
 
 :ref:`Color<class_Color>` **splash_screen/background_color** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/background_color>`
 
-The background color used for the system splash screen window.
+Il colore di sfondo utilizzato per la schermata di avvio del sistema.
 
-If not set, it will fallback to :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
+Se non impostato, sarà utilizzato :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
 
-\ **Note:** This is only applied if :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` is enabled.
+\ **Nota:** Questo è applicato solo se :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` è abilitato.
 
 .. rst-class:: classref-item-separator
 

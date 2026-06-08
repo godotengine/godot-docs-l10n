@@ -624,7 +624,7 @@ Esta función siempre devuelve el mapa establecido en el nodo GridMap y no el ma
 
 :ref:`Vector3i<class_Vector3i>` **get_octant_coords_from_cell_coords**\ (\ cell_coords\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_octant_coords_from_cell_coords>`
 
-Returns the :ref:`Vector3i<class_Vector3i>` octant coordinates of the octant that the cell at ``cell_coords`` belongs to.
+Devuelve las coordenadas del octante :ref:`Vector3i<class_Vector3i>` del octante al que pertenece la celda en ``cell_coords``.
 
 .. rst-class:: classref-item-separator
 

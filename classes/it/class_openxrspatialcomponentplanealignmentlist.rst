@@ -16,7 +16,7 @@ Object for storing the queries plane alignment result data.
 Descrizione
 ----------------------
 
-Object for storing the queries plane alignment result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Oggetto per memorizzare i dati risultanti di una richiesta sull'allineamento di un piano quando si chiama :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 

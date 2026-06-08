@@ -16,7 +16,7 @@ Object for storing the query persistence result data.
 Descrizione
 ----------------------
 
-Object for storing the query persistence result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Oggetto per memorizzare i dati risultanti di una richiesta sulla persistenza quando si chiama :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Descrizioni dei metodi
 
 :ref:`int<class_int>` **get_persistent_state**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPersistenceList_method_get_persistent_state>`
 
-Returns the persistent state (``XrSpatialPersistenceStateEXT``) for the entity at this ``index``.
+Restituisce lo stato persistente (``XrSpatialPersistenceStateEXT``) per l'entità all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 

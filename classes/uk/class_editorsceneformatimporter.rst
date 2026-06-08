@@ -63,7 +63,7 @@ flags **ImportFlags**: :ref:`🔗<enum_EditorSceneFormatImporter_ImportFlags>`
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_SCENE** = ``1``
 
-Unused flag (this has no effect when enabled).
+Невикористаний прапорець (при увімкненні не має ніякого ефекту).
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_ANIMATION:
 
@@ -71,7 +71,7 @@ Unused flag (this has no effect when enabled).
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_ANIMATION** = ``2``
 
-Import animations from the 3D scene. When importing a scene as an :ref:`AnimationLibrary<class_AnimationLibrary>`, this flag is always enabled.
+Імпортувати анімації з 3D-сцени. При імпорті сцени як :ref:`AnimationLibrary<class_AnimationLibrary>` цей прапорець завжди ввімкнено.
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_FAIL_ON_MISSING_DEPENDENCIES:
 
@@ -79,7 +79,7 @@ Import animations from the 3D scene. When importing a scene as an :ref:`Animatio
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_FAIL_ON_MISSING_DEPENDENCIES** = ``4``
 
-Unused flag (this has no effect when enabled).
+Невикористаний прапорець (при увімкненні не має ніякого ефекту).
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_GENERATE_TANGENT_ARRAYS:
 
@@ -87,9 +87,9 @@ Unused flag (this has no effect when enabled).
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_GENERATE_TANGENT_ARRAYS** = ``8``
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+Якщо ``true``, генерувати тангенси вершин за допомогою `Mikktspace <http://www.mikktspace.com/>`__, якщо вхідні сітки не містять даних про тангенси. Якщо це можливо, рекомендується дозволити програмі 3D-моделювання генерувати тангенси під час експорту, замість того щоб покладатися на цю опцію. Тангенти необхідні для коректного відображення карт нормалей та висот, а також будь-яких функцій матеріалів/шейдерів, що вимагають тангентів.
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+Якщо вам не потрібні функції матеріалів, що вимагають тангентів, вимкнення цієї опції може зменшити розмір вихідного файлу та пришвидшити імпорт, якщо вихідний 3D-файл не містить тангентів.
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_USE_NAMED_SKIN_BINDS:
 
@@ -97,15 +97,15 @@ If you don't need material features that require tangents, disabling this can re
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_USE_NAMED_SKIN_BINDS** = ``16``
 
-If checked, use named :ref:`Skin<class_Skin>`\ s for animation. The :ref:`MeshInstance3D<class_MeshInstance3D>` node contains 3 properties of relevance here: a skeleton :ref:`NodePath<class_NodePath>` pointing to the :ref:`Skeleton3D<class_Skeleton3D>` node (usually ``..``), a mesh, and a skin:
+Якщо встановлено прапорець, для анімації використовуються іменовані :ref:`Skin<class_Skin>`. Вузол :ref:`MeshInstance3D<class_MeshInstance3D>` містить 3 властивості, що мають тут значення: скелет :ref:`NodePath<class_NodePath>`, який вказує на вузол :ref:`Skeleton3D<class_Skeleton3D>` (зазвичай ``..``), сітку та скін:
 
-- The :ref:`Skeleton3D<class_Skeleton3D>` node contains a list of bones with names, their pose and rest, a name, and a parent bone.
+- Вузол :ref:`Skeleton3D<class_Skeleton3D>` містить список кісток з іменами, їх позою та положенням спокою, ім'ям та батьківською кісткою.
 
-- The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
+- Сітка — це всі необроблені дані про вершини, необхідні для відображення сітки. Щодо сітки, вона знає, як вершини розфарбовуються за вагою, та використовує внутрішню нумерацію, часто імпортовану з програмного забезпечення для 3D-моделювання.
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For each of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the :ref:`Skin<class_Skin>` contains each bone's name (if this flag is enabled), or the bone's index within the :ref:`Skeleton3D<class_Skeleton3D>` list (if this flag is disabled).
+- Скін містить інформацію, необхідну для прив'язки цієї сітки до цього Skeleton3D. Для кожного з внутрішніх ідентифікаторів кісток, обраних програмним забезпеченням для 3D-моделювання, він містить дві речі. По-перше, матрицю, відому як матриця позиції прив'язки (Bind Pose Matrix), обернена матриця прив'язки (Inverse Bind Matrix) або, скорочено, IBM. По-друге, :ref:`Skin<class_Skin>` містить назву кожної кістки (якщо цей прапорець увімкнено) або індекс кістки у списку :ref:`Skeleton3D<class_Skeleton3D>` (якщо цей прапорець вимкнено).
 
-Together, this information is enough to tell Godot how to use the bone poses in the :ref:`Skeleton3D<class_Skeleton3D>` node to render the mesh from each :ref:`MeshInstance3D<class_MeshInstance3D>`. Note that each :ref:`MeshInstance3D<class_MeshInstance3D>` may share binds, as is common in models exported from Blender, or each :ref:`MeshInstance3D<class_MeshInstance3D>` may use a separate :ref:`Skin<class_Skin>` object, as is common in models exported from other tools such as Maya.
+Разом ця інформація достатня, щоб повідомити Godot, як використовувати пози кісток у вузлі :ref:`Skeleton3D<class_Skeleton3D>` для рендерингу сітки з кожного :ref:`MeshInstance3D<class_MeshInstance3D>`. Зверніть увагу, що кожен :ref:`MeshInstance3D<class_MeshInstance3D>` може використовувати спільні прив'язки, як це зазвичай буває у моделях, експортованих з Blender, або кожен :ref:`MeshInstance3D<class_MeshInstance3D>` може використовувати окремий об'єкт :ref:`Skin<class_Skin>`, як це зазвичай буває у моделях, експортованих з інших інструментів, таких як Maya.
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_DISCARD_MESHES_AND_MATERIALS:
 
@@ -113,7 +113,7 @@ Together, this information is enough to tell Godot how to use the bone poses in 
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_DISCARD_MESHES_AND_MATERIALS** = ``32``
 
-Ignore meshes and materials on import. When importing a scene as an :ref:`AnimationLibrary<class_AnimationLibrary>`, this flag is always enabled.
+Ігнорувати сітки та матеріали під час імпорту. Під час імпорту сцени як :ref:`AnimationLibrary<class_AnimationLibrary>` цей прапорець завжди увімкнено.
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_FORCE_DISABLE_MESH_COMPRESSION:
 

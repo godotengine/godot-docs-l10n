@@ -97,14 +97,14 @@ Applica un effetto seppia secondo la seguente formula:
 
 :ref:`Function<enum_VisualShaderNodeColorFunc_Function>` **FUNC_LINEAR_TO_SRGB** = ``4``
 
-Converts color from linear encoding to nonlinear sRGB encoding using the following formula:
+Converte il colore dalla codifica lineare alla codifica non lineare sRGB attraverso la seguente formula:
 
 ::
 
     const vec3 a = vec3(0.055f);
     return mix((vec3(1.0f) + a) * pow(c.rgb, vec3(1.0f / 2.4f)) - a, 12.92f * c.rgb, lessThan(c.rgb, vec3(0.0031308f)));
 
-The Compatibility renderer uses a simpler formula that may produce undefined behavior with negative input values:
+Il renderer Compatibilità usa una formula più semplice che potrebbe produrre un comportamento indefinito con valori di input negativi:
 
 ::
 

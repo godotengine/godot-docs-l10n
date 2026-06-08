@@ -14,13 +14,13 @@ A node that propagates and disperses the child bone's twist to the parent bones.
 Descrizione
 ----------------------
 
-This **BoneTwistDisperser3D** allows for smooth twist interpolation between multiple bones by dispersing the end bone's twist to the parents. This only changes the twist without changing the global position of each joint.
+Questo **BoneTwistDisperser3D** consente un'interpolazione fluida della torsione tra più ossa, distribuendo la torsione dell'osso finale agli ossi genitori. Così viene modificata solo la torsione, senza alterare la posizione globale di ciascuna articolazione.
 
-This is useful for smoothly twisting bones in combination with :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` and IK.
+È utile per torcere le ossa fluidamente in combinazione con :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` e IK.
 
-\ **Note:** If an extracted twist is greater than 180 degrees, flipping occurs. This is similar to :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
+\ **Nota:** Se la torsione estratta è superiore a 180 gradi, avviene un ribaltamento. Questo comportamento è simile a quello di :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
 
-\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **Nota:** La maggior parte dei metodi di questa classe accetta un parametro ``index``. Questo parametro specifica quale voce nell'elenco delle impostazioni restituire, se l'IK ha più voci (ad esempio, ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 
@@ -311,7 +311,7 @@ Restituisce il numero di articolazioni nella lista delle articolazioni della cat
 
 :ref:`float<class_float>` **get_joint_twist_amount**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_joint_twist_amount>`
 
-Returns the twist amount at ``joint`` in the bone chain's joint list when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Restituisce la quantità di torsione in ``joint`` nella lista delle articolazioni della catena d'ossa quando :ref:`is_config_individual()<class_BoneTwistDisperser3D_method_is_config_individual>` è :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -485,9 +485,9 @@ Sets the end bone name of the bone chain.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Se ``enabled`` è ``true``, l'osso finale è allungato per avere una coda.
 
-If ``enabled`` is ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` becomes a parent of the end bone and it uses the vector to the end bone as a twist axis.
+Se ``enabled`` è ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` diventa un genitore dell'osso finale e utilizza il vettore dell'osso finale come asse di torsione.
 
 .. rst-class:: classref-item-separator
 
@@ -499,7 +499,7 @@ If ``enabled`` is ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser
 
 |void| **set_joint_twist_amount**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, twist_amount\: :ref:`float<class_float>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_joint_twist_amount>`
 
-Sets the twist amount at ``joint`` in the bone chain's joint list when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Imposta la quantità di torsione in ``joint`` nella lista delle articolazioni della catena d'ossa quando :ref:`is_config_individual()<class_BoneTwistDisperser3D_method_is_config_individual>` è :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 

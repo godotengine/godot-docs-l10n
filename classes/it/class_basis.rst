@@ -12,29 +12,29 @@ Una matrice 3×3 per rappresentare la rotazione e la scala 3D.
 Descrizione
 ----------------------
 
-The **Basis** built-in :ref:`Variant<class_Variant>` type is a 3×3 `matrix <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ used to represent 3D rotation, scale, and shear. It is frequently used within a :ref:`Transform3D<class_Transform3D>`.
+Il tipo di :ref:`Variant<class_Variant>` integrato **Basis** è una `matrice <https://it.wikipedia.org/wiki/Matrice>`__ 3×3 utilizzata per rappresentare rotazione, scala e deformazione. Viene spesso utilizzato all'interno di un :ref:`Transform3D<class_Transform3D>`.
 
-A **Basis** is composed by 3 axis vectors, each representing a column of the matrix: :ref:`x<class_Basis_property_x>`, :ref:`y<class_Basis_property_y>`, and :ref:`z<class_Basis_property_z>`. The length of each axis (:ref:`Vector3.length()<class_Vector3_method_length>`) influences the basis's scale, while the direction of all axes influence the rotation. Usually, these axes are perpendicular to one another. However, when you rotate any axis individually, the basis becomes sheared. Applying a sheared basis to a 3D model will make the model appear distorted.
+Una **Basis** è composta da 3 vettori di assi, ciascuno dei quali rappresenta una colonna della matrice: :ref:`x<class_Basis_property_x>`, :ref:`y<class_Basis_property_y>` e :ref:`z<class_Basis_property_z>`. La lunghezza di ciascun asse (:ref:`Vector3.length()<class_Vector3_method_length>`) influenza la scala della base, mentre la direzione di tutti gli assi influenza la rotazione. Di solito questi assi sono perpendicolari tra loro. Tuttavia, quando si ruota un asse individualmente, la base diventa inclinata. L'applicazione di una base inclinata a un modello 3D farà apparire il modello distorto.
 
-A **Basis** is:
+Una **Basis** è:
 
-- **Orthogonal** if its axes are perpendicular to each other.
+- **Ortogonale** se i suoi assi sono perpendicolari tra loro. 
 
-- **Normalized** if the length of every axis is ``1.0``.
+- **Normalizzata** se la lunghezza di ogni asse è ``1.0``.
 
-- **Uniform** if all axes share the same length (see :ref:`get_scale()<class_Basis_method_get_scale>`).
+- **Uniforme** se tutti gli assi condividono la stessa lunghezza (vedi :ref:`get_scale()<class_Basis_method_get_scale>`).
 
-- **Orthonormal** if it is both orthogonal and normalized, which allows it to only represent rotations (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+- **Ortonormale** se è sia ortogonale che normalizzata, il che le consente di rappresentare solo rotazioni. (vedi :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
 
-- **Conformal** if it is both orthogonal and uniform, which ensures it is not distorted.
+- **Conforme** se è sia ortogonale sia uniforme, il che garantisce che non sia distorta.
 
-For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
+Per un'introduzione generale, consulta il tutorial :doc:`Matrici e trasformazioni <../tutorials/math/matrices_and_transforms>`.
 
-\ **Note:** Godot uses a `right-handed coordinate system <https://en.wikipedia.org/wiki/Right-hand_rule>`__, which is a common standard. For directions, the convention for built-in types like :ref:`Camera3D<class_Camera3D>` is for -Z to point forward (+X is right, +Y is up, and +Z is back). Other objects may use different direction conventions. For more information, see the `3D asset direction conventions <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ tutorial.
+\ **Nota:** Godot utilizza un `sistema di coordinate destrorso <https://it.wikipedia.org/wiki/Regola_della_mano_destra>`__, che è uno standard comune. Per le direzioni, la convenzione per i tipi integrati come :ref:`Camera3D<class_Camera3D>` prevede che -Z punti in avanti (+X è destra, +Y è su e +Z è indietro). Altri oggetti possono utilizzare convenzioni di direzione diverse. Per ulteriori informazioni, consulta il tutorial `Convenzioni sulla direzione delle risorse 3D <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__.
 
-\ **Note:** The basis matrices are exposed as `column-major <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__ order, which is the same as OpenGL. However, they are stored internally in row-major order, which is the same as DirectX.
+\ **Nota:** Le matrici di base sono esposte come ordine di `colonna prima <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__, che è lo stesso di OpenGL. Tuttavia, sono memorizzati internamente in ordine di riga prima, che è lo stesso di DirectX.
 
-\ **Note:** In a boolean context, a basis will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Basis_constant_IDENTITY>`. Otherwise, a basis will always evaluate to ``true``.
+\ **Nota:** In un contesto booleano, una base sarà valutata come ``false`` se è uguale a :ref:`IDENTITY<class_Basis_constant_IDENTITY>`. Altrimenti, una base sarà sempre valutata come ``true``.
 
 .. note::
 
@@ -595,7 +595,7 @@ Restituisce ``true`` se i valori di questa base sono finiti, chiamando :ref:`Vec
 
 :ref:`bool<class_bool>` **is_orthonormal**\ (\ ) |const| :ref:`🔗<class_Basis_method_is_orthonormal>`
 
-Returns ``true`` if this basis is orthonormal. An orthonormal basis is both *orthogonal* (the axes are perpendicular to each other) and *normalized* (the length of every axis is ``1.0``). This method can be especially useful during physics calculations.
+Restituisce ``true`` se questa base è ortonormale. Una base ortonormale è sia *ortogonale* (gli assi sono perpendicolari tra loro) sia *normalizzata* (la lunghezza di ogni asse è ``1.0``.). Questo metodo può essere particolarmente utile durante i calcoli di fisica.
 
 .. rst-class:: classref-item-separator
 

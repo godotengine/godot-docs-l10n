@@ -260,11 +260,11 @@ AudioStreamPlayback
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **mix_audio**\ (\ rate_scale\: :ref:`float<class_float>`, frames\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioStreamPlayback_method_mix_audio>`
 
-从当前位置开始，以 ``rate_scale`` 的速率混合音频流中最多 ``frames`` 帧音频，并推进流的位置。
+从当前位置开始，以 ``rate_scale`` 的速率混合音频流中最多 ``frames`` 帧音频，并推进该流的位置。
 
-返回一个\ :ref:`PackedVector2Array<class_PackedVector2Array>`\ ，其中每个元素对应包含每个帧的左右声道音量。
+返回一个 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ，其中每个元素保存每帧的左右声道音量电平。
 
-\ **注意：**\ 可能返回少于请求的帧数，请确定使用返回值的size。
+\ **注意：**\ 返回的帧数可能少于请求的帧数，请确保使用返回值的大小。
 
 .. rst-class:: classref-item-separator
 

@@ -261,7 +261,7 @@ enum **UpdateMode**: :ref:`🔗<enum_SubViewport_UpdateMode>`
 - |void| **set_view_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_view_count**\ (\ )
 
-The number of view layers we are rendering to. Set this to ``2`` to enable stereo rendering.
+我们正在渲染的目标视图层数量。将其设置为 ``2`` 以启用立体渲染（Stereo Rendering）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

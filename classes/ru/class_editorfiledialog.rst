@@ -14,13 +14,13 @@ EditorFileDialog
 Описание
 ----------------
 
-**EditorFileDialog** is a :ref:`FileDialog<class_FileDialog>` tweaked to work in the editor. It automatically handles favorite and recent directory lists, and synchronizes some properties with their corresponding editor settings.
+**EditorFileDialog** — это :ref:`FileDialog<class_FileDialog>`, адаптированный для работы в редакторе. Он автоматически обрабатывает списки избранных и недавно открытых каталогов и синхронизирует некоторые свойства с соответствующими настройками редактора.
 
-\ **EditorFileDialog** will automatically show a native dialog based on the :ref:`EditorSettings.interface/editor/appearance/use_native_file_dialogs<class_EditorSettings_property_interface/editor/appearance/use_native_file_dialogs>` editor setting and ignores :ref:`FileDialog.use_native_dialog<class_FileDialog_property_use_native_dialog>`.
+\ **EditorFileDialog** автоматически отобразит нативное диалоговое окно на основе настройки редактора :ref:`EditorSettings.interface/editor/appearance/use_native_file_dialogs<class_EditorSettings_property_interface/editor/appearance/use_native_file_dialogs>` и игнорирует :ref:`FileDialog.use_native_dialog<class_FileDialog_property_use_native_dialog>`.
 
-\ **Note:** **EditorFileDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Примечание:** **EditorFileDialog** по умолчанию невидим. Чтобы сделать его видимым, вызовите один из методов ``popup_*`` из :ref:`Window<class_Window>` узла, например, :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
-\ **Note:** On Linux and macOS, sandboxed apps always use native dialogs to access the host file system.
+\ **Примечание:** В Linux и macOS изолированные приложения всегда используют нативные диалоговые окна для доступа к файловой системе хоста.
 
 .. rst-class:: classref-reftable-group
 

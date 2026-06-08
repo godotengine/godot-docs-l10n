@@ -65,7 +65,7 @@ Descripciones de Métodos
 
 **Obsoleto:** :ref:`GDScriptTextDocument<class_GDScriptTextDocument>` is deprecated.
 
-Returns the language server's :ref:`GDScriptTextDocument<class_GDScriptTextDocument>` instance.
+Devuelve la instancia de :ref:`GDScriptTextDocument<class_GDScriptTextDocument>` del servidor de lenguaje.
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Returns the language server's :ref:`GDScriptTextDocument<class_GDScriptTextDocum
 
 :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` **get_workspace**\ (\ ) :ref:`🔗<class_GDScriptLanguageProtocol_method_get_workspace>`
 
-Returns the language server's :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` instance.
+Devuelve la instancia de :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` del servidor de lenguaje.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Returns the language server's :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` 
 
 :ref:`bool<class_bool>` **is_initialized**\ (\ ) |const| :ref:`🔗<class_GDScriptLanguageProtocol_method_is_initialized>`
 
-Returns ``true`` if the language server was initialized by a language server client, ``false`` otherwise.
+Devuelve ``true`` si el servidor de lenguaje fue inicializado por un cliente de servidor de lenguaje; de lo contrario, devuelve ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Returns ``true`` if the language server was initialized by a language server cli
 
 :ref:`bool<class_bool>` **is_smart_resolve_enabled**\ (\ ) |const| :ref:`🔗<class_GDScriptLanguageProtocol_method_is_smart_resolve_enabled>`
 
-Returns ``true`` if the language server is providing the smart resolve feature, ``false`` otherwise. The feature can be configured through the editor settings.
+Devuelve ``true`` si el servidor de lenguaje está proporcionando la funcionalidad de resolución inteligente (smart resolve); de lo contrario, devuelve ``false``. Esta funcionalidad se puede configurar a través de los ajustes del editor.
 
 .. rst-class:: classref-item-separator
 

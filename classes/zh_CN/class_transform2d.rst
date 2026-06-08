@@ -12,15 +12,15 @@ Transform2D
 描述
 ----
 
-The **Transform2D** built-in :ref:`Variant<class_Variant>` type is a 2×3 `matrix <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ representing a transformation in 2D space. It contains three :ref:`Vector2<class_Vector2>` values: :ref:`x<class_Transform2D_property_x>`, :ref:`y<class_Transform2D_property_y>`, and :ref:`origin<class_Transform2D_property_origin>`. Together, they can represent translation, rotation, scale, and skew.
+内置的 **Transform2D** :ref:`Variant<class_Variant>` 类型是一个 2×3 的 `矩阵 <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__\ ，用于表示 2D 空间中的变换。它包含了三个 :ref:`Vector2<class_Vector2>` 类型的值：\ :ref:`x<class_Transform2D_property_x>`\ 、\ :ref:`y<class_Transform2D_property_y>` 和 :ref:`origin<class_Transform2D_property_origin>`\ 。通过这些值，可以共同表示平移、旋转、缩放以及错切（skew）。
 
-The :ref:`x<class_Transform2D_property_x>` and :ref:`y<class_Transform2D_property_y>` axes form a 2×2 matrix, known as the transform's **basis**. The length of each axis (:ref:`Vector2.length()<class_Vector2_method_length>`) influences the transform's scale, while the direction of all axes influence the rotation. Usually, both axes are perpendicular to one another. However, when you rotate one axis individually, the transform becomes skewed. Applying a skewed transform to a 2D sprite will make the sprite appear distorted.
+其中，\ :ref:`x<class_Transform2D_property_x>` 和 :ref:`y<class_Transform2D_property_y>` 轴构成了一个 2×2 的矩阵，这被称为变换的 **基（basis）**\ 。每个轴的长度（\ :ref:`Vector2.length()<class_Vector2_method_length>`\ ）会影响变换的缩放比例，而所有轴的方向则决定了旋转的角度。通常情况下，这两个轴是相互垂直的。但如果你单独旋转其中一个轴，变换就会产生错切效果。对一个 2D 精灵（sprite）应用带有错切的变换，会让精灵看起来发生扭曲变形。
 
-For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
+关于这方面的通用介绍，可以参阅 `矩阵与变换（Matrices and transforms） <$ DOCS_URL/tutorials/math/matrices_and_transforms.html>`__ 教程。
 
-\ **Note:** Unlike :ref:`Transform3D<class_Transform3D>`, there is no 2D equivalent to the :ref:`Basis<class_Basis>` type. All mentions of "basis" refer to the :ref:`x<class_Transform2D_property_x>` and :ref:`y<class_Transform2D_property_y>` components of **Transform2D**.
+\ **注意：** 与 :ref:`Transform3D<class_Transform3D>` 不同，这里并没有一个与 :ref:`Basis<class_Basis>` 类型完全对应的独立 2D 类型。所有提到的“基（basis）”，指的都是 **Transform2D** 里的 :ref:`x<class_Transform2D_property_x>` 和 :ref:`y<class_Transform2D_property_y>` 这两个分量。
 
-\ **Note:** In a boolean context, a Transform2D will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Transform2D_constant_IDENTITY>`. Otherwise, a Transform2D will always evaluate to ``true``.
+\ **注意：** 在布尔值（boolean）上下文中，如果 Transform2D 等于 :ref:`IDENTITY<class_Transform2D_constant_IDENTITY>`\ （单位矩阵），它的求值结果会是 ``false``\ ；除此之外，Transform2D 的求值结果永远都是 ``true``\ 。
 
 .. note::
 

@@ -14,13 +14,13 @@ Impostazioni della telecamera in un formato facile da usare.
 Descrizione
 ----------------------
 
-Controls camera-specific attributes such as auto-exposure, depth of field, and exposure override.
+Controlla gli attributi specifici della telecamera come l'esposizione automatica, la profondità di campo e la sostituzione dell'esposizione.
 
-When used in a :ref:`WorldEnvironment<class_WorldEnvironment>` it provides default settings for exposure, auto-exposure, and depth of field that will be used by all cameras without their own :ref:`CameraAttributes<class_CameraAttributes>`, including the editor camera. When used in a :ref:`Camera3D<class_Camera3D>` it will override any :ref:`CameraAttributes<class_CameraAttributes>` set in the :ref:`WorldEnvironment<class_WorldEnvironment>`. When used in :ref:`VoxelGI<class_VoxelGI>` or :ref:`LightmapGI<class_LightmapGI>`, only the exposure settings will be used.
+Quando è utilizzato in un :ref:`WorldEnvironment<class_WorldEnvironment>`, fornisce impostazioni predefinite per l'esposizione, l'esposizione automatica e la profondità di campo che saranno utilizzate da tutte le telecamere senza i propri :ref:`CameraAttributes<class_CameraAttributes>`, inclusa la telecamera dell'editor. Quando è utilizzato in un :ref:`Camera3D<class_Camera3D>`, sostituirà qualsiasi :ref:`CameraAttributes<class_CameraAttributes>` impostato nel :ref:`WorldEnvironment<class_WorldEnvironment>`. Quando è utilizzato in :ref:`VoxelGI<class_VoxelGI>` o :ref:`LightmapGI<class_LightmapGI>`, solo le impostazioni di esposizione saranno utilizzate.
 
-\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Nota:** La sfocatura della profondità di campo è supportata solo nei metodi di rendering Forward+ e Mobile, non in Compatibilità.
 
-\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **Nota:** L'esposizione automatica è supportata solo nel metodo di rendering Forward+, non in Mobile o Compatibilità.
 
 .. rst-class:: classref-reftable-group
 
@@ -138,11 +138,11 @@ Gli oggetti più lontani di questa quantità dal :ref:`Camera3D<class_Camera3D>`
 - |void| **set_dof_blur_far_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_dof_blur_far_enabled**\ (\ )
 
-Enables depth of field blur for objects further than :ref:`dof_blur_far_distance<class_CameraAttributesPractical_property_dof_blur_far_distance>`. Strength of blur is controlled by :ref:`dof_blur_amount<class_CameraAttributesPractical_property_dof_blur_amount>` and modulated by :ref:`dof_blur_far_transition<class_CameraAttributesPractical_property_dof_blur_far_transition>`.
+Abilita la sfocatura della profondità di campo per gli oggetti più lontani di :ref:`dof_blur_far_distance<class_CameraAttributesPractical_property_dof_blur_far_distance>`. L'intensità della sfocatura è controllata da :ref:`dof_blur_amount<class_CameraAttributesPractical_property_dof_blur_amount>` e modulata da :ref:`dof_blur_far_transition<class_CameraAttributesPractical_property_dof_blur_far_transition>`.
 
-\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Nota:** La sfocatura della profondità di campo è supportata solo nei metodi di rendering Forward+ e Mobile, non in Compatibilità.
 
-\ **Note:** Depth of field blur is not supported on viewports that have a transparent background (where :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is ``true``).
+\ **Nota:** La sfocatura della profondità di campo non è supportata nelle viewport che hanno uno sfondo trasparente (dove :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` è ``true``).
 
 .. rst-class:: classref-item-separator
 
@@ -193,11 +193,11 @@ Gli oggetti più vicini di questa quantità alla :ref:`Camera3D<class_Camera3D>`
 - |void| **set_dof_blur_near_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_dof_blur_near_enabled**\ (\ )
 
-Enables depth of field blur for objects closer than :ref:`dof_blur_near_distance<class_CameraAttributesPractical_property_dof_blur_near_distance>`. Strength of blur is controlled by :ref:`dof_blur_amount<class_CameraAttributesPractical_property_dof_blur_amount>` and modulated by :ref:`dof_blur_near_transition<class_CameraAttributesPractical_property_dof_blur_near_transition>`.
+Abilita la sfocatura della profondità di campo per gli oggetti più vicini di :ref:`dof_blur_near_distance<class_CameraAttributesPractical_property_dof_blur_near_distance>`. L'intensità della sfocatura è controllata da :ref:`dof_blur_amount<class_CameraAttributesPractical_property_dof_blur_amount>` e modulata da :ref:`dof_blur_near_transition<class_CameraAttributesPractical_property_dof_blur_near_transition>`.
 
-\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Nota:** La sfocatura della profondità di campo è supportata solo nei metodi di rendering Forward+ e Mobile, non in Compatibilità.
 
-\ **Note:** Depth of field blur is not supported on viewports that have a transparent background (where :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is ``true``).
+\ **Nota:** La sfocatura della profondità di campo non è supportata nelle viewport che hanno uno sfondo trasparente (dove :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` è ``true``).
 
 .. rst-class:: classref-item-separator
 

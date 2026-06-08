@@ -1,0 +1,137 @@
+:github_url: hide
+
+.. _class_PrismMesh:
+
+PrismMesh
+=========
+
+**Успадковує:** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+
+Клас, що представляє собою призмоподібну форму :ref:`PrimitiveMesh<class_PrimitiveMesh>`.
+
+.. rst-class:: classref-introduction-group
+
+Опис
+--------
+
+Клас, що представляє собою призмоподібну форму :ref:`PrimitiveMesh<class_PrimitiveMesh>`.
+
+.. rst-class:: classref-reftable-group
+
+Властивості
+----------------------
+
+.. table::
+   :widths: auto
+
+   +-------------------------------+--------------------------------------------------------------------+----------------------+
+   | :ref:`float<class_float>`     | :ref:`left_to_right<class_PrismMesh_property_left_to_right>`       | ``0.5``              |
+   +-------------------------------+--------------------------------------------------------------------+----------------------+
+   | :ref:`Vector3<class_Vector3>` | :ref:`size<class_PrismMesh_property_size>`                         | ``Vector3(1, 1, 1)`` |
+   +-------------------------------+--------------------------------------------------------------------+----------------------+
+   | :ref:`int<class_int>`         | :ref:`subdivide_depth<class_PrismMesh_property_subdivide_depth>`   | ``0``                |
+   +-------------------------------+--------------------------------------------------------------------+----------------------+
+   | :ref:`int<class_int>`         | :ref:`subdivide_height<class_PrismMesh_property_subdivide_height>` | ``0``                |
+   +-------------------------------+--------------------------------------------------------------------+----------------------+
+   | :ref:`int<class_int>`         | :ref:`subdivide_width<class_PrismMesh_property_subdivide_width>`   | ``0``                |
+   +-------------------------------+--------------------------------------------------------------------+----------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описи властивостей
+------------------------------------
+
+.. _class_PrismMesh_property_left_to_right:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **left_to_right** = ``0.5`` :ref:`🔗<class_PrismMesh_property_left_to_right>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_left_to_right**\ (\ value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_left_to_right**\ (\ )
+
+Розміщення верхнього краю вздовж осі X. 0.0 позицій краю прямо над нижньою лівою кромкою.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PrismMesh_property_size:
+
+.. rst-class:: classref-property
+
+:ref:`Vector3<class_Vector3>` **size** = ``Vector3(1, 1, 1)`` :ref:`🔗<class_PrismMesh_property_size>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_size**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
+- :ref:`Vector3<class_Vector3>` **get_size**\ (\ )
+
+Розмір призми.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PrismMesh_property_subdivide_depth:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **subdivide_depth** = ``0`` :ref:`🔗<class_PrismMesh_property_subdivide_depth>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_subdivide_depth**\ (\ value\: :ref:`int<class_int>`\ )
+- :ref:`int<class_int>` **get_subdivide_depth**\ (\ )
+
+Кількість доданих петель по осі Z.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PrismMesh_property_subdivide_height:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **subdivide_height** = ``0`` :ref:`🔗<class_PrismMesh_property_subdivide_height>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_subdivide_height**\ (\ value\: :ref:`int<class_int>`\ )
+- :ref:`int<class_int>` **get_subdivide_height**\ (\ )
+
+Кількість доданих петель по осі Y.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PrismMesh_property_subdivide_width:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **subdivide_width** = ``0`` :ref:`🔗<class_PrismMesh_property_subdivide_width>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_subdivide_width**\ (\ value\: :ref:`int<class_int>`\ )
+- :ref:`int<class_int>` **get_subdivide_width**\ (\ )
+
+Кількість доданих петель по осі X.
+
+.. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
+.. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
+.. |const| replace:: :abbr:`const (Цей метод не має побічних ефектів. Не змінює ніяку змінну екземпляра об'єкта.)`
+.. |vararg| replace:: :abbr:`vararg (Цей метод приймає будь-яке число аргументів після описаних тут.)`
+.. |constructor| replace:: :abbr:`constructor (Цей метод використовується для побудови типів.)`
+.. |static| replace:: :abbr:`static (Цей метод не потребує екземпляра для виклику, його можна викликати безпосередньо за допомогою назви класу.)`
+.. |operator| replace:: :abbr:`operator (Цей метод описує дійсний оператор для взаємодії з цим типом як з лівим операндом.)`
+.. |bitfield| replace:: :abbr:`BitField (Це значення є цілим числом, складеним у вигляді бітової маски з наступних прапорів.)`
+.. |void| replace:: :abbr:`void (Значення не повертається.)`

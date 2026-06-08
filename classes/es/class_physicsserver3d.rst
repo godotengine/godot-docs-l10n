@@ -2996,7 +2996,7 @@ Devuelve ``true`` si una colisión resultaría de moverse a lo largo de un vecto
 
 :ref:`RID<class_RID>` **box_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_box_shape_create>`
 
-Creates a 3D box shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the box's half-extents.
+Crea una forma de caja 3D en el servidor de física y devuelve el :ref:`RID<class_RID>` que la identifica. Utiliza :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` para establecer las semiextensiones de la caja.
 
 .. rst-class:: classref-item-separator
 
@@ -3008,7 +3008,7 @@ Creates a 3D box shape in the physics server, and returns the :ref:`RID<class_RI
 
 :ref:`RID<class_RID>` **capsule_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_capsule_shape_create>`
 
-Creates a 3D capsule shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the capsule's height and radius.
+Crea una forma de cápsula 3D en el servidor de física y devuelve el :ref:`RID<class_RID>` que la identifica. Utiliza :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` para establecer la altura y el radio de la cápsula.
 
 .. rst-class:: classref-item-separator
 
@@ -3020,7 +3020,7 @@ Creates a 3D capsule shape in the physics server, and returns the :ref:`RID<clas
 
 :ref:`RID<class_RID>` **concave_polygon_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_concave_polygon_shape_create>`
 
-Creates a 3D concave polygon shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the concave polygon's triangles.
+Crea una forma de polígono cóncavo 3D en el servidor de física y devuelve el :ref:`RID<class_RID>` que la identifica. Utiliza :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` para establecer los triángulos del polígono cóncavo.
 
 .. rst-class:: classref-item-separator
 
@@ -3082,7 +3082,7 @@ Creates a custom shape in the physics server, and returns the :ref:`RID<class_RI
 
 :ref:`RID<class_RID>` **cylinder_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_cylinder_shape_create>`
 
-Creates a 3D cylinder shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the cylinder's height and radius.
+Crea una forma de cilindro 3D en el servidor de física y devuelve el :ref:`RID<class_RID>` que la identifica. Utiliza :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` para establecer la altura y el radio del cilindro.
 
 .. rst-class:: classref-item-separator
 
@@ -3166,7 +3166,7 @@ Devuelve el valor de un estado del motor de física especificado por ``process_i
 
 :ref:`RID<class_RID>` **heightmap_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_heightmap_shape_create>`
 
-Creates a 3D heightmap shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the heightmap's data.
+Crea una forma de mapa de alturas (heightmap) 3D en el servidor de física y devuelve el :ref:`RID<class_RID>` que la identifica. Utiliza :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` para establecer los datos del mapa de alturas.
 
 .. rst-class:: classref-item-separator
 
@@ -3266,9 +3266,9 @@ Establece si los cuerpos unidos a la :ref:`Joint3D<class_Joint3D>` colisionarán
 
 :ref:`int<class_int>` **joint_get_solver_priority**\ (\ joint\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_joint_get_solver_priority>`
 
-Gets the priority value of the Joint3D.
+Obtiene el valor de prioridad de la Joint3D.
 
-\ **Note:** Only supported when using GodotPhysics3D. This method always returns ``1`` when using Jolt Physics, as it does not support joint solver priority.
+\ **Nota:** Solo es compatible cuando se usa GodotPhysics3D. Este método siempre devuelve ``1`` cuando se utiliza Jolt Physics, ya que esta no es compatible con la prioridad del solver de articulaciones.
 
 .. rst-class:: classref-item-separator
 
@@ -3372,9 +3372,9 @@ Convierte la unión en una unión genérica de seis grados de libertad (6DOF). U
 
 |void| **joint_set_solver_priority**\ (\ joint\: :ref:`RID<class_RID>`, priority\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_joint_set_solver_priority>`
 
-Sets the priority value of the Joint3D.
+Establece el valor de prioridad de la Joint3D.
 
-\ **Note:** Only supported when using GodotPhysics3D. This method has no effect when using Jolt Physics, as it does not support joint solver priority.
+\ **Nota:** Solo es compatible cuando se usa GodotPhysics3D. Este método no tiene efecto cuando se utiliza Jolt Physics, ya que esta no es compatible con la prioridad del solver de articulaciones.
 
 .. rst-class:: classref-item-separator
 

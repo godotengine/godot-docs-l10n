@@ -391,13 +391,13 @@ enum **DecalTexture**: :ref:`🔗<enum_Decal_DecalTexture>`
 - |void| **set_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`\ ) |const|
 
-:ref:`Texture2D<class_Texture2D>` storing ambient occlusion, roughness, and metallic for the decal. Use this to add extra detail to decals.
+:ref:`Texture2D<class_Texture2D>`\ （2D纹理），用于存储贴花的环境光遮蔽（AO）、粗糙度和金属度。你可以用它来为贴花增添额外的细节。
 
-\ **Note:** Unlike :ref:`BaseMaterial3D<class_BaseMaterial3D>` whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
+\ **注意：** 与 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 不同（它的过滤模式可以针对每个材质单独调整），\ **Decal** 贴花纹理的过滤模式是在 :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` 中进行全局设置的。
 
-\ **Note:** Setting this texture alone will not result in a visible decal, as :ref:`texture_albedo<class_Decal_property_texture_albedo>` must also be set. To create an ORM-only decal, load an albedo texture into :ref:`texture_albedo<class_Decal_property_texture_albedo>` and set :ref:`albedo_mix<class_Decal_property_albedo_mix>` to ``0.0``. The albedo texture's alpha channel will be used to determine where the underlying surface's ORM map should be overridden (and its intensity).
+\ **注意：** 单独设置这张纹理并不会显示出可见的贴花，因为 :ref:`texture_albedo<class_Decal_property_texture_albedo>`\ （反照率纹理）也必须同时设置。如果你想创建一个纯 ORM 贴花（即只改变表面质感，不改变颜色），请将一张反照率纹理加载到 :ref:`texture_albedo<class_Decal_property_texture_albedo>` 中，并将 :ref:`albedo_mix<class_Decal_property_albedo_mix>`\ （反照率混合度）设置为 ``0.0``\ 。此时，反照率纹理的 Alpha 通道将用于决定底层表面的 ORM 贴图在哪些区域被覆盖（以及覆盖的强度）。
 
-\ **Note:** Due to technical limitations, modifying the underlying surface's roughness using :ref:`texture_orm<class_Decal_property_texture_orm>` does *not* affect screen-space reflections (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`), reflections from :ref:`VoxelGI<class_VoxelGI>`, and reflections from SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`). Only reflections from :ref:`ReflectionProbe<class_ReflectionProbe>`\ s are affected.
+\ **注意：** 由于技术限制，通过 :ref:`texture_orm<class_Decal_property_texture_orm>` 修改底层表面的粗糙度，\ *不会* 影响屏幕空间反射（\ :ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`\ ）、来自 :ref:`VoxelGI<class_VoxelGI>` 的反射以及来自 SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）的反射。只有来自 :ref:`ReflectionProbe<class_ReflectionProbe>`\ （反射探针）的反射会受到影响。
 
 .. rst-class:: classref-item-separator
 

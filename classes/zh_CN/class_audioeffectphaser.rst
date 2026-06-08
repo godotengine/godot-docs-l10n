@@ -7,18 +7,18 @@ AudioEffectPhaser
 
 **继承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a phaser audio effect to an audio bus.
+向音频总线添加一个移相器音频效果。
 
-Creates several notch and peak filters that sweep across the spectrum.
+创建多个陷波和峰值滤波器，使其在频谱上来回扫动。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-A "phaser" effect creates a copy of the original audio that phase-rotates differently across the entire frequency spectrum, with the use of a series of all-pass filter stages (6 in this effect). This copy modulates with a low-frequency oscillator and combines with the original audio, resulting in peaks and troughs that sweep across the spectrum.
+“移相器”效果会创建一份原始音频的副本，并通过运用一系列全通滤波级（本效果中包含 6 级），使该副本在整个频率范围内以不同方式旋转相位。该副本会使用低频振荡器进行调制，并与原始音频相叠加，从而产生在频谱中来回扫动的波峰与波谷。
 
-This effect can be used to create a "glassy" or "bubbly" sound.
+该效果可被用于制造一种“玻璃质感”或“气泡涌动”般的音色。
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ This effect can be used to create a "glassy" or "bubbly" sound.
 
 - :doc:`音频总线 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -69,7 +69,7 @@ This effect can be used to create a "glassy" or "bubbly" sound.
 - |void| **set_depth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth**\ (\ )
 
-Intensity of the effect. Value can range from 0.1 to 4.0.
+效果强度。取值范围为 0.1 至 4.0。
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ Intensity of the effect. Value can range from 0.1 to 4.0.
 - |void| **set_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback**\ (\ )
 
-The volume ratio of the filtered audio that is fed back to the all-pass filters. The higher the value, the sharper and louder the peak filters created by the effect. Value can range from 0.1 to 0.9.
+被反馈回全通滤波器的已滤波音频的音量比例。该值越高，由该效果产生的峰值滤波器就越尖锐、越响亮。取值范围在 0.1 到 0.9 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ The volume ratio of the filtered audio that is fed back to the all-pass filters.
 - |void| **set_range_max_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_max_hz**\ (\ )
 
-Determines the maximum frequency affected by the low-frequency oscillator modulations, in Hz. Value can range from 10 to 10000.
+决定受低频振荡器调制影响的最高频率，单位为 Hz。取值范围为 10 至 10000。
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ Determines the maximum frequency affected by the low-frequency oscillator modula
 - |void| **set_range_min_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_min_hz**\ (\ )
 
-Determines the minimum frequency affected by the low-frequency oscillator modulations, in Hz. Value can range from 10 to 10000.
+决定受低频振荡器调制影响的最低频率，单位为 Hz。取值范围为 10 至 10000。
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ Determines the minimum frequency affected by the low-frequency oscillator modula
 - |void| **set_rate_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rate_hz**\ (\ )
 
-Adjusts the rate in Hz at which the effect sweeps up and down across the frequency range. Value can range from 0.01 to 20.
+调整效果在频率范围内上下扫频的速率，单位为 Hz。取值范围为 0.01 至 20。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

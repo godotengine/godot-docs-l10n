@@ -16,9 +16,9 @@ Button
 描述
 ----
 
-**Button** is the standard themed button. It can contain text and an icon, and it will display them according to the current :ref:`Theme<class_Theme>`.
+**Button** 是标准的主题按钮，可以包含文字和图标，显示样式会根据当前的 :ref:`Theme<class_Theme>` 改变。
 
-\ **Example:** Create a button and connect a method that will be called when the button is pressed:
+\ **示例：**\ 创建按钮并连接在按下时调用的方法：
 
 
 .. tabs::
@@ -51,9 +51,9 @@ Button
 
 
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+另见 :ref:`BaseButton<class_BaseButton>`\ ，其中包含与此节点相关联的通用属性和方法。
 
-\ **Note:** Buttons support multitouch via touch input, allowing multiple buttons to be pressed at the same time. Otherwise, mouse input is used, limiting interaction to one button press at a time.
+\ **注意：**\ 按钮支持多点触控输入，允许同时按下多个按钮。否则，将使用鼠标输入，此时交互将限制为每次只能按下单个按钮。
 
 .. rst-class:: classref-introduction-group
 

@@ -565,7 +565,7 @@ Devuelve el modo de ajuste automático de texto en la ``column`` dada. Por defec
 
 |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] **get_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_autowrap_trim_flags>`
 
-Returns the autowrap trim flags for the given ``column``. By default, both :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` and :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>` are enabled.
+Devuelve las banderas de recorte de ajuste automático (autowrap) para la ``column`` dada. Por defecto, están habilitadas tanto :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` como :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>`.
 
 .. rst-class:: classref-item-separator
 
@@ -759,7 +759,7 @@ Devuelve el tamaño de fuente personalizado utilizado para dibujar texto en la c
 
 :ref:`StyleBox<class_StyleBox>` **get_custom_stylebox**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_custom_stylebox>`
 
-Returns the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the background.
+Devuelve el :ref:`StyleBox<class_StyleBox>` personalizado de la columna dada, utilizado para dibujar el fondo.
 
 .. rst-class:: classref-item-separator
 
@@ -1127,7 +1127,7 @@ Devuelve el :ref:`Tree<class_Tree>` que posee este TreeItem.
 
 :ref:`bool<class_bool>` **is_accepting_children**\ (\ ) |const| :ref:`🔗<class_TreeItem_method_is_accepting_children>`
 
-Returns ``true`` if this **TreeItem** is allowed to accept children.
+Devuelve ``true`` si este **TreeItem** tiene permitido aceptar hijos.
 
 .. rst-class:: classref-item-separator
 
@@ -1315,7 +1315,7 @@ Elimina el **TreeItem** hijo dado y todos sus hijos del :ref:`Tree<class_Tree>`.
 
 |void| **select**\ (\ column\: :ref:`int<class_int>`, set_as_cursor\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_TreeItem_method_select>`
 
-Selects the given ``column``. If ``set_as_cursor`` is ``true``, the :ref:`Tree<class_Tree>`'s cursor will be moved to this item (only matters if :ref:`Tree.select_mode<class_Tree_property_select_mode>` is set to :ref:`Tree.SELECT_MULTI<class_Tree_constant_SELECT_MULTI>`).
+Selecciona la ``column`` dada. Si ``set_as_cursor`` es ``true``, el cursor del :ref:`Tree<class_Tree>` se moverá a este elemento (solo importa si :ref:`Tree.select_mode<class_Tree_property_select_mode>` está establecido en :ref:`Tree.SELECT_MULTI<class_Tree_constant_SELECT_MULTI>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ Selects the given ``column``. If ``set_as_cursor`` is ``true``, the :ref:`Tree<c
 
 |void| **set_accept_children**\ (\ allowed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TreeItem_method_set_accept_children>`
 
-Sets **TreeItem**'s ability to accept children.
+Establece la capacidad del **TreeItem** para aceptar hijos.
 
 .. rst-class:: classref-item-separator
 
@@ -1365,7 +1365,7 @@ Establece el modo de ajuste automático en la ``column`` dada. Si se establece e
 
 |void| **set_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`, flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\]\ ) :ref:`🔗<class_TreeItem_method_set_autowrap_trim_flags>`
 
-Sets the autowrap trim flags for the given ``column``. These flags control whether leading and trailing spaces are trimmed on wrapped lines. Set to ``0`` to disable all trimming.
+Establece las banderas de recorte de ajuste automático (autowrap) para la ``column`` dada. Estas banderas controlan si se recortan los espacios iniciales y finales en las líneas ajustadas. Establécelo en ``0`` para desactivar todo recorte.
 
 .. rst-class:: classref-item-separator
 
@@ -1485,9 +1485,9 @@ Hace que una celda con :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_
 
 |void| **set_custom_bg_color**\ (\ column\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, just_outline\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_TreeItem_method_set_custom_bg_color>`
 
-Sets the given column's custom background color and whether to just use it as an outline.
+Establece el color de fondo personalizado de la columna dada y si debe usarse solo como un contorno.
 
-\ **Note:** If a custom :ref:`StyleBox<class_StyleBox>` is set, the background color will be drawn behind it.
+\ **Nota:** Si se establece un :ref:`StyleBox<class_StyleBox>` personalizado, el color de fondo se dibujará detrás de él.
 
 .. rst-class:: classref-item-separator
 

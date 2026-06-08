@@ -12,13 +12,13 @@ Transform3D
 描述
 ----
 
-The **Transform3D** built-in :ref:`Variant<class_Variant>` type is a 3×4 matrix representing a transformation in 3D space. It contains a :ref:`Basis<class_Basis>`, which on its own can represent rotation, scale, and shear. Additionally, combined with its own :ref:`origin<class_Transform3D_property_origin>`, the transform can also represent a translation.
+内置的 **Transform3D** :ref:`Variant<class_Variant>` 类型是一个 3×4 的矩阵，用于表示 3D 空间中的变换。它包含一个 :ref:`Basis<class_Basis>`\ （基），该基本身就可以表示旋转、缩放和错切。此外，结合其自身的 :ref:`origin<class_Transform3D_property_origin>`\ （原点）属性，这个变换还可以表示平移。
 
-For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
+关于这方面的通用介绍，可以参阅 `矩阵与变换（Matrices and transforms） <$ DOCS_URL/tutorials/math/matrices_and_transforms.html>`__ 教程。
 
-\ **Note:** Godot uses a `right-handed coordinate system <https://en.wikipedia.org/wiki/Right-hand_rule>`__, which is a common standard. For directions, the convention for built-in types like :ref:`Camera3D<class_Camera3D>` is for -Z to point forward (+X is right, +Y is up, and +Z is back). Other objects may use different direction conventions. For more information, see the `3D asset direction conventions <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ tutorial.
+\ **注意：** Godot 使用的是 `右手坐标系 <https://en.wikipedia.org/wiki/Right-hand_rule>`__\ ，这是一个通用的标准。在方向上，像 :ref:`Camera3D<class_Camera3D>` 这类内置类型的惯例是：-Z 轴朝前（+X 是右，+Y 是上，+Z 是后）。其他物体可能会使用不同的方向约定。想了解更多信息，可以参阅 `3D 资源方向约定 <$ DOCS_URL/tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ 教程。
 
-\ **Note:** In a boolean context, a Transform3D will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Transform3D_constant_IDENTITY>`. Otherwise, a Transform3D will always evaluate to ``true``.
+\ **注意：** 在布尔值（boolean）上下文中，如果 Transform3D 等于 :ref:`IDENTITY<class_Transform3D_constant_IDENTITY>`\ （单位矩阵），它的求值结果会是 ``false``\ ；除此之外，Transform3D 的求值结果永远都是 ``true``\ 。
 
 .. note::
 

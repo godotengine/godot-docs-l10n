@@ -332,15 +332,15 @@ Accetta una connessione di peer eseguendo l'handshake HTTP come server WebSocket
 
 |void| **close**\ (\ code\: :ref:`int<class_int>` = 1000, reason\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_WebSocketPeer_method_close>`
 
-Closes this WebSocket connection.
+Chiude questa connessione WebSocket.
 
-\ ``code`` is the status code for the closure (see `RFC 6455 section 7.4 <https://datatracker.ietf.org/doc/html/rfc6455#section-7.4.1>`__ for a list of valid status codes). If ``code`` is negative, the connection will be closed immediately without notifying the remote peer.
+\ ``code`` è il codice di stato per la chiusura (vedi `RFC 6455 sezione 7.4 <https://datatracker.ietf.org/doc/html/rfc6455#section-7.4.1>`__ per un elenco di codici di stato validi). Se ``code`` è negativo, la connessione sarà chiusa immediatamente senza notificare il peer remoto.
 
-\ ``reason`` is the human-readable reason for closing the connection. It can be any UTF-8 string that's smaller than 123 bytes.
+\ ``reason`` è la ragione leggibile in chiaro per chiudere la connessione. Può essere qualsiasi stringa UTF-8 che è più piccola di 123 byte.
 
-\ **Note:** To achieve a clean closure, you will need to keep polling until :ref:`STATE_CLOSED<class_WebSocketPeer_constant_STATE_CLOSED>` is reached.
+\ **Nota:** Per garantire una chiusura pulita, è necessario mantenere il polling fino a quando :ref:`STATE_CLOSED<class_WebSocketPeer_constant_STATE_CLOSED>` è raggiunto.
 
-\ **Note:** The Web export might not support all status codes. Please refer to browser-specific documentation for more details.
+\ **Nota:** L'esportazione sul Web potrebbe non supportare tutti i codici di stato. Si prega di fare riferimento alla documentazione specifica del browser per ulteriori dettagli.
 
 .. rst-class:: classref-item-separator
 

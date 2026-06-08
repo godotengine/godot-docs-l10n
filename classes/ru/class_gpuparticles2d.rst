@@ -749,9 +749,9 @@ ParticleProcessMaterial по умолчанию перезапишет ``color``
 
 |void| **request_particles_process**\ (\ process_time\: :ref:`float<class_float>`, process_time_residual\: :ref:`float<class_float>` = 0\ ) :ref:`🔗<class_GPUParticles2D_method_request_particles_process>`
 
-Requests the particles to process for extra process time during a single frame.
+Запрашивает у частиц дополнительное время обработки в течение одного кадра.
 
-\ ``process_time`` defines the time that the particles will process while emitting is on. ``process_time_residual`` defines the time that particles will process with emitting turned off for the simulation. When combined with :ref:`speed_scale<class_GPUParticles2D_property_speed_scale>` set to ``0.0``, this is useful to be able to seek a particle system timeline.
+\ ``process_time`` определяет время обработки частиц при включенном излучении. ``process_time_residual`` определяет время обработки частиц при выключенном излучении для моделирования. В сочетании с :ref:`speed_scale<class_GPUParticles2D_property_speed_scale>`, установленным на ``0.0``, это полезно для возможности поиска временной шкалы системы частиц.
 
 .. rst-class:: classref-item-separator
 

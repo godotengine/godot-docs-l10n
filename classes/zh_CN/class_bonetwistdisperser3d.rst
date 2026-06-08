@@ -14,13 +14,13 @@ BoneTwistDisperser3D
 描述
 ----
 
-This **BoneTwistDisperser3D** allows for smooth twist interpolation between multiple bones by dispersing the end bone's twist to the parents. This only changes the twist without changing the global position of each joint.
+此 **BoneTwistDisperser3D** 节点通过将末端骨骼的扭转分散到父骨骼，来实现多个骨骼间的平滑扭转插值。它只会改变扭转角度，而不会改变每个关节的全局位置。
 
-This is useful for smoothly twisting bones in combination with :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` and IK.
+与 :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` 和反向动力学（IK）结合使用时，可用于实现骨骼的平滑扭转效果。
 
-\ **Note:** If an extracted twist is greater than 180 degrees, flipping occurs. This is similar to :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
+\ **注意：**\ 如果提取的扭转角度超过 180 度，则会发生翻转。这一点与 :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>` 类似。
 
-\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **注意：**\ 该类中的大多数方法都接受一个 ``index`` 参数。如果 IK 包含多个条目（例如 ``settings/<index>/root_bone_name``\ ），则该参数用于指定应返回哪个设置列表条目。
 
 .. rst-class:: classref-reftable-group
 

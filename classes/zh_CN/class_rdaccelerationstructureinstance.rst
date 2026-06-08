@@ -9,14 +9,14 @@ RDAccelerationStructureInstance
 
 **继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Acceleration structure instance (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+加速结构实例（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-**RDAccelerationStructureInstance** describes an instance of a Bottom-Level Acceleration Structure (BLAS) used in the :ref:`RenderingDevice.tlas_build()<class_RenderingDevice_method_tlas_build>` method.
+**RDAccelerationStructureInstance** 描述了在 :ref:`RenderingDevice.tlas_build()<class_RenderingDevice_method_tlas_build>` 方法中使用的底层加速结构（Bottom-Level Acceleration Structure，简称 BLAS）的一个实例。
 
 .. rst-class:: classref-reftable-group
 
@@ -60,7 +60,7 @@ Acceleration structure instance (used by :ref:`RenderingDevice<class_RenderingDe
 - |void| **set_blas**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_blas**\ (\ )
 
-The BLAS referenced by this instance. If ``null``, the instance is treated as a placeholder but still contributes to ``gl_InstanceIndex`` in GLSL.
+该实例所引用的底层加速结构（BLAS）。如果为 ``null``\ ，则该实例被视为一个占位符，但在 GLSL 中仍然会参与计算 ``gl_InstanceIndex``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ The BLAS referenced by this instance. If ``null``, the instance is treated as a 
 - |void| **set_flags**\ (\ value\: |bitfield|\[:ref:`AccelerationStructureInstanceFlagBits<enum_RenderingDevice_AccelerationStructureInstanceFlagBits>`\]\ )
 - |bitfield|\[:ref:`AccelerationStructureInstanceFlagBits<enum_RenderingDevice_AccelerationStructureInstanceFlagBits>`\] **get_flags**\ (\ )
 
-Flags for the instance.
+实例的标志位。
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ Flags for the instance.
 - |void| **set_hit_sbt_range**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_hit_sbt_range**\ (\ )
 
-Hit shader binding table range used for this instance, allocated using the :ref:`RenderingDevice.hit_sbt_range_alloc()<class_RenderingDevice_method_hit_sbt_range_alloc>` method.
+用于该实例的命中着色器绑定表范围，该范围使用 :ref:`RenderingDevice.hit_sbt_range_alloc()<class_RenderingDevice_method_hit_sbt_range_alloc>` 方法进行分配。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Hit shader binding table range used for this instance, allocated using the :ref:
 - |void| **set_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_id**\ (\ )
 
-Custom instance ID that can be accessed in GLSL using ``gl_InstanceCustomIndexEXT``.
+自定义实例 ID，可在 GLSL 中通过 ``gl_InstanceCustomIndexEXT`` 进行访问。
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ Custom instance ID that can be accessed in GLSL using ``gl_InstanceCustomIndexEX
 - |void| **set_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_mask**\ (\ )
 
-Visibility mask used to control which rays can intersect this instance.
+用于控制哪些光线可以与此实例相交的可见性掩码。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Visibility mask used to control which rays can intersect this instance.
 - |void| **set_transform**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_transform**\ (\ )
 
-Transform applied to the referenced BLAS for this instance.
+应用于该实例所引用的 BLAS 的变换。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

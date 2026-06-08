@@ -124,7 +124,7 @@ EditorNode3DGizmoPlugin
 
 :ref:`bool<class_bool>` **_can_commit_handle_on_click**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorNode3DGizmoPlugin_private_method__can_commit_handle_on_click>`
 
-Override this method to define whether the gizmos should commit when the final handle position is the same as the initial one. Returns ``false`` if not overridden.
+重写此方法，以定义当操作手柄（handle）的最终位置与初始位置完全相同时，Gizmo 是否应该执行提交（commit）操作。如果未重写此方法，默认返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 

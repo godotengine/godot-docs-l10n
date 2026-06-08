@@ -142,9 +142,9 @@ To get a human-readable representation of the **InputEventKey**, use ``OS.get_ke
 - |void| **set_keycode**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_keycode**\ (\ )
 
-Latin label printed on the key in the current keyboard layout, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants. Key codes are meant for shortcuts expressed with a standard Latin keyboard, such as :kbd:`Ctrl + S` for a "Save" shortcut.
+Etichetta latina stampata sul tasto nel layout di tastiera attuale, che corrisponde a una delle costanti di :ref:`Key<enum_@GlobalScope_Key>`. I codici dei tasti sono pensati per le scorciatoie espresse con una tastiera latina standard, come :kbd:`Ctrl + S` per una scorciatoia "Salva".
 
-To get a human-readable representation of the **InputEventKey**, use ``OS.get_keycode_string(event.keycode)`` where ``event`` is the **InputEventKey**.
+Per ottenere una rappresentazione leggibile in chiaro dell'**InputEventKey**, usa ``OS.get_keycode_string(event.keycode)`` dove ``event`` è l'**InputEventKey**.
 
 .. code:: text
 
@@ -185,9 +185,9 @@ Rappresenta la posizione di un tasto che ha sia una versione sinistra sia una de
 - |void| **set_physical_keycode**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_physical_keycode**\ (\ )
 
-Represents the physical location of a key on the 101/102-key US QWERTY keyboard, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants. Physical key codes meant for game input, such as WASD movement, where only the location of the keys is important.
+Rappresenta la posizione fisica di un tasto sulla tastiera QWERTY statunitense a 101/102 tasti, che corrisponde a una delle costanti di :ref:`Key<enum_@GlobalScope_Key>`. I codici dei tasti fisici sono pensati per i giochi, come ad esempio il movimento tramite i tasti WASD, dove è importante soltanto la posizione dei tasti.
 
-To get a human-readable representation of the **InputEventKey**, use :ref:`OS.get_keycode_string()<class_OS_method_get_keycode_string>` in combination with :ref:`DisplayServer.keyboard_get_keycode_from_physical()<class_DisplayServer_method_keyboard_get_keycode_from_physical>` or :ref:`DisplayServer.keyboard_get_label_from_physical()<class_DisplayServer_method_keyboard_get_label_from_physical>`:
+Per ottenere una rappresentazione leggibile in chiaro dell'**InputEventKey**, utilizza :ref:`OS.get_keycode_string()<class_OS_method_get_keycode_string>` in combinazione con :ref:`DisplayServer.keyboard_get_keycode_from_physical()<class_DisplayServer_method_keyboard_get_keycode_from_physical>` o :ref:`DisplayServer.keyboard_get_label_from_physical()<class_DisplayServer_method_keyboard_get_label_from_physical>`:
 
 
 .. tabs::
@@ -248,9 +248,9 @@ Se ``true``, lo stato del tasto è premuto. Se ``false``, lo stato del tasto è 
 - |void| **set_unicode**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_unicode**\ (\ )
 
-The key Unicode character code (when relevant), shifted by modifier keys. Unicode character codes for composite characters and complex scripts may not be available unless IME input mode is active. See :ref:`Window.set_ime_active()<class_Window_method_set_ime_active>` for more information. Unicode character codes are meant for text input.
+Il codice carattere Unicode del tasto (quando pertinente), influenzato dai tasti modificatori. I codici carattere Unicode per caratteri compositi e script complessi potrebbero non essere disponibili a meno che non sia attiva la modalità di input IME. Vedi :ref:`Window.set_ime_active()<class_Window_method_set_ime_active>` per maggiori informazioni. I codici carattere Unicode sono pensati per l'input di testo.
 
-\ **Note:** This property is set by the engine only for a pressed event. If the event is sent by an IME or a virtual keyboard, no corresponding key released event is sent.
+\ **Nota:** Questa proprietà è impostata dal motore solo per un evento di pressione di un tasto. Se l'evento viene inviato da un IME o da una tastiera virtuale, non viene inviato alcun evento di rilascio corrispondente.
 
 .. rst-class:: classref-section-separator
 

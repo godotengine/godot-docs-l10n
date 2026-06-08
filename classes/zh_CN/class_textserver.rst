@@ -2277,7 +2277,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 :ref:`PackedColorArray<class_PackedColorArray>` **font_get_palette_colors**\ (\ font_rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_palette_colors>`
 
-Returns the array in the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors. Colors can be overridden using :ref:`font_set_palette_custom_colors()<class_TextServer_method_font_set_palette_custom_colors>`.
+返回 ``index`` 处预定义颜色调色板中的数组。调色板包含用于渲染字体字形的所有颜色。每个调色板的颜色数量均相同。可以使用 :ref:`font_set_palette_custom_colors()<class_TextServer_method_font_set_palette_custom_colors>` 方法重写颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -2289,7 +2289,7 @@ Returns the array in the predefined color palette at ``index``. Palette contains
 
 :ref:`int<class_int>` **font_get_palette_count**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_palette_count>`
 
-Returns the number of predefined color palettes. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+返回预定义颜色调色板的数量。调色板包含用于渲染字体字形的所有颜色。每个调色板的颜色数量相同。
 
 .. rst-class:: classref-item-separator
 
@@ -2301,7 +2301,7 @@ Returns the number of predefined color palettes. Palette contains all colors use
 
 :ref:`PackedColorArray<class_PackedColorArray>` **font_get_palette_custom_colors**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_palette_custom_colors>`
 
-Returns array of custom colors to override predefined palette.
+返回用于覆盖预定义调色板的自定义颜色数组。
 
 .. rst-class:: classref-item-separator
 
@@ -2313,7 +2313,7 @@ Returns array of custom colors to override predefined palette.
 
 :ref:`String<class_String>` **font_get_palette_name**\ (\ font_rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_palette_name>`
 
-Returns the name of the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+返回 ``index`` 处预定义颜色调色板的名称。调色板包含用于渲染字体字形的所有颜色。每个调色板的颜色数量相同。
 
 .. rst-class:: classref-item-separator
 
@@ -2541,7 +2541,7 @@ Returns the name of the predefined color palette at ``index``. Palette contains 
 
 :ref:`int<class_int>` **font_get_used_palette**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_used_palette>`
 
-Returns used palette index.
+返回已使用的调色板索引。
 
 .. rst-class:: classref-item-separator
 
@@ -3127,7 +3127,7 @@ Returns used palette index.
 
 |void| **font_set_palette_custom_colors**\ (\ font_rid\: :ref:`RID<class_RID>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`\ ) :ref:`🔗<class_TextServer_method_font_set_palette_custom_colors>`
 
-Sets array of custom colors to override predefined palette. Set to empty array to reset overrides. Use ``Color(0, 0, 0, 0)``, to keep predefined palette color at specific position.
+设置自定义颜色数组以覆盖预定义调色板。设置为空数组可重置覆盖。使用 ``Color(0, 0, 0, 0)`` 以保留特定位置的预定义调色板颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -3289,7 +3289,7 @@ Sets array of custom colors to override predefined palette. Set to empty array t
 
 |void| **font_set_used_palette**\ (\ font_rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_set_used_palette>`
 
-Sets used palette index.
+设置已使用的调色板索引。
 
 .. rst-class:: classref-item-separator
 
@@ -3687,7 +3687,7 @@ BiDi 算法覆盖函数的默认实现。
 
 :ref:`Vector2i<class_Vector2i>` **shaped_get_run_glyph_range**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_glyph_range>`
 
-Returns the glyph range of the ``index`` text run (in visual order).
+返回 ``index`` 文本运行（text run）的字形范围（按视觉顺序）。
 
 .. rst-class:: classref-item-separator
 

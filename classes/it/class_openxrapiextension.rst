@@ -607,9 +607,9 @@ Restituisce l'immagine della swapchain specificata.
 
 |void| **register_composition_layer_provider**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_register_composition_layer_provider>`
 
-Registers the given extension as a composition layer provider.
+Registra l'estensione specificata come fornitore del livello di composizione.
 
-\ **Note:** This cannot be called after the OpenXR session has started. However, it can be called in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
+\ **Nota:** Non è possibile chiamare questo metodo dopo aver avviato la sessione OpenXR. Tuttavia, è possibile chiamarlo in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
 
 .. rst-class:: classref-item-separator
 
@@ -621,9 +621,9 @@ Registers the given extension as a composition layer provider.
 
 |void| **register_frame_info_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_register_frame_info_extension>`
 
-Registers the given extension as modifying frame info via the :ref:`OpenXRExtensionWrapper._set_frame_wait_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_frame_wait_info_and_get_next_pointer>`, :ref:`OpenXRExtensionWrapper._set_view_locate_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_view_locate_info_and_get_next_pointer>`, or :ref:`OpenXRExtensionWrapper._set_frame_end_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_frame_end_info_and_get_next_pointer>` virtual methods.
+Registra l'estensione specificata come modificatrice delle informazioni di frame tramite i metodi virtuali :ref:`OpenXRExtensionWrapper._set_frame_wait_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_frame_wait_info_and_get_next_pointer>`, :ref:`OpenXRExtensionWrapper._set_view_locate_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_view_locate_info_and_get_next_pointer>` o :ref:`OpenXRExtensionWrapper._set_frame_end_info_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_frame_end_info_and_get_next_pointer>`.
 
-\ **Note:** This cannot be called after the OpenXR session has started. However, it can be called in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
+\ **Nota:** Non è possibile chiamare questo metodo dopo aver avviato la sessione OpenXR. Tuttavia, è possibile chiamarlo in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
 
 .. rst-class:: classref-item-separator
 
@@ -635,9 +635,9 @@ Registers the given extension as modifying frame info via the :ref:`OpenXRExtens
 
 |void| **register_projection_layer_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_register_projection_layer_extension>`
 
-Registers the given extension as modifying ``XrCompositionLayerProjection`` via the :ref:`OpenXRExtensionWrapper._set_projection_layer_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_projection_layer_and_get_next_pointer>` virtual method.
+Registra l'estensione specificata come modificatrice di ``XrCompositionLayerProjection`` tramite il metodi virtuale :ref:`OpenXRExtensionWrapper._set_projection_layer_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_projection_layer_and_get_next_pointer>`.
 
-\ **Note:** This cannot be called after the OpenXR session has started. However, it can be called in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
+\ **Nota:** Non è possibile chiamare questo metodo dopo aver avviato la sessione OpenXR. Tuttavia, è possibile chiamarlo in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
 
 .. rst-class:: classref-item-separator
 
@@ -759,9 +759,9 @@ Crea un :ref:`Transform3D<class_Transform3D>` da un `XrPosef <https://registry.k
 
 |void| **unregister_composition_layer_provider**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_unregister_composition_layer_provider>`
 
-Unregisters the given extension as a composition layer provider.
+Annulla la registrazione dell'estensione specificata come fornitore del livello di composizione.
 
-\ **Note:** This cannot be called while the OpenXR session is still running.
+\ **Nota:** Non è possibile chiamare questo metodo mentre la sessione OpenXR è ancora in esecuzione.
 
 .. rst-class:: classref-item-separator
 
@@ -787,9 +787,9 @@ Unregisters the given extension as modifying frame info.
 
 |void| **unregister_projection_layer_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_unregister_projection_layer_extension>`
 
-Unregisters the given extension as modifying ``XrCompositionLayerProjection``.
+Annulla la registrazione dell'estensione specificata modificatrice di ``XrCompositionLayerProjection``.
 
-\ **Note:** This cannot be called while the OpenXR session is still running.
+\ **Nota:** Non è possibile chiamare questo metodo mentre la sessione OpenXR è ancora in esecuzione.
 
 .. rst-class:: classref-item-separator
 
@@ -801,9 +801,9 @@ Unregisters the given extension as modifying ``XrCompositionLayerProjection``.
 
 |void| **unregister_projection_views_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_unregister_projection_views_extension>`
 
-Unregisters the given extension as a provider of additional data structures to projections views.
+Annulla la registrazione dell'estensione specificata come fornitore di ulteriori strutture dati alle viste di proiezione.
 
-\ **Note:** This cannot be called while the OpenXR session is still running.
+\ **Nota:** Non è possibile chiamare questo metodo mentre la sessione OpenXR è ancora in esecuzione.
 
 .. rst-class:: classref-item-separator
 

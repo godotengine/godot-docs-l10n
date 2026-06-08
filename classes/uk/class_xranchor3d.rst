@@ -1,0 +1,81 @@
+:github_url: hide
+
+.. _class_XRAnchor3D:
+
+XRAnchor3D
+==========
+
+**Успадковує:** :ref:`XRNode3D<class_XRNode3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+
+Анкерна точка в AR просторі.
+
+.. rst-class:: classref-introduction-group
+
+Опис
+--------
+
+Точка **XRAnchor3D** — це :ref:`XRNode3D<class_XRNode3D>`, який зіставляє місцезнаходження в реальному світі, визначене AR-платформою, з позицією в ігровому світі. Наприклад, якщо в ARKit увімкнено виявлення площин, ARKit визначатиме та оновлюватиме положення площин (столів, підлог тощо) і створюватиме для них якорі.
+
+Цей вузол зіставляється з одним з якорів за допомогою його унікального ідентифікатора. Коли ви отримуєте сигнал про те, що доступний новий якір, вам слід додати цей вузол до вашої сцени для цього якоря. Ви можете заздалегідь визначити вузли та встановити ідентифікатор; вузли просто залишатимуться на ``(0, 0, 0)``, доки не буде розпізнано площину.
+
+Майте на увазі, що якщо виявлення площин увімкнено, розмір, розміщення та орієнтація якоря будуть оновлюватися, оскільки логіка виявлення дізнається більше про реальний світ, особливо якщо видно лише частину поверхні.
+
+.. rst-class:: classref-introduction-group
+
+Посібники
+------------------
+
+- :doc:`Індекс документації XR <../tutorials/xr/index>`
+
+.. rst-class:: classref-reftable-group
+
+Методи
+------------
+
+.. table::
+   :widths: auto
+
+   +-------------------------------+-------------------------------------------------------------------+
+   | :ref:`Plane<class_Plane>`     | :ref:`get_plane<class_XRAnchor3D_method_get_plane>`\ (\ ) |const| |
+   +-------------------------------+-------------------------------------------------------------------+
+   | :ref:`Vector3<class_Vector3>` | :ref:`get_size<class_XRAnchor3D_method_get_size>`\ (\ ) |const|   |
+   +-------------------------------+-------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описи методів
+--------------------------
+
+.. _class_XRAnchor3D_method_get_plane:
+
+.. rst-class:: classref-method
+
+:ref:`Plane<class_Plane>` **get_plane**\ (\ ) |const| :ref:`🔗<class_XRAnchor3D_method_get_plane>`
+
+Повертає площину, що вирівнюється нашими анкерами; зручний для тестування перехрестя.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_XRAnchor3D_method_get_size:
+
+.. rst-class:: classref-method
+
+:ref:`Vector3<class_Vector3>` **get_size**\ (\ ) |const| :ref:`🔗<class_XRAnchor3D_method_get_size>`
+
+Повертає розрахунковий розмір площини, що було виявлено. Скажіть, коли анкер відноситься до таблиці в реальному світі, це розрахунковий розмір поверхні таблиці.
+
+.. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
+.. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
+.. |const| replace:: :abbr:`const (Цей метод не має побічних ефектів. Не змінює ніяку змінну екземпляра об'єкта.)`
+.. |vararg| replace:: :abbr:`vararg (Цей метод приймає будь-яке число аргументів після описаних тут.)`
+.. |constructor| replace:: :abbr:`constructor (Цей метод використовується для побудови типів.)`
+.. |static| replace:: :abbr:`static (Цей метод не потребує екземпляра для виклику, його можна викликати безпосередньо за допомогою назви класу.)`
+.. |operator| replace:: :abbr:`operator (Цей метод описує дійсний оператор для взаємодії з цим типом як з лівим операндом.)`
+.. |bitfield| replace:: :abbr:`BitField (Це значення є цілим числом, складеним у вигляді бітової маски з наступних прапорів.)`
+.. |void| replace:: :abbr:`void (Значення не повертається.)`

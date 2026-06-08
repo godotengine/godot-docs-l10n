@@ -464,7 +464,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_KEYWORD** = ``10``
 
-Marks the option as a keyword.
+将该选项标记为关键字。
 
 .. rst-class:: classref-item-separator
 
@@ -1570,7 +1570,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 
 |void| **join_lines**\ (\ line_ending\: :ref:`String<class_String>` = " "\ ) :ref:`🔗<class_CodeEdit_method_join_lines>`
 
-Joins all selected lines or lines containing a caret with their next line. Whitespace in between will be removed. If the next line has content, the ``line_ending`` will be inserted in between.
+将所有选中的行，或者包含光标的行，与其下一行合并。行间的空白字符将被移除。如果下一行含有内容，则会在两行之间插入 ``line_ending``\ 。
 
 .. rst-class:: classref-item-separator
 

@@ -415,7 +415,7 @@ Applies a local translation on the node's Y axis with the amount specified in ``
 
 |void| **rotate**\ (\ radians\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Node2D_method_rotate>`
 
-Applies a rotation to the node, in radians, starting from its current rotation. This is equivalent to ``rotation += radians``.
+Applica una rotazione al nodo, in radianti, a partire dalla sua rotazione attuale. Questo equivale a ``rotation += radians``.
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Trasforma la posizione globale fornita in una posizione nello spazio delle coord
 
 |void| **translate**\ (\ offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Node2D_method_translate>`
 
-Translates the node by the given ``offset`` in local coordinates. This is equivalent to ``position += offset``.
+Trasla il nodo per l'``offset`` specificato in coordinate locali. Questo equivale a ``position += offset``.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

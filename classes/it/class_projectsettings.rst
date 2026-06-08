@@ -16,7 +16,7 @@ Descrizione
 
 Memorizza variabili a cui è possibile accedere ovunque. Utilizza :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` o :ref:`has_setting()<class_ProjectSettings_method_has_setting>` per accedervi. Anche le variabili memorizzate in ``project.godot`` sono caricate in **ProjectSettings**, rendendo questo oggetto molto utile per leggere le opzioni di configurazione del gioco personalizzate.
 
-Quando si nomina una proprietà delle Impostazioni del progetto, utilizza il percorso completo all'impostazione, inclusa la categoria. Ad esempio, ``"application/config/name"`` per il nome del progetto. È possibile visualizzare i nomi delle categorie e delle proprietà nella finestra di dialogo Impostazioni del progetto.
+Quando si denomina una proprietà delle Impostazioni del progetto, utilizza il percorso completo all'impostazione, inclusa la categoria. Ad esempio, ``"application/config/name"`` per il nome del progetto. È possibile visualizzare i nomi delle categorie e delle proprietà nella finestra di dialogo Impostazioni del progetto.
 
 \ **Tag di funzionalità:** È possibile sovrascrivere le impostazioni del progetto per piattaforme e configurazioni specifiche (debug, release, ...) attraverso i :doc:`tag di funzionalità <../tutorials/export/feature_tags>`.
 
@@ -2277,9 +2277,9 @@ Il nome del progetto. È utilizzato sia dal Gestore dei progetti sia dagli espor
 
 :ref:`Dictionary<class_Dictionary>` **application/config/name_localized** = ``{}`` :ref:`🔗<class_ProjectSettings_property_application/config/name_localized>`
 
-Translations of the project's name. This setting is used by OS tools to translate application name on Android, iOS and macOS.
+Traduzioni del nome del progetto. Questa impostazione è utilizzata dagli strumenti del sistema operativo per tradurre il nome dell'applicazione su Android, iOS e macOS.
 
-\ **Note:** When left empty, the application name is translated using the project translations.
+\ **Nota:** Se lasciato vuoto, il nome dell'applicazione sarà tradotto attraverso le traduzioni del progetto.
 
 .. rst-class:: classref-item-separator
 
@@ -2541,21 +2541,21 @@ Percorso al file della scena principale che verrà caricato quando il progetto v
 
 :ref:`int<class_int>` **application/run/max_fps** = ``0`` :ref:`🔗<class_ProjectSettings_property_application/run/max_fps>`
 
-Maximum number of frames per second allowed. A value of ``0`` means "no limit". The actual number of frames per second may still be below this value if the CPU or GPU cannot keep up with the project logic and rendering.
+Numero massimo di frame al secondo consentiti. Un valore di ``0`` significa "nessun limite". Il numero effettivo di frame al secondo potrebbe essere ancora al di sotto di questo valore se la CPU o la GPU non riescono a tenere il passo con la logica del progetto e il rendering.
 
-Limiting the FPS can be useful to reduce system power consumption, which reduces heat and noise emissions (and improves battery life on mobile devices).
+Limitare gli FPS può essere utile per ridurre il consumo energetico del sistema, il che riduce le emissioni di calore e rumore (e migliora la durata della batteria sui dispositivi mobili).
 
-If :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is set to ``Enabled`` or ``Adaptive``, it takes precedence and the forced FPS number cannot exceed the monitor's refresh rate. See also :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`.
+Se :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` è impostato su ``Enabled`` o ``Adaptive``, ha la precedenza e il numero forzato di FPS non può superare la frequenza di aggiornamento del monitor.
 
-If :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is ``Enabled``, on monitors with variable refresh rate enabled (G-Sync/FreeSync), using an FPS limit slightly lower than the monitor's refresh rate will `reduce input lag while avoiding tearing <https://blurbusters.com/howto-low-lag-vsync-on/>`__. At higher refresh rates, the difference between the FPS limit and the monitor refresh rate should be increased to ensure frames to account for timing inaccuracies. The optimal formula for the FPS limit value in this scenario is ``r - (r * r) / 3600.0``, where ``r`` is the monitor's refresh rate.
+Se :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` è ``Enabled``, sui monitor con frequenza di aggiornamento variabile abilitata (G-Sync/FreeSync), usare un limite di alcuni frame inferiore alla frequenza di aggiornamento del monitor `ridurrà il ritardo degli input evitando il tearing <https://blurbusters.com/howto-low-lag-vsync-on/>`__. Con frequenze più elevate, si dovrebbe aumentare la differenza tra il limite degli FPS e la frequenza di aggiornamento del monitor, al fine di garantire abbastanza frame per compensare le imprecisioni di temporizzazione. In questo scenario, la formula ottimale per ottenere il limite degli FPS è ``r - (r * r) / 3600.0``, dove ``r`` è la frequenza di aggiornamento del monitor.
 
-If :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is ``Disabled``, limiting the FPS to a high value that can be consistently reached on the system can reduce input lag compared to an uncapped framerate. Since this works by ensuring the GPU load is lower than 100%, this latency reduction is only effective in GPU-bottlenecked scenarios, not CPU-bottlenecked scenarios.
+Se :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` è ``Disabled``, limitare gli FPS a un valore elevato che può essere raggiunto costantemente sul sistema può ridurre il ritardo degli input rispetto a un frame rate senza limiti. Poiché ciò funziona assicurando che il carico della GPU sia inferiore al 100%, questa riduzione della latenza è efficace solo negli scenari limitati dalla GPU, non in quelli limitati dalla CPU.
 
-See also :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
+Vedi anche :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
 
-This setting can be overridden using the ``--max-fps <fps>`` command line argument (including with a value of ``0`` for unlimited framerate).
+È possibile sovrascrivere questa impostazione attraverso l'argomento della riga di comando ``--max-fps <fps>`` (anche con un valore di ``0`` per un framerate illimitato).
 
-\ **Note:** This property is only read when the project starts. To change the rendering FPS cap at runtime, set :ref:`Engine.max_fps<class_Engine_property_max_fps>` instead.
+\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per modificare il limite degli FPS di rendering in fase di esecuzione, imposta invece :ref:`Engine.max_fps<class_Engine_property_max_fps>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2967,7 +2967,7 @@ Se è utilizzato l':doc:`argomento della riga di comando <../tutorials/editor/co
 
 :ref:`int<class_int>` **debug/gdscript/warnings/assert_always_false** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/assert_always_false>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an ``assert`` call always evaluates to ``false``.
+Se impostato su **warn** o **error**, produce rispettivamente un avviso o un errore quando una chiamata a ``assert`` è sempre valutata come ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -2979,7 +2979,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/assert_always_true** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/assert_always_true>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an ``assert`` call always evaluates to ``true``.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando una chiamata a ``assert`` è sempre valutata come ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2991,7 +2991,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_capture_reassignment** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_capture_reassignment>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable captured by a lambda is reassigned, since this does not modify the outer local variable.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando una variabile locale catturata da una lambda è riassegnata, poiché ciò non modifica la variabile locale esterna.
 
 .. rst-class:: classref-item-separator
 
@@ -3003,7 +3003,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_identifier** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_identifier>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier contains characters that can be confused with something else, like when mixing different alphabets.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando un identificatore contiene caratteri che si possono confondere con altri, ad esempio quando si mescolano alfabeti diversi.
 
 .. rst-class:: classref-item-separator
 
@@ -3015,7 +3015,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_local_declaration** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_local_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier declared in the nested block has the same name as an identifier declared below in the parent block.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando un identificatore dichiarato nel blocco annidato ha lo stesso nome di un identificatore dichiarato in seguito nel blocco padre.
 
 .. rst-class:: classref-item-separator
 
@@ -3027,7 +3027,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_local_usage** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_local_usage>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier that will be shadowed below in the block is used.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando è utilizzato un identificatore che sarà oscurato in seguito nel blocco.
 
 .. rst-class:: classref-item-separator
 
@@ -3039,7 +3039,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_temporary_modification** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_temporary_modification>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a built-in property of type ``Packed*Array`` is modified using a complex assignment chain or a non-``const`` method call. In this case, you are only modifying a temporary value, and the property's value remains unchanged.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando una proprietà integrata di tipo ``Packed*Array`` è modificata attraverso una catena di assegnazione complessa o una chiamata di metodo non ``const``. In questo caso, si sta modificando solo un valore temporaneo e il valore della proprietà rimane invariato.
 
 .. rst-class:: classref-item-separator
 
@@ -3051,9 +3051,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/deprecated_keyword** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/deprecated_keyword>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when deprecated keywords are used.
+Se impostato su **Warn** o **error**, produce rispettivamente un avviso o un errore quando si utilizzano parole chiave deprecate.
 
-\ **Note:** There are currently no deprecated keywords, so this warning is never produced.
+\ **Nota:** Attualmente non ci sono parole chiave deprecate, quindi questo avviso non è mai prodotto.
 
 .. rst-class:: classref-item-separator
 
@@ -3083,7 +3083,7 @@ It is recommended to include your own addons/libraries, either project-specific 
 
 :ref:`int<class_int>` **debug/gdscript/warnings/empty_file** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/empty_file>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an empty file is parsed.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando viene analizzato un file vuoto.
 
 .. rst-class:: classref-item-separator
 
@@ -3107,7 +3107,7 @@ Se ``true``, abilita gli avvisi specifici di GDScript (vedi le impostazioni ``de
 
 :ref:`int<class_int>` **debug/gdscript/warnings/enum_variable_without_default** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/enum_variable_without_default>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable has an enum type but no explicit default value, but only if the enum does not contain ``0`` as a valid value.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando una variabile ha un tipo enumerato ma nessun valore predefinito esplicito, ma solo se l'enumerazione non contiene ``0`` come valore valido.
 
 .. rst-class:: classref-item-separator
 
@@ -3119,7 +3119,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/get_node_default_without_onready** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/get_node_default_without_onready>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when :ref:`Node.get_node()<class_Node_method_get_node>` (or the shorthand ``$``) is used as default value of a class variable without the ``@onready`` annotation.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando :ref:`Node.get_node()<class_Node_method_get_node>` (o la forma abbreviata ``$``) è utilizzato come valore predefinito di una variabile di classe senza l'annotazione ``@onready``.
 
 .. rst-class:: classref-item-separator
 
@@ -3131,7 +3131,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/incompatible_ternary** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/incompatible_ternary>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a ternary operator may emit values with incompatible types.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando un operatore ternario potrebbe emettere valori con tipi incompatibili.
 
 .. rst-class:: classref-item-separator
 
@@ -3143,7 +3143,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/inference_on_variant** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/inference_on_variant>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a static inferred type uses a :ref:`Variant<class_Variant>` as initial value, which makes the static type to also be Variant.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando un tipo statico inferito utilizza un :ref:`Variant<class_Variant>` come valore iniziale, il che rende Variant anche il tipo statico.
 
 .. rst-class:: classref-item-separator
 
@@ -3169,7 +3169,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/int_as_enum_without_cast** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/int_as_enum_without_cast>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when trying to use an integer as an enum without an explicit cast.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si tenta di utilizzare un numero intero come membro di un'enumerazione, senza una conversione esplicita.
 
 .. rst-class:: classref-item-separator
 
@@ -3181,7 +3181,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/int_as_enum_without_match** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/int_as_enum_without_match>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when trying to use an integer as an enum when there is no matching enum member for that numeric value.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si tenta di utilizzare un numero intero come enumerazione, quando non esiste un membro nell'enumerazione corrispondente per quel valore numerico.
 
 .. rst-class:: classref-item-separator
 
@@ -3193,7 +3193,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/integer_division** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/integer_division>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when dividing an integer by another integer (the decimal part will be discarded).
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si divide un numero intero per un altro numero intero (la parte decimale sarà scartata).
 
 .. rst-class:: classref-item-separator
 
@@ -3205,7 +3205,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/missing_await** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/missing_await>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a coroutine without ``await``.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando una funzione coroutine è chiamata senza ``await``.
 
 .. rst-class:: classref-item-separator
 
@@ -3217,7 +3217,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/missing_tool** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/missing_tool>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the base class script has the ``@tool`` annotation, but the current class script does not have it.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando lo script della classe base ha l'annotazione ``@tool``, ma lo script della classe attuale non ce l'ha.
 
 .. rst-class:: classref-item-separator
 
@@ -3229,7 +3229,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/narrowing_conversion** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/narrowing_conversion>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when passing a floating-point value to a function that expects an integer (it will be converted and lose precision).
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si passa un valore in virgola mobile a una funzione che si aspetta un numero intero (sarà convertito e perderà precisione).
 
 .. rst-class:: classref-item-separator
 
@@ -3241,7 +3241,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/native_method_override** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/native_method_override>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a method in the script overrides a native method, because it may not behave as expected.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando un metodo nello script sovrascrive un metodo nativo, perché potrebbe non comportarsi come previsto.
 
 .. rst-class:: classref-item-separator
 
@@ -3253,7 +3253,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/onready_with_export** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/onready_with_export>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the ``@onready`` annotation is used together with the ``@export`` annotation, since it may not behave as expected.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando l'annotazione ``@onready`` è utilizzata insieme all'annotazione ``@export``, poiché potrebbe non comportarsi come previsto.
 
 .. rst-class:: classref-item-separator
 
@@ -3265,7 +3265,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/redundant_await** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/redundant_await>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a function that is not a coroutine is called with await.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando una funzione che non è una coroutine è chiamata con await.
 
 .. rst-class:: classref-item-separator
 
@@ -3277,7 +3277,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/redundant_static_unload** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/redundant_static_unload>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the ``@static_unload`` annotation is used in a script without any static variables.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando l'annotazione ``@static_unload`` è utilizzata in uno script senza variabili statiche.
 
 .. rst-class:: classref-item-separator
 
@@ -3301,7 +3301,7 @@ Se abilitato, l'uso di una proprietà, di un'enumerazione o di una funzione rino
 
 :ref:`int<class_int>` **debug/gdscript/warnings/return_value_discarded** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/return_value_discarded>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a function without using its return value (by assigning it to a variable or using it as a function argument). These return values are sometimes used to indicate possible errors using the :ref:`Error<enum_@GlobalScope_Error>` enum.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si chiama una funzione senza utilizzare il suo valore di ritorno (assegnandolo a una variabile o utilizzandolo come argomento di una funzione). Questi valori di ritorno sono talvolta utilizzati per indicare possibili errori tramite l'enumerazione :ref:`Error<enum_@GlobalScope_Error>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3313,7 +3313,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_global_identifier** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_global_identifier>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when defining a local or member variable, signal, or enum that would have the same name as a built-in function or global class name, thus shadowing it.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si definisce una variabile locale o membro, un segnale o un'enumerazione che avrebbe lo stesso nome di una funzione integrata o di una classe globale, oscurandolo così.
 
 .. rst-class:: classref-item-separator
 
@@ -3325,7 +3325,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable or local constant shadows a member declared in the current class.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando una variabile locale o una costante locale oscura un membro dichiarato nella classe attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -3337,7 +3337,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_variable_base_class** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_variable_base_class>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable or local constant shadows a member declared in a base class.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando una variabile locale o una costante locale oscura un membro dichiarato nella classe base.
 
 .. rst-class:: classref-item-separator
 
@@ -3349,7 +3349,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/standalone_expression** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/standalone_expression>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling an expression that may have no effect on the surrounding code, such as writing ``2 + 2`` as a statement.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si chiama un'espressione che potrebbe non avere alcun effetto sul codice circostante, come ad esempio scrivendo solo ``2 + 2`` come istruzione.
 
 .. rst-class:: classref-item-separator
 
@@ -3361,7 +3361,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/standalone_ternary** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/standalone_ternary>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a ternary expression that may have no effect on the surrounding code, such as writing ``42 if active else 0`` as a statement.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si chiama un'espressione ternaria che potrebbe non avere alcun effetto sul codice circostante, come ad esempio scrivendo solo ``42 if active else 0`` come istruzione.
 
 .. rst-class:: classref-item-separator
 
@@ -3373,7 +3373,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/static_called_on_instance** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/static_called_on_instance>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a static method from an instance of a class instead of from the class directly.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si chiama un metodo statico da un'istanza di una classe anziché direttamente dalla classe.
 
 .. rst-class:: classref-item-separator
 
@@ -3385,7 +3385,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unassigned_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unassigned_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when using a variable that wasn't previously assigned.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si utilizza una variabile che non è stata assegnata in precedenza.
 
 .. rst-class:: classref-item-separator
 
@@ -3397,7 +3397,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unassigned_variable_op_assign** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unassigned_variable_op_assign>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when assigning a variable using an assignment operator like ``+=`` if the variable wasn't previously assigned.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si assegna una variabile attraverso un operatore di assegnazione come ``+=`` se la variabile non è stata assegnata in precedenza.
 
 .. rst-class:: classref-item-separator
 
@@ -3409,7 +3409,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unreachable_code** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unreachable_code>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when unreachable code is detected (such as after a ``return`` statement that will always be executed).
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando è rilevato codice non raggiungibile (ad esempio dopo un'istruzione ``return`` che sarà sempre eseguita).
 
 .. rst-class:: classref-item-separator
 
@@ -3421,7 +3421,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unreachable_pattern** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unreachable_pattern>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an unreachable ``match`` pattern is detected.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando viene rilevato uno schema di ``match`` non raggiungibile.
 
 .. rst-class:: classref-item-separator
 
@@ -3433,7 +3433,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_call_argument** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_call_argument>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when using an expression whose type may not be compatible with the function parameter expected.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si utilizza un'espressione il cui tipo potrebbe non essere compatibile con il parametro della funzione previsto.
 
 .. rst-class:: classref-item-separator
 
@@ -3445,7 +3445,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_cast** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_cast>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a :ref:`Variant<class_Variant>` value is cast to a non-Variant.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando un valore :ref:`Variant<class_Variant>` è convertito in un valore non-Variant.
 
 .. rst-class:: classref-item-separator
 
@@ -3457,7 +3457,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_method_access** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_method_access>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a method whose presence is not guaranteed at compile-time in the class.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si chiama un metodo la cui presenza non è garantita in fase di compilazione nella classe.
 
 .. rst-class:: classref-item-separator
 
@@ -3469,7 +3469,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_property_access** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_property_access>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when accessing a property whose presence is not guaranteed at compile-time in the class.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si accede a una proprietà la cui presenza non è garantita in fase di compilazione nella classe.
 
 .. rst-class:: classref-item-separator
 
@@ -3481,7 +3481,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_void_return** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_void_return>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when returning a call from a ``void`` function when such call cannot be guaranteed to be also ``void``.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando si restituisce una chiamata da una funzione ``void`` quando non si può garantire che tale chiamata sia anche ``void``.
 
 .. rst-class:: classref-item-separator
 
@@ -3493,9 +3493,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/untyped_declaration** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable or parameter has no static type, or if a function has no static return type.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando una variabile o un parametro non ha un tipo statico o se una funzione non ha un tipo restituito statico.
 
-\ **Note:** This warning is recommended together with :ref:`EditorSettings.text_editor/completion/add_type_hints<class_EditorSettings_property_text_editor/completion/add_type_hints>` to help achieve type safety.
+\ **Nota:** Questo avviso è consigliato insieme a :ref:`EditorSettings.text_editor/completion/add_type_hints<class_EditorSettings_property_text_editor/completion/add_type_hints>` per aiutare a garantire la sicurezza del tipo.
 
 .. rst-class:: classref-item-separator
 
@@ -3507,7 +3507,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_local_constant** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_local_constant>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local constant is never used.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando una costante locale non è mai utilizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -3519,7 +3519,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_parameter** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_parameter>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a function parameter is never used.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando un parametro di una funzione non è mai utilizzato.
 
 .. rst-class:: classref-item-separator
 
@@ -3531,7 +3531,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_private_class_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_private_class_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a private member variable is never used.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando una variabile membro privata non è mai utilizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -3543,7 +3543,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_signal** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_signal>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a signal is declared but never explicitly used in the class.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando un segnale è dichiarato ma mai utilizzato esplicitamente nella classe.
 
 .. rst-class:: classref-item-separator
 
@@ -3555,7 +3555,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable is unused.
+Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un errore quando una variabile locale non è utilizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -4849,19 +4849,19 @@ Posizione iniziale della finestra principale (in coordinate del desktop virtuale
 
 :ref:`int<class_int>` **display/window/size/initial_position_type** = ``1`` :ref:`🔗<class_ProjectSettings_property_display/window/size/initial_position_type>`
 
-Main window initial position.
+Posizione iniziale della finestra principale.
 
-\ ``0`` - "Absolute", :ref:`display/window/size/initial_position<class_ProjectSettings_property_display/window/size/initial_position>` is used to set window position.
+\ ``0`` - "Assoluto", :ref:`display/window/size/initial_position<class_ProjectSettings_property_display/window/size/initial_position>` è utilizzato per impostare la posizione della finestra.
 
-\ ``1`` - "Primary Screen Center".
+\ ``1`` - "Centro dello schermo principale".
 
-\ ``3`` - "Other Screen Center", :ref:`display/window/size/initial_screen<class_ProjectSettings_property_display/window/size/initial_screen>` is used to set the screen.
+\ ``2`` - "Centro dell'altro schermo", :ref:`display/window/size/initial_screen<class_ProjectSettings_property_display/window/size/initial_screen>` è utilizzato per impostare lo schermo.
 
-\ ``4`` - "Center of Screen With Mouse Pointer".
+\ ``4`` - "Centro dello schermo con il puntatore del mouse".
 
-\ ``5`` - "Center of Screen With Keyboard Focus".
+\ ``5`` - "Centro dello schermo con il focus della tastiera".
 
-\ **Note:** This setting only affects the exported project, or when the project is run from the command line. In the editor, the value of :ref:`EditorSettings.run/window_placement/rect<class_EditorSettings_property_run/window_placement/rect>` is used instead.
+\ **Nota:** Questa impostazione influisce solo sul progetto esportato o quando il progetto è eseguito dalla riga di comando. Nell'editor, è utilizzato invece il valore di :ref:`EditorSettings.run/window_placement/rect<class_EditorSettings_property_run/window_placement/rect>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4987,7 +4987,7 @@ Se ``true``, suggerisce al gestore delle finestre che lo sfondo della finestra p
 
 :ref:`int<class_int>` **display/window/size/viewport_height** = ``648`` :ref:`🔗<class_ProjectSettings_property_display/window/size/viewport_height>`
 
-Imposta l'altezza della viewport principale del gioco. Sulle piattaforme desktop, questa è anche l'altezza iniziale della finestra, rappresentata da un rettangolo color indaco nell'editor 2D. Le impostazioni della modalità di allargamento la usano anche come riferimento quando si usano le modalità ``canvas_items`` o ``viewport``. Vedi anche :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>`, :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>` e :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`.
+Imposta l'altezza della viewport principale del gioco. Sulle piattaforme desktop, questa è anche l'altezza iniziale della finestra, rappresentata da un rettangolo color indaco nell'editor 2D. Le impostazioni della modalità di stiramento la usano anche come riferimento quando si usano le modalità ``canvas_items`` o ``viewport``. Vedi anche :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>`, :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>` e :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4999,7 +4999,7 @@ Imposta l'altezza della viewport principale del gioco. Sulle piattaforme desktop
 
 :ref:`int<class_int>` **display/window/size/viewport_width** = ``1152`` :ref:`🔗<class_ProjectSettings_property_display/window/size/viewport_width>`
 
-Imposta la larghezza della viewport principale del gioco. Sulle piattaforme desktop, questa è anche la larghezza iniziale della finestra, rappresentata da un rettangolo color indaco nell'editor 2D. Le impostazioni della modalità di allargamento la usano anche come riferimento quando si usano le modalità ``canvas_items`` o ``viewport``. Vedi anche :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`, :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>` e :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`.
+Imposta la larghezza della viewport principale del gioco. Sulle piattaforme desktop, questa è anche la larghezza iniziale della finestra, rappresentata da un rettangolo color indaco nell'editor 2D. Le impostazioni della modalità di stiramento la usano anche come riferimento quando si usano le modalità ``canvas_items`` o ``viewport``. Vedi anche :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`, :ref:`display/window/size/window_width_override<class_ProjectSettings_property_display/window/size/window_width_override>` e :ref:`display/window/size/window_height_override<class_ProjectSettings_property_display/window/size/window_height_override>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5061,13 +5061,13 @@ Defines how the aspect ratio of the base size is preserved when stretching to fi
 
 :ref:`String<class_String>` **display/window/stretch/mode** = ``"disabled"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/mode>`
 
-Defines how the base size is stretched to fit the resolution of the window or screen.
+Definisce come la dimensione di base viene stirata per adattarsi alla risoluzione della finestra o dello schermo.
 
-\ ``"disabled"``: No stretching happens. One unit in the scene corresponds to one pixel on the screen. In this mode, :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` has no effect. Recommended for non-game applications.
+\ ``"disabled"``: Non avviene alcun stiramento. Un'unità nella scena corrisponde a un pixel sullo schermo. In questa modalità, :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` non ha effetto. Consigliato per applicazioni non di gioco.
 
-\ ``"canvas_items"``: The base size specified in width and height in the project settings is stretched to cover the whole screen (taking :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` into account). This means that everything is rendered directly at the target resolution. 3D is unaffected, while in 2D, there is no longer a 1:1 correspondence between sprite pixels and screen pixels, which may result in scaling artifacts. Recommended for most games that don't use a pixel art aesthetic, although it is possible to use this stretch mode for pixel art games too (especially in 3D). This is the default for projects created starting in Godot 4.7.
+\ ``"canvas_items"``: Le dimensioni base specificate in larghezza e altezza nelle impostazioni del progetto sono stirate per coprire l'intero schermo (tenendo conto di :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>`). Ciò significa che tutto è renderizzato direttamente alla risoluzione di destinazione. Non influisce sul 3D, mentre sul 2D non c'è più una corrispondenza 1:1 tra i pixel degli sprite e i pixel dello schermo, il che potrebbe causare artefatti di ridimensionamento. Consigliato per la maggior parte dei giochi che non usano un'estetica pixel art, sebbene sia possibile usare questa modalità di stiramento anche per i giochi con pixel art (specialmente in 3D). Predefinito per i progetti creati a partire da Godot 4.7.
 
-\ ``"viewport"``: The size of the root :ref:`Viewport<class_Viewport>` is set precisely to the base size specified in the Project Settings' Display section. The scene is rendered to this viewport first. Finally, this viewport is scaled to fit the screen (taking :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` into account). Recommended for games that use a pixel art aesthetic.
+\ ``"viewport"``: Le dimensioni della :ref:`Viewport<class_Viewport>` radice sono impostate esattamente sulle dimensioni di base specificate nella sezione Display delle Impostazioni del progetto. La scena è prima renderizzata in questa viewport. Infine, questa viewport è ridimensionata per adattarsi allo schermo (tenendo conto di :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>`). Consigliato per i giochi che usano un'estetica pixel art.
 
 .. rst-class:: classref-item-separator
 
@@ -5079,7 +5079,7 @@ Defines how the base size is stretched to fit the resolution of the window or sc
 
 :ref:`float<class_float>` **display/window/stretch/scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/scale>`
 
-Il moltiplicatore del fattore di scala da usare per gli elementi 2D. Questo moltiplica il fattore di scala finale determinato da :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>`. Se si usa la modalità di allungamento **Disabled**, questo fattore di scala è applicato così com'è. Questo può essere regolato per rendere l'interfaccia utente più facile da leggere su alcuni display.
+Il moltiplicatore del fattore di scala da usare per gli elementi 2D. Questo moltiplica il fattore di scala finale determinato da :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>`. Se si usa la modalità di stiramento **Disabled**, questo fattore di scala è applicato così com'è. Questo può essere regolato per rendere l'interfaccia utente più facile da leggere su alcuni display.
 
 .. rst-class:: classref-item-separator
 
@@ -5091,13 +5091,13 @@ Il moltiplicatore del fattore di scala da usare per gli elementi 2D. Questo molt
 
 :ref:`String<class_String>` **display/window/stretch/scale_mode** = ``"fractional"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/scale_mode>`
 
-The policy to use to determine the final scale factor for 2D elements. This affects how :ref:`display/window/stretch/scale<class_ProjectSettings_property_display/window/stretch/scale>` is applied, in addition to the automatic scale factor determined by :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>`.
+Il criterio da utilizzare per determinare il fattore di scala finale per gli elementi 2D. Ciò influisce sul modo in cui :ref:`display/window/stretch/scale<class_ProjectSettings_property_display/window/stretch/scale>` è applicato, oltre al fattore di scala automatico determinato da :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>`.
 
-\ ``"fractional"``: The scale factor will not be modified.
+\ ``"fractional"``: il fattore di scala non sarà modificato.
 
-\ ``"integer"``: The scale factor will be floored to an integer value, which means that the screen size will always be an integer multiple of the base viewport size. This provides a crisp pixel art appearance.
+\ ``"integer"``: il fattore di scala sarà ridotto a un valore intero, il che significa che la dimensione dello schermo sarà sempre un multiplo intero della dimensione base della viewport. Ciò fornisce un aspetto nitido per pixel art.
 
-\ **Note:** When using integer scaling with a stretch mode, resizing the window to be smaller than the base viewport size will clip the contents. Consider preventing that by setting :ref:`Window.min_size<class_Window_property_min_size>` to the same value as the base viewport size defined in :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`.
+\ **Nota:** Quando si utilizza la scala intera con una modalità di stiramento, ridimensionare la finestra in modo che sia più piccola della dimensione base della viewport taglierà i contenuti. Si consiglia di evitarlo impostando :ref:`Window.min_size<class_Window_property_min_size>` sullo stesso valore della dimensione base della viewport definita in :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` e :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5653,17 +5653,17 @@ Se ``true``, aggancia i vertici dei nodi :ref:`Control<class_Control>` al pixel 
 
 :ref:`int<class_int>` **gui/common/swap_cancel_ok** = ``0`` :ref:`🔗<class_ProjectSettings_property_gui/common/swap_cancel_ok>`
 
-How to position the Cancel and OK buttons in the project's :ref:`AcceptDialog<class_AcceptDialog>` windows. Different platforms have different conventions for this, which can be overridden through this setting.
+Come posizionare i pulsanti Annulla e OK negli :ref:`AcceptDialog<class_AcceptDialog>` del progetto. Diverse piattaforme hanno diverse convenzioni, che si possono sovrascrivere attraverso questa impostazione.
 
-- **Auto** follows the platform convention: OK first on Windows, KDE, and LXQt; Cancel first on macOS and other Linux desktop environments.
+- **Auto** segue la convenzione della piattaforma: prima OK su Windows, KDE e LXQt, prima Annulla su macOS e altri ambienti desktop Linux.
 
-- **Cancel First** forces the Cancel/OK ordering.
+- **Cancel First** Forza l'ordinamento Annulla/OK.
 
-- **OK First** forces the OK/Cancel ordering.
+- **OK First** Forza l'ordinamento OK/Annulla.
 
-To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
+Per verificare se i pulsanti sono scambiati in fase di esecuzione, usa :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
 
-\ **Note:** This doesn't affect native dialogs such as the ones spawned by :ref:`DisplayServer.dialog_show()<class_DisplayServer_method_dialog_show>`.
+\ **Nota:** Questo non ha effetto sulle finestre di dialogo native come quelle generate da :ref:`DisplayServer.dialog_show()<class_DisplayServer_method_dialog_show>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5687,7 +5687,7 @@ Dimensione massima della cronologia annulla/ripristina per i campi di :ref:`Text
 
 :ref:`bool<class_bool>` **gui/fonts/dynamic_fonts/use_oversampling** = ``true`` :ref:`🔗<class_ProjectSettings_property_gui/fonts/dynamic_fonts/use_oversampling>`
 
-If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` is set to ``"canvas_items"``, font and :ref:`DPITexture<class_DPITexture>` oversampling is enabled in the main window. Use :ref:`Viewport.oversampling<class_Viewport_property_oversampling>` to control oversampling in other viewports and windows.
+Se impostato su ``true`` e :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` è impostato su ``"canvas_items"``, il sovracampionamento dei font e di :ref:`DPITexture<class_DPITexture>` è abilitato nella finestra principale. Usa :ref:`Viewport.oversampling<class_Viewport_property_oversampling>` per controllare il sovracampionamento in altre finestre e viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -5823,7 +5823,7 @@ Disposizione dei subpixel LCD utilizzato per l'antialiasing dei font. Vedi :ref:
 
 :ref:`float<class_float>` **gui/timers/button_shortcut_feedback_highlight_time** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_gui/timers/button_shortcut_feedback_highlight_time>`
 
-Quando :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` è abilitato, questo è il tempo in cui :ref:`BaseButton<class_BaseButton>` rimarrà evidenziato dopo una scorciatoia.
+When :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` is enabled, this is the time the :ref:`BaseButton<class_BaseButton>` will remain highlighted after a shortcut. This duration is not affected by :ref:`Engine.time_scale<class_Engine_property_time_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10577,9 +10577,9 @@ La velocità angolare di soglia al di sotto della quale un corpo fisico 2D sarà
 
 :ref:`float<class_float>` **physics/2d/sleep_threshold_linear** = ``2.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/sleep_threshold_linear>`
 
-Threshold linear velocity under which a 2D physics body will be considered inactive. See :ref:`PhysicsServer2D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
+La velocità lineare di soglia al di sotto della quale un corpo fisico 2D sarà considerato inattivo. Vedi :ref:`PhysicsServer2D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
 
-\ **Note:** Only supported when using GodotPhysics3D. This project setting is ignored when using Jolt Physics.
+\ **Nota:** Supportata solo quando si utilizza GodotPhysics3D. Questa impostazione del progetto è ignorata quando si utilizza Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10591,9 +10591,9 @@ Threshold linear velocity under which a 2D physics body will be considered inact
 
 :ref:`float<class_float>` **physics/2d/solver/contact_max_allowed_penetration** = ``0.3`` :ref:`🔗<class_ProjectSettings_property_physics/2d/solver/contact_max_allowed_penetration>`
 
-Maximum distance a shape can penetrate another shape before it is considered a collision. See :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
+La distanza massima alla quale una forma può penetrare in un'altra forma prima che sia considerata una collisione. Vedi :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
 
-\ **Note:** Only supported when using GodotPhysics3D. This project setting is ignored when using Jolt Physics.
+\ **Nota:** Supportata solo quando si utilizza GodotPhysics3D. Questa impostazione del progetto è ignorata quando si utilizza Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10833,9 +10833,9 @@ Se ``true``, il server di fisica 3D è eseguito su un thread separato, sfruttand
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_angular** = ``0.13962634`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_angular>`
 
-Threshold angular velocity under which a 3D physics body will be considered inactive. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
+La velocità angolare di soglia al di sotto della quale un corpo fisico 3D sarà considerato inattivo. Vedi :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Nota:** Questa impostazione del progetto è efficace solo quando si utilizza GodotPhysics3D. Non ha alcun effetto quando si utilizza Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10847,9 +10847,9 @@ Threshold angular velocity under which a 3D physics body will be considered inac
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_linear** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_linear>`
 
-Threshold linear velocity under which a 3D physics body will be considered inactive. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
+La velocità lineare di soglia al di sotto della quale un corpo fisico 3D sarà considerato inattivo. Vedi :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Nota:** Questa impostazione del progetto è efficace solo quando si utilizza GodotPhysics3D. Non ha alcun effetto quando si utilizza Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10861,9 +10861,9 @@ Threshold linear velocity under which a 3D physics body will be considered inact
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_allowed_penetration** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_allowed_penetration>`
 
-Maximum distance a shape can penetrate another shape before it is considered a collision. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
+La distanza massima alla quale una forma può penetrare in un'altra forma prima che sia considerata una collisione. Vedi :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Nota:** Questa impostazione del progetto è efficace solo quando si utilizza GodotPhysics3D. Non ha alcun effetto quando si utilizza Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10875,9 +10875,9 @@ Maximum distance a shape can penetrate another shape before it is considered a c
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_separation** = ``0.05`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_separation>`
 
-Maximum distance a shape can be from another before they are considered separated and the contact is discarded. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`.
+La distanza massima alla quale una forma può trovarsi da un'altra prima che siano considerate separate e il contatto sia scartato. Vedi :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Nota:** Questa impostazione del progetto è efficace solo quando si utilizza GodotPhysics3D. Non ha alcun effetto quando si utilizza Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10889,9 +10889,9 @@ Maximum distance a shape can be from another before they are considered separate
 
 :ref:`float<class_float>` **physics/3d/solver/contact_recycle_radius** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_recycle_radius>`
 
-Maximum distance a pair of bodies has to move before their collision status has to be recalculated. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`.
+La distanza massima che una coppia di corpi deve percorrere prima che il loro stato di collisione debba essere ricalcolato. Vedi :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Nota:** Questa impostazione del progetto è efficace solo quando si utilizza GodotPhysics3D. Non ha alcun effetto quando si utilizza Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10903,11 +10903,11 @@ Maximum distance a pair of bodies has to move before their collision status has 
 
 :ref:`float<class_float>` **physics/3d/solver/default_contact_bias** = ``0.8`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/default_contact_bias>`
 
-Default solver bias for all physics contacts. Defines how much bodies react to enforce contact separation. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`.
+Il bias predefinito del risolutore per tutti i contatti di fisica. Definisce quanto i corpi reagiscono per imporre la separazione dei contatti. Vedi :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`.
 
-Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`).
+Le forme possono singolarmente avere un valore di bias specifico (vedi :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`).
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Nota:** Questa impostazione del progetto è efficace solo quando si utilizza GodotPhysics3D. Non ha alcun effetto quando si utilizza Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10919,9 +10919,9 @@ Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solve
 
 :ref:`int<class_int>` **physics/3d/solver/solver_iterations** = ``16`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/solver_iterations>`
 
-Number of solver iterations for all contacts and constraints. The greater the number of iterations, the more accurate the collisions will be. However, a greater number of iterations requires more CPU power, which can decrease performance. See :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`.
+Il numero di iterazioni del risolutore per tutti i contatti e i vincoli. Maggiore è il numero di iterazioni, più accurate saranno le collisioni. Tuttavia, un numero maggiore di iterazioni richiede più potenza della CPU, il che può ridurre le prestazioni. Vedi :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Nota:** Questa impostazione del progetto è efficace solo quando si utilizza GodotPhysics3D. Non ha alcun effetto quando si utilizza Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10933,9 +10933,9 @@ Number of solver iterations for all contacts and constraints. The greater the nu
 
 :ref:`float<class_float>` **physics/3d/time_before_sleep** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_physics/3d/time_before_sleep>`
 
-Time (in seconds) of inactivity before which a 3D physics body will put to sleep. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`.
+Il tempo (in secondi) di inattività prima del quale un corpo fisico 3D sarà messo in modalità di riposo. Vedi :ref:`PhysicsServer3D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Nota:** Questa impostazione del progetto è efficace solo quando si utilizza GodotPhysics3D. Non ha alcun effetto quando si utilizza Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -11853,7 +11853,7 @@ If ``true``, screen-space reflections will be rendered at half size and then ups
 
 :ref:`float<class_float>` **rendering/environment/ssao/adaptive_target** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/adaptive_target>`
 
-La qualità di destinazione da utilizzare quando :ref:`rendering/environment/ssao/quality<class_ProjectSettings_property_rendering/environment/ssao/quality>` è impostato su ``Ultra``. Un valore di ``0.0`` fornisce una qualità e una velocità simili a ``Medium`` mentre un valore di ``1.0`` fornisce una qualità molto più elevata rispetto a qualsiasi altra impostazione, a scapito delle prestazioni.
+L'obiettivo di qualità da usare quando :ref:`rendering/environment/ssao/quality<class_ProjectSettings_property_rendering/environment/ssao/quality>` è impostato su ``Ultra``. Un valore di ``0.0`` fornisce una qualità e una velocità simili a ``Medium`` mentre un valore di ``1.0`` fornisce una qualità molto più alta rispetto a qualsiasi altra impostazione, a scapito delle prestazioni.
 
 .. rst-class:: classref-item-separator
 
@@ -11877,7 +11877,7 @@ Il numero di passaggi di sfocatura da utilizzare quando si calcola l'occlusione 
 
 :ref:`float<class_float>` **rendering/environment/ssao/fadeout_from** = ``50.0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/fadeout_from>`
 
-Distanza alla quale l'effetto di occlusione ambientale nello spazio dello schermo inizia a svanire. Usa questa per nascondere l'occlusione ambientale da molto lontano.
+Distanza alla quale l'effetto di occlusione ambientale nello spazio dello schermo inizia a svanire. Usa questa per nascondere l'occlusione ambientale da lontano.
 
 .. rst-class:: classref-item-separator
 
@@ -11889,7 +11889,7 @@ Distanza alla quale l'effetto di occlusione ambientale nello spazio dello scherm
 
 :ref:`float<class_float>` **rendering/environment/ssao/fadeout_to** = ``300.0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/fadeout_to>`
 
-Distanza alla quale l'occlusione ambientale nello spazio sullo schermo è completamente svanita. Usa questa per nascondere l'occlusione ambientale da molto lontano.
+Distanza alla quale l'occlusione ambientale nello spazio sullo schermo svanisce totalmente. Usa questa per nascondere l'occlusione ambientale da lontano.
 
 .. rst-class:: classref-item-separator
 
@@ -11925,7 +11925,7 @@ Imposta la qualità dell'effetto di occlusione ambientale nello spazio sullo sch
 
 :ref:`float<class_float>` **rendering/environment/ssil/adaptive_target** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/adaptive_target>`
 
-La qualità di destinazione da usare quando :ref:`rendering/environment/ssil/quality<class_ProjectSettings_property_rendering/environment/ssil/quality>` è impostato su ``Ultra``. Un valore di ``0.0`` fornisce una qualità e una velocità simili a ``Medium`` mentre un valore di ``1.0`` fornisce una qualità molto più alta rispetto a qualsiasi altra impostazione, a scapito delle prestazioni. Quando si usa la destinazione adattiva, il costo delle prestazioni aumenta con la complessità della scena.
+L'obiettivo di qualità da usare quando :ref:`rendering/environment/ssil/quality<class_ProjectSettings_property_rendering/environment/ssil/quality>` è impostato su ``Ultra``. Un valore di ``0.0`` fornisce una qualità e una velocità simili a ``Medium`` mentre un valore di ``1.0`` fornisce una qualità molto più alta rispetto a qualsiasi altra impostazione, a scapito delle prestazioni. Quando si usa l'obiettivo adattivo, l'impatto sulle prestazioni aumenta con la complessità della scena.
 
 .. rst-class:: classref-item-separator
 
@@ -11949,7 +11949,7 @@ Il numero di passaggi di sfocatura da utilizzare quando si calcola l'illuminazio
 
 :ref:`float<class_float>` **rendering/environment/ssil/fadeout_from** = ``50.0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/fadeout_from>`
 
-Distanza alla quale l'effetto di illuminazione indiretta nello spazio dello schermo inizia a svanire. Usa questa per nascondere l'illuminazione indiretta nello spazio dello schermo da molto lontano.
+Distanza alla quale l'effetto di illuminazione indiretta nello spazio dello schermo inizia a svanire. Usa questa per nascondere l'illuminazione indiretta nello spazio dello schermo da lontano.
 
 .. rst-class:: classref-item-separator
 
@@ -11961,7 +11961,7 @@ Distanza alla quale l'effetto di illuminazione indiretta nello spazio dello sche
 
 :ref:`float<class_float>` **rendering/environment/ssil/fadeout_to** = ``300.0`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/fadeout_to>`
 
-Distanza alla quale l'effetto di illuminazione indiretta nello spazio dello schermo svanisce totalmente. Usa questa per nascondere l'illuminazione indiretta nello spazio dello schermo da molto lontano.
+Distanza alla quale l'effetto di illuminazione indiretta nello spazio dello schermo svanisce totalmente. Usa questa per nascondere l'illuminazione indiretta nello spazio dello schermo da lontano.
 
 .. rst-class:: classref-item-separator
 
@@ -12561,9 +12561,9 @@ La dimensione dei texel utilizzata per calcolare :ref:`Mesh.lightmap_size_hint<c
 
 :ref:`float<class_float>` **rendering/lightmapping/probe_capture/update_speed** = ``15`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/probe_capture/update_speed>`
 
-The framerate-independent update speed when representing dynamic object lighting from :ref:`LightmapProbe<class_LightmapProbe>`\ s. Higher values make dynamic object lighting update faster. Higher values can prevent fast-moving objects from having "outdated" indirect lighting displayed on them, at the cost of possible flickering when an object moves from a bright area to a shaded area.
+La velocità di aggiornamento indipendente dal frame rate quando si rappresenta l'illuminazione dinamica degli oggetti dai :ref:`LightmapProbe<class_LightmapProbe>`. Valori più alti velocizzano l'aggiornamento dell'illuminazione dinamica degli oggetti. Valori più alti possono impedire che gli oggetti in rapido movimento abbiano un'illuminazione indiretta "obsoleta" visualizzata su di essi, a scapito di un possibile sfarfallio quando un oggetto si sposta da un'area luminosa a un'area ombreggiata.
 
-\ **Note:** This property is only read when the project starts. To adjust the BVH build quality at runtime, use :ref:`RenderingServer.lightmap_set_probe_capture_update_speed()<class_RenderingServer_method_lightmap_set_probe_capture_update_speed>`.
+\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per regolare la qualità di compilazione BVH in fase di esecuzione, usa :ref:`RenderingServer.lightmap_set_probe_capture_update_speed()<class_RenderingServer_method_lightmap_set_probe_capture_update_speed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12889,13 +12889,13 @@ Sulle piattaforme desktop, si consigliano valori inferiori a ``4096``, idealment
 
 :ref:`float<class_float>` **rendering/mesh_lod/lod_change/threshold_pixels** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>`
 
-The automatic LOD bias to use for meshes rendered within the :ref:`ReflectionProbe<class_ReflectionProbe>`. Higher values will use less detailed versions of meshes that have LOD variations generated. If set to ``0.0``, automatic LOD is disabled. Increase :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` to improve performance at the cost of geometry detail.
+Il bias di LOD automatico da utilizzare per le mesh renderizzate all'interno dei :ref:`ReflectionProbe<class_ReflectionProbe>`. Valori più alti utilizzeranno versioni meno dettagliate delle mesh che hanno variazioni LOD generate. Se impostato su ``0.0``, il LOD automatico è disabilitato. Aumenta :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` per migliorare le prestazioni, a scapito dei dettagli della geometria.
 
-\ **Note:** Depending on the mesh's attributes (vertex colors, blend shapes, ...), a mesh may have fewer levels of LOD generated to avoid visible distortion of the mesh once it is affected by vertex colors or blend shapes. Meshes with a very low vertex count will also not have any LODs generated, which means this setting will not affect them at all. In general, this setting makes the largest impact on static meshes with a high vertex count.
+\ **Nota:** A seconda degli attributi della mesh (colori dei vertici, forme di fusione, ecc.), una mesh potrebbe avere meno livelli di LOD generati per evitare distorsioni evidenti una volta che è influenzata dai colori dei vertici o dalle forme di fusione. Le mesh con pochissimi vertici non avranno alcun LOD generato, il che significa che questa impostazione non le influenzerà affatto. In generale, questa impostazione ha il maggiore impatto sulle mesh statiche con un elevato numero di vertici.
 
-\ **Note:** :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` does not affect :ref:`GeometryInstance3D<class_GeometryInstance3D>` visibility ranges (also known as "manual" LOD or hierarchical LOD).
+\ **Nota:** :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` non influisce sugli intervalli di visibilità di :ref:`GeometryInstance3D<class_GeometryInstance3D>` (noti anche come LOD "manuale" o LOD gerarchico).
 
-\ **Note:** This property is only read when the project starts. To adjust the automatic LOD threshold at runtime, set :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` on the root :ref:`Viewport<class_Viewport>`.
+\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per regolare la soglia di LOD automatica in fase di esecuzione, imposta :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` sulla :ref:`Viewport<class_Viewport>` radice.
 
 .. rst-class:: classref-item-separator
 
@@ -13287,15 +13287,15 @@ Sostituzione su visionOS per :ref:`rendering/rendering_device/driver<class_Proje
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.windows** = ``"vulkan"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.windows>`
 
-Windows override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
+Sostituzione su Windows per :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
 
-Two options are supported:
+Sono supportate due opzioni:
 
-- ``vulkan`` (default), Vulkan from native drivers. If :ref:`rendering/rendering_device/fallback_to_vulkan<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>` is enabled, this is used as a fallback if Direct3D 12 is not supported.
+- ``vulkan`` (predefinito), Vulkan dai driver nativi. Se :ref:`rendering/rendering_device/fallback_to_vulkan<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>` è abilitato, questo viene utilizzato come alternativa se Direct3D 12 non è supportato.
 
-- ``d3d12``, Direct3D 12 from native drivers. If :ref:`rendering/rendering_device/fallback_to_d3d12<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>` is enabled, this is used as a fallback if Vulkan is not supported.
+- ``d3d12``, Direct3D 12 da driver nativi. Se :ref:`rendering/rendering_device/fallback_to_d3d12<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>` è abilitato, questo viene utilizzato come alternativa se Vulkan non è supportato.
 
-\ **Note:** Starting with Godot 4.6, new projects are configured by default to use ``d3d12`` on Windows. Projects created before Godot 4.6 keep ``vulkan`` for compatibility reasons, but it is recommended to switch them manually to ``d3d12``.
+\ **Nota:** A partire da Godot 4.6, i nuovi progetti sono inizialmente configurati per utilizzare ``d3d12`` su Windows. I progetti creati prima di Godot 4.6 mantengono ``vulkan`` per motivi di compatibilità, ma si consiglia di passare manualmente a ``d3d12``.
 
 .. rst-class:: classref-item-separator
 
@@ -13541,9 +13541,9 @@ Sostituzione su macOS per :ref:`rendering/scaling_3d/mode<class_ProjectSettings_
 
 :ref:`float<class_float>` **rendering/scaling_3d/scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/scale>`
 
-Scales the 3D render buffer based on the viewport size uses an image filter specified in :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` to scale the output image to the full viewport size. Values lower than ``1.0`` can be used to speed up 3D rendering at the cost of quality (undersampling). Values greater than ``1.0`` are only valid for bilinear mode and can be used to improve 3D rendering quality at a high performance cost (supersampling). See also :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` for multi-sample antialiasing, which is significantly cheaper but only smooths the edges of polygons.
+Ridimensiona il buffer di rendering 3D in base alle dimensioni della viewport, usando un filtro d'immagine specificato in :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` per ridimensionare l'immagine finale alle dimensioni intere della viewport. È possibile usare valori inferiori a ``1.0`` per velocizzare il rendering 3D a scapito della qualità (sottocampionamento). Valori superiori a ``1.0`` sono validi solo per la modalità bilineare ed è possibile usarli per migliorare la qualità del rendering 3D a un impatto elevato sulle prestazioni (sovracampionamento). Vedi anche :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` per l'antialiasing multi-campione, che è significativamente più performante ma smussa solo i bordi dei poligoni.
 
-\ **Note:** When using the **Nearest** scaling mode, to avoid uneven pixel scaling, it's highly recommended to use a value equal to an integer divisor with a dividend of ``1``. For example, it's best to use a scale of ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5), and so on.
+\ **Nota:** Quando si utilizza la modalità di ridimensionamento **Nearest**, per evitare un ridimensionamento non uniforme dei pixel, si consiglia vivamente di utilizzare un valore pari a un divisore intero con dividendo di ``1``. Ad esempio, è meglio usare una scala di ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5) e così via.
 
 .. rst-class:: classref-item-separator
 
@@ -13647,7 +13647,7 @@ Sostituzione di fascia bassa per :ref:`rendering/shading/overrides/force_lambert
 
 :ref:`bool<class_bool>` **rendering/shading/overrides/force_vertex_shading** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/shading/overrides/force_vertex_shading>`
 
-Se ``true``, forza l'ombreggiatura con vertici per tutto il rendering. Questo può aumentare notevolmente le prestazioni, ma riduce immensamente la qualità. Può essere utilizzato per ottimizzare le prestazioni su dispositivi mobili di fascia bassa.
+Se ``true``, forza l'ombreggiatura per vertice per tutto il rendering. Questo può aumentare notevolmente le prestazioni, ma riduce immensamente la qualità. Può essere utilizzato per ottimizzare le prestazioni su dispositivi mobili di fascia bassa.
 
 .. rst-class:: classref-item-separator
 
@@ -13755,13 +13755,13 @@ Il livello del filtro anisotropico influisce anche su decalcomanie e proiettori 
 
 :ref:`float<class_float>` **rendering/textures/default_filters/texture_mipmap_bias** = ``0.0`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`
 
-Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close).
+Influisce sulla nitidezza finale della texture leggendo da una mipmap inferiore o superiore (chiamata anche "texture LOD bias"). I valori negativi rendono le texture mipmap più nitide ma più granulose se viste da lontano, mentre i valori positivi rendono le texture mipmap più sfocate (anche da vicino).
 
-Enabling temporal antialiasing (:ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) will automatically apply a ``-0.5`` offset to this value, while enabling FXAA (:ref:`rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`) will automatically apply a ``-0.25`` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of ``-0.75`` is applied to this value.
+Attivando l'antialiasing temporale (:ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) sarà applicata automaticamente una deviazione di ``-0.5`` a questo valore, mentre attivando il FXAA (:ref:`rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`) sarà applicata automaticamente una deviazione di ``-0.25`` a questo valore. Se TAA e FXAA sono abilitati allo stesso tempo, a questo valore è applicata una deviazione di ``-0.75``.
 
-\ **Note:** If :ref:`rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` is lower than ``1.0`` (exclusive), :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``log2(scaling_3d_scale) + mipmap_bias``.
+\ **Nota:** Se :ref:`rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` è inferiore a ``1.0`` (esclusivo), :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` è utilizzato per regolare il bias mipmap automatico che è calcolato internamente in base al fattore di scala. La formula per questo è ``log2(scaling_3d_scale) + mipmap_bias``.
 
-\ **Note:** This property is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this property is always treated as if it was set to ``0.0``.
+\ **Nota:** Questa proprietà è supportata solo nei renderer Forward+ e Mobile, non in Compatibilità. In Compatibilità, questa proprietà è sempre trattata come se fosse impostata su ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -13895,11 +13895,11 @@ Il fattore di compressione predefinito per WebP senza perdite. La velocità di d
 
 :ref:`bool<class_bool>` **rendering/viewport/hdr_2d** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/viewport/hdr_2d>`
 
-If ``true``, enables :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` on the root Viewport. 2D rendering will use a high dynamic range (HDR) ``RGBA16`` format framebuffer. Additionally, 2D rendering will be performed on linear values and will be converted using the appropriate transfer function immediately before blitting to the screen.
+Se ``true``, abilita :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` sulla viewport radice. il rendering 2D utilizzerà un framebuffer in formato HDR ("alta gamma dinamica") ``RGBA16``. Inoltre, il rendering 2D sarà effettuato su valori lineari e sarà convertito attraverso l'apposita funzione di trasferimento subito prima di essere visualizzato sullo schermo.
 
-Practically speaking, this means that the end result of the Viewport will not be clamped to the ``0-1`` range and can be used in 3D rendering without color encoding adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients.
+In pratica, ciò significa che il risultato finale della Viewport non sarà limitato nell'intervallo ``0-1`` e si potrà utilizzare nel rendering 3D senza aggiustare la codifica dei colori. Ciò consente al rendering 2D di sfruttare gli effetti che richiedono un'alta gamma dinamica (ad esempio, il bagliore 2D) e migliora sostanzialmente l'aspetto degli effetti che richiedono gradienti molto dettagliati.
 
-\ **Note:** This property is only read when the project starts. To toggle HDR 2D at runtime, set :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` on the root :ref:`Viewport<class_Viewport>`.
+\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per attivare il HDR 2D in fase di esecuzione, imposta :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` sulla :ref:`Viewport<class_Viewport>` radice.
 
 .. rst-class:: classref-item-separator
 
@@ -14164,7 +14164,7 @@ Se ``true`` abilitiamo l'estensione del modello di rendering, se disponibile.
 
 :ref:`int<class_int>` **xr/openxr/extensions/spatial_entity/april_tag_dict** = ``"3"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/april_tag_dict>`
 
-The April Tag marker types the built-in marker tracking is set to recognize (if April Tag marker tracking is available and enabled).
+I tipi di marcatori April Tag che il sistema di tracciamento dei marcatori integrato è impostato per riconoscere (se il tracciamento dei marcatori April Tag è disponibile e abilitato).
 
 .. rst-class:: classref-item-separator
 
@@ -14176,7 +14176,7 @@ The April Tag marker types the built-in marker tracking is set to recognize (if 
 
 :ref:`int<class_int>` **xr/openxr/extensions/spatial_entity/aruco_dict** = ``"15"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/aruco_dict>`
 
-The ArUco marker types the built-in marker tracking is set to recognize (if ArUco marker tracking is available and enabled).
+I tipi di marcatori ArUco che il sistema di tracciamento dei marcatori integrato è impostato per riconoscere (se il tracciamento dei marcatori ArUco è disponibile e abilitato).
 
 .. rst-class:: classref-item-separator
 
@@ -14188,9 +14188,9 @@ The ArUco marker types the built-in marker tracking is set to recognize (if ArUc
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>`
 
-If ``true``, we enable the built-in logic for handling anchors. Godot will query (persistent) anchors and manage :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` instances for you. If disabled you'll need to create your own spatial and persistence context and perform your own discovery queries.
+Se ``true``, abilitiamo la logica integrata per gestire gli ancoraggi. Godot interrogherà gli ancoraggi (persistenti) e gestirà automaticamente le istanze di :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>`. Se disabilitato, sarà necessario creare un contesto spaziale personalizzato ed effettuare le proprie richieste di individuazione.
 
-\ **Note:** This functionality requires that spatial anchors are supported and enabled.
+\ **Nota:** Questa funzionalità richiede che il tracciamento dei marcatori sia supportato e abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -14202,9 +14202,9 @@ If ``true``, we enable the built-in logic for handling anchors. Godot will query
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_marker_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_marker_tracking>`
 
-If ``true``, we enable the built-in logic for handling marker tracking. Godot will query markers and manage :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>` instances for you. If disabled you'll need to create your own spatial context and perform your own discovery queries.
+Se ``true``, abilitiamo la logica integrata per gestire il tracciamento dei marcatori. Godot interrogherà i marcatori e gestirà automaticamente le istanze di :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>`. Se disabilitato, sarà necessario creare un contesto spaziale personalizzato ed effettuare le proprie richieste di individuazione.
 
-\ **Note:** This functionality requires that marker tracking is supported and enabled.
+\ **Nota:** Questa funzionalità richiede che il tracciamento dei marcatori sia supportato e abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -14216,9 +14216,9 @@ If ``true``, we enable the built-in logic for handling marker tracking. Godot wi
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_plane_detection** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_plane_detection>`
 
-If ``true``, we enable the built-in logic for handling plane detection. Godot will query detected planes (walls, floors, ceilings, etc.) and manage :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>` instances for you. If disabled you'll need to create your own spatial context and perform your own discovery queries.
+Se ``true``, abilitiamo la logica integrata per gestire il rilevamento dei piani. Godot interrogherà i piani rilevati (pareti, pavimenti, soffitti, ecc.) e gestirà automaticamente le istanze di :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>`. Se disabilitato, sarà necessario creare un contesto spaziale personalizzato ed effettuare le proprie richieste di individuazione.
 
-\ **Note:** This functionality requires that plane tracking is supported and enabled.
+\ **Nota:** Questa funzionalità richiede che il tracciamento dei piani sia supportato e abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -14230,9 +14230,9 @@ If ``true``, we enable the built-in logic for handling plane detection. Godot wi
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_marker_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_marker_tracking>`
 
-If ``true``, support for the marker tracking extension is requested. If supported, you will be able to query information about markers detected by the XR runtime, e.g. QR codes, aruca markers and april tags.
+Se impostato su ``true``, è richiesto il supporto per l'estensione di tracciamento dei marcatori. Se supportata, sarà possibile interrogare le informazioni sui marcatori rilevati dal runtime XR, ad esempio codici QR, marcatori Aruca e tag April.
 
-\ **Note:** This requires that the OpenXR spatial entities and marker tracking extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **Nota:** Ciò richiede che le estensioni di tracciamento dei marcatori e delle entità spaziali OpenXR siano supportate dal runtime XR. Se non supportate, questa impostazione sarà ignorata. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` deve essere abilitato affinché sia possibile utilizzare questa impostazione.
 
 .. rst-class:: classref-item-separator
 
@@ -14258,9 +14258,9 @@ If ``true``, support for the persistent anchors extension is requested. If suppo
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_plane_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_plane_tracking>`
 
-If ``true``, support for the plane tracking extension is requested. If supported, you will be able to query information about planes detected by the XR runtime, e.g. walls, floors, etc.
+Se impostato su ``true``, è richiesto il supporto per l'estensione di tracciamento dei piani. Se supportata, sarà possibile interrogare le informazioni sui piani rilevati dal runtime XR, ad esempio muri, pavimenti, ecc.
 
-\ **Note:** This requires that the OpenXR spatial entities and plane tracking extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **Nota:** Ciò richiede che le estensioni di tracciamento delle entità spaziali e dei piani OpenXR siano supportate dal runtime XR. Se non supportate, questa impostazione sarà ignorata. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` deve essere abilitato affinché sia possibile utilizzare questa impostazione.
 
 .. rst-class:: classref-item-separator
 

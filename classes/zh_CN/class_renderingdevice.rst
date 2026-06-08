@@ -3279,7 +3279,7 @@ flags **BufferCreationBits**: :ref:`🔗<enum_RenderingDevice_BufferCreationBits
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-Allows usage of this buffer as input data for an acceleration structure build operation. You must first check that the GPU supports it:
+允许将此缓冲区用作加速结构构建操作的输入数据。你必须先检查 GPU 是否支持该功能：
 
 
 .. tabs::
@@ -3311,7 +3311,7 @@ flags **AccelerationStructureFlagBits**: :ref:`🔗<enum_RenderingDevice_Acceler
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-Allows the acceleration structure to be updated after it has been built.
+允许在构建后更新加速结构。
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_ALLOW_COMPACTION_BIT:
 
@@ -3321,7 +3321,7 @@ Allows the acceleration structure to be updated after it has been built.
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-Allows the acceleration structure to be compacted to reduce memory usage after it has been built.
+允许在构建后对加速结构进行压缩，以减少内存占用。
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_PREFER_FAST_TRACE_BIT:
 
@@ -3331,7 +3331,7 @@ Allows the acceleration structure to be compacted to reduce memory usage after i
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-Prioritizes ray traversal performance over build performance when building the acceleration structure.
+在构建加速结构时，优先考虑光线遍历性能而非构建性能。
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_PREFER_FAST_BUILD_BIT:
 
@@ -3341,7 +3341,7 @@ Prioritizes ray traversal performance over build performance when building the a
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-Prioritizes build performance over ray traversal performance when building the acceleration structure.
+在构建加速结构时，优先考虑构建性能而非光线遍历性能。
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_LOW_MEMORY_BIT:
 
@@ -3351,7 +3351,7 @@ Prioritizes build performance over ray traversal performance when building the a
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-Reduces the memory usage of the acceleration structure, potentially at the cost of reduced ray traversal performance.
+在减少加速结构内存占用的同时，可能会牺牲一部分光线遍历性能。
 
 .. rst-class:: classref-item-separator
 
@@ -3371,7 +3371,7 @@ flags **AccelerationStructureGeometryFlagBits**: :ref:`🔗<enum_RenderingDevice
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-An opaque geometry does not invoke the any hit shaders.
+不透明的几何体不会调用 any-hit 着色器。
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_GEOMETRY_NO_DUPLICATE_ANY_HIT_INVOCATION_BIT:
 
@@ -3381,7 +3381,7 @@ An opaque geometry does not invoke the any hit shaders.
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-This geometry only calls the any hit shader a single time for each primitive.
+该几何体对每个图元仅调用一次 any-hit 着色器。
 
 .. rst-class:: classref-item-separator
 
@@ -3401,7 +3401,7 @@ flags **AccelerationStructureInstanceFlagBits**: :ref:`🔗<enum_RenderingDevice
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-Disables triangle face culling for this instance during ray traversal.
+在光线遍历过程中，禁用该实例的三角形面剔除（triangle face culling）。
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_INSTANCE_TRIANGLE_FLIP_FACING_BIT:
 
@@ -3411,7 +3411,7 @@ Disables triangle face culling for this instance during ray traversal.
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-Flips the triangle facing direction for this instance during ray traversal.
+在光线遍历期间，翻转该实例的三角形朝向。
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_INSTANCE_FORCE_OPAQUE_BIT:
 
@@ -3421,7 +3421,7 @@ Flips the triangle facing direction for this instance during ray traversal.
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-Forces all geometries in this instance to be treated as opaque, preventing any hit shaders from being invoked.
+该实例中的所有几何体都将强制被视为不透明，从而阻止调用 any-hit 着色器。
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_INSTANCE_FORCE_NO_OPAQUE_BIT:
 
@@ -3431,7 +3431,7 @@ Forces all geometries in this instance to be treated as opaque, preventing any h
 
 **实验性：** 未来版本中可能会修改或移除该常量。
 
-Forces all geometries in this instance to be treated as non-opaque, allowing any hit shaders to be invoked.
+该实例中的所有几何体都将强制被视为非不透明，从而允许调用 any-hit 着色器。
 
 .. rst-class:: classref-item-separator
 
@@ -3553,7 +3553,7 @@ Uniform 缓冲区 uniform。
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_ACCELERATION_STRUCTURE** = ``12``
 
-Acceleration structure uniform.
+加速结构 Uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_MAX:
 
@@ -4579,7 +4579,7 @@ enum **ShaderStage**: :ref:`🔗<enum_RenderingDevice_ShaderStage>`
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_RAYGEN** = ``5``
 
-Ray generation shader stage. This can be used to generate primary rays.
+光线生成着色器阶段。这可以用来生成主光线（primary rays）。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_ANY_HIT:
 
@@ -4587,7 +4587,7 @@ Ray generation shader stage. This can be used to generate primary rays.
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_ANY_HIT** = ``6``
 
-Any hit shader stage. Invoked when ray intersections are not opaque. This can be used to specify what happens when a ray hits any of the geometry in the scene.
+any-hit 着色器阶段。当光线相交（物体）并非不透明时调用。可用于指定光线命中场景中任意几何体时发生的情况。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_CLOSEST_HIT:
 
@@ -4595,7 +4595,7 @@ Any hit shader stage. Invoked when ray intersections are not opaque. This can be
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_CLOSEST_HIT** = ``7``
 
-Closest hit shader stage. This can be used to specify what happens when a ray hits the closest geometry in the scene.
+最近命中着色器阶段。这可以用来指定当光线击中场景中距离最近的几何体时，具体会发生什么。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_MISS:
 
@@ -4603,7 +4603,7 @@ Closest hit shader stage. This can be used to specify what happens when a ray hi
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_MISS** = ``8``
 
-Miss shader stage. This can be used to specify what happens if a ray does not hit anything in the scene.
+未命中着色器阶段。这可以用来指定当光线没有击中场景中的任何物体时，具体会发生什么。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_INTERSECTION:
 
@@ -4611,7 +4611,7 @@ Miss shader stage. This can be used to specify what happens if a ray does not hi
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_INTERSECTION** = ``9``
 
-Intersection shader stage. The intersection shader for triangles is built-in. This can be used to compute ray intersections with primitives that are not triangles.
+相交着色器阶段。三角形的相交着色器是内置的。这可用于计算与非三角形图元的光线相交。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_MAX:
 
@@ -4667,7 +4667,7 @@ Intersection shader stage. The intersection shader for triangles is built-in. Th
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_RAYGEN_BIT** = ``32``
 
-Ray generation shader stage bit (see also :ref:`SHADER_STAGE_RAYGEN<class_RenderingDevice_constant_SHADER_STAGE_RAYGEN>`).
+光线生成着色器阶段位（也可以参考 :ref:`SHADER_STAGE_RAYGEN<class_RenderingDevice_constant_SHADER_STAGE_RAYGEN>`\ ）。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_ANY_HIT_BIT:
 
@@ -4675,7 +4675,7 @@ Ray generation shader stage bit (see also :ref:`SHADER_STAGE_RAYGEN<class_Render
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_ANY_HIT_BIT** = ``64``
 
-Any hit shader stage bit (see also :ref:`SHADER_STAGE_ANY_HIT<class_RenderingDevice_constant_SHADER_STAGE_ANY_HIT>`).
+任意命中着色器阶段位（也可以参考 :ref:`SHADER_STAGE_ANY_HIT<class_RenderingDevice_constant_SHADER_STAGE_ANY_HIT>`\ ）。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_CLOSEST_HIT_BIT:
 
@@ -4683,7 +4683,7 @@ Any hit shader stage bit (see also :ref:`SHADER_STAGE_ANY_HIT<class_RenderingDev
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_CLOSEST_HIT_BIT** = ``128``
 
-Closest hit shader stage bit (see also :ref:`SHADER_STAGE_CLOSEST_HIT<class_RenderingDevice_constant_SHADER_STAGE_CLOSEST_HIT>`).
+最近命中着色器阶段位（也可以参考 :ref:`SHADER_STAGE_CLOSEST_HIT<class_RenderingDevice_constant_SHADER_STAGE_CLOSEST_HIT>`\ ）。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_MISS_BIT:
 
@@ -4691,7 +4691,7 @@ Closest hit shader stage bit (see also :ref:`SHADER_STAGE_CLOSEST_HIT<class_Rend
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_MISS_BIT** = ``256``
 
-Miss shader stage bit (see also :ref:`SHADER_STAGE_MISS<class_RenderingDevice_constant_SHADER_STAGE_MISS>`).
+未命中着色器阶段位（也可以参考 :ref:`SHADER_STAGE_MISS<class_RenderingDevice_constant_SHADER_STAGE_MISS>`\ ）。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_INTERSECTION_BIT:
 
@@ -4699,7 +4699,7 @@ Miss shader stage bit (see also :ref:`SHADER_STAGE_MISS<class_RenderingDevice_co
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_INTERSECTION_BIT** = ``512``
 
-Intersection shader stage bit (see also :ref:`SHADER_STAGE_INTERSECTION<class_RenderingDevice_constant_SHADER_STAGE_INTERSECTION>`).
+相交着色器阶段位（也可以参考 :ref:`SHADER_STAGE_INTERSECTION<class_RenderingDevice_constant_SHADER_STAGE_INTERSECTION>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -4809,11 +4809,11 @@ enum **Features**: :ref:`🔗<enum_RenderingDevice_Features>`
 
 :ref:`Features<enum_RenderingDevice_Features>` **SUPPORTS_RAY_QUERY** = ``11``
 
-Support for ray query extension.
+支持光线查询扩展。
 
 
 
-\ **Note:** This is currently only supported when using Vulkan. This is not supported on macOS and iOS (even on hardware supporting raytracing) due to MoltenVK limitations.
+\ **注意：** 这目前仅在使用 Vulkan 时受支持。由于 MoltenVK 的限制，macOS 和 iOS 平台不支持该功能（即使硬件支持光线追踪）。
 
 .. _class_RenderingDevice_constant_SUPPORTS_RAYTRACING_PIPELINE:
 
@@ -4821,11 +4821,11 @@ Support for ray query extension.
 
 :ref:`Features<enum_RenderingDevice_Features>` **SUPPORTS_RAYTRACING_PIPELINE** = ``12``
 
-Support for raytracing pipeline extension.
+支持光线追踪管线扩展。
 
 
 
-\ **Note:** This is currently only supported when using Vulkan. This is not supported on macOS and iOS (even on hardware supporting raytracing) due to MoltenVK limitations.
+\ **注意：** 这目前仅在使用 Vulkan 时受支持。由于 MoltenVK 的限制，macOS 和 iOS 平台不支持该功能（即使硬件支持光线追踪）。
 
 .. _class_RenderingDevice_constant_SUPPORTS_HDR_OUTPUT:
 
@@ -4833,7 +4833,7 @@ Support for raytracing pipeline extension.
 
 :ref:`Features<enum_RenderingDevice_Features>` **SUPPORTS_HDR_OUTPUT** = ``13``
 
-Support for high dynamic range (HDR) output.
+支持高动态范围（HDR）输出。
 
 .. rst-class:: classref-item-separator
 
@@ -5591,7 +5591,7 @@ flags **DrawFlags**: :ref:`🔗<enum_RenderingDevice_DrawFlags>`
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Builds the ``blas``.
+构建 ``blas``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5605,9 +5605,9 @@ Builds the ``blas``.
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Creates a new Bottom-Level Acceleration Structure (BLAS). It can be accessed with the RID that is returned.
+创建一个新的底层加速结构（BLAS）。你可以通过返回的 RID 来访问它。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+当你使用完这个 RID 后，记得调用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法来释放它。
 
 .. rst-class:: classref-item-separator
 
@@ -6685,13 +6685,13 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Creates a new hit shader binding table (SBT). It can be accessed with the RID that is returned.
+创建一个新的命中着色器绑定表（SBT）。你可以通过返回的 RID 来访问它。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+当你用完这个 RID 后，记得调用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法来释放它。
 
-This will be freed automatically when the ``raytracing_pipeline`` is freed.
+不过，当 ``raytracing_pipeline``\ （光线追踪管线）被释放时，它也会自动被释放。
 
-The hit SBT resizes itself as needed. ``initial_hit_group_capacity`` is used to allocate the initial backing memory.
+命中 SBT 会根据需要自动调整大小，而 ``initial_hit_group_capacity`` 则是用来分配初始后备内存的。
 
 .. rst-class:: classref-item-separator
 
@@ -6705,11 +6705,11 @@ The hit SBT resizes itself as needed. ``initial_hit_group_capacity`` is used to 
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Allocates a contiguous range of SBT entries from ``hit_sbt``.
+从 ``hit_sbt`` 中分配一段连续的 SBT（着色器绑定表）条目。
 
-The returned value should be assigned to :ref:`RDAccelerationStructureInstance.hit_sbt_range<class_RDAccelerationStructureInstance_property_hit_sbt_range>`.
+返回的值应赋给 :ref:`RDAccelerationStructureInstance.hit_sbt_range<class_RDAccelerationStructureInstance_property_hit_sbt_range>`\ 。
 
-During ray traversal, hit group index is computed as:
+在光线遍历期间，命中组索引按以下公式计算：
 
 (geometry index in :ref:`RDAccelerationStructureInstance.blas<class_RDAccelerationStructureInstance_property_blas>`)
 
@@ -6719,13 +6719,13 @@ During ray traversal, hit group index is computed as:
 
 + (range offset)
 
-\ ``hit_group_count`` must be large enough to cover all SBT entries that may be indexed by this equation. This typically corresponds to:
+\ ``hit_group_count`` 的大小必须足以覆盖该公式可能索引的所有 SBT 条目。其大小通常对应于：
 
 (geometry count in :ref:`RDAccelerationStructureInstance.blas<class_RDAccelerationStructureInstance_property_blas>`)
 
 × (SBT stride used in ``traceRayEXT``)
 
-The allocated range is uninitialized and must be filled using :ref:`hit_sbt_range_update()<class_RenderingDevice_method_hit_sbt_range_update>`.
+分配的范围处于未初始化状态，必须使用 :ref:`hit_sbt_range_update()<class_RenderingDevice_method_hit_sbt_range_update>` 进行填充。
 
 .. rst-class:: classref-item-separator
 
@@ -6739,9 +6739,9 @@ The allocated range is uninitialized and must be filled using :ref:`hit_sbt_rang
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Frees a hit SBT range previously allocated with :ref:`hit_sbt_range_alloc()<class_RenderingDevice_method_hit_sbt_range_alloc>`.
+释放之前通过 :ref:`hit_sbt_range_alloc()<class_RenderingDevice_method_hit_sbt_range_alloc>` 分配的命中 SBT 范围。
 
-The range must not be in use by any acceleration structure after being freed.
+释放后，该范围不得再被任何加速结构所使用。
 
 .. rst-class:: classref-item-separator
 
@@ -6755,11 +6755,11 @@ The range must not be in use by any acceleration structure after being freed.
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Updates the contents of a hit SBT range.
+更新命中 SBT 范围的内容。
 
-\ ``hit_group_indices`` specifies indices into the hit group array provided in :ref:`raytracing_pipeline_create()<class_RenderingDevice_method_raytracing_pipeline_create>`.
+\ ``hit_group_indices`` 指定 :ref:`raytracing_pipeline_create()<class_RenderingDevice_method_raytracing_pipeline_create>` 中提供的命中组数组的索引。
 
-The ``offset`` parameter specifies where within the allocated range the writing begins. This allows partial updates of a range. However, the complete range must be fully initialized before it is used in a raytracing dispatch.
+\ ``offset`` 参数指定写入操作在已分配范围内的起始位置，这允许对范围进行部分更新。但是，在光线追踪调度中使用该范围之前，必须先将其完全初始化。
 
 .. rst-class:: classref-item-separator
 
@@ -6773,11 +6773,11 @@ The ``offset`` parameter specifies where within the allocated range the writing 
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Sets a new ``raytracing_pipeline`` for ``hit_sbt``.
+为 ``hit_sbt`` 设置一个新的 ``raytracing_pipeline``\ 。
 
-The new pipeline must be a superset of the previous one. Existing hit groups must keep the same order and new hit groups should be appended to the end. This preserves existing SBT entries.
+新的管线必须是前一个管线的超集。现有的命中组必须保持原有的顺序，新的命中组应追加到末尾。这样做可以保留现有的 SBT 条目。
 
-The previous pipeline must remain valid during the call.
+调用期间，原有的管线必须保持有效。
 
 .. rst-class:: classref-item-separator
 
@@ -6835,11 +6835,11 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Starts a list of raytracing commands. The returned value should be passed to other ``raytracing_list_*`` functions.
+开始一组光线追踪命令。返回的值应当传递给其他的 ``raytracing_list_*`` 函数。
 
-Multiple raytracing lists cannot be created at the same time; you must finish the previous raytracing list first using :ref:`raytracing_list_end()<class_RenderingDevice_method_raytracing_list_end>`.
+无法同时创建多个光线追踪列表；你必须先使用 :ref:`raytracing_list_end()<class_RenderingDevice_method_raytracing_list_end>` 结束上一个光线追踪列表。
 
-A simple raytracing operation might look like this (code is not a complete example):
+一个简单的光线追踪操作可能如下所示（代码并非完整示例）：
 
 
 .. tabs::
@@ -6903,7 +6903,7 @@ A simple raytracing operation might look like this (code is not a complete examp
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Binds ``raytracing_pipeline`` to the specified ``raytracing_list``.
+将 ``raytracing_pipeline``\ （光线追踪管线）绑定到指定的 ``raytracing_list``\ （光线追踪列表）。
 
 .. rst-class:: classref-item-separator
 
@@ -6917,7 +6917,7 @@ Binds ``raytracing_pipeline`` to the specified ``raytracing_list``.
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Binds the ``uniform_set`` to this ``raytracing_list``.
+将 ``uniform_set``\ （统一变量集合）绑定到这个 ``raytracing_list``\ （光线追踪列表）上。
 
 .. rst-class:: classref-item-separator
 
@@ -6931,7 +6931,7 @@ Binds the ``uniform_set`` to this ``raytracing_list``.
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Finishes a list of raytracing commands created with the ``raytracing_*`` methods.
+结束（或完成）由 ``raytracing_*`` 系列方法创建的光线追踪命令列表。
 
 .. rst-class:: classref-item-separator
 
@@ -6945,7 +6945,7 @@ Finishes a list of raytracing commands created with the ``raytracing_*`` methods
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Sets the push constant data to ``buffer`` for the specified ``raytracing_list``. The shader determines how this binary data is used. The buffer's size in bytes must also be specified in ``size_bytes`` (this can be obtained by calling the :ref:`PackedByteArray.size()<class_PackedByteArray_method_size>` method on the passed ``buffer``).
+为指定的 ``raytracing_list``\ （光线追踪列表）设置推入常量（push constant）数据到 ``buffer``\ （缓冲区）。着色器会自行决定如何使用这些二进制数据。\ ``size_bytes`` 参数中必须指定该缓冲区的大小（以字节为单位）（你可以通过调用传入的 ``buffer`` 的 :ref:`PackedByteArray.size()<class_PackedByteArray_method_size>` 方法来获取这个数值）。
 
 .. rst-class:: classref-item-separator
 
@@ -6959,11 +6959,11 @@ Sets the push constant data to ``buffer`` for the specified ``raytracing_list``.
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Initializes a raytracing dispatch for ``raytracing_list``, launching ``width`` × ``height`` × ``depth`` rays.
+为 ``raytracing_list`` 初始化一个光线追踪调度，发射 ``width`` × ``height`` × ``depth`` 条光线。
 
-\ ``raygen_shader_index`` selects the ray generation shader from the pipeline bound with :ref:`raytracing_list_bind_raytracing_pipeline()<class_RenderingDevice_method_raytracing_list_bind_raytracing_pipeline>`.
+\ ``raygen_shader_index`` 从使用 :ref:`raytracing_list_bind_raytracing_pipeline()<class_RenderingDevice_method_raytracing_list_bind_raytracing_pipeline>` 绑定的管线中选择光线生成着色器。
 
-\ ``hit_sbt`` must use the same pipeline bound to ``raytracing_list``.
+\ ``hit_sbt`` 必须使用绑定到 ``raytracing_list`` 的同一管线。
 
 .. rst-class:: classref-item-separator
 
@@ -6977,19 +6977,19 @@ Initializes a raytracing dispatch for ``raytracing_list``, launching ``width`` �
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Creates a new raytracing pipeline. It can be accessed with the RID that is returned.
+创建一个新的光线追踪管线。可以使用返回的 RID 对其进行访问。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+使用完你的 RID 后，需要使用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法来释放该 RID。
 
-Each shader must provide the required stage. All stages must use compatible pipeline layouts. The pipeline selects the required stage from each shader.
+每个着色器必须提供所需的阶段。所有阶段必须使用兼容的管线布局。管线将从每个着色器中选择所需的阶段。
 
-Input order defines stable indices used by the API:
+输入顺序定义了 API 所使用的稳定索引：
 
-- ``raygen_shaders`` is indexed in :ref:`raytracing_list_trace_rays()<class_RenderingDevice_method_raytracing_list_trace_rays>`.
+- ``raygen_shaders`` 在 :ref:`raytracing_list_trace_rays()<class_RenderingDevice_method_raytracing_list_trace_rays>` 中进行索引。
 
-- ``miss_shaders`` is indexed in ``traceRayEXT``.
+- ``miss_shaders`` 在 ``traceRayEXT`` 中进行索引。
 
-- ``hit_groups`` is indexed in :ref:`hit_sbt_range_update()<class_RenderingDevice_method_hit_sbt_range_update>`.
+- ``hit_groups`` 在 :ref:`hit_sbt_range_update()<class_RenderingDevice_method_hit_sbt_range_update>` 中进行索引。
 
 .. rst-class:: classref-item-separator
 
@@ -7003,7 +7003,7 @@ Input order defines stable indices used by the API:
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns ``true`` if the raytracing pipeline specified by the ``raytracing_pipeline`` RID is valid, ``false`` otherwise.
+如果由 ``raytracing_pipeline`` RID 指定的光线追踪管线是有效的，则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7279,17 +7279,17 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 :ref:`Error<enum_@GlobalScope_Error>` **texture_copy**\ (\ from_texture\: :ref:`RID<class_RID>`, to_texture\: :ref:`RID<class_RID>`, from_pos\: :ref:`Vector3<class_Vector3>`, to_pos\: :ref:`Vector3<class_Vector3>`, size\: :ref:`Vector3<class_Vector3>`, src_mipmap\: :ref:`int<class_int>`, dst_mipmap\: :ref:`int<class_int>`, src_layer\: :ref:`int<class_int>`, dst_layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_copy>`
 
-Copies the ``from_texture`` to ``to_texture`` with the specified ``from_pos``, ``to_pos`` and ``size`` coordinates. For 2-dimensional textures, ``from_pos`` and ``to_pos`` must have a Z axis of ``0``, and ``size`` must have a Z axis of ``1``. Source and destination mipmaps/layers must also be specified, with these parameters being ``0`` for textures without mipmaps or single-layer textures. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the texture copy was successful or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` otherwise.
+将 ``from_texture``\ （源纹理）复制到 ``to_texture``\ （目标纹理），并指定 ``from_pos``\ （源位置）、\ ``to_pos``\ （目标位置）和 ``size``\ （尺寸）坐标。对于 2D 纹理，\ ``from_pos`` 和 ``to_pos`` 的 Z 轴必须为 ``0``\ ，而 ``size`` 的 Z 轴必须为 ``1``\ 。还必须指定源和目标纹理的 Mipmap（多级渐远纹理）层级或图层，对于没有 Mipmap 或单图层的纹理，这些参数应设为 ``0``\ 。如果纹理复制成功，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，否则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ 。
 
-\ **Note:** ``from_texture`` texture can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) to copy this texture.
+\ **注意：** 在创建使用 ``from_texture`` 作为帧缓冲区一部分的绘制列表（draw list）期间，无法复制该纹理。请确保绘制列表已完成（并且使用该纹理的颜色/深度纹理未设置为 :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`\ ），然后再进行复制。
 
-\ **Note:** ``from_texture`` texture requires the :ref:`TEXTURE_USAGE_CAN_COPY_FROM_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_FROM_BIT>` to be retrieved.
+\ **注意：** ``from_texture`` 纹理需要包含 :ref:`TEXTURE_USAGE_CAN_COPY_FROM_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_FROM_BIT>` 使用标志才能被读取。
 
-\ **Note:** ``to_texture`` can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) to copy this texture.
+\ **注意：** 在创建使用 ``to_texture`` 作为帧缓冲区一部分的绘制列表期间，无法向其复制纹理。请确保绘制列表已完成（并且使用该纹理的颜色/深度纹理未设置为 :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`\ ），然后再进行复制。
 
-\ **Note:** ``to_texture`` requires the :ref:`TEXTURE_USAGE_CAN_COPY_TO_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_TO_BIT>` to be retrieved.
+\ **注意：** ``to_texture`` 纹理需要包含 :ref:`TEXTURE_USAGE_CAN_COPY_TO_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_TO_BIT>` 使用标志才能被写入。
 
-\ **Note:** ``from_texture`` and ``to_texture`` must be of the same type (color or depth).
+\ **注意：** ``from_texture`` 和 ``to_texture`` 必须是相同类型的纹理（同为颜色纹理或同为深度纹理）。
 
 .. rst-class:: classref-item-separator
 
@@ -7544,13 +7544,13 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Builds the ``tlas``. The contents of previous builds are discarded.
+构建 ``tlas``\ 。之前的构建内容将被丢弃。
 
-Any BLAS provided through the :ref:`RDAccelerationStructureInstance.blas<class_RDAccelerationStructureInstance_property_blas>` member must already have been built using the :ref:`blas_build()<class_RenderingDevice_method_blas_build>` method.
+通过 :ref:`RDAccelerationStructureInstance.blas<class_RDAccelerationStructureInstance_property_blas>` 成员提供的任何 BLAS 都必须已经使用 :ref:`blas_build()<class_RenderingDevice_method_blas_build>` 方法构建完毕。
 
-The number of instances can be equal to or smaller than the maximum instance count provided in the :ref:`tlas_create()<class_RenderingDevice_method_tlas_create>` method.
+实例数量可以等于或小于 :ref:`tlas_create()<class_RenderingDevice_method_tlas_create>` 方法中提供的最大实例数量。
 
-\ **Note:** Freeing or rebuilding any of the provided BLASes after this method invalidates the TLAS and requires it to be rebuilt.
+\ **注意：** 在调用此方法后，如果释放或重建了所提供的任何 BLAS，都将导致 TLAS 失效，并需要重新构建它。
 
 .. rst-class:: classref-item-separator
 
@@ -7564,9 +7564,9 @@ The number of instances can be equal to or smaller than the maximum instance cou
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Creates a new Top-Level Acceleration Structure (TLAS). It can be accessed with the RID that is returned.
+创建一个新的顶层加速结构（TLAS）。你可以通过返回的 RID 来访问它。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+当你用完这个 RID 后，记得调用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法来释放它。
 
 .. rst-class:: classref-item-separator
 

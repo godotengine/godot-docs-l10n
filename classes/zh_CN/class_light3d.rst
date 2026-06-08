@@ -641,11 +641,11 @@ enum **BakeMode**: :ref:`🔗<enum_Light3D_BakeMode>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-The simulated size of the light in Godot units, affecting shading and shadows. For :ref:`OmniLight3D<class_OmniLight3D>`\ s and :ref:`SpotLight3D<class_SpotLight3D>`\ s, increasing this value simulates a spherical area light, expanding the size of specular highlights. If shadows are enabled, a penumbra is rendered, making shadows appear blurrier. For :ref:`AreaLight3D<class_AreaLight3D>`\ s, only the shadows are affected. Penumbras are simulated with percentage-closer soft shadows, or PCSS, which has a noticeable performance cost for values above ``0.0``.
+灯光在 Godot 单位下的模拟尺寸，会影响着色和阴影效果。对于 :ref:`OmniLight3D<class_OmniLight3D>`\ （全向光）和 :ref:`SpotLight3D<class_SpotLight3D>`\ （聚光灯）来说，增大这个数值会模拟出一个球形区域光的效果，从而扩大高光（specular highlights）的范围。如果开启了阴影，还会渲染出半影区（penumbra），让阴影看起来更模糊、更柔和。对于 :ref:`AreaLight3D<class_AreaLight3D>`\ （区域光）来说，只有阴影会受到影响。这里的半影效果是通过“百分比渐近软阴影”（PCSS）技术来模拟的，当该数值大于 ``0.0`` 时，会带来明显的性能开销。
 
-\ **Note:** :ref:`light_size<class_Light3D_property_light_size>` is not affected by :ref:`Node3D.scale<class_Node3D_property_scale>` (the light's scale or its parent's scale).
+\ **注意：** :ref:`light_size<class_Light3D_property_light_size>` 属性不受 :ref:`Node3D.scale<class_Node3D_property_scale>`\ （灯光自身或其父节点的缩放比例）的影响。
 
-\ **Note:** PCSS for positional lights is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：** 位置光源（positional lights）的 PCSS 效果仅在 Forward+ 和 Mobile 渲染模式下受支持，在 Compatibility（兼容）渲染模式下无法使用。
 
 .. rst-class:: classref-item-separator
 

@@ -14,9 +14,9 @@ La texture per il 2D associata a una texture creata sul :ref:`RenderingDevice<cl
 Descrizione
 ----------------------
 
-This texture class allows you to use a 2D texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+Questa classe di texture consente di utilizzare una texture 2D creata direttamente sul :ref:`RenderingDevice<class_RenderingDevice>` come texture per materiali, mesh, ecc.
 
-\ **Note:** **Texture2DRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Texture2D<class_Texture2D>` instead.
+\ **Nota:** **Texture2DRD** è pensato per un utilizzo di basso livello con :ref:`RenderingDevice<class_RenderingDevice>`. Per la maggior parte dei casi d'uso, utilizza :ref:`Texture2D<class_Texture2D>` al suo posto.
 
 .. rst-class:: classref-introduction-group
 

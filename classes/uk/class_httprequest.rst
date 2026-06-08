@@ -14,15 +14,15 @@ HTTPRequest
 Опис
 --------
 
-A node with the ability to send HTTP requests. Uses :ref:`HTTPClient<class_HTTPClient>` internally.
+Вузол із можливістю надсилання HTTP-запитів. Внутрішньо використовує :ref:`HTTPClient<class_HTTPClient>`.
 
-Can be used to make HTTP requests, i.e. download or upload files or web content via HTTP.
+Може використовуватися для надсилання HTTP-запитів, тобто для завантаження або вивантаження файлів чи веб-вмісту через HTTP.
 
-\ **Warning:** See the notes and warnings on :ref:`HTTPClient<class_HTTPClient>` for limitations, especially regarding TLS security.
+\ **Попередження:** Ознайомтеся з примітками та попередженнями щодо :ref:`HTTPClient<class_HTTPClient>`, щоб дізнатися про обмеження, особливо стосовно безпеки TLS.
 
-\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+\ **Примітка:** Під час експортування на Android переконайтеся, що у налаштуваннях експорту для Android увімкнено дозвіл ``INTERNET`` перед експортуванням проєкту або використанням розгортання одним кліком. Інакше будь-яка мережева комунікація буде заблокована Android.
 
-\ **Example:** Contact a REST API and print one of its returned fields:
+\ **Приклад:** Зверніться до REST API та виведіть одне з повернутих полів:
 
 
 .. tabs::
@@ -100,7 +100,7 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
 
 
-\ **Example:** Load an image using **HTTPRequest** and display it:
+\ **Приклад:** Завантажте зображення за допомогою **HTTPRequest** і відобразіть його:
 
 
 .. tabs::
@@ -176,7 +176,7 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
 
 
-\ **Note:** **HTTPRequest** nodes will automatically handle decompression of response bodies. An ``Accept-Encoding`` header will be automatically added to each of your requests, unless one is already specified. Any response with a ``Content-Encoding: gzip`` header will automatically be decompressed and delivered to you as uncompressed bytes.
+\ **Примітка:** Вузли **HTTPRequest** автоматично розпаковують тіло відповіді. Заголовок ``Accept-Encoding`` автоматично додаватиметься до кожного вашого запиту, якщо він ще не вказаний. Будь-яка відповідь із заголовком ``Content-Encoding: gzip`` автоматично розпаковуватиметься та надсилатиметься вам у вигляді нестиснених байтів.
 
 .. rst-class:: classref-introduction-group
 

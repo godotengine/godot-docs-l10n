@@ -14,9 +14,9 @@ Describe una curva de Bézier en el espacio 3D.
 Descripción
 ----------------------
 
-This class describes a Bézier curve in 3D space. It is mainly used to give a shape to a :ref:`Path3D<class_Path3D>`, but can be manually sampled for other purposes.
+Esta clase describe una curva Bézier en el espacio 3D. Se utiliza principalmente para dar una forma a un :ref:`Path3D<class_Path3D>`, pero puede ser muestreada manualmente para otros propósitos.
 
-It keeps a cache of precalculated points along the curve, to speed up further calculations.
+Mantiene una caché de puntos precalculados a lo largo de la curva, para acelerar los cálculos posteriores.
 
 .. rst-class:: classref-reftable-group
 
@@ -168,9 +168,9 @@ El número de puntos que describen la curva.
 
 :ref:`Vector3<class_Vector3>` **point_{index}/in** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/in>`
 
-The position of the control point leading to the vertex at ``index``.
+La posición del punto de control que conduce al vértice en ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` es un valor en el rango ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -182,9 +182,9 @@ The position of the control point leading to the vertex at ``index``.
 
 :ref:`Vector3<class_Vector3>` **point_{index}/out** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/out>`
 
-The position of the control point leading out of the vertex at ``index``.
+La posición del punto de control que sale del vértice en el ``índice``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** El ``índice`` es un valor en el rango de ``0 .. contar_puntos - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -210,9 +210,9 @@ The position of for the vertex at ``index``.
 
 :ref:`float<class_float>` **point_{index}/tilt** = ``0.0`` :ref:`🔗<class_Curve3D_property_point_{index}/tilt>`
 
-The tilt angle in radians for the point at ``index``.
+El ángulo de inclinación en radianes para el punto en ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` es un valor en el rango ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Devuelve la longitud total de la curva, basada en los puntos cacheados. Si se le
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_baked_points**\ (\ ) |const| :ref:`🔗<class_Curve3D_method_get_baked_points>`
 
-Returns the cache of points as a :ref:`PackedVector3Array<class_PackedVector3Array>`.
+Devuelve la caché de puntos como un :ref:`PackedVector3Array<class_PackedVector3Array>`.
 
 .. rst-class:: classref-item-separator
 
@@ -296,7 +296,7 @@ Returns the cache of points as a :ref:`PackedVector3Array<class_PackedVector3Arr
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_baked_tilts**\ (\ ) |const| :ref:`🔗<class_Curve3D_method_get_baked_tilts>`
 
-Returns the cache of tilts as a :ref:`PackedFloat32Array<class_PackedFloat32Array>`.
+Devuelve la caché de inclinaciones como un :ref:`PackedFloat32Array<class_PackedFloat32Array>`.
 
 .. rst-class:: classref-item-separator
 
@@ -308,9 +308,9 @@ Returns the cache of tilts as a :ref:`PackedFloat32Array<class_PackedFloat32Arra
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_baked_up_vectors**\ (\ ) |const| :ref:`🔗<class_Curve3D_method_get_baked_up_vectors>`
 
-Returns the cache of up vectors as a :ref:`PackedVector3Array<class_PackedVector3Array>`.
+Devuelve la caché de los vectores como un :ref:`PackedVector3Array<class_PackedVector3Array>`.
 
-If :ref:`up_vector_enabled<class_Curve3D_property_up_vector_enabled>` is ``false``, the cache will be empty.
+Si :ref:`up_vector_enabled<class_Curve3D_property_up_vector_enabled>` es ``false``, la caché estará vacía.
 
 .. rst-class:: classref-item-separator
 

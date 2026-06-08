@@ -17,11 +17,11 @@ Une lumière omnidirectionnelle, comme une ampoule ou une bougie.
 Description
 -----------
 
-Une lumière omnidirectionnelle est un type de nœud :ref:`Light3D<class_Light3D>` qui émet de la lumière dans toutes les directions. La lumière est atténuée avec la distance et cette atténuation peut être configurée en changeant ses paramètres d'énergie, de rayon et d'atténuation.
+Une lumière Omnidirectionnelle est un type de nœud :ref:`Light3D<class_Light3D>` qui émet de la lumière dans toutes les directions. La lumière est atténuée avec la distance et cette atténuation peut être configurée en changeant ses paramètres d'énergie, de rayon et d'atténuation.
 
 \ **Note :** Lors de l'utilisation de la méthode de rendu Mobile, seulement 8 lumières omnidirectionnelles peuvent être affichés sur chaque ressource de maillage. Essayer d'afficher plus de 8 lumières omnidirectionnelles sur une seule ressource de maillage entraînera des lumières omnidirectionnelles qui clignoteront quand la caméra se déplace. Lors de l'utilisation de la méthode de rendu Compatibilité, seulement 8 lumières omnidirectionnelles peuvent être affichés sur chaque ressource de maillage par défaut, mais cela peut être augmenté en ajustant :ref:`ProjectSettings.rendering/limits/opengl/max_lights_per_object<class_ProjectSettings_property_rendering/limits/opengl/max_lights_per_object>`.
 
-\ **Note:** Lors de l'utilisation des méthodes de rendu Mobile ou Compatibilité, les lumières omnidirectionnelles n'affecteront correctement que les maillage dont l'AABB de visibilité intersecte avec l'AABB de la lumière. Si l'utilisation d'un shader pour déformer le maillage le fait sortir de sa AABB, :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` doit être augmenté sur le maillage. Sinon, la lumière peut ne pas être visible sur le maillage.
+\ **Note :** Lors de l'utilisation des méthodes de rendu Mobile ou Compatibilité, les lumières omnidirectionnelles n'affecteront correctement que les maillages dont l'AABB de visibilité intersecte avec l'AABB de la lumière. Si l'utilisation d'un shader pour déformer le maillage le fait sortir de sa AABB, :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` doit être augmenté sur le maillage. Sinon, la lumière peut ne pas être visible sur le maillage.
 
 .. rst-class:: classref-introduction-group
 

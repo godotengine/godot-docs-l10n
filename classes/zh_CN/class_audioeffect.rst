@@ -16,9 +16,9 @@ AudioEffect
 描述
 ----
 
-The base :ref:`Resource<class_Resource>` for every audio effect. In the editor, an audio effect can be added to the current bus layout through the Audio panel. At run-time, it is also possible to manipulate audio effects through :ref:`AudioServer.add_bus_effect()<class_AudioServer_method_add_bus_effect>`, :ref:`AudioServer.remove_bus_effect()<class_AudioServer_method_remove_bus_effect>`, and :ref:`AudioServer.get_bus_effect()<class_AudioServer_method_get_bus_effect>`.
+音频效果的基础 :ref:`Resource<class_Resource>`\ 。在编辑器中，可以在“音频”面板中为当前的总线布局添加音频效果。在运行时，也可以通过 :ref:`AudioServer.add_bus_effect()<class_AudioServer_method_add_bus_effect>`\ 、\ :ref:`AudioServer.remove_bus_effect()<class_AudioServer_method_remove_bus_effect>`\ 、\ :ref:`AudioServer.get_bus_effect()<class_AudioServer_method_get_bus_effect>` 来操作音频效果。
 
-When applied on a bus, an audio effect creates a corresponding :ref:`AudioEffectInstance<class_AudioEffectInstance>`. The instance is directly responsible for manipulating sound, based on the original audio effect's properties.
+应用到总线时，音频效果会创建一个对应的 :ref:`AudioEffectInstance<class_AudioEffectInstance>` 实例。由这个实例来负责根据原始音频效果的属性操作声音。
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ When applied on a bus, an audio effect creates a corresponding :ref:`AudioEffect
 
 - :doc:`音频总线 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 - `音频麦克风录音演示 <https://godotengine.org/asset-library/asset/2760>`__
 

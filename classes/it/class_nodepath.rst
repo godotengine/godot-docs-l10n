@@ -5,7 +5,7 @@
 NodePath
 ========
 
-Un percorso dell'albero di scena pre-interpretato.
+Un percorso dell'albero di scene pre-interpretato.
 
 .. rst-class:: classref-introduction-group
 
@@ -48,7 +48,7 @@ In alcune situazioni, è possibile omettere il ``:`` iniziale quando si punta al
 
 I percorsi dei nodi non possono verificare se sono validi e possono puntare a nodi o proprietà inesistenti. Il loro significato dipende interamente dal contesto in cui vengono utilizzati.
 
-Di solito non devi preoccuparti del tipo **NodePath**, poiché le stringhe vengono automaticamente convertite in questo tipo quando necessario. Ci sono comunque momenti in cui definire i percorsi dei nodi è utile. Ad esempio, le proprietà **NodePath** esportate ti consentono di selezionare facilmente qualsiasi nodo all'interno della scena attualmente modificata. Sono inoltre aggiornate automaticamente quando sposti, rinomini o elimini nodi nell'editor dell'albero della scena. Vedi anche :ref:`@GDScript.@export_node_path<class_@GDScript_annotation_@export_node_path>`.
+Di solito non devi preoccuparti del tipo **NodePath**, poiché le stringhe vengono automaticamente convertite in questo tipo quando necessario. Ci sono comunque momenti in cui definire i percorsi dei nodi è utile. Ad esempio, le proprietà **NodePath** esportate ti consentono di selezionare facilmente qualsiasi nodo all'interno della scena attualmente modificata. Sono inoltre aggiornate automaticamente quando sposti, rinomini o elimini nodi nell'editor dell'albero di scene. Vedi anche :ref:`@GDScript.@export_node_path<class_@GDScript_annotation_@export_node_path>`.
 
 Vedi anche :ref:`StringName<class_StringName>`, che è un tipo simile progettato per stringhe ottimizzate.
 

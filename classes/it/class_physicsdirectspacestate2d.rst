@@ -134,7 +134,7 @@ Verifica se un punto è all'interno di una forma solida. La posizione e altri pa
 
 È possibile limitare il numero di intersezioni con il parametro ``max_results``, per ridurre il tempo di elaborazione.
 
-\ **Nota:** :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` e :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` nella modalità di compilazione ``Segments`` non sono forme solide. Pertanto, non saranno rilevate.
+\ **Nota:** :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` e :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` nelle modalità di costruzione ``Segments`` non sono forme solide. Pertanto, non saranno rilevate.
 
 .. rst-class:: classref-item-separator
 

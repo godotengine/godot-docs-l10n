@@ -14,7 +14,7 @@ AudioStreamPlaybackPlaylist
 Описание
 ----------------
 
-Playback component of :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`. Handles the playback of multiple :ref:`AudioStream<class_AudioStream>`\ s in sequence.
+Компонент воспроизведения :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`. Обрабатывает воспроизведение нескольких :ref:`AudioStream<class_AudioStream>` последовательно.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

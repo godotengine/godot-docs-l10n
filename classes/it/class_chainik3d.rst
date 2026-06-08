@@ -16,9 +16,9 @@ A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to apply inverse kinematic
 Descrizione
 ----------------------
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that automatically generates a joint list from the bones between the root bone and the end bone.
+Classe base di :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` che genera automaticamente un elenco di articolazioni dalle ossa tra l'osso radice e l'osso finale.
 
-\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **Nota:** Tutti i metodi di questa classe accettano un parametro ``index``. Questo parametro specifica quale voce nell'elenco delle impostazioni restituire, se l'IK ha più voci (ad esempio, ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 
@@ -249,9 +249,9 @@ Sets the end bone name of the bone chain.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ChainIK3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Se ``enabled`` è ``true``, l'osso finale è allungato per avere una coda.
 
-The extended tail config is allocated to the last element in the joint list. In other words, if you set ``enabled`` to ``false``, the config of the last element in the joint list has no effect in the simulated result.
+La configurazione della coda allungata è assegnata all'ultimo elemento nella lista delle articolazioni. In altre parole, se ``enabled`` è impostato su ``false``, la configurazione dell'ultimo elemento nella lista delle articolazioni non ha alcun effetto nel risultato simulato.
 
 .. rst-class:: classref-item-separator
 

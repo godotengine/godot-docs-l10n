@@ -27,7 +27,7 @@ Tutoriales
 
 - :doc:`Buses de audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Efectos de audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -103,7 +103,7 @@ The volume ratio of the filtered audio that is fed back to the all-pass filters.
 - |void| **set_range_max_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_max_hz**\ (\ )
 
-Determines the maximum frequency affected by the low-frequency oscillator modulations, in Hz. Value can range from 10 to 10000.
+Determina la frecuencia máxima afectada por las modulaciones del oscilador de baja frecuencia, en Hz. El valor puede oscilar entre 10 y 10000.
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ Determines the maximum frequency affected by the low-frequency oscillator modula
 - |void| **set_range_min_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_min_hz**\ (\ )
 
-Determines the minimum frequency affected by the low-frequency oscillator modulations, in Hz. Value can range from 10 to 10000.
+Determina la frecuencia mínima afectada por las modulaciones del oscilador de baja frecuencia, en Hz. El valor puede oscilar entre 10 y 10000.
 
 .. rst-class:: classref-item-separator
 

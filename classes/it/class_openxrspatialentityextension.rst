@@ -95,7 +95,7 @@ Segnali
 
 **spatial_discovery_recommended**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_signal_spatial_discovery_recommended>`
 
-Emitted when OpenXR recommends running a discovery query because entities managed by this spatial context have (likely) changed.
+Emesso quando OpenXR consiglia di effettuare una richiesta di individuazione perché le entità gestite da questo contesto spaziale sono (probabilmente) cambiate.
 
 .. rst-class:: classref-section-separator
 
@@ -118,7 +118,7 @@ enum **Capability**: :ref:`🔗<enum_OpenXRSpatialEntityExtension_Capability>`
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_PLANE_TRACKING** = ``1000741000``
 
-Plane tracking capability.
+Capacità di tracciamento dei piani.
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_MARKER_TRACKING_QR_CODE:
 
@@ -126,7 +126,7 @@ Plane tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_QR_CODE** = ``1000743000``
 
-QR code based marker tracking capability.
+Capacità di tracciamento dei marcatori basata su codici QR.
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_MARKER_TRACKING_MICRO_QR_CODE:
 
@@ -134,7 +134,7 @@ QR code based marker tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_MICRO_QR_CODE** = ``1000743001``
 
-Micro QR code based marker tracking capability.
+Capacità di tracciamento dei marcatori basata su codici micro QR.
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_MARKER_TRACKING_ARUCO_MARKER:
 
@@ -142,7 +142,7 @@ Micro QR code based marker tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_ARUCO_MARKER** = ``1000743002``
 
-Aruco marker based marker tracking capability.
+Capacità di tracciamento dei marcatori basata su marcatori Aruco.
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_MARKER_TRACKING_APRIL_TAG:
 
@@ -150,7 +150,7 @@ Aruco marker based marker tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_APRIL_TAG** = ``1000743003``
 
-April tag based marker tracking capability.
+Capacità di tracciamento dei marcatori basata su tag April.
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_ANCHOR:
 
@@ -158,7 +158,7 @@ April tag based marker tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_ANCHOR** = ``1000762000``
 
-Anchor capability.
+Capacità di ancoraggio.
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ A component describing the marker type, ID and location. The corresponding list 
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_ANCHOR** = ``1000762000``
 
-Component that provides the location for an anchor. The corresponding list structure is ``XrSpatialComponentAnchorListEXT``; the corresponding data structure is ``XrPosef`` (Added by the ``XR_EXT_spatial_anchor`` extension).
+Componente che fornisce la posizione per un ancoraggio. La struttura di elenco corrispondente è ``XrSpatialComponentAnchorListEXT``; la struttura dati corrispondente è ``XrPosef`` (aggiunta dall'estensione ``XR_EXT_spatial_anchor``).
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_PERSISTENCE:
 
@@ -301,11 +301,11 @@ Creates a new spatial context that handles entities for the provided capability 
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **discover_spatial_entities**\ (\ spatial_context\: :ref:`RID<class_RID>`, component_types\: :ref:`PackedInt64Array<class_PackedInt64Array>`, next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`
 
-Starts a new discovery query, this will gather all objects tracked by the ``spatial_context`` that have at least one of the component types specified in ``component_types``.
+Avvia una nuova richiesta di individuazione, che raccoglierà tutti gli oggetti tracciati dal contesto spaziale ``spatial_context`` che hanno almeno uno dei tipi di componente specificati in ``component_types``.
 
-\ ``next`` is an optional parameter that can contain additional information for executing the discovery query.
+\ ``next`` è un parametro facoltativo che può contenere ulteriori informazioni per l'esecuzione della richiesta di individuazione.
 
-\ **Note:** This is an asynchronous method and returns an :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` object with which to track the status, discarding this object will not cancel the discovery process. On success ``user_callback`` will be called if specified. The result data for this function is the :ref:`RID<class_RID>` for our snapshot.
+\ **Nota:** Questo è un metodo asincrono e restituisce un oggetto :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` con cui tenere traccia dello stato; scartare questo oggetto non annullerà il processo di individuazione. In caso di successo, verrà richiamata la funzione ``user_callback`` se specificata. I dati risultanti per questa funzione sono il :ref:`RID<class_RID>` del nostro snapshot.
 
 .. rst-class:: classref-item-separator
 
@@ -427,7 +427,7 @@ Returns the spatial context for this entity.
 
 :ref:`int<class_int>` **get_spatial_entity_id**\ (\ entity\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_entity_id>`
 
-Returns the internal ``XrSpatialEntityIdEXT`` associated with the entity.
+Restituisce il ``XrSpatialEntityIdEXT`` interno associato all'entità.
 
 .. rst-class:: classref-item-separator
 

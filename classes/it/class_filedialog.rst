@@ -16,9 +16,9 @@ Una finestra di dialogo per selezionare file o cartelle nel file system.
 Descrizione
 ----------------------
 
-**FileDialog** is a preset dialog used to choose files and directories in the filesystem. It supports filter masks. **FileDialog** automatically sets its window title according to the :ref:`file_mode<class_FileDialog_property_file_mode>`. If you want to use a custom title, disable this by setting :ref:`mode_overrides_title<class_FileDialog_property_mode_overrides_title>` to ``false``.
+**FileDialog** è una finestra di dialogo preimpostata utilizzata per scegliere file e cartelle nel file system. Supporta maschere di filtro. **FileDialog** imposta automaticamente il titolo della sua finestra in base a :ref:`file_mode<class_FileDialog_property_file_mode>`. Se si desidera usare un titolo personalizzato, disattivalo impostando :ref:`mode_overrides_title<class_FileDialog_property_mode_overrides_title>` su ``false``.
 
-\ **Note:** **FileDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Nota:** **FileDialog** è inizialmente invisibile. Per renderlo visibile, chiama uno dei metodi ``popup_*`` da :ref:`Window<class_Window>` sul nodo, come ad esempio :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -911,17 +911,17 @@ Se ``true``, la finestra di dialogo mostrerà i file nascosti.
 - |void| **set_use_native_dialog**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_native_dialog**\ (\ )
 
-If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplayServer>`, OS native dialog will be used instead of custom one.
+Se ``true``, e se supportato dal :ref:`DisplayServer<class_DisplayServer>` attuale, sarà utilizzata una finestra di dialogo nativa del sistema operativo anziché quella personalizzata.
 
-\ **Note:** On Android, it is only supported when using :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. For access mode :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` and :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>`, the system will fall back to custom FileDialog.
+\ **Nota:** Su Android, ciò è supportato solo sui dispositivi Android 10+ e se si utilizza :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. Per le modalità di accesso :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` e :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>`, il sistema ritornerà al FileDialog personalizzato.
 
-\ **Note:** On Linux and macOS, sandboxed apps always use native dialogs to access the host file system.
+\ **Nota:** Su Linux e macOS, le app in sandbox utilizzano sempre le finestre di dialogo native per accedere al file system dell'host.
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **Nota:** Su macOS, le app in sandbox salveranno i segnalibri con ambito di sicurezza per mantenere l'accesso alle cartelle aperte in più sessioni. Usa :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` per ottenere una lista dei segnalibri salvati.
 
-\ **Note:** Native dialogs are isolated from the base process, file dialog properties can't be modified once the dialog is shown.
+\ **Nota:** Le finestre di dialogo native sono isolate dal processo base, le proprietà della finestra di dialogo del file non si possono cambiare una volta che la finestra di dialogo viene mostrata.
 
-\ **Note:** This property is ignored in :ref:`EditorFileDialog<class_EditorFileDialog>`.
+\ **Note:** Questa proprietà è ignorata in :ref:`EditorFileDialog<class_EditorFileDialog>`.
 
 .. rst-class:: classref-section-separator
 

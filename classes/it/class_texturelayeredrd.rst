@@ -16,9 +16,9 @@ Classe di base astratta per i tipi RD di texture multilivello.
 Descrizione
 ----------------------
 
-Base class for :ref:`Texture2DArrayRD<class_Texture2DArrayRD>`, :ref:`TextureCubemapRD<class_TextureCubemapRD>` and :ref:`TextureCubemapArrayRD<class_TextureCubemapArrayRD>`. Cannot be used directly, but contains all the functions necessary for accessing the derived resource types.
+Classe di base per :ref:`Texture2DArrayRD<class_Texture2DArrayRD>`, :ref:`TextureCubemapRD<class_TextureCubemapRD>` e :ref:`TextureCubemapArrayRD<class_TextureCubemapArrayRD>`. Non può essere utilizzata direttamente, ma contiene tutte le funzioni necessarie per accedere ai tipi di risorse derivati.
 
-\ **Note:** **TextureLayeredRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`TextureLayered<class_TextureLayered>` instead.
+\ **Nota:** **TextureLayeredRD** è pensato per un utilizzo di basso livello con :ref:`RenderingDevice<class_RenderingDevice>`. Per la maggior parte dei casi d'uso, utilizza :ref:`TextureLayered<class_TextureLayered>` al suo posto.
 
 .. rst-class:: classref-introduction-group
 

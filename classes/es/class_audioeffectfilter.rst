@@ -33,7 +33,7 @@ Tutoriales
 
 - :doc:`Buses de audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Efectos de audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -74,7 +74,7 @@ enum **FilterDB**: :ref:`🔗<enum_AudioEffectFilter_FilterDB>`
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_6DB** = ``0``
 
-Cutting off at 6 dB per octave. One octave is twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+Corte a 6 dB por octava. Una octava es el doble de la frecuencia por encima de :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, o la mitad de la frecuencia por debajo de :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
 .. _class_AudioEffectFilter_constant_FILTER_12DB:
 
@@ -82,7 +82,7 @@ Cutting off at 6 dB per octave. One octave is twice the frequency above :ref:`cu
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_12DB** = ``1``
 
-Cutting off at 12 dB per octave. One octave is twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+Corte a 12 dB por octava. Una octava es el doble de la frecuencia por encima de :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, o la mitad de la frecuencia por debajo de :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
 .. _class_AudioEffectFilter_constant_FILTER_18DB:
 
@@ -90,7 +90,7 @@ Cutting off at 12 dB per octave. One octave is twice the frequency above :ref:`c
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_18DB** = ``2``
 
-Cutting off at 18 dB per octave. One octave is twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+Corte a 18 dB por octava. Una octava es el doble de la frecuencia por encima de :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, o la mitad de la frecuencia por debajo de :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
 .. _class_AudioEffectFilter_constant_FILTER_24DB:
 
@@ -98,7 +98,7 @@ Cutting off at 18 dB per octave. One octave is twice the frequency above :ref:`c
 
 :ref:`FilterDB<enum_AudioEffectFilter_FilterDB>` **FILTER_24DB** = ``3``
 
-Cutting off at 24 dB per octave. One octave is twice the frequency above :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, or half the frequency below :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+Corte a 24 dB por octava. Una octava es el doble de la frecuencia por encima de :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, o la mitad de la frecuencia por debajo de :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
 .. rst-class:: classref-section-separator
 
@@ -120,7 +120,7 @@ Descripciones de Propiedades
 - |void| **set_cutoff**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cutoff**\ (\ )
 
-Frequency threshold for the filter, in Hz. Value can range from 1 to 20500.
+Umbral de frecuencia para el filtro, en Hz. El valor puede oscilar entre 1 y 20500.
 
 .. rst-class:: classref-item-separator
 

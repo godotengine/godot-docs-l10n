@@ -239,7 +239,7 @@ Override this method to allow selecting subgizmos using mouse drag box selection
 
 :ref:`int<class_int>` **_subgizmos_intersect_ray**\ (\ camera\: :ref:`Camera3D<class_Camera3D>`, point\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_EditorNode3DGizmo_private_method__subgizmos_intersect_ray>`
 
-Override this method to allow selecting subgizmos using mouse clicks. Given a ``camera`` and a ``point`` in screen coordinates, this method should return which subgizmo should be selected. The returned value should be a unique subgizmo identifier, which can have any non-negative value and will be used in other virtual methods like :ref:`_get_subgizmo_transform()<class_EditorNode3DGizmo_private_method__get_subgizmo_transform>` or :ref:`_commit_subgizmos()<class_EditorNode3DGizmo_private_method__commit_subgizmos>`.
+Sobrescribe este método para permitir la selección de subgizmos mediante clics del ratón. Dados un ``camera`` y un ``point`` en coordenadas de pantalla, este método debe devolver qué subgizmo debe seleccionarse. El valor devuelto debe ser un identificador único de subgizmo, que puede tener cualquier valor no negativo y se utilizará en otros métodos virtuales como :ref:`_get_subgizmo_transform()<class_EditorNode3DGizmo_private_method__get_subgizmo_transform>` o :ref:`_commit_subgizmos()<class_EditorNode3DGizmo_private_method__commit_subgizmos>`.
 
 .. rst-class:: classref-item-separator
 

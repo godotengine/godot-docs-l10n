@@ -102,7 +102,7 @@ MultiplayerPeerExtension
 
 |void| **_disconnect_peer**\ (\ peer\: :ref:`int<class_int>`, force\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_MultiplayerPeerExtension_private_method__disconnect_peer>`
 
-Called when the connected ``peer`` should be forcibly disconnected (see :ref:`MultiplayerPeer.disconnect_peer()<class_MultiplayerPeer_method_disconnect_peer>`).
+当已连接的 ``peer``\ （对端/节点）应当被强制断开连接时调用（详见 :ref:`MultiplayerPeer.disconnect_peer()<class_MultiplayerPeer_method_disconnect_peer>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ Called when the connected ``peer`` should be forcibly disconnected (see :ref:`Mu
 
 :ref:`Error<enum_@GlobalScope_Error>` **_put_packet**\ (\ buffer\: ``const uint8_t*``, buffer_size\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_MultiplayerPeerExtension_private_method__put_packet>`
 
-Called when a packet needs to be sent by the :ref:`MultiplayerAPI<class_MultiplayerAPI>`, with ``buffer_size`` being the size of the binary ``buffer`` in bytes.
+当 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 需要发送一个数据包（packet）时调用，其中 ``buffer_size`` 表示二进制 ``buffer``\ （缓冲区）的大小（以字节为单位）。
 
 .. rst-class:: classref-item-separator
 

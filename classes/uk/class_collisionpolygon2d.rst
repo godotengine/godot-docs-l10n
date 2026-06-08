@@ -125,11 +125,11 @@ enum **BuildMode**: :ref:`🔗<enum_CollisionPolygon2D_BuildMode>`
 - |void| **set_one_way_collision**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_one_way_collision_enabled**\ (\ )
 
-If ``true``, only edges that face up, relative to **CollisionPolygon2D**'s rotation, will collide with other objects.
+Якщо ``true``, то зіткнення з іншими об’єктами відбуватиметься лише з тими ребрами, які, з огляду на орієнтацію **CollisionPolygon2D**, спрямовані вгору.
 
-\ **Note:** This property has no effect if this **CollisionPolygon2D** is a child of an :ref:`Area2D<class_Area2D>` node.
+\ **Примітка:** Ця властивість не діє, якщо цей **CollisionPolygon2D** є дочірнім елементом вузла :ref:`Area2D<class_Area2D>`.
 
-\ **Note:** The one way collision direction can be configured by setting :ref:`one_way_collision_direction<class_CollisionPolygon2D_property_one_way_collision_direction>`.
+\ **Примітка:** Односторонній напрямок зіткнення можна налаштувати, встановивши :ref:`one_way_collision_direction<class_CollisionPolygon2D_property_one_way_collision_direction>`.
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ If ``true``, only edges that face up, relative to **CollisionPolygon2D**'s rotat
 - |void| **set_one_way_collision_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_one_way_collision_direction**\ (\ )
 
-The direction used for one-way collision.
+Напрямок, що використовується для одностороннього зіткнення.
 
 .. rst-class:: classref-item-separator
 

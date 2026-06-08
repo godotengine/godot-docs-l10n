@@ -5006,7 +5006,7 @@ Descripciones de Propiedades
 
 :ref:`AccessibilityServer<class_AccessibilityServer>` **AccessibilityServer** :ref:`🔗<class_@GlobalScope_property_AccessibilityServer>`
 
-The :ref:`AccessibilityServer<class_AccessibilityServer>` singleton.
+El singleton :ref:`AccessibilityServer<class_AccessibilityServer>`.
 
 .. rst-class:: classref-item-separator
 

@@ -3524,11 +3524,11 @@ The property has no hint for the editor. However, the hint string is still read,
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_RANGE** = ``1``
 
-Hints that an :ref:`int<class_int>`, :ref:`float<class_float>`, or packed/typed :ref:`Array<class_Array>` property containing :ref:`int<class_int>` or :ref:`float<class_float>` types should be within a range specified via the hint string ``"min,max"`` or ``"min,max,step"``. The hint string can optionally include ``"or_greater"`` and/or ``"or_less"`` to allow manual input going respectively above the max or below the min values.
+Indica che una proprietà :ref:`int<class_int>`, :ref:`float<class_float>` o :ref:`Array<class_Array>` impacchettato/tipizzato che contiene :ref:`int<class_int>` o :ref:`float<class_float>` dovrebbe essere all'interno di un intervallo specificato tramite la stringa indicativa ``"min,max"`` o ``"min,max,step"``. La stringa indicativa può, facoltativamente includere ``"or_greater"`` e/o ``"or_lesser"`` per permettere di inserire valori manualmente che vanno rispettivamente sopra il massimo o sotto il minimo.
 
-\ **Example:** ``"-360,360,1,or_greater,or_less"``.
+\ **Esempio:** ``"-360,360,1,or_greater,or_lesser"``.
 
-Additionally, other keywords can be included: ``"exp"`` for exponential range editing, ``"radians_as_degrees"`` for editing radian angles in degrees (the range values are also in degrees), ``"degrees"`` to hint at an angle, ``"prefer_slider"`` to show the slider for integers, ``"hide_control"`` to hide the slider or up-down arrows, and ``"suffix:px/s"`` to display a suffix indicating the value's unit (e.g. ``px/s`` for pixels per second).
+Inoltre, è possibile includere altre parole chiave: ``"exp"`` per modificare in un intervallo esponenziale, ``"radians_as_degrees"`` per modificare angoli in radianti visualizzati in gradi (anche i valori dell'intervallo sono in gradi), ``"degrees"`` per indicare un angolo, ``"prefer_slider"`` per mostrare lo slider per i numeri interi, e ``"hide_control"`` per nascondere lo slider o le frecce su/giù, e ``"suffix:px/s"`` per mostrare un suffisso che indica l'unità di misura del valore (ad esempio ``px/s`` per pixel al secondo).
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM:
 
@@ -3556,7 +3556,7 @@ Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_EXP_EASING** = ``4``
 
-Hints that a :ref:`float<class_float>` property should be edited using a curve editor showing an exponential easing function. The hint string can include ``"attenuation"`` to flip the curve horizontally and/or ``"positive_only"`` to exclude in/out easing and limit values to be greater than or equal to zero. This displays differently to a property that uses :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` with the ``"exp"`` keyword, as it's edited with a slider instead of a curve editor.
+Indica che una proprietà :ref:`float<class_float>` dovrebbe essere modificata tramite una funzione di allentamento esponenziale. La stringa indicativa può includere ``"attenuation"`` per capovolgere la curva orizzontalmente e/o ``"positive_only"`` per consentire soltanto che i valori dell'allentamento in/out e dei limiti siano maggiori o uguali a zero. Questo è visualizzato diversamente da una proprietà che utilizza :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` con la parola chiave ``"exp"``, poiché si modifica con uno slider anziché con un editor di curva.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LINK:
 
@@ -6463,15 +6463,15 @@ Converte da energia lineare in decibel (audio). Siccome il volume non è lineare
 
 :ref:`float<class_float>` **log**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_log>`
 
-Returns the `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>`__ of ``x`` (base `e <https://en.wikipedia.org/wiki/E_(mathematical_constant)>`__, with *e* being approximately 2.71828). This is the amount of time needed to reach a certain level of continuous growth.
+Restituisce il `logaritmo naturale <https://it.wikipedia.org/wiki/Logaritmo_naturale>`__ di ``x`` (a base di `e <https://it.wikipedia.org/wiki/E_(costante_matematica)>`__, dove *e* è all'incirca 2.71828). Questo è la quantità di tempo necessaria per raggiungere un certo livello di crescita continua.
 
-\ **Note:** This is not the same as the "log" function on most calculators, which uses a base 10 logarithm. To use base 10 logarithm, use ``log(x) / log(10)``.
+\ **Nota:** Questo non è lo stesso della funzione "log" sulla maggior parte delle calcolatrici, che utilizza un logaritmo di base 10. Per il logaritmo di base 10, usa ``log(x) / log(10)``.
 
 ::
 
-    log(10) # Returns 2.302585
+    log(10) # Restituisce 2.302585
 
-\ **Note:** The logarithm of ``0`` returns ``-inf``, while negative values return ``-nan``.
+\ **Nota:** Il logaritmo di ``0`` restituisce ``-inf``, mentre i valori negativi restituiscono ``-nan``.
 
 .. rst-class:: classref-item-separator
 

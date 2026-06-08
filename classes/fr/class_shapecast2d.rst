@@ -18,7 +18,7 @@ Le shape casting permet de détecter des objets en collision en balayant sa form
 
 Les chevauchements de collision immédiats peuvent être faits avec :ref:`target_position<class_ShapeCast2D_property_target_position>` défini à ``Vector2(0, 0)`` et en appelant :ref:`force_shapecast_update()<class_ShapeCast2D_method_force_shapecast_update>` dans le même trame physique. Cela aide à surmonter certaines limites de :ref:`Area2D<class_Area2D>` lorsqu'elle est utilisée comme zone de détection instantanée, car les informations sur la collision ne lui sont pas immédiatement disponibles.
 
-\ **Note:** Le shape casting est plus coûteux que le ray casting.
+\ **Note :** Le shape casting est plus coûteux que le ray casting.
 
 .. rst-class:: classref-reftable-group
 

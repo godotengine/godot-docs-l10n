@@ -91,7 +91,7 @@ enum **Fill**: :ref:`🔗<enum_GradientTexture2D_Fill>`
 
 :ref:`Fill<enum_GradientTexture2D_Fill>` **FILL_CONIC** = ``3``
 
-The colors are linearly interpolated in a cone pattern.
+Цвета интерполируются линейно по конусообразной схеме.
 
 .. rst-class:: classref-item-separator
 

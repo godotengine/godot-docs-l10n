@@ -12,21 +12,21 @@ Un array compatto di :ref:`String<class_String>`.
 Descrizione
 ----------------------
 
-An array specifically designed to hold :ref:`String<class_String>`\ s. Packs data tightly, so it saves memory for large array sizes.
+Un array progettato specificamente per contenere :ref:`String<class_String>`. Impacchetta i dati in modo compatto, in modo da risparmiare memoria per array di grandi dimensioni.
 
-If you want to join the strings in the array, use :ref:`String.join()<class_String_method_join>`.
+Se si desidera unire le stringhe nell'array, usa :ref:`String.join()<class_String_method_join>`.
 
 ::
 
-    var string_array = PackedStringArray(["hello", "world"])
+    var string_array = PackedStringArray(["ciao", "mondo"])
     var string = " ".join(string_array)
-    print(string) # "hello world"
+    print(string) # "ciao mondo"
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedStringArray** versus ``Array[String]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **Differenze tra gli array impacchettati, gli array tipizzati e gli array non tipizzati:** Gli array impacchettati sono generalmente più veloci da iterare e modificare rispetto a un array tipizzato dello stesso tipo (ad esempio **PackedStringArray** in confronto a ``Array[String]``). Inoltre, gli array impacchettati consumano meno memoria. Come svantaggio, i array impacchettati sono meno flessibili in quanto non offrono molti metodi di convenienza come :ref:`Array.map()<class_Array_method_map>`. Gli array tipizzati sono anche loro più veloci da iterare e modificare in confronto ad array non tipizzati.
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedStringArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **Nota:** Gli array impacchettati sono sempre passati per riferimento. Per ottenere una copia di un array che si può modificare indipendentemente dall'array originale, usa :ref:`duplicate()<class_PackedStringArray_method_duplicate>`. Questo *non* è il caso per le proprietà e per i metodi integrati. In tali casi l'array impacchettato restituito è una copia, e modificarlo *non* influenzerà il valore originale. Per aggiornare una proprietà integrata di questo tipo è necessario modificare l'array restituito e poi riassegnarlo alla proprietà.
 
-\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
+\ **Nota:** In un contesto booleano, un array impacchettato sarà valutato come ``false`` se è vuoto. Altrimenti, un array impacchettato sarà sempre valutato come ``true``.
 
 .. note::
 
@@ -291,9 +291,9 @@ Cerca un valore nell'array e restituisce il suo indice o ``-1`` se non trovato. 
 
 :ref:`String<class_String>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedStringArray_method_get>`
 
-Returns the :ref:`String<class_String>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns an empty string.
+Restituisce la :ref:`String<class_String>` all'indice ``index`` nell'array. Se ``index`` è fuori dai limiti o negativo, questo metodo fallisce e restituisce una stringa vuota.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Questo metodo è simile (ma non identico) all'operatore ``[]``. In particolare, quando questo metodo fallisce, non interrompe l'esecuzione del progetto se eseguito dall'editor.
 
 .. rst-class:: classref-item-separator
 

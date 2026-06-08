@@ -12,13 +12,13 @@ PackedFloat32Array
 描述
 ----
 
-An array specifically designed to hold 32-bit floating-point values (float). Packs data tightly, so it saves memory for large array sizes.
+一种专门用来存放 32 位浮点数值（float）的数组。它对数据进行了紧密打包，因此在数组规模很大时能有效节省内存。
 
-If you need to pack 64-bit floats tightly, see :ref:`PackedFloat64Array<class_PackedFloat64Array>`.
+如果你需要紧密打包 64 位浮点数，请参考 :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ 。
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedFloat32Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **注意：** 打包数组始终是通过引用传递的。如果想获取一个可以独立于原数组进行修改的副本，请使用 :ref:`duplicate()<class_PackedFloat32Array_method_duplicate>` 方法。内置属性和方法\ *不*\ 属于这种情况。在这些情况下，返回的打包数组是一个副本，修改它\ *不*\ 会影响原始值。如果要更新这种类型的内置属性，需要先修改返回的数组，然后再将其重新赋值给该属性。
 
-\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
+\ **注意：** 在布尔值（boolean）语境下，如果打包数组为空，它的求值结果为 ``false``\ ；否则，打包数组的求值结果始终为 ``true``\ 。
 
 .. note::
 

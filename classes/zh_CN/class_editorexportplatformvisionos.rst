@@ -835,7 +835,7 @@ Apple 推送通知服务的环境。见 `aps-environment <https://developer.appl
 
 :ref:`bool<class_bool>` **modules/camera** :ref:`🔗<class_EditorExportPlatformVisionOS_property_modules/camera>`
 
-If ``true``, :ref:`CameraServer<class_CameraServer>` module is added to the exported project.
+如果设为 ``true``\ ，则会将 :ref:`CameraServer<class_CameraServer>`\ （相机服务）模块添加到导出的项目中。
 
 .. rst-class:: classref-item-separator
 

@@ -62,7 +62,7 @@ AnimationLibrary
 
 **animation_added**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_added>`
 
-Emitted when an :ref:`Animation<class_Animation>` is added, under the key ``anim_name``.
+在键 ``anim_name`` 下添加 :ref:`Animation<class_Animation>` 时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -74,9 +74,9 @@ Emitted when an :ref:`Animation<class_Animation>` is added, under the key ``anim
 
 **animation_changed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_changed>`
 
-Emitted when there's a change in one of the animations, e.g. tracks are added, moved or have changed paths. ``anim_name`` is the key of the animation that was changed.
+当其中一个动画发生变化时发出，例如轨道被添加、移动，或路径被更改。\ ``anim_name`` 是被改变的动画的键。
 
-See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts as a relay for.
+另见 :ref:`Resource.changed<class_Resource_signal_changed>`\ ，本信号充当该信号的中继。
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts
 
 **animation_removed**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_removed>`
 
-Emitted when an :ref:`Animation<class_Animation>` stored with the key ``anim_name`` is removed.
+当使用键 ``anim_name`` 存储的 :ref:`Animation<class_Animation>` 被移除时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ Emitted when an :ref:`Animation<class_Animation>` stored with the key ``anim_nam
 
 **animation_renamed**\ (\ old_name\: :ref:`StringName<class_StringName>`, new_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_renamed>`
 
-Emitted when the key for an :ref:`Animation<class_Animation>` is changed, from ``old_name`` to ``new_name``.
+当 :ref:`Animation<class_Animation>` 的键从 ``old_name`` 更改为 ``new_name`` 时发出。
 
 .. rst-class:: classref-section-separator
 

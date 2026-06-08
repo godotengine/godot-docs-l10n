@@ -9,16 +9,16 @@ RDAccelerationStructureGeometry
 
 **继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Acceleration structure geometry (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+加速结构几何体（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-**RDAccelerationStructureGeometry** describes a set of triangles used as raytracing geometry in the :ref:`RenderingDevice.blas_create()<class_RenderingDevice_method_blas_create>` method.
+**RDAccelerationStructureGeometry** 描述了一组三角形，这些三角形在 :ref:`RenderingDevice.blas_create()<class_RenderingDevice_method_blas_create>` 方法中被用作光线追踪几何体。
 
-The geometry is always in triangle list form, either indexed or non-indexed. Triangle strips are not supported.
+该几何体始终以三角形列表（triangle list）的形式存在，无论是索引还是非索引形式。不支持三角形带（Triangle strips）。
 
 .. rst-class:: classref-reftable-group
 
@@ -68,7 +68,7 @@ The geometry is always in triangle list form, either indexed or non-indexed. Tri
 - |void| **set_flags**\ (\ value\: |bitfield|\[:ref:`AccelerationStructureGeometryFlagBits<enum_RenderingDevice_AccelerationStructureGeometryFlagBits>`\]\ )
 - |bitfield|\[:ref:`AccelerationStructureGeometryFlagBits<enum_RenderingDevice_AccelerationStructureGeometryFlagBits>`\] **get_flags**\ (\ )
 
-Flags for the geometry.
+几何体的标志位。
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ Flags for the geometry.
 - |void| **set_index_buffer**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_index_buffer**\ (\ )
 
-Buffer containing vertex indices. If ``null``, triangles are non-indexed.
+包含顶点索引的缓冲区。如果为 ``null``\ ，则三角形为非索引形式。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ Buffer containing vertex indices. If ``null``, triangles are non-indexed.
 - |void| **set_index_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_index_count**\ (\ )
 
-Number of indices used by this geometry in :ref:`index_buffer<class_RDAccelerationStructureGeometry_property_index_buffer>`.
+该几何体在 :ref:`index_buffer<class_RDAccelerationStructureGeometry_property_index_buffer>` 中使用的索引数量。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Number of indices used by this geometry in :ref:`index_buffer<class_RDAccelerati
 - |void| **set_index_offset**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_index_offset**\ (\ )
 
-Byte offset of the first index in :ref:`index_buffer<class_RDAccelerationStructureGeometry_property_index_buffer>`.
+:ref:`index_buffer<class_RDAccelerationStructureGeometry_property_index_buffer>`\ （索引缓冲区）中第一个索引的字节偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Byte offset of the first index in :ref:`index_buffer<class_RDAccelerationStructu
 - |void| **set_vertex_buffer**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_vertex_buffer**\ (\ )
 
-Buffer containing vertices.
+包含顶点的缓冲区。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Buffer containing vertices.
 - |void| **set_vertex_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_vertex_count**\ (\ )
 
-Number of vertices used by this geometry in :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
+该几何体在 :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>` 中使用的顶点数量。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ Number of vertices used by this geometry in :ref:`vertex_buffer<class_RDAccelera
 - |void| **set_vertex_format**\ (\ value\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`\ )
 - :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **get_vertex_format**\ (\ )
 
-Format of the vertices in :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
+:ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`\ （顶点缓冲区）中顶点的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Format of the vertices in :ref:`vertex_buffer<class_RDAccelerationStructureGeome
 - |void| **set_vertex_offset**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_vertex_offset**\ (\ )
 
-Byte offset of the first vertex in :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
+:ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`\ （顶点缓冲区）中第一个顶点的字节偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Byte offset of the first vertex in :ref:`vertex_buffer<class_RDAccelerationStruc
 - |void| **set_vertex_stride**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_vertex_stride**\ (\ )
 
-Number of bytes between each vertex in :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
+:ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>` 中每个顶点之间的字节数。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

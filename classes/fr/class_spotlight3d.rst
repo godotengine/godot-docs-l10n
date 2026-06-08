@@ -20,7 +20,7 @@ La lumière est émise dans la direction -Z de la base globale du nœud. Pour un
 
 \ **Note :** Lors de l'utilisation de la méthode de rendu Mobile, seulement 8 projecteurs peuvent être affichés sur chaque ressource de maillage. Essayer d'afficher plus de 8 projecteurs sur une seule ressource de maillage entraînera des projecteurs qui clignoteront quand la caméra se déplace. Lors de l'utilisation de la méthode de rendu Compatibilité, seulement 8 projecteurs peuvent être affichés sur chaque ressource de maillage par défaut, mais cela peut être augmenté en ajustant :ref:`ProjectSettings.rendering/limits/opengl/max_lights_per_object<class_ProjectSettings_property_rendering/limits/opengl/max_lights_per_object>`.
 
-\ **Note:** Lors de l'utilisation des méthodes de rendu Mobile ou Compatibilité, les projecteurs n'affecteront correctement que les maillage dont l'AABB de visibilité intersecte avec l'AABB de la lumière. Si l'utilisation d'un shader pour déformer le maillage le fait sortir de sa AABB, :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` doit être augmenté sur le maillage. Sinon, la lumière peut ne pas être visible sur le maillage.
+\ **Note :** Lors de l'utilisation des méthodes de rendu Mobile ou Compatibilité, les projecteurs n'affecteront correctement que les maillage dont l'AABB de visibilité intersecte avec l'AABB de la lumière. Si l'utilisation d'un shader pour déformer le maillage le fait sortir de sa AABB, :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` doit être augmenté sur le maillage. Sinon, la lumière peut ne pas être visible sur le maillage.
 
 .. rst-class:: classref-introduction-group
 

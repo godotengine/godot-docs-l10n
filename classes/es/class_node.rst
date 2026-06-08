@@ -2437,7 +2437,7 @@ May print, for example:
 
 :ref:`Viewport<class_Viewport>` **get_viewport**\ (\ ) |const| :ref:`🔗<class_Node_method_get_viewport>`
 
-Returns the node's closest :ref:`Viewport<class_Viewport>` ancestor, if the node is inside the tree. Otherwise, returns ``null``.
+Devuelve el :ref:`Viewport<class_Viewport>` ancestro más cercano del nodo, si el nodo está dentro del árbol. De lo contrario, devuelve ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -2449,7 +2449,7 @@ Returns the node's closest :ref:`Viewport<class_Viewport>` ancestor, if the node
 
 :ref:`Window<class_Window>` **get_window**\ (\ ) |const| :ref:`🔗<class_Node_method_get_window>`
 
-Returns the :ref:`Window<class_Window>` that contains this node. If the node is in the main window, this is equivalent to getting the root node (``get_tree().get_root()``).
+Devuelve la :ref:`Window<class_Window>` que contiene a este nodo. Si el nodo está en la ventana principal, esto es equivalente a obtener el nodo raíz (``get_tree().get_root()``).
 
 .. rst-class:: classref-item-separator
 
@@ -2461,7 +2461,7 @@ Returns the :ref:`Window<class_Window>` that contains this node. If the node is 
 
 :ref:`bool<class_bool>` **has_node**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_Node_method_has_node>`
 
-Returns ``true`` if the ``path`` points to a valid node. See also :ref:`get_node()<class_Node_method_get_node>`.
+Devuelve ``true`` si la ``path`` apunta a un nodo válido. Véase también :ref:`get_node()<class_Node_method_get_node>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2485,7 +2485,7 @@ Returns ``true`` if ``path`` points to a valid node and its subnames point to a 
 
 :ref:`bool<class_bool>` **is_ancestor_of**\ (\ node\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Node_method_is_ancestor_of>`
 
-Returns ``true`` if the given ``node`` is a direct or indirect child of this node.
+Devuelve ``true`` si el ``node`` dado es un hijo directo o indirecto de este nodo.
 
 .. rst-class:: classref-item-separator
 
@@ -2497,7 +2497,7 @@ Returns ``true`` if the given ``node`` is a direct or indirect child of this nod
 
 :ref:`bool<class_bool>` **is_displayed_folded**\ (\ ) |const| :ref:`🔗<class_Node_method_is_displayed_folded>`
 
-Returns ``true`` if the node is folded (collapsed) in the Scene dock. This method is intended to be used in editor plugins and tools. See also :ref:`set_display_folded()<class_Node_method_set_display_folded>`.
+Devuelve ``true`` si el nodo está plegado (colapsado) en el dock Escena. Este método está destinado a ser utilizado en plugins y herramientas del editor. Véase también :ref:`set_display_folded()<class_Node_method_set_display_folded>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2509,7 +2509,7 @@ Returns ``true`` if the node is folded (collapsed) in the Scene dock. This metho
 
 :ref:`bool<class_bool>` **is_editable_instance**\ (\ node\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Node_method_is_editable_instance>`
 
-Returns ``true`` if ``node`` has editable children enabled relative to this node. This method is intended to be used in editor plugins and tools. See also :ref:`set_editable_instance()<class_Node_method_set_editable_instance>`.
+Devuelve ``true`` si ``node`` tiene los hijos editables habilitados en relación con este nodo. Este método está destinado a ser utilizado en plugins y herramientas del editor. Véase también :ref:`set_editable_instance()<class_Node_method_set_editable_instance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2521,7 +2521,7 @@ Returns ``true`` if ``node`` has editable children enabled relative to this node
 
 :ref:`bool<class_bool>` **is_greater_than**\ (\ node\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Node_method_is_greater_than>`
 
-Returns ``true`` if the given ``node`` occurs later in the scene hierarchy than this node. A node occurring later is usually processed last.
+Devuelve ``true`` si el ``node`` dado aparece más tarde en la jerarquía de la escena que este nodo. Un nodo que aparece más tarde suele ser procesado al final.
 
 .. rst-class:: classref-item-separator
 
@@ -2533,7 +2533,7 @@ Returns ``true`` if the given ``node`` occurs later in the scene hierarchy than 
 
 :ref:`bool<class_bool>` **is_in_group**\ (\ group\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Node_method_is_in_group>`
 
-Returns ``true`` if this node has been added to the given ``group``. See :ref:`add_to_group()<class_Node_method_add_to_group>` and :ref:`remove_from_group()<class_Node_method_remove_from_group>`. See also notes in the description, and the :ref:`SceneTree<class_SceneTree>`'s group methods.
+Devuelve ``true`` si este nodo ha sido añadido al ``group`` especificado. Véase :ref:`add_to_group()<class_Node_method_add_to_group>` y :ref:`remove_from_group()<class_Node_method_remove_from_group>`. Véase también las notas en la descripción y los métodos de grupo de :ref:`SceneTree<class_SceneTree>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2545,7 +2545,7 @@ Returns ``true`` if this node has been added to the given ``group``. See :ref:`a
 
 :ref:`bool<class_bool>` **is_inside_tree**\ (\ ) |const| :ref:`🔗<class_Node_method_is_inside_tree>`
 
-Returns ``true`` if this node is currently inside a :ref:`SceneTree<class_SceneTree>`. See also :ref:`get_tree()<class_Node_method_get_tree>`.
+Devuelve ``true`` si este nodo se encuentra actualmente dentro de un :ref:`SceneTree<class_SceneTree>`. Véase también :ref:`get_tree()<class_Node_method_get_tree>`.
 
 .. rst-class:: classref-item-separator
 

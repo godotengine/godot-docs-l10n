@@ -1190,13 +1190,11 @@ Imposta l'offset orizzontale dell'elemento all'indice ``idx``.
 
 :ref:`int<class_int>` **set_item_index**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, target_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_index>`
 
-Changes the index of the item at index ``idx`` to be at index ``target_idx``. This can be used to move an item above other items.
+Cambia l'indice della voce all'indice ``idx`` portandolo all'indice ``target_idx``. Questo si può utilizzare per spostare una voce sopra altri elementi.
 
-Returns the new index of the moved item, it's not guaranteed to be the same as ``target_idx``.
+\ **Nota:** Gli indici di tutte le voci comprese tra l'indice ``idx`` e l'indice ``target_idx`` saranno spostati di uno.
 
-\ **Note:** The indices of any items between index ``idx`` and index ``target_idx`` will be shifted by one.
-
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Nota:** Questo metodo è implementato su macOS e Windows.
 
 .. rst-class:: classref-item-separator
 

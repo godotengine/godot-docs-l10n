@@ -14,9 +14,9 @@ UPNP
 描述
 ----
 
-This class can be used to discover compatible :ref:`UPNPDevice<class_UPNPDevice>`\ s on the local network and execute commands on them, like managing port mappings (for port forwarding/NAT traversal) and querying the local and remote network IP address. Note that methods on this class are synchronous and block the calling thread.
+这个类可以用来在本地网络中发现兼容的 :ref:`UPNPDevice<class_UPNPDevice>`\ （UPNP 设备），并对它们执行命令，比如管理端口映射（用于端口转发 / NAT 穿透）以及查询本地和远程网络的 IP 地址。需要注意的是，这个类中的方法都是同步的，并且会阻塞（卡住）调用它的线程。
 
-To forward a specific port (here ``7777``, note both :ref:`discover()<class_UPNP_method_discover>` and :ref:`add_port_mapping()<class_UPNP_method_add_port_mapping>` can return errors that should be checked):
+要转发一个特定的端口（这里是 ``7777``\ ，注意 :ref:`discover()<class_UPNP_method_discover>` 和 :ref:`add_port_mapping()<class_UPNP_method_add_port_mapping>` 都有可能返回错误，代码中应该对这些错误进行检查）：
 
 ::
 
@@ -34,10 +34,10 @@ To close a specific port (e.g. after you have finished using it):
 
 ::
 
-    # Emitted when UPnP port mapping setup is completed (regardless of success or failure).
+    # 当 UPnP 端口映射设置完成时发出该信号（无论成功还是失败）。
     signal upnp_completed(error)
 
-    # Replace this with your own server port number between 1024 and 65535.
+    # 请将其替换为你自己的服务器端口号（范围在 1024 到 65535 之间）。
     const SERVER_PORT = 3928
     var thread = null
 
@@ -61,24 +61,24 @@ To close a specific port (e.g. after you have finished using it):
         thread.start(_upnp_setup.bind(SERVER_PORT))
 
     func _exit_tree():
-        # Wait for thread finish here to handle game exit while the thread is running.
+        # 在此处等待线程执行完毕，以便在线程仍在运行时妥善处理游戏退出。
         thread.wait_to_finish()
 
-\ **Terminology:** In the context of UPnP networking, "gateway" (or "internet gateway device", short IGD) refers to network devices that allow computers in the local network to access the internet ("wide area network", WAN). These gateways are often also called "routers".
+\ **术语说明：** 在 UPnP 网络的语境中，“网关”（或称“互联网网关设备”，简称 IGD）指的是那些允许本地网络中的计算机访问互联网（即“广域网”，WAN）的网络设备。这些网关通常也被称为“路由器”。
 
-\ **Pitfalls:**\ 
+\ **常见陷阱：**\ 
 
-- As explained above, these calls are blocking and shouldn't be run on the main thread, especially as they can block for multiple seconds at a time. Use threading!
+正如上文所述，这些调用都是阻塞式的，因此不应该在主线程上运行，尤其是考虑到它们可能会一次性卡住好几秒钟。请务必使用多线程！
 
-- Networking is physical and messy. Packets get lost in transit or get filtered, addresses, free ports and assigned mappings change, and devices may leave or join the network at any time. Be mindful of this, be diligent when checking and handling errors, and handle these gracefully if you can: add clear error UI, timeouts and re-try handling.
+网络环境是物理层面的，且充满了各种不确定性。数据包在传输中可能会丢失或被过滤，IP 地址、空闲端口以及已分配的映射关系随时可能发生变化，设备也可能随时加入或离开网络。请务必考虑到这些因素，在检查和处理错误时要格外仔细；如果可能的话，请优雅地应对这些问题：提供清晰的错误提示界面（UI），并设置超时与重试机制。
 
-- Port mappings may change (and be removed) at any time, and the remote/external IP address of the gateway can change likewise. You should consider re-querying the external IP and try to update/refresh the port mapping periodically (for example, every 5 minutes and on networking failures).
+端口映射随时可能发生变化（甚至被移除），同样地，网关的远程/外部 IP 地址也可能发生改变。你应该考虑定期重新查询外部 IP，并尝试更新/刷新端口映射（例如，每隔 5 分钟以及在发生网络故障时进行更新）。
 
-- Not all devices support UPnP, and some users disable UPnP support. You need to handle this (e.g. documenting and requiring the user to manually forward ports, or adding alternative methods of NAT traversal, like a relay/mirror server, or NAT hole punching, STUN/TURN, etc.).
+并非所有的设备都支持 UPnP，而且有些用户会主动禁用 UPnP 功能。你需要对此做好应对准备（例如，在文档中说明并让用户手动转发端口，或者加入其他替代的 NAT 穿透方法，比如使用中继/镜像服务器、NAT 打洞、STUN/TURN 等）。
 
-- Consider what happens on mapping conflicts. Maybe multiple users on the same network would like to play your game at the same time, or maybe another application uses the same port. Make the port configurable, and optimally choose a port automatically (re-trying with a different port on failure).
+请考虑发生映射冲突时会发生什么。也许同一个网络下的多个用户想要同时玩你的游戏，或者也许有其他应用程序占用了同一个端口。请将端口设置为可配置的，并且最好能自动选择一个端口（在失败时尝试使用不同的端口进行重试）。
 
-\ **Further reading:** If you want to know more about UPnP (and the Internet Gateway Device (IGD) and Port Control Protocol (PCP) specifically), `Wikipedia <https://en.wikipedia.org/wiki/Universal_Plug_and_Play>`__ is a good first stop, the specification can be found at the `Open Connectivity Foundation <https://openconnectivity.org/developer/specifications/upnp-resources/upnp/>`__ and Godot's implementation is based on the `MiniUPnP client <https://github.com/miniupnp/miniupnp>`__.
+\ **拓展阅读：** 如果你想了解更多关于 UPnP（特别是互联网网关设备 IGD 和端口控制协议 PCP）的信息，\ `维基百科 <https://en.wikipedia.org/wiki/Universal_Plug_and_Play>`__ 是一个不错的入门站点；相关规范可以在 `开放连接基金会（Open Connectivity Foundation） <https://openconnectivity.org/developer/specifications/upnp-resources/upnp/>`__ 找到；而 Godot 的实现则是基于 `MiniUPnP 客户端 <https://github.com/miniupnp/miniupnp>`__\ 。
 
 .. rst-class:: classref-reftable-group
 

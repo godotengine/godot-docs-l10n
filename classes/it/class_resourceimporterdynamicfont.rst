@@ -184,17 +184,17 @@ L'attivazione di :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_proper
 
 :ref:`int<class_int>` **hinting** = ``3`` :ref:`🔗<class_ResourceImporterDynamicFont_property_hinting>`
 
-The hinting mode to use. This controls how aggressively glyph edges should be snapped to pixels when rasterizing the font. Depending on personal preference, you may prefer using one hinting mode over the other. Hinting modes other than **None** are only effective if the font contains hinting data (see :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`).
+La modalità di hinting da usare. Controlla quanto aggressivamente i bordi dei glifi devono essere agganciati ai pixel quando si rasterizza il font. A seconda delle preferenze personali, potresti preferire usare una modalità di hinting rispetto all'altra. Le modalità di hinting diverse da **None** sono efficaci solo se il font contiene dati di hinting (vedi :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`).
 
-\ **None:** Smoothest appearance, which can make the font look blurry at small sizes.
+\ **None:**\ l' aspetto più fluido, che può far apparire il font sfocato a piccole dimensioni.
 
-\ **Light:** Sharp result by snapping glyph edges to pixels on the Y axis only.
+\ **Light:** aspetto nitido, agganciando i bordi dei glifi ai pixel solo sull'asse Y.
 
-\ **Normal:** Sharpest by snapping glyph edges to pixels on both X and Y axes.
+\ **Full:** l'aspetto più nitido, agganciando i bordi dei glifi ai pixel su entrambi gli assi X e Y.
 
-\ **Light (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Light** for other fonts.
+\ **Light (Except Pixel Fonts):** **Disabled** per i font in stile pixellato (i contorni di ogni glifo contengono solo linee rette orizzontali e verticali), **Light** per gli altri font.
 
-\ **Normal (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Normal** for other fonts.
+\ **Normal (Except Pixel Fonts):** **Disabled** per i font in stile pixellato (i contorni di ogni glifo contengono solo linee rette orizzontali e verticali), **Normale** per gli altri font.
 
 .. rst-class:: classref-item-separator
 

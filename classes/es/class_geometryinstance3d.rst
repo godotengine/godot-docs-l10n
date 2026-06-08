@@ -23,7 +23,7 @@ Nodo base para instancias visuales basadas en la geometría. Comparte algunas fu
 Tutoriales
 --------------------
 
-- :doc:`Visibility ranges (HLOD) <../tutorials/3d/visibility_ranges>`
+- :doc:`Rangos de visibilidad (HLOD) <../tutorials/3d/visibility_ranges>`
 
 .. rst-class:: classref-reftable-group
 

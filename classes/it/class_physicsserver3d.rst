@@ -663,9 +663,9 @@ The amount of damping once the slider limits are surpassed.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_MOTION_SOFTNESS** = ``5``
 
-A factor applied to the movement across the slider axis as long as the slider is in the limits. The lower, the slower the movement.
+Un fattore applicato al movimento attraverso l'asse dello slider finché lo slider è nei limiti. Più è basso, più lento è il movimento.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_MOTION_RESTITUTION:
 
@@ -703,9 +703,9 @@ A factor applied to the movement across axes orthogonal to the slider.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_ORTHOGONAL_RESTITUTION** = ``9``
 
-The amount of restitution when movement is across axes orthogonal to the slider.
+La quantità di restituzione quando il movimento avviene lungo gli assi ortogonali allo slider.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_ORTHOGONAL_DAMPING:
 
@@ -743,9 +743,9 @@ The lower limit of rotation in the slider.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_SOFTNESS** = ``13``
 
-A factor applied to the all rotation once the limit is surpassed.
+Un fattore applicato a tutta la rotazione una volta superato il limite.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_RESTITUTION:
 
@@ -753,9 +753,9 @@ A factor applied to the all rotation once the limit is surpassed.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_RESTITUTION** = ``14``
 
-The amount of restitution of the rotation when the limit is surpassed.
+La quantità di restituzione della rotazione quando il limite viene superato.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_DAMPING:
 
@@ -763,9 +763,9 @@ The amount of restitution of the rotation when the limit is surpassed.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_DAMPING** = ``15``
 
-The amount of damping of the rotation when the limit is surpassed.
+La quantità di smorzamento della rotazione quando il limite viene superato.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_MOTION_SOFTNESS:
 
@@ -803,9 +803,9 @@ The amount of damping of the rotation in the limits.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_ORTHOGONAL_SOFTNESS** = ``19``
 
-A factor that gets applied to the all rotation across axes orthogonal to the slider.
+Un fattore che è applicato a tutta la rotazione lungo gli assi ortogonali allo slider.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_ORTHOGONAL_RESTITUTION:
 
@@ -851,11 +851,11 @@ enum **ConeTwistJointParam**: :ref:`🔗<enum_PhysicsServer3D_ConeTwistJointPara
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_SWING_SPAN** = ``0``
 
-Swing is rotation from side to side, around the axis perpendicular to the twist axis.
+L'oscillazione è la rotazione da un lato all'altro, attorno all'asse perpendicolare all'asse di torsione.
 
-The swing span defines, how much rotation will not get corrected along the swing axis.
+L'intervallo di oscillazione definisce quanta rotazione non verrà corretta lungo l'asse di oscillazione.
 
-Could be defined as looseness in the :ref:`ConeTwistJoint3D<class_ConeTwistJoint3D>`. If below 0.05, this behavior is locked.
+Potrebbe essere definito come allentamento nel :ref:`ConeTwistJoint3D<class_ConeTwistJoint3D>`. Se inferiore a 0.05, questo comportamento è bloccato.
 
 .. _class_PhysicsServer3D_constant_CONE_TWIST_JOINT_TWIST_SPAN:
 
@@ -863,7 +863,7 @@ Could be defined as looseness in the :ref:`ConeTwistJoint3D<class_ConeTwistJoint
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_TWIST_SPAN** = ``1``
 
-Twist is the rotation around the twist axis, this value defined how far the joint can twist. Twist is locked if below 0.05.
+La torsione è la rotazione attorno all'asse di torsione, questo valore definisce quanto lontano il giunto può ruotare. La torsione è bloccata se inferiore a 0.05.
 
 .. _class_PhysicsServer3D_constant_CONE_TWIST_JOINT_BIAS:
 
@@ -881,9 +881,9 @@ The speed with which the swing or twist will take place. The higher, the faster.
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_SOFTNESS** = ``3``
 
-The ease with which the Joint3D twists, if it's too low, it takes more force to twist the joint.
+La facilità con cui il Joint3D si torce: se è troppo basso, serve più forza per torcere il giunto.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_CONE_TWIST_JOINT_RELAXATION:
 
@@ -891,9 +891,9 @@ The ease with which the Joint3D twists, if it's too low, it takes more force to 
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_RELAXATION** = ``4``
 
-Defines, how fast the swing- and twist-speed-difference on both sides gets synced.
+Definisce la velocità con cui la differenza di velocità di oscillazione e di torsione su entrambi i lati è sincronizzata.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -927,9 +927,9 @@ La differenza massima tra gli assi dei punti di rotazione.
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_LIMIT_SOFTNESS** = ``2``
 
-A factor that gets applied to the movement across the axes. The lower, the slower the movement.
+Un fattore che è applicato al movimento attraverso gli assi. Più è basso, più lento è il movimento.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_RESTITUTION:
 
@@ -937,9 +937,9 @@ A factor that gets applied to the movement across the axes. The lower, the slowe
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_RESTITUTION** = ``3``
 
-The amount of restitution on the axes movement. The lower, the more velocity-energy gets lost.
+La quantità di restituzione sul movimento degli assi. Più è bassa, più energia-velocità viene persa.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_DAMPING:
 
@@ -1035,9 +1035,9 @@ A factor that gets multiplied onto all rotations across the axes.
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_DAMPING** = ``13``
 
-The amount of rotational damping across the axes. The lower, the more damping occurs.
+La quantità di smorzamento rotazionale lungo gli assi. Più è basso, maggiore è lo smorzamento.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_RESTITUTION:
 
@@ -1045,9 +1045,9 @@ The amount of rotational damping across the axes. The lower, the more damping oc
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_RESTITUTION** = ``14``
 
-The amount of rotational restitution across the axes. The lower, the more restitution occurs.
+La quantità di restituzione rotazionale lungo gli assi. Più è bassa, maggiore è la restituzione.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_FORCE_LIMIT:
 
@@ -1065,9 +1065,9 @@ The maximum amount of force that can occur, when rotating around the axes.
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_ERP** = ``16``
 
-When correcting the crossing of limits in rotation across the axes, this error tolerance factor defines how much the correction gets slowed down. The lower, the slower.
+Quando si corregge il superamento dei limiti nella rotazione tra gli assi, questo fattore di tolleranza all'errore definisce quanto viene rallentata la correzione. Più è basso, più è lento.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_MOTOR_TARGET_VELOCITY:
 
@@ -1799,9 +1799,9 @@ Costante per impostare/ottenere il bias predefinito del risolutore per tutti i c
 
 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` **SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD** = ``4``
 
-Constant to set/get the threshold linear velocity of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after the time given.
+Costante per impostare/ottenere la soglia della velocità lineare di attività. Un corpo contrassegnato come potenzialmente inattivo sia per la velocità lineare sia per quella angolare sarà messo in modalità riposo dopo il tempo specificato.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD:
 
@@ -1809,9 +1809,9 @@ Constant to set/get the threshold linear velocity of activity. A body marked as 
 
 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` **SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD** = ``5``
 
-Constant to set/get the threshold angular velocity of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after the time given.
+Costante per impostare/ottenere la soglia della velocità angolare di attività. Un corpo contrassegnato come potenzialmente inattivo sia per la velocità lineare sia per quella angolare sarà messo in modalità riposo dopo il tempo specificato.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP:
 

@@ -14,13 +14,13 @@ BoneTwistDisperser3D
 Опис
 --------
 
-This **BoneTwistDisperser3D** allows for smooth twist interpolation between multiple bones by dispersing the end bone's twist to the parents. This only changes the twist without changing the global position of each joint.
+Цей **BoneTwistDisperser3D** забезпечує плавну інтерполяцію скручування між декількома кістками шляхом розподілу скручування кінцевої кістки між її батьківськими елементами. Це змінює лише скручування, не впливаючи на загальне положення кожного суглоба.
 
-This is useful for smoothly twisting bones in combination with :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` and IK.
+Це корисно для плавного скручування кісток у поєднанні з :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` та IK.
 
-\ **Note:** If an extracted twist is greater than 180 degrees, flipping occurs. This is similar to :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
+\ **Примітка:** Якщо витягнуте скручування перевищує 180 градусів, кістка перевернеться. Це схоже на :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
 
-\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **Примітка:** Більшість методів у цьому класі приймають параметр ``index``. Цей параметр визначає, який запис зі списку налаштувань повернути, якщо IK має кілька записів (наприклад, ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 

@@ -7,26 +7,26 @@ AudioEffectDistortion
 
 **Успадковує:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a distortion audio effect to an audio bus.
+Додає аудіоефект спотворення до аудіошини.
 
-Remaps audio samples using a nonlinear function to achieve a distorted sound.
+Перерозподіляє аудіосегменти за допомогою нелінійної функції для отримання спотвореного звуку.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-A "distortion" effect modifies the waveform via a nonlinear mathematical function (see available ones in :ref:`Mode<enum_AudioEffectDistortion_Mode>`), based on the amplitude of the waveform's samples.
+Ефект «дисторшн» змінює форму сигналу за допомогою нелінійної математичної функції (доступні варіанти див. у :ref:`Mode<enum_AudioEffectDistortion_Mode>`), виходячи з амплітуди окремих точок сигналу.
 
-\ **Note:** In a nonlinear function, an input sample at *x* amplitude value, will either have its amplitude increased or decreased to a *y* value, based on the function value at *x*, which is why even at the same :ref:`drive<class_AudioEffectDistortion_property_drive>`, the output sound will vary depending on the input's volume. To change the volume while maintaining the output waveform, use :ref:`post_gain<class_AudioEffectDistortion_property_post_gain>`.
+\ **Примітка:** У нелінійній функції амплітуда вхідного семпла зі значенням *x* буде збільшена або зменшена до значення *y* на основі значення функції в точці *x*, тому навіть при однаковому значенні :ref:`drive<class_AudioEffectDistortion_property_drive>` вихідний звук буде змінюватися залежно від гучності вхідного сигналу. Щоб змінити гучність, зберігаючи вихідну форму сигналу, використовуйте :ref:`post_gain<class_AudioEffectDistortion_property_post_gain>`.
 
-In this effect, each type is a different nonlinear function. The different types available are: clip, atan, lofi (bitcrush), overdrive, and waveshape. Every distortion type available here is symmetric: negative amplitude values are affected the same way as positive ones.
+У цьому ефекті кожен тип є окремою нелінійною функцією. Доступні такі типи: clip, atan, lofi (bitcrush), overdrive та waveshape. Усі типи спотворення, доступні тут, є симетричними: на від’ємні значення амплітуди впливають так само, як і на додатні.
 
-Although distortion will always change frequency content, usually by introducing high harmonics, different distortion types offer a range of sound qualities; from "soft" and "warm", to "crunchy" and "abrasive".
+Хоча спотворення завжди змінює частотний склад, зазвичай додаючи високі гармоніки, різні типи спотворення пропонують широкий діапазон звукових якостей: від «м'якого» і «теплого» до «хрусткого» і «різкого».
 
-For games, it can help simulate sound coming from some saturated device or speaker very efficiently. It can also help the audio stand out in a mix, by introducing higher frequencies and increasing the volume.
+У іграх це може допомогти дуже ефективно імітувати звук, що виходить з якогось перевантаженого пристрою або динаміка. Це також може допомогти аудіо виділитися в міксі, додаючи вищі частоти та збільшуючи гучність.
 
-\ **Note:** Although usually imperceptible, an enabled distortion effect still changes the sound even when :ref:`drive<class_AudioEffectDistortion_property_drive>` is set to 0. This is not a bug. If this behavior is undesirable, consider disabling the effect using :ref:`AudioServer.set_bus_effect_enabled()<class_AudioServer_method_set_bus_effect_enabled>`.
+\ **Примітка:** Хоча зазвичай це непомітно, увімкнений ефект спотворення все одно змінює звук, навіть якщо :ref:`drive<class_AudioEffectDistortion_property_drive>` встановлено на 0. Це не є помилкою. Якщо така поведінка є небажаною, розгляньте можливість вимкнення ефекту за допомогою :ref:`AudioServer.set_bus_effect_enabled()<class_AudioServer_method_set_bus_effect_enabled>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -35,7 +35,7 @@ For games, it can help simulate sound coming from some saturated device or speak
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Аудіоефекти <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -78,7 +78,7 @@ enum **Mode**: :ref:`🔗<enum_AudioEffectDistortion_Mode>`
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_CLIP** = ``0``
 
-Flattens the waveform at 0 dB in a sharp manner. :ref:`drive<class_AudioEffectDistortion_property_drive>` increases amplitude of samples exponentially. This mode functions as a hard clipper if :ref:`drive<class_AudioEffectDistortion_property_drive>` is set to 0, and is the only mode that clips audio signals at 0 dB.
+Різко згладжує форму сигналу на рівні 0 дБ. Параметр :ref:`drive<class_AudioEffectDistortion_property_drive>` експоненціально збільшує амплітуду семплів. Цей режим працює як жорсткий кліпер, якщо значення :ref:`drive<class_AudioEffectDistortion_property_drive>` встановлено на 0, і є єдиним режимом, який обрізає аудіосигнали на рівні 0 дБ.
 
 .. _class_AudioEffectDistortion_constant_MODE_ATAN:
 
@@ -86,7 +86,7 @@ Flattens the waveform at 0 dB in a sharp manner. :ref:`drive<class_AudioEffectDi
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_ATAN** = ``1``
 
-Flattens the waveform in a smooth manner, following an arctangent curve. The audio decreases in volume, before flattening peaks to ``PI * 4.0`` (linear value), if it was normalized beforehand.
+Плавно вирівнює форму сигналу, слідуючи кривій арктангенса. Гучність звуку зменшується, а потім піки вирівнюються до значення ``PI * 4.0`` (лінійне значення), якщо сигнал було попередньо нормалізовано.
 
 .. _class_AudioEffectDistortion_constant_MODE_LOFI:
 
@@ -94,7 +94,7 @@ Flattens the waveform in a smooth manner, following an arctangent curve. The aud
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_LOFI** = ``2``
 
-Decreases audio bit depth to achieve a low-resolution audio signal, going from 16-bit to 2-bit. Can be used to emulate the sound of early digital audio devices.
+Зменшує розрядність аудіосигналу для отримання аудіосигналу з низькою роздільною здатністю — з 16 біт до 2 біт. Може використовуватися для імітації звучання ранніх цифрових аудіопристроїв.
 
 .. _class_AudioEffectDistortion_constant_MODE_OVERDRIVE:
 
@@ -102,7 +102,7 @@ Decreases audio bit depth to achieve a low-resolution audio signal, going from 1
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_OVERDRIVE** = ``3``
 
-Emulates the warm distortion produced by a field effect transistor, which is commonly used in solid-state musical instrument amplifiers. :ref:`drive<class_AudioEffectDistortion_property_drive>` has no effect in this mode.
+Імітує тепле спотворення, що створюється польовим транзистором, який зазвичай використовується в підсилювачах для музичних інструментів на транзисторах. У цьому режимі параметр :ref:`drive<class_AudioEffectDistortion_property_drive>` не впливає на звучання.
 
 .. _class_AudioEffectDistortion_constant_MODE_WAVESHAPE:
 
@@ -110,7 +110,7 @@ Emulates the warm distortion produced by a field effect transistor, which is com
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_WAVESHAPE** = ``4``
 
-Flattens the waveform in a smooth manner, until it reaches a sharp peak at ``drive = 1``, following a generic absolute sigmoid function.
+Плавно згладжує форму сигналу, доки він не досягне різкого піку при ``drive = 1``, слідуючи загальній абсолютній сигмоїдній функції.
 
 .. rst-class:: classref-section-separator
 
@@ -132,7 +132,7 @@ Flattens the waveform in a smooth manner, until it reaches a sharp peak at ``dri
 - |void| **set_drive**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drive**\ (\ )
 
-Distortion intensity. Controls how much of the input audio is affected by the distortion curve by moving from a linear function to a nonlinear one. Value can range from 0 to 1.
+Інтенсивність спотворення. Регулює ступінь впливу кривої спотворення на вхідний аудіосигнал шляхом переходу від лінійної функції до нелінійної. Значення може коливатися в діапазоні від 0 до 1.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Distortion intensity. Controls how much of the input audio is affected by the di
 - |void| **set_mode**\ (\ value\: :ref:`Mode<enum_AudioEffectDistortion_Mode>`\ )
 - :ref:`Mode<enum_AudioEffectDistortion_Mode>` **get_mode**\ (\ )
 
-Distortion type. Changes the nonlinear function used to distort the waveform. See :ref:`Mode<enum_AudioEffectDistortion_Mode>`.
+Тип спотворення. Змінює нелінійну функцію, яка використовується для спотворення форми сигналу. Див. :ref:`Mode<enum_AudioEffectDistortion_Mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ Distortion type. Changes the nonlinear function used to distort the waveform. Se
 - |void| **set_post_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_post_gain**\ (\ )
 
-Gain after the effect, in dB. Value can range from -80 to 24.
+Коефіцієнт підсилення після ефекту, в дБ. Значення може коливатися в діапазоні від -80 до 24.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ Gain after the effect, in dB. Value can range from -80 to 24.
 - |void| **set_pre_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain**\ (\ )
 
-Gain before the effect, in dB. Value can range from -60 to 60.
+Коефіцієнт підсилення до застосування ефекту, у дБ. Значення може коливатися в діапазоні від -60 до 60.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

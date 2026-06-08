@@ -726,7 +726,7 @@ HSL OK Колір Модель кола колір простору.
 
 :ref:`Texture2D<class_Texture2D>` **color_copy** :ref:`🔗<class_ColorPicker_theme_icon_color_copy>`
 
-The icon for the button that copies the color in text format to the clipboard.
+Піктограма кнопки, яка копіює колір у текстовому форматі до буфера обміну.
 
 .. rst-class:: classref-item-separator
 

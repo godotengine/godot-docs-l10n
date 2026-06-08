@@ -14,17 +14,17 @@ Risorsa per i nodi di ambiente (come :ref:`WorldEnvironment<class_WorldEnvironme
 Descrizione
 ----------------------
 
-Resource for environment nodes (like :ref:`WorldEnvironment<class_WorldEnvironment>`) that define multiple environment operations (such as background :ref:`Sky<class_Sky>` or :ref:`Color<class_Color>`, ambient light, fog, depth-of-field...). These parameters affect the final render of the scene. The order of these operations is:
+Risorsa per nodi di ambiente (come :ref:`WorldEnvironment<class_WorldEnvironment>`) che definiscono molteplici operazioni d'ambiente (come lo sfondo di :ref:`Sky<class_Sky>` o :ref:`Color<class_Color>`, luce ambientale, nebbia, profondità di campo...). Questi parametri influenzano il rendering finale della scena. L'ordine di queste operazioni è:
 
-- Depth of Field Blur
+- Sfocatura della profondità di campo
 
-- Auto Exposure
+- Esposizione automatica
 
-- Glow
+- Bagliore
 
-- Tonemap
+- Mappa dei toni (Esposizione automatica)
 
-- Adjustments
+- Aggiustamenti
 
 .. rst-class:: classref-introduction-group
 
@@ -444,9 +444,9 @@ Una semplice curva di mappatura dei toni che scarta i valori luminosi per evitar
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_FILMIC** = ``2``
 
-Uses a film-like tonemapping curve to prevent clipping of bright values and provide better contrast than :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`. Slightly slower than :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`.
+Utilizza una curva di mappatura dei toni simile a quella di una pellicola per impedire il clipping dei valori luminosi e fornire un contrasto migliore rispetto a :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`. Leggermente più lento di :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>`.
 
-\ **Note:** This tonemapper does not support HDR output because it produces output in the SDR range. It is recommended to use a different tonemapper when rendering to an HDR screen.
+\ **Nota:** Questa mappatura non supporta l'output HDR perché produce un output nella gamma SDR. Si consiglia di utilizzare una mappatura diversa quando si renderizza su uno schermo HDR.
 
 .. _class_Environment_constant_TONE_MAPPER_ACES:
 
@@ -454,11 +454,11 @@ Uses a film-like tonemapping curve to prevent clipping of bright values and prov
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_ACES** = ``3``
 
-Uses a high-contrast film-like tonemapping curve and desaturates bright values for a more realistic appearance. Slightly slower than :ref:`TONE_MAPPER_FILMIC<class_Environment_constant_TONE_MAPPER_FILMIC>`.
+Utilizza una curva di mappatura dei toni ad alto contrasto simile a quella di un film e desatura i valori luminosi per un aspetto più realistico. Leggermente più lento di :ref:`TONE_MAPPER_FILMIC<class_Environment_constant_TONE_MAPPER_FILMIC>`.
 
-\ **Note:** This tonemapping operator is called "ACES Fitted" in Godot 3.x.
+\ **Nota:** Questo operatore di mappatura dei toni è chiamato "ACES Fitted" in Godot 3.x.
 
-\ **Note:** This tonemapper does not support HDR output because it produces output in the SDR range. It is recommended to use a different tonemapper when rendering to an HDR screen.
+\ **Nota:** Questa mappatura non supporta l'output HDR perché produce un output nella gamma SDR. Si consiglia di utilizzare una mappatura diversa quando si renderizza su uno schermo HDR.
 
 .. _class_Environment_constant_TONE_MAPPER_AGX:
 
@@ -466,7 +466,7 @@ Uses a high-contrast film-like tonemapping curve and desaturates bright values f
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_AGX** = ``4``
 
-Uses an adjustable film-like tonemapping curve and desaturates bright values for a more realistic appearance. Better than other tonemappers at maintaining the hue of colors as they become brighter. The slowest tonemapping option.
+Utilizza una curva di mappatura dei toni simile a quella di una pellicola e desatura i valori brillanti per un aspetto più realistico. Meglio di altri mappatori dei toni nel mantenere la tonalità dei colori mentre diventano più brillanti. L'opzione di mappatura dei toni più lenta.
 
 .. rst-class:: classref-item-separator
 
@@ -617,9 +617,9 @@ Applies a simple brightness adjustment to the rendered image after tonemaping. T
 - |void| **set_adjustment_color_correction**\ (\ value\: :ref:`Texture<class_Texture>`\ )
 - :ref:`Texture<class_Texture>` **get_adjustment_color_correction**\ (\ )
 
-The :ref:`Texture2D<class_Texture2D>` or :ref:`Texture3D<class_Texture3D>` lookup table (LUT) to use for the built-in post-process color grading. Can use a :ref:`GradientTexture1D<class_GradientTexture1D>` for a 1-dimensional LUT, or a :ref:`Texture3D<class_Texture3D>` for a more complex LUT. Effective only if :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` is ``true``.
+La tabella di ricerca (LUT) :ref:`Texture2D<class_Texture2D>` o :ref:`Texture3D<class_Texture3D>` da utilizzare per la correzione integrata del colore in post-elaborazione. È possibile utilizzare una :ref:`GradientTexture1D<class_GradientTexture1D>` per una LUT monodimensionale o una :ref:`Texture3D<class_Texture3D>` per una LUT più complessa. Efficace solo se :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` è ``true``.
 
-\ **Note:** Color correction does not currently support HDR output due to only supporting values in the SDR (0.0 to 1.0) range.
+\ **Nota:** La correzione del colore attualmente non supporta l'output HDR poiché supporta solo valori nella gamma SDR (da 0.0 a 1.0).
 
 .. rst-class:: classref-item-separator
 
@@ -1992,11 +1992,11 @@ La tolleranza di profondità per i riflessi sullo spazio dello schermo.
 - |void| **set_ssr_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ssr_enabled**\ (\ )
 
-If ``true``, screen-space reflections are enabled. Screen-space reflections are more accurate than reflections from :ref:`VoxelGI<class_VoxelGI>`\ s or :ref:`ReflectionProbe<class_ReflectionProbe>`\ s, but are slower and can't reflect surfaces occluded by others.
+Se ``true``, i riflessi sullo spazio dello schermo sono abilitati. I riflessi sullo spazio dello schermo sono più precisi dei riflessi di :ref:`VoxelGI<class_VoxelGI>` o :ref:`ReflectionProbe<class_ReflectionProbe>`, ma sono più lenti e non possono riflettere le superfici occluse da altre.
 
-\ **Note:** SSR is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **Nota:** SSR è supportato solo nel metodo di rendering Forward+, non Mobile o Compatibilità.
 
-\ **Note:** SSR is not supported on viewports that have a transparent background (where :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is ``true``).
+\ **Nota:** SSR non è supportato nelle viewport che hanno uno sfondo trasparente (dove :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` è ``true``).
 
 .. rst-class:: classref-item-separator
 
@@ -2136,11 +2136,11 @@ La modalità di mappatura dei toni da usare. La mappatura dei toni è il process
 - |void| **set_tonemap_white**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tonemap_white**\ (\ )
 
-The white reference value for tonemapping, which indicates where bright white is located in the scale of values provided to the tonemapper. For photorealistic lighting, it is recommended to set :ref:`tonemap_white<class_Environment_property_tonemap_white>` to at least ``6.0``. Higher values result in less blown out highlights, but may make the scene appear lower contrast. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` will be used instead when using the :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` tonemapper. See also :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
+Il valore di riferimento bianco per la mappatura dei toni (detto anche "punto di bianco"), che indica dove si trova il bianco brillante nella scala di valori forniti al mappatore dei toni. Per un'illuminazione fotorealistica, si consiglia di impostare :ref:`tonemap_white<class_Environment_property_tonemap_white>` ad almeno ``6.0``. Valori più alti rendono i chiari più spenti, ma potrebbero far apparire la scena meno contrastata. Sarà utilizzato :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` in alternativa quando si usa la mappatura :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>`. Vedi anche :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
 
-\ **Note:** :ref:`tonemap_white<class_Environment_property_tonemap_white>` must be set to ``2.0`` or lower on the Mobile renderer to produce bright images.
+\ **Nota:** :ref:`tonemap_white<class_Environment_property_tonemap_white>` deve essere impostato a ``2.0`` o inferiore sul renderer Mobile per produrre immagini luminose.
 
-\ **Note:** :ref:`tonemap_white<class_Environment_property_tonemap_white>` is ignored when using :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` and will be dynamically adjusted at runtime to never be less than the parent window's :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` when using :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>` with :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`.
+\ **Nota:** :ref:`tonemap_white<class_Environment_property_tonemap_white>` è ignorato quando si usa :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` e sarà regolato dinamicamente in fase di esecuzione in modo che non sia mai inferiore a :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` della finestra padre quando si utilizza :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>` con :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`.
 
 .. rst-class:: classref-item-separator
 

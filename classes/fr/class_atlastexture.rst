@@ -113,7 +113,7 @@ La marge autour de la :ref:`region<class_AtlasTexture_property_region>`. Utile p
 
 La région utilisée pour dessiner l':ref:`atlas<class_AtlasTexture_property_atlas>`. Si l'une ou l'autre des dimensions de la région vaut ``0``, la valeur de la taille de l':ref:`atlas<class_AtlasTexture_property_atlas>` sera utilisée pour cet axe à la place.
 
-\ **Note:** La taille de l'image est toujours un entier, donc la taille réelle de la région est arrondie.
+\ **Note :** La taille de l'image est toujours un entier, donc la taille réelle de la région est arrondie.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

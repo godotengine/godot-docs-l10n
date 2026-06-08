@@ -147,11 +147,11 @@ Descrizioni dei metodi
 
 :ref:`int<class_int>` **_get_composition_layer**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`
 
-Returns a pointer to an ``XrCompositionLayerBaseHeader`` struct to provide the given composition layer.
+Restituisce un puntatore a una struct ``XrCompositionLayerBaseHeader`` per fornire il livello di composizione specificato.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
+Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering. Inoltre, i dati restituiti saranno utilizzati poco dopo la chiamata di questo metodo, quindi devono rimanere validi fino alla prossima volta che :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` viene eseguito.
 
 .. rst-class:: classref-item-separator
 
@@ -163,11 +163,11 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_get_composition_layer_count**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_composition_layer_count>`
 
-Returns the number of composition layers this extension wrapper provides via :ref:`_get_composition_layer()<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`.
+Restituisce il numero di livelli di composizione forniti da questo wrapper d'estensione tramite :ref:`_get_composition_layer()<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
+Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering. Inoltre, i dati restituiti saranno utilizzati poco dopo la chiamata di questo metodo, quindi devono rimanere validi fino alla prossima volta che :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` viene eseguito.
 
 .. rst-class:: classref-item-separator
 
@@ -179,11 +179,11 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_get_composition_layer_order**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_composition_layer_order>`
 
-Returns an integer that will be used to sort the given composition layer provided via :ref:`_get_composition_layer()<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`. Lower numbers will move the layer to the front of the list, and higher numbers to the end. The default projection layer has an order of ``0``, so layers provided by this method should probably be above or below (but not exactly) ``0``.
+Restituisce un intero che sarà utilizzato per ordinare il livello di composizione fornito tramite :ref:`_get_composition_layer()<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`. I numeri più bassi sposteranno il livello in cima alla lista, mentre i numeri più alti alla fine. Il livello di proiezione predefinito ha un ordine di ``0``, quindi i livelli forniti da questo metodo dovrebbero probabilmente essere sopra o sotto (ma non esattamente) ``0``.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
+Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering. Inoltre, i dati restituiti saranno utilizzati poco dopo la chiamata di questo metodo, quindi devono rimanere validi fino alla prossima volta che :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` viene eseguito.
 
 .. rst-class:: classref-item-separator
 
@@ -223,9 +223,9 @@ Restituisce un :ref:`PackedStringArray<class_PackedStringArray>` di nomi di trac
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_viewport_composition_layer_extension_properties**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`
 
-Gets an array of :ref:`Dictionary<class_Dictionary>`\ s that represent properties, just like :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`, that will be added to :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` nodes.
+Ottiene un array di :ref:`Dictionary<class_Dictionary>` che rappresentano proprietà, proprio come :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`, che saranno aggiunte ai nodi :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -317,11 +317,11 @@ Called right after the main swapchains are (re)created.
 
 |void| **_on_post_draw_viewport**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_post_draw_viewport>`
 
-Called right after the given viewport is rendered.
+Chiamato subito dopo il rendering della viewport specificata.
 
-\ **Note:** The draw commands might only be queued at this point, not executed.
+\ **Nota:** I comandi di disegno potrebbero essere solo in coda a questo punto, non eseguiti.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -347,9 +347,9 @@ Called right before the given viewport is rendered.
 
 |void| **_on_pre_render**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_pre_render>`
 
-Called right before the XR viewports begin their rendering step.
+Chiamato subito prima che le viewport XR inizino la fase di rendering.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -561,11 +561,11 @@ Called to allow an extension to print additional information about its view conf
 
 :ref:`int<class_int>` **_set_android_surface_swapchain_create_info_and_get_next_pointer**\ (\ property_values\: :ref:`Dictionary<class_Dictionary>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_android_surface_swapchain_create_info_and_get_next_pointer>`
 
-Add additional data structures to Android surface swapchains created by :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
+Aggiunge ulteriori strutture dati alle swapchain di superfice di Android create da :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
 
-\ ``property_values`` contains the values of the properties returned by :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
+\ ``property_values`` contiene i valori delle proprietà restituite da :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -577,11 +577,11 @@ Add additional data structures to Android surface swapchains created by :ref:`Op
 
 :ref:`int<class_int>` **_set_frame_end_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_frame_end_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrFrameEndInfo``.
+Aggiunge ulteriori strutture dati a ``XrFrameEndInfo``.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
+Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering. Inoltre, i dati restituiti saranno utilizzati poco dopo la chiamata di questo metodo, quindi devono rimanere validi fino alla prossima volta che :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` viene eseguito.
 
 .. rst-class:: classref-item-separator
 
@@ -593,11 +593,11 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_set_frame_wait_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_frame_wait_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrFrameWaitInfo``.
+Aggiunge ulteriori strutture dati a ``XrFrameWaitInfo``.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
+Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -721,11 +721,11 @@ Add additional data structures when querying OpenXR view configuration.
 
 :ref:`int<class_int>` **_set_view_locate_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_view_locate_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrViewLocateInfo``.
+Aggiunge ulteriori strutture dati a ``XrViewLocateInfo``.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
+Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering. Inoltre, i dati restituiti saranno utilizzati poco dopo la chiamata di questo metodo, quindi devono rimanere validi fino alla prossima volta che :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` viene eseguito.
 
 .. rst-class:: classref-item-separator
 
@@ -737,13 +737,13 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_set_viewport_composition_layer_and_get_next_pointer**\ (\ layer\: ``const void*``, property_values\: :ref:`Dictionary<class_Dictionary>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_viewport_composition_layer_and_get_next_pointer>`
 
-Add additional data structures to composition layers created by :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
+Aggiunge ulteriori strutture dati ai livelli di composizione creati da :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
 
-\ ``property_values`` contains the values of the properties returned by :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
+\ ``property_values`` contiene i valori delle proprietà restituite da :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
 
-\ ``layer`` is a pointer to an ``XrCompositionLayerBaseHeader`` struct.
+\ ``layer`` è un puntatore a una struct ``XrCompositionLayerBaseHeader``.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering. Inoltre, i dati restituiti saranno utilizzati poco dopo la chiamata di questo metodo, quindi devono rimanere validi fino alla prossima volta che :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` viene eseguito.
 
 .. rst-class:: classref-item-separator
 
@@ -767,9 +767,9 @@ Restituisce l'estensione :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>` cre
 
 |void| **register_extension_wrapper**\ (\ ) :ref:`🔗<class_OpenXRExtensionWrapper_method_register_extension_wrapper>`
 
-Registers the extension. This should happen at core module initialization level.
+Registra l'estensione. Ciò dovrebbe avvenire a livello di inizializzazione principale dei moduli.
 
-\ **Note:** This cannot be called once OpenXR has been initialized.
+\ **Nota:** Non è possibile chiamare questo metodo una volta che OpenXR è stato inizializzato.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

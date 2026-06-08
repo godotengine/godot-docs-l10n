@@ -204,7 +204,7 @@ enum **RotationEditMode**: :ref:`🔗<enum_Node3D_RotationEditMode>`
 
 :ref:`RotationEditMode<enum_Node3D_RotationEditMode>` **ROTATION_EDIT_MODE_EULER** = ``0``
 
-The rotation is edited using a :ref:`Vector3<class_Vector3>` in `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__. In Godot, Euler angles always use intrinsic order, meaning that rotation happens around the local axes of the object.
+该旋转角度是通过一个 `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__\ （Euler angles）类型的 :ref:`Vector3<class_Vector3>`\ （三维向量）来进行编辑的。在 Godot 中，欧拉角始终使用内旋（intrinsic）顺序，这意味着旋转是围绕物体自身的局部坐标轴进行的。
 
 .. _class_Node3D_constant_ROTATION_EDIT_MODE_QUATERNION:
 
@@ -212,7 +212,7 @@ The rotation is edited using a :ref:`Vector3<class_Vector3>` in `Euler angles <h
 
 :ref:`RotationEditMode<enum_Node3D_RotationEditMode>` **ROTATION_EDIT_MODE_QUATERNION** = ``1``
 
-The rotation is edited using a :ref:`Quaternion<class_Quaternion>`. Quaternions avoid :doc:`gimbal lock <../tutorials/3d/using_transforms>` and having to choose an order of rotation, but are less intuitive. Quaternion rotation is mostly the same as rotors in 3D geometric algebra, except that the numbers are labeled differently.
+旋转量以 :ref:`Quaternion<class_Quaternion>`\ （四元数）的形式进行编辑。四元数可以避免 :doc:`gimbal lock <../tutorials/3d/using_transforms>` 以及必须选择旋转顺序的问题，但不如欧拉角直观。四元数旋转与 3D 几何代数中的旋转子（rotors）基本相同，只是数值的标记方式不同。
 
 .. _class_Node3D_constant_ROTATION_EDIT_MODE_BASIS:
 
@@ -457,17 +457,17 @@ The rotation is edited using a :ref:`Quaternion<class_Quaternion>`. Quaternions 
 - |void| **set_rotation**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation**\ (\ )
 
-Rotation of this node as `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians and in parent space (relative to the parent node). This value is obtained from :ref:`basis<class_Node3D_property_basis>`'s rotation.
+该节点的旋转角度，以 `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__\ （Euler angles）表示，单位为弧度，且处于父空间（相对于父节点）。该值提取自 :ref:`basis<class_Node3D_property_basis>` 的旋转分量。
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` is the angle around the local X axis (pitch);
+\ :ref:`Vector3.x<class_Vector3_property_x>` 是围绕局部 X 轴的旋转角度（俯仰角 / pitch）；
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` is the angle around the local Y axis (yaw);
+\ :ref:`Vector3.y<class_Vector3_property_y>` 是围绕局部 Y 轴的旋转角度（偏航角 / yaw）；
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` is the angle around the local Z axis (roll).
+\ :ref:`Vector3.z<class_Vector3_property_z>` 是围绕局部 Z 轴的旋转角度（滚转角 / roll）。
 
-The order of each consecutive rotation can be changed with :ref:`rotation_order<class_Node3D_property_rotation_order>` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
+每次连续旋转的顺序可以通过 :ref:`rotation_order<class_Node3D_property_rotation_order>` 来更改（详见 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` 常量）。在 Godot 中，欧拉角始终使用内旋（intrinsic）顺序。默认情况下，使用的是内旋 YXZ 约定（\ :ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`\ ）。
 
-\ **Note:** This property is edited in degrees in the inspector. If you want to use degrees in a script, use :ref:`rotation_degrees<class_Node3D_property_rotation_degrees>`.
+\ **注意：** 此属性在检视器（inspector）中是以“度”为单位进行编辑的。如果你想在脚本中使用“度”作为单位，请使用 :ref:`rotation_degrees<class_Node3D_property_rotation_degrees>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ The order of each consecutive rotation can be changed with :ref:`rotation_order<
 - |void| **set_rotation_order**\ (\ value\: :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`\ )
 - :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **get_rotation_order**\ (\ )
 
-The axis rotation order of the :ref:`rotation<class_Node3D_property_rotation>` property. In Godot, Euler angles always use intrinsic order, meaning that the final orientation is calculated by rotating around the local axes in this order.
+:ref:`rotation<class_Node3D_property_rotation>` 属性的轴旋转顺序。在 Godot 中，欧拉角始终使用内旋（intrinsic）顺序，这意味着最终的朝向是通过按照此顺序绕局部轴旋转来计算的。
 
 .. rst-class:: classref-item-separator
 

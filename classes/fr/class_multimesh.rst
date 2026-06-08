@@ -299,7 +299,7 @@ Choisissez si vous utilisez une méthode d'interpolation qui favorise la vitesse
 
 Lors de l'utilisation de faibles vitesses de tics de physique (généralement inférieur à 20) ou de vitesses élevées de rotation d'objets, vous pouvez obtenir de meilleurs résultats à partir du réglage en haute qualité.
 
-\ **Note: ** Une qualité rapide n'équivaut pas à une qualité basse. Sauf dans les cas spéciaux mentionnés ci-dessus, la qualité devrait être comparable à la haute qualité.
+\ **Note :** Une qualité rapide n'équivaut pas à une qualité basse. Sauf dans les cas spéciaux mentionnés ci-dessus, la qualité devrait être comparable à la haute qualité.
 
 .. rst-class:: classref-item-separator
 

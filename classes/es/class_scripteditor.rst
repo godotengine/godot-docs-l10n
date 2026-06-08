@@ -289,7 +289,7 @@ Reloads all currently opened files. This should be used when opened files are ch
 
 |void| **save_all_scripts**\ (\ ) :ref:`🔗<class_ScriptEditor_method_save_all_scripts>`
 
-Saves all open scripts.
+Guarda todos los scripts abiertos.
 
 .. rst-class:: classref-item-separator
 

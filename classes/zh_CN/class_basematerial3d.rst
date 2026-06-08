@@ -340,7 +340,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_ALBEDO** = ``0``
 
-指定每个像素颜色的纹理。
+逐像素指定颜色的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_METALLIC:
 
@@ -348,7 +348,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_METALLIC** = ``1``
 
-指定每个像素金属度值的纹理。
+逐像素指定金属度值的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_ROUGHNESS:
 
@@ -356,7 +356,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_ROUGHNESS** = ``2``
 
-指定每个像素粗糙度值的纹理。
+逐像素指定粗糙度值的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_EMISSION:
 
@@ -364,7 +364,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_EMISSION** = ``3``
 
-指定每个像素自发光颜色的纹理。
+逐像素指定自发光颜色的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_NORMAL:
 
@@ -372,7 +372,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_NORMAL** = ``4``
 
-指定每个像素法向量的纹理。
+逐像素指定法向量的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_BENT_NORMAL:
 
@@ -380,7 +380,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_BENT_NORMAL** = ``18``
 
-指定每个像素弯曲法向量的纹理。
+逐像素指定弯曲法向量的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_RIM:
 
@@ -388,7 +388,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_RIM** = ``5``
 
-指定每个像素边缘值的纹理。
+逐像素指定边缘值的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_CLEARCOAT:
 
@@ -396,7 +396,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_CLEARCOAT** = ``6``
 
-指定每个像素清漆值的纹理。
+逐像素指定清漆值的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FLOWMAP:
 
@@ -404,7 +404,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_FLOWMAP** = ``7``
 
-指定每个像素流图方向的纹理，用于 :ref:`anisotropy<class_BaseMaterial3D_property_anisotropy>`\ 。
+逐像素指定流向方向的纹理，用于 :ref:`anisotropy<class_BaseMaterial3D_property_anisotropy>`\ 。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_AMBIENT_OCCLUSION:
 
@@ -412,7 +412,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_AMBIENT_OCCLUSION** = ``8``
 
-指定每个像素环境光遮蔽的纹理。
+逐像素指定环境光遮蔽的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_HEIGHTMAP:
 
@@ -420,7 +420,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_HEIGHTMAP** = ``9``
 
-指定每个像素高度的纹理。
+逐像素指定高度的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_SUBSURFACE_SCATTERING:
 
@@ -428,7 +428,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_SUBSURFACE_SCATTERING** = ``10``
 
-指定每个像素次表面散射的纹理。
+逐像素指定次表面散射的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_SUBSURFACE_TRANSMITTANCE:
 
@@ -436,7 +436,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_SUBSURFACE_TRANSMITTANCE** = ``11``
 
-指定每个像素用于次表面散射的透射率的纹理。
+逐像素指定用于次表面散射的透射率的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_BACKLIGHT:
 
@@ -444,7 +444,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_BACKLIGHT** = ``12``
 
-指定每个像素背光颜色的纹理。
+逐像素指定背光颜色的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_REFRACTION:
 
@@ -452,7 +452,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_REFRACTION** = ``13``
 
-指定每个像素折射强度的纹理。
+逐像素指定折射强度的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_DETAIL_MASK:
 
@@ -460,7 +460,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_DETAIL_MASK** = ``14``
 
-指定每个像素细节蒙版混合值的纹理。
+逐像素指定细节蒙版混合值的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_DETAIL_ALBEDO:
 
@@ -468,7 +468,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_DETAIL_ALBEDO** = ``15``
 
-指定每个像素细节颜色的纹理。
+逐像素指定细节颜色的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_DETAIL_NORMAL:
 
@@ -476,7 +476,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_DETAIL_NORMAL** = ``16``
 
-指定每个像素细节法线的纹理。
+逐像素指定细节法线的纹理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_ORM:
 
@@ -2792,9 +2792,9 @@ Alpha 剪刀将丢弃值的阈值。较高的值将导致更多像素被丢弃�
 - |void| **set_specular**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_specular**\ (\ )
 
-调整镜面反射的强度。镜面反射由场景反射和镜面波瓣组成，镜面波瓣是从光源反射的亮点。当设置为 ``0.0`` 时，镜面反射将不可见。这与 :ref:`SPECULAR_DISABLED<class_BaseMaterial3D_constant_SPECULAR_DISABLED>` :ref:`SpecularMode<enum_BaseMaterial3D_SpecularMode>` 不同，因为 :ref:`SPECULAR_DISABLED<class_BaseMaterial3D_constant_SPECULAR_DISABLED>` 仅适用于来自光源的镜面反射波瓣。
+调整镜面反射的强度。镜面反射由场景反射和镜面波瓣组成，镜面波瓣是从光源反射的亮点。当设置为 ``0.0`` 时，镜面反射将不可见。这与 :ref:`SPECULAR_DISABLED<class_BaseMaterial3D_constant_SPECULAR_DISABLED>` :ref:`SpecularMode<enum_BaseMaterial3D_SpecularMode>` 不同，因为 :ref:`SPECULAR_DISABLED<class_BaseMaterial3D_constant_SPECULAR_DISABLED>` 仅适用于来自光源的镜面波瓣。
 
-\ **注意：**\ 与 :ref:`metallic<class_BaseMaterial3D_property_metallic>` 不同，这不是节能的，所以在大多数情况下应将其保留在 ``0.5``\ 。另见 :ref:`roughness<class_BaseMaterial3D_property_roughness>`\ 。
+\ **注意：**\ 与 :ref:`metallic<class_BaseMaterial3D_property_metallic>` 不同，这能量不守恒的，所以在大多数情况下应将其保留在 ``0.5``\ 。另见 :ref:`roughness<class_BaseMaterial3D_property_roughness>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2811,7 +2811,7 @@ Alpha 剪刀将丢弃值的阈值。较高的值将导致更多像素被丢弃�
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-用于指定对象的金属质感。这个值会与 :ref:`metallic<class_BaseMaterial3D_property_metallic>` 相乘。
+用于指定对象金属度的纹理。该值将与 :ref:`metallic<class_BaseMaterial3D_property_metallic>` 相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -3178,7 +3178,7 @@ Alpha 剪刀将丢弃值的阈值。较高的值将导致更多像素被丢弃�
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-纹理用于设置每个像素的边缘光照效果的强度。会与 :ref:`rim<class_BaseMaterial3D_property_rim>` 相乘。
+用于设置每个像素的边缘光照效果的强度的纹理。会与 :ref:`rim<class_BaseMaterial3D_property_rim>` 相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -3263,7 +3263,7 @@ Alpha 剪刀将丢弃值的阈值。较高的值将导致更多像素被丢弃�
 - |void| **set_shading_mode**\ (\ value\: :ref:`ShadingMode<enum_BaseMaterial3D_ShadingMode>`\ )
 - :ref:`ShadingMode<enum_BaseMaterial3D_ShadingMode>` **get_shading_mode**\ (\ )
 
-设置是否发生着色，逐像素、逐顶点或无阴影。逐顶点时照明速度更快，使其成为移动应用程序的最佳选择，但它看起来比逐像素时差很多。无阴影渲染是最快的，但会禁用与灯光的所有交互。
+设置着色是按逐像素、逐顶点还是无着色进行。逐顶点时照明速度更快，使其成为移动应用程序的最佳选择，但它看起来比逐像素时差很多。无着色渲染是最快的，但会禁用与灯光的所有交互。
 
 .. rst-class:: classref-item-separator
 
@@ -3432,7 +3432,7 @@ Alpha 剪刀将丢弃值的阈值。较高的值将导致更多像素被丢弃�
 
 如果为 ``true``\ ，则启用次表面散射。模拟光线先穿透物体表面、被散射、然后出现。次表面散射质量由 :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>` 控制。
 
-\ **注意：**\ 透明背景的的视口不支持次表面散射（\ :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 为 ``true``\ ）。
+\ **注意：**\ 透明背景的的视口（其 :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 为 ``true``\ ）不支持次表面散射。
 
 .. rst-class:: classref-item-separator
 

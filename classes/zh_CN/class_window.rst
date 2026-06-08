@@ -25,7 +25,7 @@ Window
 教程
 ----
 
-- :doc:`HDR output <../tutorials/rendering/hdr_output>`
+- :doc:`HDR输出 <../tutorials/rendering/hdr_output>`
 
 .. rst-class:: classref-reftable-group
 
@@ -470,7 +470,7 @@ Window
 
 **output_max_linear_value_changed**\ (\ output_max_linear_value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_signal_output_max_linear_value_changed>`
 
-Emitted when the output max linear value returned by :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed. This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen. ``output_max_linear_value`` is the new value.
+当 :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 返回的输出最大线性值发生更改时发出。当启用或禁用 HDR 输出，或者窗口的任何 HDR 输出亮度值发生更改时（例如，当玩家调整屏幕亮度设置或将窗口移动到不同屏幕时），就会发生这种情况。\ ``output_max_linear_value`` 为新值。
 
 .. rst-class:: classref-item-separator
 
@@ -1317,7 +1317,7 @@ enum **WindowInitialPosition**: :ref:`🔗<enum_Window_WindowInitialPosition>`
 - |void| **set_hdr_output_requested**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hdr_output_requested**\ (\ )
 
-If ``true``, requests HDR output for the **Window**, falling back to SDR if not supported, and automatically switching between HDR and SDR as the window moves between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of this **Window** must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output.
+如果为 ``true``\ ，则请求该 **Window** 进行 HDR 输出（若不支持则回退至 SDR），并在窗口在不同屏幕间移动、屏幕功能变更或系统设置修改时，自动在 HDR 与 SDR 之间切换。这将在内部强制主 :ref:`Viewport<class_Viewport>` 上的 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 启用。该 **Window** 的所有其他 :ref:`SubViewport<class_SubViewport>` 必须启用其 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 属性才能生成 HDR 输出。
 
 .. rst-class:: classref-item-separator
 
@@ -2028,9 +2028,9 @@ If ``true``, requests HDR output for the **Window**, falling back to SDR if not 
 
 :ref:`float<class_float>` **get_output_max_linear_value**\ (\ ) |const| :ref:`🔗<class_Window_method_get_output_max_linear_value>`
 
-Returns the maximum value for linear color components that can be displayed in this window, regardless of SDR or HDR output. Returns ``1.0`` if HDR is not enabled or not supported. The :ref:`output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` signal will be emitted whenever this value changes.
+返回此窗口中可显示的线性颜色分量的最大值，无论 SDR 或 HDR 输出。如果未启用 HDR 或不支持 HDR，则返回 ``1.0``\ 。当该值更改时，将发出 :ref:`output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` 信号。
 
-This value is used by tonemapping and other :ref:`Environment<class_Environment>` effects to ensure that bright colors are presented in the range that can be displayed by this window. When using this maximum linear value in your project, it should only be used to present colors directly to the screen without tonemapping and without influencing lighting, post-processing effects, or surrounding color. The following is an example that produces the brightest purple color that the screen can produce:
+此值由色调映射（tonemapping）和其他 :ref:`Environment<class_Environment>` 效果使用，以确保明亮的颜色能在此窗口可显示的范围内呈现。在项目中使用此最大线性值时，它仅应用于在没有色调映射的情况下将颜色直接呈现到屏幕上，并且不应影响光照、后期处理效果或周围颜色。以下示例生成了屏幕能产生的最亮的紫色：
 
 
 .. tabs::
@@ -2061,7 +2061,7 @@ This value is used by tonemapping and other :ref:`Environment<class_Environment>
 
 
 
-\ **Note:** You will need to convert sRGB colors to linear before multiplying by this value to get correct results.
+**\ **注意：** 为了获得正确的结果，您需要在乘以该值之前，先将 sRGB 颜色转换为线性颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -2803,9 +2803,9 @@ This value is used by tonemapping and other :ref:`Environment<class_Environment>
 
 |void| **set_taskbar_progress_state**\ (\ state\: :ref:`ProgressState<enum_DisplayServer_ProgressState>`\ ) :ref:`🔗<class_Window_method_set_taskbar_progress_state>`
 
-Sets the type and state of the progress bar on the taskbar/dock icon of the **Window**. See :ref:`ProgressState<enum_DisplayServer_ProgressState>` for possible values and how each mode behaves.
+设置 **Window** 在任务栏或程序坞（Dock）图标上进度条的类型和状态。关于可能的取值以及每种模式的具体表现，请查阅 :ref:`ProgressState<enum_DisplayServer_ProgressState>`\ 。
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **注意：** 此方法仅在 Windows 和 macOS 系统上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -2817,11 +2817,11 @@ Sets the type and state of the progress bar on the taskbar/dock icon of the **Wi
 
 |void| **set_taskbar_progress_value**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_method_set_taskbar_progress_value>`
 
-Creates a progress bar on the taskbar/dock icon of the **Window** if it does not exist, sets the progress of the icon.
+如果该 **Window** 尚未存在，则在其任务栏/程序坞图标上创建一个进度条，并设置图标的进度。
 
-\ ``value`` acts as a relative percentage value, ranges from ``0.0`` (lowest) to ``1.0`` (highest).
+\ ``value`` 作为相对百分比值，范围从 ``0.0``\ （最低）到 ``1.0``\ （最高）。
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **注意：** 此方法仅在 Windows 和 macOS 上实现。
 
 .. rst-class:: classref-item-separator
 

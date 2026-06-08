@@ -5325,11 +5325,11 @@ Voir :ref:`global_menu_set_item_disabled()<class_DisplayServer_method_global_men
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Retourne ``true`` si l'élément à l'index ``idx`` est caché.
+Renvoie ``true`` si l'élément à l'index ``idx`` est caché.
 
-Voir :ref:`global_menu_set_item_hidden()<class_DisplayServer_method_global_menu_set_item_hidden>` pour plus d'informations sur la façon de cacher un élément.
+Voir :ref:`global_menu_set_item_hidden()<class_DisplayServer_method_global_menu_set_item_hidden>` pour plus d'informations sur comment cacher un élément.
 
-\ **Note:** Cette méthode n'est disponible que sur macOS.
+\ **Note :** Cette méthode n'est implémentée que sur macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5395,11 +5395,11 @@ Définit l'accélérateur de l'élément à l'index ``idx``. ``keycode`` peut ê
 
 **Obsolète :** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Définit le rappel de l'élément à l'index ``idx``. Le rappel est émis lorsqu'un article est pressé.
+Définit le callback de l'élément à l'index ``idx``. Le callback est émis lorsqu'un élément est appuyée.
 
-\ **Note:** Le ``callback`` Appelable doit accepter exactement un paramètre Variant, le paramètre passé à la Callable sera la valeur transmise au paramètre ``tag`` lorsque l'élément de menu a été créé.
+\ **Note :** Le Callable ``callback`` doit accepter exactement un paramètre Variant, le paramètre passé au Callable sera la valeur transmise au paramètre ``tag`` lorsque l'élément de menu a été créé.
 
-\ **Note:** Cette méthode n'est supportée que sur macOS.
+\ **Note :** Cette méthode n'est supportée que sur macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5531,7 +5531,7 @@ Définit le décalage horizontal de l'élément à l'index ``idx`` donné.
 
 Définit le callback de l'élément à l'index ``idx``. Le callback est émis lorsque son accélérateur est activé.
 
-\ **Note:** Le Callable ``key_callback`` doit accepter exactement un paramètre Variant, le paramètre passé au Callable sera la valeur transmise au paramètre ``tag`` lorsque l'élément de menu sera créé.
+\ **Note :** Le Callable ``key_callback`` doit accepter exactement un paramètre Variant, le paramètre passé au Callable sera la valeur transmise au paramètre ``tag`` lorsque l'élément de menu a été créé.
 
 \ **Note :** Cette méthode n'est implémentée que sur macOS.
 
@@ -5851,9 +5851,9 @@ Convertit un clavier physique (US QWERTY) ``keycode`` en un clavier dans la mise
 
 :ref:`Key<enum_@GlobalScope_Key>` **keyboard_get_label_from_physical**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_DisplayServer_method_keyboard_get_label_from_physical>`
 
-Convertit un clavier physique (US QWERTY) ``keycode`` vers l'étiquette localisée imprimée sur la touche dans la disposition active du clavier.
+Convertit un code de touche de clavier physique (US QWERTY) ``keycode`` vers l'étiquette traduite imprimée sur la touche dans la disposition active du clavier.
 
-\ **Note:** Cette méthode est supportée sur Linux (X11/Wayland), macOS et Windows.
+\ **Note :** Cette méthode est implémentée sur Linux (X11/Wayland), macOS et Windows.
 
 .. rst-class:: classref-item-separator
 

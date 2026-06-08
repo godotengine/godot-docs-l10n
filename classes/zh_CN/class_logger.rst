@@ -21,7 +21,7 @@ Logger
 教程
 ----
 
-- :doc:`Logging <../tutorials/scripting/logging>`
+- :doc:`日志 <../tutorials/scripting/logging>`
 
 .. rst-class:: classref-reftable-group
 
@@ -99,17 +99,17 @@ enum **ErrorType**: :ref:`🔗<enum_Logger_ErrorType>`
 
 |void| **_log_error**\ (\ function\: :ref:`String<class_String>`, file\: :ref:`String<class_String>`, line\: :ref:`int<class_int>`, code\: :ref:`String<class_String>`, rationale\: :ref:`String<class_String>`, editor_notify\: :ref:`bool<class_bool>`, error_type\: :ref:`int<class_int>`, script_backtraces\: :ref:`Array<class_Array>`\[:ref:`ScriptBacktrace<class_ScriptBacktrace>`\]\ ) |virtual| :ref:`🔗<class_Logger_private_method__log_error>`
 
-Called when an error is logged. The error provides the ``function``, ``file``, and ``line`` that it originated from, as well as either the ``code`` that generated the error or a ``rationale``.
+当有错误被记录时会调用此方法。该错误会提供其来源的 ``function``\ （函数名）、\ ``file``\ （文件名）和 ``line``\ （行号），以及生成该错误的 ``code``\ （错误代码）或一段 ``rationale``\ （原因说明）。
 
-The type of error provided by ``error_type`` is described in the :ref:`ErrorType<enum_Logger_ErrorType>` enumeration.
+\ ``error_type`` 所提供的错误类型在 :ref:`ErrorType<enum_Logger_ErrorType>` 枚举中有具体描述。
 
-Additionally, ``script_backtraces`` provides backtraces for each of the script languages. These will only contain stack frames in editor builds and debug builds by default. To enable them for release builds as well, you need to enable :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`.
+此外，\ ``script_backtraces`` 会为每种脚本语言提供对应的回溯信息。默认情况下，这些信息仅在编辑器构建（editor builds）和调试构建（debug builds）中包含堆栈帧。如果你希望在发布构建（release builds）中也启用它们，需要开启 :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`\ 。
 
-\ **Warning:** This method will be called from threads other than the main thread, possibly at the same time, so you will need to have some kind of thread-safety in your implementation of it, like a :ref:`Mutex<class_Mutex>`.
+\ **警告：** 此方法可能会被主线程以外的其他线程调用，甚至可能同时被调用。因此，在实现该方法时，你需要采取某种线程安全措施，比如使用 :ref:`Mutex<class_Mutex>`\ （互斥锁）。
 
-\ **Note:** ``script_backtraces`` will not contain any captured variables, due to its prohibitively high cost. To get those, you will need to capture the backtraces yourself, from within the **Logger** virtual methods, using :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`.
+\ **注意：** ``script_backtraces`` 不会包含任何被捕获的变量，因为这样做的性能开销极高。如果你需要获取这些变量，需要在 **Logger** 的虚方法内部，使用 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>` 自行捕获回溯信息。
 
-\ **Note:** Logging errors from this method using functions like :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` or :ref:`@GlobalScope.push_warning()<class_@GlobalScope_method_push_warning>` is not supported, as it could cause infinite recursion. These errors will only show up in the console output.
+\ **注意：** 不支持在此方法内部使用类似 :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` 或 :ref:`@GlobalScope.push_warning()<class_@GlobalScope_method_push_warning>` 这样的函数来记录错误，因为这可能会导致无限递归。这些错误只会显示在控制台输出中。
 
 .. rst-class:: classref-item-separator
 

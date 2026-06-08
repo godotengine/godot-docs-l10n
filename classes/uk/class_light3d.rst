@@ -641,11 +641,11 @@ enum **BakeMode**: :ref:`🔗<enum_Light3D_BakeMode>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-The simulated size of the light in Godot units, affecting shading and shadows. For :ref:`OmniLight3D<class_OmniLight3D>`\ s and :ref:`SpotLight3D<class_SpotLight3D>`\ s, increasing this value simulates a spherical area light, expanding the size of specular highlights. If shadows are enabled, a penumbra is rendered, making shadows appear blurrier. For :ref:`AreaLight3D<class_AreaLight3D>`\ s, only the shadows are affected. Penumbras are simulated with percentage-closer soft shadows, or PCSS, which has a noticeable performance cost for values above ``0.0``.
+Модельований розмір джерела світла в одиницях Godot, що впливає на затінення та тіні. Для :ref:`OmniLight3D<class_OmniLight3D>` та :ref:`SpotLight3D<class_SpotLight3D>` збільшення цього значення імітує сферичне джерело світла, збільшуючи розмір дзеркальних відблисків. Якщо тіні увімкнено, візуалізується півтінь, що робить тіні розмитішими. Для :ref:`AreaLight3D<class_AreaLight3D>` це впливає лише на тіні. Півтіні імітуються за допомогою м'яких тіней із відсотковим наближенням (PCSS), що має помітний вплив на продуктивність для значень вище ``0.0``.
 
-\ **Note:** :ref:`light_size<class_Light3D_property_light_size>` is not affected by :ref:`Node3D.scale<class_Node3D_property_scale>` (the light's scale or its parent's scale).
+\ **Примітка:** :ref:`light_size<class_Light3D_property_light_size>` не залежить від :ref:`Node3D.scale<class_Node3D_property_scale>` (масштабу джерела світла або його батьківського об'єкта).
 
-\ **Note:** PCSS for positional lights is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Примітка:** PCSS для позиційних джерел світла підтримується лише в методах рендерингу Forward+ та Mobile, а не в Compatibility.
 
 .. rst-class:: classref-item-separator
 

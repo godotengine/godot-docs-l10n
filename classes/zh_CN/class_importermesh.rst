@@ -14,9 +14,9 @@ ImporterMesh
 描述
 ----
 
-ImporterMesh is a type of :ref:`Resource<class_Resource>` analogous to :ref:`ArrayMesh<class_ArrayMesh>`. It contains vertex array-based geometry, divided in *surfaces*. Each surface contains a completely separate array and a material used to draw it. Design wise, a mesh with multiple surfaces is preferred to a single surface, because objects created in 3D editing software commonly contain multiple materials.
+ImporterMesh 是一种 :ref:`Resource<class_Resource>`\ （资源），类似于 :ref:`ArrayMesh<class_ArrayMesh>`\ 。它包含基于顶点数组的几何体，并被划分为若干个 *表面（surfaces）*\ 。每个表面都包含一个完全独立的数组，以及一个用于绘制它的材质。从设计角度来看，拥有多个表面的网格优于单个表面的网格，因为在 3D 编辑软件中创建的对象通常包含多种材质。
 
-Unlike its runtime counterpart, **ImporterMesh** contains mesh data before various import steps, such as LOD and shadow mesh generation, have taken place. Modify surface data by calling :ref:`clear()<class_ImporterMesh_method_clear>`, followed by :ref:`add_surface()<class_ImporterMesh_method_add_surface>` for each surface.
+与其运行时对应的 :ref:`ArrayMesh<class_ArrayMesh>` 不同，\ **ImporterMesh** 包含的是在经历各种导入步骤（例如 LOD 和阴影网格生成）之前的原始网格数据。若要修改表面数据，可以调用 :ref:`clear()<class_ImporterMesh_method_clear>`\ ，然后为每个表面调用 :ref:`add_surface()<class_ImporterMesh_method_add_surface>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -357,11 +357,11 @@ Unlike its runtime counterpart, **ImporterMesh** contains mesh data before vario
 
 :ref:`ImporterMesh<class_ImporterMesh>` **merge_importer_meshes**\ (\ importer_meshes\: :ref:`Array<class_Array>`\[:ref:`ImporterMesh<class_ImporterMesh>`\], relative_transforms\: :ref:`Array<class_Array>`\[:ref:`Transform3D<class_Transform3D>`\], deduplicate_surfaces\: :ref:`bool<class_bool>` = true\ ) |static| :ref:`🔗<class_ImporterMesh_method_merge_importer_meshes>`
 
-Merges multiple **ImporterMesh**\ es into a single **ImporterMesh**. Each input mesh is transformed by the corresponding :ref:`Transform3D<class_Transform3D>` in the ``relative_transforms`` array, which must be the same size as ``importer_meshes``. Negative scales are supported, and the winding order in the mesh data will be corrected to account for this.
+将多个 **ImporterMesh** 合并为单个 **ImporterMesh**\ 。每个输入网格将由 ``relative_transforms`` 数组中对应的 :ref:`Transform3D<class_Transform3D>` 进行变换，该数组的大小必须与 ``importer_meshes`` 相同。支持负缩放，并且网格数据中的缠绕顺序将被修正以适应此情况。
 
-If ``deduplicate_surfaces`` is ``true`` and multiple meshes have surfaces with the same names and formats, the surfaces will be merged together when the meshes are merged, and will use the material from the first matching surface. This is useful for reducing the number of surfaces in the resulting mesh, and avoids duplicating materials. Surfaces with bone weights will never be deduplicated. If ``deduplicate_surfaces`` is ``false``, the surfaces will always be kept separate, and will be given unique names.
+如果 ``deduplicate_surfaces`` 为 ``true`` 且多个网格具有同名且格式相同的表面，则在合并网格时这些表面将被合并在一起，并使用第一个匹配表面的材质。这有助于减少生成网格中的表面数量，并避免材质重复。包含骨骼权重的表面将永远不会被去重。如果 ``deduplicate_surfaces`` 为 ``false``\ ，表面将始终被保持分离，并被赋予唯一的名称。
 
-\ **Warning:** Blend shapes and LODs are not supported and will be discarded. Do not use this function to discard blend shapes and LODs, as support for these may be added in the future.
+\ **警告：** 混合形状（Blend shapes）和细节层次（LODs）不受支持，将会被丢弃。请勿使用此函数来丢弃混合形状和 LOD，因为未来可能会增加对它们的支持。
 
 .. rst-class:: classref-item-separator
 

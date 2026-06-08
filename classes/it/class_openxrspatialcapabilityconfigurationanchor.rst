@@ -9,14 +9,14 @@ OpenXRSpatialCapabilityConfigurationAnchor
 
 **Eredita:** :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for spatial anchors.
+Intestazione di configurazione per gli ancoraggi spaziali.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Configuration header for spatial anchors. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` to create a spatial context with spatial anchor capabilities.
+Intestazione di configurazione per gli ancoraggi spaziali. Passala a :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` per creare un contesto spaziale con capacità di ancoraggio spaziale.
 
 .. rst-class:: classref-reftable-group
 

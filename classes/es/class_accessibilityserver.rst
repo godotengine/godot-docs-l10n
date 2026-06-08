@@ -1137,7 +1137,7 @@ Devuelve ``true`` si ``id`` es un elemento de accesibilidad válido.
 
 :ref:`bool<class_bool>` **is_supported**\ (\ ) |const| :ref:`🔗<class_AccessibilityServer_method_is_supported>`
 
-Returns ``true`` if screen reader is support by this implementation.
+Devuelve ``true`` si esta implementación admite el lector de pantalla.
 
 .. rst-class:: classref-item-separator
 

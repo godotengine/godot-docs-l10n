@@ -97,14 +97,14 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeColorFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeColorFunc_Function>` **FUNC_LINEAR_TO_SRGB** = ``4``
 
-Converts color from linear encoding to nonlinear sRGB encoding using the following formula:
+使用以下公式，将颜色从线性编码转换为非线性 sRGB 编码：
 
 ::
 
     const vec3 a = vec3(0.055f);
     return mix((vec3(1.0f) + a) * pow(c.rgb, vec3(1.0f / 2.4f)) - a, 12.92f * c.rgb, lessThan(c.rgb, vec3(0.0031308f)));
 
-The Compatibility renderer uses a simpler formula that may produce undefined behavior with negative input values:
+兼容渲染器使用了一种更简单的公式，该公式在输入负数值时可能会产生未定义的行为：
 
 ::
 
@@ -117,14 +117,14 @@ The Compatibility renderer uses a simpler formula that may produce undefined beh
 
 :ref:`Function<enum_VisualShaderNodeColorFunc_Function>` **FUNC_SRGB_TO_LINEAR** = ``5``
 
-Converts color from nonlinear sRGB encoding to linear encoding using the following formula:
+使用以下公式，将颜色从非线性 sRGB 编码转换为线性编码：
 
 ::
 
     vec3 c = input;
     return mix(pow((c.rgb + vec3(0.055)) * (1.0 / (1.0 + 0.055)), vec3(2.4)), c.rgb * (1.0 / 12.92), lessThan(c.rgb, vec3(0.04045)));
 
-The Compatibility renderer uses a simpler formula that behaves poorly with negative input values:
+兼容渲染器使用了一种更简单的公式，该公式在处理负数输入值时表现不佳：
 
 ::
 

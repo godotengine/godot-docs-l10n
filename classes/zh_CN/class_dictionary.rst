@@ -12,18 +12,18 @@ Dictionary
 描述
 ----
 
-Dictionaries are associative containers that contain values referenced by unique keys. Dictionaries will preserve the insertion order when adding new entries. In other programming languages, this data structure is often referred to as a hash map or an associative array.
+字典是一种关联容器，它里面包含的数值都可以通过唯一的“键”（key）来引用。当添加新的条目时，字典会保留它们的插入顺序。在其他编程语言中，这种数据结构通常被称为哈希映射（hash map）或关联数组（associative array）。
 
-You can define a dictionary by placing a comma-separated list of ``key: value`` pairs inside curly braces ``{}``.
+你可以通过在大括号 ``{}`` 里放置一个由逗号分隔的 键: 值（\ ``key: value``\ ）对列表来定义一个字典。
 
-Creating a dictionary:
+创建一个字典：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var my_dict = {} # Creates an empty dictionary.
+    var my_dict = {} # 创建一个空字典。
 
     var dict_variable_key = "Another key name"
     var dict_variable_value = "value2"
@@ -34,10 +34,10 @@ Creating a dictionary:
 
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
 
-    # Alternative Lua-style syntax.
-    # Doesn't require quotes around keys, but only string constants can be used as key names.
-    # Additionally, key names must start with a letter or an underscore.
-    # Here, `some_key` is a string literal, not a variable!
+    # 另一种 Lua 风格的语法。
+    # 这种写法不需要在键（key）的周围加引号，但键名只能使用字符串常量。
+    # 此外，键名必须以字母或下划线开头。
+    # 在这里，some_key 是一个字符串字面量，而不是一个变量哦！
     another_dict = {
         some_key = 42,
     }
@@ -54,7 +54,7 @@ Creating a dictionary:
 
 
 
-You can access a dictionary's value by referencing its corresponding key. In the above example, ``points_dict["White"]`` will return ``50``. You can also write ``points_dict.White``, which is equivalent. However, you'll have to use the bracket syntax if the key you're accessing the dictionary with isn't a fixed string (such as a number or variable).
+你可以通过引用字典中对应的键（key），来获取它的值（value）。在上面的例子中，\ ``points_dict["White"]`` 会返回 ``50``\ 。你也可以写成 ``points_dict.White``\ ，两者的效果是完全一样的。 不过，如果你用来访问字典的键不是一个固定的字符串（比如是一个数字或者变量），那你就必须使用中括号（\ ````\ ）的语法了。
 
 
 .. tabs::
@@ -85,9 +85,9 @@ You can access a dictionary's value by referencing its corresponding key. In the
 
 
 
-In the above code, ``points`` will be assigned the value that is paired with the appropriate color selected in ``my_color``.
+在上面的代码中，\ ``points`` 将会被赋予与 ``my_color`` 中选中的颜色相对应的那个值。
 
-Dictionaries can contain more complex data:
+字典里也可以包含更复杂的数据：
 
 
 .. tabs::
@@ -129,16 +129,16 @@ To add a key to an existing dictionary, access it like an existing key and assig
 
 
 
-Finally, untyped dictionaries can contain different types of keys and values in the same dictionary:
+最后，未指定类型的字典可以在同一个字典里包含不同类型的键和值。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # This is a valid dictionary.
-    # To access the string "Nested value" below, use `my_dict.sub_dict.sub_key` or `my_dict["sub_dict"]["sub_key"]`.
-    # Indexing styles can be mixed and matched depending on your needs.
+    # 这是一个有效的字典。
+    # 如果想要获取下面嵌套的字符串 "Nested value"，你可以使用 my_dict.sub_dict.sub_key 或者 my_dict["sub_dict"]["sub_key"]。
+    # 这两种索引（取值）风格可以根据你的需要随意混搭使用哦。
     var my_dict = {
         "String Key": 5,
         4: [1, 2, 3],
@@ -148,8 +148,8 @@ Finally, untyped dictionaries can contain different types of keys and values in 
 
  .. code-tab:: csharp
 
-    // This is a valid dictionary.
-    // To access the string "Nested value" below, use `((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]`.
+    // 这是一个有效的字典。
+    // 想要获取下面嵌套的字符串 "Nested value"，请使用 ((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]。
     var myDict = new Godot.Collections.Dictionary {
         { "String Key", 5 },
         { 4, new Godot.Collections.Array { 1, 2, 3 } },
@@ -180,22 +180,22 @@ The keys of a dictionary can be iterated with the ``for`` keyword:
 
 
 
-To enforce a certain type for keys and values, you can create a *typed dictionary*. Typed dictionaries can only contain keys and values of the given types, or that inherit from the given classes:
+为了强制规定键（key）和值（value）的类型，你可以创建一个\ *类型化字典（typed dictionary）*\ 。类型化字典只能包含指定类型的键和值，或者包含继承自指定类的键和值：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Creates a typed dictionary with String keys and int values.
-    # Attempting to use any other type for keys or values will result in an error.
+    # 创建一个键（key）为字符串类型、值（value）为整数类型的类型化字典。
+    # 如果尝试使用任何其他类型的键或值，都会导致报错。
     var typed_dict: Dictionary[String, int] = {
         "some_key": 1,
         "some_other_key": 2,
     }
 
-    # Creates a typed dictionary with String keys and values of any type.
-    # Attempting to use any other type for keys will result in an error.
+    # 创建一个键（key）为字符串类型、值（value）为任意类型的类型化字典。
+    # 如果尝试使用任何其他类型的键，都会导致报错。
     var typed_dict_key_only: Dictionary[String, Variant] = {
         "some_key": 12.34,
         "some_other_key": "string",
@@ -203,15 +203,15 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
  .. code-tab:: csharp
 
-    // Creates a typed dictionary with String keys and int values.
-    // Attempting to use any other type for keys or values will result in an error.
+    // 创建一个键（key）为字符串类型、值（value）为整数类型的类型化字典。
+    // 如果尝试使用任何其他类型的键或值，都会导致报错。
     var typedDict = new Godot.Collections.Dictionary<String, int> {
         {"some_key", 1},
         {"some_other_key", 2},
     };
 
-    // Creates a typed dictionary with String keys and values of any type.
-    // Attempting to use any other type for keys will result in an error.
+    // 创建一个键（key）为字符串类型、值（value）为任意类型的类型化字典。
+    // 如果尝试使用任何其他类型的键，都会导致报错。
     var typedDictKeyOnly = new Godot.Collections.Dictionary<String, Variant> {
         {"some_key", 12.34},
         {"some_other_key", "string"},
@@ -219,11 +219,11 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
 
 
-\ **Note:** Dictionaries are always passed by reference. To get a copy of a dictionary which can be modified independently of the original dictionary, use :ref:`duplicate()<class_Dictionary_method_duplicate>`.
+\ **注意：** 字典总是通过引用传递的。如果你想获取一个字典的副本，以便在不影响原字典的情况下独立修改它，请使用 :ref:`duplicate()<class_Dictionary_method_duplicate>` 方法。
 
-\ **Note:** Erasing elements while iterating over dictionaries is **not** supported and will result in unpredictable behavior.
+\ **注意：** 在遍历字典的过程中，\ **不**\ 支持删除（擦除）其中的元素，这样做会导致不可预测的行为（比如程序出错或逻辑混乱）。
 
-\ **Note:** In a boolean context, a dictionary will evaluate to ``false`` if it's empty (``{}``). Otherwise, a dictionary will always evaluate to ``true``.
+\ **注意：** 在布尔值判断中，如果字典是空的（\ ``{}``\ ），它的值会被判定为 ``false``\ ；除此之外，任何非空的字典都会被判定为 ``true``\ 。
 
 .. note::
 
@@ -484,9 +484,9 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
 :ref:`Variant<class_Variant>` **get**\ (\ key\: :ref:`Variant<class_Variant>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Dictionary_method_get>`
 
-Returns the corresponding value for the given ``key`` in the dictionary. If the ``key`` does not exist, returns ``default``, or ``null`` if the parameter is omitted.
+返回字典中给定 ``key``\ （键）所对应的值。如果该 ``key`` 不存在，则返回 ``default``\ （默认值）；如果省略了默认值参数，则返回 ``null``\ 。
 
-\ **Note:** If the ``default`` argument is computationally expensive or has unwanted side effects, consider using the :ref:`has()<class_Dictionary_method_has>` method instead:
+\ **注意：** 如果 ``default`` 参数的计算成本很高，或者会产生不必要的副作用，建议改用 :ref:`has()<class_Dictionary_method_has>` 方法来判断：
 
 ::
 

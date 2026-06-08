@@ -17,11 +17,11 @@ Un contenitore che si può espandere/comprimere.
 Descrizione
 ----------------------
 
-A container that can be expanded/collapsed, with a title that can be filled with controls, such as buttons. This is also called an accordion.
+Un contenitore che si può espandere/comprimere, con un titolo che si può riempire con controlli, come pulsanti. Questo tipo di contenitore è anche detto fisarmonica.
 
-The title can be positioned at the top or bottom of the container. The container can be expanded or collapsed by clicking the title or by pressing ``ui_accept`` when focused. Child control nodes are hidden when the container is collapsed. Ignores non-control children.
+Il titolo può essere posizionato in alto o in basso il contenitore. È possibile espandere o comprimere il contenitore cliccando sul titolo o premendo ``ui_accept`` quando è focalizzato. I nodi figlio di controllo sono nascosti quando il contenitore è compresso. Ignora i nodi figlio non di controllo.
 
-A FoldableContainer can be grouped with other FoldableContainers so that only one of them can be opened at a time; see :ref:`foldable_group<class_FoldableContainer_property_foldable_group>` and :ref:`FoldableGroup<class_FoldableGroup>`.
+È possibile raggruppare un FoldableContainer con altri FoldableContainer in modo che solo uno di essi sia aperto alla volta; vedi :ref:`foldable_group<class_FoldableContainer_property_foldable_group>` e :ref:`FoldableGroup<class_FoldableGroup>`.
 
 .. rst-class:: classref-reftable-group
 

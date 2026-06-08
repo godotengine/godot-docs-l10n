@@ -258,7 +258,7 @@ flags **DebugFlags**: :ref:`🔗<enum_EditorExportPlatform_DebugFlags>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **export_project**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\] = 0, notify\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorExportPlatform_method_export_project>`
 
-Creates a full project at ``path`` for the specified ``preset``. If ``notify`` is ``true``, plugins using :ref:`EditorExportPlugin._export_begin()<class_EditorExportPlugin_private_method__export_begin>` will be called during the process.
+Создает полноценный проект по адресу ``path`` для указанного ``preset``. Если ``notify`` имеет значение ``true``, плагины, использующие :ref:`EditorExportPlugin._export_begin()<class_EditorExportPlugin_private_method__export_begin>`, будут вызываться в процессе.
 
 .. rst-class:: classref-item-separator
 

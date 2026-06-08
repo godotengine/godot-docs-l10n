@@ -77,9 +77,9 @@ La :ref:`Color<class_Color>` de la diffusion unique du :ref:`FogVolume<class_Fog
 - |void| **set_density**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_density**\ (\ )
 
-La densité du :ref:`FogVolume<class_FogVolume>`. Les objets plus denses sont plus opaques, mais peuvent souffrir d’artefacts de sous-échantillonnage qui ressemblent à des rayures. Les valeurs négatives peuvent être utilisées pour soustraire le brouillard d'autres :ref:`FogVolume<class_FogVolume>` ou le brouillard volumétrique global.
+La densité du :ref:`FogVolume<class_FogVolume>`. Les objets plus denses sont plus opaques, mais peuvent souffrir d’artefacts de sous-échantillonnage qui ressemblent à des rayures. Des valeurs négatives peuvent être utilisées pour soustraire le brouillard d'autres :ref:`FogVolume<class_FogVolume>` ou du brouillard volumétrique global.
 
-\ **Not e:** En raison d'une précision limitée, les valeurs de :ref:`density<class_FogMaterial_property_density>` entre ``-0.001`` et ``0.001`` (exclusive) agissent comme ``0.0``. Cela ne s'applique pas à :ref:`Environment.volumetric_fog_density<class_Environment_property_volumetric_fog_density>`.
+\ **Note :** En raison d'une précision limitée, les valeurs de :ref:`density<class_FogMaterial_property_density>` entre ``-0.001`` et ``0.001`` (exclusives) agissent comme ``0.0``. Cela ne s'applique pas à :ref:`Environment.volumetric_fog_density<class_Environment_property_volumetric_fog_density>`.
 
 .. rst-class:: classref-item-separator
 

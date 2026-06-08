@@ -2718,7 +2718,7 @@ Arreglo de texturas bidimensionales.
 
 :ref:`TextureType<enum_RenderingDevice_TextureType>` **TEXTURE_TYPE_CUBE_ARRAY** = ``6``
 
-Array of :ref:`Cubemap<class_Cubemap>` textures.
+Array de texturas :ref:`Cubemap<class_Cubemap>`.
 
 .. _class_RenderingDevice_constant_TEXTURE_TYPE_MAX:
 

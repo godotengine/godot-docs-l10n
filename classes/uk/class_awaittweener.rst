@@ -7,16 +7,16 @@ AwaitTweener
 
 **Успадковує:** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Awaits a specified signal.
+Очікує на вказаний сигнал.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-**AwaitTweener** is used to await a specified signal, allowing asynchronous steps in :ref:`Tween<class_Tween>` animation. See :ref:`Tween.tween_await()<class_Tween_method_tween_await>` for more usage information.
+**AwaitTweener** використовується для очікування заданого сигналу, що дозволяє виконувати асинхронні кроки в анімації :ref:`Tween<class_Tween>`. Докладнішу інформацію про використання див. у розділі :ref:`Tween.tween_await()<class_Tween_method_tween_await>`.
 
-The :ref:`Tweener.finished<class_Tweener_signal_finished>` signal is emitted when either the awaited signal is received, when timeout is reached, or when the target object is freed.
+Сигнал :ref:`Tweener.finished<class_Tweener_signal_finished>` генерується у разі отримання очікуваного сигналу, досягнення часу очікування або звільнення цільового об’єкта.
 
 .. rst-class:: classref-reftable-group
 
@@ -45,7 +45,7 @@ The :ref:`Tweener.finished<class_Tweener_signal_finished>` signal is emitted whe
 
 :ref:`AwaitTweener<class_AwaitTweener>` **set_timeout**\ (\ timeout\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AwaitTweener_method_set_timeout>`
 
-Sets the maximum time an **AwaitTweener** can wait for the signal. Can be used as a safeguard for signals that may never be emitted. If not specified, the tweener will wait indefinitely.
+Встановлює максимальний час, протягом якого **AwaitTweener** може очікувати на сигнал. Може використовуватися як запобіжний захід для сигналів, які можуть ніколи не надходити. Якщо цей параметр не вказано, твінер чекатиме нескінченно довго.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

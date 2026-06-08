@@ -2022,9 +2022,9 @@ Minimum 3D rotation velocity on the particle's local axis. Enable :ref:`use_rota
 - |void| **set_scale_3d_max**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_scale_3d_max**\ (\ )
 
-The maximum value of the random scale vector for each particle.
+Il valore massimo del vettore di scala casuale per ogni particella.
 
-Works only if :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scale_3d>` is enabled.
+Funziona solo se :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scale_3d>` è abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -2041,9 +2041,9 @@ Works only if :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scal
 - |void| **set_scale_3d_min**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_scale_3d_min**\ (\ )
 
-The minimum value of the random scale vector for each particle.
+Il valore minimo del vettore di scala casuale per ogni particella.
 
-Works only if :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scale_3d>` is enabled.
+Funziona solo se :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scale_3d>` è abilitato.
 
 .. rst-class:: classref-item-separator
 

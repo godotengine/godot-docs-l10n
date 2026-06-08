@@ -615,9 +615,9 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ItemList_ScrollHintMode>`
 
 :ref:`bool<class_bool>` **item_{index}/disabled** = ``false`` :ref:`🔗<class_ItemList_property_item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+如果为 ``true``\ ，则禁用位于 ``index`` 处的项目。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -629,9 +629,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **item_{index}/icon** :ref:`🔗<class_ItemList_property_item_{index}/icon>`
 
-The icon of the item at ``index``.
+位于 ``index`` 处的项目的图标。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -643,9 +643,9 @@ The icon of the item at ``index``.
 
 :ref:`bool<class_bool>` **item_{index}/selectable** = ``true`` :ref:`🔗<class_ItemList_property_item_{index}/selectable>`
 
-If ``true``, the item at ``index`` is selectable.
+如果为 ``true``\ ，则位于 ``index`` 处的项目可被选择。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -657,9 +657,9 @@ If ``true``, the item at ``index`` is selectable.
 
 :ref:`String<class_String>` **item_{index}/text** = ``""`` :ref:`🔗<class_ItemList_property_item_{index}/text>`
 
-The text of the item at ``index``.
+位于 ``index`` 处的项目的文本。
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. item_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -850,9 +850,9 @@ The text of the item at ``index``.
 
 |void| **center_on_current**\ (\ center_verically\: :ref:`bool<class_bool>` = true, center_horizontally\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_center_on_current>`
 
-Ensures the currently selected item (the first selected item if multiple selection is enabled) is visible, adjusting the scroll position as necessary to place the item at the center of the list if possible. See also :ref:`ensure_current_is_visible()<class_ItemList_method_ensure_current_is_visible>`.
+确保当前选定的项目（如果启用了多项选择，则为第一个选定的项目）可见，必要时调整滚动位置，尽可能将该项目放置在列表的中心。另见 :ref:`ensure_current_is_visible()<class_ItemList_method_ensure_current_is_visible>`\ 。
 
-Fails and prints an error if both arguments are ``false``.
+如果两个参数均为 ``false``\ ，则该方法将失败并打印错误信息。
 
 .. rst-class:: classref-item-separator
 
@@ -900,7 +900,7 @@ Fails and prints an error if both arguments are ``false``.
 
 |void| **ensure_current_is_visible**\ (\ ) :ref:`🔗<class_ItemList_method_ensure_current_is_visible>`
 
-Ensures the currently selected item (the first selected item if multiple selection is enabled) is visible, adjusting the scroll position as necessary. See also :ref:`center_on_current()<class_ItemList_method_center_on_current>`.
+确保当前选定的项目（如果启用了多项选择，则为第一个选定的项目）可见，必要时调整滚动位置。另见 :ref:`center_on_current()<class_ItemList_method_center_on_current>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1222,9 +1222,9 @@ Ensures the currently selected item (the first selected item if multiple selecti
 
 |void| **select**\ (\ idx\: :ref:`int<class_int>`, single\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_select>`
 
-Selects the item at the specified index.
+选择指定索引（index）处的项目。
 
-\ **Note:** This method does not trigger the item selection signal.
+\ **注意：** 此方法不会触发项目选择的信号。
 
 .. rst-class:: classref-item-separator
 

@@ -424,9 +424,9 @@ EditorInterface
 
 :ref:`float<class_float>` **get_editor_scale**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_scale>`
 
-Returns the actual scale of the editor UI (``1.0`` being 100% scale). This can be used to adjust position and dimensions of the UI added by plugins.
+Повертає фактичний масштаб інтерфейсу редактора (``1.0`` відповідає 100% масштабу). Це можна використовувати для налаштування положення та розмірів інтерфейсу, доданого плагінами.
 
-\ **Note:** This value is set via the :ref:`EditorSettings.interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` and :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>` settings. The editor must be restarted for changes to be properly applied.
+\ **Примітка:** Це значення встановлюється за допомогою параметрів :ref:`EditorSettings.interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` та :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`. Щоб зміни набули чинності, редактор потрібно перезапустити.
 
 .. rst-class:: classref-item-separator
 
@@ -674,7 +674,7 @@ Returns the actual scale of the editor UI (``1.0`` being 100% scale). This can b
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_unsaved_scenes**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_unsaved_scenes>`
 
-Returns an array of file paths of currently unsaved scenes.
+Повертає масив шляхів до файлів сцен, які наразі не збережено.
 
 .. rst-class:: classref-item-separator
 
@@ -698,13 +698,13 @@ Returns an array of file paths of currently unsaved scenes.
 
 :ref:`bool<class_bool>` **is_multi_window_enabled**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_is_multi_window_enabled>`
 
-Returns ``true`` if multiple window support is enabled in the editor. Multiple window support is enabled if *all* of these statements are true:
+Повертає ``true``, якщо в редакторі увімкнено підтримку роботи з декількома вікнами. Підтримка роботи з декількома вікнами увімкнена, якщо *всі* ці умови виконуються:
 
-- :ref:`EditorSettings.interface/multi_window/enable<class_EditorSettings_property_interface/multi_window/enable>` is ``true``.
+- :ref:`EditorSettings.interface/multi_window/enable<class_EditorSettings_property_interface/multi_window/enable>` дорівнює ``true``.
 
-- :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` is ``false``.
+- :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` дорівнює ``false``.
 
-- :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` is ``false``. This is forced to ``true`` on platforms that don't support multiple windows such as Web, or when the ``--single-window`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>` is used.
+- :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` дорівнює ``false``. Це значення примусово встановлюється на ``true`` на платформах, що не підтримують багатовіконний режим, таких як Web, або коли використовується ``--single-window`` :doc:`аргумент командного рядка <../tutorials/editor/command_line_tutorial>`.
 
 .. rst-class:: classref-item-separator
 
@@ -992,7 +992,7 @@ Returns ``true`` if multiple window support is enabled in the editor. Multiple w
 
 |void| **reload_scene_from_path**\ (\ scene_filepath\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_reload_scene_from_path>`
 
-Reloads the scene at the given path. Fails if the scene is not open.
+Перезавантажує сцену за вказаним шляхом. Операція завершиться з помилкою, якщо сцена не відкрита.
 
 .. rst-class:: classref-item-separator
 
@@ -1080,7 +1080,7 @@ Reloads the scene at the given path. Fails if the scene is not open.
 
 |void| **set_main_screen_editor**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_set_main_screen_editor>`
 
-Sets the editor's current main screen to the one specified in ``name``. ``name`` must match the title of the tab in question exactly (e.g. ``2D``, ``3D``, ``Script``, ``Game``, or ``Asset Store`` for default tabs).
+Встановлює поточний головний екран редактора на той, що вказано в ``name``. ``name`` має точно відповідати назві відповідної вкладки (наприклад, ``2D``, ``3D``, ``Script``, ``Game`` або ``Asset Store`` для вкладок за замовчуванням).
 
 .. rst-class:: classref-item-separator
 

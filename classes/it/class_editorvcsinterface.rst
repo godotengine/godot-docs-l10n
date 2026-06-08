@@ -233,7 +233,7 @@ Esegue il check-out di un ramo denominato ``branch_name`` nel VCS.
 
 |void| **_commit**\ (\ msg\: :ref:`String<class_String>`, amend\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorVCSInterface_private_method__commit>`
 
-Commits the currently staged changes and applies the commit ``msg`` to the resulting commit. If ``amend`` is ``true`` the commit will modify the most recent commit instead.
+Esegue il commit delle modifiche attualmente in fase di staging e applica il messaggio ``msg`` al commit risultante. Se ``amend`` è ``true``, il commit modificherà invece il commit più recente.
 
 .. rst-class:: classref-item-separator
 

@@ -87,7 +87,7 @@ enum **LoopMode**: :ref:`🔗<enum_SpriteFrames_LoopMode>`
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_NONE** = ``0``
 
-The animation plays once and stops when it reaches the end, or the start if played in reverse.
+L'animazione è riprodotta una sola volta e si ferma quando raggiunge la fine, oppure l'inizio se riprodotta al contrario.
 
 .. _class_SpriteFrames_constant_LOOP_LINEAR:
 
@@ -184,7 +184,7 @@ Duplica l'animazione ``anim_from`` in una nuova animazione con il nome ``anim_to
 
 **Deprecato:** Use :ref:`get_animation_loop_mode()<class_SpriteFrames_method_get_animation_loop_mode>` instead.
 
-Returns ``true`` if ``get_animation_loop_mode(anim) == LOOP_LINEAR``. Otherwise, returns ``false``.
+Restituisce ``true`` se ``get_animation_loop_mode(anim) == LOOP_LINEAR``. Altrimenti, restituisce ``false``.
 
 .. rst-class:: classref-item-separator
 

@@ -16,7 +16,7 @@ Descrizione
 
 Nodo per il back-buffering dello schermo attualmente visualizzato. La regione definita nel nodo **BackBufferCopy** viene bufferizzata con il contenuto dello schermo che esso copre, o l'intero schermo in base a :ref:`copy_mode<class_BackBufferCopy_property_copy_mode>`. È possibile accedervi negli script degli shader attraverso la texture dello schermo (ovvero un campionatore uniforme con ``hint_screen_texture``).
 
-\ **Nota:** Poiché questo nodo eredita da :ref:`Node2D<class_Node2D>` (e non da :ref:`Control<class_Control>`), gli ancoraggi e i margini non si applicheranno ai nodi figlio derivati da :ref:`Control<class_Control>`. Ciò può essere problematico quando si ridimensiona la finestra. Per evitare ciò, aggiungi i nodi derivati da :ref:`Control<class_Control>` come *fratelli* al nodo **BackBufferCopy** anziché aggiungerli come figli.
+\ **Nota:** Poiché questo nodo eredita da :ref:`Node2D<class_Node2D>` (e non da :ref:`Control<class_Control>`), le ancore e i margini non si applicheranno ai nodi figlio derivati da :ref:`Control<class_Control>`. Ciò può essere problematico quando si ridimensiona la finestra. Per evitare ciò, aggiungi i nodi derivati da :ref:`Control<class_Control>` come *fratelli* al nodo **BackBufferCopy** anziché aggiungerli come figli.
 
 .. rst-class:: classref-introduction-group
 

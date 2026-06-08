@@ -285,9 +285,9 @@ enum **TangentMode**: :ref:`🔗<enum_Curve_TangentMode>`
 
 :ref:`int<class_int>` **point_{index}/left_mode** = ``0`` :ref:`🔗<class_Curve_property_point_{index}/left_mode>`
 
-The left :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
+Ліва :ref:`TangentMode<enum_Curve_TangentMode>` для точки з індексом ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -299,9 +299,9 @@ The left :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
 
 :ref:`float<class_float>` **point_{index}/left_tangent** = ``0.0`` :ref:`🔗<class_Curve_property_point_{index}/left_tangent>`
 
-The left tangent angle (in degrees) for the point at ``index``.
+Кут дотичної зліва (у градусах) для точки з індексом ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -313,9 +313,9 @@ The left tangent angle (in degrees) for the point at ``index``.
 
 :ref:`Vector2<class_Vector2>` **point_{index}/position** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve_property_point_{index}/position>`
 
-The position of the point at ``index``.
+Координати точки під індексом ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -327,9 +327,9 @@ The position of the point at ``index``.
 
 :ref:`int<class_int>` **point_{index}/right_mode** = ``0`` :ref:`🔗<class_Curve_property_point_{index}/right_mode>`
 
-The right :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
+Пряма :ref:`TangentMode<enum_Curve_TangentMode>` для точки з індексом ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -341,9 +341,9 @@ The right :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
 
 :ref:`float<class_float>` **point_{index}/right_tangent** = ``0.0`` :ref:`🔗<class_Curve_property_point_{index}/right_tangent>`
 
-The right tangent angle (in degrees) for the point at ``index``.
+Прямий кут дотичної (у градусах) для точки з індексом ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. point_count - 1``.
 
 .. rst-class:: classref-section-separator
 
@@ -552,7 +552,7 @@ The right tangent angle (in degrees) for the point at ``index``.
 
 :ref:`int<class_int>` **set_point_offset**\ (\ index\: :ref:`int<class_int>`, offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Curve_method_set_point_offset>`
 
-Assigns the horizontal position ``offset`` to the point at ``index``.
+Присвоює точці з індексом ``index`` горизонтальне положення ``offset``.
 
 .. rst-class:: classref-item-separator
 

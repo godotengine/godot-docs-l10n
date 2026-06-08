@@ -3923,14 +3923,14 @@ Indique qu'une propriété de chaine de caractères est un mot de passe, et que 
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_TOOL_BUTTON** = ``39``
 
-Indique qu'une propriété :ref:`Callable<class_Callable>` devrait être affichée comme un bouton cliquable. Quand le bouton est appuyé, la fonction est appelé. La chaîne de caractères d'indice spécifie le texte du bouton et, optionnellement, une icône de type de thème ``"EditorIcons"``.
+Indique qu'une propriété :ref:`Callable<class_Callable>` devrait être affichée comme un bouton cliquable. Quand le bouton est appuyé, la fonction est appelé. La chaîne de caractères d'indice spécifie le texte du bouton et, optionnellement, une icône du type de thème ``"EditorIcons"``.
 
 .. code:: text
 
-    "Cliquer moi!" - Un bouton avec le texte "Cliquer moi!" et l'icône "Callable" par défaut.
-    "Cliquer moi!,ColorRect" - Un bouton avec le texte "Cliquer moi!" et l'icône "ColorRect".
+    "Cliquez moi !" - Un bouton avec le texte "Cliquez moi !" et l'icône "Callable" par défaut.
+    "Cliquez moi !, ColorRect" - Un bouton avec le texte "Cliquer moi !" et l'icône "ColorRect".
 
-\ **Note:** Un :ref:`Callable<class_Callable>` ne peut être correctement sérialisé et sauvegardé dans un fichier, donc il est recommandé d'utiliser :ref:`PROPERTY_USAGE_EDITOR<class_@GlobalScope_constant_PROPERTY_USAGE_EDITOR>` plutôt que :ref:`PROPERTY_USAGE_DEFAULT<class_@GlobalScope_constant_PROPERTY_USAGE_DEFAULT>`.
+\ **Note :** Un :ref:`Callable<class_Callable>` ne peut être correctement sérialisé et sauvegardé dans un fichier, il est donc recommandé d'utiliser :ref:`PROPERTY_USAGE_EDITOR<class_@GlobalScope_constant_PROPERTY_USAGE_EDITOR>` à la place de :ref:`PROPERTY_USAGE_DEFAULT<class_@GlobalScope_constant_PROPERTY_USAGE_DEFAULT>`.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ONESHOT:
 
@@ -4876,7 +4876,7 @@ Opérateur logique OU exclusif (XOR) (non implémenté dans le GDScript).
 
 :ref:`Variant.Operator<enum_@GlobalScope_Variant.Operator>` **OP_NOT** = ``23``
 
-L'opérateur logique NON (``not`` or ``!``).
+L'opérateur logique NON (``not`` ou ``!``).
 
 .. _class_@GlobalScope_constant_OP_IN:
 

@@ -138,7 +138,7 @@ MeshLibrary
 
 :ref:`int<class_int>` **get_item_count**\ (\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_count>`
 
-Returns the number of items present in the library.
+Повертає кількість елементів, що містяться в бібліотеці.
 
 .. rst-class:: classref-item-separator
 

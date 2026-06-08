@@ -84,7 +84,7 @@ AudioStreamPlaybackPolyphonic
 
 返回值是与该播放流关联的唯一整数 ID，可用于控制该播放流。
 
-当流结束（不循环）、\ **AudioStreamPlaybackPolyphonic** 停止或 :ref:`stop_stream()<class_AudioStreamPlaybackPolyphonic_method_stop_stream>` 被调用时，该 ID 将失效。
+当流结束（未循环）、\ **AudioStreamPlaybackPolyphonic** 停止或 :ref:`stop_stream()<class_AudioStreamPlaybackPolyphonic_method_stop_stream>` 被调用时，该 ID 将失效。
 
 如果当前播放的流的数量等于 :ref:`AudioStreamPolyphonic.polyphony<class_AudioStreamPolyphonic_property_polyphony>`\ ，则该函数将返回 :ref:`INVALID_ID<class_AudioStreamPlaybackPolyphonic_constant_INVALID_ID>`\ 。如果需要更大的最大复音数，请提高该值。
 
@@ -98,7 +98,7 @@ AudioStreamPlaybackPolyphonic
 
 |void| **set_stream_pitch_scale**\ (\ stream\: :ref:`int<class_int>`, pitch_scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioStreamPlaybackPolyphonic_method_set_stream_pitch_scale>`
 
-改变流的音阶。\ ``stream`` 参数是一个由 :ref:`play_stream()<class_AudioStreamPlaybackPolyphonic_method_play_stream>` 返回的整数 ID。
+改变流的音高缩放比例。\ ``stream`` 参数是一个由 :ref:`play_stream()<class_AudioStreamPlaybackPolyphonic_method_play_stream>` 返回的整数 ID。
 
 .. rst-class:: classref-item-separator
 

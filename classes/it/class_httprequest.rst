@@ -496,9 +496,9 @@ Numero massimo di reindirizzamenti consentiti.
 - |void| **set_timeout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_timeout**\ (\ )
 
-The duration to wait before a request times out, in seconds (independent of :ref:`Engine.time_scale<class_Engine_property_time_scale>`). If :ref:`timeout<class_HTTPRequest_property_timeout>` is set to ``0.0``, the request will never time out.
+La durata di attesa in secondi prima che una richiesta scada, in secondi (indipendente da :ref:`Engine.time_scale<class_Engine_property_time_scale>`. Se :ref:`timeout<class_HTTPRequest_property_timeout>` è impostato su ``0.0``, la richiesta non scadrà mai.
 
-For simple requests, such as communication with a REST API, it is recommended to set :ref:`timeout<class_HTTPRequest_property_timeout>` to a value suitable for the server response time (commonly between ``1.0`` and ``10.0``). This will help prevent unwanted timeouts caused by variation in response times while still allowing the application to detect when a request has timed out. For larger requests such as file downloads, it is recommended to set :ref:`timeout<class_HTTPRequest_property_timeout>` to ``0.0``, disabling the timeout functionality. This will help prevent large transfers from failing due to exceeding the timeout value.
+Per richieste semplici, come la comunicazione con un'API REST, si consiglia di impostare :ref:`timeout<class_HTTPRequest_property_timeout>` su un valore adatto al tempo di risposta del server (ad esempio tra ``1.0`` e ``10.0``). Ciò contribuirà a prevenire timeout indesiderati causati da variazioni nei tempi di risposta del server, consentendo comunque all'applicazione di rilevare quando una richiesta è scaduta. Per richieste più grandi, come i download di file, si consiglia di impostare :ref:`timeout<class_HTTPRequest_property_timeout>` su ``0.0``, disabilitando la funzionalità di timeout. Ciò aiuterà a impedire che i trasferimenti grandi falliscano a causa del superamento del valore di timeout.
 
 .. rst-class:: classref-item-separator
 

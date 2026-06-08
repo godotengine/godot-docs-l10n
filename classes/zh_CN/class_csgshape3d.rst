@@ -146,9 +146,9 @@ enum **Operation**: :ref:`🔗<enum_CSGShape3D_Operation>`
 - |void| **set_autosmooth**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_autosmooth**\ (\ )
 
-Enables automatic smoothing. This overrides any smoothing on the CSG node and instead uses :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>` to calculate normals based on the angle between faces.
+启用自动平滑。这将覆盖 CSG 节点上的任何原有平滑设置，转而使用 :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>`\ （平滑角度）根据面与面之间的夹角来计算法线。
 
-Children of a :ref:`CSGCombiner3D<class_CSGCombiner3D>` node will be treated as a single mesh.
+\ :ref:`CSGCombiner3D<class_CSGCombiner3D>` 节点的所有子节点将被视为一个单一的网格体。
 
 .. rst-class:: classref-item-separator
 
@@ -254,9 +254,9 @@ Children of a :ref:`CSGCombiner3D<class_CSGCombiner3D>` node will be treated as 
 - |void| **set_smoothing_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_smoothing_angle**\ (\ )
 
-When autosmooth is enabled, faces with an angle between them greater than this will be smoothed, while faces with a smaller angle will remain sharp.
+当自动平滑（autosmooth）启用时，面与面之间的夹角小于该值的会被平滑处理，而夹角大于该值的则会保持锐利（保留棱角）。
 
-Note: An angle lower than 0.1 will cause all smoothing to be disabled, this can be used to increase performance.
+注意：将该角度设置为低于 0.1 的值会导致所有平滑效果被禁用，这可以用来提升性能。
 
 .. rst-class:: classref-item-separator
 

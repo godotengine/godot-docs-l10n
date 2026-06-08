@@ -137,7 +137,7 @@ Texture2D
 
 :ref:`Format<enum_Image_Format>` **_get_format**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__get_format>`
 
-Called when :ref:`get_format()<class_Texture2D_method_get_format>` is called.
+当调用 :ref:`get_format()<class_Texture2D_method_get_format>` 时，此方法会被触发。
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ Called when :ref:`get_format()<class_Texture2D_method_get_format>` is called.
 
 :ref:`Image<class_Image>` **_get_image**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__get_image>`
 
-Called when :ref:`get_image()<class_Texture2D_method_get_image>` is called.
+当调用 :ref:`get_image()<class_Texture2D_method_get_image>` 时，此方法会被触发。
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ Called when :ref:`get_image()<class_Texture2D_method_get_image>` is called.
 
 :ref:`int<class_int>` **_get_mipmap_count**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__get_mipmap_count>`
 
-Called when :ref:`get_mipmap_count()<class_Texture2D_method_get_mipmap_count>` is called.
+当调用 :ref:`get_mipmap_count()<class_Texture2D_method_get_mipmap_count>` 时，此方法会被触发。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ Called when :ref:`get_mipmap_count()<class_Texture2D_method_get_mipmap_count>` i
 
 :ref:`bool<class_bool>` **_has_mipmaps**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__has_mipmaps>`
 
-Called when :ref:`has_mipmaps()<class_Texture2D_method_has_mipmaps>` is called.
+当调用 :ref:`has_mipmaps()<class_Texture2D_method_has_mipmaps>` 时，此方法会被触发。
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Called when :ref:`has_mipmaps()<class_Texture2D_method_has_mipmaps>` is called.
 
 :ref:`Format<enum_Image_Format>` **get_format**\ (\ ) |const| :ref:`🔗<class_Texture2D_method_get_format>`
 
-Returns the image format of the texture.
+回该纹理的图像格式。
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ Returns the image format of the texture.
 
 :ref:`int<class_int>` **get_mipmap_count**\ (\ ) |const| :ref:`🔗<class_Texture2D_method_get_mipmap_count>`
 
-Returns the number of mipmaps of the texture.
+返回该纹理的 Mipmap 数量。
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ Returns the number of mipmaps of the texture.
 
 :ref:`bool<class_bool>` **has_mipmaps**\ (\ ) |const| :ref:`🔗<class_Texture2D_method_has_mipmaps>`
 
-Returns ``true`` if the texture has mipmaps.
+如果该纹理包含 Mipmap，则返回 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

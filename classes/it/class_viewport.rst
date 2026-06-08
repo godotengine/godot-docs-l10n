@@ -45,7 +45,7 @@ Tutorial
 
 - `Demo di schermo diviso dinamico <https://godotengine.org/asset-library/asset/2806>`__
 
-- `Demo di scala della risoluzione 3D <https://godotengine.org/asset-library/asset/2805>`__
+- `Demo di scaling della risoluzione 3D <https://godotengine.org/asset-library/asset/2805>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -725,11 +725,11 @@ Gli oggetti sono visualizzati semi-trasparenti con fusione additiva, così per v
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_WIREFRAME** = ``4``
 
-Objects are displayed as wireframe models.
+Gli oggetti sono visualizzati come modelli fildiferro.
 
-\ **Note:** :ref:`RenderingServer.set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` must be called before loading any meshes for wireframes to be visible when using the Compatibility renderer.
+\ **Nota:** È necessario chiamare :ref:`RenderingServer.set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` prima di caricare qualsiasi mesh affinché i fildiferro siano visibili quando si utilizza il renderer Compatibilità.
 
-\ **Note:** In the Compatibility renderer, backfaces are always visible when using wireframe rendering. In the Forward+ and Mobile renderers, wireframes follow the material's backface culling properties instead.
+\ **Nota:** Nel renderer Compatibilità, le facce posteriori sono sempre visibili quando si usa il rendering fildiferro. Nei renderer Forward+ e Mobile, i fildiferro seguono invece le proprietà di culling delle facce posteriori del materiale.
 
 .. _class_Viewport_constant_DEBUG_DRAW_NORMAL_BUFFER:
 
@@ -857,13 +857,13 @@ Non fa nulla se :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_SDFGI_PROBES** = ``17``
 
-Draws the probes used for signed distance field global illumination (SDFGI).
+Disegna le sonde utilizzate per l'illuminazione globale con signed distance field (SDFGI).
 
-When in the editor, left-clicking a probe will display additional bright dots that show its occlusion information. A white dot means the light is not occluded at all at the dot's position, while a red dot means the light is fully occluded. Intermediate values are possible.
+Nell'editor, facendo clic sinistro su una sonda, appariranno dei punti luminosi aggiuntivi che mostrano le informazioni sull'occlusione. Un punto bianco indica che la luce non è affatto occlusa in quella posizione, mentre un punto rosso indica che la luce è completamente occlusa. Sono possibili valori intermedi.
 
-Does nothing if the current environment's :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>` is ``false``.
+Non fa nulla se :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>` dell'ambiente attuale è ``false``.
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_GI_BUFFER:
 
@@ -1567,13 +1567,13 @@ Vedi anche :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handl
 - |void| **set_mesh_lod_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mesh_lod_threshold**\ (\ )
 
-The automatic LOD bias to use for meshes rendered within the **Viewport** (this is analogous to :ref:`ReflectionProbe.mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>`). Higher values will use less detailed versions of meshes that have LOD variations generated. If set to ``0.0``, automatic LOD is disabled. Increase :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` to improve performance at the cost of geometry detail.
+Il bias LOD automatico da usare per le mesh renderizzate all'interno della **Viewport** (analogo a :ref:`ReflectionProbe.mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>`). Valori più alti useranno versioni meno dettagliate delle mesh che hanno variazioni LOD generate. Se impostato su ``0.0``, il LOD automatico è disabilitato. Aumenta :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` per migliorare le prestazioni a scapito dei dettagli della geometria.
 
-To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` project setting.
+Per controllare questa proprietà sulla viewport radice, cambia l'impostazione del progetto :ref:`ProjectSettings.rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>`.
 
-\ **Note:** Depending on the mesh's attributes (vertex colors, blend shapes, ...), a mesh may have fewer levels of LOD generated to avoid visible distortion of the mesh once it is affected by vertex colors or blend shapes. Meshes with a very low vertex count will also not have any LODs generated, which means this setting will not affect them at all. In general, this setting makes the largest impact on static meshes with a high vertex count.
+\ **Nota:** A seconda degli attributi della mesh (colori dei vertici, forme di fusione, ecc.), una mesh potrebbe avere meno livelli di LOD generati per evitare distorsioni evidenti una volta che è influenzata dai colori dei vertici o dalle forme di fusione. Le mesh con pochissimi vertici non avranno alcun LOD generato, il che significa che questa impostazione non le influenzerà affatto. In generale, questa impostazione ha il maggiore impatto sulle mesh statiche con un elevato numero di vertici.
 
-\ **Note:** :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` does not affect :ref:`GeometryInstance3D<class_GeometryInstance3D>` visibility ranges (also known as "manual" LOD or hierarchical LOD).
+\ **Nota:** :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` non influisce sugli intervalli di visibilità :ref:`GeometryInstance3D<class_GeometryInstance3D>` (noti anche come LOD "manuale" o LOD gerarchico).
 
 .. rst-class:: classref-item-separator
 
@@ -1719,7 +1719,7 @@ Questo si applica solo alla selezione degli oggetto CanvasItem 2D.
 - |void| **set_physics_object_picking_sort**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_sort**\ (\ )
 
-Se ``true``, gli oggetti ricevono eventi di selezione del mouse ordinati principalmente in base al loro :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` e secondariamente in base alla loro posizione nell'albero della scena. Se ``false``, l'ordine non è determinato.
+Se ``true``, gli oggetti ricevono eventi di selezione del mouse ordinati principalmente in base al loro :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` e secondariamente in base alla loro posizione nell'albero di scene. Se ``false``, l'ordine non è determinato.
 
 \ **Nota:** Questa impostazione è disabilitata per impostazione predefinita a causa del suo potenziale costo computazionale elevato.
 
@@ -1973,15 +1973,15 @@ Se ``true``, i vertici dei nodi :ref:`CanvasItem<class_CanvasItem>` si allineano
 - |void| **set_texture_mipmap_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_mipmap_bias**\ (\ )
 
-Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close).
+Influisce sulla nitidezza finale della texture leggendo da una mipmap inferiore o superiore (chiamata anche "texture LOD bias"). I valori negativi rendono le texture mipmap più nitide ma più granulose se viste da lontano, mentre i valori positivi rendono le texture mipmap più sfocate (anche da vicino).
 
-Enabling temporal antialiasing (:ref:`use_taa<class_Viewport_property_use_taa>`) will automatically apply a ``-0.5`` offset to this value, while enabling FXAA (:ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`) will automatically apply a ``-0.25`` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of ``-0.75`` is applied to this value.
+L'attivazione dell'antialiasing temporale (:ref:`use_taa<class_Viewport_property_use_taa>`) applicherà automaticamente un offset di ``-0,5`` a questo valore, mentre l'attivazione di FXAA (:ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`) applicherà automaticamente un offset di ``-0,25`` a questo valore. Se TAA e FXAA sono abilitati allo stesso tempo, a questo valore viene applicato un offset di ``-0,75``.
 
-To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` project setting.
+Per controllare questa proprietà nella viewport radice, cambia l'impostazione del progetto :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`.
 
-\ **Note:** If :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` is lower than ``1.0`` (exclusive), :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``log2(scaling_3d_scale) + mipmap_bias``.
+\ **Nota:** Se :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` è inferiore a ``1.0`` (esclusivo), :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` viene utilizzato per regolare il bias mipmap automatico calcolato internamente in base al fattore di scala. La formula per questo è ``log2(scaling_3d_scale) + mipmap_bias``.
 
-\ **Note:** This property is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this property is always treated as if it was set to ``0.0``.
+\ **Nota:** Questa proprietà è supportata solo nei renderer Forward+ e Mobile, non in Compatibilità. In Compatibilità, questa proprietà è sempre trattata come se fosse impostata su ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -2017,11 +2017,11 @@ If ``true``, the viewport should render its background as transparent.
 - |void| **set_use_debanding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_debanding**\ (\ )
 
-When using the Mobile or Forward+ renderers, set :ref:`use_debanding<class_Viewport_property_use_debanding>` to enable or disable the debanding feature of this **Viewport**. If :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``false``, 2D rendering is *not* affected by debanding unless the :ref:`Environment.background_mode<class_Environment_property_background_mode>` is :ref:`Environment.BG_CANVAS<class_Environment_constant_BG_CANVAS>`. If :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true``, debanding will only be applied if this is the root **Viewport** and will affect all 2D and 3D rendering, including canvas items.
+Se ``true``, utilizza un filtro di post-elaborazione veloce per ridurre notevolmente la visibiltà del banding. Se :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` è ``false``, il rendering 2D *non* è influenzato dal debanding a meno che :ref:`Environment.background_mode<class_Environment_property_background_mode>` non sia :ref:`Environment.BG_CANVAS<class_Environment_constant_BG_CANVAS>`. Se :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` è ``true``, il debanding sarà applicato solo se questa è la **Viewport** radice e influenzerà tutto i rendering 2D e 3D, inclusi gli elementi canvas.
 
-\ :ref:`use_debanding<class_Viewport_property_use_debanding>` has no effect when using the Compatibility rendering method. The Mobile renderer can also use material debanding, which can be set with :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` or configured with :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`.
+\ :ref:`use_debanding<class_Viewport_property_use_debanding>` non ha effetto quando si utilizza il metodo di rendering Compatibilità. Il renderer Mobile può anche utilizzare il debanding per i materiali, che è possibile impostare con :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` o configurare con :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`.
 
-See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`, :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>`, and :ref:`RenderingServer.viewport_set_use_debanding()<class_RenderingServer_method_viewport_set_use_debanding>`.
+Vedi anche :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`, :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` e :ref:`RenderingServer.viewport_set_use_debanding()<class_RenderingServer_method_viewport_set_use_debanding>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2038,9 +2038,9 @@ See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<cla
 - |void| **set_use_hdr_2d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_hdr_2d**\ (\ )
 
-If ``true``, 2D rendering will use a high dynamic range (HDR) ``RGBA16`` format framebuffer. Additionally, 2D rendering will be performed on linear values and will be converted using the appropriate transfer function immediately before blitting to the screen (if the Viewport is attached to the screen).
+Se ``true``, il rendering 2D utilizzerà un framebuffer in formato HDR ("alta gamma dinamica") ``RGBA16``. Inoltre, il rendering 2D sarà effettuato su valori lineari e sarà convertito attraverso l'apposita funzione di trasferimento subito prima di essere visualizzato sullo schermo (se la Viewport è collegata allo schermo).
 
-Practically speaking, this means that the end result of the Viewport will not be clamped to the ``0-1`` range and can be used in 3D rendering without color encoding adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients.
+In pratica, ciò significa che il risultato finale della Viewport non sarà limitato nell'intervallo ``0-1`` e si potrà utilizzare nel rendering 3D senza aggiustare la codifica dei colori. Ciò consente al rendering 2D di sfruttare gli effetti che richiedono un'alta gamma dinamica (ad esempio, il bagliore 2D) e migliora sostanzialmente l'aspetto degli effetti che richiedono gradienti molto dettagliati.
 
 .. rst-class:: classref-item-separator
 
@@ -2594,7 +2594,7 @@ Se :ref:`handle_input_locally<class_Viewport_property_handle_input_locally>` è 
 
 Informa la Viewport che il mouse è entrato nella sua area. Usa questa funzione prima di inviare un :ref:`InputEventMouseButton<class_InputEventMouseButton>` o :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` alla **Viewport** con :ref:`push_input()<class_Viewport_method_push_input>`. Vedi anche :ref:`notify_mouse_exited()<class_Viewport_method_notify_mouse_exited>`.
 
-\ **Nota:** Nella maggior parte dei casi, non è necessario chiamare questa funzione perché i nodi :ref:`SubViewport<class_SubViewport>` che sono figli di :ref:`SubViewportContainer<class_SubViewportContainer>` vengono notificati automaticamente. Ciò è necessario solo quando si interagisce con i viewport in modi non predefiniti, ad esempio come texture in :ref:`TextureRect<class_TextureRect>` o con un :ref:`Area3D<class_Area3D>` che inoltra gli eventi di input.
+\ **Nota:** Nella maggior parte dei casi, non è necessario chiamare questa funzione perché i nodi :ref:`SubViewport<class_SubViewport>` che sono figli di :ref:`SubViewportContainer<class_SubViewportContainer>` vengono notificati automaticamente. Ciò è necessario solo quando si interagisce con le viewport in modi non predefiniti, ad esempio come texture in :ref:`TextureRect<class_TextureRect>` o con un :ref:`Area3D<class_Area3D>` che inoltra gli eventi di input.
 
 .. rst-class:: classref-item-separator
 
@@ -2608,7 +2608,7 @@ Informa la Viewport che il mouse è entrato nella sua area. Usa questa funzione 
 
 Informa la Viewport che il mouse è uscito dalla sua area. Usa questa funzione quando il nodo che visualizza la viewport nota che il mouse ha lasciato l'area della viewport visualizzata. Vedi anche :ref:`notify_mouse_entered()<class_Viewport_method_notify_mouse_entered>`.
 
-\ **Nota:** Nella maggior parte dei casi, non è necessario chiamare questa funzione perché i nodi :ref:`SubViewport<class_SubViewport>` che sono figli di :ref:`SubViewportContainer<class_SubViewportContainer>` vengono notificati automaticamente. Ciò è necessario solo quando si interagisce con i viewport in modi non predefiniti, ad esempio come texture in :ref:`TextureRect<class_TextureRect>` o con un :ref:`Area3D<class_Area3D>` che inoltra gli eventi di input.
+\ **Nota:** Nella maggior parte dei casi, non è necessario chiamare questa funzione perché i nodi :ref:`SubViewport<class_SubViewport>` che sono figli di :ref:`SubViewportContainer<class_SubViewportContainer>` vengono notificati automaticamente. Ciò è necessario solo quando si interagisce con le viewport in modi non predefiniti, ad esempio come texture in :ref:`TextureRect<class_TextureRect>` o con un :ref:`Area3D<class_Area3D>` che inoltra gli eventi di input.
 
 .. rst-class:: classref-item-separator
 

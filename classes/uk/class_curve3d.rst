@@ -168,9 +168,9 @@ Curve3D
 
 :ref:`Vector3<class_Vector3>` **point_{index}/in** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/in>`
 
-The position of the control point leading to the vertex at ``index``.
+Координати контрольної точки, що веде до вершини з індексом ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -182,9 +182,9 @@ The position of the control point leading to the vertex at ``index``.
 
 :ref:`Vector3<class_Vector3>` **point_{index}/out** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/out>`
 
-The position of the control point leading out of the vertex at ``index``.
+Координати контрольної точки, що виходить із вершини з індексом ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -196,9 +196,9 @@ The position of the control point leading out of the vertex at ``index``.
 
 :ref:`Vector3<class_Vector3>` **point_{index}/position** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/position>`
 
-The position of for the vertex at ``index``.
+Координати вершини з індексом ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -210,9 +210,9 @@ The position of for the vertex at ``index``.
 
 :ref:`float<class_float>` **point_{index}/tilt** = ``0.0`` :ref:`🔗<class_Curve3D_property_point_{index}/tilt>`
 
-The tilt angle in radians for the point at ``index``.
+Кут нахилу в радіанах для точки з індексом ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 

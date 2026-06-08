@@ -12,13 +12,13 @@ Projection
 描述
 ----
 
-A 4×4 matrix used for 3D projective transformations. It can represent transformations such as translation, rotation, scaling, shearing, and perspective division. It consists of four :ref:`Vector4<class_Vector4>` columns.
+一个用于 3D 投影变换的 4×4 矩阵。它可以表示平移、旋转、缩放、剪切以及透视除法等变换。它由四个 :ref:`Vector4<class_Vector4>`\ （4维向量）列组成。
 
-For purely linear transformations (translation, rotation, and scale), it is recommended to use :ref:`Transform3D<class_Transform3D>`, as it is more performant and requires less memory.
+对于纯粹的线性变换（平移、旋转和缩放），建议使用 :ref:`Transform3D<class_Transform3D>`\ ，因为它的性能更高，且占用的内存更少。
 
-Used internally as :ref:`Camera3D<class_Camera3D>`'s projection matrix.
+在内部被用作 :ref:`Camera3D<class_Camera3D>` 的投影矩阵。
 
-\ **Note:** In a boolean context, a projection will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Projection_constant_IDENTITY>`. Otherwise, a projection will always evaluate to ``true``.
+\ **注意：** 在布尔值上下文中，如果一个投影矩阵等于 :ref:`IDENTITY<class_Projection_constant_IDENTITY>`\ （单位矩阵），它将被评估为 ``false``\ 。否则，投影矩阵将始终被评估为 ``true``\ 。
 
 .. note::
 

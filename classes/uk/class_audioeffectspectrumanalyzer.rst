@@ -7,16 +7,16 @@ AudioEffectSpectrumAnalyzer
 
 **Успадковує:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Creates an :ref:`AudioEffectInstance<class_AudioEffectInstance>` which performs frequency analysis and exposes results to be accessed in real-time.
+Створює об’єкт :ref:`AudioEffectInstance<class_AudioEffectInstance>`, який виконує частотний аналіз і надає доступ до результатів у режимі реального часу.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-Calculates a Fourier Transform of the audio signal. This effect does not alter the audio. Can be used for creating real-time audio visualizations, like a spectrogram.
+Обчислює перетворення Фур'є аудіосигналу. Цей ефект не змінює аудіо. Може використовуватися для створення аудіовізуалізацій у реальному часі, таких як спектрограма.
 
-This resource configures an :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`, which performs the actual analysis at runtime. An instance should be obtained with :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` to make use of this effect.
+Цей ресурс налаштовує екземпляр :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`, який виконує власне аналіз під час виконання. Щоб скористатися цим ефектом, екземпляр слід отримати за допомогою методу :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ This resource configures an :ref:`AudioEffectSpectrumAnalyzerInstance<class_Audi
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Аудіоефекти <../tutorials/audio/audio_effects>`
 
 - `Демонстрація візуалізатора аудіоспектру <https://godotengine.org/asset-library/asset/2762>`__
 
@@ -126,7 +126,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectSpectrumAnalyzer_FFTSize>`
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-The length of the buffer to keep, in seconds. Higher values keep data around for longer, but require more memory. Value can range from 0.1 to 4.
+Тривалість буфера, що зберігається, у секундах. Більші значення дозволяють зберігати дані довше, але вимагають більше пам’яті. Значення може становити від 0,1 до 4.
 
 .. rst-class:: classref-item-separator
 

@@ -194,7 +194,7 @@ enum **DebugVisibilityMode**: :ref:`🔗<enum_GridMap_DebugVisibilityMode>`
 
 :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_DEFAULT** = ``0``
 
-Hide the collisions debug shapes in the editor, and use the debug settings to determine their visibility in game (i.e. :ref:`SceneTree.debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` or :ref:`SceneTree.debug_navigation_hint<class_SceneTree_property_debug_navigation_hint>`).
+Приховайте фігури налагодження колізій у редакторі та скористайтеся налаштуваннями налагодження, щоб визначити їхню видимість у грі (наприклад, :ref:`SceneTree.debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` або :ref:`SceneTree.debug_navigation_hint<class_SceneTree_property_debug_navigation_hint>`).
 
 .. _class_GridMap_constant_DEBUG_VISIBILITY_MODE_FORCE_SHOW:
 
@@ -202,7 +202,7 @@ Hide the collisions debug shapes in the editor, and use the debug settings to de
 
 :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_FORCE_SHOW** = ``1``
 
-Always show the collisions debug shapes.
+Завжди відображати фігури налагодження зіткнень.
 
 .. _class_GridMap_constant_DEBUG_VISIBILITY_MODE_FORCE_HIDE:
 
@@ -210,7 +210,7 @@ Always show the collisions debug shapes.
 
 :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_FORCE_HIDE** = ``2``
 
-Always hide the collisions debug shapes.
+Завжди приховувати фігури налагодження зіткнень.
 
 .. rst-class:: classref-section-separator
 
@@ -425,7 +425,7 @@ GridMaps діють як статичні тіла, тобто на них не 
 - |void| **set_collision_visibility_mode**\ (\ value\: :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>`\ )
 - :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **get_collision_visibility_mode**\ (\ )
 
-Show or hide the **GridMap**'s collision shapes. If set to :ref:`DEBUG_VISIBILITY_MODE_DEFAULT<class_GridMap_constant_DEBUG_VISIBILITY_MODE_DEFAULT>`, this depends on the show collision debug settings.
+Показати або приховати фігури зіткнення **GridMap**. Якщо встановлено значення :ref:`DEBUG_VISIBILITY_MODE_DEFAULT<class_GridMap_constant_DEBUG_VISIBILITY_MODE_DEFAULT>`, це залежить від налаштувань налагодження відображення зіткнень.
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ Show or hide the **GridMap**'s collision shapes. If set to :ref:`DEBUG_VISIBILIT
 
 :ref:`Vector3i<class_Vector3i>` **get_octant_coords_from_cell_coords**\ (\ cell_coords\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_octant_coords_from_cell_coords>`
 
-Returns the :ref:`Vector3i<class_Vector3i>` octant coordinates of the octant that the cell at ``cell_coords`` belongs to.
+Повертає координати :ref:`Vector3i<class_Vector3i>` того октанта, до якого належить комірка за адресою ``cell_coords``.
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,7 @@ Returns the :ref:`Vector3i<class_Vector3i>` octant coordinates of the octant tha
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_octants_in_bounds**\ (\ bounds\: :ref:`AABB<class_AABB>`\ ) |const| :ref:`🔗<class_GridMap_method_get_octants_in_bounds>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>` octant coordinates that are inside the given ``bounds``, including octants that have no cells in use.
+Повертає масив координат октантів типу :ref:`Vector3i<class_Vector3i>`, що знаходяться в межах заданих ``bounds``, включаючи октанти, комірки яких не використовуються.
 
 .. rst-class:: classref-item-separator
 
@@ -684,7 +684,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>` octant coordinates that are 
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_cells_in_octant**\ (\ octant_coords\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_cells_in_octant>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates of non-empty cells inside the octant at ``octant_coords``.
+Повертає масив елементів типу :ref:`Vector3i<class_Vector3i>` з координатами непорожніх комірок всередині октанта, заданого параметром ``octant_coords``.
 
 .. rst-class:: classref-item-separator
 
@@ -696,7 +696,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_cells_in_octant_by_item**\ (\ octant_coords\: :ref:`Vector3i<class_Vector3i>`, item\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_cells_in_octant_by_item>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates of cells inside the octant at ``octant_coords`` that use the specified cell ``item``.
+Повертає масив елементів типу :ref:`Vector3i<class_Vector3i>` з координатами комірок всередині октанта, заданого параметром ``octant_coords``, які використовують вказану комірку ``item``.
 
 .. rst-class:: classref-item-separator
 
@@ -708,7 +708,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_octants**\ (\ ) |const| :ref:`🔗<class_GridMap_method_get_used_octants>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinates of the non-empty octants in the grid map.
+Повертає масив елементів типу :ref:`Vector3i<class_Vector3i>` з координатами непорожніх октантів на карті сітки.
 
 .. rst-class:: classref-item-separator
 
@@ -720,7 +720,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinat
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_octants_by_item**\ (\ item\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_octants_by_item>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinates of the octants that use the specified ``item`` in the grid map.
+Повертає масив елементів типу :ref:`Vector3i<class_Vector3i>` з координатами октантів, які використовують вказаний ``item`` на карті сітки.
 
 .. rst-class:: classref-item-separator
 
@@ -732,7 +732,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinat
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_octants_in_bounds**\ (\ bounds\: :ref:`AABB<class_AABB>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_octants_in_bounds>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinates of non-empty octants that are inside the local ``bounds``.
+Повертає масив елементів типу :ref:`Vector3i<class_Vector3i>` з координатами непорожніх октантів, що знаходяться в межах локальних ``bounds``.
 
 .. rst-class:: classref-item-separator
 

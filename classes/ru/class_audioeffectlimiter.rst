@@ -9,18 +9,18 @@ AudioEffectLimiter
 
 **Наследует:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a soft-clip limiter audio effect to an audio bus.
+Добавляет эффект мягкого ограничения звука к аудиошине.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-A "limiter" is an audio effect designed to stop audio signals from exceeding a specified volume threshold level, and usually works by decreasing the volume or soft-clipping the audio. Adding one in the Master bus is always recommended to prevent clipping when the volume goes above 0 dB.
+Ограничитель — это звуковой эффект, предназначенный для предотвращения превышения аудиосигналом заданного порогового уровня громкости. Обычно он работает за счет уменьшения громкости или мягкого ограничения сигнала. Рекомендуется добавлять его на мастер-шину, чтобы предотвратить ограничение сигнала при превышении громкости 0 дБ.
 
-Soft clipping starts to decrease the peaks a little below the volume threshold level and progressively increases its effect as the input volume increases such that the threshold level is never exceeded.
+Мягкое ограничение начинает уменьшать пики немного ниже порогового уровня громкости и постепенно усиливает свой эффект по мере увеличения входной громкости, так что пороговый уровень никогда не будет превышен.
 
-If hard clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
+Если требуется жесткое ограничение сигнала, рассмотрите :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -29,7 +29,7 @@ If hard clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<clas
 
 - :doc:`Аудиошины <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Звуковые эффекты <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -69,7 +69,7 @@ If hard clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<clas
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-The waveform's maximum allowed value, in dB. Value can range from -20 to -0.1.
+Максимально допустимое значение формы сигнала в дБ. Значение может варьироваться от -20 до -0,1.
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ The waveform's maximum allowed value, in dB. Value can range from -20 to -0.1.
 - |void| **set_soft_clip_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_db**\ (\ )
 
-Modifies the volume of the limited waves, in dB. Value can range from 0 to 6.
+Изменяет громкость ограниченных волн в дБ. Значение может варьироваться от 0 до 6.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Modifies the volume of the limited waves, in dB. Value can range from 0 to 6.
 - |void| **set_soft_clip_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_ratio**\ (\ )
 
-This property has no effect on the audio. Use :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` instead, as this Limiter effect is deprecated.
+Это свойство не влияет на звук. Используйте :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` вместо него, поскольку этот эффект лимитера устарел.
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ This property has no effect on the audio. Use :ref:`AudioEffectHardLimiter<class
 - |void| **set_threshold_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold_db**\ (\ )
 
-The volume threshold level from which the limiter begins to be active, in dB. Value can range from -30 to 0.
+Уровень громкости, с которого начинает работать ограничитель, в дБ. Значение может варьироваться от -30 до 0.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

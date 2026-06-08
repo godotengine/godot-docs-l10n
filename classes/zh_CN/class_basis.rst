@@ -12,29 +12,29 @@ Basis
 描述
 ----
 
-The **Basis** built-in :ref:`Variant<class_Variant>` type is a 3×3 `matrix <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ used to represent 3D rotation, scale, and shear. It is frequently used within a :ref:`Transform3D<class_Transform3D>`.
+**Basis** 内置 :ref:`Variant<class_Variant>` 类型是一种 3×3 `矩阵 <https://zh.wikipedia.org/zh-cn/%E7%9F%A9%E9%98%B5>`__\ ，用于表示 3D 旋转、缩放和倾斜。常用于 :ref:`Transform3D<class_Transform3D>`\ 。
 
-A **Basis** is composed by 3 axis vectors, each representing a column of the matrix: :ref:`x<class_Basis_property_x>`, :ref:`y<class_Basis_property_y>`, and :ref:`z<class_Basis_property_z>`. The length of each axis (:ref:`Vector3.length()<class_Vector3_method_length>`) influences the basis's scale, while the direction of all axes influence the rotation. Usually, these axes are perpendicular to one another. However, when you rotate any axis individually, the basis becomes sheared. Applying a sheared basis to a 3D model will make the model appear distorted.
+\ **Basis** 由 3 个轴向量组成，每个轴向量代表矩阵的一列：\ :ref:`x<class_Basis_property_x>`\ 、\ :ref:`y<class_Basis_property_y>` 和 :ref:`z<class_Basis_property_z>`\ 。每个轴的长度（\ :ref:`Vector3.length()<class_Vector3_method_length>`\ ）都会影响该基的缩放，而所有轴的方向将影响旋转。通常，这些轴彼此垂直。但是，当你单独旋转任意轴时，该基会产生倾斜。对 3D 模型应用倾斜后的基会使模型发生变形。
 
-A **Basis** is:
+特殊形式的 **Basis** 有：
 
-- **Orthogonal** if its axes are perpendicular to each other.
+- **正交**\ ：轴相互垂直。
 
-- **Normalized** if the length of every axis is ``1.0``.
+- **归一化**\ ：轴的长度都是 ``1.0``\ 。
 
-- **Uniform** if all axes share the same length (see :ref:`get_scale()<class_Basis_method_get_scale>`).
+- **均匀**\ ：轴的长度相等（见 :ref:`get_scale()<class_Basis_method_get_scale>`\ ）。
 
-- **Orthonormal** if it is both orthogonal and normalized, which allows it to only represent rotations (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+- **正交归一**\ ：既正交又归一化，只能表示旋转。
 
-- **Conformal** if it is both orthogonal and uniform, which ensures it is not distorted.
+- **共形**\ ：既正交又均匀，保证不扭曲。
 
-For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
+通用介绍见教程\ :doc:`《矩阵与变换》 <../tutorials/math/matrices_and_transforms>`\ 。
 
-\ **Note:** Godot uses a `right-handed coordinate system <https://en.wikipedia.org/wiki/Right-hand_rule>`__, which is a common standard. For directions, the convention for built-in types like :ref:`Camera3D<class_Camera3D>` is for -Z to point forward (+X is right, +Y is up, and +Z is back). Other objects may use different direction conventions. For more information, see the `3D asset direction conventions <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ tutorial.
+\ **注意：**\ Godot 使用\ `右手坐标系 <https://zh.wikipedia.org/zh-cn/%E5%8F%B3%E6%89%8B%E5%AE%9A%E5%89%87>`__\ ，这是一种普遍标准。方向方面，\ :ref:`Camera3D<class_Camera3D>` 等内置类型的约定是 -Z 指向前方（+X 为右、+Y 为上、+Z 为后）。其他对象可能使用不同的方向约定。更多信息见教程\ `《3D 资产方向惯例》 <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ 。
 
-\ **Note:** The basis matrices are exposed as `column-major <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__ order, which is the same as OpenGL. However, they are stored internally in row-major order, which is the same as DirectX.
+\ **注意：**\ 基矩阵按\ `列为主 <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__\ 的顺序公开，这与 OpenGL 一致。但是内部使用行为主的顺序存储，这与 DirectX 一致。
 
-\ **Note:** In a boolean context, a basis will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Basis_constant_IDENTITY>`. Otherwise, a basis will always evaluate to ``true``.
+\ **注意：**\ 在布尔上下文中，如果 Basis 等于 :ref:`IDENTITY<class_Basis_constant_IDENTITY>`\ ，它将被判定为 ``false``\ ；否则，它总是被判定为 ``true``\ 。
 
 .. note::
 
@@ -388,34 +388,34 @@ For a general introduction, see the :doc:`Matrices and transforms <../tutorials/
 
 :ref:`Basis<class_Basis>` **from_euler**\ (\ euler\: :ref:`Vector3<class_Vector3>`, order\: :ref:`int<class_int>` = 2\ ) |static| :ref:`🔗<class_Basis_method_from_euler>`
 
-Constructs a new **Basis** that only represents rotation from the given :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians.
+根据给定的 :ref:`Vector3<class_Vector3>` 构造 **Basis**\ ，这个向量为 `欧拉角 <https://zh.wikipedia.org/zh-cn/%E6%AC%A7%E6%8B%89%E8%A7%92>`__\ ，单位为弧度。
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` should contain the angle around the :ref:`x<class_Basis_property_x>` axis (pitch);
+- :ref:`Vector3.x<class_Vector3_property_x>` 应包含围绕 :ref:`x<class_Basis_property_x>` 轴的角度（俯仰）；
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` should contain the angle around the :ref:`y<class_Basis_property_y>` axis (yaw);
+- :ref:`Vector3.y<class_Vector3_property_y>` 应包含围绕 :ref:`y<class_Basis_property_y>` 轴的角度（偏摆）；
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` should contain the angle around the :ref:`z<class_Basis_property_z>` axis (roll).
+- :ref:`Vector3.z<class_Vector3_property_z>` 应包含围绕 :ref:`z<class_Basis_property_z>` 轴的角度（翻滚）。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Creates a Basis whose z axis points down.
+    # 创建 Z 轴向下的 Basis。
     var my_basis = Basis.from_euler(Vector3(TAU / 4, 0, 0))
 
-    print(my_basis.z) # Prints (0.0, -1.0, 0.0)
+    print(my_basis.z) # 输出 (0.0, -1.0, 0.0)
 
  .. code-tab:: csharp
 
-    // Creates a Basis whose z axis points down.
+    // 创建 Z 轴向下的 Basis。
     var myBasis = Basis.FromEuler(new Vector3(Mathf.Tau / 4.0f, 0.0f, 0.0f));
 
-    GD.Print(myBasis.Z); // Prints (0, -1, 0)
+    GD.Print(myBasis.Z); // 输出 (0.0, -1.0, 0.0)
 
 
 
-The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): the basis rotates first around the local Y axis (yaw), then local X (pitch), and lastly local Z (roll). When using the opposite method :ref:`get_euler()<class_Basis_method_get_euler>` to decompose a rotation, this order is reversed.
+连续旋转的顺序可以通过 ``order`` 修改（见 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` 常量）。在 Godot 中，欧拉角总是采用内旋顺序。默认使用内旋 YXZ 约定（\ :ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`\ ）：基首先围绕局部 Y 轴旋转（偏摆），然后围绕局部 X 轴旋转（俯仰），最后围绕局部 Z 轴旋转（翻滚）。当使用相对的方法 :ref:`get_euler()<class_Basis_method_get_euler>` 来分解旋转时，这个顺序是反转的。
 
 .. rst-class:: classref-item-separator
 
@@ -462,21 +462,21 @@ The order of each consecutive rotation can be changed with ``order`` (see :ref:`
 
 :ref:`Vector3<class_Vector3>` **get_euler**\ (\ order\: :ref:`int<class_int>` = 2\ ) |const| :ref:`🔗<class_Basis_method_get_euler>`
 
-Returns this basis's rotation as a :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians. For the returned value:
+以 :ref:`Vector3<class_Vector3>` 的形式返回基的旋转向量，这个向量为 `欧拉角 <https://zh.wikipedia.org/zh-cn/%E6%AC%A7%E6%8B%89%E8%A7%92>`__\ ，单位为弧度。返回值中：
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` contains the angle around the :ref:`x<class_Basis_property_x>` axis (pitch);
+- :ref:`Vector3.x<class_Vector3_property_x>` 包含围绕 :ref:`x<class_Basis_property_x>` 轴的角度（俯仰）。
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` contains the angle around the :ref:`y<class_Basis_property_y>` axis (yaw);
+- :ref:`Vector3.y<class_Vector3_property_y>` 包含围绕 :ref:`y<class_Basis_property_y>` 轴的角度（偏摆）。
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` contains the angle around the :ref:`z<class_Basis_property_z>` axis (roll).
+- :ref:`Vector3.z<class_Vector3_property_z>` 包含围绕 :ref:`z<class_Basis_property_z>` 轴的角度（翻滚）。
 
-The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): since we are decomposing, local Z (roll) is calculated first, then local X (pitch), and lastly local Y (yaw). When using the opposite method :ref:`from_euler()<class_Basis_method_from_euler>` to compose a rotation, this order is reversed.
+连续旋转的顺序可以通过 ``order`` 修改（见 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` 常量）。在 Godot 中，欧拉角总是采用内旋顺序。默认使用内旋 YXZ 约定（\ :ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`\ ）：由于正在进行分解操作，首先计算围绕局部 Z 轴的旋转（翻滚），然后计算围绕局部 X 轴的旋转（俯仰），最后计算围绕局部 Y 轴旋转（偏摆）。当使用相对的方法 :ref:`from_euler()<class_Basis_method_from_euler>` 来构成旋转时，顺序会反转。
 
-\ **Note:** For this method to return correctly, the basis needs to be *orthonormal* (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+\ **注意：**\ 该方法只对\ *标准正交基*\ 返回正确的值（见 :ref:`orthonormalized()<class_Basis_method_orthonormalized>`\ ）。
 
-\ **Note:** Euler angles are much more intuitive but are not suitable for 3D math. Because of this, consider using the :ref:`get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>` method instead, which returns a :ref:`Quaternion<class_Quaternion>`.
+\ **注意：**\ 欧拉角更符合直觉，但是并不适合 3D 数学。因此请考虑改用返回 :ref:`Quaternion<class_Quaternion>` 的 :ref:`get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>`\ 。
 
-\ **Note:** In the Inspector dock, a basis's rotation is often displayed in Euler angles (in degrees), as is the case with the :ref:`Node3D.rotation<class_Node3D_property_rotation>` property.
+\ **注意：**\ 在检查器面板中，基的旋转通常是以欧拉角的形式显示的（单位为度），与 :ref:`Node3D.rotation<class_Node3D_property_rotation>` 属性相同。
 
 .. rst-class:: classref-item-separator
 
@@ -595,7 +595,7 @@ The order of each consecutive rotation can be changed with ``order`` (see :ref:`
 
 :ref:`bool<class_bool>` **is_orthonormal**\ (\ ) |const| :ref:`🔗<class_Basis_method_is_orthonormal>`
 
-Returns ``true`` if this basis is orthonormal. An orthonormal basis is both *orthogonal* (the axes are perpendicular to each other) and *normalized* (the length of every axis is ``1.0``). This method can be especially useful during physics calculations.
+如果该基是单位正交的，则返回 ``true``\ 。单位正交的基既是\ *正交的*\ （轴彼此垂直），又是\ *归一化的*\ （各轴的长度均为 ``1.0``\ ）。该方法在物理计算过程中特别有用。
 
 .. rst-class:: classref-item-separator
 

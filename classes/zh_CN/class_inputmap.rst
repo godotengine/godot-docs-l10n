@@ -76,7 +76,7 @@ InputMap
 
 **project_settings_loaded**\ (\ ) :ref:`🔗<class_InputMap_signal_project_settings_loaded>`
 
-Emitted when the :ref:`ProjectSettings<class_ProjectSettings>` **InputMap** has been loaded.
+当 :ref:`ProjectSettings<class_ProjectSettings>` 中的 **InputMap**\ （输入映射）被加载时，会发出此信号。
 
 .. rst-class:: classref-section-separator
 

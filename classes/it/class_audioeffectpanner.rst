@@ -7,9 +7,9 @@ AudioEffectPanner
 
 **Eredita:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a panner audio effect to an audio bus.
+Aggiunge un effetto audio di panning a un bus audio.
 
-Pans the sound left or right.
+Sposta il suono a sinistra o a destra.
 
 .. rst-class:: classref-introduction-group
 

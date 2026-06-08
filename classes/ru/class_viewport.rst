@@ -1075,7 +1075,7 @@ enum **DefaultCanvasItemTextureRepeat**: :ref:`🔗<enum_Viewport_DefaultCanvasI
 
 :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_PARENT_NODE** = ``3``
 
-The **Viewport** will inherit the repeat mode from its parent :ref:`CanvasItem<class_CanvasItem>` or **Viewport**.
+**Viewport** унаследует режим повтора от своего родительского объекта :ref:`CanvasItem<class_CanvasItem>` или **Viewport**.
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MAX:
 

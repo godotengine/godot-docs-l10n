@@ -14,9 +14,9 @@ AudioStreamOggVorbis
 Описание
 ----------------
 
-The AudioStreamOggVorbis class is a specialized :ref:`AudioStream<class_AudioStream>` for handling Ogg Vorbis file formats. It offers functionality for loading and playing back Ogg Vorbis files, as well as managing looping and other playback properties. More info can be found in :ref:`ResourceImporterOggVorbis<class_ResourceImporterOggVorbis>`.
+Класс AudioStreamOggVorbis — это специализированный класс :ref:`AudioStream<class_AudioStream>` для обработки файлов формата Ogg Vorbis. Он предоставляет функциональность для загрузки и воспроизведения файлов Ogg Vorbis, а также для управления зацикливанием и другими свойствами воспроизведения. Дополнительную информацию можно найти в :ref:`ResourceImporterOggVorbis<class_ResourceImporterOggVorbis>`.
 
-This class is part of the audio stream system, which also supports WAV files through the :ref:`AudioStreamWAV<class_AudioStreamWAV>` class, and MP3 files through the :ref:`AudioStreamMP3<class_AudioStreamMP3>` class.
+Этот класс является частью системы аудиопотоков, которая также поддерживает файлы WAV через класс :ref:`AudioStreamWAV<class_AudioStreamWAV>` и файлы MP3 через класс :ref:`AudioStreamMP3<class_AudioStreamMP3>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -85,7 +85,7 @@ This class is part of the audio stream system, which also supports WAV files thr
 - |void| **set_bar_beats**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bar_beats**\ (\ )
 
-The number of beats within a single bar in the audio track.
+Количество долей (ритм) в одном такте аудиодорожки.
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ The number of beats within a single bar in the audio track.
 - |void| **set_beat_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_beat_count**\ (\ )
 
-The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. It defines the end of the audio for looping, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`, and :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
+Длительность аудиодорожки в тактах. Фактическая длительность аудиофайла может быть больше, чем указано в этом свойстве. Определяет конец аудио для зацикливания, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>` и :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ The length of the audio track, in beats. The actual duration of the audio file m
 - |void| **set_bpm**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bpm**\ (\ )
 
-The tempo of the audio track, measured in beats per minute.
+Темп аудиодорожки, измеряемый в ударах в минуту.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ The tempo of the audio track, measured in beats per minute.
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-If ``true``, the stream will play again from the specified :ref:`loop_offset<class_AudioStreamOggVorbis_property_loop_offset>` once it reaches the end of the audio track, or once it reaches the end of the last beat according to the amount specified in :ref:`beat_count<class_AudioStreamOggVorbis_property_beat_count>`. Useful for ambient sounds and background music.
+Если ``true``, воспроизведение потока возобновится с указанного значения :ref:`loop_offset<class_AudioStreamOggVorbis_property_loop_offset>` после достижения конца аудиодорожки или после достижения конца последнего такта в соответствии с величиной, указанной в :ref:`beat_count<class_AudioStreamOggVorbis_property_beat_count>`. Полезно для фоновых звуков и музыки.
 
 .. rst-class:: classref-item-separator
 

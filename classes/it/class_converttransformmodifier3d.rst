@@ -14,29 +14,29 @@ Uno :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` per applicare una trasfo
 Descrizione
 ----------------------
 
-Apply the copied transform of the bone set by :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` to the bone set by :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` about the specific axis with remapping it with some options.
+Applica la trasformazione copiata dell'insieme di ossa tramite :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` all'insieme di ossa tramite :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` rispetto all'asse specifico, rimappandolo con alcune opzioni.
 
-There are 4 ways to apply the transform, depending on the combination of :ref:`set_relative()<class_ConvertTransformModifier3D_method_set_relative>` and :ref:`set_additive()<class_ConvertTransformModifier3D_method_set_additive>`.
+Esistono 4 modi per applicare la trasformazione, a seconda della combinazione di :ref:`set_relative()<class_ConvertTransformModifier3D_method_set_relative>` e :ref:`set_additive()<class_ConvertTransformModifier3D_method_set_additive>`.
 
-\ **Relative + Additive:**\ 
+\ **Relativo + Additivo:**\ 
 
-- Extract reference pose relative to the rest and add it to the apply bone's pose.
+- Estrae la posa di riferimento relativa al riposo e la aggiunge alla posa dell'osso da applicare.
 
-\ **Relative + Not Additive:**\ 
+\ **Relativo + Non Additivo:**\ 
 
-- Extract reference pose relative to the rest and add it to the apply bone's rest.
+- Estrae la posa di riferimento relativa al riposo e la aggiunge alla posa dell'osso da applicare.
 
-\ **Not Relative + Additive:**\ 
+\ **Non Relativo + Additivo:**\ 
 
-- Extract reference pose absolutely and add it to the apply bone's pose.
+- Estrae la posa di riferimento assoluta e la aggiunge alla posa dell'osso da applicare.
 
-\ **Not Relative + Not Additive:**\ 
+\ **Non relativo + Non additivo:**\ 
 
-- Extract reference pose absolutely and the apply bone's pose is replaced with it.
+- Estrae la posa di riferimento in modo assoluto e la posa dell'osso applicato è sostituita con essa.
 
-\ **Note:** Relative option is available only in the case :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` is :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+\ **Nota:** L'opzione relativa è disponibile solo se :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` è :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. Vedi anche :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
 
-\ **Note:** If there is a rotation greater than ``180`` degrees with constrained axes, flipping may occur.
+\ **Nota:** Se c'è una rotazione superiore a ``180`` gradi con assi vincolati, potrebbe avvenire un ribaltamento.
 
 .. rst-class:: classref-reftable-group
 

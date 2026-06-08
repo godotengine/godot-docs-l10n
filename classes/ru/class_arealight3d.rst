@@ -7,7 +7,7 @@ AreaLight3D
 
 **Наследует:** :ref:`Light3D<class_Light3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-An area light, such as a neon light tube or a screen.
+Светильник, освещающий большую площадь, например, неоновая лампа или экран.
 
 .. rst-class:: classref-introduction-group
 
@@ -21,6 +21,8 @@ Light is emitted in the -Z direction of the node's global basis. For an unrotate
 Area lights can cast soft shadows using PCSS, which you can control by tweaking the size parameter. The shadow map is drawn from the center of the light.
 
 \ **Note:** Area lights have limited support in the Mobile and Compatibility renderers. In the Mobile renderer, the size of the penumbra doesn't vary as it should with PCSS. In Compatibility, area lights cannot cast shadows.
+
+\ **Performance:** Area lights are more demanding on the GPU compared to omni and spot lights. In Forward+, there is an additional GPU cost on *all* rendered objects as soon as one area light is present in the view frustum (due to the nature of clustered lighting). Consider using them only for cinematics or when targeting high-end devices.
 
 .. rst-class:: classref-reftable-group
 
@@ -66,13 +68,13 @@ Area lights can cast soft shadows using PCSS, which you can control by tweaking 
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-Controls the distance attenuation function for this area light.
+Управляет функцией ослабления света на расстоянии для этого источника света.
 
-A value of ``0.0`` will maintain a constant brightness through most of the range, but will smoothly attenuate the light at the edge of the range. Use a value of ``2.0`` for physically accurate lights as it results in the proper inverse square attenuation.
+Значение ``0.0`` обеспечит постоянную яркость на большей части диапазона, но плавно ослабит свет на краю диапазона. Используйте значение ``2.0`` для физически точных источников света, так как это обеспечивает правильное ослабление света в обратном квадратичном выражении.
 
-\ **Note:** Setting attenuation to ``2.0`` or higher may result in distant objects receiving minimal light, even when within range. For example, with a range of ``4096``, an object at ``100`` units is attenuated by a factor of ``0.0001``. With a default brightness of ``1``, the light would not be visible at that distance.
+\ **Примечание:** Установка ослабления на ``2.0`` или выше может привести к тому, что удаленные объекты будут получать минимальное количество света, даже находясь в пределах диапазона. Например, при диапазоне ``4096`` объект на расстоянии ``100`` единиц будет ослаблен в ``0.0001``. При яркости по умолчанию ``1`` свет не будет виден на этом расстоянии.
 
-\ **Note:** Using negative values or values higher than ``10.0`` may lead to unexpected results.
+\ ** **Примечание:** Использование отрицательных значений или значений выше ``10.0`` может привести к неожиданным результатам.
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +91,7 @@ A value of ``0.0`` will maintain a constant brightness through most of the range
 - |void| **set_area_normalize_energy**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_area_normalizing_energy**\ (\ )
 
-Defines whether the energy is normalized (divided) by the surface area of the light. If set to ``true``, changing the size does not affect the total energy output, and does not dramatically alter the brightness of the scene.
+Определяет, нормируется ли энергия (делится) на площадь поверхности источника света. Если установлено значение ``true``, изменение размера не влияет на общую выходную энергию и не приводит к существенному изменению яркости сцены.
 
 .. rst-class:: classref-item-separator
 
@@ -106,7 +108,7 @@ Defines whether the energy is normalized (divided) by the surface area of the li
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The range of the area in meters. This determines the maximum distance from any point on the area at which the area can still emit light.
+Диапазон зоны в метрах. Он определяет максимальное расстояние от любой точки на области, на котором область все еще может излучать свет.
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +125,7 @@ The range of the area in meters. This determines the maximum distance from any p
 - |void| **set_area_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_area_size**\ (\ )
 
-The extents (width and height) of the area in meters.
+Размеры (ширина и высота) площади в метрах.
 
 .. rst-class:: classref-item-separator
 
@@ -140,11 +142,11 @@ The extents (width and height) of the area in meters.
 - |void| **set_area_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_area_texture**\ (\ )
 
-An optional texture to use as a light source. Changing the texture at runtime might impact performance, as it needs to be drawn to the area light atlas with filtered mipmaps.
+Дополнительная текстура для использования в качестве источника света. Изменение текстуры во время выполнения может повлиять на производительность, поскольку она должна быть отрисована в атласе источников света с фильтрованными мипмапами.
 
-If no texture is assigned, the area light emits uniform light across its surface.
+Если текстура не назначена, источник света излучает равномерный свет по всей своей поверхности.
 
-\ **Note:** Area light textures are only supported in the Forward+ and Mobile rendering methods, not Compatibility. To reduce the performance impact of switching textures at runtime, make sure each dimension of an area texture is either a multiple of 128 pixels, or a power of two. This removes the need for a scaling pass, which slows down texture changes. The textures don't necessarily have to be square to be optimal. Examples of optimal texture sizes include 32x64, 128x128, and 256x384.
+\ **Примечание:** Текстуры источников света поддерживаются только в методах рендеринга Forward+ и Mobile, а не в Compatibility. Чтобы уменьшить влияние на производительность при переключении текстур во время выполнения, убедитесь, что каждый размер текстуры области либо кратен 128 пикселям, либо является степенью двойки. Это устраняет необходимость в проходе масштабирования, который замедляет изменение текстур. Текстуры не обязательно должны быть квадратными для оптимальной производительности. Примеры оптимальных размеров текстур включают 32x64, 128x128 и 256x384.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

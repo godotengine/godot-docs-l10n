@@ -1303,7 +1303,7 @@ enum **TextureDrawableFormat**: :ref:`🔗<enum_RenderingServer_TextureDrawableF
 
 :ref:`TextureDrawableFormat<enum_RenderingServer_TextureDrawableFormat>` **TEXTURE_DRAWABLE_FORMAT_RGBA8** = ``0``
 
-OpenGL texture format RGBA with four components, each with a bitdepth of 8.
+Formato di texture OpenGL RGBA con quattro componenti, ciascuno di 8 bit.
 
 .. _class_RenderingServer_constant_TEXTURE_DRAWABLE_FORMAT_RGBA8_SRGB:
 
@@ -1311,9 +1311,9 @@ OpenGL texture format RGBA with four components, each with a bitdepth of 8.
 
 :ref:`TextureDrawableFormat<enum_RenderingServer_TextureDrawableFormat>` **TEXTURE_DRAWABLE_FORMAT_RGBA8_SRGB** = ``1``
 
-OpenGL texture format RGBA with four components, each with a bitdepth of 8.
+Formato di texture OpenGL RGBA con quattro componenti, ciascuno di 8 bit.
 
-When drawn to, an sRGB to linear color space conversion is performed.
+Se disegnata su, viene effettuata una conversione da sRGB a spazio colore lineare.
 
 .. _class_RenderingServer_constant_TEXTURE_DRAWABLE_FORMAT_RGBAH:
 
@@ -1321,7 +1321,7 @@ When drawn to, an sRGB to linear color space conversion is performed.
 
 :ref:`TextureDrawableFormat<enum_RenderingServer_TextureDrawableFormat>` **TEXTURE_DRAWABLE_FORMAT_RGBAH** = ``2``
 
-OpenGL texture format GL_RGBA16F where there are four components, each a 16-bit "half-precision" floating-point value.
+Formato di texture OpenGL GL_RGBA16F in cui sono presenti quattro componenti, ciascuno un valore in virgola mobile "a mezza precisione" di 16 bit.
 
 .. _class_RenderingServer_constant_TEXTURE_DRAWABLE_FORMAT_RGBAF:
 
@@ -1329,7 +1329,7 @@ OpenGL texture format GL_RGBA16F where there are four components, each a 16-bit 
 
 :ref:`TextureDrawableFormat<enum_RenderingServer_TextureDrawableFormat>` **TEXTURE_DRAWABLE_FORMAT_RGBAF** = ``3``
 
-OpenGL texture format GL_RGBA32F where there are four components, each a 32-bit floating-point value.
+Formato di texture OpenGL GL_RGBA32F in cui sono presenti quattro componenti, ciascuno un valore in virgola mobile di 32 bit.
 
 .. rst-class:: classref-item-separator
 
@@ -3685,11 +3685,11 @@ Gli oggetti sono visualizzati semi-trasparenti con fusione additiva, così per v
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_WIREFRAME** = ``4``
 
-Debug draw draws objects in wireframe.
+Disegno di debug disegna gli oggetti in fildiferro.
 
-\ **Note:** :ref:`set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` must be called before loading any meshes for wireframes to be visible when using the Compatibility renderer.
+\ **Nota:** È necessario chiamare :ref:`set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` prima di caricare qualsiasi mesh affinché i fildiferro siano visibili quando si utilizza il renderer Compatibilità.
 
-\ **Note:** In the Compatibility renderer, backfaces are always visible when using wireframe rendering. In the Forward+ and Mobile renderers, wireframes follow the material's backface culling properties instead.
+\ **Nota:** Nel renderer Compatibilità, le facce posteriori sono sempre visibili quando si usa il rendering fildiferro. Nei renderer Forward+ e Mobile, i fildiferro seguono invece le proprietà di culling delle facce posteriori del materiale.
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_NORMAL_BUFFER:
 
@@ -4405,9 +4405,9 @@ Una semplice curva di mappatura dei toni che scarta i valori luminosi per evitar
 
 :ref:`EnvironmentToneMapper<enum_RenderingServer_EnvironmentToneMapper>` **ENV_TONE_MAPPER_FILMIC** = ``2``
 
-Uses a film-like tonemapping curve to prevent clipping of bright values and provide better contrast than :ref:`ENV_TONE_MAPPER_REINHARD<class_RenderingServer_constant_ENV_TONE_MAPPER_REINHARD>`. Slightly slower than :ref:`ENV_TONE_MAPPER_REINHARD<class_RenderingServer_constant_ENV_TONE_MAPPER_REINHARD>`.
+Utilizza una curva di mappatura dei toni simile a quella di una pellicola per impedire il clipping dei valori luminosi e fornire un contrasto migliore rispetto a :ref:`ENV_TONE_MAPPER_REINHARD<class_RenderingServer_constant_ENV_TONE_MAPPER_REINHARD>`. Leggermente più lento di :ref:`ENV_TONE_MAPPER_REINHARD<class_RenderingServer_constant_ENV_TONE_MAPPER_REINHARD>`.
 
-\ **Note:** This tonemapper does not support HDR output because it produces output in the SDR range. It is recommended to use a different tonemapper when rendering to an HDR screen.
+\ **Nota:** Questa mappatura non supporta l'output HDR perché produce un output nella gamma SDR. Si consiglia di utilizzare una mappatura diversa quando si renderizza su uno schermo HDR.
 
 .. _class_RenderingServer_constant_ENV_TONE_MAPPER_ACES:
 
@@ -4415,11 +4415,11 @@ Uses a film-like tonemapping curve to prevent clipping of bright values and prov
 
 :ref:`EnvironmentToneMapper<enum_RenderingServer_EnvironmentToneMapper>` **ENV_TONE_MAPPER_ACES** = ``3``
 
-Uses a high-contrast film-like tonemapping curve and desaturates bright values for a more realistic appearance. Slightly slower than :ref:`ENV_TONE_MAPPER_FILMIC<class_RenderingServer_constant_ENV_TONE_MAPPER_FILMIC>`.
+Utilizza una curva di mappatura dei toni ad alto contrasto simile a quella di un film e desatura i valori luminosi per un aspetto più realistico. Leggermente più lento di :ref:`ENV_TONE_MAPPER_FILMIC<class_RenderingServer_constant_ENV_TONE_MAPPER_FILMIC>`.
 
-\ **Note:** This tonemapping operator is called "ACES Fitted" in Godot 3.x.
+\ **Nota:** Questo operatore di mappatura dei toni è chiamato "ACES Fitted" in Godot 3.x.
 
-\ **Note:** This tonemapper does not support HDR output because it produces output in the SDR range. It is recommended to use a different tonemapper when rendering to an HDR screen.
+\ **Nota:** Questa mappatura non supporta l'output HDR perché produce un output nella gamma SDR. Si consiglia di utilizzare una mappatura diversa quando si renderizza su uno schermo HDR.
 
 .. _class_RenderingServer_constant_ENV_TONE_MAPPER_AGX:
 
@@ -4427,7 +4427,7 @@ Uses a high-contrast film-like tonemapping curve and desaturates bright values f
 
 :ref:`EnvironmentToneMapper<enum_RenderingServer_EnvironmentToneMapper>` **ENV_TONE_MAPPER_AGX** = ``4``
 
-Uses an adjustable film-like tonemapping curve and desaturates bright values for a more realistic appearance. Better than other tonemappers at maintaining the hue of colors as they become brighter. The slowest tonemapping option.
+Utilizza una curva di mappatura dei toni simile a quella di una pellicola e desatura i valori brillanti per un aspetto più realistico. Meglio di altri mappatori dei toni nel mantenere la tonalità dei colori mentre diventano più brillanti. L'opzione di mappatura dei toni più lenta.
 
 .. rst-class:: classref-item-separator
 
@@ -4519,7 +4519,7 @@ Qualità alta dell'occlusione ambientale nello spazio dello schermo.
 
 :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>` **ENV_SSAO_QUALITY_ULTRA** = ``4``
 
-Qualità più alta dell'occlusione ambientale nello spazio dello schermo. Utilizza l'impostazione della destinazione adattiva, che è possibile regolare dinamicamente per bilanciare tra le prestazioni e la qualità visiva.
+Qualità più alta dell'occlusione ambientale nello spazio dello schermo. Utilizza l'impostazione dell'obiettivo adattivo, che è possibile regolare dinamicamente per bilanciare tra le prestazioni e la qualità visiva.
 
 .. rst-class:: classref-item-separator
 
@@ -4569,7 +4569,7 @@ Qualità alta dell'illuminazione indiretta nello spazio dello schermo.
 
 :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>` **ENV_SSIL_QUALITY_ULTRA** = ``4``
 
-Qualità più alta dell'illuminazione indiretta nello spazio dello schermo. Utilizza l'impostazione della destinazione adattiva, che è possibile regolare dinamicamente per bilanciare tra le prestazioni e la qualità visiva.
+Qualità più alta dell'illuminazione indiretta nello spazio dello schermo. Utilizza l'impostazione dell'obiettivo adattivo, che è possibile regolare dinamicamente per bilanciare tra le prestazioni e la qualità visiva.
 
 .. rst-class:: classref-item-separator
 
@@ -9881,15 +9881,15 @@ Per inserirla in una scena, associa questa mesh a un'istanza tramite :ref:`insta
 
 :ref:`RID<class_RID>` **mesh_create_from_surfaces**\ (\ surfaces\: :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\], blend_shape_count\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_RenderingServer_method_mesh_create_from_surfaces>`
 
-Creates a new mesh with predefined surfaces for it and adds the mesh to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``mesh_*`` RenderingServer functions. This method is more efficient for creating meshes with multiple surfaces compared to creating an empty mesh with :ref:`mesh_create()<class_RenderingServer_method_mesh_create>` and adding surfaces one by one with :ref:`mesh_add_surface()<class_RenderingServer_method_mesh_add_surface>`.
+Crea una nuova mesh con superfici predefinite e la aggiunge al RenderingServer. È possibile accedervi con il RID restituito. Questo RID sarà utilizzato in tutte le funzioni ``mesh_*`` del RenderingServer. Questo metodo è più efficiente per creare mesh con più superfici rispetto a creare una mesh vuota con :ref:`mesh_create()<class_RenderingServer_method_mesh_create>` e poi aggiungere superfici una per una con :ref:`mesh_add_surface()<class_RenderingServer_method_mesh_add_surface>`.
 
-Each element in the ``surfaces`` array must follow the same structure as described in :ref:`mesh_add_surface()<class_RenderingServer_method_mesh_add_surface>`. The ``blend_shape_count`` parameter must match the blend shape data defined in all surfaces.
+Ogni elemento nell'array ``surfaces`` deve seguire la stessa struttura descritta in :ref:`mesh_add_surface()<class_RenderingServer_method_mesh_add_surface>`. Il parametro ``blend_shape_count`` deve corrispondere ai dati di forme di fusione definiti in tutte le superfici.
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingServer_method_free_rid>` del RenderingServer.
 
-To place in a scene, attach this mesh to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` using the returned RID.
+Per inserirla in una scena, associa questa mesh a un'istanza tramite :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` utilizzando il RID restituito.
 
-\ **Note:** The equivalent resource is :ref:`Mesh<class_Mesh>`.
+\ **Nota:** La risorsa equivalente è :ref:`Mesh<class_Mesh>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11533,7 +11533,7 @@ Imposta i parametri del limitatore di ruvidità nello spazio dello schermo, ad e
 
 **Deprecato:** Use :ref:`set_boot_image_with_stretch()<class_RenderingServer_method_set_boot_image_with_stretch>` instead.
 
-Sets a boot image. The ``color`` defines the background color. The value of ``scale`` indicates if the image will be scaled to fit the screen size. If ``use_filter`` is ``true``, the image will be scaled with linear interpolation. If ``use_filter`` is ``false``, the image will be scaled with nearest-neighbor interpolation.
+Imposta un'immagine di avvio. Il colore definisce il colore di sfondo. Il valore di ``scale`` indica se l'immagine sarà ridimensionata per adattarsi alle dimensioni dello schermo. Se ``use_filter`` è ``true``, l'immagine sarà ridimensionata con interpolazione lineare. Se ``use_filter`` è ``false``, l'immagine sarà ridimensionata con interpolazione vicino più ravvicinato.
 
 .. rst-class:: classref-item-separator
 
@@ -11545,7 +11545,7 @@ Sets a boot image. The ``color`` defines the background color. The value of ``sc
 
 |void| **set_boot_image_with_stretch**\ (\ image\: :ref:`Image<class_Image>`, color\: :ref:`Color<class_Color>`, stretch_mode\: :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>`, use_filter\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_RenderingServer_method_set_boot_image_with_stretch>`
 
-Sets a boot image. The ``color`` defines the background color. The value of ``stretch_mode`` indicates how the image will be stretched (see :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` for possible values). If ``use_filter`` is ``true``, the image will be scaled with linear interpolation. If ``use_filter`` is ``false``, the image will be scaled with nearest-neighbor interpolation.
+Imposta un'immagine di avvio. Il colore definisce il colore di sfondo. Il valore di ``stretch_mode`` indica come l'immagine sarà allungata (vedi :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` per i valori possibili). Se ``use_filter`` è ``true``, l'immagine sarà ridimensionata con interpolazione lineare. Se ``use_filter`` è ``false``, l'immagine sarà ridimensionata con interpolazione vicino più ravvicinato.
 
 .. rst-class:: classref-item-separator
 
@@ -12123,11 +12123,11 @@ Restituisce il formato per la texture.
 
 :ref:`int<class_int>` **texture_get_native_handle**\ (\ texture\: :ref:`RID<class_RID>`, srgb\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_get_native_handle>`
 
-Returns the internal graphics handle for this texture object. For use when communicating with third-party APIs mostly with GDExtension.
+Restituisce il gestore grafico interno per questo oggetto texture. Da utilizzare quando si comunica con le API di terze parti, principalmente con GDExtension.
 
-\ ``srgb`` should be ``true`` when the texture uses nonlinear sRGB encoding and ``false`` when the texture uses linear encoding.
+\ ``srgb`` deve essere ``true`` quando la texture usa una codifica sRGB non lineare e ``false`` quando usa una codifica lineare.
 
-\ **Note:** This function returns a ``uint64_t`` which internally maps to a ``GLuint`` (OpenGL) or ``VkImage`` (Vulkan).
+\ **Nota:** Questa funzione restituisce un ``uint64_t`` che mappa internamente un ``GLuint`` (OpenGL) o ``VkImage`` (Vulkan).
 
 .. rst-class:: classref-item-separator
 
@@ -12139,7 +12139,7 @@ Returns the internal graphics handle for this texture object. For use when commu
 
 :ref:`String<class_String>` **texture_get_path**\ (\ texture\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_get_path>`
 
-Returns the resource path (starting with ``res://`` or ``uid://``) for the specified texture RID. Returns an empty :ref:`String<class_String>` if the resource is built-in. See also :ref:`texture_set_path()<class_RenderingServer_method_texture_set_path>`.
+Restituisce il percorso di risorsa (che inizia con ``res://`` o ``uid://``) per il RID di texture specificato. Restituisce una :ref:`String<class_String>` vuota se la risorsa è integrata. Vedi anche :ref:`texture_set_path()<class_RenderingServer_method_texture_set_path>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12710,7 +12710,7 @@ Imposta la dimensione (``size``) delle immagini dell'atlante delle ombre (utiliz
 
 |void| **viewport_set_render_direct_to_screen**\ (\ viewport\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_render_direct_to_screen>`
 
-If ``true``, render the contents of the viewport directly to screen. This allows a low-level optimization where you can skip drawing a viewport to the root viewport. While this optimization can result in a significant increase in speed (especially on older devices), it comes at a cost of usability. When this is enabled, you cannot read from the viewport or from the screen_texture. You also lose the benefit of certain window settings, such as the various stretch modes. Another consequence to be aware of is that in 2D the rendering happens in window coordinates, so if you have a viewport that is double the size of the window, and you set this, then only the portion that fits within the window will be drawn, no automatic scaling is possible, even if your game scene is significantly larger than the window size.
+Se ``true``, renderizza il contenuto della viewport direttamente sullo schermo. Ciò consente un'ottimizzazione di basso livello in cui è possibile saltare il disegno di una viewport nella viewport radice. Sebbene questa ottimizzazione possa migliorare notevolmente le prestazioni (soprattutto sui dispositivi più vecchi), ha un impatto sull'usabilità. Quando è abilitato, non è possibile leggere dalla viewport o dalla screen_texture. Si perde anche il vantaggio di alcune impostazioni della finestra, come le varie modalità di stiramento. Un'altra conseguenza da tenere in mente è che in 2D il rendering avviene in coordinate della finestra, quindi se hai una viewport che è il doppio delle dimensioni della finestra e imposti questo, sarà disegnata solo la porzione che entra nella finestra, non è possibile alcun ridimensionamento automatico, anche se la scena del tuo gioco è molto più grande delle dimensioni della finestra.
 
 .. rst-class:: classref-item-separator
 
@@ -12722,7 +12722,7 @@ If ``true``, render the contents of the viewport directly to screen. This allows
 
 |void| **viewport_set_scaling_3d_mode**\ (\ viewport\: :ref:`RID<class_RID>`, scaling_3d_mode\: :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_scaling_3d_mode>`
 
-Imposta la modalità di ridimensionamento della risoluzione 3D. Il ridimensionamento bilineare renderizza a una risoluzione diversa per sottocampionare o sovracampionare la viewport. FidelityFX Super Resolution 1.0, abbreviato in FSR, è una tecnologia di upscaling che produce immagini di alta qualità a frame rate elevati attraverso un algoritmo di upscaling consapevole dello spazio. FSR è leggermente più costoso di bilineare, ma produce una qualità dell'immagine significativamente più elevata. FSR dovrebbe essere utilizzato ove possibile.
+Imposta la modalità di scaling della risoluzione 3D. Lo scaling bilineare renderizza a una risoluzione diversa per sottocampionare o sovracampionare la viewport. FidelityFX Super Resolution 1.0, abbreviato in FSR, è una tecnologia di upscaling che produce immagini di alta qualità a frame rate elevati attraverso un algoritmo di upscaling consapevole dello spazio. FSR è leggermente più costoso di bilineare, ma produce una qualità dell'immagine significativamente più elevata. FSR dovrebbe essere utilizzato ove possibile.
 
 .. rst-class:: classref-item-separator
 
@@ -12820,11 +12820,11 @@ Se ``true``, I vertici degli elementi canvas (overo i punti dei poligoni) sono a
 
 |void| **viewport_set_texture_mipmap_bias**\ (\ viewport\: :ref:`RID<class_RID>`, mipmap_bias\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_texture_mipmap_bias>`
 
-Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close). To get sharper textures at a distance without introducing too much graininess, set this between ``-0.75`` and ``0.0``. Enabling temporal antialiasing (:ref:`ProjectSettings.rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) can help reduce the graininess visible when using negative mipmap bias.
+Influisce sulla nitidezza finale della texture leggendo da una mipmap inferiore o superiore (chiamata anche "bias LOD di texture"). I valori negativi rendono le texture con mipmap più nitide ma più granulose se viste da lontano, mentre i valori positivi rendono le texture con mipmap più sfocate (anche da vicino). Per ottenere texture più nitide da lontano senza introdurre troppa granulosità, imposta questo valore tra ``-0.75`` e ``0.0``. Abilitare l'antialiasing temporale (:ref:`ProjectSettings.rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) può aiutare a ridurre la granulosità visibile quando si utilizza un bias negativo per le mipmap.
 
-\ **Note:** When the 3D scaling mode is set to FSR 1.0, this value is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``-log2(1.0 / scale) + mipmap_bias``.
+\ **Nota:** Quando la modalità di ridimensionamento 3D è impostata su FSR 1.0, questo valore viene utilizzato per regolare il bias automatico per le mipmap, il quale viene calcolato internamente in base al fattore di scala. La formula per questo è ``-log2(1,0 / scala) + mipmap_bias``.
 
-\ **Note:** This method is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this method is always treated as if ``mipmap_bias`` was set to ``0.0``.
+b]Nota:** Questo metodo è supportato solo nei renderer Forward+ e Mobile, non in Compatibilità. In Compatibilità, questo proprieto è sempre trattato come se ``mipmap_bias`` fosse impostato su ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -12872,9 +12872,9 @@ Equivale a :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`.
 
 |void| **viewport_set_use_hdr_2d**\ (\ viewport\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_use_hdr_2d>`
 
-If ``true``, 2D rendering will use a high dynamic range (HDR) ``RGBA16`` format framebuffer. Additionally, 2D rendering will be performed on linear values and will be converted using the appropriate transfer function immediately before blitting to the screen (if the Viewport is attached to the screen).
+Se ``true``, il rendering 2D utilizzerà un framebuffer in formato HDR ("alta gamma dinamica") ``RGBA16``. Inoltre, il rendering 2D sarà effettuato su valori lineari e sarà convertito attraverso l'apposita funzione di trasferimento subito prima di essere visualizzato sullo schermo (se la Viewport è collegata allo schermo).
 
-Practically speaking, this means that the end result of the Viewport will not be clamped to the ``0-1`` range and can be used in 3D rendering without color encoding adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients. This setting has the same effect as :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`.
+In pratica, ciò significa che il risultato finale della Viewport non sarà limitato nell'intervallo ``0-1`` e si potrà utilizzare nel rendering 3D senza aggiustare la codifica dei colori. Ciò consente al rendering 2D di sfruttare gli effetti che richiedono un'alta gamma dinamica (ad esempio, il bagliore 2D) e migliora sostanzialmente l'aspetto degli effetti che richiedono gradienti molto dettagliati. Questa impostazione ha lo stesso effetto di :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`.
 
 .. rst-class:: classref-item-separator
 

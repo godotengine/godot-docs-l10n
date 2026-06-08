@@ -393,9 +393,9 @@ Descrizioni dei metodi
 
 |void| **add_blend_point**\ (\ node\: :ref:`AnimationRootNode<class_AnimationRootNode>`, pos\: :ref:`Vector2<class_Vector2>`, at_index\: :ref:`int<class_int>` = -1, name\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_add_blend_point>`
 
-Adds a new point with ``name`` that represents a ``node`` at the position set by ``pos``. You can insert it at a specific index using the ``at_index`` argument. If you use the default value for ``at_index``, the point is inserted at the end of the blend points array.
+Aggiunge un nuovo punto denominato ``name`` che rappresenta un nodo ``node`` nella posizione impostata da ``pos``. È possibile inserirlo a un indice specifico tramite l'argomento ``at_index``. Se si usa il valore predefinito per ``at_index``, il punto è inserito alla fine dell'array dei punti di fusione.
 
-\ **Note:** If no name is provided, safe index is used as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+\ **Nota:** Se nessun nome è specificato, un indice sicuro viene utilizzato per riferimento. In futuro, i nomi vuoti saranno deprecati, pertanto si consiglia di specificare esplicitamente un nome.
 
 .. rst-class:: classref-item-separator
 

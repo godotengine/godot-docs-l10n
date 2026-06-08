@@ -2109,7 +2109,7 @@ Luz de foco (véase :ref:`SpotLight3D<class_SpotLight3D>`).
 
 :ref:`LightType<enum_RenderingServer_LightType>` **LIGHT_AREA** = ``3``
 
-Area light (see :ref:`AreaLight3D<class_AreaLight3D>`).
+Iluminación de área (véase :ref:`AreaLight3D<class_AreaLight3D>`).
 
 .. rst-class:: classref-item-separator
 
@@ -6023,7 +6023,7 @@ enum **SplashStretchMode**: :ref:`🔗<enum_RenderingServer_SplashStretchMode>`
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_DISABLED** = ``0``
 
-No stretching is applied.
+No se realiza ningún estiramiento.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_KEEP:
 
@@ -7273,7 +7273,7 @@ Esto es útil al mover un oclusor a una nueva ubicación, para dar un cambio ins
 
 |void| **canvas_light_occluder_set_as_sdf_collision**\ (\ occluder\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_occluder_set_as_sdf_collision>`
 
-Enables or disables using the light occluder as a signed distance field for 2D particle collision.
+Habilita o deshabilita el oclusor de luz como un campo de distancia con signo para la colisión de partículas en 2D.
 
 .. rst-class:: classref-item-separator
 
@@ -11171,7 +11171,7 @@ If ``enable`` is ``true``, enables trails for the ``particles`` with the specifi
 
 |void| **particles_set_transform_align**\ (\ particles\: :ref:`RID<class_RID>`, align\: :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_transform_align>`
 
-Sets the transform alignment for the particle system. Equivalent to :ref:`GPUParticles3D.transform_align<class_GPUParticles3D_property_transform_align>`.
+Establece la alineación de la transformación para el sistema de partículas. Equivalente a :ref:`""GPUParticles3D.transform_align<class_GPUParticles3D_member_transform_align>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11419,7 +11419,7 @@ Obsoleto. Este método no hace nada.
 
 |void| **reflection_probe_set_size**\ (\ probe\: :ref:`RID<class_RID>`, size\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_size>`
 
-Sets the size of the area that the reflection probe will capture. Equivalent to :ref:`ReflectionProbe.size<class_ReflectionProbe_property_size>`.
+Establece el tamaño del área que la sonda de reflexión capturará. Equivalente a :ref:`ReflectionProbe.size<class_ReflectionProbe_property_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11455,11 +11455,11 @@ Programa una llamada al objeto invocable dado después de que se haya dibujado u
 
 :ref:`RID<class_RID>` **scenario_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_scenario_create>`
 
-Creates a scenario and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``scenario_*`` RenderingServer functions.
+Crea un escenario y lo añade al RenderingServer. Se puede acceder a él con el RID que se devuelve. Este RID se utilizará en todas las funciones ``scenario_*`` de RenderingServer.
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+Una vez que hayas terminado con tu RID, querrás liberarlo usando el método :ref:`free_rid()<class_RenderingServer_method_free_rid>` de RenderingServer.
 
-The scenario is the 3D world that all the visual instances exist in.
+El escenario es el mundo 3D en el que existen todas las instancias visuales.
 
 .. rst-class:: classref-item-separator
 
@@ -11749,7 +11749,7 @@ Cuando hayas terminado con tu RID, querrás liberarlo usando el método :ref:`fr
 
 :ref:`int<class_int>` **skeleton_get_bone_count**\ (\ skeleton\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_skeleton_get_bone_count>`
 
-Returns the number of bones allocated for this skeleton. See also :ref:`skeleton_allocate_data()<class_RenderingServer_method_skeleton_allocate_data>`.
+Devuelve el número de huesos asignados a este esqueleto. Véase también :ref:`skeleton_allocate_data()<class_RenderingServer_method_skeleton_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11761,7 +11761,7 @@ Returns the number of bones allocated for this skeleton. See also :ref:`skeleton
 
 |void| **skeleton_set_base_transform_2d**\ (\ skeleton\: :ref:`RID<class_RID>`, base_transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_RenderingServer_method_skeleton_set_base_transform_2d>`
 
-Sets the base :ref:`Transform2D<class_Transform2D>` to use for the specified skeleton.
+Establece la base :ref:`Transform2D<class_Transform2D>` que se utilizará para el esqueleto especificado.
 
 .. rst-class:: classref-item-separator
 

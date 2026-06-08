@@ -1529,7 +1529,7 @@ UUID профиля обеспечения. Если оставить пусты
 
 :ref:`bool<class_bool>` **modules/camera** :ref:`🔗<class_EditorExportPlatformIOS_property_modules/camera>`
 
-If ``true``, :ref:`CameraServer<class_CameraServer>` module is added to the exported project.
+Если ``true``, модуль :ref:`CameraServer<class_CameraServer>` добавляется в экспортированный проект.
 
 .. rst-class:: classref-item-separator
 

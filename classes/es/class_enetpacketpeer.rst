@@ -188,7 +188,7 @@ Mean packet loss of reliable packets as a ratio with respect to the :ref:`PACKET
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_LOSS_VARIANCE** = ``1``
 
-Packet loss variance.
+Variación de la pérdida de paquetes.
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_LOSS_EPOCH:
 

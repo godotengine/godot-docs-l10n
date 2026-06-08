@@ -484,15 +484,15 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
 :ref:`Variant<class_Variant>` **get**\ (\ key\: :ref:`Variant<class_Variant>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Dictionary_method_get>`
 
-Returns the corresponding value for the given ``key`` in the dictionary. If the ``key`` does not exist, returns ``default``, or ``null`` if the parameter is omitted.
+Возвращает соответствующее значение для заданного ``key`` в словаре. Если ``key`` не существует, возвращает ``default`` или ``null``, если параметр опущен.
 
-\ **Note:** If the ``default`` argument is computationally expensive or has unwanted side effects, consider using the :ref:`has()<class_Dictionary_method_has>` method instead:
+\ **Примечание:** Если аргумент ``default`` является вычислительно затратным или имеет нежелательные побочные эффекты, рассмотрите возможность использования метода :ref:`has()<class_Dictionary_method_has>` вместо него:
 
 ::
 
-    # Always calls `expensive_function()`.
+    # Всегда вызывает `expensive_function()`.
     dict.get("key", expensive_function())
-    # Calls `expensive_function()` only if the key does not exist.
+    # Вызывает `expensive_function()` только если ключ не существует.
     dict.get("key") if dict.has("key") else expensive_function()
 
 .. rst-class:: classref-item-separator

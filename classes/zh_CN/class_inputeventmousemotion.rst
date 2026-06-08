@@ -153,9 +153,9 @@ InputEventMouseMotion
 - |void| **set_screen_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_velocity**\ (\ )
 
-The unscaled mouse velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`.
+以屏幕坐标表示的、未经缩放的鼠标速度，单位为像素/秒。这个速度\ *不会*\ 根据内容缩放因子（content scale factor）或对 :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>` 的调用进行缩放。
 
-\ **Note:** In :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mode, :ref:`screen_velocity<class_InputEventMouseMotion_property_screen_velocity>` returns ``(0, 0)`` because the mouse cursor is hidden and locked. Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
+\ **注意：** 在 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`\ （鼠标捕获）模式下，\ :ref:`screen_velocity<class_InputEventMouseMotion_property_screen_velocity>` 会返回 ``(0, 0)``\ ，因为此时鼠标光标是隐藏且锁定的。如果你想在 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` 模式下使用鼠标进行瞄准，请使用 :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -189,11 +189,11 @@ The unscaled mouse velocity in pixels per second in screen coordinates. This vel
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-The mouse velocity in pixels per second.
+鼠标速度，单位为像素/秒。
 
-\ **Note:** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. That means mouse sensitivity may appear different depending on resolution.
+\ **注意：** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` 会根据内容缩放因子（content scale factor）自动进行缩放，该因子由项目的拉伸模式（stretch mode）设置决定。这意味着，鼠标灵敏度可能会因为分辨率的不同而显得不一样。
 
-\ **Note:** In :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mode, :ref:`velocity<class_InputEventMouseMotion_property_velocity>` returns ``(0, 0)`` because the mouse cursor is hidden and locked. Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
+\ **注意：** 在 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`\ （鼠标捕获）模式下，\ :ref:`velocity<class_InputEventMouseMotion_property_velocity>` 会返回 ``(0, 0)``\ ，因为此时鼠标光标是隐藏且锁定的。如果你想在 :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` 模式下使用鼠标进行瞄准，请使用 :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

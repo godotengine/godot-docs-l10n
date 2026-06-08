@@ -253,9 +253,9 @@ Apre il file per operazioni di sola lettura. Il cursore viene posizionato all'in
 
 :ref:`ModeFlags<enum_FileAccess_ModeFlags>` **WRITE** = ``2``
 
-Opens the file for write operations. If the file exists, it is truncated to zero length and its contents are cleared. Otherwise, it is created.
+Apre il file per operazioni di sola scrittura. Se il file esiste, viene troncato a lunghezza zero e il suo contenuto viene cancellato. Altrimenti, viene creato.
 
-\ **Note:** When creating a file it must be in an already existing directory. To recursively create directories for a file path, see :ref:`DirAccess.make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`.
+\ **Nota:** Quando si crea un file, esso deve trovarsi in una cartella già esistente. Per creare cartelle ricorsivamente per un percorso di file, vedi :ref:`DirAccess.make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`.
 
 .. _class_FileAccess_constant_READ_WRITE:
 
@@ -271,9 +271,9 @@ Apre il file per operazioni di lettura e scrittura. Non tronca il file. Il curso
 
 :ref:`ModeFlags<enum_FileAccess_ModeFlags>` **WRITE_READ** = ``7``
 
-Opens the file for read and write operations. If the file exists, it is truncated to zero length and its contents are cleared. Otherwise, it is created. The file cursor is positioned at the beginning of the file.
+Apre il file per operazioni di lettura e scrittura. Se il file esiste, viene troncato a lunghezza zero e il suo contenuto viene cancellato. Altrimenti, viene creato. Il cursore è posizionato all'inizio del file.
 
-\ **Note:** When creating a file it must be in an already existing directory. To recursively create directories for a file path, see :ref:`DirAccess.make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`.
+\ **Nota:** Quando si crea un file, esso deve trovarsi in una cartella già esistente. Per creare cartelle ricorsivamente per un percorso di file, vedi :ref:`DirAccess.make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`.
 
 .. rst-class:: classref-item-separator
 
@@ -625,7 +625,7 @@ Restituisce l'ultima volta che il file al percorso ``file`` vi è stato accesso 
 
 :ref:`String<class_String>` **get_as_text**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_as_text>`
 
-Returns the whole file as a :ref:`String<class_String>`. Text is interpreted as being UTF-8 encoded. This ignores the file cursor and does not affect it.
+Restituisce l'intero file come :ref:`String<class_String>`. Il testo è interpretato come codificato in UTF-8. Questo ignora il cursore del file e non lo influenza.
 
 .. rst-class:: classref-item-separator
 
@@ -809,9 +809,9 @@ Restituisce i prossimi 16 bit del file interpretandoli come numero in virgola mo
 
 :ref:`bool<class_bool>` **get_hidden_attribute**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_hidden_attribute>`
 
-Returns ``true`` if the **hidden** attribute is set on the file at the given path.
+Restituisce ``true``, se l'attributo ``hidden`` (nascosto) è impostato sul file al percorso specificato.
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **Nota:** Questo metodo è implementato su iOS, BSD, macOS e Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -935,9 +935,9 @@ Restituisce la posizione del cursore del file in byte dall'inizio del file. Ques
 
 :ref:`bool<class_bool>` **get_read_only_attribute**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_read_only_attribute>`
 
-Returns ``true`` if the **read only** attribute is set on the file at the given path.
+Restituisce ``true``, se l'attributo ``read only`` (sola lettura) è impostato sul file al percorso specificato.
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **Nota:** Questo metodo è implementato su iOS, BSD, macOS e Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -1121,7 +1121,7 @@ Ridimensiona il file a una lunghezza specificata. Il file deve essere aperto in 
 
 |void| **seek**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FileAccess_method_seek>`
 
-Sets the file cursor to the specified position in bytes, from the beginning of the file. This changes the value returned by :ref:`get_position()<class_FileAccess_method_get_position>`.
+Sposta il cursore del file alla posizione specificata in byte, dall'inizio del file. Questo cambia il valore restituito da :ref:`get_position()<class_FileAccess_method_get_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1133,9 +1133,9 @@ Sets the file cursor to the specified position in bytes, from the beginning of t
 
 |void| **seek_end**\ (\ position\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_FileAccess_method_seek_end>`
 
-Sets the file cursor to the specified position in bytes, from the end of the file. This changes the value returned by :ref:`get_position()<class_FileAccess_method_get_position>`.
+Sposta il cursore del file alla posizione specificata in byte, dalla fine del file. Questo cambia il valore restituito da :ref:`get_position()<class_FileAccess_method_get_position>`.
 
-\ **Note:** This is an offset, so you should use negative numbers otherwise the file cursor will move past the end of the file.
+\ **Nota:** Questo è un offset, quindi si dovrebbero usare numeri negativi altrimenti il cursore si sposterà oltre la fine del file.
 
 .. rst-class:: classref-item-separator
 
@@ -1350,11 +1350,11 @@ Memorizza l'array di byte fornito nel file. Questo fa avanzare il cursore del fi
 
 :ref:`bool<class_bool>` **store_csv_line**\ (\ values\: :ref:`PackedStringArray<class_PackedStringArray>`, delim\: :ref:`String<class_String>` = ","\ ) :ref:`🔗<class_FileAccess_method_store_csv_line>`
 
-Stores the given :ref:`PackedStringArray<class_PackedStringArray>` in the file as a line formatted in the CSV (Comma-Separated Values) format. You can pass a different delimiter ``delim`` to use other than the default ``","`` (comma). This delimiter must be one-character long.
+Memorizza il :ref:`PackedStringArray<class_PackedStringArray>` fornito nel file come singola riga nel formato CSV (Comma-Separated Values). È possibile passare un delimitatore (``delim``) da usare diverso da quello predefinito ``","`` (la virgola). Questo delimitatore deve essere un solo carattere.
 
-Text will be encoded as UTF-8. Returns ``true`` if the operation is successful.
+Il testo sarà codificato come UTF-8. Restituisce ``true`` se l'operazione ha successo.
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **Nota:** Se si verifica un errore, il valore risultante dell'indicatore di posizione nel file non può essere determinato.
 
 .. rst-class:: classref-item-separator
 

@@ -63,7 +63,7 @@ flags **ImportFlags**: :ref:`🔗<enum_EditorSceneFormatImporter_ImportFlags>`
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_SCENE** = ``1``
 
-Unused flag (this has no effect when enabled).
+Неиспользуемый флаг (при включении не оказывает никакого эффекта).
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_ANIMATION:
 
@@ -71,7 +71,7 @@ Unused flag (this has no effect when enabled).
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_ANIMATION** = ``2``
 
-Import animations from the 3D scene. When importing a scene as an :ref:`AnimationLibrary<class_AnimationLibrary>`, this flag is always enabled.
+Импортируйте анимации из 3D-сцены. При импорте сцены в качестве :ref:`AnimationLibrary<class_AnimationLibrary>` этот флаг всегда включен.
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_FAIL_ON_MISSING_DEPENDENCIES:
 
@@ -79,7 +79,7 @@ Import animations from the 3D scene. When importing a scene as an :ref:`Animatio
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_FAIL_ON_MISSING_DEPENDENCIES** = ``4``
 
-Unused flag (this has no effect when enabled).
+Неиспользуемый флаг (при включении не оказывает никакого эффекта).
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_GENERATE_TANGENT_ARRAYS:
 
@@ -87,9 +87,9 @@ Unused flag (this has no effect when enabled).
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_GENERATE_TANGENT_ARRAYS** = ``8``
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+Если ``true``, сгенерируйте касательные вершины с помощью `Mikktspace <http://www.mikktspace.com/>`__, если входные сетки не содержат данных о касательных. По возможности рекомендуется позволить программному обеспечению для 3D-моделирования генерировать касательные при экспорте, а не полагаться на эту опцию. Касательные необходимы для корректного отображения карт нормалей и высот, а также любых функций материала/шейдера, требующих касательных.
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+Если вам не нужны функции материала, требующие касательных, отключение этой опции может уменьшить размер выходного файла и ускорить импорт, если исходный 3D-файл не содержит касательных.
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_USE_NAMED_SKIN_BINDS:
 

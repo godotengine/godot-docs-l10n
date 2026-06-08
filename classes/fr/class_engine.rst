@@ -199,7 +199,7 @@ Voir aussi :ref:`max_fps<class_Engine_property_max_fps>` et :ref:`ProjectSetting
 
 \ **Note :** Seul les tics physiques :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` peuvent être simulées par trame visuelle rendue au maximum. Si des tics physiques suplémentaires doivent être simulées pour maintenir le rendu, le projet semblera ralentir (même si ``delta`` est utilisé systématiquement dans les calculs de physique). Par conséquent, il est recommandé d'augmenter :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` si vous augmentez :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` significativement au-dessus de sa valeur par défaut.
 
-\ **Note:** Envisager d'activer l':doc:`interpolation de la physique <../tutorials/physics/interpolation/index>` si vous changez :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` à une valeur qui n'est pas multiple de ``60``. L'utilisation de l'interpolation de la physique évitera les déchirements lorsque le taux de rafraîchissement du moniteur et le taux de mise à jour de la physique ne correspondent pas exactement.
+\ **Note :** Envisagez d'activer l':doc:`interpolation de la physique <../tutorials/physics/interpolation/index>` si vous changez :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` à une valeur qui n'est pas multiple de ``60``. L'utilisation de l'interpolation de la physique évitera les déchirements lorsque le taux de rafraîchissement du moniteur et le taux de mise à jour de la physique ne correspondent pas exactement.
 
 .. rst-class:: classref-item-separator
 

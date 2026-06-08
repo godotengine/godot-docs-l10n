@@ -239,7 +239,7 @@ Returns a copy of this node path with a colon character (``:``) prefixed, transf
 
 :ref:`StringName<class_StringName>` **get_concatenated_names**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_concatenated_names>`
 
-Returns all node names concatenated with a slash character (``/``) as a single :ref:`StringName<class_StringName>`.
+Devuelve todos los nombres de nodo concatenados con una barra inclinada (``/``) como un solo :ref:`StringName<class_StringName>`.
 
 .. rst-class:: classref-item-separator
 

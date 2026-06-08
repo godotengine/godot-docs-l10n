@@ -153,7 +153,7 @@ Direction to the coordinates of specified bone child.
 
 :ref:`TailDirection<enum_SkeletonProfile_TailDirection>` **TAIL_DIRECTION_END** = ``2``
 
-Direction is not calculated.
+La dirección no se calcula.
 
 .. rst-class:: classref-section-separator
 

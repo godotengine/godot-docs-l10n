@@ -14,7 +14,7 @@ Gestisce il ciclo di gioco tramite una gerarchia di nodi.
 Descrizione
 ----------------------
 
-Come una delle classi più importanti, **SceneTree** gestisce la gerarchia dei nodi in una scena, così come le scene stesse. I nodi possono essere aggiunti, recuperati e rimossi. L'intero albero di scena (e quindi la scena attuale) può essere messo in pausa. Le scene possono essere caricate, cambiate e ricaricate.
+Come una delle classi più importanti, **SceneTree** gestisce la gerarchia dei nodi in una scena, così come le scene stesse. I nodi possono essere aggiunti, recuperati e rimossi. L'intero albero di scene (e quindi la scena attuale) può essere messo in pausa. Le scene possono essere caricate, cambiate e ricaricate.
 
 Puoi anche usare **SceneTree** per organizzare i tuoi nodi in **gruppi**: ogni nodo può essere aggiunto a tutti i gruppi che vuoi creare, ad esempio un gruppo "nemico". Puoi quindi iterare questi gruppi o persino chiamare metodi e impostare proprietà su tutti i nodi appartenenti a un dato gruppo.
 
@@ -25,7 +25,7 @@ Puoi anche usare **SceneTree** per organizzare i tuoi nodi in **gruppi**: ogni n
 Tutorial
 ----------------
 
-- :doc:`Albero di scena <../tutorials/scripting/scene_tree>`
+- :doc:`Albero di scene <../tutorials/scripting/scene_tree>`
 
 - :doc:`Molteplici risoluzioni <../tutorials/rendering/multiple_resolutions>`
 
@@ -445,7 +445,7 @@ Se ``false``, devi chiamare manualmente :ref:`MultiplayerAPI.poll()<class_Multip
 - |void| **set_pause**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_paused**\ (\ )
 
-Se ``true``, l'albero di scena è considerato in pausa. Ciò causa il seguente comportamento:
+Se ``true``, l'albero di scene è considerato in pausa. Ciò causa il seguente comportamento:
 
 - La fisica 2D e 3D sarà interrotta, così come il rilevamento delle collisioni e i segnali correlati.
 
@@ -505,7 +505,7 @@ Per gestire il pulsante "Torna indietro" quando questa opzione è disabilitata, 
 
 - :ref:`Window<class_Window>` **get_root**\ (\ )
 
-La radice :ref:`Window<class_Window>` dell'albero. Questo è il :ref:`Node<class_Node>` più in alto dell'albero della scena ed è sempre presente. Un :ref:`NodePath<class_NodePath>` assoluto inizia sempre da questo nodo. I figli del nodo radice possono includere il :ref:`current_scene<class_SceneTree_property_current_scene>` caricato, così come qualsiasi :doc:`AutoLoad <../tutorials/scripting/singletons_autoload>` configurato nelle Impostazioni del progetto.
+La radice :ref:`Window<class_Window>` dell'albero. Questo è il :ref:`Node<class_Node>` più in alto dell'albero di scene ed è sempre presente. Un :ref:`NodePath<class_NodePath>` assoluto inizia sempre da questo nodo. I figli del nodo radice possono includere il :ref:`current_scene<class_SceneTree_property_current_scene>` caricato, così come qualsiasi :doc:`AutoLoad <../tutorials/scripting/singletons_autoload>` configurato nelle Impostazioni del progetto.
 
 \ **Attenzione:** Non eliminare questo nodo. Ciò risulterà in comportamento instabile, seguito da un crash.
 
@@ -561,11 +561,11 @@ Chiama il metodo ``method`` su ogni nodo all'interno di questo albero aggiunto a
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_SceneTree_method_change_scene_to_file>`
 
-Changes the running scene to the one at the given ``path``, after loading it into a :ref:`PackedScene<class_PackedScene>` and creating a new instance.
+Cambia la scena in esecuzione con quella al percorso ``path``, dopo averla caricata in un :ref:`PackedScene<class_PackedScene>` e aver creato una nuova istanza.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_CANT_OPEN<class_@GlobalScope_constant_ERR_CANT_OPEN>` if the ``path`` cannot be loaded into a :ref:`PackedScene<class_PackedScene>`, or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if that scene cannot be instantiated.
+Restituisce :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` in caso di successo, :ref:`@GlobalScope.ERR_CANT_OPEN<class_@GlobalScope_constant_ERR_CANT_OPEN>` se il percorso ``path`` non può essere caricato in un :ref:`PackedScene<class_PackedScene>` o :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` se quella scena non può essere istanziata.
 
-\ **Note:** See :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` for details on the order of operations.
+\ **Nota:** Vedi :ref:`change_scene_to_packed()<class_SceneTree_method_change_scene_to_packed>` per i dettagli sull'ordine delle operazioni.
 
 .. rst-class:: classref-item-separator
 
@@ -577,21 +577,21 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_node**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_SceneTree_method_change_scene_to_node>`
 
-Changes the running scene to the provided :ref:`Node<class_Node>`. Useful when you want to set up the new scene before changing.
+Cambia la scena in esecuzione con il :ref:`Node<class_Node>` specificato. Utile quando si desidera configurare la nuova scena prima di cambiarla.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the ``node`` is ``null``, or :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` if the ``node`` is already inside the scene tree.
+Restituisce :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` in caso di successo, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` se ``node`` è ``null`` o :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` se ``node`` è già dentro l'albero di scene.
 
-\ **Note:** Operations happen in the following order when :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` is called:
+\ **Nota:** Le operazioni vengono eseguite nel seguente ordine quando :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` viene chiamato:
 
-1. The current scene node is immediately removed from the tree. From that point, :ref:`Node.get_tree()<class_Node_method_get_tree>` called on the current (outgoing) scene will return ``null``. :ref:`current_scene<class_SceneTree_property_current_scene>` will be ``null`` too, because the new scene is not available yet.
+1. Il nodo della scena attuale viene immediatamente rimosso dall'albero. Da quel momento in poi, chiamando :ref:`Node.get_tree()<class_Node_method_get_tree>` sulla scena attuale (in uscita) restituirà ``null``. Anche :ref:`current_scene<class_SceneTree_property_current_scene>` sarà ``null``, poiché la nuova scena non è ancora disponibile.
 
-2. At the end of the frame, the formerly current scene, already removed from the tree, will be deleted (freed from memory) and then the new scene node will be added to the tree. :ref:`Node.get_tree()<class_Node_method_get_tree>` and :ref:`current_scene<class_SceneTree_property_current_scene>` will be back to working as usual.
+2. Alla fine del frame, la scena precedentemente attuale, già rimossa dall'albero, verrà eliminata (liberata dalla memoria) e la nuova scena verrà istanziata e aggiunta all'albero. :ref:`Node.get_tree()<class_Node_method_get_tree>` e :ref:`current_scene<class_SceneTree_property_current_scene>` torneranno a funzionare normalmente.
 
-This ensures that both scenes aren't running at the same time, while still freeing the previous scene in a safe way similar to :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+Ciò garantisce che entrambe le scene non siano eseguite allo stesso tempo, liberando comunque la scena precedente in modo sicuro, simile a :ref:`Node.queue_free()<class_Node_method_queue_free>`.
 
-If you want to reliably access the new scene, await the :ref:`scene_changed<class_SceneTree_signal_scene_changed>` signal.
+Se si desidera accedere in modo affidabile alla nuova scena, attendere il segnale :ref:`scene_changed<class_SceneTree_signal_scene_changed>`.
 
-\ **Warning:** After using this method, the **SceneTree** will take ownership of the node and will free it automatically when changing scene again. Any references you had to that node will become invalid.
+\ **Attenzione:** Dopo aver utilizzato questo metodo, lo **SceneTree** possiederà il nodo e lo libererà automaticamente al prossimo cambio di scena. Qualsiasi riferimento a tale nodo diventerà non valido.
 
 .. rst-class:: classref-item-separator
 
@@ -603,11 +603,11 @@ If you want to reliably access the new scene, await the :ref:`scene_changed<clas
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_packed**\ (\ packed_scene\: :ref:`PackedScene<class_PackedScene>`\ ) :ref:`🔗<class_SceneTree_method_change_scene_to_packed>`
 
-Changes the running scene to a new instance of the given :ref:`PackedScene<class_PackedScene>` (which must be valid).
+Cambia la scena in esecuzione con una nuova istanza del :ref:`PackedScene<class_PackedScene>` specificato (che deve essere valido).
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if the scene cannot be instantiated, or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the scene is invalid.
+Restituisce :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` in caso di successo, :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` se non è possibile istanziare la scena o :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` se la scena non è valida.
 
-\ **Note:** See :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` for details on the order of operations.
+\ **Nota:** Vedi :ref:`change_scene_to_node()<class_SceneTree_method_change_scene_to_node>` per i dettagli sull'ordine delle operazioni.
 
 .. rst-class:: classref-item-separator
 

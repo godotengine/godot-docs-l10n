@@ -790,9 +790,9 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 
 :ref:`int<class_int>` **option_{index}/default** = ``0`` :ref:`🔗<class_FileDialog_property_option_{index}/default>`
 
-The default value for the option at ``index``.
+``index`` 处选项的默认值。
 
-\ **Note:** ``index`` is a value in the ``0 .. option_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. option_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -804,9 +804,9 @@ The default value for the option at ``index``.
 
 :ref:`String<class_String>` **option_{index}/name** = ``""`` :ref:`🔗<class_FileDialog_property_option_{index}/name>`
 
-The name of the option at ``index``.
+``index`` 处选项的名称。
 
-\ **Note:** ``index`` is a value in the ``0 .. option_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. option_count - 1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -818,9 +818,9 @@ The name of the option at ``index``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **option_{index}/values** = ``PackedStringArray()`` :ref:`🔗<class_FileDialog_property_option_{index}/values>`
 
-The list of values for the option at ``index``.
+``index`` 处选项的值列表。
 
-\ **Note:** ``index`` is a value in the ``0 .. option_count - 1`` range.
+\ **注意：** ``index`` 的取值范围为 ``0 .. option_count - 1``\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -911,17 +911,17 @@ The list of values for the option at ``index``.
 - |void| **set_use_native_dialog**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_native_dialog**\ (\ )
 
-If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplayServer>`, OS native dialog will be used instead of custom one.
+如果设为 ``true``\ ，并且当前的 :ref:`DisplayServer<class_DisplayServer>`\ （显示服务器）支持的话，将使用操作系统自带的原生对话框，而不是引擎自定义的对话框。
 
-\ **Note:** On Android, it is only supported when using :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. For access mode :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` and :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>`, the system will fall back to custom FileDialog.
+\ **注意：** 在 Android 平台上，仅在使用 :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`\ （文件系统访问权限）时才支持此功能。如果是 :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` 或 :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>` 访问模式，系统会自动回退使用自定义的 FileDialog。
 
-\ **Note:** On Linux and macOS, sandboxed apps always use native dialogs to access the host file system.
+\ **注意：** 在 Linux 和 macOS 平台上，处于沙盒环境中的应用为了访问宿主机的文件系统，会强制使用原生对话框。
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **注意：** 在 macOS 平台上，沙盒应用会保存“安全作用域书签”（security-scoped bookmarks），以便在多次启动应用的会话之间，依然保留对已打开文件夹的访问权限。你可以使用 :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` 方法来获取已保存的书签列表。
 
-\ **Note:** Native dialogs are isolated from the base process, file dialog properties can't be modified once the dialog is shown.
+\ **注意：** 原生对话框与基础进程是相互隔离的，因此一旦对话框被弹出显示，就无法再修改它的属性了。
 
-\ **Note:** This property is ignored in :ref:`EditorFileDialog<class_EditorFileDialog>`.
+\ **注意：** 此属性在 :ref:`EditorFileDialog<class_EditorFileDialog>`\ （编辑器文件对话框）中会被直接忽略。
 
 .. rst-class:: classref-section-separator
 
@@ -1447,7 +1447,7 @@ If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplaySe
 
 :ref:`Texture2D<class_Texture2D>` **menu_copy_path** :ref:`🔗<class_FileDialog_theme_icon_menu_copy_path>`
 
-Icon for the "Copy Path" context menu option.
+"复制路径"上下文菜单选项的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -1459,7 +1459,7 @@ Icon for the "Copy Path" context menu option.
 
 :ref:`Texture2D<class_Texture2D>` **menu_delete** :ref:`🔗<class_FileDialog_theme_icon_menu_delete>`
 
-Icon for the "Delete" context menu option.
+"删除"上下文菜单选项的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -1471,7 +1471,7 @@ Icon for the "Delete" context menu option.
 
 :ref:`Texture2D<class_Texture2D>` **menu_new_folder** :ref:`🔗<class_FileDialog_theme_icon_menu_new_folder>`
 
-Icon for the "New Folder..." context menu option. Usually it should be the same as :ref:`create_folder<class_FileDialog_theme_icon_create_folder>`; leave it empty if you want the context menu to show no icons.
+“新建文件夹...”上下文菜单选项的图标。通常它应与 :ref:`create_folder<class_FileDialog_theme_icon_create_folder>` 保持一致；如果你希望上下文菜单不显示图标，请将其留空。
 
 .. rst-class:: classref-item-separator
 
@@ -1483,7 +1483,7 @@ Icon for the "New Folder..." context menu option. Usually it should be the same 
 
 :ref:`Texture2D<class_Texture2D>` **menu_open_bundle** :ref:`🔗<class_FileDialog_theme_icon_menu_open_bundle>`
 
-Icon for the "Show Package Contents" context menu option. The option only appears for macOS bundles.
+“显示包内容”上下文菜单选项的图标。该选项仅针对 macOS 程序包显示。
 
 .. rst-class:: classref-item-separator
 
@@ -1495,7 +1495,7 @@ Icon for the "Show Package Contents" context menu option. The option only appear
 
 :ref:`Texture2D<class_Texture2D>` **menu_refresh** :ref:`🔗<class_FileDialog_theme_icon_menu_refresh>`
 
-Icon for the "Refresh" context menu option. Usually it should be the same as :ref:`reload<class_FileDialog_theme_icon_reload>`; leave it empty if you want the context menu to show no icons.
+“刷新”上下文菜单选项的图标。通常它应与 :ref:`reload<class_FileDialog_theme_icon_reload>` 保持一致；如果你希望上下文菜单不显示图标，请将其留空。
 
 .. rst-class:: classref-item-separator
 
@@ -1507,7 +1507,7 @@ Icon for the "Refresh" context menu option. Usually it should be the same as :re
 
 :ref:`Texture2D<class_Texture2D>` **menu_show_in_file_manager** :ref:`🔗<class_FileDialog_theme_icon_menu_show_in_file_manager>`
 
-Icon for the "Show in File Manager" context menu option.
+“在文件管理器中显示”上下文菜单选项的图标。
 
 .. rst-class:: classref-item-separator
 

@@ -770,9 +770,9 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 - |void| **set_columns**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_columns**\ (\ )
 
-The number of columns.
+列的数量。
 
-Prints an error and does not allow setting the columns during mouse selection.
+在鼠标选择期间设置列时会打印错误且不被允许。
 
 .. rst-class:: classref-item-separator
 
@@ -961,9 +961,9 @@ Prints an error and does not allow setting the columns during mouse selection.
 
 |void| **clear**\ (\ ) :ref:`🔗<class_Tree_method_clear>`
 
-Clears the tree. This removes all items.
+清空树。这将移除所有项目。
 
-Prints an error and does not allow clearing the tree if called during mouse selection.
+如果在鼠标选择期间调用该方法，则会打印错误并禁止清空树。
 
 .. rst-class:: classref-item-separator
 
@@ -975,13 +975,13 @@ Prints an error and does not allow clearing the tree if called during mouse sele
 
 :ref:`TreeItem<class_TreeItem>` **create_item**\ (\ parent\: :ref:`TreeItem<class_TreeItem>` = null, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_Tree_method_create_item>`
 
-Creates an item in the tree and adds it as a child of ``parent``, which can be either a valid :ref:`TreeItem<class_TreeItem>` or ``null``.
+在树中创建一个新节点（TreeItem），并将其添加为 ``parent`` 的子节点。这里的 ``parent`` 可以是一个有效的 :ref:`TreeItem<class_TreeItem>`\ ，也可以是 ``null``\ 。
 
-If ``parent`` is ``null``, the root item will be the parent, or the new item will be the root itself if the tree is empty.
+如果 ``parent`` 为 ``null``\ ，新节点的父节点将会是根节点；如果当前树是空的，那么这个新节点就会直接成为根节点。
 
-The new item will be the ``index``-th child of parent, or it will be the last child if there are not enough siblings.
+这个新节点会成为父节点的第 ``index`` 个子节点；如果父节点的子节点数量不够（比如指定的索引超出了现有子节点的范围），它就会被添加为最后一个子节点。
 
-Prints an error and returns ``null`` if called during mouse selection, or if the ``parent`` does not belong to this tree.
+如果在鼠标选择操作期间调用此方法，或者指定的 ``parent`` 并不属于当前这棵树，系统会打印一条报错信息，并返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1145,9 +1145,9 @@ Prints an error and returns ``null`` if called during mouse selection, or if the
 
 :ref:`RID<class_RID>` **get_custom_drawing_canvas_item**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_custom_drawing_canvas_item>`
 
-Returns the internal canvas item designated for custom drawing. See :ref:`TreeItem.set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>`.
+返回用于自定义绘制的内部画布项。请参阅 :ref:`TreeItem.set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>`\ 。
 
-\ **Note:** This canvas item clears automatically on each Tree draw call.
+\ **注意：** 该画布项会在每次 Tree 绘制调用时自动清除。
 
 .. rst-class:: classref-item-separator
 
@@ -1527,7 +1527,7 @@ Returns the internal canvas item designated for custom drawing. See :ref:`TreeIt
 
 :ref:`Color<class_Color>` **drop_on_item_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Tree_theme_color_drop_on_item_color>`
 
-:ref:`Color<class_Color>` used to draw the highlight outline when dragging items that can only be dropped "on" other items.
+用于绘制可拖拽项目（只能放置在其他项目之上）的高亮轮廓的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 

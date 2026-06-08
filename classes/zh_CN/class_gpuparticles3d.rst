@@ -261,7 +261,7 @@ enum **TransformAlign**: :ref:`🔗<enum_GPUParticles3D_TransformAlign>`
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_DISABLED** = ``0``
 
-Do not align particle transforms relative to the camera or velocity.
+不将粒子变换相对于相机或速度进行对齐。
 
 .. _class_GPUParticles3D_constant_TRANSFORM_ALIGN_Z_BILLBOARD:
 
@@ -269,7 +269,7 @@ Do not align particle transforms relative to the camera or velocity.
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_Z_BILLBOARD** = ``1``
 
-Align each particle's Z axis to face the camera.
+让每个粒子的 Z 轴都对准（朝向）摄像机。
 
 .. _class_GPUParticles3D_constant_TRANSFORM_ALIGN_Y_TO_VELOCITY:
 
@@ -277,7 +277,7 @@ Align each particle's Z axis to face the camera.
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_Y_TO_VELOCITY** = ``2``
 
-Align each particle's Y axis to the velocity vector.
+让每个粒子的 Y 轴对齐其速度矢量。
 
 .. _class_GPUParticles3D_constant_TRANSFORM_ALIGN_Z_BILLBOARD_Y_TO_VELOCITY:
 
@@ -285,7 +285,7 @@ Align each particle's Y axis to the velocity vector.
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_Z_BILLBOARD_Y_TO_VELOCITY** = ``3``
 
-Align each particle's Z axis to face the camera and Y axis to the velocity vector.
+将每个粒子的 Z 轴对齐至面向摄像机，同时将 Y 轴对齐至速度向量。
 
 .. _class_GPUParticles3D_constant_TRANSFORM_ALIGN_LOCAL_BILLBOARD:
 
@@ -293,7 +293,7 @@ Align each particle's Z axis to face the camera and Y axis to the velocity vecto
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_LOCAL_BILLBOARD** = ``4``
 
-Align each particle's Z axis to face the camera, while preserving a given axis (X or Y).
+将每个粒子的 Z 轴对齐至面向摄像机，同时保持指定的轴（X 或 Y）方向不变。
 
 .. rst-class:: classref-section-separator
 
@@ -815,7 +815,7 @@ Align each particle's Z axis to face the camera, while preserving a given axis (
 - |void| **set_transform_align**\ (\ value\: :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>`\ )
 - :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **get_transform_align**\ (\ )
 
-The alignment of particles. Use this for billboarding and aligning to velocity.
+粒子的对齐方式。使用此功能可实现面向摄像机的广告牌效果（billboarding）或根据速度方向对齐。
 
 .. rst-class:: classref-item-separator
 
@@ -832,7 +832,7 @@ The alignment of particles. Use this for billboarding and aligning to velocity.
 - |void| **set_transform_align_axis**\ (\ value\: :ref:`ParticlesTransformAlignAxis<enum_RenderingServer_ParticlesTransformAlignAxis>`\ )
 - :ref:`ParticlesTransformAlignAxis<enum_RenderingServer_ParticlesTransformAlignAxis>` **get_transform_align_axis**\ (\ )
 
-When using transform align local billboard, which axis to use for the billboarding. Supports only X or Y.
+当使用“变换对齐：局部广告牌”模式时，指定用于广告牌效果的轴向。仅支持 X 轴或 Y 轴。
 
 .. rst-class:: classref-item-separator
 
@@ -849,7 +849,7 @@ When using transform align local billboard, which axis to use for the billboardi
 - |void| **set_transform_align_channel_filter**\ (\ value\: :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>`\ )
 - :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **get_transform_align_channel_filter**\ (\ )
 
-In the case of billboarded particles, which custom channel to read from to calculate their angle.
+对于面向摄像机的粒子（billboarded particles），读取哪个自定义通道来计算其角度。
 
 .. rst-class:: classref-item-separator
 
@@ -956,9 +956,9 @@ In the case of billboarded particles, which custom channel to read from to calcu
 
 |void| **request_particles_process**\ (\ process_time\: :ref:`float<class_float>`, process_time_residual\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_GPUParticles3D_method_request_particles_process>`
 
-Requests the particles to process for extra process time during a single frame.
+请求粒子在单帧内额外处理指定的时间。
 
-\ ``process_time`` defines the time that the particles will process while emitting is on. ``process_time_residual`` defines the time that particles will process with emitting turned off for the simulation. When combined with :ref:`speed_scale<class_GPUParticles3D_property_speed_scale>` set to ``0.0``, this is useful to be able to seek a particle system timeline.
+\ ``process_time`` 定义了粒子在发射（emitting）开启状态下将要模拟的时间。\ ``process_time_residual`` 定义了粒子在发射关闭状态下，为了维持模拟效果将要额外处理的时间。当把 :ref:`speed_scale<class_GPUParticles3D_property_speed_scale>` 设置为 ``0.0`` 并结合使用时，这个方法非常适用于对粒子系统的时间轴进行‘搜寻’（seek，即跳转到特定时间点）。
 
 .. rst-class:: classref-item-separator
 

@@ -70,9 +70,9 @@ JavaClassWrapper 单例为 Godot 应用程序提供了一种通过 `Java 原生�
 
 :ref:`JavaObject<class_JavaObject>` **create_proxy**\ (\ object\: :ref:`Object<class_Object>`, interfaces\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_JavaClassWrapper_method_create_proxy>`
 
-Creates a :ref:`JavaObject<class_JavaObject>` implementing the given Java interfaces using the given :ref:`Object<class_Object>` as the implementation.
+创建一个实现指定 Java 接口的 :ref:`JavaObject<class_JavaObject>`\ ，并使用给定的 :ref:`Object<class_Object>` 作为具体实现。
 
-The ``object`` must contain methods signatures matching the methods signatures from the passed Java ``interfaces``. Invoking methods from the Java ``interfaces`` will route to the matching ``object`` method.
+\ ``object`` 必须包含与传入的 Java ``interfaces`` 中方法签名相匹配的方法签名。调用 Java ``interfaces`` 中的方法时，将路由至对应的 ``object`` 方法。
 
 ::
 
@@ -84,7 +84,7 @@ The ``object`` must contain methods signatures matching the methods signatures f
     var printer_object = JavaClassWrapper.create_proxy(print_proxy, ["android.util.Printer"])
     printer_object.println("Hello Godot World!")
 
-\ **Note:** This method only works on Android. On every other platform, this method will always return ``null``.
+\ **注意：** 该方法仅适用于 Android 平台。在其他所有平台上，该方法始终返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -96,11 +96,11 @@ The ``object`` must contain methods signatures matching the methods signatures f
 
 :ref:`JavaObject<class_JavaObject>` **create_sam_callback**\ (\ sam_interface\: :ref:`String<class_String>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_JavaClassWrapper_method_create_sam_callback>`
 
-Creates a :ref:`JavaObject<class_JavaObject>` implementing the Java Single Abstract Method (SAM) interface using the Godot :ref:`Callable<class_Callable>` as the implementation.
+创建一个实现 Java 单一抽象方法（SAM）接口的 :ref:`JavaObject<class_JavaObject>`\ ，并使用 Godot 的 :ref:`Callable<class_Callable>` 作为具体实现。
 
-The ``sam_interface`` **must be** a Java SAM interface, meaning it must only have a single abstract method to implement.
+\ ``sam_interface`` **必须**\ 是一个 Java SAM 接口，这意味着它必须仅包含一个需要实现的抽象方法。
 
-The ``callable`` must be able to handle the same parameter types as the SAM interface method, and must provide the same return type. The ``callable`` will be invoked as a callback, passing the arguments from the Java SAM interface method.
+\ ``callable`` 必须能够处理与 SAM 接口方法相同的参数类型，并提供相同的返回类型。该 ``callable`` 将作为回调被调用，并传入来自 Java SAM 接口方法的参数。
 
 ::
 
@@ -109,7 +109,7 @@ The ``callable`` must be able to handle the same parameter types as the SAM inte
     var callback = JavaClassWrapper.create_sam_callback("android.util.Printer", cb)
     callback.println("Hello Godot World!")
 
-\ **Note:** This method only works on Android. On every other platform, this method will always return ``null``.
+\ **注意：** 该方法仅适用于 Android 平台。在其他所有平台上，该方法始终返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 

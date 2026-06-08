@@ -829,9 +829,9 @@ PhysicsServer2DExtension
 
 :ref:`bool<class_bool>` **_body_collide_shape**\ (\ body\: :ref:`RID<class_RID>`, body_shape\: :ref:`int<class_int>`, shape\: :ref:`RID<class_RID>`, shape_xform\: :ref:`Transform2D<class_Transform2D>`, motion\: :ref:`Vector2<class_Vector2>`, r_results\: ``void*``, result_max\: :ref:`int<class_int>`, r_result_count\: ``int32_t*``\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_collide_shape>`
 
-Given a ``body``, a ``shape``, and their respective parameters, this method should return ``true`` if a collision between the two would occur, with additional details passed in ``r_results``.
+给定一个 ``body``\ （刚体）、一个 ``shape``\ （形状）以及它们各自的相关参数，如果两者之间会发生碰撞，此方法应当返回 ``true``\ ，并将额外的碰撞细节信息传入 ``r_results`` 中。
 
-Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``shape_collide`` method. Corresponds to :ref:`PhysicsDirectSpaceState2D.collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>`.
+这是 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 内部 ``shape_collide`` 方法的可重写版本，对应于 :ref:`PhysicsDirectSpaceState2D.collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1787,9 +1787,9 @@ Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal 
 
 :ref:`bool<class_bool>` **_shape_collide**\ (\ shape_A\: :ref:`RID<class_RID>`, xform_A\: :ref:`Transform2D<class_Transform2D>`, motion_A\: :ref:`Vector2<class_Vector2>`, shape_B\: :ref:`RID<class_RID>`, xform_B\: :ref:`Transform2D<class_Transform2D>`, motion_B\: :ref:`Vector2<class_Vector2>`, r_results\: ``void*``, result_max\: :ref:`int<class_int>`, r_result_count\: ``int32_t*``\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__shape_collide>`
 
-Given two shapes and their parameters, should return ``true`` if a collision between the two would occur, with additional details passed in ``r_results``.
+给定两个形状及其相关参数，如果两者之间会发生碰撞，应当返回 ``true``\ ，并将额外的碰撞细节信息传入 ``r_results`` 中。
 
-Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``shape_collide`` method. Corresponds to :ref:`PhysicsDirectSpaceState2D.collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>`.
+这是 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 内部 ``shape_collide`` 方法的可重写版本，对应于 :ref:`PhysicsDirectSpaceState2D.collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>`\ 。
 
 .. rst-class:: classref-item-separator
 

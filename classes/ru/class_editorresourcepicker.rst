@@ -185,11 +185,11 @@ EditorResourcePicker
 
 |void| **_set_create_options**\ (\ menu_node\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__set_create_options>`
 
-This virtual method is called when updating the context menu of an :ref:`editable<class_EditorResourcePicker_property_editable>` **EditorResourcePicker**. Implement this method to override the "New" items section with your own options. ``menu_node`` is a reference to the :ref:`PopupMenu<class_PopupMenu>` node.
+Этот виртуальный метод вызывается при обновлении контекстного меню элемента **EditorResourcePicker**, который можно редактировать. Реализуйте этот метод, чтобы переопределить раздел «Новый» своими собственными параметрами. ``menu_node`` — это ссылка на узел :ref:`PopupMenu<class_PopupMenu>`.
 
-\ **Note:** Implement :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` to handle these custom items.
+\ **Примечание:** Реализуйте :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` для обработки этих пользовательских элементов.
 
-\ **Note:** Relevant built-in options ("Load", "Copy", "Paste", etc.) are automatically added to the ``menu_node`` afterwards, using their hard-coded IDs starting from ``0``. Custom options need to use non-colliding IDs to be handled properly. Using ``id = 100 + custom_option_index`` is safe (this is what the default items in the "New" section use).
+\ **Примечание:** Соответствующие встроенные параметры («Загрузить», «Копировать», «Вставить» и т. д.) автоматически добавляются в ``menu_node`` впоследствии, используя их жестко заданные идентификаторы, начиная с ``0``. Пользовательские параметры должны использовать неконфликтующие идентификаторы для корректной обработки. Использование ``id = 100 + custom_option_index`` безопасно (это то, что используют элементы по умолчанию в разделе «Новый»).
 
 .. rst-class:: classref-item-separator
 

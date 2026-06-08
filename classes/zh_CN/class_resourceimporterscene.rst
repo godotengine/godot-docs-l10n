@@ -178,7 +178,7 @@ ResourceImporterScene
 
 :ref:`bool<class_bool>` **array_mesh/deduplicate_surfaces** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_array_mesh/deduplicate_surfaces>`
 
-If the 3D model file contains only one mesh, this option has no effect. If ``true`` and the 3D model file contains multiple meshes with the same surface names and formats, the surfaces will be merged together when the meshes are merged. This is useful for reducing the number of surfaces in the resulting mesh, and avoids duplicating materials. If ``false`` and the 3D model file contains multiple meshes, the surfaces will always be kept separate.
+如果 3D 模型文件仅包含一个网格（Mesh），则此选项无效。如果设为 ``true`` 且 3D 模型文件包含多个具有相同表面（Surface）名称和格式的网格，那么在合并网格时，表面将被合并在一起。这有助于减少生成网格中的表面数量，并避免材质重复。如果设为 ``false`` 且 3D 模型文件包含多个网格，表面将始终被保持分离。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ If the 3D model file contains only one mesh, this option has no effect. If ``tru
 
 :ref:`bool<class_bool>` **mesh_library/use_node_names_as_mesh_names** = ``false`` :ref:`🔗<class_ResourceImporterScene_property_mesh_library/use_node_names_as_mesh_names>`
 
-If ``true``, the mesh names will be set to the names of the nodes in the 3D model file. If ``false``, the mesh names will be set to the names of the meshes in the 3D model file. Enabling this is a common work-around when the author of the 3D model file did not properly set the mesh names in Blender or other 3D modeling apps. For example, a file may have a node named "Turret" with a mesh named "Cube.002", so enabling this option will set the mesh name to "Turret" instead of "Cube_002".
+如果设为 ``true``\ ，网格（Mesh）的名称将被设置为 3D 模型文件中节点的名称。如果设为 ``false``\ ，网格的名称将被设置为 3D 模型文件中网格自身的名称。当 3D 模型文件的作者未在 Blender 或其他 3D 建模软件中正确设置网格名称时，启用此选项是一种常见的变通方法。例如，某个文件可能包含一个名为 "Turret" 的节点，其网格名称为 "Cube.002"，启用此选项后，网格名称将被设置为 "Turret"，而不是 "Cube_002"。
 
 .. rst-class:: classref-item-separator
 
@@ -274,9 +274,9 @@ If ``true``, the mesh names will be set to the names of the nodes in the 3D mode
 
 :ref:`bool<class_bool>` **meshes/ensure_tangents** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_meshes/ensure_tangents>`
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+如果设为 ``true``\ ，当输入的网格体（meshes）没有切线数据时，将使用 `Mikktspace <http://www.mikktspace.com/>`__ 算法来生成顶点切线。如果条件允许，更推荐让 3D 建模软件在导出模型时直接生成切线，而不是依赖这个选项。法线贴图（normal maps）和高度贴图（height maps），以及任何需要切线的材质或着色器（shader）功能，都必须要有切线数据才能正确显示。
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+如果你不需要那些依赖切线的材质功能，禁用此选项可以在源 3D 文件不包含切线的情况下，减小输出文件的大小，并加快导入速度。
 
 .. rst-class:: classref-item-separator
 
@@ -434,15 +434,15 @@ If you don't need material features that require tangents, disabling this can re
 
 :ref:`bool<class_bool>` **skins/use_named_skins** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_skins/use_named_skins>`
 
-If checked, use named :ref:`Skin<class_Skin>`\ s for animation. The :ref:`MeshInstance3D<class_MeshInstance3D>` node contains 3 properties of relevance here: a skeleton :ref:`NodePath<class_NodePath>` pointing to the :ref:`Skeleton3D<class_Skeleton3D>` node (usually ``..``), a mesh, and a skin:
+如果勾选此项，动画将使用带有名称的 :ref:`Skin<class_Skin>`\ （蒙皮）资源。在这里，\ :ref:`MeshInstance3D<class_MeshInstance3D>` 节点包含 3 个与之相关的关键属性：指向 :ref:`Skeleton3D<class_Skeleton3D>` 节点的骨骼 :ref:`NodePath<class_NodePath>`\ （通常填 ``..``\ ）、一个网格（Mesh），以及一个蒙皮（Skin）：
 
-- The :ref:`Skeleton3D<class_Skeleton3D>` node contains a list of bones with names, their pose and rest, a name, and a parent bone.
+- :ref:`Skeleton3D<class_Skeleton3D>` 节点包含一个带有名称的骨骼列表，记录了它们的姿态和初始状态（Rest），同时也包含节点自身的名称以及父级骨骼的信息。
 
-- The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
+- 网格（Mesh）包含了显示模型所需的所有原始顶点数据。就网格本身而言，它知道顶点是如何进行权重绘制（weight-painted）的，并使用了一些通常从 3D 建模软件中导入的内部编号。
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For each of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the :ref:`Skin<class_Skin>` contains each bone's name (if :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` is ``true``), or the bone's index within the :ref:`Skeleton3D<class_Skeleton3D>` list (if :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` is ``false``).
+- 蒙皮（Skin）包含了将此网格绑定到该 :ref:`Skeleton3D<class_Skeleton3D>` 上所需的必要信息。对于 3D 建模软件为每个内部骨骼选定的 ID，它都包含两样东西。首先是一个矩阵，被称为绑定姿态矩阵、逆绑定矩阵，简称 IBM。其次，\ :ref:`Skin<class_Skin>` 还包含每根骨骼的名称（如果 :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` 设为 ``true``\ ），或者包含该骨骼在 :ref:`Skeleton3D<class_Skeleton3D>` 列表中的索引编号（如果 :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` 设为 ``false``\ ）。
 
-Together, this information is enough to tell Godot how to use the bone poses in the :ref:`Skeleton3D<class_Skeleton3D>` node to render the mesh from each :ref:`MeshInstance3D<class_MeshInstance3D>`. Note that each :ref:`MeshInstance3D<class_MeshInstance3D>` may share binds, as is common in models exported from Blender, or each :ref:`MeshInstance3D<class_MeshInstance3D>` may use a separate :ref:`Skin<class_Skin>` object, as is common in models exported from other tools such as Maya.
+综合以上信息，就足以告诉 Godot 如何利用 :ref:`Skeleton3D<class_Skeleton3D>` 节点中的骨骼姿态来渲染每个 :ref:`MeshInstance3D<class_MeshInstance3D>` 的网格了。需要注意的是，每个 :ref:`MeshInstance3D<class_MeshInstance3D>` 可能会共享绑定关系（这在从 Blender 导出的模型中很常见），也可能每个 :ref:`MeshInstance3D<class_MeshInstance3D>` 使用各自独立的 :ref:`Skin<class_Skin>` 对象（这在从 Maya 等其他工具导出的模型中很常见）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

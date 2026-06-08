@@ -16,7 +16,7 @@ AudioStream
 描述
 ----
 
-Base class for audio streams. Audio streams are used for sound effects and music playback, and support WAV (via :ref:`AudioStreamWAV<class_AudioStreamWAV>`), Ogg (via :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`), and MP3 (via :ref:`AudioStreamMP3<class_AudioStreamMP3>`) file formats.
+音频流的基类。音频流用于播放音效和音乐，支持 WAV（通过 :ref:`AudioStreamWAV<class_AudioStreamWAV>`\ ）、Ogg（通过 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`\ ）和 MP3（通过 :ref:`AudioStreamMP3<class_AudioStreamMP3>`\ ）文件格式。
 
 .. rst-class:: classref-introduction-group
 

@@ -14,11 +14,11 @@ Limit bone rotation angular velocity.
 Descrizione
 ----------------------
 
-This modifier limits bone rotation angular velocity by comparing poses between previous and current frame.
+Questo modificatore limita la velocità angolare di rotazione delle ossa confrontando le pose tra il frame precedente e quello attuale.
 
-You can add bone chains by specifying their root and end bones, then add the bones between them to a list. Modifier processes either that list or the bones excluding those in the list depending on the option :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
+È possibile aggiungere catene di ossa specificando le ossa radice e finale, poi aggiungere le ossa intermedie a un elenco. Il modificatore elabora tale elenco oppure le ossa escludendo quelle presenti nell'elenco, a seconda dell'opzione :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
 
-\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **Nota:** La maggior parte dei metodi di questa classe accetta un parametro ``index``. Questo parametro specifica quale voce nell'elenco delle impostazioni restituire, se l'IK ha più voci (ad esempio, ``settings/<index>/target_node``).
 
 .. rst-class:: classref-reftable-group
 

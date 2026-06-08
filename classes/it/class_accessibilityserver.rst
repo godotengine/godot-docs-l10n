@@ -1063,9 +1063,9 @@ Creates a new, empty accessibility sub-element resource. Sub-elements can be use
 
 :ref:`RID<class_RID>` **create_sub_text_edit_elements**\ (\ parent_rid\: :ref:`RID<class_RID>`, shaped_text\: :ref:`RID<class_RID>`, min_height\: :ref:`float<class_float>`, insert_pos\: :ref:`int<class_int>` = -1, is_last_line\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AccessibilityServer_method_create_sub_text_edit_elements>`
 
-Creates a new, empty accessibility sub-element from the shaped text buffer. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`free_element()<class_AccessibilityServer_method_free_element>` method.
+Crea un nuovo sotto-elemento di accessibilità vuoto dal buffer di testo sagomato. I sotto-elementi sono liberati automaticamente quando l'elemento padre è liberato, oppure si possono liberare in anticipo attraverso il metodo :ref:`free_element()<class_AccessibilityServer_method_free_element>`.
 
-If ``is_last_line`` is ``true``, no trailing newline is appended to the text content. Set to ``true`` for the last line in multi-line text fields and for single-line text fields.
+Se ``is_last_line`` è impostato su ``true``, non viene aggiunta alcuna nuova riga finale al contenuto del testo. Impostare su ``true`` per l'ultima riga nei campi di testo multilinea e per i campi di testo a riga singola.
 
 .. rst-class:: classref-item-separator
 

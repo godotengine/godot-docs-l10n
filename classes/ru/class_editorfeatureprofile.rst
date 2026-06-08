@@ -87,7 +87,7 @@ enum **Feature**: :ref:`🔗<enum_EditorFeatureProfile_Feature>`
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_ASSET_LIB** = ``2``
 
-The Asset Store tab. If this feature is disabled, the Asset Store tab won't display.
+Вкладка Asset Store. Если эта функция отключена, вкладка Asset Store отображаться не будет.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SCENE_TREE:
 

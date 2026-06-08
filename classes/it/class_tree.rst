@@ -975,13 +975,13 @@ Prints an error and does not allow clearing the tree if called during mouse sele
 
 :ref:`TreeItem<class_TreeItem>` **create_item**\ (\ parent\: :ref:`TreeItem<class_TreeItem>` = null, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_Tree_method_create_item>`
 
-Creates an item in the tree and adds it as a child of ``parent``, which can be either a valid :ref:`TreeItem<class_TreeItem>` or ``null``.
+Crea un elemento nell'albero e lo aggiunge come figlio di ``parent``, che può essere un :ref:`TreeItem<class_TreeItem>` valido o ``null``.
 
-If ``parent`` is ``null``, the root item will be the parent, or the new item will be the root itself if the tree is empty.
+Se ``parent`` è ``null``, l'elemento radice sarà il genitore, oppure il nuovo elemento sarà la radice stessa se l'albero è vuoto.
 
-The new item will be the ``index``-th child of parent, or it will be the last child if there are not enough siblings.
+Il nuovo elemento sarà il ``index``-esimo figlio del genitore, oppure sarà l'ultimo figlio se non ci sono abbastanza fratelli.
 
-Prints an error and returns ``null`` if called during mouse selection, or if the ``parent`` does not belong to this tree.
+Stampa un errore e restituisce ``null`` se chiamato durante la selezione del mouse o se ``parent`` non appartiene a questo albero.
 
 .. rst-class:: classref-item-separator
 

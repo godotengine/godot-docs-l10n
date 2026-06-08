@@ -340,11 +340,11 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`Variant<class_Variant>` **_get**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__get>`
 
-Override this method to customize the behavior of :ref:`get()<class_Object_method_get>`. Should return the given ``property``'s value, or ``null`` if the ``property`` should be handled normally.
+重写此方法以自定义 :ref:`get()<class_Object_method_get>` 的行为。应该返回给定 ``property``\ （属性）的值；如果该 ``property`` 应该按常规方式处理，则返回 ``null``\ 。
 
-Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
+结合 :ref:`_set()<class_Object_private_method__set>` 和 :ref:`_get_property_list()<class_Object_private_method__get_property_list>`\ ，此方法允许定义自定义属性，这在编辑器插件的开发中尤其有用。
 
-\ **Note:** This method is not called when getting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **注意：** 当获取对象的内置属性，包括使用 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>` 定义的属性时，不会调用此方法。
 
 
 .. tabs::
@@ -388,9 +388,9 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
 
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns a non-``null`` value.
+\ **注意：** 与其他虚方法不同，每个重写了此方法的脚本都会自动调用它。这意味着不应该通过 GDScript 中的 ``super``\ （或其他语言中的等效关键字）来调用其基类的实现。调用会从层级最底层的子类开始，随后沿着类继承层级向上依次调用。调用链会在第一个返回非 ``null`` 值的类那里停止。
 
-\ **Warning:** This method must be :doc:`thread-safe <../tutorials/performance/thread_safe_apis>` if overridden. Otherwise, the engine may crash when trying to save a resource containing the object.
+\ **警告：** 如果重写了此方法，它必须是线程安全的。否则，当尝试保存包含该对象的资源时，引擎可能会崩溃。
 
 .. rst-class:: classref-item-separator
 
@@ -402,13 +402,13 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_property_list**\ (\ ) |virtual| :ref:`🔗<class_Object_private_method__get_property_list>`
 
-Override this method to provide a custom list of additional properties to handle by the engine.
+重写此方法，以向引擎提供一个自定义的额外属性列表来进行处理。
 
-Should return a property list, as an :ref:`Array<class_Array>` of dictionaries. The result is added to the array of :ref:`get_property_list()<class_Object_method_get_property_list>`, and should be formatted in the same way. Each :ref:`Dictionary<class_Dictionary>` must at least contain the ``name`` and ``type`` entries.
+应该返回一个属性列表，形式为包含字典的 :ref:`Array<class_Array>`\ （数组）。该结果会被添加到 :ref:`get_property_list()<class_Object_method_get_property_list>` 的数组中，并且应该采用相同的格式。每个 :ref:`Dictionary<class_Dictionary>`\ （字典）必须至少包含 ``name``\ （名称）和 ``type``\ （类型）这两个条目。
 
-You can use :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` and :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` to customize the default values of the properties added by this method.
+你可以使用 :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` 和 :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` 来定制通过此方法添加的属性的默认值。
 
-The example below displays a list of numbers shown as words going from ``ZERO`` to ``FIVE``, with ``number_count`` controlling the size of the list:
+下面的示例展示了一个从 ``ZERO`` 到 ``FIVE`` 以单词形式显示的数字列表，其中 ``number_count`` 用于控制列表的大小：
 
 
 .. tabs::
@@ -517,13 +517,13 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
 
 
 
-\ **Note:** This method is intended for advanced purposes. For most common use cases, the scripting languages offer easier ways to handle properties. See :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`, :ref:`@GDScript.@export_enum<class_@GDScript_annotation_@export_enum>`, :ref:`@GDScript.@export_group<class_@GDScript_annotation_@export_group>`, etc. If you want to customize exported properties, use :ref:`_validate_property()<class_Object_private_method__validate_property>`.
+\ **注意：** 此方法是为高级用途设计的。对于大多数常见的使用场景，各脚本语言都提供了更简便的方式来处理属性。详见 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`\ 、\ :ref:`@GDScript.@export_enum<class_@GDScript_annotation_@export_enum>`\ 、\ :ref:`@GDScript.@export_group<class_@GDScript_annotation_@export_group>` 等注解。如果你只是想自定义已导出的属性，请使用 :ref:`_validate_property()<class_Object_private_method__validate_property>`\ 。
 
-\ **Note:** If the object's script is not :ref:`@GDScript.@tool<class_@GDScript_annotation_@tool>`, this method will not be called in the editor.
+\ **注意：** 如果该对象的脚本没有标记 :ref:`@GDScript.@tool<class_@GDScript_annotation_@tool>`\ ，此方法在编辑器中将不会被调用。
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy.
+\ **注意：** 与其他虚方法不同，每个重写了此方法的脚本都会自动调用它。这意味着不应该通过 GDScript 中的 ``super``\ （或其他语言中的等效关键字）来调用其基类的实现。调用会从层级最底层的子类开始，随后沿着类继承层级向上依次进行。
 
-\ **Warning:** This method must be :doc:`thread-safe <../tutorials/performance/thread_safe_apis>` if overridden. Otherwise, the engine may crash when trying to save a resource containing the object.
+\ **警告：** 如果重写了此方法，它必须是<线程安全的>。否则，当尝试保存包含该对象的资源时，引擎可能会崩溃。
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
 
 :ref:`bool<class_bool>` **_iter_init**\ (\ iter\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_Object_private_method__iter_init>`
 
-Initializes the iterator. ``iter`` stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. Returns ``true`` so long as the iterator has not reached the end.
+初始化迭代器。\ ``iter`` 用于存储迭代的状态。由于 GDScript 不支持通过引用传递参数，因此使用一个单元素数组作为包装。只要迭代器还没有到达末尾，就返回 ``true``\ 。
 
 ::
 
@@ -592,9 +592,9 @@ Initializes the iterator. ``iter`` stores the iteration state. Since GDScript do
         for x in my_range:
             print(x) # Prints 2, 3, 4.
 
-\ **Note:** Avoid storing iterator state in a member variable, use the ``iter`` parameter instead. Otherwise, you won't be able to reuse the same iterator instance in nested loops.
+\ **注意：** 避免将迭代器的状态存储在成员变量中，请改用 ``iter`` 参数。否则，你将无法在嵌套循环中重复使用同一个迭代器实例。
 
-See also `online docs <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__.
+更多详情请参阅 `online docs <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1476,9 +1476,9 @@ See also `online docs <../tutorials/scripting/gdscript/gdscript_advanced.html#cu
 
 :ref:`bool<class_bool>` **is_queued_for_deletion**\ (\ ) |const| :ref:`🔗<class_Object_method_is_queued_for_deletion>`
 
-Returns ``true`` if the methods :ref:`Node.queue_free()<class_Node_method_queue_free>` or :ref:`SceneTree.queue_delete()<class_SceneTree_method_queue_delete>` was called for the object.
+如果已为该对象调用了方法 :ref:`Node.queue_free()<class_Node_method_queue_free>` 或 :ref:`SceneTree.queue_delete()<class_SceneTree_method_queue_delete>`\ ，则返回 ``true``\ 。
 
-\ **Note:** This method does not return ``true`` on children of the node that :ref:`Node.queue_free()<class_Node_method_queue_free>` has been called on, even though they will be freed together with the parent.
+\ **注意：** 即使子节点将随父节点一起被释放，该方法也不会对已调用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 的节点的子节点返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

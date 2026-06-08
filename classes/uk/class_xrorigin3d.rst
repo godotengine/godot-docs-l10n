@@ -1,0 +1,93 @@
+:github_url: hide
+
+.. _class_XROrigin3D:
+
+XROrigin3D
+==========
+
+**Успадковує:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+
+Точка походження в AR/VR.
+
+.. rst-class:: classref-introduction-group
+
+Опис
+--------
+
+Це спеціальна вершина в системі AR/VR, яка відображає фізичну локацію центру нашого відстеження на віртуальне місце в нашому ігровому світі.
+
+Кілька точок походження можна додавати до ялинки, але тільки можна використовувати одночасно. Всі :ref:`XRCamera3D<class_XRCamera3D>`, :ref:`XRController3D<class_XRController3D>`, і :ref:`XRAnchor3D<class_XRAnchor3D>` вершини повинні бути прямими дітьми цього вузла для просторового відстеження, щоб працювати правильно.
+
+Це позиція цієї вершини, яку ви оновлюєте, коли ваш персонаж повинен переміщатися через ваш ігровий світ, поки ми не рухаємось в реальному світі. Рух в реальному світі завжди стосується цієї точки походження.
+
+Наприклад, якщо ваш характер водіння автомобіля, вузол **XROrigin3D** повинна бути дочірньою вершиною цього автомобіля. Або, якщо ви запроваджуєте телепортову систему для переміщення вашого персонажа, ви повинні змінити позицію цього вузла.
+
+.. rst-class:: classref-introduction-group
+
+Посібники
+------------------
+
+- :doc:`Індекс документації XR <../tutorials/xr/index>`
+
+.. rst-class:: classref-reftable-group
+
+Властивості
+----------------------
+
+.. table::
+   :widths: auto
+
+   +---------------------------+-----------------------------------------------------------+-----------+
+   | :ref:`bool<class_bool>`   | :ref:`current<class_XROrigin3D_property_current>`         | ``false`` |
+   +---------------------------+-----------------------------------------------------------+-----------+
+   | :ref:`float<class_float>` | :ref:`world_scale<class_XROrigin3D_property_world_scale>` | ``1.0``   |
+   +---------------------------+-----------------------------------------------------------+-----------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описи властивостей
+------------------------------------
+
+.. _class_XROrigin3D_property_current:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **current** = ``false`` :ref:`🔗<class_XROrigin3D_property_current>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_current**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **is_current**\ (\ )
+
+Якщо ``true``, цей вузол походження в даний час використовується :ref:`XRServer<class_XRServer>`. За часом можна використовувати лише одну точку походження.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_XROrigin3D_property_world_scale:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **world_scale** = ``1.0`` :ref:`🔗<class_XROrigin3D_property_world_scale>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_world_scale**\ (\ value\: :ref:`float<class_float>`\ )
+- :ref:`float<class_float>` **get_world_scale**\ (\ )
+
+Шкала світу гри у порівнянні з реальним світом. Це так само, як :ref:`XRServer.world_scale<class_XRServer_property_world_scale>`. За замовчуванням більшість платформ AR/VR припускають, що 1 ігровий блок відповідає дійсному світовому метру.
+
+.. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
+.. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
+.. |const| replace:: :abbr:`const (Цей метод не має побічних ефектів. Не змінює ніяку змінну екземпляра об'єкта.)`
+.. |vararg| replace:: :abbr:`vararg (Цей метод приймає будь-яке число аргументів після описаних тут.)`
+.. |constructor| replace:: :abbr:`constructor (Цей метод використовується для побудови типів.)`
+.. |static| replace:: :abbr:`static (Цей метод не потребує екземпляра для виклику, його можна викликати безпосередньо за допомогою назви класу.)`
+.. |operator| replace:: :abbr:`operator (Цей метод описує дійсний оператор для взаємодії з цим типом як з лівим операндом.)`
+.. |bitfield| replace:: :abbr:`BitField (Це значення є цілим числом, складеним у вигляді бітової маски з наступних прапорів.)`
+.. |void| replace:: :abbr:`void (Значення не повертається.)`

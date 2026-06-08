@@ -110,7 +110,7 @@ Determina come è abilitato il nodo di destinazione. Corrisponde a :ref:`Process
 - |void| **set_enable_node_path**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_enable_node_path**\ (\ )
 
-Il percorso verso il nodo di destinazione, relativo a **VisibleOnScreenEnabler3D**. Il nodo di destinazione è memorizzato nella cache; viene assegnato solo quando si imposta questa proprietà (se **VisibleOnScreenEnabler3D** è all'interno dell'albero della scena) e ogni volta che **VisibleOnScreenEnabler3D** entra nell'albero di scena. Se il percorso è vuoto, nessun nodo sarà influenzato. Se il percorso non è valido, viene generato anche un errore.
+Il percorso verso il nodo di destinazione, relativo a **VisibleOnScreenEnabler3D**. Il nodo di destinazione è memorizzato nella cache; viene assegnato solo quando si imposta questa proprietà (se **VisibleOnScreenEnabler3D** è all'interno dell'albero di scene) e ogni volta che **VisibleOnScreenEnabler3D** entra nell'albero di scene. Se il percorso è vuoto, nessun nodo sarà influenzato. Se il percorso non è valido, viene generato anche un errore.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

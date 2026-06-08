@@ -16,7 +16,7 @@ Object for storing the main query result data.
 Descrizione
 ----------------------
 
-Object for storing the main query result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`. This must always be the first component requested.
+Oggetto per memorizzare i dati principali risultanti di una richiesta quando si chiama :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`. Questo deve essere sempre il primo componente richiesto.
 
 .. rst-class:: classref-reftable-group
 
@@ -61,7 +61,7 @@ Returns the number of entities that were retrieved.
 
 :ref:`int<class_int>` **get_entity_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialQueryResultData_method_get_entity_id>`
 
-Returns the entity id (``XrSpatialEntityIdEXT``) for the entity at this ``index``.
+Restituisce l'ID di entità (``XrSpatialEntityIdEXT``) per l'entità associata all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 

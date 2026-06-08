@@ -14,11 +14,11 @@ CameraFeed
 描述
 ----
 
-A camera feed gives you access to a single physical camera attached to your device. When enabled, Godot will start capturing frames from the camera which can then be used. See also :ref:`CameraServer<class_CameraServer>`.
+相机源允许访问连接到设备的单个物理相机。启用后，Godot 将开始从该相机捕获帧，随后这些帧便可被使用。另见 :ref:`CameraServer<class_CameraServer>`\ 。
 
-\ **Note:** Many cameras will return YCbCr images which are split into two textures and need to be combined in a shader. Godot does this automatically for you if you set the environment to show the camera image in the background.
+\ **注意：**\ 很多相机会返回 YCbCr 图像，这些图像被拆分为两个纹理，需要在着色器中进行组合。若将环境设置为在背景中显示相机图像，Godot 会自动执行此操作。
 
-\ **Note:** This class is currently only implemented on Linux, Android, macOS, and iOS. On other platforms no **CameraFeed**\ s will be available. To get a **CameraFeed** on iOS, enable :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`.
+\ **注意：**\ 该类目前仅在 Linux、Android、macOS 和 iOS 上实现。在其他平台上 **CameraFeed** 将不可用。若要在 iOS 上获取 **CameraFeed**\ ，请启用 :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -290,7 +290,7 @@ enum **FeedPosition**: :ref:`🔗<enum_CameraFeed_FeedPosition>`
 
 :ref:`Array<class_Array>` **_get_formats**\ (\ ) |virtual| |const| :ref:`🔗<class_CameraFeed_private_method__get_formats>`
 
-Override this method to define supported formats of the camera feed.
+覆盖该方法以定义相机源支持的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ Override this method to define supported formats of the camera feed.
 
 :ref:`bool<class_bool>` **_set_format**\ (\ index\: :ref:`int<class_int>`, parameters\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| :ref:`🔗<class_CameraFeed_private_method__set_format>`
 
-Override this method to set the format of the camera feed.
+覆盖该方法以设置相机源的格式。
 
 .. rst-class:: classref-item-separator
 

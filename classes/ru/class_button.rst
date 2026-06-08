@@ -16,9 +16,9 @@ Button
 Описание
 ----------------
 
-**Button** is the standard themed button. It can contain text and an icon, and it will display them according to the current :ref:`Theme<class_Theme>`.
+**Button** — это стандартная кнопка с поддержкой тем. Она может содержать текст и иконку, которые будут отображаться в соответствии с текущей :ref:`Theme<class_Theme>`.
 
-\ **Example:** Create a button and connect a method that will be called when the button is pressed:
+\ **Пример:** Создайте кнопку и подключите к ней метод, который будет вызываться при нажатии кнопки:
 
 
 .. tabs::
@@ -27,33 +27,33 @@ Button
 
     func _ready():
         var button = Button.new()
-        button.text = "Click me"
+        button.text = "Нажмите сюда"
         button.pressed.connect(_button_pressed)
         add_child(button)
 
     func _button_pressed():
-        print("Hello world!")
+        print("Привет, мир!")
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
         var button = new Button();
-        button.Text = "Click me";
+        button.Text = "Нажмите сюда";
         button.Pressed += ButtonPressed;
         AddChild(button);
     }
 
     private void ButtonPressed()
     {
-        GD.Print("Hello world!");
+        GD.Print("Привет, мир!");
     }
 
 
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+См. также :ref:`BaseButton<class_BaseButton>`, содержащий общие свойства и методы, связанные с этим узлом.
 
-\ **Note:** Buttons support multitouch via touch input, allowing multiple buttons to be pressed at the same time. Otherwise, mouse input is used, limiting interaction to one button press at a time.
+\ **Примечание:** Кнопки поддерживают мультитач с помощью сенсорного ввода, позволяя нажимать несколько кнопок одновременно. В противном случае используется ввод с мыши, ограничивая взаимодействие одним нажатием кнопки за раз.
 
 .. rst-class:: classref-introduction-group
 

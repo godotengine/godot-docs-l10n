@@ -268,7 +268,7 @@ Chiude la scena attualmente attiva, ignorando eventuali modifiche in sospeso nel
 
 |void| **edit_node**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_EditorInterface_method_edit_node>`
 
-Modifica il :ref:`Node<class_Node>` specificato. Il nodo verrà selezionato anche se si trova all'interno dell'albero di scena.
+Modifica il :ref:`Node<class_Node>` specificato. Il nodo verrà anche selezionato se si trova all'interno dell'albero di scene.
 
 .. rst-class:: classref-item-separator
 

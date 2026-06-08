@@ -16,7 +16,7 @@ Descrizione
 
 Un **Parallax2D** serve per creare un effetto parallasse. Può muoversi a una velocità diversa rispetto al movimento della telecamera tramite :ref:`scroll_scale<class_Parallax2D_property_scroll_scale>`. Ciò crea un'illusione di profondità in un gioco 2D. Se si desidera lo scorrimento manuale, la posizione della :ref:`Camera2D<class_Camera2D>` può essere ignorata con :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>`.
 
-\ **Nota:** Qualsiasi modifica alla posizione di questo nodo apportata dopo che è entrato nell'albero di scena verrà ignorata se :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` è ``false`` o se :ref:`screen_offset<class_Parallax2D_property_screen_offset>` viene modificato.
+\ **Nota:** Qualsiasi modifica alla posizione di questo nodo apportata dopo che è entrato nell'albero di scene verrà ignorata se :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` è ``false`` o se :ref:`screen_offset<class_Parallax2D_property_screen_offset>` viene modificato.
 
 .. rst-class:: classref-introduction-group
 

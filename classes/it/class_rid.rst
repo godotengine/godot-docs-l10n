@@ -12,13 +12,13 @@ Un contenitore per l'identificatore univoco di una :ref:`Resource<class_Resource
 Descrizione
 ----------------------
 
-The RID :ref:`Variant<class_Variant>` type is used to access a low-level resource by its unique ID. RIDs are opaque, which means they do not grant access to the resource by themselves. They are used by the low-level server classes, such as :ref:`DisplayServer<class_DisplayServer>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`TextServer<class_TextServer>`, etc.
+Il tipo di :ref:`Variant<class_Variant>` integrato RID è utilizzato per accedere a una risorsa di basso livello tramite il suo ID univoco. I RID sono opachi, il che significa che non garantiscono l'accesso alla risorsa da soli. Sono utilizzati dalle classi server di basso livello, come :ref:`DisplayServer<class_DisplayServer>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`TextServer<class_TextServer>`, ecc.
 
-A low-level resource may correspond to a high-level :ref:`Resource<class_Resource>`, such as :ref:`Texture<class_Texture>` or :ref:`Mesh<class_Mesh>`.
+Una risorsa di basso livello può corrispondere a una :ref:`Resource<class_Resource>` di alto livello, come :ref:`Texture<class_Texture>` o :ref:`Mesh<class_Mesh>`.
 
-\ **Note:** RIDs are only useful during the current session. It won't correspond to a similar resource if sent over a network, or loaded from a file at a later time.
+\ **Nota:** i RID sono utili solo durante la sessione attuale. Non corrisponderanno a una risorsa simile se inviati tramite una rete o caricati da un file in un secondo momento.
 
-\ **Note:** In a boolean context, an RID will evaluate to ``false`` if it has the invalid ID ``0``. Otherwise, an RID will always evaluate to ``true``. This is equivalent to calling :ref:`is_valid()<class_RID_method_is_valid>`.
+\ **Nota:** In un contesto booleano, un RID sarà valutato come ``false`` se ha l'ID invalido di ``0``. Altrimenti, un RID sarà sempre valutato come ``true``. Questo equivale a chiamare :ref:`is_valid()<class_RID_method_is_valid>`.
 
 .. note::
 

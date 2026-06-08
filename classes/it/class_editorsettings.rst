@@ -14,13 +14,13 @@ Oggetto che contiene le impostazioni dell'editor indipendenti dal progetto.
 Descrizione
 ----------------------
 
-Object that holds the project-independent editor settings. These settings are generally visible in the **Editor > Editor Settings** menu.
+Oggetto che contiene le impostazioni dell'editor indipendenti dal progetto. Queste impostazioni sono generalmente visibili nel menu **Editor > Impostazioni dell'editor**.
 
-Property names use slash delimiters to distinguish sections. Setting values can be of any :ref:`Variant<class_Variant>` type. It's recommended to use ``snake_case`` for editor settings to be consistent with the Godot editor itself.
+I nomi delle proprietà utilizzano delimitatori barra per distinguere le sezioni. I valori delle impostazioni possono essere di qualsiasi tipo :ref:`Variant<class_Variant>`. Si consiglia di utilizzare ``snake_case`` affinché le impostazioni dell'editor siano coerenti con l'editor Godot stesso.
 
-Editor settings are saved automatically when changed.
+Le impostazioni dell'editor sono salvate automaticamente quando sono modificate.
 
-Accessing the settings can be done using the following methods, such as:
+L'accesso alle impostazioni può essere effettuato attraverso i seguenti metodi, ad esempio:
 
 
 .. tabs::
@@ -28,24 +28,24 @@ Accessing the settings can be done using the following methods, such as:
  .. code-tab:: gdscript
 
     var settings = EditorInterface.get_editor_settings()
-    # `settings.set("some/property", 10)` also works as this class overrides `_set()` internally.
+    # `settings.set("some/property", 10)` funziona anche poiché questa classe sovrascrive `_set()` internamente.
     settings.set_setting("some/property", 10)
-    # `settings.get("some/property")` also works as this class overrides `_get()` internally.
+    # `settings.get("some/property")` funziona anche poiché questa classe sovrascrive `_get()` internamente.
     settings.get_setting("some/property")
     var list_of_settings = settings.get_property_list()
 
  .. code-tab:: csharp
 
     EditorSettings settings = EditorInterface.Singleton.GetEditorSettings();
-    // `settings.set("some/property", value)` also works as this class overrides `_set()` internally.
+    // `settings.set("some/property", value)` funziona anche poiché questa classe sovrascrive `_set()` internamente.
     settings.SetSetting("some/property", Value);
-    // `settings.get("some/property", value)` also works as this class overrides `_get()` internally.
+    // `settings.get("some/property", value)` funziona anche poiché questa classe sovrascrive `_get()` internamente.
     settings.GetSetting("some/property");
     Godot.Collections.Array<Godot.Collections.Dictionary> listOfSettings = settings.GetPropertyList();
 
 
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_editor_settings()<class_EditorInterface_method_get_editor_settings>`.
+\ **Nota:** Questa classe non dovrebbe essere istanziata direttamente. Invece, accedi al singleton tramite :ref:`EditorInterface.get_editor_settings()<class_EditorInterface_method_get_editor_settings>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -1608,7 +1608,7 @@ Se ``true``, l'editor 2D arrotonderà i valori di zoom su numeri interi quando n
 
 :ref:`Color<class_Color>` **editors/2d/viewport_border_color** :ref:`🔗<class_EditorSettings_property_editors/2d/viewport_border_color>`
 
-Il colore del bordo della viewport nell'editor 2D. Questo bordo rappresenta la dimensione della viewport alla risoluzione base definita nelle Impostazioni del progetto. Gli oggetti posizionati al di fuori di questo bordo non saranno visibili, a meno che non sia utilizzato un nodo :ref:`Camera2D<class_Camera2D>`, oppure a meno che la finestra non sia ridimensionata e la modalità di estensione non sia impostata su ``disabled``.
+Il colore del bordo della viewport nell'editor 2D. Questo bordo rappresenta la dimensione della viewport alla risoluzione base definita nelle Impostazioni del progetto. Gli oggetti posizionati al di fuori di questo bordo non saranno visibili, a meno che non sia utilizzato un nodo :ref:`Camera2D<class_Camera2D>`, oppure a meno che la finestra non sia ridimensionata e la modalità di stiramento non sia impostata su ``disabled``.
 
 .. rst-class:: classref-item-separator
 
@@ -2564,7 +2564,7 @@ Dimensione del gizmo a disco visualizzato durante la modifica delle maniglie di 
 
 :ref:`bool<class_bool>` **editors/3d_gizmos/gizmo_settings/show_collision_shapes_only_when_selected** :ref:`🔗<class_EditorSettings_property_editors/3d_gizmos/gizmo_settings/show_collision_shapes_only_when_selected>`
 
-If ``true``, collision shapes in the 3D editor are visible only when selected. If ``false``, collision shapes are always visible.
+Se ``true``, le forme di collisione nell'editor 3D sono visibili solo quando selezionate. Se ``false``, le forme di collisione sono sempre visibili.
 
 .. rst-class:: classref-item-separator
 
@@ -3819,15 +3819,15 @@ If ``true``, editor inspector uses property documentation as an accessible descr
 
 :ref:`int<class_int>` **interface/editor/appearance/accept_dialog_cancel_ok_buttons** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/accept_dialog_cancel_ok_buttons>`
 
-How to position the Cancel and OK buttons in the editor's :ref:`AcceptDialog<class_AcceptDialog>` windows. Different platforms have different conventions for this, which can be overridden through this setting to avoid accidental clicks when using Godot on multiple platforms.
+Come posizionare i pulsanti Annulla e OK negli :ref:`AcceptDialog<class_AcceptDialog>` dell'editor. Diverse piattaforme hanno diverse convenzioni, che si possono sovrascrivere attraverso questa impostazione per evitare clic accidentali se si utilizza Godot su più piattaforme.
 
-- **Auto** follows the platform convention: OK first on Windows, KDE, and LXQt; Cancel first on macOS and other Linux desktop environments.
+- **Auto** segue la convenzione della piattaforma: prima OK su Windows, KDE, e LXQt, prima Annulla su macOS e altri ambienti desktop Linux.
 
-- **Cancel First** forces the Cancel/OK ordering.
+- **Cancel First** Forza l'ordinamento Annulla/OK.
 
-- **OK First** forces the OK/Cancel ordering.
+- **OK First** Forza l'ordinamento OK/Annulla.
 
-To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
+Per verificare se i pulsanti sono scambiati in fase di esecuzione, usa :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4353,9 +4353,9 @@ Sostituisce il driver per i tablet utilizzato dall'editor.
 
 :ref:`String<class_String>` **interface/editor/localization/editor_language** :ref:`🔗<class_EditorSettings_property_interface/editor/localization/editor_language>`
 
-The language to use for the editor interface. If set to **Auto**, the language is automatically determined based on the system locale. See also :ref:`EditorInterface.get_editor_language()<class_EditorInterface_method_get_editor_language>`.
+La lingua da usare per l'interfaccia dell'editor. Se impostata su **Auto**, la lingua è determinata automaticamente in base alle impostazioni locali del sistema. Vedi anche :ref:`EditorInterface.get_editor_language()<class_EditorInterface_method_get_editor_language>`.
 
-Translations are provided by the community. If you spot a mistake, `contribute to editor translations on Weblate! <https://contributing.godotengine.org/en/latest/documentation/translation/index.html>`__
+Le traduzioni sono fornite dalla community. Se noti un errore, `contribuisci alle traduzioni dell'editor su Weblate! <https://contributing.godotengine.org/en/latest/documentation/translation/index.html>`__
 
 .. rst-class:: classref-item-separator
 
@@ -5115,19 +5115,19 @@ Un pannello touch-friendly che consente di accedere facilmente alle azioni più 
 
 :ref:`int<class_int>` **network/connection/check_for_updates** :ref:`🔗<class_EditorSettings_property_network/connection/check_for_updates>`
 
-Specifies how the engine should check for updates.
+Specifica come il motore verificherà la presenza di aggiornamenti.
 
-- **Disable Update Checks** will block the engine from checking updates (see also :ref:`network/connection/network_mode<class_EditorSettings_property_network/connection/network_mode>`).
+- **Disable Update Checks** non consentirà al motore di verificare gli aggiornamenti (vedi anche :ref:`network/connection/network_mode<class_EditorSettings_property_network/connection/network_mode>`).
 
-- **Auto** (default) will check for newest stable or unstable version, depending on which version are you currently using. Switch to another option if you want to lock in.
+- **Auto** (predefinito) verificherà la versione stabile o instabile più recente, a seconda della versione attualmente in uso. Passa a un'altra opzione se desideri bloccare la versione attuale.
 
-- **Check Newest Preview** will check for the newest available development snapshot.
+- **Check Newest Preview** verificherà lo snapshot di sviluppo più recente disponibile.
 
-- **Check Newest Stable** will check for the newest available stable version.
+- **Check Newest Stable** verificherà l'ultima versione stabile disponibile.
 
-- **Check Newest Patch** will check for the latest available stable version, but only within the same minor version. E.g. if your version is ``4.3.stable``, you will be notified about ``4.3.1.stable``, but not ``4.4.stable``.
+- **Check Newest Patch** verificherà l'ultima versione stabile disponibile, ma solo tra la stessa versione minore. Ad esempio, se la tua versione è ``4.3.stable``, sarai informato su ``4.3.1.stable``, ma non su ``4.4.stable``.
 
-All update modes will ignore builds with different major versions (e.g. Godot 4 -> Godot 5).
+Tutte le modalità di aggiornamento ignoreranno le build con diverse versioni principali (ad esempio, Godot 4 -> Godot 5).
 
 .. rst-class:: classref-item-separator
 
@@ -6038,7 +6038,7 @@ Se ``true``, abilita un'animazione di scorrimento fluida quando si usa la rotell
 
 :ref:`bool<class_bool>` **text_editor/behavior/navigation/stay_in_script_editor_on_node_selected** :ref:`🔗<class_EditorSettings_property_text_editor/behavior/navigation/stay_in_script_editor_on_node_selected>`
 
-Se ``true``, impedisce il passaggio automatico tra le schermate Script e 2D/3D quando si seleziona un nodo nel pannello dell'albero di scena.
+Se ``true``, impedisce il passaggio automatico tra le schermate Script e 2D/3D quando si seleziona un nodo nel pannello dell'albero di scene.
 
 .. rst-class:: classref-item-separator
 

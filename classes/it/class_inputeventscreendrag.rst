@@ -141,7 +141,7 @@ Rappresenta la pressione che l'utente esercita sulla penna. Varia da ``0.0`` a `
 
 La posizione di trascinamento relativa alla posizione precedente (posizione all'ultimo frame).
 
-\ **Nota:** :ref:`relative<class_InputEventScreenDrag_property_relative>` è ridimensionato automaticamente in base al fattore di scala del contenuto, definito dalle impostazioni della modalità di allargamento del progetto. Ciò significa che la sensibilità al tocco apparirà diversa a seconda della risoluzione quando si utilizza :ref:`relative<class_InputEventScreenDrag_property_relative>` in uno script che gestisce la mira tramite tocco. Per evitare ciò, utilizza invece :ref:`screen_relative<class_InputEventScreenDrag_property_screen_relative>`.
+\ **Nota:** :ref:`relative<class_InputEventScreenDrag_property_relative>` è ridimensionato automaticamente in base al fattore di scala del contenuto, definito dalle impostazioni della modalità di stiramento del progetto. Ciò significa che la sensibilità al tocco apparirà diversa a seconda della risoluzione quando si utilizza :ref:`relative<class_InputEventScreenDrag_property_relative>` in uno script che gestisce la mira tramite tocco. Per evitare ciò, utilizza invece :ref:`screen_relative<class_InputEventScreenDrag_property_screen_relative>`.
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +158,7 @@ La posizione di trascinamento relativa alla posizione precedente (posizione all'
 - |void| **set_screen_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_relative**\ (\ )
 
-La posizione di trascinamento non ridimensionata relativa alla posizione precedente nelle coordinate dello schermo (posizione all'ultimo frame). Questa posizione *non* è ridimensionata in base al fattore di scala del contenuto o alle chiamate a :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. Questa dovrebbe essere preferita a :ref:`relative<class_InputEventScreenDrag_property_relative>` per la mira tramite tocco a prescindere dalla modalità di allargamento del progetto.
+La posizione di trascinamento non ridimensionata relativa alla posizione precedente nelle coordinate dello schermo (posizione all'ultimo frame). Questa posizione *non* è ridimensionata in base al fattore di scala del contenuto o alle chiamate a :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. Questa dovrebbe essere preferita a :ref:`relative<class_InputEventScreenDrag_property_relative>` per la mira tramite tocco a prescindere dalla modalità di stiramento del progetto.
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ La posizione di trascinamento non ridimensionata relativa alla posizione precede
 - |void| **set_screen_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_velocity**\ (\ )
 
-La velocità di trascinamento non ridimensionata in pixel al secondo nelle coordinate dello schermo. Questa velocità *non* è ridimensionata in base al fattore di scala del contenuto o alle chiamate a :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. Questa dovrebbe essere preferita a :ref:`velocity<class_InputEventScreenDrag_property_velocity>` per la mira tramite tocco a prescindere dalla modalità di allargamento del progetto.
+La velocità di trascinamento non ridimensionata in pixel al secondo nelle coordinate dello schermo. Questa velocità *non* è ridimensionata in base al fattore di scala del contenuto o alle chiamate a :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. Questa dovrebbe essere preferita a :ref:`velocity<class_InputEventScreenDrag_property_velocity>` per la mira tramite tocco a prescindere dalla modalità di stiramento del progetto.
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Rappresenta gli angoli di inclinazione della penna. Il valore positivo della coo
 
 La velocità di trascinamento.
 
-\ **Nota:** :ref:`velocity<class_InputEventScreenDrag_property_velocity>` è automaticamente ridimensionata in base al fattore di scala del contenuto, definito dalle impostazioni della modalità di allargamento del progetto. Ciò significa che la sensibilità al tocco apparirà diversa a seconda della risoluzione quando si utilizza :ref:`velocity<class_InputEventScreenDrag_property_velocity>` in uno script che gestisce la mira tramite tocco. Per evitare ciò, utilizza invece :ref:`screen_velocity<class_InputEventScreenDrag_property_screen_velocity>`.
+\ **Nota:** :ref:`velocity<class_InputEventScreenDrag_property_velocity>` è automaticamente ridimensionata in base al fattore di scala del contenuto, definito dalle impostazioni della modalità di stiramento del progetto. Ciò significa che la sensibilità al tocco apparirà diversa a seconda della risoluzione quando si utilizza :ref:`velocity<class_InputEventScreenDrag_property_velocity>` in uno script che gestisce la mira tramite tocco. Per evitare ciò, utilizza invece :ref:`screen_velocity<class_InputEventScreenDrag_property_screen_velocity>`.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,19 +14,19 @@ AnimationNodeAdd3
 Опис
 --------
 
-A resource to add to an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Blends two animations out of three additively out of three based on the amount value.
+Ресурс для додавання до :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Змішує дві анімації з трьох за принципом додавання на основі значення коефіцієнта змішування.
 
-This animation node has three inputs:
+Цей вузол анімації має три входи:
 
-- The base animation to add to
+- Базова анімація, до якої потрібно додати
 
-- A "-add" animation to blend with when the blend amount is negative
+- Анімація «-add» для змішування, коли значення змішування є від’ємним
 
-- A "+add" animation to blend with when the blend amount is positive
+- Анімація «+add» для змішування, коли значення змішування є додатним
 
-If the absolute value of the amount is greater than ``1.0``, the animation connected to "in" port is blended with the amplified animation connected to "-add"/"+add" port.
+Якщо абсолютне значення величини перевищує ``1.0``, анімація, підключена до порту «in», змішується з посиленою анімацією, підключеною до порту «-add»/«+add».
 
-\ **Note:** The signs are only used to distinguish ports, and additive blending occurs based on absolute values always, meaning the animation of a "-add" port does not subtract from the animation of an "in" port.
+\ **Примітка:** Знаки використовуються лише для розрізнення портів, а адитивне змішування завжди відбувається на основі абсолютних значень, що означає, що анімація порту «-add» не віднімається від анімації порту «in».
 
 .. rst-class:: classref-introduction-group
 

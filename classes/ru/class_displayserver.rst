@@ -617,11 +617,11 @@ DisplayServer
 
 **orientation_changed**\ (\ orientation\: :ref:`int<class_int>`\ ) :ref:`🔗<class_DisplayServer_signal_orientation_changed>`
 
-Emitted when the device orientation changes. ``orientation`` is the new orientation.
+Генерируется при изменении ориентации устройства. ``orientation`` — это новая ориентация.
 
-Returns ``1`` for portrait, ``2`` for landscape, and ``0`` if the orientation is undefined.
+Возвращает ``1`` для портретной ориентации, ``2`` для альбомной и ``0``, если ориентация не определена.
 
-\ **Note:** This method is implemented on Android and iOS.
+\ **Примечание:** Этот метод реализован на Android и iOS.
 
 .. rst-class:: classref-section-separator
 
@@ -662,7 +662,7 @@ Display server поддерживает глобальное меню. Это п
 
 :ref:`Feature<enum_DisplayServer_Feature>` **FEATURE_TOUCHSCREEN** = ``2``
 
-Display server supports touchscreen input. **Windows, Linux (X11/Wayland), Android, iOS, Web**
+Сервер отображения поддерживает ввод с сенсорного экрана. **Windows, Linux (X11/Wayland), Android, iOS, Web**
 
 .. _class_DisplayServer_constant_FEATURE_MOUSE:
 
@@ -920,7 +920,7 @@ Display server поддерживает создание диалогов для
 
 :ref:`Feature<enum_DisplayServer_Feature>` **FEATURE_HDR_OUTPUT** = ``35``
 
-Display server supports HDR output. **Linux (Wayland), macOS, iOS, visionOS, Windows**
+Сервер отображения поддерживает вывод HDR. **Linux (Wayland), macOS, iOS, visionOS, Windows**
 
 .. _class_DisplayServer_constant_FEATURE_PIP_MODE:
 
@@ -928,7 +928,7 @@ Display server supports HDR output. **Linux (Wayland), macOS, iOS, visionOS, Win
 
 :ref:`Feature<enum_DisplayServer_Feature>` **FEATURE_PIP_MODE** = ``36``
 
-Display server supports putting the application in picture-in-picture mode. **Android**
+Сервер отображения поддерживает перевод приложения в режим «картинка в картинке». **Android**
 
 .. rst-class:: classref-item-separator
 
@@ -1408,7 +1408,7 @@ enum **AccessibilityRole**: :ref:`🔗<enum_DisplayServer_AccessibilityRole>`
 
 **Устарело:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Region/landmark element. Screen readers can navigate between regions using landmark navigation.
+Региональный/ориентиральный элемент. Программы чтения с экрана могут перемещаться между регионами, используя навигацию по ориентирам.
 
 .. _class_DisplayServer_constant_ROLE_TEXT_RUN:
 
@@ -1420,7 +1420,7 @@ Region/landmark element. Screen readers can navigate between regions using landm
 
 Unifor text run.
 
-Note: This role is used for internal text elements, and should not be assigned to nodes.
+Примечание: Эта роль используется для внутренних текстовых элементов и не должна назначаться узлам.
 
 .. rst-class:: classref-item-separator
 
@@ -2466,7 +2466,7 @@ enum **ProgressState**: :ref:`🔗<enum_DisplayServer_ProgressState>`
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_NOPROGRESS** = ``0``
 
-Stops displaying progress and returns the button to its normal state.
+Прекращает отображение прогресса и возвращает кнопку в нормальное состояние.
 
 .. _class_DisplayServer_constant_PROGRESS_STATE_INDETERMINATE:
 
@@ -2474,9 +2474,9 @@ Stops displaying progress and returns the button to its normal state.
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_INDETERMINATE** = ``1``
 
-The progress indicator shows an indeterminate progress.
+Индикатор выполнения показывает неопределенный прогресс.
 
-On Windows, the progress indicator does not grow in size, but cycles repeatedly along the length of the taskbar button by default.
+В Windows индикатор выполнения по умолчанию не увеличивается в размере, а циклически перемещается вдоль кнопки на панели задач.
 
 .. _class_DisplayServer_constant_PROGRESS_STATE_NORMAL:
 
@@ -2484,7 +2484,7 @@ On Windows, the progress indicator does not grow in size, but cycles repeatedly 
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_NORMAL** = ``2``
 
-The progress indicator shows progress normally.
+Индикатор выполнения показывает прогресс в обычном режиме.
 
 .. _class_DisplayServer_constant_PROGRESS_STATE_ERROR:
 
@@ -2492,9 +2492,9 @@ The progress indicator shows progress normally.
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_ERROR** = ``3``
 
-The progress indicator shows that an error has occurred.
+Индикатор выполнения показывает, что произошла ошибка.
 
-On Windows, the progress indicator turns red by default to show that an error has occurred in one of the windows that is broadcasting progress.
+В Windows индикатор выполнения по умолчанию становится красным, указывая на ошибку, произошедшую в одном из окон, отображающих ход выполнения.
 
 .. _class_DisplayServer_constant_PROGRESS_STATE_PAUSED:
 
@@ -2502,9 +2502,9 @@ On Windows, the progress indicator turns red by default to show that an error ha
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_PAUSED** = ``4``
 
-The progress indicator shows it was paused.
+Индикатор выполнения показывает, что процесс приостановлен.
 
-On Windows, the progress indicator turns yellow by default to show that progress is currently stopped in one of the windows but can be resumed by the user.
+В Windows индикатор выполнения по умолчанию становится желтым, указывая на то, что выполнение в одном из окон в данный момент остановлено, но пользователь может возобновить его.
 
 .. rst-class:: classref-item-separator
 
@@ -2746,9 +2746,9 @@ enum **WindowEvent**: :ref:`🔗<enum_DisplayServer_WindowEvent>`
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_OUTPUT_MAX_LINEAR_VALUE_CHANGED** = ``9``
 
-Sent when the output max linear value returned by :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed.
+Отправляется, когда изменяется максимальное линейное значение выходного сигнала, возвращаемое методом :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`.
 
-This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen.
+Это происходит, когда вывод HDR включен или выключен, а также когда изменяются какие-либо значения яркости окна, отображаемые в режиме HDR, например, когда плеер регулирует яркость экрана или перемещает окно на другой экран.
 
 .. rst-class:: classref-item-separator
 
@@ -2982,9 +2982,9 @@ enum **HandleType**: :ref:`🔗<enum_DisplayServer_HandleType>`
 
 :ref:`HandleType<enum_DisplayServer_HandleType>` **GLX_VISUALID** = ``6``
 
-The GLX ``VisualID`` for the window.
+GLX ``VisualID`` для окна.
 
-\ **Note:** Only available on Linux when using X11.
+\ **Примечание:** Доступно только в Linux при использовании X11.
 
 .. _class_DisplayServer_constant_GLX_FBCONFIG:
 
@@ -2992,9 +2992,9 @@ The GLX ``VisualID`` for the window.
 
 :ref:`HandleType<enum_DisplayServer_HandleType>` **GLX_FBCONFIG** = ``7``
 
-The ``GLXFBConfig`` for the window.
+``GLXFBConfig`` для окна.
 
-\ **Note:** Only available on Linux when using X11.
+\ **Примечание:** Доступно только в Linux при использовании X11.
 
 .. rst-class:: classref-item-separator
 
@@ -5785,9 +5785,9 @@ The persistable URI permission remains valid across app restarts as long as the 
 
 :ref:`bool<class_bool>` **is_in_pip_mode**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_is_in_pip_mode>`
 
-Returns ``true`` if the application is in picture-in-picture mode.
+Возвращает ``true``, если приложение находится в режиме «картинка в картинке».
 
-\ **Note:** This method is implemented on Android.
+\ **Примечание:** Этот метод реализован на Android.
 
 .. rst-class:: classref-item-separator
 
@@ -5969,9 +5969,9 @@ Returns ``true`` if the application is in picture-in-picture mode.
 
 |void| **pip_mode_enter**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_pip_mode_enter>`
 
-Enters picture-in-picture mode.
+Переходит в режим «картинка в картинке».
 
-\ **Note:** This method is implemented on Android.
+\ **Примечание:** Этот метод реализован на Android.
 
 .. rst-class:: classref-item-separator
 
@@ -5983,9 +5983,9 @@ Enters picture-in-picture mode.
 
 |void| **pip_mode_set_aspect_ratio**\ (\ numerator\: :ref:`int<class_int>`, denominator\: :ref:`int<class_int>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_pip_mode_set_aspect_ratio>`
 
-Specifies the aspect ratio for picture-in-picture mode.
+Задает соотношение сторон для режима «картинка в картинке».
 
-\ **Note:** This method is implemented on Android.
+\ **Примечание:** Этот метод реализован на Android.
 
 .. rst-class:: classref-item-separator
 
@@ -5997,9 +5997,9 @@ Specifies the aspect ratio for picture-in-picture mode.
 
 |void| **pip_mode_set_auto_enter_on_background**\ (\ auto_enter_on_background\: :ref:`bool<class_bool>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_pip_mode_set_auto_enter_on_background>`
 
-Specifies whether picture-in-picture mode should be entered automatically when the application goes in the background.
+Указывает, следует ли автоматически включать режим «картинка в картинке», когда приложение переходит в фоновый режим.
 
-\ **Note:** This method is implemented on Android.
+\ **Примечание:** Этот метод реализован на Android.
 
 .. rst-class:: classref-item-separator
 
@@ -6303,9 +6303,9 @@ Specifies whether picture-in-picture mode should be entered automatically when t
 
 |void| **set_icon**\ (\ image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_DisplayServer_method_set_icon>`
 
-Sets the application icon and icons of all windows with an :ref:`Image<class_Image>`. To use icons in the operating system's native format, use :ref:`set_native_icon()<class_DisplayServer_method_set_native_icon>` instead.
+Устанавливает значок приложения и значки всех окон с помощью :ref:`Image<class_Image>`. Чтобы использовать значки в собственном формате операционной системы, используйте :ref:`set_native_icon()<class_DisplayServer_method_set_native_icon>` вместо этого.
 
-\ **Note:** Requires support for :ref:`FEATURE_ICON<class_DisplayServer_constant_FEATURE_ICON>`.
+\ **Примечание:** Требуется поддержка :ref:`FEATURE_ICON<class_DisplayServer_constant_FEATURE_ICON>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6795,9 +6795,9 @@ Sets the application icon and icons of all windows with an :ref:`Image<class_Ima
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-When :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` returns ``true``, this returns the current maximum luminance in nits (cd/m²) for HDR output by the window specified by ``window_id``. If the maximum luminance is being automatically adjusted based on the screen's capabilities, this method will return that value. Otherwise, it will return the value set by :ref:`window_set_hdr_output_max_luminance()<class_DisplayServer_method_window_set_hdr_output_max_luminance>`. This maximum luminance value is used when calculating :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>`.
+Когда метод :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` возвращает ``true``, это возвращает текущую максимальную яркость в нитах (кд/м²) для вывода HDR окном, указанным ``window_id``. Если максимальная яркость автоматически регулируется в зависимости от возможностей экрана, этот метод вернет это значение. В противном случае он вернет значение, установленное методом :ref:`window_set_hdr_output_max_luminance()<class_DisplayServer_method_window_set_hdr_output_max_luminance>`. Это значение максимальной яркости используется при вычислении :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>`.
 
-\ **Note:** This maximum luminance may not match the physical behavior of the screen, but will always be proportionally correct relative to :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`.
+\ **Примечание:** Эта максимальная яркость может не соответствовать физическому поведению экрана, но всегда будет пропорционально корректной относительно :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6809,9 +6809,9 @@ When :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_h
 
 :ref:`float<class_float>` **window_get_hdr_output_current_reference_luminance**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`
 
-When :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` returns ``true``, this returns the current reference white luminance in nits (cd/m²) for HDR output by the window specified by ``window_id``. If the reference luminance is being automatically adjusted to match the operating system brightness, this will return that value. Otherwise, it will return the value set by :ref:`window_set_hdr_output_reference_luminance()<class_DisplayServer_method_window_set_hdr_output_reference_luminance>`. This reference luminance value is used when calculating :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>`.
+Когда :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` возвращает ``true``, это возвращает текущую эталонную яркость белого цвета в нитах (кд/м²) для вывода HDR окном, указанным в ``window_id``. Если эталонная яркость автоматически регулируется в соответствии с яркостью операционной системы, метод вернет это значение. В противном случае он вернет значение, установленное :ref:`window_set_hdr_output_reference_luminance()<class_DisplayServer_method_window_set_hdr_output_reference_luminance>`. Это значение эталонной яркости используется при вычислении :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>`.
 
-\ **Note:** This reference white luminance may not match the physical behavior of the screen, but will always be proportionally correct relative to :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`.
+\ **Примечание:** Эта эталонная яркость белого цвета может не соответствовать физическому поведению экрана, но всегда будет пропорционально корректной относительно :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6825,7 +6825,7 @@ When :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_h
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns the maximum luminance in nits (cd/m²) set for HDR output by the window specified by ``window_id``. Negative values indicate that the value is being automatically adjusted based on the screen's capabilities. See also :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`.
+Возвращает максимальную яркость в нитах (кд/м²), установленную для вывода HDR окном, указанным в параметре ``window_id``. Отрицательные значения указывают на то, что значение автоматически корректируется в зависимости от возможностей экрана. См. также :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6837,7 +6837,7 @@ Returns the maximum luminance in nits (cd/m²) set for HDR output by the window 
 
 :ref:`float<class_float>` **window_get_hdr_output_reference_luminance**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_hdr_output_reference_luminance>`
 
-Returns the reference white luminance in nits (cd/m²) set for HDR output by the window specified by ``window_id``. Negative values indicate that the value is being automatically adjusted to match the operating system brightness. See also :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`.
+Возвращает эталонную яркость белого цвета в нитах (кд/м²), установленную для вывода HDR окном, указанным в ``window_id``. Отрицательные значения указывают на то, что значение автоматически корректируется в соответствии с яркостью операционной системы. См. также :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6899,7 +6899,7 @@ Returns the reference white luminance in nits (cd/m²) set for HDR output by the
 
 :ref:`float<class_float>` **window_get_output_max_linear_value**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_output_max_linear_value>`
 
-Returns the maximum value for linear color components that can be displayed for the window specified by ``window_id``, regardless of SDR or HDR output. Returns ``1.0`` if HDR is not enabled or not supported. When HDR output is enabled, this is calculated based on :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` and :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`. The :ref:`Window.output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` signal will be emitted whenever this value changes. This value is used by tonemapping and other :ref:`Environment<class_Environment>` effects to ensure that bright colors are presented in the range that can be displayed by this window. Corresponds to :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`.
+Возвращает максимальное значение линейных цветовых компонентов, которое может быть отображено для окна, указанного параметром ``window_id``, независимо от вывода SDR или HDR. Возвращает ``1.0``, если HDR не включен или не поддерживается. Если вывод HDR включен, это значение рассчитывается на основе :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` и :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`. Сигнал :ref:`Window.output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` будет испускаться всякий раз, когда это значение изменяется. Это значение используется тональным отображением и другими эффектами :ref:`Environment<class_Environment>` для обеспечения отображения ярких цветов в диапазоне, который может быть отображен этим окном. Соответствует :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7021,7 +7021,7 @@ Returns the maximum value for linear color components that can be displayed for 
 
 :ref:`bool<class_bool>` **window_is_hdr_output_enabled**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_is_hdr_output_enabled>`
 
-Returns ``true`` if HDR output is currently enabled for the window specified by ``window_id``. The returned value may change dynamically based on system settings, screen capabilities, and which screen the window is currently on.
+Возвращает ``true``, если для окна, указанного параметром ``window_id``, в данный момент включен вывод HDR. Возвращаемое значение может динамически изменяться в зависимости от системных настроек, возможностей экрана и того, на каком экране в данный момент находится окно.
 
 .. rst-class:: classref-item-separator
 
@@ -7033,7 +7033,7 @@ Returns ``true`` if HDR output is currently enabled for the window specified by 
 
 :ref:`bool<class_bool>` **window_is_hdr_output_requested**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_is_hdr_output_requested>`
 
-Returns ``true`` if HDR output is requested for the window specified by ``window_id``. Corresponds to :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
+Возвращает ``true``, если для окна, указанного параметром ``window_id``, запрошен вывод HDR. Соответствует :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7045,7 +7045,7 @@ Returns ``true`` if HDR output is requested for the window specified by ``window
 
 :ref:`bool<class_bool>` **window_is_hdr_output_supported**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_is_hdr_output_supported>`
 
-Returns ``true`` if the window specified by ``window_id`` supports HDR output. This depends on the platform, screen capabilities, system settings, and the screen the window is currently on.
+Возвращает ``true``, если окно, указанное в ``window_id``, поддерживает вывод HDR. Это зависит от платформы, возможностей экрана, системных настроек и экрана, на котором в данный момент отображается окно.
 
 .. rst-class:: classref-item-separator
 
@@ -7121,7 +7121,7 @@ Returns ``true`` if the window specified by ``window_id`` supports HDR output. T
 
 |void| **window_request_hdr_output**\ (\ enable\: :ref:`bool<class_bool>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_request_hdr_output>`
 
-If ``enable`` is ``true``, HDR output is requested for the window specified by ``window_id``. The window will automatically switch between HDR and SDR if it is moved between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of the :ref:`Window<class_Window>` must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output. Corresponds to :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
+Если ``enable`` имеет значение ``true``, запрашивается вывод HDR для окна, указанного параметром ``window_id``. Окно будет автоматически переключаться между HDR и SDR при перемещении между экранами, изменении возможностей экрана или изменении системных настроек. Это внутренне принудительно включит :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` для основного :ref:`Viewport<class_Viewport>`. Для вывода HDR у всех остальных :ref:`SubViewport<class_SubViewport>` :ref:`Window<class_Window>` должно быть включено свойство :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`. Соответствует :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7209,9 +7209,9 @@ If ``enable`` is ``true``, HDR output is requested for the window specified by `
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Sets the maximum luminance in nits (cd/m²) for HDR output by the window specified by ``window_id``. If ``max_luminance`` is negative, the window uses the screen's maximum luminance that is reported by the operating system. By default, this luminance is set to ``-1.0`` for every window. Typically this property should be left at this default value, but may optionally be exposed through in-game settings to allow the player to correct an inaccurate maximum luminance reported by the operating system. See also :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>` and :ref:`window_get_hdr_output_max_luminance()<class_DisplayServer_method_window_get_hdr_output_max_luminance>`.
+Устанавливает максимальную яркость в нитах (кд/м²) для вывода HDR окном, указанным параметром ``window_id``. Если ``max_luminance`` отрицательное значение, окно использует максимальную яркость экрана, сообщаемую операционной системой. По умолчанию эта яркость устанавливается на ``-1.0`` для каждого окна. Обычно это свойство следует оставлять со значением по умолчанию, но его можно дополнительно указать в настройках игры, чтобы игрок мог исправить неточную максимальную яркость, сообщаемую операционной системой. См. также :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>` и :ref:`window_get_hdr_output_max_luminance()<class_DisplayServer_method_window_get_hdr_output_max_luminance>`.
 
-\ **Note:** This method is only implemented on macOS and Windows. Other platforms will always use the screen's maximum luminance that is reported by the operating system.
+\ **Примечание:** Этот метод реализован только на macOS и Windows. На других платформах всегда будет использоваться максимальная яркость экрана, сообщаемая операционной системой.
 
 .. rst-class:: classref-item-separator
 
@@ -7223,9 +7223,9 @@ Sets the maximum luminance in nits (cd/m²) for HDR output by the window specifi
 
 |void| **window_set_hdr_output_reference_luminance**\ (\ reference_luminance\: :ref:`float<class_float>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_hdr_output_reference_luminance>`
 
-Sets the reference white luminance in nits (cd/m²) for HDR output by the window specified by ``window_id``. If ``reference_luminance`` is negative, the window automatically adjusts to the brightness set by the operating system. By default, this luminance is set to ``-1.0`` for every window. Typically this property should be left at this default value, but may optionally be exposed as an "HDR Brightness" in-game setting to allow the player to adjust the brightness of their game, independently of their device settings. See also :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` and :ref:`window_get_hdr_output_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_reference_luminance>`.
+Устанавливает эталонную яркость белого цвета в нитах (кд/м²) для вывода HDR окном, указанным параметром ``window_id``. Если ``reference_luminance`` отрицательное значение, окно автоматически подстраивается под яркость, заданную операционной системой. По умолчанию эта яркость устанавливается на ``-1.0`` для каждого окна. Обычно это свойство следует оставлять со значением по умолчанию, но его можно дополнительно отобразить как настройку «Яркость HDR» в игре, чтобы игрок мог регулировать яркость игры независимо от настроек устройства. См. также :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` и :ref:`window_get_hdr_output_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_reference_luminance>`.
 
-\ **Note:** This method is only implemented on Windows. Other platforms will always use the reference luminance that is reported by the operating system.
+\ **Примечание:** Этот метод реализован только в Windows. На других платформах всегда будет использоваться эталонная яркость, сообщаемая операционной системой.
 
 .. rst-class:: classref-item-separator
 
@@ -7237,9 +7237,9 @@ Sets the reference white luminance in nits (cd/m²) for HDR output by the window
 
 |void| **window_set_icon**\ (\ icon\: :ref:`Image<class_Image>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_icon>`
 
-Sets the window icon (usually displayed in the top-left corner) for the window specified by ``window_id``.
+Устанавливает значок окна (обычно отображается в верхнем левом углу) для окна, указанного параметром ``window_id``.
 
-\ **Note:** This method is implemented on Linux and Windows.
+\ **Примечание:** Этот метод реализован в Linux и Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -7465,11 +7465,11 @@ Sets the window icon (usually displayed in the top-left corner) for the window s
 
 |void| **window_set_taskbar_progress_state**\ (\ state\: :ref:`ProgressState<enum_DisplayServer_ProgressState>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_taskbar_progress_state>`
 
-Sets the type and state of the progress bar on the taskbar/dock icon of the window specified by ``window_id``. See :ref:`ProgressState<enum_DisplayServer_ProgressState>` for possible values and how each mode behaves.
+Устанавливает тип и состояние индикатора выполнения на значке панели задач/док-панели окна, указанного параметром ``window_id``. См. :ref:`ProgressState<enum_DisplayServer_ProgressState>` для получения информации о возможных значениях и поведении каждого режима.
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **Примечание:** Этот метод реализован только в Windows и macOS.
 
-\ **Note:** On macOS, the progress bar is displayed only for the main window.
+\ **Примечание:** В macOS индикатор выполнения отображается только для главного окна.
 
 .. rst-class:: classref-item-separator
 
@@ -7481,13 +7481,13 @@ Sets the type and state of the progress bar on the taskbar/dock icon of the wind
 
 |void| **window_set_taskbar_progress_value**\ (\ value\: :ref:`float<class_float>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_taskbar_progress_value>`
 
-Creates a progress bar on the taskbar/dock icon of the window specified by ``window_id`` if it does not exist, sets the progress of the icon.
+Создает индикатор выполнения (progress bar) на значке панели задач/док-панели окна, указанного параметром ``window_id``, если он отсутствует, и устанавливает прогресс отображения значка.
 
-\ ``value`` acts as a relative percentage value, ranges from ``0.0`` (lowest) to ``1.0`` (highest).
+Параметр ``value`` представляет собой относительное процентное значение, диапазон от ``0.0`` (минимальное) до ``1.0`` (максимальное).
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **Примечание:** Этот метод реализован только в Windows и macOS.
 
-\ **Note:** On macOS, the progress bar is displayed only for the main window.
+\ **Примечание:** В macOS индикатор выполнения отображается только для главного окна.
 
 .. rst-class:: classref-item-separator
 

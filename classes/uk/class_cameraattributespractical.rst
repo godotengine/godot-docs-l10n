@@ -14,13 +14,13 @@ CameraAttributesPractical
 Опис
 --------
 
-Controls camera-specific attributes such as auto-exposure, depth of field, and exposure override.
+Керує атрибутами, характерними для камери, такими як автоматична експозиція, глибина різкості та ручне налаштування експозиції.
 
-When used in a :ref:`WorldEnvironment<class_WorldEnvironment>` it provides default settings for exposure, auto-exposure, and depth of field that will be used by all cameras without their own :ref:`CameraAttributes<class_CameraAttributes>`, including the editor camera. When used in a :ref:`Camera3D<class_Camera3D>` it will override any :ref:`CameraAttributes<class_CameraAttributes>` set in the :ref:`WorldEnvironment<class_WorldEnvironment>`. When used in :ref:`VoxelGI<class_VoxelGI>` or :ref:`LightmapGI<class_LightmapGI>`, only the exposure settings will be used.
+При використанні в :ref:`WorldEnvironment<class_WorldEnvironment>` він надає стандартні налаштування експозиції, автоматичної експозиції та глибини різкості, які будуть використовуватися всіма камерами, що не мають власних :ref:`CameraAttributes<class_CameraAttributes>`, включаючи камеру редактора. При використанні в :ref:`Camera3D<class_Camera3D>` він замінить будь-які :ref:`CameraAttributes<class_CameraAttributes>`, встановлені в :ref:`WorldEnvironment<class_WorldEnvironment>`. При використанні в :ref:`VoxelGI<class_VoxelGI>` або :ref:`LightmapGI<class_LightmapGI>` будуть використовуватися лише налаштування експозиції.
 
-\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Примітка:** Розмиття глибини різкості підтримується лише в методах рендерингу Forward+ та Mobile, а не в Compatibility.
 
-\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **Примітка:** Автоекспозиція підтримується лише в методі рендерингу Forward+, а не в Mobile або Compatibility.
 
 .. rst-class:: classref-reftable-group
 

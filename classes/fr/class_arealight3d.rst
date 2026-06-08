@@ -7,7 +7,7 @@ AreaLight3D
 
 **Hérite de :** :ref:`Light3D<class_Light3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-An area light, such as a neon light tube or a screen.
+Une lumière de zone, comme un tube de néon ou un écran.
 
 .. rst-class:: classref-introduction-group
 
@@ -21,6 +21,8 @@ Light is emitted in the -Z direction of the node's global basis. For an unrotate
 Area lights can cast soft shadows using PCSS, which you can control by tweaking the size parameter. The shadow map is drawn from the center of the light.
 
 \ **Note:** Area lights have limited support in the Mobile and Compatibility renderers. In the Mobile renderer, the size of the penumbra doesn't vary as it should with PCSS. In Compatibility, area lights cannot cast shadows.
+
+\ **Performance:** Area lights are more demanding on the GPU compared to omni and spot lights. In Forward+, there is an additional GPU cost on *all* rendered objects as soon as one area light is present in the view frustum (due to the nature of clustered lighting). Consider using them only for cinematics or when targeting high-end devices.
 
 .. rst-class:: classref-reftable-group
 
@@ -66,13 +68,13 @@ Descriptions des propriétés
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-Controls the distance attenuation function for this area light.
+Contrôle la fonction d'atténuation de distance pour les lumières de zone.
 
-A value of ``0.0`` will maintain a constant brightness through most of the range, but will smoothly attenuate the light at the edge of the range. Use a value of ``2.0`` for physically accurate lights as it results in the proper inverse square attenuation.
+Une valeur de ``0.0`` maintiendra une luminosité constante à travers la plupart de la plage, mais atténuera doucement la lumière au bord de l'intervalle. Utilisez une valeur de ``2.0`` pour des lumières physiquement précises, car cela entraîne une atténuation carrée inverse appropriée.
 
-\ **Note:** Setting attenuation to ``2.0`` or higher may result in distant objects receiving minimal light, even when within range. For example, with a range of ``4096``, an object at ``100`` units is attenuated by a factor of ``0.0001``. With a default brightness of ``1``, the light would not be visible at that distance.
+\ **Note :** Définir l'atténuation à ``2.0`` ou plus peut résulter en des objets distants recevant une lumière minimale, même dans l'intervalle. Par exemple, avec un intervalle de ``4096``, un objet à ``100`` unités est atténué par un facteur de ``0.0001``. Avec une luminosité par défaut de ``1``, la lumière ne serait pas visible à cette distance.
 
-\ **Note:** Using negative values or values higher than ``10.0`` may lead to unexpected results.
+\ **Note :** L'utilisation de valeurs négatives ou supérieures à ``10.0`` peut entraîner des résultats inattendus.
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +91,7 @@ A value of ``0.0`` will maintain a constant brightness through most of the range
 - |void| **set_area_normalize_energy**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_area_normalizing_energy**\ (\ )
 
-Defines whether the energy is normalized (divided) by the surface area of the light. If set to ``true``, changing the size does not affect the total energy output, and does not dramatically alter the brightness of the scene.
+Définit si l'énergie est normalisée (divisée) par la zone de surface de la lumière. Si ajustée à ``vrai``, la modification de la taille n'affecte pas l'énergie totale émise, et n'altère pas fortement la luminosité de la scène.
 
 .. rst-class:: classref-item-separator
 
@@ -106,7 +108,7 @@ Defines whether the energy is normalized (divided) by the surface area of the li
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The range of the area in meters. This determines the maximum distance from any point on the area at which the area can still emit light.
+L'intervalle de zone est en mètres. Ceci détermine la distante maximale de n'importe quel point de la zone dans laquelle elle peut continuer d'émettre de la lumière.
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +125,7 @@ The range of the area in meters. This determines the maximum distance from any p
 - |void| **set_area_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_area_size**\ (\ )
 
-The extents (width and height) of the area in meters.
+L'étendue (largeur et hauteur) de la zone est en mètres.
 
 .. rst-class:: classref-item-separator
 
@@ -140,11 +142,11 @@ The extents (width and height) of the area in meters.
 - |void| **set_area_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_area_texture**\ (\ )
 
-An optional texture to use as a light source. Changing the texture at runtime might impact performance, as it needs to be drawn to the area light atlas with filtered mipmaps.
+Une texture optionnelle à utiliser comme source lumineuse. La modification de la texture en exécution peut impacter la performance, comme elle doit être dessinée sur la carte de la lumière avec des mipmaps filtrés.
 
-If no texture is assigned, the area light emits uniform light across its surface.
+Si aucune texture n'est attribuée, la lumière de zone émet une lumière uniforme au travers sa surface.
 
-\ **Note:** Area light textures are only supported in the Forward+ and Mobile rendering methods, not Compatibility. To reduce the performance impact of switching textures at runtime, make sure each dimension of an area texture is either a multiple of 128 pixels, or a power of two. This removes the need for a scaling pass, which slows down texture changes. The textures don't necessarily have to be square to be optimal. Examples of optimal texture sizes include 32x64, 128x128, and 256x384.
+\ **Note :** Les textures de la lumière de zone ne sont supportées que dans les méthodes pour les rendus Forward+ et Mobile, pas pour Compatibilité. Afin de réduire l'impact sur la performance sur la bascule de texture en exécution, assurez-vous que chaque dimension de la texture de zone est un multiple de 128 pixels, ou une puissance de deux. Cela évite le besoin de transmettre une échelle, ce qui ralentit les changement de texture. Les textures n'ont pas besoin d'être nécessairement carrées pour être idéales. Les exemples de tailles de textures idéales incluent 32x64, 128x128 et 256x384.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

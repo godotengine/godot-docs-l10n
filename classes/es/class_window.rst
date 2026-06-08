@@ -25,7 +25,7 @@ En tiempo de ejecución, las **Window**\ s no se cerrarán automáticamente cuan
 Tutoriales
 --------------------
 
-- :doc:`HDR output <../tutorials/rendering/hdr_output>`
+- :doc:`Salida HDR <../tutorials/rendering/hdr_output>`
 
 .. rst-class:: classref-reftable-group
 

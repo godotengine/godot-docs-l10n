@@ -160,7 +160,7 @@ Il fattore di sovracampionamento da usare. I valori più elevati risultano una m
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-The pitch scale to use. ``1.0`` is the default pitch and plays sounds unaffected. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` can range from 0 (infinitely low pitch, inaudible) to 16 (16 times higher than the initial pitch).
+La scala del tono da utilizzare. ``1.0`` è il tono predefinito e riproduce i suoni senza alterazioni. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` può variare da 0.0 (tono infinitamente basso, impercettibile) a 16 (16 volte più alto del tono iniziale).
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

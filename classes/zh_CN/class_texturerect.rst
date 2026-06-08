@@ -132,9 +132,9 @@ enum **StretchMode**: :ref:`🔗<enum_TextureRect_StretchMode>`
 
 :ref:`StretchMode<enum_TextureRect_StretchMode>` **STRETCH_TILE** = ``1``
 
-Tile inside the node's bounding rectangle.
+在节点的边界矩形内平铺。
 
-\ **Note:** :ref:`STRETCH_TILE<class_TextureRect_constant_STRETCH_TILE>` mode is not supported for :ref:`texture<class_TextureRect_property_texture>` set to an :ref:`AtlasTexture<class_AtlasTexture>` with non-zero :ref:`AtlasTexture.margin<class_AtlasTexture_property_margin>`.
+\ **注意：**\ 当\ :ref:`texture<class_TextureRect_property_texture>`\ 被设置为\ :ref:`AtlasTexture<class_AtlasTexture>`\ 且其\ :ref:`AtlasTexture.margin<class_AtlasTexture_property_margin>`\ 非零时，不支持\ :ref:`STRETCH_TILE<class_TextureRect_constant_STRETCH_TILE>`\ 模式。
 
 .. _class_TextureRect_constant_STRETCH_KEEP:
 

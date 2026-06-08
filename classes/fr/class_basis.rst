@@ -341,9 +341,9 @@ Construit une **Basis** qui ne représente qu'une rotation, tournant autour de l
 
 :ref:`Basis<class_Basis>` **Basis**\ (\ from\: :ref:`Quaternion<class_Quaternion>`\ )
 
-Construit une **Basis** qui ne représente seulement qu'une rotation d'un :ref:`Quaternion<class_Quaternion>` donné.
+Construit une **Basis** qui ne représente seulement que la rotation d'un :ref:`Quaternion<class_Quaternion>` donné.
 
-\ **Note:** Les quaternions ne stockent *seulement* que des rotations, pas d'échelle. À cause de cela, les conversions de **Basis** vers :ref:`Quaternion<class_Quaternion>` ne peuvent pas toujours être inversées.
+\ **Note :** Les quaternions ne stockent *seulement* que des rotations, pas d'échelle. À cause de cela, les conversions de **Basis** vers :ref:`Quaternion<class_Quaternion>` ne peuvent pas toujours être inversées.
 
 .. rst-class:: classref-item-separator
 

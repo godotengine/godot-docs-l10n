@@ -465,15 +465,15 @@ Restituisce l'area di trascinamento :ref:`Control<class_Control>`. Ad esempio, �
 
 :ref:`Array<class_Array>`\[:ref:`Control<class_Control>`\] **get_drag_area_controls**\ (\ ) :ref:`🔗<class_SplitContainer_method_get_drag_area_controls>`
 
-Returns an :ref:`Array<class_Array>` of the drag area :ref:`Control<class_Control>`\ s. These are the interactable :ref:`Control<class_Control>` nodes between each child. For example, this can be used to add a pre-configured button to a drag area :ref:`Control<class_Control>` so that it rides along with the split bar. Try setting the :ref:`Button<class_Button>` anchors to ``center`` prior to the :ref:`Node.reparent()<class_Node_method_reparent>` call.
+Restituisce un :ref:`Array<class_Array>` dei :ref:`Control<class_Control>` area di trascinamento. Questi sono i nodi :ref:`Control<class_Control>` interattivi tra ciascun elemento figlio. Ad esempio, è possibile spostare un pulsante preconfigurato in un :ref:`Control<class_Control>` area di trascinamento in modo che scorra insieme alla barra di divisione. Prova a impostare gli ancoraggi del :ref:`Button<class_Button>` su ``center`` prima di chiamare :ref:`Node.reparent()<class_Node_method_reparent>`.
 
 ::
 
     $BarnacleButton.reparent($SplitContainer.get_drag_area_controls()[0])
 
-\ **Note:** The drag area :ref:`Control<class_Control>`\ s are drawn over the **SplitContainer**'s children, so :ref:`CanvasItem<class_CanvasItem>` draw objects called from a drag area and children added to it will also appear over the **SplitContainer**'s children. Try setting :ref:`Control.mouse_filter<class_Control_property_mouse_filter>` of custom children to :ref:`Control.MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` to prevent blocking the mouse from dragging if desired.
+\ **Nota:** I :ref:`Control<class_Control>` area di trascinamento sono disegnati sopra i figli di **SplitContainer**, quindi anche gli oggetti di disegno :ref:`CanvasItem<class_CanvasItem>` chiamati da un'area di trascinamento e i figli aggiunti appariranno sui figli di **SplitContainer**. Provare a impostare :ref:`Control.mouse_filter<class_Control_property_mouse_filter>` dei figli personalizzati su :ref:`Control.MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` per evitare di bloccare il trascinamento del mouse, se è desiderato.
 
-\ **Warning:** These are required internal nodes, removing or freeing them may cause a crash.
+\ **Attenzione:** Questi sono nodi interni obbligatori, rimuoverli o liberarli potrebbe causare un arresto anomalo.
 
 .. rst-class:: classref-section-separator
 

@@ -565,7 +565,7 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] **get_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_autowrap_trim_flags>`
 
-Returns the autowrap trim flags for the given ``column``. By default, both :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` and :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>` are enabled.
+返回指定 ``column``\ （列）的自动换行修剪标志。默认情况下，\ :ref:`TextServer.BREAK_TRIM_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_TRIM_START_EDGE_SPACES>`\ （修剪行首空格）和 :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>`\ （修剪行尾空格）这两个标志都是默认开启的。
 
 .. rst-class:: classref-item-separator
 
@@ -1127,7 +1127,7 @@ Returns the autowrap trim flags for the given ``column``. By default, both :ref:
 
 :ref:`bool<class_bool>` **is_accepting_children**\ (\ ) |const| :ref:`🔗<class_TreeItem_method_is_accepting_children>`
 
-Returns ``true`` if this **TreeItem** is allowed to accept children.
+如果这个 **TreeItem** 被允许拥有子节点，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1315,7 +1315,7 @@ Returns ``true`` if this **TreeItem** is allowed to accept children.
 
 |void| **select**\ (\ column\: :ref:`int<class_int>`, set_as_cursor\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_TreeItem_method_select>`
 
-Selects the given ``column``. If ``set_as_cursor`` is ``true``, the :ref:`Tree<class_Tree>`'s cursor will be moved to this item (only matters if :ref:`Tree.select_mode<class_Tree_property_select_mode>` is set to :ref:`Tree.SELECT_MULTI<class_Tree_constant_SELECT_MULTI>`).
+选中给定的 ``column`` 列。如果 ``set_as_cursor`` 为 ``true``\ ，则 :ref:`Tree<class_Tree>` 的光标将移动到此项（仅在 :ref:`Tree.select_mode<class_Tree_property_select_mode>` 设置为 :ref:`Tree.SELECT_MULTI<class_Tree_constant_SELECT_MULTI>` 时有效）。
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ Selects the given ``column``. If ``set_as_cursor`` is ``true``, the :ref:`Tree<c
 
 |void| **set_accept_children**\ (\ allowed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TreeItem_method_set_accept_children>`
 
-Sets **TreeItem**'s ability to accept children.
+设置 **TreeItem** 是否允许拥有子节点。
 
 .. rst-class:: classref-item-separator
 
@@ -1365,7 +1365,7 @@ Sets **TreeItem**'s ability to accept children.
 
 |void| **set_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`, flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\]\ ) :ref:`🔗<class_TreeItem_method_set_autowrap_trim_flags>`
 
-Sets the autowrap trim flags for the given ``column``. These flags control whether leading and trailing spaces are trimmed on wrapped lines. Set to ``0`` to disable all trimming.
+设置给定 ``column`` 的自动换行修剪标志。这些标志控制换行行的首尾空格是否被修剪。设置为 ``0`` 以禁用所有修剪。
 
 .. rst-class:: classref-item-separator
 
@@ -1527,11 +1527,11 @@ Sets the autowrap trim flags for the given ``column``. These flags control wheth
 
 |void| **set_custom_draw_callback**\ (\ column\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_draw_callback>`
 
-Sets the given column's custom draw callback. Use an empty :ref:`Callable<class_Callable>` (``Callable()``) to clear the custom callback. The cell has to be in :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` to use this feature.
+设置指定列的自定义绘制回调函数。如果想清除自定义回调，传入一个空的 :ref:`Callable<class_Callable>`\ （即 ``Callable()``\ ）即可。要使用这个功能，该单元格必须处于 :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>`\ （自定义单元格模式）。
 
-The ``callback`` should accept two arguments: the **TreeItem** that is drawn and its position and size as a :ref:`Rect2<class_Rect2>`.
+其中的 ``callback``\ （回调函数）需要接收两个参数：一个是正在被绘制的 **TreeItem**\ （树节点项），另一个是它的位置和大小（以 :ref:`Rect2<class_Rect2>` 的形式提供）。
 
-To draw custom content over the native style, please use :ref:`Tree.get_custom_drawing_canvas_item()<class_Tree_method_get_custom_drawing_canvas_item>`.
+如果你想在原生样式之上绘制自定义内容，请使用 :ref:`Tree.get_custom_drawing_canvas_item()<class_Tree_method_get_custom_drawing_canvas_item>` 方法。
 
 .. rst-class:: classref-item-separator
 

@@ -230,7 +230,7 @@ Restituisce un array con tutte le enumerazioni della classe ``class`` o i suoi a
 
 :ref:`int<class_int>` **class_get_integer_constant**\ (\ class\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_integer_constant>`
 
-Restituisce il valore della costante intera nominata ``name`` della classe ``class`` o i suoi antenati. Restituisce sempre 0 quando non è stato possibile trovare la costante.
+Restituisce il valore della costante intera denominata ``name`` della classe ``class`` o i suoi antenati. Restituisce sempre 0 quando non è stato possibile trovare la costante.
 
 .. rst-class:: classref-item-separator
 
@@ -242,7 +242,7 @@ Restituisce il valore della costante intera nominata ``name`` della classe ``cla
 
 :ref:`StringName<class_StringName>` **class_get_integer_constant_enum**\ (\ class\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_integer_constant_enum>`
 
-Restituisce l'enumerazione a cui appartiene la costante intera nominata ``name`` della classe ``class`` o i suoi antenati.
+Restituisce l'enumerazione a cui appartiene la costante intera denominata ``name`` della classe ``class`` o i suoi antenati.
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ Restituisce un array con tutti i metodi della classe ``class`` o i suoi antenati
 
 :ref:`Variant<class_Variant>` **class_get_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_property>`
 
-Restituisce il valore della proprietà nominata ``property`` dell'oggetto ``object`` o della sua discendenza.
+Restituisce il valore della proprietà denominata ``property`` dell'oggetto ``object`` o della sua discendenza.
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +304,7 @@ Restituisce il valore della proprietà nominata ``property`` dell'oggetto ``obje
 
 :ref:`Variant<class_Variant>` **class_get_property_default_value**\ (\ class\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_property_default_value>`
 
-Restituisce il valore predefinito della proprietà nominata ``property`` della classe ``class`` o le sue classi antenate.
+Restituisce il valore predefinito della proprietà denominata ``property`` della classe ``class`` o le sue classi antenate.
 
 .. rst-class:: classref-item-separator
 
@@ -316,7 +316,7 @@ Restituisce il valore predefinito della proprietà nominata ``property`` della c
 
 :ref:`StringName<class_StringName>` **class_get_property_getter**\ (\ class\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_ClassDB_method_class_get_property_getter>`
 
-Restituisce il nome del metodo getter della proprietà nominata ``property`` della classe ``class``.
+Restituisce il nome del metodo getter della proprietà denominata ``property`` della classe ``class``.
 
 .. rst-class:: classref-item-separator
 
@@ -340,7 +340,7 @@ Restituisce un array con tutte le proprietà della classe ``class`` o i suoi ant
 
 :ref:`StringName<class_StringName>` **class_get_property_setter**\ (\ class\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_ClassDB_method_class_get_property_setter>`
 
-Restituisce il nome del metodo setter della proprietà nominata ``property`` della classe ``class``.
+Restituisce il nome del metodo setter della proprietà denominata ``property`` della classe ``class``.
 
 .. rst-class:: classref-item-separator
 
@@ -352,7 +352,7 @@ Restituisce il nome del metodo setter della proprietà nominata ``property`` del
 
 :ref:`Dictionary<class_Dictionary>` **class_get_signal**\ (\ class\: :ref:`StringName<class_StringName>`, signal\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_signal>`
 
-Restituisce i dati del segnale nominato ``signal`` della classe ``class`` o i suoi antenati. Il valore restituito è un :ref:`Dictionary<class_Dictionary>` con le seguenti chiavi: ``args``, ``default_args``, ``flags``, ``id``, ``name``, ``return: (class_name, hint, hint_string, name, type, usage)``.
+Restituisce i dati del segnale denominato ``signal`` della classe ``class`` o i suoi antenati. Il valore restituito è un :ref:`Dictionary<class_Dictionary>` con le seguenti chiavi: ``args``, ``default_args``, ``flags``, ``id``, ``name``, ``return: (class_name, hint, hint_string, name, type, usage)``.
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +424,7 @@ Restituisce se la classe ``class`` o uno dei suoi antenati ha un segnale chiamat
 
 :ref:`Error<enum_@GlobalScope_Error>` **class_set_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_set_property>`
 
-Imposta il valore della proprietà nominata ``property`` dell'oggetto ``object`` a ``value``.
+Imposta il valore della proprietà denominata ``property`` dell'oggetto ``object`` a ``value``.
 
 .. rst-class:: classref-item-separator
 
@@ -474,7 +474,7 @@ Restituisce la classe madre della classe con nome ``class``.
 
 :ref:`Variant<class_Variant>` **instantiate**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_instantiate>`
 
-Crea un'istanza della classe nominata ``class``.
+Crea un'istanza della classe denominata ``class``.
 
 .. rst-class:: classref-item-separator
 
@@ -510,7 +510,7 @@ Restituisce se la classe ``class`` (o le sue classi antenate se ``no_inheritance
 
 :ref:`bool<class_bool>` **is_parent_class**\ (\ class\: :ref:`StringName<class_StringName>`, inherits\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_is_parent_class>`
 
-Restituisce se la classe nominata ``inherits`` è un antenato della classe ``class`` o meno.
+Restituisce se la classe denominata ``inherits`` è un antenato della classe ``class`` o meno.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -195,7 +195,7 @@ Array de argumentos de línea de comando adicionales pasados al SCP.
 
 :ref:`String<class_String>` **ssh_remote_deploy/extra_args_ssh** :ref:`🔗<class_EditorExportPlatformLinuxBSD_property_ssh_remote_deploy/extra_args_ssh>`
 
-Array of the additional command line arguments passed to the SSH.
+Array de los argumentos adicionales de la línea de comandos que se pasan a SSH.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ Array of the additional command line arguments passed to the SSH.
 
 :ref:`String<class_String>` **ssh_remote_deploy/host** :ref:`🔗<class_EditorExportPlatformLinuxBSD_property_ssh_remote_deploy/host>`
 
-Remote host SSH user name and address, in ``user@address`` format.
+Nombre de usuario y dirección SSH del host remoto, en formato ``usuario@dirección``.
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ The following variables can be used in the script:
 
 :ref:`bool<class_bool>` **texture_format/etc2_astc** :ref:`🔗<class_EditorExportPlatformLinuxBSD_property_texture_format/etc2_astc>`
 
-If ``true``, project textures are exported in the ETC2/ASTC format.
+Si ``true``, las texturas del proyecto se exportan en formato ETC2/ASTC.
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ If ``true``, project textures are exported in the ETC2/ASTC format.
 
 :ref:`bool<class_bool>` **texture_format/s3tc_bptc** :ref:`🔗<class_EditorExportPlatformLinuxBSD_property_texture_format/s3tc_bptc>`
 
-If ``true``, project textures are exported in the S3TC/BPTC format.
+Si ``true``, las texturas del proyecto se exportan en formato S3TC/BPTC.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

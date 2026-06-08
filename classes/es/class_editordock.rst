@@ -51,7 +51,7 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
 Tutoriales
 --------------------
 
-- :doc:`Making plugins <../tutorials/plugins/editor/making_plugins>`
+- :doc:`Crear plugins <../tutorials/plugins/editor/making_plugins>`
 
 .. rst-class:: classref-reftable-group
 

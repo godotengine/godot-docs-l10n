@@ -287,7 +287,7 @@ enum **EyeVisibility**: :ref:`🔗<enum_OpenXRCompositionLayer_EyeVisibility>`
 
 :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>` **EYE_VISIBILITY_BOTH** = ``0``
 
-The layer is visible to both the left and right eyes.
+Il livello è visibile a entrambi gli occhi sinistro e destro.
 
 .. _class_OpenXRCompositionLayer_constant_EYE_VISIBILITY_LEFT:
 
@@ -295,7 +295,7 @@ The layer is visible to both the left and right eyes.
 
 :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>` **EYE_VISIBILITY_LEFT** = ``1``
 
-The layer is visible only to the left eye.
+Il livello è visibile solo all'occhio sinistro.
 
 .. _class_OpenXRCompositionLayer_constant_EYE_VISIBILITY_RIGHT:
 
@@ -303,7 +303,7 @@ The layer is visible only to the left eye.
 
 :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>` **EYE_VISIBILITY_RIGHT** = ``2``
 
-The layer is visible only to the right eye.
+Il livello è visibile solo all'occhio destro.
 
 .. rst-class:: classref-section-separator
 
@@ -361,7 +361,7 @@ La dimensione della superficie Android da creare se :ref:`use_android_surface<cl
 - |void| **set_enable_hole_punch**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_hole_punch**\ (\ )
 
-Abilita una tecnica chiamata "hole punching", che consente di posizionare il livello di composizione dietro il livello di proiezione principale (ad esempio impostando :ref:`sort_order<class_OpenXRCompositionLayer_property_sort_order>` su un valore negativo) mentre "perfora un buco" attraverso tutto ciò che è stato renderizzato da Godot in modo che il livello sia ancora visibile. 
+Abilita una tecnica chiamata perforazione ("hole punching"), che consente di posizionare il livello di composizione dietro il livello di proiezione principale (ad esempio impostando :ref:`sort_order<class_OpenXRCompositionLayer_property_sort_order>` su un valore negativo) mentre "perfora un buco" attraverso tutto ciò che è stato renderizzato da Godot in modo che il livello sia ancora visibile.
 
 Ciò può essere utilizzato per creare l'illusione che il livello di composizione esista nello stesso spazio 3D di tutto ciò che è stato renderizzato da Godot, consentendo agli oggetti di apparire come se passassero dietro o davanti al livello di composizione.
 
@@ -380,9 +380,9 @@ Ciò può essere utilizzato per creare l'illusione che il livello di composizion
 - |void| **set_eye_visibility**\ (\ value\: :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>`\ )
 - :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>` **get_eye_visibility**\ (\ )
 
-The eye(s) the composition layer is visible to.
+L'occhio (o gli occhi) a cui è visibile il livello di composizione.
 
-\ **Note:** Not all composition layer types or runtimes support restricting visibility to a single eye.
+\ **Nota:** Non tutti i tipi di livelli di composizione o runtime supportano limitare la visibilità a un singolo occhio.
 
 .. rst-class:: classref-item-separator
 

@@ -459,9 +459,9 @@ DirAccess
 
 :ref:`String<class_String>` **get_drive_label**\ (\ idx\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_drive_label>`
 
-On Windows, returns the label of the drive (partition) passed as an argument.
+在 Windows 系统上，返回作为参数传入的驱动器（分区）的标签。
 
-On other platforms, or if the requested drive does not exist, returns an empty String.
+在其他平台上，或者如果请求的驱动器不存在，则返回一个空字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -473,15 +473,15 @@ On other platforms, or if the requested drive does not exist, returns an empty S
 
 :ref:`String<class_String>` **get_drive_name**\ (\ idx\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_drive_name>`
 
-On Windows, returns the name of the drive (partition) passed as an argument (e.g. ``C:``).
+在 Windows 上，返回作为参数传入的驱动器（分区）的名称（例如 ``C:``\ ）。
 
-On macOS, returns the path to the mounted volume passed as an argument.
+在 macOS 上，返回作为参数传入的已挂载卷的路径。
 
-On Linux, returns the path to the mounted volume or GTK 3 bookmark passed as an argument.
+在 Linux 上，返回作为参数传入的已挂载卷或 GTK 3 书签的路径。
 
-On Android (API level 30+), returns the path to the mounted volume as an argument.
+在 Android（API 30+）上，以参数形式返回已挂载卷的路径。
 
-On other platforms, or if the requested drive does not exist, returns an empty String.
+在其他平台上，或者如果请求的驱动器不存在，则返回一个空字符串。
 
 .. rst-class:: classref-item-separator
 

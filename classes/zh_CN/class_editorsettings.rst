@@ -1104,7 +1104,7 @@ EditorSettings
 
 :ref:`Dictionary<class_Dictionary>` **asset_store/available_urls** :ref:`🔗<class_EditorSettings_property_asset_store/available_urls>`
 
-A list of the available URLs that can be chosen in the Asset Store to fetch asset data. With the key being the name, and the value being the URL.
+一个包含所有可用 URL 的列表，这些 URL 可在 Asset Store（资源商店）中被选中，用来获取资源数据。其中，键（key）是名称，值（value）是对应的 URL 地址。
 
 .. rst-class:: classref-item-separator
 
@@ -1116,7 +1116,7 @@ A list of the available URLs that can be chosen in the Asset Store to fetch asse
 
 :ref:`bool<class_bool>` **asset_store/use_threads** :ref:`🔗<class_EditorSettings_property_asset_store/use_threads>`
 
-If ``true``, the Asset Store uses multiple threads for its HTTP requests. This prevents the Asset Store from blocking the main thread for every loaded asset.
+如果设为 ``true``\ ，资产商店在发送 HTTP 请求时会使用多个线程。这样可以防止资产商店在加载每一个资产时阻塞主线程。
 
 .. rst-class:: classref-item-separator
 
@@ -1256,7 +1256,7 @@ If ``true``, the Asset Store uses multiple threads for its HTTP requests. This p
 
 :ref:`bool<class_bool>` **docks/filesystem/ask_before_moving_files** :ref:`🔗<class_EditorSettings_property_docks/filesystem/ask_before_moving_files>`
 
-If ``true``, displays a confirmation dialog when moving or duplicating items in the FileSystem dock. This dialog can also be bypassed by holding :kbd:`Shift`.
+如果设为 ``true``\ ，当你在文件系统（FileSystem）面板中移动或复制项目（文件或文件夹）时，会弹出一个确认对话框。不过，你也可以通过按住 :kbd:`Shift` 键来跳过这个对话框。
 
 .. rst-class:: classref-item-separator
 
@@ -1268,7 +1268,7 @@ If ``true``, displays a confirmation dialog when moving or duplicating items in 
 
 :ref:`bool<class_bool>` **docks/filesystem/automatically_open_created_scripts** :ref:`🔗<class_EditorSettings_property_docks/filesystem/automatically_open_created_scripts>`
 
-If ``true``, scripts created in FileSystem dock will be automatically edited.
+如果设为 ``true``\ ，在【文件系统】面板（FileSystem dock）中创建的脚本将会被自动打开并进入编辑状态。
 
 .. rst-class:: classref-item-separator
 
@@ -1548,7 +1548,7 @@ If ``true``, scripts created in FileSystem dock will be automatically edited.
 
 :ref:`Color<class_Color>` **editors/2d/locked_selection_rectangle_color** :ref:`🔗<class_EditorSettings_property_editors/2d/locked_selection_rectangle_color>`
 
-The color to use for the selection rectangle that surrounds selected locked nodes in the 2D editor viewport.
+在 2D 编辑器视口中，用来绘制‘被选中的已锁定节点’周围那个选框的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -1572,7 +1572,7 @@ The color to use for the selection rectangle that surrounds selected locked node
 
 :ref:`Color<class_Color>` **editors/2d/selection_rectangle_color** :ref:`🔗<class_EditorSettings_property_editors/2d/selection_rectangle_color>`
 
-The color to use for the selection rectangle outlines that surrounds selected nodes in the 2D editor viewport.
+在 2D 编辑器视口中，用来绘制包围‘被选中节点’的选框轮廓的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -1632,9 +1632,9 @@ The color to use for the selection rectangle outlines that surrounds selected no
 
 :ref:`Color<class_Color>` **editors/3d/active_selection_box_color** :ref:`🔗<class_EditorSettings_property_editors/3d/active_selection_box_color>`
 
-The color to use for the active selection box that surrounds selected nodes in the 3D editor viewport.
+在 3D 编辑器视口中，用来绘制包围‘当前激活选中项’的选框颜色。
 
-\ **Note:** The term "active" indicates that this object is the primary selection used as the basis for certain operations. This is the last selected :ref:`Node3D<class_Node3D>`, which can be reordered with :kbd:`Shift + Left mouse button`.
+\ **注意：** 这里的“激活（active）”一词，表示该对象是当前操作的主要选中目标。它指的是你最后选中的那个 :ref:`Node3D<class_Node3D>` 节点，你可以通过按住 :kbd:`Shift + Left mouse button` 来切换/调整这个激活顺序。
 
 .. rst-class:: classref-item-separator
 
@@ -1724,7 +1724,7 @@ The color to use for the active selection box that surrounds selected nodes in t
 
 :ref:`bool<class_bool>` **editors/3d/freelook/freelook_invert_y_axis** :ref:`🔗<class_EditorSettings_property_editors/3d/freelook/freelook_invert_y_axis>`
 
-If ``true``, invert the vertical mouse axis when using freelook mode in the 3D editor.
+如果设为 ``true``\ ，在 3D 编辑器中使用自由观察（freelook）模式时，将反转垂直（上下）方向的鼠标移动轴。
 
 .. rst-class:: classref-item-separator
 
@@ -1926,7 +1926,7 @@ If ``true``, invert the vertical mouse axis when using freelook mode in the 3D e
 
 :ref:`bool<class_bool>` **editors/3d/navigation/invert_y_axis** :ref:`🔗<class_EditorSettings_property_editors/3d/navigation/invert_y_axis>`
 
-If ``true``, invert the vertical mouse axis when panning or orbiting in the 3D editor.
+如果设为 ``true``\ ，在 3D 编辑器中进行平移（panning）或环绕（orbiting）操作时，将反转垂直（上下）方向的鼠标移动轴。
 
 .. rst-class:: classref-item-separator
 
@@ -2156,7 +2156,7 @@ If ``true``, invert the vertical mouse axis when panning or orbiting in the 3D e
 
 :ref:`Color<class_Color>` **editors/3d/selection_box_color** :ref:`🔗<class_EditorSettings_property_editors/3d/selection_box_color>`
 
-The color to use for the selection box that surrounds selected nodes in the 3D editor viewport.
+在 3D 编辑器视口中，用来绘制包围‘被选中节点’的选框颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -2180,7 +2180,7 @@ The color to use for the selection box that surrounds selected nodes in the 3D e
 
 :ref:`float<class_float>` **editors/3d/view_plane_rotation_gizmo_scale** :ref:`🔗<class_EditorSettings_property_editors/3d/view_plane_rotation_gizmo_scale>`
 
-The scale of the outer circle of the rotation gizmo as view plane rotation in the 3D editor. If set to ``2.0``, the outer circle has twice the radius of the XYZ rotation gizmo sphere.
+3D 编辑器中，旋转 Gizmo 外圈相对于视图平面旋转的缩放比例。如果设为 ``2.0``\ ，那么外圈的半径将是 XYZ 旋转 Gizmo 球体半径的两倍。
 
 .. rst-class:: classref-item-separator
 
@@ -2564,7 +2564,7 @@ CSG 节点（例如 :ref:`CSGShape3D<class_CSGShape3D>` 和 :ref:`CSGBox3D<class
 
 :ref:`bool<class_bool>` **editors/3d_gizmos/gizmo_settings/show_collision_shapes_only_when_selected** :ref:`🔗<class_EditorSettings_property_editors/3d_gizmos/gizmo_settings/show_collision_shapes_only_when_selected>`
 
-If ``true``, collision shapes in the 3D editor are visible only when selected. If ``false``, collision shapes are always visible.
+如果设置为 ``true``\ ，3D 编辑器里的碰撞体（collision shapes）只有在被选中时才会显示出来；如果设置为 ``false``\ ，碰撞体则会一直保持可见状态。
 
 .. rst-class:: classref-item-separator
 
@@ -2702,7 +2702,7 @@ If ``true``, collision shapes in the 3D editor are visible only when selected. I
 
 :ref:`Color<class_Color>` **editors/audio_buses/active_max_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/active_max_db_color>`
 
-The color at the top of the VU meter gradient when it is active.
+当 VU 表处于活动状态时，其渐变效果顶部的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -2714,7 +2714,7 @@ The color at the top of the VU meter gradient when it is active.
 
 :ref:`Color<class_Color>` **editors/audio_buses/active_min_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/active_min_db_color>`
 
-The color at the bottom of the VU meter gradient when it is active.
+当 VU 表处于活动状态时，其渐变效果底部的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -2726,7 +2726,7 @@ The color at the bottom of the VU meter gradient when it is active.
 
 :ref:`Color<class_Color>` **editors/audio_buses/active_normalized_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/active_normalized_db_color>`
 
-The color at 0 dB of the VU meter gradient when it is active.
+当 VU 表处于活动状态时，其在 0 dB（分贝） 处的渐变颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -2738,7 +2738,7 @@ The color at 0 dB of the VU meter gradient when it is active.
 
 :ref:`Color<class_Color>` **editors/audio_buses/inactive_max_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/inactive_max_db_color>`
 
-The color at the top of the VU meter gradient when it is inactive.
+当 VU 表处于非活动（静止）状态时，其渐变效果顶部的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -2750,7 +2750,7 @@ The color at the top of the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/inactive_min_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/inactive_min_db_color>`
 
-The color at the bottom of the VU meter gradient when it is inactive.
+当 VU 表处于非活动（静止）状态时，其渐变效果底部的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -2762,7 +2762,7 @@ The color at the bottom of the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/inactive_normalized_db_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/inactive_normalized_db_color>`
 
-The color at 0 dB of the VU meter gradient when it is inactive.
+当 VU 表处于非活动（静止）状态时，其在 0 dB 处的渐变颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -2774,7 +2774,7 @@ The color at 0 dB of the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/tint_over_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/tint_over_color>`
 
-The multiplier color for the VU meter gradient when it is inactive.
+当 VU 表处于非活动（静止）状态时，其渐变中倍增器（Multiplier）部分的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -2786,7 +2786,7 @@ The multiplier color for the VU meter gradient when it is inactive.
 
 :ref:`Color<class_Color>` **editors/audio_buses/tint_under_color** :ref:`🔗<class_EditorSettings_property_editors/audio_buses/tint_under_color>`
 
-The multiplier color for the VU meter gradient where audio is not reaching.
+VU 表渐变中，音频信号未达到区域的倍增器（Multiplier）颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -3530,11 +3530,11 @@ SSH 可执行文件的路径（用于向桌面平台进行远程部署）。如�
 
 :ref:`String<class_String>` **filesystem/import/blender/blender_path** :ref:`🔗<class_EditorSettings_property_filesystem/import/blender/blender_path>`
 
-The path to the Blender executable used for converting the Blender 3D scene files ``.blend`` to glTF 2.0 format during import. Blender 3.0 or later is required.
+这里需要填写 Blender 可执行文件的路径，用于在导入时将 Blender 3D 场景文件（\ ``.blend``\ ）转换为 glTF 2.0 格式。系统要求安装 Blender 3.0 或更高版本。
 
-To enable this feature for your specific project, use :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
+如果想为你的特定项目启用此功能，请使用 :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>` 选项。
 
-If this setting is empty, Blender's default paths will be detected and used automatically if present in this order:
+如果这项设置为空，系统会自动检测并使用 Blender 的默认路径（如果存在的话），检测顺序如下：
 
 \ **Windows:**\ 
 
@@ -3807,7 +3807,7 @@ Blender 进程的最大空闲运行时间（单位为秒）。
 
 :ref:`bool<class_bool>` **interface/accessibility/property_descriptions** :ref:`🔗<class_EditorSettings_property_interface/accessibility/property_descriptions>`
 
-If ``true``, editor inspector uses property documentation as an accessible description of the property.
+如果设为 ``true``\ ，编辑器检视器（Inspector）会将属性文档作为该属性的无障碍描述来使用。
 
 .. rst-class:: classref-item-separator
 
@@ -3839,11 +3839,11 @@ If ``true``, editor inspector uses property documentation as an accessible descr
 
 :ref:`bool<class_bool>` **interface/editor/appearance/collapse_main_menu** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/collapse_main_menu>`
 
-If ``true``, the main menu collapses into a :ref:`MenuButton<class_MenuButton>`.
+如果设为 ``true``\ ，主菜单会折叠成一个 :ref:`MenuButton<class_MenuButton>`\ （菜单按钮）。
 
-\ **Note:** This setting is only applicable on macOS when :ref:`interface/editor/appearance/use_embedded_menu<class_EditorSettings_property_interface/editor/appearance/use_embedded_menu>` is ``true``.
+\ **注意：** 此设置仅在 macOS 系统上，且 :ref:`interface/editor/appearance/use_embedded_menu<class_EditorSettings_property_interface/editor/appearance/use_embedded_menu>` 选项为 ``true`` 时才适用。
 
-\ **Note:** Defaults to ``true`` on the Android editor.
+\ **注意：** 在 Android 编辑器上，该选项默认为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3855,9 +3855,9 @@ If ``true``, the main menu collapses into a :ref:`MenuButton<class_MenuButton>`.
 
 :ref:`float<class_float>` **interface/editor/appearance/custom_display_scale** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`
 
-The custom editor scale factor to use. This can be used for displays with very high DPI where a scale factor of 200% is not sufficient.
+这里设置的是自定义的编辑器缩放比例。它主要是为了应对那些 DPI（像素密度）极高的显示器——在这些屏幕上，即便使用 200% 的常规缩放比例，界面元素可能还是显得太小。
 
-\ **Note:** Only effective if :ref:`interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` is set to **Custom**.
+\ **注意：** 只有当 :ref:`interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>`\ （显示缩放）这个选项被设置为 **Custom**\ （自定义）时，此项设置才会生效。
 
 .. rst-class:: classref-item-separator
 
@@ -3869,11 +3869,11 @@ The custom editor scale factor to use. This can be used for displays with very h
 
 :ref:`int<class_int>` **interface/editor/appearance/display_scale** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/display_scale>`
 
-The display scale factor to use for the editor interface. Higher values are more suited to hiDPI/Retina displays.
+用于编辑器界面的显示缩放比例。数值越高，越适合高 DPI（hiDPI）或 Retina 显示屏。
 
-If set to **Auto**, the editor scale is automatically determined based on the screen resolution and reported display DPI. This heuristic is not always ideal, which means you can get better results by setting the editor scale manually.
+如果设置为 **Auto**\ （自动），编辑器会根据屏幕分辨率和系统报告的显示 DPI 自动计算缩放比例。不过这种自动推算的方法并不总是最理想的，所以如果你手动设置编辑器缩放比例，往往能获得更好的显示效果。
 
-If set to **Custom**, the scaling value in :ref:`interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>` will be used.
+如果设置为 **Custom**\ （自定义），则会采用 :ref:`interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>` 这个选项里设定的具体缩放数值。
 
 .. rst-class:: classref-item-separator
 
@@ -3923,7 +3923,7 @@ If set to **Custom**, the scaling value in :ref:`interface/editor/appearance/cus
 
 :ref:`bool<class_bool>` **interface/editor/appearance/show_renderer_selector** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/show_renderer_selector>`
 
-If ``true``, a renderer selector that can be used to change the :ref:`ProjectSettings.rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>` project setting will be shown in the top right of the main editor window.
+如果设为 ``true``\ ，主编辑器窗口的右上角会显示一个渲染器选择器，可以用它来更改 :ref:`ProjectSettings.rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>` 项目设置。
 
 .. rst-class:: classref-item-separator
 
@@ -3935,15 +3935,15 @@ If ``true``, a renderer selector that can be used to change the :ref:`ProjectSet
 
 :ref:`int<class_int>` **interface/editor/appearance/show_update_spinner** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/show_update_spinner>`
 
-If enabled, displays an icon in the top-right corner of the editor that spins when the editor redraws a frame. This can be used to diagnose situations where the engine is constantly redrawing, which should be avoided as this increases CPU and GPU utilization for no good reason. To further troubleshoot these situations, start the editor with the ``--debug-canvas-item-redraw`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
+如果启用此选项，编辑器右上角会显示一个小图标。每当编辑器重新绘制一帧画面时，这个图标就会旋转。这个功能可以用来诊断引擎是否在“不停地重绘”——这种情况应该尽量避免，因为它会毫无必要地增加 CPU 和 GPU 的占用率。为了进一步排查这类问题，你可以使用 ``--debug-canvas-item-redraw`` `命令行参数 <$ DOCS_URL/tutorials/editor/command_line_tutorial.html>`__ 来启动编辑器。
 
-Consider enabling this if you are developing editor plugins to ensure they only make the editor redraw when required.
+如果你正在开发编辑器插件，建议开启这个选项，以确保你的插件只在必要时才触发编辑器重绘。
 
-The default **Auto** value will only enable this if the editor was compiled with the ``dev_build=yes`` SCons option (the default is ``dev_build=no``).
+默认的 **Auto**\ （自动）值，只会在编辑器使用 ``dev_build=yes`` 这个 SCons 选项进行编译时才会启用该功能（而 SCons 的默认值是 ``dev_build=no``\ ）。
 
-\ **Note:** If :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` is ``true``, the spinner icon displays in red.
+\ **注意：** 如果 :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>`\ （持续更新）选项被设为 ``true``\ ，这个旋转的小图标会显示为红色。
 
-\ **Note:** If the editor was started with the ``--debug-canvas-item-redraw`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`, the update spinner will *never* display regardless of this setting's value. This is to avoid confusion with what would cause redrawing in real world scenarios.
+\ **注意：** 如果编辑器是使用 ``--debug-canvas-item-redraw`` `命令行参数 <$ DOCS_URL/tutorials/editor/command_line_tutorial.html>`__ 启动的，那么无论这个设置项的值是什么，更新旋转图标都 *绝对不会* 显示。这是为了避免与真实场景中导致重绘的原因产生混淆。
 
 .. rst-class:: classref-item-separator
 
@@ -4085,9 +4085,9 @@ The default **Auto** value will only enable this if the editor was compiled with
 
 :ref:`bool<class_bool>` **interface/editor/display/update_continuously** :ref:`🔗<class_EditorSettings_property_interface/editor/display/update_continuously>`
 
-If ``true``, redraws the editor every frame even if nothing has changed on screen. When this setting is enabled, the update spinner displays in red (see :ref:`interface/editor/appearance/show_update_spinner<class_EditorSettings_property_interface/editor/appearance/show_update_spinner>`).
+如果设为 ``true``\ ，即使屏幕上没有任何变化，编辑器也会在每一帧强制进行重绘。当启用此设置时，更新旋转图标（也就是刚才提到的那个小风扇）会显示为红色（详见 :ref:`interface/editor/appearance/show_update_spinner<class_EditorSettings_property_interface/editor/appearance/show_update_spinner>`\ ）。
 
-\ **Warning:** This greatly increases CPU and GPU utilization, leading to increased power usage. This should only be enabled for troubleshooting purposes.
+\ **警告：** 这会极大增加 CPU 和 GPU 的占用率，导致耗电量大幅上升。因此，该选项仅应在进行故障排查时启用。
 
 .. rst-class:: classref-item-separator
 
@@ -4405,9 +4405,9 @@ FreeType 的字体抗锯齿模式，用于渲染编辑器字体。大多数字�
 
 :ref:`int<class_int>` **interface/editor/timers/low_processor_mode_sleep_usec** :ref:`🔗<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`
 
-The amount of sleeping between frames in the editor (in microseconds). Higher values will result in lower CPU/GPU usage, which can improve battery life on laptops. However, higher values will result in a less responsive editor. The default value is set to allow for maximum smoothness on monitors up to 144 Hz. See also :ref:`interface/editor/timers/unfocused_low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/unfocused_low_processor_mode_sleep_usec>`.
+编辑器在每一帧之间的休眠时间（单位：微秒）。数值越高，CPU 和 GPU 的占用率就越低，这有助于延长笔记本电脑的电池续航。不过，数值越高也会导致编辑器的响应速度变慢（操作起来会有轻微的迟钝感）。默认值的设定是为了保证在最高 144 Hz 刷新率的显示器上也能拥有最流畅的体验。相关设置还可以参考：\ :ref:`interface/editor/timers/unfocused_low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/unfocused_low_processor_mode_sleep_usec>`\ （该选项控制的是编辑器窗口失去焦点时的休眠时间）。
 
-\ **Note:** This setting is ignored if :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` is ``true``, as enabling that setting disables low-processor mode.
+\ **注意：** 如果 :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>`\ （持续更新）选项被设为 ``true``\ ，此设置将会被忽略。因为开启“持续更新”会直接禁用低功耗模式。
 
 .. rst-class:: classref-item-separator
 
@@ -4419,9 +4419,9 @@ The amount of sleeping between frames in the editor (in microseconds). Higher va
 
 :ref:`int<class_int>` **interface/editor/timers/unfocused_low_processor_mode_sleep_usec** :ref:`🔗<class_EditorSettings_property_interface/editor/timers/unfocused_low_processor_mode_sleep_usec>`
 
-When the editor window is unfocused, the amount of sleeping between frames when the low-processor usage mode is enabled (in microseconds). Higher values will result in lower CPU/GPU usage, which can improve battery life on laptops (in addition to improving the running project's performance if the editor has to redraw continuously). However, higher values will result in a less responsive editor. The default value is set to limit the editor to 10 FPS when the editor window is unfocused. See also :ref:`interface/editor/timers/low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`.
+当编辑器窗口失去焦点（比如你切出去看网页了），并且在启用了“低处理器使用率模式”的情况下，每一帧之间的休眠时间（单位：微秒）。数值越高，CPU 和 GPU 的占用率就越低，这有助于延长笔记本电脑的电池续航（另外，如果编辑器需要持续重绘，开启这个也能提升正在运行的项目的性能）。不过，数值越高也会导致编辑器在后台时的响应速度变慢。默认值的设定，是为了在编辑器窗口失去焦点时，将其帧率限制在 10 FPS。相关设置还可以参考：\ :ref:`interface/editor/timers/low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`\ （该选项控制的是编辑器在前台时的休眠时间）。
 
-\ **Note:** This setting is ignored if :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` is ``true``, as enabling that setting disables low-processor mode.
+\ **注意：** 如果 :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>`\ （持续更新）选项被设为 ``true``\ ，此设置将会被忽略。因为开启“持续更新”会直接禁用低功耗模式。
 
 .. rst-class:: classref-item-separator
 
@@ -4507,15 +4507,15 @@ When the editor window is unfocused, the amount of sleeping between frames when 
 
 :ref:`int<class_int>` **interface/inspector/default_property_name_style** :ref:`🔗<class_EditorSettings_property_interface/inspector/default_property_name_style>`
 
-The default property name style to display in the Inspector dock. This style can be temporarily adjusted in the Inspector dock's menu.
+检视器面板中显示的默认属性命名风格。你也可以在检视器面板的菜单里临时调整这个风格。
 
-- **Raw:** Displays properties in ``snake_case``.
+- **Raw（原始）：** 以 ``snake_case``\ （下划线命名法，例如 node_name）的形式显示属性。
 
-- **Capitalized:** Displays properties capitalized.
+- **Capitalized（首字母大写）：** 将属性名的首字母大写显示（例如 Node Name）。
 
-- **Localized:** Displays the localized string for the current editor language if a translation is available for the given property. If no translation is available, falls back to **Capitalized**.
+- **Localized（本地化）：** 如果当前编辑器语言有对应属性的翻译，就显示翻译后的文本；如果没有可用的翻译，则回退到 **Capitalized（首字母大写）** 模式。
 
-\ **Note:** To display translated setting names in Project Settings and Editor Settings, use :ref:`interface/editor/localization/localize_settings<class_EditorSettings_property_interface/editor/localization/localize_settings>` instead.
+\ **注意：** 如果想在“项目设置”和“编辑器设置”中显示翻译后的设置名称，请改用 :ref:`interface/editor/localization/localize_settings<class_EditorSettings_property_interface/editor/localization/localize_settings>` 这个选项。
 
 .. rst-class:: classref-item-separator
 
@@ -4669,11 +4669,11 @@ The default property name style to display in the Inspector dock. This style can
 
 :ref:`bool<class_bool>` **interface/multi_window/enable** :ref:`🔗<class_EditorSettings_property_interface/multi_window/enable>`
 
-If ``true``, multiple window support in editor is enabled. The following panels can become dedicated windows (i.e. made floating): Docks, Script editor, Shader editor, and Game Workspace.
+如果设为 ``true``\ ，就会启用编辑器的多窗口支持。以下面板可以变成独立的专属窗口（也就是悬浮窗）：停靠面板（Docks）、脚本编辑器、着色器编辑器和游戏工作区。
 
-\ **Note:** When :ref:`interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` is ``true``, the multi window support is always disabled.
+\ **注意：** 如果 :ref:`interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>`\ （单窗口模式）被设为 ``true``\ ，那么多窗口支持会始终处于禁用状态。
 
-\ **Note:** To query whether the editor can use multiple windows in an editor plugin, use :ref:`EditorInterface.is_multi_window_enabled()<class_EditorInterface_method_is_multi_window_enabled>` instead of querying the value of this editor setting.
+\ **注意：** 如果你想在编辑器插件中查询当前是否启用了多窗口，请使用 :ref:`EditorInterface.is_multi_window_enabled()<class_EditorInterface_method_is_multi_window_enabled>` 这个方法，而不是直接去读取这个编辑器设置的值。
 
 .. rst-class:: classref-item-separator
 
@@ -4859,7 +4859,7 @@ If ``true``, multiple window support in editor is enabled. The following panels 
 
 :ref:`float<class_float>` **interface/theme/contrast** :ref:`🔗<class_EditorSettings_property_interface/theme/contrast>`
 
-The contrast factor to use when deriving the editor theme's base color (see :ref:`interface/theme/base_color<class_EditorSettings_property_interface/theme/base_color>`). When using positive values, the derived colors will be *darker* than the base color. This contrast factor can be set to a negative value, which will make the derived colors *brighter* than the base color. Negative contrast rates often look better for light themes.
+用于从编辑器主题的基础色（参见 :ref:`interface/theme/base_color<class_EditorSettings_property_interface/theme/base_color>`\ ）推导其他颜色时的对比度系数。当使用正值时，推导出来的颜色会比基础色\ *更暗*\ 。这个对比度系数也可以设为负值，这样推导出来的颜色就会比基础色\ *更亮*\ 。对于浅色主题来说，使用负的对比度系数通常视觉效果会更好。
 
 .. rst-class:: classref-item-separator
 
@@ -5005,7 +5005,7 @@ The contrast factor to use when deriving the editor theme's base color (see :ref
 
 :ref:`bool<class_bool>` **interface/theme/use_monospace_font_for_editor_symbols** :ref:`🔗<class_EditorSettings_property_interface/theme/use_monospace_font_for_editor_symbols>`
 
-If ``true``, use the monospace font for some labels in the editor that display code symbols, such as signals, properties, and methods.
+如果为 ``true``\ ，则在编辑器中显示代码符号（如信号、属性和方法）的某些标签上使用等宽字体。
 
 .. rst-class:: classref-item-separator
 
@@ -5017,9 +5017,9 @@ If ``true``, use the monospace font for some labels in the editor that display c
 
 :ref:`bool<class_bool>` **interface/theme/use_system_accent_color** :ref:`🔗<class_EditorSettings_property_interface/theme/use_system_accent_color>`
 
-If ``true``, set accent color based on system settings.
+如果设为 ``true``\ ，将根据系统设置来设定强调色。
 
-\ **Note:** This setting is effective on Windows, macOS, Linux, and Android.
+\ **注意：** 此设置在 Windows、macOS、Linux 和 Android 平台上生效。
 
 .. rst-class:: classref-item-separator
 
@@ -5073,9 +5073,9 @@ If ``true``, set accent color based on system settings.
 
 :ref:`bool<class_bool>` **interface/touchscreen/haptic_on_long_press** :ref:`🔗<class_EditorSettings_property_interface/touchscreen/haptic_on_long_press>`
 
-If ``true``, the device will vibrate when a long-press gesture triggers a right-click context menu in the editor.
+如果设为 ``true``\ ，当在编辑器中通过长按手势触发右键菜单时，设备会产生震动反馈。
 
-\ **Note:** Only has an effect on devices with haptic feedback hardware. Defaults to ``true`` on touchscreen devices.
+\ **注意：** 此设置仅对配备了触觉反馈硬件（比如线性马达）的设备生效。在触屏设备上，该选项默认值为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5115,19 +5115,19 @@ If ``true``, the device will vibrate when a long-press gesture triggers a right-
 
 :ref:`int<class_int>` **network/connection/check_for_updates** :ref:`🔗<class_EditorSettings_property_network/connection/check_for_updates>`
 
-Specifies how the engine should check for updates.
+指定引擎应该如何检查更新。
 
-- **Disable Update Checks** will block the engine from checking updates (see also :ref:`network/connection/network_mode<class_EditorSettings_property_network/connection/network_mode>`).
+\ **禁用更新检查（Disable Update Checks）**\ ：会阻止引擎检查任何更新（也可以参考 :ref:`network/connection/network_mode<class_EditorSettings_property_network/connection/network_mode>` 成员）。
 
-- **Auto** (default) will check for newest stable or unstable version, depending on which version are you currently using. Switch to another option if you want to lock in.
+\ **自动（Auto）**\ （默认选项）：会根据你当前使用的版本，自动检查最新的稳定版或预览版（不稳定版）。如果你想锁定检查某个特定类型的版本，可以切换到下面的其他选项。
 
-- **Check Newest Preview** will check for the newest available development snapshot.
+\ **检查最新预览版（Check Newest Preview）**\ ：会检查是否有最新的开发快照版（也就是开发中的测试版）。
 
-- **Check Newest Stable** will check for the newest available stable version.
+\ **检查最新稳定版（Check Newest Stable）**\ ：会检查是否有最新的正式稳定版。
 
-- **Check Newest Patch** will check for the latest available stable version, but only within the same minor version. E.g. if your version is ``4.3.stable``, you will be notified about ``4.3.1.stable``, but not ``4.4.stable``.
+\ **检查最新补丁版（Check Newest Patch）**\ ：会检查最新的稳定版，但仅限于相同的小版本号内。举个例子，如果你当前用的是 ``4.3.stable``\ ，它会提示你有 ``4.3.1.stable`` 可更新，但不会提示你升级到 ``4.4.stable``\ 。
 
-All update modes will ignore builds with different major versions (e.g. Godot 4 -> Godot 5).
+所有的更新检查模式都会忽略大版本号不同的构建（比如不会提示你从 Godot 4 升级到 Godot 5）。
 
 .. rst-class:: classref-item-separator
 
@@ -5139,9 +5139,9 @@ All update modes will ignore builds with different major versions (e.g. Godot 4 
 
 :ref:`int<class_int>` **network/connection/network_mode** :ref:`🔗<class_EditorSettings_property_network/connection/network_mode>`
 
-Determines whether online features, such as the Asset Store or update checks, are enabled in the editor. If this is a privacy concern, disabling these online features prevents the editor from making HTTP requests to the Godot website or third-party platforms hosting assets from the Asset Store.
+决定编辑器是否启用在线功能，比如资源商店（Asset Store）或版本更新检查。如果你比较在意隐私问题，禁用这些在线功能可以阻止编辑器向 Godot 官网，或者托管资源商店内容的第三方平台发送 HTTP 请求。
 
-Editor plugins and tool scripts are recommended to follow this setting. However, Godot can't prevent them from violating this rule.
+建议编辑器的插件和工具脚本也遵循这个设置。不过，Godot 无法强制阻止它们违反这个规则（也就是说，某些第三方插件可能还是会偷偷联网，引擎本身拦不住）。
 
 .. rst-class:: classref-item-separator
 
@@ -5177,9 +5177,9 @@ Editor plugins and tool scripts are recommended to follow this setting. However,
 
 :ref:`String<class_String>` **network/http_proxy/host** :ref:`🔗<class_EditorSettings_property_network/http_proxy/host>`
 
-The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset store and export template downloads). See also :ref:`network/http_proxy/port<class_EditorSettings_property_network/http_proxy/port>`.
+在编辑器中用于连接 HTTP 和 HTTPS 代理的主机地址（主要用于访问资源商店以及下载导出模板）。相关设置还可以参考 :ref:`network/http_proxy/port<class_EditorSettings_property_network/http_proxy/port>`\ （代理端口）。
 
-\ **Note:** Godot currently doesn't automatically use system proxy settings, so you have to enter them manually here if needed.
+\ **注意：** Godot 目前无法自动读取系统的代理设置，所以如果你需要走代理，必须在这里手动输入代理地址。
 
 .. rst-class:: classref-item-separator
 
@@ -5191,9 +5191,9 @@ The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset
 
 :ref:`int<class_int>` **network/http_proxy/port** :ref:`🔗<class_EditorSettings_property_network/http_proxy/port>`
 
-The port number to use to contact the HTTP and HTTPS proxy in the editor (for the asset store and export template downloads). See also :ref:`network/http_proxy/host<class_EditorSettings_property_network/http_proxy/host>`.
+在编辑器中用于连接 HTTP 和 HTTPS 代理的端口号（主要用于访问资源商店以及下载导出模板）。相关设置还可以参考 :ref:`network/http_proxy/host<class_EditorSettings_property_network/http_proxy/host>`\ （代理主机地址）。
 
-\ **Note:** Godot currently doesn't automatically use system proxy settings, so you have to enter them manually here if needed.
+\ **注意：** Godot 目前无法自动读取系统的代理设置，所以如果你需要走代理，必须在这里手动输入端口号。
 
 .. rst-class:: classref-item-separator
 
@@ -5205,18 +5205,18 @@ The port number to use to contact the HTTP and HTTPS proxy in the editor (for th
 
 :ref:`bool<class_bool>` **network/language_server/enable_smart_resolve** :ref:`🔗<class_EditorSettings_property_network/language_server/enable_smart_resolve>`
 
-If ``true`` the language server will try to provide additional results when resolving symbols at the cost of showing wrong results. All symbols in the project are checked and resolved just based on their name, without taking context into account.
+如果为 ``true``\ ，语言服务器在解析符号时会尝试提供额外的结果，但代价是可能会显示错误的结果。项目中的所有符号仅根据其名称进行检查和解析，而不考虑上下文。
 
 ::
 
     func untyped(param):
-        param.print() # Will resolve to the global print method for e.g. hover hints.
+        param.print() # 将解析为全局 print 方法（例如用于悬停提示）。
 
-When using static typing it is recommended to disable this setting, since it will mostly add false positives for typed code.
+当使用静态类型时，建议禁用此设置，因为对于有类型的代码，它大多会产生误报（false positives）。
 
-\ **Note:** This setting also influences how symbols are resolved when using renaming capabilities.
+\ **注意：** 在使用重命名功能时，此设置还会影响符号的解析方式。
 
-\ **Note:** The default value of this setting might change in future versions.
+\ **注意：** 该设置的默认值在未来版本中可能会更改。
 
 .. rst-class:: classref-item-separator
 
@@ -5228,7 +5228,7 @@ When using static typing it is recommended to disable this setting, since it wil
 
 :ref:`int<class_int>` **network/language_server/poll_limit_usec** :ref:`🔗<class_EditorSettings_property_network/language_server/poll_limit_usec>`
 
-The upper limit of time, that the language server spends for IO each poll.
+语言服务器每次轮询 IO 操作所花费时间的上限。
 
 .. rst-class:: classref-item-separator
 
@@ -5240,7 +5240,7 @@ The upper limit of time, that the language server spends for IO each poll.
 
 :ref:`String<class_String>` **network/language_server/remote_host** :ref:`🔗<class_EditorSettings_property_network/language_server/remote_host>`
 
-The host used to listen for language server clients.
+用于监听语言服务器（Language Server）客户端的主机地址。
 
 .. rst-class:: classref-item-separator
 
@@ -5252,9 +5252,9 @@ The host used to listen for language server clients.
 
 :ref:`int<class_int>` **network/language_server/remote_port** :ref:`🔗<class_EditorSettings_property_network/language_server/remote_port>`
 
-The port used to listen for language server clients.
+用于监听语言服务器客户端的端口。
 
-\ **Note:** A port configured with command-line options will take priority over this setting: ``--lsp-port <port>``.
+\ **注意：** 通过命令行选项配置的端口将优先于此设置：\ ``--lsp-port <port>``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5266,9 +5266,9 @@ The port used to listen for language server clients.
 
 :ref:`bool<class_bool>` **network/language_server/show_native_symbols_in_editor** :ref:`🔗<class_EditorSettings_property_network/language_server/show_native_symbols_in_editor>`
 
-The declaration of native symbols can't be resolved to a position in the file system. If ``true`` the language server will instead open the documentation for native symbols in the editor.
+原生符号的声明无法解析到文件系统中的位置。如果为 ``true``\ ，语言服务器将在编辑器中打开原生符号的文档。
 
-\ **Note:** The VSCode plugin adds additional functionality which allows viewing Godot documentation directly in VSCode, so this option is usually not needed in VSCode.
+\ **注意：** VSCode 插件增加了额外的功能，允许直接在 VSCode 中查看 Godot 文档，因此在 VSCode 中通常不需要此选项。
 
 .. rst-class:: classref-item-separator
 
@@ -5280,7 +5280,7 @@ The declaration of native symbols can't be resolved to a position in the file sy
 
 :ref:`bool<class_bool>` **network/language_server/use_thread** :ref:`🔗<class_EditorSettings_property_network/language_server/use_thread>`
 
-If ``true`` the language server will run in a separate thread, if ``false`` it will run on the main thread.
+如果设为 ``true``\ ，语言服务器将在一个独立的线程中运行；如果设为 ``false``\ ，它将在主线程中运行。
 
 .. rst-class:: classref-item-separator
 
@@ -5292,7 +5292,7 @@ If ``true`` the language server will run in a separate thread, if ``false`` it w
 
 :ref:`String<class_String>` **network/tls/editor_tls_certificates** :ref:`🔗<class_EditorSettings_property_network/tls/editor_tls_certificates>`
 
-The TLS certificate bundle to use for HTTP requests made within the editor (e.g. from the Asset Store tab). If left empty, the `included Mozilla certificate bundle <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__ will be used.
+用于编辑器内部发起 HTTP 请求（例如从资源商店标签页访问时）的 TLS 证书包。如果留空，将使用 `内置的 Mozilla 证书包 <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5406,7 +5406,7 @@ The TLS certificate bundle to use for HTTP requests made within the editor (e.g.
 
 :ref:`int<class_int>` **run/output/font_size** :ref:`🔗<class_EditorSettings_property_run/output/font_size>`
 
-The size of the font in the **Output** panel at the bottom of the editor. This setting does not impact the font size of the script editor (see :ref:`interface/editor/fonts/code_font_size<class_EditorSettings_property_interface/editor/fonts/code_font_size>`).
+设置编辑器底部 **输出（Output）** 面板中的字体大小。请注意，此设置不会影响脚本编辑器的字体大小（脚本编辑器的字体大小请参考 :ref:`interface/editor/fonts/code_font_size<class_EditorSettings_property_interface/editor/fonts/code_font_size>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -5572,7 +5572,7 @@ The size of the font in the **Output** panel at the bottom of the editor. This s
 
 :ref:`bool<class_bool>` **text_editor/appearance/drag_and_drop_info/show_drag_and_drop_info** :ref:`🔗<class_EditorSettings_property_text_editor/appearance/drag_and_drop_info/show_drag_and_drop_info>`
 
-If ``true``, shows an info label listing available drop options when dragging an object into the script text editor.
+如果设为 ``true``\ ，当你把某个对象拖拽到脚本编辑器里时，会显示一个信息提示框，列出所有可用的拖放选项。
 
 .. rst-class:: classref-item-separator
 
@@ -5764,7 +5764,7 @@ If ``true``, shows an info label listing available drop options when dragging an
 
 :ref:`int<class_int>` **text_editor/appearance/whitespace/line_spacing** :ref:`🔗<class_EditorSettings_property_text_editor/appearance/whitespace/line_spacing>`
 
-The space to add between lines (in pixels). Greater line spacing can help improve readability at the cost of displaying fewer lines on screen. Negative values allow for even more compact text, but may look broken with certain fonts.
+设置行与行之间增加的间距（以像素为单位）。较大的行距有助于提升阅读体验，但代价是屏幕上能显示的行数会相应减少。负数值可以让文本排版更加紧凑，但在某些字体下可能会导致显示效果异常（比如文字重叠或排版错乱）。
 
 .. rst-class:: classref-item-separator
 

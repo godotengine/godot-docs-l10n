@@ -404,9 +404,9 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 :ref:`Variant<class_Variant>` **line_intersects_line**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, dir_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, dir_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_line_intersects_line>`
 
-Returns the point of intersection between the two lines (``from_a``, ``dir_a``) and (``from_b``, ``dir_b``). Returns a :ref:`Vector2<class_Vector2>`, or ``null`` if the lines are parallel.
+Повертає точку перетину двох прямих (``from_a``, ``dir_a``) та (``from_b``, ``dir_b``). Повертає :ref:`Vector2<class_Vector2>` або ``null``, якщо прямі паралельні.
 
-\ ``from`` and ``dir`` are *not* endpoints of a line segment or ray but the slope (``dir``) and a known point (``from``) on that line. To get the intersection between two line segments, use :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
+\ ``from`` та ``dir`` — це *не* кінцеві точки відрізка або променя, а нахил (``dir``) та відома точка (``from``) на цій лінії. Щоб отримати точку перетину двох відрізків, використовуйте :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
 
 
 .. tabs::
@@ -417,11 +417,11 @@ Returns the point of intersection between the two lines (``from_a``, ``dir_a``) 
     var dir_a = Vector2.RIGHT
     var from_b = Vector2.DOWN
 
-    # Returns Vector2(1, 0)
+    # Повертає Vector2(1, 0)
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(1, -1))
-    # Returns Vector2(-1, 0)
+    # Повертає Vector2(-1, 0)
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(-1, -1))
-    # Returns null
+    # Повертає null
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2.RIGHT)
 
  .. code-tab:: csharp
@@ -430,11 +430,11 @@ Returns the point of intersection between the two lines (``from_a``, ``dir_a``) 
     var dirA = Vector2.Right;
     var fromB = Vector2.Down;
 
-    // Returns new Vector2(1, 0)
+    // Повертає new Vector2(1, 0)
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(1, -1));
-    // Returns new Vector2(-1, 0)
+    // Повертає новий Vector2(-1, 0)
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(-1, -1));
-    // Returns null
+    // Повертає null
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, Vector2.Right);
 
 
@@ -554,7 +554,7 @@ Returns the point of intersection between the two lines (``from_a``, ``dir_a``) 
 
 :ref:`Variant<class_Variant>` **segment_intersects_segment**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, to_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, to_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_segment_intersects_segment>`
 
-Checks if two line segments intersect, with line ``a`` between ``from_a`` and ``to_a`` and line ``b`` between ``from_b`` and ``to_b``. If the line segments intersect, the point of intersection is returned as a :ref:`Vector2<class_Vector2>`. If no intersection takes place, ``null`` is returned.
+Перевіряє, чи перетинаються два відрізки: лінія ``a`` між ``from_a`` і ``to_a`` та лінія ``b`` між ``from_b`` і ``to_b``. Якщо відрізки перетинаються, точка перетину повертається у вигляді :ref:`Vector2<class_Vector2>`. Якщо перетину немає, повертається ``null``.
 
 .. rst-class:: classref-item-separator
 

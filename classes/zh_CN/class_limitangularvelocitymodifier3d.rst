@@ -14,11 +14,11 @@ LimitAngularVelocityModifier3D
 描述
 ----
 
-This modifier limits bone rotation angular velocity by comparing poses between previous and current frame.
+这个修饰器通过对比上一帧和当前帧的骨骼姿态，来限制骨骼旋转的角速度。
 
-You can add bone chains by specifying their root and end bones, then add the bones between them to a list. Modifier processes either that list or the bones excluding those in the list depending on the option :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
+你可以通过指定根骨骼和末端骨骼来添加骨骼链，然后将它们之间的骨骼添加到一个列表中。根据 :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`\ （排除）选项的设置，修饰器会处理这个列表中的骨骼，或者处理除了该列表之外的其他骨骼。
 
-\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **注意：** 这个类中的大多数方法都带有一个 ``index``\ （索引）参数。这个参数用来指定当 IK（反向运动学）包含多个设置项时，具体返回哪一个（比如 ``settings//root_bone_name``\ ）。
 
 .. rst-class:: classref-reftable-group
 

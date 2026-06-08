@@ -76,9 +76,9 @@ Ogg Vorbis 比 :ref:`ResourceImporterWAV<class_ResourceImporterWAV>` 需要更�
 
 :ref:`int<class_int>` **bar_beats** = ``4`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bar_beats>`
 
-The number of beats within a single bar in the audio track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+音频轨道中，单个小节（bar）内包含的节拍（beat）数量。这个设置仅对希望使用互动音乐（interactive music）功能的音乐有效，而不适用于音效。
 
-A more convenient editor for :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+在 **高级导入设置（Advanced Import Settings）** 对话框中，为 :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` 提供了一个更方便的编辑器。因为它可以让你在预览更改效果的同时，免去反复重新导入音频的麻烦。
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ A more convenient editor for :ref:`bar_beats<class_ResourceImporterOggVorbis_pro
 
 :ref:`int<class_int>` **beat_count** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_beat_count>`
 
-The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+音频轨道的总长度（以节拍数为单位）。音频文件的实际播放时长可能会比这个属性所指示的时长要长。该设置仅对希望使用互动音乐（interactive music）功能的音乐有效，而不适用于音效。
 
-A more convenient editor for :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+在 **高级导入设置（Advanced Import Settings）** 对话框中，为 :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` 提供了一个更方便的编辑器。因为它可以让你在预览更改效果的同时，免去反复重新导入音频的麻烦。
 
 .. rst-class:: classref-item-separator
 
@@ -104,9 +104,9 @@ A more convenient editor for :ref:`beat_count<class_ResourceImporterOggVorbis_pr
 
 :ref:`float<class_float>` **bpm** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bpm>`
 
-The tempo of the audio track, measured in beats per minute. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+音频轨道的 tempo（节奏速度），以每分钟的节拍数（BPM）为单位进行衡量。这里填写的数值应该与创作这首曲子时使用的 BPM 保持一致。这个设置仅对希望使用互动音乐（interactive music）功能的音乐有效，而不适用于音效。
 
-A more convenient editor for :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+在 **高级导入设置（Advanced Import Settings）** 对话框中，为 :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` 提供了一个更方便的编辑器。因为它可以让你在预览更改效果的同时，免去反复重新导入音频的麻烦。
 
 .. rst-class:: classref-item-separator
 
@@ -118,9 +118,9 @@ A more convenient editor for :ref:`bpm<class_ResourceImporterOggVorbis_property_
 
 :ref:`bool<class_bool>` **loop** = ``false`` :ref:`🔗<class_ResourceImporterOggVorbis_property_loop>`
 
-If enabled, the audio will begin playing either from the beginning or from :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>`, after playback ends by either reaching the end of the audio or reaching the end of the last beat according to the amount specified in :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>`.
+如果启用，当音频播放结束（无论是播放到了音频文件的末尾，还是根据 :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` 中指定的数量播放到了最后一个节拍的末尾）后，音频将会从开头或者从 :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>` 指定的位置重新开始播放。
 
-\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
+\ **注意：** 在 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 中，对于开启了循环的音频，当它播放到音频文件末尾时，不会触发 :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>`\ （播放完成）信号，因为音频会一直无限循环播放下去。
 
 .. rst-class:: classref-item-separator
 

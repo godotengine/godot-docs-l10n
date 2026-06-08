@@ -543,13 +543,13 @@ Riempie la determinata regione ``region`` sulla griglia con il valore specificat
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_id_path**\ (\ from_id\: :ref:`Vector2i<class_Vector2i>`, to_id\: :ref:`Vector2i<class_Vector2i>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStarGrid2D_method_get_id_path>`
 
-Returns an array with the IDs of the points that form the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
+Restituisce un array con i punti che formano il percorso trovato da AStar2D tra i punti indicati. L'array è ordinato dal punto iniziale al punto finale del percorso.
 
-If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+Se il punto ``from_id`` è disabilitato, restituisce un array vuoto (anche se ``from_id == to_id``).
 
-If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+Se il punto ``from_id`` non è disabilitato, non esiste un percorso valido verso la destinazione e ``allow_partial_path`` è ``true``, restituisce un percorso verso il punto più vicino alla destinazione che può essere raggiunto.
 
-\ **Note:** When ``allow_partial_path`` is ``true`` and ``to_id`` is solid the search may take an unusually long time to finish.
+\ **Nota:** quando ``allow_partial_path`` è ``true`` e ``to_id`` è solido, la ricerca potrebbe richiedere un tempo insolitamente lungo per essere completata.
 
 .. rst-class:: classref-item-separator
 
@@ -573,15 +573,15 @@ Restituisce un array di dizionari con i dati dei punti (``id``: :ref:`Vector2i<c
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_point_path**\ (\ from_id\: :ref:`Vector2i<class_Vector2i>`, to_id\: :ref:`Vector2i<class_Vector2i>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStarGrid2D_method_get_point_path>`
 
-Returns an array with the points that are in the path found by **AStarGrid2D** between the given points. The array is ordered from the starting point to the ending point of the path.
+Restituisce un array con i punti che sono presenti nel percorso trovato da **AStarGrid2D** tra i punti indicati. L'array è ordinato dal punto iniziale al punto finale del percorso.
 
-If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+Se il punto ``from_id`` è disabilitato, restituisce un array vuoto (anche se ``from_id == to_id``).
 
-If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+Se il punto ``from_id`` non è disabilitato, non esiste un percorso valido verso la destinazione e ``allow_partial_path`` è ``true``, restituisce un percorso verso il punto più vicino alla destinazione che può essere raggiunto.
 
-\ **Note:** This method is not thread-safe; it can only be used from a single :ref:`Thread<class_Thread>` at a given time. Consider using :ref:`Mutex<class_Mutex>` to ensure exclusive access to one thread to avoid race conditions.
+\ **Nota:** Questo metodo non è thread-safe; si può usare solo da un singolo :ref:`Thread<class_Thread>` alla volta. Si consiglia di utilizzare :ref:`Mutex<class_Mutex>` per garantire l'accesso esclusivo a un thread ed evitare accessi concorrenti.
 
-Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is solid the search may take an unusually long time to finish.
+Inoltre, quando ``allow_partial_path`` è ``true`` e ``to_id`` è solido, la ricerca potrebbe richiedere un tempo insolitamente lungo per essere completata.
 
 .. rst-class:: classref-item-separator
 

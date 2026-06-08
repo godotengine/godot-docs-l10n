@@ -1212,19 +1212,19 @@ Se ``height_in_percent`` è impostato, i valori di ``height`` sono percentuali d
 
 |void| **add_image**\ (\ image\: :ref:`Texture2D<class_Texture2D>`, width\: :ref:`float<class_float>` = 0, height\: :ref:`float<class_float>` = 0, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), inline_align\: :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` = 5, region\: :ref:`Rect2<class_Rect2>` = Rect2(0, 0, 0, 0), key\: :ref:`Variant<class_Variant>` = null, pad\: :ref:`bool<class_bool>` = false, tooltip\: :ref:`String<class_String>` = "", width_unit\: :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` = 0, height_unit\: :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` = 0, alt_text\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_RichTextLabel_method_add_image>`
 
-Adds an image's opening and closing tags to the tag stack, optionally providing a ``width`` and ``height`` to resize the image, a ``color`` to tint the image and a ``region`` to only use parts of the image.
+Aggiunge i tag di apertura e chiusura di un'immagine allo stack dei tag, fornendo facoltativamente un ``width`` e ``height`` per ridimensionare l'immagine, un ``color`` per colorare l'immagine e un ``region`` per utilizzare solo parti dell'immagine.
 
-If ``width`` or ``height`` is set to 0, the image size will be adjusted in order to keep the original aspect ratio.
+Se ``width`` o ``height`` sono impostati su 0, le dimensioni dell'immagine saranno adattate per mantenere le proporzioni originali.
 
-If ``width`` and ``height`` are not set, but ``region`` is, the region's rect will be used.
+Se ``width`` e ``height`` non sono impostati, ma ``region`` lo è, sarà utilizzato il rettangolo della regione.
 
-\ ``key`` is an optional identifier, that can be used to modify the image via :ref:`update_image()<class_RichTextLabel_method_update_image>`.
+\ ``key`` è un identificatore facoltativo, che può servire per modificare l'immagine tramite :ref:`update_image()<class_RichTextLabel_method_update_image>`.
 
-If ``pad`` is set, and the image is smaller than the size specified by ``width`` and ``height``, the image padding is added to match the size instead of upscaling.
+Se ``pad`` è impostato e l'immagine è più piccola delle dimensioni specificate da ``width`` e ``height``, il padding dell'immagine viene aggiunto per adattarla alle dimensioni anziché ridimensionarla.
 
-Parameters ``width_unit`` and ``height_unit`` determine the units used to calculate the image width and height, respectively.
+I parametri ``width_unit`` e ``height_unit`` determinano le unità utilizzate per calcolare rispettivamente la larghezza e l'altezza dell'immagine.
 
-\ ``alt_text`` is used as the image description for assistive apps.
+\ ``alt_text`` è utilizzato come descrizione dell'immagine per le applicazioni assistive.
 
 .. rst-class:: classref-item-separator
 
@@ -2113,7 +2113,7 @@ Aggiunge un tag ``[p]`` allo stack dei tag.
 
 |void| **push_strikethrough**\ (\ color\: :ref:`Color<class_Color>` = Color(0, 0, 0, 0)\ ) :ref:`🔗<class_RichTextLabel_method_push_strikethrough>`
 
-Adds a ``[s]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the current font's color with its alpha multiplied by :ref:`strikethrough_alpha<class_RichTextLabel_theme_constant_strikethrough_alpha>` is used.
+Aggiunge un tag ``[s]`` allo stack dei tag. Se il valore alfa di ``color`` è ``0.0``, è utilizzato il colore del font attuale, con l'alfa moltiplicato per :ref:`strikethrough_alpha<class_RichTextLabel_theme_constant_strikethrough_alpha>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2137,7 +2137,7 @@ Aggiunge un tag ``[table=columns,inline_align]`` allo stack dei tag. Usa :ref:`s
 
 |void| **push_underline**\ (\ color\: :ref:`Color<class_Color>` = Color(0, 0, 0, 0)\ ) :ref:`🔗<class_RichTextLabel_method_push_underline>`
 
-Adds a ``[u]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the current font's color with its alpha multiplied by :ref:`underline_alpha<class_RichTextLabel_theme_constant_underline_alpha>` is used.
+Aggiunge un tag ``[u]`` allo stack dei tag. Se il valore alfa di ``color`` è ``0.0``, è utilizzato il colore del font attuale, con l'alfa moltiplicato per :ref:`underline_alpha<class_RichTextLabel_theme_constant_underline_alpha>`.
 
 .. rst-class:: classref-item-separator
 

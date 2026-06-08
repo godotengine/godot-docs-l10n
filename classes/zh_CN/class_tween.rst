@@ -14,13 +14,13 @@ Tween
 描述
 ----
 
-Tweens are mostly useful for animations requiring a numerical property to be interpolated over a range of values. The name *tween* comes from *in-betweening*, an animation technique where you specify *keyframes* and the computer interpolates the frames that appear between them. Animating something with a **Tween** is called tweening.
+补间动画（Tweens）主要用于那些需要在一定数值范围内对数字属性进行插值的动画。\ *Tween*\ （补间）这个名字来源于 *in-betweening*\ （中间画），这是一种动画技术：你只需要指定\ *关键帧*\ ，电脑就会自动计算并补全它们之间的那些过渡帧。使用 **Tween** 来制作动画的过程，就被称为“补间动画（tweening）”。
 
-\ **Tween** is more suited than :ref:`AnimationPlayer<class_AnimationPlayer>` for animations where you don't know the final values in advance. For example, interpolating a dynamically-chosen camera zoom value is best done with a **Tween**; it would be difficult to do the same thing with an :ref:`AnimationPlayer<class_AnimationPlayer>` node. Tweens are also more light-weight than :ref:`AnimationPlayer<class_AnimationPlayer>`, so they are very much suited for simple animations or general tasks that don't require visual tweaking provided by the editor. They can be used in a "fire-and-forget" manner for some logic that normally would be done by code. You can e.g. make something shoot periodically by using a looped :ref:`CallbackTweener<class_CallbackTweener>` with a delay.
+当动画的最终数值无法提前预知时，\ **Tween** 比 :ref:`AnimationPlayer<class_AnimationPlayer>` 更加适用。例如，动态插值一个随机选定的摄像机缩放值，用 **Tween** 来实现是最好的；但如果想用 :ref:`AnimationPlayer<class_AnimationPlayer>` 节点做同样的事情，就会非常困难。此外，Tweens 比 :ref:`AnimationPlayer<class_AnimationPlayer>` 更加轻量级，因此非常适合制作那些不需要编辑器进行可视化微调的简单动画或通用任务。对于一些通常需要用代码来处理的逻辑，你也可以用“发射后不管（fire-and-forget）”的方式来使用它们。比如，你可以使用一个带延迟的循环 :ref:`CallbackTweener<class_CallbackTweener>`\ ，来让某个物体周期性地发射子弹。
 
-A **Tween** can be created by using either :ref:`SceneTree.create_tween()<class_SceneTree_method_create_tween>` or :ref:`Node.create_tween()<class_Node_method_create_tween>`. **Tween**\ s created manually (i.e. by using ``Tween.new()``) are invalid and can't be used for tweening values.
+你可以通过调用 :ref:`SceneTree.create_tween()<class_SceneTree_method_create_tween>` 或 :ref:`Node.create_tween()<class_Node_method_create_tween>` 来创建一个 **Tween**\ 。如果是手动创建的 **Tween**\ （比如直接使用 ``Tween.new()``\ ），它是无效的，无法用来对数值进行补间动画。
 
-A tween animation is created by adding :ref:`Tweener<class_Tweener>`\ s to the **Tween** object, using :ref:`tween_property()<class_Tween_method_tween_property>`, :ref:`tween_interval()<class_Tween_method_tween_interval>`, :ref:`tween_callback()<class_Tween_method_tween_callback>`, :ref:`tween_method()<class_Tween_method_tween_method>`, :ref:`tween_subtween()<class_Tween_method_tween_subtween>`, or :ref:`tween_await()<class_Tween_method_tween_await>`:
+你可以通过调用 tween_property、tween_interval、tween_callback、tween_method、tween_subtween 或 tween_await 这些方法，向 **Tween** 对象中添加 :ref:`Tweener<class_Tweener>`\ ，从而创建出一个补间动画:
 
 
 .. tabs::
@@ -41,9 +41,9 @@ A tween animation is created by adding :ref:`Tweener<class_Tweener>`\ s to the *
 
 
 
-This sequence will make the ``$Sprite`` node turn red, then shrink, before finally calling :ref:`Node.queue_free()<class_Node_method_queue_free>` to free the sprite. :ref:`Tweener<class_Tweener>`\ s are executed one after another by default. This behavior can be changed using :ref:`parallel()<class_Tween_method_parallel>` and :ref:`set_parallel()<class_Tween_method_set_parallel>`.
+这个序列会让 ``$Sprite`` 节点先变成红色，然后缩小，最后调用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 来释放（销毁）这个精灵。默认情况下，\ :ref:`Tweener<class_Tweener>` 是一个接一个按顺序执行的。不过，你也可以使用 :ref:`parallel()<class_Tween_method_parallel>` 和 :ref:`set_parallel()<class_Tween_method_set_parallel>` 来改变这种（串行）行为。
 
-When a :ref:`Tweener<class_Tweener>` is created with one of the ``tween_*`` methods, a chained method call can be used to tweak the properties of this :ref:`Tweener<class_Tweener>`. For example, if you want to set a different transition type in the above example, you can use :ref:`set_trans()<class_Tween_method_set_trans>`:
+当使用 ``tween_*`` 系列方法创建出一个 :ref:`Tweener<class_Tweener>` 后，你可以使用链式方法调用来微调这个 :ref:`Tweener<class_Tweener>` 的各项属性。例如，如果你想改变上面示例中的过渡类型（transition type），就可以使用 :ref:`set_trans()<class_Tween_method_set_trans>` 方法：
 
 
 .. tabs::
@@ -64,7 +64,7 @@ When a :ref:`Tweener<class_Tweener>` is created with one of the ``tween_*`` meth
 
 
 
-Most of the **Tween** methods can be chained this way too. In the following example the **Tween** is bound to the running script's node and a default transition is set for its :ref:`Tweener<class_Tweener>`\ s:
+大多数 **Tween** 的方法也可以这样进行链式调用。在下面的例子中，这个 **Tween** 被绑定到了当前运行脚本所在的节点上，并且为它的 :ref:`Tweener<class_Tweener>`\ s 设置了一个默认的过渡效果：
 
 
 .. tabs::
@@ -85,7 +85,7 @@ Most of the **Tween** methods can be chained this way too. In the following exam
 
 
 
-Another interesting use for **Tween**\ s is animating arbitrary sets of objects:
+\ **Tween** 的另一个有趣用法是，对任意一组对象进行动画处理：
 
 
 .. tabs::
@@ -104,9 +104,9 @@ Another interesting use for **Tween**\ s is animating arbitrary sets of objects:
 
 
 
-In the example above, all children of a node are moved one after another to position ``(0, 0)``.
+在上面的例子中，某个节点的所有子节点会被依次移动到 ``(0, 0)`` 的位置。
 
-You should avoid using more than one **Tween** per object's property. If two or more tweens animate one property at the same time, the last one created will take priority and assign the final value. If you want to interrupt and restart an animation, consider assigning the **Tween** to a variable:
+你应该避免对同一个对象的属性使用多个 **Tween**\ 。如果两个或更多的补间动画同时控制同一个属性，最后创建的那个会获得优先权，并决定该属性的最终值。如果你想中断并重新开始一个动画，可以考虑将 **Tween** 赋值给一个变量：
 
 
 .. tabs::
@@ -116,7 +116,7 @@ You should avoid using more than one **Tween** per object's property. If two or 
     var tween
     func animate():
         if tween:
-            tween.kill() # Abort the previous animation.
+            tween.kill() #中断（或取消）上一次的动画。
         tween = create_tween()
 
  .. code-tab:: csharp
@@ -126,19 +126,19 @@ You should avoid using more than one **Tween** per object's property. If two or 
     public void Animate()
     {
         if (_tween != null)
-            _tween.Kill(); // Abort the previous animation
+            _tween.Kill(); // 中断（或取消）上一次的动画
         _tween = CreateTween();
     }
 
 
 
-Some :ref:`Tweener<class_Tweener>`\ s use transitions and eases. The first accepts a :ref:`TransitionType<enum_Tween_TransitionType>` constant, and refers to the way the timing of the animation is handled (see `easings.net <https://easings.net/>`__ for some examples). The second accepts an :ref:`EaseType<enum_Tween_EaseType>` constant, and controls where the ``trans_type`` is applied to the interpolation (in the beginning, the end, or both). If you don't know which transition and easing to pick, you can try different :ref:`TransitionType<enum_Tween_TransitionType>` constants with :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>`, and use the one that looks best.
+部分 :ref:`Tweener<class_Tweener>`\ （补间器）会用到过渡（transitions）和缓动（eases）。前者接受一个 :ref:`TransitionType<enum_Tween_TransitionType>` 常量，它决定了动画的时间节奏处理方式（你可以访问 `easings.net <https://easings.net/>`__ 查看一些具体的效果示例）。后者接受一个 :ref:`EaseType<enum_Tween_EaseType>` 常量，它控制着 ``trans_type``\ （过渡类型）在插值过程中的应用位置（是应用在开头、结尾，还是两头都应用）。如果你不知道该选哪种过渡和缓动效果，可以尝试搭配不同的 :ref:`TransitionType<enum_Tween_TransitionType>` 常量与 :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>` 一起使用，然后从中挑一个视觉效果最棒的。
 
 \ `Tween easing and transition types cheatsheet <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/tween_cheatsheet.webp>`__\ 
 
-\ **Note:** Tweens are not designed to be reused and trying to do so results in an undefined behavior. Create a new Tween for each animation and every time you replay an animation from start. Keep in mind that Tweens start immediately, so only create a Tween when you want to start animating.
+\ **注意：** Tween 并不是为了重复使用而设计的，强行复用会导致不可预期的行为。每次制作动画，以及每次想要从头重播动画时，都应该创建一个新的 Tween。请记住，Tween 在创建后会立刻开始运行，所以只有当你真正准备开始播放动画时，再去创建它。
 
-\ **Note:** The tween is processed after all of the nodes in the current frame, i.e. node's :ref:`Node._process()<class_Node_private_method__process>` method would be called before the tween (or :ref:`Node._physics_process()<class_Node_private_method__physics_process>` depending on the value passed to :ref:`set_process_mode()<class_Tween_method_set_process_mode>`).
+\ **注意：** Tween 是在当前帧的所有节点处理之后才被执行的。也就是说，节点的 :ref:`Node._process()<class_Node_private_method__process>` 方法会在 Tween 之前被调用（或者如果是根据 :ref:`set_process_mode()<class_Tween_method_set_process_mode>` 传入的值来决定的话，那就是 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 会在 Tween 之前被调用）。
 
 .. rst-class:: classref-reftable-group
 
@@ -560,7 +560,7 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`bool<class_bool>` **has_tweeners**\ (\ ) |const| :ref:`🔗<class_Tween_method_has_tweeners>`
 
-Returns ``true`` if any :ref:`Tweener<class_Tweener>` has been added to the **Tween** and the **Tween** is valid. Useful when tweeners are added dynamically and the tween can end up empty. Killing an empty tween before it starts will prevent errors.
+如果已向 **Tween** 添加了任意 :ref:`Tweener<class_Tweener>` 且该 **Tween** 有效，则返回 ``true``\ 。当动态添加补间器且补间序列最终可能为空时，此方法非常有用。在空补间开始前将其终止，可避免报错。
 
 .. rst-class:: classref-item-separator
 
@@ -691,9 +691,9 @@ Returns ``true`` if any :ref:`Tweener<class_Tweener>` has been added to the **Tw
 
 :ref:`Tween<class_Tween>` **set_ease**\ (\ ease\: :ref:`EaseType<enum_Tween_EaseType>`\ ) :ref:`🔗<class_Tween_method_set_ease>`
 
-Sets the default ease type for :ref:`PropertyTweener<class_PropertyTweener>`\ s and :ref:`MethodTweener<class_MethodTweener>`\ s appended after this method.
+设置在此方法之后添加的 :ref:`PropertyTweener<class_PropertyTweener>`\ （属性补间器）和 :ref:`MethodTweener<class_MethodTweener>`\ （方法补间器）的默认缓动类型。
 
-Before this method is called, the default ease type is :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>`.
+在调用此方法之前，默认的缓动类型是 :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>`\ 。
 
 
 .. tabs::
@@ -865,13 +865,13 @@ Before this method is called, the default ease type is :ref:`EASE_IN_OUT<class_T
 
 :ref:`AwaitTweener<class_AwaitTweener>` **tween_await**\ (\ signal\: :ref:`Signal<class_Signal>`\ ) :ref:`🔗<class_Tween_method_tween_await>`
 
-Creates and appends an :ref:`AwaitTweener<class_AwaitTweener>`. This method can be used to await a signal to be emitted and create asynchronous animations or cutscenes.
+创建并追加一个 :ref:`AwaitTweener<class_AwaitTweener>`\ 。该方法可用于等待信号发出，以创建异步动画或过场动画。
 
-The animation will not progress to the next step until the awaited signal is emitted or the connection becomes invalid (e.g. as a result of freeing the target object). If you know that the emission may not happen, use :ref:`AwaitTweener.set_timeout()<class_AwaitTweener_method_set_timeout>`.
+在等待的信号发出或连接失效（例如因目标对象被释放）之前，动画不会进入下一步。如果预计信号可能不会发出，请使用 :ref:`AwaitTweener.set_timeout()<class_AwaitTweener_method_set_timeout>`\ 。
 
-\ **Note:** The awaited signal should be emitted during the step when :ref:`AwaitTweener<class_AwaitTweener>` is active.
+\ **注意：** 等待的信号应在 :ref:`AwaitTweener<class_AwaitTweener>` 处于活动状态的步骤期间发出。
 
-\ **Example:** An object launches itself and explodes upon collision or after 4 seconds.
+\ **示例：** 一个对象发射自身，并在碰撞时或 4 秒后爆炸。
 
 ::
 
@@ -880,7 +880,7 @@ The animation will not progress to the next step until the awaited signal is emi
     tween.tween_await(collided).set_timeout(4.0)
     tween.tween_callback(explode)
 
-\ **Example:** A character walks to a specific point, says some lines and walks back when the player closes the message box.
+\ **示例：** 一个角色走到指定位置，说出几行台词，当玩家关闭消息框时再走回去。
 
 ::
 
@@ -891,7 +891,7 @@ The animation will not progress to the next step until the awaited signal is emi
     tween.tween_await(dialogue_closed)
     tween.tween_callback(walk_to.bind(0.0))
 
-\ **Note:** If you are awaiting a signal from a callback called in the same **Tween**, make sure the signal is emitted *after* the await starts. If it can't be reasonably guaranteed, you can await and emit in the same step:
+\ **注意：** 如果你正在等待一个在同一个 **Tween** 中调用的回调函数发出的信号，请确保该信号是在等待（await）开始 *之后* 才发出的。如果无法合理地保证这一点，你可以将等待和发出信号放在同一个步骤中进行：
 
 ::
 

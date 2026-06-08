@@ -7,16 +7,16 @@ AudioEffectHighShelfFilter
 
 **Успадковує:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a high-shelf filter to an audio bus.
+Додає фільтр високих частот до аудіошини.
 
 .. rst-class:: classref-introduction-group
 
 Опис
 --------
 
-A "high-shelf" filter controls the gain of all frequencies above :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+Фільтр «високочастотний» регулює рівень посилення всіх частот вище :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
-This filter can be used to increase or decrease clarity of a sound.
+Цей фільтр можна використовувати для підвищення або зниження чіткості звуку.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ This filter can be used to increase or decrease clarity of a sound.
 
 - :doc:`Звукові шини <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Аудіоефекти <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

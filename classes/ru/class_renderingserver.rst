@@ -1303,7 +1303,7 @@ enum **TextureDrawableFormat**: :ref:`🔗<enum_RenderingServer_TextureDrawableF
 
 :ref:`TextureDrawableFormat<enum_RenderingServer_TextureDrawableFormat>` **TEXTURE_DRAWABLE_FORMAT_RGBA8** = ``0``
 
-OpenGL texture format RGBA with four components, each with a bitdepth of 8.
+Текстурный формат OpenGL RGBA, состоящий из четырех компонентов, каждый с 8-битной глубиной цвета.
 
 .. _class_RenderingServer_constant_TEXTURE_DRAWABLE_FORMAT_RGBA8_SRGB:
 
@@ -1311,9 +1311,9 @@ OpenGL texture format RGBA with four components, each with a bitdepth of 8.
 
 :ref:`TextureDrawableFormat<enum_RenderingServer_TextureDrawableFormat>` **TEXTURE_DRAWABLE_FORMAT_RGBA8_SRGB** = ``1``
 
-OpenGL texture format RGBA with four components, each with a bitdepth of 8.
+Текстурный формат OpenGL RGBA с четырьмя компонентами, каждый с 8-битной глубиной цвета.
 
-When drawn to, an sRGB to linear color space conversion is performed.
+При отрисовке выполняется преобразование цветового пространства sRGB в линейное.
 
 .. _class_RenderingServer_constant_TEXTURE_DRAWABLE_FORMAT_RGBAH:
 
@@ -1321,7 +1321,7 @@ When drawn to, an sRGB to linear color space conversion is performed.
 
 :ref:`TextureDrawableFormat<enum_RenderingServer_TextureDrawableFormat>` **TEXTURE_DRAWABLE_FORMAT_RGBAH** = ``2``
 
-OpenGL texture format GL_RGBA16F where there are four components, each a 16-bit "half-precision" floating-point value.
+Текстурный формат OpenGL GL_RGBA16F, состоящий из четырех компонентов, каждый из которых представляет собой 16-битное значение с плавающей запятой "половинной точности".
 
 .. _class_RenderingServer_constant_TEXTURE_DRAWABLE_FORMAT_RGBAF:
 
@@ -1329,7 +1329,7 @@ OpenGL texture format GL_RGBA16F where there are four components, each a 16-bit 
 
 :ref:`TextureDrawableFormat<enum_RenderingServer_TextureDrawableFormat>` **TEXTURE_DRAWABLE_FORMAT_RGBAF** = ``3``
 
-OpenGL texture format GL_RGBA32F where there are four components, each a 32-bit floating-point value.
+Текстурный формат OpenGL GL_RGBA32F, состоящий из четырех компонентов, каждый из которых представляет собой 32-битное значение с плавающей запятой.
 
 .. rst-class:: classref-item-separator
 
@@ -2733,7 +2733,7 @@ enum **ParticlesTransformAlign**: :ref:`🔗<enum_RenderingServer_ParticlesTrans
 
 :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>` **PARTICLES_TRANSFORM_ALIGN_DISABLED** = ``0``
 
-Do not align particle transforms relative to the camera or velocity.
+Не следует выравнивать преобразования частиц относительно камеры или скорости.
 
 .. _class_RenderingServer_constant_PARTICLES_TRANSFORM_ALIGN_Z_BILLBOARD:
 
@@ -2741,7 +2741,7 @@ Do not align particle transforms relative to the camera or velocity.
 
 :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>` **PARTICLES_TRANSFORM_ALIGN_Z_BILLBOARD** = ``1``
 
-Align each particle's Z axis to face the camera.
+Расположите ось Z каждой частицы так, чтобы она была направлена в сторону камеры.
 
 .. _class_RenderingServer_constant_PARTICLES_TRANSFORM_ALIGN_Y_TO_VELOCITY:
 
@@ -2749,7 +2749,7 @@ Align each particle's Z axis to face the camera.
 
 :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>` **PARTICLES_TRANSFORM_ALIGN_Y_TO_VELOCITY** = ``2``
 
-Align each particle's Y axis to the velocity vector.
+Выровняйте ось Y каждой частицы по вектору скорости.
 
 .. _class_RenderingServer_constant_PARTICLES_TRANSFORM_ALIGN_Z_BILLBOARD_Y_TO_VELOCITY:
 
@@ -2757,7 +2757,7 @@ Align each particle's Y axis to the velocity vector.
 
 :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>` **PARTICLES_TRANSFORM_ALIGN_Z_BILLBOARD_Y_TO_VELOCITY** = ``3``
 
-Align each particle's Z axis to face the camera and Y axis to the velocity vector.
+Расположите ось Z каждой частицы напротив камеры, а ось Y — относительно вектора скорости.
 
 .. _class_RenderingServer_constant_PARTICLES_TRANSFORM_ALIGN_LOCAL_BILLBOARD:
 
@@ -4325,9 +4325,9 @@ Adds the glow effect to the scene after modifying the glow influence based on th
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_SOFTLIGHT** = ``2``
 
-Adds the glow effect to the tonemapped image after modifying the glow influence based on the image value; dark values and bright values will not be influenced by glow and mid-range values will be highly influenced by glow. This approach avoids bright values becoming overly bright from the glow effect. The glow will have the largest influence on image values of ``0.25`` and will have no influence when applied to image values greater than ``1.0``.
+Добавляет эффект свечения к тонированному изображению после изменения влияния свечения в зависимости от значения изображения; темные и светлые значения не будут подвержены влиянию свечения, а средние значения будут сильно подвержены его влиянию. Такой подход позволяет избежать чрезмерного увеличения яркости ярких значений из-за эффекта свечения. Свечение будет оказывать наибольшее влияние на значения изображения ``0.25`` и не будет оказывать никакого влияния при применении к значениям изображения больше ``1.0``.
 
-\ **Note:** This blend mode does not support HDR output because expects a maximum output value of ``1.0``. It is recommended to use a different blend mode when rendering to an HDR screen.
+\ **Примечание:** Этот режим наложения не поддерживает вывод HDR, поскольку ожидает максимальное значение вывода ``1.0``. Рекомендуется использовать другой режим наложения при рендеринге на HDR-экран.
 
 .. _class_RenderingServer_constant_ENV_GLOW_BLEND_MODE_REPLACE:
 

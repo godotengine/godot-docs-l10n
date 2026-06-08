@@ -138,7 +138,7 @@ Restituisce il primo elemento con il nome fornito, o ``-1`` se non è trovato al
 
 :ref:`int<class_int>` **get_item_count**\ (\ ) |const| :ref:`🔗<class_MeshLibrary_method_get_item_count>`
 
-Returns the number of items present in the library.
+Restituisce il numero di elementi presenti nella libreria.
 
 .. rst-class:: classref-item-separator
 

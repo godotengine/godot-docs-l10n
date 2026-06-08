@@ -100,9 +100,9 @@ enum **PersistenceScope**: :ref:`🔗<enum_OpenXRSpatialAnchorCapability_Persist
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **create_default_persistence_context**\ (\ user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_create_default_persistence_context>`
 
-Calls :ref:`create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>` with a configuration that likely works with the XR runtime.
+使用一种很可能与 XR 运行时兼容的配置，调用 :ref:`create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>` 方法。
 
-\ ``user_callback`` is called when the context is created.
+当上下文创建完成时，将调用 ``user_callback`` 回调函数。
 
 .. rst-class:: classref-item-separator
 
@@ -114,9 +114,9 @@ Calls :ref:`create_persistence_context()<class_OpenXRSpatialAnchorCapability_met
 
 :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` **create_new_anchor**\ (\ transform\: :ref:`Transform3D<class_Transform3D>`, spatial_context\: :ref:`RID<class_RID>` = RID(), next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_create_new_anchor>`
 
-Creates a new anchor that will be tracked by the XR runtime. The ``transform`` should be a transform in the local space of your :ref:`XROrigin3D<class_XROrigin3D>` node. If ``spatial_context`` is not specified the default will be used, this requires :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>` to be set. The returned tracker will track the location in case our reference space changes.
+创建一个新的锚点（anchor），该锚点将由 XR 运行时进行追踪。\ ``transform``\ （变换矩阵）应该是相对于你的 :ref:`XROrigin3D<class_XROrigin3D>` 节点的局部空间坐标。如果未指定 ``spatial_context``\ （空间上下文），将使用默认值，但这要求必须启用 :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>` 选项。返回的追踪器（tracker）会在我们的参考空间发生变化时，持续追踪该锚点的位置。
 
-\ ``next`` must be a valid next object for the ``XrSpatialAnchorCreateInfoEXT`` chain.
+\ ``next`` 必须是一个有效的对象，用于 ``XrSpatialAnchorCreateInfoEXT`` 扩展链。
 
 .. rst-class:: classref-item-separator
 
@@ -142,13 +142,13 @@ Creates a new anchor that will be tracked by the XR runtime. The ``transform`` s
 
 |void| **do_entity_update**\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next_snapshot_create\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, next_snapshot_query\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_do_entity_update>`
 
-Calls :ref:`OpenXRSpatialEntityExtension.update_spatial_entities()<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>` and :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` with the anchor entities associated with ``spatial_context``.
+使用与 ``spatial_context`` 关联的锚点实体，调用 :ref:`OpenXRSpatialEntityExtension.update_spatial_entities()<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>` 和 :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` 方法。
 
-\ ``component_data`` are the :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\ s to update for this anchor capability.
+\ ``component_data`` 是针对此锚点功能需要更新的 :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` 数据。
 
-If ``next_snapshot_create`` is non-null, then pass this to the ``next`` parameter in :ref:`OpenXRSpatialEntityExtension.update_spatial_entities()<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>`.
+如果 ``next_snapshot_create`` 不为空，则将其作为 ``next`` 参数传递给 :ref:`OpenXRSpatialEntityExtension.update_spatial_entities()<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>` 方法；
 
-If ``next_snapshot_query`` is non-null, then pass this to the ``next`` parameter in :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+如果 ``next_snapshot_query`` 不为空，则将其作为 ``next`` 参数传递给 :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -250,17 +250,17 @@ If ``next_snapshot_query`` is non-null, then pass this to the ``next`` parameter
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **start_entity_discovery**\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next_snapshot_create\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, next_snapshot_query\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_start_entity_discovery>`
 
-Calls :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>` and :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` with the anchor entities associated with ``spatial_context``.
+使用与 ``spatial_context`` 关联的锚点实体，调用 :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>` 和 :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` 方法。
 
-\ ``component_data`` are the :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\ s to discover for this anchor capability.
+\ ``component_data`` 是针对此锚点功能需要发现的 :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` 数据。
 
-If ``next_snapshot_create`` is non-null, then pass this to the ``next`` parameter in :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`.
+如果 ``next_snapshot_create`` 不为空，则将其作为 ``next`` 参数传递给 :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>` 方法；
 
-If ``next_snapshot_query`` is non-null, then pass this to the ``next`` parameter in :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+如果 ``next_snapshot_query`` 不为空，则将其作为 ``next`` 参数传递给 :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` 方法。
 
-\ ``user_callback``, when non-null, is called with two parameters usually twice. The first parameter is the :ref:`RID<class_RID>` of the discovery snapshot and the second parameter is a boolean where ``false`` indicates the discovery snapshot is about to be processed, and ``true`` indicates the discovery snapshot has been processed and ``component_data`` has valid data. The second call is skipped if an error was encountered.
+\ ``user_callback`` 在非空时，通常会被调用两次，并传入两个参数。第一个参数是发现快照（discovery snapshot）的 :ref:`RID<class_RID>`\ ，第二个参数是一个布尔值：\ ``false`` 表示发现快照即将被处理，\ ``true`` 表示发现快照已处理完毕且 ``component_data`` 包含有效数据。如果遇到错误，则会跳过第二次调用。
 
-The returned :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` is identical to the return from :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`.
+返回的 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` 与 :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>` 的返回值相同。
 
 .. rst-class:: classref-item-separator
 

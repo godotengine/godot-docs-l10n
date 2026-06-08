@@ -115,7 +115,7 @@ La posizione del mouse relativa alla posizione precedente (posizione all'ultimo 
 
 \ **Nota:** Poiché **InputEventMouseMotion** potrebbe essere emesso solo quando il mouse si muove, non è possibile rilevare affidabilmente quando il mouse ha smesso di muoversi verificando questa proprietà. Potrebbe essere necessario un timer separato di poca durata.
 
-\ **Nota:** :ref:`relative<class_InputEventMouseMotion_property_relative>` è ridimensionato automaticamente in base al fattore di scala del contenuto, definito dalle impostazioni della modalità di allargamento del progetto. Ciò significa che la sensibilità del mouse apparirà diversa a seconda della risoluzione quando si utilizza :ref:`relative<class_InputEventMouseMotion_property_relative>` in uno script che gestisce la mira del mouse con la modalità del mouse :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`. Per evitare ciò, utilizza invece :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>`.
+\ **Nota:** :ref:`relative<class_InputEventMouseMotion_property_relative>` è ridimensionato automaticamente in base al fattore di scala del contenuto, definito dalle impostazioni della modalità di stiramento del progetto. Ciò significa che la sensibilità del mouse apparirà diversa a seconda della risoluzione quando si utilizza :ref:`relative<class_InputEventMouseMotion_property_relative>` in uno script che gestisce la mira del mouse con la modalità del mouse :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`. Per evitare ciò, utilizza invece :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>`.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Posizione del mouse non ridimensionata rispetto alla posizione precedente nel si
 
 \ **Nota:** Poiché **InputEventMouseMotion** potrebbe essere emesso solo quando il mouse si muove, non è possibile rilevare affidabilmente quando il mouse ha smesso di muoversi verificando questa proprietà. Potrebbe essere necessario un timer separato di poca durata.
 
-\ **Nota:** Queste coordinate *non* sono ridimensionate in base al fattore di scala del contenuto o alle chiamate a :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. Questo dovrebbe essere preferito a :ref:`relative<class_InputEventMouseMotion_property_relative>` per la mira del mouse quando si utilizza la modalità del mouse :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`, a prescindere dalla modalità di allargamento del progetto.
+\ **Nota:** Queste coordinate *non* sono ridimensionate in base al fattore di scala del contenuto o alle chiamate a :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. Questo dovrebbe essere preferito a :ref:`relative<class_InputEventMouseMotion_property_relative>` per la mira del mouse quando si utilizza la modalità del mouse :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`, a prescindere dalla modalità di stiramento del progetto.
 
 .. rst-class:: classref-item-separator
 
@@ -153,9 +153,9 @@ Posizione del mouse non ridimensionata rispetto alla posizione precedente nel si
 - |void| **set_screen_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_velocity**\ (\ )
 
-The unscaled mouse velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`.
+La velocità del mouse non ridimensionata in pixel al secondo nelle coordinate dello schermo. Questa velocità *non* è ridimensionata in base al fattore di scala del contenuto o alle chiamate a :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`.
 
-\ **Note:** In :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mode, :ref:`screen_velocity<class_InputEventMouseMotion_property_screen_velocity>` returns ``(0, 0)`` because the mouse cursor is hidden and locked. Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
+\ **Nota:** In modalità :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`, :ref:`screen_velocity<class_InputEventMouseMotion_property_screen_velocity>` restituisce ``(0, 0)`` perché il cursore del mouse è nascosto e bloccato. Usa :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` per mirare con il mouse attraverso la modalità del mouse :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`.
 
 .. rst-class:: classref-item-separator
 
@@ -189,11 +189,11 @@ Rappresenta gli angoli di inclinazione della penna. Il valore positivo della coo
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-The mouse velocity in pixels per second.
+La velocità del mouse in pixel al secondo.
 
-\ **Note:** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. That means mouse sensitivity may appear different depending on resolution.
+\ **Nota:** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` è automaticamente ridimensionata in base al fattore di scala del contenuto, definito dalle impostazioni della modalità di stiramento del progetto. Ciò significa che la sensibilità del mouse apparirà diversa a seconda della risoluzione.
 
-\ **Note:** In :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mode, :ref:`velocity<class_InputEventMouseMotion_property_velocity>` returns ``(0, 0)`` because the mouse cursor is hidden and locked. Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
+\ **Nota:** In modalità :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`, :ref:`velocity<class_InputEventMouseMotion_property_velocity>` restituisce ``(0, 0)`` perché il cursore del mouse è nascosto e bloccato. Usa :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` per mirare con il mouse attraverso la modalità del mouse :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

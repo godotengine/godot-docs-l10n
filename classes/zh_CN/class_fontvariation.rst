@@ -167,7 +167,7 @@ FontVariation
 - |void| **set_palette_custom_colors**\ (\ value\: :ref:`PackedColorArray<class_PackedColorArray>`\ )
 - :ref:`PackedColorArray<class_PackedColorArray>` **get_palette_custom_colors**\ (\ )
 
-An array of colors to override predefined palette. Use ``Color(0, 0, 0, 0)``, to keep predefined palette color at specific position.
+用于覆盖预定义调色板的颜色数组。在特定位置使用 ``Color(0, 0, 0, 0)`` 以保留预定义调色板中的原有颜色。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
@@ -186,7 +186,7 @@ An array of colors to override predefined palette. Use ``Color(0, 0, 0, 0)``, to
 - |void| **set_palette_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_palette_index**\ (\ )
 
-A palette index.
+一个调色板索引。
 
 .. rst-class:: classref-item-separator
 

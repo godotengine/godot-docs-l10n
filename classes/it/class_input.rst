@@ -828,25 +828,25 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 :ref:`Dictionary<class_Dictionary>` **get_joy_info**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_info>`
 
-Returns a dictionary with extra platform-specific information about the device, e.g. the raw gamepad name from the OS or the Steam Input index.
+Restituisce un dizionario con ulteriori informazioni sul dispositivo, specifiche per la piattaforma, ad esempio il nome grezzo del gamepad dal sistema operativo o l'indice per Steam Input.
 
-On Windows, Linux, macOS, and iOS, the dictionary contains the following fields:
+Su Windows, Linux, macOS e iOS, il dizionario contiene i seguenti campi:
 
-\ ``raw_name``: The name of the controller as it came from the OS, before getting renamed by the controller database.
+\ ``raw_name``: Il nome del controller così come è stato fornito dall'OS, prima di essere rinominato dal database dei controller.
 
-\ ``vendor_id``: The USB vendor ID of the device.
+\ ``vendor_id``: L'ID fornitore USB del dispositivo.
 
-\ ``product_id``: The USB product ID of the device.
+\ ``product_id``: l'ID prodotto USB del dispositivo.
 
-\ ``serial_number``: The serial number of the device. This key won't be present if the serial number is unavailable.
+\ ``serial_number``: Il numero di serie del dispositivo. Questa chiave non sarà presente se il numero di serie non è disponibile.
 
-The dictionary can also include the following fields under selected platforms:
+Il dizionario può includere anche i seguenti campi per alcune piattaforme:
 
-\ ``steam_input_index``: The Steam Input gamepad index (Windows, Linux, and macOS only). If the device is not a Steam Input device this key won't be present.
+\ ``steam_input_index``: l'indice Steam Input del gamepad (solo su Windows, Linux e macOS). Se il dispositivo non è un dispositivo Steam Input questa chiave non sarà presente.
 
-\ ``xinput_index``: The index of the controller in the XInput system (Windows only). This key won't be present for devices not handled by XInput.
+\ ``xinput_index``: l'indice del controller nel sistema XInput (solo su Windows). Questa chiave non sarà presente sui dispositivi non gestiti da XInput.
 
-\ **Note:** The returned dictionary is always empty on Android and Web.
+\ **Nota:** Il dizionario restituito è sempre vuoto su Android e Web.
 
 .. rst-class:: classref-item-separator
 
@@ -1174,9 +1174,9 @@ Restituisce ``true`` se è premuto una qualsiasi azione, tasto, pulsante del joy
 
 :ref:`bool<class_bool>` **is_joy_button_pressed**\ (\ device\: :ref:`int<class_int>`, button\: :ref:`JoyButton<enum_@GlobalScope_JoyButton>`\ ) |const| :ref:`🔗<class_Input_method_is_joy_button_pressed>`
 
-Returns ``true`` if you are pressing the joypad button at index ``button``.
+Restituisce ``true`` se si sta premendo il pulsante del joypad all'indice ``button``.
 
-\ **Note:** If you want to check if a joypad button was just pressed, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **Nota:** Se vuoi verificare se un pulsante del joypad è stato appena premuto, usa il sistema di azioni di input di Godot con :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` oppure usa il metodo :ref:`Node._input()<class_Node_private_method__input>` in questo modo:
 
 
 .. tabs::
@@ -1185,7 +1185,7 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
 
     func _input(event):
         if event is InputEventJoypadButton and event.is_pressed() and event.button_index == JOY_BUTTON_A:
-            pass # Your code here.
+            pass # Il tuo codice qui.
 
  .. code-tab:: csharp
 
@@ -1193,7 +1193,7 @@ Returns ``true`` if you are pressing the joypad button at index ``button``.
     {
         if (@event is InputEventJoypadButton eventButton && eventButton.Pressed && eventButton.ButtonIndex == JoyButton.A)
         {
-            // Your code here.
+            // Il tuo codice qui.
         }
     }
 
@@ -1326,13 +1326,13 @@ Returns ``true`` if you are pressing the key with the ``keycode`` printed on it.
 
 :ref:`bool<class_bool>` **is_key_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_key_pressed>`
 
-Returns ``true`` if you are pressing the Latin key in the current keyboard layout. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant.
+Restituisce ``true`` se si sta premendo il tasto latino nel layout di tastiera attuale. È possibile passare una costante di :ref:`Key<enum_@GlobalScope_Key>`.
 
-\ :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` is only recommended over :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` in non-game applications. This ensures that shortcut keys behave as expected depending on the user's keyboard layout, as keyboard shortcuts are generally dependent on the keyboard layout in non-game applications. If in doubt, use :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
+\ :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` è consigliato solo rispetto a :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` in applicazioni non di gioco. Ciò garantisce che i tasti di scelta rapida si comportino come previsto a seconda del layout di tastiera dell'utente, poiché i tasti di scelta rapida dipendono generalmente dal layout di tastiera in applicazioni non di gioco. In caso di dubbi, usa :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **Nota:** A causa del ghosting delle tastiere, :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` potrebbe restituire ``false`` anche se viene premuto uno dei tasti dell'azione. Consulta `Esempi di input <../tutorials/inputs/input_examples.html#keyboard-events>`__ nella documentazione per maggiori informazioni.
 
-\ **Note:** If you want to check if a key was just pressed by using its keycode, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **Nota:** Se vuoi verificare se un tasto è stato appena premuto tramite il suo codice di tasto, usa il sistema di azioni di input di Godot con :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` oppure usa il metodo :ref:`Node._input()<class_Node_private_method__input>` in questo modo:
 
 
 .. tabs::
@@ -1341,7 +1341,7 @@ Returns ``true`` if you are pressing the Latin key in the current keyboard layou
 
     func _input(event):
         if event is InputEventKey and not event.is_echo() and event.is_pressed() and event.keycode == KEY_SPACE:
-            pass # Your code here.
+            pass # Il tuo codice qui.
 
  .. code-tab:: csharp
 
@@ -1349,7 +1349,7 @@ Returns ``true`` if you are pressing the Latin key in the current keyboard layou
     {
         if (@event is InputEventKey eventKey && !eventKey.IsEcho() && eventKey.Pressed && eventKey.Keycode == Key.Space)
         {
-            // Your code here.
+            // Il tuo codice qui.
         }
     }
 
@@ -1365,9 +1365,9 @@ Returns ``true`` if you are pressing the Latin key in the current keyboard layou
 
 :ref:`bool<class_bool>` **is_mouse_button_pressed**\ (\ button\: :ref:`MouseButton<enum_@GlobalScope_MouseButton>`\ ) |const| :ref:`🔗<class_Input_method_is_mouse_button_pressed>`
 
-Returns ``true`` if you are pressing the mouse button specified with :ref:`MouseButton<enum_@GlobalScope_MouseButton>`.
+Restituisce ``true`` se si sta premendo il pulsante del mouse specificato con :ref:`MouseButton<enum_@GlobalScope_MouseButton>`.
 
-\ **Note:** If you want to check if a mouse button was just pressed, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **Nota:** Se vuoi verificare se un pulsante del mouse è stato appena premuto, usa il sistema di azioni di input di Godot con :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` oppure usa il metodo :ref:`Node._input()<class_Node_private_method__input>` in questo modo:
 
 
 .. tabs::
@@ -1376,7 +1376,7 @@ Returns ``true`` if you are pressing the mouse button specified with :ref:`Mouse
 
     func _input(event):
         if event is InputEventMouseButton and event.is_pressed() and event.button_index == MOUSE_BUTTON_LEFT:
-            pass # Your code here.
+            pass # Il tuo codice qui.
 
  .. code-tab:: csharp
 
@@ -1384,7 +1384,7 @@ Returns ``true`` if you are pressing the mouse button specified with :ref:`Mouse
     {
         if (@event is InputEventMouseButton eventMouseButton && eventMouseButton.Pressed && eventMouseButton.ButtonIndex == MouseButton.Left)
         {
-            // Your code here.
+            // Il tuo codice qui.
         }
     }
 
@@ -1400,13 +1400,13 @@ Returns ``true`` if you are pressing the mouse button specified with :ref:`Mouse
 
 :ref:`bool<class_bool>` **is_physical_key_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_physical_key_pressed>`
 
-Returns ``true`` if you are pressing the key in the physical location on the 101/102-key US QWERTY keyboard. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant.
+Restituisce ``true`` se si sta premendo il tasto nella posizione fisica sulla tastiera QWERTY statunitense a 101/102 tasti. È possibile passare una costante di :ref:`Key<enum_@GlobalScope_Key>`.
 
-\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` is recommended over :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` for in-game actions, as it will make :kbd:`W`/:kbd:`A`/:kbd:`S`/:kbd:`D` layouts work regardless of the user's keyboard layout. :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` will also ensure that the top row number keys work on any keyboard layout. If in doubt, use :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
+\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` è consigliato rispetto a :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` per le azioni di gioco, poiché farà funzionare i layout :kbd:`W`/:kbd:`A`/:kbd:`S`/:kbd:`D` a prescindere dal layout della tastiera dell'utente. :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` garantirà inoltre che i tasti numerici della riga superiore funzionino su qualsiasi layout di tastiera. In caso di dubbi, usa :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **Nota:** A causa del ghosting delle tastiere, :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` potrebbe restituire ``false`` anche se viene premuto uno dei tasti dell'azione. Consulta `Esempi di input <../tutorials/inputs/input_examples.html#keyboard-events>`__ nella documentazione per maggiori informazioni.
 
-\ **Note:** If you want to check if a key was just pressed by using its physical keycode, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **Nota:** Se vuoi verificare se un tasto è stato appena premuto tramite il suo codice di tasto fisico, usa il sistema di azioni di input di Godot con :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` oppure usa il metodo :ref:`Node._input()<class_Node_private_method__input>` in questo modo:
 
 
 .. tabs::
@@ -1415,7 +1415,7 @@ Returns ``true`` if you are pressing the key in the physical location on the 101
 
     func _input(event):
         if event is InputEventKey and not event.is_echo() and event.is_pressed() and event.physical_keycode == KEY_SPACE:
-            pass # Your code here.
+            pass # Il tuo codice qui.
 
  .. code-tab:: csharp
 
@@ -1423,7 +1423,7 @@ Returns ``true`` if you are pressing the key in the physical location on the 101
     {
         if (@event is InputEventKey eventKey && !eventKey.IsEcho() && eventKey.Pressed && eventKey.PhysicalKeycode == Key.Space)
         {
-            // Your code here.
+            // Il tuo codice qui.
         }
     }
 
@@ -1772,21 +1772,21 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
 
 |void| **start_joy_vibration**\ (\ device\: :ref:`int<class_int>`, weak_magnitude\: :ref:`float<class_float>`, strong_magnitude\: :ref:`float<class_float>`, duration\: :ref:`float<class_float>` = 0\ ) :ref:`🔗<class_Input_method_start_joy_vibration>`
 
-Starts to vibrate the joypad. See also :ref:`has_joy_vibration()<class_Input_method_has_joy_vibration>` and :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`.
+Inizia a far vibrare il joypad. Vedi anche :ref:`has_joy_vibration()<class_Input_method_has_joy_vibration>` and :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`.
 
-Joypads usually come with two rumble motors, a strong and a weak one.
+I joypad solitamente sono dotati di due motori di vibrazione, uno forte e uno debole.
 
-\ ``weak_magnitude`` is the strength of the weak motor (between ``0.0`` and ``1.0``).
+\ ``weak_magnitude`` è l'intensità del motore debole (tra ``0.0`` e ``1.0``).
 
-\ ``strong_magnitude`` is the strength of the strong motor (between ``0.0`` and ``1.0``).
+\ ``strong_magnitude`` è l'intensità del motore forte (tra ``0.0`` e ``1.0``).
 
-\ ``duration`` is the duration of the effect in seconds (a duration of ``0.0`` will try to play the vibration as long as possible, which is about 65 seconds).
+\ ``duration`` è la durata dell'effetto in secondi (una durata di ``0.0`` proverà a riprodurre la vibrazione il più a lungo possibile, ovvero circa 65 secondi).
 
-The vibration can be stopped early by calling :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
+È possibile interrompere la vibrazione in anticipo chiamando :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
 
-See also :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` and :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`.
+Vedi anche :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` and :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`.
 
-\ **Note:** For macOS, vibration is only supported in macOS 11 and later. When connected via USB, vibration is only supported for major brand controllers (except Xbox One and Xbox Series X/S controllers) due to macOS limitations.
+\ **Nota:** Per macOS, la vibrazione è supportata solo a partire da macOS 11. Quando connesso tramite USB, la vibrazione è supportata solo per i controller delle principali marche (ad eccezione dei controller Xbox One e Xbox Series X/S) a causa delle limitazioni di macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1828,21 +1828,21 @@ Arresta la vibrazione del joypad avviata con :ref:`start_joy_vibration()<class_I
 
 |void| **vibrate_handheld**\ (\ duration_ms\: :ref:`int<class_int>` = 500, amplitude\: :ref:`float<class_float>` = -1.0\ ) :ref:`🔗<class_Input_method_vibrate_handheld>`
 
-Vibrate the handheld device for the specified duration in milliseconds.
+Vibra il dispositivo portatile per la durata specificata in millisecondi.
 
-\ ``amplitude`` is the strength of the vibration, as a value between ``0.0`` and ``1.0``. If set to ``-1.0``, the default vibration strength of the device is used.
+\ ``amplitude`` è l'intensità della vibrazione, come valore compreso tra ``0.0`` e ``1.0``. Se impostato su ``-1.0``, viene utilizzata l'intensità di vibrazione predefinita del dispositivo.
 
-\ **Note:** This method is implemented on Android, iOS, and Web. It has no effect on other platforms.
+\ **Nota:** Questo metodo è implementato su Android, iOS e Web. Non ha effetto su altre piattaforme.
 
-\ **Note:** For Android, :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` requires enabling the ``VIBRATE`` permission in the export preset. Otherwise, :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` will have no effect.
+\ **Nota:** Per Android, :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` richiede di abilitare l'autorizzazione ``VIBRATE`` nella preimpostazione d'esportazione. Altrimenti, :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` non avrà effetto.
 
-\ **Note:** For iOS, specifying the duration is only supported in iOS 13 and later.
+\ **Nota:** Per iOS, specificare la durata è supportato solo da iOS 13 in poi.
 
-\ **Note:** For Web, the amplitude cannot be changed.
+\ **Nota:** Per Web, l'intensità non può essere cambiata.
 
-\ **Note:** Some web browsers such as Safari and Firefox for Android do not support :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>`.
+\ **Nota:** Alcuni browser web come Safari e Firefox per Android non supportano :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>`.
 
-\ **Note:** Device settings such as vibration on/off, "do not disturb" mode or specific haptic feedback on/off may prevent :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` effects.
+\ **Nota:** Le impostazioni del dispositivo, come l'abilitazione della vibrazione, di specifici feedback aptici, o della modalità "Non disturbare" potrebbero impedire l'effetto di :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>`.
 
 .. rst-class:: classref-item-separator
 

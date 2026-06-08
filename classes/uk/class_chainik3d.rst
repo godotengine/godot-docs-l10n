@@ -16,9 +16,9 @@ ChainIK3D
 Опис
 --------
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that automatically generates a joint list from the bones between the root bone and the end bone.
+Базовий клас :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`, який автоматично генерує список суглобів на основі кісток між кореневою та кінцевою кістками.
 
-\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **Примітка:** Усі методи цього класу приймають параметр ``index``. Цей параметр визначає, який запис зі списку налаштувань повернути, якщо IK має кілька записів (наприклад, ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 

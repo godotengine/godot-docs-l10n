@@ -7,16 +7,16 @@ AudioEffectBandLimitFilter
 
 **继承：** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a band-limit filter to an audio bus.
+为音频总线添加一个带限滤波器。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-A "band-limit" filter attenuates the frequencies at :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, and allows frequencies outside the frequency threshold to pass unchanged. It is a wider and weaker version of :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`, and is the opposite of :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
+带限（Band-limit）滤波器会对 :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` 处的频率进行衰减，同时允许该频率阈值之外的频率不受影响地通过。它是 :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`\ （陷波滤波器）的一个更宽、更弱的版本，并且与 :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`\ （带通滤波器）的作用正好相反。
 
-This filter can be used to give more room for other sounds to play at that frequency.
+这种滤波器可以用来为其他声音在该频率上腾出更多空间。
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ This filter can be used to give more room for other sounds to play at that frequ
 
 - :doc:`音频总线 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

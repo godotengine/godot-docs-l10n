@@ -726,7 +726,7 @@ HSL OK 颜色模型圆形色彩空间。
 
 :ref:`Texture2D<class_Texture2D>` **color_copy** :ref:`🔗<class_ColorPicker_theme_icon_color_copy>`
 
-The icon for the button that copies the color in text format to the clipboard.
+用于将颜色以文本格式复制到剪贴板的按钮的图标。
 
 .. rst-class:: classref-item-separator
 

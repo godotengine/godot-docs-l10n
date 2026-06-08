@@ -114,7 +114,7 @@ DPITexture
 - |void| **set_fix_alpha_border**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_fix_alpha_border**\ (\ )
 
-If ``true``, puts pixels of the same surrounding color in transition from transparent to opaque areas. For textures displayed with bilinear filtering, this helps to reduce the outline effect when exporting images from an image editor.
+Якщо ``true``, пікселі, що мають той самий колір фону, розміщуються у перехідній зоні між прозорими та непрозорими ділянками. Для текстур, що відображаються з білінійною фільтрацією, це допомагає зменшити ефект контурів під час експорту зображень із графічного редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -131,11 +131,11 @@ If ``true``, puts pixels of the same surrounding color in transition from transp
 - |void| **set_premult_alpha**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_premult_alpha**\ (\ )
 
-An alternative to fixing darkened borders with :ref:`fix_alpha_border<class_DPITexture_property_fix_alpha_border>` is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. A premultiplied alpha texture requires specific materials to be displayed correctly:
+Альтернативою виправленню затемнених країв за допомогою :ref:`fix_alpha_border<class_DPITexture_property_fix_alpha_border>` є використання альфа-каналу з попереднім множенням. Увімкнувши цю опцію, текстура буде перетворена у цей формат. Для коректного відображення текстури з попереднім множенням альфа-каналу необхідні спеціальні матеріали:
 
-- In 2D, a :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` will need to be created and configured to use the :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on :ref:`CanvasItem<class_CanvasItem>`\ s that use this texture. In custom ``canvas_item`` shaders, ``render_mode blend_premul_alpha;`` should be used.
+- У 2D потрібно створити :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` і налаштувати його на використання режиму змішування :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` на :ref:`CanvasItem<class_CanvasItem>`\ s, які використовують цю текстуру. У власних шейдерах ``canvas_item`` слід використовувати ``render_mode blend_premul_alpha;``.
 
-- In 3D, a :ref:`BaseMaterial3D<class_BaseMaterial3D>` will need to be created and configured to use the :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on materials that use this texture. In custom ``spatial`` shaders, ``render_mode blend_premul_alpha;`` should be used.
+- У 3D потрібно створити :ref:`BaseMaterial3D<class_BaseMaterial3D>` та налаштувати його на використання режиму змішування :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` для матеріалів, що використовують цю текстуру. У власних шейдерах ``spatial`` слід використовувати ``render_mode blend_premul_alpha;``.
 
 .. rst-class:: classref-item-separator
 

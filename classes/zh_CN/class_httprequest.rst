@@ -14,15 +14,15 @@ HTTPRequest
 描述
 ----
 
-A node with the ability to send HTTP requests. Uses :ref:`HTTPClient<class_HTTPClient>` internally.
+一个具备发送 HTTP 请求能力的节点。它在内部使用了 :ref:`HTTPClient<class_HTTPClient>`\ 。
 
-Can be used to make HTTP requests, i.e. download or upload files or web content via HTTP.
+可用于发起 HTTP 请求，例如通过 HTTP 下载或上传文件及网页内容。
 
-\ **Warning:** See the notes and warnings on :ref:`HTTPClient<class_HTTPClient>` for limitations, especially regarding TLS security.
+\ **警告：** 关于各种限制（尤其是 TLS 安全性方面），请参阅 :ref:`HTTPClient<class_HTTPClient>` 上的相关说明和警告。
 
-\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+\ **注意：** 导出到 Android 平台时，请务必在导出项目或使用一键部署之前，在 Android 导出预设中启用 ``INTERNET``\ （网络访问）权限。否则，Android 系统会拦截任何形式的网络通信。
 
-\ **Example:** Contact a REST API and print one of its returned fields:
+\ **示例：** 调用一个 REST API 并打印其返回的其中一个字段：
 
 
 .. tabs::
@@ -30,52 +30,52 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
  .. code-tab:: gdscript
 
     func _ready():
-        # Create an HTTP request node and connect its completion signal.
+        # 创建一个 HTTP 请求节点，并连接它的完成信号。
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # Perform a GET request. The URL below returns JSON as of writing.
+        # 执行一个 GET 请求。编写（这段代码）时，下方的 URL 会返回 JSON 格式的数据。
         var error = http_request.request("https://httpbin.org/get")
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-        # Perform a POST request. The URL below returns JSON as of writing.
-        # Note: Don't make simultaneous requests using a single HTTPRequest node.
-        # The snippet below is provided for reference only.
+        # 执行一个 POST 请求。编写（这段代码）时，下方的 URL 会返回 JSON 格式的数据。
+        # 注意：不要使用单个 HTTPRequest 节点同时发起多个请求。
+        # 下面提供的代码片段仅供参考。
         var body = JSON.stringify({"name": "Godette"})
         error = http_request.request("https://httpbin.org/post", [], HTTPClient.METHOD_POST, body)
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-    # Called when the HTTP request is completed.
+    # 当 HTTP 请求完成时被调用。
     func _http_request_completed(result, response_code, headers, body):
         var json = JSON.new()
         json.parse(body.get_string_from_utf8())
         var response = json.get_data()
 
-        # Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
+        # 将打印出 HTTPRequest 节点所使用的用户代理字符串（该字符串由 httpbin.org 识别）。
         print(response.headers["User-Agent"])
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        // Create an HTTP request node and connect its completion signal.
+        // 创建一个 HTTP 请求节点，并连接它的完成信号。
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // Perform a GET request. The URL below returns JSON as of writing.
+        // 执行一个 GET 请求。编写（这段代码）时，下方的 URL 会返回 JSON 格式的数据。
         Error error = httpRequest.Request("https://httpbin.org/get");
         if (error != Error.Ok)
         {
             GD.PushError("An error occurred in the HTTP request.");
         }
 
-        // Perform a POST request. The URL below returns JSON as of writing.
-        // Note: Don't make simultaneous requests using a single HTTPRequest node.
-        // The snippet below is provided for reference only.
+        // 执行一个 POST 请求。编写（这段代码）时，下方的 URL 会返回 JSON 格式的数据。
+        // 注意：不要使用单个 HTTPRequest 节点同时发起多个请求。
+        // 下面提供的代码片段仅供参考。
         string body = Json.Stringify(new Godot.Collections.Dictionary
         {
             { "name", "Godette" }
@@ -87,20 +87,20 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
         }
     }
 
-    // Called when the HTTP request is completed.
+    // 在 HTTP 请求完成时被调用。
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         var json = new Json();
         json.Parse(body.GetStringFromUtf8());
         var response = json.GetData().AsGodotDictionary();
 
-        // Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
+        // 将打印出 HTTPRequest 节点所使用的用户代理字符串（该字符串由 httpbin.org 识别）。
         GD.Print((response["headers"].AsGodotDictionary())["User-Agent"]);
     }
 
 
 
-\ **Example:** Load an image using **HTTPRequest** and display it:
+\ **示例：** 使用 **HTTPRequest** 加载一张图片并显示它：
 
 
 .. tabs::
@@ -108,17 +108,17 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
  .. code-tab:: gdscript
 
     func _ready():
-        # Create an HTTP request node and connect its completion signal.
+        # 创建一个 HTTP 请求节点，并连接它的完成信号。
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # Perform the HTTP request. The URL below returns a PNG image as of writing.
+        # 执行 HTTP 请求。编写（这段代码）时，下方的 URL 会返回一张 PNG 格式的图片。
         var error = http_request.request("https://placehold.co/512.png")
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-    # Called when the HTTP request is completed.
+    # 当 HTTP 请求完成时被调用。
     func _http_request_completed(result, response_code, headers, body):
         if result != HTTPRequest.RESULT_SUCCESS:
             push_error("Image couldn't be downloaded. Try a different image.")
@@ -130,7 +130,7 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
         var texture = ImageTexture.create_from_image(image)
 
-        # Display the image in a TextureRect node.
+        # 在 TextureRect 节点中显示这张图片。
         var texture_rect = TextureRect.new()
         add_child(texture_rect)
         texture_rect.texture = texture
@@ -139,12 +139,12 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
     public override void _Ready()
     {
-        // Create an HTTP request node and connect its completion signal.
+        // 创建一个 HTTP 请求节点，并连接它的完成信号。
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // Perform the HTTP request. The URL below returns a PNG image as of writing.
+        // 执行 HTTP 请求。在编写（这段代码）时，下方的 URL 会返回一张 PNG 格式的图片。
         Error error = httpRequest.Request("https://placehold.co/512.png");
         if (error != Error.Ok)
         {
@@ -152,7 +152,7 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
         }
     }
 
-    // Called when the HTTP request is completed.
+    // 当 HTTP 请求完成时被调用。
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         if (result != (long)HttpRequest.Result.Success)
@@ -168,7 +168,7 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
         var texture = ImageTexture.CreateFromImage(image);
 
-        // Display the image in a TextureRect node.
+        // 在 TextureRect 节点中显示这张图片。
         var textureRect = new TextureRect();
         AddChild(textureRect);
         textureRect.Texture = texture;
@@ -176,7 +176,7 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
 
 
-\ **Note:** **HTTPRequest** nodes will automatically handle decompression of response bodies. An ``Accept-Encoding`` header will be automatically added to each of your requests, unless one is already specified. Any response with a ``Content-Encoding: gzip`` header will automatically be decompressed and delivered to you as uncompressed bytes.
+\ **注意：** **HTTPRequest** 节点会自动处理响应体（response bodies）的解压缩。除非你已经手动指定了，否则引擎会自动为你发出的每一个请求添加一个 ``Accept-Encoding`` 请求头。因此，任何带有 ``Content-Encoding: gzip`` 响应头的返回数据，都会被自动解压缩，并以未压缩的字节形式直接交给你。
 
 .. rst-class:: classref-introduction-group
 

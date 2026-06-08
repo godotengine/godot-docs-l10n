@@ -131,9 +131,9 @@ Returns the marker data for this marker. This can return a :ref:`String<class_St
 
 |void| **set_marker_data**\ (\ marker_data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_OpenXRMarkerTracker_method_set_marker_data>`
 
-Sets the marker data for this marker.
+Imposta i dati del marcatore per questo marcatore.
 
-\ **Note:** This should only be set by marker discovery logic.
+\ **Nota:** Questi si dovrebbero impostare soltanto dalla logica di individuazione dei marcatori.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

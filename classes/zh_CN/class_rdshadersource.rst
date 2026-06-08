@@ -101,7 +101,7 @@ RDShaderSource
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's any hit stage.
+着色器“任意命中”阶段的源代码。
 
 .. rst-class:: classref-item-separator
 
@@ -118,7 +118,7 @@ Source code for the shader's any hit stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's closest hit stage.
+着色器“最近命中”阶段的源代码。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ Source code for the shader's closest hit stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's intersection stage.
+着色器“相交”阶段的源代码。
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ Source code for the shader's intersection stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's miss stage.
+着色器“未命中”阶段的源代码。
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ Source code for the shader's miss stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's ray generation stage.
+着色器“光线生成”阶段的源代码。
 
 .. rst-class:: classref-item-separator
 

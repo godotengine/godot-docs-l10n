@@ -64,9 +64,9 @@ CameraAttributes
 - |void| **set_auto_exposure_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_auto_exposure_enabled**\ (\ )
 
-If ``true``, enables the tonemapping auto exposure mode of the scene renderer. If ``true``, the renderer will automatically determine the exposure setting to adapt to the scene's illumination and the observed light.
+如果为 ``true``\ ，启用场景渲染器的色调映射自动曝光模式。如果为 ``true``\ ，渲染器将自动确定曝光设置，以适应场景的照明和观察到的光线。
 
-\ **Note:** Auto-exposure is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **注意：**\ 自动曝光仅在 Forward+ 渲染方法中受支持，在 Mobile 或 Compatibility 中不受支持。
 
 .. rst-class:: classref-item-separator
 

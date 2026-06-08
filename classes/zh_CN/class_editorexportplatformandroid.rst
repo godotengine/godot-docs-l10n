@@ -2889,11 +2889,11 @@ WallpaperService 必须要求此权限，确保只能系统能够进行绑定。
 
 :ref:`Color<class_Color>` **splash_screen/background_color** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/background_color>`
 
-The background color used for the system splash screen window.
+用于系统启动闪屏（Splash Screen）窗口的背景颜色。
 
-If not set, it will fallback to :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
+如果没有设置，它将回退使用 :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>` 的颜色。
 
-\ **Note:** This is only applied if :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` is enabled.
+\ **注意：** 此设置仅在启用了 :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`\ （使用 Gradle 构建）时才会生效。
 
 .. rst-class:: classref-item-separator
 
@@ -2905,9 +2905,9 @@ If not set, it will fallback to :ref:`launcher_icons/adaptive_background_432x432
 
 :ref:`String<class_String>` **splash_screen/branding_image** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/branding_image>`
 
-System splash screen branding image file. If left empty, no branding image will be used. See `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
+系统启动屏的品牌图像文件。如果留空，则不会使用任何品牌图像。具体尺寸规范请参阅 `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__\ （启动屏尺寸文档）。
 
-\ **Note:** Can be used to set an image to be shown at the bottom of the splash screen.
+\ **注意：** 此项可用于设置显示在启动屏底部的图像。
 
 .. rst-class:: classref-item-separator
 
@@ -2919,7 +2919,7 @@ System splash screen branding image file. If left empty, no branding image will 
 
 :ref:`bool<class_bool>` **splash_screen/disable_godot_boot_splash** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/disable_godot_boot_splash>`
 
-If ``true``, Godot's boot splash will not be shown, and the system boot splash will remain visible for a longer time, until the mainloop starts.
+如果设为 ``true``\ ，Godot 自带的启动画面将不会显示，而系统的启动画面会保持可见更长时间，直到主循环（mainloop）正式启动。
 
 .. rst-class:: classref-item-separator
 
@@ -2931,9 +2931,9 @@ If ``true``, Godot's boot splash will not be shown, and the system boot splash w
 
 :ref:`String<class_String>` **splash_screen/icon** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/icon>`
 
-System splash screen icon file. If left empty, it will fall back to :ref:`launcher_icons/adaptive_foreground_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_foreground_432x432>`. See `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
+系统启动屏的图标文件。如果此处留空，将自动回退使用 :ref:`launcher_icons/adaptive_foreground_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_foreground_432x432>`\ （即自适应启动图标的前景图）。 查看 `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
 
-\ **Note:** You can provide an `AnimatedVectorDrawable (AVD) <https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable>`__ XML. However, the XML file will only be used if :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` is enabled. If not, it will fall back to :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
+\ **Note:** 你可以提供一个 `AnimatedVectorDrawable (AVD) <https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable>`__ XML 文件。但是，该 XML 文件仅在启用 :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>`\ （使用 Gradle 构建）时才会生效。如果没有启用，则会回退到使用 :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`\ （即自适应启动器图标的背景图）。
 
 .. rst-class:: classref-item-separator
 

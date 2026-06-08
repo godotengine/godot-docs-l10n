@@ -54,7 +54,7 @@ Descriptions des propriétés
 
 Le rayon de la sphère de l'attracteur en unités 3D.
 
-\ **Note: ** Des ellipses étirées peuvent être obtenues en utilisant une échelle non uniforme sur le nœud **GPUParticlesAttractorSphere3D**.
+\ **Note : ** Des ellipses étirées peuvent être obtenues en utilisant une échelle non uniforme sur le nœud **GPUParticlesAttractorSphere3D**.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -427,9 +427,9 @@ enum **Scaling3DMode**: :ref:`🔗<enum_Viewport_Scaling3DMode>`
 
 :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_NEAREST** = ``5``
 
-Use nearest-neighbor filtering for the viewport's 3D buffer. This looks crisper than :ref:`SCALING_3D_MODE_BILINEAR<class_Viewport_constant_SCALING_3D_MODE_BILINEAR>` and has no additional rendering cost. The amount of scaling can be set using :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Values greater than ``1.0`` are not supported and bilinear downsampling will be used instead. A value of ``1.0`` disables scaling.
+对该视口的 3D 缓冲区使用最近邻过滤。这看起来比 :ref:`SCALING_3D_MODE_BILINEAR<class_Viewport_constant_SCALING_3D_MODE_BILINEAR>` 更清晰，且没有额外的渲染成本。缩放的程度可以使用 :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 设置。不支持大于 ``1.0`` 的值，将改用双线性降采样。\ ``1.0`` 的值将禁用缩放。
 
-\ **Note:** When using the **Nearest** scaling mode, to avoid uneven pixel scaling, it's highly recommended to use a value equal to an integer divisor with a dividend of ``1``. For example, it's best to use a scale of ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5), and so on.
+\ **注意：**\ 使用 **最近邻** 缩放模式时，为了避免像素缩放不均匀，强烈建议使用以 ``1`` 为被除数的整数除法的值。例如，最好使用 ``0.5`` (1/2)、\ ``0.3333`` (1/3)、\ ``0.25`` (1/4)、\ ``0.2`` (1/5) 等缩放比例。
 
 .. _class_Viewport_constant_SCALING_3D_MODE_MAX:
 
@@ -725,11 +725,11 @@ enum **DebugDraw**: :ref:`🔗<enum_Viewport_DebugDraw>`
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_WIREFRAME** = ``4``
 
-Objects are displayed as wireframe models.
+物体将以线框模型的形式显示。
 
-\ **Note:** :ref:`RenderingServer.set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` must be called before loading any meshes for wireframes to be visible when using the Compatibility renderer.
+\ **注意：** 在使用兼容（Compatibility）渲染器时，必须先在加载任何网格体之前调用 :ref:`RenderingServer.set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` 方法，线框才会正常显示。
 
-\ **Note:** In the Compatibility renderer, backfaces are always visible when using wireframe rendering. In the Forward+ and Mobile renderers, wireframes follow the material's backface culling properties instead.
+\ **注意：** 在兼容渲染器中，使用线框渲染时，物体的背面（Backfaces）始终是可见的。而在前向+（Forward+）和移动端（Mobile）渲染器中，线框的背面是否可见，会遵循材质自身的背面剔除（Backface Culling）属性设置。
 
 .. _class_Viewport_constant_DEBUG_DRAW_NORMAL_BUFFER:
 
@@ -959,9 +959,9 @@ Objects are displayed as wireframe models.
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_AREA_LIGHTS** = ``27``
 
-Draws the cluster used by :ref:`AreaLight3D<class_AreaLight3D>` nodes to optimize light rendering.
+绘制 :ref:`AreaLight3D<class_AreaLight3D>` 节点所使用的簇（cluster），以优化光照渲染。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：** 仅在使用 Forward+（前向+）渲染方法时受支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_AREA_LIGHT_ATLAS:
 
@@ -969,9 +969,9 @@ Draws the cluster used by :ref:`AreaLight3D<class_AreaLight3D>` nodes to optimiz
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_AREA_LIGHT_ATLAS** = ``28``
 
-Draws the atlas used by :ref:`AreaLight3D<class_AreaLight3D>` nodes in the upper left quadrant of the **Viewport**.
+在 **Viewport**\ （视口）的左上角区域，绘制 :ref:`AreaLight3D<class_AreaLight3D>` 节点所使用的图集（atlas）。
 
-\ **Note:** Only supported when using the Forward+ or Mobile rendering method.
+\ **注意：** 仅在使用 Forward+（前向+）或 Mobile（移动端）渲染方法时受支持。
 
 .. rst-class:: classref-item-separator
 
@@ -1025,7 +1025,7 @@ enum **DefaultCanvasItemTextureFilter**: :ref:`🔗<enum_Viewport_DefaultCanvasI
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_PARENT_NODE** = ``4``
 
-The **Viewport** will inherit the filter from its parent :ref:`CanvasItem<class_CanvasItem>` or **Viewport**.
+**Viewport**\ （视口）将继承其父级 :ref:`CanvasItem<class_CanvasItem>` 或 **Viewport** 的滤镜设置。
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_MAX:
 
@@ -1075,7 +1075,7 @@ enum **DefaultCanvasItemTextureRepeat**: :ref:`🔗<enum_Viewport_DefaultCanvasI
 
 :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_PARENT_NODE** = ``3``
 
-The **Viewport** will inherit the repeat mode from its parent :ref:`CanvasItem<class_CanvasItem>` or **Viewport**.
+**Viewport**\ （视口）将继承其父级 :ref:`CanvasItem<class_CanvasItem>` 或 **Viewport** 的重复模式。
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MAX:
 
@@ -1567,13 +1567,13 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_mesh_lod_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mesh_lod_threshold**\ (\ )
 
-The automatic LOD bias to use for meshes rendered within the **Viewport** (this is analogous to :ref:`ReflectionProbe.mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>`). Higher values will use less detailed versions of meshes that have LOD variations generated. If set to ``0.0``, automatic LOD is disabled. Increase :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` to improve performance at the cost of geometry detail.
+在 **Viewport**\ （视口）内渲染网格体时所使用的自动 LOD 偏差值（这与 :ref:`ReflectionProbe.mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>` 属性类似）。数值越高，就会使用细节程度越低的网格版本（前提是该网格体已经生成了 LOD 变体）。如果将其设置为 ``0.0``\ ，则会禁用自动 LOD。增大 :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` 的值，可以通过牺牲几何细节来换取更好的性能。
 
-To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` project setting.
+如果要在根视口上控制此属性，请设置项目设置中的 :ref:`ProjectSettings.rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` 选项。
 
-\ **Note:** Depending on the mesh's attributes (vertex colors, blend shapes, ...), a mesh may have fewer levels of LOD generated to avoid visible distortion of the mesh once it is affected by vertex colors or blend shapes. Meshes with a very low vertex count will also not have any LODs generated, which means this setting will not affect them at all. In general, this setting makes the largest impact on static meshes with a high vertex count.
+\ **注意：** 根据网格体自身的属性（如顶点颜色、混合形状等），生成的 LOD 层级可能会变少，以避免网格在受到顶点颜色或混合形状影响时出现明显的视觉变形。顶点数量极少的网格体也不会生成任何 LOD，这意味着该设置对它们完全不起作用。总的来说，这个设置对顶点数量较多的静态网格体影响最大。
 
-\ **Note:** :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` does not affect :ref:`GeometryInstance3D<class_GeometryInstance3D>` visibility ranges (also known as "manual" LOD or hierarchical LOD).
+\ **注意：** :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` 不会影响 :ref:`GeometryInstance3D<class_GeometryInstance3D>` 的可见性范围（也就是大家常说的“手动”LOD 或层级 LOD）。
 
 .. rst-class:: classref-item-separator
 
@@ -1973,15 +1973,15 @@ To control this property on the root viewport, set the :ref:`ProjectSettings.ren
 - |void| **set_texture_mipmap_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_mipmap_bias**\ (\ )
 
-Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close).
+通过读取更低或更高细节级别的 Mipmap（也称为“纹理 LOD 偏移”），来影响最终纹理的清晰度。负值会让带有 Mipmap 的纹理在远距离观看时更锐利，但颗粒感更重；而正值则会让 Mipmap 纹理变得更模糊（即使在近距离观看时也是如此）。
 
-Enabling temporal antialiasing (:ref:`use_taa<class_Viewport_property_use_taa>`) will automatically apply a ``-0.5`` offset to this value, while enabling FXAA (:ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`) will automatically apply a ``-0.25`` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of ``-0.75`` is applied to this value.
+启用时间性抗锯齿（\ :ref:`use_taa<class_Viewport_property_use_taa>`\ ）会自动对该值应用 ``-0.5`` 的偏移量，而启用 FXAA（\ :ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`\ ）则会自动应用 ``-0.25`` 的偏移量。如果同时启用了 TAA 和 FXAA，则会应用 ``-0.75`` 的偏移量。
 
-To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` project setting.
+要控制根视口（root viewport）的此属性，请设置 :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` 项目设置。
 
-\ **Note:** If :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` is lower than ``1.0`` (exclusive), :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``log2(scaling_3d_scale) + mipmap_bias``.
+\ **注意：** 如果 :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 小于 ``1.0``\ （不包含 1.0），\ :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` 将用于调整基于该缩放比例在内部自动计算的 Mipmap 偏移量。计算公式为 ``log2(scaling_3d_scale) + mipmap_bias``\ 。
 
-\ **Note:** This property is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this property is always treated as if it was set to ``0.0``.
+\ **注意：** 此属性仅在 Forward+ 和 Mobile 渲染器中受支持，在 Compatibility（兼容）渲染器中不受支持。在 Compatibility 模式下，此属性始终被视为设置为 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 

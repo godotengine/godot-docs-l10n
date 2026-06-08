@@ -1,0 +1,698 @@
+:github_url: hide
+
+.. _class_TileSetAtlasSource:
+
+TileSetAtlasSource
+==================
+
+**Успадковує:** :ref:`TileSetSource<class_TileSetSource>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+
+Експолює текстуру 2D як набір плитки для ресурсу :ref:`TileSet<class_TileSet>`.
+
+.. rst-class:: classref-introduction-group
+
+Опис
+--------
+
+Атлас - сітка з плитки, викладена на фактурі. Кожна плитка в сітці повинна бути виставлена за допомогою :ref:`create_tile()<class_TileSetAtlasSource_method_create_tile>`. Потім за допомогою координат в сітці зараховується плитка.
+
+Кожна плитка може також мати розмір в сітчастих координатах, що робить її більш-менш осередками в атласі.
+
+Альтернативна версія плитки може бути створена за допомогою :ref:`create_alternative_tile()<class_TileSetAtlasSource_method_create_alternative_tile>`, які потім індексуються за допомогою альтернативного ID. Основна плитка (в одній в сітці) має доступ до альтернативного ID до 0.
+
+Кожна черепиця чергується має набір властивостей, які визначаються шарами джерела :ref:`TileSet<class_TileSet>`. Ці властивості зберігаються в об'єкті TileData, який може бути доступним і модифікованим за допомогою :ref:`get_tile_data()<class_TileSetAtlasSource_method_get_tile_data>`.
+
+Як властивості TileData зберігаються безпосередньо в ресурсі TileSetAtlasSource, їх властивості можуть бути використані ``TileSetAtlasSource.set("<coords_x>:<coords_y>/<alternative_id>/<tile_data_property>")``.
+
+.. rst-class:: classref-reftable-group
+
+Властивості
+----------------------
+
+.. table::
+   :widths: auto
+
+   +-----------------------------------+-----------------------------------------------------------------------------------+----------------------+
+   | :ref:`Vector2i<class_Vector2i>`   | :ref:`margins<class_TileSetAtlasSource_property_margins>`                         | ``Vector2i(0, 0)``   |
+   +-----------------------------------+-----------------------------------------------------------------------------------+----------------------+
+   | :ref:`Vector2i<class_Vector2i>`   | :ref:`separation<class_TileSetAtlasSource_property_separation>`                   | ``Vector2i(0, 0)``   |
+   +-----------------------------------+-----------------------------------------------------------------------------------+----------------------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`texture<class_TileSetAtlasSource_property_texture>`                         |                      |
+   +-----------------------------------+-----------------------------------------------------------------------------------+----------------------+
+   | :ref:`Vector2i<class_Vector2i>`   | :ref:`texture_region_size<class_TileSetAtlasSource_property_texture_region_size>` | ``Vector2i(16, 16)`` |
+   +-----------------------------------+-----------------------------------------------------------------------------------+----------------------+
+   | :ref:`bool<class_bool>`           | :ref:`use_texture_padding<class_TileSetAtlasSource_property_use_texture_padding>` | ``true``             |
+   +-----------------------------------+-----------------------------------------------------------------------------------+----------------------+
+
+.. rst-class:: classref-reftable-group
+
+Методи
+------------
+
+.. table::
+   :widths: auto
+
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`clear_tiles_outside_texture<class_TileSetAtlasSource_method_clear_tiles_outside_texture>`\ (\ )                                                                                                                                                                                                                                                                                         |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                               | :ref:`create_alternative_tile<class_TileSetAtlasSource_method_create_alternative_tile>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_id_override\: :ref:`int<class_int>` = -1\ )                                                                                                                                                                                           |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`create_tile<class_TileSetAtlasSource_method_create_tile>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, size\: :ref:`Vector2i<class_Vector2i>` = Vector2i(1, 1)\ )                                                                                                                                                                                                                |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2i<class_Vector2i>`                                     | :ref:`get_atlas_grid_size<class_TileSetAtlasSource_method_get_atlas_grid_size>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                 |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                               | :ref:`get_next_alternative_tile_id<class_TileSetAtlasSource_method_get_next_alternative_tile_id>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const|                                                                                                                                                                                                                               |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>`                                   | :ref:`get_runtime_texture<class_TileSetAtlasSource_method_get_runtime_texture>`\ (\ ) |const|                                                                                                                                                                                                                                                                                                 |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Rect2i<class_Rect2i>`                                         | :ref:`get_runtime_tile_texture_region<class_TileSetAtlasSource_method_get_runtime_tile_texture_region>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                          |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                               | :ref:`get_tile_animation_columns<class_TileSetAtlasSource_method_get_tile_animation_columns>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const|                                                                                                                                                                                                                                   |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                                           | :ref:`get_tile_animation_frame_duration<class_TileSetAtlasSource_method_get_tile_animation_frame_duration>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame_index\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                               | :ref:`get_tile_animation_frames_count<class_TileSetAtlasSource_method_get_tile_animation_frames_count>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const|                                                                                                                                                                                                                         |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` | :ref:`get_tile_animation_mode<class_TileSetAtlasSource_method_get_tile_animation_mode>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const|                                                                                                                                                                                                                                         |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2i<class_Vector2i>`                                     | :ref:`get_tile_animation_separation<class_TileSetAtlasSource_method_get_tile_animation_separation>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const|                                                                                                                                                                                                                             |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                                           | :ref:`get_tile_animation_speed<class_TileSetAtlasSource_method_get_tile_animation_speed>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const|                                                                                                                                                                                                                                       |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                                           | :ref:`get_tile_animation_total_duration<class_TileSetAtlasSource_method_get_tile_animation_total_duration>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const|                                                                                                                                                                                                                     |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2i<class_Vector2i>`                                     | :ref:`get_tile_at_coords<class_TileSetAtlasSource_method_get_tile_at_coords>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const|                                                                                                                                                                                                                                                   |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`TileData<class_TileData>`                                     | :ref:`get_tile_data<class_TileSetAtlasSource_method_get_tile_data>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_tile\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                                   |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2i<class_Vector2i>`                                     | :ref:`get_tile_size_in_atlas<class_TileSetAtlasSource_method_get_tile_size_in_atlas>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const|                                                                                                                                                                                                                                           |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Rect2i<class_Rect2i>`                                         | :ref:`get_tile_texture_region<class_TileSetAtlasSource_method_get_tile_texture_region>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame\: :ref:`int<class_int>` = 0\ ) |const|                                                                                                                                                                                                      |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedVector2Array<class_PackedVector2Array>`                 | :ref:`get_tiles_to_be_removed_on_change<class_TileSetAtlasSource_method_get_tiles_to_be_removed_on_change>`\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, margins\: :ref:`Vector2i<class_Vector2i>`, separation\: :ref:`Vector2i<class_Vector2i>`, texture_region_size\: :ref:`Vector2i<class_Vector2i>`\ )                                                                                |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                             | :ref:`has_room_for_tile<class_TileSetAtlasSource_method_has_room_for_tile>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, size\: :ref:`Vector2i<class_Vector2i>`, animation_columns\: :ref:`int<class_int>`, animation_separation\: :ref:`Vector2i<class_Vector2i>`, frames_count\: :ref:`int<class_int>`, ignored_tile\: :ref:`Vector2i<class_Vector2i>` = Vector2i(-1, -1)\ ) |const| |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                             | :ref:`has_tiles_outside_texture<class_TileSetAtlasSource_method_has_tiles_outside_texture>`\ (\ ) |const|                                                                                                                                                                                                                                                                                     |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`move_tile_in_atlas<class_TileSetAtlasSource_method_move_tile_in_atlas>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, new_atlas_coords\: :ref:`Vector2i<class_Vector2i>` = Vector2i(-1, -1), new_size\: :ref:`Vector2i<class_Vector2i>` = Vector2i(-1, -1)\ )                                                                                                                     |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`remove_alternative_tile<class_TileSetAtlasSource_method_remove_alternative_tile>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_tile\: :ref:`int<class_int>`\ )                                                                                                                                                                                                       |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`remove_tile<class_TileSetAtlasSource_method_remove_tile>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ )                                                                                                                                                                                                                                                                         |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`set_alternative_tile_id<class_TileSetAtlasSource_method_set_alternative_tile_id>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_tile\: :ref:`int<class_int>`, new_id\: :ref:`int<class_int>`\ )                                                                                                                                                                       |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`set_tile_animation_columns<class_TileSetAtlasSource_method_set_tile_animation_columns>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame_columns\: :ref:`int<class_int>`\ )                                                                                                                                                                                                    |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`set_tile_animation_frame_duration<class_TileSetAtlasSource_method_set_tile_animation_frame_duration>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame_index\: :ref:`int<class_int>`, duration\: :ref:`float<class_float>`\ )                                                                                                                                                  |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`set_tile_animation_frames_count<class_TileSetAtlasSource_method_set_tile_animation_frames_count>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frames_count\: :ref:`int<class_int>`\ )                                                                                                                                                                                           |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`set_tile_animation_mode<class_TileSetAtlasSource_method_set_tile_animation_mode>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, mode\: :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>`\ )                                                                                                                                                                     |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`set_tile_animation_separation<class_TileSetAtlasSource_method_set_tile_animation_separation>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, separation\: :ref:`Vector2i<class_Vector2i>`\ )                                                                                                                                                                                       |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                              | :ref:`set_tile_animation_speed<class_TileSetAtlasSource_method_set_tile_animation_speed>`\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, speed\: :ref:`float<class_float>`\ )                                                                                                                                                                                                            |
+   +---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Переліки
+----------------
+
+.. _enum_TileSetAtlasSource_TileAnimationMode:
+
+.. rst-class:: classref-enumeration
+
+enum **TileAnimationMode**: :ref:`🔗<enum_TileSetAtlasSource_TileAnimationMode>`
+
+.. _class_TileSetAtlasSource_constant_TILE_ANIMATION_MODE_DEFAULT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **TILE_ANIMATION_MODE_DEFAULT** = ``0``
+
+В той же час, дивлячись на ідентичність.
+
+.. _class_TileSetAtlasSource_constant_TILE_ANIMATION_MODE_RANDOM_START_TIMES:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **TILE_ANIMATION_MODE_RANDOM_START_TIMES** = ``1``
+
+У випадковому режимі, див. різноманітні.
+
+.. _class_TileSetAtlasSource_constant_TILE_ANIMATION_MODE_MAX:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **TILE_ANIMATION_MODE_MAX** = ``2``
+
+Представляємо розмір :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` enum.
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Константи
+------------------
+
+.. _class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H:
+
+.. rst-class:: classref-constant
+
+**TRANSFORM_FLIP_H** = ``4096`` :ref:`🔗<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>`
+
+Представляє прапорець горизонтального відображення комірки. Слід використовувати безпосередньо з :ref:`TileMapLayer<class_TileMapLayer>` для відображення розміщених плиток шляхом зміни їхніх альтернативних ідентифікаторів.
+
+::
+
+    var alternate_id = $TileMapLayer.get_cell_alternative_tile(Vector2i(2, 2))
+    if not alternate_id & TileSetAtlasSource.TRANSFORM_FLIP_H:
+    # Якщо плитка ще не відображена, відобразити її.
+     $TileMapLayer.set_cell(Vector2i(2, 2), source_id, atlas_coords, alternate_id | TileSetAtlasSource.TRANSFORM_FLIP_H)
+
+\ **Примітка:** Ці перетворення можна комбінувати для виконання еквівалентів поворотів на 0, 90, 180 та 270 градусів, як показано нижче:
+
+::
+
+    enum TileTransform {
+    ROTATE_0 = 0,
+    ROTATE_90 = TileSetAtlasSource.TRANSFORM_TRANSPOSE | TileSetAtlasSource.TRANSFORM_FLIP_H,
+    ROTATE_180 = TileSetAtlasSource.TRANSFORM_FLIP_H | TileSetAtlasSource.TRANSFORM_FLIP_V,
+    ROTATE_270 = TileSetAtlasSource.TRANSFORM_TRANSPOSE | TileSetAtlasSource.TRANSFORM_FLIP_V,
+    }
+
+.. _class_TileSetAtlasSource_constant_TRANSFORM_FLIP_V:
+
+.. rst-class:: classref-constant
+
+**TRANSFORM_FLIP_V** = ``8192`` :ref:`🔗<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_V>`
+
+Представляє вертикальний прапор комірки. Див. :ref:`TRANSFORM_FLIP_H<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>` для використання.
+
+.. _class_TileSetAtlasSource_constant_TRANSFORM_TRANSPOSE:
+
+.. rst-class:: classref-constant
+
+**TRANSFORM_TRANSPOSE** = ``16384`` :ref:`🔗<class_TileSetAtlasSource_constant_TRANSFORM_TRANSPOSE>`
+
+Представляє транспонований прапор комірки. Див. :ref:`TRANSFORM_FLIP_H<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>` для використання.
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описи властивостей
+------------------------------------
+
+.. _class_TileSetAtlasSource_property_margins:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2i<class_Vector2i>` **margins** = ``Vector2i(0, 0)`` :ref:`🔗<class_TileSetAtlasSource_property_margins>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_margins**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
+- :ref:`Vector2i<class_Vector2i>` **get_margins**\ (\ )
+
+Маргіни, у пікселях, щоб згасити походження сітки в текстурі.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_property_separation:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2i<class_Vector2i>` **separation** = ``Vector2i(0, 0)`` :ref:`🔗<class_TileSetAtlasSource_property_separation>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_separation**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
+- :ref:`Vector2i<class_Vector2i>` **get_separation**\ (\ )
+
+Сепарація, в пікселях, між кожною фактурою плитки області сітки.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_property_texture:
+
+.. rst-class:: classref-property
+
+:ref:`Texture2D<class_Texture2D>` **texture** :ref:`🔗<class_TileSetAtlasSource_property_texture>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
+- :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
+
+Текстура атласа.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_property_texture_region_size:
+
+.. rst-class:: classref-property
+
+:ref:`Vector2i<class_Vector2i>` **texture_region_size** = ``Vector2i(16, 16)`` :ref:`🔗<class_TileSetAtlasSource_property_texture_region_size>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_texture_region_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
+- :ref:`Vector2i<class_Vector2i>` **get_texture_region_size**\ (\ )
+
+Базовий розмір тайла в текстурі (у пікселях). Цей розмір має бути більшим або дорівнювати значенню ``tile_size`` TileSet.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_property_use_texture_padding:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **use_texture_padding** = ``true`` :ref:`🔗<class_TileSetAtlasSource_property_use_texture_padding>`
+
+.. rst-class:: classref-property-setget
+
+- |void| **set_use_texture_padding**\ (\ value\: :ref:`bool<class_bool>`\ )
+- :ref:`bool<class_bool>` **get_use_texture_padding**\ (\ )
+
+Якщо ``true``, генерує внутрішню фактуру з додатковою кількістюпікселів навколо кожної плитки. Текстурний наповнювач дозволяє уникнути спільного артефакту, де між плитками з'являються лінії.
+
+Відключення цієї налаштування може призвести до невеликого поліпшення продуктивності, оскільки створення внутрішньої текстури вимагає як пам'яті, так і для обробки часу, коли модифікований ресурс TileSetAtlasSource.
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Описи методів
+--------------------------
+
+.. _class_TileSetAtlasSource_method_clear_tiles_outside_texture:
+
+.. rst-class:: classref-method
+
+|void| **clear_tiles_outside_texture**\ (\ ) :ref:`🔗<class_TileSetAtlasSource_method_clear_tiles_outside_texture>`
+
+Видаліть всі плитки, які не підходять до наявної фактури. Цей метод ітерує по всій плитці джерела, тому рекомендується використовувати :ref:`has_tiles_outside_texture()<class_TileSetAtlasSource_method_has_tiles_outside_texture>` перед рукою.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_create_alternative_tile:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **create_alternative_tile**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_id_override\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileSetAtlasSource_method_create_alternative_tile>`
+
+Створює альтернативну плитку для плитки в координатах ``atlas_coords``. Якщо ``альтернатива_id_override`` є -1, дати йому автоматично сформований унікальний ідентифікатор або призначає його заданий ідентифікатор.
+
+Повертає новий ідентифікатор альтернативи, або -1, якщо альтернатива не може бути створена з наданою ``альтернатива_id_override``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_create_tile:
+
+.. rst-class:: classref-method
+
+|void| **create_tile**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, size\: :ref:`Vector2i<class_Vector2i>` = Vector2i(1, 1)\ ) :ref:`🔗<class_TileSetAtlasSource_method_create_tile>`
+
+Створює нову плитку в координатах ``atlas_coords`` з наданою ``size``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_atlas_grid_size:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2i<class_Vector2i>` **get_atlas_grid_size**\ (\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_atlas_grid_size>`
+
+Повертає розмір сітки атласу, який залежить від того, скільки плиток може поміститися в текстуру. Таким чином, він залежить від розміру :ref:`texture<class_TileSetAtlasSource_property_texture>`, :ref:`margins<class_TileSetAtlasSource_property_margins>` атласу та :ref:`texture_region_size<class_TileSetAtlasSource_property_texture_region_size>` плиток.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_next_alternative_tile_id:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **get_next_alternative_tile_id**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_next_alternative_tile_id>`
+
+Повертає альтернативний ідентифікатор, який поверне наступний виклик методу :ref:`create_alternative_tile()<class_TileSetAtlasSource_method_create_alternative_tile>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_runtime_texture:
+
+.. rst-class:: classref-method
+
+:ref:`Texture2D<class_Texture2D>` **get_runtime_texture**\ (\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_runtime_texture>`
+
+Якщо :ref:`use_texture_padding<class_TileSetAtlasSource_property_use_texture_padding>` має значення ``false``, повертає :ref:`texture<class_TileSetAtlasSource_property_texture>`. В іншому випадку повертає внутрішню :ref:`ImageTexture<class_ImageTexture>`, створену з урахуванням padding.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_runtime_tile_texture_region:
+
+.. rst-class:: classref-method
+
+:ref:`Rect2i<class_Rect2i>` **get_runtime_tile_texture_region**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_runtime_tile_texture_region>`
+
+Повертає область плитки за координатами ``atlas_coords`` для заданого ``frame`` всередині текстури, повернутої методом :ref:`get_runtime_texture()<class_TileSetAtlasSource_method_get_runtime_texture>`.
+
+\ **Примітка:** Якщо :ref:`use_texture_padding<class_TileSetAtlasSource_property_use_texture_padding>` має значення ``false``, повертає те саме, що й :ref:`get_tile_texture_region()<class_TileSetAtlasSource_method_get_tile_texture_region>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_tile_animation_columns:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **get_tile_animation_columns**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_columns>`
+
+Повертає, скільки стовпців плитка на ``atlas_coords`` має в своєму анімаційному макеті.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_tile_animation_frame_duration:
+
+.. rst-class:: classref-method
+
+:ref:`float<class_float>` **get_tile_animation_frame_duration**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_frame_duration>`
+
+Повертає тривалість анімації кадру ``frame_index`` для плитки в координатах ``atlas_coords``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_tile_animation_frames_count:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **get_tile_animation_frames_count**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_frames_count>`
+
+Повертає, як багато анімаційних кадрів має плитку на координатах ``atlas_coords``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_tile_animation_mode:
+
+.. rst-class:: classref-method
+
+:ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **get_tile_animation_mode**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_mode>`
+
+Повертає кахельний анімаційний режим плитки на ``atlas_coords``. Дивись також :ref:`set_tile_animation_mode()<class_TileSetAtlasSource_method_set_tile_animation_mode>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_tile_animation_separation:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2i<class_Vector2i>` **get_tile_animation_separation**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_separation>`
+
+Повертає поділ (як у сітчастій сітці) між координаторами ``atlas_coords``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_tile_animation_speed:
+
+.. rst-class:: classref-method
+
+:ref:`float<class_float>` **get_tile_animation_speed**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_speed>`
+
+Повернення швидкості анімації на координатах ``atlas_coords``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_tile_animation_total_duration:
+
+.. rst-class:: classref-method
+
+:ref:`float<class_float>` **get_tile_animation_total_duration**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_total_duration>`
+
+Повертає сума суми каркасних тривалостей плитки на координатах ``atlas_coords``. Ця вартість повинна бути розділена на швидкість анімації, щоб отримати фактичну тривалість петлі анімації.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_tile_at_coords:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2i<class_Vector2i>` **get_tile_at_coords**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_at_coords>`
+
+Якщо є плитка, що охоплює координати ``atlas_coords``, повертає топ-ліві координати плитки (в його координати ID). ``Vector2i(-1, -1)`` інакше.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_tile_data:
+
+.. rst-class:: classref-method
+
+:ref:`TileData<class_TileData>` **get_tile_data**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_tile\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_data>`
+
+Повернення об'єкта :ref:`TileData<class_TileData>` для координат та альтернативного ID.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_tile_size_in_atlas:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2i<class_Vector2i>` **get_tile_size_in_atlas**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_size_in_atlas>`
+
+Повертає розмір плитки (в системі сітчастих координат) у координатах ``atlas_coords``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_tile_texture_region:
+
+.. rst-class:: classref-method
+
+:ref:`Rect2i<class_Rect2i>` **get_tile_texture_region**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_texture_region>`
+
+Повертає фактуру плитки в фактурі атласу. Для анімаційної плитки, аргумент ``frame`` може бути надана для різних кадрів анімації.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_get_tiles_to_be_removed_on_change:
+
+.. rst-class:: classref-method
+
+:ref:`PackedVector2Array<class_PackedVector2Array>` **get_tiles_to_be_removed_on_change**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, margins\: :ref:`Vector2i<class_Vector2i>`, separation\: :ref:`Vector2i<class_Vector2i>`, texture_region_size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_get_tiles_to_be_removed_on_change>`
+
+Повертає масив координат плиток, ідентифікатор яких буде автоматично видалено під час зміни однієї або кількох із цих властивостей: ``texture``, ``margins``, ``separation`` або ``texture_region_size``. Це можна використовувати для скасування змін, які могли б призвести до втрати даних плиток.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_has_room_for_tile:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_room_for_tile**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, size\: :ref:`Vector2i<class_Vector2i>`, animation_columns\: :ref:`int<class_int>`, animation_separation\: :ref:`Vector2i<class_Vector2i>`, frames_count\: :ref:`int<class_int>`, ignored_tile\: :ref:`Vector2i<class_Vector2i>` = Vector2i(-1, -1)\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_has_room_for_tile>`
+
+Повертає, чи є достатня кімната в апласі, щоб створити/модифікувати плитку з заданими властивостями. Якщо ``ignored_tile`` передбачено, дія як дана плитка не була присутніми в атласі. Це може бути використаний при бажанні змінити властивості плитки.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_has_tiles_outside_texture:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **has_tiles_outside_texture**\ (\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_has_tiles_outside_texture>`
+
+Перевіряє, якщо джерело має будь-яку плитку, яка не вписується в область текстури.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_move_tile_in_atlas:
+
+.. rst-class:: classref-method
+
+|void| **move_tile_in_atlas**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, new_atlas_coords\: :ref:`Vector2i<class_Vector2i>` = Vector2i(-1, -1), new_size\: :ref:`Vector2i<class_Vector2i>` = Vector2i(-1, -1)\ ) :ref:`🔗<class_TileSetAtlasSource_method_move_tile_in_atlas>`
+
+Перемістіть плитку та її альтернативи за координатами ``atlas_coords`` у координати ``new_atlas_coords`` з розміром ``new_size``. Ця функція не виконає роботу, якщо плитка вже присутня у заданій області.
+
+Якщо ``new_atlas_coords`` дорівнює ``Vector2i(-1, -1)``, зберігає координати плитки. Якщо ``new_size`` дорівнює ``Vector2i(-1, -1)``, зберігає розмір плитки.
+
+Щоб уникнути помилки, спочатку перевірте, чи можливе переміщення, використовуючи :ref:`has_room_for_tile()<class_TileSetAtlasSource_method_has_room_for_tile>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_remove_alternative_tile:
+
+.. rst-class:: classref-method
+
+|void| **remove_alternative_tile**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_tile\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_remove_alternative_tile>`
+
+Видалити альтернативу плитки з ідентифікатором альтернативи ``alternative_tile``.
+
+Виклик цієї функції з ``alternative_tile``, що дорівнює 0, завершиться невдачею, оскільки базову альтернативу плитки неможливо видалити.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_remove_tile:
+
+.. rst-class:: classref-method
+
+|void| **remove_tile**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_remove_tile>`
+
+Видаліть плитку та її альтернативу координаціям ``atlas_coords``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_set_alternative_tile_id:
+
+.. rst-class:: classref-method
+
+|void| **set_alternative_tile_id**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_tile\: :ref:`int<class_int>`, new_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_alternative_tile_id>`
+
+Змініть альтернативний ідентифікатор плитки з ``alternative_tile`` на ``new_id``.
+
+Виклик цієї функції зі значенням ``new_id``, що дорівнює 0, завершиться невдачею, оскільки базову альтернативу плитки неможливо перемістити.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_set_tile_animation_columns:
+
+.. rst-class:: classref-method
+
+|void| **set_tile_animation_columns**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame_columns\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_columns>`
+
+Встановлює кількість стовпців у макеті анімації плитки за координатами ``atlas_coords``. Якщо встановити значення 0, то різні кадри анімації розташовуються в атласі як одна горизонтальна лінія.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_set_tile_animation_frame_duration:
+
+.. rst-class:: classref-method
+
+|void| **set_tile_animation_frame_duration**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame_index\: :ref:`int<class_int>`, duration\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_frame_duration>`
+
+Набори анімаційного каркасу ``duration`` рами ``frame_index`` для плитки в координатах ``atlas_coords``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_set_tile_animation_frames_count:
+
+.. rst-class:: classref-method
+
+|void| **set_tile_animation_frames_count**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frames_count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_frames_count>`
+
+Встановлює, як багато анімаційних кадрів плитка в координатах ``atlas_coords``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_set_tile_animation_mode:
+
+.. rst-class:: classref-method
+
+|void| **set_tile_animation_mode**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, mode\: :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_mode>`
+
+Встановлює режим кахельної анімації плитки в ``atlas_coords`` до ``mode``. Дивитися також :ref:`get_tile_animation_mode()<class_TileSetAtlasSource_method_get_tile_animation_mode>`.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_set_tile_animation_separation:
+
+.. rst-class:: classref-method
+
+|void| **set_tile_animation_separation**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, separation\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_separation>`
+
+Встановлює запас (у сітку плитку) між кожною плиткою в анімаційному макеті плитки в координатах ``atlas_coords``.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TileSetAtlasSource_method_set_tile_animation_speed:
+
+.. rst-class:: classref-method
+
+|void| **set_tile_animation_speed**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, speed\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_speed>`
+
+Налаштовує швидкість анімації плитки в координатах ``atlas_coords``.
+
+.. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
+.. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
+.. |const| replace:: :abbr:`const (Цей метод не має побічних ефектів. Не змінює ніяку змінну екземпляра об'єкта.)`
+.. |vararg| replace:: :abbr:`vararg (Цей метод приймає будь-яке число аргументів після описаних тут.)`
+.. |constructor| replace:: :abbr:`constructor (Цей метод використовується для побудови типів.)`
+.. |static| replace:: :abbr:`static (Цей метод не потребує екземпляра для виклику, його можна викликати безпосередньо за допомогою назви класу.)`
+.. |operator| replace:: :abbr:`operator (Цей метод описує дійсний оператор для взаємодії з цим типом як з лівим операндом.)`
+.. |bitfield| replace:: :abbr:`BitField (Це значення є цілим числом, складеним у вигляді бітової маски з наступних прапорів.)`
+.. |void| replace:: :abbr:`void (Значення не повертається.)`

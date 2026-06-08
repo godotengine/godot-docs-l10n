@@ -14,17 +14,17 @@ SplineIK3D
 描述
 ----
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` for aligning bones along a :ref:`Path3D<class_Path3D>`. The smoothness of the fitting depends on the :ref:`Curve3D.bake_interval<class_Curve3D_property_bake_interval>`.
+一种用于沿 :ref:`Path3D<class_Path3D>`\ （3D路径）对齐骨骼的 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ （3D骨骼修改器）。拟合的平滑度取决于 :ref:`Curve3D.bake_interval<class_Curve3D_property_bake_interval>`\ （曲线3D的烘焙间隔）。
 
-If you want the :ref:`Path3D<class_Path3D>` to attach to a specific bone, it is recommended to place a :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` before the **SplineIK3D** in the :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` list (children of the :ref:`Skeleton3D<class_Skeleton3D>`), and then place a :ref:`Path3D<class_Path3D>` as the :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>`'s child.
+如果你希望 :ref:`Path3D<class_Path3D>` 附着在某个特定的骨骼上，建议将 :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>`\ （修改器骨骼目标3D）放在 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 列表（\ :ref:`Skeleton3D<class_Skeleton3D>` 的子节点）中 **SplineIK3D** 的前面，然后将 :ref:`Path3D<class_Path3D>` 作为 :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` 的子节点放置。
 
-Bone twist is determined based on the :ref:`Curve3D.get_point_tilt()<class_Curve3D_method_get_point_tilt>`.
+骨骼的扭转由 :ref:`Curve3D.get_point_tilt()<class_Curve3D_method_get_point_tilt>`\ （曲线3D获取点倾斜度）方法决定。
 
-If the root bone joint and the start point of the :ref:`Curve3D<class_Curve3D>` are separated, it assumes that there is a linear line segment between them. This means that the vector pointing toward the start point of the :ref:`Curve3D<class_Curve3D>` takes precedence over the shortest intersection point along the :ref:`Curve3D<class_Curve3D>`.
+如果根骨骼关节与 :ref:`Curve3D<class_Curve3D>`\ （曲线3D）的起点是分离的，它会假设两者之间存在一条直线段。这意味着，指向 :ref:`Curve3D<class_Curve3D>` 起点的向量，其优先级会高于沿 :ref:`Curve3D<class_Curve3D>` 的最短交点。
 
-If the end bone joint exceeds the path length, it is bent as close as possible to the end point of the :ref:`Curve3D<class_Curve3D>`.
+如果末端骨骼关节超出了路径的长度，它会尽可能地向着 :ref:`Curve3D<class_Curve3D>` 的终点弯曲。
 
-\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **注意：** 该类中的所有方法都带有一个 ``index``\ （索引）参数。如果 IK（反向动力学）有多个条目（例如 ``settings//root_bone_name``\ ），该参数用于指定要返回哪一个设置列表条目。
 
 .. rst-class:: classref-reftable-group
 

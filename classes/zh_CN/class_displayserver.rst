@@ -617,11 +617,11 @@ DisplayServer
 
 **orientation_changed**\ (\ orientation\: :ref:`int<class_int>`\ ) :ref:`🔗<class_DisplayServer_signal_orientation_changed>`
 
-Emitted when the device orientation changes. ``orientation`` is the new orientation.
+当设备方向发生变化时发出（触发）此信号。\ ``orientation`` 代表新的方向。
 
-Returns ``1`` for portrait, ``2`` for landscape, and ``0`` if the orientation is undefined.
+返回 ``1`` 表示竖屏（portrait），\ ``2`` 表示横屏（landscape），如果方向未定义则返回 ``0``\ 。
 
-\ **Note:** This method is implemented on Android and iOS.
+\ **注意：** 此方法在 Android 和 iOS 平台上实现。
 
 .. rst-class:: classref-section-separator
 
@@ -662,7 +662,7 @@ enum **Feature**: :ref:`🔗<enum_DisplayServer_Feature>`
 
 :ref:`Feature<enum_DisplayServer_Feature>` **FEATURE_TOUCHSCREEN** = ``2``
 
-Display server supports touchscreen input. **Windows, Linux (X11/Wayland), Android, iOS, Web**
+显示服务器支持触摸屏输入。 **Windows, Linux (X11/Wayland), Android, iOS, Web**
 
 .. _class_DisplayServer_constant_FEATURE_MOUSE:
 
@@ -920,7 +920,7 @@ Display server supports touchscreen input. **Windows, Linux (X11/Wayland), Andro
 
 :ref:`Feature<enum_DisplayServer_Feature>` **FEATURE_HDR_OUTPUT** = ``35``
 
-Display server supports HDR output. **Linux (Wayland), macOS, iOS, visionOS, Windows**
+显示服务器支持 HDR 输出。 **Linux (Wayland), macOS, iOS, visionOS, Windows**
 
 .. _class_DisplayServer_constant_FEATURE_PIP_MODE:
 
@@ -928,7 +928,7 @@ Display server supports HDR output. **Linux (Wayland), macOS, iOS, visionOS, Win
 
 :ref:`Feature<enum_DisplayServer_Feature>` **FEATURE_PIP_MODE** = ``36``
 
-Display server supports putting the application in picture-in-picture mode. **Android**
+显示服务器支持将应用程序置于画中画模式。 **Android**
 
 .. rst-class:: classref-item-separator
 
@@ -1408,7 +1408,7 @@ enum **AccessibilityRole**: :ref:`🔗<enum_DisplayServer_AccessibilityRole>`
 
 **已弃用：** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Region/landmark element. Screen readers can navigate between regions using landmark navigation.
+Region/landmark元素。屏幕阅读器可以使用地标导航在区域之间进行跳转。
 
 .. _class_DisplayServer_constant_ROLE_TEXT_RUN:
 
@@ -1418,9 +1418,9 @@ Region/landmark element. Screen readers can navigate between regions using landm
 
 **已弃用：** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Unifor text run.
+统一文本运行块。
 
-Note: This role is used for internal text elements, and should not be assigned to nodes.
+注意：此角色用于内部文本元素，不应手动分配给节点。
 
 .. rst-class:: classref-item-separator
 
@@ -2466,7 +2466,7 @@ enum **ProgressState**: :ref:`🔗<enum_DisplayServer_ProgressState>`
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_NOPROGRESS** = ``0``
 
-Stops displaying progress and returns the button to its normal state.
+停止显示进度，并将按钮（这里指任务栏或程序坞上的图标）恢复为正常状态。
 
 .. _class_DisplayServer_constant_PROGRESS_STATE_INDETERMINATE:
 
@@ -2474,9 +2474,9 @@ Stops displaying progress and returns the button to its normal state.
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_INDETERMINATE** = ``1``
 
-The progress indicator shows an indeterminate progress.
+进度指示器显示为不确定进度。
 
-On Windows, the progress indicator does not grow in size, but cycles repeatedly along the length of the taskbar button by default.
+在 Windows 上，进度指示器默认不会增长变长，而是在任务栏按钮的长度范围内反复循环移动。
 
 .. _class_DisplayServer_constant_PROGRESS_STATE_NORMAL:
 
@@ -2484,7 +2484,7 @@ On Windows, the progress indicator does not grow in size, but cycles repeatedly 
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_NORMAL** = ``2``
 
-The progress indicator shows progress normally.
+进度指示器正常显示进度。
 
 .. _class_DisplayServer_constant_PROGRESS_STATE_ERROR:
 
@@ -2492,9 +2492,9 @@ The progress indicator shows progress normally.
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_ERROR** = ``3``
 
-The progress indicator shows that an error has occurred.
+进度指示器显示发生了错误。
 
-On Windows, the progress indicator turns red by default to show that an error has occurred in one of the windows that is broadcasting progress.
+在 Windows 上，进度指示器默认会变成红色，以表明正在广播进度的某个窗口中发生了错误。
 
 .. _class_DisplayServer_constant_PROGRESS_STATE_PAUSED:
 
@@ -2502,9 +2502,9 @@ On Windows, the progress indicator turns red by default to show that an error ha
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_PAUSED** = ``4``
 
-The progress indicator shows it was paused.
+进度指示器显示当前已暂停。
 
-On Windows, the progress indicator turns yellow by default to show that progress is currently stopped in one of the windows but can be resumed by the user.
+在 Windows 上，进度指示器默认会变成黄色，以表明某个窗口的进度目前已停止，但用户可以随时恢复。
 
 .. rst-class:: classref-item-separator
 
@@ -2746,9 +2746,9 @@ enum **WindowEvent**: :ref:`🔗<enum_DisplayServer_WindowEvent>`
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_OUTPUT_MAX_LINEAR_VALUE_CHANGED** = ``9``
 
-Sent when the output max linear value returned by :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed.
+当 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 返回的输出最大线性值发生变化时，会发出此信号。
 
-This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen.
+这种情况通常发生在启用或禁用 HDR 输出时，以及窗口的任何 HDR 输出亮度值发生改变时，例如当玩家调整屏幕亮度设置，或将窗口移动到另一个屏幕上时。
 
 .. rst-class:: classref-item-separator
 
@@ -2982,9 +2982,9 @@ OpenGL 上下文（仅适用于 Compatibility 渲染器）：
 
 :ref:`HandleType<enum_DisplayServer_HandleType>` **GLX_VISUALID** = ``6``
 
-The GLX ``VisualID`` for the window.
+该窗口的 GLX ``VisualID``\ 。
 
-\ **Note:** Only available on Linux when using X11.
+\ **注意：** 仅在使用 X11 的 Linux 系统上可用。
 
 .. _class_DisplayServer_constant_GLX_FBCONFIG:
 
@@ -2992,9 +2992,9 @@ The GLX ``VisualID`` for the window.
 
 :ref:`HandleType<enum_DisplayServer_HandleType>` **GLX_FBCONFIG** = ``7``
 
-The ``GLXFBConfig`` for the window.
+该窗口的 ``GLXFBConfig``\ 。
 
-\ **Note:** Only available on Linux when using X11.
+\ **注意：**\ 仅在编辑器构建中可用。
 
 .. rst-class:: classref-item-separator
 
@@ -4446,31 +4446,31 @@ enum **TTSUtteranceEvent**: :ref:`🔗<enum_DisplayServer_TTSUtteranceEvent>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_show**\ (\ title\: :ref:`String<class_String>`, current_directory\: :ref:`String<class_String>`, filename\: :ref:`String<class_String>`, show_hidden\: :ref:`bool<class_bool>`, mode\: :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>`, filters\: :ref:`PackedStringArray<class_PackedStringArray>`, callback\: :ref:`Callable<class_Callable>`, parent_window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_file_dialog_show>`
 
-Displays OS native dialog for selecting files or directories in the file system.
+显示操作系统原生的对话框，用于在文件系统中选择文件或目录。
 
-Each filter string in the ``filters`` array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. It is recommended to set both file extension and MIME type. See also :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
+\ ``filters`` 数组中的每个过滤字符串都应该按照这种格式来编写：\ ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``\ 。过滤器的描述文本（比如这里的 Image Files）是可选的，可以省略。不过，建议同时设置文件扩展名和 MIME 类型。也可以参考 :ref:`FileDialog.filters<class_FileDialog_property_filters>`\ 。
 
-Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **On Android,** the third callback argument (``selected_filter_index``) is always ``0``.
+回调函数（Callbacks）会包含以下参数：\ ``status: bool（状态）、selected_paths: PackedStringArray（被选中的路径）、selected_filter_index: int（被选中的过滤器索引）``\ 。\ **在 Android 上，** 回调的第三个参数（\ ``selected_filter_index``\ ）永远都是 ``0``\ 。
 
-\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android.
+\ **注意：** 只有当显示服务器具备 :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` 功能时，此方法才可用。支持的平台包括 Linux (X11/Wayland)、Windows、macOS 和 Android。
 
-\ **Note:** ``current_directory`` might be ignored.
+\ **注意：** ``current_directory``\ （当前目录）参数可能会被忽略。
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **注意：** 嵌入式文件对话框和 Windows 文件对话框仅支持文件扩展名，而 Android、Linux 和 macOS 的文件对话框还支持 MIME 类型。
 
-\ **Note:** On Android and Linux, ``show_hidden`` is ignored.
+\ **注意：** 在 Android 和 Linux 上，\ ``show_hidden``\ （显示隐藏文件）参数会被忽略。
 
-\ **Note:** On Android and macOS, native file dialogs have no title.
+\ **注意：** 在 macOS 上，原生文件对话框没有标题。
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **注意：** 在 macOS 上，沙盒化（sandboxed）的应用会保存“安全作用域书签（security-scoped bookmarks）”，以便在多个会话期间保留对已打开文件夹的访问权限。你可以使用 :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` 来获取已保存书签的列表。
 
-\ **Note:** On Android, this method uses the Android Storage Access Framework (SAF).
+\ **注意：** 在 Android 上，此方法使用的是 Android 存储访问框架（SAF）。文件选择器返回的是一个 URI（统一资源标识符），而不是一个常规的文件系统路径。这个 URI 可以直接传给 :ref:`FileAccess<class_FileAccess>` 来进行读/写操作。
 
-The file picker returns a URI instead of a filesystem path. This URI can be passed directly to :ref:`FileAccess<class_FileAccess>` to perform read/write operations.
+当使用 :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>`\ （打开目录模式）时，它会返回一个树 URI（tree URI），授予你对所选目录的完全访问权限。
 
-When using :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>`, it returns a tree URI that grants full access to the selected directory. File operations inside this directory can be performed by passing a path on the form ``treeUri#relative/path/to/file`` to :ref:`FileAccess<class_FileAccess>`.
+你可以通过向 :ref:`FileAccess<class_FileAccess>` 传递形如 ``treeUri#relative/path/to/file``\ （树URI#相对路径/到/文件）的路径，来对该目录内的文件执行操作。
 
-To avoid opening the file picker again after each app restart, you can take persistable URI permission as follows:
+为了避免每次应用重启后都要重新打开文件选择器，你可以按照以下方式获取持久化的 URI 权限：
 
 
 .. tabs::
@@ -4484,7 +4484,7 @@ To avoid opening the file picker again after each app restart, you can take pers
 
 
 
-The persistable URI permission remains valid across app restarts as long as the directory is not moved, renamed, or deleted.
+只要该目录没有被移动、重命名或删除，持久化的 URI 权限在应用重启后依然有效。
 
 .. rst-class:: classref-item-separator
 
@@ -5785,9 +5785,9 @@ The persistable URI permission remains valid across app restarts as long as the 
 
 :ref:`bool<class_bool>` **is_in_pip_mode**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_is_in_pip_mode>`
 
-Returns ``true`` if the application is in picture-in-picture mode.
+如果应用程序当前处于画中画模式，则返回 ``true``\ 。
 
-\ **Note:** This method is implemented on Android.
+\ **注意：** 此方法仅在 Android 平台上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -5969,9 +5969,9 @@ Returns ``true`` if the application is in picture-in-picture mode.
 
 |void| **pip_mode_enter**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_pip_mode_enter>`
 
-Enters picture-in-picture mode.
+进入画中画模式。
 
-\ **Note:** This method is implemented on Android.
+\ **注意：** 此方法仅在 Android 平台上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -5983,9 +5983,9 @@ Enters picture-in-picture mode.
 
 |void| **pip_mode_set_aspect_ratio**\ (\ numerator\: :ref:`int<class_int>`, denominator\: :ref:`int<class_int>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_pip_mode_set_aspect_ratio>`
 
-Specifies the aspect ratio for picture-in-picture mode.
+指定画中画模式的宽高比。
 
-\ **Note:** This method is implemented on Android.
+\ **注意：** 此方法仅在 Android 平台上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -5997,9 +5997,9 @@ Specifies the aspect ratio for picture-in-picture mode.
 
 |void| **pip_mode_set_auto_enter_on_background**\ (\ auto_enter_on_background\: :ref:`bool<class_bool>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_pip_mode_set_auto_enter_on_background>`
 
-Specifies whether picture-in-picture mode should be entered automatically when the application goes in the background.
+指定当应用程序退到后台时，是否应该自动进入画中画模式。
 
-\ **Note:** This method is implemented on Android.
+\ **注意：** 此方法仅在 Android 平台上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -6303,9 +6303,9 @@ Specifies whether picture-in-picture mode should be entered automatically when t
 
 |void| **set_icon**\ (\ image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_DisplayServer_method_set_icon>`
 
-Sets the application icon and icons of all windows with an :ref:`Image<class_Image>`. To use icons in the operating system's native format, use :ref:`set_native_icon()<class_DisplayServer_method_set_native_icon>` instead.
+使用一张 :ref:`Image<class_Image>`\ （图像）来设置应用程序图标以及所有窗口的图标。如果想要使用操作系统原生格式的图标，请改用 :ref:`set_native_icon()<class_DisplayServer_method_set_native_icon>` 方法。
 
-\ **Note:** Requires support for :ref:`FEATURE_ICON<class_DisplayServer_constant_FEATURE_ICON>`.
+\ **注意：** 需要支持 :ref:`FEATURE_ICON<class_DisplayServer_constant_FEATURE_ICON>` 功能。
 
 .. rst-class:: classref-item-separator
 
@@ -6795,9 +6795,9 @@ Sets the application icon and icons of all windows with an :ref:`Image<class_Ima
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-When :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` returns ``true``, this returns the current maximum luminance in nits (cd/m²) for HDR output by the window specified by ``window_id``. If the maximum luminance is being automatically adjusted based on the screen's capabilities, this method will return that value. Otherwise, it will return the value set by :ref:`window_set_hdr_output_max_luminance()<class_DisplayServer_method_window_set_hdr_output_max_luminance>`. This maximum luminance value is used when calculating :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>`.
+当 :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` 返回 ``true`` 时，此方法会返回由 ``window_id`` 指定的窗口当前 HDR 输出的最大亮度，单位为尼特（nits，即 cd/m²）。如果最大亮度是根据屏幕性能自动调整的，此方法将返回该自动调整后的值；否则，它将返回由 :ref:`window_set_hdr_output_max_luminance()<class_DisplayServer_method_window_set_hdr_output_max_luminance>` 设置的值。这个最大亮度值在计算 :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>` 时会被用到。
 
-\ **Note:** This maximum luminance may not match the physical behavior of the screen, but will always be proportionally correct relative to :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`.
+\ **注意：** 这个最大亮度值可能与屏幕的实际物理表现不完全一致，但它相对于 :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` 的比例关系始终是准确的。
 
 .. rst-class:: classref-item-separator
 
@@ -6809,9 +6809,9 @@ When :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_h
 
 :ref:`float<class_float>` **window_get_hdr_output_current_reference_luminance**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`
 
-When :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` returns ``true``, this returns the current reference white luminance in nits (cd/m²) for HDR output by the window specified by ``window_id``. If the reference luminance is being automatically adjusted to match the operating system brightness, this will return that value. Otherwise, it will return the value set by :ref:`window_set_hdr_output_reference_luminance()<class_DisplayServer_method_window_set_hdr_output_reference_luminance>`. This reference luminance value is used when calculating :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>`.
+当 :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` 返回 ``true`` 时，此方法会返回由 ``window_id`` 指定的窗口当前 HDR 输出的参考白点亮度，单位为尼特（nits，即 cd/m²）。如果参考亮度是根据操作系统的亮度设置自动调整的，此方法将返回该自动调整后的值；否则，它将返回由 :ref:`window_set_hdr_output_reference_luminance()<class_DisplayServer_method_window_set_hdr_output_reference_luminance>` 设置的值。这个参考亮度值在计算 :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>` 时会被用到。
 
-\ **Note:** This reference white luminance may not match the physical behavior of the screen, but will always be proportionally correct relative to :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`.
+\ **注意：** 这个参考白点亮度可能与屏幕的实际物理表现不完全一致，但它相对于 :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>` 的比例关系始终是准确的。
 
 .. rst-class:: classref-item-separator
 
@@ -6825,7 +6825,7 @@ When :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_h
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns the maximum luminance in nits (cd/m²) set for HDR output by the window specified by ``window_id``. Negative values indicate that the value is being automatically adjusted based on the screen's capabilities. See also :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`.
+返回由 ``window_id`` 指定的窗口为 HDR 输出所设定的最大亮度，单位为尼特（nits，即 cd/m²）。负数值表示该值正在根据屏幕的性能进行自动调整。另请参阅 :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6837,7 +6837,7 @@ Returns the maximum luminance in nits (cd/m²) set for HDR output by the window 
 
 :ref:`float<class_float>` **window_get_hdr_output_reference_luminance**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_hdr_output_reference_luminance>`
 
-Returns the reference white luminance in nits (cd/m²) set for HDR output by the window specified by ``window_id``. Negative values indicate that the value is being automatically adjusted to match the operating system brightness. See also :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`.
+返回由 ``window_id`` 指定的窗口为 HDR 输出所设定的参考白点亮度，单位为尼特（nits，即 cd/m²）。负数值表示该值正在被自动调整，以匹配操作系统的亮度设置。另请参阅 :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6899,7 +6899,7 @@ Returns the reference white luminance in nits (cd/m²) set for HDR output by the
 
 :ref:`float<class_float>` **window_get_output_max_linear_value**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_output_max_linear_value>`
 
-Returns the maximum value for linear color components that can be displayed for the window specified by ``window_id``, regardless of SDR or HDR output. Returns ``1.0`` if HDR is not enabled or not supported. When HDR output is enabled, this is calculated based on :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` and :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>`. The :ref:`Window.output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` signal will be emitted whenever this value changes. This value is used by tonemapping and other :ref:`Environment<class_Environment>` effects to ensure that bright colors are presented in the range that can be displayed by this window. Corresponds to :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`.
+返回由 ``window_id`` 指定的窗口能够显示的线性颜色分量的最大值，无论当前是 SDR 还是 HDR 输出模式。如果 HDR 未启用或不受支持，则返回 ``1.0``\ 。当启用 HDR 输出时，该值会根据 :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` 和 :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>` 计算得出。每当这个值发生变化时，都会发出 :ref:`Window.output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` 信号。这个值会被色调映射（tonemapping）和其他 :ref:`Environment<class_Environment>` 特效用来确保明亮的颜色能够以该窗口可显示的范围正确呈现。对应于 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7021,7 +7021,7 @@ Returns the maximum value for linear color components that can be displayed for 
 
 :ref:`bool<class_bool>` **window_is_hdr_output_enabled**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_is_hdr_output_enabled>`
 
-Returns ``true`` if HDR output is currently enabled for the window specified by ``window_id``. The returned value may change dynamically based on system settings, screen capabilities, and which screen the window is currently on.
+如果由 ``window_id`` 指定的窗口当前已启用 HDR 输出，则返回 ``true``\ 。返回的值可能会根据系统设置、屏幕性能以及窗口当前所在的屏幕而动态变化。
 
 .. rst-class:: classref-item-separator
 
@@ -7033,7 +7033,7 @@ Returns ``true`` if HDR output is currently enabled for the window specified by 
 
 :ref:`bool<class_bool>` **window_is_hdr_output_requested**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_is_hdr_output_requested>`
 
-Returns ``true`` if HDR output is requested for the window specified by ``window_id``. Corresponds to :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
+如果针对 ``window_id`` 指定的窗口请求了 HDR 输出，则返回 ``true``\ 。对应于 :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>` 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -7045,7 +7045,7 @@ Returns ``true`` if HDR output is requested for the window specified by ``window
 
 :ref:`bool<class_bool>` **window_is_hdr_output_supported**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_is_hdr_output_supported>`
 
-Returns ``true`` if the window specified by ``window_id`` supports HDR output. This depends on the platform, screen capabilities, system settings, and the screen the window is currently on.
+如果由 ``window_id`` 指定的窗口支持 HDR 输出，则返回 ``true``\ 。这取决于所在的平台、屏幕的硬件性能、系统设置以及窗口当前所在的屏幕。
 
 .. rst-class:: classref-item-separator
 
@@ -7121,7 +7121,7 @@ Returns ``true`` if the window specified by ``window_id`` supports HDR output. T
 
 |void| **window_request_hdr_output**\ (\ enable\: :ref:`bool<class_bool>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_request_hdr_output>`
 
-If ``enable`` is ``true``, HDR output is requested for the window specified by ``window_id``. The window will automatically switch between HDR and SDR if it is moved between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of the :ref:`Window<class_Window>` must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output. Corresponds to :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
+如果 ``enable`` 为 ``true``\ ，则会请求为由 ``window_id`` 指定的窗口开启 HDR 输出。如果窗口在不同屏幕之间移动、屏幕性能发生变化或系统设置被修改，窗口会自动在 HDR 和 SDR 之间切换。这会在内部强制启用主 :ref:`Viewport<class_Viewport>` 上的 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`\ 。该 :ref:`Window<class_Window>` 下的所有其他 :ref:`SubViewport<class_SubViewport>` 也必须启用它们的 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 属性，才能正常输出 HDR 画面。对应于 :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7209,9 +7209,9 @@ If ``enable`` is ``true``, HDR output is requested for the window specified by `
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Sets the maximum luminance in nits (cd/m²) for HDR output by the window specified by ``window_id``. If ``max_luminance`` is negative, the window uses the screen's maximum luminance that is reported by the operating system. By default, this luminance is set to ``-1.0`` for every window. Typically this property should be left at this default value, but may optionally be exposed through in-game settings to allow the player to correct an inaccurate maximum luminance reported by the operating system. See also :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>` and :ref:`window_get_hdr_output_max_luminance()<class_DisplayServer_method_window_get_hdr_output_max_luminance>`.
+为由 ``window_id`` 指定的窗口设定 HDR 输出的最大亮度，单位为尼特（nits，即 cd/m²）。如果 ``max_luminance`` 为负数，窗口将使用操作系统报告的屏幕最大亮度。默认情况下，每个窗口的该亮度都被设定为 ``-1.0``\ 。通常情况下，该属性应保持这个默认值，但也可以选择性地将其作为游戏内的设置选项暴露给玩家，以便在操作系统报告的屏幕最大亮度不准确时，允许玩家进行手动修正。另请参阅 :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>` 和 :ref:`window_get_hdr_output_max_luminance()<class_DisplayServer_method_window_get_hdr_output_max_luminance>`\ 。
 
-\ **Note:** This method is only implemented on macOS and Windows. Other platforms will always use the screen's maximum luminance that is reported by the operating system.
+\ **注意：** 此方法仅在 macOS 和 Windows 上实现。在其他平台上，将始终使用操作系统报告的屏幕最大亮度。
 
 .. rst-class:: classref-item-separator
 
@@ -7223,9 +7223,9 @@ Sets the maximum luminance in nits (cd/m²) for HDR output by the window specifi
 
 |void| **window_set_hdr_output_reference_luminance**\ (\ reference_luminance\: :ref:`float<class_float>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_hdr_output_reference_luminance>`
 
-Sets the reference white luminance in nits (cd/m²) for HDR output by the window specified by ``window_id``. If ``reference_luminance`` is negative, the window automatically adjusts to the brightness set by the operating system. By default, this luminance is set to ``-1.0`` for every window. Typically this property should be left at this default value, but may optionally be exposed as an "HDR Brightness" in-game setting to allow the player to adjust the brightness of their game, independently of their device settings. See also :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` and :ref:`window_get_hdr_output_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_reference_luminance>`.
+为由 ``window_id`` 指定的窗口设定 HDR 输出的参考白点亮度，单位为尼特（nits，即 cd/m²）。如果 ``reference_luminance`` 为负数，窗口将自动适配操作系统设置的亮度。默认情况下，每个窗口的该亮度都被设定为 ``-1.0``\ 。通常情况下，该属性应保持这个默认值，但也可以选择性地将其作为游戏内的“HDR 亮度”设置选项暴露给玩家，让玩家可以在不改变设备系统设置的前提下，独立调节游戏的画面亮度。另请参阅 :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` 和 :ref:`window_get_hdr_output_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_reference_luminance>`\ 。
 
-\ **Note:** This method is only implemented on Windows. Other platforms will always use the reference luminance that is reported by the operating system.
+\ **注意：** 此方法仅在 Windows 上实现。在其他平台上，将始终使用操作系统报告的参考白点亮度。
 
 .. rst-class:: classref-item-separator
 
@@ -7237,9 +7237,9 @@ Sets the reference white luminance in nits (cd/m²) for HDR output by the window
 
 |void| **window_set_icon**\ (\ icon\: :ref:`Image<class_Image>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_icon>`
 
-Sets the window icon (usually displayed in the top-left corner) for the window specified by ``window_id``.
+为 ``window_id`` 指定的窗口设置窗口图标（通常显示在左上角）。
 
-\ **Note:** This method is implemented on Linux and Windows.
+\ **注意：** 此方法仅在 Linux 和 Windows 平台上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -7465,11 +7465,11 @@ Sets the window icon (usually displayed in the top-left corner) for the window s
 
 |void| **window_set_taskbar_progress_state**\ (\ state\: :ref:`ProgressState<enum_DisplayServer_ProgressState>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_taskbar_progress_state>`
 
-Sets the type and state of the progress bar on the taskbar/dock icon of the window specified by ``window_id``. See :ref:`ProgressState<enum_DisplayServer_ProgressState>` for possible values and how each mode behaves.
+设置由 ``window_id`` 指定的窗口在任务栏/程序坞（Dock）图标上的进度条类型和状态。关于可能的数值以及每种模式的具体表现，请参见 :ref:`ProgressState<enum_DisplayServer_ProgressState>`\ 。
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **注意：** 此方法仅在 Windows 和 macOS 上实现。
 
-\ **Note:** On macOS, the progress bar is displayed only for the main window.
+\ **注意：** 在 macOS 上，进度条仅显示在主窗口上。
 
 .. rst-class:: classref-item-separator
 
@@ -7481,13 +7481,13 @@ Sets the type and state of the progress bar on the taskbar/dock icon of the wind
 
 |void| **window_set_taskbar_progress_value**\ (\ value\: :ref:`float<class_float>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_taskbar_progress_value>`
 
-Creates a progress bar on the taskbar/dock icon of the window specified by ``window_id`` if it does not exist, sets the progress of the icon.
+如果由 ``window_id`` 指定的窗口在任务栏/程序坞（Dock）图标上的进度条不存在，则创建一个，并设置该图标的进度。
 
-\ ``value`` acts as a relative percentage value, ranges from ``0.0`` (lowest) to ``1.0`` (highest).
+\ ``value`` 作为一个相对的百分比值起作用，范围从 ``0.0``\ （最低）到 ``1.0``\ （最高）。
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **注意：** 此方法仅在 Windows 和 macOS 上实现。
 
-\ **Note:** On macOS, the progress bar is displayed only for the main window.
+\ **注意：** 在 macOS 上，进度条仅显示在主窗口上。
 
 .. rst-class:: classref-item-separator
 

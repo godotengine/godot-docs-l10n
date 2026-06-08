@@ -634,9 +634,9 @@ Specifica il gruppo di lisciatura da usare per il *prossimo* vertice. Se non vie
 
 |void| **set_tangent**\ (\ tangent\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_SurfaceTool_method_set_tangent>`
 
-Specifies a tangent to use for the *next* vertex. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
+Specifica un :ref:`Color<class_Color>` da usare per il *prossimo* vertice. Se ogni vertice deve avere questa informazione impostata e non la si invia per il primo vertice, tale informazione potrebbe non essere usata affatto.
 
-\ **Note:** Even though ``tangent`` is a :ref:`Plane<class_Plane>`, it does not directly represent the tangent plane. Its :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>`, and :ref:`Plane.z<class_Plane_property_z>` represent the tangent vector and :ref:`Plane.d<class_Plane_property_d>` should be either ``-1`` or ``1``. See also :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
+\ **Nota:** Sebbene ``tangent`` sia un :ref:`Plane<class_Plane>`, non rappresenta direttamente il piano tangente. I suoi :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>` e :ref:`Plane.z<class_Plane_property_z>` rappresentano il vettore tangente e :ref:`Plane.d<class_Plane_property_d>` dovrebbero essere ``-1`` o ``1``. Vedi anche :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
 
 .. rst-class:: classref-item-separator
 

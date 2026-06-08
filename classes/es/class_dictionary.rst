@@ -5,7 +5,7 @@
 Dictionary
 ==========
 
-A built-in data structure that holds key-value pairs.
+Una estructura de datos incorporada que contiene pares clave-valor.
 
 .. rst-class:: classref-introduction-group
 
@@ -888,7 +888,7 @@ This method is useful for quickly making dictionaries with default values:
 
 :ref:`bool<class_bool>` **recursive_equal**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`, recursion_count\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Dictionary_method_recursive_equal>`
 
-Returns ``true`` if the two dictionaries contain the same keys and values, inner **Dictionary** and :ref:`Array<class_Array>` keys and values are compared recursively.
+Devuelve ``true`` si los dos diccionarios contienen las mismas claves y valores. Las claves y los valores internos de **Dictionary** y :ref:`Array<class_Array>` se comparan de forma recursiva.
 
 .. rst-class:: classref-item-separator
 

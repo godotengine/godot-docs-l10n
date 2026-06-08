@@ -122,9 +122,9 @@ MenuButton
 
 :ref:`int<class_int>` **popup/item_{index}/checkable** = ``0`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/checkable>`
 
-The checkable item type of the item at ``index``.
+Тип елемента, який можна позначити галочкою, для елемента з індексом ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -136,9 +136,9 @@ The checkable item type of the item at ``index``.
 
 :ref:`bool<class_bool>` **popup/item_{index}/checked** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/checked>`
 
-If ``true``, the item at ``index`` is checked.
+Якщо ``true``, перевіряється елемент під ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -150,9 +150,9 @@ If ``true``, the item at ``index`` is checked.
 
 :ref:`bool<class_bool>` **popup/item_{index}/disabled** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+Якщо ``true``, елемент під ``index`` вимкнено.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -164,9 +164,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **popup/item_{index}/icon** :ref:`🔗<class_MenuButton_property_popup/item_{index}/icon>`
 
-The icon of the item at ``index``.
+Піктограма елемента під номером ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -178,9 +178,9 @@ The icon of the item at ``index``.
 
 :ref:`int<class_int>` **popup/item_{index}/id** = ``0`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/id>`
 
-The ID of the item at ``index``.
+Ідентифікатор елемента на ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -192,9 +192,9 @@ The ID of the item at ``index``.
 
 :ref:`bool<class_bool>` **popup/item_{index}/separator** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/separator>`
 
-If ``true``, the item at ``index`` is a separator.
+Якщо ``true``, елемент під ``index`` є роздільником.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -206,9 +206,9 @@ If ``true``, the item at ``index`` is a separator.
 
 :ref:`String<class_String>` **popup/item_{index}/text** = ``""`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/text>`
 
-The text of the item at ``index``.
+Текст елемента за адресою ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 

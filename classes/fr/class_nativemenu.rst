@@ -1210,7 +1210,7 @@ Returns the new index of the moved item, it's not guaranteed to be the same as `
 
 Définit le callback de l'élément à l'index ``idx``. Le callback est émis lorsque son accélérateur est activé.
 
-\ **Note:** Le Callable ``key_callback`` doit accepter exactement un paramètre Variant, le paramètre passé au Callable sera la valeur transmise au paramètre ``tag`` lorsque l'élément de menu sera créé.
+\ **Note :** Le Callable ``key_callback`` doit accepter exactement un paramètre Variant, le paramètre passé au Callable sera la valeur transmise au paramètre ``tag`` lorsque l'élément de menu a été créé.
 
 \ **Note :** Cette méthode n'est implémentée que sur macOS.
 

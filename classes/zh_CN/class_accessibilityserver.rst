@@ -7,7 +7,7 @@ AccessibilityServer
 
 **继承：** :ref:`Object<class_Object>`
 
-A server interface for screen reader support.
+用于屏幕阅读器支持的服务器接口。
 
 .. rst-class:: classref-reftable-group
 
@@ -558,7 +558,7 @@ enum **AccessibilityRole**: :ref:`🔗<enum_AccessibilityServer_AccessibilityRol
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_REGION** = ``46``
 
-Region/landmark element. Screen readers can navigate between regions using landmark navigation.
+Region/landmark元素。屏幕阅读器可以使用地标导航在区域之间进行跳转。
 
 .. _class_AccessibilityServer_constant_ROLE_TEXT_RUN:
 
@@ -566,9 +566,9 @@ Region/landmark element. Screen readers can navigate between regions using landm
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TEXT_RUN** = ``47``
 
-Unifor text run.
+统一文本运行块。
 
-Note: This role is used for internal text elements, and should not be assigned to nodes.
+注意：此角色用于内部文本元素，不应手动分配给节点。
 
 .. rst-class:: classref-item-separator
 
@@ -1051,7 +1051,7 @@ enum **AccessibilityScrollHint**: :ref:`🔗<enum_AccessibilityServer_Accessibil
 
 :ref:`RID<class_RID>` **create_sub_element**\ (\ parent_rid\: :ref:`RID<class_RID>`, role\: :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>`, insert_pos\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AccessibilityServer_method_create_sub_element>`
 
-Creates a new, empty accessibility sub-element resource. Sub-elements can be used to provide accessibility information for objects which are not :ref:`Node<class_Node>`\ s, such as list items, table cells, or menu items. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`free_element()<class_AccessibilityServer_method_free_element>` method.
+新建空的无障碍子元素资源。子元素可用于为非 :ref:`Node<class_Node>` 对象提供无障碍信息，例如列表项、表格单元格或菜单项。子元素在父元素被释放时会自动释放，也可以通过 :ref:`free_element()<class_AccessibilityServer_method_free_element>` 方法提前释放。
 
 .. rst-class:: classref-item-separator
 
@@ -1063,9 +1063,9 @@ Creates a new, empty accessibility sub-element resource. Sub-elements can be use
 
 :ref:`RID<class_RID>` **create_sub_text_edit_elements**\ (\ parent_rid\: :ref:`RID<class_RID>`, shaped_text\: :ref:`RID<class_RID>`, min_height\: :ref:`float<class_float>`, insert_pos\: :ref:`int<class_int>` = -1, is_last_line\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AccessibilityServer_method_create_sub_text_edit_elements>`
 
-Creates a new, empty accessibility sub-element from the shaped text buffer. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`free_element()<class_AccessibilityServer_method_free_element>` method.
+从塑形文本缓冲区新建一个空的无障碍访问子元素。子元素在父元素释放时会自动释放，也可以提前使用 :ref:`free_element()<class_AccessibilityServer_method_free_element>` 方法释放。
 
-If ``is_last_line`` is ``true``, no trailing newline is appended to the text content. Set to ``true`` for the last line in multi-line text fields and for single-line text fields.
+如果 ``is_last_line`` 为 ``true``\ ，则不会在文本内容末尾添加换行符。对于多行文本字段的最后一行和单行文本字段，应设置为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1101,7 +1101,7 @@ If ``is_last_line`` is ``true``, no trailing newline is appended to the text con
 
 |void| **free_element**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_free_element>`
 
-Frees the accessibility element ``id`` created by :ref:`create_element()<class_AccessibilityServer_method_create_element>`, :ref:`create_sub_element()<class_AccessibilityServer_method_create_sub_element>`, or :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`.
+释放由 :ref:`create_element()<class_AccessibilityServer_method_create_element>`\ 、\ :ref:`create_sub_element()<class_AccessibilityServer_method_create_sub_element>` 或 :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>` 创建的无障碍元素 ``id``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1137,7 +1137,7 @@ Frees the accessibility element ``id`` created by :ref:`create_element()<class_A
 
 :ref:`bool<class_bool>` **is_supported**\ (\ ) |const| :ref:`🔗<class_AccessibilityServer_method_is_supported>`
 
-Returns ``true`` if screen reader is support by this implementation.
+如果该实现支持屏幕阅读器，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1329,7 +1329,7 @@ Returns ``true`` if screen reader is support by this implementation.
 
 |void| **update_set_braille_label**\ (\ id\: :ref:`RID<class_RID>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_braille_label>`
 
-Sets element accessibility label for Braille display.
+为盲文显示设置元素的无障碍标签。
 
 .. rst-class:: classref-item-separator
 
@@ -1341,7 +1341,7 @@ Sets element accessibility label for Braille display.
 
 |void| **update_set_braille_role_description**\ (\ id\: :ref:`RID<class_RID>`, description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_braille_role_description>`
 
-Sets element accessibility role description for Braille display.
+为盲文显示器设置元素的无障碍角色描述。
 
 .. rst-class:: classref-item-separator
 
@@ -1893,7 +1893,7 @@ Sets element accessibility role description for Braille display.
 
 |void| **update_set_text_selection**\ (\ id\: :ref:`RID<class_RID>`, text_start_id\: :ref:`RID<class_RID>`, start_char\: :ref:`int<class_int>`, text_end_id\: :ref:`RID<class_RID>`, end_char\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_text_selection>`
 
-Sets text selection to the text field. ``text_start_id`` and ``text_end_id`` should be elements created by :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`. Character offsets are relative to the corresponding element.
+设置文本字段中的文本选区。\ ``text_start_id`` 和 ``text_end_id`` 应当是由 :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>` 创建的元素。字符偏移量是相对于相应元素的。
 
 .. rst-class:: classref-item-separator
 

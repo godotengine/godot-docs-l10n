@@ -68,7 +68,7 @@ Descripciones de Propiedades
 - |void| **set_flags**\ (\ value\: |bitfield|\[:ref:`AccelerationStructureGeometryFlagBits<enum_RenderingDevice_AccelerationStructureGeometryFlagBits>`\]\ )
 - |bitfield|\[:ref:`AccelerationStructureGeometryFlagBits<enum_RenderingDevice_AccelerationStructureGeometryFlagBits>`\] **get_flags**\ (\ )
 
-Flags for the geometry.
+Banderas para la geometría.
 
 .. rst-class:: classref-item-separator
 

@@ -554,7 +554,7 @@ Dato il segmento 2D (``segment_from``, ``segment_to``), restituisce la posizione
 
 :ref:`Variant<class_Variant>` **segment_intersects_segment**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, to_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, to_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_segment_intersects_segment>`
 
-Checks if two line segments intersect, with line ``a`` between ``from_a`` and ``to_a`` and line ``b`` between ``from_b`` and ``to_b``. If the line segments intersect, the point of intersection is returned as a :ref:`Vector2<class_Vector2>`. If no intersection takes place, ``null`` is returned.
+Verifica se due segmenti di linea si intersecano, con la linea ``a`` tra ``from_a`` e ``to_a`` e la linea ``b`` tra ``from_b`` e ``to_b``. Se i segmenti si intersecano, il punto di intersezione è restituito come :ref:`Vector2<class_Vector2>`. Se non c'è alcuna intersezione, è restituito ``null``.
 
 .. rst-class:: classref-item-separator
 

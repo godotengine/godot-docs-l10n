@@ -7,16 +7,16 @@ AwaitTweener
 
 **继承：** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Awaits a specified signal.
+等待指定信号。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-**AwaitTweener** is used to await a specified signal, allowing asynchronous steps in :ref:`Tween<class_Tween>` animation. See :ref:`Tween.tween_await()<class_Tween_method_tween_await>` for more usage information.
+**AwaitTweener** 用于等待指定的信号，从而允许在 :ref:`Tween<class_Tween>` 动画中执行异步步骤。更多用法信息见 :ref:`Tween.tween_await()<class_Tween_method_tween_await>`\ 。
 
-The :ref:`Tweener.finished<class_Tweener_signal_finished>` signal is emitted when either the awaited signal is received, when timeout is reached, or when the target object is freed.
+当接收到所等待的信号、达到超时期限或目标对象被释放时，即会发出 :ref:`Tweener.finished<class_Tweener_signal_finished>` 信号。
 
 .. rst-class:: classref-reftable-group
 
@@ -45,7 +45,7 @@ The :ref:`Tweener.finished<class_Tweener_signal_finished>` signal is emitted whe
 
 :ref:`AwaitTweener<class_AwaitTweener>` **set_timeout**\ (\ timeout\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AwaitTweener_method_set_timeout>`
 
-Sets the maximum time an **AwaitTweener** can wait for the signal. Can be used as a safeguard for signals that may never be emitted. If not specified, the tweener will wait indefinitely.
+设置 **AwaitTweener** 等待信号的最长时间。可作为一种保障机制，用于处理那些可能永远不会被发出的信号。如果未指定该值，该补间动画将无限期等待。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

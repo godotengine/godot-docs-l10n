@@ -25,7 +25,7 @@ Window
 Обучающие материалы
 --------------------------------------
 
-- :doc:`HDR output <../tutorials/rendering/hdr_output>`
+- :doc:`HDR-вывод <../tutorials/rendering/hdr_output>`
 
 .. rst-class:: classref-reftable-group
 
@@ -2803,9 +2803,9 @@ This value is used by tonemapping and other :ref:`Environment<class_Environment>
 
 |void| **set_taskbar_progress_state**\ (\ state\: :ref:`ProgressState<enum_DisplayServer_ProgressState>`\ ) :ref:`🔗<class_Window_method_set_taskbar_progress_state>`
 
-Sets the type and state of the progress bar on the taskbar/dock icon of the **Window**. See :ref:`ProgressState<enum_DisplayServer_ProgressState>` for possible values and how each mode behaves.
+Устанавливает тип и состояние индикатора выполнения на значке панели задач/док-панели **Window**. См. :ref:`ProgressState<enum_DisplayServer_ProgressState>` для получения информации о возможных значениях и поведении каждого режима.
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **Примечание:** Этот метод реализован только в Windows и macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -2817,11 +2817,11 @@ Sets the type and state of the progress bar on the taskbar/dock icon of the **Wi
 
 |void| **set_taskbar_progress_value**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_method_set_taskbar_progress_value>`
 
-Creates a progress bar on the taskbar/dock icon of the **Window** if it does not exist, sets the progress of the icon.
+Создает индикатор выполнения на значке **Window** на панели задач/доке, если он отсутствует, и устанавливает прогресс отображения значка.
 
-\ ``value`` acts as a relative percentage value, ranges from ``0.0`` (lowest) to ``1.0`` (highest).
+\ ``value`` выступает в качестве относительного процентного значения, диапазон от ``0.0`` (минимальное) до ``1.0`` (максимальное).
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **Примечание:** Этот метод реализован только в Windows и macOS.
 
 .. rst-class:: classref-item-separator
 

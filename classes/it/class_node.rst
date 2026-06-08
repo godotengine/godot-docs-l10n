@@ -773,11 +773,11 @@ Questa notifica viene ricevuta *prima* del segnale correlato :ref:`tree_entered<
 
 **NOTIFICATION_EXIT_TREE** = ``11`` :ref:`🔗<class_Node_constant_NOTIFICATION_EXIT_TREE>`
 
-Notification received when the node is about to exit a :ref:`SceneTree<class_SceneTree>`. See :ref:`_exit_tree()<class_Node_private_method__exit_tree>`.
+Notifica ricevuta quando il nodo sta per uscire da uno :ref:`SceneTree<class_SceneTree>`. Vedi :ref:`_exit_tree()<class_Node_private_method__exit_tree>`.
 
-This notification is received *after* the related :ref:`tree_exiting<class_Node_signal_tree_exiting>` signal.
+Questa notifica viene ricevuta *dopo* il segnale correlato :ref:`tree_exiting<class_Node_signal_tree_exiting>`.
 
-This notification is sent in reversed order.
+Questa notifica è inviata in ordine inverso.
 
 .. _class_Node_constant_NOTIFICATION_MOVED_IN_PARENT:
 
@@ -1304,11 +1304,11 @@ Il nome del nodo. Questo nome deve essere univoco tra i fratelli (altri nodi fig
 - |void| **set_owner**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_owner**\ (\ )
 
-The owner of this node. The owner must be an ancestor of this node. When packing the owner node in a :ref:`PackedScene<class_PackedScene>`, all the nodes it owns are also saved with it. See also :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`.
+Il proprietario di questo nodo. Il proprietario deve essere un antenato di questo nodo. Quando si impacchetta il nodo proprietario in un :ref:`PackedScene<class_PackedScene>`, tutti i nodi posseduti da esso sono salvati con esso. Vedi anche :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`.
 
-\ **Note:** In the editor, nodes not owned by the scene root are usually not displayed in the Scene dock, and will **not** be saved. To prevent this, remember to set the owner after calling :ref:`add_child()<class_Node_method_add_child>`.
+\ **Nota:** Nell'editor, i nodi non posseduti dalla radice della scena di solito non sono visualizzati nel pannello di Scena e **non** saranno salvati. Per evitare ciò, ricorda di impostare il proprietario dopo aver chiamato :ref:`add_child()<class_Node_method_add_child>`.
 
-\ **Note:** The owner needs to be the current scene root. See `Instancing scenes <../tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__ in the documentation for more information.
+\ **Nota:** Il proprietario deve essere la radice della scena attuale. Consulta la sezione `Creazione di istanze di scene <../tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__ nella documentazione per ulteriori informazioni.
 
 .. rst-class:: classref-item-separator
 
@@ -1933,11 +1933,11 @@ Il Tween sarà avviato automaticamente sul frame di processo o frame di fisica s
 
 :ref:`Node<class_Node>` **duplicate**\ (\ flags\: :ref:`int<class_int>` = 15\ ) |const| :ref:`🔗<class_Node_method_duplicate>`
 
-Duplicates the node, returning a new node with all of its properties, signals, groups, and children copied from the original, recursively. The behavior can be tweaked through the ``flags`` (see :ref:`DuplicateFlags<enum_Node_DuplicateFlags>`). Internal nodes are not duplicated.
+Duplica il nodo, restituendo un nuovo nodo con tutte le sue proprietà, segnali, gruppi e figli copiati dall'originale, recursivamente. È possibile regolare il comportamento attraverso ``flags`` (vedi :ref:`DuplicateFlags<enum_Node_DuplicateFlags>`). I nodi interni non vengono duplicati.
 
-\ **Note:** For nodes with a :ref:`Script<class_Script>` attached, if :ref:`Object._init()<class_Object_private_method__init>` has been defined with required parameters, the duplicated node will not have a :ref:`Script<class_Script>`.
+\ **Nota:** Per i nodi con uno :ref:`Script<class_Script>` allegato, se :ref:`Object._init()<class_Object_private_method__init>` è stato definito con parametri obbligatori, il nodo duplicato non avrà uno :ref:`Script<class_Script>`.
 
-\ **Note:** By default, this method will duplicate only properties marked for serialization (i.e. using :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`, or in GDScript, :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`). If you want to duplicate all properties, use :ref:`DUPLICATE_INTERNAL_STATE<class_Node_constant_DUPLICATE_INTERNAL_STATE>`.
+\ **Nota:** Come predefinito, questo metodo duplicherà solo le proprietà serializzabili (ovvero che usano :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` o, in GDScript, :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`). Se vuoi duplicare tutte le proprietà, utilizza :ref:`DUPLICATE_INTERNAL_STATE<class_Node_constant_DUPLICATE_INTERNAL_STATE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2311,7 +2311,7 @@ Restituisce il nodo genitore di questo nodo, o ``null`` se il nodo non ha un gen
 
 :ref:`NodePath<class_NodePath>` **get_path**\ (\ ) |const| :ref:`🔗<class_Node_method_get_path>`
 
-Restituisce il percorso assoluto del nodo, relativo al :ref:`SceneTree.root<class_SceneTree_property_root>`. Se il nodo non si trova all'interno dell'albero di scena, questo metodo fallisce e restituisce un :ref:`NodePath<class_NodePath>` vuoto.
+Restituisce il percorso assoluto del nodo, relativo al :ref:`SceneTree.root<class_SceneTree_property_root>`. Se il nodo non si trova all'interno dell'albero di scene, questo metodo fallisce e restituisce un :ref:`NodePath<class_NodePath>` vuoto.
 
 .. rst-class:: classref-item-separator
 
@@ -2887,7 +2887,7 @@ Rimuove un nodo figlio ``node``. ``node``, insieme ai suoi figli, non sono **eli
 
 |void| **remove_from_group**\ (\ group\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Node_method_remove_from_group>`
 
-Rimuove il nodo dal gruppo nominato ``group``. Non fa nulla se il nodo non è nel gruppo ``group``. Vedi anche le note nella descrizione e i metodi dei gruppi di :ref:`SceneTree<class_SceneTree>`.
+Rimuove il nodo dal gruppo denominato ``group``. Non fa nulla se il nodo non è nel gruppo ``group``. Vedi anche le note nella descrizione e i metodi dei gruppi di :ref:`SceneTree<class_SceneTree>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2899,11 +2899,11 @@ Rimuove il nodo dal gruppo nominato ``group``. Non fa nulla se il nodo non è ne
 
 |void| **reparent**\ (\ new_parent\: :ref:`Node<class_Node>`, keep_global_transform\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Node_method_reparent>`
 
-Changes the parent of this **Node** to the ``new_parent``. The node needs to already have a parent. The node's :ref:`owner<class_Node_property_owner>` is preserved if its owner is still reachable from the new location (i.e., the node is still a descendant of the new parent after the operation).
+Cambia il genitore di questo **Node** al nuovo genitore ``new_parent``. Il nodo deve già avere un genitore. Il :ref:`owner<class_Node_property_owner>` del nodo è preservato se il suo proprietario è ancora raggiungibile dalla nuova posizione (ad esempio, il nodo è ancora un discendente del nuovo genitore dopo l'operazione).
 
-If ``keep_global_transform`` is ``true``, the node's global transform will be preserved if supported. :ref:`Node2D<class_Node2D>`, :ref:`Node3D<class_Node3D>` and :ref:`Control<class_Control>` support this argument (but :ref:`Control<class_Control>` keeps only position).
+Se ``keep_global_transform`` è ``true``, la trasformazione globale del nodo sarà preservata se supportata. :ref:`Node2D<class_Node2D>`, :ref:`Node3D<class_Node3D>` e :ref:`Control<class_Control>` supportano questo argomento (ma :ref:`Control<class_Control>` mantiene solo la posizione).
 
-\ **Warning:** If :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` is enabled and reparenting causes a large change in global transform, the object may appear to move from its old position to its new one over the next physics tick. To avoid this, call :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` after reparenting.
+\ **Attenzione:** Se ``membro ProjectSettings.physics/common/physics_interpolation`` è abilitato e il cambio di genitore influisce molto sulla trasformazione globale, l'oggetto potrebbe sembrare spostarsi dalla sua vecchia posizione a quella nuova nel prossimo tick di fisica. Per evitare ciò, chiama :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` dopo il cambio di genitore.
 
 .. rst-class:: classref-item-separator
 

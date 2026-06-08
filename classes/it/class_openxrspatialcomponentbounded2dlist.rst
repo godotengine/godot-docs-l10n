@@ -16,7 +16,7 @@ Object for storing the queries bounded2d result data.
 Descrizione
 ----------------------
 
-Object for storing the queries 2D bounding rectangle result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Oggetto per memorizzare i dati risultanti di una richiesta sui rettangoli delimitatori 2D quando si chiama :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 

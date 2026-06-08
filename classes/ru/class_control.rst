@@ -448,7 +448,7 @@ Godot распространяет события ввода через обла
 
 **maximum_size_changed**\ (\ ) :ref:`🔗<class_Control_signal_maximum_size_changed>`
 
-Emitted when the node's maximum size changes.
+Вызывается при изменении максимального размера узла.
 
 .. rst-class:: classref-item-separator
 
@@ -1625,15 +1625,15 @@ Sent when the mouse cursor enters the control's visible area, that is not occlud
 - |void| **set_custom_maximum_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_custom_maximum_size**\ (\ )
 
-The maximum size of this Control's bounding rectangle. If set to a value greater than or equal to ``(0, 0)``, the node's bounding rectangle will never exceed this size. A value below ``(0, 0)`` means there is no maximum size.
+Максимальный размер ограничивающего прямоугольника этого элемента управления. Если задано значение больше или равное ``(0, 0)``, ограничивающий прямоугольник узла никогда не превысит этот размер. Значение меньше ``(0, 0)`` означает отсутствие максимального размера.
 
-\ **Note:** The final effective maximum size may be subject to parent Container sizing and propagated maximum sizes. See also: :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
+\ **Примечание:** Окончательный эффективный максимальный размер может зависеть от размера родительского контейнера и распространяемых максимальных размеров. См. также: :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
 
-\ **Note:** Not all **Control** subtypes handle a custom maximum size gracefully, which may lead to unexpected behavior if the control's contents exceed this size.
+\ **Примечание:** Не все подтипы **Control** корректно обрабатывают пользовательский максимальный размер, что может привести к неожиданному поведению, если содержимое элемента управления превышает этот размер.
 
-\ **Note:** This value has priority over :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`. For example, if you set :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` to ``(100, 100)`` and :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` to ``(200, 200)``, the resulting size will be ``(100, 100)``.
+\ **Примечание:** Это значение имеет приоритет над :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`. Например, если вы установите :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` равным ``(100, 100)`` и :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` равным ``(200, 200)``, результирующий размер будет ``(100, 100)``.
 
-\ **Note:** It is recommended to use :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` instead of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` when using this property, as the former respects maximum size limits when calculating the minimum size, while the latter does not.
+\ **Примечание:** Рекомендуется использовать :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` вместо :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` при использовании этого свойства, поскольку первый учитывает ограничения максимального размера при вычислении минимального размера, а второй — нет.
 
 .. rst-class:: classref-item-separator
 
@@ -1650,9 +1650,9 @@ The maximum size of this Control's bounding rectangle. If set to a value greater
 - |void| **set_custom_minimum_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_custom_minimum_size**\ (\ )
 
-The minimum size of the node's bounding rectangle. If you set it to a value greater than ``(0, 0)``, the node's bounding rectangle will always have at least this size. Note that **Control** nodes have their internal minimum size returned by :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`. It depends on the control's contents, like text, textures, or style boxes. The actual minimum size is the maximum value of this property and the internal minimum size (see :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`).
+Минимальный размер ограничивающего прямоугольника узла. Если вы установите значение больше ``(0, 0)``, ограничивающий прямоугольник узла всегда будет иметь как минимум этот размер. Обратите внимание, что для узлов **Control** внутренний минимальный размер возвращается методом :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`. Он зависит от содержимого элемента управления, например, текста, текстур или блоков стилей. Фактический минимальный размер — это максимальное значение этого свойства и внутренний минимальный размер (см. :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`).
 
-\ **Note:** :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` has priority over this property. For example, if you set :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` to ``(200, 200)`` and :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` to ``(100, 100)``, the resulting size will be ``(100, 100)``.
+\ **Примечание:** :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` имеет приоритет над этим свойством. Например, если вы установите :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` равным ``(200, 200)`` и :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` равным ``(100, 100)``, результирующий размер будет ``(100, 100)``.
 
 .. rst-class:: classref-item-separator
 
@@ -2045,7 +2045,7 @@ The minimum size of the node's bounding rectangle. If you set it to a value grea
 - |void| **set_offset_transform_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_offset_transform_enabled**\ (\ )
 
-If ``true``, applies all offset transform properties. Otherwise, no offset transform is applied and the properties have no effect.
+Если ``true``, применяются все свойства преобразования смещения. В противном случае преобразование смещения не применяется, и свойства не оказывают никакого эффекта.
 
 .. rst-class:: classref-item-separator
 
@@ -2062,11 +2062,11 @@ If ``true``, applies all offset transform properties. Otherwise, no offset trans
 - |void| **set_offset_transform_pivot**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_pivot**\ (\ )
 
-Pivot used by :ref:`offset_transform_rotation<class_Control_property_offset_transform_rotation>` and :ref:`offset_transform_scale<class_Control_property_offset_transform_scale>` in absolute units.
+Позиция опорной точки, используемая :ref:`offset_transform_rotation<class_Control_property_offset_transform_rotation>` и :ref:`offset_transform_scale<class_Control_property_offset_transform_scale>`, измеряется в абсолютных единицах.
 
-The final pivot position is the combined value of this property and :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
+Конечная позиция опорной точки — это суммарное значение этого свойства и :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Не оказывает никакого эффекта, если :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` не имеет значения ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2083,11 +2083,11 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_pivot_ratio**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_pivot_ratio**\ (\ )
 
-Same as :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` but expressed in units relative to the **Control** :ref:`size<class_Control_property_size>` where ``Vector2(0, 0)`` is the top-left corner of this control, and ``Vector2(1, 1)`` is its bottom-right corner.
+Аналогично :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>`, но выражено в единицах относительно **Control** :ref:`size<class_Control_property_size>`, где ``Vector2(0, 0)`` — верхний левый угол этого элемента управления, а ``Vector2(1, 1)`` — его нижний правый угол.
 
-The final pivot position is the combined value of this property and :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>`.
+Окончательная позиция точки опоры — это суммарное значение этого свойства и :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Не оказывает никакого эффекта, если :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` не имеет значения ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2104,9 +2104,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_position**\ (\ )
 
-Position offset in absolute units. The final offset is the combined value of this property and :ref:`offset_transform_position_ratio<class_Control_property_offset_transform_position_ratio>`.
+Смещение положения в абсолютных единицах. Итоговое смещение представляет собой суммарное значение этого свойства и :ref:`offset_transform_position_ratio<class_Control_property_offset_transform_position_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Не оказывает никакого эффекта, если :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` не имеет значения ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2123,11 +2123,11 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_position_ratio**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_position_ratio**\ (\ )
 
-Same as :ref:`offset_transform_position<class_Control_property_offset_transform_position>` but expressed in units relative to the **Control** :ref:`size<class_Control_property_size>` where ``Vector2(0, 0)`` is the top-left corner of this control, and ``Vector2(1, 1)`` is its bottom-right corner.
+Аналогично :ref:`offset_transform_position<class_Control_property_offset_transform_position>`, но выражено в единицах относительно **Control** :ref:`size<class_Control_property_size>`, где ``Vector2(0, 0)`` — верхний левый угол этого элемента управления, а ``Vector2(1, 1)`` — его нижний правый угол.
 
-The final offset is the combined value of this property and :ref:`offset_transform_position<class_Control_property_offset_transform_position>`.
+Итоговое смещение — это суммарное значение этого свойства и :ref:`offset_transform_position<class_Control_property_offset_transform_position>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Не оказывает никакого эффекта, если :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` не имеет значения ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2144,9 +2144,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_rotation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_offset_transform_rotation**\ (\ )
 
-Rotation offset. The rotation pivot is defined by :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` and :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
+Смещение вращения. Точка опоры вращения определяется параметрами :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` и :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Не оказывает никакого эффекта, если параметр :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` не имеет значения ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2163,9 +2163,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_scale**\ (\ )
 
-Scale offset. The scale pivot is defined by :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` and :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
+Смещение масштаба. Опорная точка масштаба определяется параметрами :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` и :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Не оказывает никакого эффекта, если параметр :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` не имеет значения ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2182,11 +2182,11 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_visual_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_offset_transform_visual_only**\ (\ )
 
-If ``true``, the offset transforms is only applied visually and does not affect input. In other words, this Control will still receive input events at its original location before the offset transform is applied.
+Если ``true``, то смещение применяется только визуально и не влияет на ввод. Другими словами, этот элемент управления будет по-прежнему получать входные события в своем исходном местоположении до применения смещения.
 
-If ``false``, the entire transform of this Control is affected and input events will register where the Control is visually.
+Если ``false``, то изменяется все преобразование этого элемента управления, и входные события будут регистрироваться там, где элемент управления находится визуально.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Не оказывает никакого эффекта, если :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` не имеет значения ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2257,7 +2257,7 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_propagate_maximum_size**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_propagating_maximum_size**\ (\ )
 
-If ``true``, this Control's children will use the value returned by :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>` in their own size calculations.
+Если ``true``, дочерние элементы этого элемента управления будут использовать значение, возвращаемое :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`, в своих собственных расчетах размера.
 
 .. rst-class:: classref-item-separator
 
@@ -2522,7 +2522,7 @@ If ``true``, this Control's children will use the value returned by :ref:`get_co
 - |void| **set_translation_context**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_translation_context**\ (\ )
 
-The translation context used when translating this control's displayed text, if it has any. Also used when generating translation templates.
+Контекст перевода, используемый при переводе отображаемого текста этого элемента управления, если таковой имеется. Также используется при создании шаблонов перевода.
 
 .. rst-class:: classref-section-separator
 
@@ -2639,9 +2639,9 @@ Godot вызывает этот метод, чтобы передать вам `
 
 :ref:`int<class_int>` **_get_cursor_shape**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_cursor_shape>`
 
-Virtual method to be implemented by the user. Returns the cursor shape for the position ``at_position`` in the control's local coordinates, which will typically be used while hovering over this control. See :ref:`get_cursor_shape()<class_Control_method_get_cursor_shape>`.
+Виртуальный метод, который должен быть реализован пользователем. Возвращает форму курсора для позиции ``at_position`` в локальных координатах элемента управления, которая обычно используется при наведении курсора на этот элемент управления. См. :ref:`get_cursor_shape()<class_Control_method_get_cursor_shape>`.
 
-If not overridden, defaults to :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`.
+Если не переопределен, по умолчанию используется :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2690,13 +2690,13 @@ Godot вызывает этот метод для получения данны�
 
 :ref:`Vector2<class_Vector2>` **_get_maximum_size**\ (\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_maximum_size>`
 
-Virtual method to be implemented by the user. Returns the maximum size for this control. Alternative to :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` for controlling maximum size via code. The actual maximum size will be the max value of these two (in each axis separately).
+Виртуальный метод, реализуемый пользователем. Возвращает максимальный размер для этого элемента управления. Альтернатива :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` для управления максимальным размером с помощью кода. Фактический максимальный размер будет равен максимальному значению этих двух параметров (по каждой оси отдельно).
 
-If not overridden, defaults to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
+Если не переопределено, по умолчанию используется :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
 
-\ **Note:** This method will not be called when the script is attached to a **Control** node that already overrides its maximum size (e.g. :ref:`ScrollContainer<class_ScrollContainer>`).
+\ **Примечание:** Этот метод не будет вызываться, если скрипт прикреплен к узлу **Control**, который уже переопределяет свой максимальный размер (например, :ref:`ScrollContainer<class_ScrollContainer>`).
 
-\ **Note:** It is recommended to use :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` instead of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` when implementing this method, as the former respects maximum size limits when calculating the minimum size, while the latter does not.
+\ **Примечание:** Рекомендуется использовать :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` вместо :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` при реализации этого метода, поскольку первый учитывает ограничения максимального размера при вычислении минимального размера, а второй — нет.
 
 .. rst-class:: classref-item-separator
 
@@ -2724,9 +2724,9 @@ If not overridden, defaults to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
 
 :ref:`String<class_String>` **_get_tooltip**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_tooltip>`
 
-Virtual method to be implemented by the user. Returns the tooltip text for the position ``at_position`` in the control's local coordinates, which will typically appear when the cursor is resting over this control. See :ref:`get_tooltip()<class_Control_method_get_tooltip>`.
+Виртуальный метод, который должен быть реализован пользователем. Возвращает текст всплывающей подсказки для позиции ``at_position`` в локальных координатах элемента управления, который обычно появляется, когда курсор находится над этим элементом управления. См. :ref:`get_tooltip()<class_Control_method_get_tooltip>`.
 
-\ **Note:** If this method returns an empty :ref:`String<class_String>` and :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` is not overridden, no tooltip is displayed.
+\ **Примечание:** Если этот метод возвращает пустую :ref:`String<class_String>` и :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` не переопределен, всплывающая подсказка не отображается.
 
 .. rst-class:: classref-item-separator
 
@@ -2738,7 +2738,7 @@ Virtual method to be implemented by the user. Returns the tooltip text for the p
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **_get_tooltip_auto_translate_mode_at**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_tooltip_auto_translate_mode_at>`
 
-Return the auto-translation mode at the given ``at_position``. If not implemented, the :ref:`tooltip_auto_translate_mode<class_Control_property_tooltip_auto_translate_mode>` property will be used instead.
+Возвращает режим автоматического перевода для заданной позиции ``at_position``. Если он не реализован, будет использоваться свойство :ref:`tooltip_auto_translate_mode<class_Control_property_tooltip_auto_translate_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2803,11 +2803,11 @@ Return the auto-translation mode at the given ``at_position``. If not implemente
 
 :ref:`bool<class_bool>` **_has_point**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__has_point>`
 
-Virtual method to be implemented by the user. Returns whether the given ``point`` is inside this control.
+Виртуальный метод, который должен быть реализован пользователем. Возвращает значение, указывающее, находится ли заданная точка ``point`` внутри этого элемента управления.
 
-If not overridden, default behavior is checking if the point is within the control's Rect.
+Если не переопределено, поведение по умолчанию — проверка, находится ли точка внутри прямоугольника элемента управления.
 
-\ **Note:** If you want to check if a point is inside the control, you can use ``Rect2(Vector2.ZERO, size).has_point(point)``.
+\ **Примечание:** Если вы хотите проверить, находится ли точка внутри элемента управления, вы можете использовать ``Rect2(Vector2.ZERO, size).has_point(point)``.
 
 .. rst-class:: classref-item-separator
 
@@ -3179,11 +3179,11 @@ If not overridden, default behavior is checking if the point is within the contr
 
 :ref:`Vector2<class_Vector2>` **get_bound_minimum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_bound_minimum_size>`
 
-Returns the bound value of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` by :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
+Возвращает значение, ограничивающее :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` значением :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
 
-This value is the true minimum size of the container, as the maximum size has priority over the minimum size.
+Это значение представляет собой истинный минимальный размер контейнера, поскольку максимальный размер имеет приоритет над минимальным размером.
 
-For example, if the combined minimum size is (100, 100) and the combined maximum size is (50, 150), the bound minimum size will be (50, 100).
+Например, если суммарный минимальный размер равен (100, 100), а суммарный максимальный размер равен (50, 150), то ограничивающий минимальный размер будет равен (50, 100).
 
 .. rst-class:: classref-item-separator
 
@@ -3195,7 +3195,7 @@ For example, if the combined minimum size is (100, 100) and the combined maximum
 
 :ref:`Vector2<class_Vector2>` **get_combined_maximum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_combined_maximum_size>`
 
-Returns the combined maximum size from :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` and :ref:`get_maximum_size()<class_Control_method_get_maximum_size>`, as well as the :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` of this node's parent if it is a Control node with :ref:`propagate_maximum_size<class_Control_property_propagate_maximum_size>` set to ``true``.
+Возвращает суммарный максимальный размер, полученный из :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` и :ref:`get_maximum_size()<class_Control_method_get_maximum_size>`, а также :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` родительского узла, если это узел управления с :ref:`propagate_maximum_size<class_Control_property_propagate_maximum_size>`, установленным в ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -3207,7 +3207,7 @@ Returns the combined maximum size from :ref:`custom_maximum_size<class_Control_p
 
 :ref:`Vector2<class_Vector2>` **get_combined_minimum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_combined_minimum_size>`
 
-Returns the combined minimum size from :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` and :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`.
+Возвращает суммарный минимальный размер, полученный из :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` и :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3231,9 +3231,9 @@ Returns the combined minimum size from :ref:`custom_minimum_size<class_Control_p
 
 :ref:`CursorShape<enum_Control_CursorShape>` **get_cursor_shape**\ (\ at_position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const| :ref:`🔗<class_Control_method_get_cursor_shape>`
 
-Returns the mouse cursor shape for this control when hovered over ``at_position`` in local coordinates. For most controls, this is the same as :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`, but some built-in controls implement more complex logic.
+Возвращает форму курсора мыши для этого элемента управления при наведении на ``at_position`` в локальных координатах. Для большинства элементов управления это то же самое, что и :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`, но некоторые встроенные элементы управления реализуют более сложную логику.
 
-You can override :ref:`_get_cursor_shape()<class_Control_private_method__get_cursor_shape>` to implement custom behavior for this method.
+Вы можете переопределить :ref:`_get_cursor_shape()<class_Control_private_method__get_cursor_shape>`, чтобы реализовать пользовательское поведение для этого метода.
 
 .. rst-class:: classref-item-separator
 
@@ -3299,7 +3299,7 @@ You can override :ref:`_get_cursor_shape()<class_Control_private_method__get_cur
 
 :ref:`Vector2<class_Vector2>` **get_maximum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_maximum_size>`
 
-Returns the maximum size for this control. See :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>`.
+Возвращает максимальный размер для этого элемента управления. См. :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3562,11 +3562,11 @@ Returns the maximum size for this control. See :ref:`custom_maximum_size<class_C
 
 :ref:`String<class_String>` **get_tooltip**\ (\ at_position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const| :ref:`🔗<class_Control_method_get_tooltip>`
 
-Returns the tooltip text for the position ``at_position`` in the control's local coordinates, which will typically appear when the cursor is resting over this control. By default, it returns :ref:`tooltip_text<class_Control_property_tooltip_text>`.
+Возвращает текст всплывающей подсказки для позиции ``at_position`` в локальных координатах элемента управления, который обычно отображается, когда курсор находится над этим элементом управления. По умолчанию возвращает :ref:`tooltip_text<class_Control_property_tooltip_text>`.
 
-You can override :ref:`_get_tooltip()<class_Control_private_method__get_tooltip>` to implement custom behavior for this method.
+Вы можете переопределить :ref:`_get_tooltip()<class_Control_private_method__get_tooltip>`, чтобы реализовать пользовательское поведение для этого метода.
 
-\ **Note:** If this method returns an empty :ref:`String<class_String>` and :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` is not overridden, no tooltip is displayed.
+\ **Примечание:** Если этот метод возвращает пустую :ref:`String<class_String>` и :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` не переопределен, всплывающая подсказка не отображается.
 
 .. rst-class:: classref-item-separator
 
@@ -3607,11 +3607,11 @@ You can override :ref:`_get_tooltip()<class_Control_private_method__get_tooltip>
 
 |void| **grab_focus**\ (\ hide_focus\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Control_method_grab_focus>`
 
-Steal the focus from another control and become the focused control (see :ref:`focus_mode<class_Control_property_focus_mode>`).
+Перехватывает фокус у другого элемента управления и становится сфокусированным элементом управления (см. :ref:`focus_mode<class_Control_property_focus_mode>`).
 
-If ``hide_focus`` is ``true``, the control will not visually show its focused state. Has no effect for :ref:`LineEdit<class_LineEdit>` and :ref:`TextEdit<class_TextEdit>` when :ref:`ProjectSettings.gui/common/show_focus_state_on_pointer_event<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>` is set to ``Text Input Controls``, or for any control when it is set to ``Always``.
+Если ``hide_focus`` имеет значение ``true``, элемент управления не будет визуально отображать свое сфокусированное состояние. Не оказывает никакого эффекта на :ref:`LineEdit<class_LineEdit>` и :ref:`TextEdit<class_TextEdit>`, если :ref:`ProjectSettings.gui/common/show_focus_state_on_pointer_event<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>` установлен на ``Text Input Controls``, или на любой элемент управления, если он установлен на ``Always``.
 
-\ **Note:** Using this method together with :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>` makes it more reliable, especially when called inside :ref:`Node._ready()<class_Node_private_method__ready>`.
+\ **Примечание:** Использование этого метода вместе с :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>` делает его более надежным, особенно при вызове внутри :ref:`Node._ready()<class_Node_private_method__ready>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4151,9 +4151,9 @@ If ``hide_focus`` is ``true``, the control will not visually show its focused st
 
 |void| **update_maximum_size**\ (\ ) :ref:`🔗<class_Control_method_update_maximum_size>`
 
-Invalidates the maximum size cache in this node and in parent nodes up to top level. Intended to be used with :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` when the return value is changed. Setting :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` directly calls this method automatically.
+Аннулирует кэш максимального размера в этом узле и в родительских узлах до верхнего уровня. Предназначен для использования с :ref:`get_maximum_size()<class_Control_method_get_maximum_size>` при изменении возвращаемого значения. Установка :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` напрямую автоматически вызывает этот метод.
 
-\ **Note:** Calling this method also calls :ref:`update_minimum_size()<class_Control_method_update_minimum_size>` since the combined minimum size may be affected by the maximum size change.
+\ **Примечание:** Вызов этого метода также вызывает :ref:`update_minimum_size()<class_Control_method_update_minimum_size>`, поскольку на суммарный минимальный размер может повлиять изменение максимального размера.
 
 .. rst-class:: classref-item-separator
 
@@ -4165,7 +4165,7 @@ Invalidates the maximum size cache in this node and in parent nodes up to top le
 
 |void| **update_minimum_size**\ (\ ) :ref:`🔗<class_Control_method_update_minimum_size>`
 
-Invalidates the minimum size cache in this node and in parent nodes up to top level. Intended to be used with :ref:`get_minimum_size()<class_Control_method_get_minimum_size>` when the return value is changed. Setting :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` directly calls this method automatically.
+Аннулирует кэш минимального размера в этом узле и в родительских узлах до верхнего уровня. Предназначен для использования с :ref:`get_minimum_size()<class_Control_method_get_minimum_size>` при изменении возвращаемого значения. Установка :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` напрямую автоматически вызывает этот метод.
 
 .. rst-class:: classref-item-separator
 

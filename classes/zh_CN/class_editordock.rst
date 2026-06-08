@@ -138,7 +138,7 @@ EditorDock 是一个 :ref:`Container<class_Container>` 节点，可以停靠在�
 
 **opened**\ (\ ) :ref:`🔗<class_EditorDock_signal_opened>`
 
-Emitted when the dock is opened via the Editor > Editor Docks menu, before it's made visible.
+当通过 Editor > Editor Docks 菜单打开该 Dock 时，会在其变为可见状态之前发出此信号。
 
 .. rst-class:: classref-section-separator
 
@@ -169,7 +169,7 @@ flags **DockLayout**: :ref:`🔗<enum_EditorDock_DockLayout>`
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_HORIZONTAL** = ``2``
 
-Allows placing the dock in the horizontal dock slots at the bottom.
+允许将该停靠面板（Dock）放置在底部的水平停靠槽中。
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_FLOATING:
 
@@ -283,7 +283,7 @@ enum **DockSlot**: :ref:`🔗<enum_EditorDock_DockSlot>`
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_BOTTOM_L** = ``9``
 
-Dock slot at the bottom, below bottom panel, on the left side.
+位于底部面板下方、左侧的停靠槽位。
 
 .. _class_EditorDock_constant_DOCK_SLOT_BOTTOM_R:
 
@@ -291,7 +291,7 @@ Dock slot at the bottom, below bottom panel, on the left side.
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_BOTTOM_R** = ``10``
 
-Dock slot at the bottom, below bottom panel, on the right side.
+位于底部面板下方、右侧的停靠槽位。
 
 .. _class_EditorDock_constant_DOCK_SLOT_MAX:
 
@@ -408,7 +408,7 @@ Dock slot at the bottom, below bottom panel, on the right side.
 - |void| **set_force_show_icon**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_force_show_icon**\ (\ )
 
-If ``true``, the dock will always display an icon, regardless of :ref:`EditorSettings.interface/editor/docks/dock_tab_style<class_EditorSettings_property_interface/editor/docks/dock_tab_style>` or :ref:`EditorSettings.interface/editor/docks/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/docks/bottom_dock_tab_style>`.
+如果设为 ``true``\ ，无论 :ref:`EditorSettings.interface/editor/docks/dock_tab_style<class_EditorSettings_property_interface/editor/docks/dock_tab_style>` 或 :ref:`EditorSettings.interface/editor/docks/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/docks/bottom_dock_tab_style>` 怎么设置，该停靠面板（Dock）都会始终显示图标。
 
 .. rst-class:: classref-item-separator
 

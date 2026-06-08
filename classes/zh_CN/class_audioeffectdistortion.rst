@@ -7,26 +7,26 @@ AudioEffectDistortion
 
 **继承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a distortion audio effect to an audio bus.
+为音频总线添加失真音频效果。
 
-Remaps audio samples using a nonlinear function to achieve a distorted sound.
+通过使用非线性函数重新映射音频采样，从而实现声音失真。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-A "distortion" effect modifies the waveform via a nonlinear mathematical function (see available ones in :ref:`Mode<enum_AudioEffectDistortion_Mode>`), based on the amplitude of the waveform's samples.
+“失真”效果会根据波形样本的振幅，通过一个非线性数学函数（详见 :ref:`Mode<enum_AudioEffectDistortion_Mode>` 中可用的类型）来修改波形。
 
-\ **Note:** In a nonlinear function, an input sample at *x* amplitude value, will either have its amplitude increased or decreased to a *y* value, based on the function value at *x*, which is why even at the same :ref:`drive<class_AudioEffectDistortion_property_drive>`, the output sound will vary depending on the input's volume. To change the volume while maintaining the output waveform, use :ref:`post_gain<class_AudioEffectDistortion_property_post_gain>`.
+\ **注意：** 在非线性函数中，一个振幅为 *x* 的输入样本，其振幅会根据函数在 *x* 处的值，被增大或减小为 *y*\ 。这就是为什么即使在相同的 :ref:`drive<class_AudioEffectDistortion_property_drive>`\ （驱动/强度）下，输出的声音也会因输入音量的不同而产生变化。如果想要在保持输出波形不变的情况下改变音量，请使用 :ref:`post_gain<class_AudioEffectDistortion_property_post_gain>`\ （后置增益）。
 
-In this effect, each type is a different nonlinear function. The different types available are: clip, atan, lofi (bitcrush), overdrive, and waveshape. Every distortion type available here is symmetric: negative amplitude values are affected the same way as positive ones.
+在此效果中，每种类型都对应一种不同的非线性函数。可用的不同类型包括：clip（削波）、atan（反正切）、lofi（低音质/位深破碎）、overdrive（过载）以及 waveshape（波形整形）。这里提供的每种失真类型都是对称的：负振幅值受到的影响与正振幅值完全相同。
 
-Although distortion will always change frequency content, usually by introducing high harmonics, different distortion types offer a range of sound qualities; from "soft" and "warm", to "crunchy" and "abrasive".
+虽然失真通常会改变频率内容（通常是通过引入高频谐波），但不同的失真类型能提供一系列不同的声音质感；从“柔和”、“温暖”到“粗粝”和“刺耳”。
 
-For games, it can help simulate sound coming from some saturated device or speaker very efficiently. It can also help the audio stand out in a mix, by introducing higher frequencies and increasing the volume.
+对于游戏而言，它可以非常高效地模拟声音从某些饱和设备或扬声器中发出的效果。此外，通过引入更高的频率并提升音量，它还能帮助音频在混音中脱颖而出。
 
-\ **Note:** Although usually imperceptible, an enabled distortion effect still changes the sound even when :ref:`drive<class_AudioEffectDistortion_property_drive>` is set to 0. This is not a bug. If this behavior is undesirable, consider disabling the effect using :ref:`AudioServer.set_bus_effect_enabled()<class_AudioServer_method_set_bus_effect_enabled>`.
+\ **注意：** 虽然通常难以察觉，但即使 :ref:`drive<class_AudioEffectDistortion_property_drive>` 设置为 0，启用的失真效果依然会改变声音。这并非程序错误（Bug）。如果不希望出现这种行为，可以考虑使用 :ref:`AudioServer.set_bus_effect_enabled()<class_AudioServer_method_set_bus_effect_enabled>` 来禁用该效果。
 
 .. rst-class:: classref-introduction-group
 
@@ -35,7 +35,7 @@ For games, it can help simulate sound coming from some saturated device or speak
 
 - :doc:`音频总线 <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`音效 <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -78,7 +78,7 @@ enum **Mode**: :ref:`🔗<enum_AudioEffectDistortion_Mode>`
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_CLIP** = ``0``
 
-Flattens the waveform at 0 dB in a sharp manner. :ref:`drive<class_AudioEffectDistortion_property_drive>` increases amplitude of samples exponentially. This mode functions as a hard clipper if :ref:`drive<class_AudioEffectDistortion_property_drive>` is set to 0, and is the only mode that clips audio signals at 0 dB.
+以一种尖锐的方式将波形在 0 dB 处压平。\ :ref:`drive<class_AudioEffectDistortion_property_drive>`\ （驱动）参数会以指数级的方式提升样本的振幅。如果将 :ref:`drive<class_AudioEffectDistortion_property_drive>` 设置为 0，该模式会充当硬削波器（hard clipper），并且它是唯一一种会在 0 dB 处对音频信号进行削波的模式。
 
 .. _class_AudioEffectDistortion_constant_MODE_ATAN:
 
@@ -86,7 +86,7 @@ Flattens the waveform at 0 dB in a sharp manner. :ref:`drive<class_AudioEffectDi
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_ATAN** = ``1``
 
-Flattens the waveform in a smooth manner, following an arctangent curve. The audio decreases in volume, before flattening peaks to ``PI * 4.0`` (linear value), if it was normalized beforehand.
+以平滑的方式压平波形，遵循反正切（arctangent）曲线。如果音频事先经过了标准化处理，它的音量会先降低，然后将波峰压平至 ``PI * 4.0``\ （线性值）。
 
 .. _class_AudioEffectDistortion_constant_MODE_LOFI:
 
@@ -94,7 +94,7 @@ Flattens the waveform in a smooth manner, following an arctangent curve. The aud
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_LOFI** = ``2``
 
-Decreases audio bit depth to achieve a low-resolution audio signal, going from 16-bit to 2-bit. Can be used to emulate the sound of early digital audio devices.
+将音频位深降低，以获得从 16 位到 2 位的低分辨率音频信号。可用于模拟早期数字音频设备的声音。
 
 .. _class_AudioEffectDistortion_constant_MODE_OVERDRIVE:
 
@@ -102,7 +102,7 @@ Decreases audio bit depth to achieve a low-resolution audio signal, going from 1
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_OVERDRIVE** = ``3``
 
-Emulates the warm distortion produced by a field effect transistor, which is commonly used in solid-state musical instrument amplifiers. :ref:`drive<class_AudioEffectDistortion_property_drive>` has no effect in this mode.
+模拟通常用于固态乐器放大器的场效应晶体管产生的暖失真。\ :ref:`drive<class_AudioEffectDistortion_property_drive>` 属性在该模式下无效。
 
 .. _class_AudioEffectDistortion_constant_MODE_WAVESHAPE:
 
@@ -110,7 +110,7 @@ Emulates the warm distortion produced by a field effect transistor, which is com
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_WAVESHAPE** = ``4``
 
-Flattens the waveform in a smooth manner, until it reaches a sharp peak at ``drive = 1``, following a generic absolute sigmoid function.
+以平滑的方式压平波形，直到在 ``drive = 1`` 时达到一个尖锐的峰值，遵循一个通用的绝对 Sigmoid 函数。
 
 .. rst-class:: classref-section-separator
 
@@ -132,7 +132,7 @@ Flattens the waveform in a smooth manner, until it reaches a sharp peak at ``dri
 - |void| **set_drive**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drive**\ (\ )
 
-Distortion intensity. Controls how much of the input audio is affected by the distortion curve by moving from a linear function to a nonlinear one. Value can range from 0 to 1.
+失真强度。它通过让音频从线性函数向非线性函数过渡，来控制输入音频受失真曲线影响的程度。该值的取值范围是 0 到 1。
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Distortion intensity. Controls how much of the input audio is affected by the di
 - |void| **set_mode**\ (\ value\: :ref:`Mode<enum_AudioEffectDistortion_Mode>`\ )
 - :ref:`Mode<enum_AudioEffectDistortion_Mode>` **get_mode**\ (\ )
 
-Distortion type. Changes the nonlinear function used to distort the waveform. See :ref:`Mode<enum_AudioEffectDistortion_Mode>`.
+失真类型。用于更改用来扭曲波形的非线性函数。具体可参考 :ref:`Mode<enum_AudioEffectDistortion_Mode>` 枚举。
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ Distortion type. Changes the nonlinear function used to distort the waveform. Se
 - |void| **set_post_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_post_gain**\ (\ )
 
-Gain after the effect, in dB. Value can range from -80 to 24.
+该效果后的增益，单位为分贝。取值范围从 -80 到 24。
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ Gain after the effect, in dB. Value can range from -80 to 24.
 - |void| **set_pre_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain**\ (\ )
 
-Gain before the effect, in dB. Value can range from -60 to 60.
+该效果前的增益，单位为分贝。取值范围从 -60 到 60。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -424,9 +424,9 @@ Godot 编辑器的接口。
 
 :ref:`float<class_float>` **get_editor_scale**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_scale>`
 
-Returns the actual scale of the editor UI (``1.0`` being 100% scale). This can be used to adjust position and dimensions of the UI added by plugins.
+返回编辑器 UI（用户界面）的实际缩放比例（\ ``1.0`` 代表 100% 的原始大小）。这个方法非常适合用来调整插件所添加的 UI 元素的位置和尺寸。
 
-\ **Note:** This value is set via the :ref:`EditorSettings.interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` and :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>` settings. The editor must be restarted for changes to be properly applied.
+\ **注意：** 这个数值是由 :ref:`EditorSettings.interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` 和 :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>` 这两个设置项共同决定的。修改设置后，必须重启编辑器才能使更改完全生效。
 
 .. rst-class:: classref-item-separator
 
@@ -674,7 +674,7 @@ Returns the actual scale of the editor UI (``1.0`` being 100% scale). This can b
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_unsaved_scenes**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_unsaved_scenes>`
 
-Returns an array of file paths of currently unsaved scenes.
+返回当前所有未保存场景的文件路径数组。
 
 .. rst-class:: classref-item-separator
 
@@ -698,13 +698,13 @@ Returns an array of file paths of currently unsaved scenes.
 
 :ref:`bool<class_bool>` **is_multi_window_enabled**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_is_multi_window_enabled>`
 
-Returns ``true`` if multiple window support is enabled in the editor. Multiple window support is enabled if *all* of these statements are true:
+如果在编辑器中启用了多窗口支持，则返回 ``true``\ 。只有当以下 *所有* 条件都成立时，多窗口支持才会被启用：
 
-- :ref:`EditorSettings.interface/multi_window/enable<class_EditorSettings_property_interface/multi_window/enable>` is ``true``.
+\ :ref:`EditorSettings.interface/multi_window/enable<class_EditorSettings_property_interface/multi_window/enable>` 为 ``true``\ 。
 
-- :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` is ``false``.
+\ :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` 为 ``false``\ 。
 
-- :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` is ``false``. This is forced to ``true`` on platforms that don't support multiple windows such as Web, or when the ``--single-window`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>` is used.
+\ :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` 为 ``false``\ 。在不支持多窗口的平台（例如 Web 端），或者使用了 ``--single-window`` `命令行参数 <$ DOCS_URL/tutorials/editor/command_line_tutorial.html>`__ 时，\ :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` 会被强制设为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -992,7 +992,7 @@ Returns ``true`` if multiple window support is enabled in the editor. Multiple w
 
 |void| **reload_scene_from_path**\ (\ scene_filepath\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_reload_scene_from_path>`
 
-Reloads the scene at the given path. Fails if the scene is not open.
+重新加载指定路径的场景。如果该场景当前没有打开，操作将会失败。
 
 .. rst-class:: classref-item-separator
 
@@ -1080,7 +1080,7 @@ Reloads the scene at the given path. Fails if the scene is not open.
 
 |void| **set_main_screen_editor**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_set_main_screen_editor>`
 
-Sets the editor's current main screen to the one specified in ``name``. ``name`` must match the title of the tab in question exactly (e.g. ``2D``, ``3D``, ``Script``, ``Game``, or ``Asset Store`` for default tabs).
+将编辑器的当前主屏幕切换为 ``name`` 参数中指定的界面。\ ``name`` 必须与对应标签页的标题完全匹配（例如，对于默认标签页，应使用 ``2D``\ 、\ ``3D``\ 、\ ``Script``\ 、\ ``Game`` 或 ``Asset Store``\ ）。
 
 .. rst-class:: classref-item-separator
 

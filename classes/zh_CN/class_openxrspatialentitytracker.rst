@@ -71,7 +71,7 @@ OpenXR 空间实体扩展管理的位置跟踪器的基类。
 
 **next_changed**\ (\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_signal_next_changed>`
 
-Emitted when the next-chain changes, from either :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` or :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
+当“下一个”链表发生改变时发出信号，无论是由 :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` 还是 :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>` 引起的。
 
 .. rst-class:: classref-item-separator
 
@@ -180,9 +180,9 @@ enum **EntityTrackingState**: :ref:`🔗<enum_OpenXRSpatialEntityTracker_EntityT
 
 |void| **add_next**\ (\ next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_method_add_next>`
 
-Adds a new :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` to the next-chain.
+向“下一个”链表中添加一个新的 :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ 。
 
-\ :ref:`get_next()<class_OpenXRSpatialEntityTracker_method_get_next>` will return this ``next`` until either :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` is called again or it's removed in :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
+在再次调用 :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` 或通过 :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>` 移除之前，\ :ref:`get_next()<class_OpenXRSpatialEntityTracker_method_get_next>` 将返回此 ``next`` 对象。
 
 .. rst-class:: classref-item-separator
 
@@ -194,9 +194,9 @@ Adds a new :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` to the next-cha
 
 :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` **get_next**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityTracker_method_get_next>`
 
-Gets the head :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` in the next-chain.
+获取“下一个”链表中的首个 :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` 对象。
 
-See also :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` and :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
+另见 :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` 和 :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ See also :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` and
 
 :ref:`RID<class_RID>` **get_spatial_context**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityTracker_method_get_spatial_context>`
 
-Gets the spatial context used to create this **OpenXRSpatialEntityTracker**.
+获取用于创建此 **OpenXRSpatialEntityTracker** 的空间上下文（spatial context）。
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Gets the spatial context used to create this **OpenXRSpatialEntityTracker**.
 
 |void| **remove_next**\ (\ next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_method_remove_next>`
 
-Removes a ``next`` object previously added in :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` from the next-chain.
+从 next 链（next-chain）中移除一个之前通过 :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` 方法添加的 ``next`` 对象。
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Removes a ``next`` object previously added in :ref:`add_next()<class_OpenXRSpati
 
 |void| **set_spatial_context**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_method_set_spatial_context>`
 
-Sets the spatial context used to create this tracker.
+设置用于创建此追踪器的空间上下文（spatial context）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

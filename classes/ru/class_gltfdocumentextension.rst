@@ -16,11 +16,11 @@ GLTFDocumentExtension
 Описание
 ----------------
 
-Extends the functionality of the :ref:`GLTFDocument<class_GLTFDocument>` class by allowing you to run arbitrary code at various stages of glTF import or export.
+Расширяет функциональность класса :ref:`GLTFDocument<class_GLTFDocument>`, позволяя выполнять произвольный код на различных этапах импорта или экспорта glTF.
 
-To use, make a new class extending GLTFDocumentExtension, override any methods you need, make an instance of your class, and register it using :ref:`GLTFDocument.register_gltf_document_extension()<class_GLTFDocument_method_register_gltf_document_extension>`.
+Для использования создайте новый класс, расширяющий GLTFDocumentExtension, переопределите необходимые методы, создайте экземпляр вашего класса и зарегистрируйте его с помощью :ref:`GLTFDocument.register_gltf_document_extension()<class_GLTFDocument_method_register_gltf_document_extension>`.
 
-\ **Note:** All GLTFDocumentExtension classes are duplicated when beginning the import or export process. Except for configuration values, these classes must be stateless in order to function properly. If you need to store data, use the ``set_additional_data`` and ``get_additional_data`` methods in :ref:`GLTFState<class_GLTFState>` or :ref:`GLTFNode<class_GLTFNode>`.
+\ **Примечание:** Все классы GLTFDocumentExtension дублируются в начале процесса импорта или экспорта. За исключением значений конфигурации, эти классы должны быть без состояния для корректной работы. Если вам необходимо хранить данные, используйте методы ``set_additional_data`` и ``get_additional_data`` в :ref:`GLTFState<class_GLTFState>` или :ref:`GLTFNode<class_GLTFNode>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -116,9 +116,9 @@ To use, make a new class extending GLTFDocumentExtension, override any methods y
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_export_get_property_list**\ (\ root_node\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__export_get_property_list>`
 
-Runs prior to the export process. This method is run before :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>` when exporting a scene from the editor, or it may not be run at all in other situations.
+Выполняется перед процессом экспорта. Этот метод запускается перед :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>` при экспорте сцены из редактора, или может вообще не запускаться в других ситуациях.
 
-Unlike the rest of the export methods, this does not run when calling a :ref:`GLTFDocument<class_GLTFDocument>`'s export methods in sequence with everything else, but rather runs before that entire process occurs, allowing configuration to occur beforehand, potentially minutes or hours in advance of :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>`. This allows extensions to decide which properties to show in the editor export settings dialog based on the contents of the scene, hiding any settings that are not relevant for that scene. The ``root_node`` parameter may be ``null``, in which case all properties should be shown.
+В отличие от остальных методов экспорта, этот метод не запускается при последовательном вызове методов экспорта :ref:`GLTFDocument<class_GLTFDocument>` со всем остальным, а запускается перед всем этим процессом, позволяя выполнить настройку заранее, потенциально за несколько минут или часов до :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>`. Это позволяет расширениям решать, какие свойства отображать в диалоговом окне настроек экспорта редактора на основе содержимого сцены, скрывая любые настройки, не имеющие отношения к этой сцене. Параметр ``root_node`` может быть ``null``, в этом случае должны отображаться все свойства.
 
 .. rst-class:: classref-item-separator
 

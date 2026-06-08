@@ -59,7 +59,7 @@ enum **ActionType**: :ref:`🔗<enum_OpenXRAction_ActionType>`
 
 :ref:`ActionType<enum_OpenXRAction_ActionType>` **OPENXR_ACTION_BOOL** = ``0``
 
-This action provides a boolean value.
+Esta acción proporciona un valor booleano.
 
 .. _class_OpenXRAction_constant_OPENXR_ACTION_FLOAT:
 
@@ -126,7 +126,7 @@ El tipo de la acción.
 - |void| **set_localized_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_localized_name**\ (\ )
 
-The localized description of this action.
+La descripción localizada de esta acción.
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ The localized description of this action.
 - |void| **set_toplevel_paths**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_toplevel_paths**\ (\ )
 
-A collections of toplevel paths to which this action can be bound.
+Una colección de rutas de nivel superior a las que se puede vincular esta acción.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 

@@ -4684,11 +4684,11 @@ Quando ``chars_per_line`` è maggiore di zero, vengono invece restituiti i confi
 
 :ref:`String<class_String>` **string_to_lower**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_string_to_lower>`
 
-Returns the string converted to ``lowercase``.
+Restituisce la stringa convertita in ``lowercase`` (minuscolo).
 
-\ **Note:** Casing is locale dependent and context sensitive if server support :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
+\ **Nota:** La distinzione tra maiuscole e minuscole dipende dalla localizzazione ed è sensibile al contesto se il server supporta la funzionalità :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` (supportata da :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
 
-\ **Note:** The result may be longer or shorter than the original.
+\ **Nota:** Il risultato potrebbe essere più lungo o più corto dell'originale.
 
 .. rst-class:: classref-item-separator
 
@@ -4700,11 +4700,11 @@ Returns the string converted to ``lowercase``.
 
 :ref:`String<class_String>` **string_to_title**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_string_to_title>`
 
-Returns the string converted to ``Title Case``.
+Restituisce la stringa convertita in ``Title Case`` (minuscolo, ma la prima lettera di ogni parola è maiuscola).
 
-\ **Note:** Casing is locale dependent and context sensitive if server support :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
+\ **Nota:** La distinzione tra maiuscole e minuscole dipende dalle impostazioni locali ed è sensibile al contesto se il server supporta la funzionalità :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` (supportata da :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
 
-\ **Note:** The result may be longer or shorter than the original.
+\ **Nota:** Il risultato potrebbe essere più lungo o più corto dell'originale.
 
 .. rst-class:: classref-item-separator
 
@@ -4716,11 +4716,11 @@ Returns the string converted to ``Title Case``.
 
 :ref:`String<class_String>` **string_to_upper**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_string_to_upper>`
 
-Returns the string converted to ``UPPERCASE``.
+Restituisce la stringa convertita in ``UPPERCASE`` (maiuscolo).
 
-\ **Note:** Casing is locale dependent and context sensitive if server support :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
+\ **Nota:** La distinzione tra maiuscole e minuscole dipende dalla localizzazione ed è sensibile al contesto se il server supporta la funzionalità :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` (supportata da :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
 
-\ **Note:** The result may be longer or shorter than the original.
+\ **Nota:** Il risultato potrebbe essere più lungo o più corto dell'originale.
 
 .. rst-class:: classref-item-separator
 

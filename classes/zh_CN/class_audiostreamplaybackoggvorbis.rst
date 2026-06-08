@@ -7,14 +7,14 @@ AudioStreamPlaybackOggVorbis
 
 **继承：** :ref:`AudioStreamPlaybackResampled<class_AudioStreamPlaybackResampled>` **<** :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Playback class used for :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`.
+:ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` 使用的播放类。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Playback component of :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`. Uses :ref:`OggPacketSequencePlayback<class_OggPacketSequencePlayback>` for playback data.
+:ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` 的播放组件。使用 :ref:`OggPacketSequencePlayback<class_OggPacketSequencePlayback>` 作为播放数据。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

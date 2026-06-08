@@ -140,7 +140,7 @@ enum **SyncMode**: :ref:`🔗<enum_AnimationNodeBlendSpace1D_SyncMode>`
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` **SYNC_MODE_NONE** = ``0``
 
-Inactive animations are frozen and do not advance.
+Неактивные анимации замораживаются и не переходят к следующему этапу.
 
 .. _class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_INDEPENDENT:
 
@@ -148,7 +148,7 @@ Inactive animations are frozen and do not advance.
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` **SYNC_MODE_INDEPENDENT** = ``1``
 
-Inactive animations advance with a weight of ``0``. This is equivalent to the previous ``sync = true`` behavior.
+Неактивные анимации продвигаются с весом ``0``. Это эквивалентно предыдущему поведению ``sync = true``.
 
 .. _class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_CYCLIC_MUTABLE:
 
@@ -156,9 +156,9 @@ Inactive animations advance with a weight of ``0``. This is equivalent to the pr
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` **SYNC_MODE_CYCLIC_MUTABLE** = ``2``
 
-All animations are time-scaled so they stay in sync, with the cycle length dynamically computed from active blend weights. This is self-normalizing: a solo animation plays at normal speed.
+Все анимации масштабируются по времени, чтобы оставаться синхронизированными, при этом длительность цикла динамически вычисляется на основе активных весов смешивания. Это самонормализация: отдельная анимация воспроизводится с нормальной скоростью.
 
-\ **Note:** If you apply :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>` to the result when handling animations of different lengths, synchronization will be broken. In such cases, it is recommended to use :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` to align the animation lengths.
+\ **Примечание:** Если вы примените :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>` к результату при обработке анимаций разной длины, синхронизация будет нарушена. В таких случаях рекомендуется использовать :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` для выравнивания длительности анимаций.
 
 .. _class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_CYCLIC_CONSTANT:
 
@@ -166,9 +166,9 @@ All animations are time-scaled so they stay in sync, with the cycle length dynam
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` **SYNC_MODE_CYCLIC_CONSTANT** = ``3``
 
-All animations are time-scaled so they complete one cycle in :ref:`cyclic_length<class_AnimationNodeBlendSpace1D_property_cyclic_length>` seconds, keeping them in sync regardless of their individual lengths.
+Все анимации масштабируются по времени таким образом, что каждый цикл завершается за :ref:`cyclic_length<class_AnimationNodeBlendSpace1D_property_cyclic_length>` секунд, что обеспечивает их синхронизацию независимо от их индивидуальной длины.
 
-\ **Note:** If you apply :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>` to the result when handling animations of different lengths, synchronization will be broken. In such cases, it is recommended to use :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` to align the animation lengths.
+\ **Примечание:** Если вы примените :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>` к результату при обработке анимаций разной длины, синхронизация будет нарушена. В таких случаях рекомендуется использовать :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` для выравнивания длительности анимаций.
 
 .. rst-class:: classref-section-separator
 
@@ -207,7 +207,7 @@ All animations are time-scaled so they complete one cycle in :ref:`cyclic_length
 - |void| **set_cyclic_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cyclic_length**\ (\ )
 
-The cycle length in seconds used by :ref:`SYNC_MODE_CYCLIC_CONSTANT<class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_CYCLIC_CONSTANT>`. All animations are time-scaled so they complete one full cycle in this duration. Must be greater than ``0`` for cyclic sync to take effect.
+Длительность цикла в секундах, используемая :ref:`SYNC_MODE_CYCLIC_CONSTANT<class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_CYCLIC_CONSTANT>`. Все анимации масштабируются по времени таким образом, чтобы за этот период они завершили один полный цикл. Для применения циклической синхронизации значение должно быть больше ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ The cycle length in seconds used by :ref:`SYNC_MODE_CYCLIC_CONSTANT<class_Animat
 
 **Устарело:** Use :ref:`sync_mode<class_AnimationNodeBlendSpace1D_property_sync_mode>` instead.
 
-If ``true``, sync mode is enabled (equivalent to :ref:`SYNC_MODE_INDEPENDENT<class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_INDEPENDENT>`). This property is kept for backward compatibility.
+Если ``true``, режим синхронизации включен (эквивалентно :ref:`SYNC_MODE_INDEPENDENT<class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_INDEPENDENT>`). Это свойство сохранено для обратной совместимости.
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ If ``true``, sync mode is enabled (equivalent to :ref:`SYNC_MODE_INDEPENDENT<cla
 - |void| **set_sync_mode**\ (\ value\: :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>`\ )
 - :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` **get_sync_mode**\ (\ )
 
-Controls how animations are synced when blended. See :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` for available options.
+Управляет синхронизацией анимаций при смешивании. См. :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` для получения информации о доступных параметрах.
 
 .. rst-class:: classref-item-separator
 
@@ -328,9 +328,9 @@ Controls how animations are synced when blended. See :ref:`SyncMode<enum_Animati
 
 |void| **add_blend_point**\ (\ node\: :ref:`AnimationRootNode<class_AnimationRootNode>`, pos\: :ref:`float<class_float>`, at_index\: :ref:`int<class_int>` = -1, name\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_AnimationNodeBlendSpace1D_method_add_blend_point>`
 
-Adds a new point with ``name`` that represents a ``node`` on the virtual axis at a given position set by ``pos``. You can insert it at a specific index using the ``at_index`` argument. If you use the default value for ``at_index``, the point is inserted at the end of the blend points array.
+Добавляет новую точку с именем ``name``, соответствующую узлу ``node`` на виртуальной оси в позиции, заданной параметром ``pos``. Вы можете вставить её в указанный индекс, используя аргумент ``at_index``. Если оставить значение по умолчанию для ``at_index``, точка будет добавлена в конец массива точек смешивания.
 
-\ **Note:** If no name is provided, safe index is used as reference. In the future, empty names will be deprecated, so explicitly passing a name is recommended.
+\ **Примечание:** Если имя не указано, в качестве идентификатора используется индекс. В будущем пустые имена будут объявлены устаревшими, поэтому рекомендуется явно передавать имя.
 
 .. rst-class:: classref-item-separator
 
@@ -342,7 +342,7 @@ Adds a new point with ``name`` that represents a ``node`` on the virtual axis at
 
 :ref:`int<class_int>` **find_blend_point_by_name**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace1D_method_find_blend_point_by_name>`
 
-Returns the index of the blend point with the given ``name``. Returns ``-1`` if no blend point with that name is found.
+Возвращает индекс точки смешения с заданным ``name``. Возвращает ``-1``, если точка смешения с таким именем не найдена.
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ Returns the index of the blend point with the given ``name``. Returns ``-1`` if 
 
 :ref:`StringName<class_StringName>` **get_blend_point_name**\ (\ point\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace1D_method_get_blend_point_name>`
 
-Returns the name of the blend point at index ``point``.
+Возвращает имя точки смешения по индексу ``point``.
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ Returns the name of the blend point at index ``point``.
 
 |void| **reorder_blend_point**\ (\ from_index\: :ref:`int<class_int>`, to_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace1D_method_reorder_blend_point>`
 
-Swaps the blend points at indices ``from_index`` and ``to_index``, exchanging their positions and properties.
+Меняет местами точки смешивания в индексах ``from_index`` и ``to_index``, заменив их позиции и свойства.
 
 .. rst-class:: classref-item-separator
 
@@ -426,7 +426,7 @@ Swaps the blend points at indices ``from_index`` and ``to_index``, exchanging th
 
 |void| **set_blend_point_name**\ (\ point\: :ref:`int<class_int>`, name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace1D_method_set_blend_point_name>`
 
-Sets the name of the blend point at index ``point``. If the name conflicts with an existing point, a unique name will be generated automatically.
+Задает имя точки смешивания по индексу ``point``. Если имя конфликтует с существующей точкой, будет автоматически сгенерировано уникальное имя.
 
 .. rst-class:: classref-item-separator
 

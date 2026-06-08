@@ -7,16 +7,16 @@ AudioEffectBandLimitFilter
 
 **Наследует:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a band-limit filter to an audio bus.
+Добавляет фильтр ограничения полосы частот на аудиошину.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-A "band-limit" filter attenuates the frequencies at :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, and allows frequencies outside the frequency threshold to pass unchanged. It is a wider and weaker version of :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`, and is the opposite of :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
+Фильтр с ограничением полосы пропускания ослабляет частоты на уровне :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` и пропускает частоты за пределами порогового значения без изменений. Это более широкая и слабая версия :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>` и противоположность :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
 
-This filter can be used to give more room for other sounds to play at that frequency.
+Этот фильтр можно использовать, чтобы дать больше пространства для воспроизведения других звуков на этой частоте.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ This filter can be used to give more room for other sounds to play at that frequ
 
 - :doc:`Аудиошины <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Звуковые эффекты <../tutorials/audio/audio_effects>`
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

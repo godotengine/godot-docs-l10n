@@ -166,7 +166,7 @@ enum **TransitionToTime**: :ref:`🔗<enum_AudioStreamInteractive_TransitionToTi
 
 :ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_PREVIOUS_POSITION** = ``2``
 
-Transition to the last played position in the destination clip, if there was a previous transition from that clip. Otherwise, plays from the start of the destination clip.
+Переход осуществляется к последней воспроизведенной позиции в целевом клипе, если ранее был переход из этого клипа. В противном случае воспроизведение начинается с начала целевого клипа.
 
 .. rst-class:: classref-item-separator
 

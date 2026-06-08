@@ -328,7 +328,7 @@ Sovrascrivi questo metodo per personalizzare la risorsa appena duplicata creata 
 
 :ref:`Error<enum_@GlobalScope_Error>` **copy_from_resource**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_Resource_method_copy_from_resource>`
 
-Copies the data from ``resource`` into this resource. Both resources must share the same class.
+Copia i dati da ``resource`` in questa risorsa. Entrambe le risorse devono condividere la stessa classe.
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ Si applicano le seguenti eccezioni:
 
 :ref:`Resource<class_Resource>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` = 1\ ) |const| :ref:`🔗<class_Resource_method_duplicate_deep>`
 
-Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+Duplica questa risorsa profondamente, come :ref:`duplicate()<class_Resource_method_duplicate>` quando si passa ``true``, con più controllo su come le sotto-risorse vengono gestite.
 
 .. rst-class:: classref-item-separator
 

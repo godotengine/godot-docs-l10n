@@ -184,17 +184,17 @@ ResourceImporterDynamicFont
 
 :ref:`int<class_int>` **hinting** = ``3`` :ref:`🔗<class_ResourceImporterDynamicFont_property_hinting>`
 
-The hinting mode to use. This controls how aggressively glyph edges should be snapped to pixels when rasterizing the font. Depending on personal preference, you may prefer using one hinting mode over the other. Hinting modes other than **None** are only effective if the font contains hinting data (see :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`).
+要使用的提示模式。这决定了在光栅化字体时，字形边缘应该以多大的力度去“吸附”对齐到像素点上。根据个人偏好，你可能会更喜欢某一种提示模式。除了 **无（None）** 以外的提示模式，只有在字体本身包含提示数据时才有效（参见 :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`\ ）。
 
-\ **None:** Smoothest appearance, which can make the font look blurry at small sizes.
+\ **无（None）：** 外观最平滑，但可能会导致字体在小字号下看起来有些模糊。
 
-\ **Light:** Sharp result by snapping glyph edges to pixels on the Y axis only.
+\ **轻微（Light）：** 仅在 Y 轴（垂直方向）上将字形边缘吸附到像素点，呈现锐利的效果。
 
-\ **Normal:** Sharpest by snapping glyph edges to pixels on both X and Y axes.
+\ **正常（Normal）：** 在 X 轴和 Y 轴（水平和垂直方向）上都将字形边缘吸附到像素点，呈现最锐利的效果。
 
-\ **Light (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Light** for other fonts.
+\ **轻微（像素字体除外）：** 对于像素风格的字体（每个字形的轮廓仅包含水平和垂直的直线），此选项为 **禁用**\ ；对于其他字体，则使用 **轻微** 模式。
 
-\ **Normal (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Normal** for other fonts.
+\ **正常（像素字体除外）：** 对于像素风格的字体（每个字形的轮廓仅包含水平和垂直的直线），此选项为 **禁用**\ ；对于其他字体，则使用 **正常** 模式。
 
 .. rst-class:: classref-item-separator
 
@@ -328,17 +328,17 @@ MSDF 字体渲染可以与 :ref:`generate_mipmaps<class_ResourceImporterDynamicF
 
 :ref:`int<class_int>` **subpixel_positioning** = ``4`` :ref:`🔗<class_ResourceImporterDynamicFont_property_subpixel_positioning>`
 
-Subpixel positioning improves font rendering appearance, especially at smaller font sizes. The downside is that it takes more time to initially render the font, which can cause stuttering during gameplay, especially if used with large font sizes. This should be set to **Disabled** for fonts with a pixel art appearance.
+亚像素定位可以改善字体的渲染外观，尤其是在字号较小的时候。缺点是它会增加字体初次渲染所需的时间，这可能会在游戏中导致卡顿，特别是当它被用于大字号字体时。对于具有像素画风格的字体，此选项应设置为 **禁用（Disabled）**\ 。
 
-\ **Disabled:** No subpixel positioning. Lowest quality, fastest rendering.
+\ **禁用（Disabled）：** 不使用亚像素定位。质量最低，但渲染速度最快。
 
-\ **Auto:** Use subpixel positioning at small font sizes (the chosen quality varies depending on font size). Large fonts will not use subpixel positioning. This is a good tradeoff between performance and quality.
+\ **自动（Auto）：** 仅在小字号时使用亚像素定位（具体采用的质量会根据字号大小而变化）。大字号字体将不会使用亚像素定位。这是在性能和画质之间一个很好的折中方案。
 
-\ **One Half of a Pixel:** Always perform intermediate subpixel positioning regardless of font size. High quality, slow rendering.
+\ **二分之一像素（One Half of a Pixel）：** 无论字号大小，始终执行中等精度的亚像素定位。质量较高，渲染较慢。
 
-\ **One Quarter of a Pixel:** Always perform precise subpixel positioning regardless of font size. Highest quality, slowest rendering.
+\ **四分之一像素（One Quarter of a Pixel）：** 无论字号大小，始终执行高精度的亚像素定位。质量最高，渲染最慢。
 
-\ **Auto (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Auto** for other fonts.
+\ **自动（像素字体除外）（Auto (Except Pixel Fonts)）：** 对于像素风格的字体（每个字形的轮廓仅包含水平和垂直的直线），使用 **禁用**\ ；对于其他字体，则使用 **自动**\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -615,9 +615,9 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ItemList_ScrollHintMode>`
 
 :ref:`bool<class_bool>` **item_{index}/disabled** = ``false`` :ref:`🔗<class_ItemList_property_item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+Якщо ``true``, елемент під ``index`` вимкнено.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -629,9 +629,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **item_{index}/icon** :ref:`🔗<class_ItemList_property_item_{index}/icon>`
 
-The icon of the item at ``index``.
+Піктограма елемента під номером ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -643,9 +643,9 @@ The icon of the item at ``index``.
 
 :ref:`bool<class_bool>` **item_{index}/selectable** = ``true`` :ref:`🔗<class_ItemList_property_item_{index}/selectable>`
 
-If ``true``, the item at ``index`` is selectable.
+Якщо ``true``, елемент за індексом ``index`` доступний для вибору.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -657,9 +657,9 @@ If ``true``, the item at ``index`` is selectable.
 
 :ref:`String<class_String>` **item_{index}/text** = ``""`` :ref:`🔗<class_ItemList_property_item_{index}/text>`
 
-The text of the item at ``index``.
+Текст елемента за адресою ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примітка:** ``index`` — це значення в діапазоні ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -850,9 +850,9 @@ The text of the item at ``index``.
 
 |void| **center_on_current**\ (\ center_verically\: :ref:`bool<class_bool>` = true, center_horizontally\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_center_on_current>`
 
-Ensures the currently selected item (the first selected item if multiple selection is enabled) is visible, adjusting the scroll position as necessary to place the item at the center of the list if possible. See also :ref:`ensure_current_is_visible()<class_ItemList_method_ensure_current_is_visible>`.
+Забезпечує видимість поточного вибраного елемента (першого вибраного елемента, якщо увімкнено множинний вибір), при необхідності коригуючи положення прокрутки, щоб, за можливості, розмістити елемент у центрі списку. Див. також :ref:`ensure_current_is_visible()<class_ItemList_method_ensure_current_is_visible>`.
 
-Fails and prints an error if both arguments are ``false``.
+Повертає помилку та виводить повідомлення про помилку, якщо обидва аргументи мають значення ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -900,7 +900,7 @@ Fails and prints an error if both arguments are ``false``.
 
 |void| **ensure_current_is_visible**\ (\ ) :ref:`🔗<class_ItemList_method_ensure_current_is_visible>`
 
-Ensures the currently selected item (the first selected item if multiple selection is enabled) is visible, adjusting the scroll position as necessary. See also :ref:`center_on_current()<class_ItemList_method_center_on_current>`.
+Забезпечує відображення поточного виділеного елемента (або першого виділеного елемента, якщо увімкнено багатократний вибір), при необхідності коригуючи положення прокрутки. Див. також :ref:`center_on_current()<class_ItemList_method_center_on_current>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1222,9 +1222,9 @@ Ensures the currently selected item (the first selected item if multiple selecti
 
 |void| **select**\ (\ idx\: :ref:`int<class_int>`, single\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_select>`
 
-Selects the item at the specified index.
+Вибирає елемент за вказаним індексом.
 
-\ **Note:** This method does not trigger the item selection signal.
+\ **Примітка:** Цей метод не викликає сигнал вибору елемента.
 
 .. rst-class:: classref-item-separator
 

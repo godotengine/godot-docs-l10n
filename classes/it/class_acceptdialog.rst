@@ -16,9 +16,9 @@ Una finestra di dialogo di base utilizzata per la notifica dell'utente.
 Descrizione
 ----------------------
 
-The default use of **AcceptDialog** is to allow it to only be accepted or closed, with the same result. However, the :ref:`confirmed<class_AcceptDialog_signal_confirmed>` and :ref:`canceled<class_AcceptDialog_signal_canceled>` signals allow to make the two actions different, and the :ref:`add_button()<class_AcceptDialog_method_add_button>` method allows to add custom buttons and actions.
+L'uso predefinito di **AcceptDialog** è quello di consentire che sia accettato o chiuso, con lo stesso risultato. Tuttavia, i segnali :ref:`confirmed<class_AcceptDialog_signal_confirmed>` e :ref:`canceled<class_AcceptDialog_signal_canceled>` permettono di distinguere le due azioni, e il metodo :ref:`add_button()<class_AcceptDialog_method_add_button>` consente di aggiungere pulsanti e azioni personalizzate.
 
-\ **Note:** **AcceptDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Nota:** **AcceptDialog** è inizialmente invisibile. Per renderlo visibile, chiama uno dei metodi ``popup_*`` da :ref:`Window<class_Window>` sul nodo, come ad esempio :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -174,7 +174,7 @@ Imposta il ritorno a capo automatico per il testo nella finestra di dialogo.
 - |void| **set_close_on_escape**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_close_on_escape**\ (\ )
 
-If ``true``, the dialog will be hidden when the ``ui_close_dialog`` action is pressed (by default, this action is bound to :kbd:`Escape`, or :kbd:`Cmd + W` on macOS).
+Se ``true``, la finestra di dialogo sarà nascosta quando viene premuta l'azione ``ui_close_dialog`` (normalmente, questa azione è associata a :kbd:`Escape`, o :kbd:`Cmd + W` su macOS).
 
 .. rst-class:: classref-item-separator
 

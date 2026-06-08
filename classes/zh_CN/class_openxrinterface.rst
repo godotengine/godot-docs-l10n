@@ -252,9 +252,9 @@ OpenXR 接口允许 Godot 与 OpenXR 运行时进行交互，并使创建 XR 体
 
 **user_presence_changed**\ (\ is_user_present\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_OpenXRInterface_signal_user_presence_changed>`
 
-Signal emitted when the user presence value changes.
+当用户在场状态值发生改变时发出信号。
 
-\ **Note:** This signal will not be emitted during application startup and application shutdown. Developers should assume user presence is gained on startup and lost on shutdown.
+\ **注意：** 在应用程序启动和关闭期间不会发出此信号。开发者应假设用户在启动时获得在场状态，在关闭时失去在场状态。
 
 .. rst-class:: classref-section-separator
 
@@ -896,7 +896,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_OpenXRInterface_HandJointFlags>`
 - |void| **set_foveation_dynamic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_foveation_dynamic**\ (\ )
 
-If ``true``, enables dynamic foveation adjustment. The interface must be initialized before this is accessible. If enabled, foveation will automatically be adjusted between low and :ref:`foveation_level<class_OpenXRInterface_property_foveation_level>`.
+如果为 ``true``\ ，则启用动态注视点调整。该接口必须在访问该功能之前初始化。如果启用，注视点将在“低”和\ :ref:`foveation_level<class_OpenXRInterface_property_foveation_level>`\ 之间自动调整。
 
 .. rst-class:: classref-item-separator
 
@@ -913,7 +913,7 @@ If ``true``, enables dynamic foveation adjustment. The interface must be initial
 - |void| **set_foveation_level**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_foveation_level**\ (\ )
 
-The foveation level, from ``0`` (off) to ``3`` (high). The interface must be initialized before this is accessible.
+注视点级别，从 ``0``\ （关闭）到 ``3``\ （高）。该接口必须在访问该功能之前初始化。
 
 .. rst-class:: classref-item-separator
 
@@ -930,7 +930,7 @@ The foveation level, from ``0`` (off) to ``3`` (high). The interface must be ini
 - |void| **set_foveation_with_subsampled_images**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_foveation_with_subsampled_images**\ (\ )
 
-If ``true``, enables subsampled images with foveation, which can provide a performance boost on Vulkan.
+如果设置为 ``true``\ ，将启用带注视点渲染（foveation）的子采样图像，这可以在 Vulkan 图形接口上带来性能提升。
 
 .. rst-class:: classref-item-separator
 
@@ -1216,9 +1216,9 @@ If ``true``, enables subsampled images with foveation, which can provide a perfo
 
 :ref:`bool<class_bool>` **is_user_presence_supported**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_is_user_presence_supported>`
 
-Returns ``true`` if OpenXR's user presence extension is supported and enabled.
+如果 OpenXR 的用户存在（user presence）扩展受支持且已启用，则返回 ``true``\ 。
 
-\ **Note:** This only returns a valid value after OpenXR has been initialized.
+\ **注意：** 此方法只有在 OpenXR 初始化完成之后，才会返回有效的值。
 
 .. rst-class:: classref-item-separator
 
@@ -1230,7 +1230,7 @@ Returns ``true`` if OpenXR's user presence extension is supported and enabled.
 
 :ref:`bool<class_bool>` **is_user_present**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_is_user_present>`
 
-Returns ``true`` if system has detected the presence of a user in the XR experience.
+如果系统检测到用户在 XR（扩展现实）体验中处于“在场”状态，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

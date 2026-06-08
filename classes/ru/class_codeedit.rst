@@ -464,7 +464,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_KEYWORD** = ``10``
 
-Marks the option as a keyword.
+Помечает параметр как ключевое слово.
 
 .. rst-class:: classref-item-separator
 
@@ -1570,7 +1570,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 
 |void| **join_lines**\ (\ line_ending\: :ref:`String<class_String>` = " "\ ) :ref:`🔗<class_CodeEdit_method_join_lines>`
 
-Joins all selected lines or lines containing a caret with their next line. Whitespace in between will be removed. If the next line has content, the ``line_ending`` will be inserted in between.
+Объединяет все выделенные строки или строки, содержащие символ "^", со следующей строкой. Пробелы между ними будут удалены. Если следующая строка содержит контент, между ними будет вставлен параметр ``line_ending``.
 
 .. rst-class:: classref-item-separator
 

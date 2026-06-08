@@ -440,7 +440,7 @@ Specifica l'origine dei dati per il canale rosso dell'immagine risultante.
 
 :ref:`bool<class_bool>` **process/fix_alpha_border** = ``true`` :ref:`🔗<class_ResourceImporterTexture_property_process/fix_alpha_border>`
 
-Se ``true``, inserisce pixel dello stesso colore circostante in transizione dalle aree trasparenti alle aree opache. Per le texture visualizzate con il filtro bilineare, questo aiuta a ridurre l'effetto del contorno quando si esportano immagini da un editor di immagini.
+Se ``true``, inserisce pixel dello stesso colore circostante in transizione dalle aree trasparenti alle aree opache. Per le texture visualizzate con il filtro bilineare, questo aiuta a ridurre l'effetto contorno quando si esportano immagini da un editor di immagini.
 
 Si consiglia di lasciare questa opzione abilitata (come è predefinito), a meno che non causi problemi per un'immagine particolare.
 

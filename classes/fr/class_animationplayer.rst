@@ -678,11 +678,11 @@ Voir aussi :ref:`stop()<class_AnimationPlayer_method_stop>`.
 
 Joue l'animation avec la clé ``name``. Des temps de mélange et une vitesse personnalisés peuvent être définis.
 
-L'option ``from_end`` n'affecte que lorsque vous passez à une nouvelle piste d'animation, ou avec la même piste, mais au début ou à la fin. Elle n'affecte pas la reprise de la lecture qui a été mise en pause au milieu d'une animation. Si ``custom_speed`` est négatif et ``from_end`` vaut ``true``, l'animation jouera à l'envers (qui est équivalent à appeler :ref:`play_backwards()<class_AnimationPlayer_method_play_backwards>`).
+L'option ``from_end`` n'affecte que lorsque vous passez à une nouvelle piste d'animation, ou avec la même piste mais au début ou à la fin. Elle n'affecte pas la reprise de la lecture qui a été mise en pause au milieu d'une animation. Si ``custom_speed`` est négatif et que ``from_end`` vaut ``true``, l'animation se jouera à l'envers (ce qui est équivalent à appeler :ref:`play_backwards()<class_AnimationPlayer_method_play_backwards>`).
 
-L'**AnimationPlayer** garde la trace de son animation actuelle ou dernière avec :ref:`assigned_animation<class_AnimationPlayer_property_assigned_animation>`. Si cette méthode est appelée avec ce même nom d'animation ``name``, ou sans paramètre ``name``, l'animation assignée reprendra la lecture si elle a été interrompue.
+L'**AnimationPlayer** garde la trace de son animation actuelle ou jouée en dernier avec :ref:`assigned_animation<class_AnimationPlayer_property_assigned_animation>`. Si cette méthode est appelée avec ce même nom d'animation ``name``, ou sans paramètre ``name``, l'animation assignée reprendra la lecture si elle a été interrompue.
 
-\ **Note:** L'animation sera mise à jour la prochaine fois que l'**AnimationPlayer** sera traité. Si d'autres variables sont mises à jour en même temps que ceci est appelle, elles peuvent être mises à jour trop tôt. Pour effectuer la mise à jour immédiatement, appelez ``advance(0)``.
+\ **Note :** L'animation sera mise à jour la prochaine fois que l'**AnimationPlayer** sera traité. Si d'autres variables sont mises à jour en même temps que ceci est appelle, elles peuvent être mises à jour trop tôt. Pour effectuer la mise à jour immédiatement, appelez ``advance(0)``.
 
 .. rst-class:: classref-item-separator
 
