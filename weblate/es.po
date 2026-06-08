@@ -310,13 +310,15 @@
 # Jonathan Rivas <inkdependence@pm.me>, 2026.
 # Parker Coyle <parkercoyle8@gmail.com>, 2026.
 # Valentin Romanutti <valentinromanutti@gmail.com>, 2026.
+# Ander 'Laquin' Aginaga San Sebastián <ander@anderaginaga.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-05-26 15:09+0200\n"
-"PO-Revision-Date: 2026-05-17 00:12+0000\n"
-"Last-Translator: Valentin Romanutti <valentinromanutti@gmail.com>\n"
+"PO-Revision-Date: 2026-05-30 19:37+0000\n"
+"Last-Translator: Ander 'Laquin' Aginaga San Sebastián "
+"<ander@anderaginaga.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -12816,6 +12818,13 @@ msgid ""
 "However, this tutorial focuses on core concepts that apply to a wider range "
 "of nodes and use cases."
 msgstr ""
+"Godo también proporciona el nodo :ref:`CharacterBody2D "
+"<class_CharacterBody2D>`, diseñado específicamente para caracteres 2D, que "
+"incluye soporte integrado para algunos de los procesos explicados en este "
+"tutorial. En muchos proyectos de la vida real, CharacterBody2D sería una "
+"mejor opción para jugadores y enemigos. Sin embargo, este tutorial se centra "
+"en conceptos fundamentales que se aplican a una más amplia gama de nodos y "
+"casos de uso."
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:31
 msgid ""
@@ -21036,6 +21045,8 @@ msgid ""
 "The universal ``_notification()`` method provides access to all these custom "
 "notifications."
 msgstr ""
+"El método universal ``_notification()`` proporciona acceso a todas estas "
+"notificaciones personalizadas."
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:52
 msgid ""
@@ -29329,12 +29340,17 @@ msgid ""
 "Godot supports optionally running the game in the editor itself. This is "
 "enabled by default."
 msgstr ""
+"Godot permite opcionalmente ejecutar el juego en el propio editor. Esto está "
+"habilitado por defecto."
 
 #: ../../docs/tutorials/editor/game_embedding.rst:10
 msgid ""
 "The game always runs in a separate process, no matter the embedding mode "
 "used. This means that if the game crashes, it will not crash the editor."
 msgstr ""
+"El juego siempre se ejecuta en un proceso separado, sin importar el modo de "
+"incrustación utilizado. Esto significa que, si el juego se cuelga, no va a "
+"colgarse el editor."
 
 #: ../../docs/tutorials/editor/game_embedding.rst:14
 #, fuzzy
@@ -29353,6 +29369,10 @@ msgid ""
 "the embedded game. Clicking the :button:`Game` main screen button focuses "
 "the floating window."
 msgstr ""
+"**Ventana flotante** *(por defecto)*: El juego se ejecuta en una ventana "
+"separada, con una barra de juego arriba que permite ajustar la configuración "
+"y seleccionar nodos en el juego incrustado. Al presionar el botón "
+":button:`Game` de la pantalla principal, se enfoca la ventana flotante."
 
 #: ../../docs/tutorials/editor/game_embedding.rst:22
 msgid ""
@@ -29361,6 +29381,10 @@ msgid ""
 "Clicking the :button:`Game` main screen button switches to the tab with the "
 "running project."
 msgstr ""
+"**Ventana principal:** El juego se ejecuta en el editor, con una barra de "
+"juego arriba que permite ajustar la configuración y seleccionar nodos en el "
+"juego incrustado. Al presionar el bottón :button:`Game` de la pantalla "
+"principal, se cambia a la pestaña con el proyecto que se está ejecutando."
 
 #: ../../docs/tutorials/editor/game_embedding.rst:26
 msgid ""
@@ -29368,6 +29392,9 @@ msgid ""
 "project. The Game bar at the top is not present; selecting nodes in the "
 "embedded game is not possible."
 msgstr ""
+"**Deshabilitado:** El juego se ejecuta en una ventana separada, como si "
+"fuera un proyecto exportado. La barra de juego arriba no está presente, y no "
+"es posible seleccionar nodos en el juego incrustado."
 
 #: ../../docs/tutorials/editor/game_embedding.rst:29
 msgid ""
@@ -71050,13 +71077,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spring_arm.rst:4
 msgid "Third-person camera with spring arm"
-msgstr ""
+msgstr "Cámara en tercera persona con brazo de resorte"
 
 #: ../../docs/tutorials/3d/spring_arm.rst:9
 msgid ""
 "3D games will often have a third-person camera that follows and rotates "
 "around something such as a player character or a vehicle."
 msgstr ""
+"Los juegos 3D a menudo tendrán una cámara en tercera persona que sigue y "
+"rota al rededor de algo como un jugador o un vehículo."
 
 #: ../../docs/tutorials/3d/spring_arm.rst:12
 msgid ""
@@ -71067,28 +71096,33 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spring_arm.rst:15
 msgid "This is where the :ref:`SpringArm3D <class_SpringArm3D>` node comes in."
-msgstr ""
+msgstr "Aquí es donde entra el nodo :ref:`SpringArm3D <class_SpringArm3D>`."
 
 #: ../../docs/tutorials/3d/spring_arm.rst:18
-#, fuzzy
 msgid "What is a spring arm?"
-msgstr "¿Qué es un área?"
+msgstr "¿Qué es un brazo de resorte?"
 
 #: ../../docs/tutorials/3d/spring_arm.rst:20
 msgid "A spring arm has two main components that affect its behavior."
 msgstr ""
+"Un brazo de resorte tiene dos componentes principales que afectan a su "
+"comportamiento."
 
 #: ../../docs/tutorials/3d/spring_arm.rst:22
 msgid ""
 "The \"length\" of the spring arm is how far from its global position to "
 "check for collisions:"
 msgstr ""
+"La «longitud» del brazo de resorte es cómo de lejos de su posición global "
+"debe revisar en busca de colisiones:"
 
 #: ../../docs/tutorials/3d/spring_arm.rst:26
 msgid ""
 "The \"shape\" of the spring arm is what it uses to check for collisions. The "
 "spring arm will \"sweep\" this shape from its origin out towards its length."
 msgstr ""
+"La «forma» del brazo de resorte es qué utiliza para buscar colisiones. El "
+"brazo de resorte barrerá esta forma desde su origen hacia su longitud."
 
 #: ../../docs/tutorials/3d/spring_arm.rst:30
 msgid ""
@@ -71096,17 +71130,21 @@ msgid ""
 "When the shape collides with something, the children are instead placed at "
 "or near that collision point:"
 msgstr ""
+"El brazo de resorte intenta mantener todos sus hijos al final de su "
+"longitud. Cuando la forma colisiona con algo, los hijos pasan a posicionarse "
+"en el punto de colisión o cerca del mismo:"
 
 #: ../../docs/tutorials/3d/spring_arm.rst:35
-#, fuzzy
 msgid "Spring arm with a camera"
-msgstr "Agregar una cámara"
+msgstr "Brazo de resorte con una cámara"
 
 #: ../../docs/tutorials/3d/spring_arm.rst:37
 msgid ""
 "When a camera is placed as a child of a spring arm, a pyramid representing "
 "the camera will be used as the shape."
 msgstr ""
+"Cuando la cámara se coloca como hija de un brazo de resorte, se usará una "
+"pirámide que representa a la cámara como su forma."
 
 #: ../../docs/tutorials/3d/spring_arm.rst:39
 msgid "This pyramid represents the **near plane** of the camera:"
@@ -71117,12 +71155,16 @@ msgid ""
 "If the spring arm is given a specific shape, then that shape will **always** "
 "be used."
 msgstr ""
+"Si se le da una forma específica al brazo de resorte, entonces **siempre** "
+"se usará dicha forma."
 
 #: ../../docs/tutorials/3d/spring_arm.rst:45
 msgid ""
 "The camera's shape is only used if the camera is a **direct child** of the "
 "spring arm."
 msgstr ""
+"La forma de la cámara solo se usa si la cámara es **hija directa** del brazo "
+"de resorte."
 
 #: ../../docs/tutorials/3d/spring_arm.rst:47
 msgid ""
@@ -71130,6 +71172,9 @@ msgid ""
 "will fall back to using a ray cast which is inaccurate for camera collisions "
 "and not recommended."
 msgstr ""
+"Si no se proporciona ninguna forma y la cámara no es una hija directa, el "
+"brazo de resorte recurrirá a utilizar *ray cast*, lo que es impreciso para "
+"colisiones de cámara y no se recomienda."
 
 #: ../../docs/tutorials/3d/spring_arm.rst:49
 msgid ""
@@ -71144,9 +71189,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/spring_arm.rst:58
-#, fuzzy
 msgid "Setting up the spring arm and camera"
-msgstr "Configurar el área de juego"
+msgstr "Configurar el brazo de resorte y la cámara"
 
 #: ../../docs/tutorials/3d/spring_arm.rst:60
 #, fuzzy
@@ -71201,12 +71245,16 @@ msgid ""
 "Give the spring arm a length of ``3`` so that it is placed behind the "
 "character:"
 msgstr ""
+"Ponle una longitud de ``3`` al brazo de resorte para que se coloque detrás "
+"del carácter:"
 
 #: ../../docs/tutorials/3d/spring_arm.rst:85
 msgid ""
 "Leave the **Shape** of the spring arm as ``<empty>``. This way, it will use "
 "the camera's pyramid shape."
 msgstr ""
+"Deja la **Forma** del brazo de resorte como ``<vacío>``. Así, siempre se "
+"usará la forma de pirámide de la cámara."
 
 #: ../../docs/tutorials/3d/spring_arm.rst:87
 msgid ""

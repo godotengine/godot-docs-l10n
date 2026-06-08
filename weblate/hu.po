@@ -39,13 +39,14 @@
 # Tallyrald <tally.github@gmail.com>, 2026.
 # Balázs Németh <koalabalazsnemeth@gmail.com>, 2026.
 # Balázs Lénárt <balazs.lnrt@gmail.com>, 2026.
+# Csala Péter <csalapeter@protonmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-05-26 15:09+0200\n"
-"PO-Revision-Date: 2026-05-03 13:38+0000\n"
-"Last-Translator: Balázs Lénárt <balazs.lnrt@gmail.com>\n"
+"PO-Revision-Date: 2026-06-07 16:23+0000\n"
+"Last-Translator: Csala Péter <csalapeter@protonmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/hu/>\n"
 "Language: hu\n"
@@ -53,7 +54,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17.1\n"
+"X-Generator: Weblate 2026.6\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -192,14 +193,13 @@ msgstr ""
 "címkét:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to easily access any "
 "section of the documentation for your topic of interest. You can also use "
 "the search function in the top-left corner."
 msgstr ""
 "Az alul található tartalomjegyzékben, illetve az oldalsávon könnyen "
-"hozzáférhet az Ön számára érdekes dokumentációhoz.Használhatja továbbá a "
+"hozzáférhet az Ön számára érdekes dokumentációhoz. Használhatja továbbá a "
 "keresés funkciót a bal felső sarokban."
 
 #: ../../docs/index.rst:116
@@ -374,18 +374,17 @@ msgid "Introduction"
 msgstr "Bevezetés"
 
 #: ../../docs/about/introduction.rst:21
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of **Godot Engine**, the free and open "
 "source community-driven 2D and 3D game engine! Behind this mouthful, you "
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"Üdvözöljük a Godot Engine hivatalos dokumentációjában. A Godot egy ingyenes, "
-"nyílt forráskódú közösség-alapú 2D-s és 3D-s játék motor! E név mögött egy "
-"erőteljes, mégis felhasználóbarát eszközt fog találni, amely segítségével "
-"bármely típusú játékot fejleszthet bármely platformra, bámiféle használati "
-"megszorítás nélkül."
+"Üdvözöljük a **Godot Engine** hivatalos dokumentációjában. A Godot egy "
+"ingyenes, nyílt forráskódú közösség-alapú 2D-s és 3D-s játék motor! E név "
+"mögött egy erőteljes, mégis felhasználóbarát eszközt fog találni, amely "
+"segítségével bármely típusú játékot fejleszthet bármely platformra, bámiféle "
+"használati megszorítás nélkül."
 
 #: ../../docs/about/introduction.rst:26
 #, fuzzy
@@ -403,7 +402,6 @@ msgid "Before you start"
 msgstr "Mielőtt belekezdenél"
 
 #: ../../docs/about/introduction.rst:33
-#, fuzzy
 msgid ""
 "The :ref:`Tutorials and resources <doc_community_tutorials>` page lists "
 "video tutorials contributed by the community. If you prefer video to text, "
@@ -412,7 +410,9 @@ msgid ""
 msgstr ""
 "Az :ref:`Oktatóanyagok és források <doc_community_tutorials>` oldal a "
 "közösség által készített oktatóanyagokat tartalmaz. Ha jobban szereti a "
-"videó anyagot a szöveg alapú helyett, akkor megéri egy pillantást rávetnie."
+"videó anyagot a szöveg alapú helyett, akkor megéri egy pillantást rávetnie. "
+"Egyéb esetben, :ref:`Első lépések<doc_getting_started_intro>` egy jó kezdési "
+"pont."
 
 #: ../../docs/about/introduction.rst:38
 #, fuzzy
@@ -484,7 +484,7 @@ msgstr "A dokumentáció elrendezése"
 
 #: ../../docs/about/introduction.rst:69
 msgid "This documentation is organized into several sections:"
-msgstr "Ez a dokumentáció több részre van bontva"
+msgstr "Ez a dokumentáció több részre van bontva:"
 
 #: ../../docs/about/introduction.rst:71
 #, fuzzy
@@ -593,7 +593,6 @@ msgstr ""
 "<https://chat.godotengine.org/>_."
 
 #: ../../docs/about/introduction.rst:105
-#, fuzzy
 msgid ""
 "All documentation content is licensed under the permissive Creative Commons "
 "Attribution 3.0 (`CC BY 3.0 <https://creativecommons.org/licenses/by/3.0/"
@@ -602,45 +601,41 @@ msgid ""
 msgstr ""
 "Minden tartalom a megengedő Creative Commons Attribution 3.0 (`CC-BY 3.0 "
 "<https://creativecommons.org/licenses/by/3.0/>`_) licence allatt áll, a "
-"\"Juan Linietsky, Ariel Manzur és a Godot Engine közösség\" elnevezéssel."
+"\"*Juan Linietsky, Ariel Manzur és a Godot Engine közösség*\" elnevezéssel."
 
 #: ../../docs/about/introduction.rst:110
-#, fuzzy
 msgid "*Have fun reading and making games with Godot Engine!*"
-msgstr "Jó olvasást és játékkészítést a Godot motorral!"
+msgstr "*Jó olvasást és játékkészítést a Godot motorral!*"
 
 #: ../../docs/about/list_of_features.rst:6
-#, fuzzy
 msgid "List of features"
-msgstr "Felvétel"
+msgstr "Funkciók listája"
 
 #: ../../docs/about/list_of_features.rst:8
 msgid "This page aims to list **all** features currently supported by Godot."
 msgstr "Ez az oldal az **összes** most támogatott Godot funkciókra mutat."
 
 #: ../../docs/about/list_of_features.rst:12
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot. "
 "Some of these features are not available in the `3.x release series <https://"
 "docs.godotengine.org/en/3.6/about/list_of_features.html>`__."
 msgstr ""
 "Ez az oldal felsorolja a Godot jelenlegi stabil verziója által támogatott "
-"funkciókat. Néhány ilyen funkció nem érhető el a \"LTS kiadási sorozatban "
-"(3.x) <https://docs.godotengine.org/en/3.5/about/list_of_features.html>."
+"funkciókat. Néhány ilyen funkció nem érhető el a `3.x kiadási sorozatba "
+"<https://docs.godotengine.org/en/3.5/about/list_of_features.html>`__."
 
 #: ../../docs/about/list_of_features.rst:17
-#, fuzzy
 msgid "Platforms"
-msgstr "Animáció"
+msgstr "Platformok"
 
 #: ../../docs/about/list_of_features.rst:21
 msgid ""
 "See :ref:`doc_system_requirements` for hardware and software version "
 "requirements."
 msgstr ""
-"Lásd :ref: `doc_system_requirements` for hardware and software version "
-"requirements."
+"Lásd :ref:`doc_system_requirements` a hardver- és szoftververziókra "
+"vonatkozó követelményeket."
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
@@ -687,9 +682,8 @@ msgstr ""
 "olyan binárisokat, amelyek a gyakori Linux disztribúciókon működnek."
 
 #: ../../docs/about/list_of_features.rst:39
-#, fuzzy
 msgid "Android (editor support is experimental)."
-msgstr "Android (kisérleti)"
+msgstr "Android (szerkesztő támogatása kísérleti stádiumban van)."
 
 #: ../../docs/about/list_of_features.rst:40
 msgid ""
@@ -765,7 +759,7 @@ msgstr "Jelenet faszerkesztő."
 
 #: ../../docs/about/list_of_features.rst:70
 msgid "Built-in script editor."
-msgstr "Beépített kód szerkesztő"
+msgstr "Beépített kód szerkesztő."
 
 #: ../../docs/about/list_of_features.rst:71
 msgid ""
@@ -845,9 +839,8 @@ msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "Használhatja a szerkesztőt több tucat nyelven a közösség jóvoltából."
 
 #: ../../docs/about/list_of_features.rst:96
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "Bővítmények"
+msgstr "**Bővítmények:**"
 
 #: ../../docs/about/list_of_features.rst:98
 msgid ""
@@ -940,12 +933,11 @@ msgstr ""
 "meghajtóprogrammal működik."
 
 #: ../../docs/about/list_of_features.rst:121
-#, fuzzy
 msgid ""
 "See :ref:`doc_renderers` for a detailed comparison of the rendering methods."
 msgstr ""
-"Lásd :ref: `doc_system_requirements` for hardware and software version "
-"requirements."
+"A megjelenítési módszerek részletes összehasonlításáért lásd a "
+":ref:`doc_renderers` oldalt."
 
 #: ../../docs/about/list_of_features.rst:124
 msgid "2D graphics"
@@ -1093,9 +1085,8 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:164
 #: ../../docs/about/list_of_features.rst:355
-#, fuzzy
 msgid "CPU-based particles."
-msgstr "Részecskék"
+msgstr "CPU-alapú részecskék."
 
 #: ../../docs/about/list_of_features.rst:165
 msgid ""
@@ -1108,9 +1099,8 @@ msgstr ""
 "(glow) effektusokért."
 
 #: ../../docs/about/list_of_features.rst:169
-#, fuzzy
 msgid "2D tools"
-msgstr "Eszközök"
+msgstr "2D-eszközök"
 
 #: ../../docs/about/list_of_features.rst:171
 msgid ":ref:`TileMaps <doc_using_tilemaps>` for 2D tile-based level design."
@@ -1135,9 +1125,8 @@ msgid "PathFollow2D node to make nodes follow a Path2D."
 msgstr "PathFollow2D node a további node-ok Path2D lekövetéséhez."
 
 #: ../../docs/about/list_of_features.rst:178
-#, fuzzy
 msgid ":ref:`2D geometry helper class <class_Geometry2D>`."
-msgstr "Részecskék"
+msgstr ":ref:`2D-s geometria segítőosztály<class_Geometry2D>`."
 
 #: ../../docs/about/list_of_features.rst:181
 msgid "2D physics"
@@ -1169,9 +1158,8 @@ msgstr "Merev testek."
 
 #: ../../docs/about/list_of_features.rst:188
 #: ../../docs/about/list_of_features.rst:431
-#, fuzzy
 msgid "Character bodies."
-msgstr "Animáció"
+msgstr "Karaktertestek."
 
 #: ../../docs/about/list_of_features.rst:189
 #: ../../docs/about/list_of_features.rst:433
@@ -1185,9 +1173,8 @@ msgstr "Területek a be- és kilépő objektumok detektálásához."
 
 #: ../../docs/about/list_of_features.rst:192
 #: ../../docs/about/list_of_features.rst:438
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "Látható Ütközési Alakzatok"
+msgstr "**Ütközésérzékelés:**"
 
 #: ../../docs/about/list_of_features.rst:194
 msgid ""
@@ -1516,7 +1503,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "**Reflections:**"
-msgstr ""
+msgstr "**Tükröződések:**"
 
 #: ../../docs/about/list_of_features.rst:282
 msgid ""
@@ -1558,9 +1545,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:297
-#, fuzzy
 msgid "**Decals:**"
-msgstr "Részecskék"
+msgstr "**Matricák:**"
 
 #: ../../docs/about/list_of_features.rst:299
 msgid ""
@@ -1613,7 +1599,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:314
 msgid "**Sky:**"
-msgstr ""
+msgstr "**Égbolt:**"
 
 #: ../../docs/about/list_of_features.rst:316
 msgid "Panorama sky (using an HDRI)."
@@ -1639,7 +1625,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:322
 msgid "**Fog:**"
-msgstr ""
+msgstr "**Köd:**"
 
 #: ../../docs/about/list_of_features.rst:324
 msgid "Exponential depth fog."
@@ -1656,9 +1642,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:327
-#, fuzzy
 msgid "Support for sun scattering in the fog."
-msgstr "Bővítmények"
+msgstr "A napfény szóródásának támogatása a ködben."
 
 #: ../../docs/about/list_of_features.rst:328
 msgid ""
@@ -1667,9 +1652,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:330
-#, fuzzy
 msgid "Support for making specific materials ignore fog."
-msgstr "Bővítmények"
+msgstr ""
+"Támogatás annak beállítására, hogy egyes anyagok figyelmen kívül hagyják a "
+"ködöt."
 
 #: ../../docs/about/list_of_features.rst:332
 msgid "**Volumetric fog:**"
@@ -1700,12 +1686,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:339
 msgid "Can be used together with traditional fog."
-msgstr ""
+msgstr "Hagyományos köddel együtt is használható."
 
 #: ../../docs/about/list_of_features.rst:341
-#, fuzzy
 msgid "**Particles:**"
-msgstr "Részecskék"
+msgstr "**Részecskék:**"
 
 #: ../../docs/about/list_of_features.rst:343
 msgid ""
@@ -1742,7 +1727,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:357
 msgid "**Post-processing:**"
-msgstr ""
+msgstr "**Utófeldolgozás:**"
 
 #: ../../docs/about/list_of_features.rst:359
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES, AgX)."
@@ -1818,19 +1803,16 @@ msgid "BPTC for high-quality compression (not supported on macOS)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:380
-#, fuzzy
 msgid "ETC2 (not supported on macOS)."
-msgstr "Animáció"
+msgstr "ETC2 (macOS esetében nem támogatott)."
 
 #: ../../docs/about/list_of_features.rst:381
-#, fuzzy
 msgid "S3TC (not supported on mobile/Web platforms)."
-msgstr "Animáció"
+msgstr "S3TC (mobil/Web felületen nem támogatott)."
 
 #: ../../docs/about/list_of_features.rst:383
-#, fuzzy
 msgid "**Antialiasing:**"
-msgstr "Animáció"
+msgstr "**Élek simítása:**"
 
 #: ../../docs/about/list_of_features.rst:385
 msgid "Temporal :ref:`antialiasing <doc_3d_antialiasing>` (TAA)."
@@ -1867,7 +1849,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:393
 msgid "**Resolution scaling:**"
-msgstr ""
+msgstr "**Felbontás skálázása:**"
 
 #: ../../docs/about/list_of_features.rst:395
 msgid ""
@@ -1944,7 +1926,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:424
 msgid "3D physics"
-msgstr ""
+msgstr "3D-s fizika"
 
 #: ../../docs/about/list_of_features.rst:432
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
@@ -1981,7 +1963,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:384
 #: ../../docs/tutorials/shaders/index.rst:4
 msgid "Shaders"
-msgstr ""
+msgstr "Shaderek"
 
 #: ../../docs/about/list_of_features.rst:447
 msgid "*2D:* Custom vertex, fragment, and light shaders."
@@ -1998,9 +1980,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:450
-#, fuzzy
 msgid "Visual shader editor."
-msgstr "Bővítmények"
+msgstr "Vizuális shader szerkesztő."
 
 #: ../../docs/about/list_of_features.rst:452
 #, fuzzy
@@ -2015,12 +1996,11 @@ msgstr "Bővítmények"
 #: ../../docs/about/docs_changelog.rst:495
 #: ../../docs/tutorials/scripting/index.rst:4
 msgid "Scripting"
-msgstr ""
+msgstr "Szkriptelés"
 
 #: ../../docs/about/list_of_features.rst:457
-#, fuzzy
 msgid "**General:**"
-msgstr "Általános"
+msgstr "**Általános:**"
 
 #: ../../docs/about/list_of_features.rst:459
 msgid "Object-oriented design pattern with scripts extending nodes."
@@ -2041,9 +2021,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:464
-#, fuzzy
 msgid ":ref:`GDScript: <doc_gdscript>`"
-msgstr "Animáció"
+msgstr ":ref:`GDScript: <doc_gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:466
 msgid ""
@@ -2067,9 +2046,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:473
-#, fuzzy
 msgid ":ref:`C#: <doc_c_sharp>`"
-msgstr "Animáció"
+msgstr ":ref:`C#: <doc_c_sharp>`"
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
@@ -2172,14 +2150,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:517
-#, fuzzy
 msgid "Support for random volume and pitch."
-msgstr "Bővítmények"
+msgstr "Véletlenszerű hangerő és hangmagasság támogatása."
 
 #: ../../docs/about/list_of_features.rst:518
-#, fuzzy
 msgid "Support for real-time pitch scaling."
-msgstr "Bővítmények"
+msgstr "Támogatja a hangmagasság valós idejű skálázását."
 
 #: ../../docs/about/list_of_features.rst:519
 msgid ""
@@ -2243,17 +2219,15 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:540
 msgid "**Formats:**"
-msgstr ""
+msgstr "**Formátumok:**"
 
 #: ../../docs/about/list_of_features.rst:542
-#, fuzzy
 msgid "*Images:* See :ref:`doc_importing_images`."
-msgstr "Részecskék"
+msgstr "*Képek:* Lásd:ref:`doc_importing_images`."
 
 #: ../../docs/about/list_of_features.rst:543
-#, fuzzy
 msgid "*Audio:*"
-msgstr "Hang"
+msgstr "*Hang:*"
 
 #: ../../docs/about/list_of_features.rst:545
 msgid "WAV with optional IMA-ADPCM compression."
@@ -2265,7 +2239,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:547
 msgid "MP3."
-msgstr ""
+msgstr "MP3."
 
 #: ../../docs/about/list_of_features.rst:549
 msgid "*3D scenes:* See :ref:`doc_importing_3d_scenes`."
@@ -2315,7 +2289,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/viewports.rst:38
 #: ../../docs/tutorials/ui/custom_gui_controls.rst:114
 msgid "Input"
-msgstr ""
+msgstr "Bemenet"
 
 #: ../../docs/about/list_of_features.rst:564
 msgid ""
@@ -2344,9 +2318,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:574
-#, fuzzy
 msgid "Mouse input."
-msgstr "Animáció"
+msgstr "Egér bemenet."
 
 #: ../../docs/about/list_of_features.rst:576
 msgid ""
@@ -2404,7 +2377,7 @@ msgstr ""
 #: ../../docs/tutorials/export/exporting_for_web.rst:301
 #: ../../docs/tutorials/networking/index.rst:4
 msgid "Networking"
-msgstr ""
+msgstr "Hálózatépítés"
 
 #: ../../docs/about/list_of_features.rst:594
 msgid ""
@@ -2465,7 +2438,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:433
 #: ../../docs/tutorials/i18n/index.rst:4
 msgid "Internationalization"
-msgstr ""
+msgstr "Nemzetköziesítés"
 
 #: ../../docs/about/list_of_features.rst:614
 msgid "Full support for Unicode including emoji."
@@ -2499,9 +2472,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:628
-#, fuzzy
 msgid "Support for pluralization and translation contexts."
-msgstr "Fordítás állapota"
+msgstr ""
+"Támogatja a szavak többes számú alakjait és a fordítási környezetek "
+"meghatározását."
 
 #: ../../docs/about/list_of_features.rst:629
 msgid ""
@@ -2579,9 +2553,8 @@ msgid "Native file dialog support on Windows, macOS, Linux, and Android."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:654
-#, fuzzy
 msgid "Tray icon support on Windows and macOS."
-msgstr "Animáció"
+msgstr "Tálcaikon támogatás Windows és macOS rendszereken."
 
 #: ../../docs/about/list_of_features.rst:655
 msgid "Global menu integration on macOS."
@@ -2638,7 +2611,7 @@ msgstr ""
 #: ../../docs/tutorials/ui/creating_applications.rst:730
 #: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:48
 msgid "Mobile"
-msgstr ""
+msgstr "Mobil"
 
 #: ../../docs/about/list_of_features.rst:674
 msgid ""
@@ -2708,12 +2681,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:705
 msgid "**Nodes:**"
-msgstr ""
+msgstr "**Node-ok:**"
 
 #: ../../docs/about/list_of_features.rst:707
-#, fuzzy
 msgid "Buttons."
-msgstr "Gomb"
+msgstr "Gombok."
 
 #: ../../docs/about/list_of_features.rst:708
 msgid "Checkboxes, check buttons, radio buttons."
@@ -2733,11 +2705,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:713
 msgid "Scrollbars."
-msgstr ""
+msgstr "Görgetősávok."
 
 #: ../../docs/about/list_of_features.rst:714
 msgid "Labels."
-msgstr ""
+msgstr "Címkék."
 
 #: ../../docs/about/list_of_features.rst:715
 msgid ""
@@ -2759,7 +2731,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:721
 msgid "**Sizing:**"
-msgstr ""
+msgstr "**Méretezés:**"
 
 #: ../../docs/about/list_of_features.rst:723
 msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
@@ -2807,7 +2779,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:737
 msgid "**Theming:**"
-msgstr ""
+msgstr "**Téma:**"
 
 #: ../../docs/about/list_of_features.rst:739
 msgid "Built-in theme editor."
@@ -2941,7 +2913,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:787
 #: ../../docs/about/docs_changelog.rst:587
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Egyéb"
 
 #: ../../docs/about/list_of_features.rst:789
 msgid ""
@@ -3252,9 +3224,8 @@ msgstr ""
 
 #: ../../docs/about/system_requirements.rst:83
 #: ../../docs/about/system_requirements.rst:158
-#, fuzzy
 msgid "**iOS:** *Cannot run the editor*"
-msgstr "**Szerkesztőknek:**"
+msgstr "**IOS:** *Nem tudja futtatni a szerkesztőt*"
 
 #: ../../docs/about/system_requirements.rst:85
 msgid "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.0 support"
@@ -3759,7 +3730,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:40
 msgid "Which platforms are supported by Godot?"
-msgstr "Melyik platformok támogatottak a Godot-ól."
+msgstr "Mely platformokat támogatja a Godot?"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For the editor:**"
@@ -4463,9 +4434,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:397
-#, fuzzy
 msgid "Which Godot version should I use for a new project?"
-msgstr "Első lépések"
+msgstr "Melyik Godot verziót válasszam egy új projekthez?"
 
 #: ../../docs/about/faq.rst:399
 msgid ""
@@ -4593,9 +4563,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:471
-#, fuzzy
 msgid "See :ref:`doc_creating_applications` for more information."
-msgstr "Részecskék"
+msgstr "Tovább információkért lásd :ref:`doc_creating_applications`."
 
 #: ../../docs/about/faq.rst:476
 msgid "Is it possible to use Godot as a library?"
@@ -4922,7 +4891,7 @@ msgstr ""
 #: ../../docs/engine_details/development/compiling/compiling_with_dotnet.rst:9
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:24
 msgid "Requirements"
-msgstr ""
+msgstr "Követelmények"
 
 #: ../../docs/about/complying_with_licenses.rst:42
 msgid ""
@@ -5207,7 +5176,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:85
 msgid "**Version**"
-msgstr ""
+msgstr "**Verzió**"
 
 #: ../../docs/about/release_policy.rst:85
 msgid "**Release date**"
@@ -5652,9 +5621,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:258
-#, fuzzy
 msgid "Significant new features."
-msgstr "Felvétel"
+msgstr "Fontosabb új funkciók."
 
 #: ../../docs/about/release_policy.rst:259
 msgid ""
@@ -5793,7 +5761,7 @@ msgstr "Bővítmények"
 #: ../../docs/about/docs_changelog.rst:572
 #: ../../docs/tutorials/platform/index.rst:4
 msgid "Platform-specific"
-msgstr ""
+msgstr "Platformspecifikus"
 
 #: ../../docs/about/docs_changelog.rst:47
 #, fuzzy
@@ -5851,7 +5819,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:411
 #: ../../docs/about/docs_changelog.rst:516 ../../docs/tutorials/2d/index.rst:13
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:85
 #, fuzzy
@@ -5868,7 +5836,7 @@ msgstr "Bővítmények"
 #: ../../docs/tutorials/3d/index.rst:4
 #: ../../docs/tutorials/performance/index.rst:75
 msgid "3D"
-msgstr ""
+msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:90
 #, fuzzy
@@ -5902,7 +5870,7 @@ msgstr "Bővítmények"
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:165
 #: ../../docs/tutorials/ui/creating_applications.rst:665
 msgid "Performance"
-msgstr ""
+msgstr "Teljesítmény"
 
 #: ../../docs/about/docs_changelog.rst:110
 #, fuzzy
@@ -5923,7 +5891,7 @@ msgstr "Animáció"
 #: ../../docs/tutorials/performance/thread_safe_apis.rst:104
 #: ../../docs/tutorials/physics/index.rst:6
 msgid "Physics"
-msgstr ""
+msgstr "Fizika"
 
 #: ../../docs/about/docs_changelog.rst:115
 #, fuzzy
@@ -6081,7 +6049,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:118
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:216
 msgid "C#"
-msgstr ""
+msgstr "C#"
 
 #: ../../docs/about/docs_changelog.rst:183
 #, fuzzy
@@ -6341,7 +6309,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:216
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:257
 msgid "GDScript"
-msgstr ""
+msgstr "GDScript"
 
 #: ../../docs/about/docs_changelog.rst:321
 #, fuzzy
@@ -6427,7 +6395,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:422
 #: ../../docs/tutorials/math/index.rst:4
 msgid "Math"
-msgstr ""
+msgstr "Matematika"
 
 #: ../../docs/about/docs_changelog.rst:369
 #, fuzzy
@@ -6531,7 +6499,7 @@ msgstr "Animáció"
 
 #: ../../docs/about/docs_changelog.rst:428
 msgid "Inputs"
-msgstr ""
+msgstr "Bemenetek"
 
 #: ../../docs/about/docs_changelog.rst:430
 #, fuzzy
@@ -6540,13 +6508,13 @@ msgstr "Részecskék"
 
 #: ../../docs/about/docs_changelog.rst:435
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr ""
+msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:438
 #: ../../docs/about/docs_changelog.rst:552
 #: ../../docs/tutorials/3d/standard_material_3d.rst:255
 msgid "Shading"
-msgstr ""
+msgstr "Árnyalás"
 
 #: ../../docs/about/docs_changelog.rst:440
 msgid "Your First Shader Series:"
@@ -6560,15 +6528,15 @@ msgstr "Bővítmények"
 
 #: ../../docs/about/docs_changelog.rst:442
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:443
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_first_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:444
 msgid ":ref:`doc_your_second_spatial_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_second_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:445
 #, fuzzy
@@ -6604,7 +6572,7 @@ msgstr "Bővítmények"
 #: ../../docs/about/docs_changelog.rst:460
 #: ../../docs/about/docs_changelog.rst:577
 msgid "Multi-threading"
-msgstr ""
+msgstr "Több szálú feldolgozás"
 
 #: ../../docs/about/docs_changelog.rst:462
 #, fuzzy
@@ -6653,19 +6621,19 @@ msgstr "Animáció"
 
 #: ../../docs/about/docs_changelog.rst:477
 msgid ":ref:`doc_using_multimesh`"
-msgstr ""
+msgstr ":ref:`doc_using_multimesh`"
 
 #: ../../docs/about/docs_changelog.rst:478
 msgid ":ref:`doc_using_servers`"
-msgstr ""
+msgstr ":ref:`doc_using_servers`"
 
 #: ../../docs/about/docs_changelog.rst:481
 msgid "Legal"
-msgstr ""
+msgstr "Jogi"
 
 #: ../../docs/about/docs_changelog.rst:483
 msgid ":ref:`doc_complying_with_licenses`"
-msgstr ""
+msgstr ":ref:`doc_complying_with_licenses`"
 
 #: ../../docs/about/docs_changelog.rst:486
 msgid "New pages since version 3.0"
@@ -6679,7 +6647,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:491
 msgid ":ref:`doc_signals`"
-msgstr ""
+msgstr ":ref:`doc_signals`"
 
 #: ../../docs/about/docs_changelog.rst:492
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:451
@@ -6688,7 +6656,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:497
 msgid ":ref:`doc_gdscript_static_typing`"
-msgstr ""
+msgstr ":ref:`doc_gdscript_static_typing`"
 
 #: ../../docs/about/docs_changelog.rst:502
 msgid "Best Practices:"
@@ -6696,11 +6664,11 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:504
 msgid ":ref:`doc_introduction_best_practices`"
-msgstr ""
+msgstr ":ref:`doc_introduction_best_practices`"
 
 #: ../../docs/about/docs_changelog.rst:505
 msgid ":ref:`doc_what_are_godot_classes`"
-msgstr ""
+msgstr ":ref:`doc_what_are_godot_classes`"
 
 #: ../../docs/about/docs_changelog.rst:506
 #, fuzzy
@@ -6709,7 +6677,7 @@ msgstr "Animáció"
 
 #: ../../docs/about/docs_changelog.rst:507
 msgid ":ref:`doc_scenes_versus_scripts`"
-msgstr ""
+msgstr ":ref:`doc_scenes_versus_scripts`"
 
 #: ../../docs/about/docs_changelog.rst:508
 #, fuzzy
@@ -6718,67 +6686,67 @@ msgstr "Részecskék"
 
 #: ../../docs/about/docs_changelog.rst:509
 msgid ":ref:`doc_node_alternatives`"
-msgstr ""
+msgstr ":ref:`doc_node_alternatives`"
 
 #: ../../docs/about/docs_changelog.rst:510
 msgid ":ref:`doc_godot_interfaces`"
-msgstr ""
+msgstr ":ref:`doc_godot_interfaces`"
 
 #: ../../docs/about/docs_changelog.rst:511
 msgid ":ref:`doc_godot_notifications`"
-msgstr ""
+msgstr ":ref:`doc_godot_notifications`"
 
 #: ../../docs/about/docs_changelog.rst:512
 msgid ":ref:`doc_data_preferences`"
-msgstr ""
+msgstr ":ref:`doc_data_preferences`"
 
 #: ../../docs/about/docs_changelog.rst:513
 msgid ":ref:`doc_logic_preferences`"
-msgstr ""
+msgstr ":ref:`doc_logic_preferences`"
 
 #: ../../docs/about/docs_changelog.rst:518
 msgid ":ref:`doc_2d_lights_and_shadows`"
-msgstr ""
+msgstr ":ref:`doc_2d_lights_and_shadows`"
 
 #: ../../docs/about/docs_changelog.rst:519
 msgid ":ref:`doc_2d_meshes`"
-msgstr ""
+msgstr ":ref:`doc_2d_meshes`"
 
 #: ../../docs/about/docs_changelog.rst:524
 msgid ":ref:`doc_csg_tools`"
-msgstr ""
+msgstr ":ref:`doc_csg_tools`"
 
 #: ../../docs/about/docs_changelog.rst:525
 msgid ":ref:`doc_animating_thousands_of_fish`"
-msgstr ""
+msgstr ":ref:`doc_animating_thousands_of_fish`"
 
 #: ../../docs/about/docs_changelog.rst:526
 msgid ":ref:`doc_controlling_thousands_of_fish`"
-msgstr ""
+msgstr ":ref:`doc_controlling_thousands_of_fish`"
 
 #: ../../docs/about/docs_changelog.rst:531
 msgid ":ref:`doc_ragdoll_system`"
-msgstr ""
+msgstr ":ref:`doc_ragdoll_system`"
 
 #: ../../docs/about/docs_changelog.rst:532
 msgid ":ref:`doc_soft_body`"
-msgstr ""
+msgstr ":ref:`doc_soft_body`"
 
 #: ../../docs/about/docs_changelog.rst:537
 msgid ":ref:`doc_2d_skeletons`"
-msgstr ""
+msgstr ":ref:`doc_2d_skeletons`"
 
 #: ../../docs/about/docs_changelog.rst:538
 msgid ":ref:`doc_animation_tree`"
-msgstr ""
+msgstr ":ref:`doc_animation_tree`"
 
 #: ../../docs/about/docs_changelog.rst:541
 msgid "GUI"
-msgstr ""
+msgstr "GUI"
 
 #: ../../docs/about/docs_changelog.rst:543
 msgid ":ref:`doc_gui_containers`"
-msgstr ""
+msgstr ":ref:`doc_gui_containers`"
 
 #: ../../docs/about/docs_changelog.rst:546
 msgid "Viewports"
@@ -6786,11 +6754,11 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:548
 msgid ":ref:`doc_viewport_as_texture`"
-msgstr ""
+msgstr ":ref:`doc_viewport_as_texture`"
 
 #: ../../docs/about/docs_changelog.rst:549
 msgid ":ref:`doc_custom_postprocessing`"
-msgstr ""
+msgstr ":ref:`doc_custom_postprocessing`"
 
 #: ../../docs/about/docs_changelog.rst:554
 #, fuzzy
@@ -6799,7 +6767,7 @@ msgstr "Bővítmények"
 
 #: ../../docs/about/docs_changelog.rst:555
 msgid ":ref:`doc_advanced_postprocessing`"
-msgstr ""
+msgstr ":ref:`doc_advanced_postprocessing`"
 
 #: ../../docs/about/docs_changelog.rst:557
 msgid "Shading Reference:"
@@ -6807,15 +6775,15 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:560
 msgid ":ref:`doc_shading_language`"
-msgstr ""
+msgstr ":ref:`doc_shading_language`"
 
 #: ../../docs/about/docs_changelog.rst:561
 msgid ":ref:`doc_spatial_shader`"
-msgstr ""
+msgstr ":ref:`doc_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:562
 msgid ":ref:`doc_canvas_item_shader`"
-msgstr ""
+msgstr ":ref:`doc_canvas_item_shader`"
 
 #: ../../docs/about/docs_changelog.rst:563
 #, fuzzy
@@ -6834,27 +6802,27 @@ msgstr "Bővítmények"
 
 #: ../../docs/about/docs_changelog.rst:574
 msgid ":ref:`doc_customizing_html5_shell`"
-msgstr ""
+msgstr ":ref:`doc_customizing_html5_shell`"
 
 #: ../../docs/about/docs_changelog.rst:579
 msgid ":ref:`doc_thread_safe_apis`"
-msgstr ""
+msgstr ":ref:`doc_thread_safe_apis`"
 
 #: ../../docs/about/docs_changelog.rst:584
 msgid ":ref:`doc_making_trees`"
-msgstr ""
+msgstr ":ref:`doc_making_trees`"
 
 #: ../../docs/about/docs_changelog.rst:589
 msgid ":ref:`doc_jitter_stutter`"
-msgstr ""
+msgstr ":ref:`doc_jitter_stutter`"
 
 #: ../../docs/about/docs_changelog.rst:590
 msgid ":ref:`doc_running_code_in_the_editor`"
-msgstr ""
+msgstr ":ref:`doc_running_code_in_the_editor`"
 
 #: ../../docs/about/docs_changelog.rst:591
 msgid ":ref:`doc_change_scenes_manually`"
-msgstr ""
+msgstr ":ref:`doc_change_scenes_manually`"
 
 #: ../../docs/about/docs_changelog.rst:594
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:203
@@ -6867,11 +6835,11 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:596
 msgid ":ref:`doc_optimizing_for_size`"
-msgstr ""
+msgstr ":ref:`doc_optimizing_for_size`"
 
 #: ../../docs/about/docs_changelog.rst:597
 msgid ":ref:`doc_compiling_with_script_encryption_key`"
-msgstr ""
+msgstr ":ref:`doc_compiling_with_script_encryption_key`"
 
 #: ../../docs/about/docs_changelog.rst:600
 #: ../../docs/engine_details/development/index.rst:6
@@ -6880,7 +6848,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:602
 msgid ":ref:`doc_binding_to_external_libraries`"
-msgstr ""
+msgstr ":ref:`doc_binding_to_external_libraries`"
 
 #: ../../docs/getting_started/introduction/index.rst:12
 msgid ""
@@ -6916,9 +6884,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:15
-#, fuzzy
 msgid "What is Godot?"
-msgstr "Részecskék"
+msgstr "Mi is a Godot?"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:17
 msgid ""
@@ -7142,7 +7109,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:40
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:49
 msgid "Scenes"
-msgstr ""
+msgstr "Jelenetek"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:24
 msgid ""
@@ -7166,7 +7133,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/debug/objectdb_profiler.rst:160
 #: ../../docs/engine_details/file_formats/tscn.rst:47
 msgid "Nodes"
-msgstr ""
+msgstr "Node-ok"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:39
 msgid ""
@@ -7262,7 +7229,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/global_illumination/introduction_to_global_illumination.rst:328
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:671
 msgid "Summary"
-msgstr ""
+msgstr "Összegzés"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:98
 msgid ""
@@ -7885,7 +7852,7 @@ msgstr ""
 #: ../../docs/community/asset_library/using_assetlib.rst:16
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:128
 msgid "|image0|"
-msgstr ""
+msgstr "|image0|"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:174
 #: ../../docs/getting_started/first_2d_game/index.rst:80
@@ -7926,7 +7893,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:24
 #: ../../docs/community/asset_library/using_assetlib.rst:47
 msgid "|image1|"
-msgstr ""
+msgstr "|image1|"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:175
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:452
@@ -7969,7 +7936,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:32
 #: ../../docs/community/asset_library/using_assetlib.rst:57
 msgid "|image2|"
-msgstr ""
+msgstr "|image2|"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:176
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:453
@@ -8062,7 +8029,7 @@ msgstr ""
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:124
 msgid "Community-driven"
-msgstr ""
+msgstr "Közösségvezérelt"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:126
 msgid ""
@@ -8179,9 +8146,8 @@ msgid "A name."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:25
-#, fuzzy
 msgid "Editable properties."
-msgstr "Tulajdonságok"
+msgstr "Szerkeszthető tulajdonságok."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:26
 msgid "They receive callbacks to update every frame."
@@ -8857,9 +8823,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:39
-#, fuzzy
 msgid "Which language should I use?"
-msgstr "Mi az a GDScript és miért kéne használnom?"
+msgstr "Melyik nyelvet használjam?"
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:41
 msgid ""
@@ -10148,7 +10113,7 @@ msgstr ""
 #: ../../docs/getting_started/first_2d_game/index.rst:49
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:34
 msgid "Prerequisites"
-msgstr ""
+msgstr "Előfeltételek"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:51
 msgid ""
@@ -11396,7 +11361,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:66
 msgid "Message"
-msgstr ""
+msgstr "Üzenet"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:68
 msgid "Add the text ``Dodge the Creeps!``."
@@ -11598,7 +11563,7 @@ msgstr ""
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:12
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:133
 msgid "Background"
-msgstr ""
+msgstr "Háttér"
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:14
 msgid ""
@@ -12503,7 +12468,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:36
 #: ../../docs/community/asset_library/using_assetlib.rst:80
 msgid "|image3|"
-msgstr ""
+msgstr "|image3|"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:454
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:349
@@ -12531,7 +12496,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:41
 #: ../../docs/community/asset_library/using_assetlib.rst:85
 msgid "|image4|"
-msgstr ""
+msgstr "|image4|"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:455
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:332
@@ -12563,7 +12528,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:96
 #: ../../docs/community/asset_library/using_assetlib.rst:164
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:462
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:357
@@ -12582,7 +12547,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:49
 #: ../../docs/community/asset_library/using_assetlib.rst:89
 msgid "|image5|"
-msgstr ""
+msgstr "|image5|"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:456
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:333
@@ -12609,7 +12574,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:55
 #: ../../docs/community/asset_library/using_assetlib.rst:98
 msgid "|image6|"
-msgstr ""
+msgstr "|image6|"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:457
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:334
@@ -12635,7 +12600,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:62
 #: ../../docs/community/asset_library/using_assetlib.rst:124
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:458
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:335
@@ -12661,7 +12626,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:67
 #: ../../docs/community/asset_library/using_assetlib.rst:132
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:459
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:354
@@ -12686,7 +12651,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:83
 #: ../../docs/community/asset_library/using_assetlib.rst:153
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:460
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:336
@@ -12738,7 +12703,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:91
 #: ../../docs/community/asset_library/using_assetlib.rst:159
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:461
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:337
@@ -13131,7 +13096,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:109
 #: ../../docs/community/asset_library/using_assetlib.rst:172
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:358
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:460
@@ -13151,7 +13116,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:118
 #: ../../docs/community/asset_library/using_assetlib.rst:179
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:359
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:461
@@ -13182,7 +13147,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:137
 #: ../../docs/community/asset_library/using_assetlib.rst:126
 msgid "|image14|"
-msgstr ""
+msgstr "|image14|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:360
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:462
@@ -13202,7 +13167,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:310
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:148
 msgid "|image15|"
-msgstr ""
+msgstr "|image15|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:361
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:463
@@ -13221,7 +13186,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:315
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:153
 msgid "|image16|"
-msgstr ""
+msgstr "|image16|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:362
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:464
@@ -13244,7 +13209,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:322
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:159
 msgid "|image17|"
-msgstr ""
+msgstr "|image17|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:363
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:465
@@ -13260,7 +13225,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:333
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:166
 msgid "|image18|"
-msgstr ""
+msgstr "|image18|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:364
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:466
@@ -13281,7 +13246,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:342
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:170
 msgid "|image19|"
-msgstr ""
+msgstr "|image19|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:365
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:467
@@ -13325,7 +13290,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:348
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:174
 msgid "|image20|"
-msgstr ""
+msgstr "|image20|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:366
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:468
@@ -13342,7 +13307,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:191
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:198
 msgid "|image21|"
-msgstr ""
+msgstr "|image21|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:367
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:637
@@ -13357,7 +13322,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:196
 msgid "|image22|"
-msgstr ""
+msgstr "|image22|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:368
 msgid "image22"
@@ -13379,7 +13344,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:206
 msgid "|image23|"
-msgstr ""
+msgstr "|image23|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:369
 msgid "image23"
@@ -13391,7 +13356,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:210
 msgid "|image24|"
-msgstr ""
+msgstr "|image24|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:370
 msgid "image24"
@@ -13461,7 +13426,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:341
 msgid "|image25|"
-msgstr ""
+msgstr "|image25|"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:371
 msgid "image25"
@@ -13628,7 +13593,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:102
 msgid "Jumping"
-msgstr ""
+msgstr "Ugrás"
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:104
 msgid ""
@@ -14786,9 +14751,8 @@ msgid "And with that, you finished coding your first complete 3D game."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:296
-#, fuzzy
 msgid "**Congratulations**!"
-msgstr "Konstansok"
+msgstr "**Gratulálok**!"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:298
 msgid ""
@@ -15815,7 +15779,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/your_first_shader/your_first_2d_shader.rst:256
 #: ../../docs/engine_details/engine_api/gdextension/gdextension_c_example.rst:2144
 msgid "Conclusion"
-msgstr ""
+msgstr "Következtetés"
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:197
 msgid "In the end, the best approach is to consider the following:"
@@ -17632,7 +17596,7 @@ msgstr ""
 #: ../../docs/engine_details/development/compiling/compiling_with_script_encryption_key.rst:86
 #: ../../docs/engine_details/editor/creating_icons.rst:106
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Hibaelhárítás"
 
 #: ../../docs/tutorials/troubleshooting.rst:6
 msgid ""
@@ -18180,9 +18144,8 @@ msgid "Creating and importing projects"
 msgstr "Első lépések"
 
 #: ../../docs/tutorials/editor/project_manager.rst:34
-#, fuzzy
 msgid "To create a new project:"
-msgstr "Első lépések"
+msgstr "Új projekt léterhozásához:"
 
 #: ../../docs/tutorials/editor/project_manager.rst:36
 msgid "Click the **Create** button on the top-left of the window."
@@ -22695,7 +22658,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/standard_material_3d.rst:743
 #: ../../docs/tutorials/shaders/visual_shaders.rst:147
 msgid "Transform"
-msgstr ""
+msgstr "Átalakítás"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:577
 msgid "``grid_map/transform_tool``"
@@ -35210,7 +35173,7 @@ msgstr "Részecskék"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:9
 msgid "Intro"
-msgstr ""
+msgstr "Bevezető"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:11
 msgid ""
@@ -35295,7 +35258,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:69
 msgid "Texture"
-msgstr ""
+msgstr "Textúra"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:71
 msgid ""
@@ -35469,7 +35432,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:194
 msgid "Randomness"
-msgstr ""
+msgstr "Véletlenszerűség"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:196
 msgid ""
@@ -35665,7 +35628,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:43
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:93
 msgid "Angle"
-msgstr ""
+msgstr "Szög"
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:45
 msgid ""
@@ -35761,7 +35724,7 @@ msgstr "Művelet"
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:114
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:151
 msgid "Gravity"
-msgstr ""
+msgstr "Gravitáció"
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:116
 msgid "The gravity applied to every particle."
@@ -35798,7 +35761,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:142
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:244
 msgid "Damping"
-msgstr ""
+msgstr "Csillapítás"
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:144
 msgid ""
@@ -35816,7 +35779,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:262
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:89
 msgid "Scale"
-msgstr ""
+msgstr "Méretarány"
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:156
 msgid "Determines the initial scale of the particles."
@@ -36226,7 +36189,7 @@ msgstr ""
 #: ../../docs/tutorials/math/beziers_and_curves.rst:233
 #: ../../docs/tutorials/ui/custom_gui_controls.rst:19
 msgid "Drawing"
-msgstr ""
+msgstr "Rajzolás"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:29
 msgid ""
@@ -36244,7 +36207,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:59
 msgid "Updating"
-msgstr ""
+msgstr "Frissítés"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:61
 msgid ""
@@ -37272,7 +37235,7 @@ msgstr ""
 #: ../../docs/tutorials/xr/deploying_to_android.rst:7
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:26
 msgid "Setup"
-msgstr ""
+msgstr "Beállítás"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:21
 msgid ""
@@ -39682,7 +39645,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:373
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:20
 msgid "Environment"
-msgstr ""
+msgstr "Környezet"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:375
 msgid ""
@@ -39734,7 +39697,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:411
 #: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:40
 msgid "Cameras"
-msgstr ""
+msgstr "Kamerák"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:413
 msgid ""
@@ -39780,7 +39743,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:441
 msgid "Lights"
-msgstr ""
+msgstr "Világítás"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:443
 msgid ""
@@ -40140,7 +40103,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:307
 msgid "Jump:"
-msgstr ""
+msgstr "Ugrás:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:332
 msgid "All common behaviors and logic can be done with just vectors."
@@ -40257,9 +40220,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:33
-#, fuzzy
 msgid "What is a Mesh?"
-msgstr "Részecskék"
+msgstr "Mi az a Mesh?"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:35
 msgid ""
@@ -40309,7 +40271,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:64
 msgid "Surfaces"
-msgstr ""
+msgstr "Felületek"
 
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:66
 msgid ""
@@ -40974,7 +40936,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:571
 msgid "Saving"
-msgstr ""
+msgstr "Mentés"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:573
 msgid ""
@@ -42385,7 +42347,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:378
 msgid "Metallic"
-msgstr ""
+msgstr "Fémes"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:380
 msgid ""
@@ -42410,7 +42372,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:395
 msgid "Roughness"
-msgstr ""
+msgstr "Érdesség"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:397
 msgid ""
@@ -42422,7 +42384,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:405
 msgid "Emission"
-msgstr ""
+msgstr "Kibocsátás"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:407
 msgid ""
@@ -42528,7 +42490,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/standard_material_3d.rst:475
 #: ../../docs/tutorials/3d/visibility_ranges.rst:216
 msgid "Rim"
-msgstr ""
+msgstr "Perem"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:477
 msgid ""
@@ -42704,7 +42666,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:593
 msgid "Detail"
-msgstr ""
+msgstr "Részlet"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:595
 msgid ""
@@ -42817,7 +42779,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/standard_material_3d.rst:667
 #: ../../docs/tutorials/audio/audio_effects.rst:180
 msgid "Filter"
-msgstr ""
+msgstr "Szűrő"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:669
 msgid ""
@@ -42828,7 +42790,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:673
 msgid "Repeat"
-msgstr ""
+msgstr "Ismétlés"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:675
 msgid ""
@@ -42839,7 +42801,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:679
 msgid "Shadows"
-msgstr ""
+msgstr "Árnyékok"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:682
 msgid "Disable Receive Shadows"
@@ -44439,7 +44401,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_decals.rst:144
 msgid "Parameters"
-msgstr ""
+msgstr "Paraméterek"
 
 #: ../../docs/tutorials/3d/using_decals.rst:146
 msgid "**Emission Energy:** The brightness of the emission texture."
@@ -47944,9 +47906,8 @@ msgid "Introduction to global illumination"
 msgstr "Bevezetés"
 
 #: ../../docs/tutorials/3d/global_illumination/introduction_to_global_illumination.rst:7
-#, fuzzy
 msgid "What is global illumination?"
-msgstr "A dokumentációról"
+msgstr "Mi is a globális megvílágitás?"
 
 #: ../../docs/tutorials/3d/global_illumination/introduction_to_global_illumination.rst:9
 msgid ""
@@ -52084,7 +52045,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:767
 msgid "Fog"
-msgstr ""
+msgstr "Köd"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:771
 msgid ""
@@ -53723,7 +53684,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:94
 msgid "Amount"
-msgstr ""
+msgstr "Összeg"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:96
 msgid "The amount of mesh instances placed over the target surface."
@@ -56090,7 +56051,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:71
 msgid "CSGPolygon"
-msgstr ""
+msgstr "CSGPolygon"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:73
 msgid ""
@@ -56650,7 +56611,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:61
 msgid "Materials"
-msgstr ""
+msgstr "Anyagok"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:63
 msgid ""
@@ -58369,7 +58330,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:176
 msgid "Skeletons"
-msgstr ""
+msgstr "Csontvázak"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:178
 msgid ""
@@ -62408,7 +62369,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:33
 msgid "Format"
-msgstr ""
+msgstr "Formátum"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:33
 msgid "1 second of audio"
@@ -66726,9 +66687,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:195
-#, fuzzy
 msgid "Windows: ``.exe``"
-msgstr "Windows példa:"
+msgstr "Windows: ``.exe``"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:196
 msgid "macOS: ``.app`` or ``.zip`` (or ``.dmg`` when exporting *from* macOS)"
@@ -66923,7 +66883,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:44
 msgid "shaders"
-msgstr ""
+msgstr "shaders"
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:45
 msgid "models"
@@ -71778,7 +71738,7 @@ msgstr ""
 #: ../../docs/engine_details/architecture/variant_class.rst:57
 #: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:18
 msgid "Type"
-msgstr ""
+msgstr "Típus"
 
 #: ../../docs/tutorials/io/data_paths.rst:93
 msgid "Default"
@@ -72666,7 +72626,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:254
 #: ../../docs/tutorials/platform/web/html5_shell_classref.rst:265
 msgid "string"
-msgstr ""
+msgstr "string"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:57
 msgid "vector2"
@@ -74334,31 +74294,31 @@ msgstr ""
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:48
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:228
 msgid "keys"
-msgstr ""
+msgstr "kulcsok"
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:28
 msgid "<lang1>"
-msgstr ""
+msgstr "<lang1>"
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:28
 msgid "<lang2>"
-msgstr ""
+msgstr "<lang2>"
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:28
 msgid "<langN>"
-msgstr ""
+msgstr "<langN>"
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:30
 msgid "KEY1"
-msgstr ""
+msgstr "KULCS1"
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:32
 msgid "KEY2"
-msgstr ""
+msgstr "KULCS2"
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:34
 msgid "KEYN"
-msgstr ""
+msgstr "KULCSN"
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:37
 msgid ""
@@ -109148,11 +109108,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/index.rst:6
-#, fuzzy
 msgid ""
 "This section covers programming languages and core features to code your "
 "games in Godot."
-msgstr "Milyen programozási nyelveket támogat a Godot?"
+msgstr ""
+"Ez a rész a programozási nyelveket és a Godot-ban történő játékfejlesztéshez "
+"szükséges alapvető funkciókat mutatja be."
 
 #: ../../docs/tutorials/scripting/index.rst:9
 msgid ""
@@ -110144,7 +110105,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:397
 msgid "Backspace"
-msgstr ""
+msgstr "Backspace"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:399
 msgid "``\\f``"
@@ -112817,7 +112778,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:406
 msgid "While"
-msgstr ""
+msgstr "Miközben"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:408
 msgid "while() loops are the same everywhere:"
@@ -116960,9 +116921,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:104
-#, fuzzy
 msgid "In Visual Studio Code:"
-msgstr "Bővítmények"
+msgstr "Visual Studio Code-ban:"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:106
 msgid ""
@@ -120085,7 +120045,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:344
 msgid "Singletons"
-msgstr ""
+msgstr "Singletons"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:346
 msgid ""
@@ -136511,9 +136471,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2829
-#, fuzzy
 msgid "Returns the value:"
-msgstr "Animáció"
+msgstr "Visszaadja az értéket:"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:0
 msgid "param comps"
@@ -148518,9 +148477,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:172
-#, fuzzy
 msgid "There are several ways to alleviate this:"
-msgstr "Kétféleképpen lehet alapanyagot egy CSG csomóhoz rendelni:"
+msgstr "Ennek enyhítésére több módszer is létezik:"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:174
 msgid ""
@@ -163007,9 +162965,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:437
-#, fuzzy
 msgid "Example output:"
-msgstr "Leírás"
+msgstr "Példa a kimenetre:"
 
 #: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:451
 msgid "Now we can generate the documentation:"
@@ -163243,9 +163200,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/engine_api/gdextension/what_is_gdextension.rst:4
-#, fuzzy
 msgid "What is GDExtension?"
-msgstr "Részecskék"
+msgstr "Mi is a GDExtension?"
 
 #: ../../docs/engine_details/engine_api/gdextension/what_is_gdextension.rst:10
 msgid "There are three primary methods with which this is achieved:"
@@ -166554,9 +166510,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:36
-#, fuzzy
 msgid "**editor** module:"
-msgstr "Szerkesztő"
+msgstr "**szerkesztő** modul:"
 
 #: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:38
 msgid ""
@@ -169276,9 +169231,8 @@ msgstr ""
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:334
 #: ../../docs/engine_details/development/compiling/compiling_for_macos.rst:104
 #: ../../docs/engine_details/development/compiling/compiling_for_macos.rst:142
-#, fuzzy
 msgid "Run the following command:"
-msgstr "Első lépések"
+msgstr "Futtassa a következő parancsot:"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:323
 msgid ""
@@ -174446,9 +174400,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/file_formats/tscn.rst:113
-#, fuzzy
 msgid "``groups``"
-msgstr "Csoportok"
+msgstr "``csoprotok``"
 
 #: ../../docs/engine_details/file_formats/tscn.rst:114
 msgid ""
