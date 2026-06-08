@@ -54,6 +54,16 @@ msgstr ""
 "本文档的示例将使用 2D 对象。每个 2D 物理对象和碰撞形状在 3D 中都有直接对应的"
 "对象，并且在大多数情况下它们的工作方式相同。"
 
+msgid ""
+"Physics in Godot, regardless of physics engine, is **not** deterministic, "
+"the nature of physics engine determinism is very complex and has to do with "
+"many factors, this means physics is not guaranteed to run the same way for "
+"seemingly identical situations."
+msgstr ""
+"无论使用哪种物理引擎，Godot 中的物理模拟都 **不是** 确定性的。物理引擎的确定"
+"性本质非常复杂，并且受到许多因素的影响。这意味着，即使是在看似完全相同的情况"
+"下，物理模拟的运行结果也无法保证每次都一模一样。"
+
 msgid "Collision objects"
 msgstr "碰撞对象"
 

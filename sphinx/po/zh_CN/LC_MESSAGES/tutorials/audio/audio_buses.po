@@ -15,7 +15,7 @@ msgid "Audio buses"
 msgstr "音频总线"
 
 msgid "Introduction"
-msgstr "前言"
+msgstr "介绍"
 
 msgid ""
 "Godot's audio processing code has been written with games in mind, with the "
@@ -191,6 +191,11 @@ msgid ""
 msgstr ""
 "你不需要手动禁用闲置总线,Godot在检测到总线已经静音数秒之后, 就会禁用它(以及所"
 "有效果)."
+
+msgid "Disabled buses have a dark blue VU meter instead of a red-green one."
+msgstr ""
+"被禁用的总线，其 VU 表（音量电平表）会显示为深蓝色，而不是（正常状态下的）红"
+"绿色。"
 
 msgid "Bus rearrangement"
 msgstr "总线重排"

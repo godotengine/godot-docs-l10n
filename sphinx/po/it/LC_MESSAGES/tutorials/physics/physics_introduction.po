@@ -59,6 +59,18 @@ msgstr ""
 "2D e ogni forma di collisione ha un equivalente diretto in 3D e nella "
 "maggior parte dei casi funzionano allo stesso modo."
 
+msgid ""
+"Physics in Godot, regardless of physics engine, is **not** deterministic, "
+"the nature of physics engine determinism is very complex and has to do with "
+"many factors, this means physics is not guaranteed to run the same way for "
+"seemingly identical situations."
+msgstr ""
+"La fisica in Godot, a prescindere dal motore di fisica utilizzato, **non** è "
+"deterministica. La natura del determinismo dei motori di fisica è molto "
+"complessa e ha a che fare con numerosi fattori, il che significa che non è "
+"garantito che la fisica si comporti allo stesso modo in situazioni "
+"apparentemente identiche."
+
 msgid "Collision objects"
 msgstr "Oggetti di collisione"
 
@@ -492,7 +504,7 @@ msgstr ""
 "applicate delle forze, sia tramite una collisione, sia tramite codice."
 
 msgid "Using RigidBody2D"
-msgstr "Utilizzo di RigidBody2D"
+msgstr "Utilizzare RigidBody"
 
 msgid ""
 "One of the benefits of using a rigid body is that a lot of behavior can be "

@@ -549,6 +549,16 @@ msgstr ""
 "Il passaggio di array grezzi (come ``byte[]``) o ``string`` all'API di C# in "
 "Godot richiede il marshalling, che è relativamente costoso."
 
+msgid ""
+"The implicit conversion from ``string`` to ``NodePath`` or ``StringName`` "
+"incur both the native interop and marshalling costs as the ``string`` has to "
+"be marshalled and passed to the respective native constructor."
+msgstr ""
+"La conversione implicita da ``string`` a ``NodePath`` o ``StringName`` "
+"comporta sia costi di interoperabilità nativa sia di marshalling, poiché "
+"``string`` deve essere sottoposta a marshalling e passata al rispettivo "
+"costruttore nativo."
+
 msgid "Using NuGet packages in Godot"
 msgstr "Utilizzare i pacchetti NuGet in Godot"
 

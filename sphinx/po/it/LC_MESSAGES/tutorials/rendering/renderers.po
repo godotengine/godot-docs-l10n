@@ -198,6 +198,20 @@ msgstr ""
 "Desideri le migliori prestazioni possibili su tutti i dispositivi e non hai "
 "bisogno di funzionalità di rendering avanzate."
 
+msgid ""
+"Keep in mind every game is unique, and this is only a starting point. For "
+"example, you might choose to use the Compatibility renderer even though you "
+"have the latest GPU, so you can support the widest range of hardware. Or you "
+"might want to use the Forward+ renderer for a 2D game, so you can use "
+"advanced features like compute shaders."
+msgstr ""
+"Tieni presente che ogni gioco è unico e che questo è solo un punto di "
+"partenza. Ad esempio, potresti scegliere di utilizzare il motore di "
+"rendering Compatibilità anche hai la GPU più recente, così da supportare la "
+"più ampia gamma di hardware. Oppure potresti voler utilizzare il motore di "
+"rendering Forward+ per un gioco 2D, così da poter utilizzare funzionalità "
+"avanzate come gli shader di calcolo."
+
 msgid "Switching between renderers"
 msgstr "Passare da un renderer all'altro"
 
@@ -440,6 +454,19 @@ msgstr "Consultare :ref:`doc_lights_and_shadows` per maggiori informazioni."
 msgid "Lighting approach"
 msgstr "Approccio di illuminazione"
 
+msgid ""
+"Forward single-pass. Lights with shadows use a multi-pass approach and less "
+"accurate blending."
+msgstr ""
+"Forward a singolo passaggio. Le luci con ombre utilizzano un approccio a "
+"passaggi multipli e una fusione meno accurata."
+
+msgid "Forward single-pass."
+msgstr "Forward a singolo passaggio."
+
+msgid "Clustered forward."
+msgstr "Forward clusterizzato."
+
 msgid "Maximum OmniLights"
 msgstr "Massimo di OmniLight"
 
@@ -557,6 +584,9 @@ msgstr "FSR2"
 msgid "FXAA"
 msgstr "FXAA"
 
+msgid "SMAA"
+msgstr "SMAA"
+
 msgid "SSAA"
 msgstr "SSAA"
 
@@ -595,6 +625,36 @@ msgstr ""
 msgid "Other features"
 msgstr "Altre funzionalità"
 
+msgid "Color precision"
+msgstr "Precisione del colore"
+
+msgid "RGBA8. Low dynamic range, medium precision."
+msgstr "RGBA8. Gamma dinamica bassa, precisione media."
+
+msgid ""
+"RGB10A2. Medium dynamic range, low precision. RGBA16F if HDR 2D is enabled."
+msgstr ""
+"RGB10A2. Gamma dinamica media, precisione bassa. RGBA16F se HDR 2D è "
+"abilitato."
+
+msgid "RGBA16F. High dynamic range, good precision."
+msgstr "RGBA16F. Gamma dinamica alta, precisione buona."
+
+msgid "Depth precision"
+msgstr "Precisione della profondità"
+
+msgid "24-bit without reverse Z. Medium precision."
+msgstr "24 bit senza Z inverso. Precisione media."
+
+msgid "24-bit with reverse Z. Medium precision."
+msgstr "24 bit con Z inverso. Precisione media."
+
+msgid "32-bit with reverse Z. Good precision."
+msgstr "32 bit con Z inverso. Precisione buona."
+
+msgid "Debanding"
+msgstr "Debanding"
+
 msgid "Variable rate shading"
 msgstr "Variable rate shading"
 
@@ -604,6 +664,9 @@ msgstr "Decalcomanie"
 msgid "Particle trails"
 msgstr "Scie di particelle"
 
+msgid "Particle SDF collision"
+msgstr "Collisioni SDF di particelle"
+
 msgid "Depth of field blur"
 msgstr "Sfocatura della profondità di campo"
 
@@ -612,6 +675,9 @@ msgstr "Modalità adattiva e mailbox di Vsync"
 
 msgid "2D HDR Viewport"
 msgstr "Viewport con HDR in 2D"
+
+msgid "HDR output"
+msgstr "Output HDR"
 
 msgid "RenderingDevice access"
 msgstr "Accesso a RenderingDevice"

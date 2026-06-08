@@ -32,6 +32,12 @@ msgstr "要在Linux或其他类Unix系统下进行编译, 需要满足以下条�
 msgid "GCC 9+ or Clang 6+."
 msgstr "GCC 9+ 或 Clang 6+。"
 
+msgid "`Python 3.9+ <https://www.python.org/downloads/>`_."
+msgstr "`Python 3.9+ <https://www.python.org/downloads/>`_。"
+
+msgid "`SCons 4.4+ <https://scons.org/pages/download.html>`_ build system."
+msgstr "`SCons 4.4+ <https://scons.org/pages/download.html>`_ 构建系统。"
+
 msgid "pkg-config (used to detect the development libraries listed below)."
 msgstr "pkg-config（用于检测下面这些开发库）。"
 
@@ -503,6 +509,13 @@ msgid ""
 msgstr ""
 "构建完成后，将在 ``bin/`` 文件夹中创建一个以 ``.llvm`` 为后缀的新的二进制文"
 "件。"
+
+msgid ""
+"It's still recommended to use GCC for production builds as it's the compiler "
+"used for official builds and is more rigorously tested."
+msgstr ""
+"不过，生产环境的构建依然建议使用 GCC，因为官方发布的版本就是用它编译的，而且 "
+"GCC 经过了更严格的测试。"
 
 msgid "If this error occurs:"
 msgstr "如果出现这个错误："

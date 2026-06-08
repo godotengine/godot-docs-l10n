@@ -260,6 +260,16 @@ msgstr "|extended| Percorso al file di pacchetto (.pck) da caricare."
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <mode>``"
 
+msgid ""
+"|release| Render thread mode (\"unsafe\", \"safe\", \"separate\"). "
+"See :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
+"threads/thread_model>` for more details."
+msgstr ""
+"|release| Modalità dei thread di rendering (\"unsafe\", \"safe\", "
+"\"separate\"). Consultare :ref:`Thread Model "
+"<class_ProjectSettings_property_rendering/driver/threads/thread_model>` per "
+"più dettagli."
+
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <address>``"
 
@@ -308,6 +318,13 @@ msgstr ""
 msgid "``--rendering-method <renderer>``"
 msgstr "``--rendering-method <renderer>``"
 
+msgid ""
+"|release| Renderer name. Valid values are ``forward_plus``, ``mobile``, and "
+"``gl_compatibility``. Requires driver support."
+msgstr ""
+"|release| Nome del renderer. I valori validi sono ``forward_plus``, "
+"``mobile`` e ``gl_compatibility``. Richiede il supporto del driver."
+
 msgid "``--rendering-driver <driver>``"
 msgstr "``--rendering-driver <driver>``"
 
@@ -320,6 +337,14 @@ msgstr ""
 
 msgid "``--gpu-index <device_index>``"
 msgstr "``--gpu-index <device_index>``"
+
+msgid ""
+"|release| Use a specific GPU (only available on the Forward+/Mobile "
+"renderers; run with ``--verbose`` to get available device list)."
+msgstr ""
+"|release| Utilizza una GPU specifica (disponibile solo nei renderer Forward+/"
+"Mobile; eseguire con ``--verbose`` per ottenere l'elenco dei dispositivi "
+"disponibili)."
 
 msgid "``--text-driver <driver>``"
 msgstr "``--text-driver <driver>``"
@@ -690,6 +715,12 @@ msgstr ""
 
 msgid "``--delta-smoothing <enable>``"
 msgstr "``--delta-smoothing <enable>``"
+
+msgid ""
+"|release| Enable or disable frame delta smoothing (\"enable\", \"disable\")."
+msgstr ""
+"|release| Abilita o disabilita il livellamento delta dei frame (\"enable\", "
+"\"disable\")."
 
 msgid "``--print-fps``"
 msgstr "``--print-fps``"

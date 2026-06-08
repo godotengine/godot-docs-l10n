@@ -15,7 +15,7 @@ msgid "Project organization"
 msgstr "项目组织"
 
 msgid "Introduction"
-msgstr "前言"
+msgstr "介绍"
 
 msgid ""
 "Since Godot has no restrictions on project structure or filesystem usage, "
@@ -101,6 +101,14 @@ msgstr ""
 "3.0版之前的 Godot 版本从项目外的文件执行导入过程. 尽管这在大型项目中很有用, "
 "但它给大多数开发人员带来了组织麻烦."
 
+msgid ""
+"Because of this, assets are now transparently imported from within the "
+"project folder. See :ref:`doc_import_process` for more details on how "
+"importing works in Godot."
+msgstr ""
+"因此，资产现在将从项目文件夹中被透明地导入。有关 Godot 中导入功能的更多详细信"
+"息，请参阅 :ref:`doc_import_process`。"
+
 msgid "Ignoring specific folders"
 msgstr "忽略具体文件夹"
 
@@ -111,6 +119,14 @@ msgid ""
 msgstr ""
 "为防止 Godot 导入特定文件夹中的文件, 请在文件夹中创建一个名为 ``.gdignore`` "
 "的空文件(以 ``.`` 号开头). 这对于加快初始项目导入非常有用."
+
+msgid ""
+"To create a file whose name starts with a dot on Windows, place a dot at "
+"both the beginning and end of the filename (``.gdignore.``). Windows will "
+"automatically remove the trailing dot when you confirm the name."
+msgstr ""
+"要在 Windows 上创建文件名以点开头的文件，请在文件名的前后都写一个点"
+"（``.gdignore.``）。确认之后 Windows 会自动移除末尾的点。"
 
 msgid ""
 "Alternatively, you can use a text editor such as Notepad++ or use the "

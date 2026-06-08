@@ -300,6 +300,13 @@ msgstr ""
 msgid "``--rendering-method <renderer>``"
 msgstr "``--rendering-method <renderer>``"
 
+msgid ""
+"|release| Renderer name. Valid values are ``forward_plus``, ``mobile``, and "
+"``gl_compatibility``. Requires driver support."
+msgstr ""
+"|release| 渲染器名称。可选的有效值为 ``forward_plus`` 、``mobile`` 和 "
+"``gl_compatibility``。该设置需要驱动程序的底层支持。"
+
 msgid "``--rendering-driver <driver>``"
 msgstr "``--rendering-driver <driver>``"
 
@@ -311,6 +318,13 @@ msgstr ""
 
 msgid "``--gpu-index <device_index>``"
 msgstr "``--gpu-index <device_index>``"
+
+msgid ""
+"|release| Use a specific GPU (only available on the Forward+/Mobile "
+"renderers; run with ``--verbose`` to get available device list)."
+msgstr ""
+"|release| 指定使用某一块特定的 GPU（该功能仅在 Forward+/Mobile 渲染器下可用；"
+"请在启动时加上 ``--verbose`` 参数来获取可用的设备列表）。"
 
 msgid "``--text-driver <driver>``"
 msgstr "``--text-driver <driver>``"

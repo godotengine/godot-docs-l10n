@@ -47,8 +47,22 @@ msgstr "需求"
 msgid "For compiling under Windows, Linux or macOS, the following is required:"
 msgstr "要在Windows, Linux或macOS下进行编译, 需要以下内容:"
 
+msgid "`Python 3.9+ <https://www.python.org/downloads/>`_."
+msgstr "`Python 3.9+ <https://www.python.org/downloads/>`_。"
+
+msgid "`SCons 4.4+ <https://scons.org/pages/download.html>`_ build system."
+msgstr "`SCons 4.4+ <https://scons.org/pages/download.html>`_ 构建系统。"
+
 msgid "Android SDK"
 msgstr "Android SDK"
+
+msgid ""
+"To install the Android SDK, follow the steps `here <https://"
+"docs.godotengine.org/en/stable/tutorials/export/"
+"exporting_for_android.html>`_."
+msgstr ""
+"要安装 Android SDK，请按照 `here <https://docs.godotengine.org/en/stable/"
+"tutorials/export/exporting_for_android.html>`_ 的步骤操作。"
 
 msgid ""
 "On Linux, **do not use an Android SDK provided by your distribution's "
@@ -186,6 +200,13 @@ msgid ""
 msgstr ""
 "如果你要更改正在构建的架构列表，记得在你要构建的 *最后一个* 架构中添加 "
 "``generate_android_binaries=yes``，以便在构建后生成模板文件。"
+
+msgid ""
+"To enable dev build (for use when troubleshooting) in the generated "
+"templates, add the ``dev_build=yes`` parameters to the SCons command."
+msgstr ""
+"如果你想在生成的模板中启用开发构建（dev build，通常在排查故障时使用），只需要"
+"在 SCons 命令中加上 ``dev_build=yes`` 这个参数即可。"
 
 msgid ""
 "To include debug symbols in the generated templates, add the "

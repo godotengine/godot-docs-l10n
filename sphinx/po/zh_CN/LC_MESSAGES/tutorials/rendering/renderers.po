@@ -23,7 +23,7 @@ msgstr ""
 "多技术细节，请参阅 :ref:`doc_internal_rendering_architecture`\\ 。"
 
 msgid "Introduction"
-msgstr "前言"
+msgstr "介绍"
 
 msgid "Godot 4 includes three renderers:"
 msgstr "Godot 4 包含三个渲染器："
@@ -410,6 +410,17 @@ msgstr "详见 :ref:`doc_lights_and_shadows`\\ 。"
 msgid "Lighting approach"
 msgstr "光照方法"
 
+msgid ""
+"Forward single-pass. Lights with shadows use a multi-pass approach and less "
+"accurate blending."
+msgstr "前向单次渲染。带有阴影的灯光采用多通道方法，并且混合精度较低。"
+
+msgid "Forward single-pass."
+msgstr "前向单次渲染。"
+
+msgid "Clustered forward."
+msgstr "Clustered forward."
+
 msgid "Maximum OmniLights"
 msgstr "最大 OmniLight 数"
 
@@ -536,6 +547,9 @@ msgstr "FSR2"
 msgid "FXAA"
 msgstr "FXAA"
 
+msgid "SMAA"
+msgstr "SMAA"
+
 msgid "SSAA"
 msgstr "SSAA"
 
@@ -575,6 +589,34 @@ msgstr "⚠️ 支持，但在较旧的设备上会有性能损失。"
 msgid "Other features"
 msgstr "其他特性"
 
+msgid "Color precision"
+msgstr "颜色精度"
+
+msgid "RGBA8. Low dynamic range, medium precision."
+msgstr "RGBA8。低动态范围，中等精度。"
+
+msgid ""
+"RGB10A2. Medium dynamic range, low precision. RGBA16F if HDR 2D is enabled."
+msgstr "RGB10A2。中等动态范围，低精度。如果启用了 2D HDR，则使用 RGBA16F。"
+
+msgid "RGBA16F. High dynamic range, good precision."
+msgstr "RGBA16F。高动态范围，精度良好。"
+
+msgid "Depth precision"
+msgstr "深度精度"
+
+msgid "24-bit without reverse Z. Medium precision."
+msgstr "24 位，无反转 Z。中等精度。"
+
+msgid "24-bit with reverse Z. Medium precision."
+msgstr "24 位，带反转 Z。中等精度。"
+
+msgid "32-bit with reverse Z. Good precision."
+msgstr "32 位，带反转 Z。精度高。"
+
+msgid "Debanding"
+msgstr "去色带"
+
 msgid "Variable rate shading"
 msgstr "可变速率着色"
 
@@ -595,6 +637,9 @@ msgstr "自适应和邮箱模式的垂直同步"
 
 msgid "2D HDR Viewport"
 msgstr "2D HDR 视口"
+
+msgid "HDR output"
+msgstr "HDR 输出"
 
 msgid "RenderingDevice access"
 msgstr "RenderingDevice 访问"

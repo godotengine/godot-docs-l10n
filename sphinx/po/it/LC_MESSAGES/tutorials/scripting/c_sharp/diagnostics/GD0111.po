@@ -63,6 +63,16 @@ msgstr ""
 "sottostante che memorizza un ``Callable`` potrebbe impedire lo scaricamento "
 "dell'assembly."
 
+msgid ""
+"An expression-bodied property doesn't have a backing field and won't store "
+"the ``Callable``, so Godot won't attempt to serialize it, which should "
+"result in the successful reloading of the .NET assembly."
+msgstr ""
+"Una proprietà con corpo di espressione (expression-bodied) non ha un campo "
+"di supporto e non memorizzerà il ``Callable``, quindi Godot non tenterà di "
+"serializzarla, il che dovrebbe comportare il ricaricamento corretto "
+"dell'assembly .NET."
+
 msgid "How to fix violations"
 msgstr "Come risolvere le violazioni"
 

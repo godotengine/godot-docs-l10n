@@ -15,7 +15,7 @@ msgid "2D movement overview"
 msgstr "2D 运动概述"
 
 msgid "Introduction"
-msgstr "前言"
+msgstr "介绍"
 
 msgid ""
 "Every beginner has been there: \"How do I move my character?\" Depending on "
@@ -35,6 +35,16 @@ msgstr ""
 
 msgid "Setup"
 msgstr "设置"
+
+msgid ""
+"Each example below uses the same scene setup. Start with a "
+"``CharacterBody2D`` with two children: ``Sprite2D`` and "
+"``CollisionShape2D``. You can use the Godot icon (``icon.svg``) for the "
+"Sprite2D's texture or use any other 2D image you have."
+msgstr ""
+"以下每个示例都使用相同的场景设置。从一个 ``CharacterBody2D`` 节点开始，为其添"
+"加两个子节点：``Sprite2D`` 和 ``CollisionShape2D`` 。你可以将 Godot 图标"
+"（``icon.svg``）作为 Sprite2D 的纹理，也可以使用任何其他拥有的 2D 图像。"
 
 msgid ""
 "Open ``Project -> Project Settings`` and select the \"Input Map\" tab. Add "

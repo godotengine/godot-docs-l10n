@@ -26,6 +26,13 @@ msgstr ""
 msgid "Requirements"
 msgstr "Вимоги"
 
+msgid "`Python 3.9+ <https://www.python.org/downloads/macos/>`_."
+msgstr "`Python 3.9+ <https://www.python.org/downloads/macos/>`_."
+
+msgid "`SCons 4.4+ <https://scons.org/pages/download.html>`_ build system."
+msgstr ""
+"`SCons 4.4+ <https://scons.org/pages/download.html>`_ системний збірки."
+
 msgid "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_."
 msgstr "`xcode <https://apps.apple.com/us/app/xcode/id497799835>`_."
 
@@ -127,6 +134,18 @@ msgstr ""
 "Статичну папку MoltenVK ``.xcframework`` слід також помістити в папку "
 "``ios_xcode`` після її створення. MoltenVK завжди статично пов’язаний на "
 "iOS; немає доступної опції динамічного зв’язування, на відміну від macOS."
+
+msgid "The iOS simulator only supports the ``Compatibility`` renderer."
+msgstr "Симулятор iOS підтримує лише рендерер ``Compatibility``."
+
+msgid ""
+"Apple Silicon Macs can run iOS apps natively, so you can run exported iOS "
+"projects directly on an Apple Silicon Mac without iOS simulator limitations."
+msgstr ""
+"Комп’ютери Mac на базі Apple Silicon можуть запускати програми для iOS у "
+"нативному режимі, тому ви можете запускати експортовані проекти для iOS "
+"безпосередньо на комп’ютері Mac на базі Apple Silicon без обмежень, "
+"властивих симулятору iOS."
 
 msgid "Run"
 msgstr "Запустити"

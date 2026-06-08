@@ -316,6 +316,17 @@ msgid ""
 "will be considered in the avoidance calculation."
 msgstr "计算避障时只会考虑位于同一张地图中其他注册了避障的代理。"
 
+msgid ""
+"The NavigationAgent **must** be supplied with a ``target_position`` "
+"attribute, even if you are only using the agent for avoidance. Otherwise, "
+"the ``safe_velocity`` received from the ``velocity_computed`` signal will "
+"always be the zero vector."
+msgstr ""
+"NavigationAgent **必须** 提供一个 ``target_position`` （目标位置）属性，哪怕"
+"你只是单纯想用这个代理来做避障。否则的话，从 ``velocity_computed`` 信号里获取"
+"到的 ``safe_velocity`` （安全速度）永远都会是一个零向量（也就是没有任何速"
+"度）。"
+
 msgid "The following NavigationAgent properties are relevant for avoidance:"
 msgstr "NavigationAgent 中与避障相关的属性如下："
 

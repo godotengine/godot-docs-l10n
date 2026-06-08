@@ -454,6 +454,19 @@ msgstr ""
 msgid "Lighting approach"
 msgstr "Підхід до освітлення"
 
+msgid ""
+"Forward single-pass. Lights with shadows use a multi-pass approach and less "
+"accurate blending."
+msgstr ""
+"Однопрохідне рендеринг. Для зображень із тінями використовується "
+"багатопрохідний підхід та менш точне змішування."
+
+msgid "Forward single-pass."
+msgstr "Однопрохідне пересилання."
+
+msgid "Clustered forward."
+msgstr "Згруповані вперед."
+
 msgid "Maximum OmniLights"
 msgstr "Максимальний OmniLights"
 
@@ -587,6 +600,9 @@ msgstr "FSR2"
 msgid "FXAA"
 msgstr "FXAA"
 
+msgid "SMAA"
+msgstr "SMAA"
+
 msgid "SSAA"
 msgstr "SSAA"
 
@@ -630,6 +646,36 @@ msgstr ""
 msgid "Other features"
 msgstr "Інші особливості"
 
+msgid "Color precision"
+msgstr "Точність передачі кольорів"
+
+msgid "RGBA8. Low dynamic range, medium precision."
+msgstr "RGBA8. Низький динамічний діапазон, середня точність."
+
+msgid ""
+"RGB10A2. Medium dynamic range, low precision. RGBA16F if HDR 2D is enabled."
+msgstr ""
+"RGB10A2. Середній динамічний діапазон, низька точність. RGBA16F, якщо "
+"увімкнено HDR 2D."
+
+msgid "RGBA16F. High dynamic range, good precision."
+msgstr "RGBA16F. Високий динамічний діапазон, висока точність."
+
+msgid "Depth precision"
+msgstr "Точність вимірювання глибини"
+
+msgid "24-bit without reverse Z. Medium precision."
+msgstr "24 біти без зворотного знака Z. Середня точність."
+
+msgid "24-bit with reverse Z. Medium precision."
+msgstr "24 біти з оберненим знаком Z. Середня точність."
+
+msgid "32-bit with reverse Z. Good precision."
+msgstr "32-бітна з оберненим знаком Z. Висока точність."
+
+msgid "Debanding"
+msgstr "Зняття пов'язки"
+
 msgid "Variable rate shading"
 msgstr "Затінення зі змінною швидкістю"
 
@@ -650,6 +696,9 @@ msgstr "Режими Adaptive і Mailbox VSync"
 
 msgid "2D HDR Viewport"
 msgstr "Вікно перегляду 2D HDR"
+
+msgid "HDR output"
+msgstr "Вихід HDR"
 
 msgid "RenderingDevice access"
 msgstr "Доступ RenderingDevice"

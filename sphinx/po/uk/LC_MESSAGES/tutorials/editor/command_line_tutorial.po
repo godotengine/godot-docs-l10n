@@ -326,6 +326,13 @@ msgstr ""
 msgid "``--rendering-method <renderer>``"
 msgstr "``--rendering-method <renderer>``"
 
+msgid ""
+"|release| Renderer name. Valid values are ``forward_plus``, ``mobile``, and "
+"``gl_compatibility``. Requires driver support."
+msgstr ""
+"|release| Назва рендерера. Допустимі значення: ``forward_plus``, ``mobile`` "
+"та ``gl_compatibility``. Потрібна підтримка драйвера."
+
 msgid "``--rendering-driver <driver>``"
 msgstr "``--rendering-driver <драйвер>``"
 
@@ -338,6 +345,14 @@ msgstr ""
 
 msgid "``--gpu-index <device_index>``"
 msgstr "``--gpu-index <індекс_пристрою>``"
+
+msgid ""
+"|release| Use a specific GPU (only available on the Forward+/Mobile "
+"renderers; run with ``--verbose`` to get available device list)."
+msgstr ""
+"|release| Використовувати певний графічний процесор (доступно лише для "
+"рендерерів Forward+/Mobile; для перегляду списку доступних пристроїв "
+"запустіть програму з параметром ``--verbose``)."
 
 msgid "``--text-driver <driver>``"
 msgstr "``--text-driver <драйвер>``"

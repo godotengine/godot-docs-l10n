@@ -385,6 +385,14 @@ msgstr ""
 "当前官方 FFmpeg 版本的 Ogg/Theora 复用器存在若干缺陷，强烈建议使用最新每日构"
 "建静态版本或基于 master 分支自行编译以获取修复。"
 
+msgid ""
+"On Windows, make sure to use 32-bit builds of FFmpeg. Windows 64-bit builds "
+"have known issues with Theora encoding, which result in artifacts in the "
+"output file."
+msgstr ""
+"在 Windows 系统上，请务必使用 FFmpeg 的 32 位版本。因为 Windows 的 64 位版本"
+"在 Theora 编码方面存在已知问题，会导致输出的文件出现画面瑕疵或伪影。"
+
 msgid "Balancing quality and file size"
 msgstr "平衡质量与文件大小"
 

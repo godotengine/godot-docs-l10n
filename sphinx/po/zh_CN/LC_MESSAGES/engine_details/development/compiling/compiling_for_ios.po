@@ -25,6 +25,12 @@ msgstr ""
 msgid "Requirements"
 msgstr "需求"
 
+msgid "`Python 3.9+ <https://www.python.org/downloads/macos/>`_."
+msgstr "`Python 3.9+ <https://www.python.org/downloads/macos/>`_。"
+
+msgid "`SCons 4.4+ <https://scons.org/pages/download.html>`_ build system."
+msgstr "`SCons 4.4+ <https://scons.org/pages/download.html>`_ 构建系统。"
+
 msgid "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_."
 msgstr "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_\\ 。"
 
@@ -119,6 +125,16 @@ msgstr ""
 "一旦创建完成，MoltenVK 的静态 ``.xcframework`` 文件夹也必须被放入 "
 "``ios_xcode`` 文件夹中。在 iOS 平台上，MoltenVK 始终采用静态链接；与 macOS 不"
 "同，iOS 上并没有提供动态链接的选项。"
+
+msgid "The iOS simulator only supports the ``Compatibility`` renderer."
+msgstr "iOS 模拟器仅支持 ``兼容`` 渲染器。"
+
+msgid ""
+"Apple Silicon Macs can run iOS apps natively, so you can run exported iOS "
+"projects directly on an Apple Silicon Mac without iOS simulator limitations."
+msgstr ""
+"搭载 Apple Silicon 芯片的 Mac 电脑可以原生运行 iOS 应用，因此你可以直接在 "
+"Apple Silicon Mac 上运行导出的 iOS 项目，而完全不受 iOS 模拟器的各种限制。"
 
 msgid "Run"
 msgstr "运行"

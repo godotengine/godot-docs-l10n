@@ -287,6 +287,15 @@ msgstr "Завжди ``false``."
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgstr "In vec2 **TEXTURE_PIXEL_SIZE**"
 
+msgid ""
+"Normalized pixel size of the default 2D texture. For a Sprite2D with a "
+"texture of size 64×32 pixels, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / 64.0, "
+"1.0 / 32.0)``."
+msgstr ""
+"Нормований розмір пікселя стандартної 2D-текстури. Для Sprite2D із текстурою "
+"розміром 64×32 пікселі ``TEXTURE_PIXEL_SIZE`` дорівнює ``vec2(1.0 / 64.0, "
+"1.0 / 32.0)``."
+
 msgid "inout vec2 **VERTEX**"
 msgstr "Inout vec2 **VERTEX**"
 
@@ -417,6 +426,15 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "In vec4 **FRAGCOORD**"
 
+msgid ""
+"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
+"viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``. Bottom-"
+"right of the viewport is ``(1.0, 1.0)``."
+msgstr ""
+"Координати центру пікселя. У просторі екрана. ``xy`` визначає положення у "
+"вікні перегляду. Лівий верхній кут вікна перегляду є початком координат, "
+"``(0.0, 0.0)``. Правий нижній кут вікна перегляду — ``(1.0, 1.0)``."
+
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "In vec2 **SCREEN_PIXEL_SIZE**"
 
@@ -426,8 +444,26 @@ msgstr "Розмір окремих пікселів. Дорівнює обер�
 msgid "in vec4 **REGION_RECT**"
 msgstr "in vec4 **REGION_RECT**"
 
+msgid ""
+"Visible area of the sprite region in format ``(x, y, width, height)``. "
+"Varies according to Sprite2D's ``region_enabled`` property. Values are "
+"normalized; for example, a 600×400 region on a 1000×800 texture with a "
+"100×100 offset would be ``vec4(0.1, 0.125, 0.6, 0.5)``. Values may exceed "
+"the 0.0 to 1.0 range if the X/Y offset is negative, or if the size exceeds "
+"the texture's size."
+msgstr ""
+"Видима область спрайту у форматі ``(x, y, width, height)``. Значення "
+"залежить від властивості ``region_enabled`` класу Sprite2D. Значення "
+"нормалізовані; наприклад, область розміром 600×400 на текстурі 1000×800 зі "
+"зміщенням 100×100 буде ``vec4(0.1, 0.125, 0.6, 0.5)``. Значення можуть "
+"виходити за межі діапазону від 0,0 до 1,0, якщо зміщення по осях X/Y є "
+"від’ємним або якщо розмір перевищує розмір текстури."
+
 msgid "in vec2 **POINT_COORD**"
 msgstr "In vec2 **POINT_COORD**"
+
+msgid "Coordinate for drawing points in the 0.0 to 1.0 range."
+msgstr "Координати точок на кресленні в діапазоні від 0,0 до 1,0."
 
 msgid "sampler2D **TEXTURE**"
 msgstr "Sampler2D **TEXTURE**"
@@ -585,6 +621,13 @@ msgstr "UV від функції ``vertex()``, еквівалентне UV у ф
 
 msgid "Current texture in use for the CanvasItem."
 msgstr "Поточна текстура, що використовується для CanvasItem."
+
+msgid ""
+"Normalized pixel size of ``TEXTURE``. For a Sprite2D with a ``TEXTURE`` of "
+"size 64×32 pixels, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / 64.0, 1.0 / 32.0)``."
+msgstr ""
+"Нормований розмір пікселя ``TEXTURE``. Для Sprite2D із ``TEXTURE`` розміром "
+"64×32 пікселі ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / 64.0, 1.0 / 32.0)``."
 
 msgid "UV for Point Sprite."
 msgstr "УФ для точкового спрайта."

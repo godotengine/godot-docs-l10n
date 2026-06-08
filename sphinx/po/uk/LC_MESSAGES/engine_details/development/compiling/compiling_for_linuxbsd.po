@@ -35,6 +35,13 @@ msgstr ""
 msgid "GCC 9+ or Clang 6+."
 msgstr "GCC 9+ або Clang 6+."
 
+msgid "`Python 3.9+ <https://www.python.org/downloads/>`_."
+msgstr "`Python 3.9+ <https://www.python.org/downloads/>`_."
+
+msgid "`SCons 4.4+ <https://scons.org/pages/download.html>`_ build system."
+msgstr ""
+"`SCons 4.4+ <https://scons.org/pages/download.html>`_ системний збірки."
+
 msgid "pkg-config (used to detect the development libraries listed below)."
 msgstr ""
 "pkg-config (використовується для виявлення бібліотек розробки, перелічених "
@@ -550,6 +557,14 @@ msgid ""
 msgstr ""
 "Щойно побудова буде завершена, в теці ``bin/`` буде створений новий бінарний "
 "файл із суфіксом ``.llvm``."
+
+msgid ""
+"It's still recommended to use GCC for production builds as it's the compiler "
+"used for official builds and is more rigorously tested."
+msgstr ""
+"Для виробничих збірок все ж рекомендується використовувати GCC, оскільки "
+"саме цей компілятор застосовується для офіційних збірок і проходить більш "
+"ретельне тестування."
 
 msgid "If this error occurs:"
 msgstr "Якщо виникає ця помилка:"
