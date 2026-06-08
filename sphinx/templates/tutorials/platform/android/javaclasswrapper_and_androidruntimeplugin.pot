@@ -40,69 +40,77 @@ msgid "JavaClassWrapper (Godot singleton)"
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:32
-msgid "``JavaClassWrapper`` is a :ref:`Godot singleton <class_JavaClassWrapper>` which allows creating instances of Java / Kotlin classes and calling methods on them using only GDScript, C# or GDExtension."
+msgid "``JavaClassWrapper`` is a :ref:`Godot singleton <class_JavaClassWrapper>` which allows creating instances of Java / Kotlin classes, implementing Java / Kotlin interfaces, and calling methods on them using only GDScript, C# or GDExtension."
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:45
 msgid "In the code snippet above, ``JavaClassWrapper`` is used from GDScript to access the Java ``LocalDateTime`` and ``DateTimeFormatter`` classes. Through ``JavaClassWrapper``, we can call the Java classes methods directly from GDScript as if they were GDScript methods."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:49
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:58
+msgid "In the code snippet above, ``JavaClassWrapper`` is used to implement the Java ``android.util.Printer`` interface from GDScript using a :ref:`Object<class_Object>` as the implementation. The instantiated proxy can then be passed to Java methods that accept a ``android.util.Printer`` parameter."
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:61
+msgid "Check out the :ref:`JavaClassWrapper documentation <class_JavaClassWrapper>` to learn more about its API."
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:64
 msgid "AndroidRuntime plugin"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:51
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:66
 msgid "``JavaClassWrapper`` is great, but to do many things on Android, you need access to various Android lifecycle / runtime objects. ``AndroidRuntime`` plugin is a `built-in Godot Android plugin <https://javadoc.io/doc/org.godotengine/godot/latest/org/godotengine/godot/plugin/AndroidRuntimePlugin.html>`_ that allows you to do this."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:54
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:69
 msgid "Combining ``JavaClassWrapper`` and ``AndroidRuntime`` plugin allows developers to access and use Android APIs without switching away from GDScript, or using any tools aside from Godot itself. This is **huge** for the adoption of Godot for Android development:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:57
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:72
 msgid "If you need to do something simple, or only use a small part of a third-party library, you don't have to make a plugin"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:58
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:73
 msgid "It allows developers to quickly integrate Android functionality"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:59
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:74
 msgid "It allows developers to create Godot addons using only GDScript and ``JavaClassWrapper`` (no Java or Kotlin needed)"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:63
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:78
 msgid "For exports using ``gradle``, Godot will automatically include ``.jar`` or ``.aar`` files it find in the project ``addons`` directory. So to use a third-party library, you can just drop its ``.jar`` or ``.aar`` file in the ``addons`` directory, and call its method directly from GDScript using ``JavaClassWrapper``."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:67
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:82
 msgid "Example: Show an Android toast"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:87
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:102
 msgid "Example: Vibrate the device"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:103
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:118
 msgid "Example: Accessing inner classes"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:105
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:120
 msgid "Java inner classes can be accessed using the ``$`` sign:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:118
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:133
 msgid "Example: Calling a constructor"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:120
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:135
 msgid "A constructor is invoked by calling a method with the same name as the class."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:122
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:137
 msgid "This example creates an intent to send a text:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:138
+#: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:153
 msgid "Example: Saving an image to the Android gallery"
 msgstr ""
