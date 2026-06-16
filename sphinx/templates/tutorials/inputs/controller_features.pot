@@ -35,154 +35,154 @@ msgstr ""
 msgid "As a result, we suggest using these features to enhance the gameplay experience for players whose controllers support them, without detracting from those who don't have controllers."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:27
+#: ../../docs/tutorials/inputs/controller_features.rst:28
 msgid "LED color"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:29
+#: ../../docs/tutorials/inputs/controller_features.rst:30
 msgid "Games can use the LED lights on certain controllers to subtly complement the on-screen gameplay by providing some matching visuals in the player's hands. Here are some notable examples:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:32
+#: ../../docs/tutorials/inputs/controller_features.rst:33
 msgid "In *Hades*, the color of the light matches the god you're receiving a boon from."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:33
+#: ../../docs/tutorials/inputs/controller_features.rst:34
 msgid "In *Resident Evil 2*, the color of the light indicates your health (green for full, yellow for medium, red for low)."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:34
+#: ../../docs/tutorials/inputs/controller_features.rst:35
 msgid "In *Star Wars Jedi: Fallen Order*, the color of the light matches your lightsaber's color."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:36
+#: ../../docs/tutorials/inputs/controller_features.rst:37
 msgid "Use the method :ref:`Input.set_joy_light()<class_Input_method_set_joy_light>` to set the color of a given controller's LEDs."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:39
+#: ../../docs/tutorials/inputs/controller_features.rst:40
 msgid "To determine if a given controller supports setting LED lights, use the :ref:`Input.has_joy_light()<class_Input_method_has_joy_light>` method. The PlayStation DualShock and DualSense controllers are known to support LED lights."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:42
+#: ../../docs/tutorials/inputs/controller_features.rst:43
 msgid "The following ``_process()`` method sets the LED color according to the currently pressed button, and turns it off if no button is being pressed:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:62
+#: ../../docs/tutorials/inputs/controller_features.rst:63
 msgid "The following example smoothly fades the LED through hues in a loop:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:73
+#: ../../docs/tutorials/inputs/controller_features.rst:74
 msgid "The following example makes the LED blink red three times when the south button (Cross/X on PlayStation controllers) is pressed:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:96
+#: ../../docs/tutorials/inputs/controller_features.rst:99
 msgid "Motion sensors (gyroscope and accelerometer)"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:98
+#: ../../docs/tutorials/inputs/controller_features.rst:101
 msgid "With motion controls, games can track the controller's physical rotation and movement. This can be used to let the player turn the in-game camera by moving their controller, or shaking their controller to perform a special action."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:101
+#: ../../docs/tutorials/inputs/controller_features.rst:104
 msgid "There are several controller brands that have implemented gyroscope and accelerometer sensors into their modern controllers, the biggest two being PlayStation and Nintendo. Note that the Xbox controllers don't have motion sensors inside of them."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:105
+#: ../../docs/tutorials/inputs/controller_features.rst:108
 msgid "To check if a connected controller has motion sensors, use :ref:`Input.has_joy_motion_sensors()<class_Input_method_has_joy_motion_sensors>`."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:107
+#: ../../docs/tutorials/inputs/controller_features.rst:110
 msgid "Motion sensors are disabled by default to avoid draining the controller battery when games don't use those features. To enable them, call :ref:`Input.set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:110
+#: ../../docs/tutorials/inputs/controller_features.rst:113
 msgid "Note that the axes of the values that controller's motion sensors report are always relative to the controller's natural orientation. Here's an image of the axes mapping for more clarity:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:115
+#: ../../docs/tutorials/inputs/controller_features.rst:118
 msgid "The controller's gyroscope values show rotation around their respective axes:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:117
+#: ../../docs/tutorials/inputs/controller_features.rst:120
 msgid "the X value of the gyroscope data shows the rotation around the X axis (roll)."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:118
+#: ../../docs/tutorials/inputs/controller_features.rst:121
 msgid "the Y value of the gyroscope data shows the rotation around the Y axis (yaw)."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:119
+#: ../../docs/tutorials/inputs/controller_features.rst:122
 msgid "the Z value of the gyroscope data shows the rotation around the Z axis (pitch)."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:121
+#: ../../docs/tutorials/inputs/controller_features.rst:124
 msgid "The controller's accelerometer will provide values in the following ways, respectively:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:123
+#: ../../docs/tutorials/inputs/controller_features.rst:126
 msgid "Movement left and right are reported as **+X** and **-X**."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:124
+#: ../../docs/tutorials/inputs/controller_features.rst:127
 msgid "Movement down and up are reported as **+Y** and **-Y**."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:125
+#: ../../docs/tutorials/inputs/controller_features.rst:128
 msgid "Movement away from and towards the user are reported as **+Z** and **-Z**."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:128
+#: ../../docs/tutorials/inputs/controller_features.rst:131
 msgid "Gyroscope"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:130
+#: ../../docs/tutorials/inputs/controller_features.rst:133
 msgid "A **gyroscope** is a type of sensor that detects the controller's rotation. Here are some notable examples of gyroscope use in games:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:133
+#: ../../docs/tutorials/inputs/controller_features.rst:136
 msgid "In *Helldivers 2*, *Horizon Forbidden West*, *Star Wars: Dark Forces Remaster*, and *Fortnite*, tilting the controller causes the camera to rotate accordingly (\"gyro aiming\"). `This video by *Daven On The Moon* <https://www.youtube.com/watch?v=Vlfg9yku2hY>`_ demonstrates and discusses gyro aiming in more detail."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:136
+#: ../../docs/tutorials/inputs/controller_features.rst:139
 msgid "In *Death Stranding*, BB can be soothed by rotating the controller softly."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:138
+#: ../../docs/tutorials/inputs/controller_features.rst:141
 msgid "The following example rotates an object using a controller's gyroscope sensor. You can also access this example by taking a look at the :ref:`Input.start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` documentation."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:183
+#: ../../docs/tutorials/inputs/controller_features.rst:186
 msgid "Note that before using the gyroscope's data, we must first calibrate it by calling :ref:`Input.start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` and :ref:`Input.stop_joy_motion_sensors_calibration()<class_Input_method_stop_joy_motion_sensors_calibration>`. That's because modern gyroscopes often need calibration. This is like how a weighing scale can need calibration to tell it what \"zero\" is. Like a weighing scale, only a correctly calibrated gyroscope will give an accurate reading. During calibration, the user sets the controller down on a flat surface. The controller then determines what values its gyroscope reports when it is actually not moving at all (its \"bias\"), and uses this information to make its rotation data more accurate."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:191
+#: ../../docs/tutorials/inputs/controller_features.rst:194
 msgid "See `the article on GyroWiki <http://gyrowiki.jibbsmart.com/blog:good-gyro-controls-part-1:the-gyro-is-a-mouse>`__ for information on how to use gyroscope input as a mouse."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:194
+#: ../../docs/tutorials/inputs/controller_features.rst:197
 msgid "After the controller's gyroscope has been enabled and correctly calibrated, you can read its reported values by using :ref:`Input.get_joy_gyroscope()<class_Input_method_get_joy_gyroscope>`."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:198
+#: ../../docs/tutorials/inputs/controller_features.rst:201
 msgid "Accelerometer"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:202
+#: ../../docs/tutorials/inputs/controller_features.rst:205
 msgid "Do not use accelerometer data to find the controller's position in 3D space; the accelerometers in general are not precise enough for this."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:205
+#: ../../docs/tutorials/inputs/controller_features.rst:208
 msgid "An **accelerometer** is a type of sensor that detects a controller's acceleration in m/s². For example, it can detect if the player quickly raises their controller, moves it to the side, or shakes it."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:208
+#: ../../docs/tutorials/inputs/controller_features.rst:211
 msgid "The acceleration that an accelerometer detects includes gravity by default. To get *only* the acceleration imparted by the user, subtract gravity from the detected acceleration:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:215
+#: ../../docs/tutorials/inputs/controller_features.rst:218
 msgid "Due to how accelerometers work physically, after movement in one direction stops they almost immediately report movement in the opposite direction. After detecting movement in one direction, you may want to ignore further readings for a small period of time to avoid detecting this opposite movement."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controller_features.rst:220
+#: ../../docs/tutorials/inputs/controller_features.rst:223
 msgid "The following example prints the controller movement when it's being quickly moved by using its accelerometer. If the sensitivity doesn't feel right for you, you can tweak the ``THRESHOLD`` constant or you can replace it by using a different value in the code below."
 msgstr ""

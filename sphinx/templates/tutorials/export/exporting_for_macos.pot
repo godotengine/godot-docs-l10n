@@ -90,7 +90,7 @@ msgid "To notarize exported app"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:63
-msgid "Select ``Xcode altool`` in the ``Notarization > Notarization`` option."
+msgid "Select ``Xcode notarytool`` in the ``Notarization > Notarization`` option."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:64
@@ -119,11 +119,11 @@ msgid "If you have an Apple Developer ID Certificate and exporting from Linux or
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:76
-msgid "Install `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/tree/main/apple-codesign>`__, and configure the path to ``rcodesign`` in the ``Editor Settings > Export > macOS > rcodesign``."
+msgid "Install `rcodesign <https://github.com/indygreg/apple-platform-rs/tree/main/apple-codesign>`__, and configure the path to ``rcodesign`` in the ``Editor Settings > Export > macOS > rcodesign`` option."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:81
-msgid "Select ``PyOxidizer rcodesign`` in the ``Code Signing > Codesign`` option."
+msgid "Select ``rcodesign`` in the ``Code Signing > Codesign`` option."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:82
@@ -131,7 +131,7 @@ msgid "Set valid Apple ID PKCS #12 certificate file and password in the ``Code S
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:87
-msgid "Select ``PyOxidizer rcodesign`` in the ``Notarization > Notarization`` option."
+msgid "Select ``rcodesign`` in the ``Notarization > Notarization`` option."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:89
@@ -223,7 +223,7 @@ msgid "This option is visible only when signing with Xcode codesign."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:122
-msgid "These options are visible only when signing with PyOxidizer rcodesign."
+msgid "These options are visible only when signing with rcodesign."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:125
@@ -283,7 +283,7 @@ msgid "You should set either Apple ID Name/Password or App Store Connect API UUI
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:147
-msgid "These options are visible only when notarizing with Xcode altool."
+msgid "These options are visible only when notarizing with Xcode notarytool."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:149

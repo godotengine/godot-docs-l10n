@@ -115,215 +115,215 @@ msgstr ""
 msgid "`SOLID: <https://en.wikipedia.org/wiki/SOLID>`_"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:340
+#: ../../docs/tutorials/best_practices/scene_organization.rst:341
 msgid "`Single responsibility <https://en.wikipedia.org/wiki/Single-responsibility_principle>`_"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:341
+#: ../../docs/tutorials/best_practices/scene_organization.rst:342
 msgid "`Open for extension, closed for modification <https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle>`_"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:342
+#: ../../docs/tutorials/best_practices/scene_organization.rst:343
 msgid "`Liskov substitution <https://en.wikipedia.org/wiki/Liskov_substitution_principle>`_"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:343
+#: ../../docs/tutorials/best_practices/scene_organization.rst:344
 msgid "`Interface segregation <https://en.wikipedia.org/wiki/Interface_segregation_principle>`_"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:344
+#: ../../docs/tutorials/best_practices/scene_organization.rst:345
 msgid "`Dependency inversion <https://en.wikipedia.org/wiki/Dependency_inversion_principle>`_"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:345
+#: ../../docs/tutorials/best_practices/scene_organization.rst:347
 msgid "`DRY: Don't Repeat Yourself <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:346
+#: ../../docs/tutorials/best_practices/scene_organization.rst:348
 msgid "`KISS: Keep It Simple Stupid <https://en.wikipedia.org/wiki/KISS_principle>`_"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:347
+#: ../../docs/tutorials/best_practices/scene_organization.rst:349
 msgid "`YAGNI: You Aren't Gonna Need It <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:350
+#: ../../docs/tutorials/best_practices/scene_organization.rst:352
 msgid "Choosing a node tree structure"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:352
+#: ../../docs/tutorials/best_practices/scene_organization.rst:354
 msgid "You might start to work on a game but get overwhelmed by the vast possibilities before you. You might know what you want to do, what systems you want to have, but *where* do you put them all? How you go about making your game is always up to you. You can construct node trees in countless ways. If you are unsure, this guide can give you a sample of a decent structure to start with."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:359
+#: ../../docs/tutorials/best_practices/scene_organization.rst:361
 msgid "A game should always have an \"entry point\"; somewhere you can definitively track where things begin so that you can follow the logic as it continues elsewhere. It also serves as a bird's eye view of all other data and logic in the program. For traditional applications, this is normally a \"main\" function. In Godot, it's a Main node."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:365
-#: ../../docs/tutorials/best_practices/scene_organization.rst:373
+#: ../../docs/tutorials/best_practices/scene_organization.rst:367
+#: ../../docs/tutorials/best_practices/scene_organization.rst:375
 msgid "Node \"Main\" (main.gd)"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:367
+#: ../../docs/tutorials/best_practices/scene_organization.rst:369
 msgid "The ``main.gd`` script will serve as the primary controller of your game."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:369
+#: ../../docs/tutorials/best_practices/scene_organization.rst:371
 msgid "Then you have an in-game \"World\" (a 2D or 3D one). This can be a child of Main. In addition, you will need a primary GUI for your game that manages the various menus and widgets the project needs."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:374
+#: ../../docs/tutorials/best_practices/scene_organization.rst:377
 msgid "Node2D/Node3D \"World\" (game_world.gd)"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:375
+#: ../../docs/tutorials/best_practices/scene_organization.rst:378
 msgid "Control \"GUI\" (gui.gd)"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:377
+#: ../../docs/tutorials/best_practices/scene_organization.rst:380
 msgid "When changing levels, you can then swap out the children of the \"World\" node. :ref:`Changing scenes manually <doc_change_scenes_manually>` gives you full control over how your game world transitions."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:381
+#: ../../docs/tutorials/best_practices/scene_organization.rst:384
 msgid "The next step is to consider what gameplay systems your project requires. If you have a system that..."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:384
+#: ../../docs/tutorials/best_practices/scene_organization.rst:387
 msgid "tracks all of its data internally"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:385
+#: ../../docs/tutorials/best_practices/scene_organization.rst:388
 msgid "should be globally accessible"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:386
+#: ../../docs/tutorials/best_practices/scene_organization.rst:389
 msgid "should exist in isolation"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:388
+#: ../../docs/tutorials/best_practices/scene_organization.rst:391
 msgid "... then you should create an :ref:`autoload 'singleton' node <doc_singletons_autoload>`."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:392
+#: ../../docs/tutorials/best_practices/scene_organization.rst:395
 msgid "For smaller games, a simpler alternative with less control would be to have a \"Game\" singleton that simply calls the :ref:`SceneTree.change_scene_to_file() <class_SceneTree_method_change_scene_to_file>` method to swap out the main scene's content. This structure more or less keeps the \"World\" as the main game node."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:398
+#: ../../docs/tutorials/best_practices/scene_organization.rst:401
 msgid "Any GUI would also need to be either a singleton, a transitory part of the \"World\", or manually added as a direct child of the root. Otherwise, the GUI nodes would also delete themselves during scene transitions."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:402
+#: ../../docs/tutorials/best_practices/scene_organization.rst:405
 msgid "If you have systems that modify other systems' data, you should define those as their own scripts or scenes, rather than autoloads. For more information, see :ref:`Autoloads versus regular nodes <doc_autoloads_versus_regular_nodes>`."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:406
+#: ../../docs/tutorials/best_practices/scene_organization.rst:409
 msgid "Each subsystem within your game should have its own section within the SceneTree. You should use parent-child relationships only in cases where nodes are effectively elements of their parents. Does removing the parent reasonably mean that the children should also be removed? If not, then it should have its own place in the hierarchy as a sibling or some other relation."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:414
+#: ../../docs/tutorials/best_practices/scene_organization.rst:417
 msgid "In some cases, you need these separated nodes to *also* position themselves relative to each other. You can use the :ref:`RemoteTransform <class_RemoteTransform3D>` / :ref:`RemoteTransform2D <class_RemoteTransform2D>` nodes for this purpose. They will allow a target node to conditionally inherit selected transform elements from the Remote\\* node. To assign the ``target`` :ref:`NodePath <class_NodePath>`, use one of the following:"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:422
+#: ../../docs/tutorials/best_practices/scene_organization.rst:425
 msgid "A reliable third party, likely a parent node, to mediate the assignment."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:423
+#: ../../docs/tutorials/best_practices/scene_organization.rst:426
 msgid "A group, to pull a reference to the desired node (assuming there will only ever be one of the targets)."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:426
+#: ../../docs/tutorials/best_practices/scene_organization.rst:429
 msgid "When you should do this is subjective. The dilemma arises when you must micro-manage when a node must move around the SceneTree to preserve itself. For example..."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:430
+#: ../../docs/tutorials/best_practices/scene_organization.rst:433
 msgid "Add a \"player\" node to a \"room\"."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:431
+#: ../../docs/tutorials/best_practices/scene_organization.rst:434
 msgid "Need to change rooms, so you must delete the current room."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:432
+#: ../../docs/tutorials/best_practices/scene_organization.rst:435
 msgid "Before the room can be deleted, you must preserve and/or move the player."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:434
+#: ../../docs/tutorials/best_practices/scene_organization.rst:437
 msgid "If memory is not a concern, you can..."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:436
+#: ../../docs/tutorials/best_practices/scene_organization.rst:439
 msgid "Create the new room."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:437
+#: ../../docs/tutorials/best_practices/scene_organization.rst:440
 msgid "Move the player to the new room."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:438
+#: ../../docs/tutorials/best_practices/scene_organization.rst:441
 msgid "Delete the old room."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:440
+#: ../../docs/tutorials/best_practices/scene_organization.rst:443
 msgid "If memory is a concern, instead you will need to..."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:442
+#: ../../docs/tutorials/best_practices/scene_organization.rst:445
 msgid "Move the player somewhere else in the tree."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:443
+#: ../../docs/tutorials/best_practices/scene_organization.rst:446
 msgid "Delete the room."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:444
+#: ../../docs/tutorials/best_practices/scene_organization.rst:447
 msgid "Instantiate and add the new room."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:445
+#: ../../docs/tutorials/best_practices/scene_organization.rst:448
 msgid "Re-add the player to the new room."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:447
+#: ../../docs/tutorials/best_practices/scene_organization.rst:450
 msgid "The issue is that the player here is a \"special case\" where the developers must *know* that they need to handle the player this way for the project. The only way to reliably share this information as a team is to *document* it. Keeping implementation details in documentation is dangerous. It's a maintenance burden, strains code readability, and unnecessarily bloats the intellectual content of a project."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:454
+#: ../../docs/tutorials/best_practices/scene_organization.rst:457
 msgid "In a more complex game with larger assets, it can be a better idea to keep the player somewhere else in the SceneTree entirely. This results in:"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:457
+#: ../../docs/tutorials/best_practices/scene_organization.rst:460
 msgid "More consistency."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:458
+#: ../../docs/tutorials/best_practices/scene_organization.rst:461
 msgid "No \"special cases\" that must be documented and maintained somewhere."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:459
+#: ../../docs/tutorials/best_practices/scene_organization.rst:462
 msgid "No opportunity for errors to occur because these details are not accounted for."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:462
+#: ../../docs/tutorials/best_practices/scene_organization.rst:465
 msgid "In contrast, if you ever need a child node that does *not* inherit the transform of its parent, you have the following options:"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:465
+#: ../../docs/tutorials/best_practices/scene_organization.rst:468
 msgid "The **declarative** solution: place a :ref:`Node <class_Node>` in between them. Since it doesn't have a transform, they won't pass this information to its children."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:468
+#: ../../docs/tutorials/best_practices/scene_organization.rst:471
 msgid "The **imperative** solution: Use the ``top_level`` property for the :ref:`CanvasItem <class_CanvasItem_property_top_level>` or :ref:`Node3D <class_Node3D_property_top_level>` node. This will make the node ignore its inherited transform."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:475
+#: ../../docs/tutorials/best_practices/scene_organization.rst:478
 msgid "If building a networked game, keep in mind which nodes and gameplay systems are relevant to all players versus those just pertinent to the authoritative server. For example, users do not all need to have a copy of every players' \"PlayerController\" logic - they only need their own. Keeping them in a separate branch from the \"world\" can help simplify the management of game connections and the like."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:482
+#: ../../docs/tutorials/best_practices/scene_organization.rst:485
 msgid "The key to scene organization is to consider the SceneTree in relational terms rather than spatial terms. Are the nodes dependent on their parent's existence? If not, then they can thrive all by themselves somewhere else. If they are dependent, then it stands to reason that they should be children of that parent (and likely part of that parent's scene if they aren't already)."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/scene_organization.rst:488
+#: ../../docs/tutorials/best_practices/scene_organization.rst:491
 msgid "Does this mean nodes themselves are components? Not at all. Godot's node trees form an aggregation relationship, not one of composition. But while you still have the flexibility to move nodes around, it is still best when such moves are unnecessary by default."
 msgstr ""

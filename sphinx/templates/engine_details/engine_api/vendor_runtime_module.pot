@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:4
+msgid "Vendor Runtime Module"
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:6
+msgid "A Vendor Runtime Module is a :ref:`Godot module <doc_custom_modules_in_cpp>` which is only applicable at runtime in a running project. It is created like a regular :ref:`custom C++ module <doc_custom_modules_in_cpp>`, but is packaged using an :ref:`editor plugin <doc_making_plugins>` to make the functionality it provides easily accessible and usable within a *stock* Godot project."
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:13
+msgid "What for?"
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:15
+msgid "Vendor runtime modules provide developers with access to vendor-specific optimizations, features, and/or platforms for their running projects."
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:18
+msgid "This provides benefits to vendors who are able to expose their technologies to all developers, and improve and refine them in a rapid, iterative, and frictionless manner. This also provides benefits to developers and users who are able to access and use a diverse range of vendor technologies to improve their games."
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:24
+msgid "Creating a vendor runtime module"
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:27
+msgid "Generating export templates"
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:29
+msgid "Make sure to follow the :ref:`instructions for creating a custom C++ module <doc_creating_custom_modules_in_cpp>`."
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:31
+msgid "Since this is a runtime module whose functionality is meant to only be accessed from the running project, you must generate an export template for every platform you plan to support. See the :ref:`Compiling <toc-devel-compiling>` pages for more information."
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:36
+msgid "Creating the wrapper editor plugin"
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:38
+msgid "Once the export templates are generated, you must create an editor plugin to package them and make them easily accessible to end users via the `Godot Asset Store <https://store.godotengine.org/>`_."
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:41
+msgid "Follow :ref:`these instructions <doc_making_plugins_template>` to start creating the plugin. Your base plugin script should look like the following:"
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:59
+msgid "The next step is to define and instantiate an :ref:`EditorExportPlugin<class_EditorExportPlugin>` instance. The :ref:`EditorExportPlugin<class_EditorExportPlugin>` instance is used to hook into the export flow and replace the default export templates with the ones generated from the vendor runtime module."
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:63
+msgid "Using our base editor plugin template code above, an example implementation looks like this:"
+msgstr ""
+
+#: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:115
+msgid "This section covers the basics to wrap and expose a vendor runtime module via an editor plugin, but editor plugins have a lot more functionality that can be used to customize the editor further. Feel free to :ref:`explore and leverage those functionalities <toc-tutorials-plugins>` to improve the user experience for your vendor runtime module."
+msgstr ""

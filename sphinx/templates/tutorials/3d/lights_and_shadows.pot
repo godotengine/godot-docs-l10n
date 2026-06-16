@@ -199,427 +199,427 @@ msgstr ""
 msgid "**Note on Appearance Changes**: When enabling shadows on a light, be aware that the light's appearance might change compared to when it's rendered without shadows in the compatibility renderer. Due to limitations with older mobile devices, shadows are implemented using a multi-pass rendering approach so lights with shadows are rendered in sRGB space instead of linear space. This change in rendering space can sometimes drastically alter the light's appearance. To achieve a similar appearance to an unshadowed light, you may need to adjust the light's energy setting."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:174
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:176
 msgid "Directional light"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:176
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:178
 msgid "This is the most common type of light and represents a light source very far away (such as the sun). It is also the cheapest light to compute and should be used whenever possible (although it's not the cheapest shadow-map to compute, but more on that later)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:181
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:183
 msgid "Directional light models an infinite number of parallel light rays covering the whole scene. The directional light node is represented by a big arrow which indicates the direction of the light rays. However, the position of the node does not affect the lighting at all and can be anywhere."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:188
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:190
 msgid "Every face whose front-side is hit by the light rays is lit, while the others stay dark. Unlike most other light types, directional lights don't have specific parameters."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:192
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:194
 msgid "The directional light also offers an **Angular Distance** property, which determines the light's angular size in degrees. Increasing this above ``0.0`` will make shadows softer at greater distances from the caster, while also affecting the sun's appearance in procedural sky materials. This is called a *contact-hardening* shadow (also known as PCSS)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:198
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:200
 msgid "For reference, the angular distance of the Sun viewed from the Earth is approximately ``0.5``. This kind of shadow is expensive, so check the recommendations in :ref:`doc_lights_and_shadows_pcss_recommendations` if setting this value above ``0.0`` on lights with shadows enabled."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:204
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:206
 msgid "Directional shadow mapping"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:206
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:208
 msgid "To compute shadow maps, the scene is rendered (only depth) from an orthogonal point of view that covers the whole scene (or up to the max distance). There is, however, a problem with this approach because objects closer to the camera receive low-resolution shadows that may appear blocky."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:211
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:213
 msgid "To fix this, a technique named *Parallel Split Shadow Maps* (PSSM) is used. This splits the view frustum in 2 or 4 areas. Each area gets its own shadow map. This allows small areas close to the viewer to have the same shadow resolution as a huge, far-away area. When shadows are enabled for DirectionalLight3D, the default shadow mode is PSSM with 4 splits. In scenarios where an object is large enough to appear in all four splits, it results in increased draw calls. Specifically, such an object will be rendered five times in total: once for each of the four shadow splits and once for the final scene rendering. This can impact performance, understanding this behavior is important for optimizing your scene and managing performance expectations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:223
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:225
 msgid "With this, shadows become more detailed:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:227
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:229
 msgid "To control PSSM, a number of parameters are exposed:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:231
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:233
 msgid "Each split distance is controlled relative to the camera far (or shadow **Max Distance** if greater than ``0.0``). ``0.0`` is the eye position and ``1.0`` is where the shadow ends at a distance. Splits are in-between. Default values generally work well, but tweaking the first split a bit is common to give more detail to close objects (like a character in a third-person game)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:237
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:239
 msgid "Always make sure to set a shadow **Max Distance** according to what the scene needs. A lower maximum distance will result in better-looking shadows and better performance, as fewer objects will need to be included in shadow rendering. You can also adjust **Fade Start** to control how aggressive the shadow fade-out should be at a distance. For scenes where the **Max Distance** fully covers the scene at any given camera position, you can increase **Fade Start** to ``1.0`` to prevent the shadow from fading at a distance. This should not be done in scenes where **Max Distance** doesn't fully cover the scene, as the shadow will appear to be suddenly cut off at a distance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:247
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:249
 msgid "Sometimes, the transition between a split and the next can look bad. To fix this, the **Blend Splits** option can be turned on, which sacrifices detail and performance in exchange for smoother transitions:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:253
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:255
 msgid "The **Shadow > Normal Bias** parameter can be used to fix special cases of self-shadowing when objects are perpendicular to the light. The only downside is that it makes the shadow a bit thinner. Consider increasing **Shadow > Normal Bias** before increasing **Shadow > Bias** in most situations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:258
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:260
 msgid "Lastly, **Pancake Size** is a property that can be adjusted to fix missing shadows when using large objects with unsubdivided meshes. Only change this value if you notice missing shadows that are not related to shadow biasing issues."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:264
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:268
 msgid "Omni light"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:266
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:270
 msgid "Omni light is a point source that emits light spherically in all directions up to a given radius."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:271
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:275
 msgid "In real life, light attenuation is an inverse function, which means omni lights don't have a radius. This is a problem because it means computing several omni lights would become demanding."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:274
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:278
 msgid "To solve this, a **Range** parameter is introduced together with an attenuation function."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:278
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:282
 msgid "These two parameters allow tweaking how this works visually in order to find aesthetically pleasing results."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:282
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:286
 msgid "A **Size** parameter is also available in OmniLight3D. Increasing this value will make the light fade out slower and shadows appear blurrier when far away from the caster. This can be used to simulate area lights to an extent. This is called a *contact-hardening* shadow (also known as PCSS). This kind of shadow is expensive, so check the recommendations in :ref:`doc_lights_and_shadows_pcss_recommendations` if setting this value above ``0.0`` on lights with shadows enabled."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:293
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:297
 msgid "Omni shadow mapping"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:295
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:299
 msgid "Omni light shadow mapping is relatively straightforward. The main issue that needs to be considered is the algorithm used to render it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:298
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:302
 msgid "Omni Shadows can be rendered as either **Dual Paraboloid** or **Cube** mapped. **Dual Paraboloid** renders quickly, but can cause deformations, while **Cube** is more correct, but slower. The default is **Cube**, but consider changing it to **Dual Paraboloid** for lights where it doesn't make much of a visual difference."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:306
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:310
 msgid "If the objects being rendered are mostly irregular and subdivided, Dual Paraboloid is usually enough. In any case, as these shadows are cached in a shadow atlas (more on that at the end), it may not make a difference in performance for most scenes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:311
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:315
 msgid "Omni lights with shadows enabled can make use of projectors. The projector texture will *multiply* the light's color by the color at a given point on the texture. As a result, lights will usually appear to be darker once a projector texture is assigned; you can increase **Energy** to compensate for this."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:316
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:320
 msgid "Omni light projector textures require a special 360° panorama mapping, similar to :ref:`class_PanoramaSkyMaterial` textures."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:319
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:362
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:323
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:368
 msgid "With the projector texture below, the following result is obtained:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:327
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:331
 msgid "If you've acquired omni projectors in the form of cubemap images, you can use `this web-based conversion tool <https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html>`__ to convert them to a single panorama image."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:332
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:338
 msgid "Spot light"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:334
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:340
 msgid "Spot lights are similar to omni lights, except they emit light only into a cone (or \"cutoff\"). They are useful to simulate flashlights, car lights, reflectors, spots, etc. This type of light is also attenuated towards the opposite direction it points to."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:339
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:345
 msgid "Spot lights share the same **Range**, **Attenuation** and **Size** as OmniLight3D, and add two extra parameters:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:342
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:348
 msgid "**Angle:** The aperture angle of the light."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:343
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:349
 msgid "**Angle Attenuation:** The cone attenuation, which helps soften the cone borders."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:346
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:352
 msgid "Spot shadow mapping"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:348
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:354
 msgid "Spots feature the same parameters as omni lights for shadow mapping. Rendering spot shadow maps is significantly faster compared to omni lights, as only one shadow texture needs to be rendered (instead of rendering 6 faces, or 2 in dual paraboloid mode)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:353
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:359
 msgid "Spot lights with shadows enabled can make use of projectors. The projector texture will *multiply* the light's color by the color at a given point on the texture. As a result, lights will usually appear to be darker once a projector texture is assigned; you can increase **Energy** to compensate for this."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:358
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:364
 msgid "Unlike omni light projectors, a spot light projector texture doesn't need to follow a special format to look correct. It will be mapped in a way similar to a :ref:`decal <doc_using_decals>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:370
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:376
 msgid "Spot lights with wide angles will have lower-quality shadows than spot lights with narrow angles, as the shadow map is spread over a larger surface. At angles wider than 89 degrees, spot light shadows will stop working entirely. If you need shadows for wider lights, use an omni light instead."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:377
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:385
 msgid "Area light"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:379
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:387
 msgid "Sometimes, you want lighting to come from a large area instead of a single point. Area lights are useful for simulating soft, diffuse lighting, such as light coming from a window or a lit billboard."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:383
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:391
 msgid "Godot provides the :ref:`class_AreaLight3D` node for this purpose, which emits light from a rectangular area. The node only emits light and has no other visual representation in the scene. The screenshots below use a :ref:`class_Sprite3D` node as a child of the area light for visualization purposes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:390
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:398
 msgid "This type of light is the most expensive to render in real-time. It should be used sparingly, especially when shadows are enabled. Consider using them only for cinematics or when targeting high-end devices."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:394
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:402
 msgid "In Forward+, as soon as one area light is visible in the view frustum, it incurs an additional performance cost on **all** rendered objects in the scene, even those that are not reached by an area light. This tradeoff allows for a greater number of area lights to be rendered (clustered lighting)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:400
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:408
 msgid "In Mobile and Compatibility, only objects that are reached by an area light incur an additional performance cost."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:403
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:411
 msgid "Area lights can also cast shadows, with variable penumbra simulated using :ref:`PCSS <doc_lights_and_shadows_pcss_recommendations>` by default. The size of this penumbra can be controlled with the Light3D **Size** property. This effect can be quite demanding, so it can be turned off by setting **Size** to ``0.0``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:411
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:419
 msgid "Shadows cast by an area light may look incorrect if the object casting shadows doesn't have enough subdivisions and it's very close to the area light. This is the same limitation as Dual Paraboloid shadow mode on an omni light."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:419
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:427
 msgid "Since area lights are difficult to simulate in a real-time rasterized renderer, they come with a number of limitations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:422
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:430
 msgid "For small light sources, you will likely get better results when using point lights. Shadows from area lights are crude approximations, as they are calculated as if they were point lights, and may appear to be distorted at the edges. To get a better result, make sure the meshes in the light's range are sufficiently subdivided."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:428
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:436
 msgid "Area lights suffer from light leaking on the backside of geometry closely in front of them at grazing angles, so be careful with where you place them."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:431
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:439
 msgid "Lastly, not all material features are fully supported; area lights are practically limited to Lambertian diffuse and GGX specular shading, while anisotropic materials will appear as if isotropic. Vertex shading is also not implemented for area lights."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:436
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:444
 msgid "Area lights emit light in a rectangular area defined by the **Area > Size** property (not to be confused with the generic Light3D **Size** property). To get a physically accurate result, you should resize this area to match the size of the real-life light source you are trying to simulate. For example, if you are simulating a 1-meter neon tube that is 10 centimeters wide, set the area size to ``(1, 0.1)`` and adjust the energy accordingly."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:443
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:451
 msgid "By default, the light's energy is normalized: the larger the area, the weaker the light. This allows you to change the area size without needing to adjust the energy to compensate, which is useful for animation. You can disable this behavior by unchecking **Area > Normalize Energy** if you want the energy to be independent of the area size."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:449
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:457
 msgid "The rectangular area can optionally be textured. This can be effectively used to change the light's shape into any 2D shape, or tint it in different colors. The texture's alpha channel is treated as black (no light coming through). The area light's texture will be visible in reflections according to the surface's roughness. This behavior is different from omni/spot projectors, as it does not project the texture directly onto all diffuse lighting."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:456
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:464
 msgid "When using a textures that are transparent or black toward the edges, you might want to leave a gap of a few pixels to make sure the texture is blurred smoothly."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:464
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:472
 msgid "Changing the area light's texture at runtime can be expensive, especially if the texture is large."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:467
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:475
 msgid "To reduce the performance impact of switching textures at runtime, make sure each dimension of an area texture is either a multiple of 128 pixels, or a power of two. This removes the need for a scaling pass, which slows down texture changes. The textures don't necessarily have to be square to be optimal. Examples of optimal texture sizes include 32×64, 128×128, and 256×384."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:474
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:482
 msgid "Textured area lights are not supported in the Compatibility renderer."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:479
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:487
 msgid "Shadow atlas"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:481
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:489
 msgid "Unlike Directional lights, which have their own shadow texture, omni and spot lights are assigned to slots of a shadow atlas. This atlas can be configured in the advanced Project Settings (**Rendering > Lights And Shadows > Positional Shadow**)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:485
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:493
 msgid "The resolution applies to the whole shadow atlas. This atlas is divided into four quadrants:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:489
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:497
 msgid "Each quadrant can be subdivided to allocate any number of shadow maps; the following is the default subdivision:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:493
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:501
 msgid "The shadow atlas allocates space as follows:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:495
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:503
 msgid "The biggest shadow map size (when no subdivision is used) represents a light the size of the screen (or bigger)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:496
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:504
 msgid "Subdivisions (smaller maps) represent shadows for lights that are further away from view and proportionally smaller."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:498
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:506
 msgid "Every frame, the following procedure is performed for all lights:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:500
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:508
 msgid "Check if the light is on a slot of the right size. If not, re-render it and move it to a larger/smaller slot."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:501
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:509
 msgid "Check if any object affecting the shadow map has changed. If it did, re-render the light."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:502
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:510
 msgid "If neither of the above has happened, nothing is done, and the shadow is left untouched."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:504
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:512
 msgid "If the slots in a quadrant are full, lights are pushed back to smaller slots, depending on size and distance. If all slots in all quadrants are full, some lights will not be able to render shadows even if shadows are enabled on them."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:508
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:516
 msgid "The default shadow allocation strategy allows rendering up to 88 lights with shadows enabled in the camera frustum (4 + 4 + 16 + 64):"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:511
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:519
 msgid "The first and most detailed quadrant can store 4 shadows."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:512
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:520
 msgid "The second quadrant can store 4 other shadows."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:513
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:521
 msgid "The third quadrant can store 16 shadows, with less detail."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:514
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:522
 msgid "The fourth and least detailed quadrant can store 64 shadows, with even less detail."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:516
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:524
 msgid "Using a higher number of shadows per quadrant allows supporting a greater amount of total lights with shadows enabled, while also improving performance (as shadows will be rendered at a lower resolution for each light). However, increasing the number of shadows per quadrant comes at the cost of lower shadow quality."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:522
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:530
 msgid "In some cases, you may want to use a different allocation strategy. For example, in a top-down game where all lights are around the same size, you may want to set all quadrants to have the same subdivision so that all lights have shadows of similar quality level."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:530
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:538
 msgid "Balancing performance and quality"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:532
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:540
 msgid "Shadow rendering is a critical topic in 3D rendering performance. It's important to make the right choices here to avoid creating bottlenecks."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:535
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:543
 msgid "Directional shadow quality settings can be changed at runtime by calling the appropriate :ref:`class_RenderingServer` methods."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:538
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:546
 msgid "Positional (omni/spot) shadow quality settings can be changed at runtime on the root :ref:`class_Viewport`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:542
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:550
 msgid "Shadow map size"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:544
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:552
 msgid "High shadow resolutions result in sharper shadows, but at a significant performance cost. It should also be noted that *sharper shadows are not always more realistic*. In most cases, this should be kept at its default value of ``4096`` or decreased to ``2048`` for low-end GPUs."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:549
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:557
 msgid "If positional shadows become too blurry after decreasing the shadow map size, you can counteract this by adjusting the :ref:`shadow atlas <doc_lights_and_shadows_shadow_atlas>` quadrants to contain fewer shadows. This will allow each shadow to be rendered at a higher resolution."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:557
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:565
 msgid "Shadow filter mode"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:559
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:567
 msgid "Several shadow map quality settings can be chosen here. The default **Soft Low** is a good balance between performance and quality for scenes with detailed textures, as the texture detail will help make the dithering pattern less noticeable."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:563
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:571
 msgid "However, in projects with less detailed textures, the shadow dithering pattern may be more visible. To hide this pattern, you can either enable :ref:`doc_3d_antialiasing_taa`, :ref:`doc_3d_antialiasing_fsr2`, :ref:`doc_3d_antialiasing_fxaa`, or increase the shadow filter quality to **Soft Medium** or higher."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:569
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:577
 msgid "The **Soft Very Low** setting will automatically decrease shadow blur to make artifacts from the low sample count less visible. Conversely, the **Soft High** and **Soft Ultra** settings will automatically increase shadow blur to better make use of the increased sample count."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:577
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:585
 msgid "16-bits versus 32-bit"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:579
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:587
 msgid "By default, Godot uses 16-bit depth textures for shadow map rendering. This is recommended in most cases as it performs better without a noticeable difference in quality."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:583
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:591
 msgid "If **16 Bits** is disabled, 32-bit depth textures will be used instead. This can result in less artifacting in large scenes and large lights with shadows enabled. However, the difference is often barely visible, yet this can have a significant performance cost."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:589
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:597
 msgid "Light/shadow distance fade"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:591
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:599
 msgid "OmniLight3D and SpotLight3D offer several properties to hide distant lights. This can improve performance significantly in large scenes with dozens of lights or more."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:595
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:603
 msgid "**Enabled:** Controls whether distance fade (a form of :abbr:`LOD (Level of Detail)`) is enabled. The light will fade out over **Begin + Length**, after which it will be culled and not sent to the shader at all. Use this to reduce the number of active lights in a scene and thus improve performance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:599
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:607
 msgid "**Begin:** The distance from the camera at which the light begins to fade away (in 3D units)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:601
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:609
 msgid "**Shadow:** The distance from the camera at which the shadow begins to fade away (in 3D units). This can be used to fade out shadows sooner compared to the light, further improving performance. Only available if shadows are enabled for the light."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:604
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:612
 msgid "**Length:** The distance over which the light and shadow fades (in 3D units). The light becomes slowly more transparent over this distance and is completely invisible at the end. Higher values result in a smoother fade-out transition, which is more suited when the camera moves fast."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:612
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:620
 msgid "PCSS recommendations"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:614
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:622
 msgid "Percentage-closer soft shadows (PCSS) provide a more realistic shadow mapping appearance, with the penumbra size varying depending on the distance between the caster and the surface receiving the shadow. This comes at a high performance cost, especially for directional lights."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:619
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:627
 msgid "To avoid performance issues, it's recommended to:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:621
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:629
 msgid "Only use a handful of lights with PCSS shadows enabled at a given time. The effect is generally most visible on large, bright lights. Secondary light sources that are more faint usually don't benefit much from using PCSS shadows."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:625
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:633
 msgid "Provide a setting for users to disable PCSS shadows. On directional lights, this can be done by setting the DirectionalLight3D's ``light_angular_distance`` property to ``0.0`` in a script. On positional lights, this can be done by setting the OmniLight3D or SpotLight3D's ``light_size`` property to ``0.0`` in a script."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:632
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:640
 msgid "Projector filter mode"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:634
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:642
 msgid "The way projectors are rendered also has an impact on performance. The **Rendering > Textures > Light Projectors > Filter** advanced project setting lets you control how projector textures should be filtered. **Nearest/Linear** do not use mipmaps, which makes them faster to render. However, projectors will look grainy at distance. **Nearest/Linear Mipmaps** will look smoother at a distance, but projectors will look blurry when viewed from oblique angles. This can be resolved by using **Nearest/Linear Mipmaps Anisotropic**, which is the highest-quality mode, but also the most expensive."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:643
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:651
 msgid "If your project has a pixel art style, consider setting the filter to one of the **Nearest** values so that projectors use nearest-neighbor filtering. Otherwise, stick to **Linear**."
 msgstr ""
