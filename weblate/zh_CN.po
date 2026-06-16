@@ -494,13 +494,14 @@
 # Lopleec <3870901749@qq.com>, 2026.
 # 张华 <i1tb@qq.com>, 2026.
 # yqj9801 <yyyqj9801@163.com>, 2026.
+# Louish <louish666666@outlook.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-06-08 23:25+0200\n"
-"PO-Revision-Date: 2026-06-03 09:01+0000\n"
-"Last-Translator: Erdong Zhang <takato3000@gmail.com>\n"
+"PO-Revision-Date: 2026-06-15 18:01+0000\n"
+"Last-Translator: 张华 <i1tb@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/godot-engine/godot-docs/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -508,7 +509,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 2026.6\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -1457,12 +1458,17 @@ msgid ""
 "for sharper results when scaling up the texture by re-rasterizing the SVG "
 "source image to a new resolution at run-time."
 msgstr ""
+"使用 :ref:`class_DPITexture` 导入类型时，针对 SVG 图像的 :ref:`Oversampling "
+"<doc_multiple_resolutions_font_and_image_oversampling>` 功能。 这允许在运行时"
+"将 SVG 源图像重新光栅化为新的分辨率，从而在放大纹理时获得更清晰的结果。"
 
 #: ../../docs/about/list_of_features.rst:166
 msgid ""
 "Oversampling can optionally take individual :ref:`class_CanvasItem` scales "
 "into account for crisper rendering when scaling nodes."
 msgstr ""
+"过采样功能可以选择性地将单个 :ref:`class_CanvasItem` （2D 画布项）的缩放比例"
+"考虑在内，以便在缩放节点时获得更清晰的渲染效果。"
 
 #: ../../docs/about/list_of_features.rst:169
 msgid ""
@@ -50670,16 +50676,14 @@ msgid "Area light"
 msgstr "Area light"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:379
-#, fuzzy
 msgid ""
 "Sometimes, you want lighting to come from a large area instead of a single "
 "point. Area lights are useful for simulating soft, diffuse lighting, such as "
 "light coming from a window or a lit billboard."
 msgstr ""
-"有时候，你会希望光线是从一大片区域发散出来的，而不是仅仅来自某一个点。面光源"
-"（Area Lights）就非常擅长模拟这种柔和、漫射的光照效果，比如从窗户透进来的自然"
-"光，或者一块发光的广告牌。不过，这种光照在实时渲染时非常消耗性能，所以一定要"
-"省着点用，尤其是当你还开启了阴影效果的时候，开销会更大。"
+"有时候，你希望光线是从一个较大的区域发出的，而不是从一个单一的点发出。区域光"
+"（Area lights）非常适合用来模拟柔和的漫反射光照，比如从窗户透进来的光，或是发"
+"光的广告牌发出的光。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:383
 msgid ""
@@ -50701,6 +50705,8 @@ msgid ""
 "be used sparingly, especially when shadows are enabled. Consider using them "
 "only for cinematics or when targeting high-end devices."
 msgstr ""
+"这种光源在实时渲染时是性能开销最大的。因此应当谨慎使用，尤其是在开启阴影的情"
+"况下。建议仅在制作过场动画（Cinematics），或针对高端设备时才使用它们。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:394
 msgid ""
@@ -50710,12 +50716,18 @@ msgid ""
 "allows for a greater number of area lights to be rendered (clustered "
 "lighting)."
 msgstr ""
+"在 Forward+（正向+）渲染器中，只要视锥体（view frustum）内出现哪怕一个区域光"
+"，它就会对场景中 **所有** 被渲染的物体产生额外的性能开销，即使这些物体并没有"
+"被区域光照射到。这种权衡（Tradeoff）使得引擎能够渲染数量更多的区域光（即采用"
+"集群光照 clustered lighting 技术）。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:400
 msgid ""
 "In Mobile and Compatibility, only objects that are reached by an area light "
 "incur an additional performance cost."
 msgstr ""
+"在 Mobile（移动端）和 Compatibility（兼容）渲染器中，只有被区域光实际照射到的"
+"物体，才会产生额外的性能开销。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:403
 msgid ""
@@ -63308,7 +63320,6 @@ msgid "Using mesh LOD with MultiMesh and particles"
 msgstr "将网格 LOD 与 MultiMesh 和粒子结合使用"
 
 #: ../../docs/tutorials/3d/mesh_lod.rst:185
-#, fuzzy
 msgid ""
 "For LOD selection, the point of the node's :abbr:`AABB (Axis-Aligned "
 "Bounding Box)` that is the closest to the camera is used as a basis. This "
@@ -63318,11 +63329,12 @@ msgid ""
 "importantly, this means that all instances will be drawn with the same LOD "
 "level at a given time."
 msgstr ""
-"选择 LOD 时，节点的 :abbr:`AABB (Axis-Aligned Bounding Box, 轴对齐边界框)` 中"
-"最接近摄像机的点被用作基础。这适用于任何类型的网格 LOD（包括单个 "
-"MeshInstance3D），但对于同时显示多个网格的节点（例如 MultiMeshInstance3D、"
-"GPUParticles3D 和 CPUParticles3D）有一些影响。最重要的是，这意味着在同一时间"
-"所有实例都将使用相同的 LOD 级别进行绘制。"
+"在进行 LOD（多细节层次）选择时，引擎会以节点 :abbr:`AABB (Axis-Aligned "
+"Bounding Box)` 上距离摄像机最近的那个点作为计算基准。这一规则适用于所有类型的"
+"网格 LOD（包括单个 MeshInstance3D），但对于那些同时显示多个网格的节点（如 "
+"MultiMeshInstance3D、CPUParticles3D 和 GPUParticles3D），这会产生一些特殊影响"
+"。最关键的一点是，这意味着在同一时刻，所有的实例都会以相同的 LOD 级别进行渲染"
+"。"
 
 #: ../../docs/tutorials/3d/mesh_lod.rst:192
 msgid ""
@@ -71929,13 +71941,15 @@ msgstr "Godot 可以导入以下图像格式："
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:11
 msgid "**Raster:**"
-msgstr ""
+msgstr "**Raster:**"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:13
 msgid ""
 "BMP (``.bmp``) - All pixel formats are supported, but :abbr:`RLE (Run-Length "
 "Encoding)` compression is not supported."
 msgstr ""
+"BMP（``.bmp``）—— 支持所有像素格式，但不支持 :abbr:`RLE (Run-Length Encoding)"
+"` 压缩。"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:16
 msgid ""
@@ -71947,15 +71961,14 @@ msgstr ""
 "使用自定义 mipmap 制作特效。"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:19
-#, fuzzy
 msgid ""
 "Khronos Texture (``.ktx``) - Decoding is done using `libktx <https://"
 "github.com/KhronosGroup/KTX-Software>`__. Only supports 2D images. Cubemaps, "
 "texture arrays, and de-padding are not supported."
 msgstr ""
-"Khronos Texture（\\ ``.ktx``\\ ）——使用 `libktx <https://github.com/"
-"KhronosGroup/KTX-Software>`__ 解码。仅支持 2D 图像。不支持立方体贴图、纹理数"
-"组和去填充（de-padding）。"
+"Khronos Texture（``.ktx``）—— 解码由 `libktx <https://github.com/"
+"KhronosGroup/KTX-Software>`__ 库完成。仅支持 2D 图像。不支持立方体贴图（"
+"Cubemaps）、纹理数组（texture arrays）以及去填充（de-padding）功能。"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:23
 msgid ""
@@ -71994,17 +72007,16 @@ msgstr ""
 "每通道 8 位。"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:36
-#, fuzzy
 msgid "**Vector:**"
-msgstr "**Vector2**"
+msgstr "**Vector:**"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:38
 msgid "SVG (``.svg``)"
-msgstr ""
+msgstr "SVG (``.svg``)"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:40
 msgid "By default, SVGs are rasterized at import-time."
-msgstr ""
+msgstr "默认情况下，SVG 图像会在导入时（import-time）被光栅化（转换为位图）。"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:42
 msgid ""
@@ -72012,9 +72024,11 @@ msgid ""
 "allows for run-time rasterization to match the current oversampling factor. "
 "See :ref:`doc_importing_images_changing_import_type` for details."
 msgstr ""
+"SVG 是唯一可以导入为 :ref:class_DPITexture（DPI 纹理）类型的图像格式。这种类"
+"型允许在运行时进行光栅化，以匹配当前的过采样系数。具体详情请参阅 "
+":ref:`doc_importing_images_changing_import_type` （更改图像导入类型）。"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:46
-#, fuzzy
 msgid ""
 "Godot uses the `ThorVG <https://www.thorvg.org/>`__ library for SVG "
 "rendering. `SVG feature support is limited <https://www.thorvg.org/"
@@ -72026,22 +72040,23 @@ msgid ""
 "automated thanks to its `command-line interface <https://wiki.inkscape.org/"
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
-"SVG（\\ ``.svg``\\ ）——SVG 在导入时使用 `ThorVG <https://www.thorvg.org/>`__ "
-"进行栅格化。\\ `支持有限 <https://www.thorvg.org/"
-"about#:~:text=certain%20features%20remain%20unsupported%20within%20the%20current%20framework>`__\\ "
-"；复杂的矢量图可能无法正确渲染。\\ :ref:`文本必须转换为路径 "
-"<doc_importing_images_svg_text>`\\ ；否则不会出现在栅格化图像中。你可以使用其"
-"\\ `基于 Web 的查看器 <https://www.thorvg.org/viewer>`__\\ 来检查 ThorVG 是否"
-"可以正确渲染某个矢量。对于复杂的矢量，使用 `Inkscape <https://inkscape.org/"
-">`__ 将它们渲染为 PNG 通常会是更好的解决方案。这可以通过其\\ `命令行界面 "
-"<https://wiki.inkscape.org/wiki/index.php/"
-"Using_the_Command_Line#Export_files>`__\\ 实现自动化。"
+"Godot 使用 `ThorVG <https://www.thorvg.org/>`__ 库来渲染 SVG。`功能支持是有限"
+"的 <https://www.thorvg.org/"
+"about#:~:text=certain%20features%20remain%20unsupported%20within%20the%20current%20framework>"
+"`__；复杂的矢量图可能无法正确渲染。 :ref:`Text must be converted to paths "
+"<doc_importing_images_svg_text>` ；否则，它们不会出现在光栅化后的图像中。对于"
+"复杂的矢量图，使用 `Inkscape <https://inkscape.org/>`__ 将其渲染为 PNG 通常是"
+"更好的解决方案。借助其 命令行接口 `command-line interface <https://"
+"wiki.inkscape.org/wiki/index.php/Using_the_Command_Line#Export_files>`__，这"
+"一过程可以实现自动化。"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:54
 msgid ""
 "You can check whether ThorVG can render a certain vector correctly using its "
 "`web-based viewer <https://www.thorvg.org/viewer>`__."
 msgstr ""
+"你可以使用 ThorVG 的 `web-based viewer <https://www.thorvg.org/viewer>`__ 来"
+"检查它是否能正确渲染某个矢量图。"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:59
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:26
@@ -72136,6 +72151,10 @@ msgid ""
 "needing to be reimported. "
 "See :ref:`doc_multiple_resolutions_font_and_image_oversampling` for details."
 msgstr ""
+"**DPITexture:** 仅适用于 SVG 图像。它类似于 Texture2D（2D 纹理），但可以在编"
+"辑器和运行时以不同的缩放比例重新进行光栅化，且无需重新导入。详情请参阅 "
+":ref:`doc_multiple_resolutions_font_and_image_oversampling` （多分辨率：字体"
+"与图像过采样）。"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:103
 msgid ""
@@ -110094,6 +110113,9 @@ msgid ""
 "<doc_command_line_tutorial>`, as Godot cannot access the GPU when running in "
 "headless mode."
 msgstr ""
+"此外，在使用 ``--headless`` :ref:`command line argument "
+"<doc_command_line_tutorial>` 导出项目时，不支持使用着色器烘焙器（shader baker"
+"），因为 Godot 在无头模式（headless mode）下无法访问 GPU。"
 
 #: ../../docs/tutorials/performance/optimizing_3d_performance.rst:-1
 msgid "optimization"
@@ -119821,15 +119843,15 @@ msgid "JavaClassWrapper (Godot singleton)"
 msgstr "JavaClassWrapper（Godot 单例）"
 
 #: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:32
-#, fuzzy
 msgid ""
 "``JavaClassWrapper`` is a :ref:`Godot singleton <class_JavaClassWrapper>` "
 "which allows creating instances of Java / Kotlin classes, implementing "
 "Java / Kotlin interfaces, and calling methods on them using only GDScript, "
 "C# or GDExtension."
 msgstr ""
-"``JavaClassWrapper`` 是一个 :ref:`Godot 单例 <class_JavaClassWrapper>`，支持"
-"仅通过 GDScript、C# 或 GDExtension 创建 Java/Kotlin 类实例并调用其方法。"
+"``JavaClassWrapper`` 是一个 :ref:`Godot singleton <class_JavaClassWrapper>` "
+"，它允许仅使用 GDScript、C# 或 GDExtension 来创建 Java / Kotlin 类的实例、实"
+"现 Java / Kotlin 接口，并调用它们的方法。"
 
 #: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:45
 msgid ""
@@ -119850,12 +119872,18 @@ msgid ""
 "can then be passed to Java methods that accept a ``android.util.Printer`` "
 "parameter."
 msgstr ""
+"在上面的代码片段中， ``JavaClassWrapper`` 被用来在 GDScript 中实现 Java 的 "
+"``android.util.Printer`` 接口，其具体实现方式是利用一个 "
+":ref:`Object<class_Object>` 对象。随后，这个实例化的代理对象（proxy）就可以被"
+"传递给那些需要 ``android.util.Printer`` 参数的 Java 方法。"
 
 #: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:61
 msgid ""
 "Check out the :ref:`JavaClassWrapper documentation <class_JavaClassWrapper>` "
 "to learn more about its API."
 msgstr ""
+"请查阅 :ref:`JavaClassWrapper documentation <class_JavaClassWrapper>` 以了解"
+"有关其 API 的更多信息。"
 
 #: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:64
 msgid "AndroidRuntime plugin"
@@ -126556,7 +126584,7 @@ msgstr ""
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:555
 msgid "Font and image oversampling"
-msgstr ""
+msgstr "字体与图像过采样"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:557
 msgid ""
@@ -126565,6 +126593,9 @@ msgid ""
 "the viewport scale factor changes. This ensures font and image textures "
 "remain crisp at any resolution."
 msgstr ""
+"Godot 支持一种称为 *过采样（oversampling）* 的处理机制，它指的是当视口缩放系"
+"数发生变化时，自动从原始的矢量源重新渲染纹理。这能确保字体和图像纹理在任何分"
+"辨率下都保持清晰锐利。"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:562
 msgid ""
@@ -126572,6 +126603,9 @@ msgid ""
 "unchecking **GUI > Fonts > Dynamic Fonts > Use Oversampling** in the Project "
 "Settings."
 msgstr ""
+"字体过采样（Font oversampling）默认是启用的。如果需要禁用，可以在项目设置（"
+"Project Settings）中取消勾选 **GUI > Fonts > Dynamic Fonts > Use "
+"Oversampling** 选项。"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:565
 msgid ""
@@ -126580,6 +126614,10 @@ msgid ""
 "to :ref:`class_DPITexture` in the Import dock. Other image formats do not "
 "support oversampling, as they store bitmap data instead of vectors."
 msgstr ""
+"图像过采样（Image oversampling）默认是禁用的。如果需要对特定的 SVG 图像启用该"
+"功能，可以在导入（Import）面板中，将其导入类型更改为 "
+":ref:`class_DPITexture`。其他图像格式不支持过采样，因为它们存储的是位图数据，"
+"而不是矢量数据。"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:570
 msgid ""
@@ -126588,6 +126626,10 @@ msgid ""
 "scale factors. This can be disabled by unchecking **View > Auto Resample "
 "CanvasItems** at the top of the 2D editor viewport."
 msgstr ""
+"在 2D 编辑器中缩放时，编辑器会自动执行过采样（oversampling）操作，这可以让你"
+"预览过采样在特定缩放比例下的实际效果。如果需要禁用此功能，可以取消勾选 2D 编"
+"辑器视口顶部的 **View > Auto Resample CanvasItems** （视图 > 自动重采样 "
+"CanvasItems）选项。"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:575
 msgid ""
@@ -126600,6 +126642,12 @@ msgid ""
 "demanding on the CPU if the scale changes frequently, as the texture has to "
 "be re-rendered each time."
 msgstr ""
+"过采样也可以根据 Node2D 或 Control 节点的缩放（Scale）属性来应用。这种 *基于"
+"缩放的过采样* 行为默认是禁用的，但你可以在所需节点的面板（Inspector）中，将 "
+"**Oversampling with Scale** （随缩放过采样）设置为 **Enabled** （启用）来开启"
+"它。这对于那些可能在运行时改变缩放比例的节点非常有用，例如某些需要自定义缩放"
+"系数的 UI 元素（如准星）。不过需要注意的是，如果缩放比例频繁发生变化，这会给 "
+"CPU 带来较大的性能开销，因为每次变化时纹理都必须重新进行渲染。"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:583
 msgid ""
@@ -126607,6 +126655,9 @@ msgid ""
 "will work, but may result in aliasing on the shorter axis as oversampling is "
 "always applied uniformly."
 msgstr ""
+"为了获得最佳效果，节点应使用等比缩放（uniform scaling）。非等比缩放（non-"
+"uniform scaling）虽然也能生效，但可能会导致较短的轴向上出现锯齿（aliasing），"
+"因为过采样始终是等比（均匀）应用的。"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:589
 msgid ""
@@ -126620,6 +126671,14 @@ msgid ""
 "not affect the node's actual scale (as used for input coordinates), but only "
 "its visual representation. Therefore, it is ignored by oversampling."
 msgstr ""
+"基于缩放的过采样机制会考虑 Control 节点的 :ref:`offset_transform_enabled "
+"<class_Control_property_offset_transform_enabled>` 属性，但前提是 "
+":ref:`offset_transform_visual_only "
+"<class_Control_property_offset_transform_visual_only>` 属性必须处于 *禁用（"
+"disabled）* 状态。当 :ref:`offset_transform_visual_only "
+"<class_Control_property_offset_transform_visual_only>` 被启用时，它不会影响节"
+"点的实际缩放比例（该比例用于输入坐标的计算），而仅仅改变其视觉表现。因此，过"
+"采样机制会忽略这种纯视觉上的变换。"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:599
 msgid "Reducing aliasing on downsampling"
@@ -126651,6 +126710,9 @@ msgid ""
 "oversampling as described above. This avoids aliasing by re-rasterizing the "
 "texture when the scale factor changes."
 msgstr ""
+"对于 SVG 图像，你还可以在“导入（Import）”面板中将其导入类型更改为 "
+":ref:`class_DPITexture`，从而享受上述的自动过采样功能。这会在缩放系数发生变化"
+"时，通过重新光栅化（re-rasterizing）纹理来避免锯齿现象。"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:613
 msgid "Handling aspect ratios"
@@ -178539,13 +178601,12 @@ msgid "Installing the vendors plugin"
 msgstr "安装供应商插件"
 
 #: ../../docs/tutorials/xr/deploying_to_android.rst:44
-#, fuzzy
 msgid ""
 "The vendors plugin can be downloaded from the Asset Store, search for "
 "\"OpenXR vendors\"."
 msgstr ""
-"供应商插件可以从资产库下载，请在资产库搜索 “OpenXR vendors” ，然后安装名为 "
-"“Godot OpenXR Vendors plugin v4” 的插件。"
+"OpenXR 厂商插件（vendors plugin）可以从资产商店（Asset Store）下载，搜索“"
+"OpenXR vendors”即可。"
 
 #: ../../docs/tutorials/xr/deploying_to_android.rst:49
 msgid ""
@@ -192754,8 +192815,7 @@ msgid ""
 "(required), ``deprecated``, and ``description``."
 msgstr ""
 "接口函数（Interface functions）拥有一些与类型（types）相同的键（keys），其中"
-"包括 ``name`` （名称，必填项）、 ``deprecated`` （已弃用）以及 "
-"``description`` （描述）。"
+"包括 ``name`` （必填）、 ``deprecated`` 以及 ``description`` 。"
 
 #: ../../docs/engine_details/engine_api/gdextension/gdextension_interface_json_file.rst:306
 msgid ""
@@ -192763,8 +192823,8 @@ msgid ""
 "the same format as the equivalent keys on function types (as described in "
 "the previous section)."
 msgstr ""
-"而且，它们还包含 ``return_value`` （返回值）和 ``arguments`` （参数，必填"
-"项），这两者的格式与函数类型中对应的键完全相同（正如上一节所描述的那样）。"
+"而且，它们还包含 ``return_value`` 和 ``arguments`` （必填），这两者的格式与函"
+"数类型中对应的键完全相同（正如上一节所描述的那样）。"
 
 #: ../../docs/engine_details/engine_api/gdextension/gdextension_interface_json_file.rst:309
 msgid "There are only a handful of unique keys:"
@@ -192774,7 +192834,7 @@ msgstr "只有少量的几个唯一键："
 msgid ""
 "``since`` (required): The Godot version that introduced this interface "
 "function."
-msgstr "``since`` （必填项）：引入该接口函数的 Godot 版本。"
+msgstr "``since`` （必填）：引入该接口函数的 Godot 版本。"
 
 #: ../../docs/engine_details/engine_api/gdextension/gdextension_interface_json_file.rst:312
 msgid ""
@@ -198697,24 +198757,26 @@ msgid ""
 "installation make sure to select C++ in the list of workflows, and select "
 "the following individual components:**"
 msgstr ""
+"`Visual Studio Community <https://www.visualstudio.com/vs/community/>`_，版本"
+"要求为 2019 或更高版本（推荐使用 Visual Studio 2022）。 **在安装过程中，请务"
+"必在工作负载（workflows）列表中勾选“使用 C++ 的桌面开发”，并选择以下独立组件"
+"：**"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:26
-#, fuzzy
 msgid "Visaul Studio 2019"
-msgstr "Visual Studio 2022"
+msgstr "Visaul Studio 2019"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:27
 msgid ""
 "**MSVC v142 - VS 2019 C++ {arch} build tools (Latest)** for the target "
 "architectures."
-msgstr ""
+msgstr "**MSVC v142 - VS 2019 C++ {arch} build tools (Latest)** 对于目标平台架构。"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:28
 msgid "**Windows 11 SDK (10.0.22621.0)** (exact version)."
-msgstr ""
+msgstr "**Windows 11 SDK (10.0.22621.0)** (确切的版本)。"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:30
-#, fuzzy
 msgid "Visaul Studio 2022"
 msgstr "Visual Studio 2022"
 
@@ -198722,21 +198784,20 @@ msgstr "Visual Studio 2022"
 msgid ""
 "**MSVC v143 - VS 2022 C++ {arch} build tools (Latest)** for the target "
 "architectures."
-msgstr ""
+msgstr "**MSVC v143 - VS 2022 C++ {arch} build tools (Latest)** 用于目标架构。"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:32
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:36
 msgid "**Windows 11 SDK (10.0.22621.0)** or newer."
-msgstr ""
+msgstr "**Windows 11 SDK (10.0.22621.0)** 或更新。"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:34
-#, fuzzy
 msgid "Visaul Studio 2026"
-msgstr "Visual Studio 2022"
+msgstr "Visaul Studio 2026"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:35
 msgid "**MSVC Build Tools for {arch} (Latest)** for the target architectures."
-msgstr ""
+msgstr "**MSVC Build Tools for {arch} (Latest)** 用于目标架构。"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:38
 msgid ""
@@ -198745,31 +198806,33 @@ msgid ""
 "present you a **Modify** button. Supports ``x86_64``, ``x86_32``, and "
 "``arm64``."
 msgstr ""
+"如果你之前安装 Visual Studio 时没有勾选针对目标架构的 C++ 支持，或者没有安装 "
+"Windows SDK，请重新运行安装程序；此时界面应该会显示一个 **修改（Modify）** 按"
+"钮。当前支持的架构包括 ``x86_64``, ``x86_32``, 和 ``arm64``。"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:41
-#, fuzzy
 msgid ""
 "`MinGW-w64 <https://mingw-w64.org/>`_ with GCC can be used as an alternative "
 "to Visual Studio. Be sure to install/configure it to use the ``posix`` "
 "thread model. **Important:** When using MinGW to compile the ``master`` "
 "branch, you need GCC 12 or later. Supports ``x86_64`` and ``x86_32`` only."
 msgstr ""
-"带有 GCC 的`MinGW-w64 <https://mingw-w64.org/>`_ 可以作为 Visual Studio 的替"
-"代方案。请务必将其安装/配置为使用 ``posix`` 线程模型。**重要提示**： 如果使"
-"用 MinGW 来编译 ``master`` 分支，你需要 GCC 9 或更高版本。仅支持 ``x86_64`` "
-"和 ``x86_32`` 架构。"
+"`MinGW-w64 <https://mingw-w64.org/>`_ 配合 GCC 可以作为 Visual Studio 的替代"
+"方案。请务必确保安装或配置时使用的是 ``posix`` 线程模型。 **重要提示：** 如果"
+"使用 MinGW 来编译 ``master`` （主）分支，你需要 GCC 12 或更高版本。此外，该方"
+"案仅支持 ``x86_64`` 和 ``x86_32`` 架构。"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:45
-#, fuzzy
 msgid ""
 "`MinGW-LLVM <https://github.com/mstorsjo/llvm-mingw/releases>`_ with clang "
 "can be used as an alternative to Visual Studio and MinGW-w64. **Important:** "
 "When using MinGW to compile the ``master`` branch, you need clang 14 or "
 "later. Supports ``x86_64``, ``x86_32``, and ``arm64``."
 msgstr ""
-"带有 Clang 的`MinGW-LLVM <https://github.com/mstorsjo/llvm-mingw/releases>`_ "
-"可以作为 Visual Studio 和 MinGW-w64 的替代方案。它支持 ``x86_64``, "
-"``x86_32``, 和 ``arm64`` 架构。"
+"`MinGW-LLVM <https://github.com/mstorsjo/llvm-mingw/releases>`_ 配合 Clang 也"
+"可以作为 Visual Studio 和 MinGW-w64 的替代方案。 **重要提示：** 如果使用 "
+"MinGW 来编译 ``master`` （主）分支，你需要 Clang 14 或更高版本。该方案支持 "
+"``x86_64`` 、 ``x86_32`` 和 ``arm64`` 架构。"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:49
 msgid ""

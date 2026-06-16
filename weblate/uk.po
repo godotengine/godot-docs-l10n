@@ -61,7 +61,7 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-06-08 23:25+0200\n"
-"PO-Revision-Date: 2026-05-30 07:01+0000\n"
+"PO-Revision-Date: 2026-06-10 06:03+0000\n"
 "Last-Translator: User2068 <user603849745775@proton.me>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
@@ -71,7 +71,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.6.dev0\n"
+"X-Generator: Weblate 2026.6\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -1090,12 +1090,21 @@ msgid ""
 "for sharper results when scaling up the texture by re-rasterizing the SVG "
 "source image to a new resolution at run-time."
 msgstr ""
+":ref:`Передискретизація "
+"<doc_multiple_resolutions_font_and_image_oversampling>` для зображень у "
+"форматі SVG із використанням типу імпорту :ref:`class_DPITexture`. Це "
+"дозволяє отримати більш чіткі результати під час збільшення текстури шляхом "
+"повторної растрування вихідного зображення у форматі SVG до нової роздільної "
+"здатності під час виконання."
 
 #: ../../docs/about/list_of_features.rst:166
 msgid ""
 "Oversampling can optionally take individual :ref:`class_CanvasItem` scales "
 "into account for crisper rendering when scaling nodes."
 msgstr ""
+"При масштабуванні вузлів функція наддискретизації може за бажанням "
+"враховувати індивідуальні масштаби :ref:`class_CanvasItem`, щоб забезпечити "
+"більш чітке відображення."
 
 #: ../../docs/about/list_of_features.rst:169
 msgid ""
@@ -54696,7 +54705,6 @@ msgid "Area light"
 msgstr "Площа освітлення"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:379
-#, fuzzy
 msgid ""
 "Sometimes, you want lighting to come from a large area instead of a single "
 "point. Area lights are useful for simulating soft, diffuse lighting, such as "
@@ -54704,10 +54712,8 @@ msgid ""
 msgstr ""
 "Іноді потрібно, щоб світло падало з великої площі, а не з однієї точки. "
 "Площинні джерела світла зручні для імітації м'якого, розсіяного освітлення, "
-"наприклад світла, що проникає крізь вікно або від освітленого рекламного "
-"щита. Рендеринг такого типу світла в режимі реального часу вимагає значних "
-"ресурсів, тому його слід використовувати з обережністю, особливо якщо "
-"увімкнено тіні."
+"наприклад світла, що проникає через вікно або від освітленого рекламного "
+"щита."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:383
 msgid ""
@@ -54729,6 +54735,10 @@ msgid ""
 "be used sparingly, especially when shadows are enabled. Consider using them "
 "only for cinematics or when targeting high-end devices."
 msgstr ""
+"Цей тип освітлення є найдорожчим для відтворення в режимі реального часу. "
+"Його слід використовувати з обережністю, особливо якщо увімкнено тіні. "
+"Рекомендуємо застосовувати його лише для кінематографічних сцен або при "
+"роботі на потужних пристроях."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:394
 msgid ""
@@ -54738,12 +54748,20 @@ msgid ""
 "allows for a greater number of area lights to be rendered (clustered "
 "lighting)."
 msgstr ""
+"У Forward+ щойно у полі огляду з’являється хоча б одне площинне джерело "
+"світла, це спричиняє додаткові витрати ресурсів на **усі** об’єкти, що "
+"візуалізуються у сцені, навіть на ті, до яких світло від площинного джерела "
+"не досягає. Такий компроміс дає змогу візуалізувати більшу кількість "
+"площинних джерел світла (кластерне освітлення)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:400
 msgid ""
 "In Mobile and Compatibility, only objects that are reached by an area light "
 "incur an additional performance cost."
 msgstr ""
+"У розділі «Мобільні пристрої та сумісність» додаткові витрати на "
+"продуктивність несуть лише об’єкти, на які падає світло від площинного "
+"джерела."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:403
 msgid ""
@@ -68961,7 +68979,6 @@ msgid "Using mesh LOD with MultiMesh and particles"
 msgstr "Використання сітки LOD з MultiMesh і частинками"
 
 #: ../../docs/tutorials/3d/mesh_lod.rst:185
-#, fuzzy
 msgid ""
 "For LOD selection, the point of the node's :abbr:`AABB (Axis-Aligned "
 "Bounding Box)` that is the closest to the camera is used as a basis. This "
@@ -68971,13 +68988,13 @@ msgid ""
 "importantly, this means that all instances will be drawn with the same LOD "
 "level at a given time."
 msgstr ""
-"Для вибору LOD точка вузла :abbr:`AABB (Axis-Aligned Bounding Box)`, яка є "
-"найближчою до камери, використовується як основа. Це стосується будь-якого "
-"типу LOD сітки (зокрема для окремих MeshInstance3D), але це має деякі "
-"наслідки для вузлів, які відображають кілька сіток одночасно, наприклад "
-"MultiMeshInstance3D, GPUParticles3D і GPUParticles3D. Найважливіше те, що це "
-"означає, що всі екземпляри будуть намальовані з однаковим рівнем LOD у "
-"певний час."
+"Для вибору рівня деталізації (LOD) за основу береться точка :abbr:`AABB "
+"(Axis-Aligned Bounding Box)` вузла, яка знаходиться найближче до камери. Це "
+"стосується будь-якого типу LOD сітки (включно з окремими MeshInstance3D), "
+"але має певні наслідки для вузлів, що відображають одразу кілька сіток, "
+"таких як MultiMeshInstance3D, CPUParticles3D та GPUParticles3D. "
+"Найголовніше, це означає, що всі екземпляри будуть мальоватися з однаковим "
+"рівнем LOD у певний момент часу."
 
 #: ../../docs/tutorials/3d/mesh_lod.rst:192
 msgid ""
@@ -78595,13 +78612,15 @@ msgstr "Godot може імпортувати такі формати зобра
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:11
 msgid "**Raster:**"
-msgstr ""
+msgstr "**Растр:**"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:13
 msgid ""
 "BMP (``.bmp``) - All pixel formats are supported, but :abbr:`RLE (Run-Length "
 "Encoding)` compression is not supported."
 msgstr ""
+"BMP (``.bmp``) — Підтримуються всі піксельні формати, але стиснення "
+":abbr:`RLE (Run-Length Encoding)` не підтримується."
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:16
 msgid ""
@@ -78614,15 +78633,15 @@ msgstr ""
 "ефектів за допомогою користувацьких міпмап."
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:19
-#, fuzzy
 msgid ""
 "Khronos Texture (``.ktx``) - Decoding is done using `libktx <https://"
 "github.com/KhronosGroup/KTX-Software>`__. Only supports 2D images. Cubemaps, "
 "texture arrays, and de-padding are not supported."
 msgstr ""
-"Khronos Texture (``.ktx``) - Декодування виконується за допомогою `libktx "
-"<https://github.com/KhronosGroup/KTX-Software>`__. Підтримує лише 2D "
-"зображення. Кубічні карти, масиви текстур і де-заповнення не підтримуються."
+"Текстура Khronos (``.ktx``) — декодування здійснюється за допомогою `libktx "
+"<https://github.com/KhronosGroup/KTX-Software>`__. Підтримуються лише 2D-"
+"зображення. Кубічні карти, масиви текстур та видалення пробілів не "
+"підтримуються."
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:23
 msgid ""
@@ -78668,17 +78687,16 @@ msgstr ""
 "з втратою якості, або без. Точність лімітована 8 бітами на канал."
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:36
-#, fuzzy
 msgid "**Vector:**"
-msgstr "**Vector2**"
+msgstr "**Vector:**"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:38
 msgid "SVG (``.svg``)"
-msgstr ""
+msgstr "SVG (``.svg``)"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:40
 msgid "By default, SVGs are rasterized at import-time."
-msgstr ""
+msgstr "За замовчуванням SVG-файли раструються під час імпорту."
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:42
 msgid ""
@@ -78686,9 +78704,12 @@ msgid ""
 "allows for run-time rasterization to match the current oversampling factor. "
 "See :ref:`doc_importing_images_changing_import_type` for details."
 msgstr ""
+"SVG — це єдиний формат зображень, який можна імпортувати як DPITexture, що "
+"дозволяє виконувати растеризацію під час виконання відповідно до поточного "
+"коефіцієнта наддискретизації. Детальніше див. "
+":ref:`doc_importing_images_changing_import_type`."
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:46
-#, fuzzy
 msgid ""
 "Godot uses the `ThorVG <https://www.thorvg.org/>`__ library for SVG "
 "rendering. `SVG feature support is limited <https://www.thorvg.org/"
@@ -78700,18 +78721,15 @@ msgid ""
 "automated thanks to its `command-line interface <https://wiki.inkscape.org/"
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
-"SVG (``.svg``) – SVG-зображення растеризуються за допомогою `ThorVG <https://"
-"www.thorvg.org/>`__ під час їх імпорту. `Підтримка обмежена <https://"
-"www.thorvg.org/"
-"about#:~:text=certain%20features%20remain%20unsupported%20within%20the%20current%20framework>`__; "
-"складні вектори можуть відображатися неправильно. :ref:`Text must be "
-"converted to paths <doc_importing_images_svg_text>`; інакше він не "
-"відображатиметься на растеризованому зображенні. Ви можете перевірити, чи "
-"може ThorVG правильно відобразити певний вектор, використовуючи свій `веб-"
-"переглядач <https://www.thorvg.org/viewer>`__. Для складних векторів "
-"рендеринг їх у PNG за допомогою `Inkscape <https://inkscape.org/>`__ часто є "
-"кращим рішенням. Це можна автоматизувати завдяки `інтерфейсу командного "
-"рядка <https://wiki.inkscape.org/wiki/index.php/"
+"Godot використовує бібліотеку `ThorVG <https://www.thorvg.org/>`__ для "
+"візуалізації SVG. `Підтримка функцій SVG обмежена <https://www.thorvg.org/"
+"about#:~:text=certain%20features%20remain%20unsupported%20within%20the%20current%20framework>"
+"`__; складні вектори можуть не відображатися правильно. :ref:`Текст "
+"необхідно перетворити на контури <doc_importing_images_svg_text>`; інакше "
+"він не з’явиться на растровому зображенні. Для складних векторів кращим "
+"рішенням часто є їхнє перетворення у PNG за допомогою `Inkscape <https://"
+"inkscape.org/>`__. Це можна автоматизувати завдяки його `інтерфейсу "
+"командного рядка <https://wiki.inkscape.org/wiki/index.php/"
 "Using_the_Command_Line#Export_files>`__."
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:54
@@ -78719,6 +78737,8 @@ msgid ""
 "You can check whether ThorVG can render a certain vector correctly using its "
 "`web-based viewer <https://www.thorvg.org/viewer>`__."
 msgstr ""
+"Ви можете перевірити, чи зможе ThorVG правильно відтворити певний вектор, "
+"скориставшись його веб-переглядачем <https://www.thorvg.org/viewer>__."
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:59
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:26
@@ -78823,6 +78843,10 @@ msgid ""
 "needing to be reimported. "
 "See :ref:`doc_multiple_resolutions_font_and_image_oversampling` for details."
 msgstr ""
+"**DPITexture:** Доступно лише для зображень у форматі SVG. Схоже на "
+"Texture2D, але може бути перерастеризовано в різних масштабах у редакторі та "
+"під час виконання без необхідності повторного імпортування. Детальніше див. "
+":ref:`doc_multiple_resolutions_font_and_image_oversampling`."
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:103
 msgid ""
@@ -119944,6 +119968,10 @@ msgid ""
 "<doc_command_line_tutorial>`, as Godot cannot access the GPU when running in "
 "headless mode."
 msgstr ""
+"Крім того, функція Shader Baker не підтримується під час експорту проекту з "
+"використанням ``--headless`` :ref:`аргументу командного рядка "
+"<doc_command_line_tutorial>`, оскільки Godot не має доступу до графічного "
+"процесора під час роботи в режимі без графічного інтерфейсу."
 
 #: ../../docs/tutorials/performance/optimizing_3d_performance.rst:-1
 msgid "optimization"
@@ -130684,16 +130712,16 @@ msgid "JavaClassWrapper (Godot singleton)"
 msgstr "JavaClassWrapper (Godot Сінглтон)"
 
 #: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:32
-#, fuzzy
 msgid ""
 "``JavaClassWrapper`` is a :ref:`Godot singleton <class_JavaClassWrapper>` "
 "which allows creating instances of Java / Kotlin classes, implementing "
 "Java / Kotlin interfaces, and calling methods on them using only GDScript, "
 "C# or GDExtension."
 msgstr ""
-"``JavaClassWrapper`` — це :ref:`Godot singleton <class_JavaClassWrapper>`, "
-"який дозволяє створювати екземпляри класів Java / Kotlin та викликати для "
-"них методи, використовуючи лише GDScript, C# або GDExtension."
+"``JavaClassWrapper`` — це :ref:`синглтон Godot <class_JavaClassWrapper>`, "
+"який дозволяє створювати екземпляри класів Java/Kotlin, реалізовувати "
+"інтерфейси Java/Kotlin та викликати їхні методи, використовуючи виключно "
+"GDScript, C# або GDExtension."
 
 #: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:45
 msgid ""
@@ -130715,12 +130743,19 @@ msgid ""
 "can then be passed to Java methods that accept a ``android.util.Printer`` "
 "parameter."
 msgstr ""
+"У наведеному вище фрагменті коду клас ``JavaClassWrapper`` використовується "
+"для реалізації інтерфейсу Java ``android.util.Printer`` з GDScript із "
+"застосуванням :ref:`Object<class_Object>` як реалізації. Створений екземпляр "
+"проксі-класу можна потім передавати в методи Java, які приймають параметр "
+"типу ``android.util.Printer``."
 
 #: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:61
 msgid ""
 "Check out the :ref:`JavaClassWrapper documentation <class_JavaClassWrapper>` "
 "to learn more about its API."
 msgstr ""
+"Ознайомтеся з документацією :ref:`JavaClassWrapper <class_JavaClassWrapper>"
+"`, щоб дізнатися більше про його API."
 
 #: ../../docs/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.rst:64
 msgid "AndroidRuntime plugin"
@@ -138142,7 +138177,7 @@ msgstr ""
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:555
 msgid "Font and image oversampling"
-msgstr ""
+msgstr "Передискретизація шрифтів та зображень"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:557
 msgid ""
@@ -138151,6 +138186,10 @@ msgid ""
 "the viewport scale factor changes. This ensures font and image textures "
 "remain crisp at any resolution."
 msgstr ""
+"Godot підтримує процес, який називається *оверсемплінгом* — це автоматичне "
+"перерендеринг текстур з їхнього вихідного векторного джерела при зміні "
+"коефіцієнта масштабування вікна перегляду. Це гарантує, що текстури шрифтів "
+"та зображень залишатимуться чіткими за будь-якої роздільної здатності."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:562
 msgid ""
@@ -138158,6 +138197,9 @@ msgid ""
 "unchecking **GUI > Fonts > Dynamic Fonts > Use Oversampling** in the Project "
 "Settings."
 msgstr ""
+"Функція наддискретизації шрифтів увімкнена за замовчуванням, але її можна "
+"вимкнути, знявши галочку в меню **GUI > Шрифти > Динамічні шрифти > "
+"Використовувати наддискретизацію** у налаштуваннях проєкту."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:565
 msgid ""
@@ -138166,6 +138208,11 @@ msgid ""
 "to :ref:`class_DPITexture` in the Import dock. Other image formats do not "
 "support oversampling, as they store bitmap data instead of vectors."
 msgstr ""
+"Передискретизація зображень за замовчуванням вимкнена, але її можна "
+"увімкнути для окремих зображень у форматі SVG, змінивши їхній тип імпорту на "
+":ref:`class_DPITexture` у панелі «Імпорт». Інші формати зображень не "
+"підтримують передискретизацію, оскільки вони зберігають растрові дані, а не "
+"векторні."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:570
 msgid ""
@@ -138174,6 +138221,11 @@ msgid ""
 "scale factors. This can be disabled by unchecking **View > Auto Resample "
 "CanvasItems** at the top of the 2D editor viewport."
 msgstr ""
+"Редактор автоматично виконує наддискретизацію під час збільшення масштабу в "
+"2D-редакторі, що дозволяє попередньо переглянути, як наддискретизація "
+"виглядатиме при певних коефіцієнтах масштабування. Цю функцію можна "
+"вимкнути, знявши галочку з пункту **Вигляд > Автоматична наддискретизація "
+"елементів полотна** у верхній частині вікна 2D-редактора."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:575
 msgid ""
@@ -138186,6 +138238,15 @@ msgid ""
 "demanding on the CPU if the scale changes frequently, as the texture has to "
 "be re-rendered each time."
 msgstr ""
+"Передискретизацію також можна застосовувати відповідно до властивості Scale "
+"вузла Node2D або елемента Control. Ця функція *передискретизації на основі "
+"масштабу* за замовчуванням вимкнена, але її можна увімкнути, встановивши для "
+"потрібного вузла в інспекторі параметр **Oversampling with Scale** у "
+"значення **Enabled**. Це корисно для вузлів, масштаб яких може змінюватися "
+"під час виконання, наприклад, для користувацьких коефіцієнтів масштабування "
+"певних елементів інтерфейсу, таких як прицільні хрестики. Однак майте на "
+"увазі, що це може бути навантаженням для процесора, якщо масштаб часто "
+"змінюється, оскільки текстуру доводиться перерендерити щоразу."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:583
 msgid ""
@@ -138193,6 +138254,10 @@ msgid ""
 "will work, but may result in aliasing on the shorter axis as oversampling is "
 "always applied uniformly."
 msgstr ""
+"Для досягнення найкращих результатів вузол повинен використовувати "
+"рівномірне масштабування. Нерівномірне масштабування також працює, але може "
+"призвести до появи ефекту аліасингу на коротшій осі, оскільки "
+"наддискретизація завжди застосовується рівномірно."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:589
 msgid ""
@@ -138206,6 +138271,16 @@ msgid ""
 "not affect the node's actual scale (as used for input coordinates), but only "
 "its visual representation. Therefore, it is ignored by oversampling."
 msgstr ""
+"Властивість :ref:`offset_transform_enabled "
+"<class_Control_property_offset_transform_enabled>` елемента управління "
+"враховується під час наддискретизації на основі масштабу, але лише в тому "
+"випадку, якщо :ref:`offset_transform_visual_only "
+"<class_Control_property_offset_transform_visual_only>` *відключено*. Коли "
+":ref:`offset_transform_visual_only "
+"<class_Control_property_offset_transform_visual_only>` увімкнено, це не "
+"впливає на фактичний масштаб вузла (який використовується для координат "
+"введення), а лише на його візуальне представлення. Тому це ігнорується при "
+"наддискретизації."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:599
 msgid "Reducing aliasing on downsampling"
@@ -138239,6 +138314,11 @@ msgid ""
 "oversampling as described above. This avoids aliasing by re-rasterizing the "
 "texture when the scale factor changes."
 msgstr ""
+"Для зображень у форматі SVG ви також можете змінити тип імпорту на "
+":ref:`class_DPITexture` у панелі «Імпорт», щоб скористатися перевагами "
+"автоматичного наддискретизації, як описано вище. Це дозволяє уникнути ефекту "
+"«аліасингу» завдяки повторній растрації текстури при зміні коефіцієнта "
+"масштабування."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:613
 msgid "Handling aspect ratios"
@@ -193809,14 +193889,12 @@ msgid "Installing the vendors plugin"
 msgstr "Встановлення плагіна постачальників"
 
 #: ../../docs/tutorials/xr/deploying_to_android.rst:44
-#, fuzzy
 msgid ""
 "The vendors plugin can be downloaded from the Asset Store, search for "
 "\"OpenXR vendors\"."
 msgstr ""
-"Плагін для постачальників можна завантажити з бібліотеки ресурсів, знайти "
-"\"Postations OpenXR\" та встановити плагін під назвою \"Godot OpenXR Vendors "
-"plugin v4\"."
+"Плагін «Vendors» можна завантажити з Asset Store, ввівши у пошук «OpenXR "
+"vendors»."
 
 #: ../../docs/tutorials/xr/deploying_to_android.rst:49
 msgid ""
@@ -215510,46 +215588,53 @@ msgid ""
 "installation make sure to select C++ in the list of workflows, and select "
 "the following individual components:**"
 msgstr ""
+"`Visual Studio Community <https://www.visualstudio.com/vs/community/>`_, "
+"версія 2019 або пізніша. Рекомендується Visual Studio 2022. **Під час "
+"інсталяції обов’язково виберіть C++ у списку робочих процесів, а також "
+"виберіть такі окремі компоненти:**"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:26
-#, fuzzy
 msgid "Visaul Studio 2019"
-msgstr "Visual Studio 2022"
+msgstr "Visaul Studio 2019"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:27
 msgid ""
 "**MSVC v142 - VS 2019 C++ {arch} build tools (Latest)** for the target "
 "architectures."
 msgstr ""
+"**MSVC v142 — інструменти компіляції VS 2019 C++ {arch} (остання версія)** "
+"для цільових архітектур."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:28
 msgid "**Windows 11 SDK (10.0.22621.0)** (exact version)."
-msgstr ""
+msgstr "**Windows 11 SDK (10.0.22621.0)** (точна версія)."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:30
-#, fuzzy
 msgid "Visaul Studio 2022"
-msgstr "Visual Studio 2022"
+msgstr "Visaul Studio 2022"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:31
 msgid ""
 "**MSVC v143 - VS 2022 C++ {arch} build tools (Latest)** for the target "
 "architectures."
 msgstr ""
+"**MSVC v143 — інструменти компіляції VS 2022 C++ {arch} (остання версія)** "
+"для цільових архітектур."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:32
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:36
 msgid "**Windows 11 SDK (10.0.22621.0)** or newer."
-msgstr ""
+msgstr "**Windows 11 SDK (10.0.22621.0)** або новіша версія."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:34
-#, fuzzy
 msgid "Visaul Studio 2026"
-msgstr "Visual Studio 2022"
+msgstr "Visaul Studio 2026"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:35
 msgid "**MSVC Build Tools for {arch} (Latest)** for the target architectures."
 msgstr ""
+"**Інструменти збірки MSVC для {arch} (остання версія)** для цільових "
+"архітектур."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:38
 msgid ""
@@ -215558,9 +215643,12 @@ msgid ""
 "present you a **Modify** button. Supports ``x86_64``, ``x86_32``, and "
 "``arm64``."
 msgstr ""
+"Якщо ви вже встановили Visual Studio без підтримки C++ для цільової "
+"архітектури або без Windows SDK, запустіть інсталятор ще раз; там має "
+"з’явитися кнопка **Змінити**. Підтримуються архітектури ``x86_64``, "
+"``x86_32`` та ``arm64``."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:41
-#, fuzzy
 msgid ""
 "`MinGW-w64 <https://mingw-w64.org/>`_ with GCC can be used as an alternative "
 "to Visual Studio. Be sure to install/configure it to use the ``posix`` "
@@ -215568,13 +215656,12 @@ msgid ""
 "branch, you need GCC 12 or later. Supports ``x86_64`` and ``x86_32`` only."
 msgstr ""
 "`MinGW-w64 <https://mingw-w64.org/>`_ з GCC можна використовувати як "
-"альтернативу Visual Studio. Обов’язково встановіть/налаштуйте його для "
-"використання моделі потоку ``posix``. **Важливо:** При використанні MinGW "
-"для компіляції гілки ``master`` вам потрібен GCC 9 або новішої версії. "
-"Підтримує лише ``x86_64`` і ``x86_32``."
+"альтернативу Visual Studio. Обов’язково встановіть та налаштуйте його для "
+"використання моделі потоків ``posix``. **Важливо:** При використанні MinGW "
+"для компіляції гілки ``master`` необхідний GCC 12 або пізнішої версії. "
+"Підтримуються лише архітектури ``x86_64`` та ``x86_32``."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:45
-#, fuzzy
 msgid ""
 "`MinGW-LLVM <https://github.com/mstorsjo/llvm-mingw/releases>`_ with clang "
 "can be used as an alternative to Visual Studio and MinGW-w64. **Important:** "
@@ -215582,8 +215669,10 @@ msgid ""
 "later. Supports ``x86_64``, ``x86_32``, and ``arm64``."
 msgstr ""
 "`MinGW-LLVM <https://github.com/mstorsjo/llvm-mingw/releases>`_ із clang "
-"можна використовувати як альтернативу Visual Studio та MinGW-w64. Підтримує "
-"``x86_64``, ``x86_32`` і ``arm64``."
+"можна використовувати як альтернативу Visual Studio та MinGW-w64. "
+"**Важливо:** При використанні MinGW для компіляції гілки ``master`` "
+"необхідний clang 14 або пізнішої версії. Підтримує архітектури ``x86_64``, "
+"``x86_32`` та ``arm64``."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:49
 msgid ""
