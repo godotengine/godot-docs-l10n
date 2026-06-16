@@ -212,7 +212,7 @@ The rotation is edited using a :ref:`Vector3<class_Vector3>` in `Euler angles <h
 
 :ref:`RotationEditMode<enum_Node3D_RotationEditMode>` **ROTATION_EDIT_MODE_QUATERNION** = ``1``
 
-The rotation is edited using a :ref:`Quaternion<class_Quaternion>`. Quaternions avoid :doc:`gimbal lock <../tutorials/3d/using_transforms>` and having to choose an order of rotation, but are less intuitive. Quaternion rotation is mostly the same as rotors in 3D geometric algebra, except that the numbers are labeled differently.
+Вращение регулируется с помощью :ref:`Quaternion<class_Quaternion>`. Кватернионы позволяют избежать :doc:`блокировки кардана <../tutorials/3d/using_transforms>` и необходимости выбора порядка вращения, но они менее интуитивно понятны. Вращение с помощью кватернионов в основном аналогично вращению роторов в трехмерной геометрической алгебре, за исключением того, что числа обозначаются по-другому.
 
 .. _class_Node3D_constant_ROTATION_EDIT_MODE_BASIS:
 
@@ -520,7 +520,7 @@ The order of each consecutive rotation can be changed with :ref:`rotation_order<
 - |void| **set_rotation_order**\ (\ value\: :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`\ )
 - :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **get_rotation_order**\ (\ )
 
-The axis rotation order of the :ref:`rotation<class_Node3D_property_rotation>` property. In Godot, Euler angles always use intrinsic order, meaning that the final orientation is calculated by rotating around the local axes in this order.
+Порядок вращения осей свойства :ref:`rotation<class_Node3D_property_rotation>`. В Godot углы Эйлера всегда используют внутренний порядок, то есть окончательная ориентация вычисляется путем вращения вокруг локальных осей в указанном порядке.
 
 .. rst-class:: classref-item-separator
 

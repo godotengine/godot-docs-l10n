@@ -212,7 +212,7 @@ Descrizioni dei metodi
 
 |void| **allocate**\ (\ to_cell_xform\: :ref:`Transform3D<class_Transform3D>`, aabb\: :ref:`AABB<class_AABB>`, octree_size\: :ref:`Vector3<class_Vector3>`, octree_cells\: :ref:`PackedByteArray<class_PackedByteArray>`, data_cells\: :ref:`PackedByteArray<class_PackedByteArray>`, distance_field\: :ref:`PackedByteArray<class_PackedByteArray>`, level_counts\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_VoxelGIData_method_allocate>`
 
-Initializes this **VoxelGIData** with the specified data. ``octree_cells`` must be a multiple of 32. ``octree_cells`` must be double the size of ``data_cells``. The allocated data can be retrieved later using the various getter methods.
+Inizializza questo **VoxelGIData** con i dati specificati. ``octree_cells`` deve essere un multiplo di 32. ``octree_cells`` deve essere il doppio della dimensione di ``data_cells``. I dati allocati si possono recuperare in seguito attraverso i vari metodi getter.
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Restituisce i limiti dei dati precalcolati dei voxel come un :ref:`AABB<class_AA
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_data_cells**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_data_cells>`
 
-Returns the baked cell data for this **VoxelGIData**.
+Restituisce i dati precalcolati delle celle per questo **VoxelGIData**.
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ Returns the baked level counts for this **VoxelGIData**.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_octree_cells**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_octree_cells>`
 
-Returns the baked octree cell data for this **VoxelGIData**.
+Restituisce i dati delle celle dell'octree precalcolato per questo **VoxelGIData**.
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ Returns the baked octree cell data for this **VoxelGIData**.
 
 :ref:`Vector3<class_Vector3>` **get_octree_size**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_octree_size>`
 
-Returns the baked octree size for this **VoxelGIData**, which corresponds to the number of subdivisions per axis. This can be viewed in the editor by hovering the **Bake VoxelGI** button at the top of the 3D editor viewport when a :ref:`VoxelGI<class_VoxelGI>` node is selected and looking at the **Subdivisions** field in the tooltip.
+Restituisce la dimensione dell'octree precalcolato per questo **VoxelGIData**. Che corrisponde al numero di suddivisioni per asse. È possibile visualizzare questo valore nell'editor passando il mouse sul pulsante **Precalcola VoxelGI** in cima la viewport dell'editor 3D quando è selezionato un nodo :ref:`VoxelGI<class_VoxelGI>`, nel campo **Suddivisioni** nel tooltip.
 
 .. rst-class:: classref-item-separator
 
@@ -286,7 +286,7 @@ Returns the baked octree size for this **VoxelGIData**, which corresponds to the
 
 :ref:`Transform3D<class_Transform3D>` **get_to_cell_xform**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_to_cell_xform>`
 
-Returns the baked cell transform for this **VoxelGIData**.
+Restituisce la trasformazione delle celle precalcolate per questo **VoxelGIData**.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

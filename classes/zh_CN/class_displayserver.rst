@@ -2522,7 +2522,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_RESIZE_DISABLED** = ``0``
 
-该窗口不能通过拖动其调整大小的手柄来调整大小。但仍然可以使用 :ref:`window_set_size()<class_DisplayServer_method_window_set_size>` 调整窗口大小。全屏窗口会忽略该标志。
+The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`. This flag is ignored for full screen windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_BORDERLESS:
 
@@ -2530,7 +2532,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_BORDERLESS** = ``1``
 
-该窗口没有原生标题栏和其他装饰。全屏窗口会忽略该标志。
+The window do not have native title bar and other decorations. This flag is ignored for full-screen windows.
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_ALWAYS_ON_TOP:
 
@@ -2538,7 +2542,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_ALWAYS_ON_TOP** = ``2``
 
-该窗口悬浮在所有其他窗口之上。全屏窗口会忽略该标志。
+The window is floating on top of all other windows. This flag is ignored for full-screen windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_TRANSPARENT:
 
@@ -2560,7 +2566,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_NO_FOCUS** = ``4``
 
-该窗口无法获得焦点。无聚焦窗口会忽略除鼠标点击外的所有输入。
+The window can't be focused. No-focus window will ignore all input, except mouse clicks.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_POPUP:
 
@@ -2568,7 +2576,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP** = ``5``
 
-窗口是菜单或 :ref:`OptionButton<class_OptionButton>` 下拉菜单的一部分。当窗口可见时，不能更改该标志。活动的弹出窗口会以独占的形式接收所有输入，但不会从其父窗口窃取焦点。当在其外部点击或切换应用程序时，弹出窗口将会自动关闭。 弹出窗口必须已经设置了临时父级（参见 :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`\ ）。
+Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`).
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE:
 
@@ -2590,7 +2600,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-所有鼠标事件都被传递到同一应用程序的底层窗口。
+All mouse events are passed to the underlying window of the same application.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_SHARP_CORNERS:
 
@@ -2620,7 +2632,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP_WM_HINT** = ``10``
 
-向窗口管理器发出信号，表明该窗口应该是实现定义的“弹出窗口” （通常是浮动、无边框、不可平铺且不可移动的子窗口）。
+Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+
+\ **Note:** This flag is implemented on Linux (Wayland).
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MINIMIZE_DISABLED:
 
@@ -2628,9 +2642,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MINIMIZE_DISABLED** = ``11``
 
-禁用窗口的最小化按钮。
+Window minimize button is disabled.
 
-\ **注意：**\ 该标志在 macOS 和 Windows 上实现。
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAXIMIZE_DISABLED:
 
@@ -2638,9 +2652,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MAXIMIZE_DISABLED** = ``12``
 
-禁用窗口的最大化按钮。
+Window maximize button is disabled.
 
-\ **注意：**\ 该标志在 macOS 和 Windows 上实现。
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAX:
 
@@ -2746,9 +2760,9 @@ enum **WindowEvent**: :ref:`🔗<enum_DisplayServer_WindowEvent>`
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_OUTPUT_MAX_LINEAR_VALUE_CHANGED** = ``9``
 
-当 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 返回的输出最大线性值发生变化时，会发出此信号。
+当 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 返回的输出最大线性值发生变化时发送。
 
-这种情况通常发生在启用或禁用 HDR 输出时，以及窗口的任何 HDR 输出亮度值发生改变时，例如当玩家调整屏幕亮度设置，或将窗口移动到另一个屏幕上时。
+启用或禁用 HDR 输出，以及窗口的任何 HDR 输出亮度值发生变化时，例如，玩家调整屏幕亮度设置或将窗口移动到其他屏幕时，都会发生。
 
 .. rst-class:: classref-item-separator
 
@@ -6795,9 +6809,9 @@ enum **TTSUtteranceEvent**: :ref:`🔗<enum_DisplayServer_TTSUtteranceEvent>`
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-当 :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` 返回 ``true`` 时，此方法会返回由 ``window_id`` 指定的窗口当前 HDR 输出的最大亮度，单位为尼特（nits，即 cd/m²）。如果最大亮度是根据屏幕性能自动调整的，此方法将返回该自动调整后的值；否则，它将返回由 :ref:`window_set_hdr_output_max_luminance()<class_DisplayServer_method_window_set_hdr_output_max_luminance>` 设置的值。这个最大亮度值在计算 :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>` 时会被用到。
+当 :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` 返回 ``true`` 时，该方法返回用于由 ``window_id`` 指定的窗口的 HDR 输出的当前最大亮度，单位为尼特（cd/m²）。如果最大亮度会根据屏幕的性能自动调整，则此方法将返回该值。否则，它将返回 :ref:`window_set_hdr_output_max_luminance()<class_DisplayServer_method_window_set_hdr_output_max_luminance>` 设置的值。该最大亮度值用于计算 :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>`\ 。
 
-\ **注意：** 这个最大亮度值可能与屏幕的实际物理表现不完全一致，但它相对于 :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` 的比例关系始终是准确的。
+\ **注意：** 该最大亮度可能与屏幕的实际表现不完全一致，但始终与 :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` 成比例。
 
 .. rst-class:: classref-item-separator
 
@@ -6809,9 +6823,9 @@ enum **TTSUtteranceEvent**: :ref:`🔗<enum_DisplayServer_TTSUtteranceEvent>`
 
 :ref:`float<class_float>` **window_get_hdr_output_current_reference_luminance**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>`
 
-当 :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` 返回 ``true`` 时，此方法会返回由 ``window_id`` 指定的窗口当前 HDR 输出的参考白点亮度，单位为尼特（nits，即 cd/m²）。如果参考亮度是根据操作系统的亮度设置自动调整的，此方法将返回该自动调整后的值；否则，它将返回由 :ref:`window_set_hdr_output_reference_luminance()<class_DisplayServer_method_window_set_hdr_output_reference_luminance>` 设置的值。这个参考亮度值在计算 :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>` 时会被用到。
+当 :ref:`window_is_hdr_output_enabled()<class_DisplayServer_method_window_is_hdr_output_enabled>` 返回 ``true`` 时，该方法返回用于由 ``window_id`` 指定的窗口的 HDR 输出的当前参考白点亮度，单位为尼特（cd/m²）。如果参考亮度已自动调整以匹配操作系统亮度，则该方法将返回该值。否则，它将返回 :ref:`window_set_hdr_output_reference_luminance()<class_DisplayServer_method_window_set_hdr_output_reference_luminance>` 设置的值。该参考亮度值用于计算 :ref:`window_get_output_max_linear_value()<class_DisplayServer_method_window_get_output_max_linear_value>`\ 。
 
-\ **注意：** 这个参考白点亮度可能与屏幕的实际物理表现不完全一致，但它相对于 :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>` 的比例关系始终是准确的。
+\ **注意：**\ 该参考白点亮度可能与屏幕的实际亮度不完全匹配，但始终与 :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>` 成比例。
 
 .. rst-class:: classref-item-separator
 
@@ -6899,7 +6913,7 @@ enum **TTSUtteranceEvent**: :ref:`🔗<enum_DisplayServer_TTSUtteranceEvent>`
 
 :ref:`float<class_float>` **window_get_output_max_linear_value**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_output_max_linear_value>`
 
-返回由 ``window_id`` 指定的窗口能够显示的线性颜色分量的最大值，无论当前是 SDR 还是 HDR 输出模式。如果 HDR 未启用或不受支持，则返回 ``1.0``\ 。当启用 HDR 输出时，该值会根据 :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` 和 :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>` 计算得出。每当这个值发生变化时，都会发出 :ref:`Window.output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` 信号。这个值会被色调映射（tonemapping）和其他 :ref:`Environment<class_Environment>` 特效用来确保明亮的颜色能够以该窗口可显示的范围正确呈现。对应于 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`\ 。
+返回由 ``window_id`` 指定的窗口可显示的线性颜色分量的最大值，无论是 SDR 输出还是 HDR 输出。如果未启用或不支持 HDR，则返回 ``1.0``\ 。启用 HDR 输出后，此值基于 :ref:`window_get_hdr_output_current_reference_luminance()<class_DisplayServer_method_window_get_hdr_output_current_reference_luminance>` 和 :ref:`window_get_hdr_output_current_max_luminance()<class_DisplayServer_method_window_get_hdr_output_current_max_luminance>` 计算得出。每当该值发生变化时，都会发出 :ref:`Window.output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` 信号。色调映射和其他 :ref:`Environment<class_Environment>` 效果使用该值来确保明亮的颜色显示在该窗口可显示的范围内。对应于 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`\ 。
 
 .. rst-class:: classref-item-separator
 

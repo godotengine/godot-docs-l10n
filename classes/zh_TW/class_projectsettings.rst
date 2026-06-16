@@ -14,13 +14,13 @@ ProjectSettings
 說明
 ----
 
-儲存可以從任何地方存取的變數。請使用 :ref:`get_setting()<class_ProjectSettings_method_get_setting>`\ 、\ :ref:`set_setting()<class_ProjectSettings_method_set_setting>`\ 、\ :ref:`has_setting()<class_ProjectSettings_method_has_setting>` 存取。儲存在 ``project.godot`` 中的變數也會被載入到 **ProjectSettings** 中，因此這個物件常用於讀取自訂遊戲配置選項。
+Stores variables that can be accessed from everywhere. Use :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` or :ref:`has_setting()<class_ProjectSettings_method_has_setting>` to access them. Variables stored in ``project.godot`` are also loaded into **ProjectSettings**, making this object very useful for reading custom game configuration options.
 
-指定“專案設定”的屬性時，請使用設定的完整路徑，包括類別。例如專案名稱應使用 ``"application/config/name"``\ 。類別和屬性名稱可以在“專案設定”對話框中查看。
+When naming a Project Settings property, use the full path to the setting including the category. For example, ``"application/config/name"`` for the project name. Category and property names can be viewed in the Project Settings dialog.
 
-\ **功能標籤：**\ 可以使用\ :doc:`特性標籤 <../tutorials/export/feature_tags>`\ 來針對特定的平臺和配置（除錯、發行……）做專案設定的覆蓋。
+\ **Feature tags:** Project settings can be overridden for specific platforms and configurations (debug, release, ...) using :doc:`feature tags <../tutorials/export/feature_tags>`.
 
-\ **覆蓋：**\ 在專案的根目錄下建立名為 ``override.cfg`` 的檔案，就可以對任意專案設定進行覆蓋。對於已匯出的專案，把這個檔放在與專案二進位檔案相同的目錄下，也可以達到覆蓋的目的。覆蓋時仍會考慮基礎專案設定的\ :doc:`功能標籤 <../tutorials/export/feature_tags>`\ 。因此，如果你想讓它們在所有平臺和配置上覆蓋基礎專案設定，請確保\ *也用*\ 所需的功能標籤覆蓋該設定。
+\ **Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This file is in the same format as ``project.godot``, and can also be written using :ref:`ConfigFile<class_ConfigFile>`. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' :doc:`feature tags <../tutorials/export/feature_tags>` in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
 
 .. rst-class:: classref-introduction-group
 
@@ -14717,9 +14717,9 @@ Loads the contents of the .pck or .zip file specified by ``pack`` into the resou
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ ) :ref:`🔗<class_ProjectSettings_method_save>`
 
-將配置保存到 ``project.godot`` 檔案中。
+Saves the configuration to the ``project.godot`` file.
 
-\ **注意：**\ 此方法是為編輯器外掛程式使用的，因為修改後的 **ProjectSettings** 無法在運作的套用程式中載入回來。如果要更改匯出專案中的專案設定，請使用 :ref:`save_custom()<class_ProjectSettings_method_save_custom>` 保存 ``override.cfg`` 檔案。
+\ **Note:** This method is intended to be used by editor plugins, as modified **ProjectSettings** can't be loaded back in the running app. If you want to change project settings in exported projects, use :ref:`save_custom()<class_ProjectSettings_method_save_custom>` to save an ``override.cfg`` file.
 
 .. rst-class:: classref-item-separator
 
@@ -14731,7 +14731,7 @@ Loads the contents of the .pck or .zip file specified by ``pack`` into the resou
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_custom**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ProjectSettings_method_save_custom>`
 
-將配置保存到自訂檔。檔副檔名必須是 ``.godot``\ （以基於文字的 :ref:`ConfigFile<class_ConfigFile>` 格式保存）或 ``.binary``\ （以二進位格式保存）。你也可以保存為 ``override.cfg`` 檔，它也是文字，但與其他格式不同，可以在導出的專案中使用。
+Saves the configuration to a custom file. The file extension must be ``.godot`` (to save in text-based :ref:`ConfigFile<class_ConfigFile>` format) or ``.binary`` (to save in binary format). You can also save an ``override.cfg`` file, which is also text, but can be used in exported projects unlike other formats.
 
 .. rst-class:: classref-item-separator
 

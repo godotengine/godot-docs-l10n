@@ -1912,21 +1912,21 @@ Questo può essere utile quando i file possono essere aperti da altre applicazio
 
 :ref:`Error<enum_@GlobalScope_Error>` **shell_open**\ (\ uri\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OS_method_shell_open>`
 
-Requests the OS to open a resource identified by ``uri`` with the most appropriate program. For example:
+Richiede al sistema operativo di aprire una risorsa identificata da ``uri`` con il programma più appropriato. Ad esempio:
 
-- ``OS.shell_open("C:\\Users\\name\\Downloads")`` on Windows opens the file explorer at the user's Downloads folder.
+- ``OS.shell_open("C:\\Users\\name\\Downloads")`` su Windows apre l'esploratore file nella cartella Download dell'utente.
 
-- ``OS.shell_open("C:/Users/name/Downloads")`` also works on Windows and opens the file explorer at the user's Downloads folder.
+- ``OS.shell_open("C:/Users/name/Downloads")`` funziona inoltre su Windows e apre l'esploratore file nella cartella Download dell'utente.
 
-- ``OS.shell_open("https://godotengine.org")`` opens the default web browser on the official Godot website.
+- ``OS.shell_open("https://godotengine.org")`` apre il browser Web predefinito sul sito Web ufficiale di Godot.
 
-- ``OS.shell_open("mailto:example@example.com")`` opens the default email client with the "To" field set to ``example@example.com``. See `RFC 2368 - The mailto URL scheme <https://datatracker.ietf.org/doc/html/rfc2368>`__ for a list of fields that can be added.
+- ``OS.shell_open("mailto:example@example.com")`` apre il client di posta elettronica predefinito con il campo "Destinatario" impostato su ``example@example.com``. Consulta `RFC 2368 - Lo schema URL mailto <https://datatracker.ietf.org/doc/html/rfc2368>`__ per un elenco di campi che è possibile aggiungere.
 
-Use :ref:`ProjectSettings.globalize_path()<class_ProjectSettings_method_globalize_path>` to convert a ``res://`` or ``user://`` project path into a system path for use with this method.
+Usa :ref:`ProjectSettings.globalize_path()<class_ProjectSettings_method_globalize_path>` per convertire un percorso di progetto ``res://`` o ``user://`` in un percorso di sistema da usare con questo metodo.
 
-\ **Note:** Use :ref:`String.uri_encode()<class_String_method_uri_encode>` to encode characters within URLs in a URL-safe, portable way. This is especially required for line breaks. Otherwise, :ref:`shell_open()<class_OS_method_shell_open>` may not work correctly in a project exported to the Web platform.
+\ **Nota:** Usa :ref:`String.uri_encode()<class_String_method_uri_encode>` per codificare i caratteri all'interno degli URL in un modo URL-safe e portabile. Ciò è particolarmente necessario per le interruzioni di riga. Altrimenti, :ref:`shell_open()<class_OS_method_shell_open>` potrebbe non funzionare correttamente in un progetto esportato sulla piattaforma Web.
 
-\ **Note:** This method is implemented on Android, iOS, Web, Linux, macOS and Windows.
+\ **Nota:** Questo metodo è implementato su Android, iOS, Web, Linux, macOS e Windows.
 
 .. rst-class:: classref-item-separator
 

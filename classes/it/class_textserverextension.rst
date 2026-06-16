@@ -1107,7 +1107,7 @@ Restituisce la sostituzione del fattore di sovracampionamento. Se impostato su u
 
 :ref:`PackedColorArray<class_PackedColorArray>` **_font_get_palette_colors**\ (\ font_rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_palette_colors>`
 
-Returns the array in the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors. Colors can be overridden using :ref:`_font_set_palette_custom_colors()<class_TextServerExtension_private_method__font_set_palette_custom_colors>`.
+Restituisce l'array nella tavolozza predefinita di colori all'indice ``index``. La tavolozza contiene tutti i colori utilizzati per renderizzare i glifi dei font. Ogni tavolozza ha lo stesso numero di colori. I colori si possono sovrascrivere tramite :ref:`_font_set_palette_custom_colors()<class_TextServerExtension_private_method__font_set_palette_custom_colors>`.
 
 .. rst-class:: classref-item-separator
 

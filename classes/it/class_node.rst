@@ -2903,7 +2903,7 @@ Cambia il genitore di questo **Node** al nuovo genitore ``new_parent``. Il nodo 
 
 Se ``keep_global_transform`` è ``true``, la trasformazione globale del nodo sarà preservata se supportata. :ref:`Node2D<class_Node2D>`, :ref:`Node3D<class_Node3D>` e :ref:`Control<class_Control>` supportano questo argomento (ma :ref:`Control<class_Control>` mantiene solo la posizione).
 
-\ **Attenzione:** Se ``membro ProjectSettings.physics/common/physics_interpolation`` è abilitato e il cambio di genitore influisce molto sulla trasformazione globale, l'oggetto potrebbe sembrare spostarsi dalla sua vecchia posizione a quella nuova nel prossimo tick di fisica. Per evitare ciò, chiama :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` dopo il cambio di genitore.
+\ **Attenzione:** Se :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` è abilitato e il cambio di genitore influisce molto sulla trasformazione globale, l'oggetto potrebbe sembrare spostarsi dalla sua vecchia posizione a quella nuova nel prossimo tick di fisica. Per evitare ciò, chiama :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` dopo il cambio di genitore.
 
 .. rst-class:: classref-item-separator
 

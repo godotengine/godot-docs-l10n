@@ -1148,7 +1148,7 @@ Imposta il raggio dell'articolazione in ``joint`` nella lista delle articolazion
 
 Imposta l'asse di rotazione dell'articolazione ``joint`` nell'elenco delle articolazioni della catena d'ossa quando :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` è ``true``.
 
-Gli assi si basano sullo spazio della posa di riferimento. Se ``axis`` è :ref:`ROTATION_AXIS_CUSTOM<class_SpringBoneSimulator3D_constant_ROTATION_AXIS_CUSTOM>`, è possibile specificare qualsiasi asse.
+Gli assi si basano sullo spazio della posa di riferimento. Se ``axis`` è :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, è possibile specificare qualsiasi asse.
 
 Qui, la posa di riferimento è la posa dell'osso immediatamente prima della simulazione.
 
@@ -1244,7 +1244,7 @@ Imposta il nome dell'osso radice della catena d'ossa.
 
 Imposta l'asse di rotazione della catena d'ossa. Se impostato su un'asse specifico, si comporta come un giunto a cerniera. Questo valore viene memorizzato nella cache in ogni impostazione d'articolazione nella lista delle articolazioni.
 
-Gli assi si basano sullo spazio della posa di riferimento. Se ``axis`` è :ref:`ROTATION_AXIS_CUSTOM<class_SpringBoneSimulator3D_constant_ROTATION_AXIS_CUSTOM>`, è possibile specificare qualsiasi asse.
+Gli assi si basano sullo spazio della posa di riferimento. Se ``axis`` è :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, è possibile specificare qualsiasi asse.
 
 Qui, la posa di riferimento è la posa dell'osso immediatamente prima della simulazione.
 

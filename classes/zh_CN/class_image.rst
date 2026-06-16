@@ -1779,9 +1779,9 @@ enum **ASTCFormat**: :ref:`🔗<enum_Image_ASTCFormat>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_exr**\ (\ path\: :ref:`String<class_String>`, grayscale\: :ref:`bool<class_bool>` = false, color_image\: :ref:`bool<class_bool>` = false, max_linear_value\: :ref:`float<class_float>` = -1.0\ ) |const| :ref:`🔗<class_Image_method_save_exr>`
 
-将图像作为 EXR 文件保存到 ``path``\ 。如果 ``grayscale`` 为 ``true`` 且图像仅有一个通道，则会将其明确保存为单色，而不是一个红色通道。在保存彩色图像（例如截图）时，将 ``color_image`` 设置为 ``true``\ 。当 ``color_image`` 为 ``false`` 时，将包含负值，这在保存包含负向光照信息的光照贴图等原始浮点数据时非常有用。如果 ``max_linear_value`` 不为负数，则生成的 EXR 文件中的颜色分量值不会超过 ``max_linear_value``\ 。如果编译 Godot 时未包含 TinyEXR 模块，该函数将返回 :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`\ 。
+将图像以 EXR 文件格式保存到 ``path``\ 。如果 ``grayscale`` 为 ``true`` 且图像只有一个通道，则会显式地将其保存为单色图像，而不是仅保存一个红色通道。保存彩色图像（例如屏幕截图）时，请将 ``color_image`` 设置为 ``true``\ 。如果 ``color_image`` 为 ``false``\ ，则会包含负值，这对于保存包含负光照信息的原始浮点数据（例如光照贴图）非常有用。如果 ``max_linear_value`` 不为负数，则生成的 EXR 文件中的颜色分量值不会超过 ``max_linear_value``\ 。如果 Godot 编译时未包含 TinyEXR 模块，则该方法将返回 :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`\ 。
 
-在保存使用 HDR 输出的项目的截图时，请对 ``max_linear_value`` 使用 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`\ 。
+保存使用 HDR 输出的项目的屏幕截图时，请使用 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 来获取 ``max_linear_value``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1793,9 +1793,9 @@ enum **ASTCFormat**: :ref:`🔗<enum_Image_ASTCFormat>`
 
 :ref:`PackedByteArray<class_PackedByteArray>` **save_exr_to_buffer**\ (\ grayscale\: :ref:`bool<class_bool>` = false, color_image\: :ref:`bool<class_bool>` = false, max_linear_value\: :ref:`float<class_float>` = -1.0\ ) |const| :ref:`🔗<class_Image_method_save_exr_to_buffer>`
 
-将图像作为 EXR 文件保存到字节数组中。如果 ``grayscale`` 为 ``true`` 且图像仅有一个通道，则会将其明确保存为单色，而不是一个红色通道。在保存彩色图像（例如截图）时，将 ``color_image`` 设置为 ``true``\ 。当 ``color_image`` 为 ``false`` 时，将包含负值，这在保存包含负向光照信息的光照贴图等原始浮点数据时非常有用。如果 ``max_linear_value`` 不为负数，则生成的 EXR 文件中的颜色分量值不会超过 ``max_linear_value``\ 。如果编译 Godot 时未包含 TinyEXR 模块，该函数将返回一个空字节数组。
+将图像以 EXR 文件格式保存到字节数组中。如果 ``grayscale`` 为 ``true`` 且图像只有一个通道，则会显式地将其保存为单色图像，而不是仅保存一个红色通道。保存彩色图像（例如屏幕截图）时，请将 ``color_image`` 设置为 ``true``\ 。如果 ``color_image`` 为 ``false``\ ，则会包含负值，这对于保存包含负光照信息的原始浮点数据（例如光照贴图）非常有用。如果 ``max_linear_value`` 不为负数，则生成的 EXR 文件中的颜色分量值不会超过 ``max_linear_value``\ 。如果 Godot 编译时未安装 TinyEXR 模块，则该方法将返回一个空字节数组。
 
-在保存使用 HDR 输出的项目的截图时，请对 ``max_linear_value`` 使用 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`\ 。
+保存使用 HDR 输出的项目的屏幕截图时，请使用 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 来获取 ``max_linear_value``\ 。
 
 .. rst-class:: classref-item-separator
 

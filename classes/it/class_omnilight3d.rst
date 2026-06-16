@@ -28,7 +28,7 @@ Una luce omnidirezionale è un tipo di :ref:`Light3D<class_Light3D>` che emette 
 Tutorial
 ----------------
 
-- :doc:`Luci e ombre 3D <../tutorials/3d/lights_and_shadows>`
+- `Luci e ombre 3D <../tutorials/3d/lights_and_shadows.html#omni-light>`__
 
 - :doc:`Fingere l'illuminazione globale <../tutorials/3d/global_illumination/faking_global_illumination>`
 

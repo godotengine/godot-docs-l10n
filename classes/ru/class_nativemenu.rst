@@ -546,9 +546,9 @@ enum **SystemMenus**: :ref:`🔗<enum_NativeMenu_SystemMenus>`
 
 :ref:`int<class_int>` **find_item_index_with_submenu**\ (\ rid\: :ref:`RID<class_RID>`, submenu_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_submenu>`
 
-Returns the index of the item with the submenu specified by ``submenu_rid``. Indices are automatically assigned to each item by the engine.
+Возвращает индекс элемента с подменю, указанным в ``submenu_rid``. Индексы автоматически присваиваются каждому элементу движком.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Примечание:** Этот метод реализован в macOS и Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -560,9 +560,9 @@ Returns the index of the item with the submenu specified by ``submenu_rid``. Ind
 
 :ref:`int<class_int>` **find_item_index_with_tag**\ (\ rid\: :ref:`RID<class_RID>`, tag\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_tag>`
 
-Returns the index of the item with the specified ``tag``. Indices are automatically assigned to each item by the engine.
+Возвращает индекс элемента с указанным ``tag``. Индексы автоматически присваиваются каждому элементу движком.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Примечание:** Этот метод реализован в macOS и Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -574,9 +574,9 @@ Returns the index of the item with the specified ``tag``. Indices are automatica
 
 :ref:`int<class_int>` **find_item_index_with_text**\ (\ rid\: :ref:`RID<class_RID>`, text\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_text>`
 
-Returns the index of the item with the specified ``text``. Indices are automatically assigned to each item by the engine.
+Возвращает индекс элемента с указанным ``text``. Индексы автоматически присваиваются каждому элементу движком.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Примечание:** Этот метод реализован в macOS и Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -1190,13 +1190,13 @@ Returns the index of the item with the specified ``text``. Indices are automatic
 
 :ref:`int<class_int>` **set_item_index**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, target_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_index>`
 
-Changes the index of the item at index ``idx`` to be at index ``target_idx``. This can be used to move an item above other items.
+Изменяет индекс элемента с индексом ``idx`` на индекс ``target_idx``. Это можно использовать для перемещения элемента выше других элементов.
 
-Returns the new index of the moved item, it's not guaranteed to be the same as ``target_idx``.
+Возвращает новый индекс перемещенного элемента, не гарантируется, что он будет совпадать с ``target_idx``.
 
-\ **Note:** The indices of any items between index ``idx`` and index ``target_idx`` will be shifted by one.
+\ **Примечание:** Индексы любых элементов между индексом ``idx`` и индексом ``target_idx`` будут сдвинуты на единицу.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Примечание:** Этот метод реализован в macOS и Windows.
 
 .. rst-class:: classref-item-separator
 

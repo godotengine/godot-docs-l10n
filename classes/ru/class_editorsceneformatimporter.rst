@@ -97,15 +97,15 @@ flags **ImportFlags**: :ref:`🔗<enum_EditorSceneFormatImporter_ImportFlags>`
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_USE_NAMED_SKIN_BINDS** = ``16``
 
-If checked, use named :ref:`Skin<class_Skin>`\ s for animation. The :ref:`MeshInstance3D<class_MeshInstance3D>` node contains 3 properties of relevance here: a skeleton :ref:`NodePath<class_NodePath>` pointing to the :ref:`Skeleton3D<class_Skeleton3D>` node (usually ``..``), a mesh, and a skin:
+Если этот параметр отмечен, используйте именованные :ref:`Skin<class_Skin>` для анимации. Узел :ref:`MeshInstance3D<class_MeshInstance3D>` содержит 3 важных свойства: скелет :ref:`NodePath<class_NodePath>`, указывающий на узел :ref:`Skeleton3D<class_Skeleton3D>` (обычно ``..``), сетку и скин:
 
-- The :ref:`Skeleton3D<class_Skeleton3D>` node contains a list of bones with names, their pose and rest, a name, and a parent bone.
+- Узел :ref:`Skeleton3D<class_Skeleton3D>` содержит список костей с именами, их позами и состояниями покоя, имя и родительскую кость.
 
-- The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
+- Сетка содержит все необходимые данные о вершинах для отображения сетки. С точки зрения сетки, она знает, как происходит распределение весов вершин, и использует некоторую внутреннюю нумерацию, часто импортируемую из программного обеспечения для 3D-моделирования.
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For each of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the :ref:`Skin<class_Skin>` contains each bone's name (if this flag is enabled), or the bone's index within the :ref:`Skeleton3D<class_Skeleton3D>` list (if this flag is disabled).
+- Скин содержит информацию, необходимую для привязки этой сетки к этому Skeleton3D. Для каждого из внутренних идентификаторов костей, выбранных программным обеспечением для 3D-моделирования, он содержит две вещи. Во-первых, матрицу, известную как матрица привязки позы, обратная матрица привязки или сокращенно IBM. Во-вторых, :ref:`Skin<class_Skin>` содержит имя каждой кости (если этот флаг включен) или индекс кости в списке :ref:`Skeleton3D<class_Skeleton3D>` (если этот флаг отключен).
 
-Together, this information is enough to tell Godot how to use the bone poses in the :ref:`Skeleton3D<class_Skeleton3D>` node to render the mesh from each :ref:`MeshInstance3D<class_MeshInstance3D>`. Note that each :ref:`MeshInstance3D<class_MeshInstance3D>` may share binds, as is common in models exported from Blender, or each :ref:`MeshInstance3D<class_MeshInstance3D>` may use a separate :ref:`Skin<class_Skin>` object, as is common in models exported from other tools such as Maya.
+Вместе эта информация достаточна, чтобы сообщить Godot, как использовать позы костей в узле :ref:`Skeleton3D<class_Skeleton3D>` и для рендеринга сетки каждого :ref:`MeshInstance3D<class_MeshInstance3D>`. Обратите внимание, что каждый :ref:`MeshInstance3D<class_MeshInstance3D>` может использовать общие привязки, как это часто бывает в моделях, экспортированных из Blender, или каждый :ref:`MeshInstance3D<class_MeshInstance3D>` может использовать отдельный объект :ref:`Skin<class_Skin>`, как это часто бывает в моделях, экспортированных из других инструментов, таких как Maya.
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_DISCARD_MESHES_AND_MATERIALS:
 
@@ -113,7 +113,7 @@ Together, this information is enough to tell Godot how to use the bone poses in 
 
 :ref:`ImportFlags<enum_EditorSceneFormatImporter_ImportFlags>` **IMPORT_DISCARD_MESHES_AND_MATERIALS** = ``32``
 
-Ignore meshes and materials on import. When importing a scene as an :ref:`AnimationLibrary<class_AnimationLibrary>`, this flag is always enabled.
+Игнорировать сетки и материалы при импорте. При импорте сцены в формате :ref:`AnimationLibrary<class_AnimationLibrary>` этот флаг всегда включен.
 
 .. _class_EditorSceneFormatImporter_constant_IMPORT_FORCE_DISABLE_MESH_COMPRESSION:
 

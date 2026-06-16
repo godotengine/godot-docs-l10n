@@ -7,7 +7,7 @@ AnimationLibrary
 
 **Eredita:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Contenitore per le risorse di :ref:`Animation<class_Animation>`.
+Contenitore per le risorse :ref:`Animation<class_Animation>`.
 
 .. rst-class:: classref-introduction-group
 

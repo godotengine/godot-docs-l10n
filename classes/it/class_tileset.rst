@@ -765,7 +765,7 @@ Cancella i tile proxy che puntano a tasselli non validi.
 
 |void| **clear_terrains**\ (\ terrain_set\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_clear_terrains>`
 
-Clears all terrain properties for the given terrain set.
+Cancella tutte le proprietà di terreno per l'insieme di terreni fornito.
 
 .. rst-class:: classref-item-separator
 

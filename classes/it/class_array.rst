@@ -682,9 +682,9 @@ Se ``deep`` è ``true``, viene restituita una copia **profonda**: anche tutti gl
 
 :ref:`Array<class_Array>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`int<class_int>` = 1\ ) |const| :ref:`🔗<class_Array_method_duplicate_deep>`
 
-Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+Duplica questo array profondamente, come :ref:`duplicate()<class_Array_method_duplicate>` quando si passa ``true``, con più controllo su come le sotto-risorse sono gestite.
 
-\ ``deep_subresources_mode`` must be one of the values from :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. By default, only internal resources will be duplicated (recursively).
+\ ``deep_subresources_mode`` deve essere uno dei valori di :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. Come predefinito, solo le risorse interne saranno duplicate (ricorsivamente).
 
 .. rst-class:: classref-item-separator
 

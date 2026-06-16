@@ -2522,7 +2522,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_RESIZE_DISABLED** = ``0``
 
-該視窗不能通過拖動其調整大小的手柄來調整大小。但仍然可以使用 :ref:`window_set_size()<class_DisplayServer_method_window_set_size>` 調整視窗大小。全屏視窗會忽略該旗標。
+The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`. This flag is ignored for full screen windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_BORDERLESS:
 
@@ -2530,7 +2532,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_BORDERLESS** = ``1``
 
-該視窗沒有原生標題列和其他裝飾。全屏視窗會忽略該旗標。
+The window do not have native title bar and other decorations. This flag is ignored for full-screen windows.
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_ALWAYS_ON_TOP:
 
@@ -2538,7 +2542,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_ALWAYS_ON_TOP** = ``2``
 
-該視窗懸浮在所有其他視窗之上。全屏視窗會忽略該旗標。
+The window is floating on top of all other windows. This flag is ignored for full-screen windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_TRANSPARENT:
 
@@ -2560,7 +2566,9 @@ The window background can be transparent.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_NO_FOCUS** = ``4``
 
-該視窗無法獲得焦點。無聚焦視窗會忽略除滑鼠點擊外的所有輸入。
+The window can't be focused. No-focus window will ignore all input, except mouse clicks.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_POPUP:
 
@@ -2568,7 +2576,9 @@ The window background can be transparent.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP** = ``5``
 
-視窗是功能表或 :ref:`OptionButton<class_OptionButton>` 下拉式功能表的一部分。當視窗可見時，不能更改該旗標。活動的快顯視窗會以獨佔的形式接收所有輸入，但不會從其父視窗竊取焦點。當在其外部點擊或切換套用程式時，快顯視窗將會自動關閉。 快顯視窗必須已經設定了臨時父級（參見 :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`\ ）。
+Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`).
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE:
 
@@ -2590,7 +2600,9 @@ The window background can be transparent.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-所有滑鼠事件都被傳遞到同一套用程式的底層視窗。
+All mouse events are passed to the underlying window of the same application.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_SHARP_CORNERS:
 
@@ -2622,6 +2634,8 @@ Window is excluded from screenshots taken by :ref:`screen_get_image()<class_Disp
 
 Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
 
+\ **Note:** This flag is implemented on Linux (Wayland).
+
 .. _class_DisplayServer_constant_WINDOW_FLAG_MINIMIZE_DISABLED:
 
 .. rst-class:: classref-enumeration-constant
@@ -2630,7 +2644,7 @@ Signals the window manager that this window is supposed to be an implementation-
 
 Window minimize button is disabled.
 
-\ **Note:** This flag is implemented on macOS and Windows.
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAXIMIZE_DISABLED:
 
@@ -2640,7 +2654,7 @@ Window minimize button is disabled.
 
 Window maximize button is disabled.
 
-\ **Note:** This flag is implemented on macOS and Windows.
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAX:
 

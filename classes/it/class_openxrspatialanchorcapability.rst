@@ -114,7 +114,7 @@ Calls :ref:`create_persistence_context()<class_OpenXRSpatialAnchorCapability_met
 
 :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` **create_new_anchor**\ (\ transform\: :ref:`Transform3D<class_Transform3D>`, spatial_context\: :ref:`RID<class_RID>` = RID(), next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_create_new_anchor>`
 
-Crea un nuovo punto di ancoraggio che sarà tracciato dal runtime XR. ``transform`` deve essere una trasformazione nello spazio locale del nodo :ref:`XROrigin3D<class_XROrigin3D>`. Se ``spatial_context`` non è specificato, sarà utilizzato il valore predefinito; ciò richiede che :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection()<class_ProjectSettings_method_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>` sia impostato. Il tracker restituito traccerà la posizione nel caso in cui lo spazio di riferimento cambi.
+Crea un nuovo punto di ancoraggio che sarà tracciato dal runtime XR. ``transform`` deve essere una trasformazione nello spazio locale del nodo :ref:`XROrigin3D<class_XROrigin3D>`. Se ``spatial_context`` non è specificato, sarà utilizzato il valore predefinito; ciò richiede che :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>` sia impostato. Il tracker restituito traccerà la posizione nel caso in cui lo spazio di riferimento cambi.
 
 \ ``next`` deve essere un oggetto next valido per la catena ``XrSpatialAnchorCreateInfoEXT``.
 

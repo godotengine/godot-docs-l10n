@@ -291,7 +291,7 @@ Se implementato, il metodo deve restituire un valore booleano. ``true`` termina 
 
 :ref:`bool<class_bool>` **_process**\ (\ delta\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_MainLoop_private_method__process>`
 
-Chiamato su ogni frame inattivo, prima del rendering e dopo l'elaborazione dei tick di fisica. ``delta`` è il tempo tra i frame in secondi. Equivalente a :ref:`Node._process()<class_Node_private_method__process>`.
+Chiamato su ogni frame di inattività, prima del rendering e dopo l'elaborazione dei tick di fisica. ``delta`` è il tempo tra i frame in secondi. Equivalente a :ref:`Node._process()<class_Node_private_method__process>`.
 
 Se implementato, il metodo deve restituire un valore booleano. ``true`` termina il ciclo principale, mentre ``false`` gli consente di procedere al frame successivo.
 

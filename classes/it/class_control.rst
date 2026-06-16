@@ -899,7 +899,7 @@ Aggancia tutti e 4 gli ancoraggi al lato superiore del controllo padre. L'offset
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_RIGHT_WIDE** = ``11``
 
-Aggancia tutti e 4 gli ancoraggi al lato superiore del controllo padre. L'offset destro diventa relativo al bordo destro e l'offset superiore relativo all'angolo superiore destro del nodo padre. Da utilizzare con :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+Aggancia tutti e 4 gli ancoraggi al lato destro del controllo padre. L'offset destro diventa relativo al bordo destro e l'offset superiore relativo all'angolo superiore destro del nodo padre. Da utilizzare con :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
 
 .. _class_Control_constant_PRESET_BOTTOM_WIDE:
 
@@ -3231,7 +3231,7 @@ Returns the combined value of :ref:`pivot_offset<class_Control_property_pivot_of
 
 :ref:`CursorShape<enum_Control_CursorShape>` **get_cursor_shape**\ (\ at_position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const| :ref:`🔗<class_Control_method_get_cursor_shape>`
 
-Restituisce la forma del cursore del mouse per questo controllo quando si passa il mouse sulla posizione ``position`` in coordinate locali. Per la maggior parte dei controlli, questo è uguale a :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`, ma alcuni controlli integrati implementano una logica più complessa.
+Restituisce la forma del cursore del mouse per questo controllo quando si passa il mouse sulla posizione ``at_position`` in coordinate locali. Per la maggior parte dei controlli, questo è uguale a :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`, ma alcuni controlli integrati implementano una logica più complessa.
 
 È possibile sovrascrivere :ref:`_get_cursor_shape()<class_Control_private_method__get_cursor_shape>` per implementare un comportamento personalizzato per questo metodo.
 

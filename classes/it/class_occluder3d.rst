@@ -9,7 +9,7 @@ Occluder3D
 
 **Ereditato da:** :ref:`ArrayOccluder3D<class_ArrayOccluder3D>`, :ref:`BoxOccluder3D<class_BoxOccluder3D>`, :ref:`PolygonOccluder3D<class_PolygonOccluder3D>`, :ref:`QuadOccluder3D<class_QuadOccluder3D>`, :ref:`SphereOccluder3D<class_SphereOccluder3D>`
 
-Risorsa di forma dell'occlusore da utilizzare con l'occlusion culling in :ref:`OccluderInstance3D<class_OccluderInstance3D>`.
+Risorsa forma dell'occlusore da utilizzare con l'occlusion culling in :ref:`OccluderInstance3D<class_OccluderInstance3D>`.
 
 .. rst-class:: classref-introduction-group
 

@@ -116,7 +116,7 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 |void| **blit_rect**\ (\ rect\: :ref:`Rect2i<class_Rect2i>`, source\: :ref:`Texture2D<class_Texture2D>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), mipmap\: :ref:`int<class_int>` = 0, material\: :ref:`Material<class_Material>` = null\ ) :ref:`🔗<class_DrawableTexture2D_method_blit_rect>`
 
-**Экспериментальное:** This function and its parameters are likely to change in the 4.7 Dev Cycle
+**Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
 Рисует на заданном ``rect`` участке этой текстуры, копируя изображение из заданного ``source``. В качестве цвета для шейдера можно передать ``modulate``, но по умолчанию он белый. Значение ``mipmap`` позволяет указать отрисовку на более низком уровне мипмапа. Параметр ``material`` может принимать объект ShaderMaterial с шейдером TextureBlit для настройки поведения отрисовки.
 
@@ -130,7 +130,7 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 |void| **blit_rect_multi**\ (\ rect\: :ref:`Rect2i<class_Rect2i>`, sources\: :ref:`Array<class_Array>`\[:ref:`Texture2D<class_Texture2D>`\], extra_targets\: :ref:`Array<class_Array>`\[:ref:`DrawableTexture2D<class_DrawableTexture2D>`\], modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), mipmap\: :ref:`int<class_int>` = 0, material\: :ref:`Material<class_Material>` = null\ ) :ref:`🔗<class_DrawableTexture2D_method_blit_rect_multi>`
 
-**Экспериментальное:** This function and its parameters are likely to change in the 4.7 Dev Cycle
+**Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
 Рисует на заданном ``rect`` участке этой текстуры, а также на не более чем 3 объектах DrawableTexture ``extra_targets``. Все ``extra_targets`` должны иметь тот же размер и формат DrawableFormat, что и исходный целевой объект, иначе шейдер может завершиться ошибкой. Ожидает до 4 объектов Texture ``sources``, но заменит отсутствующие ``sources`` текстурами Black по умолчанию.
 
@@ -192,7 +192,7 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 |void| **setup**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, format\: :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), use_mipmaps\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_DrawableTexture2D_method_setup>`
 
-**Экспериментальное:** This function and its parameters are likely to change in the 4.7 Dev Cycle
+**Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
 Инициализирует DrawableTexture белой текстурой заданных параметров: ``width``, ``height`` и ``format``.
 

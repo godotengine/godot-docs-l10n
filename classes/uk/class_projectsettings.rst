@@ -14,13 +14,13 @@ ProjectSettings
 Опис
 --------
 
-Зберігати змінні, які можна отримати з усього світу. Використовуйте :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` або :ref:`has_setting()<class_ProjectSettings_method_has_setting>` для доступу до них. Варіанти, що зберігаються в ``project.godot``, також завантажуються в **ProjectSettings**, що робить цей об'єкт дуже корисним для читання користувацького налаштування ігор.
+Stores variables that can be accessed from everywhere. Use :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` or :ref:`has_setting()<class_ProjectSettings_method_has_setting>` to access them. Variables stored in ``project.godot`` are also loaded into **ProjectSettings**, making this object very useful for reading custom game configuration options.
 
-При налаштуванні майна Проекту використовується повний шлях до налаштування, в тому числі категорії. Наприклад, ``"application/config/name"`` для назви проекту. Категорія та назви нерухомості можна переглянути в діалоговому вікні Параметри проекту.
+When naming a Project Settings property, use the full path to the setting including the category. For example, ``"application/config/name"`` for the project name. Category and property names can be viewed in the Project Settings dialog.
 
-\ **Основні теги:** Параметри проекту можуть передаватися для конкретних платформ і конфігурацій (debug, реліз, ...) за допомогою :doc:`Подивитися теги <../tutorials/export/feature_tags>`.
+\ **Feature tags:** Project settings can be overridden for specific platforms and configurations (debug, release, ...) using :doc:`feature tags <../tutorials/export/feature_tags>`.
 
-\ **Посилення:** Будь-яке налаштування проекту може бути передано шляхом створення файлу ``override.cfg`` в кореневому каталозі проекту. Це також можна використовувати в експортованих проектах, розміщуючи цей файл в одному каталозі, оскільки проект бінарний. Передача все ще займе базові налаштування проекту :doc:`Подивитися теги <../tutorials/export/feature_tags>` в обліковому записі. Таким чином, переконайтеся, що *також* перенаправляйте налаштування з бажаними тегами функцій, якщо ви хочете, щоб вони перевизнали базові параметри проекту на всіх платформах та налаштуваннях.
+\ **Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This file is in the same format as ``project.godot``, and can also be written using :ref:`ConfigFile<class_ConfigFile>`. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' :doc:`feature tags <../tutorials/export/feature_tags>` in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
 
 .. rst-class:: classref-introduction-group
 
@@ -5823,7 +5823,7 @@ MSDF Завантаження шрифту може поєднуватися з 
 
 :ref:`float<class_float>` **gui/timers/button_shortcut_feedback_highlight_time** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_gui/timers/button_shortcut_feedback_highlight_time>`
 
-When :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` is enabled, this is the time the :ref:`BaseButton<class_BaseButton>` will remain highlighted after a shortcut. This duration is not affected by :ref:`Engine.time_scale<class_Engine_property_time_scale>`.
+Якщо параметр :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` увімкнено, це час, протягом якого :ref:`BaseButton<class_BaseButton>` залишатиметься підсвіченим після натискання комбінації клавіш. На цю тривалість не впливає параметр :ref:`Engine.time_scale<class_Engine_property_time_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -14719,9 +14719,9 @@ OIDN використовуватиме прискорення GPU при ная
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ ) :ref:`🔗<class_ProjectSettings_method_save>`
 
-Заощаджує конфігурацію на файл ``project.godot``.
+Saves the configuration to the ``project.godot`` file.
 
-\ **Примітка:** Цей метод призначений для використання плагінів редактора, як модифікованих **ProjectSettings** не може бути завантажений назад в запущеному додатку. Якщо ви хочете змінити налаштування проекту в експортованих проектах, скористайтеся :ref:`save_custom()<class_ProjectSettings_method_save_custom>` для збереження ``override.cfg`` файл.
+\ **Note:** This method is intended to be used by editor plugins, as modified **ProjectSettings** can't be loaded back in the running app. If you want to change project settings in exported projects, use :ref:`save_custom()<class_ProjectSettings_method_save_custom>` to save an ``override.cfg`` file.
 
 .. rst-class:: classref-item-separator
 
@@ -14733,7 +14733,7 @@ OIDN використовуватиме прискорення GPU при ная
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_custom**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ProjectSettings_method_save_custom>`
 
-Заощаджує конфігурацію на власний файл. Розширення файлу повинно бути ``.godot`` (збережіть в текстовому форматі :ref:`ConfigFile<class_ConfigFile>`) або ``.binary`` (збережіть в бінарному форматі). Ви також можете зберегти ``override.cfg`` файл, який також текст, але можна використовувати в експортованих проектах на відміну від інших форматів.
+Saves the configuration to a custom file. The file extension must be ``.godot`` (to save in text-based :ref:`ConfigFile<class_ConfigFile>` format) or ``.binary`` (to save in binary format). You can also save an ``override.cfg`` file, which is also text, but can be used in exported projects unlike other formats.
 
 .. rst-class:: classref-item-separator
 

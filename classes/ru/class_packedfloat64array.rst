@@ -12,15 +12,15 @@ PackedFloat64Array
 Описание
 ----------------
 
-An array specifically designed to hold 64-bit floating-point values (double). Packs data tightly, so it saves memory for large array sizes.
+Массив, специально разработанный для хранения 64-битных чисел с плавающей запятой (типа double). Плотно упаковывает данные, поэтому экономит память при больших размерах массива.
 
-If you only need to pack 32-bit floats tightly, see :ref:`PackedFloat32Array<class_PackedFloat32Array>` for a more memory-friendly alternative.
+Если вам нужно плотно упаковывать только 32-битные числа с плавающей запятой, см. :ref:`PackedFloat32Array<class_PackedFloat32Array>` для более экономичной с точки зрения памяти альтернативы.
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedFloat64Array** versus ``Array[float]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **Различия между упакованными массивами, типизированными массивами и нетипизированными массивами:** Упакованные массивы, как правило, быстрее итерируются и изменяются по сравнению с типизированным массивом того же типа (например, **PackedFloat64Array** против ``Array[float]``). Кроме того, упакованные массивы потребляют меньше памяти. В качестве недостатка, упакованные массивы менее гибкие, поскольку они не предлагают столько удобных методов, таких как :ref:`Array.map()<class_Array_method_map>`. Типизированные массивы, в свою очередь, быстрее итерируются и изменяются, чем нетипизированные массивы.
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedFloat64Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **Примечание:** Упакованные массивы всегда передаются по ссылке. Чтобы получить копию массива, которую можно изменять независимо от исходного массива, используйте :ref:`duplicate()<class_PackedFloat64Array_method_duplicate>`. Это *не* относится к встроенным свойствам и методам. В этих случаях возвращаемый упакованный массив является копией, и его изменение *не* повлияет на исходное значение. Чтобы обновить встроенное свойство этого типа, измените возвращаемый массив, а затем снова присвойте его свойству.
 
-\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
+\ **Примечание:** В логическом контексте упакованный массив будет оцениваться как ``false``, если он пуст. В противном случае упакованный массив всегда будет оцениваться как ``true``.
 
 .. note::
 

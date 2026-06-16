@@ -132,9 +132,9 @@ Ridimensiona la texture per adattarla al rettangolo di delimitazione del nodo.
 
 :ref:`StretchMode<enum_TextureRect_StretchMode>` **STRETCH_TILE** = ``1``
 
-Tile inside the node's bounding rectangle.
+Ripete all'interno del rettangolo di delimitazione del nodo.
 
-\ **Note:** :ref:`STRETCH_TILE<class_TextureRect_constant_STRETCH_TILE>` mode is not supported for :ref:`texture<class_TextureRect_property_texture>` set to an :ref:`AtlasTexture<class_AtlasTexture>` with non-zero :ref:`AtlasTexture.margin<class_AtlasTexture_property_margin>`.
+\ **Nota:** La modalità :ref:`STRETCH_TILE<class_TextureRect_constant_STRETCH_TILE>` non è supportata per :ref:`texture<class_TextureRect_property_texture>` impostata su un :ref:`AtlasTexture<class_AtlasTexture>` con :ref:`AtlasTexture.margin<class_AtlasTexture_property_margin>` diverso da zero.
 
 .. _class_TextureRect_constant_STRETCH_KEEP:
 

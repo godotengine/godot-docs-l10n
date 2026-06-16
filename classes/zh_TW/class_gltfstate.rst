@@ -334,7 +334,7 @@ The folder path associated with this glTF data. This is used to find other files
 - |void| **set_copyright**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_copyright**\ (\ )
 
-The copyright string in the asset header of the glTF file. This is set during import if present and export if non-empty. See the glTF asset header documentation for more information.
+GLTF 檔案素材標頭中的版權字串。如果存在，則在匯入期間設定，如果非空，則在匯出期間設定。有關詳細信息，請參閱 GLTF 素材標頭說明文件。
 
 .. rst-class:: classref-item-separator
 

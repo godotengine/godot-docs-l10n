@@ -28,7 +28,7 @@ OmniLight3D
 Посібники
 ------------------
 
-- :doc:`3D світло та тіні <../tutorials/3d/lights_and_shadows>`
+- `3D світло та тіні <../tutorials/3d/lights_and_shadows.html#omni-light>`__
 
 - :doc:`Захоплення глобального освітлення <../tutorials/3d/global_illumination/faking_global_illumination>`
 

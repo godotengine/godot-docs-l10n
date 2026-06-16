@@ -477,7 +477,7 @@ enum **CursorShape**: :ref:`🔗<enum_Input_CursorShape>`
 - |void| **set_ignore_joypad_on_unfocused_application**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignoring_joypad_on_unfocused_application**\ (\ )
 
-If ``true``, joypad input (including motion sensors) and LED light changes will be ignored and joypad vibration will be stopped when the application is not focused.
+Если ``true``, ввод с геймпада (включая датчики движения) и изменения светодиодной индикации будут игнорироваться, а вибрация геймпада будет прекращена, когда приложение не находится в фокусе.
 
 .. rst-class:: classref-item-separator
 
@@ -574,11 +574,11 @@ If ``true``, joypad input (including motion sensors) and LED light changes will 
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Clears the calibration information for the specified joypad's motion sensors, if it has any and if they were calibrated.
+Очищает информацию о калибровке датчиков движения указанного геймпада, если таковые имеются и были ли они откалиброваны.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+См. :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` для примера использования датчиков движения и калибровки геймпада в играх.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -664,9 +664,9 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 :ref:`Array<class_Array>`\[:ref:`int<class_int>`\] **get_connected_joypads**\ (\ ) :ref:`🔗<class_Input_method_get_connected_joypads>`
 
-Returns an :ref:`Array<class_Array>` containing the device IDs of all currently connected joypads.
+Возвращает массив, содержащий идентификаторы всех подключенных в данный момент джойстиков.
 
-\ **Note:** The order of connected joypads can not be guaranteed to be the same after a project and/or the editor is restarted, because Godot doesn't save the order of joypad connections. Joypads are registered in the order they are discovered by Godot.
+\ **Примечание:** Порядок подключенных джойстиков не может быть гарантированно сохранен после перезапуска проекта и/или редактора, поскольку Godot не сохраняет порядок подключения джойстиков. Джойстики регистрируются в том порядке, в котором они были обнаружены Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -724,19 +724,19 @@ Returns an :ref:`Array<class_Array>` containing the device IDs of all currently 
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns the acceleration, including the force of gravity, in m/s² of the joypad's accelerometer sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`get_joy_gravity()<class_Input_method_get_joy_gravity>` and :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+Возвращает ускорение, включая силу тяжести, в м/с², измеренное акселерометром джойстика, если джойстик имеет такой датчик и он в данный момент включен. В противном случае метод возвращает :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. См. также :ref:`get_joy_gravity()<class_Input_method_get_joy_gravity>` и :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
 
-For a joypad held in front of you, the returned axes are defined as follows:
+Для джойстика, удерживаемого перед вами, возвращаемые оси определяются следующим образом:
 
-+X ... -X: left ... right;
++X ... -X: влево ... вправо;
 
-+Y ... -Y: bottom ... top;
++Y ... -Y: вниз ... вверх;
 
-+Z ... -Z: farther ... closer.
++Z ... -Z: дальше ... ближе.
 
-The gravity part value is measured as a vector with length of ``9.8`` away from the center of the Earth, which is a negative Y value.
+Значение гравитации измеряется как вектор длиной ``9.8`` от центра Земли, что соответствует отрицательному значению Y.
 
-\ **Note:** This feature is only supported on Windows, Linux, and macOS. On iOS, joypad accelerometer sensor reading is not supported due to OS limitations.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux и macOS. На iOS считывание данных с акселерометра джойстика не поддерживается из-за ограничений ОС.
 
 .. rst-class:: classref-item-separator
 
@@ -762,19 +762,19 @@ The gravity part value is measured as a vector with length of ``9.8`` away from 
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns the gravity in m/s² of the joypad's accelerometer sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`get_joy_accelerometer()<class_Input_method_get_joy_accelerometer>` and :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+Возвращает значение силы тяжести в м/с², полученное с помощью акселерометра джойстика, если джойстик им оснащен и в данный момент включен. В противном случае метод возвращает :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. См. также :ref:`get_joy_accelerometer()<class_Input_method_get_joy_accelerometer>` и :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
 
-For a joypad held in front of you, the returned axes are defined as follows:
+Для джойстика, удерживаемого перед вами, возвращаемые оси определяются следующим образом:
 
-+X ... -X: left ... right;
++X ... -X: влево ... вправо;
 
-+Y ... -Y: bottom ... top;
++Y ... -Y: вниз ... вверх;
 
-+Z ... -Z: farther ... closer.
++Z ... -Z: дальше ... ближе.
 
-The gravity part value is measured as a vector with length of ``9.8`` away from the center of the Earth, which is a negative Y value.
+Значение силы тяжести измеряется как вектор длиной ``9.8`` от центра Земли, что соответствует отрицательному значению Y.
 
-\ **Note:** This feature is only supported on Windows, Linux, and macOS. On iOS, joypad accelerometer sensor reading is not supported due to OS limitations.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux и macOS. На iOS считывание данных с акселерометра джойстика не поддерживается из-за ограничений ОС.
 
 .. rst-class:: classref-item-separator
 
@@ -786,9 +786,9 @@ The gravity part value is measured as a vector with length of ``9.8`` away from 
 
 :ref:`String<class_String>` **get_joy_guid**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_guid>`
 
-Returns an SDL-compatible device GUID on platforms that use gamepad remapping, e.g. ``030000004c050000c405000000010000``. Returns an empty string if it cannot be found. Godot uses SDL's internal mappings, supplemented by community-contributed mappings, to determine gamepad names and mappings based on this GUID.
+Возвращает GUID устройства, совместимого с SDL, на платформах, использующих переназначение кнопок геймпада, например, ``030000004c050000c405000000010000``. Возвращает пустую строку, если устройство не найдено. Godot использует внутренние сопоставления SDL, дополненные сопоставлениями, предоставленными сообществом, для определения имен и сопоставлений геймпадов на основе этого GUID.
 
-On Windows, all XInput joypad GUIDs will be overridden by Godot to ``__XINPUT_DEVICE__``, because their mappings are the same.
+В Windows все GUID геймпадов XInput будут переопределены Godot на ``__XINPUT_DEVICE__``, поскольку их сопоставления одинаковы.
 
 .. rst-class:: classref-item-separator
 
@@ -802,21 +802,21 @@ On Windows, all XInput joypad GUIDs will be overridden by Godot to ``__XINPUT_DE
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns the rotation rate in rad/s around a joypad's X, Y, and Z axes of the gyroscope sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+Возвращает скорость вращения в рад/с вокруг осей X, Y и Z датчика гироскопа джойстика, если джойстик имеет датчик и он в данный момент включен. В противном случае метод возвращает :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. См. метод :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
 
-The rotation is positive in the counter-clockwise direction.
+Вращение положительное и направлено против часовой стрелки.
 
-For a joypad held in front of you, the returned axes are defined as follows:
+Для джойстика, удерживаемого перед вами, возвращаемые оси определяются следующим образом:
 
-X: Angular speed around the X axis (pitch);
+X: Угловая скорость вокруг оси X (тангаж);
 
-Y: Angular speed around the Y axis (yaw);
+Y: Угловая скорость вокруг оси Y (рыскание);
 
-Z: Angular speed around the Z axis (roll).
+Z: Угловая скорость вокруг оси Z (крен).
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad gyroscope and gyroscope calibration in your games.
+См. :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` для примера использования гироскопа джойстика и калибровки гироскопа в ваших играх.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -828,25 +828,25 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 :ref:`Dictionary<class_Dictionary>` **get_joy_info**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_info>`
 
-Returns a dictionary with extra platform-specific information about the device, e.g. the raw gamepad name from the OS or the Steam Input index.
+Возвращает словарь с дополнительной информацией об устройстве, специфичной для платформы, например, исходное имя геймпада из ОС или индекс Steam Input.
 
-On Windows, Linux, macOS, and iOS, the dictionary contains the following fields:
+В Windows, Linux, macOS и iOS словарь содержит следующие поля:
 
-\ ``raw_name``: The name of the controller as it came from the OS, before getting renamed by the controller database.
+\ ``raw_name``: имя контроллера, как оно было получено из ОС до переименования в базе данных контроллеров.
 
-\ ``vendor_id``: The USB vendor ID of the device.
+\ ``vendor_id``: идентификатор производителя USB-устройства.
 
-\ ``product_id``: The USB product ID of the device.
+\ ``product_id``: идентификатор продукта USB-устройства.
 
-\ ``serial_number``: The serial number of the device. This key won't be present if the serial number is unavailable.
+\ ``serial_number``: серийный номер устройства. Этот ключ будет отсутствовать, если серийный номер недоступен.
 
-The dictionary can also include the following fields under selected platforms:
+Словарь также может включать следующие поля для выбранных платформ:
 
-\ ``steam_input_index``: The Steam Input gamepad index (Windows, Linux, and macOS only). If the device is not a Steam Input device this key won't be present.
+\ ``steam_input_index``: индекс геймпада Steam Input (только для Windows, Linux и macOS). Если устройство не является устройством Steam Input, этот ключ будет отсутствовать.
 
-\ ``xinput_index``: The index of the controller in the XInput system (Windows only). This key won't be present for devices not handled by XInput.
+\ ``xinput_index``: Индекс контроллера в системе XInput (только для Windows). Этот ключ будет отсутствовать для устройств, не обрабатываемых XInput.
 
-\ **Note:** The returned dictionary is always empty on Android and Web.
+\ **Примечание:** Возвращаемый словарь всегда пуст на Android и в веб-версии.
 
 .. rst-class:: classref-item-separator
 
@@ -1365,9 +1365,9 @@ Returns ``true`` if you are pressing the Latin key in the current keyboard layou
 
 :ref:`bool<class_bool>` **is_mouse_button_pressed**\ (\ button\: :ref:`MouseButton<enum_@GlobalScope_MouseButton>`\ ) |const| :ref:`🔗<class_Input_method_is_mouse_button_pressed>`
 
-Returns ``true`` if you are pressing the mouse button specified with :ref:`MouseButton<enum_@GlobalScope_MouseButton>`.
+Возвращает ``true``, если вы нажимаете кнопку мыши, указанную в :ref:`MouseButton<enum_@GlobalScope_MouseButton>`.
 
-\ **Note:** If you want to check if a mouse button was just pressed, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **Примечание:** Если вы хотите проверить, была ли только что нажата кнопка мыши, используйте систему действий ввода Godot с помощью :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` или используйте метод :ref:`Node._input()<class_Node_private_method__input>` следующим образом:
 
 
 .. tabs::
@@ -1376,7 +1376,7 @@ Returns ``true`` if you are pressing the mouse button specified with :ref:`Mouse
 
     func _input(event):
         if event is InputEventMouseButton and event.is_pressed() and event.button_index == MOUSE_BUTTON_LEFT:
-            pass # Your code here.
+            pass # Здесь ваш код.
 
  .. code-tab:: csharp
 
@@ -1384,7 +1384,7 @@ Returns ``true`` if you are pressing the mouse button specified with :ref:`Mouse
     {
         if (@event is InputEventMouseButton eventMouseButton && eventMouseButton.Pressed && eventMouseButton.ButtonIndex == MouseButton.Left)
         {
-            // Your code here.
+            // Здесь ваш код.
         }
     }
 
@@ -1566,11 +1566,11 @@ Returns ``true`` if you are pressing the key in the physical location on the 101
 
 |void| **set_joy_light**\ (\ device\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Input_method_set_joy_light>`
 
-Sets the joypad's LED light, if available, to the specified color. See also :ref:`has_joy_light()<class_Input_method_has_joy_light>`.
+Устанавливает цвет светодиода джойстика (если он есть). См. также :ref:`has_joy_light()<class_Input_method_has_joy_light>`.
 
-\ **Note:** There is no way to get the color of the light from a joypad. If you need to know the assigned color, store it separately.
+\ **Примечание:** Получить цвет подсветки джойстика невозможно. Если вам необходимо знать назначенный цвет, сохраните его отдельно.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1584,11 +1584,11 @@ Sets the joypad's LED light, if available, to the specified color. See also :ref
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Sets the specified joypad's calibration information. See also :ref:`get_joy_motion_sensors_calibration()<class_Input_method_get_joy_motion_sensors_calibration>`.
+Задает информацию о калибровке указанного джойстика. См. также :ref:`get_joy_motion_sensors_calibration()<class_Input_method_get_joy_motion_sensors_calibration>`.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+См. :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` для примера использования датчиков движения и калибровки джойстика в играх.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1602,13 +1602,13 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Enables or disables the motion sensors (accelerometer and gyroscope), if available, on the specified joypad.
+Включает или отключает датчики движения (акселерометр и гироскоп), если они доступны, на указанном джойстике.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+См. :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` для примера использования датчиков движения и калибровки джойстика в играх.
 
-It's recommended to disable the motion sensors when they're no longer being used, because otherwise it might drain the controller battery faster.
+Рекомендуется отключать датчики движения, когда они больше не используются, так как в противном случае это может быстрее разрядить батарею контроллера.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1828,21 +1828,21 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 |void| **vibrate_handheld**\ (\ duration_ms\: :ref:`int<class_int>` = 500, amplitude\: :ref:`float<class_float>` = -1.0\ ) :ref:`🔗<class_Input_method_vibrate_handheld>`
 
-Vibrate the handheld device for the specified duration in milliseconds.
+Вибрировать портативное устройство в течение указанного времени в миллисекундах.
 
-\ ``amplitude`` is the strength of the vibration, as a value between ``0.0`` and ``1.0``. If set to ``-1.0``, the default vibration strength of the device is used.
+\ ``amplitude`` — это сила вибрации, значение которой находится в диапазоне от ``0.0`` до ``1.0``. Если установлено значение ``-1.0``, используется сила вибрации устройства по умолчанию.
 
-\ **Note:** This method is implemented on Android, iOS, and Web. It has no effect on other platforms.
+\ **Примечание:** Этот метод реализован на Android, iOS и Web. Он не оказывает влияния на другие платформы.
 
-\ **Note:** For Android, :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` requires enabling the ``VIBRATE`` permission in the export preset. Otherwise, :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` will have no effect.
+\ **Примечание:** Для Android метод :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` требует включения разрешения ``VIBRATE`` в настройках экспорта. В противном случае метод :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` не будет иметь никакого эффекта.
 
-\ **Note:** For iOS, specifying the duration is only supported in iOS 13 and later.
+\ **Примечание:** Для iOS указание длительности поддерживается только в iOS 13 и более поздних версиях.
 
-\ **Note:** For Web, the amplitude cannot be changed.
+\ **Примечание:** Для Web амплитуду изменить нельзя.
 
-\ **Note:** Some web browsers such as Safari and Firefox for Android do not support :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>`.
+\ **Примечание:** Некоторые веб-браузеры, такие как Safari и Firefox для Android, не поддерживают :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>`.
 
-\ **Note:** Device settings such as vibration on/off, "do not disturb" mode or specific haptic feedback on/off may prevent :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>` effects.
+\ **Примечание:** Настройки устройства, такие как включение/выключение вибрации, режим «не беспокоить» или включение/выключение определенной тактильной обратной связи, могут препятствовать работе :ref:`vibrate_handheld()<class_Input_method_vibrate_handheld>`.
 
 .. rst-class:: classref-item-separator
 

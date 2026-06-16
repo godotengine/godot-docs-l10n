@@ -599,9 +599,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_DISABLED** = ``0``
 
-Вимкнено всі розділи крапель, але все ще дозволяє виявити розділ "в пункті" за допомогою :ref:`get_drop_section_at_position()<class_Tree_method_get_drop_section_at_position>`.
+Disables all drop sections.
 
-\ **Примітка:** Це прапор за замовчуванням, він не має ефекту при поєднанні з іншими прапорами.
+\ **Note:** This is the default flag, it has no effect when combined with other flags.
 
 .. _class_Tree_constant_DROP_MODE_ON_ITEM:
 
@@ -609,9 +609,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_ON_ITEM** = ``1``
 
-Увімкнути розділ "на місці" Цей розділ крапель охоплює весь елемент.
+Enables the "on item" drop section. This drop section covers the entire item.
 
-При поєднанні з :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>` цей розділ краплини половинок висоти і залишається в центрі вертикально.
+When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, this drop section halves in height and stays centered vertically.
 
 .. _class_Tree_constant_DROP_MODE_INBETWEEN:
 
@@ -619,9 +619,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_INBETWEEN** = ``2``
 
-Увімкнено "приблизний елемент" та "повільний елемент" розділи крапель. В розділі «приблизний елемент» покривається верхню половину виробу, а розділ «повільний елемент» охоплює нижню половину.
+Enables "above item" and "below item" drop sections. The "above item" drop section covers the top half of the item, while the "below item" drop section covers the bottom half, and extends downward to the left of any children.
 
-При поєднанні з :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>` ці розділи скидають висоту і залишаються зверху / вниз відповідно.
+When combined with :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, these drop sections halve in height and stay at the top and bottom respectively.
 
 .. rst-class:: classref-item-separator
 
@@ -1171,11 +1171,19 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 
 :ref:`int<class_int>` **get_drop_section_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_drop_section_at_position>`
 
-Повертаємо розділ краплі на ``position``, або -100, якщо там немає.
+Returns the drop section at ``position``, as permitted by enabled :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
 
-Цінності -1, 0, або 1 будуть повернуті на "приблизний елемент", "в пункті", і "повільний елемент" зрізи, відповідно. Див. :ref:`DropModeFlags<enum_Tree_DropModeFlags>` для опису кожного розділу краплі.
+- ``-1`` if the position is **above** the item. Typically used to insert as the item's previous sibling.
 
-Щоб отримати пункт, який повернутий розділ, відносно, скористайтеся :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
+- ``0`` if the position is **on** the item. Typically used to insert as the item's last child.
+
+- ``1`` if the position is **below** the item, when the item has no children. Typically used to insert as the item's next sibling. If the item *does* have children, this section is still reachable by hovering to the left of the item's collapse arrow, and below.
+
+- ``2`` if the position is **below** the item, when the item has children. Typically used to insert as the item's first child.
+
+- ``-100`` if the position is not over any item, or no :ref:`DropModeFlags<enum_Tree_DropModeFlags>` are set.
+
+See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` for a description of each drop region. To get the item which the returned drop section refers to, use :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
 
 .. rst-class:: classref-item-separator
 

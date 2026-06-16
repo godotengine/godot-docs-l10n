@@ -14,9 +14,9 @@ Un'astrazione di una scena serializzata.
 Descrizione
 ----------------------
 
-Un'interfaccia semplificata per un file di scena. Fornisce accesso alle operazioni e alle verifiche che possono essere eseguite sulla risorsa di scena stessa.
+Un'interfaccia semplificata per un file di scena. Fornisce accesso alle operazioni e alle verifiche che si possono effettuare sulla risorsa scena stessa.
 
-Può essere utilizzato per salvare un nodo in un file. Durante il salvataggio, il nodo e tutti i nodi posseduti da esso sono salvati (vedi la proprietà :ref:`Node.owner<class_Node_property_owner>`).
+Può servire per salvare un nodo in un file. Durante il salvataggio, il nodo e tutti i nodi posseduti da esso sono salvati (vedi la proprietà :ref:`Node.owner<class_Node_property_owner>`).
 
 \ **Nota:** Il nodo non deve possedere se stesso.
 

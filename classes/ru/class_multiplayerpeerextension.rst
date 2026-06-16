@@ -102,7 +102,7 @@ MultiplayerPeerExtension
 
 |void| **_disconnect_peer**\ (\ peer\: :ref:`int<class_int>`, force\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_MultiplayerPeerExtension_private_method__disconnect_peer>`
 
-Called when the connected ``peer`` should be forcibly disconnected (see :ref:`MultiplayerPeer.disconnect_peer()<class_MultiplayerPeer_method_disconnect_peer>`).
+Вызывается, когда подключенный ``peer`` должен быть принудительно отключен (см. :ref:`MultiplayerPeer.disconnect_peer()<class_MultiplayerPeer_method_disconnect_peer>`).
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ Called when the connected ``peer`` should be forcibly disconnected (see :ref:`Mu
 
 :ref:`Error<enum_@GlobalScope_Error>` **_put_packet**\ (\ buffer\: ``const uint8_t*``, buffer_size\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_MultiplayerPeerExtension_private_method__put_packet>`
 
-Called when a packet needs to be sent by the :ref:`MultiplayerAPI<class_MultiplayerAPI>`, with ``buffer_size`` being the size of the binary ``buffer`` in bytes.
+Вызывается, когда необходимо отправить пакет через :ref:`MultiplayerAPI<class_MultiplayerAPI>`, при этом ``buffer_size`` — размер двоичного файла ``buffer`` в байтах.
 
 .. rst-class:: classref-item-separator
 

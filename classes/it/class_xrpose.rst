@@ -177,7 +177,7 @@ Il nome di questa posa. Di solito, questo nome è derivato da una mappa di azion
 
 - ``grip`` è la posizione in cui l'utente afferra il controller
 
-- ``skeleton`` è la posizione radice di una mesh di mano, quando si utilizza il tracciamento della mano e uno scheletro animato è fornito dal runtime XR.
+- ``skeleton`` è la posizione radice di una mesh di mano, quando si utilizza il tracciamento delle mani e uno scheletro animato è fornito dal runtime XR.
 
 .. rst-class:: classref-item-separator
 

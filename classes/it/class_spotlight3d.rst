@@ -27,7 +27,7 @@ La luce è emessa nella direzione -Z della base globale del nodo. Per una luce n
 Tutorial
 ----------------
 
-- :doc:`Luci e ombre 3D <../tutorials/3d/lights_and_shadows>`
+- `Luci e ombre 3D <../tutorials/3d/lights_and_shadows.html#spot-light>`__
 
 - :doc:`Fingere l'illuminazione globale <../tutorials/3d/global_illumination/faking_global_illumination>`
 

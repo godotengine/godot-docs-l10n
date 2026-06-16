@@ -7,18 +7,18 @@ SubViewportContainer
 
 **Eredita:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Un contenitore utilizzato per visualizzare il contenuto di un :ref:`SubViewport<class_SubViewport>`.
+Un contenitore utilizzato per visualizzare il contenuto di una :ref:`SubViewport<class_SubViewport>`.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Un contenitore che visualizza il contenuto dei nodi :ref:`SubViewport<class_SubViewport>` figlio sottostanti. Utilizza la dimensione combinata dei :ref:`SubViewport<class_SubViewport>` come dimensione minima, a meno che :ref:`stretch<class_SubViewportContainer_property_stretch>` non sia abilitato.
+Un contenitore che visualizza il contenuto dei nodi :ref:`SubViewport<class_SubViewport>` figlio sottostanti. Utilizza la dimensione combinata delle :ref:`SubViewport<class_SubViewport>` come dimensione minima, a meno che :ref:`stretch<class_SubViewportContainer_property_stretch>` non sia abilitato.
 
 \ **Nota:** Modificare il :ref:`Control.scale<class_Control_property_scale>` di un **SubViewportContainer** distorcerà visivamente il suo contenuto. Per modificare la sua dimensione visiva senza causare distorsioni, regola invece i margini del nodo (se non è già in un contenitore).
 
-\ **Nota:** Il **SubViewportContainer** inoltra le notifiche di ingresso e uscita del mouse ai suoi viewport secondari.
+\ **Nota:** Il **SubViewportContainer** inoltra le notifiche di ingresso e uscita del mouse ai suoi sotto-viewport.
 
 .. rst-class:: classref-reftable-group
 
@@ -91,7 +91,7 @@ Se ``true``, il **SubViewportContainer** stesso sarà considerato come destinazi
 - |void| **set_stretch**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_stretch_enabled**\ (\ )
 
-Se ``true``, la viewport secondaria sarà automaticamente ridimensionata alle dimensioni del controllo.
+Se ``true``, la sotto-viewport sarà automaticamente ridimensionata alle dimensioni del controllo.
 
 \ **Nota:** Se ``true``, questo proibirà il cambiamento manuale di :ref:`SubViewport.size<class_SubViewport_property_size>` dei suoi figli.
 
@@ -110,7 +110,7 @@ Se ``true``, la viewport secondaria sarà automaticamente ridimensionata alle di
 - |void| **set_stretch_shrink**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stretch_shrink**\ (\ )
 
-Divide la risoluzione effettiva della viewport secondaria per questo valore, preservandone la scala. Può essere utilizzato per velocizzare il rendering.
+Divide la risoluzione effettiva della sotto-viewport per questo valore, preservandone la scala. Può essere utilizzato per velocizzare il rendering.
 
 Ad esempio, una viewport secondaria da 1280×720 con :ref:`stretch_shrink<class_SubViewportContainer_property_stretch_shrink>` impostato su ``2`` sarà renderizzata a 640×360, occupando le stesse dimensioni nel contenitore.
 
@@ -133,7 +133,7 @@ Descrizioni dei metodi
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Metodo virtuale da implementare dall'utente. Se restituisce ``true``, l'evento ``event`` viene propagato ai figli :ref:`SubViewport<class_SubViewport>`. La propagazione non avviene se restituisce ``false``. Se la funzione non è implementata, tutti gli eventi vengono propagati ai SubViewport.
+Metodo virtuale da implementare dall'utente. Se restituisce ``true``, l'evento ``event`` viene propagato ai figli :ref:`SubViewport<class_SubViewport>`. La propagazione non avviene se restituisce ``false``. Se la funzione non è implementata, tutti gli eventi vengono propagati alle SubViewport.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

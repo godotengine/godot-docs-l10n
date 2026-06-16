@@ -25,7 +25,9 @@ Durante l'esecuzione, i nodi **Window** non si chiuderanno automaticamente quand
 Tutorial
 ----------------
 
-- :doc:`HDR output <../tutorials/rendering/hdr_output>`
+- :doc:`Output HDR <../tutorials/rendering/hdr_output>`
+
+- `Multiple Windows demo <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -470,7 +472,7 @@ Emitted when the mouse event is received by the custom decoration area defined b
 
 **output_max_linear_value_changed**\ (\ output_max_linear_value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_signal_output_max_linear_value_changed>`
 
-Emitted when the output max linear value returned by :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed. This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen. ``output_max_linear_value`` is the new value.
+Emesso quando il valore lineare massimo di output restituito da :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` è cambiato. Ciò avviene quando l'output HDR è abilitato o disabilitato e quando i valori di luminanza di output HDR della finestra sono cambiati, ad esempio quando il giocatore regola l'impostazione della luminosità dello schermo o sposta la finestra su uno schermo diverso. ``output_max_linear_value`` è il nuovo valore.
 
 .. rst-class:: classref-item-separator
 
@@ -627,7 +629,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_RESIZE_DISABLED** = ``0``
 
-La finestra non può essere ridimensionata trascinando la sua impugnatura di ridimensionamento. È comunque possibile ridimensionare la finestra tramite :ref:`size<class_Window_property_size>`. Questo flag viene ignorato per le finestre a schermo intero. Impostato insieme a :ref:`unresizable<class_Window_property_unresizable>`.
+The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`size<class_Window_property_size>`. This flag is ignored for full screen windows. Set with :ref:`unresizable<class_Window_property_unresizable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_BORDERLESS:
 
@@ -635,7 +639,9 @@ La finestra non può essere ridimensionata trascinando la sua impugnatura di rid
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_BORDERLESS** = ``1``
 
-La finestra non ha la barra del titolo nativa e altre decorazioni. Questo flag viene ignorato per le finestre a schermo intero. Impostato insieme a :ref:`borderless<class_Window_property_borderless>`.
+The window do not have native title bar and other decorations. This flag is ignored for full-screen windows. Set with :ref:`borderless<class_Window_property_borderless>`.
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_ALWAYS_ON_TOP:
 
@@ -643,7 +649,9 @@ La finestra non ha la barra del titolo nativa e altre decorazioni. Questo flag v
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_ALWAYS_ON_TOP** = ``2``
 
-La finestra fluttua sopra tutte le altre finestre. Questo flag viene ignorato per le finestre a schermo intero. Impostato tramite :ref:`always_on_top<class_Window_property_always_on_top>`.
+The window is floating on top of all other windows. This flag is ignored for full-screen windows. Set with :ref:`always_on_top<class_Window_property_always_on_top>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_TRANSPARENT:
 
@@ -651,9 +659,11 @@ La finestra fluttua sopra tutte le altre finestre. Questo flag viene ignorato pe
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_TRANSPARENT** = ``3``
 
-Lo sfondo della finestra può essere trasparente. Impostato con :ref:`transparent<class_Window_property_transparent>`.
+The window background can be transparent. Set with :ref:`transparent<class_Window_property_transparent>`.
 
-\ **Nota:** Questo flag non ha effetto se sia :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, o il :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` della finestra sono impostati su ``false``.
+\ **Note:** This flag has no effect if either :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, or the window's :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is set to ``false``.
+
+\ **Note:** Transparency support is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_NO_FOCUS:
 
@@ -661,7 +671,9 @@ Lo sfondo della finestra può essere trasparente. Impostato con :ref:`transparen
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_NO_FOCUS** = ``4``
 
-La finestra non può essere focalizzata. La finestra impossibile da focalizzare ignorerà tutti gli input, tranne i clic del mouse. Impostato con :ref:`unfocusable<class_Window_property_unfocusable>`.
+The window can't be focused. No-focus window will ignore all input, except mouse clicks. Set with :ref:`unfocusable<class_Window_property_unfocusable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_POPUP:
 
@@ -669,9 +681,9 @@ La finestra non può essere focalizzata. La finestra impossibile da focalizzare 
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP** = ``5``
 
-La finestra fa parte di un menù o :ref:`OptionButton<class_OptionButton>` a tendina. Questo flag non si può cambiare quando la finestra è visibile. Una finestra di popup attiva riceverà esclusivamente tutti gli input, senza rubare il focus dal suo genitore. Le finestre di popup si chiudono automaticamente quando si clicca fuori di esse, o quando si cambia l'applicazione. La finestra di popup deve aver impostato un genitore transitorio (vedi :ref:`transient<class_Window_property_transient>`).
+Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`transient<class_Window_property_transient>`).
 
-\ **Nota:** Questo flag non ha effetto nelle finestre incorporate (a meno che detta finestra non sia un :ref:`Popup<class_Popup>`).
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded :ref:`Popup<class_Popup>` windows.
 
 .. _class_Window_constant_FLAG_EXTEND_TO_TITLE:
 
@@ -679,11 +691,11 @@ La finestra fa parte di un menù o :ref:`OptionButton<class_OptionButton>` a ten
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_EXTEND_TO_TITLE** = ``6``
 
-Il contenuto della finestra viene ampliato alla dimensione completa della finestra. A differenza di una finestra senza bordi, la cornice viene lasciata intatta e può essere utilizzata per ridimensionare la finestra, la barra del titolo è trasparente, ma hanno i pulsanti per minimizzare, massimizzare, e chiudere. Impostato con :ref:`extend_to_title<class_Window_property_extend_to_title>`.
+Window content is expanded to the full size of the window. Unlike borderless window, the frame is left intact and can be used to resize the window, title bar is transparent, but have minimize/maximize/close buttons. Set with :ref:`extend_to_title<class_Window_property_extend_to_title>`.
 
-\ **Nota:** Questo flag è implementato solo su macOS.
+\ **Note:** This flag has no effect in embedded windows.
 
-\ **Nota:** Questo flag non ha effetto nelle finestre incorporate.
+\ **Note:** This flag is implemented only on macOS.
 
 .. _class_Window_constant_FLAG_MOUSE_PASSTHROUGH:
 
@@ -691,9 +703,11 @@ Il contenuto della finestra viene ampliato alla dimensione completa della finest
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-Tutti gli eventi del mouse saranno passati alla finestra sottostante della stessa applicazione.
+All mouse events are passed to the underlying window of the same application.
 
-\ **Nota:** Questa opzione non ha effetto nelle finestre integrate.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows.
 
 .. _class_Window_constant_FLAG_SHARP_CORNERS:
 
@@ -727,7 +741,11 @@ La finestra è esclusa dagli screenshot acquisiti da :ref:`DisplayServer.screen_
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP_WM_HINT** = ``10``
 
-Segnala al gestore delle finestre che questa finestra dovrebbe essere un "popup" definito dall'implementazione (solitamente una finestra figlia mobile, senza bordi, non ordinabile e non modificabile).
+Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (Wayland).
 
 .. _class_Window_constant_FLAG_MINIMIZE_DISABLED:
 
@@ -735,9 +753,11 @@ Segnala al gestore delle finestre che questa finestra dovrebbe essere un "popup"
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MINIMIZE_DISABLED** = ``11``
 
-Il pulsante di minimizzazione della finestra è disabilitato.
+Window minimize button is disabled.
 
-\ **Nota:** Questo metodo è implementato su macOS e Windows.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAXIMIZE_DISABLED:
 
@@ -745,9 +765,11 @@ Il pulsante di minimizzazione della finestra è disabilitato.
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MAXIMIZE_DISABLED** = ``12``
 
-Il pulsante di massimizzazione della finestra è disabilitato.
+Window maximize button is disabled.
 
-\ **Nota:** Questo metodo è implementato su macOS e Windows.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAX:
 
@@ -1317,7 +1339,7 @@ Se ``true``, la finestra nativa verrà utilizzata a prescindere dalla viewport g
 - |void| **set_hdr_output_requested**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hdr_output_requested**\ (\ )
 
-If ``true``, requests HDR output for the **Window**, falling back to SDR if not supported, and automatically switching between HDR and SDR as the window moves between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of this **Window** must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output.
+Se ``true``, richiede l'output HDR per il **Window**, ricorrendo a SDR se non supportato, e passando automaticamente da HDR a SDR quando la finestra si sposta tra gli schermi, cambiano le capacità dello schermo o vengono modificate le impostazioni di sistema. Questo forzerà internamente l'abilitazione di :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` sulla :ref:`Viewport<class_Viewport>` principale. Tutte le altre :ref:`SubViewport<class_SubViewport>` di questa **Window** devono avere la proprietà :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` abilitata per produrre output HDR.
 
 .. rst-class:: classref-item-separator
 
@@ -2803,9 +2825,9 @@ Imposta la direzione del layout e la direzione di scrittura del testo. I layout 
 
 |void| **set_taskbar_progress_state**\ (\ state\: :ref:`ProgressState<enum_DisplayServer_ProgressState>`\ ) :ref:`🔗<class_Window_method_set_taskbar_progress_state>`
 
-Sets the type and state of the progress bar on the taskbar/dock icon of the **Window**. See :ref:`ProgressState<enum_DisplayServer_ProgressState>` for possible values and how each mode behaves.
+Imposta il tipo e lo stato della barra di avanzamento sull'icona della barra delle applicazioni/dock del **Window**. Vedi :ref:`ProgressState<enum_DisplayServer_ProgressState>` per i valori possibili e il comportamento di ciascuna modalità.
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **Nota:** Questo metodo è implementato solo su Windows e macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -2817,11 +2839,11 @@ Sets the type and state of the progress bar on the taskbar/dock icon of the **Wi
 
 |void| **set_taskbar_progress_value**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_method_set_taskbar_progress_value>`
 
-Creates a progress bar on the taskbar/dock icon of the **Window** if it does not exist, sets the progress of the icon.
+Crea una barra di avanzamento sull'icona della barra delle applicazioni/dock del **Window** se non esiste, e imposta l'avanzamento dell'icona.
 
-\ ``value`` acts as a relative percentage value, ranges from ``0.0`` (lowest) to ``1.0`` (highest).
+\ ``value`` rappresenta un valore percentuale relativo, compreso tra ``0.0`` (minimo) e ``1.0`` (massimo).
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **Nota:** Questo metodo è implementato solo su Windows e macOS.
 
 .. rst-class:: classref-item-separator
 

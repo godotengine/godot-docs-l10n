@@ -1146,13 +1146,13 @@ enum **CenterFrom**: :ref:`🔗<enum_SpringBoneSimulator3D_CenterFrom>`
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis>`
 
-当 :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>`\ （独立配置）为 ``true`` 时，此方法用于设置骨骼链关节列表里指定 ``joint``\ （关节）的旋转轴。
+设置当 :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` 为 ``true`` 时，骨骼链关节列表中 ``joint`` 处的旋转轴。
 
-这些轴向是基于参考姿势的空间来确定的；如果 ``axis``\ （轴向）被设为 :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`\ （自定义旋转轴），你就可以指定任意轴向。
+这些轴基于参考姿势的空间。如果 ``axis`` 为 :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`\ ，则可以指定任意轴。
 
-在这里，“参考姿势”指的是模拟开始前那一瞬间的骨骼姿势。
+此处，参考姿势是指模拟开始前的骨骼姿势。
 
-\ **注意：** 旋转轴和前进向量不应处于同一直线上（共线），否则会导致意外的旋转。这是因为 **SpringBoneSimulator3D**\ （弹簧骨骼模拟器）本身并不会计算扭转力。
+\ **注意：**\ 旋转轴和前向向量不应共线，以避免意外旋转，因为 **SpringBoneSimulator3D** 不考虑扭转力。
 
 .. rst-class:: classref-item-separator
 
@@ -1244,11 +1244,11 @@ enum **CenterFrom**: :ref:`🔗<enum_SpringBoneSimulator3D_CenterFrom>`
 
 设置骨骼链的旋转轴。如果设置为特定轴，则其行为类似于铰链关节。该值会缓存在关节列表中的每个关节设置中。
 
-坐标轴基于参考姿势的空间；如果\ ``参数轴``\ 为\ ``常量 SkeletonModifier3D.ROTATION_AXIS_CUSTOM``\ ，则您可以指定任意轴。
+这些轴基于参考姿势的空间，如果 ``axis`` 为 :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`\ ，则可以指定任意轴。
 
-在此处，参考姿势是模拟前的骨骼 姿势姿势。
+此处，参考姿势是指模拟开始前的骨骼姿势。
 
-\ **注意：**\ 旋转轴向量与前向向量不应共线，以避免出现意外旋转，因为\ **SpringBoneSimulator3D**\ 不会考虑扭转力。
+\ **注意：**\ 旋转轴向量和前向向量不应共线，以避免意外旋转，因为 **SpringBoneSimulator3D** 不考虑扭转力。
 
 .. rst-class:: classref-item-separator
 

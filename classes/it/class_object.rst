@@ -340,11 +340,11 @@ Descrizioni dei metodi
 
 :ref:`Variant<class_Variant>` **_get**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__get>`
 
-Override this method to customize the behavior of :ref:`get()<class_Object_method_get>`. Should return the given ``property``'s value, or ``null`` if the ``property`` should be handled normally.
+Sovrascrivi questo metodo per personalizzare il comportamento di :ref:`get()<class_Object_method_get>`. Dovrebbe restituire il valore della proprietà ``property``, oppure ``null`` se la ``property`` deve essere gestita normalmente.
 
-Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
+In combinazione con :ref:`_set()<class_Object_private_method__set>` e :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, questo metodo consente di definire proprietà personalizzate, il che è particolarmente utile per le estensioni dell'editor.
 
-\ **Note:** This method is not called when getting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **Nota:** Questo metodo non viene chiamato quando si ottengono le proprietà integrate di un oggetto, incluse le proprietà definite con :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
 
 
 .. tabs::
@@ -353,7 +353,7 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
     func _get(property):
         if property == "fake_property":
-            print("Getting my property!")
+            print("Ottenendo la mia proprietà!")
             return 4
         return null
 
@@ -368,7 +368,7 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
     {
         if (property == "FakeProperty")
         {
-            GD.Print("Getting my property!");
+            GD.Print("Ottenendo la mia proprietà!");
             return 4;
         }
         return default;
@@ -376,21 +376,21 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
     public override Godot.Collections.Array<Godot.Collections.Dictionary> _GetPropertyList()
     {
-        return
-        [
+        return new Godot.Collections.Array<Godot.Collections.Dictionary>()
+        {
             new Godot.Collections.Dictionary()
             {
                 { "name", "FakeProperty" },
                 { "type", (int)Variant.Type.Int },
-            },
-        ];
+            }
+        };
     }
 
 
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns a non-``null`` value.
+\ **Nota:** A differenza di altri metodi virtuali, questo metodo viene chiamato automaticamente per ogni script che lo sovrascrive. Ciò significa che non si dovrebbe chiamare l'implementazione di base tramite ``super`` in GDScript o i suoi equivalenti in altri linguaggi. La sottoclasse più in basso verrà chiamata per prima, con le chiamate successive che risalgono la gerarchia delle classi. La catena di chiamate si interromperà sulla prima classe che restituisce un valore diverso da ``null``.
 
-\ **Warning:** This method must be :doc:`thread-safe <../tutorials/performance/thread_safe_apis>` if overridden. Otherwise, the engine may crash when trying to save a resource containing the object.
+\ **Attenzione:** Questo metodo deve essere :doc:`thread-safe <../tutorials/performance/thread_safe_apis>` se sovrascritto. Se no, il motore potrebbe bloccarsi quando tenta di salvare una risorsa contenente l'oggetto.
 
 .. rst-class:: classref-item-separator
 
@@ -402,13 +402,13 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_property_list**\ (\ ) |virtual| :ref:`🔗<class_Object_private_method__get_property_list>`
 
-Override this method to provide a custom list of additional properties to handle by the engine.
+Sovrascrivi questo metodo per fornire un elenco personalizzato di proprietà aggiuntive da gestire dal motore.
 
-Should return a property list, as an :ref:`Array<class_Array>` of dictionaries. The result is added to the array of :ref:`get_property_list()<class_Object_method_get_property_list>`, and should be formatted in the same way. Each :ref:`Dictionary<class_Dictionary>` must at least contain the ``name`` and ``type`` entries.
+Dovrebbe restituire un elenco di proprietà, come :ref:`Array<class_Array>` di dizionari. Il risultato viene aggiunto all'array di :ref:`get_property_list()<class_Object_method_get_property_list>` e dovrebbe essere formattato nello stesso modo. Ogni :ref:`Dictionary<class_Dictionary>` deve contenere almeno le voci ``name`` e ``type``.
 
-You can use :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` and :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` to customize the default values of the properties added by this method.
+È possibile usare :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` e :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` per personalizzare i valori predefiniti delle proprietà aggiunte da questo metodo.
 
-The example below displays a list of numbers shown as words going from ``ZERO`` to ``FIVE``, with ``number_count`` controlling the size of the list:
+L'esempio seguente mostra un elenco di numeri mostrati come parole che vanno da ``ZERO`` a ``FIVE``, con ``number_count`` che controlla la dimensione dell'elenco:
 
 
 .. tabs::
@@ -517,13 +517,13 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
 
 
 
-\ **Note:** This method is intended for advanced purposes. For most common use cases, the scripting languages offer easier ways to handle properties. See :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`, :ref:`@GDScript.@export_enum<class_@GDScript_annotation_@export_enum>`, :ref:`@GDScript.@export_group<class_@GDScript_annotation_@export_group>`, etc. If you want to customize exported properties, use :ref:`_validate_property()<class_Object_private_method__validate_property>`.
+\ **Nota:** Questo metodo è pensato per scopi avanzati. Per la maggior parte dei casi d'uso comuni, i linguaggi di scripting offrono modi più semplici per gestire le proprietà. Vedi :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`, :ref:`@GDScript.@export_enum<class_@GDScript_annotation_@export_enum>`, :ref:`@GDScript.@export_group<class_@GDScript_annotation_@export_group>`, ecc. Se si desidera personalizzare le proprietà esportate, usa :ref:`_validate_property()<class_Object_private_method__validate_property>`.
 
-\ **Note:** If the object's script is not :ref:`@GDScript.@tool<class_@GDScript_annotation_@tool>`, this method will not be called in the editor.
+\ **Nota:** Se lo script dell'oggetto non è :ref:`@GDScript.@tool<class_@GDScript_annotation_@tool>`, questo metodo non sarà chiamato nell'editor.
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy.
+\ **Nota:** A differenza di altri metodi virtuali, questo metodo viene chiamato automaticamente per ogni script che lo sovrascrive. Ciò significa che non si dovrebbe chiamare l'implementazione di base tramite ``super`` in GDScript o i suoi equivalenti in altri linguaggi. La sottoclasse più in basso verrà chiamata per prima, risalendo la gerarchia della classe a ogni chiamata successiva.
 
-\ **Warning:** This method must be :doc:`thread-safe <../tutorials/performance/thread_safe_apis>` if overridden. Otherwise, the engine may crash when trying to save a resource containing the object.
+\ **Attenzione:** Questo metodo deve essere :doc:`thread-safe <../tutorials/performance/thread_safe_apis>` se sovrascritto. Se no, il motore potrebbe bloccarsi quando tenta di salvare una risorsa contenente l'oggetto.
 
 .. rst-class:: classref-item-separator
 
@@ -675,7 +675,7 @@ Sovrascrivi questo metodo per personalizzare il comportamento di ripristino dell
 
 \ **Nota:** :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` deve essere sovrascritto affinché questo metodo sia chiamato.
 
-\ **Nota:** A differenza di altri metodi virtuali, questo metodo viene chiamato automaticamente per ogni script che lo sovrascrive. Ciò significa che non si dovrebbe chiamare l'implementazione di base tramite ``super`` in GDScript o i suoi equivalenti in altri linguaggi. La sottoclasse più in basso verrà chiamata per prima, con le chiamate successive che risalgono la gerarchia delle classi. La catena di chiamate si interromperà sulla prima classe che restituisce un valore non ``null``.
+\ **Nota:** A differenza di altri metodi virtuali, questo metodo viene chiamato automaticamente per ogni script che lo sovrascrive. Ciò significa che non si dovrebbe chiamare l'implementazione di base tramite ``super`` in GDScript o i suoi equivalenti in altri linguaggi. La sottoclasse più in basso verrà chiamata per prima, con le chiamate successive che risalgono la gerarchia delle classi. La catena di chiamate si interromperà sulla prima classe che restituisce un valore diverso da ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -687,11 +687,11 @@ Sovrascrivi questo metodo per personalizzare il comportamento di ripristino dell
 
 :ref:`bool<class_bool>` **_set**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_Object_private_method__set>`
 
-Override this method to customize the behavior of :ref:`set()<class_Object_method_set>`. Should set the ``property`` to ``value`` and return ``true``, or ``false`` if the ``property`` should be handled normally. The *exact* way to set the ``property`` is up to this method's implementation.
+Sovrascrivi questo metodo per personalizzare il comportamento di :ref:`set()<class_Object_method_set>`. Dovrebbe impostare la proprietà ``property`` su ``value`` e restituire ``true``, o ``false`` se la proprietà ``property`` dovrebbe essere gestita normalmente. Il modo *esatto* per impostare la proprietà ``property`` dipende dall'implementazione di questo metodo.
 
-Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
+In combinazione con :ref:`_get()<class_Object_private_method__get>` e :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, questo metodo consente di definire proprietà personalizzate, il che è particolarmente utile per le estensioni dell'editor.
 
-\ **Note:** This method is not called when setting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **Nota:** Questo metodo non viene chiamato quando si ottengono le proprietà integrate di un oggetto, incluse le proprietà definite con :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
 
 
 .. tabs::
@@ -702,7 +702,7 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
 
     func _set(property, value):
         if property == "fake_property":
-            # Storing the value in the fake property.
+            # Memorizza i valori nella proprietà fasulla.
             internal_data["fake_property"] = value
             return true
         return false
@@ -742,7 +742,7 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
 
 
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns ``true``.
+\ **Nota:** A differenza di altri metodi virtuali, questo metodo viene chiamato automaticamente per ogni script che lo sovrascrive. Ciò significa che non si dovrebbe chiamare l'implementazione di base tramite ``super`` in GDScript o i suoi equivalenti in altri linguaggi. La sottoclasse più in basso verrà chiamata per prima, risalendo la gerarchia della classe a ogni chiamata successiva. La catena di chiamate si interromperà sulla prima classe che restituisce ``true``.
 
 .. rst-class:: classref-item-separator
 

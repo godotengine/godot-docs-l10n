@@ -599,9 +599,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_DISABLED** = ``0``
 
-禁用所有放置部分，但仍然允許通過 :ref:`get_drop_section_at_position()<class_Tree_method_get_drop_section_at_position>` 檢測“專案上”的放置部分。
+Disables all drop sections.
 
-\ **注意：**\ 這是預設的旗標，當與其他旗標結合時，它沒有效果。
+\ **Note:** This is the default flag, it has no effect when combined with other flags.
 
 .. _class_Tree_constant_DROP_MODE_ON_ITEM:
 
@@ -609,9 +609,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_ON_ITEM** = ``1``
 
-啟用“專案上”的放置部分。這個放置部分覆蓋整個項。
+Enables the "on item" drop section. This drop section covers the entire item.
 
-當與 :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>` 結合使用時，這個放置部分的高度減半，並保持垂直居中。
+When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, this drop section halves in height and stays centered vertically.
 
 .. _class_Tree_constant_DROP_MODE_INBETWEEN:
 
@@ -619,9 +619,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_INBETWEEN** = ``2``
 
-啟用“專案上方”和“專案下方”的放置部分。“專案上方”的放置部分覆蓋專案的上半部分，“專案下方”的放置部分覆蓋下半部分。
+Enables "above item" and "below item" drop sections. The "above item" drop section covers the top half of the item, while the "below item" drop section covers the bottom half, and extends downward to the left of any children.
 
-當與 :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>` 結合時，這些放置部分的高度減半，並相應地停留在頂部或底部。
+When combined with :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, these drop sections halve in height and stay at the top and bottom respectively.
 
 .. rst-class:: classref-item-separator
 
@@ -1171,11 +1171,19 @@ Returns the internal canvas item designated for custom drawing. See :ref:`TreeIt
 
 :ref:`int<class_int>` **get_drop_section_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_drop_section_at_position>`
 
-返回位於 ``position`` 的放置部分，如果沒有專案，則返回 -100。
+Returns the drop section at ``position``, as permitted by enabled :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
 
-在“專案上方”“專案之上”和“專案下方”的放置部分將分別返回 -1、0 或 1 的值。請參閱 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` 以瞭解每個放置部分的描述。
+- ``-1`` if the position is **above** the item. Typically used to insert as the item's previous sibling.
 
-要獲得返回的放置部分相對項，請使用 :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`\ 。
+- ``0`` if the position is **on** the item. Typically used to insert as the item's last child.
+
+- ``1`` if the position is **below** the item, when the item has no children. Typically used to insert as the item's next sibling. If the item *does* have children, this section is still reachable by hovering to the left of the item's collapse arrow, and below.
+
+- ``2`` if the position is **below** the item, when the item has children. Typically used to insert as the item's first child.
+
+- ``-100`` if the position is not over any item, or no :ref:`DropModeFlags<enum_Tree_DropModeFlags>` are set.
+
+See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` for a description of each drop region. To get the item which the returned drop section refers to, use :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
 
 .. rst-class:: classref-item-separator
 

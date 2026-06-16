@@ -14,9 +14,9 @@ Awaits a specified signal.
 Descrizione
 ----------------------
 
-**AwaitTweener** is used to await a specified signal, allowing asynchronous steps in :ref:`Tween<class_Tween>` animation. See :ref:`Tween.tween_await()<class_Tween_method_tween_await>` for more usage information.
+**AwaitTweener** serve per attendere un segnale specificato, consentendo passaggi asincroni nell'animazione :ref:`Tween<class_Tween>`. Vedi :ref:`Tween.tween_await()<class_Tween_method_tween_await>` per ulteriori informazioni sull'utilizzo.
 
-The :ref:`Tweener.finished<class_Tweener_signal_finished>` signal is emitted when either the awaited signal is received, when timeout is reached, or when the target object is freed.
+Il segnale :ref:`Tweener.finished<class_Tweener_signal_finished>` viene emesso quando viene ricevuto il segnale atteso, quando viene raggiunto il timeout o quando l'oggetto di destinazione viene liberato.
 
 .. rst-class:: classref-reftable-group
 
@@ -45,7 +45,7 @@ Descrizioni dei metodi
 
 :ref:`AwaitTweener<class_AwaitTweener>` **set_timeout**\ (\ timeout\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AwaitTweener_method_set_timeout>`
 
-Sets the maximum time an **AwaitTweener** can wait for the signal. Can be used as a safeguard for signals that may never be emitted. If not specified, the tweener will wait indefinitely.
+Imposta il tempo massimo che un **AwaitTweener** può attendere per un segnale. Può servire da misura di sicurezza per i segnali che potrebbero non essere mai emessi. Se non specificato, il tweener attenderà indefinitamente.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

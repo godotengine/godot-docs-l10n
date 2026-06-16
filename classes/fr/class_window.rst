@@ -27,6 +27,8 @@ Tutoriels
 
 - :doc:`HDR output <../tutorials/rendering/hdr_output>`
 
+- `Multiple Windows demo <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
+
 .. rst-class:: classref-reftable-group
 
 Propriétés
@@ -627,7 +629,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_RESIZE_DISABLED** = ``0``
 
-La fenêtre ne peut pas être redimensionnée en tirant sur sa poignée de redimensionnement. Il est encore possible de redimensionner la fenêtre en utilisant :ref:`size<class_Window_property_size>`. Ce drapeau est ignoré pour les fenêtres en plein écran. Défini avec :ref:`unresizable<class_Window_property_unresizable>`.
+The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`size<class_Window_property_size>`. This flag is ignored for full screen windows. Set with :ref:`unresizable<class_Window_property_unresizable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_BORDERLESS:
 
@@ -635,7 +639,9 @@ La fenêtre ne peut pas être redimensionnée en tirant sur sa poignée de redim
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_BORDERLESS** = ``1``
 
-La fenêtre n'a pas de barre de titre natif et d'autres décorations. Ce drapeau est ignoré pour les fenêtres en plein écran. Défini avec :ref:`borderless<class_Window_property_borderless>`.
+The window do not have native title bar and other decorations. This flag is ignored for full-screen windows. Set with :ref:`borderless<class_Window_property_borderless>`.
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_ALWAYS_ON_TOP:
 
@@ -643,7 +649,9 @@ La fenêtre n'a pas de barre de titre natif et d'autres décorations. Ce drapeau
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_ALWAYS_ON_TOP** = ``2``
 
-La fenêtre flotte au dessus de toutes les autres fenêtres. Ce drapeau est ignoré pour les fenêtres en plein écran. Défini avec :ref:`always_on_top<class_Window_property_always_on_top>`.
+The window is floating on top of all other windows. This flag is ignored for full-screen windows. Set with :ref:`always_on_top<class_Window_property_always_on_top>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_TRANSPARENT:
 
@@ -651,9 +659,11 @@ La fenêtre flotte au dessus de toutes les autres fenêtres. Ce drapeau est igno
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_TRANSPARENT** = ``3``
 
-L'arrière-plan de la fenêtre peut être transparent. Défini avec :ref:`transparent<class_Window_property_transparent>`.
+The window background can be transparent. Set with :ref:`transparent<class_Window_property_transparent>`.
 
-\ **Note :** Ce drapeau n'a aucun effet si :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` ou le :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` de la fenêtre est défini à ``false``.
+\ **Note:** This flag has no effect if either :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, or the window's :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is set to ``false``.
+
+\ **Note:** Transparency support is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_NO_FOCUS:
 
@@ -661,7 +671,9 @@ L'arrière-plan de la fenêtre peut être transparent. Défini avec :ref:`transp
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_NO_FOCUS** = ``4``
 
-La fenêtre ne peut pas recevoir le focus. Une fenêtre sans focus ignorera toutes les entrées, sauf les clics de souris. Défini avec :ref:`unfocusable<class_Window_property_unfocusable>`.
+The window can't be focused. No-focus window will ignore all input, except mouse clicks. Set with :ref:`unfocusable<class_Window_property_unfocusable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_POPUP:
 
@@ -671,7 +683,7 @@ La fenêtre ne peut pas recevoir le focus. Une fenêtre sans focus ignorera tout
 
 Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`transient<class_Window_property_transient>`).
 
-\ **Note:** This flag has no effect in embedded windows (unless said window is a :ref:`Popup<class_Popup>`).
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded :ref:`Popup<class_Popup>` windows.
 
 .. _class_Window_constant_FLAG_EXTEND_TO_TITLE:
 
@@ -679,11 +691,11 @@ Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_EXTEND_TO_TITLE** = ``6``
 
-Le contenu de la fenêtre est élargi à la taille de la fenêtre. Contrairement à la fenêtre sans bords, le cadre est laissé intact et peut être utilisé pour redimensionner la fenêtre, la barre de titre est transparente, mais dispose des boutons de minimisation/maximisation/fermeture. Défini avec :ref:`extend_to_title<class_Window_property_extend_to_title>`.
+Window content is expanded to the full size of the window. Unlike borderless window, the frame is left intact and can be used to resize the window, title bar is transparent, but have minimize/maximize/close buttons. Set with :ref:`extend_to_title<class_Window_property_extend_to_title>`.
 
-\ **Note :** Ce drapeau n'est implémenté que sur macOS.
+\ **Note:** This flag has no effect in embedded windows.
 
-\ **Note :** Ce drapeau n'a aucun effet dans les fenêtres intégrées.
+\ **Note:** This flag is implemented only on macOS.
 
 .. _class_Window_constant_FLAG_MOUSE_PASSTHROUGH:
 
@@ -691,9 +703,11 @@ Le contenu de la fenêtre est élargi à la taille de la fenêtre. Contrairement
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-Tous les événements de la souris sont passés à la fenêtre sous-jacente de la même application.
+All mouse events are passed to the underlying window of the same application.
 
-\ **Note :** Ce drapeau n'a aucun effet dans les fenêtres intégrées.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows.
 
 .. _class_Window_constant_FLAG_SHARP_CORNERS:
 
@@ -729,15 +743,21 @@ La fenêtre est exclue des captures d'écran prises par :ref:`DisplayServer.scre
 
 Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
 
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (Wayland).
+
 .. _class_Window_constant_FLAG_MINIMIZE_DISABLED:
 
 .. rst-class:: classref-enumeration-constant
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MINIMIZE_DISABLED** = ``11``
 
-Le bouton de minimisation de la fenêtre est désactivé.
+Window minimize button is disabled.
 
-\ **Note :** Ce drapeau est implémenté sur macOS et Windows.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAXIMIZE_DISABLED:
 
@@ -745,9 +765,11 @@ Le bouton de minimisation de la fenêtre est désactivé.
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MAXIMIZE_DISABLED** = ``12``
 
-Le bouton de maximisation de la fenêtre est désactivé.
+Window maximize button is disabled.
 
-\ **Note :** Ce drapeau est implémenté sur macOS et Windows.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAX:
 

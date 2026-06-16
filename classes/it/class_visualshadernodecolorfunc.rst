@@ -117,14 +117,14 @@ Il renderer Compatibilità usa una formula più semplice che potrebbe produrre u
 
 :ref:`Function<enum_VisualShaderNodeColorFunc_Function>` **FUNC_SRGB_TO_LINEAR** = ``5``
 
-Converts color from nonlinear sRGB encoding to linear encoding using the following formula:
+Converte il colore dalla codifica sRGB non lineare alla codifica lineare attraverso la seguente formula:
 
 ::
 
     vec3 c = input;
     return mix(pow((c.rgb + vec3(0.055)) * (1.0 / (1.0 + 0.055)), vec3(2.4)), c.rgb * (1.0 / 12.92), lessThan(c.rgb, vec3(0.04045)));
 
-The Compatibility renderer uses a simpler formula that behaves poorly with negative input values:
+Il renderer Compatibilità usa una formula più semplice che si comporta male con valori negativi di input:
 
 ::
 

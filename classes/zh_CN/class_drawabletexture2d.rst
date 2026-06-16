@@ -116,7 +116,7 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 |void| **blit_rect**\ (\ rect\: :ref:`Rect2i<class_Rect2i>`, source\: :ref:`Texture2D<class_Texture2D>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), mipmap\: :ref:`int<class_int>` = 0, material\: :ref:`Material<class_Material>` = null\ ) :ref:`🔗<class_DrawableTexture2D_method_blit_rect>`
 
-**实验性：** This function and its parameters are likely to change in the 4.7 Dev Cycle
+**实验性：** 未来版本中可能会修改或移除该方法。
 
 通过从指定的 ``source``\ （源纹理）复制内容，绘制到本纹理的指定 ``rect``\ （矩形区域）上。可以传入一个 ``modulate``\ （调制）颜色供着色器使用，默认值为白色。\ ``mipmap`` 值可以指定将内容绘制到更低的 mipmap 层级上。\ ``material`` 参数可以接收一个带有 TextureBlit 着色器的 ShaderMaterial，从而实现自定义的绘制行为。
 
@@ -130,7 +130,7 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 |void| **blit_rect_multi**\ (\ rect\: :ref:`Rect2i<class_Rect2i>`, sources\: :ref:`Array<class_Array>`\[:ref:`Texture2D<class_Texture2D>`\], extra_targets\: :ref:`Array<class_Array>`\[:ref:`DrawableTexture2D<class_DrawableTexture2D>`\], modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), mipmap\: :ref:`int<class_int>` = 0, material\: :ref:`Material<class_Material>` = null\ ) :ref:`🔗<class_DrawableTexture2D_method_blit_rect_multi>`
 
-**实验性：** This function and its parameters are likely to change in the 4.7 Dev Cycle
+**实验性：** 未来版本中可能会修改或移除该方法。
 
 绘制到本纹理的指定 ``rect``\ （矩形区域）上，同时也会绘制到最多 3 个 DrawableTexture ``extra_targets``\ （额外目标）上。所有 ``extra_targets`` 必须与原始目标（也就是调用该方法的纹理本身）具有相同的大小和 DrawableFormat（可绘制格式），否则着色器（Shader）可能会运行失败。该方法最多支持传入 4 张 Texture ``sources``\ （源纹理），如果传入的源纹理不足 4 张，缺失的部分将会自动替换为默认的黑色纹理。
 
@@ -192,7 +192,7 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 |void| **setup**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, format\: :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), use_mipmaps\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_DrawableTexture2D_method_setup>`
 
-**实验性：** This function and its parameters are likely to change in the 4.7 Dev Cycle
+**实验性：** 未来版本中可能会修改或移除该方法。
 
 将 DrawableTexture 初始化为一张指定 ``width``\ （宽度）、\ ``height``\ （高度）和 ``format``\ （格式）的白色纹理。
 

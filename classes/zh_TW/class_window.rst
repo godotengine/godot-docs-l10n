@@ -27,6 +27,8 @@ Window
 
 - :doc:`HDR output <../tutorials/rendering/hdr_output>`
 
+- `Multiple Windows demo <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
+
 .. rst-class:: classref-reftable-group
 
 屬性
@@ -627,7 +629,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_RESIZE_DISABLED** = ``0``
 
-該視窗不能通過拖動其調整大小的手柄來調整大小。仍然可以使用 :ref:`size<class_Window_property_size>` 來調整視窗的大小。這個旗標對於全屏視窗來說是被忽略的。用 :ref:`unresizable<class_Window_property_unresizable>` 設置。
+The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`size<class_Window_property_size>`. This flag is ignored for full screen windows. Set with :ref:`unresizable<class_Window_property_unresizable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_BORDERLESS:
 
@@ -635,7 +639,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_BORDERLESS** = ``1``
 
-該視窗沒有原生標題列和其他裝飾。全屏視窗會忽略該旗標。由 :ref:`borderless<class_Window_property_borderless>` 設定。
+The window do not have native title bar and other decorations. This flag is ignored for full-screen windows. Set with :ref:`borderless<class_Window_property_borderless>`.
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_ALWAYS_ON_TOP:
 
@@ -643,7 +649,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_ALWAYS_ON_TOP** = ``2``
 
-該視窗漂浮在所有其他視窗之上。全屏視窗會忽略該旗標。由 :ref:`always_on_top<class_Window_property_always_on_top>` 設定。
+The window is floating on top of all other windows. This flag is ignored for full-screen windows. Set with :ref:`always_on_top<class_Window_property_always_on_top>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_TRANSPARENT:
 
@@ -651,9 +659,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_TRANSPARENT** = ``3``
 
-該視窗的背景可以是透明的。使用 :ref:`transparent<class_Window_property_transparent>` 設定。
+The window background can be transparent. Set with :ref:`transparent<class_Window_property_transparent>`.
 
-\ **注意：**\ 如果 :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` 或該視窗的 :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 為 ``false``\ ，則這個旗標無效。
+\ **Note:** This flag has no effect if either :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, or the window's :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is set to ``false``.
+
+\ **Note:** Transparency support is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_NO_FOCUS:
 
@@ -661,7 +671,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_NO_FOCUS** = ``4``
 
-該視窗無法被聚焦。無焦點視窗會忽略除滑鼠點擊之外的所有輸入。由 :ref:`unfocusable<class_Window_property_unfocusable>` 設定。
+The window can't be focused. No-focus window will ignore all input, except mouse clicks. Set with :ref:`unfocusable<class_Window_property_unfocusable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_POPUP:
 
@@ -669,9 +681,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP** = ``5``
 
-視窗為功能表或 :ref:`OptionButton<class_OptionButton>` 下拉式功能表的一部分。視窗可見時無法更改這個旗標。活動的快顯視窗會以獨佔的形式接收所有輸入，但不會從其父視窗竊取焦點。使用者在區域外點擊或切換套用程式時，快顯視窗會自動關閉。快顯視窗必須設定臨時父級（見 :ref:`transient<class_Window_property_transient>`\ ）。
+Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`transient<class_Window_property_transient>`).
 
-\ **注意：**\ 這個旗標在嵌入式視窗中無效（除非該視窗是 :ref:`Popup<class_Popup>`\ ）。
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded :ref:`Popup<class_Popup>` windows.
 
 .. _class_Window_constant_FLAG_EXTEND_TO_TITLE:
 
@@ -679,11 +691,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_EXTEND_TO_TITLE** = ``6``
 
-視窗內容擴充到視窗的全部尺寸。與無邊框視窗不同，框架保持不變，可以用來調整窗口的大小，標題列是透明的，但有最小/最大/關閉按鈕。用 :ref:`extend_to_title<class_Window_property_extend_to_title>` 設定。
+Window content is expanded to the full size of the window. Unlike borderless window, the frame is left intact and can be used to resize the window, title bar is transparent, but have minimize/maximize/close buttons. Set with :ref:`extend_to_title<class_Window_property_extend_to_title>`.
 
-\ **注意：**\ 這個旗標在 macOS 上實作。
+\ **Note:** This flag has no effect in embedded windows.
 
-\ **注意：**\ 這個旗標在嵌入式視窗中無效。
+\ **Note:** This flag is implemented only on macOS.
 
 .. _class_Window_constant_FLAG_MOUSE_PASSTHROUGH:
 
@@ -691,9 +703,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-所有滑鼠事件都被傳遞到同一套用程式的底層視窗。
+All mouse events are passed to the underlying window of the same application.
 
-\ **注意：**\ 這個旗標在嵌入式視窗中無效。
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows.
 
 .. _class_Window_constant_FLAG_SHARP_CORNERS:
 
@@ -729,6 +743,10 @@ Windows is excluded from screenshots taken by :ref:`DisplayServer.screen_get_ima
 
 Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
 
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (Wayland).
+
 .. _class_Window_constant_FLAG_MINIMIZE_DISABLED:
 
 .. rst-class:: classref-enumeration-constant
@@ -737,7 +755,9 @@ Signals the window manager that this window is supposed to be an implementation-
 
 Window minimize button is disabled.
 
-\ **Note:** This flag is implemented on macOS and Windows.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAXIMIZE_DISABLED:
 
@@ -747,7 +767,9 @@ Window minimize button is disabled.
 
 Window maximize button is disabled.
 
-\ **Note:** This flag is implemented on macOS and Windows.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAX:
 

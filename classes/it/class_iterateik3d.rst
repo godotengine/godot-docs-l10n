@@ -343,7 +343,7 @@ Qui, la posa di riferimento è la posa dell'osso immediatamente prima dell'elabo
 
 Imposta l'asse di rotazione dell'articolazione ``joint`` nell'elenco delle articolazioni della catena d'ossa.
 
-Gli assi si basano sullo spazio della posa di riferimento. Se ``axis`` è :ref:`ROTATION_AXIS_CUSTOM<class_IterateIK3D_constant_ROTATION_AXIS_CUSTOM>`, è possibile specificare qualsiasi asse.
+Gli assi si basano sullo spazio della posa di riferimento. Se ``axis`` è :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, è possibile specificare qualsiasi asse.
 
 Qui, la posa di riferimento è la posa dell'osso immediatamente prima dell'elaborazione dell'IK.
 

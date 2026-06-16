@@ -340,11 +340,11 @@ flags **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`Variant<class_Variant>` **_get**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__get>`
 
-Override this method to customize the behavior of :ref:`get()<class_Object_method_get>`. Should return the given ``property``'s value, or ``null`` if the ``property`` should be handled normally.
+Переопределите этот метод, чтобы настроить поведение метода :ref:`get()<class_Object_method_get>`. Он должен возвращать значение заданного свойства ``property`` или ``null``, если ``property`` должен обрабатываться обычным образом.
 
-Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
+В сочетании с методами :ref:`_set()<class_Object_private_method__set>` и :ref:`_get_property_list()<class_Object_private_method__get_property_list>` этот метод позволяет определять пользовательские свойства, что особенно полезно для плагинов редактора.
 
-\ **Note:** This method is not called when getting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **Примечание:** Этот метод не вызывается при получении встроенных свойств объекта, включая свойства, определенные с помощью аннотации :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
 
 
 .. tabs::
@@ -388,9 +388,9 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
 
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns a non-``null`` value.
+\ **Примечание:** В отличие от других виртуальных методов, этот метод вызывается автоматически для каждого скрипта, который его переопределяет. Это означает, что базовую реализацию не следует вызывать через ``super`` в GDScript или его эквиваленты в других языках. Сначала будет вызван самый нижний подкласс, а последующие вызовы будут происходить по иерархии классов. Цепочка вызовов остановится на первом классе, который вернет значение, отличное от ``null``.
 
-\ **Warning:** This method must be :doc:`thread-safe <../tutorials/performance/thread_safe_apis>` if overridden. Otherwise, the engine may crash when trying to save a resource containing the object.
+\ **Предупреждение:** Этот метод должен быть :doc:`потокобезопасным <../tutorials/performance/thread_safe_apis>`, если он переопределен. В противном случае движок может завершиться с ошибкой при попытке сохранить ресурс, содержащий объект.
 
 .. rst-class:: classref-item-separator
 
@@ -402,13 +402,15 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_property_list**\ (\ ) |virtual| :ref:`🔗<class_Object_private_method__get_property_list>`
 
-Override this method to provide a custom list of additional properties to handle by the engine.
+Переопределите этот метод, чтобы предоставить пользовательский список дополнительных свойств для обработки движком.
 
-Should return a property list, as an :ref:`Array<class_Array>` of dictionaries. The result is added to the array of :ref:`get_property_list()<class_Object_method_get_property_list>`, and should be formatted in the same way. Each :ref:`Dictionary<class_Dictionary>` must at least contain the ``name`` and ``type`` entries.
+Должен возвращать список свойств в виде массива :ref:`Array<class_Array>` словарей. Результат добавляется в массив :ref:`get_property_list()<class_Object_method_get_property_list>` и должен быть отформатирован аналогичным образом. Каждый словарь :ref:`Dictionary<class_Dictionary>` должен содержать как минимум записи ``name`` и ``type``.
 
-You can use :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` and :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` to customize the default values of the properties added by this method.
+Вы можете использовать методы :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` и :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` для настройки значений по умолчанию для свойств, добавляемых этим методом.
 
-The example below displays a list of numbers shown as words going from ``ZERO`` to ``FIVE``, with ``number_count`` controlling the size of the list:
+
+
+В приведенном ниже примере отображается список чисел, представленных словами, от ``ZERO`` до ``FIVE``, при этом ``number_count`` управляет размером списка:
 
 
 .. tabs::
@@ -517,13 +519,13 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
 
 
 
-\ **Note:** This method is intended for advanced purposes. For most common use cases, the scripting languages offer easier ways to handle properties. See :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`, :ref:`@GDScript.@export_enum<class_@GDScript_annotation_@export_enum>`, :ref:`@GDScript.@export_group<class_@GDScript_annotation_@export_group>`, etc. If you want to customize exported properties, use :ref:`_validate_property()<class_Object_private_method__validate_property>`.
+\ **Примечание:** Этот метод предназначен для сложных задач. В большинстве распространенных случаев языки сценариев предлагают более простые способы обработки свойств. См. :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`, :ref:`@GDScript.@export_enum<class_@GDScript_annotation_@export_enum>`, :ref:`@GDScript.@export_group<class_@GDScript_annotation_@export_group>` и т. д. Если вы хотите настроить экспортируемые свойства, используйте :ref:`_validate_property()<class_Object_private_method__validate_property>`.
 
-\ **Note:** If the object's script is not :ref:`@GDScript.@tool<class_@GDScript_annotation_@tool>`, this method will not be called in the editor.
+\ **Примечание:** Если скрипт объекта не является :ref:`@GDScript.@tool<class_@GDScript_annotation_@tool>`, этот метод не будет вызываться в редакторе.
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy.
+\ **Примечание:** В отличие от других виртуальных методов, этот метод вызывается автоматически для каждого скрипта, который его переопределяет. Это означает, что базовую реализацию не следует вызывать через ``super`` в GDScript или его эквиваленты в других языках. Сначала будет вызван самый нижний подкласс, а последующие вызовы будут происходить по иерархии классов.
 
-\ **Warning:** This method must be :doc:`thread-safe <../tutorials/performance/thread_safe_apis>` if overridden. Otherwise, the engine may crash when trying to save a resource containing the object.
+\ **Предупреждение:** Этот метод должен быть :doc:`потокобезопасным <../tutorials/performance/thread_safe_apis>`, если он переопределен. В противном случае движок может завершиться с ошибкой при попытке сохранить ресурс, содержащий объект.
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +565,7 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
 
 :ref:`bool<class_bool>` **_iter_init**\ (\ iter\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_Object_private_method__iter_init>`
 
-Initializes the iterator. ``iter`` stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. Returns ``true`` so long as the iterator has not reached the end.
+Инициализирует итератор. ``iter`` хранит состояние итерации. Поскольку GDScript не поддерживает передачу аргументов по ссылке, в качестве обертки используется массив из одного элемента. Возвращает ``true``, пока итератор не достигнет конца.
 
 ::
 
@@ -590,11 +592,11 @@ Initializes the iterator. ``iter`` stores the iteration state. Since GDScript do
     func _ready():
         var my_range = MyRange.new(2, 5)
         for x in my_range:
-            print(x) # Prints 2, 3, 4.
+            print(x) # Выводит 2, 3, 4.
 
-\ **Note:** Avoid storing iterator state in a member variable, use the ``iter`` parameter instead. Otherwise, you won't be able to reuse the same iterator instance in nested loops.
+\ **Примечание:** Избегайте хранения состояния итератора в переменной-члене класса, используйте вместо этого параметр ``iter``. В противном случае вы не сможете повторно использовать один и тот же экземпляр итератора во вложенных циклах.
 
-See also `online docs <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__.
+См. также `онлайн-документацию <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1476,9 +1478,9 @@ See also `online docs <../tutorials/scripting/gdscript/gdscript_advanced.html#cu
 
 :ref:`bool<class_bool>` **is_queued_for_deletion**\ (\ ) |const| :ref:`🔗<class_Object_method_is_queued_for_deletion>`
 
-Returns ``true`` if the methods :ref:`Node.queue_free()<class_Node_method_queue_free>` or :ref:`SceneTree.queue_delete()<class_SceneTree_method_queue_delete>` was called for the object.
+Возвращает ``true``, если для объекта был вызван метод :ref:`Node.queue_free()<class_Node_method_queue_free>` или :ref:`SceneTree.queue_delete()<class_SceneTree_method_queue_delete>`.
 
-\ **Note:** This method does not return ``true`` on children of the node that :ref:`Node.queue_free()<class_Node_method_queue_free>` has been called on, even though they will be freed together with the parent.
+\ **Примечание:** Этот метод не возвращает ``true`` для дочерних узлов, для которых был вызван :ref:`Node.queue_free()<class_Node_method_queue_free>`, даже если они будут освобождены вместе с родительским узлом.
 
 .. rst-class:: classref-item-separator
 

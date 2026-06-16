@@ -599,9 +599,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_DISABLED** = ``0``
 
-Отключает все разделы перетаскивания, но по-прежнему позволяет обнаружить раздел сброса «on item» с помощью :ref:`get_drop_section_at_position()<class_Tree_method_get_drop_section_at_position>`.
+Disables all drop sections.
 
-\ **Примечание:** Это флаг по умолчанию, он не действует в сочетании с другими флагами.
+\ **Note:** This is the default flag, it has no effect when combined with other flags.
 
 .. _class_Tree_constant_DROP_MODE_ON_ITEM:
 
@@ -609,9 +609,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_ON_ITEM** = ``1``
 
-Включает раздел перетаскивания «на элементе». Этот раздел перетаскивания охватывает весь элемент.
+Enables the "on item" drop section. This drop section covers the entire item.
 
-В сочетании с :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>` этот раздел перетаскивания уменьшает высоту вдвое и остается центрированным по вертикали.
+When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, this drop section halves in height and stays centered vertically.
 
 .. _class_Tree_constant_DROP_MODE_INBETWEEN:
 
@@ -619,9 +619,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_INBETWEEN** = ``2``
 
-Включает разделы выпадения «над элементом» и «под элементом». Раздел выпадения «над элементом» охватывает верхнюю половину элемента, а раздел выпадения «под элементом» охватывает нижнюю половину.
+Enables "above item" and "below item" drop sections. The "above item" drop section covers the top half of the item, while the "below item" drop section covers the bottom half, and extends downward to the left of any children.
 
-В сочетании с :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>` эти разделы выпадения уменьшают высоту вдвое и остаются сверху/снизу соответственно.
+When combined with :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, these drop sections halve in height and stay at the top and bottom respectively.
 
 .. rst-class:: classref-item-separator
 
@@ -1171,11 +1171,19 @@ Returns the internal canvas item designated for custom drawing. See :ref:`TreeIt
 
 :ref:`int<class_int>` **get_drop_section_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_drop_section_at_position>`
 
-Возвращает раздел перетаскивания в ``position`` или -100, если элемента нет.
+Returns the drop section at ``position``, as permitted by enabled :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
 
-Значения -1, 0 или 1 будут возвращены для разделов перетаскивания "выше элемента", "на элементе" и "ниже элемента" соответственно. Описание каждого раздела перетаскивания см. в :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
+- ``-1`` if the position is **above** the item. Typically used to insert as the item's previous sibling.
 
-Чтобы получить элемент, к которому относится возвращаемый раздел перетаскивания, используйте :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
+- ``0`` if the position is **on** the item. Typically used to insert as the item's last child.
+
+- ``1`` if the position is **below** the item, when the item has no children. Typically used to insert as the item's next sibling. If the item *does* have children, this section is still reachable by hovering to the left of the item's collapse arrow, and below.
+
+- ``2`` if the position is **below** the item, when the item has children. Typically used to insert as the item's first child.
+
+- ``-100`` if the position is not over any item, or no :ref:`DropModeFlags<enum_Tree_DropModeFlags>` are set.
+
+See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` for a description of each drop region. To get the item which the returned drop section refers to, use :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
 
 .. rst-class:: classref-item-separator
 

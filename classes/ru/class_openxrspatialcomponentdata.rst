@@ -79,7 +79,7 @@ OpenXRSpatialComponentData
 
 |void| **_set_capacity**\ (\ capacity\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__set_capacity>`
 
-Sets the expected capacity as provided by the spatial entities query system. Buffers should be initialized with the correct storage.
+Задает ожидаемую емкость, определяемую системой запросов пространственных объектов. Буферы должны быть инициализированы правильным объемом памяти.
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ Sets the expected capacity as provided by the spatial entities query system. Buf
 
 :ref:`int<class_int>` **get_component_type**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentData_method_get_component_type>`
 
-Gets this **OpenXRSpatialComponentData**'s ``XrSpatialComponentTypeEXT``.
+Получает ``XrSpatialComponentTypeEXT`` из **OpenXRSpatialComponentData**.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Gets this **OpenXRSpatialComponentData**'s ``XrSpatialComponentTypeEXT``.
 
 |void| **set_capacity**\ (\ capacity\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialComponentData_method_set_capacity>`
 
-Sets the expected capacity as provided by the spatial entities query system. Buffers should be initialized with the correct storage.
+Задает ожидаемую емкость, определяемую системой запросов пространственных объектов. Буферы должны быть инициализированы правильным объемом памяти.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

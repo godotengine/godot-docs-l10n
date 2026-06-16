@@ -451,7 +451,7 @@ enum **OpenXRAlphaBlendModeSupport**: :ref:`🔗<enum_OpenXRAPIExtension_OpenXRA
 
 :ref:`int<class_int>` **get_view_configuration**\ (\ ) |const| :ref:`🔗<class_OpenXRAPIExtension_method_get_view_configuration>`
 
-Returns the view configuration type, which is an `XrViewConfigurationType <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrViewConfigurationType.html>`__ cast to an integer.
+Возвращает тип конфигурации вида, который представляет собой `XrViewConfigurationType <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrViewConfigurationType.html>`__ преобразованный в целое число.
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +463,7 @@ Returns the view configuration type, which is an `XrViewConfigurationType <https
 
 :ref:`int<class_int>` **get_view_count**\ (\ ) |const| :ref:`🔗<class_OpenXRAPIExtension_method_get_view_count>`
 
-Returns the number of views. It is usually two, one for each eye, but may differ with different view configurations.
+Возвращает количество вида. Обычно это два, по одному для каждого глаза, но может отличаться в зависимости от конфигурации вида.
 
 .. rst-class:: classref-item-separator
 
@@ -635,9 +635,9 @@ Returns the number of views. It is usually two, one for each eye, but may differ
 
 |void| **register_projection_layer_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_register_projection_layer_extension>`
 
-Registers the given extension as modifying ``XrCompositionLayerProjection`` via the :ref:`OpenXRExtensionWrapper._set_projection_layer_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_projection_layer_and_get_next_pointer>` virtual method.
+Регистрирует указанное расширение как изменяющее ``XrCompositionLayerProjection`` с помощью виртуального метода :ref:`OpenXRExtensionWrapper._set_projection_layer_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_projection_layer_and_get_next_pointer>`.
 
-\ **Note:** This cannot be called after the OpenXR session has started. However, it can be called in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
+\ **Примечание:** Этот метод нельзя вызвать после начала сессии OpenXR. Однако его можно вызвать в :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
 
 .. rst-class:: classref-item-separator
 
@@ -787,9 +787,9 @@ Registers the given extension as modifying ``XrCompositionLayerProjection`` via 
 
 |void| **unregister_projection_layer_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_unregister_projection_layer_extension>`
 
-Unregisters the given extension as modifying ``XrCompositionLayerProjection``.
+Отменяет регистрацию указанного расширения как изменяющего ``XrCompositionLayerProjection``.
 
-\ **Note:** This cannot be called while the OpenXR session is still running.
+\ **Примечание:** Эту функцию нельзя вызвать, пока сессия OpenXR еще запущена.
 
 .. rst-class:: classref-item-separator
 

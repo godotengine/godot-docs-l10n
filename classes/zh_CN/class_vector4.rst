@@ -457,9 +457,9 @@ W 轴的枚举值。由 :ref:`max_axis_index()<class_Vector4_method_max_axis_ind
 
 :ref:`float<class_float>` **distance_squared_to**\ (\ to\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_distance_squared_to>`
 
-返回该向量与 ``to`` 之间的\ ``平方欧几里得距离``\ 。
+返回该向量与 ``to`` 之间的\ `欧几里得距离 <https://zh.wikipedia.org/wiki/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E8%B7%9D%E7%A6%BB>`__\ 的平方。
 
-这个方法的运行速度比 :ref:`distance_to()<class_Vector4_method_distance_to>` 更快，所以如果你需要比较向量的远近，或者某些公式里恰好需要用到距离的平方，建议优先使用它。
+该方法比 :ref:`distance_to()<class_Vector4_method_distance_to>` 运行速度更快，因此如果需要比较向量或需要平方距离来计算某些公式，请优先使用该方法。
 
 .. rst-class:: classref-item-separator
 

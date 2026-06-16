@@ -186,7 +186,7 @@ Uno shader di calcolo che viene eseguito per ogni froxel della mappa della nebbi
 
 :ref:`Type<enum_VisualShader_Type>` **TYPE_TEXTURE_BLIT** = ``10``
 
-A shader used to process blit calls to a DrawableTexture.
+Uno shader usato per elaborare le chiamate blit a un DrawableTexture.
 
 .. _class_VisualShader_constant_TYPE_MAX:
 

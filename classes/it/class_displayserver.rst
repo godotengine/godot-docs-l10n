@@ -2522,7 +2522,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_RESIZE_DISABLED** = ``0``
 
-La finestra non può essere ridimensionata trascinando la sua impugnatura di ridimensionamento. È ancora possibile ridimensionare la finestra attraverso :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`. Questo flag è ignorato per le finestre a schermo intero.
+The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`. This flag is ignored for full screen windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_BORDERLESS:
 
@@ -2530,7 +2532,9 @@ La finestra non può essere ridimensionata trascinando la sua impugnatura di rid
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_BORDERLESS** = ``1``
 
-La finestra non ha la barra del titolo nativa e altre decorazioni. Questo flag è ignorato per le finestre a schermo intero.
+The window do not have native title bar and other decorations. This flag is ignored for full-screen windows.
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_ALWAYS_ON_TOP:
 
@@ -2538,7 +2542,9 @@ La finestra non ha la barra del titolo nativa e altre decorazioni. Questo flag �
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_ALWAYS_ON_TOP** = ``2``
 
-La finestra è fluttuante sopra tutte le altre finestre. Questo flag è ignorato per le finestre a schermo intero.
+The window is floating on top of all other windows. This flag is ignored for full-screen windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_TRANSPARENT:
 
@@ -2560,7 +2566,9 @@ Lo sfondo della finestra può essere trasparente.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_NO_FOCUS** = ``4``
 
-La finestra non può essere focalizzata. Una finestra impossibile da focalizzare ignorerà tutti gli input, tranne i clic del mouse.
+The window can't be focused. No-focus window will ignore all input, except mouse clicks.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_POPUP:
 
@@ -2568,7 +2576,9 @@ La finestra non può essere focalizzata. Una finestra impossibile da focalizzare
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP** = ``5``
 
-La finestra fa parte di un menu o del menu a tendina di un :ref:`OptionButton<class_OptionButton>`. Questo flag non può essere cambiato quando la finestra è visibile. Una finestra popup attiva riceverà esclusivamente tutti gli input, senza rubare il focus dal suo genitore. Le finestre popup vengono chiuse automaticamente quando si clicca al di fuori di essa o quando si cambia applicazione. La finestra popup deve avere un genitore transitorio impostato (vedi :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`).
+Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`).
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE:
 
@@ -2590,7 +2600,9 @@ Utilizza :ref:`window_get_safe_title_margins()<class_DisplayServer_method_window
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-Tutti gli eventi del mouse vengono passati alla finestra sottostante della stessa applicazione.
+All mouse events are passed to the underlying window of the same application.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_SHARP_CORNERS:
 
@@ -2620,7 +2632,9 @@ La finestra è esclusa dagli screenshot acquisiti da :ref:`screen_get_image()<cl
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP_WM_HINT** = ``10``
 
-Segnala al gestore delle finestre che questa finestra dovrebbe essere un "popup" definito dall'implementazione (solitamente una finestra figlia mobile, senza bordi, non ordinabile e non modificabile).
+Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+
+\ **Note:** This flag is implemented on Linux (Wayland).
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MINIMIZE_DISABLED:
 
@@ -2628,9 +2642,9 @@ Segnala al gestore delle finestre che questa finestra dovrebbe essere un "popup"
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MINIMIZE_DISABLED** = ``11``
 
-Il pulsante di minimizzazione della finestra è disabilitato.
+Window minimize button is disabled.
 
-\ **Nota:** Questo metodo è implementato su macOS e Windows.
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAXIMIZE_DISABLED:
 
@@ -2638,9 +2652,9 @@ Il pulsante di minimizzazione della finestra è disabilitato.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MAXIMIZE_DISABLED** = ``12``
 
-Il pulsante di massimizzazione della finestra è disabilitato.
+Window maximize button is disabled.
 
-\ **Nota:** Questo metodo è implementato su macOS e Windows.
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAX:
 
@@ -4446,45 +4460,45 @@ Consente al PID ``process_id`` di rubare lo stato attivo da questa finestra. In 
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_show**\ (\ title\: :ref:`String<class_String>`, current_directory\: :ref:`String<class_String>`, filename\: :ref:`String<class_String>`, show_hidden\: :ref:`bool<class_bool>`, mode\: :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>`, filters\: :ref:`PackedStringArray<class_PackedStringArray>`, callback\: :ref:`Callable<class_Callable>`, parent_window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_file_dialog_show>`
 
-Displays OS native dialog for selecting files or directories in the file system.
+Visualizza la finestra di dialogo nativa del sistema operativo per selezionare file o cartelle nel file system.
 
-Each filter string in the ``filters`` array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. It is recommended to set both file extension and MIME type. See also :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
+Ogni stringa di filtro nell'array ``filters`` deve essere formattata in questo modo: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. Il testo descrittivo del filtro è facoltativo e può essere omesso. È consigliato impostare sia l'estensione file sia il tipo MIME. Vedi anche :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
 
-Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **On Android,** the third callback argument (``selected_filter_index``) is always ``0``.
+I callback hanno i seguenti argomenti: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **Su Android,** il terzo argomento (``selected_filter_index``) del callback è sempre ``0``.
 
-\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android.
+\ **Nota:** Questo metodo è implementato se il server di visualizzazione ha la funzionalità :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>`. Le piattaforme supportate includono Linux (X11/Wayland), Windows, macOS e Android.
 
-\ **Note:** ``current_directory`` might be ignored.
+\ **Nota:** ``current_directory`` potrebbe essere ignorato.
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **Nota:** Sia le finestre di dialogo incorporate, sia le finestre di dialogo su Windows supportano solo le estensioni dei file, mentre su Android, Linux e macOS esse supportano anche i tipi MIME.
 
-\ **Note:** On Android and Linux, ``show_hidden`` is ignored.
+\ **Nota:** Su Android e Linux, ``show_hidden`` viene ignorato.
 
-\ **Note:** On Android and macOS, native file dialogs have no title.
+\ **Nota:** Su Android e macOS, le finestre di dialogo native dei file non hanno titolo.
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **Nota:** Su macOS, le app in sandbox salveranno segnalibri con ambito di sicurezza per mantenere l'accesso alle cartelle aperte in più sessioni. Usa :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` per ottenere una lista dei segnalibri salvati.
 
-\ **Note:** On Android, this method uses the Android Storage Access Framework (SAF).
+\ **Nota:** Su Android, questo metodo utilizza l'Android Storage Access Framework (SAF).
 
-The file picker returns a URI instead of a filesystem path. This URI can be passed directly to :ref:`FileAccess<class_FileAccess>` to perform read/write operations.
+Il selettore di file restituisce un URI anziché un percorso del filesystem. Questo URI può essere passato direttamente a :ref:`FileAccess<class_FileAccess>` per effettuare operazioni di lettura/scrittura.
 
-When using :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>`, it returns a tree URI that grants full access to the selected directory. File operations inside this directory can be performed by passing a path on the form ``treeUri#relative/path/to/file`` to :ref:`FileAccess<class_FileAccess>`.
+Quando si utilizza :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>`, viene restituito un URI albero che garantisce l'accesso completo alla cartella selezionata. È possibile effettuare le operazioni sui file all'interno di questa cartella passando un percorso nel formato ``treeUri#percorso/relativo/al/file`` a :ref:`FileAccess<class_FileAccess>`.
 
-To avoid opening the file picker again after each app restart, you can take persistable URI permission as follows:
+Per evitare di riaprire il selettore di file dopo ogni riavvio dell'applicazione, è possibile ottenere un'autorizzazione URI persistente come segue:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    val uri = "content://com.android..." # URI of the selected file or folder.
-    val persist = true # Set to false to release the persistable permission.
+    val uri = "content://com.android..." # URI del file o della cartella selezionata.
+    val persist = true # Imposta su false per rilasciare l'autorizzazione persistente.
     var android_runtime = Engine.get_singleton("AndroidRuntime")
     android_runtime.updatePersistableUriPermission(uri, persist)
 
 
 
-The persistable URI permission remains valid across app restarts as long as the directory is not moved, renamed, or deleted.
+L'autorizzazione URI persistente rimane valida anche dopo il riavvio dell'applicazione, purché la cartella non sia spostata, rinominata o eliminata.
 
 .. rst-class:: classref-item-separator
 
@@ -7121,7 +7135,7 @@ Fa in modo che la finestra specificata da ``window_id`` richieda l'attenzione, i
 
 |void| **window_request_hdr_output**\ (\ enable\: :ref:`bool<class_bool>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_request_hdr_output>`
 
-If ``enable`` is ``true``, HDR output is requested for the window specified by ``window_id``. The window will automatically switch between HDR and SDR if it is moved between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of the :ref:`Window<class_Window>` must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output. Corresponds to :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
+Se ``enable`` è ``true``, viene richiesto l'output HDR per la finestra specificata da ``window_id``. La finestra passerà automaticamente da HDR a SDR se viene spostata tra schermi, se cambiano le capacità dello schermo o se vengono modificate le impostazioni di sistema. Questo forzerà internamente l'abilitazione di :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` sulla :ref:`Viewport<class_Viewport>` radice. Tutte le altre :ref:`SubViewport<class_SubViewport>` della :ref:`Window<class_Window>` devono avere la proprietà :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` abilitata per produrre output HDR. Corrisponde a :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
 
 .. rst-class:: classref-item-separator
 

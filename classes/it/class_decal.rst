@@ -397,7 +397,7 @@ Imposta la dimensione dell':ref:`AABB<class_AABB>` utilizzato dalla decalcomania
 
 \ **Nota:** Impostando solo questa texture non si otterrà una decalcomania visibile, poiché deve essere impostato anche :ref:`texture_albedo<class_Decal_property_texture_albedo>`. Per creare una decalcomania contenente solo l'ORM, carica una texture albedo in :ref:`texture_albedo<class_Decal_property_texture_albedo>` e imposta :ref:`albedo_mix<class_Decal_property_albedo_mix>` su ``0.0``. Il canale alfa della texture albedo sarà utilizzato per determinare dove la mappa ORM della superficie sottostante deve essere sovrascritta (e la sua intensità).
 
-\ **Nota:** A causa di limitazioni tecniche, modificare la rugosità della superficie sottostante tramite :ref:`texture_orm<class_Decal_property_texture_orm>` non influisce sui riflessi nello spazio dello schermo (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`), sui riflessi da :ref:`VoxelGI<class_VoxelGI>` e sui riflessi da SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`). Sono influenzati solo i riflessi dai :ref:`ReflectionProbe<class_ReflectionProbe>`.
+\ **Nota:** A causa di limitazioni tecniche, modificare la rugosità della superficie sottostante tramite :ref:`texture_orm<class_Decal_property_texture_orm>` *non* influisce sui riflessi nello spazio dello schermo (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`), sui riflessi da :ref:`VoxelGI<class_VoxelGI>` e sui riflessi da SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`). Sono influenzati solo i riflessi dai :ref:`ReflectionProbe<class_ReflectionProbe>`.
 
 .. rst-class:: classref-item-separator
 

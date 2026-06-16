@@ -487,7 +487,7 @@ enum **ProcessMode**: :ref:`🔗<enum_Node_ProcessMode>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_PAUSABLE** = ``1``
 
-Processes when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``false``. This is the inverse of :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>`, and the default for the root node.
+Обрабатывает процесс, когда :ref:`SceneTree.paused<class_SceneTree_property_paused>` имеет значение ``false``. Это обратное значение :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>` и значение по умолчанию для корневого узла.
 
 .. _class_Node_constant_PROCESS_MODE_WHEN_PAUSED:
 
@@ -495,7 +495,7 @@ Processes when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``fal
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_WHEN_PAUSED** = ``2``
 
-Processes **only** when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``true``. This is the inverse of :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`.
+Обрабатывает **только**, когда :ref:`SceneTree.paused<class_SceneTree_property_paused>` имеет значение ``true``. Это обратное значение :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`.
 
 .. _class_Node_constant_PROCESS_MODE_ALWAYS:
 
@@ -503,7 +503,7 @@ Processes **only** when :ref:`SceneTree.paused<class_SceneTree_property_paused>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_ALWAYS** = ``3``
 
-Always processes. Keeps processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
+Всегда обрабатывается. Продолжает обработку, игнорируя :ref:`SceneTree.paused<class_SceneTree_property_paused>`. Это противоположно :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
 
 .. _class_Node_constant_PROCESS_MODE_DISABLED:
 
@@ -511,7 +511,7 @@ Always processes. Keeps processing, ignoring :ref:`SceneTree.paused<class_SceneT
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_DISABLED** = ``4``
 
-Never processes. Completely disables processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
+Никогда не обрабатывается. Полностью отключает обработку, игнорируя :ref:`SceneTree.paused<class_SceneTree_property_paused>`. Это противоположно :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1067,9 +1067,9 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 **NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED** = ``1013`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED>`
 
-Notification received when the output max linear value returned by :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed.
+Уведомление будет получено, когда изменено максимальное линейное значение выходного сигнала, возвращаемое методом :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`.
 
-This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen.
+Это происходит, когда вывод HDR включен или выключен, а также когда изменились какие-либо значения яркости окна, отображаемые в режиме HDR, например, когда плеер регулирует яркость экрана или перемещает окно на другой экран.
 
 .. _class_Node_constant_NOTIFICATION_OS_MEMORY_WARNING:
 
@@ -1185,7 +1185,7 @@ This occurs when HDR output is enabled or disabled and when any HDR output lumin
 
 **NOTIFICATION_APPLICATION_PIP_MODE_ENTERED** = ``2019`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_ENTERED>`
 
-Notification received when the application enters picture-in-picture mode.
+Уведомление приходит, когда приложение переходит в режим "картинка в картинке".
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED:
 
@@ -1193,7 +1193,7 @@ Notification received when the application enters picture-in-picture mode.
 
 **NOTIFICATION_APPLICATION_PIP_MODE_EXITED** = ``2020`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED>`
 
-Notification received when the application exits picture-in-picture mode.
+Уведомление приходит при выходе приложения из режима "картинка в картинке".
 
 .. _class_Node_constant_NOTIFICATION_ACCESSIBILITY_UPDATE:
 
@@ -1969,17 +1969,17 @@ Tween автоматически запустится на следующем к
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **find_children**\ (\ pattern\: :ref:`String<class_String>`, type\: :ref:`String<class_String>` = "", recursive\: :ref:`bool<class_bool>` = true, owned\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Node_method_find_children>`
 
-Finds all descendants of this node whose names match ``pattern``, returning an empty :ref:`Array<class_Array>` if no match is found. The matching is done against node names, *not* their paths, through :ref:`String.match()<class_String_method_match>`. As such, it is case-sensitive, ``"*"`` matches zero or more characters, and ``"?"`` matches any single character.
+Находит всех потомков этого узла, чьи имена соответствуют ``pattern``, возвращая пустой :ref:`Array<class_Array>`, если совпадение не найдено. Сопоставление выполняется по именам узлов, *а не* их путям, с помощью :ref:`String.match()<class_String_method_match>`. Таким образом, оно чувствительно к регистру: ``"*"`` соответствует нулю или более символам, а ``"?"`` соответствует любому отдельному символу.
 
-If ``type`` is not empty, only descendants inheriting from ``type`` are included (see :ref:`Object.is_class()<class_Object_method_is_class>`).
+Если ``type`` не пуст, включаются только потомки, наследующие от ``type`` (см. :ref:`Object.is_class()<class_Object_method_is_class>`).
 
-If ``recursive`` is ``false``, only this node's direct children are checked. Nodes are checked in tree order, so this node's first direct child is checked first, then its own direct children, etc., before moving to the second direct child, and so on. Internal children are also included in the search (see ``internal`` parameter in :ref:`add_child()<class_Node_method_add_child>`).
+Если ``recursive`` равно ``false``, проверяются только непосредственные потомки этого узла. Узлы проверяются в порядке дерева, поэтому сначала проверяется первый непосредственный потомок этого узла, затем его собственные непосредственные потомки и т. д., прежде чем перейти ко второму непосредственному потомку и так далее. В поиск также включаются внутренние потомки (см. ``internal`` параметр в :ref:`add_child()<class_Node_method_add_child>`).
 
-If ``owned`` is ``true``, only descendants with a valid :ref:`owner<class_Node_property_owner>` node are checked.
+Если ``owned`` равно ``true``, проверяются только потомки с действительным узлом :ref:`owner<class_Node_property_owner>`.
 
-\ **Note:** This method can be very slow. Consider storing references to the found nodes in a variable.
+\ **Примечание:** Этот метод может быть очень медленным. Рекомендуется сохранять ссылки на найденные узлы в переменной.
 
-\ **Note:** To find a single descendant node matching a pattern, see :ref:`find_child()<class_Node_method_find_child>`.
+\ **Примечание:** Чтобы найти единственный дочерний узел, соответствующий шаблону, см. :ref:`find_child()<class_Node_method_find_child>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2899,11 +2899,11 @@ If ``owned`` is ``true``, only descendants with a valid :ref:`owner<class_Node_p
 
 |void| **reparent**\ (\ new_parent\: :ref:`Node<class_Node>`, keep_global_transform\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Node_method_reparent>`
 
-Changes the parent of this **Node** to the ``new_parent``. The node needs to already have a parent. The node's :ref:`owner<class_Node_property_owner>` is preserved if its owner is still reachable from the new location (i.e., the node is still a descendant of the new parent after the operation).
+Изменяет родительский узел этого **Node** на ``new_parent``. Узел должен уже иметь родительский узел. :ref:`owner<class_Node_property_owner>` узла сохраняется, если его владелец по-прежнему доступен из нового местоположения (т.е. узел остается потомком нового родителя после операции).
 
-If ``keep_global_transform`` is ``true``, the node's global transform will be preserved if supported. :ref:`Node2D<class_Node2D>`, :ref:`Node3D<class_Node3D>` and :ref:`Control<class_Control>` support this argument (but :ref:`Control<class_Control>` keeps only position).
+Если ``keep_global_transform`` имеет значение ``true``, глобальное преобразование узла будет сохранено, если это поддерживается. :ref:`Node2D<class_Node2D>`, :ref:`Node3D<class_Node3D>` и :ref:`Control<class_Control>` поддерживают этот аргумент (но :ref:`Control<class_Control>` сохраняет только позицию).
 
-\ **Warning:** If :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` is enabled and reparenting causes a large change in global transform, the object may appear to move from its old position to its new one over the next physics tick. To avoid this, call :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` after reparenting.
+\ **Предупреждение:** Если :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>` включен и изменение родительского узла вызывает значительное изменение глобального преобразования, объект может казаться перемещенным из своего старого положения в новое в течение следующего физического такта. Чтобы избежать этого, вызовите :ref:`reset_physics_interpolation()<class_Node_method_reset_physics_interpolation>` после изменения родительского узла.
 
 .. rst-class:: classref-item-separator
 

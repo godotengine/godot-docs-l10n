@@ -14,13 +14,13 @@ ProjectSettings
 描述
 ----
 
-储存可以从任何地方访问的变量。请使用 :ref:`get_setting()<class_ProjectSettings_method_get_setting>`\ 、\ :ref:`set_setting()<class_ProjectSettings_method_set_setting>`\ 、\ :ref:`has_setting()<class_ProjectSettings_method_has_setting>` 访问。存储在 ``project.godot`` 中的变量也会被加载到 **ProjectSettings** 中，因此这个对象常用于读取自定义游戏配置选项。
+Stores variables that can be accessed from everywhere. Use :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` or :ref:`has_setting()<class_ProjectSettings_method_has_setting>` to access them. Variables stored in ``project.godot`` are also loaded into **ProjectSettings**, making this object very useful for reading custom game configuration options.
 
-指定“项目设置”的属性时，请使用设置的完整路径，包括类别。例如项目名称应使用 ``"application/config/name"``\ 。类别和属性名称可以在“项目设置”对话框中查看。
+When naming a Project Settings property, use the full path to the setting including the category. For example, ``"application/config/name"`` for the project name. Category and property names can be viewed in the Project Settings dialog.
 
-\ **特性标签：**\ 可以使用\ :doc:`特性标签 <../tutorials/export/feature_tags>`\ 来针对特定的平台和配置（调试、发布……）做项目设置的覆盖。
+\ **Feature tags:** Project settings can be overridden for specific platforms and configurations (debug, release, ...) using :doc:`feature tags <../tutorials/export/feature_tags>`.
 
-\ **覆盖：**\ 在项目的根目录下创建名为 ``override.cfg`` 的文件，就可以对任意项目设置进行覆盖。对于已导出的项目，把这个文件放在与项目二进制文件相同的目录下，也可以达到覆盖的目的。覆盖时仍会考虑基础项目设置的\ :doc:`特性标签 <../tutorials/export/feature_tags>`\ 。因此，如果你想让它们在所有平台和配置上覆盖基础项目设置，请确保\ *也用*\ 所需的特性标签覆盖该设置。
+\ **Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This file is in the same format as ``project.godot``, and can also be written using :ref:`ConfigFile<class_ConfigFile>`. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' :doc:`feature tags <../tutorials/export/feature_tags>` in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
 
 .. rst-class:: classref-introduction-group
 
@@ -5823,7 +5823,7 @@ LCD 次像素布局，用于字体抗锯齿。见 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`float<class_float>` **gui/timers/button_shortcut_feedback_highlight_time** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_gui/timers/button_shortcut_feedback_highlight_time>`
 
-When :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` is enabled, this is the time the :ref:`BaseButton<class_BaseButton>` will remain highlighted after a shortcut. This duration is not affected by :ref:`Engine.time_scale<class_Engine_property_time_scale>`.
+当 :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>`\ （快捷键反馈）启用时，这表示 :ref:`BaseButton<class_BaseButton>`\ （基础按钮）在触发快捷键后保持高亮状态的时间。该持续时间不受 :ref:`Engine.time_scale<class_Engine_property_time_scale>`\ （引擎时间缩放）的影响。
 
 .. rst-class:: classref-item-separator
 
@@ -14719,9 +14719,9 @@ ArUco 标记类型，内置标记跟踪被设置以识别（如果 ArUco 标记�
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ ) :ref:`🔗<class_ProjectSettings_method_save>`
 
-将配置保存到 ``project.godot`` 文件中。
+Saves the configuration to the ``project.godot`` file.
 
-\ **注意：**\ 此方法是为编辑器插件使用的，因为修改后的 **ProjectSettings** 无法在运行的应用程序中加载回来。如果要更改导出项目中的项目设置，请使用 :ref:`save_custom()<class_ProjectSettings_method_save_custom>` 保存 ``override.cfg`` 文件。
+\ **Note:** This method is intended to be used by editor plugins, as modified **ProjectSettings** can't be loaded back in the running app. If you want to change project settings in exported projects, use :ref:`save_custom()<class_ProjectSettings_method_save_custom>` to save an ``override.cfg`` file.
 
 .. rst-class:: classref-item-separator
 
@@ -14733,7 +14733,7 @@ ArUco 标记类型，内置标记跟踪被设置以识别（如果 ArUco 标记�
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_custom**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ProjectSettings_method_save_custom>`
 
-将配置保存到自定义文件。文件扩展名必须是 ``.godot``\ （以基于文本的 :ref:`ConfigFile<class_ConfigFile>` 格式保存）或 ``.binary``\ （以二进制格式保存）。你也可以保存为 ``override.cfg`` 文件，它也是文本，但与其他格式不同，可以在导出的项目中使用。
+Saves the configuration to a custom file. The file extension must be ``.godot`` (to save in text-based :ref:`ConfigFile<class_ConfigFile>` format) or ``.binary`` (to save in binary format). You can also save an ``override.cfg`` file, which is also text, but can be used in exported projects unlike other formats.
 
 .. rst-class:: classref-item-separator
 

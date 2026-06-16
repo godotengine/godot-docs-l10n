@@ -641,11 +641,11 @@ enum **BakeMode**: :ref:`🔗<enum_Light3D_BakeMode>`
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-The simulated size of the light in Godot units, affecting shading and shadows. For :ref:`OmniLight3D<class_OmniLight3D>`\ s and :ref:`SpotLight3D<class_SpotLight3D>`\ s, increasing this value simulates a spherical area light, expanding the size of specular highlights. If shadows are enabled, a penumbra is rendered, making shadows appear blurrier. For :ref:`AreaLight3D<class_AreaLight3D>`\ s, only the shadows are affected. Penumbras are simulated with percentage-closer soft shadows, or PCSS, which has a noticeable performance cost for values above ``0.0``.
+Имитируемый размер источника света в единицах Godot, влияющий на затенение и тени. Для :ref:`OmniLight3D<class_OmniLight3D>` и :ref:`SpotLight3D<class_SpotLight3D>` увеличение этого значения имитирует сферический источник света, увеличивая размер бликов. Если тени включены, отображается полутень, из-за чего тени выглядят более размытыми. Для :ref:`AreaLight3D<class_AreaLight3D>` затрагиваются только тени. Полутени имитируются с помощью мягких теней с уменьшением масштаба в процентах (PCSS), что заметно снижает производительность при значениях выше ``0.0``.
 
-\ **Note:** :ref:`light_size<class_Light3D_property_light_size>` is not affected by :ref:`Node3D.scale<class_Node3D_property_scale>` (the light's scale or its parent's scale).
+\ **Примечание:** :ref:`light_size<class_Light3D_property_light_size>` не зависит от :ref:`Node3D.scale<class_Node3D_property_scale>` (масштаб источника света или масштаб его родительского элемента).
 
-\ **Note:** PCSS for positional lights is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Примечание:** PCSS для позиционных источников света поддерживается только в методах рендеринга Forward+ и Mobile, а не в Compatibility.
 
 .. rst-class:: classref-item-separator
 

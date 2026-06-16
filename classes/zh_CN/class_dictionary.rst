@@ -12,18 +12,18 @@ Dictionary
 描述
 ----
 
-字典是一种关联容器，它里面包含的数值都可以通过唯一的“键”（key）来引用。当添加新的条目时，字典会保留它们的插入顺序。在其他编程语言中，这种数据结构通常被称为哈希映射（hash map）或关联数组（associative array）。
+字典是关联容器，包含的值（Value）由唯一的键（Key）引用。添加新条目时，字典会保持插入顺序。在其他编程语言中，这种数据结构有时也称为哈希表或关联数组。
 
-你可以通过在大括号 ``{}`` 里放置一个由逗号分隔的 键: 值（\ ``key: value``\ ）对列表来定义一个字典。
+在大括号 ``{}`` 中放置用逗号分隔的 ``键: 值`` 对列表就可以定义字典。
 
-创建一个字典：
+字典的创建：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var my_dict = {} # 创建一个空字典。
+    var my_dict = {} # 创建空字典。
 
     var dict_variable_key = "Another key name"
     var dict_variable_value = "value2"
@@ -34,17 +34,17 @@ Dictionary
 
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
 
-    # 另一种 Lua 风格的语法。
-    # 这种写法不需要在键（key）的周围加引号，但键名只能使用字符串常量。
+    # 另一种 Lua 风格语法。
+    # 键名不需要加引号，但只能使用字符串常量作为键名。
     # 此外，键名必须以字母或下划线开头。
-    # 在这里，some_key 是一个字符串字面量，而不是一个变量哦！
+    # 此处的 `some_key` 是字符串字面量，不是变量！
     another_dict = {
         some_key = 42,
     }
 
  .. code-tab:: csharp
 
-    var myDict = new Godot.Collections.Dictionary(); // Creates an empty dictionary.
+    var myDict = new Godot.Collections.Dictionary(); // 创建空字典。
     var pointsDict = new Godot.Collections.Dictionary
     {
         { "White", 50 },
@@ -54,7 +54,7 @@ Dictionary
 
 
 
-你可以通过引用字典中对应的键（key），来获取它的值（value）。在上面的例子中，\ ``points_dict["White"]`` 会返回 ``50``\ 。你也可以写成 ``points_dict.White``\ ，两者的效果是完全一样的。 不过，如果你用来访问字典的键不是一个固定的字符串（比如是一个数字或者变量），那你就必须使用中括号（\ ````\ ）的语法了。
+你可以通过键来访问字典中对应的值。上面的例子中，\ ``points_dict["White"]`` 会返回 ``50``\ 。你也可以写 ``points_dict.White``\ ，和前面的写法是等价的。不过如果用来访问字典的键不是固定字符串的话（例如数字或者变量），那么就只能使用方括号语法。
 
 
 .. tabs::
@@ -64,7 +64,7 @@ Dictionary
     @export_enum("White", "Yellow", "Orange") var my_color: String
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
     func _ready():
-        # We can't use dot syntax here as `my_color` is a variable.
+        # 无法使用点语法，因为 `my_color` 是变量。
         var points = points_dict[my_color]
 
  .. code-tab:: csharp
@@ -85,9 +85,9 @@ Dictionary
 
 
 
-在上面的代码中，\ ``points`` 将会被赋予与 ``my_color`` 中选中的颜色相对应的那个值。
+在上面的代码中，\ ``points`` 会被赋值为与 ``my_color`` 中选中的颜色相对应的值。
 
-字典里也可以包含更复杂的数据：
+字典可以包含更复杂的数据：
 
 
 .. tabs::
@@ -95,7 +95,7 @@ Dictionary
  .. code-tab:: gdscript
 
     var my_dict = {
-        "First Array": [1, 2, 3, 4] # Assigns an Array to a String key.
+        "First Array": [1, 2, 3, 4] # 将数组赋值给字符串键。
     }
 
  .. code-tab:: csharp
@@ -107,7 +107,7 @@ Dictionary
 
 
 
-To add a key to an existing dictionary, access it like an existing key and assign to it:
+要往已存在的字典中添加键，请像键已存在一样进行访问并赋值：
 
 
 .. tabs::
@@ -115,7 +115,7 @@ To add a key to an existing dictionary, access it like an existing key and assig
  .. code-tab:: gdscript
 
     var points_dict = { "White": 50, "Yellow": 75, "Orange": 100 }
-    points_dict["Blue"] = 150 # Add "Blue" as a key and assign 150 as its value.
+    points_dict["Blue"] = 150 # 将 "Blue" 添加为键，并将 150 赋为它的值。
 
  .. code-tab:: csharp
 
@@ -125,20 +125,20 @@ To add a key to an existing dictionary, access it like an existing key and assig
         { "Yellow", 75 },
         { "Orange", 100 },
     };
-    pointsDict["Blue"] = 150; // Add "Blue" as a key and assign 150 as its value.
+    pointsDict["Blue"] = 150; // 将 "Blue" 添加为键，并将 150 赋为它的值。
 
 
 
-最后，未指定类型的字典可以在同一个字典里包含不同类型的键和值。
+最后，对于非类型化的字典而言，同一个字典里可以包含不同类型的键和值：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 这是一个有效的字典。
-    # 如果想要获取下面嵌套的字符串 "Nested value"，你可以使用 my_dict.sub_dict.sub_key 或者 my_dict["sub_dict"]["sub_key"]。
-    # 这两种索引（取值）风格可以根据你的需要随意混搭使用哦。
+    # 这是有效的字典。
+    # 要访问下面的 "Nested value"，请使用 `my_dict.sub_dict.sub_key` 或 `my_dict["sub_dict"]["sub_key"]`。
+    # 索引风格可以按需混合使用。
     var my_dict = {
         "String Key": 5,
         4: [1, 2, 3],
@@ -148,8 +148,8 @@ To add a key to an existing dictionary, access it like an existing key and assig
 
  .. code-tab:: csharp
 
-    // 这是一个有效的字典。
-    // 想要获取下面嵌套的字符串 "Nested value"，请使用 ((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]。
+    // 这是有效的字典。
+    // 要访问下面的 "Nested value"，请使用 `((Godot.Collections.Dictionary)myDict["sub_dict"])["sub_key"]`。
     var myDict = new Godot.Collections.Dictionary {
         { "String Key", 5 },
         { 4, new Godot.Collections.Array { 1, 2, 3 } },
@@ -159,7 +159,7 @@ To add a key to an existing dictionary, access it like an existing key and assig
 
 
 
-The keys of a dictionary can be iterated with the ``for`` keyword:
+字典中的键可以用 ``for`` 关键字进行遍历：
 
 
 .. tabs::
@@ -175,27 +175,27 @@ The keys of a dictionary can be iterated with the ``for`` keyword:
     var groceries = new Godot.Collections.Dictionary { { "Orange", 20 }, { "Apple", 2 }, { "Banana", 4 } };
     foreach (var (fruit, amount) in groceries)
     {
-        // `fruit` is the key, `amount` is the value.
+        // `fruit` 为键，`amount` 为值。
     }
 
 
 
-为了强制规定键（key）和值（value）的类型，你可以创建一个\ *类型化字典（typed dictionary）*\ 。类型化字典只能包含指定类型的键和值，或者包含继承自指定类的键和值：
+创建\ *类型化字典*\ 可以强制键和值所使用的类型。类型化字典能够包含的键和值类型只能是给定类型，也可以是继承自给定类的类型：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 创建一个键（key）为字符串类型、值（value）为整数类型的类型化字典。
-    # 如果尝试使用任何其他类型的键或值，都会导致报错。
+    # 创建类型化字典，使用 String 类型的键和 int 类型的值。
+    # 尝试使用其他类型的键或值会报错。
     var typed_dict: Dictionary[String, int] = {
         "some_key": 1,
         "some_other_key": 2,
     }
 
-    # 创建一个键（key）为字符串类型、值（value）为任意类型的类型化字典。
-    # 如果尝试使用任何其他类型的键，都会导致报错。
+    # 创建类型化字典，使用 String 类型的键和任意类型的值。
+    # 尝试使用其他类型的键会报错。
     var typed_dict_key_only: Dictionary[String, Variant] = {
         "some_key": 12.34,
         "some_other_key": "string",
@@ -203,15 +203,15 @@ The keys of a dictionary can be iterated with the ``for`` keyword:
 
  .. code-tab:: csharp
 
-    // 创建一个键（key）为字符串类型、值（value）为整数类型的类型化字典。
-    // 如果尝试使用任何其他类型的键或值，都会导致报错。
+    // 创建类型化字典，使用 String 类型的键和 int 类型的值。
+    // 尝试使用其他类型的键或值会报错。
     var typedDict = new Godot.Collections.Dictionary<String, int> {
         {"some_key", 1},
         {"some_other_key", 2},
     };
 
-    // 创建一个键（key）为字符串类型、值（value）为任意类型的类型化字典。
-    // 如果尝试使用任何其他类型的键，都会导致报错。
+    // 创建类型化字典，使用 String 类型的键和任意类型的值。
+    // 尝试使用其他类型的键会报错。
     var typedDictKeyOnly = new Godot.Collections.Dictionary<String, Variant> {
         {"some_key", 12.34},
         {"some_other_key", "string"},
@@ -219,11 +219,11 @@ The keys of a dictionary can be iterated with the ``for`` keyword:
 
 
 
-\ **注意：** 字典总是通过引用传递的。如果你想获取一个字典的副本，以便在不影响原字典的情况下独立修改它，请使用 :ref:`duplicate()<class_Dictionary_method_duplicate>` 方法。
+\ **注意：**\ 字典始终按引用传递。要获取能独立于原字典进行修改的字典副本，请使用 :ref:`duplicate()<class_Dictionary_method_duplicate>`\ 。
 
-\ **注意：** 在遍历字典的过程中，\ **不**\ 支持删除（擦除）其中的元素，这样做会导致不可预测的行为（比如程序出错或逻辑混乱）。
+\ **注意：**\ **不**\ 支持在遍历字典时清除元素，可能造成无法预知的行为。
 
-\ **注意：** 在布尔值判断中，如果字典是空的（\ ``{}``\ ），它的值会被判定为 ``false``\ ；除此之外，任何非空的字典都会被判定为 ``true``\ 。
+\ **注意：**\ 在布尔上下文中，如果字典为空（\ ``{}``\ ），则评估为 ``false``\ 。否则，始终评估为 ``true``\ 。
 
 .. note::
 

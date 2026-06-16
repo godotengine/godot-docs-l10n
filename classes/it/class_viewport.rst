@@ -31,7 +31,7 @@ Infine, le viewport possono anche comportarsi come destinazioni di rendering, ne
 Tutorial
 ----------------
 
-- :doc:`Utilizzo dei Viewport <../tutorials/rendering/viewports>`
+- :doc:`Utilizzo delle Viewport <../tutorials/rendering/viewports>`
 
 - :doc:`Viewport e trasformazioni di canvas <../tutorials/2d/2d_transforms>`
 
@@ -427,9 +427,9 @@ Ulteriori informazioni: `MetalFX <https://developer.apple.com/documentation/meta
 
 :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_NEAREST** = ``5``
 
-Use nearest-neighbor filtering for the viewport's 3D buffer. This looks crisper than :ref:`SCALING_3D_MODE_BILINEAR<class_Viewport_constant_SCALING_3D_MODE_BILINEAR>` and has no additional rendering cost. The amount of scaling can be set using :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Values greater than ``1.0`` are not supported and bilinear downsampling will be used instead. A value of ``1.0`` disables scaling.
+Utilizza il filtro vicino più ravvicinato per il buffer 3D della viewport. Questo appare più nitido rispetto a :ref:`SCALING_3D_MODE_BILINEAR<class_Viewport_constant_SCALING_3D_MODE_BILINEAR>` e non ha costi di rendering aggiuntivi. Il livello di ridimensionamento si può impostare tramite :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Valori superiori a ``1.0`` non sono supportati e verrà utilizzato il sottocampionamento bilineare. Un valore di ``1.0`` disabilita il ridimensionamento.
 
-\ **Note:** When using the **Nearest** scaling mode, to avoid uneven pixel scaling, it's highly recommended to use a value equal to an integer divisor with a dividend of ``1``. For example, it's best to use a scale of ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5), and so on.
+\ **Nota:** Quando si utilizza la modalità di ridimensionamento **Nearest**, per evitare un ridimensionamento non uniforme dei pixel, si consiglia vivamente di utilizzare un valore pari a un divisore intero con dividendo di ``1``. Ad esempio, è meglio usare una scala di ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5) e così via.
 
 .. _class_Viewport_constant_SCALING_3D_MODE_MAX:
 
@@ -959,9 +959,9 @@ Disegna il buffer interno di risoluzione della scena in uno spazio colore linear
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_AREA_LIGHTS** = ``27``
 
-Draws the cluster used by :ref:`AreaLight3D<class_AreaLight3D>` nodes to optimize light rendering.
+Disegna il cluster utilizzato dai nodi :ref:`AreaLight3D<class_AreaLight3D>` per ottimizzare il rendering della luce.
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_AREA_LIGHT_ATLAS:
 
@@ -969,9 +969,9 @@ Draws the cluster used by :ref:`AreaLight3D<class_AreaLight3D>` nodes to optimiz
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_AREA_LIGHT_ATLAS** = ``28``
 
-Draws the atlas used by :ref:`AreaLight3D<class_AreaLight3D>` nodes in the upper left quadrant of the **Viewport**.
+Disegna l'atlante utilizzato dai nodi :ref:`AreaLight3D<class_AreaLight3D>` nel quadrante superiore sinistro della **Viewport**.
 
-\ **Note:** Only supported when using the Forward+ or Mobile rendering method.
+\ **Nota:** Supportato solo quando si utilizzano i metodi di rendering Forward+ o Mobile.
 
 .. rst-class:: classref-item-separator
 
@@ -1025,7 +1025,7 @@ Usa questo filtro per texture non pixel art che potrebbero visualizzarsi a bassa
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_PARENT_NODE** = ``4``
 
-The **Viewport** will inherit the filter from its parent :ref:`CanvasItem<class_CanvasItem>` or **Viewport**.
+La **Viewport** erediterà il filtro dal suo genitore :ref:`CanvasItem<class_CanvasItem>` o **Viewport**.
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_MAX:
 
@@ -1075,7 +1075,7 @@ Capovolte la texture per la ripetizione in modo che i bordi si allineano invece 
 
 :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_PARENT_NODE** = ``3``
 
-The **Viewport** will inherit the repeat mode from its parent :ref:`CanvasItem<class_CanvasItem>` or **Viewport**.
+La **Viewport** erediterà la modalità di ripetizione dal suo genitore :ref:`CanvasItem<class_CanvasItem>` or **Viewport**.
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MAX:
 
@@ -2390,7 +2390,7 @@ Restituisce la trasformazione dalle coordinate della Viewport alle coordinate de
 
 :ref:`Transform2D<class_Transform2D>` **get_stretch_transform**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_stretch_transform>`
 
-Restituisce la trasformazione di allungamento 2D calcolata automaticamente, tenendo conto delle impostazioni di allungamento della **Viewport**. Il valore finale è moltiplicato per :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>`, ma solo per la viewport radice. Se questo metodo viene chiamato su un :ref:`SubViewport<class_SubViewport>` (ad esempio, in un albero di scene con :ref:`SubViewportContainer<class_SubViewportContainer>` e :ref:`SubViewport<class_SubViewport>`), il fattore di scala della finestra radice non verrà applicato. Utilizzando :ref:`Transform2D.get_scale()<class_Transform2D_method_get_scale>` sul valore restituito, questo può essere utilizzato per compensare il ridimensionamento quando si aumenta lo zoom di un nodo :ref:`Camera2D<class_Camera2D>` o per rimpicciolire un :ref:`TextureRect<class_TextureRect>` in modo che sia pixel-perfect a prescindere dal fattore di scala calcolato automaticamente.
+Restituisce la trasformazione di allungamento 2D calcolata automaticamente, tenendo conto delle impostazioni di allungamento della **Viewport**. Il valore finale è moltiplicato per :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>`, ma solo per la viewport radice. Se questo metodo viene chiamato su una :ref:`SubViewport<class_SubViewport>` (ad esempio, in un albero di scene con :ref:`SubViewportContainer<class_SubViewportContainer>` e :ref:`SubViewport<class_SubViewport>`), il fattore di scala della finestra radice non verrà applicato. Utilizzando :ref:`Transform2D.get_scale()<class_Transform2D_method_get_scale>` sul valore restituito, questo può essere utilizzato per compensare il ridimensionamento quando si aumenta lo zoom di un nodo :ref:`Camera2D<class_Camera2D>` o per rimpicciolire un :ref:`TextureRect<class_TextureRect>` in modo che sia pixel-perfect a prescindere dal fattore di scala calcolato automaticamente.
 
 \ **Nota:** A causa del funzionamento del ridimensionamento dei pixel, la scala X e Y della trasformazione restituita potrebbe differire leggermente, anche quando :ref:`Window.content_scale_aspect<class_Window_property_content_scale_aspect>` è impostato su una modalità che preserva le proporzioni dei pixel. Se :ref:`Window.content_scale_aspect<class_Window_property_content_scale_aspect>` è :ref:`Window.CONTENT_SCALE_ASPECT_IGNORE<class_Window_constant_CONTENT_SCALE_ASPECT_IGNORE>`, la scala X e Y potrebbero differire *significativamente*.
 

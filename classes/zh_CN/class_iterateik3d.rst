@@ -341,13 +341,13 @@ IK 求解器用于生成更精确结果的迭代循环次数。
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_rotation_axis>`
 
-设置骨骼链关节列表中，指定 ``joint``\ （关节）处的旋转轴。
+设置骨骼链关节列表中 ``joint`` 处的旋转轴。
 
-这些轴是基于“参考姿态”的空间来定义的。如果 ``axis`` 被设为 :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`\ （自定义旋转轴），你可以指定任意轴。
+这些轴基于参考姿势的空间，如果 ``axis`` 为 :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`\ ，则可以指定任意轴。
 
-在这里，“参考姿态”指的是在处理 IK（反向运动学）之前的那一瞬间的骨骼姿态。
+此处，参考姿势是指处理 IK 之前的骨骼姿势。
 
-\ **注意：** 旋转轴和前进向量（forward vector）不应该共线（即不能在同一条直线上），否则会导致意外的旋转，因为 :ref:`ChainIK3D<class_ChainIK3D>` 并不会计算扭力（twisting forces）。
+\ **注意：**\ 旋转轴和前向向量不应共线，以避免意外旋转，因为 :ref:`ChainIK3D<class_ChainIK3D>` 不考虑扭转力。
 
 .. rst-class:: classref-item-separator
 

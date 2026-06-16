@@ -465,7 +465,7 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_PARENT_NODE** = ``0``
 
-The **CanvasItem** will inherit the oversampling mode from its parent.
+Елемент **CanvasItem** успадкує режим наддискретизації від свого батьківського елемента.
 
 .. _class_CanvasItem_constant_OVERSAMPLING_WITH_SCALE_DISABLED:
 
@@ -473,7 +473,7 @@ The **CanvasItem** will inherit the oversampling mode from its parent.
 
 :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_DISABLED** = ``1``
 
-The oversampling is not affected by **CanvasItem** scale, and is equal to the :ref:`Viewport<class_Viewport>` oversampling.
+На наддискретизацію не впливає масштаб **CanvasItem**, і вона дорівнює наддискретизації :ref:`Viewport<class_Viewport>`.
 
 .. _class_CanvasItem_constant_OVERSAMPLING_WITH_SCALE_ENABLED:
 
@@ -481,7 +481,7 @@ The oversampling is not affected by **CanvasItem** scale, and is equal to the :r
 
 :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_ENABLED** = ``2``
 
-The oversampling is a product of **CanvasItem** scale and :ref:`Viewport<class_Viewport>` oversampling.
+Коефіцієнт передискретизації є добутком коефіцієнта масштабування **CanvasItem** та коефіцієнта передискретизації :ref:`Viewport<class_Viewport>`.
 
 .. _class_CanvasItem_constant_OVERSAMPLING_WITH_SCALE_MAX:
 
@@ -489,7 +489,7 @@ The oversampling is a product of **CanvasItem** scale and :ref:`Viewport<class_V
 
 :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_MAX** = ``3``
 
-Represents the size of the :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` enum.
+Позначає розмір переліку :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>`.
 
 .. rst-class:: classref-section-separator
 
@@ -654,7 +654,7 @@ Represents the size of the :ref:`OversamplingWithScale<enum_CanvasItem_Oversampl
 - |void| **set_oversampling_with_scale**\ (\ value\: :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>`\ )
 - :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **get_oversampling_with_scale**\ (\ )
 
-If enabled, oversampling for this **CanvasItem** is automatically adjusted with scale.
+Якщо ця опція увімкнена, наддискретизація для цього **CanvasItem** автоматично коригується відповідно до масштабу.
 
 .. rst-class:: classref-item-separator
 

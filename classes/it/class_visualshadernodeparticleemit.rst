@@ -7,7 +7,7 @@ VisualShaderNodeParticleEmit
 
 **Eredita:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Un nodo di visual shader che costringe a emettere una particella da un sottoemettitore.
+Un nodo di visual shader che costringe a emettere una particella da un sotto-emettitore.
 
 .. rst-class:: classref-introduction-group
 

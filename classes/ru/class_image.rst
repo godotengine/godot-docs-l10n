@@ -1689,9 +1689,9 @@ enum **ASTCFormat**: :ref:`🔗<enum_Image_ASTCFormat>`
 
 |void| **resize**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, interpolation\: :ref:`Interpolation<enum_Image_Interpolation>` = 1\ ) :ref:`🔗<class_Image_method_resize>`
 
-Resizes the image to the given ``width`` and ``height``. New pixels are calculated using the ``interpolation`` mode defined via :ref:`Interpolation<enum_Image_Interpolation>` constants.
+Изменяет размер изображения до заданных значений ``width`` и ``height``. Новые пиксели вычисляются с использованием режима ``interpolation``, определенного с помощью констант :ref:`Interpolation<enum_Image_Interpolation>`.
 
-\ **Note:** If the image's format is :ref:`FORMAT_RGBA4444<class_Image_constant_FORMAT_RGBA4444>`, :ref:`FORMAT_RGB565<class_Image_constant_FORMAT_RGB565>`, or :ref:`FORMAT_RGBE9995<class_Image_constant_FORMAT_RGBE9995>`, it will be temporarily converted to either :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` or :ref:`FORMAT_RGBAH<class_Image_constant_FORMAT_RGBAH>`. This can affect the quality of the resized image.
+\ **Примечание:** Если формат изображения :ref:`FORMAT_RGBA4444<class_Image_constant_FORMAT_RGBA4444>`, :ref:`FORMAT_RGB565<class_Image_constant_FORMAT_RGB565>` или :ref:`FORMAT_RGBE9995<class_Image_constant_FORMAT_RGBE9995>`, он будет временно преобразован в :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` или :ref:`FORMAT_RGBAH<class_Image_constant_FORMAT_RGBAH>`. Это может повлиять на качество изображения после изменения размера.
 
 .. rst-class:: classref-item-separator
 
@@ -1779,9 +1779,9 @@ Resizes the image to the given ``width`` and ``height``. New pixels are calculat
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_exr**\ (\ path\: :ref:`String<class_String>`, grayscale\: :ref:`bool<class_bool>` = false, color_image\: :ref:`bool<class_bool>` = false, max_linear_value\: :ref:`float<class_float>` = -1.0\ ) |const| :ref:`🔗<class_Image_method_save_exr>`
 
-Saves the image as an EXR file to ``path``. If ``grayscale`` is ``true`` and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. Set ``color_image`` to ``true`` when saving a color image, such as a screenshot. Negative values will be included when ``color_image`` is ``false``, which may be useful for saving raw floating point data such as a lightmap that includes negative light information. Color component values in the resulting EXR file will not exceed ``max_linear_value`` if ``max_linear_value`` is not negative. This function will return :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>` if Godot was compiled without the TinyEXR module.
+Сохраняет изображение в файл EXR по адресу ``path``. Если ``grayscale`` равно ``true`` и изображение имеет только один канал, оно будет сохранено явно как монохромное, а не как изображение с одним красным каналом. Установите ``color_image`` в ``true`` при сохранении цветного изображения, например, скриншота. Отрицательные значения будут включены, если ``color_image`` равно ``false``, что может быть полезно для сохранения необработанных данных с плавающей запятой, таких как карта освещения, включающая отрицательную информацию об освещении. Значения цветовых компонентов в результирующем файле EXR не будут превышать ``max_linear_value``, если ``max_linear_value`` не отрицательное. Эта функция вернет :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`, если Godot был скомпилирован без модуля TinyEXR.
 
-When saving screenshots of a project that uses HDR output, use :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` for ``max_linear_value``.
+При сохранении скриншотов проекта, использующего вывод HDR, используйте :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` для ``max_linear_value``.
 
 .. rst-class:: classref-item-separator
 
@@ -1793,9 +1793,9 @@ When saving screenshots of a project that uses HDR output, use :ref:`Window.get_
 
 :ref:`PackedByteArray<class_PackedByteArray>` **save_exr_to_buffer**\ (\ grayscale\: :ref:`bool<class_bool>` = false, color_image\: :ref:`bool<class_bool>` = false, max_linear_value\: :ref:`float<class_float>` = -1.0\ ) |const| :ref:`🔗<class_Image_method_save_exr_to_buffer>`
 
-Saves the image as an EXR file to a byte array. If ``grayscale`` is ``true`` and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. Set ``color_image`` to ``true`` when saving a color image, such as a screenshot. Negative values will be included when ``color_image`` is ``false``, which may be useful for saving raw floating point data such as a lightmap that includes negative light information. Color component values in the resulting EXR file will not exceed ``max_linear_value`` if ``max_linear_value`` is not negative. This function will return an empty byte array if Godot was compiled without the TinyEXR module.
+Сохраняет изображение в виде EXR-файла в массив байтов. Если ``grayscale`` равно ``true`` и изображение имеет только один канал, оно будет сохранено явно как монохромное, а не как изображение с одним красным каналом. Установите ``color_image`` в ``true`` при сохранении цветного изображения, например, скриншота. Отрицательные значения будут включены, если ``color_image`` равно ``false``, что может быть полезно для сохранения необработанных данных с плавающей запятой, таких как карта освещения, включающая отрицательную информацию об освещении. Значения цветовых компонентов в результирующем EXR-файле не будут превышать ``max_linear_value``, если ``max_linear_value`` не отрицательное. Эта функция вернет пустой массив байтов, если Godot был скомпилирован без модуля TinyEXR.
 
-When saving screenshots of a project that uses HDR output, use :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` for ``max_linear_value``.
+При сохранении скриншотов проекта, использующего вывод HDR, используйте :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` для ``max_linear_value``.
 
 .. rst-class:: classref-item-separator
 

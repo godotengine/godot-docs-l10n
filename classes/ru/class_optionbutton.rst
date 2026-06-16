@@ -166,7 +166,7 @@ OptionButton
 
 **item_focused**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OptionButton_signal_item_focused>`
 
-Emitted when the user navigates to an item using the :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` or :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` input actions. The index of the item focused is passed as argument.
+Генерируется, когда пользователь переходит к элементу, используя действия ввода :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` или :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>`. В качестве аргумента передается индекс элемента, на котором был установлен фокус.
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ Emitted when the user navigates to an item using the :ref:`ProjectSettings.input
 
 :ref:`bool<class_bool>` **popup/item_{index}/disabled** = ``false`` :ref:`🔗<class_OptionButton_property_popup/item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+Если ``true``, элемент по ``index`` отключен.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примечание:** ``index`` — это значение в диапазоне ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -264,9 +264,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **popup/item_{index}/icon** :ref:`🔗<class_OptionButton_property_popup/item_{index}/icon>`
 
-The icon of the item at ``index``.
+Значок элемента по адресу ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примечание:** ``index`` — это значение в диапазоне ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -278,9 +278,9 @@ The icon of the item at ``index``.
 
 :ref:`int<class_int>` **popup/item_{index}/id** = ``0`` :ref:`🔗<class_OptionButton_property_popup/item_{index}/id>`
 
-The ID of the item at ``index``.
+ID Идентификатор элемента по адресу ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примечание:** ``index`` — это значение в диапазоне от ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -292,9 +292,9 @@ The ID of the item at ``index``.
 
 :ref:`bool<class_bool>` **popup/item_{index}/separator** = ``false`` :ref:`🔗<class_OptionButton_property_popup/item_{index}/separator>`
 
-If ``true``, the item at ``index`` is a separator.
+Если ``true``, то элемент по адресу ``index`` является разделителем.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примечание:** ``index`` — это значение в диапазоне ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -306,9 +306,9 @@ If ``true``, the item at ``index`` is a separator.
 
 :ref:`String<class_String>` **popup/item_{index}/text** = ``""`` :ref:`🔗<class_OptionButton_property_popup/item_{index}/text>`
 
-The text of the item at ``index``.
+Текст элемента по адресу ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Примечание:** ``index`` — это значение в диапазоне ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ The text of the item at ``index``.
 - |void| **set_search_bar_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_enabled**\ (\ )
 
-If ``true``, shows a search bar at the top of the :ref:`PopupMenu<class_PopupMenu>` for filtering items. See :ref:`search_bar_min_item_count<class_OptionButton_property_search_bar_min_item_count>` for dynamically controlling its visibility based on the number of items.
+Если ``true``, в верхней части :ref:`PopupMenu<class_PopupMenu>` отображается строка поиска для фильтрации элементов. См. :ref:`search_bar_min_item_count<class_OptionButton_property_search_bar_min_item_count>` для динамического управления ее видимостью в зависимости от количества элементов.
 
 .. rst-class:: classref-item-separator
 
@@ -342,9 +342,9 @@ If ``true``, shows a search bar at the top of the :ref:`PopupMenu<class_PopupMen
 - |void| **set_search_bar_fuzzy_search_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_fuzzy_search_enabled**\ (\ )
 
-If ``true``, enables fuzzy searching in the :ref:`PopupMenu<class_PopupMenu>` search bar. This allows the search results to include items that almost match the search query, as well items that match the individual characters of the search query, but not in sequence.
+Если ``true``, включается нечеткий поиск в строке поиска :ref:`PopupMenu<class_PopupMenu>`. Это позволяет включать в результаты поиска элементы, которые почти соответствуют поисковому запросу, а также элементы, которые соответствуют отдельным символам поискового запроса, но не по порядку.
 
-Use :ref:`search_bar_fuzzy_search_max_misses<class_OptionButton_property_search_bar_fuzzy_search_max_misses>` to set the maximum number of mismatches allowed in the search results.
+Используйте :ref:`search_bar_fuzzy_search_max_misses<class_OptionButton_property_search_bar_fuzzy_search_max_misses>`, чтобы установить максимальное количество несовпадений, допустимых в результатах поиска.
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ Use :ref:`search_bar_fuzzy_search_max_misses<class_OptionButton_property_search_
 - |void| **set_search_bar_fuzzy_search_max_misses**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_fuzzy_search_max_misses**\ (\ )
 
-Sets the maximum number of mismatches allowed in each search result when fuzzy searching is enabled for the :ref:`PopupMenu<class_PopupMenu>` search bar. Any item with more mismatches will be hidden from the search results.
+Устанавливает максимальное количество несовпадений, допустимых в каждом результате поиска, когда для поисковой строки :ref:`PopupMenu<class_PopupMenu>` включен нечеткий поиск. Любой элемент с большим количеством несовпадений будет скрыт из результатов поиска.
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ Sets the maximum number of mismatches allowed in each search result when fuzzy s
 - |void| **set_search_bar_min_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_min_item_count**\ (\ )
 
-Sets the minimum number of items required for the :ref:`PopupMenu<class_PopupMenu>` search bar to be visible. :ref:`search_bar_enabled<class_OptionButton_property_search_bar_enabled>` must be ``true`` for this to have any effect.
+Устанавливает минимальное количество элементов, необходимое для отображения поисковой строки :ref:`PopupMenu<class_PopupMenu>`. Для того чтобы это вступило в силу, параметр :ref:`search_bar_enabled<class_OptionButton_property_search_bar_enabled>` должен быть ``true``.
 
 .. rst-class:: classref-item-separator
 

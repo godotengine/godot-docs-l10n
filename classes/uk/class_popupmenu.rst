@@ -660,7 +660,7 @@ PopupMenu
 - |void| **set_search_bar_min_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_min_item_count**\ (\ )
 
-Sets the minimum number of items required for the search bar to be visible. :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` must be ``true`` for this to have any effect. Separator items are not counted.
+Встановлює мінімальну кількість елементів, необхідну для відображення панелі пошуку. Щоб це спрацювало, значення :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` має дорівнювати ``true``. Елементи-роздільники не враховуються.
 
 .. rst-class:: classref-item-separator
 

@@ -14,11 +14,11 @@ Un nodo per guidare le mesh manuali dai dati del :ref:`XRHandTracker<class_XRHan
 Descrizione
 ----------------------
 
-Questo nodo utilizza i dati di tracciamento della mano da un :ref:`XRHandTracker<class_XRHandTracker>` per posizionare lo scheletro di una mesh della mano.
+Questo nodo utilizza i dati di tracciamento delle mani da un :ref:`XRHandTracker<class_XRHandTracker>` per posizionare lo scheletro di una mesh della mano.
 
 Il posizionamento delle mani è eseguito creando un :ref:`XRNode3D<class_XRNode3D>` antenato della mesh della mano guidato dallo stesso :ref:`XRHandTracker<class_XRHandTracker>`.
 
-I dati di posizione del tracciamento della mano sono ridimensionati da :ref:`Skeleton3D.motion_scale<class_Skeleton3D_property_motion_scale>` quando applicati allo scheletro, che può essere utilizzato per regolare la mano tracciata in modo che corrisponda alla scala del modello della mano.
+I dati di posizione del tracciamento delle mani sono ridimensionati da :ref:`Skeleton3D.motion_scale<class_Skeleton3D_property_motion_scale>` quando applicati allo scheletro, che può essere utilizzato per regolare la mano tracciata in modo che corrisponda alla scala del modello della mano.
 
 .. rst-class:: classref-introduction-group
 
@@ -117,7 +117,7 @@ Specifica il tipo di aggiornamenti da eseguire sulle ossa.
 - |void| **set_hand_tracker**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_hand_tracker**\ (\ )
 
-Il nome del :ref:`XRHandTracker<class_XRHandTracker>` registrato con il :ref:`XRServer<class_XRServer>` da cui ottenere i dati di tracciamento della mano.
+Il nome del :ref:`XRHandTracker<class_XRHandTracker>` registrato con il :ref:`XRServer<class_XRServer>` da cui ottenere i dati di tracciamento delle mani.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,13 +14,13 @@ Memorizza le variabili accessibili globalmente.
 Descrizione
 ----------------------
 
-Memorizza variabili a cui è possibile accedere ovunque. Utilizza :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` o :ref:`has_setting()<class_ProjectSettings_method_has_setting>` per accedervi. Anche le variabili memorizzate in ``project.godot`` sono caricate in **ProjectSettings**, rendendo questo oggetto molto utile per leggere le opzioni di configurazione del gioco personalizzate.
+Stores variables that can be accessed from everywhere. Use :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` or :ref:`has_setting()<class_ProjectSettings_method_has_setting>` to access them. Variables stored in ``project.godot`` are also loaded into **ProjectSettings**, making this object very useful for reading custom game configuration options.
 
-Quando si denomina una proprietà delle Impostazioni del progetto, utilizza il percorso completo all'impostazione, inclusa la categoria. Ad esempio, ``"application/config/name"`` per il nome del progetto. È possibile visualizzare i nomi delle categorie e delle proprietà nella finestra di dialogo Impostazioni del progetto.
+When naming a Project Settings property, use the full path to the setting including the category. For example, ``"application/config/name"`` for the project name. Category and property names can be viewed in the Project Settings dialog.
 
-\ **Tag di funzionalità:** È possibile sovrascrivere le impostazioni del progetto per piattaforme e configurazioni specifiche (debug, release, ...) attraverso i :doc:`tag di funzionalità <../tutorials/export/feature_tags>`.
+\ **Feature tags:** Project settings can be overridden for specific platforms and configurations (debug, release, ...) using :doc:`feature tags <../tutorials/export/feature_tags>`.
 
-\ **Sovrascrittura:** Qualsiasi impostazione del progetto può essere sovrascritta creando un file denominato ``override.cfg`` nella cartella principale del progetto. Questo può essere utilizzato anche nei progetti esportatim posizionando questo file nella stessa cartella dell'eseguibile del progetto. La sovrascrittura terrà comunque conto dei :doc:`tag di funzionalità <../tutorials/export/feature_tags>` delle Impostazioni del progetto di base. Pertanto, assicurati di sovrascrivere *anche* l'impostazione con i tag di funzionalità desiderati se vuoi che sovrascrivano le impostazioni del progetto di base su tutte le piattaforme e configurazioni.
+\ **Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This file is in the same format as ``project.godot``, and can also be written using :ref:`ConfigFile<class_ConfigFile>`. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' :doc:`feature tags <../tutorials/export/feature_tags>` in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
 
 .. rst-class:: classref-introduction-group
 
@@ -4717,9 +4717,9 @@ L'orientamento predefinito dello schermo da usare sui dispositivi mobili. Vedi :
 
 :ref:`bool<class_bool>` **display/window/hdr/request_hdr_output** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/hdr/request_hdr_output>`
 
-If ``true``, HDR output is requested for the main window and the editor. The main window and editor will automatically switch between HDR and SDR if it is moved between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of the :ref:`Window<class_Window>` must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output.
+Se ``true``, viene richiesto l'output HDR per la finestra principale e l'editor. La finestra principale e l'editor passeranno automaticamente da HDR a SDR se vengono spostati tra schermi, se cambiano le capacità dello schermo o se vengono modificate le impostazioni di sistema. Questo forzerà internamente l'abilitazione di :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` sulla :ref:`Viewport<class_Viewport>` radice. Tutte le altre :ref:`SubViewport<class_SubViewport>` della :ref:`Window<class_Window>` devono avere la proprietà :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` abilitata per produrre output HDR.
 
-\ **Note:** This property is only read when the project starts. To change this property at runtime, set :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
+\ **Nota:** Questa proprietà viene letta solo all'avvio del progetto. Per modificarla in fase di esecuzione, imposta :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5823,7 +5823,7 @@ Disposizione dei subpixel LCD utilizzato per l'antialiasing dei font. Vedi :ref:
 
 :ref:`float<class_float>` **gui/timers/button_shortcut_feedback_highlight_time** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_gui/timers/button_shortcut_feedback_highlight_time>`
 
-When :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` is enabled, this is the time the :ref:`BaseButton<class_BaseButton>` will remain highlighted after a shortcut. This duration is not affected by :ref:`Engine.time_scale<class_Engine_property_time_scale>`.
+Quando :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` è abilitato, questo è il tempo in cui :ref:`BaseButton<class_BaseButton>` rimarrà evidenziato dopo una scorciatoia. La durata non è influenzata da :ref:`Engine.time_scale<class_Engine_property_time_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12039,7 +12039,7 @@ Scala la distanza su cui sono prelevati i campioni per l'effetto subsurface scat
 
 :ref:`int<class_int>` **rendering/environment/volumetric_fog/use_filter** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/volumetric_fog/use_filter>`
 
-Abilita il filtraggio dell'effetto nebbia volumetrica prima dell'integrazione. Ciò offusca sostanzialmente la nebbia, riducendo i dettagli fini ma anche attenuando i bordi netti e gli artefatti di aliasing. Disattiva quando è necessario maggiore dettaglio.
+Abilita il filtraggio dell'effetto nebbia volumetrica prima dell'integrazione. Ciò sfoca sostanzialmente la nebbia, riducendo i dettagli fini, ma allo stesso tempo attenua i bordi netti e gli artefatti di aliasing. Disabilitare quando servono più dettagli.
 
 .. rst-class:: classref-item-separator
 
@@ -14110,7 +14110,7 @@ Se è ``true``, l'estensione del profilo di interazione delle mani sarà attivat
 
 Se ``true``, l'estensione per il tracciamento delle mani è abilitata, se disponibile.
 
-\ **Nota:** Come predefinito, il tracciamento delle mani funziona solo per le sorgenti dati scelte dal runtime XR. Per SteamVR, questa è la sorgente dati inferita dal controller, per la maggior parte degli altri runtime è la sorgente dati non ostruita. Non è possibile interrogarla. Se un runtime supporta l'estensione per la sorgente dati OpenXR, è possibile utilizzare :ref:`xr/openxr/extensions/hand_tracking_controller_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_controller_data_source>` e/o :ref:`xr/openxr/extensions/hand_tracking_unobstructed_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source>` per indicare che si desidera abilitare queste sorgenti dati. Se nessuna delle due opzioni è selezionata, l'estensione per la sorgente dati non è abilitata e il comportamento predefinito del runtime XR persiste.
+\ **Nota:** Come predefinito, il tracciamento delle mani funziona solo per le sorgenti dati scelte dal runtime XR. Per SteamVR, questa è la sorgente dati dedotta dal controller, per la maggior parte degli altri runtime è la sorgente dati non ostruita. Non è possibile interrogarla. Se un runtime supporta l'estensione per la sorgente dati OpenXR, è possibile utilizzare :ref:`xr/openxr/extensions/hand_tracking_controller_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_controller_data_source>` e/o :ref:`xr/openxr/extensions/hand_tracking_unobstructed_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source>` per indicare che si desidera abilitare queste sorgenti dati. Se nessuna delle due opzioni è selezionata, l'estensione per la sorgente dati non è abilitata e il comportamento predefinito del runtime XR persiste.
 
 .. rst-class:: classref-item-separator
 
@@ -14122,9 +14122,9 @@ Se ``true``, l'estensione per il tracciamento delle mani è abilitata, se dispon
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/hand_tracking_controller_data_source** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_controller_data_source>`
 
-Se ``true``, è richiesto il supporto per la sorgente dati inferita dal controller. Se supportato, riceverai dati di tracciamento delle mani anche se l'utente ha un controller in mano, con la posizione delle dita dedotta automaticamente dagli input del controller e/o dai sensori.
+Se ``true``, è richiesto il supporto per la sorgente dati dedotta dal controller. Se supportato, riceverai dati di tracciamento delle mani anche se l'utente ha un controller in mano, con la posizione delle dita dedotta automaticamente dagli input del controller e/o dai sensori.
 
-\ **Nota:** Questo richiede che l'estensione della sorgente dati OpenXR e il tracciamento della mano inferito dal controller siano supportati dal runtime XR. Se non supportato, questa impostazione sarà ignorata. :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` deve essere abilitato affinché sia possibile utilizzare questa impostazione.
+\ **Nota:** Questo richiede che l'estensione della sorgente dati OpenXR e il tracciamento delle mani dedotto dai controller siano supportati dal runtime XR. Se non supportato, questa impostazione sarà ignorata. :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` deve essere abilitato affinché sia possibile utilizzare questa impostazione.
 
 .. rst-class:: classref-item-separator
 
@@ -14719,9 +14719,9 @@ Restituisce il percorso localizzato (che inizia con ``res://``) corrispondente a
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ ) :ref:`🔗<class_ProjectSettings_method_save>`
 
-Salva la configurazione nel file ``project.godot``.
+Saves the configuration to the ``project.godot`` file.
 
-\ **Nota:** Questo metodo è pensato per essere utilizzato dalle estensioni dell'editor, poiché le **ProjectSettings** modificate non possono essere ricaricate nell'applicazione in esecuzione. Se vuoi modificare le impostazioni del progetto nei progetti esportati, usa :ref:`save_custom()<class_ProjectSettings_method_save_custom>` per salvare il file ``override.cfg``.
+\ **Note:** This method is intended to be used by editor plugins, as modified **ProjectSettings** can't be loaded back in the running app. If you want to change project settings in exported projects, use :ref:`save_custom()<class_ProjectSettings_method_save_custom>` to save an ``override.cfg`` file.
 
 .. rst-class:: classref-item-separator
 
@@ -14733,7 +14733,7 @@ Salva la configurazione nel file ``project.godot``.
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_custom**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ProjectSettings_method_save_custom>`
 
-Salva la configurazione in un file personalizzato. L'estensione del file deve essere ``.godot`` (per salvare in formato :ref:`ConfigFile<class_ConfigFile>` basato su testo) o ``.binary`` (per salvare in formato binario). Puoi anche salvare il file ``override.cfg``, che è anche testo, ma può essere utilizzato in progetti esportati a differenza di altri formati.
+Saves the configuration to a custom file. The file extension must be ``.godot`` (to save in text-based :ref:`ConfigFile<class_ConfigFile>` format) or ``.binary`` (to save in binary format). You can also save an ``override.cfg`` file, which is also text, but can be used in exported projects unlike other formats.
 
 .. rst-class:: classref-item-separator
 

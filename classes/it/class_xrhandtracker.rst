@@ -94,7 +94,7 @@ enum **HandTrackingSource**: :ref:`🔗<enum_XRHandTracker_HandTrackingSource>`
 
 :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` **HAND_TRACKING_SOURCE_UNKNOWN** = ``0``
 
-La sorgente dei dati di tracciamento della mano è sconosciuta.
+La sorgente dei dati di tracciamento delle mani è sconosciuta.
 
 .. _class_XRHandTracker_constant_HAND_TRACKING_SOURCE_UNOBSTRUCTED:
 
@@ -102,7 +102,7 @@ La sorgente dei dati di tracciamento della mano è sconosciuta.
 
 :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` **HAND_TRACKING_SOURCE_UNOBSTRUCTED** = ``1``
 
-La sorgente dei dati di tracciamento della mano non è ostruita, il che significa che è utilizzato un metodo accurato di tracciamento delle mani. Questi includono il tracciamento ottico delle mani, guanti per dati, ecc.
+La sorgente dei dati di tracciamento delle mani non è ostruita, il che significa che è utilizzato un metodo accurato di tracciamento delle mani. Questi includono il tracciamento ottico delle mani, guanti per dati, ecc.
 
 .. _class_XRHandTracker_constant_HAND_TRACKING_SOURCE_CONTROLLER:
 
@@ -110,7 +110,7 @@ La sorgente dei dati di tracciamento della mano non è ostruita, il che signific
 
 :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` **HAND_TRACKING_SOURCE_CONTROLLER** = ``2``
 
-La sorgente dei dati di tracciamento della mano è un controller, il che significa che le posizioni delle articolazioni sono dedotte dagli input del controller.
+La sorgente dei dati di tracciamento delle mani è un controller, il che significa che le posizioni delle articolazioni sono dedotte dagli input del controller.
 
 .. _class_XRHandTracker_constant_HAND_TRACKING_SOURCE_NOT_TRACKED:
 
@@ -118,7 +118,7 @@ La sorgente dei dati di tracciamento della mano è un controller, il che signifi
 
 :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` **HAND_TRACKING_SOURCE_NOT_TRACKED** = ``3``
 
-Non sono tracciati dati di tracciamento della mano, il che significa che la mano è coperta, il controller è spento oppure il tracciamento non è supportato per il tipo di input attuale.
+Non sono tracciati dati di tracciamento delle mani, il che significa che la mano è coperta, il controller è spento oppure il tracciamento non è supportato per il tipo di input attuale.
 
 .. _class_XRHandTracker_constant_HAND_TRACKING_SOURCE_MAX:
 
@@ -432,7 +432,7 @@ Descrizioni delle proprietà
 - |void| **set_hand_tracking_source**\ (\ value\: :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>`\ )
 - :ref:`HandTrackingSource<enum_XRHandTracker_HandTrackingSource>` **get_hand_tracking_source**\ (\ )
 
-La sorgente dei dati di tracciamento della mano.
+La sorgente dei dati di tracciamento delle mani.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ La sorgente dei dati di tracciamento della mano.
 - |void| **set_has_tracking_data**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_has_tracking_data**\ (\ )
 
-Se ``true``, i dati di tracciamento della mano sono validi.
+Se ``true``, i dati di tracciamento delle mani sono validi.
 
 .. rst-class:: classref-section-separator
 

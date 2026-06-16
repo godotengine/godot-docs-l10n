@@ -39,7 +39,7 @@ flags **LoaderFlags**: :ref:`🔗<enum_ImageFormatLoader_LoaderFlags>`
 
 :ref:`LoaderFlags<enum_ImageFormatLoader_LoaderFlags>` **FLAG_NONE** = ``0``
 
-Default loading behavior. No processing is applied to the image.
+默认的加载行为。不会对图像进行任何处理。
 
 .. _class_ImageFormatLoader_constant_FLAG_FORCE_LINEAR:
 
@@ -47,7 +47,7 @@ Default loading behavior. No processing is applied to the image.
 
 :ref:`LoaderFlags<enum_ImageFormatLoader_LoaderFlags>` **FLAG_FORCE_LINEAR** = ``1``
 
-If set, the image is converted from sRGB to linear encoding.
+如果勾选（或启用），图像将从 sRGB 色彩空间转换为线性（Linear）编码。
 
 .. _class_ImageFormatLoader_constant_FLAG_CONVERT_COLORS:
 
@@ -55,7 +55,7 @@ If set, the image is converted from sRGB to linear encoding.
 
 :ref:`LoaderFlags<enum_ImageFormatLoader_LoaderFlags>` **FLAG_CONVERT_COLORS** = ``2``
 
-If set, a predefined color map is applied to the image. Used when :ref:`ResourceImporterTexture.editor/convert_colors_with_editor_theme<class_ResourceImporterTexture_property_editor/convert_colors_with_editor_theme>` is ``true``.
+如果勾选（或启用），将为图像应用一个预定义的颜色映射（color map）。当 :ref:`ResourceImporterTexture.editor/convert_colors_with_editor_theme<class_ResourceImporterTexture_property_editor/convert_colors_with_editor_theme>` 为 ``true`` 时使用。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

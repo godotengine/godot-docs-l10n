@@ -100,9 +100,9 @@ enum **PersistenceScope**: :ref:`🔗<enum_OpenXRSpatialAnchorCapability_Persist
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **create_default_persistence_context**\ (\ user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_create_default_persistence_context>`
 
-Calls :ref:`create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>` with a configuration that likely works with the XR runtime.
+Вызывает метод :ref:`create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>` с конфигурацией, которая, вероятно, будет работать с средой выполнения XR.
 
-\ ``user_callback`` is called when the context is created.
+\ ``user_callback`` вызывается при создании контекста.
 
 .. rst-class:: classref-item-separator
 
@@ -114,9 +114,9 @@ Calls :ref:`create_persistence_context()<class_OpenXRSpatialAnchorCapability_met
 
 :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` **create_new_anchor**\ (\ transform\: :ref:`Transform3D<class_Transform3D>`, spatial_context\: :ref:`RID<class_RID>` = RID(), next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_create_new_anchor>`
 
-Creates a new anchor that will be tracked by the XR runtime. The ``transform`` should be a transform in the local space of your :ref:`XROrigin3D<class_XROrigin3D>` node. If ``spatial_context`` is not specified the default will be used, this requires :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>` to be set. The returned tracker will track the location in case our reference space changes.
+Создает новый якорь, который будет отслеживаться средой выполнения XR. Параметр ``transform`` должен представлять собой преобразование в локальном пространстве вашего узла :ref:`XROrigin3D<class_XROrigin3D>`. Если параметр ``spatial_context`` не указан, будет использоваться значение по умолчанию; для этого необходимо установить параметр :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>`. Возвращаемый трекер будет отслеживать местоположение в случае изменения нашего опорного пространства.
 
-\ ``next`` must be a valid next object for the ``XrSpatialAnchorCreateInfoEXT`` chain.
+Параметр ``next`` должен быть допустимым объектом next для цепочки ``XrSpatialAnchorCreateInfoEXT``.
 
 .. rst-class:: classref-item-separator
 
@@ -142,13 +142,13 @@ Creates a new anchor that will be tracked by the XR runtime. The ``transform`` s
 
 |void| **do_entity_update**\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next_snapshot_create\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, next_snapshot_query\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_do_entity_update>`
 
-Calls :ref:`OpenXRSpatialEntityExtension.update_spatial_entities()<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>` and :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` with the anchor entities associated with ``spatial_context``.
+Вызывает :ref:`OpenXRSpatialEntityExtension.update_spatial_entities()<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>` и :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` с сущностями-якорями, связанными с ``spatial_context``.
 
-\ ``component_data`` are the :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\ s to update for this anchor capability.
+\ ``component_data`` — это :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`, которые необходимо обновить для этой возможности якоря.
 
-If ``next_snapshot_create`` is non-null, then pass this to the ``next`` parameter in :ref:`OpenXRSpatialEntityExtension.update_spatial_entities()<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>`.
+Если ``next_snapshot_create`` не равен null, передайте его параметру ``next`` в :ref:`OpenXRSpatialEntityExtension.update_spatial_entities()<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>`.
 
-If ``next_snapshot_query`` is non-null, then pass this to the ``next`` parameter in :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Если ``next_snapshot_query`` не равен null, передайте его параметру ``next`` в :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-item-separator
 
@@ -250,17 +250,17 @@ If ``next_snapshot_query`` is non-null, then pass this to the ``next`` parameter
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **start_entity_discovery**\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next_snapshot_create\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, next_snapshot_query\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_start_entity_discovery>`
 
-Calls :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>` and :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` with the anchor entities associated with ``spatial_context``.
+Вызывает :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>` и :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` с сущностями-якорями, связанными с ``spatial_context``.
 
-\ ``component_data`` are the :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\ s to discover for this anchor capability.
+\ ``component_data`` — это :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`, которые необходимо обнаружить для этой возможности якоря.
 
-If ``next_snapshot_create`` is non-null, then pass this to the ``next`` parameter in :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`.
+Если ``next_snapshot_create`` не равен null, передайте его параметру ``next`` в :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`.
 
-If ``next_snapshot_query`` is non-null, then pass this to the ``next`` parameter in :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Если ``next_snapshot_query`` не равен null, передайте его параметру ``next`` в :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
-\ ``user_callback``, when non-null, is called with two parameters usually twice. The first parameter is the :ref:`RID<class_RID>` of the discovery snapshot and the second parameter is a boolean where ``false`` indicates the discovery snapshot is about to be processed, and ``true`` indicates the discovery snapshot has been processed and ``component_data`` has valid data. The second call is skipped if an error was encountered.
+\ ``user_callback``, если он не равен null, вызывается с двумя параметрами, обычно дважды. Первый параметр — это :ref:`RID<class_RID>` снимка обнаружения, а второй параметр — логическое значение, где ``false`` указывает, что снимок обнаружения вот-вот будет обработан, а ``true`` указывает, что снимок обнаружения был обработан и ``component_data`` содержит допустимые данные. Второй вызов пропускается, если возникла ошибка.
 
-The returned :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` is identical to the return from :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`.
+Возвращаемый :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` идентичен результату, возвращаемому методом :ref:`OpenXRSpatialEntityExtension.discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`.
 
 .. rst-class:: classref-item-separator
 

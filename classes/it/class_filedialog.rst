@@ -938,13 +938,13 @@ Descrizioni dei metodi
 
 |void| **add_filter**\ (\ filter\: :ref:`String<class_String>`, description\: :ref:`String<class_String>` = "", mime_type\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_FileDialog_method_add_filter>`
 
-Adds a comma-separated file extension ``filter`` and comma-separated MIME type ``mime_type`` option to the **FileDialog** with an optional ``description``, which restricts what files can be picked.
+Aggiunge un'opzione di filtro (``filter``) e un tipo MIME (``mime_type``), entrambi delimitati da virgole, per il **FileDialog** con una descrizione (``description``) facoltativa, che limita i file che si possono selezionare.
 
-A ``filter`` should be of the form ``"filename.extension"``, where filename and extension can be ``*`` to match any string. Filters starting with ``.`` (i.e. empty filenames) are not allowed.
+\ ``filter`` dovrebbe essere del formato ``"filename.extension"``, dove filename ed extension possono essere ``*`` per corrispondere a qualsiasi stringa. I filtri che iniziano con ``.`` (ad esempio i nomi vuoti dei file) non sono consentiti.
 
-For example, a ``filter`` of ``"*.png, *.jpg"``, a ``mime_type`` of ``image/png, image/jpeg``, and a ``description`` of ``"Images"`` results in filter text "Images (\*.png, \*.jpg)".
+Ad esempio, un ``filter`` di ``"*.png, *.jpg"``, un ``mime_type`` di ``image/png, image/jpeg`` e una ``description`` di ``"Immagini "`` generano il testo del filtro "Immagini (\*.png, \*.jpg)".
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **Nota:** Le finestre di dialogo incorporate dei file e quelle di Windows supportano solo le estensioni dei file, mentre quelle di Android, Linux e macOS supportano anche i tipi MIME.
 
 .. rst-class:: classref-item-separator
 

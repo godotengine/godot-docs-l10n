@@ -102,7 +102,7 @@ InputEvent
 
 **DEVICE_ID_KEYBOARD** = ``16`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_KEYBOARD>`
 
-Device ID used for input from a keyboard. This can be used to distinguish keyboard input events from joypad input events.
+ID Идентификатор устройства, используемый для ввода с клавиатуры. Он позволяет отличать события ввода с клавиатуры от событий ввода с геймпада.
 
 .. _class_InputEvent_constant_DEVICE_ID_MOUSE:
 
@@ -110,7 +110,7 @@ Device ID used for input from a keyboard. This can be used to distinguish keyboa
 
 **DEVICE_ID_MOUSE** = ``32`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_MOUSE>`
 
-Device ID used for input from a mouse. This can be used to distinguish mouse input events from joypad input events.
+ID Идентификатор устройства, используемый для ввода данных с мыши. Он позволяет отличать события ввода с мыши от событий ввода с геймпада.
 
 .. rst-class:: classref-section-separator
 

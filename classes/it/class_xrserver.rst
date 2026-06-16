@@ -166,7 +166,7 @@ Emesso quando un tracciatore esistente è stato aggiornato. Ciò può accadere s
 
 **world_origin_changed**\ (\ ) :ref:`🔗<class_XRServer_signal_world_origin_changed>`
 
-Emitted when the world origin transform changes.
+Emesso quando la trasformazione dell'origine del mondo cambia.
 
 .. rst-class:: classref-section-separator
 

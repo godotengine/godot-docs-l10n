@@ -26,7 +26,7 @@ La luz se emite en la dirección -Z de la base global del nodo. Para una luz sin
 Tutoriales
 --------------------
 
-- :doc:`Luces y sombras 3D <../tutorials/3d/lights_and_shadows>`
+- `Luces y sombras 3D <../tutorials/3d/lights_and_shadows.html#directional-light>`__
 
 - :doc:`Falsificar la iluminación global <../tutorials/3d/global_illumination/faking_global_illumination>`
 

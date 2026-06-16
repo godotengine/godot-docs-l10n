@@ -11171,7 +11171,7 @@ If ``enable`` is ``true``, enables trails for the ``particles`` with the specifi
 
 |void| **particles_set_transform_align**\ (\ particles\: :ref:`RID<class_RID>`, align\: :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_transform_align>`
 
-Establece la alineación de la transformación para el sistema de partículas. Equivalente a :ref:`""GPUParticles3D.transform_align<class_GPUParticles3D_member_transform_align>`.
+Establece la alineación de la transformación para el sistema de partículas. Equivalente a :ref:`GPUParticles3D.transform_align<class_GPUParticles3D_property_transform_align>`.
 
 .. rst-class:: classref-item-separator
 

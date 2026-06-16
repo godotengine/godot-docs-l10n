@@ -77,9 +77,9 @@ OpenXRSpatialCapabilityConfigurationBaseHeader
 
 :ref:`int<class_int>` **get_configuration**\ (\ ) :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_get_configuration>`
 
-Gets a pointer to the ``XrSpatialCapabilityConfigurationBaseHeaderEXT`` struct.
+Получает указатель на структуру ``XrSpatialCapabilityConfigurationBaseHeaderEXT``.
 
-\ **Note:** This method is intended to be used from GDExtensions.
+\ **Примечание:** Этот метод предназначен для использования из расширений GDExtensions.
 
 .. rst-class:: classref-item-separator
 

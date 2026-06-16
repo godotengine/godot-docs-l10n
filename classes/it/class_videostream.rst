@@ -9,7 +9,7 @@ VideoStream
 
 **Ereditato da:** :ref:`VideoStreamTheora<class_VideoStreamTheora>`
 
-Risorsa di base per flussi video.
+Risorsa di base per i flussi video.
 
 .. rst-class:: classref-introduction-group
 

@@ -431,7 +431,7 @@ enum **HandTrackedSource**: :ref:`🔗<enum_OpenXRInterface_HandTrackedSource>`
 
 :ref:`HandTrackedSource<enum_OpenXRInterface_HandTrackedSource>` **HAND_TRACKED_SOURCE_UNKNOWN** = ``0``
 
-La sorgente dei dati di tracciamento della mano è sconosciuta (probabilmente l'estensione non è supportata).
+La sorgente dei dati di tracciamento delle mani è sconosciuta (probabilmente l'estensione non è supportata).
 
 .. _class_OpenXRInterface_constant_HAND_TRACKED_SOURCE_UNOBSTRUCTED:
 
@@ -439,7 +439,7 @@ La sorgente dei dati di tracciamento della mano è sconosciuta (probabilmente l'
 
 :ref:`HandTrackedSource<enum_OpenXRInterface_HandTrackedSource>` **HAND_TRACKED_SOURCE_UNOBSTRUCTED** = ``1``
 
-La sorgente del tracciamento della mano non è ostruita, il che significa che è utilizzato un metodo accurato di tracciamento delle mani, ad esempio tracciamento ottico delle mani, guanti per dati, ecc.
+La sorgente del tracciamento delle mani non è ostruita, il che significa che è utilizzato un metodo accurato di tracciamento delle mani, ad esempio tracciamento ottico delle mani, guanti per dati, ecc.
 
 .. _class_OpenXRInterface_constant_HAND_TRACKED_SOURCE_CONTROLLER:
 
@@ -447,7 +447,7 @@ La sorgente del tracciamento della mano non è ostruita, il che significa che è
 
 :ref:`HandTrackedSource<enum_OpenXRInterface_HandTrackedSource>` **HAND_TRACKED_SOURCE_CONTROLLER** = ``2``
 
-La sorgente dei dati di tracciamento della mano è un controller, le posizioni delle articolazioni sono dedotte dagli input del controller.
+La sorgente dei dati di tracciamento delle mani è un controller, le posizioni delle articolazioni sono dedotte dagli input del controller.
 
 .. _class_OpenXRInterface_constant_HAND_TRACKED_SOURCE_MAX:
 
@@ -1112,7 +1112,7 @@ Se il tracciamento della mano è abilitato, restituisce la rotazione di un'artic
 
 **Deprecato:** Use :ref:`XRHandTracker.hand_tracking_source<class_XRHandTracker_property_hand_tracking_source>` obtained from :ref:`XRServer.get_tracker()<class_XRServer_method_get_tracker>` instead.
 
-Se il tracciamento della mano è abilitato e la sorgente del tracciamento della mano è supportata, ottiene la sorgente dei dati di tracciamento per la mano ``hand``.
+Se il tracciamento delle mani è abilitato e la sorgente del tracciamento delle mani è supportata, ottiene la sorgente dei dati di tracciamento per la mano ``hand``.
 
 .. rst-class:: classref-item-separator
 
@@ -1202,7 +1202,7 @@ Restituisce ``true`` se il profilo di interazione manuale di OpenXR è supportat
 
 :ref:`bool<class_bool>` **is_hand_tracking_supported**\ (\ ) :ref:`🔗<class_OpenXRInterface_method_is_hand_tracking_supported>`
 
-Restituisce ``true`` se il monitoraggio della mano di OpenXR è supportato e abilitato.
+Restituisce ``true`` se il tracciamento delle mani di OpenXR è supportato e abilitato.
 
 \ **Nota:** Questo restituisce un valore valido solo dopo l'avvio della sessione OpenXR.
 

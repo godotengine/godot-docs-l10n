@@ -1067,9 +1067,9 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 **NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED** = ``1013`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED>`
 
-当窗口的输出最大线性值（由 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 返回）发生改变时收到的通知。
+当 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 返回的输出最大线性值发生变化时，会收到通知。
 
-当启用或禁用 HDR 输出，以及窗口的任何 HDR 输出亮度值发生改变时（例如玩家调整屏幕亮度设置或将窗口移动到另一个显示器上），都会触发此通知。
+当 HDR 输出启用或禁用，以及窗口的任何 HDR 输出亮度值发生变化时，例如，当玩家调整屏幕亮度设置或将窗口移动到其他屏幕时，都会发生。
 
 .. _class_Node_constant_NOTIFICATION_OS_MEMORY_WARNING:
 

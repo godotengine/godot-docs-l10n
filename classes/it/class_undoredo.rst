@@ -518,7 +518,7 @@ Restituisce ``true`` se **UndoRedo** sta attualmente eseguendo l'azione, ovvero 
 
 :ref:`bool<class_bool>` **redo**\ (\ ) :ref:`🔗<class_UndoRedo_method_redo>`
 
-Redo the last action. Returns ``false`` if there was no action to redo.
+Ripete l'ultima azione. Restituisce ``false`` se non c'era alcuna azione da ripetere.
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ Contrassegna le prossime operazioni "do" e "undo" da elaborare anche se l'azione
 
 :ref:`bool<class_bool>` **undo**\ (\ ) :ref:`🔗<class_UndoRedo_method_undo>`
 
-Undo the last action. Returns ``false`` if there was no action to undo.
+Annulla l'ultima azione. Restituisce ``false`` se non c'era alcuna azione da annulla.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

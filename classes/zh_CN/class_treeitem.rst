@@ -565,7 +565,7 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] **get_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_autowrap_trim_flags>`
 
-返回指定 ``column``\ （列）的自动换行修剪标志。默认情况下，\ :ref:`TextServer.BREAK_TRIM_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_TRIM_START_EDGE_SPACES>`\ （修剪行首空格）和 :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>`\ （修剪行尾空格）这两个标志都是默认开启的。
+返回给定 ``column`` 的自动换行修剪标志。默认情况下，\ :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` 和 :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>` 均已启用。
 
 .. rst-class:: classref-item-separator
 

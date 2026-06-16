@@ -309,7 +309,7 @@ enum **ComponentType**: :ref:`🔗<enum_OpenXRSpatialEntityExtension_ComponentTy
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **discover_spatial_entities_with_component_data**\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities_with_component_data>`
 
-Convenience method when the caller only has an :ref:`Array<class_Array>` of :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` and needs to discover spatial entities.
+Вспомогательный метод, когда у вызывающей стороны есть только массив :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`, и ей необходимо обнаружить пространственные объекты.
 
 .. rst-class:: classref-item-separator
 

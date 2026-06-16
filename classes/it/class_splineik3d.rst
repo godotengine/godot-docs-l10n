@@ -22,7 +22,7 @@ La torsione delle ossa è determinata in base a :ref:`Curve3D.get_point_tilt()<c
 
 Se l'articolazione dell'osso radice e il punto di partenza della :ref:`Curve3D<class_Curve3D>` sono separati, si presume che ci sia un segmento lineare tra di essi. Ciò significa che il vettore che punta verso il punto di partenza della :ref:`Curve3D<class_Curve3D>` ha la precedenza sul punto di intersezione più breve lungo la :ref:`Curve3D<class_Curve3D>`.
 
-Se l'articolazione dell'osso finale supera la lunghezza del percorso, è piegata il più vicino possibile al punto finale della ``Curva3D``.
+Se l'articolazione dell'osso finale supera la lunghezza del percorso, è piegata il più vicino possibile al punto finale della :ref:`Curve3D<class_Curve3D>`.
 
 \ **Nota:** Tutti i metodi di questa classe accettano un parametro ``index``. Questo parametro specifica quale voce nell'elenco delle impostazioni restituire, se l'IK ha più voci (ad esempio, ``settings/<index>/root_bone_name``).
 

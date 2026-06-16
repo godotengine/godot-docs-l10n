@@ -252,9 +252,9 @@ OpenXRInterface
 
 **user_presence_changed**\ (\ is_user_present\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_OpenXRInterface_signal_user_presence_changed>`
 
-Signal emitted when the user presence value changes.
+Сигнал, генерируемый при изменении значения присутствия пользователя.
 
-\ **Note:** This signal will not be emitted during application startup and application shutdown. Developers should assume user presence is gained on startup and lost on shutdown.
+\ **Примечание:** Этот сигнал не будет генерироваться при запуске и завершении работы приложения. Разработчикам следует исходить из того, что присутствие пользователя определяется при запуске и теряется при завершении работы.
 
 .. rst-class:: classref-section-separator
 
@@ -896,7 +896,7 @@ flags **HandJointFlags**: :ref:`🔗<enum_OpenXRInterface_HandJointFlags>`
 - |void| **set_foveation_dynamic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_foveation_dynamic**\ (\ )
 
-If ``true``, enables dynamic foveation adjustment. The interface must be initialized before this is accessible. If enabled, foveation will automatically be adjusted between low and :ref:`foveation_level<class_OpenXRInterface_property_foveation_level>`.
+Если ``true``, включается динамическая регулировка фокусировки. Интерфейс должен быть инициализирован, прежде чем эта функция станет доступна. Если включено, фокусировка будет автоматически регулироваться в диапазоне от низкого до :ref:`foveation_level<class_OpenXRInterface_property_foveation_level>`.
 
 .. rst-class:: classref-item-separator
 
@@ -913,7 +913,7 @@ If ``true``, enables dynamic foveation adjustment. The interface must be initial
 - |void| **set_foveation_level**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_foveation_level**\ (\ )
 
-The foveation level, from ``0`` (off) to ``3`` (high). The interface must be initialized before this is accessible.
+Уровень фокусировки, от ``0`` (выкл.) до ``3`` (высокий). Интерфейс должен быть инициализирован, прежде чем эта функция станет доступна.
 
 .. rst-class:: classref-item-separator
 
@@ -930,7 +930,7 @@ The foveation level, from ``0`` (off) to ``3`` (high). The interface must be ini
 - |void| **set_foveation_with_subsampled_images**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_foveation_with_subsampled_images**\ (\ )
 
-If ``true``, enables subsampled images with foveation, which can provide a performance boost on Vulkan.
+Если ``true``, включается субдискретизация изображений с фовеацией, что может повысить производительность в Vulkan.
 
 .. rst-class:: classref-item-separator
 
@@ -1216,9 +1216,9 @@ If ``true``, enables subsampled images with foveation, which can provide a perfo
 
 :ref:`bool<class_bool>` **is_user_presence_supported**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_is_user_presence_supported>`
 
-Returns ``true`` if OpenXR's user presence extension is supported and enabled.
+Возвращает ``true``, если расширение присутствия пользователя OpenXR поддерживается и включено.
 
-\ **Note:** This only returns a valid value after OpenXR has been initialized.
+\ **Примечание:** Это возвращает допустимое значение только после инициализации OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -1230,7 +1230,7 @@ Returns ``true`` if OpenXR's user presence extension is supported and enabled.
 
 :ref:`bool<class_bool>` **is_user_present**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_is_user_present>`
 
-Returns ``true`` if system has detected the presence of a user in the XR experience.
+Возвращает ``true``, если система обнаружила присутствие пользователя в среде XR.
 
 .. rst-class:: classref-item-separator
 

@@ -137,7 +137,7 @@ Chiamato quando una parte della **Texture2D** specificata dalle coordinate di ``
 
 :ref:`Format<enum_Image_Format>` **_get_format**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__get_format>`
 
-Called when :ref:`get_format()<class_Texture2D_method_get_format>` is called.
+Chiamato quando :ref:`get_format()<class_Texture2D_method_get_format>` viene chiamato.
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ Chiamato quando viene richiesta l'altezza della **Texture2D**.
 
 :ref:`Image<class_Image>` **_get_image**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__get_image>`
 
-Called when :ref:`get_image()<class_Texture2D_method_get_image>` is called.
+Chiamato quando :ref:`get_image()<class_Texture2D_method_get_image>` viene chiamato.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ Called when :ref:`get_image()<class_Texture2D_method_get_image>` is called.
 
 :ref:`int<class_int>` **_get_mipmap_count**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__get_mipmap_count>`
 
-Called when :ref:`get_mipmap_count()<class_Texture2D_method_get_mipmap_count>` is called.
+Chiamato quando :ref:`get_mipmap_count()<class_Texture2D_method_get_mipmap_count>` viene chiamato.
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ Chiamato quando viene richiesta la presenza di un canale alfa nella **Texture2D*
 
 :ref:`bool<class_bool>` **_has_mipmaps**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__has_mipmaps>`
 
-Called when :ref:`has_mipmaps()<class_Texture2D_method_has_mipmaps>` is called.
+Chiamato quando :ref:`has_mipmaps()<class_Texture2D_method_has_mipmaps>` viene chiamato.
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Disegna una parte della texture attraverso un :ref:`CanvasItem<class_CanvasItem>
 
 :ref:`Format<enum_Image_Format>` **get_format**\ (\ ) |const| :ref:`🔗<class_Texture2D_method_get_format>`
 
-Returns the image format of the texture.
+Restituisce il formato immagine della texture.
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ Restituisce un':ref:`Image<class_Image>` che è una copia dei dati da questa **T
 
 :ref:`int<class_int>` **get_mipmap_count**\ (\ ) |const| :ref:`🔗<class_Texture2D_method_get_mipmap_count>`
 
-Returns the number of mipmaps of the texture.
+Restituisce il numero di mipmap della texture.
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ Restituisce ``true`` se questa **Texture2D** ha un canale alfa.
 
 :ref:`bool<class_bool>` **has_mipmaps**\ (\ ) |const| :ref:`🔗<class_Texture2D_method_has_mipmaps>`
 
-Returns ``true`` if the texture has mipmaps.
+Restituisce ``true`` se la texture ha mipmap.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

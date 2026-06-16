@@ -334,7 +334,7 @@ Il percorso della cartella associato a questi dati glTF. Serve per trovare altri
 - |void| **set_copyright**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_copyright**\ (\ )
 
-La stringa del copyright nell'intestazione dei contenuti del file glTF. Questa è impostata durante l'importazione se presente e durante l'esportazione se non è vuota. Consulta la documentazione dell'intestazione dei contenuti glTF per ulteriori informazioni.
+La stringa del copyright nell'intestazione della risorsa nel file glTF. Questa è impostata durante l'importazione se presente e durante l'esportazione se non è vuota. Consulta la documentazione dell'intestazione delle risorse glTF per ulteriori informazioni.
 
 .. rst-class:: classref-item-separator
 

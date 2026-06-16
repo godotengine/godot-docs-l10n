@@ -2949,7 +2949,7 @@ enum **ParticlesCollisionType**: :ref:`🔗<enum_RenderingServer_ParticlesCollis
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_HEIGHTFIELD_COLLIDE** = ``6``
 
-``GPUPParticles3D`` 的高度场（Heightfield）碰撞类型（参见 :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`\ ）。
+:ref:`GPUParticles3D<class_GPUParticles3D>` 的高度场碰撞类型（见 :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -4317,7 +4317,7 @@ enum **EnvironmentGlowBlendMode**: :ref:`🔗<enum_RenderingServer_EnvironmentGl
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_SCREEN** = ``1``
 
-在根据场景亮度值调整发光的影响权重后，将发光效果叠加到场景中；较暗的区域会受到发光的强烈影响，而较亮的区域则几乎不受影响。这种做法可以有效避免原本就很亮的区域因为发光效果而变得过曝（亮到刺眼）。\ :ref:`Environment.tonemap_white<class_Environment_property_tonemap_white>` 属性用于设定一个“最大场景亮度值”，当亮度达到这个值时，发光效果将不再产生任何影响。当 :ref:`Environment.tonemap_mode<class_Environment_property_tonemap_mode>` 被设置为 :ref:`Environment.TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` 且 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 为 ``true`` 时，系统会自动使用父级窗口的 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 方法返回值，作为这个最大场景亮度值。
+根据场景值修改辉光影响后，为场景添加辉光效果；暗部数值会受到辉光的强烈影响，而亮部数值则不会受到辉光的影响。这种方法可以避免高光区域因发光效果而变得过亮。\ :ref:`Environment.tonemap_white<class_Environment_property_tonemap_white>` 用于确定辉光效果不应产生影响的最大场景值。当 :ref:`Environment.tonemap_mode<class_Environment_property_tonemap_mode>` 设置为 :ref:`Environment.TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` 且 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 为 ``true`` 时，将使用父窗口的 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 作为最大场景值。
 
 .. _class_RenderingServer_constant_ENV_GLOW_BLEND_MODE_SOFTLIGHT:
 

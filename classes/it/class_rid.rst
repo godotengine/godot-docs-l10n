@@ -16,7 +16,7 @@ Il tipo di :ref:`Variant<class_Variant>` integrato RID è utilizzato per acceder
 
 Una risorsa di basso livello può corrispondere a una :ref:`Resource<class_Resource>` di alto livello, come :ref:`Texture<class_Texture>` o :ref:`Mesh<class_Mesh>`.
 
-\ **Nota:** i RID sono utili solo durante la sessione attuale. Non corrisponderanno a una risorsa simile se inviati tramite una rete o caricati da un file in un secondo momento.
+\ **Nota:** I RID sono utili solo durante la sessione attuale. Non corrisponderanno a una risorsa simile se inviati tramite una rete o caricati da un file in un secondo momento.
 
 \ **Nota:** In un contesto booleano, un RID sarà valutato come ``false`` se ha l'ID invalido di ``0``. Altrimenti, un RID sarà sempre valutato come ``true``. Questo equivale a chiamare :ref:`is_valid()<class_RID_method_is_valid>`.
 

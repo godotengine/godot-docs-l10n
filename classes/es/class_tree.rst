@@ -599,9 +599,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_DISABLED** = ``0``
 
-Desactiva todas las secciones de caída, pero aún así permite detectar la sección de caída "en el artículo" por :ref:`get_drop_section_at_position()<class_Tree_method_get_drop_section_at_position>`.
+Disables all drop sections.
 
-\ **Nota:** Esta es la flag por defecto, no tiene ningún efecto cuando se combina con otras flags.
+\ **Note:** This is the default flag, it has no effect when combined with other flags.
 
 .. _class_Tree_constant_DROP_MODE_ON_ITEM:
 
@@ -609,9 +609,9 @@ Desactiva todas las secciones de caída, pero aún así permite detectar la secc
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_ON_ITEM** = ``1``
 
-Habilita la sección de entrega "en el artículo". Esta sección de entrega cubre todo el artículo.
+Enables the "on item" drop section. This drop section covers the entire item.
 
-Cuando se combina con :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, esta sección de caída reduce a la mitad la altura y se mantiene centrada verticalmente.
+When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, this drop section halves in height and stays centered vertically.
 
 .. _class_Tree_constant_DROP_MODE_INBETWEEN:
 
@@ -619,9 +619,9 @@ Cuando se combina con :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_IN
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_INBETWEEN** = ``2``
 
-Activa las secciones de caída "por encima del artículo" y "por debajo del artículo". La sección de caída "sobre el artículo" cubre la mitad superior del artículo, y la sección de caída "debajo del artículo" cubre la mitad inferior.
+Enables "above item" and "below item" drop sections. The "above item" drop section covers the top half of the item, while the "below item" drop section covers the bottom half, and extends downward to the left of any children.
 
-Cuando se combinan con :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, estas secciones de caída reducen a la mitad la altura y se mantienen en la parte superior / inferior en consecuencia.
+When combined with :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, these drop sections halve in height and stay at the top and bottom respectively.
 
 .. rst-class:: classref-item-separator
 
@@ -1171,11 +1171,19 @@ Devuelve el rectángulo para los popups personalizados. Ayuda a crear controles 
 
 :ref:`int<class_int>` **get_drop_section_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_drop_section_at_position>`
 
-Returns the drop section at ``position``, or -100 if no item is there.
+Returns the drop section at ``position``, as permitted by enabled :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
 
-Values -1, 0, or 1 will be returned for the "above item", "on item", and "below item" drop sections, respectively. See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` for a description of each drop section.
+- ``-1`` if the position is **above** the item. Typically used to insert as the item's previous sibling.
 
-To get the item which the returned drop section is relative to, use :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
+- ``0`` if the position is **on** the item. Typically used to insert as the item's last child.
+
+- ``1`` if the position is **below** the item, when the item has no children. Typically used to insert as the item's next sibling. If the item *does* have children, this section is still reachable by hovering to the left of the item's collapse arrow, and below.
+
+- ``2`` if the position is **below** the item, when the item has children. Typically used to insert as the item's first child.
+
+- ``-100`` if the position is not over any item, or no :ref:`DropModeFlags<enum_Tree_DropModeFlags>` are set.
+
+See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` for a description of each drop region. To get the item which the returned drop section refers to, use :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
 
 .. rst-class:: classref-item-separator
 

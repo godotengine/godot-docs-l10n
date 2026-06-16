@@ -232,7 +232,7 @@ Descrizioni delle proprietà
 - |void| **set_attributes**\ (\ value\: :ref:`CameraAttributes<class_CameraAttributes>`\ )
 - :ref:`CameraAttributes<class_CameraAttributes>` **get_attributes**\ (\ )
 
-La risorsa di attributi da utilizzare per questa telecamera.
+La risorsa degli attributi da utilizzare per questa telecamera.
 
 .. rst-class:: classref-item-separator
 

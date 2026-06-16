@@ -20,7 +20,7 @@ When naming a Project Settings property, use the full path to the setting includ
 
 \ **Feature tags:** Project settings can be overridden for specific platforms and configurations (debug, release, ...) using :doc:`feature tags <../tutorials/export/feature_tags>`.
 
-\ **Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' :doc:`feature tags <../tutorials/export/feature_tags>` in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
+\ **Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This file is in the same format as ``project.godot``, and can also be written using :ref:`ConfigFile<class_ConfigFile>`. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' :doc:`feature tags <../tutorials/export/feature_tags>` in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
 
 .. rst-class:: classref-introduction-group
 
@@ -14719,9 +14719,9 @@ Renvoie le chemin localisé (démarrant par ``res://``) correspondant au chemin 
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ ) :ref:`🔗<class_ProjectSettings_method_save>`
 
-Enregistre la configuration du fichier ``project.godot``.
+Saves the configuration to the ``project.godot`` file.
 
-\ **Note :** Cette méthode est destinée à être utilisée par les greffons de l'éditeur, puisque **ProjectSettings** ne peut pas être modifié puis chargé directement dans une application lancée. Si vous voulez modifier les paramètres de projet depuis un projet exporté, utilisez :ref:`save_custom()<class_ProjectSettings_method_save_custom>` pour enregistrer le fichier ``override.cfg``.
+\ **Note:** This method is intended to be used by editor plugins, as modified **ProjectSettings** can't be loaded back in the running app. If you want to change project settings in exported projects, use :ref:`save_custom()<class_ProjectSettings_method_save_custom>` to save an ``override.cfg`` file.
 
 .. rst-class:: classref-item-separator
 
@@ -14733,7 +14733,7 @@ Enregistre la configuration du fichier ``project.godot``.
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_custom**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ProjectSettings_method_save_custom>`
 
-Enregistre la configuration vers un fichier personnalisé. L'extension de fichier doit être ``.godot`` (pour enregistrer dans le format :ref:`ConfigFile<class_ConfigFile>` au format texte) ou ``.binary`` (pour enregistrer au format binaire). Vous pouvez également enregistrer le fichier ``override.cfg``, qui est également au format texte, mais peut être utilisé dans des projets exportés contrairement aux autres formats.
+Saves the configuration to a custom file. The file extension must be ``.godot`` (to save in text-based :ref:`ConfigFile<class_ConfigFile>` format) or ``.binary`` (to save in binary format). You can also save an ``override.cfg`` file, which is also text, but can be used in exported projects unlike other formats.
 
 .. rst-class:: classref-item-separator
 

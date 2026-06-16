@@ -27,6 +27,8 @@ Window
 
 - :doc:`Вихід HDR <../tutorials/rendering/hdr_output>`
 
+- `Multiple Windows demo <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
+
 .. rst-class:: classref-reftable-group
 
 Властивості
@@ -627,7 +629,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_RESIZE_DISABLED** = ``0``
 
-Розмір вікна не можна змінити, перетягнувши його ручку зміни розміру. Розмір вікна все ще можна змінити за допомогою :ref:`size<class_Window_property_size>`. Цей прапорець ігнорується для повноекранних вікон. Встановлюється за допомогою :ref:`unresizable<class_Window_property_unresizable>`.
+The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`size<class_Window_property_size>`. This flag is ignored for full screen windows. Set with :ref:`unresizable<class_Window_property_unresizable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_BORDERLESS:
 
@@ -635,7 +639,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_BORDERLESS** = ``1``
 
-Вікно не має рідних титульних барів та інших прикрас. Цей прапор ігнорується для повноекранних вікон. Набір з :ref:`borderless<class_Window_property_borderless>`.
+The window do not have native title bar and other decorations. This flag is ignored for full-screen windows. Set with :ref:`borderless<class_Window_property_borderless>`.
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_ALWAYS_ON_TOP:
 
@@ -643,7 +649,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_ALWAYS_ON_TOP** = ``2``
 
-Вікно пливе поверх всіх інших вікон. Цей прапор ігнорується для повноекранних вікон. Набір з :ref:`always_on_top<class_Window_property_always_on_top>`.
+The window is floating on top of all other windows. This flag is ignored for full-screen windows. Set with :ref:`always_on_top<class_Window_property_always_on_top>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_TRANSPARENT:
 
@@ -651,9 +659,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_TRANSPARENT** = ``3``
 
-Віковий фон може бути прозорим. Набір з :ref:`transparent<class_Window_property_transparent>`.
+The window background can be transparent. Set with :ref:`transparent<class_Window_property_transparent>`.
 
-\ **Примітка:** Цей прапор не має ефекту, якщо або :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, або вікна :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` встановлюється на ``false``.
+\ **Note:** This flag has no effect if either :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, or the window's :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is set to ``false``.
+
+\ **Note:** Transparency support is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_NO_FOCUS:
 
@@ -661,7 +671,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_NO_FOCUS** = ``4``
 
-Вікно не може бути зосередженим. Безконтактне вікно ігнорує всі вводи, крім кліків миші. Набір з :ref:`unfocusable<class_Window_property_unfocusable>`.
+The window can't be focused. No-focus window will ignore all input, except mouse clicks. Set with :ref:`unfocusable<class_Window_property_unfocusable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_POPUP:
 
@@ -669,9 +681,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP** = ``5``
 
-Вікно є частиною меню або ``Налаштування кнопки`` випадання. Цей прапор не може бути змінений, коли вікно видно. Активний спливаючий вікно буде отримувати тільки всі вхідні, не вкрасивши фокус від свого батька. При використанні натиснути за її межами, або при вимкненні програми. Вікна попуп повинна мати хідний набір батьків (див. :ref:`transient<class_Window_property_transient>`).
+Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`transient<class_Window_property_transient>`).
 
-\ **Примітка:** Цей прапор не впливає на вбудовані вікна (безкоштовно зазначене вікно є :ref:`Popup<class_Popup>`).
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded :ref:`Popup<class_Popup>` windows.
 
 .. _class_Window_constant_FLAG_EXTEND_TO_TITLE:
 
@@ -679,11 +691,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_EXTEND_TO_TITLE** = ``6``
 
-Вміст вікон розширюється до повного розміру вікна. На відміну від без кордонів вікно, рама залишається неактуальним і може бути використана для зміни вікна, рядок заголовка прозора, але мають мінімізацію/максимізувати/закривати кнопки. Набір з :ref:`extend_to_title<class_Window_property_extend_to_title>`.
+Window content is expanded to the full size of the window. Unlike borderless window, the frame is left intact and can be used to resize the window, title bar is transparent, but have minimize/maximize/close buttons. Set with :ref:`extend_to_title<class_Window_property_extend_to_title>`.
 
-\ **Примітка:** Цей прапор реалізується тільки на macOS.
+\ **Note:** This flag has no effect in embedded windows.
 
-\ **Примітка:** Цей прапор не впливає на вбудовані вікна.
+\ **Note:** This flag is implemented only on macOS.
 
 .. _class_Window_constant_FLAG_MOUSE_PASSTHROUGH:
 
@@ -691,9 +703,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-Всі події мишки пропускаються до основного вікна того ж програми.
+All mouse events are passed to the underlying window of the same application.
 
-\ **Примітка:** Цей прапор не впливає на вбудовані вікна.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows.
 
 .. _class_Window_constant_FLAG_SHARP_CORNERS:
 
@@ -727,7 +741,11 @@ Windows виключається зі знімків екрана, зробле�
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP_WM_HINT** = ``10``
 
-Сигналізує менеджеру вікон, що це вікно має бути визначеним реалізацією "спливаючим вікном" (зазвичай плаваючим, безрамковим, незнімним дочірнім вікном).
+Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (Wayland).
 
 .. _class_Window_constant_FLAG_MINIMIZE_DISABLED:
 
@@ -735,9 +753,11 @@ Windows виключається зі знімків екрана, зробле�
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MINIMIZE_DISABLED** = ``11``
 
-Кнопка мінімізації вікна вимкнена.
+Window minimize button is disabled.
 
-\ **Примітка:** Цей прапорець реалізовано в macOS та Windows.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAXIMIZE_DISABLED:
 
@@ -745,9 +765,11 @@ Windows виключається зі знімків екрана, зробле�
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MAXIMIZE_DISABLED** = ``12``
 
-Кнопка розгортання вікна вимкнена.
+Window maximize button is disabled.
 
-\ **Примітка:** Цей прапорець реалізовано в macOS та Windows.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAX:
 

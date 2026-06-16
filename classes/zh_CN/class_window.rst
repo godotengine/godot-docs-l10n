@@ -27,6 +27,8 @@ Window
 
 - :doc:`HDR输出 <../tutorials/rendering/hdr_output>`
 
+- `Multiple Windows demo <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
+
 .. rst-class:: classref-reftable-group
 
 属性
@@ -470,7 +472,7 @@ Window
 
 **output_max_linear_value_changed**\ (\ output_max_linear_value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_signal_output_max_linear_value_changed>`
 
-当 :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 返回的输出最大线性值发生更改时发出。当启用或禁用 HDR 输出，或者窗口的任何 HDR 输出亮度值发生更改时（例如，当玩家调整屏幕亮度设置或将窗口移动到不同屏幕时），就会发生这种情况。\ ``output_max_linear_value`` 为新值。
+当 :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 返回的输出最大线性值发生变化时发出。当启用或禁用 HDR 输出，以及窗口的任何 HDR 输出亮度值发生变化时，例如，当玩家调整屏幕亮度设置或将窗口移动到不同的屏幕时，就会发生。\ ``output_max_linear_value`` 是新值。
 
 .. rst-class:: classref-item-separator
 
@@ -627,7 +629,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_RESIZE_DISABLED** = ``0``
 
-该窗口不能通过拖动其调整大小的手柄来调整大小。仍然可以使用 :ref:`size<class_Window_property_size>` 来调整窗口的大小。这个标志对于全屏窗口来说是被忽略的。用 :ref:`unresizable<class_Window_property_unresizable>` 设置。
+The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`size<class_Window_property_size>`. This flag is ignored for full screen windows. Set with :ref:`unresizable<class_Window_property_unresizable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_BORDERLESS:
 
@@ -635,7 +639,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_BORDERLESS** = ``1``
 
-该窗口没有原生标题栏和其他装饰。全屏窗口会忽略该标志。由 :ref:`borderless<class_Window_property_borderless>` 设置。
+The window do not have native title bar and other decorations. This flag is ignored for full-screen windows. Set with :ref:`borderless<class_Window_property_borderless>`.
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_ALWAYS_ON_TOP:
 
@@ -643,7 +649,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_ALWAYS_ON_TOP** = ``2``
 
-该窗口漂浮在所有其他窗口之上。全屏窗口会忽略该标志。由 :ref:`always_on_top<class_Window_property_always_on_top>` 设置。
+The window is floating on top of all other windows. This flag is ignored for full-screen windows. Set with :ref:`always_on_top<class_Window_property_always_on_top>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_TRANSPARENT:
 
@@ -651,9 +659,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_TRANSPARENT** = ``3``
 
-该窗口的背景可以是透明的。使用 :ref:`transparent<class_Window_property_transparent>` 设置。
+The window background can be transparent. Set with :ref:`transparent<class_Window_property_transparent>`.
 
-\ **注意：**\ 如果 :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` 或该窗口的 :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 为 ``false``\ ，则这个标志无效。
+\ **Note:** This flag has no effect if either :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, or the window's :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is set to ``false``.
+
+\ **Note:** Transparency support is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_NO_FOCUS:
 
@@ -661,7 +671,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_NO_FOCUS** = ``4``
 
-该窗口无法被聚焦。无焦点窗口会忽略除鼠标点击之外的所有输入。由 :ref:`unfocusable<class_Window_property_unfocusable>` 设置。
+The window can't be focused. No-focus window will ignore all input, except mouse clicks. Set with :ref:`unfocusable<class_Window_property_unfocusable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_POPUP:
 
@@ -669,9 +681,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP** = ``5``
 
-窗口为菜单或 :ref:`OptionButton<class_OptionButton>` 下拉菜单的一部分。窗口可见时无法更改这个标志。活动的弹出窗口会以独占的形式接收所有输入，但不会从其父窗口窃取焦点。用户在区域外点击或切换应用程序时，弹出窗口会自动关闭。弹出窗口必须设置临时父级（见 :ref:`transient<class_Window_property_transient>`\ ）。
+Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`transient<class_Window_property_transient>`).
 
-\ **注意：**\ 这个标志在嵌入式窗口中无效（除非该窗口是 :ref:`Popup<class_Popup>`\ ）。
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded :ref:`Popup<class_Popup>` windows.
 
 .. _class_Window_constant_FLAG_EXTEND_TO_TITLE:
 
@@ -679,11 +691,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_EXTEND_TO_TITLE** = ``6``
 
-窗口内容扩展到窗口的全部尺寸。与无边框窗口不同，框架保持不变，可以用来调整窗口的大小，标题栏是透明的，但有最小/最大/关闭按钮。用 :ref:`extend_to_title<class_Window_property_extend_to_title>` 设置。
+Window content is expanded to the full size of the window. Unlike borderless window, the frame is left intact and can be used to resize the window, title bar is transparent, but have minimize/maximize/close buttons. Set with :ref:`extend_to_title<class_Window_property_extend_to_title>`.
 
-\ **注意：**\ 这个标志在 macOS 上实现。
+\ **Note:** This flag has no effect in embedded windows.
 
-\ **注意：**\ 这个标志在嵌入式窗口中无效。
+\ **Note:** This flag is implemented only on macOS.
 
 .. _class_Window_constant_FLAG_MOUSE_PASSTHROUGH:
 
@@ -691,9 +703,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-所有鼠标事件都被传递到同一应用程序的底层窗口。
+All mouse events are passed to the underlying window of the same application.
 
-\ **注意：**\ 这个标志在嵌入式窗口中无效。
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows.
 
 .. _class_Window_constant_FLAG_SHARP_CORNERS:
 
@@ -727,7 +741,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP_WM_HINT** = ``10``
 
-向窗口管理器发出信号，表明该窗口应该是实现定义的“弹出窗口” （通常是浮动、无边框、不可平铺且不可移动的子窗口）。
+Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (Wayland).
 
 .. _class_Window_constant_FLAG_MINIMIZE_DISABLED:
 
@@ -735,9 +753,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MINIMIZE_DISABLED** = ``11``
 
-禁用窗口的最小化按钮。
+Window minimize button is disabled.
 
-\ **注意：**\ 该标志在 macOS 和 Windows 上实现。
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAXIMIZE_DISABLED:
 
@@ -745,9 +765,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MAXIMIZE_DISABLED** = ``12``
 
-禁用窗口的最大化按钮。
+Window maximize button is disabled.
 
-\ **注意：**\ 该标志在 macOS 和 Windows 上实现。
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAX:
 
@@ -2028,9 +2050,9 @@ enum **WindowInitialPosition**: :ref:`🔗<enum_Window_WindowInitialPosition>`
 
 :ref:`float<class_float>` **get_output_max_linear_value**\ (\ ) |const| :ref:`🔗<class_Window_method_get_output_max_linear_value>`
 
-返回此窗口中可显示的线性颜色分量的最大值，无论 SDR 或 HDR 输出。如果未启用 HDR 或不支持 HDR，则返回 ``1.0``\ 。当该值更改时，将发出 :ref:`output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` 信号。
+返回该窗口中可显示的线性颜色分量的最大值，无论 SDR 还是 HDR 输出。如果未启用或不支持 HDR，则返回 ``1.0``\ 。每当此值发生变化时，都会发出 :ref:`output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` 信号。
 
-此值由色调映射（tonemapping）和其他 :ref:`Environment<class_Environment>` 效果使用，以确保明亮的颜色能在此窗口可显示的范围内呈现。在项目中使用此最大线性值时，它仅应用于在没有色调映射的情况下将颜色直接呈现到屏幕上，并且不应影响光照、后期处理效果或周围颜色。以下示例生成了屏幕能产生的最亮的紫色：
+该值用于色调映射和其他 :ref:`Environment<class_Environment>` 效果，以确保明亮的颜色在该窗口可显示的范围内呈现。在项目中使用此最大线性值时，仅应将其用于直接在屏幕上显示颜色，而不进行色调映射，也不影响光照、后期处理效果或周围颜色。以下示例显示了屏幕可生成的最亮紫色：
 
 
 .. tabs::
@@ -2038,30 +2060,30 @@ enum **WindowInitialPosition**: :ref:`🔗<enum_Window_WindowInitialPosition>`
  .. code-tab:: gdscript
 
     func _process(_delta):
-        # output_max_linear_value may change often, so do this every frame.
+        # output_max_linear_value 可能经常改变，所以需要每帧执行。
         var max_linear_value = get_window().get_output_max_linear_value()
-        # Replace this with your color:
+        # 替换成你的 颜色：
         var original_color = Color.PURPLE
-        # Normalize to max_linear_value to produce the brightest color possible,
-        # regardless of SDR or HDR output:
+        # 将数值归一化到最大线性值，以产生尽可能亮的颜色，
+        # 无论是 SDR 还是 HDR 输出：
         var bright_color = normalize_color(original_color, max_linear_value)
 
 
     func normalize_color(srgb_color, max_linear_value = 1.0):
-        # Color must be linear-encoded to use math operations.
+        # 要进行数学运算，颜色必须进行线性编码。
         var linear_color = srgb_color.srgb_to_linear()
         var max_rgb_value = maxf(linear_color.r, maxf(linear_color.g, linear_color.b))
         var brightness_scale = max_linear_value / max_rgb_value
         linear_color *= brightness_scale
-        # Undo changes to the alpha channel, which should not be modified.
+        # 撤销对 Alpha 通道的更改，该通道不应被修改。
         linear_color.a = srgb_color.a
-        # Convert back to nonlinear sRGB encoding, which is required for Color in
-        # Godot unless stated otherwise.
+        # 转换回非线性 sRGB 编码，除非另有说明，否则 Godot 中的颜色设置
+        # 需要使用非线性 sRGB 编码。
         return linear_color.linear_to_srgb()
 
 
 
-**\ **注意：** 为了获得正确的结果，您需要在乘以该值之前，先将 sRGB 颜色转换为线性颜色。
+\ **注意：**\ 需要将 sRGB 颜色转换为线性颜色，然后再乘以该值以获得正确的结果。
 
 .. rst-class:: classref-item-separator
 

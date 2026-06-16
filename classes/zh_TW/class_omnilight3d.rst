@@ -28,7 +28,7 @@ OmniLight3D
 教學
 ----
 
-- :doc:`3D 燈光與陰影 <../tutorials/3d/lights_and_shadows>`
+- `3D 燈光與陰影 <../tutorials/3d/lights_and_shadows.html#omni-light>`__
 
 - :doc:`偽造全域光照 <../tutorials/3d/global_illumination/faking_global_illumination>`
 

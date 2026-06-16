@@ -27,7 +27,7 @@ SpotLight3D
 Обучающие материалы
 --------------------------------------
 
-- :doc:`3D свет и тени <../tutorials/3d/lights_and_shadows>`
+- `3D свет и тени <../tutorials/3d/lights_and_shadows.html#spot-light>`__
 
 - :doc:`Поддельное глобальное освещение <../tutorials/3d/global_illumination/faking_global_illumination>`
 

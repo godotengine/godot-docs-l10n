@@ -660,7 +660,7 @@ ID 为 ``id`` 的项目被按下时发出。在 macOS 系统上，当其快捷�
 - |void| **set_search_bar_min_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_min_item_count**\ (\ )
 
-Sets the minimum number of items required for the search bar to be visible. :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` must be ``true`` for this to have any effect. Separator items are not counted.
+设置搜索栏可见所需的最少条目数。必须将 :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` 设置为 ``true``\ ，此设置才会生效。分隔符条目不计入总数。
 
 .. rst-class:: classref-item-separator
 

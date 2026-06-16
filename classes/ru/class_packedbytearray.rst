@@ -12,13 +12,13 @@ PackedByteArray
 Описание
 ----------------
 
-An array specifically designed to hold bytes. Packs data tightly, so it saves memory for large array sizes.
+Массив, специально разработанный для хранения байтов. Плотно упаковывает данные, экономя память при больших размерах массивов.
 
-\ **PackedByteArray** also provides methods to encode/decode various types to/from bytes. The way values are encoded is an implementation detail and shouldn't be relied upon when interacting with external apps.
+\ **PackedByteArray** также предоставляет методы для кодирования/декодирования различных типов в/из байтов. Способ кодирования значений является деталью реализации и не должен использоваться при взаимодействии с внешними приложениями.
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **Примечание:** Упакованные массивы всегда передаются по ссылке. Чтобы получить копию массива, которую можно изменять независимо от исходного массива, используйте :ref:`duplicate()<class_PackedByteArray_method_duplicate>`. Это *не* относится к встроенным свойствам и методам. В этих случаях возвращаемый упакованный массив является копией, и его изменение *не* повлияет на исходное значение. Чтобы обновить встроенное свойство этого типа, измените возвращаемый массив, а затем снова присвойте его свойству.
 
-\ **Note:** In a boolean context, a packed array will evaluate to ``false`` if it's empty. Otherwise, a packed array will always evaluate to ``true``.
+\ **Примечание:** В логическом контексте упакованный массив будет оцениваться как ``false``, если он пуст. В противном случае упакованный массив всегда будет иметь значение ``true``.
 
 .. note::
 

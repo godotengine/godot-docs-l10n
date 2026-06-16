@@ -470,7 +470,7 @@ Restituisce una copia della stringa con i caratteri di escape sostituiti dai lor
 
 :ref:`String<class_String>` **capitalize**\ (\ ) |const| :ref:`🔗<class_String_method_capitalize>`
 
-Restituisce una copia della stringa cambiandogli l'aspetto: sostituisce i trattini bassi (``_``) con spazi, aggiunge spazi prima delle lettere maiuscole nel mezzo di una parola, converte tutte le lettere in minuscole, e infine converte la prima e ciascuna successiva a uno spazio in maiuscolo.
+Restituisce una copia della stringa cambiandogli l'aspetto: sostituisce i trattini bassi (``_``) e i trattini (``-``) con spazi, aggiunge spazi prima delle lettere maiuscole nel mezzo di una parola, converte tutte le lettere in minuscole, e infine converte la prima e ciascuna successiva a uno spazio in maiuscolo.
 
 
 .. tabs::

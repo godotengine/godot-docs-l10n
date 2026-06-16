@@ -492,7 +492,7 @@ enum **GlowBlendMode**: :ref:`🔗<enum_Environment_GlowBlendMode>`
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_SCREEN** = ``1``
 
-在基于场景亮度调整辉光的影响后，将辉光效果添加到场景中；较暗的数值会受到辉光的强烈影响，而较亮的数值则不会受到辉光的影响。这种方法可以避免明亮的区域因为辉光效果而变得过度曝光（过亮）。\ :ref:`tonemap_white<class_Environment_property_tonemap_white>` 用于确定辉光不再产生影响的场景最大亮度值。当 :ref:`tonemap_mode<class_Environment_property_tonemap_mode>` 被设置为 :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` 且 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 为 ``true`` 时，将使用父窗口的 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 作为场景的最大亮度值。
+根据场景值修改辉光影响后，为场景添加辉光效果；暗部数值会受到辉光的强烈影响，而亮部数值则不会受到辉光的影响。这种方法可以避免高光区域因辉光效果而变得过亮。\ :ref:`tonemap_white<class_Environment_property_tonemap_white>` 用于确定辉光效果不应产生影响的最大场景值。当 :ref:`tonemap_mode<class_Environment_property_tonemap_mode>` 设置为 :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` 且 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 为 ``true`` 时，将使用父窗口的 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 作为最大场景值。
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_SOFTLIGHT:
 
@@ -2081,9 +2081,9 @@ SDFGI 可见的最大距离。超出该距离，环境照明或其他 GI 来源�
 - |void| **set_tonemap_agx_white**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tonemap_agx_white**\ (\ )
 
-用于色调映射的白色参考值，它决定了在提供给色调映射器的数值范围内，“亮白色”具体位于哪个位置。为了获得逼真的光照效果，建议将 :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 至少设置为 ``6.0``\ 。数值越高，高光部分越不容易过曝（即避免出现死白一片），但可能会让整体场景看起来对比度偏低。\ :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 的作用和 :ref:`tonemap_white<class_Environment_property_tonemap_white>` 是一样的，但它仅在使用 :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` 这种色调映射器时才会生效。相关参数也可以参考 :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`\ 。
+用于色调映射的白色参考值，指示亮白色在提供给色调映射器的值域中的位置。对于逼真的光照效果，建议将 :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 设置为至少 ``6.0``\ 。更高的值可以减少高光过曝，但可能会降低场景的对比度。\ :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 与 :ref:`tonemap_white<class_Environment_property_tonemap_white>` 相同，但仅对 :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` 色调映射器有效。另请参阅 :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`\ 。
 
-\ **注意：** 如果在移动端渲染器（Mobile renderer）中禁用了 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`\ ，那么 :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 将会被直接忽略，系统会始终强制使用 ``2.0`` 作为白色值。否则，当启用了 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 时，为了保证在 SDR 和 HDR 输出下都有良好的显示效果，\ :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 会在运行时通过乘以父窗口的 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 来动态调整。
+\ **注意：**\ 当使用 Mobile 渲染器且 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 被禁用时，\ :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 将被忽略，并且始终会使用 ``2.0`` 的白色值。否则，当使用 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 时，\ :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 将在运行时通过乘以父窗口的 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` 进行动态调整，以确保 SDR 和 HDR 输出都能表现良好。
 
 .. rst-class:: classref-item-separator
 
@@ -2136,11 +2136,11 @@ SDFGI 可见的最大距离。超出该距离，环境照明或其他 GI 来源�
 - |void| **set_tonemap_white**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tonemap_white**\ (\ )
 
-用于色调映射的白色参考值，它决定了在提供给色调映射器的数值范围内，“亮白色”具体位于哪个位置。为了获得逼真的光照效果，建议将 :ref:`tonemap_white<class_Environment_property_tonemap_white>` 至少设置为 ``6.0``\ 。数值越高，高光部分越不容易过曝（即避免出现死白一片），但可能会让整体场景看起来对比度偏低。当使用 :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` 色调映射器时，将会改用 :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` 参数。相关参数也可以参考 :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`\ 。
+用于色调映射的白色参考值，指示亮白色在色调映射器提供的数值范围内的位置。为了获得逼真的光照效果，建议将 :ref:`tonemap_white<class_Environment_property_tonemap_white>` 设置为至少 ``6.0``\ 。更高的值可以减少高光过曝，但可能会降低场景的对比度。使用 :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` 色调映射器时，将使用 :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>`\ 。另请参阅 :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`\ 。
 
-\ **注意：** 在移动端渲染器（Mobile renderer）中，必须将 :ref:`tonemap_white<class_Environment_property_tonemap_white>` 设置为 ``2.0`` 或更低，才能呈现出明亮的画面。
+\ **注意：**\ 在移动渲染器上，\ :ref:`tonemap_white<class_Environment_property_tonemap_white>` 必须设置为 ``2.0`` 或更低才能生成明亮的图像。
 
-\ **注意：** 当使用 :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` 色调映射器时，\ :ref:`tonemap_white<class_Environment_property_tonemap_white>` 将会被忽略；而当使用 :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>` 色调映射器且启用了 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 时，该参数会在运行时动态调整，以确保其数值永远不会低于父窗口的 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`\ 。
+\ **注意：**\ 当使用 :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` 时，\ :ref:`tonemap_white<class_Environment_property_tonemap_white>` 将被忽略；当使用 :ref:`TONE_MAPPER_REINHARDT<class_Environment_constant_TONE_MAPPER_REINHARDT>` 和 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 时，\ :ref:`tonemap_white<class_Environment_property_tonemap_white>` 将在运行时动态调整，使其永远不会小于父窗口的 :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`\ 。
 
 .. rst-class:: classref-item-separator
 

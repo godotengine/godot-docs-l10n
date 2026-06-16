@@ -633,9 +633,9 @@ OpenXRExtensionWrapper
 
 :ref:`int<class_int>` **_set_projection_layer_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_projection_layer_and_get_next_pointer>`
 
-Adds additional data structures to ``XrCompositionLayerProjection``.
+Добавляет дополнительные структуры данных к ``XrCompositionLayerProjection``.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_projection_layer_extension()<class_OpenXRAPIExtension_method_register_projection_layer_extension>`.
+Этот метод будет вызываться только в том случае, если расширение ранее зарегистрировалось с помощью :ref:`OpenXRAPIExtension.register_projection_layer_extension()<class_OpenXRAPIExtension_method_register_projection_layer_extension>`.
 
 .. rst-class:: classref-item-separator
 

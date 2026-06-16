@@ -483,9 +483,9 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_relative**\ (\ )
 
-The relative option. If ``true``, the rotation is applied relative to the pose. If ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **LookAtModifier3D**'s result.
+Относительная опция. Если ``true``, вращение применяется относительно позы. Если ``false``, вращение применяется относительно остального. Это означает замену текущей позы результатом **LookAtModifier3D**.
 
-\ **Note:** This option affects the base angle for :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`. Since the **LookAtModifier3D** relies strongly on Euler rotation, the axis that determines the limitation and the actual rotation are strongly tied together.
+\ **Примечание:** Эта опция влияет на базовый угол для :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`. Поскольку **LookAtModifier3D** в значительной степени основан на вращении Эйлера, ось, определяющая ограничение, и фактическое вращение тесно связаны.
 
 .. rst-class:: classref-item-separator
 

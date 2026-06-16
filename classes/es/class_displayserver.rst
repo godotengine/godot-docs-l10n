@@ -2522,7 +2522,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_RESIZE_DISABLED** = ``0``
 
-La ventana no puede ser redimensionada arrastrando su agarre de redimensionamiento. Todavía es posible redimensionar la ventana usando :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`. Esta bandera es ignorada para las ventanas en pantalla completa.
+The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`. This flag is ignored for full screen windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_BORDERLESS:
 
@@ -2530,7 +2532,9 @@ La ventana no puede ser redimensionada arrastrando su agarre de redimensionamien
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_BORDERLESS** = ``1``
 
-La ventana no tiene barra de título nativa ni otras decoraciones. Esta bandera es ignorada para las ventanas en pantalla completa.
+The window do not have native title bar and other decorations. This flag is ignored for full-screen windows.
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_ALWAYS_ON_TOP:
 
@@ -2538,7 +2542,9 @@ La ventana no tiene barra de título nativa ni otras decoraciones. Esta bandera 
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_ALWAYS_ON_TOP** = ``2``
 
-La ventana está flotando sobre todas las demás ventanas. Esta bandera es ignorada para las ventanas en pantalla completa.
+The window is floating on top of all other windows. This flag is ignored for full-screen windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_TRANSPARENT:
 
@@ -2560,7 +2566,9 @@ The window background can be transparent.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_NO_FOCUS** = ``4``
 
-La ventana no puede enfocarse. Una ventana sin foco ignorará todas las entradas, excepto los clics del ratón.
+The window can't be focused. No-focus window will ignore all input, except mouse clicks.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_POPUP:
 
@@ -2568,7 +2576,9 @@ La ventana no puede enfocarse. Una ventana sin foco ignorará todas las entradas
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP** = ``5``
 
-La ventana es parte de un menú o desplegable de :ref:`OptionButton<class_OptionButton>`. Esta bandera no puede ser cambiado cuando la ventana está visible. Una ventana emergente activa recibirá exclusivamente toda la entrada, sin robar el foco de su padre. Las ventanas emergentes se cierran automáticamente cuando el usuario hace clic fuera de ella, o cuando se cambia de aplicación. La ventana emergente debe tener un padre transitorio establecido (véase :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`).
+Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`).
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE:
 
@@ -2590,7 +2600,9 @@ Usa :ref:`window_get_safe_title_margins()<class_DisplayServer_method_window_get_
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-Todos los eventos del ratón se pasan a la ventana subyacente de la misma aplicación.
+All mouse events are passed to the underlying window of the same application.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_SHARP_CORNERS:
 
@@ -2620,7 +2632,9 @@ Window is excluded from screenshots taken by :ref:`screen_get_image()<class_Disp
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP_WM_HINT** = ``10``
 
-Señala al gestor de ventanas que se supone que esta ventana es un "popup" definido por la implementación (normalmente una ventana hija flotante, sin bordes, no tileable e inamovible).
+Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+
+\ **Note:** This flag is implemented on Linux (Wayland).
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MINIMIZE_DISABLED:
 
@@ -2628,9 +2642,9 @@ Señala al gestor de ventanas que se supone que esta ventana es un "popup" defin
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MINIMIZE_DISABLED** = ``11``
 
-El botón para minimizar la ventana se deshabilita.
+Window minimize button is disabled.
 
-\ **Nota:** Esta opción está implementada en macOS y Windows.
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAXIMIZE_DISABLED:
 
@@ -2638,9 +2652,9 @@ El botón para minimizar la ventana se deshabilita.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MAXIMIZE_DISABLED** = ``12``
 
-El botón para maximizar la ventana se deshabilita.
+Window maximize button is disabled.
 
-\ **Nota:** Esta opción está implementada en macOS y Windows.
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAX:
 

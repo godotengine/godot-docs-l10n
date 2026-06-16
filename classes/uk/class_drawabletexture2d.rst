@@ -116,7 +116,7 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 |void| **blit_rect**\ (\ rect\: :ref:`Rect2i<class_Rect2i>`, source\: :ref:`Texture2D<class_Texture2D>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), mipmap\: :ref:`int<class_int>` = 0, material\: :ref:`Material<class_Material>` = null\ ) :ref:`🔗<class_DrawableTexture2D_method_blit_rect>`
 
-**Експериментальний:** This function and its parameters are likely to change in the 4.7 Dev Cycle
+**Експериментальний:** Цей метод може бути змінений або усунутий у наступних версіях.
 
 Малює на заданій ``rect`` області цієї текстури, копіюючи дані з вказаного ``source``. Для використання шейдером можна передати колір ``modulate``, але за замовчуванням використовується білий. Значення ``mipmap`` дозволяє вказати малювання на нижчому рівні міпмапу. Параметр ``material`` може приймати об’єкт ShaderMaterial із шейдером TextureBlit для реалізації власного алгоритму малювання.
 
@@ -130,7 +130,7 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 |void| **blit_rect_multi**\ (\ rect\: :ref:`Rect2i<class_Rect2i>`, sources\: :ref:`Array<class_Array>`\[:ref:`Texture2D<class_Texture2D>`\], extra_targets\: :ref:`Array<class_Array>`\[:ref:`DrawableTexture2D<class_DrawableTexture2D>`\], modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), mipmap\: :ref:`int<class_int>` = 0, material\: :ref:`Material<class_Material>` = null\ ) :ref:`🔗<class_DrawableTexture2D_method_blit_rect_multi>`
 
-**Експериментальний:** This function and its parameters are likely to change in the 4.7 Dev Cycle
+**Експериментальний:** Цей метод може бути змінений або усунутий у наступних версіях.
 
 Малює на заданій ``rect`` на цій текстурі, а також на максимум 3 об’єктах DrawableTexture ``extra_targets``. Усі ``extra_targets`` повинні мати той самий розмір і формат DrawableFormat, що й вихідна ціль, інакше шейдер може не спрацювати. Приймає до 4 текстур ``sources``, але замінить відсутні ``sources`` чорними текстурами за замовчуванням.
 
@@ -192,7 +192,7 @@ enum **DrawableFormat**: :ref:`🔗<enum_DrawableTexture2D_DrawableFormat>`
 
 |void| **setup**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, format\: :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), use_mipmaps\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_DrawableTexture2D_method_setup>`
 
-**Експериментальний:** This function and its parameters are likely to change in the 4.7 Dev Cycle
+**Експериментальний:** Цей метод може бути змінений або усунутий у наступних версіях.
 
 Ініціалізує DrawableTexture як білу текстуру із заданими параметрами ``width``, ``height`` та ``format``.
 

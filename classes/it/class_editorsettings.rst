@@ -1104,7 +1104,7 @@ Descrizioni delle proprietà
 
 :ref:`Dictionary<class_Dictionary>` **asset_store/available_urls** :ref:`🔗<class_EditorSettings_property_asset_store/available_urls>`
 
-A list of the available URLs that can be chosen in the Asset Store to fetch asset data. With the key being the name, and the value being the URL.
+Un elenco degli URL disponibili che si possono scegliere nell'Asset Store per recuperare i dati degli asset. La chiave è il nome e il valore è l'URL.
 
 .. rst-class:: classref-item-separator
 
@@ -1116,7 +1116,7 @@ A list of the available URLs that can be chosen in the Asset Store to fetch asse
 
 :ref:`bool<class_bool>` **asset_store/use_threads** :ref:`🔗<class_EditorSettings_property_asset_store/use_threads>`
 
-If ``true``, the Asset Store uses multiple threads for its HTTP requests. This prevents the Asset Store from blocking the main thread for every loaded asset.
+Se ``true``, l'Asset Store utilizza più thread per le sue richieste HTTP. Ciò impedisce all'Asset Store di bloccare il thread principale per ogni asset caricato.
 
 .. rst-class:: classref-item-separator
 
@@ -5139,9 +5139,9 @@ Tutte le modalità di aggiornamento ignoreranno le build con diverse versioni pr
 
 :ref:`int<class_int>` **network/connection/network_mode** :ref:`🔗<class_EditorSettings_property_network/connection/network_mode>`
 
-Determines whether online features, such as the Asset Store or update checks, are enabled in the editor. If this is a privacy concern, disabling these online features prevents the editor from making HTTP requests to the Godot website or third-party platforms hosting assets from the Asset Store.
+Determina se le funzionalità online sono abilitate nell'editor, come l'Asset Store o verifiche per gli aggiornamenti. La disattivazione di queste funzionalità online aiuta ad alleviare i problemi di privacy, impedendo all'editor di effettuare richieste HTTP al sito web di Godot o a piattaforme di terze parti che ospitano asset dall'Asset Store.
 
-Editor plugins and tool scripts are recommended to follow this setting. However, Godot can't prevent them from violating this rule.
+Si raccomanda che le estensioni dell'editor e gli script strumento seguano questa impostazione. Tuttavia, Godot non può impedire loro di violare questa regola.
 
 .. rst-class:: classref-item-separator
 
@@ -5177,9 +5177,9 @@ La porta su cui ascoltare quando si avvia il debugger remoto. Godot proverà a u
 
 :ref:`String<class_String>` **network/http_proxy/host** :ref:`🔗<class_EditorSettings_property_network/http_proxy/host>`
 
-The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset store and export template downloads). See also :ref:`network/http_proxy/port<class_EditorSettings_property_network/http_proxy/port>`.
+L'host da usare per contattare il proxy HTTP e HTTPS nell'editor (per l'Asset Store e i download dei modelli di esportazione). Vedi anche :ref:`network/http_proxy/port<class_EditorSettings_property_network/http_proxy/port>`.
 
-\ **Note:** Godot currently doesn't automatically use system proxy settings, so you have to enter them manually here if needed.
+\ **Nota:** Godot attualmente non usa automaticamente le impostazioni proxy di sistema, quindi bisogna inserirle manualmente qui se necessario.
 
 .. rst-class:: classref-item-separator
 
@@ -5191,9 +5191,9 @@ The host to use to contact the HTTP and HTTPS proxy in the editor (for the asset
 
 :ref:`int<class_int>` **network/http_proxy/port** :ref:`🔗<class_EditorSettings_property_network/http_proxy/port>`
 
-The port number to use to contact the HTTP and HTTPS proxy in the editor (for the asset store and export template downloads). See also :ref:`network/http_proxy/host<class_EditorSettings_property_network/http_proxy/host>`.
+Il numero di porta da usare per contattare il proxy HTTP e HTTPS nell'editor (per l'Asset Store e i download dei modelli di esportazione). Vedi anche :ref:`network/http_proxy/host<class_EditorSettings_property_network/http_proxy/host>`.
 
-\ **Note:** Godot currently doesn't automatically use system proxy settings, so you have to enter them manually here if needed.
+\ **Nota:** Godot attualmente non usa automaticamente le impostazioni proxy di sistema, quindi bisogna inserirle manualmente qui se necessario.
 
 .. rst-class:: classref-item-separator
 
@@ -5292,7 +5292,7 @@ If ``true`` the language server will run in a separate thread, if ``false`` it w
 
 :ref:`String<class_String>` **network/tls/editor_tls_certificates** :ref:`🔗<class_EditorSettings_property_network/tls/editor_tls_certificates>`
 
-The TLS certificate bundle to use for HTTP requests made within the editor (e.g. from the Asset Store tab). If left empty, the `included Mozilla certificate bundle <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__ will be used.
+Il bundle di certificati TLS da utilizzare per le richieste HTTP effettuate all'interno dell'editor (ad esempio dalla scheda Asset Store). Se lasciato vuoto, il ` pacchetto di certificati Mozilla incluso <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-certificates.crt>`__ sarà utilizzato.
 
 .. rst-class:: classref-item-separator
 

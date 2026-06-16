@@ -70,9 +70,9 @@ JavaClassWrapper
 
 :ref:`JavaObject<class_JavaObject>` **create_proxy**\ (\ object\: :ref:`Object<class_Object>`, interfaces\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_JavaClassWrapper_method_create_proxy>`
 
-Creates a :ref:`JavaObject<class_JavaObject>` implementing the given Java interfaces using the given :ref:`Object<class_Object>` as the implementation.
+Создает :ref:`JavaObject<class_JavaObject>`, реализующий заданные интерфейсы Java, используя данный :ref:`Object<class_Object>` в качестве реализации.
 
-The ``object`` must contain methods signatures matching the methods signatures from the passed Java ``interfaces``. Invoking methods from the Java ``interfaces`` will route to the matching ``object`` method.
+\ ``object`` должен содержать сигнатуры методов, соответствующие сигнатурам методов из переданных Java ``interfaces``. Вызов методов из Java ``interfaces`` будет направлен к соответствующему методу ``object``.
 
 ::
 
@@ -84,7 +84,7 @@ The ``object`` must contain methods signatures matching the methods signatures f
     var printer_object = JavaClassWrapper.create_proxy(print_proxy, ["android.util.Printer"])
     printer_object.println("Hello Godot World!")
 
-\ **Note:** This method only works on Android. On every other platform, this method will always return ``null``.
+\ **Примечание:** Этот метод работает только на Android. На всех остальных платформах этот метод всегда будет возвращать ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -96,11 +96,11 @@ The ``object`` must contain methods signatures matching the methods signatures f
 
 :ref:`JavaObject<class_JavaObject>` **create_sam_callback**\ (\ sam_interface\: :ref:`String<class_String>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_JavaClassWrapper_method_create_sam_callback>`
 
-Creates a :ref:`JavaObject<class_JavaObject>` implementing the Java Single Abstract Method (SAM) interface using the Godot :ref:`Callable<class_Callable>` as the implementation.
+Создает объект :ref:`JavaObject<class_JavaObject>`, реализующий интерфейс Java Single Abstract Method (SAM), используя объект Godot :ref:`Callable<class_Callable>` в качестве реализации.
 
-The ``sam_interface`` **must be** a Java SAM interface, meaning it must only have a single abstract method to implement.
+\ ``sam_interface`` **должен быть** интерфейсом Java SAM, то есть он должен иметь только один абстрактный метод для реализации.
 
-The ``callable`` must be able to handle the same parameter types as the SAM interface method, and must provide the same return type. The ``callable`` will be invoked as a callback, passing the arguments from the Java SAM interface method.
+\ ``callable`` должен обрабатывать те же типы параметров, что и метод интерфейса SAM, и должен предоставлять тот же тип возвращаемого значения. ``callable`` будет вызываться как обратный вызов, передавая аргументы из метода интерфейса Java SAM.
 
 ::
 
@@ -109,7 +109,7 @@ The ``callable`` must be able to handle the same parameter types as the SAM inte
     var callback = JavaClassWrapper.create_sam_callback("android.util.Printer", cb)
     callback.println("Hello Godot World!")
 
-\ **Note:** This method only works on Android. On every other platform, this method will always return ``null``.
+\ **Примечание:** Этот метод работает только на Android. На всех остальных платформах этот метод всегда будет возвращать ``null``.
 
 .. rst-class:: classref-item-separator
 

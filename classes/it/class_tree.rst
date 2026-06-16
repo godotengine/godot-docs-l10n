@@ -599,9 +599,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_DISABLED** = ``0``
 
-Disattiva tutte le sezioni di rilascio, ma consente comunque di rilevare la sezione di rilascio "sull'elemento" tramite :ref:`get_drop_section_at_position()<class_Tree_method_get_drop_section_at_position>`.
+Disables all drop sections.
 
-\ **Nota:** Questo è il flag predefinito, non ha effetto se combinato con altri flag.
+\ **Note:** This is the default flag, it has no effect when combined with other flags.
 
 .. _class_Tree_constant_DROP_MODE_ON_ITEM:
 
@@ -609,9 +609,9 @@ Disattiva tutte le sezioni di rilascio, ma consente comunque di rilevare la sezi
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_ON_ITEM** = ``1``
 
-Abilita la sezione di rilascio "sull'elemento". Questa sezione di rilascio copre l'intero oggetto.
+Enables the "on item" drop section. This drop section covers the entire item.
 
-Quando combinata con :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, questa sezione di rilascio dimezza l'altezza e rimane centrata verticalmente.
+When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, this drop section halves in height and stays centered vertically.
 
 .. _class_Tree_constant_DROP_MODE_INBETWEEN:
 
@@ -619,9 +619,9 @@ Quando combinata con :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INB
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_INBETWEEN** = ``2``
 
-Abilita le sezioni di rilascio "sopra l'elemento" e "sotto l'elemento". La sezione di rilascio "sopra l'elemento" copre la metà superiore dell'elemento, mentre la sezione di rilascio "sotto l'elemento" copre la metà inferiore.
+Enables "above item" and "below item" drop sections. The "above item" drop section covers the top half of the item, while the "below item" drop section covers the bottom half, and extends downward to the left of any children.
 
-Quando combinate con :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, queste sezioni di rilascio dimezzano l'altezza e rimangono dunque in alto o in basso.
+When combined with :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, these drop sections halve in height and stay at the top and bottom respectively.
 
 .. rst-class:: classref-item-separator
 
@@ -770,9 +770,9 @@ Se ``true``, i titoli delle colonne sono visibili.
 - |void| **set_columns**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_columns**\ (\ )
 
-The number of columns.
+Il numero di colonne
 
-Prints an error and does not allow setting the columns during mouse selection.
+Stampa un errore e restituisce e non permette di impostare le colonne se chiamato durante la selezione del mouse.
 
 .. rst-class:: classref-item-separator
 
@@ -961,9 +961,9 @@ Descrizioni dei metodi
 
 |void| **clear**\ (\ ) :ref:`🔗<class_Tree_method_clear>`
 
-Clears the tree. This removes all items.
+Cancella l'albero. Ciò rimuove tutti gli elementi.
 
-Prints an error and does not allow clearing the tree if called during mouse selection.
+Stampa un errore e restituisce e non permette di cancellare l'albero se chiamato durante la selezione del mouse.
 
 .. rst-class:: classref-item-separator
 
@@ -1145,9 +1145,9 @@ Restituisce la larghezza della colonna in pixel.
 
 :ref:`RID<class_RID>` **get_custom_drawing_canvas_item**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_custom_drawing_canvas_item>`
 
-Returns the internal canvas item designated for custom drawing. See :ref:`TreeItem.set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>`.
+Restituisce l'elemento canvas interno designato per il disegno personalizzato. Vedi :ref:`TreeItem.set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>`.
 
-\ **Note:** This canvas item clears automatically on each Tree draw call.
+\ **Nota:** Questo elemento canvas è cancellato automaticamente a ogni chiamata di disegno dell'albero.
 
 .. rst-class:: classref-item-separator
 
@@ -1171,11 +1171,19 @@ Restituisce il rettangolo per i popup personalizzati. Metodo di supporto per cre
 
 :ref:`int<class_int>` **get_drop_section_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_drop_section_at_position>`
 
-Restituisce la sezione di rilascio in ``position``, o -100 se non è presente alcun elemento.
+Returns the drop section at ``position``, as permitted by enabled :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
 
-I valori -1, 0 o 1 saranno restituiti rispettivamente per le sezioni di rilascio "sopra l'elemento", "sull'elemento" e "sotto l'elemento". Vedi :ref:`DropModeFlags<enum_Tree_DropModeFlags>` per una descrizione di ciascuna sezione di rilascio.
+- ``-1`` if the position is **above** the item. Typically used to insert as the item's previous sibling.
 
-Per ottenere l'elemento a cui è relativa la sezione di rilascio restituita, usa :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
+- ``0`` if the position is **on** the item. Typically used to insert as the item's last child.
+
+- ``1`` if the position is **below** the item, when the item has no children. Typically used to insert as the item's next sibling. If the item *does* have children, this section is still reachable by hovering to the left of the item's collapse arrow, and below.
+
+- ``2`` if the position is **below** the item, when the item has children. Typically used to insert as the item's first child.
+
+- ``-100`` if the position is not over any item, or no :ref:`DropModeFlags<enum_Tree_DropModeFlags>` are set.
+
+See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` for a description of each drop region. To get the item which the returned drop section refers to, use :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1527,7 +1535,7 @@ Il :ref:`Color<class_Color>` del testo per una cella in modalità :ref:`TreeItem
 
 :ref:`Color<class_Color>` **drop_on_item_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Tree_theme_color_drop_on_item_color>`
 
-:ref:`Color<class_Color>` used to draw the highlight outline when dragging items that can only be dropped "on" other items.
+:ref:`Color<class_Color>` usato per disegnare il contorno di evidenziazione quando si trascinano elementi che si possono rilasciare soltanto "su" altri elementi.
 
 .. rst-class:: classref-item-separator
 

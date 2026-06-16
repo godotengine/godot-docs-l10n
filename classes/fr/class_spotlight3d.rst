@@ -27,7 +27,7 @@ La lumière est émise dans la direction -Z de la base globale du nœud. Pour un
 Tutoriels
 ------------------
 
-- :doc:`Lumières et ombres 3D <../tutorials/3d/lights_and_shadows>`
+- `Lumières et ombres 3D <../tutorials/3d/lights_and_shadows.html#spot-light>`__
 
 - :doc:`Truquer l’illumination globale <../tutorials/3d/global_illumination/faking_global_illumination>`
 

@@ -26,7 +26,7 @@ DirectionalLight3D
 教程
 ----
 
-- :doc:`3D 灯光与阴影 <../tutorials/3d/lights_and_shadows>`
+- `3D 灯光与阴影 <../tutorials/3d/lights_and_shadows.html#directional-light>`__
 
 - :doc:`伪造全局光照 <../tutorials/3d/global_illumination/faking_global_illumination>`
 

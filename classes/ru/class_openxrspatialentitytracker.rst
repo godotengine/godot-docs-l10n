@@ -71,7 +71,7 @@ OpenXRSpatialEntityTracker
 
 **next_changed**\ (\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_signal_next_changed>`
 
-Emitted when the next-chain changes, from either :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` or :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
+Генерируется при изменении цепочки вызовов, будь то :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` или :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
 
 .. rst-class:: classref-item-separator
 
@@ -180,9 +180,9 @@ enum **EntityTrackingState**: :ref:`🔗<enum_OpenXRSpatialEntityTracker_EntityT
 
 |void| **add_next**\ (\ next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_method_add_next>`
 
-Adds a new :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` to the next-chain.
+Добавляет новый :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` в цепочку next.
 
-\ :ref:`get_next()<class_OpenXRSpatialEntityTracker_method_get_next>` will return this ``next`` until either :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` is called again or it's removed in :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
+\ :ref:`get_next()<class_OpenXRSpatialEntityTracker_method_get_next>` будет возвращать этот ``next`` до тех пор, пока не будет снова вызван :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` или пока он не будет удален в :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
 
 .. rst-class:: classref-item-separator
 
@@ -194,9 +194,9 @@ Adds a new :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` to the next-cha
 
 :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` **get_next**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityTracker_method_get_next>`
 
-Gets the head :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` in the next-chain.
+Получает головной узел :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` в следующей цепочке.
 
-See also :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` and :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
+См. также :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` и :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ See also :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` and
 
 :ref:`RID<class_RID>` **get_spatial_context**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityTracker_method_get_spatial_context>`
 
-Gets the spatial context used to create this **OpenXRSpatialEntityTracker**.
+Получает пространственный контекст, использованный для создания этого **OpenXRSpatialEntityTracker**.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Gets the spatial context used to create this **OpenXRSpatialEntityTracker**.
 
 |void| **remove_next**\ (\ next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_method_remove_next>`
 
-Removes a ``next`` object previously added in :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` from the next-chain.
+Удаляет объект ``next``, ранее добавленный в методе :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>`, из цепочки объектов next.
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Removes a ``next`` object previously added in :ref:`add_next()<class_OpenXRSpati
 
 |void| **set_spatial_context**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_method_set_spatial_context>`
 
-Sets the spatial context used to create this tracker.
+Задает пространственный контекст, используемый для создания этого трекера.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

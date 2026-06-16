@@ -612,7 +612,7 @@ enum **SubEmitterMode**: :ref:`🔗<enum_ParticleProcessMaterial_SubEmitterMode>
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_DISABLED** = ``0``
 
-The subemitter is disabled.
+Дополнительный субэмиттер отключен.
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_CONSTANT:
 
@@ -1793,9 +1793,9 @@ enum **CollisionMode**: :ref:`🔗<enum_ParticleProcessMaterial_CollisionMode>`
 - |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`\ ) |const|
 
-If ``true``, particles will inherit the scale of the emitter.
+Если ``true``, частицы унаследуют масштаб излучателя.
 
-\ **Note:** This has no effect when :ref:`GPUParticles3D.local_coords<class_GPUParticles3D_property_local_coords>` is ``true``, since particles in local space are already affected by the emitter's scale.
+\ **Примечание:** Это не имеет эффекта, если :ref:`GPUParticles3D.local_coords<class_GPUParticles3D_property_local_coords>` имеет значение ``true``, поскольку частицы в локальном пространстве уже подвержены влиянию масштаба излучателя.
 
 .. rst-class:: classref-item-separator
 
@@ -1937,7 +1937,7 @@ If ``true``, particles will inherit the scale of the emitter.
 - |void| **set_rotation_3d_max**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_3d_max**\ (\ )
 
-The maximum 3D orientation, in degrees. Works only in 3D and if :ref:`use_rotation_3d<class_ParticleProcessMaterial_property_use_rotation_3d>` is enabled.
+Максимальная 3D-ориентация в градусах. Работает только в 3D и при включенной опции :ref:`use_rotation_3d<class_ParticleProcessMaterial_property_use_rotation_3d>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1954,7 +1954,7 @@ The maximum 3D orientation, in degrees. Works only in 3D and if :ref:`use_rotati
 - |void| **set_rotation_3d_min**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_3d_min**\ (\ )
 
-The minimum 3D orientation, in degrees. Works only in 3D and if :ref:`use_rotation_3d<class_ParticleProcessMaterial_property_use_rotation_3d>` is enabled.
+Минимальная 3D-ориентация в градусах. Работает только в 3D и при включенной опции :ref:`use_rotation_3d<class_ParticleProcessMaterial_property_use_rotation_3d>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1971,7 +1971,7 @@ The minimum 3D orientation, in degrees. Works only in 3D and if :ref:`use_rotati
 - |void| **set_rotation_velocity_3d_curve**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_rotation_velocity_3d_curve**\ (\ )
 
-Rotation velocity curve over lifetime, per-axis. Enable :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` to use this.
+Кривая скорости вращения за весь период жизни, по каждой оси. Включите :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>`, чтобы использовать её.
 
 .. rst-class:: classref-item-separator
 
@@ -1988,7 +1988,7 @@ Rotation velocity curve over lifetime, per-axis. Enable :ref:`use_rotation_veloc
 - |void| **set_rotation_velocity_3d_max**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_velocity_3d_max**\ (\ )
 
-Maximum 3D rotation velocity on the particle's local axis. Enable :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` to use this.
+Максимальная скорость 3D-вращения вокруг локальной оси частицы. Для использования этой функции включите параметр :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2005,7 +2005,7 @@ Maximum 3D rotation velocity on the particle's local axis. Enable :ref:`use_rota
 - |void| **set_rotation_velocity_3d_min**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_velocity_3d_min**\ (\ )
 
-Minimum 3D rotation velocity on the particle's local axis. Enable :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` to use this.
+Минимальная скорость 3D-вращения вокруг локальной оси частицы. Включите параметр :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>`, чтобы использовать это значение.
 
 .. rst-class:: classref-item-separator
 
@@ -2022,9 +2022,9 @@ Minimum 3D rotation velocity on the particle's local axis. Enable :ref:`use_rota
 - |void| **set_scale_3d_max**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_scale_3d_max**\ (\ )
 
-The maximum value of the random scale vector for each particle.
+Максимальное значение вектора случайного масштаба для каждой частицы.
 
-Works only if :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scale_3d>` is enabled.
+Работает только при включенной опции :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scale_3d>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2041,9 +2041,9 @@ Works only if :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scal
 - |void| **set_scale_3d_min**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_scale_3d_min**\ (\ )
 
-The minimum value of the random scale vector for each particle.
+Минимальное значение вектора случайного масштаба для каждой частицы.
 
-Works only if :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scale_3d>` is enabled.
+Работает только при включенной опции :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scale_3d>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2530,7 +2530,7 @@ Works only if :ref:`use_scale_3d<class_ParticleProcessMaterial_property_use_scal
 - |void| **set_use_rotation_3d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_rotation_3d**\ (\ )
 
-Enable the usage of :ref:`rotation_3d_min<class_ParticleProcessMaterial_property_rotation_3d_min>` and :ref:`rotation_3d_max<class_ParticleProcessMaterial_property_rotation_3d_max>`.
+Включает использование параметров :ref:`rotation_3d_min<class_ParticleProcessMaterial_property_rotation_3d_min>` и :ref:`rotation_3d_max<class_ParticleProcessMaterial_property_rotation_3d_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2547,7 +2547,7 @@ Enable the usage of :ref:`rotation_3d_min<class_ParticleProcessMaterial_property
 - |void| **set_using_rotation_velocity_3d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_rotation_velocity_3d**\ (\ )
 
-Enable 3D rotation velocity.
+Включить скорость вращения в 3D-пространстве.
 
 .. rst-class:: classref-item-separator
 
@@ -2564,7 +2564,7 @@ Enable 3D rotation velocity.
 - |void| **set_use_scale_3d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_scale_3d**\ (\ )
 
-Enable the usage of :ref:`scale_3d_min<class_ParticleProcessMaterial_property_scale_3d_min>` and :ref:`scale_3d_max<class_ParticleProcessMaterial_property_scale_3d_max>`.
+Включить использование :ref:`scale_3d_min<class_ParticleProcessMaterial_property_scale_3d_min>` и :ref:`scale_3d_max<class_ParticleProcessMaterial_property_scale_3d_max>`.
 
 .. rst-class:: classref-item-separator
 

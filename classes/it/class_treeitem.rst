@@ -565,7 +565,7 @@ Restituisce la modalità di avvolgimento automatico del testo nella colonna ``co
 
 |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] **get_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_autowrap_trim_flags>`
 
-Returns the autowrap trim flags for the given ``column``. By default, both :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` and :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>` are enabled.
+Restituisce i flag di troncamento spazi per il ritorno a capo automatico per la colonna ``column``. Come valore predefinito, entrambi :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` e :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>` sono abilitati.
 
 .. rst-class:: classref-item-separator
 
@@ -1127,7 +1127,7 @@ Restituisce il :ref:`Tree<class_Tree>` che possiede questo TreeItem.
 
 :ref:`bool<class_bool>` **is_accepting_children**\ (\ ) |const| :ref:`🔗<class_TreeItem_method_is_accepting_children>`
 
-Returns ``true`` if this **TreeItem** is allowed to accept children.
+Restituisce ``true`` se questo **TreeItem** è in grado di accettare figli.
 
 .. rst-class:: classref-item-separator
 
@@ -1315,7 +1315,7 @@ Rimuove il **TreeItem** figlio specificato e tutti i suoi figli dal :ref:`Tree<c
 
 |void| **select**\ (\ column\: :ref:`int<class_int>`, set_as_cursor\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_TreeItem_method_select>`
 
-Selects the given ``column``. If ``set_as_cursor`` is ``true``, the :ref:`Tree<class_Tree>`'s cursor will be moved to this item (only matters if :ref:`Tree.select_mode<class_Tree_property_select_mode>` is set to :ref:`Tree.SELECT_MULTI<class_Tree_constant_SELECT_MULTI>`).
+Seleziona la colonna ``column``. Se ``set_as_cursor`` è ``true``, il cursore del :ref:`Tree<class_Tree>` verrà spostato su questo elemento (imposta solo se :ref:`Tree.select_mode<class_Tree_property_select_mode>` è impostato su :ref:`Tree.SELECT_MULTI<class_Tree_constant_SELECT_MULTI>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ Selects the given ``column``. If ``set_as_cursor`` is ``true``, the :ref:`Tree<c
 
 |void| **set_accept_children**\ (\ allowed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TreeItem_method_set_accept_children>`
 
-Sets **TreeItem**'s ability to accept children.
+Imposta la capacità del **TreeItem** di accettare figli.
 
 .. rst-class:: classref-item-separator
 
@@ -1365,7 +1365,7 @@ Imposta la modalità di avvolgimento automatico nella colonna ``column``. Se imp
 
 |void| **set_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`, flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\]\ ) :ref:`🔗<class_TreeItem_method_set_autowrap_trim_flags>`
 
-Sets the autowrap trim flags for the given ``column``. These flags control whether leading and trailing spaces are trimmed on wrapped lines. Set to ``0`` to disable all trimming.
+Imposta i flag di troncamento spazi per il ritorno a capo automatico per la colonna ``column``. Questi flag controllano se gli spazi iniziali e finali vengono troncati sulle righe a capo. Imposta su ``0`` per disabilitare completamente il troncamento.
 
 .. rst-class:: classref-item-separator
 

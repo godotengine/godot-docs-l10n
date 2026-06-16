@@ -1104,7 +1104,7 @@ EditorSettings
 
 :ref:`Dictionary<class_Dictionary>` **asset_store/available_urls** :ref:`🔗<class_EditorSettings_property_asset_store/available_urls>`
 
-A list of the available URLs that can be chosen in the Asset Store to fetch asset data. With the key being the name, and the value being the URL.
+Список доступных URL-адресов, которые можно выбрать в Asset Store для получения данных об активах. Ключ — это имя, а значение — URL-адрес.
 
 .. rst-class:: classref-item-separator
 
@@ -1116,7 +1116,7 @@ A list of the available URLs that can be chosen in the Asset Store to fetch asse
 
 :ref:`bool<class_bool>` **asset_store/use_threads** :ref:`🔗<class_EditorSettings_property_asset_store/use_threads>`
 
-If ``true``, the Asset Store uses multiple threads for its HTTP requests. This prevents the Asset Store from blocking the main thread for every loaded asset.
+Если ``true``, Asset Store использует несколько потоков для своих HTTP-запросов. Это предотвращает блокировку основного потока Asset Store для каждого загруженного ресурса.
 
 .. rst-class:: classref-item-separator
 
@@ -1256,7 +1256,7 @@ If ``true``, the Asset Store uses multiple threads for its HTTP requests. This p
 
 :ref:`bool<class_bool>` **docks/filesystem/ask_before_moving_files** :ref:`🔗<class_EditorSettings_property_docks/filesystem/ask_before_moving_files>`
 
-If ``true``, displays a confirmation dialog when moving or duplicating items in the FileSystem dock. This dialog can also be bypassed by holding :kbd:`Shift`.
+Если ``true``, при перемещении или дублировании элементов в панели FileSystem отображается диалоговое окно подтверждения. Это диалоговое окно также можно пропустить, удерживая :kbd:`Shift`.
 
 .. rst-class:: classref-item-separator
 
@@ -3869,11 +3869,11 @@ If ``true``, displays a confirmation dialog when moving or duplicating items in 
 
 :ref:`int<class_int>` **interface/editor/appearance/display_scale** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/display_scale>`
 
-The display scale factor to use for the editor interface. Higher values are more suited to hiDPI/Retina displays.
+Коэффициент масштабирования дисплея, используемый для интерфейса редактора. Более высокие значения лучше подходят для дисплеев hiDPI/Retina.
 
-If set to **Auto**, the editor scale is automatically determined based on the screen resolution and reported display DPI. This heuristic is not always ideal, which means you can get better results by setting the editor scale manually.
+Если установлено значение **Auto**, масштаб редактора определяется автоматически на основе разрешения экрана и сообщаемого DPI дисплея. Этот эвристический метод не всегда идеален, поэтому вы можете получить лучшие результаты, установив масштаб редактора вручную.
 
-If set to **Custom**, the scaling value in :ref:`interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>` will be used.
+Если установлено значение **Custom**, будет использоваться значение масштабирования из :ref:`interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3923,7 +3923,7 @@ If set to **Custom**, the scaling value in :ref:`interface/editor/appearance/cus
 
 :ref:`bool<class_bool>` **interface/editor/appearance/show_renderer_selector** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/show_renderer_selector>`
 
-If ``true``, a renderer selector that can be used to change the :ref:`ProjectSettings.rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>` project setting will be shown in the top right of the main editor window.
+Если ``true``, в правом верхнем углу главного окна редактора отобразится выбор рендерера, который можно использовать для изменения параметра проекта :ref:`ProjectSettings.rendering/renderer/rendering_method<class_ProjectSettings_property_rendering/renderer/rendering_method>` в окне редактора.
 
 .. rst-class:: classref-item-separator
 
@@ -3935,15 +3935,15 @@ If ``true``, a renderer selector that can be used to change the :ref:`ProjectSet
 
 :ref:`int<class_int>` **interface/editor/appearance/show_update_spinner** :ref:`🔗<class_EditorSettings_property_interface/editor/appearance/show_update_spinner>`
 
-If enabled, displays an icon in the top-right corner of the editor that spins when the editor redraws a frame. This can be used to diagnose situations where the engine is constantly redrawing, which should be avoided as this increases CPU and GPU utilization for no good reason. To further troubleshoot these situations, start the editor with the ``--debug-canvas-item-redraw`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
+Если эта функция включена, в правом верхнем углу редактора отображается вращающийся значок, который появляется при перерисовке кадра. Это можно использовать для диагностики ситуаций, когда движок постоянно перерисовывает изображение, чего следует избегать, поскольку это неоправданно увеличивает загрузку CPU и GPU. Для дальнейшего устранения неполадок в таких ситуациях запустите редактор с аргументом командной строки ``--debug-canvas-item-redraw`` `.
 
-Consider enabling this if you are developing editor plugins to ensure they only make the editor redraw when required.
+Рекомендуется включить эту функцию, если вы разрабатываете плагины для редактора, чтобы гарантировать, что редактор будет перерисовываться только при необходимости.
 
-The default **Auto** value will only enable this if the editor was compiled with the ``dev_build=yes`` SCons option (the default is ``dev_build=no``).
+Значение по умолчанию [b]Auto[/b] включит эту функцию только в том случае, если редактор был скомпилирован с параметром SCons [code]dev_build=yes[/code] (по умолчанию [code]dev_build=no[/code]).
 
-\ **Note:** If :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` is ``true``, the spinner icon displays in red.
+[b]Примечание:[/b] Если [member interface/editor/display/update_continuously] имеет значение [code]true[/code], значок счетчика отображается красным цветом.
 
-\ **Note:** If the editor was started with the ``--debug-canvas-item-redraw`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`, the update spinner will *never* display regardless of this setting's value. This is to avoid confusion with what would cause redrawing in real world scenarios.
+[b]Примечание:[/b] Если редактор был запущен с аргументом командной строки [code]--debug-canvas-item-redraw[/code] [url=$DOCS_URL/tutorials/editor/command_line_tutorial.html <$DOCS_URL/tutorials/editor/command_line_tutorial.html[/url>`__, индикатор обновления *никогда* не будет отображаться независимо от значения этого параметра. Это сделано для того, чтобы избежать путаницы с тем, что могло бы вызвать перерисовку в реальных условиях.
 
 .. rst-class:: classref-item-separator
 
@@ -4085,9 +4085,9 @@ The default **Auto** value will only enable this if the editor was compiled with
 
 :ref:`bool<class_bool>` **interface/editor/display/update_continuously** :ref:`🔗<class_EditorSettings_property_interface/editor/display/update_continuously>`
 
-If ``true``, redraws the editor every frame even if nothing has changed on screen. When this setting is enabled, the update spinner displays in red (see :ref:`interface/editor/appearance/show_update_spinner<class_EditorSettings_property_interface/editor/appearance/show_update_spinner>`).
+Если ``true``, редактор перерисовывается каждый кадр, даже если на экране ничего не изменилось. При включении этой настройки индикатор обновления отображается красным цветом (см. :ref:`interface/editor/appearance/show_update_spinner<class_EditorSettings_property_interface/editor/appearance/show_update_spinner>`).
 
-\ **Warning:** This greatly increases CPU and GPU utilization, leading to increased power usage. This should only be enabled for troubleshooting purposes.
+\ **Предупреждение:** Это значительно увеличивает загрузку CPU и GPU, что приводит к увеличению энергопотребления. Эту функцию следует включать только для целей устранения неполадок.
 
 .. rst-class:: classref-item-separator
 
@@ -4405,9 +4405,9 @@ If ``true``, redraws the editor every frame even if nothing has changed on scree
 
 :ref:`int<class_int>` **interface/editor/timers/low_processor_mode_sleep_usec** :ref:`🔗<class_EditorSettings_property_interface/editor/timers/low_processor_mode_sleep_usec>`
 
-The amount of sleeping between frames in the editor (in microseconds). Higher values will result in lower CPU/GPU usage, which can improve battery life on laptops. However, higher values will result in a less responsive editor. The default value is set to allow for maximum smoothness on monitors up to 144 Hz. See also :ref:`interface/editor/timers/unfocused_low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/unfocused_low_processor_mode_sleep_usec>`.
+Время ожидания между кадрами в редакторе (в микросекундах). Более высокие значения приведут к снижению использования CPU/GPU, что может улучшить время автономной работы ноутбуков. Однако более высокие значения приведут к снижению отзывчивости редактора. Значение по умолчанию установлено для обеспечения максимальной плавности на мониторах с частотой обновления до 144 Гц. См. также :ref:`interface/editor/timers/unfocused_low_processor_mode_sleep_usec<class_EditorSettings_property_interface/editor/timers/unfocused_low_processor_mode_sleep_usec>`.
 
-\ **Note:** This setting is ignored if :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` is ``true``, as enabling that setting disables low-processor mode.
+\ **Примечание:** Этот параметр игнорируется, если :ref:`interface/editor/display/update_continuously<class_EditorSettings_property_interface/editor/display/update_continuously>` имеет значение ``true``, поскольку включение этого параметра отключает режим низкой нагрузки на процессор.
 
 .. rst-class:: classref-item-separator
 
@@ -4507,15 +4507,15 @@ The amount of sleeping between frames in the editor (in microseconds). Higher va
 
 :ref:`int<class_int>` **interface/inspector/default_property_name_style** :ref:`🔗<class_EditorSettings_property_interface/inspector/default_property_name_style>`
 
-The default property name style to display in the Inspector dock. This style can be temporarily adjusted in the Inspector dock's menu.
+Стиль именования свойств по умолчанию, отображаемый в панели инспектора. Этот стиль можно временно изменить в меню панели инспектора.
 
-- **Raw:** Displays properties in ``snake_case``.
+- **Raw:** Отображает свойства в ``snake_case``.
 
-- **Capitalized:** Displays properties capitalized.
+- **Capitalized:** Отображает свойства с заглавной буквы.
 
-- **Localized:** Displays the localized string for the current editor language if a translation is available for the given property. If no translation is available, falls back to **Capitalized**.
+- **Localized:** Отображает локализованную строку для текущего языка редактора, если для данного свойства доступен перевод. Если перевод недоступен, используется стиль **Capitalized**.
 
-\ **Note:** To display translated setting names in Project Settings and Editor Settings, use :ref:`interface/editor/localization/localize_settings<class_EditorSettings_property_interface/editor/localization/localize_settings>` instead.
+\ **Примечание:** Чтобы отображать переведенные имена настроек в настройках проекта и настройках редактора, используйте :ref:`interface/editor/localization/localize_settings<class_EditorSettings_property_interface/editor/localization/localize_settings>` вместо этого.
 
 .. rst-class:: classref-item-separator
 
@@ -5115,19 +5115,19 @@ The default property name style to display in the Inspector dock. This style can
 
 :ref:`int<class_int>` **network/connection/check_for_updates** :ref:`🔗<class_EditorSettings_property_network/connection/check_for_updates>`
 
-Specifies how the engine should check for updates.
+Указывает, как движок должен проверять наличие обновлений.
 
-- **Disable Update Checks** will block the engine from checking updates (see also :ref:`network/connection/network_mode<class_EditorSettings_property_network/connection/network_mode>`).
+- **Disable Update Checks** заблокирует проверку обновлений движком (см. также :ref:`network/connection/network_mode<class_EditorSettings_property_network/connection/network_mode>`).
 
-- **Auto** (default) will check for newest stable or unstable version, depending on which version are you currently using. Switch to another option if you want to lock in.
+- **Auto** (по умолчанию) будет проверять наличие новейшей стабильной или нестабильной версии в зависимости от того, какую версию вы используете в данный момент. Переключитесь на другой вариант, если хотите зафиксировать версию.
 
-- **Check Newest Preview** will check for the newest available development snapshot.
+- **Check Newest Preview** проверит наличие новейшего доступного снимка разработки.
 
-- **Check Newest Stable** will check for the newest available stable version.
+- **Check Newest Stable** проверит наличие новейшей доступной стабильной версии.
 
-- **Check Newest Patch** will check for the latest available stable version, but only within the same minor version. E.g. if your version is ``4.3.stable``, you will be notified about ``4.3.1.stable``, but not ``4.4.stable``.
+- **Check Newest Patch** проверит наличие последней доступной стабильной версии, но только в рамках одной и той же минорной версии. Например, если ваша версия ``4.3.stable``, вы получите уведомление о ``4.3.1.stable``, но не о ``4.4.stable``.
 
-All update modes will ignore builds with different major versions (e.g. Godot 4 -> Godot 5).
+Во всех режимах обновления будут игнорироваться сборки с разными основными версиями (например, Godot 4 -> Godot 5).
 
 .. rst-class:: classref-item-separator
 
@@ -5240,7 +5240,7 @@ All update modes will ignore builds with different major versions (e.g. Godot 4 
 
 :ref:`String<class_String>` **network/language_server/remote_host** :ref:`🔗<class_EditorSettings_property_network/language_server/remote_host>`
 
-The host used to listen for language server clients.
+Хост прослушивает запросы от клиентов языкового сервера.
 
 .. rst-class:: classref-item-separator
 

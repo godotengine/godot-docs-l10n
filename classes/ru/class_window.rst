@@ -27,6 +27,8 @@ Window
 
 - :doc:`HDR-вывод <../tutorials/rendering/hdr_output>`
 
+- `Multiple Windows demo <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
+
 .. rst-class:: classref-reftable-group
 
 Свойства
@@ -627,7 +629,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_RESIZE_DISABLED** = ``0``
 
-Размер окна нельзя изменить, перетаскивая его ручку изменения размера. По-прежнему можно изменить размер окна, используя :ref:`size<class_Window_property_size>`. Этот флаг игнорируется для полноэкранных окон. Устанавливается с помощью :ref:`unresizable<class_Window_property_unresizable>`.
+The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`size<class_Window_property_size>`. This flag is ignored for full screen windows. Set with :ref:`unresizable<class_Window_property_unresizable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_BORDERLESS:
 
@@ -635,7 +639,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_BORDERLESS** = ``1``
 
-Окно не имеет встроенной строки заголовка и другого декора. Этот флаг игнорируется для полноэкранных окон. Устанавливается с помощью :ref:`borderless<class_Window_property_borderless>`.
+The window do not have native title bar and other decorations. This flag is ignored for full-screen windows. Set with :ref:`borderless<class_Window_property_borderless>`.
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_ALWAYS_ON_TOP:
 
@@ -643,7 +649,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_ALWAYS_ON_TOP** = ``2``
 
-Окно плавает поверх всех остальных окон. Этот флаг игнорируется для полноэкранных окон. Устанавливается с помощью :ref:`always_on_top<class_Window_property_always_on_top>`.
+The window is floating on top of all other windows. This flag is ignored for full-screen windows. Set with :ref:`always_on_top<class_Window_property_always_on_top>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_TRANSPARENT:
 
@@ -651,9 +659,11 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_TRANSPARENT** = ``3``
 
-Фон окна может быть прозрачным. Задается с помощью :ref:`transparent<class_Window_property_transparent>`.
+The window background can be transparent. Set with :ref:`transparent<class_Window_property_transparent>`.
 
-\ **Примечание:** Этот флаг не действует, если :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, либо для окна :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` установлено значение ``false``.
+\ **Note:** This flag has no effect if either :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, or the window's :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is set to ``false``.
+
+\ **Note:** Transparency support is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_NO_FOCUS:
 
@@ -661,7 +671,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_NO_FOCUS** = ``4``
 
-Окно не может быть сфокусировано. Окно без фокуса будет игнорировать все вводимые данные, кроме щелчков мыши. Задано с помощью :ref:`unfocusable<class_Window_property_unfocusable>`.
+The window can't be focused. No-focus window will ignore all input, except mouse clicks. Set with :ref:`unfocusable<class_Window_property_unfocusable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_POPUP:
 
@@ -669,9 +681,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP** = ``5``
 
-Window является частью выпадающего списка меню или кнопки выбора :ref:`OptionButton<class_OptionButton>`. Этот флаг нельзя изменить, когда окно видно. Активное всплывающее окно будет получать все вводимые данные единолично, не отвлекая внимание от своего родительского элемента. Всплывающие окна автоматически закрываются, когда пользователь нажимает за их пределами или когда приложение переключается. У всплывающего окна должен быть установлен временный родительский набор (см. :ref:`transient<class_Window_property_transient>`).
+Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`transient<class_Window_property_transient>`).
 
-\ **Примечание:** Этот флаг не действует во встроенных окнах (если только указанное окно не является всплывающим :ref:`Popup<class_Popup>`).
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded :ref:`Popup<class_Popup>` windows.
 
 .. _class_Window_constant_FLAG_EXTEND_TO_TITLE:
 
@@ -679,11 +691,11 @@ Window является частью выпадающего списка мен�
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_EXTEND_TO_TITLE** = ``6``
 
-Содержимое окна расширяется до полного размера окна. В отличие от окна без полей, рамка остается нетронутой и может использоваться для изменения размера окна, строка заголовка прозрачна, но имеет кнопки сворачивания/максимизации/закрытия. Устанавливается с помощью :ref:`extend_to_title<class_Window_property_extend_to_title>`.
+Window content is expanded to the full size of the window. Unlike borderless window, the frame is left intact and can be used to resize the window, title bar is transparent, but have minimize/maximize/close buttons. Set with :ref:`extend_to_title<class_Window_property_extend_to_title>`.
 
-\ **Примечание:** Этот флаг реализован только в macOS.
+\ **Note:** This flag has no effect in embedded windows.
 
-\ ** Примечание:** Этот флаг не действует во встроенной Windows.
+\ **Note:** This flag is implemented only on macOS.
 
 .. _class_Window_constant_FLAG_MOUSE_PASSTHROUGH:
 
@@ -691,9 +703,11 @@ Window является частью выпадающего списка мен�
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-Все события мыши передаются в базовое окно того же приложения.
+All mouse events are passed to the underlying window of the same application.
 
-\ **Примечание:** Этот флаг не действует во встроенных окнах.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows.
 
 .. _class_Window_constant_FLAG_SHARP_CORNERS:
 
@@ -727,7 +741,11 @@ Window является частью выпадающего списка мен�
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP_WM_HINT** = ``10``
 
-Сообщает диспетчеру окон, что данное окно должно быть «всплывающим» окном, определяемым реализацией (обычно плавающим, безрамочным, неразворачиваемым и неподвижным дочерним окном).
+Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (Wayland).
 
 .. _class_Window_constant_FLAG_MINIMIZE_DISABLED:
 
@@ -735,9 +753,11 @@ Window является частью выпадающего списка мен�
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MINIMIZE_DISABLED** = ``11``
 
-Кнопка минимизации окна отключена.
+Window minimize button is disabled.
 
-\ **Примечание:** Этот флаг реализован в macOS и Windows.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAXIMIZE_DISABLED:
 
@@ -745,9 +765,11 @@ Window является частью выпадающего списка мен�
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MAXIMIZE_DISABLED** = ``12``
 
-Кнопка максимизации окна отключена.
+Window maximize button is disabled.
 
-\ **Примечание:** Этот флаг реализован в macOS и Windows.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAX:
 

@@ -660,7 +660,7 @@ Sets the maximum number of mismatches allowed in each search result when fuzzy s
 - |void| **set_search_bar_min_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_min_item_count**\ (\ )
 
-Sets the minimum number of items required for the search bar to be visible. :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` must be ``true`` for this to have any effect. Separator items are not counted.
+Imposta il numero minimo di elementi richiesti affinché la barra di ricerca sia visibile. :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` deve essere ``false`` affinché questo abbia effetto. Gli elementi separatori non contano.
 
 .. rst-class:: classref-item-separator
 

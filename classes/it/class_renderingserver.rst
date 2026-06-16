@@ -3135,9 +3135,9 @@ Utilizza l'upscaling MetalFX temporale per il buffer 3D della viewport. La quant
 
 :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` **VIEWPORT_SCALING_3D_MODE_NEAREST** = ``5``
 
-Use nearest-neighbor filtering for the viewport's 3D buffer. This looks crisper than :ref:`VIEWPORT_SCALING_3D_MODE_BILINEAR<class_RenderingServer_constant_VIEWPORT_SCALING_3D_MODE_BILINEAR>` and has no additional rendering cost. The amount of scaling can be set using :ref:`Viewport.scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Values greater than ``1.0`` are not supported and bilinear downsampling will be used instead. A value of ``1.0`` disables scaling.
+Utilizza il filtro vicino più ravvicinato per il buffer 3D della viewport. Questo appare più nitido rispetto a :ref:`VIEWPORT_SCALING_3D_MODE_BILINEAR<class_RenderingServer_constant_VIEWPORT_SCALING_3D_MODE_BILINEAR>` e non ha costi di rendering aggiuntivi. Il livello di ridimensionamento si può impostare tramite :ref:`Viewport.scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Valori superiori a ``1.0`` non sono supportati e verrà utilizzato il sottocampionamento bilineare. Un valore di ``1.0`` disabilita il ridimensionamento.
 
-\ **Note:** When using the **Nearest** scaling mode, to avoid uneven pixel scaling, it's highly recommended to use a value equal to an integer divisor with a dividend of ``1``. For example, it's best to use a scale of ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5), and so on.
+\ **Nota:** Quando si utilizza la modalità di ridimensionamento **Nearest**, per evitare un ridimensionamento non uniforme dei pixel, si consiglia vivamente di utilizzare un valore pari a un divisore intero con dividendo di ``1``. Ad esempio, è meglio usare una scala di ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5) e così via.
 
 .. _class_RenderingServer_constant_VIEWPORT_SCALING_3D_MODE_MAX:
 
@@ -4183,7 +4183,7 @@ Utilizza un colore specifico come sfondo.
 
 :ref:`EnvironmentBG<enum_RenderingServer_EnvironmentBG>` **ENV_BG_SKY** = ``2``
 
-Utilizza una risorsa di cielo come sfondo.
+Utilizza una risorsa cielo come sfondo.
 
 .. _class_RenderingServer_constant_ENV_BG_CANVAS:
 
@@ -9825,21 +9825,21 @@ See also :ref:`mesh_get_surface()<class_RenderingServer_method_mesh_get_surface>
 
 |void| **mesh_add_surface_from_arrays**\ (\ mesh\: :ref:`RID<class_RID>`, primitive\: :ref:`PrimitiveType<enum_RenderingServer_PrimitiveType>`, arrays\: :ref:`Array<class_Array>`, blend_shapes\: :ref:`Array<class_Array>` = [], lods\: :ref:`Dictionary<class_Dictionary>` = {}, compress_format\: |bitfield|\[:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`\] = 0\ ) :ref:`🔗<class_RenderingServer_method_mesh_add_surface_from_arrays>`
 
-Creates a new surface on the given ``mesh``. :ref:`mesh_get_surface_count()<class_RenderingServer_method_mesh_get_surface_count>` will become the surface index for this new surface.
+Crea una nuova superficie sulla ``mesh`` specificata. :ref:`mesh_get_surface_count()<class_RenderingServer_method_mesh_get_surface_count>` diventerà l'indice di superficie per questa nuova superficie.
 
-Surfaces are created to be rendered using a ``primitive``, which may be any of the values defined in :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
+Le superfici sono renderizzate tramite un ``primitive``, che può essere uno qualsiasi dei valori definiti in :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
 
-The ``arrays`` argument is an array of arrays. Each of the :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` elements contains an array with some of the mesh data for this surface as described by the corresponding member of :ref:`ArrayType<enum_Mesh_ArrayType>` or ``null`` if it is not used by the surface. For example, ``arrays[0]`` is the array of vertices. That first vertex sub-array is always required; the others are optional. Adding an index array puts this surface into "index mode" where the vertex and other arrays become the sources of data and the index array defines the vertex order. All sub-arrays must have the same length as the vertex array (or be an exact multiple of the vertex array's length, when multiple elements of a sub-array correspond to a single vertex) or be empty, except for :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` if it is used.
+L'argomento ``arrays`` è un array di array. Ciascuno degli elementi :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` contiene un array con alcuni dei dati della mesh per questa superficie, come descritto dal membro corrispondente di :ref:`ArrayType<enum_Mesh_ArrayType>` o ``null`` se non è utilizzato dalla superficie. Ad esempio, ``arrays[0]`` è l'array dei vertici. Il primo sottoarray di vertici è sempre obbligatorio; gli altri sono facoltativi. L'aggiunta di un array di indici mette questa superficie in "modalità indice", dove i vertici e gli altri array diventano le sorgenti di dati e l'array di indici definisce l'ordine dei vertici. Tutti i sottoarray devono avere la stessa lunghezza dell'array dei vertici (o essere un multiplo esatto della lunghezza dell'array dei vertici, quando più elementi di un sottoarray corrispondono a un singolo vertice) oppure essere vuoti, ad eccezione di :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>`, se utilizzato.
 
-The ``blend_shapes`` argument is an array of vertex data for each blend shape. Each element is an array of the same structure as ``arrays``, but :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>`, and :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` are set if and only if they are set in ``arrays`` and all other entries are ``null``.
+L'argomento ``blend_shapes`` è un array di dati dei vertici per ogni forma di fusione. Ogni elemento è un array con la stessa struttura di ``arrays``, ma :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` e :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` sono impostati solo se sono impostati in ``arrays`` e tutte le altre voci sono ``null``.
 
-The ``lods`` argument is a dictionary with :ref:`float<class_float>` keys and :ref:`PackedInt32Array<class_PackedInt32Array>` values. Each entry in the dictionary represents an LOD level of the surface, where the value is the :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` array to use for the LOD level and the key is roughly proportional to the distance at which the LOD stats being used. I.e., increasing the key of an LOD also increases the distance that the objects has to be from the camera before the LOD is used.
+L'argomento ``lods`` è un dizionario con chiavi :ref:`float<class_float>` e valori :ref:`PackedInt32Array<class_PackedInt32Array>`. Ogni voce nel dizionario rappresenta un livello LOD della superficie, dove il valore è l'array :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` da utilizzare per il livello LOD e la chiave è approssimativamente proporzionale alla distanza a cui vengono utilizzate le statistiche LOD. Ad esempio, aumentando la chiave di un LOD aumenta anche la distanza che gli oggetti devono avere dalla telecamera prima che il LOD venga utilizzato.
 
-The ``compress_format`` argument is the bitwise OR of, as required: One value of :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` left shifted by ``ARRAY_FORMAT_CUSTOMn_SHIFT`` for each custom channel in use, :ref:`ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_RenderingServer_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_RenderingServer_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>`, or :ref:`ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_RenderingServer_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
+L'argomento ``compress_format`` è l'OR bit a bit di, a seconda delle esigenze: un valore di :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` spostato a sinistra di ``ARRAY_FORMAT_CUSTOMn_SHIFT`` per ogni canale personalizzato in uso, :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>` o :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
 
-See :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` and :ref:`ImporterMesh.add_surface()<class_ImporterMesh_method_add_surface>` for higher-level equivalents of this method.
+Vedi\ :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` e :ref:`ImporterMesh.add_surface()<class_ImporterMesh_method_add_surface>` per i metodi equivalenti di livello superiore.
 
-\ **Note:** When using indices, it is recommended to only use points, lines, or triangles.
+\ **Nota:** Quando si utilizzano indici, si consiglia di usare solo punti, linee o triangoli.
 
 .. rst-class:: classref-item-separator
 
@@ -11557,9 +11557,9 @@ Imposta un'immagine di avvio. Il colore definisce il colore di sfondo. Il valore
 
 |void| **set_debug_generate_wireframes**\ (\ generate\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_set_debug_generate_wireframes>`
 
-If ``generate`` is ``true``, generates debug wireframes for all meshes that are loaded when using the Compatibility renderer. By default, the engine does not generate debug wireframes at runtime, since they slow down loading of assets and take up VRAM.
+Se ``generate`` è ``true``, genera fildiferro di debug per tutte le mesh caricate quando si utilizza il renderer Compatibilità. Come predefinito, il motore non genera fildiferro di debug in fase di esecuzione, poiché rallentano il caricamento delle risorse e occupano VRAM.
 
-\ **Note:** You must call this method before loading any meshes when using the Compatibility renderer. Otherwise, wireframes will not be used.
+\ **Nota:** È necessario chiamare questo metodo prima di caricare qualsiasi mesh quando si utilizza il renderer Compatibilità, altrimenti i fildiferro non verranno utilizzati.
 
 .. rst-class:: classref-item-separator
 
@@ -12824,7 +12824,7 @@ Influisce sulla nitidezza finale della texture leggendo da una mipmap inferiore 
 
 \ **Nota:** Quando la modalità di ridimensionamento 3D è impostata su FSR 1.0, questo valore viene utilizzato per regolare il bias automatico per le mipmap, il quale viene calcolato internamente in base al fattore di scala. La formula per questo è ``-log2(1,0 / scala) + mipmap_bias``.
 
-b]Nota:** Questo metodo è supportato solo nei renderer Forward+ e Mobile, non in Compatibilità. In Compatibilità, questo proprieto è sempre trattato come se ``mipmap_bias`` fosse impostato su ``0.0``.
+\ **Nota:** Questo metodo è supportato solo nei renderer Forward+ e Mobile, non in Compatibilità. In Compatibilità, questo metodo è sempre trattato come se ``mipmap_bias`` fosse impostato su ``0.0``.
 
 .. rst-class:: classref-item-separator
 

@@ -27,7 +27,7 @@ Light is emitted in the -Z direction of the node's global basis. For an unrotate
 Tutoriales
 --------------------
 
-- :doc:`Luces y sombras 3D <../tutorials/3d/lights_and_shadows>`
+- `Luces y sombras 3D <../tutorials/3d/lights_and_shadows.html#spot-light>`__
 
 - :doc:`Falsificar la iluminación global <../tutorials/3d/global_illumination/faking_global_illumination>`
 

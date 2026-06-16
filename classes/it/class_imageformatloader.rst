@@ -39,7 +39,7 @@ flags **LoaderFlags**: :ref:`🔗<enum_ImageFormatLoader_LoaderFlags>`
 
 :ref:`LoaderFlags<enum_ImageFormatLoader_LoaderFlags>` **FLAG_NONE** = ``0``
 
-Default loading behavior. No processing is applied to the image.
+Comportamento di caricamento predefinito. L'immagine non viene elaborata in alcun modo.
 
 .. _class_ImageFormatLoader_constant_FLAG_FORCE_LINEAR:
 
@@ -47,7 +47,7 @@ Default loading behavior. No processing is applied to the image.
 
 :ref:`LoaderFlags<enum_ImageFormatLoader_LoaderFlags>` **FLAG_FORCE_LINEAR** = ``1``
 
-If set, the image is converted from sRGB to linear encoding.
+Se impostato, l'immagine viene convertita dalla codifica sRGB alla codifica lineare.
 
 .. _class_ImageFormatLoader_constant_FLAG_CONVERT_COLORS:
 
@@ -55,7 +55,7 @@ If set, the image is converted from sRGB to linear encoding.
 
 :ref:`LoaderFlags<enum_ImageFormatLoader_LoaderFlags>` **FLAG_CONVERT_COLORS** = ``2``
 
-If set, a predefined color map is applied to the image. Used when :ref:`ResourceImporterTexture.editor/convert_colors_with_editor_theme<class_ResourceImporterTexture_property_editor/convert_colors_with_editor_theme>` is ``true``.
+Se impostato, viene applicata una mappa di colori predefinita all'immagine. Utilizzato quando :ref:`ResourceImporterTexture.editor/convert_colors_with_editor_theme<class_ResourceImporterTexture_property_editor/convert_colors_with_editor_theme>` è ``true``.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

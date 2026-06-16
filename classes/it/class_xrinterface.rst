@@ -649,7 +649,7 @@ Restituisce ``true`` se questa interfaccia supporta il passthrough.
 
 :ref:`bool<class_bool>` **set_environment_blend_mode**\ (\ mode\: :ref:`EnvironmentBlendMode<enum_XRInterface_EnvironmentBlendMode>`\ ) :ref:`🔗<class_XRInterface_method_set_environment_blend_mode>`
 
-Imposta la modalità di fusione dell'ambiente attivo.
+Imposta la modalità attiva di fusione dell'ambiente.
 
 \ ``mode`` è la modalità di fusione dell'ambiente a partire dal fotogramma successivo.
 

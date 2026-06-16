@@ -14,9 +14,9 @@ ImporterMesh
 Описание
 ----------------
 
-ImporterMesh is a type of :ref:`Resource<class_Resource>` analogous to :ref:`ArrayMesh<class_ArrayMesh>`. It contains vertex array-based geometry, divided in *surfaces*. Each surface contains a completely separate array and a material used to draw it. Design wise, a mesh with multiple surfaces is preferred to a single surface, because objects created in 3D editing software commonly contain multiple materials.
+ImporterMesh — это тип :ref:`Resource<class_Resource>`, аналогичный :ref:`ArrayMesh<class_ArrayMesh>`. Он содержит геометрию на основе вершинных массивов, разделённую на *поверхности*. Каждая поверхность содержит полностью отдельный массив и материал, используемый для её отрисовки. С точки зрения проектирования, сетка с несколькими поверхностями предпочтительнее сетки с одной поверхностью, поскольку объекты, созданные в программах 3D-редактирования, обычно содержат несколько материалов.
 
-Unlike its runtime counterpart, **ImporterMesh** contains mesh data before various import steps, such as LOD and shadow mesh generation, have taken place. Modify surface data by calling :ref:`clear()<class_ImporterMesh_method_clear>`, followed by :ref:`add_surface()<class_ImporterMesh_method_add_surface>` for each surface.
+В отличие от своего аналога во время выполнения, **ImporterMesh** содержит данные сетки до выполнения различных этапов импорта, таких как генерация сетки LOD и теней. Изменить данные поверхности можно, вызвав :ref:`clear()<class_ImporterMesh_method_clear>`, а затем :ref:`add_surface()<class_ImporterMesh_method_add_surface>` для каждой поверхности.
 
 .. rst-class:: classref-reftable-group
 
@@ -357,11 +357,11 @@ Unlike its runtime counterpart, **ImporterMesh** contains mesh data before vario
 
 :ref:`ImporterMesh<class_ImporterMesh>` **merge_importer_meshes**\ (\ importer_meshes\: :ref:`Array<class_Array>`\[:ref:`ImporterMesh<class_ImporterMesh>`\], relative_transforms\: :ref:`Array<class_Array>`\[:ref:`Transform3D<class_Transform3D>`\], deduplicate_surfaces\: :ref:`bool<class_bool>` = true\ ) |static| :ref:`🔗<class_ImporterMesh_method_merge_importer_meshes>`
 
-Merges multiple **ImporterMesh**\ es into a single **ImporterMesh**. Each input mesh is transformed by the corresponding :ref:`Transform3D<class_Transform3D>` in the ``relative_transforms`` array, which must be the same size as ``importer_meshes``. Negative scales are supported, and the winding order in the mesh data will be corrected to account for this.
+Объединяет несколько **ImporterMesh** в один **ImporterMesh**. Каждая входная сетка преобразуется соответствующим :ref:`Transform3D<class_Transform3D>` из массива ``relative_transforms``, который должен иметь тот же размер, что и ``importer_meshes``. Поддерживаются отрицательные масштабы, и порядок обхода в данных сетки будет скорректирован с учетом этого.
 
-If ``deduplicate_surfaces`` is ``true`` and multiple meshes have surfaces with the same names and formats, the surfaces will be merged together when the meshes are merged, and will use the material from the first matching surface. This is useful for reducing the number of surfaces in the resulting mesh, and avoids duplicating materials. Surfaces with bone weights will never be deduplicated. If ``deduplicate_surfaces`` is ``false``, the surfaces will always be kept separate, and will be given unique names.
+Если ``deduplicate_surfaces`` имеет значение ``true`` и несколько сеток имеют поверхности с одинаковыми именами и форматами, поверхности будут объединены при слиянии сеток и будут использовать материал первой совпадающей поверхности. Это полезно для уменьшения количества поверхностей в результирующей сетке и позволяет избежать дублирования материалов. Поверхности с весами костей никогда не будут дедуплицированы. Если ``deduplicate_surfaces`` имеет значение ``false``, поверхности всегда будут храниться отдельно и им будут присвоены уникальные имена.
 
-\ **Warning:** Blend shapes and LODs are not supported and will be discarded. Do not use this function to discard blend shapes and LODs, as support for these may be added in the future.
+\ **Предупреждение:** Формы смешивания и уровни детализации (LOD) не поддерживаются и будут отброшены. Не используйте эту функцию для отбрасывания форм смешивания и уровней детализации, так как поддержка этих параметров может быть добавлена в будущем.
 
 .. rst-class:: classref-item-separator
 

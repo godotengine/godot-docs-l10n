@@ -311,7 +311,7 @@ Restituisce il numero di articolazioni nella lista delle articolazioni della cat
 
 :ref:`float<class_float>` **get_joint_twist_amount**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_joint_twist_amount>`
 
-Restituisce la quantità di torsione in ``joint`` nella lista delle articolazioni della catena d'ossa quando :ref:`is_config_individual()<class_BoneTwistDisperser3D_method_is_config_individual>` è :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Restituisce la quantità di torsione in ``joint`` nella lista delle articolazioni della catena d'ossa quando :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` è :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -499,7 +499,7 @@ Se ``enabled`` è ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser
 
 |void| **set_joint_twist_amount**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, twist_amount\: :ref:`float<class_float>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_joint_twist_amount>`
 
-Imposta la quantità di torsione in ``joint`` nella lista delle articolazioni della catena d'ossa quando :ref:`is_config_individual()<class_BoneTwistDisperser3D_method_is_config_individual>` è :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Imposta la quantità di torsione in ``joint`` nella lista delle articolazioni della catena d'ossa quando :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` è :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 

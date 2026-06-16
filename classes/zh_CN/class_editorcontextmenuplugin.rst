@@ -137,7 +137,7 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_INSPECTOR_PROPERTY** = ``7``
 
-这是属性检查器右键菜单的上下文菜单。\ :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` 方法会被调用，并传入一个包含两项内容的数组：第一项是对象的 ID，第二项是属性的名称。在将对象 ID 转换为整数（int）后，你可以通过 ``@GlobalScope.instance_from_id`` 方法从该 ID 中检索出对应的对象实例。而选项的回调函数（option callback）则会直接接收到该 EditorProperty 对象。
+检查器右键菜单的上下文菜单。\ :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` 将被调用，并传入一个包含两项的数组：第一项是对象的 ID，第二项是属性名称。可以通过 :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` 从 ID 获取对象，但需要先将其转换为整数。选项回调将直接接收 EditorProperty。
 
 .. rst-class:: classref-section-separator
 

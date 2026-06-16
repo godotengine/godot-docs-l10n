@@ -1195,7 +1195,7 @@
 
 \ **Примітка:** Якщо ``value`` та/або ``type`` є звільненими об’єктами (див. :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`), або ``type`` не є одним із наведених вище варіантів, цей метод викличе помилку виконання.
 
-Див. також :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`Object.is_class()<class_Object_method_is_class>`, ``methodObject.get_script``, :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>` (та інші методи :ref:`Array<class_Array>`), :ref:`Dictionary.is_same_typed()<class_Dictionary_method_is_same_typed>` (та інші методи :ref:`Dictionary<class_Dictionary>`).
+Див. також :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`Object.is_class()<class_Object_method_is_class>`, ``methodObject.get_script``, :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>` (та інші методи :ref:`Array()<class_@GDScript_method_Array>`), :ref:`Dictionary.is_same_typed()<class_Dictionary_method_is_same_typed>` (та інші методи :ref:`Dictionary<class_Dictionary>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1282,7 +1282,7 @@
      # Створення екземпляра сцени.
     var diamond = preload("res://diamond.tscn").instantiate()
 
-\ **Примітка:** ``попереднє завантаження методу`` є ключовим словом, а не функцією. Тому ви не можете отримати до нього доступ як :ref:`Callable<class_Callable>`.
+\ **Примітка:** :ref:`preload()<class_@GDScript_method_preload>` є ключовим словом, а не функцією. Тому ви не можете отримати до нього доступ як :ref:`Callable<class_Callable>`.
 
 .. rst-class:: classref-item-separator
 

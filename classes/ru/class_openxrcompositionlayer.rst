@@ -287,7 +287,7 @@ enum **EyeVisibility**: :ref:`🔗<enum_OpenXRCompositionLayer_EyeVisibility>`
 
 :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>` **EYE_VISIBILITY_BOTH** = ``0``
 
-The layer is visible to both the left and right eyes.
+Этот слой виден как левому, так и правому глазу.
 
 .. _class_OpenXRCompositionLayer_constant_EYE_VISIBILITY_LEFT:
 
@@ -295,7 +295,7 @@ The layer is visible to both the left and right eyes.
 
 :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>` **EYE_VISIBILITY_LEFT** = ``1``
 
-The layer is visible only to the left eye.
+Этот слой виден только левому глазу.
 
 .. _class_OpenXRCompositionLayer_constant_EYE_VISIBILITY_RIGHT:
 
@@ -303,7 +303,7 @@ The layer is visible only to the left eye.
 
 :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>` **EYE_VISIBILITY_RIGHT** = ``2``
 
-The layer is visible only to the right eye.
+Этот слой виден только правому глазу.
 
 .. rst-class:: classref-section-separator
 
@@ -380,9 +380,9 @@ The layer is visible only to the right eye.
 - |void| **set_eye_visibility**\ (\ value\: :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>`\ )
 - :ref:`EyeVisibility<enum_OpenXRCompositionLayer_EyeVisibility>` **get_eye_visibility**\ (\ )
 
-The eye(s) the composition layer is visible to.
+Глаз(а), для которого(ых) виден(ы) слой композиции.
 
-\ **Note:** Not all composition layer types or runtimes support restricting visibility to a single eye.
+\ **Примечание:** Не все типы слоев композиции или среды выполнения поддерживают ограничение видимости одним глазом.
 
 .. rst-class:: classref-item-separator
 

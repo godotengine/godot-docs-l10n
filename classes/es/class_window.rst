@@ -27,6 +27,8 @@ Tutoriales
 
 - :doc:`Salida HDR <../tutorials/rendering/hdr_output>`
 
+- `Multiple Windows demo <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
+
 .. rst-class:: classref-reftable-group
 
 Propiedades
@@ -627,7 +629,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_RESIZE_DISABLED** = ``0``
 
-La ventana no se puede redimensionar arrastrando su control de redimensionamiento. Todavía es posible redimensionar la ventana usando :ref:`size<class_Window_property_size>`. Esta bandera se ignora para las ventanas de pantalla completa. Se establece con :ref:`unresizable<class_Window_property_unresizable>`.
+The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`size<class_Window_property_size>`. This flag is ignored for full screen windows. Set with :ref:`unresizable<class_Window_property_unresizable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_BORDERLESS:
 
@@ -635,7 +639,9 @@ La ventana no se puede redimensionar arrastrando su control de redimensionamient
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_BORDERLESS** = ``1``
 
-La ventana no tiene barra de título nativa ni otras decoraciones. Esta bandera se ignora para las ventanas de pantalla completa. Se establece con :ref:`borderless<class_Window_property_borderless>`.
+The window do not have native title bar and other decorations. This flag is ignored for full-screen windows. Set with :ref:`borderless<class_Window_property_borderless>`.
+
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_ALWAYS_ON_TOP:
 
@@ -643,7 +649,9 @@ La ventana no tiene barra de título nativa ni otras decoraciones. Esta bandera 
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_ALWAYS_ON_TOP** = ``2``
 
-La ventana está flotando por encima de todas las demás ventanas. Esta bandera se ignora para las ventanas de pantalla completa. Se establece con :ref:`always_on_top<class_Window_property_always_on_top>`.
+The window is floating on top of all other windows. This flag is ignored for full-screen windows. Set with :ref:`always_on_top<class_Window_property_always_on_top>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_TRANSPARENT:
 
@@ -651,9 +659,11 @@ La ventana está flotando por encima de todas las demás ventanas. Esta bandera 
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_TRANSPARENT** = ``3``
 
-El fondo de la ventana puede ser transparente. Se establece con :ref:`transparent<class_Window_property_transparent>`.
+The window background can be transparent. Set with :ref:`transparent<class_Window_property_transparent>`.
 
-\ **Nota:** Esta bandera no tiene efecto si :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` o :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` de la ventana está establecido en ``false``.
+\ **Note:** This flag has no effect if either :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, or the window's :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is set to ``false``.
+
+\ **Note:** Transparency support is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_NO_FOCUS:
 
@@ -661,7 +671,9 @@ El fondo de la ventana puede ser transparente. Se establece con :ref:`transparen
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_NO_FOCUS** = ``4``
 
-La ventana no se puede enfocar. Si no se enfoca, se ignorarán todas las entradas, excepto los clics del ratón. Se configura con :ref:`unfocusable<class_Window_property_unfocusable>`.
+The window can't be focused. No-focus window will ignore all input, except mouse clicks. Set with :ref:`unfocusable<class_Window_property_unfocusable>`.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
 
 .. _class_Window_constant_FLAG_POPUP:
 
@@ -669,9 +681,9 @@ La ventana no se puede enfocar. Si no se enfoca, se ignorarán todas las entrada
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP** = ``5``
 
-La ventana es parte del menú o el desplegable :ref:`OptionButton<class_OptionButton>`. Esta bandera no se puede cambiar cuando la ventana está visible. Una ventana emergente activa recibirá exclusivamente toda la entrada, sin robar el foco de su padre. Las ventanas emergentes se cierran automáticamente cuando los usuarios hacen clic fuera de ella o cuando se cambia de aplicación. La ventana emergente debe tener un padre transitorio establecido (véase :ref:`transient<class_Window_property_transient>`).
+Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`transient<class_Window_property_transient>`).
 
-\ **Nota:** Esta bandera no tiene efecto en las ventanas incrustadas (a menos que dicha ventana sea un :ref:`Popup<class_Popup>`).
+\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded :ref:`Popup<class_Popup>` windows.
 
 .. _class_Window_constant_FLAG_EXTEND_TO_TITLE:
 
@@ -679,11 +691,11 @@ La ventana es parte del menú o el desplegable :ref:`OptionButton<class_OptionBu
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_EXTEND_TO_TITLE** = ``6``
 
-El contenido de la ventana se expande al tamaño completo de la ventana. A diferencia de la ventana sin bordes, el marco se deja intacto y se puede utilizar para redimensionar la ventana, la barra de título es transparente, pero tiene botones de minimizar/maximizar/cerrar. Se establece con :ref:`extend_to_title<class_Window_property_extend_to_title>`.
+Window content is expanded to the full size of the window. Unlike borderless window, the frame is left intact and can be used to resize the window, title bar is transparent, but have minimize/maximize/close buttons. Set with :ref:`extend_to_title<class_Window_property_extend_to_title>`.
 
-\ **Nota:** Esta bandera sólo se implementa en macOS.
+\ **Note:** This flag has no effect in embedded windows.
 
-\ **Nota:** Esta bandera no tiene efecto en las ventanas incrustadas.
+\ **Note:** This flag is implemented only on macOS.
 
 .. _class_Window_constant_FLAG_MOUSE_PASSTHROUGH:
 
@@ -691,9 +703,11 @@ El contenido de la ventana se expande al tamaño completo de la ventana. A difer
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-Todos los eventos del ratón se transfieren a la ventana subyacente de la misma aplicación.
+All mouse events are passed to the underlying window of the same application.
 
-\ **Nota:** Esta opción no tiene efecto en ventanas incrustadas.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, Windows.
 
 .. _class_Window_constant_FLAG_SHARP_CORNERS:
 
@@ -727,7 +741,11 @@ Las ventanas se excluyen de las capturas de pantalla tomadas por :ref:`DisplaySe
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP_WM_HINT** = ``10``
 
-Señala al gestor de ventanas que se supone que esta ventana es un "popup" definido por la implementación (normalmente una ventana hija flotante, sin bordes, no tileable e inamovible).
+Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (Wayland).
 
 .. _class_Window_constant_FLAG_MINIMIZE_DISABLED:
 
@@ -735,9 +753,11 @@ Señala al gestor de ventanas que se supone que esta ventana es un "popup" defin
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MINIMIZE_DISABLED** = ``11``
 
-El botón para minimizar la ventana se deshabilita.
+Window minimize button is disabled.
 
-\ **Nota:** Esta opción está implementada en macOS y Windows.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAXIMIZE_DISABLED:
 
@@ -745,9 +765,11 @@ El botón para minimizar la ventana se deshabilita.
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MAXIMIZE_DISABLED** = ``12``
 
-El botón para maximizar la ventana se deshabilita.
+Window maximize button is disabled.
 
-\ **Nota:** Esta opción está implementada en macOS y Windows.
+\ **Note:** This flag has no effect in embedded windows.
+
+\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
 
 .. _class_Window_constant_FLAG_MAX:
 

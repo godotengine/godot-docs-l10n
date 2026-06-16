@@ -18,14 +18,14 @@ Descrizione
 
 \ **Nota:** **SubViewport** è un :ref:`Viewport<class_Viewport>` che non è un :ref:`Window<class_Window>`, ovvero non disegna nulla da solo. Per visualizzare qualcosa, **SubViewport** deve avere una dimensione diversa da zero ed essere inserito in un :ref:`SubViewportContainer<class_SubViewportContainer>` o assegnato a una :ref:`ViewportTexture<class_ViewportTexture>`.
 
-\ **Nota:** Gli :ref:`InputEvent<class_InputEvent>` non vengono passati a un **SubViewport** a sé stante, come predefinito. Per garantire la propagazione degli :ref:`InputEvent<class_InputEvent>`, un **SubViewport** può essere posizionato all'interno di un :ref:`SubViewportContainer<class_SubViewportContainer>`.
+\ **Nota:** Gli :ref:`InputEvent<class_InputEvent>` non vengono passati a una **SubViewport** a sé stante, come predefinito. Per garantire la propagazione degli :ref:`InputEvent<class_InputEvent>`, una **SubViewport** può essere posizionata all'interno di un :ref:`SubViewportContainer<class_SubViewportContainer>`.
 
 .. rst-class:: classref-introduction-group
 
 Tutorial
 ----------------
 
-- :doc:`Utilizzo dei Viewport <../tutorials/rendering/viewports>`
+- :doc:`Utilizzo delle Viewport <../tutorials/rendering/viewports>`
 
 - :doc:`Viewport e trasformazioni di canvas <../tutorials/2d/2d_transforms>`
 
@@ -172,7 +172,7 @@ Descrizioni delle proprietà
 - |void| **set_clear_mode**\ (\ value\: :ref:`ClearMode<enum_SubViewport_ClearMode>`\ )
 - :ref:`ClearMode<enum_SubViewport_ClearMode>` **get_clear_mode**\ (\ )
 
-La modalità di cancellazione quando la viewport secondaria è utilizzata come destinazione di rendering.
+La modalità di cancellazione quando la sotto-viewport secondaria è utilizzata come destinazione di rendering.
 
 \ **Nota:** Questa proprietà è progettata per l'uso in 2D.
 
@@ -191,7 +191,7 @@ La modalità di cancellazione quando la viewport secondaria è utilizzata come d
 - |void| **set_update_mode**\ (\ value\: :ref:`UpdateMode<enum_SubViewport_UpdateMode>`\ )
 - :ref:`UpdateMode<enum_SubViewport_UpdateMode>` **get_update_mode**\ (\ )
 
-La modalità di aggiornamento quando la viewport secondaria è utilizzata come destinazione di rendering.
+La modalità di aggiornamento quando la sotto-viewport è utilizzata come destinazione di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ La modalità di aggiornamento quando la viewport secondaria è utilizzata come d
 - |void| **set_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_size**\ (\ )
 
-La larghezza e l'altezza della viewport secondaria. Deve essere impostata su un valore maggiore o uguale a 2 pixel su entrambe le dimensioni. Altrimenti, non sarà visualizzato nulla.
+La larghezza e l'altezza della sotto-viewport. Deve essere impostata su un valore maggiore o uguale a 2 pixel su entrambe le dimensioni. Altrimenti, non sarà visualizzato nulla.
 
 \ **Nota:** se il nodo padre è un :ref:`SubViewportContainer<class_SubViewportContainer>` e il suo :ref:`SubViewportContainer.stretch<class_SubViewportContainer_property_stretch>` è ``true``, la dimensione della viewport non può essere modificata manualmente.
 
@@ -227,7 +227,7 @@ La larghezza e l'altezza della viewport secondaria. Deve essere impostata su un 
 - |void| **set_size_2d_override**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_size_2d_override**\ (\ )
 
-Sostituzione delle dimensioni 2D della viewport secondaria. Se la larghezza o l'altezza sono ``0``, la sostituzione è disabilitata.
+Sostituzione delle dimensioni 2D della sotto-viewport. Se la larghezza o l'altezza sono ``0``, la sostituzione è disabilitata.
 
 .. rst-class:: classref-item-separator
 

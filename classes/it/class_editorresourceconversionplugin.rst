@@ -83,7 +83,7 @@ Accetta un :ref:`Resource<class_Resource>` in input e la converte nel tipo speci
 
 :ref:`String<class_String>` **_converts_to**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorResourceConversionPlugin_private_method__converts_to>`
 
-Restituisce il nome della classe del tipo di destinazione di :ref:`Resource<class_Resource>` in cui questo plugin converte le risorse di origine.
+Restituisce il nome della classe del tipo di destinazione di :ref:`Resource<class_Resource>` in cui questo plugin converte le risorse originali.
 
 .. rst-class:: classref-item-separator
 

@@ -76,7 +76,7 @@ InputMap
 
 **project_settings_loaded**\ (\ ) :ref:`🔗<class_InputMap_signal_project_settings_loaded>`
 
-Emitted when the :ref:`ProjectSettings<class_ProjectSettings>` **InputMap** has been loaded.
+Генерируется при загрузке **InputMap** в :ref:`ProjectSettings<class_ProjectSettings>`.
 
 .. rst-class:: classref-section-separator
 

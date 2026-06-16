@@ -16,7 +16,7 @@ Classe di base per gli importatori di risorse.
 Descrizione
 ----------------------
 
-Questa è la classe di base per gli importatori di risorse di Godot. Per implementare i tuoi importatori di risorse usando le estensioni dell'editor, vedi :ref:`EditorImportPlugin<class_EditorImportPlugin>`.
+Questa è la classe di base per gli importatori di risorse in Godot. Per implementare i tuoi importatori di risorse usando le estensioni dell'editor, vedi :ref:`EditorImportPlugin<class_EditorImportPlugin>`.
 
 .. rst-class:: classref-introduction-group
 
