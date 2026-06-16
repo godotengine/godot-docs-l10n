@@ -125,9 +125,6 @@ msgstr ""
 msgid "To notarize exported app"
 msgstr "公證匯出的應用程式"
 
-msgid "Select ``Xcode altool`` in the ``Notarization > Notarization`` option."
-msgstr "在「公證 > 公證」選項中選擇「Xcode altool」。"
-
 msgid "Disable the ``Debugging`` entitlement."
 msgstr "要對 App 進行公證，你必須禁用 ``Debugging`` 授權。"
 
@@ -175,27 +172,9 @@ msgid ""
 msgstr "若你有 Apple Developer ID 憑證，且於 Linux 或 Windows 匯出"
 
 msgid ""
-"Install `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/"
-"tree/main/apple-codesign>`__, and configure the path to ``rcodesign`` in the "
-"``Editor Settings > Export > macOS > rcodesign``."
-msgstr ""
-"請安裝 `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/"
-"tree/main/apple-codesign>`__，並於「編輯器設定 > 匯出 > macOS > rcodesign」中"
-"設定 rcodesign 的路徑。"
-
-msgid ""
-"Select ``PyOxidizer rcodesign`` in the ``Code Signing > Codesign`` option."
-msgstr "於「程式碼簽章 > Codesign」選項中選擇「PyOxidizer rcodesign」。"
-
-msgid ""
 "Set valid Apple ID PKCS #12 certificate file and password in the ``Code "
 "Signing`` section."
 msgstr "在「程式碼簽署」部分設定有效的 Apple ID PKCS #12 憑證檔案和密碼。"
-
-msgid ""
-"Select ``PyOxidizer rcodesign`` in the ``Notarization > Notarization`` "
-"option."
-msgstr "在「公證 > 公證」選項中選擇「PyOxidizer rcodesign」。"
 
 msgid ""
 "Set valid `App Store Connect <https://developer.apple.com/documentation/"
@@ -276,9 +255,6 @@ msgstr "提供給程式碼簽章工具的命令列參數陣列。"
 msgid "This option is visible only when signing with Xcode codesign."
 msgstr "本選項僅於使用 Xcode codesign 進行簽章時可見。"
 
-msgid "These options are visible only when signing with PyOxidizer rcodesign."
-msgstr "這些選項僅於使用 PyOxidizer rcodesign 簽章時可見。"
-
 msgid "Notarization Options"
 msgstr "公證選項"
 
@@ -337,9 +313,6 @@ msgid ""
 "You should set either Apple ID Name/Password or App Store Connect API UUID/"
 "Key."
 msgstr "您應該設定 Apple ID 名稱/密碼或 App Store Connect API UUID/金鑰。"
-
-msgid "These options are visible only when notarizing with Xcode altool."
-msgstr "這些選項僅於使用 Xcode altool 進行公證時可見。"
 
 msgid ""
 "See `Notarizing macOS Software Before Distribution <https://"

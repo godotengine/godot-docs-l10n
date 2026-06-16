@@ -103,10 +103,6 @@ msgstr ""
 msgid "To notarize exported app"
 msgstr "Notarisieren der exportierten App"
 
-msgid "Select ``Xcode altool`` in the ``Notarization > Notarization`` option."
-msgstr ""
-"Wählen Sie ``Xcode altool`` in der Option ``Notarization > Notarization``."
-
 msgid "Disable the ``Debugging`` entitlement."
 msgstr "Deaktivieren Sie die Berechtigung ``Debugging``."
 
@@ -159,33 +155,11 @@ msgstr ""
 "exportieren"
 
 msgid ""
-"Install `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/"
-"tree/main/apple-codesign>`__, and configure the path to ``rcodesign`` in the "
-"``Editor Settings > Export > macOS > rcodesign``."
-msgstr ""
-"Installieren Sie `PyOxidizer rcodesign <https://github.com/indygreg/apple-"
-"platform-rs/tree/main/apple-codesign>`__, und konfigurieren Sie den Pfad zu "
-"``rcodesign`` in den ``Editor-Einstellungen > Export > macOS > rcodesign``."
-
-msgid ""
-"Select ``PyOxidizer rcodesign`` in the ``Code Signing > Codesign`` option."
-msgstr ""
-"Wählen Sie ``PyOxidizer rcodesign`` in der Option ``Code Signing > "
-"Codesign``."
-
-msgid ""
 "Set valid Apple ID PKCS #12 certificate file and password in the ``Code "
 "Signing`` section."
 msgstr ""
 "Setzen Sie eine gültige Apple ID PKCS #12 Zertifikatsdatei und ein Passwort "
 "im Abschnitt ``Code Signing``."
-
-msgid ""
-"Select ``PyOxidizer rcodesign`` in the ``Notarization > Notarization`` "
-"option."
-msgstr ""
-"Wählen Sie ``PyOxidizer rcodesign`` in der Option ``Notarization > "
-"Notarization``."
 
 msgid ""
 "Set valid `App Store Connect <https://developer.apple.com/documentation/"
@@ -280,10 +254,6 @@ msgstr ""
 msgid "This option is visible only when signing with Xcode codesign."
 msgstr "Diese Option ist nur beim Signieren mit Xcode Codesign sichtbar."
 
-msgid "These options are visible only when signing with PyOxidizer rcodesign."
-msgstr ""
-"Diese Optionen sind nur beim Signieren mit PyOxidizer rcodesign sichtbar."
-
 msgid "Notarization Options"
 msgstr "Notarisierungsoptionen"
 
@@ -348,9 +318,6 @@ msgid ""
 msgstr ""
 "Sie sollten entweder Apple ID Name/Passwort oder App Store Connect API UUID/"
 "Key einstellen."
-
-msgid "These options are visible only when notarizing with Xcode altool."
-msgstr "Diese Optionen sind nur beim Notarisieren mit Xcode altool sichtbar."
 
 msgid ""
 "See `Notarizing macOS Software Before Distribution <https://"

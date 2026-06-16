@@ -147,11 +147,6 @@ msgstr ""
 msgid "To notarize exported app"
 msgstr "公证导出的应用程序"
 
-msgid "Select ``Xcode altool`` in the ``Notarization > Notarization`` option."
-msgstr ""
-"在\\ ``公证 > 公证``\\ （Notarization > Notarization）选项中选择 ``Xcode "
-"altool``\\ 。"
-
 msgid "Disable the ``Debugging`` entitlement."
 msgstr "禁用\\ ``调试``\\ （Debugging）授权。"
 
@@ -199,33 +194,11 @@ msgid ""
 msgstr "如果你有 Apple 开发者 ID 证书并且是在 Linux 或 Windows 上导出"
 
 msgid ""
-"Install `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/"
-"tree/main/apple-codesign>`__, and configure the path to ``rcodesign`` in the "
-"``Editor Settings > Export > macOS > rcodesign``."
-msgstr ""
-"请安装 `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/"
-"tree/main/apple-codesign>`__ 并在\\ ``编辑器设置 > 导出 > macOS > "
-"rcodesign`` 中配置 ``rcodesign`` 的路径。"
-
-msgid ""
-"Select ``PyOxidizer rcodesign`` in the ``Code Signing > Codesign`` option."
-msgstr ""
-"在\\ ``代码签名 > 代码签名``\\ （Code Signing > Codesign）选项中选择 "
-"``PyOxidizer rcodesign``\\ 。"
-
-msgid ""
 "Set valid Apple ID PKCS #12 certificate file and password in the ``Code "
 "Signing`` section."
 msgstr ""
 "在\\ ``代码签名``\\ （Code Signing）部分设置有效的 Apple ID PKCS #12 证书和密"
 "码。"
-
-msgid ""
-"Select ``PyOxidizer rcodesign`` in the ``Notarization > Notarization`` "
-"option."
-msgstr ""
-"在\\ ``公证 > 公证``\\ （Notarization > Notarization）选项中选中 "
-"``PyOxidizer rcodesign``\\ 。"
 
 msgid ""
 "Set valid `App Store Connect <https://developer.apple.com/documentation/"
@@ -308,9 +281,6 @@ msgstr "传递给代码签名工具的命令行参数数组。"
 msgid "This option is visible only when signing with Xcode codesign."
 msgstr "这个选项仅在使用 Xcode 的 codesign 进行签名时可见。"
 
-msgid "These options are visible only when signing with PyOxidizer rcodesign."
-msgstr "这些选项仅在使用 PyOxidizer 的 rcodesign 进行签名时才可见。"
-
 msgid "Notarization Options"
 msgstr "公证选项"
 
@@ -369,9 +339,6 @@ msgid ""
 "You should set either Apple ID Name/Password or App Store Connect API UUID/"
 "Key."
 msgstr "你应该设置 Apple ID 名称/密码或 App Store Connect API UUID/Key。"
-
-msgid "These options are visible only when notarizing with Xcode altool."
-msgstr "这些选项只会在使用 Xcode altool 进行公证时显示。"
 
 msgid ""
 "See `Notarizing macOS Software Before Distribution <https://"

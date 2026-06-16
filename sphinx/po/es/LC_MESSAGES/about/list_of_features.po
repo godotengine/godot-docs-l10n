@@ -135,9 +135,6 @@ msgstr "**Características:**"
 msgid "Scene tree editor."
 msgstr "Editor del Árbol de Escenas."
 
-msgid "Built-in script editor."
-msgstr "Editor de scripts integrado."
-
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
@@ -147,11 +144,6 @@ msgstr ""
 
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript :ref:`depurador <doc_debugger_panel>`."
-
-msgid "Support for debugging in threads is available since 4.2."
-msgstr ""
-"El soporte para la depuración en los subprocesos está disponible desde la "
-"versión 4.2."
 
 msgid ""
 "Visual profiler with CPU and GPU time indications for each step of the "
@@ -173,29 +165,12 @@ msgstr "Recarga de script en vivo."
 msgid "Live scene editing."
 msgstr "Edición de escenas en vivo."
 
-msgid ""
-"Changes will reflect in the editor and will be kept after closing the "
-"running project."
-msgstr ""
-"Los cambios se reflejarán en el editor y se mantendrán después de haber "
-"cerrado el proyecto en curso."
-
-msgid "Remote inspector."
-msgstr "Inspector remoto."
-
-msgid ""
-"Changes won't reflect in the editor and won't be kept after closing the "
-"running project."
-msgstr ""
-"Los cambios no se reflejarán en el editor y no se mantendrán después de "
-"cerrar el proyecto en ejecución."
-
-msgid "Live camera replication."
-msgstr "Réplica de la cámara en vivo."
-
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
 "Mueve la cámara en el editor y mira el resultado en el proyecto ejecutándose."
+
+msgid "Remote inspector."
+msgstr "Inspector remoto."
 
 msgid "Built-in offline class reference documentation."
 msgstr "Documentación de referencia sin conexión incorporada."
@@ -480,9 +455,6 @@ msgstr ""
 msgid "3D graphics"
 msgstr "Gráficos 3D"
 
-msgid "HDR rendering with sRGB."
-msgstr "Renderizando HDR con sRGB."
-
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "Cámaras de perspectiva, ortográficas y offset troncocónicas."
 
@@ -568,28 +540,12 @@ msgstr "El difuminado se puede determinar por píxel o por objeto."
 msgid "**Real-time lighting:**"
 msgstr "**Iluminación en tiempo real:**"
 
-msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr "Luces direccionales (sol / luna). Hasta 4 por escena."
-
-msgid "Omnidirectional lights."
-msgstr "Luces omnidireccionales."
-
-msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr "Focos con ángulo de cono ajustable y atenuación."
-
 msgid ""
 "Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
 "light basis."
 msgstr ""
 "Las energías de efecto especular, luz indirecta y niebla volumétrica se "
 "puede ajustar por cada luz."
-
-msgid ""
-"Adjustable light \"size\" for fake area lights (will also make shadows "
-"blurrier)."
-msgstr ""
-"\"Tamaño\" de luz ajustable para luces de área falsas (también difumina las "
-"sombras)."
 
 msgid ""
 "Optional distance fade system to fade distant lights and their shadows, "
@@ -609,34 +565,8 @@ msgstr ""
 "disminuir su coste individual. La renderización agrupada también eleva los "
 "límites del número de luces que se pueden utilizar en una malla."
 
-msgid ""
-"When using the Mobile renderer, up to 8 omni lights and 8 spot lights can be "
-"displayed per mesh resource. Baked lighting can be used to overcome this "
-"limit if needed."
-msgstr ""
-"Al utilizar el renderizador Mobile, se pueden mostrar hasta 8 luces omni y 8 "
-"luces spot por recurso de malla. La iluminación con el Bake Mode: Static "
-"puede ser utilizada para superar este límite si es necesario."
-
 msgid "**Shadow mapping:**"
 msgstr "**Mapeo de sombras:**"
-
-msgid ""
-"*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
-"blending between splits."
-msgstr ""
-"*DirectionalLight:* Ortogonal (más rápido), PSSM 2-split y 4-split. Admite "
-"la mezcla entre divisiones."
-
-msgid ""
-"*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
-"Supports colored projector textures in the form of panoramas."
-msgstr ""
-"*OmniLight:* Paraboloide dual (rápido) o mapa de cubos (más lento pero más "
-"preciso). Admite texturas de proyector con colores en forma de panorámicas."
-
-msgid "*SpotLight:* Single texture. Supports colored projector textures."
-msgstr "*SpotLight:* Textura única. Soporta texturas de proyector con color."
 
 msgid ""
 "Shadow normal offset bias and shadow pancaking to decrease the amount of "
@@ -644,14 +574,6 @@ msgid ""
 msgstr ""
 "\"Shadow normal offset bias\" y \"shadow pancaking\" para disminuir la "
 "cantidad de acné de sombras visible y el peter-panning."
-
-msgid ""
-":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
-"light size and distance from the surface the shadow is cast on."
-msgstr ""
-"Difuminado de sombras similar a :abbr:`PCSS (Percentage Closer Soft "
-"Shadows)` basado en el tamaño y distancia de la luz a la superficie donde se "
-"proyecta la sombra."
 
 msgid "Adjustable shadow blur on a per-light basis."
 msgstr "Difuminado de sombra ajustable por cada luz."
@@ -680,29 +602,6 @@ msgid ""
 msgstr ""
 "Soporta objetos con iluminación dinámica dinámicos usando sondas manuales y "
 "automáticas."
-
-msgid ""
-"Optionally supports directional lighting and rough reflections based on "
-"spherical harmonics."
-msgstr ""
-"Soporte opcional de iluminación direccional y reflejos duros basados en "
-"harmónicas esféricas."
-
-msgid ""
-"Lightmaps are baked on the GPU using compute shaders (much faster compared "
-"to CPU lightmapping). Baking can only be performed from the editor, not in "
-"exported projects."
-msgstr ""
-"Los lightmaps se crean en la GPU usando compute shaders (mucho más rápido "
-"comparado con el lightmapping en CPU). El baking sólo puede realizarse desde "
-"el editor, no en proyectos exportados."
-
-msgid ""
-"Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
-"JNLM, or CPU/GPU-based denoising with OIDN."
-msgstr ""
-"Soporte de :ref:`reducción de ruido <doc_using_lightmap_gi_denoising>` "
-"basado en GPU con JNLM, o reducción de ruido basado en CPU/GPU con OIDN."
 
 msgid ""
 ":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
@@ -1053,21 +952,6 @@ msgid ""
 "Filtering options are defined on a per-use basis, not a per-texture basis."
 msgstr "Las opciones de filtrado están definidas por uso, no por textura."
 
-msgid "**Texture compression:**"
-msgstr "**Compresión de textura:**"
-
-msgid "Basis Universal (slow, but results in smaller files)."
-msgstr "Basis Universal (lento pero resulta en pequeños archivos)."
-
-msgid "BPTC for high-quality compression (not supported on macOS)."
-msgstr "BPTC para compresión de alta calidad (no compatible con macOS)."
-
-msgid "ETC2 (not supported on macOS)."
-msgstr "ETC2 (no soportado en macOS)."
-
-msgid "S3TC (not supported on mobile/Web platforms)."
-msgstr "S3TC (no soportado en platafirnas móviles/Web)."
-
 msgid "**Antialiasing:**"
 msgstr "**Antialiasing:**"
 
@@ -1118,13 +1002,6 @@ msgstr ""
 "<doc_resolution_scaling>` mientras se mantiene la resolución 2D a la escala "
 "original. Esto puede ser usado para mejorar el rendimiento en sistemas de "
 "gama baja o para mejorar visualmente en sistemas de gama alta."
-
-msgid ""
-"Resolution scaling uses bilinear filtering, AMD FidelityFX Super Resolution "
-"1.0 (FSR1) or AMD FidelityFX Super Resolution 2.2 (FSR2)."
-msgstr ""
-"El escalado de resolución utiliza filtrado bilineal, AMD FidelityFX Super "
-"Resolution 1.0 (FSR1) o AMD FidelityFX Super Resolution 2.2 (FSR2)."
 
 msgid ""
 "Texture mipmap LOD bias is adjusted automatically to improve quality at "
@@ -1223,9 +1100,6 @@ msgstr "Shaders"
 msgid "*2D:* Custom vertex, fragment, and light shaders."
 msgstr "*2D:* Sombreadores de vértices, fragmentos y luces personalizados."
 
-msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
-msgstr "*3D:* shaders personalizados de vértice, fragmento, luz y cielo."
-
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
@@ -1280,9 +1154,6 @@ msgid ""
 "Syntax inspired by Python. However, GDScript is **not** based on Python."
 msgstr ""
 "Sintaxis inspirada en Python. Aunque GDScript **no** está basado en Python."
-
-msgid "Syntax highlighting is provided on GitHub."
-msgstr "El resaltado de sintaxis se proporciona en GitHub."
 
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
@@ -1390,13 +1261,6 @@ msgstr ""
 "Soporte para redireccionamiento :ref:`audio buses <doc_audio_buses>` y "
 "efectos con docenas de efectos incluidos."
 
-msgid ""
-"Support for polyphony (playing several sounds from a single "
-"AudioStreamPlayer node)."
-msgstr ""
-"Soporte para polifonía (reproducir varios sonidos desde un único nodo "
-"AudioStreamPlayer)."
-
 msgid "Support for random volume and pitch."
 msgstr "Soporte volumen y tono aleatorio."
 
@@ -1409,13 +1273,6 @@ msgid ""
 msgstr ""
 "Soporte de selección por muestra secuencial/azar, incluyendo prevención de "
 "repetición cuando se utiliza una selección por muestra al azar."
-
-msgid ""
-"Listener2D and Listener3D nodes to listen from a position different than the "
-"camera."
-msgstr ""
-"Nodos Listener2D y Listener3D para escuchar desde una posición diferente a "
-"la cámara."
 
 msgid ""
 "Support for :ref:`procedural audio generation <class_AudioStreamGenerator>`."
@@ -1467,9 +1324,6 @@ msgstr "*Imágenes:* Véase :ref:`doc_importing_images`."
 
 msgid "*Audio:*"
 msgstr "*Audio:*"
-
-msgid "WAV with optional IMA-ADPCM compression."
-msgstr "WAV con compresión opcional IMA-ADPCM."
 
 msgid "Ogg Vorbis."
 msgstr "Ogg Vorbis."
@@ -1562,19 +1416,6 @@ msgid ""
 msgstr ""
 "El cursor del ratón puede ser visible, oculto, capturado o confinado dentro "
 "de la ventana."
-
-msgid ""
-"When captured, raw input will be used on Windows and Linux to sidestep the "
-"OS' mouse acceleration settings."
-msgstr ""
-"Cuando se capture, la entrada en bruto se utilizará en Windows y Linux para "
-"eludir la configuración de la aceleración del ratón del sistema operativo."
-
-msgid "Gamepad input (up to 8 simultaneous controllers)."
-msgstr "Entrada de gamepad (hasta 8 controladores simultáneos)."
-
-msgid "Pen/tablet input with pressure support."
-msgstr "Entrada de lápiz/tableta con soporte de presión."
 
 msgid "Navigation"
 msgstr "Navegación"
@@ -1710,11 +1551,6 @@ msgstr ""
 msgid "Automatic UI mirroring for right-to-left locales."
 msgstr "Espejado automático de UI para escritura derecha a izquierda."
 
-msgid ""
-"Support for pseudolocalization to test your project for i18n-friendliness."
-msgstr ""
-"Soporte de pseudolocalización para probar proyectos amigables para i18n."
-
 msgid "Windowing and OS integration"
 msgstr "Integración de ventanas y sistemas operativos"
 
@@ -1847,13 +1683,6 @@ msgstr ""
 "Soporte para :ref:`dispositivos basados en Android "
 "<doc_deploying_to_android>` utilizando OpenXR a través de un plugin."
 
-msgid ""
-"Including support for popular stand alone headsets like the Meta Quest 1/2/3 "
-"and Pro, Pico 4, Magic Leap 2, and Lynx R1."
-msgstr ""
-"Incluye soporte para dispositivos independientes populares como Meta Quest "
-"1/2/3 y Pro, Pico 4, Magic Leap 2 y Lynx R1."
-
 msgid "Out of the box limited support for visionOS Apple headsets."
 msgstr "Soporte limitado listo para usar para auriculares Apple visionOS."
 
@@ -1895,21 +1724,6 @@ msgstr "Botones."
 msgid "Checkboxes, check buttons, radio buttons."
 msgstr "Casillas de cheque, botones de cheque, botones de selección."
 
-msgid ""
-"Text entry using :ref:`class_LineEdit` (single line) "
-"and :ref:`class_TextEdit` (multiple lines). TextEdit also supports code "
-"editing features such as displaying line numbers and syntax highlighting."
-msgstr ""
-"Entrada de texto usando :ref:`class_LineEdit` (línea simple) "
-"y :ref:`class_TextEdit` (líneas múltiples). TextEdit también soporta "
-"características de edición de código como mostrar números de línea y "
-"resaltado de sintaxis."
-
-msgid ""
-"Dropdown menus using :ref:`class_PopupMenu` and :ref:`class_OptionButton`."
-msgstr ""
-"Menús desplegables usando :ref:`class_PopupMenu` y :ref:`class_OptionButton`."
-
 msgid "Scrollbars."
 msgstr "Barras de desplazamiento."
 
@@ -1926,9 +1740,6 @@ msgstr ""
 
 msgid "Trees (can also be used to represent tables)."
 msgstr "Árboles (también pueden utilizarse para representar tablas)."
-
-msgid "Color picker with RGB and HSV modes."
-msgstr "Selector de color con modos RGB y HSV."
 
 msgid "Controls can be rotated and scaled."
 msgstr "Los controles se pueden rotar y escalar."

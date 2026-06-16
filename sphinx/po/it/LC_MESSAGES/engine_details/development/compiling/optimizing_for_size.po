@@ -216,6 +216,17 @@ msgstr ""
 "Come predefinito, Godot utilizza un server di testo avanzato con supporto "
 "per le seguenti funzionalità:"
 
+msgid ""
+"Remember to always pass ``module_text_server_fb_enabled=yes`` when using "
+"``module_text_server_adv_enabled=no``. Otherwise, the compiled binary won't "
+"contain any text server, which means no text will be displayed at all when "
+"running the project."
+msgstr ""
+"Ricordare di passare sempre ``module_text_server_fb_enabled=yes`` quando si "
+"usa ``module_text_server_adv_enabled=no``. Altrimenti, il binario compilato "
+"non conterrà alcun server di testo, il che significa che non verrà "
+"visualizzato alcun testo quando il progetto viene eseguito."
+
 msgid "Disabling 3D"
 msgstr "Disabilitare il 3D"
 
@@ -279,6 +290,9 @@ msgstr ":ref:`class_FileDialog`"
 msgid ":ref:`class_FoldableContainer`"
 msgstr ":ref:`class_FoldableContainer`"
 
+msgid ":ref:`class_FoldableGroup`"
+msgstr ":ref:`class_FoldableGroup`"
+
 msgid ":ref:`class_GraphEdit`"
 msgstr ":ref:`class_GraphEdit`"
 
@@ -341,6 +355,36 @@ msgstr ":ref:`class_TreeItem`"
 
 msgid ":ref:`class_VSplitContainer`"
 msgstr ":ref:`class_VSplitContainer`"
+
+msgid "Disabling physics engines"
+msgstr "Disabilitare i motori di fisica"
+
+msgid "**Space savings:** Low to moderate"
+msgstr "**Risparmio di spazio:** Basso a moderato"
+
+msgid ""
+"If your 3D project uses Jolt Physics, you can disable GodotPhysics3D at "
+"compile-time as it will never be used:"
+msgstr ""
+"Se il proprio progetto 3D utilizza Jolt Physics, è possibile disabilitare "
+"GodotPhysics3D in fase di compilazione, poiché non sarà mai utilizzato:"
+
+msgid ""
+"Inversely, if your 3D project uses GodotPhysics3D, you can disable Jolt "
+"Physics at compile-time:"
+msgstr ""
+"Al contrario, se il proprio progetto 3D utilizza GodotPhysics3D, è possibile "
+"disabilitare Jolt Physics in fase di compilazione:"
+
+msgid ""
+"If your project uses 3D rendering but not physics (or 2D rendering but not "
+"physics), you can also disable 2D or 3D physics entirely. Most 3D projects "
+"can take advantage of this, as they don't make use of 2D physics:"
+msgstr ""
+"Se il proprio progetto utilizza il rendering 3D ma non la sua fisica (o il "
+"rendering 2D ma non la sua fisica), è possibile anche disabilitare "
+"completamente la fisica 2D o 3D. La maggior parte dei progetti 3D può trarne "
+"vantaggio, poiché non utilizzano la fisica 2D:"
 
 msgid "Disabling unwanted modules"
 msgstr "Disabilitare i moduli indesiderati"

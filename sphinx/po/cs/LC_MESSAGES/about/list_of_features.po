@@ -130,9 +130,6 @@ msgstr "**Funkce:**"
 msgid "Scene tree editor."
 msgstr "Editor stromu scén."
 
-msgid "Built-in script editor."
-msgstr "Vestavěný editor skriptů."
-
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
@@ -142,9 +139,6 @@ msgstr ""
 
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr ":ref:`Ladicí program <doc_debugger_panel>` pro GDScript."
-
-msgid "Support for debugging in threads is available since 4.2."
-msgstr "Od verze 4.2 je dostupná podpora ladění ve vláknech."
 
 msgid ""
 "Visual profiler with CPU and GPU time indications for each step of the "
@@ -165,27 +159,11 @@ msgstr "Opětovné načítání skriptů za běhu."
 msgid "Live scene editing."
 msgstr "Upravování scén za běhu."
 
-msgid ""
-"Changes will reflect in the editor and will be kept after closing the "
-"running project."
-msgstr ""
-"Změny se projeví v editoru a budou zachovány i po ukončení běžícího projektu."
+msgid "Move the in-editor camera and see the result in the running project."
+msgstr "Přesuňte kameru v editoru a uvidíte výsledek v běžícím projektu."
 
 msgid "Remote inspector."
 msgstr "Vzdálený inspektor."
-
-msgid ""
-"Changes won't reflect in the editor and won't be kept after closing the "
-"running project."
-msgstr ""
-"Změny se neprojeví v editoru a po ukončení běžícího projektu nebudou "
-"zachovány."
-
-msgid "Live camera replication."
-msgstr "Replikace kamery za běhu."
-
-msgid "Move the in-editor camera and see the result in the running project."
-msgstr "Přesuňte kameru v editoru a uvidíte výsledek v běžícím projektu."
 
 msgid "Built-in offline class reference documentation."
 msgstr "Vestavěná offline dokumentace tříd."
@@ -466,9 +444,6 @@ msgstr ""
 msgid "3D graphics"
 msgstr "3D grafika"
 
-msgid "HDR rendering with sRGB."
-msgstr "HDR vykreslování s sRGB."
-
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr ""
 "Perspektivní, ortografické a frustrum-offset (záběr ve tvaru jehlanu - "
@@ -551,28 +526,12 @@ msgstr "Barevný rozklad lze počítat na úrovni objektů nebo pixelů."
 msgid "**Real-time lighting:**"
 msgstr "**Osvětlení v reálném čase:**"
 
-msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr "Směrová světla (slunce / měsíc). Až 4 na scénu."
-
-msgid "Omnidirectional lights."
-msgstr "Všesměrová světla."
-
-msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr "Bodová světla s nastavitelným úhlem kužele a útlumem."
-
 msgid ""
 "Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
 "light basis."
 msgstr ""
 "Zrcadlové, nepřímé světlo a energii volumetrické mlhy lze nastavit pro každé "
 "světlo zvlášť."
-
-msgid ""
-"Adjustable light \"size\" for fake area lights (will also make shadows "
-"blurrier)."
-msgstr ""
-"Nastavitelná \"velikost\" světla pro falešná plošná světla (také více "
-"rozmaže stíny)."
 
 msgid ""
 "Optional distance fade system to fade distant lights and their shadows, "
@@ -593,35 +552,8 @@ msgstr ""
 "Seskupená světla také odstraňují jakákoli omezení na počet světel, která lze "
 "aplikovat na síť."
 
-msgid ""
-"When using the Mobile renderer, up to 8 omni lights and 8 spot lights can be "
-"displayed per mesh resource. Baked lighting can be used to overcome this "
-"limit if needed."
-msgstr ""
-"Při použití vykreslovacího nástroje Mobile lze na jeden zdroj sítě zobrazit "
-"až 8 všesměrových a 8 bodových světel. V případě potřeby lze pro překročení "
-"tohoto limitu použít vypálená světla."
-
 msgid "**Shadow mapping:**"
 msgstr "**Mapování stínů:**"
-
-msgid ""
-"*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
-"blending between splits."
-msgstr ""
-"*DirectionalLight (globální směrové světlo):* Ortogonální (nejrychlejší), 2-"
-"splitové a 4-splitové PSSM. Podporuje prolnutí mezi vrstvami."
-
-msgid ""
-"*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
-"Supports colored projector textures in the form of panoramas."
-msgstr ""
-"*OmniLight (všesměrové světlo):* Duální paraboloid (rychlý) nebo krychlová "
-"mapa (pomalejší, ale přesnější). Podporuje barevné projekční textury ve "
-"formě panoramat."
-
-msgid "*SpotLight:* Single texture. Supports colored projector textures."
-msgstr "*SpotLight:* Jedna textura. Podporuje barevné projekční textury."
 
 msgid ""
 "Shadow normal offset bias and shadow pancaking to decrease the amount of "
@@ -629,14 +561,6 @@ msgid ""
 msgstr ""
 "Preference offsetu stínových normál a palačinkování stínů pro snížení "
 "množství viditelných stínových artefaktů a odskakujících stínů."
-
-msgid ""
-":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
-"light size and distance from the surface the shadow is cast on."
-msgstr ""
-"Rozmazání stínů podobné :abbr:`PCSS (Percentage Closer Soft Shadows - Měkké "
-"stíny založené na procentu bližších)` založené na velikosti světla a "
-"vzdálenosti of povrchu, ne který je stín vržen."
 
 msgid "Adjustable shadow blur on a per-light basis."
 msgstr "Rozmazání stínů lze nastavit pro každé světlo zvlášť."
@@ -665,29 +589,6 @@ msgid ""
 msgstr ""
 "Podpora osvětlení dynamických objektů pomocí automatických a ručně "
 "umístěných sond."
-
-msgid ""
-"Optionally supports directional lighting and rough reflections based on "
-"spherical harmonics."
-msgstr ""
-"Volitelná podpora směrového osvětlení a hrubých odrazů založených na "
-"sférických harmonických funkcích."
-
-msgid ""
-"Lightmaps are baked on the GPU using compute shaders (much faster compared "
-"to CPU lightmapping). Baking can only be performed from the editor, not in "
-"exported projects."
-msgstr ""
-"Světelné mapy se vypalují pomocí GPU za pomoci výpočetních shaderů (mnohem "
-"rychlejší než vypalování na CPU). Vypalovat je možné pouze z editoru, nikoli "
-"v exportovaných projektech."
-
-msgid ""
-"Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
-"JNLM, or CPU/GPU-based denoising with OIDN."
-msgstr ""
-"Podpora :ref:`odstraňování šumu <doc_using_lightmap_gi_denoising>` na GPU s "
-"JNLM nebo na CPU/GPU s OIDN."
 
 msgid ""
 ":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
@@ -1036,21 +937,6 @@ msgstr ""
 "Možnosti filtrování jsou definovány pro jednotlivá použití, nikoli pro "
 "jednotlivé textury."
 
-msgid "**Texture compression:**"
-msgstr "**Komprese textur:**"
-
-msgid "Basis Universal (slow, but results in smaller files)."
-msgstr "Basis Universal (pomalá, ale vede k menším souborům)."
-
-msgid "BPTC for high-quality compression (not supported on macOS)."
-msgstr "BPTC pro vysoce kvalitní kompresi (není podporováno v systému macOS)."
-
-msgid "ETC2 (not supported on macOS)."
-msgstr "ETC2 (není podporováno v systému macOS)."
-
-msgid "S3TC (not supported on mobile/Web platforms)."
-msgstr "S3TC (není podporováno na mobilních/webových platformách)."
-
 msgid "**Antialiasing:**"
 msgstr "**Vyhlazování:**"
 
@@ -1102,13 +988,6 @@ msgstr ""
 "při zachování 2D vykreslování v původním měřítku. Toho lze využít ke "
 "zlepšení výkonu na systémech nižší třídy nebo ke zlepšení vizuálního "
 "zobrazení na systémech vyšší třídy."
-
-msgid ""
-"Resolution scaling uses bilinear filtering, AMD FidelityFX Super Resolution "
-"1.0 (FSR1) or AMD FidelityFX Super Resolution 2.2 (FSR2)."
-msgstr ""
-"Škálování rozlišení využívá bilineární filtrování, AMD FidelityFX Super "
-"Resolution 1.0 (FSR1) nebo AMD FidelityFX Super Resolution 2.2 (FSR2)."
 
 msgid ""
 "Texture mipmap LOD bias is adjusted automatically to improve quality at "
@@ -1200,10 +1079,6 @@ msgstr "Shadery"
 msgid "*2D:* Custom vertex, fragment, and light shaders."
 msgstr "*2D:* Vlastní vertexové, fragmentové a světelné shadery."
 
-msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
-msgstr ""
-"*3D:* Vlastní vertexové, fragmentové, světelné shadery a shadery oblohy."
-
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
@@ -1241,9 +1116,6 @@ msgid ""
 "Syntax inspired by Python. However, GDScript is **not** based on Python."
 msgstr ""
 "Syntaxe inspirovaná Pythonem. GDScript nicméně **není** založený na Pythonu."
-
-msgid "Syntax highlighting is provided on GitHub."
-msgstr "Zvýrazňování syntaxe je k dispozici na GitHubu."
 
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
@@ -1345,13 +1217,6 @@ msgstr ""
 "Podpora přesměrovatelných :ref:`zvukových sběrnic <doc_audio_buses>` a "
 "efektů s desítkami efektů předem zahrnutými."
 
-msgid ""
-"Support for polyphony (playing several sounds from a single "
-"AudioStreamPlayer node)."
-msgstr ""
-"Podpora polyfonie (přehrávání více zvuků z jediného uzlu AudioStreamPlayer - "
-"\"přehrávače zvukových streamů\")."
-
 msgid "Support for random volume and pitch."
 msgstr "Podpora náhodné hlasitosti a výšky tónu."
 
@@ -1364,13 +1229,6 @@ msgid ""
 msgstr ""
 "Podpora sekvenčního/náhodného výběru zvuků, včetně zamezení opakování při "
 "použití náhodného výběru."
-
-msgid ""
-"Listener2D and Listener3D nodes to listen from a position different than the "
-"camera."
-msgstr ""
-"Uzly Listener2D a Listener3D (\"2D/3D posluchač\") k poslechu z jiného "
-"místa, než kde se nachází kamera."
 
 msgid ""
 "Support for :ref:`procedural audio generation <class_AudioStreamGenerator>`."
@@ -1414,9 +1272,6 @@ msgstr "*Obrázky:* Viz :ref:`doc_importing_images`."
 
 msgid "*Audio:*"
 msgstr "*Zvuk:*"
-
-msgid "WAV with optional IMA-ADPCM compression."
-msgstr "WAV s volitelnou kompresí IMA-ADPCM."
 
 msgid "Ogg Vorbis."
 msgstr "Ogg Vorbis."
@@ -1505,19 +1360,6 @@ msgid ""
 msgstr ""
 "Kurzor myši může být viditelný, skrytý, zachycený nebo omezený na pohyb v "
 "okně."
-
-msgid ""
-"When captured, raw input will be used on Windows and Linux to sidestep the "
-"OS' mouse acceleration settings."
-msgstr ""
-"Při zachycení bude v systémech Windows a Linux použitý nezpracovaný vstup, "
-"aby se vyhnul nastavení akcelerace myši operačního systému."
-
-msgid "Gamepad input (up to 8 simultaneous controllers)."
-msgstr "Vstup z gamepadu (až 8 současně připojených ovladačů)."
-
-msgid "Pen/tablet input with pressure support."
-msgstr "Vstup pera/tabletu s podporou tlaku."
 
 msgid "Navigation"
 msgstr "Navigace"
@@ -1639,11 +1481,6 @@ msgstr ""
 msgid "Automatic UI mirroring for right-to-left locales."
 msgstr "Automatické zrcadlení UI pro pravolevé jazyky."
 
-msgid ""
-"Support for pseudolocalization to test your project for i18n-friendliness."
-msgstr ""
-"Podpora pseudolokalizace k testování připravenosti vašich projektů pro i18n."
-
 msgid "Windowing and OS integration"
 msgstr "Integrace oken a operačního systému"
 
@@ -1733,13 +1570,6 @@ msgstr ""
 "Podpora pro :ref:`Headsety založené na Androidu <doc_deploying_to_android>` "
 "při použití OpenXR skrze zásuvný modul."
 
-msgid ""
-"Including support for popular stand alone headsets like the Meta Quest 1/2/3 "
-"and Pro, Pico 4, Magic Leap 2, and Lynx R1."
-msgstr ""
-"Včetně podpory populárních samostatných headsetů jako Meta Quest 1/2/3 a "
-"Pro, Pico 4, Magic Leap 2 a Lynx R1."
-
 msgid "Other devices supported through an XR plugin structure."
 msgstr ""
 "Další zařízení jsou podporována prostřednictvím XR struktury zásuvných "
@@ -1772,21 +1602,6 @@ msgstr "Tlačítka."
 msgid "Checkboxes, check buttons, radio buttons."
 msgstr "Zaškrtávací políčka, zaškrtávací tlačítka, přepínací tlačítka."
 
-msgid ""
-"Text entry using :ref:`class_LineEdit` (single line) "
-"and :ref:`class_TextEdit` (multiple lines). TextEdit also supports code "
-"editing features such as displaying line numbers and syntax highlighting."
-msgstr ""
-"Zadání textu pomocí :ref:`class_LineEdit` (jeden řádek) "
-"a :ref:`class_TextEdit` (více řádků). TextEdit také podporuje funkce úpravy "
-"kódu, jako je zobrazení čísel řádků a zvýraznění syntaxe."
-
-msgid ""
-"Dropdown menus using :ref:`class_PopupMenu` and :ref:`class_OptionButton`."
-msgstr ""
-"Rozbalovací nabídky pomocí :ref:`class_PopupMenu` "
-"a :ref:`class_OptionButton`."
-
 msgid "Scrollbars."
 msgstr "Posuvníky."
 
@@ -1802,9 +1617,6 @@ msgstr ""
 
 msgid "Trees (can also be used to represent tables)."
 msgstr "Stromy (mohou být také použity pro reprezentaci tabulek)."
-
-msgid "Color picker with RGB and HSV modes."
-msgstr "Výběr barvy s režimy RGB a HSV."
 
 msgid "Controls can be rotated and scaled."
 msgstr "Ovládací prvky lze otáčet a měnit jejich měřítko."

@@ -51,6 +51,12 @@ msgstr "Creazione di punti di emissione"
 msgid "Create particle emission points..."
 msgstr "Creare punti di emissione di particelle..."
 
+msgid "Select mesh for emission"
+msgstr "Selezionare una mesh per le emissioni"
+
+msgid "\\...from a mesh instance as the source"
+msgstr "\\...da un'istanza di mesh come sorgente"
+
 msgid "Set emission density"
 msgstr "Impostare la densità di emissione"
 
@@ -128,6 +134,22 @@ msgstr "Texture di forma di emissione"
 
 msgid "Emission textures"
 msgstr "Texture di emissione"
+
+msgid ""
+"All the data for complex particle emission shapes is stored in a set of "
+"textures. How many, depends on the type of emission shape you use. If you "
+"set the ``Shape`` property in the ``Emission Shape`` group on the particle "
+"process material to ``Points``, you have access to 2 texture properties, the "
+"``Point Texture`` and the ``Color Texture``. Set it to ``Directed Points`` "
+"and there is a third property called ``Normal Texture``."
+msgstr ""
+"Tutti i dati per le forme complesse di emissione delle particelle sono "
+"memorizzati in un insieme di texture. Il numero di texture dipende dal tipo "
+"di forma di emissione utilizzato. Se imposti la proprietà ``Shape`` nel "
+"gruppo ``Emission Shape`` del materiale di processo delle particelle su "
+"``Points``, hai accesso a due proprietà di texture: ``Point Texture`` e "
+"``Color Texture``. Impostandola su ``Directed Points``, appare una terza "
+"proprietà chiamata ``Normal Texture``."
 
 msgid ""
 "``Point Texture`` contains all possible emission points that were generated "

@@ -141,9 +141,6 @@ msgstr ""
 msgid "To notarize exported app"
 msgstr "Нотариально заверить экспортированное приложение"
 
-msgid "Select ``Xcode altool`` in the ``Notarization > Notarization`` option."
-msgstr "Выберите ``Xcode altool`` в опции ``Notarization > Notarization``."
-
 msgid "Disable the ``Debugging`` entitlement."
 msgstr "Отключить право ``Debugging``."
 
@@ -196,30 +193,11 @@ msgstr ""
 "или Windows"
 
 msgid ""
-"Install `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/"
-"tree/main/apple-codesign>`__, and configure the path to ``rcodesign`` in the "
-"``Editor Settings > Export > macOS > rcodesign``."
-msgstr ""
-"Установите `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-"
-"rs/tree/main/apple-codesign>`__ и настройте путь к ``rcodesign`` в ``Editor "
-"Settings > Export > macOS > rcodesign``."
-
-msgid ""
-"Select ``PyOxidizer rcodesign`` in the ``Code Signing > Codesign`` option."
-msgstr "Выберите ``PyOxidizer rcodesign`` в опции ``Code Signing > Codesign``."
-
-msgid ""
 "Set valid Apple ID PKCS #12 certificate file and password in the ``Code "
 "Signing`` section."
 msgstr ""
 "Укажите действительный файл сертификата Apple ID PKCS #12 и пароль в разделе "
 "``Code Signing``."
-
-msgid ""
-"Select ``PyOxidizer rcodesign`` in the ``Notarization > Notarization`` "
-"option."
-msgstr ""
-"Выберите ``PyOxidizer rcodesign`` в опции ``Notarization > Notarization``."
 
 msgid ""
 "Set valid `App Store Connect <https://developer.apple.com/documentation/"
@@ -311,10 +289,6 @@ msgstr ""
 msgid "This option is visible only when signing with Xcode codesign."
 msgstr "Эта опция видна только при подписании с помощью Xcode codesign."
 
-msgid "These options are visible only when signing with PyOxidizer rcodesign."
-msgstr ""
-"Эти параметры видны только при подписании с помощью PyOxidizer rcodesign."
-
 msgid "Notarization Options"
 msgstr "Параметры нотаризации"
 
@@ -378,11 +352,6 @@ msgid ""
 msgstr ""
 "Вам следует указать либо имя/пароль Apple ID, либо UUID/ключ API App Store "
 "Connect."
-
-msgid "These options are visible only when notarizing with Xcode altool."
-msgstr ""
-"Эти параметры видны только при нотариальном подтверждении с помощью Xcode "
-"altool."
 
 msgid ""
 "See `Notarizing macOS Software Before Distribution <https://"

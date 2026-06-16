@@ -113,9 +113,6 @@ msgstr "**功能：**"
 msgid "Scene tree editor."
 msgstr "場景樹編輯器。"
 
-msgid "Built-in script editor."
-msgstr "內建腳本編輯器。"
-
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
@@ -125,9 +122,6 @@ msgstr ""
 
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript :ref:`除錯工具 <doc_debugger_panel>` 。"
-
-msgid "Support for debugging in threads is available since 4.2."
-msgstr "從 4.2 版本開始，已支援線程中的除錯功能。"
 
 msgid ""
 "Visual profiler with CPU and GPU time indications for each step of the "
@@ -147,24 +141,11 @@ msgstr "即時腳本重載。"
 msgid "Live scene editing."
 msgstr "即時場景編輯。"
 
-msgid ""
-"Changes will reflect in the editor and will be kept after closing the "
-"running project."
-msgstr "更改將反應到編輯器上，並會在正在執行的專案關閉後保留。"
+msgid "Move the in-editor camera and see the result in the running project."
+msgstr "移動編輯器中的相機，並在執行中專案內檢視結果。"
 
 msgid "Remote inspector."
 msgstr "遠端檢視器。"
-
-msgid ""
-"Changes won't reflect in the editor and won't be kept after closing the "
-"running project."
-msgstr "更改將不會反應到編輯器上，且關閉正在執行的專案後將不會保留。"
-
-msgid "Live camera replication."
-msgstr "即時相機複製。"
-
-msgid "Move the in-editor camera and see the result in the running project."
-msgstr "移動編輯器中的相機，並在執行中專案內檢視結果。"
 
 msgid "Built-in offline class reference documentation."
 msgstr "內寘離線類參攷檔案。"
@@ -417,9 +398,6 @@ msgstr "碰撞幾何 (可手動繪製或從編輯器中自 Sprite 產生)。"
 msgid "3D graphics"
 msgstr "3D 圖形"
 
-msgid "HDR rendering with sRGB."
-msgstr "使用 sRGB 進行 HDR 算繪。"
-
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "透視法、正視投影與錐臺偏移相機。"
 
@@ -493,24 +471,10 @@ msgstr "晃動可依像素級別或物件級別來判斷。"
 msgid "**Real-time lighting:**"
 msgstr "**即時光照：**"
 
-msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr "有向光照 (太陽/月亮)。每個場景最多可有 4 個。"
-
-msgid "Omnidirectional lights."
-msgstr "全向光照。"
-
-msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr "有可調整圓錐角與衰減的聚光。"
-
 msgid ""
 "Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
 "light basis."
 msgstr "可以在每個光源的基礎上調整鏡面反射、間接光和體積霧的能量。"
-
-msgid ""
-"Adjustable light \"size\" for fake area lights (will also make shadows "
-"blurrier)."
-msgstr "可調節的燈光 \"大小\" 來説明虛擬區域打光（也會使陰影更模糊）。"
 
 msgid ""
 "Optional distance fade system to fade distant lights and their shadows, "
@@ -528,46 +492,14 @@ msgstr ""
 "當使用 Forward+backend （桌面上的預設設定）時，燈光將使用集群前向優化進行算"
 "繪，以降低其單獨成本。集群算繪還取消了對網格上可以使用的燈光數量的任何限制。"
 
-msgid ""
-"When using the Mobile renderer, up to 8 omni lights and 8 spot lights can be "
-"displayed per mesh resource. Baked lighting can be used to overcome this "
-"limit if needed."
-msgstr ""
-"當使用行動裝置算繪器時，每個網格資源最多可顯示 8 個泛光源和 8 個聚光燈。如有"
-"需要，可使用烘焙照明來克服此限制。"
-
 msgid "**Shadow mapping:**"
 msgstr "**陰影對應：**"
-
-msgid ""
-"*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
-"blending between splits."
-msgstr ""
-"**DirectionalLight:** 正交 (最快), PSSM 2-Split 與 4-Split。支援在 Split (切"
-"割) 間混合。"
-
-msgid ""
-"*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
-"Supports colored projector textures in the form of panoramas."
-msgstr ""
-"**OmniLight:** Dual Paraboloid (較快) 或 Cubemap (較慢但較精確)。支援 "
-"Panoramas 格式的色彩透射紋理 (Colored Projector Texture)。"
-
-msgid "*SpotLight:* Single texture. Supports colored projector textures."
-msgstr "**SpotLight:** 單一紋理。"
 
 msgid ""
 "Shadow normal offset bias and shadow pancaking to decrease the amount of "
 "visible shadow acne and peter-panning."
 msgstr ""
 "陰影通常情況下會偏置補償和陰影平移，以減少可見的陰影失真和陰影懸浮的數量。"
-
-msgid ""
-":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
-"light size and distance from the surface the shadow is cast on."
-msgstr ""
-"類似 :abbr:`PCSS (Percentage Closer Soft Shadows)` 的陰影模糊效果，根據光源大"
-"小以及陰影投射到表面的距離進行計算。"
 
 msgid "Adjustable shadow blur on a per-light basis."
 msgstr "晃動可依像素級別或物件級別來判斷。"
@@ -592,26 +524,6 @@ msgstr ""
 msgid ""
 "Supports lighting dynamic objects using automatic and manually placed probes."
 msgstr "支援使用基於八叉樹的自動系統照明動態對象。 不需要手動放置探頭。"
-
-msgid ""
-"Optionally supports directional lighting and rough reflections based on "
-"spherical harmonics."
-msgstr "可選支援基於球諧函式的平行光和粗糙反射。"
-
-msgid ""
-"Lightmaps are baked on the GPU using compute shaders (much faster compared "
-"to CPU lightmapping). Baking can only be performed from the editor, not in "
-"exported projects."
-msgstr ""
-"光照貼圖在 GPU 上使用計算著色器烘焙（與 CPU 計算光照貼圖相比速度更快）。烘焙"
-"只能在編輯器中進行，不能在匯出的專案中進行。"
-
-msgid ""
-"Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
-"JNLM, or CPU/GPU-based denoising with OIDN."
-msgstr ""
-"支持使用 JNLM 進行基於 GPU 的 :ref:`去噪 <doc_using_lightmap_gi_denoising>`，"
-"或使用 OIDN 進行基於 CPU/GPU 的去噪。"
 
 msgid ""
 ":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
@@ -907,21 +819,6 @@ msgid ""
 "Filtering options are defined on a per-use basis, not a per-texture basis."
 msgstr "晃動可依像素級別或物件級別來判斷。"
 
-msgid "**Texture compression:**"
-msgstr "**紋理壓縮：**"
-
-msgid "Basis Universal (slow, but results in smaller files)."
-msgstr "Basis Universal（速度較慢，但檔較小）。"
-
-msgid "BPTC for high-quality compression (not supported on macOS)."
-msgstr "**GLES3:** BPTC 以獲得高品質壓縮 (在 macOS 上不支援)。"
-
-msgid "ETC2 (not supported on macOS)."
-msgstr "**GLES3:** ETC2 (在 macOS 上不支援)。"
-
-msgid "S3TC (not supported on mobile/Web platforms)."
-msgstr "**GLES3:** S3TC (在行動裝置與網頁平台上不支援)。"
-
 msgid "**Antialiasing:**"
 msgstr "**抗鋸齒：**"
 
@@ -970,13 +867,6 @@ msgid ""
 msgstr ""
 "支援 :ref:`以較低解析度算繪 3D <doc_resolution_scaling>` ，同時保持原始比例"
 "的 2D 算繪。 這可用於提高低端系統的性能或改善高端系統的視覺效果。"
-
-msgid ""
-"Resolution scaling uses bilinear filtering, AMD FidelityFX Super Resolution "
-"1.0 (FSR1) or AMD FidelityFX Super Resolution 2.2 (FSR2)."
-msgstr ""
-"解析度縮放可以選擇雙線性過濾或 AMD FidelityFX Super Resolution 1.0 (FSR1) 或 "
-"AMD FidelityFX Super Resolution 2.2 (FSR2)。"
 
 msgid ""
 "Texture mipmap LOD bias is adjusted automatically to improve quality at "
@@ -1054,9 +944,6 @@ msgstr "著色器"
 msgid "*2D:* Custom vertex, fragment, and light shaders."
 msgstr "**2D：** 自定頂點、Fragment 與光照著色器。"
 
-msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
-msgstr "**3D：** 自定頂點、Fragment、光照與天空著色器。"
-
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
@@ -1100,9 +987,6 @@ msgstr ""
 msgid ""
 "Syntax inspired by Python. However, GDScript is **not** based on Python."
 msgstr "語法的靈感來自 Python。然而 GDScript **不是** 基於 Python。"
-
-msgid "Syntax highlighting is provided on GitHub."
-msgstr "在 GitHub 上有語法醒目提示。"
 
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
@@ -1196,11 +1080,6 @@ msgstr ""
 "支援可重新導向的 :ref:`音訊匯流排 <doc_audio_buses>` 與特效，並包含數十種特"
 "效。"
 
-msgid ""
-"Support for polyphony (playing several sounds from a single "
-"AudioStreamPlayer node)."
-msgstr "支援複調（使用單個 AudioStreamPlayer 節點播放多個聲音）。"
-
 msgid "Support for random volume and pitch."
 msgstr "支援視覺著色器外掛。"
 
@@ -1211,11 +1090,6 @@ msgid ""
 "Support for sequential/random sample selection, including repetition "
 "prevention when using random sample selection."
 msgstr "支援順序 / 隨機取樣，包括在隨機取樣時防止重複。"
-
-msgid ""
-"Listener2D and Listener3D nodes to listen from a position different than the "
-"camera."
-msgstr "Listener3D 節點可用於在 3D 空間中以與相機的位置進行監聽。"
 
 msgid ""
 "Support for :ref:`procedural audio generation <class_AudioStreamGenerator>`."
@@ -1256,9 +1130,6 @@ msgstr "*圖片：* 請參閱 :ref:`doc_importing_images`。"
 
 msgid "*Audio:*"
 msgstr "**音訊:**"
-
-msgid "WAV with optional IMA-ADPCM compression."
-msgstr "WAV，可選擇是否使用 IMA-ADPCM 壓縮。"
 
 msgid "Ogg Vorbis."
 msgstr "Ogg Vorbis。"
@@ -1337,19 +1208,6 @@ msgid ""
 "The mouse cursor can be visible, hidden, captured or confined within the "
 "window."
 msgstr "可將滑鼠遊標設為可見、隱藏、捕捉、或限制於視窗內。"
-
-msgid ""
-"When captured, raw input will be used on Windows and Linux to sidestep the "
-"OS' mouse acceleration settings."
-msgstr ""
-"捕捉滑鼠輸入時，在 Windows 與 Linux 上會使用原始輸入，以繞過作業系統的滑鼠加"
-"速設定。"
-
-msgid "Gamepad input (up to 8 simultaneous controllers)."
-msgstr "遊戲控制器輸入 (同時支援最多 8 組控制器)。"
-
-msgid "Pen/tablet input with pressure support."
-msgstr "具有感壓支援的繪圖筆／繪圖板輸入。"
 
 msgid "Navigation"
 msgstr "導覽"
@@ -1457,10 +1315,6 @@ msgstr ""
 msgid "Automatic UI mirroring for right-to-left locales."
 msgstr "用於從右到左區域設定的自動UI鏡像。"
 
-msgid ""
-"Support for pseudolocalization to test your project for i18n-friendliness."
-msgstr "支援偽當地語系化，以測試您的專案對 i18n 的友好性。"
-
 msgid "Windowing and OS integration"
 msgstr "視窗環境與作業系統整合"
 
@@ -1541,12 +1395,6 @@ msgstr ""
 "透過外掛程式支援使用 OpenXR 的 :ref:`Android 平台頭戴式裝置 "
 "<doc_deploying_to_android>`。"
 
-msgid ""
-"Including support for popular stand alone headsets like the Meta Quest 1/2/3 "
-"and Pro, Pico 4, Magic Leap 2, and Lynx R1."
-msgstr ""
-"包含對 Meta Quest 1/2/3 Pro、Magic Leap 2 、Lynx R1等流行頭戴式裝置的支援。"
-
 msgid "Out of the box limited support for visionOS Apple headsets."
 msgstr "對 Apple 的 visionOS 頭戴式裝置提供開箱即用但有限的支援。"
 
@@ -1582,19 +1430,6 @@ msgstr "按鈕。"
 msgid "Checkboxes, check buttons, radio buttons."
 msgstr "勾選框、勾選按鈕、單選按鈕。"
 
-msgid ""
-"Text entry using :ref:`class_LineEdit` (single line) "
-"and :ref:`class_TextEdit` (multiple lines). TextEdit also supports code "
-"editing features such as displaying line numbers and syntax highlighting."
-msgstr ""
-"使用 :ref:`class_LineEdit` （單行）和 :ref:`class_TextEdit` （多行）進行文字"
-"輸入。TextEdit 還支援程式碼編輯功能，例如顯示行號和語法高亮。"
-
-msgid ""
-"Dropdown menus using :ref:`class_PopupMenu` and :ref:`class_OptionButton`."
-msgstr ""
-"使用 :ref:`class_PopupMenu` 與 :ref:`class_OptionButton` 製作下拉選單。"
-
 msgid "Scrollbars."
 msgstr "滾動條。"
 
@@ -1610,9 +1445,6 @@ msgstr ""
 
 msgid "Trees (can also be used to represent tables)."
 msgstr "樹狀圖 (也可以用於顯示表格)。"
-
-msgid "Color picker with RGB and HSV modes."
-msgstr "支援 RGB 及 HSV 模式的取色器。"
 
 msgid "Controls can be rotated and scaled."
 msgstr "Control 節點可旋轉與縮放。"

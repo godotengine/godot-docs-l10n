@@ -17,5 +17,23 @@ msgstr "Debug su macOS"
 msgid "Debugging Godot editor"
 msgstr "Debug dell'editor di Godot"
 
+msgid ""
+"Create an ``editor.entitlements`` text file with the following contents:"
+msgstr ""
+"Crea un file di testo denominato ``editor.entitlements`` con il seguente "
+"contenuto:"
+
+msgid "Then use the following command to re-sign the editor:"
+msgstr "Poi utilizza il seguente comando per firmare nuovamente l'editor:"
+
 msgid "Debugging exported project"
 msgstr "Debug di un progetto esportato"
+
+msgid ""
+"To allow debugging, select the ``codesign\\debugging`` "
+"(``com.apple.security.get-task-allow``) entitlement during the export. When "
+"it is selected, notarization is not supported and should be disabled."
+msgstr ""
+"Per consentire il debug, selezionare il diritto ``codesign\\debugging`` "
+"(``com.apple.security.get-task-allow``) durante l'esportazione. Quando è "
+"selezionato, l'autenticazione non è supportata e deve essere disabilitata."

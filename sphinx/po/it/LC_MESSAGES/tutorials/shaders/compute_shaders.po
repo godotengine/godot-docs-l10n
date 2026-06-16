@@ -17,6 +17,70 @@ msgstr "Ora cominciamo creando un breve shader di calcolo."
 msgid "Let's take a look at this compute shader code:"
 msgstr "Diamo un'occhiata a questo codice per uno shader di calcolo:"
 
+msgid "These two lines communicate two things:"
+msgstr "Queste due righe comunicano due cose:"
+
+msgid ""
+"The following code is a compute shader. This is a Godot-specific hint that "
+"is needed for the editor to properly import the shader file."
+msgstr ""
+"Il codice seguente è uno shader di calcolo. Questo è un suggerimento "
+"specifico di Godot necessario affinché l'editor importi correttamente il "
+"file dello shader."
+
+msgid "The code is using GLSL version 450."
+msgstr "Il codice utilizza la versione 450 di GLSL."
+
+msgid ""
+"You should never have to change these two lines for your custom compute "
+"shaders."
+msgstr ""
+"Non dovresti mai aver bisogno di cambiare queste due righe per i tuoi shader "
+"di calcolo personalizzati."
+
+msgid ""
+"To continue, write the code above into your newly created "
+"``compute_example.glsl`` file."
+msgstr ""
+"Per continuare, inserisci il codice sopra riportato nel file "
+"``compute_example.glsl`` appena creato."
+
+msgid ""
+"Now to execute our shader we need a local :ref:`class_RenderingDevice` which "
+"can be created using the :ref:`class_RenderingServer`:"
+msgstr ""
+"Ora, per eseguire il nostro shader, abbiamo bisogno di "
+"un :ref:`class_RenderingDevice` locale che si può creare attraverso "
+"il :ref:`class_RenderingServer`:"
+
+msgid ""
+"Local RenderingDevices cannot be debugged using tools such as `RenderDoc "
+"<https://renderdoc.org/>`__."
+msgstr ""
+"I RenderingDevice locali non si possono sottoporre a debug tramite strumenti "
+"come `RenderDoc <https://renderdoc.org/>`__."
+
+msgid "The steps we need to do to compute our result are:"
+msgstr "I passaggi necessari per calcolare il risultato sono i seguenti:"
+
+msgid "Create a new pipeline."
+msgstr "Creare una nuova pipeline."
+
+msgid "Begin a list of instructions for our GPU to execute."
+msgstr "Iniziare un elenco di istruzioni che la nostra GPU dovrà eseguire."
+
+msgid "Bind our compute list to our pipeline"
+msgstr "Associare il nostro elenco di calcolo alla nostra pipeline"
+
+msgid "Bind our buffer uniform to our pipeline"
+msgstr "Associare il nostro buffer di uniformi alla nostra pipeline"
+
+msgid "Specify how many workgroups to use"
+msgstr "Specificare quanti gruppi di lavoro utilizzare"
+
+msgid "End the list of instructions"
+msgstr "Finire l'elenco di istruzioni"
+
 msgid "Freeing memory"
 msgstr "Liberare la memoria"
 

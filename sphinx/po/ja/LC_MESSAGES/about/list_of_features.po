@@ -131,9 +131,6 @@ msgstr "**機能:**"
 msgid "Scene tree editor."
 msgstr "シーンツリー エディタ。"
 
-msgid "Built-in script editor."
-msgstr "内蔵スクリプトエディタ。"
-
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
@@ -143,9 +140,6 @@ msgstr ""
 
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript\\ :ref:`デバッガー <doc_debugger_panel>`\\ 。"
-
-msgid "Support for debugging in threads is available since 4.2."
-msgstr "スレッドでのデバッグのサポートは4.2から利用できます。"
 
 msgid ""
 "Visual profiler with CPU and GPU time indications for each step of the "
@@ -167,26 +161,11 @@ msgstr "実行時スクリプト再読み込み。"
 msgid "Live scene editing."
 msgstr "実行時シーン編集。"
 
-msgid ""
-"Changes will reflect in the editor and will be kept after closing the "
-"running project."
-msgstr "変更はエディタに反映され、実行プロジェクトを閉じた後も保存されます。"
+msgid "Move the in-editor camera and see the result in the running project."
+msgstr "エディタ内のカメラを移動し、実行プロジェクトで結果を確認してください。"
 
 msgid "Remote inspector."
 msgstr "リモート インスペクタ。"
-
-msgid ""
-"Changes won't reflect in the editor and won't be kept after closing the "
-"running project."
-msgstr ""
-"変更内容はエディタに反映されず、実行中のプロジェクトを閉じた後は保持されませ"
-"ん。"
-
-msgid "Live camera replication."
-msgstr "実行時カメラ複製。"
-
-msgid "Move the in-editor camera and see the result in the running project."
-msgstr "エディタ内のカメラを移動し、実行プロジェクトで結果を確認してください。"
 
 msgid "Built-in offline class reference documentation."
 msgstr "内蔵かつオフラインで読めるクラスリファレンスドキュメント。"
@@ -464,9 +443,6 @@ msgstr "衝突ポリゴン (手動で描いたり、エディタ内でスプラ�
 msgid "3D graphics"
 msgstr "3Dグラフィックス"
 
-msgid "HDR rendering with sRGB."
-msgstr "sRGBによるHDRレンダリング。"
-
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "透視投影、平行投影、視錐台オフセットカメラ。"
 
@@ -545,26 +521,12 @@ msgstr "ディザリングは、ピクセル単位またはオブジェクト単
 msgid "**Real-time lighting:**"
 msgstr "**リアルタイム照明:**"
 
-msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr "指向性ライト (太陽 / 月)。1 シーンにつき 4 個まで。"
-
-msgid "Omnidirectional lights."
-msgstr "全方位ライト。"
-
-msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr "コーンの角度および減衰量を調整できるスポットライト。"
-
 msgid ""
 "Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
 "light basis."
 msgstr ""
 "鏡面光、間接光、ボリューメトリックフォグのエネルギーは、ライトごとに調整可"
 "能。"
-
-msgid ""
-"Adjustable light \"size\" for fake area lights (will also make shadows "
-"blurrier)."
-msgstr "疑似エリアライトの \"サイズ\" を調整可能 (影もぼやけます)。"
 
 msgid ""
 "Optional distance fade system to fade distant lights and their shadows, "
@@ -584,34 +546,8 @@ msgstr ""
 "タ化されたレンダリングでは、メッシュで使用できるライトの数の制限も解除されま"
 "す。"
 
-msgid ""
-"When using the Mobile renderer, up to 8 omni lights and 8 spot lights can be "
-"displayed per mesh resource. Baked lighting can be used to overcome this "
-"limit if needed."
-msgstr ""
-"Mobile レンダラーを使用する場合、メッシュリソースごとに最大 8 つのオムニライ"
-"トと 8 つのスポットライトを表示できます。ベイクしたライティングは、必要に応じ"
-"てこの制限を克服するために使用できます。"
-
 msgid "**Shadow mapping:**"
 msgstr "**シャドウマッピング:**"
-
-msgid ""
-"*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
-"blending between splits."
-msgstr ""
-"*DirectionLight:* 直交 (最速)、PSSM 2分割および4分割。分割間におけるブレンド"
-"に対応しています。"
-
-msgid ""
-"*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
-"Supports colored projector textures in the form of panoramas."
-msgstr ""
-"*OmniLight:* デュアル パラボロイド (高速) またはキューブマップ (低速だがより"
-"正確)。パノラマの形でカラープロジェクターテクスチャに対応。"
-
-msgid "*SpotLight:* Single texture. Supports colored projector textures."
-msgstr "*SpotLight:* 単一テクスチャ。色付き投影テクスチャに対応。"
 
 msgid ""
 "Shadow normal offset bias and shadow pancaking to decrease the amount of "
@@ -619,13 +555,6 @@ msgid ""
 msgstr ""
 "シャドウ法線オフセットバイアスとシャドウパンケーキは、目に見えるシャドウアク"
 "ネとピーターパンの量を減らします。"
-
-msgid ""
-":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
-"light size and distance from the surface the shadow is cast on."
-msgstr ""
-":abbr:`PCSS (Percentage Closer Soft Shadows)` に似たシャドウブラーで、ライト"
-"のサイズとシャドウが投影されるサーフェスからの距離に基づいています。"
 
 msgid "Adjustable shadow blur on a per-light basis."
 msgstr "ライトごとに調節可能なシャドウブラー。"
@@ -653,29 +582,6 @@ msgid ""
 msgstr ""
 "自動および手動で配置されたプローブによる、動的オブジェクトのライティングが可"
 "能。"
-
-msgid ""
-"Optionally supports directional lighting and rough reflections based on "
-"spherical harmonics."
-msgstr ""
-"オプションで、球面調和関数に基づく指向性ライティングと粗い反射をサポートしま"
-"す。"
-
-msgid ""
-"Lightmaps are baked on the GPU using compute shaders (much faster compared "
-"to CPU lightmapping). Baking can only be performed from the editor, not in "
-"exported projects."
-msgstr ""
-"ライトマップはコンピュートシェーダーを利用してGPUでベイクされます (CPUライト"
-"マッピングよりも高速です)。ベイクはエクスポートされたプロジェクトではなく、エ"
-"ディタ内でのみ実行できます。"
-
-msgid ""
-"Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
-"JNLM, or CPU/GPU-based denoising with OIDN."
-msgstr ""
-"GPUベースの :ref:`ノイズ除去 (denoising) <doc_using_lightmap_gi_denoising>` "
-"(JNLMを使用)、またはCPU/GPUベースのノイズ除去 (OIDNを使用) をサポートします。"
 
 msgid ""
 ":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
@@ -1013,21 +919,6 @@ msgid ""
 msgstr ""
 "フィルタリング機能は、テクスチャ単位ではなく使用されるごとに定義されます。"
 
-msgid "**Texture compression:**"
-msgstr "**テクスチャ圧縮:**"
-
-msgid "Basis Universal (slow, but results in smaller files)."
-msgstr "Basis Universal (遅いものの、より小さいファイルになる)。"
-
-msgid "BPTC for high-quality compression (not supported on macOS)."
-msgstr "高品質圧縮のためのBPTC (macOSには未対応)。"
-
-msgid "ETC2 (not supported on macOS)."
-msgstr "ETC2 (macOSには未対応)。"
-
-msgid "S3TC (not supported on mobile/Web platforms)."
-msgstr "S3TC (モバイル / Webプラットフォームでは非対応)。"
-
 msgid "**Antialiasing:**"
 msgstr "**アンチエイリアシング:**"
 
@@ -1080,14 +971,6 @@ msgstr ""
 "<doc_resolution_scaling>` する機能をサポートしています。この機能は、低スペッ"
 "クのシステムでパフォーマンスを向上させたり、高スペックのシステムでビジュアル"
 "を改善したりするために使用できます。"
-
-msgid ""
-"Resolution scaling uses bilinear filtering, AMD FidelityFX Super Resolution "
-"1.0 (FSR1) or AMD FidelityFX Super Resolution 2.2 (FSR2)."
-msgstr ""
-"解像度スケーリングでは、バイリニアフィルタリング、AMDのFidelityFX Super "
-"Resolution 1.0 (FSR1)、またはAMDのFidelityFX Super Resolution 2.2 (FSR2) が使"
-"用されます。"
 
 msgid ""
 "Texture mipmap LOD bias is adjusted automatically to improve quality at "
@@ -1172,9 +1055,6 @@ msgstr "シェーダー"
 msgid "*2D:* Custom vertex, fragment, and light shaders."
 msgstr "*2D:* 頂点、フラグメント、ライト用のカスタムのシェーダ。"
 
-msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
-msgstr "*3D:* 頂点、フラグメント、ライト、天球用のカスタムのシェーダ。"
-
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
@@ -1226,9 +1106,6 @@ msgid ""
 msgstr ""
 "Pythonにインスパイアされた文法。 しかし、GDScript は Python を基に**してはい"
 "ません**。"
-
-msgid "Syntax highlighting is provided on GitHub."
-msgstr "GitHubでのシンタックスハイライトに対応。"
 
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
@@ -1332,13 +1209,6 @@ msgstr ""
 "再ルーティング可能な :ref:`オーディオバス <doc_audio_buses>` と数十種類のエ"
 "フェクトをサポートしています。"
 
-msgid ""
-"Support for polyphony (playing several sounds from a single "
-"AudioStreamPlayer node)."
-msgstr ""
-"ポリフォニー (AudioStreamPlayerノードから複数の音声を同時に再生する機能) をサ"
-"ポートしています。"
-
 msgid "Support for random volume and pitch."
 msgstr "ランダムボリュームとピッチをサポート。"
 
@@ -1351,12 +1221,6 @@ msgid ""
 msgstr ""
 "ランダム、または、連続的なサンプル選択や、ランダムサンプル選択時に重複を防止"
 "します。"
-
-msgid ""
-"Listener2D and Listener3D nodes to listen from a position different than the "
-"camera."
-msgstr ""
-"カメラとは異なる位置からリスニングするためのListener2DとListener3Dノード。"
 
 msgid ""
 "Support for :ref:`procedural audio generation <class_AudioStreamGenerator>`."
@@ -1405,9 +1269,6 @@ msgstr "*画像:* :ref:`doc_importing_images` を参照。"
 
 msgid "*Audio:*"
 msgstr "*オーディオ:*"
-
-msgid "WAV with optional IMA-ADPCM compression."
-msgstr "オプションの IMA-ADPCM 圧縮を使用した WAV。"
 
 msgid "Ogg Vorbis."
 msgstr "Ogg Vorbis。"
@@ -1498,19 +1359,6 @@ msgid ""
 msgstr ""
 "マウスカーソルは、ウィンドウ内で表示、非表示、キャプチャ、または閉じ込めるこ"
 "とができます。"
-
-msgid ""
-"When captured, raw input will be used on Windows and Linux to sidestep the "
-"OS' mouse acceleration settings."
-msgstr ""
-"キャプチャすると、WindowsやLinuxでは未加工の入力値が使用され、OSのマウスアク"
-"セラレーション設定を回避することができます。"
-
-msgid "Gamepad input (up to 8 simultaneous controllers)."
-msgstr "ゲームパッド入力 (最大8台同時使用コントローラ)。"
-
-msgid "Pen/tablet input with pressure support."
-msgstr "筆圧対応のペン/タブレット入力。"
 
 msgid "Navigation"
 msgstr "ナビゲーション"
@@ -1646,12 +1494,6 @@ msgstr ""
 msgid "Automatic UI mirroring for right-to-left locales."
 msgstr "右から左に読むロケールのための UI 自動ミラーリング。"
 
-msgid ""
-"Support for pseudolocalization to test your project for i18n-friendliness."
-msgstr ""
-"プロジェクトの国際化 (i18n) 対応のしやすさをテストするための疑似ローカライ"
-"ゼーションをサポート。"
-
 msgid "Windowing and OS integration"
 msgstr "ウィンドウおよび OS の統合"
 
@@ -1781,13 +1623,6 @@ msgstr ""
 "プラグインを介して、OpenXRを採用する :ref:`Androidベースのヘッドセット "
 "<doc_deploying_to_android>` に対応。"
 
-msgid ""
-"Including support for popular stand alone headsets like the Meta Quest 1/2/3 "
-"and Pro, Pico 4, Magic Leap 2, and Lynx R1."
-msgstr ""
-"Meta Quest 1/2/3/Pro、Pico 4、Magic Leap 2 及び Lynx R1 のような主要なスタン"
-"ドアローンヘッドセットに対応。"
-
 msgid "Out of the box limited support for visionOS Apple headsets."
 msgstr "Appleヘッドセット(visionOS)の限定的なサポート。"
 
@@ -1829,21 +1664,6 @@ msgstr "ボタン。"
 msgid "Checkboxes, check buttons, radio buttons."
 msgstr "チェックボックス、チェックボタン、ラジオボタン。"
 
-msgid ""
-"Text entry using :ref:`class_LineEdit` (single line) "
-"and :ref:`class_TextEdit` (multiple lines). TextEdit also supports code "
-"editing features such as displaying line numbers and syntax highlighting."
-msgstr ""
-":ref:`class_LineEdit` (一行)及び :ref:`class_TextEdit` (複数行)を使用したテキ"
-"スト入力。TextEdit は行番号表示やシンタックスハイライトのようなコード編集機能"
-"にも対応。"
-
-msgid ""
-"Dropdown menus using :ref:`class_PopupMenu` and :ref:`class_OptionButton`."
-msgstr ""
-":ref:`class_PopupMenu` と :ref:`class_OptionButton` を使ったドロップダウンメ"
-"ニュー。"
-
 msgid "Scrollbars."
 msgstr "スクロールバー。"
 
@@ -1859,9 +1679,6 @@ msgstr ""
 
 msgid "Trees (can also be used to represent tables)."
 msgstr "ツリー (表の表現にも使えます)。"
-
-msgid "Color picker with RGB and HSV modes."
-msgstr "RGB モードと HSV モードを持つカラーピッカー。"
 
 msgid "Controls can be rotated and scaled."
 msgstr "Control は回転と拡大縮小が可能。"

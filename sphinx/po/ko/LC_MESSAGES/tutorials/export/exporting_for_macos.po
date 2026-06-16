@@ -135,10 +135,6 @@ msgstr ""
 msgid "To notarize exported app"
 msgstr "내보낸 앱을 공증하려면"
 
-msgid "Select ``Xcode altool`` in the ``Notarization > Notarization`` option."
-msgstr ""
-"``Notarization > Notarization`` 옵션에서 ``Xcode altool``를 선택하세요."
-
 msgid "Disable the ``Debugging`` entitlement."
 msgstr "``Debugging`` 자격을 비활성화합니다."
 
@@ -187,32 +183,11 @@ msgid ""
 msgstr "Apple Developer ID 인증서가 있고 Linux 또는 Windows에서 내보내는 경우"
 
 msgid ""
-"Install `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/"
-"tree/main/apple-codesign>`__, and configure the path to ``rcodesign`` in the "
-"``Editor Settings > Export > macOS > rcodesign``."
-msgstr ""
-"`PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/tree/"
-"main/apple-codesign>`__을 설치하고 ``Editor Settings > Export > macOS > "
-"rcodesign``에서 ``rcodesign``에 대한 경로를 구성합니다."
-
-msgid ""
-"Select ``PyOxidizer rcodesign`` in the ``Code Signing > Codesign`` option."
-msgstr ""
-"``Code Signing > Codesign`` 옵션에서 ``PyOxidizer rcodesign``를 선택하세요."
-
-msgid ""
 "Set valid Apple ID PKCS #12 certificate file and password in the ``Code "
 "Signing`` section."
 msgstr ""
 "``Code Signing`` 섹션에서 유효한 Apple ID PKCS #12 인증서 파일과 비밀번호를 "
 "설정하세요."
-
-msgid ""
-"Select ``PyOxidizer rcodesign`` in the ``Notarization > Notarization`` "
-"option."
-msgstr ""
-"``Notarization > Notarization`` 옵션에서 ``PyOxidizer rcodesign``를 선택하세"
-"요."
 
 msgid ""
 "Set valid `App Store Connect <https://developer.apple.com/documentation/"
@@ -299,9 +274,6 @@ msgstr "코드 서명 도구에 전달된 명령줄 인수 배열입니다."
 msgid "This option is visible only when signing with Xcode codesign."
 msgstr "이 옵션은 Xcode 공동 설계로 서명할 때만 표시됩니다."
 
-msgid "These options are visible only when signing with PyOxidizer rcodesign."
-msgstr "이 옵션은 PyOxidizer rcodesign으로 서명할 때만 표시됩니다."
-
 msgid "Notarization Options"
 msgstr "공증 옵션"
 
@@ -362,9 +334,6 @@ msgid ""
 "Key."
 msgstr ""
 "Apple ID 이름/비밀번호 또는 App Store 연결 API UUID/키를 설정해야 합니다."
-
-msgid "These options are visible only when notarizing with Xcode altool."
-msgstr "이러한 옵션은 Xcode altool을 사용하여 공증할 때만 표시됩니다."
 
 msgid ""
 "See `Notarizing macOS Software Before Distribution <https://"

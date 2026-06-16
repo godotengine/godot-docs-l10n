@@ -127,9 +127,6 @@ msgstr "**기능:**"
 msgid "Scene tree editor."
 msgstr "씬 트리 편집기."
 
-msgid "Built-in script editor."
-msgstr "내장 스크립트 편집기."
-
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
@@ -139,9 +136,6 @@ msgstr ""
 
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript :ref:`디버거 <doc_debugger_panel>`."
-
-msgid "Support for debugging in threads is available since 4.2."
-msgstr "스레드 디버깅은 4.2부터 지원됩니다."
 
 msgid ""
 "Visual profiler with CPU and GPU time indications for each step of the "
@@ -163,27 +157,11 @@ msgstr "실시간 스크립트 리로딩."
 msgid "Live scene editing."
 msgstr "실시간 씬 편집."
 
-msgid ""
-"Changes will reflect in the editor and will be kept after closing the "
-"running project."
-msgstr ""
-"변경사항은 편집기에 반영되며 실행 중인 프로젝트를 닫은 후에도 유지됩니다."
+msgid "Move the in-editor camera and see the result in the running project."
+msgstr "편집기 내 카메라를 움직여 실행 중인 프로젝트에서 결과를 봅니다."
 
 msgid "Remote inspector."
 msgstr "원격 인스펙터."
-
-msgid ""
-"Changes won't reflect in the editor and won't be kept after closing the "
-"running project."
-msgstr ""
-"변경사항은 편집기에 반영되지 않으며 실행 중인 프로젝트를 닫은 후에는 유지되"
-"지 않습니다."
-
-msgid "Live camera replication."
-msgstr "실시간 카메라 복제."
-
-msgid "Move the in-editor camera and see the result in the running project."
-msgstr "편집기 내 카메라를 움직여 실행 중인 프로젝트에서 결과를 봅니다."
 
 msgid "Built-in offline class reference documentation."
 msgstr "내장 오프라인 클래스 참조 문서."
@@ -449,9 +427,6 @@ msgstr ""
 msgid "3D graphics"
 msgstr "3D 그래픽"
 
-msgid "HDR rendering with sRGB."
-msgstr "sRGB를 사용한 HDR 렌더링."
-
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "원근, 직교 및 절두체 오프셋 카메라."
 
@@ -528,24 +503,10 @@ msgstr "디더링은 픽셀이나 오브젝트 별로 결정할 수 있습니다
 msgid "**Real-time lighting:**"
 msgstr "**실시간 조명:**"
 
-msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr "방향성 조명 (태양 또는 달). 씬에 최대 4개까지 가능."
-
-msgid "Omnidirectional lights."
-msgstr "전방위 조명."
-
-msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr "원뿔 각과 감쇠를 조정할 수 있는 스포트 라이트."
-
 msgid ""
 "Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
 "light basis."
 msgstr "반사, 간접광, 볼류메트릭 안개 강도는 조명마다 조절할 수 있습니다."
-
-msgid ""
-"Adjustable light \"size\" for fake area lights (will also make shadows "
-"blurrier)."
-msgstr "가짜 영역 조명을 위한 조절 가능한 조명 \"크기\" (그림자도 더 흐려짐)."
 
 msgid ""
 "Optional distance fade system to fade distant lights and their shadows, "
@@ -564,34 +525,8 @@ msgstr ""
 "위해 클러스터형 전방 최적화 기법을 사용하여 렌더링합니다. 클러스터형 렌더링"
 "은 한 메시에 사용할 수 있는 조명의 최대 수 제한도 제거합니다."
 
-msgid ""
-"When using the Mobile renderer, up to 8 omni lights and 8 spot lights can be "
-"displayed per mesh resource. Baked lighting can be used to overcome this "
-"limit if needed."
-msgstr ""
-"모바일 렌더러를 사용하는 경우, 메시 리소스당 최대 8개의 전방향 조명과 8개의 "
-"스포트 조명이 표시될 수 있습니다. 필요한 경우 구운 조명을 사용하여 이러한 한"
-"계를 극복할 수 있습니다."
-
 msgid "**Shadow mapping:**"
 msgstr "**그림자 매핑:**"
-
-msgid ""
-"*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
-"blending between splits."
-msgstr ""
-"*DirectionalLight:* 직교 (가장 빠름), PSSM 2-split 및 4-split. 스플릿 간 블렌"
-"딩을 지원합니다."
-
-msgid ""
-"*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
-"Supports colored projector textures in the form of panoramas."
-msgstr ""
-"*OmniLight:* 쌍포물선 (빠름) 또는 큐브맵 (느리지만 더 정확). 색이 있는 프로젝"
-"터 텍스처를 파노라마의 형태로 지원합니다."
-
-msgid "*SpotLight:* Single texture. Supports colored projector textures."
-msgstr "*SpotLight:* 단일 텍스처. 색이 있는 투영 텍스처에 대응."
 
 msgid ""
 "Shadow normal offset bias and shadow pancaking to decrease the amount of "
@@ -599,13 +534,6 @@ msgid ""
 msgstr ""
 "그림자 노멀 오프셋 바이어스와 그림자 팬케이킹을 통해 그림자 아티팩트와 피터 "
 "팬 현상을 줄입니다."
-
-msgid ""
-":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
-"light size and distance from the surface the shadow is cast on."
-msgstr ""
-":abbr:`PCSS (Percentage Closer Soft Shadows)`\\ 와 유사한 그림자 흐림 효과는 "
-"조명의 크기와 그림자가 드리워진 표면과의 거리를 기반으로 합니다."
 
 msgid "Adjustable shadow blur on a per-light basis."
 msgstr "조명 단위로 조정할 수 있는 그림자 블러 효과."
@@ -633,28 +561,6 @@ msgid ""
 msgstr ""
 "자동 및 수동으로 배치된 프로브를 사용하여 동적 오브젝트에 라이팅을 지원합니"
 "다."
-
-msgid ""
-"Optionally supports directional lighting and rough reflections based on "
-"spherical harmonics."
-msgstr ""
-"선택적으로 구형 고조파를 기반으로 한 방향성 라이팅 및 거친 반사를 지원합니다."
-
-msgid ""
-"Lightmaps are baked on the GPU using compute shaders (much faster compared "
-"to CPU lightmapping). Baking can only be performed from the editor, not in "
-"exported projects."
-msgstr ""
-"라이트맵은 GPU에서 컴퓨트 셰이더를 사용하여 구워집니다 (CPU 라이트매핑에 비"
-"해 훨씬 빠릅니다). 굽기는 편집기에서만 수행할 수 있으며, 내보낸 프로젝트에서"
-"는 수행할 수 없습니다."
-
-msgid ""
-"Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
-"JNLM, or CPU/GPU-based denoising with OIDN."
-msgstr ""
-"JNLM을 사용한 GPU 기반의 :ref:`디노이징 <doc_using_lightmap_gi_denoising>`\\ "
-"이나 OIDN을 사용한 CPU/GPU 기반의 디노이징을 지원합니다."
 
 msgid ""
 ":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
@@ -981,21 +887,6 @@ msgid ""
 "Filtering options are defined on a per-use basis, not a per-texture basis."
 msgstr "필터링 옵션은 텍스처 기준이 아닌 사용별 기준로 정의됩니다."
 
-msgid "**Texture compression:**"
-msgstr "**텍스처 압축:**"
-
-msgid "Basis Universal (slow, but results in smaller files)."
-msgstr "Basis Universal (느리지만 더 작은 파일 크기를 제공합니다)."
-
-msgid "BPTC for high-quality compression (not supported on macOS)."
-msgstr "고품질 압축을 위한 BPTC (macOS에서는 지원하지 않음)."
-
-msgid "ETC2 (not supported on macOS)."
-msgstr "ETC2 (macOS에서는 지원하지 않음)."
-
-msgid "S3TC (not supported on mobile/Web platforms)."
-msgstr "S3TC (모바일/웹 플랫폼은 지원하지 않음)."
-
 msgid "**Antialiasing:**"
 msgstr "**안티앨리어싱:**"
 
@@ -1047,13 +938,6 @@ msgstr ""
 "<doc_resolution_scaling>`\\ 하는 기능을 지원합니다. 이는 저사양 시스템에서 성"
 "능을 향상시키거나 고사양 시스템에서 시각적 품질을 개선하는 데 사용할 수 있습"
 "니다."
-
-msgid ""
-"Resolution scaling uses bilinear filtering, AMD FidelityFX Super Resolution "
-"1.0 (FSR1) or AMD FidelityFX Super Resolution 2.2 (FSR2)."
-msgstr ""
-"해상도 스케일링은 양선형 필터링, AMD FidelityFX Super Resolution 1.0 (FSR1) "
-"또는 AMD FidelityFX Super Resolution 2.2 (FSR2)를 사용합니다."
 
 msgid ""
 "Texture mipmap LOD bias is adjusted automatically to improve quality at "
@@ -1139,9 +1023,6 @@ msgstr "셰이더"
 msgid "*2D:* Custom vertex, fragment, and light shaders."
 msgstr "*2D:* 사용자 지정 버텍스, 프래그먼트 및 라이트 셰이더."
 
-msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
-msgstr "*3D:* 사용자 지정 버텍스, 프래그먼트, 라이트 및 하늘 셰이더."
-
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
@@ -1189,9 +1070,6 @@ msgid ""
 "Syntax inspired by Python. However, GDScript is **not** based on Python."
 msgstr ""
 "문법은 파이썬에서 영감을 받았지만, GDScript는 **파이썬 기반이 아닙니다**."
-
-msgid "Syntax highlighting is provided on GitHub."
-msgstr "Github에서 구문 강조 지원."
 
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
@@ -1292,11 +1170,6 @@ msgstr ""
 "수십 개의 효과가 포함되고 재 라우팅 가능한 :ref:`오디오 버스 "
 "<doc_audio_buses>` 및 효과 지원."
 
-msgid ""
-"Support for polyphony (playing several sounds from a single "
-"AudioStreamPlayer node)."
-msgstr "폴리포니(단일 AudioStreamPlayer 노드에서 여러 소리 재생) 지원."
-
 msgid "Support for random volume and pitch."
 msgstr "무작위 볼륨 및 피치에 대한 지원."
 
@@ -1309,12 +1182,6 @@ msgid ""
 msgstr ""
 "무작위 샘플 선택을 사용할 때 반복 방지를 포함하여 순차/무작위 샘플 선택에 대"
 "한 지원."
-
-msgid ""
-"Listener2D and Listener3D nodes to listen from a position different than the "
-"camera."
-msgstr ""
-"카메라 외의 위치에서 듣기 위해 사용할 수 있는 Listener2D와 Listener3D 노드."
 
 msgid ""
 "Support for :ref:`procedural audio generation <class_AudioStreamGenerator>`."
@@ -1362,9 +1229,6 @@ msgstr "*이미지:* :ref:`doc_importing_images`\\ 를 참고하세요."
 
 msgid "*Audio:*"
 msgstr "*오디오:*"
-
-msgid "WAV with optional IMA-ADPCM compression."
-msgstr "선택적 IMA-ADPCM 압축이 있는 WAV."
 
 msgid "Ogg Vorbis."
 msgstr "Ogg Vorbis."
@@ -1449,19 +1313,6 @@ msgid ""
 "window."
 msgstr ""
 "마우스 커서를 보이게 하거나 숨기거나 캡처하거나 창 안으로 가둘 수 있습니다."
-
-msgid ""
-"When captured, raw input will be used on Windows and Linux to sidestep the "
-"OS' mouse acceleration settings."
-msgstr ""
-"입력이 캡쳐될 때 원형 입력이 Windows와 Linux에서는 OS의 마우스 가속 설정을 우"
-"회하기 위해 사용하게 됩니다."
-
-msgid "Gamepad input (up to 8 simultaneous controllers)."
-msgstr "게임패드 입력(최대 8개 컨트롤러까지 동시 입력 가능)."
-
-msgid "Pen/tablet input with pressure support."
-msgstr "펜/태블릿의 압력에 의한 입력 지원."
 
 msgid "Navigation"
 msgstr "내비게이션"
@@ -1593,10 +1444,6 @@ msgstr ""
 msgid "Automatic UI mirroring for right-to-left locales."
 msgstr "오른쪽에서 왼쪽으로 읽는 로케일에 대한 자동 UI 미러링을 지원합니다."
 
-msgid ""
-"Support for pseudolocalization to test your project for i18n-friendliness."
-msgstr "프로젝트의 국제화 친화성을 테스트하기 위한 의사 현지화 지원."
-
 msgid "Windowing and OS integration"
 msgstr "윈도우화 및 운영 체제 통합"
 
@@ -1720,13 +1567,6 @@ msgstr ""
 "플러그인을 통해 OpenXR을 사용하는 :ref:`Android 기반 헤드셋 "
 "<doc_deploying_to_android>`\\ 을 위한 지원."
 
-msgid ""
-"Including support for popular stand alone headsets like the Meta Quest 1/2/3 "
-"and Pro, Pico 4, Magic Leap 2, and Lynx R1."
-msgstr ""
-"메타 퀘스트 1/2/3 및 Pro, Pico 4, Magic Leap 2, Lynx R1과 같은 인기 독립형 헤"
-"드셋을 지원합니다."
-
 msgid "Out of the box limited support for visionOS Apple headsets."
 msgstr "기본 제공 :ref:`OpenXR 지원 <doc_setting_up_xr>`."
 
@@ -1767,21 +1607,6 @@ msgstr "버튼."
 msgid "Checkboxes, check buttons, radio buttons."
 msgstr "체크박스, 체크 버튼, 라디오 버튼."
 
-msgid ""
-"Text entry using :ref:`class_LineEdit` (single line) "
-"and :ref:`class_TextEdit` (multiple lines). TextEdit also supports code "
-"editing features such as displaying line numbers and syntax highlighting."
-msgstr ""
-":ref:`class_LineEdit` (한 줄) 및 :ref:`class_TextEdit`\\ (여러 줄)을 사용하"
-"여 텍스트를 입력합니다. TextEdit는 행 번호 표시 및 구문 강조 표시와 같은 코"
-"드 편집 기능도 지원합니다."
-
-msgid ""
-"Dropdown menus using :ref:`class_PopupMenu` and :ref:`class_OptionButton`."
-msgstr ""
-":ref:`class_PopupMenu`\\ 와 :ref:`class_OptionButton`\\ 을 사용하는 드롭다운 "
-"메뉴."
-
 msgid "Scrollbars."
 msgstr "스크롤바."
 
@@ -1798,9 +1623,6 @@ msgstr ""
 
 msgid "Trees (can also be used to represent tables)."
 msgstr "트리 (표를 표현할 때에도 사용 가능)."
-
-msgid "Color picker with RGB and HSV modes."
-msgstr "RGB와 HSV 모드를 포함한 색상 선택기."
 
 msgid "Controls can be rotated and scaled."
 msgstr "컨트롤은 회전하거나 크기를 키울 수 있습니다."
