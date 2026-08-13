@@ -1,7 +1,8 @@
 #/bin/bash
 
 : ${GODOT_BIN:="./bin/godot.linuxbsd.editor.dev.x86_64"}
-: ${GODOT_DOCS_L10N:="../godot-docs-l10n"}
+: ${GODOT_DOCS_L10N:="../../godot-docs-l10n"}
+: ${EXPORT_LANGS:="es fr it ru uk zh_Hans zh_Hant"}
 
 if [ ! -f "${GODOT_BIN}" ]; then
   echo "Couldn't locate Godot binary '${GODOT_BIN}'. This script must be run from a compiled Godot repo, and GODOT_BIN passed as environment variable if needed."
@@ -18,15 +19,15 @@ declare -A lang_remap=(
  ["zh_Hant"]="zh_TW"
 )
 
-rm -rf ${GODOT_DOCS_L10N}/classes
-mkdir ${GODOT_DOCS_L10N}/classes
+mkdir -p ${GODOT_DOCS_L10N}/classes
 
-for lang in es fr it ru uk zh_Hans zh_Hant; do
+for lang in ${EXPORT_LANGS}; do
   rtd_lang=$lang
   if [ "${lang_remap[$lang]+found}" ]; then
     rtd_lang=${lang_remap[$lang]}
   fi
   echo -e "\n✨ Exporting classref translations for $lang (RTD: $rtd_lang).\n"
+  rm -rf ${GODOT_DOCS_L10N}/$rtd_lang
   ${GODOT_BIN} --doctool -l $lang
   make -C doc rst LANGARG=$lang || true
   rm -rf ${GODOT_DOCS_L10N}/classes/$rtd_lang
