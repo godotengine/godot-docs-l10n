@@ -422,7 +422,7 @@ Sets the behavior to apply when you leave a moving platform. By default, to be p
 - |void| **set_up_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_up_direction**\ (\ )
 
-Vector pointing upwards, used to determine what is a wall and what is a floor (or a ceiling) when calling :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Defaults to :ref:`Vector2.UP<class_Vector2_constant_UP>`. As the vector will be normalized it can't be equal to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`, if you want all collisions to be reported as walls, consider using :ref:`MOTION_MODE_FLOATING<class_CharacterBody2D_constant_MOTION_MODE_FLOATING>` as :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>`.
+指向上方的向量，用於在呼叫 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 時判定何者爲牆壁、何者爲地板（或天花板）。預設爲 :ref:`Vector2.UP<class_Vector2_constant_UP>`\ 。由於向量會被正規化，因此不能等於 :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`\ ；若希望所有碰撞皆被判定爲撞牆，請考慮使用 :ref:`MOTION_MODE_FLOATING<class_CharacterBody2D_constant_MOTION_MODE_FLOATING>` 作為 :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -439,9 +439,9 @@ Vector pointing upwards, used to determine what is a wall and what is a floor (o
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-Current velocity vector in pixels per second, used and modified during calls to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`.
+以每秒像素爲單位的速度向量，在呼叫 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 時會被使用及修改。
 
-\ **Note:** A common mistake is setting this property to the desired velocity multiplied by ``delta``, which produces a motion vector in pixels.
+\ **注意：**\ 有個常見的錯誤是將此屬性設爲目標速度乘以 ``delta``\ ，這會變成以像素為單位的運動向量。
 
 .. rst-class:: classref-item-separator
 

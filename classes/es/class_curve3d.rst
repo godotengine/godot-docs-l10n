@@ -196,9 +196,9 @@ La posición del punto de control que sale del vértice en el ``índice``.
 
 :ref:`Vector3<class_Vector3>` **point_{index}/position** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/position>`
 
-The position of for the vertex at ``index``.
+La posición del vértice en ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` es un valor en el rango ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 

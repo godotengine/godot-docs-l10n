@@ -153,7 +153,7 @@ Descripciones de Métodos
 
 |void| **make_convex_from_siblings**\ (\ ) :ref:`🔗<class_CollisionShape3D_method_make_convex_from_siblings>`
 
-Sets the collision shape's shape to the addition of all its convexed :ref:`MeshInstance3D<class_MeshInstance3D>` siblings geometry.
+Establece la forma del CollisionShape3D como la suma de la geometría de todos sus nodos hermanos :ref:`MeshInstance3D<class_MeshInstance3D>` convexos.
 
 .. rst-class:: classref-item-separator
 

@@ -16,7 +16,7 @@ Descrizione
 
 TLSOptions astrae le opzioni di configurazione per le classi :ref:`StreamPeerTLS<class_StreamPeerTLS>` e :ref:`PacketPeerDTLS<class_PacketPeerDTLS>`.
 
-Gli oggetti di questa classe non possono essere istanziati direttamente e al loro posto deve essere utilizzato uno dei metodi statici :ref:`client()<class_TLSOptions_method_client>`, :ref:`client_unsafe()<class_TLSOptions_method_client_unsafe>` o :ref:`server()<class_TLSOptions_method_server>`.
+Non è possibile istanziare direttamente gli oggetti di questa classe e al loro posto è necessario utilizzare uno dei metodi statici :ref:`client()<class_TLSOptions_method_client>`, :ref:`client_unsafe()<class_TLSOptions_method_client_unsafe>` o :ref:`server()<class_TLSOptions_method_server>`.
 
 
 .. tabs::
@@ -187,7 +187,7 @@ Crea una configurazione del server TLS utilizzando la chiave ``key`` e il certif
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

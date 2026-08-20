@@ -14,7 +14,7 @@ A syntax highlighter intended for code.
 Description
 -----------
 
-By adjusting various properties of this resource, you can change the colors of strings, comments, numbers, and other text patterns inside a :ref:`TextEdit<class_TextEdit>` control.
+En ajustant diverses propriétés de cette ressource, vous pouvez changer la couleur des chaînes, des commentaires, des nombres et des autres motifs de texte dans un contrôle :ref:`TextEdit<class_TextEdit>`.
 
 .. rst-class:: classref-reftable-group
 

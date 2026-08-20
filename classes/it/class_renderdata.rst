@@ -16,9 +16,9 @@ Oggetto astratto di dati di rendering, contiene i dati dei frame relativi al ren
 Descrizione
 ----------------------
 
-Abstract render data object, exists for the duration of rendering a single viewport. See also :ref:`RenderDataRD<class_RenderDataRD>`, :ref:`RenderSceneData<class_RenderSceneData>`, and :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`.
+Oggetto astratto per i dati di rendering, esiste per il tempo necessario a renderizzare una singola viewport. Vedi anche :ref:`RenderDataRD<class_RenderDataRD>`, :ref:`RenderSceneData<class_RenderSceneData>` e :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`.
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **Nota:** Questo è un oggetto interno nel server di rendering. Non istanziare questa classe da uno script.
 
 .. rst-class:: classref-reftable-group
 
@@ -95,7 +95,7 @@ Restituisce l'oggetto :ref:`RenderSceneData<class_RenderSceneData>` che gestisce
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

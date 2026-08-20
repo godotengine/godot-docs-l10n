@@ -14,13 +14,13 @@ Estensione per aggiungere parser personalizzati per estrarre stringhe da tradurr
 Descrizione
 ----------------------
 
-**EditorTranslationParserPlugin** is invoked when a file is being parsed to extract strings that require translation. To define the parsing and string extraction logic, override the :ref:`_parse_file()<class_EditorTranslationParserPlugin_private_method__parse_file>` method in script.
+**EditorTranslationParserPlugin** viene richiamato quando un file viene analizzato per estrarre stringhe che richiedono una traduzione. Per definire la logica di analisi ed estrazione delle stringhe, sovrascrivi il metodo :ref:`_parse_file()<class_EditorTranslationParserPlugin_private_method__parse_file>` da script.
 
-The return value should be an :ref:`Array<class_Array>` of :ref:`PackedStringArray<class_PackedStringArray>`\ s, one for each extracted translatable string. Each entry should contain ``[msgid, msgctxt, msgid_plural, comment, source_line]``, where all except ``msgid`` are optional. Empty strings will be ignored.
+Il valore restituito dovrebbe essere un :ref:`Array<class_Array>` di :ref:`PackedStringArray<class_PackedStringArray>`, uno per ogni stringa traducibile estratta. Ogni voce dovrebbe contenere ``[msgid, msgctxt, msgid_plural, comment]``, dove tutti tranne ``msgid`` sono facoltativi. Le stringhe vuote verranno ignorate.
 
-The extracted strings will be written into a translation template file selected by user under "Template Generation" in "Localization" tab in "Project Settings" menu.
+Le stringhe estratte verranno inserite in un file POT selezionato dall'utente in "Generazione del POT" nella scheda "Localizzazione" nel menu "Impostazioni del progetto".
 
-Below shows an example of a custom parser that extracts strings from a CSV file to write into a template.
+Di seguito è riportato un esempio di un parser personalizzato che estrae stringhe da un file CSV per scriverle in un POT.
 
 
 .. tabs::
@@ -37,7 +37,7 @@ Below shows an example of a custom parser that extracts strings from a CSV file 
         var split_strs = text.split(",", false)
         for s in split_strs:
             ret.append(PackedStringArray([s]))
-            #print("Extracted string: " + s)
+            #print("Stringa estratta: " + s)
 
         return ret
 
@@ -60,7 +60,7 @@ Below shows an example of a custom parser that extracts strings from a CSV file 
             foreach (string s in splitStrs)
             {
                 ret.Add([s]);
-                //GD.Print($"Extracted string: {s}");
+                //GD.Print($"Stringa estratta: {s}");
             }
             return ret;
         }
@@ -73,32 +73,32 @@ Below shows an example of a custom parser that extracts strings from a CSV file 
 
 
 
-To add a translatable string associated with a context, plural, comment, or source line:
+Per aggiungere una stringa traducibile associata a un contesto, plurale, commento o riga sorgente:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # This will add a message with msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment", and source line "7".
-    ret.append(PackedStringArray(["Test 1", "context", "test 1 plurals", "test 1 comment", "7"]))
-    # This will add a message with msgid "A test without context" and msgid_plural "plurals".
-    ret.append(PackedStringArray(["A test without context", "", "plurals"]))
-    # This will add a message with msgid "Only with context" and msgctxt "a friendly context".
-    ret.append(PackedStringArray(["Only with context", "a friendly context"]))
+    # Questo aggiungerà un messaggio con msgid "Test 1", msgctxt "contesto", msgid_plural "test 1 plurals", commento "test 1 commento" e riga sorgente "7" .
+    ret.append(PackedStringArray(["Test 1", "contesto", "test 1 plurali", "test 1 commento", "7"]))
+    # Questo aggiungerà un messaggio con msgid "Un test senza contesto" e msgid_plural "plurali".
+    ret.append(PackedStringArray(["Un test senza contesto", "", "plurali"]))
+    # Questo aggiungerà un messaggio con msgid "Solo con contesto" e msgctxt "un contesto leggibile".
+    ret.append(PackedStringArray(["Solo con contesto", "un contesto leggibile"]))
 
  .. code-tab:: csharp
 
-    // This will add a message with msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment", and source line "7".
-    ret.Add(["Test 1", "context", "test 1 plurals", "test 1 comment", "7"]);
-    // This will add a message with msgid "A test without context" and msgid_plural "plurals".
-    ret.Add(["A test without context", "", "plurals"]);
-    // This will add a message with msgid "Only with context" and msgctxt "a friendly context".
-    ret.Add(["Only with context", "a friendly context"]);
+    // Questo aggiungerà un messaggio con msgid "Test 1", msgctxt "contesto" e msgid_plural "test 1 plurali", commento "test 1 commento" e riga sorgente "7" .
+    ret.Add(["Test 1", "contesto", "test 1 plurali", "test 1 commento", "7"]);
+    // Questo aggiungerà un messaggio con msgid "Un test senza contesto" e msgid_plural "plurali".
+    ret.Add(["Un test senza contesto", "", "plurali"]);
+    // Questo aggiungerà un messaggio con msgid "Solo con contesto" e msgctxt "un contesto leggibile".
+    ret.Add(["Solo con contesto", "un contesto leggibile"]);
 
 
 
-\ **Note:** If you override parsing logic for standard script types (GDScript, C#, etc.), it would be better to load the ``path`` argument using :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`. This is because built-in scripts are loaded as :ref:`Resource<class_Resource>` type, not :ref:`FileAccess<class_FileAccess>` type. For example:
+\ **Nota:** Se si sovrascrive la logica di analisi per i tipi di script standard (GDScript, C#, ecc.), sarebbe meglio caricare l'argomento ``path`` tramite :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`. Questo perché gli script integrati sono caricati come tipo :ref:`Resource<class_Resource>`, non come tipo :ref:`FileAccess<class_FileAccess>`. Ad esempio:
 
 
 .. tabs::
@@ -108,7 +108,7 @@ To add a translatable string associated with a context, plural, comment, or sour
     func _parse_file(path):
         var res = ResourceLoader.load(path, "Script")
         var text = res.source_code
-        # Parsing logic.
+        # Logica di analisi.
 
     func _get_recognized_extensions():
         return ["gd"]
@@ -119,7 +119,7 @@ To add a translatable string associated with a context, plural, comment, or sour
     {
         var res = ResourceLoader.Load<Script>(path, "Script");
         string text = res.SourceCode;
-        // Parsing logic.
+        // Logica di analisi.
     }
 
     public override string[] _GetRecognizedExtensions()
@@ -129,9 +129,9 @@ To add a translatable string associated with a context, plural, comment, or sour
 
 
 
-Alternatively, the plugin can directly modify the final list of strings, by implementing :ref:`_customize_strings()<class_EditorTranslationParserPlugin_private_method__customize_strings>`.
+Alternativamente, l'estensione può modificare direttamente l'elenco finale delle stringhe, implementando :ref:`_customize_strings()<class_EditorTranslationParserPlugin_private_method__customize_strings>`.
 
-To use **EditorTranslationParserPlugin**, register it using the :ref:`EditorPlugin.add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>` method first.
+Per utilizzare **EditorTranslationParserPlugin**, registrarlo prima attraverso il metodo :ref:`EditorPlugin.add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -164,7 +164,7 @@ Descrizioni dei metodi
 
 :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\] **_customize_strings**\ (\ strings\: :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\]\ ) |virtual| |const| :ref:`🔗<class_EditorTranslationParserPlugin_private_method__customize_strings>`
 
-Called after parsing all files. You can modify the ``strings`` array to add or remove entries from the final list of strings, then return it after modifications. Each entry is a :ref:`PackedStringArray<class_PackedStringArray>` like explained in the **EditorTranslationParserPlugin**'s description.
+Chiamata dopo aver analizzato tutti i file. È possibile modificare l'array ``strings`` per aggiungere o rimuovere voci dall'elenco finale di stringhe, poi restituirlo dopo le modifiche. Ogni voce è un :ref:`PackedStringArray<class_PackedStringArray>` come spiegato nella descrizione di **EditorTranslationParserPlugin**.
 
 ::
 
@@ -172,10 +172,10 @@ Called after parsing all files. You can modify the ``strings`` array to add or r
     extends EditorTranslationParserPlugin
 
     func _customize_strings(strings):
-        # Add new string.
+        # Aggiungi una nuova stringa.
         strings.append(["Test 1", "context", "test 1 plurals", "test 1 comment"])
 
-        # Remove all strings that begin with $.
+        # Rimuovi tutte le stringhe che iniziano con $.
         strings = strings.filter(func(s): return not s[0].begins_with("$"))
 
         return strings
@@ -190,7 +190,7 @@ Called after parsing all files. You can modify the ``strings`` array to add or r
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_recognized_extensions**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorTranslationParserPlugin_private_method__get_recognized_extensions>`
 
-Ottiene la lista delle estensioni di file da associare a questo parser, ad esempio ``["csv"]``.
+Ottiene l'elenco delle estensioni di file da associare a questo parser, ad esempio ``["csv"]``.
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ Sovrascrivi questo metodo per definire una logica di analisi personalizzata per 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

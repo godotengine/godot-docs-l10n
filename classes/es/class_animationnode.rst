@@ -146,7 +146,7 @@ Emitida por los nodos que heredan de esta clase y que tienen un árbol interno c
 
 **Experimental:** Esta señal podría ser modificada o eliminada en versiones futuras.
 
-Emitted by :ref:`AnimationNodeAnimation<class_AnimationNodeAnimation>` when its :ref:`AnimationNodeAnimation.animation<class_AnimationNodeAnimation_property_animation>` resource is changed, or by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` when its connections change.
+Emitida por :ref:`AnimationNodeAnimation<class_AnimationNodeAnimation>` cuando se modifica su recurso :ref:`AnimationNodeAnimation.animation<class_AnimationNodeAnimation_property_animation>`, o por :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` cuando sus conexiones cambian.
 
 .. rst-class:: classref-item-separator
 

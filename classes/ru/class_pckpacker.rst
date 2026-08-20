@@ -86,7 +86,7 @@ PCKPacker
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_file_from_buffer**\ (\ target_path\: :ref:`String<class_String>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`, encrypt\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PCKPacker_method_add_file_from_buffer>`
 
-Adds the ``data`` to the current PCK package at the ``target_path`` internal path. The ``res://`` prefix for ``target_path`` is optional and stripped internally. File content is immediately written to the PCK.
+Добавляет ``data`` в текущий пакет PCK по внутреннему пути ``target_path``. Префикс ``res://`` для ``target_path`` является необязательным и удаляется внутри программы. Содержимое файла немедленно записывается в PCK.
 
 .. rst-class:: classref-item-separator
 

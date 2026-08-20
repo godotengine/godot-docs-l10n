@@ -168,9 +168,9 @@ Il numero di punti che descrivono la curva.
 
 :ref:`Vector3<class_Vector3>` **point_{index}/in** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/in>`
 
-The position of the control point leading to the vertex at ``index``.
+La posizione del punto di controllo che entra nel vertice all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -182,9 +182,9 @@ The position of the control point leading to the vertex at ``index``.
 
 :ref:`Vector3<class_Vector3>` **point_{index}/out** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/out>`
 
-The position of the control point leading out of the vertex at ``index``.
+La posizione del punto di controllo che esce dal vertice all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -196,9 +196,9 @@ The position of the control point leading out of the vertex at ``index``.
 
 :ref:`Vector3<class_Vector3>` **point_{index}/position** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_Curve3D_property_point_{index}/position>`
 
-The position of for the vertex at ``index``.
+La posizione del vertice all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -210,9 +210,9 @@ The position of for the vertex at ``index``.
 
 :ref:`float<class_float>` **point_{index}/tilt** = ``0.0`` :ref:`🔗<class_Curve3D_property_point_{index}/tilt>`
 
-The tilt angle in radians for the point at ``index``.
+L'angolo di inclinazione in radianti del punto all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -552,7 +552,7 @@ Restituisce una lista di punti lungo la curva, con densità quasi uniforme. ``ma
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -9,14 +9,14 @@ Joint2D
 
 **Ereditato da:** :ref:`DampedSpringJoint2D<class_DampedSpringJoint2D>`, :ref:`GrooveJoint2D<class_GrooveJoint2D>`, :ref:`PinJoint2D<class_PinJoint2D>`
 
-Classe di base astratta per tutti i giunti di fisica 2D.
+Classe base astratta per tutti i giunti di fisica 2D.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Classe di base astratta per tutti i giunti nella fisica 2D. I giunti 2D uniscono due corpi fisici (:ref:`node_a<class_Joint2D_property_node_a>` e :ref:`node_b<class_Joint2D_property_node_b>`) e applicano un vincolo.
+Classe base astratta per tutti i giunti nella fisica 2D. I giunti 2D uniscono due corpi fisici (:ref:`node_a<class_Joint2D_property_node_a>` e :ref:`node_b<class_Joint2D_property_node_b>`) e applicano un vincolo.
 
 .. rst-class:: classref-reftable-group
 
@@ -144,7 +144,7 @@ Restituisce :ref:`RID<class_RID>` interno del giunto dal :ref:`PhysicsServer2D<c
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

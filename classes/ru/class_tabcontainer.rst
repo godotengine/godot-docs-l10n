@@ -353,7 +353,7 @@ enum **TabPosition**: :ref:`🔗<enum_TabContainer_TabPosition>`
 
 **Устарело:** Due to internal changes this doesn't do anything anymore, as they're always in front.
 
-This doesn't do anything.
+Это ничего не делает.
 
 .. rst-class:: classref-item-separator
 
@@ -488,9 +488,9 @@ This doesn't do anything.
 
 :ref:`bool<class_bool>` **tab_{index}/disabled** = ``false`` :ref:`🔗<class_TabContainer_property_tab_{index}/disabled>`
 
-If ``true``, the tab at ``index`` is disabled.
+Если ``true``, вкладка с ``index`` отключена.
 
-\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+\ **Примечание:** ``index`` находится в диапазоне ``0 .. get_tab_count() - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -502,9 +502,9 @@ If ``true``, the tab at ``index`` is disabled.
 
 :ref:`bool<class_bool>` **tab_{index}/hidden** = ``false`` :ref:`🔗<class_TabContainer_property_tab_{index}/hidden>`
 
-If ``true``, the tab at ``index`` is hidden.
+Если ``true``, вкладка с ``index`` скрыта.
 
-\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+\ **Примечание:** ``index`` находится в диапазоне ``0 .. get_tab_count() - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -516,9 +516,9 @@ If ``true``, the tab at ``index`` is hidden.
 
 :ref:`Texture2D<class_Texture2D>` **tab_{index}/icon** :ref:`🔗<class_TabContainer_property_tab_{index}/icon>`
 
-The title text of the tab at ``index``.
+Текст заголовка вкладки с ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+\ **Примечание:** ``index`` находится в диапазоне ``0 .. get_tab_count() - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -530,9 +530,9 @@ The title text of the tab at ``index``.
 
 :ref:`String<class_String>` **tab_{index}/title** = ``""`` :ref:`🔗<class_TabContainer_property_tab_{index}/title>`
 
-The tooltip text of the tab at ``index``.
+Текст всплывающей подсказки для вкладки с ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+\ **Примечание:** ``index`` находится в диапазоне ``0 .. get_tab_count() - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -1186,7 +1186,7 @@ The tooltip text of the tab at ``index``.
 
 :ref:`Texture2D<class_Texture2D>` **drop_mark** :ref:`🔗<class_TabContainer_theme_icon_drop_mark>`
 
-Icon shown to indicate where a dragged tab will be dropped (see :ref:`drag_to_rearrange_enabled<class_TabContainer_property_drag_to_rearrange_enabled>`).
+Значок, показывающий, куда будет помещена перетаскиваемая вкладка (см. :ref:`drag_to_rearrange_enabled<class_TabContainer_property_drag_to_rearrange_enabled>`).
 
 .. rst-class:: classref-item-separator
 

@@ -58,9 +58,9 @@ Descrizioni delle proprietà
 - |void| **set_binding**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_binding**\ (\ )
 
-The index of the buffer in the vertex buffer array to bind this vertex attribute. When set to ``-1``, it defaults to the index of the attribute.
+L'indice del buffer nell'array del buffer dei vertici a cui associare questo attributo di vertice. Se impostato su ``-1``, è predefinito all'indice dell'attributo.
 
-\ **Note:** You cannot mix binding explicitly assigned attributes with implicitly assigned ones (i.e. ``-1``). Either all attributes must have their binding set to ``-1``, or all must have explicit bindings.
+\ **Nota:** Non è possibile combinare l'associazione di attributi assegnati esplicitamente con quelli assegnati implicitamente (ovvero ``-1``). Tutti gli attributi devono avere la loro associazione impostata su ``-1`` oppure tutti devono avere associazioni esplicite.
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ Il numero di byte tra gli inizi di istanze consecutive di questo attributo.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

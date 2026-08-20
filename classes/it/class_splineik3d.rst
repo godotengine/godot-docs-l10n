@@ -7,7 +7,7 @@ SplineIK3D
 
 **Eredita:** :ref:`ChainIK3D<class_ChainIK3D>` **<** :ref:`IKModifier3D<class_IKModifier3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` for aligning bones along a :ref:`Path3D<class_Path3D>`.
+Uno :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` per allineare le ossa lungo un :ref:`Path3D<class_Path3D>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -101,7 +101,7 @@ Descrizioni dei metodi
 
 :ref:`NodePath<class_NodePath>` **get_path_3d**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SplineIK3D_method_get_path_3d>`
 
-Returns the node path of the :ref:`Path3D<class_Path3D>` which is describing the path.
+Restituisce se il percorso di nodo del :ref:`Path3D<class_Path3D>` che descrive il percorso.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Returns the node path of the :ref:`Path3D<class_Path3D>` which is describing the
 
 :ref:`int<class_int>` **get_tilt_fade_in**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SplineIK3D_method_get_tilt_fade_in>`
 
-Returns the tilt interpolation method used between the root bone and the start point of the :ref:`Curve3D<class_Curve3D>` when they are apart. See also :ref:`set_tilt_fade_in()<class_SplineIK3D_method_set_tilt_fade_in>`.
+Restituisce il metodo di interpolazione dell'inclinazione utilizzato tra l'osso radice e il punto iniziale della :ref:`Curve3D<class_Curve3D>` quando sono separati. Vedi anche :ref:`set_tilt_fade_in()<class_SplineIK3D_method_set_tilt_fade_in>`.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Returns the tilt interpolation method used between the root bone and the start p
 
 :ref:`int<class_int>` **get_tilt_fade_out**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SplineIK3D_method_get_tilt_fade_out>`
 
-Returns the tilt interpolation method used between the end bone and the end point of the :ref:`Curve3D<class_Curve3D>` when they are apart. See also :ref:`set_tilt_fade_out()<class_SplineIK3D_method_set_tilt_fade_out>`.
+Restituisce il metodo di interpolazione dell'inclinazione utilizzato tra l'osso finale e il punto finale della :ref:`Curve3D<class_Curve3D>` quando sono separati. Vedi anche :ref:`set_tilt_fade_out()<class_SplineIK3D_method_set_tilt_fade_out>`.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Restituisce se la proprietà di inclinazione del :ref:`Curve3D<class_Curve3D>` i
 
 |void| **set_path_3d**\ (\ index\: :ref:`int<class_int>`, path_3d\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SplineIK3D_method_set_path_3d>`
 
-Sets the node path of the :ref:`Path3D<class_Path3D>` which is describing the path.
+Imposta il percorso di nodo del :ref:`Path3D<class_Path3D>` che descrive il percorso.
 
 .. rst-class:: classref-item-separator
 
@@ -173,11 +173,11 @@ Imposta se la proprietà di inclinazione del :ref:`Curve3D<class_Curve3D>` influ
 
 |void| **set_tilt_fade_in**\ (\ index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SplineIK3D_method_set_tilt_fade_in>`
 
-If ``size`` is greater than ``0``, the tilt is interpolated between ``size`` start bones from the start point of the :ref:`Curve3D<class_Curve3D>` when they are apart.
+Se ``size`` è maggiore di ``0``, l'inclinazione è interpolata tra ``size`` ossa iniziali dal punto iniziale della :ref:`Curve3D<class_Curve3D>` quando sono distanti.
 
-If ``size`` is equal ``0``, the tilts between the root bone head and the start point of the :ref:`Curve3D<class_Curve3D>` are unified with a tilt of the start point of the :ref:`Curve3D<class_Curve3D>`.
+Se ``size`` è uguale a ``0``, le inclinazioni tra la testa dell'osso radice e il punto iniziale della :ref:`Curve3D<class_Curve3D>` sono uniformate con l'inclinazione del punto iniziale della :ref:`Curve3D<class_Curve3D>`.
 
-If ``size`` is less than ``0``, the tilts between the root bone and the start point of the :ref:`Curve3D<class_Curve3D>` are ``0.0``.
+Se ``size`` è minore di ``0``, le inclinazioni tra l'osso radice e il punto iniziale della :ref:`Curve3D<class_Curve3D>` sono ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -189,17 +189,17 @@ If ``size`` is less than ``0``, the tilts between the root bone and the start po
 
 |void| **set_tilt_fade_out**\ (\ index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SplineIK3D_method_set_tilt_fade_out>`
 
-If ``size`` is greater than ``0``, the tilt is interpolated between ``size`` end bones from the end point of the :ref:`Curve3D<class_Curve3D>` when they are apart.
+Se ``size`` è maggiore di ``0``, l'inclinazione è interpolata tra ``size`` ossa finali dal punto finale della :ref:`Curve3D<class_Curve3D>` quando sono distanti.
 
-If ``size`` is equal ``0``, the tilts between the end bone tail and the end point of the :ref:`Curve3D<class_Curve3D>` are unified with a tilt of the end point of the :ref:`Curve3D<class_Curve3D>`.
+Se ``size`` è uguale a ``0``, le inclinazioni tra la coda dell'osso finale e il punto finale della :ref:`Curve3D<class_Curve3D>` sono uniformate con l'inclinazione del punto finale della :ref:`Curve3D<class_Curve3D>`.
 
-If ``size`` is less than ``0``, the tilts between the end bone and the end point of the :ref:`Curve3D<class_Curve3D>` are ``0.0``.
+Se ``size`` è minore di ``0``, le inclinazioni tra l'osso finale e il punto finale della :ref:`Curve3D<class_Curve3D>` sono ``0.0``.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

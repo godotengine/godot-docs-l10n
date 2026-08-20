@@ -7,14 +7,14 @@ DrawableTexture2D
 
 **Eredita:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 2D texture that supports drawing to itself via Blit calls.
+Una texture 2D che supporta il disegno su se stessa tramite chiamate blit.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-A 2D texture that can be modified via blit calls, copying from a target texture to itself. Primarily intended to be managed in code, a user must call :ref:`setup()<class_DrawableTexture2D_method_setup>` to initialize the state before drawing. Each :ref:`blit_rect()<class_DrawableTexture2D_method_blit_rect>` call takes at least a rectangle, the area to draw to, and another texture, what to be drawn. The draw calls use a Texture_Blit Shader to process and calculate the result, pixel by pixel. Users can supply their own ShaderMaterial with custom Texture_Blit shaders for more complex behaviors.
+Una texture 2D modificabile tramite chiamate blit, che copiano da una texture di destinazione a se stessa. Pensata principalmente per essere gestita tramite codice, richiede all'utente di chiamare :ref:`setup()<class_DrawableTexture2D_method_setup>` per inizializzare lo stato prima di poterci disegnare. Ogni chiamata a :ref:`blit_rect()<class_DrawableTexture2D_method_blit_rect>` accetta almeno un rettangolo, l'area su cui disegnare, e un'altra texture, cosa disegnare. Le chiamate di disegno utilizzano uno shader Texture_Blit per elaborare e calcolare il risultato, pixel per pixel. Gli utenti possono fornire il proprio ShaderMaterial con shader Texture_Blit personalizzati per ottenere comportamenti più complessi.
 
 .. rst-class:: classref-reftable-group
 
@@ -118,7 +118,7 @@ Descrizioni dei metodi
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Draws to given ``rect`` on this texture by copying from the given ``source``. A ``modulate`` color can be passed in for the shader to use, but defaults to White. The ``mipmap`` value can specify a draw to a lower mipmap level. The ``material`` parameter can take a ShaderMaterial with a TextureBlit Shader for custom drawing behavior.
+Disegna sul rettangolo ``rect`` su questa texture copiandolo dalla sorgente ``source``. È possibile passare un colore ``modulate`` utilizzando dallo shader, ma il valore predefinito è bianco. Il valore ``mipmap`` può specificare un disegno a un livello mipmap inferiore. Il parametro ``material`` può accettare un ShaderMaterial con uno TextureBlit Shader per un comportamento di disegno personalizzato.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ Draws to given ``rect`` on this texture by copying from the given ``source``. A 
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Draws to the given ``rect`` on this texture, as well as on up to 3 DrawableTexture ``extra_targets``. All ``extra_targets`` must be the same size and DrawableFormat as the original target, otherwise the Shader may fail. Expects up to 4 Texture ``sources``, but will replace missing ``sources`` with default Black Textures.
+Disegna sul rettangolo ``rect`` su questa texture, nonché su un massimo di 3 DrawableTexture ``extra_targets``. Tutte le ``extra_targets`` devono avere le stesse dimensioni e lo stesso DrawableFormat della destinazione originale, altrimenti lo shader potrebbe non funzionare. Prevede fino a 4 Texture ``sources``, ma sostituirà le sorgenti ``sources`` mancanti con texture nere predefinite.
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ Draws to the given ``rect`` on this texture, as well as on up to 3 DrawableTextu
 
 |void| **generate_mipmaps**\ (\ ) :ref:`🔗<class_DrawableTexture2D_method_generate_mipmaps>`
 
-Re-calculates the mipmaps for this texture on demand.
+Ricalcola le mipmap per questa texture su richiesta.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Re-calculates the mipmaps for this texture on demand.
 
 :ref:`bool<class_bool>` **get_use_mipmaps**\ (\ ) |const| :ref:`🔗<class_DrawableTexture2D_method_get_use_mipmaps>`
 
-Returns ``true`` if mipmaps are set to be used on this DrawableTexture.
+Restituisce ``true`` se le mipmap sono impostate per essere utilizzate su questa DrawableTexture.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ Returns ``true`` if mipmaps are set to be used on this DrawableTexture.
 
 |void| **set_format**\ (\ format\: :ref:`DrawableFormat<enum_DrawableTexture2D_DrawableFormat>`\ ) :ref:`🔗<class_DrawableTexture2D_method_set_format>`
 
-Sets the format of this DrawableTexture.
+Imposta il formato di questa DrawableTexture.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Sets the format of this DrawableTexture.
 
 |void| **set_use_mipmaps**\ (\ mipmaps\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_DrawableTexture2D_method_set_use_mipmaps>`
 
-Sets if mipmaps should be used on this DrawableTexture.
+Imposta se le mipmap si dovrebbero utilizzare su questa DrawableTexture.
 
 .. rst-class:: classref-item-separator
 
@@ -194,13 +194,13 @@ Sets if mipmaps should be used on this DrawableTexture.
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Initializes the DrawableTexture to a White texture of the given ``width``, ``height``, and ``format``.
+Inizializza DrawableTexture con una texture bianca delle dimensioni specificate da ``width`` e ``height``, con il formato ``format``.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

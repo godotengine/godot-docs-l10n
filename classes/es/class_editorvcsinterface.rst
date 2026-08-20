@@ -118,7 +118,7 @@ enum **ChangeType**: :ref:`🔗<enum_EditorVCSInterface_ChangeType>`
 
 :ref:`ChangeType<enum_EditorVCSInterface_ChangeType>` **CHANGE_TYPE_NEW** = ``0``
 
-A new file has been added.
+Se ha añadido un nuevo archivo.
 
 .. _class_EditorVCSInterface_constant_CHANGE_TYPE_MODIFIED:
 

@@ -14,11 +14,11 @@ Sei texture quadrate che rappresentano le facce di un cubo. Comunemente usato co
 Descrizione
 ----------------------
 
-Una cubemap è composta da 6 texture organizzate in livelli. Sono solitamente utilizzate per simulare i riflessi nel rendering 3D (vedi :ref:`ReflectionProbe<class_ReflectionProbe>`). Possono essere utilizzate per far sembrare che un oggetto rifletta l'ambiente circostante. Questo di solito offre prestazioni molto migliori rispetto ad altri metodi di riflessione.
+Una cubemap è composta da 6 texture organizzate in livelli. Servono solitamente per simulare i riflessi nel rendering 3D (vedi :ref:`ReflectionProbe<class_ReflectionProbe>`). Servono per far sembrare che un oggetto rifletta l'ambiente circostante. Questo di solito offre prestazioni molto migliori rispetto ad altri metodi di riflessione.
 
-Questa risorsa viene in genere utilizzata come uniforme negli shader personalizzati. Pochi metodi principali in Godot utilizzano le risorse **Cubemap**.
+Questa risorsa in genere funge da uniforme negli shader personalizzati. Pochi metodi principali in Godot utilizzano le risorse **Cubemap**.
 
-Per creare manualmente un file texture di questo tipo, reimporta i file immagine tramite le preimpostazioni di importazione nel pannello File System. Per creare un CubemapArray da codice, usa :ref:`ImageTextureLayered.create_from_images()<class_ImageTextureLayered_method_create_from_images>` su un'istanza della classe CubemapArray.
+Per creare manualmente un file texture di questo tipo, reimporta i file immagine tramite le preimpostazioni di importazione nel pannello Filesystem. Per creare un CubemapArray da codice, usa :ref:`ImageTextureLayered.create_from_images()<class_ImageTextureLayered_method_create_from_images>` su un'istanza della classe CubemapArray.
 
 L'ordine previsto delle immagini è X+, X-, Y+, Y-, Z+, Z- (nel sistema di coordinate di Godot, quindi Y+ è "su" e Z- è "avanti"). Puoi usare uno dei seguenti modelli come base:
 
@@ -83,7 +83,7 @@ Crea una versione segnaposto di questa risorsa (:ref:`PlaceholderCubemap<class_P
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

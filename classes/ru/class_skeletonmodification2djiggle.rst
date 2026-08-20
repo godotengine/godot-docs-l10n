@@ -357,7 +357,7 @@ NodePath к узлу, который является целью для моди
 
 |void| **reset**\ (\ ) :ref:`🔗<class_SkeletonModification2DJiggle_method_reset>`
 
-Resets the internal jiggle simulation state to the current bone positions, clearing velocity, acceleration, and accumulated forces.
+Сбрасывает внутреннее состояние симуляции покачивания к текущим позициям костей, очищая скорость, ускорение и накопленные силы.
 
 .. rst-class:: classref-item-separator
 

@@ -135,7 +135,7 @@ Descrizioni dei metodi
 
 :ref:`int<class_int>` **get_end_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_end_bone>`
 
-Returns the end bone index.
+Restituisce l'indice dell'osso finale.
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ Returns the end bone index.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_end_bone_direction>`
 
-Returns the end bone's tail direction when :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` is ``true``.
+Restituisce la direzione della coda dell'osso finale quando :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ Returns the end bone's tail direction when :ref:`is_end_bone_extended()<class_Tw
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` is ``true``.
+Restituisce la lunghezza della coda dell'osso finale della catena d'ossa quando :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extend
 
 :ref:`String<class_String>` **get_end_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_end_bone_name>`
 
-Returns the end bone name.
+Restituisce il nome dell'osso finale.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ Returns the end bone name.
 
 :ref:`int<class_int>` **get_middle_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_middle_bone>`
 
-Returns the middle bone index.
+Restituisce l'indice dell'osso medio.
 
 .. rst-class:: classref-item-separator
 
@@ -195,7 +195,7 @@ Returns the middle bone index.
 
 :ref:`String<class_String>` **get_middle_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_middle_bone_name>`
 
-Returns the middle bone name.
+Restituisce il nome dell'osso medio.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ Returns the middle bone name.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **get_pole_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_pole_direction>`
 
-Returns the pole direction.
+Restituisce la direzione del polo.
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ Returns the pole direction.
 
 :ref:`Vector3<class_Vector3>` **get_pole_direction_vector**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_pole_direction_vector>`
 
-Returns the pole direction vector.
+Restituisce il vettore di direzione del polo.
 
-If :ref:`get_pole_direction()<class_TwoBoneIK3D_method_get_pole_direction>` is :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`, this method returns ``Vector3(0, 0, 0)``.
+Se :ref:`get_pole_direction()<class_TwoBoneIK3D_method_get_pole_direction>` è :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`, questo metodo restituisce ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ If :ref:`get_pole_direction()<class_TwoBoneIK3D_method_get_pole_direction>` is :
 
 :ref:`NodePath<class_NodePath>` **get_pole_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_pole_node>`
 
-Returns the pole target node that constructs a plane which the joints are all on and the pole is trying to direct.
+Restituisce il nodo di destinazione del polo che costruisce un piano su cui si trovano tutte le articolazioni e il polo sta cercando di dirigere.
 
 .. rst-class:: classref-item-separator
 
@@ -245,7 +245,7 @@ Returns the pole target node that constructs a plane which the joints are all on
 
 :ref:`int<class_int>` **get_root_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_root_bone>`
 
-Returns the root bone index.
+Restituisce l'indice dell'osso radice.
 
 .. rst-class:: classref-item-separator
 
@@ -257,7 +257,7 @@ Returns the root bone index.
 
 :ref:`String<class_String>` **get_root_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_root_bone_name>`
 
-Returns the root bone name.
+Restituisce il nome dell'osso radice.
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ Returns the root bone name.
 
 :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_target_node>`
 
-Returns the target node that the end bone is trying to reach.
+Restituisce il nodo di destinazione che l'osso finale sta tentando di raggiungere.
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Returns the target node that the end bone is trying to reach.
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Restituisce ``true`` se l'osso finale è prolungato per avere una coda.
 
 .. rst-class:: classref-item-separator
 
@@ -293,7 +293,7 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 :ref:`bool<class_bool>` **is_using_virtual_end**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_is_using_virtual_end>`
 
-Returns ``true`` if the end bone is extended from the middle bone as a virtual bone.
+Restituisce ``true`` se l'osso finale è prolungato dall'osso medio come osso virtuale.
 
 .. rst-class:: classref-item-separator
 
@@ -305,7 +305,7 @@ Returns ``true`` if the end bone is extended from the middle bone as a virtual b
 
 |void| **set_end_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_end_bone>`
 
-Sets the end bone index.
+Imposta l'indice dell'osso finale.
 
 .. rst-class:: classref-item-separator
 
@@ -317,7 +317,7 @@ Sets the end bone index.
 
 |void| **set_end_bone_direction**\ (\ index\: :ref:`int<class_int>`, bone_direction\: :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_end_bone_direction>`
 
-Sets the end bone tail direction when :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` is ``true``.
+Imposta la direzione della coda dell'osso finale quando :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ Sets the end bone tail direction when :ref:`is_end_bone_extended()<class_TwoBone
 
 |void| **set_end_bone_length**\ (\ index\: :ref:`int<class_int>`, length\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_end_bone_length>`
 
-Sets the end bone tail length when :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` is ``true``.
+Imposta la lunghezza della coda dell'osso finale quando :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -341,9 +341,9 @@ Sets the end bone tail length when :ref:`is_end_bone_extended()<class_TwoBoneIK3
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_end_bone_name>`
 
-Sets the end bone name.
+Imposta il nome dell'osso finale.
 
-\ **Note:** The end bone must be a child of the middle bone.
+\ **Nota:** L'osso finale deve essere figlio dell'osso medio.
 
 .. rst-class:: classref-item-separator
 
@@ -355,7 +355,7 @@ Sets the end bone name.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Se ``enabled`` è ``true``, l'osso finale è prolungato per avere una coda.
 
 .. rst-class:: classref-item-separator
 
@@ -367,7 +367,7 @@ If ``enabled`` is ``true``, the end bone is extended to have a tail.
 
 |void| **set_middle_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_middle_bone>`
 
-Sets the middle bone index.
+Imposta l'indice dell'osso medio.
 
 .. rst-class:: classref-item-separator
 
@@ -379,9 +379,9 @@ Sets the middle bone index.
 
 |void| **set_middle_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_middle_bone_name>`
 
-Sets the middle bone name.
+Imposta il nome dell'osso medio.
 
-\ **Note:** The middle bone must be a child of the root bone.
+\ **Nota:** L'osso medio deve essere figlio dell'osso radice.
 
 .. rst-class:: classref-item-separator
 
@@ -393,13 +393,13 @@ Sets the middle bone name.
 
 |void| **set_pole_direction**\ (\ index\: :ref:`int<class_int>`, direction\: :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_pole_direction>`
 
-Sets the pole direction.
+Imposta la direzione del polo.
 
-The pole is on the middle bone and will direct to the pole target.
+Il polo si trova sull'osso medio e si dirigerà verso la destinazione del polo.
 
-The rotation axis is a vector that is orthogonal to this and the forward vector.
+L'asse di rotazione è un vettore ortogonale a questo e al vettore in avanti.
 
-\ **Note:** The pole direction and the forward vector shouldn't be colinear to avoid unintended rotation.
+\ **Nota:** La direzione del polo e il vettore in avanti non devono essere colineari per evitare rotazioni involontarie.
 
 .. rst-class:: classref-item-separator
 
@@ -411,11 +411,11 @@ The rotation axis is a vector that is orthogonal to this and the forward vector.
 
 |void| **set_pole_direction_vector**\ (\ index\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_pole_direction_vector>`
 
-Sets the pole direction vector.
+Imposta il vettore di direzione del polo.
 
-This vector is normalized by an internal process.
+Questo vettore è normalizzato da un processo interno.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`.
+Se la lunghezza del vettore è ``0``, è considerato come sinonimo di :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -427,7 +427,7 @@ If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonMo
 
 |void| **set_pole_node**\ (\ index\: :ref:`int<class_int>`, pole_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_pole_node>`
 
-Sets the pole target node that constructs a plane which the joints are all on and the pole is trying to direct.
+Imposta il nodo di destinazione del polo che costruisce un piano su cui si trovano tutte le articolazioni e il polo sta cercando di dirigere.
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ Sets the pole target node that constructs a plane which the joints are all on an
 
 |void| **set_root_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_root_bone>`
 
-Sets the root bone index.
+Imposta l'indice dell'osso radice.
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Sets the root bone index.
 
 |void| **set_root_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_root_bone_name>`
 
-Sets the root bone name.
+Imposta il nome dell'osso radice.
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +463,7 @@ Sets the root bone name.
 
 |void| **set_target_node**\ (\ index\: :ref:`int<class_int>`, target_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_target_node>`
 
-Sets the target node that the end bone is trying to reach.
+Imposta il nodo di destinazione che l'osso finale sta tentando di raggiungere.
 
 .. rst-class:: classref-item-separator
 
@@ -475,13 +475,13 @@ Sets the target node that the end bone is trying to reach.
 
 |void| **set_use_virtual_end**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_use_virtual_end>`
 
-If ``enabled`` is ``true``, the end bone is extended from the middle bone as a virtual bone.
+Se ``enabled`` è ``true``, l'osso finale è prolungato dall'osso medio come osso virtuale.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

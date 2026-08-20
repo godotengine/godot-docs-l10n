@@ -475,7 +475,7 @@ Le particelle saranno emesse in una posizione scelta a caso tra i punti :ref:`em
 
 :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>` **EMISSION_SHAPE_RING** = ``6``
 
-Particles will be emitted in the area of a ring parameterized by its outer and inner radius.
+Le particelle saranno emesse nell'area di un anello parametrizzata dal suo raggio esterno e interno.
 
 .. _class_CPUParticles2D_constant_EMISSION_SHAPE_MAX:
 
@@ -938,7 +938,7 @@ Le estensioni del rettangolo se :ref:`emission_shape<class_CPUParticles2D_proper
 - |void| **set_emission_ring_inner_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_ring_inner_radius**\ (\ )
 
-The ring's inner radius if :ref:`emission_shape<class_CPUParticles2D_property_emission_shape>` is set to :ref:`EMISSION_SHAPE_RING<class_CPUParticles2D_constant_EMISSION_SHAPE_RING>`.
+Il raggio interno dell'anello se :ref:`emission_shape<class_CPUParticles2D_property_emission_shape>` è impostato su :ref:`EMISSION_SHAPE_RING<class_CPUParticles2D_constant_EMISSION_SHAPE_RING>`.
 
 .. rst-class:: classref-item-separator
 
@@ -955,7 +955,7 @@ The ring's inner radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_emission_ring_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_ring_radius**\ (\ )
 
-The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_emission_shape>` is set to :ref:`EMISSION_SHAPE_RING<class_CPUParticles2D_constant_EMISSION_SHAPE_RING>`.
+Il raggio esterno dell'anello se :ref:`emission_shape<class_CPUParticles2D_property_emission_shape>` è impostato su :ref:`EMISSION_SHAPE_RING<class_CPUParticles2D_constant_EMISSION_SHAPE_RING>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1820,7 +1820,7 @@ Abilita o disabilita il flag specificato.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

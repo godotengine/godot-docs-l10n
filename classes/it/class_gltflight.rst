@@ -108,7 +108,7 @@ Questo valore è lineare per corrispondere a glTF, ma sarà convertito in sRGB n
 - |void| **set_inner_cone_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_inner_cone_angle**\ (\ )
 
-L'angolo interno del cono in un riflettore. Deve essere minore o uguale all'angolo del cono esterno.
+L'angolo interno del cono in una luce spot. Deve essere minore o uguale all'angolo del cono esterno.
 
 All'interno di questo angolo, la luce è a piena luminosità. Tra gli angoli del cono interno ed esterno, c'è una transizione dalla piena luminosità alla luminosità zero. Quando si crea un :ref:`SpotLight3D<class_SpotLight3D>` di Godot, il rapporto tra gli angoli del cono interno ed esterno serve per calcolare l'attenuazione della luce.
 
@@ -127,7 +127,7 @@ All'interno di questo angolo, la luce è a piena luminosità. Tra gli angoli del
 - |void| **set_intensity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_intensity**\ (\ )
 
-L'intensità della luce. Questa è espressa in candele (lumen per steradiante) per luci puntiformi e riflettori, e lux (lumen per m²) per luci direzionali. Quando si crea una luce di Godot, questo valore viene convertito in un moltiplicatore senza unità.
+L'intensità della luce. Questa è espressa in candele (lumen per steradiante) per luci puntiformi e spot, e lux (lumen per m²) per luci direzionali. Quando si crea una luce di Godot, questo valore viene convertito in un moltiplicatore senza unità.
 
 .. rst-class:: classref-item-separator
 
@@ -161,9 +161,9 @@ Il tipo di luce. I valori accettati da Godot sono "point", "spot" e "directional
 - |void| **set_outer_cone_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_outer_cone_angle**\ (\ )
 
-L'angolo esterno del cono in un riflettore. Deve essere maggiore o uguale all'angolo interno.
+L'angolo esterno del cono in una luce spot. Deve essere maggiore o uguale all'angolo interno.
 
-A questo angolo, la luce diminuisce a zero luminosità. Tra gli angoli del cono interno ed esterno, c'è una transizione dalla piena luminosità a zero luminosità. Se questo angolo è di mezzo giro, il riflettore emette in tutte le direzioni. Quando si crea un :ref:`SpotLight3D<class_SpotLight3D>` di Godot, l'angolo del cono esterno viene utilizzato come angolo del riflettore.
+A questo angolo, la luce diminuisce a zero luminosità. Tra gli angoli del cono interno ed esterno, c'è una transizione dalla piena luminosità a zero luminosità. Se questo angolo è di mezzo giro, la luce spot emette in tutte le direzioni. Quando si crea un :ref:`SpotLight3D<class_SpotLight3D>` di Godot, l'angolo del cono esterno viene utilizzato come angolo della luce spot.
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ Descrizioni dei metodi
 
 :ref:`GLTFLight<class_GLTFLight>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFLight_method_from_dictionary>`
 
-Crea una nuova istanza GLTFLight elaborando il :ref:`Dictionary<class_Dictionary>` specificato.
+Crea una nuova istanza GLTFLight interpretando il :ref:`Dictionary<class_Dictionary>` specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -267,7 +267,7 @@ Converte questa istanza GLTFLight in un nodo :ref:`Light3D<class_Light3D>` di Go
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

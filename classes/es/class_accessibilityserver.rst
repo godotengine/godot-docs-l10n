@@ -7,7 +7,7 @@ AccessibilityServer
 
 **Hereda:** :ref:`Object<class_Object>`
 
-A server interface for screen reader support.
+Una interfaz de servidor para soporte de los lectores de pantalla.
 
 .. rst-class:: classref-reftable-group
 
@@ -550,7 +550,7 @@ Elemento de ventana de diálogo.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TOOLTIP** = ``45``
 
-Tooltip element.
+Elemento Tooltip.
 
 .. _class_AccessibilityServer_constant_ROLE_REGION:
 
@@ -558,7 +558,7 @@ Tooltip element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_REGION** = ``46``
 
-Region/landmark element. Screen readers can navigate between regions using landmark navigation.
+Elemento de región/punto de referencia. Los lectores de pantalla pueden navegar entre regiones usando la navegación por puntos de referencia.
 
 .. _class_AccessibilityServer_constant_ROLE_TEXT_RUN:
 
@@ -566,9 +566,9 @@ Region/landmark element. Screen readers can navigate between regions using landm
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TEXT_RUN** = ``47``
 
-Unifor text run.
+Ejecución de texto Unifor.
 
-Note: This role is used for internal text elements, and should not be assigned to nodes.
+Nota: Este rol se usa para elementos de texto internos y no debe asignarse a nodos.
 
 .. rst-class:: classref-item-separator
 
@@ -790,15 +790,15 @@ Acción de mostrar tooltip, el argumento de callback no está establecido.
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SET_TEXT_SELECTION** = ``9``
 
-Set text selection action, callback argument is set to :ref:`Dictionary<class_Dictionary>` with the following keys:
+Establece la acción de selección de texto, el argumento de callback es un :ref:`Dictionary<class_Dictionary>` con las siguientes claves:
 
-- ``"start_element"`` accessibility element of the selection start.
+- ``"start_element"`` elemento de accesibilidad del inicio de la selección.
 
-- ``"start_char"`` character offset relative to the accessibility element of the selection start.
+- ``"start_char"`` desplazamiento de caracteres relativo al elemento de accesibilidad del inicio de la selección.
 
-- ``"end_element"`` accessibility element of the selection end.
+- ``"end_element"`` elemento de accesibilidad del final de la selección.
 
-- ``"end_char"`` character offset relative to the accessibility element of the selection end.
+- ``"end_char"`` desplazamiento de caracteres relativo al elemento de accesibilidad del final de la selección.
 
 .. _class_AccessibilityServer_constant_ACTION_REPLACE_SELECTED_TEXT:
 
@@ -838,7 +838,7 @@ Acción de desplazamiento hacia adelante, el argumento de callback no está esta
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_LEFT** = ``14``
 
-Scroll left action, callback argument is set to :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`.
+Acción de desplazamiento a la izquierda, el argumento de callback se establece en :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`.
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_RIGHT:
 
@@ -846,7 +846,7 @@ Scroll left action, callback argument is set to :ref:`AccessibilityScrollUnit<en
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_RIGHT** = ``15``
 
-Scroll right action, callback argument is set to :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`.
+Acción de desplazamiento a la derecha, el argumento de callback se establece en :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`.
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_UP:
 
@@ -854,7 +854,7 @@ Scroll right action, callback argument is set to :ref:`AccessibilityScrollUnit<e
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_UP** = ``16``
 
-Scroll up action, callback argument is set to :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`.
+Acción de desplazamiento hacia arriba, el argumento de callback se establece en :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>`.
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_INTO_VIEW:
 
@@ -862,7 +862,7 @@ Scroll up action, callback argument is set to :ref:`AccessibilityScrollUnit<enum
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SCROLL_INTO_VIEW** = ``17``
 
-Scroll into view action, callback argument is set to :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>`.
+Acción de desplazamiento a la vista, el argumento de callback se establece en :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>`.
 
 .. _class_AccessibilityServer_constant_ACTION_SCROLL_TO_POINT:
 
@@ -886,7 +886,7 @@ Acción de establecer el desplazamiento, el argumento de callback se establece e
 
 :ref:`AccessibilityAction<enum_AccessibilityServer_AccessibilityAction>` **ACTION_SET_VALUE** = ``20``
 
-Set value action, callback argument is set to :ref:`String<class_String>` or number with the new value.
+Acción de establecer valor, el argumento de callback se establece en :ref:`String<class_String>` o número con el nuevo valor.
 
 .. _class_AccessibilityServer_constant_ACTION_SHOW_CONTEXT_MENU:
 
@@ -954,7 +954,7 @@ enum **AccessibilityScrollUnit**: :ref:`🔗<enum_AccessibilityServer_Accessibil
 
 :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>` **SCROLL_UNIT_ITEM** = ``0``
 
-The amount by which to scroll. A single item of a list, line of text.
+La cantidad de desplazamiento. Representa un elemento de una lista o una línea de texto.
 
 .. _class_AccessibilityServer_constant_SCROLL_UNIT_PAGE:
 
@@ -962,7 +962,7 @@ The amount by which to scroll. A single item of a list, line of text.
 
 :ref:`AccessibilityScrollUnit<enum_AccessibilityServer_AccessibilityScrollUnit>` **SCROLL_UNIT_PAGE** = ``1``
 
-The amount by which to scroll. A single page.
+La cantidad en la que desplazarse. Un único elemento de una lista, línea de texto.
 
 .. rst-class:: classref-item-separator
 
@@ -980,7 +980,7 @@ enum **AccessibilityScrollHint**: :ref:`🔗<enum_AccessibilityServer_Accessibil
 
 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>` **SCROLL_HINT_TOP_LEFT** = ``0``
 
-A preferred position for the node scrolled into view. Top-left edge of the scroll container.
+Una posición preferida para el nodo desplazado a la vista. Borde superior izquierdo del container de desplazamiento.
 
 .. _class_AccessibilityServer_constant_SCROLL_HINT_BOTTOM_RIGHT:
 
@@ -988,7 +988,7 @@ A preferred position for the node scrolled into view. Top-left edge of the scrol
 
 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>` **SCROLL_HINT_BOTTOM_RIGHT** = ``1``
 
-A preferred position for the node scrolled into view. Bottom-right edge of the scroll container.
+Una posición preferida para el nodo desplazado a la vista. Borde inferior derecho del container de desplazamiento.
 
 .. _class_AccessibilityServer_constant_SCROLL_HINT_TOP_EDGE:
 
@@ -996,7 +996,7 @@ A preferred position for the node scrolled into view. Bottom-right edge of the s
 
 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>` **SCROLL_HINT_TOP_EDGE** = ``2``
 
-A preferred position for the node scrolled into view. Top edge of the scroll container.
+Una posición preferida para el nodo desplazado a la vista. Borde superior del contenedor de desplazamiento.
 
 .. _class_AccessibilityServer_constant_SCROLL_HINT_BOTTOM_EDGE:
 
@@ -1004,7 +1004,7 @@ A preferred position for the node scrolled into view. Top edge of the scroll con
 
 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>` **SCROLL_HINT_BOTTOM_EDGE** = ``3``
 
-A preferred position for the node scrolled into view. Bottom edge of the scroll container.
+Una posición preferida para el nodo desplazado a la vista. Borde inferior del contenedor de desplazamiento.
 
 .. _class_AccessibilityServer_constant_SCROLL_HINT_LEFT_EDGE:
 
@@ -1012,7 +1012,7 @@ A preferred position for the node scrolled into view. Bottom edge of the scroll 
 
 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>` **SCROLL_HINT_LEFT_EDGE** = ``4``
 
-A preferred position for the node scrolled into view. Left edge of the scroll container.
+Una posición preferida para el nodo desplazado a la vista. Borde izquierdo del contenedor de desplazamiento.
 
 .. _class_AccessibilityServer_constant_SCROLL_HINT_RIGHT_EDGE:
 
@@ -1020,7 +1020,7 @@ A preferred position for the node scrolled into view. Left edge of the scroll co
 
 :ref:`AccessibilityScrollHint<enum_AccessibilityServer_AccessibilityScrollHint>` **SCROLL_HINT_RIGHT_EDGE** = ``5``
 
-A preferred position for the node scrolled into view. Right edge of the scroll container.
+Una posición preferida para el nodo desplazado a la vista. Borde derecho del contenedor de desplazamiento.
 
 .. rst-class:: classref-section-separator
 
@@ -1051,7 +1051,7 @@ Crea un nuevo recurso de elemento de accesibilidad vacío.
 
 :ref:`RID<class_RID>` **create_sub_element**\ (\ parent_rid\: :ref:`RID<class_RID>`, role\: :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>`, insert_pos\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AccessibilityServer_method_create_sub_element>`
 
-Creates a new, empty accessibility sub-element resource. Sub-elements can be used to provide accessibility information for objects which are not :ref:`Node<class_Node>`\ s, such as list items, table cells, or menu items. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`free_element()<class_AccessibilityServer_method_free_element>` method.
+Crea un recurso de subelemento nuevo con accesibilidad vacío. Los subelementos se pueden usar para proporcionar información de accesibilidad para objetos los cuales no son :ref:`Node<class_Node>`\ s, como elementos de lista, celdas de tabla, o elementos de menú. Los subelementos se liberan automáticamente cuando se libera el elemento antecesor, o se pueden liberar antes usando el método :ref:`free_element()<class_AccessibilityServer_method_free_element>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1063,9 +1063,9 @@ Creates a new, empty accessibility sub-element resource. Sub-elements can be use
 
 :ref:`RID<class_RID>` **create_sub_text_edit_elements**\ (\ parent_rid\: :ref:`RID<class_RID>`, shaped_text\: :ref:`RID<class_RID>`, min_height\: :ref:`float<class_float>`, insert_pos\: :ref:`int<class_int>` = -1, is_last_line\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AccessibilityServer_method_create_sub_text_edit_elements>`
 
-Creates a new, empty accessibility sub-element from the shaped text buffer. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`free_element()<class_AccessibilityServer_method_free_element>` method.
+Crea un nuevo subelemento de accesibilidad vacío desde el tampón de texto formateado. Los subelementos se liberan automáticamente cuando el elemento antecesor se libera, o pueden liberarse antes usando el método :ref:`free_element()<class_AccessibilityServer_method_free_element>`.
 
-If ``is_last_line`` is ``true``, no trailing newline is appended to the text content. Set to ``true`` for the last line in multi-line text fields and for single-line text fields.
+Si ``is_last_line`` es ``true``, no se añade un salto de línea al final del contenido del texto. Establécelo en ``true`` para la última línea en campos de texto multi‐línea y para campos de texto de una sola línea.
 
 .. rst-class:: classref-item-separator
 
@@ -1329,7 +1329,7 @@ Establece el cuadro delimitador del elemento, en relación con la posición del 
 
 |void| **update_set_braille_label**\ (\ id\: :ref:`RID<class_RID>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_braille_label>`
 
-Sets element accessibility label for Braille display.
+Establece la etiqueta de accesibilidad del elemento para la pantalla Braille.
 
 .. rst-class:: classref-item-separator
 
@@ -1341,7 +1341,7 @@ Sets element accessibility label for Braille display.
 
 |void| **update_set_braille_role_description**\ (\ id\: :ref:`RID<class_RID>`, description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_braille_role_description>`
 
-Sets element accessibility role description for Braille display.
+Establece la descripción del rol de accesibilidad del elemento para la pantalla Braille.
 
 .. rst-class:: classref-item-separator
 

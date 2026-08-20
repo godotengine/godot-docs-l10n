@@ -7,16 +7,16 @@ OptimizedTranslation
 
 **Eredita:** :ref:`Translation<class_Translation>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An optimized translation.
+Una traduzione ottimizzata.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-An optimized translation. Uses real-time compressed translations, which results in very small dictionaries.
+Una traduzione ottimizzata. Utilizza traduzioni compresse in tempo reale, che risultano in dizionari molto piccoli.
 
-This class does not store the untranslated strings for optimization purposes. Therefore, :ref:`Translation.get_message_list()<class_Translation_method_get_message_list>` always returns an empty array, and :ref:`Translation.get_message_count()<class_Translation_method_get_message_count>` always returns ``0``.
+Questa classe non memorizza le stringhe non tradotte per motivi di ottimizzazione. Pertanto, :ref:`Translation.get_message_list()<class_Translation_method_get_message_list>` restituisce sempre un array vuoto e :ref:`Translation.get_message_count()<class_Translation_method_get_message_count>` restituisce sempre ``0``.
 
 .. rst-class:: classref-reftable-group
 
@@ -55,7 +55,7 @@ Genera e imposta una traduzione ottimizzata dalla risorsa :ref:`Translation<clas
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

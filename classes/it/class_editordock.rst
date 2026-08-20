@@ -11,26 +11,26 @@ EditorDock
 
 **Ereditato da:** :ref:`FileSystemDock<class_FileSystemDock>`
 
-Dockable container for the editor.
+Contenitore di pannello sganciabile per l'editor.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-EditorDock is a :ref:`Container<class_Container>` node that can be docked in one of the editor's dock slots. Docks are added by plugins to provide space for controls related to an :ref:`EditorPlugin<class_EditorPlugin>`. The editor comes with a few built-in docks, such as the Scene dock, FileSystem dock, etc.
+EditorDock è un nodo :ref:`Container<class_Container>` che può essere agganciato in uno degli slot di pannelli dell'editor. I pannelli vengono aggiunti dalle estensioni per fornire spazio ai controlli relativi a un :ref:`EditorPlugin<class_EditorPlugin>`. L'editor include alcuni pannelli integrati, come il pannello Scena, il pannello Filesystem, ecc.
 
-You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>`. The dock can be customized by changing its properties.
+È possibile aggiungere un pannello attraverso :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>`. Si può personalizzare modificandone le proprietà.
 
 ::
 
     @tool
     extends EditorPlugin
 
-    # Dock reference.
+    # Riferimento al pannello.
     var dock
 
-    # Plugin initialization.
+    # Inizializzazione dell'estensione.
     func _enter_tree():
         dock = EditorDock.new()
         dock.title = "My Dock"
@@ -40,7 +40,7 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
         dock.add_child(dock_content)
         add_dock(dock)
 
-    # Plugin clean-up.
+    # Pulizia dell'estensione.
     func _exit_tree():
         remove_dock(dock)
         dock.queue_free()
@@ -51,7 +51,7 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
 Tutorial
 ----------------
 
-- :doc:`Making plugins <../tutorials/plugins/editor/making_plugins>`
+- :doc:`Creare estensioni <../tutorials/plugins/editor/making_plugins>`
 
 .. rst-class:: classref-reftable-group
 
@@ -126,7 +126,7 @@ Segnali
 
 **closed**\ (\ ) :ref:`🔗<class_EditorDock_signal_closed>`
 
-Emitted when the dock is closed with the Close button in the context popup, before it's removed from its parent. See :ref:`closable<class_EditorDock_property_closable>`.
+Emesso quando il pannello viene chiuso con il pulsante Chiudi nel popup contestuale, prima che venga rimosso dal suo genitore. Vedi :ref:`closable<class_EditorDock_property_closable>`.
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ Emitted when the dock is closed with the Close button in the context popup, befo
 
 **opened**\ (\ ) :ref:`🔗<class_EditorDock_signal_opened>`
 
-Emitted when the dock is opened via the Editor > Editor Docks menu, before it's made visible.
+Emesso quando il pannello viene aperto tramite il menu Editor > Pannelli dell'editor, prima che venga reso visibile.
 
 .. rst-class:: classref-section-separator
 
@@ -161,7 +161,7 @@ flags **DockLayout**: :ref:`🔗<enum_EditorDock_DockLayout>`
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_VERTICAL** = ``1``
 
-Allows placing the dock in the vertical dock slots on either side of the editor.
+Consente di collocare il pannello negli slot verticali su entrambi i lati dell'editor.
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_HORIZONTAL:
 
@@ -169,7 +169,7 @@ Allows placing the dock in the vertical dock slots on either side of the editor.
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_HORIZONTAL** = ``2``
 
-Allows placing the dock in the horizontal dock slots at the bottom.
+Consente di collocare il pannello negli slot orizzontali in basso.
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_FLOATING:
 
@@ -177,7 +177,7 @@ Allows placing the dock in the horizontal dock slots at the bottom.
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_FLOATING** = ``4``
 
-Allows making the dock floating (opened as a separate window).
+Consente di rendere il pannello mobile (aperto come finestra separata).
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_ALL:
 
@@ -185,7 +185,7 @@ Allows making the dock floating (opened as a separate window).
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_ALL** = ``7``
 
-Allows placing the dock in all available slots.
+Consente di collocare il pannello in tutti gli slot disponibili.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ enum **DockSlot**: :ref:`🔗<enum_EditorDock_DockSlot>`
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_NONE** = ``-1``
 
-The dock is closed.
+Il pannello è chiuso.
 
 .. _class_EditorDock_constant_DOCK_SLOT_LEFT_UL:
 
@@ -211,7 +211,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_UL** = ``0``
 
-Slot di pannelli, lato sinistro, in alto a sinistra (vuoto nel layout predefinito).
+Slot di pannelli, lato sinistro, in alto a sinistra (vuoto nella disposizione predefinita).
 
 .. _class_EditorDock_constant_DOCK_SLOT_LEFT_BL:
 
@@ -219,7 +219,7 @@ Slot di pannelli, lato sinistro, in alto a sinistra (vuoto nel layout predefinit
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_BL** = ``1``
 
-Slot di pannelli, lato sinistro, in basso a sinistra (vuoto nel layout predefinito).
+Slot di pannelli, lato sinistro, in basso a sinistra (vuoto nella disposizione predefinita).
 
 .. _class_EditorDock_constant_DOCK_SLOT_LEFT_UR:
 
@@ -227,7 +227,7 @@ Slot di pannelli, lato sinistro, in basso a sinistra (vuoto nel layout predefini
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_UR** = ``2``
 
-Slot di pannelli, lato sinistro, in alto a destra (nel layout predefinito include i pannelli Scena e Importazione).
+Slot di pannelli, lato sinistro, in alto a destra (nella disposizione predefinita include i pannelli Scena e Importazione).
 
 .. _class_EditorDock_constant_DOCK_SLOT_LEFT_BR:
 
@@ -235,7 +235,7 @@ Slot di pannelli, lato sinistro, in alto a destra (nel layout predefinito includ
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_BR** = ``3``
 
-Dock slot, left side, bottom-right (in default layout includes FileSystem and History docks).
+Slot di pannelli, lato sinistro, in basso a destra (nella disposizione predefinita include i pannelli FileSystem e Cronologia).
 
 .. _class_EditorDock_constant_DOCK_SLOT_RIGHT_UL:
 
@@ -243,7 +243,7 @@ Dock slot, left side, bottom-right (in default layout includes FileSystem and Hi
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_UL** = ``4``
 
-Dock slot, right side, upper-left (in default layout includes Inspector, Signal, and Group docks).
+Slot di pannelli, lato destro, in alto a sinistra (nella disposizione predefinita include i pannelli Ispettore, Segnali e Cronologia).
 
 .. _class_EditorDock_constant_DOCK_SLOT_RIGHT_BL:
 
@@ -251,7 +251,7 @@ Dock slot, right side, upper-left (in default layout includes Inspector, Signal,
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_BL** = ``5``
 
-Slot di pannelli, lato destro, in basso a sinistra (vuoto nel layout predefinito).
+Slot di pannelli, lato destro, in basso a sinistra (vuoto nella disposizione predefinita).
 
 .. _class_EditorDock_constant_DOCK_SLOT_RIGHT_UR:
 
@@ -259,7 +259,7 @@ Slot di pannelli, lato destro, in basso a sinistra (vuoto nel layout predefinito
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_UR** = ``6``
 
-Slot di pannelli, lato destro, in alto a destra (vuoto nel layout predefinito).
+Slot di pannelli, lato destro, in alto a destra (vuoto nella disposizione predefinita).
 
 .. _class_EditorDock_constant_DOCK_SLOT_RIGHT_BR:
 
@@ -275,7 +275,7 @@ Slot di pannelli, lato destro, in basso a destra (vuoto nel layout predefinito).
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_BOTTOM** = ``8``
 
-Bottom panel.
+Pannello inferiore.
 
 .. _class_EditorDock_constant_DOCK_SLOT_BOTTOM_L:
 
@@ -283,7 +283,7 @@ Bottom panel.
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_BOTTOM_L** = ``9``
 
-Dock slot at the bottom, below bottom panel, on the left side.
+Slot di pannelli in basso, sotto il pannello inferiore, sul lato sinistro.
 
 .. _class_EditorDock_constant_DOCK_SLOT_BOTTOM_R:
 
@@ -291,7 +291,7 @@ Dock slot at the bottom, below bottom panel, on the left side.
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_BOTTOM_R** = ``10``
 
-Dock slot at the bottom, below bottom panel, on the right side.
+Slot di pannelli in basso, sotto il pannello inferiore, sul lato destro.
 
 .. _class_EditorDock_constant_DOCK_SLOT_MAX:
 
@@ -321,7 +321,7 @@ Descrizioni delle proprietà
 - |void| **set_available_layouts**\ (\ value\: |bitfield|\[:ref:`DockLayout<enum_EditorDock_DockLayout>`\]\ )
 - |bitfield|\[:ref:`DockLayout<enum_EditorDock_DockLayout>`\] **get_available_layouts**\ (\ )
 
-The available layouts for this dock, as a bitmask. By default, the dock allows vertical and floating layouts.
+Le disposizioni disponibili per questo pannello, come maschera di bit. Come valore predefinito, il pannello consente disposizioni verticali e mobili.
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ The available layouts for this dock, as a bitmask. By default, the dock allows v
 - |void| **set_closable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_closable**\ (\ )
 
-If ``true``, the dock can be closed with the Close button in the context popup. Docks with :ref:`global<class_EditorDock_property_global>` enabled are always closable.
+Se ``true``, il pannello si può chiudere con il pulsante Chiudi nel popup contestuale. I pannello con :ref:`global<class_EditorDock_property_global>` abilitato sono sempre chiudibili.
 
 .. rst-class:: classref-item-separator
 
@@ -355,9 +355,9 @@ If ``true``, the dock can be closed with the Close button in the context popup. 
 - |void| **set_default_slot**\ (\ value\: :ref:`DockSlot<enum_EditorDock_DockSlot>`\ )
 - :ref:`DockSlot<enum_EditorDock_DockSlot>` **get_default_slot**\ (\ )
 
-The default dock slot used when adding the dock with :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>`.
+Lo slot predefinito utilizzato quando il pannello viene aggiunto con :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>`.
 
-After the dock is added, it can be moved to a different slot and the editor will automatically remember its position between sessions. If you remove and re-add the dock, it will be reset to default.
+Dopo aver aggiunto il pannello, è possibile spostarlo in uno slot diverso e l'editor ne ricorderà automaticamente la posizione tra una sessione e l'altra. Se si rimuove e si riaggiunge il pannello, questo verrà ripristinato allo slot predefinito.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ After the dock is added, it can be moved to a different slot and the editor will
 - |void| **set_dock_icon**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_dock_icon**\ (\ )
 
-The icon for the dock, as a texture. If specified, it will override :ref:`icon_name<class_EditorDock_property_icon_name>`.
+L'icona per il pannello, come texture. Se specificata, sovrascriverà :ref:`icon_name<class_EditorDock_property_icon_name>`.
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ The icon for the dock, as a texture. If specified, it will override :ref:`icon_n
 - |void| **set_dock_shortcut**\ (\ value\: :ref:`Shortcut<class_Shortcut>`\ )
 - :ref:`Shortcut<class_Shortcut>` **get_dock_shortcut**\ (\ )
 
-The shortcut used to open the dock.
+La scorciatoia da utilizzare per aprire il pannello.
 
 .. rst-class:: classref-item-separator
 
@@ -408,7 +408,7 @@ The shortcut used to open the dock.
 - |void| **set_force_show_icon**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_force_show_icon**\ (\ )
 
-If ``true``, the dock will always display an icon, regardless of :ref:`EditorSettings.interface/editor/docks/dock_tab_style<class_EditorSettings_property_interface/editor/docks/dock_tab_style>` or :ref:`EditorSettings.interface/editor/docks/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/docks/bottom_dock_tab_style>`.
+Se ``true``, il pannello visualizzerà sempre un'icona, a prescindere da :ref:`EditorSettings.interface/editor/docks/dock_tab_style<class_EditorSettings_property_interface/editor/docks/dock_tab_style>` o :ref:`EditorSettings.interface/editor/docks/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/docks/bottom_dock_tab_style>`.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ If ``true``, the dock will always display an icon, regardless of :ref:`EditorSet
 - |void| **set_global**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_global**\ (\ )
 
-If ``true``, the dock appears in the **Editor > Editor Docks** menu and can be closed. Non-global docks can still be closed using :ref:`close()<class_EditorDock_method_close>` or when :ref:`closable<class_EditorDock_property_closable>` is ``true``.
+Se ``true``, il pannello appare nel menu **Editor > Pannelli dell'editor** e può essere chiuso. I pannello non globali si possono comunque chiudere tramite :ref:`close()<class_EditorDock_method_close>` o quando :ref:`closable<class_EditorDock_property_closable>` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -442,7 +442,7 @@ If ``true``, the dock appears in the **Editor > Editor Docks** menu and can be c
 - |void| **set_icon_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_icon_name**\ (\ )
 
-The icon for the dock, as a name from the ``EditorIcons`` theme type in the editor theme. You can find the list of available icons `here <https://godot-editor-icons.github.io/>`__.
+L'icona per il pannello, come il nome del tipo del tema ``EditorIcons`` nel tema dell'editor. Puoi trovare l'elenco delle icone disponibili `qui <https://godot-editor-icons.github.io/>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -459,7 +459,7 @@ The icon for the dock, as a name from the ``EditorIcons`` theme type in the edit
 - |void| **set_layout_key**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_layout_key**\ (\ )
 
-The key representing this dock in the editor's layout file. If empty, the dock's displayed name will be used instead.
+La chiave che rappresenta questo pannello nel file di disposizione dell'editor. Se vuota, sarà utilizzato il nome visualizzato del pannello.
 
 .. rst-class:: classref-item-separator
 
@@ -476,7 +476,7 @@ The key representing this dock in the editor's layout file. If empty, the dock's
 - |void| **set_title**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_title**\ (\ )
 
-The title of the dock's tab. If empty, the dock's :ref:`Node.name<class_Node_property_name>` will be used. If the name is auto-generated (contains ``@``), the first child's name will be used instead.
+Il titolo della scheda del pannello. Se vuoto, sarà utilizzato il :ref:`Node.name<class_Node_property_name>` del pannello. Se il nome è generato automaticamente (contiene ``@``), sarà utilizzato il nome del primo nodo figlio.
 
 .. rst-class:: classref-item-separator
 
@@ -493,7 +493,7 @@ The title of the dock's tab. If empty, the dock's :ref:`Node.name<class_Node_pro
 - |void| **set_title_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_title_color**\ (\ )
 
-The color of the dock tab's title. If its alpha is ``0.0``, the default font color will be used.
+Il colore del titolo nella scheda del pannello. Se l'alfa è ``0.0`` sarà utilizzato il colore predefinito del font.
 
 .. rst-class:: classref-item-separator
 
@@ -510,7 +510,7 @@ The color of the dock tab's title. If its alpha is ``0.0``, the default font col
 - |void| **set_transient**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_transient**\ (\ )
 
-If ``true``, the dock is not automatically opened or closed when loading an editor layout, only moved. It also can't be opened using a shortcut. This is meant for docks that are opened and closed in specific cases, such as when selecting a :ref:`TileMap<class_TileMap>` or :ref:`AnimationTree<class_AnimationTree>` node.
+Se ``true``, il pannello non viene aperto o chiuso automaticamente dopo aver caricato una disposizione dell'editor, ma solo spostato. Inoltre, non spuò essere aperto tramite una scorciatoia da tastiera. È concepito per i pannelli che si aprono e chiudono in casi specifici, ad esempio dopo aver selezionato un nodo :ref:`TileMap<class_TileMap>` o :ref:`AnimationTree<class_AnimationTree>`.
 
 .. rst-class:: classref-section-separator
 
@@ -527,7 +527,7 @@ Descrizioni dei metodi
 
 |void| **_load_layout_from_config**\ (\ config\: :ref:`ConfigFile<class_ConfigFile>`, section\: :ref:`String<class_String>`\ ) |virtual| :ref:`🔗<class_EditorDock_private_method__load_layout_from_config>`
 
-Implement this method to handle loading this dock's layout. It's equivalent to :ref:`EditorPlugin._set_window_layout()<class_EditorPlugin_private_method__set_window_layout>`. ``section`` is a unique section based on :ref:`layout_key<class_EditorDock_property_layout_key>`.
+Implementa questo metodo per gestire il caricamento della disposizione di questo pannello. È equivalente a :ref:`EditorPlugin._set_window_layout()<class_EditorPlugin_private_method__set_window_layout>`. ``section`` è una sezione univoca basata su :ref:`layout_key<class_EditorDock_property_layout_key>`.
 
 .. rst-class:: classref-item-separator
 
@@ -539,7 +539,7 @@ Implement this method to handle loading this dock's layout. It's equivalent to :
 
 |void| **_save_layout_to_config**\ (\ config\: :ref:`ConfigFile<class_ConfigFile>`, section\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorDock_private_method__save_layout_to_config>`
 
-Implement this method to handle saving this dock's layout. It's equivalent to :ref:`EditorPlugin._get_window_layout()<class_EditorPlugin_private_method__get_window_layout>`. ``section`` is a unique section based on :ref:`layout_key<class_EditorDock_property_layout_key>`.
+Implementa questo metodo per gestire il salvataggio della disposizione di questo pannello. È equivalente a :ref:`EditorPlugin._get_window_layout()<class_EditorPlugin_private_method__get_window_layout>`. ``section`` è una sezione univoca basata su :ref:`layout_key<class_EditorDock_property_layout_key>`.
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ Implement this method to handle saving this dock's layout. It's equivalent to :r
 
 |void| **_update_layout**\ (\ layout\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDock_private_method__update_layout>`
 
-Implement this method to handle the layout switching for this dock. ``layout`` is one of the :ref:`DockLayout<enum_EditorDock_DockLayout>` constants.
+Implementa questo metodo per gestire il cambio di disposizione per questo pannello. ``layout`` è una delle costanti di :ref:`DockLayout<enum_EditorDock_DockLayout>`.
 
 ::
 
@@ -568,7 +568,7 @@ Implement this method to handle the layout switching for this dock. ``layout`` i
 
 |void| **close**\ (\ ) :ref:`🔗<class_EditorDock_method_close>`
 
-Closes the dock, making its tab hidden.
+Chiude il pannello, nascondendo la sua scheda.
 
 .. rst-class:: classref-item-separator
 
@@ -580,7 +580,7 @@ Closes the dock, making its tab hidden.
 
 |void| **make_visible**\ (\ ) :ref:`🔗<class_EditorDock_method_make_visible>`
 
-Focuses the dock's tab (or window if it's floating). If the dock was closed, it will be opened. If it's a bottom dock, makes the bottom panel visible.
+Focalizza la scheda (o la finestra, se mobile) del pannello. Se il pannello era chiuso, verrà aperto. Se è un pannello inferiore, rende visibile il pannello inferiore.
 
 .. rst-class:: classref-item-separator
 
@@ -592,15 +592,15 @@ Focuses the dock's tab (or window if it's floating). If the dock was closed, it 
 
 |void| **open**\ (\ ) :ref:`🔗<class_EditorDock_method_open>`
 
-Opens the dock. It will appear in the last used dock slot. If the dock has no default slot, it will be opened floating.
+Apre il pannello. Apparirà nell'ultimo slot di pannelli utilizzato. Se il pannello non ha uno slot predefinito, verrà aperto in modalità mobile.
 
-\ **Note:** This does not focus the dock. If you want to open and focus the dock, use :ref:`make_visible()<class_EditorDock_method_make_visible>`.
+\ **Nota:** Questa operazione non focalizza il pannello. Se vuoi aprire e focalizzare il pannello, usa :ref:`make_visible()<class_EditorDock_method_make_visible>`.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

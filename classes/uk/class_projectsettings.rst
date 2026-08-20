@@ -14,13 +14,13 @@ ProjectSettings
 Опис
 --------
 
-Stores variables that can be accessed from everywhere. Use :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` or :ref:`has_setting()<class_ProjectSettings_method_has_setting>` to access them. Variables stored in ``project.godot`` are also loaded into **ProjectSettings**, making this object very useful for reading custom game configuration options.
+Зберігає змінні, доступ до яких можна отримати з будь-якого місця. Для доступу до них використовуйте :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` або :ref:`has_setting()<class_ProjectSettings_method_has_setting>`. Змінні, що зберігаються у файлі ``project.godot``, також завантажуються в **ProjectSettings**, що робить цей об’єкт дуже корисним для зчитування користувацьких параметрів конфігурації гри.
 
-When naming a Project Settings property, use the full path to the setting including the category. For example, ``"application/config/name"`` for the project name. Category and property names can be viewed in the Project Settings dialog.
+При присвоєнні імені властивості налаштувань проєкту використовуйте повний шлях до налаштування, включаючи категорію. Наприклад, ``"application/config/name"`` для імені проєкту. Імена категорій та властивостей можна переглянути у діалоговому вікні «Налаштування проєкту».
 
-\ **Feature tags:** Project settings can be overridden for specific platforms and configurations (debug, release, ...) using :doc:`feature tags <../tutorials/export/feature_tags>`.
+\ **Теги функцій:** Налаштування проєкту можна перезаписати для конкретних платформ та конфігурацій (debug, release, ...) за допомогою :doc:`тегів функцій <../tutorials/export/feature_tags>`.
 
-\ **Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This file is in the same format as ``project.godot``, and can also be written using :ref:`ConfigFile<class_ConfigFile>`. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' :doc:`feature tags <../tutorials/export/feature_tags>` in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
+\ **Перезапис:** Будь-який параметр проекту можна перезаписати, створивши файл із назвою ``override.cfg`` у кореневому каталозі проекту. Цей файл має той самий формат, що й ``project.godot``, і його також можна написати за допомогою :ref:`ConfigFile<class_ConfigFile>`. Це також можна використовувати в експортованих проектах, розмістивши цей файл у тому самому каталозі, що й бінарний файл проекту. При перевизначенні все одно враховуватимуться :doc:`теги функцій <../tutorials/export/feature_tags>` базових налаштувань проєкту. Тому переконайтеся, що ви *також* перевизначили налаштування з потрібними тегами функцій, якщо хочете, щоб вони замінили базові налаштування проєкту на всіх платформах та у всіх конфігураціях.
 
 .. rst-class:: classref-introduction-group
 
@@ -14719,9 +14719,9 @@ OIDN використовуватиме прискорення GPU при ная
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ ) :ref:`🔗<class_ProjectSettings_method_save>`
 
-Saves the configuration to the ``project.godot`` file.
+Зберігає конфігурацію у файлі ``project.godot``.
 
-\ **Note:** This method is intended to be used by editor plugins, as modified **ProjectSettings** can't be loaded back in the running app. If you want to change project settings in exported projects, use :ref:`save_custom()<class_ProjectSettings_method_save_custom>` to save an ``override.cfg`` file.
+\ **Примітка:** Цей метод призначений для використання плагінами редактора, оскільки змінені налаштування **ProjectSettings** не можна завантажити назад у запущену програму. Якщо ви хочете змінити налаштування експортованих проєктів, скористайтеся ``методом save_custom`` для збереження файлу ``override.cfg``.
 
 .. rst-class:: classref-item-separator
 
@@ -14733,7 +14733,7 @@ Saves the configuration to the ``project.godot`` file.
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_custom**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ProjectSettings_method_save_custom>`
 
-Saves the configuration to a custom file. The file extension must be ``.godot`` (to save in text-based :ref:`ConfigFile<class_ConfigFile>` format) or ``.binary`` (to save in binary format). You can also save an ``override.cfg`` file, which is also text, but can be used in exported projects unlike other formats.
+Заощаджує конфігурацію на власний файл. Розширення файлу повинно бути ``.godot`` (збережіть в текстовому форматі :ref:`ConfigFile<class_ConfigFile>`) або ``.binary`` (збережіть в бінарному форматі). Ви також можете зберегти ``override.cfg`` файл, який також текст, але можна використовувати в експортованих проектах на відміну від інших форматів.
 
 .. rst-class:: classref-item-separator
 

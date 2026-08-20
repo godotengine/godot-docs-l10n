@@ -269,7 +269,7 @@ Script
 
 :ref:`bool<class_bool>` **has_script_method**\ (\ method_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Script_method_has_script_method>`
 
-Returns ``true`` if the script, or a base class, defines a method with the given name.
+Возвращает ``true``, если скрипт или базовый класс определяет метод с указанным именем.
 
 .. rst-class:: classref-item-separator
 

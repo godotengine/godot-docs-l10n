@@ -14,17 +14,17 @@ Una finestra modale utilizzata per visualizzare un elenco di opzioni.
 Descrizione
 ----------------------
 
-**PopupMenu** è una finestra modale utilizzata per visualizzare un elenco di opzioni. Utile per barre degli strumenti e menu contestuali.
+**PopupMenu** è una finestra modale usata per visualizzare un elenco di opzioni. Utile per barre degli strumenti e menu contestuali.
 
-Le dimensioni di un **PopupMenu** si possono limitare tramite :ref:`Window.max_size<class_Window_property_max_size>`. Se l'altezza dell'elenco di elementi è maggiore dell'altezza massima del **PopupMenu**, uno :ref:`ScrollContainer<class_ScrollContainer>` all'interno del popup consentirà all'utente di scorrere il contenuto. Se nessuna dimensione massima è impostata o se è impostata su ``0``, l'altezza del **PopupMenu** sarà limitata dal rettangolo del suo genitore.
+Le dimensioni di un **PopupMenu** si possono limitare tramite :ref:`Window.max_size<class_Window_property_max_size>`. Se l'altezza dell'elenco di voci è maggiore dell'altezza massima del **PopupMenu**, uno :ref:`ScrollContainer<class_ScrollContainer>` dentro il popup consentirà all'utente di scorrere il contenuto. Se nessuna dimensione massima è impostata o se è impostata su ``0``, l'altezza del **PopupMenu** sarà limitata dal rettangolo del suo genitore.
 
-Tutti i metodi ``set_*`` consentono indici di elementi negativi, ovvero ``-1`` per accedere all'ultimo elemento, ``-2`` per selezionare il penultimo elemento e così via.
+Tutti i metodi ``set_*`` consentono indici di voci negativi, ovvero ``-1`` per accedere all'ultima voce, ``-2`` per selezionare la penultima voce e così via.
 
-\ **Ricerca incrementale:** Come :ref:`ItemList<class_ItemList>` e :ref:`Tree<class_Tree>`, **PopupMenu** supporta la ricerca all'interno dell'elenco mentre il controllo è attivo. Premi un tasto che corrisponde alla prima lettera del nome di un elemento per selezionare il primo elemento che inizia con la lettera specificata. Dopodiché, ci sono due modi per eseguire la ricerca incrementale: 1) Premi di nuovo lo stesso tasto prima della durata del timeout per selezionare l'elemento successivo che inizia con la stessa lettera. 2) Premi i tasti delle lettere che corrispondono al resto della parola prima della durata del timeout per selezionare direttamente l'elemento in questione. Entrambe queste azioni saranno ripristinate all'inizio dell'elenco se è trascorsa la durata del timeout dall'ultima pressione di un tasto. Puoi regolare la durata del timeout modificando :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`.
+\ **Ricerca incrementale:** Come :ref:`ItemList<class_ItemList>` e :ref:`Tree<class_Tree>`, **PopupMenu** supporta la ricerca all'interno dell'elenco mentre il controllo è attivo. Premi un tasto che corrisponde alla prima lettera del nome di una voce per selezionare la prima voce che inizia con la lettera specificata. Dopodiché, ci sono due modi per eseguire la ricerca incrementale: 1) Premi di nuovo lo stesso tasto prima della durata del timeout per selezionare la voce successiva che inizia con la stessa lettera. 2) Premi i tasti delle lettere che corrispondono al resto della parola prima della durata del timeout per selezionare direttamente la voce in questione. Entrambe queste azioni saranno ripristinate all'inizio dell'elenco se è trascorsa la durata del timeout dall'ultima pressione di un tasto. Puoi regolare la durata del timeout modificando :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`.
 
 \ **Nota:** **PopupMenu** è inizialmente invisibile. Per renderlo visibile, chiama uno dei metodi ``popup_*`` da :ref:`Window<class_Window>` sul nodo, come ad esempio :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
-\ **Nota:** I valori degli ID utilizzati per gli elementi sono limitati a 32 bit, non a 64 bit pieni di :ref:`int<class_int>`. Ciò ha un intervallo di ``-2^32`` a ``2^32 - 1``, ovvero ``-2147483648`` a ``2147483647``.
+\ **Nota:** I valori degli ID utilizzati per le voci sono limitati a 32 bit, non a 64 bit pieni di :ref:`int<class_int>`. Ciò ha un intervallo di ``-2^32`` a ``2^32 - 1``, ovvero ``-2147483648`` a ``2147483647``.
 
 .. rst-class:: classref-reftable-group
 
@@ -343,7 +343,7 @@ Segnali
 
 **id_focused**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_signal_id_focused>`
 
-Emesso quando l'utente naviga verso un elemento con un certo ``id`` utilizzando l'azione di input :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` o :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>`.
+Emesso quando l'utente naviga verso una voce con un certo ``id`` tramite l'azione di input :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` o :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>`.
 
 .. rst-class:: classref-item-separator
 
@@ -355,9 +355,9 @@ Emesso quando l'utente naviga verso un elemento con un certo ``id`` utilizzando 
 
 **id_pressed**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_signal_id_pressed>`
 
-Emitted when an item of some ``id`` is pressed. Also emitted when its accelerator is activated on macOS.
+Emesso quando viene premuta una voce con un certo ``id``. Emesso anche quando viene attivato il suo acceleratore su macOS.
 
-\ **Note:** If ``id`` is negative (either explicitly or due to overflow), this will return the corresponding index instead.
+\ **Nota:** Se ``id`` è negativo (sia esplicitamente sia a causa di un overflow), sarà invece restituito l'indice corrispondente.
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ Emitted when an item of some ``id`` is pressed. Also emitted when its accelerato
 
 **index_pressed**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_signal_index_pressed>`
 
-Emitted when an item of some ``index`` is pressed. Also emitted when its accelerator is activated on macOS.
+Emesso quando viene premuta una voce con l'indice ``index``. Emesso anche quando viene attivato il suo acceleratore su macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -381,7 +381,7 @@ Emitted when an item of some ``index`` is pressed. Also emitted when its acceler
 
 **menu_changed**\ (\ ) :ref:`🔗<class_PopupMenu_signal_menu_changed>`
 
-Emesso quando un elemento viene aggiunto, modificato o rimosso.
+Emesso quando una voce viene aggiunta, modificata o rimossa.
 
 .. rst-class:: classref-section-separator
 
@@ -437,7 +437,7 @@ Se ``true``, nasconde il **PopupMenu** quando viene selezionata una casella di s
 - |void| **set_hide_on_item_selection**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hide_on_item_selection**\ (\ )
 
-Se ``true``, nasconde il **PopupMenu** quando viene selezionato un elemento.
+Se ``true``, nasconde il **PopupMenu** quando viene selezionata una voce.
 
 .. rst-class:: classref-item-separator
 
@@ -454,7 +454,7 @@ Se ``true``, nasconde il **PopupMenu** quando viene selezionato un elemento.
 - |void| **set_hide_on_state_item_selection**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hide_on_state_item_selection**\ (\ )
 
-Se ``true``, nasconde il **PopupMenu** quando viene selezionato un elemento di stato.
+Se ``true``, nasconde il **PopupMenu** quando viene selezionata una voce di stato.
 
 .. rst-class:: classref-item-separator
 
@@ -471,7 +471,7 @@ Se ``true``, nasconde il **PopupMenu** quando viene selezionato un elemento di s
 - |void| **set_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_item_count**\ (\ )
 
-Il numero di elementi attualmente nell'elenco.
+Il numero di voci attualmente nell'elenco.
 
 .. rst-class:: classref-item-separator
 
@@ -483,9 +483,9 @@ Il numero di elementi attualmente nell'elenco.
 
 :ref:`int<class_int>` **item_{index}/checkable** = ``0`` :ref:`🔗<class_PopupMenu_property_item_{index}/checkable>`
 
-The checkable item type of the item at ``index``.
+Il tipo di voce spuntabile per la voce all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -497,9 +497,9 @@ The checkable item type of the item at ``index``.
 
 :ref:`bool<class_bool>` **item_{index}/checked** = ``false`` :ref:`🔗<class_PopupMenu_property_item_{index}/checked>`
 
-Se ``true``, l'elemento all'indice ``index`` è spuntato.
+Se ``true``, la voce all'indice ``index`` è spuntata.
 
-\ **Note:** ``index`` è un valore compreso tra ``0 .. item_count - 1``.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -511,9 +511,9 @@ Se ``true``, l'elemento all'indice ``index`` è spuntato.
 
 :ref:`bool<class_bool>` **item_{index}/disabled** = ``false`` :ref:`🔗<class_PopupMenu_property_item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+Se ``true``, la voce all'indice ``index`` è disabilitata.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -525,9 +525,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **item_{index}/icon** :ref:`🔗<class_PopupMenu_property_item_{index}/icon>`
 
-The icon of the item at ``index``.
+L'icona della voce all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -539,9 +539,9 @@ The icon of the item at ``index``.
 
 :ref:`int<class_int>` **item_{index}/id** = ``0`` :ref:`🔗<class_PopupMenu_property_item_{index}/id>`
 
-The ID of the item at ``index``.
+L'ID della voce all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -553,9 +553,9 @@ The ID of the item at ``index``.
 
 :ref:`bool<class_bool>` **item_{index}/separator** = ``false`` :ref:`🔗<class_PopupMenu_property_item_{index}/separator>`
 
-If ``true``, the item at ``index`` is a separator.
+Se ``true``, la voce all'indice ``index`` è un separatore.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -567,9 +567,9 @@ If ``true``, the item at ``index`` is a separator.
 
 :ref:`String<class_String>` **item_{index}/text** = ``""`` :ref:`🔗<class_PopupMenu_property_item_{index}/text>`
 
-The text of the item at ``index``.
+Il testo della voce all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -588,7 +588,7 @@ The text of the item at ``index``.
 
 Se ``true``, il :ref:`MenuBar<class_MenuBar>` utilizzerà il menu nativo quando supportato.
 
-\ **Nota:** Se il **PopupMenu** è collegato a uno :ref:`StatusIndicator<class_StatusIndicator>`, il :ref:`MenuBar<class_MenuBar>` o un altro elemento **PopupMenu** può utilizzare il menu nativo a prescindere da questa proprietà, usa :ref:`is_native_menu()<class_PopupMenu_method_is_native_menu>` per verificarlo.
+\ **Nota:** Se il **PopupMenu** è collegato a uno :ref:`StatusIndicator<class_StatusIndicator>`, il :ref:`MenuBar<class_MenuBar>` o un'altra voce **PopupMenu** può utilizzare il menu nativo a prescindere da questa proprietà, usa :ref:`is_native_menu()<class_PopupMenu_method_is_native_menu>` per verificarlo.
 
 .. rst-class:: classref-item-separator
 
@@ -605,9 +605,9 @@ Se ``true``, il :ref:`MenuBar<class_MenuBar>` utilizzerà il menu nativo quando 
 - |void| **set_search_bar_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_enabled**\ (\ )
 
-If ``true``, shows a search bar at the top of the **PopupMenu** for filtering items. See :ref:`search_bar_min_item_count<class_PopupMenu_property_search_bar_min_item_count>` for dynamically controlling its visibility based on the number of items.
+Se ``true``, mostra una barra di ricerca in cima al **PopupMenu** per filtrare le voci. Vedi :ref:`search_bar_min_item_count<class_PopupMenu_property_search_bar_min_item_count>` per controllare dinamicamente la sua visibilità in base al numero di voci.
 
-\ **Note:** When enabled, :ref:`allow_search<class_PopupMenu_property_allow_search>` is ignored.
+\ **Nota:** Quando abilitato, :ref:`allow_search<class_PopupMenu_property_allow_search>` è ignorato.
 
 .. rst-class:: classref-item-separator
 
@@ -624,9 +624,9 @@ If ``true``, shows a search bar at the top of the **PopupMenu** for filtering it
 - |void| **set_search_bar_fuzzy_search_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_fuzzy_search_enabled**\ (\ )
 
-If ``true``, enables fuzzy searching in the **PopupMenu** search bar. This allows the search results to include items that almost match the search query, as well items that match the individual characters of the search query, but not in sequence.
+Se ``true``, abilita la ricerca approssimata nella barra di ricerca del **PopupMenu**. Ciò consente di includere nei risultati di ricerca voci che quasi corrispondono alla query di ricerca, nonché voci che corrispondono ai singoli caratteri della query di ricerca, ma non in sequenza.
 
-Use :ref:`search_bar_fuzzy_search_max_misses<class_PopupMenu_property_search_bar_fuzzy_search_max_misses>` to set the maximum number of mismatches allowed in the search results.
+Usa :ref:`search_bar_fuzzy_search_max_misses<class_PopupMenu_property_search_bar_fuzzy_search_max_misses>` per impostare il numero massimo di corrispondenze errate consentite nei risultati di ricerca.
 
 .. rst-class:: classref-item-separator
 
@@ -643,7 +643,7 @@ Use :ref:`search_bar_fuzzy_search_max_misses<class_PopupMenu_property_search_bar
 - |void| **set_search_bar_fuzzy_search_max_misses**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_fuzzy_search_max_misses**\ (\ )
 
-Sets the maximum number of mismatches allowed in each search result when fuzzy searching is enabled for the **PopupMenu** search bar. Any item with more mismatches will be hidden from the search results.
+Imposta il numero massimo di corrispondenze errate consentite in ciascun risultato di ricerca quando la ricerca approssimata è abilitata per la barra di ricerca del **PopupMenu**. Qualsiasi voce con un numero di corrispondenze errate maggiore sarà nascosto dai risultati di ricerca.
 
 .. rst-class:: classref-item-separator
 
@@ -660,7 +660,7 @@ Sets the maximum number of mismatches allowed in each search result when fuzzy s
 - |void| **set_search_bar_min_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_min_item_count**\ (\ )
 
-Imposta il numero minimo di elementi richiesti affinché la barra di ricerca sia visibile. :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` deve essere ``false`` affinché questo abbia effetto. Gli elementi separatori non contano.
+Imposta il numero minimo di voci richieste affinché la barra di ricerca sia visibile. :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` deve essere ``false`` affinché questo abbia effetto. Le voci separatori non contano.
 
 .. rst-class:: classref-item-separator
 
@@ -677,7 +677,7 @@ Imposta il numero minimo di elementi richiesti affinché la barra di ricerca sia
 - |void| **set_shrink_height**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_shrink_height**\ (\ )
 
-If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
+Se ``true``, rimpicciolisce il **PopupMenu** alla minima altezza quando viene mostrato.
 
 .. rst-class:: classref-item-separator
 
@@ -694,7 +694,7 @@ If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
 - |void| **set_shrink_width**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_shrink_width**\ (\ )
 
-If ``true``, shrinks **PopupMenu** to minimum width when it's shown.
+Se ``true``, rimpicciolisce il **PopupMenu** alla minima larghezza quando viene mostrato.
 
 .. rst-class:: classref-item-separator
 
@@ -711,9 +711,9 @@ If ``true``, shrinks **PopupMenu** to minimum width when it's shown.
 - |void| **set_submenu_popup_delay**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_submenu_popup_delay**\ (\ )
 
-Sets the delay time in seconds for the submenu item to popup on mouse hovering. If the popup menu is added as a child of another (acting as a submenu), it will inherit the delay time of the parent menu item.
+Imposta il tempo di ritardo in secondi prima di far apparire la voce di sottomenu al passaggio del mouse. Se il menu popup è aggiunto come figlio di un altro (fungendo da sottomenu), erediterà il tempo di ritardo della voce padre.
 
-\ **Note:** If the mouse is exiting a submenu item with an open submenu and enters a different submenu item, the submenu popup delay time is affected by the direction of the mouse movement toward the open submenu. If the mouse is moving toward the submenu, the open submenu will wait approximately ``0.5`` seconds before closing, which then allows the hovered submenu item to open. This additional delay allows the mouse time to move to the open submenu across other menu items without prematurely closing. If the mouse is not moving toward the open submenu, for example in a downward direction, the open submenu will close immediately.
+\ **Nota:** Se il mouse esce da una voce di sottomenu con un sottomenu aperto ed entra in un altra voce di sottomenu, il tempo di ritardo per la farlo apparire è influenzato dalla direzione di movimento del mouse verso il sottomenu aperto. Se il mouse si muove verso il sottomenu, il sottomenu aperto attenderà circa ``0.5`` secondi prima di chiudersi, il che consente alla voce di sottomenu puntata dal mouse di aprirsi. Questo ritardo in più permette al mouse di spostarsi sul sottomenu aperto, attraversando altre voci del menu, senza che si chiuda prematuramente. Se il mouse non si muove verso il sottomenu aperto, ad esempio verso il basso, il sottomenu si chiuderà immediatamente.
 
 .. rst-class:: classref-item-separator
 
@@ -747,9 +747,9 @@ Descrizioni dei metodi
 
 :ref:`bool<class_bool>` **activate_item_by_event**\ (\ event\: :ref:`InputEvent<class_InputEvent>`, for_global_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PopupMenu_method_activate_item_by_event>`
 
-Controlla l'evento ``event`` fornito rispetto alle scorciatoie e agli acceleratori del **PopupMenu** e attiva il primo elemento con gli eventi corrispondenti. Se ``for_global_only`` è ``true``, saranno chiamati solo le scorciatoie e gli acceleratori con ``global`` impostato su ``true``.
+Verifica l'evento ``event`` fornito rispetto alle scorciatoie e agli acceleratori del **PopupMenu** e attiva la prima voce con gli eventi corrispondenti. Se ``for_global_only`` è ``true``, saranno chiamati solo le scorciatoie e gli acceleratori con ``global`` impostato su ``true``.
 
-Restituisce ``true`` se un elemento è stato attivato correttamente.
+Restituisce ``true`` se una voce è stata attivata correttamente.
 
 \ **Nota:** Alcuni :ref:`Control<class_Control>`, come :ref:`MenuButton<class_MenuButton>`, chiameranno questo metodo automaticamente.
 
@@ -763,11 +763,11 @@ Restituisce ``true`` se un elemento è stato attivato correttamente.
 
 |void| **add_check_item**\ (\ label\: :ref:`String<class_String>`, id\: :ref:`int<class_int>` = -1, accel\: :ref:`Key<enum_@GlobalScope_Key>` = 0\ ) :ref:`🔗<class_PopupMenu_method_add_check_item>`
 
-Aggiunge un nuovo elemento spuntabile con il testo ``label``.
+Aggiunge una nuova voce spuntabile con il testo ``label``.
 
-È possibile fornire un ``id`` facoltativamente, così come un acceleratore (``accel``). Se nessun ``id`` è fornito, ne sarà creato uno dall'indice. Se nessun ``accel`` è fornito, all'elemento sarà assegnato il valore predefinito 0 (corrispondente a :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`) (il che significa che non avrà alcun acceleratore). Consulta :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` per ulteriori informazioni sugli acceleratori.
+È possibile fornire un ``id`` facoltativamente, così come un acceleratore (``accel``). Se nessun ``id`` è fornito, ne sarà creato uno dall'indice. Se nessun ``accel`` è fornito, alla voce sarà assegnata il valore predefinito 0 (corrispondente a :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`) (il che significa che non avrà alcun acceleratore). Consulta :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` per ulteriori informazioni sugli acceleratori.
 
-\ **Nota:** Gli elementi spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di spunta incorporato e devono essere selezionati e deselezionati manualmente. Consulta :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>` per ulteriori informazioni su come controllarli.
+\ **Nota:** Le voci spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di spunta incorporato e devono essere selezionate e deselezionate manualmente. Consulta :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>` per ulteriori informazioni su come controllarle.
 
 .. rst-class:: classref-item-separator
 
@@ -779,11 +779,11 @@ Aggiunge un nuovo elemento spuntabile con il testo ``label``.
 
 |void| **add_check_shortcut**\ (\ shortcut\: :ref:`Shortcut<class_Shortcut>`, id\: :ref:`int<class_int>` = -1, global\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PopupMenu_method_add_check_shortcut>`
 
-Aggiunge un nuovo elemento spuntabile e gli assegna la scorciatoia (:ref:`Shortcut<class_Shortcut>`) specificata. Imposta l'etichetta della casella di spunta sul nome del :ref:`Shortcut<class_Shortcut>`.
+Aggiunge una nuova voce spuntabile e le assegna la scorciatoia (:ref:`Shortcut<class_Shortcut>`) specificata. Imposta l'etichetta della casella di spunta sul nome del :ref:`Shortcut<class_Shortcut>`.
 
 È possibile fornire un ``id`` facoltativamente. Se nessun ``id`` è fornito, ne sarà creato uno dall'indice.
 
-\ **Nota:** Gli elementi spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di spunta incorporato e devono essere selezionati e deselezionati manualmente. Consulta :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>` per ulteriori informazioni su come controllarli.
+\ **Nota:** Le voci spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di spunta incorporato e devono essere selezionate e deselezionate manualmente. Consulta :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>` per ulteriori informazioni su come controllarle.
 
 .. rst-class:: classref-item-separator
 
@@ -795,11 +795,11 @@ Aggiunge un nuovo elemento spuntabile e gli assegna la scorciatoia (:ref:`Shortc
 
 |void| **add_icon_check_item**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, label\: :ref:`String<class_String>`, id\: :ref:`int<class_int>` = -1, accel\: :ref:`Key<enum_@GlobalScope_Key>` = 0\ ) :ref:`🔗<class_PopupMenu_method_add_icon_check_item>`
 
-Aggiunge un nuovo elemento spuntabile con il testo ``label`` e l'icona ``texture``.
+Aggiunge una nuova voce spuntabile con il testo ``label`` e l'icona ``texture``.
 
-È possibile fornire un ``id`` facoltativamente, così come un acceleratore (``accel``). Se nessun ``id`` è fornito, ne sarà creato uno dall'indice. Se nessun ``accel`` è fornito, all'elemento sarà assegnato il valore predefinito 0 (corrispondente a :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`) (il che significa che non avrà alcun acceleratore). Consulta :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` per ulteriori informazioni sugli acceleratori.
+È possibile fornire un ``id`` facoltativamente, così come un acceleratore (``accel``). Se nessun ``id`` è fornito, ne sarà creato uno dall'indice. Se nessun ``accel`` è fornito, alla voce sarà assegnata il valore predefinito 0 (corrispondente a :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`) (il che significa che non avrà alcun acceleratore). Consulta :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` per ulteriori informazioni sugli acceleratori.
 
-\ **Nota:** Gli elementi spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di spunta incorporato e devono essere selezionati e deselezionati manualmente. Consulta :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>` per ulteriori informazioni su come controllarli.
+\ **Nota:** Le voci spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di spunta incorporato e devono essere selezionate e deselezionate manualmente. Consulta :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>` per ulteriori informazioni su come controllarle.
 
 .. rst-class:: classref-item-separator
 
@@ -811,11 +811,11 @@ Aggiunge un nuovo elemento spuntabile con il testo ``label`` e l'icona ``texture
 
 |void| **add_icon_check_shortcut**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, shortcut\: :ref:`Shortcut<class_Shortcut>`, id\: :ref:`int<class_int>` = -1, global\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PopupMenu_method_add_icon_check_shortcut>`
 
-Aggiunge un nuovo elemento spuntabile e gli assegna la scorciatoia (:ref:`Shortcut<class_Shortcut>`) e l'icona ``texture`` specificate. Imposta l'etichetta della casella di spunta sul nome del :ref:`Shortcut<class_Shortcut>`.
+Aggiunge una nuova voce spuntabile e le assegna la scorciatoia (:ref:`Shortcut<class_Shortcut>`) e l'icona ``texture`` specificate. Imposta l'etichetta della casella di spunta sul nome del :ref:`Shortcut<class_Shortcut>`.
 
 È possibile fornire un ``id`` facoltativamente. Se nessun ``id`` è fornito, ne sarà creato uno dall'indice.
 
-\ **Nota:** Gli elementi spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di spunta incorporato e devono essere selezionati e deselezionati manualmente. Consulta :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>` per ulteriori informazioni su come controllarli.
+\ **Nota:** Le voci spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di spunta incorporato e devono essere selezionate e deselezionate manualmente. Consulta :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>` per ulteriori informazioni su come controllarle.
 
 .. rst-class:: classref-item-separator
 
@@ -827,9 +827,9 @@ Aggiunge un nuovo elemento spuntabile e gli assegna la scorciatoia (:ref:`Shortc
 
 |void| **add_icon_item**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, label\: :ref:`String<class_String>`, id\: :ref:`int<class_int>` = -1, accel\: :ref:`Key<enum_@GlobalScope_Key>` = 0\ ) :ref:`🔗<class_PopupMenu_method_add_icon_item>`
 
-Aggiunge un nuovo elemento con il testo ``label`` e l'icona ``texture``.
+Aggiunge una nuova voce con il testo ``label`` e l'icona ``texture``.
 
-È possibile fornire un ``id`` facoltativamente, così come un acceleratore (``accel``). Se nessun ``id`` è fornito, ne sarà creato uno dall'indice. Se nessun ``accel`` è fornito, all'elemento sarà assegnato il valore predefinito 0 (corrispondente a :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`) (il che significa che non avrà alcun acceleratore). Consulta :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` per ulteriori informazioni sugli acceleratori.
+È possibile fornire un ``id`` facoltativamente, così come un acceleratore (``accel``). Se nessun ``id`` è fornito, ne sarà creato uno dall'indice. Se nessun ``accel`` è fornito, alla voce sarà assegnata il valore predefinito 0 (corrispondente a :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`) (il che significa che non avrà alcun acceleratore). Consulta :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` per ulteriori informazioni sugli acceleratori.
 
 .. rst-class:: classref-item-separator
 
@@ -865,7 +865,7 @@ Uguale a :ref:`add_icon_check_shortcut()<class_PopupMenu_method_add_icon_check_s
 
 |void| **add_icon_shortcut**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, shortcut\: :ref:`Shortcut<class_Shortcut>`, id\: :ref:`int<class_int>` = -1, global\: :ref:`bool<class_bool>` = false, allow_echo\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PopupMenu_method_add_icon_shortcut>`
 
-Aggiunge un nuovo elemento e gli assegna la scorciatoia (:ref:`Shortcut<class_Shortcut>`) e l'icona ``texture`` specificate. Imposta l'etichetta della casella di spunta sul nome del :ref:`Shortcut<class_Shortcut>`.
+Aggiunge una nuova voce e le assegna la scorciatoia (:ref:`Shortcut<class_Shortcut>`) e l'icona ``texture`` specificate. Imposta l'etichetta della casella di spunta sul nome del :ref:`Shortcut<class_Shortcut>`.
 
 È possibile fornire un ``id`` facoltativamente. Se nessun ``id`` è fornito, ne sarà creato uno dall'indice.
 
@@ -881,9 +881,9 @@ Se ``allow_echo`` è ``true``, la scorciatoia può essere attivata con eventi ec
 
 |void| **add_item**\ (\ label\: :ref:`String<class_String>`, id\: :ref:`int<class_int>` = -1, accel\: :ref:`Key<enum_@GlobalScope_Key>` = 0\ ) :ref:`🔗<class_PopupMenu_method_add_item>`
 
-Aggiunge un nuovo elemento con il testo ``label``.
+Aggiunge una nuova voce con il testo ``label``.
 
-È possibile fornire un ``id`` facoltativamente, così come un acceleratore (``accel``). Se nessun ``id`` è fornito, ne sarà creato uno dall'indice. Se nessun ``accel`` è fornito, all'elemento sarà assegnato il valore predefinito 0 (corrispondente a :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`) (il che significa che non avrà alcun acceleratore). Consulta :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` per ulteriori informazioni sugli acceleratori.
+È possibile fornire un ``id`` facoltativamente, così come un acceleratore (``accel``). Se nessun ``id`` è fornito, ne sarà creato uno dall'indice. Se nessun ``accel`` è fornito, alla voce sarà assegnata il valore predefinito 0 (corrispondente a :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`) (il che significa che non avrà alcun acceleratore). Consulta :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` per ulteriori informazioni sugli acceleratori.
 
 \ **Nota:** Il ``id`` fornito è utilizzato solo nei segnali :ref:`id_pressed<class_PopupMenu_signal_id_pressed>` e :ref:`id_focused<class_PopupMenu_signal_id_focused>`. Non è correlato agli argomenti ``index`` ad esempio in :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>`.
 
@@ -919,7 +919,7 @@ Contrariamente alle voci binarie normali, le voci multistato possono avere più 
                         print("Terzo stato")
             )
 
-\ **Nota:** Le voci multistato non aggiornano automaticamente il loro stato e bisogna farlo manualmente. Consulta :ref:`toggle_item_multistate()<class_PopupMenu_method_toggle_item_multistate>`, :ref:`set_item_multistate()<class_PopupMenu_method_set_item_multistate>` e :ref:`get_item_multistate()<class_PopupMenu_method_get_item_multistate>` per ulteriori informazioni su come controllarli.
+\ **Nota:** Le voci multistato non aggiornano automaticamente il loro stato e bisogna farlo manualmente. Consulta :ref:`toggle_item_multistate()<class_PopupMenu_method_toggle_item_multistate>`, :ref:`set_item_multistate()<class_PopupMenu_method_set_item_multistate>` e :ref:`get_item_multistate()<class_PopupMenu_method_get_item_multistate>` per ulteriori informazioni su come controllarle.
 
 .. rst-class:: classref-item-separator
 
@@ -933,9 +933,9 @@ Contrariamente alle voci binarie normali, le voci multistato possono avere più 
 
 Aggiunge un nuovo pulsante di controllo radio con il testo ``label``.
 
-È possibile fornire un ``id`` facoltativamente, così come un acceleratore (``accel``). Se nessun ``id`` è fornito, ne sarà creato uno dall'indice. Se nessun ``accel`` è fornito, all'elemento sarà assegnato il valore predefinito 0 (corrispondente a :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`) (il che significa che non avrà alcun acceleratore). Consulta :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` per ulteriori informazioni sugli acceleratori.
+È possibile fornire un ``id`` facoltativamente, così come un acceleratore (``accel``). Se nessun ``id`` è fornito, ne sarà creato uno dall'indice. Se nessun ``accel`` è fornito, alla voce sarà assegnata il valore predefinito 0 (corrispondente a :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`) (il che significa che non avrà alcun acceleratore). Consulta :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` per ulteriori informazioni sugli acceleratori.
 
-\ **Nota:** Gli elementi spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di spunta incorporato e devono essere selezionati e deselezionati manualmente. Consulta :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>` per ulteriori informazioni su come controllarli.
+\ **Nota:** Le voci spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di spunta incorporato e devono essere selezionate e deselezionate manualmente. Consulta :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>` per ulteriori informazioni su come controllarle.
 
 .. rst-class:: classref-item-separator
 
@@ -951,7 +951,7 @@ Aggiunge un nuovo pulsante di controllo radio e gli assegna la scorciatoia (:ref
 
 È possibile fornire un ``id`` facoltativamente. Se nessun ``id`` è fornito, ne sarà creato uno dall'indice.
 
-\ **Nota:** Gli elementi spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di spunta incorporato e devono essere selezionati e deselezionati manualmente. Consulta :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>` per ulteriori informazioni su come controllarli.
+\ **Nota:** Le voci spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di spunta incorporato e devono essere selezionate e deselezionate manualmente. Consulta :ref:`set_item_checked()<class_PopupMenu_method_set_item_checked>` per ulteriori informazioni su come controllarle.
 
 .. rst-class:: classref-item-separator
 
@@ -963,7 +963,7 @@ Aggiunge un nuovo pulsante di controllo radio e gli assegna la scorciatoia (:ref
 
 |void| **add_separator**\ (\ label\: :ref:`String<class_String>` = "", id\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_PopupMenu_method_add_separator>`
 
-Aggiunge un separatore tra gli elementi. Anche i separatori occupano un indice, che è possibile impostare usando il parametro ``id``.
+Aggiunge un separatore tra le voci. Anche i separatori occupano un indice, che è possibile impostare usando il parametro ``id``.
 
 È possibile fornire facoltativamente un ``label``, che apparirà al centro del separatore.
 
@@ -995,7 +995,7 @@ Se ``allow_echo`` è ``true``, la scorciatoia può essere attivata con eventi ec
 
 **Deprecato:** Prefer using :ref:`add_submenu_node_item()<class_PopupMenu_method_add_submenu_node_item>` instead.
 
-Aggiunge un elemento che fungerà da sottomenu del nodo **PopupMenu** genitore quando cliccato. L'argomento ``submenu`` deve essere il nome di un **PopupMenu** esistente che è stato aggiunto come figlio a questo nodo. Questo sottomenu sarà mostrato quando l'elemento viene cliccato, ci si passa sopra con il mouse per un tempo lungo abbastanza o viene attivato usando le azioni di input ``ui_select`` o ``ui_right``.
+Aggiunge una voce che fungerà da sottomenu del nodo **PopupMenu** genitore quando cliccata. L'argomento ``submenu`` deve essere il nome di un **PopupMenu** esistente che è stato aggiunto come figlio a questo nodo. Questo sottomenu verrà mostrato quando la voce viene cliccata, ci si passa sopra con il mouse per abbastanza a lungo o viene attivata tramite le azioni di input ``ui_select`` o ``ui_right``.
 
 È possibile fornire un ``id`` facoltativamente. Se nessun ``id`` è fornito, ne sarà creato uno dall'indice.
 
@@ -1009,7 +1009,7 @@ Aggiunge un elemento che fungerà da sottomenu del nodo **PopupMenu** genitore q
 
 |void| **add_submenu_node_item**\ (\ label\: :ref:`String<class_String>`, submenu\: :ref:`PopupMenu<class_PopupMenu>`, id\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_PopupMenu_method_add_submenu_node_item>`
 
-Aggiunge un elemento che fungerà da sottomenu del nodo **PopupMenu** genitore quando cliccato. Questo sottomenu sarà mostrato quando l'elemento viene cliccato, ci si passa sopra per un tempo lungo abbastanza o viene attivato usando le azioni di input ``ui_select`` o ``ui_right``.
+Aggiunge una voce che fungerà da sottomenu del nodo **PopupMenu** genitore quando cliccata. Questo sottomenu verrà mostrato quando la voce viene cliccata, ci si passa sopra per abbastanza a lungo o viene attivata tramite le azioni di input ``ui_select`` o ``ui_right``.
 
 \ ``submenu`` deve essere figlio di questo **PopupMenu** o non avere alcun nodo genitore (nel qual caso sarà aggiunto automaticamente come figlio). Se il popup ``submenu`` ha un altro genitore, questo metodo fallirà.
 
@@ -1025,7 +1025,7 @@ Aggiunge un elemento che fungerà da sottomenu del nodo **PopupMenu** genitore q
 
 |void| **clear**\ (\ free_submenus\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PopupMenu_method_clear>`
 
-Rimuove tutti gli elementi dal **PopupMenu**. Se ``free_submenus`` è ``true``, i nodi del sottomenu sono liberati automaticamente.
+Rimuove tutte le voci dal **PopupMenu**. Se ``free_submenus`` è ``true``, i nodi del sottomenu sono liberati automaticamente.
 
 .. rst-class:: classref-item-separator
 
@@ -1037,7 +1037,7 @@ Rimuove tutti gli elementi dal **PopupMenu**. Se ``free_submenus`` è ``true``, 
 
 :ref:`int<class_int>` **get_focused_item**\ (\ ) |const| :ref:`🔗<class_PopupMenu_method_get_focused_item>`
 
-Restituisce l'indice dell'elemento attualmente focalizzato. Restituisce ``-1`` se nessun elemento è focalizzato.
+Restituisce l'indice della voce attualmente focalizzata. Restituisce ``-1`` se nessuna voce è focalizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -1049,7 +1049,7 @@ Restituisce l'indice dell'elemento attualmente focalizzato. Restituisce ``-1`` s
 
 :ref:`Key<enum_@GlobalScope_Key>` **get_item_accelerator**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_accelerator>`
 
-Restituisce l'acceleratore dell'elemento all'indice ``index``. Un acceleratore è una scorciatoia da tastiera che può essere premuta per attivare il pulsante del menu anche se non è attualmente aperto. Il valore restituito è un intero che generalmente è una combinazione delle costanti di :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` e di :ref:`Key<enum_@GlobalScope_Key>` utilizzando l'operatore OR bit a bit, come ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`). Se nessun acceleratore è definito per l'indice ``index``, :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` restituisce ``0`` (corrispondente a :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`).
+Restituisce l'acceleratore della voce all'indice ``index``. Un acceleratore è una scorciatoia da tastiera che può essere premuta per attivare il pulsante del menu anche se non è attualmente aperto. Il valore restituito è un intero che generalmente è una combinazione delle costanti di :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` e di :ref:`Key<enum_@GlobalScope_Key>` utilizzando l'operatore OR bit a bit, come ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`). Se nessun acceleratore è definito per l'indice ``index``, :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` restituisce ``0`` (corrispondente a :ref:`@GlobalScope.KEY_NONE<class_@GlobalScope_constant_KEY_NONE>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1061,7 +1061,7 @@ Restituisce l'acceleratore dell'elemento all'indice ``index``. Un acceleratore �
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_item_auto_translate_mode**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_auto_translate_mode>`
 
-Restituisce la modalità di traduzione automatica dell'elemento all'indice ``index``.
+Restituisce la modalità di traduzione automatica della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1073,7 +1073,7 @@ Restituisce la modalità di traduzione automatica dell'elemento all'indice ``ind
 
 :ref:`Texture2D<class_Texture2D>` **get_item_icon**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_icon>`
 
-Restituisce l'icona dell'elemento all'indice ``index``.
+Restituisce l'icona della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1085,7 +1085,7 @@ Restituisce l'icona dell'elemento all'indice ``index``.
 
 :ref:`int<class_int>` **get_item_icon_max_width**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_icon_max_width>`
 
-Restituisce la larghezza massima consentita dell'icona per l'elemento all'indice ``index``.
+Restituisce la larghezza massima consentita dell'icona per la voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1097,7 +1097,7 @@ Restituisce la larghezza massima consentita dell'icona per l'elemento all'indice
 
 :ref:`Color<class_Color>` **get_item_icon_modulate**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_icon_modulate>`
 
-Restituisce il colore che modula l'icona dell'elemento all'indice ``index``.
+Restituisce il colore che modula l'icona della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1109,7 +1109,7 @@ Restituisce il colore che modula l'icona dell'elemento all'indice ``index``.
 
 :ref:`int<class_int>` **get_item_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_id>`
 
-Returns the ID of the item at the given ``index``.
+Restituisce l'icona della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1121,7 +1121,7 @@ Returns the ID of the item at the given ``index``.
 
 :ref:`int<class_int>` **get_item_indent**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_indent>`
 
-Restituisce l'offset orizzontale dell'elemento all'indice ``index``.
+Restituisce l'offset orizzontale della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1133,7 +1133,7 @@ Restituisce l'offset orizzontale dell'elemento all'indice ``index``.
 
 :ref:`int<class_int>` **get_item_index**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_index>`
 
-Returns the index of the item containing the specified ``id``. The index is automatically assigned to each item by the engine when added and represents the order items will be displayed.
+Restituisce l'indice della voce contenente l'``id`` specificato. L'indice è assegnato automaticamente a ciascuna voce dal motore e non può essere impostato manualmente.
 
 .. rst-class:: classref-item-separator
 
@@ -1145,7 +1145,7 @@ Returns the index of the item containing the specified ``id``. The index is auto
 
 :ref:`String<class_String>` **get_item_language**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_language>`
 
-Restituisce il codice di lingua di testo dell'elemento.
+Restituisce il codice lingua del testo per la voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1157,7 +1157,7 @@ Restituisce il codice di lingua di testo dell'elemento.
 
 :ref:`Variant<class_Variant>` **get_item_metadata**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_metadata>`
 
-Restituisce i metadati dell'elemento specificato, che potrebbero essere di qualsiasi tipo. È possibile impostarli con :ref:`set_item_metadata()<class_PopupMenu_method_set_item_metadata>`, il quale fornisce un modo semplice per assegnare dati di contesto agli elementi.
+Restituisce i metadati della voce specificata, che potrebbero essere di qualsiasi tipo. È possibile impostarli con :ref:`set_item_metadata()<class_PopupMenu_method_set_item_metadata>`, il quale fornisce un modo semplice per assegnare dati di contesto alle voci.
 
 .. rst-class:: classref-item-separator
 
@@ -1169,7 +1169,7 @@ Restituisce i metadati dell'elemento specificato, che potrebbero essere di quals
 
 :ref:`int<class_int>` **get_item_multistate**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_multistate>`
 
-Restituisce lo stato dell'elemento all'indice ``index``.
+Restituisce lo stato della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1181,7 +1181,7 @@ Restituisce lo stato dell'elemento all'indice ``index``.
 
 :ref:`int<class_int>` **get_item_multistate_max**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_multistate_max>`
 
-Restituisce gli stati massimi dell'elemento all'indice ``index``.
+Restituisce gli stati massimi della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1193,7 +1193,7 @@ Restituisce gli stati massimi dell'elemento all'indice ``index``.
 
 :ref:`Shortcut<class_Shortcut>` **get_item_shortcut**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_shortcut>`
 
-Restituisce la :ref:`Shortcut<class_Shortcut>` associata con l'elemento all'indice ``index``.
+Restituisce la :ref:`Shortcut<class_Shortcut>` associata con la voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1207,7 +1207,7 @@ Restituisce la :ref:`Shortcut<class_Shortcut>` associata con l'elemento all'indi
 
 **Deprecato:** Prefer using :ref:`get_item_submenu_node()<class_PopupMenu_method_get_item_submenu_node>` instead.
 
-Restituisce il nome del sottomenu dell'elemento all'indice ``index``. Consulta :ref:`add_submenu_item()<class_PopupMenu_method_add_submenu_item>` Per ulteriori informazioni su come aggiungere un sottomenu.
+Restituisce il nome del sottomenu della voce all'indice ``index``. Consulta :ref:`add_submenu_item()<class_PopupMenu_method_add_submenu_item>` per ulteriori informazioni su come aggiungere un sottomenu.
 
 .. rst-class:: classref-item-separator
 
@@ -1219,7 +1219,7 @@ Restituisce il nome del sottomenu dell'elemento all'indice ``index``. Consulta :
 
 :ref:`PopupMenu<class_PopupMenu>` **get_item_submenu_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_submenu_node>`
 
-Restituisce il sottomenù della voce all'indice ``index``, o ``null`` se non è stato aggiunto alcun sottomenù. Consulta :ref:`add_submenu_node_item()<class_PopupMenu_method_add_submenu_node_item>` per ulteriori informazioni su come aggiungere un sottomenu.
+Restituisce il sottomenu della voce all'indice ``index``, o ``null`` se non è stato aggiunto alcun sottomenu. Consulta :ref:`add_submenu_node_item()<class_PopupMenu_method_add_submenu_node_item>` per ulteriori informazioni su come aggiungere un sottomenu.
 
 .. rst-class:: classref-item-separator
 
@@ -1231,7 +1231,7 @@ Restituisce il sottomenù della voce all'indice ``index``, o ``null`` se non è 
 
 :ref:`String<class_String>` **get_item_text**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_text>`
 
-Restituisce il testo dell'elemento all'indice ``index``.
+Restituisce il testo della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1243,7 +1243,7 @@ Restituisce il testo dell'elemento all'indice ``index``.
 
 :ref:`TextDirection<enum_Control_TextDirection>` **get_item_text_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_text_direction>`
 
-Restituisce la direzione di scrittura della base di testo dell'elemento.
+Restituisce la direzione base di scrittura per il testo della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1255,7 +1255,7 @@ Restituisce la direzione di scrittura della base di testo dell'elemento.
 
 :ref:`String<class_String>` **get_item_tooltip**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_tooltip>`
 
-Restituisce il tooltip associato all'elemento all'indice ``index``.
+Restituisce il tooltip associato alla voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1267,9 +1267,9 @@ Restituisce il tooltip associato all'elemento all'indice ``index``.
 
 :ref:`bool<class_bool>` **is_item_checkable**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_is_item_checkable>`
 
-Restituisce ``true`` se l'elemento all'indice ``index`` è spuntabile in qualche modo, ad esempio se ha una casella di spunta o un pulsante di scelta (radio).
+Restituisce ``true`` se la voce all'indice ``index`` è spuntabile in qualche modo, ad esempio se ha una casella di spunta o un pulsante di scelta (radio).
 
-\ **Nota:** Gli elementi spuntabili mostrano solo un segno di spunta o un pulsante di scelta, ma non hanno alcun comportamento di controllo incorporato e devono essere selezionati e deselezionati manualmente.
+\ **Nota:** Le voci spuntabili mostrano solo un segno di spunta o un pulsante di scelta, ma non hanno alcun comportamento di controllo incorporato e devono essere selezionate e deselezionate manualmente.
 
 .. rst-class:: classref-item-separator
 
@@ -1281,7 +1281,7 @@ Restituisce ``true`` se l'elemento all'indice ``index`` è spuntabile in qualche
 
 :ref:`bool<class_bool>` **is_item_checked**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_is_item_checked>`
 
-Restituisce ``true`` se l'elemento all'indice ``index`` è spuntato.
+Restituisce ``true`` se la voce all'indice ``index`` è spuntata.
 
 .. rst-class:: classref-item-separator
 
@@ -1293,9 +1293,9 @@ Restituisce ``true`` se l'elemento all'indice ``index`` è spuntato.
 
 :ref:`bool<class_bool>` **is_item_disabled**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_is_item_disabled>`
 
-Restituisce ``true`` se l'elemento all'indice ``index`` è disabilitato. Quando è disabilitato non può essere selezionato, e la sua azione non può essere invocata.
+Restituisce ``true`` se la voce all'indice ``index`` è disabilitata. Quando è disabilitata non può essere selezionata, e la sua azione non può essere invocata.
 
-Consulta :ref:`set_item_disabled()<class_PopupMenu_method_set_item_disabled>` per ulteriori informazioni su come disabilitare un elemento.
+Consulta :ref:`set_item_disabled()<class_PopupMenu_method_set_item_disabled>` per ulteriori informazioni su come disabilitare una voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1307,9 +1307,9 @@ Consulta :ref:`set_item_disabled()<class_PopupMenu_method_set_item_disabled>` pe
 
 :ref:`bool<class_bool>` **is_item_radio_checkable**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_is_item_radio_checkable>`
 
-Restituisce ``true`` se l'elemento all'indice ``index`` ha può essere spuntato come un pulsante di scelta (radio).
+Restituisce ``true`` se la voce all'indice ``index`` può essere spuntata come un pulsante di scelta (radio).
 
-\ **Nota:** Questo è puramente estetico; devi aggiungere la logica per selezionare e deselezionare gli elementi nei gruppi di opzioni radio.
+\ **Nota:** Questo è puramente estetico; devi aggiungere la logica per selezionare e deselezionare le voci nei gruppi di opzioni radio.
 
 .. rst-class:: classref-item-separator
 
@@ -1321,7 +1321,7 @@ Restituisce ``true`` se l'elemento all'indice ``index`` ha può essere spuntato 
 
 :ref:`bool<class_bool>` **is_item_separator**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_is_item_separator>`
 
-Restituisce ``true`` se l'elemento è un separatore. In tal caso, sarà visualizzato come una linea. Consulta :ref:`add_separator()<class_PopupMenu_method_add_separator>` per ulteriori informazioni su come aggiungere un separatore.
+Restituisce ``true`` se la voce è un separatore. In tal caso, sarà visualizzata come una linea. Consulta :ref:`add_separator()<class_PopupMenu_method_add_separator>` per ulteriori informazioni su come aggiungere un separatore.
 
 .. rst-class:: classref-item-separator
 
@@ -1333,7 +1333,7 @@ Restituisce ``true`` se l'elemento è un separatore. In tal caso, sarà visualiz
 
 :ref:`bool<class_bool>` **is_item_shortcut_disabled**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_is_item_shortcut_disabled>`
 
-Restituisce ``true`` se la scorciatoia dell'elemento specificato è disabilitata.
+Restituisce ``true`` se la scorciatoia della voce specificata è disabilitata.
 
 .. rst-class:: classref-item-separator
 
@@ -1369,9 +1369,9 @@ Restituisce ``true`` se il menu è legato al menu speciale del sistema.
 
 |void| **remove_item**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_remove_item>`
 
-Rimuove l'elemento all'indice ``index`` dal menu.
+Rimuove la voce all'indice ``index`` dal menu.
 
-\ **Nota:** Gli indici degli elementi dopo l'elemento rimosso saranno spostati di uno.
+\ **Nota:** Gli indici delle voci dopo la voce rimossa saranno spostati di uno.
 
 .. rst-class:: classref-item-separator
 
@@ -1383,7 +1383,7 @@ Rimuove l'elemento all'indice ``index`` dal menu.
 
 |void| **scroll_to_item**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_scroll_to_item>`
 
-Sposta la vista scorrevole per rendere visibile l'elemento all'indice ``index``.
+Sposta la vista scorrevole per rendere visibile la voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1395,9 +1395,9 @@ Sposta la vista scorrevole per rendere visibile l'elemento all'indice ``index``.
 
 |void| **set_focused_item**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_set_focused_item>`
 
-Imposta l'attuale elemento focalizzato come il dato ``index``.
+Imposta la voce attualmente focalizzata sulla voce all'indice ``index``.
 
-Passando ``-1`` come indice fa in modo che nessun elemento venga focalizzato.
+Passando ``-1`` come indice fa in modo che nessuna voce sia focalizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -1409,7 +1409,7 @@ Passando ``-1`` come indice fa in modo che nessun elemento venga focalizzato.
 
 |void| **set_item_accelerator**\ (\ index\: :ref:`int<class_int>`, accel\: :ref:`Key<enum_@GlobalScope_Key>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_accelerator>`
 
-Imposta l'acceleratore dell'elemento all'indice ``index``. Un acceleratore è una scorciatoia da tastiera che può essere premuta per attivare il pulsante del menu anche se non è attualmente aperto. Il valore restituito è un intero che generalmente è una combinazione delle costanti di :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` e di :ref:`Key<enum_@GlobalScope_Key>` utilizzando l'operatore OR bit a bit, come ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+Imposta l'acceleratore della voce all'indice ``index``. Un acceleratore è una scorciatoia da tastiera che può essere premuta per attivare il pulsante del menu anche se non è attualmente aperto. Il valore restituito è un intero che generalmente è una combinazione delle costanti di :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` e di :ref:`Key<enum_@GlobalScope_Key>` utilizzando l'operatore OR bit a bit, come ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
 
 .. rst-class:: classref-item-separator
 
@@ -1421,9 +1421,9 @@ Imposta l'acceleratore dell'elemento all'indice ``index``. Un acceleratore è un
 
 |void| **set_item_as_checkable**\ (\ index\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_as_checkable>`
 
-Imposta se l'elemento all'indice ``index`` ha una casella di spunta. Se ``false``, imposta il tipo dell'elemento su testo semplice.
+Imposta se la voce all'indice ``index`` ha una casella di spunta. Se ``false``, imposta il tipo della voce su testo semplice.
 
-\ **Nota:** gli elementi spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di controllo incorporato e devono essere selezionati e deselezionati manualmente.
+\ **Nota:** Le voci spuntabili mostrano solo un segno di spunta, ma non hanno alcun comportamento di controllo incorporato e devono essere selezionate e deselezionate manualmente.
 
 .. rst-class:: classref-item-separator
 
@@ -1435,7 +1435,7 @@ Imposta se l'elemento all'indice ``index`` ha una casella di spunta. Se ``false`
 
 |void| **set_item_as_radio_checkable**\ (\ index\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_as_radio_checkable>`
 
-Imposta il tipo dell'elemento all'indice ``index`` su pulsante di scelta. Se ``false``, imposta il tipo dell'elemento su testo semplice.
+Imposta il tipo della voce all'indice ``index`` su pulsante di scelta. Se ``false``, imposta il tipo della voce su testo semplice.
 
 .. rst-class:: classref-item-separator
 
@@ -1447,7 +1447,7 @@ Imposta il tipo dell'elemento all'indice ``index`` su pulsante di scelta. Se ``f
 
 |void| **set_item_as_separator**\ (\ index\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_as_separator>`
 
-Contrassegna l'elemento all'indice ``index`` come separatore, il che significa che sarà visualizzato come una linea. Se ``false``, imposta il tipo dell'elemento su testo semplice.
+Contrassegna la voce all'indice ``index`` come separatore, il che significa che sarà visualizzata come una linea. Se ``false``, imposta il tipo della voce su testo semplice.
 
 .. rst-class:: classref-item-separator
 
@@ -1459,9 +1459,9 @@ Contrassegna l'elemento all'indice ``index`` come separatore, il che significa c
 
 |void| **set_item_auto_translate_mode**\ (\ index\: :ref:`int<class_int>`, mode\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_auto_translate_mode>`
 
-Imposta la modalità di traduzione automatica dell'elemento associato all'indice ``index``.
+Imposta la modalità di traduzione automatica della voce all'indice ``index``.
 
-Gli elementi utilizzano :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>` come predefinito, il quale utilizza la stessa modalità di traduzione automatica del **PopupMenu**.
+Le voci utilizzano :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>` come predefinita, la quale utilizza la stessa modalità di traduzione automatica del **PopupMenu**.
 
 .. rst-class:: classref-item-separator
 
@@ -1473,7 +1473,7 @@ Gli elementi utilizzano :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_consta
 
 |void| **set_item_checked**\ (\ index\: :ref:`int<class_int>`, checked\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_checked>`
 
-Imposta lo stato di spunta dell'elemento all'indice ``index``.
+Imposta lo stato di spunta della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1485,7 +1485,7 @@ Imposta lo stato di spunta dell'elemento all'indice ``index``.
 
 |void| **set_item_disabled**\ (\ index\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_disabled>`
 
-Abilita o disabilita l'elemento all'indice ``index``. Quando è disabilitato, non può essere selezionato e la sua azione non può essere invocata.
+Abilita o disabilita la voce all'indice ``index``. Quando è disabilitata, non può essere selezionata e la sua azione non può essere invocata.
 
 .. rst-class:: classref-item-separator
 
@@ -1497,7 +1497,7 @@ Abilita o disabilita l'elemento all'indice ``index``. Quando è disabilitato, no
 
 |void| **set_item_icon**\ (\ index\: :ref:`int<class_int>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_icon>`
 
-Sostituisce l'icona :ref:`Texture2D<class_Texture2D>` dell'elemento all'indice ``index``.
+Sostituisce l'icona :ref:`Texture2D<class_Texture2D>` della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1509,7 +1509,7 @@ Sostituisce l'icona :ref:`Texture2D<class_Texture2D>` dell'elemento all'indice `
 
 |void| **set_item_icon_max_width**\ (\ index\: :ref:`int<class_int>`, width\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_icon_max_width>`
 
-Imposta la larghezza massima consentita dell'icona per l'elemento all'indice ``index``. Questo limite viene applicato al di sopra della dimensione predefinita dell'icona e sopra a :ref:`icon_max_width<class_PopupMenu_theme_constant_icon_max_width>`. L'altezza è regolata in base al rapporto dell'icona.
+Imposta la larghezza massima consentita dell'icona per la voce all'indice ``index``. Questo limite è applicato oltre alla dimensione predefinita dell'icona e oltre a :ref:`icon_max_width<class_PopupMenu_theme_constant_icon_max_width>`. L'altezza è regolata in base al rapporto dell'icona.
 
 .. rst-class:: classref-item-separator
 
@@ -1521,7 +1521,7 @@ Imposta la larghezza massima consentita dell'icona per l'elemento all'indice ``i
 
 |void| **set_item_icon_modulate**\ (\ index\: :ref:`int<class_int>`, modulate\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_icon_modulate>`
 
-Imposta una modulazione di colore dell'icona dell'elemento all'indice ``index``.
+Imposta una modulazione di colore dell'icona della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1533,7 +1533,7 @@ Imposta una modulazione di colore dell'icona dell'elemento all'indice ``index``.
 
 |void| **set_item_id**\ (\ index\: :ref:`int<class_int>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_id>`
 
-Imposta l'``id`` dell'elemento all'indice ``index``.
+Imposta l'``id`` della voce all'indice ``index``.
 
 L'``id`` è utilizzato nei segnali :ref:`id_pressed<class_PopupMenu_signal_id_pressed>` e :ref:`id_focused<class_PopupMenu_signal_id_focused>`.
 
@@ -1547,7 +1547,7 @@ L'``id`` è utilizzato nei segnali :ref:`id_pressed<class_PopupMenu_signal_id_pr
 
 |void| **set_item_indent**\ (\ index\: :ref:`int<class_int>`, indent\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_indent>`
 
-Imposta l'offset orizzontale dell'elemento all'indice ``index``.
+Imposta l'offset orizzontale della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1559,9 +1559,9 @@ Imposta l'offset orizzontale dell'elemento all'indice ``index``.
 
 |void| **set_item_index**\ (\ index\: :ref:`int<class_int>`, target_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_index>`
 
-Changes the index of the item at index ``index`` to be at index ``target_index``. This can be used to move an item above other items. The moved item will keep the same ID, even if it was generated from the original index.
+Cambia l'indice della voce all'indice ``index`` portandolo all'indice ``target_index``. Può servire per spostare una voce sopra altre voci. La voce spostata manterrà lo stesso ID, anche se è stato generato dall'indice originale.
 
-\ **Note:** The indices of any items between index ``index`` and index ``target_index`` will be shifted by one.
+\ **Nota:** Gli indici di tutte le voci comprese tra l'indice ``index`` e l'indice ``target_index`` verranno spostati di uno.
 
 .. rst-class:: classref-item-separator
 
@@ -1573,7 +1573,7 @@ Changes the index of the item at index ``index`` to be at index ``target_index``
 
 |void| **set_item_language**\ (\ index\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_language>`
 
-Sets the language code of the text for the item at the given index to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+Imposta il codice lingua del testo della voce all'indice specificato su ``language``. Serve per gli algoritmi di interruzione di riga e di formazione del testo. Se ``language`` è vuoto, viene utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -1585,7 +1585,7 @@ Sets the language code of the text for the item at the given index to ``language
 
 |void| **set_item_metadata**\ (\ index\: :ref:`int<class_int>`, metadata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_metadata>`
 
-Imposta i metadati di un elemento, che possono essere di qualsiasi tipo. Puoi ottenerli in seguito con :ref:`get_item_metadata()<class_PopupMenu_method_get_item_metadata>`, che fornisce un modo semplice per assegnare dati di contesto agli elementi.
+Imposta i metadati di una voce, che possono essere di qualsiasi tipo. Puoi ottenerli in seguito con :ref:`get_item_metadata()<class_PopupMenu_method_get_item_metadata>`, che fornisce un modo semplice per assegnare dati di contesto alle voci.
 
 .. rst-class:: classref-item-separator
 
@@ -1597,7 +1597,7 @@ Imposta i metadati di un elemento, che possono essere di qualsiasi tipo. Puoi ot
 
 |void| **set_item_multistate**\ (\ index\: :ref:`int<class_int>`, state\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_multistate>`
 
-Imposta lo stato di un elemento multistato. Vedi :ref:`add_multistate_item()<class_PopupMenu_method_add_multistate_item>` per i dettagli.
+Imposta lo stato di una voce multistato. Vedi :ref:`add_multistate_item()<class_PopupMenu_method_add_multistate_item>` per i dettagli.
 
 .. rst-class:: classref-item-separator
 
@@ -1609,7 +1609,7 @@ Imposta lo stato di un elemento multistato. Vedi :ref:`add_multistate_item()<cla
 
 |void| **set_item_multistate_max**\ (\ index\: :ref:`int<class_int>`, max_states\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_multistate_max>`
 
-Imposta gli stati massimi di un elemento multistato. Vedi :ref:`add_multistate_item()<class_PopupMenu_method_add_multistate_item>` per i dettagli.
+Imposta gli stati massimi di una voce multistato. Vedi :ref:`add_multistate_item()<class_PopupMenu_method_add_multistate_item>` per i dettagli.
 
 .. rst-class:: classref-item-separator
 
@@ -1621,7 +1621,7 @@ Imposta gli stati massimi di un elemento multistato. Vedi :ref:`add_multistate_i
 
 |void| **set_item_shortcut**\ (\ index\: :ref:`int<class_int>`, shortcut\: :ref:`Shortcut<class_Shortcut>`, global\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PopupMenu_method_set_item_shortcut>`
 
-Imposta una scorciatoia (:ref:`Shortcut<class_Shortcut>`) per l'elemento all'indice ``index``.
+Imposta una scorciatoia (:ref:`Shortcut<class_Shortcut>`) per la voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1633,7 +1633,7 @@ Imposta una scorciatoia (:ref:`Shortcut<class_Shortcut>`) per l'elemento all'ind
 
 |void| **set_item_shortcut_disabled**\ (\ index\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_shortcut_disabled>`
 
-Disabilita la scorciatoia (:ref:`Shortcut<class_Shortcut>`) dell'elemento all'indice ``index``.
+Disabilita la scorciatoia (:ref:`Shortcut<class_Shortcut>`) della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1647,7 +1647,7 @@ Disabilita la scorciatoia (:ref:`Shortcut<class_Shortcut>`) dell'elemento all'in
 
 **Deprecato:** Prefer using :ref:`set_item_submenu_node()<class_PopupMenu_method_set_item_submenu_node>` instead.
 
-Imposta il sottomenu dell'elemento all'indice ``index``. Il sottomenu è il nome di un nodo **PopupMenu** figlio che verrebbe mostrato quando si clicca sull'elemento.
+Imposta il sottomenu della voce all'indice ``index``. Il sottomenu è il nome di un nodo **PopupMenu** figlio che verrebbe mostrato quando si clicca sulla voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1659,7 +1659,7 @@ Imposta il sottomenu dell'elemento all'indice ``index``. Il sottomenu è il nome
 
 |void| **set_item_submenu_node**\ (\ index\: :ref:`int<class_int>`, submenu\: :ref:`PopupMenu<class_PopupMenu>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_submenu_node>`
 
-Imposta il sottomenu dell'elemento all'indice ``index``. Il sottomenu è un nodo **PopupMenu** che verrebbe mostrato quando si clicca sull'elemento. Deve essere un figlio di questo **PopupMenu** o non avere un genitore (nel qual caso sarà automaticamente aggiunto come figlio). Se il popup ``submenu`` ha un altro genitore, questo metodo fallirà.
+Imposta il sottomenu della voce all'indice ``index``. Il sottomenu è un nodo **PopupMenu** che verrebbe mostrato quando si clicca sulla voce. Deve essere un figlio di questo **PopupMenu** o non avere un genitore (nel qual caso sarà automaticamente aggiunto come figlio). Se il popup ``submenu`` ha un altro genitore, questo metodo fallirà.
 
 .. rst-class:: classref-item-separator
 
@@ -1671,7 +1671,7 @@ Imposta il sottomenu dell'elemento all'indice ``index``. Il sottomenu è un nodo
 
 |void| **set_item_text**\ (\ index\: :ref:`int<class_int>`, text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_text>`
 
-Imposta il testo dell'elemento all'indice ``index``.
+Imposta il testo della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1683,7 +1683,7 @@ Imposta il testo dell'elemento all'indice ``index``.
 
 |void| **set_item_text_direction**\ (\ index\: :ref:`int<class_int>`, direction\: :ref:`TextDirection<enum_Control_TextDirection>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_text_direction>`
 
-Imposta la direzione di scrittura della base di testo dell'elemento.
+Imposta la direzione base di scrittura del testo per la voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1695,7 +1695,7 @@ Imposta la direzione di scrittura della base di testo dell'elemento.
 
 |void| **set_item_tooltip**\ (\ index\: :ref:`int<class_int>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_tooltip>`
 
-Imposta la stringa del tooltip dell'elemento all'indice ``index``.
+Imposta la stringa del tooltip della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1707,7 +1707,7 @@ Imposta la stringa del tooltip dell'elemento all'indice ``index``.
 
 |void| **toggle_item_checked**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_toggle_item_checked>`
 
-Commuta lo stato di spunta dell'elemento all'indice ``index``.
+Cambia lo stato di spunta della voce all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1719,7 +1719,7 @@ Commuta lo stato di spunta dell'elemento all'indice ``index``.
 
 |void| **toggle_item_multistate**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_toggle_item_multistate>`
 
-Passa allo stato successivo di un elemento multistato. Vedi :ref:`add_multistate_item()<class_PopupMenu_method_add_multistate_item>` per i dettagli.
+Passa allo stato successivo di una voce multistato. Vedi :ref:`add_multistate_item()<class_PopupMenu_method_add_multistate_item>` per i dettagli.
 
 .. rst-class:: classref-section-separator
 
@@ -1736,7 +1736,7 @@ Descrizioni delle proprietà del tema
 
 :ref:`Color<class_Color>` **font_accelerator_color** = ``Color(0.7, 0.7, 0.7, 0.8)`` :ref:`🔗<class_PopupMenu_theme_color_font_accelerator_color>`
 
-Il :ref:`Color<class_Color>` del testo utilizzato per le scorciatoie e gli acceleratori che sono visualizzati accanto al nome dell'elemento di menu quando definiti. Vedi :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` per ulteriori informazioni sugli acceleratori.
+Il :ref:`Color<class_Color>` del testo utilizzato per le scorciatoie e gli acceleratori che sono visualizzati accanto al nome della voce di menu quando definiti. Vedi :ref:`get_item_accelerator()<class_PopupMenu_method_get_item_accelerator>` per ulteriori informazioni sugli acceleratori.
 
 .. rst-class:: classref-item-separator
 
@@ -1748,7 +1748,7 @@ Il :ref:`Color<class_Color>` del testo utilizzato per le scorciatoie e gli accel
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_PopupMenu_theme_color_font_color>`
 
-Il :ref:`Color<class_Color>` predefinito del testo per i nomi degli elementi di menu.
+Il :ref:`Color<class_Color>` predefinito del testo per i nomi delle voci di menu.
 
 .. rst-class:: classref-item-separator
 
@@ -1760,7 +1760,7 @@ Il :ref:`Color<class_Color>` predefinito del testo per i nomi degli elementi di 
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0.4, 0.4, 0.4, 0.8)`` :ref:`🔗<class_PopupMenu_theme_color_font_disabled_color>`
 
-Il :ref:`Color<class_Color>` utilizzato per il testo degli elementi di menu disabilitati.
+Il :ref:`Color<class_Color>` utilizzato per il testo delle voci disabilitate di menu.
 
 .. rst-class:: classref-item-separator
 
@@ -1784,7 +1784,7 @@ Il :ref:`Color<class_Color>` utilizzato per il testo al passaggio del mouse.
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_PopupMenu_theme_color_font_outline_color>`
 
-La tinta del contorno del testo ella voce del menu.
+La tinta del contorno del testo della voce di menu.
 
 .. rst-class:: classref-item-separator
 
@@ -1820,7 +1820,7 @@ La tinta dei contorni del testo del separatore etichettato.
 
 :ref:`int<class_int>` **gutter_compact** = ``1`` :ref:`🔗<class_PopupMenu_theme_constant_gutter_compact>`
 
-If not ``0``, the icon gutter will be merged with the checkbox gutter when possible. This acts as a boolean.
+Se non è ``0``, la barra laterale delle icone sarà unita alla barra delle caselle di spunta quando possibile. Funge da valore booleano.
 
 .. rst-class:: classref-item-separator
 
@@ -1832,7 +1832,7 @@ If not ``0``, the icon gutter will be merged with the checkbox gutter when possi
 
 :ref:`int<class_int>` **h_separation** = ``4`` :ref:`🔗<class_PopupMenu_theme_constant_h_separation>`
 
-Lo spazio orizzontale tra i componenti dell'elemento.
+Lo spazio orizzontale tra i componenti della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1844,7 +1844,7 @@ Lo spazio orizzontale tra i componenti dell'elemento.
 
 :ref:`int<class_int>` **icon_max_width** = ``0`` :ref:`🔗<class_PopupMenu_theme_constant_icon_max_width>`
 
-La larghezza massima consentita dell'icona dell'elemento. Questo limite è applicato al di sopra della dimensione predefinita dell'icona, ma prima del valore impostato con :ref:`set_item_icon_max_width()<class_PopupMenu_method_set_item_icon_max_width>`. L'altezza è regolata in base al rapporto dell'icona.
+La larghezza massima consentita dell'icona della voce. Questo limite è applicato oltre alla dimensione predefinita dell'icona, ma prima del valore impostato con :ref:`set_item_icon_max_width()<class_PopupMenu_method_set_item_icon_max_width>`. L'altezza è regolata in base al rapporto dell'icona.
 
 .. rst-class:: classref-item-separator
 
@@ -1868,7 +1868,7 @@ Larghezza del singolo livello di indentazione.
 
 :ref:`int<class_int>` **item_end_padding** = ``2`` :ref:`🔗<class_PopupMenu_theme_constant_item_end_padding>`
 
-Spaziatura orizzontale a destra degli elementi (o a sinistra, nel layout RTL).
+Spaziatura orizzontale a destra delle voci (o a sinistra, nel layout RTL).
 
 .. rst-class:: classref-item-separator
 
@@ -1880,7 +1880,7 @@ Spaziatura orizzontale a destra degli elementi (o a sinistra, nel layout RTL).
 
 :ref:`int<class_int>` **item_start_padding** = ``2`` :ref:`🔗<class_PopupMenu_theme_constant_item_start_padding>`
 
-Spaziatura orizzontale a sinistra degli elementi (o a destra, nel layout RTL).
+Spaziatura orizzontale a sinistra delle voci (o a destra, nel layout RTL).
 
 .. rst-class:: classref-item-separator
 
@@ -1892,7 +1892,7 @@ Spaziatura orizzontale a sinistra degli elementi (o a destra, nel layout RTL).
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_PopupMenu_theme_constant_outline_size>`
 
-La dimensione del contorno del testo dell'elemento.
+La dimensione del contorno del testo della voce.
 
 \ **Nota:** Se si utilizza un font con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` abilitato, il suo :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` deve essere impostato su almeno il *doppio* del valore di :ref:`outline_size<class_PopupMenu_theme_constant_outline_size>` affinché il rendering del contorno appaia corretto. Altrimenti, il contorno potrebbe apparire troncato prima del previsto.
 
@@ -1906,7 +1906,7 @@ La dimensione del contorno del testo dell'elemento.
 
 :ref:`int<class_int>` **search_bar_separation** = ``4`` :ref:`🔗<class_PopupMenu_theme_constant_search_bar_separation>`
 
-The vertical space between search bar and menu items.
+Lo spazio verticale tra la barra di ricerca e le voci di menu.
 
 .. rst-class:: classref-item-separator
 
@@ -1930,7 +1930,7 @@ La dimensione del contorno del testo di un separatore etichettato.
 
 :ref:`int<class_int>` **v_separation** = ``4`` :ref:`🔗<class_PopupMenu_theme_constant_v_separation>`
 
-Lo spazio verticale tra ogni elemento di menu.
+Lo spazio verticale tra ogni voce di menu.
 
 .. rst-class:: classref-item-separator
 
@@ -1942,7 +1942,7 @@ Lo spazio verticale tra ogni elemento di menu.
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_PopupMenu_theme_font_font>`
 
-Il :ref:`Font<class_Font>` utilizzato per gli elementi di menu.
+Il :ref:`Font<class_Font>` utilizzato per le voci di menu.
 
 .. rst-class:: classref-item-separator
 
@@ -1978,7 +1978,7 @@ Dimensione del font di un separatore etichettato.
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_PopupMenu_theme_font_size_font_size>`
 
-Dimensione del font degli elementi del menu.
+Dimensione del font delle voci di menu.
 
 .. rst-class:: classref-item-separator
 
@@ -1990,7 +1990,7 @@ Dimensione del font degli elementi del menu.
 
 :ref:`Texture2D<class_Texture2D>` **checked** :ref:`🔗<class_PopupMenu_theme_icon_checked>`
 
-Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di casella di spunta che sono spuntati.
+Icona :ref:`Texture2D<class_Texture2D>` per le voci di casella di spunta che sono spuntate.
 
 .. rst-class:: classref-item-separator
 
@@ -2002,7 +2002,7 @@ Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di casella di spunta ch
 
 :ref:`Texture2D<class_Texture2D>` **checked_disabled** :ref:`🔗<class_PopupMenu_theme_icon_checked_disabled>`
 
-Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di casella di spunta quando sono disabilitati.
+Icona :ref:`Texture2D<class_Texture2D>` per le voci di casella di spunta quando sono disabilitate.
 
 .. rst-class:: classref-item-separator
 
@@ -2014,7 +2014,7 @@ Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di casella di spunta qu
 
 :ref:`Texture2D<class_Texture2D>` **radio_checked** :ref:`🔗<class_PopupMenu_theme_icon_radio_checked>`
 
-Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di pulsante di scelta spuntati.
+Icona :ref:`Texture2D<class_Texture2D>` per le voci di pulsante di scelta spuntate.
 
 .. rst-class:: classref-item-separator
 
@@ -2026,7 +2026,7 @@ Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di pulsante di scelta s
 
 :ref:`Texture2D<class_Texture2D>` **radio_checked_disabled** :ref:`🔗<class_PopupMenu_theme_icon_radio_checked_disabled>`
 
-Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di pulsante di scelta quando sono disabilitati.
+Icona :ref:`Texture2D<class_Texture2D>` per le voci di pulsante di scelta quando sono disabilitate.
 
 .. rst-class:: classref-item-separator
 
@@ -2038,7 +2038,7 @@ Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di pulsante di scelta q
 
 :ref:`Texture2D<class_Texture2D>` **radio_unchecked** :ref:`🔗<class_PopupMenu_theme_icon_radio_unchecked>`
 
-Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di pulsante di scelta non spuntati.
+Icona :ref:`Texture2D<class_Texture2D>` per le voci di pulsante di scelta non spuntate.
 
 .. rst-class:: classref-item-separator
 
@@ -2050,7 +2050,7 @@ Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di pulsante di scelta n
 
 :ref:`Texture2D<class_Texture2D>` **radio_unchecked_disabled** :ref:`🔗<class_PopupMenu_theme_icon_radio_unchecked_disabled>`
 
-Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di pulsante di scelta non spuntati, quando sono disabilitati.
+Icona :ref:`Texture2D<class_Texture2D>` per le voci di pulsante di scelta non spuntate, quando sono disabilitate.
 
 .. rst-class:: classref-item-separator
 
@@ -2062,7 +2062,7 @@ Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di pulsante di scelta n
 
 :ref:`Texture2D<class_Texture2D>` **search** :ref:`🔗<class_PopupMenu_theme_icon_search>`
 
-:ref:`Texture2D<class_Texture2D>` icon for the search bar's search icon.
+Icona :ref:`Texture2D<class_Texture2D>` per l'icona di ricerca della barra di ricerca.
 
 .. rst-class:: classref-item-separator
 
@@ -2098,7 +2098,7 @@ Icona :ref:`Texture2D<class_Texture2D>` per la freccia del sottomenu (per i layo
 
 :ref:`Texture2D<class_Texture2D>` **unchecked** :ref:`🔗<class_PopupMenu_theme_icon_unchecked>`
 
-Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di casella di spunta che non sono spuntati.
+Icona :ref:`Texture2D<class_Texture2D>` per le voci di casella di spunta che non sono spuntate.
 
 .. rst-class:: classref-item-separator
 
@@ -2110,7 +2110,7 @@ Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di casella di spunta ch
 
 :ref:`Texture2D<class_Texture2D>` **unchecked_disabled** :ref:`🔗<class_PopupMenu_theme_icon_unchecked_disabled>`
 
-Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di casella di spunta che non sono spuntati, quando sono disabilitati.
+Icona :ref:`Texture2D<class_Texture2D>` per le voci di casella di spunta che non sono spuntate, quando sono disabilitate.
 
 .. rst-class:: classref-item-separator
 
@@ -2122,7 +2122,7 @@ Icona :ref:`Texture2D<class_Texture2D>` per gli elementi di casella di spunta ch
 
 :ref:`StyleBox<class_StyleBox>` **hover** :ref:`🔗<class_PopupMenu_theme_style_hover>`
 
-Lo :ref:`StyleBox<class_StyleBox>` visualizzato quando si passa il mouse su un elemento del **PopupMenu**.
+Lo :ref:`StyleBox<class_StyleBox>` visualizzato quando si passa il mouse su una voce del **PopupMenu**.
 
 .. rst-class:: classref-item-separator
 
@@ -2176,7 +2176,7 @@ Lo :ref:`StyleBox<class_StyleBox>` utilizzato per i separatori. Vedi :ref:`add_s
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

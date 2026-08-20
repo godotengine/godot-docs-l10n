@@ -9,7 +9,7 @@ GPUParticlesCollision3D
 
 **Ereditato da:** :ref:`GPUParticlesCollisionBox3D<class_GPUParticlesCollisionBox3D>`, :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`, :ref:`GPUParticlesCollisionSDF3D<class_GPUParticlesCollisionSDF3D>`, :ref:`GPUParticlesCollisionSphere3D<class_GPUParticlesCollisionSphere3D>`
 
-Classe di base astratta per le forme di collisione di particelle 3D che interessano i nodi :ref:`GPUParticles3D<class_GPUParticles3D>`.
+Classe base astratta per le forme di collisione di particelle 3D che interessano i nodi :ref:`GPUParticles3D<class_GPUParticles3D>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -60,17 +60,17 @@ Descrizioni delle proprietà
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-Gli strati di rendering delle particelle (:ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`) che saranno influenzate dalla forma di collisione. Per impostazione predefinita, tutte le particelle che hanno :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` impostato su :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` o :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>` saranno influenzate da una forma di collisione.
+Gli strati di rendering delle particelle (:ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`) che saranno influenzate dalla forma di collisione. Come predefinito, tutte le particelle che hanno :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` impostato su :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` o :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>` saranno influenzate da una forma di collisione.
 
-Dopo aver configurato i nodi delle particelle adeguatamente, è possibile deselezionare strati specifici per impedire che determinate particelle siano influenzate dai collisori. Ad esempio, questo può essere utilizzato se si utilizza un collisore come parte di un effetto magico ma non si desidera che il collisore influenzi particelle del meteo non correlate nella stessa posizione.
+Dopo aver configurato i nodi delle particelle adeguatamente, è possibile deselezionare strati specifici per impedire che determinate particelle siano influenzate dai collisori. Ad esempio, potrebbe essere utile per un collisore che fa parte di un effetto magico ma è preferibile che non influenzi altre particelle del meteo nella sua stessa posizione.
 
-La collisione delle particelle può anche essere disabilitata per ogni materiale di processo impostando :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` sul nodo :ref:`GPUParticles3D<class_GPUParticles3D>`.
+È possibile disabilitare l'attrazione delle particelle per ogni materiale di processo impostando :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` sul nodo :ref:`GPUParticles3D<class_GPUParticles3D>`.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

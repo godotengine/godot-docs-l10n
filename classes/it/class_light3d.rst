@@ -316,7 +316,7 @@ enum **BakeMode**: :ref:`🔗<enum_Light3D_BakeMode>`
 
 :ref:`BakeMode<enum_Light3D_BakeMode>` **BAKE_DISABLED** = ``0``
 
-La luce è ignorata durante il precalcolo. Questa è la modalità più veloce, ma la luce sarà presa in considerazione durante il precalcolo dell'illuminazione globale. Questa modalità si dovrebbe generalmente utilizzare per luci dinamiche che cambiano rapidamente, poiché l'effetto dell'illuminazione globale è meno evidente su tali luci.
+La luce è ignorata durante il precalcolo. Questa è la modalità più veloce, ma la luce sarà presa in considerazione durante il precalcolo dell'illuminazione globale. Questa modalità si dovrebbe generalmente usare per le luci dinamiche che cambiano rapidamente, poiché l'effetto dell'illuminazione globale è meno evidente su tali luci.
 
 \ **Nota:** Nascondere una luce *non* influisce sul precalcolo di :ref:`LightmapGI<class_LightmapGI>`. Nascondere una luce influenzerà comunque il precalcolo di :ref:`VoxelGI<class_VoxelGI>` e di SDFGI (vedi :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`).
 
@@ -326,9 +326,11 @@ La luce è ignorata durante il precalcolo. Questa è la modalità più veloce, m
 
 :ref:`BakeMode<enum_Light3D_BakeMode>` **BAKE_STATIC** = ``1``
 
-La luce è presa in considerazione nel precalcolo statico (:ref:`VoxelGI<class_VoxelGI>`, :ref:`LightmapGI<class_LightmapGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). La luce può essere spostata o modificata, ma la sua illuminazione globale non sarà aggiornata in tempo reale. Questo è adatto per lievi cambiamenti (come lo sfarfallio di una torcia), ma non solitamente per grandi cambiamenti come l'accensione e lo spegnimento di una luce.
+Light is taken into account in static baking (:ref:`VoxelGI<class_VoxelGI>`, :ref:`LightmapGI<class_LightmapGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). The light can be moved around or modified, but its global illumination will not update in real-time.
 
-\ **Nota:** La luce non è precalcolata in :ref:`LightmapGI<class_LightmapGI>` se :ref:`editor_only<class_Light3D_property_editor_only>` è ``true``.
+\ **Note:** The light is not baked in :ref:`LightmapGI<class_LightmapGI>` if :ref:`editor_only<class_Light3D_property_editor_only>` is ``true``.
+
+\ **Note:** When using :ref:`LightmapGI<class_LightmapGI>`, both the direct and indirect light are baked. Since direct light is baked, the light doesn't display a specular lobe on static lightmapped meshes. Shadows on static lightmapped meshes will also look less detailed, but the light still casts shadows that can be displayed on dynamic objects. Since real-time light computations are skipped on static lightmapped meshes, this bake mode improves runtime performance compared to :ref:`BAKE_DYNAMIC<class_Light3D_constant_BAKE_DYNAMIC>` and :ref:`BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>`.
 
 .. _class_Light3D_constant_BAKE_DYNAMIC:
 
@@ -336,7 +338,9 @@ La luce è presa in considerazione nel precalcolo statico (:ref:`VoxelGI<class_V
 
 :ref:`BakeMode<enum_Light3D_BakeMode>` **BAKE_DYNAMIC** = ``2``
 
-La luce è presa in considerazione nel precalcolo dinamico (solo :ref:`VoxelGI<class_VoxelGI>` e SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). La luce può essere spostata o modificata e l'illuminazione globale sarà aggiornata in tempo reale. L'aspetto dell'illuminazione globale della luce sarà leggermente diverso rispetto a :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. Ciò ha un costo in termini di prestazioni maggiore rispetto a :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. Quando si utilizza SDFGI, la frequenza di aggiornamento delle luci dinamiche è influenzata da :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
+Light is taken into account in dynamic baking (:ref:`VoxelGI<class_VoxelGI>` and SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). The light can be moved around or modified with global illumination updating in real-time. The light's global illumination appearance will be slightly different compared to :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. This has a greater performance cost compared to :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. When using SDFGI, the update speed of dynamic lights is affected by :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
+
+\ **Note:** When using :ref:`LightmapGI<class_LightmapGI>`, the light's indirect light is baked, but direct light and shadows remain real-time. This mode allows performing *subtle* changes to a light's color, energy, and position while still looking fairly correct. For example, you can use this to create flickering static torches that have their indirect light baked.
 
 .. rst-class:: classref-section-separator
 
@@ -451,7 +455,7 @@ Se ``true``, la luce appare solo nell'editor e non sarà visibile in fase di ese
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-La dimensione angolare della luce in gradi. Aumentando questo valore, le ombre saranno più morbide a distanze maggiori (chiamate anche ombre morbide percentuali più vicine, o PCSS). Disponibile solo per :ref:`DirectionalLight3D<class_DirectionalLight3D>`. Per riferimento, il Sole dalla Terra è approssimativamente ``0.5``. Aumentare questo valore oltre ``0.0`` per luci con ombre abilitate avrà un costo di prestazioni notevole a causa di PCSS.
+La dimensione angolare della luce in gradi. Aumentando questo valore, le ombre saranno più sfumate da più lontano (dette anche percentage-closer soft shadows, o PCSS). Disponibile solo per :ref:`DirectionalLight3D<class_DirectionalLight3D>`. Per riferimento, il Sole dalla Terra è approssimativamente ``0.5``. Aumentare questo valore oltre ``0.0`` per luci con ombre abilitate avrà un notevole impatto sulle prestazioni a causa di PCSS.
 
 \ **Nota:** :ref:`light_angular_distance<class_Light3D_property_light_angular_distance>` non è influenzato da :ref:`Node3D.scale<class_Node3D_property_scale>` (la scala della luce o la scala del suo genitore).
 
@@ -491,7 +495,7 @@ La modalità di precalcolo della luce. Ciò influirà sulle tecniche di illumina
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-The light's color in nonlinear sRGB encoding. An *overbright* color can be used to achieve a result equivalent to increasing the light's :ref:`light_energy<class_Light3D_property_light_energy>`.
+Il colore della luce in codifica sRGB non lineare. È possibile usare un colore *sovra-luminoso* per un risultato equivalente all'aumento della :ref:`light_energy<class_Light3D_property_light_energy>` della luce.
 
 .. rst-class:: classref-item-separator
 
@@ -641,11 +645,11 @@ La :ref:`Texture2D<class_Texture2D>` proiettata dalla luce. :ref:`shadow_enabled
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-The simulated size of the light in Godot units, affecting shading and shadows. For :ref:`OmniLight3D<class_OmniLight3D>`\ s and :ref:`SpotLight3D<class_SpotLight3D>`\ s, increasing this value simulates a spherical area light, expanding the size of specular highlights. If shadows are enabled, a penumbra is rendered, making shadows appear blurrier. For :ref:`AreaLight3D<class_AreaLight3D>`\ s, only the shadows are affected. Penumbras are simulated with percentage-closer soft shadows, or PCSS, which has a noticeable performance cost for values above ``0.0``.
+La dimensione simulata della luce in unità di Godot, che influisce sull'ombreggiatura e sulle ombre. Per gli :ref:`OmniLight3D<class_OmniLight3D>` e gli :ref:`SpotLight3D<class_SpotLight3D>`, aumentare questo valore simula una luce d'area sferica, espandendo la dimensione dei riflessi speculari. Se le ombre sono abilitate, una penumbra viene renderizzata, rendendo le ombre più sfocate. Per :ref:`AreaLight3D<class_AreaLight3D>`, influisce solo sulle ombre. Le penombre vengono simulate con percentage-closer soft shadows, o PCSS, il quale ha un notevole impatto sulle prestazioni per i valori superiori a ``0.0``\ 
 
-\ **Note:** :ref:`light_size<class_Light3D_property_light_size>` is not affected by :ref:`Node3D.scale<class_Node3D_property_scale>` (the light's scale or its parent's scale).
+\ **Nota:** :ref:`light_size<class_Light3D_property_light_size>` non è influenzato da :ref:`Node3D.scale<class_Node3D_property_scale>` (la scala della luce o la scala del suo genitore).
 
-\ **Note:** PCSS for positional lights is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Nota:** Il PCSS per luci posizionali è supportato solo nei metodi di rendering Forward+ e Mobile, non Compatibilità.
 
 .. rst-class:: classref-item-separator
 
@@ -885,7 +889,7 @@ Imposta il valore del parametro :ref:`Param<enum_Light3D_Param>` specificato.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

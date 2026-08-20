@@ -14,7 +14,7 @@ Un materiale che definisce un cielo semplice per una risorsa :ref:`Sky<class_Sky
 Descrizione
 ----------------------
 
-**ProceduralSkyMaterial** fornisce un modo per creare rapidamente uno sfondo definendo parametri procedurali per il sole, il cielo e il terreno. Il cielo e il terreno sono definiti da un colore principale, un colore all'orizzonte e una curva di attenuazione per interpolare tra di essi. I soli sono definiti da una posizione nel cielo, un colore e un angolo massimo dal sole in cui termina la curva di attenuazione. L'angolo massimo denota quindi la dimensione del sole nel cielo.
+**ProceduralSkyMaterial** fornisce un modo per creare rapidamente uno sfondo definendo parametri procedurali per il sole, il cielo e il terreno. Il cielo e il terreno sono definiti da un colore principale, un colore all'orizzonte e una curva di andamento per interpolare tra di essi. I soli sono definiti da una posizione nel cielo, un colore e un angolo massimo dal sole in cui termina la curva di andamento. L'angolo massimo denota quindi la dimensione del sole nel cielo.
 
 \ **ProceduralSkyMaterial** supporta fino a 4 soli, utilizzando il colore, l'energia, la direzione e la distanza angolare dei primi quattro nodi :ref:`DirectionalLight3D<class_DirectionalLight3D>` nella scena. Ciò significa che i soli sono definiti individualmente dalle proprietà dei loro :ref:`DirectionalLight3D<class_DirectionalLight3D>` corrispondenti e globalmente da :ref:`sun_angle_max<class_ProceduralSkyMaterial_property_sun_angle_max>` e :ref:`sun_curve<class_ProceduralSkyMaterial_property_sun_curve>`.
 
@@ -299,13 +299,13 @@ Rapidità con la quale il sole svanisce tra il bordo del disco solare e :ref:`su
 - |void| **set_use_debanding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_debanding**\ (\ )
 
-Se ``true``, abilita il debanding. Il debanding aggiunge una piccola quantità di rumore che aiuta a ridurre il banding che appare dai cambiamenti graduali del colore nel cielo.
+Se ``true``, abilita il debanding. Il debanding aggiunge una piccola quantità di rumore che aiuta a ridurre il banding che appare dai cambiamenti graduali dei colori nel cielo.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

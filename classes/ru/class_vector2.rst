@@ -610,9 +610,9 @@ Y компонент вектора. Может быть доступен чер
 
 :ref:`float<class_float>` **distance_squared_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_distance_squared_to>`
 
-Returns the squared `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+Возвращает квадрат `евклидова расстояния <https://en.wikipedia.org/wiki/Euclidean_distance>`__ между этим вектором и ``to``.
 
-This method runs faster than :ref:`distance_to()<class_Vector2_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
+Этот метод работает быстрее, чем :ref:`distance_to()<class_Vector2_method_distance_to>`, поэтому предпочитайте его, если вам нужно сравнить векторы или вам нужен квадрат расстояния для какой-либо формулы.
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ This method runs faster than :ref:`distance_to()<class_Vector2_method_distance_t
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Vector2_method_distance_to>`
 
-Returns the `Euclidean distance <https://en.wikipedia.org/wiki/Euclidean_distance>`__ between this vector and ``to``.
+Возвращает `евклидово расстояние <https://en.wikipedia.org/wiki/Euclidean_distance>`__ между этим вектором и ``to``.
 
 .. rst-class:: classref-item-separator
 

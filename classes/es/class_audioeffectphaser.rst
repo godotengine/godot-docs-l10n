@@ -16,9 +16,9 @@ Creates several notch and peak filters that sweep across the spectrum.
 Descripción
 ----------------------
 
-A "phaser" effect creates a copy of the original audio that phase-rotates differently across the entire frequency spectrum, with the use of a series of all-pass filter stages (6 in this effect). This copy modulates with a low-frequency oscillator and combines with the original audio, resulting in peaks and troughs that sweep across the spectrum.
+Un efecto "phaser" crea una copia del audio original cuya fase gira de forma diferente a lo largo de todo el espectro de frecuencias, utilizando una serie de etapas de filtros pasa todo (6 en este efecto). Esta copia se modula con un oscilador de baja frecuencia y se combina con el audio original, dando como resultado picos y valles que se desplazan por el espectro.
 
-This effect can be used to create a "glassy" or "bubbly" sound.
+Este efecto puede utilizarse para crear un sonido "vidrioso" o "burbujeante".
 
 .. rst-class:: classref-introduction-group
 
@@ -86,7 +86,7 @@ Intensity of the effect. Value can range from 0.1 to 4.0.
 - |void| **set_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback**\ (\ )
 
-The volume ratio of the filtered audio that is fed back to the all-pass filters. The higher the value, the sharper and louder the peak filters created by the effect. Value can range from 0.1 to 0.9.
+La relación de volumen del audio filtrado que se envía de vuelta a los filtros all-pass. Cuanto mayor es el valor, más nítidos y fuertes son los filtros de pico creados por el efecto. El valor puede variar entre 0,1 y 0,9.
 
 .. rst-class:: classref-item-separator
 

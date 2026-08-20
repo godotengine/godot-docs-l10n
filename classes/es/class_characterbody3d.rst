@@ -318,7 +318,7 @@ Maximum number of times the body can change direction before it stops when calli
 - |void| **set_motion_mode**\ (\ value\: :ref:`MotionMode<enum_CharacterBody3D_MotionMode>`\ )
 - :ref:`MotionMode<enum_CharacterBody3D_MotionMode>` **get_motion_mode**\ (\ )
 
-Sets the motion mode which defines the behavior of :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`.
+Establece el modo de movimiento que define el comportamiento de :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`.
 
 .. rst-class:: classref-item-separator
 

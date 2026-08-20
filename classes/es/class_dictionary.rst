@@ -484,15 +484,15 @@ Encuentra y devuelve la primera clave cuyo valor asociado es igual a ``value``, 
 
 :ref:`Variant<class_Variant>` **get**\ (\ key\: :ref:`Variant<class_Variant>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Dictionary_method_get>`
 
-Returns the corresponding value for the given ``key`` in the dictionary. If the ``key`` does not exist, returns ``default``, or ``null`` if the parameter is omitted.
+Devuelve el valor correspondiente a la ``key`` dada en el diccionario. Si la ``key`` no existe, devuelve ``default``, o ``null`` si se omite el parámetro.
 
-\ **Note:** If the ``default`` argument is computationally expensive or has unwanted side effects, consider using the :ref:`has()<class_Dictionary_method_has>` method instead:
+\ **Nota:** Si el argumento ``default`` es computacionalmente costoso o tiene efectos secundarios no deseados, considera usar el método :ref:`has()<class_Dictionary_method_has>` en su lugar:
 
 ::
 
-    # Always calls `expensive_function()`.
+    # Siempre llama a `expensive_function()`.
     dict.get("key", expensive_function())
-    # Calls `expensive_function()` only if the key does not exist.
+    # Llama a `expensive_function()` solo si la clave no existe.
     dict.get("key") if dict.has("key") else expensive_function()
 
 .. rst-class:: classref-item-separator
@@ -589,7 +589,7 @@ Devuelve la instancia de :ref:`Script<class_Script>` asociada con los valores de
 
 :ref:`bool<class_bool>` **has**\ (\ key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_Dictionary_method_has>`
 
-Returns ``true`` if the dictionary contains an entry with the given ``key``.
+Devuelve ``true`` si el diccionario contiene una entrada con la ``key`` dada.
 
 
 .. tabs::
@@ -600,7 +600,6 @@ Returns ``true`` if the dictionary contains an entry with the given ``key``.
         "Godot" : 4,
         210 : null,
     }
-
     print(my_dict.has("Godot")) # Prints true
     print(my_dict.has(210))     # Prints true
     print(my_dict.has(4))       # Prints false
@@ -612,21 +611,20 @@ Returns ``true`` if the dictionary contains an entry with the given ``key``.
         { "Godot", 4 },
         { 210, default },
     };
-
     GD.Print(myDict.ContainsKey("Godot")); // Prints True
     GD.Print(myDict.ContainsKey(210));     // Prints True
     GD.Print(myDict.ContainsKey(4));       // Prints False
 
 
 
-In GDScript, this is equivalent to the ``in`` operator:
+En GDScript, esto es equivalente al operador ``in``:
 
 ::
 
     if "Godot" in { "Godot": 4 }:
         print("The key is here!") # Will be printed.
 
-\ **Note:** This method returns ``true`` as long as the ``key`` exists, even if its corresponding value is ``null``.
+\ **Nota:** Este método devuelve ``true`` siempre que la ``key`` exista, incluso si su valor correspondiente es ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -638,7 +636,7 @@ In GDScript, this is equivalent to the ``in`` operator:
 
 :ref:`bool<class_bool>` **has_all**\ (\ keys\: :ref:`Array<class_Array>`\ ) |const| :ref:`🔗<class_Dictionary_method_has_all>`
 
-Returns ``true`` if the dictionary contains all keys in the given ``keys`` array.
+Devuelve ``true`` si el diccionario contiene todas las claves en el array ``keys`` dado.
 
 ::
 
@@ -655,7 +653,7 @@ Returns ``true`` if the dictionary contains all keys in the given ``keys`` array
 
 :ref:`int<class_int>` **hash**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_hash>`
 
-Returns a hashed 32-bit integer value representing the dictionary contents.
+Devuelve un valor entero de 32 bits con hash que representa el contenido del diccionario.
 
 
 .. tabs::
@@ -672,14 +670,14 @@ Returns a hashed 32-bit integer value representing the dictionary contents.
     var dict1 = new Godot.Collections.Dictionary { { "A", 10 }, { "B", 2 } };
     var dict2 = new Godot.Collections.Dictionary { { "A", 10 }, { "B", 2 } };
 
-    // Godot.Collections.Dictionary has no Hash() method. Use GD.Hash() instead.
+    // Godot.Collections.Dictionary no tiene método Hash(). Usa GD.Hash() en su lugar.
     GD.Print(GD.Hash(dict1) == GD.Hash(dict2)); // Prints True
 
 
 
-\ **Note:** Dictionaries with the same entries but in a different order will not have the same hash.
+\ **Nota:** Los diccionarios con las mismas entradas pero en diferente orden no tendrán el mismo hash.
 
-\ **Note:** Dictionaries with equal hash values are *not* guaranteed to be the same, because of hash collisions. On the contrary, dictionaries with different hash values are guaranteed to be different.
+\ **Nota:** Los diccionarios con valores hash iguales *no* tienen garantía de ser iguales, debido a las colisiones de hash. Por el contrario, los diccionarios con valores hash diferentes tienen garantía de ser diferentes.
 
 .. rst-class:: classref-item-separator
 
@@ -811,7 +809,7 @@ Hace que el diccionario sea de solo lectura, es decir, deshabilita la modificaci
 
 |void| **merge**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`, overwrite\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Dictionary_method_merge>`
 
-Adds entries from ``dictionary`` to this dictionary. By default, duplicate keys are not copied over, unless ``overwrite`` is ``true``.
+Añade entradas desde ``dictionary`` a este diccionario. Por defecto, las claves duplicadas no se copian, a menos que ``overwrite`` sea ``true``.
 
 
 .. tabs::
@@ -821,11 +819,11 @@ Adds entries from ``dictionary`` to this dictionary. By default, duplicate keys 
     var dict = { "item": "sword", "quantity": 2 }
     var other_dict = { "quantity": 15, "color": "silver" }
 
-    # Overwriting of existing keys is disabled by default.
+    # La sobrescritura de claves existentes está deshabilitada por defecto.
     dict.merge(other_dict)
     print(dict)  # { "item": "sword", "quantity": 2, "color": "silver" }
 
-    # With overwriting of existing keys enabled.
+    # Con la sobreescritura de claves existentes habilitada.
     dict.merge(other_dict, true)
     print(dict)  # { "item": "sword", "quantity": 15, "color": "silver" }
 
@@ -843,17 +841,17 @@ Adds entries from ``dictionary`` to this dictionary. By default, duplicate keys 
         ["color"] = "silver",
     };
 
-    // Overwriting of existing keys is disabled by default.
+    // La sobrescritura de claves existentes está deshabilitada por defecto.
     dict.Merge(otherDict);
     GD.Print(dict); // { "item": "sword", "quantity": 2, "color": "silver" }
 
-    // With overwriting of existing keys enabled.
+    // Con la sobreescritura de claves existentes habilitada.
     dict.Merge(otherDict, true);
     GD.Print(dict); // { "item": "sword", "quantity": 15, "color": "silver" }
 
 
 
-\ **Note:** :ref:`merge()<class_Dictionary_method_merge>` is *not* recursive. Nested dictionaries are considered as keys that can be overwritten or not depending on the value of ``overwrite``, but they will never be merged together.
+\ **Nota:** :ref:`merge()<class_Dictionary_method_merge>` *no* es recursivo. Los diccionarios anidados se consideran como claves que pueden sobrescribirse o no dependiendo del valor de ``overwrite``, pero nunca se fusionarán entre sí.
 
 .. rst-class:: classref-item-separator
 
@@ -865,9 +863,9 @@ Adds entries from ``dictionary`` to this dictionary. By default, duplicate keys 
 
 :ref:`Dictionary<class_Dictionary>` **merged**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`, overwrite\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Dictionary_method_merged>`
 
-Returns a copy of this dictionary merged with the other ``dictionary``. By default, duplicate keys are not copied over, unless ``overwrite`` is ``true``. See also :ref:`merge()<class_Dictionary_method_merge>`.
+Devuelve una copia de este diccionario fusionada con el otro ``dictionary``. Por defecto, las claves duplicadas no se copian, a menos que ``overwrite`` sea ``true``. Consulta también :ref:`merge()<class_Dictionary_method_merge>`.
 
-This method is useful for quickly making dictionaries with default values:
+Este método es útil para crear rápidamente diccionarios con valores predeterminados:
 
 ::
 
@@ -924,7 +922,7 @@ Devuelve el número de entradas en el diccionario. Los diccionarios vacíos (``{
 
 |void| **sort**\ (\ ) :ref:`🔗<class_Dictionary_method_sort>`
 
-Sorts the dictionary in ascending order, by key. The final order is dependent on the "less than" (``<``) comparison between keys.
+Ordena el diccionario en orden ascendente, por clave. El orden final depende de la comparación "menos que" (``<``) entre claves.
 
 
 .. tabs::
@@ -937,7 +935,7 @@ Sorts the dictionary in ascending order, by key. The final order is dependent on
 
 
 
-This method ensures that the dictionary's entries are ordered consistently when :ref:`keys()<class_Dictionary_method_keys>` or :ref:`values()<class_Dictionary_method_values>` are called, or when the dictionary needs to be converted to a string through :ref:`@GlobalScope.str()<class_@GlobalScope_method_str>` or :ref:`JSON.stringify()<class_JSON_method_stringify>`.
+Este método garantiza que las entradas del diccionario estén ordenadas de manera consistente cuando se llama a :ref:`keys()<class_Dictionary_method_keys>` o :ref:`values()<class_Dictionary_method_values>`, o cuando el diccionario necesita convertirse a una cadena mediante :ref:`@GlobalScope.str()<class_@GlobalScope_method_str>` o :ref:`JSON.stringify()<class_JSON_method_stringify>`.
 
 .. rst-class:: classref-item-separator
 
@@ -966,7 +964,7 @@ Descripciones de Operadores
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_Dictionary_operator_neq_Dictionary>`
 
-Returns ``true`` if the two dictionaries do not contain the same keys and values.
+Devuelve ``true`` si los dos diccionarios no contienen las mismas claves y valores.
 
 .. rst-class:: classref-item-separator
 

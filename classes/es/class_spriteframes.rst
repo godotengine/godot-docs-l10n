@@ -7,14 +7,14 @@ SpriteFrames
 
 **Hereda:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Librería de fotogramas de sprite para AnimatedSprite2D y AnimatedSprite3D.
+Biblioteca de fotogramas de sprite para AnimatedSprite2D y AnimatedSprite3D.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Librería de fotogramas de sprite para un nodo :ref:`AnimatedSprite2D<class_AnimatedSprite2D>` o :ref:`AnimatedSprite3D<class_AnimatedSprite3D>`. Contiene fotogramas y datos de animación para su reproducción.
+Biblioteca de fotogramas de sprite para un nodo :ref:`AnimatedSprite2D<class_AnimatedSprite2D>` o :ref:`AnimatedSprite3D<class_AnimatedSprite3D>`. Contiene fotogramas y datos de animación para su reproducción.
 
 .. rst-class:: classref-reftable-group
 
@@ -87,7 +87,7 @@ enum **LoopMode**: :ref:`🔗<enum_SpriteFrames_LoopMode>`
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_NONE** = ``0``
 
-The animation plays once and stops when it reaches the end, or the start if played in reverse.
+La animación se reproduce una vez y se detiene al llegar al final, o al principio si se reproduce al revés.
 
 .. _class_SpriteFrames_constant_LOOP_LINEAR:
 
@@ -122,7 +122,7 @@ Descripciones de Métodos
 
 |void| **add_animation**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SpriteFrames_method_add_animation>`
 
-Añade una nueva animación ``anim`` a la librería.
+Añade una nueva animación ``anim`` a la biblioteca.
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Returns ``true`` if ``get_animation_loop_mode(anim) == LOOP_LINEAR``. Otherwise,
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **get_animation_loop_mode**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_SpriteFrames_method_get_animation_loop_mode>`
 
-Returns the loop mode for the ``anim`` animation.
+Devuelve el modo de bucle para la animación ``anim``.
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ If ``loop`` is ``true`` equivalent to ``set_animation_loop_mode(LOOP_LINEAR)``.
 
 |void| **set_animation_loop_mode**\ (\ anim\: :ref:`StringName<class_StringName>`, loop_mode\: :ref:`LoopMode<enum_SpriteFrames_LoopMode>`\ ) :ref:`🔗<class_SpriteFrames_method_set_animation_loop_mode>`
 
-Sets the ``loop_mode`` for the ``anim`` animation.
+Establece el ``loop_mode`` para la animación ``anim``.
 
 .. rst-class:: classref-item-separator
 

@@ -9,7 +9,7 @@ GPUParticlesAttractor3D
 
 **Ereditato da:** :ref:`GPUParticlesAttractorBox3D<class_GPUParticlesAttractorBox3D>`, :ref:`GPUParticlesAttractorSphere3D<class_GPUParticlesAttractorSphere3D>`, :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>`
 
-Classe di base astratta per attrattori di particelle 3D.
+Classe base astratta per gli attrattori di particelle 3D.
 
 .. rst-class:: classref-introduction-group
 
@@ -79,11 +79,11 @@ L'attenuazione dell'attrattore di particelle. Valori più alti risultano in una 
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-Gli strati di rendering delle particelle (:ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`) che saranno influenzati dall'attrattore. Per impostazione predefinita, tutte le particelle sono influenzate da un attrattore.
+Gli strati di rendering delle particelle (:ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`) che saranno influenzati dall'attrattore. Come predefinito, tutte le particelle sono influenzate da un attrattore.
 
-Dopo aver configurato i nodi delle particelle adeguatamente, è possibile deselezionare strati specifici per impedire che determinate particelle siano interessate dagli attrattori. Ad esempio, questo può essere utilizzato se si utilizza un attrattore come parte di un effetto magico ma non si desidera che l'attrattore influenzi particelle del meteo non correlate nella stessa posizione.
+Dopo aver configurato i nodi delle particelle adeguatamente, è possibile deselezionare strati specifici per impedire che determinate particelle siano influenzate dagli attrattori. Ad esempio, potrebbe essere utile per un attrattore che fa parte di un effetto magico ma è preferibile che non influenzi altre particelle del meteo nella sua stessa posizione.
 
-L'attrazione delle particelle può anche essere disabilitata per ogni materiale di processo impostando :ref:`ParticleProcessMaterial.attractor_interaction_enabled<class_ParticleProcessMaterial_property_attractor_interaction_enabled>` sul nodo :ref:`GPUParticles3D<class_GPUParticles3D>`.
+È possibile disabilitare l'attrazione delle particelle per ogni materiale di processo impostando :ref:`ParticleProcessMaterial.attractor_interaction_enabled<class_ParticleProcessMaterial_property_attractor_interaction_enabled>` sul nodo :ref:`GPUParticles3D<class_GPUParticles3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Regola la forza dell'attrattore. Se :ref:`strength<class_GPUParticlesAttractor3D
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

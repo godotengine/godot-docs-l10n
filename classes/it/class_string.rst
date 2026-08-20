@@ -841,13 +841,13 @@ Se la stringa è un percorso di file valido, restituisce il nome del file, inclu
 
 :ref:`String<class_String>` **get_slice**\ (\ delimiter\: :ref:`String<class_String>`, slice\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_String_method_get_slice>`
 
-Splits the string using a ``delimiter`` and returns the substring at index ``slice``. Returns the original string if ``delimiter`` does not occur in the string. Returns an empty string if the ``slice`` does not exist.
+Divide la stringa usando un ``delimiter`` e restituisce la sottostringa all'indice ``slice``. Restituisce la stringa originale se ``delimiter`` non esiste nella stringa. Restituisce una stringa vuota se la sezione all'indice ``slice`` non esiste.
 
-This is faster than :ref:`split()<class_String_method_split>`, if you only need one or two substrings.
+Questo è più veloce di :ref:`split()<class_String_method_split>`, se hai solo bisogno di una o due sottostringhe.
 
 ::
 
-    print("i/am/example/hi".get_slice("/", 2)) # Prints "example"
+    print("sono/un/esempio/ciao".get_slice("/", 2)) # Stampa "esempio"
 
 .. rst-class:: classref-item-separator
 
@@ -859,14 +859,14 @@ This is faster than :ref:`split()<class_String_method_split>`, if you only need 
 
 :ref:`int<class_int>` **get_slice_count**\ (\ delimiter\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_get_slice_count>`
 
-Returns the total number of slices when the string is split with the given ``delimiter`` (see :ref:`split()<class_String_method_split>`).
+Restituisce il numero totale di sezioni quando la stringa viene divisa con il delimitatore ``delimiter`` (vedi :ref:`split()<class_String_method_split>`).
 
-Use :ref:`get_slice()<class_String_method_get_slice>` to extract a specific slice.
+Usa :ref:`get_slice()<class_String_method_get_slice>` per estrarre una sezione specifica.
 
 ::
 
-    print("i/am/example/string".get_slice_count("/")) # Prints '4'.
-    print("i am example string".get_slice_count("/")) # Prints '1'.
+    print("i/am/example/string".get_slice_count("/")) # Stampa '4'.
+    print("i am example string".get_slice_count("/")) # Stampa '1'.
 
 .. rst-class:: classref-item-separator
 
@@ -1585,7 +1585,7 @@ Rimuove tutte le occorrenze del carattere Unicode con il codice ``what``. Versio
 
 :ref:`String<class_String>` **remove_chars**\ (\ chars\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_remove_chars>`
 
-Removes all occurrences of the characters in ``chars``. See also :ref:`remove_char()<class_String_method_remove_char>`.
+Rimuove tutte le occorrenze dei caratteri in ``chars``. Vedi anche :ref:`remove_char()<class_String_method_remove_char>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2498,7 +2498,7 @@ Restituisce una nuova **String** che contiene solo il carattere all'indice ``ind
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

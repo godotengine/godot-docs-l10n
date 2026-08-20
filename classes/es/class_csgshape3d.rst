@@ -146,9 +146,9 @@ Descripciones de Propiedades
 - |void| **set_autosmooth**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_autosmooth**\ (\ )
 
-Enables automatic smoothing. This overrides any smoothing on the CSG node and instead uses :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>` to calculate normals based on the angle between faces.
+Habilita el suavizado automático. Esto anula cualquier suavizado en el nodo CSG y en su lugar utiliza :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>` para calcular normales basándose en el ángulo entre caras.
 
-Children of a :ref:`CSGCombiner3D<class_CSGCombiner3D>` node will be treated as a single mesh.
+Los hijos de un nodo :ref:`CSGCombiner3D<class_CSGCombiner3D>` se tratarán como una única malla.
 
 .. rst-class:: classref-item-separator
 
@@ -254,9 +254,9 @@ La operación que se realiza en esta forma. Esto se ignora para el primer nodo h
 - |void| **set_smoothing_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_smoothing_angle**\ (\ )
 
-When autosmooth is enabled, faces with an angle between them greater than this will be smoothed, while faces with a smaller angle will remain sharp.
+Cuando el autolisado está activado, las caras con un ángulo mayor entre ellas se suavizarán, mientras que las caras con un ángulo menor permanecerán afiladas.
 
-Note: An angle lower than 0.1 will cause all smoothing to be disabled, this can be used to increase performance.
+Nota: Un ángulo inferior a 0,1 desactivará todo el suavizado, lo que puede usarse para aumentar el rendimiento.
 
 .. rst-class:: classref-item-separator
 

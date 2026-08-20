@@ -510,7 +510,7 @@ enum **TextureFilter**: :ref:`🔗<enum_BaseMaterial3D_TextureFilter>`
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_NEAREST** = ``0``
 
-El filtro de textura lee solo del píxel más cercano. Esto hace que la textura se vea pixelada de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
+El filtro de textura lee solo del píxel más cercano. Esto hace que la textura se parezca pixelada de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR:
 
@@ -518,7 +518,7 @@ El filtro de textura lee solo del píxel más cercano. Esto hace que la textura 
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_LINEAR** = ``1``
 
-El filtro de textura mezcla entre los 4 píxeles más cercanos. Esto hace que la textura se vea suave de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
+El filtro de textura mezcla entre los 4 píxeles más cercanos. Esto hace que la textura se aparezca suave de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS:
 
@@ -1174,7 +1174,7 @@ Permite el sombreador de renderizado de campo de distancia con signo multicanal.
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_DISABLE_FOG** = ``21``
 
-Disables receiving depth-based or volumetric fog.
+Desactiva la recepción de niebla basada en profundidad o volumétrica.
 
 .. _class_BaseMaterial3D_constant_FLAG_DISABLE_SPECULAR_OCCLUSION:
 
@@ -1690,7 +1690,7 @@ Activa el shader de renderizado de campos de distancia con signo multicanal (MSD
 - |void| **set_alpha_antialiasing_edge**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_antialiasing_edge**\ (\ )
 
-Threshold at which antialiasing will be applied on the alpha channel.
+Umbral a partir del cual se aplicará el antialiasing en el canal alfa.
 
 .. rst-class:: classref-item-separator
 
@@ -1900,7 +1900,7 @@ Especifica el canal del :ref:`ao_texture<class_BaseMaterial3D_property_ao_textur
 - |void| **set_backlight**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_backlight**\ (\ )
 
-The color used by the backlight effect. Represents the light passing through an object.
+El color utilizado por el efecto de luz de fondo. Representa la luz que atraviesa un objeto.
 
 .. rst-class:: classref-item-separator
 
@@ -3466,7 +3466,7 @@ Si es ``true``, la dispersión subsuperficial utilizará un modo especial optimi
 - |void| **set_subsurface_scattering_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_subsurface_scattering_strength**\ (\ )
 
-The strength of the subsurface scattering effect. The depth of the effect is also controlled by :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>`, which is set globally.
+La intensidad del efecto de dispersión subsuperficial. La profundidad del efecto también se controla mediante :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>`, que se define de forma global.
 
 .. rst-class:: classref-item-separator
 
@@ -3500,7 +3500,7 @@ La textura utilizada para controlar la fuerza del subsurface scattering. Se alma
 - |void| **set_transmittance_boost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_transmittance_boost**\ (\ )
 
-The intensity of the subsurface scattering transmittance effect.
+La intensidad del efecto de transmitancia de dispersión subsuperficial.
 
 .. rst-class:: classref-item-separator
 
@@ -3517,7 +3517,7 @@ The intensity of the subsurface scattering transmittance effect.
 - |void| **set_transmittance_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_transmittance_color**\ (\ )
 
-The color to multiply the subsurface scattering transmittance effect with. Ignored if :ref:`subsurf_scatter_skin_mode<class_BaseMaterial3D_property_subsurf_scatter_skin_mode>` is ``true``.
+El color con el que se multiplica el efecto de transmitancia de dispersión subsuperficial. Se ignora si :ref:`subsurf_scatter_skin_mode<class_BaseMaterial3D_property_subsurf_scatter_skin_mode>` es ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -3534,7 +3534,7 @@ The color to multiply the subsurface scattering transmittance effect with. Ignor
 - |void| **set_transmittance_depth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_transmittance_depth**\ (\ )
 
-The depth of the subsurface scattering transmittance effect.
+La profundidad del efecto de transmitancia de dispersión subsuperficial.
 
 .. rst-class:: classref-item-separator
 
@@ -3551,7 +3551,7 @@ The depth of the subsurface scattering transmittance effect.
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, enables subsurface scattering transmittance. Only effective if :ref:`subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` is ``true``. See also :ref:`backlight_enabled<class_BaseMaterial3D_property_backlight_enabled>`.
+Si es ``true``, habilita la transmitancia de dispersión subsuperficial. Solo surte efecto si :ref:`subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` es ``true``. Véase también :ref:`backlight_enabled<class_BaseMaterial3D_property_backlight_enabled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3638,7 +3638,7 @@ El modo de transparencia del material. Algunos modos de transparencia deshabilit
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true`` use :ref:`fov_override<class_BaseMaterial3D_property_fov_override>` to override the :ref:`Camera3D<class_Camera3D>`'s field of view angle.
+Si es ``true``, utiliza :ref:`fov_override<class_BaseMaterial3D_property_fov_override>` para anular el ángulo del campo de visión de la :ref:`Camera3D<class_Camera3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3672,9 +3672,9 @@ Si es ``true``, habilita partes del sombreador necesarias para que funcionen los
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, render point size can be changed.
+Si es ``true``, se puede modificar el tamaño de renderizado de los puntos.
 
-\ **Note:** This is only effective for objects whose geometry is point-based rather than triangle-based. See also :ref:`point_size<class_BaseMaterial3D_property_point_size>`.
+\ **Nota:** Esto solo surte efecto en objetos cuya geometría se basa en puntos en lugar de triángulos. Véase también :ref:`point_size<class_BaseMaterial3D_property_point_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3708,7 +3708,7 @@ Si es ``true`` usa :ref:`z_clip_scale<class_BaseMaterial3D_property_z_clip_scale
 - |void| **set_uv1_offset**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_uv1_offset**\ (\ )
 
-How much to offset the ``UV`` coordinates. This amount will be added to ``UV`` in the vertex function. This can be used to offset a texture. The Z component is used when :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>` is enabled, but it is not used anywhere else.
+Cuánto se desplazan las coordenadas ``UV``. Este valor se sumará a las ``UV`` en la función de vértice. Se puede utilizar para desplazar una textura. El componente Z se utiliza cuando :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>` está activado, pero no se emplea en ningún otro caso.
 
 .. rst-class:: classref-item-separator
 
@@ -3947,7 +3947,7 @@ Returns ``true`` if the specified ``feature`` is enabled.
 
 :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_flag>`
 
-Returns ``true`` if the specified ``flag`` is enabled.
+Devuelve ``true`` si el ``flag`` especificado está habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -3959,7 +3959,7 @@ Returns ``true`` if the specified ``flag`` is enabled.
 
 :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_texture>`
 
-Returns the :ref:`Texture2D<class_Texture2D>` associated with the specified texture ``param``.
+Devuelve la :ref:`Texture2D<class_Texture2D>` asociada a la textura ``param`` especificada.
 
 .. rst-class:: classref-item-separator
 

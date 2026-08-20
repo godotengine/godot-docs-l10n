@@ -137,7 +137,7 @@ Se llama cuando se solicita que una parte de la **Texture2D** especificada por l
 
 :ref:`Format<enum_Image_Format>` **_get_format**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__get_format>`
 
-Called when :ref:`get_format()<class_Texture2D_method_get_format>` is called.
+Llamado cuando :ref:`get_format()<class_Texture2D_method_get_format>` es llamado.
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ Llamado cuando se consulta la altura de la **Texture2D**.
 
 :ref:`Image<class_Image>` **_get_image**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__get_image>`
 
-Called when :ref:`get_image()<class_Texture2D_method_get_image>` is called.
+Llamado cuando :ref:`get_image()<class_Texture2D_method_get_image>` fue llamado.
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ Called when :ref:`get_image()<class_Texture2D_method_get_image>` is called.
 
 :ref:`int<class_int>` **_get_mipmap_count**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__get_mipmap_count>`
 
-Called when :ref:`get_mipmap_count()<class_Texture2D_method_get_mipmap_count>` is called.
+Llamado cuando :ref:`get_mipmap_count()<class_Texture2D_method_get_mipmap_count>` es llamado.
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ Llamado cuando se consulta la presencia de un canal alfa en la **Texture2D**.
 
 :ref:`bool<class_bool>` **_has_mipmaps**\ (\ ) |virtual| |const| :ref:`🔗<class_Texture2D_private_method__has_mipmaps>`
 
-Called when :ref:`has_mipmaps()<class_Texture2D_method_has_mipmaps>` is called.
+Llamado cuando :ref:`has_mipmaps()<class_Texture2D_method_has_mipmaps>` es llamado.
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Dibuja una parte de la textura utilizando un :ref:`CanvasItem<class_CanvasItem>`
 
 :ref:`Format<enum_Image_Format>` **get_format**\ (\ ) |const| :ref:`🔗<class_Texture2D_method_get_format>`
 
-Returns the image format of the texture.
+Devuelve el formato de imagen de la textura.
 
 .. rst-class:: classref-item-separator
 

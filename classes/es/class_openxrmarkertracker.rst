@@ -68,7 +68,7 @@ Descripciones de Propiedades
 - |void| **set_bounds_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_bounds_size**\ (\ )
 
-The bounds size for this marker.
+El tamaño de los límites de este marcador.
 
 .. rst-class:: classref-item-separator
 

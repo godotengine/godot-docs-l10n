@@ -290,9 +290,9 @@ Cerca un valore nell'array e restituisce il suo indice o ``-1`` se non lo trova.
 
 :ref:`Vector4<class_Vector4>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedVector4Array_method_get>`
 
-Returns the :ref:`Vector4<class_Vector4>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``Vector4(0, 0, 0, 0)``.
+Restituisce il :ref:`Vector4<class_Vector4>` all'indice ``index`` nell'array. Se ``index`` è fuori limite o negativo, questo metodo fallisce e restituisce ``Vector2(0, 0, 0, 0)``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Questo metodo è simile (ma non identico) all'operatore ``[]``. In particolare, quando questo metodo fallisce, non mette in pausa l'esecuzione del progetto se eseguito dall'editor.
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ Restituisce il :ref:`Vector4<class_Vector4>` all'indice ``index``. Gli indici ne
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

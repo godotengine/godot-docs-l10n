@@ -14,9 +14,9 @@ Adds a notch filter to an audio bus.
 Descripción
 ----------------------
 
-A "notch" filter attenuates frequencies at :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` and allows frequencies outside the frequency threshold to pass unchanged. It is a narrower and stronger version of :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, and is the opposite of :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
+Un filtro de "rechazo de banda" atenúa las frecuencias en :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` y permite que las frecuencias fuera del umbral de frecuencia pasen sin cambios. Es una versión más estrecha y potente de :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, y es lo contrario de :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
 
-This filter can be used to give more room for other sounds to play at that frequency. Because of how much it attenuates frequencies, it can also be used to completely remove undesired frequencies.
+Este filtro puede utilizarse para dar más espacio a otros sonidos que se reproduzcan en esa frecuencia. Debido a la cantidad de atenuación que aplica a las frecuencias, también puede utilizarse para eliminar por completo frecuencias no deseadas.
 
 .. rst-class:: classref-introduction-group
 

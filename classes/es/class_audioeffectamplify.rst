@@ -7,7 +7,7 @@ AudioEffectAmplify
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a volume manipulation audio effect to an audio bus.
+Añade un efecto de audio de manipulación de volumen a un bus de audio.
 
 .. rst-class:: classref-introduction-group
 

@@ -33,7 +33,7 @@ Per creare un menu, usa :ref:`create_menu()<class_NativeMenu_method_create_menu>
             paste()
 
     func _enter_tree():
-        # Crea un nuovo menu e aggiungi elementi:
+        # Crea un nuovo menu e aggiungi voci:
         menu = NativeMenu.create_menu()
         NativeMenu.add_item(menu, "Cut", _menu_callback, Callable(), "ITEM_CUT")
         NativeMenu.add_item(menu, "Copy", _menu_callback, Callable(), "ITEM_COPY")
@@ -502,9 +502,9 @@ Restituisce l'indice della voce inserita, non è garantito che sia uguale al val
 
 :ref:`int<class_int>` **add_submenu_item**\ (\ rid\: :ref:`RID<class_RID>`, label\: :ref:`String<class_String>`, submenu_rid\: :ref:`RID<class_RID>`, tag\: :ref:`Variant<class_Variant>` = null, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_NativeMenu_method_add_submenu_item>`
 
-Aggiunge un elemento che fungerà da sottomenu del menu globale ``rid``. L'argomento ``submenu_rid`` è il RID del menu globale che sarà mostrato quando si clicca sull'elemento.
+Aggiunge una voce che fungerà da sottomenu del menu globale ``rid``. L'argomento ``submenu_rid`` è il RID del menu globale che sarà mostrato quando si clicca sulla voce.
 
-Restituisce l'indice dell'elemento inserito, non è garantito che sia uguale al valore di ``index``.
+Restituisce l'indice della voce inserita, non è garantito che sia uguale al valore di ``index``.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -532,7 +532,7 @@ Rimuove tutte le voci dal menu globale ``rid``.
 
 :ref:`RID<class_RID>` **create_menu**\ (\ ) :ref:`🔗<class_NativeMenu_method_create_menu>`
 
-Crea un nuovo oggetto per menù globale.
+Crea un nuovo oggetto per menu globale.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -546,9 +546,9 @@ Crea un nuovo oggetto per menù globale.
 
 :ref:`int<class_int>` **find_item_index_with_submenu**\ (\ rid\: :ref:`RID<class_RID>`, submenu_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_submenu>`
 
-Returns the index of the item with the submenu specified by ``submenu_rid``. Indices are automatically assigned to each item by the engine.
+Restituisce l'indice della voce con il sottomenu specificato da ``submenu_rid``. Gli indici vengono assegnati automaticamente a ciascuna voce dal motore.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Nota:** Questo metodo è implementato su macOS e Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -560,9 +560,9 @@ Returns the index of the item with the submenu specified by ``submenu_rid``. Ind
 
 :ref:`int<class_int>` **find_item_index_with_tag**\ (\ rid\: :ref:`RID<class_RID>`, tag\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_tag>`
 
-Returns the index of the item with the specified ``tag``. Indices are automatically assigned to each item by the engine.
+Restituisce l'indice della voce con il tag specificato da ``tag``. Gli indici vengono assegnati automaticamente a ciascuna voce dal motore.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Nota:** Questo metodo è implementato su macOS e Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -574,9 +574,9 @@ Returns the index of the item with the specified ``tag``. Indices are automatica
 
 :ref:`int<class_int>` **find_item_index_with_text**\ (\ rid\: :ref:`RID<class_RID>`, text\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_NativeMenu_method_find_item_index_with_text>`
 
-Returns the index of the item with the specified ``text``. Indices are automatically assigned to each item by the engine.
+Restituisce l'indice della voce con il testo specificato da ``text``. Gli indici vengono assegnati automaticamente a ciascuna voce dal motore.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Nota:** Questo metodo è implementato su macOS e Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -602,7 +602,7 @@ Libera un oggetto menù globale creato da questo **NativeMenu**.
 
 :ref:`Key<enum_@GlobalScope_Key>` **get_item_accelerator**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_accelerator>`
 
-Restituisce l'acceleratore dell'elemento all'indice ``idx``. Gli acceleratori sono combinazioni speciali di tasti che attivano l'elemento, indifferentemente da quale controllo è focalizzato.
+Restituisce l'acceleratore della voce all'indice ``idx``. Gli acceleratori sono combinazioni speciali di tasti che attivano la voce, a prescindere da quale controllo è focalizzato.
 
 \ **Nota:** Questo metodo è implementato solo su macOS.
 
@@ -616,7 +616,7 @@ Restituisce l'acceleratore dell'elemento all'indice ``idx``. Gli acceleratori so
 
 :ref:`Callable<class_Callable>` **get_item_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_callback>`
 
-Restituisce il callback dell'elemento all'indice ``idx``.
+Restituisce il callback della voce all'indice ``idx``.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -644,7 +644,7 @@ Restituisce il numero di voci nel menu globale ``rid``.
 
 :ref:`Texture2D<class_Texture2D>` **get_item_icon**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_icon>`
 
-Restituisce l'icona dell'elemento all'indice ``idx``.
+Restituisce l'icona della voce all'indice ``idx``.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -658,7 +658,7 @@ Restituisce l'icona dell'elemento all'indice ``idx``.
 
 :ref:`int<class_int>` **get_item_indentation_level**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_indentation_level>`
 
-Restituisce l'offset orizzontale dell'elemento al dato indice ``idx``.
+Restituisce l'offset orizzontale della voce all'indice ``idx``.
 
 \ **Nota:** Questo metodo è implementato solo su macOS.
 
@@ -672,7 +672,7 @@ Restituisce l'offset orizzontale dell'elemento al dato indice ``idx``.
 
 :ref:`Callable<class_Callable>` **get_item_key_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_key_callback>`
 
-Restituisce il callback dell'acceleratore dell'elemento all'indice ``idx``.
+Restituisce il callback dell'acceleratore della voce all'indice ``idx``.
 
 \ **Nota:** Questo metodo è implementato solo su macOS.
 
@@ -686,7 +686,7 @@ Restituisce il callback dell'acceleratore dell'elemento all'indice ``idx``.
 
 :ref:`int<class_int>` **get_item_max_states**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_max_states>`
 
-Restituisce il numero di stati di un elemento multistato. Vedi :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` per i dettagli.
+Restituisce il numero di stati di una voce multistato. Vedi :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` per i dettagli.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -700,7 +700,7 @@ Restituisce il numero di stati di un elemento multistato. Vedi :ref:`add_multist
 
 :ref:`int<class_int>` **get_item_state**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_state>`
 
-Restituisce lo stato di un elemento multistato. Vedi :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` per i dettagli.
+Restituisce lo stato di una voce multistato. Vedi :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` per i dettagli.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -714,7 +714,7 @@ Restituisce lo stato di un elemento multistato. Vedi :ref:`add_multistate_item()
 
 :ref:`RID<class_RID>` **get_item_submenu**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_submenu>`
 
-Restituisce l'ID del sottomenu dell'elemento all'indice ``idx``. Consulta :ref:`add_submenu_item()<class_NativeMenu_method_add_submenu_item>` per ulteriori informazioni su come aggiungere un sottomenu.
+Restituisce l'ID del sottomenu della voce all'indice ``idx``. Consulta :ref:`add_submenu_item()<class_NativeMenu_method_add_submenu_item>` per ulteriori informazioni su come aggiungere un sottomenu.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -728,7 +728,7 @@ Restituisce l'ID del sottomenu dell'elemento all'indice ``idx``. Consulta :ref:`
 
 :ref:`Variant<class_Variant>` **get_item_tag**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_tag>`
 
-Restituisce i metadati dell'elemento specificato, che potrebbero essere di qualsiasi tipo. È possibile impostarli con :ref:`set_item_tag()<class_NativeMenu_method_set_item_tag>`, il quale fornisce un modo semplice per assegnare dati di contesto agli elementi.
+Restituisce i metadati della voce specificato, che potrebbero essere di qualsiasi tipo. È possibile impostarli con :ref:`set_item_tag()<class_NativeMenu_method_set_item_tag>`, il quale fornisce un modo semplice per assegnare dati di contesto alle voci.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -742,7 +742,7 @@ Restituisce i metadati dell'elemento specificato, che potrebbero essere di quals
 
 :ref:`String<class_String>` **get_item_text**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_text>`
 
-Restituisce il testo dell'elemento all'indice ``idx``.
+Restituisce il testo della voce all'indice ``idx``.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -854,9 +854,9 @@ Restituisce il nome leggibile di un menu speciale di sistema.
 
 :ref:`String<class_String>` **get_system_menu_text**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_system_menu_text>`
 
-Returns the text of the system menu item.
+Restituisce il testo della voce nel menu di sistema.
 
-\ **Note:** This method is implemented on macOS.
+\ **Nota:** Questo metodo è implementato su macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -910,7 +910,7 @@ Restituisce ``true`` se è supportato un menu speciale di sistema.
 
 :ref:`bool<class_bool>` **is_item_checkable**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_checkable>`
 
-Restituisce ``true`` se l'elemento all'indice ``idx`` è spuntabile in qualche modo, ad esempio se ha una casella di spunta o un pulsante di scelta (radio).
+Restituisce ``true`` se la voce all'indice ``idx`` è spuntabile in qualche modo, ad esempio se ha una casella di spunta o un pulsante di scelta (radio).
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -924,7 +924,7 @@ Restituisce ``true`` se l'elemento all'indice ``idx`` è spuntabile in qualche m
 
 :ref:`bool<class_bool>` **is_item_checked**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_checked>`
 
-Restituisce ``true`` se l'elemento all'indice ``idx`` è spuntato.
+Restituisce ``true`` se la voce all'indice ``idx`` è spuntata.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -938,9 +938,9 @@ Restituisce ``true`` se l'elemento all'indice ``idx`` è spuntato.
 
 :ref:`bool<class_bool>` **is_item_disabled**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_is_item_disabled>`
 
-Restituisce ``true`` se l'elemento all'indice ``idx`` è disabilitato. Quando è disabilitato, non può essere selezionato e la sua azione non può essere richiamata.
+Restituisce ``true`` se la voce all'indice ``idx`` è disabilitata. Quando è disabilitata, non può essere selezionata e la sua azione non può essere richiamata.
 
-Consulta :ref:`set_item_disabled()<class_NativeMenu_method_set_item_disabled>` per ulteriori informazioni su come disabilitare un elemento.
+Vedi :ref:`set_item_disabled()<class_NativeMenu_method_set_item_disabled>` per ulteriori informazioni su come disabilitare una voce.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -1028,9 +1028,9 @@ Mostra il menù globale alla posizione ``position`` in coordinate di schermo.
 
 |void| **remove_item**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_remove_item>`
 
-Rimuove l'elemento all'indice ``idx`` dal menu globale ``rid``.
+Rimuove la voce all'indice ``idx`` dal menu globale ``rid``.
 
-\ **Nota:** Gli indici degli elementi successivi all'elemento rimosso verranno spostati di uno.
+\ **Nota:** Gli indici delle voci successivi alla voce rimossa verranno spostati di uno.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -1088,7 +1088,7 @@ Imposta il callback della voce all'indice ``idx``. Il callback viene richiamato 
 
 |void| **set_item_checkable**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, checkable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_checkable>`
 
-Imposta se l'elemento all'indice ``idx`` ha una casella di spunta. Se ``false``, imposta il tipo dell'elemento su testo semplice.
+Imposta se la voce all'indice ``idx`` ha una casella di spunta. Se ``false``, imposta il tipo della voce su testo semplice.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -1102,7 +1102,7 @@ Imposta se l'elemento all'indice ``idx`` ha una casella di spunta. Se ``false``,
 
 |void| **set_item_checked**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, checked\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_checked>`
 
-Imposta lo stato di spunta dell'elemento all'indice ``idx``.
+Imposta lo stato di spunta della voce all'indice ``idx``.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -1116,7 +1116,7 @@ Imposta lo stato di spunta dell'elemento all'indice ``idx``.
 
 |void| **set_item_disabled**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_disabled>`
 
-Abilita/disabilita l'elemento all'indice ``idx``. Quando è disabilitato, non può essere selezionato e la sua azione non può essere richiamata.
+Abilita/disabilita la voce all'indice ``idx``. Quando è disabilitato, non può essere selezionata e la sua azione non può essere richiamata.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -1160,7 +1160,7 @@ Imposta il callback della voce all'indice ``idx``. Il callback viene emesso al p
 
 |void| **set_item_icon**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_icon>`
 
-Sostituisce l'icona :ref:`Texture2D<class_Texture2D>` dell'indice ``idx`` specificato.
+Sostituisce l'icona :ref:`Texture2D<class_Texture2D>` dell'indice ``idx``.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -1176,7 +1176,7 @@ Sostituisce l'icona :ref:`Texture2D<class_Texture2D>` dell'indice ``idx`` specif
 
 |void| **set_item_indentation_level**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, level\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_indentation_level>`
 
-Imposta l'offset orizzontale dell'elemento all'indice ``idx``.
+Imposta l'offset orizzontale della voce all'indice ``idx``.
 
 \ **Nota:** Questo metodo è implementato solo su macOS.
 
@@ -1190,9 +1190,11 @@ Imposta l'offset orizzontale dell'elemento all'indice ``idx``.
 
 :ref:`int<class_int>` **set_item_index**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, target_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_index>`
 
-Cambia l'indice della voce all'indice ``idx`` portandolo all'indice ``target_idx``. Questo si può utilizzare per spostare una voce sopra altri elementi.
+Cambia l'indice della voce all'indice ``idx`` portandolo all'indice ``target_idx``. Può servire per spostare una voce sopra altre voci.
 
-\ **Nota:** Gli indici di tutte le voci comprese tra l'indice ``idx`` e l'indice ``target_idx`` saranno spostati di uno.
+Restituisce il nuovo indice della voce spostata; non è garantito che sia uguale a ``target_idx``.
+
+\ **Nota:** Gli indici di tutte le voci comprese tra l'indice ``idx`` e l'indice ``target_idx`` verranno spostati di uno.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -1222,7 +1224,7 @@ Imposta il callback della voce all'indice ``idx``. Il callback viene emesso quan
 
 |void| **set_item_max_states**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, max_states\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_max_states>`
 
-Imposta il numero di stato di un elemento multistato. Vedi :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` per i dettagli.
+Imposta il numero di stato di una voce multistato. Vedi :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` per i dettagli.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -1252,7 +1254,7 @@ Imposta il tipo di voce all'indice ``idx`` su pulsante di scelta (radio). Se ``f
 
 |void| **set_item_state**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, state\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_state>`
 
-Restituisce lo stato di un elemento multistato. Vedi :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` per i dettagli.
+Restituisce lo stato di una voce multistato. Vedi :ref:`add_multistate_item()<class_NativeMenu_method_add_multistate_item>` per i dettagli.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -1266,7 +1268,7 @@ Restituisce lo stato di un elemento multistato. Vedi :ref:`add_multistate_item()
 
 |void| **set_item_submenu**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, submenu_rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_submenu>`
 
-Imposta il RID del sottomenu dell'elemento all'indice ``idx``. Il sottomenu è un menu globale che verrebbe mostrato quando si clicca sull'elemento.
+Imposta il RID del sottomenu della voce all'indice ``idx``. Il sottomenu è un menu globale che verrebbe mostrato quando si clicca sulla voce.
 
 \ **Nota:** Questo metodo è implementato su macOS e Windows.
 
@@ -1308,7 +1310,7 @@ Imposta il testo della voce all'indice ``idx``.
 
 |void| **set_item_tooltip**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_tooltip>`
 
-Imposta una :ref:`String<class_String>` tooltip dell'elemento all'indice ``idx``.
+Imposta una :ref:`String<class_String>` tooltip della voce all'indice ``idx``.
 
 \ **Nota:** Questo metodo è implementato solo su macOS.
 
@@ -1366,15 +1368,15 @@ Registra un chiamabile da emettere dopo la chiusura del menu.
 
 |void| **set_system_menu_text**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_NativeMenu_method_set_system_menu_text>`
 
-Sets the text of the system menu item.
+Imposta il testo della voce nel menu di sistema.
 
-\ **Note:** This method is implemented on macOS.
+\ **Nota:** Questo metodo è implementato su macOS.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

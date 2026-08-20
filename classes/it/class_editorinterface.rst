@@ -384,7 +384,7 @@ Restituisce il :ref:`Node<class_Node>` radice della scena in fase di modifica (a
 
 :ref:`String<class_String>` **get_editor_language**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_language>`
 
-Returns the language currently used for the editor interface.
+Restituisce la lingua attualmente utilizzata per l'interfaccia dell'editor.
 
 .. rst-class:: classref-item-separator
 
@@ -424,9 +424,9 @@ Restituisce il singleton :ref:`EditorPaths<class_EditorPaths>`.
 
 :ref:`float<class_float>` **get_editor_scale**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_scale>`
 
-Returns the actual scale of the editor UI (``1.0`` being 100% scale). This can be used to adjust position and dimensions of the UI added by plugins.
+Restituisce la scala effettiva dell'interfaccia utente dell'editor (``1.0`` è una scala del 100%). Può essere utilizzata per adattare la posizione e le dimensioni dell'interfaccia utente aggiunta dalle estensioni.
 
-\ **Note:** This value is set via the :ref:`EditorSettings.interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` and :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>` settings. The editor must be restarted for changes to be properly applied.
+\ **Nota:** Questo valore è impostato tramite le impostazioni :ref:`EditorSettings.interface/editor/appearance/display_scale<class_EditorSettings_property_interface/editor/appearance/display_scale>` and :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`. L'editor deve essere riavviato affinché le modifiche siano applicate correttamente.
 
 .. rst-class:: classref-item-separator
 
@@ -540,7 +540,7 @@ Restituisce l'istanza :ref:`EditorInspector<class_EditorInspector>` dell'editor.
 
 :ref:`float<class_float>` **get_node_3d_rotate_snap**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_node_3d_rotate_snap>`
 
-Returns the amount of degrees the 3D editor's rotational snapping is set to.
+Restituisce il valore in gradi dell'aggancio rotazionale impostato nell'editor 3D.
 
 .. rst-class:: classref-item-separator
 
@@ -552,7 +552,7 @@ Returns the amount of degrees the 3D editor's rotational snapping is set to.
 
 :ref:`float<class_float>` **get_node_3d_scale_snap**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_node_3d_scale_snap>`
 
-Returns the amount of units the 3D editor's scale snapping is set to.
+Restituisce il valore in unità dell'aggancio della scala impostato nell'editor 3D.
 
 .. rst-class:: classref-item-separator
 
@@ -564,7 +564,7 @@ Returns the amount of units the 3D editor's scale snapping is set to.
 
 :ref:`float<class_float>` **get_node_3d_translate_snap**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_node_3d_translate_snap>`
 
-Returns the amount of units the 3D editor's translation snapping is set to.
+Restituisce il valore in unità dell'aggancio della traslazione nell'editor 3D.
 
 .. rst-class:: classref-item-separator
 
@@ -674,7 +674,7 @@ Restituisce l'istanza :ref:`EditorSelection<class_EditorSelection>` dell'editor.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_unsaved_scenes**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_unsaved_scenes>`
 
-Returns an array of file paths of currently unsaved scenes.
+Restituisce un array contenente i percorsi dei file delle scene attualmente non salvate.
 
 .. rst-class:: classref-item-separator
 
@@ -686,7 +686,7 @@ Returns an array of file paths of currently unsaved scenes.
 
 |void| **inspect_object**\ (\ object\: :ref:`Object<class_Object>`, for_property\: :ref:`String<class_String>` = "", inspector_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorInterface_method_inspect_object>`
 
-Mostra la proprietà specificata sull'oggetto ``object`` nel pannello dell'Ispettore dell'editor. Se ``inspector_only`` è ``true``, i plugin non tenteranno di modificare ``object``.
+Mostra la proprietà specificata sull'oggetto ``object`` nel pannello Ispettore dell'editor. Se ``inspector_only`` è ``true``, i plugin non tenteranno di modificare ``object``.
 
 .. rst-class:: classref-item-separator
 
@@ -698,13 +698,13 @@ Mostra la proprietà specificata sull'oggetto ``object`` nel pannello dell'Ispet
 
 :ref:`bool<class_bool>` **is_multi_window_enabled**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_is_multi_window_enabled>`
 
-Returns ``true`` if multiple window support is enabled in the editor. Multiple window support is enabled if *all* of these statements are true:
+Restituisce ``true`` se il supporto per più finestre è abilitato nell'editor. Il supporto per più finestre è abilitato se *tutte* queste condizioni sono vere:
 
-- :ref:`EditorSettings.interface/multi_window/enable<class_EditorSettings_property_interface/multi_window/enable>` is ``true``.
+- :ref:`EditorSettings.interface/multi_window/enable<class_EditorSettings_property_interface/multi_window/enable>` è ``true``.
 
-- :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` is ``false``.
+- :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` è ``false``.
 
-- :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` is ``false``. This is forced to ``true`` on platforms that don't support multiple windows such as Web, or when the ``--single-window`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>` is used.
+- :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` è ``false``. Questo è forzato a ``true`` su piattaforme che non supportano più finestre come Web, o quando viene utilizzato l'argomento della riga di comando ``--single-window`` :doc:`../tutorials/editor/command_line_tutorial`.
 
 .. rst-class:: classref-item-separator
 
@@ -716,7 +716,7 @@ Returns ``true`` if multiple window support is enabled in the editor. Multiple w
 
 :ref:`bool<class_bool>` **is_node_3d_snap_enabled**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_is_node_3d_snap_enabled>`
 
-Returns ``true`` if the 3D editor currently has snapping mode enabled, and ``false`` otherwise.
+Restituisce ``true`` se la modalità di aggancio nell'editor 3D è attualmente abilitata, altrimenti ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -728,7 +728,7 @@ Returns ``true`` if the 3D editor currently has snapping mode enabled, and ``fal
 
 :ref:`bool<class_bool>` **is_object_edited**\ (\ object\: :ref:`Object<class_Object>`\ ) |const| :ref:`🔗<class_EditorInterface_method_is_object_edited>`
 
-Returns ``true`` if the object has been marked as edited through :ref:`set_object_edited()<class_EditorInterface_method_set_object_edited>`.
+Restituisce ``true`` se l'oggetto è stato contrassegnato come modificato tramite :ref:`set_object_edited()<class_EditorInterface_method_set_object_edited>`.
 
 .. rst-class:: classref-item-separator
 
@@ -838,19 +838,19 @@ Riproduce la scena principale.
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Pops up an editor dialog for creating an object.
+Apre una finestra di dialogo dell'editor per la creazione di un oggetto.
 
-The ``callback`` must take a single argument of type :ref:`String<class_String>`, which will contain the type name of the selected object (or the script path of the type, if the type is created from a script), or be an empty string if no item is selected.
+Il ``callback`` deve accettare un singolo argomento di tipo :ref:`String<class_String>` che conterrà il nome del tipo dell'oggetto selezionato (o il percorso dello script del tipo, se il tipo è stato creato da uno script) oppure sarà vuoto se non è selezionato alcun elemento.
 
-The ``base_type`` specifies the base type of objects to display. For example, if you set this to "Resource", all types derived from :ref:`Resource<class_Resource>` will display in the create dialog.
+Il parametro ``base_type`` specifica il tipo di base degli oggetti da visualizzare. Ad esempio, se si imposta questo parametro su "Resource", tutti i tipi derivati da :ref:`Resource<class_Resource>` verranno visualizzati nella finestra di dialogo.
 
-The ``current_type`` will be passed in the search box of the create dialog, and the specified type can be immediately selected when the dialog pops up. If the ``current_type`` is not derived from ``base_type``, there will be no result of the type in the dialog.
+Il parametro ``current_type`` verrà passato nella casella di ricerca della finestra di dialogo e il tipo specificato potrà essere selezionato immediatamente quando viene visualizzata la finestra di dialogo. Se il parametro ``current_type`` non è derivato da ``base_type``, non ci sarà alcun risultato del tipo nella finestra di dialogo.
 
-The ``dialog_title`` allows you to define a custom title for the dialog. This is useful if you want to accurately hint the usage of the dialog. If the ``dialog_title`` is an empty string, the dialog will use "Create New 'Base Type'" as the default title.
+Il parametro ``dialog_title`` consente di definire un titolo personalizzato per la finestra di dialogo. Questo è utile se si desidera suggerire con precisione l'utilizzo della finestra di dialogo. Se il parametro ``dialog_title`` è una stringa vuota, la finestra di dialogo utilizzerà "Crea nuovo 'Tipo di base'" come titolo predefinito.
 
-The ``type_blocklist`` contains a list of type names, and the types in the blocklist will be hidden from the create dialog.
+Il parametro ``type_blocklist`` contiene un elenco di nomi di tipi; i tipi presenti nella blocklist saranno nascosti dalla finestra di dialogo di creazione.
 
-\ **Note:** Trying to list the base type in the ``type_blocklist`` will hide all types derived from the base type from the create dialog.
+\ **Nota:** Se si tenta di elencare il tipo base nel parametro ``type_blocklist``, tutti i tipi derivati da esso verranno nascosti dalla finestra di dialogo di creazione.
 
 .. rst-class:: classref-item-separator
 
@@ -992,7 +992,7 @@ Apre una finestra di dialogo dell'editor per selezionare rapidamente un file ris
 
 |void| **reload_scene_from_path**\ (\ scene_filepath\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorInterface_method_reload_scene_from_path>`
 
-Reloads the scene at the given path. Fails if the scene is not open.
+Ricarica la scena al percorso specificato. Fallisce se la scena non è aperta.
 
 .. rst-class:: classref-item-separator
 
@@ -1092,11 +1092,11 @@ Imposta la schermata principale attuale dell'editor su quella specificata in ``n
 
 |void| **set_object_edited**\ (\ object\: :ref:`Object<class_Object>`, edited\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorInterface_method_set_object_edited>`
 
-If ``edited`` is ``true``, the object is marked as edited.
+Se ``edited`` è ``true``, l'oggetto viene contrassegnato come modificato.
 
-\ **Note:** This is primarily used by the editor for :ref:`Resource<class_Resource>` based objects to track their modified state. For example, any changes to an open scene, a resource in the inspector, or an edited script will cause this method to be called with ``true``. Saving the scene, script, or resource resets the edited state by calling this method with ``false``.
+\ **Nota:** Questo serve principalmente all'editor per gli oggetti basati su :ref:`Resource<class_Resource>` per tenere traccia del loro stato di modifica. Ad esempio, qualsiasi modifica a una scena aperta, a una risorsa nell'ispettore o a uno script modificato farà chiamare questo metodo con ``true``. Salvare la scena, lo script o la risorsa ripristina lo stato di modifica, chiamando questo metodo con ``false``.
 
-\ **Note:** Each call to this method increments the object's edited version. This is used to track changes in the editor and to trigger when thumbnails should be regenerated for resources.
+\ **Nota:** Ogni chiamata a questo metodo incrementa la versione di modifica dell'oggetto. Questo serve per tenere traccia delle modifiche nell'editor e per attivare la rigenerazione delle miniature per le risorse.
 
 .. rst-class:: classref-item-separator
 
@@ -1126,7 +1126,7 @@ Interrompe la scena attualmente in riproduzione.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -205,7 +205,7 @@ Descripciones de Propiedades
 
 **Obsoleto:** Accessing this property is very slow. Use :ref:`set_instance_color()<class_MultiMesh_method_set_instance_color>` and :ref:`get_instance_color()<class_MultiMesh_method_get_instance_color>` instead.
 
-array que contiene cada :ref:`Color<class_Color>` usado por todas las instancias de esta malla.
+Array que contiene cada :ref:`Color<class_Color>` usado por todas las instancias de esta malla.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 

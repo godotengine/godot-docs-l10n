@@ -14,9 +14,9 @@ Unisce vari nodi 2D in un'unica operazione di disegno.
 Descrizione
 ----------------------
 
-Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn as a single object. It allows to e.g. draw overlapping translucent 2D nodes without causing the overlapping sections to be more opaque than intended (set the :ref:`CanvasItem.self_modulate<class_CanvasItem_property_self_modulate>` property on the **CanvasGroup** to achieve this effect).
+I nodi :ref:`CanvasItem<class_CanvasItem>` figli di un **CanvasGroup** sono disegnati come un singolo oggetto. Ciò consente, ad esempio, di disegnare nodi 2D traslucidi sovrapposti senza che le sezioni sovrapposte risultino più opache del previsto (imposta la proprietà :ref:`CanvasItem.self_modulate<class_CanvasItem_property_self_modulate>` sul **CanvasGroup** per ottenere questo effetto).
 
-\ **Note:** The **CanvasGroup** uses a custom shader to read from the backbuffer to draw its children. Assigning a :ref:`Material<class_Material>` to the **CanvasGroup** overrides the built-in shader. To duplicate the behavior of the built-in shader in a custom :ref:`Shader<class_Shader>`, use the following:
+\ **Nota:** Il **CanvasGroup** usa uno shader personalizzato per leggere dal backbuffer per disegnare i suoi figli. L'assegnazione di un :ref:`Material<class_Material>` al **CanvasGroup** sovrascrive lo shader integrato. Per duplicare il comportamento dello shader integrato in uno :ref:`Shader<class_Shader>` personalizzato, usa quanto segue:
 
 ::
 
@@ -35,7 +35,7 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
         COLOR *= c;
     }
 
-\ **Note:** Since **CanvasGroup** and :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` both utilize the backbuffer, children of a **CanvasGroup** who have their :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` set to anything other than :ref:`CanvasItem.CLIP_CHILDREN_DISABLED<class_CanvasItem_constant_CLIP_CHILDREN_DISABLED>` will not function correctly.
+\ **Nota:** Poiché **CanvasGroup** e :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` utilizzano entrambi il backbuffer, i figli di un **CanvasGroup** che hanno il loro :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` impostato su un valore diverso da :ref:`CanvasItem.CLIP_CHILDREN_DISABLED<class_CanvasItem_constant_CLIP_CHILDREN_DISABLED>` non funzioneranno correttamente.
 
 .. rst-class:: classref-reftable-group
 
@@ -113,7 +113,7 @@ Se ``true``, calcola le mipmap per il backbuffer prima di disegnare il **CanvasG
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

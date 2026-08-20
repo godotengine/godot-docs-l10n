@@ -16,24 +16,24 @@ Interfaccia per una connessione di peer via WebRTC.
 Descrizione
 ----------------------
 
-A WebRTC connection between the local computer and a remote peer. Provides an interface to connect, maintain, and monitor the connection.
+Una connessione WebRTC tra il computer locale e un peer remoto. Fornisce un'interfaccia per collegare, mantenere e monitorare la connessione.
 
-Setting up a WebRTC connection between two peers may not seem a trivial task, but it can be broken down into 3 main steps:
+Impostare una connessione WebRTC tra due peer potrebbe non sembrare un compito banale, ma può essere suddiviso in 3 passaggi principali:
 
-- The peer that wants to initiate the connection (``A`` from now on) creates an offer and sends it to the other peer (``B`` from now on).
+- Il peer che vuole iniziare la connessione (``A`` d'ora in poi) crea un'offerta e la invia all'altro peer (``B`` d'ora in poi).
 
-- ``B`` receives the offer, generates an answer, and sends it to ``A``.
+- ``B`` riceve l'offerta, genera e risponde, e la invia a ``A``).
 
-- ``A`` and ``B`` then generate and exchange ICE candidates with each other.
+- ``A`` e ``B`` poi generano e scambiano i candidati ICE tra di loro.
 
-After these steps, the connection should be established. Refer to the linked tutorials for details.
+Dopo questi passaggi, la connessione dovrebbe essere stabilita. Consulta i tutorial collegati per maggiori dettagli.
 
 .. rst-class:: classref-introduction-group
 
 Tutorial
 ----------------
 
-- :doc:`WebRTC documentation <../tutorials/networking/webrtc>`
+- :doc:`Documentazione di WebRTC <../tutorials/networking/webrtc>`
 
 - :doc:`API Multigiocatore di alto livello <../tutorials/networking/high_level_multiplayer>`
 
@@ -469,7 +469,7 @@ Se ``type`` è ``"risposta"`` il peer inizierà a emettere :ref:`ice_candidate_c
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -294,9 +294,9 @@ Cambia el :ref:`Color<class_Color>` del Decal multiplicando los colores del albe
 - |void| **set_normal_fade**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_normal_fade**\ (\ )
 
-Fades the Decal if the angle between the Decal's :ref:`AABB<class_AABB>` and the target surface becomes too large. A value of ``0`` projects the Decal regardless of angle, a value of ``1`` limits the Decal to surfaces that are nearly perpendicular.
+Se desvanece el Decal si el ángulo entre el :ref:`AABB<class_AABB>` del Decal y la superficie objetivo se vuelve demasiado grande. Un valor de ``0`` proyecta el Decal independientemente del ángulo, un valor de ``1`` limita el Decal a superficies que son casi perpendiculares.
 
-\ **Note:** Setting :ref:`normal_fade<class_Decal_property_normal_fade>` to a value greater than ``0.0`` has a small performance cost due to the added normal angle computations.
+\ **Nota:** Establecer :ref:`normal_fade<class_Decal_property_normal_fade>` a un valor mayor que ``0.0`` tiene un pequeño coste de rendimiento debido a los cálculos adicionales del ángulo normal.
 
 .. rst-class:: classref-item-separator
 
@@ -431,11 +431,11 @@ Descripciones de Métodos
 
 :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`\ ) |const| :ref:`🔗<class_Decal_method_get_texture>`
 
-Returns the :ref:`Texture2D<class_Texture2D>` associated with the specified :ref:`DecalTexture<enum_Decal_DecalTexture>`. This is a convenience method, in most cases you should access the texture directly.
+Devuelve la :ref:`Texture2D<class_Texture2D>` asociada con el :ref:`DecalTexture<enum_Decal_DecalTexture>` especificado. Este es un método de conveniencia; en la mayoría de los casos deberías acceder a la textura directamente.
 
-For example, instead of ``albedo_tex = $Decal.get_texture(Decal.TEXTURE_ALBEDO)``, use ``albedo_tex = $Decal.texture_albedo``.
+Por ejemplo, en lugar de ``albedo_tex = $Decal.get_texture(Decal.TEXTURE_ALBEDO)``, usa ``albedo_tex = $Decal.texture_albedo``.
 
-One case where this is better than accessing the texture directly is when you want to copy one Decal's textures to another. For example:
+Un caso donde esto es mejor que acceder a la textura directamente es cuando quieres copiar las texturas de un Decal a otro. Por ejemplo:
 
 
 .. tabs::
@@ -464,11 +464,11 @@ One case where this is better than accessing the texture directly is when you wa
 
 |void| **set_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_Decal_method_set_texture>`
 
-Sets the :ref:`Texture2D<class_Texture2D>` associated with the specified :ref:`DecalTexture<enum_Decal_DecalTexture>`. This is a convenience method, in most cases you should access the texture directly.
+Establece la :ref:`Texture2D<class_Texture2D>` asociada con el :ref:`DecalTexture<enum_Decal_DecalTexture>` especificado. Este es un método de conveniencia; en la mayoría de los casos deberías acceder a la textura directamente.
 
-For example, instead of ``$Decal.set_texture(Decal.TEXTURE_ALBEDO, albedo_tex)``, use ``$Decal.texture_albedo = albedo_tex``.
+Por ejemplo, en lugar de ``$Decal.set_texture(Decal.TEXTURE_ALBEDO, albedo_tex)``, usa ``$Decal.texture_albedo = albedo_tex``.
 
-One case where this is better than accessing the texture directly is when you want to copy one Decal's textures to another. For example:
+Un caso donde esto es mejor que acceder a la textura directamente es cuando quieres copiar las texturas de un Decal a otro. Por ejemplo:
 
 
 .. tabs::

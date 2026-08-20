@@ -16,9 +16,9 @@ Un corpo fisico 2D che non può essere spostato da forze esterne. Quando viene s
 Descrizione
 ----------------------
 
-Un corpo fisico statico 2D. Non può essere spostato da forze o contatti esterni, ma può essere spostato manualmente con altri modi come codice, gli :ref:`AnimationMixer<class_AnimationMixer>` (con :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` impostato su :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS>`) e :ref:`RemoteTransform2D<class_RemoteTransform2D>`.
+Un corpo fisico statico 2D. Non si può spostare da forze esterne o contatti, ma si può spostare manualmente con altri modi, come codice, gli :ref:`AnimationMixer<class_AnimationMixer>` (con :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` impostato su :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS>`) e :ref:`RemoteTransform2D<class_RemoteTransform2D>`.
 
-Quando uno **StaticBody2D** viene spostato, è teletrasportato nella sua nuova posizione senza influenzare altri corpi fisici sul suo percorso. Se ciò non è desiderato, utilizza invece :ref:`AnimatableBody2D<class_AnimatableBody2D>`.
+Quando uno **StaticBody2D** viene spostato, è teletrasportato nella sua nuova posizione senza influenzare altri corpi fisici sul suo percorso. Se non è desiderato, usa invece :ref:`AnimatableBody2D<class_AnimatableBody2D>`.
 
 \ **StaticBody2D** è utile per oggetti completamente statici come pavimenti e pareti, nonché per superfici in movimento come nastri trasportatori e piattaforme rotanti circolari (tramite :ref:`constant_linear_velocity<class_StaticBody2D_property_constant_linear_velocity>` e :ref:`constant_angular_velocity<class_StaticBody2D_property_constant_angular_velocity>`).
 
@@ -109,7 +109,7 @@ Se a questa proprietà è assegnato un materiale, sarà utilizzato al posto di q
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

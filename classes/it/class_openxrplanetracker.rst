@@ -69,7 +69,7 @@ Segnali
 
 **mesh_changed**\ (\ ) :ref:`🔗<class_OpenXRPlaneTracker_signal_mesh_changed>`
 
-Emitted when our mesh data has changed the mesh instance and collision needs to be updated.
+Emesso quando i dati della nostra mesh hanno cambiano l'istanza della mesh e bisogna aggiornare la collisione.
 
 .. rst-class:: classref-section-separator
 
@@ -91,7 +91,7 @@ Descrizioni delle proprietà
 - |void| **set_bounds_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_bounds_size**\ (\ )
 
-The bounding size of the plane. This is a 2D size.
+Le dimensioni limite del piano. Sono dimensioni 2D.
 
 .. rst-class:: classref-item-separator
 
@@ -108,7 +108,7 @@ The bounding size of the plane. This is a 2D size.
 - |void| **set_plane_alignment**\ (\ value\: :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>`\ )
 - :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **get_plane_alignment**\ (\ )
 
-The main alignment in space of this plane.
+L'allineamento principale nello spazio di questo piano.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ The main alignment in space of this plane.
 - |void| **set_plane_label**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_plane_label**\ (\ )
 
-The semantic label for this plane.
+L'etichetta semantica per questo piano.
 
 .. rst-class:: classref-section-separator
 
@@ -154,7 +154,7 @@ Cancella i dati di mesh per questo tracker. Dovresti chiamare questa funzione so
 
 :ref:`Mesh<class_Mesh>` **get_mesh**\ (\ ) :ref:`🔗<class_OpenXRPlaneTracker_method_get_mesh>`
 
-Gets a mesh created from either the mesh data or from our bounding size for this plane.
+Ottiene una mesh creata dai dati della mesh o dalle dimensioni limite per questo piano.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Gets a mesh created from either the mesh data or from our bounding size for this
 
 :ref:`Transform3D<class_Transform3D>` **get_mesh_offset**\ (\ ) |const| :ref:`🔗<class_OpenXRPlaneTracker_method_get_mesh_offset>`
 
-Gets the transform by which to offset the mesh and collision shape from our pose to display these correctly.
+Ottiene la trasformazione con cui spostare la mesh e la forma di collisione dalla nostra posa, per visualizzare entrambe correttamente.
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Gets the transform by which to offset the mesh and collision shape from our pose
 
 :ref:`Shape3D<class_Shape3D>` **get_shape**\ (\ thickness\: :ref:`float<class_float>` = 0.01\ ) :ref:`🔗<class_OpenXRPlaneTracker_method_get_shape>`
 
-Gets a collision shape built either from the mesh data or from our bounding size for this plane.
+Ottiene una forma di collisione creata dai dati della mesh o dalle dimensioni limite per questo piano.
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Imposta i dati di mesh per questo piano. Dovresti chiamare questa funzione solo 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

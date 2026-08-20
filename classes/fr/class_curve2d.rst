@@ -163,9 +163,9 @@ The position of the control point leading out of the vertex at ``index``.
 
 :ref:`Vector2<class_Vector2>` **point_{index}/position** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve2D_property_point_{index}/position>`
 
-The position of for the vertex at ``index``.
+La position du sommet à l'index ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Note :** ``index`` est une valeur dans l'intervalle ``0 .. point_count - 1``.
 
 .. rst-class:: classref-section-separator
 

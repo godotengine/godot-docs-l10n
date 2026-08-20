@@ -128,9 +128,9 @@ Se ``true``, abilita la generazione di mesh per le ombre all'importazione. Ciò 
 
 :ref:`bool<class_bool>` **generate_tangents** = ``true`` :ref:`🔗<class_ResourceImporterOBJ_property_generate_tangents>`
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the source mesh doesn't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+Se ``true``, genera le tangenti dei vertici usando `Mikktspace <http://www.mikktspace.com/>`__ se la mesh sorgente non ha dati per le tangenti. Quando possibile, si consiglia di lasciare che il software di modellazione 3D generi le tangenti durante l'esportazione invece di affidarsi a questa opzione. Le tangenti sono necessarie per visualizzare correttamente le mappe di normali e le heightmap, insieme a qualsiasi funzionalità di un materiale o shader che le richiede.
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+Se non c'è bisogno di funzionalità che richiedono le tangenti, disabilitando questa opzione è possibile ridurre le dimensioni del file risultante e velocizzare l'importazione se il file 3D sorgente non contiene tangenti.
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ Scala i dati della mesh in base al valore specificato. Può essere usato per lav
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

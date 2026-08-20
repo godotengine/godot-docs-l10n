@@ -16,7 +16,7 @@ Descrizione
 
 Una forma polilinea 2D, progettata per l'uso in fisica. Utilizzata internamente in :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` quando è in modalità :ref:`CollisionPolygon2D.BUILD_SEGMENTS<class_CollisionPolygon2D_constant_BUILD_SEGMENTS>`.
 
-Essendo solo una serie di segmenti interconnessi, **ConcavePolygonShape2D** è la forma 2D singola più liberamente configurabile. Può essere utilizzata per formare poligoni di qualsiasi natura o persino forme che non racchiudono un'area. Tuttavia, **ConcavePolygonShape2D** è *vuota* anche se i segmenti di linea interconnessi racchiudono un'area, il che spesso la rende poco adatta per la fisica o il rilevamento.
+Essendo solo una serie di segmenti interconnessi, **ConcavePolygonShape2D** è la forma 2D singola più liberamente configurabile. Può essere usata per formare poligoni di qualsiasi natura o persino forme che non racchiudono un'area. Tuttavia, **ConcavePolygonShape2D** è *vuota* anche se i segmenti di linea interconnessi racchiudono un'area, il che spesso la rende poco adatta per la fisica o il rilevamento.
 
 \ **Nota:** Quando viene utilizzato per la collisione, **ConcavePolygonShape2D** è progettato per funzionare con nodi :ref:`CollisionShape2D<class_CollisionShape2D>` statici come :ref:`StaticBody2D<class_StaticBody2D>` e probabilmente non si comporterà bene per :ref:`CharacterBody2D<class_CharacterBody2D>` o :ref:`RigidBody2D<class_RigidBody2D>` in una modalità diversa da Static.
 
@@ -64,7 +64,7 @@ L'array dei punti che compongono i segmenti della linea di **ConcavePolygonShape
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

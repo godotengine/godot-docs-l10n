@@ -9,14 +9,14 @@ RDAccelerationStructureInstance
 
 **Eredita:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Acceleration structure instance (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+Istanza di struttura di accelerazione (utilizzato da :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-**RDAccelerationStructureInstance** describes an instance of a Bottom-Level Acceleration Structure (BLAS) used in the :ref:`RenderingDevice.tlas_build()<class_RenderingDevice_method_tlas_build>` method.
+**RDAccelerationStructureInstance** descrive un'istanza di una Bottom-Level Acceleration Structure (BLAS, letteralmente "struttura di accelerazione di basso livello") utilizzata nel metodo :ref:`RenderingDevice.tlas_build()<class_RenderingDevice_method_tlas_build>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -60,7 +60,7 @@ Descrizioni delle proprietà
 - |void| **set_blas**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_blas**\ (\ )
 
-The BLAS referenced by this instance. If ``null``, the instance is treated as a placeholder but still contributes to ``gl_InstanceIndex`` in GLSL.
+La BLAS a cui fa riferimento questa istanza. Se ``null``, l'istanza è trattata come un segnaposto ma contribuisce comunque a ``gl_InstanceIndex`` in GLSL.
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ The BLAS referenced by this instance. If ``null``, the instance is treated as a 
 - |void| **set_flags**\ (\ value\: |bitfield|\[:ref:`AccelerationStructureInstanceFlagBits<enum_RenderingDevice_AccelerationStructureInstanceFlagBits>`\]\ )
 - |bitfield|\[:ref:`AccelerationStructureInstanceFlagBits<enum_RenderingDevice_AccelerationStructureInstanceFlagBits>`\] **get_flags**\ (\ )
 
-Flags for the instance.
+Flag per l'istanza.
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ Flags for the instance.
 - |void| **set_hit_sbt_range**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_hit_sbt_range**\ (\ )
 
-Hit shader binding table range used for this instance, allocated using the :ref:`RenderingDevice.hit_sbt_range_alloc()<class_RenderingDevice_method_hit_sbt_range_alloc>` method.
+Intervallo della tabella di associazioni dello shader di impatto utilizzato per questa istanza, allocato tramite il metodo :ref:`RenderingDevice.hit_sbt_range_alloc()<class_RenderingDevice_method_hit_sbt_range_alloc>`.
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Hit shader binding table range used for this instance, allocated using the :ref:
 - |void| **set_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_id**\ (\ )
 
-Custom instance ID that can be accessed in GLSL using ``gl_InstanceCustomIndexEXT``.
+ID di istanza personalizzato a cui è possibile accedere in GLSL attraverso ``gl_InstanceCustomIndexEXT``.
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ Custom instance ID that can be accessed in GLSL using ``gl_InstanceCustomIndexEX
 - |void| **set_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_mask**\ (\ )
 
-Visibility mask used to control which rays can intersect this instance.
+Maschera di visibilità usata per controllare quali raggi possono intersecare questa istanza.
 
 .. rst-class:: classref-item-separator
 
@@ -145,13 +145,13 @@ Visibility mask used to control which rays can intersect this instance.
 - |void| **set_transform**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_transform**\ (\ )
 
-Transform applied to the referenced BLAS for this instance.
+La trasformazione applicata alla BLAS per questa istanza.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

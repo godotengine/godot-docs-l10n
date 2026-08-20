@@ -701,7 +701,7 @@ El eje ``axis`` debe ser un vector normalizado (véase :ref:`Vector3.normalized(
 
 Devuelve esta base con los componentes de cada eje escalados según los componentes de ``scale`` especificados.
 
-Las filas de la matriz base se multiplican por los componentes de ``scale``. Esta operación aplica una escala global (relativa a la matriz padre).
+Las filas de la matriz base se multiplican por los componentes de ``scale``. Esta operación aplica una escala global (relativa a la matriz antecesor).
 
 
 .. tabs::
@@ -920,7 +920,7 @@ Devuelve ``true`` si los componentes de ambas matrices **Basis** no son iguales.
 
 Transforma (multiplica) la base ``right`` por esta base.
 
-Esta es la operación que se realiza entre los nodos :ref:`Node3D<class_Node3D>` padre e hijo.
+Esta es la operación que se realiza entre los nodos :ref:`Node3D<class_Node3D>` antecesor y posterior.
 
 .. rst-class:: classref-item-separator
 

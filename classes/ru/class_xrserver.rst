@@ -166,7 +166,7 @@ XRServer
 
 **world_origin_changed**\ (\ ) :ref:`🔗<class_XRServer_signal_world_origin_changed>`
 
-Emitted when the world origin transform changes.
+Испускается при изменении преобразования начала координат мира.
 
 .. rst-class:: classref-section-separator
 

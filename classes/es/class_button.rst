@@ -332,7 +332,7 @@ Especifica si el icono debe estar alineado horizontalmente a la izquierda, a la 
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Código de idioma utilizado para los algoritmos de salto de línea y de formación de texto. Si se deja vacío, se utiliza la configuración regional actual.
 
 .. rst-class:: classref-item-separator
 
@@ -573,7 +573,7 @@ El tinte del contorno del texto del **Button**.
 
 :ref:`int<class_int>` **align_to_largest_stylebox** = ``0`` :ref:`🔗<class_Button_theme_constant_align_to_largest_stylebox>`
 
-This constant acts as a boolean. If ``true``, the minimum size of the button and text/icon alignment is always based on the largest stylebox margins, otherwise it's based on the current button state stylebox margins.
+Esta constante actúa como un valor booleano. Si es ``true``, el tamaño mínimo del botón y la alineación del texto o icono se basan siempre en los márgenes del stylebox más grande; de lo contrario, se basan en los márgenes del stylebox correspondientes al estado actual del botón.
 
 .. rst-class:: classref-item-separator
 
@@ -791,7 +791,7 @@ El :ref:`StyleBox<class_StyleBox>` predeterminado para el **Button** (para dise�
 
 :ref:`StyleBox<class_StyleBox>` **pressed_mirrored** :ref:`🔗<class_Button_theme_style_pressed_mirrored>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **Button** is being pressed (for right-to-left layouts).
+:ref:`StyleBox<class_StyleBox>` utilizado cuando se presiona el **Button** (para diseños de derecha a izquierda).
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -91,19 +91,19 @@ Descrizioni delle proprietà
 - |void| **set_seed**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_seed**\ (\ )
 
-Initializes the random number generator state based on the given seed value. A given seed will give a reproducible sequence of pseudo-random numbers.
+Inizializza lo stato del generatore di numeri casuali in base al valore del seed specificato. Un seed specificato fornirà una sequenza riproducibile di numeri pseudocasuali.
 
-\ **Note:** The RNG does not have an avalanche effect, and can output similar random streams given similar seeds. Consider using a hash function to improve your seed quality if they're sourced externally.
+\ **Nota:** L'RNG non ha un effetto valanga e può generare serie di risultati simili, se forniti seed simili. Considera di utilizzare una funzione hash per migliorare la qualità dei tuoi seed se provengono esternamente.
 
-\ **Note:** The default value of this property is pseudo-random, and changes when calling :ref:`randomize()<class_RandomNumberGenerator_method_randomize>`. The ``0`` value documented here is a placeholder, and not the actual default seed.
+\ **Nota:** Il valore predefinito di questa proprietà è pseudocasuale e cambia quando si chiama :ref:`randomize()<class_RandomNumberGenerator_method_randomize>`. Il valore ``0`` documentato qui è un segnaposto e non il seed predefinito effettivo. 
 
-\ **Note:** Setting this property produces a side effect of changing the internal :ref:`state<class_RandomNumberGenerator_property_state>`, so make sure to initialize the seed *before* modifying the :ref:`state<class_RandomNumberGenerator_property_state>`:
+\ **Nota:** Impostare questa proprietà ha l'effetto collaterale di modificare lo :ref:`state<class_RandomNumberGenerator_property_state>` interno, quindi assicurati di inizializzare il seed *prima* di modificare lo :ref:`state<class_RandomNumberGenerator_property_state>`:
 
 ::
 
     var rng = RandomNumberGenerator.new()
     rng.seed = hash("Godot")
-    rng.state = 100 # Restore to some previously saved state.
+    rng.state = 100 # Ripristina uno stato salvato in precedenza.
 
 .. rst-class:: classref-item-separator
 
@@ -150,11 +150,11 @@ Descrizioni dei metodi
 
 :ref:`int<class_int>` **rand_weighted**\ (\ weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_RandomNumberGenerator_method_rand_weighted>`
 
-Returns a random integer between ``0`` and the size of the array that is passed as a parameter. Each value in the array should be a floating-point number that represents the relative likelihood that it will be returned as an index. A higher value means the value is more likely to be returned as an index, while a value of ``0`` means it will never be returned as an index.
+Returns a random integer between ``0`` and the size of the array that is passed as a parameter. Each value in the array should be a non-negative floating-point number that represents the relative likelihood that it will be returned as an index. A higher value means the value is more likely to be returned as an index, while a value of ``0`` means it will never be returned as an index.
 
 For example, if ``[0.5, 1, 1, 2]`` is passed as a parameter, then the method is twice as likely to return ``3`` (the index of the value ``2``) and twice as unlikely to return ``0`` (the index of the value ``0.5``) compared to the indices ``1`` and ``2``.
 
-Prints an error and returns ``-1`` if the array is empty.
+Prints an error and returns ``-1`` if the array is empty or contains any negative values.
 
 
 .. tabs::
@@ -250,7 +250,7 @@ Imposta un seed basato sul tempo per questa istanza di **RandomNumberGenerator**
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

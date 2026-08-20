@@ -16,9 +16,9 @@ Il controllo dell'editor Godot per la selezione delle proprietà di tipo :ref:`R
 Descrizione
 ----------------------
 
-Questo nodo :ref:`Control<class_Control>` è utilizzato nel pannello dell'Ispettore dell'editor per permettere di modificare le proprietà di tipo :ref:`Resource<class_Resource>`. Fornisce opzioni per creare, caricare, salvare e convertire risorse. Può essere utilizzato con :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` per ricreare lo stesso comportamento.
+Questo nodo :ref:`Control<class_Control>` è utilizzato nel pannello Ispettore dell'editor per permettere di modificare le proprietà di tipo :ref:`Resource<class_Resource>`. Fornisce opzioni per creare, caricare, salvare e convertire risorse. Può essere utilizzato con :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` per ricreare lo stesso comportamento.
 
-\ **Nota:** Questo :ref:`Control<class_Control>` non include alcun editor per la risorsa, poiché la modifica è controllata dal pannello dell'Ispettore stesso o dai sotto-Ispettori.
+\ **Nota:** Questo :ref:`Control<class_Control>` non include alcun editor per la risorsa, poiché la modifica è controllata dal pannello Ispettore stesso o dai sotto-Ispettori.
 
 .. rst-class:: classref-reftable-group
 
@@ -185,11 +185,11 @@ Questo metodo virtuale può essere implementato per gestire le voci del menu con
 
 |void| **_set_create_options**\ (\ menu_node\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__set_create_options>`
 
-This virtual method is called when updating the context menu of an :ref:`editable<class_EditorResourcePicker_property_editable>` **EditorResourcePicker**. Implement this method to override the "New" items section with your own options. ``menu_node`` is a reference to the :ref:`PopupMenu<class_PopupMenu>` node.
+Questo metodo virtuale viene chiamato quando si aggiorna il menu contestuale di un **EditorResourcePicker** con :ref:`editable<class_EditorResourcePicker_property_editable>` impostato. Implementa questo metodo per sovrascrivere la sezione "Nuovo" con le proprie opzioni. ``menu_node`` è un riferimento al nodo :ref:`PopupMenu<class_PopupMenu>`.
 
-\ **Note:** Implement :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` to handle these custom items.
+\ **Nota:** Implementa :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` per gestire queste voci personalizzate.
 
-\ **Note:** Relevant built-in options ("Load", "Copy", "Paste", etc.) are automatically added to the ``menu_node`` afterwards, using their hard-coded IDs starting from ``0``. Custom options need to use non-colliding IDs to be handled properly. Using ``id = 100 + custom_option_index`` is safe (this is what the default items in the "New" section use).
+\ **Nota:** Le opzioni predefinite pertinenti ("Carica", "Copia", "Incolla", ecc.) vengono aggiunte automaticamente al nodo ``menu_node`` successivamente, usando i loro ID predefiniti che partono ``0``. Le opzioni personalizzate devono usare ID non in conflitto per gestirle correttamente. Usare ``id = 100 + custom_option_index`` è sicuro (così fanno le voci predefinite nella sezione "Nuovo").
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ Imposta lo stato della modalità di commutazione per il pulsante principale. Fun
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

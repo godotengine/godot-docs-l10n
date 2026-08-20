@@ -197,9 +197,9 @@ La intensidad de la variación de volumen aleatoria. El volumen se aumentará o 
 
 :ref:`AudioStream<class_AudioStream>` **stream_{index}/stream** :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/stream>`
 
-The :ref:`AudioStream<class_AudioStream>` at ``index``.
+El :ref:`AudioStream<class_AudioStream>` en ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+\ **Nota:** ``index`` es un valor en el rango ``0 .. streams_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -211,9 +211,9 @@ The :ref:`AudioStream<class_AudioStream>` at ``index``.
 
 :ref:`float<class_float>` **stream_{index}/weight** = ``1.0`` :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/weight>`
 
-The probability weight of the :ref:`AudioStream<class_AudioStream>` at ``index``.
+El peso de probabilidad del :ref:`AudioStream<class_AudioStream>` en ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+\ **Nota:** ``index`` es un valor en el rango ``0 .. streams_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ The probability weight of the :ref:`AudioStream<class_AudioStream>` at ``index``
 - |void| **set_streams_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_streams_count**\ (\ )
 
-The number of streams in the stream pool.
+El número de transmisiones en el grupo de transmisiones.
 
 .. rst-class:: classref-section-separator
 

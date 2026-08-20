@@ -9,7 +9,7 @@ NavigationObstacle3D
 
 **Eredita:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Ostacolo 3D utilizzato per influenzare la preparazione della mesh di navigazione o limitare le velocità degli agenti controllati dall'evasione.
+Ostacolo 3D utilizzato per influenzare la preparazione della mesh di navigazione o limitare le velocità degli agenti controllati dall'evitamento.
 
 .. rst-class:: classref-introduction-group
 
@@ -20,7 +20,7 @@ Un ostacolo necessita di una mappa di navigazione e di un contorno di :ref:`vert
 
 È possibile includere gli ostacoli nel processo di preparazione della mesh di navigazione quando :ref:`affect_navigation_mesh<class_NavigationObstacle3D_property_affect_navigation_mesh>` è abilitato. Non aggiungono geometria percorribile, ma il loro ruolo è quello di scartare altra geometria sorgente all'interno della forma. Questo può essere utilizzato per impedire che la mesh di navigazione appaia in luoghi indesiderati, ad esempio all'interno di geometria "solida" o sopra di essa. Se :ref:`carve_navigation_mesh<class_NavigationObstacle3D_property_carve_navigation_mesh>` è abilitato, la forma preparata non sarà influenzata dagli offset della preparazione della mesh di navigazione, ad esempio il raggio degli agenti.
 
-Con :ref:`avoidance_enabled<class_NavigationObstacle3D_property_avoidance_enabled>` l'ostacolo può limitare le velocità di evasione degli agenti di evasione. Se i vertici dell'ostacolo sono avvolti in senso orario, gli agenti di evasione saranno spinti dentro dall'ostacolo, altrimenti, gli agenti di evasione saranno spinti fuori. Gli ostacoli che utilizzano vertici ed evasione possono deformarsi in una nuova posizione, ma non dovrebbero essere spostati a ogni singolo frame, poiché ogni modifica richiede una ricostruzione della mappa di evasione.
+Con :ref:`avoidance_enabled<class_NavigationObstacle3D_property_avoidance_enabled>` l'ostacolo può limitare le velocità di evitamento degli agenti che usano l'evitamento. Se i vertici dell'ostacolo sono avvolti in senso orario, gli agenti di evitamento saranno spinti dentro dall'ostacolo, altrimenti, gli agenti di evitamento saranno spinti fuori. Gli ostacoli che utilizzano vertici ed evitamento possono deformarsi in una nuova posizione, ma non dovrebbero essere spostati a ogni singolo frame, poiché ogni modifica richiede una ricostruzione della mappa di evitamento.
 
 .. rst-class:: classref-introduction-group
 
@@ -114,7 +114,7 @@ Se abilitato e analizzato in un processo di preparazione della mesh di navigazio
 - |void| **set_avoidance_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_avoidance_enabled**\ (\ )
 
-Se ``true`` l'ostacolo influenza l'evasione usando degli agenti.
+Se ``true`` l'ostacolo influenza gli agenti che usano l'evitamento.
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ Se ``true`` l'ostacolo influenza l'evasione usando degli agenti.
 - |void| **set_avoidance_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_avoidance_layers**\ (\ )
 
-Un campo di bit che determina gli strati di evasione per questo ostacolo. Gli agenti con un bit corrispondente sulla loro maschera di evasione eviteranno questo ostacolo.
+Un campo di bit che determina gli strati di evitamento per questo ostacolo. Gli agenti con un bit corrispondente sulla loro maschera di evitamento eviteranno questo ostacolo.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ Richiede che :ref:`affect_navigation_mesh<class_NavigationObstacle3D_property_af
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-Imposta l'altezza dell'ostacolo utilizzata nell'evasione 2D. L'evasione 2D mediante l'agente ignora gli ostacoli che si trovano al di sotto o al di sopra di esso.
+Imposta l'altezza dell'ostacolo utilizzata nell'evitamento 2D. Gli agenti che usano l'evitamento 2D ignorano gli ostacoli che si trovano sotto o sopra ad esso.
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ Imposta l'altezza dell'ostacolo utilizzata nell'evasione 2D. L'evasione 2D media
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-Imposta il raggio di evasione per l'ostacolo.
+Imposta il raggio di evitamento per l'ostacolo.
 
 .. rst-class:: classref-item-separator
 
@@ -203,9 +203,9 @@ Imposta il raggio di evasione per l'ostacolo.
 - |void| **set_use_3d_avoidance**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_3d_avoidance**\ (\ )
 
-Se ``true`` l'ostacolo influenza l'evasione 3D attraverso l'agente con il :ref:`radius<class_NavigationObstacle3D_property_radius>` dell'ostacolo.
+Se ``true`` l'ostacolo influenza gli agenti che usano l'evitamento 3D con il :ref:`radius<class_NavigationObstacle3D_property_radius>` dell'ostacolo.
 
-Se ``false`` l'ostacolo influenza l'evasione 2D attraverso l'agente con sia :ref:`vertices<class_NavigationObstacle3D_property_vertices>` dell'ostacolo sia :ref:`radius<class_NavigationObstacle3D_property_radius>` dell'ostacolo.
+Se ``false`` l'ostacolo influenza gli agenti che usano l'evitamento con sia :ref:`vertices<class_NavigationObstacle3D_property_vertices>` dell'ostacolo sia :ref:`radius<class_NavigationObstacle3D_property_radius>` dell'ostacolo.
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ Se ``false`` l'ostacolo influenza l'evasione 2D attraverso l'agente con sia :ref
 - |void| **set_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_velocity**\ (\ )
 
-Imposta la velocità desiderata per l'ostacolo in modo che altri agenti possano prevedere meglio l'ostacolo se viene spostato con una velocità regolare (ogni frame) invece di essere deformato in una nuova posizione. Influisce solo sull'evasione entro il :ref:`radius<class_NavigationObstacle3D_property_radius>` degli ostacoli. Non fa nulla per i vertici statici degli ostacoli.
+Imposta la velocità desiderata per l'ostacolo in modo che altri agenti possano prevedere meglio l'ostacolo se viene spostato con una velocità regolare (ogni frame) invece di essere deformato in una nuova posizione. Influisce solo sull'evitamento entro il :ref:`radius<class_NavigationObstacle3D_property_radius>` degli ostacoli. Non fa nulla per i vertici statici degli ostacoli.
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ Descrizioni dei metodi
 
 :ref:`bool<class_bool>` **get_avoidance_layer_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NavigationObstacle3D_method_get_avoidance_layer_value>`
 
-Restituisce se lo strato specificato del bitmask :ref:`avoidance_layers<class_NavigationObstacle3D_property_avoidance_layers>` è abilitato, dato un ``layer_number`` tra 1 e 32.
+Restituisce se lo strato specificato di :ref:`avoidance_layers<class_NavigationObstacle3D_property_avoidance_layers>` è abilitato, fornito un ``layer_number`` tra 1 e 32.
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ Restituisce il :ref:`RID<class_RID>` di questo ostacolo sul :ref:`NavigationServ
 
 |void| **set_avoidance_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationObstacle3D_method_set_avoidance_layer_value>`
 
-Basato su ``value``, attiva o disattiva lo strato specificato nel bitmask :ref:`avoidance_layers<class_NavigationObstacle3D_property_avoidance_layers>`, dato un ``layer_number`` tra 1 e 32.
+In base a ``value``, attiva o disattiva lo strato specificato in :ref:`avoidance_layers<class_NavigationObstacle3D_property_avoidance_layers>`, fornito un ``layer_number`` tra 1 e 32.
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Imposta il :ref:`RID<class_RID>` della mappa di navigazione questo nodo Navigati
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

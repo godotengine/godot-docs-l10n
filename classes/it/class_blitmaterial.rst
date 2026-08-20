@@ -7,14 +7,14 @@ BlitMaterial
 
 **Eredita:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A material that processes blit calls to a DrawableTexture.
+Un materiale che elabora le chiamate blit a una DrawableTexture.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-A material resource that can be used by DrawableTextures when processing blit calls to draw.
+Una risorsa materiale che si può utilizzare dalle DrawableTexture durante l'elaborazione delle chiamate blit per il disegno.
 
 .. rst-class:: classref-reftable-group
 
@@ -81,7 +81,7 @@ Modalità di fusione moltiplicativa.
 
 :ref:`BlendMode<enum_BlitMaterial_BlendMode>` **BLEND_MODE_DISABLED** = ``4``
 
-No blending mode, direct color copy.
+Nessuna modalità di fusione, copia diretta del colore.
 
 .. rst-class:: classref-section-separator
 
@@ -103,13 +103,13 @@ Descrizioni delle proprietà
 - |void| **set_blend_mode**\ (\ value\: :ref:`BlendMode<enum_BlitMaterial_BlendMode>`\ )
 - :ref:`BlendMode<enum_BlitMaterial_BlendMode>` **get_blend_mode**\ (\ )
 
-The manner in which the newly blitted texture is blended with the original DrawableTexture.
+La maniera in cui la texture appena applicata viene fusa con la DrawableTexture originale.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -4773,7 +4773,7 @@ If ``true``, show a button next to each scene tab that opens the scene's "domina
 
 :ref:`bool<class_bool>` **interface/scene_tabs/show_thumbnail_on_hover** :ref:`🔗<class_EditorSettings_property_interface/scene_tabs/show_thumbnail_on_hover>`
 
-If ``true``, display an automatically-generated thumbnail when hovering scene tabs with the mouse. Scene thumbnails are generated when saving the scene.
+Si ``true``, affiche une vignette automatiquement générée lors du survol des onglet de scène avec la souris. Les vignettes de scène sont générées lors de la sauvegarde de la scène.
 
 .. rst-class:: classref-item-separator
 

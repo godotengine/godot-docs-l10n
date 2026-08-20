@@ -7,14 +7,14 @@ CharacterBody3D
 
 **Eredita:** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Un corpo di fisica 3D specializzato per personaggi mossi da script.
+Un corpo fisico 3D specializzato per personaggi mossi da script.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-**CharacterBody3D** è una classe specializzata per i corpi di fisica che sono pensati per essere controllati dall'utente. Non sono influenzati dalla fisica, ma influenzano altri corpi di fisica sul loro percorso. Sono usati principalmente per fornire API di alto livello per spostare oggetti con rilevamento di pareti e pendenze (tramite :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`) oltre al rilevamento generale delle collisioni fornito da :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`. Ciò lo rende utile per corpi di fisica altamente configurabili che devono muoversi in modi specifici e scontrarsi con il mondo, come spesso accade con i personaggi controllati dall'utente.
+**CharacterBody3D** è una classe specializzata per i corpi fisici progettati per essere controllati dall'utente. Non sono influenzati dalla fisica, ma influenzano altri corpi fisici sul loro percorso. Servono principalmente per fornire API di alto livello per muovere oggetti con rilevamento di pareti e pendenze (tramite :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`) oltre al rilevamento generale delle collisioni fornito da :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`. Ciò lo rende utile per corpi fisici altamente configurabili che devono muoversi in modi specifici e scontrarsi con il mondo, come spesso accade con i personaggi controllati dall'utente.
 
 Per gli oggetti di gioco che non richiedono un movimento complesso o un rilevamento delle collisioni, come le piattaforme mobili, :ref:`AnimatableBody3D<class_AnimatableBody3D>` è più semplice da configurare.
 
@@ -589,7 +589,7 @@ Restituisce la velocità reale attuale dall'ultima chiamata a :ref:`move_and_sli
 
 :ref:`KinematicCollision3D<class_KinematicCollision3D>` **get_slide_collision**\ (\ slide_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CharacterBody3D_method_get_slide_collision>`
 
-Returns a :ref:`KinematicCollision3D<class_KinematicCollision3D>`, which contains information about a collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Since the body can collide several times in a single call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, you must specify the index of the collision in the range 0 to (:ref:`get_slide_collision_count()<class_CharacterBody3D_method_get_slide_collision_count>` - 1). See also :ref:`get_last_slide_collision()<class_CharacterBody3D_method_get_last_slide_collision>`.
+Restituisce un :ref:`KinematicCollision3D<class_KinematicCollision3D>`, che contiene informazioni su una collisione che si è verificate durante l'ultima chiamata a :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Poiché il corpo può collidere più volte in una singola chiamata a :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, è necessario specificare l'indice della collisione nell'intervallo da 0 a (:ref:`get_slide_collision_count()<class_CharacterBody3D_method_get_slide_collision_count>` - 1). Vedi anche :ref:`get_last_slide_collision()<class_CharacterBody3D_method_get_last_slide_collision>`.
 
 .. rst-class:: classref-item-separator
 
@@ -627,7 +627,7 @@ Restituisce la normale della collisione del muro all'ultimo punto di collisione.
 
 :ref:`bool<class_bool>` **is_on_ceiling**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_is_on_ceiling>`
 
-Restituisce ``true`` se il corpo è entrato in collisione con il soffitto durante l'ultima chiamata di :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Altrimenti, restituisce ``false``. :ref:`up_direction<class_CharacterBody3D_property_up_direction>` e :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` sono utilizzati per determinare se una superficie è un "soffitto" o meno.
+Restituisce ``true`` se il corpo è entrato in collisione con il soffitto durante l'ultima chiamata di :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Altrimenti, restituisce ``false``. :ref:`up_direction<class_CharacterBody3D_property_up_direction>` e :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` servono per determinare se una superficie è un "soffitto" o meno.
 
 .. rst-class:: classref-item-separator
 
@@ -639,7 +639,7 @@ Restituisce ``true`` se il corpo è entrato in collisione con il soffitto durant
 
 :ref:`bool<class_bool>` **is_on_ceiling_only**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_is_on_ceiling_only>`
 
-Restituisce ``true`` se il corpo è entrato in collisione soltanto con il soffitto nell'ultima chiamata di :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Altrimenti, restituisce ``false``. :ref:`up_direction<class_CharacterBody3D_property_up_direction>` e :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` sono utilizzati per determinare se una superficie è un "soffitto" o meno.
+Restituisce ``true`` se il corpo è entrato in collisione soltanto con il soffitto nell'ultima chiamata di :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Altrimenti, restituisce ``false``. :ref:`up_direction<class_CharacterBody3D_property_up_direction>` e :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` servono per determinare se una superficie è un "soffitto" o meno.
 
 .. rst-class:: classref-item-separator
 
@@ -651,7 +651,7 @@ Restituisce ``true`` se il corpo è entrato in collisione soltanto con il soffit
 
 :ref:`bool<class_bool>` **is_on_floor**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_is_on_floor>`
 
-Restituisce ``true`` se il corpo è entrato in collisione con il pavimento durante l'ultima chiamata di :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Altrimenti, restituisce ``false``. :ref:`up_direction<class_CharacterBody3D_property_up_direction>` e :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` sono utilizzati per determinare se una superficie è un "pavimento" o meno.
+Restituisce ``true`` se il corpo è entrato in collisione con il pavimento durante l'ultima chiamata di :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Altrimenti, restituisce ``false``. :ref:`up_direction<class_CharacterBody3D_property_up_direction>` e :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` servono per determinare se una superficie è un "pavimento" o meno.
 
 .. rst-class:: classref-item-separator
 
@@ -663,7 +663,7 @@ Restituisce ``true`` se il corpo è entrato in collisione con il pavimento duran
 
 :ref:`bool<class_bool>` **is_on_floor_only**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_is_on_floor_only>`
 
-Restituisce ``true`` se il corpo è entrato in collisione soltanto con il pavimento durante l'ultima chiamata di :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Altrimenti, restituisce ``false``. :ref:`up_direction<class_CharacterBody3D_property_up_direction>` e :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` sono utilizzati per determinare se una superficie è un "pavimento" o meno.
+Restituisce ``true`` se il corpo è entrato in collisione soltanto con il pavimento durante l'ultima chiamata di :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Altrimenti, restituisce ``false``. :ref:`up_direction<class_CharacterBody3D_property_up_direction>` e :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` servono per determinare se una superficie è un "pavimento" o meno.
 
 .. rst-class:: classref-item-separator
 
@@ -675,7 +675,7 @@ Restituisce ``true`` se il corpo è entrato in collisione soltanto con il pavime
 
 :ref:`bool<class_bool>` **is_on_wall**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_is_on_wall>`
 
-Restituisce ``true`` se il corpo è entrato in collisione con un muro durante l'ultima chiamata di :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Altrimenti, restituisce ``false``. :ref:`up_direction<class_CharacterBody3D_property_up_direction>` e :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` sono utilizzati per determinare se una superficie è un "muro" o meno.
+Restituisce ``true`` se il corpo è entrato in collisione con un muro durante l'ultima chiamata di :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Altrimenti, restituisce ``false``. :ref:`up_direction<class_CharacterBody3D_property_up_direction>` e :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` servono per determinare se una superficie è un "muro" o meno.
 
 .. rst-class:: classref-item-separator
 
@@ -687,7 +687,7 @@ Restituisce ``true`` se il corpo è entrato in collisione con un muro durante l'
 
 :ref:`bool<class_bool>` **is_on_wall_only**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_is_on_wall_only>`
 
-Restituisce ``true`` se il corpo è entrato in collisione soltanto con un muro durante l'ultima chiamata di :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Altrimenti, restituisce ``false``. :ref:`up_direction<class_CharacterBody3D_property_up_direction>` e :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` sono utilizzati per determinare se una superficie è un "muro" o meno.
+Restituisce ``true`` se il corpo è entrato in collisione soltanto con un muro durante l'ultima chiamata di :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Altrimenti, restituisce ``false``. :ref:`up_direction<class_CharacterBody3D_property_up_direction>` e :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` servono per determinare se una superficie è un "muro" o meno.
 
 .. rst-class:: classref-item-separator
 
@@ -699,7 +699,7 @@ Restituisce ``true`` se il corpo è entrato in collisione soltanto con un muro d
 
 :ref:`bool<class_bool>` **move_and_slide**\ (\ ) :ref:`🔗<class_CharacterBody3D_method_move_and_slide>`
 
-Sposta il corpo in base a :ref:`velocity<class_CharacterBody3D_property_velocity>`. Se il corpo entra in collisione con un altro, scivolerà lungo l'altro corpo (per impostazione predefinita solo sul pavimento) invece di fermarsi immediatamente. Se l'altro corpo è un **CharacterBody3D** o :ref:`RigidBody3D<class_RigidBody3D>`, sarà anche influenzato dal movimento dell'altro corpo. È possibile usarlo per creare piattaforme mobili e rotanti o per far in modo che i nodi spingano altri nodi.
+Sposta il corpo in base a :ref:`velocity<class_CharacterBody3D_property_velocity>`. Se il corpo entra in collisione con un altro, scivolerà lungo l'altro corpo (solitamente solo sul pavimento) invece di fermarsi immediatamente. Se l'altro corpo è un **CharacterBody3D** o :ref:`RigidBody3D<class_RigidBody3D>`, sarà anche influenzato dal movimento dell'altro corpo. È possibile usarlo per creare piattaforme mobili e rotanti o per far in modo che i nodi spingano altri nodi.
 
 Questo metodo si dovrebbe utilizzare in :ref:`Node._physics_process()<class_Node_private_method__physics_process>` (o in un metodo chiamato da :ref:`Node._physics_process()<class_Node_private_method__physics_process>`), poiché utilizza automaticamente il valore ``delta`` del passaggio di fisica nei calcoli. Altrimenti, la simulazione sarà eseguita a una velocità errata.
 
@@ -713,7 +713,7 @@ Restituisce ``true`` se il corpo è entrato in collisione, altrimenti restituisc
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -64,7 +64,7 @@ Descrizioni delle proprietà
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-Enable frame synthesis. When ``true`` motion vector and depth data is provided to the XR runtime.
+Abilita la sintesi dei frame. Quando ``true`` vengono forniti al runtime XR i dati relativi ai vettori di movimento e alla profondità.
 
 .. rst-class:: classref-item-separator
 
@@ -81,7 +81,7 @@ Enable frame synthesis. When ``true`` motion vector and depth data is provided t
 - |void| **set_relax_frame_interval**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_relax_frame_interval**\ (\ )
 
-If ``true`` this informs the XR runtime we will be providing frames at a greatly reduced rate. Enable this when you expect your application to run at low framerates and wish to inject multiple reprojected frames.
+Se impostato su ``true``, indica al runtime XR che forniremo i frame a una frequenza notevolmente ridotta. Abilita questa opzione quando prevedi che la tua applicazione sia eseguita a frequenze basse di frame e desideri iniettare più frame riproiettati.
 
 .. rst-class:: classref-section-separator
 
@@ -98,7 +98,7 @@ Descrizioni dei metodi
 
 :ref:`bool<class_bool>` **is_available**\ (\ ) |const| :ref:`🔗<class_OpenXRFrameSynthesisExtension_method_is_available>`
 
-Returns ``true`` if frame synthesis is enabled in the project settings and the current XR runtime supports frame synthesis. The value returned will only be valid once OpenXR has been initialized.
+Restituisce ``true`` se la sintesi dei frame è abilitata nelle impostazioni del progetto e il runtime XR attuale supporta la sintesi dei frame. Il valore restituito sarà valido solo dopo aver inizializzato OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -110,13 +110,13 @@ Returns ``true`` if frame synthesis is enabled in the project settings and the c
 
 |void| **skip_next_frame**\ (\ ) :ref:`🔗<class_OpenXRFrameSynthesisExtension_method_skip_next_frame>`
 
-Queues the next frame to be skipped when supplying motion vector and depth data. Call this after teleporting your player or a similar action has moved the player to prevent incorrect reprojection results due to this movement.
+Mette in coda il frame successivo da saltare quando si forniscono dati relativi al vettore di movimento e alla profondità. Chiama questa funzione dopo che il giocatore è stato teletrasportato o dopo un'azione simile, per evitare risultati di riproiezione errati dovuti a tale movimento.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

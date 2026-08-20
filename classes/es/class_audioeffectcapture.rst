@@ -180,7 +180,7 @@ Returns the number of samples available to read using :ref:`get_buffer()<class_A
 
 :ref:`int<class_int>` **get_pushed_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_pushed_frames>`
 
-Returns the number of samples inserted from the audio bus.
+Devuelve el número de muestras insertadas desde el bus de audio.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -18,9 +18,9 @@ Descrizione
 
 Ogni slot **GraphNode** è definito dal suo indice e può fornire al nodo fino a due porte: una a sinistra e una a destra. Per convenzione, la porta sinistra è anche definita **porta d'ingresso** e la porta destra è definita **porta d'uscita**. Ogni porta può essere abilitata e configurata individualmente, utilizzando un tipo e un colore diversi. Il tipo è un valore arbitrario che si può definire a piacere. Il :ref:`GraphEdit<class_GraphEdit>` padre riceverà queste informazioni su ogni richiesta di collegamento e scollegamento.
 
-Gli slot si possono configurare nel pannello dell'Ispettore una volta aggiunto almeno un :ref:`Control<class_Control>` figlio. Le proprietà sono raggruppate in base all'indice di ogni slot nella sezione "Slot".
+Gli slot si possono configurare nel pannello Ispettore una volta aggiunto almeno un :ref:`Control<class_Control>` figlio. Le proprietà sono raggruppate in base all'indice di ogni slot nella sezione "Slot".
 
-\ **Nota:** Mentre GraphNode è configurato tramite slot e indici di slot, i collegamenti sono effettuati tra le porte che sono abilitate. Per questo motivo :ref:`GraphEdit<class_GraphEdit>` utilizza l'indice della porta e non quello dello slot. È possibile usare :ref:`get_input_port_slot()<class_GraphNode_method_get_input_port_slot>` e :ref:`get_output_port_slot()<class_GraphNode_method_get_output_port_slot>` per ottenere l'indice dello slot dall'indice della porta.
+\ **Nota:** Mentre GraphNode è configurato tramite slot e indici di slot, i collegamenti sono effettuati tra le porte che sono abilitate. Per questo motivo :ref:`GraphEdit<class_GraphEdit>` utilizza l'indice della porta e non quello dello slot. È possibile usare :ref:`get_input_port_slot()<class_GraphNode_method_get_input_port_slot>` e :ref:`get_output_port_slot()<class_GraphNode_method_get_output_port_slot>` per ottenere l'indice dello slot derivandolo dall'indice della porta.
 
 .. rst-class:: classref-reftable-group
 
@@ -470,7 +470,7 @@ Restituisce la :ref:`Texture2D<class_Texture2D>` personalizzata a destra (uscita
 
 :ref:`Variant<class_Variant>` **get_slot_metadata_left**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_metadata_left>`
 
-Returns the left (input) metadata of the slot with the given ``slot_index``.
+Restituisce i metadati a sinistra (ingresso) dello slot con l'indice ``slot_index`` specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ Returns the left (input) metadata of the slot with the given ``slot_index``.
 
 :ref:`Variant<class_Variant>` **get_slot_metadata_right**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_metadata_right>`
 
-Returns the right (output) metadata of the slot with the given ``slot_index``.
+Restituisce i metadati a destra (uscita) dello slot con l'indice ``slot_index`` specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -574,7 +574,7 @@ Con ``type_left``/``type_right`` è possibile assegnare un tipo arbitrario a cia
 
 È possibile personalizzare ulteriolmente le porte attraverso ``color_left``/``color_right`` e ``custom_icon_left``/``custom_icon_right``. Il parametro color aggiunge una tinta all'icona. L'icona personalizzata si può utilizzare per sovrascrivere il punto predefinito della porta.
 
-Inoltre, ``draw_stylebox`` si può utilizzare per abilitare o disabilitare il disegno dello stylebox di sfondo per ogni slot. Vedi :ref:`slot<class_GraphNode_theme_style_slot>`.
+Inoltre, ``draw_stylebox`` serve per abilitare o disabilitare il disegno dello stylebox di sfondo per ogni slot. Vedi :ref:`slot<class_GraphNode_theme_style_slot>`.
 
 Le singole proprietà si possono anche impostare attraverso uno dei metodi ``set_slot_*``.
 
@@ -674,7 +674,7 @@ Commuta il lato destro (uscita) dello slot con l'indice ``slot_index`` specifica
 
 |void| **set_slot_metadata_left**\ (\ slot_index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_metadata_left>`
 
-Sets the custom metadata for the left (input) side of the slot with the given ``slot_index`` to ``value``.
+Imposta i metadati personalizzati per il lato a sinistra (ingresso) dello slot con l'indice ``slot_index`` specificato su ``value``.
 
 .. rst-class:: classref-item-separator
 
@@ -686,7 +686,7 @@ Sets the custom metadata for the left (input) side of the slot with the given ``
 
 |void| **set_slot_metadata_right**\ (\ slot_index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_metadata_right>`
 
-Sets the custom metadata for the right (output) side of the slot with the given ``slot_index`` to ``value``.
+Imposta i metadati personalizzati per il lato a destra (uscita) dello slot con l'indice ``slot_index`` specificato su ``value``.
 
 .. rst-class:: classref-item-separator
 
@@ -853,7 +853,7 @@ La :ref:`StyleBox<class_StyleBox>` utilizzata per la barra del titolo del **Grap
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

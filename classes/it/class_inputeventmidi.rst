@@ -225,7 +225,7 @@ Per maggiori informazioni, consulta la `tabella dell'elenco dei byte di stato de
 - |void| **set_pitch**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_pitch**\ (\ )
 
-Il l'indice di intonazione di questo messaggio MIDI. Questo valore varia da ``0`` a ``127``.
+L'indice del tono di questo messaggio MIDI. Questo valore varia da ``0`` a ``127``.
 
 Su un pianoforte, il **Do centrale** è ``60``, seguito da un **Do diesis** (``61``), quindi un **Re** (``62``) e così via. Ogni ottava è divisa in offset di 12. Consulta la colonna "Numero di note MIDI" della `tabella delle frequenze dei tasti del pianoforte <https://en.wikipedia.org/wiki/Piano_key_frequencies>`__ per un elenco completo.
 
@@ -278,7 +278,7 @@ La velocità del messaggio MIDI. Questo valore varia da ``0`` a ``127``. Per una
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

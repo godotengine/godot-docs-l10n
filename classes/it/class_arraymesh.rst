@@ -194,9 +194,9 @@ Sovrascrive l':ref:`AABB<class_AABB>` con uno definito dall'utente per l'uso con
 - |void| **set_shadow_mesh**\ (\ value\: :ref:`ArrayMesh<class_ArrayMesh>`\ )
 - :ref:`ArrayMesh<class_ArrayMesh>` **get_shadow_mesh**\ (\ )
 
-Una mesh facoltativa che può essere utilizzata per renderizzare ombre e per il pre-passaggio di profondità. Può essere utilizzato per aumentare le prestazioni fornendo una mesh con vertici fusi e con solo i dati di posizione dei vertici (senza normali, UV, colori, ecc).
+Una mesh facoltativa che può servire per renderizzare ombre e per il pre-passaggio di profondità. Può essere utile per aumentare le prestazioni fornendo una mesh con vertici fusi e con solo i dati di posizione dei vertici (senza normali, UV, colori, ecc.).
 
-\ **Nota:** Questa mesh deve avere esattamente le stesse posizioni dei vertici della mesh di origine (compresi i LOD della mesh di origine, se presenti). Se le posizioni dei vertici differiscono, la mesh non verrà disegnata correttamente.
+\ **Nota:** Questa mesh deve avere esattamente le stesse posizioni dei vertici della mesh originale (compresi i LOD della mesh originale, se presenti). Se le posizioni dei vertici sono diverse, la mesh non verrà disegnata correttamente.
 
 .. rst-class:: classref-section-separator
 
@@ -429,11 +429,11 @@ Imposta un nome per una determinata superficie.
 
 |void| **surface_update_attribute_region**\ (\ surf_idx\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ArrayMesh_method_surface_update_attribute_region>`
 
-Updates the attribute buffer of this mesh's surface with the given ``data``. The expected data per attribute is 12 or 8 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector3<class_Vector3>` or :ref:`Vector2<class_Vector2>` vertices. This value can be determined with :ref:`RenderingServer.mesh_surface_get_format_attribute_stride()<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>`.
+Aggiorna il buffer degli attributi della superficie di questa mesh con i dati specificati nel parametro ``data``. I dati previsti per ogni attributo sono di 12 o 8 byte (4 byte per float, 2 float per :ref:`Vector2<class_Vector2>` e 3 float per :ref:`Vector3<class_Vector3>`), a seconda che la mesh utilizzi vertici :ref:`Vector3<class_Vector3>` o :ref:`Vector2<class_Vector2>`. È possibile determinare questo valore con :ref:`RenderingServer.mesh_surface_get_format_attribute_stride()<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each attribute.
+Il punto di partenza degli aggiornamenti si può cambiare con ``offset``. Nella maggior parte dei casi, il valore di ``offset`` dovrebbe essere un multiplo di 12 byte per allinearsi a ciascun attributo.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of attribute locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+Un :ref:`PackedVector3Array<class_PackedVector3Array>` di posizioni degli attributi può essere convertito in un :ref:`PackedByteArray<class_PackedByteArray>` attraverso :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` per essere utilizzato in ``data``.
 
 .. rst-class:: classref-item-separator
 
@@ -445,11 +445,11 @@ A :ref:`PackedVector3Array<class_PackedVector3Array>` of attribute locations can
 
 |void| **surface_update_skin_region**\ (\ surf_idx\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ArrayMesh_method_surface_update_skin_region>`
 
-Updates the skin buffer of this mesh's surface with the given ``data``. The expected data per skin is 12 or 8 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector3<class_Vector3>` or :ref:`Vector2<class_Vector2>` vertices. This value can be determined with :ref:`RenderingServer.mesh_surface_get_format_skin_stride()<class_RenderingServer_method_mesh_surface_get_format_skin_stride>`.
+Aggiorna il buffer delle skin della superficie di questa mesh con i dati specificati nel parametro ``data``. I dati previsti per ogni attributo sono di 12 o 8 byte (4 byte per float, 2 float per :ref:`Vector2<class_Vector2>` e 3 float per :ref:`Vector3<class_Vector3>`), a seconda che la mesh utilizzi vertici :ref:`Vector3<class_Vector3>` o :ref:`Vector2<class_Vector2>`. È possibile determinare questo valore con :ref:`RenderingServer.mesh_surface_get_format_skin_stride()<class_RenderingServer_method_mesh_surface_get_format_skin_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each skin.
+Il punto di partenza degli aggiornamenti si può cambiare con ``offset``. Nella maggior parte dei casi, il valore di ``offset`` dovrebbe essere un multiplo di 12 byte per allinearsi a ciascun attributo.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of skin locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+Un :ref:`PackedVector3Array<class_PackedVector3Array>` di posizioni degli attributi può essere convertito in un :ref:`PackedByteArray<class_PackedByteArray>` attraverso :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` per essere utilizzato in ``data``.
 
 .. rst-class:: classref-item-separator
 
@@ -461,17 +461,17 @@ A :ref:`PackedVector3Array<class_PackedVector3Array>` of skin locations can be c
 
 |void| **surface_update_vertex_region**\ (\ surf_idx\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ArrayMesh_method_surface_update_vertex_region>`
 
-Updates the vertex buffer of this mesh's surface with the given ``data``. The expected data per vertex is 12 or 8 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector3<class_Vector3>` or :ref:`Vector2<class_Vector2>` vertices. This value can be determined with :ref:`RenderingServer.mesh_surface_get_format_vertex_stride()<class_RenderingServer_method_mesh_surface_get_format_vertex_stride>`.
+Aggiorna il buffer dei vertici della superficie di questa mesh con i dati specificati nel parametro ``data``. I dati previsti per ogni attributo sono di 12 o 8 byte (4 byte per float, 2 float per :ref:`Vector2<class_Vector2>` e 3 float per :ref:`Vector3<class_Vector3>`), a seconda che la mesh utilizzi vertici :ref:`Vector3<class_Vector3>` o :ref:`Vector2<class_Vector2>`. È possibile determinare questo valore con :ref:`RenderingServer.mesh_surface_get_format_vertex_stride()<class_RenderingServer_method_mesh_surface_get_format_vertex_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each vertex.
+Il punto di partenza degli aggiornamenti si può cambiare con ``offset``. Nella maggior parte dei casi, il valore di ``offset`` dovrebbe essere un multiplo di 12 byte per allinearsi a ciascun attributo.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of vertex locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+Un :ref:`PackedVector3Array<class_PackedVector3Array>` di posizioni degli attributi può essere convertito in un :ref:`PackedByteArray<class_PackedByteArray>` attraverso :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` per essere utilizzato in ``data``.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

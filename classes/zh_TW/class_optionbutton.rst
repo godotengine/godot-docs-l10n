@@ -219,9 +219,9 @@ Emitted when the user navigates to an item using the :ref:`ProjectSettings.input
 - |void| **set_fit_to_longest_item**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_to_longest_item**\ (\ )
 
-如果為 ``true``\ ，最小尺寸將由最長專案的文字確定，而不是目前選定的文本。
+If ``true``, minimum size will be determined by the longest item's width, instead of the currently selected one's. It will also take the popup's margins into account, making the button match its total width.
 
-\ **注意：**\ 出於性能原因，在新增、移除、或修改專案時，最小尺寸不會立即更新。
+\ **Note:** For performance reasons, the minimum size doesn't update immediately when adding, removing or modifying items.
 
 .. rst-class:: classref-item-separator
 

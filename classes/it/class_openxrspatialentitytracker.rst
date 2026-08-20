@@ -11,7 +11,7 @@ OpenXRSpatialEntityTracker
 
 **Ereditato da:** :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>`, :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>`, :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>`
 
-Base class for Positional trackers managed by OpenXR's spatial entity extensions.
+Classe base per i tracker posizionali gestiti dalle estensioni di entità spaziali di OpenXR.
 
 .. rst-class:: classref-introduction-group
 
@@ -71,7 +71,7 @@ Segnali
 
 **next_changed**\ (\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_signal_next_changed>`
 
-Emitted when the next-chain changes, from either :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` or :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
+Emesso quando cambia la next-chain, tramite :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` o :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ Questo ancoraggio ha smesso di tracciare.
 
 :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **ENTITY_TRACKING_STATE_PAUSED** = ``2``
 
-Tracking is currently paused.
+Il tracciamento è attualmente in pausa.
 
 .. _class_OpenXRSpatialEntityTracker_constant_ENTITY_TRACKING_STATE_TRACKING:
 
@@ -146,7 +146,7 @@ Descrizioni delle proprietà
 - |void| **set_entity**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_entity**\ (\ )
 
-The spatial entity associated with this tracker.
+L'entità spaziale associata a questo tracker.
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ The spatial entity associated with this tracker.
 - |void| **set_spatial_tracking_state**\ (\ value\: :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>`\ )
 - :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **get_spatial_tracking_state**\ (\ )
 
-The spatial tracking state for this tracker.
+Lo stato di tracciamento spaziale per questo tracker.
 
 .. rst-class:: classref-section-separator
 
@@ -180,9 +180,9 @@ Descrizioni dei metodi
 
 |void| **add_next**\ (\ next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_method_add_next>`
 
-Adds a new :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` to the next-chain.
+Aggiunge una nuova :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` alla next-chain.
 
-\ :ref:`get_next()<class_OpenXRSpatialEntityTracker_method_get_next>` will return this ``next`` until either :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` is called again or it's removed in :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
+\ :ref:`get_next()<class_OpenXRSpatialEntityTracker_method_get_next>` restituirà questo ``next`` finché non verrà richiamato :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` o non verrà rimosso tramite :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
 
 .. rst-class:: classref-item-separator
 
@@ -194,9 +194,9 @@ Adds a new :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` to the next-cha
 
 :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` **get_next**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityTracker_method_get_next>`
 
-Gets the head :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` in the next-chain.
+Ottiene il :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` principale nella next-chain.
 
-See also :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` and :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
+Vedi anche :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` e :ref:`remove_next()<class_OpenXRSpatialEntityTracker_method_remove_next>`.
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ See also :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` and
 
 :ref:`RID<class_RID>` **get_spatial_context**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityTracker_method_get_spatial_context>`
 
-Gets the spatial context used to create this **OpenXRSpatialEntityTracker**.
+Ottiene il contesto spaziale utilizzato per creare questo **OpenXRSpatialEntityTracker**.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Gets the spatial context used to create this **OpenXRSpatialEntityTracker**.
 
 |void| **remove_next**\ (\ next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_method_remove_next>`
 
-Removes a ``next`` object previously added in :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` from the next-chain.
+Rimuove un oggetto ``next`` aggiunto in precedenza da :ref:`add_next()<class_OpenXRSpatialEntityTracker_method_add_next>` dalla next-chain.
 
 .. rst-class:: classref-item-separator
 
@@ -232,13 +232,13 @@ Removes a ``next`` object previously added in :ref:`add_next()<class_OpenXRSpati
 
 |void| **set_spatial_context**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityTracker_method_set_spatial_context>`
 
-Sets the spatial context used to create this tracker.
+Imposta il contesto spaziale utilizzato per creare questo tracker.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

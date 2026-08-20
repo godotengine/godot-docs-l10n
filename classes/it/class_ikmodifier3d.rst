@@ -9,14 +9,14 @@ IKModifier3D
 
 **Ereditato da:** :ref:`ChainIK3D<class_ChainIK3D>`, :ref:`TwoBoneIK3D<class_TwoBoneIK3D>`
 
-A node for inverse kinematics which may modify more than one bone.
+Un nodo per la cinematica inversa che può modificare più di un osso.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Classe base di :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` che possiede alcune liste di giunti e applica la cinematica inversa. Questa classe ha alcune struct, enumerazioni e metodi ausiliari utili per risolvere la cinematica inversa.
+Classe base di :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` che possiede alcune liste di articolazioni e applica la cinematica inversa. Questa classe ha alcune struct, enumerazioni e metodi ausiliari utili per risolvere la cinematica inversa.
 
 .. rst-class:: classref-introduction-group
 
@@ -75,9 +75,9 @@ Descrizioni delle proprietà
 - |void| **set_mutable_bone_axes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_bone_axes_mutable**\ (\ )
 
-If ``true``, the solver retrieves the bone axis from the bone pose every frame.
+Se ``true``, il risolutore recupera l'asse dell'osso dalla posa dell'osso a ogni frame.
 
-If ``false``, the solver retrieves the bone axis from the bone rest and caches it, which increases performance slightly, but position changes in the bone pose made before processing this **IKModifier3D** are ignored.
+Se ``false``, il risolutore recupera l'asse dell'osso dalla posa di riposo dell'osso e lo memorizza nella cache, il che aumenta leggermente le prestazioni, ma le modifiche di posizione nella posa dell'osso effettuate prima di aver elaborato questo **IKModifier3D** vengono ignorate.
 
 .. rst-class:: classref-section-separator
 
@@ -106,7 +106,7 @@ Cancella tutte le impostazioni.
 
 :ref:`int<class_int>` **get_setting_count**\ (\ ) |const| :ref:`🔗<class_IKModifier3D_method_get_setting_count>`
 
-Returns the number of settings.
+Restituisce il numero di impostazioni.
 
 .. rst-class:: classref-item-separator
 
@@ -118,7 +118,7 @@ Returns the number of settings.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_IKModifier3D_method_reset>`
 
-Resets a state with respect to the current bone pose.
+Ripristina uno stato riguardo alla posa attuale dell'osso.
 
 .. rst-class:: classref-item-separator
 
@@ -130,13 +130,13 @@ Resets a state with respect to the current bone pose.
 
 |void| **set_setting_count**\ (\ count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_IKModifier3D_method_set_setting_count>`
 
-Sets the number of settings.
+Imposta il numero di impostazioni.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -151,7 +151,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` **DEEP_DUPLICATE_NONE** = ``0``
 
-No subresources at all are duplicated. This is useful even in a deep duplication to have all the arrays and dictionaries duplicated but still pointing to the original resources.
+Вложенные ресурсы вообще не дублируются. Это полезно даже при глубоком дублировании, поскольку позволяет сохранить дублирование всех массивов и словарей, но при этом сохранить ссылки на исходные ресурсы.
 
 .. _class_Resource_constant_DEEP_DUPLICATE_INTERNAL:
 
@@ -246,13 +246,13 @@ No subresources at all are duplicated. This is useful even in a deep duplication
 - |void| **set_scene_unique_id**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_scene_unique_id**\ (\ )
 
-A unique identifier relative to this resource's scene. If left empty, the ID is automatically generated when this resource is saved inside a :ref:`PackedScene<class_PackedScene>`. If the resource is not inside a scene, this property is empty by default.
+Уникальный идентификатор, относящийся к сцене данного ресурса. Если оставить поле пустым, идентификатор будет автоматически сгенерирован при сохранении ресурса в :ref:`PackedScene<class_PackedScene>`. Если ресурс не находится в сцене, это свойство по умолчанию пустое.
 
-\ **Note:** When the :ref:`PackedScene<class_PackedScene>` is saved, if multiple resources in the same scene use the same ID, only the earliest resource in the scene hierarchy keeps the original ID. The other resources are assigned new IDs from :ref:`generate_scene_unique_id()<class_Resource_method_generate_scene_unique_id>`.
+\ **Примечание:** При сохранении :ref:`PackedScene<class_PackedScene>`, если несколько ресурсов в одной сцене используют один и тот же идентификатор, только самый ранний ресурс в иерархии сцен сохраняет исходный идентификатор. Остальным ресурсам присваиваются новые идентификаторы с помощью :ref:`generate_scene_unique_id()<class_Resource_method_generate_scene_unique_id>`.
 
-\ **Note:** Setting this property does not emit the :ref:`changed<class_Resource_signal_changed>` signal.
+\ **Примечание:** Установка этого свойства не генерирует сигнал :ref:`changed<class_Resource_signal_changed>`.
 
-\ **Warning:** When setting, the ID must only consist of letters, numbers, and underscores. Otherwise, it will fail and default to a randomly generated ID.
+\ **Предупреждение:** При установке идентификатор должен состоять только из букв, цифр и подчеркиваний. В противном случае произойдет ошибка, и по умолчанию будет использован случайно сгенерированный идентификатор.
 
 .. rst-class:: classref-section-separator
 
@@ -328,7 +328,7 @@ A unique identifier relative to this resource's scene. If left empty, the ID is 
 
 :ref:`Error<enum_@GlobalScope_Error>` **copy_from_resource**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_Resource_method_copy_from_resource>`
 
-Copies the data from ``resource`` into this resource. Both resources must share the same class.
+Копирует данные из ``resource`` в этот ресурс. Оба ресурса должны использовать один и тот же класс.
 
 .. rst-class:: classref-item-separator
 

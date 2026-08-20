@@ -9,14 +9,14 @@ Joint3D
 
 **Ereditato da:** :ref:`ConeTwistJoint3D<class_ConeTwistJoint3D>`, :ref:`Generic6DOFJoint3D<class_Generic6DOFJoint3D>`, :ref:`HingeJoint3D<class_HingeJoint3D>`, :ref:`PinJoint3D<class_PinJoint3D>`, :ref:`SliderJoint3D<class_SliderJoint3D>`
 
-Classe di base astratta per tutti i giunti di fisica 3D.
+Classe base astratta per tutti i giunti di fisica 3D.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Classe di base astratta per tutti i giunti nella fisica 3D. I giunti 3D uniscono due corpi fisici (:ref:`node_a<class_Joint3D_property_node_a>` e :ref:`node_b<class_Joint3D_property_node_b>`) e applicano un vincolo. Se è definito solo un corpo, esso è attaccato a uno :ref:`StaticBody3D<class_StaticBody3D>` fisso senza forme di collisione.
+Classe base astratta per tutti i giunti nella fisica 3D. I giunti 3D uniscono due corpi fisici (:ref:`node_a<class_Joint3D_property_node_a>` e :ref:`node_b<class_Joint3D_property_node_b>`) e applicano un vincolo. Se è definito solo un corpo, esso è attaccato a uno :ref:`StaticBody3D<class_StaticBody3D>` fisso senza forme di collisione.
 
 .. rst-class:: classref-introduction-group
 
@@ -155,7 +155,7 @@ Restituisce il :ref:`RID<class_RID>` interno del giunto dal :ref:`PhysicsServer3
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

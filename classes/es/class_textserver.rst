@@ -2301,7 +2301,7 @@ Returns the number of predefined color palettes. Palette contains all colors use
 
 :ref:`PackedColorArray<class_PackedColorArray>` **font_get_palette_custom_colors**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_palette_custom_colors>`
 
-Returns array of custom colors to override predefined palette.
+Devuelve un array de colores personalizados para sobrescribir la paleta predefinida.
 
 .. rst-class:: classref-item-separator
 

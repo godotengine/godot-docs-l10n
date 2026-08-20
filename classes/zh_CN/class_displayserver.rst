@@ -2522,9 +2522,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_RESIZE_DISABLED** = ``0``
 
-The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`. This flag is ignored for full screen windows.
+该窗口不能通过拖动其调整大小的手柄来调整大小。但仍然可以使用 :ref:`window_set_size()<class_DisplayServer_method_window_set_size>` 调整窗口大小。全屏窗口会忽略该标志。
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **注意：**\ 该标志已在 Linux（X11）、macOS 和 Windows 上实现。
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_BORDERLESS:
 
@@ -2532,9 +2532,9 @@ The window can't be resized by dragging its resize grip. It's still possible to 
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_BORDERLESS** = ``1``
 
-The window do not have native title bar and other decorations. This flag is ignored for full-screen windows.
+该窗口没有原生标题栏和其他装饰。全屏窗口会忽略该标志。
 
-\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
+\ **注意：**\ 该标志已在 Linux（X11/Wayland）、macOS 和 Windows 上实现。
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_ALWAYS_ON_TOP:
 
@@ -2542,9 +2542,9 @@ The window do not have native title bar and other decorations. This flag is igno
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_ALWAYS_ON_TOP** = ``2``
 
-The window is floating on top of all other windows. This flag is ignored for full-screen windows.
+该窗口漂浮在所有其他窗口之上。全屏窗口会忽略该标志。
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **注意：**\ 该标志已在 Linux（X11）、macOS 和 Windows 上实现。
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_TRANSPARENT:
 
@@ -2566,9 +2566,9 @@ The window is floating on top of all other windows. This flag is ignored for ful
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_NO_FOCUS** = ``4``
 
-The window can't be focused. No-focus window will ignore all input, except mouse clicks.
+该窗口无法被聚焦。无焦点窗口会忽略除鼠标点击之外的所有输入。
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **注意：**\ 该标志已在 Linux（X11）、macOS 和 Windows 上实现。
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_POPUP:
 
@@ -2576,9 +2576,9 @@ The window can't be focused. No-focus window will ignore all input, except mouse
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP** = ``5``
 
-Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`).
+窗口是菜单或 :ref:`OptionButton<class_OptionButton>` 下拉菜单的一部分。窗口可见时，该标志无法更改。活动弹出窗口将独占地接收所有输入，但不会抢占其父窗口的焦点。当用户点击弹出窗口外部或切换应用程序时，弹出窗口会自动关闭。弹出窗口必须已设置瞬态父窗口（参见 :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`\ ）。
 
-\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
+\ **注意：**\ 该标志已在 Linux（X11/Wayland）、macOS 和 Windows 上实现。
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE:
 
@@ -2600,9 +2600,9 @@ Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-All mouse events are passed to the underlying window of the same application.
+所有鼠标事件都被传递到同一应用程序的底层窗口。
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **注意：**\ 该标志已在 Linux（X11）、macOS 和 Windows 上实现。
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_SHARP_CORNERS:
 
@@ -2632,9 +2632,9 @@ All mouse events are passed to the underlying window of the same application.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP_WM_HINT** = ``10``
 
-Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+向窗口管理器发出信号，表明该窗口应该是实现定义的“弹出窗口” （通常是浮动、无边框、不可平铺且不可移动的子窗口）。
 
-\ **Note:** This flag is implemented on Linux (Wayland).
+\ **注意：**\ 该标志在 Linux（Wayland）上实现。
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MINIMIZE_DISABLED:
 
@@ -2642,9 +2642,9 @@ Signals the window manager that this window is supposed to be an implementation-
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MINIMIZE_DISABLED** = ``11``
 
-Window minimize button is disabled.
+禁用窗口的最小化按钮。
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **注意：**\ 该标志已在 Linux（X11）、macOS 和 Windows 上实现。
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAXIMIZE_DISABLED:
 
@@ -2652,9 +2652,9 @@ Window minimize button is disabled.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MAXIMIZE_DISABLED** = ``12``
 
-Window maximize button is disabled.
+禁用窗口的最大化按钮。
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **注意：**\ 该标志已在 Linux（X11）、macOS 和 Windows 上实现。
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAX:
 

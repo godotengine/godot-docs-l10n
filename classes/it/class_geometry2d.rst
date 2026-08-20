@@ -266,7 +266,7 @@ Ritaglia ``polyline`` rispetto a ``polygon`` e restituisce un array di polilinee
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **convex_hull**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_convex_hull>`
 
-Fornito un array di :ref:`Vector2<class_Vector2>`, restituisce l'hull convesso come una lista di punti in ordine antiorario. L'ultimo punto è uguale al primo.
+Fornito un array di :ref:`Vector2<class_Vector2>`, restituisce l'inviluppo convesso come una lista di punti in ordine antiorario. L'ultimo punto è uguale al primo.
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Fornito un array di :ref:`Vector2<class_Vector2>`, restituisce l'hull convesso c
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **decompose_polygon_in_convex**\ (\ polygon\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_decompose_polygon_in_convex>`
 
-Decompone il poligono ``polygon`` in più hull convessi e restituisce un array di :ref:`PackedVector2Array<class_PackedVector2Array>`.
+Scompone il poligono ``polygon`` in più inviluppi convessi e restituisce un array di :ref:`PackedVector2Array<class_PackedVector2Array>`.
 
 .. rst-class:: classref-item-separator
 
@@ -404,9 +404,9 @@ Restituisce ``true`` se i vertici di ``polygon`` sono ordinati in senso orario, 
 
 :ref:`Variant<class_Variant>` **line_intersects_line**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, dir_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, dir_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_line_intersects_line>`
 
-Returns the point of intersection between the two lines (``from_a``, ``dir_a``) and (``from_b``, ``dir_b``). Returns a :ref:`Vector2<class_Vector2>`, or ``null`` if the lines are parallel.
+Restituisce il punto di intersezione tra le due linee (``from_a``, ``dir_a``) e (``from_b``, ``dir_b``). Restituisce un :ref:`Vector2<class_Vector2>` o ``null`` se le linee sono parallele.
 
-\ ``from`` and ``dir`` are *not* endpoints of a line segment or ray but the slope (``dir``) and a known point (``from``) on that line. To get the intersection between two line segments, use :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
+\ ``from`` e ``dir`` non sono *estremi* di un segmento di linea o raggio, ma la pendenza (``dir``) e un punto noto (``from``) su quella linea. Per ottenere l'intersezione tra due segmenti, usa :ref:`segment_intersects_segment()<class_Geometry2D_method_segment_intersects_segment>`.
 
 
 .. tabs::
@@ -417,11 +417,11 @@ Returns the point of intersection between the two lines (``from_a``, ``dir_a``) 
     var dir_a = Vector2.RIGHT
     var from_b = Vector2.DOWN
 
-    # Returns Vector2(1, 0)
+    # Restituisce Vector2(1, 0)
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(1, -1))
-    # Returns Vector2(-1, 0)
+    # Restituisce Vector2(-1, 0)
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(-1, -1))
-    # Returns null
+    # Restituisce null
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2.RIGHT)
 
  .. code-tab:: csharp
@@ -430,11 +430,11 @@ Returns the point of intersection between the two lines (``from_a``, ``dir_a``) 
     var dirA = Vector2.Right;
     var fromB = Vector2.Down;
 
-    // Returns new Vector2(1, 0)
+    // Restituisce new Vector2(1, 0)
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(1, -1));
-    // Returns new Vector2(-1, 0)
+    // Restituisce new Vector2(-1, 0)
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(-1, -1));
-    // Returns null
+    // Restituisce null
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, Vector2.Right);
 
 
@@ -584,7 +584,7 @@ Triangola il poligono specificato dai punti in ``polygon``. Restituisce un :ref:
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

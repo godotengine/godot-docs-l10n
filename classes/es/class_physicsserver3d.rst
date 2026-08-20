@@ -3850,9 +3850,9 @@ Moves the given soft body point to a position in global coordinates.
 
 |void| **soft_body_pin_point**\ (\ body\: :ref:`RID<class_RID>`, point_index\: :ref:`int<class_int>`, pin\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_pin_point>`
 
-Pins or unpins the given soft body point based on the value of ``pin``.
+Fija o desfija el punto del cuerpo blando dado según el valor de ``pin``.
 
-\ **Note:** Pinning a point effectively makes it kinematic, preventing it from being affected by forces, but you can still move it using :ref:`soft_body_move_point()<class_PhysicsServer3D_method_soft_body_move_point>`.
+\ **Nota:** Fijar un punto lo convierte efectivamente en cinemático, impidiendo que se vea afectado por las fuerzas, pero aún puedes moverlo usando :ref:`soft_body_move_point()<class_PhysicsServer3D_method_soft_body_move_point>`.
 
 .. rst-class:: classref-item-separator
 

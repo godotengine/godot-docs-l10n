@@ -186,7 +186,7 @@ Confronta due impostazioni locali e restituisce un punteggio di similarità tra 
 
 :ref:`Array<class_Array>`\[:ref:`Translation<class_Translation>`\] **find_translations**\ (\ locale\: :ref:`String<class_String>`, exact\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_TranslationServer_method_find_translations>`
 
-Returns the :ref:`Translation<class_Translation>` instances in the main translation domain that match ``locale`` (see :ref:`compare_locales()<class_TranslationServer_method_compare_locales>`). If ``exact`` is ``true``, only instances whose locale exactly equals ``locale`` will be returned.
+Restituisce le istanze di :ref:`Translation<class_Translation>` nel dominio di traduzione principale che corrispondono a ``locale`` (vedi :ref:`compare_locales()<class_TranslationServer_method_compare_locales>`). Se ``exact`` è ``true``, vengono restituite solo le istanze la cui localizzazione è esattamente uguale a ``locale``.
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Returns the :ref:`Translation<class_Translation>` instances in the main translat
 
 :ref:`String<class_String>` **format_number**\ (\ number\: :ref:`String<class_String>`, locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_format_number>`
 
-Converts a number from Western Arabic (0..9) to the numeral system used in the given ``locale``.
+Converte un numero dall'arabo occidentale (0..9) al sistema numerico utilizzato nella localizzazione ``locale``.
 
 .. rst-class:: classref-item-separator
 
@@ -320,7 +320,7 @@ Restituisce il dominio di traduzione con il nome specificato. Un dominio di trad
 
 :ref:`String<class_String>` **get_percent_sign**\ (\ locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_get_percent_sign>`
 
-Returns the percent sign used in the given ``locale``.
+Restituisce il simbolo di percentuale utilizzato nella localizzazione ``locale``.
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ Returns the percent sign used in the given ``locale``.
 
 :ref:`String<class_String>` **get_plural_rules**\ (\ locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_get_plural_rules>`
 
-Returns the default plural rules for the ``locale``.
+Restituisce le regole predefinite per il plurale per la localizzazione ``locale``.
 
 .. rst-class:: classref-item-separator
 
@@ -408,7 +408,7 @@ Restituisce ``true`` se esiste un dominio di traduzione con il nome specificato.
 
 :ref:`bool<class_bool>` **has_translation**\ (\ translation\: :ref:`Translation<class_Translation>`\ ) |const| :ref:`🔗<class_TranslationServer_method_has_translation>`
 
-Returns ``true`` if the main translation domain contains the given ``translation``.
+Restituisce ``true`` se il dominio di traduzione principale contiene la traduzione ``translation``.
 
 .. rst-class:: classref-item-separator
 
@@ -420,7 +420,7 @@ Returns ``true`` if the main translation domain contains the given ``translation
 
 :ref:`bool<class_bool>` **has_translation_for_locale**\ (\ locale\: :ref:`String<class_String>`, exact\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_TranslationServer_method_has_translation_for_locale>`
 
-Returns ``true`` if there are any :ref:`Translation<class_Translation>` instances in the main translation domain that match ``locale`` (see :ref:`compare_locales()<class_TranslationServer_method_compare_locales>`). If ``exact`` is ``true``, only instances whose locale exactly equals ``locale`` are considered.
+Restituisce ``true`` se ci sono istanze di :ref:`Translation<class_Translation>` nel dominio di traduzione principale che corrispondono a ``locale`` (vedi :ref:`compare_locales()<class_TranslationServer_method_compare_locales>`). Se ``exact`` è ``true``, vengono considerate solo le istanze la cui localizzazione è esattamente uguale a ``locale``.
 
 .. rst-class:: classref-item-separator
 
@@ -432,7 +432,7 @@ Returns ``true`` if there are any :ref:`Translation<class_Translation>` instance
 
 :ref:`String<class_String>` **parse_number**\ (\ number\: :ref:`String<class_String>`, locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_parse_number>`
 
-Converts ``number`` from the numeral system used in the given ``locale`` to Western Arabic (0..9).
+Converte il numero ``number`` dal sistema numerico utilizzato nella localizzazione ``locale`` in arabo occidentale (0..9).
 
 .. rst-class:: classref-item-separator
 
@@ -546,7 +546,7 @@ Il numero ``n`` è il numero o la quantità dell'oggetto plurale. Sarà usato pe
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

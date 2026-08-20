@@ -416,9 +416,9 @@ La :ref:`SubViewport<class_SubViewport>` da renderizzare sul livello di composiz
 - |void| **set_protected_content**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_protected_content**\ (\ )
 
-If enabled, the OpenXR swapchain will be created with the ``XR_SWAPCHAIN_CREATE_PROTECTED_CONTENT_BIT`` flag, which will protect its contents from CPU access.
+Se abilitata, la swapchain di OpenXR verrà creata con il flag ``XR_SWAPCHAIN_CREATE_PROTECTED_CONTENT_BIT``, che proteggerà il suo contenuto dall'accesso della CPU.
 
-When used with an Android Surface, this may allow DRM content to be presented, and will only take effect when the Surface is first created; later changes to this property will have no effect.
+Se utilizzata con un dispositivo Android Surface, questa potrebbe consentire la visualizzazione di contenuti protetti da DRM e avrà effetto solo alla prima creazione del Surface; modifiche successive a questa proprietà non avranno alcun effetto.
 
 .. rst-class:: classref-item-separator
 
@@ -720,7 +720,7 @@ Restituisce ``true`` se il runtime OpenXR supporta nativamente questo tipo di li
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

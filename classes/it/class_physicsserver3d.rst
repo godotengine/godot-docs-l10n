@@ -20,15 +20,15 @@ PhysicsServer3D è il server responsabile di tutta la fisica 3D. Può creare e m
 
 - Uno *spazio* è un mondo autonomo per una simulazione fisica. Contiene corpi, aree e giunti. Il suo stato può essere interrogato per informazioni sulle collisioni e le intersezioni. Inoltre, è possibile modificare diversi parametri della simulazione.
 
-- Una *forma* è una forma geometrica come una sfera, una scatola, un cilindro o un poligono. Può essere utilizzata per rilevare le collisioni aggiungendola a un corpo/area, possibilmente con un'ulteriore trasformazione relativa all'origine del corpo/area. Più forme (trasformate) possono essere aggiunte ai corpi/aree e una singola forma può essere aggiunta più volte a corpi/aree con diverse trasformazioni locali.
+- Una *forma* è una forma geometrica come una sfera, una scatola, un cilindro o un poligono. Serve per rilevare le collisioni aggiungendola a un corpo/area, possibilmente con un'ulteriore trasformazione relativa all'origine del corpo/area. I corpi/aree possono avere più di una forma (trasformata) aggiunta ad essi, e una singola forma si può aggiungere più volte a corpi/aree, con diverse trasformazioni locali.
 
 - Un *corpo* è un oggetto fisico che può essere in modalità statica, cinematica o rigida. Il suo stato (come posizione e velocità) può essere interrogato e aggiornato. È possibile impostare un callback di integrazione della forza per personalizzare la fisica del corpo.
 
-- Un'*area* è una regione nello spazio che può essere utilizzata per rilevare i corpi e le aree che entrano ed escono da essa. È possibile impostare un callback di monitoraggio dei corpi per segnalare le forme dei corpi in entrata/uscita e, allo stesso modo per le forme di altre aree. La gravità e lo smorzamento possono essere ignorati all'interno dell'area impostando i parametri dell'area.
+- Un'*area* è una regione nello spazio che serve per rilevare i corpi e le aree che entrano ed escono da essa. È possibile impostare un callback di monitoraggio dei corpi per segnalare le forme dei corpi in entrata/uscita e, allo stesso modo, un callback per le forme di altre aree. La gravità e lo smorzamento si possono sovrascrivere all'interno dell'area impostando i suoi parametri.
 
 - Un *giunto* è un vincolo, tra due corpi o su un corpo, rispetto a un punto. È possibile regolare i parametri come il bias del giunto e la lunghezza di riposo di un giunto a molla.
 
-Gli oggetti fisici in **PhysicsServer3D** possono essere creati e manipolati in modo indipendente; non devono essere associati ai nodi nell'albero di scene.
+Gli oggetti fisici nel **PhysicsServer3D** si possono creare e manipolare in modo indipendente; non devono essere associati ai nodi nell'albero di scene.
 
 \ **Nota:** Tutti i nodi fisici 3D utilizzano internamente il server di fisica. L'aggiunta di un nodo fisico all'albero di scene causerà la creazione di un oggetto fisico corrispondente nel server di fisica. Un nodo corpo rigido registra un callback che aggiorna la trasformazione del nodo con la trasformazione del rispettivo oggetto corpo nel server di fisica (ad ogni aggiornamento della fisica). Un nodo area registra un callback per informare il nodo area sulle sovrapposizioni con il rispettivo oggetto area nel server di fisica. Il nodo raycast interroga lo stato diretto dello spazio rilevante nel server di fisica.
 
@@ -471,9 +471,9 @@ enum **PinJointParam**: :ref:`🔗<enum_PhysicsServer3D_PinJointParam>`
 
 :ref:`PinJointParam<enum_PhysicsServer3D_PinJointParam>` **PIN_JOINT_BIAS** = ``0``
 
-The strength with which the pinned objects try to stay in positional relation to each other. The higher, the stronger.
+La forza con cui gli oggetti fissati cercano di rimanere in relazione posizionale tra loro. Più è alta, più è forte.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_PIN_JOINT_DAMPING:
 
@@ -481,9 +481,9 @@ The strength with which the pinned objects try to stay in positional relation to
 
 :ref:`PinJointParam<enum_PhysicsServer3D_PinJointParam>` **PIN_JOINT_DAMPING** = ``1``
 
-The strength with which the pinned objects try to stay in velocity relation to each other. The higher, the stronger.
+La forza con cui gli oggetti fissati cercano di rimanere in relazione di velocità tra loro. Più è alta, più è forte.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_PIN_JOINT_IMPULSE_CLAMP:
 
@@ -491,9 +491,9 @@ The strength with which the pinned objects try to stay in velocity relation to e
 
 :ref:`PinJointParam<enum_PhysicsServer3D_PinJointParam>` **PIN_JOINT_IMPULSE_CLAMP** = ``2``
 
-If above 0, this value is the maximum value for an impulse that this Joint3D puts on its ends.
+Se superiore a 0, questo valore è il valore massimo per un impulso che questo Joint3D imprime alle sue estremità.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -511,9 +511,9 @@ enum **HingeJointParam**: :ref:`🔗<enum_PhysicsServer3D_HingeJointParam>`
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_BIAS** = ``0``
 
-The speed with which the two bodies get pulled together when they move in different directions.
+La velocità con cui due corpi vengono attratti l'uno verso l'altro quando si muovono in direzioni diverse.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_LIMIT_UPPER:
 
@@ -537,9 +537,9 @@ La rotazione minima attraverso la cerniera.
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_LIMIT_BIAS** = ``3``
 
-The speed with which the rotation across the axis perpendicular to the hinge gets corrected.
+La velocità con cui viene corretta la rotazione lungo l'asse perpendicolare alla cerniera.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_LIMIT_SOFTNESS:
 
@@ -547,7 +547,7 @@ The speed with which the rotation across the axis perpendicular to the hinge get
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_LIMIT_SOFTNESS** = ``4``
 
-**Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+**Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_LIMIT_RELAXATION:
 
@@ -555,9 +555,9 @@ The speed with which the rotation across the axis perpendicular to the hinge get
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_LIMIT_RELAXATION** = ``5``
 
-The lower this value, the more the rotation gets slowed down.
+Più basso è questo valore, più la rotazione viene rallentata.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_MOTOR_TARGET_VELOCITY:
 
@@ -633,9 +633,9 @@ La differenza minima tra i punti di rotazione sul loro asse X prima che avviene 
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_LIMIT_SOFTNESS** = ``2``
 
-A factor applied to the movement across the slider axis once the limits get surpassed. The lower, the slower the movement.
+Un fattore applicato al movimento lungo l'asse del cursore una volta superati i limiti. Più è basso, più lento è il movimento.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_LIMIT_RESTITUTION:
 
@@ -643,9 +643,9 @@ A factor applied to the movement across the slider axis once the limits get surp
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_LIMIT_RESTITUTION** = ``3``
 
-The amount of restitution once the limits are surpassed. The lower, the more velocity-energy gets lost.
+La quantità di restituzione una volta superati i limiti. Più è bassa, più energia-velocità viene persa.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_LIMIT_DAMPING:
 
@@ -653,9 +653,9 @@ The amount of restitution once the limits are surpassed. The lower, the more vel
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_LIMIT_DAMPING** = ``4``
 
-The amount of damping once the slider limits are surpassed.
+Quantità di smorzamento una volta superati i limiti del cursore.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_MOTION_SOFTNESS:
 
@@ -673,9 +673,9 @@ Un fattore applicato al movimento attraverso l'asse dello slider finché lo slid
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_MOTION_RESTITUTION** = ``6``
 
-The amount of restitution inside the slider limits.
+La quantità di restituzione entro i limiti del cursore.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_MOTION_DAMPING:
 
@@ -683,9 +683,9 @@ The amount of restitution inside the slider limits.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_MOTION_DAMPING** = ``7``
 
-The amount of damping inside the slider limits.
+La quantità di smorzamento entro i limiti del cursore.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_ORTHOGONAL_SOFTNESS:
 
@@ -693,9 +693,9 @@ The amount of damping inside the slider limits.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_ORTHOGONAL_SOFTNESS** = ``8``
 
-A factor applied to the movement across axes orthogonal to the slider.
+Un fattore applicato al movimento lungo gli assi ortogonali al cursore.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_ORTHOGONAL_RESTITUTION:
 
@@ -713,9 +713,9 @@ La quantità di restituzione quando il movimento avviene lungo gli assi ortogona
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_ORTHOGONAL_DAMPING** = ``10``
 
-The amount of damping when movement is across axes orthogonal to the slider.
+La quantità di smorzamento quando il movimento avviene lungo gli assi ortogonali al cursore.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo con GodotPhysics3D. Questo parametro viene ignorato con Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_UPPER:
 
@@ -723,9 +723,9 @@ The amount of damping when movement is across axes orthogonal to the slider.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_UPPER** = ``11``
 
-The upper limit of rotation in the slider.
+Il limite superiore di rotazione del cursore.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_LOWER:
 
@@ -733,9 +733,9 @@ The upper limit of rotation in the slider.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_LOWER** = ``12``
 
-The lower limit of rotation in the slider.
+Il limite inferiore di rotazione del cursore.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_SOFTNESS:
 
@@ -773,9 +773,9 @@ La quantità di smorzamento della rotazione quando il limite viene superato.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_MOTION_SOFTNESS** = ``16``
 
-A factor that gets applied to the all rotation in the limits.
+Un fattore che è applicato a tutte le rotazioni entro i limiti.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_MOTION_RESTITUTION:
 
@@ -783,9 +783,9 @@ A factor that gets applied to the all rotation in the limits.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_MOTION_RESTITUTION** = ``17``
 
-The amount of restitution of the rotation in the limits.
+La quantità di restituzione della rotazione entro i limiti.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_MOTION_DAMPING:
 
@@ -793,9 +793,9 @@ The amount of restitution of the rotation in the limits.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_MOTION_DAMPING** = ``18``
 
-The amount of damping of the rotation in the limits.
+La quantità di smorzamento della rotazione entro i limiti.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_ORTHOGONAL_SOFTNESS:
 
@@ -803,7 +803,7 @@ The amount of damping of the rotation in the limits.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_ORTHOGONAL_SOFTNESS** = ``19``
 
-Un fattore che è applicato a tutta la rotazione lungo gli assi ortogonali allo slider.
+Un fattore che è applicato a tutta la rotazione lungo gli assi ortogonali al cursore.
 
 \ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
@@ -813,9 +813,9 @@ Un fattore che è applicato a tutta la rotazione lungo gli assi ortogonali allo 
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_ORTHOGONAL_RESTITUTION** = ``20``
 
-The amount of restitution of the rotation across axes orthogonal to the slider.
+La quantità di restituzione della rotazione lungo gli assi ortogonali al cursore.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_ORTHOGONAL_DAMPING:
 
@@ -823,9 +823,9 @@ The amount of restitution of the rotation across axes orthogonal to the slider.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_ORTHOGONAL_DAMPING** = ``21``
 
-The amount of damping of the rotation across axes orthogonal to the slider.
+Il valore di smorzamento della rotazione lungo gli assi ortogonali al cursore.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_MAX:
 
@@ -871,9 +871,9 @@ La torsione è la rotazione attorno all'asse di torsione, questo valore definisc
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_BIAS** = ``2``
 
-The speed with which the swing or twist will take place. The higher, the faster.
+La velocità con cui avverrà l'oscillazione o la torsione. Più è alta, più è veloce.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_CONE_TWIST_JOINT_SOFTNESS:
 
@@ -947,9 +947,9 @@ La quantità di restituzione sul movimento degli assi. Più è bassa, più energ
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_DAMPING** = ``4``
 
-The amount of damping that happens at the linear motion across the axes.
+La quantità di smorzamento applicata durante il movimento lineare lungo gli assi.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_MOTOR_TARGET_VELOCITY:
 
@@ -1025,9 +1025,9 @@ La rotazione minima in direzione positiva per rilasciarsi e ruotare attorno agli
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_LIMIT_SOFTNESS** = ``12``
 
-A factor that gets multiplied onto all rotations across the axes.
+Un fattore che è moltiplicato per tutte le rotazioni lungo gli assi.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo con Godot Physics 3D. Questo parametro è ignorato con Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_DAMPING:
 
@@ -1055,9 +1055,9 @@ La quantità di restituzione rotazionale lungo gli assi. Più è bassa, maggiore
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_FORCE_LIMIT** = ``15``
 
-The maximum amount of force that can occur, when rotating around the axes.
+La forza massima che può essere esercitata ruotando attorno agli assi.
 
-\ **Note:** Only supported when using GodotPhysics3D. This parameter is ignored when using Jolt Physics.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo parametro è ignorato quando si utilizza Jolt Physics.
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_ERP:
 
@@ -1219,7 +1219,7 @@ enum **ShapeType**: :ref:`🔗<enum_PhysicsServer3D_ShapeType>`
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_WORLD_BOUNDARY** = ``0``
 
-Constant for creating a world boundary shape (used by the :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` resource).
+Costante per creare una forma di confine del mondo (utilizzata dalla risorsa :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_SEPARATION_RAY:
 
@@ -1227,7 +1227,7 @@ Constant for creating a world boundary shape (used by the :ref:`WorldBoundarySha
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_SEPARATION_RAY** = ``1``
 
-Constant for creating a separation ray shape (used by the :ref:`SeparationRayShape3D<class_SeparationRayShape3D>` resource).
+Costante per creare una forma a raggio di separazione (utilizzata dalla risorsa :ref:`SeparationRayShape3D<class_SeparationRayShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_SPHERE:
 
@@ -1235,7 +1235,7 @@ Constant for creating a separation ray shape (used by the :ref:`SeparationRaySha
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_SPHERE** = ``2``
 
-Constant for creating a sphere shape (used by the :ref:`SphereShape3D<class_SphereShape3D>` resource).
+Costante per creare una forma sferica (utilizzata dalla risorsa :ref:`SphereShape3D<class_SphereShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_BOX:
 
@@ -1243,7 +1243,7 @@ Constant for creating a sphere shape (used by the :ref:`SphereShape3D<class_Sphe
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_BOX** = ``3``
 
-Constant for creating a box shape (used by the :ref:`BoxShape3D<class_BoxShape3D>` resource).
+Costante per creare una forma a scatola (utilizzata dalla risorsa :ref:`BoxShape3D<class_BoxShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_CAPSULE:
 
@@ -1251,7 +1251,7 @@ Constant for creating a box shape (used by the :ref:`BoxShape3D<class_BoxShape3D
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CAPSULE** = ``4``
 
-Constant for creating a capsule shape (used by the :ref:`CapsuleShape3D<class_CapsuleShape3D>` resource).
+Costante per creare una forma a capsula (utilizzata dalla risorsa :ref:`CapsuleShape3D<class_CapsuleShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_CYLINDER:
 
@@ -1259,7 +1259,7 @@ Constant for creating a capsule shape (used by the :ref:`CapsuleShape3D<class_Ca
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CYLINDER** = ``5``
 
-Constant for creating a cylinder shape (used by the :ref:`CylinderShape3D<class_CylinderShape3D>` resource).
+Costante per creare una forma cilindrica (utilizzata dalla risorsa :ref:`CylinderShape3D<class_CylinderShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_CONVEX_POLYGON:
 
@@ -1267,7 +1267,7 @@ Constant for creating a cylinder shape (used by the :ref:`CylinderShape3D<class_
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CONVEX_POLYGON** = ``6``
 
-Constant for creating a convex polygon shape (used by the :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` resource).
+Costante per creare una forma poligonale convessa (utilizzata dalla risorsa :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_CONCAVE_POLYGON:
 
@@ -1275,7 +1275,7 @@ Constant for creating a convex polygon shape (used by the :ref:`ConvexPolygonSha
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CONCAVE_POLYGON** = ``7``
 
-Constant for creating a concave polygon (trimesh) shape (used by the :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` resource).
+Costante per creare una forma poligonale concava (trimesh) (utilizzata dalla risorsa :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_HEIGHTMAP:
 
@@ -1283,7 +1283,7 @@ Constant for creating a concave polygon (trimesh) shape (used by the :ref:`Conca
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_HEIGHTMAP** = ``8``
 
-Constant for creating a heightmap shape (used by the :ref:`HeightMapShape3D<class_HeightMapShape3D>` resource).
+Costante per creare una forma di heightmap (utilizzata dalla risorsa :ref:`HeightMapShape3D<class_HeightMapShape3D>`).
 
 .. _class_PhysicsServer3D_constant_SHAPE_SOFT_BODY:
 
@@ -1299,7 +1299,7 @@ Costante utilizzata internamente per la forma di un corpo deformabile. Ogni tent
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_CUSTOM** = ``10``
 
-Constant used internally for a custom shape. Any attempt to create this kind of shape results in an error when using Godot Physics or Jolt Physics.
+Costante utilizzata internamente per una forma personalizzata. Ogni tentativo di creare questo tipo di forma genera un errore quando si utilizza Godot Physics o Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -2332,7 +2332,7 @@ Aggiunge una forma al corpo, con una matrice di trasformazione. Le forme sono ge
 
 |void| **body_apply_central_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_apply_central_force>`
 
-Applica una forza direzionale senza influenzare la rotazione. Una forza è dipendente dal tempo e pensata per essere applicata a ogni aggiornamento della fisica.
+Applica una forza direzionale senza influenzare la rotazione. Una forza è dipendente dal tempo e dovrebbe essere applicata a ogni aggiornamento della fisica.
 
 Ciò equivale a usare :ref:`body_apply_force()<class_PhysicsServer3D_method_body_apply_force>` al centro di massa del corpo.
 
@@ -2362,7 +2362,7 @@ Ciò equivale a utilizzare :ref:`body_apply_impulse()<class_PhysicsServer3D_meth
 
 |void| **body_apply_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector3<class_Vector3>`, position\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicsServer3D_method_body_apply_force>`
 
-Applica una forza posizionata al corpo. Una forza è dipendente dal tempo e deve essere applicata a ogni aggiornamento della fisica.
+Applica una forza posizionata al corpo. Una forza è dipendente dal tempo e dovrebbe essere applicata a ogni aggiornamento della fisica.
 
 \ ``position`` è lo scostamento dall'origine del corpo in coordinate globali.
 
@@ -2822,11 +2822,11 @@ Il rilevamento continuo delle collisioni cerca di prevedere dove un corpo in mov
 
 Imposta la funzione di callback per l'integrazione personalizzata della forza del corpo su ``callable``. Utilizza un :ref:`Callable<class_Callable>` vuoto (``Callable()``) per cancellare il callback personalizzato.
 
-La funzione ``callable`` sarà chiamata a ogni tick di fisica, prima dell'integrazione standard della forza (vedi :ref:`body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>`). Può essere utilizzata, ad esempio, per aggiornare la velocità lineare e angolare del corpo in base al contatto con altri corpi.
+La funzione ``callable`` sarà chiamata a ogni tick di fisica, prima dell'integrazione standard delle forze (vedi :ref:`body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>`). Può servire, ad esempio, per aggiornare la velocità lineare e angolare del corpo in base al contatto con altri corpi.
 
 Se ``userdata`` non è ``null``, la funzione ``callable`` deve accettare i due parametri seguenti:
 
-1. ``state``: un :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, utilizzato per recuperare e modificare lo stato del corpo,
+1. ``state``: un :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, usato per recuperare e modificare lo stato del corpo,
 
 2. ``userdata``: un :ref:`Variant<class_Variant>`; il suo valore sarà l'``userdata`` passato in questo metodo.
 
@@ -2966,13 +2966,13 @@ Imposta uno stato del corpo.
 
 |void| **body_set_state_sync_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_state_sync_callback>`
 
-Imposta la funzione di callback di sincronizzazione dello stato del corpo su ``callable``. Utilizza un :ref:`Callable<class_Callable>` vuoto (``Callable()``) per cancellare il callback.
+Imposta la funzione di callback per la sincronizzazione dello stato del corpo su ``callable``. Utilizza un :ref:`Callable<class_Callable>` vuoto (``Callable()``) per cancellare il callback.
 
-La funzione ``callable`` verrà chiamata a ogni frame di fisica, supponendo che il corpo fosse attivo durante il tick di fisica precedente, e può essere utilizzata per recuperare lo stato più recente dal server di fisica.
+La funzione ``callable`` sarà chiamata a ogni frame di fisica, supponendo che il corpo fosse attivo durante il tick di fisica precedente, e può servire per recuperare lo stato più recente dal server di fisica.
 
 La funzione ``callable`` deve accettare i seguenti parametri:
 
-1. ``state``: un :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, utilizzato per recuperare lo stato del corpo.
+1. ``state``: un :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, usato per recuperare lo stato del corpo.
 
 .. rst-class:: classref-item-separator
 
@@ -2996,7 +2996,7 @@ Restituisce ``true`` se si verificherebbe una collisione spostando il corpo lung
 
 :ref:`RID<class_RID>` **box_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_box_shape_create>`
 
-Creates a 3D box shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the box's half-extents.
+Crea una forma a scatola 3D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` per impostare le mezze estensioni della scatola.
 
 .. rst-class:: classref-item-separator
 
@@ -3008,7 +3008,7 @@ Creates a 3D box shape in the physics server, and returns the :ref:`RID<class_RI
 
 :ref:`RID<class_RID>` **capsule_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_capsule_shape_create>`
 
-Creates a 3D capsule shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the capsule's height and radius.
+Crea una forma a capsula 3D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` per impostare l'altezza e il raggio della capsula.
 
 .. rst-class:: classref-item-separator
 
@@ -3020,7 +3020,7 @@ Creates a 3D capsule shape in the physics server, and returns the :ref:`RID<clas
 
 :ref:`RID<class_RID>` **concave_polygon_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_concave_polygon_shape_create>`
 
-Creates a 3D concave polygon shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the concave polygon's triangles.
+Crea una forma di poligono concavo 3D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` per impostare il triangoli del poligono concavo.
 
 .. rst-class:: classref-item-separator
 
@@ -3056,7 +3056,7 @@ Imposta un parametro di un giunto a torsione conica.
 
 :ref:`RID<class_RID>` **convex_polygon_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_convex_polygon_shape_create>`
 
-Creates a 3D convex polygon shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the convex polygon's points.
+Crea una forma di poligono convesso 3D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` per impostare i punti del poligono convesso.
 
 .. rst-class:: classref-item-separator
 
@@ -3068,9 +3068,9 @@ Creates a 3D convex polygon shape in the physics server, and returns the :ref:`R
 
 :ref:`RID<class_RID>` **custom_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_custom_shape_create>`
 
-Creates a custom shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the shape's data.
+Crea una forma personalizzata nel server di fisica e restituisce l':ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` per impostare i dati della forma.
 
-\ **Note:** Custom shapes are not supported by the built-in physics servers, so calling this method always produces an error when using Godot Physics or Jolt Physics. Custom physics servers implemented as GDExtensions may support a custom shape.
+\ **Nota:** Le forme personalizzate non sono supportate dai server di fisica integrati, quindi chiamare questo metodo genererà sempre un errore quando si utilizza Godot Physics o Jolt Physics. I server di fisica personalizzati implementati come GDExtension potrebbero supportare forme personalizzate.
 
 .. rst-class:: classref-item-separator
 
@@ -3082,7 +3082,7 @@ Creates a custom shape in the physics server, and returns the :ref:`RID<class_RI
 
 :ref:`RID<class_RID>` **cylinder_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_cylinder_shape_create>`
 
-Creates a 3D cylinder shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the cylinder's height and radius.
+Crea una forma di cilindro 3D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` per impostare l'altezza e il raggio del cilindro.
 
 .. rst-class:: classref-item-separator
 
@@ -3154,7 +3154,7 @@ Imposta il valore di un parametro di un giunto generico 6DOF.
 
 :ref:`int<class_int>` **get_process_info**\ (\ process_info\: :ref:`ProcessInfo<enum_PhysicsServer3D_ProcessInfo>`\ ) :ref:`🔗<class_PhysicsServer3D_method_get_process_info>`
 
-Restituisce il valore di uno stato del motore di fisica specificato da ``process_info``.
+Restituisce il valore di uno stato del motore fisico specificato da ``process_info``.
 
 .. rst-class:: classref-item-separator
 
@@ -3166,7 +3166,7 @@ Restituisce il valore di uno stato del motore di fisica specificato da ``process
 
 :ref:`RID<class_RID>` **heightmap_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_heightmap_shape_create>`
 
-Creates a 3D heightmap shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the heightmap's data.
+Crea una forma di heightmap 3D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` per impostare i dati della heightmap.
 
 .. rst-class:: classref-item-separator
 
@@ -3266,9 +3266,9 @@ Imposta se i corpi attaccati al :ref:`Joint3D<class_Joint3D>` entreranno in coll
 
 :ref:`int<class_int>` **joint_get_solver_priority**\ (\ joint\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_joint_get_solver_priority>`
 
-Gets the priority value of the Joint3D.
+Restituisce il valore di priorità del Joint3D.
 
-\ **Note:** Only supported when using GodotPhysics3D. This method always returns ``1`` when using Jolt Physics, as it does not support joint solver priority.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo metodo restituisce sempre ``1`` quando si utilizza Jolt Physics, poiché non supporta la priorità per il risolutore di giunti.
 
 .. rst-class:: classref-item-separator
 
@@ -3372,9 +3372,9 @@ Rende il giunto uno generico a sei gradi di libertà (6DOF). Usa :ref:`generic_6
 
 |void| **joint_set_solver_priority**\ (\ joint\: :ref:`RID<class_RID>`, priority\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_joint_set_solver_priority>`
 
-Sets the priority value of the Joint3D.
+Imposta il valore di priorità del Joint3D.
 
-\ **Note:** Only supported when using GodotPhysics3D. This method has no effect when using Jolt Physics, as it does not support joint solver priority.
+\ **Nota:** Supportato solo quando si utilizza GodotPhysics3D. Questo metodo non ha effetto quando si utilizza Jolt Physics, poiché non supporta la priorità per il risolutore di giunti.
 
 .. rst-class:: classref-item-separator
 
@@ -3458,7 +3458,7 @@ Imposta un parametro di un giunto a perno.
 
 :ref:`RID<class_RID>` **separation_ray_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_separation_ray_shape_create>`
 
-Creates a 3D separation ray shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the shape's ``length`` and ``slide_on_slope`` properties.
+Crea una forma a raggio di separazione 3D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` per impostare le proprietà ``length`` e ``slide_on_slope`` della forma.
 
 .. rst-class:: classref-item-separator
 
@@ -3482,7 +3482,7 @@ Attiva o disattiva il motore fisico 3D.
 
 :ref:`Variant<class_Variant>` **shape_get_data**\ (\ shape\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_shape_get_data>`
 
-Returns the shape data that configures the shape, such as the half-extents of a box or the triangles of a concave (trimesh) shape. See :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` for the precise format of this data in each case.
+Restituisce i dati di forma che la definiscono, come le mezze estensioni di una scatola o i triangoli di una forma concava (trimesh). Vedi :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` per il formato preciso di questi dati in ogni caso.
 
 .. rst-class:: classref-item-separator
 
@@ -3520,29 +3520,29 @@ Restituisce il tipo della forma.
 
 |void| **shape_set_data**\ (\ shape\: :ref:`RID<class_RID>`, data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PhysicsServer3D_method_shape_set_data>`
 
-Sets the shape data that configures the shape. The ``data`` to be passed depends on the shape's type (see :ref:`shape_get_type()<class_PhysicsServer3D_method_shape_get_type>`):
+Imposta i dati che definiscono la forma. I dati (``data``) da passare dipendono dal tipo della forma (vedi :ref:`shape_get_type()<class_PhysicsServer3D_method_shape_get_type>`):
 
-- :ref:`SHAPE_WORLD_BOUNDARY<class_PhysicsServer3D_constant_SHAPE_WORLD_BOUNDARY>`: a :ref:`Plane<class_Plane>`,
+- :ref:`SHAPE_WORLD_BOUNDARY<class_PhysicsServer3D_constant_SHAPE_WORLD_BOUNDARY>`: un :ref:`Plane<class_Plane>`,
 
-- :ref:`SHAPE_SEPARATION_RAY<class_PhysicsServer3D_constant_SHAPE_SEPARATION_RAY>`: a dictionary containing the key ``"length"`` with a :ref:`float<class_float>` value and the key ``"slide_on_slope"`` with a :ref:`bool<class_bool>` value,
+- :ref:`SHAPE_SEPARATION_RAY<class_PhysicsServer3D_constant_SHAPE_SEPARATION_RAY>`: un dizionario contenente la chiave ``"length"`` con un valore :ref:`float<class_float>` e la chiave ``"slide_on_slope"`` con un valore :ref:`bool<class_bool>`,
 
-- :ref:`SHAPE_SPHERE<class_PhysicsServer3D_constant_SHAPE_SPHERE>`: a :ref:`float<class_float>` that is the radius of the sphere,
+- :ref:`SHAPE_SPHERE<class_PhysicsServer3D_constant_SHAPE_SPHERE>`: un :ref:`float<class_float>` che rappresenta il raggio della sfera,
 
-- :ref:`SHAPE_BOX<class_PhysicsServer3D_constant_SHAPE_BOX>`: a :ref:`Vector3<class_Vector3>` containing the half-extents of the box,
+- :ref:`SHAPE_BOX<class_PhysicsServer3D_constant_SHAPE_BOX>`: un :ref:`Vector3<class_Vector3>` contenente le semi-estensioni della scatola,
 
-- :ref:`SHAPE_CAPSULE<class_PhysicsServer3D_constant_SHAPE_CAPSULE>`: a dictionary containing the keys ``"height"`` and ``"radius"`` with :ref:`float<class_float>` values,
+- :ref:`SHAPE_CAPSULE<class_PhysicsServer3D_constant_SHAPE_CAPSULE>`: un dizionario contenente le chiavi ``"height"`` e ``"radius"`` con valori :ref:`float<class_float>`,
 
-- :ref:`SHAPE_CYLINDER<class_PhysicsServer3D_constant_SHAPE_CYLINDER>`: a dictionary containing the keys ``"height"`` and ``"radius"`` with :ref:`float<class_float>` values,
+- :ref:`SHAPE_CYLINDER<class_PhysicsServer3D_constant_SHAPE_CYLINDER>`: un dizionario contenente le chiavi ``"height"`` e ``"radius"`` con valori :ref:`float<class_float>`,
 
-- :ref:`SHAPE_CONVEX_POLYGON<class_PhysicsServer3D_constant_SHAPE_CONVEX_POLYGON>`: a :ref:`PackedVector3Array<class_PackedVector3Array>` of points defining a convex polygon (the shape will be the convex hull of the points),
+- :ref:`SHAPE_CONVEX_POLYGON<class_PhysicsServer3D_constant_SHAPE_CONVEX_POLYGON>`: un :ref:`PackedVector3Array<class_PackedVector3Array>` di punti che definiscono un poligono convesso (la forma sarà l'inviluppo convesso dei punti),
 
-- :ref:`SHAPE_CONCAVE_POLYGON<class_PhysicsServer3D_constant_SHAPE_CONCAVE_POLYGON>`: a dictionary containing the key ``"faces"`` with a :ref:`PackedVector3Array<class_PackedVector3Array>` value (with a length divisible by 3, so that each 3-tuple of points forms a face) and the key ``"backface_collision"`` with a :ref:`bool<class_bool>` value,
+- :ref:`SHAPE_CONCAVE_POLYGON<class_PhysicsServer3D_constant_SHAPE_CONCAVE_POLYGON>`: un dizionario contenente la chiave ``"faces"`` con un valore :ref:`PackedVector3Array<class_PackedVector3Array>` (con una lunghezza divisibile per 3, in modo che ogni tripletta di punti formi una faccia) e la chiave ``"backface_collision"`` con un valore :ref:`bool<class_bool>`,
 
-- :ref:`SHAPE_HEIGHTMAP<class_PhysicsServer3D_constant_SHAPE_HEIGHTMAP>`: a dictionary containing the keys ``"width"`` and ``"depth"`` with :ref:`int<class_int>` values, and the key ``"heights"`` with a value that is a packed array of :ref:`float<class_float>`\ s of length ``width * depth`` (that is a :ref:`PackedFloat32Array<class_PackedFloat32Array>`, or a :ref:`PackedFloat64Array<class_PackedFloat64Array>` if Godot was compiled with the ``precision=double`` option), and optionally the keys ``"min_height"`` and ``"max_height"`` with :ref:`float<class_float>` values,
+- :ref:`SHAPE_HEIGHTMAP<class_PhysicsServer3D_constant_SHAPE_HEIGHTMAP>`: un dizionario contenente le chiavi ``"width"`` e ``"depth"`` con valori :ref:`int<class_int>`, e la chiave ``"heights"`` con un valore che è un array impacchettato di :ref:`float<class_float>` di lunghezza ``width * depth`` (ovvero un :ref:`PackedFloat32Array<class_PackedFloat32Array>` o un :ref:`PackedFloat64Array<class_PackedFloat64Array>` se Godot è stato compilato con l'opzione ``precision=double``), e facoltativamente le chiavi ``"min_height"`` e ``"max_height"`` con valori :ref:`float<class_float>`,
 
-- :ref:`SHAPE_SOFT_BODY<class_PhysicsServer3D_constant_SHAPE_SOFT_BODY>`: the input ``data`` is ignored and this method has no effect,
+- :ref:`SHAPE_SOFT_BODY<class_PhysicsServer3D_constant_SHAPE_SOFT_BODY>`: ``data`` è ignorato e questo metodo non ha effetto,
 
-- :ref:`SHAPE_CUSTOM<class_PhysicsServer3D_constant_SHAPE_CUSTOM>`: the input ``data`` is interpreted by a custom physics server, if it supports custom shapes.
+- :ref:`SHAPE_CUSTOM<class_PhysicsServer3D_constant_SHAPE_CUSTOM>`: ``data`` è interpretato da un server di fisica personalizzato, se supporta forme personalizzate.
 
 .. rst-class:: classref-item-separator
 
@@ -3802,7 +3802,7 @@ Restituisce il :ref:`RID<class_RID>` dello spazio assegnato al corpo deformabile
 
 Restituisce lo stato del corpo deformabile specificato.
 
-\ **Nota:** L'implementazione fisica predefinita di Godot non supporta :ref:`BODY_STATE_LINEAR_VELOCITY<class_PhysicsServer3D_constant_BODY_STATE_LINEAR_VELOCITY>`, :ref:`BODY_STATE_ANGULAR_VELOCITY<class_PhysicsServer3D_constant_BODY_STATE_ANGULAR_VELOCITY>`, :ref:`BODY_STATE_SLEEPING<class_PhysicsServer3D_constant_BODY_STATE_SLEEPING>` o :ref:`BODY_STATE_CAN_SLEEP<class_PhysicsServer3D_constant_BODY_STATE_CAN_SLEEP>`.
+\ **Nota:** L'implementazione predefinita della fisica in Godot non supporta :ref:`BODY_STATE_LINEAR_VELOCITY<class_PhysicsServer3D_constant_BODY_STATE_LINEAR_VELOCITY>`, :ref:`BODY_STATE_ANGULAR_VELOCITY<class_PhysicsServer3D_constant_BODY_STATE_ANGULAR_VELOCITY>`, :ref:`BODY_STATE_SLEEPING<class_PhysicsServer3D_constant_BODY_STATE_SLEEPING>` o :ref:`BODY_STATE_CAN_SLEEP<class_PhysicsServer3D_constant_BODY_STATE_CAN_SLEEP>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3926,7 +3926,7 @@ Imposta il coefficiente di smorzamento del corpo deformabile specificato. Valori
 
 Imposta il coefficiente di resistenza del corpo deformabile specificato. Valori più alti aumentano la resistenza all'aria di questo corpo.
 
-\ **Nota:** Questo valore è attualmente inutilizzato dall'implementazione fisica predefinita di Godot.
+\ **Nota:** Questo valore è attualmente inutilizzato dall'implementazione predefinita della fisica in Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -4024,7 +4024,7 @@ Assegna uno spazio al corpo deformabile specificato (vedi :ref:`space_create()<c
 
 Imposta lo stato del corpo specificato per il corpo specificato.
 
-\ **Nota:** L'implementazione fisica predefinita di Godot non supporta :ref:`BODY_STATE_LINEAR_VELOCITY<class_PhysicsServer3D_constant_BODY_STATE_LINEAR_VELOCITY>`, :ref:`BODY_STATE_ANGULAR_VELOCITY<class_PhysicsServer3D_constant_BODY_STATE_ANGULAR_VELOCITY>`, :ref:`BODY_STATE_SLEEPING<class_PhysicsServer3D_constant_BODY_STATE_SLEEPING>` o :ref:`BODY_STATE_CAN_SLEEP<class_PhysicsServer3D_constant_BODY_STATE_CAN_SLEEP>`.
+\ **Nota:** L'implementazione predefinita della fisica in Godot non supporta :ref:`BODY_STATE_LINEAR_VELOCITY<class_PhysicsServer3D_constant_BODY_STATE_LINEAR_VELOCITY>`, :ref:`BODY_STATE_ANGULAR_VELOCITY<class_PhysicsServer3D_constant_BODY_STATE_ANGULAR_VELOCITY>`, :ref:`BODY_STATE_SLEEPING<class_PhysicsServer3D_constant_BODY_STATE_SLEEPING>` o :ref:`BODY_STATE_CAN_SLEEP<class_PhysicsServer3D_constant_BODY_STATE_CAN_SLEEP>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4060,7 +4060,7 @@ Imposta la trasformazione globale del corpo deformabile fornito.
 
 |void| **soft_body_update_rendering_server**\ (\ body\: :ref:`RID<class_RID>`, rendering_server_handler\: :ref:`PhysicsServer3DRenderingServerHandler<class_PhysicsServer3DRenderingServerHandler>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_update_rendering_server>`
 
-Richiede che il server fisico aggiorni il server di rendering con le ultime posizioni dei punti del corpo deformabile specificato tramite l'interfaccia ``rendering_server_handler``.
+Richiede che il server di fisica aggiorni il server di rendering con le ultime posizioni dei punti del corpo deformabile specificato tramite l'interfaccia ``rendering_server_handler``.
 
 .. rst-class:: classref-item-separator
 
@@ -4144,7 +4144,7 @@ Imposta il valore per un parametro di uno spazio. Una lista di parametri disponi
 
 :ref:`RID<class_RID>` **sphere_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_sphere_shape_create>`
 
-Creates a 3D sphere shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the sphere's radius.
+Crea una forma di sfera 3D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` per impostare il raggio della sfera.
 
 .. rst-class:: classref-item-separator
 
@@ -4156,13 +4156,13 @@ Creates a 3D sphere shape in the physics server, and returns the :ref:`RID<class
 
 :ref:`RID<class_RID>` **world_boundary_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_world_boundary_shape_create>`
 
-Creates a 3D world boundary shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the shape's normal direction and distance properties.
+Crea una forma di confine del mondo 3D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` per impostare la direzione della normale e la distanza della forma.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

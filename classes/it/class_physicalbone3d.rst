@@ -17,7 +17,7 @@ Un corpo fisico utilizzato per far reagire le ossa in uno :ref:`Skeleton3D<class
 Descrizione
 ----------------------
 
-Il nodo **PhysicalBone3D** è un corpo fisico che può essere utilizzato per far reagire le ossa in uno :ref:`Skeleton3D<class_Skeleton3D>` alla fisica.
+Il nodo **PhysicalBone3D** è un corpo fisico che serve per far reagire le ossa in uno :ref:`Skeleton3D<class_Skeleton3D>` alla fisica.
 
 \ **Nota:** Per rilevare le ossa fisiche con i raycast, la proprietà :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>` del :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` genitore deve essere ``true`` e l'osso dello :ref:`Skeleton3D<class_Skeleton3D>` deve essere assegnato correttamente a **PhysicalBone3D**; ciò significa che :ref:`get_bone_id()<class_PhysicalBone3D_method_get_bone_id>` dovrebbe restituire un ID valido (``>= 0``).
 
@@ -26,7 +26,7 @@ Il nodo **PhysicalBone3D** è un corpo fisico che può essere utilizzato per far
 Tutorial
 ----------------
 
-- :doc:`Ragdoll System <../tutorials/physics/ragdoll_system>`
+- :doc:`Sistema di ragdoll <../tutorials/physics/ragdoll_system>`
 
 .. rst-class:: classref-reftable-group
 
@@ -447,7 +447,7 @@ Definisce come :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` è 
 - |void| **set_linear_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_linear_velocity**\ (\ )
 
-La velocità lineare del corpo in unità al secondo. Può essere usata sporadicamente, ma **non impostarla ogni frame**, perché la fisica potrebbe essere eseguita in un altro thread e funzionare a una granularità diversa. Usa :ref:`_integrate_forces()<class_PhysicalBone3D_private_method__integrate_forces>` come ciclo di processo per un controllo preciso dello stato del corpo.
+La velocità lineare del corpo in unità al secondo. Si può usare sporadicamente, ma **non impostarla a ogni frame**, perché la fisica potrebbe essere eseguita in un altro thread e funzionare a una granularità diversa. Usa :ref:`_integrate_forces()<class_PhysicalBone3D_private_method__integrate_forces>` come ciclo di elaborazione per avere preciso controllo sullo stato del corpo.
 
 .. rst-class:: classref-item-separator
 
@@ -481,7 +481,7 @@ Descrizioni dei metodi
 
 |void| **_integrate_forces**\ (\ state\: :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`\ ) |virtual| :ref:`🔗<class_PhysicalBone3D_private_method__integrate_forces>`
 
-Chiamato durante l'elaborazione di fisica, consente di leggere e modificare in modo sicuro lo stato di simulazione per l'oggetto. Per impostazione predefinita, viene chiamato prima dell'integrazione predefinita delle forze, ma la proprietà :ref:`custom_integrator<class_PhysicalBone3D_property_custom_integrator>` consente di disabilitare l'integrazione delle forze predefinita e di eseguire un'integrazione delle forze completamente personalizzata per un corpo.
+Chiamato durante l'elaborazione della fisica, consente di leggere e modificare in modo sicuro lo stato di simulazione per l'oggetto. Normalmente, viene chiamato prima dell'integrazione predefinita delle forze, ma la proprietà :ref:`custom_integrator<class_PhysicalBone3D_property_custom_integrator>` consente di disabilitare l'integrazione standard delle forze e di integrarle in modo completamente personalizzato per un corpo.
 
 .. rst-class:: classref-item-separator
 
@@ -555,7 +555,7 @@ Restituisce ``true`` se il PhysicsBone3D sta attualmente simulando la fisica.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

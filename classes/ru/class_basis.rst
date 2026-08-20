@@ -12,29 +12,29 @@ Basis
 Описание
 ----------------
 
-The **Basis** built-in :ref:`Variant<class_Variant>` type is a 3×3 `matrix <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ used to represent 3D rotation, scale, and shear. It is frequently used within a :ref:`Transform3D<class_Transform3D>`.
+Встроенный тип :ref:`Variant<class_Variant>` **Basis** — это `матрица <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ размером 3×3, используемая для представления вращения, масштаба и сдвига в 3D. Она часто используется в :ref:`Transform3D<class_Transform3D>`.
 
-A **Basis** is composed by 3 axis vectors, each representing a column of the matrix: :ref:`x<class_Basis_property_x>`, :ref:`y<class_Basis_property_y>`, and :ref:`z<class_Basis_property_z>`. The length of each axis (:ref:`Vector3.length()<class_Vector3_method_length>`) influences the basis's scale, while the direction of all axes influence the rotation. Usually, these axes are perpendicular to one another. However, when you rotate any axis individually, the basis becomes sheared. Applying a sheared basis to a 3D model will make the model appear distorted.
+\ **Basis** состоит из 3 векторов осей, каждый из которых представляет столбец матрицы: :ref:`x<class_Basis_property_x>`, :ref:`y<class_Basis_property_y>` и :ref:`z<class_Basis_property_z>`. Длина каждой оси (:ref:`Vector3.length()<class_Vector3_method_length>`) влияет на масштаб базиса, а направление всех осей влияет на вращение. Обычно эти оси перпендикулярны друг другу. Однако при повороте любой оси по отдельности базис становится сдвинутым. Применение сдвинутого базиса к 3D-модели приведет к тому, что модель будет выглядеть искаженной.
 
-A **Basis** is:
+\ **Basis** является:
 
-- **Orthogonal** if its axes are perpendicular to each other.
+- **Ортогональным**, если его оси перпендикулярны друг другу.
 
-- **Normalized** if the length of every axis is ``1.0``.
+- **Нормализованным**, если длина каждой оси равна ``1.0``.
 
-- **Uniform** if all axes share the same length (see :ref:`get_scale()<class_Basis_method_get_scale>`).
+- **Равномерным**, если все оси имеют одинаковую длину (см. :ref:`get_scale()<class_Basis_method_get_scale>`).
 
-- **Orthonormal** if it is both orthogonal and normalized, which allows it to only represent rotations (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+- **Ортонормальным**, если он одновременно ортогонален и нормализован, что позволяет ему представлять только вращения (см. :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
 
-- **Conformal** if it is both orthogonal and uniform, which ensures it is not distorted.
+- **Конформным**, если он одновременно ортогонален и равномерен, что гарантирует отсутствие искажений.
 
-For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
+Для общего введения см. учебник :doc:`Матрицы и преобразования <../tutorials/math/matrices_and_transforms>`.
 
-\ **Note:** Godot uses a `right-handed coordinate system <https://en.wikipedia.org/wiki/Right-hand_rule>`__, which is a common standard. For directions, the convention for built-in types like :ref:`Camera3D<class_Camera3D>` is for -Z to point forward (+X is right, +Y is up, and +Z is back). Other objects may use different direction conventions. For more information, see the `3D asset direction conventions <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ tutorial.
+\ **Примечание:** Godot использует `правостороннюю систему координат <https://en.wikipedia.org/wiki/Right-hand_rule>`__, что является общепринятым стандартом. Для направлений соглашение для встроенных типов, таких как :ref:`Camera3D<class_Camera3D>`, заключается в том, что -Z указывает вперёд (+X — вправо, +Y — вверх, а +Z — назад). Другие объекты могут использовать другие соглашения о направлении. Для получения дополнительной информации см. `Соглашения о направлении 3D-активов <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__.
 
-\ **Note:** The basis matrices are exposed as `column-major <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__ order, which is the same as OpenGL. However, they are stored internally in row-major order, which is the same as DirectX.
+\ **Примечание:** Базисные матрицы представлены в порядке `column-major <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__, что совпадает с порядком OpenGL. Однако внутри они хранятся в порядке row-major, что совпадает с порядком DirectX.
 
-\ **Note:** In a boolean context, a basis will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Basis_constant_IDENTITY>`. Otherwise, a basis will always evaluate to ``true``.
+\ **Примечание:** В логическом контексте базис будет оцениваться как ``false``, если он равен :ref:`IDENTITY<class_Basis_constant_IDENTITY>`. В противном случае базис всегда будет оцениваться как ``true``.
 
 .. note::
 

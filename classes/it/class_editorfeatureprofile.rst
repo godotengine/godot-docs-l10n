@@ -113,7 +113,7 @@ Il pannello Nodo. Se questa funzionalità è disabilitata, i segnali e i gruppi 
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_FILESYSTEM_DOCK** = ``5``
 
-Il pannello del FileSystem. Se questa funzionalità è disabilitata, il pannello del FileSystem non sarà visibile.
+Il pannello Filesystem. Se questa funzionalità è disabilitata, il pannello Filesystem non sarà visibile.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_IMPORT_DOCK:
 
@@ -121,7 +121,7 @@ Il pannello del FileSystem. Se questa funzionalità è disabilitata, il pannello
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_IMPORT_DOCK** = ``6``
 
-Il pannello di importazione. Se questa funzionalità è disabilitata, il pannello di importazione non sarà visibile.
+Il pannello Importazione. Se questa funzionalità è disabilitata, il pannello Importazione non sarà visibile.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_HISTORY_DOCK:
 
@@ -145,7 +145,7 @@ La scheda Gioco, che consente di incorporare la finestra di gioco e selezionare 
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_SIGNALS_DOCK** = ``9``
 
-The Signals dock. If this feature is disabled, signals won't be visible and modifiable from the editor.
+Il pannello Segnali. Se questa funzionalità è disabilitata, i segnali non saranno visibili e modificabili dall'editor.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_GROUPS_DOCK:
 
@@ -153,7 +153,7 @@ The Signals dock. If this feature is disabled, signals won't be visible and modi
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_GROUPS_DOCK** = ``10``
 
-The Groups dock. If this feature is disabled, groups won't be visible and modifiable from the editor.
+Il pannello Gruppi. Se questa funzionalità è disabilitata, i gruppi non saranno visibili e modificabili dall'editor.
 
 .. _class_EditorFeatureProfile_constant_FEATURE_MAX:
 
@@ -308,7 +308,7 @@ Se ``disable`` è ``true``, disabilita la funzionalità dell'editor specificata 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

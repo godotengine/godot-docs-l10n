@@ -16,27 +16,27 @@ Classe di base per tutti i controlli della GUI. Adatta la sua posizione e dimens
 Descrizione
 ----------------------
 
-Base class for all UI-related nodes. **Control** features a bounding rectangle that defines its extents, an anchor position relative to its parent control or the current viewport, and offsets relative to the anchor. The offsets update automatically when the node, any of its parents, or the screen size change.
+Classe base per tutti i nodi riguardanti l'interfaccia utente. **Control** presenta un rettangolo di delimitazione che definisce le sue estensioni, una posizione di ancoraggio relativa al suo controllo padre o alla viewport attuale e offset relativi all'ancoraggio. Gli offset si aggiornano automaticamente quando il nodo, uno qualsiasi dei suoi genitori o le dimensioni dello schermo cambiano.
 
-For more information on Godot's UI system, anchors, offsets, and containers, see the related tutorials in the manual. To build flexible UIs, you'll need a mix of UI elements that inherit from **Control** and :ref:`Container<class_Container>` nodes.
+Per ulteriori informazioni sul sistema di interfaccia utente di Godot, ancore, offset e contenitori, consulta i tutorial al riguardo nel manuale. Per creare interfacce utente flessibili, avrai bisogno di un misto di elementi dell'UI che ereditano dai nodi **Control** e :ref:`Container<class_Container>`.
 
-\ **Note:** Since both :ref:`Node2D<class_Node2D>` and **Control** inherit from :ref:`CanvasItem<class_CanvasItem>`, they share several concepts from the class such as the :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` and :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` properties.
+\ **Nota:** Poiché sia :ref:`Node2D<class_Node2D>` sia **Control** ereditano da :ref:`CanvasItem<class_CanvasItem>`, essi condividono diversi concetti della classe come le proprietà :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` e :ref:`CanvasItem.visible<class_CanvasItem_property_visible>`.
 
-\ **User Interface nodes and input**\ 
+\ **Nodi e input per l'interfaccia utente**\ 
 
-Godot propagates input events via viewports. Each :ref:`Viewport<class_Viewport>` is responsible for propagating :ref:`InputEvent<class_InputEvent>`\ s to their child nodes. As the :ref:`SceneTree.root<class_SceneTree_property_root>` is a :ref:`Window<class_Window>`, this already happens automatically for all UI elements in your game.
+Godot propaga gli eventi di input tramite le viewport. Ogni :ref:`Viewport<class_Viewport>` è responsabile della propagazione degli :ref:`InputEvent<class_InputEvent>` ai propri nodi figlio. Poiché :ref:`SceneTree.root<class_SceneTree_property_root>` è una :ref:`Window<class_Window>`, ciò avviene automaticamente per tutti gli elementi dell'UI nel tuo gioco.
 
-Input events are propagated through the :ref:`SceneTree<class_SceneTree>` from the root node to all child nodes by calling :ref:`Node._input()<class_Node_private_method__input>`. For UI elements specifically, it makes more sense to override the virtual method :ref:`_gui_input()<class_Control_private_method__gui_input>`, which filters out unrelated input events, such as by checking z-order, :ref:`mouse_filter<class_Control_property_mouse_filter>`, focus, or if the event was inside of the control's bounding box.
+Gli eventi di input vengono propagati tramite :ref:`SceneTree<class_SceneTree>` dal nodo radice a tutti i nodi figlio chiamando :ref:`Node._input()<class_Node_private_method__input>`. Per gli elementi UI in particolare, ha più senso sovrascrivere il metodo virtuale :ref:`_gui_input()<class_Control_private_method__gui_input>`, che filtra gli eventi di input non correlati, ad esempio verificando l'ordine z, :ref:`mouse_filter<class_Control_property_mouse_filter>`, focus o se l'evento era all'interno del riquadro di delimitazione del controllo.
 
-Call :ref:`accept_event()<class_Control_method_accept_event>` so no other node receives the event. Once you accept an input, it becomes handled so :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` will not process it.
+Chiama :ref:`accept_event()<class_Control_method_accept_event>` in modo che nessun altro nodo riceva l'evento. Una volta accettato un input, questo viene gestito in modo che :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` non lo elabori.
 
-Only one **Control** node can be in focus. Only the node in focus will receive events. To get the focus, call :ref:`grab_focus()<class_Control_method_grab_focus>`. **Control** nodes lose focus when another node grabs it, or if you hide the node in focus. Focus will not be represented visually if gained via mouse/touch input, only appearing with keyboard/gamepad input (for accessibility), or via :ref:`grab_focus()<class_Control_method_grab_focus>`.
+Solo un nodo **Control** può essere in focus. Solo il nodo in focus riceverà gli eventi. Per ottenere il focus, chiama :ref:`grab_focus()<class_Control_method_grab_focus>`. I nodi **Control** perdono il focus quando un altro nodo lo ottiene o se nascondi il nodo in focus. Imposta :ref:`mouse_filter<class_Control_property_mouse_filter>` su :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` per dire a un nodo **Control** di ignorare gli eventi del mouse o di tocco. Ne avrai bisogno se posizioni un'icona sopra un pulsante.
 
-Set :ref:`mouse_filter<class_Control_property_mouse_filter>` to :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` to tell a **Control** node to ignore mouse or touch events. You'll need it if you place an icon on top of a button.
+Imposta :ref:`mouse_filter<class_Control_property_mouse_filter>` su :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` per dire a un nodo **Control** di ignorare gli eventi del mouse o di tocco. Sarà necessario se si posiziona un'icona sopra un pulsante.
 
-\ :ref:`Theme<class_Theme>` resources change the control's appearance. The :ref:`theme<class_Control_property_theme>` of a **Control** node affects all of its direct and indirect children (as long as a chain of controls is uninterrupted). To override some of the theme items, call one of the ``add_theme_*_override`` methods, like :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>`. You can also override theme items in the Inspector.
+Le risorse :ref:`Theme<class_Theme>` cambiano l'aspetto del Control. Il :ref:`theme<class_Control_property_theme>` di un **Control** influisce su tutti i suoi figli diretti e indiretti (purché una catena di controlli non sia interrotta). Per sovrascrivere alcuni elementi del tema, chiama uno dei metodi ``add_theme_*_override``, come :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>`. È possibile anche sovrascrivere elementi del tema nell'Ispettore.
 
-\ **Note:** Theme items are *not* :ref:`Object<class_Object>` properties. This means you can't access their values using :ref:`Object.get()<class_Object_method_get>` and :ref:`Object.set()<class_Object_method_set>`. Instead, use the ``get_theme_*`` and ``add_theme_*_override`` methods provided by this class.
+\ **Nota:** Gli elementi del tema *non* sono proprietà :ref:`Object<class_Object>`. Ciò significa che non è possibile accedere ai loro valori attraverso :ref:`Object.get()<class_Object_method_get>` e :ref:`Object.set()<class_Object_method_set>`. Invece, usa i metodi ``get_theme_*`` e ``add_theme_*_override`` forniti da questa classe.
 
 .. rst-class:: classref-introduction-group
 
@@ -49,7 +49,7 @@ Tutorial
 
 - :doc:`Galleria dei nodi di controllo <../tutorials/ui/control_node_gallery>`
 
-- :doc:`Molteplici risoluzioni <../tutorials/rendering/multiple_resolutions>`
+- :doc:`Risoluzioni multiple <../tutorials/rendering/multiple_resolutions>`
 
 - `Tutte le demo d'interfaccia grafica <https://github.com/godotengine/godot-demo-projects/tree/master/gui>`__
 
@@ -448,7 +448,7 @@ Emesso quando il nodo riceve un :ref:`InputEvent<class_InputEvent>`.
 
 **maximum_size_changed**\ (\ ) :ref:`🔗<class_Control_signal_maximum_size_changed>`
 
-Emitted when the node's maximum size changes.
+Emesso quando le dimensioni massime del nodo cambiano.
 
 .. rst-class:: classref-item-separator
 
@@ -490,7 +490,7 @@ Emesso quando il cursore del mouse esce dall'area visibile del controllo (o di q
 
 \ **Nota:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` non influenza quale Controllo riceve il segnale.
 
-\ **Nota:** Se vuoi controllare se il mouse ha davvero lasciato l'area, ignorando tutti i nodi superiori, puoi usare codice come questo:
+\ **Nota:** Se vuoi verificare se il mouse ha davvero lasciato l'area, ignorando tutti i nodi superiori, puoi usare codice come questo:
 
 ::
 
@@ -647,7 +647,7 @@ Impedisce al controllo di ricevere gli input del mouse. :ref:`get_mouse_filter_w
 
 :ref:`MouseBehaviorRecursive<enum_Control_MouseBehaviorRecursive>` **MOUSE_BEHAVIOR_ENABLED** = ``2``
 
-Allows the control to receive mouse input, depending on the :ref:`mouse_filter<class_Control_property_mouse_filter>`. This can be used to ignore the parent's :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>`. :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>` will return the :ref:`mouse_filter<class_Control_property_mouse_filter>`.
+Consente al controllo di ricevere gli input del mouse, a seconda di :ref:`mouse_filter<class_Control_property_mouse_filter>`. Può servire per ignorare il :ref:`mouse_behavior_recursive<class_Control_property_mouse_behavior_recursive>` del padre. :ref:`get_mouse_filter_with_override()<class_Control_method_get_mouse_filter_with_override>` restituirà :ref:`mouse_filter<class_Control_property_mouse_filter>`.
 
 .. rst-class:: classref-item-separator
 
@@ -713,7 +713,7 @@ Mostra il cursore del mouse del sistema occupato quando l'utente passa il mouse 
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_DRAG** = ``6``
 
-Mostra il cursore del mouse del sistema di trascinamento, spesso un pugno chiuso o un simbolo a croce, quando l'utente passa il mouse sul nodo. Comunica all'utente che sta trascinando un elemento, come un nodo nel pannello di Scena.
+Mostra il cursore del mouse del sistema di trascinamento, spesso un pugno chiuso o un simbolo a croce, quando l'utente passa il mouse sul nodo. Comunica all'utente che sta trascinando un elemento, come un nodo nel pannello Scena.
 
 .. _class_Control_constant_CURSOR_CAN_DROP:
 
@@ -721,7 +721,7 @@ Mostra il cursore del mouse del sistema di trascinamento, spesso un pugno chiuso
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_CAN_DROP** = ``7``
 
-Mostra il cursore del mouse del sistema di rilascio quando l'utente passa il mouse sul nodo. Può essere una mano aperta. Indica all'utente che può rilasciare un oggetto che sta afferrando, come un nodo nel pannello di Scena.
+Mostra il cursore del mouse del sistema di rilascio quando l'utente passa il mouse sul nodo. Può essere una mano aperta. Indica all'utente che può rilasciare un oggetto che sta afferrando, come un nodo nel pannello Scena.
 
 .. _class_Control_constant_CURSOR_FORBIDDEN:
 
@@ -1089,7 +1089,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-Il controllo si espanderà verso sinistra o verso l'alto per compensare, se la sua dimensione minima diventa maggiore della dimensione attuale sul rispettivo asse.
+The control will grow to the left or top to make up if its minimum size is changed to be greater than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1097,7 +1097,7 @@ Il controllo si espanderà verso sinistra o verso l'alto per compensare, se la s
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-Il controllo si espanderà verso destra o verso il basso per compensare, se la sua dimensione minima diventa maggiore della dimensione attuale sul rispettivo asse.
+The control will grow to the right or bottom to make up if its minimum size is changed to be greater than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1105,7 +1105,7 @@ Il controllo si espanderà verso destra o verso il basso per compensare, se la s
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-Il controllo si espanderà verso entrambe le direzioni ugualmente per compensare, se la sua dimensione minima diventa maggiore della dimensione attuale.
+The control will grow in both directions equally to make up if its minimum size is changed to be greater than its current size.
 
 .. rst-class:: classref-item-separator
 
@@ -1123,7 +1123,7 @@ enum **Anchor**: :ref:`🔗<enum_Control_Anchor>`
 
 :ref:`Anchor<enum_Control_Anchor>` **ANCHOR_BEGIN** = ``0``
 
-Aggancia uno dei 4 lati di ancoraggio all'origine del ``Rect`` del nodo, in alto a sinistra. Usalo con una delle variabili membro ``anchor_*``, come :ref:`anchor_left<class_Control_property_anchor_left>`. Per cambiare tutti e 4 gli ancoraggi contemporaneamente, usa :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+Aggancia uno dei 4 lati di ancoraggio all'origine del ``Rect`` del nodo, in alto a sinistra. Usalo con una delle variabili membro ``anchor_*``, come :ref:`anchor_left<class_Control_property_anchor_left>`. Per cambiare tutti e 4 gli ancoraggi alla volta, usa :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
 
 .. _class_Control_constant_ANCHOR_END:
 
@@ -1131,7 +1131,7 @@ Aggancia uno dei 4 lati di ancoraggio all'origine del ``Rect`` del nodo, in alto
 
 :ref:`Anchor<enum_Control_Anchor>` **ANCHOR_END** = ``1``
 
-Aggancia uno dei 4 lati di ancoraggio alla fine del ``Rect`` del nodo, in basso a destra. Usalo con una delle variabili membro ``anchor_*``, come :ref:`anchor_left<class_Control_property_anchor_left>`. Per cambiare tutti e 4 gli ancoraggi contemporaneamente, usa :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+Aggancia uno dei 4 lati di ancoraggio alla fine del ``Rect`` del nodo, in basso a destra. Usalo con una delle variabili membro ``anchor_*``, come :ref:`anchor_left<class_Control_property_anchor_left>`. Per cambiare tutti e 4 gli ancoraggi alla volta, usa :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1625,15 +1625,15 @@ Abilita se il rendering dei figli basati su :ref:`CanvasItem<class_CanvasItem>` 
 - |void| **set_custom_maximum_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_custom_maximum_size**\ (\ )
 
-The maximum size of this Control's bounding rectangle. If set to a value greater than or equal to ``(0, 0)``, the node's bounding rectangle will never exceed this size. A value below ``(0, 0)`` means there is no maximum size.
+Le dimensioni massime del rettangolo di delimitazione di questo Control. Se impostate su un valore maggiore o uguale a ``(0, 0)``, il rettangolo di delimitazione del nodo non supererà mai queste dimensioni. Un valore inferiore a ``(0, 0)`` indica che ci sono dimensioni massime.
 
-\ **Note:** The final effective maximum size may be subject to parent Container sizing and propagated maximum sizes. See also: :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
+\ **Nota:** Le dimensioni massime effettive finale possono essere soggette alle dimensioni del Container padre e alle dimensioni massime propagate. Vedi anche: :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
 
-\ **Note:** Not all **Control** subtypes handle a custom maximum size gracefully, which may lead to unexpected behavior if the control's contents exceed this size.
+\ **Nota:** Non tutti i sottotipi di **Control** gestiscono correttamente le dimensioni massime personalizzate, il che potrebbe portare a comportamenti imprevisti se il contenuto del controllo supera queste dimensioni.
 
-\ **Note:** This value has priority over :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`. For example, if you set :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` to ``(100, 100)`` and :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` to ``(200, 200)``, the resulting size will be ``(100, 100)``.
+\ **Nota:** Questo valore ha la priorità su :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`. Ad esempio, se si imposta :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` su ``(100, 100)`` e :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` su ``(200, 200)``, le dimensioni risultanti saranno ``(100, 100)``.
 
-\ **Note:** It is recommended to use :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` instead of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` when using this property, as the former respects maximum size limits when calculating the minimum size, while the latter does not.
+\ **Nota:** Si consiglia di usare :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` anziché :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` quando si usa questa proprietà, poiché il primo rispetta i limiti delle dimensioni massime per calcolare le dimensioni minime, mentre il secondo no.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,7 +1825,7 @@ Posizione globale del nodo, relativa al mondo (solitamente relativa al :ref:`Can
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-Controlla la direzione sull'asse orizzontale in cui il controllo dovrebbe crescere se la sua dimensione minima orizzontale è modificata per essere maggiore della sua dimensione attuale, affinché il controllo sia largo almeno quanto la larghezza minima.
+Controls the direction on the horizontal axis in which the control should grow if its horizontal minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1842,7 @@ Controlla la direzione sull'asse orizzontale in cui il controllo dovrebbe cresce
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-Controlla la direzione sull'asse verticale in cui il controllo dovrebbe crescere se la sua dimensione minima orizzontale è modificata per essere maggiore della sua dimensione attuale, affinché il controllo sia alto almeno quanto l'altezza minima.
+Controls the direction on the vertical axis in which the control should grow if its vertical minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
 
 .. rst-class:: classref-item-separator
 
@@ -2045,7 +2045,7 @@ Gli offset sono spesso gestiti da uno o più nodi :ref:`Container<class_Containe
 - |void| **set_offset_transform_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_offset_transform_enabled**\ (\ )
 
-If ``true``, applies all offset transform properties. Otherwise, no offset transform is applied and the properties have no effect.
+Se ``true``, sono applicate tutte le proprietà di trasformazione di offset. Se non, nessuna trasformazione di offset è applicata e le proprietà non hanno alcun effetto.
 
 .. rst-class:: classref-item-separator
 
@@ -2062,11 +2062,11 @@ If ``true``, applies all offset transform properties. Otherwise, no offset trans
 - |void| **set_offset_transform_pivot**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_pivot**\ (\ )
 
-Pivot used by :ref:`offset_transform_rotation<class_Control_property_offset_transform_rotation>` and :ref:`offset_transform_scale<class_Control_property_offset_transform_scale>` in absolute units.
+Il perno, o punto di rotazione, utilizzato da :ref:`offset_transform_rotation<class_Control_property_offset_transform_rotation>` e :ref:`offset_transform_scale<class_Control_property_offset_transform_scale>`, in unità assolute.
 
-The final pivot position is the combined value of this property and :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
+La posizione finale del perno è il valore combinato di questa proprietà e di :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Non ha effetto a meno che :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` non sia ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2083,11 +2083,11 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_pivot_ratio**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_pivot_ratio**\ (\ )
 
-Same as :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` but expressed in units relative to the **Control** :ref:`size<class_Control_property_size>` where ``Vector2(0, 0)`` is the top-left corner of this control, and ``Vector2(1, 1)`` is its bottom-right corner.
+Come :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>`, ma espresso in unità relative alle dimensioni del **Control**, dove ``Vector2(0, 0)`` rappresenta l'angolo superiore sinistro di questo controllo e ``Vector2(1, 1)`` il suo angolo inferiore destro.
 
-The final pivot position is the combined value of this property and :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>`.
+La posizione finale del perno è il valore combinato di questa proprietà e di :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Non ha effetto a meno che :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` non sia impostato su ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2104,9 +2104,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_position**\ (\ )
 
-Position offset in absolute units. The final offset is the combined value of this property and :ref:`offset_transform_position_ratio<class_Control_property_offset_transform_position_ratio>`.
+Offset di posizione in unità assolute. L'offset finale è il valore combinato di questa proprietà e di :ref:`offset_transform_position_ratio<class_Control_property_offset_transform_position_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Non ha effetto a meno che :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` non sia ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2123,11 +2123,11 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_position_ratio**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_position_ratio**\ (\ )
 
-Same as :ref:`offset_transform_position<class_Control_property_offset_transform_position>` but expressed in units relative to the **Control** :ref:`size<class_Control_property_size>` where ``Vector2(0, 0)`` is the top-left corner of this control, and ``Vector2(1, 1)`` is its bottom-right corner.
+Come :ref:`offset_transform_position<class_Control_property_offset_transform_position>`, ma espresso in unità relative alle dimensioni del **Control**, dove ``Vector2(0, 0)`` rappresenta l'angolo superiore sinistro di questo controllo e ``Vector2(1, 1)`` il suo angolo inferiore destro.
 
-The final offset is the combined value of this property and :ref:`offset_transform_position<class_Control_property_offset_transform_position>`.
+L'offset effettivo è il valore combinato di questa proprietà e di :ref:`pivot_offset<class_Control_property_pivot_offset>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Non ha effetto a meno che :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` non sia impostato su ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2144,9 +2144,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_rotation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_offset_transform_rotation**\ (\ )
 
-Rotation offset. The rotation pivot is defined by :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` and :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
+Offset di rotazione. Il perno di rotazione è definito da :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` e :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Non ha effetto a meno che :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` non sia ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2163,9 +2163,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_scale**\ (\ )
 
-Scale offset. The scale pivot is defined by :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` and :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
+Offset di scala. Il perno della scala è definito da :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` e :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Non ha effetto a meno che :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` non sia ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2182,11 +2182,11 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_visual_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_offset_transform_visual_only**\ (\ )
 
-If ``true``, the offset transforms is only applied visually and does not affect input. In other words, this Control will still receive input events at its original location before the offset transform is applied.
+Se ``true``, la trasformazione di offset è applicata solo visivamente e non influirà sull'input. In altre parole, questo Control continuerà a ricevere gli eventi di input nella sua posizione originale prima di aver applicato la trasformazione di offset.
 
-If ``false``, the entire transform of this Control is affected and input events will register where the Control is visually.
+Se impostato su ``false``, l'intera trasformazione di questo Control è influenzata e gli eventi di input saranno registrati dove si trova visivamente il Control.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+Non ha alcun effetto a meno che :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` non sia impostato su ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2222,9 +2222,9 @@ L'offset effettivo è il valore combinato di questa proprietà e di :ref:`pivot_
 - |void| **set_pivot_offset_ratio**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_pivot_offset_ratio**\ (\ )
 
-Same as :ref:`pivot_offset<class_Control_property_pivot_offset>`, but expressed as uniform vector, where ``Vector2(0, 0)`` is the top-left corner of this control, and ``Vector2(1, 1)`` is its bottom-right corner. Set this property to ``Vector2(0.5, 0.5)`` to pivot around this control's center.
+Come :ref:`pivot_offset<class_Control_property_pivot_offset>`, ma espresso come vettore uniforme, dove ``Vector2(0, 0)`` rappresenta l'angolo superiore sinistro di questo controllo e ``Vector2(1, 1)`` il suo angolo inferiore destro. Imposta questa proprietà su ``Vector2(0.5, 0.5)`` per ruotare attorno al centro di questo controllo.
 
-The actual offset is the combined value of this property and :ref:`pivot_offset<class_Control_property_pivot_offset>`.
+L'offset effettivo è il valore combinato di questa proprietà e di :ref:`pivot_offset<class_Control_property_pivot_offset>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2257,7 +2257,7 @@ La posizione del nodo, relativa al nodo che lo contiene. Corrisponde all'angolo 
 - |void| **set_propagate_maximum_size**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_propagating_maximum_size**\ (\ )
 
-If ``true``, this Control's children will use the value returned by :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>` in their own size calculations.
+Se ``true``, i figli di questo Control utilizzeranno il valore restituito da :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>` nei propri calcoli di dimensioni.
 
 .. rst-class:: classref-item-separator
 
@@ -2459,7 +2459,7 @@ Quando è impostata, questa proprietà assegna la priorità più alta al tipo de
 - |void| **set_tooltip_auto_translate_mode**\ (\ value\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ )
 - :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_tooltip_auto_translate_mode**\ (\ )
 
-Definisce se il testo del tooltip deve cambiare automaticamente nella sua versione tradotta a seconda delle impostazioni locali attuali. Utilizza la stessa modalità di traduzione automatica di questo controllo quando impostato su :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`.
+Definisce se il testo del tooltip deve passare automaticamente alla sua versione tradotta a seconda della localizzazione attuale. Utilizza la stessa modalità di traduzione automatica di questo controllo quando impostato su :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`.
 
 \ **Nota:** I tooltip personalizzati tramite :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` non utilizzano automaticamente questa modalità di traduzione automatica.
 
@@ -2522,7 +2522,7 @@ Il popup del tooltip utilizzerà un'implementazione predefinita o una personaliz
 - |void| **set_translation_context**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_translation_context**\ (\ )
 
-The translation context used when translating this control's displayed text, if it has any. Also used when generating translation templates.
+Il contesto di traduzione utilizzato per tradurre il testo visualizzato da questo controllo, se presente. Serve anche per generare i modelli di traduzione.
 
 .. rst-class:: classref-section-separator
 
@@ -2563,16 +2563,16 @@ Questo metodo dovrebbe essere utilizzato solo per verificare i dati. Elabora i d
  .. code-tab:: gdscript
 
     func _can_drop_data(position, data):
-        # Controlla la posizione se ti interessa
-        # Altrimenti, controlla solo i dati
+        # Verifica la posizione se ti interessa
+        # Altrimenti, verifica solo i dati
         return typeof(data) == TYPE_DICTIONARY and data.has("previsto")
 
  .. code-tab:: csharp
 
     public override bool _CanDropData(Vector2 atPosition, Variant data)
     {
-        // Controlla la posizione se ti interessa
-        // Altrimenti, controlla solo i dati
+        // Verifica la posizione se ti interessa
+        // Altrimenti, verifica solo i dati
         return data.VariantType == Variant.Type.Dictionary && data.AsGodotDictionary().ContainsKey("previsto");
     }
 
@@ -2724,9 +2724,9 @@ Se non sovrascritto, il valore predefinito è :ref:`Vector2.ZERO<class_Vector2_c
 
 :ref:`String<class_String>` **_get_tooltip**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_tooltip>`
 
-Virtual method to be implemented by the user. Returns the tooltip text for the position ``at_position`` in the control's local coordinates, which will typically appear when the cursor is resting over this control. See :ref:`get_tooltip()<class_Control_method_get_tooltip>`.
+Metodo virtuale da implementare dall'utente. Restituisce il testo del tooltip per la posizione ``at_position`` nelle coordinate locali del controllo, che in genere apparirà quando il cursore si trova su questo controllo. Vedi :ref:`get_tooltip()<class_Control_method_get_tooltip>`.
 
-\ **Note:** If this method returns an empty :ref:`String<class_String>` and :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` is not overridden, no tooltip is displayed.
+\ **Nota:** Se questo metodo restituisce una :ref:`String<class_String>` vuota e :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` non è sovrascritto, nessun tooltip viene visualizzato.
 
 .. rst-class:: classref-item-separator
 
@@ -2738,7 +2738,7 @@ Virtual method to be implemented by the user. Returns the tooltip text for the p
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **_get_tooltip_auto_translate_mode_at**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_tooltip_auto_translate_mode_at>`
 
-Return the auto-translation mode at the given ``at_position``. If not implemented, the :ref:`tooltip_auto_translate_mode<class_Control_property_tooltip_auto_translate_mode>` property will be used instead.
+Restituisce la modalità di traduzione automatica nella posizione specificata da ``at_position``. Se non implementato, verrà utilizzata la proprietà :ref:`tooltip_auto_translate_mode<class_Control_property_tooltip_auto_translate_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2803,11 +2803,11 @@ Se ``event`` eredita :ref:`InputEventMouse<class_InputEventMouse>`, questo metod
 
 :ref:`bool<class_bool>` **_has_point**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__has_point>`
 
-Virtual method to be implemented by the user. Returns whether the given ``point`` is inside this control.
+Metodo virtuale da implementare dall'utente. Restituisce se il punto ``point`` è all'interno di questo controllo.
 
-If not overridden, default behavior is checking if the point is within the control's Rect.
+Se non sovrascritto, il comportamento predefinito è verificare se il punto è all'interno del rettangolo del controllo.
 
-\ **Note:** If you want to check if a point is inside the control, you can use ``Rect2(Vector2.ZERO, size).has_point(point)``.
+\ **Nota:** Se vuoi verificare se un punto è all'interno del controllo, puoi usare ``Rect2(Vector2.ZERO, size).has_point(point)``.
 
 .. rst-class:: classref-item-separator
 
@@ -2819,19 +2819,19 @@ If not overridden, default behavior is checking if the point is within the contr
 
 :ref:`Object<class_Object>` **_make_custom_tooltip**\ (\ for_text\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__make_custom_tooltip>`
 
-Virtual method to be implemented by the user. Returns a **Control** node that should be used as a tooltip instead of the default one. ``for_text`` is the return value of :ref:`get_tooltip()<class_Control_method_get_tooltip>`.
+Metodo virtuale da implementare dall'utente. Restituisce un nodo **Control** che dovrebbe essere usato come tooltip invece di quello predefinito. ``for_text`` è il valore restituito da :ref:`get_tooltip()<class_Control_method_get_tooltip>`.
 
-The returned node must be of type **Control** or Control-derived. It can have child nodes of any type. It is freed when the tooltip disappears, so make sure you always provide a new instance (if you want to use a pre-existing node from your scene tree, you can duplicate it and pass the duplicated instance). When ``null`` or a non-Control node is returned, the default tooltip will be used instead.
+Il nodo restituito deve essere di tipo **Control** o derivato da Control. Può avere nodi figlio di qualsiasi tipo. Viene liberato quando il tooltip scompare, quindi assicurati di fornire sempre una nuova istanza (se vuoi usare un nodo già esistente dal tuo albero di scene, puoi duplicarlo e passare l'istanza duplicata). Quando viene restituito ``null`` o un nodo non-Control, verrà usato il tooltip predefinito.
 
-The returned node will be added as child to a :ref:`PopupPanel<class_PopupPanel>`, so you should only provide the contents of that panel. That :ref:`PopupPanel<class_PopupPanel>` can be themed using :ref:`Theme.set_stylebox()<class_Theme_method_set_stylebox>` for the type ``"TooltipPanel"`` (see :ref:`tooltip_text<class_Control_property_tooltip_text>` for an example).
+Il nodo restituito sarà aggiunto come figlio a un :ref:`PopupPanel<class_PopupPanel>`, quindi dovresti fornire solo il contenuto di quel pannello. Tale :ref:`PopupPanel<class_PopupPanel>` può essere tematizzato tramite :ref:`Theme.set_stylebox()<class_Theme_method_set_stylebox>` per il tipo ``"TooltipPanel"`` (vedi :ref:`tooltip_text<class_Control_property_tooltip_text>` per un esempio).
 
-\ **Note:** The tooltip is shrunk to minimal size. If you want to ensure it's fully visible, you might want to set its :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` to some non-zero value.
+\ **Nota:** Il tooltip è ridotto alle sue dimensioni minime. Se vuoi assicurarti che sia completamente visibile, potresti voler impostare il suo :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` su un valore diverso da zero.
 
-\ **Note:** The node (and any relevant children) should have their :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` set to ``true`` when returned, otherwise, the viewport that instantiates it will not be able to calculate its minimum size reliably.
+\ **Nota:** Il nodo (e tutti i figli relativi) dovrebbero avere :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` impostato su ``true`` quando restituito, altrimenti, la viewport che lo istanzia non sarà in grado di calcolare la sue dimensioni minime in modo affidabile.
 
-\ **Note:** If overridden, this method is called even if :ref:`get_tooltip()<class_Control_method_get_tooltip>` returns an empty string. When this happens with the default tooltip, it is not displayed. To copy this behavior, return ``null`` in this method when ``for_text`` is empty.
+\ **Nota:** Se sovrascritto, questo metodo viene chiamato anche se :ref:`get_tooltip()<class_Control_method_get_tooltip>` restituisce una stringa vuota. Quando ciò accade con il tooltip predefinito, esso non viene visualizzato. Per copiare questo comportamento, restituisci ``null`` in questo metodo quando ``for_text`` è vuoto.
 
-\ **Example:** Use a constructed node as a tooltip:
+\ **Esempio:** Utilizza un nodo costruito come tooltip:
 
 
 .. tabs::
@@ -2854,7 +2854,7 @@ The returned node will be added as child to a :ref:`PopupPanel<class_PopupPanel>
 
 
 
-\ **Example:** Use a scene instance as a tooltip:
+\ **Esempio:** Utilizza un'istanza di una scena come tooltip:
 
 
 .. tabs::
@@ -3179,11 +3179,11 @@ Restituisce :ref:`offset_left<class_Control_property_offset_left>` e :ref:`offse
 
 :ref:`Vector2<class_Vector2>` **get_bound_minimum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_bound_minimum_size>`
 
-Returns the bound value of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` by :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
+Restituisce il valore limitato di :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` per :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
 
-This value is the true minimum size of the container, as the maximum size has priority over the minimum size.
+Questo valore rappresenta la dimensione minima effettiva del contenitore, poiché la dimensione massima ha la priorità sulla dimensione minima.
 
-For example, if the combined minimum size is (100, 100) and the combined maximum size is (50, 150), the bound minimum size will be (50, 100).
+Ad esempio, se la dimensione minima combinata è (100, 100) e la dimensione massima combinata è (50, 150), la dimensione minima limite sarà (50, 100).
 
 .. rst-class:: classref-item-separator
 
@@ -3195,7 +3195,7 @@ For example, if the combined minimum size is (100, 100) and the combined maximum
 
 :ref:`Vector2<class_Vector2>` **get_combined_maximum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_combined_maximum_size>`
 
-Returns the combined maximum size from :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` and :ref:`get_maximum_size()<class_Control_method_get_maximum_size>`, as well as the :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` of this node's parent if it is a Control node with :ref:`propagate_maximum_size<class_Control_property_propagate_maximum_size>` set to ``true``.
+Restituisce la dimensione massima combinata da :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` e :ref:`get_maximum_size()<class_Control_method_get_maximum_size>`, nonché la :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` del genitore di questo nodo se è un nodo Control con :ref:`propagate_maximum_size<class_Control_property_propagate_maximum_size>` impostato su ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -3207,7 +3207,7 @@ Returns the combined maximum size from :ref:`custom_maximum_size<class_Control_p
 
 :ref:`Vector2<class_Vector2>` **get_combined_minimum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_combined_minimum_size>`
 
-Returns the combined minimum size from :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` and :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`.
+Restituisce le dimensioni minime combinate da :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` e :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3219,7 +3219,7 @@ Returns the combined minimum size from :ref:`custom_minimum_size<class_Control_p
 
 :ref:`Vector2<class_Vector2>` **get_combined_pivot_offset**\ (\ ) |const| :ref:`🔗<class_Control_method_get_combined_pivot_offset>`
 
-Returns the combined value of :ref:`pivot_offset<class_Control_property_pivot_offset>` and :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>`, in pixels. The ratio is multiplied by the control's size.
+Restituisce il valore combinato di :ref:`pivot_offset<class_Control_property_pivot_offset>` e :ref:`pivot_offset_ratio<class_Control_property_pivot_offset_ratio>`, in pixel. Il rapporto è moltiplicato per le dimensioni del controllo.
 
 .. rst-class:: classref-item-separator
 
@@ -3562,11 +3562,11 @@ Vedi :ref:`get_theme_color()<class_Control_method_get_theme_color>` per i dettag
 
 :ref:`String<class_String>` **get_tooltip**\ (\ at_position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) |const| :ref:`🔗<class_Control_method_get_tooltip>`
 
-Returns the tooltip text for the position ``at_position`` in the control's local coordinates, which will typically appear when the cursor is resting over this control. By default, it returns :ref:`tooltip_text<class_Control_property_tooltip_text>`.
+Restituisce il testo del tooltip per la posizione ``at_position`` nelle coordinate locali del controllo, che in genere appare quando il cursore del mouse si trova su questo controllo. Come predefinito, restituisce :ref:`tooltip_text<class_Control_property_tooltip_text>`.
 
-You can override :ref:`_get_tooltip()<class_Control_private_method__get_tooltip>` to implement custom behavior for this method.
+È possibile sovrascrivere :ref:`_get_tooltip()<class_Control_private_method__get_tooltip>` per personalizzare il comportamento di questo metodo.
 
-\ **Note:** If this method returns an empty :ref:`String<class_String>` and :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` is not overridden, no tooltip is displayed.
+\ **Nota:** Se questo metodo restituisce una :ref:`String<class_String>` vuota e :ref:`_make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>` non è sovrascritto, non viene visualizzato alcun tooltip.
 
 .. rst-class:: classref-item-separator
 
@@ -3607,11 +3607,11 @@ Crea un :ref:`InputEventMouseButton<class_InputEventMouseButton>` che tenta di c
 
 |void| **grab_focus**\ (\ hide_focus\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Control_method_grab_focus>`
 
-Steal the focus from another control and become the focused control (see :ref:`focus_mode<class_Control_property_focus_mode>`).
+Ruba il focus da un altro controllo e diventa il controllo focalizzato (vedi :ref:`focus_mode<class_Control_property_focus_mode>`).
 
-If ``hide_focus`` is ``true``, the control will not visually show its focused state. Has no effect for :ref:`LineEdit<class_LineEdit>` and :ref:`TextEdit<class_TextEdit>` when :ref:`ProjectSettings.gui/common/show_focus_state_on_pointer_event<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>` is set to ``Text Input Controls``, or for any control when it is set to ``Always``.
+Se ``hide_focus`` è ``true``, il controllo non mostrerà visivamente il suo stato focalizzato. Non ha effetto su :ref:`LineEdit<class_LineEdit>` e :ref:`TextEdit<class_TextEdit>` quando :ref:`ProjectSettings.gui/common/show_focus_state_on_pointer_event<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>` è impostato su ``Text Input Controls``, né su qualsiasi controllo quando è impostato su ``Always``.
 
-\ **Note:** Using this method together with :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>` makes it more reliable, especially when called inside :ref:`Node._ready()<class_Node_private_method__ready>`.
+\ **Nota:** L'utilizzo di questo metodo insieme a :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>` lo rende più affidabile, soprattutto quando viene chiamato all'interno di :ref:`Node._ready()<class_Node_private_method__ready>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3623,9 +3623,9 @@ If ``hide_focus`` is ``true``, the control will not visually show its focused st
 
 :ref:`bool<class_bool>` **has_focus**\ (\ ignore_hidden_focus\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Control_method_has_focus>`
 
-Returns ``true`` if this is the current focused control. See :ref:`focus_mode<class_Control_property_focus_mode>`.
+Restituisce ``true`` se questo è il controllo attualmente attivo. Vedi :ref:`focus_mode<class_Control_property_focus_mode>`.
 
-If ``ignore_hidden_focus`` is ``true``, controls that have their focus hidden will always return ``false``. Hidden focus happens automatically when controls gain focus via mouse input, or manually using :ref:`grab_focus()<class_Control_method_grab_focus>` with ``hide_focus`` set to ``true``.
+Se ``ignore_hidden_focus`` è ``true``, i controlli il cui focus è nascosto restituiranno sempre ``false``. Il focus nascosto avviene automaticamente quando i controlli acquisiscono il focus tramite input del mouse, oppure manualmente tramite :ref:`grab_focus()<class_Control_method_grab_focus>` con ``hide_focus`` impostato su ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -3843,7 +3843,7 @@ Rilascia il focus. Nessun altro controllo sarà in grado di ricevere input.
 
 |void| **remove_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_color_override>`
 
-Rimuove una sostituzione locale per un :ref:`Color<class_Color>` di tema, con il nome ``name``, precedentemente aggiunto da :ref:`add_theme_color_override()<class_Control_method_add_theme_color_override>` o tramite il pannello dell'Ispettore.
+Rimuove una sostituzione locale per un :ref:`Color<class_Color>` di tema, con il nome ``name``, precedentemente aggiunto da :ref:`add_theme_color_override()<class_Control_method_add_theme_color_override>` o tramite il pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -3855,7 +3855,7 @@ Rimuove una sostituzione locale per un :ref:`Color<class_Color>` di tema, con il
 
 |void| **remove_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_constant_override>`
 
-Rimuove una sostituzione locale per una costante di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_constant_override()<class_Control_method_add_theme_constant_override>` o tramite il pannello dell'Ispettore.
+Rimuove una sostituzione locale per una costante di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_constant_override()<class_Control_method_add_theme_constant_override>` o tramite il pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -3867,7 +3867,7 @@ Rimuove una sostituzione locale per una costante di tema, con il nome ``name``, 
 
 |void| **remove_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_font_override>`
 
-Rimuove una sostituzione locale per un :ref:`Font<class_Font>` di tema, con il nome ``name``, precedentemente aggiunto da :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>` o tramite il pannello dell'Ispettore.
+Rimuove una sostituzione locale per un :ref:`Font<class_Font>` di tema, con il nome ``name``, precedentemente aggiunto da :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>` o tramite il pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -3879,7 +3879,7 @@ Rimuove una sostituzione locale per un :ref:`Font<class_Font>` di tema, con il n
 
 |void| **remove_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_font_size_override>`
 
-Rimuove una sostituzione locale per una dimensione di font :ref:`Font<class_Font>` di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_font_size_override()<class_Control_method_add_theme_font_size_override>` o tramite il pannello dell'Ispettore.
+Rimuove una sostituzione locale per una dimensione di font :ref:`Font<class_Font>` di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_font_size_override()<class_Control_method_add_theme_font_size_override>` o tramite il pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -3891,7 +3891,7 @@ Rimuove una sostituzione locale per una dimensione di font :ref:`Font<class_Font
 
 |void| **remove_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_icon_override>`
 
-Rimuove una sostituzione locale per un'icona di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_icon_override()<class_Control_method_add_theme_icon_override>` o tramite il pannello dell'Ispettore.
+Rimuove una sostituzione locale per un'icona di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_icon_override()<class_Control_method_add_theme_icon_override>` o tramite il pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -3903,7 +3903,7 @@ Rimuove una sostituzione locale per un'icona di tema, con il nome ``name``, prec
 
 |void| **remove_theme_stylebox_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_stylebox_override>`
 
-Rimuove una sostituzione locale per uno :ref:`StyleBox<class_StyleBox>` di tema, con il nome ``name``, precedentemente aggiunto da :ref:`add_theme_stylebox_override()<class_Control_method_add_theme_stylebox_override>` o tramite il pannello dell'Ispettore.
+Rimuove una sostituzione locale per uno :ref:`StyleBox<class_StyleBox>` di tema, con il nome ``name``, precedentemente aggiunto da :ref:`add_theme_stylebox_override()<class_Control_method_add_theme_stylebox_override>` o tramite il pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -4185,7 +4185,7 @@ Sposta il cursore del mouse sulla posizione ``position``, che è relativa alla p
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -896,7 +896,7 @@ La frecuencia de actualización de la pantalla para el HMD actual. Solo funciona
 - |void| **set_foveation_dynamic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_foveation_dynamic**\ (\ )
 
-If ``true``, enables dynamic foveation adjustment. The interface must be initialized before this is accessible. If enabled, foveation will automatically be adjusted between low and :ref:`foveation_level<class_OpenXRInterface_property_foveation_level>`.
+Activa el ajuste dinámico de foveación, la interfaz debe inicializarse antes de que esto sea accesible. Si está habilitada, la foveación se ajustará automáticamente entre baja y :ref:`foveation_level<class_OpenXRInterface_property_foveation_level>`.
 
 .. rst-class:: classref-item-separator
 
@@ -913,7 +913,7 @@ If ``true``, enables dynamic foveation adjustment. The interface must be initial
 - |void| **set_foveation_level**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_foveation_level**\ (\ )
 
-The foveation level, from ``0`` (off) to ``3`` (high). The interface must be initialized before this is accessible.
+El nivel de foveación, de 0 (desactivado) a 3 (alto). La interfaz debe inicializarse antes que esto sea accesible.
 
 .. rst-class:: classref-item-separator
 
@@ -930,7 +930,7 @@ The foveation level, from ``0`` (off) to ``3`` (high). The interface must be ini
 - |void| **set_foveation_with_subsampled_images**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_foveation_with_subsampled_images**\ (\ )
 
-If ``true``, enables subsampled images with foveation, which can provide a performance boost on Vulkan.
+Si es ``true``, se utiliza el submuestreo de imágenes con foveación, lo cual puede proporcionar una mejora del rendimiento en Vulkan.
 
 .. rst-class:: classref-item-separator
 

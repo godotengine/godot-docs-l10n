@@ -464,7 +464,7 @@ Contrassegna l'opzione come non classificata o testo semplice.
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_KEYWORD** = ``10``
 
-Marks the option as a keyword.
+Contrassegna l'opzione come parola chiave.
 
 .. rst-class:: classref-item-separator
 
@@ -732,7 +732,7 @@ Se ``true``, la barra laterale dei numeri di riga è disegnata. I numeri di riga
 - |void| **set_line_numbers_min_digits**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_line_numbers_min_digits**\ (\ )
 
-The minimum width in digits reserved for the line number gutter.
+La larghezza minima in cifre riservata alla barra laterale dei numeri di riga.
 
 .. rst-class:: classref-item-separator
 
@@ -928,7 +928,7 @@ Sia ``candidates`` sia il valore restituito sono un :ref:`Array<class_Array>` di
 
 |void| **_request_code_completion**\ (\ force\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_CodeEdit_private_method__request_code_completion>`
 
-Sovrascrivi questo metodo per definire cosa succede quando l'utente richiede il completamento del codice. Se ``force`` è ``true``, tutti i controlli dovrebbero essere ignorati.
+Sovrascrivi questo metodo per definire cosa succede quando l'utente richiede il completamento del codice. Se ``force`` è ``true``, tutte le verifiche dovrebbero essere ignorate.
 
 .. rst-class:: classref-item-separator
 
@@ -1570,7 +1570,7 @@ Restituisce ``true`` se la riga fornita è ridotta. Vedi anche :ref:`fold_line()
 
 |void| **join_lines**\ (\ line_ending\: :ref:`String<class_String>` = " "\ ) :ref:`🔗<class_CodeEdit_method_join_lines>`
 
-Joins all selected lines or lines containing a caret with their next line. Whitespace in between will be removed. If the next line has content, the ``line_ending`` will be inserted in between.
+Unisce tutte le righe selezionate o le righe contenenti un cursore con la loro riga successiva. Gli spazi bianchi intermedi verranno rimossi. Se la riga successiva contiene testo, verrà inserito ``line_ending`` in mezzo.
 
 .. rst-class:: classref-item-separator
 
@@ -1630,7 +1630,7 @@ Rimuove il delimitatore di stringa con la chiave d'inizio ``start_key``.
 
 |void| **request_code_completion**\ (\ force\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CodeEdit_method_request_code_completion>`
 
-Emette :ref:`code_completion_requested<class_CodeEdit_signal_code_completion_requested>`, se ``force`` è ``true`` ignorerà tutti i controlli. Altrimenti controllerà che il cursore sia in una parola o davanti a un prefisso. Ignorerà la richiesta se tutte le opzioni attuali sono di tipo percorso di file, percorso di nodo o segnale.
+Emette :ref:`code_completion_requested<class_CodeEdit_signal_code_completion_requested>`, se ``force`` è ``true`` ignorerà tutte le verifiche. Altrimenti verificherà che il cursore sia in una parola o davanti a un prefisso. Ignorerà la richiesta se tutte le opzioni attuali sono di tipo percorso di file, percorso di nodo o segnale.
 
 .. rst-class:: classref-item-separator
 
@@ -2123,7 +2123,7 @@ Imposta una :ref:`Texture2D<class_Texture2D>` personalizzata da disegnare alla f
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

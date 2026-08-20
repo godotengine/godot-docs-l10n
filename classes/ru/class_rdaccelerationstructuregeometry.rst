@@ -9,16 +9,16 @@ RDAccelerationStructureGeometry
 
 **Наследует:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Acceleration structure geometry (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+Геометрия структуры ускорения (используется :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-**RDAccelerationStructureGeometry** describes a set of triangles used as raytracing geometry in the :ref:`RenderingDevice.blas_create()<class_RenderingDevice_method_blas_create>` method.
+**RDAccelerationStructureGeometry** описывает набор треугольников, используемых в качестве геометрии для трассировки лучей в методе :ref:`RenderingDevice.blas_create()<class_RenderingDevice_method_blas_create>`.
 
-The geometry is always in triangle list form, either indexed or non-indexed. Triangle strips are not supported.
+Геометрия всегда представлена в виде списка треугольников, либо с индексацией, либо без нее. Полосы треугольников не поддерживаются.
 
 .. rst-class:: classref-reftable-group
 
@@ -68,7 +68,7 @@ The geometry is always in triangle list form, either indexed or non-indexed. Tri
 - |void| **set_flags**\ (\ value\: |bitfield|\[:ref:`AccelerationStructureGeometryFlagBits<enum_RenderingDevice_AccelerationStructureGeometryFlagBits>`\]\ )
 - |bitfield|\[:ref:`AccelerationStructureGeometryFlagBits<enum_RenderingDevice_AccelerationStructureGeometryFlagBits>`\] **get_flags**\ (\ )
 
-Flags for the geometry.
+Флаги для геометрии.
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ Flags for the geometry.
 - |void| **set_index_buffer**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_index_buffer**\ (\ )
 
-Buffer containing vertex indices. If ``null``, triangles are non-indexed.
+Буфер, содержащий индексы вершин. Если ``null``, треугольники не индексируются.
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ Buffer containing vertex indices. If ``null``, triangles are non-indexed.
 - |void| **set_index_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_index_count**\ (\ )
 
-Number of indices used by this geometry in :ref:`index_buffer<class_RDAccelerationStructureGeometry_property_index_buffer>`.
+Количество индексов, используемых данной геометрией в :ref:`index_buffer<class_RDAccelerationStructureGeometry_property_index_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Number of indices used by this geometry in :ref:`index_buffer<class_RDAccelerati
 - |void| **set_index_offset**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_index_offset**\ (\ )
 
-Byte offset of the first index in :ref:`index_buffer<class_RDAccelerationStructureGeometry_property_index_buffer>`.
+Смещение в байтах первого индекса в :ref:`index_buffer<class_RDAccelerationStructureGeometry_property_index_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Byte offset of the first index in :ref:`index_buffer<class_RDAccelerationStructu
 - |void| **set_vertex_buffer**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_vertex_buffer**\ (\ )
 
-Buffer containing vertices.
+Буфер, содержащий вершины.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Buffer containing vertices.
 - |void| **set_vertex_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_vertex_count**\ (\ )
 
-Number of vertices used by this geometry in :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
+Количество вершин, используемых данной геометрией в :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ Number of vertices used by this geometry in :ref:`vertex_buffer<class_RDAccelera
 - |void| **set_vertex_format**\ (\ value\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`\ )
 - :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **get_vertex_format**\ (\ )
 
-Format of the vertices in :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
+Формат вершин в :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Format of the vertices in :ref:`vertex_buffer<class_RDAccelerationStructureGeome
 - |void| **set_vertex_offset**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_vertex_offset**\ (\ )
 
-Byte offset of the first vertex in :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
+Смещение в байтах первой вершины в :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Byte offset of the first vertex in :ref:`vertex_buffer<class_RDAccelerationStruc
 - |void| **set_vertex_stride**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_vertex_stride**\ (\ )
 
-Number of bytes between each vertex in :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
+Количество байтов между каждой вершиной в :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

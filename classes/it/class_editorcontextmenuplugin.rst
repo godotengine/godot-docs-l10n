@@ -59,7 +59,7 @@ enum **ContextMenuSlot**: :ref:`🔗<enum_EditorContextMenuPlugin_ContextMenuSlo
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_SCENE_TREE** = ``0``
 
-Menu contestuale del pannello della Scena. :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` verrà chiamato con una lista di percorsi verso i nodi attualmente selezionati, mentre il callback d'opzione riceverà la lista dei nodi attualmente selezionati.
+Menu contestuale del pannello Scena. :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` verrà chiamato con una lista di percorsi verso i nodi attualmente selezionati, mentre il callback d'opzione riceverà la lista dei nodi attualmente selezionati.
 
 .. _class_EditorContextMenuPlugin_constant_CONTEXT_SLOT_FILESYSTEM:
 
@@ -137,7 +137,7 @@ L'array dei percorsi è vuoto se non ci sono nodi sotto il cursore. Il callback 
 
 :ref:`ContextMenuSlot<enum_EditorContextMenuPlugin_ContextMenuSlot>` **CONTEXT_SLOT_INSPECTOR_PROPERTY** = ``7``
 
-Context menu of the inspectors right-click menu. :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` will be called with an array of two items: The first will be the object's ID, the second will be the property name. An object can be retrieved from it's ID via :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` after converting it to an int. The option callback will receive the EditorProperty directly.
+Menu contestuale che appare con il clic destro nell'ispettore. :ref:`_popup_menu()<class_EditorContextMenuPlugin_private_method__popup_menu>` verrà chiamato con un array di due elementi: il primo sarà l'ID dell'oggetto, il secondo sarà il nome della proprietà. Un oggetto può essere recuperato dal suo ID tramite :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` dopo averlo convertito in un intero. Il callback di opzione riceverà direttamente EditorProperty.
 
 .. rst-class:: classref-section-separator
 
@@ -227,7 +227,7 @@ Aggiunge un sottomenu al menu contestuale dello slot specificato dell'estensione
 
 |void| **add_menu_shortcut**\ (\ shortcut\: :ref:`Shortcut<class_Shortcut>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_EditorContextMenuPlugin_method_add_menu_shortcut>`
 
-Registra una scorciatoia associata al menu contestuale dell'estensione. Questo metodo dovrebbe essere chiamato una sola volta (ad esempio nel :ref:`Object._init()<class_Object_private_method__init>` dell'estensione). ``callback`` verrà chiamato quando l'utente preme la scorciatoia ``shortcut`` mentre il contesto del menu è in effetto (ad esempio il pannello del FileSystem è in primo piano). Il callback dovrebbe accettare un singolo argomento :ref:`Array<class_Array>`; il contenuto dell'array dipende dallo slot del menu contestuale.
+Registra una scorciatoia associata al menu contestuale dell'estensione. Questo metodo dovrebbe essere chiamato una sola volta (ad esempio nel :ref:`Object._init()<class_Object_private_method__init>` dell'estensione). ``callback`` verrà chiamato quando l'utente preme la scorciatoia ``shortcut`` mentre il contesto del menu è in effetto (ad esempio il pannello Filesystem è in primo piano). Il callback dovrebbe accettare un singolo argomento :ref:`Array<class_Array>`; il contenuto dell'array dipende dallo slot del menu contestuale.
 
 ::
 
@@ -238,7 +238,7 @@ Registra una scorciatoia associata al menu contestuale dell'estensione. Questo m
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

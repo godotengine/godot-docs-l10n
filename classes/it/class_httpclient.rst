@@ -14,25 +14,25 @@ Client di protocollo di trasferimento ipertestuale di basso livello.
 Descrizione
 ----------------------
 
-Hyper-text transfer protocol client (sometimes called "User Agent"). Used to make HTTP requests to download web content, upload files and other data or to communicate with various services, among other use cases.
+Client di protocollo di trasferimento ipertestuale (talvolta chiamato "User Agent"). Utilizzato per effettuare richieste HTTP per scaricare contenuti Web, caricare file e altri dati o per comunicare con vari servizi, oltre ad altri casi d'uso.
 
-See the :ref:`HTTPRequest<class_HTTPRequest>` node for a higher-level alternative.
+Vedi il nodo :ref:`HTTPRequest<class_HTTPRequest>` per un'alternativa di livello superiore.
 
-\ **Note:** This client only needs to connect to a host once (see :ref:`connect_to_host()<class_HTTPClient_method_connect_to_host>`) to send multiple requests. Because of this, methods that take URLs usually take just the part after the host instead of the full URL, as the client is already connected to a host. See :ref:`request()<class_HTTPClient_method_request>` for a full example and to get started.
+\ **Nota:** Questo client deve connettersi a un host solo una volta (vedi :ref:`connect_to_host()<class_HTTPClient_method_connect_to_host>`) per inviare più richieste. Per questo motivo, i metodi che accettano URL di solito accettano solo la parte dopo l'host anziché l'intero URL, poiché il client è già connesso a un host. Vedi :ref:`request()<class_HTTPClient_method_request>` per un esempio completo e per iniziare.
 
-An **HTTPClient** should be reused between multiple requests or to connect to different hosts instead of creating one client per request. Supports Transport Layer Security (TLS), including server certificate verification. HTTP status codes in the 2xx range indicate success, 3xx redirection (i.e. "try again, but over here"), 4xx something was wrong with the request, and 5xx something went wrong on the server's side.
+Un **HTTPClient** dovrebbe essere riutilizzato tra più richieste o per connettersi a host diversi anziché creare un client per ogni richiesta. Supporta Transport Layer Security (TLS), inclusa la verifica del certificato del server. I codici di stato HTTP nell'intervallo 2xx indicano successo, 3xx reindirizzamento (ad esempio "riprova, ma qui"), 4xx errore nella richiesta e 5xx errore sul lato server.
 
-For more information on HTTP, see `MDN's documentation on HTTP <https://developer.mozilla.org/en-US/docs/Web/HTTP>`__ (or read `RFC 2616 <https://tools.ietf.org/html/rfc2616>`__ to get it straight from the source).
+Per maggiori informazioni su HTTP, consulta la `documentazione di MDN su HTTP <https://developer.mozilla.org/en-US/docs/Web/HTTP>`__ (o leggi `RFC 2616 <https://tools.ietf.org/html/rfc2616>`__ per ottenerla direttamente dalla fonte).
 
-\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+\ **Nota:** Quando si esporta su Android, assicurarsi di abilitare l'autorizzazione ``INTERNET`` nella preimpostazione d'esportazione Android prima di esportare il progetto o di utilizzare la distribuzione con un clic. Altrimenti, qualsiasi tipo di comunicazione di rete sarà bloccata da Android.
 
-\ **Note:** It's recommended to use transport encryption (TLS) and to avoid sending sensitive information (such as login credentials) in HTTP GET URL parameters. Consider using HTTP POST requests or HTTP headers for such information instead.
+\ **Nota:** Si consiglia di utilizzare la crittografia di trasporto (TLS) ed evitare di inviare informazioni sensibili (come le credenziali di accesso) nei parametri URL HTTP GET. Si consiglia di utilizzare richieste HTTP POST o intestazioni HTTP per tali informazioni.
 
-\ **Note:** When performing HTTP requests from a project exported to Web, keep in mind the remote server may not allow requests from foreign origins due to `CORS <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>`__. If you host the server in question, you should modify its backend to allow requests from foreign origins by adding the ``Access-Control-Allow-Origin: *`` HTTP header.
+\ **Nota:** Quando si eseguono richieste HTTP da un progetto esportato sul Web, tieni presente che il server remoto potrebbe non consentire richieste da origini straniere a causa di `CORS <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>`__. Se si ospita il server in questione, è necessario modificare il suo backend per consentire richieste da origini straniere aggiungendo l'intestazione HTTP ``Access-Control-Allow-Origin: *``.
 
-\ **Note:** TLS support is currently limited to TLSv1.2 and TLSv1.3. Attempting to connect to a server that only supports older (insecure) TLS versions will return an error.
+\ **Nota:** Il supporto TLS è attualmente limitato a TLS 1.0, TLS 1.1 e TLS 1.2. Tentare di connettersi a un server solo TLS 1.3 restituirà un errore.
 
-\ **Warning:** TLS certificate revocation and certificate pinning are currently not supported. Revoked certificates are accepted as long as they are otherwise valid. If this is a concern, you may want to use automatically managed certificates with a short validity period.
+\ **Attenzione:** La revoca del certificato TLS e il pinning del certificato non sono attualmente supportati. I certificati revocati sono accettati a patto che siano validi altrimenti. Se questo è un problema, potresti voler utilizzare certificati gestiti automaticamente con un breve periodo di validità.
 
 .. rst-class:: classref-introduction-group
 
@@ -530,7 +530,7 @@ Codice di stato HTTP ``404 Not Found``. Il server non riesce a trovare la risors
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_METHOD_NOT_ALLOWED** = ``405``
 
-Codice di stato HTTP ``405 Method Not Allowed``. Il metodo HTTP della richiesta è noto al server ma è stato disabilitato e non può essere utilizzato. Ad esempio, un'API potrebbe proibire di DELETE-ing di una risorsa. I due metodi obbligatori, GET e HEAD, non devono mai essere disabilitati e non devono restituire questo codice di errore.
+Codice di stato HTTP ``405 Method Not Allowed``. Il metodo HTTP della richiesta è noto al server ma è stato disabilitato e non può essere utilizzato. Ad esempio, un'API potrebbe proibire di DELETE-ing di una risorsa. I due metodi obbligatori, GET e HEAD, non devono mai essere disabilitati e non devono restituire questo codice d'errore.
 
 .. _class_HTTPClient_constant_RESPONSE_NOT_ACCEPTABLE:
 
@@ -634,7 +634,7 @@ Codice di stato HTTP ``417 Expectation Failed``. Non è stato possibile soddisfa
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_IM_A_TEAPOT** = ``418``
 
-Codice di stato HTTP ``418 I'm A Teapot``. Ogni tentativo di preparare il caffè con una teiera dovrebbero restituire il codice di errore "418 I'm a teapot". Il corpo dell'entità risultante POTREBBE essere corto e robusto.
+Codice di stato HTTP ``418 I'm A Teapot``. Ogni tentativo di preparare il caffè con una teiera dovrebbero restituire il codice d'errore "418 I'm a teapot". Il corpo dell'entità risultante POTREBBE essere corto e robusto.
 
 .. _class_HTTPClient_constant_RESPONSE_MISDIRECTED_REQUEST:
 
@@ -1144,7 +1144,7 @@ Il server proxy non è impostato se ``host`` è vuoto o ``port`` è -1.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

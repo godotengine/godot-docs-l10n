@@ -599,9 +599,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_DISABLED** = ``0``
 
-Disables all drop sections.
+Disabilita tutte le sezioni di rilascio.
 
-\ **Note:** This is the default flag, it has no effect when combined with other flags.
+\ **Nota:** Questo è il flag predefinito, non ha effetto se combinato con altri flag.
 
 .. _class_Tree_constant_DROP_MODE_ON_ITEM:
 
@@ -609,9 +609,9 @@ Disables all drop sections.
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_ON_ITEM** = ``1``
 
-Enables the "on item" drop section. This drop section covers the entire item.
+Abilita la sezione di rilascio "sull'elemento". Questa sezione di rilascio copre l'intero elemento.
 
-When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, this drop section halves in height and stays centered vertically.
+Quando combinata con :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, questa sezione di rilascio dimezza l'altezza e rimane centrata verticalmente.
 
 .. _class_Tree_constant_DROP_MODE_INBETWEEN:
 
@@ -619,9 +619,9 @@ When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBET
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_INBETWEEN** = ``2``
 
-Enables "above item" and "below item" drop sections. The "above item" drop section covers the top half of the item, while the "below item" drop section covers the bottom half, and extends downward to the left of any children.
+Abilita le sezioni di rilascio "sopra l'elemento" e "sotto l'elemento". La sezione di rilascio "sopra l'elemento" copre la metà superiore dell'elemento, mentre la sezione di rilascio "sotto l'elemento" copre la metà inferiore e si estende verso il basso a sinistra di eventuali figli.
 
-When combined with :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, these drop sections halve in height and stay at the top and bottom respectively.
+Quando combinato con :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, queste sezioni di rilascio si dimezzano in altezza e rimangono rispettivamente in alto o in basso.
 
 .. rst-class:: classref-item-separator
 
@@ -639,7 +639,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_Tree_ScrollHintMode>` **SCROLL_HINT_MODE_DISABLED** = ``0``
 
-Scroll hints will never be shown.
+Gli indicatori di scorrimento non appariranno mai.
 
 .. _class_Tree_constant_SCROLL_HINT_MODE_BOTH:
 
@@ -647,7 +647,7 @@ Scroll hints will never be shown.
 
 :ref:`ScrollHintMode<enum_Tree_ScrollHintMode>` **SCROLL_HINT_MODE_BOTH** = ``1``
 
-Scroll hints will be shown at the top and bottom.
+Gli indicatori di scorrimento appariranno in alto e in basso.
 
 .. _class_Tree_constant_SCROLL_HINT_MODE_TOP:
 
@@ -655,7 +655,7 @@ Scroll hints will be shown at the top and bottom.
 
 :ref:`ScrollHintMode<enum_Tree_ScrollHintMode>` **SCROLL_HINT_MODE_TOP** = ``2``
 
-Only the top scroll hint will be shown.
+Solo l'indicatore di scorrimento in alto apparirà.
 
 .. _class_Tree_constant_SCROLL_HINT_MODE_BOTTOM:
 
@@ -663,7 +663,7 @@ Only the top scroll hint will be shown.
 
 :ref:`ScrollHintMode<enum_Tree_ScrollHintMode>` **SCROLL_HINT_MODE_BOTTOM** = ``3``
 
-Only the bottom scroll hint will be shown.
+Solo l'indicatore di scorrimento in basso apparirà.
 
 .. rst-class:: classref-section-separator
 
@@ -808,7 +808,7 @@ Questo controlla le sezioni di rilascio, ovvero la decisione e il disegno di pos
 - |void| **set_enable_drag_unfolding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drag_unfolding_enabled**\ (\ )
 
-If ``true``, tree items will unfold when hovered over during a drag-and-drop. The delay for when this happens is dictated by :ref:`dragging_unfold_wait_msec<class_Tree_theme_constant_dragging_unfold_wait_msec>`.
+Se ``true``, gli elementi dell'albero si espanderanno quando ci si passa sopra con il mouse durante un'operazione di trascinamento. Il ritardo prima che ciò accada è determinato da :ref:`dragging_unfold_wait_msec<class_Tree_theme_constant_dragging_unfold_wait_msec>`.
 
 .. rst-class:: classref-item-separator
 
@@ -876,7 +876,7 @@ Se ``true``, la radice dell'albero è nascosta.
 - |void| **set_scroll_hint_mode**\ (\ value\: :ref:`ScrollHintMode<enum_Tree_ScrollHintMode>`\ )
 - :ref:`ScrollHintMode<enum_Tree_ScrollHintMode>` **get_scroll_hint_mode**\ (\ )
 
-The way which scroll hints (indicators that show that the content can still be scrolled in a certain direction) will be shown.
+Il modo in cui appaiono gli indicatori di scorrimento (indicatori che mostrano che il contenuto si può ancora scorrere in una determinata direzione).
 
 .. rst-class:: classref-item-separator
 
@@ -944,7 +944,7 @@ Permette di selezionare un solo o più elementi. Vedi le costanti di :ref:`Selec
 - |void| **set_tile_scroll_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_hint_tiled**\ (\ )
 
-If ``true``, the scroll hint texture will be tiled instead of stretched. See :ref:`scroll_hint_mode<class_Tree_property_scroll_hint_mode>`.
+Se ``true``, la texture degli indicatori di scorrimento sarà ripetuta anziché allungata. Vedi :ref:`scroll_hint_mode<class_Tree_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-section-separator
 
@@ -1121,7 +1121,7 @@ Restituisce il codice di lingua del titolo della colonna.
 
 :ref:`String<class_String>` **get_column_title_tooltip_text**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Tree_method_get_column_title_tooltip_text>`
 
-Returns the column title's tooltip text.
+Restituisce il testo nel tooltip del titolo della colonna.
 
 .. rst-class:: classref-item-separator
 
@@ -1171,19 +1171,19 @@ Restituisce il rettangolo per i popup personalizzati. Metodo di supporto per cre
 
 :ref:`int<class_int>` **get_drop_section_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_drop_section_at_position>`
 
-Returns the drop section at ``position``, as permitted by enabled :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
+Restituisce la sezione di rilascio nella posizione ``position``, come consentito dagli :ref:`DropModeFlags<enum_Tree_DropModeFlags>` abilitati.
 
-- ``-1`` if the position is **above** the item. Typically used to insert as the item's previous sibling.
+- ``-1`` se la posizione è **sopra** l'elemento. Tipicamente usato per inserirlo come fratello prima dell'elemento.
 
-- ``0`` if the position is **on** the item. Typically used to insert as the item's last child.
+- ``0`` se la posizione è **dentro** l'elemento. Tipicamente usato per inserirlo come ultimo figlio dell'elemento.
 
-- ``1`` if the position is **below** the item, when the item has no children. Typically used to insert as the item's next sibling. If the item *does* have children, this section is still reachable by hovering to the left of the item's collapse arrow, and below.
+- ``1`` se la posizione è **sotto** l'elemento, quando l'elemento non ha figli. Tipicamente usato per inserirlo come fratello dopo l'elemento. Se l'elemento *ha* figli, questa sezione è comunque raggiungibile, spostando il cursore del mouse a sinistra della freccia di compressione dell'elemento, e sotto.
 
-- ``2`` if the position is **below** the item, when the item has children. Typically used to insert as the item's first child.
+- ``2`` se la posizione è **sotto** l'elemento, quando l'elemento ha figli. Tipicamente usato per inserirlo come primo figlio dell'elemento.
 
-- ``-100`` if the position is not over any item, or no :ref:`DropModeFlags<enum_Tree_DropModeFlags>` are set.
+- ``-100`` se la posizione non si trova su alcun elemento o se non sono impostati :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
 
-See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` for a description of each drop region. To get the item which the returned drop section refers to, use :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
+Vedi :ref:`DropModeFlags<enum_Tree_DropModeFlags>` per una descrizione di ciascuna area di rilascio. Per ottenere l'elemento a cui si riferisce la sezione di rilascio restituita, usa :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1470,7 +1470,7 @@ Imposta la direzione di scrittura del titolo di una colonna.
 
 |void| **set_column_title_language**\ (\ column\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Tree_method_set_column_title_language>`
 
-Sets the language code of the given ``column``'s title to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+Imposta il codice lingua del titolo della colonna ``column`` su ``language``. Serve per gli algoritmi di interruzione di riga e di formazione del testo. Se ``language`` è vuoto, viene utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -1482,7 +1482,7 @@ Sets the language code of the given ``column``'s title to ``language``. This is 
 
 |void| **set_column_title_tooltip_text**\ (\ column\: :ref:`int<class_int>`, tooltip_text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Tree_method_set_column_title_tooltip_text>`
 
-Sets the column title's tooltip text.
+Imposta il testo nel tooltip del titolo della colonna.
 
 .. rst-class:: classref-item-separator
 
@@ -1559,7 +1559,7 @@ Il :ref:`Color<class_Color>` usato per disegnare possibili posizioni di rilascio
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.7, 0.7, 0.7, 1)`` :ref:`🔗<class_Tree_theme_color_font_color>`
 
-Il :ref:`Color<class_Color>` predefinito del testo dell'elemento.
+Il :ref:`Color<class_Color>` predefinito del testo della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1583,7 +1583,7 @@ Il :ref:`Color<class_Color>` del testo per una cella in modalità :ref:`TreeItem
 
 :ref:`Color<class_Color>` **font_hovered_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_Tree_theme_color_font_hovered_color>`
 
-Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse sull'elemento e non è ancora selezionato.
+Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse sulla voce e non è ancora selezionata.
 
 .. rst-class:: classref-item-separator
 
@@ -1607,7 +1607,7 @@ Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse sull'
 
 :ref:`Color<class_Color>` **font_hovered_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Tree_theme_color_font_hovered_selected_color>`
 
-Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse sull'elemento ed è selezionato.
+Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse sulla voce ed è selezionata.
 
 .. rst-class:: classref-item-separator
 
@@ -1619,7 +1619,7 @@ Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse sull'
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_Tree_theme_color_font_outline_color>`
 
-La tinta del contorno di testo dell'elemento.
+La tinta del contorno di testo della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1679,7 +1679,7 @@ Il :ref:`Color<class_Color>` predefinito delle linee di relazione.
 
 :ref:`Color<class_Color>` **scroll_hint_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_Tree_theme_color_scroll_hint_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint<class_Tree_theme_icon_scroll_hint>` texture.
+:ref:`Color<class_Color>` utilizzato per modulare la texture :ref:`scroll_hint<class_Tree_theme_icon_scroll_hint>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1715,7 +1715,7 @@ Lo spazio orizzontale tra ciascun pulsante in una cella.
 
 :ref:`int<class_int>` **check_h_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_check_h_separation>`
 
-The horizontal space between the checkbox and the text in a :ref:`TreeItem.CELL_MODE_CHECK<class_TreeItem_constant_CELL_MODE_CHECK>` mode cell.
+Lo spazio orizzontale tra la casella di spunta e il testo in una cella in modalità :ref:`TreeItem.CELL_MODE_CHECK<class_TreeItem_constant_CELL_MODE_CHECK>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1739,7 +1739,7 @@ Lo spessore delle linee di relazione tra il :ref:`TreeItem<class_TreeItem>` sele
 
 :ref:`int<class_int>` **dragging_unfold_wait_msec** = ``500`` :ref:`🔗<class_Tree_theme_constant_dragging_unfold_wait_msec>`
 
-During a drag-and-drop, this is how many milliseconds to wait over a section before the section unfolds.
+Durante un'operazione di trascinamento, indica quanti millisecondi attendere su una sezione prima che la sezione si espanda.
 
 .. rst-class:: classref-item-separator
 
@@ -1787,7 +1787,7 @@ Lo spazio orizzontale tra le celle degli elementi. Viene anche utilizzato come m
 
 :ref:`int<class_int>` **icon_h_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_icon_h_separation>`
 
-The horizontal space between the icon and the text in item's cells.
+Lo spazio orizzontale tra l'icona e il testo nelle celle degli elementi.
 
 .. rst-class:: classref-item-separator
 
@@ -2029,7 +2029,7 @@ Il riempimento verticale all'interno di ogni elemento, ovvero la distanza tra il
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_Tree_theme_font_font>`
 
-Il :ref:`Font<class_Font>` del testo dell'elemento.
+Il :ref:`Font<class_Font>` del testo della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -2053,7 +2053,7 @@ Il :ref:`Font<class_Font>` del testo del pulsante del titolo.
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_Tree_theme_font_size_font_size>`
 
-La dimensione del testo dell'elemento.
+La dimensione del testo della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -2161,7 +2161,7 @@ L'icona di spunta da visualizzare quando una cella nella modalità :ref:`TreeIte
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint** :ref:`🔗<class_Tree_theme_icon_scroll_hint>`
 
-The indicator that will be shown when the content can still be scrolled. See :ref:`scroll_hint_mode<class_Tree_property_scroll_hint_mode>`.
+L'indicatore che apparirà quando il contenuto si può ancora scorrere. Vedi :ref:`scroll_hint_mode<class_Tree_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2431,7 +2431,7 @@ Lo :ref:`StyleBox<class_StyleBox>` del pulsante del titolo quando è premuto.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

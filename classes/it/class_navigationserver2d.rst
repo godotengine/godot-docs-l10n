@@ -26,9 +26,9 @@ Affinché due regioni siano collegate tra loro, devono condividere un bordo simi
 
 Puoi assegnare strati di navigazione alle regioni con :ref:`region_set_navigation_layers()<class_NavigationServer2D_method_region_set_navigation_layers>`, che possono poi essere controllati quando si richiede un percorso con :ref:`map_get_path()<class_NavigationServer2D_method_map_get_path>`. Questo può essere usato per consentire o vietare determinate aree per alcuni oggetti.
 
-Per usare il sistema di evasione delle collisioni, puoi usare gli agenti. Puoi impostare la velocità di destinazione di un agente, quindi i server emetteranno un callback con una velocità modificata.
+Per usare il sistema di evitamento delle collisioni, puoi usare gli agenti. Puoi impostare la velocità di destinazione di un agente, quindi i server emetteranno un callback con una velocità modificata.
 
-\ **Nota:** Il sistema di evasione delle collisioni ignora le regioni. L'uso diretto della velocità modificata potrebbe spostare un agente al di fuori dell'area attraversabile. Questa è una limitazione del sistema di evasione delle collisioni, qualsiasi situazione più complessa potrebbe richiedere l'uso del motore di fisica.
+\ **Nota:** Il sistema di evitamento delle collisioni ignora le regioni. L'uso diretto della velocità modificata potrebbe spostare un agente al di fuori dell'area attraversabile. Questa è una limitazione del sistema di evitamento delle collisioni, qualsiasi situazione più complessa potrebbe richiedere l'uso del motore fisico.
 
 Questo server tiene traccia di qualsiasi chiamata e la esegue durante la fase di sincronizzazione. Ciò significa che è possibile richiedere qualsiasi modifica alla mappa, usando qualsiasi thread, senza preoccupazioni.
 
@@ -340,7 +340,7 @@ Segnali
 
 **avoidance_debug_changed**\ (\ ) :ref:`🔗<class_NavigationServer2D_signal_avoidance_debug_changed>`
 
-Emesso quando vengono modificate le impostazioni di debug di evasione. Disponibile solo nelle build di debug.
+Emesso quando vengono modificate le impostazioni di debug di evitamento. Disponibile solo nelle build di debug.
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ Costante per ottenere il numero di regioni di navigazione attive.
 
 :ref:`ProcessInfo<enum_NavigationServer2D_ProcessInfo>` **INFO_AGENT_COUNT** = ``2``
 
-Costante per ottenere il numero di agenti di navigazione attivi che stanno elaborando l'evasione.
+Costante per ottenere il numero di agenti di navigazione attivi che stanno elaborando l'evitamento.
 
 .. _class_NavigationServer2D_constant_INFO_LINK_COUNT:
 
@@ -488,7 +488,7 @@ Crea l'agente.
 
 :ref:`bool<class_bool>` **agent_get_avoidance_enabled**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_avoidance_enabled>`
 
-Restituisce ``true`` se l'agente specificato ``agent`` usa l'evasione.
+Restituisce ``true`` se l'agente specificato ``agent`` usa l'evitamento.
 
 .. rst-class:: classref-item-separator
 
@@ -500,7 +500,7 @@ Restituisce ``true`` se l'agente specificato ``agent`` usa l'evasione.
 
 :ref:`int<class_int>` **agent_get_avoidance_layers**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_avoidance_layers>`
 
-Restituisce la bitmask ``avoidance_layers`` dell'agente specificato ``agent``.
+Restituisce la maschera di bit ``avoidance_layers`` dell'agente specificato ``agent``.
 
 .. rst-class:: classref-item-separator
 
@@ -512,7 +512,7 @@ Restituisce la bitmask ``avoidance_layers`` dell'agente specificato ``agent``.
 
 :ref:`int<class_int>` **agent_get_avoidance_mask**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_avoidance_mask>`
 
-Restituisce il bitmask ``avoidance_mask`` dell'agente specificato ``agent``.
+Restituisce la maschera di bit ``avoidance_mask`` dell'agente specificato ``agent``.
 
 .. rst-class:: classref-item-separator
 
@@ -632,7 +632,7 @@ Restituisce il periodo di tempo minimo per il quale le velocità dell'agente ``a
 
 :ref:`float<class_float>` **agent_get_time_horizon_obstacles**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_get_time_horizon_obstacles>`
 
-Restituisce il periodo di tempo minimo per il quale le velocità dell'agente ``agent``, calcolate dalla simulazione, sono sicure rispetto agli ostacoli di evasione.
+Restituisce il periodo di tempo minimo per il quale le velocità dell'agente ``agent``, calcolate dalla simulazione, sono sicure rispetto agli ostacoli statici di evitamento.
 
 .. rst-class:: classref-item-separator
 
@@ -656,7 +656,7 @@ Restituisce la velocità dell'agente specificato ``agent``.
 
 :ref:`bool<class_bool>` **agent_has_avoidance_callback**\ (\ agent\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_agent_has_avoidance_callback>`
 
-Restituisce ``true`` se l'agente ``agent`` ha un callback di evasione.
+Restituisce ``true`` se l'agente ``agent`` ha un callback di evitamento.
 
 .. rst-class:: classref-item-separator
 
@@ -680,7 +680,7 @@ Restituisce ``true`` se la mappa è stata modificata nel frame precedente.
 
 |void| **agent_set_avoidance_callback**\ (\ agent\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_avoidance_callback>`
 
-Imposta il callback :ref:`Callable<class_Callable>` che viene chiamato dopo ogni fase di elaborazione dell'evasione per l'agente ``agent``. Il ``safe_velocity`` calcolato sarà inviato con un segnale all'oggetto appena prima dei calcoli della fisica.
+Imposta il callback :ref:`Callable<class_Callable>` che viene chiamato dopo ogni fase di elaborazione dell'evitamento per l'agente ``agent``. Il ``safe_velocity`` calcolato sarà inviato con un segnale all'oggetto appena prima dei calcoli della fisica.
 
 \ **Nota:** I callback creati sono sempre elaborati a prescindere dallo stato del SceneTree fin quando l'agente si trova su una mappa di navigazione e non è liberato. Per disabilitare l'invio di un callback da un agente, utilizza di nuovo :ref:`agent_set_avoidance_callback()<class_NavigationServer2D_method_agent_set_avoidance_callback>` con un :ref:`Callable<class_Callable>` vuoto.
 
@@ -694,7 +694,7 @@ Imposta il callback :ref:`Callable<class_Callable>` che viene chiamato dopo ogni
 
 |void| **agent_set_avoidance_enabled**\ (\ agent\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_avoidance_enabled>`
 
-Se ``enabled`` è ``true``, l'agente specificato ``agent`` usa l'evasione.
+Se ``enabled`` è ``true``, l'agente specificato ``agent`` usa l'evitamento.
 
 .. rst-class:: classref-item-separator
 
@@ -706,7 +706,7 @@ Se ``enabled`` è ``true``, l'agente specificato ``agent`` usa l'evasione.
 
 |void| **agent_set_avoidance_layers**\ (\ agent\: :ref:`RID<class_RID>`, layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_avoidance_layers>`
 
-Imposta la bitmask ``avoidance_layers`` dell'agente.
+Imposta la maschera di bit ``avoidance_layers`` dell'agente.
 
 .. rst-class:: classref-item-separator
 
@@ -730,7 +730,7 @@ Imposta la maschera di bit ``avoidance_mask`` dell'agente.
 
 |void| **agent_set_avoidance_priority**\ (\ agent\: :ref:`RID<class_RID>`, priority\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_avoidance_priority>`
 
-Imposta la priorità di evasione (``avoidance_priority``) dell'agente su ``priority``, compreso tra 0,0 (priorità più bassa) e 1,0 (priorità più alta).
+Imposta la priorità di evitamento (``avoidance_priority``) dell'agente su ``priority``, compreso tra 0,0 (priorità più bassa) e 1,0 (priorità più alta).
 
 L'agente ``agent`` specificato non regola la velocità per altri agenti che corrisponderebbero alla maschera (``avoidance_mask``) ma hanno una priorità (``avoidance_priority``) inferiore. Ciò a sua volta fa in modo che gli altri agenti con priorità inferiore regolino ulteriormente le loro velocità per evitare collisioni con questo agente.
 
@@ -792,7 +792,7 @@ Imposta la distanza massima da altri agenti che questo agente prende in consider
 
 |void| **agent_set_paused**\ (\ agent\: :ref:`RID<class_RID>`, paused\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_paused>`
 
-Se ``paused`` è ``true``, l'agente ``agent`` non sarà elaborato. Ad esempio, non calcolerà le velocità di evasione o riceverà i callback di evasione.
+Se ``paused`` è ``true``, l'agente ``agent`` non sarà elaborato. Ad esempio, non calcolerà le velocità di evitamento o riceverà i callback di evitamento.
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +840,7 @@ La quantità minima di tempo per cui le velocità dell'agente calcolate dalla si
 
 |void| **agent_set_time_horizon_obstacles**\ (\ agent\: :ref:`RID<class_RID>`, time_horizon\: :ref:`float<class_float>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_time_horizon_obstacles>`
 
-La quantità minima di tempo per cui le velocità dell'agente calcolate dalla simulazione sono sicure rispetto agli ostacoli statici di evasione. Maggiore è questo numero, prima questo agente risponderà alla presenza di ostacoli statici di evasione, ma minore è la libertà che questo agente ha nello scegliere le sue velocità. Un valore troppo alto rallenterà notevolmente il movimento degli agenti. Deve essere positivo.
+La quantità minima di tempo per cui le velocità dell'agente calcolate dalla simulazione sono sicure rispetto agli ostacoli statici di evitamento. Maggiore è questo numero, prima questo agente risponderà alla presenza di ostacoli statici di evitamento, ma minore è la libertà che questo agente ha nello scegliere le sue velocità. Un valore troppo alto rallenterà notevolmente il movimento degli agenti. Deve essere positivo.
 
 .. rst-class:: classref-item-separator
 
@@ -852,7 +852,7 @@ La quantità minima di tempo per cui le velocità dell'agente calcolate dalla si
 
 |void| **agent_set_velocity**\ (\ agent\: :ref:`RID<class_RID>`, velocity\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_velocity>`
 
-Imposta ``velocity`` come la nuova velocità desiderata per l'agente ``agent``. La simulazione di evasione cercherà di soddisfare questa velocità se possibile, ma la modificherà per evitare collisioni con altri agenti e ostacoli. Quando un agente viene teletrasportato in una nuova posizione lontana, usa invece :ref:`agent_set_velocity_forced()<class_NavigationServer2D_method_agent_set_velocity_forced>` per reimpostare lo stato interno della velocità.
+Imposta ``velocity`` come la nuova velocità desiderata per l'agente ``agent``. La simulazione di evitamento cercherà di soddisfare questa velocità se possibile, ma la modificherà per evitare collisioni con altri agenti e ostacoli. Quando un agente viene teletrasportato in una nuova posizione lontana, usa invece :ref:`agent_set_velocity_forced()<class_NavigationServer2D_method_agent_set_velocity_forced>` per reimpostare lo stato interno della velocità.
 
 .. rst-class:: classref-item-separator
 
@@ -864,7 +864,7 @@ Imposta ``velocity`` come la nuova velocità desiderata per l'agente ``agent``. 
 
 |void| **agent_set_velocity_forced**\ (\ agent\: :ref:`RID<class_RID>`, velocity\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_NavigationServer2D_method_agent_set_velocity_forced>`
 
-Sostituisce la velocità interna nella simulazione di evasione delle collisioni con ``velocity`` per l'agente ``agent``. Quando un agente è teletrasportato in una nuova posizione lontana, questa funzione dovrebbe essere utilizzata nello stesso frame. Se chiamata frequentemente, questa funzione può bloccare gli agenti.
+Sostituisce la velocità interna nella simulazione di evitamento delle collisioni con ``velocity`` per l'agente ``agent``. Quando un agente è teletrasportato in una nuova posizione lontana, questa funzione dovrebbe essere utilizzata nello stesso frame. Se chiamata frequentemente, questa funzione può bloccare gli agenti.
 
 .. rst-class:: classref-item-separator
 
@@ -1220,7 +1220,7 @@ Questa funzione forza immediatamente la sincronizzazione della mappa di navigazi
 
 A causa di restrizioni tecniche, la coda attuale dei comandi del NavigationServer verrà svuotata. Ciò significa che tutti i comandi di aggiornamento già in coda per questo frame di fisica verranno eseguiti, anche quelli destinati ad altre mappe, regioni e agenti che non fanno parte della mappa specificata. Il costoso calcolo delle mesh di navigazione e delle connessioni tra regioni di una mappa verrà eseguito solo per la mappa specificata. Le altre mappe riceveranno la normale sincronizzazione alla fine del frame di fisica. Se la mappa specificata riceve modifiche dopo l'aggiornamento forzato, verrà aggiornata di nuovo anche quando le altre mappe riceveranno il loro aggiornamento.
 
-L'elaborazione dell'evasione e l'invio dei segnali ``safe_velocity`` non sono influenzati da questa funzione e continuano ad accadere per tutte le mappe e gli agenti alla fine del frame di fisica.
+L'elaborazione dell'evitamento e l'invio dei segnali ``safe_velocity`` non sono influenzati da questa funzione e continuano ad accadere per tutte le mappe e gli agenti alla fine del frame di fisica.
 
 \ **Nota:** Da un grande potere derivano grandi responsabilità. Questa funzione dovrebbe essere utilizzata solo da utenti che sanno davvero cosa stanno facendo e hanno una buona ragione per farlo. Forzare un aggiornamento immediato di una mappa di navigazione richiede il blocco del NavigationServer e lo svuotamento dell'intera coda dei comandi del NavigationServer. Ciò non solo può avere un impatto significativo sulle prestazioni di un gioco, ma può anche introdurre bug se utilizzato in modo inappropriato senza molta prudenza.
 
@@ -1296,7 +1296,7 @@ Restituisce il margine di connessione ai bordi della mappa. Il margine di connes
 
 Restituisce l'ID d'iterazione attuale della mappa di navigazione. Ogni volta che la mappa di navigazione cambia e si sincronizza, l'ID d'iterazione aumenta. Un ID d'iterazione pari a 0 significa che la mappa di navigazione non si è mai sincronizzata.
 
-\ **Nota:** L'ID d'iterazione tornerà a 1 dopo aver raggiunto il limite di intervallo.
+\ **Nota:** L'ID d'iterazione tornerà a 1 dopo aver raggiunto il suo limite di intervallo.
 
 .. rst-class:: classref-item-separator
 
@@ -1356,7 +1356,7 @@ Restituisce i :ref:`RID<class_RID>` di tutti gli ostacoli di navigazione attualm
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **map_get_path**\ (\ map\: :ref:`RID<class_RID>`, origin\: :ref:`Vector2<class_Vector2>`, destination\: :ref:`Vector2<class_Vector2>`, optimize\: :ref:`bool<class_bool>`, navigation_layers\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_NavigationServer2D_method_map_get_path>`
 
-Restituisce il percorso di navigazione per raggiungere la destinazione dall'origine. ``navigation_layers`` è una maschera di bit di tutti gli strati di navigazione della regione che possono essere presenti nel percorso.
+Restituisce il percorso di navigazione per raggiungere la destinazione dall'origine. ``navigation_layers`` è una maschera di bit di tutti gli strati di navigazione della regione che sono concessi nel percorso.
 
 .. rst-class:: classref-item-separator
 
@@ -1528,7 +1528,7 @@ Crea un nuovo ostacolo di navigazione.
 
 :ref:`bool<class_bool>` **obstacle_get_avoidance_enabled**\ (\ obstacle\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_obstacle_get_avoidance_enabled>`
 
-Restituisce ``true`` se l'ostacolo fornito ``obstacle`` ha l'evasione abilitata.
+Restituisce ``true`` se l'ostacolo fornito ``obstacle`` ha l'evitamento abilitata.
 
 .. rst-class:: classref-item-separator
 
@@ -1540,7 +1540,7 @@ Restituisce ``true`` se l'ostacolo fornito ``obstacle`` ha l'evasione abilitata.
 
 :ref:`int<class_int>` **obstacle_get_avoidance_layers**\ (\ obstacle\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_obstacle_get_avoidance_layers>`
 
-Restituisce il bitmask ``avoidance_layers`` dell'ostacolo specificato ``obstacle``.
+Restituisce la maschera di bit ``avoidance_layers`` dell'ostacolo specificato ``obstacle``.
 
 .. rst-class:: classref-item-separator
 
@@ -1624,7 +1624,7 @@ Restituisce i vertici dei contorni per l'ostacolo specificato ``obstacle``.
 
 |void| **obstacle_set_avoidance_enabled**\ (\ obstacle\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationServer2D_method_obstacle_set_avoidance_enabled>`
 
-Se ``enabled`` è ``true``, l'ostacolo fornito ``obstacle`` influisce sull'evitasione usando degli agenti.
+Se ``enabled`` è ``true``, l'ostacolo fornito ``obstacle`` influisce sugli agenti che usando l'evitamento.
 
 .. rst-class:: classref-item-separator
 
@@ -1636,7 +1636,7 @@ Se ``enabled`` è ``true``, l'ostacolo fornito ``obstacle`` influisce sull'evita
 
 |void| **obstacle_set_avoidance_layers**\ (\ obstacle\: :ref:`RID<class_RID>`, layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationServer2D_method_obstacle_set_avoidance_layers>`
 
-Imposta il bitmask ``avoidance_layers`` dell'ostacolo.
+Imposta la maschera di bit ``avoidance_layers`` dell'ostacolo.
 
 .. rst-class:: classref-item-separator
 
@@ -1660,7 +1660,7 @@ Imposta il :ref:`RID<class_RID>` della mappa di navigazione per l'ostacolo.
 
 |void| **obstacle_set_paused**\ (\ obstacle\: :ref:`RID<class_RID>`, paused\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationServer2D_method_obstacle_set_paused>`
 
-Se ``paused`` è ``true`` l'ostacolo ``obstacle`` non sarà elaborato. Ad esempio, non influirà più sulle velocità di evasione.
+Se ``paused`` è ``true`` l'ostacolo ``obstacle`` non sarà elaborato. Ad esempio, non influirà più sulle velocità di evitamento.
 
 .. rst-class:: classref-item-separator
 
@@ -2120,7 +2120,7 @@ Se ``true`` abilita la modalità di debug sul NavigationServer.
 
 Restituisce una versione semplificata del percorso ``path``, con punti meno critici del percorso rimossi. La quantità di semplificazione è controllata da ``epsilon``. La semplificazione utilizza una variazione dell'algoritmo Ramer-Douglas-Peucker per decimare i punti della curva.
 
-La semplificazione del percorso può essere utile per mitigare vari problemi di seguimento del percorso che possono sorgere con certi tipi di agenti e comportamenti di script. Ad esempio, agenti che "sterzano" o evasione in "campi aperti".
+La semplificazione del percorso può essere utile per mitigare vari problemi di seguimento del percorso che possono sorgere con certi tipi di agenti e comportamenti di script. Ad esempio, agenti che "sterzano" o evitamento in "campi aperti".
 
 .. rst-class:: classref-item-separator
 
@@ -2156,7 +2156,7 @@ Imposta il :ref:`Callable<class_Callable>` ``callback`` per il parser della geom
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

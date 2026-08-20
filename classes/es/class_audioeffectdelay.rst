@@ -85,7 +85,7 @@ Descripciones de Propiedades
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-The volume ratio of the original audio. Value can range from 0 to 1.
+La relación de volumen del audio original. El valor puede oscilar entre 0 y 1.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Feedback delay time in milliseconds. Value can range from 0 to 1500.
 - |void| **set_feedback_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_level_db**\ (\ )
 
-Gain for feedback, in dB. Value can range from -60 to 0.
+Ganancia de retroalimentación, en dB. El valor puede oscilar entre -60 y 0.
 
 .. rst-class:: classref-item-separator
 

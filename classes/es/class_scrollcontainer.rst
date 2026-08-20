@@ -16,7 +16,7 @@ Un contenedor utilizado para proporcionar barras de desplazamiento a un control 
 Descripción
 ----------------------
 
-Un contenedor utilizado para proporcionar a un control hijo barras de desplazamiento cuando sea necesario. Las barras de desplazamiento se dibujarán automáticamente a la derecha (para vertical) o abajo (para horizontal) y permitirán arrastrar para mover el Control visible (y sus hijos) dentro del ScrollContainer. Las barras de desplazamiento también cambiarán automáticamente el tamaño del agarrador según el :ref:`Control.custom_minimum_size<class_Control_property_custom_minimum_size>` del Control en relación con el ScrollContainer.
+Un contenedor utilizado para proporcionar a un control hijo barras de desplazamiento cuando sea necesario. Las barras de desplazamiento se dibujarán automáticamente a la derecha (para vertical) o abajo (para horizontal) y permitirán arrastrar para mover el Control visible (y sus hijos) dentro del ScrollContainer. Las barras de desplazamiento también cambiarán automáticamente el tamaño del agarre según el :ref:`Control.custom_minimum_size<class_Control_property_custom_minimum_size>` del Control en relación con el ScrollContainer.
 
 .. rst-class:: classref-introduction-group
 
@@ -538,7 +538,7 @@ Descripciones de las propiedades del tema
 
 :ref:`Color<class_Color>` **scroll_hint_horizontal_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_horizontal_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>` texture.
+:ref:`Color<class_Color>` utilizado para modular la textura :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`.
 
 .. rst-class:: classref-item-separator
 
@@ -550,7 +550,7 @@ Descripciones de las propiedades del tema
 
 :ref:`Color<class_Color>` **scroll_hint_vertical_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_vertical_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>` texture.
+:ref:`Color<class_Color>` utilizado para modular la textura :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>`.
 
 .. rst-class:: classref-item-separator
 
@@ -586,7 +586,7 @@ The space between the ScrollContainer's horizontal scroll bar and its content, i
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint_horizontal** :ref:`🔗<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`
 
-The indicator that will be shown when the content can still be scrolled horizontally. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+El indicador que se mostrará cuando el contenido aún se pueda desplazar horizontalmente. Véase :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -598,7 +598,7 @@ The indicator that will be shown when the content can still be scrolled horizont
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint_vertical** :ref:`🔗<class_ScrollContainer_theme_icon_scroll_hint_vertical>`
 
-The indicator that will be shown when the content can still be scrolled vertically. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+El indicador que se mostrará cuando el contenido aún pueda desplazarse verticalmente. Véase :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 

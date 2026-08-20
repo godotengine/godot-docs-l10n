@@ -1928,9 +1928,9 @@ Devuelve el estado habilitado de la bandera de partícula dada.
 
 |void| **request_particles_process**\ (\ process_time\: :ref:`float<class_float>`, process_time_residual\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_CPUParticles3D_method_request_particles_process>`
 
-Requests the particles to process for extra process time during a single frame.
+Solicita que las partículas procesen tiempo extra durante un solo fotograma.
 
-\ ``process_time`` defines the time that the particles will process while emitting is on. ``process_time_residual`` defines the time that particles will process with emitting turned off for the simulation. When combined with :ref:`speed_scale<class_CPUParticles3D_property_speed_scale>` set to ``0.0``, this is useful to be able to seek a particle system timeline.
+\ ``process_time`` define el tiempo que las partículas procesarán mientras la emisión está activa. ``process_time_residual`` define el tiempo que las partículas procesarán con la emisión apagada para la simulación. Cuando se combina con :ref:`speed_scale<class_CPUParticles3D_property_speed_scale>` configurado en ``0.0``, esto es útil para poder buscar una línea temporal del sistema de partículas.
 
 .. rst-class:: classref-item-separator
 

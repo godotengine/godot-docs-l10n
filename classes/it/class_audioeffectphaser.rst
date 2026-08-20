@@ -7,18 +7,18 @@ AudioEffectPhaser
 
 **Eredita:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a phaser audio effect to an audio bus.
+Aggiunge un effetto audio phaser a un bus audio.
 
-Creates several notch and peak filters that sweep across the spectrum.
+Crea diversi filtri notch e di picco che si diffondono in tutto lo spettro.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-A "phaser" effect creates a copy of the original audio that phase-rotates differently across the entire frequency spectrum, with the use of a series of all-pass filter stages (6 in this effect). This copy modulates with a low-frequency oscillator and combines with the original audio, resulting in peaks and troughs that sweep across the spectrum.
+Un effetto "phaser" crea una copia dell'audio originale che ruota in fase diversamente attraverso l'intero spettro di frequenze, usando una serie di passaggi del filtro passa-tutto (6 in questo effetto). Questa copia modula con un oscillatore a bassa frequenza e si combina con l'audio originale, producendo picchi e valli che si diffondono in tutto lo spettro.
 
-This effect can be used to create a "glassy" or "bubbly" sound.
+Questo effetto si può utilizzare per creare un suono "vitreo" o "frizzante".
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ Tutorial
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effetti audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -69,7 +69,7 @@ Descrizioni delle proprietà
 - |void| **set_depth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth**\ (\ )
 
-Intensity of the effect. Value can range from 0.1 to 4.0.
+Intensità dell'effetto. Il valore può variare da 0.1 a 4.0.
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ Intensity of the effect. Value can range from 0.1 to 4.0.
 - |void| **set_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback**\ (\ )
 
-The volume ratio of the filtered audio that is fed back to the all-pass filters. The higher the value, the sharper and louder the peak filters created by the effect. Value can range from 0.1 to 0.9.
+Il rapporto del volume dell'audio filtrato che viene restituito ai filtri passa-tutto. Più alto è il valore, più nitidi e forti saranno i filtri di picco creati dall'effetto. Il valore può variare da 0,1 a 0,9.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ The volume ratio of the filtered audio that is fed back to the all-pass filters.
 - |void| **set_range_max_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_max_hz**\ (\ )
 
-Determines the maximum frequency affected by the low-frequency oscillator modulations, in Hz. Value can range from 10 to 10000.
+Determina la frequenza massima influenzata dalle modulazioni dell'oscillatore a bassa frequenza, in Hz. Il valore può variare da 10 a 10000.
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ Determines the maximum frequency affected by the low-frequency oscillator modula
 - |void| **set_range_min_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_min_hz**\ (\ )
 
-Determines the minimum frequency affected by the low-frequency oscillator modulations, in Hz. Value can range from 10 to 10000.
+Determina la frequenza minima influenzata dalle modulazioni dell'oscillatore a bassa frequenza, in Hz. Il valore può variare da 10 a 10000.
 
 .. rst-class:: classref-item-separator
 
@@ -137,13 +137,13 @@ Determines the minimum frequency affected by the low-frequency oscillator modula
 - |void| **set_rate_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rate_hz**\ (\ )
 
-Adjusts the rate in Hz at which the effect sweeps up and down across the frequency range. Value can range from 0.01 to 20.
+Regola la frequenza in Hz alla quale l'effetto scorre in alto e in basso lungo l'intervallo di frequenza. Il valore può variare da 0.01 a 20.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

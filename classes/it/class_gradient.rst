@@ -16,7 +16,7 @@ Descrizione
 
 Questa risorsa descrive una transizione di colore definendo un insieme di punti colorati e come interpolare tra di essi.
 
-Vedi anche :ref:`Curve<class_Curve>` che supporta metodi di allentamento più complessi, ma non supporta i colori.
+Vedi anche :ref:`Curve<class_Curve>` che supporta metodi di andamento più complessi, ma non supporta i colori.
 
 .. rst-class:: classref-reftable-group
 
@@ -178,9 +178,9 @@ I colori del gradiente come :ref:`PackedColorArray<class_PackedColorArray>`.
 - |void| **set_interpolation_color_space**\ (\ value\: :ref:`ColorSpace<enum_Gradient_ColorSpace>`\ )
 - :ref:`ColorSpace<enum_Gradient_ColorSpace>` **get_interpolation_color_space**\ (\ )
 
-The color space used to interpolate between points of the gradient. It does not affect the returned colors, which will always use nonlinear sRGB encoding.
+Lo spazio colore utilizzato per interpolare tra i punti del gradiente. Non influisce sui colori restituiti, che useranno sempre la codifica sRGB non lineare.
 
-\ **Note:** This setting has no effect when :ref:`interpolation_mode<class_Gradient_property_interpolation_mode>` is set to :ref:`GRADIENT_INTERPOLATE_CONSTANT<class_Gradient_constant_GRADIENT_INTERPOLATE_CONSTANT>`.
+\ **Nota:** Questa impostazione non ha effetto quando :ref:`interpolation_mode<class_Gradient_property_interpolation_mode>` è impostato su :ref:`GRADIENT_INTERPOLATE_CONSTANT<class_Gradient_constant_GRADIENT_INTERPOLATE_CONSTANT>`.
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ Imposta l'offset per il colore del gradiente all'indice ``point``.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

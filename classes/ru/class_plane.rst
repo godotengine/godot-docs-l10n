@@ -12,9 +12,9 @@ Plane
 Описание
 ----------------
 
-Represents a normalized plane equation. :ref:`normal<class_Plane_property_normal>` is the normal of the plane (a, b, c normalized), and :ref:`d<class_Plane_property_d>` is the distance from the origin to the plane (in the direction of "normal"). "Over" or "Above" the plane is considered the side of the plane towards where the normal is pointing.
+Представляет собой нормализованное уравнение плоскости. :ref:`normal<class_Plane_property_normal>` — нормаль плоскости (a, b, c нормализованы), а :ref:`d<class_Plane_property_d>` — расстояние от начала координат до плоскости (в направлении «нормали»). «Над» или «Выше» плоскости считается сторона плоскости, в сторону которой направлена нормаль.
 
-\ **Note:** In a boolean context, a plane will evaluate to ``false`` if all its components equal ``0``. Otherwise, a plane will always evaluate to ``true``.
+\ **Примечание:** В логическом контексте плоскость будет оцениваться как ``false``, если все её компоненты равны ``0``. В противном случае плоскость всегда будет оцениваться как ``true``.
 
 .. rst-class:: classref-introduction-group
 

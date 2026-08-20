@@ -55,7 +55,7 @@ enum **MarkerType**: :ref:`🔗<enum_OpenXRSpatialComponentMarkerList_MarkerType
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_UNKNOWN** = ``0``
 
-Unknown or unset marker type.
+Marcatore sconosciuto o non impostato.
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_QRCODE:
 
@@ -63,7 +63,7 @@ Unknown or unset marker type.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_QRCODE** = ``1``
 
-Marker based on a QR code.
+Marcatore basato su un codice QR.
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_MICRO_QRCODE:
 
@@ -71,7 +71,7 @@ Marker based on a QR code.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_MICRO_QRCODE** = ``2``
 
-Marker based on a micro QR code.
+Marcatore basato su un codice QR micro.
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_ARUCO:
 
@@ -79,7 +79,7 @@ Marker based on a micro QR code.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_ARUCO** = ``3``
 
-Marker based on an Aruco code.
+Marcatore basato su un codice Aruco.
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_APRIL_TAG:
 
@@ -87,7 +87,7 @@ Marker based on an Aruco code.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_APRIL_TAG** = ``4``
 
-Marker based on an April Tag.
+Marcatore basato su un April Tag.
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_MAX:
 
@@ -95,7 +95,7 @@ Marker based on an April Tag.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_MAX** = ``5``
 
-Maximum value for this enum.
+Valore massimo di questa enumerazione.
 
 .. rst-class:: classref-section-separator
 
@@ -112,7 +112,7 @@ Descrizioni dei metodi
 
 :ref:`Variant<class_Variant>` **get_marker_data**\ (\ snapshot\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMarkerList_method_get_marker_data>`
 
-Returns either a :ref:`String<class_String>` or a :ref:`PackedByteArray<class_PackedByteArray>` buffer with data for the marker at this ``index``. Only applicable for QR code markers.
+Restituisce un buffer di tipo :ref:`String<class_String>` o :ref:`PackedByteArray<class_PackedByteArray>` contenente i dati relativi al marcatore all'indice ``index``. Applicabile solo ai marcatori di codici QR.
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ Returns either a :ref:`String<class_String>` or a :ref:`PackedByteArray<class_Pa
 
 :ref:`int<class_int>` **get_marker_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMarkerList_method_get_marker_id>`
 
-Returns the marker ID for the marker at this ``index``. Only applicable for Aruco or April Tag markers.
+Restituisce l'ID del marcatore per il marcatore all'indice ``index``. Applicabile solo ai marcatori Aruco o April Tag.
 
 .. rst-class:: classref-item-separator
 
@@ -136,13 +136,13 @@ Returns the marker ID for the marker at this ``index``. Only applicable for Aruc
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **get_marker_type**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMarkerList_method_get_marker_type>`
 
-Returns the marker type for the marker at this ``index``.
+Restituisce il tipo di marcatore per il marcatore all'indice ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

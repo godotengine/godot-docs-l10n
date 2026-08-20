@@ -9,14 +9,14 @@ BaseButton
 
 **Ereditato da:** :ref:`Button<class_Button>`, :ref:`LinkButton<class_LinkButton>`, :ref:`TextureButton<class_TextureButton>`
 
-Classe di base astratta per i pulsanti della GUI.
+Classe base astratta per i pulsanti della GUI.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-**BaseButton** è una classe di base astratta per pulsanti della GUI. Da solo non visualizza nulla.
+**BaseButton** è una classe base astratta per pulsanti della GUI. Da solo non visualizza nulla.
 
 .. rst-class:: classref-reftable-group
 
@@ -372,9 +372,9 @@ Se ``true``, il pulsante verrà evidenziato per un breve periodo di tempo quando
 - |void| **set_shortcut_in_tooltip**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_in_tooltip_enabled**\ (\ )
 
-If ``true``, the button will add information about its shortcut in the tooltip. This includes the shortcut's events and its :ref:`Resource.resource_name<class_Resource_property_resource_name>`. If both events and name are empty, the shortcut will not be included.
+Se ``true``, il pulsante aggiungerà informazioni sulla sua scorciatoia nel tooltip. Queste includono gli eventi della scorciatoia e il suo :ref:`Resource.resource_name<class_Resource_property_resource_name>`. Se sia gli eventi sia il nome sono vuoti, la scorciatoia non verrà inclusa.
 
-\ **Note:** This property does nothing when the tooltip control is customized using :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
+\ **Nota:** Questa proprietà non fa nulla quando il controllo del tooltip viene personalizzato attraverso :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
 
 .. rst-class:: classref-item-separator
 
@@ -464,7 +464,7 @@ Cambia lo stato :ref:`button_pressed<class_BaseButton_property_button_pressed>` 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

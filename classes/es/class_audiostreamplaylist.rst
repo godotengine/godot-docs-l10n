@@ -7,14 +7,14 @@ AudioStreamPlaylist
 
 **Hereda:** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-:ref:`AudioStream<class_AudioStream>` that includes sub-streams and plays them back like a playlist.
+:ref:`AudioStream<class_AudioStream>` que incluye subtransmisiones y las reproduce como una lista de reproducción.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-An audio stream that can play back sub-streams in sequence. Streams can be added to the Playlist with :ref:`set_list_stream()<class_AudioStreamPlaylist_method_set_list_stream>`, and shuffled with :ref:`shuffle<class_AudioStreamPlaylist_property_shuffle>`.
+Un flujo de audio que pueda reproducir sub-streams en secuencia. Las retransmisiones pueden añadirse a la lista de reproducción con :ref:`set_list_stream()<class_AudioStreamPlaylist_method_set_list_stream>`, y barajar con :ref:`shuffle<class_AudioStreamPlaylist_property_shuffle>`.
 
 .. rst-class:: classref-introduction-group
 

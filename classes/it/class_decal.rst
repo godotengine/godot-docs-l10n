@@ -391,13 +391,13 @@ Imposta la dimensione dell':ref:`AABB<class_AABB>` utilizzato dalla decalcomania
 - |void| **set_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`\ ) |const|
 
-:ref:`Texture2D<class_Texture2D>` che memorizza l'occlusione ambientale, la ruvidità e il metallico per la decalcomania. Usalo per aggiungere dettagli aggiuntivi alle decalcomanie.
+:ref:`Texture2D<class_Texture2D>` che memorizza l'occlusione ambientale, la rugosità e il metallico per la decalcomania. Usalo per aggiungere dettagli aggiuntivi alle decalcomanie.
 
-\ **Nota:** A differenza di :ref:`BaseMaterial3D<class_BaseMaterial3D>` la cui modalità filtro può essere regolata in base al materiale, la modalità filtro per le texture di un **Decal** è impostata globalmente con :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
+\ **Nota:** A differenza di :ref:`BaseMaterial3D<class_BaseMaterial3D>` la cui modalità di filtro si può regolare per ogni singolo materiale, la modalità di filtro per le texture di un **Decal** è impostata globalmente con :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
 
-\ **Nota:** Impostando solo questa texture non si otterrà una decalcomania visibile, poiché deve essere impostato anche :ref:`texture_albedo<class_Decal_property_texture_albedo>`. Per creare una decalcomania contenente solo l'ORM, carica una texture albedo in :ref:`texture_albedo<class_Decal_property_texture_albedo>` e imposta :ref:`albedo_mix<class_Decal_property_albedo_mix>` su ``0.0``. Il canale alfa della texture albedo sarà utilizzato per determinare dove la mappa ORM della superficie sottostante deve essere sovrascritta (e la sua intensità).
+\ **Nota:** Impostando soltanto questa texture non si otterrà una decalcomania visibile, poiché bisogna impostare anche :ref:`texture_albedo<class_Decal_property_texture_albedo>`. Per creare una decalcomania contenente solo l'ORM, carica una texture albedo in :ref:`texture_albedo<class_Decal_property_texture_albedo>` e imposta :ref:`albedo_mix<class_Decal_property_albedo_mix>` su ``0.0``. Il canale alfa della texture albedo servirà per determinare dove sovrascrivere la mappa ORM della superficie sottostante (e la sua intensità).
 
-\ **Nota:** A causa di limitazioni tecniche, modificare la rugosità della superficie sottostante tramite :ref:`texture_orm<class_Decal_property_texture_orm>` *non* influisce sui riflessi nello spazio dello schermo (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`), sui riflessi da :ref:`VoxelGI<class_VoxelGI>` e sui riflessi da SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`). Sono influenzati solo i riflessi dai :ref:`ReflectionProbe<class_ReflectionProbe>`.
+\ **Nota:** A causa di limitazioni tecniche, modificare la rugosità della superficie sottostante tramite :ref:`texture_orm<class_Decal_property_texture_orm>` *non* influisce sui riflessi nello spazio dello schermo (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`), sui riflessi da :ref:`VoxelGI<class_VoxelGI>` e sui riflessi dall'SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`). Sono influenzati solo i riflessi dai :ref:`ReflectionProbe<class_ReflectionProbe>`.
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ Un caso in cui questo è meglio dell'accesso diretto alla texture è quando si d
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

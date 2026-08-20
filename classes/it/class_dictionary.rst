@@ -484,15 +484,15 @@ Trova e restituisce la prima chiave il cui valore associato è uguale a ``value`
 
 :ref:`Variant<class_Variant>` **get**\ (\ key\: :ref:`Variant<class_Variant>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Dictionary_method_get>`
 
-Returns the corresponding value for the given ``key`` in the dictionary. If the ``key`` does not exist, returns ``default``, or ``null`` if the parameter is omitted.
+Restituisce il valore corrispondente alla chiave ``key`` nel dizionario. Se ``key`` non esiste, restituisce ``default`` oppure ``null`` se il parametro viene omesso.
 
-\ **Note:** If the ``default`` argument is computationally expensive or has unwanted side effects, consider using the :ref:`has()<class_Dictionary_method_has>` method instead:
+\ **Nota:** Se l'argomento ``default`` è computazionalmente costoso o ha effetti collaterali indesiderati, si consiglia di utilizzare il metodo :ref:`has()<class_Dictionary_method_has>` al suo posto:
 
 ::
 
-    # Always calls `expensive_function()`.
+    # Chiama sempre `expensive_function()`.
     dict.get("key", expensive_function())
-    # Calls `expensive_function()` only if the key does not exist.
+    # Chiama `expensive_function()` solo se la chiave non esiste.
     dict.get("key") if dict.has("key") else expensive_function()
 
 .. rst-class:: classref-item-separator
@@ -998,7 +998,7 @@ Restituisce il valore corrispondente per la chiave ``key`` nel dizionario. Se la
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -292,9 +292,9 @@ Questo è utile per effetti come il vento e l'antigravità.
 - |void| **set_mutable_bone_axes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_bone_axes_mutable**\ (\ )
 
-If ``true``, the solver retrieves the bone axis from the bone pose every frame.
+Se ``true``, il risolutore recupera l'asse dell'osso dalla posa dell'osso a ogni frame.
 
-If ``false``, the solver retrieves the bone axis from the bone rest and caches it, which increases performance slightly, but position changes in the bone pose made before processing this **SpringBoneSimulator3D** are ignored.
+Se ``false``, il risolutore recupera l'asse dell'osso dalla posa di riposo dell'osso e lo memorizza nella cache, il che aumenta leggermente le prestazioni, ma le modifiche di posizione nella posa dell'osso effettuate prima di aver elaborato questo **SpringBoneSimulator3D** vengono ignorate.
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ Restituisce l'indice dell'osso finale della catena d'ossa.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_end_bone_direction>`
 
-Returns the tail direction of the end bone of the bone chain when :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` is ``true``.
+Restituisce la direzione della coda dell'osso finale della catena d'ossa quando :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +496,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` is ``true``.
+Restituisce la lunghezza della coda dell'osso finale della catena d'ossa quando :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -676,9 +676,9 @@ Restituisce l'asse di rotazione in ``joint`` nella lista delle articolazioni del
 
 :ref:`Vector3<class_Vector3>` **get_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_rotation_axis_vector>`
 
-Returns the rotation axis vector for the specified joint in the bone chain. This vector represents the axis around which the joint can rotate. It is determined based on the rotation axis set for the joint.
+Restituisce il vettore dell'asse di rotazione per l'articolazione specificata nella catena d'ossa. Questo vettore rappresenta l'asse attorno al quale l'articolazione può ruotare. È determinato in base all'asse di rotazione impostato per l'articolazione.
 
-If :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+Se :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>` è :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, questo metodo restituisce ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -762,9 +762,9 @@ Restituisce l'asse di rotazione della catena d'ossa.
 
 :ref:`Vector3<class_Vector3>` **get_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_rotation_axis_vector>`
 
-Returns the rotation axis vector of the bone chain. This vector represents the axis around which the bone chain can rotate. It is determined based on the rotation axis set for the bone chain.
+Restituisce il vettore dell'asse di rotazione della catena d'ossa. Questo vettore rappresenta l'asse attorno al quale l'articolazione può ruotare. È determinato in base all'asse di rotazione impostato per la catena d'ossa.
 
-If :ref:`get_rotation_axis()<class_SpringBoneSimulator3D_method_get_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+Se :ref:`get_rotation_axis()<class_SpringBoneSimulator3D_method_get_rotation_axis>` è :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, questo metodo restituisce ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -812,7 +812,7 @@ Restituisce ``true`` se la configurazione può essere modificata individualmente
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Restituisce ``true`` se l'osso finale è prolungato per avere una coda.
 
 .. rst-class:: classref-item-separator
 
@@ -942,7 +942,7 @@ Imposta la curva di smorzamento per la forza di resistenza della catena d'ossa.
 
 |void| **set_enable_all_child_collisions**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_enable_all_child_collisions>`
 
-Se ``enabled`` è ``true``, tutti i :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` figlio sono in collisione e :ref:`set_exclude_collision_path()<class_SpringBoneSimulator3D_method_set_exclude_collision_path>` è abilitato come lista di esclusione all'indice ``index`` nelle impostazioni.
+Se ``enabled`` è ``true``, tutti i :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` figlio sono in collisione e :ref:`set_exclude_collision_path()<class_SpringBoneSimulator3D_method_set_exclude_collision_path>` è abilitato come lista di esclusioni all'indice ``index`` nelle impostazioni.
 
 Se ``enabled`` è ``false``, è necessario registrare manualmente tutte le collisioni valide con :ref:`set_collision_path()<class_SpringBoneSimulator3D_method_set_collision_path>`.
 
@@ -1164,11 +1164,11 @@ Qui, la posa di riferimento è la posa dell'osso immediatamente prima della simu
 
 |void| **set_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis_vector>`
 
-Sets the rotation axis vector for the specified joint in the bone chain.
+Imposta il vettore dell'asse di rotazione per l'articolazione specificata nella catena d'ossa.
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+Questo vettore è normalizzato da un processo interno e rappresenta l'asse attorno al quale la catena d'ossa può ruotare.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+Se la lunghezza del vettore è ``0``, è considerato come sinonimo di :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1242,7 +1242,7 @@ Imposta il nome dell'osso radice della catena d'ossa.
 
 |void| **set_rotation_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_rotation_axis>`
 
-Imposta l'asse di rotazione della catena d'ossa. Se impostato su un'asse specifico, si comporta come un giunto a cerniera. Questo valore viene memorizzato nella cache in ogni impostazione d'articolazione nella lista delle articolazioni.
+Imposta l'asse di rotazione della catena d'ossa. Se impostato su un asse specifico, si comporta come un giunto a cerniera. Questo valore viene memorizzato nella cache in ogni impostazione d'articolazione nella lista delle articolazioni.
 
 Gli assi si basano sullo spazio della posa di riferimento. Se ``axis`` è :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, è possibile specificare qualsiasi asse.
 
@@ -1260,11 +1260,11 @@ Qui, la posa di riferimento è la posa dell'osso immediatamente prima della simu
 
 |void| **set_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_rotation_axis_vector>`
 
-Sets the rotation axis vector of the bone chain. The value is cached in each joint setting in the joint list.
+Imposta il vettore dell'asse di rotazione della catena d'ossa. Il valore è memorizzato nella cache di ogni impostazione di articolazione nella lista di articolazioni.
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+Questo vettore è normalizzato da un processo interno e rappresenta l'asse attorno al quale la catena d'ossa può ruotare.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+Se la lunghezza del vettore è ``0``, è considerato come sinonimo di :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1298,7 +1298,7 @@ Imposta la curva di smorzamento per la forza di rigidità della catena d'ossa.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

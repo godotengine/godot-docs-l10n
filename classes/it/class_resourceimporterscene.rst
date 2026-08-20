@@ -16,7 +16,7 @@ Descrizione
 
 Vedi anche :ref:`ResourceImporterOBJ<class_ResourceImporterOBJ>`, che è utilizzato per i modelli OBJ che è possibile importare come :ref:`Mesh<class_Mesh>` indipendente o come scena.
 
-Ulteriori opzioni (come l'estrazione di singole mesh o materiali in file) sono disponibili nella finestra di dialogo **Impostazioni di importazione avanzate**. Questa finestra di dialogo è accessibile facendo doppio clic su una scena 3D nel pannello FileSystem o selezionando una scena 3D nel pannello FileSystem, andando al pannello Importazione e scegliendo **Avanzate**.
+Ulteriori opzioni (come l'estrazione di singole mesh o materiali in file) sono disponibili nella finestra di dialogo **Impostazioni di importazione avanzate**. Questa finestra di dialogo è accessibile facendo doppio clic su una scena 3D nel pannello Filesystem o selezionando una scena 3D nel pannello Filesystem, andando al pannello Importazione e scegliendo **Avanzate**.
 
 \ **Nota:** **ResourceImporterScene** non è *utilizzato* per i :ref:`PackedScene<class_PackedScene>`, come i file ``.tscn`` e ``.scn``.
 
@@ -178,7 +178,7 @@ Se ``true``, taglia l'inizio e la fine delle animazioni se non ci sono cambiamen
 
 :ref:`bool<class_bool>` **array_mesh/deduplicate_surfaces** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_array_mesh/deduplicate_surfaces>`
 
-If the 3D model file contains only one mesh, this option has no effect. If ``true`` and the 3D model file contains multiple meshes with the same surface names and formats, the surfaces will be merged together when the meshes are merged. This is useful for reducing the number of surfaces in the resulting mesh, and avoids duplicating materials. If ``false`` and the 3D model file contains multiple meshes, the surfaces will always be kept separate.
+Se il file del modello 3D contiene una sola mesh, questa opzione non ha alcun effetto. Se ``true`` e il file del modello 3D contiene più mesh con gli stessi nomi e formati di superficie, le superfici verranno unite assieme durante l'unione delle mesh. È utile per ridurre il numero di superfici nella mesh risultante ed evita di duplicare i materiali. Se ``false`` e il file del modello 3D contiene più mesh, le superfici verranno sempre mantenute separate.
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Il percorso in cui i materiali estratti sono salvati. Se vuoto, è utilizzato il
 
 :ref:`bool<class_bool>` **mesh_library/use_node_names_as_mesh_names** = ``false`` :ref:`🔗<class_ResourceImporterScene_property_mesh_library/use_node_names_as_mesh_names>`
 
-If ``true``, the mesh names will be set to the names of the nodes in the 3D model file. If ``false``, the mesh names will be set to the names of the meshes in the 3D model file. Enabling this is a common work-around when the author of the 3D model file did not properly set the mesh names in Blender or other 3D modeling apps. For example, a file may have a node named "Turret" with a mesh named "Cube.002", so enabling this option will set the mesh name to "Turret" instead of "Cube_002".
+Se ``true``, i nomi delle mesh verranno impostati sui nomi dei nodi nel file del modello 3D. Se ``false``, i nomi delle mesh verranno impostati sui nomi delle mesh nel file del modello 3D. Abilitare questa opzione è una soluzione comune quando l'autore del file del modello 3D non ha impostato correttamente i nomi delle mesh in Blender o in altre applicazioni di modellazione 3D. Ad esempio, un file potrebbe avere un nodo denominato "Turret" con una mesh denominata "Cube.002", quindi abilitando questa opzione il nome della mesh verrà impostato su "Turret" anziché su "Cube_002".
 
 .. rst-class:: classref-item-separator
 
@@ -274,9 +274,9 @@ Se ``true``, abilita la generazione di mesh per le ombre all'importazione. Ciò 
 
 :ref:`bool<class_bool>` **meshes/ensure_tangents** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_meshes/ensure_tangents>`
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+Se ``true``, genera le tangenti dei vertici usando `Mikktspace <http://www.mikktspace.com/>`__ se le mesh sorgenti non hanno dati per le tangenti. Quando possibile, si consiglia di lasciare che il software di modellazione 3D generi le tangenti durante l'esportazione invece di affidarsi a questa opzione. Le tangenti sono necessarie per visualizzare correttamente le mappe di normali e heightmap, insieme a qualsiasi funzionalità di un materiale o shader che le richiede.
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+Se non c'è bisogno di funzionalità che richiedono le tangenti, disabilitando questa opzione potrebbe ridurre le dimensioni del file risultante e velocizzare l'importazione se il file 3D sorgente non contiene tangenti.
 
 .. rst-class:: classref-item-separator
 
@@ -434,21 +434,21 @@ Se ``true``, userà i suffissi nei nomi dei nodi per determinare il tipo di nodo
 
 :ref:`bool<class_bool>` **skins/use_named_skins** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_skins/use_named_skins>`
 
-If checked, use named :ref:`Skin<class_Skin>`\ s for animation. The :ref:`MeshInstance3D<class_MeshInstance3D>` node contains 3 properties of relevance here: a skeleton :ref:`NodePath<class_NodePath>` pointing to the :ref:`Skeleton3D<class_Skeleton3D>` node (usually ``..``), a mesh, and a skin:
+Se spuntato, usa :ref:`Skin<class_Skin>` denominate per l'animazione. Il nodo :ref:`MeshInstance3D<class_MeshInstance3D>` contiene 3 proprietà qui rilevanti: un :ref:`NodePath<class_NodePath>` che punta al nodo :ref:`Skeleton3D<class_Skeleton3D>` (solitamente ``..``), una mesh e una skin:
 
-- The :ref:`Skeleton3D<class_Skeleton3D>` node contains a list of bones with names, their pose and rest, a name, and a parent bone.
+- Il nodo :ref:`Skeleton3D<class_Skeleton3D>` contiene un elenco di ossa con nomi, la loro posa e riposo, un nome e un osso padre.
 
-- The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
+- La mesh è composta da tutti i dati grezzi dei vertici necessari per visualizzare una mesh. In termini di mesh, sa come i vertici sono dipinti con peso e usa una numerazione interna spesso importata dal software di modellazione 3D.
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For each of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the :ref:`Skin<class_Skin>` contains each bone's name (if :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` is ``true``), or the bone's index within the :ref:`Skeleton3D<class_Skeleton3D>` list (if :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` is ``false``).
+- La skin contiene le informazioni necessarie per associare questa mesh a questo Skeleton3D. Per ognuno degli ID delle ossa interne scelti dal software di modellazione 3D, contiene due cose. Innanzitutto, una matrice nota come Bind Pose Matrix, Inverse Bind Matrix o IBM in breve. Inoltre, la :ref:`Skin<class_Skin>` contiene il nome di ogni osso (se :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` è ``true``), o l'indice dell'osso dentro l'elenco dello :ref:`Skeleton3D<class_Skeleton3D>` (se :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` è ``false``).
 
-Together, this information is enough to tell Godot how to use the bone poses in the :ref:`Skeleton3D<class_Skeleton3D>` node to render the mesh from each :ref:`MeshInstance3D<class_MeshInstance3D>`. Note that each :ref:`MeshInstance3D<class_MeshInstance3D>` may share binds, as is common in models exported from Blender, or each :ref:`MeshInstance3D<class_MeshInstance3D>` may use a separate :ref:`Skin<class_Skin>` object, as is common in models exported from other tools such as Maya.
+Insieme, queste informazioni sono sufficienti per dire a Godot come usare le pose dell'osso nel nodo :ref:`Skeleton3D<class_Skeleton3D>` per renderizzare la mesh da ogni :ref:`MeshInstance3D<class_MeshInstance3D>`. Nota che ogni :ref:`MeshInstance3D<class_MeshInstance3D>` può condividere i bind, come è comune nei modelli esportati da Blender, oppure ogni :ref:`MeshInstance3D<class_MeshInstance3D>` può usare un oggetto :ref:`Skin<class_Skin>` separato, come è comune nei modelli esportati da altri strumenti come Maya.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

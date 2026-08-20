@@ -7,14 +7,14 @@ CapsuleShape3D
 
 **Eredita:** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Una forma di capsula 3D utilizzata per la collisione fisica.
+Una forma a capsula 3D utilizzata per le collisioni fisiche.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Una forma di capsula 3D, progettata per l'uso in fisica. Solitamente utilizzata per fornire una forma per un :ref:`CollisionShape3D<class_CollisionShape3D>`.
+Una forma a capsula 3D, progettata per l'uso in fisica. Solitamente utilizzata per fornire una forma per un :ref:`CollisionShape3D<class_CollisionShape3D>`.
 
 \ **Prestazioni:** **CapsuleShape3D** è veloce per verificare le collisioni. È più veloce di :ref:`CylinderShape3D<class_CylinderShape3D>`, ma è più lenta di :ref:`SphereShape3D<class_SphereShape3D>` e :ref:`BoxShape3D<class_BoxShape3D>`.
 
@@ -105,7 +105,7 @@ Il raggio della capsula.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

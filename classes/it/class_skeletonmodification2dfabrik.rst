@@ -16,15 +16,15 @@ Una modificazione che utilizza FABRIK per manipolare una serie di nodi :ref:`Bon
 Descrizione
 ----------------------
 
-This :ref:`SkeletonModification2D<class_SkeletonModification2D>` uses an algorithm called Forward And Backward Reaching Inverse Kinematics, or FABRIK, to rotate a bone chain so that it reaches a target.
+Questo :ref:`SkeletonModification2D<class_SkeletonModification2D>` utilizza un algoritmo chiamato Forward And Backward Reaching Inverse Kinematics, o FABRIK, per ruotare una catena di ossa in modo che raggiunga un obiettivo.
 
-FABRIK works by knowing the positions and lengths of a series of bones, typically called a "bone chain". It first starts by running a forward pass, which places the final bone at the target's position. Then all other bones are moved towards the tip bone, so they stay at the defined bone length away. Then a backwards pass is performed, where the root/first bone in the FABRIK chain is placed back at the origin. Then all other bones are moved so they stay at the defined bone length away. This positions the bone chain so that it reaches the target when possible, but all of the bones stay the correct length away from each other.
+FABRIK funziona conoscendo le posizioni e le lunghezze di una serie di ossa, in genere chiamate "catena di ossa". Inizia prima eseguendo un passaggio in avanti, che posiziona l'osso finale nella posizione dell'obiettivo. Quindi tutte le altre ossa vengono spostate verso l'osso di punta, in modo che rimangano lontano della lunghezza d'ossa definita. Poi, viene eseguito un passaggio all'indietro, in cui l'osso radice/primo nella catena FABRIK viene riposizionato all'origine. Poi, tutte le altre ossa vengono spostate, in modo che rimangano lontano della lunghezza definita d'ossa. Ciò posiziona la catena di ossa così da raggiungere l'obiettivo quando possibile, ma tutte le ossa rimangono alla lunghezza corretta l'una dall'altra.
 
-Because of how FABRIK works, it often gives more natural results than those seen in :ref:`SkeletonModification2DCCDIK<class_SkeletonModification2DCCDIK>`.
+Grazie al modo in cui funziona FABRIK, spesso fornisce risultati più naturali di quelli visti in :ref:`SkeletonModification2DCCDIK<class_SkeletonModification2DCCDIK>`.
 
-\ **Note:** The FABRIK modifier has ``fabrik_joints``, which are the data objects that hold the data for each joint in the FABRIK chain. This is different from :ref:`Bone2D<class_Bone2D>` nodes! FABRIK joints hold the data needed for each :ref:`Bone2D<class_Bone2D>` in the bone chain used by FABRIK.
+\ **Nota:** Il modificatore FABRIK ha ``fabrik_joints``, che sono gli oggetti dati che contengono i dati per ogni articolazione nella catena FABRIK. Questo è diverso dai nodi :ref:`Bone2D<class_Bone2D>`! Le articolazioni FABRIK contengono i dati necessari per ogni :ref:`Bone2D<class_Bone2D>` nella catena di ossa utilizzata da FABRIK.
 
-To help control how the FABRIK joints move, a magnet vector can be passed, which can nudge the bones in a certain direction prior to solving, giving a level of control over the final result.
+Per aiutare a controllare il modo in cui si muovono le articolazioni FABRIK, è possibile passare un vettore magnete, che può spingere le ossa in una certa direzione prima della risoluzione, dando un certo controllo sul risultato finale.
 
 .. rst-class:: classref-reftable-group
 
@@ -212,7 +212,7 @@ Imposta se l'articolazione all'indice ``joint_idx`` utilizzerà la rotazione del
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

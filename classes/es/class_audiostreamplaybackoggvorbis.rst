@@ -14,7 +14,7 @@ Playback class used for :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`.
 Descripción
 ----------------------
 
-Playback component of :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`. Uses :ref:`OggPacketSequencePlayback<class_OggPacketSequencePlayback>` for playback data.
+Componente de reproducción de :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`. Utiliza :ref:`OggPacketSequencePlayback<class_OggPacketSequencePlayback>` para los datos de reproducción.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

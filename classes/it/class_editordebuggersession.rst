@@ -112,7 +112,7 @@ Descrizioni dei metodi
 
 |void| **add_session_tab**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorDebuggerSession_method_add_session_tab>`
 
-Aggiunge il ``control`` specificato all'interfaccia utente della sessione di debug nel pannello inferiore del debugger. Il nome del nodo ``control`` sarà usato come titolo della scheda.
+Aggiunge il ``control`` specificato all'interfaccia utente della sessione di debug nel pannello inferiore Debugger. Il nome del nodo ``control`` sarà usato come titolo della scheda.
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ Restituisce ``true`` se l'istanza remota collegata può essere sottoposta a debu
 
 |void| **remove_session_tab**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorDebuggerSession_method_remove_session_tab>`
 
-Rimuove il ``control`` specificato dall'interfaccia utente della sessione di debug nel pannello inferiore del debugger.
+Rimuove il ``control`` specificato dall'interfaccia utente della sessione di debug nel pannello inferiore Debugger.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ Commuta il ``profiler`` specificato sull'istanza remota allegata, passando facol
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

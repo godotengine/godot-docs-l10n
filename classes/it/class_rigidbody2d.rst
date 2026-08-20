@@ -18,15 +18,15 @@ Descrizione
 
 **RigidBody2D** implementa la fisica 2D completa. Non può essere controllato direttamente, ma è necessario applicargli delle forze (gravità, impulsi, ecc.) e la simulazione fisica calcolerà il movimento risultante, la rotazione, reagirà alle collisioni e influenzerà altri corpi fisici sul suo percorso.
 
-Il comportamento del corpo può essere regolato tramite :ref:`lock_rotation<class_RigidBody2D_property_lock_rotation>`, :ref:`freeze<class_RigidBody2D_property_freeze>` e :ref:`freeze_mode<class_RigidBody2D_property_freeze_mode>`. Modificando varie proprietà dell'oggetto, come :ref:`mass<class_RigidBody2D_property_mass>`, puoi controllare come la simulazione fisica agisce su di esso.
+È possibile regolare il comportamento del corpo tramite :ref:`lock_rotation<class_RigidBody2D_property_lock_rotation>`, :ref:`freeze<class_RigidBody2D_property_freeze>` e :ref:`freeze_mode<class_RigidBody2D_property_freeze_mode>`. Modificando varie proprietà dell'oggetto, come :ref:`mass<class_RigidBody2D_property_mass>`, puoi controllare come la simulazione fisica agisce su di esso.
 
-Un corpo rigido manterrà sempre la sua forma e dimensione, anche quando gli vengono applicate delle forze. È utile per oggetti con cui è possibile interagire in un ambiente, come un albero che può essere abbattuto o una pila di casse che può essere spinta.
+Un corpo rigido manterrà sempre la sua forma e dimensione, anche quando gli vengono applicate forze. È utile per oggetti con cui è possibile interagire in un ambiente, come un albero da abbattere o una pila di casse che si può spingere.
 
 Se devi influenzare direttamente il corpo, preferisci implementare :ref:`_integrate_forces()<class_RigidBody2D_private_method__integrate_forces>` in quanto ti consente di accedere direttamente allo stato fisico.
 
 Se hai bisogno di sovrascrivere il comportamento fisico predefinito, puoi scrivere una funzione di integrazione delle forze personalizzata. Vedi :ref:`custom_integrator<class_RigidBody2D_property_custom_integrator>`.
 
-\ **Nota:** Cambiare la trasformazione 2D o :ref:`linear_velocity<class_RigidBody2D_property_linear_velocity>` di un **RigidBody2D** molto spesso può portare ad alcuni comportamenti imprevedibili. Questo accade anche quando un **RigidBody2D** è il discendente di un nodo in continuo movimento, come un altro **RigidBody2D**, poiché ciò causerà l'impostazione della sua trasformazione globale ogni volta che il suo antenato si muove.
+\ **Nota:** Cambiare la trasformazione 2D o :ref:`linear_velocity<class_RigidBody2D_property_linear_velocity>` di un **RigidBody2D** molto spesso può portare ad alcuni comportamenti imprevedibili. Questo accade anche quando un **RigidBody2D** è il discendente di un nodo in continuo movimento, come un altro **RigidBody2D**, poiché ciò farà impostare la sua trasformazione globale ogni volta che il suo antenato si muove.
 
 .. rst-class:: classref-introduction-group
 
@@ -698,7 +698,7 @@ Definisce come :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` è app
 - |void| **set_linear_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_linear_velocity**\ (\ )
 
-La velocità lineare del corpo in pixel al secondo. Può essere usata sporadicamente, ma **non impostarla per ogni frame**, perché la fisica potrebbe essere eseguita in un altro thread e funzionare a una granularità diversa. Usa :ref:`_integrate_forces()<class_RigidBody2D_private_method__integrate_forces>` come ciclo di processo per un controllo preciso dello stato del corpo.
+La velocità lineare del corpo in pixel al secondo. Si può usare sporadicamente, ma **non impostarla a ogni frame**, perché la fisica potrebbe essere eseguita in un altro thread e funzionare a una granularità diversa. Usa :ref:`_integrate_forces()<class_RigidBody2D_private_method__integrate_forces>` come ciclo di elaborazione per avere preciso controllo sullo stato del corpo.
 
 .. rst-class:: classref-item-separator
 
@@ -804,7 +804,7 @@ Descrizioni dei metodi
 
 |void| **_integrate_forces**\ (\ state\: :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`\ ) |virtual| :ref:`🔗<class_RigidBody2D_private_method__integrate_forces>`
 
-Chiamato durante l'elaborazione di fisica, consente di leggere e modificare in modo sicuro lo stato di simulazione per l'oggetto. Per impostazione predefinita, viene chiamato prima dell'integrazione predefinita delle forze, ma la proprietà :ref:`custom_integrator<class_RigidBody2D_property_custom_integrator>` consente di disabilitare l'integrazione delle forze predefinita e di eseguire un'integrazione delle forze completamente personalizzata per un corpo.
+Chiamato durante l'elaborazione della fisica, consente di leggere e modificare in modo sicuro lo stato di simulazione per l'oggetto. Normalmente, viene chiamato prima dell'integrazione predefinita delle forze, ma la proprietà :ref:`custom_integrator<class_RigidBody2D_property_custom_integrator>` consente di disabilitare l'integrazione standard delle forze e di integrarle in modo completamente personalizzato per un corpo.
 
 .. rst-class:: classref-item-separator
 
@@ -856,7 +856,7 @@ Aggiunge una forza rotazionale costante senza influenzare la posizione che conti
 
 |void| **apply_central_force**\ (\ force\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_RigidBody2D_method_apply_central_force>`
 
-Applica una forza direzionale senza influenzare la rotazione. Una forza è dipendente dal tempo e pensata per essere applicata a ogni aggiornamento della fisica
+Applica una forza direzionale senza influenzare la rotazione. Una forza è dipendente dal tempo e dovrebbe essere applicata a ogni aggiornamento della fisica
 
 Ciò equivale a usare :ref:`apply_force()<class_RigidBody2D_method_apply_force>` al centro di massa del corpo.
 
@@ -886,7 +886,7 @@ Ciò equivale a usare :ref:`apply_impulse()<class_RigidBody2D_method_apply_impul
 
 |void| **apply_force**\ (\ force\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_RigidBody2D_method_apply_force>`
 
-Applica una forza posizionata al corpo. Una forza è dipendente dal tempo e deve essere applicata a ogni aggiornamento della fisica.
+Applica una forza posizionata al corpo. Una forza è dipendente dal tempo e dovrebbe essere applicata a ogni aggiornamento della fisica.
 
 \ ``position`` è lo scostamento dall'origine del corpo in coordinate globali.
 
@@ -948,7 +948,7 @@ Un impulso è indipendente dal tempo! Applicare un impulso a ogni frame risulter
 
 Restituisce una lista dei corpi in collisione con questo corpo. Richiede che :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` sia impostato su ``true`` e che :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` sia impostato su un valore alto abbastanza da rilevare tutte le collisioni.
 
-\ **Nota:** Il risultato di questo test non è immediato dopo aver spostato gli oggetti. Per le prestazioni, la lista delle collisioni è aggiornata una volta per frame e prima del passaggio di fisica. Si consiglia invece di usare i segnali.
+\ **Nota:** Il risultato di questo test non è immediato dopo aver spostato gli oggetti. Per motivi di prestazioni, la lista delle collisioni è aggiornata una sola volta per frame e prima del passaggio di fisica. Si consiglia invece di usare i segnali.
 
 .. rst-class:: classref-item-separator
 
@@ -980,7 +980,7 @@ Imposta la velocità del corpo sull'asse fornito. La velocità nell'asse vettori
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

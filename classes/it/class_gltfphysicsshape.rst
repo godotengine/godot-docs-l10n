@@ -146,7 +146,7 @@ Questa è l'unica variabile non utilizzata nel metodo :ref:`to_node()<class_GLTF
 - |void| **set_mesh_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_mesh_index**\ (\ )
 
-L'indice della mesh della forma nel file glTF. È utilizzato solo quando il tipo di forma è ``"hull"`` (hull convesso) o ``"trimesh"`` (trimesh concavo).
+L'indice della mesh della forma nel file glTF. È utilizzato solo quando il tipo di forma è ``"hull"`` (inviluppo convesso) o ``"trimesh"`` (trimesh concavo).
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ Descrizioni dei metodi
 
 :ref:`GLTFPhysicsShape<class_GLTFPhysicsShape>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFPhysicsShape_method_from_dictionary>`
 
-Crea una nuova istanza di GLTFPhysicsShape elaborando il :ref:`Dictionary<class_Dictionary>` specificato.
+Crea una nuova istanza di GLTFPhysicsShape interpretando il :ref:`Dictionary<class_Dictionary>` specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -280,7 +280,7 @@ Converte questa istanza di GLTFPhysicsShape in una risorsa :ref:`Shape3D<class_S
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

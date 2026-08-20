@@ -14,7 +14,7 @@ Una textura 2D rellena con ruido generado por un objeto :ref:`Noise<class_Noise>
 Descripción
 ----------------------
 
-Utiliza la librería :ref:`FastNoiseLite<class_FastNoiseLite>` u otros generadores de ruido para rellenar los datos de la textura del tamaño deseado. **NoiseTexture2D** también puede generar texturas de mapa normal.
+Utiliza la biblioteca :ref:`FastNoiseLite<class_FastNoiseLite>` u otros generadores de ruido para rellenar los datos de la textura del tamaño deseado. **NoiseTexture2D** también puede generar texturas de mapa normal.
 
 La clase utiliza :ref:`Thread<class_Thread>`\ s para generar los datos de la textura internamente, por lo que :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` puede devolver ``null`` si el proceso de generación no se ha completado todavía. En ese caso, debes esperar a que la textura se genere antes de acceder a la imagen y a los datos de bytes generados:
 

@@ -16,15 +16,15 @@ Classe di base per tutti gli oggetti della scena.
 Descrizione
 ----------------------
 
-I nodi sono i mattoni di Godot. Possono essere assegnati come figli di un altro nodo, risultando in una disposizione ad albero. Un determinato nodo può contenere un numero qualsiasi di nodi come figli con il requisito che tutti i fratelli (figli diretti di un nodo) debbano avere nomi univoci.
+I nodi sono i mattoncini di Godot. Possono essere assegnati come figli di un altro nodo, risultando in una disposizione ad albero. Un determinato nodo può contenere un numero qualsiasi di nodi come figli, con il requisito che tutti i fratelli (figli diretti di un nodo) debbano avere nomi univoci.
 
-Un albero di nodi è chiamato *scena*. Le scene possono essere salvate su disco e quindi istanziate in altre scene. Ciò consente un'elevata flessibilità nell'architettura e nel modello di dati dei progetti Godot.
+Un albero di nodi è chiamato *scena*. Le scene si possono salvare su disco e poi istanziare in altre scene. Ciò consente un'elevata flessibilità nell'architettura e nel modello di dati dei progetti Godot.
 
 \ **Albero di scene:** il :ref:`SceneTree<class_SceneTree>` contiene l'albero attivo dei nodi. Quando un nodo viene aggiunto all'albero di scene, riceve la notifica :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` e il suo callback :ref:`_enter_tree()<class_Node_private_method__enter_tree>` viene attivato. I nodi figli vengono sempre aggiunti *dopo* il loro nodo padre, ovvero il callback :ref:`_enter_tree()<class_Node_private_method__enter_tree>` di un nodo padre verrà attivato prima di quello del suo figlio.
 
 Una volta che tutti i nodi sono stati aggiunti nell'albero di scene, ricevono la notifica :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` e i rispettivi callback :ref:`_ready()<class_Node_private_method__ready>` vengono attivati. Per un insieme di nodi, il callback :ref:`_ready()<class_Node_private_method__ready>` viene chiamato in ordine inverso, partendo dai figli e risalendo ai nodi padre.
 
-Ciò significa che quando viene aggiunto un nodo all'albero di scene, per i callback sarà utilizzato l'ordine seguente: :ref:`_enter_tree()<class_Node_private_method__enter_tree>` del genitore, :ref:`_enter_tree()<class_Node_private_method__enter_tree>` dei figli, :ref:`_ready()<class_Node_private_method__ready>` dei figli e infine :ref:`_ready()<class_Node_private_method__ready>` del genitore (ricorsivamente per l'intero albero di scene).
+Ciò significa che quando viene aggiunto un nodo all'albero di scene, per i callback l'ordine è il seguente: :ref:`_enter_tree()<class_Node_private_method__enter_tree>` del genitore, :ref:`_enter_tree()<class_Node_private_method__enter_tree>` dei figli, :ref:`_ready()<class_Node_private_method__ready>` dei figli e infine :ref:`_ready()<class_Node_private_method__ready>` del genitore (ricorsivamente per l'intero albero di scene).
 
 \ **Elaborazione:** i nodi possono sovrascrivere lo stato di "processo", in modo da ricevere un callback su ogni frame che richiede loro di elaborare (fare qualcosa). L'elaborazione normale (callback :ref:`_process()<class_Node_private_method__process>`, attivato con :ref:`set_process()<class_Node_method_set_process>`) avviene il più velocemente possibile e dipende dal frame rate, con il tempo di elaborazione *delta* (in secondi) passato come argomento. L'elaborazione della fisica (callback :ref:`_physics_process()<class_Node_private_method__physics_process>`, attivato con :ref:`set_physics_process()<class_Node_method_set_physics_process>`) avviene un numero fisso di volte al secondo (60 come predefinito) ed è utile per il codice che riguarda il motore della fisica.
 
@@ -38,7 +38,7 @@ Infine, quando un nodo viene liberato con :ref:`Object.free()<class_Object_metho
 
 \ **Connessione in rete con nodi:** Dopo essersi connessi a un server (o averne creato uno, vedi :ref:`ENetMultiplayerPeer<class_ENetMultiplayerPeer>`), è possibile utilizzare il sistema di RPC ("Remote Procedure Call") integrato per comunicare in rete. Chiamando :ref:`rpc()<class_Node_method_rpc>` con il nome di un metodo, verrà chiamato localmente e in tutti i peer connessi (peer = client e il server che accetta le connessioni). Per identificare quale nodo riceve la chiamata RPC, Godot utilizzerà il suo :ref:`NodePath<class_NodePath>` (assicurati che i nomi dei nodi siano gli stessi su tutti i peer). Inoltre, dai un'occhiata al tutorial di rete di alto livello e alle demo corrispondenti.
 
-\ **Nota:** La proprietà ``script`` fa parte della classe :ref:`Object<class_Object>`, non **Node**. Non è esposta come la maggior parte delle proprietà, ma ha un setter e un getter (vedere :ref:`Object.set_script()<class_Object_method_set_script>` e :ref:`Object.get_script()<class_Object_method_get_script>`).
+\ **Nota:** La proprietà ``script`` fa parte della classe :ref:`Object<class_Object>`, non **Node**. Non è esposta come la maggior parte delle proprietà, ma ha un setter e un getter (vedi :ref:`Object.set_script()<class_Object_method_set_script>` e :ref:`Object.get_script()<class_Object_method_get_script>`).
 
 .. rst-class:: classref-introduction-group
 
@@ -487,7 +487,7 @@ Eredita :ref:`process_mode<class_Node_property_process_mode>` dal nodo padre. Qu
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_PAUSABLE** = ``1``
 
-Processes when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``false``. This is the inverse of :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>`, and the default for the root node.
+Elabora quando :ref:`SceneTree.paused<class_SceneTree_property_paused>` è ``false``. Questo è l'inverso di :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>` e l'impostazione predefinita per il nodo radice.
 
 .. _class_Node_constant_PROCESS_MODE_WHEN_PAUSED:
 
@@ -495,7 +495,7 @@ Processes when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``fal
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_WHEN_PAUSED** = ``2``
 
-Processes **only** when :ref:`SceneTree.paused<class_SceneTree_property_paused>` is ``true``. This is the inverse of :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`.
+Elabora **solo** quando :ref:`SceneTree.paused<class_SceneTree_property_paused>` è ``true``. Questo è l'inverso di :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`.
 
 .. _class_Node_constant_PROCESS_MODE_ALWAYS:
 
@@ -503,7 +503,7 @@ Processes **only** when :ref:`SceneTree.paused<class_SceneTree_property_paused>`
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_ALWAYS** = ``3``
 
-Always processes. Keeps processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
+Elabora sempre. Continua a elaborare, ignorando :ref:`SceneTree.paused<class_SceneTree_property_paused>`. Questo è l'inverso di :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
 
 .. _class_Node_constant_PROCESS_MODE_DISABLED:
 
@@ -511,7 +511,7 @@ Always processes. Keeps processing, ignoring :ref:`SceneTree.paused<class_SceneT
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_DISABLED** = ``4``
 
-Never processes. Completely disables processing, ignoring :ref:`SceneTree.paused<class_SceneTree_property_paused>`. This is the inverse of :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
+Non elabora mai. Disattiva completamente l'elaborazione, ignorando :ref:`SceneTree.paused<class_SceneTree_property_paused>`. Questo è l'inverso di :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -663,7 +663,7 @@ Duplica utilizzando :ref:`PackedScene.instantiate()<class_PackedScene_method_ins
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_INTERNAL_STATE** = ``16``
 
-Duplicate also non-serializable variables (i.e. without :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`).
+Duplica anche le variabili non serializzabili (ovvero senza :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`).
 
 .. _class_Node_constant_DUPLICATE_DEFAULT:
 
@@ -671,11 +671,11 @@ Duplicate also non-serializable variables (i.e. without :ref:`@GlobalScope.PROPE
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_DEFAULT** = ``15``
 
-Duplicate using default flags. This constant is useful to add or remove a single flag.
+Duplica usando i flag predefiniti. Questa costante è utile per aggiungere o rimuovere un singolo flag.
 
 ::
 
-    # Duplicate non-exported variables.
+    # Duplica le variabili non esportate.
     var dupe = duplicate(DUPLICATE_DEFAULT | DUPLICATE_INTERNAL_STATE)
 
 .. rst-class:: classref-item-separator
@@ -744,9 +744,9 @@ Traduci sempre automaticamente. Questo è l'inverso di :ref:`AUTO_TRANSLATE_MODE
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **AUTO_TRANSLATE_MODE_DISABLED** = ``2``
 
-Never automatically translate. This is the inverse of :ref:`AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`.
+Non tradurre mai automaticamente. Questo è l'inverso di :ref:`AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`.
 
-String parsing for translation template generation will be skipped for this node and children that are set to :ref:`AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`.
+L'analisi delle stringhe per generare i modelli di traduzione sarà saltata per questo nodo, così come per i figli impostati su :ref:`AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`.
 
 .. rst-class:: classref-section-separator
 
@@ -1067,9 +1067,9 @@ Notifica ricevuta quando la finestra viene mossa.
 
 **NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED** = ``1013`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED>`
 
-Notification received when the output max linear value returned by :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed.
+Notifica ricevuta quando il valore lineare massimo di output restituito da :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` è cambiato.
 
-This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen.
+Ciò avviene quando l'output HDR è abilitato o disabilitato e quando i valori di luminanza dell'output HDR della finestra cambiano, ad esempio quando il giocatore regola la luminosità dello schermo o sposta la finestra su un altro schermo.
 
 .. _class_Node_constant_NOTIFICATION_OS_MEMORY_WARNING:
 
@@ -1125,9 +1125,9 @@ Implementato su piattaforme desktop, se il gestore dei crash è abilitato.
 
 **NOTIFICATION_OS_IME_UPDATE** = ``2013`` :ref:`🔗<class_Node_constant_NOTIFICATION_OS_IME_UPDATE>`
 
-Notification received from the OS when an update of the Input Method Engine occurs (e.g. change of IME cursor position or composition string).
+Notifica ricevuta dal sistema operativo quando avviene un aggiornamento dell'Input Method Engine (ad esempio, modifica della posizione del cursore IME o della stringa di composizione).
 
-Implemented on desktop and web platforms.
+Implementata solo sulle piattaforme desktop e web.
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_RESUMED:
 
@@ -1185,7 +1185,7 @@ Notifica ricevuta quando il :ref:`TextServer<class_TextServer>` viene modificato
 
 **NOTIFICATION_APPLICATION_PIP_MODE_ENTERED** = ``2019`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_ENTERED>`
 
-Notification received when the application enters picture-in-picture mode.
+Notifica ricevuta quando l'applicazione entra nella modalità picture-in-picture.
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED:
 
@@ -1193,7 +1193,7 @@ Notification received when the application enters picture-in-picture mode.
 
 **NOTIFICATION_APPLICATION_PIP_MODE_EXITED** = ``2020`` :ref:`🔗<class_Node_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED>`
 
-Notification received when the application exits picture-in-picture mode.
+Notifica ricevuta quando l'applicazione esce dalla modalità picture-in-picture.
 
 .. _class_Node_constant_NOTIFICATION_ACCESSIBILITY_UPDATE:
 
@@ -1231,9 +1231,9 @@ Descrizioni delle proprietà
 - |void| **set_auto_translate_mode**\ (\ value\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ )
 - :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_auto_translate_mode**\ (\ )
 
-Defines if any text should automatically change to its translated version depending on the current locale (for nodes such as :ref:`Label<class_Label>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`Window<class_Window>`, etc.). Also decides if the node's strings should be parsed for translation template generation.
+Definisce se un testo dovrebbe essere automaticamente convertito nella sua versione tradotta in base alle impostazioni locali attuali (per nodi come :ref:`Label<class_Label>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`Window<class_Window>`, ecc.). Decide anche se le stringhe del nodo dovrebbero essere analizzate per generare i modelli di traduzione.
 
-\ **Note:** For the root node, auto translate mode can also be set via :ref:`ProjectSettings.internationalization/rendering/root_node_auto_translate<class_ProjectSettings_property_internationalization/rendering/root_node_auto_translate>`.
+\ **Nota:** Per il nodo radice, la modalità di traduzione automatica si può impostare anche tramite :ref:`ProjectSettings.internationalization/rendering/root_node_auto_translate<class_ProjectSettings_property_internationalization/rendering/root_node_auto_translate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1250,7 +1250,7 @@ Defines if any text should automatically change to its translated version depend
 - |void| **set_editor_description**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_editor_description**\ (\ )
 
-Una descrizione facoltativa per il nodo. Sarà visualizzata come suggerimento quando si passa il mouse sul nodo nel pannello di Scena nell'editor.
+Una descrizione facoltativa per il nodo. Sarà visualizzata come suggerimento quando si passa il mouse sul nodo nel pannello Scena nell'editor.
 
 .. rst-class:: classref-item-separator
 
@@ -1306,7 +1306,7 @@ Il nome del nodo. Questo nome deve essere univoco tra i fratelli (altri nodi fig
 
 Il proprietario di questo nodo. Il proprietario deve essere un antenato di questo nodo. Quando si impacchetta il nodo proprietario in un :ref:`PackedScene<class_PackedScene>`, tutti i nodi posseduti da esso sono salvati con esso. Vedi anche :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`.
 
-\ **Nota:** Nell'editor, i nodi non posseduti dalla radice della scena di solito non sono visualizzati nel pannello di Scena e **non** saranno salvati. Per evitare ciò, ricorda di impostare il proprietario dopo aver chiamato :ref:`add_child()<class_Node_method_add_child>`.
+\ **Nota:** Nell'editor, i nodi non posseduti dalla radice della scena di solito non sono visualizzati nel pannello Scena e **non** saranno salvati. Per correggerlo, ricorda di impostare il proprietario dopo aver chiamato :ref:`add_child()<class_Node_method_add_child>`.
 
 \ **Nota:** Il proprietario deve essere la radice della scena attuale. Consulta la sezione `Creazione di istanze di scene <../tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__ nella documentazione per ulteriori informazioni.
 
@@ -1348,7 +1348,7 @@ Come predefinito, i nodi ereditano la modalità di interpolazione fisica dal nod
 - |void| **set_process_mode**\ (\ value\: :ref:`ProcessMode<enum_Node_ProcessMode>`\ )
 - :ref:`ProcessMode<enum_Node_ProcessMode>` **get_process_mode**\ (\ )
 
-Il comportamento di elaborazione del nodo. Per verificare se il nodo può eseguire la sua elaborazione nella sua modalità attuale, usa :ref:`can_process()<class_Node_method_can_process>`.
+Il comportamento di elaborazione del nodo. Per verificare se il nodo può elaborare nella sua modalità attuale, usa :ref:`can_process()<class_Node_method_can_process>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1534,7 +1534,7 @@ Restituire un array vuoto non produce avvisi.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_configuration_warnings**\ (\ ) |virtual| |const| :ref:`🔗<class_Node_private_method__get_configuration_warnings>`
 
-Gli elementi nell'array restituiti da questo metodo sono visualizzati come avvisi nel pannello di Scena se lo script che lo sovrascrive è uno script ``tool``.
+Gli elementi nell'array restituiti da questo metodo sono visualizzati come avvisi nel pannello Scena se lo script che lo sovrascrive è uno script ``tool``.
 
 Restituire un array vuoto non produce avvisi.
 
@@ -1784,13 +1784,13 @@ Usa :ref:`add_child()<class_Node_method_add_child>` invece di questo metodo se n
 
 |void| **add_to_group**\ (\ group\: :ref:`StringName<class_StringName>`, persistent\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node_method_add_to_group>`
 
-Adds the node to the ``group``. Groups can be helpful to organize a subset of nodes, for example ``"enemies"`` or ``"collectables"``. See notes in the description, and the group methods in :ref:`SceneTree<class_SceneTree>`.
+Aggiunge il nodo al gruppo denominato ``group``. I gruppi possono essere utili per organizzare un sottoinsieme di nodi, ad esempio ``"nemici"`` o ``"collezionabili"``. Vedi le note nella descrizione e i metodi sui gruppi in :ref:`SceneTree<class_SceneTree>`.
 
-If ``persistent`` is ``true``, the group will be stored when saved inside a :ref:`PackedScene<class_PackedScene>`. All groups created and displayed in the Groups dock are persistent.
+Se ``persistent`` è ``true``, il gruppo sarà memorizzato quando salvato all'interno di un :ref:`PackedScene<class_PackedScene>`. Tutti i gruppi creati e visualizzati nel pannello Gruppi sono persistenti.
 
-\ **Note:** To improve performance, the order of group names is *not* guaranteed and may vary between project runs. Therefore, do not rely on the group order.
+\ **Nota:** per migliorare le prestazioni, l'ordine dei nomi dei gruppi *non* è garantito e può variare tra le esecuzioni del progetto. Pertanto, non fare affidamento sull'ordine dei gruppi.
 
-\ **Note:** :ref:`SceneTree<class_SceneTree>`'s group methods will *not* work on this node if not inside the tree (see :ref:`is_inside_tree()<class_Node_method_is_inside_tree>`).
+\ **Nota:** I metodi sui gruppi di :ref:`SceneTree<class_SceneTree>` *non* funzioneranno su questo nodo se non si trova all'interno dell'albero (vedi :ref:`is_inside_tree()<class_Node_method_is_inside_tree>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1951,9 +1951,9 @@ Duplica il nodo, restituendo un nuovo nodo con tutte le sue proprietà, segnali,
 
 Trova il primo discendente di questo nodo il cui :ref:`name<class_Node_property_name>` corrisponde a ``pattern``, restituendo ``null`` se nessuna corrispondenza viene trovata. La corrispondenza viene effettuata sui nomi dei nodi, *non* sui loro percorsi, tramite :ref:`String.match()<class_String_method_match>`. Pertanto, è sensibile alle maiuscole e alle minuscole, ``"*"`` corrisponde a zero o più caratteri e ``"?"`` corrisponde a qualsiasi singolo carattere.
 
-Se ``recursive`` è ``false``, solo i figli diretti di questo nodo sono controllati. I nodi sono controllati in ordine ad albero, quindi è controllato prima il primo figlio diretto di questo nodo, poi i suoi figli diretti, ecc., prima di passare al secondo figlio diretto e così via. Nella ricerca sono inclusi anche i figli interni (vedi il parametro ``internal`` in :ref:`add_child()<class_Node_method_add_child>`).
+Se ``recursive`` è ``false``, solo i figli diretti di questo nodo sono verificati. I nodi sono verificati in ordine ad albero, quindi è verificato prima il primo figlio diretto di questo nodo, poi i suoi figli diretti, ecc., prima di passare al secondo figlio diretto e così via. Nella ricerca sono inclusi anche i figli interni (vedi il parametro ``internal`` in :ref:`add_child()<class_Node_method_add_child>`).
 
-Se ``owned`` è ``true``, sono controllati solo i discendenti con un nodo :ref:`owner<class_Node_property_owner>` valido.
+Se ``owned`` è ``true``, sono verificati solo i discendenti con un nodo :ref:`owner<class_Node_property_owner>` valido.
 
 \ **Nota:** Questo metodo può essere molto lento. Considera di memorizzare un riferimento al nodo trovato in una variabile. In alternativa, usa :ref:`get_node()<class_Node_method_get_node>` con nomi univoci (vedi :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`).
 
@@ -1969,17 +1969,17 @@ Se ``owned`` è ``true``, sono controllati solo i discendenti con un nodo :ref:`
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **find_children**\ (\ pattern\: :ref:`String<class_String>`, type\: :ref:`String<class_String>` = "", recursive\: :ref:`bool<class_bool>` = true, owned\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Node_method_find_children>`
 
-Finds all descendants of this node whose names match ``pattern``, returning an empty :ref:`Array<class_Array>` if no match is found. The matching is done against node names, *not* their paths, through :ref:`String.match()<class_String_method_match>`. As such, it is case-sensitive, ``"*"`` matches zero or more characters, and ``"?"`` matches any single character.
+Trova tutti i discendenti di questo nodo i cui nomi corrispondono a ``pattern``, restituendo un :ref:`Array<class_Array>` vuoto se nessuna corrispondenza viene trovata. La corrispondenza viene effettuata sui nomi dei nodi, *non* sui loro percorsi, tramite :ref:`String.match()<class_String_method_match>`. Pertanto, è sensibile alle maiuscole e alle minuscole, ``"*"`` corrisponde a zero o più caratteri e ``"?"`` corrisponde a qualsiasi singolo carattere.
 
-If ``type`` is not empty, only descendants inheriting from ``type`` are included (see :ref:`Object.is_class()<class_Object_method_is_class>`).
+Se ``type`` non è vuoto, solo i discendenti che ereditano da ``type`` sono inclusi (vedi :ref:`Object.is_class()<class_Object_method_is_class>`).
 
-If ``recursive`` is ``false``, only this node's direct children are checked. Nodes are checked in tree order, so this node's first direct child is checked first, then its own direct children, etc., before moving to the second direct child, and so on. Internal children are also included in the search (see ``internal`` parameter in :ref:`add_child()<class_Node_method_add_child>`).
+Se ``recursive`` è ``false``, solo i figli diretti di questo nodo sono verificati. I nodi sono verificati in ordine ad albero, quindi è verificato prima il primo figlio diretto di questo nodo, poi i suoi figli diretti, ecc., prima di passare al secondo figlio diretto e così via. Nella ricerca sono inclusi anche i figli interni (vedi il parametro ``internal`` in :ref:`add_child()<class_Node_method_add_child>`).
 
-If ``owned`` is ``true``, only descendants with a valid :ref:`owner<class_Node_property_owner>` node are checked.
+Se ``owned`` è ``true``, sono verificati solo i discendenti con un nodo :ref:`owner<class_Node_property_owner>` valido.
 
-\ **Note:** This method can be very slow. Consider storing references to the found nodes in a variable.
+\ **Nota:** Questo metodo può essere molto lento. Considera di memorizzare i riferimenti ai nodi trovati in una variabile
 
-\ **Note:** To find a single descendant node matching a pattern, see :ref:`find_child()<class_Node_method_find_child>`.
+\ **Nota:** Per trovare un singolo nodo discendente che corrisponde a uno schema, vedi :ref:`find_child()<class_Node_method_find_child>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2414,7 +2414,7 @@ Può stampare, ad esempio:
 
 :ref:`String<class_String>` **get_tree_string_pretty**\ (\ ) :ref:`🔗<class_Node_method_get_tree_string_pretty>`
 
-Simile a :ref:`get_tree_string()<class_Node_method_get_tree_string>`, restituisce l'albero come :ref:`String<class_String>`. Questa versione visualizza una rappresentazione più grafica simile a quella visualizzata nel pannello di Scena. È utile per ispezionare alberi più grandi.
+Simile a :ref:`get_tree_string()<class_Node_method_get_tree_string>`, restituisce l'albero come :ref:`String<class_String>`. Questa versione visualizza una rappresentazione più grafica simile a quella visualizzata nel pannello Scena. È utile per ispezionare alberi più grandi.
 
 Può stampare, ad esempio:
 
@@ -2611,7 +2611,7 @@ Restituisce ``true`` se l'interpolazione fisica è abilitata per questo nodo (ve
 
 Restituisce ``true`` se l'interpolazione fisica è abilitata (vedi :ref:`physics_interpolation_mode<class_Node_property_physics_interpolation_mode>`) **e** abilitata nello :ref:`SceneTree<class_SceneTree>`.
 
-Questa è una versione conveniente di :ref:`is_physics_interpolated()<class_Node_method_is_physics_interpolated>` che controlla anche se l'interpolazione fisica è abilitata globalmente.
+Questa è una versione conveniente di :ref:`is_physics_interpolated()<class_Node_method_is_physics_interpolated>` che verifica anche se l'interpolazione fisica è abilitata globalmente.
 
 Vedi :ref:`SceneTree.physics_interpolation<class_SceneTree_property_physics_interpolation>` e :ref:`ProjectSettings.physics/common/physics_interpolation<class_ProjectSettings_property_physics/common/physics_interpolation>`.
 
@@ -2759,9 +2759,9 @@ Simile a :ref:`call_thread_safe()<class_Node_method_call_thread_safe>`, ma per l
 
 |void| **print_orphan_nodes**\ (\ ) |static| :ref:`🔗<class_Node_method_print_orphan_nodes>`
 
-Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). Useful for debugging.
+Stampa tutti i nodi orfani (nodi al di fuori del :ref:`SceneTree<class_SceneTree>`). Utile per il debug.
 
-\ **Note:** This method only works in debug builds. It does nothing in a project exported in release mode.
+\ **Nota:** Questo metodo funziona solo nelle build di debug. Non fa nulla in un progetto esportato in modalità di rilascio.
 
 .. rst-class:: classref-item-separator
 
@@ -2796,7 +2796,7 @@ Può stampare, ad esempio:
 
 |void| **print_tree_pretty**\ (\ ) :ref:`🔗<class_Node_method_print_tree_pretty>`
 
-Stampa il nodo e i suoi figli sulla console, ricorsivamente. Il nodo non deve essere all'interno dell'albero. Simile a :ref:`print_tree()<class_Node_method_print_tree>`, ma la rappresentazione grafica è simile a quella visualizzata nel pannello di Scena nell'editor. È utile per ispezionare alberi più grandi.
+Stampa il nodo e i suoi figli sulla console, ricorsivamente. Il nodo non deve essere all'interno dell'albero. Simile a :ref:`print_tree()<class_Node_method_print_tree>`, ma la rappresentazione grafica è simile a quella visualizzata nel pannello Scena nell'editor. È utile per ispezionare alberi più grandi.
 
 Potrebbe stampare, ad esempio:
 
@@ -3027,7 +3027,7 @@ Simile a :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thre
 
 |void| **set_display_folded**\ (\ fold\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_display_folded>`
 
-Se impostato su ``true``, il nodo appare minimizzato nel pannello di Scena. Pertanto, tutti i suoi figli sono nascosti. Questo metodo è pensato all'uso nelle estensioni e negli strumenti dell'editor, ma funziona anche nelle build di rilascio. Vedi anche :ref:`is_displayed_folded()<class_Node_method_is_displayed_folded>`.
+Se impostato su ``true``, il nodo appare minimizzato nel pannello Scena. Pertanto, tutti i suoi figli sono nascosti. Questo metodo è pensato all'uso nelle estensioni e negli strumenti dell'editor, ma funziona anche nelle build di rilascio. Vedi anche :ref:`is_displayed_folded()<class_Node_method_is_displayed_folded>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3039,7 +3039,7 @@ Se impostato su ``true``, il nodo appare minimizzato nel pannello di Scena. Pert
 
 |void| **set_editable_instance**\ (\ node\: :ref:`Node<class_Node>`, is_editable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_editable_instance>`
 
-Imposta su ``true`` per consentire a tutti i nodi posseduti dal nodo ``node`` di essere disponibili e modificabili nel pannello di Scena, anche se il loro :ref:`owner<class_Node_property_owner>` non è la radice della scena. Questo metodo è pensato all'uso nelle estensioni e negli strumenti dell'editor, ma funziona anche nelle build di rilascio. Vedi anche :ref:`is_editable_instance()<class_Node_method_is_editable_instance>`.
+Imposta su ``true`` per consentire a tutti i nodi posseduti dal nodo ``node`` di essere disponibili e modificabili nel pannello Scena, anche se il loro :ref:`owner<class_Node_property_owner>` non è la radice della scena. Questo metodo è pensato all'uso nelle estensioni e negli strumenti dell'editor, ma funziona anche nelle build di rilascio. Vedi anche :ref:`is_editable_instance()<class_Node_method_is_editable_instance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3219,13 +3219,13 @@ Questo è il comportamento predefinito per tutti i nodi. Chiamare :ref:`Object.s
 
 |void| **update_configuration_warnings**\ (\ ) :ref:`🔗<class_Node_method_update_configuration_warnings>`
 
-Aggiorna gli avvisi visualizzati per questo nodo nel pannello di Scena. Usa :ref:`_get_configuration_warnings()<class_Node_private_method__get_configuration_warnings>` per personalizzare i messaggi di avviso da visualizzare.
+Aggiorna gli avvisi visualizzati per questo nodo nel pannello Scena. Usa :ref:`_get_configuration_warnings()<class_Node_private_method__get_configuration_warnings>` per personalizzare i messaggi di avviso da visualizzare.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

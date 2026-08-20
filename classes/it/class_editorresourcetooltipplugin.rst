@@ -16,7 +16,7 @@ Descrizione
 
 Le estensioni tooltip delle risorse sono usati dal :ref:`FileSystemDock<class_FileSystemDock>` per generare tooltip personalizzati per risorse specifiche. Ad esempio, il tooltip per una :ref:`Texture2D<class_Texture2D>` visualizza un'anteprima più grande e le dimensioni della texture.
 
-Un'estensione deve essere prima registrata con :ref:`FileSystemDock.add_resource_tooltip_plugin()<class_FileSystemDock_method_add_resource_tooltip_plugin>`. Quando l'utente passa il mouse su una risorsa nel pannello del filesystem che è gestita dall'estensione, viene chiamato :ref:`_make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` per creare il tooltip. Funziona in modo simile a :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
+Un'estensione deve essere prima registrata con :ref:`FileSystemDock.add_resource_tooltip_plugin()<class_FileSystemDock_method_add_resource_tooltip_plugin>`. Quando l'utente passa il mouse su una risorsa nel pannello Filesystem che è gestita dall'estensione, viene chiamato :ref:`_make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` per creare il tooltip. Funziona in modo simile a :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -61,7 +61,7 @@ Restituisce ``true`` se il plugin gestirà il tipo ``type`` di :ref:`Resource<cl
 
 :ref:`Control<class_Control>` **_make_tooltip_for_path**\ (\ path\: :ref:`String<class_String>`, metadata\: :ref:`Dictionary<class_Dictionary>`, base\: :ref:`Control<class_Control>`\ ) |virtual| |const| :ref:`🔗<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>`
 
-Crea e restituisce un tooltip che verrà visualizzato quando l'utente passa il mouse su una risorsa al percorso ``path`` specificato nel pannello del filesystem.
+Crea e restituisce un tooltip che verrà visualizzato quando l'utente passa il mouse su una risorsa al percorso ``path`` specificato nel pannello Filesystem.
 
 Il dizionario ``metadata`` è fornito dal generatore di anteprime (vedi :ref:`EditorResourcePreviewGenerator._generate()<class_EditorResourcePreviewGenerator_private_method__generate>`).
 
@@ -95,7 +95,7 @@ Richiede una miniatura per il :ref:`TextureRect<class_TextureRect>` fornito. La 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

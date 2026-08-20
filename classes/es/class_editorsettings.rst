@@ -4029,7 +4029,7 @@ Si es ``true``, las escenas y los scripts se guardan cuando el editor pierde el 
 
 :ref:`bool<class_bool>` **interface/editor/behavior/separate_distraction_mode** :ref:`🔗<class_EditorSettings_property_interface/editor/behavior/separate_distraction_mode>`
 
-Si es ``true``, la pestaña Script del editor tendrá una opción de modo de distracción separada de las pestañas 2D/3D/Juego/Librería de Assets. Si es ``false``, el cambio de modo sin distracciones se comparte entre todas las pestañas.
+Si es ``true``, la pestaña Script del editor tendrá una opción de modo de distracción separada de las pestañas 2D/3D/Juego/Tienda de Assets. Si es ``false``, el cambio de modo sin distracciones se comparte entre todas las pestañas.
 
 .. rst-class:: classref-item-separator
 
@@ -7366,7 +7366,7 @@ Returns ``true`` if the shortcut specified by ``path`` exists, ``false`` otherwi
 
 :ref:`bool<class_bool>` **is_shortcut**\ (\ path\: :ref:`String<class_String>`, event\: :ref:`InputEvent<class_InputEvent>`\ ) |const| :ref:`🔗<class_EditorSettings_method_is_shortcut>`
 
-Returns ``true`` if the shortcut specified by ``path`` matches the event specified by ``event``, ``false`` otherwise.
+Devuelve ``true`` si el atajo especificado por ``path`` coincide con el evento especificado por ``event``, o ``false`` en caso contrario.
 
 .. rst-class:: classref-item-separator
 
@@ -7390,7 +7390,7 @@ Marca el ajuste del editor pasado como modificado, véase :ref:`get_changed_sett
 
 |void| **remove_shortcut**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorSettings_method_remove_shortcut>`
 
-Removes the shortcut specified by ``path``.
+Elimina el atajo especificado por ``path``.
 
 .. rst-class:: classref-item-separator
 

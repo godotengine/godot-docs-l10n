@@ -496,7 +496,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` is ``true``.
+Devuelve la longitud de la cola del hueso final de la cadena de huesos cuando :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` es ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -812,7 +812,7 @@ Devuelve ``true`` si la configuración puede ser editada individualmente para ca
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Devuelve ``true`` si el hueso final se extiende para tener una cola.
 
 .. rst-class:: classref-item-separator
 

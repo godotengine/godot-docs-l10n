@@ -9,14 +9,14 @@ Shape3D
 
 **Ereditato da:** :ref:`BoxShape3D<class_BoxShape3D>`, :ref:`CapsuleShape3D<class_CapsuleShape3D>`, :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`, :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`, :ref:`CylinderShape3D<class_CylinderShape3D>`, :ref:`HeightMapShape3D<class_HeightMapShape3D>`, :ref:`SeparationRayShape3D<class_SeparationRayShape3D>`, :ref:`SphereShape3D<class_SphereShape3D>`, :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>`
 
-Classe di base astratta per forme 3D utilizzate per le collisioni fisiche.
+Classe base astratta per forme 3D utilizzate per le collisioni fisiche.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Classe di base astratta per tutte le forme 3D, progettata per l'uso in fisica.
+Classe base astratta per tutte le forme 3D, progettata per l'uso in fisica.
 
 \ **Prestazioni:** Le forme primitive, in particolare :ref:`SphereShape3D<class_SphereShape3D>`, sono veloci da verificare per le collisioni. :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` e :ref:`HeightMapShape3D<class_HeightMapShape3D>` sono più lente, e :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` è la più lenta.
 
@@ -119,7 +119,7 @@ Restituisce l':ref:`ArrayMesh<class_ArrayMesh>` utilizzato per disegnare la coll
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

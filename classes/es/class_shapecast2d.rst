@@ -7,7 +7,7 @@ ShapeCast2D
 
 **Hereda:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A 2D shape that sweeps a region of space to detect :ref:`CollisionObject2D<class_CollisionObject2D>`\ s.
+Una forma 2D que barre una región del espacio para detectar objetos :ref:`CollisionObject2D<class_CollisionObject2D>`.
 
 .. rst-class:: classref-introduction-group
 

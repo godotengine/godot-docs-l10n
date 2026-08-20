@@ -695,7 +695,7 @@ enum **ExpandMode**: :ref:`🔗<enum_LineEdit_ExpandMode>`
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_ORIGINAL_SIZE** = ``0``
 
-Use the original size for the right icon.
+Usa le dimensioni originale per l'icona destra.
 
 .. _class_LineEdit_constant_EXPAND_MODE_FIT_TO_TEXT:
 
@@ -703,7 +703,7 @@ Use the original size for the right icon.
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_FIT_TO_TEXT** = ``1``
 
-Scale the right icon's size to match the size of the text.
+Ridimensiona l'icona destra così da corrispondere alla dimensione del testo.
 
 .. _class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT:
 
@@ -711,7 +711,7 @@ Scale the right icon's size to match the size of the text.
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_FIT_TO_LINE_EDIT** = ``2``
 
-Scale the right icon to fit the LineEdit.
+Ridimensione l'icona destra per adattarsi al LineEdit.
 
 .. rst-class:: classref-section-separator
 
@@ -733,7 +733,7 @@ Descrizioni delle proprietà
 - |void| **set_horizontal_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_horizontal_alignment**\ (\ )
 
-The text's horizontal alignment.
+L'allineamento orizzontale del testo.
 
 .. rst-class:: classref-item-separator
 
@@ -1007,7 +1007,7 @@ Se ``true``, la **LineEdit** non visualizza decorazioni.
 - |void| **set_icon_expand_mode**\ (\ value\: :ref:`ExpandMode<enum_LineEdit_ExpandMode>`\ )
 - :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **get_icon_expand_mode**\ (\ )
 
-Define the scaling behavior of the :ref:`right_icon<class_LineEdit_property_right_icon>`.
+Definisce il comportamento di ridimensionamento di :ref:`right_icon<class_LineEdit_property_right_icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1041,7 +1041,7 @@ Se ``true``, il **LineEdit** non uscirà dalla modalità di modifica quando il t
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Codice lingua utilizzato per gli algoritmi di interruzione di riga e di formazione del testo. Se lasciato vuoto, è utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -1157,7 +1157,7 @@ Imposta l'icona che apparirà all'estremità destra di **LineEdit** se :ref:`tex
 - |void| **set_right_icon_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_right_icon_scale**\ (\ )
 
-Scale ratio of the icon when :ref:`icon_expand_mode<class_LineEdit_property_icon_expand_mode>` is set to :ref:`EXPAND_MODE_FIT_TO_LINE_EDIT<class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT>`.
+Rapporto di scala dell'icona quando :ref:`icon_expand_mode<class_LineEdit_property_icon_expand_mode>` è impostato su :ref:`EXPAND_MODE_FIT_TO_LINE_EDIT<class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1452,7 +1452,7 @@ Cancella la selezione attuale.
 
 |void| **edit**\ (\ hide_focus\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_LineEdit_method_edit>`
 
-Consente di entrare in modalità di modifica, a prescindere dal fatto che **LineEdit** abbia il focus o meno. Se ``hide_focus`` è ``true``, lo stato di focus non sarà visualizzato (vedi :ref:`Control.grab_focus()<class_Control_method_grab_focus>`).
+Consente di entrare in modalità di modifica, a prescindere dal fatto che **LineEdit** abbia il focus o meno. Se ``hide_focus`` è ``true``, lo stato focalizzato non sarà visualizzato (vedi :ref:`Control.grab_focus()<class_Control_method_grab_focus>`).
 
 Vedi anche :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`.
 
@@ -1969,7 +1969,7 @@ Sfondo utilizzato quando il **LineEdit** è in modalità di sola lettura (:ref:`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -18,7 +18,7 @@ Genera una :ref:`PrimitiveMesh<class_PrimitiveMesh>` di riquadro allineato agli 
 
 Il layout UV del riquadro è organizzato in un layout 3×2 che consente di texturizzare ogni faccia singolarmente. Per applicare la stessa texture su tutte le facce, modifica la proprietà UV del materiale in ``Vector3(3, 2, 1)``. Ciò equivale ad aggiungere ``UV *= vec2(3.0, 2.0)`` in uno shader di vertici.
 
-\ **Nota:** quando si utilizza una grande **BoxMesh** texturizzata (ad esempio come un pavimento), si possono riscontrare problemi di tremolio dell'UV a seconda dell'angolazione della telecamera. Per risolvere questo problema, aumenta :ref:`subdivide_depth<class_BoxMesh_property_subdivide_depth>`, :ref:`subdivide_height<class_BoxMesh_property_subdivide_height>` e :ref:`subdivide_width<class_BoxMesh_property_subdivide_width>` finché non noti più alcun tremolio dell'UV.
+\ **Nota:** Utilizzando un enorme **BoxMesh** texturizzata (ad esempio, come pavimento), potresti imbatterti in problemi di tremolio dell'UV a seconda dell'angolazione della telecamera. Per rimediare, aumenta :ref:`subdivide_depth<class_BoxMesh_property_subdivide_depth>`, :ref:`subdivide_height<class_BoxMesh_property_subdivide_height>` e :ref:`subdivide_width<class_BoxMesh_property_subdivide_width>` finché non noti più alcun tremolio dell'UV.
 
 .. rst-class:: classref-reftable-group
 
@@ -115,7 +115,7 @@ Numero di anelli aggiuntivi sul bordo inseriti lungo l'asse X.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

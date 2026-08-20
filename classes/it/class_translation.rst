@@ -16,9 +16,9 @@ Una traduzione linguistica che mappa una raccolta di stringhe alle loro singole 
 Descrizione
 ----------------------
 
-**Translation** maps a collection of strings to their individual translations, and also provides convenience methods for pluralization.
+**Translation** mappa una raccolta di stringhe alle loro traduzioni individuali e fornisce anche metodi di comodità per gestire i plurali.
 
-A **Translation** consists of messages. A message is identified by its context and untranslated string. Unlike `gettext <https://www.gnu.org/software/gettext/>`__, using an empty context string in Godot means not using any context.
+Una **Translation** è composta da messaggi. Un messaggio è identificato dal suo contesto e dalla stringa non tradotta. A differenza di `gettext <https://www.gnu.org/software/gettext/>`__, usare una stringa di contesto vuota in Godot significa non usare alcun contesto.
 
 .. rst-class:: classref-introduction-group
 
@@ -112,9 +112,9 @@ La lingua della traduzione.
 - |void| **set_plural_rules_override**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_plural_rules_override**\ (\ )
 
-The plural rules string to enforce. See `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ for examples and more info.
+La stringa delle regole per il plurale da applicare. Consulta `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ per esempi e ulteriori informazioni.
 
-If empty or invalid, default plural rules from :ref:`TranslationServer.get_plural_rules()<class_TranslationServer_method_get_plural_rules>` are used. The English plural rules are used as a fallback.
+Se vuota o non valida, si utilizzano le regole predefinite da :ref:`TranslationServer.get_plural_rules()<class_TranslationServer_method_get_plural_rules>`. Si utilizzano le regole in inglese come alternative di riserva.
 
 .. rst-class:: classref-section-separator
 
@@ -169,9 +169,9 @@ Un contesto aggiuntivo potrebbe essere usato per specificare il contesto della t
 
 |void| **add_plural_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, xlated_messages\: :ref:`PackedStringArray<class_PackedStringArray>`, context\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_Translation_method_add_plural_message>`
 
-Adds a message involving plural translation if nonexistent, followed by its translation.
+Aggiunge un messaggio se non esiste, che include una traduzione al plurale, seguito dalla sua traduzione.
 
-An additional context could be used to specify the translation context or differentiate polysemic words.
+Un contesto aggiuntivo potrebbe essere usato per specificare il contesto della traduzione o differenziare le parole polisemiche.
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ Restituisce il numero di messaggi esistenti.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_message_list**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_message_list>`
 
-Returns the keys of all messages, that is, the context and untranslated strings of each message.
+Restituisce le chiavi di tutti i messaggi, ovvero il contesto e le stringhe non tradotte di ciascun messaggio.
 
-\ **Note:** If a message does not use a context, the corresponding element is the untranslated string. Otherwise, the corresponding element is the context and untranslated string separated by the EOT character (``U+0004``). This is done for compatibility purposes.
+\ **Nota:** Se un messaggio non utilizza un contesto, l'elemento corrispondente è la stringa non tradotta. Altrimenti, l'elemento corrispondente è il contesto e la stringa non tradotta separati dal carattere EOT (``U+0004``). Questo è fatto per motivi di compatibilità.
 
 ::
 
@@ -229,11 +229,11 @@ Returns the keys of all messages, that is, the context and untranslated strings 
         var p = key.find("\u0004")
         if p == -1:
             var untranslated = key
-            print("Message %s" % untranslated)
+            print("Messaggio %s" % non tradotto)
         else:
             var context = key.substr(0, p)
             var untranslated = key.substr(p + 1)
-            print("Message %s with context %s" % [untranslated, context])
+            print("Messaggio %s con contesto %s" % [untranslated, context])
 
 .. rst-class:: classref-item-separator
 
@@ -261,13 +261,13 @@ Il numero ``n`` è il numero o la quantità dell'oggetto plurale. Sarà utilizza
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_translated_message_list**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_translated_message_list>`
 
-Returns all the translated strings.
+Restituisce tutte le stringe tradotte.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

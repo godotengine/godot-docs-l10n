@@ -157,7 +157,7 @@ enum **PhysicsInterpolationQuality**: :ref:`🔗<enum_MultiMesh_PhysicsInterpola
 
 :ref:`PhysicsInterpolationQuality<enum_MultiMesh_PhysicsInterpolationQuality>` **INTERP_QUALITY_FAST** = ``0``
 
-Always interpolate using Basis lerping, which can produce warping artifacts in some situations.
+Interpola sempre attraverso il Basis lerping, che in alcune situazioni può produrre artefatti di deformazione.
 
 .. _class_MultiMesh_constant_INTERP_QUALITY_HIGH:
 
@@ -165,7 +165,7 @@ Always interpolate using Basis lerping, which can produce warping artifacts in s
 
 :ref:`PhysicsInterpolationQuality<enum_MultiMesh_PhysicsInterpolationQuality>` **INTERP_QUALITY_HIGH** = ``1``
 
-Attempt to interpolate using Basis slerping (spherical linear interpolation) where possible, otherwise fall back to lerping.
+Tenta di interpolare attraverso il Basis slerping (interpolazione lineare sferica), altrimenti ricorre al lerping.
 
 .. rst-class:: classref-section-separator
 
@@ -490,9 +490,9 @@ Ciò consente di spostare le istanze istantaneamente e dovrebbe essere solitamen
 
 |void| **reset_instances_physics_interpolation**\ (\ ) :ref:`🔗<class_MultiMesh_method_reset_instances_physics_interpolation>`
 
-When using *physics interpolation*, this function allows you to prevent interpolation for all instances in the current physics tick.
+Quando si usa l'*interpolazione della fisica*, questa funzione è in grado di impedire l'interpolazione su un'istanza nel tick attuale di fisica.
 
-This allows you to move all instances instantaneously, and should usually be used when initially placing instances to prevent graphical glitches.
+Ciò consente di spostare le istanze istantaneamente, e si dovrebbe usare solitamente dopo aver inizialmente collocato un'istanza, come un proiettile, per impedire errori grafici.
 
 .. rst-class:: classref-item-separator
 
@@ -572,7 +572,7 @@ Imposta il :ref:`Transform2D<class_Transform2D>` per un'istanza specifica.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

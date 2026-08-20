@@ -9,14 +9,14 @@ Shape2D
 
 **Ereditato da:** :ref:`CapsuleShape2D<class_CapsuleShape2D>`, :ref:`CircleShape2D<class_CircleShape2D>`, :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>`, :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>`, :ref:`RectangleShape2D<class_RectangleShape2D>`, :ref:`SegmentShape2D<class_SegmentShape2D>`, :ref:`SeparationRayShape2D<class_SeparationRayShape2D>`, :ref:`WorldBoundaryShape2D<class_WorldBoundaryShape2D>`
 
-Classe di base astratta per forme 2D utilizzate per le collisioni fisiche.
+Classe base astratta per forme 2D utilizzate per le collisioni fisiche.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Classe di base astratta per tutte le forme 2D, progettata per l'uso in fisica.
+Classe base astratta per tutte le forme 2D, progettata per l'uso in fisica.
 
 \ **Prestazioni:** Le forme primitive, in particolare :ref:`CircleShape2D<class_CircleShape2D>`, sono veloci da verificare per le collisioni. :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>` è più lenta e :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` è la più lenta.
 
@@ -148,7 +148,7 @@ Questo metodo necessita della matrice di trasformazione per questa forma (``loca
 
 Restituisce una lista di coppie di punti di contatto in cui questa forma ne toccherebbe un'altra, se fosse applicato un determinato movimento.
 
-Se non ci fossero collisioni, la lista restituita è vuoto. Altrimenti, la lista restituita contiene i punti di contatto disposti in coppie, con elementi che si alternano tra punti sul confine di questa forma e punti sul confine di ``with_shape``.
+Se non ci sarebbero collisioni, la lista restituita è vuota. Altrimenti, la lista restituita contiene i punti di contatto disposti in coppie, con elementi che si alternano tra punti sul confine di questa forma e punti sul confine di ``with_shape``.
 
 Una coppia di collisioni A, B può essere utilizzata per calcolare la normale di collisione con ``(B - A).normalized()`` e la profondità di collisione con ``(B - A).length()``. Queste informazioni sono in genere utilizzate per separare le forme, in particolare nei risolutori di collisioni.
 
@@ -182,7 +182,7 @@ Restituisce un :ref:`Rect2<class_Rect2>` che rappresenta il confine della forma.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -14,7 +14,7 @@ Fornisce metodi per le operazioni di lettura e scrittura dei file.
 Descrizione
 ----------------------
 
-Questa classe può essere utilizzata per memorizzare in modo permanente i dati nel file system del dispositivo utente e per leggerli. È utile per memorizzare i dati di salvataggio o i file di configurazione di gioco.
+Questa classe può servire per memorizzare in modo permanente i dati nel file system del dispositivo utente e per leggerli. È utile per memorizzare i dati di salvataggio o i file di configurazione di gioco.
 
 \ **Esempio:** Come scrivere e leggere da un file. Il file denominato ``"save_game.dat"`` sarà memorizzato nella cartella dei dati utente, come specificato nella documentazione :doc:`Percorsi dati <../tutorials/io/data_paths>`:
 
@@ -53,7 +53,7 @@ Un'istanza di **FileAccess** ha il proprio cursore del file, che rappresenta la 
 
 Un'istanza di **FileAccess** chiuderà il suo file quando l'istanza viene liberata. Poiché eredita :ref:`RefCounted<class_RefCounted>`, ciò avviene automaticamente quando non è più in uso. È possibile chiamare il metodo :ref:`close()<class_FileAccess_method_close>` per chiuderlo prima. In C#, il riferimento deve essere eliminato manualmente, il che si può fare con l'istruzione ``using`` o chiamando direttamente il metodo ``Dispose``.
 
-\ **Nota:** Per accedere alle risorse del progetto una volta esportate, si consiglia di utilizzare :ref:`ResourceLoader<class_ResourceLoader>` invece di **FileAccess**, poiché alcuni file vengono convertiti in formati specifici del motore e i loro file sorgente originali potrebbero non essere presenti nel pacchetto PCK esportato. Se si utilizza **FileAccess**, assicurarsi che il file sia incluso nell'esportazione modificandone la modalità di importazione in **Mantieni file (esportato così com'è)** nel pannello di importazione oppure, per i file in cui questa opzione non è disponibile, modificare il filtro di esportazione di non risorse nella finestra di dialogo Esporta per includere l'estensione dei file (ad esempio ``*.txt``).
+\ **Nota:** Per accedere alle risorse del progetto una volta esportate, si consiglia di utilizzare :ref:`ResourceLoader<class_ResourceLoader>` invece di **FileAccess**, poiché alcuni file vengono convertiti in formati specifici del motore e i loro file sorgente originali potrebbero non essere presenti nel pacchetto PCK esportato. Se si utilizza **FileAccess**, assicurarsi che il file sia incluso nell'esportazione modificandone la modalità di importazione in **Mantieni file (esportato così com'è)** nel pannello Importazione oppure, per i file in cui questa opzione non è disponibile, modificare il filtro di esportazione di non risorse nella finestra di dialogo Esporta per includere l'estensione dei file (ad esempio ``*.txt``).
 
 \ **Nota:** I file si chiudono automaticamente solo se il processo esce "normalmente" (ad esempio cliccando sul pulsante di chiusura del gestore delle finestre o premendo :kbd:`Alt + F4`). Se l'esecuzione del progetto è interrotta premendo :kbd:`F8` mentre il progetto è in esecuzione, il file non si chiuderà perché il processo di gioco sarà terminato. È possibile aggirare questo problema chiamando :ref:`flush()<class_FileAccess_method_flush>` a intervalli regolari.
 
@@ -697,15 +697,15 @@ Restituisce l'ultimo errore che si è verificato durante l'esecuzione di un oper
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_extended_attribute**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_extended_attribute>`
 
-Reads the file extended attribute with name ``attribute_name`` as a byte array.
+Legge l'attributo esteso del file con il nome ``attribute_name`` come array di byte.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Questo metodo è implementato su Linux, macOS e Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Nota:** Il supporto per gli attributi estesi dipende dal file system. Gli attributi andranno persi quando il file viene spostato tra file system incompatibili.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Nota:** Su Linux, sono accessibili solo gli attributi dello spazio dei nomi "utente"; il prefisso dello spazio dei nomi non deve essere incluso.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Nota:** Su Windows, si utilizzano flussi di dati alternativi per memorizzare gli attributi estesi.
 
 .. rst-class:: classref-item-separator
 
@@ -717,15 +717,15 @@ Reads the file extended attribute with name ``attribute_name`` as a byte array.
 
 :ref:`String<class_String>` **get_extended_attribute_string**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_extended_attribute_string>`
 
-Reads the file extended attribute with name ``attribute_name`` as a UTF-8 encoded string.
+Legge l'attributo esteso del file con il nome ``attribute_name`` come stringa codificata in UTF-8.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Questo metodo è implementato su Linux, macOS e Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Nota:** Il supporto per gli attributi estesi dipende dal file system. Gli attributi andranno persi quando il file viene spostato tra file system incompatibili.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Nota:** Su Linux, sono accessibili solo gli attributi dello spazio dei nomi "utente"; il prefisso dello spazio dei nomi non deve essere incluso.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Nota:** Su Windows, si utilizzano flussi di dati alternativi per memorizzare gli attributi estesi.
 
 .. rst-class:: classref-item-separator
 
@@ -737,15 +737,15 @@ Reads the file extended attribute with name ``attribute_name`` as a UTF-8 encode
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_extended_attributes_list**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_extended_attributes_list>`
 
-Returns a list of file extended attributes.
+Restituisce una lista di attributi estesi del file.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Questo metodo è implementato su Linux, macOS e Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Nota:** Il supporto per gli attributi estesi dipende dal file system. Gli attributi andranno persi quando il file viene spostato tra file system incompatibili.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Nota:** Su Linux, sono accessibili solo gli attributi dello spazio dei nomi "utente"; il prefisso dello spazio dei nomi non deve essere incluso.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Nota:** Su Windows, si utilizzano flussi di dati alternativi per memorizzare gli attributi estesi.
 
 .. rst-class:: classref-item-separator
 
@@ -975,7 +975,7 @@ Restituisce una :ref:`String<class_String>` SHA-256 che rappresenta il file nel 
 
 :ref:`int<class_int>` **get_size**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_size>`
 
-Returns the size of the file at the given path, in bytes, or ``-1`` on error.
+Restituisce la dimensione del file nel percorso specificato, in byte, o ``-1`` in caso di errore.
 
 .. rst-class:: classref-item-separator
 
@@ -987,9 +987,9 @@ Returns the size of the file at the given path, in bytes, or ``-1`` on error.
 
 |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\] **get_unix_permissions**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_unix_permissions>`
 
-Returns the UNIX permissions of the file at the given path.
+Restituisce i permessi UNIX del file nel percorso specificato.
 
-\ **Note:** This method is implemented on iOS, Linux/BSD, and macOS.
+\ **Nota:** Questo metodo è implementato su iOS, Linux/BSD, e macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1089,15 +1089,15 @@ Restituisce ``null`` se non è stato possibile aprire il file. È possibile usar
 
 :ref:`Error<enum_@GlobalScope_Error>` **remove_extended_attribute**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_remove_extended_attribute>`
 
-Removes file extended attribute with name ``attribute_name``.
+Rimuove l'attributo esteso del file con il nome ``attribute_name``.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Questo metodo è implementato su Linux, macOS e Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Nota:** Il supporto per gli attributi estesi dipende dal file system. Gli attributi andranno persi quando il file viene spostato tra file system incompatibili.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Nota:** Su Linux, sono accessibili solo gli attributi dello spazio dei nomi "utente"; il prefisso dello spazio dei nomi non deve essere incluso.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Nota:** Su Windows, si utilizzano flussi di dati alternativi per memorizzare gli attributi estesi.
 
 .. rst-class:: classref-item-separator
 
@@ -1147,15 +1147,15 @@ Sposta il cursore del file alla posizione specificata in byte, dalla fine del fi
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_extended_attribute**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) |static| :ref:`🔗<class_FileAccess_method_set_extended_attribute>`
 
-Writes file extended attribute with name ``attribute_name`` as a byte array.
+Scrive l'attributo esteso del file con il nome ``attribute_name`` come array di bite.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Questo metodo è implementato su Linux, macOS e Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Nota:** Il supporto per gli attributi estesi dipende dal file system. Gli attributi andranno persi quando il file viene spostato tra file system incompatibili.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Nota:** Su Linux, sono accessibili solo gli attributi dello spazio dei nomi "utente"; il prefisso dello spazio dei nomi non deve essere incluso.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Nota:** Su Windows, si utilizzano flussi di dati alternativi per memorizzare gli attributi estesi.
 
 .. rst-class:: classref-item-separator
 
@@ -1167,15 +1167,15 @@ Writes file extended attribute with name ``attribute_name`` as a byte array.
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_extended_attribute_string**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`, data\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_set_extended_attribute_string>`
 
-Writes file extended attribute with name ``attribute_name`` as a UTF-8 encoded string.
+Scrive l'attributo esteso del file con il nome ``attribute_name`` come stringa codificata in UTF-8.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Questo metodo è implementato su Linux, macOS e Windows.
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **Nota:** Il supporto per gli attributi estesi dipende dal file system. Gli attributi andranno persi quando il file viene spostato tra file system incompatibili.
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **Nota:** Su Linux, sono accessibili solo gli attributi dello spazio dei nomi "utente"; il prefisso dello spazio dei nomi non deve essere incluso.
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **Nota:** Su Windows, si utilizzano flussi di dati alternativi per memorizzare gli attributi estesi.
 
 .. rst-class:: classref-item-separator
 
@@ -1480,7 +1480,7 @@ Internamente, questo metodo utilizza lo stesso meccanismo di codifica del metodo
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

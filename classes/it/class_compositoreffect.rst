@@ -98,7 +98,7 @@ Il callback viene richiamato dopo il nostro passaggio di rendering opaco, ma pri
 
 :ref:`EffectCallbackType<enum_CompositorEffect_EffectCallbackType>` **EFFECT_CALLBACK_TYPE_POST_SKY** = ``2``
 
-Il callback viene chiamato dopo il rendering del cielo, ma prima che vengano creati i back buffer (e, se abilitato, prima del subsurface scattering e/o delle riflessioni nello spazio dello schermo).
+Il callback viene chiamato dopo aver renderizzato il cielo, ma prima di creare i back buffer (e, se abilitato, prima del subsurface scattering e/o dei riflessi nello spazio dello schermo).
 
 .. _class_CompositorEffect_constant_EFFECT_CALLBACK_TYPE_PRE_TRANSPARENT:
 
@@ -144,7 +144,7 @@ Descrizioni delle proprietà
 - |void| **set_access_resolved_color**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_access_resolved_color**\ (\ )
 
-Se ``true`` e MSAA è abilitato, sarà attivata la risoluzione del buffer di colore prima che l'effetto sia eseguito.
+Se ``true`` e l'MSAA è abilitato, sarà attivata la risoluzione del buffer di colore prima che l'effetto sia eseguito.
 
 \ **Nota:** In :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>`, per accedere al buffer risolto usa:
 
@@ -168,7 +168,7 @@ Se ``true`` e MSAA è abilitato, sarà attivata la risoluzione del buffer di col
 - |void| **set_access_resolved_depth**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_access_resolved_depth**\ (\ )
 
-Se ``true`` e MSAA è abilitato, sarà attivata la risoluzione del buffer di profondità prima che l'effetto sia eseguito.
+Se ``true`` e l'MSAA è abilitato, sarà attivata la risoluzione del buffer di profondità prima che l'effetto sia eseguito.
 
 \ **Nota:** In :ref:`_render_callback()<class_CompositorEffect_private_method__render_callback>`, per accedere al buffer risolto usa:
 
@@ -310,7 +310,7 @@ Implementa questa funzione con il tuo codice di rendering personalizzato. ``effe
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

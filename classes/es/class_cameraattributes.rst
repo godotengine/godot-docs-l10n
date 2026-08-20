@@ -9,7 +9,7 @@ CameraAttributes
 
 **Heredado por:** :ref:`CameraAttributesPhysical<class_CameraAttributesPhysical>`, :ref:`CameraAttributesPractical<class_CameraAttributesPractical>`
 
-Clase padre para la configuración de la cámara.
+Clase antecesora para la configuración de la cámara.
 
 .. rst-class:: classref-introduction-group
 

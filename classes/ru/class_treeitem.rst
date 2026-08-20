@@ -565,7 +565,7 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] **get_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_autowrap_trim_flags>`
 
-Returns the autowrap trim flags for the given ``column``. By default, both :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` and :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>` are enabled.
+Возвращает флаги обрезки автопереноса для данного ``column``. По умолчанию включены :ref:`TextServer.BREAK_TRIM_START_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_START_EDGE_SPACES>` и :ref:`TextServer.BREAK_TRIM_END_EDGE_SPACES<class_TextServer_constant_BREAK_TRIM_END_EDGE_SPACES>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1127,7 +1127,7 @@ Returns the autowrap trim flags for the given ``column``. By default, both :ref:
 
 :ref:`bool<class_bool>` **is_accepting_children**\ (\ ) |const| :ref:`🔗<class_TreeItem_method_is_accepting_children>`
 
-Returns ``true`` if this **TreeItem** is allowed to accept children.
+Возвращает ``true``, если этот **TreeItem** может принимать дочерние элементы.
 
 .. rst-class:: classref-item-separator
 
@@ -1315,7 +1315,7 @@ Returns ``true`` if this **TreeItem** is allowed to accept children.
 
 |void| **select**\ (\ column\: :ref:`int<class_int>`, set_as_cursor\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_TreeItem_method_select>`
 
-Selects the given ``column``. If ``set_as_cursor`` is ``true``, the :ref:`Tree<class_Tree>`'s cursor will be moved to this item (only matters if :ref:`Tree.select_mode<class_Tree_property_select_mode>` is set to :ref:`Tree.SELECT_MULTI<class_Tree_constant_SELECT_MULTI>`).
+Выбирает указанный ``column``. Если ``set_as_cursor`` равен ``true``, курсор :ref:`Tree<class_Tree>` будет перемещен на этот элемент (имеет значение только если :ref:`Tree.select_mode<class_Tree_property_select_mode>` установлен в :ref:`Tree.SELECT_MULTI<class_Tree_constant_SELECT_MULTI>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ Selects the given ``column``. If ``set_as_cursor`` is ``true``, the :ref:`Tree<c
 
 |void| **set_accept_children**\ (\ allowed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TreeItem_method_set_accept_children>`
 
-Sets **TreeItem**'s ability to accept children.
+Устанавливает возможность **TreeItem** принимать дочерние элементы.
 
 .. rst-class:: classref-item-separator
 
@@ -1365,7 +1365,7 @@ Sets **TreeItem**'s ability to accept children.
 
 |void| **set_autowrap_trim_flags**\ (\ column\: :ref:`int<class_int>`, flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\]\ ) :ref:`🔗<class_TreeItem_method_set_autowrap_trim_flags>`
 
-Sets the autowrap trim flags for the given ``column``. These flags control whether leading and trailing spaces are trimmed on wrapped lines. Set to ``0`` to disable all trimming.
+Устанавливает флаги обрезки автопереноса для данного ``column``. Эти флаги управляют тем, обрезаются ли начальные и конечные пробелы в перенесённых строках. Установите ``0``, чтобы отключить все обрезки.
 
 .. rst-class:: classref-item-separator
 
@@ -1527,11 +1527,11 @@ Sets the autowrap trim flags for the given ``column``. These flags control wheth
 
 |void| **set_custom_draw_callback**\ (\ column\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_draw_callback>`
 
-Sets the given column's custom draw callback. Use an empty :ref:`Callable<class_Callable>` (``Callable()``) to clear the custom callback. The cell has to be in :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` to use this feature.
+Устанавливает пользовательский обратный вызов отрисовки для данного столбца. Используйте пустой :ref:`Callable<class_Callable>` (``Callable()``), чтобы очистить пользовательский обратный вызов. Ячейка должна находиться в :ref:`CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>`, чтобы использовать эту функцию.
 
-The ``callback`` should accept two arguments: the **TreeItem** that is drawn and its position and size as a :ref:`Rect2<class_Rect2>`.
+\ ``callback`` должен принимать два аргумента: **TreeItem**, который отрисовывается, и его положение и размер как :ref:`Rect2<class_Rect2>`.
 
-To draw custom content over the native style, please use :ref:`Tree.get_custom_drawing_canvas_item()<class_Tree_method_get_custom_drawing_canvas_item>`.
+Чтобы рисовать пользовательское содержимое поверх стандартного стиля, используйте :ref:`Tree.get_custom_drawing_canvas_item()<class_Tree_method_get_custom_drawing_canvas_item>`.
 
 .. rst-class:: classref-item-separator
 

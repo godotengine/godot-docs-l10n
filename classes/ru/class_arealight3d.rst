@@ -14,17 +14,17 @@ AreaLight3D
 Описание
 ----------------
 
-An area light is a type of :ref:`Light3D<class_Light3D>` node that emits light over a two-dimensional area, in the shape of a rectangle. The light is attenuated throughout the distance. This attenuation can be configured by changing the energy, :ref:`area_attenuation<class_AreaLight3D_property_area_attenuation>`, and :ref:`area_range<class_AreaLight3D_property_area_range>`.
+Зонный источник света — это тип узла :ref:`Light3D<class_Light3D>`, который излучает свет на двумерной области в форме прямоугольника. Свет ослабляется по всей длине. Это ослабление можно настроить, изменив параметры энергии, :ref:`area_attenuation<class_AreaLight3D_property_area_attenuation>` и :ref:`area_range<class_AreaLight3D_property_area_range>`.
 
-Light is emitted in the -Z direction of the node's global basis. For an unrotated light, this means that the light is emitted forwards, illuminating the front side of a 3D model (see :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` and :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`).
+Свет излучается в направлении -Z глобального базиса узла. Для невращающегося источника света это означает, что свет излучается вперед, освещая переднюю сторону 3D-модели (см. :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` и :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`).
 
-Area lights can cast soft shadows using PCSS, which you can control by tweaking the size parameter. The shadow map is drawn from the center of the light.
+Зонные источники света могут отбрасывать мягкие тени с помощью PCSS, которые можно контролировать, изменяя параметр размера. Карта теней рисуется из центра источника света.
 
-\ **Note:** Area lights have limited support in the Mobile and Compatibility renderers. In the Mobile renderer, the size of the penumbra doesn't vary as it should with PCSS. In Compatibility, area lights cannot cast shadows.
+\ **Примечание:** Зонные источники света имеют ограниченную поддержку в рендерах Mobile и Compatibility. В рендере Mobile размер полутени не изменяется должным образом при использовании PCSS. В режиме совместимости источники света с площадной областью не могут отбрасывать тени.
 
-\ **Warning:** Shadows cast by an area light may look incorrect if the object casting shadows doesn't have enough subdivisions and it's very close to the area light. This is the same limitation as the Dual Paraboloid shadow mode on an :ref:`OmniLight3D<class_OmniLight3D>`.
+\ **Предупреждение:** Тени, отбрасываемые источником света с площадной областью, могут выглядеть некорректно, если объект, отбрасывающий тени, не имеет достаточного количества подразделений и находится очень близко к источнику света. Это то же ограничение, что и в режиме теней «Двойной параболоид» на :ref:`OmniLight3D<class_OmniLight3D>`.
 
-\ **Performance:** Area lights are more demanding on the GPU compared to omni and spot lights. In Forward+, there is an additional GPU cost on *all* rendered objects as soon as one area light is present in the view frustum (due to the nature of clustered lighting). Consider using them only for cinematics or when targeting high-end devices.
+\ **Производительность:** Источники света с площадной областью более требовательны к графическому процессору по сравнению с всенаправленными и точечными источниками света. В режиме Forward+ возникает дополнительная нагрузка на графический процессор для *всех* отрисованных объектов, как только один источник света с площадной областью появляется в области видимости (из-за особенностей кластерного освещения). Рекомендуется использовать их только для кинематографических сцен или при работе с высокопроизводительными устройствами.
 
 .. rst-class:: classref-introduction-group
 

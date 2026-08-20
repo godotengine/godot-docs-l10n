@@ -71,9 +71,9 @@ PhysicsMaterial
 - |void| **set_bounce**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bounce**\ (\ )
 
-The body's bounciness. Values range from ``0`` (no bounce) to ``1`` (full bounciness).
+形體的反彈值。取值範圍從 ``0``\ （無反彈）到 ``1``\ （完全反彈）。
 
-\ **Note:** Even with :ref:`bounce<class_PhysicsMaterial_property_bounce>` set to ``1.0``, some energy will be lost over time due to linear and angular damping. To have a physics body that preserves all its energy over time, set :ref:`bounce<class_PhysicsMaterial_property_bounce>` to ``1.0``, the body's linear damp mode to **Replace** (if applicable), its linear damp to ``0.0``, its angular damp mode to **Replace** (if applicable), and its angular damp to ``0.0``.
+\ **注意：**\ 由於線性與角度阻尼的影響，即使將 :ref:`bounce<class_PhysicsMaterial_property_bounce>` 設爲 ``1.0``\ ，隨時間推移仍會損失部分能量。若要讓物理形體隨時間推移仍完全保有其能量，請將 :ref:`bounce<class_PhysicsMaterial_property_bounce>` 設爲 ``1.0``\ 、形體的線性阻尼模式設爲 **Replace**\ （如果可用的話）、線性阻尼設爲 ``0.0``\ 、角度阻尼模式設爲 **Replace**\ （如果可用的話），並將角度阻尼設爲 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ The body's bounciness. Values range from ``0`` (no bounce) to ``1`` (full bounci
 - |void| **set_friction**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_friction**\ (\ )
 
-物體的摩擦。取值範圍從 ``0``\ （無摩擦）到 ``1``\ （最大摩擦）。
+形體的摩擦值。取值範圍從 ``0``\ （無摩擦）到 ``1``\ （最大摩擦值）。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ The body's bounciness. Values range from ``0`` (no bounce) to ``1`` (full bounci
 - |void| **set_rough**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_rough**\ (\ )
 
-如果為 ``true``\ ，當兩個物體碰撞時，物理引擎將使用標記為“粗糙”的物體的摩擦。如果 ``false``\ ，物理引擎將使用所有碰撞物體的最低摩擦力來代替。如果兩個碰撞的物件都為 ``true``\ ，物理引擎將使用最高的摩擦力。
+若爲 ``true``\ ，當兩個物件碰撞時，物理引擎將採用開啟「Rough」之物件的摩擦值；若爲 ``false``\ ，物理引擎則會採用所有碰撞物件中最小的摩擦值；若兩個碰撞物件皆爲 ``true``\ ，物理引擎會採用最大的摩擦值。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -22,7 +22,7 @@ Per eliminare un'istanza di Object, chiama :ref:`free()<class_Object_method_free
 
 Gli oggetti possono avere uno :ref:`Script<class_Script>` allegato. Una volta istanziato lo :ref:`Script<class_Script>`, agisce effettivamente come un'estensione della classe base, consentendogli di definire ed ereditare nuove proprietà, metodi e segnali.
 
-All'interno di uno :ref:`Script<class_Script>`, :ref:`_get_property_list()<class_Object_private_method__get_property_list>` può essere sovrascritto per personalizzare le proprietà in diversi modi. Ciò consente loro di essere disponibili all'editor, di essere visualizzate come liste di opzioni, di essere suddivise in gruppi, di essere salvate su disco, ecc. I linguaggi di scripting offrono modi più semplici per personalizzare le proprietà, come con l'annotazione :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+All'interno di uno :ref:`Script<class_Script>`, :ref:`_get_property_list()<class_Object_private_method__get_property_list>` può essere sovrascritto per personalizzare le proprietà in diversi modi. Ciò consente loro di essere disponibili all'editor, di essere visualizzate come elenchi di opzioni, di essere suddivise in gruppi, di essere salvate su disco, ecc. I linguaggi di scripting offrono modi più semplici per personalizzare le proprietà, come con l'annotazione :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
 
 Godot è molto dinamico. Lo script di un oggetto, e quindi le sue proprietà, metodi e segnali, possono essere modificati in fase di esecuzione. Per questo motivo, possono esserci occasioni in cui, ad esempio, una proprietà richiesta da un metodo potrebbe non esistere. Per evitare errori di durante l'esecuzione, vedi metodi come :ref:`set()<class_Object_method_set>`, :ref:`get()<class_Object_method_get>`, :ref:`call()<class_Object_method_call>`, :ref:`has_method()<class_Object_method_has_method>`, :ref:`has_signal()<class_Object_method_has_signal>`, ecc. Nota che questi metodi sono **molto** più lenti dei riferimenti diretti.
 
@@ -277,7 +277,7 @@ Le connessioni con conteggio dei riferimenti possono essere assegnate allo stess
 
 :ref:`ConnectFlags<enum_Object_ConnectFlags>` **CONNECT_APPEND_SOURCE_OBJECT** = ``16``
 
-On signal emission, the source object is automatically appended after the original arguments of the signal, regardless of the connected :ref:`Callable<class_Callable>`'s unbinds which affect only the original arguments of the signal (see :ref:`Callable.unbind()<class_Callable_method_unbind>`, :ref:`Callable.get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>`).
+All'emissione del segnale, l'oggetto sorgente viene automaticamente aggiunto dopo gli argomenti originali del segnale, a prescindere dagli argomenti disassociati del :ref:`Callable<class_Callable>` connesso, che hanno effetto solo sugli argomenti originali del segnale (vedi :ref:`Callable.unbind()<class_Callable_method_unbind>`, :ref:`Callable.get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>`).
 
 ::
 
@@ -286,9 +286,9 @@ On signal emission, the source object is automatically appended after the origin
     signal test_signal
 
     func test():
-        print(self) # Prints e.g. <Object#35332818393>
+        print(self) # Stampa ad esempio <Object#35332818393>
         test_signal.connect(prints.unbind(1), CONNECT_APPEND_SOURCE_OBJECT)
-        test_signal.emit("emit_arg_1", "emit_arg_2") # Prints emit_arg_1 <Object#35332818393>
+        test_signal.emit("emit_arg_1", "emit_arg_2") # Stampa emit_arg_1 <Object#35332818393>
 
 .. rst-class:: classref-section-separator
 
@@ -655,7 +655,7 @@ Chiamato quando l'oggetto riceve una notifica, la quale può essere identificata
 
 :ref:`bool<class_bool>` **_property_can_revert**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__property_can_revert>`
 
-Sovrascrivi questo metodo per personalizzare il comportamento di ripristino della proprietà denominata ``property``. Dovrebbe restituire ``true`` se ``property`` ha un valore predefinito personalizzato ed è ripristinabile nel pannello dell'Ispettore. Usa :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` per specificare il valore predefinito di ``property``.
+Sovrascrivi questo metodo per personalizzare il comportamento di ripristino della proprietà denominata ``property``. Dovrebbe restituire ``true`` se ``property`` ha un valore predefinito personalizzato ed è ripristinabile nel pannello Ispettore. Usa :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` per specificare il valore predefinito di ``property``.
 
 \ **Nota:** Questo metodo deve restituire in modo costante, a prescindere dal valore attuale della proprietà denominata ``property``.
 
@@ -671,7 +671,7 @@ Sovrascrivi questo metodo per personalizzare il comportamento di ripristino dell
 
 :ref:`Variant<class_Variant>` **_property_get_revert**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__property_get_revert>`
 
-Sovrascrivi questo metodo per personalizzare il comportamento di ripristino della proprietà denominata ``property``. Dovrebbe restituire il valore predefinito per ``property``. Se il valore predefinito è diverso dal valore attuale della proprietà denominata ``property``, è visualizzata un'icona di ripristino nel pannello dell'Ispettore.
+Sovrascrivi questo metodo per personalizzare il comportamento di ripristino della proprietà denominata ``property``. Dovrebbe restituire il valore predefinito per ``property``. Se il valore predefinito è diverso dal valore attuale della proprietà denominata ``property``, è visualizzata un'icona di ripristino nel pannello Ispettore.
 
 \ **Nota:** :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` deve essere sovrascritto affinché questo metodo sia chiamato.
 
@@ -1008,15 +1008,15 @@ Se questo metodo viene chiamato durante :ref:`NOTIFICATION_PREDELETE<class_Objec
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect**\ (\ signal\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`, flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Object_method_connect>`
 
-Connects a ``signal`` by name to a ``callable``. Optional ``flags`` can be also added to configure the connection's behavior (see :ref:`ConnectFlags<enum_Object_ConnectFlags>` constants).
+Connette un segnale ``signal`` per nome al chiamabile ``callable``. È possibile aggiungere anche ``flags`` facoltativi per configurare il comportamento della connessione (vedi le costanti di :ref:`ConnectFlags<enum_Object_ConnectFlags>`).
 
-A signal can only be connected once to the same :ref:`Callable<class_Callable>`. If the signal is already connected, this method returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` and generates an error, unless the signal is connected with :ref:`CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. To prevent this, use :ref:`is_connected()<class_Object_method_is_connected>` first to check for existing connections.
+Un segnale può essere connesso solo una volta allo stesso :ref:`Callable<class_Callable>`. Se il segnale è già connesso, restituisce :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` e invia un messaggio di errore, a meno che il segnale non sia connesso con :ref:`CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. Per evitare ciò, usa prima :ref:`is_connected()<class_Object_method_is_connected>` per verificare le connessioni esistenti.
 
-\ **Note:** If the ``callable``'s object is freed, the connection will be lost.
+\ **Nota:** Se l'oggetto di ``callable`` viene liberato, la connessione andrà persa.
 
-\ **Note:** In GDScript, it is generally recommended to connect signals with :ref:`Signal.connect()<class_Signal_method_connect>` instead.
+\ **Nota:** In GDScript, si consiglia generalmente di connettere i segnali con :ref:`Signal.connect()<class_Signal_method_connect>`.
 
-\ **Note:** This method, and all other signal-related methods, are thread-safe.
+\ **Nota:** Questo metodo, e tutti gli altri metodi relativi ai segnali, sono thread-safe.
 
 .. rst-class:: classref-item-separator
 
@@ -1321,9 +1321,9 @@ Restituisce un :ref:`Array<class_Array>` di connessioni per il segnale denominat
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_signal_list**\ (\ ) |const| :ref:`🔗<class_Object_method_get_signal_list>`
 
-Returns the list of existing signals as an :ref:`Array<class_Array>` of dictionaries.
+Restituisce la lista dei segnali esistenti come :ref:`Array<class_Array>` di dizionari.
 
-\ **Note:** Due to the implementation, each :ref:`Dictionary<class_Dictionary>` is formatted very similarly to the returned values of :ref:`get_method_list()<class_Object_method_get_method_list>`.
+\ **Nota:** A causa dell'implementazione, ogni :ref:`Dictionary<class_Dictionary>` è formattato in modo molto simile ai valori restituiti da :ref:`get_method_list()<class_Object_method_get_method_list>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1476,9 +1476,9 @@ Restituisce ``true`` se esiste una connessione tra il segnale con il nome ``sign
 
 :ref:`bool<class_bool>` **is_queued_for_deletion**\ (\ ) |const| :ref:`🔗<class_Object_method_is_queued_for_deletion>`
 
-Returns ``true`` if the methods :ref:`Node.queue_free()<class_Node_method_queue_free>` or :ref:`SceneTree.queue_delete()<class_SceneTree_method_queue_delete>` was called for the object.
+Restituisce ``true`` se il metodo :ref:`Node.queue_free()<class_Node_method_queue_free>` o :ref:`SceneTree.queue_delete()<class_SceneTree_method_queue_delete>` è stato chiamato per l'oggetto.
 
-\ **Note:** This method does not return ``true`` on children of the node that :ref:`Node.queue_free()<class_Node_method_queue_free>` has been called on, even though they will be freed together with the parent.
+\ **Nota:** Questo metodo non restituisce ``true`` sui figli del nodo su cui è stato chiamato :ref:`Node.queue_free()<class_Node_method_queue_free>`, anche se verranno liberati insieme al padre.
 
 .. rst-class:: classref-item-separator
 
@@ -1545,7 +1545,7 @@ Emette il segnale :ref:`property_list_changed<class_Object_signal_property_list_
 
 Restituisce ``true`` se la proprietà ``property`` specificata ha un valore predefinito personalizzato. Usa :ref:`property_get_revert()<class_Object_method_property_get_revert>` per ottenere il valore predefinito di ``property``.
 
-\ **Nota:** Questo metodo è utilizzato dal pannello dell'Ispettore per visualizzare un'icona di ripristino. L'oggetto deve implementare :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` per personalizzare il valore predefinito. Se :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` non è implementato, questo metodo restituisce ``false``.
+\ **Nota:** Questo metodo è utilizzato dal pannello Ispettore per visualizzare un'icona di ripristino. L'oggetto deve implementare :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` per personalizzare il valore predefinito. Se :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` non è implementato, questo metodo restituisce ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1559,7 +1559,7 @@ Restituisce ``true`` se la proprietà ``property`` specificata ha un valore pred
 
 Restituisce il valore predefinito personalizzato della proprietà ``property`` specificata. Usa :ref:`property_can_revert()<class_Object_method_property_can_revert>` per verificare se la proprietà ``property`` ha un valore predefinito personalizzato.
 
-\ **Nota:** Questo metodo è utilizzato dal pannello dell'Ispettore per visualizzare un'icona di ripristino. L'oggetto deve implementare :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` per personalizzare il valore predefinito. Se :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` non è implementato, questo metodo restituisce ``null``.
+\ **Nota:** Questo metodo è utilizzato dal pannello Ispettore per visualizzare un'icona di ripristino. L'oggetto deve implementare :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` per personalizzare il valore predefinito. Se :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` non è implementato, questo metodo restituisce ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -1818,7 +1818,7 @@ Per esempi dettagliati, consulta :doc:`Localizzazione tramite gettext <../tutori
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

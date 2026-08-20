@@ -14,7 +14,7 @@ Versión horizontal de la :ref:`ScrollBar<class_ScrollBar>`, que va de izquierda
 Descripción
 ----------------------
 
-Un deslizador horizontal, utilizado para ajustar un valor moviendo un agarrador a lo largo de un eje horizontal. Es un control basado en :ref:`Range<class_Range>` y va de izquierda (min) a derecha (max).
+Un deslizador horizontal, utilizado para ajustar un valor moviendo un agarre a lo largo de un eje horizontal. Es un control basado en :ref:`Range<class_Range>` y va de izquierda (min) a derecha (max).
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -1107,7 +1107,7 @@ TextServerExtension
 
 :ref:`PackedColorArray<class_PackedColorArray>` **_font_get_palette_colors**\ (\ font_rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_palette_colors>`
 
-Returns the array in the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors. Colors can be overridden using :ref:`_font_set_palette_custom_colors()<class_TextServerExtension_private_method__font_set_palette_custom_colors>`.
+Возвращает массив из предопределенной палитры цветов по индексу ``index``. Палитра содержит все цвета, используемые для рендеринга глифов шрифта. Каждая палитра имеет одинаковое количество цветов. Цвета можно переопределить с помощью :ref:`_font_set_palette_custom_colors()<class_TextServerExtension_private_method__font_set_palette_custom_colors>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1131,7 +1131,7 @@ Returns the array in the predefined color palette at ``index``. Palette contains
 
 :ref:`PackedColorArray<class_PackedColorArray>` **_font_get_palette_custom_colors**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_palette_custom_colors>`
 
-Returns array of custom colors to override predefined palette.
+Возвращает массив пользовательских цветов для переопределения предопределенной палитры.
 
 .. rst-class:: classref-item-separator
 
@@ -1371,7 +1371,7 @@ Returns array of custom colors to override predefined palette.
 
 :ref:`int<class_int>` **_font_get_used_palette**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_used_palette>`
 
-Returns used palette index.
+Возвращает используемый индекс палитры.
 
 .. rst-class:: classref-item-separator
 
@@ -1959,7 +1959,7 @@ Returns used palette index.
 
 |void| **_font_set_palette_custom_colors**\ (\ font_rid\: :ref:`RID<class_RID>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`\ ) |virtual| :ref:`🔗<class_TextServerExtension_private_method__font_set_palette_custom_colors>`
 
-Sets array of custom colors to override predefined palette. Set to empty array to reset overrides. Use ``Color(0, 0, 0, 0)``, to keep predefined palette color at specific position.
+Устанавливает массив пользовательских цветов для переопределения предопределенной палитры. Установите пустой массив, чтобы сбросить переопределения. Используйте ``Color(0, 0, 0, 0)``, чтобы сохранить предопределенный цвет палитры на конкретной позиции.
 
 .. rst-class:: classref-item-separator
 
@@ -2115,7 +2115,7 @@ Sets array of custom colors to override predefined palette. Set to empty array t
 
 |void| **_font_set_used_palette**\ (\ font_rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_TextServerExtension_private_method__font_set_used_palette>`
 
-Sets used palette index.
+Устанавливает используемый индекс палитры.
 
 .. rst-class:: classref-item-separator
 
@@ -2499,7 +2499,7 @@ Sets used palette index.
 
 :ref:`Vector2i<class_Vector2i>` **_shaped_get_run_glyph_range**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_get_run_glyph_range>`
 
-Returns the glyph range of the ``index`` text run (in visual order).
+Возвращает диапазон глифов для текстового прогона ``index`` (в визуальном порядке).
 
 .. rst-class:: classref-item-separator
 

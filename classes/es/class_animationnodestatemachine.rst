@@ -141,7 +141,7 @@ Buscar el principio se trata como buscar el principio de la animación en el est
 
 :ref:`StateMachineType<enum_AnimationNodeStateMachine_StateMachineType>` **STATE_MACHINE_TYPE_GROUPED** = ``2``
 
-Esta es una máquina de estados agrupada que puede ser controlada desde una máquina de estados padre. No funciona de forma independiente. Debe haber una máquina de estados con :ref:`state_machine_type<class_AnimationNodeStateMachine_property_state_machine_type>` de :ref:`STATE_MACHINE_TYPE_ROOT<class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_ROOT>` o :ref:`STATE_MACHINE_TYPE_NESTED<class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_NESTED>` en el padre o ancestro.
+Esta es una máquina de estados agrupada que puede ser controlada desde una máquina de estados antecesores. No funciona de forma independiente. Debe haber una máquina de estados con :ref:`state_machine_type<class_AnimationNodeStateMachine_property_state_machine_type>` de :ref:`STATE_MACHINE_TYPE_ROOT<class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_ROOT>` o :ref:`STATE_MACHINE_TYPE_NESTED<class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_NESTED>` en el antecesor o posterior.
 
 .. rst-class:: classref-section-separator
 
@@ -182,7 +182,7 @@ Si es ``true``, permite teletransportarse al estado propio con :ref:`AnimationNo
 
 Si es ``true``, trata el fundido cruzado a los nodos de inicio y fin como una mezcla con la animación RESET.
 
-En la mayoría de los casos, cuando se realizan fundidos cruzados adicionales en el :ref:`AnimationNode<class_AnimationNode>` padre de la máquina de estados, establecer esta propiedad a ``false`` y hacer coincidir el tiempo de fundido cruzado del :ref:`AnimationNode<class_AnimationNode>` padre con el de los nodos de inicio y fin de la máquina de estados da buenos resultados.
+En la mayoría de los casos, cuando se realizan fundidos cruzados adicionales en el :ref:`AnimationNode<class_AnimationNode>` antecesor de la máquina de estados, establecer esta propiedad a ``false`` y hacer coincidir el tiempo de fundido cruzado del :ref:`AnimationNode<class_AnimationNode>` antecesor con el de los nodos de inicio y fin de la máquina de estados da buenos resultados.
 
 .. rst-class:: classref-item-separator
 

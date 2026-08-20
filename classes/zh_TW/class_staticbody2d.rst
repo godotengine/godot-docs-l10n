@@ -101,9 +101,9 @@ StaticBody2D
 - |void| **set_physics_material_override**\ (\ value\: :ref:`PhysicsMaterial<class_PhysicsMaterial>`\ )
 - :ref:`PhysicsMaterial<class_PhysicsMaterial>` **get_physics_material_override**\ (\ )
 
-物體的物理材質。
+覆寫形體的物理材質。
 
-如果為該屬性指定了一種材質，則將使用該材質代替任何其他物理材質，例如繼承的材質。
+若爲此屬性指定了某種材質，則會使用該材質代替其他物理材質（比如繼承而來的材質）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

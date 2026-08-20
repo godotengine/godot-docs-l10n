@@ -11,14 +11,14 @@ OpenXRSpatialComponentData
 
 **Ereditato da:** :ref:`OpenXRSpatialComponentAnchorList<class_OpenXRSpatialComponentAnchorList>`, :ref:`OpenXRSpatialComponentBounded2DList<class_OpenXRSpatialComponentBounded2DList>`, :ref:`OpenXRSpatialComponentBounded3DList<class_OpenXRSpatialComponentBounded3DList>`, :ref:`OpenXRSpatialComponentMarkerList<class_OpenXRSpatialComponentMarkerList>`, :ref:`OpenXRSpatialComponentMesh2DList<class_OpenXRSpatialComponentMesh2DList>`, :ref:`OpenXRSpatialComponentMesh3DList<class_OpenXRSpatialComponentMesh3DList>`, :ref:`OpenXRSpatialComponentParentList<class_OpenXRSpatialComponentParentList>`, :ref:`OpenXRSpatialComponentPersistenceList<class_OpenXRSpatialComponentPersistenceList>`, :ref:`OpenXRSpatialComponentPlaneAlignmentList<class_OpenXRSpatialComponentPlaneAlignmentList>`, :ref:`OpenXRSpatialComponentPlaneSemanticLabelList<class_OpenXRSpatialComponentPlaneSemanticLabelList>`, :ref:`OpenXRSpatialComponentPolygon2DList<class_OpenXRSpatialComponentPolygon2DList>`, :ref:`OpenXRSpatialQueryResultData<class_OpenXRSpatialQueryResultData>`
 
-Object for storing OpenXR spatial entity component data.
+Oggetto per memorizzare i dati del componente delle entità spaziali di OpenXR.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Object for storing OpenXR spatial entity component data.
+Oggetto per memorizzare i dati del componente delle entità spaziali di OpenXR.
 
 .. rst-class:: classref-reftable-group
 
@@ -55,7 +55,7 @@ Descrizioni dei metodi
 
 :ref:`int<class_int>` **_get_component_type**\ (\ ) |virtual| |const| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__get_component_type>`
 
-Return the component type for the component we store data for.
+Restituisce il tipo del componente per cui memorizziamo i dati.
 
 .. rst-class:: classref-item-separator
 
@@ -67,7 +67,7 @@ Return the component type for the component we store data for.
 
 :ref:`int<class_int>` **_get_structure_data**\ (\ next\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__get_structure_data>`
 
-Return a pointer to the structure data that will be submitted along with the snapshot query. This pointer must remain valid as long as this object is instantiated.
+Restituisce un puntatore alla struttura dati che verrà inviata insieme alla query di snapshot. Questo puntatore deve rimanere valido fin quando l'oggetto è istanziato.
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ Return a pointer to the structure data that will be submitted along with the sna
 
 |void| **_set_capacity**\ (\ capacity\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__set_capacity>`
 
-Sets the expected capacity as provided by the spatial entities query system. Buffers should be initialized with the correct storage.
+Imposta la capacità prevista come fornita dal sistema di interrogazione delle entità spaziali. I buffer devono essere inizializzati con lo spazio di memorizzazione corretto.
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ Sets the expected capacity as provided by the spatial entities query system. Buf
 
 :ref:`int<class_int>` **get_component_type**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentData_method_get_component_type>`
 
-Gets this **OpenXRSpatialComponentData**'s ``XrSpatialComponentTypeEXT``.
+Ottiene l'``XrSpatialComponentTypeEXT`` di questo **OpenXRSpatialComponentData**.
 
 .. rst-class:: classref-item-separator
 
@@ -103,13 +103,13 @@ Gets this **OpenXRSpatialComponentData**'s ``XrSpatialComponentTypeEXT``.
 
 |void| **set_capacity**\ (\ capacity\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialComponentData_method_set_capacity>`
 
-Sets the expected capacity as provided by the spatial entities query system. Buffers should be initialized with the correct storage.
+Imposta la capacità prevista come fornita dal sistema di interrogazione delle entità spaziali. I buffer devono essere inizializzati con lo spazio di memorizzazione corretto.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

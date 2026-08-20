@@ -14,13 +14,13 @@ ProjectSettings
 Описание
 ----------------
 
-Stores variables that can be accessed from everywhere. Use :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` or :ref:`has_setting()<class_ProjectSettings_method_has_setting>` to access them. Variables stored in ``project.godot`` are also loaded into **ProjectSettings**, making this object very useful for reading custom game configuration options.
+Сохраняет переменные, к которым можно получить доступ отовсюду. Используйте :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` или :ref:`has_setting()<class_ProjectSettings_method_has_setting>` для доступа к ним. Переменные, хранящиеся в ``project.godot``, также загружаются в **ProjectSettings**, что делает этот объект очень полезным для чтения пользовательских параметров конфигурации игры.
 
-When naming a Project Settings property, use the full path to the setting including the category. For example, ``"application/config/name"`` for the project name. Category and property names can be viewed in the Project Settings dialog.
+При именовании свойства Project Settings используйте полный путь к настройке, включая категорию. Например, ``"application/config/name"`` для имени проекта. Имена категорий и свойств можно просмотреть в диалоговом окне Project Settings.
 
-\ **Feature tags:** Project settings can be overridden for specific platforms and configurations (debug, release, ...) using :doc:`feature tags <../tutorials/export/feature_tags>`.
+\ **Теги функций:** Настройки проекта можно переопределить для определенных платформ и конфигураций (отладка, выпуск, ...) с помощью :doc:`тегов функций <../tutorials/export/feature_tags>`.
 
-\ **Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This file is in the same format as ``project.godot``, and can also be written using :ref:`ConfigFile<class_ConfigFile>`. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' :doc:`feature tags <../tutorials/export/feature_tags>` in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
+\ **Переопределение:** Любую настройку проекта можно переопределить, создав файл с именем ``override.cfg`` в корневом каталоге проекта. Это также можно использовать в экспортированных проектах, поместив этот файл в тот же каталог, что и двоичный файл проекта. Переопределение по-прежнему будет учитывать :doc:`теги функций <../tutorials/export/feature_tags>` базовых настроек проекта в учетной записи. Поэтому не забудьте *также* переопределить настройку с помощью нужных тегов функций, если вы хотите, чтобы они переопределяли базовые настройки проекта на всех платформах и конфигурациях.
 
 .. rst-class:: classref-introduction-group
 
@@ -2011,11 +2011,11 @@ When naming a Project Settings property, use the full path to the setting includ
 
 :ref:`String<class_String>` **accessibility/general/accessibility_driver** = ``"accesskit"`` :ref:`🔗<class_ProjectSettings_property_accessibility/general/accessibility_driver>`
 
-Accessibility driver:
+Драйвер специальных возможностей:
 
--**accesskit** (default): AccessKit driver.
+-**accesskit** (по умолчанию): Драйвер AccessKit.
 
--**dummy**: Dummy driver, screen reader support is disabled.
+-**dummy**: Заглушительный драйвер, поддержка программ чтения с экрана отключена.
 
 .. rst-class:: classref-item-separator
 
@@ -2085,7 +2085,7 @@ Accessibility driver:
 
 :ref:`bool<class_bool>` **animation/warnings/check_invalid_skeleton_modifier_node_paths** = ``true`` :ref:`🔗<class_ProjectSettings_property_animation/warnings/check_invalid_skeleton_modifier_node_paths>`
 
-If ``true``, :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` prints a warning if there's no matching object for the track path in the scene when assigning.
+Если ``true``, :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` выводит предупреждение, если при назначении пути для трассы в сцене нет соответствующего объекта.
 
 .. rst-class:: classref-item-separator
 
@@ -3041,7 +3041,7 @@ If ``true``, :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` prints a warnin
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_temporary_modification** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_temporary_modification>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a built-in property of type ``Packed*Array`` is modified using a complex assignment chain or a non-``const`` method call. In this case, you are only modifying a temporary value, and the property's value remains unchanged.
+Если установлено значение **Warn** или **Error**, то при изменении встроенного свойства типа ``Packed*Array`` с помощью сложной цепочки присваиваний или вызова метода, не являющегося ``const``, выдается предупреждение или ошибка соответственно. В этом случае изменяется только временное значение, а значение свойства остается неизменным.
 
 .. rst-class:: classref-item-separator
 
@@ -4719,9 +4719,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`bool<class_bool>` **display/window/hdr/request_hdr_output** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/hdr/request_hdr_output>`
 
-If ``true``, HDR output is requested for the main window and the editor. The main window and editor will automatically switch between HDR and SDR if it is moved between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of the :ref:`Window<class_Window>` must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output.
+Если ``true``, запрашивается вывод HDR для главного окна и редактора. Главное окно и редактор будут автоматически переключаться между HDR и SDR при перемещении между экранами, изменении возможностей экрана или изменении системных настроек. Это внутренне принудительно включит :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` для главного :ref:`Viewport<class_Viewport>`. Для всех остальных :ref:`SubViewport<class_SubViewport>` :ref:`Window<class_Window>` необходимо включить свойство :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`, чтобы обеспечить вывод HDR.
 
-\ **Note:** This property is only read when the project starts. To change this property at runtime, set :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
+\ **Примечание:** Это свойство считывается только при запуске проекта. Чтобы изменить это свойство во время выполнения, установите :ref:`Window.hdr_output_requested<class_Window_property_hdr_output_requested>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5041,17 +5041,17 @@ If ``true``, HDR output is requested for the main window and the editor. The mai
 
 :ref:`String<class_String>` **display/window/stretch/aspect** = ``"keep"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/aspect>`
 
-Defines how the aspect ratio of the base size is preserved when stretching to fit the resolution of the window or screen.
+Определяет, как сохраняется соотношение сторон базового размера при растягивании для соответствия разрешению окна или экрана.
 
-\ ``"ignore"``: Ignore the aspect ratio when stretching the screen. This means that the original resolution will be stretched to exactly fill the screen, even if it's wider or narrower. This may result in non-uniform stretching: things looking wider or taller than designed.
+\ ``"ignore"``: Игнорировать соотношение сторон при растягивании экрана. Это означает, что исходное разрешение будет растянуто точно, чтобы заполнить экран, даже если он шире или уже. Это может привести к неравномерному растягиванию: элементы будут выглядеть шире или выше, чем задумано.
 
-\ ``"keep"``: Keep aspect ratio when stretching the screen. This means that the viewport retains its original size regardless of the screen resolution, and black bars will be added to the top/bottom of the screen ("letterboxing") or the sides ("pillarboxing").
+\ ``"keep"``: Сохранять соотношение сторон при растягивании экрана. Это означает, что область просмотра сохраняет свой исходный размер независимо от разрешения экрана, а черные полосы будут добавлены сверху/снизу экрана ("letterboxing") или по бокам ("pillarboxing").
 
-\ ``"keep_width"``: Keep aspect ratio when stretching the screen. If the screen is wider than the base size, black bars are added at the left and right (pillarboxing). But if the screen is taller than the base resolution, the viewport will be grown in the vertical direction (and more content will be visible at the bottom). You can also think of this as "Expand Vertically".
+\ ``"keep_width"``: Сохранять соотношение сторон при растягивании экрана. Если экран шире базового размера, черные полосы добавляются слева и справа (pillarboxing). Но если высота экрана превышает базовое разрешение, область просмотра будет увеличиваться по вертикали (и внизу будет видно больше контента). Это также можно рассматривать как «Вертикальное расширение».
 
-\ ``"keep_height"``: Keep aspect ratio when stretching the screen. If the screen is taller than the base size, black bars are added at the top and bottom (letterboxing). But if the screen is wider than the base resolution, the viewport will be grown in the horizontal direction (and more content will be visible to the right). You can also think of this as "Expand Horizontally".
+\ ``"keep_height"``: Сохраняет соотношение сторон при растягивании экрана. Если высота экрана превышает базовый размер, сверху и снизу добавляются черные полосы (letterboxing). Но если ширина экрана превышает базовое разрешение, область просмотра будет увеличиваться по горизонтали (и справа будет видно больше контента). Это также можно рассматривать как «Горизонтальное расширение».
 
-\ ``"expand"``: Keep aspect ratio when stretching the screen, but keep neither the base width nor height. Depending on the screen aspect ratio, the viewport will either be larger in the horizontal direction (if the screen is wider than the base size) or in the vertical direction (if the screen is taller than the original size). This is the default for projects created starting in Godot 4.7.
+\ ``"expand"``: Сохраняет соотношение сторон при растягивании экрана, но не сохраняет ни базовую ширину, ни высоту. В зависимости от соотношения сторон экрана, область просмотра будет либо больше по горизонтали (если ширина экрана превышает базовый размер), либо по вертикали (если высота экрана превышает исходный размер). Это значение по умолчанию для проектов, созданных начиная с Godot 4.7.
 
 .. rst-class:: classref-item-separator
 
@@ -5063,13 +5063,13 @@ Defines how the aspect ratio of the base size is preserved when stretching to fi
 
 :ref:`String<class_String>` **display/window/stretch/mode** = ``"disabled"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/mode>`
 
-Defines how the base size is stretched to fit the resolution of the window or screen.
+Определяет, как базовый размер растягивается, чтобы соответствовать разрешению окна или экрана.
 
-\ ``"disabled"``: No stretching happens. One unit in the scene corresponds to one pixel on the screen. In this mode, :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` has no effect. Recommended for non-game applications.
+\ ``"disabled"``: Растягивание не происходит. Одна единица в сцене соответствует одному пикселю на экране. В этом режиме :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` не оказывает никакого эффекта. Рекомендуется для приложений, не являющихся играми.
 
-\ ``"canvas_items"``: The base size specified in width and height in the project settings is stretched to cover the whole screen (taking :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` into account). This means that everything is rendered directly at the target resolution. 3D is unaffected, while in 2D, there is no longer a 1:1 correspondence between sprite pixels and screen pixels, which may result in scaling artifacts. Recommended for most games that don't use a pixel art aesthetic, although it is possible to use this stretch mode for pixel art games too (especially in 3D). This is the default for projects created starting in Godot 4.7.
+\ ``"canvas_items"``: Базовый размер, указанный в параметрах width и height в настройках проекта, растягивается, чтобы покрыть весь экран (с учетом :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>`). Это означает, что все отображается непосредственно в целевом разрешении. 3D-графика остается неизменной, в то время как в 2D-графике больше нет соответствия 1:1 между пикселями спрайта и пикселями экрана, что может привести к артефактам масштабирования. Рекомендуется для большинства игр, не использующих пиксельную графику, хотя этот режим растягивания можно использовать и для пиксельных игр (особенно в 3D). Это значение по умолчанию для проектов, созданных начиная с Godot 4.7.
 
-\ ``"viewport"``: The size of the root :ref:`Viewport<class_Viewport>` is set precisely to the base size specified in the Project Settings' Display section. The scene is rendered to this viewport first. Finally, this viewport is scaled to fit the screen (taking :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` into account). Recommended for games that use a pixel art aesthetic.
+\ ``"viewport"``: Размер корневого :ref:`Viewport<class_Viewport>` устанавливается точно в соответствии с базовым размером, указанным в разделе «Display» настроек проекта. Сначала сцена отрисовывается в этом окне просмотра. Затем это окно просмотра масштабируется под размер экрана (с учетом :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>`). Рекомендуется для игр, использующих пиксельную графику.
 
 .. rst-class:: classref-item-separator
 
@@ -5111,11 +5111,11 @@ Defines how the base size is stretched to fit the resolution of the window or sc
 
 :ref:`bool<class_bool>` **display/window/subwindows/embed_subwindows** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>`
 
-If ``true``, subwindows are embedded in the main window (this is also called single-window mode). Single-window mode can be faster as it does not need to create a separate window for every popup and tooltip, which can be a slow operation depending on the operating system and rendering method in use.
+Если ``true``, дочерние окна встраиваются в главное окно (это также называется однооконным режимом). Однооконный режим может быть быстрее, поскольку не требует создания отдельного окна для каждого всплывающего окна и подсказки, что может быть медленной операцией в зависимости от операционной системы и используемого метода рендеринга.
 
-If ``false``, subwindows are created as separate windows (this is also called multi-window mode). This allows them to be moved outside the main window and use native operating system window decorations.
+Если ``false``, дочерние окна создаются как отдельные окна (это также называется многооконным режимом). Это позволяет перемещать их за пределы главного окна и использовать стандартные элементы оформления окон операционной системы.
 
-This is equivalent to :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` in the editor.
+Это эквивалентно :ref:`EditorSettings.interface/editor/single_window_mode<class_EditorSettings_property_interface/editor/single_window_mode>` в редакторе.
 
 .. rst-class:: classref-item-separator
 
@@ -5127,17 +5127,17 @@ This is equivalent to :ref:`EditorSettings.interface/editor/display/single_windo
 
 :ref:`int<class_int>` **display/window/vsync/vsync_mode** = ``1`` :ref:`🔗<class_ProjectSettings_property_display/window/vsync/vsync_mode>`
 
-Sets the V-Sync mode for the main game window. The editor's own V-Sync mode can be set using :ref:`EditorSettings.interface/editor/display/vsync_mode<class_EditorSettings_property_interface/editor/display/vsync_mode>`.
+Устанавливает режим вертикальной синхронизации (V-Sync) для главного окна игры. Собственный режим V-Sync редактора можно установить с помощью :ref:`EditorSettings.interface/editor/display/vsync_mode<class_EditorSettings_property_interface/editor/display/vsync_mode>`.
 
-See :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` for possible values and how they affect the behavior of your application.
+См. :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` для получения информации о возможных значениях и о том, как они влияют на поведение вашего приложения.
 
-Depending on the platform and rendering method, the engine will fall back to **Enabled** if the desired mode is not supported.
+В зависимости от платформы и метода рендеринга, движок переключится в режим **Включено**, если желаемый режим не поддерживается.
 
-V-Sync can be disabled on the command line using the ``--disable-vsync`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
+V-Sync можно отключить в командной строке с помощью аргумента командной строки ``--disable-vsync`` [url=$DOCS_URL/tutorials/editor/command_line_tutorial.html[/url].
 
-\ **Note:** The **Adaptive** and **Mailbox** V-Sync modes are only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+[b]Примечание:[/b] Режимы V-Sync [b]Adaptive[/b] и [b]Mailbox[/b] поддерживаются только в методах рендеринга Forward+ и Mobile, а не в режиме совместимости.
 
-\ **Note:** This property is only read when the project starts. To change the V-Sync mode at runtime, call :ref:`DisplayServer.window_set_vsync_mode()<class_DisplayServer_method_window_set_vsync_mode>` instead.
+[b]Примечание:[/b] Это свойство считывается только при запуске проекта. Чтобы изменить режим V-Sync во время выполнения, вызовите вместо этого [method DisplayServer.window_set_vsync_mode].
 
 .. rst-class:: classref-item-separator
 
@@ -5625,13 +5625,13 @@ Godot имеет 3 встроенных :ref:`MovieWriter<class_MovieWriter>`:
 
 :ref:`int<class_int>` **gui/common/show_focus_state_on_pointer_event** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>`
 
-Determines whether a :ref:`Control<class_Control>` should visually indicate focus when that focus is gained using a mouse or touch input.
+Определяет, должен ли элемент управления визуально отображать состояние фокуса, если фокус получен с помощью мыши или сенсорного ввода.
 
-- **Never** (``0``) show the focused state for mouse/touch input.
+- **Never** (``0``) отображать состояние фокуса для ввода с помощью мыши/сенсорного ввода.
 
-- **Text Input Controls** (``1``) show the focused state even if that focus was gained via mouse/touch input (similar to browser behavior).
+- **Text Input Controls** (``1``) отображать состояние фокуса, даже если фокус был получен с помощью мыши/сенсорного ввода (аналогично поведению браузера).
 
-- **Always** (``2``) show the focused state, even if that focus was gained via mouse/touch input.
+- **Always** (``2``) отображать состояние фокуса, даже если фокус был получен с помощью мыши/сенсорного ввода.
 
 .. rst-class:: classref-item-separator
 
@@ -10579,9 +10579,9 @@ Godot использует очередь сообщений для отсроч
 
 :ref:`float<class_float>` **physics/2d/sleep_threshold_linear** = ``2.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/sleep_threshold_linear>`
 
-Threshold linear velocity under which a 2D physics body will be considered inactive. See :ref:`PhysicsServer2D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
+Пороговая линейная скорость, ниже которой 2D-физическое тело будет считаться неактивным. См. :ref:`PhysicsServer2D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
 
-\ **Note:** Only supported when using GodotPhysics3D. This project setting is ignored when using Jolt Physics.
+\ **Примечание:** Поддерживается только при использовании GodotPhysics3D. Этот параметр проекта игнорируется при использовании Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10593,9 +10593,9 @@ Threshold linear velocity under which a 2D physics body will be considered inact
 
 :ref:`float<class_float>` **physics/2d/solver/contact_max_allowed_penetration** = ``0.3`` :ref:`🔗<class_ProjectSettings_property_physics/2d/solver/contact_max_allowed_penetration>`
 
-Maximum distance a shape can penetrate another shape before it is considered a collision. See :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
+Максимальное расстояние, на которое фигура может проникнуть в другую фигуру, прежде чем столкновение будет считаться произошедшим. См. :ref:`PhysicsServer2D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
 
-\ **Note:** Only supported when using GodotPhysics3D. This project setting is ignored when using Jolt Physics.
+\ **Примечание:** Поддерживается только при использовании GodotPhysics3D. Этот параметр проекта игнорируется при использовании Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10835,9 +10835,9 @@ Maximum distance a shape can penetrate another shape before it is considered a c
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_angular** = ``0.13962634`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_angular>`
 
-Threshold angular velocity under which a 3D physics body will be considered inactive. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
+Пороговая угловая скорость, ниже которой 3D-физическое тело будет считаться неактивным. См. :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Примечание:** Этот параметр проекта действует только при использовании GodotPhysics3D. Он не действует при использовании Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10849,9 +10849,9 @@ Threshold angular velocity under which a 3D physics body will be considered inac
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_linear** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_linear>`
 
-Threshold linear velocity under which a 3D physics body will be considered inactive. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
+Пороговая линейная скорость, ниже которой 3D-физическое тело будет считаться неактивным. См. :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Примечание:** Этот параметр проекта действует только при использовании GodotPhysics3D. Он не действует при использовании Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10863,9 +10863,9 @@ Threshold linear velocity under which a 3D physics body will be considered inact
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_allowed_penetration** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_allowed_penetration>`
 
-Maximum distance a shape can penetrate another shape before it is considered a collision. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
+Максимальное расстояние, на которое фигура может проникнуть в другую фигуру, прежде чем столкновение будет считаться произошедшим. См. :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Примечание:** Этот параметр проекта действует только при использовании GodotPhysics3D. Он не действует при использовании Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10877,9 +10877,9 @@ Maximum distance a shape can penetrate another shape before it is considered a c
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_separation** = ``0.05`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_separation>`
 
-Maximum distance a shape can be from another before they are considered separated and the contact is discarded. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`.
+Максимальное расстояние, на котором фигура может находиться от другой, прежде чем они будут считаться разделенными, а контакт будет отброшен. См. :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Примечание:** Этот параметр проекта действует только при использовании GodotPhysics3D. Он не действует при использовании Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10891,9 +10891,9 @@ Maximum distance a shape can be from another before they are considered separate
 
 :ref:`float<class_float>` **physics/3d/solver/contact_recycle_radius** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_recycle_radius>`
 
-Maximum distance a pair of bodies has to move before their collision status has to be recalculated. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`.
+Максимальное расстояние, на которое должна переместиться пара тел, прежде чем потребуется пересчитать их состояние столкновения. См. :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Примечание:** Этот параметр проекта действует только при использовании GodotPhysics3D. Он не действует при использовании Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10905,11 +10905,11 @@ Maximum distance a pair of bodies has to move before their collision status has 
 
 :ref:`float<class_float>` **physics/3d/solver/default_contact_bias** = ``0.8`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/default_contact_bias>`
 
-Default solver bias for all physics contacts. Defines how much bodies react to enforce contact separation. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`.
+Смещение решателя по умолчанию для всех физических контактов. Определяет, насколько сильно тела реагируют, чтобы обеспечить разделение контактов. См. :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`.
 
-Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`).
+Отдельные фигуры могут иметь определенное значение смещения (см. :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`).
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Примечание:** Этот параметр проекта действует только при использовании GodotPhysics3D. Он не действует при использовании Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10921,9 +10921,9 @@ Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solve
 
 :ref:`int<class_int>` **physics/3d/solver/solver_iterations** = ``16`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/solver_iterations>`
 
-Number of solver iterations for all contacts and constraints. The greater the number of iterations, the more accurate the collisions will be. However, a greater number of iterations requires more CPU power, which can decrease performance. See :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`.
+Количество итераций решателя для всех контактов и ограничений. Чем больше итераций, тем точнее будут столкновения. Однако большее количество итераций требует большей вычислительной мощности процессора, что может снизить производительность. См. :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Примечание:** Этот параметр проекта эффективен только при использовании GodotPhysics3D. Он не оказывает никакого эффекта при использовании Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -10935,9 +10935,9 @@ Number of solver iterations for all contacts and constraints. The greater the nu
 
 :ref:`float<class_float>` **physics/3d/time_before_sleep** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_physics/3d/time_before_sleep>`
 
-Time (in seconds) of inactivity before which a 3D physics body will put to sleep. See :ref:`PhysicsServer3D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`.
+Время (в секундах) бездействия, до истечения которого 3D-физическое тело перейдет в спящий режим. См. :ref:`PhysicsServer3D.SPACE_PARAM_BODY_TIME_TO_SLEEP<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP>`.
 
-\ **Note:** This project setting is only effective when using GodotPhysics3D. It has no effect when using Jolt Physics.
+\ **Примечание:** Этот параметр проекта действует только при использовании GodotPhysics3D. Он не действует при использовании Jolt Physics.
 
 .. rst-class:: classref-item-separator
 
@@ -11805,7 +11805,7 @@ Time (in seconds) of inactivity before which a 3D physics body will put to sleep
 
 :ref:`bool<class_bool>` **rendering/environment/fog/use_legacy_blending** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending>`
 
-Enables legacy fog blending behavior from version 4.5 and earlier. This is intended for users who are developing on pre-4.6 versions and want to upgrade to 4.6 with the smallest possible change to their visuals.
+Включает устаревшее поведение смешивания тумана из версии 4.5 и более ранних. Это предназначено для пользователей, разрабатывающих приложения на версиях до 4.6 и желающих обновиться до 4.6 с минимальными изменениями в визуальном оформлении.
 
 .. rst-class:: classref-item-separator
 
@@ -12563,9 +12563,9 @@ Texel_size, который используется для расчета :ref:`
 
 :ref:`float<class_float>` **rendering/lightmapping/probe_capture/update_speed** = ``15`` :ref:`🔗<class_ProjectSettings_property_rendering/lightmapping/probe_capture/update_speed>`
 
-The framerate-independent update speed when representing dynamic object lighting from :ref:`LightmapProbe<class_LightmapProbe>`\ s. Higher values make dynamic object lighting update faster. Higher values can prevent fast-moving objects from having "outdated" indirect lighting displayed on them, at the cost of possible flickering when an object moves from a bright area to a shaded area.
+Скорость обновления, не зависящая от частоты кадров, при отображении динамического освещения объектов с помощью :ref:`LightmapProbe<class_LightmapProbe>`. Более высокие значения ускоряют обновление динамического освещения объектов. Более высокие значения могут предотвратить отображение «устаревшего» непрямого освещения на быстро движущихся объектах, что может привести к мерцанию при перемещении объекта из яркой области в затененную.
 
-\ **Note:** This property is only read when the project starts. To adjust the BVH build quality at runtime, use :ref:`RenderingServer.lightmap_set_probe_capture_update_speed()<class_RenderingServer_method_lightmap_set_probe_capture_update_speed>`.
+\ **Примечание:** Это свойство считывается только при запуске проекта. Для настройки качества сборки BVH во время выполнения используйте :ref:`RenderingServer.lightmap_set_probe_capture_update_speed()<class_RenderingServer_method_lightmap_set_probe_capture_update_speed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12891,13 +12891,13 @@ The framerate-independent update speed when representing dynamic object lighting
 
 :ref:`float<class_float>` **rendering/mesh_lod/lod_change/threshold_pixels** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>`
 
-The automatic LOD bias to use for meshes rendered within the :ref:`ReflectionProbe<class_ReflectionProbe>`. Higher values will use less detailed versions of meshes that have LOD variations generated. If set to ``0.0``, automatic LOD is disabled. Increase :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` to improve performance at the cost of geometry detail.
+Автоматическое смещение LOD для использования в сетках, отображаемых в рамках :ref:`ReflectionProbe<class_ReflectionProbe>`. Более высокие значения будут использовать менее детализированные версии сеток, для которых сгенерированы вариации LOD. Если установлено значение ``0.0``, автоматическое определение LOD отключается. Увеличьте значение :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>`, чтобы повысить производительность за счет снижения детализации геометрии.
 
-\ **Note:** Depending on the mesh's attributes (vertex colors, blend shapes, ...), a mesh may have fewer levels of LOD generated to avoid visible distortion of the mesh once it is affected by vertex colors or blend shapes. Meshes with a very low vertex count will also not have any LODs generated, which means this setting will not affect them at all. In general, this setting makes the largest impact on static meshes with a high vertex count.
+\ **Примечание:** В зависимости от атрибутов сетки (цвета вершин, формы смешивания и т. д.), для сетки может быть сгенерировано меньше уровней LOD, чтобы избежать видимых искажений сетки при воздействии на нее цветов вершин или форм смешивания. Для сеток с очень малым количеством вершин также не будет сгенерировано ни одного уровня LOD, а это значит, что этот параметр никак на них не повлияет. В целом, этот параметр оказывает наибольшее влияние на статические сетки с большим количеством вершин.
 
-\ **Note:** :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` does not affect :ref:`GeometryInstance3D<class_GeometryInstance3D>` visibility ranges (also known as "manual" LOD or hierarchical LOD).
+\ **Примечание:** :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` не влияет на диапазоны видимости :ref:`GeometryInstance3D<class_GeometryInstance3D>` (также известные как «ручной» LOD или иерархический LOD).
 
-\ **Note:** This property is only read when the project starts. To adjust the automatic LOD threshold at runtime, set :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` on the root :ref:`Viewport<class_Viewport>`.
+\ **Примечание:** Это свойство считывается только при запуске проекта. Чтобы настроить автоматический порог LOD во время выполнения, установите :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` в корневом :ref:`Viewport<class_Viewport>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13543,9 +13543,9 @@ macOS переопределяет :ref:`rendering/rendering_device/driver<class
 
 :ref:`float<class_float>` **rendering/scaling_3d/scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/scale>`
 
-Scales the 3D render buffer based on the viewport size uses an image filter specified in :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` to scale the output image to the full viewport size. Values lower than ``1.0`` can be used to speed up 3D rendering at the cost of quality (undersampling). Values greater than ``1.0`` are only valid for bilinear mode and can be used to improve 3D rendering quality at a high performance cost (supersampling). See also :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` for multi-sample antialiasing, which is significantly cheaper but only smooths the edges of polygons.
+Масштабирование буфера 3D-рендеринга в зависимости от размера области просмотра осуществляется с помощью фильтра изображений, указанного в :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>`, для масштабирования выходного изображения до полного размера области просмотра. Значения ниже ``1.0`` могут использоваться для ускорения 3D-рендеринга за счет снижения качества (недодискретизация). Значения выше ``1.0`` действительны только для билинейного режима и могут использоваться для улучшения качества 3D-рендеринга за счет высокой производительности (супердискретизация). См. также :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` для многосэмплового сглаживания, которое значительно дешевле, но сглаживает только края полигонов.
 
-\ **Note:** When using the **Nearest** scaling mode, to avoid uneven pixel scaling, it's highly recommended to use a value equal to an integer divisor with a dividend of ``1``. For example, it's best to use a scale of ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5), and so on.
+\ **Примечание:** При использовании режима масштабирования **Nearest** во избежание неравномерного масштабирования пикселей настоятельно рекомендуется использовать значение, равное целочисленному делителю с делимым ``1``. Например, лучше всего использовать масштаб ``0,5`` (1/2), ``0,3333`` (1/3), ``0,25`` (1/4), ``0,2`` (1/5) и так далее.
 
 .. rst-class:: classref-item-separator
 
@@ -13757,13 +13757,13 @@ Scales the 3D render buffer based on the viewport size uses an image filter spec
 
 :ref:`float<class_float>` **rendering/textures/default_filters/texture_mipmap_bias** = ``0.0`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`
 
-Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close).
+Влияет на резкость финальной текстуры, считывая значение из более низкого или более высокого мипмапа (также называемого "смещением LOD текстуры"). Отрицательные значения делают текстуры с мипмапами более резкими, но более зернистыми при просмотре с расстояния, в то время как положительные значения делают текстуры с мипмапами более размытыми (даже вблизи).
 
-Enabling temporal antialiasing (:ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) will automatically apply a ``-0.5`` offset to this value, while enabling FXAA (:ref:`rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`) will automatically apply a ``-0.25`` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of ``-0.75`` is applied to this value.
+Включение временного сглаживания (:ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) автоматически применит смещение ``-0.5`` к этому значению, а включение FXAA (:ref:`rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`) автоматически применит смещение ``-0.25`` к этому значению. Если одновременно включены и TAA, и FXAA, к этому значению будет применено смещение ``-0.75``.
 
-\ **Note:** If :ref:`rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` is lower than ``1.0`` (exclusive), :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``log2(scaling_3d_scale) + mipmap_bias``.
+\ **Примечание:** Если значение параметра :ref:`rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` меньше ``1.0`` (исключая другие значения), используется параметр :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` для корректировки автоматического смещения мипмапов, которое рассчитывается внутренне на основе коэффициента масштабирования. Формула для этого: ``log2(scaling_3d_scale) + mipmap_bias``.
 
-\ **Note:** This property is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this property is always treated as if it was set to ``0.0``.
+\ **Примечание:** Это свойство поддерживается только в рендерерах Forward+ и Mobile, а не в режиме совместимости. В режиме совместимости это свойство всегда обрабатывается так, как если бы оно было установлено на ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -14302,7 +14302,7 @@ Enabling temporal antialiasing (:ref:`rendering/anti_aliasing/quality/use_taa<cl
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/user_presence** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/user_presence>`
 
-If ``true``, the user presence extension is enabled if available.
+Если ``true``, расширение "Присутствие пользователя" будет включено, если оно доступно.
 
 .. rst-class:: classref-item-separator
 
@@ -14338,7 +14338,7 @@ If ``true``, the user presence extension is enabled if available.
 
 :ref:`bool<class_bool>` **xr/openxr/foveation_eye_tracked** = ``true`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_eye_tracked>`
 
-If ``true`` and foveation level is set to anything other than "Disabled", eye-tracked foveation will be used, so long as it's supported by the headset.
+Если ``true`` и уровень фовеации установлен на значение, отличное от "Disabled", будет использоваться фовеация с отслеживанием взгляда, если она поддерживается гарнитурой.
 
 .. rst-class:: classref-item-separator
 
@@ -14364,9 +14364,9 @@ If ``true`` and foveation level is set to anything other than "Disabled", eye-tr
 
 :ref:`bool<class_bool>` **xr/openxr/foveation_with_subsampled_images** = ``true`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_with_subsampled_images>`
 
-If ``true`` and foveation is also enabled, subsampled images will be used on Vulkan. This can improve the performance gain from foveated rendering, especially when using high foveation levels.
+Если ``true`` и включена фовеация, в Vulkan будут использоваться изображения с субдискретизацией. Это может повысить производительность за счет фовеального рендеринга, особенно при использовании высоких уровней фовеации.
 
-\ **Note:**: Using subsampled images is incompatible with many screen-space rendering features or post-processing effects like FXAA or glow. If any such effects are enabled, subsampled images will automatically be disabled and a warning shown in the log.
+\ **Примечание:**: Использование изображений с субдискретизацией несовместимо со многими функциями рендеринга в экранном пространстве или эффектами постобработки, такими как FXAA или свечение. Если какие-либо из таких эффектов включены, изображения с субдискретизацией будут автоматически отключены, и в журнале появится предупреждение.
 
 .. rst-class:: classref-item-separator
 
@@ -14721,9 +14721,9 @@ If ``true`` and foveation is also enabled, subsampled images will be used on Vul
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ ) :ref:`🔗<class_ProjectSettings_method_save>`
 
-Saves the configuration to the ``project.godot`` file.
+Сохраняет конфигурацию в файл ``project.godot``.
 
-\ **Note:** This method is intended to be used by editor plugins, as modified **ProjectSettings** can't be loaded back in the running app. If you want to change project settings in exported projects, use :ref:`save_custom()<class_ProjectSettings_method_save_custom>` to save an ``override.cfg`` file.
+\ **Примечание:** Этот метод предназначен для использования плагинами редактора, поскольку измененные **ProjectSettings** нельзя загрузить обратно в работающее приложение. Если вы хотите изменить настройки проекта в экспортированных проектах, используйте :ref:`save_custom()<class_ProjectSettings_method_save_custom>` для сохранения файла ``override.cfg``.
 
 .. rst-class:: classref-item-separator
 
@@ -14735,7 +14735,7 @@ Saves the configuration to the ``project.godot`` file.
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_custom**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ProjectSettings_method_save_custom>`
 
-Saves the configuration to a custom file. The file extension must be ``.godot`` (to save in text-based :ref:`ConfigFile<class_ConfigFile>` format) or ``.binary`` (to save in binary format). You can also save an ``override.cfg`` file, which is also text, but can be used in exported projects unlike other formats.
+Сохраняет конфигурацию в пользовательский файл. Расширение файла должно быть ``.godot`` (для сохранения в текстовом формате :ref:`ConfigFile<class_ConfigFile>`) или ``.binary`` (для сохранения в двоичном формате). Вы также можете сохранить файл ``override.cfg``, который также является текстовым, но может использоваться в экспортированных проектах, в отличие от других форматов.
 
 .. rst-class:: classref-item-separator
 

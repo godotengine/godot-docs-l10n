@@ -361,7 +361,7 @@ Define cómo se aplica :ref:`angular_damp<class_RigidBody3D_property_angular_dam
 - |void| **set_angular_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_angular_velocity**\ (\ )
 
-The RigidBody3D's rotational velocity in *radians* per second.
+La velocidad de rotación del RigidBody3D en *radianes* por segundo.
 
 .. rst-class:: classref-item-separator
 

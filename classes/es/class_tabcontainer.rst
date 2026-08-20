@@ -1050,7 +1050,7 @@ Color del icono de la pestaña sobre la que se pasa el cursor. No se aplica a la
 
 :ref:`Color<class_Color>` **icon_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_selected_color>`
 
-Icon color of the currently selected tab.
+Color del icono de la pestaña seleccionada actualmente.
 
 .. rst-class:: classref-item-separator
 
@@ -1062,7 +1062,7 @@ Icon color of the currently selected tab.
 
 :ref:`Color<class_Color>` **icon_unselected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_unselected_color>`
 
-Icon color of the other, unselected tabs.
+Color del icono de las otras pestañas no seleccionadas.
 
 .. rst-class:: classref-item-separator
 
@@ -1126,7 +1126,7 @@ El margen se ignora con :ref:`TabBar.ALIGNMENT_RIGHT<class_TabBar_constant_ALIGN
 
 :ref:`int<class_int>` **tab_separation** = ``0`` :ref:`🔗<class_TabContainer_theme_constant_tab_separation>`
 
-The space between tabs in the tab bar.
+El espacio entre las pestañas en la barra de pestañas.
 
 .. rst-class:: classref-item-separator
 

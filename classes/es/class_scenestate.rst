@@ -7,7 +7,7 @@ SceneState
 
 **Hereda:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides access to a scene file's information.
+Proporciona acceso a la información de un archivo de escena.
 
 .. rst-class:: classref-introduction-group
 
@@ -95,7 +95,7 @@ enum **GenEditState**: :ref:`🔗<enum_SceneState_GenEditState>`
 
 :ref:`GenEditState<enum_SceneState_GenEditState>` **GEN_EDIT_STATE_DISABLED** = ``0``
 
-If passed to :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, blocks edits to the scene state.
+Si se pasa a :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, impide la edición del estado de la escena.
 
 .. _class_SceneState_constant_GEN_EDIT_STATE_INSTANCE:
 
@@ -103,9 +103,9 @@ If passed to :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiat
 
 :ref:`GenEditState<enum_SceneState_GenEditState>` **GEN_EDIT_STATE_INSTANCE** = ``1``
 
-If passed to :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, provides inherited scene resources to the local scene.
+Si se pasa a :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, proporciona recursos de escena heredados a la escena local.
 
-\ **Note:** Only available in editor builds.
+\ **Nota:** Solo disponible en compilaciones del editor.
 
 .. _class_SceneState_constant_GEN_EDIT_STATE_MAIN:
 
@@ -113,9 +113,9 @@ If passed to :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiat
 
 :ref:`GenEditState<enum_SceneState_GenEditState>` **GEN_EDIT_STATE_MAIN** = ``2``
 
-If passed to :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, provides local scene resources to the local scene. Only the main scene should receive the main edit state.
+Si se pasa a :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, proporciona recursos de escena locales a la escena local. Solo la escena principal debe recibir el estado de edición principal.
 
-\ **Note:** Only available in editor builds.
+\ **Nota:** Solo disponible en compilaciones del editor.
 
 .. _class_SceneState_constant_GEN_EDIT_STATE_MAIN_INHERITED:
 
@@ -123,9 +123,9 @@ If passed to :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiat
 
 :ref:`GenEditState<enum_SceneState_GenEditState>` **GEN_EDIT_STATE_MAIN_INHERITED** = ``3``
 
-If passed to :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, it's similar to :ref:`GEN_EDIT_STATE_MAIN<class_SceneState_constant_GEN_EDIT_STATE_MAIN>`, but for the case where the scene is being instantiated to be the base of another one.
+Si se pasa a :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>`, es similar a :ref:`GEN_EDIT_STATE_MAIN<class_SceneState_constant_GEN_EDIT_STATE_MAIN>`, pero para el caso en que la escena se instancia para servir de base a otra.
 
-\ **Note:** Only available in editor builds.
+\ **Nota:** Solo disponible en compilaciones del editor.
 
 .. rst-class:: classref-section-separator
 
@@ -216,7 +216,7 @@ Devuelve el nombre de la señal en ``idx``.
 
 :ref:`NodePath<class_NodePath>` **get_connection_source**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_source>`
 
-Returns the path to the node that owns the signal at ``idx``, relative to the root node.
+Devuelve la ruta al nodo que posee la señal en ``idx``, relativa al nodo raíz.
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ Returns the path to the node that owns the signal at ``idx``, relative to the ro
 
 :ref:`NodePath<class_NodePath>` **get_connection_target**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_target>`
 
-Returns the path to the node that owns the method connected to the signal at ``idx``, relative to the root node.
+Devuelve la ruta al nodo que posee el método conectado a la señal en ``idx``, relativa al nodo raíz.
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ Returns the path to the node that owns the method connected to the signal at ``i
 
 :ref:`int<class_int>` **get_connection_unbinds**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_connection_unbinds>`
 
-Returns the number of unbound parameters for the signal at ``idx``.
+Devuelve el número de parámetros no vinculados para la señal en ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ El argumento ``idx`` utilizado para consultar los datos de los nodos en otros m�
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_node_groups**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_groups>`
 
-Returns the list of group names associated with the node at ``idx``.
+Devuelve la lista de nombres de grupo asociados al nodo en ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Returns the list of group names associated with the node at ``idx``.
 
 :ref:`int<class_int>` **get_node_index**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_index>`
 
-Returns the node's index, which is its position relative to its siblings. This is only relevant and saved in scenes for cases where new nodes are added to an instantiated or inherited scene among siblings from the base scene. Despite the name, this index is not related to the ``idx`` argument used here and in other methods.
+Devuelve el índice del nodo, que es su posición en relación con sus nodos hermanos. Esto solo es relevante y se guarda en las escenas cuando se añaden nuevos nodos a una escena instanciada o heredada, situándolos entre los nodos hermanos de la escena base. A pesar de su nombre, este índice no está relacionado con el argumento ``idx`` utilizado aquí y en otros métodos.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ Returns the node's index, which is its position relative to its siblings. This i
 
 :ref:`PackedScene<class_PackedScene>` **get_node_instance**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_instance>`
 
-Returns a :ref:`PackedScene<class_PackedScene>` for the node at ``idx`` (i.e. the whole branch starting at this node, with its child nodes and resources), or ``null`` if the node is not an instance.
+Devuelve una :ref:`PackedScene<class_PackedScene>` para el nodo en ``idx`` (es decir, toda la rama que comienza en este nodo, con sus nodos hijos y recursos), o ``null`` si el nodo no es una instancia.
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ Returns a :ref:`PackedScene<class_PackedScene>` for the node at ``idx`` (i.e. th
 
 :ref:`String<class_String>` **get_node_instance_placeholder**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_instance_placeholder>`
 
-Returns the path to the represented scene file if the node at ``idx`` is an :ref:`InstancePlaceholder<class_InstancePlaceholder>`.
+Devuelve la ruta al archivo de escena representado si el nodo en ``idx`` es un :ref:`InstancePlaceholder<class_InstancePlaceholder>`.
 
 .. rst-class:: classref-item-separator
 
@@ -326,7 +326,7 @@ Devuelve el nombre del nodo en ``idx``.
 
 :ref:`NodePath<class_NodePath>` **get_node_owner_path**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_owner_path>`
 
-Returns the path to the owner of the node at ``idx``, relative to the root node.
+Devuelve la ruta al propietario del nodo en ``idx``, relativa al nodo raíz.
 
 .. rst-class:: classref-item-separator
 
@@ -338,9 +338,9 @@ Returns the path to the owner of the node at ``idx``, relative to the root node.
 
 :ref:`NodePath<class_NodePath>` **get_node_path**\ (\ idx\: :ref:`int<class_int>`, for_parent\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_SceneState_method_get_node_path>`
 
-Returns the path to the node at ``idx``.
+Devuelve la ruta al nodo en ``idx``.
 
-If ``for_parent`` is ``true``, returns the path of the ``idx`` node's parent instead.
+Si ``for_parent`` es ``true``, devuelve en su lugar la ruta del padre del nodo ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -352,9 +352,9 @@ If ``for_parent`` is ``true``, returns the path of the ``idx`` node's parent ins
 
 :ref:`int<class_int>` **get_node_property_count**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_property_count>`
 
-Returns the number of exported or overridden properties for the node at ``idx``.
+Devuelve el número de propiedades exportadas o sobrescritas para el nodo en ``idx``.
 
-The ``prop_idx`` argument used to query node property data in other ``get_node_property_*`` methods in the interval ``[0, get_node_property_count() - 1]``.
+El argumento ``prop_idx`` utilizado para consultar datos de propiedades del nodo en otros métodos ``get_node_property_*`` se encuentra en el intervalo ``[0, get_node_property_count() - 1]``.
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ The ``prop_idx`` argument used to query node property data in other ``get_node_p
 
 :ref:`StringName<class_StringName>` **get_node_property_name**\ (\ idx\: :ref:`int<class_int>`, prop_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_property_name>`
 
-Returns the name of the property at ``prop_idx`` for the node at ``idx``.
+Devuelve el nombre de la propiedad en ``prop_idx`` para el nodo en ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ Returns the name of the property at ``prop_idx`` for the node at ``idx``.
 
 :ref:`Variant<class_Variant>` **get_node_property_value**\ (\ idx\: :ref:`int<class_int>`, prop_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_get_node_property_value>`
 
-Returns the value of the property at ``prop_idx`` for the node at ``idx``.
+Devuelve el valor de la propiedad en ``prop_idx`` para el nodo en ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ Devuelve la ruta del recurso a la :ref:`PackedScene<class_PackedScene>` represen
 
 :ref:`bool<class_bool>` **is_node_instance_placeholder**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SceneState_method_is_node_instance_placeholder>`
 
-Returns ``true`` if the node at ``idx`` is an :ref:`InstancePlaceholder<class_InstancePlaceholder>`.
+Devuelve ``true`` si el nodo en ``idx`` es un :ref:`InstancePlaceholder<class_InstancePlaceholder>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

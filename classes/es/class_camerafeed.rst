@@ -105,7 +105,7 @@ Emitida cuando el formato ha cambiado.
 
 **frame_changed**\ (\ ) :ref:`🔗<class_CameraFeed_signal_frame_changed>`
 
-Emitted when a new frame is available.
+Emitida cuando un nuevo fotograma está disponible.
 
 .. rst-class:: classref-section-separator
 
@@ -233,7 +233,7 @@ Si es ``true``, el feed está activo.
 - |void| **set_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_transform**\ (\ )
 
-The transform applied to the camera's image.
+La transformación aplicada a la imagen de la cámara.
 
 .. rst-class:: classref-item-separator
 

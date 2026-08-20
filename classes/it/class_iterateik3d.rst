@@ -9,7 +9,7 @@ IterateIK3D
 
 **Ereditato da:** :ref:`CCDIK3D<class_CCDIK3D>`, :ref:`FABRIK3D<class_FABRIK3D>`, :ref:`JacobianIK3D<class_JacobianIK3D>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to approach the goal by repeating small rotations.
+Uno :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` per avvicinarsi all'obiettivo ripetendo piccole rotazioni.
 
 .. rst-class:: classref-introduction-group
 
@@ -100,9 +100,9 @@ Descrizioni delle proprietà
 - |void| **set_angular_delta_limit**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_delta_limit**\ (\ )
 
-The maximum amount each bone can rotate in a single iteration.
+La rotazione massima consentita per ciascun osso in una singola iterazione.
 
-\ **Note:** This limitation is applied during each iteration. For example, if :ref:`max_iterations<class_IterateIK3D_property_max_iterations>` is ``4`` and :ref:`angular_delta_limit<class_IterateIK3D_property_angular_delta_limit>` is ``5`` degrees, the maximum rotation possible in a single frame is ``20`` degrees.
+\ **Nota:** Questa limitazione viene applicata durante ogni iterazione. Ad esempio, se :ref:`max_iterations<class_IterateIK3D_property_max_iterations>` è ``4`` e :ref:`angular_delta_limit<class_IterateIK3D_property_angular_delta_limit>` è ``5`` gradi, la rotazione massima possibile in un singolo frame è di ``20`` gradi.
 
 .. rst-class:: classref-item-separator
 
@@ -119,9 +119,9 @@ The maximum amount each bone can rotate in a single iteration.
 - |void| **set_deterministic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deterministic**\ (\ )
 
-If ``false``, the result is calculated from the previous frame's **IterateIK3D** result as the initial state.
+Se ``false``, il risultato viene calcolato a partire dal risultato **IterateIK3D** del frame precedente come stato iniziale.
 
-If ``true``, the previous frame's **IterateIK3D** result is discarded. At this point, the new result is calculated from the bone pose excluding the **IterateIK3D** as the initial state. This means the result will be always equal as long as the target position and the previous bone pose are the same. However, if :ref:`angular_delta_limit<class_IterateIK3D_property_angular_delta_limit>` and :ref:`max_iterations<class_IterateIK3D_property_max_iterations>` are set too small, the end bone of the chain will never reach the target.
+Se ``true``, il risultato **IterateIK3D** del frame precedente viene scartato. A questo punto, il nuovo risultato viene calcolato a partire dalla posa dell'osso escludendo **IterateIK3D** come stato iniziale. Ciò significa che il risultato sarà sempre uguale finché la posizione di destinazione e la posa dell'osso precedente sono le stesse. Tuttavia, se :ref:`angular_delta_limit<class_IterateIK3D_property_angular_delta_limit>` e :ref:`max_iterations<class_IterateIK3D_property_max_iterations>` sono impostati su valori troppo piccoli, l'osso finale della catena non raggiungerà mai la destinazione.
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ If ``true``, the previous frame's **IterateIK3D** result is discarded. At this p
 - |void| **set_max_iterations**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_iterations**\ (\ )
 
-The number of iteration loops used by the IK solver to produce more accurate results.
+Il numero di cicli di iterazione utilizzati dal risolutore IK per produrre risultati più accurati.
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ The number of iteration loops used by the IK solver to produce more accurate res
 - |void| **set_min_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_distance**\ (\ )
 
-The minimum distance between the end bone and the target. If the distance is below this value, the IK solver stops any further iterations.
+La distanza minima tra l'osso finale e la destinazione. Se la distanza è inferiore a questo valore, il risolutore IK interrompe ulteriori iterazioni.
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ Descrizioni dei metodi
 
 :ref:`JointLimitation3D<class_JointLimitation3D>` **get_joint_limitation**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation>`
 
-Returns the joint limitation at ``joint`` in the bone chain's joint list.
+Restituisce la limitazione dell'articolazione in ``joint`` nella lista delle articolazioni della catena d'ossa.
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ Returns the joint limitation at ``joint`` in the bone chain's joint list.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **get_joint_limitation_right_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation_right_axis>`
 
-Returns the joint limitation right axis at ``joint`` in the bone chain's joint list.
+Restituisce l'asse destro della limitazione dell'articolazione in ``joint`` nella lista delle articolazioni della catena d'ossa.
 
 .. rst-class:: classref-item-separator
 
@@ -213,9 +213,9 @@ Returns the joint limitation right axis at ``joint`` in the bone chain's joint l
 
 :ref:`Vector3<class_Vector3>` **get_joint_limitation_right_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_limitation_right_axis_vector>`
 
-Returns the joint limitation right axis vector at ``joint`` in the bone chain's joint list.
+Restituisce il vettore dell'asse destro per la limitazione dell'articolazione in ``joint`` nella lista delle articolazioni della catena d'ossa.
 
-If :ref:`get_joint_limitation_right_axis()<class_IterateIK3D_method_get_joint_limitation_right_axis>` is :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`, this method returns ``Vector3(0, 0, 0)``.
+Se :ref:`get_joint_limitation_right_axis()<class_IterateIK3D_method_get_joint_limitation_right_axis>` è :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`, questo metodo restituisce ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -259,9 +259,9 @@ Restituisce l'asse di rotazione in ``joint`` nella lista delle articolazioni del
 
 :ref:`Vector3<class_Vector3>` **get_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_joint_rotation_axis_vector>`
 
-Returns the rotation axis vector for the specified joint in the bone chain. This vector represents the axis around which the joint can rotate. It is determined based on the rotation axis set for the joint.
+Restituisce il vettore dell'asse di rotazione per l'articolazione specificata nella catena d'ossa. Questo vettore rappresenta l'asse attorno al quale l'articolazione può ruotare. È determinato in base all'asse di rotazione impostato per l'articolazione.
 
-If :ref:`get_joint_rotation_axis()<class_IterateIK3D_method_get_joint_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+Se :ref:`get_joint_rotation_axis()<class_IterateIK3D_method_get_joint_rotation_axis>` è :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, questo metodo restituisce ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ If :ref:`get_joint_rotation_axis()<class_IterateIK3D_method_get_joint_rotation_a
 
 :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_IterateIK3D_method_get_target_node>`
 
-Returns the target node that the end bone is trying to reach.
+Restituisce il nodo di destinazione che l'osso finale sta tentando di raggiungere.
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +285,7 @@ Returns the target node that the end bone is trying to reach.
 
 |void| **set_joint_limitation**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, limitation\: :ref:`JointLimitation3D<class_JointLimitation3D>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation>`
 
-Sets the joint limitation at ``joint`` in the bone chain's joint list.
+Imposta la limitazione dell'articolazione in ``joint`` nella lista delle articolazioni della catena d'ossa.
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ Sets the joint limitation at ``joint`` in the bone chain's joint list.
 
 |void| **set_joint_limitation_right_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, direction\: :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation_right_axis>`
 
-Sets the joint limitation right axis at ``joint`` in the bone chain's joint list.
+Imposta l'asse destro della limitazione dell'articolazione in ``joint`` nella lista delle articolazioni della catena d'ossa.
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Sets the joint limitation right axis at ``joint`` in the bone chain's joint list
 
 |void| **set_joint_limitation_right_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_limitation_right_axis_vector>`
 
-Sets the optional joint limitation right axis vector at ``joint`` in the bone chain's joint list.
+Imposta il vettore facoltativo dell'asse destro per la limitazione dell'articolazione in ``joint`` nella lista delle articolazioni della catena d'ossa.
 
 .. rst-class:: classref-item-separator
 
@@ -359,11 +359,11 @@ Qui, la posa di riferimento è la posa dell'osso immediatamente prima dell'elabo
 
 |void| **set_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis_vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_IterateIK3D_method_set_joint_rotation_axis_vector>`
 
-Sets the rotation axis vector for the specified joint in the bone chain.
+Imposta il vettore dell'asse di rotazione per l'articolazione specificata nella catena d'ossa.
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+Questo vettore è normalizzato da un processo interno e rappresenta l'asse attorno al quale la catena d'ossa può ruotare.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+Se la lunghezza del vettore è ``0``, è considerato come sinonimo di :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
 
 .. rst-class:: classref-item-separator
 
@@ -375,13 +375,13 @@ If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonMo
 
 |void| **set_target_node**\ (\ index\: :ref:`int<class_int>`, target_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_IterateIK3D_method_set_target_node>`
 
-Sets the target node that the end bone is trying to reach.
+Imposta il nodo di destinazione che l'osso finale sta tentando di raggiungere.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

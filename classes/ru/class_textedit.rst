@@ -1590,7 +1590,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 - |void| **set_fit_content_height_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_height_enabled**\ (\ )
 
-If ``true``, **TextEdit** fits its minimum height to the number of visible lines instead of scrolling vertically. If a maximum height is set (for example via :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) and content exceeds it, a vertical scrollbar is shown.
+Если ``true``, **TextEdit** подгоняет свою минимальную высоту под количество видимых строк вместо вертикальной прокрутки. Если установлена максимальная высота (например, через :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) и содержимое превышает её, отображается вертикальная полоса прокрутки.
 
 .. rst-class:: classref-item-separator
 
@@ -1607,7 +1607,7 @@ If ``true``, **TextEdit** fits its minimum height to the number of visible lines
 - |void| **set_fit_content_width_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_width_enabled**\ (\ )
 
-If ``true``, **TextEdit** fits its minimum width to the widest line instead of scrolling horizontally. If a maximum width is set (for example via :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) and content exceeds it, a horizontal scrollbar is shown.
+Если ``true``, **TextEdit** подгоняет свою минимальную ширину под самую широкую строку вместо горизонтальной прокрутки. Если установлена максимальная ширина (например, через :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) и содержимое превышает её, отображается горизонтальная полоса прокрутки.
 
 .. rst-class:: classref-item-separator
 
@@ -3244,11 +3244,11 @@ Cut — текущий выбор. Может быть переопределе�
 
 :ref:`bool<class_bool>` **is_caret_visible**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_is_caret_visible>`
 
-Returns ``true`` if the caret is visible, ``false`` otherwise. A caret will be considered hidden if it is outside the scrollable area when scrolling is enabled.
+Возвращает ``true``, если курсор виден, ``false`` в противном случае. Курсор будет считаться скрытым, если он находится за пределами прокручиваемой области, когда прокрутка включена.
 
-\ **Note:** :ref:`is_caret_visible()<class_TextEdit_method_is_caret_visible>` does not account for a caret being off-screen if it is still within the scrollable area. It will return ``true`` even if the caret is off-screen as long as it meets **TextEdit**'s own conditions for being visible. This includes uses of :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` and :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` that cause the **TextEdit** to expand beyond the viewport's bounds.
+\ **Примечание:** :ref:`is_caret_visible()<class_TextEdit_method_is_caret_visible>` не учитывает, что курсор находится вне экрана, если он все еще находится в прокручиваемой области. Он вернет ``true``, даже если курсор находится вне экрана, пока он соответствует собственным условиям **TextEdit** для видимости. Это включает использование :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` и :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>`, которые заставляют **TextEdit** расширяться за пределы области просмотра.
 
-\ **Note:** This method does *not* guarantee an accurate visibility check immediately after setting the caret position. The correct value may only be available in the next frame after the **TextEdit** has finished drawing. This also applies to any operation that causes the **TextEdit** to change in size.
+\ **Примечание:** Этот метод *не* гарантирует точную проверку видимости сразу после установки позиции курсора. Правильное значение может быть доступно только в следующем кадре после завершения отрисовки **TextEdit**. Это также относится к любой операции, которая вызывает изменение размера **TextEdit**.
 
 .. rst-class:: classref-item-separator
 
@@ -3332,7 +3332,7 @@ Returns ``true`` if the caret is visible, ``false`` otherwise. A caret will be c
 
 :ref:`bool<class_bool>` **is_line_in_viewport**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_is_line_in_viewport>`
 
-Returns ``true`` if the given line is within the scope of the scrollable area of the viewport.
+Возвращает ``true``, если заданная строка находится в пределах прокручиваемой области окна просмотра.
 
 .. rst-class:: classref-item-separator
 

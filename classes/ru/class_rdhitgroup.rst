@@ -9,18 +9,18 @@ RDHitGroup
 
 **Наследует:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Hit group (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+Группа попаданий (используется :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Defines a hit group for use with :ref:`RenderingDevice.raytracing_pipeline_create()<class_RenderingDevice_method_raytracing_pipeline_create>`.
+Определяет группу попаданий для использования с :ref:`RenderingDevice.raytracing_pipeline_create()<class_RenderingDevice_method_raytracing_pipeline_create>`.
 
-A hit group combines shaders that are executed when a ray intersects geometry. It may include a closest-hit shader, any-hit shader, and intersection shader.
+Группа попаданий объединяет шейдеры, которые выполняются при пересечении луча с геометрией. Она может включать шейдер ближайшего попадания, шейдер любого попадания и шейдер пересечения.
 
-Hit groups are referenced by index when populating hit shader binding tables using :ref:`RenderingDevice.hit_sbt_range_update()<class_RenderingDevice_method_hit_sbt_range_update>`.
+При заполнении таблиц привязки шейдеров попаданий с помощью :ref:`RenderingDevice.hit_sbt_range_update()<class_RenderingDevice_method_hit_sbt_range_update>` группы попаданий ссылаются по индексу.
 
 .. rst-class:: classref-reftable-group
 
@@ -58,7 +58,7 @@ Hit groups are referenced by index when populating hit shader binding tables usi
 - |void| **set_any_hit_shader**\ (\ value\: :ref:`RDPipelineShader<class_RDPipelineShader>`\ )
 - :ref:`RDPipelineShader<class_RDPipelineShader>` **get_any_hit_shader**\ (\ )
 
-Any-hit shader for this hit group. Executed for each potential intersection. Can be ``null``.
+Шейдер для каждого попадания в данной группе попаданий. Выполняется для каждого потенциального пересечения. Может быть ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ Any-hit shader for this hit group. Executed for each potential intersection. Can
 - |void| **set_closest_hit_shader**\ (\ value\: :ref:`RDPipelineShader<class_RDPipelineShader>`\ )
 - :ref:`RDPipelineShader<class_RDPipelineShader>` **get_closest_hit_shader**\ (\ )
 
-Closest-hit shader for this hit group. Executed for the closest intersection. Can be ``null``.
+Шейдер ближайшего попадания для этой группы попаданий. Выполняется для ближайшего пересечения. Может быть ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -92,7 +92,7 @@ Closest-hit shader for this hit group. Executed for the closest intersection. Ca
 - |void| **set_intersection_shader**\ (\ value\: :ref:`RDPipelineShader<class_RDPipelineShader>`\ )
 - :ref:`RDPipelineShader<class_RDPipelineShader>` **get_intersection_shader**\ (\ )
 
-Intersection shader for this hit group. Required for non-triangle geometry. Must be ``null`` when using for triangle geometry.
+Шейдер пересечения для этой группы попаданий. Требуется для нетреугольной геометрии. При использовании для треугольной геометрии должен быть равен ``null``.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

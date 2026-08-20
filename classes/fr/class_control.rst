@@ -1089,7 +1089,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-Le contrôle va croître à gauche ou en haut pour compenser si sa taille minimale est plus grande que sa taille actuelle selon l'axe correspondant.
+The control will grow to the left or top to make up if its minimum size is changed to be greater than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1097,7 +1097,7 @@ Le contrôle va croître à gauche ou en haut pour compenser si sa taille minima
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-Le contrôle va croître à droite ou en bas pour compenser si sa taille minimale est plus grande que sa taille actuelle selon l'axe correspondant.
+The control will grow to the right or bottom to make up if its minimum size is changed to be greater than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1105,7 +1105,7 @@ Le contrôle va croître à droite ou en bas pour compenser si sa taille minimal
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-Le contrôle va croître dans les deux directions de façon égale pour compenser si sa taille minimale est plus grande que sa taille actuelle.
+The control will grow in both directions equally to make up if its minimum size is changed to be greater than its current size.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,7 +1825,7 @@ La position globale du nœud, par rapport au monde (généralement par rapport a
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-Control la direction sur l'axe horizontal selon lequel le contrôle doit croître si sa taille minimale horizontale est modifiée pour être supérieure à sa taille actuelle, car le contrôle doit toujours avoir au moins sa taille minimale.
+Controls the direction on the horizontal axis in which the control should grow if its horizontal minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1842,7 @@ Control la direction sur l'axe horizontal selon lequel le contrôle doit croîtr
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-Control la direction sur l'axe vertical selon lequel le contrôle doit croître si sa taille minimale verticale est changée pour être supérieure à sa taille actuelle, car le contrôle doit toujours avoir au moins sa taille minimale.
+Controls the direction on the vertical axis in which the control should grow if its vertical minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
 
 .. rst-class:: classref-item-separator
 

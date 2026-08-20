@@ -605,9 +605,9 @@ ID Идентификатор элемента по адресу ``index``.
 - |void| **set_search_bar_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_search_bar_enabled**\ (\ )
 
-If ``true``, shows a search bar at the top of the **PopupMenu** for filtering items. See :ref:`search_bar_min_item_count<class_PopupMenu_property_search_bar_min_item_count>` for dynamically controlling its visibility based on the number of items.
+Если ``true``, в верхней части **PopupMenu** отображается строка поиска для фильтрации элементов. См. :ref:`search_bar_min_item_count<class_PopupMenu_property_search_bar_min_item_count>` для динамического управления ее видимостью в зависимости от количества элементов.
 
-\ **Note:** When enabled, :ref:`allow_search<class_PopupMenu_property_allow_search>` is ignored.
+\ **Примечание:** При включении :ref:`allow_search<class_PopupMenu_property_allow_search>` игнорируется.
 
 .. rst-class:: classref-item-separator
 
@@ -660,7 +660,7 @@ If ``true``, shows a search bar at the top of the **PopupMenu** for filtering it
 - |void| **set_search_bar_min_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_search_bar_min_item_count**\ (\ )
 
-Sets the minimum number of items required for the search bar to be visible. :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` must be ``true`` for this to have any effect. Separator items are not counted.
+Устанавливает минимальное количество элементов, необходимое для отображения строки поиска. Для того чтобы это имело какой-либо эффект, параметр :ref:`search_bar_enabled<class_PopupMenu_property_search_bar_enabled>` должен быть ``true``. Элементы-разделители не учитываются.
 
 .. rst-class:: classref-item-separator
 
@@ -1109,7 +1109,7 @@ Sets the minimum number of items required for the search bar to be visible. :ref
 
 :ref:`int<class_int>` **get_item_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_id>`
 
-Returns the ID of the item at the given ``index``.
+Возвращает ID идентификатор элемента по заданному ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -1133,7 +1133,7 @@ Returns the ID of the item at the given ``index``.
 
 :ref:`int<class_int>` **get_item_index**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PopupMenu_method_get_item_index>`
 
-Returns the index of the item containing the specified ``id``. The index is automatically assigned to each item by the engine when added and represents the order items will be displayed.
+Возвращает индекс элемента, содержащего указанный ``id``. Индекс автоматически присваивается каждому элементу движком при добавлении и определяет порядок отображения элементов.
 
 .. rst-class:: classref-item-separator
 
@@ -1559,9 +1559,9 @@ Returns the index of the item containing the specified ``id``. The index is auto
 
 |void| **set_item_index**\ (\ index\: :ref:`int<class_int>`, target_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_index>`
 
-Changes the index of the item at index ``index`` to be at index ``target_index``. This can be used to move an item above other items. The moved item will keep the same ID, even if it was generated from the original index.
+Изменяет индекс элемента по индексу ``index`` на индекс ``target_index``. Это можно использовать для перемещения элемента выше других элементов. Перемещенный элемент сохранит тот же ID, даже если он был сгенерирован из исходного индекса.
 
-\ **Note:** The indices of any items between index ``index`` and index ``target_index`` will be shifted by one.
+\ **Примечание:** Индексы любых элементов между индексом ``index`` и индексом ``target_index`` будут сдвинуты на единицу.
 
 .. rst-class:: classref-item-separator
 
@@ -1906,7 +1906,7 @@ Changes the index of the item at index ``index`` to be at index ``target_index``
 
 :ref:`int<class_int>` **search_bar_separation** = ``4`` :ref:`🔗<class_PopupMenu_theme_constant_search_bar_separation>`
 
-The vertical space between search bar and menu items.
+Вертикальное расстояние между строкой поиска и пунктами меню.
 
 .. rst-class:: classref-item-separator
 
@@ -2062,7 +2062,7 @@ The vertical space between search bar and menu items.
 
 :ref:`Texture2D<class_Texture2D>` **search** :ref:`🔗<class_PopupMenu_theme_icon_search>`
 
-:ref:`Texture2D<class_Texture2D>` icon for the search bar's search icon.
+:ref:`Texture2D<class_Texture2D>` иконка для значка поиска в строке поиска.
 
 .. rst-class:: classref-item-separator
 

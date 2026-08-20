@@ -12,15 +12,15 @@ Transform2D
 Описание
 ----------------
 
-The **Transform2D** built-in :ref:`Variant<class_Variant>` type is a 2×3 `matrix <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ representing a transformation in 2D space. It contains three :ref:`Vector2<class_Vector2>` values: :ref:`x<class_Transform2D_property_x>`, :ref:`y<class_Transform2D_property_y>`, and :ref:`origin<class_Transform2D_property_origin>`. Together, they can represent translation, rotation, scale, and skew.
+Встроенный тип :ref:`Variant<class_Variant>` **Transform2D** — это матрица `2×3 <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__, представляющая преобразование в двумерном пространстве. Она содержит три значения :ref:`Vector2<class_Vector2>`: :ref:`x<class_Transform2D_property_x>`, :ref:`y<class_Transform2D_property_y>` и :ref:`origin<class_Transform2D_property_origin>`. Вместе они могут представлять перемещение, вращение, масштаб и наклон.
 
-The :ref:`x<class_Transform2D_property_x>` and :ref:`y<class_Transform2D_property_y>` axes form a 2×2 matrix, known as the transform's **basis**. The length of each axis (:ref:`Vector2.length()<class_Vector2_method_length>`) influences the transform's scale, while the direction of all axes influence the rotation. Usually, both axes are perpendicular to one another. However, when you rotate one axis individually, the transform becomes skewed. Applying a skewed transform to a 2D sprite will make the sprite appear distorted.
+Оси :ref:`x<class_Transform2D_property_x>` и :ref:`y<class_Transform2D_property_y>` образуют матрицу 2×2, известную как **базис** преобразования. Длина каждой оси (:ref:`Vector2.length()<class_Vector2_method_length>`) влияет на масштаб преобразования, а направление всех осей влияет на вращение. Обычно обе оси перпендикулярны друг другу. Однако при повороте одной оси по отдельности преобразование становится перекошенным. Применение перекошенного преобразования к двумерному спрайту приведет к искажению спрайта.
 
-For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
+Для общего введения см. :doc:`Матрицы и преобразования <../tutorials/math/matrices_and_transforms>` учебник.
 
-\ **Note:** Unlike :ref:`Transform3D<class_Transform3D>`, there is no 2D equivalent to the :ref:`Basis<class_Basis>` type. All mentions of "basis" refer to the :ref:`x<class_Transform2D_property_x>` and :ref:`y<class_Transform2D_property_y>` components of **Transform2D**.
+\ **Примечание:** В отличие от :ref:`Transform3D<class_Transform3D>`, нет 2D-эквивалента типу :ref:`Basis<class_Basis>`. Все упоминания «basis» относятся к компонентам :ref:`x<class_Transform2D_property_x>` и :ref:`y<class_Transform2D_property_y>` **Transform2D**.
 
-\ **Note:** In a boolean context, a Transform2D will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Transform2D_constant_IDENTITY>`. Otherwise, a Transform2D will always evaluate to ``true``.
+\ **Примечание:** В логическом контексте Transform2D будет оцениваться как ``false``, если он равен :ref:`IDENTITY<class_Transform2D_constant_IDENTITY>`. В противном случае Transform2D всегда будет оцениваться как ``true``.
 
 .. note::
 

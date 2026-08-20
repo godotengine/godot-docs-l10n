@@ -462,9 +462,9 @@ Equivale a :ref:`layout_toggle_enabled<class_FileDialog_property_layout_toggle_e
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_OVERWRITE_WARNING** = ``7``
 
-If enabled, the **FileDialog** will warn the user before overwriting files in save mode.
+Se abilitato, il **FileDialog** avviserà l'utente prima di sovrascrivere i file in modalità salvataggio.
 
-Equivalent to :ref:`overwrite_warning_enabled<class_FileDialog_property_overwrite_warning_enabled>`.
+Equivale a :ref:`overwrite_warning_enabled<class_FileDialog_property_overwrite_warning_enabled>`.
 
 .. _class_FileDialog_constant_CUSTOMIZATION_DELETE:
 
@@ -472,9 +472,9 @@ Equivalent to :ref:`overwrite_warning_enabled<class_FileDialog_property_overwrit
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_DELETE** = ``8``
 
-If enabled, the context menu will show the "Delete" option, which allows moving files and folders to trash.
+Se abilitato, il menu contestuale mostrerà l'opzione "Elimina", che consente di spostare file e cartelle nel cestino.
 
-Equivalent to :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>`.
+Equivale a :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>`.
 
 .. rst-class:: classref-section-separator
 
@@ -568,7 +568,7 @@ Il percorso di file attualmente selezionato nella finestra di dialogo dei file.
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, the context menu will show the "Delete" option, which allows moving files and folders to trash.
+Se ``true``, il menu contestuale mostrerà l'opzione "Elimina", che consente di spostare file e cartelle nel cestino.
 
 .. rst-class:: classref-item-separator
 
@@ -689,9 +689,9 @@ Vedi anche :ref:`filters<class_FileDialog_property_filters>`, che si dovrebbe ut
 - |void| **set_filters**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_filters**\ (\ )
 
-The available file type filters. Each filter string in the array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. Both file extensions and MIME type should be always set.
+I filtri di tipo file disponibili. Ogni stringa di filtro nell'array dovrebbe essere formattata in questo modo: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. Il testo descrittivo del filtro è facoltativo e può essere omesso. Sia le estensioni file sia il tipo MIME dovrebbero essere sempre impostati.
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **Nota:** Sia le finestre di dialogo dei file che sono incorporate, sia quelle su Windows supportano solo le estensioni dei file, mentre su Android, Linux e macOS esse supportano anche i tipi MIME.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -710,7 +710,7 @@ The available file type filters. Each filter string in the array should be forma
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, shows the button for creating new directories (when using :ref:`FILE_MODE_OPEN_DIR<class_FileDialog_constant_FILE_MODE_OPEN_DIR>`, :ref:`FILE_MODE_OPEN_ANY<class_FileDialog_constant_FILE_MODE_OPEN_ANY>`, or :ref:`FILE_MODE_SAVE_FILE<class_FileDialog_constant_FILE_MODE_SAVE_FILE>`), and the context menu will have the "New Folder..." option.
+Se ``true``, mostra il pulsante per creare nuove cartelle (quando si utilizza :ref:`FILE_MODE_OPEN_DIR<class_FileDialog_constant_FILE_MODE_OPEN_DIR>`, :ref:`FILE_MODE_OPEN_ANY<class_FileDialog_constant_FILE_MODE_OPEN_ANY>` o :ref:`FILE_MODE_SAVE_FILE<class_FileDialog_constant_FILE_MODE_SAVE_FILE>`), e il menu contestuale includerà l'opzione "Nuova cartella...".
 
 .. rst-class:: classref-item-separator
 
@@ -790,9 +790,9 @@ Numero di :ref:`OptionButton<class_OptionButton>` e :ref:`CheckBox<class_CheckBo
 
 :ref:`int<class_int>` **option_{index}/default** = ``0`` :ref:`🔗<class_FileDialog_property_option_{index}/default>`
 
-The default value for the option at ``index``.
+Il valore predefinito per l'opzione all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. option_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. option_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -804,9 +804,9 @@ The default value for the option at ``index``.
 
 :ref:`String<class_String>` **option_{index}/name** = ``""`` :ref:`🔗<class_FileDialog_property_option_{index}/name>`
 
-The name of the option at ``index``.
+Il nome per l'opzione all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. option_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. option_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -818,9 +818,9 @@ The name of the option at ``index``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **option_{index}/values** = ``PackedStringArray()`` :ref:`🔗<class_FileDialog_property_option_{index}/values>`
 
-The list of values for the option at ``index``.
+La lista di valori per l'opzione all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. option_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. option_count - 1``.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -839,7 +839,7 @@ The list of values for the option at ``index``.
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, the **FileDialog** will warn the user before overwriting files in save mode.
+Se ``true``, il **FileDialog** avviserà l'utente prima di sovrascrivere i file in modalità salvataggio.
 
 .. rst-class:: classref-item-separator
 
@@ -1006,7 +1006,7 @@ Cancella tutti gli elementi attualmente selezionati nella finestra di dialogo.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_favorite_list**\ (\ ) |static| :ref:`🔗<class_FileDialog_method_get_favorite_list>`
 
-Returns the list of favorite directories, which is shared by all **FileDialog** nodes. Useful to store the list of favorites between project sessions. This method can be called only from the main thread.
+Restituisce l'elenco delle cartelle preferite, condiviso da tutti i nodi **FileDialog**. Utile per memorizzare l'elenco delle cartelle preferite tra più sessioni di un progetto. Questo metodo si può chiamare solo dal thread principale.
 
 .. rst-class:: classref-item-separator
 
@@ -1068,7 +1068,7 @@ Restituisce un array di valori dell':ref:`OptionButton<class_OptionButton>` con 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_recent_list**\ (\ ) |static| :ref:`🔗<class_FileDialog_method_get_recent_list>`
 
-Returns the list of recent directories, which is shared by all **FileDialog** nodes. Useful to store the list of recents between project sessions. This method can be called only from the main thread.
+Restituisce l'elenco delle cartelle recenti, condiviso da tutti i nodi **FileDialog**. Utile per memorizzare l'elenco delle cartelle recenti tra più sessioni di un progetto. Questo metodo si può chiamare solo dal thread principale.
 
 .. rst-class:: classref-item-separator
 
@@ -1108,9 +1108,9 @@ Restituisce il contenitore verticale della finestra di dialogo, a cui è possibi
 
 |void| **invalidate**\ (\ ) :ref:`🔗<class_FileDialog_method_invalidate>`
 
-Invalidates and updates this dialog's content list.
+Invalida e aggiorna l'elenco dei contenuti in questa finestra di dialogo.
 
-\ **Note:** This method does nothing on native file dialogs.
+\ **Nota:** Questo metodo non fa nulla sulle finestre di dialogo native dei file.
 
 .. rst-class:: classref-item-separator
 
@@ -1134,7 +1134,7 @@ Restituisce ``true`` se il ``flag`` specificato è abilitato.
 
 |void| **popup_file_dialog**\ (\ ) :ref:`🔗<class_FileDialog_method_popup_file_dialog>`
 
-Shows the **FileDialog** using the default size and position for file dialogs, and selects the file name if there is a current file.
+Mostra il **FileDialog** nelle dimensioni e posizione predefinite per le finestre di dialogo dei file, e seleziona il nome del file se è presente un file attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -1146,7 +1146,7 @@ Shows the **FileDialog** using the default size and position for file dialogs, a
 
 |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_FileDialog_method_set_customization_flag_enabled>`
 
-Sets the specified customization ``flag``, allowing to customize the features available in this **FileDialog**.
+Imposta il ``flag`` di personalizzazione specificato, consentendo di personalizzare le funzionalità disponibili in questo **FileDialog**.
 
 .. rst-class:: classref-item-separator
 
@@ -1158,9 +1158,9 @@ Sets the specified customization ``flag``, allowing to customize the features av
 
 |void| **set_favorite_list**\ (\ favorites\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_favorite_list>`
 
-Sets the list of favorite directories, which is shared by all **FileDialog** nodes. Useful to restore the list of favorites saved with :ref:`get_favorite_list()<class_FileDialog_method_get_favorite_list>`. This method can be called only from the main thread.
+Imposta l'elenco delle cartelle preferite, condiviso da tutti i nodi **FileDialog**. Utile per ripristinare l'elenco dei preferiti salvato con :ref:`get_favorite_list()<class_FileDialog_method_get_favorite_list>`. Questo metodo si può chiamare solo dal thread principale.
 
-\ **Note:** **FileDialog** will update its internal :ref:`ItemList<class_ItemList>` of favorites when its visibility changes. Be sure to call this method earlier if you want your changes to have effect.
+\ **Nota:** **FileDialog** aggiornerà il suo :ref:`ItemList<class_ItemList>` interno dei preferiti quando cambia la sua visibilità. Assicurati di chiamare questo metodo prima se vuoi che le modifiche abbiano effetto.
 
 .. rst-class:: classref-item-separator
 
@@ -1172,7 +1172,7 @@ Sets the list of favorite directories, which is shared by all **FileDialog** nod
 
 |void| **set_get_icon_callback**\ (\ callback\: :ref:`Callable<class_Callable>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_get_icon_callback>`
 
-Sets the callback used by the **FileDialog** nodes to get a file icon, when :ref:`DISPLAY_LIST<class_FileDialog_constant_DISPLAY_LIST>` mode is used. The callback should take a single :ref:`String<class_String>` argument (file path), and return a :ref:`Texture2D<class_Texture2D>`. If an invalid texture is returned, the :ref:`file<class_FileDialog_theme_icon_file>` icon will be used instead.
+Imposta il callback utilizzato dai nodi **FileDialog** per ottenere un'icona file, quando è utilizzata la modalità :ref:`DISPLAY_LIST<class_FileDialog_constant_DISPLAY_LIST>`. Il callback deve accettare un singolo argomento :ref:`String<class_String>` (percorso del file) e restituire una :ref:`Texture2D<class_Texture2D>`. Se viene restituita una texture non valida, verrà utilizzata l'icona :ref:`file<class_FileDialog_theme_icon_file>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1184,9 +1184,9 @@ Sets the callback used by the **FileDialog** nodes to get a file icon, when :ref
 
 |void| **set_get_thumbnail_callback**\ (\ callback\: :ref:`Callable<class_Callable>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_get_thumbnail_callback>`
 
-Sets the callback used by the **FileDialog** nodes to get a file icon, when :ref:`DISPLAY_THUMBNAILS<class_FileDialog_constant_DISPLAY_THUMBNAILS>` mode is used. The callback should take a single :ref:`String<class_String>` argument (file path), and return a :ref:`Texture2D<class_Texture2D>`. If an invalid texture is returned, the :ref:`file_thumbnail<class_FileDialog_theme_icon_file_thumbnail>` icon will be used instead.
+Imposta il callback utilizzato dai nodi **FileDialog** per ottenere un'icona file, quando è utilizzata la modalità :ref:`DISPLAY_THUMBNAILS<class_FileDialog_constant_DISPLAY_THUMBNAILS>`. Il callback deve accettare un singolo argomento :ref:`String<class_String>` (percorso del file) e restituire una :ref:`Texture2D<class_Texture2D>`. Se viene restituita una texture non valida, verrà utilizzata l'icona :ref:`file_thumbnail<class_FileDialog_theme_icon_file_thumbnail>`.
 
-Thumbnails are usually more complex and may take a while to load. To avoid stalling the application, you can use :ref:`ImageTexture<class_ImageTexture>` to asynchronously create the thumbnail.
+Le miniature sono generalmente più complesse e potrebbe volerci tempo per caricarle. Per evitare di bloccare l'applicazione, è possibile utilizzare :ref:`ImageTexture<class_ImageTexture>` per creare la miniatura in modo asincrono.
 
 ::
 
@@ -1199,7 +1199,7 @@ Thumbnails are usually more complex and may take a while to load. To avoid stall
         return image_texture
 
     func make_thumbnail_async(path, image_texture):
-        var thumbnail_texture = await generate_thumbnail(path) # Some method that generates a thumbnail.
+        var thumbnail_texture = await generate_thumbnail(path) # Un metodo che genera una miniatura.
         image_texture.set_image(thumbnail_texture.get_image())
 
 .. rst-class:: classref-item-separator
@@ -1248,9 +1248,9 @@ Imposta i valori di opzione dell':ref:`OptionButton<class_OptionButton>` con l'i
 
 |void| **set_recent_list**\ (\ recents\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_recent_list>`
 
-Sets the list of recent directories, which is shared by all **FileDialog** nodes. Useful to restore the list of recents saved with :ref:`set_recent_list()<class_FileDialog_method_set_recent_list>`. This method can be called only from the main thread.
+Imposta l'elenco delle cartelle recenti, condiviso da tutti i nodi **FileDialog**. Utile per ripristinare l'elenco delle cartelle recenti salvato con :ref:`set_recent_list()<class_FileDialog_method_set_recent_list>`. Questo metodo si può chiamare solo dal thread principale.
 
-\ **Note:** **FileDialog** will update its internal :ref:`ItemList<class_ItemList>` of recent directories when its visibility changes. Be sure to call this method earlier if you want your changes to have effect.
+\ **Nota:** **FileDialog** aggiornerà il suo :ref:`ItemList<class_ItemList>` interno delle cartelle recenti quando cambia la sua visibilità. Assicurati di chiamare questo metodo prima se vuoi che le modifiche abbiano effetto.
 
 .. rst-class:: classref-section-separator
 
@@ -1447,7 +1447,7 @@ Icona per il pulsante che abilita la modalità elenco.
 
 :ref:`Texture2D<class_Texture2D>` **menu_copy_path** :ref:`🔗<class_FileDialog_theme_icon_menu_copy_path>`
 
-Icon for the "Copy Path" context menu option.
+Icona per l'opzione "Copia percorso" nel menu contestuale.
 
 .. rst-class:: classref-item-separator
 
@@ -1459,7 +1459,7 @@ Icon for the "Copy Path" context menu option.
 
 :ref:`Texture2D<class_Texture2D>` **menu_delete** :ref:`🔗<class_FileDialog_theme_icon_menu_delete>`
 
-Icon for the "Delete" context menu option.
+Icona per l'opzione "Elimina" nel menu contestuale.
 
 .. rst-class:: classref-item-separator
 
@@ -1471,7 +1471,7 @@ Icon for the "Delete" context menu option.
 
 :ref:`Texture2D<class_Texture2D>` **menu_new_folder** :ref:`🔗<class_FileDialog_theme_icon_menu_new_folder>`
 
-Icon for the "New Folder..." context menu option. Usually it should be the same as :ref:`create_folder<class_FileDialog_theme_icon_create_folder>`; leave it empty if you want the context menu to show no icons.
+Icona per l'opzione "Nuova cartella..." del menu contestuale. Di solito dovrebbe essere uguale a :ref:`create_folder<class_FileDialog_theme_icon_create_folder>`; lasciala vuota se non vuoi che il menu contestuale mostri icone.
 
 .. rst-class:: classref-item-separator
 
@@ -1483,7 +1483,7 @@ Icon for the "New Folder..." context menu option. Usually it should be the same 
 
 :ref:`Texture2D<class_Texture2D>` **menu_open_bundle** :ref:`🔗<class_FileDialog_theme_icon_menu_open_bundle>`
 
-Icon for the "Show Package Contents" context menu option. The option only appears for macOS bundles.
+Icona per l'opzione "Mostra contenuto del pacchetto" del menu contestuale. L'opzione apparirà solo per i pacchetti macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1495,7 +1495,7 @@ Icon for the "Show Package Contents" context menu option. The option only appear
 
 :ref:`Texture2D<class_Texture2D>` **menu_refresh** :ref:`🔗<class_FileDialog_theme_icon_menu_refresh>`
 
-Icon for the "Refresh" context menu option. Usually it should be the same as :ref:`reload<class_FileDialog_theme_icon_reload>`; leave it empty if you want the context menu to show no icons.
+Icona per l'opzione "Aggiorna" del menu contestuale. Di solito dovrebbe essere uguale a :ref:`reload<class_FileDialog_theme_icon_reload>`; lasciala vuota se non vuoi che il menu contestuale mostri icone.
 
 .. rst-class:: classref-item-separator
 
@@ -1507,7 +1507,7 @@ Icon for the "Refresh" context menu option. Usually it should be the same as :re
 
 :ref:`Texture2D<class_Texture2D>` **menu_show_in_file_manager** :ref:`🔗<class_FileDialog_theme_icon_menu_show_in_file_manager>`
 
-Icon for the "Show in File Manager" context menu option.
+Icona per l'opzione "Mostra nel gestore dei file " del menu contestuale.
 
 .. rst-class:: classref-item-separator
 
@@ -1585,7 +1585,7 @@ Icona personalizzata per l'Interruttore dei file nascosti.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

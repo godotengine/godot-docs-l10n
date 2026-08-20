@@ -16,17 +16,27 @@ Remaps audio samples using a nonlinear function to achieve a distorted sound.
 Descripción
 ----------------------
 
-A "distortion" effect modifies the waveform via a nonlinear mathematical function (see available ones in :ref:`Mode<enum_AudioEffectDistortion_Mode>`), based on the amplitude of the waveform's samples.
+Un efecto de "distorsión" modifica la forma de onda mediante una función matemática no lineal (consulta las funciones disponibles en :ref:`Mode<enum_AudioEffectDistortion_Mode>`), basándose en la amplitud de las muestras de la forma de onda.
 
-\ **Note:** In a nonlinear function, an input sample at *x* amplitude value, will either have its amplitude increased or decreased to a *y* value, based on the function value at *x*, which is why even at the same :ref:`drive<class_AudioEffectDistortion_property_drive>`, the output sound will vary depending on the input's volume. To change the volume while maintaining the output waveform, use :ref:`post_gain<class_AudioEffectDistortion_property_post_gain>`.
 
-In this effect, each type is a different nonlinear function. The different types available are: clip, atan, lofi (bitcrush), overdrive, and waveshape. Every distortion type available here is symmetric: negative amplitude values are affected the same way as positive ones.
 
-Although distortion will always change frequency content, usually by introducing high harmonics, different distortion types offer a range of sound qualities; from "soft" and "warm", to "crunchy" and "abrasive".
+\ **Nota:** En una función no lineal, una muestra de entrada con un valor de amplitud *x* tendrá su amplitud aumentada o reducida a un valor *y*, según el valor de la función en *x*. Por esta razón, incluso con el mismo :ref:`drive<class_AudioEffectDistortion_property_drive>`, el sonido de salida variará dependiendo del volumen de entrada. Para cambiar el volumen manteniendo la forma de onda de salida, utiliza :ref:`post_gain<class_AudioEffectDistortion_property_post_gain>`.
 
-For games, it can help simulate sound coming from some saturated device or speaker very efficiently. It can also help the audio stand out in a mix, by introducing higher frequencies and increasing the volume.
 
-\ **Note:** Although usually imperceptible, an enabled distortion effect still changes the sound even when :ref:`drive<class_AudioEffectDistortion_property_drive>` is set to 0. This is not a bug. If this behavior is undesirable, consider disabling the effect using :ref:`AudioServer.set_bus_effect_enabled()<class_AudioServer_method_set_bus_effect_enabled>`.
+
+En este efecto, cada tipo corresponde a una función no lineal diferente. Los tipos disponibles son: clip, atan, lofi (reducción de bits), overdrive y waveshape. Todos los tipos de distorsión disponibles aquí son simétricos: los valores de amplitud negativos se ven afectados de la misma forma que los valores positivos.
+
+
+
+Aunque la distorsión siempre cambiará el contenido de frecuencia, normalmente introduciendo armónicos superiores, los diferentes tipos de distorsión ofrecen una variedad de características sonoras; desde sonidos "suaves" y "cálidos", hasta sonidos "crujientes" y "agresivos".
+
+
+
+En juegos, puede ayudar a simular de forma muy eficiente el sonido proveniente de un dispositivo o altavoz saturado. También puede ayudar a que el audio destaque en una mezcla, introduciendo frecuencias más altas y aumentando el volumen.
+
+
+
+\ **Nota:** Aunque normalmente es imperceptible, un efecto de distorsión habilitado sigue modificando el sonido incluso cuando :ref:`drive<class_AudioEffectDistortion_property_drive>` está establecido en 0. Esto no es un error. Si este comportamiento no es deseado, considera desactivar el efecto mediante :ref:`AudioServer.set_bus_effect_enabled()<class_AudioServer_method_set_bus_effect_enabled>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -78,7 +88,7 @@ enum **Mode**: :ref:`🔗<enum_AudioEffectDistortion_Mode>`
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_CLIP** = ``0``
 
-Flattens the waveform at 0 dB in a sharp manner. :ref:`drive<class_AudioEffectDistortion_property_drive>` increases amplitude of samples exponentially. This mode functions as a hard clipper if :ref:`drive<class_AudioEffectDistortion_property_drive>` is set to 0, and is the only mode that clips audio signals at 0 dB.
+Aplana la onda a 0 dB de forma brusca. :ref:`drive<class_AudioEffectDistortion_property_drive>` incrementa la amplitud de las muestras exponencialmente. Este modo funciona como un corte fuerte si :ref:`drive<class_AudioEffectDistortion_property_drive>` está a 0, y es el único modo que recorta las señales de audio a 0 dB.
 
 .. _class_AudioEffectDistortion_constant_MODE_ATAN:
 
@@ -86,7 +96,7 @@ Flattens the waveform at 0 dB in a sharp manner. :ref:`drive<class_AudioEffectDi
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_ATAN** = ``1``
 
-Flattens the waveform in a smooth manner, following an arctangent curve. The audio decreases in volume, before flattening peaks to ``PI * 4.0`` (linear value), if it was normalized beforehand.
+Aplana la onda de forma suave, siguiendo una curva arcotangente. El volumen del audio baja antes de aplanar los picos a ``PI * 4.0`` (valor lineal), si se había normalizado previamente.
 
 .. _class_AudioEffectDistortion_constant_MODE_LOFI:
 
@@ -110,7 +120,7 @@ Emulates the warm distortion produced by a field effect transistor, which is com
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_WAVESHAPE** = ``4``
 
-Flattens the waveform in a smooth manner, until it reaches a sharp peak at ``drive = 1``, following a generic absolute sigmoid function.
+Aplana la onda de forma suave, hasta que alcanza un pico brusco a ``drive = 1``, siguiendo una función sigmoidea genérica absoluta.
 
 .. rst-class:: classref-section-separator
 
@@ -132,7 +142,7 @@ Descripciones de Propiedades
 - |void| **set_drive**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drive**\ (\ )
 
-Distortion intensity. Controls how much of the input audio is affected by the distortion curve by moving from a linear function to a nonlinear one. Value can range from 0 to 1.
+Intensidad de la distorsión. Controla cuánto del audio de entrada se ve afectado por la curva de distorsión al moverse de una función lineal a una no-lineal. El valor puede variar entre 0 y 1.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +176,7 @@ Filtro de paso alto, en Hz. Las frecuencias superiores a este valor no se verán
 - |void| **set_mode**\ (\ value\: :ref:`Mode<enum_AudioEffectDistortion_Mode>`\ )
 - :ref:`Mode<enum_AudioEffectDistortion_Mode>` **get_mode**\ (\ )
 
-Distortion type. Changes the nonlinear function used to distort the waveform. See :ref:`Mode<enum_AudioEffectDistortion_Mode>`.
+Tipo de distorsión. Cambia la función no-lineal usada para distorsionar la onda. Ver :ref:`Mode<enum_AudioEffectDistortion_Mode>`.
 
 .. rst-class:: classref-item-separator
 

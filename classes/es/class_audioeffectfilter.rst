@@ -9,22 +9,30 @@ AudioEffectFilter
 
 **Heredado por:** :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`, :ref:`AudioEffectHighPassFilter<class_AudioEffectHighPassFilter>`, :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`, :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFilter>`, :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>`, :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`
 
-Base class for filters. Use effects that inherit this class instead of using it directly.
+Clase base para filtros. Usa efectos que hereden de esta clase en lugar de usarla directamente.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A "filter" controls the gain of frequencies, using :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` as a frequency threshold. Filters can help to give room for each sound, and create interesting effects.
+Un "filtro" controla la ganancia de las frecuencias utilizando :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` como umbral de frecuencia. Los filtros pueden ayudar a dar espacio a cada sonido y crear efectos interesantes.
 
-There are different types of filter that inherit this class:
 
-Shelf filters: :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` and :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`\ 
 
-Band-pass and notch filters: :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`, :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>`, and :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`\ 
+Existen diferentes tipos de filtros que heredan de esta clase:
 
-Low/high-pass filters: :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFilter>` and :ref:`AudioEffectHighPassFilter<class_AudioEffectHighPassFilter>`
+
+
+Filtros de estantería: :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` y :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`\ 
+
+
+
+Filtros pasa banda y de rechazo de banda: :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`, :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>` y :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`\ 
+
+
+
+Filtros pasa bajos y pasa altos: :ref:`AudioEffectLowPassFilter<class_AudioEffectLowPassFilter>` y :ref:`AudioEffectHighPassFilter<class_AudioEffectHighPassFilter>`
 
 .. rst-class:: classref-introduction-group
 
@@ -154,7 +162,7 @@ Steepness of the cutoff curve in dB per octave (twice the frequency above :ref:`
 - |void| **set_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gain**\ (\ )
 
-Gain of the frequencies affected by the filter. This property is only available for :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` and :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`. Value can range from 0 to 4.
+Ganancia de las frecuencias afectadas por el filtro. Esta propiedad solo está disponible para :ref:`AudioEffectLowShelfFilter<class_AudioEffectLowShelfFilter>` y :ref:`AudioEffectHighShelfFilter<class_AudioEffectHighShelfFilter>`. El valor puede estar entre 0 y 4.
 
 .. rst-class:: classref-item-separator
 
@@ -171,15 +179,15 @@ Gain of the frequencies affected by the filter. This property is only available 
 - |void| **set_resonance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_resonance**\ (\ )
 
-Gain at or directly next to the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` frequency threshold. Value can range from 0 to 1.
+Ganancia en o directamente junto al umbral de frecuencia :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`. El valor puede estar entre 0 y 1.
 
-Its exact behavior depends on the selected filter type:
+Su comportamiento exacto depende del tipo de filtro seleccionado:
 
-- For shelf filters, it accentuates or masks the order by increasing frequencies right next to the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` frequency and decreasing frequencies on the opposite side.
+- Para los filtros de estantería, acentúa o atenúa el orden aumentando las frecuencias justo al lado de la frecuencia :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` y reduciendo las frecuencias del lado opuesto.
 
-- For the band-pass and notch filters, it widens or narrows the filter at the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` frequency threshold.
+- Para los filtros pasa banda y de rechazo de banda, amplía o estrecha el filtro en el umbral de frecuencia :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
-- For low/high-pass filters, it increases or decreases frequencies at the :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` frequency threshold.
+- Para los filtros pasa bajos y pasa altos, aumenta o reduce las frecuencias en el umbral de frecuencia :ref:`cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

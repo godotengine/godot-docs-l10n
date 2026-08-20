@@ -612,7 +612,7 @@ enum **SubEmitterMode**: :ref:`🔗<enum_ParticleProcessMaterial_SubEmitterMode>
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_DISABLED** = ``0``
 
-The subemitter is disabled.
+Il sottoemettitore è disabilitato.
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_CONSTANT:
 
@@ -620,7 +620,7 @@ The subemitter is disabled.
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_CONSTANT** = ``1``
 
-The submitter is emitted on the constant interval defined by :ref:`sub_emitter_frequency<class_ParticleProcessMaterial_property_sub_emitter_frequency>`.
+Il sottoemettitore viene emesso a intervalli costanti definiti da :ref:`sub_emitter_frequency<class_ParticleProcessMaterial_property_sub_emitter_frequency>`.
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_AT_END:
 
@@ -628,7 +628,7 @@ The submitter is emitted on the constant interval defined by :ref:`sub_emitter_f
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_AT_END** = ``2``
 
-The subemitter is emitted at the end of the particle's lifetime.
+Il sottoemettitore viene emesso al termine della vita della particella.
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_AT_COLLISION:
 
@@ -636,7 +636,7 @@ The subemitter is emitted at the end of the particle's lifetime.
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_AT_COLLISION** = ``3``
 
-The subemitter is emitted when the particle collides.
+Il sottoemettitore viene emesso quando la particella collide.
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_AT_START:
 
@@ -644,7 +644,7 @@ The subemitter is emitted when the particle collides.
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_AT_START** = ``4``
 
-The subemitter is emitted when the particle spawns.
+Il sottoemettitore viene emesso quando la particella viene generata.
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_MAX:
 
@@ -716,9 +716,9 @@ Descrizioni delle proprietà
 - |void| **set_alpha_curve**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_alpha_curve**\ (\ )
 
-The alpha value of each particle's color will be multiplied by this :ref:`CurveTexture<class_CurveTexture>` over its lifetime.
+Il valore alfa del colore di ogni particella sarà moltiplicato per questa :ref:`CurveTexture<class_CurveTexture>` nel corso della sua durata.
 
-\ **Note:** :ref:`alpha_curve<class_ParticleProcessMaterial_property_alpha_curve>` multiplies the particle mesh's vertex colors. To have a visible effect on a :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *must* be ``true``. For a :ref:`ShaderMaterial<class_ShaderMaterial>`, ``ALPHA *= COLOR.a;`` must be inserted in the shader's ``fragment()`` function. Otherwise, :ref:`alpha_curve<class_ParticleProcessMaterial_property_alpha_curve>` will have no visible effect.
+\ **Nota:** :ref:`alpha_curve<class_ParticleProcessMaterial_property_alpha_curve>` moltiplica i colori dei vertici della mesh di particelle. Per avere un effetto evidente su un :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *deve* essere ``true``. Per uno :ref:`ShaderMaterial<class_ShaderMaterial>`, ``ALPHA *= COLOR.a;`` deve essere inserito nella funzione ``fragment()`` dello shader. Altrimenti, :ref:`alpha_curve<class_ParticleProcessMaterial_property_alpha_curve>` non avrà alcun effetto evidente.
 
 .. rst-class:: classref-item-separator
 
@@ -1793,9 +1793,9 @@ Se ``true``, le particelle non si muoveranno sull'asse z.
 - |void| **set_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particle_flag**\ (\ particle_flag\: :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`\ ) |const|
 
-If ``true``, particles will inherit the scale of the emitter.
+Se ``true``, le particelle erediteranno la scala dell'emettitore.
 
-\ **Note:** This has no effect when :ref:`GPUParticles3D.local_coords<class_GPUParticles3D_property_local_coords>` is ``true``, since particles in local space are already affected by the emitter's scale.
+\ **Nota:** Questo non ha effetto quando :ref:`GPUParticles3D.local_coords<class_GPUParticles3D_property_local_coords>` è ``true``, poiché le particelle nello spazio locale sono già influenzate dalla scala dell'emettitore.
 
 .. rst-class:: classref-item-separator
 
@@ -1937,7 +1937,7 @@ Velocità radiale minima applicata a ogni particella. Fa allontanare le particel
 - |void| **set_rotation_3d_max**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_3d_max**\ (\ )
 
-The maximum 3D orientation, in degrees. Works only in 3D and if :ref:`use_rotation_3d<class_ParticleProcessMaterial_property_use_rotation_3d>` is enabled.
+L'orientazione 3D massimo, in gradi. Funziona solo in 3D e se :ref:`use_rotation_3d<class_ParticleProcessMaterial_property_use_rotation_3d>` è abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -1954,7 +1954,7 @@ The maximum 3D orientation, in degrees. Works only in 3D and if :ref:`use_rotati
 - |void| **set_rotation_3d_min**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_3d_min**\ (\ )
 
-The minimum 3D orientation, in degrees. Works only in 3D and if :ref:`use_rotation_3d<class_ParticleProcessMaterial_property_use_rotation_3d>` is enabled.
+L'orientazione 3D minima, in gradi. Funziona solo in 3D e se :ref:`use_rotation_3d<class_ParticleProcessMaterial_property_use_rotation_3d>` è abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -1971,7 +1971,7 @@ The minimum 3D orientation, in degrees. Works only in 3D and if :ref:`use_rotati
 - |void| **set_rotation_velocity_3d_curve**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_rotation_velocity_3d_curve**\ (\ )
 
-Rotation velocity curve over lifetime, per-axis. Enable :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` to use this.
+Curva della velocità di rotazione nel corso della vita, per ogni asse. Abilita :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` per utilizzarla.
 
 .. rst-class:: classref-item-separator
 
@@ -1988,7 +1988,7 @@ Rotation velocity curve over lifetime, per-axis. Enable :ref:`use_rotation_veloc
 - |void| **set_rotation_velocity_3d_max**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_velocity_3d_max**\ (\ )
 
-Maximum 3D rotation velocity on the particle's local axis. Enable :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` to use this.
+Velocità di rotazione 3D massima sull'asse locale della particella. Abilita :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` per utilizzarla.
 
 .. rst-class:: classref-item-separator
 
@@ -2005,7 +2005,7 @@ Maximum 3D rotation velocity on the particle's local axis. Enable :ref:`use_rota
 - |void| **set_rotation_velocity_3d_min**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_velocity_3d_min**\ (\ )
 
-Minimum 3D rotation velocity on the particle's local axis. Enable :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` to use this.
+Velocità di rotazione 3D minima sull'asse locale della particella. Abilita :ref:`use_rotation_velocity_3d<class_ParticleProcessMaterial_property_use_rotation_velocity_3d>` per utilizzarla.
 
 .. rst-class:: classref-item-separator
 
@@ -2530,7 +2530,7 @@ L'intensità del noise di turbolenza. Aumentandolo si otterrà un motivo di flus
 - |void| **set_use_rotation_3d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_rotation_3d**\ (\ )
 
-Enable the usage of :ref:`rotation_3d_min<class_ParticleProcessMaterial_property_rotation_3d_min>` and :ref:`rotation_3d_max<class_ParticleProcessMaterial_property_rotation_3d_max>`.
+Abilita l'utilizzo di :ref:`rotation_3d_min<class_ParticleProcessMaterial_property_rotation_3d_min>` e :ref:`rotation_3d_max<class_ParticleProcessMaterial_property_rotation_3d_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2547,7 +2547,7 @@ Enable the usage of :ref:`rotation_3d_min<class_ParticleProcessMaterial_property
 - |void| **set_using_rotation_velocity_3d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_rotation_velocity_3d**\ (\ )
 
-Enable 3D rotation velocity.
+Abilita la velocità di rotazione 3D.
 
 .. rst-class:: classref-item-separator
 
@@ -2564,7 +2564,7 @@ Enable 3D rotation velocity.
 - |void| **set_use_scale_3d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_scale_3d**\ (\ )
 
-Enable the usage of :ref:`scale_3d_min<class_ParticleProcessMaterial_property_scale_3d_min>` and :ref:`scale_3d_max<class_ParticleProcessMaterial_property_scale_3d_max>`.
+Abilita l'utilizzo di :ref:`scale_3d_min<class_ParticleProcessMaterial_property_scale_3d_min>` e :ref:`scale_3d_max<class_ParticleProcessMaterial_property_scale_3d_max>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2733,7 +2733,7 @@ Imposta il flag di particelle ``particle_flag`` su ``enable``.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

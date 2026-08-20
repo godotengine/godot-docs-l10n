@@ -7,18 +7,18 @@ AudioEffectDelay
 
 **Eredita:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a delay audio effect to an audio bus.
+Aggiunge un effetto audio di ritardo a un bus audio.
 
-Emulates an echo by playing the input audio back after a period of time.
+Emula un eco riproducendo nuovamente l'audio in ingresso dopo un certo periodo di tempo.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-A "delay" effect plays the input audio signal back after a period of time. Each repetition is called a "delay tap" or simply "tap". Delay taps may be played back multiple times to create the sound of a repeating, decaying echo. Delay effects range from a subtle echo to a pronounced blending of previous sounds with new sounds.
+Un effetto "delay" riproduce nuovamente il segnale audio in ingresso dopo un certo periodo di tempo. Ogni ripetizione è detta "delay tap" o semplicemente "impulso". Gli impulsi possono essere riprodotti più volte per creare il suono di un eco ripetuto e decadente. Gli effetti di delay variano da un eco sottile a un misto pronunciato di suoni precedenti con quelli nuovi.
 
-See also :ref:`AudioEffectReverb<class_AudioEffectReverb>` for a blurry, continuous echo.
+Vedi anche :ref:`AudioEffectReverb<class_AudioEffectReverb>` per un eco continuo e sfumato.
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ Tutorial
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effetti audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -85,7 +85,7 @@ Descrizioni delle proprietà
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-The volume ratio of the original audio. Value can range from 0 to 1.
+Il rapporto di volume dell'audio originale. Il valore può variare da 0 a 1.
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ The volume ratio of the original audio. Value can range from 0 to 1.
 - |void| **set_feedback_active**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_feedback_active**\ (\ )
 
-If ``true``, feedback is enabled, repeating taps after they are played.
+Se ``true``, il feedback è abilitato, ripetendo gli impulsi dopo che sono stati riprodotti.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ If ``true``, feedback is enabled, repeating taps after they are played.
 - |void| **set_feedback_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_delay_ms**\ (\ )
 
-Feedback delay time in milliseconds. Value can range from 0 to 1500.
+Tempo di ritardo del feedback in millisecondi. l valore può variare da 0 a 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Feedback delay time in milliseconds. Value can range from 0 to 1500.
 - |void| **set_feedback_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_level_db**\ (\ )
 
-Gain for feedback, in dB. Value can range from -60 to 0.
+Guadagno per il feedback, in dB. Il valore può variare da -60 a 0.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Gain for feedback, in dB. Value can range from -60 to 0.
 - |void| **set_feedback_lowpass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback_lowpass**\ (\ )
 
-Low-pass filter for feedback, in Hz. Frequencies above this value are filtered out. Value can range from 1 to 16000.
+Filtro passa-basso per il feedback, in Hz. Le frequenze sotto questo valore sono filtrate. Il valore può variare da 1 a 16000.
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ Low-pass filter for feedback, in Hz. Frequencies above this value are filtered o
 - |void| **set_tap1_active**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_tap1_active**\ (\ )
 
-Se ``true``, il primo colpo sarà abilitato.
+Se ``true``, il primo impulso sarà abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Se ``true``, il primo colpo sarà abilitato.
 - |void| **set_tap1_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_delay_ms**\ (\ )
 
-First tap delay time in milliseconds, compared to the original audio. Value can range from 0 to 1500.
+Tempo di ritardo del primo impulso in millisecondi, rispetto all'audio originale. Il valore può variare da 0 a 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ First tap delay time in milliseconds, compared to the original audio. Value can 
 - |void| **set_tap1_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_level_db**\ (\ )
 
-Gain for the first tap, in dB. Value can range from -60 to 0.
+Guadagno del primo impulso, in dB. Il valore può variare da -60 a 0.
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ Gain for the first tap, in dB. Value can range from -60 to 0.
 - |void| **set_tap1_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap1_pan**\ (\ )
 
-Pan position for the first tap. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
+Posizione di panning per il primo impulso. I valori negativi spostano il suono a sinistra, quelli positivi a destra. Il valore può variare da -1 a 1.
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Pan position for the first tap. Negative values pan the sound to the left, posit
 - |void| **set_tap2_active**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_tap2_active**\ (\ )
 
-Se ``true``, il secondo colpo sarà abilitato.
+Se ``true``, il secondo impulso sarà abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ Se ``true``, il secondo colpo sarà abilitato.
 - |void| **set_tap2_delay_ms**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_delay_ms**\ (\ )
 
-Second tap delay time in milliseconds, compared to the original audio. Value can range from 0 to 1500.
+Tempo di ritardo del secondo impulso in millisecondi, rispetto all'audio originale. Il valore può variare da 0 a 1500.
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Second tap delay time in milliseconds, compared to the original audio. Value can
 - |void| **set_tap2_level_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_level_db**\ (\ )
 
-Gain for the second tap, in dB. Value can range from -60 to 0.
+Guadagno per il secondo impulso, in dB. Il valore può variare da -60 a 0.
 
 .. rst-class:: classref-item-separator
 
@@ -289,13 +289,13 @@ Gain for the second tap, in dB. Value can range from -60 to 0.
 - |void| **set_tap2_pan**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tap2_pan**\ (\ )
 
-Pan position for the second tap. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
+Posizione di panning per il secondo impulso. I valori negativi spostano il suono a sinistra, quelli positivi a destra. Il valore può variare da -1 a 1.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

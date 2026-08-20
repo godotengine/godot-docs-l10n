@@ -150,11 +150,11 @@ RandomNumberGenerator — це клас для генерації псевдов
 
 :ref:`int<class_int>` **rand_weighted**\ (\ weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_RandomNumberGenerator_method_rand_weighted>`
 
-Повертає випадкове ціле число в діапазоні від ``0`` до розміру масиву, переданого як параметр. Кожне значення в масиві має бути числом з плаваючою комою, яке відображає відносну ймовірність того, що воно буде повернено як індекс. Більше значення означає, що ймовірність повернення цього значення як індексу вища, тоді як значення ``0`` означає, що воно ніколи не буде повернено як індекс.
+Returns a random integer between ``0`` and the size of the array that is passed as a parameter. Each value in the array should be a non-negative floating-point number that represents the relative likelihood that it will be returned as an index. A higher value means the value is more likely to be returned as an index, while a value of ``0`` means it will never be returned as an index.
 
-Наприклад, якщо ``[0.5, 1, 1, 2] `` передається як параметр, то ймовірність того, що метод поверне ``3`` (індекс значення ``2``), удвічі вища, а ймовірність повернення ``0`` (індекс значення ``0.5``) удвічі нижча порівняно з індексами ``1`` та ``2``.
+For example, if ``[0.5, 1, 1, 2]`` is passed as a parameter, then the method is twice as likely to return ``3`` (the index of the value ``2``) and twice as unlikely to return ``0`` (the index of the value ``0.5``) compared to the indices ``1`` and ``2``.
 
-Виводить помилку та повертає ``-1``, якщо масив порожній.
+Prints an error and returns ``-1`` if the array is empty or contains any negative values.
 
 
 .. tabs::
@@ -166,8 +166,8 @@ RandomNumberGenerator — це клас для генерації псевдов
     var my_array = ["one", "two", "three", "four"]
     var weights = PackedFloat32Array([0.5, 1, 1, 2])
 
-    # Виводить один із чотирьох елементів у `my_array`.
-    # Імовірніше, що буде виведено "four", а менш імовірно — "one".
+    # Prints one of the four elements in `my_array`.
+    # It is more likely to print "four", and less likely to print "one".
     print(my_array[rng.rand_weighted(weights)])
 
 

@@ -144,7 +144,7 @@ enum **TextureMapMode**: :ref:`🔗<enum_GLTFDocument_TextureMapMode>`
 
 :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **TEXTURE_MAP_MODE_DO_NOT_REMAP** = ``0``
 
-Import the texture maps in the glTF file as they are, without trying to fit them into specific texture slots suitable for Godot's built-in materials. This may be desirable if using the glTF file with custom shaders, but may not display correctly with Godot's built-in materials. This is equivalent to the behavior in Godot 4.6 and earlier.
+Importa le mappe delle texture nel file glTF così come sono, senza tentare di adattarle a specifici slot di texture adatti ai materiali integrati di Godot. Può essere preferibile se si utilizza il file glTF con shader personalizzati, ma potrebbe non apparire correttamente con i materiali integrati di Godot. Questo comportamento è equivalente a quello di Godot 4.6 e versioni precedenti.
 
 .. _class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL:
 
@@ -152,7 +152,7 @@ Import the texture maps in the glTF file as they are, without trying to fit them
 
 :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL** = ``1``
 
-Import the texture maps in the glTF file remapped to the most suitable texture slots based on Godot's :ref:`StandardMaterial3D<class_StandardMaterial3D>` class. This is the default behavior.
+Importa le mappe delle texture nel file glTF rimappate negli slot di texture più adatti in base alla classe :ref:`StandardMaterial3D<class_StandardMaterial3D>` di Godot. Questo è il comportamento predefinito.
 
 .. rst-class:: classref-item-separator
 
@@ -204,9 +204,9 @@ flags **ImportFlags**: :ref:`🔗<enum_GLTFDocument_ImportFlags>`
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_GENERATE_TANGENT_ARRAYS** = ``8``
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead of relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+Se ``true``, genera le tangenti dei vertici usando `Mikktspace <http://www.mikktspace.com/>`__ se le mesh sorgenti non hanno dati per le tangenti. Quando possibile, si consiglia di lasciare che il software di modellazione 3D generi le tangenti durante l'esportazione invece di affidarsi a questa opzione. Le tangenti sono necessarie per visualizzare correttamente le mappe di normali e heightmap, insieme a qualsiasi funzionalità di un materiale o shader che le richiede.
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+Se non c'è bisogno di funzionalità che richiedono le tangenti, disabilitando questa opzione potrebbe ridurre le dimensioni del file risultante e velocizzare l'importazione se il file 3D sorgente non contiene tangenti.
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_USE_NAMED_SKIN_BINDS:
 
@@ -230,7 +230,7 @@ Insieme, queste informazioni sono sufficienti per dire a Godot come usare le pos
 
 :ref:`ImportFlags<enum_GLTFDocument_ImportFlags>` **IMPORT_FLAG_DISCARD_MESHES_AND_MATERIALS** = ``32``
 
-Ignore meshes and materials on import. When importing a scene as an :ref:`AnimationLibrary<class_AnimationLibrary>`, this flag is always enabled.
+Ignora mesh e materiali durante l'importazione. Importando una scena come :ref:`AnimationLibrary<class_AnimationLibrary>`, questo flag è sempre abilitato.
 
 .. _class_GLTFDocument_constant_IMPORT_FLAG_FORCE_DISABLE_MESH_COMPRESSION:
 
@@ -351,7 +351,7 @@ Come elaborare il nodo radice durante l'esportazione. Il valore predefinito e co
 - |void| **set_texture_map_mode**\ (\ value\: :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>`\ )
 - :ref:`TextureMapMode<enum_GLTFDocument_TextureMapMode>` **get_texture_map_mode**\ (\ )
 
-How to handle texture maps during import. The default and recommended value is :ref:`TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL<class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL>`, which automatically remaps from glTF's flexible texture map system to the more specific texture map slots in Godot's :ref:`StandardMaterial3D<class_StandardMaterial3D>` class. Alternatively, :ref:`TEXTURE_MAP_MODE_DO_NOT_REMAP<class_GLTFDocument_constant_TEXTURE_MAP_MODE_DO_NOT_REMAP>` can be used to preserve the original texture maps from the glTF file, which may be desirable if using the glTF file with custom shaders, but may not display correctly with Godot's built-in materials.
+Come gestire le mappe delle texture durante l'importazione. Il valore predefinito e consigliato è :ref:`TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL<class_GLTFDocument_constant_TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL>`, che rimappa automaticamente dal sistema flessibile di mappe delle texture di glTF agli slot di mappe delle texture più specifici nella classe :ref:`StandardMaterial3D<class_StandardMaterial3D>` di Godot. Alternativamente, è possibile utilizzare :ref:`TEXTURE_MAP_MODE_DO_NOT_REMAP<class_GLTFDocument_constant_TEXTURE_MAP_MODE_DO_NOT_REMAP>` per preservare le mappe delle texture originali dal file glTF, il che può essere preferibile se si utilizza il file glTF con shader personalizzati, ma potrebbe non apparire correttamente con i materiali integrati di Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -523,7 +523,7 @@ Accetta un oggetto :ref:`GLTFState<class_GLTFState>` tramite il parametro ``stat
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

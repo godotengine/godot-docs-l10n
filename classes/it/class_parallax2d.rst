@@ -14,7 +14,7 @@ Un nodo usato per creare uno sfondo a scorrimento parallasse.
 Descrizione
 ----------------------
 
-Un **Parallax2D** serve per creare un effetto parallasse. Può muoversi a una velocità diversa rispetto al movimento della telecamera tramite :ref:`scroll_scale<class_Parallax2D_property_scroll_scale>`. Ciò crea un'illusione di profondità in un gioco 2D. Se si desidera lo scorrimento manuale, la posizione della :ref:`Camera2D<class_Camera2D>` può essere ignorata con :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>`.
+Un **Parallax2D** serve per creare un effetto parallasse. Può muoversi a una velocità diversa rispetto al movimento della telecamera tramite :ref:`scroll_scale<class_Parallax2D_property_scroll_scale>`. Ciò crea un'illusione di profondità in un gioco 2D. Se è preferibile uno scorrimento manuale, la posizione della :ref:`Camera2D<class_Camera2D>` può essere ignorata con :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>`.
 
 \ **Nota:** Qualsiasi modifica alla posizione di questo nodo apportata dopo che è entrato nell'albero di scene verrà ignorata se :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` è ``false`` o se :ref:`screen_offset<class_Parallax2D_property_screen_offset>` viene modificato.
 
@@ -128,7 +128,7 @@ Se ``true``, la posizione del **Parallax2D** non è influenzata dalla posizione 
 - |void| **set_limit_begin**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_begin**\ (\ )
 
-Limiti in alto a sinistra per l'inizio dello scorrimento. Se la telecamera è al di fuori di questo limite, il **Parallax2D** smette di scorrere. Deve essere inferiore a :ref:`limit_end<class_Parallax2D_property_limit_end>` meno le dimensioni della viewport per funzionare.
+Limiti in alto a sinistra per l'inizio dello scorrimento. Se la telecamera è fuori da questo limite, il **Parallax2D** smette di scorrere. Deve essere inferiore a :ref:`limit_end<class_Parallax2D_property_limit_end>` meno le dimensioni della viewport per funzionare.
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Limiti in alto a sinistra per l'inizio dello scorrimento. Se la telecamera è al
 - |void| **set_limit_end**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_end**\ (\ )
 
-Limiti in alto a sinistra per la fine dello scorrimento. Se la telecamera è al di fuori di questo limite, il **Parallax2D** smette di scorrere. Deve essere superiore a :ref:`limit_begin<class_Parallax2D_property_limit_begin>` combinato con le dimensioni della viewport per funzionare.
+Limiti in alto a sinistra per la fine dello scorrimento. Se la telecamera è fuori da questo limite, il **Parallax2D** smette di scorrere. Deve essere superiore a :ref:`limit_begin<class_Parallax2D_property_limit_begin>` combinato con le dimensioni della viewport per funzionare.
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ Ad esempio, un valore di ``1`` scorre alla stessa velocità della telecamera. Un
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

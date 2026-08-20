@@ -117,7 +117,7 @@ La dimensione del buffer di rendering 3D utilizzato per renderizzare.
 - |void| **set_msaa_3d**\ (\ value\: :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>`\ )
 - :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` **get_msaa_3d**\ (\ )
 
-La modalità del MSAA che utilizziamo per il rendering 3D.
+La modalità dell'MSAA che utilizziamo per il rendering 3D.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ La modalità di ridimensionamento richiesta con cui sovracampionare o sottocampi
 - |void| **set_screen_space_aa**\ (\ value\: :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>`\ )
 - :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` **get_screen_space_aa**\ (\ )
 
-L'antialiasing nello spazio dello schermo applicato in post-elaborazione.
+L'antialiasing richiesto nello spazio dello schermo, applicato in post-elaborazione.
 
 .. rst-class:: classref-item-separator
 
@@ -227,7 +227,7 @@ Il numero di viste che stiamo renderizzando.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

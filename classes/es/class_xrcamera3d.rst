@@ -7,18 +7,18 @@ XRCamera3D
 
 **Hereda:** :ref:`Camera3D<class_Camera3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A camera node which automatically positions itself based on XR tracking data.
+Un nodo de cámara que se posiciona automáticamente basándose en datos de rastreo XR.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A camera node which automatically positions itself based on XR tracking data.
+Un nodo de cámara que se posiciona automáticamente según los datos de rastreo XR.
 
-In contrast to :ref:`XRController3D<class_XRController3D>`, the render thread has access to more up-to-date tracking data, and the location of the **XRCamera3D** node can lag a few milliseconds behind what is used for rendering.
+A diferencia de :ref:`XRController3D<class_XRController3D>`, el hilo de renderizado tiene acceso a datos de seguimiento más actualizados, por lo que la ubicación del nodo **XRCamera3D** puede presentar un ligero desfase (de unos pocos milisegundos) respecto a la utilizada para el renderizado.
 
-\ **Note:** If :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` is ``true``, most of the camera properties are overridden by the active :ref:`XRInterface<class_XRInterface>`. The only properties that can be trusted are the near and far planes.
+\ **Nota:** Si :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` es ``true``, la mayoría de las propiedades de la cámara son reemplazadas por la :ref:`XRInterface<class_XRInterface>` activa. Las únicas propiedades fiables son los planos cercano y lejano.
 
 .. rst-class:: classref-introduction-group
 

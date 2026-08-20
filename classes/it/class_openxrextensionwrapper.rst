@@ -16,17 +16,17 @@ Consente di implementare estensioni OpenXR con GDExtension.
 Descrizione
 ----------------------
 
-**OpenXRExtensionWrapper** allows implementing OpenXR extensions with GDExtension. The extension should be registered with :ref:`register_extension_wrapper()<class_OpenXRExtensionWrapper_method_register_extension_wrapper>`.
+**OpenXRExtensionWrapper** consente di implementare estensioni OpenXR con GDExtension. L'estensione deve essere registrata tramite :ref:`register_extension_wrapper()<class_OpenXRExtensionWrapper_method_register_extension_wrapper>`.
 
-When :ref:`OpenXRInterface<class_OpenXRInterface>` is initialized as the primary interface and any :ref:`Viewport<class_Viewport>` has :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` set to ``true``, OpenXR will become involved in Godot's rendering process. If :ref:`ProjectSettings.rendering/driver/threads/thread_model<class_ProjectSettings_property_rendering/driver/threads/thread_model>` is set to "Separate", Godot's renderer will run on its own thread, and special care must be taken in all **OpenXRExtensionWrapper**\ s in order to prevent crashes or unexpected behavior. Some virtual methods will be called on the render thread, and any data they access should not be directly written to on the main thread. This is to prevent two potential issues:
+Quando :ref:`OpenXRInterface<class_OpenXRInterface>` è inizializzato come interfaccia principale e qualsiasi :ref:`Viewport<class_Viewport>` ha :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` impostato su ``true``, OpenXR verrà coinvolto nel processo di rendering di Godot. Se :ref:`ProjectSettings.rendering/driver/threads/thread_model<class_ProjectSettings_property_rendering/driver/threads/thread_model>` è impostato su "Separate", il renderer di Godot sarà eseguito su un thread separato e occorre prestare particolare attenzione in tutti gli **OpenXRExtensionWrapper** per evitare arresti anomali o comportamenti imprevisti. Alcuni metodi virtuali verranno chiamati sul thread di rendering e i dati a cui accedono non si devono scrivere direttamente sul thread principale. Questo per evitare due eventuali problemi:
 
-1. Changes intended for the next frame, taking effect on the current frame. When using the "Separate" thread model, the main thread will immediately start working on the next frame while the render thread may still be rendering the current frame. If the main thread changes anything used by the render thread directly, the change could end up being used one frame earlier than intended.
+1. Modifiche destinate al prossimo frame che hanno effetto sul frame attuale. Quando si utilizza il modello di thread "Separate", il thread principale comincerà immediatamente a lavorare sul prossimo frame, mentre il thread di rendering potrebbe star ancora renderizzando il frame attuale. Se il thread principale modifica direttamente qualunque cosa utilizzata dal thread di rendering, la modifica potrebbe essere usata un frame prima del previsto.
 
-2. Reading and writing to the same data at the same time from different threads can lead to the render thread using data in an invalid state.
+2. Leggere e scrivere gli stessi dati allo stesso tempo da thread diversi possono portare il thread di rendering a usare dati in uno stato non valido.
 
-In most cases, the solution is to use :ref:`RenderingServer.call_on_render_thread()<class_RenderingServer_method_call_on_render_thread>` to schedule :ref:`Callable<class_Callable>`\ s to write to any data used on the render thread. When using the "Separate" thread model, these :ref:`Callable<class_Callable>`\ s will run after the renderer finishes the current frame and before it starts rendering the next frame. When not using this mode, they'll run immediately, so it's recommended to always use :ref:`RenderingServer.call_on_render_thread()<class_RenderingServer_method_call_on_render_thread>` in these cases, which will allow your code to do the right thing regardless of the thread model.
+Nella maggior parte dei casi, la soluzione consiste nell'utilizzare :ref:`RenderingServer.call_on_render_thread()<class_RenderingServer_method_call_on_render_thread>` per pianificare l'esecuzione di :ref:`Callable<class_Callable>` che scrivano su qualsiasi dato utilizzato dal thread di rendering. Quando si utilizza il modello di thread "Separate", questi :ref:`Callable<class_Callable>` saranno eseguiti dopo che il renderer ha terminato il frame attuale e prima che cominci a renderizzare il prossimo frame. In assenza di questa modalità, saranno eseguiti immediatamente, pertanto si consiglia di usare sempre :ref:`RenderingServer.call_on_render_thread()<class_RenderingServer_method_call_on_render_thread>` in questi casi, così che il codice faccia la cosa giusta a prescindere dal modello di thread.
 
-Any virtual methods that run on the render thread will be noted below.
+Di seguito, saranno indicati tutti i metodi virtuali eseguiti sul thread di rendering.
 
 .. rst-class:: classref-reftable-group
 
@@ -195,11 +195,11 @@ Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`O
 
 :ref:`Dictionary<class_Dictionary>` **_get_requested_extensions**\ (\ xr_version\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_requested_extensions>`
 
-Returns a :ref:`Dictionary<class_Dictionary>` of OpenXR extensions related to this extension. ``xr_version`` specifies the OpenXR version we're instantiating. This will be zero if the editor requests this list to flag supported features. The :ref:`Dictionary<class_Dictionary>` should contain the name of the extension, mapped to a ``bool *`` cast to an integer:
+Restituisce un :ref:`Dictionary<class_Dictionary>` di estensioni OpenXR che riguardano questa estensione. ``xr_version`` specifica la versione di OpenXR che stiamo istanziando. Questo valore sarà zero se l'editor richiede questa lista per riportare le funzionalità supportate. Il :ref:`Dictionary<class_Dictionary>` dovrebbe contenere il nome dell'estensione, mappato a un ``bool *`` convertito in un intero:
 
-- If the ``bool *`` is a ``nullptr`` this extension is mandatory.
+- Se ``bool *`` è un ``nullptr`` questa estensione è obbligatoria.
 
-- If the ``bool *`` points to a boolean, the boolean will be updated to ``true`` if the extension is enabled.
+- Se ``bool *`` punta a un booleano, il booleano sarà aggiornato a ``true`` se l'estensione è abilitata.
 
 .. rst-class:: classref-item-separator
 
@@ -249,9 +249,9 @@ Ottiene un :ref:`Dictionary<class_Dictionary>` contenente i valori predefiniti p
 
 |void| **_on_before_instance_created**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_before_instance_created>`
 
-Called before the OpenXR instance is created.
+Chiamato prima della creazione dell'istanza OpenXR.
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *before* OpenXR becomes involved in rendering, so it is safe to write to data that will be used by the render thread.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread principale, tuttavia, sarà chiamato *prima* che OpenXR inizia a coinvolgersi nel rendering, quindi è sicuro scrivere sui dati che saranno utilizzati dal thread di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -275,9 +275,9 @@ Chiamato quando c'è un evento OpenXR da elaborare. Se implementato, restituisci
 
 |void| **_on_instance_created**\ (\ instance\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_instance_created>`
 
-Called right after the OpenXR instance is created.
+Chiamato subito dopo la creazione dell'istanza OpenXR.
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *before* OpenXR becomes involved in rendering, so it is safe to write to data that will be used by the render thread.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread principale, tuttavia, sarà chiamato *prima* che OpenXR inizia a coinvolgersi nel rendering, quindi è sicuro scrivere sui dati che saranno utilizzati dal thread di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -289,9 +289,9 @@ Called right after the OpenXR instance is created.
 
 |void| **_on_instance_destroyed**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_instance_destroyed>`
 
-Called right before the OpenXR instance is destroyed.
+Chiamato subito prima che l'istanza OpenXR venga distrutta.
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *after* OpenXR is done being involved in rendering, so it is safe to write to data that was used by the render thread.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread principale, tuttavia, sarà chiamato *dopo* che OpenXR ha finito di coinvolgersi nel rendering, quindi è sicuro scrivere sui dati che sono stati utilizzati dal thread di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -303,9 +303,9 @@ Called right before the OpenXR instance is destroyed.
 
 |void| **_on_main_swapchains_created**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_main_swapchains_created>`
 
-Called right after the main swapchains are (re)created.
+Chiamato subito dopo aver (ri)creato le swapchain principali.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -317,7 +317,7 @@ Called right after the main swapchains are (re)created.
 
 |void| **_on_post_draw_viewport**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_post_draw_viewport>`
 
-Chiamato subito dopo il rendering della viewport specificata.
+Chiamato subito dopo che la viewport specificata venga renderizzata.
 
 \ **Nota:** I comandi di disegno potrebbero essere solo in coda a questo punto, non eseguiti.
 
@@ -333,9 +333,9 @@ Chiamato subito dopo il rendering della viewport specificata.
 
 |void| **_on_pre_draw_viewport**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_pre_draw_viewport>`
 
-Called right before the given viewport is rendered.
+Chiamato subito prima che la viewport specificata venga renderizzata.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -387,9 +387,9 @@ Le estensioni devono anche fornire metadati a prescindere dal fatto che siano su
 
 |void| **_on_session_created**\ (\ session\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_session_created>`
 
-Called right after the OpenXR session is created.
+Chiamato subito dopo la creazione della sessione OpenXR.
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *before* OpenXR becomes involved in rendering, so it is safe to write to data that will be used by the render thread.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread principale, tuttavia, sarà chiamato *prima* che OpenXR inizia a coinvolgersi nel rendering, quindi è sicuro scrivere sui dati che saranno utilizzati dal thread di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -401,9 +401,9 @@ Called right after the OpenXR session is created.
 
 |void| **_on_session_destroyed**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_session_destroyed>`
 
-Called right before the OpenXR session is destroyed.
+Chiamato subito prima che la sessione OpenXR venga distrutta.
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *after* OpenXR is done being involved in rendering, so it is safe to write to data that was used by the render thread.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread principale, tuttavia, sarà chiamato *dopo* che OpenXR ha finito di coinvolgersi nel rendering, quindi è sicuro scrivere sui dati che sono stati utilizzati dal thread di rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -537,7 +537,7 @@ Chiamato quando un livello di composizione creato tramite :ref:`OpenXRCompositio
 
 |void| **_prepare_view_configuration**\ (\ view_count\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__prepare_view_configuration>`
 
-Called before :ref:`_set_view_configuration_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_view_configuration_and_get_next_pointer>` to allow the extension to reserve data for the given number of views.
+Chiamato prima di :ref:`_set_view_configuration_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_view_configuration_and_get_next_pointer>` per consentire all'estensione di riservare i dati per il numero specificato di viste.
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +549,7 @@ Called before :ref:`_set_view_configuration_and_get_next_pointer()<class_OpenXRE
 
 |void| **_print_view_configuration_info**\ (\ view\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__print_view_configuration_info>`
 
-Called to allow an extension to print additional information about its view configuration, if applicable. This will only be called if verbose output is enabled.
+Viene chiamato per consentire a un'estensione di stampare informazioni in più sulla sua configurazione di vista, se applicabile. Verrà chiamata solo se l'output dettagliato è abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -561,7 +561,7 @@ Called to allow an extension to print additional information about its view conf
 
 :ref:`int<class_int>` **_set_android_surface_swapchain_create_info_and_get_next_pointer**\ (\ property_values\: :ref:`Dictionary<class_Dictionary>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_android_surface_swapchain_create_info_and_get_next_pointer>`
 
-Aggiunge ulteriori strutture dati alle swapchain di superfice di Android create da :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
+Aggiungi ulteriori strutture dati alle swapchain di superfice di Android create da :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
 
 \ ``property_values`` contiene i valori delle proprietà restituite da :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
 
@@ -577,7 +577,7 @@ Aggiunge ulteriori strutture dati alle swapchain di superfice di Android create 
 
 :ref:`int<class_int>` **_set_frame_end_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_frame_end_info_and_get_next_pointer>`
 
-Aggiunge ulteriori strutture dati a ``XrFrameEndInfo``.
+Aggiungi ulteriori strutture dati a ``XrFrameEndInfo``.
 
 Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
 
@@ -593,7 +593,7 @@ Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`O
 
 :ref:`int<class_int>` **_set_frame_wait_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_frame_wait_info_and_get_next_pointer>`
 
-Aggiunge ulteriori strutture dati a ``XrFrameWaitInfo``.
+Aggiungi ulteriori strutture dati a ``XrFrameWaitInfo``.
 
 Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
 
@@ -609,7 +609,7 @@ Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`O
 
 :ref:`int<class_int>` **_set_hand_joint_locations_and_get_next_pointer**\ (\ hand_index\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_hand_joint_locations_and_get_next_pointer>`
 
-Add additional data structures when each hand tracker is created.
+Aggiungi ulteriori strutture dati quando ogni tracciatore di mano viene creato.
 
 .. rst-class:: classref-item-separator
 
@@ -621,7 +621,7 @@ Add additional data structures when each hand tracker is created.
 
 :ref:`int<class_int>` **_set_instance_create_info_and_get_next_pointer**\ (\ xr_version\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_instance_create_info_and_get_next_pointer>`
 
-Add additional data structures when the OpenXR instance is created. ``xr_version`` specifies the OpenXR version we're instantiating.
+Aggiungi ulteriori strutture dati quando l'istanza di OpenXR viene creata. ``xr_version`` specifica la versione di OpenXR che stiamo istanziando.
 
 .. rst-class:: classref-item-separator
 
@@ -633,9 +633,9 @@ Add additional data structures when the OpenXR instance is created. ``xr_version
 
 :ref:`int<class_int>` **_set_projection_layer_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_projection_layer_and_get_next_pointer>`
 
-Adds additional data structures to ``XrCompositionLayerProjection``.
+Aggiungi ulteriori strutture dati a ``XrCompositionLayerProjection``.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_projection_layer_extension()<class_OpenXRAPIExtension_method_register_projection_layer_extension>`.
+Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`OpenXRAPIExtension.register_projection_layer_extension()<class_OpenXRAPIExtension_method_register_projection_layer_extension>`.
 
 .. rst-class:: classref-item-separator
 
@@ -647,9 +647,9 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_set_projection_views_and_get_next_pointer**\ (\ view_index\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_projection_views_and_get_next_pointer>`
 
-Add additional data structures to the projection view of the given ``view_index``.
+Aggiungi ulteriori strutture dati alla vista di proiezione all'indice ``view_index``.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Nota:** Questo metodo virtuale sarà chiamato sul thread di rendering. Inoltre, i dati restituiti saranno utilizzati poco dopo la chiamata di questo metodo, quindi devono rimanere validi fino alla prossima volta che :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` viene eseguito.
 
 .. rst-class:: classref-item-separator
 
@@ -661,7 +661,7 @@ Add additional data structures to the projection view of the given ``view_index`
 
 :ref:`int<class_int>` **_set_reference_space_create_info_and_get_next_pointer**\ (\ reference_space_type\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_reference_space_create_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrReferenceSpaceCreateInfo``.
+Aggiungi ulteriori strutture dati a ``XrReferenceSpaceCreateInfo``.
 
 .. rst-class:: classref-item-separator
 
@@ -673,7 +673,7 @@ Add additional data structures to ``XrReferenceSpaceCreateInfo``.
 
 :ref:`int<class_int>` **_set_session_create_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_session_create_and_get_next_pointer>`
 
-Add additional data structures when the OpenXR session is created.
+Aggiungi ulteriori strutture dati quando la sessione OpenXR viene creata.
 
 .. rst-class:: classref-item-separator
 
@@ -685,7 +685,7 @@ Add additional data structures when the OpenXR session is created.
 
 :ref:`int<class_int>` **_set_swapchain_create_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_swapchain_create_info_and_get_next_pointer>`
 
-Add additional data structures when creating OpenXR swapchains.
+Aggiungi ulteriori strutture dati quando le swapchain OpenXR vengono create.
 
 .. rst-class:: classref-item-separator
 
@@ -697,7 +697,7 @@ Add additional data structures when creating OpenXR swapchains.
 
 :ref:`int<class_int>` **_set_system_properties_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_system_properties_and_get_next_pointer>`
 
-Add additional data structures when querying OpenXR system abilities.
+Aggiungi ulteriori strutture dati quando le capacità OpenXR del sistema vengono interrogate.
 
 .. rst-class:: classref-item-separator
 
@@ -709,7 +709,7 @@ Add additional data structures when querying OpenXR system abilities.
 
 :ref:`int<class_int>` **_set_view_configuration_and_get_next_pointer**\ (\ view\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_view_configuration_and_get_next_pointer>`
 
-Add additional data structures when querying OpenXR view configuration.
+Aggiungi ulteriori strutture dati quando la configurazione di vista OpenXR viene interrogata.
 
 .. rst-class:: classref-item-separator
 
@@ -721,7 +721,7 @@ Add additional data structures when querying OpenXR view configuration.
 
 :ref:`int<class_int>` **_set_view_locate_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_view_locate_info_and_get_next_pointer>`
 
-Aggiunge ulteriori strutture dati a ``XrViewLocateInfo``.
+Aggiungi ulteriori strutture dati a ``XrViewLocateInfo``.
 
 Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
 
@@ -737,7 +737,7 @@ Sarà chiamato solo se l'estensione si è precedentemente registrata con :ref:`O
 
 :ref:`int<class_int>` **_set_viewport_composition_layer_and_get_next_pointer**\ (\ layer\: ``const void*``, property_values\: :ref:`Dictionary<class_Dictionary>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_viewport_composition_layer_and_get_next_pointer>`
 
-Aggiunge ulteriori strutture dati ai livelli di composizione creati da :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
+Aggiungi ulteriori strutture dati ai livelli di composizione creati da :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
 
 \ ``property_values`` contiene i valori delle proprietà restituite da :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
 
@@ -775,7 +775,7 @@ Registra l'estensione. Ciò dovrebbe avvenire a livello di inizializzazione prin
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

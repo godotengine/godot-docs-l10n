@@ -95,7 +95,7 @@ L'animazione è riprodotta una sola volta e si ferma quando raggiunge la fine, o
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_LINEAR** = ``1``
 
-The animation restarts from the beginning when it reaches the end, or from the end if played in reverse, repeating continuously.
+L'animazione riparte dall'inizio quando raggiunge la fine, oppure dalla fine se riprodotta al contrario, ripetendosi continuamente.
 
 .. _class_SpriteFrames_constant_LOOP_PINGPONG:
 
@@ -103,9 +103,9 @@ The animation restarts from the beginning when it reaches the end, or from the e
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_PINGPONG** = ``2``
 
-The animation alternates direction each time it reaches the end or start, playing forward and then in reverse repeatedly.
+L'animazione alterna la sua direzione ogni volta che raggiunge la fine o l'inizio, riproducendosi ripetutamente in avanti e poi all'indietro.
 
-\ **Note:** Both :ref:`AnimatedSprite2D<class_AnimatedSprite2D>` and :ref:`AnimatedSprite3D<class_AnimatedSprite3D>` play the first/last frame for its duration only once at each end of the animation loop (instead of twice, once per forward/backward animation direction).
+\ **Nota:** Entrambi :ref:`AnimatedSprite2D<class_AnimatedSprite2D>` e :ref:`AnimatedSprite3D<class_AnimatedSprite3D>` riproducono il primo/ultimo fotogramma per tutta la sua durata una sola volta a ciascuna estremità del ciclo di animazione (anziché due, una volta per ogni direzione di animazione, avanti o indietro).
 
 .. rst-class:: classref-section-separator
 
@@ -196,7 +196,7 @@ Restituisce ``true`` se ``get_animation_loop_mode(anim) == LOOP_LINEAR``. Altrim
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **get_animation_loop_mode**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_SpriteFrames_method_get_animation_loop_mode>`
 
-Returns the loop mode for the ``anim`` animation.
+Restituisce la modalità di ripetizione per l'animazione ``anim``.
 
 .. rst-class:: classref-item-separator
 
@@ -324,9 +324,9 @@ Cambia il nome dell'animazione ``anim`` in ``newname``.
 
 **Deprecato:** Use :ref:`set_animation_loop_mode()<class_SpriteFrames_method_set_animation_loop_mode>` instead.
 
-If ``loop`` is ``false`` equivalent to ``set_animation_loop_mode(LOOP_NONE)``.
+Se ``loop`` è ``false``, equivale a ``set_animation_loop_mode(LOOP_NONE)``.
 
-If ``loop`` is ``true`` equivalent to ``set_animation_loop_mode(LOOP_LINEAR)``.
+Se ``loop`` è ``true``, equivale a ``set_animation_loop_mode(LOOP_LINEAR)``.
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ If ``loop`` is ``true`` equivalent to ``set_animation_loop_mode(LOOP_LINEAR)``.
 
 |void| **set_animation_loop_mode**\ (\ anim\: :ref:`StringName<class_StringName>`, loop_mode\: :ref:`LoopMode<enum_SpriteFrames_LoopMode>`\ ) :ref:`🔗<class_SpriteFrames_method_set_animation_loop_mode>`
 
-Sets the ``loop_mode`` for the ``anim`` animation.
+Imposta la modalità di ripetizione per l'animazione ``anim`` su ``loop_mode``.
 
 .. rst-class:: classref-item-separator
 
@@ -368,7 +368,7 @@ Imposta la ``texture`` e la durata (``duration``) del fotogramma all'indice ``id
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

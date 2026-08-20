@@ -101,11 +101,11 @@ Se ``true``, inserisce pixel dello stesso colore circostante in transizione dall
 
 :ref:`bool<class_bool>` **premult_alpha** = ``false`` :ref:`🔗<class_ResourceImporterSVG_property_premult_alpha>`
 
-An alternative to fixing darkened borders with :ref:`fix_alpha_border<class_ResourceImporterSVG_property_fix_alpha_border>` is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. A premultiplied alpha texture requires specific materials to be displayed correctly:
+Un'alternativa per correggere i bordi scuriti con :ref:`fix_alpha_border<class_ResourceImporterSVG_property_fix_alpha_border>` è quella di usare un alfa premoltiplicato. Abilitando questa opzione, la texture sarà convertita in questo formato. Una texture con alfa premoltiplicato richiede materiali specifici per essere visualizzata correttamente:
 
-- In 2D, a :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` will need to be created and configured to use the :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on :ref:`CanvasItem<class_CanvasItem>`\ s that use this texture. In custom ``canvas_item`` shaders, ``render_mode blend_premul_alpha;`` should be used.
+- In 2D, sarà necessario creare un :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` e configurarlo per usare la modalità di fusione :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` sui :ref:`CanvasItem<class_CanvasItem>` che usano questa texture. Negli shader ``canvas_item`` personalizzati, si dovrebbe usare ``render_mode blend_premul_alpha;``.
 
-- In 3D, a :ref:`BaseMaterial3D<class_BaseMaterial3D>` will need to be created and configured to use the :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on materials that use this texture. In custom ``spatial`` shaders, ``render_mode blend_premul_alpha;`` should be used.
+- In 3D, sarà necessario creare un :ref:`BaseMaterial3D<class_BaseMaterial3D>` e configurarlo per usare la modalità di fusione :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` sui materiali che usano questa texture. Negli shader ``spatial`` personalizzati, si dovrebbe usare ``render_mode blend_premul_alpha;``.
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +123,7 @@ Sostituisce la saturazione della texture.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

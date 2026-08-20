@@ -7,7 +7,7 @@ LimitAngularVelocityModifier3D
 
 **Eredita:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Limit bone rotation angular velocity.
+Limita la velocità angolare di rotazione delle ossa.
 
 .. rst-class:: classref-introduction-group
 
@@ -88,7 +88,7 @@ Descrizioni delle proprietà
 - |void| **set_chain_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_chain_count**\ (\ )
 
-The number of chains.
+Il numero di catene.
 
 .. rst-class:: classref-item-separator
 
@@ -105,9 +105,9 @@ The number of chains.
 - |void| **set_exclude**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_exclude**\ (\ )
 
-If ``true``, the modifier processes bones not included in the bone list.
+Se ``true``, il modificatore elabora le ossa non incluse nell'elenco delle ossa.
 
-If ``false``, the bones processed by the modifier are equal to the bone list.
+Se ``false``, le ossa elaborate dal modificatore sono solo quelle presenti nell'elenco delle ossa.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ If ``false``, the bones processed by the modifier are equal to the bone list.
 
 :ref:`int<class_int>` **joint_count** = ``0`` :ref:`🔗<class_LimitAngularVelocityModifier3D_property_joint_count>`
 
-The number of joints in the list which created by chains dynamically.
+Il numero di articolazioni nell'elenco creati dinamicamente per le catene.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ The number of joints in the list which created by chains dynamically.
 - |void| **set_max_angular_velocity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_angular_velocity**\ (\ )
 
-The maximum angular velocity per second.
+La velocità angolare massima al secondo.
 
 .. rst-class:: classref-section-separator
 
@@ -153,7 +153,7 @@ Descrizioni dei metodi
 
 |void| **clear_chains**\ (\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_clear_chains>`
 
-Clear all chains.
+Cancella tutte le catene.
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ Restituisce il nome dell'osso radice della catena d'ossa.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_reset>`
 
-Sets the reference pose for angle comparison to the current pose with the influence of constraints removed. This function is automatically triggered when joints change or upon activation.
+Imposta la posa di riferimento (per il confronto angolare) alla posa attuale, eliminando l'influenza dei vincoli. Questa funzione si attiva automaticamente quando cambiano le articolazioni o all'attivazione.
 
 .. rst-class:: classref-item-separator
 
@@ -237,9 +237,9 @@ Imposta l'indice dell'osso finale della catena d'ossa.
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+Imposta il nome dell'osso finale della catena d'ossa.
 
-\ **Note:** End bone must be the root bone or a child of the root bone.
+\ **Nota:** L'osso finale deve essere l'osso radice o un figlio dell'osso radice.
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ Imposta il nome dell'osso radice della catena d'ossa.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

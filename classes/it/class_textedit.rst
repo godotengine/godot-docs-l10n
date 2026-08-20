@@ -19,7 +19,7 @@ Un editor di testo multilinea.
 Descrizione
 ----------------------
 
-Un editor di testo multilinea. Offre anche funzionalità limitate per la modifica del codice, come il supporto per l'evidenziazione della sintassi. Per funzionalità più avanzate per la modifica del codice, consultare :ref:`CodeEdit<class_CodeEdit>`.
+Un editor di testo multilinea. Offre anche funzionalità limitate per la modifica del codice, come il supporto per l'evidenziazione della sintassi. Per funzionalità più avanzate per la modifica del codice, consulta :ref:`CodeEdit<class_CodeEdit>`.
 
 Durante l'inserimento del testo, è possibile inserire caratteri speciali attraverso i codici alt Unicode, OEM o Windows:
 
@@ -1503,7 +1503,7 @@ Se ``true``, tutte le righe avvolte vengono rientrate della stessa quantità del
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Codice lingua utilizzato per gli algoritmi di interruzione di riga e di formazione del testo. Se lasciato vuoto, è utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -1590,7 +1590,7 @@ Il testo visualizzato quando il **TextEdit** è vuoto. **Non** è il valore pred
 - |void| **set_fit_content_height_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_height_enabled**\ (\ )
 
-If ``true``, **TextEdit** fits its minimum height to the number of visible lines instead of scrolling vertically. If a maximum height is set (for example via :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) and content exceeds it, a vertical scrollbar is shown.
+Se ``true``, **TextEdit** adatta la sua altezza minima al numero di righe visibili invece di scorrere verticalmente. Se un'altezza massima è impostata (ad esempio tramite :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) e il contenuto la supera, appare una barra di scorrimento verticale.
 
 .. rst-class:: classref-item-separator
 
@@ -1607,7 +1607,7 @@ If ``true``, **TextEdit** fits its minimum height to the number of visible lines
 - |void| **set_fit_content_width_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_width_enabled**\ (\ )
 
-If ``true``, **TextEdit** fits its minimum width to the widest line instead of scrolling horizontally. If a maximum width is set (for example via :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) and content exceeds it, a horizontal scrollbar is shown.
+Se ``true``, **TextEdit** adatta la sua larghezza minima alla riga più larga invece di scorrere orizzontalmente. Se una larghezza massima è impostata (ad esempio tramite :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`) e il contenuto la supera, appare una barra di scorrimento orizzontale.
 
 .. rst-class:: classref-item-separator
 
@@ -3332,7 +3332,7 @@ Restituisce ``true`` se la barra laterale all'indice specificato sulla riga spec
 
 :ref:`bool<class_bool>` **is_line_in_viewport**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_is_line_in_viewport>`
 
-Returns ``true`` if the given line is within the scope of the scrollable area of the viewport.
+Restituisce ``true`` se la riga specificata si trova entro l'area scorrevole della viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -4228,7 +4228,7 @@ La dimensione del contorno del testo.
 
 :ref:`int<class_int>` **wrap_offset** = ``10`` :ref:`🔗<class_TextEdit_theme_constant_wrap_offset>`
 
-Sets an additional margin for line wrapping width.
+Imposta un ulteriore margine per la larghezza dell'avvolgimento delle righe.
 
 .. rst-class:: classref-item-separator
 
@@ -4318,7 +4318,7 @@ Imposta lo :ref:`StyleBox<class_StyleBox>` di questo **TextEdit** quando :ref:`e
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

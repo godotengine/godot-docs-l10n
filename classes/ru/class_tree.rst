@@ -599,9 +599,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_DISABLED** = ``0``
 
-Disables all drop sections.
+Отключает все разделы сброса.
 
-\ **Note:** This is the default flag, it has no effect when combined with other flags.
+\ **Примечание:** Это флаг по умолчанию, он не действует в сочетании с другими флагами.
 
 .. _class_Tree_constant_DROP_MODE_ON_ITEM:
 
@@ -609,9 +609,9 @@ Disables all drop sections.
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_ON_ITEM** = ``1``
 
-Enables the "on item" drop section. This drop section covers the entire item.
+Включает раздел сброса «на элементе». Этот раздел охватывает весь элемент.
 
-When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, this drop section halves in height and stays centered vertically.
+В сочетании с :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>` этот раздел уменьшается по высоте вдвое и остаётся центрированным по вертикали.
 
 .. _class_Tree_constant_DROP_MODE_INBETWEEN:
 
@@ -619,9 +619,9 @@ When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBET
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_INBETWEEN** = ``2``
 
-Enables "above item" and "below item" drop sections. The "above item" drop section covers the top half of the item, while the "below item" drop section covers the bottom half, and extends downward to the left of any children.
+Включает разделы сброса «над элементом» и «под элементом». Раздел «над элементом» охватывает верхнюю половину элемента, а раздел «под элементом» охватывает нижнюю половину и расширяется вниз слева от любых дочерних элементов.
 
-When combined with :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, these drop sections halve in height and stay at the top and bottom respectively.
+В сочетании с :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>` эти разделы уменьшаются по высоте вдвое и остаются сверху и снизу соответственно.
 
 .. rst-class:: classref-item-separator
 
@@ -770,9 +770,9 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 - |void| **set_columns**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_columns**\ (\ )
 
-The number of columns.
+Число столбцов.
 
-Prints an error and does not allow setting the columns during mouse selection.
+Печатает ошибку в консоли и не разрешает изменять столбцы во время выбора их мышкой.
 
 .. rst-class:: classref-item-separator
 
@@ -961,9 +961,9 @@ Prints an error and does not allow setting the columns during mouse selection.
 
 |void| **clear**\ (\ ) :ref:`🔗<class_Tree_method_clear>`
 
-Clears the tree. This removes all items.
+Убирает дерево объектов. Это убирает все предметы.
 
-Prints an error and does not allow clearing the tree if called during mouse selection.
+Печатает ошибку в консоли и не разрешает убирать дерево от объектов если вызов происходит во время выбора мышкой.
 
 .. rst-class:: classref-item-separator
 
@@ -975,13 +975,13 @@ Prints an error and does not allow clearing the tree if called during mouse sele
 
 :ref:`TreeItem<class_TreeItem>` **create_item**\ (\ parent\: :ref:`TreeItem<class_TreeItem>` = null, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_Tree_method_create_item>`
 
-Creates an item in the tree and adds it as a child of ``parent``, which can be either a valid :ref:`TreeItem<class_TreeItem>` or ``null``.
+Создает элемент в дереве и добавляет его как дочерний элемент ``parent``, который может быть либо допустимым :ref:`TreeItem<class_TreeItem>`, либо ``null``.
 
-If ``parent`` is ``null``, the root item will be the parent, or the new item will be the root itself if the tree is empty.
+Если ``parent`` равен ``null``, корневой элемент будет родителем, или новый элемент будет сам корнем, если дерево пустое.
 
-The new item will be the ``index``-th child of parent, or it will be the last child if there are not enough siblings.
+Новый элемент будет ``index``-ым дочерним элементом parent, или он будет последним дочерним элементом, если не хватает родственных элементов.
 
-Prints an error and returns ``null`` if called during mouse selection, or if the ``parent`` does not belong to this tree.
+Выводит ошибку и возвращает ``null``, если вызвано во время выбора мышью, или если ``parent`` не принадлежит этому дереву.
 
 .. rst-class:: classref-item-separator
 
@@ -1145,9 +1145,9 @@ Prints an error and returns ``null`` if called during mouse selection, or if the
 
 :ref:`RID<class_RID>` **get_custom_drawing_canvas_item**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_custom_drawing_canvas_item>`
 
-Returns the internal canvas item designated for custom drawing. See :ref:`TreeItem.set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>`.
+Возвращает внутренний элемент холста, предназначенный для пользовательской отрисовки. См. :ref:`TreeItem.set_custom_draw_callback()<class_TreeItem_method_set_custom_draw_callback>`.
 
-\ **Note:** This canvas item clears automatically on each Tree draw call.
+\ **Примечание:** Этот элемент холста автоматически очищается при каждом вызове отрисовки дерева.
 
 .. rst-class:: classref-item-separator
 
@@ -1171,19 +1171,19 @@ Returns the internal canvas item designated for custom drawing. See :ref:`TreeIt
 
 :ref:`int<class_int>` **get_drop_section_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_drop_section_at_position>`
 
-Returns the drop section at ``position``, as permitted by enabled :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
+Возвращает раздел сброса в позиции ``position``, разрешённый включенными :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
 
-- ``-1`` if the position is **above** the item. Typically used to insert as the item's previous sibling.
+- ``-1``, если позиция **над** элементом. Обычно используется для вставки как предыдущего родственного элемента.
 
-- ``0`` if the position is **on** the item. Typically used to insert as the item's last child.
+- ``0``, если позиция **на** элементе. Обычно используется для вставки как последнего дочернего элемента.
 
-- ``1`` if the position is **below** the item, when the item has no children. Typically used to insert as the item's next sibling. If the item *does* have children, this section is still reachable by hovering to the left of the item's collapse arrow, and below.
+- ``1``, если позиция **под** элементом, когда у элемента нет дочерних элементов. Обычно используется для вставки как следующего родственного элемента. Если у элемента *есть* дочерние элементы, этот раздел всё ещё достижим при наведении слева от стрелки свёртывания элемента и ниже.
 
-- ``2`` if the position is **below** the item, when the item has children. Typically used to insert as the item's first child.
+- ``2``, если позиция **под** элементом, когда у элемента есть дочерние элементы. Обычно используется для вставки как первого дочернего элемента.
 
-- ``-100`` if the position is not over any item, or no :ref:`DropModeFlags<enum_Tree_DropModeFlags>` are set.
+- ``-100``, если позиция не находится ни над одним элементом или не установлены :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
 
-See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` for a description of each drop region. To get the item which the returned drop section refers to, use :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
+См. :ref:`DropModeFlags<enum_Tree_DropModeFlags>` для описания каждой области сброса. Чтобы получить элемент, к которому относится возвращаемый раздел сброса, используйте :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1535,7 +1535,7 @@ See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` for a description of each drop
 
 :ref:`Color<class_Color>` **drop_on_item_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Tree_theme_color_drop_on_item_color>`
 
-:ref:`Color<class_Color>` used to draw the highlight outline when dragging items that can only be dropped "on" other items.
+:ref:`Color<class_Color>`, используемый для рисования контура подсветки при перетаскивании элементов, которые можно сбросить только «на» другие элементы.
 
 .. rst-class:: classref-item-separator
 

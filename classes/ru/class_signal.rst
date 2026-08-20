@@ -12,9 +12,9 @@ Signal
 Описание
 ----------------
 
-**Signal** is a built-in :ref:`Variant<class_Variant>` type that represents a signal of an :ref:`Object<class_Object>` instance. Like all :ref:`Variant<class_Variant>` types, it can be stored in variables and passed to functions. Signals allow all connected :ref:`Callable<class_Callable>`\ s (and by extension their respective objects) to listen and react to events, without directly referencing one another. This keeps the code flexible and easier to manage. You can check whether an :ref:`Object<class_Object>` has a given signal name using :ref:`Object.has_signal()<class_Object_method_has_signal>`.
+**Signal** — это встроенный тип :ref:`Variant<class_Variant>`, который представляет сигнал экземпляра :ref:`Object<class_Object>`. Как и все типы :ref:`Variant<class_Variant>`, он может храниться в переменных и передаваться в функции. Сигналы позволяют всем подключенным :ref:`Callable<class_Callable>` (и соответственно, их соответствующим объектам) прослушивать и реагировать на события, не ссылаясь напрямую друг на друга. Это сохраняет код гибким и простым в управлении. Вы можете проверить, имеет ли :ref:`Object<class_Object>` заданное имя сигнала, используя :ref:`Object.has_signal()<class_Object_method_has_signal>`.
 
-In GDScript, signals can be declared with the ``signal`` keyword. In C#, you may use the ``[Signal]`` attribute on a delegate.
+В GDScript сигналы можно объявлять с помощью ключевого слова ``signal``. В C# вы можете использовать атрибут ``[Signal]`` для делегата.
 
 
 .. tabs::
@@ -23,8 +23,8 @@ In GDScript, signals can be declared with the ``signal`` keyword. In C#, you may
 
     signal attacked
 
-    # Additional arguments may be declared.
-    # These arguments must be passed when the signal is emitted.
+    # Могут быть объявлены дополнительные аргументы.
+    # Эти аргументы должны быть переданы при отправке сигнала.
     signal item_dropped(item_name, amount)
 
  .. code-tab:: csharp
@@ -32,14 +32,14 @@ In GDScript, signals can be declared with the ``signal`` keyword. In C#, you may
     [Signal]
     delegate void AttackedEventHandler();
 
-    // Additional arguments may be declared.
-    // These arguments must be passed when the signal is emitted.
+    // Могут быть объявлены дополнительные аргументы.
+    // Эти аргументы должны быть переданы при отправке сигнала.
     [Signal]
     delegate void ItemDroppedEventHandler(string itemName, int amount);
 
 
 
-Connecting signals is one of the most common operations in Godot and the API gives many options to do so, which are described further down. The code block below shows the recommended approach.
+Подключение сигналов — одна из самых распространенных операций в Godot, и API предоставляет множество вариантов для этого, которые описаны ниже. Блок кода ниже показывает рекомендуемый подход.
 
 
 .. tabs::
@@ -48,18 +48,18 @@ Connecting signals is one of the most common operations in Godot and the API giv
 
     func _ready():
         var button = Button.new()
-        # `button_down` here is a Signal Variant type. We therefore call the Signal.connect() method, not Object.connect().
-        # See discussion below for a more in-depth overview of the API.
+        # `button_down` здесь — тип Signal Variant. Поэтому мы вызываем метод Signal.connect(), а не Object.connect().
+        # Более подробный обзор API см. в обсуждении ниже.
         button.button_down.connect(_on_button_down)
 
-        # This assumes that a `Player` class exists, which defines a `hit` signal.
+        # Это предполагает, что существует класс `Player`, который определяет сигнал `hit`.
         var player = Player.new()
-        # We use Signal.connect() again, and we also use the Callable.bind() method,
-        # which returns a new Callable with the parameter binds.
+        # Мы снова используем Signal.connect(), а также метод Callable.bind(),
+        # который возвращает новый Callable с привязанными параметрами.
         player.hit.connect(_on_player_hit.bind("sword", 100))
 
     func _on_button_down():
-        print("Button down!")
+        print("Кнопка нажата!")
 
     func _on_player_hit(weapon_type, damage):
         print("Hit with weapon %s for %d damage." % [weapon_type, damage])
@@ -69,18 +69,18 @@ Connecting signals is one of the most common operations in Godot and the API giv
     public override void _Ready()
     {
         var button = new Button();
-        // C# supports passing signals as events, so we can use this idiomatic construct:
+        // C# поддерживает передачу сигналов как событий, поэтому мы можем использовать следующую идиоматическую конструкцию:
         button.ButtonDown += OnButtonDown;
 
-        // This assumes that a `Player` class exists, which defines a `Hit` signal.
+        // Это предполагает, что существует класс `Player`, который определяет сигнал `Hit`.
         var player = new Player();
-        // We can use lambdas when we need to bind additional parameters.
+        // Мы можем использовать лямбда-выражения, когда нам нужно привязать дополнительные параметры.
         player.Hit += () => OnPlayerHit("sword", 100);
     }
 
     private void OnButtonDown()
     {
-        GD.Print("Button down!");
+        GD.Print("Кнопка нажата!");
     }
 
     private void OnPlayerHit(string weaponType, int damage)
@@ -90,9 +90,9 @@ Connecting signals is one of the most common operations in Godot and the API giv
 
 
 
-\ ``Object.connect()`` **or** ``Signal.connect()``\ **?**\ 
+\ **\ ``Object.connect()`` или ``Signal.connect()``?**\ 
 
-As seen above, the recommended method to connect signals is not :ref:`Object.connect()<class_Object_method_connect>`. The code block below shows the four options for connecting signals, using either this legacy method or the recommended :ref:`connect()<class_Signal_method_connect>`, and using either an implicit :ref:`Callable<class_Callable>` or a manually defined one.
+Как видно выше, рекомендуемый метод для подключения сигналов — не :ref:`Object.connect()<class_Object_method_connect>`. В блоке кода ниже показаны четыре варианта подключения сигналов с использованием либо этого устаревшего метода, либо рекомендуемого :ref:`connect()<class_Signal_method_connect>`, а также с использованием либо неявного :ref:`Callable<class_Callable>`, либо определенного вручную.
 
 
 .. tabs::
@@ -101,45 +101,45 @@ As seen above, the recommended method to connect signals is not :ref:`Object.con
 
     func _ready():
         var button = Button.new()
-        # Option 1: Object.connect() with an implicit Callable for the defined function.
+        # Вариант 1: Object.connect() с неявным вызовом для определенной функции.
         button.connect("button_down", _on_button_down)
-        # Option 2: Object.connect() with a constructed Callable using a target object and method name.
+        # Вариант 2: Object.connect() с созданным Callable, использующим целевое имя объекта и метода.
         button.connect("button_down", Callable(self, "_on_button_down"))
-        # Option 3: Signal.connect() with an implicit Callable for the defined function.
+        # Вариант 3: Signal.connect() с неявным вызовом для определенной функции.
         button.button_down.connect(_on_button_down)
-        # Option 4: Signal.connect() with a constructed Callable using a target object and method name.
+        # Вариант 4: Signal.connect() с созданным Callable, использующим целевое имя объекта и метода.
         button.button_down.connect(Callable(self, "_on_button_down"))
 
     func _on_button_down():
-        print("Button down!")
+        print("Кнопка нажата!")
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
         var button = new Button();
-        // Option 1: In C#, we can use signals as events and connect with this idiomatic syntax:
+        // Вариант 1: В C# мы можем использовать сигналы как события и подключаться с помощью следующего идиоматического синтаксиса:
         button.ButtonDown += OnButtonDown;
-        // Option 2: GodotObject.Connect() with a constructed Callable from a method group.
+        // Вариант 2: GodotObject.Connect() с созданным Callable из группы методов.
         button.Connect(Button.SignalName.ButtonDown, Callable.From(OnButtonDown));
-        // Option 3: GodotObject.Connect() with a constructed Callable using a target object and method name.
+        // Вариант 3: GodotObject.Connect() с созданным Callable, использующим целевое имя объекта и метода.
         button.Connect(Button.SignalName.ButtonDown, new Callable(this, MethodName.OnButtonDown));
     }
 
     private void OnButtonDown()
     {
-        GD.Print("Button down!");
+        GD.Print("Кнопка нажата!");
     }
 
 
 
-While all options have the same outcome (``button``'s :ref:`BaseButton.button_down<class_BaseButton_signal_button_down>` signal will be connected to ``_on_button_down``), **option 3** offers the best validation: it will print a compile-time error if either the ``button_down`` **Signal** or the ``_on_button_down`` :ref:`Callable<class_Callable>` are not defined. On the other hand, **option 2** only relies on string names and will only be able to validate either names at runtime: it will generate an error at runtime if ``"button_down"`` is not a signal, or if ``"_on_button_down"`` is not a method in the object ``self``. The main reason for using options 1, 2, or 4 would be if you actually need to use strings (e.g. to connect signals programmatically based on strings read from a configuration file). Otherwise, option 3 is the recommended (and fastest) method.
+Хотя все варианты имеют одинаковый результат (:ref:`BaseButton.button_down<class_BaseButton_signal_button_down>` ``button`` будет подключен к ``_on_button_down``), **вариант 3** предлагает лучшую проверку: он выведет ошибку времени компиляции, если ``button_down`` **Signal** или ``_on_button_down`` :ref:`Callable<class_Callable>` не определены. С другой стороны, **вариант 2** полагается только на имена строк и сможет проверить только одно из имен во время выполнения: он выдаст ошибку во время выполнения, если ``"button_down"`` не является сигналом или если ``"_on_button_down"`` не является методом в объекте ``self``. Основная причина использования опций 1, 2 или 4 — если вам действительно нужно использовать строки (например, для программного подключения сигналов на основе строк, считанных из файла конфигурации). В противном случае, опция 3 является рекомендуемым (и самым быстрым) методом.
 
-\ **Binding and passing parameters:**\ 
+\ **Связывание и передача параметров:**\ 
 
-The syntax to bind parameters is through :ref:`Callable.bind()<class_Callable_method_bind>`, which returns a copy of the :ref:`Callable<class_Callable>` with its parameters bound.
+Синтаксис для связывания параметров осуществляется через :ref:`Callable.bind()<class_Callable_method_bind>`, который возвращает копию :ref:`Callable<class_Callable>` с привязанными параметрами.
 
-When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal()<class_Object_method_emit_signal>`, the signal parameters can be also passed. The examples below show the relationship between these signal parameters and bound parameters.
+При вызове :ref:`emit()<class_Signal_method_emit>` или :ref:`Object.emit_signal()<class_Object_method_emit_signal>` также могут быть переданы параметры сигнала. В примерах ниже показана связь между этими параметрами сигнала и привязанными параметрами.
 
 
 .. tabs::
@@ -147,16 +147,16 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
  .. code-tab:: gdscript
 
     func _ready():
-        # This assumes that a `Player` class exists, which defines a `hit` signal.
+        # Это предполагает, что существует класс `Player`, который определяет сигнал `hit`.
         var player = Player.new()
-        # Using Callable.bind().
+        # Использование Callable.bind().
         player.hit.connect(_on_player_hit.bind("sword", 100))
 
-        # Parameters added when emitting the signal are passed first.
+        # Параметры, добавленные при передаче сигнала, передаются в первую очередь.
         player.hit.emit("Dark lord", 5)
 
-    # We pass two arguments when emitting (`hit_by`, `level`),
-    # and bind two more arguments when connecting (`weapon_type`, `damage`).
+    # При отправке мы передаем два аргумента (`hit_by`, `level`),
+    # и при подключении привязать еще два аргумента (`weapon_type`, `damage`).
     func _on_player_hit(hit_by, level, weapon_type, damage):
         print("Hit by %s (level %d) with weapon %s for %d damage." % [hit_by, level, weapon_type, damage])
 
@@ -164,18 +164,18 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
 
     public override void _Ready()
     {
-        // This assumes that a `Player` class exists, which defines a `Hit` signal.
+        // Это предполагает, что существует класс `Player`, который определяет сигнал `Hit`.
         var player = new Player();
-        // Using lambda expressions that create a closure that captures the additional parameters.
-        // The lambda only receives the parameters defined by the signal's delegate.
+        // Использование лямбда-выражений, создающих замыкание, которое захватывает дополнительные параметры.
+        // Лямбда получает только параметры, определенные делегатом сигнала.
         player.Hit += (hitBy, level) => OnPlayerHit(hitBy, level, "sword", 100);
 
-        // Parameters added when emitting the signal are passed first.
+        // Параметры, добавленные при передаче сигнала, передаются в первую очередь.
         player.EmitSignal(SignalName.Hit, "Dark lord", 5);
     }
 
-    // We pass two arguments when emitting (`hit_by`, `level`),
-    // and bind two more arguments when connecting (`weapon_type`, `damage`).
+    // При отправке мы передаем два аргумента (`hit_by`, `level`),
+    // и при подключении привязать еще два аргумента (`weapon_type`, `damage`).
     private void OnPlayerHit(string hitBy, int level, string weaponType, int damage)
     {
         GD.Print($"Hit by {hitBy} (level {level}) with weapon {weaponType} for {damage} damage.");
@@ -183,7 +183,7 @@ When calling :ref:`emit()<class_Signal_method_emit>` or :ref:`Object.emit_signal
 
 
 
-\ **Note:** In a boolean context, a signal will evaluate to ``false`` if it's null (see :ref:`is_null()<class_Signal_method_is_null>`). Otherwise, a signal will always evaluate to ``true``.
+\ **Примечание:** В логическом контексте сигнал будет оцениваться как ``false``, если он равен null (см. :ref:`is_null()<class_Signal_method_is_null>`). В противном случае сигнал всегда будет оцениваться как ``true``.
 
 .. note::
 

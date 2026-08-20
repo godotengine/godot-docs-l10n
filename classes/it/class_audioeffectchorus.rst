@@ -7,22 +7,22 @@ AudioEffectChorus
 
 **Eredita:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a chorus audio effect to an audio bus.
+Aggiunge un effetto audio coro a un bus audio.
 
-Gives the impression of multiple audio sources.
+Da l'impressione di più sorgenti audio.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-A "chorus" effect creates multiple copies of the original audio (called "voices") with variations in pitch, and layers on top of the original, giving the impression that the sound comes from multiple sources. This creates spectral and spatial movement.
+L'effetto "coro" crea più copie dell'audio originale (chiamate "voci") con variazioni di tono, sovrapponendole all'originale e dando l'impressione che il suono provenga da più sorgenti. Questo crea movimento spettrale e spaziale.
 
-Each voice is played a short period of time after the original audio, controlled by ``delay``. An internal low-frequency oscillator (LFO) controls their pitch, and ``depth`` controls the LFO's maximum amount.
+Ogni voce viene riprodotta con un breve ritardo rispetto all'audio originale, controllato da ``delay``. Un oscillatore a bassa frequenza (LFO) interno ne controlla il tono, mentre ``depth`` controlla l'ampiezza massima dell'oscillatore.
 
-In the real world, this kind of effect is found in pianos, choirs, and instrument ensembles.
+Nel modo reale, questo tipo di effetto si trova nei pianoforti, cori e ensemble strumentali.
 
-This effect can also be used to widen mono audio and make digital sounds have a more natural or analog quality.
+Questo effetto si può anche utilizzare per ampliare l'audio mono e dare ai suoni digitali una qualità più naturale o analogica.
 
 .. rst-class:: classref-introduction-group
 
@@ -31,7 +31,7 @@ Tutorial
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effetti audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -151,7 +151,7 @@ Descrizioni delle proprietà
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-The volume ratio of the original audio. Value can range from 0 to 1.
+Il rapporto di volume dell'audio originale. Il valore può variare da 0 a 1.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ The volume ratio of the original audio. Value can range from 0 to 1.
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The frequency threshold of the voice's low-pass filter in Hz.
+La frequenza di soglia del filtro passa-basso della voice, in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ The frequency threshold of the voice's low-pass filter in Hz.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The delay of the voice in milliseconds, compared to the original audio.
+Il ritardo della voce in millisecondi, rispetto all'audio originale.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ The delay of the voice in milliseconds, compared to the original audio.
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The depth of the voice's low-frequency oscillator in milliseconds.
+La profondità dell'oscillatore a bassa frequenza della voce in millisecondi.
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ The depth of the voice's low-frequency oscillator in milliseconds.
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The gain of the voice in dB.
+Il guadagno della voce in dB.
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ The gain of the voice in dB.
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The pan position of the voice.
+La posizione di panning della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ The pan position of the voice.
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The rate of the voice's low-frequency oscillator in Hz.
+La frequenza dell'oscillatore a bassa frequenza della voce in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -270,7 +270,7 @@ The rate of the voice's low-frequency oscillator in Hz.
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The frequency threshold of the voice's low-pass filter in Hz.
+La frequenza di soglia del filtro passa-basso della voice, in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +287,7 @@ The frequency threshold of the voice's low-pass filter in Hz.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The delay of the voice in milliseconds, compared to the original audio.
+Il ritardo della voce in millisecondi, rispetto all'audio originale.
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +304,7 @@ The delay of the voice in milliseconds, compared to the original audio.
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The depth of the voice's low-frequency oscillator in milliseconds.
+La profondità dell'oscillatore a bassa frequenza della voce in millisecondi.
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ The depth of the voice's low-frequency oscillator in milliseconds.
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The gain of the voice in dB.
+Il guadagno della voce in dB.
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ The gain of the voice in dB.
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The pan position of the voice.
+La posizione di panning della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -355,7 +355,7 @@ The pan position of the voice.
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The rate of the voice's low-frequency oscillator in Hz.
+La frequenza dell'oscillatore a bassa frequenza della voce in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -372,7 +372,7 @@ The rate of the voice's low-frequency oscillator in Hz.
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The frequency threshold of the voice's low-pass filter in Hz.
+La frequenza di soglia del filtro passa-basso della voice, in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -389,7 +389,7 @@ The frequency threshold of the voice's low-pass filter in Hz.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The delay of the voice in milliseconds, compared to the original audio.
+Il ritardo della voce in millisecondi, rispetto all'audio originale.
 
 .. rst-class:: classref-item-separator
 
@@ -406,7 +406,7 @@ The delay of the voice in milliseconds, compared to the original audio.
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The depth of the voice's low-frequency oscillator in milliseconds.
+La profondità dell'oscillatore a bassa frequenza della voce in millisecondi.
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ The depth of the voice's low-frequency oscillator in milliseconds.
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The gain of the voice in dB.
+Il guadagno della voce in dB.
 
 .. rst-class:: classref-item-separator
 
@@ -440,7 +440,7 @@ The gain of the voice in dB.
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The pan position of the voice.
+La posizione di panning della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -457,7 +457,7 @@ The pan position of the voice.
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The rate of the voice's low-frequency oscillator in Hz.
+La frequenza dell'oscillatore a bassa frequenza della voce in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -474,7 +474,7 @@ The rate of the voice's low-frequency oscillator in Hz.
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The frequency threshold of the voice's low-pass filter in Hz.
+La frequenza di soglia del filtro passa-basso della voice, in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ The frequency threshold of the voice's low-pass filter in Hz.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The delay of the voice in milliseconds, compared to the original audio.
+Il ritardo della voce in millisecondi, rispetto all'audio originale.
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +508,7 @@ The delay of the voice in milliseconds, compared to the original audio.
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The depth of the voice's low-frequency oscillator in milliseconds.
+La profondità dell'oscillatore a bassa frequenza della voce in millisecondi.
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ The depth of the voice's low-frequency oscillator in milliseconds.
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The gain of the voice in dB.
+Il guadagno della voce in dB.
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ The gain of the voice in dB.
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The pan position of the voice.
+La posizione di panning della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -559,7 +559,7 @@ The pan position of the voice.
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The rate of the voice's low-frequency oscillator in Hz.
+La frequenza dell'oscillatore a bassa frequenza della voce in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -576,7 +576,7 @@ The rate of the voice's low-frequency oscillator in Hz.
 - |void| **set_voice_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_voice_count**\ (\ )
 
-The number of voices in the effect. Value can range from 1 to 4.
+Il numero di voci nell'effetto. Il valore può variare da 1 a 4.
 
 .. rst-class:: classref-item-separator
 
@@ -593,7 +593,7 @@ The number of voices in the effect. Value can range from 1 to 4.
 - |void| **set_wet**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wet**\ (\ )
 
-The volume ratio of all voices. Value can range from 0 to 1.
+Il rapporto del volume di tutte le voci. Il valore può variare da 0 a 1.
 
 .. rst-class:: classref-section-separator
 
@@ -610,7 +610,7 @@ Descrizioni dei metodi
 
 :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_cutoff_hz>`
 
-Returns the frequency threshold of a given ``voice_idx``'s low-pass filter in Hz. Frequencies above this value are removed from the voice.
+Restituisce la soglia di frequenza della voice all'indice ``voice_idx`` nel filtro passa-basso, in Hz. Le frequenze superiori a questo valore vengono rimosse dalla voce.
 
 .. rst-class:: classref-item-separator
 
@@ -622,7 +622,7 @@ Returns the frequency threshold of a given ``voice_idx``'s low-pass filter in Hz
 
 :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_delay_ms>`
 
-Returns the delay of a given ``voice_idx`` in milliseconds, compared to the original audio.
+Restituisce il ritardo della voice all'indice ``voice_idx``, in millisecondi, rispetto all'audio originale.
 
 .. rst-class:: classref-item-separator
 
@@ -634,7 +634,7 @@ Returns the delay of a given ``voice_idx`` in milliseconds, compared to the orig
 
 :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_depth_ms>`
 
-Returns the depth of a given ``voice_idx``'s low-frequency oscillator in milliseconds.
+Restituisce la profondità dell'oscillatore a bassa frequenza della voce all'indice ``voice_idx`` in millisecondi.
 
 .. rst-class:: classref-item-separator
 
@@ -646,7 +646,7 @@ Returns the depth of a given ``voice_idx``'s low-frequency oscillator in millise
 
 :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_level_db>`
 
-Returns the gain of a given ``voice_idx`` in dB.
+Restituisce il guadagno della voce all'indice ``voice_idx`` in dB.
 
 .. rst-class:: classref-item-separator
 
@@ -658,7 +658,7 @@ Returns the gain of a given ``voice_idx`` in dB.
 
 :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_pan>`
 
-Returns the pan position of a given ``voice_idx``. Negative values mean the left channel, positive mean the right.
+Restituisce il panning della voce all'indice ``voice_idx``. I valori negativi indicano il canale sinistro, i valori positivi indicano il canale destro.
 
 .. rst-class:: classref-item-separator
 
@@ -670,7 +670,7 @@ Returns the pan position of a given ``voice_idx``. Negative values mean the left
 
 :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectChorus_method_get_voice_rate_hz>`
 
-Returns the rate of a given ``voice_idx``'s low-frequency oscillator in Hz.
+Restituisce la frequenza dell'oscillatore a bassa frequenza della voce all'indice ``voice_idx``, in Hz.
 
 .. rst-class:: classref-item-separator
 
@@ -682,7 +682,7 @@ Returns the rate of a given ``voice_idx``'s low-frequency oscillator in Hz.
 
 |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_cutoff_hz>`
 
-Sets the frequency threshold of a given ``voice_idx``'s low-pass filter in Hz. Frequencies above ``cutoff_hz`` are removed from ``voice_idx``. Value can range from 1 to 20500.
+Imposta la soglia di frequenza della voce all'indice ``voice_idx`` nel filtro passa-basso, in Hz. Le frequenze superiori a ``cutoff_hz`` vengono rimosse dalla voce ``voice_idx``. Il valore può variare da 1 a 20500.
 
 .. rst-class:: classref-item-separator
 
@@ -694,7 +694,7 @@ Sets the frequency threshold of a given ``voice_idx``'s low-pass filter in Hz. F
 
 |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_delay_ms>`
 
-Sets the delay of a given ``voice_idx`` in milliseconds, compared to the original audio. Value can range from 0 to 50.
+Imposta il ritardo della voice all'indice ``voice_idx``, in millisecondi, rispetto all'audio originale. Il valore può variare da 0 a 50.
 
 .. rst-class:: classref-item-separator
 
@@ -706,7 +706,7 @@ Sets the delay of a given ``voice_idx`` in milliseconds, compared to the origina
 
 |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_depth_ms>`
 
-Sets the depth of a given ``voice_idx``'s low-frequency oscillator in milliseconds. Value can range from 0 to 20.
+Imposta la profondità dell'oscillatore a bassa frequenza della voce all'indice ``voice_idx`` in millisecondi. Il valore può variare da 0 a 20.
 
 .. rst-class:: classref-item-separator
 
@@ -718,7 +718,7 @@ Sets the depth of a given ``voice_idx``'s low-frequency oscillator in millisecon
 
 |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_level_db>`
 
-Sets the gain of a given ``voice_idx`` in dB. Value can range from -60 to 24.
+Imposta il guadagno della voce all'indice ``voice_idx`` in dB. Il valore può variare da -60 a 24.
 
 .. rst-class:: classref-item-separator
 
@@ -730,7 +730,7 @@ Sets the gain of a given ``voice_idx`` in dB. Value can range from -60 to 24.
 
 |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_pan>`
 
-Sets the pan position of a given ``voice_idx``. Negative values pan the sound to the left, positive pan to the right. Value can range from -1 to 1.
+Imposta il panning della voce all'indice ``voice_idx``. I valori negativi spostano il suono a sinistra, I valori positivi spostano il suono a destra. Il valore può variare da -1 a 1.
 
 .. rst-class:: classref-item-separator
 
@@ -742,13 +742,13 @@ Sets the pan position of a given ``voice_idx``. Negative values pan the sound to
 
 |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioEffectChorus_method_set_voice_rate_hz>`
 
-Sets the rate of a given ``voice_idx``'s low-frequency oscillator in Hz. Value can range from 0.1 to 20.
+Imposta la frequenza dell'oscillatore a bassa frequenza della voce all'indice ``voice_idx``, in Hz. Il valore può variare da 0.1 a 20.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

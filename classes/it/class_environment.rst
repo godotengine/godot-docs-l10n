@@ -484,7 +484,7 @@ enum **GlowBlendMode**: :ref:`🔗<enum_Environment_GlowBlendMode>`
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_ADDITIVE** = ``0``
 
-Adds the glow effect to the scene.
+Aggiunge un filtro bagliore alla scena.
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_SCREEN:
 
@@ -492,7 +492,7 @@ Adds the glow effect to the scene.
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_SCREEN** = ``1``
 
-Adds the glow effect to the scene after modifying the glow influence based on the scene value; dark values will be highly influenced by glow and bright values will not be influenced by glow. This approach avoids bright values becoming overly bright from the glow effect. :ref:`tonemap_white<class_Environment_property_tonemap_white>` is used to determine the maximum scene value where the glow should have no influence. When :ref:`tonemap_mode<class_Environment_property_tonemap_mode>` is set to :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` and :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true``, the parent window's :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` will be used as the maximum scene value.
+Aggiunge l'effetto bagliore alla scena dopo aver modificato l'influenza del bagliore in base al valore della scena; i valori scuri saranno fortemente influenzati dal bagliore e i valori chiari non lo saranno. Questo approccio evita che i valori chiari diventino eccessivamente luminosi a causa dell'effetto bagliore. :ref:`tonemap_white<class_Environment_property_tonemap_white>` serve per determinare il valore massimo della scena in cui il bagliore non dovrebbe avere alcuna influenza. Quando :ref:`tonemap_mode<class_Environment_property_tonemap_mode>` è impostato su :ref:`TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` e :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` è ``true``, il :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` della finestra genitore sarà utilizzato come valore massimo della scena.
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_SOFTLIGHT:
 
@@ -500,9 +500,9 @@ Adds the glow effect to the scene after modifying the glow influence based on th
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_SOFTLIGHT** = ``2``
 
-Adds the glow effect to the tonemapped image after modifying the glow influence based on the image value; dark values and bright values will not be influenced by glow and mid-range values will be highly influenced by glow. This approach avoids bright values becoming overly bright from the glow effect. The glow will have the largest influence on image values of ``0.25`` and will have no influence when applied to image values greater than ``1.0``.
+Aggiunge l'effetto bagliore all'immagine con mappatura dei toni, dopo averne modificato l'influenza in base al valore dell'immagine; i valori scuri e chiari non saranno influenzati dal bagliore, mentre i valori intermedi saranno fortemente influenzati. Questo approccio evita che i valori chiari diventino eccessivamente luminosi a causa dell'effetto bagliore. Il bagliore avrà la massima influenza sui valori dell'immagine pari a ``0.25`` e non avrà alcuna influenza se applicato a valori superiori a ``1.0``.
 
-\ **Note:** This blend mode does not support HDR output because expects a maximum output value of ``1.0``. It is recommended to use a different blend mode when rendering to an HDR screen.
+\ **Nota:** Questa modalità di fusione non supporta l'output HDR perché prevede un valore di output massimo di ``1.0``. Si consiglia di utilizzare una modalità di fusione diversa quando si renderizza su uno schermo HDR.
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_REPLACE:
 
@@ -510,7 +510,7 @@ Adds the glow effect to the tonemapped image after modifying the glow influence 
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_REPLACE** = ``3``
 
-Replaces all pixels' color by the glow effect. This can be used to simulate a full-screen blur effect by tweaking the glow parameters to match the original image's brightness or to preview glow configuration in the editor.
+Sostituisce il colore di tutti i pixel con l'effetto bagliore. Può essere utilizzato per simulare un effetto di sfocatura sull'intero schermo regolando i parametri del bagliore per adattarli alla luminosità dell'immagine originale o vedere in anteprima la configurazione del bagliore nell'editor.
 
 .. _class_Environment_constant_GLOW_BLEND_MODE_MIX:
 
@@ -518,7 +518,7 @@ Replaces all pixels' color by the glow effect. This can be used to simulate a fu
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_MIX** = ``4``
 
-Mixes the glow image with the scene image. Best used with :ref:`glow_bloom<class_Environment_property_glow_bloom>` to avoid darkening the scene.
+Combina l'immagine del bagliore con l'immagine della scena. Usato al meglio con :ref:`glow_bloom<class_Environment_property_glow_bloom>` per evitare di scurire la scena.
 
 .. rst-class:: classref-item-separator
 
@@ -562,7 +562,7 @@ enum **SDFGIYScale**: :ref:`🔗<enum_Environment_SDFGIYScale>`
 
 :ref:`SDFGIYScale<enum_Environment_SDFGIYScale>` **SDFGI_Y_SCALE_50_PERCENT** = ``0``
 
-Usa una scala del 50% per SDFGI sull'asse Y (verticale). Le celle SDFGI saranno corte il doppio della loro larghezza. Ciò consente di fornire maggiori dettagli di GI e perdite di luce ridotte tra pavimenti e soffitti sottili. Questa è solitamente la scelta migliore per scene che non presentano molta verticalità.
+Usa una scala del 50% per l'SDFGI sull'asse Y (verticale). Le celle SDFGI saranno corte il doppio della loro larghezza. Ciò consente di fornire maggiori dettagli di GI e perdite di luce ridotte tra pavimenti e soffitti sottili. Questa è solitamente la scelta migliore per scene che non presentano molta verticalità.
 
 .. _class_Environment_constant_SDFGI_Y_SCALE_75_PERCENT:
 
@@ -570,7 +570,7 @@ Usa una scala del 50% per SDFGI sull'asse Y (verticale). Le celle SDFGI saranno 
 
 :ref:`SDFGIYScale<enum_Environment_SDFGIYScale>` **SDFGI_Y_SCALE_75_PERCENT** = ``1``
 
-Usa una scala del 75% per SDFGI sull'asse Y (verticale). Questo è una via di mezzo tra le scale Y SDFGI del 50% e del 100%.
+Usa una scala del 75% per SDFGI sull'asse Y (verticale). Questo è una via di mezzo tra le scale Y del 50% e del 100% per l'SDFGI.
 
 .. _class_Environment_constant_SDFGI_Y_SCALE_100_PERCENT:
 
@@ -578,7 +578,7 @@ Usa una scala del 75% per SDFGI sull'asse Y (verticale). Questo è una via di me
 
 :ref:`SDFGIYScale<enum_Environment_SDFGIYScale>` **SDFGI_Y_SCALE_100_PERCENT** = ``2``
 
-Usa una scala del 100% per SDFGI sull'asse Y (verticale). Le celle SDFGI saranno alte quanto larghe. Questa è solitamente la scelta migliore per scene molto verticali. Lo svantaggio è che la perdita di luce potrebbe diventare più evidenti con pavimenti e soffitti sottili.
+Usa una scala del 100% per l'SDFGI sull'asse Y (verticale). Le celle SDFGI saranno alte quanto larghe. Questa è solitamente la scelta migliore per scene molto verticali. Lo svantaggio è che le perdite di luce potrebbero diventare più evidenti con pavimenti e soffitti sottili.
 
 .. rst-class:: classref-section-separator
 
@@ -600,7 +600,7 @@ Descrizioni delle proprietà
 - |void| **set_adjustment_brightness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_adjustment_brightness**\ (\ )
 
-Applies a simple brightness adjustment to the rendered image after tonemaping. To adjust scene brightness use :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>` instead, which is applied before tonemapping and thus less prone to issues with bright colors. Effective only if :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` is ``true``.
+Applica una semplice regolazione della luminosità all'immagine renderizzata dopo la mappatura dei toni. Per regolare la luminosità della scena, usa invece :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`, che è applicato prima della mappatura dei toni ed è quindi meno soggetto a problemi con i colori brillanti. Efficace solo se :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,7 @@ La tabella di ricerca (LUT) :ref:`Texture2D<class_Texture2D>` o :ref:`Texture3D<
 - |void| **set_adjustment_contrast**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_adjustment_contrast**\ (\ )
 
-Increasing :ref:`adjustment_contrast<class_Environment_property_adjustment_contrast>` will make dark values darker and bright values brighter. This simple adjustment is applied to the rendered image after tonemaping. When set to a value greater than ``1.0``, :ref:`adjustment_contrast<class_Environment_property_adjustment_contrast>` is prone to clipping colors that become too bright or too dark. Effective only if :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` is ``true``.
+Aumentare :ref:`adjustment_contrast<class_Environment_property_adjustment_contrast>` renderà i valori scuri più scuri e i valori luminosi più luminosi. Questa semplice regolazione è applicata all'immagine renderizzata dopo la mappatura dei toni. Se impostato su un valore maggiore di ``1.0``, :ref:`adjustment_contrast<class_Environment_property_adjustment_contrast>` tende a troncare i colori che diventano troppo luminosi o troppo scuri. Efficace solo se :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -670,7 +670,7 @@ Se ``true``, abilita le proprietà ``adjustment_*`` fornite da questa risorsa. S
 - |void| **set_adjustment_saturation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_adjustment_saturation**\ (\ )
 
-Applies a simple saturation adjustment to the rendered image after tonemaping. When :ref:`adjustment_saturation<class_Environment_property_adjustment_saturation>` is set to ``0.0``, the rendered image will be fully converted to a grayscale image. Effective only if :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` is ``true``.
+Applica una semplice regolazione della saturazione all'immagine renderizzata dopo la mappatura dei toni. Quando :ref:`adjustment_saturation<class_Environment_property_adjustment_saturation>` è impostato su ``0.0``, l'immagine renderizzata sarà completamente convertita in un'immagine in scala di grigi. Funziona solo se :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -1090,9 +1090,9 @@ Se impostato maggiore di ``0.0``, colora le luci direzionali nella scena con il 
 - |void| **set_glow_blend_mode**\ (\ value\: :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>`\ )
 - :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **get_glow_blend_mode**\ (\ )
 
-The glow blending mode.
+La modalità di fusione del bagliore.
 
-\ **Note:** The Compatibility renderer always uses :ref:`GLOW_BLEND_MODE_SCREEN<class_Environment_constant_GLOW_BLEND_MODE_SCREEN>` and :ref:`glow_blend_mode<class_Environment_property_glow_blend_mode>` will have no effect.
+\ **Nota:** Il renderer Compatibilità utilizza sempre :ref:`GLOW_BLEND_MODE_SCREEN<class_Environment_constant_GLOW_BLEND_MODE_SCREEN>`, e :ref:`glow_blend_mode<class_Environment_property_glow_blend_mode>` non avrà alcun effetto.
 
 .. rst-class:: classref-item-separator
 
@@ -1126,11 +1126,11 @@ L'intensità dell'effetto bloom. Se impostato su un valore superiore a ``0``, qu
 - |void| **set_glow_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_glow_enabled**\ (\ )
 
-If ``true``, the glow effect is enabled. This simulates real world atmosphere and eye/camera behavior by causing bright pixels to bleed onto surrounding pixels.
+Se ``true``, l'effetto bagliore è abilitato. Questo simula l'atmosfera e il comportamento dell'occhio/telecamera nel mondo reale, facendo riversare i pixel luminosi sui pixel circostanti.
 
-\ **Note:** When using the Mobile rendering method, glow looks different due to the lower dynamic range available in the Mobile rendering method.
+\ **Nota:** Quando si utilizza il metodo di rendering Mobile, il bagliore appare diverso a causa della gamma dinamica più bassa disponibile nel metodo di rendering Mobile.
 
-\ **Note:** When using the Compatibility rendering method, glow uses a different implementation with some properties being unavailable and hidden from the inspector: ``glow_levels/*``, :ref:`glow_normalized<class_Environment_property_glow_normalized>`, :ref:`glow_strength<class_Environment_property_glow_strength>`, :ref:`glow_blend_mode<class_Environment_property_glow_blend_mode>`, :ref:`glow_mix<class_Environment_property_glow_mix>`, :ref:`glow_map<class_Environment_property_glow_map>`, and :ref:`glow_map_strength<class_Environment_property_glow_map_strength>`. This implementation is optimized to run on low-end devices and is less flexible as a result.
+\ **Nota:** Quando si utilizza il metodo di rendering Compatibilità, il bagliore utilizza un'implementazione diversa con alcune proprietà non disponibili e nascoste dall'ispettore: ``glow_levels/*``, :ref:`glow_normalized<class_Environment_property_glow_normalized>`, :ref:`glow_strength<class_Environment_property_glow_strength>`, :ref:`glow_blend_mode<class_Environment_property_glow_blend_mode>`, :ref:`glow_mix<class_Environment_property_glow_mix>`, :ref:`glow_map<class_Environment_property_glow_map>`, e :ref:`glow_map_strength<class_Environment_property_glow_map_strength>`. Questa implementazione è ottimizzata per l'esecuzione sui dispositivi di fascia bassa e pertanto è meno flessibile.
 
 .. rst-class:: classref-item-separator
 
@@ -1164,7 +1164,7 @@ La soglia più alta del bagliore del HDR. Le aree più luminose di questa soglia
 - |void| **set_glow_hdr_bleed_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_glow_hdr_bleed_scale**\ (\ )
 
-Smooths the transition between values that are below and above :ref:`glow_hdr_threshold<class_Environment_property_glow_hdr_threshold>` by reducing the amount of glow generated by values that are close to :ref:`glow_hdr_threshold<class_Environment_property_glow_hdr_threshold>`. Values above ``glow_hdr_threshold + glow_hdr_scale`` will not have glow reduced in this way.
+Uniforma la transizione tra i valori inferiori e superiori a :ref:`glow_hdr_threshold<class_Environment_property_glow_hdr_threshold>` riducendo la quantità di bagliore generato dai valori vicini a :ref:`glow_hdr_threshold<class_Environment_property_glow_hdr_threshold>`. I valori superiori a ``glow_hdr_threshold + glow_hdr_scale`` non avranno il bagliore ridotto in questo modo.
 
 .. rst-class:: classref-item-separator
 
@@ -1198,7 +1198,7 @@ La soglia inferiore del bagliore del HDR. Quando si utilizza il metodo di render
 - |void| **set_glow_intensity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_glow_intensity**\ (\ )
 
-The overall brightness multiplier that is applied to the glow effect just before it is blended with the scene. When using the Mobile rendering method (which only supports a lower dynamic range up to ``2.0``), this should be increased to ``1.5`` to compensate.
+Il moltiplicatore della luminosità complessiva che è applicato all'effetto bagliore appena prima di combinarlo con la scena. Quando si utilizza il metodo di rendering Mobile (che supporta solo una gamma dinamica più bassa fino a ``2.0``), questo valore dovrebbe essere aumentato a ``1.5`` per compensare.
 
 .. rst-class:: classref-item-separator
 
@@ -1428,9 +1428,9 @@ Se ``true``, i livelli di bagliore saranno normalizzati in modo che se sommati i
 - |void| **set_glow_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_glow_strength**\ (\ )
 
-The strength that is used when blurring across the screen to generate the glow effect. This affects the distance and intensity of the blur. When using the Mobile rendering method, this should be increased to compensate for the lower dynamic range.
+L'intensità usata per sfocare l'intero schermo per generare l'effetto bagliore. Influisce sulla distanza e sull'intensità della sfocatura. Quando si utilizza il metodo di rendering Mobile, questo dovrebbe essere aumentato per compensare la gamma dinamica più bassa.
 
-\ **Note:** :ref:`glow_strength<class_Environment_property_glow_strength>` has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+\ **Nota:** :ref:`glow_strength<class_Environment_property_glow_strength>` non ha effetto quando si utilizza il metodo di rendering Compatibilità, poiché questo metodo di rendering utilizza un'implementazione del bagliore più semplice, ottimizzata per dispositivi di fascia bassa.
 
 .. rst-class:: classref-item-separator
 
@@ -1502,7 +1502,7 @@ Il moltiplicatore di energia applicato alla luce ogni volta che rimbalza da una 
 - |void| **set_sdfgi_cascades**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_sdfgi_cascades**\ (\ )
 
-Numero di cascate da utilizzare per SDFGI (tra 1 e 8). Un numero maggiore di cascate consente di visualizzare SDFGI più lontano, preservando i dettagli da vicino, a scapito delle prestazioni. Quando si utilizza SDFGI su livelli di piccola scala, :ref:`sdfgi_cascades<class_Environment_property_sdfgi_cascades>` può spesso essere ridotto tra ``1`` e ``4`` per migliorare le prestazioni.
+Numero di cascate da utilizzare per l'SDFGI (tra 1 e 8). Un numero maggiore di cascate consente di visualizzare SDFGI più lontano, preservando i dettagli da vicino, a scapito delle prestazioni. Quando si utilizza l'SDFGI su livelli di piccola scala, :ref:`sdfgi_cascades<class_Environment_property_sdfgi_cascades>` si può spesso ridurre tra ``1`` e ``4`` per migliorare le prestazioni.
 
 .. rst-class:: classref-item-separator
 
@@ -1519,11 +1519,11 @@ Numero di cascate da utilizzare per SDFGI (tra 1 e 8). Un numero maggiore di cas
 - |void| **set_sdfgi_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sdfgi_enabled**\ (\ )
 
-Se ``true``, abilita l'illuminazione globale del campo di distanza con segno per le mesh che hanno il loro :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` impostato su :ref:`GeometryInstance3D.GI_MODE_STATIC<class_GeometryInstance3D_constant_GI_MODE_STATIC>`. SDFGI è una tecnica di illuminazione globale in tempo reale che funziona bene con livelli generati proceduralmente e creati dall'utente, anche in situazioni in cui la geometria viene creata durante il gioco. Il campo di distanza con segno è generato automaticamente attorno alla telecamera mentre si muove. Sono supportate luci dinamiche, ma non occlusori dinamici e superfici emissive.
+Se ``true``, abilita l'illuminazione globale con signed distance field per le mesh che hanno il loro :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` impostato su :ref:`GeometryInstance3D.GI_MODE_STATIC<class_GeometryInstance3D_constant_GI_MODE_STATIC>`. L'SDFGI è una tecnica di illuminazione globale in tempo reale che funziona bene con livelli generati proceduralmente e creati dall'utente, anche in situazioni in cui la geometria viene creata durante il gioco. Il signed distance field è generato automaticamente attorno alla telecamera mentre si muove. Sono supportate luci dinamiche, ma non occlusori dinamici e superfici emissive.
 
-\ **Nota:** SDFGI è supportato solo nel metodo di rendering Forward+, non Mobile o Compatibilità.
+\ **Nota:** L'SDFGI è supportato solo nel metodo di rendering Forward+, non Mobile o Compatibilità.
 
-\ **Prestazioni:** SDFGI è relativamente esigente sulla GPU e non è adatto ad hardware di fascia bassa come la grafica integrata (considera invece :ref:`LightmapGI<class_LightmapGI>`). Per migliorare le prestazioni di SDFGI, abilita :ref:`ProjectSettings.rendering/global_illumination/gi/use_half_resolution<class_ProjectSettings_property_rendering/global_illumination/gi/use_half_resolution>` nelle Impostazioni del progetto.
+\ **Prestazioni:** L'SDFGI è relativamente impegnativo per la GPU e non è adatto ad hardware di fascia bassa come le schede grafiche integrate (considera invece :ref:`LightmapGI<class_LightmapGI>`). Per migliorare le prestazioni dell'SDFGI, abilita :ref:`ProjectSettings.rendering/global_illumination/gi/use_half_resolution<class_ProjectSettings_property_rendering/global_illumination/gi/use_half_resolution>` nelle Impostazioni del progetto.
 
 \ **Nota:** Le mesh dovrebbero avere pareti abbastanza spesse per evitare perdite di luce (evita pareti unilaterali). Per i livelli interni, racchiudi la geometria del tuo livello in una scatola abbastanza grande e collega le estremità per chiudere la mesh.
 
@@ -1559,7 +1559,7 @@ Il moltiplicatore di energia da usare per SDFGI. Valori più alti risulteranno i
 - |void| **set_sdfgi_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sdfgi_max_distance**\ (\ )
 
-La distanza massima a cui il SDFGI è visibile. Oltre questa distanza, l'illuminazione ambientale o altre fonti di GI come :ref:`ReflectionProbe<class_ReflectionProbe>` saranno utilizzate come fallback.
+La distanza massima a cui l'SDFGI è visibile. Oltre questa distanza, l'illuminazione ambientale o altre fonti di GI, come i :ref:`ReflectionProbe<class_ReflectionProbe>`, serviranno da alternative di riserva.
 
 \ **Nota:** Questa proprietà è collegata a :ref:`sdfgi_min_cell_size<class_Environment_property_sdfgi_min_cell_size>` e :ref:`sdfgi_cascade0_distance<class_Environment_property_sdfgi_cascade0_distance>`. Modificandone il valore saranno modificate automaticamente anche queste proprietà.
 
@@ -1578,7 +1578,7 @@ La distanza massima a cui il SDFGI è visibile. Oltre questa distanza, l'illumin
 - |void| **set_sdfgi_min_cell_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sdfgi_min_cell_size**\ (\ )
 
-La dimensione della cella da usare per la cascata SDFGI più vicina (in unità 3D). Valori più bassi consentono a SDFGI di essere più preciso da vicino, a costo di rendere gli aggiornamenti SDFGI più esigenti. Ciò può causare scatti quando la telecamera si muove velocemente. Valori più alti consentono a SDFGI di coprire più terreno, riducendo anche l'impatto sulle prestazioni degli aggiornamenti SDFGI.
+La dimensione della cella da usare per la cascata SDFGI più vicina (in unità 3D). Valori più bassi consentono all'SDFGI di essere più preciso da vicino, a scapito di rendere gli aggiornamenti dell'SDFGI più impegnativi. Ciò può causare scatti quando la telecamera si muove velocemente. Valori più alti consentono all'SDFGI di coprire più terreno, riducendo anche l'impatto sulle prestazioni degli aggiornamenti dell'SDFGI.
 
 \ **Nota:** Questa proprietà è collegata a :ref:`sdfgi_max_distance<class_Environment_property_sdfgi_max_distance>` e :ref:`sdfgi_cascade0_distance<class_Environment_property_sdfgi_cascade0_distance>`. Modificandone il valore saranno modificate automaticamente anche queste proprietà.
 
@@ -1631,7 +1631,7 @@ Il bias costante da usare per le sonde SDFGI. Aumentare questo valore può ridur
 - |void| **set_sdfgi_read_sky_light**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sdfgi_reading_sky_light**\ (\ )
 
-Se ``true``, SDFGI tiene conto dell'illuminazione ambientale. Questo dovrebbe essere impostato su ``false`` per scene di interiori.
+Se ``true``, l'SDFGI tiene conto dell'illuminazione ambientale. Bisognerebbe impostarlo su ``false`` per scene di interiori.
 
 .. rst-class:: classref-item-separator
 
@@ -1648,7 +1648,7 @@ Se ``true``, SDFGI tiene conto dell'illuminazione ambientale. Questo dovrebbe es
 - |void| **set_sdfgi_use_occlusion**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sdfgi_using_occlusion**\ (\ )
 
-Se ``true``, SDFGI utilizza un approccio di rilevamento dell'occlusione per ridurre la perdita di luce. L'occlusione può tuttavia introdurre macchie scure in determinati punti, il che potrebbe essere indesiderato in scene per lo più all'aperto. :ref:`sdfgi_use_occlusion<class_Environment_property_sdfgi_use_occlusion>` ha un impatto sulle prestazioni e dovrebbe essere abilitato solo quando necessario.
+Se ``true``, l'SDFGI utilizza un approccio di rilevamento dell'occlusione per ridurre le perdite di luce. L'occlusione può tuttavia introdurre macchie scure in alcuni punti, il che potrebbe essere indesiderato in scene per lo più all'aperto. :ref:`sdfgi_use_occlusion<class_Environment_property_sdfgi_use_occlusion>` ha un impatto sulle prestazioni e dovrebbe essere abilitato solo quando necessario.
 
 .. rst-class:: classref-item-separator
 
@@ -1733,7 +1733,7 @@ La rotazione da utilizzare per il rendering del cielo.
 - |void| **set_ssao_ao_channel_affect**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_ao_channel_affect**\ (\ )
 
-Intensità di occlusione ambientale dello spazio dello schermo (SSAO) su materiali che hanno una texture di AO definita. Valori superiori a ``0`` renderanno visibile l'effetto SSAO nelle aree oscurate dalle texture di AO.
+Intensità dell'occlusione ambientale nello spazio dello schermo sui materiali che hanno una texture di AO definita. Valori superiori a ``0`` renderanno visibile l'effetto SSAO nelle aree oscurate dalle texture di AO.
 
 .. rst-class:: classref-item-separator
 
@@ -1750,7 +1750,7 @@ Intensità di occlusione ambientale dello spazio dello schermo (SSAO) su materia
 - |void| **set_ssao_detail**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_detail**\ (\ )
 
-Imposta l'intensità del livello del dettaglio aggiuntivo per l'effetto di occlusione ambientale dello spazio dello schermo. Un valore elevato rende il passaggio del dettaglio più evidente, ma potrebbe contribuire all'aliasing nell'immagine finale.
+Imposta l'intensità del livello del dettaglio aggiuntivo per l'effetto di occlusione ambientale nello spazio dello schermo. Un valore elevato rende il passaggio del dettaglio più evidente, ma potrebbe contribuire all'aliasing nell'immagine finale.
 
 .. rst-class:: classref-item-separator
 
@@ -1767,9 +1767,9 @@ Imposta l'intensità del livello del dettaglio aggiuntivo per l'effetto di occlu
 - |void| **set_ssao_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ssao_enabled**\ (\ )
 
-If ``true``, the screen-space ambient occlusion effect is enabled. This darkens objects' corners and cavities to simulate ambient light not reaching the entire object as in real life. This works well for small, dynamic objects, but baked lighting or ambient occlusion textures will do a better job at displaying ambient occlusion on large static objects. Godot uses a form of SSAO called Adaptive Screen Space Ambient Occlusion which is itself a form of Horizon Based Ambient Occlusion.
+Se ``true``, l'effetto di occlusione ambientale nello spazio dello schermo (SSAO) è abilitato. Questo oscura gli angoli e le cavità degli oggetti per simulare la luce ambientale che non raggiunge l'intero oggetto, come nella vita reale. Funziona bene per piccoli oggetti dinamici, ma l'illuminazione precalcolata o le texture di occlusione ambientale dimostrerebbero meglio l'occlusione ambientale su grandi oggetti statici. Godot usa una forma di SSAO detta Adaptive Screen Space Ambient Occlusion che è essa stessa una forma di Horizon Based Ambient Occlusion.
 
-\ **Note:** SSAO is only supported in the Forward+ and Compatibility rendering methods, not Mobile.
+\ **Nota:** L'SSAO è supportato solo nel metodo di rendering Forward+ e Compatibilità, non Mobile.
 
 .. rst-class:: classref-item-separator
 
@@ -1803,7 +1803,7 @@ La soglia per considerare se un dato punto su una superficie è occluso o meno r
 - |void| **set_ssao_intensity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_intensity**\ (\ )
 
-Intensità primaria di occlusione ambientale dello spazio dello schermo. Agisce come moltiplicatore per l'effetto di occlusione ambientale dello spazio dello schermo. Un valore più alto risulta in un'occlusione più scura.
+L'intensità primaria dell'occlusione ambientale nello spazio dello schermo. Agisce come moltiplicatore per l'effetto di occlusione ambientale nello spazio dello schermo. Un valore più alto risulta in un'occlusione più scura.
 
 .. rst-class:: classref-item-separator
 
@@ -1820,7 +1820,7 @@ Intensità primaria di occlusione ambientale dello spazio dello schermo. Agisce 
 - |void| **set_ssao_direct_light_affect**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_direct_light_affect**\ (\ )
 
-L'intensità dell'occlusione ambientale dello spazio dello schermo in luce diretta. Nella vita reale, l'occlusione ambientale si applica solo alla luce indiretta, il che significa che i suoi effetti non possono essere visti in luce diretta. Valori superiori a ``0`` renderanno l'effetto SSAO visibile in luce diretta.
+L'intensità dell'occlusione ambientale nello spazio dello schermo sotto la luce diretta. Nella vita reale, l'occlusione ambientale si applica solo alla luce indiretta, il che significa che i suoi effetti non si possono vedere sotto la luce diretta. Valori più alti di ``0`` renderanno visibile l'effetto SSAO sotto la luce diretta.
 
 .. rst-class:: classref-item-separator
 
@@ -1854,7 +1854,7 @@ La distribuzione dell'occlusione. Un valore più alto risulta in un'occlusione p
 - |void| **set_ssao_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_radius**\ (\ )
 
-La distanza alla quale gli oggetti possono occludersi a vicenda quando si calcola l'occlusione ambientale dello spazio dello schermo. Valori più alti risultano nell'occlusione su una distanza maggiore a scapito di prestazioni e qualità.
+La distanza alla quale gli oggetti possono occludersi a vicenda quando si calcola l'occlusione ambientale nello spazio dello schermo. Valori più alti risultano in un'occlusione su una distanza maggiore, a scapito di prestazioni e qualità.
 
 .. rst-class:: classref-item-separator
 
@@ -1871,7 +1871,7 @@ La distanza alla quale gli oggetti possono occludersi a vicenda quando si calcol
 - |void| **set_ssao_sharpness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssao_sharpness**\ (\ )
 
-La quantità di sfocatura sui bordi degli oggetti consentita all'effetto di occlusione ambientale dello spazio sullo schermo. Un'impostazione troppo alta causerà l'aliasing sui bordi degli oggetti. Un'impostazione troppo bassa renderà i bordi degli oggetti sfocati.
+La quantità di sfocatura sui bordi degli oggetti per l'effetto di occlusione ambientale nello spazio dello schermo. Un valore troppo alto farà comparire aliasing attorno ai bordi degli oggetti. Un valore troppo basso renderà i bordi degli oggetti sfocati.
 
 .. rst-class:: classref-item-separator
 
@@ -1888,7 +1888,7 @@ La quantità di sfocatura sui bordi degli oggetti consentita all'effetto di occl
 - |void| **set_ssil_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ssil_enabled**\ (\ )
 
-Se ``true``, l'effetto di illuminazione indiretta nello spazio dello schermo è abilitato. L'illuminazione indiretta nello spazio dello schermo è una forma di illuminazione indiretta che consente alla luce diffusa di rimbalzare tra gli oggetti vicini. L'illuminazione indiretta nello spazio dello schermo funziona in modo molto simile all'occlusione ambientale nello spazio dello schermo, in quanto influisce solo su un intervallo limitato. È progettata per essere utilizzata insieme a una forma di illuminazione globale appropriata come SDFGI o :ref:`VoxelGI<class_VoxelGI>`. L'illuminazione indiretta nello spazio dello schermo non è influenzata dal valore :ref:`Light3D.light_indirect_energy<class_Light3D_property_light_indirect_energy>` di una luce individuale.
+Se ``true``, l'effetto di illuminazione indiretta nello spazio dello schermo è abilitato. L'illuminazione indiretta nello spazio dello schermo è una forma di illuminazione indiretta che consente alla luce diffusa di rimbalzare tra gli oggetti vicini. L'illuminazione indiretta nello spazio dello schermo funziona in modo molto simile all'occlusione ambientale nello spazio dello schermo, in quanto influisce solo su un intervallo limitato. È progettata per l'uso assieme a una forma di illuminazione globale appropriata, come SDFGI o :ref:`VoxelGI<class_VoxelGI>`. L'illuminazione indiretta nello spazio dello schermo non è influenzata dal valore :ref:`Light3D.light_indirect_energy<class_Light3D_property_light_indirect_energy>` di una luce individuale.
 
 \ **Nota:** SSIL è supportato solo nel metodo di rendering Forward+, non Mobile o Compatibilità.
 
@@ -1924,7 +1924,7 @@ Il moltiplicatore di luminosità per l'effetto di illuminazione indiretta dello 
 - |void| **set_ssil_normal_rejection**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssil_normal_rejection**\ (\ )
 
-Quantità di rigetto normale utilizzata nel calcolo dell'illuminazione indiretta dello spazio sullo schermo. La rigetto normale utilizza la normale di un dato punto campione per rigettare i campioni che sono rivolti lontano dal pixel attuale. Il rigetto normale è necessario per evitare perdite di luce quando è illuminato solo un lato di un oggetto. Tuttavia, il rigetto normale può essere disabilitato se si desidera la perdita di luce, ad esempio quando la scena contiene in gran parte oggetti emissivi che emettono luce da facce che non si possono vedere dalla telecamera.
+Quantità di rifiuto delle normali usata per calcolare l'illuminazione indiretta nello spazio dello schermo. Il rifiuto delle normali utilizza la normale di un certo punto campione per rifiutare i campioni rivolti lontano dal pixel attuale. Ciò serve per evitare le infiltrazioni di luce quando è illuminato un solo lato di un oggetto. Tuttavia, è possibile disabilitarlo se le infiltrazioni di luce sono desiderabili, ad esempio quando la scena contiene principalmente oggetti emissivi che emettono luce da facce non visibili dalla telecamera.
 
 .. rst-class:: classref-item-separator
 
@@ -1941,7 +1941,7 @@ Quantità di rigetto normale utilizzata nel calcolo dell'illuminazione indiretta
 - |void| **set_ssil_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssil_radius**\ (\ )
 
-La distanza che la luce rimbalzata può percorrere quando si usa l'effetto di illuminazione indiretta dello spazio dello schermo. Un valore più alto rimbalzerà la luce più lontano in una scena, ma potrebbe causare artefatti di sottocampionamento, che assomigliano a lunghe punte che circondano le sorgenti luminose.
+La distanza che la luce rimbalzata può percorrere usando l'effetto di illuminazione indiretta dello spazio dello schermo. Un valore più alto farà rimbalzare la luce più lontano in una scena, ma potrebbe causare artefatti di sottocampionamento, che assomigliano a lunghe punte attorno alle sorgenti luminose.
 
 .. rst-class:: classref-item-separator
 
@@ -1958,7 +1958,7 @@ La distanza che la luce rimbalzata può percorrere quando si usa l'effetto di il
 - |void| **set_ssil_sharpness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssil_sharpness**\ (\ )
 
-La quantità di sfocatura sui bordi degli oggetti per l'effetto di illuminazione indiretta dello spazio dello schermo. Un'impostazione troppo alta causerà l'aliasing sui bordi degli oggetti. Un'impostazione troppo bassa renderà i bordi degli oggetti sfocati.
+La quantità di sfocatura sui bordi degli oggetti per l'effetto di illuminazione indiretta nello spazio dello schermo. Un valore troppo alto farà comparire aliasing attorno ai bordi degli oggetti. Un valore troppo basso renderà i bordi degli oggetti sfocati.
 
 .. rst-class:: classref-item-separator
 
@@ -1975,7 +1975,7 @@ La quantità di sfocatura sui bordi degli oggetti per l'effetto di illuminazione
 - |void| **set_ssr_depth_tolerance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssr_depth_tolerance**\ (\ )
 
-La tolleranza di profondità per i riflessi sullo spazio dello schermo.
+La tolleranza di profondità per i riflessi nello spazio dello schermo.
 
 .. rst-class:: classref-item-separator
 
@@ -1992,11 +1992,11 @@ La tolleranza di profondità per i riflessi sullo spazio dello schermo.
 - |void| **set_ssr_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ssr_enabled**\ (\ )
 
-Se ``true``, i riflessi sullo spazio dello schermo sono abilitati. I riflessi sullo spazio dello schermo sono più precisi dei riflessi di :ref:`VoxelGI<class_VoxelGI>` o :ref:`ReflectionProbe<class_ReflectionProbe>`, ma sono più lenti e non possono riflettere le superfici occluse da altre.
+Se ``true``, i riflessi nello spazio dello schermo sono abilitati. I riflessi nello spazio dello schermo sono più precisi dei riflessi provenienti da :ref:`VoxelGI<class_VoxelGI>` o :ref:`ReflectionProbe<class_ReflectionProbe>`, ma sono più lenti e non possono riflettere le superfici occluse da altre.
 
-\ **Nota:** SSR è supportato solo nel metodo di rendering Forward+, non Mobile o Compatibilità.
+\ **Nota:** L'SSR è supportato solo nel metodo di rendering Forward+, non Mobile o Compatibilità.
 
-\ **Nota:** SSR non è supportato nelle viewport che hanno uno sfondo trasparente (dove :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` è ``true``).
+\ **Nota:** L'SSR non è supportato nelle viewport che hanno uno sfondo trasparente (dove :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` è ``true``).
 
 .. rst-class:: classref-item-separator
 
@@ -2013,7 +2013,7 @@ Se ``true``, i riflessi sullo spazio dello schermo sono abilitati. I riflessi su
 - |void| **set_ssr_fade_in**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssr_fade_in**\ (\ )
 
-La distanza di dissolvenza in entrata per i riflessi sullo spazio dello schermo. Influisce sull'area dal materiale riflesso al riflesso sullo spazio dello schermo. Sono validi solo i valori positivi (i valori negativi saranno limitati a ``0.0``).
+La distanza di dissolvenza in entrata per i riflessi nello spazio dello schermo. Influisce sull'area dal materiale riflesso al riflesso nello spazio dello schermo. Sono validi solo i valori positivi (i valori negativi saranno limitati a ``0.0``).
 
 .. rst-class:: classref-item-separator
 
@@ -2030,7 +2030,7 @@ La distanza di dissolvenza in entrata per i riflessi sullo spazio dello schermo.
 - |void| **set_ssr_fade_out**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ssr_fade_out**\ (\ )
 
-La distanza di dissolvenza in uscita per i riflessi dello spazio dello schermo. Influisce sull'area dal riflesso sullo spazio dello schermo al riflesso "globale". Sono validi solo i valori positivi (i valori negativi saranno limitati a ``0.0``).
+La distanza di dissolvenza in uscita per i riflessi nello spazio dello schermo. Influisce sull'area dal riflesso nello spazio dello schermo al riflesso "globale". Sono validi solo i valori positivi (i valori negativi saranno limitati a ``0.0``).
 
 .. rst-class:: classref-item-separator
 
@@ -2047,7 +2047,7 @@ La distanza di dissolvenza in uscita per i riflessi dello spazio dello schermo. 
 - |void| **set_ssr_max_steps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_ssr_max_steps**\ (\ )
 
-Il numero massimo di passaggi per i riflessi sullo spazio dello schermo. I valori più alti sono più lenti.
+Il numero massimo di passaggi per i riflessi nello spazio dello schermo. I valori più alti sono più lenti.
 
 .. rst-class:: classref-item-separator
 
@@ -2064,7 +2064,7 @@ Il numero massimo di passaggi per i riflessi sullo spazio dello schermo. I valor
 - |void| **set_tonemap_agx_contrast**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tonemap_agx_contrast**\ (\ )
 
-Increasing :ref:`tonemap_agx_contrast<class_Environment_property_tonemap_agx_contrast>` will make dark values darker and bright values brighter. Produces a higher quality result than :ref:`adjustment_contrast<class_Environment_property_adjustment_contrast>` without any additional performance cost, but is only available when using the :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` tonemapper.
+Aumentare :ref:`tonemap_agx_contrast<class_Environment_property_tonemap_agx_contrast>` renderà i valori scuri più scuri e i valori luminosi più luminosi. Produce un risultato di migliore qualità rispetto a :ref:`adjustment_contrast<class_Environment_property_adjustment_contrast>` senza alcun impatto in più sulle prestazioni, ma è disponibile solo quando si utilizza il mappatore :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2081,9 +2081,9 @@ Increasing :ref:`tonemap_agx_contrast<class_Environment_property_tonemap_agx_con
 - |void| **set_tonemap_agx_white**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_tonemap_agx_white**\ (\ )
 
-The white reference value for tonemapping, which indicates where bright white is located in the scale of values provided to the tonemapper. For photorealistic lighting, it is recommended to set :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` to at least ``6.0``. Higher values result in less blown out highlights, but may make the scene appear lower contrast. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` is the same as :ref:`tonemap_white<class_Environment_property_tonemap_white>`, but is only effective with the :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>` tonemapper. See also :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
+Il valore di riferimento bianco per la mappatura dei toni (detto anche "punto di bianco"), che indica dove si trova il bianco brillante nella scala di valori forniti al mappatore dei toni. Per un'illuminazione fotorealistica, si consiglia di impostare :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` ad almeno ``6.0``. Valori più alti rendono i chiari più spenti, ma potrebbero far apparire la scena meno contrastata. :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` è lo stesso di :ref:`tonemap_white<class_Environment_property_tonemap_white>`, ma funziona solo con il mappatore :ref:`TONE_MAPPER_AGX<class_Environment_constant_TONE_MAPPER_AGX>`. Vedi anche :ref:`tonemap_exposure<class_Environment_property_tonemap_exposure>`.
 
-\ **Note:** When using the Mobile renderer with :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` disabled, :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` is ignored and a white value of ``2.0`` will always be used instead. Otherwise, :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` will be dynamically adjusted at runtime by multiplying it by the parent window's :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` when using :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to ensure good behavior with both SDR and HDR output.
+\ **Nota:** Quando si utilizza il renderer Mobile con :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` disabilitato, :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` è ignorato e sarà sempre usato un valore di bianco pari a ``2.0``. Altrimenti, :ref:`tonemap_agx_white<class_Environment_property_tonemap_agx_white>` sarà regolato dinamicamente in fase di esecuzione moltiplicandolo per il :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` della finestra padre quando si utilizza :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` per garantire un buon comportamento con entrambi gli output SDR e HDR.
 
 .. rst-class:: classref-item-separator
 
@@ -2248,7 +2248,7 @@ La distribuzione delle dimensioni lungo la lunghezza del buffer dei froxel. Un v
 - |void| **set_volumetric_fog_emission**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_volumetric_fog_emission**\ (\ )
 
-La luce emessa dalla nebbia volumetrica. Anche con l'emissione, la nebbia volumetrica non proietterà luce su altre superfici. L'emissione è utile per stabilire un colore ambientale. Poiché l'effetto nebbia volumetrica utilizza solo la dispersione singola, la nebbia tende ad aver bisogno di un po' di emissione per ammorbidire le ombre brusche.
+La luce emessa dalla nebbia volumetrica. Anche con l'emissione, la nebbia volumetrica non proietterà luce su altre superfici. L'emissione è utile per stabilire un colore ambientale. Poiché l'effetto nebbia volumetrica utilizza solo la dispersione singola, la nebbia tende ad aver bisogno di un po' di emissione per sfumare le ombre troppo nette.
 
 .. rst-class:: classref-item-separator
 
@@ -2305,7 +2305,7 @@ Scala l'intensità dell'illuminazione globale utilizzata nel colore albedo della
 
 \ **Nota:** Questo non ha alcun effetto visibile se :ref:`volumetric_fog_density<class_Environment_property_volumetric_fog_density>` è ``0.0`` o se :ref:`volumetric_fog_albedo<class_Environment_property_volumetric_fog_albedo>` è un colore completamente nero.
 
-\ **Nota:** Solo :ref:`VoxelGI<class_VoxelGI>` e SDFGI (:ref:`sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) sono presi in considerazione quando si utilizza :ref:`volumetric_fog_gi_inject<class_Environment_property_volumetric_fog_gi_inject>`. L'illuminazione globale da :ref:`LightmapGI<class_LightmapGI>`, :ref:`ReflectionProbe<class_ReflectionProbe>`, e SSIL (vedere :ref:`ssil_enabled<class_Environment_property_ssil_enabled>`) sarà ignorata dalla nebbia volumetrica.
+\ **Nota:** Solo :ref:`VoxelGI<class_VoxelGI>` e SDFGI (:ref:`sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) sono presi in considerazione quando si utilizza :ref:`volumetric_fog_gi_inject<class_Environment_property_volumetric_fog_gi_inject>`. L'illuminazione globale da :ref:`LightmapGI<class_LightmapGI>`, :ref:`ReflectionProbe<class_ReflectionProbe>`, e SSIL (vedi :ref:`ssil_enabled<class_Environment_property_ssil_enabled>`) sarà ignorata dalla nebbia volumetrica.
 
 .. rst-class:: classref-item-separator
 
@@ -2410,7 +2410,7 @@ Imposta l'intensità del livello di bagliore all'indice ``idx``. Un valore super
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

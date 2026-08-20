@@ -14,7 +14,7 @@ Importa un'immagine da utilizzare nel rendering 2D o 3D.
 Descrizione
 ----------------------
 
-Questo importatore importa risorse :ref:`CompressedTexture2D<class_CompressedTexture2D>`. Se hai bisogno di elaborare l'immagine negli script in modo più conveniente, usa invece :ref:`ResourceImporterImage<class_ResourceImporterImage>`. Vedi anche :ref:`ResourceImporterLayeredTexture<class_ResourceImporterLayeredTexture>`.
+Questo importatore importa risorse :ref:`CompressedTexture2D<class_CompressedTexture2D>`. Se hai bisogno di elaborare l'immagine negli script in modo più conveniente, usa :ref:`ResourceImporterImage<class_ResourceImporterImage>` al suo posto. Vedi anche :ref:`ResourceImporterLayeredTexture<class_ResourceImporterLayeredTexture>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -100,11 +100,11 @@ Descrizioni delle proprietà
 
 :ref:`int<class_int>` **compress/channel_pack** = ``0`` :ref:`🔗<class_ResourceImporterTexture_property_compress/channel_pack>`
 
-Controls how color channels should be used in the imported texture.
+Controlla come bisogna utilizzare i canali del colore nella texture importata.
 
-\ **sRGB Friendly:** Prevents the R and RG color formats from being used, as they do not support nonlinear sRGB encoding.
+\ **sRGB Friendly:** Impedisce l'uso dei formati colore R e RG, poiché non supportano la codifica sRGB non lineare.
 
-\ **Optimized:** Allows the RG color format to be used if the texture does not use the blue channel. This reduces memory usage if the texture's blue channel can be discarded (all pixels must have a blue value of ``0``).
+\ **Optimized:** Consente l'uso del formato colore RG se la texture non utilizza il canale blu. Ciò riduce l'utilizzo di memoria se il canale blu della texture può essere scartato (tutti i pixel devono avere un valore blu pari a ``0``).
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ La modifica di questa opzione in **Disabled** e la successiva reimportazione non
 
 :ref:`bool<class_bool>` **editor/convert_colors_with_editor_theme** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_editor/convert_colors_with_editor_theme>`
 
-Se ``true``, converte i colori dell'immagine importata per abbinarli a :ref:`EditorSettings.interface/theme/icon_and_font_color<class_EditorSettings_property_interface/theme/icon_and_font_color>`. Ciò presuppone che l'immagine utilizzi esattamente gli stessi colori della :doc:`tavolozza di colori di Godot per le icone dell'editor <../contributing/development/editor/creating_icons>`, con il file sorgente progettato per un tema scuro dell'editor. Dovrebbe essere abilitato per le icone delle estensioni dell'editor e le icone delle classi personalizzate, ma dovrebbe essere lasciato disabilitato altrimenti.
+Se ``true``, converte i colori dell'immagine importata per abbinarli a :ref:`EditorSettings.interface/theme/icon_and_font_color<class_EditorSettings_property_interface/theme/icon_and_font_color>`. Ciò presuppone che l'immagine utilizzi esattamente gli stessi colori della :doc:`tavolozza di colori di Godot per le icone dell'editor <../contributing/development/editor/creating_icons>`, con il file sorgente progettato per un tema scuro dell'editor. Dovrebbe essere abilitata per le icone delle estensioni dell'editor e le icone delle classi personalizzate, altrimenti dovrebbe rimanere disabilitata.
 
 \ **Nota:** Disponibile solo per le immagini SVG.
 
@@ -258,9 +258,9 @@ Se ``true``, converte i colori dell'immagine importata per abbinarli a :ref:`Edi
 
 :ref:`bool<class_bool>` **editor/scale_with_editor_scale** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_editor/scale_with_editor_scale>`
 
-If ``true``, scales the imported image to match :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`. This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise.
+Se ``true``, ridimensiona l'immagine importata in modo che corrisponda a :ref:`EditorSettings.interface/editor/appearance/custom_display_scale<class_EditorSettings_property_interface/editor/appearance/custom_display_scale>`. Dovrebbe essere abilitata per le icone delle estensioni dell'editor e le icone delle classi personalizzate, altrimenti dovrebbe rimanere disabilitata..
 
-\ **Note:** Only available for SVG images.
+\ **Nota:** Disponibile solo per le immagini SVG.
 
 .. rst-class:: classref-item-separator
 
@@ -454,9 +454,9 @@ Si consiglia di lasciare questa opzione abilitata (come è predefinito), a meno 
 
 :ref:`bool<class_bool>` **process/hdr_as_srgb** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_process/hdr_as_srgb>`
 
-Some HDR images you can find online may be broken and contain data that is encoded using the nonlinear sRGB transfer function (instead of using linear encoding). It is advised not to use those files. If you absolutely have to, enabling :ref:`process/hdr_as_srgb<class_ResourceImporterTexture_property_process/hdr_as_srgb>` will make them look correct.
+Alcune immagini HDR ritrovabili online potrebbero essere incorrette e contenere dati codificati attraverso la funzione di trasferimento non lineare sRGB (anziché una codifica lineare). Si consiglia di non utilizzare tali file. Se è proprio necessario, abilitando :ref:`process/hdr_as_srgb<class_ResourceImporterTexture_property_process/hdr_as_srgb>` appariranno corrette.
 
-\ **Warning:** Enabling :ref:`process/hdr_as_srgb<class_ResourceImporterTexture_property_process/hdr_as_srgb>` on well-formatted HDR images will cause the resulting image to look too dark, so leave this on ``false`` if unsure.
+\ **Attenzione:** Abilitare :ref:`process/hdr_as_srgb<class_ResourceImporterTexture_property_process/hdr_as_srgb>` sulle immagini HDR ben formattate risulterà in un'immagine troppo scura, quindi lascialo su ``false`` in caso di dubbio.
 
 .. rst-class:: classref-item-separator
 
@@ -500,11 +500,11 @@ Se ``true``, converte la mappa normale da Y- (stile DirectX) a Y+ (stile OpenGL)
 
 :ref:`bool<class_bool>` **process/premult_alpha** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_process/premult_alpha>`
 
-An alternative to fixing darkened borders with :ref:`process/fix_alpha_border<class_ResourceImporterTexture_property_process/fix_alpha_border>` is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. A premultiplied alpha texture requires specific materials to be displayed correctly:
+Un'alternativa per correggere i bordi scuriti con :ref:`process/fix_alpha_border<class_ResourceImporterTexture_property_process/fix_alpha_border>` è quella di usare un alfa premoltiplicato. Abilitando questa opzione, la texture sarà convertita in questo formato. Una texture con alfa premoltiplicato richiede materiali specifici per essere visualizzata correttamente:
 
-- In 2D, a :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` will need to be created and configured to use the :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on :ref:`CanvasItem<class_CanvasItem>`\ s that use this texture. In custom ``canvas_item`` shaders, ``render_mode blend_premul_alpha;`` should be used.
+- In 2D, sarà necessario creare un :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` e configurarlo per usare la modalità di fusione :ref:`CanvasItemMaterial.BLEND_MODE_PREMULT_ALPHA<class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA>` sui :ref:`CanvasItem<class_CanvasItem>` che usano questa texture. Negli shader ``canvas_item`` personalizzati, si dovrebbe usare ``render_mode blend_premul_alpha;``.
 
-- In 3D, a :ref:`BaseMaterial3D<class_BaseMaterial3D>` will need to be created and configured to use the :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` blend mode on materials that use this texture. In custom ``spatial`` shaders, ``render_mode blend_premul_alpha;`` should be used.
+- In 3D, sarà necessario creare un :ref:`BaseMaterial3D<class_BaseMaterial3D>` e configurarlo per usare la modalità di fusione :ref:`BaseMaterial3D.BLEND_MODE_PREMULT_ALPHA<class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA>` sui materiali che usano questa texture. Negli shader ``spatial`` personalizzati, si dovrebbe usare ``render_mode blend_premul_alpha;``.
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ An alternative to fixing darkened borders with :ref:`process/fix_alpha_border<cl
 
 Se impostato su un valore maggiore di ``0``, le dimensioni della texture sono limitate all'importazione a un valore inferiore o uguale al valore specificato qui. Per le texture non quadrate, il limite di dimensioni influisce sulla dimensione più lunga, con la dimensione più corta ridimensionata per preservare le proporzioni. Il ridimensionamento è effettuato attraverso un interpolazione cubica.
 
-Questo può essere utilizzato per ridurre l'utilizzo della memoria senza influire sulle immagini di origine, oppure per evitare problemi di texture non visualizzate sulle piattaforme mobili o web (in quanto queste solitamente non possono visualizzare texture più grandi di 4096×4096).
+Questo può servire per ridurre l'utilizzo della memoria senza influire sulle immagini di origine, oppure per evitare problemi di texture non visualizzate sulle piattaforme mobili o web (in quanto queste solitamente non possono visualizzare texture più grandi di 4096×4096).
 
 \ **Nota:** Anche se impostato su ``0``, le dimensioni di importazione sono limitate alle seguenti dimensioni per motivi tecnici. A seconda di :ref:`compress/mode<class_ResourceImporterTexture_property_compress/mode>`, le texture saranno sottocampionate all'importazione se necessario:
 
@@ -572,7 +572,7 @@ La scala in cui deve essere renderizzato l'SVG, con ``1.0`` rappresentate la dim
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

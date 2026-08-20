@@ -14,9 +14,9 @@ Una :ref:`Resource<class_Resource>` che contiene la geometria basata su array di
 Descrizione
 ----------------------
 
-ImporterMesh is a type of :ref:`Resource<class_Resource>` analogous to :ref:`ArrayMesh<class_ArrayMesh>`. It contains vertex array-based geometry, divided in *surfaces*. Each surface contains a completely separate array and a material used to draw it. Design wise, a mesh with multiple surfaces is preferred to a single surface, because objects created in 3D editing software commonly contain multiple materials.
+ImporterMesh è un tipo di :ref:`Resource<class_Resource>` analogo a :ref:`ArrayMesh<class_ArrayMesh>`. Contiene una geometria basata su array di vertici, divisa in *superfici*. Ogni superficie contiene un array completamente separato e un materiale utilizzato per disegnarla. Per gli sviluppatori, una mesh con più superfici è preferita a una singola superficie, perché gli oggetti creati nei software di modifica 3D spesso contengono più materiali.
 
-Unlike its runtime counterpart, **ImporterMesh** contains mesh data before various import steps, such as LOD and shadow mesh generation, have taken place. Modify surface data by calling :ref:`clear()<class_ImporterMesh_method_clear>`, followed by :ref:`add_surface()<class_ImporterMesh_method_add_surface>` for each surface.
+A differenza della sua controparte in fase di esecuzione, **ImporterMesh** contiene i dati della mesh prima che siano effettuati vari passaggi di importazione, come la generazione degli LOD e delle mesh per le ombre. Modifica i dati delle superfici chiamando :ref:`clear()<class_ImporterMesh_method_clear>`, seguito da :ref:`add_surface()<class_ImporterMesh_method_add_surface>` per ogni superficie.
 
 .. rst-class:: classref-reftable-group
 
@@ -141,7 +141,7 @@ Rimuove tutte le superfici e le forme di fusione da questo **ImporterMesh**.
 
 :ref:`ImporterMesh<class_ImporterMesh>` **from_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`\ ) |static| :ref:`🔗<class_ImporterMesh_method_from_mesh>`
 
-Converts the given :ref:`Mesh<class_Mesh>` into an **ImporterMesh** by copying all its surfaces, blend shapes, materials, and metadata into a new **ImporterMesh** object.
+Converte la :ref:`Mesh<class_Mesh>` fornita in un **ImporterMesh** copiando tutte le sue superfici, le forme di fusione, i materiali e i metadati in un nuovo oggetto **ImporterMesh**.
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +285,7 @@ Restituisce il formato della superficie che la mesh tiene.
 
 :ref:`int<class_int>` **get_surface_lod_count**\ (\ surface_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_surface_lod_count>`
 
-Restituisce il numero di LOD che la mesh mantiene su una data superficie.
+Restituisce il numero di LOD che la mesh contiene su una determinata superficie.
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ Restituisce il numero di LOD che la mesh mantiene su una data superficie.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_surface_lod_indices**\ (\ surface_idx\: :ref:`int<class_int>`, lod_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_surface_lod_indices>`
 
-Restituisce il buffer di indice di un LOD per una superficie.
+Restituisce il buffer di indici di un LOD per una superficie.
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Restituisce il buffer di indice di un LOD per una superficie.
 
 :ref:`float<class_float>` **get_surface_lod_size**\ (\ surface_idx\: :ref:`int<class_int>`, lod_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ImporterMesh_method_get_surface_lod_size>`
 
-Restituisce il rapporto schermo che attiva un LOD per una superficie.
+Restituisce il rapporto sullo schermo che attiva un LOD per una superficie.
 
 .. rst-class:: classref-item-separator
 
@@ -357,11 +357,11 @@ Restituisce il tipo di primitiva della superficie richiesta (vedi :ref:`add_surf
 
 :ref:`ImporterMesh<class_ImporterMesh>` **merge_importer_meshes**\ (\ importer_meshes\: :ref:`Array<class_Array>`\[:ref:`ImporterMesh<class_ImporterMesh>`\], relative_transforms\: :ref:`Array<class_Array>`\[:ref:`Transform3D<class_Transform3D>`\], deduplicate_surfaces\: :ref:`bool<class_bool>` = true\ ) |static| :ref:`🔗<class_ImporterMesh_method_merge_importer_meshes>`
 
-Merges multiple **ImporterMesh**\ es into a single **ImporterMesh**. Each input mesh is transformed by the corresponding :ref:`Transform3D<class_Transform3D>` in the ``relative_transforms`` array, which must be the same size as ``importer_meshes``. Negative scales are supported, and the winding order in the mesh data will be corrected to account for this.
+Unisce più **ImporterMesh** in un singolo **ImporterMesh**. Ogni mesh di input viene trasformata dalla corrispondente :ref:`Transform3D<class_Transform3D>` presente nell'array ``relative_transforms``, il quale deve avere le stesse dimensioni di ``importer_meshes``. Sono supportate le scale negative, e l'ordine di avvolgimento nei dati della mesh verrà corretto per tenerne conto.
 
-If ``deduplicate_surfaces`` is ``true`` and multiple meshes have surfaces with the same names and formats, the surfaces will be merged together when the meshes are merged, and will use the material from the first matching surface. This is useful for reducing the number of surfaces in the resulting mesh, and avoids duplicating materials. Surfaces with bone weights will never be deduplicated. If ``deduplicate_surfaces`` is ``false``, the surfaces will always be kept separate, and will be given unique names.
+Se ``deduplicate_surfaces`` è ``true`` e più mesh contengono superfici con gli stessi nomi e formati, le superfici verranno unite durante l'unione delle mesh, e verrà utilizzato il materiale della prima superficie corrispondente. Ciò è utile per ridurre il numero di superfici nella mesh risultante ed evitare di duplicare i materiali. Le superfici con pesi d'ossa non saranno mai deduplicate. Se ``deduplicate_surfaces`` è ``false``, le superfici saranno sempre mantenute separate e a ciascuna sarà assegnato un nome univoco.
 
-\ **Warning:** Blend shapes and LODs are not supported and will be discarded. Do not use this function to discard blend shapes and LODs, as support for these may be added in the future.
+\ **Attenzione:** Le forme di fusione e gli LOD non sono supportati e verranno scartati. Non utilizzare questa funzione per scartare forme di fusione e LOD, poiché il supporto per questi potrebbe essere aggiunto in futuro.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ Imposta un nome per una determinata superficie.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

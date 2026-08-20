@@ -18,7 +18,7 @@ Descrizione
 
 **AnimatedTexture** è un formato di risorse per animazioni basate su fotogrammi, in cui più texture possono essere concatenate automaticamente con un ritardo predefinito per ogni fotogrammi. A differenza di :ref:`AnimationPlayer<class_AnimationPlayer>` o :ref:`AnimatedSprite2D<class_AnimatedSprite2D>`, non è un :ref:`Node<class_Node>`, ma ha il vantaggio di essere utilizzabile ovunque sia possibile utilizzare una risorsa :ref:`Texture2D<class_Texture2D>`, ad esempio in un :ref:`TileSet<class_TileSet>`.
 
-La riproduzione dell'animazione è controllata dalla proprietà :ref:`speed_scale<class_AnimatedTexture_property_speed_scale>`, così come dalla durata di ogni frame (vedere :ref:`set_frame_duration()<class_AnimatedTexture_method_set_frame_duration>`). L'animazione si ripete, ovvero ripartirà automaticamente dal fotogramma 0 dopo aver riprodotto l'ultimo fotogramma.
+La riproduzione dell'animazione è controllata dalla proprietà :ref:`speed_scale<class_AnimatedTexture_property_speed_scale>`, così come dalla durata di ogni frame (vedi :ref:`set_frame_duration()<class_AnimatedTexture_method_set_frame_duration>`). L'animazione si ripete, ovvero ripartirà automaticamente dal fotogramma 0 dopo aver riprodotto l'ultimo fotogramma.
 
 \ **AnimatedTexture** attualmente richiede che tutte le texture dei fotogrammi abbiano le stesse dimensioni, altrimenti quelle più grandi verranno ritagliate per adattarsi a quella più piccola.
 
@@ -232,7 +232,7 @@ Puoi definire un numero qualsiasi di texture fino a :ref:`MAX_FRAMES<class_Anima
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

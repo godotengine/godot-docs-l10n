@@ -12,7 +12,7 @@ Callable
 Описание
 ----------------
 
-**Callable** is a built-in :ref:`Variant<class_Variant>` type that represents a function. It can either be a method within an :ref:`Object<class_Object>` instance, or a custom callable used for different purposes (see :ref:`is_custom()<class_Callable_method_is_custom>`). Like all :ref:`Variant<class_Variant>` types, it can be stored in variables and passed to other functions. It is most commonly used for signal callbacks.
+**Callable** — это встроенный тип :ref:`Variant<class_Variant>`, представляющий функцию. Он может быть либо методом в экземпляре :ref:`Object<class_Object>`, либо пользовательской вызываемой функцией, используемой для других целей (см. :ref:`is_custom()<class_Callable_method_is_custom>`). Как и все типы :ref:`Variant<class_Variant>`, он может храниться в переменных и передаваться другим функциям. Чаще всего он используется для обратных вызовов сигналов.
 
 
 .. tabs::
@@ -24,13 +24,13 @@ Callable
 
     func test():
         var callable = Callable(self, "print_args")
-        callable.call("hello", "world")  # Prints "hello world ".
-        callable.call(Vector2.UP, 42, callable)  # Prints "(0.0, -1.0) 42 Node(node.gd)::print_args"
-        callable.call("invalid")  # Invalid call, should have at least 2 arguments.
+        callable.call("hello", "world")  # Выводит "hello world ".
+        callable.call(Vector2.UP, 42, callable)  # Выводит "(0.0, -1.0) 42 Node(node.gd)::print_args"
+        callable.call("invalid")  # Недопустимый вызов, должен содержать как минимум 2 аргумента.
 
  .. code-tab:: csharp
 
-    // Default parameter values are not supported.
+    // Значения параметров по умолчанию не поддерживаются.
     public void PrintArgs(Variant arg1, Variant arg2, Variant arg3 = default)
     {
         GD.PrintS(arg1, arg2, arg3);
@@ -38,16 +38,16 @@ Callable
 
     public void Test()
     {
-        // Invalid calls fail silently.
+        // Некорректные вызовы завершаются с ошибкой без предупреждения.
         Callable callable = new Callable(this, MethodName.PrintArgs);
-        callable.Call("hello", "world"); // Default parameter values are not supported, should have 3 arguments.
-        callable.Call(Vector2.Up, 42, callable); // Prints "(0, -1) 42 Node(Node.cs)::PrintArgs"
-        callable.Call("invalid"); // Invalid call, should have 3 arguments.
+        callable.Call("hello", "world"); // Значения параметров по умолчанию не поддерживаются, должно быть 3 аргумента.
+        callable.Call(Vector2.Up, 42, callable); // Выводит "(0, -1) 42 Node(Node.cs)::PrintArgs"
+        callable.Call("invalid"); // Недопустимый вызов, должен содержать 3 аргумента.
     }
 
 
 
-In GDScript, it's possible to create lambda functions within a method. Lambda functions are custom callables that are not associated with an :ref:`Object<class_Object>` instance. Optionally, lambda functions can also be named. The name will be displayed in the debugger, or when calling :ref:`get_method()<class_Callable_method_get_method>`.
+В GDScript можно создавать лямбда-функции внутри метода. Лямбда-функции — это вызываемые функции, не связанные с экземпляром :ref:`Object<class_Object>`. При желании лямбда-функции также могут быть именованы. Имя будет отображаться в отладчике или при вызове :ref:`get_method()<class_Callable_method_get_method>`.
 
 ::
 
@@ -55,33 +55,33 @@ In GDScript, it's possible to create lambda functions within a method. Lambda fu
         var my_lambda = func (message):
             print(message)
 
-        # Prints "Hello everyone!"
+        # Выводит "Hello everyone!"
         my_lambda.call("Hello everyone!")
 
-        # Prints "Attack!", when the button_pressed signal is emitted.
+        # Выводит "Attack!" при срабатывании сигнала button_pressed.
         button_pressed.connect(func(): print("Attack!"))
 
-In GDScript, you can access methods and global functions as **Callable**\ s:
+В GDScript доступ к методам и глобальным функциям осуществляется через **Callable**:
 
 ::
 
-    tween.tween_callback(node.queue_free)  # Object methods.
-    tween.tween_callback(array.clear)  # Methods of built-in types.
-    tween.tween_callback(print.bind("Test"))  # Global functions.
+    tween.tween_callback(node.queue_free)  # Методы объекта.
+    tween.tween_callback(array.clear)  # Методы встроенных типов.
+    tween.tween_callback(print.bind("Test"))  # Глобальные функции.
 
-\ **Note:** :ref:`Dictionary<class_Dictionary>` does not support the above due to ambiguity with keys.
+\ **Примечание:** :ref:`Dictionary<class_Dictionary>` не поддерживает вышеуказанное из-за неоднозначности с ключами.
 
 ::
 
     var dictionary = { "hello": "world" }
 
-    # This will not work, `clear` is treated as a key.
+    # Это не сработает, `clear` рассматривается как ключ.
     tween.tween_callback(dictionary.clear)
 
-    # This will work.
+    # Это сработает.
     tween.tween_callback(Callable.create(dictionary, "clear"))
 
-\ **Note:** In a boolean context, a callable will evaluate to ``false`` if it's null (see :ref:`is_null()<class_Callable_method_is_null>`). Otherwise, a callable will always evaluate to ``true``.
+\ **Примечание:** В контексте логических значений вызываемая функция вернет значение ``false``, если она равна null (см. :ref:`is_null()<class_Callable_method_is_null>`). В противном случае вызываемая функция всегда вернет значение ``true``.
 
 .. note::
 

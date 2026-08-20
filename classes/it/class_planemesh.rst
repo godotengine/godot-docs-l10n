@@ -16,9 +16,9 @@ Classe che rappresenta una :ref:`PrimitiveMesh<class_PrimitiveMesh>` planare.
 Descrizione
 ----------------------
 
-Classe che rappresenta una :ref:`PrimitiveMesh<class_PrimitiveMesh>` planare. Questa mesh piatta non ha spessore. Per impostazione predefinita, questa mesh è allineata sugli assi X e Z; questa rotazione predefinita non è adatta per l'uso con materiali con il billboard abilitato. Per i materiali con il billboard abilitato, cambia :ref:`orientation<class_PlaneMesh_property_orientation>` in :ref:`FACE_Z<class_PlaneMesh_constant_FACE_Z>`.
+Classe che rappresenta una :ref:`PrimitiveMesh<class_PrimitiveMesh>` planare. Questa mesh piatta non ha spessore. Per impostazione predefinita, questa mesh è allineata sugli assi X e Z; questa rotazione predefinita non è adatta per l'uso con materiali con il billboard abilitato. Per tali materiali, cambia :ref:`orientation<class_PlaneMesh_property_orientation>` in :ref:`FACE_Z<class_PlaneMesh_constant_FACE_Z>`.
 
-\ **Nota:** Quando si usa un enorme **PlaneMesh** con texture (ad esempio come un pavimento), potresti imbatterti in problemi di jittering degli UV a seconda dell'angolazione della telecamera. Per risolvere questo problema, aumenta :ref:`subdivide_depth<class_PlaneMesh_property_subdivide_depth>` e :ref:`subdivide_width<class_PlaneMesh_property_subdivide_width>` finché non noti più alcun jittering degli UV.
+\ **Nota:** Utilizzando un enorme **PlaneMesh** texturizzata (ad esempio, come pavimento), potresti imbatterti in problemi di tremolii dell'UV a seconda dell'angolazione della telecamera. Per rimediare, aumenta :ref:`subdivide_depth<class_PlaneMesh_property_subdivide_depth>` e :ref:`subdivide_width<class_PlaneMesh_property_subdivide_width>` finché non noti più alcun tremolio dell'UV.
 
 .. rst-class:: classref-reftable-group
 
@@ -173,7 +173,7 @@ Numero di suddivisioni lungo l'asse X.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

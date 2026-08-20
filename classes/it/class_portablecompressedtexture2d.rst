@@ -198,7 +198,7 @@ Se ``true``, quando in esecuzione nell'editor, questa classe manterrà i dati co
 - |void| **set_size_override**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_size_override**\ (\ )
 
-Allows overriding the texture's size (for 2D only).
+Consente di sovrascrivere le dimensioni della texture (solo per 2D).
 
 .. rst-class:: classref-section-separator
 
@@ -255,9 +255,9 @@ Restituisce ``true`` se il flag è sovrascritto per tutte le texture di questo t
 
 |void| **set_basisu_compressor_params**\ (\ uastc_level\: :ref:`int<class_int>`, rdo_quality_loss\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PortableCompressedTexture2D_method_set_basisu_compressor_params>`
 
-Sets the compressor parameters for Basis Universal compression. See also the settings in :ref:`ResourceImporterTexture<class_ResourceImporterTexture>`.
+Imposta i parametri del compressore per la compressione Basis Universal. Consulta anche le impostazioni in :ref:`ResourceImporterTexture<class_ResourceImporterTexture>`.
 
-\ **Note:** This method must be called before :ref:`create_from_image()<class_PortableCompressedTexture2D_method_create_from_image>` for this to work.
+\ **Nota:** Questo metodo deve essere chiamato prima di :ref:`create_from_image()<class_PortableCompressedTexture2D_method_create_from_image>` affinché funzioni.
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ Se ``keep`` is ``true``, sovrascrive il flag globalmente per tutte le texture di
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

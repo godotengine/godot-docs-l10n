@@ -184,17 +184,17 @@ ResourceImporterDynamicFont
 
 :ref:`int<class_int>` **hinting** = ``3`` :ref:`🔗<class_ResourceImporterDynamicFont_property_hinting>`
 
-The hinting mode to use. This controls how aggressively glyph edges should be snapped to pixels when rasterizing the font. Depending on personal preference, you may prefer using one hinting mode over the other. Hinting modes other than **None** are only effective if the font contains hinting data (see :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`).
+Режим хинтинга. Этот параметр определяет, насколько агрессивно края глифов должны привязываться к пикселям при растеризации шрифта. В зависимости от личных предпочтений, вы можете предпочесть один режим хинтинга другому. Режимы хинтинга, отличные от **None**, эффективны только в том случае, если шрифт содержит данные хинтинга (см. :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`).
 
-\ **None:** Smoothest appearance, which can make the font look blurry at small sizes.
+\ **None:** Наиболее плавный вид, который может сделать шрифт размытым при малых размерах.
 
-\ **Light:** Sharp result by snapping glyph edges to pixels on the Y axis only.
+\ **Light:** Резкий результат за счет привязки краев глифов к пикселям только по оси Y.
 
-\ **Normal:** Sharpest by snapping glyph edges to pixels on both X and Y axes.
+\ **Normal:** Наиболее резкий результат за счет привязки краев глифов к пикселям как по оси X, так и по оси Y.
 
-\ **Light (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Light** for other fonts.
+\ **Light (Except Pixel Fonts):** **Отключено** для пиксельных шрифтов (контуры каждого глифа содержат только прямые горизонтальные и вертикальные линии), **Light** для других шрифтов.
 
-\ **Normal (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Normal** for other fonts.
+\ **Normal (Except Pixel Fonts:** **Отключено** для пиксельных шрифтов (контуры каждого глифа содержат только прямые горизонтальные и вертикальные линии), **Normal** для других шрифтов.
 
 .. rst-class:: classref-item-separator
 
@@ -328,17 +328,17 @@ The hinting mode to use. This controls how aggressively glyph edges should be sn
 
 :ref:`int<class_int>` **subpixel_positioning** = ``4`` :ref:`🔗<class_ResourceImporterDynamicFont_property_subpixel_positioning>`
 
-Subpixel positioning improves font rendering appearance, especially at smaller font sizes. The downside is that it takes more time to initially render the font, which can cause stuttering during gameplay, especially if used with large font sizes. This should be set to **Disabled** for fonts with a pixel art appearance.
+Субпиксельное позиционирование улучшает внешний вид шрифта, особенно при малых размерах шрифта. Недостаток заключается в том, что первоначальное отображение шрифта занимает больше времени, что может вызывать подтормаживания во время игры, особенно при использовании больших размеров шрифта. Для шрифтов с пиксельной графикой этот параметр следует установить в **Disabled**.
 
-\ **Disabled:** No subpixel positioning. Lowest quality, fastest rendering.
+\ **Disabled:** Субпиксельное позиционирование не используется. Самое низкое качество, самое быстрое отображение.
 
-\ **Auto:** Use subpixel positioning at small font sizes (the chosen quality varies depending on font size). Large fonts will not use subpixel positioning. This is a good tradeoff between performance and quality.
+\ **Auto:** Использовать субпиксельное позиционирование при малых размерах шрифта (выбранное качество зависит от размера шрифта). Для больших шрифтов субпиксельное позиционирование не используется. Это хороший компромисс между производительностью и качеством.
 
-\ **One Half of a Pixel:** Always perform intermediate subpixel positioning regardless of font size. High quality, slow rendering.
+\ **One Half of a Pixel:** Всегда выполнять промежуточное субпиксельное позиционирование независимо от размера шрифта. Высокое качество, самое медленное отображение.
 
-\ **One Quarter of a Pixel:** Always perform precise subpixel positioning regardless of font size. Highest quality, slowest rendering.
+\ **One Quarter of a Pixel:** Всегда выполнять точное субпиксельное позиционирование независимо от размера шрифта. Самое высокое качество, самое медленное отображение.
 
-\ **Auto (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Auto** for other fonts.
+\ **Auto (Except Pixel Fonts):** **Отключено** для пиксельных шрифтов (контуры каждого глифа содержат только прямые горизонтальные и вертикальные линии), **Auto** для других шрифтов.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -254,7 +254,7 @@ Restituisce la matrice di proiezione per la vista fornita sotto forma di un :ref
 
 :ref:`Vector2<class_Vector2>` **_get_render_target_size**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_render_target_size>`
 
-Restituisce le dimensioni delle nostre destinazioni di rendering per questa interfaccia, ciò sovrascrive le dimensioni della :ref:`Viewport<class_Viewport>` contrassegnata come la viewport per XR.
+Restituisce le dimensioni delle nostre destinazioni di rendering per questa interfaccia, le quali sovrascrivono le dimensioni della :ref:`Viewport<class_Viewport>` contrassegnata come la viewport per XR.
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ Restituisce un :ref:`Dictionary<class_Dictionary>` con informazioni di sistema r
 
 :ref:`TrackingStatus<enum_XRInterface_TrackingStatus>` **_get_tracking_status**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_tracking_status>`
 
-Returns the current status of our tracking.
+Restituisce lo stato attuale del nostro tracciamento.
 
 .. rst-class:: classref-item-separator
 
@@ -568,7 +568,7 @@ Restituisce un :ref:`RID<class_RID>` valido per una texture su cui dovremmo rend
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

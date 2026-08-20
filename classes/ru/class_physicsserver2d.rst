@@ -2086,7 +2086,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_PhysicsServer2D_ProcessInfo>`
 
 |void| **body_set_shape_as_one_way_collision**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`, margin\: :ref:`float<class_float>`, direction\: :ref:`Vector2<class_Vector2>` = Vector2(0, 1)\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_shape_as_one_way_collision>`
 
-Sets the one-way collision properties of the body's shape with the given index. If ``enable`` is ``true``, the one-way collision direction given by ``direction`` in the shape's local space (that is ``body_get_shape_transform(body, shape_idx).basis_xform(direction).normalized()`` in the body's local space) will be used to ignore collisions with the shape in the opposite direction, and to ensure depenetration of kinematic bodies happens in this direction.
+Задает свойства одностороннего столкновения формы тела с заданным индексом. Если ``enable`` равно ``true``, направление одностороннего столкновения, заданное ``direction`` в локальном пространстве формы (то есть ``body_get_shape_transform(body, shape_idx).basis_xform(direction).normalized()`` в локальном пространстве тела), будет использоваться для игнорирования столкновений с формой в противоположном направлении и для обеспечения депенетрации кинематических тел в этом направлении.
 
 .. rst-class:: classref-item-separator
 

@@ -79,7 +79,7 @@ Il parametro sarà abbinato al nodo contenente lo :ref:`ShaderMaterial<class_Sha
 
 :ref:`Qualifier<enum_VisualShaderNodeParameter_Qualifier>` **QUAL_INSTANCE_INDEX** = ``3``
 
-The parameter will be tied to the node with attached :ref:`ShaderMaterial<class_ShaderMaterial>` using this shader. Enables setting a :ref:`instance_index<class_VisualShaderNodeParameter_property_instance_index>` property.
+Il parametro sarà abbinato al nodo contenente lo :ref:`ShaderMaterial<class_ShaderMaterial>` che utilizza questo shader. Consente di impostare una proprietà :ref:`instance_index<class_VisualShaderNodeParameter_property_instance_index>`.
 
 .. _class_VisualShaderNodeParameter_constant_QUAL_MAX:
 
@@ -109,7 +109,7 @@ Descrizioni delle proprietà
 - |void| **set_instance_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_instance_index**\ (\ )
 
-The index within 0-15 range, which is used to avoid clashes when shader used on multiple materials.
+L'indice compreso nell'intervallo 0-15, utilizzato per evitare conflitti quando lo shader è utilizzato su più materiali.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Definisce la portata del parametro.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

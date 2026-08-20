@@ -133,7 +133,7 @@ Descrizioni delle proprietà
 - |void| **set_accessibility_region**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_accessibility_region**\ (\ )
 
-If ``true``, this container is marked as a region for accessibility. Use :ref:`Control.accessibility_name<class_Control_property_accessibility_name>` to give the region a descriptive name. Screen readers can navigate between regions using landmark navigation.
+Se ``true``, questo contenitore è contrassegnato come regione per l'accessibilità. Usa :ref:`Control.accessibility_name<class_Control_property_accessibility_name>` per assegnare alla regione un nome descrittivo. I lettori dello schermo possono navigare tra le regioni attraverso la navigazione tramite landmark.
 
 .. rst-class:: classref-section-separator
 
@@ -150,7 +150,7 @@ Descrizioni dei metodi
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **_get_allowed_size_flags_horizontal**\ (\ ) |virtual| |const| :ref:`🔗<class_Container_private_method__get_allowed_size_flags_horizontal>`
 
-Implementa per restituire una lista di :ref:`SizeFlags<enum_Control_SizeFlags>` orizzontali consentiti per i nodi figlio. Questo non impedisce tecnicamente l'utilizzo di altri flag di dimensione, se la propria implementazione lo richiede. Questo limita solo le opzioni disponibili all'utente nel pannello dell'Inspettore.
+Implementa per restituire una lista di :ref:`SizeFlags<enum_Control_SizeFlags>` orizzontali consentiti per i nodi figlio. Questo non impedisce tecnicamente l'utilizzo di altri flag di dimensione, se la propria implementazione lo richiede. Questo limita solo le opzioni disponibili all'utente nel pannello Inspettore.
 
 \ **Nota:** Non avere flag di dimensione equivale ad avere :ref:`Control.SIZE_SHRINK_BEGIN<class_Control_constant_SIZE_SHRINK_BEGIN>`. Pertanto, questo valore è sempre implicitamente consentito.
 
@@ -164,7 +164,7 @@ Implementa per restituire una lista di :ref:`SizeFlags<enum_Control_SizeFlags>` 
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **_get_allowed_size_flags_vertical**\ (\ ) |virtual| |const| :ref:`🔗<class_Container_private_method__get_allowed_size_flags_vertical>`
 
-Implementa per restituire una lista di :ref:`SizeFlags<enum_Control_SizeFlags>` verticali consentiti per i nodi figlio. Questo non impedisce tecnicamente l'utilizzo di altri flag di dimensione, se la propria implementazione lo richiede. Questo limita solo le opzioni disponibili all'utente nel pannello dell'Inspettore.
+Implementa per restituire una lista di :ref:`SizeFlags<enum_Control_SizeFlags>` verticali consentiti per i nodi figlio. Questo non impedisce tecnicamente l'utilizzo di altri flag di dimensione, se la propria implementazione lo richiede. Questo limita solo le opzioni disponibili all'utente nel pannello Inspettore.
 
 \ **Nota:** Non avere flag di dimensione equivale ad avere :ref:`Control.SIZE_SHRINK_BEGIN<class_Control_constant_SIZE_SHRINK_BEGIN>`. Pertanto, questo valore è sempre implicitamente consentito.
 
@@ -196,7 +196,7 @@ Mette in coda un comando di ordinamento per i controlli figlio. Questo viene com
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

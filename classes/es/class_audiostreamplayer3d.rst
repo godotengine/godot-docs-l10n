@@ -10,7 +10,7 @@ AudioStreamPlayer3D
 
 **Hereda:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Plays positional sound in 3D space.
+Reproduce sonido posicional en el espacio 3D.
 
 .. rst-class:: classref-introduction-group
 

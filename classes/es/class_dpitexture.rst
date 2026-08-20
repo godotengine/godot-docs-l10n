@@ -16,7 +16,7 @@ An automatically scalable :ref:`Texture2D<class_Texture2D>` based on an SVG imag
 Descripción
 ----------------------
 
-An automatically scalable :ref:`Texture2D<class_Texture2D>` based on an SVG image. **DPITexture**\ s are used to automatically re-rasterize icons and other texture based UI theme elements to match viewport scale and font oversampling. See also :ref:`ProjectSettings.display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` ("canvas_items" mode) and :ref:`Viewport.oversampling_override<class_Viewport_property_oversampling_override>`.
+Una :ref:`Texture2D<class_Texture2D>` escalable automáticamente basada en una imagen SVG. Los **DPITexture** se utilizan para rasterizar automáticamente iconos y otros elementos de temas de interfaz basados en texturas, ajustándolos a la escala de viewport y al sobremuestreo de fuentes. Véase también :ref:`ProjectSettings.display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` (modo "canvas_items") y :ref:`Viewport.oversampling_override<class_Viewport_property_oversampling_override>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -80,7 +80,7 @@ Descripciones de Propiedades
 - |void| **set_base_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_base_scale**\ (\ )
 
-Texture scale. ``1.0`` is the original SVG size. Higher values result in a larger image.
+Escala de la textura. ``1.0`` es el tamaño original del SVG. Valores más altos dan como resultado una imagen más grande.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ An alternative to fixing darkened borders with :ref:`fix_alpha_border<class_DPIT
 - |void| **set_saturation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_saturation**\ (\ )
 
-Overrides texture saturation.
+Sobrescribe la saturación de la textura.
 
 .. rst-class:: classref-section-separator
 
@@ -181,7 +181,7 @@ Creates a new **DPITexture** and initializes it by allocating and setting the SV
 
 :ref:`RID<class_RID>` **get_scaled_rid**\ (\ ) |const| :ref:`🔗<class_DPITexture_method_get_scaled_rid>`
 
-Returns the :ref:`RID<class_RID>` of the texture rasterized to match the oversampling of the currently drawn canvas item.
+Devuelve el :ref:`RID<class_RID>` de la textura rasterizada para coincidir con el sobremuestreo del elemento de lienzo que se está dibujando actualmente.
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Returns the :ref:`RID<class_RID>` of the texture rasterized to match the oversam
 
 :ref:`String<class_String>` **get_source**\ (\ ) |const| :ref:`🔗<class_DPITexture_method_get_source>`
 
-Returns this SVG texture's source code.
+Devuelve el código fuente de esta textura SVG.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Redimensiona la :ref:`ImageTexture<class_ImageTexture>` a las dimensiones especi
 
 |void| **set_source**\ (\ source\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DPITexture_method_set_source>`
 
-Sets this SVG texture's source code.
+Establece el código fuente de esta textura SVG.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

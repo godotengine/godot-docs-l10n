@@ -678,7 +678,7 @@ Returns an :ref:`Array<class_Array>` containing the device IDs of all currently 
 
 :ref:`CursorShape<enum_Input_CursorShape>` **get_current_cursor_shape**\ (\ ) |const| :ref:`🔗<class_Input_method_get_current_cursor_shape>`
 
-Returns the currently assigned cursor shape.
+Devuelve la forma del cursor actualmente asignada.
 
 .. rst-class:: classref-item-separator
 

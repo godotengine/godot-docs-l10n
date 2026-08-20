@@ -104,7 +104,7 @@ Modo utilizado para calcular la información de las partículas en base a cada u
 
 :ref:`Mode<enum_Shader_Mode>` **MODE_SKY** = ``3``
 
-Mode used for drawing skies. Only works with shaders attached to :ref:`Sky<class_Sky>` objects.
+Modo utilizado para dibujar cielos. Solo funciona con shaders asignados a objetos :ref:`Sky<class_Sky>`.
 
 .. _class_Shader_constant_MODE_FOG:
 
@@ -112,7 +112,7 @@ Mode used for drawing skies. Only works with shaders attached to :ref:`Sky<class
 
 :ref:`Mode<enum_Shader_Mode>` **MODE_FOG** = ``4``
 
-Mode used for setting the color and density of volumetric fog effect.
+Modo utilizado para ajustar el color y la densidad del efecto de niebla volumétrica.
 
 .. _class_Shader_constant_MODE_TEXTURE_BLIT:
 
@@ -175,7 +175,7 @@ Returns the texture that is set as default for the specified parameter.
 
 :ref:`Mode<enum_Shader_Mode>` **get_mode**\ (\ ) |const| :ref:`🔗<class_Shader_method_get_mode>`
 
-Returns the shader mode for the shader.
+Devuelve el modo de shader para el shader.
 
 .. rst-class:: classref-item-separator
 

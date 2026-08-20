@@ -76,9 +76,9 @@ Descrizioni delle proprietà
 
 :ref:`int<class_int>` **bar_beats** = ``4`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bar_beats>`
 
-The number of beats within a single bar in the audio track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+Il numero di battute in un singolo battito nella traccia audio. Rilevante solo per la musica che intende utilizzare la funzionalità di musica interattiva, non per gli effetti sonori.
 
-A more convenient editor for :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+Nella finestra di dialogo **Impostazioni d'importazione avanzate** è fornito un editor più comodo per :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>`, in quanto consente di visualizzare le modifiche in anteprima senza dover reimportare l'audio.
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ A more convenient editor for :ref:`bar_beats<class_ResourceImporterOggVorbis_pro
 
 :ref:`int<class_int>` **beat_count** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_beat_count>`
 
-The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+La durata della traccia audio, in battiti. La durata effettiva del file audio potrebbe essere più grande di quella indicata da questa proprietà. Rilevante solo per la musica che intende utilizzare la funzionalità di musica interattiva, non per gli effetti sonori.
 
-A more convenient editor for :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+Nella finestra di dialogo **Impostazioni d'importazione avanzate** è fornito un editor più comodo per :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>`, in quanto consente di visualizzare le modifiche in anteprima senza dover reimportare l'audio.
 
 .. rst-class:: classref-item-separator
 
@@ -104,9 +104,9 @@ A more convenient editor for :ref:`beat_count<class_ResourceImporterOggVorbis_pr
 
 :ref:`float<class_float>` **bpm** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bpm>`
 
-The tempo of the audio track, measured in beats per minute. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+Il tempo della traccia audio, misurato in battiti al minuto. Dovrebbe corrispondere alla misura del BPM che è stata usata per comporre la traccia. Rilevante solo per la musica che intende utilizzare la funzionalità di musica interattiva, non per gli effetti sonori.
 
-A more convenient editor for :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+Nella finestra di dialogo **Impostazioni d'importazione avanzate** è fornito un editor più comodo per :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>`, in quanto consente di visualizzare le modifiche in anteprima senza dover reimportare l'audio.
 
 .. rst-class:: classref-item-separator
 
@@ -118,9 +118,9 @@ A more convenient editor for :ref:`bpm<class_ResourceImporterOggVorbis_property_
 
 :ref:`bool<class_bool>` **loop** = ``false`` :ref:`🔗<class_ResourceImporterOggVorbis_property_loop>`
 
-If enabled, the audio will begin playing either from the beginning or from :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>`, after playback ends by either reaching the end of the audio or reaching the end of the last beat according to the amount specified in :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>`.
+Se abilitato, l'audio verrà riprodotto dall'inizio o da :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>`, dopo aver terminato la sua riproduzione raggiungendo la fine dell'audio o dell'ultimo battito, a seconda del numero specificato in :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>`.
 
-\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
+\ **Nota:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, il segnale :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` non sarà emesso per l'audio in ripetizione quando raggiunge la fine del file audio, poiché l'audio continuerà a essere riprodotto indefinitamente.
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Crea una nuova istanza :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` d
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

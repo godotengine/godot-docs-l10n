@@ -597,7 +597,7 @@ Angolo minimo.
 - |void| **set_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`, curve\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_param_curve**\ (\ param\: :ref:`Parameter<enum_CPUParticles3D_Parameter>`\ ) |const|
 
-La velocità angolare di ogni particella (velocità di rotazione) varierà lungo questa :ref:`Curve<class_Curve>` per tutta la sua durata. Dovrebbe essere una :ref:`Curve<class_Curve>` unitaria.
+La velocità angolare di ogni particella (velocità di rotazione) varierà lungo questa :ref:`Curve<class_Curve>` nel corso della sua durata. Dovrebbe essere una :ref:`Curve<class_Curve>` unitaria.
 
 .. rst-class:: classref-item-separator
 
@@ -788,7 +788,7 @@ Il colore iniziale di ogni particella varierà lungo questo :ref:`Gradient<class
 - |void| **set_color_ramp**\ (\ value\: :ref:`Gradient<class_Gradient>`\ )
 - :ref:`Gradient<class_Gradient>` **get_color_ramp**\ (\ )
 
-Il colore di ogni particella varierà lungo questo :ref:`Gradient<class_Gradient>` per tutta la sua durata (moltiplicato per :ref:`color<class_CPUParticles3D_property_color>`).
+Il colore di ogni particella varierà lungo questo :ref:`Gradient<class_Gradient>` nel corso della sua durata (moltiplicato per :ref:`color<class_CPUParticles3D_property_color>`).
 
 \ **Nota:** :ref:`color_ramp<class_CPUParticles3D_property_color_ramp>` moltiplica i colori dei vertici della mesh di particelle. Per avere un effetto visibile su un :ref:`BaseMaterial3D<class_BaseMaterial3D>`, :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *deve* essere ``true``. Per uno :ref:`ShaderMaterial<class_ShaderMaterial>`, ``ALBEDO *= COLOR.rgb;`` deve essere inserito nella funzione ``fragment()`` dello shader. Altrimenti, :ref:`color_ramp<class_CPUParticles3D_property_color_ramp>` non avrà alcun effetto visibile.
 
@@ -1998,7 +1998,7 @@ Abilita o disabilita il flag specificato.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -714,7 +714,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_XYZ** = ``0``
 
-Specifies that Euler angles should be in intrinsic XYZ order. When composing, the rotations happen around the local X, Y, and Z axes, in that order. When decomposing, the order is reversed, first Z, then Y, and X last.
+Spécifie que les angles d'Euler doivent être dans l'ordre intrinsèque XYZ. Lors de la composition, les rotations ont lieu autour des axes locaux X, Y et Z dans cet ordre. Lors de la décomposition, l'ordre est inversé, d'abord Z, puis Y, et enfin X.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_XZY:
 
@@ -722,7 +722,7 @@ Specifies that Euler angles should be in intrinsic XYZ order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_XZY** = ``1``
 
-Specifies that Euler angles should be in intrinsic XZY order. When composing, the rotations happen around the local X, Z, and Y axes, in that order. When decomposing, the order is reversed, first Y, then Z, and X last.
+Spécifie que les angles d'Euler doivent être dans l'ordre intrinsèque XZY. Lors de la composition, les rotations ont lieu autour des axes locaux X, Z et Y, dans cet ordre. Lors de la décomposition, l'ordre est inversé, d'abord Y, puis Z, et enfin X.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YXZ:
 
@@ -730,7 +730,7 @@ Specifies that Euler angles should be in intrinsic XZY order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YXZ** = ``2``
 
-Specifies that Euler angles should be in intrinsic YXZ order. When composing, the rotations happen around the local Y, X, and Z axes, in that order. When decomposing, the order is reversed, first Z, then X, and Y last.
+Spécifie que les angles d'Euler doivent être dans l'ordre intrinsèque YXZ. Lors de la composition, les rotation ont lieu autour des axes locaux Y, X, et Z, dans cet ordre. Lors de la décomposition, l'ordre est inversé, d'abord Z, puis X, et enfin Y.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YZX:
 
@@ -738,7 +738,7 @@ Specifies that Euler angles should be in intrinsic YXZ order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YZX** = ``3``
 
-Specifies that Euler angles should be in intrinsic YZX order. When composing, the rotations happen around the local Y, Z, and X axes, in that order. When decomposing, the order is reversed, first X, then Z, and Y last.
+Spécifie que les angles d'Euler doivent être dans l'ordre YZX. Lors de la composition, les rotations ont lieu autour des axes locaux Y, Z, et X, dans cet ordre. Lors de la décomposition, l'ordre est inversé, d'abord X, puis Z et enfin Y.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZXY:
 
@@ -746,7 +746,7 @@ Specifies that Euler angles should be in intrinsic YZX order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_ZXY** = ``4``
 
-Specifies that Euler angles should be in intrinsic ZXY order. When composing, the rotations happen around the local Z, X, and Y axes, in that order. When decomposing, the order is reversed, first Y, then X, and Z last.
+Spécifie que les angles d'Euler doivent être dans l'ordre intrinsèque ZXY. Lors de la composition, les rotations ont lieu autour des axes locaux Z, X, et Y, dans cet ordre. Lors de la décomposition, l'ordre est inversé, d'abord Y, puis X, et enfin Z.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZYX:
 
@@ -754,7 +754,7 @@ Specifies that Euler angles should be in intrinsic ZXY order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_ZYX** = ``5``
 
-Specifies that Euler angles should be in intrinsic ZYX order. When composing, the rotations happen around the local Z, Y, and X axes, in that order. When decomposing, the order is reversed, first X, then Y, and Z last.
+Spécifie que les angles d'Euler doivent être dans l'ordre intrinsèque ZYX. Lors de la composition, les rotations ont lieu autour des axes locaux Z, Y, et X, dan cet ordre. Lors de la décomposition, l'ordre est inversé, d'abord X, puis Y, et enfin Z.
 
 .. rst-class:: classref-item-separator
 
@@ -2326,7 +2326,7 @@ flags **KeyModifierMask**: :ref:`🔗<enum_@GlobalScope_KeyModifierMask>`
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_CODE_MASK** = ``8388607``
 
-Bit mask with all bits enabled except for modifier keys. Apply it to remove modifiers.
+Masque d'octet avec tous les octets activés sauf pour les clefs de modificateur. Appliquer ceci pour supprimer les modificateurs.
 
 ::
 
@@ -2340,7 +2340,7 @@ Bit mask with all bits enabled except for modifier keys. Apply it to remove modi
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_MODIFIER_MASK** = ``2130706432``
 
-Bit mask with all modifier bits enabled. Apply it to isolate modifiers.
+Masque d'octet avec tous les octets de modificateur activés. Appliquer ceci afin d'isoler les modificateurs.
 
 ::
 
@@ -2772,7 +2772,7 @@ Bouton de pavé tactile de manette SDL.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC2** = ``21``
 
-Game controller SDL miscellaneous button. Used by Nintendo Switch 2 Pro Controller and Horipad Steam controllers.
+Bouton divers pour manette de jeu SDL. Utilisé par la manette Nintendo Switch 2 pro et les manettes Horipad de Steam.
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC3:
 
@@ -2780,7 +2780,7 @@ Game controller SDL miscellaneous button. Used by Nintendo Switch 2 Pro Controll
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC3** = ``22``
 
-Game controller SDL miscellaneous button.
+Bouton divers de manette de jeux SDL.
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC4:
 
@@ -2788,7 +2788,7 @@ Game controller SDL miscellaneous button.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC4** = ``23``
 
-Game controller SDL miscellaneous button.
+Bouton divers de manette de jeux SDL.
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC5:
 
@@ -2796,7 +2796,7 @@ Game controller SDL miscellaneous button.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC5** = ``24``
 
-Game controller SDL miscellaneous button.
+Bouton divers de manette de jeux SDL.
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC6:
 
@@ -2804,7 +2804,7 @@ Game controller SDL miscellaneous button.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC6** = ``25``
 
-Game controller SDL miscellaneous button.
+Bouton divers de manette de jeux SDL.
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_SDL_MAX:
 
@@ -3516,7 +3516,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_NONE** = ``0``
 
-The property has no hint for the editor. However, the hint string is still read, which can be used to specify a suffix for a property that has no range limit (see :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`'s description).
+La propriété n'affiche pas d'indice dans l'éditeur. Cependant, la chaine de caractères de l'indice est tout de même lue, et peut être utilisée pour spécifier un suffixe pour une propriété sans limite de plage (cf la description de :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`).
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_RANGE:
 
@@ -3564,7 +3564,7 @@ Hints that a :ref:`float<class_float>` property should be edited using a curve e
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_LINK** = ``5``
 
-Hints that a vector property should allow its components to be linked. For example, this allows :ref:`Vector2.x<class_Vector2_property_x>` and :ref:`Vector2.y<class_Vector2_property_y>` to be edited together. This hint is supported on :ref:`Vector2<class_Vector2>`, :ref:`Vector2i<class_Vector2i>`, :ref:`Vector3<class_Vector3>`, :ref:`Vector3i<class_Vector3i>`, :ref:`Vector4<class_Vector4>`, and :ref:`Vector4i<class_Vector4i>`. The hint string can be used to specify a suffix indicating each value's unit with the ``"suffix:px/s"`` syntax.
+Indique qu'une propriété vectorielle doit permettre à ses composantes d'être liées. Par exemple, cela permet à :ref:`Vector2.x<class_Vector2_property_x>` et :ref:`Vector2.y<class_Vector2_property_y>` d'être modifiés ensemble. Cet indice est supporté par :ref:`Vector2<class_Vector2>`, :ref:`Vector2i<class_Vector2i>`, :ref:`Vector3<class_Vector3>`, :ref:`Vector3i<class_Vector3i>`, :ref:`Vector4<class_Vector4>`, et :ref:`Vector4i<class_Vector4i>`. La chaîne de caractères de l'indice peut être utilisé pour spécifier un suffixe indiquant l'unité de chaque valeur avec la syntaxe ``"suffix:px/s"``.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_FLAGS:
 
@@ -5006,7 +5006,7 @@ Descriptions des propriétés
 
 :ref:`AccessibilityServer<class_AccessibilityServer>` **AccessibilityServer** :ref:`🔗<class_@GlobalScope_property_AccessibilityServer>`
 
-The :ref:`AccessibilityServer<class_AccessibilityServer>` singleton.
+Le singleton :ref:`AccessibilityServer<class_AccessibilityServer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5116,9 +5116,9 @@ Le singleton :ref:`GDExtensionManager<class_GDExtensionManager>`.
 
 :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` **GDScriptLanguageProtocol** :ref:`🔗<class_@GlobalScope_property_GDScriptLanguageProtocol>`
 
-The :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` singleton.
+Le singleton :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>`.
 
-\ **Note:** Only available in editor builds.
+\ **Note :** Uniquement disponible dans les versions avec éditeur.
 
 .. rst-class:: classref-item-separator
 
@@ -6463,15 +6463,15 @@ Convertit l'énergie linéaire en décibels (audio). Comme le volume n'est norma
 
 :ref:`float<class_float>` **log**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_log>`
 
-Returns the `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>`__ of ``x`` (base `e <https://en.wikipedia.org/wiki/E_(mathematical_constant)>`__, with *e* being approximately 2.71828). This is the amount of time needed to reach a certain level of continuous growth.
+Renvoie le `logarithme népérien <https://fr.wikipedia.org/wiki/Logarithme_n%C3%A9p%C3%A9rien>`__ de ``x`` (en base `e <https://fr.wikipedia.org/wiki/E_(nombre)>`__, avec *e* environ égal à 2.71828). Il s'agit du temps nécessaire pour atteindre un certain niveau de croissance continue.
 
-\ **Note:** This is not the same as the "log" function on most calculators, which uses a base 10 logarithm. To use base 10 logarithm, use ``log(x) / log(10)``.
+\ **Note :** Il ne s'agit pas de la même fonction que la fonction "log" sur la plupart des calculateurs, qui utilise un logarithme en base 10. Pour utiliser le logarithme en base 10, utilisez ``log(x) / log(10)``.
 
 ::
 
-    log(10) # Returns 2.302585
+    log(10) # Renvoie 2.302585
 
-\ **Note:** The logarithm of ``0`` returns ``-inf``, while negative values return ``-nan``.
+\ **Note :** Le logarithme de ``0`` renvoie ``-inf``, tandis que les valeurs négatives renvoient ``-nan``.
 
 .. rst-class:: classref-item-separator
 

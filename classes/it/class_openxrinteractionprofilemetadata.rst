@@ -51,9 +51,9 @@ Descrizioni dei metodi
 
 |void| **register_interaction_profile**\ (\ display_name\: :ref:`String<class_String>`, openxr_path\: :ref:`String<class_String>`, openxr_extension_names\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRInteractionProfileMetadata_method_register_interaction_profile>`
 
-Registers an interaction profile using its OpenXR designation (e.g. ``/interaction_profiles/khr/simple_controller`` is the profile for OpenXR's simple controller profile).
+Registra un profilo di interazione utilizzando la sua designazione OpenXR (ad esempio ``/interaction_profiles/khr/simple_controller`` è il profilo per il profilo del controller semplice di OpenXR).
 
-\ ``display_name`` is the description shown to the user. ``openxr_path`` is the interaction profile path being registered. ``openxr_extension_names`` optionally restricts this profile to the given extension being enabled/available. If the extension is not available, the profile and all related entries used in an action map are filtered out.
+\ ``display_name`` è la descrizione visualizzata all'utente. ``openxr_path`` è il percorso del profilo di interazione che viene registrato. ``openxr_extension_names`` limita facoltativamente questo profilo all'estensione specificata che è abilitata/disponibile. Se l'estensione non è disponibile, il profilo e tutte le voci correlate utilizzate in una mappa di azioni sono filtrate.
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ Registers an interaction profile using its OpenXR designation (e.g. ``/interacti
 
 |void| **register_io_path**\ (\ interaction_profile\: :ref:`String<class_String>`, display_name\: :ref:`String<class_String>`, toplevel_path\: :ref:`String<class_String>`, openxr_path\: :ref:`String<class_String>`, openxr_extension_names\: :ref:`String<class_String>`, action_type\: :ref:`ActionType<enum_OpenXRAction_ActionType>`\ ) :ref:`🔗<class_OpenXRInteractionProfileMetadata_method_register_io_path>`
 
-Registers an input/output path for the given ``interaction_profile``. The profile should previously have been registered using :ref:`register_interaction_profile()<class_OpenXRInteractionProfileMetadata_method_register_interaction_profile>`. ``display_name`` is the description shown to the user. ``toplevel_path`` specifies the bind path this input/output can be bound to (e.g. ``/user/hand/left`` or ``/user/hand/right``). ``openxr_path`` is the action input/output being registered (e.g. ``/user/hand/left/input/aim/pose``). ``openxr_extension_names`` restricts this input/output to an enabled/available extension, this doesn't need to repeat the extension on the profile but relates to overlapping extension (e.g. ``XR_EXT_palm_pose`` that introduces ``…/input/palm_ext/pose`` input paths). ``action_type`` defines the type of input or output provided by OpenXR.
+Registra un percorso di input/output per il profilo di interazione ``interaction_profile``. Il profilo dovrebbe essere stato registrato in precedenza tramite :ref:`register_interaction_profile()<class_OpenXRInteractionProfileMetadata_method_register_interaction_profile>`. ``display_name`` è la descrizione mostrata all'utente. ``toplevel_path`` specifica il percorso di associazione a cui questo input/output può essere associato (ad esempio ``/user/hand/left`` o ``/user/hand/right``). ``openxr_path`` è l'input/output dell'azione che è registrata (ad esempio ``/user/hand/left/input/aim/pose``). ``openxr_extension_names`` limita questo input/output a un'estensione abilitata/disponibile, non è necessario che ripeta l'estensione sul profilo, ma si riferisce all'estensione sovrapposta (ad esempio ``XR_EXT_palm_pose`` che introduce i percorsi di input ``…/input/palm_ext/pose``). ``action_type`` definisce il tipo di input o output fornito da OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Registers an input/output path for the given ``interaction_profile``. The profil
 
 |void| **register_path_rename**\ (\ old_name\: :ref:`String<class_String>`, new_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRInteractionProfileMetadata_method_register_path_rename>`
 
-Allows for renaming old input/output paths to new paths in order to load and process older action maps.
+Consente di rinominare i vecchi percorsi di input/output in nuovi percorsi, al fine di caricare e elaborare le vecchie mappe di azione.
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +89,7 @@ Allows for renaming old input/output paths to new paths in order to load and pro
 
 |void| **register_profile_rename**\ (\ old_name\: :ref:`String<class_String>`, new_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRInteractionProfileMetadata_method_register_profile_rename>`
 
-Allows for renaming old interaction profile paths to new paths in order to load and process older action maps.
+Consente di rinominare i vecchi percorsi dei profili di interazione in nuovi percorsi, al fine di caricare ed elaborare le vecchie mappe di azione.
 
 .. rst-class:: classref-item-separator
 
@@ -101,17 +101,17 @@ Allows for renaming old interaction profile paths to new paths in order to load 
 
 |void| **register_top_level_path**\ (\ display_name\: :ref:`String<class_String>`, openxr_path\: :ref:`String<class_String>`, openxr_extension_names\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRInteractionProfileMetadata_method_register_top_level_path>`
 
-Registers a top level path to which profiles can be bound. For instance ``/user/hand/left`` refers to the bind point for the player's left hand. Extensions can register additional top level paths, for instance a haptic vest extension might register ``/user/body/vest``.
+Registra un percorso di livello superiore a cui è possibile associare i profili. Ad esempio, ``/user/hand/left`` si riferisce al punto di associazione per la mano sinistra del giocatore. Le estensioni possono registrare ulteriori percorsi di livello superiore, ad esempio un'estensione di giubbotto tattile potrebbe registrare ``/user/body/vest``.
 
-\ ``display_name`` is the name shown to the user. ``openxr_path`` is the top level path being registered. ``openxr_extension_names`` is optional and ensures the top level path is only used if the specified extension is available/enabled.
+\ ``display_name`` è il nome visualizzato all'utente. ``openxr_path`` è il percorso di livello superiore che viene registrato. ``openxr_extension_names`` è facoltativo e assicura che il percorso di livello superiore sia utilizzato solo se l'estensione specificata è disponibile/abilitata.
 
-When a top level path ends up being bound by OpenXR, an :ref:`XRPositionalTracker<class_XRPositionalTracker>` is instantiated to manage the state of the device.
+Quando un percorso di livello superiore viene associato da OpenXR, un :ref:`XRPositionalTracker<class_XRPositionalTracker>` viene istanziato per gestire lo stato del dispositivo.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

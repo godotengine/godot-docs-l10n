@@ -559,7 +559,7 @@ Restituisce il nome del driver audio attuale. Il valore predefinito solitamente 
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns the absolute size of the microphone input buffer. This is set to a multiple of the audio latency and can be used to estimate the minimum rate at which the frames need to be fetched.
+Restituisce la dimensione assoluta del buffer di input del microfono. Questo è impostato su un multiplo della latenza audio e può servire per stimare la frequenza minima alla quale bisogna recuperare i frame.
 
 .. rst-class:: classref-item-separator
 
@@ -587,11 +587,11 @@ Restituisce i nomi di tutti i dispositivi di ingresso audio rilevati sul sistema
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` audio samples from the internal microphone buffer if available, otherwise returns an empty :ref:`PackedVector2Array<class_PackedVector2Array>`.
+Restituisce un :ref:`PackedVector2Array<class_PackedVector2Array>` contenente esattamente ``frames`` campioni audio dal buffer interno del microfono, se disponibile, altrimenti restituisce un :ref:`PackedVector2Array<class_PackedVector2Array>` vuoto.
 
-The buffer is filled at the rate of :ref:`get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` frames per second when :ref:`set_input_device_active()<class_AudioServer_method_set_input_device_active>` has successfully been set to ``true``.
+Il buffer viene riempito alla frequenza di :ref:`get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` frame al secondo quando :ref:`set_input_device_active()<class_AudioServer_method_set_input_device_active>` è stato impostato con successo su ``true``.
 
-The samples are signed floating-point PCM values between ``-1`` and ``1``.
+I campioni sono valori PCM a virgola mobile con segno, compresi tra ``-1`` e ``1``.
 
 .. rst-class:: classref-item-separator
 
@@ -605,7 +605,7 @@ The samples are signed floating-point PCM values between ``-1`` and ``1``.
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns the number of frames available to read using :ref:`get_input_frames()<class_AudioServer_method_get_input_frames>`.
+Restituisce il numero di frame disponibili per la lettura usando :ref:`get_input_frames()<class_AudioServer_method_get_input_frames>`.
 
 .. rst-class:: classref-item-separator
 
@@ -679,7 +679,7 @@ Restituisce la configurazione degli speaker.
 
 :ref:`float<class_float>` **get_time_since_last_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_since_last_mix>`
 
-Returns the relative time since the last mix occurred, in seconds.
+Restituisce il tempo relativo trascorso dall'ultimo mixaggio, in secondi.
 
 .. rst-class:: classref-item-separator
 
@@ -691,7 +691,7 @@ Returns the relative time since the last mix occurred, in seconds.
 
 :ref:`float<class_float>` **get_time_to_next_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_to_next_mix>`
 
-Returns the relative time until the next mix occurs, in seconds.
+Restituisce il tempo relativo che manca per il prossimo mixaggio, in secondi.
 
 .. rst-class:: classref-item-separator
 
@@ -959,9 +959,9 @@ Se impostato su ``true``, tutte le istanze di :ref:`AudioStreamPlayback<class_Au
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-If ``active`` is ``true``, starts the microphone input stream specified by :ref:`input_device<class_AudioServer_property_input_device>` or returns an error if it failed.
+Se ``active`` è ``true``, avvia il flusso di input del microfono specificato da :ref:`input_device<class_AudioServer_property_input_device>` o restituisce un errore se non riesce.
 
-If ``active`` is ``false``, stops the input stream if it is running.
+Se ``active`` è ``false``, interrompe il flusso di input se è in esecuzione.
 
 .. rst-class:: classref-item-separator
 
@@ -991,7 +991,7 @@ Sblocca il loop principale del driver audio. (Dopo averlo bloccato, dovresti sem
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -258,7 +258,7 @@ Crea un archivio PCK di patch nel percorso ``path`` per la preimpostazione ``pre
 
 :ref:`Error<enum_@GlobalScope_Error>` **export_project**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`, path\: :ref:`String<class_String>`, flags\: |bitfield|\[:ref:`DebugFlags<enum_EditorExportPlatform_DebugFlags>`\] = 0, notify\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorExportPlatform_method_export_project>`
 
-Creates a full project at ``path`` for the specified ``preset``. If ``notify`` is ``true``, plugins using :ref:`EditorExportPlugin._export_begin()<class_EditorExportPlugin_private_method__export_begin>` will be called during the process.
+Crea un progetto completo al percorso ``path`` per la preimpostazione ``preset``. Se ``notify`` è ``true``, le estensioni che usano :ref:`EditorExportPlugin._export_begin()<class_EditorExportPlugin_private_method__export_begin>` verranno chiamati durante il processo.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Restituisce file aggiuntivi che devono sempre essere esportati a prescindere dal
 
 :ref:`String<class_String>` **get_message_category**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_category>`
 
-Returns the message category for the message with the given ``index``.
+Restituisce la categoria per il messaggio con l'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ Returns the message category for the message with the given ``index``.
 
 :ref:`int<class_int>` **get_message_count**\ (\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_count>`
 
-Returns the number of messages in the export log.
+Restituisce il numero di messaggi nel log d'esportazione.
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ Returns the number of messages in the export log.
 
 :ref:`String<class_String>` **get_message_text**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_text>`
 
-Returns the text for the message with the given ``index``.
+Restituisce il testo per il messaggio con l'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Returns the text for the message with the given ``index``.
 
 :ref:`ExportMessageType<enum_EditorExportPlatform_ExportMessageType>` **get_message_type**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_type>`
 
-Returns the type for the message with the given ``index``.
+Restituisce il tipo per il messaggio con l'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +526,7 @@ Esegue il comando specificato tramite il protocollo SSH sull'host remoto e resti
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

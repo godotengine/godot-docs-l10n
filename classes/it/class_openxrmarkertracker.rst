@@ -68,7 +68,7 @@ Descrizioni delle proprietà
 - |void| **set_bounds_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_bounds_size**\ (\ )
 
-The bounds size for this marker.
+Le dimensioni limite per questo marcatore.
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ The bounds size for this marker.
 - |void| **set_marker_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_marker_id**\ (\ )
 
-The marker ID for this marker, this is only returned for Aruco and April Tag markers. Call :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>` for QRCode markers.
+L'ID del marcatore per questo marcatore, viene restituito solo per i marcatori Aruco e April Tag. Chiama :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>` per i marcatori QRCode.
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ The marker ID for this marker, this is only returned for Aruco and April Tag mar
 - |void| **set_marker_type**\ (\ value\: :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>`\ )
 - :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **get_marker_type**\ (\ )
 
-The type of marker.
+Il tipo di marcatore.
 
 .. rst-class:: classref-section-separator
 
@@ -119,7 +119,7 @@ Descrizioni dei metodi
 
 :ref:`Variant<class_Variant>` **get_marker_data**\ (\ ) |const| :ref:`🔗<class_OpenXRMarkerTracker_method_get_marker_data>`
 
-Returns the marker data for this marker. This can return a :ref:`String<class_String>` or :ref:`PackedByteArray<class_PackedByteArray>`. Only applicable to QR Code based markers.
+Restituisce i dati del marcatore per questo marcatore. Può restituire una :ref:`String<class_String>` o un :ref:`PackedByteArray<class_PackedByteArray>`. Applicabile solo ai marcatori basati su codici QR.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ Imposta i dati del marcatore per questo marcatore.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

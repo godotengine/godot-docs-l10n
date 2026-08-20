@@ -6451,7 +6451,7 @@ Sobrescritura específica de macOS para el atajo de teclado para eliminar todo e
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_backspace_word.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_backspace_word.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para eliminar una palabra.
+Sobrescritura específica de macOS para el atajo para eliminar una palabra.
 
 .. rst-class:: classref-item-separator
 
@@ -6475,7 +6475,7 @@ Sobrescritura específica de macOS para el acceso directo para eliminar una pala
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_add_above.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_add_above.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para agregar un cursor encima de cada cursor.
+Sobrescritura específica de macOS para el atajo para agregar un cursor encima de cada cursor.
 
 .. rst-class:: classref-item-separator
 
@@ -6499,7 +6499,7 @@ Sobrescritura específica de macOS para el acceso directo para agregar un cursor
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_add_below.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_add_below.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para agregar un cursor debajo de cada cursor.
+Sobrescritura específica de macOS para el atajo para agregar un cursor debajo de cada cursor.
 
 .. rst-class:: classref-item-separator
 
@@ -6525,7 +6525,7 @@ Sobrescritura específica de macOS para el acceso directo para agregar un cursor
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_document_end.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_document_end.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para mover el cursor de texto al final del texto.
+Sobrescritura específica de macOS para el atajo para mover el cursor de texto al final del texto.
 
 .. rst-class:: classref-item-separator
 
@@ -6551,7 +6551,7 @@ Sobrescritura específica de macOS para el acceso directo para mover el cursor d
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_document_start.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_document_start.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para mover el cursor de texto al inicio del texto.
+Sobrescritura específica de macOS para el atajo para mover el cursor de texto al inicio del texto.
 
 .. rst-class:: classref-item-separator
 
@@ -6605,7 +6605,7 @@ Sobrescritura específica de macOS para el acceso directo para mover el cursor d
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_line_end.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_line_end.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para mover el cursor de texto al final de la línea.
+Sobrescritura específica de macOS para el atajo para mover el cursor de texto al final de la línea.
 
 .. rst-class:: classref-item-separator
 
@@ -6631,7 +6631,7 @@ Sobrescritura específica de macOS para el acceso directo para mover el cursor d
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_line_start.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_line_start.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para mover el cursor de texto al inicio de la línea.
+Sobrescritura específica de macOS para el atajo para mover el cursor de texto al inicio de la línea.
 
 .. rst-class:: classref-item-separator
 
@@ -6713,7 +6713,7 @@ Sobrescritura específica de macOS para el acceso directo para mover el cursor d
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_word_left.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_word_left.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para mover el cursor de texto una palabra hacia atrás.
+Sobrescritura específica de macOS para el atajo para mover el cursor de texto una palabra hacia atrás.
 
 .. rst-class:: classref-item-separator
 
@@ -6739,7 +6739,7 @@ Sobrescritura específica de macOS para el acceso directo para mover el cursor d
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_word_right.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_word_right.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para mover el cursor de texto una palabra hacia adelante.
+Sobrescritura específica de macOS para el atajo para mover el cursor de texto una palabra hacia adelante.
 
 .. rst-class:: classref-item-separator
 
@@ -6851,7 +6851,7 @@ En caso de que haya más de un cursor activo, elimina los cursores secundarios y
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_delete_all_to_right.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_delete_all_to_right.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para eliminar todo el texto después del cursor de texto.
+Sobrescritura específica de macOS para el atajo para eliminar todo el texto después del cursor de texto.
 
 .. rst-class:: classref-item-separator
 
@@ -6877,7 +6877,7 @@ Sobrescritura específica de macOS para el acceso directo para eliminar todo el 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_delete_word.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_delete_word.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para eliminar una palabra después del cursor de texto.
+Sobrescritura específica de macOS para el atajo para eliminar una palabra después del cursor de texto.
 
 .. rst-class:: classref-item-separator
 
@@ -6959,7 +6959,7 @@ Sobrescritura específica de macOS para el acceso directo para eliminar una pala
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_scroll_down.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_scroll_down.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para desplazarse hacia abajo una línea.
+Sobrescritura específica de macOS para el atajo para desplazarse hacia abajo una línea.
 
 .. rst-class:: classref-item-separator
 
@@ -6985,7 +6985,7 @@ Sobrescritura específica de macOS para el acceso directo para desplazarse hacia
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_scroll_up.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_scroll_up.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para desplazarse hacia arriba una línea.
+Sobrescritura específica de macOS para el atajo para desplazarse hacia arriba una línea.
 
 .. rst-class:: classref-item-separator
 
@@ -7025,7 +7025,7 @@ Si no hay ninguna selección activa, selecciona la palabra que se encuentra actu
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_select_word_under_caret.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_select_word_under_caret.macos>`
 
-Sobrescritura específica de macOS para el acceso directo para seleccionar la palabra que se encuentra actualmente debajo del cursor.
+Sobrescritura específica de macOS para el atajo para seleccionar la palabra que se encuentra actualmente debajo del cursor.
 
 .. rst-class:: classref-item-separator
 
@@ -9347,7 +9347,7 @@ Nombre opcional para la capa 32 de física 3D. Si se deja vacío, la capa se mos
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_1** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_1>`
 
-Optional name for the 3D render layer 1. If left empty, the layer will display as "Layer 1".
+Nombre opcional para la capa 1 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 1".
 
 .. rst-class:: classref-item-separator
 
@@ -9359,7 +9359,7 @@ Optional name for the 3D render layer 1. If left empty, the layer will display a
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_2** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_2>`
 
-Optional name for the 3D render layer 2. If left empty, the layer will display as "Layer 2".
+Nombre opcional para la capa 2 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 2".
 
 .. rst-class:: classref-item-separator
 
@@ -9371,7 +9371,7 @@ Optional name for the 3D render layer 2. If left empty, the layer will display a
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_3** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_3>`
 
-Optional name for the 3D render layer 3. If left empty, the layer will display as "Layer 3".
+Nombre opcional para la capa 3 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 3".
 
 .. rst-class:: classref-item-separator
 
@@ -9383,7 +9383,7 @@ Optional name for the 3D render layer 3. If left empty, the layer will display a
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_4** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_4>`
 
-Optional name for the 3D render layer 4. If left empty, the layer will display as "Layer 4".
+Nombre opcional para la capa 4 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 4".
 
 .. rst-class:: classref-item-separator
 
@@ -9395,7 +9395,7 @@ Optional name for the 3D render layer 4. If left empty, the layer will display a
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_5** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_5>`
 
-Optional name for the 3D render layer 5. If left empty, the layer will display as "Layer 5".
+Nombre opcional para la capa 5 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 5".
 
 .. rst-class:: classref-item-separator
 
@@ -9407,7 +9407,7 @@ Optional name for the 3D render layer 5. If left empty, the layer will display a
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_6** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_6>`
 
-Optional name for the 3D render layer 6. If left empty, the layer will display as "Layer 6".
+Nombre opcional para la capa 6 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 6".
 
 .. rst-class:: classref-item-separator
 
@@ -9419,7 +9419,7 @@ Optional name for the 3D render layer 6. If left empty, the layer will display a
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_7** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_7>`
 
-Optional name for the 3D render layer 7. If left empty, the layer will display as "Layer 7".
+Nombre opcional para la capa 7 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 7".
 
 .. rst-class:: classref-item-separator
 
@@ -9431,7 +9431,7 @@ Optional name for the 3D render layer 7. If left empty, the layer will display a
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_8** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_8>`
 
-Optional name for the 3D render layer 8. If left empty, the layer will display as "Layer 8".
+Nombre opcional para la capa 8 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 8".
 
 .. rst-class:: classref-item-separator
 
@@ -9443,7 +9443,7 @@ Optional name for the 3D render layer 8. If left empty, the layer will display a
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_9** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_9>`
 
-Optional name for the 3D render layer 9. If left empty, the layer will display as "Layer 9".
+Nombre opcional para la capa 9 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 9".
 
 .. rst-class:: classref-item-separator
 
@@ -9455,7 +9455,7 @@ Optional name for the 3D render layer 9. If left empty, the layer will display a
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_10** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_10>`
 
-Optional name for the 3D render layer 10. If left empty, the layer will display as "Layer 10".
+Nombre opcional para la capa 10 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 10".
 
 .. rst-class:: classref-item-separator
 
@@ -9467,7 +9467,7 @@ Optional name for the 3D render layer 10. If left empty, the layer will display 
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_11** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_11>`
 
-Optional name for the 3D render layer 11. If left empty, the layer will display as "Layer 11".
+Nombre opcional para la capa 11 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 11".
 
 .. rst-class:: classref-item-separator
 
@@ -9479,7 +9479,7 @@ Optional name for the 3D render layer 11. If left empty, the layer will display 
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_12** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_12>`
 
-Optional name for the 3D render layer 12. If left empty, the layer will display as "Layer 12".
+Nombre opcional para la capa 12 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 12".
 
 .. rst-class:: classref-item-separator
 
@@ -9491,7 +9491,7 @@ Optional name for the 3D render layer 12. If left empty, the layer will display 
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_13** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_13>`
 
-Optional name for the 3D render layer 13. If left empty, the layer will display as "Layer 13".
+Nombre opcional para la capa 13 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 13".
 
 .. rst-class:: classref-item-separator
 
@@ -9515,7 +9515,7 @@ Nombre opcional para la capa 14 del renderizado 3D. Si se deja vacío, la capa s
 
 :ref:`String<class_String>` **layer_names/3d_render/layer_15** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/3d_render/layer_15>`
 
-Optional name for the 3D render layer 15. If left empty, the layer will display as "Layer 15".
+Nombre opcional para la capa 15 del renderizado 3D. Si se deja vacío, la capa se mostrará como "Capa 15".
 
 .. rst-class:: classref-item-separator
 
@@ -11647,7 +11647,7 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 Habilita el antialiasing temporal para el :ref:`Viewport<class_Viewport>` de pantalla predeterminado. TAA funciona agitando la cámara y acumulando las imágenes de los últimos fotogramas renderizados; el renderizado de vectores de movimiento se utiliza para tener en cuenta el movimiento de la cámara y los objetos. Habilitar TAA puede hacer que la imagen se vea más borrosa, lo cual se contrarresta parcialmente utilizando automáticamente un sesgo LOD de mipmap negativo (véase :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`).
 
-\ **Nota:** La implementación aún no está completa. Algunas instancias visuales, como partículas y mallas con skin, pueden mostrar artefactos de fantasmas en movimiento.
+\ **Nota:** La implementación aún no está completa. Algunas instancias visuales, como partículas y mallas con piel, pueden mostrar artefactos de fantasmas en movimiento.
 
 \ **Nota:** TAA solo es compatible con el método de renderizado Forward+, no con Mobile o Compatibility.
 
@@ -13073,7 +13073,7 @@ Lower-end override for :ref:`rendering/reflections/sky_reflections/texture_array
 
 :ref:`bool<class_bool>` **rendering/reflections/specular_occlusion/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/specular_occlusion/enabled>`
 
-If ``true``, reduces reflections based on ambient light.
+Si es ``true``, reduce los reflejos en función de la luz ambiental.
 
 .. rst-class:: classref-item-separator
 

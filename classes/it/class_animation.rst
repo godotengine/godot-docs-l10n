@@ -291,7 +291,7 @@ Traccia di scala 3D (i valori sono memorizzati in :ref:`Vector3<class_Vector3>`)
 
 :ref:`TrackType<enum_Animation_TrackType>` **TYPE_BLEND_SHAPE** = ``4``
 
-Traccia di forme di fusione.
+Traccia di forma di fusione.
 
 .. _class_Animation_constant_TYPE_METHOD:
 
@@ -1256,7 +1256,7 @@ Restituisce il tempo in cui si trova la chiave.
 
 :ref:`float<class_float>` **track_get_key_transition**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_track_get_key_transition>`
 
-Restituisce la curva di transizione (allentamento) per una chiave specifica (vedi la funzione incorporata di matematica :ref:`@GlobalScope.ease()<class_@GlobalScope_method_ease>`).
+Restituisce la curva di transizione (ovvero l'andamento o "easing") per una chiave specifica (vedi la funzione integrata di matematica :ref:`@GlobalScope.ease()<class_@GlobalScope_method_ease>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1472,7 +1472,7 @@ Imposta il tempo di una chiave esistente.
 
 |void| **track_set_key_transition**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, transition\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Animation_method_track_set_key_transition>`
 
-Imposta la curva di transizione (allentamento) per una chiave specifica (vedi la funzione incorporata di matematica :ref:`@GlobalScope.ease()<class_@GlobalScope_method_ease>`).
+Imposta la curva di transizione (ovvero l'andamento o "easing") per una chiave specifica (vedi la funzione integrata di matematica :ref:`@GlobalScope.ease()<class_@GlobalScope_method_ease>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1554,7 +1554,7 @@ Imposta la modalità di aggiornamento di una traccia di valore.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

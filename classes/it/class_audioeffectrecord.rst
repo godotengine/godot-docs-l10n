@@ -14,13 +14,13 @@ Effetto audio utilizzato per la registrazione di suoni provenienti da un bus aud
 Descrizione
 ----------------------
 
-Allows the user to record the sound from an audio bus into an :ref:`AudioStreamWAV<class_AudioStreamWAV>`. When used on the Master audio bus, this includes all audio output by Godot.
+Consente all'utente di registrare il suono da un bus audio in un :ref:`AudioStreamWAV<class_AudioStreamWAV>`. Quando è utilizzato sul bus audio Master, include tutta l'uscita audio di Godot.
 
-Unlike :ref:`AudioEffectCapture<class_AudioEffectCapture>`, this effect encodes the recording with the given format (8-bit, 16-bit, or compressed) instead of giving access to the raw audio samples.
+A differenza di :ref:`AudioEffectCapture<class_AudioEffectCapture>`, questo effetto codifica la registrazione con il formato specificato (8 bit, 16 bit, o compresso) invece di fornire accesso ai campioni audio grezzi.
 
-Can be used (with an :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`) to record from a microphone.
+Si può utilizzare (insieme a un :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`) per registrare da un microfono.
 
-\ **Note:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` must be ``true`` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
+\ **Nota:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` deve essere ``true`` affinché l'ingresso audio funzioni. Vedi anche la descrizione di quella impostazione per avvertenze riguardo le autorizzazioni e le impostazioni sulla privacy del sistema operativo.
 
 .. rst-class:: classref-introduction-group
 
@@ -126,7 +126,7 @@ Se ``true``, il suono verrà registrato. Tieni presente che il riavvio della reg
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

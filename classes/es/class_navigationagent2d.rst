@@ -369,7 +369,7 @@ If ``true`` shows debug visuals for this agent.
 - |void| **set_debug_path_custom_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_debug_path_custom_color**\ (\ )
 
-If :ref:`debug_use_custom<class_NavigationAgent2D_property_debug_use_custom>` is ``true`` uses this color for this agent instead of global color.
+Si :ref:`debug_use_custom<class_NavigationAgent2D_property_debug_use_custom>` es ``true``, utiliza este color para este agente en lugar del color global.
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ If :ref:`debug_use_custom<class_NavigationAgent2D_property_debug_use_custom>` is
 - |void| **set_debug_path_custom_line_width**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_debug_path_custom_line_width**\ (\ )
 
-If :ref:`debug_use_custom<class_NavigationAgent2D_property_debug_use_custom>` is ``true`` uses this line width for rendering paths for this agent instead of global line width.
+Si :ref:`debug_use_custom<class_NavigationAgent2D_property_debug_use_custom>` es ``true``, se utiliza este grosor de línea para renderizar las trayectorias de este agente en lugar del grosor de línea global.
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ If :ref:`debug_use_custom<class_NavigationAgent2D_property_debug_use_custom>` is
 - |void| **set_debug_path_custom_point_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_debug_path_custom_point_size**\ (\ )
 
-If :ref:`debug_use_custom<class_NavigationAgent2D_property_debug_use_custom>` is ``true`` uses this rasterized point size for rendering path points for this agent instead of global point size.
+Si :ref:`debug_use_custom<class_NavigationAgent2D_property_debug_use_custom>` es ``true``, se utiliza este tamaño de punto rasterizado para renderizar los puntos de la trayectoria de este agente, en lugar del tamaño de punto global.
 
 .. rst-class:: classref-item-separator
 
@@ -420,7 +420,7 @@ If :ref:`debug_use_custom<class_NavigationAgent2D_property_debug_use_custom>` is
 - |void| **set_debug_use_custom**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_debug_use_custom**\ (\ )
 
-If ``true`` uses the defined :ref:`debug_path_custom_color<class_NavigationAgent2D_property_debug_path_custom_color>` for this agent instead of global color.
+Si es ``true``, utiliza el :ref:`debug_path_custom_color<class_NavigationAgent2D_property_debug_path_custom_color>` definido para este agente en lugar del color global.
 
 .. rst-class:: classref-item-separator
 

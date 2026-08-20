@@ -599,9 +599,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_DISABLED** = ``0``
 
-Disables all drop sections.
+禁用所有放置部分。
 
-\ **Note:** This is the default flag, it has no effect when combined with other flags.
+\ **注意：**\ 这是默认标志，与其他标志组合使用时无效。
 
 .. _class_Tree_constant_DROP_MODE_ON_ITEM:
 
@@ -609,9 +609,9 @@ Disables all drop sections.
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_ON_ITEM** = ``1``
 
-Enables the "on item" drop section. This drop section covers the entire item.
+启用“项目上”的放置部分。这个放置部分覆盖整个项。
 
-When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, this drop section halves in height and stays centered vertically.
+当与 :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>` 结合使用时，这个放置部分的高度减半，并保持垂直居中。
 
 .. _class_Tree_constant_DROP_MODE_INBETWEEN:
 
@@ -619,9 +619,9 @@ When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBET
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_INBETWEEN** = ``2``
 
-Enables "above item" and "below item" drop sections. The "above item" drop section covers the top half of the item, while the "below item" drop section covers the bottom half, and extends downward to the left of any children.
+启用“项目上方”和“项目下方”的放置部分。“项目上方”的放置部分覆盖项目的上半部分，“项目下方”的放置部分覆盖下半部分，并向下延伸至所有子元素的左侧。
 
-When combined with :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, these drop sections halve in height and stay at the top and bottom respectively.
+当与 :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>` 结合使用时，这些放置部分的高度减半，并相应地停留在顶部或底部。
 
 .. rst-class:: classref-item-separator
 
@@ -1171,19 +1171,19 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 
 :ref:`int<class_int>` **get_drop_section_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_drop_section_at_position>`
 
-Returns the drop section at ``position``, as permitted by enabled :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
+返回 ``position`` 处的放置部分，如启用 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` 所允许的那样。
 
-- ``-1`` if the position is **above** the item. Typically used to insert as the item's previous sibling.
+- ``-1`` 如果位置在该项\ **之上**\ 。通常用作该项的上一个同级项插入。
 
-- ``0`` if the position is **on** the item. Typically used to insert as the item's last child.
+- ``0`` 如果位置在该项\ **处**\ 。通常用作项目的最后一个子项插入。
 
-- ``1`` if the position is **below** the item, when the item has no children. Typically used to insert as the item's next sibling. If the item *does* have children, this section is still reachable by hovering to the left of the item's collapse arrow, and below.
+- ``1`` 如果位置在该项\ **之下**\ ，且该项没有子项。通常用作该项的下一个同级项插入。如果该项\ *有*\ 子项，则仍可通过将鼠标悬停在该项折叠箭头的左侧和下方来访问该部分。
 
-- ``2`` if the position is **below** the item, when the item has children. Typically used to insert as the item's first child.
+- ``2`` 如果位置在该项\ **之下**\ ，且该项有子项。通常用作该项的第一个子项插入。
 
-- ``-100`` if the position is not over any item, or no :ref:`DropModeFlags<enum_Tree_DropModeFlags>` are set.
+- ``-100`` 如果位置不在任何项上，或者没有设置 :ref:`DropModeFlags<enum_Tree_DropModeFlags>`\ 。
 
-See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` for a description of each drop region. To get the item which the returned drop section refers to, use :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
+有关每个放置区域的说明，请参阅 :ref:`DropModeFlags<enum_Tree_DropModeFlags>`\ 。要获取返回的放置部分所指向的项目，请使用 :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`\ 。
 
 .. rst-class:: classref-item-separator
 

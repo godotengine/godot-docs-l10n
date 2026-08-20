@@ -1089,7 +1089,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-如果控制項的最小尺寸更改為大於其相應軸上的目前尺寸，則控制項將向左或頂部增大以進行組合。
+The control will grow to the left or top to make up if its minimum size is changed to be greater than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1097,7 +1097,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-如果控制項的最小尺寸更改為大於其相應軸上的目前尺寸，則控制項將向右或向下增大以進行補償。
+The control will grow to the right or bottom to make up if its minimum size is changed to be greater than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1105,7 +1105,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-如果控制項的最小大小更改為大於其目前大小，則控制項將在兩個方向上均等地增長以組成該控制項。
+The control will grow in both directions equally to make up if its minimum size is changed to be greater than its current size.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,7 +1825,7 @@ Determines which controls can be focused. Only one control can be focused at a t
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-控制水平軸的方向，如果控制項的水平最小尺寸更改為大於其目前尺寸，則控制項應沿水平軸增長，因為控制項始終必須至少為最小尺寸。
+Controls the direction on the horizontal axis in which the control should grow if its horizontal minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1842,7 @@ Determines which controls can be focused. Only one control can be focused at a t
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-控制控制項在垂直軸上的方向，如果控制項的垂直最小尺寸更改為大於目前尺寸，則控制項應沿該方向增大，因為控制項始終必須至少為最小尺寸。
+Controls the direction on the vertical axis in which the control should grow if its vertical minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
 
 .. rst-class:: classref-item-separator
 

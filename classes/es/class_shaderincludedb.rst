@@ -59,7 +59,7 @@ Returns the code for the built-in shader fragment. You can also access this in y
 
 :ref:`bool<class_bool>` **has_built_in_include_file**\ (\ filename\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_ShaderIncludeDB_method_has_built_in_include_file>`
 
-Returns ``true`` if an include file with this name exists.
+Devuelve ``true`` si existe un archivo de inclusión con este nombre.
 
 .. rst-class:: classref-item-separator
 

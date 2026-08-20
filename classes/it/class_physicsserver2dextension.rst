@@ -829,9 +829,9 @@ Versione sovrascrivibile di :ref:`PhysicsServer2D.body_clear_shapes()<class_Phys
 
 :ref:`bool<class_bool>` **_body_collide_shape**\ (\ body\: :ref:`RID<class_RID>`, body_shape\: :ref:`int<class_int>`, shape\: :ref:`RID<class_RID>`, shape_xform\: :ref:`Transform2D<class_Transform2D>`, motion\: :ref:`Vector2<class_Vector2>`, r_results\: ``void*``, result_max\: :ref:`int<class_int>`, r_result_count\: ``int32_t*``\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__body_collide_shape>`
 
-Given a ``body``, a ``shape``, and their respective parameters, this method should return ``true`` if a collision between the two would occur, with additional details passed in ``r_results``.
+Specificato un corpo (``body``), una forma (``shape``) e i rispettivi parametri, questo metodo dovrebbe restituire ``true`` se avverrebbe una collisione tra i due, con ulteriori dettagli passati in ``r_results``.
 
-Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``shape_collide`` method. Corresponds to :ref:`PhysicsDirectSpaceState2D.collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>`.
+Versione sovrascrivibile del metodo interno ``shape_collide`` di :ref:`PhysicsServer2D<class_PhysicsServer2D>`. Corrisponde a :ref:`PhysicsDirectSpaceState2D.collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -943,7 +943,7 @@ Versione sovrascrivibile di :ref:`PhysicsServer2D.body_get_constant_torque()<cla
 
 Versione sovrascrivibile del metodo interno ``body_get_contacts_reported_depth_threshold`` di :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
-\ **Nota:** Questo metodo è attualmente inutilizzato dall'implementazione della fisica predefinita di Godot.
+\ **Nota:** Questo metodo è attualmente inutilizzato dall'implementazione predefinita della fisica in Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -1209,7 +1209,7 @@ Versione sovrascrivibile di :ref:`PhysicsServer2D.body_set_constant_torque()<cla
 
 Versione sovrascrivibile del metodo interno ``body_set_contacts_reported_depth_threshold`` di :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
-\ **Nota:** Questo metodo è attualmente inutilizzato dall'implementazione della fisica predefinita di Godot.
+\ **Nota:** Questo metodo è attualmente inutilizzato dall'implementazione predefinita della fisica in Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -1477,7 +1477,7 @@ Versione sovrascrivibile di :ref:`PhysicsServer2D.damped_spring_joint_set_param(
 
 |void| **_end_sync**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__end_sync>`
 
-Chiamato per indicare che il server di fisica ha finito di sincronizzarsi. Esso si trova nella fase di iterazione/fisica del ciclo e può accedere agli oggetti di fisica anche se è in esecuzione su un thread separato. Vedi anche :ref:`_sync()<class_PhysicsServer2DExtension_private_method__sync>`.
+Chiamato per indicare che il server di fisica ha finito di sincronizzarsi. Esso si trova nella fase di iterazione/fisica del ciclo e può accedere agli oggetti fisici anche se è in esecuzione su un thread separato. Vedi anche :ref:`_sync()<class_PhysicsServer2DExtension_private_method__sync>`.
 
 Versione sovrascrivibile del metodo interno ``end_sync`` di :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
@@ -1787,9 +1787,9 @@ Versione sovrascrivibile di :ref:`PhysicsServer2D.set_active()<class_PhysicsServ
 
 :ref:`bool<class_bool>` **_shape_collide**\ (\ shape_A\: :ref:`RID<class_RID>`, xform_A\: :ref:`Transform2D<class_Transform2D>`, motion_A\: :ref:`Vector2<class_Vector2>`, shape_B\: :ref:`RID<class_RID>`, xform_B\: :ref:`Transform2D<class_Transform2D>`, motion_B\: :ref:`Vector2<class_Vector2>`, r_results\: ``void*``, result_max\: :ref:`int<class_int>`, r_result_count\: ``int32_t*``\ ) |virtual| |required| :ref:`🔗<class_PhysicsServer2DExtension_private_method__shape_collide>`
 
-Given two shapes and their parameters, should return ``true`` if a collision between the two would occur, with additional details passed in ``r_results``.
+Specificate due forme e i loro parametri, dovrebbe restituire ``true`` se una collisione tra le due avverrebbe, con ulteriori dettagli passati in ``r_results``.
 
-Overridable version of :ref:`PhysicsServer2D<class_PhysicsServer2D>`'s internal ``shape_collide`` method. Corresponds to :ref:`PhysicsDirectSpaceState2D.collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>`.
+Versione sovrascrivibile del metodo interno ``shape_collide`` di :ref:`PhysicsServer2D<class_PhysicsServer2D>`. Corrisponde a :ref:`PhysicsDirectSpaceState2D.collide_shape()<class_PhysicsDirectSpaceState2D_method_collide_shape>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2037,7 +2037,7 @@ Restituisce ``true`` se il corpo con il :ref:`RID<class_RID>` fornito è escluso
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

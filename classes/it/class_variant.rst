@@ -12,41 +12,41 @@ Il tipo di dati più importante in Godot.
 Descrizione
 ----------------------
 
-In computer programming, a Variant class is a class that is designed to store a variety of other types. Dynamic programming languages like PHP, Lua, JavaScript and GDScript like to use them to store variables' data on the backend. With these Variants, properties are able to change value types freely.
+Nella programmazione informatica, una classe Variant è una classe progettata per memorizzare una varietà di altri tipi. Linguaggi di programmazione dinamici come PHP, Lua, JavaScript e GDScript le utilizzano spesso per memorizzare i dati delle variabili nel backend. Grazie alle classi Variant, le proprietà possono cambiare liberamente il proprio tipo di valore.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var foo = 2 # foo is dynamically an integer
-    foo = "Now foo is a string!"
-    foo = RefCounted.new() # foo is an Object
-    var bar: int = 2 # bar is a statically typed integer.
-    # bar = "Uh oh! I can't make statically typed variables become a different type!"
+    var foo = 2 # foo è dinamicamente un intero
+    foo = "Ora foo è una stringa!"
+    foo = RefCounted.new() # foo è un Object
+    var bar: int = 2 # bar è un intero tipizzato staticamente.
+    # bar = "Uh oh! Non posso far cambiare il tipo di una variabile tipizzata staticamente!"
 
  .. code-tab:: csharp
 
-    // C# is statically typed. Once a variable has a type it cannot be changed. You can use the `var` keyword to let the compiler infer the type automatically.
-    var foo = 2; // Foo is a 32-bit integer (int). Be cautious, integers in GDScript are 64-bit and the direct C# equivalent is `long`.
-    // foo = "foo was and will always be an integer. It cannot be turned into a string!";
-    var boo = "Boo is a string!";
-    var ref = new RefCounted(); // var is especially useful when used together with a constructor.
+    // C# è un linguaggio a tipizzazione statica. Una volta che una variable ha un tipo non si può cambiare. È possibile usare la parola chiave `var` per permettere al compilatore di dedurre il tipo automaticamente.
+    var foo = 2; // Foo è un intero a 32 bit (int). Attenzione: gli interi in GDScript sono a 64 bit l'equivalente diretto in C# è `long`.
+    // foo = "foo era e sarà sempre un intero. Non si può convertire in una stringa!";
+    var boo = "Boo è una stringa!";
+    var ref = new RefCounted(); // var è particolarmente utile se usato insieme a un costruttore.
 
-    // Godot also provides a Variant type that works like a union of all the Variant-compatible types.
-    Variant fooVar = 2; // fooVar is dynamically an integer (stored as a `long` in the Variant type).
-    fooVar = "Now fooVar is a string!";
-    fooVar = new RefCounted(); // fooVar is a GodotObject.
+    // Godot fornisce anche un tipo Variant che serve da unione di tutti i tipi compatibili con Variant.
+    Variant fooVar = 2; // fooVar è dinamicamente un intero (memorizzato come `long` nel tipo Variant).
+    fooVar = "Ora fooVar è una stringa!";
+    fooVar = new RefCounted(); // fooVar è un GodotObject.
 
 
 
-Godot tracks all scripting API variables within Variants. Without even realizing it, you use Variants all the time. When a particular language enforces its own rules for keeping data typed, then that language is applying its own custom logic over the base Variant scripting API.
+Godot tiene traccia di tutte le variabili dell'API di scripting dentro Variant. Senza nemmeno rendertene conto, usi le Variant continuamente. Quando un particolare linguaggio impone le proprie regole per mantenere i dati tipizzati, quel linguaggio applica la propria logica personalizzata all'API base di scripting Variant .
 
-- GDScript automatically wrap values in them. It keeps all data in plain Variants by default and then optionally enforces custom static typing rules on variable types.
+- GDScript incapsula automaticamente i valori in Variant. Solitamente mantiene tutti i dati in semplici Variant e, facoltativamente, impone regole di tipizzazione statica personalizzate sui tipi di variabile.
 
-- C# is statically typed, but uses its own implementation of the Variant type in place of Godot's **Variant** class when it needs to represent a dynamic value. C# Variant can be assigned any compatible type implicitly but converting requires an explicit cast.
+- C# è tipizzato staticamente, ma utilizza la propria implementazione del tipo Variant al posto della classe **Variant** di Godot quando deve rappresentare un valore dinamico. A una Variant di C# ci si può assegnare implicitamente qualsiasi tipo compatibile, ma la conversione richiede un cast esplicito.
 
-The global :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` function returns the enumerated value of the Variant type stored in the current variable (see :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`).
+La funzione globale :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` restituisce il valore enumerato del tipo Variant memorizzato nella variabile attuale (vedi :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`).
 
 
 .. tabs::
@@ -56,15 +56,15 @@ The global :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` functi
     var foo = 2
     match typeof(foo):
         TYPE_NIL:
-            print("foo is null")
+            print("foo è null")
         TYPE_INT:
-            print("foo is an integer")
+            print("foo è un intero")
         TYPE_OBJECT:
-            # Note that Objects are their own special category.
-            # To get the name of the underlying Object type, you need the `get_class()` method.
-            print("foo is a(n) %s" % foo.get_class()) # inject the class name into a formatted string.
-            # Note that this does not get the script's `class_name` global identifier.
-            # If the `class_name` is needed, use `foo.get_script().get_global_name()` instead.
+            # Nota che gli oggetti fanno parte della loro categoria speciale.
+            # Per ottenere il nome del tipo di Object sottostante, c'è bisogno del metodo `get_class()`.
+            print("foo is a(n) %s" % foo.get_class()) # inserisce il nome della classe in una stringa formattata.
+            # Nota che questo metodo non ottiene l'identificatore globale `class_name` dello script.
+            # Se è necessario il `class_name`, usa `foo.get_script().get_global_name()` al suo posto.
 
  .. code-tab:: csharp
 
@@ -72,49 +72,49 @@ The global :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>` functi
     switch (foo.VariantType)
     {
         case Variant.Type.Nil:
-            GD.Print("foo is null");
+            GD.Print("foo è null");
             break;
         case Variant.Type.Int:
-            GD.Print("foo is an integer");
+            GD.Print("foo è un intero");
             break;
         case Variant.Type.Object:
-            // Note that Objects are their own special category.
-            // You can convert a Variant to a GodotObject and use reflection to get its name.
+            // Nota che gli oggetti fanno parte della loro categoria speciale.
+            // Puoi convertire una Variant in un GodotObject e ottenere il suo nome grazie alla riflessione.
             GD.Print($"foo is a(n) {foo.AsGodotObject().GetType().Name}");
             break;
     }
 
 
 
-A Variant takes up only 20 bytes and can store almost any engine datatype inside of it. Variants are rarely used to hold information for long periods of time. Instead, they are used mainly for communication, editing, serialization and moving data around.
+Una Variant occupa solo 20 byte e può memorizzare al suo interno quasi tutti i tipi di dati del motore. Raramente servono per conservare informazioni per lunghi periodi di tempo. Invece, servono principalmente per comunicare, modificare, serializzare e trasferire dati.
 
-Godot has specifically invested in making its Variant class as flexible as possible; so much so that it is used for a multitude of operations to facilitate communication between all of Godot's systems.
+Godot ha investito specificamente nella creazione di una classe Variant il più flessibile possibile, tanto da utilizzarla per una moltitudine di operazioni al fine di facilitare la comunicazione tra tutti i sistemi di Godot.
 
-A Variant:
+Un Variant:
 
-- Can store almost any datatype.
+- Può memorizzare quasi tutti i tipi di dati.
 
-- Can perform operations between many variants. GDScript uses Variant as its atomic/native datatype.
+- Può effettuare operazioni tra più Variant. GDScript usa Variant come tipo di dati atomico/nativo.
 
-- Can be hashed, so it can be compared quickly to other variants.
+- Può essere convertito in un hash, così da confrontarlo rapidamente con altri Variant.
 
-- Can be used to convert safely between datatypes.
+- Può servire per convertire in modo sicuro tra tipi diversi di dati.
 
-- Can be used to abstract calling methods and their arguments. Godot exports all its functions through variants.
+- Può servire per astrarre le chiamate ai metodi e i relativi argomenti. Godot esporta tutte le sue funzioni tramite Variant.
 
-- Can be used to defer calls or move data between threads.
+- Può servire per differire chiamate o trasferire dati tra più thread.
 
-- Can be serialized as binary and stored to disk, or transferred via network.
+- Può essere serializzato in binario, e memorizzato su disco o trasferito in rete.
 
-- Can be serialized to text and use it for printing values and editable settings.
+- Può essere serializzato in testo e utilizzato per stampare valori e impostazioni modificabili.
 
-- Can work as an exported property, so the editor can edit it universally.
+- Può funzionare come proprietà esportata, consentendo all'editor di modificarla universalmente.
 
-- Can be used for dictionaries, arrays, parsers, etc.
+- Può essere utilizzato per dizionari, array, parser, ecc.
 
-\ **Containers (Array and Dictionary):** Both are implemented using variants. A :ref:`Dictionary<class_Dictionary>` can match any datatype used as key to any other datatype. An :ref:`Array<class_Array>` just holds an array of Variants. Of course, a Variant can also hold a :ref:`Dictionary<class_Dictionary>` and an :ref:`Array<class_Array>` inside, making it even more flexible.
+\ **Contenitori (Array e Dizionario):** Entrambi sono implementati utilizzando le Variant. Un :ref:`Dictionary<class_Dictionary>` può associare qualsiasi tipo di dato utilizzato come chiave a qualsiasi altro tipo di dato. Un :ref:`Array<class_Array>` contiene semplicemente un array di Variant. Naturalmente, una Variant può anche contenere al suo interno un :ref:`Dictionary<class_Dictionary>` e un :ref:`Array<class_Array>`, rendendola ancora più flessibile.
 
-Modifications to a container will modify all references to it. A :ref:`Mutex<class_Mutex>` should be created to lock it if multi-threaded access is desired.
+Le modifiche a un contenitore modificheranno tutti i riferimenti ad esso. Bisognerebbe creare un :ref:`Mutex<class_Mutex>` per bloccarlo se si desidera accedervi su più thread.
 
 .. note::
 
@@ -131,7 +131,7 @@ Tutorial
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

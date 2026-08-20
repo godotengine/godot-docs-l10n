@@ -7,16 +7,16 @@ StreamPeerUDS
 
 **Eredita:** :ref:`StreamPeerSocket<class_StreamPeerSocket>` **<** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A stream peer that handles UNIX Domain Socket (UDS) connections.
+Un peer di flusso che gestisce le connessioni UNIX Domain Socket (UDS).
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-A stream peer that handles UNIX Domain Socket (UDS) connections. This object can be used to connect to UDS servers, or also is returned by a UDS server. Unix Domain Sockets provide inter-process communication on the same machine using the filesystem namespace.
+Un peer di flusso che gestisce le connessioni di tipo UNIX Domain Socket (UDS). Questo oggetto si può utilizzare per connettersi ai server UDS oppure viene restituito da un server UDS. Gli Unix Domain Socket consentono di comunicare tra processi sulla stessa macchina utilizzando lo spazio dei nomi del filesystem.
 
-\ **Note:** UNIX Domain Sockets are only available on UNIX-like systems (Linux, macOS, etc.) and are not supported on Windows.
+\ **Nota:** Gli UNIX Domain Socket sono disponibili solo su sistemi simili a UNIX (Linux, macOS, ecc.) e non sono supportati su Windows.
 
 .. rst-class:: classref-reftable-group
 
@@ -49,9 +49,9 @@ Descrizioni dei metodi
 
 :ref:`Error<enum_@GlobalScope_Error>` **bind**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_StreamPeerUDS_method_bind>`
 
-Opens the UDS socket, and binds it to the specified socket path.
+Apre il socket UDS e lo associa all'indirizzo locale specificato.
 
-This method is generally not needed, and only used to force the subsequent call to :ref:`connect_to_host()<class_StreamPeerUDS_method_connect_to_host>` to use the specified ``path`` as the source address.
+Questo metodo in genere non è necessario e viene utilizzato solo per forzare la chiamata successiva a :ref:`connect_to_host()<class_StreamPeerUDS_method_connect_to_host>` per utilizzare l'``path`` e come indirizzo sorgente.
 
 .. rst-class:: classref-item-separator
 
@@ -75,13 +75,13 @@ Si connette al percorso specificato del socket di dominio UNIX. Restituisce :ref
 
 :ref:`String<class_String>` **get_connected_path**\ (\ ) |const| :ref:`🔗<class_StreamPeerUDS_method_get_connected_path>`
 
-Returns the socket path of this peer.
+Restituisce la porta socket di questo peer.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

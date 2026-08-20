@@ -191,15 +191,15 @@ Quanti tick di fisica sono sincronizzati con il tempo reale. Se ``0`` o meno, i 
 - |void| **set_physics_ticks_per_second**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_physics_ticks_per_second**\ (\ )
 
-The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
+Il numero di iterazioni fisse al secondo. Controlla quanto spesso la simulazione della fisica e il metodo :ref:`Node._physics_process()<class_Node_private_method__physics_process>` vengono eseguiti.
 
-CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
+L'utilizzo della CPU scala approssimativamente con la frequenza dei tick di fisica. Tuttavia, a frequenze di tick molto basse (solitamente inferiori a 30), la simulazione della fisica può dare problemi. Inoltre gli input potrebbero diventare meno reattivi, a causa del tempo richiesto tra la registrazione dell'input e la sua risposta al prossimo tick di fisica. Frequenze di tick alte offrono una simulazione più accurata, in particolare per gli oggetti in rapido movimento. Ad esempio, i giochi di corse potrebbero funzionare meglio aumentando la frequenza dei tick oltre il valore predefinito di 60.
 
-See also :ref:`max_fps<class_Engine_property_max_fps>` and :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
+Vedi anche :ref:`max_fps<class_Engine_property_max_fps>` e :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
 
-\ **Note:** Only :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` if increasing :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` significantly above its default value.
+\ **Nota:** Possono essere simulati al massimo solo il numero :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` di tick di fisica per frame renderizzato. Se è necessario simulare più tick di fisica per ogni frame renderizzato per tenere il passo con il rendering, il progetto sembrerà rallentare (anche se ``delta`` è utilizzato in modo coerente nei calcoli fisici). Pertanto, si consiglia di aumentare anche :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` se si aumenta :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` drasticamente al di sopra del suo valore predefinito.
 
-\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
+\ **Nota:** Si consiglia di abilitare l':doc:`interpolazione della fisica <../tutorials/physics/interpolation/index>` se si cambia :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` con un valore che non è un multiplo di ``60``. L'interpolazione della fisica eviterà tremolii quando la frequenza di aggiornamento del monitor e la frequenza dei tick di fisica non corrispondono esattamente.
 
 .. rst-class:: classref-item-separator
 
@@ -791,7 +791,7 @@ Rimuove il singleton registrato con il nome ``name``. L'oggetto singleton *non* 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

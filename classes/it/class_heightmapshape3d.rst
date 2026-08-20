@@ -7,14 +7,18 @@ HeightMapShape3D
 
 **Eredita:** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 3D heightmap shape used for physics collision.
+Una forma di heightmap 3D utilizzata per le collisioni fisiche.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Una forma heightmap 3D, progettata per l'uso in fisica. Solitamente utilizzata per fornire una forma per una :ref:`CollisionShape3D<class_CollisionShape3D>`. Questo tipo è più comunemente utilizzato per terreni con vertici disposti in una griglia a larghezza fissa. Data la natura dell'heightmap, non si può utilizzare per modellare sporgenze o grotte, che richiederebbero più vertici nella stessa posizione verticale. È possibile creare fori assegnando :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` all'altezza dei vertici desiderati (ciò è supportato sia in GodotPhysics3D sia in Jolt Physics). È quindi possibile inserire mesh con una propria collisione separata per creare sporgenze, grotte e così via.
+Una forma heightmap 3D, progettata per l'uso in fisica per fornire una forma a una :ref:`CollisionShape3D<class_CollisionShape3D>`. Questo tipo è più comunemente utilizzato per terreni con vertici disposti in una griglia a larghezza fissa.
+
+L'heightmap è rappresentata come una griglia 2D di valori di altezza, che rappresentano la posizione dei punti nella griglia sull'asse Y. I punti nella griglia sono distribuiti 1 unità tra loro sugli assi X e Z e la griglia è centrata sull'origine del nodo :ref:`CollisionShape3D<class_CollisionShape3D>`. Internamente, ogni quadrato della griglia è diviso in due triangoli.
+
+Data la natura dell'heightmap, non si può utilizzare per modellare sporgenze o grotte, che richiederebbero più vertici nella stessa posizione verticale. È possibile creare fori assegnando :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` all'altezza dei vertici desiderati (ciò è supportato sia in GodotPhysics3D sia in Jolt Physics). È quindi possibile inserire mesh con una propria collisione separata per creare sporgenze, grotte e così via.
 
 \ **Prestazioni:** **HeightMapShape3D** è più veloce per verificare le collisioni rispetto a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`, ma è notevolmente più lento di forme primitive come :ref:`BoxShape3D<class_BoxShape3D>`.
 
@@ -90,7 +94,7 @@ Descrizioni delle proprietà
 - |void| **set_map_data**\ (\ value\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ )
 - :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_map_data**\ (\ )
 
-Heightmap data. The array's size must be equal to :ref:`map_width<class_HeightMapShape3D_property_map_width>` multiplied by :ref:`map_depth<class_HeightMapShape3D_property_map_depth>`.
+Dati della heightmap. La dimensione dell'array deve essere uguale a :ref:`map_width<class_HeightMapShape3D_property_map_width>` moltiplicato per :ref:`map_depth<class_HeightMapShape3D_property_map_depth>`.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
@@ -109,7 +113,7 @@ Heightmap data. The array's size must be equal to :ref:`map_width<class_HeightMa
 - |void| **set_map_depth**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_map_depth**\ (\ )
 
-Number of vertices in the depth of the heightmap. Changing this will resize the :ref:`map_data<class_HeightMapShape3D_property_map_data>`.
+Numero di vertici nella profondità della heightmap. Cambiare questa proprietà ridimensionerà :ref:`map_data<class_HeightMapShape3D_property_map_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +130,7 @@ Number of vertices in the depth of the heightmap. Changing this will resize the 
 - |void| **set_map_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_map_width**\ (\ )
 
-Number of vertices in the width of the heightmap. Changing this will resize the :ref:`map_data<class_HeightMapShape3D_property_map_data>`.
+Numero di vertici nella larghezza della heightmap. Cambiare questa proprietà ridimensionerà :ref:`map_data<class_HeightMapShape3D_property_map_data>`.
 
 .. rst-class:: classref-section-separator
 
@@ -179,7 +183,7 @@ Ogni pixel dell'immagine viene letto come float nell'intervallo da ``0.0`` (pixe
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

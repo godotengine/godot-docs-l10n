@@ -261,7 +261,7 @@ enum **TransformAlign**: :ref:`🔗<enum_GPUParticles3D_TransformAlign>`
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_DISABLED** = ``0``
 
-Do not align particle transforms relative to the camera or velocity.
+Non allineare le trasformazioni delle particelle rispetto alla telecamera o alla velocità.
 
 .. _class_GPUParticles3D_constant_TRANSFORM_ALIGN_Z_BILLBOARD:
 
@@ -269,7 +269,7 @@ Do not align particle transforms relative to the camera or velocity.
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_Z_BILLBOARD** = ``1``
 
-Align each particle's Z axis to face the camera.
+Allinea L'asse Z di ogni particella per rivolgersi verso la telecamera.
 
 .. _class_GPUParticles3D_constant_TRANSFORM_ALIGN_Y_TO_VELOCITY:
 
@@ -277,7 +277,7 @@ Align each particle's Z axis to face the camera.
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_Y_TO_VELOCITY** = ``2``
 
-Align each particle's Y axis to the velocity vector.
+Allinea l'asse Y di ogni particella al vettore di velocità.
 
 .. _class_GPUParticles3D_constant_TRANSFORM_ALIGN_Z_BILLBOARD_Y_TO_VELOCITY:
 
@@ -285,7 +285,7 @@ Align each particle's Y axis to the velocity vector.
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_Z_BILLBOARD_Y_TO_VELOCITY** = ``3``
 
-Align each particle's Z axis to face the camera and Y axis to the velocity vector.
+Allinea l'asse Z di ciascuna particella in modo che sia rivolto verso la telecamera e l'asse Y al vettore di velocità.
 
 .. _class_GPUParticles3D_constant_TRANSFORM_ALIGN_LOCAL_BILLBOARD:
 
@@ -293,7 +293,7 @@ Align each particle's Z axis to face the camera and Y axis to the velocity vecto
 
 :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **TRANSFORM_ALIGN_LOCAL_BILLBOARD** = ``4``
 
-Align each particle's Z axis to face the camera, while preserving a given axis (X or Y).
+Allinea l'asse Z di ciascuna particella in modo che sia rivolto verso la telecamera, mantenendo una determinata asse (X o Y).
 
 .. rst-class:: classref-section-separator
 
@@ -391,7 +391,7 @@ Diametro di base per la collisione delle particelle in metri. Se le particelle s
 
 Ordine di disegno delle particelle.
 
-\ **Nota:** :ref:`DRAW_ORDER_INDEX<class_GPUParticles3D_constant_DRAW_ORDER_INDEX>` è l'unica opzione che supporta i vettori di movimento per effetti come TAA. Si consiglia di utilizzare questo ordine di disegno se le particelle sono opache per correggere gli artefatti di "ghosting".
+\ **Nota:** :ref:`DRAW_ORDER_INDEX<class_GPUParticles3D_constant_DRAW_ORDER_INDEX>` è l'unica opzione che supporta i vettori di movimento per effetti come il TAA. Si consiglia di utilizzare questo ordine di disegno se le particelle sono opache per correggere gli artefatti di "ghosting".
 
 .. rst-class:: classref-item-separator
 
@@ -815,7 +815,7 @@ La quantità di tempo che la scia di particelle dovrebbe rappresentare (in secon
 - |void| **set_transform_align**\ (\ value\: :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>`\ )
 - :ref:`TransformAlign<enum_GPUParticles3D_TransformAlign>` **get_transform_align**\ (\ )
 
-The alignment of particles. Use this for billboarding and aligning to velocity.
+L'allineamento delle particelle. Serve per il billboarding e l'allineamento alla velocità.
 
 .. rst-class:: classref-item-separator
 
@@ -849,7 +849,7 @@ When using transform align local billboard, which axis to use for the billboardi
 - |void| **set_transform_align_channel_filter**\ (\ value\: :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>`\ )
 - :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **get_transform_align_channel_filter**\ (\ )
 
-In the case of billboarded particles, which custom channel to read from to calculate their angle.
+Nel caso di particelle con billboard, quale canale personalizzato leggere per calcolare la loro angolazione.
 
 .. rst-class:: classref-item-separator
 
@@ -992,7 +992,7 @@ Imposta la :ref:`Mesh<class_Mesh>` disegnata all'indice ``pass``.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

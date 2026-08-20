@@ -16,7 +16,7 @@ Un contenitore che rappresenta un elemento di base che può essere inserito all'
 Descrizione
 ----------------------
 
-**GraphElement** consente di creare elementi personalizzati per un grafico :ref:`GraphEdit<class_GraphEdit>`. Per impostazione predefinita, questi elementi possono essere selezionati, ridimensionati e riposizionati, ma non possono essere collegati. Per un elemento grafico che consente collegamenti, vedi :ref:`GraphNode<class_GraphNode>`.
+**GraphElement** consente di creare elementi personalizzati per un grafico :ref:`GraphEdit<class_GraphEdit>`. Per impostazione predefinita, questi elementi si possono selezionare, ridimensionare e riposizionare, ma non si possono collegare. Per un elemento grafico che consente collegamenti, vedi :ref:`GraphNode<class_GraphNode>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -226,7 +226,7 @@ Se ``true``, l'utente può ridimensionare il GraphElement.
 - |void| **set_scaling_menus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scaling_menus**\ (\ )
 
-If ``true``, :ref:`PopupMenu<class_PopupMenu>`\ s that are descendants of the GraphElement are scaled with the :ref:`GraphEdit<class_GraphEdit>` zoom.
+Se ``true``, i :ref:`PopupMenu<class_PopupMenu>` che sono discendenti del GraphElement sono scalati con lo zoom del :ref:`GraphEdit<class_GraphEdit>`.
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ L'icona utilizzata per il ridimensionamento, visibile quando :ref:`resizable<cla
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

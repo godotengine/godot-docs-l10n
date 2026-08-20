@@ -22,7 +22,7 @@ Essendo solo una serie di triangoli interconnessi, **ConcavePolygonShape3D** è 
 
 \ **Attenzione:** I corpi di fisica piccoli hanno la possibilità di passare attraverso questa forma quando si muovono velocemente. Ciò accade perché in un frame il corpo di fisica potrebbe trovarsi "all'esterno" della forma e nel frame successivo potrebbe trovarsi "all'interno". **ConcavePolygonShape3D** è cavo, quindi non rileverà una collisione.
 
-\ **Prestazioni:** A causa della sua complessità, **ConcavePolygonShape3D** è la forma di collisione 3D più lenta per verificare le collisioni. Il suo utilizzo dovrebbe essere generalmente limitato alla geometria di livello. Per la geometria convessa, dovrebbe essere utilizzato :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`. Per i corpi di fisica dinamici che necessitano di collisione concava, possono essere utilizzati diversi :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` per rappresentare la sua collisione attraverso la decomposizione convessa; vedi la documentazione di :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` per le istruzioni.
+\ **Prestazioni:** A causa della sua complessità, **ConcavePolygonShape3D** è la forma di collisione 3D più lenta per verificare le collisioni. Il suo utilizzo dovrebbe essere generalmente limitato alla geometria dei livelli. Per la geometria convessa, si dovrebbe usare :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`. Per i corpi di fisica dinamici che necessitano di collisione concava, si potrebbero usare vari :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` per rappresentare la sua collisione attraverso una scomposizione convessa; vedi la documentazione di :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` per le istruzioni.
 
 .. rst-class:: classref-introduction-group
 
@@ -112,7 +112,7 @@ Imposta le facce della forma trimesh da un array di vertici. L'array ``faces`` d
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

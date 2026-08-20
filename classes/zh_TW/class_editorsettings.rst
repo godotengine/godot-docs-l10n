@@ -4297,11 +4297,11 @@ The font to use for bold text in the editor interface. Must be a resource of a :
 
 :ref:`String<class_String>` **interface/editor/fonts/main_font_custom_opentype_features** :ref:`🔗<class_EditorSettings_property_interface/editor/fonts/main_font_custom_opentype_features>`
 
-List of custom OpenType features to use, if supported by the currently configured main font. Check what OpenType features are supported by your font first.
+可使用的自訂 OpenType 功能列表（如果目前組態的主要字體支援的話）。請先確認字體支援哪些 OpenType 功能。
 
-The string should follow the OpenType specification, e.g. ``ss01,tnum,calt=false``. Microsoft's documentation contains a list of `all registered features <https://learn.microsoft.com/en-us/typography/opentype/spec/featurelist>`__.
+字串應遵循 OpenType 規範，例如 ``ss01,tnum,calt=false``\ 。微軟的文件中列出了\ `所有已登記的功能 <https://learn.microsoft.com/en-us/typography/opentype/spec/featurelist>`__\ 。
 
-\ **Note:** The default editor main font (`Inter <https://rsms.me/inter>`__) has custom OpenType features in its font file, with ``ss04`` and ``tnum`` enabled and ``calt`` disabled by default. Supported features can be found at its website.
+\ **注意：**\ 編輯器預設主要字體「\ `Inter <https://rsms.me/inter>`__\ 」的檔案中包含自訂 OpenType 功能，預設啟用 ``ss04`` 和 ``tnum``\ ，並停用 ``calt``\ 。支援的功能可於其網站上查閱。
 
 .. rst-class:: classref-item-separator
 
@@ -4313,7 +4313,7 @@ The string should follow the OpenType specification, e.g. ``ss01,tnum,calt=false
 
 :ref:`int<class_int>` **interface/editor/fonts/main_font_size** :ref:`🔗<class_EditorSettings_property_interface/editor/fonts/main_font_size>`
 
-編輯器介面中字形的大小。
+編輯器介面的字體大小。
 
 .. rst-class:: classref-item-separator
 
@@ -4781,7 +4781,7 @@ If ``true``, when a project is loaded, restores scenes that were opened on the l
 
 :ref:`Color<class_Color>` **interface/theme/accent_color** :ref:`🔗<class_EditorSettings_property_interface/theme/accent_color>`
 
-用於編輯器中“高亮顯示”的使用者介面元素（按下和懸停的專案）的顏色。
+編輯器中，使用者介面元素「變亮」（被按下及懸停）時的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -4793,9 +4793,9 @@ If ``true``, when a project is loaded, restores scenes that were opened on the l
 
 :ref:`int<class_int>` **interface/theme/additional_spacing** :ref:`🔗<class_EditorSettings_property_interface/theme/additional_spacing>`
 
-The extra spacing to add to various GUI elements in the editor (in pixels). Increasing this value is useful to improve usability on touch screens, at the cost of reducing the amount of usable screen real estate.
+編輯器中，各種 GUI 元素之間的額外間距（單位爲像素）。增加此值有助於提高觸控螢幕上的易用性，但會減少螢幕可用空間。
 
-See also :ref:`interface/theme/spacing_preset<class_EditorSettings_property_interface/theme/spacing_preset>`.
+參見 :ref:`interface/theme/spacing_preset<class_EditorSettings_property_interface/theme/spacing_preset>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4807,7 +4807,7 @@ See also :ref:`interface/theme/spacing_preset<class_EditorSettings_property_inte
 
 :ref:`Color<class_Color>` **interface/theme/base_color** :ref:`🔗<class_EditorSettings_property_interface/theme/base_color>`
 
-用於編輯器中使用者介面元素的基色。次要顏色（例如較深/較淺的變體）是從這種顏色派生的。
+編輯器中，使用者介面元素所使用的底色。輔助色（如較深／較淺的變體）由此顏色派生而來。
 
 .. rst-class:: classref-item-separator
 

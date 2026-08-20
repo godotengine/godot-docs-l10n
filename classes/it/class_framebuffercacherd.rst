@@ -14,7 +14,7 @@ Gestore della cache del framebuffer per i renderer basati sul dispositivo di ren
 Descrizione
 ----------------------
 
-Framebuffer cache manager for :ref:`RenderingDevice<class_RenderingDevice>`-based renderers. Provides a way to create a framebuffer and reuse it in subsequent calls for as long as the used textures exists. Framebuffers will automatically be cleaned up when dependent objects are freed.
+Gestore della cache del framebuffer per i renderer basati su :ref:`RenderingDevice<class_RenderingDevice>`. Fornisce un modo per creare un framebuffer e riutilizzarlo in ulteriori chiamate fin quando le texture utilizzate esistono. I framebuffer verranno ripuliti automaticamente quando gli oggetti associati vengono liberati.
 
 .. rst-class:: classref-reftable-group
 
@@ -49,7 +49,7 @@ Crea o ottiene un framebuffer memorizzato nella cache. ``textures`` elenca le te
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

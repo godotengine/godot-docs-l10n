@@ -163,9 +163,9 @@ La posición del punto de control que sale del vértice en el ``índice``.
 
 :ref:`Vector2<class_Vector2>` **point_{index}/position** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve2D_property_point_{index}/position>`
 
-The position of for the vertex at ``index``.
+La posición del vértice en ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` es un valor en el rango ``0 .. point_count - 1``.
 
 .. rst-class:: classref-section-separator
 
@@ -338,14 +338,14 @@ La interpolación cúbica tiende a seguir mejor las curvas, pero la lineal es m�
 
 :ref:`Transform2D<class_Transform2D>` **sample_baked_with_rotation**\ (\ offset\: :ref:`float<class_float>` = 0.0, cubic\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Curve2D_method_sample_baked_with_rotation>`
 
-Similar to :ref:`sample_baked()<class_Curve2D_method_sample_baked>`, but returns :ref:`Transform2D<class_Transform2D>` that includes a rotation along the curve, with :ref:`Transform2D.origin<class_Transform2D_property_origin>` as the point position and the :ref:`Transform2D.x<class_Transform2D_property_x>` vector pointing in the direction of the path at that point. Returns an empty transform if the length of the curve is ``0``.
+Similar a :ref:`sample_baked()<class_Curve2D_method_sample_baked>`, pero devuelve un :ref:`Transform2D<class_Transform2D>` que incluye una rotación a lo largo de la curva, con :ref:`Transform2D.origin<class_Transform2D_property_origin>` como la posición del punto y el vector :ref:`Transform2D.x<class_Transform2D_property_x>` apuntando en la dirección del camino en ese punto. Devuelve una transformación vacía si la longitud de la curva es ``0``.
 
 ::
 
     var baked = curve.sample_baked_with_rotation(offset)
-    # The returned Transform2D can be set directly.
+    # El Transform2D devuelto se puede establecer directamente.
     transform = baked
-    # You can also read the origin and rotation separately from the returned Transform2D.
+    # También puedes leer el origen y la rotación por separado del Transform2D devuelto.
     position = baked.get_origin()
     rotation = baked.get_rotation()
 

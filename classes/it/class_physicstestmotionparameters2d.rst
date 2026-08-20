@@ -62,7 +62,7 @@ Descrizioni delle proprietà
 
 Se impostato su ``true``, le forme di tipo :ref:`PhysicsServer2D.SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>` sono utilizzate per rilevare le collisioni e possono arrestare il movimento. Possono essere utili quando ci si aggancia al suolo.
 
-Se impostato su ``false``, le forme di tipo :ref:`PhysicsServer2D.SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>` sono utilizzate solo per la separazione quando ci si sovrappone ad altri corpi. Questo è l'uso principale per le forme di raggio di separazione.
+Se impostato su ``false``, le forme di tipo :ref:`PhysicsServer2D.SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>` sono utilizzate solo per la separazione quando ci si sovrappone ad altri corpi. Questo è l'uso principale per le forme a raggio di separazione.
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ Se impostato su ``false``, sono segnalate solo le collisioni risultanti dal movi
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -9,7 +9,7 @@ CanvasItem
 
 **Ereditato da:** :ref:`Control<class_Control>`, :ref:`Node2D<class_Node2D>`
 
-Classe di base astratta per ogni nodo nello spazio 2D.
+Classe base astratta per ogni nodo nello spazio 2D.
 
 .. rst-class:: classref-introduction-group
 
@@ -373,7 +373,7 @@ enum **TextureRepeat**: :ref:`🔗<enum_CanvasItem_TextureRepeat>`
 
 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **TEXTURE_REPEAT_PARENT_NODE** = ``0``
 
-The **CanvasItem** will inherit the repeat mode from its parent.
+Il **CanvasItem** erediterà la modalità di ripetizione dal suo genitore.
 
 .. _class_CanvasItem_constant_TEXTURE_REPEAT_DISABLED:
 
@@ -777,9 +777,9 @@ Se ``true``, il :ref:`material<class_CanvasItem_property_material>` del **Canvas
 - |void| **set_visibility_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_visibility_layer**\ (\ )
 
-The rendering layer in which this **CanvasItem** is rendered by :ref:`Viewport<class_Viewport>` nodes. A :ref:`Viewport<class_Viewport>` will render a **CanvasItem** if it and all its parents share a layer with the :ref:`Viewport<class_Viewport>`'s canvas cull mask.
+Lo strato di rendering in cui questo **CanvasItem** è renderizzato dai nodi :ref:`Viewport<class_Viewport>`. Una :ref:`Viewport<class_Viewport>` renderizzerà un **CanvasItem** se esso e tutti i suoi nodi padre condividono uno strato con la maschera di culling di canvas della :ref:`Viewport<class_Viewport>`.
 
-\ **Note:** A **CanvasItem** does not inherit its parents' visibility layers. This means that if a parent **CanvasItem** does not have all the same layers as its child, the child may not be visible even if both the parent and child have :ref:`visible<class_CanvasItem_property_visible>` set to ``true``. For example, if a parent has layer 1 and a child has layer 2, the child will not be visible in a :ref:`Viewport<class_Viewport>` with the canvas cull mask set to layer 1 or 2 (see :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). To ensure that both the parent and child are visible, the parent must have both layers 1 and 2, or the child must have :ref:`top_level<class_CanvasItem_property_top_level>` set to ``true``.
+\ **Nota:** Un **CanvasItem** non eredita gli strati di visibilità dei suoi nodi padre. Significa che se un **CanvasItem** padre non ha tutti gli stessi strati del suo figlio, quest'ultimo potrebbe non essere visibile anche se entrambi il padre e il figlio hanno :ref:`visible<class_CanvasItem_property_visible>` impostato su ``true``. Ad esempio, se un padre ha lo strato 1 e un figlio ha lo strato 2, il figlio non sarà visibile in una :ref:`Viewport<class_Viewport>` con la maschera di culling di canvas impostata sullo strato 1 o 2 (vedi :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). Per garantire che entrambi il padre e il figlio siano visibili, il padre deve avere entrambi gli strati 1 e 2, oppure il figlio deve avere :ref:`top_level<class_CanvasItem_property_top_level>` impostato su ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -900,11 +900,11 @@ I comandi di disegno successivi verranno ignorati a meno che non rientrino nella
 
 |void| **draw_arc**\ (\ center\: :ref:`Vector2<class_Vector2>`, radius\: :ref:`float<class_float>`, start_angle\: :ref:`float<class_float>`, end_angle\: :ref:`float<class_float>`, point_count\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_arc>`
 
-Draws an unfilled arc between the given angles with a uniform ``color`` and ``width`` and optional antialiasing (supported only for positive ``width``). The larger the value of ``point_count``, the smoother the curve. ``center`` is defined in local space. For elliptical arcs, see :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`. See also :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`.
+Disegna un arco vuoto tra gli angoli specificati con un colore (``color``) e spessore (``width``) uniformi, e antialiasing opzionale (supportato solo per valori positivi di ``width``). Maggiore è il valore di ``point_count``, più liscia sarà la curva. ``center`` è definito in spazio locale. Per gli archi ellittici, vedi :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`. Vedi anche :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`.
 
-If ``width`` is negative, it will be ignored and the arc will be drawn using :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. This means that when the CanvasItem is scaled, the arc will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Se ``width`` è negativo, verrà ignorato e l'arco verrà disegnato utilizzando :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. Ciò significa che quando il CanvasItem viene ridimensionato, l'arco rimarrà sottile. Se questo comportamento non è desiderato, passare un valore positivo per ``width`` come ``1.0``.
 
-The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in clockwise direction if ``start_angle < end_angle`` and counter-clockwise otherwise. Passing the same angles but in reversed order will produce the same arc. If absolute difference of ``start_angle`` and ``end_angle`` is greater than :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` radians, then a full circle arc is drawn (i.e. arc will not overlap itself).
+L'arco viene disegnato da ``start_angle`` verso il valore di ``end_angle``, quindi in senso orario se ``start_angle < end_angle`` e in senso antiorario altrimenti. Passando gli stessi angoli ma in ordine inverso si produrrà lo stesso arco. Se la differenza assoluta tra ``start_angle`` e ``end_angle`` è maggiore di :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` radianti, viene disegnato un arco di cerchio completo (ovvero l'arco non si sovrapporrà a se stesso).
 
 .. rst-class:: classref-item-separator
 
@@ -940,15 +940,15 @@ Disegna il contorno del primo carattere di una stringa usando un font personaliz
 
 |void| **draw_circle**\ (\ position\: :ref:`Vector2<class_Vector2>`, radius\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_circle>`
 
-Draws a circle, with ``position`` defined in local space. See also :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`, :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, and :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+Disegna un cerchio, con la posizione ``position`` definita in spazio locale. Vedi anche :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`, :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` e :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
 
-If ``filled`` is ``true``, the circle will be filled with the ``color`` specified. If ``filled`` is ``false``, the circle will be drawn as a stroke with the ``color`` and ``width`` specified.
+Se ``filled`` è ``true``, il cerchio verrà riempito con il colore ``color``. Se ``filled`` è ``false``, il cerchio verrà disegnato come un tratto con il colore ``color`` e lo spessore ``width``.
 
-If ``width`` is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Se ``width`` è negativo, verrà disegnata una primitiva a due punti invece di una a quattro punti. Ciò significa che quando il CanvasItem viene ridimensionato, la linea rimarrà sottile. Se questo comportamento non è desiderato, passare un valore positivo per ``width`` come ``1.0``.
 
-If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
+Se ``antialiased`` è ``true``, al contorno verranno aggiunte delle "sfumature" semitrasparenti, rendendo i contorni più lisci.
 
-\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
+\ **Nota:** ``width`` è efficace solo se ``filled`` è ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -996,15 +996,15 @@ Se ``antialiased`` è ``true``, al contorno verranno aggiunte delle "sfumature" 
 
 |void| **draw_ellipse**\ (\ position\: :ref:`Vector2<class_Vector2>`, major\: :ref:`float<class_float>`, minor\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_ellipse>`
 
-Draws an ellipse with semi-major axis ``major`` and semi-minor axis ``minor``. See also :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`, :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, and :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+Disegna un cerchio, con la posizione ``position`` definita in spazio locale. Vedi anche :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` e :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
 
-If ``filled`` is ``true``, the ellipse will be filled with the ``color`` specified. If ``filled`` is ``false``, the ellipse will be drawn as a stroke with the ``color`` and ``width`` specified.
+Se ``filled`` è ``true``, il cerchio verrà riempito con il colore ``color``. Se ``filled`` è ``false``, il cerchio verrà disegnato come un tratto con il colore ``color`` e lo spessore ``width``.
 
-If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Se ``width`` è negativo, verrà disegnata una primitiva a due punti invece di una a quattro punti. Ciò significa che quando il CanvasItem viene ridimensionato, la linea rimarrà sottile. Se questo comportamento non è desiderato, passare un valore positivo per ``width`` come ``1.0``.
 
-If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
+Se ``antialiased`` è ``true``, al contorno verranno aggiunte delle "sfumature" semitrasparenti, rendendo i contorni più lisci.
 
-\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
+\ **Nota:** ``width`` è efficace solo se ``filled`` è ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1016,11 +1016,11 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 |void| **draw_ellipse_arc**\ (\ center\: :ref:`Vector2<class_Vector2>`, major\: :ref:`float<class_float>`, minor\: :ref:`float<class_float>`, start_angle\: :ref:`float<class_float>`, end_angle\: :ref:`float<class_float>`, point_count\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_ellipse_arc>`
 
-Draws an unfilled elliptical arc between the given angles with a uniform ``color`` and ``width`` and optional antialiasing (supported only for positive ``width``). The larger the value of ``point_count``, the smoother the curve. For circular arcs, see :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`. See also :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`.
+Disegna un arco elittico vuoto tra gli angoli specificati con un colore (``color``) e spessore (``width``) uniformi, e antialiasing opzionale (supportato solo per valori positivi di ``width``). Maggiore è il valore di ``point_count``, più liscia sarà la curva. ``center`` è definito in spazio locale. Per gli archi circolari, vedi :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`. Vedi anche :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`.
 
-If ``width`` is negative, it will be ignored and the arc will be drawn using :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. This means that when the CanvasItem is scaled, the arc will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Se ``width`` è negativo, verrà ignorato e l'arco verrà disegnato utilizzando :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. Ciò significa che quando il CanvasItem viene ridimensionato, l'arco rimarrà sottile. Se questo comportamento non è desiderato, passare un valore positivo per ``width`` come ``1.0``.
 
-The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in clockwise direction if ``start_angle < end_angle`` and counter-clockwise otherwise. Passing the same angles but in reversed order will produce the same arc. If absolute difference of ``start_angle`` and ``end_angle`` is greater than :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` radians, then a full ellipse is drawn (i.e. arc will not overlap itself).
+L'arco viene disegnato da ``start_angle`` verso il valore di ``end_angle``, quindi in senso orario se ``start_angle < end_angle`` e in senso antiorario altrimenti. Passando gli stessi angoli ma in ordine inverso si produrrà lo stesso arco. Se la differenza assoluta tra ``start_angle`` e ``end_angle`` è maggiore di :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` radianti, viene disegnata un'elisse completa (ovvero l'arco non si sovrapporrà a se stesso).
 
 .. rst-class:: classref-item-separator
 
@@ -1081,9 +1081,9 @@ Se ``width`` è negativo, verrà disegnata una primitiva a due punti invece di u
 
 |void| **draw_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`, texture\: :ref:`Texture2D<class_Texture2D>`, transform\: :ref:`Transform2D<class_Transform2D>` = Transform2D(1, 0, 0, 1, 0, 0), modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_mesh>`
 
-Draws a :ref:`Mesh<class_Mesh>` in 2D, using the provided texture. See :ref:`MeshInstance2D<class_MeshInstance2D>` for related documentation. The ``transform`` is defined in local space.
+Disegna una :ref:`Mesh<class_Mesh>` in 2D, utilizzando la texture fornita. Vedi :ref:`MeshInstance2D<class_MeshInstance2D>` per la documentazione al riguardo. ``transform`` è definito nello spazio locale.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -1095,7 +1095,7 @@ Draws a :ref:`Mesh<class_Mesh>` in 2D, using the provided texture. See :ref:`Mes
 
 |void| **draw_msdf_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), outline\: :ref:`float<class_float>` = 0.0, pixel_range\: :ref:`float<class_float>` = 4.0, scale\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_CanvasItem_method_draw_msdf_texture_rect_region>`
 
-Disegna una regione rettangolare con texture della texture MSDF in una posizione specificata, modulata facoltativamente da un colore. Il rettangolo ``rect`` è definito in spazio locale. Vedi :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` per ulteriori informazioni e avvertimenti sul rendering dei font MSDF.
+Disegna una regione rettangolare texturizzata della texture MSDF in una posizione specificata, modulata facoltativamente da un colore. Il rettangolo ``rect`` è definito in spazio locale. Vedi :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` per ulteriori informazioni e avvertimenti sul rendering dei font MSDF.
 
 Se ``outline`` è positivo, ogni valore del canale alfa del pixel nella regione viene impostato sul valore massimo della distanza reale nel raggio ``outline``.
 
@@ -1169,9 +1169,9 @@ Divide il testo ``text`` in righe e ne disegna il contorno attraverso il ``font`
 
 |void| **draw_multimesh**\ (\ multimesh\: :ref:`MultiMesh<class_MultiMesh>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_CanvasItem_method_draw_multimesh>`
 
-Draws a :ref:`MultiMesh<class_MultiMesh>` in 2D with the provided texture. See :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` for related documentation.
+Disegna una :ref:`MultiMesh<class_MultiMesh>` in 2D con la texture fornita. Vedi :ref:`MeshInstance2D<class_MeshInstance2D>` per la documentazione al riguardo.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -1245,7 +1245,7 @@ Disegna un rettangolo. Se ``filled`` è ``true``, il rettangolo verrà riempito 
 
 Se ``width`` è negativo, verranno disegnate primitive a due punti invece che a quattro. Ciò significa che quando il CanvasItem viene ridimensionato, le linee rimarranno sottili. Se questo comportamento non è desiderato, passare un valore positivo per ``width`` come ``1.0``.
 
-Se ``antialiased`` è ``true``, al contorno verranno aggiunte delle "sfumature" semitrasparenti, rendendo i contorni più lisci.
+Se ``antialiased`` è ``true``, ai bordi verrà aggiunta una "sfumatura" traslucida, rendendo i contorni più lisci.
 
 \ **Nota:** ``width`` è efficace solo se ``filled`` è ``false``.
 
@@ -1328,9 +1328,9 @@ Disegna il contorno del testo ``text`` attraverso il ``font`` specificato nella 
 
 |void| **draw_style_box**\ (\ style_box\: :ref:`StyleBox<class_StyleBox>`, rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_CanvasItem_method_draw_style_box>`
 
-Draws a styled rectangle. The ``rect`` is defined in local space.
+Disegna un rettangolo con stile. ``rect`` è definito nello spazio locale.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -1342,9 +1342,9 @@ Draws a styled rectangle. The ``rect`` is defined in local space.
 
 |void| **draw_texture**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, position\: :ref:`Vector2<class_Vector2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_texture>`
 
-Draws a texture at a given position. The ``position`` is defined in local space.
+Disegna una texture alla posizione fornita. ``position`` è definito nello spazio locale.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
 .. rst-class:: classref-item-separator
 
@@ -1356,7 +1356,7 @@ Draws a texture at a given position. The ``position`` is defined in local space.
 
 |void| **draw_texture_rect**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, tile\: :ref:`bool<class_bool>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_texture_rect>`
 
-Disegna un rettangolo con texture in una determinata posizione, modulato facoltativamente da un colore. Il rettangolo ``rect`` è definito in spazio locale. Se ``transpose`` è ``true``, la texture avrà le sue coordinate X e Y scambiate. Vedi anche :ref:`draw_rect()<class_CanvasItem_method_draw_rect>` e :ref:`draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>`.
+Disegna un rettangolo texturizzato in una determinata posizione, modulato facoltativamente da un colore. Il rettangolo ``rect`` è definito in spazio locale. Se ``transpose`` è ``true``, la texture avrà le sue coordinate X e Y scambiate. Vedi anche :ref:`draw_rect()<class_CanvasItem_method_draw_rect>` e :ref:`draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>`.
 
 \ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
@@ -1370,7 +1370,7 @@ Disegna un rettangolo con texture in una determinata posizione, modulato facolta
 
 |void| **draw_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false, clip_uv\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_CanvasItem_method_draw_texture_rect_region>`
 
-Disegna un rettangolo con texture da una regione di texture (specificata da ``src_rect``) in una determinata posizione in spazio locale, modulato facoltativamente da un colore. Se ``transpose`` è ``true``, la texture avrà le sue coordinate X e Y scambiate. Vedi anche :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
+Disegna un rettangolo texturizzato da una regione di texture (specificata da ``src_rect``) in una determinata posizione in spazio locale, modulato facoltativamente da un colore. Se ``transpose`` è ``true``, la texture avrà le sue coordinate X e Y scambiate. Vedi anche :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
 
 \ **Nota:** Gli stylebox, le texture e le mesh memorizzati solo all'interno di variabili locali **non** si dovrebbero utilizzare con questo metodo in GDScript, perché l'operazione di disegno non inizia immediatamente dopo la chiamata di questo metodo. In GDScript, quando la funzione con le variabili locali termina, le variabili locali vengono distrutte prima che avvenga il rendering.
 
@@ -1446,7 +1446,7 @@ Restituisce la trasformazione di questo nodo, convertita dal sistema di coordina
 
 :ref:`Vector2<class_Vector2>` **get_global_mouse_position**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_mouse_position>`
 
-Restituisce la globale posizione del cursore del mouse relativa al :ref:`CanvasLayer<class_CanvasLayer>` che contiene questo **CanvasItem**.
+Restituisce la posizione globale del cursore del mouse relativa al :ref:`CanvasLayer<class_CanvasLayer>` che contiene questo **CanvasItem**.
 
 \ **Nota:** Per le coordinate nello spazio dello schermo (ad esempio quando si utilizza un :ref:`Popup<class_Popup>` non incorporato), è possibile usare :ref:`DisplayServer.mouse_get_position()<class_DisplayServer_method_mouse_get_position>`.
 
@@ -1508,9 +1508,9 @@ Restituisce la posizione del mouse in questo **CanvasItem** utilizzando il siste
 
 :ref:`Transform2D<class_Transform2D>` **get_screen_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_screen_transform>`
 
-Returns the transform of this **CanvasItem** in global screen coordinates (i.e. taking window position into account). Mostly useful for editor plugins.
+Restituisce la trasformazione di questo **CanvasItem** nelle coordinate globali dello schermo (cioè tenendo conto della posizione della finestra). Utile soprattutto per le estensioni dell'editor.
 
-Equivalent to :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_get_global_transform_with_canvas>` if the window is embedded (see :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>`).
+Equivalente a :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_get_global_transform_with_canvas>` se la finestra è incorporata (vedi :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1720,9 +1720,9 @@ Se ``true``, il nodo riceverà :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED<class_
 
 |void| **set_notify_transform**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CanvasItem_method_set_notify_transform>`
 
-If ``true``, the node will receive :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>` whenever its global transform changes.
+Se ``true``, il nodo riceverà :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>` quando la sua trasformazione globale cambia.
 
-\ **Note:** Many canvas items such as :ref:`Camera2D<class_Camera2D>` or :ref:`Light2D<class_Light2D>` automatically enable this in order to function correctly.
+\ **Nota:** Molti elementi canvas come :ref:`Camera2D<class_Camera2D>` o :ref:`Light2D<class_Light2D>` abilitano questo automaticamente per funzionare correttamente.
 
 .. rst-class:: classref-item-separator
 
@@ -1754,7 +1754,7 @@ Mostra il **CanvasItem** se è attualmente nascosto. Ciò equivale a impostare :
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

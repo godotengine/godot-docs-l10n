@@ -436,7 +436,7 @@ Collega i nodi e le porte specificati.
 
 |void| **connect_nodes_forced**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, from_node\: :ref:`int<class_int>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`int<class_int>`, to_port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_VisualShader_method_connect_nodes_forced>`
 
-Collega i nodi e le porte specificati, anche se non possono essere collegati. Tale connessione non è valida e non funzionerà correttamente.
+Collega i nodi e le porte specificati, anche se non possono essere collegati. Tale collegamento non è valido e non funzionerà correttamente.
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ Restituisce l'istanza di nodo shader con il tipo (``type``) e l'``id`` forniti.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_node_connections**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`\ ) |const| :ref:`🔗<class_VisualShader_method_get_node_connections>`
 
-Restituisce la lista dei nodi connessi con il tipo specificato.
+Restituisce la lista dei nodi collegati con il tipo specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -544,7 +544,7 @@ Restituisce ``true`` se lo shader ha una variabile con il nome ``name``.
 
 :ref:`bool<class_bool>` **is_node_connection**\ (\ type\: :ref:`Type<enum_VisualShader_Type>`, from_node\: :ref:`int<class_int>`, from_port\: :ref:`int<class_int>`, to_node\: :ref:`int<class_int>`, to_port\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_VisualShader_method_is_node_connection>`
 
-Restituisce ``true`` se il nodo e la porta specificati esistono.
+Restituisce ``true`` se il nodo e la porta di collegamento specificati esistono.
 
 .. rst-class:: classref-item-separator
 
@@ -610,7 +610,7 @@ Imposta la posizione del nodo specificato.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

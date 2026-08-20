@@ -98,7 +98,7 @@ enum **AxisStretchMode**: :ref:`🔗<enum_NinePatchRect_AxisStretchMode>`
 
 :ref:`AxisStretchMode<enum_NinePatchRect_AxisStretchMode>` **AXIS_STRETCH_MODE_STRETCH** = ``0``
 
-Estende la texture centrale lungo il NinePatchRect. Ciò potrebbe causare una distorsione della texture.
+Estende la texture centrale lungo il NinePatchRect. Potrebbe far apparire la texture distorta.
 
 .. _class_NinePatchRect_constant_AXIS_STRETCH_MODE_TILE:
 
@@ -106,7 +106,7 @@ Estende la texture centrale lungo il NinePatchRect. Ciò potrebbe causare una di
 
 :ref:`AxisStretchMode<enum_NinePatchRect_AxisStretchMode>` **AXIS_STRETCH_MODE_TILE** = ``1``
 
-Ripete la texture centrale lungo il NinePatchRect. Ciò non causerà alcuna distorsione evidente. La texture deve essere continua affinché funzioni senza visualizzare artefatti tra i bordi.
+Ripete la texture centrale lungo il NinePatchRect. Ciò non causerà distorsioni evidenti. La texture deve essere continua affinché funzioni senza visualizzare artefatti tra i bordi.
 
 .. _class_NinePatchRect_constant_AXIS_STRETCH_MODE_TILE_FIT:
 
@@ -114,7 +114,7 @@ Ripete la texture centrale lungo il NinePatchRect. Ciò non causerà alcuna dist
 
 :ref:`AxisStretchMode<enum_NinePatchRect_AxisStretchMode>` **AXIS_STRETCH_MODE_TILE_FIT** = ``2``
 
-Ripete la texture centrale lungo il NinePatchRect, ma estende anche la texture per assicurarsi che ogni ripetizione sia visibile per intero. Ciò potrebbe causare una distorsione della texture, ma inferiore a :ref:`AXIS_STRETCH_MODE_STRETCH<class_NinePatchRect_constant_AXIS_STRETCH_MODE_STRETCH>`. La texture deve essere continua affinché funzioni senza visualizzare artefatti tra i bordi.
+Ripete la texture centrale lungo il NinePatchRect, ma estende anche la texture per assicurarsi che ogni ripetizione sia visibile per intero. Potrebbe far apparire la texture distorta, ma meno di :ref:`AXIS_STRETCH_MODE_STRETCH<class_NinePatchRect_constant_AXIS_STRETCH_MODE_STRETCH>`. La texture deve essere continua affinché funzioni senza visualizzare artefatti tra i bordi.
 
 .. rst-class:: classref-section-separator
 
@@ -255,7 +255,7 @@ L'altezza della riga superiore del pannello a 9-sezioni. Un margine di 16 signif
 - |void| **set_region_rect**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_region_rect**\ (\ )
 
-Regione rettangolare della texture da utilizzare. Se stai lavorando con un atlante, usa questa proprietà per definire l'area che il pannello a 9-slice dovrebbe usare. Tutte le altre proprietà sono relative a questa. Se il rettangolo è vuoto, NinePatchRect userà l'intera texture.
+Regione rettangolare della texture da mostrare. Se stai lavorando con un atlante, usa questa proprietà per definire l'area che il pannello a 9 sezioni dovrebbe usare. Tutte le altre proprietà sono relative a questa. Se il rettangolo è vuoto, NinePatchRect userà l'intera texture.
 
 .. rst-class:: classref-item-separator
 
@@ -307,7 +307,7 @@ Imposta la dimensione del margine sul lato specificato come :ref:`Side<enum_@Glo
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

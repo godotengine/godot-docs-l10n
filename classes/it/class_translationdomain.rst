@@ -316,7 +316,7 @@ Rimuove tutte le traduzioni.
 
 :ref:`Array<class_Array>`\[:ref:`Translation<class_Translation>`\] **find_translations**\ (\ locale\: :ref:`String<class_String>`, exact\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_TranslationDomain_method_find_translations>`
 
-Returns the :ref:`Translation<class_Translation>` instances that match ``locale`` (see :ref:`TranslationServer.compare_locales()<class_TranslationServer_method_compare_locales>`). If ``exact`` is ``true``, only instances whose locale exactly equals ``locale`` will be returned.
+Restituisce le istanze di :ref:`Translation<class_Translation>` che corrispondono a ``locale`` (vedi :ref:`TranslationServer.compare_locales()<class_TranslationServer_method_compare_locales>`. Se ``exact`` è ``true``, vengono considerate solo le istanze la cui localizzazione è esattamente uguale a ``locale``.
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ Restituisce tutte le istanze di :ref:`Translation<class_Translation>` disponibil
 
 :ref:`bool<class_bool>` **has_translation**\ (\ translation\: :ref:`Translation<class_Translation>`\ ) |const| :ref:`🔗<class_TranslationDomain_method_has_translation>`
 
-Returns ``true`` if this translation domain contains the given ``translation``.
+Restituisce ``true`` se questo dominio di traduzione contiene la traduzione ``translation``.
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ Returns ``true`` if this translation domain contains the given ``translation``.
 
 :ref:`bool<class_bool>` **has_translation_for_locale**\ (\ locale\: :ref:`String<class_String>`, exact\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_TranslationDomain_method_has_translation_for_locale>`
 
-Returns ``true`` if there are any :ref:`Translation<class_Translation>` instances that match ``locale`` (see :ref:`TranslationServer.compare_locales()<class_TranslationServer_method_compare_locales>`). If ``exact`` is ``true``, only instances whose locale exactly equals ``locale`` are considered.
+Restituisce ``true`` se ci sono istanze di :ref:`Translation<class_Translation>` che corrispondono a ``locale`` (vedi :ref:`TranslationServer.compare_locales()<class_TranslationServer_method_compare_locales>`). Se ``exact`` è ``true``, vengono considerate solo le istanze la cui localizzazione è esattamente uguale a ``locale``.
 
 .. rst-class:: classref-item-separator
 
@@ -450,7 +450,7 @@ Il numero ``n`` è il numero o la quantità dell'oggetto plurale. Sarà usato pe
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

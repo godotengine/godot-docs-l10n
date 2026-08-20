@@ -735,9 +735,9 @@ PhysicsDirectBodyState3D
 
 :ref:`Vector3<class_Vector3>` **get_velocity_at_local_position**\ (\ local_position\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState3D_method_get_velocity_at_local_position>`
 
-Returns the body's velocity at the given relative position.
+Возвращает скорость тела в заданном относительном положении.
 
-\ ``local_position`` is the offset from the body origin in global coordinates.
+\ ``local_position`` — смещение относительно начала координат тела в глобальных координатах.
 
 .. rst-class:: classref-item-separator
 

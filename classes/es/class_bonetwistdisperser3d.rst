@@ -7,20 +7,18 @@ BoneTwistDisperser3D
 
 **Hereda:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Un nodo que propaga y dispersa la torsión del hueso hijo hacia los huesos padres.
+Un nodo que propaga y dispersa la torsión del hueso posterior hacia los huesos antecesores.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-This **BoneTwistDisperser3D** allows for smooth twist interpolation between multiple bones by dispersing the end bone's twist to the parents. This only changes the twist without changing the global position of each joint.
+Este **BoneTwistDisperser3D** permite una interpolación de torsión suave entre múltiples huesos al dispersar la torsión del hueso final a los antecesores. Esto solo cambia la torsión sin cambiar la posición global de cada articulación.
 
-This is useful for smoothly twisting bones in combination with :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` and IK.
+Esto es útil para torcer huesos suavemente en combinación con :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` e IK.
 
-\ **Note:** If an extracted twist is greater than 180 degrees, flipping occurs. This is similar to :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
-
-\ **Note:** Most methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **Nota:** Si una torsión extraída es mayor de 180 grados, se produce un volteo. Esto es similar a :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -399,7 +397,7 @@ Devuelve la posición en la que dividir el segmento entre articulaciones para la
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Devuelve ``true`` si el hueso final se extiende para tener una cola.
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +409,7 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 :ref:`bool<class_bool>` **is_twist_from_rest**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_is_twist_from_rest>`
 
-Returns ``true`` if extracting the twist amount from the difference between the bone rest and the current bone pose.
+Devuelve ``true`` si se extrae la cantidad de torsión a partir de la diferencia entre la pose de reposo del hueso y su pose actual.
 
 .. rst-class:: classref-item-separator
 
@@ -487,7 +485,7 @@ Sets the end bone name of the bone chain.
 
 Si ``enabled`` es ``true``, el hueso final se extiende para tener una cola.
 
-Si ``enabled`` es ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` se convierte en padre del hueso final y utiliza el vector hacia el hueso final como eje de torsión.
+Si ``enabled`` es ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` se convierte en antecesor del hueso final y utiliza el vector hacia el hueso final como eje de torsión.
 
 .. rst-class:: classref-item-separator
 

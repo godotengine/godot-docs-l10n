@@ -9,14 +9,14 @@ InputEvent
 
 **Ereditato da:** :ref:`InputEventAction<class_InputEventAction>`, :ref:`InputEventFromWindow<class_InputEventFromWindow>`, :ref:`InputEventJoypadButton<class_InputEventJoypadButton>`, :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`, :ref:`InputEventMIDI<class_InputEventMIDI>`, :ref:`InputEventShortcut<class_InputEventShortcut>`
 
-Classe di base astratta per gli eventi di input.
+Classe base astratta per gli eventi di input.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Classe di base astratta per tutti i tipi di eventi di input. Vedi :ref:`Node._input()<class_Node_private_method__input>`.
+Classe base astratta per tutti i tipi di eventi di input. Vedi :ref:`Node._input()<class_Node_private_method__input>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -102,7 +102,7 @@ ID dispositivo utilizzato per l'input del mouse emulato da un touchscreen o per 
 
 **DEVICE_ID_KEYBOARD** = ``16`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_KEYBOARD>`
 
-Device ID used for input from a keyboard. This can be used to distinguish keyboard input events from joypad input events.
+ID di dispositivo per l'input proveniente da una tastiera. Può servire per distinguere gli eventi di input da tastiera dagli eventi di input da joypad.
 
 .. _class_InputEvent_constant_DEVICE_ID_MOUSE:
 
@@ -110,7 +110,7 @@ Device ID used for input from a keyboard. This can be used to distinguish keyboa
 
 **DEVICE_ID_MOUSE** = ``32`` :ref:`🔗<class_InputEvent_constant_DEVICE_ID_MOUSE>`
 
-Device ID used for input from a mouse. This can be used to distinguish mouse input events from joypad input events.
+ID di dispositivo per l'input proveniente da un mouse. Può servire per distinguere gli eventi di input da mouse dagli eventi di input da joypad.
 
 .. rst-class:: classref-section-separator
 
@@ -205,11 +205,11 @@ Se ``exact_match`` è ``false``, ignora ulteriori modificatori di input per gli 
 
 :ref:`bool<class_bool>` **is_action_pressed**\ (\ action\: :ref:`StringName<class_StringName>`, allow_echo\: :ref:`bool<class_bool>` = false, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_InputEvent_method_is_action_pressed>`
 
-Returns ``true`` if the given action matches this event and is being pressed (and is not an echo event for :ref:`InputEventKey<class_InputEventKey>` events, unless ``allow_echo`` is ``true``). Not relevant for events of type :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` or :ref:`InputEventScreenDrag<class_InputEventScreenDrag>`.
+Restituisce ``true`` se l'azione specificata corrisponde a questo evento ed è premuta (e non è un evento eco per gli eventi :ref:`InputEventKey<class_InputEventKey>`, a meno che ``allow_echo`` non sia ``true``). Non rilevante per gli eventi di tipo :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` o :ref:`InputEventScreenDrag<class_InputEventScreenDrag>`.
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+Se ``exact_match`` è ``false``, ignora i modificatori di input aggiuntivi per gli eventi :ref:`InputEventKey<class_InputEventKey>` e :ref:`InputEventMouseButton<class_InputEventMouseButton>` e la direzione per gli eventi :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_action_pressed()<class_InputEvent_method_is_action_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **Nota:** A causa di ghosting per la tastiera, :ref:`is_action_pressed()<class_InputEvent_method_is_action_pressed>` potrebbe restituire ``false`` anche se viene premuto uno dei tasti dell'azione. Per maggiori informazioni, vedi `Esempi di input <../tutorials/inputs/input_examples.html#keyboard-events>`__ nella documentazione.
 
 .. rst-class:: classref-item-separator
 
@@ -221,9 +221,9 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`bool<class_bool>` **is_action_released**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_InputEvent_method_is_action_released>`
 
-Returns ``true`` if the given action matches this event and is released (i.e. not pressed). Not relevant for events of type :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` or :ref:`InputEventScreenDrag<class_InputEventScreenDrag>`.
+Restituisce ``true`` se l'azione specificata corrisponde a questo evento ed è rilasciata (ossia non premuta). Non rilevante per eventi di tipo :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` o :ref:`InputEventScreenDrag<class_InputEventScreenDrag>`.
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+Se ``exact_match`` è ``false``, ignora i modificatori di input aggiuntivi per gli eventi :ref:`InputEventKey<class_InputEventKey>` e :ref:`InputEventMouseButton<class_InputEventMouseButton>` e la direzione per gli eventi :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
 
 .. rst-class:: classref-item-separator
 
@@ -273,11 +273,11 @@ Restituisce ``true`` se questo evento di input è un evento eco (solo per eventi
 
 :ref:`bool<class_bool>` **is_match**\ (\ event\: :ref:`InputEvent<class_InputEvent>`, exact_match\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_InputEvent_method_is_match>`
 
-Returns ``true`` if the specified ``event`` matches this event. Only valid for action events, which include key (:ref:`InputEventKey<class_InputEventKey>`), button (:ref:`InputEventMouseButton<class_InputEventMouseButton>` or :ref:`InputEventJoypadButton<class_InputEventJoypadButton>`), axis :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`, and action (:ref:`InputEventAction<class_InputEventAction>`) events.
+Restituisce ``true`` se l'evento ``event`` corrisponde a questo evento. Valido solo per gli eventi d'azione, ovvero eventi da tasti (:ref:`InputEventKey<class_InputEventKey>`), pulsanti (:ref:`InputEventMouseButton<class_InputEventMouseButton>` o :ref:`InputEventJoypadButton<class_InputEventJoypadButton>`), assi :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` o azioni (:ref:`InputEventAction<class_InputEventAction>`).
 
-If ``exact_match`` is ``false``, the check ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+Se ``exact_match`` è ``false``, ignora i modificatori di input aggiuntivi per gli eventi :ref:`InputEventKey<class_InputEventKey>` e :ref:`InputEventMouseButton<class_InputEventMouseButton>` e la direzione per gli eventi :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
 
-\ **Note:** This method only considers the event configuration (such as the keyboard key or the joypad axis), not state information like :ref:`is_pressed()<class_InputEvent_method_is_pressed>`, :ref:`is_released()<class_InputEvent_method_is_released>`, :ref:`is_echo()<class_InputEvent_method_is_echo>`, or :ref:`is_canceled()<class_InputEvent_method_is_canceled>`.
+\ **Nota:** Questo metodo considera solo la configurazione dell'evento (ad esempio il tasto della tastiera o l'asse del joypad), non le informazioni sullo stato come :ref:`is_pressed()<class_InputEvent_method_is_pressed>`, :ref:`is_released()<class_InputEvent_method_is_released>`, :ref:`is_echo()<class_InputEvent_method_is_echo>` o :ref:`is_canceled()<class_InputEvent_method_is_canceled>`.
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ Restituisce una copia dell'evento di input specificato che è stato compensato d
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

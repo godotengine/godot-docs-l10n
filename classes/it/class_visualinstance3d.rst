@@ -189,7 +189,7 @@ Restituisce il RID di questa istanza. Questo RID è lo stesso del RID restituito
 
 :ref:`bool<class_bool>` **get_layer_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_VisualInstance3D_method_get_layer_mask_value>`
 
-Restituisce se è abilitato o meno lo strato specificato di :ref:`layers<class_VisualInstance3D_property_layers>`, fornito un ``layer_number`` tra 1 e 20.
+Restituisce se è abilitato o meno lo strato specificato in :ref:`layers<class_VisualInstance3D_property_layers>`, fornito un ``layer_number`` tra 1 e 20.
 
 .. rst-class:: classref-item-separator
 
@@ -213,13 +213,13 @@ Imposta la risorsa istanziata da questo **VisualInstance3D**, che modifica il mo
 
 |void| **set_layer_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_VisualInstance3D_method_set_layer_mask_value>`
 
-In base a ``value``, abilita o disabilita lo strato specificato nei :ref:`layers<class_VisualInstance3D_property_layers>`, fornito un ``layer_number`` compreso tra 1 e 20.
+In base a ``value``, attiva o disattiva lo strato specificato in :ref:`layers<class_VisualInstance3D_property_layers>`, fornito un ``layer_number`` compreso tra 1 e 20.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

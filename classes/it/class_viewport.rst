@@ -9,7 +9,7 @@ Viewport
 
 **Ereditato da:** :ref:`SubViewport<class_SubViewport>`, :ref:`Window<class_Window>`
 
-Classe di base astratta per viewport. Incapsula il disegno e l'interazione con un mondo di gioco.
+Classe base astratta per viewport. Incapsula il disegno e l'interazione con un mondo di gioco.
 
 .. rst-class:: classref-introduction-group
 
@@ -387,7 +387,7 @@ Utilizza l'upscaling AMD FidelityFX Super Resolution 1.0 per il buffer 3D della 
 
 :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_FSR2** = ``2``
 
-Utilizza l'upscaling AMD FidelityFX Super Resolution 2.2 per il buffer 3D della viewport. La quantità di ridimensionamento può essere impostata tramite :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. I valori inferiori a ``1.0`` risulteranno nell'upscaling della viewport tramite FSR2. I valori superiori a ``1.0`` non sono supportati e sarà invece utilizzato il sottocampionamento bilineare. Un valore di ``1.0`` userà FSR2 alla risoluzione nativa come soluzione TAA.
+Utilizza l'upscaling AMD FidelityFX Super Resolution 2.2 per il buffer 3D della viewport. La quantità di ridimensionamento si può impostare tramite :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. I valori inferiori a ``1.0`` risulteranno nell'upscaling della viewport tramite FSR2. I valori superiori a ``1.0`` non sono supportati e sarà invece utilizzato il sottocampionamento bilineare. Un valore di ``1.0`` userà FSR2 alla risoluzione nativa come soluzione TAA.
 
 .. _class_Viewport_constant_SCALING_3D_MODE_METALFX_SPATIAL:
 
@@ -463,7 +463,7 @@ Modalità antialiasing multicampione disattivata. Questo è il valore predefinit
 
 :ref:`MSAA<enum_Viewport_MSAA>` **MSAA_2X** = ``1``
 
-Usa un 2× Multisample Antialiasing. Ha un costo di prestazioni moderato. Aiuta a ridurre notevolmente l'aliasing, ma 4× MSAA risulta comunque sostanzialmente migliore.
+Usa l'antialias multicampione 2×. Ha un impatto moderato sulle prestazioni. Aiuta a ridurre notevolmente l'aliasing, ma l'MSAA 4× risulta comunque sostanzialmente migliore.
 
 .. _class_Viewport_constant_MSAA_4X:
 
@@ -471,7 +471,7 @@ Usa un 2× Multisample Antialiasing. Ha un costo di prestazioni moderato. Aiuta 
 
 :ref:`MSAA<enum_Viewport_MSAA>` **MSAA_4X** = ``2``
 
-Usa 4× Multisample Antialiasing. Questo ha un costo di prestazioni significativo, ed è generalmente un buon compromesso tra prestazioni e qualità.
+Usa l'antialias multicampione 4×. Questo ha un impatto significativo sulle prestazioni, ed è generalmente un buon compromesso tra prestazioni e qualità.
 
 .. _class_Viewport_constant_MSAA_8X:
 
@@ -479,7 +479,7 @@ Usa 4× Multisample Antialiasing. Questo ha un costo di prestazioni significativ
 
 :ref:`MSAA<enum_Viewport_MSAA>` **MSAA_8X** = ``3``
 
-Usa 8× Multisample Antialiasing. Ha un costo di prestazioni molto elevato. La differenza tra 4× e 8× MSAA potrebbe non essere sempre visibile in condizioni di gioco reali. Probabilmente non supportato su hardware di fascia bassa e più vecchio.
+Usa l'antialias multicampione 8×. Ha un impatto molto elevato sulle prestazioni. La differenza tra l'MSAA 4× e 8× potrebbe non essere sempre evidente in condizioni reali di gioco. Probabilmente non supportato su hardware di fascia bassa e più vecchio.
 
 .. _class_Viewport_constant_MSAA_MAX:
 
@@ -571,7 +571,7 @@ Non eseguire alcun antialiasing nella post-elaborazione dell'intero schermo.
 
 :ref:`ScreenSpaceAA<enum_Viewport_ScreenSpaceAA>` **SCREEN_SPACE_AA_FXAA** = ``1``
 
-Usa un antialiasing approssimativo veloce. FXAA è un metodo di antialiasing spazio-schermo popolare, che è veloce ma renderà l'immagine sfocata, specialmente a risoluzioni più basse. Può comunque funzionare abbastanza bene a risoluzioni elevate come 1440p e 4K.
+Usa un antialiasing approssimativo veloce. L'FXAA è un metodo popolare di antialiasing nello spazio dello schermo, che è veloce ma renderà l'immagine sfocata, specialmente a risoluzioni più basse. Può comunque funzionare abbastanza bene a risoluzioni elevate come 1440p e 4K.
 
 .. _class_Viewport_constant_SCREEN_SPACE_AA_SMAA:
 
@@ -579,7 +579,7 @@ Usa un antialiasing approssimativo veloce. FXAA è un metodo di antialiasing spa
 
 :ref:`ScreenSpaceAA<enum_Viewport_ScreenSpaceAA>` **SCREEN_SPACE_AA_SMAA** = ``2``
 
-Utilizza l'antialiasing morfologico subpixel. SMAA può produrre risultati più nitidi di FXAA, ma con un costo in termini di prestazioni leggermente superiore.
+Utilizza l'antialiasing morfologico subpixel. SMAA può produrre risultati più nitidi di FXAA, ma con un impatto leggermente maggiore sulle prestazioni.
 
 .. _class_Viewport_constant_SCREEN_SPACE_AA_MAX:
 
@@ -737,9 +737,9 @@ Gli oggetti sono visualizzati come modelli fildiferro.
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_NORMAL_BUFFER** = ``5``
 
-Gli oggetti sono visualizzati senza informazioni sull'illuminazione e le loro texture sono sostituite dalla mappatura normale.
+Gli oggetti sono visualizzati senza informazioni sull'illuminazione e le loro texture sono sostituite con il normal mapping.
 
-\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
+\ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_VOXEL_GI_ALBEDO:
 
@@ -803,9 +803,9 @@ Disegna il buffer di luminanza della scena (se disponibile) nel quadrante superi
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_SSAO** = ``12``
 
-Disegna la texture di occlusione ambientale dello spazio dello schermo anziché la scena, in modo che si possa vedere chiaramente come influisce sugli oggetti. Affinché questa modalità di visualizzazione funzioni, è necessario che :ref:`Environment.ssao_enabled<class_Environment_property_ssao_enabled>` sia impostato nel proprio :ref:`WorldEnvironment<class_WorldEnvironment>`.
+Disegna la texture di occlusione ambientale nello spazio dello schermo anziché la scena, in modo da poter vedere chiaramente come influisce sugli oggetti. Affinché questa modalità di visualizzazione funzioni, è necessario impostare :ref:`Environment.ssao_enabled<class_Environment_property_ssao_enabled>` nel proprio :ref:`WorldEnvironment<class_WorldEnvironment>`.
 
-\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
+\ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_SSIL:
 
@@ -813,9 +813,9 @@ Disegna la texture di occlusione ambientale dello spazio dello schermo anziché 
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_SSIL** = ``13``
 
-Disegna la texture di illuminazione indiretta nello spazio dello schermo anziché la scena, in modo che si possa vedere chiaramente come influisce sugli oggetti. Affinché questa modalità di visualizzazione funzioni, è necessario che :ref:`Environment.ssil_enabled<class_Environment_property_ssil_enabled>` sia impostato nel proprio :ref:`WorldEnvironment<class_WorldEnvironment>`.
+Disegna la texture di illuminazione indiretta nello spazio dello schermo anziché la scena, in modo da poter vedere chiaramente come influisce sugli oggetti. Affinché questa modalità di visualizzazione funzioni, è necessario impostare :ref:`Environment.ssil_enabled<class_Environment_property_ssil_enabled>` nel proprio :ref:`WorldEnvironment<class_WorldEnvironment>`.
 
-\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
+\ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_PSSM_SPLITS:
 
@@ -849,7 +849,7 @@ Disegna le cascate utilizzate per renderizzare l'illuminazione globale con signe
 
 Non fa nulla se :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>` dell'ambiente attuale è ``false``.
 
-\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
+\ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_SDFGI_PROBES:
 
@@ -863,7 +863,7 @@ Nell'editor, facendo clic sinistro su una sonda, appariranno dei punti luminosi 
 
 Non fa nulla se :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>` dell'ambiente attuale è ``false``.
 
-\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
+\ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_GI_BUFFER:
 
@@ -891,7 +891,7 @@ Disegna tutti gli oggetti al loro numero massimo di poligoni, a prescindere dall
 
 Disegna il cluster utilizzato dai nodi :ref:`OmniLight3D<class_OmniLight3D>` per ottimizzare il rendering della luce.
 
-\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
+\ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_CLUSTER_SPOT_LIGHTS:
 
@@ -901,7 +901,7 @@ Disegna il cluster utilizzato dai nodi :ref:`OmniLight3D<class_OmniLight3D>` per
 
 Disegna il cluster utilizzato dai nodi :ref:`SpotLight3D<class_SpotLight3D>` per ottimizzare il rendering della luce.
 
-\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
+\ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_CLUSTER_DECALS:
 
@@ -911,7 +911,7 @@ Disegna il cluster utilizzato dai nodi :ref:`SpotLight3D<class_SpotLight3D>` per
 
 Disegna il cluster utilizzato dai nodi :ref:`Decal<class_Decal>` per ottimizzare il rendering delle decalcomanie.
 
-\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
+\ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_CLUSTER_REFLECTION_PROBES:
 
@@ -919,9 +919,9 @@ Disegna il cluster utilizzato dai nodi :ref:`Decal<class_Decal>` per ottimizzare
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_REFLECTION_PROBES** = ``23``
 
-Disegna il cluster utilizzato dai nodi :ref:`ReflectionProbe<class_ReflectionProbe>` per ottimizzare il rendering delle decalcomanie.
+Disegna il cluster utilizzato dai nodi :ref:`ReflectionProbe<class_ReflectionProbe>` per ottimizzare il rendering delle sonde di riflessione.
 
-\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
+\ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_OCCLUDERS:
 
@@ -941,7 +941,7 @@ Disegna il buffer utilizzato per l'occlusion culling.
 
 Disegna linee vettoriali sulla viewport per indicare lo spostamento dei pixel tra i frame.
 
-\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
+\ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_INTERNAL_BUFFER:
 
@@ -961,7 +961,7 @@ Disegna il buffer interno di risoluzione della scena in uno spazio colore linear
 
 Disegna il cluster utilizzato dai nodi :ref:`AreaLight3D<class_AreaLight3D>` per ottimizzare il rendering della luce.
 
-\ **Nota:** Supportato solo quando si utilizza i metodo di rendering Forward+.
+\ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_AREA_LIGHT_ATLAS:
 
@@ -1101,7 +1101,7 @@ enum **SDFOversize**: :ref:`🔗<enum_Viewport_SDFOversize>`
 
 :ref:`SDFOversize<enum_Viewport_SDFOversize>` **SDF_OVERSIZE_100_PERCENT** = ``0``
 
-Il campo di distanza con segno copre solo il rettangolo della viewport.
+Il signed distance field copre solo il rettangolo della viewport.
 
 .. _class_Viewport_constant_SDF_OVERSIZE_120_PERCENT:
 
@@ -1109,7 +1109,7 @@ Il campo di distanza con segno copre solo il rettangolo della viewport.
 
 :ref:`SDFOversize<enum_Viewport_SDFOversize>` **SDF_OVERSIZE_120_PERCENT** = ``1``
 
-Il campo di distanza con segno è esteso per coprire il 20% delle dimensioni della viewport attorno ai bordi.
+Il signed distance field è esteso per coprire il 20% delle dimensioni della viewport attorno ai bordi.
 
 .. _class_Viewport_constant_SDF_OVERSIZE_150_PERCENT:
 
@@ -1117,7 +1117,7 @@ Il campo di distanza con segno è esteso per coprire il 20% delle dimensioni del
 
 :ref:`SDFOversize<enum_Viewport_SDFOversize>` **SDF_OVERSIZE_150_PERCENT** = ``2``
 
-Il campo di distanza con segno è esteso per coprire il 50% delle dimensioni della viewport attorno ai bordi.
+Il signed distance field è esteso per coprire il 50% delle dimensioni della viewport attorno ai bordi.
 
 .. _class_Viewport_constant_SDF_OVERSIZE_200_PERCENT:
 
@@ -1125,7 +1125,7 @@ Il campo di distanza con segno è esteso per coprire il 50% delle dimensioni del
 
 :ref:`SDFOversize<enum_Viewport_SDFOversize>` **SDF_OVERSIZE_200_PERCENT** = ``3``
 
-Il campo di distanza con segno è esteso per coprire il 100% (il doppio) delle dimensioni della viewport attorno ai bordi.
+Il signed distance field è esteso per coprire il 100% (il doppio) delle dimensioni della viewport attorno ai bordi.
 
 .. _class_Viewport_constant_SDF_OVERSIZE_MAX:
 
@@ -1151,7 +1151,7 @@ enum **SDFScale**: :ref:`🔗<enum_Viewport_SDFScale>`
 
 :ref:`SDFScale<enum_Viewport_SDFScale>` **SDF_SCALE_100_PERCENT** = ``0``
 
-Il campo di distanza con segno è visualizzato alla risoluzione piena.
+Il signed distance field è renderizzato a piena risoluzione.
 
 .. _class_Viewport_constant_SDF_SCALE_50_PERCENT:
 
@@ -1159,7 +1159,7 @@ Il campo di distanza con segno è visualizzato alla risoluzione piena.
 
 :ref:`SDFScale<enum_Viewport_SDFScale>` **SDF_SCALE_50_PERCENT** = ``1``
 
-Il campo di distanza con segno è visualizzato a metà della risoluzione di questa viewport.
+Il signed distance field è renderizzato a metà della risoluzione di questa viewport.
 
 .. _class_Viewport_constant_SDF_SCALE_25_PERCENT:
 
@@ -1167,7 +1167,7 @@ Il campo di distanza con segno è visualizzato a metà della risoluzione di ques
 
 :ref:`SDFScale<enum_Viewport_SDFScale>` **SDF_SCALE_25_PERCENT** = ``2``
 
-Il campo della distanza con segno è visualizzato a un quarto della risoluzione di questa viewport.
+Il signed distance field è renderizzato a un quarto della risoluzione di questa viewport.
 
 .. _class_Viewport_constant_SDF_SCALE_MAX:
 
@@ -1338,9 +1338,9 @@ Se ``true``, la viewport elaborerà i flussi audio 3D.
 - |void| **set_canvas_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_canvas_cull_mask**\ (\ )
 
-The rendering layers in which this **Viewport** renders :ref:`CanvasItem<class_CanvasItem>` nodes.
+Gli strati di rendering in cui questa **Viewport** renderizza i nodi :ref:`CanvasItem<class_CanvasItem>`.
 
-\ **Note:** A :ref:`CanvasItem<class_CanvasItem>` does not inherit its parents' visibility layers. See :ref:`CanvasItem.visibility_layer<class_CanvasItem_property_visibility_layer>`'s description for details.
+\ **Nota:** Un :ref:`CanvasItem<class_CanvasItem>` non eredita gli strati di visibilità dei suoi genitori. Vedi la descrizione di :ref:`CanvasItem.visibility_layer<class_CanvasItem_property_visibility_layer>` per i dettagli.
 
 .. rst-class:: classref-item-separator
 
@@ -1357,7 +1357,7 @@ The rendering layers in which this **Viewport** renders :ref:`CanvasItem<class_C
 - |void| **set_default_canvas_item_texture_filter**\ (\ value\: :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>`\ )
 - :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **get_default_canvas_item_texture_filter**\ (\ )
 
-The default filter mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in this viewport.
+La modalità predefinita di filtro utilizzata dai nodi :ref:`CanvasItem<class_CanvasItem>` per questa viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -1374,7 +1374,7 @@ The default filter mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in thi
 - |void| **set_default_canvas_item_texture_repeat**\ (\ value\: :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>`\ )
 - :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **get_default_canvas_item_texture_repeat**\ (\ )
 
-The default repeat mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in this viewport.
+La modalità predefinita di ripetizione utilizzata dai nodi :ref:`CanvasItem<class_CanvasItem>` per questa viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -1495,7 +1495,7 @@ Se ``true``, la viewport non riceverà eventi di input.
 - |void| **set_drag_threshold**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_drag_threshold**\ (\ )
 
-The minimum distance the mouse cursor must move while pressed before a drag operation begins.
+La distanza minima che il cursore del mouse deve percorrere mentre è premuto prima che avvii un'operazione di trascinamento.
 
 .. rst-class:: classref-item-separator
 
@@ -1573,7 +1573,7 @@ Per controllare questa proprietà sulla viewport radice, cambia l'impostazione d
 
 \ **Nota:** A seconda degli attributi della mesh (colori dei vertici, forme di fusione, ecc.), una mesh potrebbe avere meno livelli di LOD generati per evitare distorsioni evidenti una volta che è influenzata dai colori dei vertici o dalle forme di fusione. Le mesh con pochissimi vertici non avranno alcun LOD generato, il che significa che questa impostazione non le influenzerà affatto. In generale, questa impostazione ha il maggiore impatto sulle mesh statiche con un elevato numero di vertici.
 
-\ **Nota:** :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` non influisce sugli intervalli di visibilità :ref:`GeometryInstance3D<class_GeometryInstance3D>` (noti anche come LOD "manuale" o LOD gerarchico).
+\ **Nota:** :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` non influisce sui campi di visibilità :ref:`GeometryInstance3D<class_GeometryInstance3D>` (noti anche come LOD "manuale" o LOD gerarchico).
 
 .. rst-class:: classref-item-separator
 
@@ -1698,11 +1698,11 @@ Se ``true``, gli oggetti renderizzati dalla viewport diventano soggetti al proce
 - |void| **set_physics_object_picking_first_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_first_only**\ (\ )
 
-Se ``true``, il segnale input_event verrà inviato solo a un oggetto di fisica nel processo di selezione del mouse. Se vuoi ottenere solo l'oggetto più in alto, devi anche abilitare :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
+Se ``true``, il segnale input_event verrà inviato solo a un oggetto fisico nel processo di selezione del mouse. Se vuoi ottenere solo l'oggetto più in alto, devi anche abilitare :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
 
-Se ``false``, un segnale input_event verrà inviato a tutti gli oggetti di fisica nel processo di selezione del mouse.
+Se ``false``, un segnale input_event verrà inviato a tutti gli oggetti fisici nel processo di selezione del mouse.
 
-Questo si applica solo alla selezione degli oggetto CanvasItem 2D.
+Questo si applica solo alla selezione degli oggetti CanvasItem in 2D.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,9 +1825,9 @@ La quantità di suddivisione del quarto quadrante sull'atlante delle ombre.
 - |void| **set_positional_shadow_atlas_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_positional_shadow_atlas_size**\ (\ )
 
-La risoluzione dell'atlante delle ombre (utilizzata per luci omnidirezionali e faretti). Il valore è arrotondato alla potenza di 2 più vicina.
+La risoluzione dell'atlante delle ombre (utilizzata per luci omnidirezionali e spot). Il valore è arrotondato alla potenza di 2 più vicina.
 
-\ **Nota:** Se impostato su ``0``, non saranno visibili ombre posizionali. Ciò può migliorare significativamente le prestazioni sui sistemi di fascia bassa riducendo sia il carico della CPU sia il carico della GPU (poiché sono necessarie meno chiamate di disegno per disegnare la scena senza ombre).
+\ **Nota:** Se impostato su ``0``, non saranno visibili ombre posizionali. Ciò può migliorare significativamente le prestazioni sui sistemi di fascia bassa, riducendo sia il carico della CPU sia il carico della GPU (poiché servono meno chiamate di disegno per disegnare la scena senza ombre).
 
 .. rst-class:: classref-item-separator
 
@@ -1863,7 +1863,7 @@ Per controllare questa proprietà sulla viewport radice, cambia l'impostazione d
 - |void| **set_scaling_3d_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_scaling_3d_scale**\ (\ )
 
-Ridimensiona il buffer di rendering 3D in base alle dimensioni della viewport, utilizzando un filtro immagine specificato in :ref:`ProjectSettings.rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` per ridimensionare l'immagine finale alle dimensioni complete della viewport. È possibile utilizzare valori inferiori a ``1.0`` per velocizzare il rendering 3D a scapito della qualità (sottocampionamento). Valori superiori a ``1.0`` sono validi solo per la modalità bilineare e possono essere utilizzati per migliorare la qualità del rendering 3D a un costo elevato in termini di prestazioni (sovracampionamento). Vedi anche :ref:`ProjectSettings.rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` per l'antialiasing multi-campione, che è notevolmente più economico per le prestazioni, ma smussa solo i bordi dei poligoni.
+Ridimensiona il buffer di rendering 3D in base alle dimensioni della viewport, utilizzando un filtro immagine specificato in :ref:`ProjectSettings.rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` per ridimensionare l'immagine finale alle piene dimensioni della viewport. È possibile utilizzare valori inferiori a ``1.0`` per velocizzare il rendering 3D a scapito della qualità (sottocampionamento). Valori superiori a ``1.0`` sono validi solo per la modalità bilineare ed è possibile usarli per migliorare la qualità del rendering 3D, a un costo elevato per le prestazioni (sovracampionamento). Vedi anche :ref:`ProjectSettings.rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` per l'antialiasing multicampione, che è notevolmente più performante ma smussa solo i bordi dei poligoni.
 
 Quando si utilizza l'upscaling FSR, AMD consiglia di esporre i seguenti valori come opzioni preimpostate agli utenti "Ultra Qualità: 0.77", "Qualità: 0.67", "Bilanciato: 0.59", "Prestazioni: 0.5" anziché esporre l'intera scala.
 
@@ -1884,7 +1884,7 @@ Per controllare questa proprietà nella viewport radice, cambia l'impostazione d
 - |void| **set_screen_space_aa**\ (\ value\: :ref:`ScreenSpaceAA<enum_Viewport_ScreenSpaceAA>`\ )
 - :ref:`ScreenSpaceAA<enum_Viewport_ScreenSpaceAA>` **get_screen_space_aa**\ (\ )
 
-Imposta il metodo di antialiasing screen-space utilizzato. L'antialiasing screen-space funziona sfocando selettivamente i bordi in uno shader post-process. Si differenzia da MSAA che prende multipli campioni di copertura durante il rendering degli oggetti. I metodi di AA screen-space sono in genere più veloci di MSAA e smussano l'aliasing speculare, ma tendono a far apparire le scene sfocate.
+Imposta il metodo di antialiasing nello spazio dello schermo utilizzato. L'antialiasing nello spazio dello schermo funziona sfocando selettivamente i bordi in uno shader di post-elaborazione. Si differenzia dall'MSAA che preleva più campioni di copertura durante il rendering degli oggetti. I metodi di AA nello spazio dello schermo sono in genere più veloci dell'MSAA e smussano l'aliasing speculare, ma tendono a far apparire le scene sfocate.
 
 Vedi anche :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>` e :ref:`RenderingServer.viewport_set_screen_space_aa()<class_RenderingServer_method_viewport_set_screen_space_aa>`.
 
@@ -1903,9 +1903,9 @@ Vedi anche :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa
 - |void| **set_sdf_oversize**\ (\ value\: :ref:`SDFOversize<enum_Viewport_SDFOversize>`\ )
 - :ref:`SDFOversize<enum_Viewport_SDFOversize>` **get_sdf_oversize**\ (\ )
 
-Controlla la quantità di dimensioni della finestra originale che deve essere coperta dal campo della distanza con segno 2D. Questo SDF può essere campionato negli shader :ref:`CanvasItem<class_CanvasItem>` ed è anche usato per la collisione di :ref:`GPUParticles2D<class_GPUParticles2D>`. Valori più alti consentono che le porzioni di occlusioni situati all'esterno della finestra siano comunque prese in considerazione nel campo di distanza con segno generato, a scapito delle prestazioni. Se noti particelle che cadono attraverso i :ref:`LightOccluder2D<class_LightOccluder2D>` quando gli occlusori abbandonano la viewport, aumenta questa impostazione.
+Controlla quanta parte delle dimensioni originali della viewport deve essere coperta dal signed distance field 2D. Questo SDF si può campionare negli shader :ref:`CanvasItem<class_CanvasItem>` e serve anche per le collisioni di :ref:`GPUParticles2D<class_GPUParticles2D>`. Valori più alti permettono alle porzioni di occlusori situati fuori dalla viewport di essere comunque considerate nell'SDF generato, a scapito delle prestazioni. Se noti particelle che passano attraverso gli :ref:`LightOccluder2D<class_LightOccluder2D>` quando gli occlusori escono dalla viewport, aumenta questa impostazione.
 
-La percentuale è aggiunta su ogni asse e su entrambi i lati. Ad esempio, con il valore predefinito :ref:`SDF_OVERSIZE_120_PERCENT<class_Viewport_constant_SDF_OVERSIZE_120_PERCENT>`, il campo di distanza con segno coprirà il 20% della dimensione della viewport all'esterno della viewport su ogni lato (in alto, a destra, in basso, a sinistra).
+La percentuale è aggiunta su ciascun asse e su entrambi i lati. Ad esempio, con il valore predefinito :ref:`SDF_OVERSIZE_120_PERCENT<class_Viewport_constant_SDF_OVERSIZE_120_PERCENT>`, l'SDF coprirà il 20% delle dimensioni fuori dalla viewport su ciascun lato (in alto, a destra, in basso, a sinistra).
 
 .. rst-class:: classref-item-separator
 
@@ -1922,7 +1922,7 @@ La percentuale è aggiunta su ogni asse e su entrambi i lati. Ad esempio, con il
 - |void| **set_sdf_scale**\ (\ value\: :ref:`SDFScale<enum_Viewport_SDFScale>`\ )
 - :ref:`SDFScale<enum_Viewport_SDFScale>` **get_sdf_scale**\ (\ )
 
-La scala di risoluzione da usare per il campo di distanza con segno 2D. Valori più alti portano a un campo di distanza con segno più preciso e più stabile mentre la telecamera si muove, a scapito delle prestazioni.
+La scala di risoluzione da usare per il signed distance field 2D. Valori più alti portano a un signed distance field più preciso e più stabile mentre la telecamera si muove, a scapito delle prestazioni.
 
 .. rst-class:: classref-item-separator
 
@@ -1975,11 +1975,11 @@ Se ``true``, i vertici dei nodi :ref:`CanvasItem<class_CanvasItem>` si allineano
 
 Influisce sulla nitidezza finale della texture leggendo da una mipmap inferiore o superiore (chiamata anche "texture LOD bias"). I valori negativi rendono le texture mipmap più nitide ma più granulose se viste da lontano, mentre i valori positivi rendono le texture mipmap più sfocate (anche da vicino).
 
-L'attivazione dell'antialiasing temporale (:ref:`use_taa<class_Viewport_property_use_taa>`) applicherà automaticamente un offset di ``-0,5`` a questo valore, mentre l'attivazione di FXAA (:ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`) applicherà automaticamente un offset di ``-0,25`` a questo valore. Se TAA e FXAA sono abilitati allo stesso tempo, a questo valore viene applicato un offset di ``-0,75``.
+Attivando l'antialiasing temporale (:ref:`use_taa<class_Viewport_property_use_taa>`) sarà applicata automaticamente una deviazione di ``-0.5`` a questo valore, mentre attivando l'FXAA (:ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`) sarà applicata automaticamente una deviazione di ``-0.25`` a questo valore. Se il TAA e l'FXAA sono abilitati allo stesso tempo, a questo valore è applicata una deviazione di ``-0.75``.
 
 Per controllare questa proprietà nella viewport radice, cambia l'impostazione del progetto :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`.
 
-\ **Nota:** Se :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` è inferiore a ``1.0`` (esclusivo), :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` viene utilizzato per regolare il bias mipmap automatico calcolato internamente in base al fattore di scala. La formula per questo è ``log2(scaling_3d_scale) + mipmap_bias``.
+\ **Nota:** Se :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` è inferiore a ``1.0`` (esclusivo), :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` è utilizzato per regolare il bias mipmap automatico, calcolato internamente in base al fattore di scala. La formula per questo è ``log2(scaling_3d_scale) + mipmap_bias``.
 
 \ **Nota:** Questa proprietà è supportata solo nei renderer Forward+ e Mobile, non in Compatibilità. In Compatibilità, questa proprietà è sempre trattata come se fosse impostata su ``0.0``.
 
@@ -1998,9 +1998,9 @@ Per controllare questa proprietà nella viewport radice, cambia l'impostazione d
 - |void| **set_transparent_background**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_transparent_background**\ (\ )
 
-If ``true``, the viewport should render its background as transparent.
+Se ``true``, la viewport dovrebbe rendere il suo sfondo trasparente.
 
-\ **Note:** Due to technical limitations, certain rendering features are disabled when a viewport has a transparent background. This currently applies to screen-space reflections, subsurface scattering, and depth of field.
+\ **Nota:** A causa di limitazioni tecniche, alcune funzionalità di rendering sono disabilitate quando una viewport ha uno sfondo trasparente. Ciò attualmente vale per i riflessi nello spazio dello schermo, il subsurface scattering e la profondità di campo.
 
 .. rst-class:: classref-item-separator
 
@@ -2017,7 +2017,7 @@ If ``true``, the viewport should render its background as transparent.
 - |void| **set_use_debanding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_debanding**\ (\ )
 
-Se ``true``, utilizza un filtro di post-elaborazione veloce per ridurre notevolmente la visibiltà del banding. Se :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` è ``false``, il rendering 2D *non* è influenzato dal debanding a meno che :ref:`Environment.background_mode<class_Environment_property_background_mode>` non sia :ref:`Environment.BG_CANVAS<class_Environment_constant_BG_CANVAS>`. Se :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` è ``true``, il debanding sarà applicato solo se questa è la **Viewport** radice e influenzerà tutto i rendering 2D e 3D, inclusi gli elementi canvas.
+Quando si utilizzano i renderer Mobile o Forward+, imposta :ref:`use_debanding<class_Viewport_property_use_debanding>` per abilitare o disabilitare la funzionalità di debanding di questa **Viewport**. Se :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` è ``false``, il rendering 2D *non* è influenzato dal debanding a meno che :ref:`Environment.background_mode<class_Environment_property_background_mode>` non sia :ref:`Environment.BG_CANVAS<class_Environment_constant_BG_CANVAS>`. Se :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` è ``true``, il debanding sarà applicato solo se questa è la **Viewport** radice e influenzerà tutto i rendering 2D e 3D, inclusi gli elementi canvas.
 
 \ :ref:`use_debanding<class_Viewport_property_use_debanding>` non ha effetto quando si utilizza il metodo di rendering Compatibilità. Il renderer Mobile può anche utilizzare il debanding per i materiali, che è possibile impostare con :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` o configurare con :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`.
 
@@ -2059,7 +2059,7 @@ In pratica, ciò significa che il risultato finale della Viewport non sarà limi
 
 Se ``true``, i nodi :ref:`OccluderInstance3D<class_OccluderInstance3D>` saranno utilizzabili per l'occlusion culling in 3D per questa viewport. Per la viewport radice, :ref:`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>` deve essere impostato su ``true``.
 
-\ **Nota:** L'abilitazione dell'occlusion culling ha un costo sulla CPU. Abilita l'occlusion culling solo se hai effettivamente intenzione di usarlo. Grandi scene aperte con pochi o nessun oggetto che blocca la vista in genere non usufruiranno dall'occlusion culling. Le grandi scene aperte in genere usufruiranno da mesh LOD e intervalli di visibilità (:ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` e :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`) rispetto all'occlusion culling.
+\ **Nota:** L'abilitazione dell'occlusion culling ha un costo sulla CPU. Abilita l'occlusion culling solo se hai effettivamente intenzione di usarlo. Grandi scene aperte con pochi o nessun oggetto che blocca la vista in genere non usufruiranno dall'occlusion culling. Le grandi scene aperte in genere usufruiranno da mesh LOD e campi di visibilità (:ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` e :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`) rispetto all'occlusion culling.
 
 \ **Nota:** A causa di vincoli di memoria, l'occlusion culling non è supportato per impostazione predefinita nei modelli di esportazione Web. Può essere abilitato compilando modelli di esportazione Web personalizzati con ``module_raycast_enabled=yes``.
 
@@ -2264,9 +2264,9 @@ Restituisce l'ascoltatore audio 3D attualmente attivo. Restituisce ``null`` se n
 
 :ref:`Camera2D<class_Camera2D>` **get_camera_2d**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_camera_2d>`
 
-Returns the currently active 2D camera. Returns ``null`` if there are no active cameras.
+Restituisce la telecamera 2D attualmente attiva. Restituisce ``null`` se non ci sono telecamere attive.
 
-\ **Note:** If called while the *Camera Override* system is active in editor, this will return the internally managed override camera. It is therefore advised to avoid caching the return value, or to check that the cached value is still a valid instance and is the current camera before use. See :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` and :ref:`Camera2D.is_current()<class_Camera2D_method_is_current>`.
+\ **Nota:** Se chiamata mentre il sistema di *sovrascrittura della telecamera* è attivo nell'editor, questo metodo restituirà la telecamera sostitutiva gestita internamente. Si consiglia pertanto di evitare di memorizzare nella cache il valore restituito o di verificare che il valore memorizzato nella cache sia un'istanza valida e corrisponda alla telecamera attuale prima dell'utilizzo. Vedi :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` e :ref:`Camera2D.is_current()<class_Camera2D_method_is_current>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2278,9 +2278,9 @@ Returns the currently active 2D camera. Returns ``null`` if there are no active 
 
 :ref:`Camera3D<class_Camera3D>` **get_camera_3d**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_camera_3d>`
 
-Returns the currently active 3D camera. Returns ``null`` if there are no active cameras.
+Restituisce la telecamera 3D attualmente attiva. Restituisce ``null`` se non ci sono telecamere attive.
 
-\ **Note:** If called while the *Camera Override* system is active in editor, this will return the internally managed override camera. It is therefore advised to avoid caching the return value, or to check that the cached value is a valid instance and is the current camera before use. See :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` and :ref:`Camera3D.current<class_Camera3D_property_current>`.
+\ **Nota:** Se chiamata mentre il sistema di *sovrascrittura della telecamera* è attivo nell'editor, questo metodo restituirà la telecamera sostitutiva gestita internamente. Si consiglia pertanto di evitare di memorizzare nella cache il valore restituito o di verificare che il valore memorizzato nella cache sia un'istanza valida e corrisponda alla telecamera attuale prima dell'utilizzo. Vedi :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` e :ref:`Camera3D.current<class_Camera3D_property_current>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2404,9 +2404,9 @@ Restituisce la trasformazione di allungamento 2D calcolata automaticamente, tene
 
 :ref:`ViewportTexture<class_ViewportTexture>` **get_texture**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_texture>`
 
-Returns the viewport's texture.
+Restituisce la texture della viewport.
 
-\ **Note:** When trying to store the current texture (e.g. in a file), it might be completely black or outdated if used too early, especially when used in e.g. :ref:`Node._ready()<class_Node_private_method__ready>`. To make sure the texture you get is correct, you can await :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` signal.
+\ **Nota:** Quando si tenta di memorizzare la texture attuale (ad esempio in un file), potrebbe essere completamente nera o obsoleta se questo metodo è chiamato troppo presto, specialmente se chiamato ad esempio in :ref:`Node._ready()<class_Node_private_method__ready>`. Per assicurarti che la texture ottenuta sia corretta, puoi attendere il segnale :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>`.
 
 
 .. tabs::
@@ -2428,7 +2428,7 @@ Returns the viewport's texture.
 
 
 
-\ **Note:** When :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true`` the returned texture will be an HDR image using linear encoding.
+\ **Nota:** Quando :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` è ``true`` la texture restituita sarà un'immagine HDR in codifica lineare.
 
 .. rst-class:: classref-item-separator
 
@@ -2488,7 +2488,7 @@ Restituisce i dati di trascinamento dalla GUI, restituiti in precedenza da :ref:
 
 :ref:`String<class_String>` **gui_get_drag_description**\ (\ ) |const| :ref:`🔗<class_Viewport_method_gui_get_drag_description>`
 
-Returns the human-readable description of the drag data, used for assistive apps.
+Restituisce la descrizione leggibile in chiaro dei dati di trascinamento, usata per le applicazioni assistive.
 
 .. rst-class:: classref-item-separator
 
@@ -2564,7 +2564,7 @@ Rimuove il focus dal :ref:`Control<class_Control>` attualmente focalizzato all'i
 
 |void| **gui_set_drag_description**\ (\ description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Viewport_method_gui_set_drag_description>`
 
-Sets the human-readable description of the drag data to ``description``, used for assistive apps.
+Imposta la descrizione leggibile in chiaro dei dati di trascinamento su ``description``, usata per le applicazioni assistive.
 
 .. rst-class:: classref-item-separator
 
@@ -2620,11 +2620,11 @@ Informa la Viewport che il mouse è uscito dalla sua area. Usa questa funzione q
 
 |void| **push_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`, in_local_coords\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Viewport_method_push_input>`
 
-Attiva l'evento ``event`` in questa **Viewport**. Può essere utilizzato per passare un :ref:`InputEvent<class_InputEvent>` tra viewport o per applicare localmente gli input inviati tramite la rete o salvati in un file.
+Attiva l'evento ``event`` in questa **Viewport**. Può servire per passare un :ref:`InputEvent<class_InputEvent>` tra viewport o per applicare localmente gli input inviati tramite la rete o salvati in un file.
 
 Se ``in_local_coords`` è ``false``, la posizione dell'evento è nelle coordinate dell'incorporatore e sarà convertita in coordinate della viewport. Se ``in_local_coords`` è ``true``, la posizione dell'evento è nelle coordinate della viewport.
 
-Sebbene questo metodo svolga uno scopo simile a :ref:`Input.parse_input_event()<class_Input_method_parse_input_event>`, non rimappa l'evento ``event`` in base alle impostazioni del progetto come :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`.
+Sebbene questo metodo svolga un'operazione simile a :ref:`Input.parse_input_event()<class_Input_method_parse_input_event>`, non rimappa l'evento ``event`` in base alle impostazioni del progetto come :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`.
 
 La chiamata a questo metodo propagherà le chiamate ai nodi figlio per i seguenti metodi nell'ordine indicato:
 
@@ -2640,7 +2640,7 @@ La chiamata a questo metodo propagherà le chiamate ai nodi figlio per i seguent
 
 Se un metodo precedente contrassegna l'input come gestito tramite :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handled>`, nessun metodo successivo in questo elenco verrà chiamato.
 
-Se nessuno dei metodi gestisce l'evento e :ref:`physics_object_picking<class_Viewport_property_physics_object_picking>` è ``true``, l'evento è utilizzato per la selezione degli oggetti di fisica.
+Se nessuno dei metodi gestisce l'evento e :ref:`physics_object_picking<class_Viewport_property_physics_object_picking>` è ``true``, l'evento è utilizzato per la selezione degli oggetti fisici.
 
 .. rst-class:: classref-item-separator
 
@@ -2666,7 +2666,7 @@ Metodo di supporto che richiama il metodo ``set_text()`` sul :ref:`Control<class
 
 **Deprecato:** Use :ref:`push_input()<class_Viewport_method_push_input>` instead.
 
-Attiva l'evento ``event`` in questa **Viewport**. Può essere utilizzato per passare un :ref:`InputEvent<class_InputEvent>` tra viewport o per applicare localmente gli input inviati tramite la rete o salvati in un file.
+Attiva l'evento ``event`` in questa **Viewport**. Può servire per passare un :ref:`InputEvent<class_InputEvent>` tra viewport o per applicare localmente gli input inviati tramite la rete o salvati in un file.
 
 Se ``in_local_coords`` è ``false``, la posizione dell'evento è nelle coordinate dell'incorporatore e sarà convertita in coordinate della viewport. Se ``in_local_coords`` è ``true``, la posizione dell'evento è nelle coordinate della viewport.
 
@@ -2680,7 +2680,7 @@ La chiamata a questo metodo propagherà le chiamate ai nodi figlio per i seguent
 
 Se un metodo precedente contrassegna l'input come gestito tramite :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handled>`, nessun metodo successivo in questo elenco verrà chiamato.
 
-Se nessuno dei metodi gestisce l'evento e :ref:`physics_object_picking<class_Viewport_property_physics_object_picking>` è ``true``, l'evento è utilizzato per la selezione degli oggetti di fisica.
+Se nessuno dei metodi gestisce l'evento e :ref:`physics_object_picking<class_Viewport_property_physics_object_picking>` è ``true``, l'evento è utilizzato per la selezione degli oggetti fisici.
 
 \ **Nota:** Questo metodo non propaga gli eventi di input ai :ref:`Window<class_Window>` o :ref:`SubViewport<class_SubViewport>` incorporati.
 
@@ -2706,9 +2706,9 @@ Imposta/cancella singoli bit sulla maschera dello strato di rendering. Ciò semp
 
 |void| **set_input_as_handled**\ (\ ) :ref:`🔗<class_Viewport_method_set_input_as_handled>`
 
-Stops the input from propagating further up the :ref:`SceneTree<class_SceneTree>`.
+Impedisce all'input di propagarsi ulteriormente verso l'alto nello :ref:`SceneTree<class_SceneTree>`.
 
-\ **Note:** This does not affect the methods in :ref:`Input<class_Input>`, only the way events are propagated.
+\ **Nota:** Ciò non influisce sui metodi in :ref:`Input<class_Input>`, ma solo sul modo in cui sono propagati gli eventi.
 
 .. rst-class:: classref-item-separator
 
@@ -2752,7 +2752,7 @@ Sposta il puntatore del mouse nella posizione specificata in questa **Viewport**
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

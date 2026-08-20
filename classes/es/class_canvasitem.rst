@@ -299,7 +299,7 @@ El **CanvasItem** heredará el filtro de su padre.
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_NEAREST** = ``1``
 
-El filtro de textura lee solo del píxel más cercano. Esto hace que la textura se vea pixelada de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
+El filtro de textura lee solo del píxel más cercano. Esto hace que la textura se parezca pixelada de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_LINEAR:
 
@@ -307,7 +307,7 @@ El filtro de textura lee solo del píxel más cercano. Esto hace que la textura 
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_LINEAR** = ``2``
 
-El filtro de textura mezcla entre los 4 píxeles más cercanos. Esto hace que la textura se vea suave de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
+El filtro de textura mezcla entre los 4 píxeles más cercanos. Esto hace que la textura se aparezca suave de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS:
 
@@ -373,7 +373,7 @@ enum **TextureRepeat**: :ref:`🔗<enum_CanvasItem_TextureRepeat>`
 
 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **TEXTURE_REPEAT_PARENT_NODE** = ``0``
 
-The **CanvasItem** will inherit the repeat mode from its parent.
+El **CanvasItem** heredará el modo de repetición de su padre.
 
 .. _class_CanvasItem_constant_TEXTURE_REPEAT_DISABLED:
 
@@ -465,7 +465,7 @@ enum **OversamplingWithScale**: :ref:`🔗<enum_CanvasItem_OversamplingWithScale
 
 :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_PARENT_NODE** = ``0``
 
-The **CanvasItem** will inherit the oversampling mode from its parent.
+El **CanvasItem** heredará el modo de sobremuestreo de su padre.
 
 .. _class_CanvasItem_constant_OVERSAMPLING_WITH_SCALE_DISABLED:
 
@@ -473,7 +473,7 @@ The **CanvasItem** will inherit the oversampling mode from its parent.
 
 :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_DISABLED** = ``1``
 
-The oversampling is not affected by **CanvasItem** scale, and is equal to the :ref:`Viewport<class_Viewport>` oversampling.
+El oversampling no se ve afectado por la escala de **CanvasItem** y es igual al oversampling del :ref:`Viewport<class_Viewport>`.
 
 .. _class_CanvasItem_constant_OVERSAMPLING_WITH_SCALE_ENABLED:
 
@@ -481,7 +481,7 @@ The oversampling is not affected by **CanvasItem** scale, and is equal to the :r
 
 :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_ENABLED** = ``2``
 
-The oversampling is a product of **CanvasItem** scale and :ref:`Viewport<class_Viewport>` oversampling.
+El oversampling es el producto de la escala de **CanvasItem** y el oversampling del :ref:`Viewport<class_Viewport>`.
 
 .. _class_CanvasItem_constant_OVERSAMPLING_WITH_SCALE_MAX:
 
@@ -489,7 +489,7 @@ The oversampling is a product of **CanvasItem** scale and :ref:`Viewport<class_V
 
 :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **OVERSAMPLING_WITH_SCALE_MAX** = ``3``
 
-Represents the size of the :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` enum.
+Representa el tamaño del enum :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>`.
 
 .. rst-class:: classref-section-separator
 
@@ -654,7 +654,7 @@ El color aplicado a este **CanvasItem**. Esta propiedad afecta a los **CanvasIte
 - |void| **set_oversampling_with_scale**\ (\ value\: :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>`\ )
 - :ref:`OversamplingWithScale<enum_CanvasItem_OversamplingWithScale>` **get_oversampling_with_scale**\ (\ )
 
-If enabled, oversampling for this **CanvasItem** is automatically adjusted with scale.
+Si está habilitado, el oversampling para este **CanvasItem** se ajusta automáticamente con la escala.
 
 .. rst-class:: classref-item-separator
 
@@ -1095,13 +1095,13 @@ Dibuja una :ref:`Mesh<class_Mesh>` en 2D, utilizando la textura proporcionada. V
 
 |void| **draw_msdf_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), outline\: :ref:`float<class_float>` = 0.0, pixel_range\: :ref:`float<class_float>` = 4.0, scale\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_CanvasItem_method_draw_msdf_texture_rect_region>`
 
-Dibuja una región rectangular texturizada de la textura de campo de distancia con signo multicanal (MSDF) en una posición dada, opcionalmente modulada por un color. El ``rect`` está definido en el espacio local. Véase :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` para obtener más información y advertencias sobre el renderizado de fuentes MSDF.
+Dibuja una región rectangular texturizada de la textura de campo de distancia con signo multicanal (MSDF) en una posición dada, opcionalmente modulada por un color. El ``rect`` está definido en el espacio local. Consulte :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` para obtener más información y advertencias sobre el renderizado de fuentes MSDF.
 
 Si ``outline`` es positivo, cada valor del canal alfa del píxel en la región se establece al valor máximo de la distancia real en el radio de ``outline``.
 
 El valor de ``pixel_range`` debe ser el mismo que se utilizó durante la generación de la textura del campo de distancia.
 
-\ **Nota:** Los Styleboxes, texturas y mallas almacenados solo dentro de variables locales **no** deben usarse con este método en GDScript, porque la operación de dibujo no comienza inmediatamente una vez que se llama a este método. En GDScript, cuando la función con las variables locales termina, las variables locales se destruyen antes de que se produzca el renderizado.
+\ **Nota:** Los Styleboxes, texturas y mallas almacenados solo dentro de variables locales **no** deben usarse con este método en GDScript, porque la operación de dibujo no comienza inmediatamente una vez que se invoca a este método. En GDScript, cuando la función con las variables locales termina, las variables locales se destruyen antes de que se produzca el renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -1460,7 +1460,7 @@ Devuelve la posición global del cursor del ratón relativa a la :ref:`CanvasLay
 
 :ref:`Transform2D<class_Transform2D>` **get_global_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_transform>`
 
-Devuelve la matriz de transformación global de este elemento, es decir, la transformación combinada hasta el nodo **CanvasItem** más superior. El elemento más superior es un **CanvasItem** que no tiene padre, tiene un padre que no es un **CanvasItem** o tiene :ref:`top_level<class_CanvasItem_property_top_level>` activado.
+Devuelve la matriz de transformación global de este elemento, es decir, la transformación combinada hasta el nodo **CanvasItem** más superior. El elemento más superior es un **CanvasItem** que no tiene antecesor, tiene un antecesor que no es un **CanvasItem** o tiene :ref:`top_level<class_CanvasItem_property_top_level>` activado.
 
 .. rst-class:: classref-item-separator
 
@@ -1622,9 +1622,9 @@ Devuelve ``true`` si el nodo recibe :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_C
 
 Devuelve ``true`` si el nodo está presente en el :ref:`SceneTree<class_SceneTree>`, su propiedad :ref:`visible<class_CanvasItem_property_visible>` es ``true`` y todos sus ancestros son también visibles. Si algún ancestro está oculto, este nodo no será visible en el árbol de escenas y, por lo tanto, no se dibujará (véase :ref:`_draw()<class_CanvasItem_private_method__draw>`).
 
-La visibilidad se comprueba solo en los nodos padre que heredan de **CanvasItem**, :ref:`CanvasLayer<class_CanvasLayer>` y :ref:`Window<class_Window>`. Si el padre es de cualquier otro tipo (como :ref:`Node<class_Node>`, :ref:`AnimationPlayer<class_AnimationPlayer>` o :ref:`Node3D<class_Node3D>`), se asume que es visible.
+La visibilidad se comprueba solo en los nodos padre que heredan de **CanvasItem**, :ref:`CanvasLayer<class_CanvasLayer>` y :ref:`Window<class_Window>`. Si el antecesor es de cualquier otro tipo (como :ref:`Node<class_Node>`, :ref:`AnimationPlayer<class_AnimationPlayer>` o :ref:`Node3D<class_Node3D>`), se asume que es visible.
 
-\ **Nota:** Este método no tiene en cuenta :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>`, por lo que incluso si este método devuelve ``true``, el nodo podría no ser renderizado.
+\ **Nota:** Este método no tiene en cuenta :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>`, por lo que incluso si este método devuelve ``true``, el nodo podría no ser representado.
 
 .. rst-class:: classref-item-separator
 
@@ -1666,7 +1666,7 @@ Devuelve una copia del ``event`` dado con sus coordenadas convertidas del espaci
 
 |void| **move_to_front**\ (\ ) :ref:`🔗<class_CanvasItem_method_move_to_front>`
 
-Mueve este nodo debajo de sus hermanos, lo que generalmente provoca que el nodo se dibuje encima de ellos. No hace nada si este nodo no tiene un padre. Ver también :ref:`Node.move_child()<class_Node_method_move_child>`.
+Mueve este nodo debajo de sus hermanos, lo que generalmente provoca que el nodo se dibuje encima de ellos. No hace nada si este nodo no tiene un padre. Consulte también :ref:`Node.move_child()<class_Node_method_move_child>`.
 
 .. rst-class:: classref-item-separator
 

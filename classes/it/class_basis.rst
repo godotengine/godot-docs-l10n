@@ -388,34 +388,34 @@ Restituisce il `determinante <https://it.wikipedia.org/wiki/Determinante_(algebr
 
 :ref:`Basis<class_Basis>` **from_euler**\ (\ euler\: :ref:`Vector3<class_Vector3>`, order\: :ref:`int<class_int>` = 2\ ) |static| :ref:`🔗<class_Basis_method_from_euler>`
 
-Constructs a new **Basis** that only represents rotation from the given :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians.
+Costruisce una nuova **Basis** che rappresenta solo la rotazione dal :ref:`Vector3<class_Vector3>` fornito di `angoli di Eulero <https://it.wikipedia.org/wiki/Angoli_di_Eulero>`__, in radianti.
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` should contain the angle around the :ref:`x<class_Basis_property_x>` axis (pitch);
+- Il :ref:`Vector3.x<class_Vector3_property_x>` dovrebbe contenere l'angolo attorno all'asse :ref:`x<class_Basis_property_x>` (beccheggio).
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` should contain the angle around the :ref:`y<class_Basis_property_y>` axis (yaw);
+- Il :ref:`Vector3.y<class_Vector3_property_y>` dovrebbe contenere l'angolo attorno all'asse :ref:`y<class_Basis_property_y>` (imbardata).
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` should contain the angle around the :ref:`z<class_Basis_property_z>` axis (roll).
+- Il :ref:`Vector3.z<class_Vector3_property_z>` dovrebbe contenere l'angolo attorno all'asse :ref:`z<class_Basis_property_z>` (rollio).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Creates a Basis whose z axis points down.
+    # Crea una base il cui asse z punta verso il basso.
     var my_basis = Basis.from_euler(Vector3(TAU / 4, 0, 0))
 
-    print(my_basis.z) # Prints (0.0, -1.0, 0.0)
+    print(my_basis.z) # Stampa (0.0, -1.0, 0.0).
 
  .. code-tab:: csharp
 
-    // Creates a Basis whose z axis points down.
+    // Crea una base il cui asse z punta verso il basso.
     var myBasis = Basis.FromEuler(new Vector3(Mathf.Tau / 4.0f, 0.0f, 0.0f));
 
-    GD.Print(myBasis.Z); // Prints (0, -1, 0)
+    GD.Print(myBasis.Z); // Stampa (0, -1, 0).
 
 
 
-The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): the basis rotates first around the local Y axis (yaw), then local X (pitch), and lastly local Z (roll). When using the opposite method :ref:`get_euler()<class_Basis_method_get_euler>` to decompose a rotation, this order is reversed.
+L'ordine di ogni rotazione consecutiva si può cambiare con ``order`` (vedi le costanti di :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`). In Godot, gli angoli di Eulero utilizzano sempre l'ordine intrinseco. Come predefinito, è usata la convenzione YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): la base ruota prima attorno all'asse Y (imbardata), poi X (beccheggio) e infine Z (rollio). Quando si utilizza il metodo opposto :ref:`get_euler()<class_Basis_method_get_euler>` per scomporre una rotazione, questo ordine è invertito.
 
 .. rst-class:: classref-item-separator
 
@@ -462,21 +462,21 @@ Costruisce una nuova **Basis** che rappresenta solo la scala, senza rotazione o 
 
 :ref:`Vector3<class_Vector3>` **get_euler**\ (\ order\: :ref:`int<class_int>` = 2\ ) |const| :ref:`🔗<class_Basis_method_get_euler>`
 
-Returns this basis's rotation as a :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians. For the returned value:
+Restituisce la rotazione di questa base come un :ref:`Vector3<class_Vector3>` di `angoli di Eulero <https://it.wikipedia.org/wiki/Angoli_di_Eulero>`__, in radianti. Per il valore restituito:
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` contains the angle around the :ref:`x<class_Basis_property_x>` axis (pitch);
+- :ref:`Vector3.x<class_Vector3_property_x>` contiene l'angolo attorno all'asse :ref:`x<class_Basis_property_x>` (beccheggio);
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` contains the angle around the :ref:`y<class_Basis_property_y>` axis (yaw);
+- :ref:`Vector3.y<class_Vector3_property_y>` contiene l'angolo attorno all'asse :ref:`y<class_Basis_property_y>` (imbardata);
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` contains the angle around the :ref:`z<class_Basis_property_z>` axis (roll).
+- :ref:`Vector3.z<class_Vector3_property_z>` contiene l'angolo attorno all'asse :ref:`z<class_Basis_property_z>` (rollio).
 
-The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): since we are decomposing, local Z (roll) is calculated first, then local X (pitch), and lastly local Y (yaw). When using the opposite method :ref:`from_euler()<class_Basis_method_from_euler>` to compose a rotation, this order is reversed.
+L'ordine di ogni rotazione consecutiva si può cambiare con ``order`` (vedi le costanti di :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`). In Godot, gli angoli di Eulero utilizzano sempre l'ordine intrinseco. Come predefinito, è usata la convenzione YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): poiché stiamo scomponendo, viene calcolato prima l'asse Z locale (rollio), poi l'asse X locale (beccheggio) e infine l'asse Y locale (imbardata). Quando si utilizza il metodo opposto :ref:`from_euler()<class_Basis_method_from_euler>` per comporre una rotazione, questo ordine è invertito.
 
-\ **Note:** For this method to return correctly, the basis needs to be *orthonormal* (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+\ **Nota:** Affinché questo metodo restituisca correttamente, la base deve essere *ortonormale* (vedi :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
 
-\ **Note:** Euler angles are much more intuitive but are not suitable for 3D math. Because of this, consider using the :ref:`get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>` method instead, which returns a :ref:`Quaternion<class_Quaternion>`.
+\ **Nota:** Gli angoli di Eulero sono molto più intuitivi ma non sono adatti per la matematica 3D. Per questo motivo, considera invece usare il metodo :ref:`get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>`, che restituisce un :ref:`Quaternion<class_Quaternion>`.
 
-\ **Note:** In the Inspector dock, a basis's rotation is often displayed in Euler angles (in degrees), as is the case with the :ref:`Node3D.rotation<class_Node3D_property_rotation>` property.
+\ **Nota:** Nel pannello Ispettore, la rotazione di una base è spesso visualizzata in angoli di Eulero (in gradi), come nel caso della proprietà :ref:`Node3D.rotation<class_Node3D_property_rotation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -789,7 +789,7 @@ Le righe della matrice base sono moltiplicate per i componenti di ``scale``. Que
 
 :ref:`Basis<class_Basis>` **slerp**\ (\ to\: :ref:`Basis<class_Basis>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Basis_method_slerp>`
 
-Esegue un'interpolazione sferico-lineare con la base ``to``, dato un peso ``weight``. Sia questa base che ``to`` dovrebbero rappresentare una rotazione.
+Esegue un'interpolazione sferico-lineare con la base ``to``, specificato un peso ``weight``. Sia questa base sia ``to`` dovrebbero rappresentare una rotazione.
 
 \ **Esempio:** Ruota gradualmente un :ref:`Node3D<class_Node3D>` sulla base di destinazione nel corso del tempo, con un :ref:`Tween<class_Tween>`.
 
@@ -1031,7 +1031,7 @@ Accede a ciascun asse (colonna) di questa base tramite il relativo indice. L'ind
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

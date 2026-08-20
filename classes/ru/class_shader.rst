@@ -120,7 +120,7 @@ enum **Mode**: :ref:`🔗<enum_Shader_Mode>`
 
 :ref:`Mode<enum_Shader_Mode>` **MODE_TEXTURE_BLIT** = ``5``
 
-Mode used for drawing to DrawableTexture resources via blit calls.
+Режим используется для прорисовки ресурсов DrawableTexture с помощью blit вызовов.
 
 .. rst-class:: classref-section-separator
 

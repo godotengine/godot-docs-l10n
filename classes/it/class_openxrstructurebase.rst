@@ -9,14 +9,14 @@ OpenXRStructureBase
 
 **Ereditato da:** :ref:`OpenXRSpatialContextPersistenceConfig<class_OpenXRSpatialContextPersistenceConfig>`
 
-Object for storing OpenXR structure data.
+Oggetto per memorizzare i dati di strutture OpenXR.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Object for storing OpenXR structure data that is passed when calling into OpenXR APIs.
+Oggetto per memorizzare i dati di strutture OpenXR che vengono passati durante le chiamate alle API di OpenXR.
 
 .. rst-class:: classref-reftable-group
 
@@ -64,7 +64,7 @@ Descrizioni delle proprietà
 - |void| **set_next**\ (\ value\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ )
 - :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` **get_next**\ (\ )
 
-Setting another structure object here chains these structures together to extend the API functionality. Consult the OpenXR documentation for which structures can be used with a given API call.
+Impostando un altro oggetto struttura in questo punto, è possibile incatenare tra loro queste strutture per estendere la funzionalità dell'API. Consulta la documentazione di OpenXR per sapere quali strutture si possono usare con una determinata chiamata all'API.
 
 .. rst-class:: classref-section-separator
 
@@ -95,13 +95,13 @@ Descrizioni dei metodi
 
 :ref:`int<class_int>` **get_structure_type**\ (\ ) :ref:`🔗<class_OpenXRStructureBase_method_get_structure_type>`
 
-Returns the structure type (OpenXR ``XrStructureType``) used for this structure.
+Restituisce il tipo di struttura (``XrStructureType`` di OpenXR) utilizzatoper questa struttura.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -151,7 +151,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` **DEEP_DUPLICATE_NONE** = ``0``
 
-No subresources at all are duplicated. This is useful even in a deep duplication to have all the arrays and dictionaries duplicated but still pointing to the original resources.
+Non duplicare affatto le sotto-risorse. Utile anche in caso di duplicazione profonda, in quanto consente di duplicare tutti gli array e i dizionari, ma di puntare comunque alle risorse originali.
 
 .. _class_Resource_constant_DEEP_DUPLICATE_INTERNAL:
 
@@ -208,7 +208,7 @@ Se ``true``, la risorsa è duplicata per ogni istanza di tutte le scene che la u
 - |void| **set_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_name**\ (\ )
 
-Un nome facoltativo per questa risorsa. Quando definito, il suo valore è visualizzato per rappresentare la risorsa nel pannello dell'Ispettore. Per gli script incorporati, il nome è visualizzato come parte del nome della scheda nell'editor di script.
+Un nome facoltativo per questa risorsa. Quando definito, il suo valore è visualizzato per rappresentare la risorsa nel pannello Ispettore. Per gli script incorporati, il nome è visualizzato come parte del nome della scheda nell'editor di script.
 
 \ **Nota:** Alcuni formati di risorse non supportano i nomi di risorse. Puoi comunque impostare il nome nell'editor o tramite codice, ma sarà perso quando la risorsa viene ricaricata. Ad esempio, solo gli script incorporati possono avere un nome di risorsa, mentre gli script memorizzati in file separati non possono.
 
@@ -246,13 +246,13 @@ Il percorso univoco per questa risorsa. Se è stata salvata su disco, il valore 
 - |void| **set_scene_unique_id**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_scene_unique_id**\ (\ )
 
-A unique identifier relative to this resource's scene. If left empty, the ID is automatically generated when this resource is saved inside a :ref:`PackedScene<class_PackedScene>`. If the resource is not inside a scene, this property is empty by default.
+Un identificatore univoco relativo alla scena di questa risorsa. Se lasciato vuoto, l'ID viene generato automaticamente quando questa risorsa viene salvata all'interno di un :ref:`PackedScene<class_PackedScene>`. Se la risorsa non è all'interno di una scena, questa proprietà è normalmente vuota.
 
-\ **Note:** When the :ref:`PackedScene<class_PackedScene>` is saved, if multiple resources in the same scene use the same ID, only the earliest resource in the scene hierarchy keeps the original ID. The other resources are assigned new IDs from :ref:`generate_scene_unique_id()<class_Resource_method_generate_scene_unique_id>`.
+\ **Nota:** Quando viene salvato il :ref:`PackedScene<class_PackedScene>`, se più risorse nella stessa scena utilizzano lo stesso ID, solo la risorsa più vecchia nella gerarchia della scena mantiene l'ID originale. Alle altre risorse vengono assegnati nuovi ID da :ref:`generate_scene_unique_id()<class_Resource_method_generate_scene_unique_id>`.
 
-\ **Note:** Setting this property does not emit the :ref:`changed<class_Resource_signal_changed>` signal.
+\ **Nota:** L'impostazione di questa proprietà non emette il segnale :ref:`changed<class_Resource_signal_changed>`.
 
-\ **Warning:** When setting, the ID must only consist of letters, numbers, and underscores. Otherwise, it will fail and default to a randomly generated ID.
+\ **Attenzione:** Quando viene impostato, l'ID deve essere composto solo da lettere, numeri e trattini bassi. Altrimenti, fallirà e sarà impostato a un ID generato casualmente.
 
 .. rst-class:: classref-section-separator
 
@@ -520,7 +520,7 @@ Imposta :ref:`resource_path<class_Resource_property_resource_path>` su ``path``,
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

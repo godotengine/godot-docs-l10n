@@ -14,11 +14,11 @@ Una connessione WebSocket.
 Descrizione
 ----------------------
 
-This class represents WebSocket connection, and can be used as a WebSocket client (`RFC 6455 <https://datatracker.ietf.org/doc/html/rfc6455>`__-compliant) or as a remote peer of a WebSocket server.
+Questa classe rappresenta la connessione WebSocket e può essere utilizzata come client WebSocket (conforme a `RFC 6455 <https://datatracker.ietf.org/doc/html/rfc6455>`__) o come peer remoto di un server WebSocket.
 
-You can send WebSocket binary frames using :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`, and WebSocket text frames using :ref:`send()<class_WebSocketPeer_method_send>` (prefer text frames when interacting with text-based API). You can check the frame type of the last packet via :ref:`was_string_packet()<class_WebSocketPeer_method_was_string_packet>`.
+È possibile inviare frame binari WebSocket utilizzando :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`, e frame di testo per WebSocket utilizzando :ref:`send()<class_WebSocketPeer_method_send>` (preferisci i frame di testo quando si interagisce con API basata su testo). È possibile controllare il tipo di frame dell'ultimo pacchetto tramite :ref:`was_string_packet()<class_WebSocketPeer_method_was_string_packet>`.
 
-To start a WebSocket client, first call :ref:`connect_to_url()<class_WebSocketPeer_method_connect_to_url>`, then regularly call :ref:`poll()<class_WebSocketPeer_method_poll>` (e.g. during :ref:`Node<class_Node>` process). You can query the socket state via :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>`, get the number of pending packets using :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`, and retrieve them via :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>`.
+Per avviare un client WebSocket, chiama prima :ref:`connect_to_url()<class_WebSocketPeer_method_connect_to_url>`, poi chiama regolarmente :ref:`poll()<class_WebSocketPeer_method_poll>` (ad esempio durante il processo :ref:`Node<class_Node>`). È possibile richiedere lo stato del socket via :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>`, ottenere il numero di pacchetti in sospeso tramite :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`, e recuperarli via :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>`.
 
 
 .. tabs::
@@ -49,7 +49,7 @@ To start a WebSocket client, first call :ref:`connect_to_url()<class_WebSocketPe
 
 
 
-To use the peer as part of a WebSocket server refer to :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` and the online tutorial.
+Per utilizzare il peer come parte di un server di WebSocket fai riferimento a :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` e al tutorial online.
 
 .. rst-class:: classref-reftable-group
 
@@ -524,7 +524,7 @@ Restituisce ``true`` se l'ultimo pacchetto ricevuto è stato inviato come un pay
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

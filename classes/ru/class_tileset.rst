@@ -765,7 +765,7 @@ enum **TerrainMode**: :ref:`🔗<enum_TileSet_TerrainMode>`
 
 |void| **clear_terrains**\ (\ terrain_set\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSet_method_clear_terrains>`
 
-Clears all terrain properties for the given terrain set.
+Очищает все свойства ландшафтов для указанного набора ландшафтов.
 
 .. rst-class:: classref-item-separator
 

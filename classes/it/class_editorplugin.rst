@@ -395,7 +395,7 @@ enum **DockSlot**: :ref:`🔗<enum_EditorPlugin_DockSlot>`
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_NONE** = ``-1``
 
-The dock is closed.
+Il pannello è chiuso.
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_UL:
 
@@ -403,7 +403,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_LEFT_UL** = ``0``
 
-Slot di pannelli, lato sinistro, in alto a sinistra (vuoto nel layout predefinito).
+Slot di pannelli, lato sinistro, in alto a sinistra (vuoto nella disposizione predefinita).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_BL:
 
@@ -411,7 +411,7 @@ Slot di pannelli, lato sinistro, in alto a sinistra (vuoto nel layout predefinit
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_LEFT_BL** = ``1``
 
-Slot di pannelli, lato sinistro, in basso a sinistra (vuoto nel layout predefinito).
+Slot di pannelli, lato sinistro, in basso a sinistra (vuoto nella disposizione predefinita).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_UR:
 
@@ -419,7 +419,7 @@ Slot di pannelli, lato sinistro, in basso a sinistra (vuoto nel layout predefini
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_LEFT_UR** = ``2``
 
-Slot di pannelli, lato sinistro, in alto a destra (nel layout predefinito include i pannelli Scena e Importazione).
+Slot di pannelli, lato sinistro, in alto a destra (nella disposizione predefinita include i pannelli Scena e Importazione).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_BR:
 
@@ -427,7 +427,7 @@ Slot di pannelli, lato sinistro, in alto a destra (nel layout predefinito includ
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_LEFT_BR** = ``3``
 
-Slot di pannelli, lato sinistro, in basso a destra (nel layout predefinito include il pannello del FileSystem).
+Slot di pannelli, lato sinistro, in basso a destra (nella disposizione predefinita include il pannello del FileSystem).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_RIGHT_UL:
 
@@ -435,7 +435,7 @@ Slot di pannelli, lato sinistro, in basso a destra (nel layout predefinito inclu
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_RIGHT_UL** = ``4``
 
-Slot di pannelli, lato destro, in alto a sinistra (nel layout predefinito include i pannelli dell'Ispettore, di Nodo e della Cronologia).
+Slot di pannelli, lato destro, in alto a sinistra (nella disposizione predefinita include i pannelli dell'Ispettore, di Nodo e della Cronologia).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_RIGHT_BL:
 
@@ -443,7 +443,7 @@ Slot di pannelli, lato destro, in alto a sinistra (nel layout predefinito includ
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_RIGHT_BL** = ``5``
 
-Slot di pannelli, lato destro, in basso a sinistra (vuoto nel layout predefinito).
+Slot di pannelli, lato destro, in basso a sinistra (vuoto nella disposizione predefinita).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_RIGHT_UR:
 
@@ -451,7 +451,7 @@ Slot di pannelli, lato destro, in basso a sinistra (vuoto nel layout predefinito
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_RIGHT_UR** = ``6``
 
-Slot di pannelli, lato destro, in alto a destra (vuoto nel layout predefinito).
+Slot di pannelli, lato destro, in alto a destra (vuoto nella disposizione predefinita).
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_RIGHT_BR:
 
@@ -467,7 +467,7 @@ Slot di pannelli, lato destro, in basso a destra (vuoto nel layout predefinito).
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_BOTTOM** = ``8``
 
-Bottom panel.
+Pannello inferiore.
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_MAX:
 
@@ -967,9 +967,9 @@ Se l'estensione non ha modifiche specifiche per la scena, è possibile ignorare 
 
 |void| **_get_window_layout**\ (\ configuration\: :ref:`ConfigFile<class_ConfigFile>`\ ) |virtual| :ref:`🔗<class_EditorPlugin_private_method__get_window_layout>`
 
-Sovrascrivi questo metodo per fornire il layout nell'interfaccia utente dell'estensione o qualsiasi altro dato che si desidera memorizzare. Questo è utilizzato per salvare il layout dell'editor del progetto quando viene chiamato :ref:`queue_save_layout()<class_EditorPlugin_method_queue_save_layout>` o il layout dell'editor è stato modificato (ad esempio cambiando la posizione di un pannello). I dati sono memorizzati nel file ``editor_layout.cfg`` nella cartella dei metadati dell'editor.
+Sovrascrivi questo metodo per fornire la disposizione nell'interfaccia utente dell'estensione o qualsiasi altro dato che si desidera memorizzare. Serve per salvare la disposizione dell'editor del progetto quando viene chiamato :ref:`queue_save_layout()<class_EditorPlugin_method_queue_save_layout>` o la disposizione dell'editor è stata modificata (ad esempio cambiando la posizione di un pannello). I dati sono memorizzati nel file ``editor_layout.cfg`` nella cartella dei metadati dell'editor.
 
-Utilizza :ref:`_set_window_layout()<class_EditorPlugin_private_method__set_window_layout>` per ripristinare il layout salvato.
+Usa :ref:`_set_window_layout()<class_EditorPlugin_private_method__set_window_layout>` per ripristinare la disposizione salvata.
 
 ::
 
@@ -1052,7 +1052,7 @@ Ricorda che è necessario gestire manualmente la visibilità di tutti i controll
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_run_scene**\ (\ scene\: :ref:`String<class_String>`, args\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__run_scene>`
 
-This function is called when an individual scene is about to be played in the editor. ``args`` is a list of command line arguments that will be passed to the new Godot instance, which will be replaced by the list returned by this function.
+Questa funzione viene chiamata quando una singola scena sta per essere eseguita nell'editor. ``args`` è un elenco di argomenti della riga di comando che saranno passati alla nuova istanza di Godot, che sarà sostituito dall'elenco restituito da questa funzione.
 
 ::
 
@@ -1060,7 +1060,7 @@ This function is called when an individual scene is about to be played in the ed
         args.append("--an-extra-argument")
         return args
 
-\ **Note:** Text that is printed in this method will not be visible in the editor's Output panel unless :ref:`EditorSettings.run/output/always_clear_output_on_play<class_EditorSettings_property_run/output/always_clear_output_on_play>` is ``false``.
+\ **Nota:** Il testo stampato in questo metodo non sarà visibile nel pannello Output dell'editor a meno che :ref:`EditorSettings.run/output/always_clear_output_on_play<class_EditorSettings_property_run/output/always_clear_output_on_play>` non sia ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1404,7 +1404,7 @@ Aggiunge un sottomenu :ref:`PopupMenu<class_PopupMenu>` personalizzato in **Prog
 
 |void| **add_translation_parser_plugin**\ (\ parser\: :ref:`EditorTranslationParserPlugin<class_EditorTranslationParserPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_add_translation_parser_plugin>`
 
-Registers a custom translation parser plugin for extracting translatable strings from custom files.
+Registra un'estensione personalizzata per elaborare le traduzioni per estrarre stringhe traducibili da file personalizzati.
 
 .. rst-class:: classref-item-separator
 
@@ -1620,7 +1620,7 @@ Rimuove l'estensione del debugger con lo script specificato dal Debugger.
 
 |void| **remove_dock**\ (\ dock\: :ref:`EditorDock<class_EditorDock>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_dock>`
 
-Removes ``dock`` from the available docks. You should manually call :ref:`Node.queue_free()<class_Node_method_queue_free>` to free it.
+Rimuove il pannello ``dock`` dai pannelli disponibili. Bisogna chiamare manualmente :ref:`Node.queue_free()<class_Node_method_queue_free>` per liberarlo.
 
 .. rst-class:: classref-item-separator
 
@@ -1808,7 +1808,7 @@ Aggiorna le sovrapposizioni della viewport dell'editor 2D e 3D. Fa in modo che v
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

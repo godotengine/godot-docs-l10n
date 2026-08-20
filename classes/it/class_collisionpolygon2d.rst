@@ -14,9 +14,9 @@ Un nodo che fornisce una forma poligonale a un :ref:`CollisionObject2D<class_Col
 Descrizione
 ----------------------
 
-A node that provides a polygon shape to a :ref:`CollisionObject2D<class_CollisionObject2D>` parent and allows it to be edited. The polygon can be concave or convex. This can give a detection shape to an :ref:`Area2D<class_Area2D>`, turn a :ref:`PhysicsBody2D<class_PhysicsBody2D>` into a solid object, or give a hollow shape to a :ref:`StaticBody2D<class_StaticBody2D>`.
+Un nodo che fornisce una forma poligonale a un :ref:`CollisionObject2D<class_CollisionObject2D>` genitore e consente di modificarla. Il poligono può essere concavo o convesso. Ciò può dare una forma di rilevamento a un :ref:`Area2D<class_Area2D>`, trasformare un :ref:`PhysicsBody2D<class_PhysicsBody2D>` in un oggetto solido o dare una forma cava a uno :ref:`StaticBody2D<class_StaticBody2D>`.
 
-\ **Warning:** A non-uniformly scaled **CollisionPolygon2D** will likely not behave as expected. Make sure to keep its scale the same on all axes and adjust its polygon instead.
+\ **Avviso:** Un :ref:`CollisionShape2D<class_CollisionShape2D>` ridimensionato in modo non uniforme probabilmente non si comporterà come previsto. Assicurati di mantenere la sua scala uguale su tutti gli assi e regola invece la sua forma.
 
 .. rst-class:: classref-reftable-group
 
@@ -146,7 +146,7 @@ Se ``true``, solo i bordi rivolti verso l'alto, rispetto alla rotazione di **Col
 - |void| **set_one_way_collision_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_one_way_collision_direction**\ (\ )
 
-The direction used for one-way collision.
+La direzione utilizzata per la collisione a senso unico.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ La lista dei vertici del poligono. Ogni punto sarà collegato al successivo, e i
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

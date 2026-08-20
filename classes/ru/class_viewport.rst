@@ -427,9 +427,9 @@ enum **Scaling3DMode**: :ref:`🔗<enum_Viewport_Scaling3DMode>`
 
 :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_NEAREST** = ``5``
 
-Use nearest-neighbor filtering for the viewport's 3D buffer. This looks crisper than :ref:`SCALING_3D_MODE_BILINEAR<class_Viewport_constant_SCALING_3D_MODE_BILINEAR>` and has no additional rendering cost. The amount of scaling can be set using :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Values greater than ``1.0`` are not supported and bilinear downsampling will be used instead. A value of ``1.0`` disables scaling.
+Использует фильтрацию по ближайшему соседу для 3D-буфера окна просмотра. Это выглядит более чётко, чем :ref:`SCALING_3D_MODE_BILINEAR<class_Viewport_constant_SCALING_3D_MODE_BILINEAR>`, и не требует дополнительных затрат на рендеринг. Величина масштабирования может быть установлена с помощью :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Значения больше ``1.0`` не поддерживаются, вместо этого будет использоваться билинейное уменьшение. Значение ``1.0`` отключает масштабирование.
 
-\ **Note:** When using the **Nearest** scaling mode, to avoid uneven pixel scaling, it's highly recommended to use a value equal to an integer divisor with a dividend of ``1``. For example, it's best to use a scale of ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5), and so on.
+\ **Примечание:** При использовании режима масштабирования **Nearest** для избежания неравномерного масштабирования пикселей настоятельно рекомендуется использовать значение, равное целочисленному делителю с делимым ``1``. Например, лучше всего использовать масштаб ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5) и так далее.
 
 .. _class_Viewport_constant_SCALING_3D_MODE_MAX:
 
@@ -725,11 +725,11 @@ enum **DebugDraw**: :ref:`🔗<enum_Viewport_DebugDraw>`
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_WIREFRAME** = ``4``
 
-Objects are displayed as wireframe models.
+Объекты отображаются как каркасные модели.
 
-\ **Note:** :ref:`RenderingServer.set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` must be called before loading any meshes for wireframes to be visible when using the Compatibility renderer.
+\ **Примечание:** :ref:`RenderingServer.set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` необходимо вызывать перед загрузкой любых сеток, чтобы каркасы были видны при использовании рендерера Compatibility.
 
-\ **Note:** In the Compatibility renderer, backfaces are always visible when using wireframe rendering. In the Forward+ and Mobile renderers, wireframes follow the material's backface culling properties instead.
+\ **Примечание:** В рендерере Compatibility обратные стороны всегда видны при использовании каркасного рендеринга. В рендерерах Forward+ и Mobile каркасы следуют свойствам отбраковки обратных сторон материала.
 
 .. _class_Viewport_constant_DEBUG_DRAW_NORMAL_BUFFER:
 
@@ -959,9 +959,9 @@ Objects are displayed as wireframe models.
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_AREA_LIGHTS** = ``27``
 
-Draws the cluster used by :ref:`AreaLight3D<class_AreaLight3D>` nodes to optimize light rendering.
+Рисует кластер, используемый узлами :ref:`AreaLight3D<class_AreaLight3D>` для оптимизации рендеринга света.
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **Примечание:** Поддерживается только при использовании метода рендеринга Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_AREA_LIGHT_ATLAS:
 
@@ -969,9 +969,9 @@ Draws the cluster used by :ref:`AreaLight3D<class_AreaLight3D>` nodes to optimiz
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_AREA_LIGHT_ATLAS** = ``28``
 
-Draws the atlas used by :ref:`AreaLight3D<class_AreaLight3D>` nodes in the upper left quadrant of the **Viewport**.
+Рисует атлас, используемый узлами :ref:`AreaLight3D<class_AreaLight3D>`, в верхнем левом квадранте **Viewport**.
 
-\ **Note:** Only supported when using the Forward+ or Mobile rendering method.
+\ **Примечание:** Поддерживается только при использовании методов рендеринга Forward+ или Mobile.
 
 .. rst-class:: classref-item-separator
 
@@ -1025,7 +1025,7 @@ enum **DefaultCanvasItemTextureFilter**: :ref:`🔗<enum_Viewport_DefaultCanvasI
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_PARENT_NODE** = ``4``
 
-The **Viewport** will inherit the filter from its parent :ref:`CanvasItem<class_CanvasItem>` or **Viewport**.
+**Viewport** унаследует фильтр от своего родительского :ref:`CanvasItem<class_CanvasItem>` или **Viewport**.
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_MAX:
 
@@ -1567,13 +1567,13 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_mesh_lod_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mesh_lod_threshold**\ (\ )
 
-The automatic LOD bias to use for meshes rendered within the **Viewport** (this is analogous to :ref:`ReflectionProbe.mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>`). Higher values will use less detailed versions of meshes that have LOD variations generated. If set to ``0.0``, automatic LOD is disabled. Increase :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` to improve performance at the cost of geometry detail.
+Автоматическое смещение LOD для использования сеток, визуализируемых в **Viewport** (аналогично :ref:`ReflectionProbe.mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>`). Более высокие значения будут использовать менее подробные версии сеток, которые имеют сгенерированные вариации LOD. Если установлено значение ``0.0``, автоматический LOD отключен. Увеличьте :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>`, чтобы повысить производительность за счет детализации геометрии.
 
-To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` project setting.
+Чтобы управлять этим свойством в корневом viewport, задайте настройку проекта :ref:`ProjectSettings.rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>`.
 
-\ **Note:** Depending on the mesh's attributes (vertex colors, blend shapes, ...), a mesh may have fewer levels of LOD generated to avoid visible distortion of the mesh once it is affected by vertex colors or blend shapes. Meshes with a very low vertex count will also not have any LODs generated, which means this setting will not affect them at all. In general, this setting makes the largest impact on static meshes with a high vertex count.
+\ **Примечание:** В зависимости от атрибутов сетки (цвета вершин, формы смешивания и т. д.) для сетки может быть сгенерировано меньше уровней LOD, чтобы избежать видимых искажений сетки после применения цветов вершин или форм смешивания. Сетки с очень малым количеством вершин также не будут иметь сгенерированных LOD, что означает, что этот параметр не повлияет на них. В целом этот параметр оказывает наибольшее влияние на статические сетки с большим количеством вершин.
 
-\ **Note:** :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` does not affect :ref:`GeometryInstance3D<class_GeometryInstance3D>` visibility ranges (also known as "manual" LOD or hierarchical LOD).
+\ **Примечание:** :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` не влияет на диапазоны видимости :ref:`GeometryInstance3D<class_GeometryInstance3D>` (также известные как «ручной» LOD или иерархический LOD).
 
 .. rst-class:: classref-item-separator
 
@@ -1973,15 +1973,15 @@ To control this property on the root viewport, set the :ref:`ProjectSettings.ren
 - |void| **set_texture_mipmap_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_mipmap_bias**\ (\ )
 
-Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close).
+Влияет на окончательную резкость текстуры, считывая с более низкой или более высокой mip-карты (также называется «смещением уровня детализации текстуры»). Отрицательные значения делают текстуры с mip-картой более резкими, но более зернистыми при просмотре на расстоянии, в то время как положительные значения делают текстуры с mip-картой более размытыми (даже при просмотре вблизи).
 
-Enabling temporal antialiasing (:ref:`use_taa<class_Viewport_property_use_taa>`) will automatically apply a ``-0.5`` offset to this value, while enabling FXAA (:ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`) will automatically apply a ``-0.25`` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of ``-0.75`` is applied to this value.
+Включение временного сглаживания (:ref:`use_taa<class_Viewport_property_use_taa>`) автоматически применит смещение ``-0.5`` к этому значению, а включение FXAA (:ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`) автоматически применит смещение ``-0.25`` к этому значению. Если TAA и FXAA включены одновременно, к этому значению применяется смещение ``-0.75``.
 
-To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` project setting.
+Чтобы управлять этим свойством в корневом окне просмотра, задайте настройку проекта :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`.
 
-\ **Note:** If :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` is lower than ``1.0`` (exclusive), :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``log2(scaling_3d_scale) + mipmap_bias``.
+\ **Примечание:** Если :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` меньше ``1.0`` (исключительно), :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` используется для настройки автоматического смещения mipmap, которое вычисляется внутренне на основе коэффициента масштабирования. Формула для этого: ``log2(scaling_3d_scale) + mipmap_bias``.
 
-\ **Note:** This property is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this property is always treated as if it was set to ``0.0``.
+\ **Примечание:** Это свойство поддерживается только в рендерерах Forward+ и Mobile, но не в Compatibility. В Compatibility это свойство всегда обрабатывается так, как если бы оно было установлено в ``0.0``.
 
 .. rst-class:: classref-item-separator
 

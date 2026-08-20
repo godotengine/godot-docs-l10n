@@ -14,9 +14,9 @@ Driver di flusso audio MP3.
 Descrizione
 ----------------------
 
-MP3 audio stream driver. See :ref:`data<class_AudioStreamMP3_property_data>` if you want to load an MP3 file at run-time. More info can be found in :ref:`ResourceImporterMP3<class_ResourceImporterMP3>`.
+Driver per i flusso audio MP3. Vedi :ref:`data<class_AudioStreamMP3_property_data>` se vuoi caricare un file MP3 in fase di esecuzione. Ulteriori informazioni sono disponibili in :ref:`ResourceImporterMP3<class_ResourceImporterMP3>`.
 
-\ **Note:** This class can optionally support legacy MP1 and MP2 formats, provided that the engine is compiled with the ``minimp3_extra_formats=yes`` SCons option. These extra formats are not enabled by default.
+\ **Nota:** Questa classe può facoltativamente supportare i formati legacy MP1 e MP2, a condizione che il motore sia compilato con l'opzione ``minimp3_extra_formats=yes`` SCons. Questi formati in più non sono abilitati come predefinito.
 
 .. rst-class:: classref-introduction-group
 
@@ -83,7 +83,7 @@ Descrizioni delle proprietà
 - |void| **set_bar_beats**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bar_beats**\ (\ )
 
-The number of beats within a single bar in the audio track.
+Il numero di battiti all'interno di una singola battuta nella traccia audio.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ The number of beats within a single bar in the audio track.
 - |void| **set_beat_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_beat_count**\ (\ )
 
-The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. It defines the end of the audio for looping, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`, and :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
+La durata della traccia audio, in battiti. La durata effettiva del file audio potrebbe essere più lunga di quanto indicato da questa proprietà. Definisce la fine dell'audio per la ripetizione, per :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>` e per :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ The length of the audio track, in beats. The actual duration of the audio file m
 - |void| **set_bpm**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bpm**\ (\ )
 
-The tempo of the audio track, measured in beats per minute.
+Il tempo della traccia audio, misurato in battiti al minuto.
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Contiene i dati audio in byte.
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-If ``true``, the stream will play again from the specified :ref:`loop_offset<class_AudioStreamMP3_property_loop_offset>` once it reaches the end of the audio track, or once it reaches the end of the last beat according to the amount specified in :ref:`beat_count<class_AudioStreamMP3_property_beat_count>`. Useful for ambient sounds and background music.
+Se ``true``, il flusso verrà riprodotto di nuovo a partire dal :ref:`loop_offset<class_AudioStreamMP3_property_loop_offset>` specificato una volta raggiunta la fine della traccia audio, oppure una volta raggiunta la fine dell'ultimo battito in base al numero specificato in :ref:`beat_count<class_AudioStreamMP3_property_beat_count>`. Utile per suoni ambientali e musica di sottofondo.
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ Crea una nuova istanza di **AudioStreamMP3** dal percorso di file specificato. I
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

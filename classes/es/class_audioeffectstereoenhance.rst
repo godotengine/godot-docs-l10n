@@ -16,7 +16,7 @@ Controls gain of the side channels, and widens the stereo image.
 Descripción
 ----------------------
 
-Adjusts gain of the left and right channels, and makes mono sounds stereo through phase shifting.
+Ajusta la ganancia de los canales izquierdo y derecho, y hace que el sonido mono sea estéreo mediante el cambio de fase.
 
 .. rst-class:: classref-introduction-group
 

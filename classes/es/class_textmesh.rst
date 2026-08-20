@@ -216,7 +216,7 @@ Reglas de alineación de relleno de línea.
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Código de idioma utilizado para los algoritmos de salto de línea y de formación de texto. Si se deja vacío, se utiliza la configuración regional actual.
 
 .. rst-class:: classref-item-separator
 

@@ -144,7 +144,7 @@ Fa sì che il **PropertyTweener** utilizzi il valore della proprietà attuale (a
 
 :ref:`PropertyTweener<class_PropertyTweener>` **set_custom_interpolator**\ (\ interpolator_method\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PropertyTweener_method_set_custom_interpolator>`
 
-Permette di interpolare il valore con una funzione di allentamento personalizzata. Il ``interpolator_method`` fornito sarà chiamato con un valore compreso tra ``0.0`` e ``1.0`` e dovrebbe restituire un valore compreso nello stesso intervallo (i valori al di fuori dell'intervallo possono essere utilizzati per oltrepassarlo). Il valore restituito dal metodo è quindi utilizzato per l'interpolazione tra il valore iniziale e quello finale. Nota che il parametro passato al metodo è comunque soggetto all'allentamento del tweener stesso.
+Permette di interpolare il valore con una funzione di andamento personalizzata. Il ``interpolator_method`` fornito sarà chiamato con un valore compreso tra ``0.0`` e ``1.0`` e dovrebbe restituire un valore compreso nello stesso intervallo (i valori fuori dall'intervallo si possono usare per estrapolare). Il valore restituito dal metodo poi serve per interpolare tra il valore iniziale e quello finale. Nota che il parametro passato al metodo è comunque soggetto all'andamento del tweener stesso.
 
 
 .. tabs::
@@ -203,7 +203,7 @@ Imposta il tempo in secondi dopo il quale il **PropertyTweener** inizierà l'int
 
 :ref:`PropertyTweener<class_PropertyTweener>` **set_ease**\ (\ ease\: :ref:`EaseType<enum_Tween_EaseType>`\ ) :ref:`🔗<class_PropertyTweener_method_set_ease>`
 
-Imposta il tipo di allentamento utilizzato, da :ref:`EaseType<enum_Tween_EaseType>`. Se non impostato, viene utilizzato l'allentamento predefinito dal :ref:`Tween<class_Tween>` che contiene questo Tweener.
+Imposta il tipo di andamento utilizzato, da :ref:`EaseType<enum_Tween_EaseType>`. Se non impostato, sarà utilizzato l'andamento predefinito dal :ref:`Tween<class_Tween>` che contiene questo Tweener.
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ Imposta il tipo di transizione utilizzata, da :ref:`TransitionType<enum_Tween_Tr
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

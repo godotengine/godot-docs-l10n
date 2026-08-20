@@ -196,11 +196,11 @@ Descrizioni dei metodi
 
 :ref:`bool<class_bool>` **_can_import_threaded**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__can_import_threaded>`
 
-Tells whether this importer can be run in parallel on threads, or, on the contrary, it's only safe for the editor to call it from the main thread, for one file at a time.
+Indica se è possibile eseguire questo importatore in parallelo sui thread o, al contrario, è sicuro per l'editor chiamarlo soltanto dal thread principale, per un file alla volta.
 
-If this importer's implementation is thread-safe and can be run in parallel, override this with ``true`` to optimize for concurrency.
+Se l'implementazione di questo importatore è thread-safe ed è possibile eseguirla in parallelo, sovrascrivi questo con ``true`` per ottimizzare per concorrenza.
 
-If not overridden, returns ``false``.
+Se non sovrascritto, restituisce ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ Questa funzione può essere chiamata solo durante il callback :ref:`_import()<cl
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

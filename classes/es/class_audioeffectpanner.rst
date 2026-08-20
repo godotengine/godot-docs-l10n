@@ -16,9 +16,9 @@ Pans the sound left or right.
 Descripción
 ----------------------
 
-Determines how much of the audio signal is sent to the left and right channels. This helps with audio spatialization, giving sounds distinct places in a mix.
+Determina cuánto de la señal de audio se envía a los canales izquierdo y derecho. Esto ayuda con la espacialización del audio, dando a los sonidos posiciones distintas dentro de una mezcla.
 
-\ :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` and :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` handle panning automatically, following where the source of the sound is on the screen.
+\ :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` y :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` gestionan el paneo automáticamente, siguiendo la posición de la fuente del sonido en la pantalla.
 
 .. rst-class:: classref-introduction-group
 

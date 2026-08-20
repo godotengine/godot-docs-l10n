@@ -164,7 +164,7 @@ Quando un server ha ricevuto ed elaborato una richiesta, ci si aspetta che invii
 
 Crea una risposta che indica che una risposta precedente non è riuscita in qualche modo.
 
-- ``code``: Il codice di errore che corrisponde al tipo di errore. Vedi le costanti di :ref:`ErrorCode<enum_JSONRPC_ErrorCode>`.
+- ``code``: Il codice d'errore che corrisponde al tipo di errore. Vedi le costanti di :ref:`ErrorCode<enum_JSONRPC_ErrorCode>`.
 
 - ``message``: Un messaggio personalizzato su questo errore.
 
@@ -210,17 +210,17 @@ Per aggiungere nuovi metodi supportati, estendi la classe JSONRPC e chiama :ref:
 
 |void| **set_method**\ (\ name\: :ref:`String<class_String>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_JSONRPC_method_set_method>`
 
-Registers a callback for the given method name.
+Registra un callback per il nome del metodo specificato.
 
-- ``name``: The name that clients can use to access the callback.
+- ``name``: il nome che i client possono utilizzare per accedere al callback.
 
-- ``callback``: The callback which will handle the specified method.
+- ``callback``: il callback che gestirà il metodo specificato.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

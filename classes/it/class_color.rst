@@ -1393,9 +1393,9 @@ Descrizioni delle proprietà
 
 :ref:`float<class_float>` **a** = ``1.0`` :ref:`🔗<class_Color_property_a>`
 
-The color's alpha component, typically on the range of 0 to 1. A value of 0 means that the color is fully transparent. A value of 1 means that the color is fully opaque.
+Il componente alfa del colore, in genere compresa tra 0 e 1. Un valore pari a 0 indica che il colore è completamente trasparente. Un valore pari a 1 indica che il colore è completamente opaco.
 
-\ **Note:** The alpha channel is always stored with linear encoding, regardless of the encoding of the other color channels. The :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>` and :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` methods do not affect the alpha channel.
+\ **Nota:** Il canale alfa è sempre memorizzato con codifica lineare, a prescindere dalla codifica degli altri canali. I metodi :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>` e :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` non influiscono sul canale alfa.
 
 .. rst-class:: classref-item-separator
 
@@ -1633,18 +1633,18 @@ Costruisce un **Color** sia da un codice colore HTML o dal nome di un colore sta
 
 :ref:`Color<class_Color>` **Color**\ (\ r\: :ref:`float<class_float>`, g\: :ref:`float<class_float>`, b\: :ref:`float<class_float>`\ )
 
-Constructs a **Color** from RGB values, typically between 0.0 and 1.0. :ref:`a<class_Color_property_a>` is set to 1.0.
+Costruisce un **Color** da valori RGB, in genere compresi tra 0.0 e 1.0. :ref:`a<class_Color_property_a>` è impostato su 1.0.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var color = Color(0.2, 1.0, 0.7) # Similar to `Color.from_rgba8(51, 255, 178, 255)`
+    var color = Color(0.2, 1.0, 0.7) # Simile a `Color.from_rgba8(51, 255, 178, 255)`
 
  .. code-tab:: csharp
 
-    var color = new Color(0.2f, 1.0f, 0.7f); // Similar to `Color.Color8(51, 255, 178, 255)`
+    var color = new Color(0.2f, 1.0f, 0.7f); // Simile a `Color.Color8(51, 255, 178, 255)`
 
 
 
@@ -1656,18 +1656,18 @@ Constructs a **Color** from RGB values, typically between 0.0 and 1.0. :ref:`a<c
 
 :ref:`Color<class_Color>` **Color**\ (\ r\: :ref:`float<class_float>`, g\: :ref:`float<class_float>`, b\: :ref:`float<class_float>`, a\: :ref:`float<class_float>`\ )
 
-Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
+Costruisce un **Color** da valori RGBA, in genere compresi tra 0,. e 1.0.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var color = Color(0.2, 1.0, 0.7, 0.8) # Similar to `Color.from_rgba8(51, 255, 178, 204)`
+    var color = Color(0.2, 1.0, 0.7, 0.8) # Simile a `Color.from_rgba8(51, 255, 178, 204)`
 
  .. code-tab:: csharp
 
-    var color = new Color(0.2f, 1.0f, 0.7f, 0.8f); // Similar to `Color.Color8(51, 255, 178, 255, 204)`
+    var color = new Color(0.2f, 1.0f, 0.7f, 0.8f); // Simile a `Color.Color8(51, 255, 178, 255, 204)`
 
 
 
@@ -1850,9 +1850,9 @@ Se desideri creare un colore da stringa in un'espressione costante, utilizza inv
 
 :ref:`float<class_float>` **get_luminance**\ (\ ) |const| :ref:`🔗<class_Color_method_get_luminance>`
 
-Returns the light intensity of the color, as a value between 0.0 and 1.0 (inclusive). This is useful when determining light or dark color. Colors with a luminance smaller than 0.5 can be generally considered dark.
+Restituisce l'intensità luminosa del colore, come valore compreso tra 0.0 e 1.0 (inclusi). È utile quando si determina un colore chiaro o scuro. I colori con una luminanza inferiore a 0.5 possono essere generalmente considerati scuri.
 
-\ **Note:** :ref:`get_luminance()<class_Color_method_get_luminance>` relies on the color using linear encoding to return an accurate relative luminance value. If the color uses the default nonlinear sRGB encoding, use :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` to convert it to linear encoding first.
+\ **Nota:** :ref:`get_luminance()<class_Color_method_get_luminance>` richiede che il colore sia in codifica lineare per restituire un valore accurato di luminanza relativa. Se il colore è in codifica sRGB non lineare, usa :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` per convertirlo prima in codifica lineare.
 
 .. rst-class:: classref-item-separator
 
@@ -2082,9 +2082,9 @@ Restituisce un nuovo colore che è il risultato di schiarire questo colore per l
 
 :ref:`Color<class_Color>` **linear_to_srgb**\ (\ ) |const| :ref:`🔗<class_Color_method_linear_to_srgb>`
 
-Returns a copy of the color that is encoded using the `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB>`__. This method requires the original color to use linear encoding. See also :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` which performs the opposite operation.
+Restituisce una copia del colore codificato tramite la `funzione di trasferimento sRGB non lineare <https://it.wikipedia.org/wiki/Spazio_colore_sRGB>`__. Questo metodo richiede che il colore originale sia in codifica lineare. Vedi anche :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` che effettua l'operazione opposta.
 
-\ **Note:** The color's alpha channel (:ref:`a<class_Color_property_a>`) is not affected. The alpha channel is always stored with linear encoding, regardless of the color space of the other color channels.
+\ **Nota:** il canale alfa (:ref:`a<class_Color_property_a>`) del colore non è influenzato. Il canale alfa è sempre memorizzato con codifica lineare, a prescindere dallo spazio colore degli altri canali.
 
 .. rst-class:: classref-item-separator
 
@@ -2096,9 +2096,9 @@ Returns a copy of the color that is encoded using the `nonlinear sRGB transfer f
 
 :ref:`Color<class_Color>` **srgb_to_linear**\ (\ ) |const| :ref:`🔗<class_Color_method_srgb_to_linear>`
 
-Returns a copy of the color that uses linear encoding. This method requires the original color to be encoded using the `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB>`__. See also :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>` which performs the opposite operation.
+Restituisce una copia del colore in codifica lineare. Questo metodo richiede che il colore originale sia già codificato attraverso la `funzione di trasferimento sRGB non lineare <https://it.wikipedia.org/wiki/Spazio_colore_sRGB>`__. Vedi anche :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>` che effettua l'operazione opposta.
 
-\ **Note:** The color's alpha channel (:ref:`a<class_Color_property_a>`) is not affected. The alpha channel is always stored with linear encoding, regardless of the color space of the other color channels.
+\ **Nota:** il canale alfa (:ref:`a<class_Color_property_a>`) del colore non è influenzato. Il canale alfa è sempre memorizzato con codifica lineare, a prescindere dallo spazio colore degli altri canali.
 
 .. rst-class:: classref-item-separator
 
@@ -2462,7 +2462,7 @@ Inverte il colore specificato. Ciò equivale a ``Color.WHITE - c`` o ``Color(1 -
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -192,7 +192,7 @@ Se muestra cuando se presiona el botón de incremento.
 
 :ref:`StyleBox<class_StyleBox>` **grabber** :ref:`🔗<class_ScrollBar_theme_style_grabber>`
 
-Usado como textura para el grabber, el elemento arrastrable que representa el scroll actual.
+Usado como textura para el agarre, el elemento arrastrable que representa el scroll actual.
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Usado como textura para el grabber, el elemento arrastrable que representa el sc
 
 :ref:`StyleBox<class_StyleBox>` **grabber_highlight** :ref:`🔗<class_ScrollBar_theme_style_grabber_highlight>`
 
-Se usa cuando el ratón esta encima del agarrador.
+Se usa cuando el ratón esta encima del agarre.
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Se usa cuando el ratón esta encima del agarrador.
 
 :ref:`StyleBox<class_StyleBox>` **grabber_pressed** :ref:`🔗<class_ScrollBar_theme_style_grabber_pressed>`
 
-Se usa cuando el agarrador está siendo arrastrado.
+Se usa cuando el agarre está siendo arrastrado.
 
 .. rst-class:: classref-item-separator
 

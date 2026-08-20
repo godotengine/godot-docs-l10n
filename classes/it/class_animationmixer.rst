@@ -16,7 +16,7 @@ Classe di base per :ref:`AnimationPlayer<class_AnimationPlayer>` e :ref:`Animati
 Descrizione
 ----------------------
 
-Classe di base per :ref:`AnimationPlayer<class_AnimationPlayer>` e :ref:`AnimationTree<class_AnimationTree>` per gestire le liste di animazione. Ha anche proprietà e metodi generali per la riproduzione e la fusione.
+Classe base per :ref:`AnimationPlayer<class_AnimationPlayer>` e :ref:`AnimationTree<class_AnimationTree>` per gestire le liste di animazione. Ha anche proprietà e metodi generali per la riproduzione e la fusione.
 
 Dopo aver istanziato i dati di riproduzione all'interno di una classe che la estende, la fusione è viene elaborata dall'**AnimationMixer**.
 
@@ -971,7 +971,7 @@ Sposta l':ref:`AnimationLibrary<class_AnimationLibrary>` associata alla chiave `
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

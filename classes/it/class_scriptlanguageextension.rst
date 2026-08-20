@@ -1215,7 +1215,7 @@ Restituisce la riga dove cui la funzione è definita nel codice, o ``-1`` se la 
 
 |void| **_reload_scripts**\ (\ scripts\: :ref:`Array<class_Array>`, soft_reload\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_ScriptLanguageExtension_private_method__reload_scripts>`
 
-Reloads all ``scripts`` from disk and the specifics of how that happens is **ScriptLanguageExtension** specific.
+Ricarica tutti gli ``scripts`` da disco e le specifiche di come ciò accade dipendono dal **ScriptLanguageExtension**.
 
 .. rst-class:: classref-item-separator
 
@@ -1227,7 +1227,7 @@ Reloads all ``scripts`` from disk and the specifics of how that happens is **Scr
 
 |void| **_reload_tool_script**\ (\ script\: :ref:`Script<class_Script>`, soft_reload\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_ScriptLanguageExtension_private_method__reload_tool_script>`
 
-Reloads the given ``script`` from disk and the specifics of how that happens is **ScriptLanguageExtension** specific.
+Ricarica lo ``script`` specificato da disco e le specifiche di come ciò accade dipendono dal **ScriptLanguageExtension**.
 
 .. rst-class:: classref-item-separator
 
@@ -1331,7 +1331,7 @@ Reloads the given ``script`` from disk and the specifics of how that happens is 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

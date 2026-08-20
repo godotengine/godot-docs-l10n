@@ -14,15 +14,15 @@ Un nodo con la capacità di inviare richieste HTTP(S).
 Descrizione
 ----------------------
 
-A node with the ability to send HTTP requests. Uses :ref:`HTTPClient<class_HTTPClient>` internally.
+Un nodo capace di inviare richieste HTTP. Utilizza :ref:`HTTPClient<class_HTTPClient>` internamente.
 
-Can be used to make HTTP requests, i.e. download or upload files or web content via HTTP.
+Può essere utilizzato per effettuare richieste HTTP, ovvero scaricare o caricare file o contenuti Web tramite HTTP.
 
-\ **Warning:** See the notes and warnings on :ref:`HTTPClient<class_HTTPClient>` for limitations, especially regarding TLS security.
+\ **Attenzione:** Consulta le note e gli avvertimenti su :ref:`HTTPClient<class_HTTPClient>` per le limitazioni, in particolare per quanto riguarda la sicurezza TLS.
 
-\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+\ **Nota:** Quando si esporta su Android, assicurarsi di abilitare l'autorizzazione ``INTERNET`` nella preimpostazione d'esportazione Android prima di esportare il progetto o di utilizzare la distribuzione con un clic. Altrimenti, qualsiasi tipo di comunicazione di rete sarà bloccata da Android.
 
-\ **Example:** Contact a REST API and print one of its returned fields:
+\ **Esempio:** Contatta un'API REST e stampa uno dei sui campi restituiti:
 
 
 .. tabs::
@@ -30,52 +30,52 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
  .. code-tab:: gdscript
 
     func _ready():
-        # Create an HTTP request node and connect its completion signal.
+        # Crea un nodo di richiesta HTTP e collega il suo segnale di completamento.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # Perform a GET request. The URL below returns JSON as of writing.
-        var error = http_request.request("https://httpbin.org/get")
+        # Effettua una richiesta GET. L'URL sottostante restituisce JSON al momento.
+        var error = http_request.request("https://placehold.co/512.png")
         if error != OK:
             push_error("An error occurred in the HTTP request.")
 
-        # Perform a POST request. The URL below returns JSON as of writing.
-        # Note: Don't make simultaneous requests using a single HTTPRequest node.
-        # The snippet below is provided for reference only.
+        # Effettua una richiesta POST. L'URL sottostante restituisce JSON al momento.
+        # Nota: non effettuare richieste simultanee utilizzando un singolo nodo HTTPRequest.
+        # Il pezzo di codice sottostante è fornito solo per riferimento.
         var body = JSON.stringify({"name": "Godette"})
         error = http_request.request("https://httpbin.org/post", [], HTTPClient.METHOD_POST, body)
         if error != OK:
-            push_error("An error occurred in the HTTP request.")
+            push_error("Si è verificato un errore nella richiesta HTTP.")
 
-    # Called when the HTTP request is completed.
+    # Chiamato quando la richiesta HTTP è completata.
     func _http_request_completed(result, response_code, headers, body):
         var json = JSON.new()
         json.parse(body.get_string_from_utf8())
         var response = json.get_data()
 
-        # Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
+        # Stamperà la stringa dell'agente utente utilizzata dal nodo HTTPRequest (come riconosciuto da httpbin.org).
         print(response.headers["User-Agent"])
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        // Create an HTTP request node and connect its completion signal.
+        // Crea un nodo di richiesta HTTP e collega il suo segnale di completamento.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // Perform a GET request. The URL below returns JSON as of writing.
-        Error error = httpRequest.Request("https://httpbin.org/get");
+        // Effettua una richiesta GET. L'URL sottostante restituisce JSON al momento.
+        Error error = httpRequest.Request("https://placehold.co/512.png");
         if (error != Error.Ok)
         {
-            GD.PushError("An error occurred in the HTTP request.");
+            GD.PushError("Si è verificato un errore nella richiesta HTTP.");
         }
 
-        // Perform a POST request. The URL below returns JSON as of writing.
-        // Note: Don't make simultaneous requests using a single HTTPRequest node.
-        // The snippet below is provided for reference only.
+        // Effettua una richiesta POST. L'URL sottostante restituisce JSON al momento.
+        // Nota: non effettuare richieste simultanee utilizzando un singolo nodo HTTPRequest.
+        // Il pezzo di codice sottostante è fornito solo per riferimento.
         string body = Json.Stringify(new Godot.Collections.Dictionary
         {
             { "name", "Godette" }
@@ -87,20 +87,20 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
         }
     }
 
-    // Called when the HTTP request is completed.
+    // Chiamato quando la richiesta HTTP è completata.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         var json = new Json();
         json.Parse(body.GetStringFromUtf8());
         var response = json.GetData().AsGodotDictionary();
 
-        // Will print the user agent string used by the HTTPRequest node (as recognized by httpbin.org).
+        // Stamperà la stringa dell'agente utente utilizzata dal nodo HTTPRequest (come riconosciuto da httpbin.org).
         GD.Print((response["headers"].AsGodotDictionary())["User-Agent"]);
     }
 
 
 
-\ **Example:** Load an image using **HTTPRequest** and display it:
+\ **Esempio:** Carica e visualizza un'immagine tramite **HTTPRequest**:
 
 
 .. tabs::
@@ -108,29 +108,29 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
  .. code-tab:: gdscript
 
     func _ready():
-        # Create an HTTP request node and connect its completion signal.
+        # Crea un nodo di richiesta HTTP e collega il suo segnale di completamento.
         var http_request = HTTPRequest.new()
         add_child(http_request)
         http_request.request_completed.connect(self._http_request_completed)
 
-        # Perform the HTTP request. The URL below returns a PNG image as of writing.
-        var error = http_request.request("https://placehold.co/512.png")
+        # Effettua la richiesta HTTP. L'URL sottostante restituisce un'immagine PNG al momento.
+        var error = http_request.request("https://via.placeholder.com/512")
         if error != OK:
-            push_error("An error occurred in the HTTP request.")
+            push_error("Si è verificato un errore nella richiesta HTTP.")
 
-    # Called when the HTTP request is completed.
+    # Chiamato quando la richiesta HTTP è completata.
     func _http_request_completed(result, response_code, headers, body):
         if result != HTTPRequest.RESULT_SUCCESS:
-            push_error("Image couldn't be downloaded. Try a different image.")
+            push_error("Impossibile scaricare l'immagine. Prova un'immagine diversa.")
 
         var image = Image.new()
         var error = image.load_png_from_buffer(body)
         if error != OK:
-            push_error("Couldn't load the image.")
+            push_error("Impossibile caricare l'immagine.")
 
         var texture = ImageTexture.create_from_image(image)
 
-        # Display the image in a TextureRect node.
+        # Visualizza l'immagine in un nodo TextureRect.
         var texture_rect = TextureRect.new()
         add_child(texture_rect)
         texture_rect.texture = texture
@@ -139,36 +139,36 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
     public override void _Ready()
     {
-        // Create an HTTP request node and connect its completion signal.
+        // Crea un nodo di richiesta HTTP e collega il suo segnale di completamento.
         var httpRequest = new HttpRequest();
         AddChild(httpRequest);
         httpRequest.RequestCompleted += HttpRequestCompleted;
 
-        // Perform the HTTP request. The URL below returns a PNG image as of writing.
-        Error error = httpRequest.Request("https://placehold.co/512.png");
+        // Effettua la richiesta HTTP. L'URL sottostante restituisce un'immagine PNG al momento.
+        Error error = httpRequest.Request("https://via.placeholder.com/512");
         if (error != Error.Ok)
         {
-            GD.PushError("An error occurred in the HTTP request.");
+            GD.PushError("Si è verificato un errore nella richiesta HTTP.");
         }
     }
 
-    // Called when the HTTP request is completed.
+    // Chiamato quando la richiesta HTTP è completata.
     private void HttpRequestCompleted(long result, long responseCode, string[] headers, byte[] body)
     {
         if (result != (long)HttpRequest.Result.Success)
         {
-            GD.PushError("Image couldn't be downloaded. Try a different image.");
+            GD.PushError("Impossibile scaricare l'immagine. Prova un'immagine diversa.");
         }
         var image = new Image();
         Error error = image.LoadPngFromBuffer(body);
         if (error != Error.Ok)
         {
-            GD.PushError("Couldn't load the image.");
+            GD.PushError("Impossibile caricare l'immagine.");
         }
 
         var texture = ImageTexture.CreateFromImage(image);
 
-        // Display the image in a TextureRect node.
+        // Visualizza l'immagine in un nodo TextureRect.
         var textureRect = new TextureRect();
         AddChild(textureRect);
         textureRect.Texture = texture;
@@ -176,7 +176,7 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
 
 
-\ **Note:** **HTTPRequest** nodes will automatically handle decompression of response bodies. An ``Accept-Encoding`` header will be automatically added to each of your requests, unless one is already specified. Any response with a ``Content-Encoding: gzip`` header will automatically be decompressed and delivered to you as uncompressed bytes.
+\ **Nota:** I nodi **HTTPRequest** gestiranno automaticamente la decompressione dei corpi delle risposte. Un'intestazione ``Accept-Encoding`` sarà aggiunta automaticamente a ciascuna delle tue richieste, a meno che non ne sia già stata specificata una. Qualsiasi risposta con un'intestazione ``Content-Encoding: gzip`` sarà automaticamente decompressa e consegnata come byte non compressi.
 
 .. rst-class:: classref-introduction-group
 
@@ -648,7 +648,7 @@ Imposta le :ref:`TLSOptions<class_TLSOptions>` da utilizzare quando ci si connet
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

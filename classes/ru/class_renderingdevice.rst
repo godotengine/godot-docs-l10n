@@ -3279,7 +3279,7 @@ flags **BufferCreationBits**: :ref:`🔗<enum_RenderingDevice_BufferCreationBits
 
 **Экспериментальное:** Эта постоянная может быть изменена или удалена в будущих версиях.
 
-Allows usage of this buffer as input data for an acceleration structure build operation. You must first check that the GPU supports it:
+Позволяет использовать этот буфер в качестве входных данных для операции построения структуры ускорения. Перед использованием необходимо убедиться, что графический процессор поддерживает эту функцию:
 
 
 .. tabs::
@@ -3311,7 +3311,7 @@ flags **AccelerationStructureFlagBits**: :ref:`🔗<enum_RenderingDevice_Acceler
 
 **Экспериментальное:** Эта постоянная может быть изменена или удалена в будущих версиях.
 
-Allows the acceleration structure to be updated after it has been built.
+Позволяет обновлять структуру, чтобы она обновлялась после ее создания.
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_ALLOW_COMPACTION_BIT:
 
@@ -3321,7 +3321,7 @@ Allows the acceleration structure to be updated after it has been built.
 
 **Экспериментальное:** Эта постоянная может быть изменена или удалена в будущих версиях.
 
-Allows the acceleration structure to be compacted to reduce memory usage after it has been built.
+Позволяет уплотнить структуру ускорения для уменьшения использования памяти после ее создания.
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_PREFER_FAST_TRACE_BIT:
 
@@ -3331,7 +3331,7 @@ Allows the acceleration structure to be compacted to reduce memory usage after i
 
 **Экспериментальное:** Эта постоянная может быть изменена или удалена в будущих версиях.
 
-Prioritizes ray traversal performance over build performance when building the acceleration structure.
+При построении структуры ускорения приоритет отдается производительности обхода лучей, а не производительности построения.
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_PREFER_FAST_BUILD_BIT:
 
@@ -3341,7 +3341,7 @@ Prioritizes ray traversal performance over build performance when building the a
 
 **Экспериментальное:** Эта постоянная может быть изменена или удалена в будущих версиях.
 
-Prioritizes build performance over ray traversal performance when building the acceleration structure.
+При построении структуры ускорения приоритет отдается производительности сборки, а не производительности обхода лучей.
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_LOW_MEMORY_BIT:
 
@@ -3351,7 +3351,7 @@ Prioritizes build performance over ray traversal performance when building the a
 
 **Экспериментальное:** Эта постоянная может быть изменена или удалена в будущих версиях.
 
-Reduces the memory usage of the acceleration structure, potentially at the cost of reduced ray traversal performance.
+Уменьшает объем памяти, используемой структурой ускорения, что потенциально может привести к снижению производительности обхода лучей.
 
 .. rst-class:: classref-item-separator
 
@@ -3371,7 +3371,7 @@ flags **AccelerationStructureGeometryFlagBits**: :ref:`🔗<enum_RenderingDevice
 
 **Экспериментальное:** Эта постоянная может быть изменена или удалена в будущих версиях.
 
-An opaque geometry does not invoke the any hit shaders.
+Непрозрачная геометрия не вызывает шейдеры, отвечающие за срабатывание.
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_GEOMETRY_NO_DUPLICATE_ANY_HIT_INVOCATION_BIT:
 
@@ -3381,7 +3381,7 @@ An opaque geometry does not invoke the any hit shaders.
 
 **Экспериментальное:** Эта постоянная может быть изменена или удалена в будущих версиях.
 
-This geometry only calls the any hit shader a single time for each primitive.
+Данная геометрия вызывает шейдер для каждого попадания только один раз для каждого примитива.
 
 .. rst-class:: classref-item-separator
 
@@ -3401,7 +3401,7 @@ flags **AccelerationStructureInstanceFlagBits**: :ref:`🔗<enum_RenderingDevice
 
 **Экспериментальное:** Эта постоянная может быть изменена или удалена в будущих версиях.
 
-Disables triangle face culling for this instance during ray traversal.
+Отключает отсечение треугольных граней для данного экземпляра во время обхода луча.
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_INSTANCE_TRIANGLE_FLIP_FACING_BIT:
 
@@ -3411,7 +3411,7 @@ Disables triangle face culling for this instance during ray traversal.
 
 **Экспериментальное:** Эта постоянная может быть изменена или удалена в будущих версиях.
 
-Flips the triangle facing direction for this instance during ray traversal.
+В данном случае при обходе луча изменяет направление треугольника на противоположное.
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_INSTANCE_FORCE_OPAQUE_BIT:
 
@@ -3421,7 +3421,7 @@ Flips the triangle facing direction for this instance during ray traversal.
 
 **Экспериментальное:** Эта постоянная может быть изменена или удалена в будущих версиях.
 
-Forces all geometries in this instance to be treated as opaque, preventing any hit shaders from being invoked.
+В данном случае эта функция заставляет все геометрические объекты рассматриваться как непрозрачные, предотвращая вызов любых шейдеров попадания.
 
 .. _class_RenderingDevice_constant_ACCELERATION_STRUCTURE_INSTANCE_FORCE_NO_OPAQUE_BIT:
 
@@ -3431,7 +3431,7 @@ Forces all geometries in this instance to be treated as opaque, preventing any h
 
 **Экспериментальное:** Эта постоянная может быть изменена или удалена в будущих версиях.
 
-Forces all geometries in this instance to be treated as non-opaque, allowing any hit shaders to be invoked.
+В данном случае эта функция заставляет все геометрические объекты рассматриваться как непрозрачные, что позволяет вызывать любые шейдеры попадания.
 
 .. rst-class:: classref-item-separator
 
@@ -3553,7 +3553,7 @@ enum **UniformType**: :ref:`🔗<enum_RenderingDevice_UniformType>`
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_ACCELERATION_STRUCTURE** = ``12``
 
-Acceleration structure uniform.
+Униформа структуры ускорения.
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_MAX:
 
@@ -4579,7 +4579,7 @@ enum **ShaderStage**: :ref:`🔗<enum_RenderingDevice_ShaderStage>`
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_RAYGEN** = ``5``
 
-Ray generation shader stage. This can be used to generate primary rays.
+Этап генерации лучей в шейдере. Его можно использовать для генерации первичных лучей.
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_ANY_HIT:
 
@@ -4587,7 +4587,7 @@ Ray generation shader stage. This can be used to generate primary rays.
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_ANY_HIT** = ``6``
 
-Any hit shader stage. Invoked when ray intersections are not opaque. This can be used to specify what happens when a ray hits any of the geometry in the scene.
+Любой этап шейдера попадания. Вызывается, когда точки пересечения лучей не являются непрозрачными. Это можно использовать для указания того, что происходит, когда луч попадает в любую из геометрических фигур в сцене.
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_CLOSEST_HIT:
 
@@ -4595,7 +4595,7 @@ Any hit shader stage. Invoked when ray intersections are not opaque. This can be
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_CLOSEST_HIT** = ``7``
 
-Closest hit shader stage. This can be used to specify what happens when a ray hits the closest geometry in the scene.
+Этап шейдера "Ближайшее попадание". Он позволяет задать, что происходит, когда луч попадает в ближайшую геометрическую фигуру в сцене.
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_MISS:
 
@@ -4603,7 +4603,7 @@ Closest hit shader stage. This can be used to specify what happens when a ray hi
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_MISS** = ``8``
 
-Miss shader stage. This can be used to specify what happens if a ray does not hit anything in the scene.
+Этап промаха шейдера. Это позволяет указать, что произойдет, если луч не попадет ни во что в сцене.
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_INTERSECTION:
 
@@ -4611,7 +4611,7 @@ Miss shader stage. This can be used to specify what happens if a ray does not hi
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_INTERSECTION** = ``9``
 
-Intersection shader stage. The intersection shader for triangles is built-in. This can be used to compute ray intersections with primitives that are not triangles.
+Этап шейдера пересечения. Шейдер пересечения для треугольников встроен. Его можно использовать для вычисления пересечений лучей с примитивами, которые не являются треугольниками.
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_MAX:
 
@@ -4667,7 +4667,7 @@ Intersection shader stage. The intersection shader for triangles is built-in. Th
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_RAYGEN_BIT** = ``32``
 
-Ray generation shader stage bit (see also :ref:`SHADER_STAGE_RAYGEN<class_RenderingDevice_constant_SHADER_STAGE_RAYGEN>`).
+Бит этапа генерации шейдера лучей (см. также :ref:`SHADER_STAGE_RAYGEN<class_RenderingDevice_constant_SHADER_STAGE_RAYGEN>`).
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_ANY_HIT_BIT:
 
@@ -4675,7 +4675,7 @@ Ray generation shader stage bit (see also :ref:`SHADER_STAGE_RAYGEN<class_Render
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_ANY_HIT_BIT** = ``64``
 
-Any hit shader stage bit (see also :ref:`SHADER_STAGE_ANY_HIT<class_RenderingDevice_constant_SHADER_STAGE_ANY_HIT>`).
+Любой бит этапа шейдера попадания (см. также :ref:`SHADER_STAGE_ANY_HIT<class_RenderingDevice_constant_SHADER_STAGE_ANY_HIT>`).
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_CLOSEST_HIT_BIT:
 
@@ -4683,7 +4683,7 @@ Any hit shader stage bit (see also :ref:`SHADER_STAGE_ANY_HIT<class_RenderingDev
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_CLOSEST_HIT_BIT** = ``128``
 
-Closest hit shader stage bit (see also :ref:`SHADER_STAGE_CLOSEST_HIT<class_RenderingDevice_constant_SHADER_STAGE_CLOSEST_HIT>`).
+Бит этапа шейдера ближайшего попадания (см. также :ref:`SHADER_STAGE_CLOSEST_HIT<class_RenderingDevice_constant_SHADER_STAGE_CLOSEST_HIT>`).
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_MISS_BIT:
 
@@ -4691,7 +4691,7 @@ Closest hit shader stage bit (see also :ref:`SHADER_STAGE_CLOSEST_HIT<class_Rend
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_MISS_BIT** = ``256``
 
-Miss shader stage bit (see also :ref:`SHADER_STAGE_MISS<class_RenderingDevice_constant_SHADER_STAGE_MISS>`).
+Пропущенный бит этапа шейдера (см. также :ref:`SHADER_STAGE_MISS<class_RenderingDevice_constant_SHADER_STAGE_MISS>`).
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_INTERSECTION_BIT:
 
@@ -4699,7 +4699,7 @@ Miss shader stage bit (see also :ref:`SHADER_STAGE_MISS<class_RenderingDevice_co
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_INTERSECTION_BIT** = ``512``
 
-Intersection shader stage bit (see also :ref:`SHADER_STAGE_INTERSECTION<class_RenderingDevice_constant_SHADER_STAGE_INTERSECTION>`).
+Бит этапа шейдера пересечения (см. также :ref:`SHADER_STAGE_INTERSECTION<class_RenderingDevice_constant_SHADER_STAGE_INTERSECTION>`).
 
 .. rst-class:: classref-item-separator
 
@@ -4809,11 +4809,11 @@ enum **Features**: :ref:`🔗<enum_RenderingDevice_Features>`
 
 :ref:`Features<enum_RenderingDevice_Features>` **SUPPORTS_RAY_QUERY** = ``11``
 
-Support for ray query extension.
+Поддержка расширения для запросов лучей.
 
 
 
-\ **Note:** This is currently only supported when using Vulkan. This is not supported on macOS and iOS (even on hardware supporting raytracing) due to MoltenVK limitations.
+\ **Примечание:** В настоящее время это поддерживается только при использовании Vulkan. На macOS и iOS (даже на оборудовании, поддерживающем трассировку лучей) это не поддерживается из-за ограничений MoltenVK.
 
 .. _class_RenderingDevice_constant_SUPPORTS_RAYTRACING_PIPELINE:
 
@@ -4821,11 +4821,11 @@ Support for ray query extension.
 
 :ref:`Features<enum_RenderingDevice_Features>` **SUPPORTS_RAYTRACING_PIPELINE** = ``12``
 
-Support for raytracing pipeline extension.
+Поддержка расширения конвейера трассировки лучей.
 
 
 
-\ **Note:** This is currently only supported when using Vulkan. This is not supported on macOS and iOS (even on hardware supporting raytracing) due to MoltenVK limitations.
+\ **Примечание:** В настоящее время это поддерживается только при использовании Vulkan. На macOS и iOS (даже на оборудовании, поддерживающем трассировку лучей) это не поддерживается из-за ограничений MoltenVK.
 
 .. _class_RenderingDevice_constant_SUPPORTS_HDR_OUTPUT:
 
@@ -4833,7 +4833,7 @@ Support for raytracing pipeline extension.
 
 :ref:`Features<enum_RenderingDevice_Features>` **SUPPORTS_HDR_OUTPUT** = ``13``
 
-Support for high dynamic range (HDR) output.
+Поддержка вывода изображения с расширенным динамическим диапазоном (HDR).
 
 .. rst-class:: classref-item-separator
 
@@ -5591,7 +5591,7 @@ flags **DrawFlags**: :ref:`🔗<enum_RenderingDevice_DrawFlags>`
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Builds the ``blas``.
+Создаёт ``blas``.
 
 .. rst-class:: classref-item-separator
 
@@ -5605,9 +5605,9 @@ Builds the ``blas``.
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Creates a new Bottom-Level Acceleration Structure (BLAS). It can be accessed with the RID that is returned.
+Создает новую структуру ускорения нижнего уровня (BLAS). Доступ к ней осуществляется с помощью возвращаемого RID.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+После завершения работы с RID вам потребуется освободить его, используя метод :ref:`free_rid()<class_RenderingDevice_method_free_rid>` объекта RenderingDevice.
 
 .. rst-class:: classref-item-separator
 
@@ -6685,13 +6685,13 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Creates a new hit shader binding table (SBT). It can be accessed with the RID that is returned.
+Создает новую таблицу привязки шейдера попадания (SBT). Доступ к ней осуществляется по возвращаемому RID.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+После завершения работы с RID вам потребуется освободить его с помощью метода :ref:`free_rid()<class_RenderingDevice_method_free_rid>` объекта RenderingDevice.
 
-This will be freed automatically when the ``raytracing_pipeline`` is freed.
+Он будет освобожден автоматически при освобождении параметра ``raytracing_pipeline``.
 
-The hit SBT resizes itself as needed. ``initial_hit_group_capacity`` is used to allocate the initial backing memory.
+Размер таблицы привязки шейдера попадания изменяется по мере необходимости. Параметр ``initial_hit_group_capacity`` используется для выделения начальной памяти под блок.
 
 .. rst-class:: classref-item-separator
 
@@ -6705,27 +6705,27 @@ The hit SBT resizes itself as needed. ``initial_hit_group_capacity`` is used to 
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Allocates a contiguous range of SBT entries from ``hit_sbt``.
+Выделяет непрерывный диапазон записей SBT из ``hit_sbt``.
 
-The returned value should be assigned to :ref:`RDAccelerationStructureInstance.hit_sbt_range<class_RDAccelerationStructureInstance_property_hit_sbt_range>`.
+Возвращаемое значение должно быть присвоено :ref:`RDAccelerationStructureInstance.hit_sbt_range<class_RDAccelerationStructureInstance_property_hit_sbt_range>`.
 
-During ray traversal, hit group index is computed as:
+Во время трассировки лучей индекс группы попаданий вычисляется как:
 
-(geometry index in :ref:`RDAccelerationStructureInstance.blas<class_RDAccelerationStructureInstance_property_blas>`)
+(индекс геометрии в :ref:`RDAccelerationStructureInstance.blas<class_RDAccelerationStructureInstance_property_blas>`)
 
-× (SBT stride used in ``traceRayEXT``)
+× (шаг SBT, используемый в ``traceRayEXT``)
 
-+ (SBT offset used in ``traceRayEXT``)
++ (смещение SBT, используемое в ``traceRayEXT``)
 
-+ (range offset)
++ (смещение диапазона)
 
-\ ``hit_group_count`` must be large enough to cover all SBT entries that may be indexed by this equation. This typically corresponds to:
+\ ``hit_group_count`` должно быть достаточно большим, чтобы покрыть все записи SBT, которые могут быть проиндексированы этим уравнением. Обычно это соответствует:
 
-(geometry count in :ref:`RDAccelerationStructureInstance.blas<class_RDAccelerationStructureInstance_property_blas>`)
+(количество геометрий в :ref:`RDAccelerationStructureInstance.blas<class_RDAccelerationStructureInstance_property_blas>`)
 
-× (SBT stride used in ``traceRayEXT``)
+× (шаг SBT, используемый в ``traceRayEXT``)
 
-The allocated range is uninitialized and must be filled using :ref:`hit_sbt_range_update()<class_RenderingDevice_method_hit_sbt_range_update>`.
+Выделенный диапазон не инициализирован и должен быть заполнен с помощью :ref:`hit_sbt_range_update()<class_RenderingDevice_method_hit_sbt_range_update>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6739,9 +6739,9 @@ The allocated range is uninitialized and must be filled using :ref:`hit_sbt_rang
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Frees a hit SBT range previously allocated with :ref:`hit_sbt_range_alloc()<class_RenderingDevice_method_hit_sbt_range_alloc>`.
+Освобождает диапазон SBT попаданий, ранее выделенный с помощью :ref:`hit_sbt_range_alloc()<class_RenderingDevice_method_hit_sbt_range_alloc>`.
 
-The range must not be in use by any acceleration structure after being freed.
+После освобождения диапазон не должен использоваться какой-либо структурой ускорения.
 
 .. rst-class:: classref-item-separator
 
@@ -6755,11 +6755,11 @@ The range must not be in use by any acceleration structure after being freed.
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Updates the contents of a hit SBT range.
+Обновляет содержимое диапазона SBT попаданий.
 
-\ ``hit_group_indices`` specifies indices into the hit group array provided in :ref:`raytracing_pipeline_create()<class_RenderingDevice_method_raytracing_pipeline_create>`.
+\ ``hit_group_indices`` задаёт индексы в массиве групп попаданий, предоставленном в :ref:`raytracing_pipeline_create()<class_RenderingDevice_method_raytracing_pipeline_create>`.
 
-The ``offset`` parameter specifies where within the allocated range the writing begins. This allows partial updates of a range. However, the complete range must be fully initialized before it is used in a raytracing dispatch.
+Параметр ``offset`` определяет, с какого места в выделенном диапазоне начинается запись. Это позволяет выполнять частичные обновления диапазона. Однако полный диапазон должен быть полностью инициализирован перед использованием в диспетчеризации трассировки лучей.
 
 .. rst-class:: classref-item-separator
 
@@ -6773,11 +6773,11 @@ The ``offset`` parameter specifies where within the allocated range the writing 
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Sets a new ``raytracing_pipeline`` for ``hit_sbt``.
+Устанавливает новый ``raytracing_pipeline`` для ``hit_sbt``.
 
-The new pipeline must be a superset of the previous one. Existing hit groups must keep the same order and new hit groups should be appended to the end. This preserves existing SBT entries.
+Новый конвейер должен быть надмножеством предыдущего. Существующие группы попаданий должны сохранять тот же порядок, а новые группы попаданий должны добавляться в конец. Это сохраняет существующие записи SBT.
 
-The previous pipeline must remain valid during the call.
+Предыдущий конвейер должен оставаться действительным во время вызова.
 
 .. rst-class:: classref-item-separator
 
@@ -6835,11 +6835,11 @@ The previous pipeline must remain valid during the call.
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Starts a list of raytracing commands. The returned value should be passed to other ``raytracing_list_*`` functions.
+Запускает список команд трассировки лучей. Возвращаемое значение должно передаваться в другие функции ``raytracing_list_*``.
 
-Multiple raytracing lists cannot be created at the same time; you must finish the previous raytracing list first using :ref:`raytracing_list_end()<class_RenderingDevice_method_raytracing_list_end>`.
+Нельзя создавать несколько списков трассировки одновременно; сначала необходимо завершить предыдущий список с помощью :ref:`raytracing_list_end()<class_RenderingDevice_method_raytracing_list_end>`.
 
-A simple raytracing operation might look like this (code is not a complete example):
+Простая операция трассировки лучей может выглядеть так (код не является полным примером):
 
 
 .. tabs::
@@ -6849,7 +6849,7 @@ A simple raytracing operation might look like this (code is not a complete examp
     var rd = RenderingDevice.new()
     assert(rd.has_feature(RenderingDevice.SUPPORTS_RAYTRACING_PIPELINE))
 
-    # Create a BLAS for a mesh.
+    # Создание BLAS для сетки.
     var geometry = RDAccelerationStructureGeometry.new()
     geometry.flags = RenderingDevice.ACCELERATION_STRUCTURE_GEOMETRY_OPAQUE_BIT
     geometry.vertex_buffer = vertex_buffer
@@ -6862,10 +6862,10 @@ A simple raytracing operation might look like this (code is not a complete examp
 
     blas = rd.blas_create([geometry], 0)
 
-    # Create TLAS.
+    # Создание TLAS.
     tlas = rd.tlas_create(1, 0)
 
-    # Build acceleration structures.
+    # Построение структур ускорения.
     rd.blas_build(blas)
 
     var instance = RDAccelerationStructureInstance.new()
@@ -6878,11 +6878,11 @@ A simple raytracing operation might look like this (code is not a complete examp
 
     var raylist = rd.raytracing_list_begin()
 
-    # Bind pipeline and uniforms.
+    # Привязка конвейера и униформы.
     rd.raytracing_list_bind_raytracing_pipeline(raylist, raytracing_pipeline)
     rd.raytracing_list_bind_uniform_set(raylist, uniform_set, 0)
 
-    # Trace rays.
+    # Трассировка лучей.
     var width = get_viewport().size.x
     var height = get_viewport().size.y
     rd.raytracing_list_trace_rays(raylist, 0, hit_sbt, width, height, 1)
@@ -6903,7 +6903,7 @@ A simple raytracing operation might look like this (code is not a complete examp
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Binds ``raytracing_pipeline`` to the specified ``raytracing_list``.
+Привязывает ``raytracing_pipeline`` к указанному ``raytracing_list``.
 
 .. rst-class:: classref-item-separator
 
@@ -6917,7 +6917,7 @@ Binds ``raytracing_pipeline`` to the specified ``raytracing_list``.
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Binds the ``uniform_set`` to this ``raytracing_list``.
+Привязывает ``uniform_set`` к этому ``raytracing_list``.
 
 .. rst-class:: classref-item-separator
 
@@ -6931,7 +6931,7 @@ Binds the ``uniform_set`` to this ``raytracing_list``.
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Finishes a list of raytracing commands created with the ``raytracing_*`` methods.
+Завершает список команд трассировки, созданный с помощью методов ``raytracing_*``.
 
 .. rst-class:: classref-item-separator
 
@@ -6945,7 +6945,7 @@ Finishes a list of raytracing commands created with the ``raytracing_*`` methods
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Sets the push constant data to ``buffer`` for the specified ``raytracing_list``. The shader determines how this binary data is used. The buffer's size in bytes must also be specified in ``size_bytes`` (this can be obtained by calling the :ref:`PackedByteArray.size()<class_PackedByteArray_method_size>` method on the passed ``buffer``).
+Устанавливает данные константы push в ``buffer`` для указанного ``raytracing_list``. Шейдер определяет, как используются эти двоичные данные. Размер буфера в байтах также должен быть указан в ``size_bytes`` (его можно получить, вызвав метод :ref:`PackedByteArray.size()<class_PackedByteArray_method_size>` для переданного ``buffer``).
 
 .. rst-class:: classref-item-separator
 
@@ -6959,11 +6959,11 @@ Sets the push constant data to ``buffer`` for the specified ``raytracing_list``.
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Initializes a raytracing dispatch for ``raytracing_list``, launching ``width`` × ``height`` × ``depth`` rays.
+Инициализирует диспетчеризацию трассировки лучей для ``raytracing_list``, запуская ``width`` × ``height`` × ``depth`` лучей.
 
-\ ``raygen_shader_index`` selects the ray generation shader from the pipeline bound with :ref:`raytracing_list_bind_raytracing_pipeline()<class_RenderingDevice_method_raytracing_list_bind_raytracing_pipeline>`.
+\ ``raygen_shader_index`` выбирает шейдер генерации лучей из конвейера, привязанного с помощью :ref:`raytracing_list_bind_raytracing_pipeline()<class_RenderingDevice_method_raytracing_list_bind_raytracing_pipeline>`.
 
-\ ``hit_sbt`` must use the same pipeline bound to ``raytracing_list``.
+\ ``hit_sbt`` должен использовать тот же конвейер, который привязан к ``raytracing_list``.
 
 .. rst-class:: classref-item-separator
 
@@ -6977,19 +6977,19 @@ Initializes a raytracing dispatch for ``raytracing_list``, launching ``width`` �
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Creates a new raytracing pipeline. It can be accessed with the RID that is returned.
+Создаёт новый конвейер трассировки лучей. К нему можно получить доступ с помощью возвращаемого RID.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+После завершения работы с RID его необходимо освободить с помощью метода RenderingDevice :ref:`free_rid()<class_RenderingDevice_method_free_rid>`.
 
-Each shader must provide the required stage. All stages must use compatible pipeline layouts. The pipeline selects the required stage from each shader.
+Каждый шейдер должен предоставлять требуемую стадию. Все стадии должны использовать совместимые макеты конвейера. Конвейер выбирает необходимую стадию из каждого шейдера.
 
-Input order defines stable indices used by the API:
+Порядок ввода определяет стабильные индексы, используемые API:
 
-- ``raygen_shaders`` is indexed in :ref:`raytracing_list_trace_rays()<class_RenderingDevice_method_raytracing_list_trace_rays>`.
+- ``raygen_shaders`` индексируется в :ref:`raytracing_list_trace_rays()<class_RenderingDevice_method_raytracing_list_trace_rays>`.
 
-- ``miss_shaders`` is indexed in ``traceRayEXT``.
+- ``miss_shaders`` индексируется в ``traceRayEXT``.
 
-- ``hit_groups`` is indexed in :ref:`hit_sbt_range_update()<class_RenderingDevice_method_hit_sbt_range_update>`.
+- ``hit_groups`` индексируется в :ref:`hit_sbt_range_update()<class_RenderingDevice_method_hit_sbt_range_update>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7003,7 +7003,7 @@ Input order defines stable indices used by the API:
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Returns ``true`` if the raytracing pipeline specified by the ``raytracing_pipeline`` RID is valid, ``false`` otherwise.
+Возвращает ``true``, если конвейер трассировки, указанный в ``raytracing_pipeline`` RID, действителен, в противном случае ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -7279,17 +7279,17 @@ Returns ``true`` if the raytracing pipeline specified by the ``raytracing_pipeli
 
 :ref:`Error<enum_@GlobalScope_Error>` **texture_copy**\ (\ from_texture\: :ref:`RID<class_RID>`, to_texture\: :ref:`RID<class_RID>`, from_pos\: :ref:`Vector3<class_Vector3>`, to_pos\: :ref:`Vector3<class_Vector3>`, size\: :ref:`Vector3<class_Vector3>`, src_mipmap\: :ref:`int<class_int>`, dst_mipmap\: :ref:`int<class_int>`, src_layer\: :ref:`int<class_int>`, dst_layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_copy>`
 
-Copies the ``from_texture`` to ``to_texture`` with the specified ``from_pos``, ``to_pos`` and ``size`` coordinates. For 2-dimensional textures, ``from_pos`` and ``to_pos`` must have a Z axis of ``0``, and ``size`` must have a Z axis of ``1``. Source and destination mipmaps/layers must also be specified, with these parameters being ``0`` for textures without mipmaps or single-layer textures. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the texture copy was successful or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` otherwise.
+Копирует ``from_texture`` в ``to_texture`` с указанными координатами ``from_pos``, ``to_pos`` и ``size``. Ось Z ``from_pos``, ``to_pos`` и ``size`` должна быть ``0`` для 2-мерных текстур. Исходные и целевые mip-карты/слои также должны быть указаны, причем эти параметры будут ``0`` для текстур без mip-карт или однослойных текстур. Возвращает :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`, если копирование текстуры прошло успешно, или :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` в противном случае.
 
-\ **Note:** ``from_texture`` texture can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) to copy this texture.
+\ **Примечание:** Текстуру ``from_texture`` нельзя копировать, пока создается список отрисовки, который использует ее как часть буфера кадра. Убедитесь, что список отрисовки финализирован (и что текстура цвета/глубины, использующая его, не установлена на :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`), чтобы скопировать эту текстуру.
 
-\ **Note:** ``from_texture`` texture requires the :ref:`TEXTURE_USAGE_CAN_COPY_FROM_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_FROM_BIT>` to be retrieved.
+\ **Примечание:** ``from_texture`` требует извлечения :ref:`TEXTURE_USAGE_CAN_COPY_FROM_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_FROM_BIT>`.
 
-\ **Note:** ``to_texture`` can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) to copy this texture.
+\ **Примечание:** ``to_texture`` не может быть скопирован, пока создается список отрисовки, использующий его как часть буфера кадра. Убедитесь, что список отрисовки финализирован (и что текстура цвета/глубины, использующая его, не установлена на :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`), чтобы скопировать эту текстуру.
 
-\ **Note:** ``to_texture`` requires the :ref:`TEXTURE_USAGE_CAN_COPY_TO_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_TO_BIT>` to be retrieved.
+\ **Примечание:** ``to_texture`` требует извлечения :ref:`TEXTURE_USAGE_CAN_COPY_TO_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_TO_BIT>`.
 
-\ **Note:** ``from_texture`` and ``to_texture`` must be of the same type (color or depth).
+\ **Примечание:** ``from_texture`` и ``to_texture`` должны быть одного типа (цвет или глубина).
 
 .. rst-class:: classref-item-separator
 
@@ -7544,13 +7544,13 @@ Copies the ``from_texture`` to ``to_texture`` with the specified ``from_pos``, `
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Builds the ``tlas``. The contents of previous builds are discarded.
+Строит ``tlas``. Содержимое предыдущих построений отбрасывается.
 
-Any BLAS provided through the :ref:`RDAccelerationStructureInstance.blas<class_RDAccelerationStructureInstance_property_blas>` member must already have been built using the :ref:`blas_build()<class_RenderingDevice_method_blas_build>` method.
+Любая BLAS, предоставленная через член :ref:`RDAccelerationStructureInstance.blas<class_RDAccelerationStructureInstance_property_blas>`, должна быть уже построена с помощью метода :ref:`blas_build()<class_RenderingDevice_method_blas_build>`.
 
-The number of instances can be equal to or smaller than the maximum instance count provided in the :ref:`tlas_create()<class_RenderingDevice_method_tlas_create>` method.
+Количество экземпляров может быть равно или меньше максимального количества экземпляров, указанного в методе :ref:`tlas_create()<class_RenderingDevice_method_tlas_create>`.
 
-\ **Note:** Freeing or rebuilding any of the provided BLASes after this method invalidates the TLAS and requires it to be rebuilt.
+\ **Примечание:** Освобождение или перестроение любой из предоставленных BLAS после этого метода делает TLAS недействительным и требует его перестроения.
 
 .. rst-class:: classref-item-separator
 
@@ -7564,9 +7564,9 @@ The number of instances can be equal to or smaller than the maximum instance cou
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Creates a new Top-Level Acceleration Structure (TLAS). It can be accessed with the RID that is returned.
+Создает новую структуру ускорения верхнего уровня (TLAS). К ней можно получить доступ с помощью возвращаемого RID.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+После завершения работы с RID его необходимо освободить с помощью метода RenderingDevice :ref:`free_rid()<class_RenderingDevice_method_free_rid>`.
 
 .. rst-class:: classref-item-separator
 

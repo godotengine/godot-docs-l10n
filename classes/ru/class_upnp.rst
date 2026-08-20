@@ -14,9 +14,9 @@ UPNP
 Описание
 ----------------
 
-This class can be used to discover compatible :ref:`UPNPDevice<class_UPNPDevice>`\ s on the local network and execute commands on them, like managing port mappings (for port forwarding/NAT traversal) and querying the local and remote network IP address. Note that methods on this class are synchronous and block the calling thread.
+Этот класс можно использовать для обнаружения совместимых :ref:`UPNPDevice<class_UPNPDevice>` в локальной сети и выполнения команд на них, таких как управление сопоставлениями портов (для переадресации портов/обхода NAT) и запрос локального и удаленного сетевого IP-адреса. Обратите внимание, что методы этого класса являются синхронными и блокируют вызывающий поток.
 
-To forward a specific port (here ``7777``, note both :ref:`discover()<class_UPNP_method_discover>` and :ref:`add_port_mapping()<class_UPNP_method_add_port_mapping>` can return errors that should be checked):
+Чтобы перенаправить определенный порт (здесь ``7777``, обратите внимание, что и :ref:`discover()<class_UPNP_method_discover>`, и :ref:`add_port_mapping()<class_UPNP_method_add_port_mapping>` могут возвращать ошибки, которые следует проверить):
 
 ::
 
@@ -24,25 +24,25 @@ To forward a specific port (here ``7777``, note both :ref:`discover()<class_UPNP
     upnp.discover()
     upnp.add_port_mapping(7777)
 
-To close a specific port (e.g. after you have finished using it):
+Чтобы закрыть определенный порт (например, после того, как вы закончили его использовать):
 
 ::
 
     upnp.delete_port_mapping(port)
 
-\ **Note:** UPnP discovery blocks the current thread. To perform discovery without blocking the main thread, use :ref:`Thread<class_Thread>`\ s like this:
+\ **Примечание:** Обнаружение UPnP блокирует текущий поток. Чтобы выполнить обнаружение без блокировки основного потока, используйте :ref:`Thread<class_Thread>`-ы следующим образом:
 
 ::
 
-    # Emitted when UPnP port mapping setup is completed (regardless of success or failure).
+    # Выдается после завершения настройки сопоставления портов UPnP (независимо от успеха или неудачи).
     signal upnp_completed(error)
 
-    # Replace this with your own server port number between 1024 and 65535.
+    # Замените это на ваш собственный номер порта сервера в диапазоне 1024 и 65535.
     const SERVER_PORT = 3928
     var thread = null
 
     func _upnp_setup(server_port):
-        # UPNP queries take some time.
+        # Запросы UPNP занимают некоторое время.
         var upnp = UPNP.new()
         var err = upnp.discover()
 
@@ -61,24 +61,24 @@ To close a specific port (e.g. after you have finished using it):
         thread.start(_upnp_setup.bind(SERVER_PORT))
 
     func _exit_tree():
-        # Wait for thread finish here to handle game exit while the thread is running.
+        # Дождитесь завершения потока, чтобы обработать выход из игры, пока поток выполняется.
         thread.wait_to_finish()
 
-\ **Terminology:** In the context of UPnP networking, "gateway" (or "internet gateway device", short IGD) refers to network devices that allow computers in the local network to access the internet ("wide area network", WAN). These gateways are often also called "routers".
+\ **Терминология:** В контексте сетей UPnP «шлюз» (или «устройство интернет-шлюза», сокращенно IGD) относится к сетевым устройствам, которые позволяют компьютерам в локальной сети получать доступ к Интернету («глобальная вычислительная сеть», WAN). Эти шлюзы часто также называют «маршрутизаторами».
 
-\ **Pitfalls:**\ 
+\ **Подводные камни:**\ 
 
-- As explained above, these calls are blocking and shouldn't be run on the main thread, especially as they can block for multiple seconds at a time. Use threading!
+- Как объяснялось выше, эти вызовы являются блокирующими и не должны выполняться в основном потоке, особенно потому, что они могут блокироваться на несколько секунд за раз. Используйте потоки!
 
-- Networking is physical and messy. Packets get lost in transit or get filtered, addresses, free ports and assigned mappings change, and devices may leave or join the network at any time. Be mindful of this, be diligent when checking and handling errors, and handle these gracefully if you can: add clear error UI, timeouts and re-try handling.
+- Сетевое взаимодействие является физическим и беспорядочным. Пакеты теряются при передаче или фильтруются, адреса, свободные порты и назначенные сопоставления меняются, а устройства могут покинуть сеть или присоединиться к ней в любое время. Помните об этом, будьте внимательны при проверке и обработке ошибок и обрабатывайте их изящно, если можете: добавьте понятный пользовательский интерфейс ошибок, тайм-ауты и повторную обработку.
 
-- Port mappings may change (and be removed) at any time, and the remote/external IP address of the gateway can change likewise. You should consider re-querying the external IP and try to update/refresh the port mapping periodically (for example, every 5 minutes and on networking failures).
+- Сопоставления портов могут измениться (и быть удалены) в любое время, и удаленный/внешний IP-адрес шлюза может измениться аналогичным образом. Вам следует рассмотреть возможность повторного запроса внешнего IP-адреса и попытаться периодически обновлять/подкреплять сопоставление портов (например, каждые 5 минут и при сбоях в работе сети).
 
-- Not all devices support UPnP, and some users disable UPnP support. You need to handle this (e.g. documenting and requiring the user to manually forward ports, or adding alternative methods of NAT traversal, like a relay/mirror server, or NAT hole punching, STUN/TURN, etc.).
+- Не все устройства поддерживают UPnP, и некоторые пользователи отключают поддержку UPnP. Вам нужно это урегулировать (например, документировать и требовать от пользователя вручную перенаправлять порты или добавлять альтернативные методы обхода NAT, такие как сервер-ретранслятор/зеркал или пробивка NAT, STUN/TURN и т. д.).
 
-- Consider what happens on mapping conflicts. Maybe multiple users on the same network would like to play your game at the same time, or maybe another application uses the same port. Make the port configurable, and optimally choose a port automatically (re-trying with a different port on failure).
+- Подумайте, что происходит при конфликтах сопоставления. Возможно, несколько пользователей в одной сети захотят играть в вашу игру одновременно, или, может быть, другое приложение использует тот же порт. Сделайте порт настраиваемым и оптимально выбирайте порт автоматически (повторная попытка с другим портом в случае неудачи).
 
-\ **Further reading:** If you want to know more about UPnP (and the Internet Gateway Device (IGD) and Port Control Protocol (PCP) specifically), `Wikipedia <https://en.wikipedia.org/wiki/Universal_Plug_and_Play>`__ is a good first stop, the specification can be found at the `Open Connectivity Foundation <https://openconnectivity.org/developer/specifications/upnp-resources/upnp/>`__ and Godot's implementation is based on the `MiniUPnP client <https://github.com/miniupnp/miniupnp>`__.
+\ **Дополнительная литература:** Если вы хотите узнать больше о UPnP (и в частности об устройстве интернет-шлюза (IGD) и протоколе управления портами (PCP)), `Wikipedia <https://en.wikipedia.org/wiki/Universal_Plug_and_Play>`__ является хорошей первой остановкой, спецификацию можно найти на `Open Connectivity Foundation <https://openconnectivity.org/developer/specifications/upnp-resources/upnp/>`__ и реализация Godot основана на `MiniUPnP client <https://github.com/miniupnp/miniupnp>`__.
 
 .. rst-class:: classref-reftable-group
 

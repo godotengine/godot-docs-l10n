@@ -9,18 +9,18 @@ AudioEffectLimiter
 
 **Eredita:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a soft-clip limiter audio effect to an audio bus.
+Aggiunge un effetto audio limiter soft-clip a un bus audio.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-A "limiter" is an audio effect designed to stop audio signals from exceeding a specified volume threshold level, and usually works by decreasing the volume or soft-clipping the audio. Adding one in the Master bus is always recommended to prevent clipping when the volume goes above 0 dB.
+Un "limiter" (o limitatore) è un effetto audio progettato per impedire che i segnali audio superino una determinata soglia di volume e, in genere, funziona riducendo il volume o applicando un soft clipping all'audio. Si consiglia sempre di aggiungerlo al bus Master per evitare il clipping quando il volume supera 0 dB.
 
-Soft clipping starts to decrease the peaks a little below the volume threshold level and progressively increases its effect as the input volume increases such that the threshold level is never exceeded.
+Il soft clipping inizia a ridurre i picchi poco sotto la soglia di volume e aumenta progressivamente il suo effetto all'aumentare del volume in ingresso, in modo tale che la soglia non venga mai superata.
 
-If hard clipping is desired, consider :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
+Se si desidera un clipping più rigido, si consiglia di usare :ref:`AudioEffectDistortion.MODE_CLIP<class_AudioEffectDistortion_constant_MODE_CLIP>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -29,7 +29,7 @@ Tutorial
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effetti audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -69,7 +69,7 @@ Descrizioni delle proprietà
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-The waveform's maximum allowed value, in dB. Value can range from -20 to -0.1.
+Il valore massimo consentito della forma d'onda, in dB. Il valore può variare da -20 a -0.1.
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ The waveform's maximum allowed value, in dB. Value can range from -20 to -0.1.
 - |void| **set_soft_clip_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_db**\ (\ )
 
-Modifies the volume of the limited waves, in dB. Value can range from 0 to 6.
+Modifica il volume delle onde limitate, in dB. Il valore può variare da 0 a 6.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Modifies the volume of the limited waves, in dB. Value can range from 0 to 6.
 - |void| **set_soft_clip_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_soft_clip_ratio**\ (\ )
 
-This property has no effect on the audio. Use :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` instead, as this Limiter effect is deprecated.
+Questa proprietà non ha alcun effetto sull'audio. Utilizza :ref:`AudioEffectHardLimiter<class_AudioEffectHardLimiter>` invece, poiché questo effetto limitatore è deprecato.
 
 .. rst-class:: classref-item-separator
 
@@ -120,13 +120,13 @@ This property has no effect on the audio. Use :ref:`AudioEffectHardLimiter<class
 - |void| **set_threshold_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold_db**\ (\ )
 
-The volume threshold level from which the limiter begins to be active, in dB. Value can range from -30 to 0.
+Il volume di soglia a partire dal quale il limiter comincia a essere attivo, in dB. Il valore può variare da -30 a 0.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

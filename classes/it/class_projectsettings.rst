@@ -14,13 +14,13 @@ Memorizza le variabili accessibili globalmente.
 Descrizione
 ----------------------
 
-Stores variables that can be accessed from everywhere. Use :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` or :ref:`has_setting()<class_ProjectSettings_method_has_setting>` to access them. Variables stored in ``project.godot`` are also loaded into **ProjectSettings**, making this object very useful for reading custom game configuration options.
+Memorizza variabili a cui è possibile accedere ovunque. Utilizza :ref:`get_setting()<class_ProjectSettings_method_get_setting>`, :ref:`set_setting()<class_ProjectSettings_method_set_setting>` o :ref:`has_setting()<class_ProjectSettings_method_has_setting>` per accedervi. Anche le variabili memorizzate in ``project.godot`` sono caricate in **ProjectSettings**, rendendo questo oggetto molto utile per leggere le opzioni di configurazione del gioco personalizzate.
 
-When naming a Project Settings property, use the full path to the setting including the category. For example, ``"application/config/name"`` for the project name. Category and property names can be viewed in the Project Settings dialog.
+Quando si denomina una proprietà delle Impostazioni del progetto, utilizza il percorso completo all'impostazione, inclusa la categoria. Ad esempio, ``"application/config/name"`` per il nome del progetto. È possibile visualizzare i nomi delle categorie e delle proprietà nella finestra di dialogo Impostazioni del progetto.
 
-\ **Feature tags:** Project settings can be overridden for specific platforms and configurations (debug, release, ...) using :doc:`feature tags <../tutorials/export/feature_tags>`.
+\ **Tag di funzionalità:** È possibile sovrascrivere le impostazioni del progetto per piattaforme e configurazioni specifiche (debug, release, ...) attraverso i :doc:`tag di funzionalità <../tutorials/export/feature_tags>`.
 
-\ **Overriding:** Any project setting can be overridden by creating a file named ``override.cfg`` in the project's root directory. This file is in the same format as ``project.godot``, and can also be written using :ref:`ConfigFile<class_ConfigFile>`. This can also be used in exported projects by placing this file in the same directory as the project binary. Overriding will still take the base project settings' :doc:`feature tags <../tutorials/export/feature_tags>` in account. Therefore, make sure to *also* override the setting with the desired feature tags if you want them to override base project settings on all platforms and configurations.
+\ **Sovrascrittura:** Qualsiasi impostazione del progetto può essere sovrascritta creando un file denominato ``override.cfg`` nella cartella principale del progetto. Questo file ha lo stesso formato di ``project.godot`` e si può scrivere anche tramite :ref:`ConfigFile<class_ConfigFile>`. Può essere utilizzato anche nei progetti esportati collocando questo file nella stessa cartella dell'eseguibile del progetto. La sovrascrittura terrà comunque conto dei :doc:`tag di funzionalità <../tutorials/export/feature_tags>` delle Impostazioni del progetto di base. Pertanto, assicurati di sovrascrivere *anche* l'impostazione con i tag di funzionalità desiderati, se vuoi che sovrascrivano le impostazioni del progetto di base su tutte le piattaforme e configurazioni.
 
 .. rst-class:: classref-introduction-group
 
@@ -2011,11 +2011,11 @@ Descrizioni delle proprietà
 
 :ref:`String<class_String>` **accessibility/general/accessibility_driver** = ``"accesskit"`` :ref:`🔗<class_ProjectSettings_property_accessibility/general/accessibility_driver>`
 
-Accessibility driver:
+Driver di accessibilità:
 
--**accesskit** (default): AccessKit driver.
+-**accesskit** (default): driver AccessKit.
 
--**dummy**: Dummy driver, screen reader support is disabled.
+- **dummy**: driver fittizio, Il supporto per i lettori dello schermo è disabilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -2027,15 +2027,15 @@ Accessibility driver:
 
 :ref:`int<class_int>` **accessibility/general/accessibility_support** = ``0`` :ref:`🔗<class_ProjectSettings_property_accessibility/general/accessibility_support>`
 
-Accessibility support mode:
+Modalità di supporto per l'accessibilità:
 
-- **Auto** (``0``): Accessibility support is enabled, but updates to the accessibility information are processed only if an assistive app (such as a screen reader or a Braille display) is active (default).
+- **Auto** (``0``): il supporto per l'accessibilità è abilitato, ma gli aggiornamenti alle informazioni di accessibilità sono elaborati solo se è attiva un'applicazione assistiva (come un lettore dello schermo o un display Braille) (predefinito).
 
-- **Always Active** (``1``): Accessibility support is enabled, and updates to the accessibility information are always processed, regardless of the status of assistive apps.
+- **Always active** (``1``): il supporto per l'accessibilità è abilitato e gli aggiornamenti alle informazioni di accessibilità sono sempre elaborati, a prescindere dallo stato delle applicazioni assistive.
 
-- **Disabled** (``2``): Accessibility support is fully disabled.
+- **Disabled** (``2``): il supporto per l'accessibilità è completamente disabilitato.
 
-\ **Note:** Accessibility debugging tools, such as Accessibility Insights for Windows, Accessibility Inspector (macOS), or AT-SPI Browser (Linux/BSD), do not count as assistive apps. To test your project with these tools, use **Always Active**.
+\ **Nota:** Gli strumenti di debug per l'accessibilità, come Accessibility Insights per Windows, Accessibility Inspector (macOS) o AT-SPI Browser (Linux/BSD), non contano come applicazioni assistive. Per testare il tuo progetto con questi strumenti, usa **Always Active**.
 
 .. rst-class:: classref-item-separator
 
@@ -2059,9 +2059,9 @@ Il numero di aggiornamenti al secondo delle informazioni sull'accessibilità.
 
 :ref:`bool<class_bool>` **animation/compatibility/default_parent_skeleton_in_mesh_instance_3d** = ``false`` :ref:`🔗<class_ProjectSettings_property_animation/compatibility/default_parent_skeleton_in_mesh_instance_3d>`
 
-If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleton>` will point to the parent node (``..``) by default, which was the behavior before Godot 4.6. It's recommended to keep this setting disabled unless the old behavior is needed for compatibility.
+Se impostato su ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleton>` punterà come valore predefinito al nodo padre (``..``), come avveniva prima di Godot 4.6. Si consiglia di mantenere questa impostazione disabilitata a meno che non sia necessario per motivi di compatibilità.
 
-\ **Note:** If you disable this option in an existing project, it's strongly recommended to use the ``Project > Tools > Upgrade Project Files...`` option to ensure existing scenes do not break.
+\ **Nota:** Se si disabilita questa opzione in un progetto esistente, si consiglia vivamente di utilizzare l'opzione ``Progetto > Strumenti > Aggiorna file del progetto...`` per garantire che le scene esistenti non vengano compromesse.
 
 .. rst-class:: classref-item-separator
 
@@ -2085,7 +2085,7 @@ Se ``true``, l':ref:`AnimationMixer<class_AnimationMixer>` stampa l'avviso che l
 
 :ref:`bool<class_bool>` **animation/warnings/check_invalid_skeleton_modifier_node_paths** = ``true`` :ref:`🔗<class_ProjectSettings_property_animation/warnings/check_invalid_skeleton_modifier_node_paths>`
 
-If ``true``, :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` prints a warning if there's no matching object for the track path in the scene when assigning.
+Se ``true``, lo :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` stampa un avviso se non c'è un oggetto corrispondente per il percorso di traccia nella scena dopo averlo assegnato.
 
 .. rst-class:: classref-item-separator
 
@@ -2109,7 +2109,7 @@ Se ``true``, l':ref:`AnimationMixer<class_AnimationMixer>` stampa l'avviso di ne
 
 :ref:`Color<class_Color>` **application/boot_splash/bg_color** = ``Color(0.14, 0.14, 0.14, 1)`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/bg_color>`
 
-Colore di sfondo per l'immagine di avvio.
+Colore di sfondo per la schermata di avvio.
 
 .. rst-class:: classref-item-separator
 
@@ -2121,13 +2121,13 @@ Colore di sfondo per l'immagine di avvio.
 
 :ref:`String<class_String>` **application/boot_splash/image** = ``""`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/image>`
 
-Percorso di un'immagine utilizzata come splash di avvio. Se lasciato vuoto, sarà visualizzato lo splash predefinito di Godot Engine.
+Percorso di un'immagine utilizzata come schermata di avvio. Se lasciato vuoto, sarà visualizzato la schermata predefinita di Godot Engine.
 
 \ **Nota:** Efficace solo se :ref:`application/boot_splash/show_image<class_ProjectSettings_property_application/boot_splash/show_image>` è ``true``.
 
 \ **Nota:** L'unico formato supportato è PNG. Utilizzare un altro formato di immagine genererà un errore.
 
-\ **Nota:** L'immagine sarà visualizzata anche quando si apre il progetto nell'editor. Se si desidera visualizzare l'immagine splash predefinita nell'editor, aggiungere una sovrascrittura vuota per la funzionalità ``editor_hint``.
+\ **Nota:** L'immagine sarà visualizzata anche quando si apre il progetto nell'editor. Se vuoi far apparire l'immagine predefinita di avvio nell'editor, aggiungi una sovrascrittura vuota per la funzionalità ``editor_hint``.
 
 .. rst-class:: classref-item-separator
 
@@ -2139,7 +2139,7 @@ Percorso di un'immagine utilizzata come splash di avvio. Se lasciato vuoto, sar�
 
 :ref:`int<class_int>` **application/boot_splash/minimum_display_time** = ``0`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/minimum_display_time>`
 
-Tempo minimo di visualizzazione dello splash all'avvio (in millisecondi). Non è consigliabile impostare valori troppo alti per questa impostazione.
+Tempo minimo di visualizzazione della schermata di avvio (in millisecondi). Non è consigliabile impostare valori troppo alti per questa impostazione.
 
 .. rst-class:: classref-item-separator
 
@@ -2163,7 +2163,7 @@ Se ``true``, visualizza l'immagine specificata in :ref:`application/boot_splash/
 
 :ref:`int<class_int>` **application/boot_splash/stretch_mode** = ``1`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/stretch_mode>`
 
-Specifies how the splash image will be stretched. For the original size without stretching, set to disabled. See :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` constants for more information.
+Specifica come verrà stirata l'immagine di avvio. Per le dimensioni originali senza stiramento, imposta su disabilitato. Consulta le costanti di :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` per ulteriori informazioni.
 
 .. rst-class:: classref-item-separator
 
@@ -2227,7 +2227,7 @@ Descrizione del progetto, visualizzata come suggerimento nel Gestore dei progett
 
 :ref:`bool<class_bool>` **application/config/disable_project_settings_override** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/config/disable_project_settings_override>`
 
-If ``true``, disables loading of project settings overrides (file defined in :ref:`application/config/project_settings_override<class_ProjectSettings_property_application/config/project_settings_override>` and ``res://override.cfg``) and related CLI arguments.
+Se ``true``, impedisce di caricare le sovrascritture dalle impostazioni del progetto (i file definiti in :ref:`application/config/project_settings_override<class_ProjectSettings_property_application/config/project_settings_override>` e ``res://override.cfg``) e dai relativi argomenti della CLI.
 
 .. rst-class:: classref-item-separator
 
@@ -2793,9 +2793,9 @@ Imposta `AVAudioSessionCategory <https://developer.apple.com/documentation/avfau
 
 :ref:`bool<class_bool>` **audio/general/text_to_speech** = ``false`` :ref:`🔗<class_ProjectSettings_property_audio/general/text_to_speech>`
 
-If ``true``, text-to-speech support is enabled on startup, otherwise it is enabled the first time any TTS method is used. See also :ref:`DisplayServer.tts_get_voices()<class_DisplayServer_method_tts_get_voices>` and :ref:`DisplayServer.tts_speak()<class_DisplayServer_method_tts_speak>`.
+Se ``true``, il supporto per la sintesi vocale ("text-to-speech" o TTS) è abilitato all'avvio, altrimenti è abilitato la prima volta che un metodo per il TTS è utilizzato. Vedi anche :ref:`DisplayServer.tts_get_voices()<class_DisplayServer_method_tts_get_voices>` e :ref:`DisplayServer.tts_speak()<class_DisplayServer_method_tts_speak>`.
 
-\ **Note:** Enabling TTS can cause additional idle CPU usage and interfere with the sleep mode, so consider disabling it if TTS is not used.
+\ **Nota:** Abilitare il TTS può causare un ulteriore utilizzo della CPU in inattività, nonché interferire con la modalità di riposo, quindi si consiglia di disabilitarla se il TTS non è utilizzato.
 
 .. rst-class:: classref-item-separator
 
@@ -3065,13 +3065,13 @@ Se impostato su **Warn** o **error**, produce rispettivamente un avviso o un err
 
 :ref:`Dictionary<class_Dictionary>` **debug/gdscript/warnings/directory_rules** = ``{ "res://addons": 0 }`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/directory_rules>`
 
-The rules for including or excluding scripts when generating warnings, as a dictionary. Each rule is an entry consisting of a directory path (key) and a decision (value). When trying to generate a warning, the GDScript parser chooses the most specific rule, i.e. the most nested directory containing the script. If the decision is **Exclude**, warnings are not generated for this script. If the decision is **Include** or the script doesn't satisfy any of the rules, the warning configuration specified in the Project Settings is applied.
+Le regole per includere o escludere gli script durante la generazione degli avvisi, definite in un dizionario. Ogni regola è una voce composta da un percorso di cartella (chiave) e una decisione (valore). Tentando di generare un avviso, il parser di GDScript sceglie la regola più specifica, ovvero la cartella più annidata contenente lo script. Se la decisione è **Exclude**, non sono generati avvisi per quello script. Se la decisione è **Include** o lo script non soddisfa nessuna delle regole, è applicata la configurazione degli avvisi specificata nelle Impostazioni del progetto.
 
-It is recommended to include your own addons/libraries, either project-specific or actively being developed at the moment. Third-party or project-agnostic addons/libraries should be excluded, as they may be incompatible with the project's warning configuration.
+Si consiglia di includere i propri componenti aggiuntivi/librerie, che siano quelli specifici del progetto o quelli attualmente in fase di sviluppo. I componenti aggiuntivi/librerie di terze parti o indipendenti dal progetto dovrebbero essere esclusi, in quanto potrebbero essere incompatibili con la configurazione degli avvisi del progetto.
 
-\ **Note:** It is not recommended to remove or change the rule for ``"res://addons"`` as the project's warning configuration may break third-party addons. Instead, consider including individual addons, if necessary.
+\ **Nota:** Si sconsiglia di rimuovere o cambiare la regola per ``"res://addons"`` poiché la configurazione degli avvisi del progetto potrebbe compromettere i componenti aggiuntivi di terze parti. Alternativamente, si consiglia di includere i singoli componenti aggiuntivi, se necessario.
 
-\ **Note:** The editor does not check whether the specified paths are existing directories. It also does not automatically update these paths when directories are moved.
+\ **Nota:** L'editor non verifica se i percorsi specificati corrispondono a cartelle esistenti. Inoltre, non aggiorna automaticamente questi percorsi quando le cartelle vengono spostate.
 
 .. rst-class:: classref-item-separator
 
@@ -3155,9 +3155,9 @@ Se impostato su **Warn** o **Error**, produce rispettivamente un avviso o un err
 
 :ref:`int<class_int>` **debug/gdscript/warnings/inferred_declaration** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/inferred_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable, constant, or parameter has an implicitly inferred static type. In GDScript, type inference is performed by declaring a variable with ``:=`` instead of ``=`` and leaving out the type specifier. For example, ``var x := 1`` will *infer* the :ref:`int<class_int>` type, while ``var x: int = 1`` explicitly declares the variable as :ref:`int<class_int>`.
+Se impostato su ``warn`` o ``error``, produce rispettivamente un avviso o un errore quando una variabile, una costante o un parametro ha un tipo statico inferito implicitamente. In GDScript, per inferire il tipo si dichiara una variabile con ``:=`` anziché ``=`` e si omette lo specificatore del tipo. Ad esempio, ``var x := 1`` *inferirà* il tipo :ref:`int<class_int>`, mentre ``var x: int = 1`` dichiara esplicitamente la variabile come :ref:`int<class_int>`.
 
-\ **Note:** This warning is recommended *in addition* to :ref:`debug/gdscript/warnings/untyped_declaration<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>` if you want to always specify the type explicitly. Having ``INFERRED_DECLARATION`` warning level higher than ``UNTYPED_DECLARATION`` warning level makes little sense and is not recommended.
+\ **Nota:** Questo avviso è consigliato *in aggiunta* a :ref:`debug/gdscript/warnings/untyped_declaration<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>` se si desidera specificare sempre il tipo esplicitamente. Avere un livello di avviso per ``INFERRED_DECLARATION`` più alto del livello di avviso per ``UNTYPED_DECLARATION`` ha poco senso e non è consigliato.
 
 .. rst-class:: classref-item-separator
 
@@ -3851,7 +3851,7 @@ Quando impostato su ``true``, produce un avviso quando un varying non è mai uti
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/2d/agents_radius_color** = ``Color(1, 1, 0, 0.25)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/agents_radius_color>`
 
-Colore del raggio di evasione degli agenti, visibile quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Colore del raggio di evitamento degli agenti, visibile quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -3863,7 +3863,7 @@ Colore del raggio di evasione degli agenti, visibile quando l'opzione "Evasione 
 
 :ref:`bool<class_bool>` **debug/shapes/avoidance/2d/enable_agents_radius** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/enable_agents_radius>`
 
-Se abilitato, visualizza il raggio di evasione degli agenti quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Se abilitato, visualizza il raggio di evitamento degli agenti quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -3875,7 +3875,7 @@ Se abilitato, visualizza il raggio di evasione degli agenti quando l'opzione "Ev
 
 :ref:`bool<class_bool>` **debug/shapes/avoidance/2d/enable_obstacles_radius** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/enable_obstacles_radius>`
 
-Se abilitato, visualizza il raggio di evasione degli ostacoli quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Se abilitato, visualizza il raggio di evitamento degli ostacoli quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -3887,7 +3887,7 @@ Se abilitato, visualizza il raggio di evasione degli ostacoli quando l'opzione "
 
 :ref:`bool<class_bool>` **debug/shapes/avoidance/2d/enable_obstacles_static** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/enable_obstacles_static>`
 
-Se abilitato, visualizza il raggio di evasione degli ostacoli statici quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Se abilitato, visualizza il raggio di evitamento degli ostacoli statici quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -3899,7 +3899,7 @@ Se abilitato, visualizza il raggio di evasione degli ostacoli statici quando l'o
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/2d/obstacles_radius_color** = ``Color(1, 0.5, 0, 0.25)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/obstacles_radius_color>`
 
-Colore del raggio di evasione degli ostacoli, visibile quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Colore del raggio di evitamento degli ostacoli, visibile quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -3911,7 +3911,7 @@ Colore del raggio di evasione degli ostacoli, visibile quando l'opzione "Evasion
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/2d/obstacles_static_edge_pushin_color** = ``Color(1, 0, 0, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/obstacles_static_edge_pushin_color>`
 
-Colore dei bordi di evasione degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'interno, visibile quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Colore dei bordi di evitamento degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'interno, visibile quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -3923,7 +3923,7 @@ Colore dei bordi di evasione degli ostacoli statici quando i loro vertici sono a
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/2d/obstacles_static_edge_pushout_color** = ``Color(1, 1, 0, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/obstacles_static_edge_pushout_color>`
 
-Colore dei bordi di evasione degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'esterno, visibile quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Colore dei bordi di evitamento degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'esterno, visibile quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -3935,7 +3935,7 @@ Colore dei bordi di evasione degli ostacoli statici quando i loro vertici sono a
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/2d/obstacles_static_face_pushin_color** = ``Color(1, 0, 0, 0)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/obstacles_static_face_pushin_color>`
 
-Colore delle facce di evasione degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'interno, visibile quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Colore delle facce di evitamento degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'interno, visibile quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -3947,7 +3947,7 @@ Colore delle facce di evasione degli ostacoli statici quando i loro vertici sono
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/2d/obstacles_static_face_pushout_color** = ``Color(1, 1, 0, 0.5)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/2d/obstacles_static_face_pushout_color>`
 
-Colore delle facce di evasione degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'esterno, visibile quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Colore delle facce di evitamento degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'esterno, visibile quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -3959,7 +3959,7 @@ Colore delle facce di evasione degli ostacoli statici quando i loro vertici sono
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/3d/agents_radius_color** = ``Color(1, 1, 0, 0.25)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/agents_radius_color>`
 
-Colore del raggio di evasione degli agenti, visibile quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Colore del raggio di evitamento degli agenti, visibile quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -3971,7 +3971,7 @@ Colore del raggio di evasione degli agenti, visibile quando l'opzione "Evasione 
 
 :ref:`bool<class_bool>` **debug/shapes/avoidance/3d/enable_agents_radius** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/enable_agents_radius>`
 
-Se abilitato, visualizza il raggio di evasione degli agenti quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Se abilitato, visualizza il raggio di evitamento degli agenti quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -3983,7 +3983,7 @@ Se abilitato, visualizza il raggio di evasione degli agenti quando l'opzione "Ev
 
 :ref:`bool<class_bool>` **debug/shapes/avoidance/3d/enable_obstacles_radius** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/enable_obstacles_radius>`
 
-Se abilitato, visualizza il raggio di evasione degli ostacoli quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Se abilitato, visualizza il raggio di evitamento degli ostacoli quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -3995,7 +3995,7 @@ Se abilitato, visualizza il raggio di evasione degli ostacoli quando l'opzione "
 
 :ref:`bool<class_bool>` **debug/shapes/avoidance/3d/enable_obstacles_static** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/enable_obstacles_static>`
 
-Se abilitato, visualizza il raggio di evasione degli ostacoli statici quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Se abilitato, visualizza il raggio di evitamento degli ostacoli statici quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -4007,7 +4007,7 @@ Se abilitato, visualizza il raggio di evasione degli ostacoli statici quando l'o
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/3d/obstacles_radius_color** = ``Color(1, 0.5, 0, 0.25)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/obstacles_radius_color>`
 
-Colore del raggio di evasione degli ostacoli, visibile quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Colore del raggio di evitamento degli ostacoli, visibile quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -4019,7 +4019,7 @@ Colore del raggio di evasione degli ostacoli, visibile quando l'opzione "Evasion
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/3d/obstacles_static_edge_pushin_color** = ``Color(1, 0, 0, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/obstacles_static_edge_pushin_color>`
 
-Colore dei bordi di evasione degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'interno, visibile quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Colore dei bordi di evitamento degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'interno, visibile quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -4031,7 +4031,7 @@ Colore dei bordi di evasione degli ostacoli statici quando i loro vertici sono a
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/3d/obstacles_static_edge_pushout_color** = ``Color(1, 1, 0, 1)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/obstacles_static_edge_pushout_color>`
 
-Colore dei bordi di evasione degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'esterno, visibile quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Colore dei bordi di evitamento degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'esterno, visibile quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -4043,7 +4043,7 @@ Colore dei bordi di evasione degli ostacoli statici quando i loro vertici sono a
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/3d/obstacles_static_face_pushin_color** = ``Color(1, 0, 0, 0)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/obstacles_static_face_pushin_color>`
 
-Colore delle facce di evasione degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'interno, visibile quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Colore delle facce di evitamento degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'interno, visibile quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -4055,7 +4055,7 @@ Colore delle facce di evasione degli ostacoli statici quando i loro vertici sono
 
 :ref:`Color<class_Color>` **debug/shapes/avoidance/3d/obstacles_static_face_pushout_color** = ``Color(1, 1, 0, 0.5)`` :ref:`🔗<class_ProjectSettings_property_debug/shapes/avoidance/3d/obstacles_static_face_pushout_color>`
 
-Colore delle facce di evasione degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'esterno, visibile quando l'opzione "Evasione visibile" è abilitata nel menu Debug.
+Colore delle facce di evitamento degli ostacoli statici quando i loro vertici sono avvolti per spingere gli agenti verso l'esterno, visibile quando l'opzione "Evitamento visibile" è abilitata nel menu Debug.
 
 .. rst-class:: classref-item-separator
 
@@ -4821,7 +4821,7 @@ Forza la finestra principale a essere senza bordi.
 
 :ref:`bool<class_bool>` **display/window/size/extend_to_title** = ``false`` :ref:`🔗<class_ProjectSettings_property_display/window/size/extend_to_title>`
 
-Il contenuto della finestra principale viene espanso fino alle dimensioni intere della finestra. A differenza di una finestra senza bordi, la cornice è lasciata intatta e può essere utilizzata per ridimensionare la finestra, e la barra del titolo è trasparente, ma dispone di pulsanti di minimizzazione, massimizzazione e chiusura.
+Il contenuto della finestra principale è ampliato alle dimensioni complete della finestra. A differenza di una finestra senza bordi, la cornice è lasciata intatta e si può utilizzare per ridimensionare la finestra, e la barra del titolo è trasparente, ma contiene i pulsanti per minimizzare, massimizzare e chiudere.
 
 \ **Nota:** Questa impostazione è implementata solo su macOS.
 
@@ -5039,17 +5039,17 @@ Sulle piattaforme desktop, sovrascrive la larghezza iniziale della finestra del 
 
 :ref:`String<class_String>` **display/window/stretch/aspect** = ``"keep"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/aspect>`
 
-Defines how the aspect ratio of the base size is preserved when stretching to fit the resolution of the window or screen.
+Definisce come viene preservato il rapporto d'aspetto delle dimensioni base per adattarle alla risoluzione della finestra o dello schermo.
 
-\ ``"ignore"``: Ignore the aspect ratio when stretching the screen. This means that the original resolution will be stretched to exactly fill the screen, even if it's wider or narrower. This may result in non-uniform stretching: things looking wider or taller than designed.
+\ ``"ignore"``: ignora il rapporto d'aspetto per adattare lo schermo. Significa che la risoluzione originale verrà adattata per riempire esattamente lo schermo, anche se è più largo o più stretto. Potrebbe risultare in un'adattamento non uniforme: gli elementi appariranno più larghi o più alti di quanto previsto.
 
-\ ``"keep"``: Keep aspect ratio when stretching the screen. This means that the viewport retains its original size regardless of the screen resolution, and black bars will be added to the top/bottom of the screen ("letterboxing") or the sides ("pillarboxing").
+\ ``"keep"``: mantiene il rapporto d'aspetto per adattare lo schermo. Significa che la viewport mantiene le sue dimensioni originali a prescindere dalla risoluzione dello schermo e saranno aggiunte barre nere in alto/basso lo schermo ("letterboxing") o ai lati ("pillarboxing").
 
-\ ``"keep_width"``: Keep aspect ratio when stretching the screen. If the screen is wider than the base size, black bars are added at the left and right (pillarboxing). But if the screen is taller than the base resolution, the viewport will be grown in the vertical direction (and more content will be visible at the bottom). You can also think of this as "Expand Vertically".
+\ ``"keep_width"``: mantiene il rapporto d'aspetto per adattare lo schermo. Se lo schermo è più largo delle dimensioni base, sono aggiunte barre nere a sinistra e a destra (pillarboxing). Se invece lo schermo è più alto della risoluzione base, la viewport sarà ingrandita in verticale (e sarà visibile più contenuto in basso). Puoi anche pensare a questa opzione come "Espandi verticalmente".
 
-\ ``"keep_height"``: Keep aspect ratio when stretching the screen. If the screen is taller than the base size, black bars are added at the top and bottom (letterboxing). But if the screen is wider than the base resolution, the viewport will be grown in the horizontal direction (and more content will be visible to the right). You can also think of this as "Expand Horizontally".
+\ ``"keep_height"``: mantiene il rapporto d'aspetto per adattare lo schermo. Se lo schermo è più alto delle dimensioni base, sono aggiunte barre nere in alto e in basso (letterboxing). Se invece lo schermo è più largo della risoluzione base, la viewport sarà ingrandita in orizzontale (e più contenuto sarà visibile a destra). Puoi anche pensare a questa opzione come "Espandi orizzontalmente".
 
-\ ``"expand"``: Keep aspect ratio when stretching the screen, but keep neither the base width nor height. Depending on the screen aspect ratio, the viewport will either be larger in the horizontal direction (if the screen is wider than the base size) or in the vertical direction (if the screen is taller than the original size). This is the default for projects created starting in Godot 4.7.
+\ ``"expand"``: mantiene le proporzioni per adattare lo schermo, ma non mantiene né la larghezza né l'altezza base. A seconda del rapporto d'aspetto dello schermo, la viewport sarà più grande in orizzontale (se lo schermo è più largo della dimensione base) o in verticale (se lo schermo è più alto della dimensione originale). Questa è l'impostazione predefinita per i progetti creati a partire da Godot 4.7.
 
 .. rst-class:: classref-item-separator
 
@@ -5109,11 +5109,11 @@ Il criterio da utilizzare per determinare il fattore di scala finale per gli ele
 
 :ref:`bool<class_bool>` **display/window/subwindows/embed_subwindows** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>`
 
-If ``true``, subwindows are embedded in the main window (this is also called single-window mode). Single-window mode can be faster as it does not need to create a separate window for every popup and tooltip, which can be a slow operation depending on the operating system and rendering method in use.
+Se ``true``, le sottofinestre sono incorporate nella finestra principale (questo è anche detto modalità a finestra singola). La modalità a finestra singola può essere più veloce in quanto non ha bisogno di creare una finestra separata per ogni popup e tooltip, il che può essere un'operazione lenta a seconda del sistema operativo e del metodo di rendering in uso.
 
-If ``false``, subwindows are created as separate windows (this is also called multi-window mode). This allows them to be moved outside the main window and use native operating system window decorations.
+Se ``false``, le sottofinestre sono create come finestre separate (questo è anche detto modalità multi-finestra). Ciò rende possibile spostarle fuori dalla finestra principale e utilizzare le decorazioni delle finestre native del sistema operativo.
 
-This is equivalent to :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` in the editor.
+Ciò equivale a :ref:`EditorSettings.interface/editor/display/single_window_mode<class_EditorSettings_property_interface/editor/display/single_window_mode>` nell'editor.
 
 .. rst-class:: classref-item-separator
 
@@ -5125,17 +5125,17 @@ This is equivalent to :ref:`EditorSettings.interface/editor/display/single_windo
 
 :ref:`int<class_int>` **display/window/vsync/vsync_mode** = ``1`` :ref:`🔗<class_ProjectSettings_property_display/window/vsync/vsync_mode>`
 
-Sets the V-Sync mode for the main game window. The editor's own V-Sync mode can be set using :ref:`EditorSettings.interface/editor/display/vsync_mode<class_EditorSettings_property_interface/editor/display/vsync_mode>`.
+Imposta la modalità di V-Sync per la finestra principale del gioco. La modalità di V-Sync dell'editor può essere impostata tramite :ref:`EditorSettings.interface/editor/display/vsync_mode<class_EditorSettings_property_interface/editor/display/vsync_mode>`.
 
-See :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` for possible values and how they affect the behavior of your application.
+Consulta :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` per i valori possibili e per sapere come influenzano il comportamento della tua applicazione.
 
-Depending on the platform and rendering method, the engine will fall back to **Enabled** if the desired mode is not supported.
+A seconda della piattaforma e del metodo di rendering, il motore tornerà a **Enabled** se la modalità desiderata non è supportata.
 
-V-Sync can be disabled on the command line using the ``--disable-vsync`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`.
+Il V-Sync può essere disabilitato sulla riga di comando tramite l':doc:`argomento della riga di comando <../tutorials/editor/command_line_tutorial>` ``--disable-vsync``.
 
-\ **Note:** The **Adaptive** and **Mailbox** V-Sync modes are only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Nota:** Le modalità di V-Sync **Adaptive** e **Mailbox** sono supportate solo nei metodi di rendering Forward+ e Mobile, non Compatibilità.
 
-\ **Note:** This property is only read when the project starts. To change the V-Sync mode at runtime, call :ref:`DisplayServer.window_set_vsync_mode()<class_DisplayServer_method_window_set_vsync_mode>` instead.
+\ **Nota:** Questa proprietà viene letta solo all'avvio del progetto. Per modificare la modalità di V-Sync in fase di esecuzione, chiama invece :ref:`DisplayServer.window_set_vsync_mode()<class_DisplayServer_method_window_set_vsync_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5159,7 +5159,7 @@ Nome dell'assembly .NET. Questo nome è utilizzato come nome dei file ``.csproj`
 
 :ref:`int<class_int>` **dotnet/project/assembly_reload_attempts** = ``3`` :ref:`🔗<class_ProjectSettings_property_dotnet/project/assembly_reload_attempts>`
 
-Numero di tentativi di ricaricamento dell'assembly dopo aver ricostruito gli assembly .NET. In pratica è anche il timeout in secondi per attendere il termine dello scaricamento degli assembly di script.
+Numero di tentativi di ricaricamento dell'assembly dopo aver ricompilato gli assembly .NET. In pratica è anche il timeout in secondi per attendere il termine dello scaricamento degli assembly di script.
 
 .. rst-class:: classref-item-separator
 
@@ -5239,7 +5239,7 @@ Se ``true`` l'importazione di risorse viene eseguita su più di un thread.
 
 :ref:`int<class_int>` **editor/movie_writer/audio_bit_depth** = ``16`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/audio_bit_depth>`
 
-Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit are supported.
+Numero di bit per campione audio scritti nel file ``.avi``. Sono supportati solo i formati a 16 e 32 bit.
 
 .. rst-class:: classref-item-separator
 
@@ -5611,7 +5611,7 @@ Valore predefinito per :ref:`ScrollContainer.scroll_deadzone<class_ScrollContain
 
 :ref:`int<class_int>` **gui/common/drag_threshold** = ``10`` :ref:`🔗<class_ProjectSettings_property_gui/common/drag_threshold>`
 
-The minimum distance the mouse cursor must move while pressed before a drag operation begins in the default viewport. For custom viewports see :ref:`Viewport.gui_drag_threshold<class_Viewport_property_gui_drag_threshold>`.
+La distanza minima che il cursore del mouse deve percorrere mentre è premuto prima che avvii un'operazione di trascinamento nella viewport predefinita. Per le viewport personalizzate vedi :ref:`Viewport.gui_drag_threshold<class_Viewport_property_gui_drag_threshold>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5623,13 +5623,13 @@ The minimum distance the mouse cursor must move while pressed before a drag oper
 
 :ref:`int<class_int>` **gui/common/show_focus_state_on_pointer_event** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>`
 
-Determines whether a :ref:`Control<class_Control>` should visually indicate focus when that focus is gained using a mouse or touch input.
+Determina se un :ref:`Control<class_Control>` debba indicare visivamente lo stato focalizzato quando il focus viene acquisito tramite gli input del mouse o touch.
 
-- **Never** (``0``) show the focused state for mouse/touch input.
+- **Never** (``0``): non mostrare mai lo stato focalizzato per gli input del mouse/touch.
 
-- **Text Input Controls** (``1``) show the focused state even if that focus was gained via mouse/touch input (similar to browser behavior).
+- **Text Input Controls** (``1``): i controlli di input di testo mostrano lo stato focalizzato anche se è stato acquisito tramite un input del mouse/touch (simile al comportamento di un browser).
 
-- **Always** (``2``) show the focused state, even if that focus was gained via mouse/touch input.
+- **Always** (``2``): mostra sempre lo stato focalizzato, anche se questo è stato acquisito tramite un input del mouse/touch.
 
 .. rst-class:: classref-item-separator
 
@@ -5783,7 +5783,7 @@ Il rendering di font MSDF può essere combinato con :ref:`gui/theme/default_font
 
 :ref:`int<class_int>` **gui/theme/default_font_subpixel_positioning** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_font_subpixel_positioning>`
 
-Modalità di posizionamento dei glifi in mezzo ai pixel per il font predefinito del progetto. Vedere :ref:`FontFile.subpixel_positioning<class_FontFile_property_subpixel_positioning>`.
+Modalità di posizionamento dei glifi in mezzo ai pixel per il font predefinito del progetto. Vedi :ref:`FontFile.subpixel_positioning<class_FontFile_property_subpixel_positioning>`.
 
 \ **Nota:** Questa impostazione non influisce sui :ref:`Font<class_Font>` personalizzati utilizzati nel progetto. Usa invece il pannello **Importazione** per questo (vedi :ref:`ResourceImporterDynamicFont.subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>`).
 
@@ -5797,9 +5797,9 @@ Modalità di posizionamento dei glifi in mezzo ai pixel per il font predefinito 
 
 :ref:`float<class_float>` **gui/theme/default_theme_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_theme_scale>`
 
-The default scale factor for :ref:`Control<class_Control>`\ s, when not overridden by a :ref:`Theme<class_Theme>`.
+Il fattore di scala predefinito per i :ref:`Control<class_Control>`, quando non sovrascritto da un :ref:`Theme<class_Theme>`.
 
-\ **Note:** This property is only read when the project starts. To change the default theme scale at runtime, set :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>` instead. However, to adjust the scale of all 2D elements at runtime, it's preferable to use :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` on the root :ref:`Window<class_Window>` node instead (as this also affects overridden :ref:`Theme<class_Theme>`\ s). See :doc:`Multiple resolutions <../tutorials/rendering/multiple_resolutions>` in the documentation for details.
+\ **Nota:** Questa proprietà viene letta solo all'avvio del progetto. Per modificare la scala predefinita del tema in fase di esecuzione, imposta invece :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>`. Tuttavia, per regolare la scala di tutti gli elementi 2D in fase di esecuzione, è preferibile usare :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` sul nodo :ref:`Window<class_Window>` radice (poiché influisce anche sui :ref:`Theme<class_Theme>` sovrascritti). Consulta :doc:`Risoluzioni multiple <../tutorials/rendering/multiple_resolutions>` nella documentazione per ulteriori dettagli.
 
 .. rst-class:: classref-item-separator
 
@@ -5925,9 +5925,9 @@ L':ref:`InputEventAction<class_InputEventAction>` predefinito per scartare un in
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_close_dialog** :ref:`🔗<class_ProjectSettings_property_input/ui_close_dialog>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to close a dialog window.
+L':ref:`InputEventAction<class_InputEventAction>` predefinito per chiudere una finestra di dialogo.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Le azioni predefinite ``ui_*`` non possono essere rimosse in quanto sono necessarie per la logica interna di diversi :ref:`Control<class_Control>`. Gli eventi assegnati all'azione possono tuttavia essere modificati.
 
 .. rst-class:: classref-item-separator
 
@@ -5939,7 +5939,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to close a dialog window
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_close_dialog.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_close_dialog.macos>`
 
-macOS specific override for the shortcut to close a dialog window.
+Sostituzione specifica su macOS per la scorciatoia per chiudere una finestra di dialogo.
 
 .. rst-class:: classref-item-separator
 
@@ -5951,7 +5951,7 @@ macOS specific override for the shortcut to close a dialog window.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_colorpicker_delete_preset** :ref:`🔗<class_ProjectSettings_property_input/ui_colorpicker_delete_preset>`
 
-L':ref:`InputEventAction<class_InputEventAction>` predefinito per eliminare una preimpostazione di colore in un :ref:`ColorPicker<class_ColorPicker>`.
+L':ref:`InputEventAction<class_InputEventAction>` predefinito per eliminare un preset di colori in un :ref:`ColorPicker<class_ColorPicker>`.
 
 \ **Nota:** Le azioni predefinite ``ui_*`` non possono essere rimosse in quanto sono necessarie per la logica interna di diversi :ref:`Control<class_Control>`. Gli eventi assegnati all'azione possono tuttavia essere modificati.
 
@@ -6021,9 +6021,9 @@ L':ref:`InputEventAction<class_InputEventAction>` predefinito per andare alla po
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_delete** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_delete>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete the selected file in a :ref:`FileDialog<class_FileDialog>`.
+L':ref:`InputEventAction<class_InputEventAction>` predefinito per eliminare il file selezionato in un :ref:`FileDialog<class_FileDialog>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Le azioni predefinite ``ui_*`` non possono essere rimosse in quanto sono necessarie per la logica interna di diversi :ref:`Control<class_Control>`. Gli eventi assegnati all'azione possono tuttavia essere modificati.
 
 .. rst-class:: classref-item-separator
 
@@ -6035,9 +6035,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete the selected f
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_find** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_find>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to open file filter in a :ref:`FileDialog<class_FileDialog>`.
+L':ref:`InputEventAction<class_InputEventAction>` predefinito per aprire il filtro dei file in un :ref:`FileDialog<class_FileDialog>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Le azioni predefinite ``ui_*`` non possono essere rimosse in quanto sono necessarie per la logica interna di diversi :ref:`Control<class_Control>`. Gli eventi assegnati all'azione possono tuttavia essere modificati.
 
 .. rst-class:: classref-item-separator
 
@@ -6049,9 +6049,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to open file filter in a
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_focus_path** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_focus_path>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to focus path edit field in a :ref:`FileDialog<class_FileDialog>`.
+L':ref:`InputEventAction<class_InputEventAction>` predefinito per focalizzare il campo per modificare il percorso in un :ref:`FileDialog<class_FileDialog>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Le azioni predefinite ``ui_*`` non possono essere rimosse in quanto sono necessarie per la logica interna di diversi :ref:`Control<class_Control>`. Gli eventi assegnati all'azione possono tuttavia essere modificati.
 
 .. rst-class:: classref-item-separator
 
@@ -6063,7 +6063,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to focus path edit field
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_focus_path.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_focus_path.macos>`
 
-macOS specific override for the shortcut to focus path edit field in :ref:`FileDialog<class_FileDialog>`.
+Sostituzione specifica su macOS per la scorciatoia per focalizzare il campo per modificare il percorso in un :ref:`FileDialog<class_FileDialog>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7159,7 +7159,7 @@ Se ``false``, nessun input sarà perso.
 
 :ref:`bool<class_bool>` **input_devices/joypads/ignore_joypad_on_unfocused_application** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/joypads/ignore_joypad_on_unfocused_application>`
 
-If ``true``, joypad input (including motion sensors) and LED light changes will be ignored and joypad vibration will be stopped when the application is not focused.
+Se ``true``, gli input dal joypad (inclusi i sensori di movimento) e le modifiche alla luce LED saranno ignorati e la vibrazione del joypad verrà interrotta quando l'applicazione non è focalizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -7379,7 +7379,7 @@ Rigidità predefinita delle regole di interruzione di riga. La si può sovrascri
 
 - **Strict** (``3``) - l'insieme di regole di interruzione di riga più restrittivo.
 
-Per ulteriori informazioni, consultare `Line Breaking Strictness: the line-break property <https://www.w3.org/TR/css-text-3/#line-break-property>`__.
+Per ulteriori informazioni, consulta `Line Breaking Strictness: the line-break property <https://www.w3.org/TR/css-text-3/#line-break-property>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -9587,7 +9587,7 @@ Il nome facoltativo per lo strato di rendering 3D numero 20. Se lasciato vuoto, 
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_1** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_1>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 1. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 1".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 1. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 1".
 
 .. rst-class:: classref-item-separator
 
@@ -9599,7 +9599,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 1. Se las
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_2** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_2>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 2. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 2".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 2. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 2".
 
 .. rst-class:: classref-item-separator
 
@@ -9611,7 +9611,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 2. Se las
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_3** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_3>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 3. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 3".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 3. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 3".
 
 .. rst-class:: classref-item-separator
 
@@ -9623,7 +9623,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 3. Se las
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_4** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_4>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 4. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 4".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 4. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 4".
 
 .. rst-class:: classref-item-separator
 
@@ -9635,7 +9635,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 4. Se las
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_5** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_5>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 5. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 5".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 5. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 5".
 
 .. rst-class:: classref-item-separator
 
@@ -9647,7 +9647,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 5. Se las
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_6** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_6>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 6. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 6".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 6. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 6".
 
 .. rst-class:: classref-item-separator
 
@@ -9659,7 +9659,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 6. Se las
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_7** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_7>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 7. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 7".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 7. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 7".
 
 .. rst-class:: classref-item-separator
 
@@ -9671,7 +9671,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 7. Se las
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_8** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_8>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 8. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 8".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 8. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 8".
 
 .. rst-class:: classref-item-separator
 
@@ -9683,7 +9683,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 8. Se las
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_9** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_9>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 9. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 9".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 9. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 9".
 
 .. rst-class:: classref-item-separator
 
@@ -9695,7 +9695,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 9. Se las
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_10** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_10>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 10. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 10".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 10. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 10".
 
 .. rst-class:: classref-item-separator
 
@@ -9707,7 +9707,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 10. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_11** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_11>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 11. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 11".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 11. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 11".
 
 .. rst-class:: classref-item-separator
 
@@ -9719,7 +9719,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 11. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_12** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_12>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 12. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 12".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 12. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 12".
 
 .. rst-class:: classref-item-separator
 
@@ -9731,7 +9731,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 12. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_13** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_13>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 13. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 13".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 13. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 13".
 
 .. rst-class:: classref-item-separator
 
@@ -9743,7 +9743,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 13. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_14** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_14>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 14. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 14".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 14. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 14".
 
 .. rst-class:: classref-item-separator
 
@@ -9755,7 +9755,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 14. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_15** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_15>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 15. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 15".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 15. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 15".
 
 .. rst-class:: classref-item-separator
 
@@ -9767,7 +9767,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 15. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_16** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_16>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 16. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 16".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 16. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 16".
 
 .. rst-class:: classref-item-separator
 
@@ -9779,7 +9779,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 16. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_17** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_17>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 17. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 17".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 17. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 17".
 
 .. rst-class:: classref-item-separator
 
@@ -9791,7 +9791,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 17. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_18** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_18>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 18. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 18".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 18. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 18".
 
 .. rst-class:: classref-item-separator
 
@@ -9803,7 +9803,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 18. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_19** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_19>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 19. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 19".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 19. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 19".
 
 .. rst-class:: classref-item-separator
 
@@ -9815,7 +9815,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 19. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_20** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_20>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 20. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 20".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 20. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 20".
 
 .. rst-class:: classref-item-separator
 
@@ -9827,7 +9827,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 20. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_21** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_21>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 21. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 21".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 21. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 21".
 
 .. rst-class:: classref-item-separator
 
@@ -9839,7 +9839,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 21. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_22** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_22>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 22. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 22".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 22. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 22".
 
 .. rst-class:: classref-item-separator
 
@@ -9851,7 +9851,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 22. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_23** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_23>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 23. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 23".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 23. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 23".
 
 .. rst-class:: classref-item-separator
 
@@ -9863,7 +9863,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 23. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_24** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_24>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 24. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 24".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 24. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 24".
 
 .. rst-class:: classref-item-separator
 
@@ -9875,7 +9875,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 24. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_25** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_25>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 25. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 25".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 25. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 25".
 
 .. rst-class:: classref-item-separator
 
@@ -9887,7 +9887,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 25. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_26** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_26>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 26. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 26".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 26. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 26".
 
 .. rst-class:: classref-item-separator
 
@@ -9899,7 +9899,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 26. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_27** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_27>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 27. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 27".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 27. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 27".
 
 .. rst-class:: classref-item-separator
 
@@ -9911,7 +9911,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 27. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_28** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_28>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 28. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 28".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 28. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 28".
 
 .. rst-class:: classref-item-separator
 
@@ -9923,7 +9923,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 28. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_29** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_29>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 29. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 29".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 29. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 29".
 
 .. rst-class:: classref-item-separator
 
@@ -9935,7 +9935,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 29. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_30** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_30>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 30. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 30".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 30. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 30".
 
 .. rst-class:: classref-item-separator
 
@@ -9947,7 +9947,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 30. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_31** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_31>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 31. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 31".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 31. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 31".
 
 .. rst-class:: classref-item-separator
 
@@ -9959,7 +9959,7 @@ Il nome facoltativo per lo strato di evasione di navigazione 3D numero 31. Se la
 
 :ref:`String<class_String>` **layer_names/avoidance/layer_32** = ``""`` :ref:`🔗<class_ProjectSettings_property_layer_names/avoidance/layer_32>`
 
-Il nome facoltativo per lo strato di evasione di navigazione 3D numero 32. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 32".
+Il nome facoltativo per lo strato di evitamento di navigazione 3D numero 32. Se lasciato vuoto, lo strato sarà visualizzato come "Strato 32".
 
 .. rst-class:: classref-item-separator
 
@@ -10031,15 +10031,15 @@ La scala predefinita del rasterizzatore di unione celle per le mappe di navigazi
 
 :ref:`String<class_String>` **navigation/2d/navigation_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/navigation_engine>`
 
-Sets which navigation engine to use for 2D navigation.
+Imposta quale motore di navigazione usare per la navigazione 2D.
 
-\ **DEFAULT** is equivalent to **GodotNavigation2D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** è equivalente a **GodotNavigation2D**, ma potrebbe cambiare nelle versioni future. Seleziona un'implementazione esplicita se vuoi assicurarti che il tuo progetto rimanga sullo stesso motore.
 
-\ **GodotNavigation2D** is Godot's internal 2D navigation engine.
+\ **GodotNavigation2D** è il motore di navigazione 2D interno di Godot.
 
-\ **Dummy** is a 2D navigation server that does nothing and returns only dummy values, effectively disabling all 2D navigation functionality.
+\ **Dummy** è un server di navigazione 2D che non fa nulla e restituisce solo valori fittizi, disabilitando di fatto tutte le funzionalità di navigazione 2D.
 
-Third-party modules can add other navigation engines to select with this setting.
+Le estensioni e i moduli di terze parti possono aggiungere altri motori di navigazione da selezionare con questa impostazione.
 
 .. rst-class:: classref-item-separator
 
@@ -10063,7 +10063,7 @@ Se abilitata, le regioni di navigazione 2D utilizzeranno connessioni ai bordi pe
 
 :ref:`bool<class_bool>` **navigation/2d/warnings/navmesh_cell_size_mismatch** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/warnings/navmesh_cell_size_mismatch>`
 
-If ``true``, the navigation system will print warnings when a navigation mesh with a small cell size is used on a navigation map with a larger size as this commonly causes rasterization errors.
+Se ``true``, il sistema di navigazione stamperà avvisi quando si utilizza una mesh di navigazione con una piccola dimensione delle celle su una mappa di navigazione di dimensioni più grandi, poiché ciò causa comunemente errori di rasterizzazione.
 
 .. rst-class:: classref-item-separator
 
@@ -10075,7 +10075,7 @@ If ``true``, the navigation system will print warnings when a navigation mesh wi
 
 :ref:`bool<class_bool>` **navigation/2d/warnings/navmesh_edge_merge_errors** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/warnings/navmesh_edge_merge_errors>`
 
-If ``true``, the navigation system will print warnings about navigation mesh edge merge errors occurring in navigation regions or maps.
+Se ``true``, il sistema di navigazione stamperà avvisi riguardo gli errori di unione dei bordi nelle mesh di navigazione che avvengono nelle regioni o nelle mappe di navigazione.
 
 .. rst-class:: classref-item-separator
 
@@ -10159,15 +10159,15 @@ La scala predefinita del rasterizzatore di unione celle per le mappe di navigazi
 
 :ref:`String<class_String>` **navigation/3d/navigation_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/navigation_engine>`
 
-Sets which navigation engine to use for 3D navigation.
+Imposta quale motore di navigazione usare per la navigazione 3D.
 
-\ **DEFAULT** is equivalent to **GodotNavigation3D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** è equivalente a **GodotNavigation3D**, ma potrebbe cambiare nelle versioni future. Seleziona un'implementazione esplicita se vuoi assicurarti che il tuo progetto rimanga sullo stesso motore.
 
-\ **GodotNavigation3D** is Godot's internal 3D navigation engine.
+\ **GodotNavigation3D** è il motore di navigazione 3D interno di Godot.
 
-\ **Dummy** is a 3D navigation server that does nothing and returns only dummy values, effectively disabling all 3D navigation functionality.
+\ **Dummy** è un server di navigazione 3D che non fa nulla e restituisce solo valori fittizi, disabilitando di fatto tutte le funzionalità di navigazione 3D.
 
-Third-party modules can add other navigation engines to select with this setting.
+Le estensioni e i moduli di terze parti possono aggiungere altri motori di navigazione da selezionare con questa impostazione.
 
 .. rst-class:: classref-item-separator
 
@@ -10191,7 +10191,7 @@ Se abilitata, le regioni di navigazione 3D utilizzeranno connessioni ai bordi pe
 
 :ref:`bool<class_bool>` **navigation/3d/warnings/navmesh_cell_size_mismatch** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/warnings/navmesh_cell_size_mismatch>`
 
-If ``true``, the navigation system will print warnings when a navigation mesh with a small cell size (or in 3D height) is used on a navigation map with a larger size as this commonly causes rasterization errors.
+Se ``true``, il sistema di navigazione stamperà avvisi quando si utilizza una mesh di navigazione con una piccola dimensione delle celle (o in altezza 3D) su una mappa di navigazione di dimensioni più grandi, poiché ciò causa comunemente errori di rasterizzazione.
 
 .. rst-class:: classref-item-separator
 
@@ -10203,7 +10203,7 @@ If ``true``, the navigation system will print warnings when a navigation mesh wi
 
 :ref:`bool<class_bool>` **navigation/3d/warnings/navmesh_edge_merge_errors** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/warnings/navmesh_edge_merge_errors>`
 
-If ``true``, the navigation system will print warnings about navigation mesh edge merge errors occurring in navigation regions or maps.
+Se ``true``, il sistema di navigazione stamperà avvisi riguardo gli errori di unione dei bordi nelle mesh di navigazione che avvengono nelle regioni o nelle mappe di navigazione.
 
 .. rst-class:: classref-item-separator
 
@@ -10215,7 +10215,7 @@ If ``true``, the navigation system will print warnings about navigation mesh edg
 
 :ref:`bool<class_bool>` **navigation/avoidance/thread_model/avoidance_use_high_priority_threads** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/avoidance/thread_model/avoidance_use_high_priority_threads>`
 
-Se abilitato e i calcoli di evasione utilizzano più di un thread, i thread sono eseguiti con priorità alta.
+Se abilitato e i calcoli di evitamento utilizzano più di un thread, i thread sono eseguiti con priorità alta.
 
 .. rst-class:: classref-item-separator
 
@@ -10227,7 +10227,7 @@ Se abilitato e i calcoli di evasione utilizzano più di un thread, i thread sono
 
 :ref:`bool<class_bool>` **navigation/avoidance/thread_model/avoidance_use_multiple_threads** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/avoidance/thread_model/avoidance_use_multiple_threads>`
 
-Se abilitati, i calcoli di evasione utilizzano più di un thread.
+Se abilitati, i calcoli di evitamento utilizzano più di un thread.
 
 .. rst-class:: classref-item-separator
 
@@ -10383,7 +10383,7 @@ Il tempo di attesa (in secondi) per i tentativi di connessione tramite TCP.
 
 :ref:`int<class_int>` **network/limits/unix/connect_timeout_seconds** = ``30`` :ref:`🔗<class_ProjectSettings_property_network/limits/unix/connect_timeout_seconds>`
 
-Timeout (in seconds) for connection attempts using UNIX domain socket.
+Il tempo di attesa (in secondi) per i tentativi di connessione tramite socket di dominio UNIX.
 
 .. rst-class:: classref-item-separator
 
@@ -10407,9 +10407,9 @@ La dimensione massima (in kiB) per il buffer di input di :ref:`WebRTCDataChannel
 
 :ref:`String<class_String>` **network/tls/certificate_bundle_override** = ``""`` :ref:`🔗<class_ProjectSettings_property_network/tls/certificate_bundle_override>`
 
-The CA certificates bundle to use for TLS connections. If this is set to a non-empty value, this will *override* Godot's default `Mozilla certificate bundle <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__. If left empty, the default certificate bundle will be used.
+Il pacchetto di certificati CA da utilizzare per le connessioni TLS. Se impostato su un valore non vuoto, *sovrascriverà* il `pacchetto di certificati Mozilla <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-certificates.crt>`__ predefinito di Godot. Se lasciato vuoto, sarà utilizzato il pacchetto di certificati predefinito.
 
-If in doubt, leave this setting empty.
+In caso di dubbi, lascia questa impostazione vuota.
 
 .. rst-class:: classref-item-separator
 
@@ -10435,9 +10435,9 @@ Se ``true``, abilita la negoziazione TLSv1.3.
 
 :ref:`float<class_float>` **physics/2d/default_angular_damp** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/default_angular_damp>`
 
-Lo smorzamento del movimento rotatorio predefinito in 2D. Lo smorzamento è utilizzato per rallentare gradualmente gli oggetti fisici nel tempo. I RigidBody torneranno a questo valore quando combinano i propri valori di smorzamento e non è presente alcun valore di smorzamento da un'area.
+Lo smorzamento del movimento rotatorio predefinito in 2D. Lo smorzamento serve per rallentare gradualmente gli oggetti fisici nel tempo. I RigidBody torneranno a questo valore quando combinano i propri valori di smorzamento e non è presente alcun valore di smorzamento da un'area.
 
-I valori suggeriti sono compresi tra ``0`` e ``30``. Al valore ``0`` gli oggetti continueranno a muoversi con la stessa velocità. Valori maggiori fermeranno l'oggetto più velocemente. Un valore uguale o maggiore della frequenza di tick di fisica (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) arresterà l'oggetto in una sola iterazione.
+I valori suggeriti sono compresi tra ``0`` e ``30``. Al valore ``0`` gli oggetti continueranno a muoversi con la stessa velocità. Valori maggiori fermeranno l'oggetto più velocemente. Un valore uguale o maggiore della frequenza di tick di fisica (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) fermerà l'oggetto in una sola iterazione.
 
 \ **Nota:** I calcoli dello smorzamento di Godot dipendono dalla velocità, il che significa che i corpi che si muovono più velocemente impiegheranno più tempo per fermarsi. Non simulano l'inerzia, l'attrito o la resistenza dell'aria. Pertanto, i corpi più pesanti o più grandi perderanno velocità alla stessa frequenza proporzionale dei corpi più leggeri o più piccoli.
 
@@ -10513,9 +10513,9 @@ La direzione predefinita della gravità in 2D.
 
 :ref:`float<class_float>` **physics/2d/default_linear_damp** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/2d/default_linear_damp>`
 
-Lo smorzamento del movimento lineare predefinito in 2D. Lo smorzamento è utilizzato per rallentare gradualmente gli oggetti fisici nel tempo. I RigidBody torneranno a questo valore quando combinano i propri valori di smorzamento e non è presente alcun valore di smorzamento da un'area.
+Lo smorzamento del movimento lineare predefinito in 2D. Lo smorzamento serve per rallentare gradualmente gli oggetti fisici nel tempo. I RigidBody torneranno a questo valore quando combinano i propri valori di smorzamento e non è presente alcun valore di smorzamento da un'area.
 
-I valori suggeriti sono compresi tra ``0`` e ``30``. Al valore ``0`` gli oggetti continueranno a muoversi con la stessa velocità. Valori maggiori fermeranno l'oggetto più velocemente. Un valore uguale o maggiore della frequenza di tick di fisica (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) arresterà l'oggetto in una sola iterazione.
+I valori suggeriti sono compresi tra ``0`` e ``30``. Al valore ``0`` gli oggetti continueranno a muoversi con la stessa velocità. Valori maggiori fermeranno l'oggetto più velocemente. Un valore uguale o maggiore della frequenza di tick di fisica (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) fermerà l'oggetto in una sola iterazione.
 
 \ **Nota:** I calcoli dello smorzamento di Godot dipendono dalla velocità, il che significa che i corpi che si muovono più velocemente impiegheranno più tempo per fermarsi. Non simulano l'inerzia, l'attrito o la resistenza dell'aria. Pertanto, i corpi più pesanti o più grandi perderanno velocità alla stessa frequenza proporzionale dei corpi più leggeri o più piccoli.
 
@@ -10537,7 +10537,7 @@ Imposta quale motore fisico usare per la fisica 2D.
 
 \ **DEFAULT** è attualmente equivalente a **GodotPhysics2D**, ma potrebbe cambiare nelle versioni future. Seleziona un'implementazione esplicita se vuoi assicurarti che il tuo progetto rimanga sullo stesso motore.
 
-\ **GodotPhysics2D** è il motore di fisica 2D interno di Godot.
+\ **GodotPhysics2D** è il motore fisico 2D interno di Godot.
 
 \ **Dummy** è un server di fisica 2D che non fa nulla e restituisce solo valori fittizi, disabilitando di fatto tutte le funzionalità di fisica 2D.
 
@@ -10565,7 +10565,7 @@ Se ``true``, il server di fisica 2D è eseguito su un thread separato, sfruttand
 
 :ref:`float<class_float>` **physics/2d/sleep_threshold_angular** = ``0.13962634`` :ref:`🔗<class_ProjectSettings_property_physics/2d/sleep_threshold_angular>`
 
-La velocità angolare di soglia al di sotto della quale un corpo fisico 2D sarà considerato inattivo. Vedi :ref:`PhysicsServer2D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
+La velocità angolare di soglia sotto la quale un corpo fisico 2D sarà considerato inattivo. Vedi :ref:`PhysicsServer2D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10577,7 +10577,7 @@ La velocità angolare di soglia al di sotto della quale un corpo fisico 2D sarà
 
 :ref:`float<class_float>` **physics/2d/sleep_threshold_linear** = ``2.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/sleep_threshold_linear>`
 
-La velocità lineare di soglia al di sotto della quale un corpo fisico 2D sarà considerato inattivo. Vedi :ref:`PhysicsServer2D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
+La velocità lineare di soglia sotto la quale un corpo fisico 2D sarà considerato inattivo. Vedi :ref:`PhysicsServer2D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
 
 \ **Nota:** Supportata solo quando si utilizza GodotPhysics3D. Questa impostazione del progetto è ignorata quando si utilizza Jolt Physics.
 
@@ -10681,9 +10681,9 @@ Tempo (in secondi) di inattività prima del quale un corpo fisico 2D sarà messo
 
 :ref:`float<class_float>` **physics/3d/default_angular_damp** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/default_angular_damp>`
 
-Lo smorzamento del movimento rotatorio predefinito in 3D. Lo smorzamento è utilizzato per rallentare gradualmente gli oggetti fisici nel tempo. I RigidBody torneranno a questo valore quando combinano i propri valori di smorzamento e non è presente alcun valore di smorzamento da un'area.
+Lo smorzamento del movimento rotatorio predefinito in 3D. Lo smorzamento serve per rallentare gradualmente gli oggetti fisici nel tempo. I RigidBody torneranno a questo valore quando combinano i propri valori di smorzamento e non è presente alcun valore di smorzamento da un'area.
 
-I valori suggeriti sono compresi tra ``0`` e ``30``. Al valore ``0`` gli oggetti continueranno a muoversi con la stessa velocità. Valori maggiori fermeranno l'oggetto più velocemente. Un valore uguale o maggiore della frequenza di tick di fisica (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) arresterà l'oggetto in una sola iterazione.
+I valori suggeriti sono compresi tra ``0`` e ``30``. Al valore ``0`` gli oggetti continueranno a muoversi con la stessa velocità. Valori maggiori fermeranno l'oggetto più velocemente. Un valore uguale o maggiore della frequenza di tick di fisica (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) fermerà l'oggetto in una sola iterazione.
 
 \ **Nota:** I calcoli dello smorzamento di Godot dipendono dalla velocità, il che significa che i corpi che si muovono più velocemente impiegheranno più tempo per fermarsi. Non simulano l'inerzia, l'attrito o la resistenza dell'aria. Pertanto, i corpi più pesanti o più grandi perderanno velocità alla stessa frequenza proporzionale dei corpi più leggeri o più piccoli.
 
@@ -10759,9 +10759,9 @@ La direzione predefinita della gravità in 3D.
 
 :ref:`float<class_float>` **physics/3d/default_linear_damp** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/default_linear_damp>`
 
-Lo smorzamento del movimento lineare predefinito in 3D. Lo smorzamento è utilizzato per rallentare gradualmente gli oggetti fisici nel tempo. I RigidBody torneranno a questo valore quando combinano i propri valori di smorzamento e non è presente alcun valore di smorzamento da un'area.
+Lo smorzamento del movimento lineare predefinito in 3D. Lo smorzamento serve per rallentare gradualmente gli oggetti fisici nel tempo. I RigidBody torneranno a questo valore quando combinano i propri valori di smorzamento e non è presente alcun valore di smorzamento da un'area.
 
-I valori suggeriti sono compresi tra ``0`` e ``30``. Al valore ``0`` gli oggetti continueranno a muoversi con la stessa velocità. Valori maggiori fermeranno l'oggetto più velocemente. Un valore uguale o maggiore della frequenza di tick di fisica (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) arresterà l'oggetto in una sola iterazione.
+I valori suggeriti sono compresi tra ``0`` e ``30``. Al valore ``0`` gli oggetti continueranno a muoversi con la stessa velocità. Valori maggiori fermeranno l'oggetto più velocemente. Un valore uguale o maggiore della frequenza di tick di fisica (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) fermerà l'oggetto in una sola iterazione.
 
 \ **Nota:** I calcoli dello smorzamento di Godot dipendono dalla velocità, il che significa che i corpi che si muovono più velocemente impiegheranno più tempo per fermarsi. Non simulano l'inerzia, l'attrito o la resistenza dell'aria. Pertanto, i corpi più pesanti o più grandi perderanno velocità alla stessa frequenza proporzionale dei corpi più leggeri o più piccoli.
 
@@ -10779,17 +10779,17 @@ Durante ogni tick di fisica, Godot moltiplicherà la velocità lineare dei Rigid
 
 :ref:`String<class_String>` **physics/3d/physics_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_physics/3d/physics_engine>`
 
-Sets which physics engine to use for 3D physics.
+Imposta quale motore fisico usare per la fisica 3D.
 
-\ **DEFAULT** is currently equivalent to **GodotPhysics3D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** è attualmente equivalente a **GodotPhysics3D**, ma potrebbe cambiare nelle versioni future. Seleziona un'implementazione esplicita se vuoi assicurarti che il tuo progetto rimanga sullo stesso motore.
 
-\ **GodotPhysics3D** is Godot's internal 3D physics engine.
+\ **GodotPhysics3D** è il motore fisico 3D interno di Godot.
 
-\ **Jolt Physics** is an alternative physics engine that is generally faster and more reliable than **GodotPhysics3D**. Jolt Physics is the default for projects created starting in Godot 4.6.
+\ **Jolt Physics** è un motore fisico alternativo che è generalmente più veloce e più affidabile di **GodotPhysics3D**. Jolt Physics è predefinito per i progetti creati a partire da Godot 4.6.
 
-\ **Dummy** is a 3D physics server that does nothing and returns only dummy values, effectively disabling all 3D physics functionality.
+\ **Dummy** è un server di fisica 3D che non fa nulla e restituisce solo valori fittizi, disabilitando di fatto tutte le funzionalità di fisica 3D.
 
-Third-party extensions and modules can add other physics engines to select with this setting.
+Le estensioni e i moduli di terze parti possono aggiungere altri motori di fisica da selezionare con questa impostazione.
 
 .. rst-class:: classref-item-separator
 
@@ -10833,7 +10833,7 @@ Se ``true``, il server di fisica 3D è eseguito su un thread separato, sfruttand
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_angular** = ``0.13962634`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_angular>`
 
-La velocità angolare di soglia al di sotto della quale un corpo fisico 3D sarà considerato inattivo. Vedi :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
+La velocità angolare di soglia sotto la quale un corpo fisico 3D sarà considerato inattivo. Vedi :ref:`PhysicsServer3D.SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD>`.
 
 \ **Nota:** Questa impostazione del progetto è efficace solo quando si utilizza GodotPhysics3D. Non ha alcun effetto quando si utilizza Jolt Physics.
 
@@ -10847,7 +10847,7 @@ La velocità angolare di soglia al di sotto della quale un corpo fisico 3D sarà
 
 :ref:`float<class_float>` **physics/3d/sleep_threshold_linear** = ``0.1`` :ref:`🔗<class_ProjectSettings_property_physics/3d/sleep_threshold_linear>`
 
-La velocità lineare di soglia al di sotto della quale un corpo fisico 3D sarà considerato inattivo. Vedi :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
+La velocità lineare di soglia sotto la quale un corpo fisico 3D sarà considerato inattivo. Vedi :ref:`PhysicsServer3D.SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD<class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD>`.
 
 \ **Nota:** Questa impostazione del progetto è efficace solo quando si utilizza GodotPhysics3D. Non ha alcun effetto quando si utilizza Jolt Physics.
 
@@ -10959,7 +10959,7 @@ Abilita :ref:`Viewport.physics_object_picking<class_Viewport_property_physics_ob
 
 :ref:`int<class_int>` **physics/common/max_physics_steps_per_frame** = ``8`` :ref:`🔗<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>`
 
-Controlla il numero massimo di passaggi fisici che si possono simulare per ogni frame renderizzato. Il valore predefinito è regolato per evitare situazioni dove la frequenza dei frame cali improvvisamente a un valore bassissimo, oltre un certo punto per la simulazione fisica. Ciò avviene perché il motore di fisica non riesce a mantenere la frequenza prevista di simulazione. In questo caso, la frequenza dei frame inizierà a calare, ma al motore è consentito simulare solo un certo numero di passaggi fisici per un frame renderizzato. Questa si trasforma in una situazione dove la frequenza continua a calare fino a raggiungere una frequenza molto bassa (in genere 1-2 FPS) ed è chiamata *spirale di morte della fisica*.
+Controlla il numero massimo di passaggi fisici che si possono simulare per ogni frame renderizzato. Il valore predefinito è regolato per evitare situazioni dove la frequenza dei frame cali improvvisamente a un valore bassissimo, oltre un certo punto per la simulazione fisica. Ciò avviene perché il motore fisico non riesce a mantenere la frequenza prevista di simulazione. In questo caso, la frequenza dei frame inizierà a calare, ma al motore è consentito simulare solo un certo numero di passaggi fisici per un frame renderizzato. Questa si trasforma in una situazione dove la frequenza continua a calare fino a raggiungere una frequenza molto bassa (in genere 1-2 FPS) ed è chiamata *spirale di morte della fisica*.
 
 Tuttavia, il gioco sembrerà rallentare se l'FPS di rendering è inferiore a ``1 / max_physics_steps_per_frame`` di :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`. Ciò si verifica anche se ``delta`` è utilizzato appropriatamente nei calcoli della fisica. Per evitare ciò, aumentare :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` se :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` è stato aumentato significativamente al di sopra del suo valore predefinito.
 
@@ -11011,17 +11011,17 @@ Controlla quanti tick fisici sono sincronizzati con il tempo reale. Per 0 o meno
 
 :ref:`int<class_int>` **physics/common/physics_ticks_per_second** = ``60`` :ref:`🔗<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`
 
-The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
+Il numero di iterazioni fisse al secondo. Controlla quanto spesso la simulazione della fisica e il metodo :ref:`Node._physics_process()<class_Node_private_method__physics_process>` vengono eseguiti.
 
-CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
+L'utilizzo della CPU scala approssimativamente con la frequenza dei tick di fisica. Tuttavia, a frequenze di tick molto basse (solitamente inferiori a 30), la simulazione della fisica può dare problemi. Inoltre gli input potrebbero diventare meno reattivi, a causa del tempo richiesto tra la registrazione dell'input e la sua risposta al prossimo tick di fisica. Frequenze di tick alte offrono una simulazione più accurata, in particolare per gli oggetti in rapido movimento. Ad esempio, i giochi di corse potrebbero funzionare meglio aumentando la frequenza dei tick oltre il valore predefinito di 60.
 
-See also :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
+Vedi anche :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
 
-\ **Note:** This property is only read when the project starts. To change the physics FPS at runtime, set :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` instead.
+\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per modificare gli FPS di fisica in fase di esecuzione, imposta invece :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`.
 
-\ **Note:** Only :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` if increasing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` significantly above its default value.
+\ **Nota:** Possono essere simulati al massimo solo il numero :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` di tick di fisica per frame renderizzato. Se è necessario simulare più tick di fisica per ogni frame renderizzato per tenere il passo con il rendering, il progetto sembrerà rallentare (anche se ``delta`` è utilizzato in modo coerente nei calcoli fisici). Pertanto, si consiglia di aumentare anche :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` se si aumenta :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` drasticamente al di sopra del suo valore predefinito.
 
-\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
+\ **Nota:** Si consiglia di abilitare l':doc:`interpolazione della fisica <../tutorials/physics/interpolation/index>` se si cambia :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` con un valore che non è un multiplo di ``60``. L'interpolazione della fisica eviterà tremolii quando la frequenza di aggiornamento del monitor e la frequenza dei tick di fisica non corrispondono esattamente.
 
 .. rst-class:: classref-item-separator
 
@@ -11035,11 +11035,11 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 L'angolo massimo, in radianti, tra due triangoli adiacenti in un :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` o :ref:`HeightMapShape3D<class_HeightMapShape3D>` per cui il bordo tra quei triangoli è considerato inattivo.
 
-Le collisioni contro un bordo inattivo avranno la sua normale sostituita per essere invece la normale alla superficie del triangolo. Questo può aiutare ad alleviare le collisioni fantasma.
+Le collisioni contro un bordo inattivo avranno la sua normale sostituita per la normale alla superficie del triangolo. Questo può aiutare ad alleviare le collisioni fantasma.
 
 \ **Nota:** Impostando questo valore troppo alto, gli oggetti potrebbero non penetrare correttamente.
 
-\ **Nota:** Questo si applica a tutte le richieste delle forme, così come ai corpi di fisica all'interno della simulazione.
+\ **Nota:** Questo si applica a tutte le richieste delle forme, così come ai corpi fisici all'interno della simulazione.
 
 \ **Nota:** Questo non si applica quando si abilita la rimozione avanzata del bordo interno di Jolt, che la sostituisce.
 
@@ -11487,9 +11487,9 @@ Numero massimo di set di uniformi che verranno memorizzati nella cache dal rende
 
 :ref:`int<class_int>` **rendering/2d/sdf/oversize** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/sdf/oversize>`
 
-Controlla quanta parte della dimensione originale della viewport deve essere coperta dal campo di distanza con segno 2D. Questo SDF può essere campionato negli shader :ref:`CanvasItem<class_CanvasItem>` ed è utilizzato per la collisione :ref:`GPUParticles2D<class_GPUParticles2D>`. Valori più alti permettono alle porzioni di occlusori situati all'esterno della viewport di essere comunque considerate nel campo di distanza con segno generato, a scapito delle prestazioni. Se noti particelle che passano attraverso gli :ref:`LightOccluder2D<class_LightOccluder2D>` quando gli occlusori escono dalla viewport, aumenta questa impostazione.
+Controlla quanta parte delle dimensioni originali della viewport deve essere coperta dal signed distance field 2D. Questo SDF si può campionare negli shader :ref:`CanvasItem<class_CanvasItem>` e serve per le collisioni di :ref:`GPUParticles2D<class_GPUParticles2D>`. Valori più alti permettono alle porzioni di occlusori situati fuori dalla viewport di essere comunque considerate nell'SDF generato, a scapito delle prestazioni. Se noti particelle che passano attraverso gli :ref:`LightOccluder2D<class_LightOccluder2D>` quando gli occlusori escono dalla viewport, aumenta questa impostazione.
 
-La percentuale specificata è aggiunta su ciascun asse e su entrambi i lati. Ad esempio, con l'impostazione predefinita del 120%, il campo di distanza con segno coprirà il 20% della dimensione della viewport all'esterno della viewport su ciascun lato (in alto, a destra, in basso, a sinistra).
+La percentuale specificata è aggiunta su ciascun asse e su entrambi i lati. Ad esempio, con il valore predefinito di 120%, l'SDF coprirà il 20% delle dimensioni fuori dalla viewport su ciascun lato (in alto, a destra, in basso, a sinistra).
 
 \ **Nota:** Questa proprietà viene letta solo all'avvio del progetto. Per modificare la percentuale di sovradimensionamento dell'SDF 2D in fase di esecuzione, usa invece :ref:`RenderingServer.viewport_set_sdf_oversize_and_scale()<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>`.
 
@@ -11503,9 +11503,9 @@ La percentuale specificata è aggiunta su ciascun asse e su entrambi i lati. Ad 
 
 :ref:`int<class_int>` **rendering/2d/sdf/scale** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/sdf/scale>`
 
-La scala di risoluzione da usare per il campo di distanza con segno 2D. Valori più alti portano a un campo di distanza con segno più preciso e più stabile mentre la telecamera si muove, a scapito delle prestazioni. Il valore predefinito (50%) renderizza a metà della risoluzione della dimensione della viewport su ciascun asse, il che significa che l'SDF è generato con il 25% del numero dei pixel della viewport.
+La scala di risoluzione da usare per il signed distance field 2D. Valori più alti portano a un SDF più preciso e più stabile mentre la telecamera si muove, a scapito delle prestazioni. Il valore predefinito (50%) renderizza a metà della risoluzione delle dimensioni della viewport su ciascun asse, il che significa che l'SDF è generato con il 25% del numero dei pixel della viewport.
 
-\ **Nota:** Questa proprietà viene letta solo all'avvio del progetto. Per modificare la scala di risoluzione SDF 2D in fase di esecuzione, usa invece :ref:`RenderingServer.viewport_set_sdf_oversize_and_scale()<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>`.
+\ **Nota:** Questa proprietà viene letta solo all'avvio del progetto. Per modificare la scala di risoluzione dell'SDF 2D in fase di esecuzione, usa invece :ref:`RenderingServer.viewport_set_sdf_oversize_and_scale()<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11567,9 +11567,9 @@ Se ``true``, i vertici dei :ref:`CanvasItem<class_CanvasItem>` si agganceranno i
 
 :ref:`int<class_int>` **rendering/anti_aliasing/quality/msaa_2d** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_2d>`
 
-Imposta il numero di campioni MSAA da usare per il rendering 2D/Canvas (come potenza di due). Lo MSAA è usato per ridurre l'aliasing attorno ai bordi dei poligoni. Un valore di MSAA più alto produce bordi più lisci ma può essere notevolmente più lento su alcuni hardware, specialmente sulla grafica integrata a causa della loro limitata larghezza di banda di memoria. Questo non ha alcun effetto sull'aliasing indotto dagli shader o sull'aliasing delle texture.
+Imposta il numero di campioni MSAA da usare per il rendering 2D/Canvas (come potenza di due). L'MSAA serve per ridurre l'aliasing attorno ai bordi dei poligoni. Un valore più alto di MSAA produce bordi più lisci ma può essere notevolmente più lento su alcuni hardware, specialmente sulla grafica integrata a causa della loro limitata larghezza di banda di memoria. Questo non ha alcun effetto sull'aliasing indotto dagli shader o sull'aliasing delle texture.
 
-\ **Nota:** Lo MSAA è supportato solo nei metodi di rendering Forward+ e Mobile, non Compatibilità.
+\ **Nota:** L'MSAA è supportato solo nei metodi di rendering Forward+ e Mobile, non Compatibilità.
 
 \ **Nota:** Questa proprietà viene letta solo all'avvio del progetto. Per impostare il numero di campioni MSAA 2D in fase di esecuzione, imposta :ref:`Viewport.msaa_2d<class_Viewport_property_msaa_2d>` o usa :ref:`RenderingServer.viewport_set_msaa_2d()<class_RenderingServer_method_viewport_set_msaa_2d>`.
 
@@ -11583,7 +11583,7 @@ Imposta il numero di campioni MSAA da usare per il rendering 2D/Canvas (come pot
 
 :ref:`int<class_int>` **rendering/anti_aliasing/quality/msaa_3d** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>`
 
-Imposta il numero di campioni MSAA da usare per il rendering 3D (come potenza di due). Lo MSAA è usato per ridurre l'aliasing attorno ai bordi dei poligoni. Un valore MSAA più alto produce bordi più lisci ma può essere notevolmente più lento su alcuni hardware, specialmente sulla grafica integrata a causa della loro limitata larghezza di banda di memoria. Vedi anche :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` per il sovracampionamento, che fornisce una qualità più elevata ma è molto più costoso. Questo non ha alcun effetto sull'aliasing indotto dagli shader o sull'aliasing delle texture.
+Imposta il numero di campioni MSAA da usare per il rendering 3D (come potenza di due). L'MSAA serve per ridurre l'aliasing attorno ai bordi dei poligoni. Un valore più alto di MSAA produce bordi più lisci ma può essere notevolmente più lento su alcuni hardware, specialmente sulla grafica integrata a causa della loro limitata larghezza di banda di memoria. Vedi anche :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` per il sovracampionamento, che fornisce una qualità più elevata ma è molto più costoso. Questo non ha alcun effetto sull'aliasing indotto dagli shader o sull'aliasing delle texture.
 
 \ **Nota:** Questa proprietà viene letta solo all'avvio del progetto. Per impostare il numero di campioni MSAA 3D in fase di esecuzione, imposta :ref:`Viewport.msaa_3d<class_Viewport_property_msaa_3d>` o usa :ref:`RenderingServer.viewport_set_msaa_3d()<class_RenderingServer_method_viewport_set_msaa_3d>`.
 
@@ -11597,7 +11597,7 @@ Imposta il numero di campioni MSAA da usare per il rendering 3D (come potenza di
 
 :ref:`int<class_int>` **rendering/anti_aliasing/quality/screen_space_aa** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`
 
-Imposta la modalità di antialiasing nello spazio dello schermo per la :ref:`Viewport<class_Viewport>` principale predefinita. L'antialiasing nello spazio dello schermo funziona sfocando selettivamente i bordi in uno shader di post-elaborazione. Si differenzia dall'MSAA che prende più campioni di copertura durante il rendering degli oggetti. I metodi di AA nello spazio dello schermo sono in genere più veloci dell'MSAA e smussano l'aliasing speculare, ma tendono a far apparire le scene sfocate. La sfocatura è parzialmente contrastata usando automaticamente un bias LOD negativo per le mipmap (vedi :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`).
+Imposta la modalità di antialiasing nello spazio dello schermo per la :ref:`Viewport<class_Viewport>` principale predefinita. L'antialiasing nello spazio dello schermo funziona sfocando selettivamente i bordi in uno shader di post-elaborazione. Si differenzia dall'MSAA che preleva più campioni di copertura durante il rendering degli oggetti. I metodi di AA nello spazio dello schermo sono in genere più veloci dell'MSAA e smussano l'aliasing speculare, ma tendono a far apparire le scene sfocate. La sfocatura è parzialmente contrastata usando automaticamente un bias LOD negativo per le mipmap (vedi :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`).
 
 Un altro modo per combattere l'aliasing speculare è abilitare :ref:`rendering/anti_aliasing/screen_space_roughness_limiter/enabled<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`.
 
@@ -11629,11 +11629,11 @@ Imposta la sensibilità ai bordi quando si utilizza SMAA per l'antialiasing. Val
 
 :ref:`bool<class_bool>` **rendering/anti_aliasing/quality/use_debanding** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`
 
-If ``true``, uses a fast dithering filter just before transforming floating point color values to integer color values to make banding significantly less visible. Debanding is applied at different steps of the rendering process depending on the rendering method and :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` setting.
+Se ``true``, utilizza un filtro di dithering veloce, subito prima di convertire i valori di colore da virgola mobile a interi, per rendere il banding notevolmente meno visibile. Il debanding è applicato in diverse fasi del processo di rendering a seconda del metodo di rendering e l'impostazione :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>`.
 
-In some cases, debanding may introduce a slightly noticeable dithering pattern. It's recommended to enable debanding only when actually needed since the dithering pattern will make lossless-compressed screenshots larger.
+In alcuni casi, il debanding potrebbe introdurre un leggero motivo di dithering. Si consiglia di abilitare il debanding solo quando è effettivamente necessario, poiché il motivo di dithering renderà più grandi gli screenshot compressi senza perdita di dati.
 
-\ **Note:** This property is only read when the project starts and configures :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` and :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` of the root :ref:`Viewport<class_Viewport>`. When :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` is disabled, you should additionally set the :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` of other viewports in your project. To set debanding at run-time, the property that should be set depends on the renderer: Forward+ only uses :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` and Mobile uses both :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` and :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`.
+\ **Nota:** Questa proprietà viene letta solo all'avvio del progetto e configura :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` e :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` della :ref:`Viewport<class_Viewport>` radice. Quando :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` è disabilitato, bisognerebbe impostare anche il :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` delle altre viewport nel progetto. Per impostare il debanding in fase di esecuzione, la proprietà da impostare dipende dal renderer: Forward+ utilizza solo :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` mentre Mobile utilizza entrambi :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` e :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11663,7 +11663,7 @@ Abilita l'antialiasing temporale per la :ref:`Viewport<class_Viewport>` principa
 
 :ref:`float<class_float>` **rendering/anti_aliasing/screen_space_roughness_limiter/amount** = ``0.25`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/amount>`
 
-**Nota:** Questa proprietà è letta solo all'avvio del progetto. Per controllare il limitatore di ruvidità sullo spazio dello schermo in fase di esecuzione, chiama invece :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>`.
+**Nota:** Questa proprietà è letta solo all'avvio del progetto. Per controllare il limitatore di rugosità nello spazio dello schermo in fase di esecuzione, chiama invece :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11675,11 +11675,11 @@ Abilita l'antialiasing temporale per la :ref:`Viewport<class_Viewport>` principa
 
 :ref:`bool<class_bool>` **rendering/anti_aliasing/screen_space_roughness_limiter/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`
 
-Se ``true``, abilita un filtro spaziale per limitare la ruvidità nelle aree con dettagli ad alta frequenza. Ciò può aiutare a ridurre l'aliasing speculare in parte, anche se non tanto quanto l'abilitazione di :ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`. Questo filtro ha un piccolo costo in termini di prestazioni, quindi considera di disabilitarlo se la tua scena non ne usufruisce notevolmente.
+Se ``true``, abilita un filtro spaziale per limitare la rugosità nelle aree con dettagli ad alta frequenza. Ciò può aiutare a ridurre l'aliasing speculare in parte, anche se non tanto quanto l'abilitazione di :ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`. Questo filtro ha un piccolo costo in termini di prestazioni, quindi considera di disabilitarlo se la tua scena non ne usufruisce notevolmente.
 
-\ **Nota:** Il limitatore di ruvidità nello spazio dello schermo è supportato solo nei metodi di rendering Forward+ e Mobile, non Compatibilità.
+\ **Nota:** Il limitatore di rugosità nello spazio dello schermo è supportato solo nei metodi di rendering Forward+ e Mobile, non Compatibilità.
 
-\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per controllare il limitatore di ruvidità nello spazio dello schermo in fase di esecuzione, chiama invece :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>`.
+\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per controllare il limitatore di rugosità nello spazio dello schermo in fase di esecuzione, chiama invece :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11691,7 +11691,7 @@ Se ``true``, abilita un filtro spaziale per limitare la ruvidità nelle aree con
 
 :ref:`float<class_float>` **rendering/anti_aliasing/screen_space_roughness_limiter/limit** = ``0.18`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/limit>`
 
-**Nota:** Questa proprietà è letta solo all'avvio del progetto. Per controllare il limitatore di ruvidità sullo spazio dello schermo in fase di esecuzione, chiama invece :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>`.
+**Nota:** Questa proprietà è letta solo all'avvio del progetto. Per controllare il limitatore di rugosità nello spazio dello schermo in fase di esecuzione, chiama invece :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11803,7 +11803,7 @@ L':ref:`Environment<class_Environment>` che sarà utilizzato come ambiente di ri
 
 :ref:`bool<class_bool>` **rendering/environment/fog/use_legacy_blending** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending>`
 
-Enables legacy fog blending behavior from version 4.5 and earlier. This is intended for users who are developing on pre-4.6 versions and want to upgrade to 4.6 with the smallest possible change to their visuals.
+Abilita il comportamento di fusione della nebbia legacy proveniente dalle versioni 4.5 e precedenti. Progettata per gli utenti che sviluppano su versioni precedenti alla 4.6 e desiderano aggiornare alla 4.6 con il minor impatto possibile sulla loro grafica.
 
 .. rst-class:: classref-item-separator
 
@@ -11841,7 +11841,7 @@ Override di fascia bassa per :ref:`rendering/environment/glow/upscale_mode<class
 
 :ref:`bool<class_bool>` **rendering/environment/screen_space_reflection/half_size** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/screen_space_reflection/half_size>`
 
-If ``true``, screen-space reflections will be rendered at half size and then upscaled before being added to the scene. This is faster but may look pixelated or cause flickering. If ``false``, screen-space reflections will be rendered at full size.
+Se ``true``, i riflessi nello spazio dello schermo saranno renderizzati a metà dimensioni e poi ingranditi prima di essere aggiunti alla scena. Questo è più veloce ma potrebbe apparire pixellato o causare sfarfalii. Se ``false``, i riflessi nello spazio dello schermo saranno renderizzati a piene dimensioni.
 
 .. rst-class:: classref-item-separator
 
@@ -11865,7 +11865,7 @@ L'obiettivo di qualità da usare quando :ref:`rendering/environment/ssao/quality
 
 :ref:`int<class_int>` **rendering/environment/ssao/blur_passes** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/blur_passes>`
 
-Il numero di passaggi di sfocatura da utilizzare quando si calcola l'occlusione ambientale nello spazio dello schermo. Un numero più alto produrrà un aspetto più fluido, ma sarà più lento da calcolare e avrà meno dettagli ad alta frequenza.
+Il numero di passaggi di sfocatura da usare per calcolare l'occlusione ambientale nello spazio dello schermo. Un numero più alto produrrà un aspetto più fluido, ma sarà più lento da calcolare e avrà meno dettagli ad alta frequenza.
 
 .. rst-class:: classref-item-separator
 
@@ -11901,7 +11901,7 @@ Distanza alla quale l'occlusione ambientale nello spazio sullo schermo svanisce 
 
 :ref:`bool<class_bool>` **rendering/environment/ssao/half_size** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/half_size>`
 
-Se ``true``, l'occlusione ambientale nello spazio sullo schermo sarà renderizzata a metà dimensioni e poi ingrandita prima di essere aggiunta alla scena. Questo è significativamente più veloce ma potrebbe perdere piccoli dettagli. Se ``false``, l'occlusione ambientale nello spazio sullo schermo sarà renderizzata a dimensioni intere.
+Se ``true``, l'occlusione ambientale nello spazio delle schermo sarà renderizzata a metà dimensioni e poi ingrandita prima di essere aggiunta alla scena. Questo è significativamente più veloce, ma potrebbe non includere piccoli dettagli. Se ``false``, l'occlusione ambientale nello spazio dello schermo sarà renderizzata a piene dimensioni.
 
 .. rst-class:: classref-item-separator
 
@@ -11913,7 +11913,7 @@ Se ``true``, l'occlusione ambientale nello spazio sullo schermo sarà renderizza
 
 :ref:`int<class_int>` **rendering/environment/ssao/quality** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/quality>`
 
-Imposta la qualità dell'effetto di occlusione ambientale nello spazio sullo schermo. Valori più alti richiedono più campioni e quindi produrranno una migliore qualità, a scapito delle prestazioni. Impostandola su ``Ultra`` sarà utilizzata l'impostazione :ref:`rendering/environment/ssao/adaptive_target<class_ProjectSettings_property_rendering/environment/ssao/adaptive_target>`.
+Imposta la qualità dell'effetto di occlusione ambientale nello spazio sullo schermo. Valori più alti prelevano più campioni e quindi risulteranno in una qualità migliore, a scapito delle prestazioni. Impostandola su ``Ultra`` sarà utilizzata l'impostazione :ref:`rendering/environment/ssao/adaptive_target<class_ProjectSettings_property_rendering/environment/ssao/adaptive_target>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11937,7 +11937,7 @@ L'obiettivo di qualità da usare quando :ref:`rendering/environment/ssil/quality
 
 :ref:`int<class_int>` **rendering/environment/ssil/blur_passes** = ``4`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/blur_passes>`
 
-Il numero di passaggi di sfocatura da utilizzare quando si calcola l'illuminazione indiretta nello spazio sullo schermo. Un numero più alto produrrà un aspetto più fluido, ma sarà più lento da calcolare e avrà meno dettagli ad alta frequenza.
+Il numero di passaggi di sfocatura da usare per calcolare l'occlusione ambientale nello spazio dello schermo. Un numero più alto produrrà un aspetto più fluido, ma sarà più lento da calcolare e avrà meno dettagli ad alta frequenza.
 
 .. rst-class:: classref-item-separator
 
@@ -11973,7 +11973,7 @@ Distanza alla quale l'effetto di illuminazione indiretta nello spazio dello sche
 
 :ref:`bool<class_bool>` **rendering/environment/ssil/half_size** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/half_size>`
 
-Se ``true``, l'illuminazione indiretta nello spazio sullo schermo sarà renderizzata a metà dimensione e poi ingrandita prima di essere aggiunta alla scena. Questo è significativamente più veloce ma potrebbe perdere piccoli dettagli e potrebbe far sì che alcuni oggetti sembrino brillare ai bordi.
+Se ``true``, l'illuminazione indiretta nello spazio dello schermo sarà renderizzata a metà dimensione e poi ingrandita prima di essere aggiunta alla scena. Questo è significativamente più veloce ma potrebbe non includere piccoli dettagli e potrebbe far sembrare che alcuni oggetti brillino sui loro bordi.
 
 .. rst-class:: classref-item-separator
 
@@ -11985,7 +11985,7 @@ Se ``true``, l'illuminazione indiretta nello spazio sullo schermo sarà renderiz
 
 :ref:`int<class_int>` **rendering/environment/ssil/quality** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/quality>`
 
-Imposta la qualità dell'effetto di illuminazione indiretta nello spazio sullo schermo. Valori più alti richiedono più campioni e quindi produrranno una qualità migliore, a scapito delle prestazioni. Impostando su ``Ultra`` sarà utilizzata l'impostazione :ref:`rendering/environment/ssil/adaptive_target<class_ProjectSettings_property_rendering/environment/ssil/adaptive_target>`.
+Imposta la qualità dell'effetto di illuminazione indiretta nello spazio sullo schermo. Valori più alti prelevano più campioni e quindi risulteranno in una qualità migliore, a scapito delle prestazioni. Impostandola su ``Ultra`` sarà utilizzata l'impostazione :ref:`rendering/environment/ssil/adaptive_target<class_ProjectSettings_property_rendering/environment/ssil/adaptive_target>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11997,7 +11997,7 @@ Imposta la qualità dell'effetto di illuminazione indiretta nello spazio sullo s
 
 :ref:`float<class_float>` **rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale>`
 
-Scala la profondità su cui è applicato l'effetto subsurface scattering. Un valore elevato può consentire alla luce di diffondersi in una parte della mesh o in un'altra mesh che è vicina nello spazio dello schermo ma lontana in profondità. Vedi anche :ref:`rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>`.
+Scala la profondità su cui è applicato l'effetto del subsurface scattering. Un valore elevato può consentire alla luce di diffondersi in una parte della mesh o in un'altra mesh che è vicina nello spazio dello schermo ma lontana in profondità. Vedi anche :ref:`rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>`.
 
 \ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per impostare la scala della profondità del subsurface scattering in fase di esecuzione, chiama invece :ref:`RenderingServer.sub_surface_scattering_set_scale()<class_RenderingServer_method_sub_surface_scattering_set_scale>`.
 
@@ -12011,7 +12011,7 @@ Scala la profondità su cui è applicato l'effetto subsurface scattering. Un val
 
 :ref:`int<class_int>` **rendering/environment/subsurface_scattering/subsurface_scattering_quality** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>`
 
-Imposta la qualità dell'effetto subsurface scattering. I valori più alti sono più lenti ma hanno un aspetto migliore. Ciò influisce sul rendering dei materiali che hanno :ref:`BaseMaterial3D.subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` impostato su ``true``, insieme a :ref:`ShaderMaterial<class_ShaderMaterial>` che impostano ``SSS_STRENGTH``.
+Imposta la qualità dell'effetto del subsurface scattering. I valori più alti sono più lenti ma hanno un aspetto migliore. Ciò influisce sul rendering dei materiali che hanno :ref:`BaseMaterial3D.subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` impostato su ``true``, insieme a :ref:`ShaderMaterial<class_ShaderMaterial>` che impostano ``SSS_STRENGTH``.
 
 \ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per impostare la qualità del subsurface scattering in fase di esecuzione, chiama invece :ref:`RenderingServer.sub_surface_scattering_set_quality()<class_RenderingServer_method_sub_surface_scattering_set_quality>`.
 
@@ -12025,7 +12025,7 @@ Imposta la qualità dell'effetto subsurface scattering. I valori più alti sono 
 
 :ref:`float<class_float>` **rendering/environment/subsurface_scattering/subsurface_scattering_scale** = ``0.05`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>`
 
-Scala la distanza su cui sono prelevati i campioni per l'effetto subsurface scattering. La modifica di questa non influisce sulle prestazioni, ma valori più alti risulteranno in notevoli artefatti poiché i campioni saranno notevolmente sparsi. Un valore più basso comporta una minore diffusione della luce diffusa. Vedi anche :ref:`rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale>`.
+Scala la distanza su cui sono prelevati i campioni per l'effetto del subsurface scattering. La modifica di questa non influisce sulle prestazioni, ma valori più alti risulteranno in notevoli artefatti poiché i campioni saranno notevolmente sparsi. Un valore più basso comporta una minore diffusione della luce diffusa. Vedi anche :ref:`rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale>`.
 
 \ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per impostare la scala del subsurface scattering in fase di esecuzione, chiama invece :ref:`RenderingServer.sub_surface_scattering_set_scale()<class_RenderingServer_method_sub_surface_scattering_set_scale>`.
 
@@ -12301,9 +12301,9 @@ Se ``true``, renderizza i buffer :ref:`VoxelGI<class_VoxelGI>` e SDFGI (:ref:`En
 
 :ref:`int<class_int>` **rendering/global_illumination/sdfgi/frames_to_converge** = ``5`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>`
 
-Numero di frame da utilizzare per la convergenza dell'illuminazione globale del campo di distanza con segno. Valori più alti portano a un risultato meno rumoroso, a costo di impiegare più tempo per convergere completamente. Ciò significa che l'illuminazione globale della scena sarà troppo scura per un periodo di tempo più lungo, soprattutto quando la telecamera si muove velocemente. La velocità di convergenza effettiva dipende dal frame rate renderizzato. Ad esempio, con l'impostazione predefinita di 30 frame, il rendering a 60 FPS farà convergere completamente SDFGI dopo 0,5 secondi. Vedi anche :ref:`rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>` e :ref:`rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`.
+Il numero di frame da utilizzare per la convergenza dell'illuminazione globale con signed distance field. Valori più alti portano a un risultato meno rumoroso, a costo di impiegare più tempo per convergere completamente. Ciò significa che l'illuminazione globale della scena sarà troppo scura per un periodo di tempo più lungo, soprattutto quando la telecamera si muove velocemente. La velocità effettiva della convergenza dipende dal frame rate renderizzato. Ad esempio, con il valore predefinito di 30 frame, renderizzare a 60 FPS farà convergere completamente l'SDFGI dopo 0,5 secondi. Vedi anche :ref:`rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>` e :ref:`rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`.
 
-\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per controllare la velocità della convergenza SDFGI in fase di esecuzione, chiama invece :ref:`RenderingServer.environment_set_sdfgi_frames_to_converge()<class_RenderingServer_method_environment_set_sdfgi_frames_to_converge>`.
+\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per controllare la velocità della convergenza dell'SDFGI in fase di esecuzione, chiama invece :ref:`RenderingServer.environment_set_sdfgi_frames_to_converge()<class_RenderingServer_method_environment_set_sdfgi_frames_to_converge>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12315,11 +12315,11 @@ Numero di frame da utilizzare per la convergenza dell'illuminazione globale del 
 
 :ref:`int<class_int>` **rendering/global_illumination/sdfgi/frames_to_update_lights** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`
 
-Numero di frame su cui le luci dinamiche devono essere aggiornate nell'illuminazione globale del campo di distanza con segno. Valori più alti richiedono più tempo per aggiornare l'illuminazione indiretta proveniente dalle luci dinamiche, ma comportano prestazioni migliori quando sono presenti molte luci dinamiche. Vedi anche :ref:`rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>` e :ref:`rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`.
+Il numero di frame su cui bisogna aggiornare le luci dinamiche nell'illuminazione globale con signed distance field. Valori più alti richiedono più tempo per aggiornare l'illuminazione indiretta proveniente dalle luci dinamiche, ma risultano in prestazioni migliori quando ci sono molte luci dinamiche. Vedi anche :ref:`rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>` e :ref:`rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`.
 
-\ **Nota:** Questo riguarda solo i nodi :ref:`Light3D<class_Light3D>` il cui :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` è :ref:`Light3D.BAKE_DYNAMIC<class_Light3D_constant_BAKE_DYNAMIC>` (che è l'impostazione predefinita). Considera di usare per le luci non in movimento la modalità precalcolo :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` per migliorare le prestazioni.
+\ **Nota:** Questo riguarda solo i nodi :ref:`Light3D<class_Light3D>` il cui :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` è :ref:`Light3D.BAKE_DYNAMIC<class_Light3D_constant_BAKE_DYNAMIC>` (che è il valore predefinito). Si consiglia di usare, per le luci non in movimento, la modalità di precalcolo :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` per migliorare le prestazioni.
 
-\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per controllare la velocità di aggiornamento della luce SDFGI in fase di esecuzione, chiamare invece :ref:`RenderingServer.environment_set_sdfgi_frames_to_update_light()<class_RenderingServer_method_environment_set_sdfgi_frames_to_update_light>`.
+\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per controllare la velocità di aggiornamento dell'SDFGI per le luci in fase di esecuzione, chiame invece :ref:`RenderingServer.environment_set_sdfgi_frames_to_update_light()<class_RenderingServer_method_environment_set_sdfgi_frames_to_update_light>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12331,9 +12331,9 @@ Numero di frame su cui le luci dinamiche devono essere aggiornate nell'illuminaz
 
 :ref:`int<class_int>` **rendering/global_illumination/sdfgi/probe_ray_count** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`
 
-Il numero di raggi da proiettare per frame quando si calcola l'illuminazione globale del campo di distanza con segno. Valori più alti portano a un risultato meno rumoroso, a scapito delle prestazioni. Vedi anche :ref:`rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>` e :ref:`rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
+Il numero di raggi da proiettare per frame quando si calcola l'illuminazione globale con signed distance field. Valori più alti portano a un risultato meno rumoroso, a scapito delle prestazioni. Vedi anche :ref:`rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>` e :ref:`rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
 
-\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per controllare la qualità del SDFGI in fase di esecuzione, chiama invece :ref:`RenderingServer.environment_set_sdfgi_ray_count()<class_RenderingServer_method_environment_set_sdfgi_ray_count>`.
+\ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per controllare la qualità dell'SDFGI in fase di esecuzione, chiama invece :ref:`RenderingServer.environment_set_sdfgi_ray_count()<class_RenderingServer_method_environment_set_sdfgi_ray_count>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12611,9 +12611,9 @@ Sostituzione di fascia bassa per :ref:`rendering/lights_and_shadows/directional_
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality>`
 
-Impostazione della qualità per le ombre proiettate dai :ref:`DirectionalLight3D<class_DirectionalLight3D>`. Le impostazioni di qualità più elevate utilizzano più campioni durante la lettura dalle mappe delle ombre e sono quindi più lente. Le impostazioni di qualità bassa possono far apparire le ombre granulose.
+Impostazione della qualità per le ombre proiettate dai :ref:`DirectionalLight3D<class_DirectionalLight3D>`. Le impostazioni di qualità più alte usano più campioni per leggere dalle mappe delle ombre e sono quindi più lente. Le impostazioni di qualità bassa possono far apparire le ombre granulose.
 
-\ **Nota:** l'impostazione Soft Very Low moltiplicherà automaticamente la sfocatura *costante* delle ombre per 0,75x, per ridurre la quantità di rumore visibile. Ciò influisce solo sul fattore di sfocatura costante definito in :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>`, non sulla sfocatura variabile eseguita da :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` di :ref:`DirectionalLight3D<class_DirectionalLight3D>`.
+\ **Nota:** L'impostazione Soft Very Low moltiplicherà automaticamente la sfocatura *costante* delle ombre per 0,75x, per ridurre la quantità di rumore visibile. Ciò influisce solo sul fattore di sfocatura costante definito in :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>`, non sulla sfocatura variabile effettuata da :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` dei :ref:`DirectionalLight3D<class_DirectionalLight3D>`.
 
 \ **Nota:** Le impostazioni Soft High e Soft Ultra moltiplicheranno automaticamente la sfocatura *costante* delle ombre rispettivamente per 1,5× e 2× per sfruttare al meglio il numero di campioni aumentato. Ciò migliora anche la stabilità delle ombre proiettate dagli oggetti dinamici.
 
@@ -12723,9 +12723,9 @@ Sostituzione di fascia bassa per :ref:`rendering/lights_and_shadows/positional_s
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality>`
 
-Impostazione della qualità per le ombre proiettate dai :ref:`OmniLight3D<class_OmniLight3D>` e dai :ref:`SpotLight3D<class_SpotLight3D>`. Le impostazioni di qualità più elevate utilizzano più campioni durante la lettura dalle mappe delle ombre e sono quindi più lente. Le impostazioni di qualità bassa possono far apparire le ombre granulose.
+Impostazione della qualità per le ombre proiettate dagli :ref:`OmniLight3D<class_OmniLight3D>` e dagli :ref:`SpotLight3D<class_SpotLight3D>`. Le impostazioni di qualità più elevate utilizzano più campioni durante la lettura dalle mappe delle ombre e sono quindi più lente. Le impostazioni di qualità bassa possono far apparire le ombre granulose.
 
-\ **Nota:** l'impostazione Soft Very Low moltiplicherà automaticamente la sfocatura *costante* delle ombre per 0,75x, per ridurre la quantità di rumore visibile. Ciò influisce solo sul fattore di sfocatura costante definito in :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>`, non sulla sfocatura variabile eseguita da :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` di :ref:`DirectionalLight3D<class_DirectionalLight3D>`.
+\ **Nota:** L'impostazione Soft Very Low moltiplicherà automaticamente la sfocatura *costante* delle ombre per 0,75x, per ridurre la quantità di rumore visibile. Ciò influisce solo sul fattore di sfocatura costante definito in :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>`, non sulla sfocatura variabile effettata da :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` dei :ref:`DirectionalLight3D<class_DirectionalLight3D>`.
 
 \ **Nota:** Le impostazioni Soft High e Soft Ultra moltiplicheranno automaticamente la sfocatura delle ombre rispettivamente per 1,5× e 2× per sfruttare al meglio il numero di campioni aumentato. Ciò migliora anche la stabilità delle ombre proiettate dagli oggetti dinamici.
 
@@ -12807,7 +12807,7 @@ Il numero massimo di uniformi che possono essere utilizzate dal buffer di unifor
 
 :ref:`int<class_int>` **rendering/limits/opengl/max_lights_per_object** = ``8`` :ref:`🔗<class_ProjectSettings_property_rendering/limits/opengl/max_lights_per_object>`
 
-Numero massimo di omnilight e spotlight renderizzabili per ogni oggetto. Al valore predefinito di 8, ciò significa che ogni superficie può essere influenzata da un massimo di 8 omnilight e 8 spotlight. Ciò è ulteriormente limitato dal supporto dell'hardware e da :ref:`rendering/limits/opengl/max_renderable_lights<class_ProjectSettings_property_rendering/limits/opengl/max_renderable_lights>`. Impostando un valore basso si ridurrà leggermente l'uso della memoria, si potrebbero ridurre i tempi di compilazione dello shader e si potrebbe velocizzare il rendering su dispositivi di fascia bassa, mobili o Web.
+Numero massimo di luci omni e luci spot renderizzabili per ogni oggetto. Al valore predefinito di 8, ciò significa che ogni superficie può essere influenzata da un massimo di 8 luci omni e 8 luci spot. Ciò è ulteriormente limitato dal supporto dell'hardware e da :ref:`rendering/limits/opengl/max_renderable_lights<class_ProjectSettings_property_rendering/limits/opengl/max_renderable_lights>`. Impostando un valore basso si ridurrà leggermente l'uso della memoria, si potrebbero ridurre i tempi di compilazione dello shader e si potrebbe velocizzare il rendering su dispositivi di fascia bassa, mobili o Web.
 
 \ **Nota:** Questa impostazione è efficace solo quando si utilizza il metodo di rendering Compatibilità, non Forward+ e Mobile.
 
@@ -12893,7 +12893,7 @@ Il bias di LOD automatico da utilizzare per le mesh renderizzate all'interno dei
 
 \ **Nota:** A seconda degli attributi della mesh (colori dei vertici, forme di fusione, ecc.), una mesh potrebbe avere meno livelli di LOD generati per evitare distorsioni evidenti una volta che è influenzata dai colori dei vertici o dalle forme di fusione. Le mesh con pochissimi vertici non avranno alcun LOD generato, il che significa che questa impostazione non le influenzerà affatto. In generale, questa impostazione ha il maggiore impatto sulle mesh statiche con un elevato numero di vertici.
 
-\ **Nota:** :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` non influisce sugli intervalli di visibilità di :ref:`GeometryInstance3D<class_GeometryInstance3D>` (noti anche come LOD "manuale" o LOD gerarchico).
+\ **Nota:** :ref:`rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` non influisce sui campi di visibilità di :ref:`GeometryInstance3D<class_GeometryInstance3D>` (noti anche come LOD "manuale" o LOD gerarchico).
 
 \ **Nota:** Questa proprietà è letta solo all'avvio del progetto. Per regolare la soglia di LOD automatica in fase di esecuzione, imposta :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` sulla :ref:`Viewport<class_Viewport>` radice.
 
@@ -12949,7 +12949,7 @@ Il numero di raggi di occlusione tracciati per ogni thread della CPU. Valori pi�
 
 Se ``true``, i nodi :ref:`OccluderInstance3D<class_OccluderInstance3D>` saranno utilizzabili per l'occlusion culling in 3D nella viewport radice. Nelle viewport personalizzate, :ref:`Viewport.use_occlusion_culling<class_Viewport_property_use_occlusion_culling>` deve essere impostato su ``true``.
 
-\ **Nota:** L'abilitazione dell'occlusion culling ha un costo sulla CPU. Abilita l'occlusion culling solo se hai effettivamente intenzione di usarlo. Grandi scene aperte con pochi o nessun oggetto che blocca la vista in genere non usufruiranno dall'occlusion culling. Le grandi scene aperte in genere usufruiranno da mesh LOD e intervalli di visibilità (:ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` e :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`) rispetto all'occlusion culling.
+\ **Nota:** L'abilitazione dell'occlusion culling ha un costo sulla CPU. Abilita l'occlusion culling solo se hai effettivamente intenzione di usarlo. Grandi scene aperte con pochi o nessun oggetto che blocca la vista in genere non usufruiranno dall'occlusion culling. Le grandi scene aperte in genere usufruiranno da mesh LOD e campi di visibilità (:ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` e :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`) rispetto all'occlusion culling.
 
 \ **Nota:** A causa di vincoli di memoria, l'occlusion culling non è supportato per impostazione predefinita nei modelli di esportazione Web. Può essere abilitato compilando modelli di esportazione Web personalizzati con ``module_raycast_enabled=yes``.
 
@@ -13085,17 +13085,17 @@ Se ``true``, riduce i riflessi basati sulla luce ambientale.
 
 :ref:`String<class_String>` **rendering/renderer/rendering_method** = ``"forward_plus"`` :ref:`🔗<class_ProjectSettings_property_rendering/renderer/rendering_method>`
 
-Sets the renderer that will be used by the project. Options are:
+Imposta il renderer che sarà utilizzato dal progetto. Le opzioni sono:
 
-\ **forward_plus** (Forward+): High-end renderer designed for desktop devices. Has a higher base overhead, but scales well with complex scenes. Not suitable for older devices or mobile.
+\ **forward_plus** (Forward+: Renderer di fascia alta progettato per i dispositivi desktop. Ha un overhead di base più elevato, ma si adatta bene alle scene complesse. Non adatto a dispositivi più vecchi o mobili.
 
-\ **mobile** (Mobile): Modern renderer designed for mobile devices. Has a lower base overhead than Forward+, but does not scale as well to large scenes with many elements.
+\ **mobile** (Mobile): Renderer moderno progettato per i dispositivi mobili. Ha un overhead di base inferiore a Forward+, ma non si adatta bene alle scene di grandi dimensioni con molti elementi.
 
-\ **gl_compatibility** (Compatibility): Low-end renderer designed for older devices. Based on the limitations of the OpenGL 3.3 / OpenGL ES 3.0 / WebGL 2 APIs. Lighting calculations are performed on nonlinear sRGB-encoded color data, which produces inaccurate results that may look acceptable for some games.
+\ **gl_ccompatibility** (Compatibilità): Renderer di fascia bassa progettato per i dispositivi più vecchi. Basato sulle limitazioni delle API OpenGL 3.3/OpenGL ES 3.0/WebGL 2. L'illuminazione è calcolata con dati di colore in codifica sRGB non lineare, il che produce risultati poco precisi ma accettabili per alcuni giochi. 
 
-This can be overridden using the ``--rendering-method <method>`` command line argument.
+È possibile sovrascrivere questa impostazione attraverso l'argomento della riga di comando ``--rendering-method <method>``.
 
-\ **Note:** The actual rendering method may be automatically changed by the engine as a result of a fallback, or a user-specified command line argument. To get the actual rendering method that is used at runtime, use :ref:`RenderingServer.get_current_rendering_method()<class_RenderingServer_method_get_current_rendering_method>` instead of reading this project setting's value.
+\ **Nota:** È possibile che il metodo di rendering effettivo sia modificato automaticamente dal motore come risultato di riserva o di un argomento della riga di comando specificato dall'utente. Per ottenere il metodo di rendering effettivo utilizzato durante l'esecuzione, usa :ref:`RenderingServer.get_current_rendering_method()<class_RenderingServer_method_get_current_rendering_method>` invece di leggere il valore di questa impostazione del progetto.
 
 .. rst-class:: classref-item-separator
 
@@ -13131,7 +13131,7 @@ Sostituzione per :ref:`rendering/renderer/rendering_method<class_ProjectSettings
 
 :ref:`int<class_int>` **rendering/rendering_device/d3d12/agility_sdk_version** = ``618`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/d3d12/agility_sdk_version>`
 
-Version code of the `Direct3D 12 Agility SDK <https://devblogs.microsoft.com/directx/directx12agility/>`__ to use (``D3D12SDKVersion``). This must match the *minor* version that is installed next to the editor binary and in the export templates directory for the current editor version. For example, if you have ``1.618.5`` installed, you need to input ``618`` here.
+Il codice di versione di `Direct3D 12 Agility SDK <https://devblogs.microsoft.com/directx/directx12agility/>`__ da utilizzare (``D3D12SDKVersion``). Deve corrispondere alla versione *minore* installata accanto al binario dell'editor e nella cartella dei modelli di esportazione per la versione attuale dell'editor. Ad esempio, se hai installato ``1.618.5``, devi inserire ``618`` qui.
 
 .. rst-class:: classref-item-separator
 
@@ -13143,9 +13143,9 @@ Version code of the `Direct3D 12 Agility SDK <https://devblogs.microsoft.com/dir
 
 :ref:`int<class_int>` **rendering/rendering_device/d3d12/max_resource_descriptors** = ``65536`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/d3d12/max_resource_descriptors>`
 
-The number of entries in the resource descriptor heap the Direct3D 12 rendering driver uses for most rendering operations.
+Il numero di voci nell'heap dei descrittori di risorse che il driver di rendering Direct3D 12 usa per la maggior parte delle operazioni di rendering.
 
-Depending on the complexity of scenes, this value may be lowered or may need to be raised.
+A seconda della complessità delle scene, questo valore potrebbe essere abbassato o potrebbe essere necessario aumentarlo.
 
 .. rst-class:: classref-item-separator
 
@@ -13157,9 +13157,9 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`int<class_int>` **rendering/rendering_device/d3d12/max_sampler_descriptors** = ``1024`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/d3d12/max_sampler_descriptors>`
 
-The number of entries in the sampler descriptor heap the Direct3D 12 rendering driver uses for most rendering operations.
+Il numero di voci nell'heap dei descrittori di campionatori che il driver di rendering Direct3D 12 usa per la maggior parte delle operazioni di rendering.
 
-Depending on the complexity of scenes, this value may be lowered or may need to be raised.
+A seconda della complessità delle scene, questo valore potrebbe essere abbassato o potrebbe essere necessario aumentarlo.
 
 .. rst-class:: classref-item-separator
 
@@ -13307,9 +13307,9 @@ Sono supportate due opzioni:
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_d3d12** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>`
 
-If ``true``, the Forward+ renderer will fall back to Direct3D 12 if Vulkan is not supported. The fallback is always attempted regardless of this setting if Vulkan driver support was disabled at compile time.
+Se ``true``, il renderer Forward ricadrà su Direct3D 12 se Vulkan non è supportato. L'alternativa viene sempre tentata, a prescindere da questa impostazione, se il supporto per il driver Vulkan è stato disabilitato in fase di compilazione.
 
-\ **Note:** This setting is implemented only on Windows.
+\ **Nota:** Questa impostazione è implementata solo su Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -13321,9 +13321,9 @@ If ``true``, the Forward+ renderer will fall back to Direct3D 12 if Vulkan is no
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_opengl3** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_opengl3>`
 
-If ``true``, the Forward+ renderer will fall back to OpenGL 3 if Direct3D 12, Metal, and Vulkan are not supported.
+Se ``true``, il renderer Forward+ ricadrà su OpenGL 3 se Direct3D 12, Metal e Vulkan non sono supportati.
 
-\ **Note:** This setting is implemented on Windows, Android, macOS, iOS, and Linux/X11.
+\ **Nota:** Questa impostazione è implementata su Windows, Android, macOS, iOS e Linux/X11.
 
 .. rst-class:: classref-item-separator
 
@@ -13335,9 +13335,9 @@ If ``true``, the Forward+ renderer will fall back to OpenGL 3 if Direct3D 12, Me
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_vulkan** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>`
 
-If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on Windows) or Metal (on macOS x86_64) are not supported. The fallback is always attempted regardless of this setting if Direct3D 12 (Windows) or Metal (macOS) driver support was disabled at compile time.
+Se ``true``, il renderer Forward ricadrà su Vulkan se Direct3D 12 (su Windows) o Metal (su macOS x86_64) non è supportato. L'alternativa viene sempre tentata, a prescindere da questa impostazione, se il supporto per il driver Direct3D 12 (Windows) o Metal (macOS) è stato disabilitato in fase di compilazione.
 
-\ **Note:** This setting is implemented on Windows and macOS.
+\ **Nota:** Questa impostazione è implementata su Windows e macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -13451,19 +13451,19 @@ Prova il `Simulatore di V-Sync <https://darksylinc.github.io/vsync_simulator/>`_
 
 :ref:`int<class_int>` **rendering/rendering_device/vsync/swapchain_image_count** = ``3`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/vsync/swapchain_image_count>`
 
-The number of images the swapchain will consist of (back buffers + front buffer).
+Il numero di immagini di cui sarà composta la swapchain (back buffer + front buffer).
 
-\ ``2`` corresponds to double-buffering and ``3`` to triple-buffering.
+\ ``2`` corrisponde al doppio buffering e ``3`` al triplo buffering.
 
-Double-buffering may give you the lowest lag/latency but if V-Sync is on and the system can't render at 60 fps, the framerate will go down in multiples of it (e.g. 30 fps, 15, 7.5, etc.). Triple buffering gives you higher framerate (specially if the system can't reach a constant 60 fps) at the cost of up to 1 frame of latency, with :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` (FIFO).
+Il doppio buffering potrebbe offrire ritardo e latenza più bassi, ma se il V-Sync è abilitato e il sistema non riesce a renderizzarea 60 fps, il frame rate diminuirà in multipli di esso (ad esempio 30 fps, 15, 7.5, ecc.). Il triplo buffering offrirà un frame rate più alto (specialmente se il sistema non riesce a raggiungere 60 fps costanti) al costo di un massimo di 1 frame di latenza, con :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` (FIFO).
 
-Use double-buffering with :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>`. Triple-buffering is a must if you plan on using :ref:`DisplayServer.VSYNC_MAILBOX<class_DisplayServer_constant_VSYNC_MAILBOX>` mode.
+Usa il doppio buffering con :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>`. Il triplo buffering è indispensabile se hai intenzione di usare la modalità :ref:`DisplayServer.VSYNC_MAILBOX<class_DisplayServer_constant_VSYNC_MAILBOX>`.
 
-Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an interactive interface that simulates presentation to better understand how it is affected by different variables under various conditions.
+Prova `Simulatore di V-Sync <https://darksylinc.github.io/vsync_simulator/>`__, un'interfaccia interattiva che simula la presentazione per comprendere meglio come è influenzata da diverse variabili in varie condizioni.
 
-\ **Note:** Changes to this setting will only be applied on startup or when the swapchain is recreated (e.g. when setting the V-Sync mode).
+\ **Nota:** Le modifiche a questa impostazione verranno applicate solo all'avvio o quando viene ricreata la swapchain (ad esempio, quando si imposta la modalità V-Sync).
 
-\ **Note:** Some platforms may restrict the actual value.
+\ **Nota:** Alcune piattaforme potrebbero limitare il valore effettivo.
 
 .. rst-class:: classref-item-separator
 
@@ -13541,7 +13541,7 @@ Sostituzione su macOS per :ref:`rendering/scaling_3d/mode<class_ProjectSettings_
 
 :ref:`float<class_float>` **rendering/scaling_3d/scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_rendering/scaling_3d/scale>`
 
-Ridimensiona il buffer di rendering 3D in base alle dimensioni della viewport, usando un filtro d'immagine specificato in :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` per ridimensionare l'immagine finale alle dimensioni intere della viewport. È possibile usare valori inferiori a ``1.0`` per velocizzare il rendering 3D a scapito della qualità (sottocampionamento). Valori superiori a ``1.0`` sono validi solo per la modalità bilineare ed è possibile usarli per migliorare la qualità del rendering 3D a un impatto elevato sulle prestazioni (sovracampionamento). Vedi anche :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` per l'antialiasing multi-campione, che è significativamente più performante ma smussa solo i bordi dei poligoni.
+Ridimensiona il buffer di rendering 3D in base alle dimensioni della viewport, usando un filtro d'immagine specificato in :ref:`rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` per ridimensionare l'immagine finale alle dimensioni intere della viewport. È possibile usare valori inferiori a ``1.0`` per velocizzare il rendering 3D a scapito della qualità (sottocampionamento). Valori superiori a ``1.0`` sono validi solo per la modalità bilineare ed è possibile usarli per migliorare la qualità del rendering 3D a un impatto elevato sulle prestazioni (sovracampionamento). Vedi anche :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` per l'antialiasing multicampione, che è significativamente più performante ma smussa solo i bordi dei poligoni.
 
 \ **Nota:** Quando si utilizza la modalità di ridimensionamento **Nearest**, per evitare un ridimensionamento non uniforme dei pixel, si consiglia vivamente di utilizzare un valore pari a un divisore intero con dividendo di ``1``. Ad esempio, è meglio usare una scala di ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5) e così via.
 
@@ -13757,9 +13757,9 @@ Il livello del filtro anisotropico influisce anche su decalcomanie e proiettori 
 
 Influisce sulla nitidezza finale della texture leggendo da una mipmap inferiore o superiore (chiamata anche "texture LOD bias"). I valori negativi rendono le texture mipmap più nitide ma più granulose se viste da lontano, mentre i valori positivi rendono le texture mipmap più sfocate (anche da vicino).
 
-Attivando l'antialiasing temporale (:ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) sarà applicata automaticamente una deviazione di ``-0.5`` a questo valore, mentre attivando il FXAA (:ref:`rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`) sarà applicata automaticamente una deviazione di ``-0.25`` a questo valore. Se TAA e FXAA sono abilitati allo stesso tempo, a questo valore è applicata una deviazione di ``-0.75``.
+Attivando l'antialiasing temporale (:ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) sarà applicata automaticamente una deviazione di ``-0.5`` a questo valore, mentre attivando l'FXAA (:ref:`rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`) sarà applicata automaticamente una deviazione di ``-0.25`` a questo valore. Se il TAA e l'FXAA sono abilitati allo stesso tempo, a questo valore è applicata una deviazione di ``-0.75``.
 
-\ **Nota:** Se :ref:`rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` è inferiore a ``1.0`` (esclusivo), :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` è utilizzato per regolare il bias mipmap automatico che è calcolato internamente in base al fattore di scala. La formula per questo è ``log2(scaling_3d_scale) + mipmap_bias``.
+\ **Nota:** Se :ref:`rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` è inferiore a ``1.0`` (esclusivo), :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` è utilizzato per regolare il bias mipmap automatico, calcolato internamente in base al fattore di scala. La formula per questo è ``log2(scaling_3d_scale) + mipmap_bias``.
 
 \ **Nota:** Questa proprietà è supportata solo nei renderer Forward+ e Mobile, non in Compatibilità. In Compatibilità, questa proprietà è sempre trattata come se fosse impostata su ``0.0``.
 
@@ -13811,7 +13811,7 @@ Se ``true``, l'importatore di texture importerà texture senza perdite usando il
 
 :ref:`bool<class_bool>` **rendering/textures/vram_compression/cache_gpu_compressor** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/vram_compression/cache_gpu_compressor>`
 
-If ``true``, the GPU texture compressor will cache the local RenderingDevice and its resources (shaders and pipelines), making subsequent imports faster at the cost of increased memory usage.
+Se ``true``, il compressore delle texture della GPU memorizzerà nella cache il RenderingDevice locale e le sue risorse (shader e pipeline), rendendo più rapide eventuali importazioni successive a scapito di maggiore uso della memoria.
 
 .. rst-class:: classref-item-separator
 
@@ -13974,7 +13974,7 @@ Il rapporto di thread di :ref:`WorkerThreadPool<class_WorkerThreadPool>` che sar
 
 :ref:`int<class_int>` **threading/worker_pool/max_threads** = ``-1`` :ref:`🔗<class_ProjectSettings_property_threading/worker_pool/max_threads>`
 
-Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThreadPool>`. On Web, a value of ``-1`` means ``1``. On other platforms, it means all *logical* CPU cores available (see :ref:`OS.get_processor_count()<class_OS_method_get_processor_count>`).
+Il numero massimo di thread da utilizzare dal :ref:`WorkerThreadPool<class_WorkerThreadPool>`. Sul Web, un valore di ``-1`` indica ``1``. Sulle altre piattaforme, indica tutti i core *logici* disponibili nella CPU (vedi :ref:`OS.get_processor_count()<class_OS_method_get_processor_count>`).
 
 .. rst-class:: classref-item-separator
 
@@ -14082,9 +14082,9 @@ Specifica se abilitare il tracciamento degli occhi per questo progetto. A second
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/frame_synthesis** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/frame_synthesis>`
 
-If ``true`` the frame synthesis extension will be activated if supported by the platform.
+Se impostato su ``true``, l'estensione di sintesi dei frame verrà attivata, se supportata dalla piattaforma.
 
-\ **Note:** This feature should not be enabled in conjunction with Application Space Warp, if supported this replaces ASW.
+\ **Nota:** Questa funzionalità non si dovrebbe abilitare insieme ad Application Space Warp; se supportata, sostituisce ASW.
 
 .. rst-class:: classref-item-separator
 
@@ -14230,7 +14230,7 @@ Se ``true``, abilitiamo la logica integrata per gestire il rilevamento dei piani
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_marker_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_marker_tracking>`
 
-Se impostato su ``true``, è richiesto il supporto per l'estensione di tracciamento dei marcatori. Se supportata, sarà possibile interrogare le informazioni sui marcatori rilevati dal runtime XR, ad esempio codici QR, marcatori Aruca e tag April.
+Se impostato su ``true``, è richiesto il supporto per l'estensione di tracciamento dei marcatori. Se supportata, sarà possibile interrogare le informazioni sui marcatori rilevati dal runtime XR, ad esempio codici QR, marcatori Aruca e April tag.
 
 \ **Nota:** Ciò richiede che le estensioni di tracciamento dei marcatori e delle entità spaziali OpenXR siano supportate dal runtime XR. Se non supportate, questa impostazione sarà ignorata. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` deve essere abilitato affinché sia possibile utilizzare questa impostazione.
 
@@ -14244,9 +14244,9 @@ Se impostato su ``true``, è richiesto il supporto per l'estensione di tracciame
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_persistent_anchors** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_persistent_anchors>`
 
-If ``true``, support for the persistent anchors extension is requested. If supported, you will be able to store spatial anchors and they will be restored on application startup.
+Se ``true``, è richiesto il supporto per l'estensione degli ancoraggi persistenti. Se supportato, sarà possibile memorizzare gli ancoraggi spaziali e verranno ripristinati all'avvio dell'applicazione.
 
-\ **Note:** This requires that the OpenXR spatial entities, spatial anchors, and spatial persistence extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` and :ref:`xr/openxr/extensions/spatial_entity/enable_spatial_anchors<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>` must be enabled for this setting to be used.
+\ **Nota:** Questo richiede che le estensioni OpenXR delle entità spaziali, ancoraggi spaziali e persistenza spaziale siano supportate dal runtime XR. Se non supportate, questa impostazione sarà ignorata. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` e :ref:`xr/openxr/extensions/spatial_entity/enable_spatial_anchors<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>` devono essere abilitati affinché sia possibile utilizzare questa impostazione.
 
 .. rst-class:: classref-item-separator
 
@@ -14272,9 +14272,9 @@ Se impostato su ``true``, è richiesto il supporto per l'estensione di tracciame
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_spatial_anchors** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>`
 
-If ``true``, support for the spatial anchors extension is requested. If supported, you will be able to register anchor locations in the real world that the XR runtime will adjust as needed and/or potentially share with other headsets.
+Se ``true``, è richiesto il supporto per l'estensione degli ancoraggi spaziali. Se supportata, sarà possibile registrare posizioni di ancoraggio nel mondo reale che il runtime XR adatterà automaticamente e/o potenzialmente condividerà con altri visori.
 
-\ **Note:** This requires that the OpenXR spatial entities and spatial anchors extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **Nota:** Questo richiede che le estensioni OpenXR per le entità spaziali e ancoraggi spaziali siano supportate dal runtime XR. Se non supportate, questa impostazione sarà ignorata. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` deve essere abilitato affinché sia possibile utilizzare questa impostazione.
 
 .. rst-class:: classref-item-separator
 
@@ -14286,9 +14286,9 @@ If ``true``, support for the spatial anchors extension is requested. If supporte
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enabled** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>`
 
-If ``true``, support for the spatial entity extension is requested. If supported, you will be able to access spatial information about the real environment around you. What information is available is dependent on additional extensions.
+Se ``true``, è richiesto il supporto per l'estensione delle entità spaziali. Se supportata, sarà possibile accedere alle informazioni spaziali riguardo all'ambiente reale circonstante. Le informazioni disponibili dipendono da eventuali estensioni aggiuntive.
 
-\ **Note:** This requires that the OpenXR spatial entities extension is supported by the XR runtime. If not supported this setting will be ignored.
+\ **Nota:** Questo richiede che l'estensione OpenXR per le entità spaziali sia supportata dal runtime XR. Se non supportata, questa impostazione sarà ignorata.
 
 .. rst-class:: classref-item-separator
 
@@ -14300,7 +14300,7 @@ If ``true``, support for the spatial entity extension is requested. If supported
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/user_presence** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/user_presence>`
 
-If ``true``, the user presence extension is enabled if available.
+Se ``true``, l'estensione di presenza dell'utente è abilitata se disponibile.
 
 .. rst-class:: classref-item-separator
 
@@ -14336,7 +14336,7 @@ Se è ``true`` e la foveazione è supportata, regolerà automaticamente il livel
 
 :ref:`bool<class_bool>` **xr/openxr/foveation_eye_tracked** = ``true`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_eye_tracked>`
 
-If ``true`` and foveation level is set to anything other than "Disabled", eye-tracked foveation will be used, so long as it's supported by the headset.
+Se ``true`` e il livello di foveazione è impostato su un valore diverso da "Disabled", sarà utilizzata la foveazione tracciata dagli occhi, purché sia supportata dal visore.
 
 .. rst-class:: classref-item-separator
 
@@ -14348,9 +14348,9 @@ If ``true`` and foveation level is set to anything other than "Disabled", eye-tr
 
 :ref:`int<class_int>` **xr/openxr/foveation_level** = ``"0"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_level>`
 
-Applied foveation level if supported.
+Il livello di foveazione applicato se supportato.
 
-\ **Note:** On platforms other than Android, if :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` is enabled, this feature will be disabled.
+\ **Nota:** Su piattaforme diverse da Android, se :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` è abilitato, questa funzionalità sarà disabilitata.
 
 .. rst-class:: classref-item-separator
 
@@ -14362,9 +14362,9 @@ Applied foveation level if supported.
 
 :ref:`bool<class_bool>` **xr/openxr/foveation_with_subsampled_images** = ``true`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_with_subsampled_images>`
 
-If ``true`` and foveation is also enabled, subsampled images will be used on Vulkan. This can improve the performance gain from foveated rendering, especially when using high foveation levels.
+Se ``true`` e anche la foveazione è abilitata, su Vulkan saranno utilizzate immagini sottocampionate. Questo può migliorare le prestazioni del rendering foveato, soprattutto quando si utilizzano livelli alti di foveazione.
 
-\ **Note:**: Using subsampled images is incompatible with many screen-space rendering features or post-processing effects like FXAA or glow. If any such effects are enabled, subsampled images will automatically be disabled and a warning shown in the log.
+\ **Nota:**: L'utilizzo di immagini sottocampionate è incompatibile con molte funzionalità di rendering nello spazio dello schermo o effetti di post-elaborazione come FXAA o bagliore. Se uno qualsiasi di questi effetti è abilitato, le immagini sottocampionate saranno automaticamente disabilitate e apparirà un avviso nel log.
 
 .. rst-class:: classref-item-separator
 
@@ -14412,7 +14412,7 @@ Se ``true``, OpenXR gestirà il buffer di profondità e utilizzerà il buffer di
 
 :ref:`String<class_String>` **xr/openxr/target_api_version** = ``""`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/target_api_version>`
 
-Optionally sets a specific API version of OpenXR to initialize in ``major.minor.patch`` notation. Some XR runtimes gate old behavior behind version checks. This is non-standard OpenXR behavior.
+Imposta facoltativamente una versione specifica dell'API di OpenXR da inizializzare, in notazione ``major.minor.patch``. Alcuni runtime XR vincolano i vecchi comportamenti con verifiche di versione. Questo non è un comportamento standard di OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -14529,7 +14529,7 @@ Cancella l'intera configurazione (non consigliato, potrebbe causare danni).
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_changed_settings**\ (\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_changed_settings>`
 
-Gets an array of the settings which have been changed since the last save. Note that internally ``changed_settings`` is cleared after a successful save, so generally the most appropriate place to use this method is when processing :ref:`settings_changed<class_ProjectSettings_signal_settings_changed>`.
+Ottiene un array delle impostazioni che sono state modificate dall'ultimo salvataggio. Nota che internamente ``changed_settings`` viene cancellato dopo un salvataggio riuscito, quindi in genere il posto più appropriato per usare questo metodo è quando si elabora :ref:`settings_changed<class_ProjectSettings_signal_settings_changed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -14719,9 +14719,9 @@ Restituisce il percorso localizzato (che inizia con ``res://``) corrispondente a
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ ) :ref:`🔗<class_ProjectSettings_method_save>`
 
-Saves the configuration to the ``project.godot`` file.
+Salva la configurazione nel file ``project.godot``.
 
-\ **Note:** This method is intended to be used by editor plugins, as modified **ProjectSettings** can't be loaded back in the running app. If you want to change project settings in exported projects, use :ref:`save_custom()<class_ProjectSettings_method_save_custom>` to save an ``override.cfg`` file.
+\ **Nota:** Questo metodo è pensato per essere utilizzato dalle estensioni dell'editor, poiché le impostazioni modificate di **ProjectSettings** non possono essere ricaricate nell'applicazione in esecuzione. Se vuoi modificare le impostazioni del progetto nei progetti esportati, usa :ref:`save_custom()<class_ProjectSettings_method_save_custom>` per salvare un file ``override.cfg``.
 
 .. rst-class:: classref-item-separator
 
@@ -14733,7 +14733,7 @@ Saves the configuration to the ``project.godot`` file.
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_custom**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ProjectSettings_method_save_custom>`
 
-Saves the configuration to a custom file. The file extension must be ``.godot`` (to save in text-based :ref:`ConfigFile<class_ConfigFile>` format) or ``.binary`` (to save in binary format). You can also save an ``override.cfg`` file, which is also text, but can be used in exported projects unlike other formats.
+Salva la configurazione in un file personalizzato. L'estensione del file deve essere ``.godot`` (per salvare in formato :ref:`ConfigFile<class_ConfigFile>` basato su testo) o ``.binary`` (per salvare in formato binario). Puoi anche salvare un file ``override.cfg``, che è anche testo, ma può essere utilizzato in progetti esportati a differenza di altri formati.
 
 .. rst-class:: classref-item-separator
 
@@ -14843,7 +14843,7 @@ Questo può anche essere usato per cancellare le impostazioni personalizzate del
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

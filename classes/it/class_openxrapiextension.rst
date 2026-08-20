@@ -325,7 +325,7 @@ Restituisce il tempo di visualizzazione previsto per il prossimo frame.
 
 :ref:`int<class_int>` **get_openxr_version**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_openxr_version>`
 
-Returns the version of OpenXR that was initialized. Only valid after the OpenXR instance has been created. See `XR_MAKE_VERSION <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_MAKE_VERSION>`__ for how the version is calculated.
+Restituisce la versione di OpenXR che è stata inizializzata. Valido solo dopo aver creato l'istanza di OpenXR. Vedi `XR_MAKE_VERSION <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_MAKE_VERSION>`__ per informazioni su come viene calcolata la versione.
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ Restituisce il nome del formato swapchain specificato.
 
 :ref:`int<class_int>` **get_system_id**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_system_id>`
 
-Returns the ID of the system, which is an `XrSystemId <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__ cast to an integer.
+Restituisce l'ID del sistema, che è un `XrSystemId <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__ convertito in un intero.
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Returns the ID of the system, which is an `XrSystemId <https://registry.khronos.
 
 :ref:`int<class_int>` **get_view_configuration**\ (\ ) |const| :ref:`🔗<class_OpenXRAPIExtension_method_get_view_configuration>`
 
-Returns the view configuration type, which is an `XrViewConfigurationType <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrViewConfigurationType.html>`__ cast to an integer.
+Restituisce il tipo di configurazione di vista, che è un `XrViewConfigurationType <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrViewConfigurationType.html>`__ convertito in un intero.
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +463,7 @@ Returns the view configuration type, which is an `XrViewConfigurationType <https
 
 :ref:`int<class_int>` **get_view_count**\ (\ ) |const| :ref:`🔗<class_OpenXRAPIExtension_method_get_view_count>`
 
-Returns the number of views. It is usually two, one for each eye, but may differ with different view configurations.
+Restituisce il numero di viste. Solitamente è due, una per occhio, ma può variare a seconda delle diverse configurazioni di vista.
 
 .. rst-class:: classref-item-separator
 
@@ -649,9 +649,9 @@ Registra l'estensione specificata come modificatrice di ``XrCompositionLayerProj
 
 |void| **register_projection_views_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_register_projection_views_extension>`
 
-Registers the given extension as a provider of additional data structures to projections views.
+Registra l'estensione specificata come fornitore di strutture dati aggiuntive per le viste di proiezione.
 
-\ **Note:** This cannot be called after the OpenXR session has started. However, it can be called in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
+\ **Nota:** Non si può chiamare dopo aver avviato la sessione OpenXR. Tuttavia, si può chiamare in :ref:`OpenXRExtensionWrapper._on_session_created()<class_OpenXRExtensionWrapper_private_method__on_session_created>`.
 
 .. rst-class:: classref-item-separator
 
@@ -773,9 +773,9 @@ Annulla la registrazione dell'estensione specificata come fornitore del livello 
 
 |void| **unregister_frame_info_extension**\ (\ extension\: :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_unregister_frame_info_extension>`
 
-Unregisters the given extension as modifying frame info.
+Annulla la registrazione dell'estensione specificata come modificatrice delle informazioni del frame.
 
-\ **Note:** This cannot be called while the OpenXR session is still running.
+\ **Nota:** Non si può chiamare mentre la sessione OpenXR è ancora in esecuzione.
 
 .. rst-class:: classref-item-separator
 
@@ -815,7 +815,7 @@ Annulla la registrazione dell'estensione specificata come fornitore di ulteriori
 
 |void| **update_main_swapchain_size**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_update_main_swapchain_size>`
 
-Request the recommended resolution from the OpenXR runtime and update the main swapchain size if it has changed.
+Richiede la risoluzione consigliata al runtime OpenXR e aggiorna la dimensione della swapchain principale se è cambiata.
 
 .. rst-class:: classref-item-separator
 
@@ -833,7 +833,7 @@ Restituisce ``true`` se l'`XrResult <https://registry.khronos.org/OpenXR/specs/1
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

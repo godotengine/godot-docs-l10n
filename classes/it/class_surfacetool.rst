@@ -14,7 +14,7 @@ Strumento di supporto per la creazione di geometrie.
 Descrizione
 ----------------------
 
-**SurfaceTool** serve per costruire una :ref:`Mesh<class_Mesh>` specificando gli attributi dei vertici singolarmente. Può essere utilizzato per costruire una :ref:`Mesh<class_Mesh>` da uno script. È necessario aggiungere tutte le proprietà, eccetto gli indici, prima di chiamare :ref:`add_vertex()<class_SurfaceTool_method_add_vertex>`. Ad esempio, per aggiungere i colori dei vertici e gli UV:
+**SurfaceTool** serve per costruire una :ref:`Mesh<class_Mesh>` specificando gli attributi dei vertici singolarmente. Server per costruire una :ref:`Mesh<class_Mesh>` da uno script. È necessario aggiungere tutte le proprietà, eccetto gli indici, prima di chiamare :ref:`add_vertex()<class_SurfaceTool_method_add_vertex>`. Ad esempio, per aggiungere i colori dei vertici e gli UV:
 
 
 .. tabs::
@@ -678,7 +678,7 @@ Specifica i valori di peso da usare per il *prossimo* vertice. Se ogni vertice d
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -17,11 +17,11 @@ SpinBox
 Описание
 ----------------
 
-**SpinBox** is a numerical input text field. It allows entering integers and floating-point numbers. The **SpinBox** also has up and down buttons that can be clicked to increase or decrease the value. The value can also be changed by dragging the mouse up or down over the **SpinBox**'s arrows.
+**SpinBox** — это числовое текстовое поле ввода. Оно позволяет вводить целые числа и числа с плавающей точкой. **SpinBox** также имеет кнопки вверх и вниз, которые можно нажимать для увеличения или уменьшения значения. Значение также можно изменить, перетаскивая мышь вверх или вниз по стрелкам **SpinBox**.
 
-Additionally, mathematical expressions can be entered. These are evaluated when the user presses :kbd:`Enter` while editing the **SpinBox**'s text field. This uses the :ref:`Expression<class_Expression>` class to parse and evaluate the expression. The result of the expression is then set as the value of the **SpinBox**. Some examples of valid expressions are ``5 + 2 * 3``, ``pow(2, 4)``, and ``PI + sin(0.5)``. Expressions are case-sensitive.
+Кроме того, можно вводить математические выражения. Они вычисляются, когда пользователь нажимает :kbd:`Enter` во время редактирования текстового поля **SpinBox**. При этом используется класс :ref:`Expression<class_Expression>` для анализа и оценки выражения. Затем результат выражения устанавливается как значение **SpinBox**. Вот некоторые примеры допустимых выражений: ``5 + 2 * 3``, ``pow(2, 4)`` и ``PI + sin(0.5)``. Выражения чувствительны к регистру.
 
-\ **Example:** Create a **SpinBox**, disable its context menu and set its text alignment to right.
+\ **Пример:** Создайте **SpinBox**, отключите его контекстное меню и установите выравнивание текста по правому краю.
 
 
 .. tabs::
@@ -44,13 +44,13 @@ Additionally, mathematical expressions can be entered. These are evaluated when 
 
 
 
-See :ref:`Range<class_Range>` class for more options over the **SpinBox**.
+См. класс :ref:`Range<class_Range>` для получения дополнительных параметров по сравнению с **SpinBox**.
 
-\ **Note:** With the **SpinBox**'s context menu disabled, you can right-click the bottom half of the spinbox to set the value to its minimum, while right-clicking the top half sets the value to its maximum.
+\ **Примечание:** При отключенном контекстном меню **SpinBox** вы можете щелкнуть правой кнопкой мыши по нижней половине счетчика, чтобы установить минимальное значение, а щелчок правой кнопкой мыши по верхней половине устанавливает максимальное значение.
 
-\ **Note:** **SpinBox** relies on an underlying :ref:`LineEdit<class_LineEdit>` node. To theme a **SpinBox**'s background, add theme items for :ref:`LineEdit<class_LineEdit>` and customize them. The :ref:`LineEdit<class_LineEdit>` has the ``SpinBoxInnerLineEdit`` theme variation, so that you can give it a distinct appearance from regular :ref:`LineEdit<class_LineEdit>`\ s.
+\ **Примечание:** **SpinBox** опирается на базовый узел :ref:`LineEdit<class_LineEdit>`. Чтобы задать тему фона **SpinBox**, добавьте элементы темы для :ref:`LineEdit<class_LineEdit>` и настройте их. :ref:`LineEdit<class_LineEdit>` имеет вариацию темы ``SpinBoxInnerLineEdit``, так что вы можете придать ему отличный внешний вид от обычных :ref:`LineEdit<class_LineEdit>`.
 
-\ **Note:** If you want to implement drag and drop for the underlying :ref:`LineEdit<class_LineEdit>`, you can use :ref:`Control.set_drag_forwarding()<class_Control_method_set_drag_forwarding>` on the node returned by :ref:`get_line_edit()<class_SpinBox_method_get_line_edit>`.
+\ **Примечание:** Если вы хотите реализовать перетаскивание для базового :ref:`LineEdit<class_LineEdit>`, вы можете использовать :ref:`Control.set_drag_forwarding()<class_Control_method_set_drag_forwarding>` на узле, возвращаемом :ref:`get_line_edit()<class_SpinBox_method_get_line_edit>`.
 
 .. rst-class:: classref-reftable-group
 

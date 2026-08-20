@@ -4514,7 +4514,7 @@ enum **Variant.Type**: :ref:`🔗<enum_@GlobalScope_Variant.Type>`
 
 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` **TYPE_PROJECTION** = ``19``
 
-Переменная имеет тип ``Проекция``.
+Переменная имеет тип :ref:`Projection<class_Projection>`.
 
 .. _class_@GlobalScope_constant_TYPE_COLOR:
 
@@ -5703,7 +5703,7 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 Возвращает тангенс гиперболической дуги (также называемой обратной) к ``x``, возвращая значение в радианах. Используется для получения угла из тангенса угла в гиперболическом пространстве, если ``x`` находится в диапазоне от -1 до 1 (не включительно).
 
-В математике обратный гиперболический тангенс определен только для -1 < ``x`` < 1 в вещественном множестве, поэтому значения, равные или меньшие -1 для ``x``, возвращают отрицательные :ref:`@GDScript.INF<class_@GDScript_constant_INF>`, а значения, равные или большие 1, возвращают положительные :ref:`@GDScript.INF()<class_@GDScript_method_INF>`, чтобы :ref:`atanh()<class_@GlobalScope_method_atanh>` не возвращал :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`.
+В математике обратный гиперболический тангенс определен только для -1 < ``x`` < 1 в вещественном множестве, поэтому значения, равные или меньшие -1 для ``x``, возвращают отрицательные :ref:`@GDScript.INF<class_@GDScript_constant_INF>`, а значения, равные или большие 1, возвращают положительные :ref:`@GDScript.INF<class_@GDScript_constant_INF>`, чтобы :ref:`atanh()<class_@GlobalScope_method_atanh>` не возвращал :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`.
 
 ::
 .

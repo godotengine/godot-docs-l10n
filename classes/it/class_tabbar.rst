@@ -310,7 +310,7 @@ Emesso quando si passa il mouse su una scheda.
 
 **tab_rmb_clicked**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_rmb_clicked>`
 
-Emitted when a tab is right-clicked.
+Emesso quando una scheda viene cliccata con il pulsante destro del mouse.
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_TabBar_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_LEFT** = ``0``
 
-Aligns tabs to the left.
+Allinea le schede a sinistra.
 
 .. _class_TabBar_constant_ALIGNMENT_CENTER:
 
@@ -353,7 +353,7 @@ Aligns tabs to the left.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_CENTER** = ``1``
 
-Aligns tabs in the middle.
+Allinea le schede in mezzo.
 
 .. _class_TabBar_constant_ALIGNMENT_RIGHT:
 
@@ -361,7 +361,7 @@ Aligns tabs in the middle.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_RIGHT** = ``2``
 
-Aligns tabs to the right.
+Allinea le schede a destra.
 
 .. _class_TabBar_constant_ALIGNMENT_MAX:
 
@@ -450,7 +450,7 @@ Se ``true``, le schede che superano la larghezza di questo nodo saranno nascoste
 - |void| **set_close_with_middle_mouse**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_close_with_middle_mouse**\ (\ )
 
-If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<class_TabBar_signal_tab_close_pressed>` signal.
+Se ``true``, cliccando con il pulsante centrale del mouse verrà emesso il segnale :ref:`tab_close_pressed<class_TabBar_signal_tab_close_pressed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -586,7 +586,7 @@ Se ``true``, consente di selezionare una scheda con il pulsante destro del mouse
 - |void| **set_switch_on_drag_hover**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_switch_on_drag_hover**\ (\ )
 
-If ``true``, hovering over a tab while dragging something will switch to that tab. Does not have effect when hovering another tab to rearrange. The delay for when this happens is dictated by :ref:`hover_switch_wait_msec<class_TabBar_theme_constant_hover_switch_wait_msec>`.
+Se ``true``, puntare il mouse su una scheda mentre si trascina qualcosa si passerà a quella scheda. Non ha effetto quando si punta il mouse su un'altra scheda per riorganizzare. Il ritardo prima che ciò accada è determinato da :ref:`hover_switch_wait_msec<class_TabBar_theme_constant_hover_switch_wait_msec>`.
 
 .. rst-class:: classref-item-separator
 
@@ -603,7 +603,7 @@ If ``true``, hovering over a tab while dragging something will switch to that ta
 - |void| **set_tab_alignment**\ (\ value\: :ref:`AlignmentMode<enum_TabBar_AlignmentMode>`\ )
 - :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **get_tab_alignment**\ (\ )
 
-The horizontal alignment of the tabs.
+L'allineamento orizzontale delle schede.
 
 .. rst-class:: classref-item-separator
 
@@ -649,9 +649,9 @@ Il numero di schede attualmente nella barra.
 
 :ref:`bool<class_bool>` **tab_{index}/disabled** = ``false`` :ref:`🔗<class_TabBar_property_tab_{index}/disabled>`
 
-If ``true``, the tab at ``index`` is disabled.
+Se ``true``, la scheda all'indice ``index`` è disabilitata.
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. tab_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -663,9 +663,9 @@ If ``true``, the tab at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **tab_{index}/icon** :ref:`🔗<class_TabBar_property_tab_{index}/icon>`
 
-If ``true``, the tab at ``index`` is hidden.
+Se ``true``, la scheda all'indice ``index`` è nascosta.
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. tab_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -677,9 +677,9 @@ If ``true``, the tab at ``index`` is hidden.
 
 :ref:`String<class_String>` **tab_{index}/title** = ``""`` :ref:`🔗<class_TabBar_property_tab_{index}/title>`
 
-The title text of the tab at ``index``.
+Il testo del titolo della scheda all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. tab_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -691,9 +691,9 @@ The title text of the tab at ``index``.
 
 :ref:`String<class_String>` **tab_{index}/tooltip** = ``""`` :ref:`🔗<class_TabBar_property_tab_{index}/tooltip>`
 
-The tooltip text of the tab at ``index``.
+Il testo del tooltip della scheda all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. tab_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -1053,7 +1053,7 @@ Imposta la larghezza massima consentita dell'icona per la scheda all'indice ``ta
 
 |void| **set_tab_language**\ (\ tab_idx\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TabBar_method_set_tab_language>`
 
-Sets the language code of the title for the tab at index ``tab_idx`` to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+Imposta il codice lingua del titolo della scheda all'indice ``tab_idx`` su ``language``. Serve per gli algoritmi di interruzione di riga e di formazione del testo. Se ``language`` è vuoto, viene utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -1192,7 +1192,7 @@ Il colore del font delle altre schede non selezionate.
 
 :ref:`Color<class_Color>` **icon_disabled_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_disabled_color>`
 
-Icon color of disabled tabs.
+Il colore dell'icona delle schede disabilitate.
 
 .. rst-class:: classref-item-separator
 
@@ -1204,7 +1204,7 @@ Icon color of disabled tabs.
 
 :ref:`Color<class_Color>` **icon_hovered_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_hovered_color>`
 
-Icon color of the currently hovered tab. Does not apply to the selected tab.
+Il colore dell'icona della scheda su cui si sta passando il mouse. Non si applica alla scheda selezionata.
 
 .. rst-class:: classref-item-separator
 
@@ -1216,7 +1216,7 @@ Icon color of the currently hovered tab. Does not apply to the selected tab.
 
 :ref:`Color<class_Color>` **icon_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_selected_color>`
 
-Icon color of the currently selected tab.
+Il colore dell'icona della scheda attualmente selezionata.
 
 .. rst-class:: classref-item-separator
 
@@ -1228,7 +1228,7 @@ Icon color of the currently selected tab.
 
 :ref:`Color<class_Color>` **icon_unselected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_unselected_color>`
 
-Icon color of the other, unselected tabs.
+Il colore dell'icona delle altre schede non selezionate.
 
 .. rst-class:: classref-item-separator
 
@@ -1252,7 +1252,7 @@ La separazione orizzontale tra gli elementi all'interno delle schede.
 
 :ref:`int<class_int>` **hover_switch_wait_msec** = ``500`` :ref:`🔗<class_TabBar_theme_constant_hover_switch_wait_msec>`
 
-During a drag-and-drop, this is how many milliseconds to wait before switching the tab.
+Durante un'operazione di trascinamento, indica quanti millisecondi attendere prima di cambiare scheda.
 
 .. rst-class:: classref-item-separator
 
@@ -1362,7 +1362,7 @@ L'icona per il pulsante freccia sinistra che appare quando ci sono troppe schede
 
 :ref:`Texture2D<class_Texture2D>` **drop_mark** :ref:`🔗<class_TabBar_theme_icon_drop_mark>`
 
-Icon shown to indicate where a dragged tab will be dropped (see :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`).
+L'icona mostrata per indicare dove sarà rilasciata una scheda trascinata (vedi :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1478,7 +1478,7 @@ Lo stile delle altre schede non selezionate.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -103,7 +103,7 @@ Descrizioni delle proprietà
 - |void| **set_convex_hull_approximation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_convex_hull_approximation**\ (\ )
 
-Se ``true``, usa un approssimazione per il calcolo degli hull convessi.
+Se ``true``, usa un approssimazione per il calcolo degli inviluppi convessi.
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ Se ``true``, usa un approssimazione per il calcolo degli hull convessi.
 - |void| **set_convex_hull_downsampling**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_convex_hull_downsampling**\ (\ )
 
-Controlla la precisione del processo di generazione dell'hull convesso durante la fase di selezione del piano di ritaglio. Varia da ``1`` a ``16``.
+Controlla la precisione del processo di generazione dell'inviluppo convesso durante la fase di selezione del piano di ritaglio. Varia da ``1`` a ``16``.
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ Concavità massima. Varia da ``0.0`` a ``1.0``.
 - |void| **set_max_convex_hulls**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_convex_hulls**\ (\ )
 
-Il numero massimo di hull convessi da produrre dall'operazione di unione.
+Il numero massimo di inviluppi convessi da produrre dall'operazione di unione.
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ Il numero massimo di hull convessi da produrre dall'operazione di unione.
 - |void| **set_max_num_vertices_per_convex_hull**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_num_vertices_per_convex_hull**\ (\ )
 
-Controlla il numero massimo di triangoli per hull convesso. Varia da ``4`` a ``1024``.
+Controlla il numero massimo di triangoli per ogni inviluppo convesso. Varia da ``4`` a ``1024``.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ Controlla il numero massimo di triangoli per hull convesso. Varia da ``4`` a ``1
 - |void| **set_min_volume_per_convex_hull**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_volume_per_convex_hull**\ (\ )
 
-Controlla il campionamento adattivo degli hull convessi generati. Varia da ``0.0`` a ``0.01``.
+Controlla il campionamento adattivo degli inviluppi convessi generati. Varia da ``0.0`` a ``0.01``.
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ Controlla la granularità della ricerca del "miglior" piano di ritaglio. Varia d
 - |void| **set_project_hull_vertices**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_project_hull_vertices**\ (\ )
 
-Se ``true``, proietta i vertici convessi dell'hull di output sulla mesh sorgente originale per aumentare la precisione in virgola mobile dei risultati.
+Se ``true``, proietta i vertici risultanti dell'inviluppo convesso sulla mesh sorgente originale per aumentare la precisione in virgola mobile dei risultati.
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ Controlla la tendenza al ritaglio lungo gli assi di simmetria. Varia da ``0.0`` 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -470,24 +470,24 @@ String
 
 :ref:`String<class_String>` **capitalize**\ (\ ) |const| :ref:`🔗<class_String_method_capitalize>`
 
-Returns a copy of the string with changed appearance. Replaces underscores (``_``) and hyphens (``-``) with spaces, adds spaces before uppercase letters in the middle of a word, converts all letters to lowercase, then converts the first one and each one following a space to uppercase.
+Изменяет внешний вид строки: заменяет подчеркивания (``_``) и дефисы (``-``) пробелами, добавляет пробелы перед заглавными буквами в середине слова, преобразует все буквы в строчные, затем преобразует первую букву и каждую букву после пробела в заглавные.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    "move_local_x".capitalize()   # Returns "Move Local X"
-    "sceneFile_path".capitalize() # Returns "Scene File Path"
-    "2D, FPS, PNG".capitalize()   # Returns "2d, Fps, Png"
-    "example-name".capitalize()   # Returns "Example Name"
+    "move_local_x".capitalize()   # Возвращает "Move Local X"
+    "sceneFile_path".capitalize() # Возвращает "Scene File Path"
+    "2D, FPS, PNG".capitalize()   # Возвращает "2d, Fps, Png"
+    "example-name".capitalize()   # Возвращает "Example Name"
 
  .. code-tab:: csharp
 
-    "move_local_x".Capitalize();   // Returns "Move Local X"
-    "sceneFile_path".Capitalize(); // Returns "Scene File Path"
-    "2D, FPS, PNG".Capitalize();   // Returns "2d, Fps, Png"
-    "example-name".Capitalize();   // Returns "Example Name"
+    "move_local_x".Capitalize();   // Возвращает "Move Local X"
+    "sceneFile_path".Capitalize(); // Возвращает "Scene File Path"
+    "2D, FPS, PNG".Capitalize();   // Возвращает "2d, Fps, Png"
+    "example-name".Capitalize();   // Возвращает "Example Name"
 
 
 

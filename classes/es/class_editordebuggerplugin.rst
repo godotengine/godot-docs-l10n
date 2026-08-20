@@ -212,9 +212,9 @@ Devuelve la :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` con el ``i
 
 :ref:`Array<class_Array>` **get_sessions**\ (\ ) :ref:`🔗<class_EditorDebuggerPlugin_method_get_sessions>`
 
-Returns an array of :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` currently available to this debugger plugin.
+Devuelve un array de :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` actualmente disponibles para este plugin de depuración.
 
-\ **Note:** Sessions in the array may be inactive, check their state via :ref:`EditorDebuggerSession.is_active()<class_EditorDebuggerSession_method_is_active>`.
+\ **Nota:** Las sesiones del array pueden estar inactivas; comprueba su estado mediante :ref:`EditorDebuggerSession.is_active()<class_EditorDebuggerSession_method_is_active>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -194,7 +194,7 @@ enum **DebugVisibilityMode**: :ref:`🔗<enum_GridMap_DebugVisibilityMode>`
 
 :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_DEFAULT** = ``0``
 
-Hide the collisions debug shapes in the editor, and use the debug settings to determine their visibility in game (i.e. :ref:`SceneTree.debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` or :ref:`SceneTree.debug_navigation_hint<class_SceneTree_property_debug_navigation_hint>`).
+Nasconde le forme di debug delle collisioni nell'editor e usa le impostazioni di debug per determinarne la visibilità nel gioco (ovvero :ref:`SceneTree.debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` o :ref:`SceneTree.debug_navigation_hint<class_SceneTree_property_debug_navigation_hint>`).
 
 .. _class_GridMap_constant_DEBUG_VISIBILITY_MODE_FORCE_SHOW:
 
@@ -202,7 +202,7 @@ Hide the collisions debug shapes in the editor, and use the debug settings to de
 
 :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_FORCE_SHOW** = ``1``
 
-Always show the collisions debug shapes.
+Mostra sempre le forme di debug delle collisioni.
 
 .. _class_GridMap_constant_DEBUG_VISIBILITY_MODE_FORCE_HIDE:
 
@@ -210,7 +210,7 @@ Always show the collisions debug shapes.
 
 :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_FORCE_HIDE** = ``2``
 
-Always hide the collisions debug shapes.
+Nascondi sempre le forme di debug delle collisioni.
 
 .. rst-class:: classref-section-separator
 
@@ -425,7 +425,7 @@ La priorità usata per risolvere le collisioni quando si verifica la penetrazion
 - |void| **set_collision_visibility_mode**\ (\ value\: :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>`\ )
 - :ref:`DebugVisibilityMode<enum_GridMap_DebugVisibilityMode>` **get_collision_visibility_mode**\ (\ )
 
-Show or hide the **GridMap**'s collision shapes. If set to :ref:`DEBUG_VISIBILITY_MODE_DEFAULT<class_GridMap_constant_DEBUG_VISIBILITY_MODE_DEFAULT>`, this depends on the show collision debug settings.
+Mostra o nasconde le forme di collisione del **GridMap**. Se impostato su :ref:`DEBUG_VISIBILITY_MODE_DEFAULT<class_GridMap_constant_DEBUG_VISIBILITY_MODE_DEFAULT>`, dipende dalle impostazioni di debug di visualizzazione delle collisioni.
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ Questa funzione restituisce sempre la mappa impostata sul nodo GridMap e non la 
 
 :ref:`Vector3i<class_Vector3i>` **get_octant_coords_from_cell_coords**\ (\ cell_coords\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_octant_coords_from_cell_coords>`
 
-Returns the :ref:`Vector3i<class_Vector3i>` octant coordinates of the octant that the cell at ``cell_coords`` belongs to.
+Restituisce le coordinate :ref:`Vector3i<class_Vector3i>` dell'ottante a cui appartiene la cella alle coordinate ``cell_coords``.
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,7 @@ Returns the :ref:`Vector3i<class_Vector3i>` octant coordinates of the octant tha
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_octants_in_bounds**\ (\ bounds\: :ref:`AABB<class_AABB>`\ ) |const| :ref:`🔗<class_GridMap_method_get_octants_in_bounds>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>` octant coordinates that are inside the given ``bounds``, including octants that have no cells in use.
+Restituisce un array di coordinate :ref:`Vector3i<class_Vector3i>` di ottanti che si trovano entro i limiti ``bounds``, inclusi gli ottanti che non hanno celle in uso.
 
 .. rst-class:: classref-item-separator
 
@@ -684,7 +684,7 @@ Restituisce un array di tutte le celle con l'indice dell'elemento specificato in
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_cells_in_octant**\ (\ octant_coords\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_cells_in_octant>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates of non-empty cells inside the octant at ``octant_coords``.
+Restituisce un array di :ref:`Vector3i<class_Vector3i>` con le coordinate delle celle non vuote dentro l'ottante alle coordinate ``octant_coords``.
 
 .. rst-class:: classref-item-separator
 
@@ -696,7 +696,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_cells_in_octant_by_item**\ (\ octant_coords\: :ref:`Vector3i<class_Vector3i>`, item\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_cells_in_octant_by_item>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates of cells inside the octant at ``octant_coords`` that use the specified cell ``item``.
+Restituisce un array di :ref:`Vector3i<class_Vector3i>` con le coordinate delle celle all'interno dell'ottante alle coordinate ``octant_coords`` che utilizzano l'elemento ``item`` di cella.
 
 .. rst-class:: classref-item-separator
 
@@ -708,7 +708,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the cell coordinates
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_octants**\ (\ ) |const| :ref:`🔗<class_GridMap_method_get_used_octants>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinates of the non-empty octants in the grid map.
+Restituisce un array di :ref:`Vector3i<class_Vector3i>` con le coordinate degli ottanti non vuoti nella mappa della griglia.
 
 .. rst-class:: classref-item-separator
 
@@ -720,7 +720,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinat
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_octants_by_item**\ (\ item\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_octants_by_item>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinates of the octants that use the specified ``item`` in the grid map.
+Restituisce un array di :ref:`Vector3i<class_Vector3i>` con le coordinate degli ottanti che utilizzano l'elemento ``item`` nella mappa della griglia.
 
 .. rst-class:: classref-item-separator
 
@@ -732,7 +732,7 @@ Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinat
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_octants_in_bounds**\ (\ bounds\: :ref:`AABB<class_AABB>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_octants_in_bounds>`
 
-Returns an array of :ref:`Vector3i<class_Vector3i>`\ s with the octant coordinates of non-empty octants that are inside the local ``bounds``.
+Restituisce un array di :ref:`Vector3i<class_Vector3i>` con le coordinate degli ottanti non vuoti che si trovano entro i limiti locali ``bounds``.
 
 .. rst-class:: classref-item-separator
 
@@ -842,7 +842,7 @@ Imposta il :ref:`RID<class_RID>` della mappa di navigazione che questo nodo Grid
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

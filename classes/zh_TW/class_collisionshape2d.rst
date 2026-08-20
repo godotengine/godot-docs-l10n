@@ -14,7 +14,7 @@ CollisionShape2D
 說明
 ----
 
-A node that provides a :ref:`Shape2D<class_Shape2D>` to a :ref:`CollisionObject2D<class_CollisionObject2D>` parent and allows it to be edited. This can give a detection shape to an :ref:`Area2D<class_Area2D>` or turn a :ref:`PhysicsBody2D<class_PhysicsBody2D>` into a solid object.
+向 :ref:`CollisionObject2D<class_CollisionObject2D>` 父級提供 :ref:`Shape2D<class_Shape2D>` 並能對其編輯的節點。這可以爲 :ref:`Area2D<class_Area2D>` 提供偵測形狀，或將 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 轉變爲實體物件。
 
 .. rst-class:: classref-introduction-group
 

@@ -353,7 +353,7 @@ Descrizioni delle proprietà
 
 **Deprecato:** Due to internal changes this doesn't do anything anymore, as they're always in front.
 
-This doesn't do anything.
+Non fa nulla.
 
 .. rst-class:: classref-item-separator
 
@@ -442,7 +442,7 @@ Se ``true``, le schede possono essere riorganizzate trascinandole con il mouse.
 - |void| **set_switch_on_drag_hover**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_switch_on_drag_hover**\ (\ )
 
-If ``true``, hovering over a tab while dragging something will switch to that tab. Does not have effect when hovering another tab to rearrange.
+Se ``true``, puntare il mouse su una scheda mentre si trascina qualcosa si passerà a quella scheda. Non ha effetto quando si punta il mouse su un'altra scheda per riorganizzare.
 
 .. rst-class:: classref-item-separator
 
@@ -488,9 +488,9 @@ La modalità di accesso alla focalizzazione per il nodo :ref:`TabBar<class_TabBa
 
 :ref:`bool<class_bool>` **tab_{index}/disabled** = ``false`` :ref:`🔗<class_TabContainer_property_tab_{index}/disabled>`
 
-If ``true``, the tab at ``index`` is disabled.
+Se ``true``, la scheda all'indice ``index`` è disabilitata.
 
-\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. get_tab_count() - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -502,9 +502,9 @@ If ``true``, the tab at ``index`` is disabled.
 
 :ref:`bool<class_bool>` **tab_{index}/hidden** = ``false`` :ref:`🔗<class_TabContainer_property_tab_{index}/hidden>`
 
-If ``true``, the tab at ``index`` is hidden.
+Se ``true``, la scheda all'indice ``index`` è nascosta.
 
-\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. get_tab_count() - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -516,9 +516,9 @@ If ``true``, the tab at ``index`` is hidden.
 
 :ref:`Texture2D<class_Texture2D>` **tab_{index}/icon** :ref:`🔗<class_TabContainer_property_tab_{index}/icon>`
 
-The title text of the tab at ``index``.
+Il testo del titolo della scheda all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. get_tab_count() - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -530,9 +530,9 @@ The title text of the tab at ``index``.
 
 :ref:`String<class_String>` **tab_{index}/title** = ``""`` :ref:`🔗<class_TabContainer_property_tab_{index}/title>`
 
-The tooltip text of the tab at ``index``.
+Il testo del tooltip della scheda all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. get_tab_count() - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. get_tab_count() - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +549,7 @@ The tooltip text of the tab at ``index``.
 - |void| **set_tabs_position**\ (\ value\: :ref:`TabPosition<enum_TabContainer_TabPosition>`\ )
 - :ref:`TabPosition<enum_TabContainer_TabPosition>` **get_tabs_position**\ (\ )
 
-The horizontal alignment of the tabs.
+L'allineamento orizzontale delle schede.
 
 .. rst-class:: classref-item-separator
 
@@ -1026,7 +1026,7 @@ Il colore del font delle altre schede non selezionate.
 
 :ref:`Color<class_Color>` **icon_disabled_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_disabled_color>`
 
-Icon color of disabled tabs.
+Il colore dell'icona delle schede disabilitate.
 
 .. rst-class:: classref-item-separator
 
@@ -1038,7 +1038,7 @@ Icon color of disabled tabs.
 
 :ref:`Color<class_Color>` **icon_hovered_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_hovered_color>`
 
-Icon color of the currently hovered tab. Does not apply to the selected tab.
+Il colore dell'icona della scheda su cui si sta passando il mouse. Non si applica alla scheda selezionata.
 
 .. rst-class:: classref-item-separator
 
@@ -1050,7 +1050,7 @@ Icon color of the currently hovered tab. Does not apply to the selected tab.
 
 :ref:`Color<class_Color>` **icon_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_selected_color>`
 
-Icon color of the currently selected tab.
+Il colore dell'icona della scheda attualmente selezionata.
 
 .. rst-class:: classref-item-separator
 
@@ -1062,7 +1062,7 @@ Icon color of the currently selected tab.
 
 :ref:`Color<class_Color>` **icon_unselected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_unselected_color>`
 
-Icon color of the other, unselected tabs.
+Il colore dell'icona delle altre schede non selezionate.
 
 .. rst-class:: classref-item-separator
 
@@ -1186,7 +1186,7 @@ L'icona per il pulsante freccia sinistra che appare quando ci sono troppe schede
 
 :ref:`Texture2D<class_Texture2D>` **drop_mark** :ref:`🔗<class_TabContainer_theme_icon_drop_mark>`
 
-Icon shown to indicate where a dragged tab will be dropped (see :ref:`drag_to_rearrange_enabled<class_TabContainer_property_drag_to_rearrange_enabled>`).
+L'icona mostrata per indicare dove sarà rilasciata una scheda trascinata (vedi :ref:`drag_to_rearrange_enabled<class_TabContainer_property_drag_to_rearrange_enabled>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1326,7 +1326,7 @@ Lo stile per il riempimento dello sfondo dell'area del :ref:`TabBar<class_TabBar
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

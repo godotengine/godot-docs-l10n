@@ -245,7 +245,7 @@ Descripciones de Propiedades
 - |void| **set_alpha_antialiasing_edge**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_antialiasing_edge**\ (\ )
 
-Threshold at which antialiasing will be applied on the alpha channel.
+Umbral a partir del cual se aplicará el antialiasing en el canal alfa.
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ Configuración de la fuente usada para mostrar texto.
 
 Tamaño de la fuente del texto de **Label3D**. Para que la fuente se vea más detallada de cerca, aumenta :ref:`font_size<class_Label3D_property_font_size>` mientras disminuyes :ref:`pixel_size<class_Label3D_property_pixel_size>` al mismo tiempo.
 
-Los tamaños de fuente más grandes requieren más tiempo para renderizar nuevos caracteres, lo que puede causar tartamudeo ("stuttering") durante el juego.
+Los tamaños de fuente más grandes requieren más tiempo para reproducir caracteres nuevos, lo que puede causar tartamudeo ("stuttering") durante el juego.
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ Reglas de alineación de relleno de línea.
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Código de idioma utilizado para los algoritmos de salto de línea y de formación de texto. Si se deja vacío, se utiliza la configuración regional actual.
 
 .. rst-class:: classref-item-separator
 

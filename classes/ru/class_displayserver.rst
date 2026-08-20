@@ -2522,9 +2522,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_RESIZE_DISABLED** = ``0``
 
-The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`. This flag is ignored for full screen windows.
+Размер окна нельзя изменить, перетаскивая его маркер изменения размера. Тем не менее, изменить размер окна можно с помощью метода :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`. Этот флаг игнорируется для полноэкранных окон.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примечание:** Этот флаг реализован в Linux (X11), macOS и Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_BORDERLESS:
 
@@ -2532,9 +2532,9 @@ The window can't be resized by dragging its resize grip. It's still possible to 
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_BORDERLESS** = ``1``
 
-The window do not have native title bar and other decorations. This flag is ignored for full-screen windows.
+В окне отсутствует стандартная строка заголовка и другие элементы оформления. Этот флаг игнорируется для полноэкранных окон.
 
-\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
+\ **Примечание:** Этот флаг реализован в Linux (X11/Wayland), macOS и Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_ALWAYS_ON_TOP:
 
@@ -2542,9 +2542,9 @@ The window do not have native title bar and other decorations. This flag is igno
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_ALWAYS_ON_TOP** = ``2``
 
-The window is floating on top of all other windows. This flag is ignored for full-screen windows.
+Окно располагается поверх всех остальных окон. Этот флаг игнорируется для окон в полноэкранном режиме.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примечание:** Этот флаг реализован в Linux (X11), macOS и Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_TRANSPARENT:
 
@@ -2566,9 +2566,9 @@ The window is floating on top of all other windows. This flag is ignored for ful
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_NO_FOCUS** = ``4``
 
-The window can't be focused. No-focus window will ignore all input, except mouse clicks.
+Окно не может быть сфокусировано. Окно без фокуса будет игнорировать весь ввод, кроме щелчков мыши.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примечание:** Этот флаг реализован в Linux (X11), macOS и Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_POPUP:
 
@@ -2576,9 +2576,9 @@ The window can't be focused. No-focus window will ignore all input, except mouse
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP** = ``5``
 
-Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`).
+Окно является частью меню или выпадающего списка :ref:`OptionButton<class_OptionButton>`. Этот флаг нельзя изменить, когда окно видимо. Активное всплывающее окно будет получать весь ввод целиком, не перехватывая фокус у родительского окна. Всплывающие окна автоматически закрываются, когда пользователи щелкают вне их или когда переключаются между приложениями. Для всплывающего окна необходимо установить временный родительский элемент (см. :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`).
 
-\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
+\ **Примечание:** Этот флаг реализован в Linux (X11/Wayland), macOS и Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE:
 
@@ -2600,9 +2600,9 @@ Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-All mouse events are passed to the underlying window of the same application.
+Все события мыши передаются в нижележащее окно того же приложения.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примечание:** Этот флаг реализован в Linux (X11), macOS и Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_SHARP_CORNERS:
 
@@ -2632,9 +2632,9 @@ All mouse events are passed to the underlying window of the same application.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP_WM_HINT** = ``10``
 
-Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+Этот флаг указывает оконному менеджеру, что данное окно должно быть всплывающим окном, определяемым реализацией (обычно это плавающее, безрамочное, неперемещаемое и неподвижное дочернее окно).
 
-\ **Note:** This flag is implemented on Linux (Wayland).
+\ **Примечание:** Этот флаг реализован в Linux (Wayland).
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MINIMIZE_DISABLED:
 
@@ -2642,9 +2642,9 @@ Signals the window manager that this window is supposed to be an implementation-
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MINIMIZE_DISABLED** = ``11``
 
-Window minimize button is disabled.
+Кнопка сворачивания окна отключена.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примечание:** Этот флаг реализован в Linux (X11), macOS и Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAXIMIZE_DISABLED:
 
@@ -2652,9 +2652,9 @@ Window minimize button is disabled.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MAXIMIZE_DISABLED** = ``12``
 
-Window maximize button is disabled.
+Кнопка развертывания окна отключена.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примечание:** Этот флаг реализован в Linux (X11), macOS и Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAX:
 
@@ -4460,45 +4460,45 @@ ID Идентификатор, который ссылается на экран
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_show**\ (\ title\: :ref:`String<class_String>`, current_directory\: :ref:`String<class_String>`, filename\: :ref:`String<class_String>`, show_hidden\: :ref:`bool<class_bool>`, mode\: :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>`, filters\: :ref:`PackedStringArray<class_PackedStringArray>`, callback\: :ref:`Callable<class_Callable>`, parent_window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_file_dialog_show>`
 
-Displays OS native dialog for selecting files or directories in the file system.
+Отображает встроенный диалог ОС для выбора файлов или каталогов в файловой системе.
 
-Each filter string in the ``filters`` array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. It is recommended to set both file extension and MIME type. See also :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
+Каждая строка фильтра в массиве ``filters`` должна быть отформатирована следующим образом: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. Текст описания фильтра является необязательным и может быть опущен. Рекомендуется указывать как расширение файла, так и MIME-тип. См. также :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
 
-Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **On Android,** the third callback argument (``selected_filter_index``) is always ``0``.
+Обратные вызовы имеют следующие аргументы: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **На Android** третий аргумент обратного вызова (``selected_filter_index``) всегда равен ``0``.
 
-\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android.
+\ **Примечание:** Этот метод реализован, если сервер отображения имеет функцию :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>`. Поддерживаемые платформы: Linux (X11/Wayland), Windows, macOS и Android.
 
-\ **Note:** ``current_directory`` might be ignored.
+\ **Примечание:** Параметр ``current_directory`` может быть проигнорирован.
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **Примечание:** Встроенные диалоговые окна выбора файлов и диалоговые окна выбора файлов Windows поддерживают только расширения файлов, в то время как диалоговые окна выбора файлов Android, Linux и macOS также поддерживают типы MIME.
 
-\ **Note:** On Android and Linux, ``show_hidden`` is ignored.
+\ **Примечание:** На Android и Linux параметр ``show_hidden`` игнорируется.
 
-\ **Note:** On Android and macOS, native file dialogs have no title.
+\ **Примечание:** На Android и macOS у нативных диалоговых окон выбора файлов нет заголовка.
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **Примечание:** На macOS изолированные приложения сохраняют закладки с ограниченным доступом для сохранения доступа к открытым папкам в нескольких сеансах. Используйте :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>`, чтобы получить список сохраненных закладок.
 
-\ **Note:** On Android, this method uses the Android Storage Access Framework (SAF).
+\ **Примечание:** На Android этот метод использует Android Storage Access Framework (SAF).
 
-The file picker returns a URI instead of a filesystem path. This URI can be passed directly to :ref:`FileAccess<class_FileAccess>` to perform read/write operations.
+Выбор файла возвращает URI вместо пути к файловой системе. Этот URI можно передать напрямую в :ref:`FileAccess<class_FileAccess>` для выполнения операций чтения/записи.
 
-When using :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>`, it returns a tree URI that grants full access to the selected directory. File operations inside this directory can be performed by passing a path on the form ``treeUri#relative/path/to/file`` to :ref:`FileAccess<class_FileAccess>`.
+При использовании :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>` возвращается URI дерева, предоставляющий полный доступ к выбранному каталогу. Операции с файлами внутри этого каталога можно выполнять, передавая путь в формате ``treeUri#relative/path/to/file`` в :ref:`FileAccess<class_FileAccess>`.
 
-To avoid opening the file picker again after each app restart, you can take persistable URI permission as follows:
+Чтобы избежать повторного открытия выбора файла после каждого перезапуска приложения, можно получить постоянное разрешение URI следующим образом:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    val uri = "content://com.android..." # URI of the selected file or folder.
-    val persist = true # Set to false to release the persistable permission.
+    val uri = "content://com.android..." # URI выбранного файла или папки.
+    val persist = true # Установите значение false, чтобы освободить постоянное разрешение.
     var android_runtime = Engine.get_singleton("AndroidRuntime")
     android_runtime.updatePersistableUriPermission(uri, persist)
 
 
 
-The persistable URI permission remains valid across app restarts as long as the directory is not moved, renamed, or deleted.
+Разрешение на сохранение URI остается действительным при перезапуске приложения, если каталог не перемещен, не переименован и не удален.
 
 .. rst-class:: classref-item-separator
 

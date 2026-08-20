@@ -14,7 +14,7 @@ Rappresenta una buffer view glTF.
 Descrizione
 ----------------------
 
-GLTFBufferView è una struttura dati che rappresenta glTF una ``bufferView`` che si troverebbe nell'array ``"bufferViews"``. Un buffer è un blob di dati binari. Una buffer view è una porzione di un buffer che può essere utilizzata per identificare ed estrarre dati dal buffer.
+GLTFBufferView è una struttura dati che rappresenta glTF una ``bufferView`` che si troverebbe nell'array ``"bufferViews"``. Un buffer è un blob di dati binari. Una buffer view è una porzione di un buffer che possono servire per identificare ed estrarre dati dal buffer.
 
 La maggior parte degli usi personalizzati dei buffer necessita solo di usare :ref:`buffer<class_GLTFBufferView_property_buffer>`, :ref:`byte_length<class_GLTFBufferView_property_byte_length>` e :ref:`byte_offset<class_GLTFBufferView_property_byte_offset>`. Le proprietà :ref:`byte_stride<class_GLTFBufferView_property_byte_stride>` e :ref:`indices<class_GLTFBufferView_property_indices>` sono per casi d'uso più avanzati come dati mesh interlacciati codificati per la GPU.
 
@@ -136,7 +136,7 @@ L'offset, in byte, dall'inizio del buffer all'inizio di questa buffer view.
 - |void| **set_byte_stride**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_byte_stride**\ (\ )
 
-Il passo, in byte, tra i dati interlacciati. Se ``-1``, questa buffer view non è interlacciata.
+Il passo (stride), in byte, tra i dati interlacciati. Se ``-1``, questa buffer view non è interlacciata.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Descrizioni dei metodi
 
 :ref:`GLTFBufferView<class_GLTFBufferView>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFBufferView_method_from_dictionary>`
 
-Creates a new GLTFBufferView instance by parsing the given :ref:`Dictionary<class_Dictionary>`.
+Crea una nuova istanza di GLTFBufferView interpretando il :ref:`Dictionary<class_Dictionary>` specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -211,13 +211,13 @@ Carica i dati della buffer view dal buffer a cui fa riferimento questa buffer vi
 
 :ref:`Dictionary<class_Dictionary>` **to_dictionary**\ (\ ) |const| :ref:`🔗<class_GLTFBufferView_method_to_dictionary>`
 
-Serializes this GLTFBufferView instance into a :ref:`Dictionary<class_Dictionary>`.
+Serializza questa istanza di GLTFBufferView in un :ref:`Dictionary<class_Dictionary>`.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

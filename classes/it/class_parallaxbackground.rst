@@ -16,9 +16,9 @@ Un nodo usato per creare uno sfondo a scorrimento parallasse.
 Descrizione
 ----------------------
 
-Un ParallaxBackground usa uno o più nodi figli :ref:`ParallaxLayer<class_ParallaxLayer>` per creare un effetto parallasse. Ogni :ref:`ParallaxLayer<class_ParallaxLayer>` può muoversi a una velocità diversa tramite :ref:`ParallaxLayer.motion_offset<class_ParallaxLayer_property_motion_offset>`. Questo crea un'illusione di profondità in un gioco 2D. Se non usato con un :ref:`Camera2D<class_Camera2D>`, devi calcolare manualmente :ref:`scroll_offset<class_ParallaxBackground_property_scroll_offset>`.
+Un ParallaxBackground usa uno o più nodi figli :ref:`ParallaxLayer<class_ParallaxLayer>` per creare un effetto parallasse. Ogni :ref:`ParallaxLayer<class_ParallaxLayer>` può muoversi a una velocità diversa tramite :ref:`ParallaxLayer.motion_offset<class_ParallaxLayer_property_motion_offset>`. Questo crea un'illusione di profondità in un gioco 2D. Se non usato con un :ref:`Camera2D<class_Camera2D>`, bisogna calcolare :ref:`scroll_offset<class_ParallaxBackground_property_scroll_offset>` manualmente.
 
-\ **Nota:** Ogni **ParallaxBackground** è disegnato su uno specifico :ref:`Viewport<class_Viewport>` e non può essere condiviso tra più :ref:`Viewport<class_Viewport>`, vedi :ref:`CanvasLayer.custom_viewport<class_CanvasLayer_property_custom_viewport>`. Quando usi più :ref:`Viewport<class_Viewport>`, ad esempio in un gioco a schermo diviso, devi creare un singolo **ParallaxBackground** per ogni :ref:`Viewport<class_Viewport>` su cui vuoi che sia disegnato.
+\ **Nota:** Ogni **ParallaxBackground** è disegnato su una specifica :ref:`Viewport<class_Viewport>` e non può essere condiviso tra più :ref:`Viewport<class_Viewport>`, vedi :ref:`CanvasLayer.custom_viewport<class_CanvasLayer_property_custom_viewport>`. Quando usi più :ref:`Viewport<class_Viewport>`, ad esempio in un gioco a schermo diviso, devi creare un singolo **ParallaxBackground** per ogni :ref:`Viewport<class_Viewport>` su cui vuoi che sia disegnato.
 
 .. rst-class:: classref-reftable-group
 
@@ -115,7 +115,7 @@ Se ``true``, gli elementi nel :ref:`ParallaxLayer<class_ParallaxLayer>` figlio n
 - |void| **set_limit_begin**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_begin**\ (\ )
 
-Limiti in alto a sinistra per l'inizio dello scorrimento. Se la telecamera è al di fuori di questo limite, lo sfondo smetterà di scorrere. Deve essere inferiore a :ref:`scroll_limit_end<class_ParallaxBackground_property_scroll_limit_end>` per funzionare.
+Limiti in alto a sinistra per l'inizio dello scorrimento. Se la telecamera è fuori da questo limite, lo sfondo smetterà di scorrere. Deve essere inferiore a :ref:`scroll_limit_end<class_ParallaxBackground_property_scroll_limit_end>` per funzionare.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ Limiti in alto a sinistra per l'inizio dello scorrimento. Se la telecamera è al
 - |void| **set_limit_end**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_limit_end**\ (\ )
 
-Limiti in basso a destra per la fine dello scorrimento. Se la telecamera è al di fuori di questo limite, lo sfondo smetterà di scorrere. Deve essere superiore a :ref:`scroll_limit_begin<class_ParallaxBackground_property_scroll_limit_begin>` per funzionare.
+Limiti in basso a destra per la fine dello scorrimento. Se la telecamera è fuori da questo limite, lo sfondo smetterà di scorrere. Deve essere superiore a :ref:`scroll_limit_begin<class_ParallaxBackground_property_scroll_limit_begin>` per funzionare.
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ Valore di scorrimento del ParallaxBackground. Calcolato automaticamente quando s
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

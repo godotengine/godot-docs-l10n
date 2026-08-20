@@ -182,7 +182,7 @@ enum **HandleBinaryImageMode**: :ref:`🔗<enum_GLTFState_HandleBinaryImageMode>
 
 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **HANDLE_BINARY_IMAGE_MODE_DISCARD_TEXTURES** = ``0``
 
-When importing a glTF file with embedded binary images, discards all images and uses untextured materials in their place. Images stored as separate files in the ``res://`` folder are not affected by this; those will be used as Godot imported them.
+Quando si importa un file glTF con immagini binarie incorporate, tutte le immagini vengono scartate e al loro posto vengono utilizzati materiali senza texture. Le immagini memorizzate come file separati nella cartella ``res://`` non sono influenzate; verranno utilizzate così come sono state importate da Godot.
 
 .. _class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EXTRACT_TEXTURES:
 
@@ -190,11 +190,11 @@ When importing a glTF file with embedded binary images, discards all images and 
 
 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **HANDLE_BINARY_IMAGE_MODE_EXTRACT_TEXTURES** = ``1``
 
-When importing a glTF file with embedded binary images, extracts them and saves them to their own files. This allows the image to be imported by Godot's image importer, which can then have their import options customized by the user, including optionally compressing the image to VRAM texture formats.
+Quando si importa un file glTF con immagini binarie incorporate, queste vengono estratte e salvate in file separati. Ciò consente all'importatore di immagini di Godot di importare l'immagine, personalizzando da parte dell'ultente le opzioni di importazione, inclusa la possibilità di comprimere l'immagine in formati di texture VRAM.
 
-This will save the images's bytes exactly as-is, without recompression. For image formats supplied by glTF extensions, the file will have a filename ending with the file extension supplied by :ref:`GLTFDocumentExtension._get_image_file_extension()<class_GLTFDocumentExtension_private_method__get_image_file_extension>` of the extension class.
+Così i byte delle immagini verranno salvati esattamente come sono, senza ricompressione. Per i formati di immagine forniti dalle estensioni glTF, il nome del file terminerà con l'estensione fornita da :ref:`GLTFDocumentExtension._get_image_file_extension()<class_GLTFDocumentExtension_private_method__get_image_file_extension>` della classe di estensione.
 
-\ **Note:** This option is editor-only. At runtime, this acts the same as :ref:`HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED>`.
+\ **Nota:** Questa opzione è solo per l'editor. In fase di esecuzione, ha lo stesso effetto di :ref:`HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED>`.
 
 .. _class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_BASISU:
 
@@ -202,7 +202,7 @@ This will save the images's bytes exactly as-is, without recompression. For imag
 
 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **HANDLE_BINARY_IMAGE_MODE_EMBED_AS_BASISU** = ``2``
 
-When importing a glTF file with embedded binary images, embeds textures VRAM compressed with Basis Universal into the generated scene. Images stored as separate files in the ``res://`` folder are not affected by this; those will be used as Godot imported them.
+Quando si importa un file glTF con immagini binarie incorporate, le texture VRAM compresse con Basis Universal vengono incorporate nella scena generata. Le immagini memorizzate come file separati nella cartella ``res://`` non sono influenzate; verranno utilizzate così come sono state importate da Godot.
 
 .. _class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED:
 
@@ -210,7 +210,7 @@ When importing a glTF file with embedded binary images, embeds textures VRAM com
 
 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED** = ``3``
 
-When importing a glTF file with embedded binary images, embeds textures compressed losslessly into the generated scene. Images stored as separate files in the ``res://`` folder are not affected by this; those will be used as Godot imported them.
+Quando si importa un file glTF con immagini binarie incorporate, le texture compresse senza perdite di qualità vengono incorporate nella scena generata. Le immagini memorizzate come file separati nella cartella ``res://`` non sono influenzate; verranno utilizzate così come sono state importate da Godot.
 
 .. rst-class:: classref-section-separator
 
@@ -406,9 +406,9 @@ Il buffer binario allegato a un file .glb.
 - |void| **set_handle_binary_image_mode**\ (\ value\: :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>`\ )
 - :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **get_handle_binary_image_mode**\ (\ )
 
-When importing a glTF file with unimported raw binary images embedded inside of binary blob buffers, in data URIs, or separate files not imported by Godot, this controls how the images are handled. Images can be discarded, saved as separate files, or embedded in the scene lossily or losslessly. See :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` for options.
+Quando si importa un file glTF con immagini binarie, grezze, non importate e incorporate in buffer di blob binari, in URI di dati o in file separati non importati da Godot, questa proprietà controlla il modo in cui le immagini sono gestite. Le immagini possono essere scartate, salvate come file separati o incorporate nella scena con o senza perdita di dati. Vedi :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` per le opzioni.
 
-This property does nothing for image files in the ``res://`` folder imported by Godot, as those are handled by Godot's image importer directly, and then the Godot scene generated from the glTF file will use the images as Godot imported them.
+Questa proprietà non ha alcun effetto sui file immagine nella cartella ``res://`` importati da Godot, poiché questi sono gestiti direttamente dall'importatore di immagini di Godot, e quindi la scena di Godot generata dal file glTF utilizzerà le immagini così come sono state importate da Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -516,7 +516,7 @@ I nodi radice del file glTF. In genere, un file glTF avrà solo una scena e quin
 - |void| **set_scene_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_scene_name**\ (\ )
 
-Il nome della scena. Quando si importa, se non specificato, questo sarà il nome del file. Quando si esporta, se specificato, il nome della scena sarà salvato nel file glTF.
+Il nome della scena. Per l'importazione, se non specificato, questo sarà il nome del file. Per l'esportazione, se specificato, il nome della scena sarà salvato nel file glTF.
 
 .. rst-class:: classref-item-separator
 
@@ -684,7 +684,7 @@ Restituisce un array di tutte le :ref:`GLTFCamera<class_GLTFCamera>` nel file gl
 
 **Deprecato:** Use :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` instead.
 
-Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>`. When importing a glTF file with unimported raw binary images embedded inside of binary blob buffers, in data URIs, or separate files not imported by Godot, this controls how the images are handled.
+Alias non tipizzato deprecato per :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>`. Quando si importa un file glTF con immagini binarie, grezze, non importate e incorporate all'interno di buffer di blob binari, in URI di dati o in file separati non importati da Godot, questo parametro controlla il modo in cui sono gestite le immagini.
 
 .. rst-class:: classref-item-separator
 
@@ -928,7 +928,7 @@ Imposta le :ref:`GLTFCamera<class_GLTFCamera>` nello stato. Queste sono le telec
 
 **Deprecato:** Use :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` instead.
 
-Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>`. When importing a glTF file with unimported raw binary images embedded inside of binary blob buffers, in data URIs, or separate files not imported by Godot, this controls how the images are handled.
+Alias non tipizzato deprecato per :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>`. Quando si importa un file glTF con immagini binarie, grezze, non importate e incorporate all'interno di buffer di blob binari, in URI di dati o in file separati non importati da Godot, questo parametro controlla il modo in cui sono gestite le immagini.
 
 .. rst-class:: classref-item-separator
 
@@ -1070,7 +1070,7 @@ Imposta i nomi univoci dei nodi nello stato. È utilizzato sia nel processo di i
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

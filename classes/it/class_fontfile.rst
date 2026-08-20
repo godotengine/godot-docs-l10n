@@ -397,7 +397,7 @@ Nome della famiglia del font.
 - |void| **set_font_stretch**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_stretch**\ (\ )
 
-Quantità di allungamento del font, rispetto a una larghezza normale. Un valore percentuale compreso tra ``50%`` e ``200%``.
+Quantità di allargamento del font, rispetto a una larghezza normale. Un valore percentuale compreso tra ``50%`` e ``200%``.
 
 .. rst-class:: classref-item-separator
 
@@ -533,7 +533,7 @@ Se impostato su ``true``, la modulazione del colore è applicata quando si diseg
 - |void| **set_msdf_pixel_range**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_msdf_pixel_range**\ (\ )
 
-The width of the range around the shape between the minimum and maximum representable signed distance. If using font outlines, :ref:`msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the size of the largest font outline. The default :ref:`msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` value of ``16`` allows outline sizes up to ``8`` to look correct.
+La larghezza dell'intervallo attorno alla forma tra la distanza con segno (signed distance) minima e massima rappresentabile. Se si usano i contorni di font, :ref:`msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` deve essere impostato almeno sul *doppio* dello spessore del contorno più grande. Il valore predefinito per :ref:`msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` di ``16`` consente a uno spessore di contorno fino a ``8`` di apparire corretto.
 
 .. rst-class:: classref-item-separator
 
@@ -1470,7 +1470,7 @@ Imposta le coordinate di variazione per la voce specificata nella cache del font
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

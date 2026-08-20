@@ -139,7 +139,7 @@ Desactiva la escucha para usar la escucha de la cámara actual en su lugar.
 
 :ref:`Transform3D<class_Transform3D>` **get_listener_transform**\ (\ ) |const| :ref:`🔗<class_AudioListener3D_method_get_listener_transform>`
 
-Returns the listener's global orthonormalized :ref:`Transform3D<class_Transform3D>`.
+Devuelve el :ref:`Transform3D<class_Transform3D>` global ortonormalizado del oyente.
 
 .. rst-class:: classref-item-separator
 

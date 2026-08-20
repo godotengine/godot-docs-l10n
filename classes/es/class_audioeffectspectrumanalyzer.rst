@@ -7,7 +7,7 @@ AudioEffectSpectrumAnalyzer
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Creates an :ref:`AudioEffectInstance<class_AudioEffectInstance>` which performs frequency analysis and exposes results to be accessed in real-time.
+Crea un :ref:`AudioEffectInstance<class_AudioEffectInstance>` que realiza análisis de frecuencia y expone los resultados para acceder en tiempo real.
 
 .. rst-class:: classref-introduction-group
 

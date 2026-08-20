@@ -477,7 +477,7 @@ Se ``true``, invia eventi di input touch quando si clicca o si trascina il mouse
 - |void| **set_ignore_joypad_on_unfocused_application**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignoring_joypad_on_unfocused_application**\ (\ )
 
-If ``true``, joypad input (including motion sensors) and LED light changes will be ignored and joypad vibration will be stopped when the application is not focused.
+Se ``true``, gli input dal joypad (inclusi i sensori di movimento) e le modifiche alla luce LED saranno ignorati e la vibrazione del joypad verrà interrotta quando l'applicazione non è focalizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -574,11 +574,11 @@ Aggiunge una nuova voce di mappatura (in formato SDL2) al database di mappatura.
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Clears the calibration information for the specified joypad's motion sensors, if it has any and if they were calibrated.
+Cancella le informazioni di calibrazione dei sensori di movimento del joypad specificato, se presenti e se calibrati.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+Vedi :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` per un esempio su come utilizzare i sensori di movimento e la calibrazione del joypad nei tuoi giochi.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -664,9 +664,9 @@ Questo è un'abbreviazione per scrivere ``Input.get_action_strength("positive_ac
 
 :ref:`Array<class_Array>`\[:ref:`int<class_int>`\] **get_connected_joypads**\ (\ ) :ref:`🔗<class_Input_method_get_connected_joypads>`
 
-Returns an :ref:`Array<class_Array>` containing the device IDs of all currently connected joypads.
+Restituisce un :ref:`Array<class_Array>` contenente gli ID dei dispositivi di tutti i joypad attualmente connessi.
 
-\ **Note:** The order of connected joypads can not be guaranteed to be the same after a project and/or the editor is restarted, because Godot doesn't save the order of joypad connections. Joypads are registered in the order they are discovered by Godot.
+\ **Nota:** Non è possibile garantire l'ordine dei joypad connessi dopo aver riavviato un progetto e/o l'editor, poiché Godot non salva l'ordine delle connessioni dei joypad. I joypad sono registrati nell'ordine in cui sono rilevati da Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -724,19 +724,19 @@ Restituisce la velocità di rotazione (in radianti al secondo) attorno agli assi
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns the acceleration, including the force of gravity, in m/s² of the joypad's accelerometer sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`get_joy_gravity()<class_Input_method_get_joy_gravity>` and :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+Restituisce l'accelerazione, inclusa la forza di gravità, in m/s² del sensore accelerometro del joypad, se il joypad ne è dotato ed è attualmente abilitato. Se non, il metodo restituisce :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. Vedi anche :ref:`get_joy_gravity()<class_Input_method_get_joy_gravity>` e :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
 
-For a joypad held in front of you, the returned axes are defined as follows:
+Per un joypad tenuto di fronte a te, gli assi restituiti sono definiti come segue:
 
-+X ... -X: left ... right;
++X ... -X: sinistra ... destra;
 
-+Y ... -Y: bottom ... top;
++Y ... -Y: basso ... alto;
 
-+Z ... -Z: farther ... closer.
++Z ... -Z: più lontano ... più vicino.
 
-The gravity part value is measured as a vector with length of ``9.8`` away from the center of the Earth, which is a negative Y value.
+Il valore della parte di gravità è misurato come un vettore con una lunghezza di ``9.8`` a partire dal centro della Terra, che è un valore negativo in Y.
 
-\ **Note:** This feature is only supported on Windows, Linux, and macOS. On iOS, joypad accelerometer sensor reading is not supported due to OS limitations.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux e macOS. Su iOS, la lettura del sensore accelerometro del joypad non è supportata a causa di limitazioni del sistema operativo.
 
 .. rst-class:: classref-item-separator
 
@@ -762,19 +762,19 @@ Restituisce il valore attuale dell'asse del joypad all'indice [param axis).
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns the gravity in m/s² of the joypad's accelerometer sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`get_joy_accelerometer()<class_Input_method_get_joy_accelerometer>` and :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+Restituisce la forza di gravità in m/s² del sensore accelerometro del joypad, se il joypad ne è dotato ed è attualmente abilitato. Se non, il metodo restituisce :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. Vedi anche :ref:`get_joy_accelerometer()<class_Input_method_get_joy_accelerometer>` e :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
 
-For a joypad held in front of you, the returned axes are defined as follows:
+Per un joypad tenuto di fronte a te, gli assi restituiti sono definiti come segue:
 
-+X ... -X: left ... right;
++X ... -X: sinistra ... destra;
 
-+Y ... -Y: bottom ... top;
++Y ... -Y: basso ... alto;
 
-+Z ... -Z: farther ... closer.
++Z ... -Z: più lontano ... più vicino.
 
-The gravity part value is measured as a vector with length of ``9.8`` away from the center of the Earth, which is a negative Y value.
+Il valore della parte di gravità è misurato come un vettore con una lunghezza di ``9.8`` a partire dal centro della Terra, che è un valore negativo in Y.
 
-\ **Note:** This feature is only supported on Windows, Linux, and macOS. On iOS, joypad accelerometer sensor reading is not supported due to OS limitations.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux e macOS. Su iOS, la lettura del sensore accelerometro del joypad non è supportata a causa di limitazioni del sistema operativo.
 
 .. rst-class:: classref-item-separator
 
@@ -786,9 +786,9 @@ The gravity part value is measured as a vector with length of ``9.8`` away from 
 
 :ref:`String<class_String>` **get_joy_guid**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_guid>`
 
-Returns an SDL-compatible device GUID on platforms that use gamepad remapping, e.g. ``030000004c050000c405000000010000``. Returns an empty string if it cannot be found. Godot uses SDL's internal mappings, supplemented by community-contributed mappings, to determine gamepad names and mappings based on this GUID.
+Restituisce un GUID dispositivo compatibile con SDL su piattaforme che usano una rimappatura per i gamepad, ad esempio ``030000004c050000c405000000010000``. Restituisce una stringa vuota se non può essere trovato. Godot utilizza le mappature interne di SDL, integrate da mappature fornite dalla comunità, per determinare i nomi e le mappature dei gamepad in base a questo GUID.
 
-On Windows, all XInput joypad GUIDs will be overridden by Godot to ``__XINPUT_DEVICE__``, because their mappings are the same.
+Su Windows, tutti i GUID dei joypad XInput saranno sovrascritti da Godot in ``__XINPUT_DEVICE__``, perché le loro mappature sono le stesse.
 
 .. rst-class:: classref-item-separator
 
@@ -802,21 +802,21 @@ On Windows, all XInput joypad GUIDs will be overridden by Godot to ``__XINPUT_DE
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns the rotation rate in rad/s around a joypad's X, Y, and Z axes of the gyroscope sensor, if the joypad has one and it's currently enabled. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+Restituisce la frequenza di rotazione in rad/s attorno agli assi X, Y e Z del sensore giroscopico di un joypad, se il joypad ne è dotato e se è attualmente abilitato. Se non, il metodo restituisce :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`. Vedi anche :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
 
-The rotation is positive in the counter-clockwise direction.
+La rotazione è positiva in senso antiorario.
 
-For a joypad held in front of you, the returned axes are defined as follows:
+Per un joypad tenuto di fronte a te, gli assi restituiti sono definiti come segue:
 
-X: Angular speed around the X axis (pitch);
+X: velocità angolare attorno all'asse X (beccheggio);
 
-Y: Angular speed around the Y axis (yaw);
+Y: velocità angolare attorno all'asse Y (imbardata);
 
-Z: Angular speed around the Z axis (roll).
+Z: velocità angolare attorno all'asse Z (rollio).
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad gyroscope and gyroscope calibration in your games.
+Vedi :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` per un esempio su come utilizzare il giroscopio e la calibrazione del joypad nei tuoi giochi.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -860,15 +860,15 @@ Il dizionario può includere anche i seguenti campi per alcune piattaforme:
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns the calibration information about the specified joypad's motion sensors in the form of a :ref:`Dictionary<class_Dictionary>`, if it has any and if they have been calibrated, otherwise returns an empty :ref:`Dictionary<class_Dictionary>`.
+Restituisce le informazioni di calibrazione relative ai sensori di movimento del joypad specificato, sotto forma di un :ref:`Dictionary<class_Dictionary>`, se presenti e se calibrati; altrimenti, restituisce un :ref:`Dictionary<class_Dictionary>` vuoto.
 
-The dictionary contains the following fields:
+Il dizionario contiene i seguenti campi:
 
-\ ``gyroscope_offset``: average offset in gyroscope values from :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>` in rad/s.
+\ ``gyroscope_offset``: offset medio dei valori del giroscopio rispetto a :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>` in rad/s.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+Vedi :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` per un esempio su come utilizzare i sensori di movimento del joypad e la calibrazione nei tuoi giochi.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -882,9 +882,9 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns the joypad's motion sensor rate in Hz, if the joypad has motion sensors and they're currently enabled. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
+Restituisce la frequenza del sensore di movimento del joypad in Hz, se il joypad ha sensori di movimento e sono attualmente abilitati. Vedi anche :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>`.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -908,11 +908,11 @@ Restituisce il nome del joypad all'indice del dispositivo specificato, ad esempi
 
 :ref:`float<class_float>` **get_joy_vibration_duration**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_vibration_duration>`
 
-Returns the duration of the current vibration effect in seconds.
+Restituisce la durata dell'effetto di vibrazione attuale in secondi.
 
-\ **Note:** This method returns the same value that was passed to :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`, and this value does **not** change when the joypad's vibration runs out, it only gets reset after a call to :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
+\ **Nota:** Questo metodo restituisce lo stesso valore passato a :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>` e tale valore **non** cambia quando la vibrazione del joypad termina; viene ripristinato solo dopo una chiamata a :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
 
-If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>` instead.
+Se vuoi verificare che un joypad stia ancora vibrando, usa invece :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`.
 
 .. rst-class:: classref-item-separator
 
@@ -926,7 +926,7 @@ If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating(
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns the remaining duration of the current vibration effect in seconds.
+Restituisce la durata rimasta dell'effetto di vibrazione attuale in secondi.
 
 .. rst-class:: classref-item-separator
 
@@ -938,11 +938,11 @@ Returns the remaining duration of the current vibration effect in seconds.
 
 :ref:`Vector2<class_Vector2>` **get_joy_vibration_strength**\ (\ device\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Input_method_get_joy_vibration_strength>`
 
-Returns the strength of the joypad vibration: x is the strength of the weak motor, and y is the strength of the strong motor.
+Restituisce l'intensità della vibrazione del joypad: x rappresenta l'intensità del motore debole e y l'intensità del motore forte.
 
-\ **Note:** This method returns the same values that were passed to :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`, and these values do **not** change when the joypad's vibration runs out, they only get reset after a call to :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
+\ **Nota:** Questo metodo restituisce gli stessi valori passati a :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`, e tali valori **non** cambiano quando la vibrazione del joypad termina; vengono ripristinati solo dopo una chiamata a :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
 
-If you want to check if a joypad is still vibrating, use :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>` instead.
+Se vuoi verificare che un joypad stia ancora vibrando, usa invece :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1022,9 +1022,9 @@ Per impostazione predefinita, la zona morta viene calcolata automaticamente dall
 
 :ref:`bool<class_bool>` **has_joy_light**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_has_joy_light>`
 
-Returns ``true`` if the joypad has an LED light that can change colors and/or brightness. See also :ref:`set_joy_light()<class_Input_method_set_joy_light>`.
+Restituisce ``true`` se il joypad ha un LED che può cambiare colore e/o luminosità. Vedi anche :ref:`set_joy_light()<class_Input_method_set_joy_light>`.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1038,11 +1038,11 @@ Returns ``true`` if the joypad has an LED light that can change colors and/or br
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns ``true`` if the joypad has motion sensors (accelerometer and gyroscope).
+Restituisce ``true`` se il joypad ha sensori di movimento (accelerometro e giroscopio).
 
-\ **Note:** On iOS, joypad accelerometer sensor reading is not supported due to OS limitations.
+\ **Nota:** Su iOS, leggere il sensore dell'accelerometro del joypad non è supportato a causa di limitazioni del sistema operativo.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1054,9 +1054,9 @@ Returns ``true`` if the joypad has motion sensors (accelerometer and gyroscope).
 
 :ref:`bool<class_bool>` **has_joy_vibration**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_has_joy_vibration>`
 
-Returns ``true`` if the joypad supports vibration. See also :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
+Restituisce ``true`` se il joypad supporta la vibrazione. Vedi anche :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
 
-\ **Note:** For macOS, vibration is only supported in macOS 11 and later. When connected via USB, vibration is only supported for major brand controllers (except Xbox One and Xbox Series X/S controllers) due to macOS limitations.
+\ **Nota:** Per macOS, la vibrazione è supportata solo da macOS 11 in poi. Quando connesso tramite USB, la vibrazione è supportata solo per i controller delle principali marche (ad eccezione dei controller Xbox One e Xbox Series X/S) a causa delle limitazioni di macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1068,17 +1068,17 @@ Returns ``true`` if the joypad supports vibration. See also :ref:`start_joy_vibr
 
 :ref:`bool<class_bool>` **is_action_just_pressed**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Input_method_is_action_just_pressed>`
 
-Returns ``true`` when the user has *started* pressing the action event in the current frame or physics tick. It will only return ``true`` on the frame or tick that the user pressed down the button.
+Restituisce ``true`` quando l'utente ha *iniziato* a premere l'evento d'azione nel frame o nel tick di fisica attuale. Restituirà ``true`` solo sul frame o sul tick in cui l'utente ha premuto il pulsante.
 
-This is useful for code that needs to run only once when an action is pressed, instead of every frame while it's pressed.
+Questo è utile per codice che bisogna eseguire solo una volta quando viene premuta un'azione, anziché a ogni frame mentre viene premuta.
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+Se ``exact_match`` è ``false``, ignora i modificatori aggiuntivi di input per gli eventi :ref:`InputEventKey<class_InputEventKey>` e :ref:`InputEventMouseButton<class_InputEventMouseButton>` e la direzione per gli eventi :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
 
-\ **Note:** Returning ``true`` does not imply that the action is *still* pressed. An action can be pressed and released again rapidly, and ``true`` will still be returned so as not to miss input.
+\ **Nota:** Restituire ``true`` non significa che l'azione sia *ancora* premuta. Un'azione può essere premuta e rilasciata di nuovo rapidamente e ``true`` verrà comunque restituito per non perdere gli input.
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **Nota:** A causa di ghosting per le tastiere, :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` potrebbe restituire ``false`` anche se viene premuto uno dei tasti dell'azione. Consulta `Esempi di input <../tutorials/inputs/input_examples.html#keyboard-events>`__ nella documentazione per maggiori informazioni.
 
-\ **Note:** During input handling (e.g. :ref:`Node._input()<class_Node_private_method__input>`), use :ref:`InputEvent.is_action_pressed()<class_InputEvent_method_is_action_pressed>` instead to query the action state of the current event. See also :ref:`is_action_just_pressed_by_event()<class_Input_method_is_action_just_pressed_by_event>`.
+\ **Nota:** Durante la gestione degli input (ad esempio :ref:`Node._input()<class_Node_private_method__input>`), usa :ref:`InputEvent.is_action_pressed()<class_InputEvent_method_is_action_pressed>` al suo posto per interrogare lo stato dell'azione dell'evento attuale. Vedi anche :ref:`is_action_just_pressed_by_event()<class_Input_method_is_action_just_pressed_by_event>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1090,7 +1090,7 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`bool<class_bool>` **is_action_just_pressed_by_event**\ (\ action\: :ref:`StringName<class_StringName>`, event\: :ref:`InputEvent<class_InputEvent>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Input_method_is_action_just_pressed_by_event>`
 
-Restituisce ``true`` quando l'utente ha *iniziato* a premere l'evento d'azione nel frame o nel tick di fisica attuale. Restituirà ``true`` solo sul frame o sul tick in cui l'utente ha premuto il pulsante.
+Restituisce ``true`` quando l'utente ha *iniziato* a premere l'evento d'azione nel frame o nel tick di fisica attuale, e il primo evento che ha attivato la pressione dell'azione nel frame/tick di fisica attuale è stato ``event``. Restituirà ``true`` solo sul frame o sul tick in cui l'utente ha premuto il pulsante.
 
 Questo è utile per codice che bisogna eseguire solo una volta quando viene premuta un'azione, anziché a ogni frame mentre viene premuta.
 
@@ -1110,13 +1110,13 @@ Se ``exact_match`` è ``false``, ignora i modificatori aggiuntivi di input per g
 
 :ref:`bool<class_bool>` **is_action_just_released**\ (\ action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Input_method_is_action_just_released>`
 
-Returns ``true`` when the user *stops* pressing the action event in the current frame or physics tick. It will only return ``true`` on the frame or tick that the user releases the button.
+Restituisce ``true`` quando l'utente ha *finito* di premere l'evento azione nel frame o nel tick di fisica attuale. Restituirà ``true`` solo sul frame o sul tick in cui l'utente ha rilasciato il pulsante.
 
-\ **Note:** Returning ``true`` does not imply that the action is *still* not pressed. An action can be released and pressed again rapidly, and ``true`` will still be returned so as not to miss input.
+\ **Nota:** Restituire ``true`` non significa che l'azione non sia *ancora* premuta. Un'azione può essere premuta e rilasciata di nuovo rapidamente e ``true`` verrà comunque restituito per non perdere gli input.
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+Se ``exact_match`` è ``false``, ignora i modificatori aggiuntivi di input per gli eventi :ref:`InputEventKey<class_InputEventKey>` e :ref:`InputEventMouseButton<class_InputEventMouseButton>` e la direzione per gli eventi :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
 
-\ **Note:** During input handling (e.g. :ref:`Node._input()<class_Node_private_method__input>`), use :ref:`InputEvent.is_action_released()<class_InputEvent_method_is_action_released>` instead to query the action state of the current event. See also :ref:`is_action_just_released_by_event()<class_Input_method_is_action_just_released_by_event>`.
+\ **Nota:** Durante la gestione degli input (ad esempio :ref:`Node._input()<class_Node_private_method__input>`), usa :ref:`InputEvent.is_action_pressed()<class_InputEvent_method_is_action_pressed>` al suo posto per interrogare lo stato dell'azione dell'evento attuale. Vedi anche :ref:`is_action_just_released_by_event()<class_Input_method_is_action_just_released_by_event>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1223,11 +1223,11 @@ Restituisce ``true`` se il sistema riconosce il dispositivo specificato. Ciò si
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns ``true`` if the joypad's motion sensors have been calibrated.
+Restituisce ``true`` se i sensori di movimento del joypad sono stati calibrati.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+Vedi :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` per un esempio su come utilizzare i sensori di movimento e la calibrazione del joypad nei tuoi giochi.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1241,11 +1241,11 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns ``true`` if the joypad's motion sensors are currently being calibrated.
+Restituisce ``true`` se i sensori di movimento del joypad si stanno attualmente calibrando.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+Vedi :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` per un esempio su come utilizzare i sensori di movimento e la calibrazione del joypad nei tuoi giochi.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1259,11 +1259,11 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns ``true`` if the requested joypad has motion sensors (accelerometer and gyroscope) and they are currently enabled. See also :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>` and :ref:`has_joy_motion_sensors()<class_Input_method_has_joy_motion_sensors>`.
+Restituisce ``true`` se il joypad richiesto ha sensori di movimento (accelerometro e giroscopio) e questi sono attualmente abilitati. Vedi anche :ref:`set_joy_motion_sensors_enabled()<class_Input_method_set_joy_motion_sensors_enabled>` e :ref:`has_joy_motion_sensors()<class_Input_method_has_joy_motion_sensors>`.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+Vedi :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` per un esempio su come utilizzare i sensori di movimento e la calibrazione del joypad nei tuoi giochi.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1277,9 +1277,9 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Returns ``true`` if the joypad is still vibrating after a call to :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
+Restituisce ``true`` se il joypad sta vibrando ancora dopo una chiamata a :ref:`start_joy_vibration()<class_Input_method_start_joy_vibration>`.
 
-Unlike :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` and :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`, this method returns ``false`` after the joypad's vibration runs out.
+A differenza di :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` e :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`, questo metodo restituisce ``false`` quando la vibrazione del joypad termina.
 
 .. rst-class:: classref-item-separator
 
@@ -1291,9 +1291,9 @@ Unlike :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_s
 
 :ref:`bool<class_bool>` **is_key_label_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_key_label_pressed>`
 
-Returns ``true`` if you are pressing the key with the ``keycode`` printed on it. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant or any Unicode character code.
+Restituisce ``true`` se si sta premendo il tasto su cui è stampato il codice ``keycode``. È possibile passare una costante di :ref:`Key<enum_@GlobalScope_Key>` o qualsiasi codice di carattere Unicode.
 
-\ **Note:** If you want to check if a key was just pressed by using its label, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **Nota:** Se vuoi verificare che un tasto sia stato appena premuto tramite la sua etichetta, usa il sistema di azioni di input di Godot con :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` oppure usa il metodo :ref:`Node._input()<class_Node_private_method__input>` in questo modo:
 
 
 .. tabs::
@@ -1302,7 +1302,7 @@ Returns ``true`` if you are pressing the key with the ``keycode`` printed on it.
 
     func _input(event):
         if event is InputEventKey and not event.is_echo() and event.is_pressed() and event.key_label == KEY_SPACE:
-            pass # Your code here.
+            pass # Il tuo codice qui.
 
  .. code-tab:: csharp
 
@@ -1310,7 +1310,7 @@ Returns ``true`` if you are pressing the key with the ``keycode`` printed on it.
     {
         if (@event is InputEventKey eventKey && !eventKey.IsEcho() && eventKey.Pressed && eventKey.KeyLabel == Key.Space)
         {
-            // Your code here.
+            // Il tuo codice qui.
         }
     }
 
@@ -1566,11 +1566,11 @@ Imposta il valore della velocità di rotazione del sensore giroscopio. Può esse
 
 |void| **set_joy_light**\ (\ device\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Input_method_set_joy_light>`
 
-Sets the joypad's LED light, if available, to the specified color. See also :ref:`has_joy_light()<class_Input_method_has_joy_light>`.
+Imposta il colore del LED del joypad, se disponibile, sul colore specificato. Vedi anche :ref:`has_joy_light()<class_Input_method_has_joy_light>`.
 
-\ **Note:** There is no way to get the color of the light from a joypad. If you need to know the assigned color, store it separately.
+\ **Nota:** Non è possibile ottenere il colore della luce da un joypad. Se è necessario conoscere il colore assegnato, memorizzarlo separatamente.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1584,11 +1584,11 @@ Sets the joypad's LED light, if available, to the specified color. See also :ref
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Sets the specified joypad's calibration information. See also :ref:`get_joy_motion_sensors_calibration()<class_Input_method_get_joy_motion_sensors_calibration>`.
+Imposta le informazioni di calibrazione del joypad specificato. Vedi anche :ref:`get_joy_motion_sensors_calibration()<class_Input_method_get_joy_motion_sensors_calibration>`.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+Vedi :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` per un esempio su come utilizzare i sensori di movimento e la calibrazione del joypad nei tuoi giochi.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1602,13 +1602,13 @@ See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_mo
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Enables or disables the motion sensors (accelerometer and gyroscope), if available, on the specified joypad.
+Abilita o disabilita i sensori di movimento (accelerometro e giroscopio), se disponibili, sul joypad specificato.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+Vedi :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` per un esempio su come utilizzare i sensori di movimento e la calibrazione del joypad nei tuoi giochi.
 
-It's recommended to disable the motion sensors when they're no longer being used, because otherwise it might drain the controller battery faster.
+Si consiglia di disabilitare i sensori di movimento quando non sono più in uso, altrimenti potrebbero scaricare più velocemente la batteria del controller.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzione è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1650,11 +1650,11 @@ Richiede se un dispositivo di input deve essere ignorato o meno. È possibile ig
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Starts the process of calibrating the specified joypad's gyroscope, if it has one.
+Avvia il processo di calibrazione del giroscopio del joypad specificato, se ne ha uno.
 
-Once a joypad's gyroscope has been calibrated correctly (e.g. laying still on a table without being rotated), :ref:`get_joy_gyroscope()<class_Input_method_get_joy_gyroscope>` will return values close or equal to :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>` when the joypad is not being rotated.
+Una volta che il giroscopio di un joypad è stato calibrato correttamente (ad esempio, appoggiandolo su un tavolo senza ruotarlo), :ref:`get_joy_gyroscope()<class_Input_method_get_joy_gyroscope>` restituirà valori vicini o uguali a :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>` quando il joypad non viene ruotato.
 
-Here's an example of how to use joypad gyroscope and gyroscope calibration in your games:
+Ecco un esempio di come utilizzare il giroscopio del joypad e la sua calibrazione nei tuoi giochi:
 
 
 .. tabs::
@@ -1664,41 +1664,41 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
     const GYRO_SENSITIVITY = 10.0
 
     func _ready():
-        # In this example we only use the first connected joypad (id 0).
+        # In questo esempio usiamo solo il primo joypad connesso (id 0).
         if 0 not in Input.get_connected_joypads():
             return
 
         if not Input.has_joy_motion_sensors(0):
             return
 
-        # We must enable the motion sensors before using them.
+        # Dobbiamo abilitare l'accelerometro e il giroscopio prima di usarli.
         Input.set_joy_motion_sensors_enabled(0, true)
 
-        # (Tell the users here that they need to put their joypads on a flat surface and wait for confirmation.)
+        # (Informa gli utenti qui che devono mettere i joypad su una superficie piana e attendere la conferma.)
 
-        # Start the calibration process.
+        # Avvia il processo di calibrazione.
         calibrate_motion()
 
     func _process(delta):
-        # Only move the object if the joypad motion sensors are calibrated.
+        # Muovi l'oggetto solo se i sensori di movimento del joypad sono calibrati.
         if Input.is_joy_motion_sensors_calibrated(0):
             move_object(delta)
 
     func calibrate_motion():
         Input.start_joy_motion_sensors_calibration(0)
 
-        # Wait for some time.
+        # Attendi un po' di tempo.
         await get_tree().create_timer(1.0).timeout
 
         Input.stop_joy_motion_sensors_calibration(0)
-        # The joypad is now calibrated.
+        # Il joypad è ora calibrato.
 
     func move_object(delta):
-        var node: Node3D = ... # Put your node here.
+        var node: Node3D = ... # Inserisci qui il tuo nodo.
 
         var gyro := Input.get_joy_gyroscope(0)
-        node.rotation.x -= -gyro.y * GYRO_SENSITIVITY * delta # Use rotation around the Y axis (yaw) here.
-        node.rotation.y += -gyro.x * GYRO_SENSITIVITY * delta # Use rotation around the X axis (pitch) here.
+        node.rotation.x -= -gyro.y * GYRO_SENSITIVITY * delta # Usa la rotazione attorno all'asse Y (imbardata) qui.
+        node.rotation.y += -gyro.x * GYRO_SENSITIVITY * delta # Usa la rotazione attorno all'asse X (beccheggio) qui.
 
  .. code-tab:: csharp
 
@@ -1706,7 +1706,7 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
 
     public override void _Ready()
     {
-        // In this example we only use the first connected joypad (id 0).
+        // In questo esempio usiamo solo il primo joypad connesso (id 0).
         if (!Input.GetConnectedJoypads().Contains(0))
         {
             return;
@@ -1717,18 +1717,18 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
             return;
         }
 
-        // We must enable the accelerometer and the gyroscope before using them.
+        // Dobbiamo abilitare l'accelerometro e il giroscopio prima di usarli.
         Input.SetJoyMotionSensorsEnabled(0, true);
 
-        // (Tell the users here that they need to put their joypads on a flat surface and wait for confirmation.)
+        // (Informa gli utenti qui che devono mettere i joypad su una superficie piana e attendere la conferma.)
 
-        // Start the calibration process.
+        // Avvia il processo di calibrazione.
         CalibrateMotion();
     }
 
     public override void _Process(double delta)
     {
-        // Only move the object if the joypad motion sensors are calibrated.
+        // Muovi l'oggetto solo se i sensori di movimento del joypad sono calibrati.
         if (Input.IsJoyMotionSensorsCalibrated(0))
         {
             MoveObject(delta);
@@ -1739,28 +1739,28 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
     {
         Input.StartJoyMotionSensorsCalibration(0);
 
-        // Wait for some time.
+        // Attendi un po' di tempo.
         await ToSignal(GetTree().CreateTimer(1.0), SceneTreeTimer.SignalName.Timeout);
 
         Input.StopJoyMotionSensorsCalibration(0);
-        // The joypad is now calibrated.
+        // Il joypad è ora calibrato.
     }
 
     private void MoveObject(double delta)
     {
-        Node3D node = ... ; // Put your object here.
+        Node3D node = ... ; // Inserisci qui il tuo oggetto.
         Vector3 gyro = Input.GetJoyGyroscope(0);
         Vector3 rotation = node.Rotation;
-        rotation.X -= -gyro.Y * GyroSensitivity * (float)delta; // Use rotation around the Y axis (yaw) here.
-        rotation.Y += -gyro.X * GyroSensitivity * (float)delta; // Use rotation around the X axis (pitch) here.
+        rotation.X -= -gyro.Y * GyroSensitivity * (float)delta; // Usa la rotazione attorno all'asse Y (imbardata) qui.
+        rotation.Y += -gyro.X * GyroSensitivity * (float)delta; // Usa la rotazione attorno all'asse X (beccheggio) qui.
         node.Rotation = rotation;
     }
 
 
 
-\ **Note:** Accelerometer sensor doesn't usually require calibration.
+\ **Nota:** Il sensore accelerometro di solito non richiede calibrazione.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1800,11 +1800,11 @@ Vedi anche :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibrati
 
 **Sperimentale:** Questo metodo potrebbe essere cambiato o rimosso in versioni future.
 
-Stops the calibration process of the specified joypad's motion sensors.
+Interrompe il processo di calibrazione dei sensori di movimento del joypad specificato.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+Vedi :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` per un esempio su come utilizzare i sensori di movimento e la calibrazione del joypad nei tuoi giochi.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Nota:** Questa funzionalità è supportata solo su Windows, Linux, macOS e iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1864,7 +1864,7 @@ La posizione del mouse viene ritagliata ai limiti della risoluzione dello scherm
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

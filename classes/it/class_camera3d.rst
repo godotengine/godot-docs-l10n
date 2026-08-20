@@ -557,7 +557,7 @@ Restituisce la trasformazione della telecamera più gli spostamenti verticale (:
 
 :ref:`bool<class_bool>` **get_cull_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Camera3D_method_get_cull_mask_value>`
 
-Restituisce se lo strato specificato di :ref:`cull_mask<class_Camera3D_property_cull_mask>` è abilitato o meno, dato un ``layer_number`` compreso tra 1 e 20.
+Restituisce se lo strato specificato di :ref:`cull_mask<class_Camera3D_property_cull_mask>` è abilitato o meno, fornito un ``layer_number`` compreso tra 1 e 20.
 
 .. rst-class:: classref-item-separator
 
@@ -679,7 +679,7 @@ Restituisce una posizione 3D nello spazio mondiale, ottenuto proiettando un punt
 
 |void| **set_cull_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Camera3D_method_set_cull_mask_value>`
 
-In base a ``value``, abilita o disabilita il livello specificato in :ref:`cull_mask<class_Camera3D_property_cull_mask>`, dato un ``layer_number`` compreso tra 1 e 20.
+In base a ``value``, abilita o disabilita il livello specificato in :ref:`cull_mask<class_Camera3D_property_cull_mask>`, fornito un ``layer_number`` compreso tra 1 e 20.
 
 .. rst-class:: classref-item-separator
 
@@ -691,7 +691,7 @@ In base a ``value``, abilita o disabilita il livello specificato in :ref:`cull_m
 
 |void| **set_frustum**\ (\ size\: :ref:`float<class_float>`, offset\: :ref:`Vector2<class_Vector2>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Camera3D_method_set_frustum>`
 
-Sets the camera projection to frustum mode (see :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`), by specifying a ``size``, an ``offset``, and the ``z_near`` and ``z_far`` clip planes in world space units. The ``size`` parameter represents the size of the near plane, either its width or height depending on the value of :ref:`keep_aspect<class_Camera3D_property_keep_aspect>`. See also :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`.
+Imposta la proiezione della telecamera sulla modalità tronco (vedi :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`), specificando un ``size``, un ``offset`` e i piani di ritaglio ``z_near`` e ``z_far`` in unità di spazio mondiale. Il parametro ``size`` rappresenta la dimensione del piano vicino, ovvero la sua larghezza o altezza a seconda del valore di :ref:`keep_aspect<class_Camera3D_property_keep_aspect>`. Vedi anche :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`.
 
 .. rst-class:: classref-item-separator
 
@@ -744,7 +744,7 @@ Restituisce le coordinate 2D nel rettangolo della :ref:`Viewport<class_Viewport>
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

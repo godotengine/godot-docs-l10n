@@ -618,11 +618,11 @@ Metodo di interpolazione utilizzato per ridimensionare l'icona dell'applicazione
 
 :ref:`String<class_String>` **application/liquid_glass_icon** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/liquid_glass_icon>`
 
-macOS 26 Liquid Glass icon source file. Use `Icon Composer <https://developer.apple.com/icon-composer/>`__ to create Liquid Glass icons.
+File sorgente dell'icona Liquid Glass per macOS 26. Usa `Icon Composer <https://developer.apple.com/icon-composer/>`__ per creare icone Liquid Glass.
 
-\ **Note:** Supported when exporting from macOS only, Xcode 26+ required.
+\ **Nota:** Supportato solo durante l'esportazione da macOS, richiede Xcode 26+.
 
-\ **Note:** Liquid Glass icons are supported on macOS 26 only, use :ref:`application/icon<class_EditorExportPlatformMacOS_property_application/icon>` to set the icon for older macOS versions.
+\ **Nota:** Le icone Liquid Glass sono supportate solo su macOS 26; usa :ref:`application/icon<class_EditorExportPlatformMacOS_property_application/icon>` per impostare l'icona per le versioni precedenti di macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -3421,7 +3421,7 @@ Versione di Xcode usato per creare l'eseguibile dell'applicazione.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

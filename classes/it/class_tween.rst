@@ -132,9 +132,9 @@ Dovresti evitare di usare più di un **Tween** per proprietà di un oggetto. Se 
 
 
 
-Alcuni :ref:`Tweener<class_Tweener>` usano transizioni e allentamenti. La prima accetta una costante :ref:`TransitionType<enum_Tween_TransitionType>` e si riferisce al modo in cui viene gestita la tempistica dell'animazione (vedi `easings.net <https://easings.net/>`__ per alcuni esempi). La seconda accetta una costante :ref:`EaseType<enum_Tween_EaseType>` e controlla dove ``trans_type`` viene applicato all'interpolazione (all'inizio, alla fine o in entrambi). Se non sai quale transizione e allentamento scegliere, puoi provare le diverse costanti :ref:`TransitionType<enum_Tween_TransitionType>` con :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>` e usare quella che sembri la migliore.
+Alcuni :ref:`Tweener<class_Tweener>` usano transizioni e andamenti. La prima accetta una costante :ref:`TransitionType<enum_Tween_TransitionType>` e si riferisce al modo in cui viene gestita la tempistica dell'animazione (vedi `easings.net <https://easings.net/>`__ per alcuni esempi). La seconda accetta una costante :ref:`EaseType<enum_Tween_EaseType>` e controlla dove ``trans_type`` viene applicato all'interpolazione (all'inizio, alla fine o in entrambi). Se non sai quale transizione e andamento scegliere, puoi provare le diverse costanti :ref:`TransitionType<enum_Tween_TransitionType>` con :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>` e usare quella che sembri la migliore.
 
-\ `Foglio riassuntivo sui tipi di transizione e di allentamento dei Tween <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/tween_cheatsheet.webp>`__\ 
+\ `Foglio riassuntivo sui tipi di transizione e di andamento dei Tween <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/tween_cheatsheet.webp>`__\ 
 
 \ **Nota:** I Tween non sono progettati per essere riutilizzati e tentare di farlo risulta in comportamento indefinito. Crea un nuovo Tween per ogni animazione e ogni volta che riproduci un'animazione dall'inizio. Tieni presente che i Tween si avviano immediatamente, quindi crea un Tween solo quando vuoi iniziare l'animazione.
 
@@ -572,13 +572,13 @@ Restituisce ``true`` se è stato aggiunto un :ref:`Tweener<class_Tweener>` al **
 
 :ref:`Variant<class_Variant>` **interpolate_value**\ (\ initial_value\: :ref:`Variant<class_Variant>`, delta_value\: :ref:`Variant<class_Variant>`, elapsed_time\: :ref:`float<class_float>`, duration\: :ref:`float<class_float>`, trans_type\: :ref:`TransitionType<enum_Tween_TransitionType>`, ease_type\: :ref:`EaseType<enum_Tween_EaseType>`\ ) |static| :ref:`🔗<class_Tween_method_interpolate_value>`
 
-Questo metodo può essere utilizzato per l'interpolazione manuale di un valore, quando non vuoi che il **Tween** esegua l'animazione per te. È simile a :ref:`@GlobalScope.lerp()<class_@GlobalScope_method_lerp>`, ma con supporto per transizione e allentamento personalizzate.
+Questo metodo può servire per interpolare manualmente un valore, quando non vuoi che il **Tween** esegua l'animazione per te. È simile a :ref:`@GlobalScope.lerp()<class_@GlobalScope_method_lerp>`, ma con supporto per transizioni e andamenti personalizzati.
 
 \ ``initial_value`` è il valore iniziale dell'interpolazione.
 
 \ ``delta_value`` è la modifica del valore nell'interpolazione, ovvero è uguale a ``final_value - initial_value``.
 
-\ ``elapsed_time`` è il tempo in secondi trascorso dopo l'inizio dell'interpolazione ed è utilizzato per controllare la posizione dell'interpolazione. Ad esempio, quando è uguale alla metà di ``duration``, il valore interpolato sarà a metà tra i valori iniziale e finale. Questo valore può anche essere maggiore di ``duration`` o minore di 0, il che estrapolerà il valore.
+\ ``elapsed_time`` è il tempo in secondi trascorso dopo l'inizio dell'interpolazione e serve per controllare la posizione dell'interpolazione. Ad esempio, quando è uguale alla metà di ``duration``, il valore interpolato sarà a metà tra i valori iniziale e finale. Questo valore può anche essere maggiore di ``duration`` o minore di 0, il che estrapolerà il valore.
 
 \ ``duration`` è il tempo totale dell'interpolazione.
 
@@ -667,7 +667,7 @@ Puoi rendere il **Tween** parallelo come predefinito attraverso :ref:`set_parall
 
 Mette in pausa il tweening. L'animazione può essere ripresa usando :ref:`play()<class_Tween_method_play>`.
 
-\ **Nota:** Se un Tween è in pausa e non è associato a nessun nodo, esisterà indefinitamente finché non sarà avviato manualmente o invalidato. Se perdi un riferimento a tale Tween, puoi recuperarlo usando :ref:`SceneTree.get_processed_tweens()<class_SceneTree_method_get_processed_tweens>`.
+\ **Nota:** Se un Tween è in pausa e non è associato ad alcun nodo, esisterà indefinitamente finché non sarà avviato manualmente o invalidato. Se perdi un riferimento a tale Tween, puoi recuperarlo usando :ref:`SceneTree.get_processed_tweens()<class_SceneTree_method_get_processed_tweens>`.
 
 .. rst-class:: classref-item-separator
 
@@ -691,9 +691,9 @@ Riprende un **Tween** in pausa o interrotto.
 
 :ref:`Tween<class_Tween>` **set_ease**\ (\ ease\: :ref:`EaseType<enum_Tween_EaseType>`\ ) :ref:`🔗<class_Tween_method_set_ease>`
 
-Imposta il tipo di allentamento predefinito per i :ref:`PropertyTweener<class_PropertyTweener>` e i :ref:`MethodTweener<class_MethodTweener>` accodati dopo questo metodo.
+Imposta il tipo di andamento predefinito per i :ref:`PropertyTweener<class_PropertyTweener>` e i :ref:`MethodTweener<class_MethodTweener>` accodati dopo questo metodo.
 
-Prima che questo metodo venga chiamato, il tipo di allentamento predefinito è :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>`.
+Prima che questo metodo venga chiamato, il tipo di andamento predefinito è :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>`.
 
 
 .. tabs::
@@ -853,7 +853,7 @@ Arresta il tweening e ripristina lo stato iniziale del **Tween**. Questo non rim
     tween.stop()
     tween.play()
 
-\ **Nota:** Se un Tween viene arrestato e non è associato a nessun nodo, esisterà indefinitamente finché non verrà avviato manualmente o invalidato. Se si perde un riferimento a tale Tween, è possibile recuperarlo usando :ref:`SceneTree.get_processed_tweens()<class_SceneTree_method_get_processed_tweens>`.
+\ **Nota:** Se un Tween viene arrestato e non è associato ad alcun nodo, esisterà indefinitamente finché non verrà avviato manualmente o invalidato. Se si perde un riferimento a tale Tween, è possibile recuperarlo usando :ref:`SceneTree.get_processed_tweens()<class_SceneTree_method_get_processed_tweens>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1016,7 +1016,7 @@ Crea e aggiunge un :ref:`IntervalTweener<class_IntervalTweener>`. Questo metodo 
 
 :ref:`MethodTweener<class_MethodTweener>` **tween_method**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`Variant<class_Variant>`, to\: :ref:`Variant<class_Variant>`, duration\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Tween_method_tween_method>`
 
-Crea e aggiunge un :ref:`MethodTweener<class_MethodTweener>`. Questo metodo è simile a una combinazione di :ref:`tween_callback()<class_Tween_method_tween_callback>` e :ref:`tween_property()<class_Tween_method_tween_property>`. Chiama un metodo nel tempo con un valore interpolato fornito come argomento. Il valore è interpolato tra ``from`` e ``to`` nel tempo specificato da ``duration``, in secondi. Usa :ref:`Callable.bind()<class_Callable_method_bind>` per associare ulteriori argomenti per la chiamata. Puoi usare :ref:`MethodTweener.set_ease()<class_MethodTweener_method_set_ease>` e :ref:`MethodTweener.set_trans()<class_MethodTweener_method_set_trans>` per modificare l'allentamento e la transizione del valore o :ref:`MethodTweener.set_delay()<class_MethodTweener_method_set_delay>` per ritardare l'interpolazione.
+Crea e aggiunge un :ref:`MethodTweener<class_MethodTweener>`. Questo metodo è simile a una combinazione di :ref:`tween_callback()<class_Tween_method_tween_callback>` e :ref:`tween_property()<class_Tween_method_tween_property>`. Chiama un metodo nel tempo con un valore interpolato fornito come argomento. Il valore è interpolato tra ``from`` e ``to`` nel tempo specificato da ``duration``, in secondi. Usa :ref:`Callable.bind()<class_Callable_method_bind>` per associare ulteriori argomenti per la chiamata. Puoi usare :ref:`MethodTweener.set_ease()<class_MethodTweener_method_set_ease>` e :ref:`MethodTweener.set_trans()<class_MethodTweener_method_set_trans>` per modificare l'andamento e la transizione del valore o :ref:`MethodTweener.set_delay()<class_MethodTweener_method_set_delay>` per ritardare l'interpolazione.
 
 \ **Esempio:** Fare in modo che un oggetto 3D guardi da un punto a un altro punto:
 
@@ -1151,7 +1151,7 @@ Crea e accoda un :ref:`SubtweenTweener<class_SubtweenTweener>`. Questo metodo pu
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -147,9 +147,9 @@ Controlla il modo in cui l'AudioStreamRandomizer sceglie quale AudioStream ripro
 - |void| **set_random_pitch**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_pitch**\ (\ )
 
-The largest possible frequency multiplier of the random pitch variation. Pitch will be randomly chosen within a range of ``1.0 / random_pitch`` and ``random_pitch``. A value of ``1.0`` means no variation. A value of ``2.0`` means pitch will be randomized between double and half.
+Il moltiplicatore di frequenza massimo possibile per la variazione casuale del tono. il tono verrà scelto a caso entro un intervallo compreso tra ``1.0 / random_pitch`` e ``random_pitch``. Un valore di ``1.0`` significa nessuna variazione. Un valore di ``2.0`` significa che il tono verrà randomizzato tra il doppio e la metà.
 
-\ **Note:** Setting this property also sets :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`.
+\ **Nota:** L'impostazione di questa proprietà imposta anche :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`.
 
 .. rst-class:: classref-item-separator
 
@@ -166,9 +166,9 @@ The largest possible frequency multiplier of the random pitch variation. Pitch w
 - |void| **set_random_pitch_semitones**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_pitch_semitones**\ (\ )
 
-The largest possible distance, in semitones, of the random pitch variation. A value of ``0.0`` means no variation.
+La massima distanza possibile, in semitoni, della variazione casuale del tono. Un valore di ``0.0`` significa nessuna variazione.
 
-\ **Note:** Setting this property also sets :ref:`random_pitch<class_AudioStreamRandomizer_property_random_pitch>`.
+\ **Nota:** Impostare questa proprietà imposta anche :ref:`random_pitch<class_AudioStreamRandomizer_property_random_pitch>`.
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ The largest possible distance, in semitones, of the random pitch variation. A va
 - |void| **set_random_volume_offset_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_volume_offset_db**\ (\ )
 
-The intensity of random volume variation. Volume will be increased or decreased by a random value up to ``random_volume_offset_db``. A value of ``0.0`` means no variation. A value of ``3.0`` means volume will be randomized between ``-3.0 dB`` and ``+3.0 dB``.
+L'intensità della variazione casuale del volume. Il volume sarà aumentato o diminuito di un valore casuale fino a ``random_volume_offset_db``. Un valore di ``0.0`` significa nessuna variazione. Un valore di ``3.0`` significa che il volume sarà randomizzato tra ``-3.0 dB`` e ``+3.0 dB``.
 
 .. rst-class:: classref-item-separator
 
@@ -197,9 +197,9 @@ The intensity of random volume variation. Volume will be increased or decreased 
 
 :ref:`AudioStream<class_AudioStream>` **stream_{index}/stream** :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/stream>`
 
-The :ref:`AudioStream<class_AudioStream>` at ``index``.
+L':ref:`AudioStream<class_AudioStream>` all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. streams_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -211,9 +211,9 @@ The :ref:`AudioStream<class_AudioStream>` at ``index``.
 
 :ref:`float<class_float>` **stream_{index}/weight** = ``1.0`` :ref:`🔗<class_AudioStreamRandomizer_property_stream_{index}/weight>`
 
-The probability weight of the :ref:`AudioStream<class_AudioStream>` at ``index``.
+Il peso di probabilità dell':ref:`AudioStream<class_AudioStream>` all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. streams_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. streams_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ Imposta il peso di probabilità del flusso all'indice specificato. Più è alto 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

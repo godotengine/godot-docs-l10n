@@ -95,7 +95,7 @@ Tempo impiegato per completare un frame di fisica, in secondi. *Più basso è, m
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_NAVIGATION_PROCESS** = ``3``
 
-Tempo impiegato per completare un passaggio di navigazione, in secondi. Include gli aggiornamenti della mappa di navigazione e i calcoli di evasione degli agenti. *Più basso è, meglio è.*
+Tempo impiegato per completare un passaggio di navigazione, in secondi. Include gli aggiornamenti della mappa di navigazione e i calcoli di evitamento degli agenti. *Più basso è, meglio è.*
 
 .. _class_Performance_constant_MEMORY_STATIC:
 
@@ -265,7 +265,7 @@ Latenza di output dell':ref:`AudioServer<class_AudioServer>`. Equivalente a chia
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_ACTIVE_MAPS** = ``24``
 
-Number of active navigation maps in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`. This also includes the empty default navigation maps created by :ref:`World2D<class_World2D>` and :ref:`World3D<class_World3D>` instances.
+Numero di mappe di navigazione attive nel :ref:`NavigationServer2D<class_NavigationServer2D>` e :ref:`NavigationServer3D<class_NavigationServer3D>`. Include anche le due mappe di navigazione vuote predefinite create dalle istanze di :ref:`World2D<class_World2D>` e :ref:`World3D<class_World3D>`.
 
 .. _class_Performance_constant_NAVIGATION_REGION_COUNT:
 
@@ -281,7 +281,7 @@ Numero di regioni di navigazione attive nel :ref:`NavigationServer2D<class_Navig
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_AGENT_COUNT** = ``26``
 
-Numero di agenti di navigazione attivi che stanno elaborando l'evasione nel :ref:`NavigationServer2D<class_NavigationServer2D>` e :ref:`NavigationServer3D<class_NavigationServer3D>`.
+Numero di agenti di navigazione attivi che stanno elaborando l'evitamento nel :ref:`NavigationServer2D<class_NavigationServer2D>` e :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_LINK_COUNT:
 
@@ -385,7 +385,7 @@ Numero di compilazioni delle pipeline che sono state attivate per ottimizzare la
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_ACTIVE_MAPS** = ``39``
 
-Number of active navigation maps in the :ref:`NavigationServer2D<class_NavigationServer2D>`. This also includes the empty default navigation maps created by :ref:`World2D<class_World2D>` instances.
+Numero di mappe di navigazione attive nel :ref:`NavigationServer2D<class_NavigationServer2D>`. Include anche le due mappe di navigazione vuote predefinite create dalle istanze di :ref:`World2D<class_World2D>`.
 
 .. _class_Performance_constant_NAVIGATION_2D_REGION_COUNT:
 
@@ -401,7 +401,7 @@ Numero di regioni di navigazione attive nel :ref:`NavigationServer2D<class_Navig
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_AGENT_COUNT** = ``41``
 
-Numero di agenti di navigazione attivi che stanno elaborando l'evasione nel :ref:`NavigationServer2D<class_NavigationServer2D>`.
+Numero di agenti di navigazione attivi che stanno elaborando l'evitamento nel :ref:`NavigationServer2D<class_NavigationServer2D>`.
 
 .. _class_Performance_constant_NAVIGATION_2D_LINK_COUNT:
 
@@ -465,7 +465,7 @@ Numero di ostacoli di navigazione attivi nel :ref:`NavigationServer2D<class_Navi
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_ACTIVE_MAPS** = ``49``
 
-Number of active navigation maps in the :ref:`NavigationServer3D<class_NavigationServer3D>`. This also includes the empty default navigation maps created by :ref:`World3D<class_World3D>` instances.
+Numero di mappe di navigazione attive nel :ref:`NavigationServer3D<class_NavigationServer3D>`. Include anche le mappe di navigazione vuote predefinite create dalle istanze di :ref:`World3D<class_World3D>`.
 
 .. _class_Performance_constant_NAVIGATION_3D_REGION_COUNT:
 
@@ -481,7 +481,7 @@ Numero di regioni di navigazione attive nel :ref:`NavigationServer3D<class_Navig
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_AGENT_COUNT** = ``51``
 
-Numero di agenti di navigazione attivi che stanno elaborando l'evasione nel :ref:`NavigationServer3D<class_NavigationServer3D>`.
+Numero di agenti di navigazione attivi che stanno elaborando l'evitamento nel :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_3D_LINK_COUNT:
 
@@ -563,7 +563,7 @@ enum **MonitorType**: :ref:`🔗<enum_Performance_MonitorType>`
 
 :ref:`MonitorType<enum_Performance_MonitorType>` **MONITOR_TYPE_QUANTITY** = ``0``
 
-Monitor output is formatted as an integer value.
+L'output del monitor è formattato come valore intero.
 
 .. _class_Performance_constant_MONITOR_TYPE_MEMORY:
 
@@ -571,7 +571,7 @@ Monitor output is formatted as an integer value.
 
 :ref:`MonitorType<enum_Performance_MonitorType>` **MONITOR_TYPE_MEMORY** = ``1``
 
-Monitor output is formatted as computer memory. Submitted values should represent a number of bytes.
+L'output del monitor è formattato come memoria del computer. I valori inviati devono rappresentare un numero di byte.
 
 .. _class_Performance_constant_MONITOR_TYPE_TIME:
 
@@ -579,7 +579,7 @@ Monitor output is formatted as computer memory. Submitted values should represen
 
 :ref:`MonitorType<enum_Performance_MonitorType>` **MONITOR_TYPE_TIME** = ``2``
 
-Monitor output is formatted as time in milliseconds. Submitted values should represent a time in seconds (not milliseconds).
+L'output del monitor è formattato come tempo in millisecondi. I valori inviati devono rappresentare un tempo in secondi (non in millisecondi).
 
 .. _class_Performance_constant_MONITOR_TYPE_PERCENTAGE:
 
@@ -587,7 +587,7 @@ Monitor output is formatted as time in milliseconds. Submitted values should rep
 
 :ref:`MonitorType<enum_Performance_MonitorType>` **MONITOR_TYPE_PERCENTAGE** = ``3``
 
-Monitor output is formatted as a percentage. Submitted values should represent a fractional value rather than the percentage directly, e.g. ``0.5`` for ``50.00%``.
+L'output del monitor è formattato come percentuale. I valori inviati devono rappresentare un valore frazionario anziché la percentuale direttamente, ad esempio ``0.5`` per ``50.00%``.
 
 .. rst-class:: classref-section-separator
 
@@ -696,7 +696,7 @@ Restituisce i nomi dei monitor personalizzati attivi in un :ref:`Array<class_Arr
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_custom_monitor_types**\ (\ ) :ref:`🔗<class_Performance_method_get_custom_monitor_types>`
 
-Returns the :ref:`MonitorType<enum_Performance_MonitorType>` values of active custom monitors in an :ref:`Array<class_Array>`.
+Restituisce i valori di :ref:`MonitorType<enum_Performance_MonitorType>` dei monitor personalizzati attivi in un :ref:`Array<class_Array>`.
 
 .. rst-class:: classref-item-separator
 
@@ -765,7 +765,7 @@ Rimuove il monitor personalizzato con l'``id`` specificato. Stampa un errore se 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

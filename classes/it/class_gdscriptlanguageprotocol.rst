@@ -9,16 +9,16 @@ GDScriptLanguageProtocol
 
 **Eredita:** :ref:`JSONRPC<class_JSONRPC>` **<** :ref:`Object<class_Object>`
 
-GDScript language server.
+Server di linguaggio per GDScript.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Provides access to certain features that are implemented in the language server.
+Fornisce accesso a determinate funzionalità implementate nel server di linguaggio.
 
-\ **Note:** This class is not a language server client that can be used to access LSP functionality. It only provides access to a limited set of features that is implemented using the same technical foundation as the language server.
+\ **Nota:** Questa classe non è un client del server di linguaggio utilizzabile per accedere alle funzionalità LSP. Fornisce solo accesso a un insieme limitato di funzionalità implementate attraverso la stessa base tecnica del server di linguaggio.
 
 .. rst-class:: classref-reftable-group
 
@@ -65,7 +65,7 @@ Descrizioni dei metodi
 
 **Deprecato:** :ref:`GDScriptTextDocument<class_GDScriptTextDocument>` is deprecated.
 
-Returns the language server's :ref:`GDScriptTextDocument<class_GDScriptTextDocument>` instance.
+Restituisce l'istanza :ref:`GDScriptTextDocument<class_GDScriptTextDocument>` del server di linguaggio.
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Returns the language server's :ref:`GDScriptTextDocument<class_GDScriptTextDocum
 
 :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` **get_workspace**\ (\ ) :ref:`🔗<class_GDScriptLanguageProtocol_method_get_workspace>`
 
-Returns the language server's :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` instance.
+Restituisce l'istanza :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` del server di linguaggio.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Returns the language server's :ref:`GDScriptWorkspace<class_GDScriptWorkspace>` 
 
 :ref:`bool<class_bool>` **is_initialized**\ (\ ) |const| :ref:`🔗<class_GDScriptLanguageProtocol_method_is_initialized>`
 
-Returns ``true`` if the language server was initialized by a language server client, ``false`` otherwise.
+Restituisce ``true`` se il server di linguaggio è stato inizializzato da un client di server di linguaggio, altrimenti ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Returns ``true`` if the language server was initialized by a language server cli
 
 :ref:`bool<class_bool>` **is_smart_resolve_enabled**\ (\ ) |const| :ref:`🔗<class_GDScriptLanguageProtocol_method_is_smart_resolve_enabled>`
 
-Returns ``true`` if the language server is providing the smart resolve feature, ``false`` otherwise. The feature can be configured through the editor settings.
+Restituisce ``true`` se il server di linguaggio fornisce la funzionalità di risoluzione intelligente, ``false`` altrimenti. È possibile configurare la funzionalità tramite le impostazioni dell'editor.
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ Returns ``true`` if the language server is providing the smart resolve feature, 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

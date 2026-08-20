@@ -333,7 +333,7 @@ Restituisce ``true`` se l'elemento attualmente analizzato è vuoto, ad esempio `
 
 :ref:`Error<enum_@GlobalScope_Error>` **open**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XMLParser_method_open>`
 
-Apre un ``file`` XML per l'analisi. Questo metodo restituisce un codice di errore.
+Apre un ``file`` XML per l'analisi. Questo metodo restituisce un codice d'errore.
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ Apre un ``file`` XML per l'analisi. Questo metodo restituisce un codice di error
 
 :ref:`Error<enum_@GlobalScope_Error>` **open_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_XMLParser_method_open_buffer>`
 
-Apre un ``buffer`` grezzo XML per l'analisi. Questo metodo restituisce un codice di errore.
+Apre un ``buffer`` grezzo XML per l'analisi. Questo metodo restituisce un codice d'errore.
 
 .. rst-class:: classref-item-separator
 
@@ -357,7 +357,7 @@ Apre un ``buffer`` grezzo XML per l'analisi. Questo metodo restituisce un codice
 
 :ref:`Error<enum_@GlobalScope_Error>` **read**\ (\ ) :ref:`🔗<class_XMLParser_method_read>`
 
-Analizza il prossimo nodo nel file. Questo metodo restituisce un codice di errore.
+Analizza il prossimo nodo nel file. Questo metodo restituisce un codice d'errore.
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ Analizza il prossimo nodo nel file. Questo metodo restituisce un codice di error
 
 :ref:`Error<enum_@GlobalScope_Error>` **seek**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_XMLParser_method_seek>`
 
-Sposta il cursore del buffer in un determinato offset (dall'inizio) e legge il nodo successivo. Questo metodo restituisce un codice di errore.
+Sposta il cursore del buffer in un determinato offset (dall'inizio) e legge il nodo successivo. Questo metodo restituisce un codice d'errore.
 
 .. rst-class:: classref-item-separator
 
@@ -387,7 +387,7 @@ Salta la sezione attuale. Se il nodo attualmente analizzato contiene nodi più i
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

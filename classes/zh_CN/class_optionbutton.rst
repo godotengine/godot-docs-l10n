@@ -219,9 +219,9 @@ OptionButton
 - |void| **set_fit_to_longest_item**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_to_longest_item**\ (\ )
 
-如果为 ``true``\ ，最小尺寸将由最长项目的文本确定，而不是当前选定的文本。
+如果\ ``true``\ ，最小尺寸将由最长项目的宽度决定，而不是当前选择的那个。它还会考虑弹窗的边距，使按钮匹配其总宽度。
 
-\ **注意：**\ 出于性能原因，在添加、移除或修改项目时，最小尺寸不会立即更新。
+\ **注意：**\ 出于性能原因，在添加、删除或修改项目时，最小尺寸不会立即更新。
 
 .. rst-class:: classref-item-separator
 

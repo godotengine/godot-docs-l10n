@@ -14,9 +14,9 @@ Uno script che viene eseguito all'esportazione del progetto.
 Descrizione
 ----------------------
 
-**EditorExportPlugin**\ s are automatically invoked whenever the user exports the project. They can be used to modify scenes and resources during project export based on what :doc:`Feature Tags <../tutorials/export/feature_tags>` are set. For each plugin, :ref:`_export_begin()<class_EditorExportPlugin_private_method__export_begin>` is called at the beginning of the export process and then :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` is called for each exported file.
+Gli **EditorExportPlugin** vengono automaticamente invocati ogni volta che l'utente esporta il progetto. Possono servire per modificare le scene e le risorse durante l'esportazione del progetto in base in base a quali :doc:`tag di funzionalità <../tutorials/export/feature_tags>` sono impostate. Per ogni plugin, :ref:`_export_begin()<class_EditorExportPlugin_private_method__export_begin>` viene chiamato all'inizio del processo di esportazione e poi :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` viene chiamato per ogni file esportato.
 
-Register a **EditorExportPlugin** by creating a new :ref:`EditorPlugin<class_EditorPlugin>` and calling its :ref:`EditorPlugin.add_export_plugin()<class_EditorPlugin_method_add_export_plugin>` method.
+Registra un **EditorExportPlugin** creando un nuovo :ref:`EditorPlugin<class_EditorPlugin>` e chiamando il suo metodo :ref:`EditorPlugin.add_export_plugin()<class_EditorPlugin_method_add_export_plugin>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -244,9 +244,9 @@ Questo viene chiamato quando termina il processo di personalizzazione delle scen
 
 |void| **_end_generate_apple_embedded_project**\ (\ path\: :ref:`String<class_String>`, will_build_archive\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorExportPlugin_private_method__end_generate_apple_embedded_project>`
 
-This is called after Xcode project generation, but before it is built.
+Questo viene chiamato dopo la generazione del progetto Xcode, ma prima della sua compilazione.
 
-\ **Note:** Only supported on iOS and visionOS.
+\ **Nota:** Supportata solo su iOS e visionOS.
 
 .. rst-class:: classref-item-separator
 
@@ -824,7 +824,7 @@ Da chiamare all'interno di :ref:`_export_file()<class_EditorExportPlugin_private
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

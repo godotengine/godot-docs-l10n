@@ -139,7 +139,7 @@ Costruisce un **bool** come copia del **bool** specificato.
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`float<class_float>`\ )
 
-Casts a :ref:`float<class_float>` value to a **bool**. Returns ``false`` if ``from`` is equal to ``0.0`` (including ``-0.0``), and ``true`` for all other values (including :ref:`@GDScript.INF<class_@GDScript_constant_INF>` and :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`).
+Converte un valore :ref:`float<class_float>` a un valore **bool**. Restituisce ``false`` se ``from`` è uguale a ``0.0`` (incluso ``-0.0``), e ``true`` per tutti gli altri valori (inclusi :ref:`@GDScript.INF<class_@GDScript_constant_INF>` e :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`).
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Casts a :ref:`float<class_float>` value to a **bool**. Returns ``false`` if ``fr
 
 :ref:`bool<class_bool>` **bool**\ (\ from\: :ref:`int<class_int>`\ )
 
-Casts an :ref:`int<class_int>` value to a **bool**. Returns ``false`` if ``from`` is equal to ``0``, and ``true`` for all other values.
+Converte un valore :ref:`int<class_int>` a un valore **bool**. Restituisce ``false`` se ``from`` è uguale a ``0``, e ``true`` per tutti gli altri valori.
 
 .. rst-class:: classref-section-separator
 
@@ -166,7 +166,7 @@ Descrizioni degli operatori
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_neq_bool>`
 
-Returns ``true`` if one **bool** is ``true`` and the other **bool** is ``false``. Equivalent to logical XOR (NEQ).
+Restituisce ``true`` se un **bool** è ``true`` e l'altro **bool** è ``false``. Equivale all'XOR logico.
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Returns ``true`` if one **bool** is ``true`` and the other **bool** is ``false``
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_lt_bool>`
 
-Returns ``true`` if the left **bool** is ``false`` and ``right`` is ``true``.
+Restituisce ``true`` se il **bool** sinistro è ``false`` e ``right`` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Returns ``true`` if the left **bool** is ``false`` and ``right`` is ``true``.
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_eq_bool>`
 
-Returns ``true`` if both **bool**\ s are ``true``, or if both **bool**\ s are ``false``. Equivalent to logical XNOR (EQ).
+Restituisce ``true`` se entrambi i **bool** sono ``true`` o se entrambi i **bool** sono ``false``. Equivale a un XNOR logico (EQ).
 
 .. rst-class:: classref-item-separator
 
@@ -202,13 +202,13 @@ Returns ``true`` if both **bool**\ s are ``true``, or if both **bool**\ s are ``
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_bool_operator_gt_bool>`
 
-Returns ``true`` if the left **bool** is ``true`` and ``right`` is ``false``.
+Restituisce ``true`` se il **bool** sinistro è ``true`` e ``right`` è ``false``.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

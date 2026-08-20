@@ -17,9 +17,9 @@ Nodo che istanzia un :ref:`MultiMesh<class_MultiMesh>` in 2D.
 Descrizione
 ----------------------
 
-**MultiMeshInstance2D** is a specialized node to instance a :ref:`MultiMesh<class_MultiMesh>` resource in 2D. This can be faster to render compared to displaying many :ref:`Sprite2D<class_Sprite2D>` nodes with large transparent areas, especially if the nodes take up a lot of space on screen at high viewport resolutions. This is because using a mesh designed to fit the sprites' opaque areas will reduce GPU fill rate utilization (at the cost of increased vertex processing utilization).
+**MultiMeshInstance2D** è un nodo specializzato per istanziare una risorsa :ref:`MultiMesh<class_MultiMesh>` in 2D. Questo può essere più veloce da renderizzare rispetto a visualizzare molti nodi :ref:`Sprite2D<class_Sprite2D>` con ampie aree trasparenti, soprattutto se i nodi occupano molto spazio sullo schermo ad alte risoluzioni del viewport. Questo perché usare una mesh progettata per adattarsi alle aree opache dello sprite riduce l'utilizzo del fill rate nella GPU (a scapito di più elaborazione richiesta per i vertici).
 
-Usage is the same as :ref:`MultiMeshInstance3D<class_MultiMeshInstance3D>`.
+L'utilizzo è identico a quello di :ref:`MultiMeshInstance3D<class_MultiMeshInstance3D>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -95,7 +95,7 @@ La :ref:`Texture2D<class_Texture2D>` che sarà utilizzata se si utilizza il :ref
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

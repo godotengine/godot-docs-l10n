@@ -9,7 +9,7 @@ StreamPeer
 
 **Ereditato da:** :ref:`StreamPeerBuffer<class_StreamPeerBuffer>`, :ref:`StreamPeerExtension<class_StreamPeerExtension>`, :ref:`StreamPeerGZIP<class_StreamPeerGZIP>`, :ref:`StreamPeerSocket<class_StreamPeerSocket>`, :ref:`StreamPeerTLS<class_StreamPeerTLS>`
 
-Classe di base astratta per interagire con i flussi.
+Classe base astratta per interagire con i flussi.
 
 .. rst-class:: classref-introduction-group
 
@@ -205,7 +205,7 @@ Restituisce il numero di byte che questo **StreamPeer** ha a disposizione.
 
 :ref:`Array<class_Array>` **get_data**\ (\ bytes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StreamPeer_method_get_data>`
 
-Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` containing two elements: an :ref:`Error<enum_@GlobalScope_Error>` constant and a :ref:`PackedByteArray<class_PackedByteArray>`. ``bytes`` is the number of bytes to be received. If not enough bytes are available, the function will block until the desired amount is received.
+Restituisce un blocco di dati con i byte ricevuti, come un :ref:`Array<class_Array>` contenente due elementi: una costante di :ref:`Error<enum_@GlobalScope_Error>` e un :ref:`PackedByteArray<class_PackedByteArray>`. ``bytes`` è il numero di byte da ricevere. Se non sono disponibili abbastanza byte, la funzione si bloccherà finché non verrà ricevuta la quantità desiderata.
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ Ottiene un float a mezza precisione dal flusso.
 
 :ref:`Array<class_Array>` **get_partial_data**\ (\ bytes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StreamPeer_method_get_partial_data>`
 
-Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` containing two elements: an :ref:`Error<enum_@GlobalScope_Error>` constant and a :ref:`PackedByteArray<class_PackedByteArray>`. ``bytes`` is the number of bytes to be received. If not enough bytes are available, the function will return how many were actually received.
+Restituisce un blocco di dati con i byte ricevuti, come un :ref:`Array<class_Array>` contenente due elementi: una costante di :ref:`Error<enum_@GlobalScope_Error>` e un :ref:`PackedByteArray<class_PackedByteArray>`. ``bytes`` è il numero di byte da ricevere. Se non sono disponibili abbastanza byte, la funzione restituirà quanti ne sono stati effettivamente ricevuti.
 
 .. rst-class:: classref-item-separator
 
@@ -571,7 +571,7 @@ Internamente, questo metodo utilizza lo stesso meccanismo di codifica del metodo
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

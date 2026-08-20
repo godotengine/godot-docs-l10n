@@ -429,11 +429,11 @@ Obtiene un nombre para una superficie dada.
 
 |void| **surface_update_attribute_region**\ (\ surf_idx\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ArrayMesh_method_surface_update_attribute_region>`
 
-Updates the attribute buffer of this mesh's surface with the given ``data``. The expected data per attribute is 12 or 8 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector3<class_Vector3>` or :ref:`Vector2<class_Vector2>` vertices. This value can be determined with :ref:`RenderingServer.mesh_surface_get_format_attribute_stride()<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>`.
+Actualiza el buffer de atributos de la superficie de esta malla con los ``data`` proporcionados. El tamaño de datos esperado por atributo es de 12 u 8 bytes (4 bytes por float, 2 floats por :ref:`Vector2<class_Vector2>`, y 3 floats por :ref:`Vector3<class_Vector3>`) dependiendo de si la malla utiliza vértices :ref:`Vector3<class_Vector3>` o :ref:`Vector2<class_Vector2>`. Este valor se puede determinar con :ref:`RenderingServer.mesh_surface_get_format_attribute_stride()<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each attribute.
+El punto de inicio de las actualizaciones se puede cambiar con ``offset``. El valor de ``offset`` debe ser un múltiplo de 12 bytes en la mayoría de los casos para alinearse a cada atributo.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of attribute locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+Un :ref:`PackedVector3Array<class_PackedVector3Array>` de ubicaciones de atributos se puede convertir en un :ref:`PackedByteArray<class_PackedByteArray>` usando :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` para usarlo en ``data``.
 
 .. rst-class:: classref-item-separator
 
@@ -445,11 +445,11 @@ A :ref:`PackedVector3Array<class_PackedVector3Array>` of attribute locations can
 
 |void| **surface_update_skin_region**\ (\ surf_idx\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ArrayMesh_method_surface_update_skin_region>`
 
-Updates the skin buffer of this mesh's surface with the given ``data``. The expected data per skin is 12 or 8 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector3<class_Vector3>` or :ref:`Vector2<class_Vector2>` vertices. This value can be determined with :ref:`RenderingServer.mesh_surface_get_format_skin_stride()<class_RenderingServer_method_mesh_surface_get_format_skin_stride>`.
+Actualiza el buffer de skin de la superficie de esta malla con los ``data`` proporcionados. El tamaño de datos esperado por skin es de 12 u 8 bytes (4 bytes por float, 2 floats por :ref:`Vector2<class_Vector2>`, y 3 floats por :ref:`Vector3<class_Vector3>`) dependiendo de si la malla utiliza vértices :ref:`Vector3<class_Vector3>` o :ref:`Vector2<class_Vector2>`. Este valor se puede determinar con :ref:`RenderingServer.mesh_surface_get_format_skin_stride()<class_RenderingServer_method_mesh_surface_get_format_skin_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each skin.
+El punto de inicio de las actualizaciones se puede cambiar con ``offset``. El valor de ``offset`` debe ser un múltiplo de 12 bytes en la mayoría de los casos para alinearse a cada skin.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of skin locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+Un :ref:`PackedVector3Array<class_PackedVector3Array>` de ubicaciones de skin se puede convertir en un :ref:`PackedByteArray<class_PackedByteArray>` usando :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` para usarlo en ``data``.
 
 .. rst-class:: classref-item-separator
 
@@ -461,11 +461,11 @@ A :ref:`PackedVector3Array<class_PackedVector3Array>` of skin locations can be c
 
 |void| **surface_update_vertex_region**\ (\ surf_idx\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ArrayMesh_method_surface_update_vertex_region>`
 
-Updates the vertex buffer of this mesh's surface with the given ``data``. The expected data per vertex is 12 or 8 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector3<class_Vector3>` or :ref:`Vector2<class_Vector2>` vertices. This value can be determined with :ref:`RenderingServer.mesh_surface_get_format_vertex_stride()<class_RenderingServer_method_mesh_surface_get_format_vertex_stride>`.
+Actualiza el buffer de vértices de la superficie de esta malla con los ``data`` proporcionados. El tamaño de datos esperado por vértice es de 12 u 8 bytes (4 bytes por float, 2 floats por :ref:`Vector2<class_Vector2>`, y 3 floats por :ref:`Vector3<class_Vector3>`) dependiendo de si la malla utiliza vértices :ref:`Vector3<class_Vector3>` o :ref:`Vector2<class_Vector2>`. Este valor se puede determinar con :ref:`RenderingServer.mesh_surface_get_format_vertex_stride()<class_RenderingServer_method_mesh_surface_get_format_vertex_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each vertex.
+El punto de inicio de las actualizaciones se puede cambiar con ``offset``. El valor de ``offset`` debe ser un múltiplo de 12 bytes en la mayoría de los casos para alinearse a cada vértice.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of vertex locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+Un :ref:`PackedVector3Array<class_PackedVector3Array>` de ubicaciones de vértices se puede convertir en un :ref:`PackedByteArray<class_PackedByteArray>` usando :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` para usarlo en ``data``.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

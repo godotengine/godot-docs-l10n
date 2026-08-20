@@ -163,7 +163,7 @@ Un **MenuBar** piatto non visualizza la decorazione delle sue voci.
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Codice lingua utilizzato per gli algoritmi di interruzione di riga e di formazione del testo. Se lasciato vuoto, è utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -300,7 +300,7 @@ Restituisce il tooltip della voce del menu.
 
 :ref:`bool<class_bool>` **is_menu_disabled**\ (\ menu\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MenuBar_method_is_menu_disabled>`
 
-Returns ``true`` if the menu item is disabled.
+Restituisce ``true`` se la voce del menu è disabilitata.
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Returns ``true`` if the menu item is disabled.
 
 :ref:`bool<class_bool>` **is_menu_hidden**\ (\ menu\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MenuBar_method_is_menu_hidden>`
 
-Returns ``true`` if the menu item is hidden.
+Restituisce ``true`` se la voce del menu è nascosta.
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ Returns ``true`` if the menu item is hidden.
 
 :ref:`bool<class_bool>` **is_native_menu**\ (\ ) |const| :ref:`🔗<class_MenuBar_method_is_native_menu>`
 
-Returns ``true`` if the current system's global menu is supported and used by this **MenuBar**.
+Restituisce ``true`` se il menu globale del sistema è supportato e utilizzato da questo **MenuBar**.
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse e si 
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_MenuBar_theme_color_font_outline_color>`
 
-La tinta del contorno del testo ella voce del menu.
+La tinta del contorno del testo della voce di menu.
 
 .. rst-class:: classref-item-separator
 
@@ -473,7 +473,7 @@ La tinta del contorno del testo ella voce del menu.
 
 :ref:`Color<class_Color>` **font_pressed_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_MenuBar_theme_color_font_pressed_color>`
 
-Il :ref:`Color<class_Color>` del testo utilizzato l'elemento del menu è premuto.
+Il :ref:`Color<class_Color>` del testo utilizzato quando la voce del menu è premuta.
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ Lo :ref:`StyleBox<class_StyleBox>` utilizzato quando la voce del menu è premuta
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

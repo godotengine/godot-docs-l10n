@@ -1503,7 +1503,7 @@ Si es ``true``, todas las líneas envueltas se indentan a la misma cantidad que 
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Código de idioma utilizado para los algoritmos de salto de línea y de formación de texto. Si se deja vacío, se utiliza la configuración regional actual.
 
 .. rst-class:: classref-item-separator
 
@@ -2673,7 +2673,7 @@ Devuelve el índice de envoltura de la columna dada en la línea dada. Este va d
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_line_wrapped_text**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_wrapped_text>`
 
-Returns an array of :ref:`String<class_String>`\ s representing each wrapped index.
+Devuelve un array de (:ref:`String<class_String>`) que representa cada índice envuelto.
 
 .. rst-class:: classref-item-separator
 
@@ -3745,9 +3745,9 @@ Set the width of the gutter at the given index.
 
 |void| **set_line**\ (\ line\: :ref:`int<class_int>`, new_text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextEdit_method_set_line>`
 
-Sets the text for a specific ``line``.
+Establece el texto para una línea ``line`` específica.
 
-Carets on the line will attempt to keep their visual x position.
+Los cursores en la línea intentarán mantener su posición visual en el eje X.
 
 .. rst-class:: classref-item-separator
 
@@ -3891,7 +3891,7 @@ Sets the search ``flags``. This is used with :ref:`set_search_text()<class_TextE
 
 |void| **set_search_text**\ (\ search_text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextEdit_method_set_search_text>`
 
-Sets the search text. See :ref:`set_search_flags()<class_TextEdit_method_set_search_flags>`.
+Establece el texto de búsqueda. Véase :ref:`set_search_flags()<class_TextEdit_method_set_search_flags>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3903,7 +3903,7 @@ Sets the search text. See :ref:`set_search_flags()<class_TextEdit_method_set_sea
 
 |void| **set_selection_mode**\ (\ mode\: :ref:`SelectionMode<enum_TextEdit_SelectionMode>`\ ) :ref:`🔗<class_TextEdit_method_set_selection_mode>`
 
-Sets the current selection mode.
+Establece el modo de selección actual.
 
 .. rst-class:: classref-item-separator
 
@@ -3943,7 +3943,7 @@ If ``wrap_index`` is ``-1``, the selection origin column will be clamped to the 
 
 |void| **set_tab_size**\ (\ size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_method_set_tab_size>`
 
-Sets the tab size for the **TextEdit** to use.
+Establece el tamaño de tabulación que utilizará **TextEdit**.
 
 .. rst-class:: classref-item-separator
 
@@ -3979,9 +3979,9 @@ Moves a selection and a caret for the next occurrence of the current selection. 
 
 |void| **start_action**\ (\ action\: :ref:`EditAction<enum_TextEdit_EditAction>`\ ) :ref:`🔗<class_TextEdit_method_start_action>`
 
-Starts an action, will end the current action if ``action`` is different.
+Inicia una acción; finalizará la acción actual si ``action`` es diferente.
 
-An action will also end after a call to :ref:`end_action()<class_TextEdit_method_end_action>`, after :ref:`ProjectSettings.gui/timers/text_edit_idle_detect_sec<class_ProjectSettings_property_gui/timers/text_edit_idle_detect_sec>` is triggered or a new undoable step outside the :ref:`start_action()<class_TextEdit_method_start_action>` and :ref:`end_action()<class_TextEdit_method_end_action>` calls.
+Una acción también finalizará tras una llamada a :ref:`end_action()<class_TextEdit_method_end_action>`, cuando se active :ref:`ProjectSettings.gui/timers/text_edit_idle_detect_sec<class_ProjectSettings_property_gui/timers/text_edit_idle_detect_sec>` o al producirse un nuevo paso reversible fuera de las llamadas a :ref:`start_action()<class_TextEdit_method_start_action>` y :ref:`end_action()<class_TextEdit_method_end_action>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4005,7 +4005,7 @@ Intercambia las dos líneas. Los cursores se intercambiarán con las líneas.
 
 |void| **tag_saved_version**\ (\ ) :ref:`🔗<class_TextEdit_method_tag_saved_version>`
 
-Tag the current version as saved.
+Etiqueta la versión actual como guardada.
 
 .. rst-class:: classref-item-separator
 

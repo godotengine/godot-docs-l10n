@@ -271,9 +271,9 @@ Defines how :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` is a
 - |void| **set_bounce**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bounce**\ (\ )
 
-The body's bounciness. Values range from ``0`` (no bounce) to ``1`` (full bounciness).
+形體的反彈值。取值範圍從 ``0``\ （無反彈）到 ``1``\ （完全反彈）。
 
-\ **Note:** Even with :ref:`bounce<class_PhysicalBone3D_property_bounce>` set to ``1.0``, some energy will be lost over time due to linear and angular damping. To have a **PhysicalBone3D** that preserves all its energy over time, set :ref:`bounce<class_PhysicalBone3D_property_bounce>` to ``1.0``, :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>` to :ref:`DAMP_MODE_REPLACE<class_PhysicalBone3D_constant_DAMP_MODE_REPLACE>`, :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` to ``0.0``, :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>` to :ref:`DAMP_MODE_REPLACE<class_PhysicalBone3D_constant_DAMP_MODE_REPLACE>`, and :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` to ``0.0``.
+\ **注意：**\ 由於線性與角度阻尼的影響，即使將 :ref:`bounce<class_PhysicalBone3D_property_bounce>` 設爲 ``1.0``\ ，隨時間推移仍會損失部分能量。 若要讓 **PhysicalBone3D** 隨時間推移仍完全保有其能量，請將 :ref:`bounce<class_PhysicalBone3D_property_bounce>` 設爲 ``1.0``\ 、\ :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>` 設爲 :ref:`DAMP_MODE_REPLACE<class_PhysicalBone3D_constant_DAMP_MODE_REPLACE>`\ 、\ :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` 設爲 ``0.0``\ 、\ :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>` 設爲 :ref:`DAMP_MODE_REPLACE<class_PhysicalBone3D_constant_DAMP_MODE_REPLACE>`\ ，並將 :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` 設爲 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 

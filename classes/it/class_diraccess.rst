@@ -459,9 +459,9 @@ Su altre piattaforme, il metodo restituisce 0.
 
 :ref:`String<class_String>` **get_drive_label**\ (\ idx\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_drive_label>`
 
-On Windows, returns the label of the drive (partition) passed as an argument.
+Su Windows, restituisce l'etichetta dell'unità (partizione) passata come argomento.
 
-On other platforms, or if the requested drive does not exist, returns an empty String.
+Su altre piattaforme, o se l'unità richiesta non esiste, restituisce una stringa vuota.
 
 .. rst-class:: classref-item-separator
 
@@ -473,15 +473,15 @@ On other platforms, or if the requested drive does not exist, returns an empty S
 
 :ref:`String<class_String>` **get_drive_name**\ (\ idx\: :ref:`int<class_int>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_drive_name>`
 
-On Windows, returns the name of the drive (partition) passed as an argument (e.g. ``C:``).
+Su Windows, restituisce il nome dell'unità (partizione) passata come argomento (ad esempio ``C:``).
 
-On macOS, returns the path to the mounted volume passed as an argument.
+Su macOS, restituisce il percorso al volume montato passato come argomento.
 
-On Linux, returns the path to the mounted volume or GTK 3 bookmark passed as an argument.
+Su Linux, restituisce il percorso al volume montato o al segnalibro GTK 3 passato come argomento.
 
-On Android (API level 30+), returns the path to the mounted volume as an argument.
+Su Android (livello API 30+), restituisce il percorso al volume montato come argomento.
 
-On other platforms, or if the requested drive does not exist, returns an empty String.
+Su altre piattaforme, o se l'unità richiesta non esiste, restituisce una stringa vuota.
 
 .. rst-class:: classref-item-separator
 
@@ -787,7 +787,7 @@ Versione statica di :ref:`rename()<class_DirAccess_method_rename>`. Supporta sol
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

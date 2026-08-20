@@ -1051,7 +1051,7 @@ You can temporarily enable this entitlement to use native debugger (GDB, LLDB) w
 
 :ref:`bool<class_bool>` **codesign/entitlements/disable_library_validation** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/disable_library_validation>`
 
-Permite a la aplicación cargar librerías y frameworks arbitrarios (no firmados con el mismo ID de equipo que el ejecutable principal o por Apple). Habilítalo si estás usando complementos GDExtension o firma ad-hoc, o si quieres soportar complementos externos proporcionados por el usuario. Véase `com.apple.security.cs.disable-library-validation <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation>`__.
+Permite a la aplicación cargar bibliotecas y frameworks arbitrarios (no firmados con el mismo ID de equipo que el ejecutable principal o por Apple). Habilítalo si estás usando complementos GDExtension o firma ad-hoc, o si quieres soportar complementos externos proporcionados por el usuario. Véase `com.apple.security.cs.disable-library-validation <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation>`__.
 
 .. rst-class:: classref-item-separator
 

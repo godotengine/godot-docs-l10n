@@ -573,9 +573,9 @@ Ruta a un archivo ZIP que contiene la fuente para la plantilla de exportación u
 
 :ref:`bool<class_bool>` **gradle_build/compress_native_libraries** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/compress_native_libraries>`
 
-Si es ``true``, las librerías nativas se comprimen cuando se realiza una compilación de Gradle.
+Si es ``true``, las bibliotecas nativas se comprimen cuando se realiza una compilación de Gradle.
 
-\ **Nota:** Si bien habilitar la compresión puede reducir el tamaño del binario, puede resultar en un inicio de aplicación más lento porque las librerías nativas deben extraerse antes de usarse, en lugar de cargarse directamente.
+\ **Nota:** Si bien habilitar la compresión puede reducir el tamaño del binario, puede resultar en un inicio de aplicación más lento porque las bibliotecas nativas deben extraerse antes de usarse, en lugar de cargarse directamente.
 
 Si estás distribuyendo tu aplicación a través de Play Store, generalmente se recomienda mantener esta opción ``false``, véase `documentación oficial <https://developer.android.com/build/releases/past-releases/agp-3-6-0-release-notes#extractNativeLibs>`__.
 
@@ -2021,7 +2021,7 @@ Permite a una aplicación leer desde el almacenamiento externo. Véase `READ_EXT
 
 :ref:`bool<class_bool>` **permissions/read_frame_buffer** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/read_frame_buffer>`
 
-Permite a una aplicación tomar capturas de pantalla y, en general, obtener acceso a los datos del búfer de fotogramas.
+Permite a una aplicación tomar capturas de pantalla y, en general, obtener acceso a los datos del framebuffer.
 
 .. rst-class:: classref-item-separator
 

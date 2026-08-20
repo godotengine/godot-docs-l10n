@@ -146,7 +146,7 @@ Se impostato su ``true``, il caricamento delle bitmap dei font incorporati è di
 
 :ref:`Array<class_Array>` **fallbacks** = ``[]`` :ref:`🔗<class_ResourceImporterDynamicFont_property_fallbacks>`
 
-Lista di font di riserva da usare se un glifo non viene trovato in questo font dinamico. I font all'inizio dell'array vengono tentati per primi, ma i font di riserva che non supportano la lingua e l'alfabeto del glifo vengono tentati per ultimi (vedi :ref:`language_support<class_ResourceImporterDynamicFont_property_language_support>` e :ref:`script_support<class_ResourceImporterDynamicFont_property_script_support>`). Vedi anche :ref:`allow_system_fallback<class_ResourceImporterDynamicFont_property_allow_system_fallback>`.
+elenco di font di riserva da usare se un glifo non viene trovato in questo font dinamico. I font all'inizio dell'array vengono tentati per primi, ma i font di riserva che non supportano la lingua e l'alfabeto del glifo vengono tentati per ultimi (vedi :ref:`language_support<class_ResourceImporterDynamicFont_property_language_support>` e :ref:`script_support<class_ResourceImporterDynamicFont_property_script_support>`). Vedi anche :ref:`allow_system_fallback<class_ResourceImporterDynamicFont_property_allow_system_fallback>`.
 
 .. rst-class:: classref-item-separator
 
@@ -242,7 +242,7 @@ Se impostato su ``true``, la modulazione del colore è applicata quando si diseg
 
 :ref:`int<class_int>` **msdf_pixel_range** = ``8`` :ref:`🔗<class_ResourceImporterDynamicFont_property_msdf_pixel_range>`
 
-The width of the range around the shape between the minimum and maximum representable signed distance. If using font outlines, :ref:`msdf_pixel_range<class_ResourceImporterDynamicFont_property_msdf_pixel_range>` must be set to at least *twice* the size of the largest font outline. The default :ref:`msdf_pixel_range<class_ResourceImporterDynamicFont_property_msdf_pixel_range>` value of ``8`` allows outline sizes up to ``4`` to look correct.
+La larghezza dell'intervallo attorno alla forma tra la distanza con segno (signed distance) minima e massima rappresentabile. Se si usano i contorni di font, :ref:`msdf_pixel_range<class_ResourceImporterDynamicFont_property_msdf_pixel_range>` deve essere impostato almeno sul *doppio* dello spessore del contorno più grande. Il valore predefinito per :ref:`msdf_pixel_range<class_ResourceImporterDynamicFont_property_msdf_pixel_range>` di ``8`` consente a uno spessore di contorno fino a ``4`` di apparire corretto.
 
 .. rst-class:: classref-item-separator
 
@@ -328,23 +328,23 @@ Sovrascrive la lista degli script di lingua supportati da questo font. Se lascia
 
 :ref:`int<class_int>` **subpixel_positioning** = ``4`` :ref:`🔗<class_ResourceImporterDynamicFont_property_subpixel_positioning>`
 
-Subpixel positioning improves font rendering appearance, especially at smaller font sizes. The downside is that it takes more time to initially render the font, which can cause stuttering during gameplay, especially if used with large font sizes. This should be set to **Disabled** for fonts with a pixel art appearance.
+Il posizionamento subpixel migliora l'aspetto del rendering dei font, soprattutto se di dimensioni più piccole. Lo svantaggio è che inizialmente ci vuole più tempo per renderizzare il font, il che può causare scatti durante il gioco, soprattutto se si utilizzano font di grandi dimensioni. Per i font con un aspetto da pixel art, questa opzione dovrebbe essere impostata su **Disabled**.
 
-\ **Disabled:** No subpixel positioning. Lowest quality, fastest rendering.
+\ **Disabled:** Nessun posizionamento subpixel. La qualità più bassa, il rendering più veloce.
 
-\ **Auto:** Use subpixel positioning at small font sizes (the chosen quality varies depending on font size). Large fonts will not use subpixel positioning. This is a good tradeoff between performance and quality.
+\ **Auto:** Utilizza il posizionamento subpixel per le piccole dimensioni dei font (la qualità scelta varia a seconda della dimensione del font). I font di grandi dimensioni non utilizzeranno il posizionamento subpixel. Si tratta di un buon compromesso tra prestazioni e qualità.
 
-\ **One Half of a Pixel:** Always perform intermediate subpixel positioning regardless of font size. High quality, slow rendering.
+\ **One Half of a Pixel:** Effettua sempre un posizionamento subpixel intermedio, a prescindere dalla dimensione del font. Alta qualità, rendering lento.
 
-\ **One Quarter of a Pixel:** Always perform precise subpixel positioning regardless of font size. Highest quality, slowest rendering.
+\ **One Quarter of a Pixel:** Effettua sempre un posizionamento subpixel preciso, a prescindere dalla dimensione del font. La massima qualità, il rendering più lento.
 
-\ **Auto (Except Pixel Fonts):** **Disabled** for pixel style fonts (each glyph's contours contain only straight horizontal and vertical lines), **Auto** for other fonts.
+\ **Auto (Except Pixel Fonts):** **Disabled** per i font in stile pixellato (il contorno di ogni contiene solo linee dritte orizzontali e verticali), **Auto** per gli altri font.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

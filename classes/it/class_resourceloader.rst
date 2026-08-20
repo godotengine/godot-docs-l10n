@@ -27,7 +27,7 @@ Utilizza le numerose classi :ref:`ResourceFormatLoader<class_ResourceFormatLoade
 Tutorial
 ----------------
 
-- `Threaded Loading Demo <https://godotengine.org/asset-library/asset/2778>`__
+- `Demo di caricamento con thread <https://godotengine.org/asset-library/asset/2778>`__
 
 - `Demo di test di sistema operativo <https://godotengine.org/asset-library/asset/2789>`__
 
@@ -295,7 +295,7 @@ Elenca una cartella, restituendo tutte le risorse e le sottocartelle in essa con
 
 \ **Nota:** L'ordine dei file e delle cartelle restituito da questo metodo non è deterministico e può variare a seconda del sistema operativo.
 
-\ **Nota:** Per attraversare normalmente il file system, consultare :ref:`DirAccess<class_DirAccess>`.
+\ **Nota:** Per attraversare normalmente il file system, consulta :ref:`DirAccess<class_DirAccess>`.
 
 .. rst-class:: classref-item-separator
 
@@ -307,21 +307,21 @@ Elenca una cartella, restituendo tutte le risorse e le sottocartelle in essa con
 
 :ref:`Resource<class_Resource>` **load**\ (\ path\: :ref:`String<class_String>`, type_hint\: :ref:`String<class_String>` = "", cache_mode\: :ref:`CacheMode<enum_ResourceLoader_CacheMode>` = 1\ ) :ref:`🔗<class_ResourceLoader_method_load>`
 
-Loads a resource at the given ``path``, caching the result for further access.
+Carica una risorsa dal percorso ``path``, memorizzando nella cache il risultato per accedervi in seguito.
 
-The registered :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ s are queried sequentially to find the first one which can handle the file's extension, and then attempt loading. If loading fails, the remaining ResourceFormatLoaders are also attempted.
+I :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` registrati vengono provati in sequenza per trovare il primo che può gestire l'estensione del file, da poi caricare. Se il caricamento fallisce, vengono provati anche i ResourceFormatLoader rimasti.
 
-An optional ``type_hint`` can be used to further specify the :ref:`Resource<class_Resource>` type that should be handled by the :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`. Anything that inherits from :ref:`Resource<class_Resource>` can be used as a type hint, for example :ref:`Image<class_Image>`.
+È possibile passare ``type_hint`` per specificare ulteriormente il tipo di :ref:`Resource<class_Resource>` che deve essere gestito dal :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`. Tutto ciò che eredita da :ref:`Resource<class_Resource>` può essere utilizzato come suggerimento per il tipo, ad esempio :ref:`Image<class_Image>`.
 
-The ``cache_mode`` property defines whether and how the cache should be used or updated when loading the resource.
+\ ``cache_mode`` definisce se e come bisogna utilizzare o aggiornare la cache durante il caricamento della risorsa.
 
-Returns an empty resource if no :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` could handle the file, and prints an error if no file is found at the specified path.
+Restituisce una risorsa vuota se nessun :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` è riuscito a gestire il file e stampa un errore se non viene trovato alcun file nel percorso specificato.
 
-GDScript has a simplified :ref:`@GDScript.load()<class_@GDScript_method_load>` built-in method which can be used in most situations, leaving the use of **ResourceLoader** for more advanced scenarios.
+GDScript fornisce il metodo integrato semplificato :ref:`@GDScript.load()<class_@GDScript_method_load>` che è sufficiente nella maggior parte delle situazioni, lasciando l'uso di **ResourceLoader** per motivi più avanzati.
 
-\ **Note:** If :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` is ``true``, :ref:`@GDScript.load()<class_@GDScript_method_load>` will not be able to read converted files in an exported project. If you rely on run-time loading of files present within the PCK, set :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` to ``false``.
+\ **Nota:** Se :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` è ``true``, :ref:`@GDScript.load()<class_@GDScript_method_load>` non sarà in grado di leggere i file convertiti in un progetto esportato. Se in fase di esecuzione è necessario caricare i file presenti nel PCK, imposta :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` su ``false``.
 
-\ **Note:** Relative paths will be prefixed with ``"res://"`` before loading, to avoid unexpected results make sure your paths are absolute.
+\ **Nota:** I percorsi relativi saranno preceduti da ``"res://"`` prima del caricamento, per evitare risultati imprevisti assicurati che i tuoi percorsi siano assoluti.
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +395,7 @@ Cambia il comportamento per le sotto-risorse mancanti. Il comportamento predefin
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -18,7 +18,7 @@ Descrizione
 
 Un agente 3D utilizzato per trovare il percorso verso una posizione evitando ostacoli statici e dinamici. Il calcolo può essere utilizzato dal nodo genitore per spostarlo dinamicamente lungo il percorso. Richiede dati di navigazione per funzionare correttamente.
 
-Gli ostacoli dinamici vengono evitati attraverso l'evasione delle collisioni RVO. L'evasione viene calcolata prima della fisica, quindi le informazioni di ricerca del percorso possono essere utilizzate in modo sicuro nella passaggio di fisica.
+Gli ostacoli dinamici vengono evitati attraverso l'evitamento delle collisioni RVO. L'evitamento viene calcolata prima della fisica, quindi le informazioni di ricerca del percorso possono essere utilizzate in modo sicuro nella passaggio di fisica.
 
 \ **Nota:** Dopo aver impostato la proprietà :ref:`target_position<class_NavigationAgent3D_property_target_position>`, il metodo :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>` deve essere utilizzato una volta per ogni frame di fisica per aggiornare la logica interna del percorso dell'agente di navigazione. La posizione del vettore che restituisce deve essere utilizzata come posizione successiva del movimento per il nodo genitore dell'agente.
 
@@ -246,7 +246,7 @@ Potrebbe non essere sempre possibile raggiungere la destinazione, ma dovrebbe es
 
 **velocity_computed**\ (\ safe_velocity\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_NavigationAgent3D_signal_velocity_computed>`
 
-Notifica quando viene calcolata la velocità di evasione delle collisioni. Emesso a ogni aggiornamento fin quando :ref:`avoidance_enabled<class_NavigationAgent3D_property_avoidance_enabled>` è ``true`` e l'agente ha una mappa di navigazione.
+Notifica quando viene calcolata la velocità di evitamento delle collisioni. Emesso a ogni aggiornamento fin quando :ref:`avoidance_enabled<class_NavigationAgent3D_property_avoidance_enabled>` è ``true`` e l'agente ha una mappa di navigazione.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ Descrizioni delle proprietà
 - |void| **set_avoidance_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_avoidance_enabled**\ (\ )
 
-Se ``true`` l'agente è registrato per un callback di evasione RVO su :ref:`NavigationServer3D<class_NavigationServer3D>`. Quando :ref:`velocity<class_NavigationAgent3D_property_velocity>` è utilizzato e l'elaborazione è completata, un Vector3 ``safe_velocity`` viene ricevuto con una connessione di segnale a :ref:`velocity_computed<class_NavigationAgent3D_signal_velocity_computed>`. L'elaborazione dell'evasione con molti agenti registrati ha un costo di prestazioni significativo e dovrebbe essere abilitata solo sugli agenti che la richiedono attualmente.
+Se ``true`` l'agente è registrato per un callback di evitamento RVO su :ref:`NavigationServer3D<class_NavigationServer3D>`. Quando :ref:`velocity<class_NavigationAgent3D_property_velocity>` è utilizzato e l'elaborazione è completata, un Vector3 ``safe_velocity`` viene ricevuto con una connessione di segnale a :ref:`velocity_computed<class_NavigationAgent3D_signal_velocity_computed>`. L'elaborazione dell'evitamento con molti agenti registrati ha un impatto notevole sulle prestazioni e dovrebbe essere abilitata solo sugli agenti che la richiedono al momento.
 
 .. rst-class:: classref-item-separator
 
@@ -307,7 +307,7 @@ Se ``true`` l'agente è registrato per un callback di evasione RVO su :ref:`Navi
 - |void| **set_avoidance_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_avoidance_layers**\ (\ )
 
-Un campo di bit che determina gli strati di evasione per questo NavigationAgent. Altri agenti con un bit corrispondente sulla :ref:`avoidance_mask<class_NavigationAgent3D_property_avoidance_mask>` eviteranno questo agente.
+Un campo di bit che determina gli strati di evitamento per questo NavigationAgent. Altri agenti con un bit corrispondente sulla :ref:`avoidance_mask<class_NavigationAgent3D_property_avoidance_mask>` eviteranno questo agente.
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ Un campo di bit che determina gli strati di evasione per questo NavigationAgent.
 - |void| **set_avoidance_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_avoidance_mask**\ (\ )
 
-Un campo di bit che determina quali altri agenti di evasione e ostacoli questo NavigationAgent eviterà quando un bit corrisponde ad almeno uno dei suoi :ref:`avoidance_layers<class_NavigationAgent3D_property_avoidance_layers>`.
+Un campo di bit che determina quali altri agenti di evitamento e ostacoli questo NavigationAgent eviterà quando un bit corrisponde ad almeno uno dei suoi :ref:`avoidance_layers<class_NavigationAgent3D_property_avoidance_layers>`.
 
 .. rst-class:: classref-item-separator
 
@@ -426,7 +426,7 @@ Se ``true`` utilizza il colore :ref:`debug_path_custom_color<class_NavigationAge
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-L'altezza dell'agente di evasione. Gli agenti ignoreranno altri agenti o ostacoli che si trovano sopra o sotto la loro posizione attuale, più altezza nell'evasione 2D. Non fa nulla nell'evasione 3D, il quale utilizza solo sfere di raggio.
+L'altezza dell'agente di evitamento. Gli agenti ignoreranno altri agenti o ostacoli che si trovano sopra o sotto la loro posizione attuale, più altezza nell'evitamento 2D. Non fa nulla nell'evitamento 3D, il quale utilizza solo sfere di raggio.
 
 .. rst-class:: classref-item-separator
 
@@ -443,7 +443,7 @@ L'altezza dell'agente di evasione. Gli agenti ignoreranno altri agenti o ostacol
 - |void| **set_keep_y_velocity**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_keep_y_velocity**\ (\ )
 
-Se ``true`` e l'agente usa l'evasione 2D, ricorderà la velocità impostata sull'asse y e la riapplicherà dopo il passaggio di evasione. Sebbene l'evasione 2D non ha un asse y e viene simulata su un piano piatto, questa impostazione può aiutare ad attenuare il clipping più notevole su una geometria 3D irregolare.
+Se ``true`` e l'agente usa l'evitamento 2D, ricorderà la velocità impostata sull'asse y e la riapplicherà dopo il passaggio di evitamento. Sebbene l'evitamento 2D non ha un asse y e viene simulata su un piano piatto, questa impostazione può aiutare ad attenuare il clipping più notevole su una geometria 3D irregolare.
 
 .. rst-class:: classref-item-separator
 
@@ -630,9 +630,9 @@ La lunghezza massima consentita del percorso restituito in unità mondiali. Un p
 - |void| **set_path_return_max_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_return_max_radius**\ (\ )
 
-The maximum allowed radius in world units that the returned path can be from the path start. The path will be clipped when going over this radius. Compared to :ref:`path_return_max_length<class_NavigationAgent3D_property_path_return_max_length>`, this allows the agent to go that much further, if they need to walk around a corner.
+Il raggio massimo consentito in unità mondiali che il percorso restituito può avere dall'inizio del percorso. Il percorso verrà troncato quando supera questo raggio. Rispetto a :ref:`path_return_max_length<class_NavigationAgent3D_property_path_return_max_length>`, questo consente all'agente di andare molto più lontano, se ha bisogno di aggirare un angolo.
 
-\ **Note:** This will perform a sphere clip considering only the actual navigation mesh path points with the first path position being the sphere's center.
+\ **Nota:** Questo eseguirà un ritaglio sferico, considerando solo i punti effettivi del percorso della mesh di navigazione, con la prima posizione del percorso che corrisponde al centro della sfera.
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ The maximum allowed radius in world units that the returned path can be from the
 - |void| **set_path_search_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_search_max_distance**\ (\ )
 
-The maximum distance a searched polygon can be away from the start polygon before the pathfinding cancels the search for a path to the (possibly unreachable or very far away) target position polygon. In this case the pathfinding resets and builds a path from the start polygon to the polygon that was found closest to the target position so far. A value of ``0`` or below counts as unlimited. In case of unlimited the pathfinding will search all polygons connected with the start polygon until either the target position polygon is found or all available polygon search options are exhausted.
+La distanza massima che un poligono cercato può avere dal poligono di partenza, prima che il pathfinding annulli la ricerca di un percorso verso il poligono di destinazione (potenzialmente irraggiungibile o molto lontano). In questo caso, il pathfinding si azzera e crea un percorso dal poligono di partenza al poligono trovato più vicino alla posizione di destinazione fino a quel momento. Un valore pari o inferiore a ``0`` è considerato illimitato. In caso di valore illimitato, il pathfinding cercherà in tutti i poligoni collegati al poligono di partenza finché non verrà trovato il poligono di destinazione o finché non saranno esaurite tutte le opzioni di ricerca disponibili.
 
 .. rst-class:: classref-item-separator
 
@@ -666,7 +666,7 @@ The maximum distance a searched polygon can be away from the start polygon befor
 - |void| **set_path_search_max_polygons**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_path_search_max_polygons**\ (\ )
 
-The maximum number of polygons that are searched before the pathfinding cancels the search for a path to the (possibly unreachable or very far away) target position polygon. In this case the pathfinding resets and builds a path from the start polygon to the polygon that was found closest to the target position so far. A value of ``0`` or below counts as unlimited. In case of unlimited the pathfinding will search all polygons connected with the start polygon until either the target position polygon is found or all available polygon search options are exhausted.
+Il numero massimo di poligoni ricercati, prima che il pathfinding annulli la ricerca di un percorso verso il poligono di destinazione (potenzialmente irraggiungibile o molto lontano). In questo caso, il pathfinding si azzera e crea un percorso dal poligono di partenza al poligono trovato più vicino alla posizione di destinazione fino a quel momento. Un valore pari o inferiore a ``0`` è considerato illimitato. In caso di valore illimitato, il pathfinding cercherà in tutti i poligoni collegati al poligono di partenza finché non verrà trovato il poligono di destinazione o finché non saranno esaurite tutte le opzioni di ricerca poligonale disponibili.
 
 .. rst-class:: classref-item-separator
 
@@ -700,7 +700,7 @@ Algoritmo di ricerca del percorso utilizzato nella ricerca del percorso.
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-Il raggio dell'agente di evasione. Questo è il "corpo" dell'agente di evasione e non il raggio di partenza della manovra di evasione (che è controllato da :ref:`neighbor_distance<class_NavigationAgent3D_property_neighbor_distance>`).
+Il raggio dell'agente di evitamento. Questo è il "corpo" dell'agente di evitamento e non il raggio di partenza della manovra di evitamento (che è controllato da :ref:`neighbor_distance<class_NavigationAgent3D_property_neighbor_distance>`).
 
 Non influisce sulla ricerca normale del percorso. Per modificare il raggio di ricerca del percorso di un attore, prepara le risorse :ref:`NavigationMesh<class_NavigationMesh>` con una proprietà :ref:`NavigationMesh.agent_radius<class_NavigationMesh_property_agent_radius>` diversa e utilizza mappe di navigazione diverse per ogni dimensione dell'attore.
 
@@ -738,7 +738,7 @@ La quantità di semplificazione del percorso in unità mondiali.
 
 Se ``true`` una versione semplificata del percorso sarà restituita, con i punti meno critici rimossi. La quantità di semplificazione è controllata da :ref:`simplify_epsilon<class_NavigationAgent3D_property_simplify_epsilon>`. La semplificazione utilizza una variazione dell'algoritmo Ramer-Douglas-Peucker per decimare i punti della curva.
 
-La semplificazione del percorso può essere utile per mitigare vari problemi di seguimento del percorso che possono sorgere con certi tipi di agenti e comportamenti di script. Ad esempio, agenti che "sterzano" o evasione in "campi aperti".
+La semplificazione del percorso può aiutare a mitigare vari problemi di seguimento del percorso che possono sorgere con certi tipi di agenti e comportamenti di script. Ad esempio, agenti che "sterzano" o evitamento in "campi aperti".
 
 .. rst-class:: classref-item-separator
 
@@ -793,7 +793,7 @@ Se impostato, viene richiesto un nuovo percorso di navigazione dalla posizione a
 - |void| **set_time_horizon_agents**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_agents**\ (\ )
 
-La quantità minima di tempo per cui le velocità di questo agente, calcolate con l'algoritmo di evasione delle collisioni, sono sicure rispetto ad altri agenti. Maggiore è il numero, più presto l'agente risponderà ad altri agenti, ma minore sarà la libertà nella scelta delle sue velocità. Un valore troppo alto rallenterà notevolmente il movimento degli agenti. Deve essere positivo.
+La quantità minima di tempo per cui le velocità di questo agente, calcolate con l'algoritmo di evitamento delle collisioni, sono sicure rispetto ad altri agenti. Maggiore è il numero, più presto l'agente risponderà ad altri agenti, ma minore sarà la libertà nella scelta delle sue velocità. Un valore troppo alto rallenterà notevolmente il movimento degli agenti. Deve essere positivo.
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ La quantità minima di tempo per cui le velocità di questo agente, calcolate co
 - |void| **set_time_horizon_obstacles**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_obstacles**\ (\ )
 
-La quantità minima di tempo per cui le velocità di questo agente, calcolate con l'algoritmo di evasione delle collisioni, sono sicure rispetto agli ostacoli di evasione statici. Maggiore è il numero, più presto l'agente risponderà agli ostacoli di evasione statici, ma minore sarà la libertà nella scelta delle sue velocità. Un valore troppo alto rallenterà notevolmente il movimento degli agenti. Deve essere positivo.
+La quantità minima di tempo per cui le velocità di questo agente, calcolate con l'algoritmo di evitamento delle collisioni, sono sicure rispetto agli ostacoli di evitamento statici. Maggiore è il numero, più presto l'agente risponderà agli ostacoli di evitamento statici, ma minore sarà la libertà nella scelta delle sue velocità. Un valore troppo alto rallenterà notevolmente il movimento degli agenti. Deve essere positivo.
 
 .. rst-class:: classref-item-separator
 
@@ -827,9 +827,9 @@ La quantità minima di tempo per cui le velocità di questo agente, calcolate co
 - |void| **set_use_3d_avoidance**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_3d_avoidance**\ (\ )
 
-Se ``true``, l'agente calcola le velocità di evasione in 3D in modo omnidirezionale, ad esempio per i giochi che si svolgono in aria, sott'acqua o nello spazio. Gli agenti che utilizzano l'evasione 3D evitano solo gli altri agenti che utilizzano l'evasione 3D e reagiscono agli ostacoli di evasione basati sul raggio. Ignorano tutti gli ostacoli basati sui vertici.
+Se ``true``, l'agente calcola le velocità di evitamento in 3D in modo omnidirezionale, ad esempio per i giochi che si svolgono in aria, sott'acqua o nello spazio. Gli agenti che utilizzano l'evitamento 3D evitano solo gli altri agenti che utilizzano l'evitamento 3D e reagiscono agli ostacoli di evitamento basati sul raggio. Ignorano tutti gli ostacoli basati sui vertici.
 
-Se ``false``, l'agente calcola le velocità di evasione in 2D lungo gli assi x e z, ignorando l'asse y. Gli agenti che utilizzano l'evasione 2D evitano solo gli altri agenti che utilizzano l'evasione 2D e reagiscono agli ostacoli di evasione basati sul raggio o agli ostacoli di evasione basati sui vertici. Gli altri agenti che utilizzano l'evasione 2D che si trovano al di sotto o al di sopra della loro posizione attuale, inclusa :ref:`height<class_NavigationAgent3D_property_height>`, sono ignorati.
+Se ``false``, l'agente calcola le velocità di evitamento in 2D lungo gli assi x e z, ignorando l'asse y. Gli agenti che utilizzano l'evitamento 2D evitano solo gli altri agenti che utilizzano l'evitamento 2D e reagiscono agli ostacoli di evitamento basati sul raggio o agli ostacoli di evitamento basati sui vertici. Gli altri agenti che utilizzano l'evitamento 2D che si trovano al di sotto o al di sopra della loro posizione attuale, inclusa :ref:`height<class_NavigationAgent3D_property_height>`, sono ignorati.
 
 .. rst-class:: classref-item-separator
 
@@ -846,7 +846,7 @@ Se ``false``, l'agente calcola le velocità di evasione in 2D lungo gli assi x e
 - |void| **set_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_velocity**\ (\ )
 
-Imposta la nuova velocità desiderata per l'agente. La simulazione dell'evasione cercherà di soddisfare questa velocità se possibile, ma la modificherà per evitare collisioni con altri agenti e ostacoli. Quando un agente viene teletrasportato in una nuova posizione, usa anche :ref:`set_velocity_forced()<class_NavigationAgent3D_method_set_velocity_forced>` per reimpostare la velocità interna di simulazione.
+Imposta la nuova velocità desiderata per l'agente. La simulazione dell'evitamento cercherà di soddisfare questa velocità se possibile, ma la modificherà per evitare collisioni con altri agenti e ostacoli. Quando un agente viene teletrasportato in una nuova posizione, usa anche :ref:`set_velocity_forced()<class_NavigationAgent3D_method_set_velocity_forced>` per reimpostare la velocità interna di simulazione.
 
 .. rst-class:: classref-section-separator
 
@@ -875,7 +875,7 @@ Restituisce la distanza dalla posizione di destinazione, utilizzando la posizion
 
 :ref:`bool<class_bool>` **get_avoidance_layer_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NavigationAgent3D_method_get_avoidance_layer_value>`
 
-Restituisce se lo strato specificato del bitmask :ref:`avoidance_layers<class_NavigationAgent3D_property_avoidance_layers>` è abilitato, dato un ``layer_number`` tra 1 e 32.
+Restituisce se lo strato specificato di :ref:`avoidance_layers<class_NavigationAgent3D_property_avoidance_layers>` è abilitato, fornito un ``layer_number`` tra 1 e 32.
 
 .. rst-class:: classref-item-separator
 
@@ -887,7 +887,7 @@ Restituisce se lo strato specificato del bitmask :ref:`avoidance_layers<class_Na
 
 :ref:`bool<class_bool>` **get_avoidance_mask_value**\ (\ mask_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NavigationAgent3D_method_get_avoidance_mask_value>`
 
-Restituisce se la maschera specificata del bitmask :ref:`avoidance_mask<class_NavigationAgent3D_property_avoidance_mask>` è abilitata, dato un ``mask_number`` tra 1 e 32.
+Restituisce se la maschera specificata di :ref:`avoidance_mask<class_NavigationAgent3D_property_avoidance_mask>` è abilitata, fornito un ``mask_number`` tra 1 e 32.
 
 .. rst-class:: classref-item-separator
 
@@ -1045,7 +1045,7 @@ Restituisce ``true`` se l'agente ha raggiunto la sua destinazione, ovvero l'agen
 
 |void| **set_avoidance_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationAgent3D_method_set_avoidance_layer_value>`
 
-Basato su ``value``, attiva o disattiva lo strato specificato nel bitmask :ref:`avoidance_layers<class_NavigationAgent3D_property_avoidance_layers>`, dato un ``layer_number`` tra 1 e 32.
+In base a ``value``, attiva o disattiva lo strato specificato in :ref:`avoidance_layers<class_NavigationAgent3D_property_avoidance_layers>`, fornito un ``layer_number`` tra 1 e 32.
 
 .. rst-class:: classref-item-separator
 
@@ -1057,7 +1057,7 @@ Basato su ``value``, attiva o disattiva lo strato specificato nel bitmask :ref:`
 
 |void| **set_avoidance_mask_value**\ (\ mask_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationAgent3D_method_set_avoidance_mask_value>`
 
-Basato su ``value``, attiva o disattiva la maschera specificata nel bitmask :ref:`avoidance_mask<class_NavigationAgent3D_property_avoidance_mask>`, dato un ``mask_number`` tra 1 e 32.
+In base a ``value``, attiva o disattiva la maschera specificata in :ref:`avoidance_mask<class_NavigationAgent3D_property_avoidance_mask>`, fornito un ``mask_number`` tra 1 e 32.
 
 .. rst-class:: classref-item-separator
 
@@ -1093,13 +1093,13 @@ Imposta il :ref:`RID<class_RID>` della mappa di navigazione che questo nodo Navi
 
 |void| **set_velocity_forced**\ (\ velocity\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_NavigationAgent3D_method_set_velocity_forced>`
 
-Sostituisce la velocità interna nella simulazione di evasione delle collisioni con ``velocity``. Quando un agente è teletrasportato in una nuova posizione, questa funzione dovrebbe essere utilizzata nello stesso frame. Se chiamata spesso, questa funzione può bloccare gli agenti.
+Sostituisce la velocità interna nella simulazione di evitamento delle collisioni con ``velocity``. Quando un agente viene teletrasportato in una nuova posizione, questa funzione si dovrebbe usare nello stesso frame. Se chiamata spesso, questa funzione può bloccare gli agenti.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

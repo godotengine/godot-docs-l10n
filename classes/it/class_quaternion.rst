@@ -377,7 +377,7 @@ Restituisce l'esponenziale di questo quaternione. L'asse di rotazione del risult
 
 :ref:`Quaternion<class_Quaternion>` **from_euler**\ (\ euler\: :ref:`Vector3<class_Vector3>`\ ) |static| :ref:`🔗<class_Quaternion_method_from_euler>`
 
-Constructs a new **Quaternion** from the given :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians. In Godot, Euler angles always use intrinsic order. This method always uses the intrinsic YXZ convention (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
+Costruisce un nuovo **Quaternion** dal :ref:`Vector3<class_Vector3>` fornito di `angoli di Eulero <https://it.wikipedia.org/wiki/Angoli_di_Eulero>`__, in radianti. In Godot, gli angoli di Eulero utilizzano sempre l'ordine intrinseco. Questo metodo usa sempre la convenzione intrinseca YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
 
 .. rst-class:: classref-item-separator
 
@@ -415,9 +415,9 @@ Restituisce l'asse di rotazione della rotazione rappresentata da questo quaterni
 
 :ref:`Vector3<class_Vector3>` **get_euler**\ (\ order\: :ref:`int<class_int>` = 2\ ) |const| :ref:`🔗<class_Quaternion_method_get_euler>`
 
-Returns this quaternion's rotation as a :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians.
+Restituisce la rotazione di questo quaternione sotto forma di un :ref:`Vector3<class_Vector3>` di `angoli di Eulero <https://it.wikipedia.org/wiki/Angoli_di_Eulero>`__, in radianti.
 
-The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): since we are decomposing, local Z (roll) is calculated first, then local X (pitch), and lastly local Y (yaw). When using the opposite method :ref:`from_euler()<class_Quaternion_method_from_euler>` to compose a rotation, this order is reversed.
+L'ordine di ogni rotazione consecutiva si può cambiare con ``order`` (vedi :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` costanti). In Godot, gli angoli di Eulero utilizzano sempre l'ordine intrinseco. Come predefinito, è usata la convenzione YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): poiché stiamo scomponendo, viene calcolato prima l'asse Z locale (rollio), poi l'asse X locale (beccheggio) e infine l'asse Y locale (imbardata). Quando si utilizza il metodo opposto :ref:`from_euler()<class_Quaternion_method_from_euler>` per comporre una rotazione, questo ordine è invertito.
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +527,7 @@ Restituisce una copia di questo quaternione, normalizzato affinché la sua lungh
 
 :ref:`Quaternion<class_Quaternion>` **slerp**\ (\ to\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_slerp>`
 
-Esegue un'interpolazione sferico-lineare con il quaternione ``to``, specificato un peso (``weight``) e restituisce il risultato. Sia questo quaternione che ``to`` devono essere normalizzati.
+Esegue un'interpolazione sferico-lineare con il quaternione ``to``, specificato un peso ``weight`` e restituisce il risultato. Sia questo quaternione che ``to`` devono essere normalizzati.
 
 .. rst-class:: classref-item-separator
 
@@ -539,7 +539,7 @@ Esegue un'interpolazione sferico-lineare con il quaternione ``to``, specificato 
 
 :ref:`Quaternion<class_Quaternion>` **slerpni**\ (\ to\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_slerpni>`
 
-Esegue un'interpolazione sferico-lineare con il quaternione ``to``, specificato un peso (``weight``) e restituisce il risultato. A differenza di :ref:`slerp()<class_Quaternion_method_slerp>`, questo metodo non controlla se il percorso di rotazione è inferiore a 90 gradi. Sia questo quaternione che ``to`` devono essere normalizzati.
+Esegue un'interpolazione sferico-lineare con il quaternione ``to``, specificato un peso ``weight`` e restituisce il risultato. A differenza di :ref:`slerp()<class_Quaternion_method_slerp>`, questo metodo non controlla se il percorso di rotazione è inferiore a 90 gradi. Sia questo quaternione che ``to`` devono essere normalizzati.
 
 .. rst-class:: classref-item-separator
 
@@ -750,7 +750,7 @@ Restituisce il valore negativo del **Quaternion**. Ciò equivale a moltiplicare 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -7,14 +7,14 @@ FastNoiseLite
 
 **Hereda:** :ref:`Noise<class_Noise>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Genera ruido utilizando la librería FastNoiseLite.
+Genera ruido utilizando la biblioteca FastNoiseLite.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Esta clase genera ruido utilizando la librería FastNoiseLite, que es una colección de varios algoritmos de ruido incluyendo Celular, Perlin, Valor y más.
+Esta clase genera ruido utilizando la biblioteca FastNoiseLite, que es una colección de varios algoritmos de ruido incluyendo Celular, Perlin, Valor y más.
 
 La mayoría de los valores de ruido generados están en el rango de ``[-1, 1]``, pero no siempre. Algunos de los algoritmos de ruido celular devuelven resultados por encima de ``1``.
 

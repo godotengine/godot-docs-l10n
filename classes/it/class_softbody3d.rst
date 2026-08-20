@@ -122,9 +122,9 @@ enum **DisableMode**: :ref:`🔗<enum_SoftBody3D_DisableMode>`
 
 :ref:`DisableMode<enum_SoftBody3D_DisableMode>` **DISABLE_MODE_REMOVE** = ``0``
 
-Quando :ref:`Node.process_mode<class_Node_property_process_mode>` è impostato su :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`, rimuovi dalla simulazione di fisica per fermare tutte le interazioni fisiche con questo **SoftBody3D**.
+Quando :ref:`Node.process_mode<class_Node_property_process_mode>` è impostato su :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`, rimuovi dalla simulazione fisica per fermare tutte le interazioni fisiche con questo **SoftBody3D**.
 
-Riaggiunge il corpo automaticamente alla simulazione di fisica quando il :ref:`Node<class_Node>` viene nuovamente elaborato.
+Riaggiunge il corpo automaticamente alla simulazione fisica quando il :ref:`Node<class_Node>` è nuovamente in elaborazione.
 
 .. _class_SoftBody3D_constant_DISABLE_MODE_KEEP_ACTIVE:
 
@@ -228,7 +228,7 @@ Definisce il comportamento nella fisica quando :ref:`Node.process_mode<class_Nod
 
 Il coefficiente di resistenza aerodinamica del corpo. Valori più alti aumentano la resistenza all'aria di questo corpo.
 
-\ **Nota:** Questo valore è attualmente inutilizzato dall'implementazione fisica predefinita di Godot.
+\ **Nota:** Questo valore è attualmente inutilizzato dall'implementazione predefinita della fisica in Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -313,9 +313,9 @@ Se ``true``, il **SoftBody3D** risponderà ai nodi :ref:`RayCast3D<class_RayCast
 - |void| **set_shrinking_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_shrinking_factor**\ (\ )
 
-Scales the rest lengths of **SoftBody3D**'s edge constraints. Positive values shrink the mesh, while negative values expand it. For example, a value of ``0.1`` shortens the edges of the mesh by 10%, while ``-0.1`` expands the edges by 10%.
+Ridimensiona le lunghezze di riposo dei vincoli di bordo del **SoftBody3D**. I valori positivi restringono la mesh, mentre i valori negativi la espandono. Ad esempio, un valore di ``0.1`` accorcia i bordi della mesh del 10%, mentre ``-0.1`` li espande del 10%.
 
-\ **Note:** :ref:`shrinking_factor<class_SoftBody3D_property_shrinking_factor>` is best used on surface meshes with pinned points.
+\ **Nota:** :ref:`shrinking_factor<class_SoftBody3D_property_shrinking_factor>` è più indicato per mesh di superficie con punti fissati.
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ Aumentare questo valore migliorerà la simulazione risultante, ma può influire 
 - |void| **set_total_mass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_total_mass**\ (\ )
 
-The SoftBody3D's mass.
+La massa del SoftBody3D.
 
 .. rst-class:: classref-section-separator
 
@@ -544,7 +544,7 @@ Imposta lo stato fissato di un vertice di superficie. Se impostato su ``true``, 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

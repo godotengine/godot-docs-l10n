@@ -4381,7 +4381,7 @@ enum **InitialAction**: :ref:`🔗<enum_RenderingDevice_InitialAction>`
 
 **Obsoleto:** Initial actions are solved automatically by RenderingDevice.
 
-Load the previous contents of the framebuffer.
+Carga el contenido anterior del framebuffer.
 
 .. _class_RenderingDevice_constant_INITIAL_ACTION_CLEAR:
 
@@ -4391,7 +4391,7 @@ Load the previous contents of the framebuffer.
 
 **Obsoleto:** Initial actions are solved automatically by RenderingDevice.
 
-Clear the whole framebuffer or its specified region.
+Borra todo el framebuffer o la región especificada del mismo.
 
 .. _class_RenderingDevice_constant_INITIAL_ACTION_DISCARD:
 
@@ -4867,7 +4867,7 @@ Maximum number of color framebuffer attachments that can be used at a given time
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_TEXTURES_PER_UNIFORM_SET** = ``2``
 
-Maximum number of textures that can be used per uniform set.
+Número máximo de texturas que se pueden utilizar por conjunto de uniformes.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_SAMPLERS_PER_UNIFORM_SET:
 
@@ -4875,7 +4875,7 @@ Maximum number of textures that can be used per uniform set.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_SAMPLERS_PER_UNIFORM_SET** = ``3``
 
-Maximum number of samplers that can be used per uniform set.
+Número máximo de muestreadores que se pueden utilizar por conjunto de uniformes.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_STORAGE_BUFFERS_PER_UNIFORM_SET:
 
@@ -5591,7 +5591,7 @@ Este método no hace nada.
 
 **Experimental:** Este método podría ser modificado o eliminado en versiones futuras.
 
-Builds the ``blas``.
+Construye el ``blas``.
 
 .. rst-class:: classref-item-separator
 
@@ -6125,7 +6125,7 @@ Crea un rectángulo de tijera y lo habilita para la ``draw_list`` especificada. 
 
 |void| **draw_list_end**\ (\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_end>`
 
-Finishes a list of raster drawing commands created with the ``draw_*`` methods.
+Finaliza una lista de comandos de dibujo ráster creados con los métodos ``draw_*``.
 
 .. rst-class:: classref-item-separator
 
@@ -6903,7 +6903,7 @@ A simple raytracing operation might look like this (code is not a complete examp
 
 **Experimental:** Este método podría ser modificado o eliminado en versiones futuras.
 
-Binds ``raytracing_pipeline`` to the specified ``raytracing_list``.
+Vincula ``raytracing_pipeline`` a la ``raytracing_list`` especificada.
 
 .. rst-class:: classref-item-separator
 
@@ -6917,7 +6917,7 @@ Binds ``raytracing_pipeline`` to the specified ``raytracing_list``.
 
 **Experimental:** Este método podría ser modificado o eliminado en versiones futuras.
 
-Binds the ``uniform_set`` to this ``raytracing_list``.
+Vincula el ``uniform_set`` a esta ``raytracing_list``.
 
 .. rst-class:: classref-item-separator
 
@@ -6931,7 +6931,7 @@ Binds the ``uniform_set`` to this ``raytracing_list``.
 
 **Experimental:** Este método podría ser modificado o eliminado en versiones futuras.
 
-Finishes a list of raytracing commands created with the ``raytracing_*`` methods.
+Finaliza una lista de comandos de trazado de rayos creados con los métodos ``raytracing_*``.
 
 .. rst-class:: classref-item-separator
 

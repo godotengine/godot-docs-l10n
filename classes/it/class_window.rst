@@ -27,7 +27,7 @@ Tutorial
 
 - :doc:`Output HDR <../tutorials/rendering/hdr_output>`
 
-- `Multiple Windows demo <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
+- `Demo di finestre multiple <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -460,7 +460,7 @@ Emesso quando il cursore del mouse esce dall'area visibile del **Window**, che n
 
 **nonclient_window_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) :ref:`🔗<class_Window_signal_nonclient_window_input>`
 
-Emitted when the mouse event is received by the custom decoration area defined by :ref:`nonclient_area<class_Window_property_nonclient_area>`, and normal input to the window is blocked (such as when it has an exclusive child opened). ``event``'s position is in the embedder's coordinate system.
+Emesso quando l'evento del mouse viene ricevuto dall'area di decorazione personalizzata definita da :ref:`nonclient_area<class_Window_property_nonclient_area>` e l'input normale alla finestra è bloccato (come quando è aperto un figlio esclusivo). La posizione di ``event`` è nel sistema di coordinate dell'incorporatore.
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ Emitted when the mouse event is received by the custom decoration area defined b
 
 **output_max_linear_value_changed**\ (\ output_max_linear_value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_signal_output_max_linear_value_changed>`
 
-Emesso quando il valore lineare massimo di output restituito da :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` è cambiato. Ciò avviene quando l'output HDR è abilitato o disabilitato e quando i valori di luminanza di output HDR della finestra sono cambiati, ad esempio quando il giocatore regola l'impostazione della luminosità dello schermo o sposta la finestra su uno schermo diverso. ``output_max_linear_value`` è il nuovo valore.
+Emesso quando il valore lineare massimo di output restituito da :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` è cambiato. Ciò avviene quando l'output HDR è abilitato o disabilitato e quando i valori di luminanza di output HDR della finestra sono cambiati, ad esempio quando il giocatore regola la luminosità dello schermo o sposta la finestra su un altro schermo. ``output_max_linear_value`` è il nuovo valore.
 
 .. rst-class:: classref-item-separator
 
@@ -629,9 +629,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_RESIZE_DISABLED** = ``0``
 
-The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`size<class_Window_property_size>`. This flag is ignored for full screen windows. Set with :ref:`unresizable<class_Window_property_unresizable>`.
+La finestra non può essere ridimensionata trascinando la sua impugnatura di ridimensionamento. È comunque possibile ridimensionare la finestra tramite :ref:`size<class_Window_property_size>`. Questo flag è ignorato per le finestre a schermo intero. Impostato tramite :ref:`unresizable<class_Window_property_unresizable>`.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
+\ **Nota:** Questo flag è implementato su Linux (X11), macOS, Windows e sulle finestre incorporate.
 
 .. _class_Window_constant_FLAG_BORDERLESS:
 
@@ -639,9 +639,9 @@ The window can't be resized by dragging its resize grip. It's still possible to 
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_BORDERLESS** = ``1``
 
-The window do not have native title bar and other decorations. This flag is ignored for full-screen windows. Set with :ref:`borderless<class_Window_property_borderless>`.
+La finestra non ha la barra del titolo nativa e altre decorazioni. Questo flag è ignorato per le finestre a schermo intero. Impostato tramite :ref:`borderless<class_Window_property_borderless>`.
 
-\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
+\ **Nota:** Questo flag è implementato su Linux (X11/Wayland), macOS, Windows e sulle finestre incorporate.
 
 .. _class_Window_constant_FLAG_ALWAYS_ON_TOP:
 
@@ -649,9 +649,9 @@ The window do not have native title bar and other decorations. This flag is igno
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_ALWAYS_ON_TOP** = ``2``
 
-The window is floating on top of all other windows. This flag is ignored for full-screen windows. Set with :ref:`always_on_top<class_Window_property_always_on_top>`.
+La finestra fluttua sopra tutte le altre finestre. Questo flag è ignorato per le finestre a schermo intero. Impostato tramite :ref:`always_on_top<class_Window_property_always_on_top>`.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
+\ **Nota:** Questo flag è implementato su Linux (X11), macOS, Windows e sulle finestre incorporate.
 
 .. _class_Window_constant_FLAG_TRANSPARENT:
 
@@ -659,11 +659,11 @@ The window is floating on top of all other windows. This flag is ignored for ful
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_TRANSPARENT** = ``3``
 
-The window background can be transparent. Set with :ref:`transparent<class_Window_property_transparent>`.
+Lo sfondo della finestra può essere trasparente. Impostato tramite :ref:`transparent<class_Window_property_transparent>`.
 
-\ **Note:** This flag has no effect if either :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, or the window's :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is set to ``false``.
+\ **Nota:** Questo flag non ha effetto se :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, oppure il :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` della finestra è impostato su ``false``.
 
-\ **Note:** Transparency support is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
+\ **Nota:** Il supporto per la trasparenza è implementato su Linux (X11/Wayland), macOS, Windows e sulle finestre incorporate.
 
 .. _class_Window_constant_FLAG_NO_FOCUS:
 
@@ -671,9 +671,9 @@ The window background can be transparent. Set with :ref:`transparent<class_Windo
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_NO_FOCUS** = ``4``
 
-The window can't be focused. No-focus window will ignore all input, except mouse clicks. Set with :ref:`unfocusable<class_Window_property_unfocusable>`.
+La finestra non può essere focalizzata. La finestra impossibile da focalizzare ignorerà tutti gli input, tranne i clic del mouse. Impostato tramite :ref:`unfocusable<class_Window_property_unfocusable>`.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
+\ **Nota:** Questo flag è implementato su Linux (X11), macOS, Windows e sulle finestre incorporate.
 
 .. _class_Window_constant_FLAG_POPUP:
 
@@ -681,9 +681,9 @@ The window can't be focused. No-focus window will ignore all input, except mouse
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP** = ``5``
 
-Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`transient<class_Window_property_transient>`).
+La finestra fa parte di un menu o :ref:`OptionButton<class_OptionButton>` a tendina. Questo flag non si può cambiare quando la finestra è visibile. Una finestra di popup attiva riceverà esclusivamente tutti gli input, senza rubare il focus dal suo genitore. Le finestre di popup si chiudono automaticamente quando si clicca fuori di esse, o quando si cambia l'applicazione. La finestra di popup deve aver impostato un genitore transitorio (vedi :ref:`transient<class_Window_property_transient>`).
 
-\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded :ref:`Popup<class_Popup>` windows.
+\ **Nota:** Questo flag è implementato su Linux (X11/Wayland), macOS, Windows e sulle finestre :ref:`Popup<class_Popup>` incorporate.
 
 .. _class_Window_constant_FLAG_EXTEND_TO_TITLE:
 
@@ -691,11 +691,11 @@ Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_EXTEND_TO_TITLE** = ``6``
 
-Window content is expanded to the full size of the window. Unlike borderless window, the frame is left intact and can be used to resize the window, title bar is transparent, but have minimize/maximize/close buttons. Set with :ref:`extend_to_title<class_Window_property_extend_to_title>`.
+Il contenuto della finestra è ampliato alle dimensioni complete della finestra. A differenza di una finestra senza bordi, la cornice è lasciata intatta e si può utilizzare per ridimensionare la finestra, la barra del titolo è trasparente, ma include i pulsanti per minimizzare, massimizzare e chiudere. Impostato con :ref:`extend_to_title<class_Window_property_extend_to_title>`.
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **Nota:** Questo flag non ha effetto nelle finestre incorporate.
 
-\ **Note:** This flag is implemented only on macOS.
+\ **Nota:** Questo flag è implementato solo su macOS.
 
 .. _class_Window_constant_FLAG_MOUSE_PASSTHROUGH:
 
@@ -703,11 +703,11 @@ Window content is expanded to the full size of the window. Unlike borderless win
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-All mouse events are passed to the underlying window of the same application.
+Tutti gli eventi del mouse saranno passati alla finestra sottostante della stessa applicazione.
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **Nota:** Questo flag non ha effetto nelle finestre incorporate.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, Windows.
+\ **Nota:** Questo flag è implementato su Linux (X11), macOS, Windows.
 
 .. _class_Window_constant_FLAG_SHARP_CORNERS:
 
@@ -741,11 +741,11 @@ La finestra è esclusa dagli screenshot acquisiti da :ref:`DisplayServer.screen_
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP_WM_HINT** = ``10``
 
-Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+Segnala al gestore delle finestre che questa finestra dovrebbe essere un "popup" definito dall'implementazione (solitamente una finestra figlia, mobile, senza bordi, non ordinabile e immobile).
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **Nota:** Questo flag non ha effetto nelle finestre incorporate.
 
-\ **Note:** This flag is implemented on Linux (Wayland).
+\ **Nota:** Questo flag è implementato su Linux (Wayland).
 
 .. _class_Window_constant_FLAG_MINIMIZE_DISABLED:
 
@@ -753,11 +753,11 @@ Signals the window manager that this window is supposed to be an implementation-
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MINIMIZE_DISABLED** = ``11``
 
-Window minimize button is disabled.
+Il pulsante di minimizzazione della finestra è disabilitato.
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **Nota:** Questo flag non ha effetto nelle finestre incorporate.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Nota:** Questo flag è implementato su Linux (X11), macOS e Windows.
 
 .. _class_Window_constant_FLAG_MAXIMIZE_DISABLED:
 
@@ -765,11 +765,11 @@ Window minimize button is disabled.
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MAXIMIZE_DISABLED** = ``12``
 
-Window maximize button is disabled.
+Il pulsante di massimizzazione della finestra è disabilitato.
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **Nota:** Questo flag non ha effetto nelle finestre incorporate.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Nota:** Questo flag è implementato su Linux (X11), macOS e Windows.
 
 .. _class_Window_constant_FLAG_MAX:
 
@@ -795,7 +795,7 @@ enum **ContentScaleMode**: :ref:`🔗<enum_Window_ContentScaleMode>`
 
 :ref:`ContentScaleMode<enum_Window_ContentScaleMode>` **CONTENT_SCALE_MODE_DISABLED** = ``0``
 
-The content will not be scaled to match the **Window**'s size (:ref:`content_scale_size<class_Window_property_content_scale_size>` is ignored).
+Il contenuto non sarà scalato per corrispondere alle dimensioni del **Window** (:ref:`content_scale_size<class_Window_property_content_scale_size>` è ignorato).
 
 .. _class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS:
 
@@ -1206,11 +1206,11 @@ Specifica come il contenuto viene scalato quando il **Window** viene ridimension
 - |void| **set_content_scale_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_content_scale_size**\ (\ )
 
-The content's base size in "virtual" pixels. Not to be confused with :ref:`size<class_Window_property_size>`, which sets the actual window's physical size in pixels. If set to a value greater than ``0`` and :ref:`content_scale_mode<class_Window_property_content_scale_mode>` is set to a value other than :ref:`CONTENT_SCALE_MODE_DISABLED<class_Window_constant_CONTENT_SCALE_MODE_DISABLED>`, the **Window**'s content will be scaled when the window is resized to a different size. Higher values will make the content appear *smaller*, as it will be able to fit more of the project in view. On the root **Window**, this is set to match :ref:`ProjectSettings.display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`ProjectSettings.display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>` by default.
+La dimensione base del contenuto in pixel "virtuali". Da non confondere con :ref:`size<class_Window_property_size>`, che imposta le dimensioni fisiche effettive della finestra in pixel. Se impostato su un valore maggiore di ``0`` e :ref:`content_scale_mode<class_Window_property_content_scale_mode>` è impostato su un valore diverso da :ref:`CONTENT_SCALE_MODE_DISABLED<class_Window_constant_CONTENT_SCALE_MODE_DISABLED>`, il contenuto della **Window** verrà ridimensionato quando la finestra viene ridimensionata a una dimensione diversa. Valori più alti faranno apparire il contenuto *più piccolo*, poiché sarà possibile mostrare di più del progetto. Sulla **Window** principale, questo valore è normalmente impostato così da corrispondere a :ref:`ProjectSettings.display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` e :ref:`ProjectSettings.display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`.
 
-For example, when using :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>` and :ref:`content_scale_size<class_Window_property_content_scale_size>` set to ``Vector2i(1280, 720)``, using a window size of ``2560×1440`` will make 2D elements appear at double their original size, as the content is scaled by a factor of ``2.0`` (``2560.0 / 1280.0 = 2.0``, ``1440.0 / 720.0 = 2.0``).
+Ad esempio, quando si utilizza :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>` e :ref:`content_scale_size<class_Window_property_content_scale_size>` impostato su ``Vector2i(1280, 720)``, utilizzare dimensioni della finestra pari a ``2560×1440`` farà apparire gli elementi 2D il doppio delle loro dimensioni originali, poiché il contenuto è scalato di un fattore di ``2.0`` (``2560.0 / 1280.0 = 2.0``, ``1440.0 / 720.0 = 2.0``).
 
-See `the Base size section of the Multiple resolutions documentation <../tutorials/rendering/multiple_resolutions.html#base-size>`__ for details.
+Consulta `la sezione dimensioni di base della documentazione sulle risoluzioni multiple <../tutorials/rendering/multiple_resolutions.html#base-size>`__ per maggiori dettagli.
 
 .. rst-class:: classref-item-separator
 
@@ -1301,7 +1301,7 @@ Ha bisogno di :ref:`transient<class_Window_property_transient>` abilitato per po
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-Se ``true``, il contenuto della finestra è allargato alle dimensioni complete della finestra, e la barra del titolo della finestra è trasparente.
+Se ``true``, il contenuto della finestra è ampliato alle dimensioni complete della finestra, e la barra del titolo della finestra è trasparente.
 
 \ **Nota:** Questa proprietà è implementata solo su macOS.
 
@@ -1566,7 +1566,7 @@ Passare un array vuoto disattiva questa funzionalità (tutti gli eventi del mous
 - |void| **set_nonclient_area**\ (\ value\: :ref:`Rect2i<class_Rect2i>`\ )
 - :ref:`Rect2i<class_Rect2i>` **get_nonclient_area**\ (\ )
 
-If set, defines the window's custom decoration area which will receive mouse input, even if normal input to the window is blocked (such as when it has an exclusive child opened). See also :ref:`nonclient_window_input<class_Window_signal_nonclient_window_input>`.
+Se impostato, definisce l'area di decorazione personalizzata della finestra che riceverà l'input del mouse, anche se l'input normale alla finestra è bloccato (ad esempio, quando è aperta una finestra figlia esclusiva). Vedi anche :ref:`nonclient_window_input<class_Window_signal_nonclient_window_input>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1600,7 +1600,7 @@ Se ``true``, il **Window** sarà considerato un popup. I popup sono sottofinestr
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-Se ``true``, la **Window** segnalerà al gestore delle finestre che si tratta di un "popup" definito dall'implementazione (solitamente una finestra figlia fluttuante, senza bordi, non ordinabile e immobile).
+Se ``true``, la **Window** segnalerà al gestore delle finestre che si tratta di un "popup" definito dall'implementazione (solitamente una finestra figlia mobile, senza bordi, non ordinabile e immobile).
 
 .. rst-class:: classref-item-separator
 
@@ -1659,7 +1659,7 @@ Se ``true``, il **Window** sostituirà lo stile della finestra per visualizzare 
 - |void| **set_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_size**\ (\ )
 
-The window's size in pixels. See also :ref:`content_scale_size<class_Window_property_content_scale_size>`, which doesn't set the window's physical size but affects how scaling works relative to the current :ref:`content_scale_mode<class_Window_property_content_scale_mode>`.
+Le dimensioni della finestra in pixel. Vedi anche :ref:`content_scale_size<class_Window_property_content_scale_size>`, che non imposta le dimensioni fisiche della finestra ma influisce sul modo in cui funziona lo scaling rispetto all'attuale :ref:`content_scale_mode<class_Window_property_content_scale_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2050,9 +2050,9 @@ Restituisce la direzione del layout e la direzione di scrittura del testo.
 
 :ref:`float<class_float>` **get_output_max_linear_value**\ (\ ) |const| :ref:`🔗<class_Window_method_get_output_max_linear_value>`
 
-Returns the maximum value for linear color components that can be displayed in this window, regardless of SDR or HDR output. Returns ``1.0`` if HDR is not enabled or not supported. The :ref:`output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` signal will be emitted whenever this value changes.
+Restituisce il valore massimo per i componenti lineari di colore visualizzabili in questa finestra, a prescindere dall'output SDR o HDR. Restituisce ``1.0`` se l'HDR non è abilitato o non è supportato. Il segnale :ref:`output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` verrà emesso ogni volta che questo valore cambia.
 
-This value is used by tonemapping and other :ref:`Environment<class_Environment>` effects to ensure that bright colors are presented in the range that can be displayed by this window. When using this maximum linear value in your project, it should only be used to present colors directly to the screen without tonemapping and without influencing lighting, post-processing effects, or surrounding color. The following is an example that produces the brightest purple color that the screen can produce:
+Questo valore serve alla mappatura dei toni e ad altri effetti di :ref:`Environment<class_Environment>` per garantire che i colori brillanti siano presentati nella gamma visualizzabile da questa finestra. Quando si utilizza questo valore lineare massimo nel progetto, si dovrebbe utilizzare solo per presentare i colori direttamente sullo schermo senza mappature dei toni e senza influenzare l'illuminazione, gli effetti di post-elaborazione o il colore circostante. Di seguito è riportato un esempio che produce il colore viola più brillante che lo schermo può produrre:
 
 
 .. tabs::
@@ -2060,30 +2060,30 @@ This value is used by tonemapping and other :ref:`Environment<class_Environment>
  .. code-tab:: gdscript
 
     func _process(_delta):
-        # output_max_linear_value may change often, so do this every frame.
+        # output_max_linear_value potrebbe cambiare spesso, perciò fa questo ogni frame.
         var max_linear_value = get_window().get_output_max_linear_value()
-        # Replace this with your color:
+        # Sostituisci con il tuo colore:
         var original_color = Color.PURPLE
-        # Normalize to max_linear_value to produce the brightest color possible,
-        # regardless of SDR or HDR output:
+        # Normalizza a max_linear_value per produrre il colore più brillante possibile,
+        # a prescindere che l'output sia SDR o HDR:
         var bright_color = normalize_color(original_color, max_linear_value)
 
 
     func normalize_color(srgb_color, max_linear_value = 1.0):
-        # Color must be linear-encoded to use math operations.
+        # Il colore deve essere in codifica lineare per sfruttare le operazioni matematiche.
         var linear_color = srgb_color.srgb_to_linear()
         var max_rgb_value = maxf(linear_color.r, maxf(linear_color.g, linear_color.b))
         var brightness_scale = max_linear_value / max_rgb_value
         linear_color *= brightness_scale
-        # Undo changes to the alpha channel, which should not be modified.
+        # Annulla le modifiche al canale alfa, che non si dovrebbe modificare.
         linear_color.a = srgb_color.a
-        # Convert back to nonlinear sRGB encoding, which is required for Color in
-        # Godot unless stated otherwise.
+        # Riconverti in codifica sRGB non lineare, necessaria per colore
+        # in Godot, salvo diversa indicazione.
         return linear_color.linear_to_srgb()
 
 
 
-\ **Note:** You will need to convert sRGB colors to linear before multiplying by this value to get correct results.
+\ **Nota:** Sarà necessario convertire i colori sRGB in lineari prima di moltiplicarli per questo valore per ottenere risultati corretti.
 
 .. rst-class:: classref-item-separator
 
@@ -2513,7 +2513,7 @@ Restituisce ``true`` se il sovracampionamento di font è abilitato. Vedi :ref:`s
 
 |void| **move_to_center**\ (\ ) :ref:`🔗<class_Window_method_move_to_center>`
 
-Centers the window in the current screen. If the window is embedded, it is centered in the embedder :ref:`Viewport<class_Viewport>` instead.
+Centra una finestra nativa sullo schermo attuale. Se la finestra è incorporata, viene centrata sulla :ref:`Viewport<class_Viewport>` che la incorpora.
 
 .. rst-class:: classref-item-separator
 
@@ -2681,7 +2681,7 @@ Fa apparire il **Window** con una posizione spostata dalla posizione del **Windo
 
 |void| **remove_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_color_override>`
 
-Rimuove una sostituzione locale per un :ref:`Color<class_Color>` di tema, con il nome ``name``, precedentemente aggiunto da :ref:`add_theme_color_override()<class_Window_method_add_theme_color_override>` o tramite il pannello dell'Ispettore.
+Rimuove una sostituzione locale per un :ref:`Color<class_Color>` di tema, con il nome ``name``, precedentemente aggiunto da :ref:`add_theme_color_override()<class_Window_method_add_theme_color_override>` o tramite il pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -2693,7 +2693,7 @@ Rimuove una sostituzione locale per un :ref:`Color<class_Color>` di tema, con il
 
 |void| **remove_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_constant_override>`
 
-Rimuove una sostituzione locale per una costante di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_constant_override()<class_Window_method_add_theme_constant_override>` o tramite il pannello dell'Ispettore.
+Rimuove una sostituzione locale per una costante di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_constant_override()<class_Window_method_add_theme_constant_override>` o tramite il pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -2705,7 +2705,7 @@ Rimuove una sostituzione locale per una costante di tema, con il nome ``name``, 
 
 |void| **remove_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_font_override>`
 
-Rimuove una sostituzione locale per un :ref:`Font<class_Font>` di tema, con il nome ``name``, precedentemente aggiunto da :ref:`add_theme_font_override()<class_Window_method_add_theme_font_override>` o tramite il pannello dell'Ispettore.
+Rimuove una sostituzione locale per un :ref:`Font<class_Font>` di tema, con il nome ``name``, precedentemente aggiunto da :ref:`add_theme_font_override()<class_Window_method_add_theme_font_override>` o tramite il pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -2717,7 +2717,7 @@ Rimuove una sostituzione locale per un :ref:`Font<class_Font>` di tema, con il n
 
 |void| **remove_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_font_size_override>`
 
-Rimuove una sostituzione locale per una dimensione di font :ref:`Font<class_Font>` di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_font_size_override()<class_Window_method_add_theme_font_size_override>` o tramite il pannello dell'Ispettore.
+Rimuove una sostituzione locale per una dimensione di font :ref:`Font<class_Font>` di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_font_size_override()<class_Window_method_add_theme_font_size_override>` o tramite il pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -2729,7 +2729,7 @@ Rimuove una sostituzione locale per una dimensione di font :ref:`Font<class_Font
 
 |void| **remove_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_icon_override>`
 
-Rimuove una sostituzione locale per un'icona di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_icon_override()<class_Window_method_add_theme_icon_override>` o tramite il pannello dell'Ispettore.
+Rimuove una sostituzione locale per un'icona di tema, con il nome ``name``, precedentemente aggiunta da :ref:`add_theme_icon_override()<class_Window_method_add_theme_icon_override>` o tramite il pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -2741,7 +2741,7 @@ Rimuove una sostituzione locale per un'icona di tema, con il nome ``name``, prec
 
 |void| **remove_theme_stylebox_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_stylebox_override>`
 
-Rimuove una sostituzione locale per uno :ref:`StyleBox<class_StyleBox>` di tema, con il nome ``name``, precedentemente aggiunto da :ref:`add_theme_stylebox_override()<class_Window_method_add_theme_stylebox_override>` o tramite il pannello dell'Ispettore.
+Rimuove una sostituzione locale per uno :ref:`StyleBox<class_StyleBox>` di tema, con il nome ``name``, precedentemente aggiunto da :ref:`add_theme_stylebox_override()<class_Window_method_add_theme_stylebox_override>` o tramite il pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -3074,7 +3074,7 @@ Lo stile dello sfondo utilizzato quando il **Window** è incorporato e non focal
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

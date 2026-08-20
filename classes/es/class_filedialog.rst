@@ -778,7 +778,7 @@ Si es ``true``, cambiar la propiedad :ref:`file_mode<class_FileDialog_property_f
 - |void| **set_option_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_option_count**\ (\ )
 
-The number of additional :ref:`OptionButton<class_OptionButton>`\ s and :ref:`CheckBox<class_CheckBox>`\ es in the dialog.
+El número de :ref:`OptionButton<class_OptionButton>` y :ref:`CheckBox<class_CheckBox>` adicionales en el cuadro de diálogo.
 
 .. rst-class:: classref-item-separator
 

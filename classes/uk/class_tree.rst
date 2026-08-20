@@ -599,9 +599,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_DISABLED** = ``0``
 
-Disables all drop sections.
+Вимкнути всі розділи з випадаючими меню.
 
-\ **Note:** This is the default flag, it has no effect when combined with other flags.
+\ **Примітка:** Це прапор за замовчуванням, він не діє у поєднанні з іншими прапорами.
 
 .. _class_Tree_constant_DROP_MODE_ON_ITEM:
 
@@ -609,9 +609,9 @@ Disables all drop sections.
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_ON_ITEM** = ``1``
 
-Enables the "on item" drop section. This drop section covers the entire item.
+Увімкнення секції випадання «на предметі». Ця секція випадання охоплює весь предмет.
 
-When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, this drop section halves in height and stays centered vertically.
+У поєднанні з :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>` висота цієї секції випадання зменшується вдвічі, а її вертикальне центрування зберігається.
 
 .. _class_Tree_constant_DROP_MODE_INBETWEEN:
 
@@ -619,9 +619,9 @@ When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBET
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_INBETWEEN** = ``2``
 
-Enables "above item" and "below item" drop sections. The "above item" drop section covers the top half of the item, while the "below item" drop section covers the bottom half, and extends downward to the left of any children.
+Увімкнення секцій «над елементом» та «під елементом». Секція «над елементом» охоплює верхню половину елемента, тоді як секція «під елементом» — нижню половину і простягається вниз ліворуч від будь-яких дочірніх елементів.
 
-When combined with :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, these drop sections halve in height and stay at the top and bottom respectively.
+У поєднанні з :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>` висота цих секцій зменшується вдвічі, і вони залишаються відповідно у верхній та нижній частинах.
 
 .. rst-class:: classref-item-separator
 
@@ -1171,19 +1171,19 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 
 :ref:`int<class_int>` **get_drop_section_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_drop_section_at_position>`
 
-Returns the drop section at ``position``, as permitted by enabled :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
+Повертає секцію «drop» у позиції ``position``, відповідно до дозволених значень :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
 
-- ``-1`` if the position is **above** the item. Typically used to insert as the item's previous sibling.
+- ``-1``, якщо позиція знаходиться **вище** елемента. Зазвичай використовується для вставки як попереднього рівноправного елемента.
 
-- ``0`` if the position is **on** the item. Typically used to insert as the item's last child.
+- ``0``, якщо позиція знаходиться **на** елементі. Зазвичай використовується для вставки як останнього дочірнього елемента.
 
-- ``1`` if the position is **below** the item, when the item has no children. Typically used to insert as the item's next sibling. If the item *does* have children, this section is still reachable by hovering to the left of the item's collapse arrow, and below.
+- ``1``, якщо позиція знаходиться **нижче** елемента, коли елемент не має дочірніх елементів. Зазвичай використовується для вставки як наступного рівноправного елемента. Якщо елемент *має* дочірні елементи, до цієї секції все одно можна дістатися, навівши курсор ліворуч від стрілки згортання елемента та нижче.
 
-- ``2`` if the position is **below** the item, when the item has children. Typically used to insert as the item's first child.
+- ``2``, якщо позиція знаходиться **нижче** елемента, коли елемент має дочірні елементи. Зазвичай використовується для вставки як першого дочірнього елемента.
 
-- ``-100`` if the position is not over any item, or no :ref:`DropModeFlags<enum_Tree_DropModeFlags>` are set.
+- ``-100``, якщо позиція не знаходиться над жодним елементом або не встановлено жодного значення :ref:`DropModeFlags<enum_Tree_DropModeFlags>`.
 
-See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` for a description of each drop region. To get the item which the returned drop section refers to, use :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
+Опис кожної області розміщення див. у :ref:`DropModeFlags<enum_Tree_DropModeFlags>`. Щоб отримати елемент, до якого відноситься повернута область розміщення, скористайтеся :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
 
 .. rst-class:: classref-item-separator
 

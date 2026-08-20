@@ -9,16 +9,16 @@ CollisionObject2D
 
 **Ereditato da:** :ref:`Area2D<class_Area2D>`, :ref:`PhysicsBody2D<class_PhysicsBody2D>`
 
-Classe di base astratta per oggetti di fisica 2D.
+Classe base astratta per oggetti fisici 2D.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Classe base astratta per oggetti di fisica 2D. **CollisionObject2D** può contenere un numero qualsiasi di :ref:`Shape2D<class_Shape2D>` per la collisione. Ogni forma deve essere assegnata a un *proprietario di forme*. I proprietari di forme non sono nodi e non compaiono nell'editor, ma sono accessibili tramite codice attraverso i metodi ``shape_owner_*``.
+Classe base astratta per oggetti fisici 2D. **CollisionObject2D** può contenere un numero qualsiasi di :ref:`Shape2D<class_Shape2D>` per le collisioni. Ogni forma deve essere assegnata a un *proprietario di forme*. I proprietari di forme non sono nodi e non compaiono nell'editor, ma sono accessibili da codice attraverso i metodi ``shape_owner_*``.
 
-\ **Nota:** Sono supportate solo le collisioni tra oggetti all'interno dello stesso canvas (il canvas :ref:`Viewport<class_Viewport>` o :ref:`CanvasLayer<class_CanvasLayer>`). Il comportamento delle collisioni tra oggetti in canvas diverse non è definito.
+\ **Nota:** Sono supportate solo le collisioni tra oggetti all'interno dello stesso canvas (il canvas :ref:`Viewport<class_Viewport>` o :ref:`CanvasLayer<class_CanvasLayer>`). Il comportamento delle collisioni tra oggetti in canvas diversi non è definito.
 
 .. rst-class:: classref-reftable-group
 
@@ -443,7 +443,7 @@ Restituisce il :ref:`RID<class_RID>` dell'oggetto.
 
 :ref:`Vector2<class_Vector2>` **get_shape_owner_one_way_collision_direction**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_get_shape_owner_one_way_collision_direction>`
 
-Returns the ``one_way_collision_direction`` of the shape owner identified by the given ``owner_id``.
+Restituisce il ``one_way_collision_direction`` del proprietario della forma identificato dall'``owner_id``.
 
 .. rst-class:: classref-item-separator
 
@@ -671,7 +671,7 @@ Se ``enable`` è ``true``, le collisioni per il nodo che ha questo **CollisionOb
 
 |void| **shape_owner_set_one_way_collision_direction**\ (\ owner_id\: :ref:`int<class_int>`, direction\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_CollisionObject2D_method_shape_owner_set_one_way_collision_direction>`
 
-Sets the ``one_way_collision_direction`` of the shape owner identified by the given ``owner_id`` to ``direction``.
+Imposta il ``one_way_collision_direction`` del proprietario della forma identificato da ``owner_id`` a ``direction``.
 
 .. rst-class:: classref-item-separator
 
@@ -701,7 +701,7 @@ Imposta il :ref:`Transform2D<class_Transform2D>` del proprietario di forme speci
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

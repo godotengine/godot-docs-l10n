@@ -2418,9 +2418,9 @@ Divide cada componente de **Color** por el :ref:`int<class_int>` dado.
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Color_operator_eq_Color>`
 
-Returns ``true`` if the colors are exactly equal.
+Devuelve ``true`` si los colores son exactamente iguales.
 
-\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Color_method_is_equal_approx>` instead, which is more reliable.
+\ **Nota:** Debido a errores de precisión de punto flotante, considera usar :ref:`is_equal_approx()<class_Color_method_is_equal_approx>` en su lugar, que es más fiable.
 
 .. rst-class:: classref-item-separator
 

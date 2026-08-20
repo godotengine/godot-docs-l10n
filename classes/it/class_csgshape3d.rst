@@ -146,9 +146,9 @@ Descrizioni delle proprietà
 - |void| **set_autosmooth**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_autosmooth**\ (\ )
 
-Enables automatic smoothing. This overrides any smoothing on the CSG node and instead uses :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>` to calculate normals based on the angle between faces.
+Abilita la smussatura automatica. Questa opzione sovrascrive qualsiasi smussatura presente sul nodo CSG e utilizza invece :ref:`smoothing_angle<class_CSGShape3D_property_smoothing_angle>` per calcolare le normali in base all'angolo tra le facce.
 
-Children of a :ref:`CSGCombiner3D<class_CSGCombiner3D>` node will be treated as a single mesh.
+I figli di un nodo :ref:`CSGCombiner3D<class_CSGCombiner3D>` saranno trattati come un'unica mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ Children of a :ref:`CSGCombiner3D<class_CSGCombiner3D>` node will be treated as 
 - |void| **set_calculate_tangents**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_calculating_tangents**\ (\ )
 
-Calcola le tangenti per la forma CSG che consente l'uso di mappe normali. Questo è applicato solo alla forma radice, questa impostazione è ignorata su qualsiasi figlio. Impostando questo valore su ``false`` si può velocizzare leggermente la generazione delle forme.
+Calcola le tangenti per la forma CSG che consente l'uso di mappe normali e heightmap. Questo è applicato solo alla forma radice, questa impostazione è ignorata su qualsiasi figlio. Impostando questo valore su ``false`` si può velocizzare leggermente la generazione delle forme.
 
 .. rst-class:: classref-item-separator
 
@@ -254,9 +254,9 @@ L'operazione che è eseguita su questa forma. Viene ignorata per il primo nodo f
 - |void| **set_smoothing_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_smoothing_angle**\ (\ )
 
-When autosmooth is enabled, faces with an angle between them greater than this will be smoothed, while faces with a smaller angle will remain sharp.
+Quando la smussatura automatica è abilitata, le facce con un angolo tra di loro maggiore di questo valore saranno smussate, mentre le facce con un angolo minore rimarranno nitide.
 
-Note: An angle lower than 0.1 will cause all smoothing to be disabled, this can be used to increase performance.
+Nota: un angolo minore di 0.1 disabiliterà completamente la smussatura; il che può servire per migliorare le prestazioni.
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ In base a ``value``, abilita o disabilita lo strato specificato nel :ref:`collis
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

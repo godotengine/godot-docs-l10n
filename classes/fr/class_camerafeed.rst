@@ -14,11 +14,11 @@ Un flux de caméra vous donne accès à une caméra physique qui est connectée 
 Description
 -----------
 
-A camera feed gives you access to a single physical camera attached to your device. When enabled, Godot will start capturing frames from the camera which can then be used. See also :ref:`CameraServer<class_CameraServer>`.
+Un flux de caméra vous donne accès à une seule caméra physique attachée à votre appareil. Lorsqu'activé, Godot commencera à capturer des trames de la caméra qui peuvent alors être utilisées. Voir aussi :ref:`CameraServer<class_CameraServer>`.
 
-\ **Note:** Many cameras will return YCbCr images which are split into two textures and need to be combined in a shader. Godot does this automatically for you if you set the environment to show the camera image in the background.
+\ **Note :** Beaucoup de caméras renverront des images YCbCr qui sont divisées en deux textures et doivent être combinées dans un shader. Godot fait cela automatiquement pour vous si vous configurez l'environnement pour afficher l'image de la caméra en arrière-plan.
 
-\ **Note:** This class is currently only implemented on Linux, Android, macOS, and iOS. On other platforms no **CameraFeed**\ s will be available. To get a **CameraFeed** on iOS, enable :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`.
+\ **Note :** Cette classe est actuellement seulement implémentée sur Linux, Android, macOS et iOS. Sur d'autres plates-formes, aucune **CameraFeed** ne sera disponible. Pour obtenir un **CameraFeed** sur iOS, activez :ref:`EditorExportPlatformIOS.modules/camera<class_EditorExportPlatformIOS_property_modules/camera>`.
 
 .. rst-class:: classref-reftable-group
 

@@ -134,9 +134,9 @@ Definire questo metodo è **obbligatorio**.
 
 :ref:`int<class_int>` **_get_default_input_port**\ (\ type\: :ref:`PortType<enum_VisualShaderNode_PortType>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_default_input_port>`
 
-Sovrascrivi questo metodo per definire la porta di ingresso che dovrebbe essere connessa automaticamente, quando questo nodo viene creato dal trascinamento di una connessione da un nodo esistente allo spazio vuoto sul grafico.
+Sovrascrivi questo metodo per definire la porta di ingresso che dovrebbe essere collegata inizialmente quando questo nodo viene creato trascinando un collegamento da un nodo esistente verso lo spazio vuoto sul grafico.
 
-Definire questo metodo è **facoltativo**. Se non sovrascritto, la connessione verrà creata alla prima porta valida.
+Definire questo metodo è **facoltativo**. Se non sovrascritto, il collegamento verrà creato verso la prima porta valida.
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ Restituisce l'indice selezionato dell'opzione nell'elenco a tendina all'interno 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

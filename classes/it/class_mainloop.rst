@@ -9,7 +9,7 @@ MainLoop
 
 **Ereditato da:** :ref:`SceneTree<class_SceneTree>`
 
-Classe di base astratta per il ciclo principale del gioco.
+Classe base astratta per il ciclo principale del gioco.
 
 .. rst-class:: classref-introduction-group
 
@@ -164,9 +164,9 @@ Implementato su piattaforme desktop se il gestore degli arresti anomali è abili
 
 **NOTIFICATION_OS_IME_UPDATE** = ``2013`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_OS_IME_UPDATE>`
 
-Notification received from the OS when an update of the Input Method Engine occurs (e.g. change of IME cursor position or composition string).
+Notifica ricevuta dal sistema operativo quando avviene un aggiornamento dell'Input Method Engine (ad esempio, modifica della posizione del cursore IME o della stringa di composizione).
 
-Implemented on desktop and web platforms.
+Implementata solo sulle piattaforme desktop e web.
 
 .. _class_MainLoop_constant_NOTIFICATION_APPLICATION_RESUMED:
 
@@ -224,7 +224,7 @@ Notifica ricevuta quando il server di testo viene modificato.
 
 **NOTIFICATION_APPLICATION_PIP_MODE_ENTERED** = ``2019`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_APPLICATION_PIP_MODE_ENTERED>`
 
-Notification received when the application enters picture-in-picture mode.
+Notifica ricevuta quando l'applicazione entra nella modalità picture-in-picture.
 
 .. _class_MainLoop_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED:
 
@@ -232,7 +232,7 @@ Notification received when the application enters picture-in-picture mode.
 
 **NOTIFICATION_APPLICATION_PIP_MODE_EXITED** = ``2020`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_APPLICATION_PIP_MODE_EXITED>`
 
-Notification received when the application exits picture-in-picture mode.
+Notifica ricevuta quando l'applicazione esce dalla modalità picture-in-picture.
 
 .. rst-class:: classref-section-separator
 
@@ -305,7 +305,7 @@ Se implementato, il metodo deve restituire un valore booleano. ``true`` termina 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -1089,7 +1089,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-如果控件的最小尺寸更改为大于其相应轴上的当前尺寸，则控件将向左或顶部增大以进行组合。
+The control will grow to the left or top to make up if its minimum size is changed to be greater than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1097,7 +1097,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-如果控件的最小尺寸更改为大于其相应轴上的当前尺寸，则控件将向右或向下增大以进行补偿。
+The control will grow to the right or bottom to make up if its minimum size is changed to be greater than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1105,7 +1105,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-如果控件的最小大小更改为大于其当前大小，则控件将在两个方向上均等地增长以组成该控件。
+The control will grow in both directions equally to make up if its minimum size is changed to be greater than its current size.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,7 +1825,7 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-控制水平轴的方向，如果控件的水平最小尺寸更改为大于其当前尺寸，则控件应沿水平轴增长，因为控件始终必须至少为最小尺寸。
+Controls the direction on the horizontal axis in which the control should grow if its horizontal minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1842,7 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-控制控件在垂直轴上的方向，如果控件的垂直最小尺寸更改为大于当前尺寸，则控件应沿该方向增大，因为控件始终必须至少为最小尺寸。
+Controls the direction on the vertical axis in which the control should grow if its vertical minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
 
 .. rst-class:: classref-item-separator
 

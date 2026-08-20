@@ -200,7 +200,7 @@ Descrizioni dei metodi
 
 |void| **collapse_all_folding**\ (\ ) :ref:`🔗<class_EditorInspector_method_collapse_all_folding>`
 
-Collapses all foldable sections.
+Comprime tutte le sezioni riducibili.
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ Collapses all foldable sections.
 
 :ref:`EditorInspector<class_EditorInspector>` **create_default_inspector**\ (\ filter_line_edit\: :ref:`LineEdit<class_LineEdit>` = null\ ) |static| :ref:`🔗<class_EditorInspector_method_create_default_inspector>`
 
-Creates an inspector with the same configuration as the one used in the editor's Inspector dock. When passing a :ref:`LineEdit<class_LineEdit>` into ``filter_line_edit``, the inspector will filter its properties based on :ref:`LineEdit.text<class_LineEdit_property_text>` whenever :ref:`LineEdit.text_changed<class_LineEdit_signal_text_changed>` is emitted.
+Crea un ispettore con la stessa configurazione di quello utilizzato nel pannello Ispettore dell'editor. Quando si passa un :ref:`LineEdit<class_LineEdit>` a ``filter_line_edit``, l'ispettore filtrerà le sue proprietà in base a :ref:`LineEdit.text<class_LineEdit_property_text>` ogni volta che viene emesso :ref:`LineEdit.text_changed<class_LineEdit_signal_text_changed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Mostra le proprietà dell'oggetto ``object`` in questo ispettore per la modifica
 
 |void| **expand_all_folding**\ (\ ) :ref:`🔗<class_EditorInspector_method_expand_all_folding>`
 
-Expands all foldable sections.
+Espande tutte le sezioni riducibili.
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Expands all foldable sections.
 
 |void| **expand_revertable**\ (\ ) :ref:`🔗<class_EditorInspector_method_expand_revertable>`
 
-Expands only the foldable sections that contain a revertable (i.e. non-default) property.
+Espande solo le sezioni riducibili che contengono una proprietà reversibile (ovvero non predefinita).
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ Crea un editor di proprietà che può essere utilizzato dall'interfaccia utente 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

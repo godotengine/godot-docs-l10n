@@ -62,7 +62,7 @@ Descripciones de Métodos
 
 :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` **get_binding_modifier**\ (\ ) |const| :ref:`🔗<class_OpenXRBindingModifierEditor_method_get_binding_modifier>`
 
-Returns the :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` currently being edited.
+Devuelve el :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` que se está editando actualmente.
 
 .. rst-class:: classref-item-separator
 

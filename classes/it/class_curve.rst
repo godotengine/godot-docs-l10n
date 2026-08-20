@@ -285,9 +285,9 @@ Il numero di punti che descrivono la curva.
 
 :ref:`int<class_int>` **point_{index}/left_mode** = ``0`` :ref:`🔗<class_Curve_property_point_{index}/left_mode>`
 
-The left :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
+La modalità della tangente sinistra (:ref:`TangentMode<enum_Curve_TangentMode>`) per il punto all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -299,9 +299,9 @@ The left :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
 
 :ref:`float<class_float>` **point_{index}/left_tangent** = ``0.0`` :ref:`🔗<class_Curve_property_point_{index}/left_tangent>`
 
-The left tangent angle (in degrees) for the point at ``index``.
+L'angolo della tangente sinistra (in gradi) per il punto all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -313,9 +313,9 @@ The left tangent angle (in degrees) for the point at ``index``.
 
 :ref:`Vector2<class_Vector2>` **point_{index}/position** = ``Vector2(0, 0)`` :ref:`🔗<class_Curve_property_point_{index}/position>`
 
-The position of the point at ``index``.
+La posizione del punto all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -327,9 +327,9 @@ The position of the point at ``index``.
 
 :ref:`int<class_int>` **point_{index}/right_mode** = ``0`` :ref:`🔗<class_Curve_property_point_{index}/right_mode>`
 
-The right :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
+La modalità della tangente destra (:ref:`TangentMode<enum_Curve_TangentMode>`) per il punto all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. point_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -341,9 +341,9 @@ The right :ref:`TangentMode<enum_Curve_TangentMode>` for the point at ``index``.
 
 :ref:`float<class_float>` **point_{index}/right_tangent** = ``0.0`` :ref:`🔗<class_Curve_property_point_{index}/right_tangent>`
 
-The right tangent angle (in degrees) for the point at ``index``.
+L'angolo della tangente destra (in gradi) per il punto all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. point_count - 1`` range.
+\ **Nota:** ``index`` è un valore compreso nell'intervallo ``0 .. point_count - 1``.
 
 .. rst-class:: classref-section-separator
 
@@ -552,7 +552,7 @@ Imposta l'angolo tangente sinistro per il punto all'indice ``index`` su ``tangen
 
 :ref:`int<class_int>` **set_point_offset**\ (\ index\: :ref:`int<class_int>`, offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Curve_method_set_point_offset>`
 
-Assigns the horizontal position ``offset`` to the point at ``index``.
+Assegna la posizione orizzontale ``offset`` al punto all'indice ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -594,7 +594,7 @@ Assegna la posizione verticale ``y`` al punto all'indice ``index``.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

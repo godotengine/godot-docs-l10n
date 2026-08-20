@@ -607,7 +607,7 @@ flags **ImageUpdateMask**: :ref:`🔗<enum_RichTextLabel_ImageUpdateMask>`
 
 :ref:`ImageUpdateMask<enum_RichTextLabel_ImageUpdateMask>` **UPDATE_WIDTH_UNIT** = ``128``
 
-If this bit is set, :ref:`update_image()<class_RichTextLabel_method_update_image>` changes the units used to calculate image size.
+Если этот бит установлен, метод :ref:`update_image()<class_RichTextLabel_method_update_image>` изменяет единицы измерения, используемые для расчета размера изображения.
 
 .. rst-class:: classref-item-separator
 
@@ -625,7 +625,7 @@ enum **ImageUnit**: :ref:`🔗<enum_RichTextLabel_ImageUnit>`
 
 :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` **IMAGE_UNIT_PIXEL** = ``0``
 
-Images drawn with this unit will be in pixels.
+Изображения, созданные с помощью этого модуля, будут В пикселях.
 
 .. _class_RichTextLabel_constant_IMAGE_UNIT_PERCENT:
 
@@ -633,7 +633,7 @@ Images drawn with this unit will be in pixels.
 
 :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` **IMAGE_UNIT_PERCENT** = ``1``
 
-Images drawn with this unit will be in percentages of the control width.
+Изображения, нарисованные с использованием этой единицы, будут составлять процент от ширины элемента управления.
 
 .. _class_RichTextLabel_constant_IMAGE_UNIT_EM:
 
@@ -641,7 +641,7 @@ Images drawn with this unit will be in percentages of the control width.
 
 :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` **IMAGE_UNIT_EM** = ``2``
 
-Images drawn with this unit will be in percentages of the surrounding font size.
+Изображения, нарисованные с использованием этой единицы, будут составлять процент от размера окружающего шрифта.
 
 .. rst-class:: classref-section-separator
 
@@ -663,9 +663,9 @@ Images drawn with this unit will be in percentages of the surrounding font size.
 - |void| **set_autowrap_mode**\ (\ value\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )
 - :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ )
 
-If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, the text gets wrapped inside the node's bounding rectangle.
+Если установлено значение, отличное от :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, текст переносится внутри ограничивающего прямоугольника узла.
 
-\ **Note:** RichTextLabels with autowrapping and :ref:`fit_content<class_RichTextLabel_property_fit_content>` enabled must have a custom maximum width configured to work correctly, either through the RichTextLabel's own :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` or as a result of a propagated maximum size from a parent Control with :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` enabled.
+\ **Примечание:** Для корректной работы RichTextLabel с включенным автопереносом и :ref:`fit_content<class_RichTextLabel_property_fit_content>` необходимо задать пользовательскую максимальную ширину, либо через собственный :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` RichTextLabel, либо в результате распространения максимального размера от родительского элемента управления с включенным :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -788,9 +788,9 @@ If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_co
 - |void| **set_fit_content**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_enabled**\ (\ )
 
-If ``true``, the label's minimum size will be automatically updated to fit its content, matching the behavior of :ref:`Label<class_Label>`.
+Если ``true``, минимальный размер Label'а будет автоматически обновлен в соответствии с ее содержимым, что соответствует поведению :ref:`Label<class_Label>`.
 
-\ **Note:** RichTextLabels with autowrapping and :ref:`fit_content<class_RichTextLabel_property_fit_content>` enabled must have a custom maximum width configured to work correctly, either through the RichTextLabel's own :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` or as a result of a propagated maximum size from a parent Control with :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` enabled.
+\ **Примечание:** Для корректной работы RichTextLabel с включенным автопереносом и :ref:`fit_content<class_RichTextLabel_property_fit_content>` необходимо настроить пользовательскую максимальную ширину, либо с помощью собственного :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` RichTextLabel, либо в результате распространения максимального размера от родительского элемента управления с включенным :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1209,19 +1209,19 @@ If ``true``, the label's minimum size will be automatically updated to fit its c
 
 |void| **add_image**\ (\ image\: :ref:`Texture2D<class_Texture2D>`, width\: :ref:`float<class_float>` = 0, height\: :ref:`float<class_float>` = 0, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), inline_align\: :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` = 5, region\: :ref:`Rect2<class_Rect2>` = Rect2(0, 0, 0, 0), key\: :ref:`Variant<class_Variant>` = null, pad\: :ref:`bool<class_bool>` = false, tooltip\: :ref:`String<class_String>` = "", width_unit\: :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` = 0, height_unit\: :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` = 0, alt_text\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_RichTextLabel_method_add_image>`
 
-Adds an image's opening and closing tags to the tag stack, optionally providing a ``width`` and ``height`` to resize the image, a ``color`` to tint the image and a ``region`` to only use parts of the image.
+Добавляет открывающие и закрывающие теги изображения в стек тегов, опционально указывая ``width`` и ``height`` для изменения размера изображения, ``color`` для тонирования изображения и ``region`` для использования только частей изображения.
 
-If ``width`` or ``height`` is set to 0, the image size will be adjusted in order to keep the original aspect ratio.
+Если ``width`` или ``height`` установлено на 0, размер изображения будет скорректирован с сохранением исходного соотношения сторон.
 
-If ``width`` and ``height`` are not set, but ``region`` is, the region's rect will be used.
+Если ``width`` и ``height`` не заданы, но задан ``region``, будет использоваться прямоугольник области.
 
-\ ``key`` is an optional identifier, that can be used to modify the image via :ref:`update_image()<class_RichTextLabel_method_update_image>`.
+\ ``key`` — необязательный идентификатор, который можно использовать для изменения изображения с помощью :ref:`update_image()<class_RichTextLabel_method_update_image>`.
 
-If ``pad`` is set, and the image is smaller than the size specified by ``width`` and ``height``, the image padding is added to match the size instead of upscaling.
+Если задан ``pad``, и изображение меньше размера, указанного в ``width`` и ``height``, вместо масштабирования добавляется отступ изображения, соответствующий размеру.
 
-Parameters ``width_unit`` and ``height_unit`` determine the units used to calculate the image width and height, respectively.
+Параметры ``width_unit`` и ``height_unit`` определяют единицы измерения ширины и высоты изображения соответственно.
 
-\ ``alt_text`` is used as the image description for assistive apps.
+\ ``alt_text`` используется в качестве описания изображения для вспомогательных приложений.
 
 .. rst-class:: classref-item-separator
 

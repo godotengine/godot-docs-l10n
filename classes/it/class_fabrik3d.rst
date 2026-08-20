@@ -14,11 +14,11 @@ Position based forward and backward reaching inverse kinematics solver.
 Descrizione
 ----------------------
 
-**FABRIK3D** is position based IK, allowing precise and accurate tracking of targets. It's ideal for simple chains without limitations.
+**FABRIK3D** è un sistema IK basato sulla posizione, che consente di tracciare in modo preciso e accurato gli obiettivi. È ideale per sequenze semplici senza limitazioni.
 
-The resulting twist around the forward vector will always be kept from the previous pose.
+La torsione risultante attorno al vettore in avanti sarà sempre mantenuta dalla posa precedente.
 
-\ **Note:** When the target is close to the root, it tends to produce zig-zag patterns, resulting in unnatural visual movement.
+\ **Nota:** Quando l'obiettivo è vicino alla radice, tende a produrre motivi a zig-zag, risultando in un movimento visivo poco naturale.
 
 .. rst-class:: classref-introduction-group
 
@@ -31,7 +31,7 @@ Tutorial
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

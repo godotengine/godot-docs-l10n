@@ -14,9 +14,9 @@ Una preimpostazione di :ref:`SkeletonProfile<class_SkeletonProfile>` umanoide .
 Descrizione
 ----------------------
 
-A :ref:`SkeletonProfile<class_SkeletonProfile>` as a preset that is optimized for the human form. This exists for standardization, so all parameters are read-only.
+Uno :ref:`SkeletonProfile<class_SkeletonProfile>` come preimpostazione ottimizzato per la forma umana. Esiste per standardizzazione, quindi tutti i parametri sono di sola lettura.
 
-A humanoid skeleton profile contains 56 bones divided into 4 groups: ``"Body"``, ``"Face"``, ``"LeftHand"``, and ``"RightHand"``. It is structured as follows:
+Un profilo di scheletro umanoide contiene 56 ossa divise in 4 gruppi: ``"Body"``, ``"Face"``, ``"LeftHand"`` e ``"RightHand"``. È strutturato come segue:
 
 .. code:: text
 
@@ -106,7 +106,7 @@ Proprietà
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

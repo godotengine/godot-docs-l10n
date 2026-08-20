@@ -219,9 +219,9 @@ Si es ``true``, el elemento actualmente seleccionado puede ser seleccionado de n
 - |void| **set_fit_to_longest_item**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_to_longest_item**\ (\ )
 
-Si es ``true``, el tamaño mínimo se determinará por el texto del elemento más largo, en lugar del elemento seleccionado actualmente.
+If ``true``, minimum size will be determined by the longest item's width, instead of the currently selected one's. It will also take the popup's margins into account, making the button match its total width.
 
-\ **Nota:** Por razones de rendimiento, el tamaño mínimo no se actualiza inmediatamente al añadir, eliminar o modificar elementos.
+\ **Note:** For performance reasons, the minimum size doesn't update immediately when adding, removing or modifying items.
 
 .. rst-class:: classref-item-separator
 

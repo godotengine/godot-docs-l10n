@@ -14,9 +14,9 @@ Adds a band-pass filter to an audio bus.
 Descripción
 ----------------------
 
-A "band-pass" filter allows the frequencies at :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` to pass unchanged, and attenuates frequencies outside the frequency threshold. It is the opposite of :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>` and :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`.
+Un filtro "band-pass" permite que las frecuencias en :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` pasen sin cambios, y atenúa las frecuencias fuera del umbral de frecuencia. Es el opuesto de :ref:`AudioEffectBandLimitFilter<class_AudioEffectBandLimitFilter>` y :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`.
 
-This filter can be used to emulate sounds coming from weak speakers.
+Este filtro se puede usar para emular sonidos provenientes de altavoces débiles.
 
 .. rst-class:: classref-introduction-group
 

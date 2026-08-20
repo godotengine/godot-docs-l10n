@@ -87,7 +87,7 @@ enum **LoopMode**: :ref:`🔗<enum_SpriteFrames_LoopMode>`
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_NONE** = ``0``
 
-The animation plays once and stops when it reaches the end, or the start if played in reverse.
+Анимация воспроизводится один раз и останавливается, когда достигает конца, или начала, если воспроизводится в обратном направлении.
 
 .. _class_SpriteFrames_constant_LOOP_LINEAR:
 
@@ -95,7 +95,7 @@ The animation plays once and stops when it reaches the end, or the start if play
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_LINEAR** = ``1``
 
-The animation restarts from the beginning when it reaches the end, or from the end if played in reverse, repeating continuously.
+Анимация перезапускается сначала, когда она доходит до конца, или от конца, если анимация проигрывается в обратном порядке, непрерывно повторяясь.
 
 .. _class_SpriteFrames_constant_LOOP_PINGPONG:
 
@@ -103,9 +103,9 @@ The animation restarts from the beginning when it reaches the end, or from the e
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **LOOP_PINGPONG** = ``2``
 
-The animation alternates direction each time it reaches the end or start, playing forward and then in reverse repeatedly.
+Анимация меняет направление каждый раз, когда достигает конца или начала, воспроизводясь вперед, а затем обратно повторно.
 
-\ **Note:** Both :ref:`AnimatedSprite2D<class_AnimatedSprite2D>` and :ref:`AnimatedSprite3D<class_AnimatedSprite3D>` play the first/last frame for its duration only once at each end of the animation loop (instead of twice, once per forward/backward animation direction).
+\ **Примечание:** Как :ref:`AnimatedSprite2D<class_AnimatedSprite2D>`, так и :ref:`AnimatedSprite3D<class_AnimatedSprite3D>` воспроизводят первый/последний кадр в течение своей продолжительности только один раз на каждом конце цикла анимации (вместо двух раз, по одному на каждое направление анимации).
 
 .. rst-class:: classref-section-separator
 
@@ -184,7 +184,7 @@ The animation alternates direction each time it reaches the end or start, playin
 
 **Устарело:** Use :ref:`get_animation_loop_mode()<class_SpriteFrames_method_get_animation_loop_mode>` instead.
 
-Returns ``true`` if ``get_animation_loop_mode(anim) == LOOP_LINEAR``. Otherwise, returns ``false``.
+Возвращает ``true``, если ``get_animation_loop_mode(anim) == LOOP_LINEAR``. В противном случае возвращает ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Returns ``true`` if ``get_animation_loop_mode(anim) == LOOP_LINEAR``. Otherwise,
 
 :ref:`LoopMode<enum_SpriteFrames_LoopMode>` **get_animation_loop_mode**\ (\ anim\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_SpriteFrames_method_get_animation_loop_mode>`
 
-Returns the loop mode for the ``anim`` animation.
+Возвращает режим цикла для анимации ``anim``.
 
 .. rst-class:: classref-item-separator
 
@@ -324,9 +324,9 @@ Returns the loop mode for the ``anim`` animation.
 
 **Устарело:** Use :ref:`set_animation_loop_mode()<class_SpriteFrames_method_set_animation_loop_mode>` instead.
 
-If ``loop`` is ``false`` equivalent to ``set_animation_loop_mode(LOOP_NONE)``.
+Если ``loop`` равен ``false``, эквивалентно ``set_animation_loop_mode(LOOP_NONE)``.
 
-If ``loop`` is ``true`` equivalent to ``set_animation_loop_mode(LOOP_LINEAR)``.
+Если ``loop`` равен ``true``, эквивалентно ``set_animation_loop_mode(LOOP_LINEAR)``.
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ If ``loop`` is ``true`` equivalent to ``set_animation_loop_mode(LOOP_LINEAR)``.
 
 |void| **set_animation_loop_mode**\ (\ anim\: :ref:`StringName<class_StringName>`, loop_mode\: :ref:`LoopMode<enum_SpriteFrames_LoopMode>`\ ) :ref:`🔗<class_SpriteFrames_method_set_animation_loop_mode>`
 
-Sets the ``loop_mode`` for the ``anim`` animation.
+Устанавливает ``loop_mode`` для анимации ``anim``.
 
 .. rst-class:: classref-item-separator
 

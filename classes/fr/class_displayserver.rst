@@ -988,7 +988,7 @@ Default dialog button element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Non-editable text label.
+Libellé non modifiable.
 
 .. _class_DisplayServer_constant_ROLE_CONTAINER:
 
@@ -998,7 +998,7 @@ Non-editable text label.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Container element. Elements with this role are used for internal structure and ignored by screen readers.
+Élément conteneur. Éléments avec ce rôle sont utilisés pour créer une structure interne et sont ignorés par les lecteurs d'écran.
 
 .. _class_DisplayServer_constant_ROLE_PANEL:
 
@@ -1038,7 +1038,7 @@ Panel container element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Check box element.
+Élément de case à cocher.
 
 .. _class_DisplayServer_constant_ROLE_RADIO_BUTTON:
 
@@ -1068,7 +1068,7 @@ Check button element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Scroll bar element.
+Élément barre de défilement.
 
 .. _class_DisplayServer_constant_ROLE_SCROLL_VIEW:
 
@@ -1078,7 +1078,7 @@ Scroll bar element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Scroll container element.
+Élément conteneur de défilement.
 
 .. _class_DisplayServer_constant_ROLE_SPLITTER:
 
@@ -1118,7 +1118,7 @@ Spin box element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Progress indicator element.
+Élément d'indicateur de progression.
 
 .. _class_DisplayServer_constant_ROLE_TEXT_FIELD:
 
@@ -1258,7 +1258,7 @@ Tree view item element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-List view element.
+Élément d’affichage de liste.
 
 .. _class_DisplayServer_constant_ROLE_LIST_BOX_OPTION:
 
@@ -1530,7 +1530,7 @@ Element is a visited link.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Element content is not ready (e.g. loading).
+Le contenu de l'élément n'est pas prêt (par ex. en chargement).
 
 .. _class_DisplayServer_constant_FLAG_MODAL:
 
@@ -3150,9 +3150,9 @@ Descriptions des méthodes
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Creates a new, empty accessibility element resource.
+Crée une nouvelle ressource d'élément d'accessibilité vide.
 
-\ **Note:** An accessibility element is created and freed automatically for each :ref:`Node<class_Node>`. In general, this function should not be called manually.
+\ **Note :** Un élément d'accessibilité est créé et libéré automatiquement pour chaque :ref:`Node<class_Node>`. En général, cette fonction ne devrait pas être appelée manuellement.
 
 .. rst-class:: classref-item-separator
 
@@ -3300,11 +3300,11 @@ Définit l'état avec focus de la fenêtre pour les applications d'assistance.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Sets window outer (with decorations) and inner (without decorations) bounds for assistive apps.
+Définit les bornes internes et externes (sans décorations) de la fenêtre pour les applications assisitves.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Note :** Cette méethode est implémentée sur Linux, macOS et Windows.
 
-\ **Note:** Advanced users only! :ref:`Window<class_Window>` objects call this method automatically.
+\ **Note :** Utilisateurs avancés seulement ! Les objets :ref:`Window<class_Window>` appellent cette méthode automatiquement.
 
 .. rst-class:: classref-item-separator
 
@@ -3460,7 +3460,7 @@ Adds an element that this element flow into.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Adds an element that labels this element.
+Ajoute un élément qui nomme cet élément.
 
 .. rst-class:: classref-item-separator
 
@@ -3474,9 +3474,9 @@ Adds an element that labels this element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Adds an element that is part of the same radio group.
+Ajoute un élément qui fait partie du même groupe radio.
 
-\ **Note:** This method should be called on each element of the group, using all other elements as ``related_id``.
+\ **Note :** Cette méthode devrait être appellée sur chaque élément du groupe, utilisant les autres éléments comme ``related_id``.
 
 .. rst-class:: classref-item-separator
 
@@ -3588,7 +3588,7 @@ Définit la description d'accessibilité de l'élément.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Sets an element which contains an error message for this element.
+Définit un élément qui contient un message d'erreur pour cet élément.
 
 .. rst-class:: classref-item-separator
 
@@ -3602,7 +3602,7 @@ Sets an element which contains an error message for this element.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Sets element accessibility extra information added to the element name.
+Définit l'information supplémentaire d'accessibilité de l'élément, qui sera ajoutée au nom de l'élément.
 
 .. rst-class:: classref-item-separator
 
@@ -3700,7 +3700,7 @@ Définit le nombre d'éléments dans la liste.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Sets list/tree item expanded status.
+Définit le statut étendu de liste/arbre/élément.
 
 .. rst-class:: classref-item-separator
 
@@ -3826,7 +3826,7 @@ Définit l'élément suivant sur la ligne.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Sets numeric value jump.
+Définit le saut de valeur numérique.
 
 .. rst-class:: classref-item-separator
 
@@ -3882,7 +3882,7 @@ Définit la valeur numérique.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Sets placeholder text.
+Définit le texte de remplacement.
 
 .. rst-class:: classref-item-separator
 
@@ -3896,7 +3896,7 @@ Sets placeholder text.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Sets popup type for popup buttons.
+Définit le type de popup pour les boutons popup.
 
 .. rst-class:: classref-item-separator
 
@@ -3924,7 +3924,7 @@ Sets previous element on the line.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Sets element accessibility role.
+Définit le rôle d'accessibilité de l'élément.
 
 .. rst-class:: classref-item-separator
 
@@ -3938,7 +3938,7 @@ Sets element accessibility role.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Sets element accessibility role description text.
+Définit le texte de description du rôle d'accessibilité de l'élément.
 
 .. rst-class:: classref-item-separator
 
@@ -4134,7 +4134,7 @@ Définit l'alignement du texte de l'élément.
 
 **Obsolète :** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Sets text underline/overline/strikethrough.
+Sousligne/surligne/barre le texte.
 
 .. rst-class:: classref-item-separator
 

@@ -11,14 +11,14 @@ OpenXRSpatialCapabilityConfigurationBaseHeader
 
 **Ereditato da:** :ref:`OpenXRSpatialCapabilityConfigurationAnchor<class_OpenXRSpatialCapabilityConfigurationAnchor>`, :ref:`OpenXRSpatialCapabilityConfigurationAprilTag<class_OpenXRSpatialCapabilityConfigurationAprilTag>`, :ref:`OpenXRSpatialCapabilityConfigurationAruco<class_OpenXRSpatialCapabilityConfigurationAruco>`, :ref:`OpenXRSpatialCapabilityConfigurationMicroQrCode<class_OpenXRSpatialCapabilityConfigurationMicroQrCode>`, :ref:`OpenXRSpatialCapabilityConfigurationPlaneTracking<class_OpenXRSpatialCapabilityConfigurationPlaneTracking>`, :ref:`OpenXRSpatialCapabilityConfigurationQrCode<class_OpenXRSpatialCapabilityConfigurationQrCode>`
 
-Wrapper base class for OpenXR Spatial Capability Configuration headers.
+Classe base wrapper per le intestazioni di configurazione delle capacità spaziali di OpenXR.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Wrapper base class for OpenXR Spatial Capability Configuration headers. This class needs to be implemented for each capability configuration structure usable within OpenXR's spatial entities system.
+Classe base wrapper per le intestazioni di configurazione delle capacità spaziali di OpenXR. Questa classe deve essere implementata per ogni struttura di configurazione delle capacità utilizzabile all'interno del sistema di entità spaziali di OpenXR.
 
 .. rst-class:: classref-reftable-group
 
@@ -53,7 +53,7 @@ Descrizioni dei metodi
 
 :ref:`int<class_int>` **_get_configuration**\ (\ ) |virtual| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__get_configuration>`
 
-Return a pointer (encoded as an ``int64_t``) to a struct holding the spatial capability configuration data. The memory for this struct should remain accessible as long as this object remains instantiated.
+Restituisce un puntatore (codificato come ``int64_t``) a una struct che contiene i dati di configurazione delle capacità spaziali. La memoria per questa struct deve rimanere accessibile fin quando questo oggetto rimane istanziato.
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ Return a pointer (encoded as an ``int64_t``) to a struct holding the spatial cap
 
 :ref:`bool<class_bool>` **_has_valid_configuration**\ (\ ) |virtual| |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__has_valid_configuration>`
 
-Return ``true`` if this object contains a valid configuration that can be retrieved when calling :ref:`_get_configuration()<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__get_configuration>`.
+Restituisce ``true`` se questo oggetto contiene una configurazione valida che si può ricavare chiamando :ref:`_get_configuration()<class_OpenXRSpatialCapabilityConfigurationBaseHeader_private_method__get_configuration>`.
 
 .. rst-class:: classref-item-separator
 
@@ -77,9 +77,9 @@ Return ``true`` if this object contains a valid configuration that can be retrie
 
 :ref:`int<class_int>` **get_configuration**\ (\ ) :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_get_configuration>`
 
-Gets a pointer to the ``XrSpatialCapabilityConfigurationBaseHeaderEXT`` struct.
+Restituisce un puntatore alla struct ``XrSpatialCapabilityConfigurationBaseHeaderEXT``.
 
-\ **Note:** This method is intended to be used from GDExtensions.
+\ **Nota:** Questo metodo è destinato all'uso da GDExtension.
 
 .. rst-class:: classref-item-separator
 
@@ -91,13 +91,13 @@ Gets a pointer to the ``XrSpatialCapabilityConfigurationBaseHeaderEXT`` struct.
 
 :ref:`bool<class_bool>` **has_valid_configuration**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationBaseHeader_method_has_valid_configuration>`
 
-Returns ``true`` if this object contains a valid configuration that can be used when calling :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`.
+Restituisce ``true`` se questo oggetto contiene una configurazione valida che si può utilizzare quando si chiama :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

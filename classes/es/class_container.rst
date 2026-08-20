@@ -9,7 +9,7 @@ Container
 
 **Heredado por:** :ref:`AspectRatioContainer<class_AspectRatioContainer>`, :ref:`BoxContainer<class_BoxContainer>`, :ref:`CenterContainer<class_CenterContainer>`, :ref:`EditorProperty<class_EditorProperty>`, :ref:`FlowContainer<class_FlowContainer>`, :ref:`FoldableContainer<class_FoldableContainer>`, :ref:`GraphElement<class_GraphElement>`, :ref:`GridContainer<class_GridContainer>`, :ref:`MarginContainer<class_MarginContainer>`, :ref:`PanelContainer<class_PanelContainer>`, :ref:`ScrollContainer<class_ScrollContainer>`, :ref:`SplitContainer<class_SplitContainer>`, :ref:`SubViewportContainer<class_SubViewportContainer>`, :ref:`TabContainer<class_TabContainer>`
 
-Base class for all GUI containers.
+Clase base para todos los contenedores de GUI.
 
 .. rst-class:: classref-introduction-group
 
@@ -133,7 +133,7 @@ Descripciones de Propiedades
 - |void| **set_accessibility_region**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_accessibility_region**\ (\ )
 
-If ``true``, this container is marked as a region for accessibility. Use :ref:`Control.accessibility_name<class_Control_property_accessibility_name>` to give the region a descriptive name. Screen readers can navigate between regions using landmark navigation.
+Si ``true``, este contenedor se marca como una región para accesibilidad. Usa :ref:`Control.accessibility_name<class_Control_property_accessibility_name>` para darle a la región un nombre descriptivo. Los lectores de pantalla pueden navegar entre regiones utilizando la navegación por puntos de referencia.
 
 .. rst-class:: classref-section-separator
 

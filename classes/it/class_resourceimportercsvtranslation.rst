@@ -14,11 +14,11 @@ Importa valori separati da virgole sotto forma di :ref:`Translation<class_Transl
 Descrizione
 ----------------------
 
-Comma-separated values are a plain text table storage format. The format's simplicity makes it easy to edit in any text editor or spreadsheet software. This makes it a common choice for game localization.
+I valori separati da virgole sono un formato per memorizzare tabelle in testo semplice. La semplicità del formato lo rende facile da modificare in qualsiasi editor di testo o di fogli di calcolo. Ciò lo rende una scelta comune per la localizzazione dei videogiochi.
 
-In the CSV file used for translation, the first column contains string identifiers, and the first row serves as the header. The first column's header can be any value. The remaining headers indicate the locale for that column. Columns whose headers begin with an underscore (``_``) will be ignored.
+Nel file CSV utilizzato per la traduzione, la prima colonna contiene identificatori di stringa e la prima riga funge da intestazione. L'intestazione della prima colonna può contenere qualsiasi valore. Le intestazioni rimanenti indicano la lingua per quella colonna. Le colonne le cui intestazioni iniziano con un trattino basso (``_``) saranno ignorate.
 
-\ **Example CSV file:**\ 
+\ **File CSV di esempio:**\ 
 
 .. code:: text
 
@@ -28,7 +28,7 @@ In the CSV file used for translation, the first column contains string identifie
     BYE,Goodbye,Adiós,さようなら
     QUOTE,"""Hello"" said the man.","""Hola"" dijo el hombre.",「こんにちは」男は言いました
 
-Although keys in the first column typically use uppercase string identifiers, it is not uncommon to directly use strings appearing in the game as keys. To avoid string ambiguity, you can use a special ``?context`` column to specify the context to use with :ref:`Object.tr()<class_Object_method_tr>`.
+Sebbene le chiavi nella prima colonna in genere utilizzino identificatori di stringhe in maiuscolo, non è raro utilizzare direttamente le stringhe che appaiono nel gioco come chiavi. Per evitare ambiguità tra le stringhe, è possibile usare una colonna speciale ``?context`` per specificare il contesto da utilizzare con :ref:`Object.tr()<class_Object_method_tr>`.
 
 .. code:: text
 
@@ -36,9 +36,9 @@ Although keys in the first column typically use uppercase string identifiers, it
     Letter,Alphabet,Lettre,字母,字母
     Letter,Message,Courrier,手紙,信件
 
-To set the plural form of a string to use with :ref:`Object.tr_n()<class_Object_method_tr_n>`, add a special ``?plural`` column. After setting the plural form of the source string in this column, you can add additional rows to provide translations for more plural forms. The first column and all special columns in these plural form rows must be empty.
+Per impostare la forma plurale di una stringa da usare con :ref:`Object.tr_n()<class_Object_method_tr_n>`, aggiungei una colonna speciale ``?plural``. Dopo aver impostato la forma plurale della stringa sorgente in questa colonna, è possibile aggiungere ulteriori righe per fornire traduzioni per altre forme plurali. La prima colonna e tutte le colonne speciali in queste righe contenenti le forme plurali devono essere vuote.
 
-Godot includes built-in plural rules for some languages. You can also customize them using a special ``?pluralrule`` row. See `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ for examples and more info.
+Godot include regole predefinite per il plurale per alcune lingue. È anche possibile personalizzarle tramite una riga speciale ``?pluralrule``. Consulta `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ per esempi e ulteriori informazioni.
 
 .. code:: text
 
@@ -114,7 +114,7 @@ Il delimitatore da usare nel file CSV. Il valore predefinito corrisponde alla co
 
 :ref:`bool<class_bool>` **unescape_keys** = ``false`` :ref:`🔗<class_ResourceImporterCSVTranslation_property_unescape_keys>`
 
-If ``true``, message keys in the CSV file are unescaped using :ref:`String.c_unescape()<class_String_method_c_unescape>` during the import process.
+Se ``true``, le chiavi dei messaggi nel file CSV vengono decodificate tramite :ref:`String.c_unescape()<class_String_method_c_unescape>` durante il processo di importazione.
 
 .. rst-class:: classref-item-separator
 
@@ -126,13 +126,13 @@ If ``true``, message keys in the CSV file are unescaped using :ref:`String.c_une
 
 :ref:`bool<class_bool>` **unescape_translations** = ``true`` :ref:`🔗<class_ResourceImporterCSVTranslation_property_unescape_translations>`
 
-If ``true``, message translations in the CSV file are unescaped using :ref:`String.c_unescape()<class_String_method_c_unescape>` during the import process.
+Se ``true``, le traduzioni dei messaggi nel file CSV vengono decodificate tramite :ref:`String.c_unescape()<class_String_method_c_unescape>` durante il processo di importazione.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

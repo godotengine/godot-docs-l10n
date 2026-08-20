@@ -14,13 +14,13 @@ Implementazione del buffer della scena di rendering per i renderer basati su Ren
 Descrizione
 ----------------------
 
-This object manages all 3D rendering buffers for the rendering device based renderers. An instance of this object is created for every viewport that has 3D rendering enabled. See also :ref:`RenderSceneBuffers<class_RenderSceneBuffers>`.
+Questo oggetto gestisce tutti i buffer di rendering 3D per i renderer basati sul dispositivo di rendering. Un'istanza di questo oggetto viene creata per ogni viewport che ha il rendering 3D abilitato. Vedi anche :ref:`RenderSceneBuffers<class_RenderSceneBuffers>`.
 
-All buffers are organized in **contexts**. The default context is called **render_buffers** and can contain amongst others the color buffer, depth buffer, velocity buffers, VRS density map and MSAA variants of these buffers.
+Tutti i buffer sono organizzati in **contesti**. Il contesto predefinito è detto **render_buffers** e può contenere, tra altri, i buffer di colore, di profondità e di velocità, la mappa della densità VRS e le variazioni per l'MSAA di questi buffer.
 
-Buffers are only guaranteed to exist during rendering of the viewport.
+I buffer sono garantiti solo durante il rendering della viewport.
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **Nota:** Questo è un oggetto interno nel server di rendering. Non istanziare questa classe da uno script.
 
 .. rst-class:: classref-reftable-group
 
@@ -151,7 +151,7 @@ Crea una nuova vista di texture per una texture esistente e la memorizza nella c
 
 Restituisce il livello specificato dalla texture di colore su cui stiamo renderizzando il contenuto 3D.
 
-Se ``msaa`` è ``true`` e il MSAA è abilitato, restituisce la variazione per il MSAA del buffer.
+Se ``msaa`` è ``true`` e l'MSAA è abilitato, restituisce la variazione dell'MSAA del buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ Se ``msaa`` è ``true`` e il MSAA è abilitato, restituisce la variazione per il
 
 Restituisce la texture di colore su cui stiamo renderizzando il contenuto 3D. Se si utilizza multiview, esso sarà un array di texture con tutte le viste.
 
-Se ``msaa`` è ``true`` e il MSAA è abilitato, restituisce la variazione per il MSAA del buffer.
+Se ``msaa`` è ``true`` e l'MSAA è abilitato, restituisce la variazione dell'MSAA del buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ Se ``msaa`` è ``true`` e il MSAA è abilitato, restituisce la variazione per il
 
 Restituisce il livello specificato dalla texture di profondità su cui stiamo renderizzando il contenuto 3D.
 
-Se ``msaa`` è ``true`` e il MSAA è abilitato, restituisce la variazione per il MSAA del buffer.
+Se ``msaa`` è ``true`` e l'MSAA è abilitato, restituisce la variazione dell'MSAA del buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Se ``msaa`` è ``true`` e il MSAA è abilitato, restituisce la variazione per il
 
 Restituisce la texture di profondità su cui stiamo renderizzando il contenuto 3D. Se si utilizza multiview, esso sarà un array di texture con tutte le viste.
 
-Se ``msaa`` è ``true`` e il MSAA è abilitato, restituisce la variazione per il MSAA del buffer.
+Se ``msaa`` è ``true`` e l'MSAA è abilitato, restituisce la variazione dell'MSAA del buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ Restituisce la dimensione interna del buffer di rendering (dimensione prima del 
 
 :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` **get_msaa_3d**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_msaa_3d>`
 
-Restituisce la modalità MSAA 3D applicata per questa viewport.
+Restituisce la modalità dell'MSAA 3D applicata per questa viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ Restituisce la modalità di ridimensionamento utilizzata per l'upscaling.
 
 :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` **get_screen_space_aa**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_screen_space_aa>`
 
-Restituisce il modo dell'antialiasing nello spazio dello schermo applicato.
+Restituisce il metodo applicato di antialiasing nello spazio dello schermo.
 
 .. rst-class:: classref-item-separator
 
@@ -373,7 +373,7 @@ Restituisce ``true`` se il debanding è abilitato.
 
 :ref:`bool<class_bool>` **get_use_taa**\ (\ ) |const| :ref:`🔗<class_RenderSceneBuffersRD_method_get_use_taa>`
 
-Restituisce ``true`` se TAA è abilitato.
+Restituisce ``true`` se il TAA è abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -399,7 +399,7 @@ Restituisce il livello specificato dalla texture di velocità su cui stiamo rend
 
 Restituisce la texture di velocità su cui stiamo renderizzando il contenuto 3D. Se si utilizza multiview, esso sarà un array di texture con tutte le viste.
 
-Se ``msaa`` è **true** e il MSAA è abilitato, restituisce la variazione per il MSAA del buffer.
+Se ``msaa`` è **true** e l'MSAA è abilitato, restituisce la variazione dell'MSAA del buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -429,7 +429,7 @@ Restituisce ``true`` se esiste una texture con questo nome nella cache.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

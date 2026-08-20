@@ -10486,19 +10486,19 @@ During each physics tick, Godot will multiply the linear velocity of RigidBodies
 
 2D 預設重力方向。
 
-\ **注意：**\ 這個屬性只在專案啟動時讀取。要在運作時改變預設重力向量，請使用以下程式碼範例：
+\ **注意：**\ 此屬性只在專案啟動時讀取。要在執行時改變預設重力向量，請使用以下程式碼範例：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 將預設整理方向設定為 `Vector2(0, 1)`。
+    # 將預設重力方向設爲 `Vector2(0, 1)`。
     PhysicsServer2D.area_set_param(get_viewport().find_world_2d().space, PhysicsServer2D.AREA_PARAM_GRAVITY_VECTOR, Vector2.DOWN)
 
  .. code-tab:: csharp
 
-    // 將預設整理方向設定為 `Vector2(0, 1)`。
+    // 將預設重力方向設爲 `Vector2(0, 1)`。
     PhysicsServer2D.AreaSetParam(GetViewport().FindWorld2D().Space, PhysicsServer2D.AreaParameter.GravityVector, Vector2.Down)
 
 
@@ -10732,20 +10732,20 @@ During each physics tick, Godot will multiply the angular velocity of RigidBodie
 
 3D 預設重力方向。
 
-\ **注意：**\ 這個屬性只在專案啟動時讀取。要在運作時改變預設重力向量，請使用以下程式碼範例：
+\ **注意：**\ 此屬性只在專案啟動時讀取。要在執行時改變預設重力向量，請使用以下程式碼範例：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 將預設整理方向設定為 `Vector3(0, -1, 0)`。
-    PhysicsServer3D.area_set_param(get_viewport().find_world().get_space(), PhysicsServer3D.AREA_PARAM_GRAVITY_VECTOR, Vector3.DOWN)
+    # 將預設重力方向設爲 `Vector3(0, -1, 0)`。
+    PhysicsServer3D.area_set_param(get_viewport().find_world_3d().space, PhysicsServer3D.AREA_PARAM_GRAVITY_VECTOR, Vector3.DOWN)
 
  .. code-tab:: csharp
 
-    // 將預設整理方向設定為 `Vector3(0, -1, 0)`。
-    PhysicsServer3D.AreaSetParam(GetViewport().FindWorld().Space, PhysicsServer3D.AreaParameter.GravityVector, Vector3.Down)
+    // 將預設重力方向設爲 `Vector3(0, -1, 0)`。
+    PhysicsServer3D.AreaSetParam(GetViewport().FindWorld3D().Space, PhysicsServer3D.AreaParameter.GravityVector, Vector3.Down)
 
 
 

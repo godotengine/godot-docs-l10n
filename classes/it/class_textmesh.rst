@@ -93,7 +93,7 @@ Descrizioni delle proprietà
 - |void| **set_autowrap_mode**\ (\ value\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )
 - :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ )
 
-Se impostato su un valore diverso da :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, il testo è avvolto all'interno del rettangolo di delimitazione del nodo. Se ridimensioni il nodo, cambierà automaticamente la sua altezza per mostrare tutto il testo.
+Se impostato su un valore diverso da :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, il testo è racchiuso all'interno del rettangolo di delimitazione del nodo. Se il nodo si ridimensiona, la sua altezza si adatterà automaticamente per mostrare tutto il testo.
 
 .. rst-class:: classref-item-separator
 
@@ -110,9 +110,9 @@ Se impostato su un valore diverso da :ref:`TextServer.AUTOWRAP_OFF<class_TextSer
 - |void| **set_curve_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_curve_step**\ (\ )
 
-Step (in pixels) used to approximate Bézier curves. Lower values result in smoother curves, but is slower to generate and render. Consider adjusting this according to the font size and the typical viewing distance.
+Passo (in pixel) utilizzato per approssimare le curve di Bézier. Valori più bassi producono curve più uniformi, ma è più lento da generare e renderizzare. Si consiglia di regolare questo valore in base alla dimensione del font e alla tipica distanza di visione.
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts.
+\ **Nota:** Cambiare questa proprietà rigenererà la mesh, il che è un'operazione lenta soprattutto con dimensioni grandi di font e testi lunghi.
 
 .. rst-class:: classref-item-separator
 
@@ -163,9 +163,9 @@ Configurazione del font utilizzata per visualizzare il testo.
 - |void| **set_font_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_size**\ (\ )
 
-Font size of the **TextMesh**'s text. This property works in tandem with :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Higher values will result in a more detailed font, regardless of :ref:`curve_step<class_TextMesh_property_curve_step>` and :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Consider keeping this value below 63 (inclusive) for good performance, and adjust :ref:`pixel_size<class_TextMesh_property_pixel_size>` as needed to enlarge text.
+Dimensione del font nel testo del **TextMesh**. Questa proprietà funziona in combinazione con :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Valori più alti produrranno un font più dettagliato, a prescindere da :ref:`curve_step<class_TextMesh_property_curve_step>` e :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Si consiglia di mantenere questo valore al di sotto di 63 (incluso) per ottenere buone prestazioni e di regolare :ref:`pixel_size<class_TextMesh_property_pixel_size>` secondo necessità per ingrandire il testo.
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts. To change the text's size in real-time efficiently, change the node's :ref:`Node3D.scale<class_Node3D_property_scale>` instead.
+\ **Nota:** Cambiare questa proprietà rigenererà la mesh, il che è un'operazione lenta soprattutto con dimensioni grandi di font e testi lunghi. Per modificare la dimensione del testo in tempo reale efficientemente, cambia invece la :ref:`Node3D.scale<class_Node3D_property_scale>` del nodo.
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Regole di allineamento del riempimento per le righe.
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Codice lingua utilizzato per gli algoritmi di interruzione di riga e di formazione del testo. Se lasciato vuoto, è utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ Spaziatura verticale aggiuntiva tra le righe (in pixel), la spaziatura è aggiun
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-The text drawing offset (in pixels).
+L'offset di disegno del testo (in pixel).
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation. To change the text's position in real-time efficiently, change the node's :ref:`Node3D.position<class_Node3D_property_position>` instead.
+\ **Nota:** Cambiare questa proprietà rigenererà la mesh, il che è un'operazione lenta. Per modificare la dimensione del testo in tempo reale efficientemente, cambia invece la :ref:`Node3D.position<class_Node3D_property_position>` del nodo.
 
 .. rst-class:: classref-item-separator
 
@@ -269,9 +269,9 @@ The text drawing offset (in pixels).
 - |void| **set_pixel_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pixel_size**\ (\ )
 
-The size of one pixel's width on the text to scale it in 3D. This property works in tandem with :ref:`font_size<class_TextMesh_property_font_size>`.
+La dimensione della larghezza di un pixel nel testo per scalarlo in 3D. Questa proprietà funziona in combinazione con :ref:`font_size<class_TextMesh_property_font_size>`.
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts. To change the text's size in real-time efficiently, change the node's :ref:`Node3D.scale<class_Node3D_property_scale>` instead.
+\ **Nota:** Cambiare questa proprietà rigenererà la mesh, il che è un'operazione lenta. Per modificare la dimensione del testo in tempo reale efficientemente, cambia invece la :ref:`Node3D.scale<class_Node3D_property_scale>` del nodo.
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ La larghezza del testo (in pixel), usata per l'allineamento di riempimento.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

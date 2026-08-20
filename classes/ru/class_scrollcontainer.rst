@@ -199,7 +199,7 @@ enum **ScrollMode**: :ref:`🔗<enum_ScrollContainer_ScrollMode>`
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_MAXIMIZE_FIRST** = ``5``
 
-Behaves like :ref:`SCROLL_MODE_AUTO<class_ScrollContainer_constant_SCROLL_MODE_AUTO>`, but makes the **ScrollContainer** report a minimum size based on its content (limited by :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` when set on the corresponding axis). This allows it to grow first and only start scrolling once constrained.
+Ведёт себя как :ref:`SCROLL_MODE_AUTO<class_ScrollContainer_constant_SCROLL_MODE_AUTO>`, но заставляет **ScrollContainer** сообщать минимальный размер на основе его содержимого (ограниченный :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>`, если он установлен на соответствующей оси). Это позволяет ему сначала увеличиваться и начинать прокрутку только после того, как он будет ограничен.
 
 .. rst-class:: classref-item-separator
 
@@ -374,9 +374,9 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ScrollContainer_ScrollHintMode>`
 - |void| **set_scroll_horizontal_by_default**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_horizontal_by_default**\ (\ )
 
-If ``true``, the mouse wheel scrolls the view horizontally, and holding :kbd:`Shift` scrolls vertically.
+Если ``true``, колесо мыши прокручивает вид по горизонтали, а удержание :kbd:`Shift` прокручивает по вертикали.
 
-If ``false`` (default), the mouse wheel scrolls the view vertically, and holding :kbd:`Shift` scrolls horizontally.
+Если ``false`` (по умолчанию), колесо мыши прокручивает вид по вертикали, а удержание :kbd:`Shift` прокручивает по горизонтали.
 
 .. rst-class:: classref-item-separator
 

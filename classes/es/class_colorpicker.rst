@@ -714,7 +714,7 @@ El icono del botón "Añadir Preajuste".
 
 :ref:`Texture2D<class_Texture2D>` **bar_arrow** :ref:`🔗<class_ColorPicker_theme_icon_bar_arrow>`
 
-La textura para el agarrador de flecha.
+La textura para el agarre de flecha.
 
 .. rst-class:: classref-item-separator
 
@@ -726,7 +726,7 @@ La textura para el agarrador de flecha.
 
 :ref:`Texture2D<class_Texture2D>` **color_copy** :ref:`🔗<class_ColorPicker_theme_icon_color_copy>`
 
-The icon for the button that copies the color in text format to the clipboard.
+El icono del botón que copia el color en formato de texto al portapapeles.
 
 .. rst-class:: classref-item-separator
 

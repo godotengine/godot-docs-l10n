@@ -10,7 +10,7 @@ BoneAttachment3D
 
 **Hereda:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Un nodo que copia u omite dinámicamente la transformación 3D de un hueso en su :ref:`Skeleton3D<class_Skeleton3D>` padre.
+Un nodo que copia u omite dinámicamente la transformación 3D de un hueso en su :ref:`Skeleton3D<class_Skeleton3D>` antecesor.
 
 .. rst-class:: classref-introduction-group
 
@@ -145,7 +145,7 @@ Indica si el nodo **BoneAttachment3D** va a sobrescribir la pose del hueso al qu
 - |void| **set_use_external_skeleton**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_external_skeleton**\ (\ )
 
-Indica si el nodo **BoneAttachment3D** usará un nodo :ref:`Skeleton3D<class_Skeleton3D>` externo en lugar de intentar usar su nodo padre como :ref:`Skeleton3D<class_Skeleton3D>`. Cuando se establece en ``true``, el nodo **BoneAttachment3D** usará el nodo :ref:`Skeleton3D<class_Skeleton3D>` externo establecido en :ref:`external_skeleton<class_BoneAttachment3D_property_external_skeleton>`.
+Indica si el nodo **BoneAttachment3D** usará un nodo :ref:`Skeleton3D<class_Skeleton3D>` externo en lugar de intentar usar su nodo antecesor como :ref:`Skeleton3D<class_Skeleton3D>`. Cuando se establece en ``true``, el nodo **BoneAttachment3D** usará el nodo :ref:`Skeleton3D<class_Skeleton3D>` externo establecido en :ref:`external_skeleton<class_BoneAttachment3D_property_external_skeleton>`.
 
 .. rst-class:: classref-section-separator
 
@@ -162,7 +162,7 @@ Descripciones de Métodos
 
 :ref:`Skeleton3D<class_Skeleton3D>` **get_skeleton**\ (\ ) :ref:`🔗<class_BoneAttachment3D_method_get_skeleton>`
 
-Devuelve el nodo :ref:`Skeleton3D<class_Skeleton3D>` padre o externo si existe, de lo contrario devuelve ``null``.
+Devuelve el nodo :ref:`Skeleton3D<class_Skeleton3D>` antecesor o externo si existe, de lo contrario devuelve ``null``.
 
 .. rst-class:: classref-item-separator
 

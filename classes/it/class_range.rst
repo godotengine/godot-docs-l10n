@@ -9,14 +9,14 @@ Range
 
 **Ereditato da:** :ref:`EditorSpinSlider<class_EditorSpinSlider>`, :ref:`ProgressBar<class_ProgressBar>`, :ref:`ScrollBar<class_ScrollBar>`, :ref:`Slider<class_Slider>`, :ref:`SpinBox<class_SpinBox>`, :ref:`TextureProgressBar<class_TextureProgressBar>`
 
-Classe di base astratta per i controlli che rappresentano un numero all'interno di un intervallo.
+Classe base astratta per i controlli che rappresentano un numero entro un intervallo.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Range è una classe di base astratta per i controlli che rappresentano un numero all'interno di un intervallo, utilizzando un passo (:ref:`step<class_Range_property_step>`) e dimensioni di pagina (:ref:`page<class_Range_property_page>`) configurati. Vedi ad esempio :ref:`ScrollBar<class_ScrollBar>` e :ref:`Slider<class_Slider>` per esempi di nodi di livello superiore che usano Range.
+Range è una classe base astratta per i controlli che rappresentano un numero entro un intervallo, utilizzando un passo (:ref:`step<class_Range_property_step>`) e dimensioni di pagina (:ref:`page<class_Range_property_page>`) configurati. Vedi ad esempio :ref:`ScrollBar<class_ScrollBar>` e :ref:`Slider<class_Slider>` per esempi di nodi di livello superiore che usano Range.
 
 .. rst-class:: classref-reftable-group
 
@@ -331,7 +331,7 @@ Impedisce al **Range** di condividere le sue variabili membro con qualsiasi altr
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

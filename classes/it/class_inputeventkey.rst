@@ -114,17 +114,17 @@ Se ``true``, il tasto era già stato premuto prima di questo evento. Un evento e
 - |void| **set_key_label**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_key_label**\ (\ )
 
-Represents the localized label printed on the key in the current keyboard layout, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants or any valid Unicode character. Key labels are meant for key prompts.
+Rappresenta l'etichetta localizzata stampata sul tasto nel layout di tastiera attuale, che corrisponde a una delle costanti di :ref:`Key<enum_@GlobalScope_Key>` o a qualsiasi carattere Unicode valido. Le etichette dei tasti sono pensate per i suggerimenti.
 
-For keyboard layouts with a single label on the key, it is equivalent to :ref:`keycode<class_InputEventKey_property_keycode>`.
+Per i layout di tastiera con una singola etichetta sul tasto, è equivalente a :ref:`keycode<class_InputEventKey_property_keycode>`.
 
-To get a human-readable representation of the **InputEventKey**, use ``OS.get_keycode_string(event.key_label)`` where ``event`` is the **InputEventKey**.
+Per ottenere una rappresentazione leggibile in chiaro dell'**InputEventKey**, utilizza ``OS.get_keycode_string(event.key_label)`` dove ``event`` è l'**InputEventKey**.
 
 .. code:: text
 
     +-----+ +-----+
     | Q   | | Q   | - "Q" - keycode
-    |   Й | |  ض | - "Й" and "ض" - key_label
+    |   Й | |  ض | - "Й" e "ض" - key_label
     +-----+ +-----+
 
 .. rst-class:: classref-item-separator
@@ -351,7 +351,7 @@ Per ottenere una rappresentazione leggibile in chiaro di **InputEventKey** con m
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

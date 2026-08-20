@@ -162,9 +162,9 @@ Descrizioni delle proprietà
 - |void| **set_autowrap_mode**\ (\ value\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )
 - :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ )
 
-If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, the text gets wrapped inside the node's bounding rectangle. If you resize the node, it will change its height automatically to show all the text.
+Se impostato su un valore diverso da :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, il testo è racchiuso all'interno del rettangolo di delimitazione del nodo. Se il nodo si ridimensiona, la sua altezza si adatterà automaticamente per mostrare tutto il testo.
 
-\ **Note:** Labels with autowrapping enabled must have a custom maximum width configured to work correctly, either through the Label's own :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` or as a result of a propagated maximum size from a parent Control with :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` enabled.
+\ **Nota:** Le etichette con il ritorno a capo automatico abilitato devono avere una larghezza massima personalizzata configurata per funzionare correttamente, tramite il :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` dell'etichetta stessa o come risultato di una dimensione massima propagata da un controllo padre con :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ Una risorsa :ref:`LabelSettings<class_LabelSettings>` che può essere condivisa 
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Codice lingua utilizzato per gli algoritmi di interruzione di riga e di formazione del testo. Se lasciato vuoto, è utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -769,7 +769,7 @@ Lo :ref:`StyleBox<class_StyleBox>` di sfondo per il **Label**.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

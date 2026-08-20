@@ -224,7 +224,7 @@ La durata dell'interpolazione basata sul tempo. L'interpolazione viene attivata 
 - |void| **set_ease_type**\ (\ value\: :ref:`EaseType<enum_Tween_EaseType>`\ )
 - :ref:`EaseType<enum_Tween_EaseType>` **get_ease_type**\ (\ )
 
-The ease type of the time-based interpolation. See also :ref:`EaseType<enum_Tween_EaseType>`.
+Il tipo di andamento dell'interpolazione basata sul tempo. Vedi anche :ref:`EaseType<enum_Tween_EaseType>`.
 
 .. rst-class:: classref-item-separator
 
@@ -381,7 +381,7 @@ Se ``1.0``, non viene effettuato alcuno smorzamento. Se ``0.0``, lo smorzamento 
 - |void| **set_primary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_limit_angle**\ (\ )
 
-The limit angle of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``true``, in radians.
+L'angolo limite della rotazione primaria quando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` è ``true``, in radianti.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ La soglia per iniziare lo smorzamento per :ref:`primary_negative_limit_angle<cla
 - |void| **set_primary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_negative_limit_angle**\ (\ )
 
-The limit angle of negative side of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+L'angolo limite del lato negativo della rotazione primaria quando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` è ``false``, in radianti.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ La soglia per iniziare lo smorzamento per :ref:`primary_positive_limit_angle<cla
 - |void| **set_primary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_positive_limit_angle**\ (\ )
 
-The limit angle of positive side of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+L'angolo limite del lato positivo della rotazione primaria quando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` è ``false``, in radianti.
 
 .. rst-class:: classref-item-separator
 
@@ -483,9 +483,9 @@ L'asse della prima rotazione. Questo :ref:`SkeletonModifier3D<class_SkeletonModi
 - |void| **set_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_relative**\ (\ )
 
-The relative option. If ``true``, the rotation is applied relative to the pose. If ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **LookAtModifier3D**'s result.
+L'opzione relativa. Se ``true``, la rotazione è applicata rispetto alla posa. Se ``false``, la rotazione è applicata rispetto alla posa di riposo. Significa sostituire la posa attuale con il risultato di **LookAtModifier3D**.
 
-\ **Note:** This option affects the base angle for :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`. Since the **LookAtModifier3D** relies strongly on Euler rotation, the axis that determines the limitation and the actual rotation are strongly tied together.
+\ **Nota:** Questa opzione influenza l'angolo base per :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`. Poiché **LookAtModifier3D** si basa fortemente sulla rotazione di Eulero, l'asse che determina la limitazione e la rotazione effettiva sono strettamente legati.
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ La soglia per iniziare lo smorzamento per :ref:`secondary_limit_angle<class_Look
 - |void| **set_secondary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_limit_angle**\ (\ )
 
-The limit angle of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``true``, in radians.
+L'angolo limite della rotazione secondaria quando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` è ``true``, in radianti.
 
 .. rst-class:: classref-item-separator
 
@@ -553,7 +553,7 @@ La soglia per iniziare lo smorzamento per :ref:`secondary_negative_limit_angle<c
 - |void| **set_secondary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_negative_limit_angle**\ (\ )
 
-The limit angle of negative side of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+L'angolo limite del lato negativo della rotazione secondaria quando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` è ``false``, in radianti.
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ La soglia per iniziare lo smorzamento per :ref:`secondary_positive_limit_angle<c
 - |void| **set_secondary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_positive_limit_angle**\ (\ )
 
-The limit angle of positive side of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+L'angolo limite del lato positivo della rotazione secondaria quando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` è ``false``, in radianti.
 
 .. rst-class:: classref-item-separator
 
@@ -604,9 +604,9 @@ The limit angle of positive side of the secondary rotation when :ref:`symmetry_l
 - |void| **set_symmetry_limitation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_limitation_symmetry**\ (\ )
 
-If ``true``, the limitations are spread from the bone symmetrically.
+Se ``true``, le limitazioni sono distribuite simmetricamente dall'osso.
 
-If ``false``, the limitation can be specified separately for each side of the bone rest.
+Se ``false``, la limitazione può essere specificata separatamente per ciascun lato del riposo dell'osso.
 
 .. rst-class:: classref-item-separator
 
@@ -657,11 +657,11 @@ Il tipo di transizione dell'interpolazione basata sul tempo. Vedi anche :ref:`Tr
 - |void| **set_use_angle_limitation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_angle_limitation**\ (\ )
 
-If ``true``, limits the amount of rotation. For example, this helps to prevent a character's neck from rotating 360 degrees.
+Se ``true``, limita i gradi di rotazione. Ad esempio, ciò aiuta a impedire che il collo di un personaggio ruoti di 360 gradi.
 
-\ **Note:** As with :ref:`AnimationTree<class_AnimationTree>` blending, interpolation is provided that favors :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>` or :ref:`Skeleton3D.get_bone_pose()<class_Skeleton3D_method_get_bone_pose>` depends on the :ref:`relative<class_LookAtModifier3D_property_relative>` option. This means that interpolation does not select the shortest path in some cases.
+\ **Nota:** Come con la fusione in :ref:`AnimationTree<class_AnimationTree>`, viene fornita un'interpolazione che favorisce :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`. Significa che l'interpolazione non selezionerà il percorso più breve in alcuni casi.
 
-\ **Note:** Some values for :ref:`transition_type<class_LookAtModifier3D_property_transition_type>` (such as :ref:`Tween.TRANS_BACK<class_Tween_constant_TRANS_BACK>`, :ref:`Tween.TRANS_ELASTIC<class_Tween_constant_TRANS_ELASTIC>`, and :ref:`Tween.TRANS_SPRING<class_Tween_constant_TRANS_SPRING>`) may exceed the limitations. If interpolation occurs while overshooting the limitations, the result might not respect the bone rest.
+\ **Nota:** Alcuni valori di :ref:`transition_type<class_LookAtModifier3D_property_transition_type>` potrebbero oltrepassare i limiti (ad esempio :ref:`Tween.TRANS_BACK<class_Tween_constant_TRANS_BACK>`, :ref:`Tween.TRANS_ELASTIC<class_Tween_constant_TRANS_ELASTIC>`, and :ref:`Tween.TRANS_SPRING<class_Tween_constant_TRANS_SPRING>`). Se l'interpolazione avviene oltre i limiti, il risultato potrebbe non rispettare il riposo dell'osso.
 
 .. rst-class:: classref-item-separator
 
@@ -729,7 +729,7 @@ Restituisce se l'obiettivo rientra nei limiti angolari. È utile per annullare l
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

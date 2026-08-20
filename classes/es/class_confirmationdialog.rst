@@ -9,7 +9,7 @@ ConfirmationDialog
 
 **Heredado por:** :ref:`EditorCommandPalette<class_EditorCommandPalette>`, :ref:`FileDialog<class_FileDialog>`, :ref:`ScriptCreateDialog<class_ScriptCreateDialog>`
 
-A dialog used for confirmation of actions.
+Un diálogo utilizado para confirmar acciones.
 
 .. rst-class:: classref-introduction-group
 
@@ -85,7 +85,7 @@ Descripciones de Propiedades
 - |void| **set_cancel_button_text**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_cancel_button_text**\ (\ )
 
-The text displayed by the cancel button (see :ref:`get_cancel_button()<class_ConfirmationDialog_method_get_cancel_button>`).
+El texto que muestra el botón de cancelar (véase :ref:`get_cancel_button()<class_ConfirmationDialog_method_get_cancel_button>`).
 
 .. rst-class:: classref-section-separator
 

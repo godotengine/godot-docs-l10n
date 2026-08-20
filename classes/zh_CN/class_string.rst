@@ -1945,7 +1945,7 @@ String
 
 :ref:`String<class_String>` **substr**\ (\ from\: :ref:`int<class_int>`, len\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_String_method_substr>`
 
-返回该字符串中的某一部分，位置从 ``from`` 开始，长度为 ``len``\ 。如果 ``len`` 为 ``-1``\ （默认值），将返回开给定位置开始的剩余字符。
+返回该字符串中的某一部分，位置从 ``from`` 开始，长度为 ``len``\ 。如果 ``len`` 为 ``-1``\ （默认值），将返回给定位置开始的剩余字符。
 
 .. rst-class:: classref-item-separator
 

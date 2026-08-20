@@ -1326,13 +1326,13 @@ Z: Угловая скорость вокруг оси Z (крен).
 
 :ref:`bool<class_bool>` **is_key_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_key_pressed>`
 
-Returns ``true`` if you are pressing the Latin key in the current keyboard layout. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant.
+Возвращает ``true``, если вы нажимаете латинскую клавишу в текущей раскладке клавиатуры. Вы можете передать константу :ref:`Key<enum_@GlobalScope_Key>`.
 
-\ :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` is only recommended over :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` in non-game applications. This ensures that shortcut keys behave as expected depending on the user's keyboard layout, as keyboard shortcuts are generally dependent on the keyboard layout in non-game applications. If in doubt, use :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
+\ :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` рекомендуется использовать вместо :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` только в приложениях, не связанных с играми. Это гарантирует, что сочетания клавиш будут работать должным образом в зависимости от раскладки клавиатуры пользователя, поскольку сочетания клавиш обычно зависят от раскладки клавиатуры в приложениях, не связанных с играми. В случае сомнений используйте :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **Примечание:** Из-за эффекта «фантомных нажатий» клавиш :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` может возвращать ``false``, даже если нажата одна из клавиш действия. Дополнительную информацию см. в `примерах ввода <../tutorials/inputs/input_examples.html#keyboard-events>`__ в документации.
 
-\ **Note:** If you want to check if a key was just pressed by using its keycode, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **Примечание:** Если вы хотите проверить, была ли нажата клавиша, используя ее код, воспользуйтесь системой действий ввода Godot с помощью метода :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` или используйте метод :ref:`Node._input()<class_Node_private_method__input>` следующим образом:
 
 
 .. tabs::
@@ -1341,7 +1341,7 @@ Returns ``true`` if you are pressing the Latin key in the current keyboard layou
 
     func _input(event):
         if event is InputEventKey and not event.is_echo() and event.is_pressed() and event.keycode == KEY_SPACE:
-            pass # Your code here.
+            pass # Ваш код здесь.
 
  .. code-tab:: csharp
 
@@ -1349,7 +1349,7 @@ Returns ``true`` if you are pressing the Latin key in the current keyboard layou
     {
         if (@event is InputEventKey eventKey && !eventKey.IsEcho() && eventKey.Pressed && eventKey.Keycode == Key.Space)
         {
-            // Your code here.
+            // Ваш код здесь.
         }
     }
 
@@ -1400,13 +1400,13 @@ Returns ``true`` if you are pressing the Latin key in the current keyboard layou
 
 :ref:`bool<class_bool>` **is_physical_key_pressed**\ (\ keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) |const| :ref:`🔗<class_Input_method_is_physical_key_pressed>`
 
-Returns ``true`` if you are pressing the key in the physical location on the 101/102-key US QWERTY keyboard. You can pass a :ref:`Key<enum_@GlobalScope_Key>` constant.
+Возвращает ``true``, если вы нажимаете клавишу в физическом положении на 101/102-клавишной американской QWERTY-клавиатуре. Вы можете передать константу :ref:`Key<enum_@GlobalScope_Key>`.
 
-\ :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` is recommended over :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` for in-game actions, as it will make :kbd:`W`/:kbd:`A`/:kbd:`S`/:kbd:`D` layouts work regardless of the user's keyboard layout. :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` will also ensure that the top row number keys work on any keyboard layout. If in doubt, use :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
+Метод :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` рекомендуется использовать вместо :ref:`is_key_pressed()<class_Input_method_is_key_pressed>` для действий в игре, так как он обеспечит работу раскладок :kbd:`W`/:kbd:`A`/:kbd:`S`/:kbd:`D` независимо от раскладки клавиатуры пользователя. :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` также гарантирует работу цифровых клавиш верхнего ряда на любой раскладке клавиатуры. В случае сомнений используйте :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>`.
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **Примечание:** Из-за эффекта "фантомного нажатия клавиши" метод :ref:`is_physical_key_pressed()<class_Input_method_is_physical_key_pressed>` может возвращать ``false``, даже если нажата одна из клавиш действия. Дополнительную информацию см. в `Примерах ввода <../tutorials/inputs/input_examples.html#keyboard-events>`__ в документации.
 
-\ **Note:** If you want to check if a key was just pressed by using its physical keycode, use Godot's input action system with :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` or use the :ref:`Node._input()<class_Node_private_method__input>` method like this instead:
+\ **Примечание:** Если вы хотите проверить, была ли только что нажата клавиша, используя ее физический код, используйте систему действий ввода Godot с методом :ref:`is_action_just_pressed()<class_Input_method_is_action_just_pressed>` или используйте метод :ref:`Node._input()<class_Node_private_method__input>` следующим образом:
 
 
 .. tabs::
@@ -1415,7 +1415,7 @@ Returns ``true`` if you are pressing the key in the physical location on the 101
 
     func _input(event):
         if event is InputEventKey and not event.is_echo() and event.is_pressed() and event.physical_keycode == KEY_SPACE:
-            pass # Your code here.
+            pass # Ваш код здесь.
 
  .. code-tab:: csharp
 
@@ -1423,7 +1423,7 @@ Returns ``true`` if you are pressing the key in the physical location on the 101
     {
         if (@event is InputEventKey eventKey && !eventKey.IsEcho() && eventKey.Pressed && eventKey.PhysicalKeycode == Key.Space)
         {
-            // Your code here.
+            // Ваш код здесь.
         }
     }
 
@@ -1650,11 +1650,11 @@ Returns ``true`` if you are pressing the key in the physical location on the 101
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Starts the process of calibrating the specified joypad's gyroscope, if it has one.
+Запускает процесс калибровки гироскопа указанного геймпада, если он есть.
 
-Once a joypad's gyroscope has been calibrated correctly (e.g. laying still on a table without being rotated), :ref:`get_joy_gyroscope()<class_Input_method_get_joy_gyroscope>` will return values close or equal to :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>` when the joypad is not being rotated.
+После правильной калибровки гироскопа геймпада (например, когда он неподвижно лежит на столе без вращения) :ref:`get_joy_gyroscope()<class_Input_method_get_joy_gyroscope>` будет возвращать значения, близкие или равные :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`, когда геймпад не вращается.
 
-Here's an example of how to use joypad gyroscope and gyroscope calibration in your games:
+Вот пример использования гироскопа геймпада и его калибровки в ваших играх:
 
 
 .. tabs::
@@ -1664,41 +1664,41 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
     const GYRO_SENSITIVITY = 10.0
 
     func _ready():
-        # In this example we only use the first connected joypad (id 0).
+        # В этом примере мы используем только первый подключенный геймпад (id 0).
         if 0 not in Input.get_connected_joypads():
             return
 
         if not Input.has_joy_motion_sensors(0):
             return
 
-        # We must enable the motion sensors before using them.
+        # Перед использованием датчиков движения их необходимо включить.
         Input.set_joy_motion_sensors_enabled(0, true)
 
-        # (Tell the users here that they need to put their joypads on a flat surface and wait for confirmation.)
+        # (Сообщите пользователям, что им нужно положить геймпады на ровную поверхность и дождаться подтверждения.)
 
-        # Start the calibration process.
+        # Запуск процесса калибровки.
         calibrate_motion()
 
     func _process(delta):
-        # Only move the object if the joypad motion sensors are calibrated.
+        # Перемещаем объект, только если датчики движения геймпада откалиброваны.
         if Input.is_joy_motion_sensors_calibrated(0):
             move_object(delta)
 
     func calibrate_motion():
         Input.start_joy_motion_sensors_calibration(0)
 
-        # Wait for some time.
+        # Ждём некоторое время.
         await get_tree().create_timer(1.0).timeout
 
         Input.stop_joy_motion_sensors_calibration(0)
-        # The joypad is now calibrated.
+        # Геймпад теперь откалиброван.
 
     func move_object(delta):
-        var node: Node3D = ... # Put your node here.
+        var node: Node3D = ... # Поместите сюда ваш узел.
 
         var gyro := Input.get_joy_gyroscope(0)
-        node.rotation.x -= -gyro.y * GYRO_SENSITIVITY * delta # Use rotation around the Y axis (yaw) here.
-        node.rotation.y += -gyro.x * GYRO_SENSITIVITY * delta # Use rotation around the X axis (pitch) here.
+        node.rotation.x -= -gyro.y * GYRO_SENSITIVITY * delta # Здесь используется вращение вокруг оси Y (рыскание).
+        node.rotation.y += -gyro.x * GYRO_SENSITIVITY * delta # Здесь используется вращение вокруг оси X (тангаж).
 
  .. code-tab:: csharp
 
@@ -1706,7 +1706,7 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
 
     public override void _Ready()
     {
-        // In this example we only use the first connected joypad (id 0).
+        // В этом примере мы используем только первый подключенный геймпад (id 0).
         if (!Input.GetConnectedJoypads().Contains(0))
         {
             return;
@@ -1717,18 +1717,18 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
             return;
         }
 
-        // We must enable the accelerometer and the gyroscope before using them.
+        // Перед использованием акселерометра и гироскопа их необходимо включить.
         Input.SetJoyMotionSensorsEnabled(0, true);
 
-        // (Tell the users here that they need to put their joypads on a flat surface and wait for confirmation.)
+        // (Сообщите пользователям, что им нужно положить геймпады на ровную поверхность и дождаться подтверждения.)
 
-        // Start the calibration process.
+        // Запуск процесса калибровки.
         CalibrateMotion();
     }
 
     public override void _Process(double delta)
     {
-        // Only move the object if the joypad motion sensors are calibrated.
+        // Перемещаем объект, только если датчики движения геймпада откалиброваны.
         if (Input.IsJoyMotionSensorsCalibrated(0))
         {
             MoveObject(delta);
@@ -1739,28 +1739,28 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
     {
         Input.StartJoyMotionSensorsCalibration(0);
 
-        // Wait for some time.
+        // Ждём некоторое время.
         await ToSignal(GetTree().CreateTimer(1.0), SceneTreeTimer.SignalName.Timeout);
 
         Input.StopJoyMotionSensorsCalibration(0);
-        // The joypad is now calibrated.
+        // Геймпад теперь откалиброван.
     }
 
     private void MoveObject(double delta)
     {
-        Node3D node = ... ; // Put your object here.
+        Node3D node = ... ; // Поместите сюда ваш объект.
         Vector3 gyro = Input.GetJoyGyroscope(0);
         Vector3 rotation = node.Rotation;
-        rotation.X -= -gyro.Y * GyroSensitivity * (float)delta; // Use rotation around the Y axis (yaw) here.
-        rotation.Y += -gyro.X * GyroSensitivity * (float)delta; // Use rotation around the X axis (pitch) here.
+        rotation.X -= -gyro.Y * GyroSensitivity * (float)delta; // Здесь используется вращение вокруг оси Y (рыскание).
+        rotation.Y += -gyro.X * GyroSensitivity * (float)delta; // Здесь используется вращение вокруг оси X (тангаж).
         node.Rotation = rotation;
     }
 
 
 
-\ **Note:** Accelerometer sensor doesn't usually require calibration.
+\ **Примечание:** Акселерометр обычно не требует калибровки.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1772,21 +1772,21 @@ Here's an example of how to use joypad gyroscope and gyroscope calibration in yo
 
 |void| **start_joy_vibration**\ (\ device\: :ref:`int<class_int>`, weak_magnitude\: :ref:`float<class_float>`, strong_magnitude\: :ref:`float<class_float>`, duration\: :ref:`float<class_float>` = 0\ ) :ref:`🔗<class_Input_method_start_joy_vibration>`
 
-Starts to vibrate the joypad. See also :ref:`has_joy_vibration()<class_Input_method_has_joy_vibration>` and :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`.
+Запускает вибрацию джойстика. См. также :ref:`has_joy_vibration()<class_Input_method_has_joy_vibration>` и :ref:`is_joy_vibrating()<class_Input_method_is_joy_vibrating>`.
 
-Joypads usually come with two rumble motors, a strong and a weak one.
+Джойстики обычно оснащены двумя вибромоторами: мощным и слабым.
 
-\ ``weak_magnitude`` is the strength of the weak motor (between ``0.0`` and ``1.0``).
+\ ``weak_magnitude`` — мощность слабого мотора (от ``0.0`` до ``1.0``).
 
-\ ``strong_magnitude`` is the strength of the strong motor (between ``0.0`` and ``1.0``).
+\ ``strong_magnitude`` — мощность мощного мотора (от ``0.0`` до ``1.0``).
 
-\ ``duration`` is the duration of the effect in seconds (a duration of ``0.0`` will try to play the vibration as long as possible, which is about 65 seconds).
+\ ``duration`` — длительность эффекта в секундах (длительность ``0.0`` означает, что вибрация будет воспроизводиться как можно дольше, примерно 65 секунд).
 
-The vibration can be stopped early by calling :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
+Вибрацию можно остановить раньше, вызвав :ref:`stop_joy_vibration()<class_Input_method_stop_joy_vibration>`.
 
-See also :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` and :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`.
+См. также :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration_strength>` и :ref:`get_joy_vibration_duration()<class_Input_method_get_joy_vibration_duration>`.
 
-\ **Note:** For macOS, vibration is only supported in macOS 11 and later. When connected via USB, vibration is only supported for major brand controllers (except Xbox One and Xbox Series X/S controllers) due to macOS limitations.
+\ **Примечание:** Для macOS вибрация поддерживается только в macOS 11 и более поздних версиях. При подключении через USB, вибрация поддерживается только для контроллеров основных производителей (кроме контроллеров Xbox One и Xbox Series X/S) из-за ограничений macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1800,11 +1800,11 @@ See also :ref:`get_joy_vibration_strength()<class_Input_method_get_joy_vibration
 
 **Экспериментальное:** Этот метод может быть изменён или удалён в будущих версиях.
 
-Stops the calibration process of the specified joypad's motion sensors.
+Останавливает процесс калибровки датчиков движения указанного геймпада.
 
-See :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` for an example on how to use joypad motion sensors and calibration in your games.
+См. :ref:`start_joy_motion_sensors_calibration()<class_Input_method_start_joy_motion_sensors_calibration>` для примера использования датчиков движения и калибровки геймпада в играх.
 
-\ **Note:** This feature is only supported on Windows, Linux, macOS, and iOS.
+\ **Примечание:** Эта функция поддерживается только в Windows, Linux, macOS и iOS.
 
 .. rst-class:: classref-item-separator
 

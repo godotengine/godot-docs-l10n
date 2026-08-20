@@ -421,7 +421,7 @@ Aggiunge una forza rotazionale costante senza influenzare la posizione che conti
 
 |void| **apply_central_force**\ (\ force\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_apply_central_force>`
 
-Applica una forza direzionale senza influenzare la rotazione. Una forza è dipendente dal tempo e pensata per essere applicata a ogni aggiornamento della fisica
+Applica una forza direzionale senza influenzare la rotazione. Una forza è dipendente dal tempo e dovrebbe essere applicata a ogni aggiornamento della fisica
 
 Ciò equivale a usare :ref:`apply_force()<class_PhysicsDirectBodyState2D_method_apply_force>` al centro di massa del corpo.
 
@@ -451,7 +451,7 @@ Ciò equivale a usare :ref:`apply_impulse()<class_PhysicsDirectBodyState2D_metho
 
 |void| **apply_force**\ (\ force\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_apply_force>`
 
-Applica una forza posizionata al corpo. Una forza è dipendente dal tempo e deve essere applicata a ogni aggiornamento della fisica.
+Applica una forza posizionata al corpo. Una forza è dipendente dal tempo e dovrebbe essere applicata a ogni aggiornamento della fisica.
 
 \ ``position`` è lo scostamento dall'origine del corpo in coordinate globali.
 
@@ -697,9 +697,9 @@ Restituisce lo stato attuale dello spazio, utile per le interrogazioni.
 
 :ref:`Vector2<class_Vector2>` **get_velocity_at_local_position**\ (\ local_position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_velocity_at_local_position>`
 
-Returns the body's velocity at the given relative position.
+Restituisce la velocità del corpo nella posizione relativa specificata.
 
-\ ``local_position`` is the offset from the body origin in global coordinates.
+\ ``local_position`` è lo scostamento dall'origine del corpo in coordinate globali.
 
 .. rst-class:: classref-item-separator
 
@@ -723,7 +723,7 @@ Aggiorna la velocità lineare e angolare del corpo applicando gravità e smorzam
 
 |void| **set_constant_force**\ (\ force\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_set_constant_force>`
 
-Imposta le forze posizionali costanti totali del corpo applicate durante ogni aggiornamento di fisica.
+Imposta le forze posizionali costanti totali del corpo applicate durante ogni aggiornamento della fisica.
 
 Vedi :ref:`add_constant_force()<class_PhysicsDirectBodyState2D_method_add_constant_force>` e :ref:`add_constant_central_force()<class_PhysicsDirectBodyState2D_method_add_constant_central_force>`.
 
@@ -737,7 +737,7 @@ Vedi :ref:`add_constant_force()<class_PhysicsDirectBodyState2D_method_add_consta
 
 |void| **set_constant_torque**\ (\ torque\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsDirectBodyState2D_method_set_constant_torque>`
 
-Imposta le forze rotazionali costanti totali del corpo applicate durante ogni aggiornamento di fisica.
+Imposta le forze rotazionali costanti totali del corpo applicate durante ogni aggiornamento della fisica.
 
 Vedi :ref:`add_constant_torque()<class_PhysicsDirectBodyState2D_method_add_constant_torque>`.
 
@@ -745,7 +745,7 @@ Vedi :ref:`add_constant_torque()<class_PhysicsDirectBodyState2D_method_add_const
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

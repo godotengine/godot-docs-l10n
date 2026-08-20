@@ -14,7 +14,7 @@ Un widget che fornisce un'interfaccia per selezionare o modificare un colore.
 Descrizione
 ----------------------
 
-Un widget che fornisce un'interfaccia per selezionare o modificare un colore. Può opzionalmente fornire funzionalità come un campionatore di colori (contagocce), modalità colore e preimpostazioni.
+Un widget che fornisce un'interfaccia per selezionare o modificare un colore. Può opzionalmente fornire funzionalità come un campionatore di colori (contagocce), modalità colore e preset.
 
 \ **Nota:** Questo controllo è il widget di selezione colore stesso. È possibile usare un :ref:`ColorPickerButton<class_ColorPickerButton>` al suo posto se è necessario un pulsante che faccia apparire un **ColorPicker** in un popup.
 
@@ -435,7 +435,7 @@ Se ``true``, mostra uno slider per il canale alfa (opacità).
 - |void| **set_edit_intensity**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editing_intensity**\ (\ )
 
-If ``true``, shows an intensity slider. The intensity is applied as follows: convert the color to linear encoding, multiply it by ``2 ** intensity``, and then convert it back to nonlinear sRGB encoding.
+Se ``true``, mostra uno slider di intensità. L'intensità è applicata come segue: converte il colore in codifica lineare, lo moltiplica per ``2 ** intensità``, e poi lo converte nuovamente in codifica sRGB non lineare.
 
 .. rst-class:: classref-item-separator
 
@@ -486,7 +486,7 @@ La forma della vista dello spazio colore.
 - |void| **set_presets_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_presets_visible**\ (\ )
 
-Se ``true``, le preimpostazioni dei Campioni e dei Colori recenti sono visibili.
+Se ``true``, i preset dei Campioni e dei Colori recenti sono visibili.
 
 .. rst-class:: classref-item-separator
 
@@ -537,9 +537,9 @@ Descrizioni dei metodi
 
 |void| **add_preset**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ColorPicker_method_add_preset>`
 
-Aggiunge il colore specificato a una lista di preimpostazioni di colore. Le preimpostazioni sono visualizzate nel selettore colore e l'utente potrà selezionarli.
+Aggiunge il colore specificato a una lista di preset di colori. I preset sono visualizzati nel selettore colore e l'utente potrà selezionarli.
 
-\ **Nota:** La lista delle preimpostazioni è solo per *questo* selettore colore.
+\ **Nota:** La lista dei preset è solo per *questo* selettore colore.
 
 .. rst-class:: classref-item-separator
 
@@ -565,7 +565,7 @@ Aggiunge il colore specificato a una lista di preset di colore recenti affinché
 
 |void| **erase_preset**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ColorPicker_method_erase_preset>`
 
-Rimuove il colore specificato dalla lista dei colori predefiniti di questo selettore di colori.
+Rimuove il colore specificato dalla lista dei preset di colori in questo selettore di colori.
 
 .. rst-class:: classref-item-separator
 
@@ -577,7 +577,7 @@ Rimuove il colore specificato dalla lista dei colori predefiniti di questo selet
 
 |void| **erase_recent_preset**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ColorPicker_method_erase_recent_preset>`
 
-Rimuove il colore specificato dalla lista dei colori preimpostati di recente di questo selettore di colori.
+Rimuove il colore specificato dalla lista dei preset di colori recenti di questo selettore di colori.
 
 .. rst-class:: classref-item-separator
 
@@ -726,7 +726,7 @@ La texture per il grabber a freccia.
 
 :ref:`Texture2D<class_Texture2D>` **color_copy** :ref:`🔗<class_ColorPicker_theme_icon_color_copy>`
 
-The icon for the button that copies the color in text format to the clipboard.
+L'icona per il pulsante che copia il colore in formato testuale negli appunti.
 
 .. rst-class:: classref-item-separator
 
@@ -936,7 +936,7 @@ Lo :ref:`StyleBox<class_StyleBox>` utilizzato per la parte del campione del colo
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

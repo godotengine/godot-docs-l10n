@@ -7,16 +7,16 @@ AudioEffectSpectrumAnalyzer
 
 **Eredita:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Creates an :ref:`AudioEffectInstance<class_AudioEffectInstance>` which performs frequency analysis and exposes results to be accessed in real-time.
+Crea un :ref:`AudioEffectInstance<class_AudioEffectInstance>` che effettua un'analisi delle frequenze ed espone i risultati a cui è possibile accedere in tempo reale.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Calculates a Fourier Transform of the audio signal. This effect does not alter the audio. Can be used for creating real-time audio visualizations, like a spectrogram.
+Calcola la trasformata di Fourier del segnale audio. Questo effetto non altera l'audio. Si può utilizzare per creare visualizzazioni audio in tempo reale, come uno spettrogramma.
 
-This resource configures an :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`, which performs the actual analysis at runtime. An instance should be obtained with :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` to make use of this effect.
+Questa risorsa configura un :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`, che effettua l'analisi vera e propria in fase di esecuzione. Affinché questo effetto sia utile, bisogna ottenere un'istanza tramite :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ Tutorial
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effetti audio <../tutorials/audio/audio_effects>`
 
 - `Demo di visualizzatore spettro audio <https://godotengine.org/asset-library/asset/2762>`__
 
@@ -126,7 +126,7 @@ Descrizioni delle proprietà
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-The length of the buffer to keep, in seconds. Higher values keep data around for longer, but require more memory. Value can range from 0.1 to 4.
+La lunghezza del buffer da mantenere, in secondi. I valori più alti mantengono i dati più a lungo, ma richiedono più memoria. Il valore può variare da 0.1 a 4.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Le dimensioni del buffer di `trasformata di Fourier veloce <https://it.wikipedia
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

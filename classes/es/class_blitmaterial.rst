@@ -7,14 +7,14 @@ BlitMaterial
 
 **Hereda:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A material that processes blit calls to a DrawableTexture.
+Un material que procesa llamadas blit a un DrawableTexture.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A material resource that can be used by DrawableTextures when processing blit calls to draw.
+Un recurso material que puede ser utilizado por DrawableTextures al procesar llamadas blit para dibujar.
 
 .. rst-class:: classref-reftable-group
 
@@ -81,7 +81,7 @@ Modo de mezcla multiplicativo.
 
 :ref:`BlendMode<enum_BlitMaterial_BlendMode>` **BLEND_MODE_DISABLED** = ``4``
 
-No blending mode, direct color copy.
+Sin modo de mezcla, copia directa en color.
 
 .. rst-class:: classref-section-separator
 
@@ -103,7 +103,7 @@ Descripciones de Propiedades
 - |void| **set_blend_mode**\ (\ value\: :ref:`BlendMode<enum_BlitMaterial_BlendMode>`\ )
 - :ref:`BlendMode<enum_BlitMaterial_BlendMode>` **get_blend_mode**\ (\ )
 
-The manner in which the newly blitted texture is blended with the original DrawableTexture.
+La forma en que la textura recién blitada se mezcla con la DrawableTexture original.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

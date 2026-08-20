@@ -7,18 +7,18 @@ GPUParticlesCollisionSDF3D
 
 **Eredita:** :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Una forma di collisione di particelle 3D con campo di distanza con segno che influenza i nodi :ref:`GPUParticles3D<class_GPUParticles3D>`.
+Una forma di collisione di particelle 3D con signed distance field che influenza i nodi :ref:`GPUParticles3D<class_GPUParticles3D>`.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Una forma di collisione di particelle 3D con campo di distanza con segno precalcolato che influenza i nodi :ref:`GPUParticles3D<class_GPUParticles3D>`.
+Una forma di collisione di particelle 3D con signed distance field precalcolato che influenza i nodi :ref:`GPUParticles3D<class_GPUParticles3D>`.
 
-I campi di distanza con segno (Signed distance field o SDF) consentono di rappresentare in modo efficiente forme di collisione approssimative per oggetti convessi e concavi di qualsiasi forma. Questo è più flessibile di :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`, ma richiede una fase di precalcolo.
+Gli signed distance field (SDF o letteralmente "campi di distanza con segno") consentono di rappresentare in modo efficiente forme di collisione approssimative per oggetti convessi e concavi di qualsiasi forma. Questo è più flessibile di :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`, ma richiede una fase di precalcolo.
 
-\ **Precalcolo:** La texture del campo di distanza con segno può essere precalcolata selezionando il nodo **GPUParticlesCollisionSDF3D** nell'editor, quindi cliccando su **Precalcola SDF** nella parte superiore della viewport 3D. Qualsiasi :ref:`MeshInstance3D<class_MeshInstance3D>` *visibile* all'interno di :ref:`size<class_GPUParticlesCollisionSDF3D_property_size>` sarà presa in considerazione per il precalcolo, a prescindere dalla sua :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>`.
+\ **Precalcolo:** La texture dell'SDF si può precalcolare selezionando il nodo **GPUParticlesCollisionSDF3D** nell'editor, quindi cliccando su **Precalcola SDF** nella parte superiore della viewport 3D. Qualsiasi :ref:`MeshInstance3D<class_MeshInstance3D>` *visibile* all'interno di :ref:`size<class_GPUParticlesCollisionSDF3D_property_size>` sarà presa in considerazione per il precalcolo, a prescindere dalla sua :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>`.
 
 \ **Nota:** Il precalcolo di una :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` di **GPUParticlesCollisionSDF3D** è possibile solo all'interno dell'editor, poiché non esiste un metodo di precalcolo esposto per l'uso nei progetti esportati. Tuttavia, è comunque possibile caricare :ref:`Texture3D<class_Texture3D>` precalcolati nella sua proprietà :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` in un progetto esportato.
 
@@ -81,7 +81,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionSDF3D_Resolution>`
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_16** = ``0``
 
-Pre-elabora un campo di distanza con segno 16×16×16. Questa è l'opzione più veloce, ma anche la meno precisa.
+Pre-elabora un signed distance field 16×16×16. Questa è l'opzione più veloce, ma anche la meno precisa.
 
 .. _class_GPUParticlesCollisionSDF3D_constant_RESOLUTION_32:
 
@@ -89,7 +89,7 @@ Pre-elabora un campo di distanza con segno 16×16×16. Questa è l'opzione più 
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_32** = ``1``
 
-Pre-elabora un campo di distanza con segno 32×32×32.
+Pre-elabora un signed distance field 32×32×32.
 
 .. _class_GPUParticlesCollisionSDF3D_constant_RESOLUTION_64:
 
@@ -97,7 +97,7 @@ Pre-elabora un campo di distanza con segno 32×32×32.
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_64** = ``2``
 
-Pre-elabora un campo di distanza con segno 64×64×64.
+Pre-elabora un signed distance field 64×64×64.
 
 .. _class_GPUParticlesCollisionSDF3D_constant_RESOLUTION_128:
 
@@ -105,7 +105,7 @@ Pre-elabora un campo di distanza con segno 64×64×64.
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_128** = ``3``
 
-Pre-elabora un campo di distanza con segno 128×128×128.
+Pre-elabora un signed distance field 128×128×128.
 
 .. _class_GPUParticlesCollisionSDF3D_constant_RESOLUTION_256:
 
@@ -113,7 +113,7 @@ Pre-elabora un campo di distanza con segno 128×128×128.
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_256** = ``4``
 
-Pre-elabora un campo di distanza con segno 256×256×256.
+Pre-elabora un signed distance field 256×256×256.
 
 .. _class_GPUParticlesCollisionSDF3D_constant_RESOLUTION_512:
 
@@ -121,7 +121,7 @@ Pre-elabora un campo di distanza con segno 256×256×256.
 
 :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **RESOLUTION_512** = ``5``
 
-Pre-elabora un campo di distanza con segno 512×512×512. Questa è l'opzione più lenta, ma anche la più precisa.
+Pre-elabora un signed distance field 512×512×512. Questa è l'opzione più lenta, ma anche la più precisa.
 
 .. _class_GPUParticlesCollisionSDF3D_constant_RESOLUTION_MAX:
 
@@ -168,7 +168,7 @@ Gli strati visivi da considerare quando si precalcola l'SDF di collisione delle 
 - |void| **set_resolution**\ (\ value\: :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>`\ )
 - :ref:`Resolution<enum_GPUParticlesCollisionSDF3D_Resolution>` **get_resolution**\ (\ )
 
-La risoluzione di precalcolo da usare per la :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` del campo di distanza con segno. La texture deve essere nuovamente precalcolata affinché le modifiche alla proprietà :ref:`resolution<class_GPUParticlesCollisionSDF3D_property_resolution>` siano effettive. Risoluzioni più elevate hanno un costo maggiore sulle prestazioni e richiedono più tempo per l'elaborazione. Le risoluzioni più elevate comportano anche texture precalcolate più grandi, portando a maggiori requisiti di VRAM e spazio di archiviazione. Per migliorare le prestazioni e ridurre i tempi di precalcolo, usa la risoluzione più bassa possibile per l'oggetto di cui stai rappresentando la collisione.
+La risoluzione di precalcolo da usare per la :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` dell'SDF. La texture deve essere nuovamente precalcolata affinché le modifiche alla proprietà :ref:`resolution<class_GPUParticlesCollisionSDF3D_property_resolution>` siano effettive. Risoluzioni più elevate hanno un costo maggiore sulle prestazioni e richiedono più tempo per l'elaborazione. Le risoluzioni più elevate comportano anche texture precalcolate più grandi, portando a maggiori requisiti di VRAM e spazio di archiviazione. Per migliorare le prestazioni e ridurre i tempi di precalcolo, usa la risoluzione più bassa possibile per l'oggetto di cui stai rappresentando la collisione.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ Le dimensioni dell'SDF di collisione in unità 3D. Per migliorare la qualità de
 - |void| **set_texture**\ (\ value\: :ref:`Texture3D<class_Texture3D>`\ )
 - :ref:`Texture3D<class_Texture3D>` **get_texture**\ (\ )
 
-La texture 3D che rappresenta il campo di distanza con segno.
+La texture 3D che rappresenta il signed distance field.
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ Descrizioni dei metodi
 
 :ref:`bool<class_bool>` **get_bake_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GPUParticlesCollisionSDF3D_method_get_bake_mask_value>`
 
-Restituisce se lo strato specificato di :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>` è abilitato o meno, dato un ``layer_number`` compreso tra 1 e 32.
+Restituisce se lo strato specificato di :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>` è abilitato o meno, fornito un ``layer_number`` compreso tra 1 e 32.
 
 .. rst-class:: classref-item-separator
 
@@ -248,13 +248,13 @@ Restituisce se lo strato specificato di :ref:`bake_mask<class_GPUParticlesCollis
 
 |void| **set_bake_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GPUParticlesCollisionSDF3D_method_set_bake_mask_value>`
 
-In base a ``value``, abilita o disabilita lo strato specificato in :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>`, dato un ``layer_number`` compreso tra 1 e 32.
+In base a ``value``, abilita o disabilita lo strato specificato in :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>`, fornito un ``layer_number`` compreso tra 1 e 32.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

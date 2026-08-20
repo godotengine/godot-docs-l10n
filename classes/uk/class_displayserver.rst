@@ -2522,9 +2522,9 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_RESIZE_DISABLED** = ``0``
 
-The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`. This flag is ignored for full screen windows.
+Розмір вікна не можна змінити, перетягуючи його ручку зміни розміру. Однак розмір вікна все ще можна змінити за допомогою :ref:`window_set_size()<class_DisplayServer_method_window_set_size>`. Цей прапор ігнорується для повноекранних вікон.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примітка:** Цей прапор реалізовано в системах Linux (X11), macOS та Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_BORDERLESS:
 
@@ -2532,9 +2532,9 @@ The window can't be resized by dragging its resize grip. It's still possible to 
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_BORDERLESS** = ``1``
 
-The window do not have native title bar and other decorations. This flag is ignored for full-screen windows.
+Вікно не має вбудованої панелі заголовка та інших елементів оформлення. Цей прапор ігнорується для повноекранних вікон.
 
-\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
+\ **Примітка:** Цей прапор реалізовано в системах Linux (X11/Wayland), macOS та Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_ALWAYS_ON_TOP:
 
@@ -2542,9 +2542,9 @@ The window do not have native title bar and other decorations. This flag is igno
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_ALWAYS_ON_TOP** = ``2``
 
-The window is floating on top of all other windows. This flag is ignored for full-screen windows.
+Вікно знаходиться поверх усіх інших вікон. Цей прапор ігнорується для повноекранних вікон.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примітка:** Цей прапор реалізовано в системах Linux (X11), macOS та Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_TRANSPARENT:
 
@@ -2566,9 +2566,9 @@ The window is floating on top of all other windows. This flag is ignored for ful
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_NO_FOCUS** = ``4``
 
-The window can't be focused. No-focus window will ignore all input, except mouse clicks.
+Вікно не може отримати фокус. Вікно без фокусу ігноруватиме всі введення, крім кліків мишею.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примітка:** Цей прапор реалізовано в системах Linux (X11), macOS та Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_POPUP:
 
@@ -2576,9 +2576,9 @@ The window can't be focused. No-focus window will ignore all input, except mouse
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP** = ``5``
 
-Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`).
+Вікно є частиною меню або випадаючого списку :ref:`OptionButton<class_OptionButton>`. Цей прапор не можна змінити, коли вікно відображається. Активне спливаюче вікно виключно приймає всі вхідні дані, не перебираючи фокус у свого батьківського вікна. Спливаючі вікна автоматично закриваються, коли користувач клацає поза їх межами або при переході до іншої програми. Спливаюче вікно повинно мати встановлене тимчасове батьківське вікно (див. :ref:`window_set_transient()<class_DisplayServer_method_window_set_transient>`).
 
-\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, and Windows.
+\ **Примітка:** Цей прапор реалізовано в Linux (X11/Wayland), macOS та Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE:
 
@@ -2600,9 +2600,9 @@ Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-All mouse events are passed to the underlying window of the same application.
+Усі події миші передаються до базового вікна тієї самої програми.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примітка:** Цей прапор реалізовано в системах Linux (X11), macOS та Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_SHARP_CORNERS:
 
@@ -2632,9 +2632,9 @@ All mouse events are passed to the underlying window of the same application.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_POPUP_WM_HINT** = ``10``
 
-Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+Повідомляє менеджеру вікон, що це вікно має бути «спливаючим» (як це визначено в конкретній реалізації) — зазвичай це плаваюче дочірнє вікно без рамок, яке не можна розміщувати в мозаїці та переміщати.
 
-\ **Note:** This flag is implemented on Linux (Wayland).
+\ **Примітка:** Цей прапор реалізовано в Linux (Wayland).
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MINIMIZE_DISABLED:
 
@@ -2642,9 +2642,9 @@ Signals the window manager that this window is supposed to be an implementation-
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MINIMIZE_DISABLED** = ``11``
 
-Window minimize button is disabled.
+Кнопка згорнення вікна вимкнена.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примітка:** Цей прапор реалізовано в системах Linux (X11), macOS та Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAXIMIZE_DISABLED:
 
@@ -2652,9 +2652,9 @@ Window minimize button is disabled.
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MAXIMIZE_DISABLED** = ``12``
 
-Window maximize button is disabled.
+Кнопка розгортання вікна вимкнена.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примітка:** Цей прапор реалізовано в системах Linux (X11), macOS та Windows.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_MAX:
 

@@ -7,18 +7,18 @@ AudioEffectReverb
 
 **Eredita:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a reverberation audio effect to an audio bus.
+Aggiunge un effetto audio di riverberazione a un bus audio.
 
-Emulates an echo by playing a blurred version of the input audio.
+Emula un eco riproducendo una versione sfocata dell'audio in ingresso.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-A "reverb" effect plays the input audio back continuously, decaying over a period of time. It simulates sounds in different kinds of spaces, ranging from small rooms, to big caverns.
+Un effetto "riverbero" riproduce continuamente l'audio in ingresso, decandendo in un periodo di tempo. Simula suoni in diversi tipi di spazi, dalle piccole stanze alle grandi caverne.
 
-See also :ref:`AudioEffectDelay<class_AudioEffectDelay>` for a non-blurry type of echo.
+Vedi anche :ref:`AudioEffectDelay<class_AudioEffectDelay>` per un tipo di eco non sfocato.
 
 .. rst-class:: classref-introduction-group
 
@@ -27,7 +27,7 @@ Tutorial
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effetti audio <../tutorials/audio/audio_effects>`
 
 - `Demo di sparatutto in terza persona (TPS) <https://godotengine.org/asset-library/asset/2710>`__
 
@@ -77,7 +77,7 @@ Descrizioni delle proprietà
 - |void| **set_damping**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping**\ (\ )
 
-Defines how reflective the imaginary room's walls are. The more reflective, the more high frequency content the reverb has. Value can range from 0 to 1.
+Definisce quanto sono riflettenti le pareti della stanza immaginaria. Più riflettenti sono, più alte frequenze ci saranno nel riverbero. Il valore può variare da 0 a 1.
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ Defines how reflective the imaginary room's walls are. The more reflective, the 
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-The volume ratio of the original audio. At 0, only the modified audio is outputted. Value can range from 0 to 1.
+Il rapporto di volume del suono originale. A 0, viene prodotto solo il suono modificato. Il valore può variare da 0 a 1.
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ The volume ratio of the original audio. At 0, only the modified audio is outputt
 - |void| **set_hpf**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_hpf**\ (\ )
 
-High-pass filter allows frequencies higher than a certain cutoff threshold and attenuates frequencies lower than the cutoff threshold. Value can range from 0 to 1.
+Il filtro passa-alto lascia passare i segnali con una frequenza superiore a un determinato punto di taglio e attenua le frequenze inferiori al punto di taglio. Il valore può variare da 0 a 1.
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ High-pass filter allows frequencies higher than a certain cutoff threshold and a
 - |void| **set_predelay_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_feedback**\ (\ )
 
-Gain of early reflection copies. At higher values, early reflection copies are louder and ring out for longer. Value can range from 0 to 1.
+Guadagno delle prime copie riflesse. A valori più alti, le prime copie riflesse sono più forti e risuonano più a lungo. Il valore può variare da 0 a 1.
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Gain of early reflection copies. At higher values, early reflection copies are l
 - |void| **set_predelay_msec**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_msec**\ (\ )
 
-Time between the original audio and the early reflections of the reverb signal, in milliseconds. Value can range from 20 to 500.
+Tempo tra il segnale originale e le prime riflessioni del segnale riverbero, in millisecondi. Il valore può variare da 20 a 500.
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ Dimensioni della stanza simulata. Valori più grandi significano più echi. Il v
 - |void| **set_spread**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_spread**\ (\ )
 
-Widens or narrows the stereo image of the reverb tail. At 1, it fully widens. Value can range from 0 to 1.
+Allarga o restringe l'immagine stereo della coda del riverbero. A 1, si allarga completamente. Il valore può variare da 0 a 1.
 
 .. rst-class:: classref-item-separator
 
@@ -196,13 +196,13 @@ Widens or narrows the stereo image of the reverb tail. At 1, it fully widens. Va
 - |void| **set_wet**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wet**\ (\ )
 
-The volume ratio of the modified audio. At 0, only the original audio is outputted. Value can range from 0 to 1.
+Il rapporto di volume dell'audio modificato. A 0, viene prodotto solo l'audio originale. Il valore può variare da 0 a 1.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

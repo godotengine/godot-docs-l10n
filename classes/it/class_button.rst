@@ -16,9 +16,9 @@ Un pulsante con tema che può contenere testo e un'icona.
 Descrizione
 ----------------------
 
-**Button** is the standard themed button. It can contain text and an icon, and it will display them according to the current :ref:`Theme<class_Theme>`.
+**Button** è il pulsante standard con tema. Può contenere testo e un'icona e li visualizzerà in base al :ref:`Theme<class_Theme>` attuale.
 
-\ **Example:** Create a button and connect a method that will be called when the button is pressed:
+\ **Esempio**: Crea di un pulsante e connetti un metodo che verrà chiamato quando il pulsante viene premuto:
 
 
 .. tabs::
@@ -27,33 +27,33 @@ Descrizione
 
     func _ready():
         var button = Button.new()
-        button.text = "Click me"
-        button.pressed.connect(_button_pressed)
+        button.text = "Cliccami"
+        button.pressed.connect(self._button_pressed)
         add_child(button)
 
     func _button_pressed():
-        print("Hello world!")
+        print("Ciao mondo!")
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
         var button = new Button();
-        button.Text = "Click me";
+        button.Text = "Cliccami";
         button.Pressed += ButtonPressed;
         AddChild(button);
     }
 
     private void ButtonPressed()
     {
-        GD.Print("Hello world!");
+        GD.Print("Ciao mondo!");
     }
 
 
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+Vedi anche :ref:`BaseButton<class_BaseButton>` che contiene proprietà e metodi comuni associati a questo nodo.
 
-\ **Note:** Buttons support multitouch via touch input, allowing multiple buttons to be pressed at the same time. Otherwise, mouse input is used, limiting interaction to one button press at a time.
+\ **Nota:** I pulsanti supportano il multitouch tramite input touch, permettendo di premere più pulsanti allo stesso tempo. Se non disponibile, si utilizza l'input del mouse, limitando le interazioni a un solo pulsante premuto alla volta.
 
 .. rst-class:: classref-introduction-group
 
@@ -332,7 +332,7 @@ Specifica se l'icona deve essere allineata orizzontalmente a sinistra, a destra 
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Codice lingua utilizzato per gli algoritmi di interruzione di riga e di formazione del testo. Se lasciato vuoto, è utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -797,7 +797,7 @@ Icona predefinita per il **Button**. È visualizzato solo se :ref:`icon<class_Bu
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

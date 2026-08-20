@@ -385,7 +385,7 @@ Por ejemplo, si este valor es ``32`` y la animación tiene dos pistas de audio, 
 
 Normalmente, las pistas se pueden configurar en :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` para actualizarse con poca frecuencia, normalmente cuando se utiliza la interpolación más cercana.
 
-Sin embargo, al mezclar con :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` se tienen en cuenta varios resultados. El :ref:`callback_mode_discrete<class_AnimationMixer_property_callback_mode_discrete>` lo especifica explícitamente. Véase también :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>`.
+Sin embargo, al mezclar con :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` se tienen en cuenta varios resultados. El :ref:`callback_mode_discrete<class_AnimationMixer_property_callback_mode_discrete>` lo especifica explícitamente. Consulte también :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>`.
 
 Para que los resultados mezclados se vean bien, se recomienda establecerlo en :ref:`ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS>` para actualizar cada fotograma durante la mezcla. Existen otros valores por motivos de compatibilidad y están bien si no hay mezcla, pero si no es así, pueden producir artefactos.
 
@@ -503,7 +503,7 @@ Si es ``true``, el valor de :ref:`get_root_motion_position()<class_AnimationMixe
 
 La ruta de la pista de Animación utilizada para el movimiento raíz. Las rutas deben ser rutas validas, escena-árbol hacia un nodo, y deben especificarse empezando por el nodo padre del nodo que reproducirá la animación. :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` utiliza el mismo formato que :ref:`Animation.track_set_path()<class_Animation_method_track_set_path>`, pero ten en cuenta que un hueso debe ser especificado.
 
-Si la pista tiene tipo :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`, :ref:`Animation.TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>`, o :ref:`Animation.TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` la transformación se cancelará visualmente, y la animación aparentará estar estática. Véase :ref:`get_root_motion_position()<class_AnimationMixer_method_get_root_motion_position>`, :ref:`get_root_motion_rotation()<class_AnimationMixer_method_get_root_motion_rotation>`, :ref:`get_root_motion_scale()<class_AnimationMixer_method_get_root_motion_scale>`, y :ref:`RootMotionView<class_RootMotionView>`.
+Si la pista tiene tipo :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`, :ref:`Animation.TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>`, o :ref:`Animation.TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` la transformación se cancelará visualmente, y la animación aparentará estar estática. Consulte :ref:`get_root_motion_position()<class_AnimationMixer_method_get_root_motion_position>`, :ref:`get_root_motion_rotation()<class_AnimationMixer_method_get_root_motion_rotation>`, :ref:`get_root_motion_scale()<class_AnimationMixer_method_get_root_motion_scale>`, y :ref:`RootMotionView<class_RootMotionView>`.
 
 .. rst-class:: classref-item-separator
 

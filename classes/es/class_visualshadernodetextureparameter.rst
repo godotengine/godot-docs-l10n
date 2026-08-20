@@ -159,7 +159,7 @@ Muestrea la textura usando el filtro determinado por el nodo al que está adjunt
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_NEAREST** = ``1``
 
-El filtro de textura lee solo del píxel más cercano. Esto hace que la textura se vea pixelada de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
+El filtro de textura lee solo del píxel más cercano. Esto hace que la textura se parezca pixelada de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR:
 
@@ -167,7 +167,7 @@ El filtro de textura lee solo del píxel más cercano. Esto hace que la textura 
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_LINEAR** = ``2``
 
-El filtro de textura mezcla entre los 4 píxeles más cercanos. Esto hace que la textura se vea suave de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
+El filtro de textura mezcla entre los 4 píxeles más cercanos. Esto hace que la textura se aparezca suave de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP:
 

@@ -7,14 +7,14 @@ VisualShaderNodeReroute
 
 **Eredita:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Un nodo che permette di reindirizzare una connessione all'interno del grafico di visual shader.
+Un nodo che permette di reindirizzare un collegamento all'interno del grafico di visual shader.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Adatta automaticamente il tipo di porta al tipo di connessione in entrata e garantisce connessioni valide.
+Adatta automaticamente il tipo di porta al tipo di collegamento in entrata e garantisce collegamenti validi.
 
 .. rst-class:: classref-reftable-group
 
@@ -49,7 +49,7 @@ Restituisce il tipo di porta del nodo di reindirizzamento.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -165,7 +165,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_SpriteBase3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_SpriteBase3D_AlphaCutMode>` **ALPHA_CUT_DISABLED** = ``0``
 
-Questa modalità esegue la fusione alfa standard. Può visualizzare aree traslucide, ma potrebbero essere visibili problemi di ordinamento della trasparenza quando più materiali trasparenti si sovrappongono.
+Questa modalità effettua una fusione alfa standard. Può visualizzare aree traslucide, ma si potrebbero notare problemi di ordinamento della trasparenza quando più materiali trasparenti si sovrappongono.
 
 .. _class_SpriteBase3D_constant_ALPHA_CUT_DISCARD:
 
@@ -173,7 +173,7 @@ Questa modalità esegue la fusione alfa standard. Può visualizzare aree trasluc
 
 :ref:`AlphaCutMode<enum_SpriteBase3D_AlphaCutMode>` **ALPHA_CUT_DISCARD** = ``1``
 
-Questa modalità consente solo pixel completamente trasparenti o completamente opachi. Saranno visibili bordi netti a meno che non sia abilitata una qualche forma di antialiasing di spazio dello schermo (vedi :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`). Questa modalità è anche nota come *alpha testing* o *trasparenza a 1 bit*.
+Questa modalità consente solo pixel completamente trasparenti o completamente opachi. Saranno visibili bordi netti a meno che non sia abilitata una qualche forma di antialiasing nello spazio dello schermo (vedi :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`). Questa modalità è anche nota come *alpha testing* o *trasparenza a 1 bit*.
 
 .. _class_SpriteBase3D_constant_ALPHA_CUT_OPAQUE_PREPASS:
 
@@ -607,7 +607,7 @@ Se ``true``, il flag specificato sarà abilitato.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

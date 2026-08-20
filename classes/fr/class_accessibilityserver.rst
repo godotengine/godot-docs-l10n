@@ -222,7 +222,7 @@ Default dialog button element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_STATIC_TEXT** = ``4``
 
-Non-editable text label.
+Libellé non modifiable.
 
 .. _class_AccessibilityServer_constant_ROLE_CONTAINER:
 
@@ -230,7 +230,7 @@ Non-editable text label.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_CONTAINER** = ``5``
 
-Container element. Elements with this role are used for internal structure and ignored by screen readers.
+Élément conteneur. Éléments avec ce rôle sont utilisés pour créer une structure interne et sont ignorés par les lecteurs d'écran.
 
 .. _class_AccessibilityServer_constant_ROLE_PANEL:
 
@@ -262,7 +262,7 @@ Panel container element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_CHECK_BOX** = ``9``
 
-Check box element.
+Élément de case à cocher.
 
 .. _class_AccessibilityServer_constant_ROLE_RADIO_BUTTON:
 
@@ -286,7 +286,7 @@ Check button element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_SCROLL_BAR** = ``12``
 
-Scroll bar element.
+Élément barre de défilement.
 
 .. _class_AccessibilityServer_constant_ROLE_SCROLL_VIEW:
 
@@ -294,7 +294,7 @@ Scroll bar element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_SCROLL_VIEW** = ``13``
 
-Scroll container element.
+Élément conteneur de défilement.
 
 .. _class_AccessibilityServer_constant_ROLE_SPLITTER:
 
@@ -326,7 +326,7 @@ Spin box element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_PROGRESS_INDICATOR** = ``17``
 
-Progress indicator element.
+Élément d'indicateur de progression.
 
 .. _class_AccessibilityServer_constant_ROLE_TEXT_FIELD:
 
@@ -438,7 +438,7 @@ Tree view item element.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_LIST_BOX** = ``31``
 
-List view element.
+Élément d’affichage de liste.
 
 .. _class_AccessibilityServer_constant_ROLE_LIST_BOX_OPTION:
 
@@ -660,7 +660,7 @@ Element is a visited link.
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_BUSY** = ``4``
 
-Element content is not ready (e.g. loading).
+Le contenu de l'élément n'est pas prêt (par ex. en chargement).
 
 .. _class_AccessibilityServer_constant_FLAG_MODAL:
 
@@ -1037,9 +1037,9 @@ Descriptions des méthodes
 
 :ref:`RID<class_RID>` **create_element**\ (\ window_id\: :ref:`int<class_int>`, role\: :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>`\ ) :ref:`🔗<class_AccessibilityServer_method_create_element>`
 
-Creates a new, empty accessibility element resource.
+Crée une nouvelle ressource d'élément d'accessibilité vide.
 
-\ **Note:** An accessibility element is created and freed automatically for each :ref:`Node<class_Node>`. In general, this function should not be called manually.
+\ **Note :** Un élément d'accessibilité est créé et libéré automatiquement pour chaque :ref:`Node<class_Node>`. En général, cette fonction ne devrait pas être appelée manuellement.
 
 .. rst-class:: classref-item-separator
 
@@ -1063,9 +1063,9 @@ Creates a new, empty accessibility sub-element resource. Sub-elements can be use
 
 :ref:`RID<class_RID>` **create_sub_text_edit_elements**\ (\ parent_rid\: :ref:`RID<class_RID>`, shaped_text\: :ref:`RID<class_RID>`, min_height\: :ref:`float<class_float>`, insert_pos\: :ref:`int<class_int>` = -1, is_last_line\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AccessibilityServer_method_create_sub_text_edit_elements>`
 
-Creates a new, empty accessibility sub-element from the shaped text buffer. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`free_element()<class_AccessibilityServer_method_free_element>` method.
+Crée un sous-élément vide depuis la mémoire tampon de texte formulé. Sous-éléments sont nettoyés automatiquement quand le parent est lui-même nettoyé, ou peuvent être nettoyés avant avec la méthode :ref:`free_element()<class_AccessibilityServer_method_free_element>`.
 
-If ``is_last_line`` is ``true``, no trailing newline is appended to the text content. Set to ``true`` for the last line in multi-line text fields and for single-line text fields.
+Si ``is_last_line`` est ``true``, aucune nouvelle ligne sera ajoutée au contenu texte actuel. Assignez ``true`` à ce paramètre pour les champs de texte multilignes et à ligne unique.
 
 .. rst-class:: classref-item-separator
 
@@ -1101,7 +1101,7 @@ Définit les méta-données pour l'élément d'accessibilité ``id`` à ``meta``
 
 |void| **free_element**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_free_element>`
 
-Frees the accessibility element ``id`` created by :ref:`create_element()<class_AccessibilityServer_method_create_element>`, :ref:`create_sub_element()<class_AccessibilityServer_method_create_sub_element>`, or :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`.
+Décharge l'élément d'accessibilité ``id`` créé par :ref:`create_element()<class_AccessibilityServer_method_create_element>`, :ref:`create_sub_element()<class_AccessibilityServer_method_create_sub_element>` ou :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>` de la mémoire.
 
 .. rst-class:: classref-item-separator
 
@@ -1165,11 +1165,11 @@ Définit l'état avec focus de la fenêtre pour les applications d'assistance.
 
 |void| **set_window_rect**\ (\ window_id\: :ref:`int<class_int>`, rect_out\: :ref:`Rect2<class_Rect2>`, rect_in\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_AccessibilityServer_method_set_window_rect>`
 
-Sets window outer (with decorations) and inner (without decorations) bounds for assistive apps.
+Définit les bornes internes et externes (sans décorations) de la fenêtre pour les applications assisitves.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Note :** Cette méethode est implémentée sur Linux, macOS et Windows.
 
-\ **Note:** Advanced users only! :ref:`Window<class_Window>` objects call this method automatically.
+\ **Note :** Utilisateurs avancés seulement ! Les objets :ref:`Window<class_Window>` appellent cette méthode automatiquement.
 
 .. rst-class:: classref-item-separator
 
@@ -1267,7 +1267,7 @@ Adds an element that this element flow into.
 
 |void| **update_add_related_labeled_by**\ (\ id\: :ref:`RID<class_RID>`, related_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_add_related_labeled_by>`
 
-Adds an element that labels this element.
+Ajoute un élément qui nomme cet élément.
 
 .. rst-class:: classref-item-separator
 
@@ -1279,9 +1279,9 @@ Adds an element that labels this element.
 
 |void| **update_add_related_radio_group**\ (\ id\: :ref:`RID<class_RID>`, related_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_add_related_radio_group>`
 
-Adds an element that is part of the same radio group.
+Ajoute un élément qui fait partie du même groupe radio.
 
-\ **Note:** This method should be called on each element of the group, using all other elements as ``related_id``.
+\ **Note :** Cette méthode devrait être appellée sur chaque élément du groupe, utilisant les autres éléments comme ``related_id``.
 
 .. rst-class:: classref-item-separator
 
@@ -1401,7 +1401,7 @@ Définit la description d'accessibilité de l'élément.
 
 |void| **update_set_error_message**\ (\ id\: :ref:`RID<class_RID>`, other_id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_error_message>`
 
-Sets an element which contains an error message for this element.
+Définit un élément qui contient un message d'erreur pour cet élément.
 
 .. rst-class:: classref-item-separator
 
@@ -1413,7 +1413,7 @@ Sets an element which contains an error message for this element.
 
 |void| **update_set_extra_info**\ (\ id\: :ref:`RID<class_RID>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_extra_info>`
 
-Sets element accessibility extra information added to the element name.
+Définit l'information supplémentaire d'accessibilité de l'élément, qui sera ajoutée au nom de l'élément.
 
 .. rst-class:: classref-item-separator
 
@@ -1497,7 +1497,7 @@ Définit le nombre d'éléments dans la liste.
 
 |void| **update_set_list_item_expanded**\ (\ id\: :ref:`RID<class_RID>`, expanded\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_list_item_expanded>`
 
-Sets list/tree item expanded status.
+Définit le statut étendu de liste/arbre/élément.
 
 .. rst-class:: classref-item-separator
 
@@ -1605,7 +1605,7 @@ Définit l'élément suivant sur la ligne.
 
 |void| **update_set_num_jump**\ (\ id\: :ref:`RID<class_RID>`, jump\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_num_jump>`
 
-Sets numeric value jump.
+Définit le saut de valeur numérique.
 
 .. rst-class:: classref-item-separator
 
@@ -1653,7 +1653,7 @@ Définit la valeur numérique.
 
 |void| **update_set_placeholder**\ (\ id\: :ref:`RID<class_RID>`, placeholder\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_placeholder>`
 
-Sets placeholder text.
+Définit le texte de remplacement.
 
 .. rst-class:: classref-item-separator
 
@@ -1665,7 +1665,7 @@ Sets placeholder text.
 
 |void| **update_set_popup_type**\ (\ id\: :ref:`RID<class_RID>`, popup\: :ref:`AccessibilityPopupType<enum_AccessibilityServer_AccessibilityPopupType>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_popup_type>`
 
-Sets popup type for popup buttons.
+Définit le type de popup pour les boutons popup.
 
 .. rst-class:: classref-item-separator
 
@@ -1689,7 +1689,7 @@ Sets previous element on the line.
 
 |void| **update_set_role**\ (\ id\: :ref:`RID<class_RID>`, role\: :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_role>`
 
-Sets element accessibility role.
+Définit le rôle d'accessibilité de l'élément.
 
 .. rst-class:: classref-item-separator
 
@@ -1701,7 +1701,7 @@ Sets element accessibility role.
 
 |void| **update_set_role_description**\ (\ id\: :ref:`RID<class_RID>`, description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_role_description>`
 
-Sets element accessibility role description text.
+Définit le texte de description du rôle d'accessibilité de l'élément.
 
 .. rst-class:: classref-item-separator
 
@@ -1869,7 +1869,7 @@ Définit l'alignement du texte de l'élément.
 
 |void| **update_set_text_decorations**\ (\ id\: :ref:`RID<class_RID>`, underline\: :ref:`bool<class_bool>`, strikethrough\: :ref:`bool<class_bool>`, overline\: :ref:`bool<class_bool>`, color\: :ref:`Color<class_Color>` = Color(0, 0, 0, 1)\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_text_decorations>`
 
-Sets text underline/overline/strikethrough.
+Sousligne/surligne/barre le texte.
 
 .. rst-class:: classref-item-separator
 

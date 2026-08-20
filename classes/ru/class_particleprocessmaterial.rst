@@ -620,7 +620,7 @@ enum **SubEmitterMode**: :ref:`🔗<enum_ParticleProcessMaterial_SubEmitterMode>
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_CONSTANT** = ``1``
 
-The submitter is emitted on the constant interval defined by :ref:`sub_emitter_frequency<class_ParticleProcessMaterial_property_sub_emitter_frequency>`.
+Субизлучатель генерирует данные с постоянным интервалом, определяемым параметром :ref:`sub_emitter_frequency<class_ParticleProcessMaterial_property_sub_emitter_frequency>`.
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_AT_END:
 
@@ -628,7 +628,7 @@ The submitter is emitted on the constant interval defined by :ref:`sub_emitter_f
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_AT_END** = ``2``
 
-The subemitter is emitted at the end of the particle's lifetime.
+Субизлучатель испускается в конце времени жизни частицы.
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_AT_COLLISION:
 
@@ -636,7 +636,7 @@ The subemitter is emitted at the end of the particle's lifetime.
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_AT_COLLISION** = ``3``
 
-The subemitter is emitted when the particle collides.
+Субизлучатель испускается при столкновении частиц.
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_AT_START:
 
@@ -644,7 +644,7 @@ The subemitter is emitted when the particle collides.
 
 :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **SUB_EMITTER_AT_START** = ``4``
 
-The subemitter is emitted when the particle spawns.
+Субизлучатель испускается при появлении частицы.
 
 .. _class_ParticleProcessMaterial_constant_SUB_EMITTER_MAX:
 

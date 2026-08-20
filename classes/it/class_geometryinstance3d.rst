@@ -150,7 +150,7 @@ enum **GIMode**: :ref:`🔗<enum_GeometryInstance3D_GIMode>`
 
 :ref:`GIMode<enum_GeometryInstance3D_GIMode>` **GI_MODE_DISABLED** = ``0``
 
-Modalità di illuminazione globale disabilitata. Da utilizzare per oggetti dinamici che non contribuiscono all'illuminazione globale (ad esempio per personaggi). Quando si utilizza :ref:`VoxelGI<class_VoxelGI>` e SDFGI, la geometria *riceverà* illuminazione indiretta e riflessi, ma la geometria non verrà considerata nel precalcolo GI.
+Modalità di illuminazione globale disabilitata. Da utilizzare per oggetti dinamici che non contribuiscono all'illuminazione globale (ad esempio per personaggi). Quando si utilizza :ref:`VoxelGI<class_VoxelGI>` e SDFGI, la geometria *riceverà* illuminazione indiretta e riflessi, ma la geometria non verrà considerata nel precalcolo di GI.
 
 .. _class_GeometryInstance3D_constant_GI_MODE_STATIC:
 
@@ -158,7 +158,7 @@ Modalità di illuminazione globale disabilitata. Da utilizzare per oggetti dinam
 
 :ref:`GIMode<enum_GeometryInstance3D_GIMode>` **GI_MODE_STATIC** = ``1``
 
-Modalità illuminazione globale precalcolata. Da usare per gli oggetti statici che contribuiscono all'illuminazione globale (come la geometria di un livello). Questa modalità GI è efficace quando si utilizzano :ref:`VoxelGI<class_VoxelGI>`, SDFGI e :ref:`LightmapGI<class_LightmapGI>`.
+Modalità illuminazione globale precalcolata. Da usare per gli oggetti statici che contribuiscono all'illuminazione globale (come la geometria di un livello). Questa modalità di GI è efficace quando si utilizzano :ref:`VoxelGI<class_VoxelGI>`, SDFGI e :ref:`LightmapGI<class_LightmapGI>`.
 
 .. _class_GeometryInstance3D_constant_GI_MODE_DYNAMIC:
 
@@ -286,7 +286,7 @@ Descrizioni delle proprietà
 - |void| **set_cast_shadows_setting**\ (\ value\: :ref:`ShadowCastingSetting<enum_GeometryInstance3D_ShadowCastingSetting>`\ )
 - :ref:`ShadowCastingSetting<enum_GeometryInstance3D_ShadowCastingSetting>` **get_cast_shadows_setting**\ (\ )
 
-The mode used to cast shadows from this instance.
+La modalità usata per proiettare ombre da questa istanza.
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ The mode used to cast shadows from this instance.
 - |void| **set_custom_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_custom_aabb**\ (\ )
 
-Overrides the bounding box of this node with a custom one. This can be used to avoid the expensive :ref:`AABB<class_AABB>` recalculation that happens when a skeleton is used with a :ref:`MeshInstance3D<class_MeshInstance3D>` or to have precise control over the :ref:`MeshInstance3D<class_MeshInstance3D>`'s bounding box. To use the default AABB, set value to an :ref:`AABB<class_AABB>` with all fields set to ``0.0``. To avoid frustum culling, set :ref:`custom_aabb<class_GeometryInstance3D_property_custom_aabb>` to a very large AABB that covers your entire game world such as ``AABB(-10000, -10000, -10000, 20000, 20000, 20000)``. To disable all forms of culling (including occlusion and layer culling), call :ref:`RenderingServer.instance_set_ignore_culling()<class_RenderingServer_method_instance_set_ignore_culling>` on the **GeometryInstance3D**'s :ref:`RID<class_RID>`.
+Sostituisce la bounding box di questo nodo con una personalizzata. Si può usare per evitare il costoso ricalcolo dell':ref:`AABB<class_AABB>` che avviene quando uno scheletro è usato con un :ref:`MeshInstance3D<class_MeshInstance3D>` o per avere un controllo preciso sulla bounding box del :ref:`MeshInstance3D<class_MeshInstance3D>`. Per usare l'AABB predefinito, imposta il valore su un :ref:`AABB<class_AABB>` con tutti i campi impostati su ``0.0``. Per evitare il frustum culling, imposta :ref:`custom_aabb<class_GeometryInstance3D_property_custom_aabb>` su un AABB molto grande che copra l'intero mondo di gioco come ``AABB(-10000, -10000, -10000, 20000, 20000, 20000)``. Per disabilitare ogni tipo di culling (incluso l'occlusion culling e il culling tramite strati), chiama :ref:`RenderingServer.instance_set_ignore_culling()<class_RenderingServer_method_instance_set_ignore_culling>` sull':ref:`RID<class_RID>` del **GeometryInstance3D**.
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Se a questa proprietà è assegnato un materiale, sarà renderizzato sopra quals
 - |void| **set_material_override**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_material_override**\ (\ )
 
-La sostituzione del materiale per l'intera geometria.
+Il materiale sostitutivo per l'intera geometria.
 
 Se a questa proprietà è assegnato un materiale, sarà utilizzato al posto di qualsiasi materiale impostato in qualsiasi slot di materiale della mesh.
 
@@ -493,7 +493,7 @@ Negli shader spatial, ``1.0 - transparency`` è impostato come valore predefinit
 - |void| **set_visibility_range_begin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_visibility_range_begin**\ (\ )
 
-Distanza iniziale da cui sarà visibile il GeometryInstance3D, tenendo conto anche di :ref:`visibility_range_begin_margin<class_GeometryInstance3D_property_visibility_range_begin_margin>`. Il valore predefinito di 0 è utilizzato per disabilitare il controllo del campo.
+Distanza iniziale da cui sarà visibile il GeometryInstance3D, tenendo conto anche di :ref:`visibility_range_begin_margin<class_GeometryInstance3D_property_visibility_range_begin_margin>`. Il valore predefinito di 0 serve per disabilitare la verifica dell'intervallo.
 
 .. rst-class:: classref-item-separator
 
@@ -529,7 +529,7 @@ Se :ref:`visibility_range_fade_mode<class_GeometryInstance3D_property_visibility
 - |void| **set_visibility_range_end**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_visibility_range_end**\ (\ )
 
-Distanza da cui sarà nascosto il GeometryInstance3D, tenendo conto anche di :ref:`visibility_range_end_margin<class_GeometryInstance3D_property_visibility_range_end_margin>`. Il valore predefinito di 0 è utilizzato per disabilitare il controllo del campo.
+Distanza da cui sarà nascosto il GeometryInstance3D, tenendo conto anche di :ref:`visibility_range_end_margin<class_GeometryInstance3D_property_visibility_range_end_margin>`. Il valore predefinito di 0 serve per disabilitare la verifica dell'intervallo.
 
 .. rst-class:: classref-item-separator
 
@@ -606,7 +606,7 @@ Imposta il valore di un'uniforme di shader solo per questa istanza (`uniforme pe
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

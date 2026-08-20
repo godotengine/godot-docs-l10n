@@ -183,9 +183,9 @@ enum **CompressionLevel**: :ref:`🔗<enum_ZIPPacker_CompressionLevel>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_directory**\ (\ path\: :ref:`String<class_String>`, permissions\: |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\] = 493, modified_time\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ZIPPacker_method_add_directory>`
 
-Adds directory to the archive. If ``modified_time`` is set to ``0``, current system time is used.
+Добавляет каталог в архив. Если ``modified_time`` установлен в ``0``, используется текущее системное время.
 
-\ **Note:** Directories are automatically created when :ref:`start_file()<class_ZIPPacker_method_start_file>` is called, use this function before adding files to create directories with custom permissions and modification time.
+\ **Примечание:** Каталоги автоматически создаются при вызове :ref:`start_file()<class_ZIPPacker_method_start_file>`. Используйте эту функцию перед добавлением файлов, чтобы создать каталоги с пользовательскими правами доступа и временем модификации.
 
 .. rst-class:: classref-item-separator
 
@@ -237,9 +237,9 @@ Adds directory to the archive. If ``modified_time`` is set to ``0``, current sys
 
 :ref:`Error<enum_@GlobalScope_Error>` **start_file**\ (\ path\: :ref:`String<class_String>`, permissions\: |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\] = 420, modified_time\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ZIPPacker_method_start_file>`
 
-Starts writing to a file within the archive. Only one file can be written at the same time. If ``modified_time`` is set to ``0``, current system time is used.
+Начинает запись в файл внутри архива. Одновременно может быть записан только один файл. Если ``modified_time`` установлен в ``0``, используется текущее системное время.
 
-Must be called after :ref:`open()<class_ZIPPacker_method_open>`.
+Должен вызываться после :ref:`open()<class_ZIPPacker_method_open>`.
 
 .. rst-class:: classref-item-separator
 

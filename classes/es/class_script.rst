@@ -269,7 +269,7 @@ Devuelve la lista de señales definidas en este **Script**.
 
 :ref:`bool<class_bool>` **has_script_method**\ (\ method_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Script_method_has_script_method>`
 
-Returns ``true`` if the script, or a base class, defines a method with the given name.
+Devuelve ``true`` si el script, o una clase base, define un método con el nombre dado.
 
 .. rst-class:: classref-item-separator
 

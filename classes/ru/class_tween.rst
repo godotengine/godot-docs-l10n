@@ -14,13 +14,13 @@ Tween
 Описание
 ----------------
 
-Tweens are mostly useful for animations requiring a numerical property to be interpolated over a range of values. The name *tween* comes from *in-betweening*, an animation technique where you specify *keyframes* and the computer interpolates the frames that appear between them. Animating something with a **Tween** is called tweening.
+Tween, в основном, полезны для анимаций, требующих интерполяции числового свойства по диапазону значений. Название *tween* происходит от *in-betweening*, техники анимации, при которой вы указываете *ключевые кадры*, а компьютер интерполирует кадры, которые появляются между ними. Анимация чего-либо с помощью **Tween** называется созданием промежуточных кадров.
 
-\ **Tween** is more suited than :ref:`AnimationPlayer<class_AnimationPlayer>` for animations where you don't know the final values in advance. For example, interpolating a dynamically-chosen camera zoom value is best done with a **Tween**; it would be difficult to do the same thing with an :ref:`AnimationPlayer<class_AnimationPlayer>` node. Tweens are also more light-weight than :ref:`AnimationPlayer<class_AnimationPlayer>`, so they are very much suited for simple animations or general tasks that don't require visual tweaking provided by the editor. They can be used in a "fire-and-forget" manner for some logic that normally would be done by code. You can e.g. make something shoot periodically by using a looped :ref:`CallbackTweener<class_CallbackTweener>` with a delay.
+\ **Tween** больше подходит, чем :ref:`AnimationPlayer<class_AnimationPlayer>`, для анимаций, где заранее неизвестны конечные значения. Например, интерполяцию динамически выбранного значения масштабирования камеры лучше всего осуществлять с помощью **Tween**; сделать то же самое с помощью узла :ref:`AnimationPlayer<class_AnimationPlayer>` будет сложно. Анимированные анимации также более легковесны, чем :ref:`AnimationPlayer<class_AnimationPlayer>`, поэтому они отлично подходят для простых анимаций или общих задач, не требующих визуальной настройки, предоставляемой редактором. Их можно использовать по принципу «запустил и забыл» для некоторой логики, которая обычно выполняется с помощью кода. Например, можно заставить что-то периодически стрелять, используя циклический :ref:`CallbackTweener<class_CallbackTweener>` с задержкой.
 
-A **Tween** can be created by using either :ref:`SceneTree.create_tween()<class_SceneTree_method_create_tween>` or :ref:`Node.create_tween()<class_Node_method_create_tween>`. **Tween**\ s created manually (i.e. by using ``Tween.new()``) are invalid and can't be used for tweening values.
+\ **Tween** можно создать с помощью :ref:`SceneTree.create_tween()<class_SceneTree_method_create_tween>` или :ref:`Node.create_tween()<class_Node_method_create_tween>`. **Tween**-ы, созданные вручную (т. е. с помощью ``Tween.new()``), недействительны и не могут использоваться для значений tween.
 
-A tween animation is created by adding :ref:`Tweener<class_Tweener>`\ s to the **Tween** object, using :ref:`tween_property()<class_Tween_method_tween_property>`, :ref:`tween_interval()<class_Tween_method_tween_interval>`, :ref:`tween_callback()<class_Tween_method_tween_callback>`, :ref:`tween_method()<class_Tween_method_tween_method>`, :ref:`tween_subtween()<class_Tween_method_tween_subtween>`, or :ref:`tween_await()<class_Tween_method_tween_await>`:
+Анимация перехода между кадрами создается путем добавления :ref:`Tweener<class_Tweener>` к объекту **Tween** с помощью :ref:`tween_property()<class_Tween_method_tween_property>`, :ref:`tween_interval()<class_Tween_method_tween_interval>`, :ref:`tween_callback()<class_Tween_method_tween_callback>` или :ref:`tween_method()<class_Tween_method_tween_method>`:
 
 
 .. tabs::
@@ -41,9 +41,9 @@ A tween animation is created by adding :ref:`Tweener<class_Tweener>`\ s to the *
 
 
 
-This sequence will make the ``$Sprite`` node turn red, then shrink, before finally calling :ref:`Node.queue_free()<class_Node_method_queue_free>` to free the sprite. :ref:`Tweener<class_Tweener>`\ s are executed one after another by default. This behavior can be changed using :ref:`parallel()<class_Tween_method_parallel>` and :ref:`set_parallel()<class_Tween_method_set_parallel>`.
+Эта последовательность заставит узел ``$Sprite`` стать красным, затем уменьшиться, прежде чем наконец вызвать :ref:`Node.queue_free()<class_Node_method_queue_free>` для освобождения спрайта. По умолчанию :ref:`Tweener<class_Tweener>`-ы выполняются один за другим. Это поведение можно изменить с помощью :ref:`parallel()<class_Tween_method_parallel>` и :ref:`set_parallel()<class_Tween_method_set_parallel>`.
 
-When a :ref:`Tweener<class_Tweener>` is created with one of the ``tween_*`` methods, a chained method call can be used to tweak the properties of this :ref:`Tweener<class_Tweener>`. For example, if you want to set a different transition type in the above example, you can use :ref:`set_trans()<class_Tween_method_set_trans>`:
+Когда :ref:`Tweener<class_Tweener>` создается с помощью одного из методов ``tween_*``, можно использовать цепочку вызовов методов для настройки свойств этого :ref:`Tweener<class_Tweener>`. Например, если вы хотите установить другой тип перехода в приведенном выше примере, вы можете использовать :ref:`set_trans()<class_Tween_method_set_trans>`:
 
 
 .. tabs::
@@ -64,7 +64,7 @@ When a :ref:`Tweener<class_Tweener>` is created with one of the ``tween_*`` meth
 
 
 
-Most of the **Tween** methods can be chained this way too. In the following example the **Tween** is bound to the running script's node and a default transition is set for its :ref:`Tweener<class_Tweener>`\ s:
+Большинство методов **Tween** также можно объединить в цепочку подобным образом. В следующем примере **Tween** привязан к узлу работающего скрипта, а для его :ref:`Tweener<class_Tweener>`-ы установлены в переход по умолчанию:
 
 
 .. tabs::
@@ -85,7 +85,7 @@ Most of the **Tween** methods can be chained this way too. In the following exam
 
 
 
-Another interesting use for **Tween**\ s is animating arbitrary sets of objects:
+Еще одно интересное применение **Tween**-ов — анимация произвольных наборов объектов:
 
 
 .. tabs::
@@ -104,9 +104,9 @@ Another interesting use for **Tween**\ s is animating arbitrary sets of objects:
 
 
 
-In the example above, all children of a node are moved one after another to position ``(0, 0)``.
+В приведенном выше примере все дочерние элементы узла перемещаются один за другим в позицию ``(0, 0)``.
 
-You should avoid using more than one **Tween** per object's property. If two or more tweens animate one property at the same time, the last one created will take priority and assign the final value. If you want to interrupt and restart an animation, consider assigning the **Tween** to a variable:
+Следует избегать использования более одного **Tween** на одно свойство объекта. Если два или более tweens одновременно анимируют одно свойство, то последний созданный tween будет иметь приоритет и назначит окончательное значение. Если вы хотите прервать и возобновить анимацию, рассмотрите возможность назначения **Tween** переменной:
 
 
 .. tabs::
@@ -116,7 +116,7 @@ You should avoid using more than one **Tween** per object's property. If two or 
     var tween
     func animate():
         if tween:
-            tween.kill() # Abort the previous animation.
+            tween.kill() # Отменить предыдущую анимацию.
         tween = create_tween()
 
  .. code-tab:: csharp
@@ -126,19 +126,19 @@ You should avoid using more than one **Tween** per object's property. If two or 
     public void Animate()
     {
         if (_tween != null)
-            _tween.Kill(); // Abort the previous animation
+            _tween.Kill(); // Отменить предыдущую анимацию.
         _tween = CreateTween();
     }
 
 
 
-Some :ref:`Tweener<class_Tweener>`\ s use transitions and eases. The first accepts a :ref:`TransitionType<enum_Tween_TransitionType>` constant, and refers to the way the timing of the animation is handled (see `easings.net <https://easings.net/>`__ for some examples). The second accepts an :ref:`EaseType<enum_Tween_EaseType>` constant, and controls where the ``trans_type`` is applied to the interpolation (in the beginning, the end, or both). If you don't know which transition and easing to pick, you can try different :ref:`TransitionType<enum_Tween_TransitionType>` constants with :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>`, and use the one that looks best.
+Некоторые :ref:`Tweener<class_Tweener>`-ы используют переходы и замедления. Первый принимает константу :ref:`TransitionType<enum_Tween_TransitionType>` и определяет способ обработки времени анимации (см. `easings.net <https://easings.net/>`__ для некоторых примеров). Второй принимает константу :ref:`EaseType<enum_Tween_EaseType>` и управляет тем, где ``trans_type`` применяется к интерполяции (в начале, в конце или в обоих случаях). Если вы не знаете, какой переход и замедление выбрать, вы можете попробовать разные константы :ref:`TransitionType<enum_Tween_TransitionType>` с :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>` и использовать ту, которая выглядит лучше всего.
 
-\ `Tween easing and transition types cheatsheet <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/tween_cheatsheet.webp>`__\ 
+\ `Шпаргалка по типам анимации и переходов <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/tween_cheatsheet.webp>`__\ 
 
-\ **Note:** Tweens are not designed to be reused and trying to do so results in an undefined behavior. Create a new Tween for each animation and every time you replay an animation from start. Keep in mind that Tweens start immediately, so only create a Tween when you want to start animating.
+\ **Примечание:** Tween-ы не предназначены для повторного использования, и попытка сделать это приводит к непредсказуемому поведению. Создавайте новый Tween для каждой анимации и каждый раз, когда вы воспроизводите анимацию с самого начала. Помните, что Tween-ы запускаются немедленно, поэтому создавайте Tween только тогда, когда хотите начать анимацию.
 
-\ **Note:** The tween is processed after all of the nodes in the current frame, i.e. node's :ref:`Node._process()<class_Node_private_method__process>` method would be called before the tween (or :ref:`Node._physics_process()<class_Node_private_method__physics_process>` depending on the value passed to :ref:`set_process_mode()<class_Tween_method_set_process_mode>`).
+\ **Примечание:** Анимация обрабатывается после всех узлов в текущем кадре, т.е. метод узла :ref:`Node._process()<class_Node_private_method__process>` будет вызван до анимации (или :ref:`Node._physics_process()<class_Node_private_method__physics_process>` в зависимости от значения, переданного в :ref:`set_process_mode()<class_Tween_method_set_process_mode>`).
 
 .. rst-class:: classref-reftable-group
 
@@ -560,7 +560,7 @@ enum **EaseType**: :ref:`🔗<enum_Tween_EaseType>`
 
 :ref:`bool<class_bool>` **has_tweeners**\ (\ ) |const| :ref:`🔗<class_Tween_method_has_tweeners>`
 
-Returns ``true`` if any :ref:`Tweener<class_Tweener>` has been added to the **Tween** and the **Tween** is valid. Useful when tweeners are added dynamically and the tween can end up empty. Killing an empty tween before it starts will prevent errors.
+Возвращает ``true``, если в **Tween** был добавлен хотя бы один :ref:`Tweener<class_Tweener>` и **Tween** действителен. Полезно, когда твинеры добавляются динамически, и твин может оказаться пустым. Уничтожение пустого твина до его запуска предотвратит ошибки.
 
 .. rst-class:: classref-item-separator
 
@@ -691,9 +691,9 @@ Returns ``true`` if any :ref:`Tweener<class_Tweener>` has been added to the **Tw
 
 :ref:`Tween<class_Tween>` **set_ease**\ (\ ease\: :ref:`EaseType<enum_Tween_EaseType>`\ ) :ref:`🔗<class_Tween_method_set_ease>`
 
-Sets the default ease type for :ref:`PropertyTweener<class_PropertyTweener>`\ s and :ref:`MethodTweener<class_MethodTweener>`\ s appended after this method.
+Устанавливает тип плавности по умолчанию для :ref:`PropertyTweener<class_PropertyTweener>` и :ref:`MethodTweener<class_MethodTweener>`, добавленных после этого метода.
 
-Before this method is called, the default ease type is :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>`.
+Перед вызовом этого метода тип плавности по умолчанию — :ref:`EASE_IN_OUT<class_Tween_constant_EASE_IN_OUT>`.
 
 
 .. tabs::
@@ -701,16 +701,16 @@ Before this method is called, the default ease type is :ref:`EASE_IN_OUT<class_T
  .. code-tab:: gdscript
 
     var tween = create_tween()
-    tween.tween_property(self, "position", Vector2(300, 0), 0.5) # Uses EASE_IN_OUT.
+    tween.tween_property(self, "position", Vector2(300, 0), 0.5) # Использует EASE_IN_OUT.
     tween.set_ease(Tween.EASE_IN)
-    tween.tween_property(self, "rotation_degrees", 45.0, 0.5) # Uses EASE_IN.
+    tween.tween_property(self, "rotation_degrees", 45.0, 0.5) # Использует EASE_IN.
 
  .. code-tab:: csharp
 
     Tween tween = CreateTween();
-    tween.TweenProperty(this, "position", new Vector2(300, 0), 0.5); // Uses EaseType.InOut.
+    tween.TweenProperty(this, "position", new Vector2(300, 0), 0.5); // Использует EaseType.InOut.
     tween.SetEase(Tween.EaseType.In);
-    tween.TweenProperty(this, "rotation_degrees", 45.0, 0.5); // Uses EaseType.In.
+    tween.TweenProperty(this, "rotation_degrees", 45.0, 0.5); // Использует EaseType.In.
 
 
 
@@ -865,13 +865,13 @@ Before this method is called, the default ease type is :ref:`EASE_IN_OUT<class_T
 
 :ref:`AwaitTweener<class_AwaitTweener>` **tween_await**\ (\ signal\: :ref:`Signal<class_Signal>`\ ) :ref:`🔗<class_Tween_method_tween_await>`
 
-Creates and appends an :ref:`AwaitTweener<class_AwaitTweener>`. This method can be used to await a signal to be emitted and create asynchronous animations or cutscenes.
+Создаёт и добавляет :ref:`AwaitTweener<class_AwaitTweener>`. Этот метод можно использовать для ожидания сигнала и создания асинхронных анимаций или кат-сцен.
 
-The animation will not progress to the next step until the awaited signal is emitted or the connection becomes invalid (e.g. as a result of freeing the target object). If you know that the emission may not happen, use :ref:`AwaitTweener.set_timeout()<class_AwaitTweener_method_set_timeout>`.
+Анимация не перейдёт к следующему шагу, пока не будет испущен ожидаемый сигнал или соединение не станет недействительным (например, в результате освобождения целевого объекта). Если вы знаете, что сигнал может не испуститься, используйте :ref:`AwaitTweener.set_timeout()<class_AwaitTweener_method_set_timeout>`.
 
-\ **Note:** The awaited signal should be emitted during the step when :ref:`AwaitTweener<class_AwaitTweener>` is active.
+\ **Примечание:** Ожидаемый сигнал должен испускаться во время шага, когда :ref:`AwaitTweener<class_AwaitTweener>` активен.
 
-\ **Example:** An object launches itself and explodes upon collision or after 4 seconds.
+\ **Пример:** Объект запускает себя и взрывается при столкновении или через 4 секунды.
 
 ::
 
@@ -880,7 +880,7 @@ The animation will not progress to the next step until the awaited signal is emi
     tween.tween_await(collided).set_timeout(4.0)
     tween.tween_callback(explode)
 
-\ **Example:** A character walks to a specific point, says some lines and walks back when the player closes the message box.
+\ **Пример:** Персонаж идёт к определённой точке, говорит несколько фраз и возвращается назад, когда игрок закрывает окно сообщения.
 
 ::
 
@@ -891,7 +891,7 @@ The animation will not progress to the next step until the awaited signal is emi
     tween.tween_await(dialogue_closed)
     tween.tween_callback(walk_to.bind(0.0))
 
-\ **Note:** If you are awaiting a signal from a callback called in the same **Tween**, make sure the signal is emitted *after* the await starts. If it can't be reasonably guaranteed, you can await and emit in the same step:
+\ **Примечание:** Если вы ожидаете сигнал от обратного вызова, вызванного в том же **Tween**, убедитесь, что сигнал испускается *после* начала ожидания. Если это невозможно гарантировать, вы можете ожидать и испускать сигнал на одном шаге:
 
 ::
 

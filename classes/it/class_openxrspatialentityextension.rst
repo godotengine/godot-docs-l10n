@@ -9,14 +9,14 @@ OpenXRSpatialEntityExtension
 
 **Eredita:** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-OpenXR extension that handles spatial entities.
+Estensione di OpenXR che gestisce entità spaziali.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-OpenXR extension that handles spatial entities and, when enabled, allows querying those spatial entities. This extension will also automatically manage :ref:`XRTracker<class_XRTracker>` objects for static entities.
+Estensione di OpenXR che gestisce entità spaziali e, se abilitata, consente di interrogarle. Questa estensione gestirà automaticamente anche gli oggetti :ref:`XRTracker<class_XRTracker>` per le entità statiche.
 
 .. rst-class:: classref-reftable-group
 
@@ -150,7 +150,7 @@ Capacità di tracciamento dei marcatori basata su marcatori Aruco.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_APRIL_TAG** = ``1000743003``
 
-Capacità di tracciamento dei marcatori basata su tag April.
+Capacità di tracciamento dei marcatori basata su April tag.
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_ANCHOR:
 
@@ -176,7 +176,7 @@ enum **ComponentType**: :ref:`🔗<enum_OpenXRSpatialEntityExtension_ComponentTy
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_BOUNDED_2D** = ``1``
 
-Component that provides the 2D bounds for a spatial entity. The corresponding list structure is ``XrSpatialComponentBounded2DListEXT``; the corresponding data structure is ``XrSpatialBounded2DDataEXT``.
+Componente che fornisce i limiti 2D per un'entità spaziale. La struttura di lista corrispondente è ``XrSpatialComponentBounded2DListEXT``; la struttura dati corrispondente è ``XrSpatialBounded2DDataEXT``.
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_BOUNDED_3D:
 
@@ -184,7 +184,7 @@ Component that provides the 2D bounds for a spatial entity. The corresponding li
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_BOUNDED_3D** = ``2``
 
-Component that provides the 3D bounds for a spatial entity. The corresponding list structure is ``XrSpatialComponentBounded3DListEXT``; the corresponding data structure is ``XrBoxf``.
+Componente che fornisce i limiti 3D per un'entità spaziale. La struttura di lista corrispondente è ``XrSpatialComponentBounded3DListEXT``; la struttura dati corrispondente è ``XrBoxf``.
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_PARENT:
 
@@ -192,7 +192,7 @@ Component that provides the 3D bounds for a spatial entity. The corresponding li
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_PARENT** = ``3``
 
-Component that provides the XrSpatialEntityIdEXT of the parent for a spatial entity. The corresponding list structure is ``XrSpatialComponentParentListEXT``; the corresponding data structure is ``XrSpatialEntityIdEXT``.
+Componente che fornisce l'XrSpatialEntityIdEXT del padre per un'entità spaziale. La struttura di lista corrispondente è ``XrSpatialComponentParentListEXT``; la struttura dati corrispondente è ``XrSpatialEntityIdEXT``.
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_MESH_3D:
 
@@ -200,7 +200,7 @@ Component that provides the XrSpatialEntityIdEXT of the parent for a spatial ent
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_MESH_3D** = ``4``
 
-Component that provides a 3D mesh for a spatial entity. The corresponding list structure is ``XrSpatialComponentMesh3DListEXT``; the corresponding data structure is ``XrSpatialMeshDataEXT``.
+Componente che fornisce una mesh 3D per un'entità spaziale. La struttura di lista corrispondente è ``XrSpatialComponentMesh3DListEXT``; la struttura dati corrispondente è ``XrSpatialMeshDataEXT``.
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_PLANE_ALIGNMENT:
 
@@ -208,7 +208,7 @@ Component that provides a 3D mesh for a spatial entity. The corresponding list s
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_PLANE_ALIGNMENT** = ``1000741000``
 
-Component that provides the plane alignment enum for a spatial entity. The corresponding list structure is ``XrSpatialComponentPlaneAlignmentListEXT``; the corresponding data structure is ``XrSpatialPlaneAlignmentEXT`` (Added by the ``XR_EXT_spatial_plane_tracking`` extension).
+Componente che fornisce l'enumerazione dell'allineamento di un piano per un'entità spaziale. La struttura di lista corrispondente è ``XrSpatialComponentPlaneAlignmentListEXT``; la struttura dati corrispondente è ``XrSpatialPlaneAlignmentEXT`` (aggiunta dall'estensione ``XR_EXT_spatial_plane_tracking``).
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_MESH_2D:
 
@@ -216,7 +216,7 @@ Component that provides the plane alignment enum for a spatial entity. The corre
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_MESH_2D** = ``1000741001``
 
-Component that provides a 2D mesh for a spatial entity. The corresponding list structure is ``XrSpatialComponentMesh2DListEXT``; the corresponding data structure is ``XrSpatialMeshDataEXT`` (Added by the ``XR_EXT_spatial_plane_tracking`` extension).
+Componente che fornisce una mesh 2D per un'entità spaziale. La struttura di lista corrispondente è ``XrSpatialComponentMesh2DListEXT``; la struttura dati corrispondente è ``XrSpatialMeshDataEXT`` (aggiunta dall'estensione ``XR_EXT_spatial_plane_tracking``).
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_POLYGON_2D:
 
@@ -224,7 +224,7 @@ Component that provides a 2D mesh for a spatial entity. The corresponding list s
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_POLYGON_2D** = ``1000741002``
 
-Component that provides a 2D boundary polygon for a spatial entity. The corresponding list structure is ``XrSpatialComponentPolygon2DListEXT``; the corresponding data structure is ``XrSpatialPolygon2DDataEXT`` (Added by the ``XR_EXT_spatial_plane_tracking`` extension).
+Componente che fornisce una poligono di confine 2D per un'entità spaziale. La struttura di lista corrispondente è ``XrSpatialComponentPolygon2DListEXT``; la struttura dati corrispondente è ``XrSpatialPolygon2DDataEXT`` (aggiunta dall'estensione ``XR_EXT_spatial_plane_tracking``).
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_PLANE_SEMANTIC_LABEL:
 
@@ -232,7 +232,7 @@ Component that provides a 2D boundary polygon for a spatial entity. The correspo
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_PLANE_SEMANTIC_LABEL** = ``1000741003``
 
-Component that provides a semantic label for a plane. The corresponding list structure is ``XrSpatialComponentPlaneSemanticLabelListEXT``; the corresponding data structure is ``XrSpatialPlaneSemanticLabelEXT`` (Added by the ``XR_EXT_spatial_plane_tracking`` extension).
+Componente che fornisce un'etichetta semantica per un piano. La struttura di lista corrispondente è ``XrSpatialComponentPlaneSemanticLabelListEXT``; la struttura dati corrispondente è ``XrSpatialPlaneSemanticLabelEXT`` (aggiunta dall'estensione ``XR_EXT_spatial_plane_tracking``).
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_MARKER:
 
@@ -240,7 +240,7 @@ Component that provides a semantic label for a plane. The corresponding list str
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_MARKER** = ``1000743000``
 
-A component describing the marker type, ID and location. The corresponding list structure is ``XrSpatialComponentMarkerListEXT``; the corresponding data structure is ``XrSpatialMarkerDataEXT`` (Added by the ``XR_EXT_spatial_marker_tracking`` extension).
+Componente che describe il tipo di marcatore, l'ID e posizione. La struttura di lista corrispondente è ``XrSpatialComponentMarkerListEXT``; la struttura dati corrispondente è ``XrSpatialMarkerDataEXT`` (aggiunta dall'estensione ``XR_EXT_spatial_marker_tracking``).
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_ANCHOR:
 
@@ -256,7 +256,7 @@ Componente che fornisce la posizione per un ancoraggio. La struttura di elenco c
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_PERSISTENCE** = ``1000763000``
 
-Component that provides the persisted UUID for a spatial entity. The corresponding list structure is ``XrSpatialComponentPersistenceListEXT; the corresponding data structure is [code]XrSpatialPersistenceDataEXT`` (Added by the ``XR_EXT_spatial_persistence`` extension).
+Componente che fornisce l'UUID persistente per un'entità spaziale. La struttura di lista corrispondente è ``XrSpatialComponentPersistenceListEXT; la struttura dati corrispondente è [code]XrSpatialPersistenceDataEXT`` (aggiunta dall'estensione ``XR_EXT_spatial_persistence``).
 
 .. rst-class:: classref-section-separator
 
@@ -273,7 +273,7 @@ Descrizioni dei metodi
 
 :ref:`RID<class_RID>` **add_spatial_entity**\ (\ spatial_context\: :ref:`RID<class_RID>`, entity_id\: :ref:`int<class_int>`, entity\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_add_spatial_entity>`
 
-Registers an entity that was created directly on the OpenXR runtime.
+Registra un'entità che è stata creata direttamente nel runtime OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -285,11 +285,11 @@ Registers an entity that was created directly on the OpenXR runtime.
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **create_spatial_context**\ (\ capability_configurations\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>`\], next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`
 
-Creates a new spatial context that handles entities for the provided capability configurations. ``capability_configurations`` is an array of :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` with the needed capability configuration data.
+Crea un nuovo contesto spaziale che gestisce le entità per le configurazioni di capacità fornite. ``capability_configurations`` è un array di :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` contenente i dati di configurazione delle capacità necessari.
 
-\ ``next`` is an optional parameter that can contain additional information for creating our spatial context.
+\ ``next`` è un parametro facoltativo che può contenere ulteriori informazioni per creare il contesto spaziale.
 
-\ **Note:** This is an asynchronous method and returns an :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` object with which to track the status, discarding this object will not cancel the creation process. On success ``user_callback`` will be called if specified. The result data for this function is the :ref:`RID<class_RID>` for our spatial context.
+\ **Nota:** Questo è un metodo asincrono e restituisce un oggetto :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` con cui tenere traccia dello stato; scartare questo oggetto non annullerà il processo di creazione. In caso di successo, verrà richiamato ``user_callback`` se specificato. I dati risultanti da questa funzione sono il :ref:`RID<class_RID>` del contesto spaziale.
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ Creates a new spatial context that handles entities for the provided capability 
 
 Avvia una nuova richiesta di individuazione, che raccoglierà tutti gli oggetti tracciati dal contesto spaziale ``spatial_context`` che hanno almeno uno dei tipi di componente specificati in ``component_types``.
 
-\ ``next`` è un parametro facoltativo che può contenere ulteriori informazioni per l'esecuzione della richiesta di individuazione.
+\ ``next`` è un parametro facoltativo che può contenere ulteriori informazioni per eseguire la richiesta di individuazione.
 
 \ **Nota:** Questo è un metodo asincrono e restituisce un oggetto :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` con cui tenere traccia dello stato; scartare questo oggetto non annullerà il processo di individuazione. In caso di successo, verrà richiamata la funzione ``user_callback`` se specificata. I dati risultanti per questa funzione sono il :ref:`RID<class_RID>` del nostro snapshot.
 
@@ -317,7 +317,7 @@ Avvia una nuova richiesta di individuazione, che raccoglierà tutti gli oggetti 
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **discover_spatial_entities_with_component_data**\ (\ spatial_context\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities_with_component_data>`
 
-Convenience method when the caller only has an :ref:`Array<class_Array>` of :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` and needs to discover spatial entities.
+Metodo di convenienza quando il chiamante ha solo un :ref:`Array<class_Array>` di :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` e deve individuare entità spaziali.
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ Convenience method when the caller only has an :ref:`Array<class_Array>` of :ref
 
 :ref:`RID<class_RID>` **find_spatial_entity**\ (\ entity_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_find_spatial_entity>`
 
-Returns the :ref:`RID<class_RID>` for the specified spatial entity ID.
+Restituisce l':ref:`RID<class_RID>` per l'ID di entità spaziale specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ Returns the :ref:`RID<class_RID>` for the specified spatial entity ID.
 
 |void| **free_spatial_context**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_free_spatial_context>`
 
-Frees a spatial context previously created when calling :ref:`create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`. If the spatial context creation is still ongoing, the asynchronous process is cancelled.
+Libera un contesto spaziale creato in precedenza tramite :ref:`create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`. Se la creazione del contesto spaziale è ancora in corso, il processo asincrono viene annullato.
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ Frees a spatial context previously created when calling :ref:`create_spatial_con
 
 |void| **free_spatial_entity**\ (\ entity\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_free_spatial_entity>`
 
-Frees an entity previously created when calling :ref:`add_spatial_entity()<class_OpenXRSpatialEntityExtension_method_add_spatial_entity>` or :ref:`make_spatial_entity()<class_OpenXRSpatialEntityExtension_method_make_spatial_entity>`.
+Libera un'entità creata in precedenza tramite :ref:`add_spatial_entity()<class_OpenXRSpatialEntityExtension_method_add_spatial_entity>` o :ref:`make_spatial_entity()<class_OpenXRSpatialEntityExtension_method_make_spatial_entity>`.
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ Frees an entity previously created when calling :ref:`add_spatial_entity()<class
 
 |void| **free_spatial_snapshot**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_free_spatial_snapshot>`
 
-Frees a spatial snapshot previously created when calling :ref:`discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`. If the spatial snapshot creation is still ongoing, the asynchronous process is cancelled.
+Libera uno snapshot spaziale creato in precedenza tramite :ref:`discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`. Se la creazione dello snapshot spaziale è ancora in corso, il processo asincrono viene annullato.
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ Frees a spatial snapshot previously created when calling :ref:`discover_spatial_
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_float_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_float_buffer>`
 
-Returns a buffer with floats from a buffer that was retrieved when taking a snapshot.
+Restituisce un buffer con valori float da un buffer recuperato alla cattura di uno snapshot.
 
 .. rst-class:: classref-item-separator
 
@@ -389,9 +389,9 @@ Returns a buffer with floats from a buffer that was retrieved when taking a snap
 
 :ref:`int<class_int>` **get_spatial_context_handle**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_context_handle>`
 
-Returns the OpenXR spatial context handle for this snapshot.
+Restituisce il gestore OpenXR del contesto spaziale per questo snapshot.
 
-\ **Note:** This method is intended to be used from GDExtensions that implement spatial entity capability handlers.
+\ **Nota:** Questo metodo è destinato all'uso da GDExtension che implementano gestori di capacità di entità spaziali.
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ Returns the OpenXR spatial context handle for this snapshot.
 
 :ref:`bool<class_bool>` **get_spatial_context_ready**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_context_ready>`
 
-Returns ``true`` if the spatial context finished its creation and is ready to be used.
+Restituisce ``true`` se il contesto spaziale ha terminato la sua creazione ed è pronto all'uso.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ Returns ``true`` if the spatial context finished its creation and is ready to be
 
 :ref:`RID<class_RID>` **get_spatial_entity_context**\ (\ entity\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_entity_context>`
 
-Returns the spatial context for this entity.
+Restituisce il contesto spaziale per questa entità.
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ Restituisce il ``XrSpatialEntityIdEXT`` interno associato all'entità.
 
 :ref:`RID<class_RID>` **get_spatial_snapshot_context**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_snapshot_context>`
 
-Returns the spatial context related to this spatial snapshot.
+Restituisce il contesto spaziale relativo a questo snapshot spaziale.
 
 .. rst-class:: classref-item-separator
 
@@ -451,9 +451,9 @@ Returns the spatial context related to this spatial snapshot.
 
 :ref:`int<class_int>` **get_spatial_snapshot_handle**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_snapshot_handle>`
 
-Returns the OpenXR spatial snapshot handle for this snapshot.
+Restituisce il gestore OpenXR dello snapshot spaziale per questo snapshot.
 
-\ **Note:** This method is intended to be used from GDExtensions that implement spatial entity capability handlers.
+\ **Nota:** Questo metodo è destinato all'uso da GDExtension che implementano gestori di capacità di entità spaziali.
 
 .. rst-class:: classref-item-separator
 
@@ -465,7 +465,7 @@ Returns the OpenXR spatial snapshot handle for this snapshot.
 
 :ref:`String<class_String>` **get_string**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_string>`
 
-Returns a string from a buffer that was retrieved when taking a snapshot.
+Restituisce una stringa da un buffer recuperato alla cattura di uno snapshot.
 
 .. rst-class:: classref-item-separator
 
@@ -477,7 +477,7 @@ Returns a string from a buffer that was retrieved when taking a snapshot.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_uint8_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_uint8_buffer>`
 
-Returns a buffer with 8 bit ints from a buffer that was retrieved when taking a snapshot.
+Restituisce un buffer con interi a 8 bit da un buffer recuperato alla cattura di uno snapshot.
 
 .. rst-class:: classref-item-separator
 
@@ -489,7 +489,7 @@ Returns a buffer with 8 bit ints from a buffer that was retrieved when taking a 
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_uint16_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_uint16_buffer>`
 
-Returns a buffer with 16 bit ints from a buffer that was retrieved when taking a snapshot.
+Restituisce un buffer con interi a 16 bit da un buffer recuperato alla cattura di uno snapshot.
 
 .. rst-class:: classref-item-separator
 
@@ -501,7 +501,7 @@ Returns a buffer with 16 bit ints from a buffer that was retrieved when taking a
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_uint32_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_uint32_buffer>`
 
-Returns a buffer with 32 bit ints from a buffer that was retrieved when taking a snapshot.
+Restituisce un buffer con interi a 32 bit da un buffer recuperato alla cattura di uno snapshot.
 
 .. rst-class:: classref-item-separator
 
@@ -513,7 +513,7 @@ Returns a buffer with 32 bit ints from a buffer that was retrieved when taking a
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_vector2_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_vector2_buffer>`
 
-Returns a buffer with :ref:`Vector2<class_Vector2>` entries from a buffer that was retrieved when taking a snapshot.
+Restituisce un buffer con elementi :ref:`Vector2<class_Vector2>` da un buffer recuperato alla cattura di uno snapshot.
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ Returns a buffer with :ref:`Vector2<class_Vector2>` entries from a buffer that w
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_vector3_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_vector3_buffer>`
 
-Returns a buffer with :ref:`Vector3<class_Vector3>` entries from a buffer that was retrieved when taking a snapshot.
+Restituisce un buffer con elementi :ref:`Vector3<class_Vector3>` da un buffer recuperato alla cattura di uno snapshot.
 
 .. rst-class:: classref-item-separator
 
@@ -537,7 +537,7 @@ Returns a buffer with :ref:`Vector3<class_Vector3>` entries from a buffer that w
 
 :ref:`RID<class_RID>` **make_spatial_entity**\ (\ spatial_context\: :ref:`RID<class_RID>`, entity_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_make_spatial_entity>`
 
-Creates a new entity for this ``entity_id``. The ``spatial_context`` should match the context that discovered the entity.
+Crea una nuova entità per questo ``entity_id``. Il contesto spaziale ``spatial_context`` deve corrispondere al contesto che ha individuato l'entità.
 
 .. rst-class:: classref-item-separator
 
@@ -549,9 +549,9 @@ Creates a new entity for this ``entity_id``. The ``spatial_context`` should matc
 
 :ref:`bool<class_bool>` **query_snapshot**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_query_snapshot>`
 
-Queries the snapshot data. This will find all entities in the snapshot that contain all requested components in ``component_data``. The objects held within ``component_data`` will then be populated with the queried data. ``component_data`` must always have an object of :ref:`OpenXRSpatialQueryResultData<class_OpenXRSpatialQueryResultData>` as the first entry.
+Interroga i dati dello snapshot. Individuerà tutte le entità presenti nello snapshot che contengono tutti i componenti richiesti specificati in ``component_data``. Gli oggetti contenuti in ``component_data`` verranno quindi popolati con i dati interrogati. ``component_data`` deve sempre contenere un oggetto di tipo :ref:`OpenXRSpatialQueryResultData<class_OpenXRSpatialQueryResultData>` come prima voce.
 
-\ ``next`` is an optional parameter that can contain additional information passed when setting our query conditions.
+\ ``next`` è un parametro facoltativo che può contenere ulteriori informazioni passate durante l'impostazione delle condizioni da interrogare.
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ Queries the snapshot data. This will find all entities in the snapshot that cont
 
 :ref:`bool<class_bool>` **supports_capability**\ (\ capability\: :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_supports_capability>`
 
-Returns ``true`` if this spatial entity ``capability`` is supported by the hardware used.
+Restituisce ``true`` se la capacità ``capability`` di entità spaziale è supportata dall'hardware utilizzato.
 
 .. rst-class:: classref-item-separator
 
@@ -575,7 +575,7 @@ Returns ``true`` if this spatial entity ``capability`` is supported by the hardw
 
 :ref:`bool<class_bool>` **supports_component_type**\ (\ capability\: :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>`, component_type\: :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_supports_component_type>`
 
-Returns ``true`` if this ``capability`` supports the ``component_type``.
+Restituisce ``true`` se la capacità ``capability`` supporta il tipo di componente ``component_type``.
 
 .. rst-class:: classref-item-separator
 
@@ -587,13 +587,13 @@ Returns ``true`` if this ``capability`` supports the ``component_type``.
 
 :ref:`RID<class_RID>` **update_spatial_entities**\ (\ spatial_context\: :ref:`RID<class_RID>`, entities\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], component_types\: :ref:`PackedInt64Array<class_PackedInt64Array>`, next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>`
 
-Performs a snapshot for a limited number of entities. This is NOT an asynchronous method and will return the snapshot immediately.
+Cattura uno snapshot per un numero limitato di entità. Questo metodo NON è asincrono e restituirà lo snapshot immediatamente.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

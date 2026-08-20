@@ -140,7 +140,7 @@ enum **SyncMode**: :ref:`🔗<enum_AnimationNodeBlendSpace1D_SyncMode>`
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` **SYNC_MODE_NONE** = ``0``
 
-Inactive animations are frozen and do not advance.
+Le animazioni inattive sono bloccate e non avanzano.
 
 .. _class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_INDEPENDENT:
 
@@ -148,7 +148,7 @@ Inactive animations are frozen and do not advance.
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` **SYNC_MODE_INDEPENDENT** = ``1``
 
-Inactive animations advance with a weight of ``0``. This is equivalent to the previous ``sync = true`` behavior.
+Le animazioni inattive avanzano con un peso di ``0``. Questo è equivalente al comportamento precedente di ``sync = true``.
 
 .. _class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_CYCLIC_MUTABLE:
 
@@ -156,9 +156,9 @@ Inactive animations advance with a weight of ``0``. This is equivalent to the pr
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` **SYNC_MODE_CYCLIC_MUTABLE** = ``2``
 
-All animations are time-scaled so they stay in sync, with the cycle length dynamically computed from active blend weights. This is self-normalizing: a solo animation plays at normal speed.
+Tutte le animazioni sono scalate temporalmente in modo da rimanere sincronizzate, con la durata del ciclo calcolata dinamicamente in base ai pesi di fusione attivi. Questo sistema si auto-normalizza: un'animazione singola è riprodotta a velocità normale.
 
-\ **Note:** If you apply :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>` to the result when handling animations of different lengths, synchronization will be broken. In such cases, it is recommended to use :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` to align the animation lengths.
+\ **Nota:** Se applichi :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>` al risultato quando gestisci animazioni di diversa durata, la sincronizzazione verrà interrotta. In questi casi, si consiglia di utilizzare :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` per allineare le durate delle animazioni.
 
 .. _class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_CYCLIC_CONSTANT:
 
@@ -166,9 +166,9 @@ All animations are time-scaled so they stay in sync, with the cycle length dynam
 
 :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` **SYNC_MODE_CYCLIC_CONSTANT** = ``3``
 
-All animations are time-scaled so they complete one cycle in :ref:`cyclic_length<class_AnimationNodeBlendSpace1D_property_cyclic_length>` seconds, keeping them in sync regardless of their individual lengths.
+Tutte le animazioni sono scalate temporalmente in modo da completare un ciclo in :ref:`cyclic_length<class_AnimationNodeBlendSpace1D_property_cyclic_length>` secondi, mantenendole sincronizzate a prescindere dalla loro durata individuale.
 
-\ **Note:** If you apply :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>` to the result when handling animations of different lengths, synchronization will be broken. In such cases, it is recommended to use :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` to align the animation lengths.
+\ **Nota:** Se applichi :ref:`AnimationNodeTimeSeek<class_AnimationNodeTimeSeek>` al risultato quando gestisci animazioni di diversa durata, la sincronizzazione verrà interrotta. In questi casi, si consiglia di utilizzare :ref:`AnimationNodeAnimation.use_custom_timeline<class_AnimationNodeAnimation_property_use_custom_timeline>` per allineare le durate delle animazioni.
 
 .. rst-class:: classref-section-separator
 
@@ -207,7 +207,7 @@ Controlla l'interpolazione tra le animazioni.
 - |void| **set_cyclic_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cyclic_length**\ (\ )
 
-The cycle length in seconds used by :ref:`SYNC_MODE_CYCLIC_CONSTANT<class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_CYCLIC_CONSTANT>`. All animations are time-scaled so they complete one full cycle in this duration. Must be greater than ``0`` for cyclic sync to take effect.
+La durata del ciclo in secondi utilizzata da :ref:`SYNC_MODE_CYCLIC_CONSTANT<class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_CYCLIC_CONSTANT>`. Tutte le animazioni sono scalate temporalmente in modo da completare un ciclo completo in questa durata. Deve essere maggiore di ``0`` affinché la sincronizzazione ciclica abbia effetto.
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ The cycle length in seconds used by :ref:`SYNC_MODE_CYCLIC_CONSTANT<class_Animat
 - |void| **set_max_space**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_space**\ (\ )
 
-Il limite superiore dell'asse di fusione per la posizione dei punti. Vedi :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`.
+Il limite superiore per la posizione dei punti sull'asse nello spazio di fusione. Vedi :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`.
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ Il limite superiore dell'asse di fusione per la posizione dei punti. Vedi :ref:`
 - |void| **set_min_space**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_space**\ (\ )
 
-Il limite inferiore dell'asse di fusione per la posizione dei punti. Vedi :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`.
+Il limite inferiore per la posizione dei punti sull'asse nello spazio di fusione. Vedi :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`.
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Incremento dello scatto di posizione quando si sposta un punto sull'asse.
 
 **Deprecato:** Use :ref:`sync_mode<class_AnimationNodeBlendSpace1D_property_sync_mode>` instead.
 
-If ``true``, sync mode is enabled (equivalent to :ref:`SYNC_MODE_INDEPENDENT<class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_INDEPENDENT>`). This property is kept for backward compatibility.
+Se ``true``, la modalità di sincronizzazione è abilitata (equivalente a :ref:`SYNC_MODE_INDEPENDENT<class_AnimationNodeBlendSpace1D_constant_SYNC_MODE_INDEPENDENT>`). Questa proprietà è mantenuta per retrocompatibilità.
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ If ``true``, sync mode is enabled (equivalent to :ref:`SYNC_MODE_INDEPENDENT<cla
 - |void| **set_sync_mode**\ (\ value\: :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>`\ )
 - :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` **get_sync_mode**\ (\ )
 
-Controls how animations are synced when blended. See :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` for available options.
+Controlla come le animazioni vengono sincronizzate quando si fondono. Vedi :ref:`SyncMode<enum_AnimationNodeBlendSpace1D_SyncMode>` per le opzioni disponibili.
 
 .. rst-class:: classref-item-separator
 
@@ -342,7 +342,7 @@ Aggiunge un nuovo punto denominato ``name`` che rappresenta un nodo ``node`` sul
 
 :ref:`int<class_int>` **find_blend_point_by_name**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace1D_method_find_blend_point_by_name>`
 
-Returns the index of the blend point with the given ``name``. Returns ``-1`` if no blend point with that name is found.
+Restituisce l'indice del punto di fusione con il nome ``name``. Restituisce ``-1`` se non viene trovato un punto di fusione con il nome specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ Restituisce il numero di punti sull'asse di fusione.
 
 :ref:`StringName<class_StringName>` **get_blend_point_name**\ (\ point\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace1D_method_get_blend_point_name>`
 
-Returns the name of the blend point at index ``point``.
+Restituisce il nome del punto di fusione all'indice ``point``.
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ Rimuove il punto all'indice ``point`` dall'asse di fusione.
 
 |void| **reorder_blend_point**\ (\ from_index\: :ref:`int<class_int>`, to_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace1D_method_reorder_blend_point>`
 
-Swaps the blend points at indices ``from_index`` and ``to_index``, exchanging their positions and properties.
+Scambia i punti di fusione agli indici ``from_index`` e ``to_index``, invertendone posizioni e proprietà.
 
 .. rst-class:: classref-item-separator
 
@@ -426,7 +426,7 @@ Swaps the blend points at indices ``from_index`` and ``to_index``, exchanging th
 
 |void| **set_blend_point_name**\ (\ point\: :ref:`int<class_int>`, name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace1D_method_set_blend_point_name>`
 
-Sets the name of the blend point at index ``point``. If the name conflicts with an existing point, a unique name will be generated automatically.
+Imposta il nome del punto di fusione all'indice ``point``. Se il nome è in conflitto con un punto esistente, un nome univoco verrà generato automaticamente.
 
 .. rst-class:: classref-item-separator
 
@@ -456,7 +456,7 @@ Aggiorna la posizione del punto all'indice ``point`` sull'asse di fusione.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

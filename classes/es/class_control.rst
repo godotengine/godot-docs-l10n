@@ -448,7 +448,7 @@ Emitida cuando el nodo recibe un :ref:`InputEvent<class_InputEvent>`.
 
 **maximum_size_changed**\ (\ ) :ref:`🔗<class_Control_signal_maximum_size_changed>`
 
-Emitted when the node's maximum size changes.
+Emitida cuando el tamaño máximo del nodo cambia.
 
 .. rst-class:: classref-item-separator
 
@@ -1089,7 +1089,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-El control crecerá hacia la izquierda o hacia arriba para compensar si su tamaño mínimo se cambia para que sea mayor que su tamaño actual en el eje respectivo.
+The control will grow to the left or top to make up if its minimum size is changed to be greater than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1097,7 +1097,7 @@ El control crecerá hacia la izquierda o hacia arriba para compensar si su tama�
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-El control crecerá hacia la derecha o hacia abajo para compensar si su tamaño mínimo se cambia para que sea mayor que su tamaño actual en el eje respectivo.
+The control will grow to the right or bottom to make up if its minimum size is changed to be greater than its current size on the respective axis.
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1105,7 +1105,7 @@ El control crecerá hacia la derecha o hacia abajo para compensar si su tamaño 
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-El control crecerá en ambas direcciones por igual para compensar si su tamaño mínimo se cambia para que sea mayor que su tamaño actual.
+The control will grow in both directions equally to make up if its minimum size is changed to be greater than its current size.
 
 .. rst-class:: classref-item-separator
 
@@ -1625,15 +1625,15 @@ Activa si el renderizado de los hijos basados en :ref:`CanvasItem<class_CanvasIt
 - |void| **set_custom_maximum_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_custom_maximum_size**\ (\ )
 
-The maximum size of this Control's bounding rectangle. If set to a value greater than or equal to ``(0, 0)``, the node's bounding rectangle will never exceed this size. A value below ``(0, 0)`` means there is no maximum size.
+El tamaño máximo del rectángulo delimitador de este Control. Si se establece en un valor mayor o igual que ``(0, 0)``, el rectángulo delimitador del nodo nunca excederá este tamaño. Un valor inferior a ``(0, 0)`` significa que no hay tamaño máximo.
 
-\ **Note:** The final effective maximum size may be subject to parent Container sizing and propagated maximum sizes. See also: :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
+\ **Nota:** El tamaño máximo efectivo final puede estar sujeto al dimensionamiento del contenedor padre y a los tamaños máximos propagados. Consulta también: :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
 
-\ **Note:** Not all **Control** subtypes handle a custom maximum size gracefully, which may lead to unexpected behavior if the control's contents exceed this size.
+\ **Nota:** No todos los subtipos de **Control** manejan correctamente un tamaño máximo personalizado, lo que puede provocar un comportamiento inesperado si el contenido del control supera este tamaño.
 
-\ **Note:** This value has priority over :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`. For example, if you set :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` to ``(100, 100)`` and :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` to ``(200, 200)``, the resulting size will be ``(100, 100)``.
+\ **Nota:** Este valor tiene prioridad sobre :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`. Por ejemplo, si estableces :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` en ``(100, 100)`` y :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` en ``(200, 200)``, el tamaño resultante será ``(100, 100)``.
 
-\ **Note:** It is recommended to use :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` instead of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` when using this property, as the former respects maximum size limits when calculating the minimum size, while the latter does not.
+\ **Nota:** Se recomienda usar :ref:`get_bound_minimum_size()<class_Control_method_get_bound_minimum_size>` en lugar de :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` al usar esta propiedad, ya que el primero respeta los límites de tamaño máximo al calcular el tamaño mínimo, mientras que este último no lo hace.
 
 .. rst-class:: classref-item-separator
 
@@ -1825,7 +1825,7 @@ La posición global del nodo, relativa al mundo (normalmente a la :ref:`CanvasLa
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-Controla la dirección en el eje horizontal en la que el control debe crecer si su tamaño mínimo horizontal se cambia para que sea mayor que su tamaño actual, ya que el control siempre tiene que ser al menos del tamaño mínimo.
+Controls the direction on the horizontal axis in which the control should grow if its horizontal minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
 
 .. rst-class:: classref-item-separator
 
@@ -1842,7 +1842,7 @@ Controla la dirección en el eje horizontal en la que el control debe crecer si 
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-Controla la dirección en el eje vertical en la que el control debe crecer si su tamaño mínimo vertical se cambia para que sea mayor que su tamaño actual, ya que el control siempre tiene que ser al menos del tamaño mínimo.
+Controls the direction on the vertical axis in which the control should grow if its vertical minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
 
 .. rst-class:: classref-item-separator
 
@@ -2062,11 +2062,11 @@ If ``true``, applies all offset transform properties. Otherwise, no offset trans
 - |void| **set_offset_transform_pivot**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_pivot**\ (\ )
 
-Pivot used by :ref:`offset_transform_rotation<class_Control_property_offset_transform_rotation>` and :ref:`offset_transform_scale<class_Control_property_offset_transform_scale>` in absolute units.
+Pivote utilizado por :ref:`offset_transform_rotation<class_Control_property_offset_transform_rotation>` y :ref:`offset_transform_scale<class_Control_property_offset_transform_scale>` en unidades absolutas.
 
-The final pivot position is the combined value of this property and :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
+La posición final del pivote es el valor combinado de esta propiedad y :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+No tiene efecto a menos que :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` sea ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2104,9 +2104,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_position**\ (\ )
 
-Position offset in absolute units. The final offset is the combined value of this property and :ref:`offset_transform_position_ratio<class_Control_property_offset_transform_position_ratio>`.
+Desplazamiento de posición en unidades absolutas. El desplazamiento final es el valor combinado de esta propiedad y :ref:`offset_transform_position_ratio<class_Control_property_offset_transform_position_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+No tiene efecto a menos que :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` sea ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2144,9 +2144,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_rotation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_offset_transform_rotation**\ (\ )
 
-Rotation offset. The rotation pivot is defined by :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` and :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
+Desplazamiento de rotación. El pivote de rotación se define mediante :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` y :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+No tiene efecto a menos que :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` sea ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2163,9 +2163,9 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset_transform_scale**\ (\ )
 
-Scale offset. The scale pivot is defined by :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` and :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
+Desplazamiento de escala. El pivote de escala se define mediante :ref:`offset_transform_pivot<class_Control_property_offset_transform_pivot>` y :ref:`offset_transform_pivot_ratio<class_Control_property_offset_transform_pivot_ratio>`.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+No tiene efecto a menos que :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` sea ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2182,11 +2182,11 @@ Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offse
 - |void| **set_offset_transform_visual_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_offset_transform_visual_only**\ (\ )
 
-If ``true``, the offset transforms is only applied visually and does not affect input. In other words, this Control will still receive input events at its original location before the offset transform is applied.
+Si ``true``, las offset transforms se aplican solo visualmente y no afectan la entrada. En otras palabras, este Control seguirá recibiendo eventos de entrada en su ubicación original antes de que se aplique la transformada de desplazamiento.
 
-If ``false``, the entire transform of this Control is affected and input events will register where the Control is visually.
+Si ``false``, toda la transformación de este Control se ve afectada y los eventos de entrada se registrarán visualmente dónde está el Control.
 
-Has no effect unless :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` is ``true``.
+No tiene efecto a menos que :ref:`offset_transform_enabled<class_Control_property_offset_transform_enabled>` sea ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -2257,7 +2257,7 @@ The node's position, relative to its containing node. It corresponds to the rect
 - |void| **set_propagate_maximum_size**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_propagating_maximum_size**\ (\ )
 
-If ``true``, this Control's children will use the value returned by :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>` in their own size calculations.
+Si ``true``, los hijos de este Control usarán el valor devuelto por :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>` en sus propios cálculos de tamaño.
 
 .. rst-class:: classref-item-separator
 
@@ -2522,7 +2522,7 @@ The tooltip popup will use either a default implementation, or a custom one that
 - |void| **set_translation_context**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_translation_context**\ (\ )
 
-The translation context used when translating this control's displayed text, if it has any. Also used when generating translation templates.
+El contexto de traducción utilizado al traducir el texto mostrado por este control, si es que lo tiene. También se usa al generar plantillas de traducción.
 
 .. rst-class:: classref-section-separator
 
@@ -2738,7 +2738,7 @@ Virtual method to be implemented by the user. Returns the tooltip text for the p
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **_get_tooltip_auto_translate_mode_at**\ (\ at_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_tooltip_auto_translate_mode_at>`
 
-Return the auto-translation mode at the given ``at_position``. If not implemented, the :ref:`tooltip_auto_translate_mode<class_Control_property_tooltip_auto_translate_mode>` property will be used instead.
+Devuelve el modo de auto-traducción en el ``at_position`` dado. Si no se implementa, se utilizará la propiedad :ref:`tooltip_auto_translate_mode<class_Control_property_tooltip_auto_translate_mode>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -3115,7 +3115,7 @@ Encuentra el siguiente **Control** (debajo en el árbol) que puede recibir el fo
 
 :ref:`Control<class_Control>` **find_prev_valid_focus**\ (\ ) |const| :ref:`🔗<class_Control_method_find_prev_valid_focus>`
 
-Finds the previous (above in the tree) **Control** that can receive the focus.
+Busca el **Control** anterior (situado más arriba en el árbol) que puede recibir el foco.
 
 .. rst-class:: classref-item-separator
 
@@ -3167,7 +3167,7 @@ Devuelve el anclaje para el :ref:`Side<enum_@GlobalScope_Side>` especificado. Un
 
 :ref:`Vector2<class_Vector2>` **get_begin**\ (\ ) |const| :ref:`🔗<class_Control_method_get_begin>`
 
-Returns :ref:`offset_left<class_Control_property_offset_left>` and :ref:`offset_top<class_Control_property_offset_top>`. See also :ref:`position<class_Control_property_position>`.
+Devuelve :ref:`offset_left<class_Control_property_offset_left>` y :ref:`offset_top<class_Control_property_offset_top>`. Véase también :ref:`position<class_Control_property_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3179,11 +3179,11 @@ Returns :ref:`offset_left<class_Control_property_offset_left>` and :ref:`offset_
 
 :ref:`Vector2<class_Vector2>` **get_bound_minimum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_bound_minimum_size>`
 
-Returns the bound value of :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` by :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
+Devuelve el valor acotado de :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>` limitado por :ref:`get_combined_maximum_size()<class_Control_method_get_combined_maximum_size>`.
 
-This value is the true minimum size of the container, as the maximum size has priority over the minimum size.
+Este valor es el tamaño mínimo real del contenedor, ya que el tamaño máximo tiene prioridad sobre el mínimo.
 
-For example, if the combined minimum size is (100, 100) and the combined maximum size is (50, 150), the bound minimum size will be (50, 100).
+Por ejemplo, si el tamaño mínimo combinado es (100, 100) y el tamaño máximo combinado es (50, 150), El tamaño mínimo acotado será (50, 100).
 
 .. rst-class:: classref-item-separator
 
@@ -3195,7 +3195,7 @@ For example, if the combined minimum size is (100, 100) and the combined maximum
 
 :ref:`Vector2<class_Vector2>` **get_combined_maximum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_combined_maximum_size>`
 
-Returns the combined maximum size from :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` and :ref:`get_maximum_size()<class_Control_method_get_maximum_size>`, as well as the :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` of this node's parent if it is a Control node with :ref:`propagate_maximum_size<class_Control_property_propagate_maximum_size>` set to ``true``.
+Devuelve el tamaño máximo combinado a partir de :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` y :ref:`get_maximum_size()<class_Control_method_get_maximum_size>`, así como el :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>` del nodo padre si este es un nodo Control con :ref:`propagate_maximum_size<class_Control_property_propagate_maximum_size>` establecido en ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -3207,7 +3207,7 @@ Returns the combined maximum size from :ref:`custom_maximum_size<class_Control_p
 
 :ref:`Vector2<class_Vector2>` **get_combined_minimum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_combined_minimum_size>`
 
-Returns the combined minimum size from :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` and :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`.
+Devuelve el tamaño mínimo combinado de :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` y :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3299,7 +3299,7 @@ Devuelve la posición y el tamaño del control en relación con el lienzo que lo
 
 :ref:`Vector2<class_Vector2>` **get_maximum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_maximum_size>`
 
-Returns the maximum size for this control. See :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>`.
+Devuelve el tamaño máximo para este control. Véase :ref:`custom_maximum_size<class_Control_property_custom_maximum_size>`.
 
 .. rst-class:: classref-item-separator
 

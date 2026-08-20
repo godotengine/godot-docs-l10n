@@ -14,9 +14,9 @@ Una classe che rappresenta un flusso audio in Ogg Vorbis.
 Descrizione
 ----------------------
 
-The AudioStreamOggVorbis class is a specialized :ref:`AudioStream<class_AudioStream>` for handling Ogg Vorbis file formats. It offers functionality for loading and playing back Ogg Vorbis files, as well as managing looping and other playback properties. More info can be found in :ref:`ResourceImporterOggVorbis<class_ResourceImporterOggVorbis>`.
+La classe AudioStreamOggVorbis è un :ref:`AudioStream<class_AudioStream>` specializzato nella gestione dei formati di file Ogg Vorbis. Offre funzionalità per caricare e riprodurre file Ogg Vorbis, oltre a gestire la ripetizione e altre proprietà di riproduzione. Ulteriori informazioni sono disponibili in :ref:`ResourceImporterOggVorbis<class_ResourceImporterOggVorbis>`.
 
-This class is part of the audio stream system, which also supports WAV files through the :ref:`AudioStreamWAV<class_AudioStreamWAV>` class, and MP3 files through the :ref:`AudioStreamMP3<class_AudioStreamMP3>` class.
+Questa classe fa parte del sistema di flusso audio, che supporta anche i file WAV tramite la classe :ref:`AudioStreamWAV<class_AudioStreamWAV>` e i file MP3 tramite la classe :ref:`AudioStreamMP3<class_AudioStreamMP3>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -85,7 +85,7 @@ Descrizioni delle proprietà
 - |void| **set_bar_beats**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bar_beats**\ (\ )
 
-The number of beats within a single bar in the audio track.
+Il numero di battiti all'interno di una singola battuta nella traccia audio.
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ The number of beats within a single bar in the audio track.
 - |void| **set_beat_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_beat_count**\ (\ )
 
-The length of the audio track, in beats. The actual duration of the audio file might be longer than what is indicated by this property. It defines the end of the audio for looping, :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`, and :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
+La durata della traccia audio, in battiti. La durata effettiva del file audio potrebbe essere più lunga di quanto indicato da questa proprietà. Definisce la fine dell'audio per la ripetizione, per :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>` e per :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ The length of the audio track, in beats. The actual duration of the audio file m
 - |void| **set_bpm**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bpm**\ (\ )
 
-The tempo of the audio track, measured in beats per minute.
+Il tempo della traccia audio, misurato in battiti al minuto.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ The tempo of the audio track, measured in beats per minute.
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-If ``true``, the stream will play again from the specified :ref:`loop_offset<class_AudioStreamOggVorbis_property_loop_offset>` once it reaches the end of the audio track, or once it reaches the end of the last beat according to the amount specified in :ref:`beat_count<class_AudioStreamOggVorbis_property_beat_count>`. Useful for ambient sounds and background music.
+Se ``true``, il flusso verrà riprodotto di nuovo a partire dal :ref:`loop_offset<class_AudioStreamOggVorbis_property_loop_offset>` specificato una volta raggiunta la fine della traccia audio, oppure una volta raggiunta la fine dell'ultimo battito in base al numero specificato in :ref:`beat_count<class_AudioStreamOggVorbis_property_beat_count>`. Utile per suoni ambientali e musica di sottofondo.
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ Crea una nuova istanza **AudioStreamOggVorbis** dal percorso di file fornito. Il
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

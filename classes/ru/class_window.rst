@@ -27,7 +27,7 @@ Window
 
 - :doc:`HDR-вывод <../tutorials/rendering/hdr_output>`
 
-- `Multiple Windows demo <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
+- `Различные Windows демо <https://github.com/godotengine/godot-demo-projects/tree/master/misc/multiple_windows>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -472,7 +472,7 @@ Window
 
 **output_max_linear_value_changed**\ (\ output_max_linear_value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Window_signal_output_max_linear_value_changed>`
 
-Emitted when the output max linear value returned by :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` has changed. This occurs when HDR output is enabled or disabled and when any HDR output luminance values of the window have changed, such as when the player adjusts their screen brightness setting or moves the window to a different screen. ``output_max_linear_value`` is the new value.
+Испускается, когда максимальное линейное значение вывода, возвращаемое :ref:`get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>`, изменилось. Это происходит при включении или отключении вывода HDR и при изменении любых значений яркости вывода HDR окна, например, когда игрок изменяет настройки яркости экрана или перемещает окно на другой экран. ``output_max_linear_value`` — новое значение.
 
 .. rst-class:: classref-item-separator
 
@@ -629,9 +629,9 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_RESIZE_DISABLED** = ``0``
 
-The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`size<class_Window_property_size>`. This flag is ignored for full screen windows. Set with :ref:`unresizable<class_Window_property_unresizable>`.
+Размер окна нельзя изменить, перетаскивая его ручку изменения размера. По-прежнему можно изменить размер окна, используя :ref:`size<class_Window_property_size>`. Этот флаг игнорируется для полноэкранных окон. Устанавливается с помощью :ref:`unresizable<class_Window_property_unresizable>`.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
+\ **Примечание:** Этот флаг реализован на Linux (X11), macOS, Windows и во встроенных окнах.
 
 .. _class_Window_constant_FLAG_BORDERLESS:
 
@@ -639,9 +639,9 @@ The window can't be resized by dragging its resize grip. It's still possible to 
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_BORDERLESS** = ``1``
 
-The window do not have native title bar and other decorations. This flag is ignored for full-screen windows. Set with :ref:`borderless<class_Window_property_borderless>`.
+Окно не имеет встроенной строки заголовка и других украшений. Этот флаг игнорируется для полноэкранных окон. Устанавливается с помощью :ref:`borderless<class_Window_property_borderless>`.
 
-\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
+\ **Примечание:** Этот флаг реализован на Linux (X11/Wayland), macOS, Windows и во встроенных окнах.
 
 .. _class_Window_constant_FLAG_ALWAYS_ON_TOP:
 
@@ -649,9 +649,9 @@ The window do not have native title bar and other decorations. This flag is igno
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_ALWAYS_ON_TOP** = ``2``
 
-The window is floating on top of all other windows. This flag is ignored for full-screen windows. Set with :ref:`always_on_top<class_Window_property_always_on_top>`.
+Окно плавает поверх всех остальных окон. Этот флаг игнорируется для полноэкранных окон. Устанавливается с помощью :ref:`always_on_top<class_Window_property_always_on_top>`.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
+\ **Примечание:** Этот флаг реализован на Linux (X11), macOS, Windows и во встроенных окнах.
 
 .. _class_Window_constant_FLAG_TRANSPARENT:
 
@@ -659,11 +659,11 @@ The window is floating on top of all other windows. This flag is ignored for ful
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_TRANSPARENT** = ``3``
 
-The window background can be transparent. Set with :ref:`transparent<class_Window_property_transparent>`.
+Фон окна может быть прозрачным. Задается с помощью :ref:`transparent<class_Window_property_transparent>`.
 
-\ **Note:** This flag has no effect if either :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, or the window's :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is set to ``false``.
+\ **Примечание:** Этот флаг не действует, если :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` или для окна :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` установлено значение ``false``.
 
-\ **Note:** Transparency support is implemented on Linux (X11/Wayland), macOS, Windows, and embedded windows.
+\ **Примечание:** Поддержка прозрачности реализована на Linux (X11/Wayland), macOS, Windows и во встроенных окнах.
 
 .. _class_Window_constant_FLAG_NO_FOCUS:
 
@@ -671,9 +671,9 @@ The window background can be transparent. Set with :ref:`transparent<class_Windo
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_NO_FOCUS** = ``4``
 
-The window can't be focused. No-focus window will ignore all input, except mouse clicks. Set with :ref:`unfocusable<class_Window_property_unfocusable>`.
+Окно не может быть сфокусировано. Окно без фокуса будет игнорировать весь ввод, кроме щелчков мыши. Устанавливается с помощью :ref:`unfocusable<class_Window_property_unfocusable>`.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, Windows, and embedded windows.
+\ **Примечание:** Этот флаг реализован на Linux (X11), macOS, Windows и во встроенных окнах.
 
 .. _class_Window_constant_FLAG_POPUP:
 
@@ -681,9 +681,9 @@ The window can't be focused. No-focus window will ignore all input, except mouse
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP** = ``5``
 
-Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`transient<class_Window_property_transient>`).
+Окно является частью меню или раскрывающегося списка :ref:`OptionButton<class_OptionButton>`. Этот флаг нельзя изменить, когда окно видимо. Активное всплывающее окно будет единолично получать весь ввод, не перехватывая фокус у родительского элемента. Всплывающие окна автоматически закрываются, когда пользователь нажимает за их пределами или когда приложение переключается. У всплывающего окна должен быть установлен временный родительский элемент (см. :ref:`transient<class_Window_property_transient>`).
 
-\ **Note:** This flag is implemented on Linux (X11/Wayland), macOS, Windows, and embedded :ref:`Popup<class_Popup>` windows.
+\ **Примечание:** Этот флаг реализован на Linux (X11/Wayland), macOS, Windows и во встроенных окнах :ref:`Popup<class_Popup>`.
 
 .. _class_Window_constant_FLAG_EXTEND_TO_TITLE:
 
@@ -691,11 +691,11 @@ Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_EXTEND_TO_TITLE** = ``6``
 
-Window content is expanded to the full size of the window. Unlike borderless window, the frame is left intact and can be used to resize the window, title bar is transparent, but have minimize/maximize/close buttons. Set with :ref:`extend_to_title<class_Window_property_extend_to_title>`.
+Содержимое окна расширяется до полного размера окна. В отличие от окна без границ, рамка остаётся нетронутой и может использоваться для изменения размера окна, строка заголовка прозрачна, но содержит кнопки свернуть/развернуть/закрыть. Устанавливается с помощью :ref:`extend_to_title<class_Window_property_extend_to_title>`.
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **Примечание:** Этот флаг не действует во встроенных окнах.
 
-\ **Note:** This flag is implemented only on macOS.
+\ **Примечание:** Этот флаг реализован только в macOS.
 
 .. _class_Window_constant_FLAG_MOUSE_PASSTHROUGH:
 
@@ -703,11 +703,11 @@ Window content is expanded to the full size of the window. Unlike borderless win
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-All mouse events are passed to the underlying window of the same application.
+Все события мыши передаются в базовое окно того же приложения.
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **Примечание:** Этот флаг не действует во встроенных окнах.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, Windows.
+\ **Примечание:** Этот флаг реализован на Linux (X11), macOS, Windows.
 
 .. _class_Window_constant_FLAG_SHARP_CORNERS:
 
@@ -741,11 +741,11 @@ All mouse events are passed to the underlying window of the same application.
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP_WM_HINT** = ``10``
 
-Signals the window manager that this window is supposed to be an implementation-defined "popup" (usually a floating, borderless, untileable and immovable child window).
+Сообщает оконному менеджеру, что это окно должно быть определённым реализацией «всплывающим» окном (обычно плавающим, без рамок, неразворачиваемым и неподвижным дочерним окном).
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **Примечание:** Этот флаг не действует во встроенных окнах.
 
-\ **Note:** This flag is implemented on Linux (Wayland).
+\ **Примечание:** Этот флаг реализован на Linux (Wayland).
 
 .. _class_Window_constant_FLAG_MINIMIZE_DISABLED:
 
@@ -753,11 +753,11 @@ Signals the window manager that this window is supposed to be an implementation-
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MINIMIZE_DISABLED** = ``11``
 
-Window minimize button is disabled.
+Кнопка свёртывания окна отключена.
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **Примечание:** Этот флаг не действует во встроенных окнах.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примечание:** Этот флаг реализован на Linux (X11), macOS и Windows.
 
 .. _class_Window_constant_FLAG_MAXIMIZE_DISABLED:
 
@@ -765,11 +765,11 @@ Window minimize button is disabled.
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MAXIMIZE_DISABLED** = ``12``
 
-Window maximize button is disabled.
+Кнопка развёртывания окна отключена.
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **Примечание:** Этот флаг не действует во встроенных окнах.
 
-\ **Note:** This flag is implemented on Linux (X11), macOS, and Windows.
+\ **Примечание:** Этот флаг реализован на Linux (X11), macOS и Windows.
 
 .. _class_Window_constant_FLAG_MAX:
 
@@ -1339,7 +1339,7 @@ enum **WindowInitialPosition**: :ref:`🔗<enum_Window_WindowInitialPosition>`
 - |void| **set_hdr_output_requested**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hdr_output_requested**\ (\ )
 
-If ``true``, requests HDR output for the **Window**, falling back to SDR if not supported, and automatically switching between HDR and SDR as the window moves between screens, screen capabilities change, or system settings are modified. This will internally force :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` to be enabled on the main :ref:`Viewport<class_Viewport>`. All other :ref:`SubViewport<class_SubViewport>` of this **Window** must have their :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` property enabled to produce HDR output.
+Если ``true``, запрашивает вывод HDR для **Window**, с откатом к SDR, если не поддерживается, и автоматически переключается между HDR и SDR при перемещении окна между экранами, изменении возможностей экрана или изменении системных настроек. Это внутренне принудительно включает :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` на основном :ref:`Viewport<class_Viewport>`. Все остальные :ref:`SubViewport<class_SubViewport>` этого **Window** должны иметь включённое свойство :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` для вывода HDR.
 
 .. rst-class:: classref-item-separator
 
@@ -2050,9 +2050,9 @@ If ``true``, requests HDR output for the **Window**, falling back to SDR if not 
 
 :ref:`float<class_float>` **get_output_max_linear_value**\ (\ ) |const| :ref:`🔗<class_Window_method_get_output_max_linear_value>`
 
-Returns the maximum value for linear color components that can be displayed in this window, regardless of SDR or HDR output. Returns ``1.0`` if HDR is not enabled or not supported. The :ref:`output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` signal will be emitted whenever this value changes.
+Возвращает максимальное значение для линейных компонентов цвета, которое может быть отображено в этом окне, независимо от вывода SDR или HDR. Возвращает ``1.0``, если HDR не включен или не поддерживается. Сигнал :ref:`output_max_linear_value_changed<class_Window_signal_output_max_linear_value_changed>` испускается при каждом изменении этого значения.
 
-This value is used by tonemapping and other :ref:`Environment<class_Environment>` effects to ensure that bright colors are presented in the range that can be displayed by this window. When using this maximum linear value in your project, it should only be used to present colors directly to the screen without tonemapping and without influencing lighting, post-processing effects, or surrounding color. The following is an example that produces the brightest purple color that the screen can produce:
+Это значение используется тональной компрессией и другими эффектами :ref:`Environment<class_Environment>` для обеспечения того, чтобы яркие цвета отображались в диапазоне, доступном для этого окна. При использовании этого максимального линейного значения в вашем проекте оно должно использоваться только для вывода цветов непосредственно на экран без тональной компрессии и без влияния на освещение, эффекты постобработки или окружающие цвета. Ниже приведён пример, который создаёт самый яркий фиолетовый цвет, который может отобразить экран:
 
 
 .. tabs::
@@ -2060,30 +2060,30 @@ This value is used by tonemapping and other :ref:`Environment<class_Environment>
  .. code-tab:: gdscript
 
     func _process(_delta):
-        # output_max_linear_value may change often, so do this every frame.
+        # output_max_linear_value может часто меняться, поэтому делайте это в каждом кадре.
         var max_linear_value = get_window().get_output_max_linear_value()
-        # Replace this with your color:
+        # Замените это на ваш цвет:
         var original_color = Color.PURPLE
-        # Normalize to max_linear_value to produce the brightest color possible,
-        # regardless of SDR or HDR output:
+        # Нормализуйте до max_linear_value, чтобы получить максимально яркий цвет,
+        # независимо от вывода SDR или HDR:
         var bright_color = normalize_color(original_color, max_linear_value)
 
 
     func normalize_color(srgb_color, max_linear_value = 1.0):
-        # Color must be linear-encoded to use math operations.
+        # Цвет должен быть линейно закодирован для использования математических операций.
         var linear_color = srgb_color.srgb_to_linear()
         var max_rgb_value = maxf(linear_color.r, maxf(linear_color.g, linear_color.b))
         var brightness_scale = max_linear_value / max_rgb_value
         linear_color *= brightness_scale
-        # Undo changes to the alpha channel, which should not be modified.
+        # Отмена изменений альфа-канала, который не должен изменяться.
         linear_color.a = srgb_color.a
-        # Convert back to nonlinear sRGB encoding, which is required for Color in
-        # Godot unless stated otherwise.
+        # Преобразование обратно в нелинейную кодировку sRGB, которая требуется для Color
+        # в Godot, если не указано иное.
         return linear_color.linear_to_srgb()
 
 
 
-\ **Note:** You will need to convert sRGB colors to linear before multiplying by this value to get correct results.
+\ **Примечание:** Вам необходимо преобразовать sRGB-цвета в линейные перед умножением на это значение для получения корректных результатов.
 
 .. rst-class:: classref-item-separator
 

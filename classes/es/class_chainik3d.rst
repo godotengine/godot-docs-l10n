@@ -9,16 +9,16 @@ ChainIK3D
 
 **Heredado por:** :ref:`IterateIK3D<class_IterateIK3D>`, :ref:`SplineIK3D<class_SplineIK3D>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to apply inverse kinematics to bone chains containing an arbitrary number of bones.
+Un :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` para aplicar cinemática inversa a cadenas de huesos que contienen un número arbitrario de huesos.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that automatically generates a joint list from the bones between the root bone and the end bone.
+Clase base de :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` que genera automáticamente una lista de articulaciones a partir de los huesos entre el hueso raíz y el hueso final.
 
-\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **Nota:** Todos los métodos de esta clase toman un parámetro ``index``. Este parámetro especifica qué entrada de la lista de ajustes devolver si el IK tiene múltiples entradas (por ejemplo, ``settings//root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 
@@ -103,7 +103,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` is ``true``.
+Devuelve la longitud de la cola del hueso final de la cadena de huesos cuando :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` es ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Devuelve el nombre del hueso raíz de la cadena de huesos.
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Devuelve ``true`` si el hueso final se extiende para tener una cola.
 
 .. rst-class:: classref-item-separator
 

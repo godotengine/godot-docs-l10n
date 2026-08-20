@@ -14,7 +14,7 @@ Biblioteca de tile para tilemaps.
 Descripción
 ----------------------
 
-Un TileSet es una librería de tiles para un :ref:`TileMapLayer<class_TileMapLayer>`. Un TileSet maneja una lista de :ref:`TileSetSource<class_TileSetSource>`, cada uno de ellos almacenando un conjunto de tiles.
+Un TileSet es una biblioteca de tiles para un :ref:`TileMapLayer<class_TileMapLayer>`. Un TileSet maneja una lista de :ref:`TileSetSource<class_TileSetSource>`, cada uno de ellos almacenando un conjunto de tiles.
 
 Los tiles pueden ser de un :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`, que renderiza tiles fuera de una textura con soporte para física, navegación, etc., o de un :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>`, que expone tiles basados en escenas.
 

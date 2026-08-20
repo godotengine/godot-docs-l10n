@@ -9,14 +9,14 @@ PhysicsBody3D
 
 **Ereditato da:** :ref:`CharacterBody3D<class_CharacterBody3D>`, :ref:`PhysicalBone3D<class_PhysicalBone3D>`, :ref:`RigidBody3D<class_RigidBody3D>`, :ref:`StaticBody3D<class_StaticBody3D>`
 
-Classe di base astratta per gli oggetti di gioco 3D influenzati dalla fisica.
+Classe base astratta per gli oggetti di gioco 3D influenzati dalla fisica.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-**PhysicsBody3D** è una classe di base astratta per gli oggetti di gioco 3D influenzati dalla fisica. Tutti i corpi fisici 3D ereditano da essa.
+**PhysicsBody3D** è una classe base astratta per gli oggetti di gioco 3D influenzati dalla fisica. Tutti i corpi fisici 3D ereditano da essa.
 
 \ **Attenzione:** Con una scala non uniforme, questo nodo probabilmente non si comporterà come previsto. Si consiglia di mantenere la sua scala uguale su tutti gli assi e di regolare invece le sue forme di collisione.
 
@@ -293,7 +293,7 @@ Blocca o sblocca l'asse lineare o rotazionale specificato da ``axis`` a seconda 
 
 :ref:`bool<class_bool>` **test_move**\ (\ from\: :ref:`Transform3D<class_Transform3D>`, motion\: :ref:`Vector3<class_Vector3>`, collision\: :ref:`KinematicCollision3D<class_KinematicCollision3D>` = null, safe_margin\: :ref:`float<class_float>` = 0.001, recovery_as_collision\: :ref:`bool<class_bool>` = false, max_collisions\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_PhysicsBody3D_method_test_move>`
 
-Controlla le collisioni senza muovere il corpo. Per essere indipendente dal frame rate in :ref:`Node._physics_process()<class_Node_private_method__physics_process>` o :ref:`Node._process()<class_Node_private_method__process>`, ``motion`` deve essere calcolato usando ``delta``.
+Verifica le collisioni senza muovere il corpo. Per essere indipendente dal frame rate in :ref:`Node._physics_process()<class_Node_private_method__physics_process>` o :ref:`Node._process()<class_Node_private_method__process>`, ``motion`` deve essere calcolato usando ``delta``.
 
 Imposta virtualmente la posizione, la scala e la rotazione del nodo su quelle del :ref:`Transform3D<class_Transform3D>` fornito, quindi prova a muovere il corpo lungo il vettore ``motion``. Restituisce ``true`` se una collisione impedirebbe al corpo di muoversi lungo l'intero percorso.
 
@@ -309,7 +309,7 @@ Se ``recovery_as_collision`` è ``true``, anche qualsiasi penetrazione dalla fas
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

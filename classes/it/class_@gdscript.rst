@@ -158,7 +158,7 @@ Le classi ereditanti devono fornire implementazioni per tutti i metodi astratti 
 
 **@export**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export>`
 
-Contrassegna la seguente proprietà come esportata (modificabile nel pannello dell'Ispettore e salvato su disco). Per controllare il tipo della proprietà esportata, utilizza la notazione di suggerimento per il tipo.
+Contrassegna la seguente proprietà come esportata (modificabile nel pannello Ispettore e salvato su disco). Per controllare il tipo della proprietà esportata, utilizza la notazione di suggerimento per il tipo.
 
 ::
 
@@ -204,7 +204,7 @@ Contrassegna la seguente proprietà come esportata (modificabile nel pannello de
 
 **@export_category**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_@GDScript_annotation_@export_category>`
 
-Definisce una nuova categoria per le proprietà esportate seguenti. Questo aiuta a organizzare le proprietà nel pannello dell'ispettore.
+Definisce una nuova categoria per le proprietà esportate seguenti. Questo aiuta a organizzare le proprietà nel pannello Ispettore.
 
 Vedi anche :ref:`@GlobalScope.PROPERTY_USAGE_CATEGORY<class_@GlobalScope_constant_PROPERTY_USAGE_CATEGORY>`.
 
@@ -214,7 +214,7 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_USAGE_CATEGORY<class_@GlobalScope_constan
     @export var hp = 30
     @export var speed = 1.25
 
-\ **Nota:** Le categorie nella lista del pannello dell'ispettore di solito dividono le proprietà provenienti da diverse classi (Node, Node2D, Sprite, ecc.). Per una migliore chiarezza, si consiglia di usare :ref:`@export_group<class_@GDScript_annotation_@export_group>` e :ref:`@export_subgroup<class_@GDScript_annotation_@export_subgroup>`, invece.
+\ **Nota:** Le categorie nella lista del pannello Ispettore di solito dividono le proprietà provenienti da diverse classi (Node, Node2D, Sprite, ecc.). Per una migliore chiarezza, si consiglia di usare :ref:`@export_group<class_@GDScript_annotation_@export_group>` e :ref:`@export_subgroup<class_@GDScript_annotation_@export_subgroup>`, invece.
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ Se si desidera utilizzare le enumerazioni di GDScript con nome, utilizza invece 
 
 **@export_exp_easing**\ (\ hints\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_exp_easing>`
 
-Esporta una proprietà in virgola mobile con un widget di editor di allentamento. È possibile fornire ulteriori indicazioni per regolare il comportamento del widget. ``"attenuation"`` capovolge la curva, il che lo rende più intuitivo per modificare le proprietà di attenuazione. ``"positive_only"`` limita i valori per essere maggiori o uguali a zero.
+Esporta una proprietà in virgola mobile con un widget di editor di andamento. È possibile fornire ulteriori indicazioni per regolare il comportamento del widget. ``"attenuation"`` capovolge la curva, il che lo rende più intuitivo per modificare le proprietà di attenuazione. ``"positive_only"`` limita i valori per essere maggiori o uguali a zero.
 
 Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_EXP_EASING<class_@GlobalScope_constant_PROPERTY_HINT_EXP_EASING>`.
 
@@ -378,7 +378,7 @@ Come :ref:`@export_file<class_@GDScript_annotation_@export_file>`, con la differ
 
 **@export_flags**\ (\ names\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_flags>`
 
-Esporta una proprietà di intero come un campo di flag di bit. Questo consente di memorizzare diversi valori "spuntati" o ``true`` con una sola proprietà, e selezionarli comodamente dal pannello dell'ispettore.
+Esporta una proprietà di intero come un campo di flag di bit. Questo consente di memorizzare diversi valori "spuntati" o ``true`` con una sola proprietà, e selezionarli comodamente dal pannello Ispettore.
 
 Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_FLAGS<class_@GlobalScope_constant_PROPERTY_HINT_FLAGS>`.
 
@@ -423,7 +423,7 @@ Puoi anche usare l'annotazione sui tipi :ref:`Array<class_Array>`\ \[:ref:`int<c
 
 **@export_flags_2d_navigation**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_2d_navigation>`
 
-Esporta una proprietà di intero come un campo di flag di bit per gli strati di navigazione 2D. Il widget nel pannello dell'ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/2d_navigation/layer_1<class_ProjectSettings_property_layer_names/2d_navigation/layer_1>`.
+Esporta una proprietà di intero come un campo di flag di bit per gli strati di navigazione 2D. Il widget nel pannello Ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/2d_navigation/layer_1<class_ProjectSettings_property_layer_names/2d_navigation/layer_1>`.
 
 Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_NAVIGATION<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_NAVIGATION>`.
 
@@ -442,7 +442,7 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_NAVIGATION<class_@GlobalSc
 
 **@export_flags_2d_physics**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_2d_physics>`
 
-Esporta una proprietà di intero come un campo di flag di bit per gli strati di fisica 2D. Il widget nel pannello dell'ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/2d_physics/layer_1<class_ProjectSettings_property_layer_names/2d_physics/layer_1>`.
+Esporta una proprietà di intero come un campo di flag di bit per gli strati di fisica 2D. Il widget nel pannello Ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/2d_physics/layer_1<class_ProjectSettings_property_layer_names/2d_physics/layer_1>`.
 
 Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_PHYSICS<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_PHYSICS>`.
 
@@ -461,7 +461,7 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_PHYSICS<class_@GlobalScope
 
 **@export_flags_2d_render**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_2d_render>`
 
-Esporta una proprietà di intero come un campo di flag di bit per gli strati di rendering 2D. Il widget nel pannello dell'ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/2d_physics/layer_1<class_ProjectSettings_property_layer_names/2d_physics/layer_1>`.
+Esporta una proprietà di intero come un campo di flag di bit per gli strati di rendering 2D. Il widget nel pannello Ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/2d_physics/layer_1<class_ProjectSettings_property_layer_names/2d_physics/layer_1>`.
 
 Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_RENDER<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_RENDER>`.
 
@@ -480,7 +480,7 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_RENDER<class_@GlobalScope_
 
 **@export_flags_3d_navigation**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_3d_navigation>`
 
-Esporta una proprietà di intero come un campo di flag di bit per gli strati di navigazione 3D. Il widget nel pannello dell'ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/3d_navigation/layer_1<class_ProjectSettings_property_layer_names/3d_navigation/layer_1>`.
+Esporta una proprietà di intero come un campo di flag di bit per gli strati di navigazione 3D. Il widget nel pannello Ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/3d_navigation/layer_1<class_ProjectSettings_property_layer_names/3d_navigation/layer_1>`.
 
 Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_NAVIGATION<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_3D_NAVIGATION>`.
 
@@ -499,7 +499,7 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_NAVIGATION<class_@GlobalSc
 
 **@export_flags_3d_physics**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_3d_physics>`
 
-Esporta una proprietà di intero come un campo di flag di bit per gli strati di fisica 3D. Il widget nel pannello dell'ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/3d_physics/layer_1<class_ProjectSettings_property_layer_names/3d_physics/layer_1>`.
+Esporta una proprietà di intero come un campo di flag di bit per gli strati di fisica 3D. Il widget nel pannello Ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/3d_physics/layer_1<class_ProjectSettings_property_layer_names/3d_physics/layer_1>`.
 
 Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_PHYSICS<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_3D_PHYSICS>`.
 
@@ -518,7 +518,7 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_PHYSICS<class_@GlobalScope
 
 **@export_flags_3d_render**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_3d_render>`
 
-Esporta una proprietà di intero come un campo di flag di bit per gli strati di rendering 3D. Il widget nel pannello dell'ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/3d_physics/layer_1<class_ProjectSettings_property_layer_names/3d_physics/layer_1>`.
+Esporta una proprietà di intero come un campo di flag di bit per gli strati di rendering 3D. Il widget nel pannello Ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/3d_physics/layer_1<class_ProjectSettings_property_layer_names/3d_physics/layer_1>`.
 
 Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_RENDER<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_3D_RENDER>`.
 
@@ -537,7 +537,7 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_RENDER<class_@GlobalScope_
 
 **@export_flags_avoidance**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_avoidance>`
 
-Esporta una proprietà di intero come un campo di flag di bit per gli strati di evasione. Il widget nel pannello dell'ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/avoidance/layer_1<class_ProjectSettings_property_layer_names/avoidance/layer_1>`.
+Esporta una proprietà di intero come un campo di flag di bit per gli strati di evitamento. Il widget nel pannello Ispettore utilizzerà i nomi degli strati definiti in :ref:`ProjectSettings.layer_names/avoidance/layer_1<class_ProjectSettings_property_layer_names/avoidance/layer_1>`.
 
 Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_AVOIDANCE<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_AVOIDANCE>`.
 
@@ -597,7 +597,7 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_GLOBAL_FILE<class_@GlobalScope_const
 
 **@export_group**\ (\ name\: :ref:`String<class_String>`, prefix\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_annotation_@export_group>`
 
-Definisce un nuovo gruppo per le seguenti proprietà esportate. Questo aiuta a organizzare le proprietà nel pannello dell'ispettore. I gruppi possono essere aggiunti con un prefisso ``prefix`` opzionale, che include nel gruppo solo le proprietà che hanno questo prefisso. Il raggruppamento si romperà alla prima proprietà che non ha il prefisso. Il prefisso è anche rimosso dal nome della proprietà nel pannello dell'ispettore.
+Definisce un nuovo gruppo per le seguenti proprietà esportate. Questo aiuta a organizzare le proprietà nel pannello Ispettore. I gruppi possono essere aggiunti con un prefisso ``prefix`` opzionale, che include nel gruppo solo le proprietà che hanno questo prefisso. Il raggruppamento si romperà alla prima proprietà che non ha il prefisso. Il prefisso è anche rimosso dal nome della proprietà nel pannello Ispettore.
 
 Se non viene fornito ``prefix``, ogni proprietà seguente verrà aggiunta al gruppo. Il gruppo termina quando viene definito il prossimo gruppo o categoria. Puoi anche forzare la fine di un gruppo utilizzando questa annotazione con stringhe vuote per i parametri, ``@export_group("", "")``.
 
@@ -738,7 +738,7 @@ Esporta una proprietà con il flag :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<cla
 
 **@export_subgroup**\ (\ name\: :ref:`String<class_String>`, prefix\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_annotation_@export_subgroup>`
 
-Definire un nuovo sottogruppo per le seguenti proprietà esportate. Questo aiuta a organizzare le proprietà nel pannello dell'ispettore. I sottogruppi funzionano esattamente come i gruppi, tranne che hanno bisogno di un gruppo genitore per esistere. Vedi :ref:`@export_group<class_@GDScript_annotation_@export_group>`.
+Definire un nuovo sottogruppo per le seguenti proprietà esportate. Questo aiuta a organizzare le proprietà nel pannello Ispettore. I sottogruppi funzionano esattamente come i gruppi, tranne che hanno bisogno di un gruppo genitore per esistere. Vedi :ref:`@export_group<class_@GDScript_annotation_@export_group>`.
 
 Vedi anche :ref:`@GlobalScope.PROPERTY_USAGE_SUBGROUP<class_@GlobalScope_constant_PROPERTY_USAGE_SUBGROUP>`.
 
@@ -824,7 +824,7 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_TOOL_BUTTON<class_@GlobalScope_const
 
 **@icon**\ (\ icon_path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_@GDScript_annotation_@icon>`
 
-Aggiunge un'icona personalizzata allo script attuale. L'icona specificata dal percorso ``icon_path`` viene visualizzata nel pannello di Scena per ogni nodo di quella classe, così come in varie finestre di dialogo dell'editor.
+Aggiunge un'icona personalizzata allo script attuale. L'icona specificata dal percorso ``icon_path`` viene visualizzata nel pannello Scena per ogni nodo di quella classe, così come in varie finestre di dialogo dell'editor.
 
 ::
 
@@ -862,17 +862,17 @@ Segna la proprietà seguente come assegnata quando il nodo è pronto. I valori p
 
 **@rpc**\ (\ mode\: :ref:`String<class_String>` = "authority", sync\: :ref:`String<class_String>` = "call_remote", transfer_mode\: :ref:`String<class_String>` = "reliable", transfer_channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_@GDScript_annotation_@rpc>`
 
-Mark the following method for remote procedure calls. See :doc:`High-level multiplayer <../tutorials/networking/high_level_multiplayer>`.
+Contrassegna il seguente metodo per le chiamate di procedura remota. Vedi :doc:` Multigiocatore di alto livello <../tutorials/networking/high_level_multiplayer>`.
 
-If ``mode`` is set as ``"any_peer"``, allows any peer to call this RPC function. Otherwise, only the authority peer is allowed to call it and ``mode`` should be kept as ``"authority"``. When configuring functions as RPCs with :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, each of these modes respectively corresponds to the :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` and :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>` RPC modes. See :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. If a peer that is not the authority tries to call a function that is only allowed for the authority, the function will not be executed. If the error can be detected locally (when the RPC configuration is consistent between the local and the remote peer), an error message will be displayed on the sender peer. Otherwise, the remote peer will detect the error and print an error there.
+Se ``mode`` è impostato a ``"any_peer"``, permette a qualsiasi peer di chiamare questa funzione RPC. Altrimenti, solo al peer dell'autorità è permesso chiamarlo e ``mode`` dovrebbe essere mantenuto a ``"autorità"``. Quando si configurano le funzioni come RPC con :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, ciascuna di queste modalità corrisponde rispettivamente alle modalità RPC :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` e :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>`. Vedi :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. Se un peer che non è l'autorità cerca di chiamare una funzione che è consentita solo per l'autorità, la funzione non sarà eseguita. Se l'errore può essere rilevato localmente (quando la configurazione RPC è consistente tra il peer locale e il peer remoto), verrà visualizzato un messaggio di errore sul peer del mittente. Altrimenti, il peer remoto individuerà l'errore e stamperà un errore lì.
 
-If ``sync`` is set as ``"call_remote"``, the function will only be executed on the remote peer, but not locally. To run this function locally too, set ``sync`` to ``"call_local"``. When configuring functions as RPCs with :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, this is equivalent to setting ``call_local`` to ``true``.
+Se ``sync`` è impostato a ``"call_remote"``, la funzione sarà eseguita solo sul peer remoto, ma non localmente. Per eseguire questa funzione anche localmente, imposta ``sync`` a ``"call_local"``. Quando si configurano le funzioni come RPC con :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, questo equivale a impostare ``call_local`` a ``true``.
 
-The ``transfer_mode`` accepted values are ``"unreliable"``, ``"unreliable_ordered"``, or ``"reliable"``. It sets the transfer mode of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
+I valori accettati da ``transfer_mode`` sono ``"unreliable"``, ``"unreliable_order"``, o ``"reliable"``. Esso imposta la modalità di trasferimento del :ref:`MultiplayerPeer<class_MultiplayerPeer>` sottostante. Vedi :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
 
-The ``transfer_channel`` defines the channel of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
+Il ``transfer_channel`` definisce il canale del :ref:`MultiplayerPeer<class_MultiplayerPeer>` sottostante. Vedi :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
 
-The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but values related to the same argument must not be used more than once. ``transfer_channel`` always has to be the 4th argument (you must specify 3 preceding arguments).
+L'ordine di ``mode``, ``sync`` e ``transfer_mode`` non importa, ma i valori relativi allo stesso argomento non devono essere utilizzati più di una volta. ``transfer_channel`` deve sempre essere il quarto argomento (è necessario specificare 3 argomenti precedenti).
 
 ::
 
@@ -882,10 +882,10 @@ The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but value
     @rpc("any_peer", "unreliable_ordered")
     func fn_update_pos(): pass
 
-    @rpc("authority", "call_remote", "reliable", 0) # Equivalent to @rpc
+    @rpc("authority", "call_remote", "reliable", 0) # Equivalente a @rpc
     func fn_default(): pass
 
-\ **Note:** Methods annotated with :ref:`@rpc<class_@GDScript_annotation_@rpc>` cannot receive objects which define required parameters in :ref:`Object._init()<class_Object_private_method__init>`. See :ref:`Object._init()<class_Object_private_method__init>` for more details.
+\ **Nota:** I metodi annotati con :ref:`@rpc<class_@GDScript_annotation_@rpc>` non possono ricevere oggetti che definiscono parametri obbligatori in :ref:`Object._init()<class_Object_private_method__init>`. Per maggiori dettagli, vedi :ref:`Object._init()<class_Object_private_method__init>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1021,22 +1021,22 @@ Restituisce un :ref:`Color<class_Color>` costruito da rosso (``r8``), verde (``g
 
 |void| **assert**\ (\ condition\: :ref:`bool<class_bool>`, message\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_method_assert>`
 
-Asserts that the ``condition`` is ``true``. If the ``condition`` is ``false``, an error is generated and the current method returns a default value. When running from the editor, failed asserts also cause a debugger break. This can be used as a stronger form of :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` for reporting errors to project developers or add-on users.
+Verifica che la condizione ``condition`` sia vera (``true``). Se ``condition`` è falsa (``false``), è generato un errore e il metodo attuale restituisce un valore predefinito. Quando in esecuzione dall'editor, gli errori dalle asserzioni provocano anche un interruzione dal debugger. Lo si può usare come una forma più potente di :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` per riportare errori agli sviluppatori del progetto o agli utenti di estensioni.
 
-An optional ``message`` can be shown in addition to the generic "Assertion failed" message. You can use this to provide additional details about why the assertion failed.
+L'argomento facoltativo ``message`` è mostrato in aggiunta al generico messaggio "Assertion failed" (Asserzione fallita). Si può usare per fornire più dettagli sul motivo per cui l'asserzione non è riuscita.
 
-\ **Warning:** For performance reasons, the code inside :ref:`assert()<class_@GDScript_method_assert>` is only executed in debug builds or when running the project from the editor. Don't include code that has side effects in an :ref:`assert()<class_@GDScript_method_assert>` call. Otherwise, the project will behave differently when exported in release mode.
+\ **Attenzione:** Per motivi di prestazioni, il codice all'interno di :ref:`assert()<class_@GDScript_method_assert>` è eseguito solo nelle build di debug o quando il progetto è eseguito dall'editor. Non includere codice che ha effetti collaterali in una chiamata di :ref:`assert()<class_@GDScript_method_assert>`. Altrimenti, il progetto si comporterà in modo diverso quando esportato in modalità di rilascio.
 
 ::
 
-    # Imagine we always want speed to be between 0 and 20.
-    var speed = -10
-    assert(speed < 20) # True, the program will continue.
-    assert(speed >= 0) # False, the program will stop.
-    assert(speed >= 0 and speed < 20) # You can also combine the two conditional statements in one check.
-    assert(speed < 20, "the speed limit is 20") # Show a message.
+    # Immaginati di voler sempre avere una velocità tra 0 e 20.
+    var velocità = -10
+    assert(velocità < 20) # Vero (true), il programma continuerà.
+    assert(velocità >= 0) # Falso (false), il programma si interromperà.
+    assert(velocità >= 0 && speed < 20) # Puoi anche combinare due condizioni in un singolo controllo.
+    assert(velocità < 20, "Il limite di velocità è 20") # Mostra un messaggio per chiarire i dettagli
 
-\ **Note:** :ref:`assert()<class_@GDScript_method_assert>` is a keyword, not a function. So you cannot access it as a :ref:`Callable<class_Callable>` or use it inside expressions.
+\ **Note:** :ref:`assert()<class_@GDScript_method_assert>` è una parola chiave, non una funzione. Perciò non puoi accedervi come un :ref:`Callable<class_Callable>` o usarla all'interno di espressioni.
 
 .. rst-class:: classref-item-separator
 
@@ -1170,17 +1170,17 @@ Stampa:
 
 :ref:`bool<class_bool>` **is_instance_of**\ (\ value\: :ref:`Variant<class_Variant>`, type\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GDScript_method_is_instance_of>`
 
-Returns ``true`` if ``value`` is an instance of ``type``. The ``type`` value must be one of the following:
+Restituisce ``true`` se ``value`` è un'istanza del tipo ``type``. Il valore ``type`` deve essere uno dei seguenti:
 
-- A constant from the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` enumeration, for example :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>`.
+- Una costante dall'enumerazione :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`, per esempio :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>`.
 
-- An :ref:`Object<class_Object>`-derived class which exists in :ref:`ClassDB<class_ClassDB>`, for example :ref:`Node<class_Node>`.
+- Una classe derivante da :ref:`Object<class_Object>` che esiste in :ref:`ClassDB<class_ClassDB>`, per esempio :ref:`Node<class_Node>`.
 
-- A :ref:`Script<class_Script>` (you can use any class, including inner one).
+- Uno :ref:`Script<class_Script>` (è possibile utilizzare qualsiasi classe, comprese quelle interne).
 
-Unlike the right operand of the ``is`` operator, ``type`` can be a non-constant value. The ``is`` operator supports more features (such as typed arrays and dictionaries). Use the operator instead of this method if you do not need to check the type dynamically.
+A differenza dell'operando destro dell'operatore ``is``, ``type`` può essere un valore non costante. L'operatore ``is`` supporta più funzionalità (ad esempio array e dizionari tipizzati). Utilizza l'operatore al posto di questo metodo se non hai bisogno di verificare il tipo dinamicamente.
 
-\ **Examples:**\ 
+\ **Esempi:**\ 
 
 ::
 
@@ -1189,9 +1189,9 @@ Unlike the right operand of the ``is`` operator, ``type`` can be a non-constant 
     print(is_instance_of(a, MyClass))
     print(is_instance_of(a, MyClass.InnerClass))
 
-\ **Note:** If ``value`` and/or ``type`` are freed objects (see :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`), or ``type`` is not one of the above options, this method will raise a runtime error.
+\ **Nota:** Se ``value`` e/o ``type`` sono oggetti liberati (vedi :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`), o ``type`` non è una delle opzioni precedenti, questo metodo genererà un errore durante l'esecuzione.
 
-See also :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`Object.is_class()<class_Object_method_is_class>`, :ref:`Object.get_script()<class_Object_method_get_script>`, :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>` (and other :ref:`Array<class_Array>` methods), :ref:`Dictionary.is_same_typed()<class_Dictionary_method_is_same_typed>` (and other :ref:`Dictionary<class_Dictionary>` methods).
+Vedi anche :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`Object.is_class()<class_Object_method_is_class>`, :ref:`Object.get_script()<class_Object_method_get_script>`, :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>` (e altri metodi di :ref:`Array<class_Array>`), :ref:`Dictionary.is_same_typed()<class_Dictionary_method_is_same_typed>` (e altri metodi di :ref:`Dictionary<class_Dictionary>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1271,7 +1271,7 @@ Restituisce un intero rappresentate il punto di codice Unicode del carattere ``c
 
 Restituisce una :ref:`Resource<class_Resource>` dal filesystem situata nel percorso ``path``. La risorsa viene caricata durante l'elaborazione dello script. Questa funzione funge effettivamente da riferimento a quella risorsa. Nota che questa funzione ha bisogno che ``path`` sia una :ref:`String<class_String>` costante. Se devi caricare una risorsa da un percorso dinamico, usa :ref:`load()<class_@GDScript_method_load>`.
 
-\ **Nota:** È possibile ottenere il percorso di una risorsa cliccando col tasto destro sulla risorsa in questione nel pannello Assets e scegliendo "Copia percorso" oppure trascinando il file dal pannello del Filesystem allo script attuale.
+\ **Nota:** È possibile ottenere il percorso di una risorsa cliccando col tasto destro sulla risorsa in questione nel pannello Assets e scegliendo "Copia percorso" oppure trascinando il file dal pannello Filesystem allo script attuale.
 
 ::
 
@@ -1410,7 +1410,7 @@ Restituisce ``true`` se la classe specificata, derivata da :ref:`Object<class_Ob
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

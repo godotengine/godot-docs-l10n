@@ -185,7 +185,7 @@ Descrizioni delle proprietà
 - |void| **set_foldable_group**\ (\ value\: :ref:`FoldableGroup<class_FoldableGroup>`\ )
 - :ref:`FoldableGroup<class_FoldableGroup>` **get_foldable_group**\ (\ )
 
-Il :ref:`FoldableGroup<class_FoldableGroup>` associato al contenitore. Quando più nodi **FoldableContainer** condividono lo stesso gruppo, solo uno di essi può essere espanso.
+Il :ref:`FoldableGroup<class_FoldableGroup>` associato al contenitore. Quando più nodi **FoldableContainer** condividono lo stesso gruppo, è consentito espandere solo uno di essi.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ Il :ref:`FoldableGroup<class_FoldableGroup>` associato al contenitore. Quando pi
 - |void| **set_folded**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_folded**\ (\ )
 
-If ``true``, the container will become folded and will hide all its children.
+Se ``true``, il contenitore verrà ridotto e nasconderà tutti i suoi figli.
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ If ``true``, the container will become folded and will hide all its children.
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for text shaping algorithms. If left empty, the current locale is used instead.
+Codice lingua utilizzato per gli algoritmi di formazione del testo. Se lasciato vuoto, è utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -586,7 +586,7 @@ Sfondo predefinito per il **FoldableContainer** quando è espanso.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

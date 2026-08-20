@@ -1387,7 +1387,7 @@ Shader — шейдер частиц (может использоваться к
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_TEXTURE_BLIT** = ``5``
 
-Shader is a texture_blit shader.
+Shader — это шейдер texture_blit.
 
 .. _class_RenderingServer_constant_SHADER_MAX:
 
@@ -2109,7 +2109,7 @@ enum **LightType**: :ref:`🔗<enum_RenderingServer_LightType>`
 
 :ref:`LightType<enum_RenderingServer_LightType>` **LIGHT_AREA** = ``3``
 
-Area light (see :ref:`AreaLight3D<class_AreaLight3D>`).
+Областной источник света (см. :ref:`AreaLight3D<class_AreaLight3D>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2765,7 +2765,7 @@ enum **ParticlesTransformAlign**: :ref:`🔗<enum_RenderingServer_ParticlesTrans
 
 :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>` **PARTICLES_TRANSFORM_ALIGN_LOCAL_BILLBOARD** = ``4``
 
-Billboard each particles around a local axis.
+На рекламном щите (Billboard) каждая частица вращается вокруг локальной оси.
 
 .. rst-class:: classref-item-separator
 
@@ -2783,7 +2783,7 @@ enum **ParticlesTransformAlignCustomSrc**: :ref:`🔗<enum_RenderingServer_Parti
 
 :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **PARTICLES_ALIGN_CHANNEL_FILTER_DISABLED** = ``0``
 
-Do not read from CUSTOM when performing billboarding.
+При размещении рекламных щитов не используйте пользовательские настройки (CUSTOM).
 
 .. _class_RenderingServer_constant_PARTICLES_ALIGN_CHANNEL_FILTER_X:
 
@@ -2791,7 +2791,7 @@ Do not read from CUSTOM when performing billboarding.
 
 :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **PARTICLES_ALIGN_CHANNEL_FILTER_X** = ``1``
 
-Read from ``CUSTOM.x`` when performing billboarding and use it as an angle, in radians.
+При выполнении билбординга считывайте данные из ``CUSTOM.x`` и используйте их в качестве угла в радианах.
 
 .. _class_RenderingServer_constant_PARTICLES_ALIGN_CHANNEL_FILTER_Y:
 
@@ -2799,7 +2799,7 @@ Read from ``CUSTOM.x`` when performing billboarding and use it as an angle, in r
 
 :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **PARTICLES_ALIGN_CHANNEL_FILTER_Y** = ``2``
 
-Read from ``CUSTOM.y`` when performing billboarding and use it as an angle, in radians.
+При выполнении билбординга считывайте данные из файла ``CUSTOM.y`` и используйте их в качестве угла в радианах.
 
 .. _class_RenderingServer_constant_PARTICLES_ALIGN_CHANNEL_FILTER_Z:
 
@@ -2807,7 +2807,7 @@ Read from ``CUSTOM.y`` when performing billboarding and use it as an angle, in r
 
 :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **PARTICLES_ALIGN_CHANNEL_FILTER_Z** = ``3``
 
-Read from ``CUSTOM.z`` when performing billboarding and use it as an angle, in radians.
+При выполнении билбординга считывайте данные из файла ``CUSTOM.z`` и используйте их в качестве угла в радианах.
 
 .. _class_RenderingServer_constant_PARTICLES_ALIGN_CHANNEL_FILTER_W:
 
@@ -2815,7 +2815,7 @@ Read from ``CUSTOM.z`` when performing billboarding and use it as an angle, in r
 
 :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **PARTICLES_ALIGN_CHANNEL_FILTER_W** = ``4``
 
-Read from ``CUSTOM.w`` when performing billboarding and use it as an angle, in radians.
+При выполнении билбординга считывайте данные из файла ``CUSTOM.w`` и используйте их в качестве угла в радианах.
 
 .. rst-class:: classref-item-separator
 
@@ -2833,7 +2833,7 @@ enum **ParticlesTransformAlignAxis**: :ref:`🔗<enum_RenderingServer_ParticlesT
 
 :ref:`ParticlesTransformAlignAxis<enum_RenderingServer_ParticlesTransformAlignAxis>` **PARTICLES_ALIGN_AXIS_X** = ``0``
 
-Use the X axis for local billboarding.
+Используйте ось X для локального билборда.
 
 .. _class_RenderingServer_constant_PARTICLES_ALIGN_AXIS_Y:
 
@@ -2841,7 +2841,7 @@ Use the X axis for local billboarding.
 
 :ref:`ParticlesTransformAlignAxis<enum_RenderingServer_ParticlesTransformAlignAxis>` **PARTICLES_ALIGN_AXIS_Y** = ``1``
 
-Use the Y axis for local billboarding.
+Использовать Y Ось для локального билбординга.
 
 .. rst-class:: classref-item-separator
 
@@ -2901,7 +2901,7 @@ enum **ParticlesCollisionType**: :ref:`🔗<enum_RenderingServer_ParticlesCollis
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_SPHERE_ATTRACT** = ``0``
 
-Sphere attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesAttractorSphere3D<class_GPUParticlesAttractorSphere3D>`).
+Тип аттрактора «Сфера» для :ref:`GPUParticles3D<class_GPUParticles3D>` (см. :ref:`GPUParticlesAttractorSphere3D<class_GPUParticlesAttractorSphere3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_BOX_ATTRACT:
 
@@ -2909,7 +2909,7 @@ Sphere attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_BOX_ATTRACT** = ``1``
 
-Box attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesAttractorBox3D<class_GPUParticlesAttractorBox3D>`).
+Тип аттрактора Box для :ref:`GPUParticles3D<class_GPUParticles3D>` (см. :ref:`GPUParticlesAttractorBox3D<class_GPUParticlesAttractorBox3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_VECTOR_FIELD_ATTRACT:
 
@@ -2917,7 +2917,7 @@ Box attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GP
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_VECTOR_FIELD_ATTRACT** = ``2``
 
-Vector field attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>`).
+Тип аттрактора векторного поля для :ref:`GPUParticles3D<class_GPUParticles3D>` (см. :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_SPHERE_COLLIDE:
 
@@ -2925,7 +2925,7 @@ Vector field attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_SPHERE_COLLIDE** = ``3``
 
-Sphere collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesCollisionSphere3D<class_GPUParticlesCollisionSphere3D>`).
+Тип столкновения сфер для :ref:`GPUParticles3D<class_GPUParticles3D>` (см. :ref:`GPUParticlesCollisionSphere3D<class_GPUParticlesCollisionSphere3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_BOX_COLLIDE:
 
@@ -2933,7 +2933,7 @@ Sphere collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_BOX_COLLIDE** = ``4``
 
-Box collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesCollisionBox3D<class_GPUParticlesCollisionBox3D>`).
+Тип столкновения Box для :ref:`GPUParticles3D<class_GPUParticles3D>` (см. :ref:`GPUParticlesCollisionBox3D<class_GPUParticlesCollisionBox3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_SDF_COLLIDE:
 
@@ -2941,7 +2941,7 @@ Box collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GP
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_SDF_COLLIDE** = ``5``
 
-Signed distance field collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesCollisionSDF3D<class_GPUParticlesCollisionSDF3D>`).
+Тип столкновения по полю знаковых расстояний для :ref:`GPUParticles3D<class_GPUParticles3D>` (см. :ref:`GPUParticlesCollisionSDF3D<class_GPUParticlesCollisionSDF3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_HEIGHTFIELD_COLLIDE:
 
@@ -2949,7 +2949,7 @@ Signed distance field collision type for :ref:`GPUParticles3D<class_GPUParticles
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_HEIGHTFIELD_COLLIDE** = ``6``
 
-Heightfield collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`).
+Тип столкновения по высотному полю для :ref:`GPUParticles3D<class_GPUParticles3D>` (см. :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2967,7 +2967,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_256** = ``0``
 
-256×256 heightfield resolution for :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
+разрешение карты высот 256×256 для :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_512:
 
@@ -2975,7 +2975,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_512** = ``1``
 
-512×512 heightfield resolution for :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
+разрешение карты высот 512×512 для :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_1024:
 
@@ -2983,7 +2983,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_1024** = ``2``
 
-1024×1024 heightfield resolution for :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
+Разрешение поля высот 1024×1024 для :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_2048:
 
@@ -2991,7 +2991,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_2048** = ``3``
 
-2048×2048 heightfield resolution for :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
+Разрешение карты высот 2048×2048 для :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_4096:
 
@@ -2999,7 +2999,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_4096** = ``4``
 
-4096×4096 heightfield resolution for :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
+Разрешение поля высот 4096×4096 для :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_8192:
 
@@ -3007,7 +3007,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_8192** = ``5``
 
-8192×8192 heightfield resolution for :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
+Разрешение поля высот 8192×8192 для :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_MAX:
 
@@ -3135,9 +3135,9 @@ enum **ViewportScaling3DMode**: :ref:`🔗<enum_RenderingServer_ViewportScaling3
 
 :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` **VIEWPORT_SCALING_3D_MODE_NEAREST** = ``5``
 
-Use nearest-neighbor filtering for the viewport's 3D buffer. This looks crisper than :ref:`VIEWPORT_SCALING_3D_MODE_BILINEAR<class_RenderingServer_constant_VIEWPORT_SCALING_3D_MODE_BILINEAR>` and has no additional rendering cost. The amount of scaling can be set using :ref:`Viewport.scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Values greater than ``1.0`` are not supported and bilinear downsampling will be used instead. A value of ``1.0`` disables scaling.
+Используйте фильтрацию ближайших соседей для 3D-буфера видового окна. Это обеспечивает более четкое изображение, чем при использовании :ref:`VIEWPORT_SCALING_3D_MODE_BILINEAR<class_RenderingServer_constant_VIEWPORT_SCALING_3D_MODE_BILINEAR>`, и не влечет дополнительных затрат на рендеринг. Величину масштабирования можно задать с помощью :ref:`Viewport.scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Значения больше ``1.0`` не поддерживаются, вместо них будет использоваться билинейное уменьшение разрешения. Значение ``1.0`` отключает масштабирование.
 
-\ **Note:** When using the **Nearest** scaling mode, to avoid uneven pixel scaling, it's highly recommended to use a value equal to an integer divisor with a dividend of ``1``. For example, it's best to use a scale of ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5), and so on.
+\ **Примечание:** При использовании режима масштабирования **Nearest** во избежание неравномерного масштабирования пикселей настоятельно рекомендуется использовать значение, равное целочисленному делителю с делимым ``1``. Например, лучше всего использовать шкалу ``0.5`` (1/2), ``0.3333`` (1/3), ``0.25`` (1/4), ``0.2`` (1/5) и так далее.
 
 .. _class_RenderingServer_constant_VIEWPORT_SCALING_3D_MODE_MAX:
 
@@ -3685,11 +3685,11 @@ enum **ViewportDebugDraw**: :ref:`🔗<enum_RenderingServer_ViewportDebugDraw>`
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_WIREFRAME** = ``4``
 
-Debug draw draws objects in wireframe.
+Отладочная отрисовка отображает объекты в каркасном режиме.
 
-\ **Note:** :ref:`set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` must be called before loading any meshes for wireframes to be visible when using the Compatibility renderer.
+\ **Примечание:** Метод :ref:`set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` необходимо вызвать перед загрузкой любых мешей, чтобы каркасные структуры были видны при использовании рендерера совместимости.
 
-\ **Note:** In the Compatibility renderer, backfaces are always visible when using wireframe rendering. In the Forward+ and Mobile renderers, wireframes follow the material's backface culling properties instead.
+\ **Примечание:** В рендерере совместимости задние грани всегда видны при использовании каркасной отрисовки. В рендерерах Forward+ и Mobile каркасные структуры следуют свойствам отсечения задних граней материала.
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_NORMAL_BUFFER:
 
@@ -4317,7 +4317,7 @@ enum **EnvironmentGlowBlendMode**: :ref:`🔗<enum_RenderingServer_EnvironmentGl
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_SCREEN** = ``1``
 
-Adds the glow effect to the scene after modifying the glow influence based on the scene value; dark values will be highly influenced by glow and bright values will not be influenced by glow. This approach avoids bright values becoming overly bright from the glow effect. :ref:`Environment.tonemap_white<class_Environment_property_tonemap_white>` is used to determine the maximum scene value where the glow should have no influence. When :ref:`Environment.tonemap_mode<class_Environment_property_tonemap_mode>` is set to :ref:`Environment.TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` and :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true``, the parent window's :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` will be used as the maximum scene value.
+Добавляет эффект свечения к сцене после изменения влияния свечения в зависимости от значения сцены; темные значения будут сильно подвержены влиянию свечения, а светлые — нет. Такой подход позволяет избежать чрезмерного усиления ярких значений из-за эффекта свечения. :ref:`Environment.tonemap_white<class_Environment_property_tonemap_white>` используется для определения максимального значения сцены, при котором свечение не должно оказывать никакого влияния. Если :ref:`Environment.tonemap_mode<class_Environment_property_tonemap_mode>` установлен в :ref:`Environment.TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>`, а :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` имеет значение ``true``, то в качестве максимального значения сцены будет использоваться :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` родительского окна.
 
 .. _class_RenderingServer_constant_ENV_GLOW_BLEND_MODE_SOFTLIGHT:
 
@@ -4343,7 +4343,7 @@ Adds the glow effect to the scene after modifying the glow influence based on th
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_MIX** = ``4``
 
-Mixes the glow image with the scene image. Best used with :ref:`Environment.glow_bloom<class_Environment_property_glow_bloom>` to avoid darkening the scene.
+Смешивает изображение свечения с изображением сцены. Лучше всего использовать с :ref:`Environment.glow_bloom<class_Environment_property_glow_bloom>`, чтобы избежать затемнения сцены.
 
 .. rst-class:: classref-item-separator
 
@@ -4405,9 +4405,9 @@ enum **EnvironmentToneMapper**: :ref:`🔗<enum_RenderingServer_EnvironmentToneM
 
 :ref:`EnvironmentToneMapper<enum_RenderingServer_EnvironmentToneMapper>` **ENV_TONE_MAPPER_FILMIC** = ``2``
 
-Uses a film-like tonemapping curve to prevent clipping of bright values and provide better contrast than :ref:`ENV_TONE_MAPPER_REINHARD<class_RenderingServer_constant_ENV_TONE_MAPPER_REINHARD>`. Slightly slower than :ref:`ENV_TONE_MAPPER_REINHARD<class_RenderingServer_constant_ENV_TONE_MAPPER_REINHARD>`.
+Использует кривую тонального отображения, аналогичную пленочной, чтобы предотвратить обрезку ярких значений и обеспечить лучший контраст, чем :ref:`ENV_TONE_MAPPER_REINHARD<class_RenderingServer_constant_ENV_TONE_MAPPER_REINHARD>`. Немного медленнее, чем :ref:`ENV_TONE_MAPPER_REINHARD<class_RenderingServer_constant_ENV_TONE_MAPPER_REINHARD>`.
 
-\ **Note:** This tonemapper does not support HDR output because it produces output in the SDR range. It is recommended to use a different tonemapper when rendering to an HDR screen.
+\ **Примечание:** Этот тональный преобразователь не поддерживает вывод HDR, поскольку он выдает изображение в диапазоне SDR. Рекомендуется использовать другой тональный преобразователь при рендеринге на HDR-экран.
 
 .. _class_RenderingServer_constant_ENV_TONE_MAPPER_ACES:
 
@@ -4415,11 +4415,11 @@ Uses a film-like tonemapping curve to prevent clipping of bright values and prov
 
 :ref:`EnvironmentToneMapper<enum_RenderingServer_EnvironmentToneMapper>` **ENV_TONE_MAPPER_ACES** = ``3``
 
-Uses a high-contrast film-like tonemapping curve and desaturates bright values for a more realistic appearance. Slightly slower than :ref:`ENV_TONE_MAPPER_FILMIC<class_RenderingServer_constant_ENV_TONE_MAPPER_FILMIC>`.
+Использует высококонтрастную кривую тонального отображения, похожую на пленочную, и уменьшает насыщенность ярких значений для более реалистичного вида. Работает немного медленнее, чем :ref:`ENV_TONE_MAPPER_FILMIC<class_RenderingServer_constant_ENV_TONE_MAPPER_FILMIC>`.
 
-\ **Note:** This tonemapping operator is called "ACES Fitted" in Godot 3.x.
+\ **Примечание:** Этот оператор тонального отображения называется "ACES Fitted" в Godot 3.x.
 
-\ **Note:** This tonemapper does not support HDR output because it produces output in the SDR range. It is recommended to use a different tonemapper when rendering to an HDR screen.
+\ **Примечание:** Этот тональный преобразователь не поддерживает вывод HDR, поскольку он выдает изображение в диапазоне SDR. Рекомендуется использовать другой тональный преобразователь при рендеринге на HDR-экран.
 
 .. _class_RenderingServer_constant_ENV_TONE_MAPPER_AGX:
 
@@ -6287,13 +6287,13 @@ enum **Features**: :ref:`🔗<enum_RenderingServer_Features>`
 
 :ref:`RID<class_RID>` **area_light_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_area_light_create>`
 
-Creates a new area light and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID can be used in most ``light_*`` RenderingServer functions.
+Создает новый источник света (AreaLight) и добавляет его в RenderingServer. Доступ к нему осуществляется с помощью возвращаемого RID. Этот RID можно использовать в большинстве функций RenderingServer ``light_*``.
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+После завершения работы с RID вам потребуется освободить его с помощью метода :ref:`free_rid()<class_RenderingServer_method_free_rid>` RenderingServer.
 
-To place in a scene, attach this area light to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` using the returned RID.
+Чтобы разместить этот источник света в сцене, прикрепите его к экземпляру с помощью метода :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>`, используя возвращаемый RID.
 
-\ **Note:** The equivalent node is :ref:`AreaLight3D<class_AreaLight3D>`.
+\ **Примечание:** Эквивалентный узел — :ref:`AreaLight3D<class_AreaLight3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7273,7 +7273,7 @@ To place in a scene, attach this area light to an instance using :ref:`instance_
 
 |void| **canvas_light_occluder_set_as_sdf_collision**\ (\ occluder\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_occluder_set_as_sdf_collision>`
 
-Enables or disables using the light occluder as a signed distance field for 2D particle collision.
+Включает или отключает использование световой окклюдер элемента в качестве поля знакового расстояния для столкновений 2D частиц.
 
 .. rst-class:: classref-item-separator
 
@@ -7655,11 +7655,11 @@ Enables or disables using the light occluder as a signed distance field for 2D p
 
 |void| **canvas_set_disable_scale**\ (\ disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_set_disable_scale>`
 
-If ``disable`` is ``true``, makes 2D rendering ignore the canvas scale defined for each canvas layer. This affects :ref:`CanvasLayer<class_CanvasLayer>`\ s with the :ref:`CanvasLayer.follow_viewport_enabled<class_CanvasLayer_property_follow_viewport_enabled>` property set to ``true``.
+Если ``disable`` имеет значение ``true``, 2D-рендеринг игнорирует масштаб холста, определенный для каждого слоя холста. Это влияет на :ref:`CanvasLayer<class_CanvasLayer>` со свойством :ref:`CanvasLayer.follow_viewport_enabled<class_CanvasLayer_property_follow_viewport_enabled>`, установленным в ``true``.
 
-In the editor, this is set to ``true`` by default, and set to ``false`` when **View > Preview Canvas Scale** is enabled at the top of the 2D editor viewport.
+В редакторе по умолчанию это значение установлено в ``true``, а при включении **Вид > Предварительный просмотр масштаба холста** в верхней части окна просмотра 2D-редактора устанавливается в ``false``.
 
-\ **Note:** Setting this to ``true`` does not impact the behavior of :ref:`CanvasLayer.scale<class_CanvasLayer_property_scale>`, :ref:`Node2D.scale<class_Node2D_property_scale>`, or :ref:`Control.scale<class_Control_property_scale>`.
+\ **Примечание:** Установка этого значения в ``true`` не влияет на поведение :ref:`CanvasLayer.scale<class_CanvasLayer_property_scale>`, :ref:`Node2D.scale<class_Node2D_property_scale>` или :ref:`Control.scale<class_Control_property_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9153,7 +9153,7 @@ In the editor, this is set to ``true`` by default, and set to ``false`` when **V
 
 |void| **instance_set_ignore_culling**\ (\ instance\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_ignore_culling>`
 
-If ``true``, ignores all culling on the specified 3D geometry instance, including frustum culling, occlusion culling, and layer culling. This is not the same as :ref:`GeometryInstance3D.ignore_occlusion_culling<class_GeometryInstance3D_property_ignore_occlusion_culling>`, which only ignores occlusion culling but leaves frustum and layer culling intact.
+Если ``true``, то игнорируется вся отсечка для указанного экземпляра 3D-геометрии, включая отсечку по пирамиде видимости, отсечку по окклюзии и отсечку по слою. Это не то же самое, что :ref:`GeometryInstance3D.ignore_occlusion_culling<class_GeometryInstance3D_property_ignore_occlusion_culling>`, который игнорирует только отсечку по окклюзии, но оставляет отсечку по пирамиде видимости и по слою без изменений.
 
 .. rst-class:: classref-item-separator
 
@@ -9315,7 +9315,7 @@ If ``true``, ignores all culling on the specified 3D geometry instance, includin
 
 |void| **light_area_set_normalize_energy**\ (\ light\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_light_area_set_normalize_energy>`
 
-Defines whether the energy of an :ref:`AreaLight3D<class_AreaLight3D>` is normalized (divided) by its area. If set to ``true``, changing the size does not affect the total energy output. Equivalent to :ref:`AreaLight3D.area_normalize_energy<class_AreaLight3D_property_area_normalize_energy>`.
+Определяет, нормализуется ли (делится) энергия :ref:`AreaLight3D<class_AreaLight3D>` на его площадь. Если установлено значение ``true``, изменение размера не влияет на общую выходную энергию. Эквивалентно :ref:`AreaLight3D.area_normalize_energy<class_AreaLight3D_property_area_normalize_energy>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9327,7 +9327,7 @@ Defines whether the energy of an :ref:`AreaLight3D<class_AreaLight3D>` is normal
 
 |void| **light_area_set_size**\ (\ light\: :ref:`RID<class_RID>`, size\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_RenderingServer_method_light_area_set_size>`
 
-Sets the extents (width and height) in meters for this area light. Equivalent to :ref:`AreaLight3D.area_size<class_AreaLight3D_property_area_size>`.
+Устанавливает размеры (ширину и высоту) в метрах для этого площадного света. Эквивалентно :ref:`AreaLight3D.area_size<class_AreaLight3D_property_area_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9547,7 +9547,7 @@ Sets the extents (width and height) in meters for this area light. Equivalent to
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **lightmap_get_probe_capture_bsp_tree**\ (\ lightmap\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_lightmap_get_probe_capture_bsp_tree>`
 
-Returns the BSP tree data used for accelerating probe lookups. The BSP data is structured as a series of six signed 32-bit values per BSP node in this order: ``float plane_x``, ``float plane_y``, ``float plane_z``, ``float plane_distance``, ``int32_t over``, ``int32_t under``. An empty leaf is denoted by the value ``-2147483648`` (the minimum 32-bit signed integer). See also :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
+Возвращает данные BSP-дерева, используемые для ускорения поиска зондов. Данные BSP структурированы как последовательность из шести 32-битных значений со знаком на узел BSP в следующем порядке: ``float plane_x``, ``float plane_y``, ``float plane_z``, ``float plane_distance``, ``int32_t over``, ``int32_t under``. Пустой лист обозначается значением ``-2147483648`` (минимальное 32-битное целое со знаком). См. также :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9559,7 +9559,7 @@ Returns the BSP tree data used for accelerating probe lookups. The BSP data is s
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **lightmap_get_probe_capture_points**\ (\ lightmap\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_lightmap_get_probe_capture_points>`
 
-Returns the *local space* positions of each lightmap probe capture point. Keep in mind the lightmap instance may have a non-zero transform, which will affect the position of the probe capture points. See also :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
+Возвращает позиции *в локальном пространстве* каждой точки захвата зонда карты освещения. Имейте в виду, что экземпляр карты освещения может иметь ненулевое преобразование, которое повлияет на положение точек захвата зонда. См. также :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9571,7 +9571,7 @@ Returns the *local space* positions of each lightmap probe capture point. Keep i
 
 :ref:`PackedColorArray<class_PackedColorArray>` **lightmap_get_probe_capture_sh**\ (\ lightmap\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_lightmap_get_probe_capture_sh>`
 
-Returns the L0, L1, and L2 `spherical harmonics <https://en.wikipedia.org/wiki/Spherical_harmonics>`__ data for each lightmap probe capture point. This is specified as 9 :ref:`Color<class_Color>` values per probe, which means the size of the returned data is always 9 times the number of probe points. See also :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
+Возвращает данные `сферических гармоник <https://en.wikipedia.org/wiki/Spherical_harmonics>`__ L0, L1 и L2 для каждой точки захвата зонда карты освещения. Это задается как 9 значений :ref:`Color<class_Color>` на зонд, что означает, что размер возвращаемых данных всегда в 9 раз больше количества точек зонда. См. также :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9583,7 +9583,7 @@ Returns the L0, L1, and L2 `spherical harmonics <https://en.wikipedia.org/wiki/S
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **lightmap_get_probe_capture_tetrahedra**\ (\ lightmap\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_lightmap_get_probe_capture_tetrahedra>`
 
-Returns the tetrahedralization data used for interpolating between lightmap probe capture points. Each tetrahedron is specified as a series of 4 numbers, each being an index into the probe capture points array returned by :ref:`lightmap_get_probe_capture_points()<class_RenderingServer_method_lightmap_get_probe_capture_points>`. See also :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
+Возвращает данные тетраэдризации, используемые для интерполяции между точками захвата зонда карты освещения. Каждый тетраэдр задается как последовательность из 4 чисел, каждое из которых является индексом в массиве точек захвата зонда, возвращаемом :ref:`lightmap_get_probe_capture_points()<class_RenderingServer_method_lightmap_get_probe_capture_points>`. См. также :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9607,7 +9607,7 @@ Returns the tetrahedralization data used for interpolating between lightmap prob
 
 |void| **lightmap_set_probe_bounds**\ (\ lightmap\: :ref:`RID<class_RID>`, bounds\: :ref:`AABB<class_AABB>`\ ) :ref:`🔗<class_RenderingServer_method_lightmap_set_probe_bounds>`
 
-Sets the bounds that this lightmap instance should visually affect, both in terms of static lightmap baking and probe-based global illumination.
+Устанавливает границы, в которых этот экземпляр карты освещения должен визуально влиять, как с точки зрения статического запекания карты освещения, так и глобального освещения на основе зондов.
 
 .. rst-class:: classref-item-separator
 
@@ -9619,7 +9619,7 @@ Sets the bounds that this lightmap instance should visually affect, both in term
 
 |void| **lightmap_set_probe_capture_data**\ (\ lightmap\: :ref:`RID<class_RID>`, points\: :ref:`PackedVector3Array<class_PackedVector3Array>`, point_sh\: :ref:`PackedColorArray<class_PackedColorArray>`, tetrahedra\: :ref:`PackedInt32Array<class_PackedInt32Array>`, bsp_tree\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_RenderingServer_method_lightmap_set_probe_capture_data>`
 
-Sets the probe capture data for the given lightmap instance. See :ref:`lightmap_get_probe_capture_points()<class_RenderingServer_method_lightmap_get_probe_capture_points>`, :ref:`lightmap_get_probe_capture_sh()<class_RenderingServer_method_lightmap_get_probe_capture_sh>`, :ref:`lightmap_get_probe_capture_tetrahedra()<class_RenderingServer_method_lightmap_get_probe_capture_tetrahedra>`, and :ref:`lightmap_get_probe_capture_bsp_tree()<class_RenderingServer_method_lightmap_get_probe_capture_bsp_tree>` for the expected data formats.
+Устанавливает данные захвата зонда для данного экземпляра карты освещения. См. :ref:`lightmap_get_probe_capture_points()<class_RenderingServer_method_lightmap_get_probe_capture_points>`, :ref:`lightmap_get_probe_capture_sh()<class_RenderingServer_method_lightmap_get_probe_capture_sh>`, :ref:`lightmap_get_probe_capture_tetrahedra()<class_RenderingServer_method_lightmap_get_probe_capture_tetrahedra>` и :ref:`lightmap_get_probe_capture_bsp_tree()<class_RenderingServer_method_lightmap_get_probe_capture_bsp_tree>` для ожидаемых форматов данных.
 
 .. rst-class:: classref-item-separator
 
@@ -9631,7 +9631,7 @@ Sets the probe capture data for the given lightmap instance. See :ref:`lightmap_
 
 |void| **lightmap_set_probe_capture_update_speed**\ (\ speed\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_lightmap_set_probe_capture_update_speed>`
 
-The framerate-independent update speed when representing dynamic object lighting from :ref:`LightmapProbe<class_LightmapProbe>`\ s. Higher values make dynamic object lighting update faster. Higher values can prevent fast-moving objects from having "outdated" indirect lighting displayed on them, at the cost of possible flickering when an object moves from a bright area to a shaded area. See also :ref:`ProjectSettings.rendering/lightmapping/probe_capture/update_speed<class_ProjectSettings_property_rendering/lightmapping/probe_capture/update_speed>`.
+Независимая от частоты кадров скорость обновления при отображении динамического освещения объектов из :ref:`LightmapProbe<class_LightmapProbe>`. Более высокие значения ускоряют обновление динамического освещения объектов. Более высокие значения могут предотвратить отображение «устаревшего» непрямого освещения на быстро движущихся объектах за счет возможного мерцания при перемещении объекта из яркой области в затененную. См. также :ref:`ProjectSettings.rendering/lightmapping/probe_capture/update_speed<class_ProjectSettings_property_rendering/lightmapping/probe_capture/update_speed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9643,7 +9643,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 |void| **lightmap_set_probe_interior**\ (\ lightmap\: :ref:`RID<class_RID>`, interior\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_lightmap_set_probe_interior>`
 
-Sets whether the lightmap instance should be considered as interior (when ``interior`` is ``true``). If the lightmap is marked as interior, environment lighting is ignored when baking lightmaps.
+Устанавливает, следует ли считать экземпляр карты освещения внутренним (когда ``interior`` равен ``true``). Если карта освещения помечена как внутренняя, окружающее освещение игнорируется при запекании карт освещения.
 
 .. rst-class:: classref-item-separator
 
@@ -9783,26 +9783,26 @@ Sets whether the lightmap instance should be considered as interior (when ``inte
 
 |void| **mesh_add_surface**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_add_surface>`
 
-Creates a new surface on the given ``mesh``. Equivalent to :ref:`mesh_add_surface_from_arrays()<class_RenderingServer_method_mesh_add_surface_from_arrays>`, but takes a single :ref:`Dictionary<class_Dictionary>` argument instead of separate arguments. The dictionary must follow this structure:
+Создает новую поверхность для данной ``mesh``. Эквивалентно :ref:`mesh_add_surface_from_arrays()<class_RenderingServer_method_mesh_add_surface_from_arrays>`, но принимает один аргумент :ref:`Dictionary<class_Dictionary>` вместо отдельных аргументов. Словарь должен иметь следующую структуру:
 
 ::
 
     {
-        # Required:
+        # Обязательные:
         "primitive": RenderingServer.PrimitiveType,
         "format": RenderingServer.ArrayFormat,
         "vertex_data": PackedByteArray,
         "vertex_count": int,
         "aabb": AABB,
 
-        # Optional:
+        # Необязательные:
         "attribute_data": PackedByteArray,
         "skin_data": PackedByteArray,
         "index_data": PackedByteArray,
-        "index_count": int, # Required if `index_data` is specified.
+        "index_count": int, # Обязательно, если указан `index_data`.
         "uv_scale": Vector4,
         "lods": [
-            # Both values are required for each LOD level.
+            # Оба значения обязательны для каждого уровня LOD.
             {
                 "edge_length": float,
                 "index_data": PackedByteArray,
@@ -9813,7 +9813,7 @@ Creates a new surface on the given ``mesh``. Equivalent to :ref:`mesh_add_surfac
         "material": Material,
     }
 
-See also :ref:`mesh_get_surface()<class_RenderingServer_method_mesh_get_surface>`, which returns data in the same structure defined above.
+См. также :ref:`mesh_get_surface()<class_RenderingServer_method_mesh_get_surface>`, которая возвращает данные в той же структуре, определенной выше.
 
 .. rst-class:: classref-item-separator
 
@@ -9825,21 +9825,21 @@ See also :ref:`mesh_get_surface()<class_RenderingServer_method_mesh_get_surface>
 
 |void| **mesh_add_surface_from_arrays**\ (\ mesh\: :ref:`RID<class_RID>`, primitive\: :ref:`PrimitiveType<enum_RenderingServer_PrimitiveType>`, arrays\: :ref:`Array<class_Array>`, blend_shapes\: :ref:`Array<class_Array>` = [], lods\: :ref:`Dictionary<class_Dictionary>` = {}, compress_format\: |bitfield|\[:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`\] = 0\ ) :ref:`🔗<class_RenderingServer_method_mesh_add_surface_from_arrays>`
 
-Creates a new surface on the given ``mesh``. :ref:`mesh_get_surface_count()<class_RenderingServer_method_mesh_get_surface_count>` will become the surface index for this new surface.
+Создает новую поверхность для данной ``mesh``. :ref:`mesh_get_surface_count()<class_RenderingServer_method_mesh_get_surface_count>` станет индексом поверхности для этой новой поверхности.
 
-Surfaces are created to be rendered using a ``primitive``, which may be any of the values defined in :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
+Поверхности создаются для рендеринга с использованием ``primitive``, который может быть любым из значений, определенных в :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
 
-The ``arrays`` argument is an array of arrays. Each of the :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` elements contains an array with some of the mesh data for this surface as described by the corresponding member of :ref:`ArrayType<enum_Mesh_ArrayType>` or ``null`` if it is not used by the surface. For example, ``arrays[0]`` is the array of vertices. That first vertex sub-array is always required; the others are optional. Adding an index array puts this surface into "index mode" where the vertex and other arrays become the sources of data and the index array defines the vertex order. All sub-arrays must have the same length as the vertex array (or be an exact multiple of the vertex array's length, when multiple elements of a sub-array correspond to a single vertex) or be empty, except for :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` if it is used.
+Аргумент ``arrays`` — это массив массивов. Каждый из элементов :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` содержит массив с некоторыми данными сетки для этой поверхности, как описано соответствующим членом :ref:`ArrayType<enum_Mesh_ArrayType>`, или ``null``, если он не используется поверхностью. Например, ``arrays[0]`` — это массив вершин. Этот первый подмассив вершин всегда обязателен; остальные необязательны. Добавление индексного массива переводит эту поверхность в «индексный режим», где вершины и другие массивы становятся источниками данных, а индексный массив определяет порядок вершин. Все подмассивы должны иметь ту же длину, что и массив вершин (или быть кратными длине массива вершин, когда несколько элементов подмассива соответствуют одной вершине), или быть пустыми, за исключением :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>`, если он используется.
 
-The ``blend_shapes`` argument is an array of vertex data for each blend shape. Each element is an array of the same structure as ``arrays``, but :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>`, and :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` are set if and only if they are set in ``arrays`` and all other entries are ``null``.
+Аргумент ``blend_shapes`` — это массив данных вершин для каждой формы смешивания. Каждый элемент — это массив той же структуры, что и ``arrays``, но :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` и :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` устанавливаются тогда и только тогда, когда они установлены в ``arrays``, а все остальные записи — ``null``.
 
-The ``lods`` argument is a dictionary with :ref:`float<class_float>` keys and :ref:`PackedInt32Array<class_PackedInt32Array>` values. Each entry in the dictionary represents an LOD level of the surface, where the value is the :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` array to use for the LOD level and the key is roughly proportional to the distance at which the LOD stats being used. I.e., increasing the key of an LOD also increases the distance that the objects has to be from the camera before the LOD is used.
+Аргумент ``lods`` — это словарь с ключами :ref:`float<class_float>` и значениями :ref:`PackedInt32Array<class_PackedInt32Array>`. Каждая запись в словаре представляет уровень детализации поверхности, где значение — это массив :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>`, используемый для уровня детализации, а ключ примерно пропорционален расстоянию, на котором используются характеристики детализации. То есть, увеличение ключа детализации также увеличивает расстояние, на котором объекты должны находиться от камеры, прежде чем будет использован детализация.
 
-The ``compress_format`` argument is the bitwise OR of, as required: One value of :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` left shifted by ``ARRAY_FORMAT_CUSTOMn_SHIFT`` for each custom channel in use, :ref:`ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_RenderingServer_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_RenderingServer_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>`, or :ref:`ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_RenderingServer_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
+Аргумент ``compress_format`` представляет собой побитовое ИЛИ, при необходимости: одного значения :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`, сдвинутого влево на ``ARRAY_FORMAT_CUSTOMn_SHIFT`` для каждого используемого пользовательского канала, :ref:`ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_RenderingServer_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_RenderingServer_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>` или :ref:`ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_RenderingServer_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
 
-See :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` and :ref:`ImporterMesh.add_surface()<class_ImporterMesh_method_add_surface>` for higher-level equivalents of this method.
+См. :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` и :ref:`ImporterMesh.add_surface()<class_ImporterMesh_method_add_surface>` для более высокоуровневых эквивалентов этого метода.
 
-\ **Note:** When using indices, it is recommended to only use points, lines, or triangles.
+\ **Примечание:** При использовании индексов рекомендуется использовать только точки, линии или треугольники.
 
 .. rst-class:: classref-item-separator
 
@@ -9881,15 +9881,15 @@ See :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface
 
 :ref:`RID<class_RID>` **mesh_create_from_surfaces**\ (\ surfaces\: :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\], blend_shape_count\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_RenderingServer_method_mesh_create_from_surfaces>`
 
-Creates a new mesh with predefined surfaces for it and adds the mesh to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``mesh_*`` RenderingServer functions. This method is more efficient for creating meshes with multiple surfaces compared to creating an empty mesh with :ref:`mesh_create()<class_RenderingServer_method_mesh_create>` and adding surfaces one by one with :ref:`mesh_add_surface()<class_RenderingServer_method_mesh_add_surface>`.
+Создает новую сетку с предопределенными поверхностями и добавляет сетку в RenderingServer. К ней можно получить доступ с помощью возвращаемого RID. Этот RID будет использоваться во всех функциях RenderingServer ``mesh_*``. Этот метод более эффективен для создания сеток с несколькими поверхностями по сравнению с созданием пустой сетки с помощью :ref:`mesh_create()<class_RenderingServer_method_mesh_create>` и добавлением поверхностей по одной с помощью :ref:`mesh_add_surface()<class_RenderingServer_method_mesh_add_surface>`.
 
-Each element in the ``surfaces`` array must follow the same structure as described in :ref:`mesh_add_surface()<class_RenderingServer_method_mesh_add_surface>`. The ``blend_shape_count`` parameter must match the blend shape data defined in all surfaces.
+Каждый элемент в массиве ``surfaces`` должен соответствовать той же структуре, что описана в :ref:`mesh_add_surface()<class_RenderingServer_method_mesh_add_surface>`. Параметр ``blend_shape_count`` должен соответствовать данным форм смешивания, определенным во всех поверхностях.
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+После завершения работы с RID его необходимо освободить с помощью метода RenderingServer :ref:`free_rid()<class_RenderingServer_method_free_rid>`.
 
-To place in a scene, attach this mesh to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` using the returned RID.
+Чтобы разместить в сцене, прикрепите эту сетку к экземпляру с помощью :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>`, используя возвращаемый RID.
 
-\ **Note:** The equivalent resource is :ref:`Mesh<class_Mesh>`.
+\ **Примечание:** Эквивалентный ресурс — :ref:`Mesh<class_Mesh>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9937,7 +9937,7 @@ To place in a scene, attach this mesh to an instance using :ref:`instance_set_ba
 
 :ref:`Dictionary<class_Dictionary>` **mesh_get_surface**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_get_surface>`
 
-Returns a mesh's surface as a dictionary following the same structure as described in :ref:`mesh_add_surface()<class_RenderingServer_method_mesh_add_surface>`.
+Возвращает полигональную сетку поверхности в виде словаря, имеющего одинаковую структуру, как описано в :ref:`mesh_add_surface()<class_RenderingServer_method_mesh_add_surface>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9985,9 +9985,9 @@ Returns a mesh's surface as a dictionary following the same structure as describ
 
 |void| **mesh_set_shadow_mesh**\ (\ mesh\: :ref:`RID<class_RID>`, shadow_mesh\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_set_shadow_mesh>`
 
-Sets an optional second mesh which can be used for rendering shadows and the depth prepass. Can be used to increase performance by supplying a mesh with fused vertices and only vertex position data (without normals, UVs, colors, etc.).
+Устанавливает необязательную вторую сетку, которая может использоваться для рендеринга теней и предварительного прохода глубины. Может использоваться для повышения производительности путем предоставления сетки с объединенными вершинами и только данными о положении вершин (без нормалей, UV, цветов и т. д.).
 
-\ **Note:** This mesh must have exactly the same vertex positions as the source mesh (including the source mesh's LODs, if present). If vertex positions differ, then the mesh will not draw correctly.
+\ **Примечание:** Эта сетка должна иметь точно такие же положения вершин, как и исходная сетка (включая LOD исходной сетки, если они есть). Если положения вершин отличаются, то сетка не будет отрисовываться правильно.
 
 .. rst-class:: classref-item-separator
 
@@ -10131,11 +10131,11 @@ Sets an optional second mesh which can be used for rendering shadows and the dep
 
 |void| **mesh_surface_update_attribute_region**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_surface_update_attribute_region>`
 
-Updates the attribute buffer of the mesh surface with the given ``data``. The expected data per attribute is 8 or 12 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector2<class_Vector2>` or :ref:`Vector3<class_Vector3>` vertices. This value can be determined with :ref:`mesh_surface_get_format_attribute_stride()<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>` instead.
+Обновляет буфер атрибутов поверхности сетки с помощью заданных ``data``. Ожидаемый размер данных на атрибут составляет 8 или 12 байт (4 байта на float, 2 float на :ref:`Vector2<class_Vector2>` и 3 float на :ref:`Vector3<class_Vector3>`) в зависимости от того, использует ли сетка вершины :ref:`Vector2<class_Vector2>` или :ref:`Vector3<class_Vector3>`. Это значение можно определить с помощью :ref:`mesh_surface_get_format_attribute_stride()<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each attribute.
+Начальная точка обновлений может быть изменена с помощью ``offset``. Значение ``offset`` должно быть кратно 12 байтам в большинстве случаев для выравнивания по каждому атрибуту.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of attribute locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+\ :ref:`PackedVector3Array<class_PackedVector3Array>` позиций атрибутов может быть преобразован в :ref:`PackedByteArray<class_PackedByteArray>` с помощью :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` для использования в ``data``.
 
 .. rst-class:: classref-item-separator
 
@@ -10159,11 +10159,11 @@ A :ref:`PackedVector3Array<class_PackedVector3Array>` of attribute locations can
 
 |void| **mesh_surface_update_skin_region**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_surface_update_skin_region>`
 
-Updates the skin buffer of the mesh surface with the given ``data``. The expected data per skin is 8 or 12 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector2<class_Vector2>` or :ref:`Vector3<class_Vector3>` vertices. This value can be determined with :ref:`mesh_surface_get_format_skin_stride()<class_RenderingServer_method_mesh_surface_get_format_skin_stride>` instead.
+Обновляет буфер скинов поверхности сетки с помощью заданных ``data``. Ожидаемый размер данных на скин составляет 8 или 12 байт (4 байта на float, 2 float на :ref:`Vector2<class_Vector2>` и 3 float на :ref:`Vector3<class_Vector3>`) в зависимости от того, использует ли сетка вершины :ref:`Vector2<class_Vector2>` или :ref:`Vector3<class_Vector3>`. Это значение можно определить с помощью :ref:`mesh_surface_get_format_skin_stride()<class_RenderingServer_method_mesh_surface_get_format_skin_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each skin.
+Начальная точка обновлений может быть изменена с помощью ``offset``. Значение ``offset`` должно быть кратно 12 байтам в большинстве случаев для выравнивания по каждому скину.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of skin locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+\ :ref:`PackedVector3Array<class_PackedVector3Array>` позиций скинов может быть преобразован в :ref:`PackedByteArray<class_PackedByteArray>` с помощью :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` для использования в ``data``.
 
 .. rst-class:: classref-item-separator
 
@@ -10175,11 +10175,11 @@ A :ref:`PackedVector3Array<class_PackedVector3Array>` of skin locations can be c
 
 |void| **mesh_surface_update_vertex_region**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_surface_update_vertex_region>`
 
-Updates the vertex buffer of the mesh surface with the given ``data``. The expected data per vertex is 8 or 12 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector2<class_Vector2>` or :ref:`Vector3<class_Vector3>` vertices. This value can be determined with :ref:`mesh_surface_get_format_vertex_stride()<class_RenderingServer_method_mesh_surface_get_format_vertex_stride>` instead.
+Обновляет буфер вершин поверхности сетки с помощью заданных ``data``. Ожидаемый размер данных на вершину составляет 8 или 12 байт (4 байта на float, 2 float на :ref:`Vector2<class_Vector2>` и 3 float на :ref:`Vector3<class_Vector3>`) в зависимости от того, использует ли сетка вершины :ref:`Vector2<class_Vector2>` или :ref:`Vector3<class_Vector3>`. Это значение можно определить с помощью :ref:`mesh_surface_get_format_vertex_stride()<class_RenderingServer_method_mesh_surface_get_format_vertex_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each vertex.
+Начальная точка обновлений может быть изменена с помощью ``offset``. Значение ``offset`` должно быть кратно 12 байтам в большинстве случаев для выравнивания по каждой вершине.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of vertex locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+\ :ref:`PackedVector3Array<class_PackedVector3Array>` позиций вершин может быть преобразован в :ref:`PackedByteArray<class_PackedByteArray>` с помощью :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` для использования в ``data``.
 
 .. rst-class:: classref-item-separator
 
@@ -10191,7 +10191,7 @@ A :ref:`PackedVector3Array<class_PackedVector3Array>` of vertex locations can be
 
 |void| **multimesh_allocate_data**\ (\ multimesh\: :ref:`RID<class_RID>`, instances\: :ref:`int<class_int>`, transform_format\: :ref:`MultimeshTransformFormat<enum_RenderingServer_MultimeshTransformFormat>`, color_format\: :ref:`bool<class_bool>` = false, custom_data_format\: :ref:`bool<class_bool>` = false, use_indirect\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_multimesh_allocate_data>`
 
-Sets up the multimesh using the specified data. The number of instances is set by ``instances``. The format of the instance transforms is set by ``transform_format``, which should be set according to whether the multimesh is meant to be rendered in 2D or 3D. If ``color_format`` is ``true``, each instance will have a color associated with it. If ``custom_data_format`` is ``true``, each instance will have a custom data vector associated with it. If ``use_indirect`` is ``true``, an indirect command buffer will be created for this multimesh, allowing the instance count to be modified directly on the GPU. See also :ref:`multimesh_get_command_buffer_rd_rid()<class_RenderingServer_method_multimesh_get_command_buffer_rd_rid>`.
+Настраивает мультимеш с использованием указанных данных. Количество экземпляров задается ``instances``. Формат преобразований экземпляров задается ``transform_format``, который должен быть установлен в соответствии с тем, предназначен ли мультимеш для рендеринга в 2D или 3D. Если ``color_format`` равен ``true``, каждый экземпляр будет иметь связанный цвет. Если ``custom_data_format`` равен ``true``, каждый экземпляр будет иметь связанный вектор пользовательских данных. Если ``use_indirect`` равен ``true``, для этого мультимеша будет создан буфер косвенных команд, позволяющий изменять количество экземпляров непосредственно на GPU. См. также :ref:`multimesh_get_command_buffer_rd_rid()<class_RenderingServer_method_multimesh_get_command_buffer_rd_rid>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10259,21 +10259,21 @@ Sets up the multimesh using the specified data. The number of instances is set b
 
 :ref:`RID<class_RID>` **multimesh_get_command_buffer_rd_rid**\ (\ multimesh\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_multimesh_get_command_buffer_rd_rid>`
 
-Returns the :ref:`RenderingDevice<class_RenderingDevice>` :ref:`RID<class_RID>` handle of the :ref:`MultiMesh<class_MultiMesh>` command buffer. This :ref:`RID<class_RID>` is only valid if ``use_indirect`` is set to ``true`` when allocating data through :ref:`multimesh_allocate_data()<class_RenderingServer_method_multimesh_allocate_data>`. It can be used to directly modify the instance count via buffer.
+Возвращает дескриптор :ref:`RenderingDevice<class_RenderingDevice>` :ref:`RID<class_RID>` буфера команд :ref:`MultiMesh<class_MultiMesh>`. Этот :ref:`RID<class_RID>` действителен только в том случае, если ``use_indirect`` установлен в ``true`` при выделении данных через :ref:`multimesh_allocate_data()<class_RenderingServer_method_multimesh_allocate_data>`. Его можно использовать для прямого изменения количества экземпляров через буфер.
 
-The data structure is dependent on both how many surfaces the mesh contains and whether it is indexed or not, the buffer has 5 integers in it, with the last unused if the mesh is not indexed.
+Структура данных зависит как от того, сколько поверхностей содержит сетка, так и от того, индексирована она или нет, в буфере есть 5 целых чисел, последнее из которых не используется, если сетка не индексирована.
 
-Each of the values in the buffer correspond to these options:
+Каждое из значений в буфере соответствует этим параметрам:
 
 .. code:: text
 
-    Indexed:
+    Индексированная:
       0 - indexCount;
       1 - instanceCount;
       2 - firstIndex;
       3 - vertexOffset;
       4 - firstInstance;
-    Non-indexed:
+    Неиндексированная:
       0 - vertexCount;
       1 - instanceCount;
       2 - firstVertex;
@@ -10843,9 +10843,9 @@ Each of the values in the buffer correspond to these options:
 
 |void| **particles_request_process_time**\ (\ particles\: :ref:`RID<class_RID>`, process_time\: :ref:`float<class_float>`, process_time_residual\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_RenderingServer_method_particles_request_process_time>`
 
-Requests the particles to process for extra process time during a single frame.
+Запрашивает у частиц дополнительное время обработки в течение одного кадра.
 
-\ ``process_time`` defines the time that the particles will process while emitting is on. ``process_time_residual`` defines the time that particles will process with emitting turned off for the simulation. When combined with the particles' speed scale set to ``0.0``, this is useful to be able to seek a particle system timeline.
+\ ``process_time`` определяет время, в течение которого частицы будут обрабатываться при включенной эмиссии. ``process_time_residual`` определяет время, в течение которого частицы будут обрабатываться с выключенной эмиссией для симуляции. В сочетании с масштабом скорости частиц, установленным в ``0.0``, это полезно для возможности перемещения по временной шкале системы частиц.
 
 .. rst-class:: classref-item-separator
 
@@ -10893,7 +10893,7 @@ Requests the particles to process for extra process time during a single frame.
 
 |void| **particles_set_collision_base_size**\ (\ particles\: :ref:`RID<class_RID>`, size\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_collision_base_size>`
 
-Sets the base size for particle collision. Equivalent to :ref:`GPUParticles3D.collision_base_size<class_GPUParticles3D_property_collision_base_size>`.
+Устанавливает базовый размер для столкновений частиц. Эквивалентно :ref:`GPUParticles3D.collision_base_size<class_GPUParticles3D_property_collision_base_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11037,7 +11037,7 @@ Sets the base size for particle collision. Equivalent to :ref:`GPUParticles3D.co
 
 |void| **particles_set_interpolate**\ (\ particles\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_interpolate>`
 
-Sets whether particles should use interpolation between fixed steps. Equivalent to :ref:`GPUParticles3D.interpolate<class_GPUParticles3D_property_interpolate>`.
+Устанавливает, должны ли частицы использовать интерполяцию между фиксированными шагами. Эквивалентно :ref:`GPUParticles3D.interpolate<class_GPUParticles3D_property_interpolate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11135,7 +11135,7 @@ Sets whether particles should use interpolation between fixed steps. Equivalent 
 
 |void| **particles_set_subemitter**\ (\ particles\: :ref:`RID<class_RID>`, subemitter_particles\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_subemitter>`
 
-Sets the subemitter particles for the particle system. Equivalent to :ref:`GPUParticles3D.sub_emitter<class_GPUParticles3D_property_sub_emitter>`.
+Задает субэмиттерные частицы для системы частиц. Эквивалентно :ref:`GPUParticles3D.sub_emitter<class_GPUParticles3D_property_sub_emitter>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11147,7 +11147,7 @@ Sets the subemitter particles for the particle system. Equivalent to :ref:`GPUPa
 
 |void| **particles_set_trail_bind_poses**\ (\ particles\: :ref:`RID<class_RID>`, bind_poses\: :ref:`Array<class_Array>`\[:ref:`Transform3D<class_Transform3D>`\]\ ) :ref:`🔗<class_RenderingServer_method_particles_set_trail_bind_poses>`
 
-Sets the trail bind poses for the particle system. This specified as an array of :ref:`Transform3D<class_Transform3D>`\ s representing the bind pose for each draw pass. See :ref:`GPUParticles3D.draw_skin<class_GPUParticles3D_property_draw_skin>`, :ref:`Skin.get_bind_count()<class_Skin_method_get_bind_count>`, and :ref:`Skin.get_bind_pose()<class_Skin_method_get_bind_pose>`. Set the value for each draw pass to :ref:`Transform3D.IDENTITY<class_Transform3D_constant_IDENTITY>` to use the default behavior, which is what built-in trails use (:ref:`RibbonTrailMesh<class_RibbonTrailMesh>` and :ref:`TubeTrailMesh<class_TubeTrailMesh>`).
+Задает позы привязки траектории для системы частиц. Это задается в виде массива :ref:`Transform3D<class_Transform3D>`, представляющих позу привязки для каждого прохода отрисовки. См. :ref:`GPUParticles3D.draw_skin<class_GPUParticles3D_property_draw_skin>`, :ref:`Skin.get_bind_count()<class_Skin_method_get_bind_count>` и :ref:`Skin.get_bind_pose()<class_Skin_method_get_bind_pose>`. Установите значение для каждого прохода отрисовки равным :ref:`Transform3D.IDENTITY<class_Transform3D_constant_IDENTITY>`, чтобы использовать поведение по умолчанию, которое используется во встроенных траекториях (:ref:`RibbonTrailMesh<class_RibbonTrailMesh>` и :ref:`TubeTrailMesh<class_TubeTrailMesh>`).
 
 .. rst-class:: classref-item-separator
 
@@ -11171,7 +11171,7 @@ Sets the trail bind poses for the particle system. This specified as an array of
 
 |void| **particles_set_transform_align**\ (\ particles\: :ref:`RID<class_RID>`, align\: :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_transform_align>`
 
-Sets the transform alignment for the particle system. Equivalent to :ref:`GPUParticles3D.transform_align<class_GPUParticles3D_property_transform_align>`.
+Задает выравнивание преобразования для системы частиц. Эквивалентно :ref:`GPUParticles3D.transform_align<class_GPUParticles3D_property_transform_align>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11183,7 +11183,7 @@ Sets the transform alignment for the particle system. Equivalent to :ref:`GPUPar
 
 |void| **particles_set_transform_align_axis**\ (\ particles\: :ref:`RID<class_RID>`, rotation_axis\: :ref:`ParticlesTransformAlignAxis<enum_RenderingServer_ParticlesTransformAlignAxis>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_transform_align_axis>`
 
-Sets which axis to use for transform alignment.
+Задает, какую ось использовать для выравнивания преобразования.
 
 .. rst-class:: classref-item-separator
 
@@ -11195,7 +11195,7 @@ Sets which axis to use for transform alignment.
 
 |void| **particles_set_transform_align_channel_filter**\ (\ particles\: :ref:`RID<class_RID>`, channel_filter\: :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_transform_align_channel_filter>`
 
-When using Z-Billboarding, which CUSTOM channel to read from.
+При использовании Z-Billboarding метода, который пользовательский канал используется для чтения.
 
 .. rst-class:: classref-item-separator
 
@@ -11557,9 +11557,9 @@ When using Z-Billboarding, which CUSTOM channel to read from.
 
 |void| **set_debug_generate_wireframes**\ (\ generate\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_set_debug_generate_wireframes>`
 
-If ``generate`` is ``true``, generates debug wireframes for all meshes that are loaded when using the Compatibility renderer. By default, the engine does not generate debug wireframes at runtime, since they slow down loading of assets and take up VRAM.
+Если ``generate`` имеет значение ``true``, генерируются отладочные каркасы для всех мешей, загружаемых при использовании рендерера совместимости. По умолчанию движок не генерирует отладочные каркасы во время выполнения, поскольку они замедляют загрузку ресурсов и занимают видеопамять.
 
-\ **Note:** You must call this method before loading any meshes when using the Compatibility renderer. Otherwise, wireframes will not be used.
+\ **Примечание:** Необходимо вызвать этот метод перед загрузкой любых мешей при использовании рендерера совместимости. В противном случае каркасы использоваться не будут.
 
 .. rst-class:: classref-item-separator
 
@@ -11675,7 +11675,7 @@ If ``generate`` is ``true``, generates debug wireframes for all meshes that are 
 
 |void| **skeleton_allocate_data**\ (\ skeleton\: :ref:`RID<class_RID>`, bones\: :ref:`int<class_int>`, is_2d_skeleton\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_skeleton_allocate_data>`
 
-Allocates data for this skeleton using the number of bones specified in ``bones``. If ``is_2d_skeleton`` is ``true``, the skeleton will be treated as a 2D skeleton instead of a 3D skeleton. See also :ref:`skeleton_get_bone_count()<class_RenderingServer_method_skeleton_get_bone_count>`.
+Выделяет данные для этого скелета, используя количество костей, указанное в ``bones``. Если ``is_2d_skeleton`` имеет значение ``true``, скелет будет рассматриваться как 2D, а не 3D. См. также :ref:`skeleton_get_bone_count()<class_RenderingServer_method_skeleton_get_bone_count>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11749,7 +11749,7 @@ Allocates data for this skeleton using the number of bones specified in ``bones`
 
 :ref:`int<class_int>` **skeleton_get_bone_count**\ (\ skeleton\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_skeleton_get_bone_count>`
 
-Returns the number of bones allocated for this skeleton. See also :ref:`skeleton_allocate_data()<class_RenderingServer_method_skeleton_allocate_data>`.
+Возвращает количество костей, выделенных для этого скелета. См. также :ref:`skeleton_allocate_data()<class_RenderingServer_method_skeleton_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11761,7 +11761,7 @@ Returns the number of bones allocated for this skeleton. See also :ref:`skeleton
 
 |void| **skeleton_set_base_transform_2d**\ (\ skeleton\: :ref:`RID<class_RID>`, base_transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_RenderingServer_method_skeleton_set_base_transform_2d>`
 
-Sets the base :ref:`Transform2D<class_Transform2D>` to use for the specified skeleton.
+Задает базовое значение :ref:`Transform2D<class_Transform2D>`, используемое для указанного скелета.
 
 .. rst-class:: classref-item-separator
 
@@ -12057,9 +12057,9 @@ Sets the base :ref:`Transform2D<class_Transform2D>` to use for the specified ske
 
 |void| **texture_drawable_blit_rect**\ (\ textures\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], rect\: :ref:`Rect2i<class_Rect2i>`, material\: :ref:`RID<class_RID>`, modulate\: :ref:`Color<class_Color>`, source_textures\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], to_mipmap\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_RenderingServer_method_texture_drawable_blit_rect>`
 
-Draws to ``rect`` on up to 4 given Drawable ``textures``, using a TextureBlit Shader from ``material``. ``modulate`` and up to 4 ``source_textures`` are uniforms for the Shader to process with. ``to_mipmap`` can specify to perform this draw to a lower mipmap level.
+Рисует на ``rect`` до 4 заданных Drawable ``textures``, используя шейдер TextureBlit из ``material``. ``modulate`` и до 4 ``source_textures`` — это униформы для обработки шейдером. ``to_mipmap`` может указывать на выполнение отрисовки на более низком уровне мипмапов.
 
-\ **Note:** All ``textures`` must be the same size and format.
+\ **Примечание:** Все ``textures`` должны быть одинакового размера и формата.
 
 .. rst-class:: classref-item-separator
 
@@ -12071,11 +12071,11 @@ Draws to ``rect`` on up to 4 given Drawable ``textures``, using a TextureBlit Sh
 
 :ref:`RID<class_RID>` **texture_drawable_create**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, format\: :ref:`TextureDrawableFormat<enum_RenderingServer_TextureDrawableFormat>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), with_mipmaps\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_texture_drawable_create>`
 
-Creates a 2-dimensional texture and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``texture_drawable*`` RenderingServer functions.
+Создает двухмерную текстуру и добавляет ее в RenderingServer. Доступ к ней осуществляется по возвращаемому RID. Этот RID будет использоваться во всех функциях RenderingServer ``texture_drawable*``.
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+После завершения работы с RID вам потребуется освободить его, используя метод :ref:`free_rid()<class_RenderingServer_method_free_rid>` RenderingServer.
 
-\ **Note:** The equivalent resource is :ref:`DrawableTexture2D<class_DrawableTexture2D>`.
+\ **Примечание:** Эквивалентным ресурсом является :ref:`DrawableTexture2D<class_DrawableTexture2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12087,7 +12087,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **texture_drawable_generate_mipmaps**\ (\ texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_texture_drawable_generate_mipmaps>`
 
-Calculates new MipMaps for the given Drawable ``texture``.
+Вычисляет новые мипмапы для заданного объекта Drawable ``texture``.
 
 .. rst-class:: classref-item-separator
 
@@ -12099,7 +12099,7 @@ Calculates new MipMaps for the given Drawable ``texture``.
 
 :ref:`RID<class_RID>` **texture_drawable_get_default_material**\ (\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_drawable_get_default_material>`
 
-Returns a ShaderMaterial with the default texture_blit Shader.
+Возвращает объект ShaderMaterial с шейдером texture_blit по умолчанию.
 
 .. rst-class:: classref-item-separator
 
@@ -12139,7 +12139,7 @@ Returns a ShaderMaterial with the default texture_blit Shader.
 
 :ref:`String<class_String>` **texture_get_path**\ (\ texture\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_get_path>`
 
-Returns the resource path (starting with ``res://`` or ``uid://``) for the specified texture RID. Returns an empty :ref:`String<class_String>` if the resource is built-in. See also :ref:`texture_set_path()<class_RenderingServer_method_texture_set_path>`.
+Возвращает путь к ресурсу (начинающийся с ``res://`` или ``uid://``) для указанного RID текстуры. Возвращает пустую строку :ref:`String<class_String>`, если ресурс является встроенным. См. также :ref:`texture_set_path()<class_RenderingServer_method_texture_set_path>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12221,7 +12221,7 @@ Returns the resource path (starting with ``res://`` or ``uid://``) for the speci
 
 |void| **texture_set_force_redraw_if_visible**\ (\ texture\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_texture_set_force_redraw_if_visible>`
 
-Sets whether the texture RID should force redrawing when it's visible on screen when :ref:`OS.low_processor_usage_mode<class_OS_property_low_processor_usage_mode>` is ``true``. This is used by :ref:`AnimatedTexture<class_AnimatedTexture>` to force redrawing.
+Определяет, следует ли принудительно перерисовывать RID текстуры, когда она видна на экране, если :ref:`OS.low_processor_usage_mode<class_OS_property_low_processor_usage_mode>` имеет значение ``true``. Это используется :ref:`AnimatedTexture<class_AnimatedTexture>` для принудительной перерисовки.
 
 .. rst-class:: classref-item-separator
 
@@ -12233,9 +12233,9 @@ Sets whether the texture RID should force redrawing when it's visible on screen 
 
 |void| **texture_set_path**\ (\ texture\: :ref:`RID<class_RID>`, path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_RenderingServer_method_texture_set_path>`
 
-Sets the resource path for this texture RID. See also :ref:`texture_get_path()<class_RenderingServer_method_texture_get_path>`.
+Задает путь к ресурсу для этого RID текстуры. См. также :ref:`texture_get_path()<class_RenderingServer_method_texture_get_path>`.
 
-\ **Note:** This is purely a hint and does not cause the texture to be automatically saved when set to a ``res://`` path.
+\ **Примечание:** Это всего лишь подсказка, и она не приводит к автоматическому сохранению текстуры при указании пути ``res://``.
 
 .. rst-class:: classref-item-separator
 
@@ -12247,7 +12247,7 @@ Sets the resource path for this texture RID. See also :ref:`texture_get_path()<c
 
 |void| **texture_set_size_override**\ (\ texture\: :ref:`RID<class_RID>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_texture_set_size_override>`
 
-Sets the size at which the texture should be *displayed* in 2D, ignoring its original size. This does not rescale the texture data itself, only how it is drawn in 2D. Set ``width`` and ``height`` to 0 to disable the size override.
+Задает размер, в котором текстура должна *отображаться* в 2D, игнорируя ее исходный размер. Это не изменяет масштаб самих данных текстуры, а только то, как они отображаются в 2D. Установите ``width`` и ``height`` равными 0, чтобы отключить изменение размера.
 
 .. rst-class:: classref-item-separator
 
@@ -12784,7 +12784,7 @@ Sets the size at which the texture should be *displayed* in 2D, ignoring its ori
 
 |void| **viewport_set_size**\ (\ viewport\: :ref:`RID<class_RID>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, view_count\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_size>`
 
-Sets the viewport's ``width`` and ``height`` in pixels. Optionally the ``view_count`` can be set to increase the number of view layers for stereo rendering.
+Задает ширину ``width`` и высоту ``height`` области просмотра в пикселях. При желании можно установить значение параметра ``view_count`` для увеличения количества слоев просмотра при стереорендеринге.
 
 .. rst-class:: classref-item-separator
 
@@ -12820,11 +12820,11 @@ Sets the viewport's ``width`` and ``height`` in pixels. Optionally the ``view_co
 
 |void| **viewport_set_texture_mipmap_bias**\ (\ viewport\: :ref:`RID<class_RID>`, mipmap_bias\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_texture_mipmap_bias>`
 
-Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close). To get sharper textures at a distance without introducing too much graininess, set this between ``-0.75`` and ``0.0``. Enabling temporal antialiasing (:ref:`ProjectSettings.rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) can help reduce the graininess visible when using negative mipmap bias.
+Влияет на резкость конечной текстуры, считывая значение мипмапа с более низким или более высоким уровнем детализации (также называемое "смещением LOD текстуры"). Отрицательные значения делают текстуры с мипмапами более резкими, но более зернистыми при просмотре с расстояния, в то время как положительные значения делают текстуры с мипмапами более размытыми (даже вблизи). Чтобы получить более резкие текстуры на расстоянии без чрезмерного увеличения зернистости, установите это значение в диапазоне от ``-0.75`` до ``0.0``. Включение временного сглаживания (:ref:`ProjectSettings.rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) может помочь уменьшить зернистость, видимую при использовании отрицательного смещения мипмапа.
 
-\ **Note:** When the 3D scaling mode is set to FSR 1.0, this value is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``-log2(1.0 / scale) + mipmap_bias``.
+\ **Примечание:** Когда режим 3D-масштабирования установлен на FSR 1.0, это значение используется для регулировки автоматического смещения мипмапа, которое рассчитывается внутренне на основе коэффициента масштабирования. Формула для этого: ``-log2(1.0 / scale) + mipmap_bias``.
 
-\ **Note:** This method is only supported in the Forward+ and Mobile renderers, not Compatibility. In Compatibility, this method is always treated as if ``mipmap_bias`` was set to ``0.0``.
+\ **Примечание:** Этот метод поддерживается только в рендерерах Forward+ и Mobile, а не в Compatibility. В Compatibility этот метод всегда обрабатывается так, как если бы ``mipmap_bias`` был установлен на ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -12978,7 +12978,7 @@ Affects the final texture sharpness by reading from a lower or higher mipmap (al
 
 |void| **visibility_notifier_set_aabb**\ (\ notifier\: :ref:`RID<class_RID>`, aabb\: :ref:`AABB<class_AABB>`\ ) :ref:`🔗<class_RenderingServer_method_visibility_notifier_set_aabb>`
 
-Sets the AABB of the specified visibility notifier.
+Устанавливает AABB указанного уведомителя о видимости (Visibility Notifier).
 
 .. rst-class:: classref-item-separator
 
@@ -12990,7 +12990,7 @@ Sets the AABB of the specified visibility notifier.
 
 |void| **visibility_notifier_set_callbacks**\ (\ notifier\: :ref:`RID<class_RID>`, enter_callable\: :ref:`Callable<class_Callable>`, exit_callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_RenderingServer_method_visibility_notifier_set_callbacks>`
 
-Sets the methods to be called when the notifier enters or exits the view.
+Задает методы, которые будут вызываться при входе или выходе элемента, отправляющего уведомление или исчезает из поля зрения.
 
 .. rst-class:: classref-item-separator
 
@@ -13002,7 +13002,7 @@ Sets the methods to be called when the notifier enters or exits the view.
 
 |void| **voxel_gi_allocate_data**\ (\ voxel_gi\: :ref:`RID<class_RID>`, to_cell_xform\: :ref:`Transform3D<class_Transform3D>`, aabb\: :ref:`AABB<class_AABB>`, octree_size\: :ref:`Vector3i<class_Vector3i>`, octree_cells\: :ref:`PackedByteArray<class_PackedByteArray>`, data_cells\: :ref:`PackedByteArray<class_PackedByteArray>`, distance_field\: :ref:`PackedByteArray<class_PackedByteArray>`, level_counts\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_allocate_data>`
 
-Allocates and initializes the voxel GI data for the specified ``voxel_gi`` RID. ``octree_cells`` must be a multiple of 32. ``octree_cells`` must be double the size of ``data_cells``. The allocated data can be retrieved later using the various ``voxel_gi_get_*`` methods.
+Выделяет и инициализирует данные воксельного глобального освещения (Voxel Gl) для указанного RID ``voxel_gi``. ``octree_cells`` должно быть кратно 32. ``octree_cells`` должно быть вдвое больше размера ``data_cells``. Выделенные данные можно будет получить позже, используя различные методы ``voxel_gi_get_*``.
 
 .. rst-class:: classref-item-separator
 
@@ -13030,7 +13030,7 @@ Allocates and initializes the voxel GI data for the specified ``voxel_gi`` RID. 
 
 :ref:`PackedByteArray<class_PackedByteArray>` **voxel_gi_get_data_cells**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_data_cells>`
 
-Returns the data cells for the specified voxel GI data instance. See also :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
+Возвращает ячейки данных для указанного экземпляра данных voxel GI. См. также :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13042,7 +13042,7 @@ Returns the data cells for the specified voxel GI data instance. See also :ref:`
 
 :ref:`PackedByteArray<class_PackedByteArray>` **voxel_gi_get_distance_field**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_distance_field>`
 
-Returns the distance field data for the specified voxel GI data instance. See also :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
+Возвращает данные поля расстояний для указанного экземпляра данных глобального освещения вокселей. См. также :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13054,7 +13054,7 @@ Returns the distance field data for the specified voxel GI data instance. See al
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **voxel_gi_get_level_counts**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_level_counts>`
 
-Returns the level counts for the specified voxel GI data instance. See also :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
+Возвращает количество уровней для указанного экземпляра данных глобального освещения вокселей. См. также :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13066,7 +13066,7 @@ Returns the level counts for the specified voxel GI data instance. See also :ref
 
 :ref:`PackedByteArray<class_PackedByteArray>` **voxel_gi_get_octree_cells**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_octree_cells>`
 
-Returns the octree cell data for the specified voxel GI data instance. See also :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
+Возвращает данные ячеек октодерева для указанного экземпляра данных воксельного глобального освещения. См. также :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13078,7 +13078,7 @@ Returns the octree cell data for the specified voxel GI data instance. See also 
 
 :ref:`Vector3i<class_Vector3i>` **voxel_gi_get_octree_size**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_octree_size>`
 
-Returns the octree size for the specified voxel GI data instance, which corresponds to the number of subdivisions per axis. This can be viewed in the editor by hovering the **Bake VoxelGI** button at the top of the 3D editor viewport when a :ref:`VoxelGI<class_VoxelGI>` node is selected and looking at the **Subdivisions** field in the tooltip.
+Возвращает размер октодерева для указанного экземпляра данных воксельного глобального освещения, который соответствует количеству подразделений на ось. Это можно увидеть в редакторе, наведя курсор на кнопку **Bake VoxelGI** в верхней части окна просмотра 3D-редактора, когда выбран узел :ref:`VoxelGI<class_VoxelGI>`, и посмотрев на поле **Subdivisions** во всплывающей подсказке.
 
 .. rst-class:: classref-item-separator
 
@@ -13090,7 +13090,7 @@ Returns the octree size for the specified voxel GI data instance, which correspo
 
 :ref:`Transform3D<class_Transform3D>` **voxel_gi_get_to_cell_xform**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_to_cell_xform>`
 
-Returns the transform to cell space for the specified voxel GI data instance. See also :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
+Возвращает преобразование в пространство ячеек для указанного экземпляра данных глобального освещения вокселей. См. также :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 

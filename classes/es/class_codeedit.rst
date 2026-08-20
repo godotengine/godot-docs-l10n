@@ -464,7 +464,7 @@ Marca la opción como no clasificada o texto plano.
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_KEYWORD** = ``10``
 
-Marks the option as a keyword.
+Marca la opción como una palabra clave.
 
 .. rst-class:: classref-item-separator
 
@@ -1570,7 +1570,7 @@ Devuelve ``true`` si la línea dada está plegada. Véase :ref:`fold_line()<clas
 
 |void| **join_lines**\ (\ line_ending\: :ref:`String<class_String>` = " "\ ) :ref:`🔗<class_CodeEdit_method_join_lines>`
 
-Joins all selected lines or lines containing a caret with their next line. Whitespace in between will be removed. If the next line has content, the ``line_ending`` will be inserted in between.
+Une todas las líneas seleccionadas o líneas que contienen un cursor con su siguiente línea. Se eliminará el espacio en blanco entre medias. Si la siguiente línea tiene contenido, el ``line_ending`` se insertará entre ambas.
 
 .. rst-class:: classref-item-separator
 

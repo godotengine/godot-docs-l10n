@@ -7,14 +7,14 @@ CollisionShape2D
 
 **Eredita:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Un nodo che fornisce uno :ref:`Shape2D<class_Shape2D>` a un :ref:`CollisionObject2D<class_CollisionObject2D>` genitore.
+Un nodo che fornisce una :ref:`Shape2D<class_Shape2D>` a un :ref:`CollisionObject2D<class_CollisionObject2D>` genitore.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-A node that provides a :ref:`Shape2D<class_Shape2D>` to a :ref:`CollisionObject2D<class_CollisionObject2D>` parent and allows it to be edited. This can give a detection shape to an :ref:`Area2D<class_Area2D>` or turn a :ref:`PhysicsBody2D<class_PhysicsBody2D>` into a solid object.
+Un nodo che fornisce una :ref:`Shape2D<class_Shape2D>` a un :ref:`CollisionObject2D<class_CollisionObject2D>` genitore e consente di modificarla. Ciò può dare una forma di rilevamento a un':ref:`Area2D<class_Area2D>` o trasformare un :ref:`PhysicsBody2D<class_PhysicsBody2D>` in un oggetto solido.
 
 .. rst-class:: classref-introduction-group
 
@@ -128,7 +128,7 @@ Imposta se questa forma di collisione deve rilevare collisioni soltanto da un la
 - |void| **set_one_way_collision_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_one_way_collision_direction**\ (\ )
 
-The direction used for one-way collision.
+La direzione utilizzata per la collisione a senso unico.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ La forma reale appartenente a questa forma di collisione.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

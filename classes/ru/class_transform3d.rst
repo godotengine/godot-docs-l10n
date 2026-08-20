@@ -12,13 +12,13 @@ Transform3D
 Описание
 ----------------
 
-The **Transform3D** built-in :ref:`Variant<class_Variant>` type is a 3×4 matrix representing a transformation in 3D space. It contains a :ref:`Basis<class_Basis>`, which on its own can represent rotation, scale, and shear. Additionally, combined with its own :ref:`origin<class_Transform3D_property_origin>`, the transform can also represent a translation.
+Встроенный тип :ref:`Variant<class_Variant>` **Transform3D** — это матрица 3×4, представляющая преобразование в трехмерном пространстве. Он содержит :ref:`Basis<class_Basis>`, который сам по себе может представлять вращение, масштаб и сдвиг. Кроме того, в сочетании с собственным :ref:`origin<class_Transform3D_property_origin>` преобразование также может представлять перемещение.
 
-For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
+Для общего введения см. :doc:`Матрицы и преобразования <../tutorials/math/matrices_and_transforms>`.
 
-\ **Note:** Godot uses a `right-handed coordinate system <https://en.wikipedia.org/wiki/Right-hand_rule>`__, which is a common standard. For directions, the convention for built-in types like :ref:`Camera3D<class_Camera3D>` is for -Z to point forward (+X is right, +Y is up, and +Z is back). Other objects may use different direction conventions. For more information, see the `3D asset direction conventions <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ tutorial.
+\ **Примечание:** Godot использует `правую систему координат <https://en.wikipedia.org/wiki/Right-hand_rule>`__, что является общепринятым стандартом. Для направлений соглашение для встроенных типов, таких как :ref:`Camera3D<class_Camera3D>`, заключается в том, что -Z указывает вперёд (+X — вправо, +Y — вверх, а +Z — назад). Другие объекты могут использовать другие соглашения о направлениях. Для получения дополнительной информации см. руководство `Условия направления 3D-активов <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__.
 
-\ **Note:** In a boolean context, a Transform3D will evaluate to ``false`` if it's equal to :ref:`IDENTITY<class_Transform3D_constant_IDENTITY>`. Otherwise, a Transform3D will always evaluate to ``true``.
+\ **Примечание:** В логическом контексте Transform3D будет оцениваться как ``false``, если он равен :ref:`IDENTITY<class_Transform3D_constant_IDENTITY>`. В противном случае Transform3D всегда будет оцениваться как ``true``.
 
 .. note::
 

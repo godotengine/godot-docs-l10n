@@ -499,7 +499,7 @@ Returns :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBle
 
 :ref:`bool<class_bool>` **is_initialized**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_is_initialized>`
 
-Returns ``true`` if OpenXR is initialized.
+Devuelve ``true`` si OpenXR está inicializado.
 
 .. rst-class:: classref-item-separator
 

@@ -16,7 +16,7 @@ Proietta luce in un ambiente 2D.
 Descrizione
 ----------------------
 
-Proietta luce in un ambiente 2D. Una luce è definita come un colore, un valore di energia, una modalità (vedi le costanti) e vari altri parametri (relativi alla portata e alle ombre).
+Proietta luce in un ambiente 2D. Una luce è definita con un colore, un valore di energia, una modalità (vedi le costanti) e vari altri parametri (relativi alla portata e alle ombre).
 
 .. rst-class:: classref-introduction-group
 
@@ -395,7 +395,7 @@ Il tipo di filtro delle ombre.
 - |void| **set_shadow_smooth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_shadow_smooth**\ (\ )
 
-Valore di attenuazione delle ombre. Valori più alti risulteranno in ombre più morbide, a scapito di strisce visibili che possono apparire nel rendering delle ombre. :ref:`shadow_filter_smooth<class_Light2D_property_shadow_filter_smooth>` ha effetto solo se :ref:`shadow_filter<class_Light2D_property_shadow_filter>` è :ref:`SHADOW_FILTER_PCF5<class_Light2D_constant_SHADOW_FILTER_PCF5>` o :ref:`SHADOW_FILTER_PCF13<class_Light2D_constant_SHADOW_FILTER_PCF13>`.
+Valore di attenuazione delle ombre. Valori più alti produrrano ombre più sfumate, a scapito di strisce evidenti che potrebbero apparire nel rendering delle ombre. :ref:`shadow_filter_smooth<class_Light2D_property_shadow_filter_smooth>` ha effetto solo se :ref:`shadow_filter<class_Light2D_property_shadow_filter>` è :ref:`SHADOW_FILTER_PCF5<class_Light2D_constant_SHADOW_FILTER_PCF5>` o :ref:`SHADOW_FILTER_PCF13<class_Light2D_constant_SHADOW_FILTER_PCF13>`.
 
 .. rst-class:: classref-item-separator
 
@@ -429,7 +429,7 @@ Descrizioni dei metodi
 
 :ref:`float<class_float>` **get_height**\ (\ ) |const| :ref:`🔗<class_Light2D_method_get_height>`
 
-Restituisce l'altezza della luce, che è utilizzata nella mappatura normale 2D. Vedi :ref:`PointLight2D.height<class_PointLight2D_property_height>` e :ref:`DirectionalLight2D.height<class_DirectionalLight2D_property_height>`.
+Restituisce l'altezza della luce, che è utilizzata nel normal mapping 2D. Vedi :ref:`PointLight2D.height<class_PointLight2D_property_height>` e :ref:`DirectionalLight2D.height<class_DirectionalLight2D_property_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -441,13 +441,13 @@ Restituisce l'altezza della luce, che è utilizzata nella mappatura normale 2D. 
 
 |void| **set_height**\ (\ height\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Light2D_method_set_height>`
 
-Imposta l'altezza della luce, che è utilizzata nella mappatura normale 2D. Vedi :ref:`PointLight2D.height<class_PointLight2D_property_height>` e :ref:`DirectionalLight2D.height<class_DirectionalLight2D_property_height>`.
+Imposta l'altezza della luce, che è utilizzata nel normal mapping 2D. Vedi :ref:`PointLight2D.height<class_PointLight2D_property_height>` e :ref:`DirectionalLight2D.height<class_DirectionalLight2D_property_height>`.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -9,14 +9,14 @@ AudioStreamPlaybackResampled
 
 **Heredado por:** :ref:`AudioStreamGeneratorPlayback<class_AudioStreamGeneratorPlayback>`, :ref:`AudioStreamPlaybackOggVorbis<class_AudioStreamPlaybackOggVorbis>`
 
-Playback class used for resampled :ref:`AudioStream<class_AudioStream>`\ s.
+Clase de reproducción utilizada para :ref:`AudioStream<class_AudioStream>` remuestreados.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Playback class used to mix an :ref:`AudioStream<class_AudioStream>`'s audio samples to :ref:`AudioServer.get_mix_rate()<class_AudioServer_method_get_mix_rate>` using cubic interpolation.
+Clase de reproducción utilizada para mezclar las muestras de audio de un :ref:`AudioStream<class_AudioStream>` a :ref:`AudioServer.get_mix_rate()<class_AudioServer_method_get_mix_rate>` usando interpolación cúbica.
 
 .. rst-class:: classref-reftable-group
 
@@ -61,7 +61,7 @@ Returns an :ref:`AudioStream<class_AudioStream>`'s sample rate, in Hz. Used to p
 
 :ref:`int<class_int>` **_mix_resampled**\ (\ dst_buffer\: ``AudioFrame*``, frame_count\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_AudioStreamPlaybackResampled_private_method__mix_resampled>`
 
-Called by :ref:`begin_resample()<class_AudioStreamPlaybackResampled_method_begin_resample>` to mix an :ref:`AudioStream<class_AudioStream>` to :ref:`AudioServer.get_mix_rate()<class_AudioServer_method_get_mix_rate>`. Uses :ref:`_get_stream_sampling_rate()<class_AudioStreamPlaybackResampled_private_method__get_stream_sampling_rate>` as the source sample rate. Returns the number of mixed frames.
+Llamado por :ref:`begin_resample()<class_AudioStreamPlaybackResampled_method_begin_resample>` para mezclar un :ref:`AudioStream<class_AudioStream>` a :ref:`AudioServer.get_mix_rate()<class_AudioServer_method_get_mix_rate>`. Usa :ref:`_get_stream_sampling_rate()<class_AudioStreamPlaybackResampled_private_method__get_stream_sampling_rate>` como la frecuencia de muestreo de origen. Devuelve el número de frames mezclados.
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Called by :ref:`begin_resample()<class_AudioStreamPlaybackResampled_method_begin
 
 |void| **begin_resample**\ (\ ) :ref:`🔗<class_AudioStreamPlaybackResampled_method_begin_resample>`
 
-Called when an :ref:`AudioStream<class_AudioStream>` is played. Clears the cubic interpolation history and starts mixing by calling :ref:`_mix_resampled()<class_AudioStreamPlaybackResampled_private_method__mix_resampled>`.
+Se llama cuando se reproduce un :ref:`AudioStream<class_AudioStream>`. Borra el historial de interpolación cúbica y comienza a mezclar llamando a :ref:`_mix_resampled()<class_AudioStreamPlaybackResampled_private_method__mix_resampled>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

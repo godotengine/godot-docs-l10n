@@ -118,9 +118,9 @@ ScriptEditor
 
 :ref:`Error<enum_@GlobalScope_Error>` **close_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ScriptEditor_method_close_file>`
 
-Closes the file at the given ``path``, discarding any unsaved changes.
+Закрывает файл по заданному ``path``, отбрасывая все несохранённые изменения.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success or :ref:`@GlobalScope.ERR_FILE_NOT_FOUND<class_@GlobalScope_constant_ERR_FILE_NOT_FOUND>` if the file is not found.
+Возвращает :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` в случае успеха или :ref:`@GlobalScope.ERR_FILE_NOT_FOUND<class_@GlobalScope_constant_ERR_FILE_NOT_FOUND>`, если файл не найден.
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success or :re
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_unsaved_files**\ (\ ) |const| :ref:`🔗<class_ScriptEditor_method_get_unsaved_files>`
 
-Returns an array of file paths of scripts with unsaved changes open in the editor.
+Возвращает массив путей к файлам скриптов с несохранёнными изменениями, открытых в редакторе.
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Returns an array of file paths of scripts with unsaved changes open in the edito
 
 |void| **reload_open_files**\ (\ ) :ref:`🔗<class_ScriptEditor_method_reload_open_files>`
 
-Reloads all currently opened files. This should be used when opened files are changed outside of the script editor. The user may be prompted to resolve file conflicts, see :ref:`EditorSettings.text_editor/behavior/files/auto_reload_scripts_on_external_change<class_EditorSettings_property_text_editor/behavior/files/auto_reload_scripts_on_external_change>`.
+Перезагружает все файлы, которые открыты на данный момент. Это должно быть использовано когда открытые файлы изменились снаружи редактора скриптов. Пользователю может быть предложено решить конфликты с файлами, см. :ref:`EditorSettings.text_editor/behavior/files/auto_reload_scripts_on_external_change<class_EditorSettings_property_text_editor/behavior/files/auto_reload_scripts_on_external_change>`.
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ Reloads all currently opened files. This should be used when opened files are ch
 
 |void| **save_all_scripts**\ (\ ) :ref:`🔗<class_ScriptEditor_method_save_all_scripts>`
 
-Saves all open scripts.
+Сохраняет все открытые скрипты.
 
 .. rst-class:: classref-item-separator
 

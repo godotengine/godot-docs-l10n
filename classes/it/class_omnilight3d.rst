@@ -105,9 +105,9 @@ Descrizioni delle proprietà
 
 Controlla la funzione di attenuazione della distanza per la luce omnidirezionale.
 
-Un valore di ``0.0`` manterrà una luminosità costante per la maggior parte della portata, ma attenuerà gradualmente la luce al limite del portata. Utilizza un valore di ``2.0`` per luci fisicamente accurate in quanto risulta nella corretta attenuazione del quadrato inverso.
+Un valore di ``0.0`` manterrà una luminosità costante per la maggior parte della portata, ma attenuerà gradualmente la luce al limite del portata. Utilizza un valore di ``2.0`` per luci fisicamente accurate in quanto risulta nella corretta attenuazione inversa quadrata.
 
-\ **Nota:** Impostare l'attenuazione su ``2.0`` o superiore può comportare che gli oggetti distanti ricevano una luce minima, anche all'interno del portata. Ad esempio, con un portata di ``4096``, un oggetto lontano di ``100`` unità è attenuato di un fattore di ``0.0001``. Con una luminosità predefinita di ``1``, la luce non sarebbe visibile a quella distanza.
+\ **Nota:** Impostare l'attenuazione su ``2.0`` o superiore può comportare che gli oggetti distanti ricevano una luce minima, anche entro la portata. Ad esempio, con un portata di ``4096``, un oggetto lontano di ``100`` unità è attenuato di un fattore di ``0.0001``. Con una luminosità predefinita di ``1``, la luce non sarebbe visibile a quella distanza.
 
 \ **Nota:** Utilizzare valori negativi o superiori a ``10.0`` può portare a risultati imprevisti.
 
@@ -126,7 +126,7 @@ Un valore di ``0.0`` manterrà una luminosità costante per la maggior parte del
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-Il raggio della luce. Nota che l'area effettivamente illuminata potrebbe apparire più piccola a seconda del :ref:`omni_attenuation<class_OmniLight3D_property_omni_attenuation>` in uso. A prescindere dal :ref:`omni_attenuation<class_OmniLight3D_property_omni_attenuation>` in uso, la luce non raggiungerà mai nulla al di fuori di questo raggio.
+Il raggio della luce. Nota che l'area effettivamente illuminata potrebbe apparire più piccola a seconda del :ref:`omni_attenuation<class_OmniLight3D_property_omni_attenuation>` in uso. A prescindere dal :ref:`omni_attenuation<class_OmniLight3D_property_omni_attenuation>` in uso, la luce non raggiungerà mai nulla fuori da questo raggio.
 
 \ **Nota:** :ref:`omni_range<class_OmniLight3D_property_omni_range>` non è influenzato da :ref:`Node3D.scale<class_Node3D_property_scale>` (la scala della luce o la scala del suo genitore).
 
@@ -153,7 +153,7 @@ Il raggio della luce. Nota che l'area effettivamente illuminata potrebbe apparir
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -7,16 +7,16 @@ CollisionShape3D
 
 **Eredita:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Un nodo che fornisce uno :ref:`Shape3D<class_Shape3D>` a un :ref:`CollisionObject3D<class_CollisionObject3D>` genitore.
+Un nodo che fornisce una :ref:`Shape3D<class_Shape3D>` a un :ref:`CollisionObject3D<class_CollisionObject3D>` genitore.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3D<class_CollisionObject3D>` parent and allows it to be edited. This can give a detection shape to an :ref:`Area3D<class_Area3D>` or turn a :ref:`PhysicsBody3D<class_PhysicsBody3D>` into a solid object.
+Un nodo che fornisce una :ref:`Shape3D<class_Shape3D>` a un :ref:`CollisionObject3D<class_CollisionObject3D>` genitore e consente di modificarla. Ciò può dare una forma di rilevamento a un':ref:`Area3D<class_Area3D>` o trasformare un :ref:`PhysicsBody3D<class_PhysicsBody3D>` in un oggetto solido.
 
-\ **Warning:** A non-uniformly scaled **CollisionShape3D** will likely not behave as expected. Make sure to keep its scale the same on all axes and adjust its :ref:`shape<class_CollisionShape3D_property_shape>` resource instead.
+\ **Attenzione:** Un **CollisionShape3D** ridimensionato in modo non uniforme probabilmente non si comporterà come previsto. Assicurati di mantenere la sua scala uguale su tutti gli assi e regola invece la sua risorsa :ref:`shape<class_CollisionShape3D_property_shape>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -173,7 +173,7 @@ Questo metodo non fa nulla.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

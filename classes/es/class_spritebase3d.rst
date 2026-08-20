@@ -211,7 +211,7 @@ Descripciones de Propiedades
 - |void| **set_alpha_antialiasing_edge**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_antialiasing_edge**\ (\ )
 
-Threshold at which antialiasing will be applied on the alpha channel.
+Umbral a partir del cual se aplicará el antialiasing en el canal alfa.
 
 .. rst-class:: classref-item-separator
 

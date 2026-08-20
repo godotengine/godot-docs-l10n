@@ -20,15 +20,15 @@ PhysicsServer2D è il server responsabile di tutta la fisica 2D. Può creare e m
 
 - Uno *spazio* è un mondo autonomo per una simulazione fisica. Contiene corpi, aree e giunti. Il suo stato può essere interrogato per informazioni sulle collisioni e le intersezioni. Inoltre, è possibile modificare diversi parametri della simulazione.
 
-- Una *forma* è una forma geometrica come una sfera, un rettangolo, una capsula o un poligono. Può essere utilizzata per rilevare le collisioni aggiungendola a un corpo/area, possibilmente con un'ulteriore trasformazione relativa all'origine del corpo/area. Più forme (trasformate) possono essere aggiunte ai corpi/aree e una singola forma può essere aggiunta più volte a corpi/aree con diverse trasformazioni locali.
+- Una *forma* è una forma geometrica come una sfera, un rettangolo, una capsula o un poligono. Serve per rilevare le collisioni aggiungendola a un corpo/area, possibilmente con un'ulteriore trasformazione relativa all'origine del corpo/area. I corpi/aree possono avere più di una forma (trasformata) aggiunta ad essi, e una singola forma si può aggiungere più volte a corpi/aree, con diverse trasformazioni locali.
 
 - Un *corpo* è un oggetto fisico che può essere in modalità statica, cinematica o rigida. Il suo stato (come posizione e velocità) può essere interrogato e aggiornato. È possibile impostare un callback di integrazione della forza per personalizzare la fisica del corpo.
 
-- Un'*area* è una regione nello spazio che può essere utilizzata per rilevare i corpi e le aree che entrano ed escono da essa. È possibile impostare un callback di monitoraggio dei corpi per segnalare le forme dei corpi in entrata/uscita e, allo stesso modo per le forme di altre aree. La gravità e lo smorzamento possono essere ignorati all'interno dell'area impostando i parametri dell'area.
+- Un'*area* è una regione nello spazio che serve per rilevare i corpi e le aree che entrano ed escono da essa. È possibile impostare un callback di monitoraggio dei corpi per segnalare le forme dei corpi in entrata/uscita e, allo stesso modo, un callback per le forme di altre aree. La gravità e lo smorzamento si possono sovrascrivere all'interno dell'area impostando i suoi parametri.
 
 - Un *giunto* è un vincolo, tra due corpi o su un corpo, rispetto a un punto. È possibile regolare i parametri come il bias del giunto e la lunghezza di riposo di un giunto a molla.
 
-Gli oggetti fisici in **PhysicsServer2D** possono essere creati e manipolati in modo indipendente; non devono essere associati ai nodi nell'albero di scene.
+Gli oggetti fisici nel **PhysicsServer2D** si possono creare e manipolare in modo indipendente; non devono essere associati ai nodi nell'albero di scene.
 
 \ **Nota:** Tutti i nodi fisici 2D utilizzano internamente il server di fisica. L'aggiunta di un nodo fisico all'albero di scene causerà la creazione di un oggetto fisico corrispondente nel server di fisica. Un nodo corpo rigido registra un callback che aggiorna la trasformazione del nodo con la trasformazione del rispettivo oggetto corpo nel server di fisica (ad ogni aggiornamento della fisica). Un nodo area registra un callback per informare il nodo area sulle sovrapposizioni con il rispettivo oggetto area nel server di fisica. Il nodo raycast interroga lo stato diretto dello spazio rilevante nel server di fisica.
 
@@ -391,7 +391,7 @@ Questa è la costante per creare forme di confine del mondo. Una forma di confin
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **SHAPE_SEPARATION_RAY** = ``1``
 
-Questa è la costante per creare forme di raggio di separazione. Un raggio di separazione è definito da una lunghezza e si separa da ciò che tocca la sua estremità lontana. Utile per i controller di personaggi.
+Questa è la costante per creare forme a raggio di separazione. Un raggio di separazione è definito da una lunghezza e si separa da ciò che tocca la sua estremità lontana. Utile per i controller di personaggi.
 
 .. _class_PhysicsServer2D_constant_SHAPE_SEGMENT:
 
@@ -423,7 +423,7 @@ Questa è la costante per creare forme di rettangolo. Una forma di rettangolo è
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **SHAPE_CAPSULE** = ``5``
 
-Questa è la costante per creare forme di capsula. Una forma di capsula è definita da un raggio e una lunghezza. Può essere utilizzata per verifiche di intersezioni e di interni/esterni.
+Questa è la costante per creare forme a capsula. Una forma a capsula è definita da un raggio e una lunghezza. Può essere utilizzata per verifiche di intersezioni e di interni/esterni.
 
 .. _class_PhysicsServer2D_constant_SHAPE_CONVEX_POLYGON:
 
@@ -1178,7 +1178,7 @@ Restituisce l'``ObjectID`` del canvas collegato all'area. Usa :ref:`@GlobalScope
 
 :ref:`int<class_int>` **area_get_collision_layer**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_area_get_collision_layer>`
 
-Restituisce gli strati di fisica a cui l'area appartiene, come una bitmask.
+Restituisce gli strati di fisica a cui l'area appartiene, come una maschera di bit.
 
 .. rst-class:: classref-item-separator
 
@@ -1520,7 +1520,7 @@ Aggiunge una forma all'area, con la trasformazione locale specificata. La forma 
 
 |void| **body_apply_central_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_apply_central_force>`
 
-Applica una forza direzionale al corpo, al centro di massa del corpo. La forza non influenza la rotazione. Una forza è dipendente dal tempo e pensata per essere applicata a ogni aggiornamento della fisica.
+Applica una forza direzionale al corpo, al centro di massa del corpo. La forza non influenza la rotazione. Una forza è dipendente dal tempo e dovrebbe essere applicata a ogni aggiornamento della fisica.
 
 Ciò equivale a usare :ref:`body_apply_force()<class_PhysicsServer2D_method_body_apply_force>` al centro di massa del corpo.
 
@@ -1580,7 +1580,7 @@ Un impulso è indipendente dal tempo! Applicare un impulso a ogni frame risulter
 
 |void| **body_apply_torque**\ (\ body\: :ref:`RID<class_RID>`, torque\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_apply_torque>`
 
-Applica una forza rotazionale al corpo. La forza non influenza la posizione. Una forza è dipendente dal tempo e pensata per essere applicata a ogni aggiornamento della fisica.
+Applica una forza rotazionale al corpo. La forza non influenza la posizione. Una forza è dipendente dal tempo e dovrebbe essere applicata a ogni aggiornamento della fisica.
 
 .. rst-class:: classref-item-separator
 
@@ -1668,7 +1668,7 @@ Restituisce l'``ObjectID`` del canvas collegato al corpo. Usa :ref:`@GlobalScope
 
 :ref:`int<class_int>` **body_get_collision_layer**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_collision_layer>`
 
-Restituisce gli strati di fisica a cui il corpo appartiene, come una bitmask.
+Restituisce gli strati di fisica a cui il corpo appartiene, come una maschera di bit.
 
 .. rst-class:: classref-item-separator
 
@@ -2004,11 +2004,11 @@ Il rilevamento continuo delle collisioni cerca di prevedere dove un corpo in mov
 
 Imposta la funzione di callback per l'integrazione personalizzata della forza del corpo su ``callable``. Utilizza un :ref:`Callable<class_Callable>` vuoto (``Callable()``) per cancellare il callback personalizzato.
 
-La funzione ``callable`` sarà chiamata a ogni tick di fisica, prima dell'integrazione standard della forza (vedi :ref:`body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>`). Può essere utilizzata, ad esempio, per aggiornare la velocità lineare e angolare del corpo in base al contatto con altri corpi.
+La funzione ``callable`` sarà chiamata a ogni tick di fisica, prima dell'integrazione standard delle forze (vedi :ref:`body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>`). Può servire, ad esempio, per aggiornare la velocità lineare e angolare del corpo in base al contatto con altri corpi.
 
 Se ``userdata`` non è ``null``, la funzione ``callable`` deve accettare i due parametri seguenti:
 
-1. ``state``: un :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` utilizzato per recuperare e modificare lo stato del corpo,
+1. ``state``: un :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` usato per recuperare e modificare lo stato del corpo,
 
 2. ``userdata``: un :ref:`Variant<class_Variant>`; il suo valore sarà l'``userdata`` passato in questo metodo.
 
@@ -2086,7 +2086,7 @@ Sostituisce la forma del corpo all'indice specificato con un'altra forma, senza 
 
 |void| **body_set_shape_as_one_way_collision**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`, margin\: :ref:`float<class_float>`, direction\: :ref:`Vector2<class_Vector2>` = Vector2(0, 1)\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_shape_as_one_way_collision>`
 
-Sets the one-way collision properties of the body's shape with the given index. If ``enable`` is ``true``, the one-way collision direction given by ``direction`` in the shape's local space (that is ``body_get_shape_transform(body, shape_idx).basis_xform(direction).normalized()`` in the body's local space) will be used to ignore collisions with the shape in the opposite direction, and to ensure depenetration of kinematic bodies happens in this direction.
+Imposta le proprietà di collisione a senso unico della forma con l'indice specificato del corpo. Se ``enable`` è ``true``, la direzione di collisione a senso unico fornita da ``direction`` nello spazio locale della forma (ovvero ``body_get_shape_transform(body, shape_idx).basis_xform(direction).normalized()``) sarà utilizzata per ignorare le collisioni con la forma nella direzione opposta, e per garantire che la penetrazione dei corpi cinematici avvenga in questa direzione.
 
 .. rst-class:: classref-item-separator
 
@@ -2140,7 +2140,7 @@ Aggiunge il corpo allo spazio fornito, dopo averlo rimosso dallo spazio assegnat
 
 |void| **body_set_state**\ (\ body\: :ref:`RID<class_RID>`, state\: :ref:`BodyState<enum_PhysicsServer2D_BodyState>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_state>`
 
-Imposta il valore dello stato di un corpo.
+Imposta il valore di uno stato di un corpo.
 
 \ **Nota:** Il cambio di stato non ha un effetto immediato. Lo stato cambierà nel prossimo frame di fisica.
 
@@ -2156,11 +2156,11 @@ Imposta il valore dello stato di un corpo.
 
 Imposta la funzione di callback per la sincronizzazione dello stato del corpo su ``callable``. Utilizza un :ref:`Callable<class_Callable>` vuoto (``Callable()``) per cancellare il callback.
 
-La funzione ``callable`` verrà chiamata a ogni frame di fisica, supponendo che il corpo fosse attivo durante il tick di fisica precedente, e può essere utilizzata per recuperare lo stato più recente dal server di fisica.
+La funzione ``callable`` sarà chiamata a ogni frame di fisica, supponendo che il corpo fosse attivo durante il tick di fisica precedente, e può servire per recuperare lo stato più recente dal server di fisica.
 
 La funzione ``callable`` deve accettare i seguenti parametri:
 
-1. ``state``: un :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, utilizzato per recuperare lo stato del corpo.
+1. ``state``: un :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, usato per recuperare lo stato del corpo.
 
 .. rst-class:: classref-item-separator
 
@@ -2184,7 +2184,7 @@ Restituisce ``true`` se si verificherebbe una collisione spostando il corpo lung
 
 :ref:`RID<class_RID>` **capsule_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_capsule_shape_create>`
 
-Crea una forma di capsula 2D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` per impostare l'altezza e il raggio della capsula.
+Crea una forma a capsula 2D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` per impostare l'altezza e il raggio della capsula.
 
 .. rst-class:: classref-item-separator
 
@@ -2268,7 +2268,7 @@ Distrugge uno qualsiasi degli oggetti creati dal PhysicsServer2D. Se il :ref:`RI
 
 :ref:`int<class_int>` **get_process_info**\ (\ process_info\: :ref:`ProcessInfo<enum_PhysicsServer2D_ProcessInfo>`\ ) :ref:`🔗<class_PhysicsServer2D_method_get_process_info>`
 
-Restituisce il valore di uno stato del motore di fisica specificato da ``process_info``.
+Restituisce il valore di uno stato del motore fisico specificato da ``process_info``.
 
 .. rst-class:: classref-item-separator
 
@@ -2472,7 +2472,7 @@ Crea una forma di segmento 2D nel server di fisica e restituisce il :ref:`RID<cl
 
 :ref:`RID<class_RID>` **separation_ray_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_separation_ray_shape_create>`
 
-Crea una forma di raggio di separazione 2D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` per impostare le proprietà ``length`` e ``slide_on_slope`` della forma.
+Crea una forma a raggio di separazione 2D nel server di fisica e restituisce il :ref:`RID<class_RID>` che la identifica. Usa :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` per impostare le proprietà ``length`` e ``slide_on_slope`` della forma.
 
 .. rst-class:: classref-item-separator
 
@@ -2520,7 +2520,7 @@ Restituisce il tipo della forma.
 
 |void| **shape_set_data**\ (\ shape\: :ref:`RID<class_RID>`, data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PhysicsServer2D_method_shape_set_data>`
 
-Imposta i dati della forma che definiscono la configurazione della forma. I ``data`` da passare dipendono dal tipo di forma (vedere :ref:`shape_get_type()<class_PhysicsServer2D_method_shape_get_type>`):
+Imposta i dati della forma che definiscono la configurazione della forma. I ``data`` da passare dipendono dal tipo di forma (vedi :ref:`shape_get_type()<class_PhysicsServer2D_method_shape_get_type>`):
 
 - :ref:`SHAPE_WORLD_BOUNDARY<class_PhysicsServer2D_constant_SHAPE_WORLD_BOUNDARY>`: un array di lunghezza due contenente una direzione :ref:`Vector2<class_Vector2>` ``normal`` e una distanza :ref:`float<class_float>` ``d``,
 
@@ -2628,7 +2628,7 @@ Crea una forma di confine del mondo 2D nel server di fisica e restituisce il :re
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

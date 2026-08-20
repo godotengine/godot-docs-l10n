@@ -9,7 +9,7 @@ RDAccelerationStructureGeometry
 
 **Hereda:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Acceleration structure geometry (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+Geometría de estructura de aceleración (utilizada por :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 
@@ -119,7 +119,7 @@ Number of indices used by this geometry in :ref:`index_buffer<class_RDAccelerati
 - |void| **set_index_offset**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_index_offset**\ (\ )
 
-Byte offset of the first index in :ref:`index_buffer<class_RDAccelerationStructureGeometry_property_index_buffer>`.
+El desplazamiento en bytes del primer índice en :ref:`index_buffer<class_RDAccelerationStructureGeometry_property_index_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ Number of vertices used by this geometry in :ref:`vertex_buffer<class_RDAccelera
 - |void| **set_vertex_format**\ (\ value\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`\ )
 - :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **get_vertex_format**\ (\ )
 
-Format of the vertices in :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
+El formato de los vértices en :ref:`vertex_buffer<class_RDAccelerationStructureGeometry_property_vertex_buffer>`.
 
 .. rst-class:: classref-item-separator
 

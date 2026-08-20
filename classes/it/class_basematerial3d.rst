@@ -9,7 +9,7 @@ BaseMaterial3D
 
 **Ereditato da:** :ref:`ORMMaterial3D<class_ORMMaterial3D>`, :ref:`StandardMaterial3D<class_StandardMaterial3D>`
 
-Classe di base astratta per definire le proprietà di rendering 3D delle mesh.
+Classe base astratta per definire le proprietà di rendering 3D delle mesh.
 
 .. rst-class:: classref-introduction-group
 
@@ -380,7 +380,7 @@ Texture che specifica i vettori di normali per pixel.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_BENT_NORMAL** = ``18``
 
-Texture che specifica i vettori di normali piegati per pixel.
+Texture che specifica i vettori normali curvati per pixel.
 
 .. _class_BaseMaterial3D_constant_TEXTURE_RIM:
 
@@ -404,7 +404,7 @@ Texture che specifica il valore di rivestimento trasparente per pixel.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_FLOWMAP** = ``7``
 
-Texture che specifica la direzione della mappa di flusso per pixel per l'uso con :ref:`anisotropy<class_BaseMaterial3D_property_anisotropy>`.
+Texture che specifica la direzione della flowmap per ogni singolo pixel, da usare con :ref:`anisotropy<class_BaseMaterial3D_property_anisotropy>`.
 
 .. _class_BaseMaterial3D_constant_TEXTURE_AMBIENT_OCCLUSION:
 
@@ -428,7 +428,7 @@ Texture che specifica l'altezza per pixel.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_SUBSURFACE_SCATTERING** = ``10``
 
-Texture che specifica il subsurface scattering per-pixel.
+Texture che specifica il subsurface scattering per pixel.
 
 .. _class_BaseMaterial3D_constant_TEXTURE_SUBSURFACE_TRANSMITTANCE:
 
@@ -1020,9 +1020,9 @@ Imposta ``ALBEDO`` al colore per vertice specificato nella mesh.
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_SRGB_VERTEX_COLOR** = ``2``
 
-Vertex colors are considered to be stored in nonlinear sRGB encoding and are converted to linear encoding during rendering. See also :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`.
+I colori dei vertici sono considerati memorizzati in codifica sRGB non lineare e convertiti in codifica lineare durante il rendering. Vedi anche :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`.
 
-\ **Note:** Only effective when using the Forward+ and Mobile rendering methods.
+\ **Nota:** Efficace solo quando si usano i metodi di rendering Forward+ e Mobile.
 
 .. _class_BaseMaterial3D_constant_FLAG_USE_POINT_SIZE:
 
@@ -1102,7 +1102,7 @@ Utilizza le coordinate ``UV2`` per la proiezione dalla :ref:`emission_texture<cl
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_ALBEDO_TEXTURE_FORCE_SRGB** = ``12``
 
-Forces the shader to convert albedo from nonlinear sRGB encoding to linear encoding. See also :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
+Forza lo shader a convertire l'albedo dalla codifica sRGB non lineare alla codifica lineare. Vedi anche :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
 
 .. _class_BaseMaterial3D_constant_FLAG_DONT_RECEIVE_SHADOWS:
 
@@ -1166,7 +1166,7 @@ Abilita le parti dello shader necessarie per il funzionamento delle scie per :re
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_ALBEDO_TEXTURE_MSDF** = ``20``
 
-Abilita lo shader per il rendering del multichannel signed distance field (MSDF).
+Abilita lo shader per il rendering di multichannel signed distance field (MSDF).
 
 .. _class_BaseMaterial3D_constant_FLAG_DISABLE_FOG:
 
@@ -1637,7 +1637,7 @@ Il colore di base del materiale.
 
 La texture da moltiplicare per :ref:`albedo_color<class_BaseMaterial3D_property_albedo_color>`. Utilizzato per la texturizzazione basilare degli oggetti.
 
-Se la texture appare inaspettatamente troppo scura o troppo chiara, controlla :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
+Se la texture appare inaspettatamente troppo scura o troppo chiara, rivedi :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1654,9 +1654,9 @@ Se la texture appare inaspettatamente troppo scura o troppo chiara, controlla :r
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, forces a conversion of the :ref:`albedo_texture<class_BaseMaterial3D_property_albedo_texture>` from nonlinear sRGB encoding to linear encoding. See also :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`.
+Se ``true``, forza una conversione di :ref:`albedo_texture<class_BaseMaterial3D_property_albedo_texture>` dalla codifica sRGB non lineare alla codifica lineare. Vedi anche :ref:`vertex_color_is_srgb<class_BaseMaterial3D_property_vertex_color_is_srgb>`.
 
-This should only be enabled when needed (typically when using a :ref:`ViewportTexture<class_ViewportTexture>` as :ref:`albedo_texture<class_BaseMaterial3D_property_albedo_texture>`). If :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` is ``true`` when it shouldn't be, the texture will appear to be too dark. If :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` is ``false`` when it shouldn't be, the texture will appear to be too bright.
+Bisognerebbe abilitarlo solo quando necessario (in genere quando si utilizza una :ref:`ViewportTexture<class_ViewportTexture>` come :ref:`albedo_texture<class_BaseMaterial3D_property_albedo_texture>`). Se :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` è ``true`` quando non dovrebbe esserlo, la texture sembrerà troppo scura. Se :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` è ``false`` quando non dovrebbe esserlo, la texture sembrerà troppo luminosa.
 
 .. rst-class:: classref-item-separator
 
@@ -1673,7 +1673,7 @@ This should only be enabled when needed (typically when using a :ref:`ViewportTe
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-Abilita lo shader per il rendering del multichannel signed distance field (MSDF). Usa :ref:`msdf_pixel_range<class_BaseMaterial3D_property_msdf_pixel_range>` e :ref:`msdf_outline_size<class_BaseMaterial3D_property_msdf_outline_size>` per configurare i parametri di MSDF.
+Abilita lo shader per il rendering di multichannel signed distance field (MSDF). Usa :ref:`msdf_pixel_range<class_BaseMaterial3D_property_msdf_pixel_range>` e :ref:`msdf_outline_size<class_BaseMaterial3D_property_msdf_outline_size>` per configurare i parametri di MSDF.
 
 .. rst-class:: classref-item-separator
 
@@ -1796,9 +1796,9 @@ Se ``true``, l'anisotropia è abilitata. L'anisotropia cambia la forma della mac
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture che sposta la mappa delle tangenti per i calcoli dell'anisotropia e facoltativamente controlla l'effetto dell'anisotropia (se è presente un canale alfa). Si prevede che la texture della mappa di flusso sia una mappa derivativa, con il canale rosso che rappresenta la distorsione sull'asse X e il canale verde che rappresenta la distorsione sull'asse Y. I valori inferiori a 0,5 risulteranno in una distorsione negativa, mentre i valori superiori a 0,5 risulteranno in una distorsione positiva.
+Texture che sposta la mappa delle tangenti per i calcoli dell'anisotropia e facoltativamente controlla l'effetto dell'anisotropia (se è presente un canale alfa). Si prevede che la texture della flowmap sia una mappa derivativa, con il canale rosso che rappresenta la distorsione sull'asse X e il canale verde che rappresenta la distorsione sull'asse Y. I valori inferiori a 0,5 risulteranno in una distorsione negativa, mentre i valori superiori a 0,5 risulteranno in una distorsione positiva.
 
-Se presente, il canale alfa della texture sarà utilizzato per moltiplicare l'intensità dell'effetto di :ref:`anisotropy<class_BaseMaterial3D_property_anisotropy>`. I pixel completamente opachi manterranno l'intensità originale dell'effetto di anisotropia mentre i pixel completamente trasparenti disabiliteranno completamente l'effetto di anisotropia. Il canale blu della texture della mappa di flusso è ignorato.
+Se presente, il canale alfa della texture sarà utilizzato per moltiplicare l'intensità dell'effetto di :ref:`anisotropy<class_BaseMaterial3D_property_anisotropy>`. I pixel completamente opachi manterranno l'intensità originale dell'effetto di anisotropia mentre i pixel completamente trasparenti disabiliteranno completamente l'effetto di anisotropia. Il canale blu della texture della flowmap è ignorato.
 
 .. rst-class:: classref-item-separator
 
@@ -1951,7 +1951,7 @@ Texture utilizzata per controllare l'effetto di retroilluminazione per pixel. Ag
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-Se ``true``, la mappa normale curva è abilitata. Ciò rende più accurata l'illuminazione indiretta e l'occlusione speculare.
+Se ``true``, la mappa normale curvata è abilitata. Ciò rende più accurata l'illuminazione indiretta e l'occlusione speculare.
 
 .. rst-class:: classref-item-separator
 
@@ -1970,7 +1970,7 @@ Se ``true``, la mappa normale curva è abilitata. Ciò rende più accurata l'ill
 
 Texture che specifica la direzione media della luce ambientale in arrivo su un determinato pixel. La :ref:`bent_normal_texture<class_BaseMaterial3D_property_bent_normal_texture>` utilizza solo i canali rosso e verde; i canali blu e alfa sono ignorati. La lettura delle normali da :ref:`bent_normal_texture<class_BaseMaterial3D_property_bent_normal_texture>` è orientata attorno alla normale della superficie fornita dalla :ref:`Mesh<class_Mesh>`.
 
-\ **Nota:** Una mappa normale curva è diversa da una tipica mappa normale. Quando prepari una mappa normale curva, assicurati di utilizzare **una distribuzione a coseno** affinché la mappa normale curva funzioni correttamente.
+\ **Nota:** Una mappa normale curvata è diversa da una tradizionale mappa normale. Quando prepari una mappa normale curvata, assicurati di utilizzare **una distribuzione a coseno** affinché la mappa normale curvata funzioni correttamente.
 
 \ **Nota:** La mesh deve avere sia le normali sia le tangenti definite nei dati dei vertici. Altrimenti, la mappa normale non verrà renderizzata correttamente e scurirà solo l'intera superficie. Se stai creando la geometria con :ref:`SurfaceTool<class_SurfaceTool>`, puoi utilizzare :ref:`SurfaceTool.generate_normals()<class_SurfaceTool_method_generate_normals>` e :ref:`SurfaceTool.generate_tangents()<class_SurfaceTool_method_generate_tangents>` per generare automaticamente normali e tangenti, rispettivamente.
 
@@ -2152,9 +2152,9 @@ Determina quando avviene il rendering della profondità. Vedi anche :ref:`transp
 
 **Sperimentale:** May be affected by future rendering pipeline changes.
 
-Determines which comparison operator is used when testing depth.
+Determina quale operatore di confronto viene utilizzato durante il test di profondità.
 
-\ **Note:** Changing :ref:`depth_test<class_BaseMaterial3D_property_depth_test>` to a non-default value only has a visible effect when used on a transparent material, or a material that has :ref:`depth_draw_mode<class_BaseMaterial3D_property_depth_draw_mode>` set to :ref:`DEPTH_DRAW_DISABLED<class_BaseMaterial3D_constant_DEPTH_DRAW_DISABLED>`.
+\ **Nota:** Modificare :ref:`depth_test<class_BaseMaterial3D_property_depth_test>` in un valore non predefinito ha un effetto visibile solo se utilizzato su un materiale trasparente o su un materiale che ha :ref:`depth_draw_mode<class_BaseMaterial3D_property_depth_draw_mode>` impostato su :ref:`DEPTH_DRAW_DISABLED<class_BaseMaterial3D_constant_DEPTH_DRAW_DISABLED>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2608,7 +2608,7 @@ Cresce i vertici dell'oggetto nella direzione delle loro normali. Efficace solo 
 - |void| **set_heightmap_deep_parallax**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_heightmap_deep_parallax_enabled**\ (\ )
 
-Se ``true``, utilizza la mappatura dell'occlusione parallasse per rappresentare la profondità nel materiale invece della semplice mappatura dell'offset (vedi :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`). Ciò risulta in un effetto di profondità più convincente, ma è molto più costoso sulla GPU. Abilita questa opzione solo sui materiali in cui fa una differenza visiva significativa.
+Se ``true``, utilizza la mappatura dell'occlusione parallasse per rappresentare la profondità nel materiale invece della semplice mappatura dell'offset (vedi :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`). Ciò risulta in un effetto di profondità più convincente, ma è molto più impegnativo per la GPU. Abilita questa opzione solo sui materiali in cui fa una differenza visiva significativa.
 
 .. rst-class:: classref-item-separator
 
@@ -2625,9 +2625,9 @@ Se ``true``, utilizza la mappatura dell'occlusione parallasse per rappresentare 
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-Se ``true``, la mappatura dell'altezza è abilitata (chiamata anche "mappatura di parallasse" o "mappatura di profondità"). Vedi anche :ref:`normal_enabled<class_BaseMaterial3D_property_normal_enabled>`. La mappatura dell'altezza è una funzionalità impegnativa per la GPU, quindi si dovrebbe utilizzare solo su materiali su cui fa una differenza notevole.
+Se ``true``, l'height mapping è abilitato (detto anche "parallax mapping" o "depth mapping"). Vedi anche :ref:`normal_enabled<class_BaseMaterial3D_property_normal_enabled>`. L'height mapping è una funzionalità impegnativa per la GPU, quindi si dovrebbe utilizzare solo su materiali su cui fa una differenza notevole.
 
-\ **Nota:** La mappatura dell'altezza non è supportata se sullo stesso materiale è utilizzata la mappatura triplanare. Il valore di :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>` sarà ignorato se :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>` è abilitato.
+\ **Nota:** L'height mapping non è supportato se sullo stesso materiale è utilizzata la mappatura triplanare. Il valore di :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>` sarà ignorato se :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>` è abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -2735,7 +2735,7 @@ Il numero di strati da utilizzare per la mappatura di occlusione parallasse quan
 - |void| **set_heightmap_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_heightmap_scale**\ (\ )
 
-La scala della heightmap da utilizzare per l'effetto di parallasse (vedi :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`). Il valore predefinito è calibrato in modo che il punto più alto (valore = 255) sembri essere 5 cm più alto del punto più basso (valore = 0). Valori più alti producono un aspetto più profondo, ma potrebbero far apparire artefatti quando si guarda il materiale da angolazioni oblique, soprattutto quando la telecamera si muove. È possibile usare valori negativi per invertire l'effetto di parallasse, ma ciò è diverso dall'invertire la texture tramite :ref:`heightmap_flip_texture<class_BaseMaterial3D_property_heightmap_flip_texture>` poiché anche il materiale sembrerà essere "più vicino" alla telecamera. Nella maggior parte dei casi, :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>` dovrebbe essere mantenuto su un valore positivo.
+La scala della heightmap da utilizzare per l'effetto parallasse (vedi :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`). Il valore predefinito è calibrato in modo che il punto più alto (valore = 255) sembri essere 5 cm più alto del punto più basso (valore = 0). Valori più alti producono un aspetto più profondo, ma potrebbero far apparire artefatti quando si guarda il materiale da angolazioni oblique, soprattutto quando la telecamera si muove. È possibile usare valori negativi per invertire l'effetto parallasse, ma ciò è diverso dall'invertire la texture tramite :ref:`heightmap_flip_texture<class_BaseMaterial3D_property_heightmap_flip_texture>` poiché anche il materiale sembrerà essere "più vicino" alla telecamera. Nella maggior parte dei casi, bisognerebbe mantenere :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>` su un valore positivo.
 
 \ **Nota:** Se l'effetto della heightmap appare strano a prescindere da questo valore, prova a regolare :ref:`heightmap_flip_binormal<class_BaseMaterial3D_property_heightmap_flip_binormal>` e :ref:`heightmap_flip_tangent<class_BaseMaterial3D_property_heightmap_flip_tangent>`. Vedi anche :ref:`heightmap_texture<class_BaseMaterial3D_property_heightmap_texture>` per consigli sulla creazione di texture di heightmap, poiché il modo in cui viene creata la texture di heightmap influisce sul comportamento di :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>`.
 
@@ -2756,7 +2756,7 @@ La scala della heightmap da utilizzare per l'effetto di parallasse (vedi :ref:`h
 
 La texture da utilizzare come heightmap. Vedi anche :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`.
 
-Per ottenere i migliori risultati, la texture dovrebbe essere normalizzata (con :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>` ridotto per compensare). In `GIMP <https://gimp.org>`__, ciò si può fare tramite **Colori > Auto > Equalizza**. Se la texture utilizza solo una piccola parte della suo intervallo disponibile, l'effetto di parallasse potrebbe apparire strano, soprattutto quando la telecamera si muove.
+Per ottenere i migliori risultati, la texture dovrebbe essere normalizzata (con :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>` ridotto per compensare). In `GIMP <https://gimp.org>`__, ciò si può fare tramite **Colori > Auto > Equalizza**. Se la texture utilizza solo una piccola parte della suo intervallo disponibile, l'effetto parallasse potrebbe apparire strano, soprattutto quando la telecamera si muove.
 
 \ **Nota:** Per ridurre l'utilizzo di memoria e migliorare i tempi di caricamento, potrebbe essere possibile utilizzare una texture di heightmap a bassa risoluzione, poiché la maggior parte delle heightmap sono composte solo da dati a bassa frequenza.
 
@@ -2896,7 +2896,7 @@ Se ``true``, il test di profondità è disabilitato e l'oggetto sarà disegnato 
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-Se ``true``, la mappatura normale è abilitata. Ciò ha un leggero costo in termini di prestazioni, soprattutto sulle GPU di dispositivi mobili.
+Se ``true``, il normal mapping è abilitato. Ciò ha un leggero impatto sulle prestazioni, soprattutto sulle GPU dei dispositivi mobili.
 
 .. rst-class:: classref-item-separator
 
@@ -3337,7 +3337,7 @@ Il colore primario dell'effetto stencil.
 
 **Sperimentale:** May be affected by future rendering pipeline changes.
 
-The comparison operator to use for stencil masking operations.
+L'operatore di confronto da utilizzare per le operazioni di mascheramento di stencil.
 
 .. rst-class:: classref-item-separator
 
@@ -3356,7 +3356,7 @@ The comparison operator to use for stencil masking operations.
 
 **Sperimentale:** May be affected by future rendering pipeline changes.
 
-The flags dictating how the stencil operation behaves.
+I flag che determinano il comportamento dell'operazione di stencil.
 
 .. rst-class:: classref-item-separator
 
@@ -3375,7 +3375,7 @@ The flags dictating how the stencil operation behaves.
 
 **Sperimentale:** May be affected by future rendering pipeline changes.
 
-The stencil effect mode.
+La modalità dell'effetto stencil.
 
 .. rst-class:: classref-item-separator
 
@@ -3466,7 +3466,7 @@ Se ``true``, il subsurface scattering userà una modalità speciale ottimizzata 
 - |void| **set_subsurface_scattering_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_subsurface_scattering_strength**\ (\ )
 
-L'intensità dell'effetto di subsurface scattering. La profondità dell'effetto è anche controllata da :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>`, che è impostata globalmente.
+L'intensità dell'effetto del subsurface scattering. La profondità dell'effetto è anche controllata da :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>`, che è impostata globalmente.
 
 .. rst-class:: classref-item-separator
 
@@ -3483,7 +3483,7 @@ L'intensità dell'effetto di subsurface scattering. La profondità dell'effetto 
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture utilizzata per controllare l'intensità dell'effetto di subsurface scattering. Memorizzato nel canale rosso della texture. Moltiplicata per :ref:`subsurf_scatter_strength<class_BaseMaterial3D_property_subsurf_scatter_strength>`.
+Texture utilizzata per controllare l'intensità dell'effetto del subsurface scattering. Memorizzato nel canale rosso della texture. Moltiplicata per :ref:`subsurf_scatter_strength<class_BaseMaterial3D_property_subsurf_scatter_strength>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3848,7 +3848,7 @@ Se ``true``, invece di usare gli ``UV2``, le texture useranno una ricerca tripla
 
 Un numero più basso fonde la texture più sofficemente mentre un numero più alto fonde la texture più nitidamente.
 
-\ **Nota:** :ref:`uv2_triplanar_sharpness<class_BaseMaterial3D_property_uv2_triplanar_sharpness>` è limitato tra ``0.0`` e ``150.0`` (inclusi) poiché i valori al di fuori di questo intervallo possono apparire rotti a seconda della mesh.
+\ **Nota:** :ref:`uv2_triplanar_sharpness<class_BaseMaterial3D_property_uv2_triplanar_sharpness>` è limitato tra ``0.0`` e ``150.0`` (inclusi) poiché i valori al di fuori di questo intervallo possono apparire rovinati a seconda della mesh.
 
 .. rst-class:: classref-item-separator
 
@@ -3882,9 +3882,9 @@ Se ``true``, la mappatura triplanare per ``UV2`` è calcolata nello spazio mondi
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, vertex colors are considered to be stored in nonlinear sRGB encoding and are converted to linear encoding during rendering. If ``false``, vertex colors are considered to be stored in linear encoding and are rendered as-is. See also :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
+Se ``true``, i colori dei vertici sono considerati memorizzati in codifica sRGB non lineare e convertiti in codifica lineare durante il rendering. Se ``false``, i colori dei vertici sono considerati memorizzati in codifica lineare e renderizzati così come sono. Vedi anche :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
 
-\ **Note:** Only effective when using the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Nota:** Funziona solo quando si utilizzano i metodi di rendering Forward+ e Mobile, non Compatibilità.
 
 .. rst-class:: classref-item-separator
 
@@ -3918,7 +3918,7 @@ Se ``true``, il colore dei vertici è utilizzato per il colore dell'albedo.
 - |void| **set_z_clip_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_z_clip_scale**\ (\ )
 
-Ridimensiona l'oggetto renderizzato verso la telecamera per evitare il clipping in cose come i muri. Questa impostazione è pensata per oggetti fissi rispetto alla telecamera, come le braccia, gli strumenti, ecc. del giocatore. Luci e ombre continueranno a funzionare correttamente quando questa impostazione è regolata, ma gli effetti nello spazio dello schermo, come SSAO e SSR, potrebbero non funzionare correttamente con scale inferiori. Pertanto, si consiglia di mantenere questa impostazione il più vicino possibile a ``1.0``.
+Ridimensiona l'oggetto renderizzato verso la telecamera per evitare il clipping in cose come i muri. Questa impostazione è pensata per oggetti fissi rispetto alla telecamera, come le braccia, gli strumenti, ecc. del giocatore. Luci e ombre continueranno a funzionare correttamente quando questa impostazione è regolata, ma gli effetti nello spazio dello schermo, come l'SSAO e l'SSR, potrebbero non funzionare correttamente con scale inferiori. Pertanto, si consiglia di mantenere questa impostazione il più vicino possibile a ``1.0``.
 
 .. rst-class:: classref-section-separator
 
@@ -3935,7 +3935,7 @@ Descrizioni dei metodi
 
 :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_feature>`
 
-Returns ``true`` if the specified ``feature`` is enabled.
+Restituisce ``true`` se la funzionalità ``feature`` è abilitata.
 
 .. rst-class:: classref-item-separator
 
@@ -3947,7 +3947,7 @@ Returns ``true`` if the specified ``feature`` is enabled.
 
 :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_flag>`
 
-Returns ``true`` if the specified ``flag`` is enabled.
+Restituisce ``true`` se il ``flag`` specificato è abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -3959,7 +3959,7 @@ Returns ``true`` if the specified ``flag`` is enabled.
 
 :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const| :ref:`🔗<class_BaseMaterial3D_method_get_texture>`
 
-Returns the :ref:`Texture2D<class_Texture2D>` associated with the specified texture ``param``.
+Restituisce la :ref:`Texture2D<class_Texture2D>` associata al parametro ``param`` specificato di texture.
 
 .. rst-class:: classref-item-separator
 
@@ -3971,7 +3971,7 @@ Returns the :ref:`Texture2D<class_Texture2D>` associated with the specified text
 
 |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BaseMaterial3D_method_set_feature>`
 
-If ``enable`` is ``true``, enables the specified ``feature``. Many features that are available in **BaseMaterial3D** need to be enabled before use. This way, the cost for using the feature is only incurred when specified. Features can also be enabled by setting their corresponding property to ``true``.
+Se ``enable`` è ``true``, abilita la funzionalità ``feature``. Molte funzionalità disponibili in **BaseMaterial3D** si devono abilitare prima dell'uso. In questo modo il costo per usare la funzionalità viene sostenuto solo quando specificata. Le funzionalità si possono anche abilitare impostando la loro proprietà corrispondente su ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -3983,7 +3983,7 @@ If ``enable`` is ``true``, enables the specified ``feature``. Many features that
 
 |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BaseMaterial3D_method_set_flag>`
 
-If ``enable`` is ``true``, enables the specified ``flag``. Flags are optional behavior that can be turned on and off. Only one flag can be enabled at a time with this function, the flag enumerators cannot be bit-masked together to enable or disable multiple flags at once. Flags can also be enabled by setting their corresponding property to ``true``.
+Se ``enable`` è ``true``, abilita il ``flag`` specificato. I flag sono comportamenti facoltativi che si possono abilitare e disabilitare. È possibile abilitare solo un flag alla volta con questa funzione; gli enumeratori dei flag non si possono combinare a bit per cambiare più flag alla volta. I flag si possono anche abilitare impostando la loro proprietà corrispondente su ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -4001,7 +4001,7 @@ Imposta la texture per lo slot specificato da ``param``.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

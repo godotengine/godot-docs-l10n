@@ -410,7 +410,7 @@ Defines how :ref:`angular_damp<class_RigidBody2D_property_angular_damp>` is appl
 - |void| **set_can_sleep**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_able_to_sleep**\ (\ )
 
-如果為 ``true``\ ，則物體未運動時可以進入睡眠模式。見 :ref:`sleeping<class_RigidBody2D_property_sleeping>` 。
+若爲 ``true``\ ，則形體未運動時進入睡眠模式。參看 :ref:`sleeping<class_RigidBody2D_property_sleeping>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -662,9 +662,9 @@ Multiplies the gravity applied to the body. The body's gravity is calculated fro
 - |void| **set_linear_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_linear_damp**\ (\ )
 
-Damps the body's movement. By default, the body will use the :ref:`ProjectSettings.physics/2d/default_linear_damp<class_ProjectSettings_property_physics/2d/default_linear_damp>` setting or any value override set by an :ref:`Area2D<class_Area2D>` the body is in. Depending on :ref:`linear_damp_mode<class_RigidBody2D_property_linear_damp_mode>`, you can set :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` to be added to or to replace the body's damping value.
+減弱形體的運動。預設情況下，形體使用 :ref:`ProjectSettings.physics/2d/default_linear_damp<class_ProjectSettings_property_physics/2d/default_linear_damp>` 的設定，或被形體所處的 :ref:`Area2D<class_Area2D>` 設定覆寫。根據 :ref:`linear_damp_mode<class_RigidBody2D_property_linear_damp_mode>` 的設定，可以將 :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` 設爲加上或取代形體的阻尼值。
 
-See :ref:`ProjectSettings.physics/2d/default_linear_damp<class_ProjectSettings_property_physics/2d/default_linear_damp>` for more details about damping.
+更多有關阻尼的資訊，請參閱 :ref:`ProjectSettings.physics/2d/default_linear_damp<class_ProjectSettings_property_physics/2d/default_linear_damp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -768,9 +768,9 @@ Defines how :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` is applie
 - |void| **set_physics_material_override**\ (\ value\: :ref:`PhysicsMaterial<class_PhysicsMaterial>`\ )
 - :ref:`PhysicsMaterial<class_PhysicsMaterial>` **get_physics_material_override**\ (\ )
 
-物體的物理材質。
+覆寫形體的物理材質。
 
-如果為該屬性指定了一種材質，則將使用該材質代替任何其他物理材質，例如繼承的材質。
+若爲此屬性指定了某種材質，則會使用該材質代替其他物理材質（比如繼承而來的材質）。
 
 .. rst-class:: classref-item-separator
 

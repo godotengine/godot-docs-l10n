@@ -12,19 +12,19 @@ Color
 Описание
 ----------------
 
-A color represented in RGBA format by a red (:ref:`r<class_Color_property_r>`), green (:ref:`g<class_Color_property_g>`), blue (:ref:`b<class_Color_property_b>`), and alpha (:ref:`a<class_Color_property_a>`) component. Each component is a 32-bit floating-point value, usually ranging from ``0.0`` to ``1.0``. Some properties (such as :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`) may support values greater than ``1.0``, for overbright or HDR (High Dynamic Range) colors.
+Цвет, представленный в формате RGBA компонентами красного (:ref:`r<class_Color_property_r>`), зеленого (:ref:`g<class_Color_property_g>`), синего (:ref:`b<class_Color_property_b>`) и альфа-канала (:ref:`a<class_Color_property_a>`). Каждый компонент представляет собой 32-битное значение с плавающей запятой, обычно в диапазоне от ``0.0`` до ``1.0``. Некоторые свойства (например, :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`) могут поддерживать значения больше ``1.0`` для слишком ярких цветов или цветов HDR (High Dynamic Range).
 
-Colors can be created in a number of ways: By the various **Color** constructors, by static methods such as :ref:`from_hsv()<class_Color_method_from_hsv>`, and by using a name from the set of standardized colors based on `X11 color names <https://en.wikipedia.org/wiki/X11_color_names>`__ with the addition of :ref:`TRANSPARENT<class_Color_constant_TRANSPARENT>`.
+Цвета могут быть созданы несколькими способами: с помощью различных конструкторов **Color**, с помощью статических методов, таких как :ref:`from_hsv()<class_Color_method_from_hsv>`, и с помощью имени из набора стандартизированных цветов, основанных на `названиях цветов X11 <https://en.wikipedia.org/wiki/X11_color_names>`__ с добавлением :ref:`TRANSPARENT<class_Color_constant_TRANSPARENT>`.
 
-\ `Color constants cheatsheet <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/color_constants.png>`__\ 
+\ `Шпаргалка по цветовым константам <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/color_constants.png>`__\ 
 
-Although **Color** may be used to store values of any encoding, the red (:ref:`r<class_Color_property_r>`), green (:ref:`g<class_Color_property_g>`), and blue (:ref:`b<class_Color_property_b>`) properties of **Color** are expected by Godot to be encoded using the `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB#Transfer_function_(%22gamma%22)>`__ unless otherwise stated. This color encoding is used by many traditional art and web tools, making it easy to match colors between Godot and these tools. Godot uses `Rec. ITU-R BT.709 <https://en.wikipedia.org/wiki/Rec._709>`__ color primaries, which are used by the sRGB standard.
+Хотя **Color** может использоваться для хранения значений любой кодировки, Godot ожидает, что свойства красного (:ref:`r<class_Color_property_r>`), зеленого (:ref:`g<class_Color_property_g>`) и синего (:ref:`b<class_Color_property_b>`) из **Color** будут закодированы с использованием `нелинейной функции преобразования sRGB <https://en.wikipedia.org/wiki/SRGB#Transfer_function_(%22gamma%22)>`__, если не указано иное. Эта цветовая кодировка используется многими традиционными инструментами для работы с графикой и веб-контентом, что упрощает сопоставление цветов между Godot и этими инструментами. Godot использует `Rec. Основные цвета ITU-R BT.709 <https://en.wikipedia.org/wiki/Rec._709>`__, используемые стандартом sRGB.
 
-All physical simulation, such as lighting calculations, and colorimetry transformations, such as :ref:`get_luminance()<class_Color_method_get_luminance>`, must be performed on linearly encoded values to produce correct results. When performing these calculations, convert **Color** to and from linear encoding using :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` and :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>`.
+Все физические расчеты, такие как расчеты освещения, и преобразования колориметрии, такие как :ref:`get_luminance()<class_Color_method_get_luminance>`, должны выполняться над линейно закодированными значениями для получения корректных результатов. При выполнении этих расчетов преобразуйте **Color** в линейное кодирование и обратно, используя :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` и :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>`.
 
-\ **Note:** In a boolean context, a Color will evaluate to ``false`` if it is equal to ``Color(0, 0, 0, 1)`` (opaque black). Otherwise, a Color will always evaluate to ``true``.
+\ **Примечание:** В логическом контексте значение Color будет равно ``false``, если оно равно ``Color(0, 0, 0, 1)`` (непрозрачный черный). В противном случае значение Color всегда будет равно ``true``.
 
-\ **Note:** In C#, color constants are defined in the ``Colors`` static class instead of ``Color``. Additionally, named colors use ``PascalCase`` syntax instead of ``UPPER_SNAKE_CASE``. For example, ``Color.ALICE_BLUE`` in GDScript is ``Colors.AliceBlue`` in C#.
+\ **Примечание:** В C# цветовые константы определены в статическом классе ``Colors``, а не в ``Color``. Кроме того, имена цветов используют синтаксис ``PascalCase`` вместо ``UPPER_SNAKE_CASE``. Например, ``Color.ALICE_BLUE`` в GDScript соответствует ``Colors.AliceBlue`` в C#.
 
 .. note::
 

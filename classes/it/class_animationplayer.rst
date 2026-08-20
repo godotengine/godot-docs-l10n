@@ -409,7 +409,7 @@ Se :ref:`playback_auto_capture_duration<class_AnimationPlayer_property_playback_
 - |void| **set_auto_capture_ease_type**\ (\ value\: :ref:`EaseType<enum_Tween_EaseType>`\ )
 - :ref:`EaseType<enum_Tween_EaseType>` **get_auto_capture_ease_type**\ (\ )
 
-The ease type of the capture interpolation. See also :ref:`EaseType<enum_Tween_EaseType>`.
+Il tipo di andamento dell'interpolazione di cattura. Vedi anche :ref:`EaseType<enum_Tween_EaseType>`.
 
 .. rst-class:: classref-item-separator
 
@@ -529,7 +529,7 @@ Restituisce il tempo di fusione (in secondi) tra due animazioni, riferite dalle 
 
 **Deprecato:** Use :ref:`AnimationMixer.callback_mode_method<class_AnimationMixer_property_callback_mode_method>` instead.
 
-Restituisce la modalità di chiamata utilizzata per le tracce "Chiama metodo".
+Restituisce la modalità di chiamata utilizzata per le tracce "Chiamata di metodi".
 
 .. rst-class:: classref-item-separator
 
@@ -631,9 +631,9 @@ Restituisce ``true`` se un'animazione è attualmente in riproduzione con una sez
 
 :ref:`bool<class_bool>` **is_animation_active**\ (\ ) |const| :ref:`🔗<class_AnimationPlayer_method_is_animation_active>`
 
-Returns ``true`` if the an animation is currently active. An animation is active if it was played by calling :ref:`play()<class_AnimationPlayer_method_play>` and was not finished yet, or was stopped by calling :ref:`stop()<class_AnimationPlayer_method_stop>`.
+Restituisce ``true`` se un'animazione è attualmente attiva. Un'animazione è attiva se è stata avviata chiamando :ref:`play()<class_AnimationPlayer_method_play>` e non è ancora terminata, oppure se è stata interrotta chiamando :ref:`stop()<class_AnimationPlayer_method_stop>`.
 
-This can be used to check whether an animation is currently paused or stopped.
+Questo metodo può servire per verificare se un'animazione è attualmente in pausa o interrotta.
 
 ::
 
@@ -845,7 +845,7 @@ Restituisce il tempo di fusione (in secondi) tra due animazioni, riferite dalle 
 
 **Deprecato:** Use :ref:`AnimationMixer.callback_mode_method<class_AnimationMixer_property_callback_mode_method>` instead.
 
-Imposta la modalità di chiamata utilizzata per le tracce "Chiama metodo".
+Imposta la modalità di chiamata utilizzata per le tracce "Chiamata di metodi".
 
 .. rst-class:: classref-item-separator
 
@@ -921,7 +921,7 @@ Se ``keep_state`` è ``true``, lo stato di animazione non è aggiornato visivame
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

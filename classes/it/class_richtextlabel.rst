@@ -610,7 +610,7 @@ Se questo bit è impostato, :ref:`update_image()<class_RichTextLabel_method_upda
 
 :ref:`ImageUpdateMask<enum_RichTextLabel_ImageUpdateMask>` **UPDATE_WIDTH_UNIT** = ``128``
 
-If this bit is set, :ref:`update_image()<class_RichTextLabel_method_update_image>` changes the units used to calculate image size.
+Se questo bit è impostato, :ref:`update_image()<class_RichTextLabel_method_update_image>` cambia le unità con cui calcolare le dimensioni dell'immagine.
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +628,7 @@ enum **ImageUnit**: :ref:`🔗<enum_RichTextLabel_ImageUnit>`
 
 :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` **IMAGE_UNIT_PIXEL** = ``0``
 
-Images drawn with this unit will be in pixels.
+Le immagini disegnate con questa unità saranno espresse in pixel.
 
 .. _class_RichTextLabel_constant_IMAGE_UNIT_PERCENT:
 
@@ -636,7 +636,7 @@ Images drawn with this unit will be in pixels.
 
 :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` **IMAGE_UNIT_PERCENT** = ``1``
 
-Images drawn with this unit will be in percentages of the control width.
+Le immagini disegnate con questa unità saranno espresse in percentuali rispetto alla larghezza del controllo.
 
 .. _class_RichTextLabel_constant_IMAGE_UNIT_EM:
 
@@ -644,7 +644,7 @@ Images drawn with this unit will be in percentages of the control width.
 
 :ref:`ImageUnit<enum_RichTextLabel_ImageUnit>` **IMAGE_UNIT_EM** = ``2``
 
-Images drawn with this unit will be in percentages of the surrounding font size.
+Le immagini disegnate con questa unità saranno espresse in percentuali rispetto alla dimensione del font circostante.
 
 .. rst-class:: classref-section-separator
 
@@ -666,9 +666,9 @@ Descrizioni delle proprietà
 - |void| **set_autowrap_mode**\ (\ value\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )
 - :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ )
 
-If set to something other than :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, the text gets wrapped inside the node's bounding rectangle.
+Se impostato su un valore diverso da :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, il testo è racchiuso all'interno del rettangolo di delimitazione del nodo.
 
-\ **Note:** RichTextLabels with autowrapping and :ref:`fit_content<class_RichTextLabel_property_fit_content>` enabled must have a custom maximum width configured to work correctly, either through the RichTextLabel's own :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` or as a result of a propagated maximum size from a parent Control with :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` enabled.
+\ **Nota:** I RichTextLabel con il ritorno a capo automatico e :ref:`fit_content<class_RichTextLabel_property_fit_content>` abilitati devono avere una larghezza massima personalizzata configurata per funzionare correttamente, tramite il :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` del RichTextLabel stesso o come risultato di una dimensione massima propagata da un controllo padre con :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -791,9 +791,9 @@ Se ``true``, consente di trascinare e rilasciare il testo selezionato.
 - |void| **set_fit_content**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_enabled**\ (\ )
 
-If ``true``, the label's minimum size will be automatically updated to fit its content, matching the behavior of :ref:`Label<class_Label>`.
+Se ``true``, le dimensioni minime dell'etichetta si aggiorneranno automaticamente per adattarsi al suo contenuto, replicando il comportamento di :ref:`Label<class_Label>`.
 
-\ **Note:** RichTextLabels with autowrapping and :ref:`fit_content<class_RichTextLabel_property_fit_content>` enabled must have a custom maximum width configured to work correctly, either through the RichTextLabel's own :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` or as a result of a propagated maximum size from a parent Control with :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` enabled.
+\ **Nota:** I RichTextLabel con il ritorno a capo automatico e :ref:`fit_content<class_RichTextLabel_property_fit_content>` abilitati devono avere una larghezza massima personalizzata configurata per funzionare correttamente, tramite il :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` del RichTextLabel stesso o come risultato di una dimensione massima propagata da un controllo padre con :ref:`Control.propagate_maximum_size<class_Control_property_propagate_maximum_size>` abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -861,7 +861,7 @@ Regole di allineamento del riempimento per le righe.
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Codice lingua utilizzato per gli algoritmi di interruzione di riga e di formazione del testo. Se lasciato vuoto, è utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -1250,7 +1250,7 @@ Aggiunge testo grezzo non analizzato da BBCode allo stack dei tag.
 
 Analizza ``bbcode`` e aggiunge i tag allo stack di tag in base alle necessità.
 
-\ **Nota:** Utilizzando questo metodo, non è possibile chiudere un tag che è stato aperto in una precedente chiamata a :ref:`append_text()<class_RichTextLabel_method_append_text>`. Ciò è fatto per migliorare le prestazioni, in particolare quando si aggiornano RichTextLabel molto grandi, poiché ricostruire l'intero BBCode ogni volta sarebbe più lento. Se è assolutamente necessario chiudere un tag in una futura chiamata al metodo, aggiungere :ref:`text<class_RichTextLabel_property_text>` anziché utilizzare :ref:`append_text()<class_RichTextLabel_method_append_text>`.
+\ **Nota:** Utilizzando questo metodo, non è possibile chiudere un tag che è stato aperto in una precedente chiamata a :ref:`append_text()<class_RichTextLabel_method_append_text>`. Ciò è fatto per migliorare le prestazioni, in particolare quando si aggiornano RichTextLabel molto grandi, poiché ricostruire l'intero BBCode ogni volta sarebbe più lento. Se è assolutamente necessario chiudere un tag in una futura chiamata al metodo, aggiungi :ref:`text<class_RichTextLabel_property_text>` invece di utilizzare :ref:`append_text()<class_RichTextLabel_method_append_text>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1390,7 +1390,7 @@ Restituisce lo scostamento verticale della riga trovata all'indice fornito.
 
 :ref:`Vector2i<class_Vector2i>` **get_line_range**\ (\ line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RichTextLabel_method_get_line_range>`
 
-Restituisce gli indici del primo e dell'ultimo carattere visibile per la riga ``line`` specificata, come :ref:`Vector2i<class_Vector2i>`.
+Restituisce gli indici del primo e dell'ultimo carattere visibile per la riga ``line`` specificata, all'interno di un :ref:`Vector2i<class_Vector2i>`.
 
 \ **Nota:** Se :ref:`visible_characters_behavior<class_RichTextLabel_property_visible_characters_behavior>` è impostato su :ref:`TextServer.VC_CHARS_BEFORE_SHAPING<class_TextServer_constant_VC_CHARS_BEFORE_SHAPING>` vengono conteggiate solo le righe visibili.
 
@@ -2053,7 +2053,7 @@ Se :ref:`meta_underlined<class_RichTextLabel_property_meta_underlined>` è ``tru
 
 |void| **push_mono**\ (\ ) :ref:`🔗<class_RichTextLabel_method_push_mono>`
 
-Aggiunge un tag ``[font]`` con un font monospazio allo stack dei tag.
+Aggiunge un tag ``[font]`` con un font monospace allo stack dei tag.
 
 .. rst-class:: classref-item-separator
 
@@ -2712,7 +2712,7 @@ Lo sfondo normale per il **RichTextLabel**.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

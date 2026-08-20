@@ -113,7 +113,7 @@ Adds the property identified by the given ``path`` to the list of the properties
 
 :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\] **get_properties**\ (\ ) |const| :ref:`🔗<class_SceneReplicationConfig_method_get_properties>`
 
-Returns a list of synchronized property :ref:`NodePath<class_NodePath>`\ s.
+Devuelve una lista de :ref:`NodePath<class_NodePath>` de propiedades sincronizadas.
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Returns a list of synchronized property :ref:`NodePath<class_NodePath>`\ s.
 
 :ref:`bool<class_bool>` **has_property**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_SceneReplicationConfig_method_has_property>`
 
-Returns ``true`` if the given ``path`` is configured for synchronization.
+Devuelve ``true`` si la ``path`` indicada está configurada para la sincronización.
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ Returns ``true`` if the given ``path`` is configured for synchronization.
 
 :ref:`int<class_int>` **property_get_index**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_SceneReplicationConfig_method_property_get_index>`
 
-Finds the index of the given ``path``.
+Encuentra el índice del ``path`` dado.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Finds the index of the given ``path``.
 
 :ref:`ReplicationMode<enum_SceneReplicationConfig_ReplicationMode>` **property_get_replication_mode**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_get_replication_mode>`
 
-Returns the replication mode for the property identified by the given ``path``.
+Devuelve el modo de replicación de la propiedad identificada por la ``path`` dada.
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ Sets whether the property identified by the given ``path`` is configured to be r
 
 |void| **remove_property**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_remove_property>`
 
-Removes the property identified by the given ``path`` from the configuration.
+Elimina de la configuración la propiedad identificada por el ``path`` especificado.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

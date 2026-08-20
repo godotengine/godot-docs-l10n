@@ -9,16 +9,16 @@ PhysicsDirectSpaceState3D
 
 **Heredado por:** :ref:`PhysicsDirectSpaceState3DExtension<class_PhysicsDirectSpaceState3DExtension>`
 
-Provides direct access to a physics space in the :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
+Proporciona acceso directo a un espacio de físicas en el :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Provides direct access to a physics space in the :ref:`PhysicsServer3D<class_PhysicsServer3D>`. It's used mainly to do queries against objects and areas residing in a given space.
+Proporciona acceso directo a un espacio de físicas en el :ref:`PhysicsServer3D<class_PhysicsServer3D>`. Se utiliza principalmente para realizar consultas sobre objetos y áreas que residen en un espacio determinado.
 
-\ **Note:** This class is not meant to be instantiated directly. Use :ref:`World3D.direct_space_state<class_World3D_property_direct_space_state>` to get the world's physics 3D space state.
+\ **Nota:** Esta clase no está diseñada para ser instanciada directamente. Utiliza :ref:`World3D.direct_space_state<class_World3D_property_direct_space_state>` para obtener el estado del espacio físico 3D del mundo.
 
 .. rst-class:: classref-introduction-group
 
@@ -148,25 +148,25 @@ The number of intersections can be limited with the ``max_results`` parameter, t
 
 :ref:`Dictionary<class_Dictionary>` **intersect_ray**\ (\ parameters\: :ref:`PhysicsRayQueryParameters3D<class_PhysicsRayQueryParameters3D>`\ ) :ref:`🔗<class_PhysicsDirectSpaceState3D_method_intersect_ray>`
 
-Intersects a ray in a given space. Ray position and other parameters are defined through :ref:`PhysicsRayQueryParameters3D<class_PhysicsRayQueryParameters3D>`. The returned object is a dictionary with the following fields:
+Interseca un rayo en un espacio determinado. La posición del rayo y otros parámetros se definen mediante :ref:`PhysicsRayQueryParameters3D<class_PhysicsRayQueryParameters3D>`. El objeto devuelto es un diccionario con los siguientes campos:
 
-\ ``collider``: The colliding object.
+\ ``collider``: El objeto con el que se produce la colisión.
 
-\ ``collider_id``: The colliding object's ID.
+\ ``collider_id``: El ID del objeto con el que se produce la colisión.
 
-\ ``normal``: The object's surface normal at the intersection point, or ``Vector3(0, 0, 0)`` if the ray starts inside the shape and :ref:`PhysicsRayQueryParameters3D.hit_from_inside<class_PhysicsRayQueryParameters3D_property_hit_from_inside>` is ``true``.
+\ ``normal``: La normal de la superficie del objeto en el punto de intersección, o ``Vector3(0, 0, 0)`` si el rayo comienza dentro de la forma y :ref:`PhysicsRayQueryParameters3D.hit_from_inside<class_PhysicsRayQueryParameters3D_property_hit_from_inside>` es ``true``.
 
-\ ``position``: The intersection point.
+\ ``position``: El punto de intersección.
 
-\ ``face_index``: The face index at the intersection point.
+\ ``face_index``: El índice de la cara en el punto de intersección.
 
-\ **Note:** Returns a valid number only if the intersected shape is a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`. Otherwise, ``-1`` is returned.
+\ **Nota:** Devuelve un número válido solo si la forma intersecada es un :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`. De lo contrario, se devuelve ``-1``.
 
-\ ``rid``: The intersecting object's :ref:`RID<class_RID>`.
+\ ``rid``: El :ref:`RID<class_RID>` del objeto con el que se produce la intersección.
 
-\ ``shape``: The shape index of the colliding shape.
+\ ``shape``: El índice de la forma que colisiona.
 
-If the ray did not intersect anything, then an empty dictionary is returned instead.
+Si el rayo no interseca nada, se devuelve un diccionario vacío.
 
 .. rst-class:: classref-item-separator
 

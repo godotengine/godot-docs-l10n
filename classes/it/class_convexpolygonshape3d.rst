@@ -18,7 +18,7 @@ Una forma di poliedro convesso 3D, progettata per l'uso in fisica. Solitamente u
 
 \ **ConvexPolygonShape3D** è *solido*, il che significa che rileva le collisioni da oggetti che sono completamente al suo interno, a differenza di :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` che è cavo. Ciò lo rende più adatto sia per il rilevamento sia per la fisica.
 
-\ **Decomposizione convessa:** Un poliedro concavo può essere suddiviso in diversi poliedri convessi. Ciò consente ai corpi di fisica dinamici di avere collisioni concave complesse (a un costo in termini di prestazioni) e può essere ottenuto tramite più nodi **ConvexPolygonShape3D**. Per generare una decomposizione convessa da una mesh, seleziona il nodo :ref:`MeshInstance3D<class_MeshInstance3D>`, vai al menu **Mesh** che appare sopra la viewport e scegli **Crea più fratelli di collisione convessa**. In alternativa, :ref:`MeshInstance3D.create_multiple_convex_collisions()<class_MeshInstance3D_method_create_multiple_convex_collisions>` può essere chiamato in uno script per eseguire questa decomposizione in fase di esecuzione.
+\ **Scomposizione convessa:** Un poliedro concavo può essere suddiviso in diversi poliedri convessi. Ciò consente ai corpi fisici dinamici di avere collisioni concave complesse (a scapito delle prestazioni) e può essere ottenuto tramite più nodi **ConvexPolygonShape3D**. Per generare una scomposizione convessa da una mesh, seleziona il nodo :ref:`MeshInstance3D<class_MeshInstance3D>`, vai al menu **Mesh** che appare sopra la viewport e scegli **Crea più fratelli di collisione convessa**. Alternativamente, si può chiamare :ref:`MeshInstance3D.create_multiple_convex_collisions()<class_MeshInstance3D_method_create_multiple_convex_collisions>` in uno script per effettuare questa scomposizione in fase di esecuzione.
 
 \ **Prestazioni:** **ConvexPolygonShape3D** è più veloce per verificare le collisioni rispetto a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`, ma è più lento delle forme di collisione primitive come :ref:`SphereShape3D<class_SphereShape3D>` e :ref:`BoxShape3D<class_BoxShape3D>`. Il suo utilizzo dovrebbe essere generalmente limitato a oggetti di medie dimensioni la cui collisione non può essere rappresentata accuratamente dalle forme primitive.
 
@@ -69,7 +69,7 @@ La lista dei punti 3D che formano la forma del poligono convesso.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

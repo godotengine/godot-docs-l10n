@@ -150,7 +150,7 @@ enum **ControlState**: :ref:`🔗<enum_EditorSpinSlider_ControlState>`
 
 :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **CONTROL_STATE_DEFAULT** = ``0``
 
-The type of control used will depend on the value of :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>`. Up-down arrows if ``true``, a slider if ``false``.
+Il tipo di controllo utilizzato dipenderà dal valore di :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>`. Frecce su e giù se ``true``, uno slider se ``false``.
 
 .. _class_EditorSpinSlider_constant_CONTROL_STATE_PREFER_SLIDER:
 
@@ -158,7 +158,7 @@ The type of control used will depend on the value of :ref:`editing_integer<class
 
 :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **CONTROL_STATE_PREFER_SLIDER** = ``1``
 
-A slider will always be used, even if :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>` is enabled.
+Sarà sempre utilizzato uno slider, anche se :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>` è abilitato.
 
 .. _class_EditorSpinSlider_constant_CONTROL_STATE_HIDE:
 
@@ -166,7 +166,7 @@ A slider will always be used, even if :ref:`editing_integer<class_EditorSpinSlid
 
 :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **CONTROL_STATE_HIDE** = ``2``
 
-Neither the up-down arrows nor the slider will be shown.
+Né le frecce su/giù né lo slider saranno visualizzati.
 
 .. rst-class:: classref-section-separator
 
@@ -188,7 +188,7 @@ Descrizioni delle proprietà
 - |void| **set_control_state**\ (\ value\: :ref:`ControlState<enum_EditorSpinSlider_ControlState>`\ )
 - :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **get_control_state**\ (\ )
 
-The state in which the control used to manipulate the value will be.
+Lo stato in cui starà il controllo utilizzato per manipolare il valore.
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ The state in which the control used to manipulate the value will be.
 - |void| **set_deferred_drag_mode_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deferred_drag_mode_enabled**\ (\ )
 
-If ``true``, changing via dragging is applied only at the end of the input (for example, when the user releases a mouse button).
+Se ``true``, le modifiche tramite trascinamento vengono applicate solo al termine dell'input (ad esempio, quando l'utente rilascia il pulsante del mouse).
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ If ``true``, changing via dragging is applied only at the end of the input (for 
 - |void| **set_editing_integer**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editing_integer**\ (\ )
 
-If ``true``, the **EditorSpinSlider** is considered to be editing an integer value. If ``false``, the **EditorSpinSlider** is considered to be editing a floating-point value. This is used to determine whether a slider should be drawn by default. The slider is only drawn for floats; integers use up-down arrows similar to :ref:`SpinBox<class_SpinBox>` instead, unless :ref:`control_state<class_EditorSpinSlider_property_control_state>` is set to :ref:`CONTROL_STATE_PREFER_SLIDER<class_EditorSpinSlider_constant_CONTROL_STATE_PREFER_SLIDER>`. It will also use :ref:`EditorSettings.interface/inspector/integer_drag_speed<class_EditorSettings_property_interface/inspector/integer_drag_speed>` instead of :ref:`EditorSettings.interface/inspector/float_drag_speed<class_EditorSettings_property_interface/inspector/float_drag_speed>` if the slider is available.
+Se ``true``, **EditorSpinSlider** è considerato come se stesse modificando un valore intero. Se ``false``, **EditorSpinSlider** è considerato come se stesse modificando un valore in virgola mobile. Questo serve per determinare se deve essere disegnato uno slider. Lo slider è disegnato solo per i float; gli interi utilizzano invece frecce su-giù simili a :ref:`SpinBox<class_SpinBox>`, almeno che :ref:`control_state<class_EditorSpinSlider_property_control_state>` non sia impostato su :ref:`CONTROL_STATE_PREFER_SLIDER<class_EditorSpinSlider_constant_CONTROL_STATE_PREFER_SLIDER>`. Userà anche :ref:`EditorSettings.interface/inspector/integer_drag_speed<class_EditorSettings_property_interface/inspector/integer_drag_speed>` anziché :ref:`EditorSettings.interface/inspector/float_drag_speed<class_EditorSettings_property_interface/inspector/float_drag_speed>` se lo slider è disponibile.
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ Singola texture che rappresenta entrambi i pulsanti su e giù, quando il control
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

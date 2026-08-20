@@ -204,7 +204,7 @@ L'argomento facoltativo ``keep_text`` indica al parser di conservare una copia d
 
 :ref:`Variant<class_Variant>` **parse_string**\ (\ json_string\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_JSON_method_parse_string>`
 
-Tenta di elaborare la stringa in JSON ``json_string`` e restituisce i dati elaborati. Restituisce ``null`` se l'elaborazione non riesce.
+Tenta di elaborare la stringa ``json_string`` e restituisce i dati elaborati. Restituisce ``null`` se l'elaborazione non riesce.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ Come predefinito, gli oggetti vengono ignorati per motivi di sicurezza, a meno c
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

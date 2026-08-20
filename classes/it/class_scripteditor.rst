@@ -192,7 +192,7 @@ Restituisce un array con tutti gli oggetti :ref:`Script<class_Script>` che sono 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_unsaved_files**\ (\ ) |const| :ref:`🔗<class_ScriptEditor_method_get_unsaved_files>`
 
-Returns an array of file paths of scripts with unsaved changes open in the editor.
+Restituisce un array di percorsi di file di script con modifiche non salvate aperti nell'editor.
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Registra l':ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>` nell'ed
 
 |void| **reload_open_files**\ (\ ) :ref:`🔗<class_ScriptEditor_method_reload_open_files>`
 
-Reloads all currently opened files. This should be used when opened files are changed outside of the script editor. The user may be prompted to resolve file conflicts, see :ref:`EditorSettings.text_editor/behavior/files/auto_reload_scripts_on_external_change<class_EditorSettings_property_text_editor/behavior/files/auto_reload_scripts_on_external_change>`.
+Ricarica tutti i file attualmente aperti. Si dovrebbe usare quando i file aperti vengono modificati fuori dall'editor di script. All'utente potrebbe essere richiesto di risolvere i conflitti tra file, vedi :ref:`EditorSettings.text_editor/behavior/files/auto_reload_scripts_on_external_change<class_EditorSettings_property_text_editor/behavior/files/auto_reload_scripts_on_external_change>`.
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ Reloads all currently opened files. This should be used when opened files are ch
 
 |void| **save_all_scripts**\ (\ ) :ref:`🔗<class_ScriptEditor_method_save_all_scripts>`
 
-Saves all open scripts.
+Salva tutti gli script aperti.
 
 .. rst-class:: classref-item-separator
 
@@ -323,7 +323,7 @@ Aggiorna la documentazione per lo ``script`` specificato.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -469,7 +469,7 @@ Si es ``true``, la vista renderizada de la cámara no se ve afectada por su :ref
 - |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Bottom scroll limit in pixels. The camera stops moving when reaching this value, but :ref:`offset<class_Camera2D_property_offset>` can push the view past the limit.
+Límite de desplazamiento inferior en píxeles. La cámara deja de moverse al alcanzar este valor, pero el :ref:`offset<class_Camera2D_property_offset>` puede hacer que la vista supere dicho límite.
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ Si es ``true``, los límites serán habilitados. Deshabilitar esto permitirá qu
 - |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Left scroll limit in pixels. The camera stops moving when reaching this value, but :ref:`offset<class_Camera2D_property_offset>` can push the view past the limit.
+Límite de desplazamiento hacia la izquierda en píxeles. La cámara deja de moverse al alcanzar este valor, pero el :ref:`offset<class_Camera2D_property_offset>` puede desplazar la vista más allá de dicho límite.
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ Left scroll limit in pixels. The camera stops moving when reaching this value, b
 - |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Right scroll limit in pixels. The camera stops moving when reaching this value, but :ref:`offset<class_Camera2D_property_offset>` can push the view past the limit.
+Límite de desplazamiento hacia la derecha en píxeles. La cámara deja de moverse al alcanzar este valor, pero el :ref:`offset<class_Camera2D_property_offset>` puede desplazar la vista más allá del límite.
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ Esta propiedad no tiene efecto si :ref:`position_smoothing_enabled<class_Camera2
 - |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Top scroll limit in pixels. The camera stops moving when reaching this value, but :ref:`offset<class_Camera2D_property_offset>` can push the view past the limit.
+Límite de desplazamiento superior en píxeles. La cámara deja de moverse al alcanzar este valor, pero el :ref:`offset<class_Camera2D_property_offset>` puede desplazar la vista más allá de dicho límite.
 
 .. rst-class:: classref-item-separator
 

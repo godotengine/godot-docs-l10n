@@ -329,7 +329,7 @@ Disegna il testo in un elemento canvas in una posizione specificata, con il colo
 
 :ref:`TextLine<class_TextLine>` **duplicate**\ (\ ) |const| :ref:`🔗<class_TextLine_method_duplicate>`
 
-Duplicates this **TextLine**.
+Duplica questo **TextLine**.
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Restituisce le dimensioni del riquadro del testo.
 
 :ref:`bool<class_bool>` **has_object**\ (\ key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextLine_method_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this line.
+Restituisce ``true`` se un oggetto con la chiave ``key`` è incorporato in questa riga.
 
 .. rst-class:: classref-item-separator
 
@@ -517,7 +517,7 @@ Allinea il testo alle tabulazioni specificate.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

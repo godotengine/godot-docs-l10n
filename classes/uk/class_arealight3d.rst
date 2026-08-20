@@ -14,17 +14,17 @@ AreaLight3D
 Опис
 --------
 
-An area light is a type of :ref:`Light3D<class_Light3D>` node that emits light over a two-dimensional area, in the shape of a rectangle. The light is attenuated throughout the distance. This attenuation can be configured by changing the energy, :ref:`area_attenuation<class_AreaLight3D_property_area_attenuation>`, and :ref:`area_range<class_AreaLight3D_property_area_range>`.
+Площинне світло — це тип вузла :ref:`Light3D<class_Light3D>`, який випромінює світло на двовимірну площину у формі прямокутника. Інтенсивність світла зменшується із відстанню. Це зменшення можна налаштувати, змінюючи значення параметрів energy, :ref:`area_attenuation<class_AreaLight3D_property_area_attenuation>` та :ref:`area_range<class_AreaLight3D_property_area_range>`.
 
-Light is emitted in the -Z direction of the node's global basis. For an unrotated light, this means that the light is emitted forwards, illuminating the front side of a 3D model (see :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` and :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`).
+Світло випромінюється у напрямку -Z глобальної бази вузла. Для світла без повороту це означає, що світло випромінюється вперед, освітлюючи передню сторону 3D-моделі (див. :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` та :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`).
 
-Area lights can cast soft shadows using PCSS, which you can control by tweaking the size parameter. The shadow map is drawn from the center of the light.
+Площинні джерела світла можуть відкидати м'які тіні за допомогою PCSS, що можна регулювати, змінюючи параметр розміру. Карта тіней малюється від центру джерела світла.
 
-\ **Note:** Area lights have limited support in the Mobile and Compatibility renderers. In the Mobile renderer, the size of the penumbra doesn't vary as it should with PCSS. In Compatibility, area lights cannot cast shadows.
+\ **Примітка:** Площинні джерела світла мають обмежену підтримку в рендерерах Mobile та Compatibility. У рендерері Mobile розмір півтіні не змінюється так, як це має бути при використанні PCSS. У рендерері Compatibility площинні джерела світла не можуть відкидати тіні.
 
-\ **Warning:** Shadows cast by an area light may look incorrect if the object casting shadows doesn't have enough subdivisions and it's very close to the area light. This is the same limitation as the Dual Paraboloid shadow mode on an :ref:`OmniLight3D<class_OmniLight3D>`.
+\ **Попередження:** Тіні, що відкидаються площинним джерелом світла, можуть виглядати некоректно, якщо об’єкт, що відкидає тіні, не має достатньої кількості підрозділів і знаходиться дуже близько до площинного джерела світла. Це те саме обмеження, що й у режимі тіней «Dual Paraboloid» для :ref:`OmniLight3D<class_OmniLight3D>`.
 
-\ **Performance:** Area lights are more demanding on the GPU compared to omni and spot lights. In Forward+, there is an additional GPU cost on *all* rendered objects as soon as one area light is present in the view frustum (due to the nature of clustered lighting). Consider using them only for cinematics or when targeting high-end devices.
+\ **Продуктивність:** Площинні джерела світла більш вимогливі до графічного процесора порівняно з оміні- та точковими джерелами світла. У режимі Forward+ виникає додаткове навантаження на графічний процесор для *всіх* об’єктів, що візуалізуються, щойно у полі огляду з’являється хоча б одне площинне джерело світла (через особливості кластерного освітлення). Рекомендується використовувати їх лише для кінематографічних сцен або при роботі на високопродуктивних пристроях.
 
 .. rst-class:: classref-introduction-group
 

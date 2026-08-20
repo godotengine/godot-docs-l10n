@@ -7,16 +7,16 @@ AudioEffectPitchShift
 
 **Eredita:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a pitch-shifting audio effect to an audio bus.
+Aggiunge un effetto audio di alterazione del tono a un bus audio.
 
-Raises or lowers the pitch of the input audio.
+Alza o abbassa il tono dell'audio in ingresso.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Allows modulation of pitch without modifying speed. All frequencies can be raised or lowered with minimal effect on transients.
+Consente di modulare il tono senza alterare la velocità. Tutte le frequenze possono essere aumentate o diminuite con effetto minimo sui transitori.
 
 .. rst-class:: classref-introduction-group
 
@@ -25,7 +25,7 @@ Tutorial
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effetti audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -126,7 +126,7 @@ Descrizioni delle proprietà
 - |void| **set_fft_size**\ (\ value\: :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>`\ )
 - :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **get_fft_size**\ (\ )
 
-The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__ buffer. Higher values smooth out the effect over time, but have greater latency. The effects of this higher latency are especially noticeable on audio signals that have sudden amplitude changes.
+Le dimensioni del buffer di `trasformata di Fourier veloce <https://it.wikipedia.org/wiki/Trasformata_di_Fourier_veloce>`__. Valori più alti attenuano l'effetto nel tempo, ma hanno una latenza maggiore. Gli effetti di questa maggiore latenza sono particolarmente evidenti sui segnali audio che hanno cambiamenti improvvisi sulla loro amplitudine.
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Four
 - |void| **set_oversampling**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_oversampling**\ (\ )
 
-Il fattore di sovracampionamento da usare. I valori più elevati risultano una migliore qualità, ma sono più faticosi sulla CPU e possono causare audio scoppiettante se la CPU non riesce a tenere il passo.
+Il fattore di sovracampionamento da usare. I valori più elevati risultano in una migliore qualità, ma sono più impegnativi per la CPU e possono causare audio scoppiettante se la CPU non riesce a tenere il passo.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ La scala del tono da utilizzare. ``1.0`` è il tono predefinito e riproduce i su
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

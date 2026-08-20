@@ -16,9 +16,9 @@ Un oggetto di gioco 2D, ereditato da tutti i nodi riguardanti il 2D. Ha una posi
 Descrizione
 ----------------------
 
-Un oggetto di gioco 2D, con una trasformazione (posizione, rotazione e scala). Tutti i nodi 2D, inclusi gli oggetti di fisica e gli sprite, ereditano da Node2D. Utilizza Node2D come nodo genitore per spostare, scalare e ruotare i figli in un progetto 2D. Offre inoltre il controllo dell'ordine di rendering del nodo.
+Un oggetto di gioco 2D, con una trasformazione (posizione, rotazione e scala). Tutti i nodi 2D, inclusi gli oggetti fisici e gli sprite, ereditano da Node2D. Utilizza Node2D come nodo genitore per spostare, scalare e ruotare i figli in un progetto 2D. Offre inoltre il controllo dell'ordine di rendering del nodo.
 
-\ **Nota:** Poiché sia **Node2D** sia :ref:`Control<class_Control>` ereditano da :ref:`CanvasItem<class_CanvasItem>`, essi condividono diversi concetti della classe come le proprietà :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` e :ref:`CanvasItem.visible<class_CanvasItem_property_visible>`.
+\ **Nota:** Poiché entrambi **Node2D** e :ref:`Control<class_Control>` ereditano da :ref:`CanvasItem<class_CanvasItem>`, essi condividono diversi concetti della classe come le proprietà :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` e :ref:`CanvasItem.visible<class_CanvasItem_property_visible>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -339,9 +339,9 @@ Moltiplica la scala attuale per il vettore ``ratio``.
 
 :ref:`float<class_float>` **get_angle_to**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Node2D_method_get_angle_to>`
 
-Returns the angle between the node and the ``point`` in radians. See also :ref:`look_at()<class_Node2D_method_look_at>`.
+Restituisce l'angolo tra il nodo e il punto ``point`` in radianti. Vedi anche :ref:`look_at()<class_Node2D_method_look_at>`.
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/node2d_get_angle_to.png>`__
+\ `Illustrazione dell'angolo restituito. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/node2d_get_angle_to.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -377,9 +377,9 @@ Aggiunge il vettore ``offset`` alla posizione globale del nodo.
 
 |void| **look_at**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Node2D_method_look_at>`
 
-Rotates the node so that its local +X axis points towards the ``point``, which is expected to use global coordinates. This method is a combination of both :ref:`rotate()<class_Node2D_method_rotate>` and :ref:`get_angle_to()<class_Node2D_method_get_angle_to>`.
+Ruota il nodo in modo che il suo asse +X locale punti verso il punto ``point``, che dovrebbe utilizzare coordinate globali. Questo metodo è una combinazione di :ref:`rotate()<class_Node2D_method_rotate>` e :ref:`get_angle_to()<class_Node2D_method_get_angle_to>`.
 
-\ ``point`` should not be the same as the node's position, otherwise the node always looks to the right.
+\ ``point`` non dovrebbe essere uguale alla posizione del nodo, altrimenti il nodo sarà orientato sempre a destra.
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ Rotates the node so that its local +X axis points towards the ``point``, which i
 
 |void| **move_local_x**\ (\ delta\: :ref:`float<class_float>`, scaled\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node2D_method_move_local_x>`
 
-Applies a local translation on the node's X axis with the amount specified in ``delta``. If ``scaled`` is ``false``, normalizes the movement to occur independently of the node's :ref:`scale<class_Node2D_property_scale>`.
+Applica una traslazione locale sull'asse X del nodo in base al ``delta`` di :ref:`Node._process()<class_Node_private_method__process>`. Se ``scaled`` è ``false``, normalizza il movimento affinché avvenga indipendentemente dalla :ref:`scale<class_Node2D_property_scale>` del nodo.
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ Applies a local translation on the node's X axis with the amount specified in ``
 
 |void| **move_local_y**\ (\ delta\: :ref:`float<class_float>`, scaled\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node2D_method_move_local_y>`
 
-Applies a local translation on the node's Y axis with the amount specified in ``delta``. If ``scaled`` is ``false``, normalizes the movement to occur independently of the node's :ref:`scale<class_Node2D_property_scale>`.
+Applica una traslazione locale sull'asse Y del nodo in base al ``delta`` di :ref:`Node._process()<class_Node_private_method__process>`. Se ``scaled`` è ``false``, normalizza il movimento affinché avvenga indipendentemente dalla :ref:`scale<class_Node2D_property_scale>` del nodo.
 
 .. rst-class:: classref-item-separator
 
@@ -457,7 +457,7 @@ Trasla il nodo per l'``offset`` specificato in coordinate locali. Questo equival
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

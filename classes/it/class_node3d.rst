@@ -204,7 +204,7 @@ enum **RotationEditMode**: :ref:`🔗<enum_Node3D_RotationEditMode>`
 
 :ref:`RotationEditMode<enum_Node3D_RotationEditMode>` **ROTATION_EDIT_MODE_EULER** = ``0``
 
-The rotation is edited using a :ref:`Vector3<class_Vector3>` in `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__. In Godot, Euler angles always use intrinsic order, meaning that rotation happens around the local axes of the object.
+La rotazione è modificata tramite un :ref:`Vector3<class_Vector3>` in `angoli di Eulero <https://it.wikipedia.org/wiki/Angoli_di_Eulero>`__. In Godot, gli angoli di Eulero utilizzano sempre l'ordine intrinseco, il che significa che l'orientamento finale avviene attorno agli assi locali dell'oggetto.
 
 .. _class_Node3D_constant_ROTATION_EDIT_MODE_QUATERNION:
 
@@ -212,7 +212,7 @@ The rotation is edited using a :ref:`Vector3<class_Vector3>` in `Euler angles <h
 
 :ref:`RotationEditMode<enum_Node3D_RotationEditMode>` **ROTATION_EDIT_MODE_QUATERNION** = ``1``
 
-The rotation is edited using a :ref:`Quaternion<class_Quaternion>`. Quaternions avoid :doc:`gimbal lock <../tutorials/3d/using_transforms>` and having to choose an order of rotation, but are less intuitive. Quaternion rotation is mostly the same as rotors in 3D geometric algebra, except that the numbers are labeled differently.
+La rotazione è modificata tramite un :ref:`Quaternion<class_Quaternion>`. I quaternioni evitano il :doc:`blocco cardanico <../tutorials/3d/using_transforms>` e la necessità di scegliere un ordine di rotazione, ma sono meno intuitivi. La rotazione con i quaternioni è perlopiù identica a quella con i rotori nell'algebra geometrica 3D, tranne che i numeri sono etichettati diversamente.
 
 .. _class_Node3D_constant_ROTATION_EDIT_MODE_BASIS:
 
@@ -220,7 +220,7 @@ The rotation is edited using a :ref:`Quaternion<class_Quaternion>`. Quaternions 
 
 :ref:`RotationEditMode<enum_Node3D_RotationEditMode>` **ROTATION_EDIT_MODE_BASIS** = ``2``
 
-La rotazione è modificata tramite una :ref:`Basis<class_Basis>`. In questa modalità, le assi di :ref:`basis<class_Node3D_property_basis>` si possono modificare liberamente, ma la proprietà :ref:`scale<class_Node3D_property_scale>` non è disponibile.
+La rotazione è modificata tramite una :ref:`Basis<class_Basis>`. In questa modalità, gli assi di :ref:`basis<class_Node3D_property_basis>` si possono modificare liberamente, ma la proprietà :ref:`scale<class_Node3D_property_scale>` non è disponibile.
 
 .. rst-class:: classref-section-separator
 
@@ -457,17 +457,17 @@ Rotazione di questo nodo rappresentata come un :ref:`Quaternion<class_Quaternion
 - |void| **set_rotation**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation**\ (\ )
 
-Rotation of this node as `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians and in parent space (relative to the parent node). This value is obtained from :ref:`basis<class_Node3D_property_basis>`'s rotation.
+La rotazione di questo nodo in `angoli di Eulero <https://it.wikipedia.org/wiki/Angoli_di_Eulero>`__, in radianti e nello spazio padre (relativa al nodo padre). Questo valore è ottenuto dalla rotazione di :ref:`basis<class_Node3D_property_basis>`.
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` is the angle around the local X axis (pitch);
+- :ref:`Vector3.x<class_Vector3_property_x>` è l'angolo attorno all'asse X (beccheggio);
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` is the angle around the local Y axis (yaw);
+- :ref:`Vector3.y<class_Vector3_property_y>` è l'angolo attorno all'asse Y (imbardata);
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` is the angle around the local Z axis (roll).
+- :ref:`Vector3.z<class_Vector3_property_z>` è l'angolo attorno all'asse Z (rollio).
 
-The order of each consecutive rotation can be changed with :ref:`rotation_order<class_Node3D_property_rotation_order>` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). In Godot, Euler angles always use intrinsic order. By default, the intrinsic YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
+L'ordine di ogni rotazione consecutiva si può cambiare con :ref:`rotation_order<class_Node3D_property_rotation_order>` (vedi le costanti di :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`). In Godot, gli angoli di Eulero utilizzano sempre l'ordine intrinseco. Come predefinito, è usata la convenzione YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
 
-\ **Note:** This property is edited in degrees in the inspector. If you want to use degrees in a script, use :ref:`rotation_degrees<class_Node3D_property_rotation_degrees>`.
+\ **Nota:** Questa proprietà viene modificata in gradi nell'Ispettore. Se vuoi utilizzare i gradi in uno script, usa :ref:`rotation_degrees<class_Node3D_property_rotation_degrees>`.
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ La :ref:`rotation<class_Node3D_property_rotation>` di questo nodo, in gradi anzi
 - |void| **set_rotation_edit_mode**\ (\ value\: :ref:`RotationEditMode<enum_Node3D_RotationEditMode>`\ )
 - :ref:`RotationEditMode<enum_Node3D_RotationEditMode>` **get_rotation_edit_mode**\ (\ )
 
-Come la rotazione e la scala di questo nodo sono presentate nel pannello Ispettore.
+Come presentare la rotazione e la scala di questo nodo nel pannello Ispettore.
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ Come la rotazione e la scala di questo nodo sono presentate nel pannello Ispetto
 - |void| **set_rotation_order**\ (\ value\: :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`\ )
 - :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **get_rotation_order**\ (\ )
 
-The axis rotation order of the :ref:`rotation<class_Node3D_property_rotation>` property. In Godot, Euler angles always use intrinsic order, meaning that the final orientation is calculated by rotating around the local axes in this order.
+L'ordine di rotazione degli assi della proprietà :ref:`rotation<class_Node3D_property_rotation>`. Godot, gli angoli di Eulero utilizzano sempre l'ordine intrinseco, il che significa che l'orientamento finale è calcolato ruotando attorno agli assi locali in questo ordine.
 
 .. rst-class:: classref-item-separator
 
@@ -592,7 +592,7 @@ La trasformazione locale di questo nodo, nello spazio padre (relativa al nodo pa
 - |void| **set_visibility_parent**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_visibility_parent**\ (\ )
 
-Percorso al genitore dell'intervallo di visibilità per questo nodo e i suoi discendenti. Il genitore di visibilità deve essere un :ref:`GeometryInstance3D<class_GeometryInstance3D>`.
+Percorso al genitore del campo di visibilità per questo nodo e i suoi discendenti. Il genitore di visibilità deve essere un :ref:`GeometryInstance3D<class_GeometryInstance3D>`.
 
 Qualsiasi istanza visiva sarà visibile solo se il genitore di visibilità (e tutti i suoi antenati di visibilità) è nascosto perché più vicino alla telecamera rispetto al suo :ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>`. I nodi nascosti tramite la proprietà :ref:`visible<class_Node3D_property_visible>` sono essenzialmente rimossi dall'albero delle dipendenze di visibilità, quindi le istanze dipendenti non terranno conto del nodo nascosto o dei suoi antenati.
 
@@ -1108,7 +1108,7 @@ Aggiorna tutti gli oggetti :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` att
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

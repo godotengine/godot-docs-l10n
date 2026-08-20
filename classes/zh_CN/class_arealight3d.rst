@@ -14,17 +14,17 @@ AreaLight3D
 描述
 ----
 
-An area light is a type of :ref:`Light3D<class_Light3D>` node that emits light over a two-dimensional area, in the shape of a rectangle. The light is attenuated throughout the distance. This attenuation can be configured by changing the energy, :ref:`area_attenuation<class_AreaLight3D_property_area_attenuation>`, and :ref:`area_range<class_AreaLight3D_property_area_range>`.
+面光源是一种 :ref:`Light3D<class_Light3D>` 节点，它会在二维区域（矩形区域）上发射光线。光线会随着距离衰减。可以通过更改能量、\ :ref:`area_attenuation<class_AreaLight3D_property_area_attenuation>` 和 :ref:`area_range<class_AreaLight3D_property_area_range>` 来配置这种衰减。
 
-Light is emitted in the -Z direction of the node's global basis. For an unrotated light, this means that the light is emitted forwards, illuminating the front side of a 3D model (see :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` and :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`).
+光线沿该节点全局基的 -Z 方向发射。对于未旋转的光源，这意味着光线向前发射，照亮 3D 模型的正面（参见 :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` 和 :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`\ ）。
 
-Area lights can cast soft shadows using PCSS, which you can control by tweaking the size parameter. The shadow map is drawn from the center of the light.
+面光源可以使用 PCSS 投射柔和阴影，可以通过调整大小参数来控制阴影效果。阴影贴图从光源中心绘制。
 
-\ **Note:** Area lights have limited support in the Mobile and Compatibility renderers. In the Mobile renderer, the size of the penumbra doesn't vary as it should with PCSS. In Compatibility, area lights cannot cast shadows.
+\ **注意：**\ 面光源在移动端和兼容渲染器中的支持有限。在移动端渲染器中，半影的大小不会像 PCSS 那样变化。在兼容渲染器中，面光源无法投射阴影。
 
-\ **Warning:** Shadows cast by an area light may look incorrect if the object casting shadows doesn't have enough subdivisions and it's very close to the area light. This is the same limitation as the Dual Paraboloid shadow mode on an :ref:`OmniLight3D<class_OmniLight3D>`.
+\ **警告：**\ 如果投射阴影的物体细分级别不足，且距离面光源非常近，则面光源投射的阴影可能看起来不正确。这与 :ref:`OmniLight3D<class_OmniLight3D>` 的双抛物面阴影模式的限制相同。
 
-\ **Performance:** Area lights are more demanding on the GPU compared to omni and spot lights. In Forward+, there is an additional GPU cost on *all* rendered objects as soon as one area light is present in the view frustum (due to the nature of clustered lighting). Consider using them only for cinematics or when targeting high-end devices.
+\ **性能：**\ 与全向光和聚光灯相比，面光源对 GPU 的要求更高。在 Forward+ 中，一旦视锥体中存在一个面光源，\ *所有*\ 渲染对象都会产生额外的 GPU 成本（由于集群照明的特性）。建议仅在电影级画面或面向高端设备时使用。
 
 .. rst-class:: classref-introduction-group
 

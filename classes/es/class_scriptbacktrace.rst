@@ -7,7 +7,7 @@ ScriptBacktrace
 
 **Hereda:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A captured backtrace of a specific script language.
+Un backtrace capturado de un lenguaje de script específico.
 
 .. rst-class:: classref-introduction-group
 
@@ -137,9 +137,9 @@ Returns the line number of the call site represented by the stack frame at the s
 
 :ref:`int<class_int>` **get_global_variable_count**\ (\ ) |const| :ref:`🔗<class_ScriptBacktrace_method_get_global_variable_count>`
 
-Returns the number of global variables (e.g. autoload singletons) in the backtrace.
+Devuelve el número de variables globales (p. ej., singletons de carga automática) en el seguimiento de la pila.
 
-\ **Note:** This will be non-zero only if the ``include_variables`` parameter was ``true`` when capturing the backtrace with :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`.
+\ **Nota:** El valor será distinto de cero solo si el parámetro ``include_variables`` era ``true`` al capturar el seguimiento de la pila con :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`.
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ Returns the number of global variables (e.g. autoload singletons) in the backtra
 
 :ref:`String<class_String>` **get_global_variable_name**\ (\ variable_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ScriptBacktrace_method_get_global_variable_name>`
 
-Returns the name of the global variable at the specified index.
+Devuelve el nombre de la variable global en el índice especificado.
 
 .. rst-class:: classref-item-separator
 

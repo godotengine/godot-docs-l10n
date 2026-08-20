@@ -193,7 +193,7 @@ enum **AlphaCutMode**: :ref:`🔗<enum_Label3D_AlphaCutMode>`
 
 :ref:`AlphaCutMode<enum_Label3D_AlphaCutMode>` **ALPHA_CUT_DISABLED** = ``0``
 
-Questa modalità esegue la fusione alfa standard. Può visualizzare aree traslucide, ma potrebbero essere visibili problemi di ordinamento della trasparenza quando più materiali trasparenti si sovrappongono. :ref:`GeometryInstance3D.cast_shadow<class_GeometryInstance3D_property_cast_shadow>` non ha effetto quando si usa questa modalità di trasparenza; Il **Label3D** non proietterà mai ombre.
+Questa modalità effettua una fusione alfa standard. Può visualizzare aree traslucide, ma si potrebbero notare problemi di ordinamento della trasparenza quando più materiali trasparenti si sovrappongono. :ref:`GeometryInstance3D.cast_shadow<class_GeometryInstance3D_property_cast_shadow>` non ha effetto usando questa modalità di trasparenza; Il **Label3D** non proietterà mai ombre.
 
 .. _class_Label3D_constant_ALPHA_CUT_DISCARD:
 
@@ -201,9 +201,9 @@ Questa modalità esegue la fusione alfa standard. Può visualizzare aree trasluc
 
 :ref:`AlphaCutMode<enum_Label3D_AlphaCutMode>` **ALPHA_CUT_DISCARD** = ``1``
 
-Questa modalità consente solo pixel completamente trasparenti o completamente opachi. Saranno visibili bordi netti a meno che non sia abilitata una qualche forma di antialiasing di spazio dello schermo (vedi :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`). Questa modalità è anche nota come *alpha testing* o *trasparenza a 1 bit*.
+Questa modalità consente solo pixel completamente trasparenti o completamente opachi. Saranno visibili bordi netti a meno che non sia abilitata una qualche forma di antialiasing nello spazio dello schermo (vedi :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`). Questa modalità è anche nota come *alpha testing* o *trasparenza a 1 bit*.
 
-\ **Nota:** Questa modalità potrebbe causare problemi con font e contorni con antialiasing, provare a regolare :ref:`alpha_scissor_threshold<class_Label3D_property_alpha_scissor_threshold>` o utilizzare un font MSDF.
+\ **Nota:** Questa modalità potrebbe causare problemi con font e contorni con antialiasing; prova a regolare :ref:`alpha_scissor_threshold<class_Label3D_property_alpha_scissor_threshold>` o utilizzare un font MSDF.
 
 \ **Nota:** Quando si utilizza testo con glifi sovrapposti (ad esempio, corsivi), questa modalità potrebbe causare problemi di ordinamento della trasparenza tra il testo principale e il contorno.
 
@@ -213,9 +213,9 @@ Questa modalità consente solo pixel completamente trasparenti o completamente o
 
 :ref:`AlphaCutMode<enum_Label3D_AlphaCutMode>` **ALPHA_CUT_OPAQUE_PREPASS** = ``2``
 
-Questa modalità disegna pixel completamente opachi nel pre-passaggio di profondità. È più lenta di :ref:`ALPHA_CUT_DISABLED<class_Label3D_constant_ALPHA_CUT_DISABLED>` o :ref:`ALPHA_CUT_DISCARD<class_Label3D_constant_ALPHA_CUT_DISCARD>`, ma consente di visualizzare aree traslucide e bordi lisci usando un ordinamento corretto.
+Questa modalità disegna pixel completamente opachi nel pre-passaggio di profondità. È più lenta di :ref:`ALPHA_CUT_DISABLED<class_Label3D_constant_ALPHA_CUT_DISABLED>` o :ref:`ALPHA_CUT_DISCARD<class_Label3D_constant_ALPHA_CUT_DISCARD>`, ma consente di visualizzare aree traslucide e bordi lisci, avendo intanto un ordinamento adeguato.
 
-\ **Nota:** Quando si utilizza testo con glifi sovrapposti (ad esempio, corsivi), questa modalità potrebbe causare problemi di ordinamento della trasparenza tra il testo principale e il contorno.
+\ **Nota:** Usando testo con glifi sovrapposti (ad esempio, corsivi), questa modalità potrebbe causare problemi di ordinamento della trasparenza tra il testo principale e il contorno.
 
 .. _class_Label3D_constant_ALPHA_CUT_HASH:
 
@@ -330,7 +330,7 @@ Soglia oltre la quale l'alpha scissor scarterà i valori.
 - |void| **set_autowrap_mode**\ (\ value\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )
 - :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ )
 
-Se impostato su un valore diverso da :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, il testo è avvolto all'interno del rettangolo di delimitazione del nodo. Se ridimensioni il nodo, cambierà automaticamente la sua altezza per mostrare tutto il testo.
+Se impostato su un valore diverso da :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, il testo è racchiuso all'interno del rettangolo di delimitazione del nodo. Se il nodo si ridimensiona, la sua altezza si adatterà automaticamente per mostrare tutto il testo.
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ Regole di allineamento del riempimento per le righe.
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Codice lingua utilizzato per gli algoritmi di interruzione di riga e di formazione del testo. Se lasciato vuoto, è utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -799,7 +799,7 @@ Controlla l'allineamento verticale del testo. Supporta sopra, centro, sotto.
 - |void| **set_width**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_width**\ (\ )
 
-Larghezza del testo (in pixel), utilizzata per l'allineamento automatico e di riempimento.
+Larghezza del testo (in pixel), utilizzata per il ritorno a capo automatico e l'allineamento di riempimento.
 
 .. rst-class:: classref-section-separator
 
@@ -846,7 +846,7 @@ Se ``true``, il ``flag`` specificato verrà abilitato.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -9,14 +9,14 @@ RDAccelerationStructureInstance
 
 **Наследует:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Acceleration structure instance (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+Экземпляр структуры ускорения (используется :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-**RDAccelerationStructureInstance** describes an instance of a Bottom-Level Acceleration Structure (BLAS) used in the :ref:`RenderingDevice.tlas_build()<class_RenderingDevice_method_tlas_build>` method.
+**RDAccelerationStructureInstance** описывает экземпляр структуры ускорения нижнего уровня (BLAS), используемой в методе :ref:`RenderingDevice.tlas_build()<class_RenderingDevice_method_tlas_build>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -60,7 +60,7 @@ Acceleration structure instance (used by :ref:`RenderingDevice<class_RenderingDe
 - |void| **set_blas**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_blas**\ (\ )
 
-The BLAS referenced by this instance. If ``null``, the instance is treated as a placeholder but still contributes to ``gl_InstanceIndex`` in GLSL.
+BLAS, на который ссылается данный экземпляр. Если ``null``, экземпляр рассматривается как заполнитель, но всё равно вносит вклад в ``gl_InstanceIndex`` в GLSL.
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ The BLAS referenced by this instance. If ``null``, the instance is treated as a 
 - |void| **set_flags**\ (\ value\: |bitfield|\[:ref:`AccelerationStructureInstanceFlagBits<enum_RenderingDevice_AccelerationStructureInstanceFlagBits>`\]\ )
 - |bitfield|\[:ref:`AccelerationStructureInstanceFlagBits<enum_RenderingDevice_AccelerationStructureInstanceFlagBits>`\] **get_flags**\ (\ )
 
-Flags for the instance.
+Флаги для экземпляра.
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ Flags for the instance.
 - |void| **set_hit_sbt_range**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_hit_sbt_range**\ (\ )
 
-Hit shader binding table range used for this instance, allocated using the :ref:`RenderingDevice.hit_sbt_range_alloc()<class_RenderingDevice_method_hit_sbt_range_alloc>` method.
+Диапазон таблицы привязки шейдеров попадания, используемый для этого экземпляра, выделен с помощью метода :ref:`RenderingDevice.hit_sbt_range_alloc()<class_RenderingDevice_method_hit_sbt_range_alloc>`.
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Hit shader binding table range used for this instance, allocated using the :ref:
 - |void| **set_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_id**\ (\ )
 
-Custom instance ID that can be accessed in GLSL using ``gl_InstanceCustomIndexEXT``.
+Пользовательский ID идентификатор экземпляра, доступ к которому можно получить в GLSL с помощью ``gl_InstanceCustomIndexEXT``.
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ Custom instance ID that can be accessed in GLSL using ``gl_InstanceCustomIndexEX
 - |void| **set_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_mask**\ (\ )
 
-Visibility mask used to control which rays can intersect this instance.
+Маска видимости используется для управления тем, какие лучи могут пересекать данный экземпляр.
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Visibility mask used to control which rays can intersect this instance.
 - |void| **set_transform**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_transform**\ (\ )
 
-Transform applied to the referenced BLAS for this instance.
+Преобразование, примененное к указанному в данном случае объекту BLAS.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

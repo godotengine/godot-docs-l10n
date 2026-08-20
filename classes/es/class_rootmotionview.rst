@@ -82,7 +82,7 @@ Path to an :ref:`AnimationMixer<class_AnimationMixer>` node to use as a basis fo
 - |void| **set_cell_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cell_size**\ (\ )
 
-The grid's cell size in 3D units.
+El tamaño de celda de la cuadrícula en unidades 3D.
 
 .. rst-class:: classref-item-separator
 

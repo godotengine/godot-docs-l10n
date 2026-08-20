@@ -334,7 +334,7 @@ Il raggio massimo consentito in unità mondiali che il percorso restituito può 
 - |void| **set_path_search_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_search_max_distance**\ (\ )
 
-The maximum distance a searched polygon can be away from the start polygon before the pathfinding cancels the search for a path to the (possibly unreachable or very far away) target position polygon. In this case the pathfinding resets and builds a path from the start polygon to the polygon that was found closest to the target position so far. A value of ``0`` or below counts as unlimited. In case of unlimited the pathfinding will search all polygons connected with the start polygon until either the target position polygon is found or all available polygon search options are exhausted.
+La distanza massima che un poligono cercato può avere dal poligono di partenza, prima che il pathfinding annulli la ricerca di un percorso verso il poligono di destinazione (potenzialmente irraggiungibile o molto lontano). In questo caso, il pathfinding si azzera e crea un percorso dal poligono di partenza al poligono trovato più vicino alla posizione di destinazione fino a quel momento. Un valore pari o inferiore a ``0`` è considerato illimitato. In caso di valore illimitato, il pathfinding cercherà in tutti i poligoni collegati al poligono di partenza finché non verrà trovato il poligono di destinazione o finché non saranno esaurite tutte le opzioni di ricerca disponibili.
 
 .. rst-class:: classref-item-separator
 
@@ -351,7 +351,7 @@ The maximum distance a searched polygon can be away from the start polygon befor
 - |void| **set_path_search_max_polygons**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_path_search_max_polygons**\ (\ )
 
-The maximum number of polygons that are searched before the pathfinding cancels the search for a path to the (possibly unreachable or very far away) target position polygon. In this case the pathfinding resets and builds a path from the start polygon to the polygon that was found closest to the target position so far. A value of ``0`` or below counts as unlimited. In case of unlimited the pathfinding will search all polygons connected with the start polygon until either the target position polygon is found or all available polygon search options are exhausted.
+Il numero massimo di poligoni ricercati, prima che il pathfinding annulli la ricerca di un percorso verso il poligono di destinazione (potenzialmente irraggiungibile o molto lontano). In questo caso, il pathfinding si azzera e crea un percorso dal poligono di partenza al poligono trovato più vicino alla posizione di destinazione fino a quel momento. Un valore pari o inferiore a ``0`` è considerato illimitato. In caso di valore illimitato, il pathfinding cercherà in tutti i poligoni collegati al poligono di partenza finché non verrà trovato il poligono di destinazione o finché non saranno esaurite tutte le opzioni di ricerca poligonale disponibili.
 
 .. rst-class:: classref-item-separator
 
@@ -404,7 +404,7 @@ La quantità di semplificazione del percorso in unità mondiali.
 
 Se ``true`` una versione semplificata del percorso sarà restituita, con i punti meno critici rimossi. La quantità di semplificazione è controllata da :ref:`simplify_epsilon<class_NavigationPathQueryParameters2D_property_simplify_epsilon>`. La semplificazione utilizza una variazione dell'algoritmo Ramer-Douglas-Peucker per decimare i punti della curva.
 
-La semplificazione del percorso può essere utile per mitigare vari problemi di seguimento del percorso che possono sorgere con certi tipi di agenti e comportamenti di script. Ad esempio, agenti che "sterzano" o evasione in "campi aperti".
+La semplificazione del percorso può aiutare a mitigare vari problemi di seguimento del percorso che possono sorgere con certi tipi di agenti e comportamenti di script. Ad esempio, agenti che "sterzano" o evitamento in "campi aperti".
 
 .. rst-class:: classref-item-separator
 
@@ -444,7 +444,7 @@ La posizione di destinazione della ricerca del percorso in coordinate globali.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

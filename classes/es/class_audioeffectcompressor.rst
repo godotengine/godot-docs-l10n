@@ -7,9 +7,9 @@ AudioEffectCompressor
 
 **Hereda:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a downward compressor audio effect to an audio bus.
+Añade un efecto de compresor de audio descendente a un bus de audio.
 
-Allows control of the dynamic range via a volume threshold and timing controls.
+Permite controlar el rango dinámico mediante un umbral de volumen y controles de tiempo.
 
 .. rst-class:: classref-introduction-group
 

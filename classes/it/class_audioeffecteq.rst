@@ -9,18 +9,18 @@ AudioEffectEQ
 
 **Ereditato da:** :ref:`AudioEffectEQ10<class_AudioEffectEQ10>`, :ref:`AudioEffectEQ21<class_AudioEffectEQ21>`, :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`
 
-Base class for audio equalizers (EQ). Gives you control over frequencies.
+Classe base per gli equalizzatori audio (EQ). Dà il controllo sulle frequenze.
 
-Use it to create a custom equalizer if :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`, :ref:`AudioEffectEQ10<class_AudioEffectEQ10>`, or :ref:`AudioEffectEQ21<class_AudioEffectEQ21>` don't fit your needs.
+Usalo per creare un equalizzatore personalizzato se :ref:`AudioEffectEQ6<class_AudioEffectEQ6>`, :ref:`AudioEffectEQ10<class_AudioEffectEQ10>` o :ref:`AudioEffectEQ21<class_AudioEffectEQ21>` non sono adatti alle tue esigenze.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-An "equalizer" gives you control over the gain of frequencies in the entire spectrum, by allowing their adjustment through bands. A band is a point in the frequency spectrum, and each band means a division of the spectrum that can be adjusted.
+Un "equalizzatore" dà il controllo sul guadagno frequenze nell'intero spettro, consentendo di regolarlo tramite bande. Una banda è un punto nello spettro di frequenza e ogni banda rappresenta una suddivisione dello spettro che può essere regolata.
 
-Use equalizers to compensate for existing deficiencies in the audio, make room for other elements, or remove undesirable frequencies. AudioEffectEQs are useful on the Master bus to balance the entire mix or give it more character. They are also useful when a game is run on a mobile device, to adjust the mix to that kind of speakers (it can be disabled when headphones are plugged in).
+Gli equalizzatori servono per compensare eventuali carenze nell'audio, a dare spazio ad altre cose, o rimuovere frequenze indesiderate. Gli AudioEffectEQ sono utili sul bus Master per bilanciare l'intero mix e dargli più carattere. Sono anche utili quando un gioco è eseguito su un dispositivo mobile, per adattare il mix a quel tipo di altoparlanti (si può disabilitare quando le cuffie sono collegate).
 
 .. rst-class:: classref-introduction-group
 
@@ -29,7 +29,7 @@ Tutorial
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effetti audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -92,7 +92,7 @@ Imposta il guadagno della banda all'indice specificato, in dB.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

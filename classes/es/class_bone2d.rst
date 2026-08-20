@@ -18,7 +18,7 @@ Puedes usar una jerarquía de **Bone2D** unida a un :ref:`Skeleton2D<class_Skele
 
 Puedes usar nodos **Bone2D** y :ref:`Skeleton2D<class_Skeleton2D>` para animar mallas 2D creadas con el editor UV de :ref:`Polygon2D<class_Polygon2D>`.
 
-Cada hueso tiene una transformación :ref:`rest<class_Bone2D_property_rest>` a la que puedes restablecer con :ref:`apply_rest()<class_Bone2D_method_apply_rest>`. Estas poses de reposo son relativas al padre del hueso.
+Cada hueso tiene una transformación :ref:`rest<class_Bone2D_property_rest>` a la que puedes restablecer con :ref:`apply_rest()<class_Bone2D_method_apply_rest>`. Estas poses de reposo son relativas al antecesor del hueso.
 
 Si estás en el editor, puedes establecer la pose de reposo de un esqueleto entero usando una opción del menú, desde el código, necesitas iterar sobre los huesos para establecer sus poses de reposo individuales.
 
@@ -161,7 +161,7 @@ Devuelve la longitud del hueso en el nodo **Bone2D**.
 
 :ref:`Transform2D<class_Transform2D>` **get_skeleton_rest**\ (\ ) |const| :ref:`🔗<class_Bone2D_method_get_skeleton_rest>`
 
-Devuelve el :ref:`rest<class_Bone2D_property_rest>` :ref:`Transform2D<class_Transform2D>` del nodo si no tiene un padre, o su pose de reposo relativa a su padre.
+Devuelve el :ref:`rest<class_Bone2D_property_rest>` :ref:`Transform2D<class_Transform2D>` del nodo si no tiene un padre, o su pose de reposo relativa a su antecesor.
 
 .. rst-class:: classref-item-separator
 

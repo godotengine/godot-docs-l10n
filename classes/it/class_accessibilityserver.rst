@@ -7,7 +7,7 @@ AccessibilityServer
 
 **Eredita:** :ref:`Object<class_Object>`
 
-A server interface for screen reader support.
+Un'interfaccia server per supportare i lettori dello schermo.
 
 .. rst-class:: classref-reftable-group
 
@@ -558,7 +558,7 @@ Elemento suggerimento.
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_REGION** = ``46``
 
-Region/landmark element. Screen readers can navigate between regions using landmark navigation.
+Elemento regione/punto di riferimento. I lettori dello schermo possono navigare tra le regioni attraverso la navigazione tramite landmark.
 
 .. _class_AccessibilityServer_constant_ROLE_TEXT_RUN:
 
@@ -566,9 +566,9 @@ Region/landmark element. Screen readers can navigate between regions using landm
 
 :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>` **ROLE_TEXT_RUN** = ``47``
 
-Unifor text run.
+Sequenza di testo uniforme.
 
-Note: This role is used for internal text elements, and should not be assigned to nodes.
+Nota: questo ruolo serve per gli elementi interni di testo e non si dovrebbe assegnare ai nodi.
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,7 @@ L'elemento è nascosto per gli strumenti di accessibilità.
 
 :ref:`AccessibilityFlags<enum_AccessibilityServer_AccessibilityFlags>` **FLAG_MULTISELECTABLE** = ``1``
 
-Element supports multiple item selection.
+L'elemento supporta la selezione di più elementi.
 
 .. _class_AccessibilityServer_constant_FLAG_REQUIRED:
 
@@ -1051,7 +1051,7 @@ Crea una nuova risorsa vuota per gli elementi di accessibilità.
 
 :ref:`RID<class_RID>` **create_sub_element**\ (\ parent_rid\: :ref:`RID<class_RID>`, role\: :ref:`AccessibilityRole<enum_AccessibilityServer_AccessibilityRole>`, insert_pos\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AccessibilityServer_method_create_sub_element>`
 
-Creates a new, empty accessibility sub-element resource. Sub-elements can be used to provide accessibility information for objects which are not :ref:`Node<class_Node>`\ s, such as list items, table cells, or menu items. Sub-elements are freed automatically when the parent element is freed, or can be freed early using the :ref:`free_element()<class_AccessibilityServer_method_free_element>` method.
+Crea una nuova risorsa vuota per i sotto-elementi di accessibilità. I sotto-elementi si possono utilizzare per fornire informazioni di accessibilità per oggetti che non sono :ref:`Node<class_Node>`, come voci di un elenco, celle di una tabella o voci di un menu. I sotto-elementi vengono liberati automaticamente quando l'elemento padre viene liberato, oppure si possono liberare in anticipo attraverso il metodo :ref:`free_element()<class_AccessibilityServer_method_free_element>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1077,7 +1077,7 @@ Se ``is_last_line`` è impostato su ``true``, non viene aggiunta alcuna nuova ri
 
 :ref:`Variant<class_Variant>` **element_get_meta**\ (\ id\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_AccessibilityServer_method_element_get_meta>`
 
-Returns the metadata of the accessibility element ``id``.
+Restituisce i metadati dell'elemento di accessibilità ``id``.
 
 .. rst-class:: classref-item-separator
 
@@ -1089,7 +1089,7 @@ Returns the metadata of the accessibility element ``id``.
 
 |void| **element_set_meta**\ (\ id\: :ref:`RID<class_RID>`, meta\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_AccessibilityServer_method_element_set_meta>`
 
-Sets the metadata of the accessibility element ``id`` to ``meta``.
+Imposta i metadati dell'elemento di accessibilità ``id`` su ``meta``.
 
 .. rst-class:: classref-item-separator
 
@@ -1101,7 +1101,7 @@ Sets the metadata of the accessibility element ``id`` to ``meta``.
 
 |void| **free_element**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_AccessibilityServer_method_free_element>`
 
-Frees the accessibility element ``id`` created by :ref:`create_element()<class_AccessibilityServer_method_create_element>`, :ref:`create_sub_element()<class_AccessibilityServer_method_create_sub_element>`, or :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`.
+Libera l'elemento di accessibilità ``id`` creato da :ref:`create_element()<class_AccessibilityServer_method_create_element>`, :ref:`create_sub_element()<class_AccessibilityServer_method_create_sub_element>` o :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1137,7 +1137,7 @@ Restituisce ``true`` se ``id`` è un elemento di accessibilità valido.
 
 :ref:`bool<class_bool>` **is_supported**\ (\ ) |const| :ref:`🔗<class_AccessibilityServer_method_is_supported>`
 
-Returns ``true`` if screen reader is support by this implementation.
+Restituisce ``true`` se il lettore dello schermo è supportato da questa implementazione.
 
 .. rst-class:: classref-item-separator
 
@@ -1329,7 +1329,7 @@ Restituisce la bounding box dell'elemento, relativa alla posizione del nodo.
 
 |void| **update_set_braille_label**\ (\ id\: :ref:`RID<class_RID>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_braille_label>`
 
-Sets element accessibility label for Braille display.
+Imposta l'etichetta dell'elemento di accessibilità per i display Braille.
 
 .. rst-class:: classref-item-separator
 
@@ -1341,7 +1341,7 @@ Sets element accessibility label for Braille display.
 
 |void| **update_set_braille_role_description**\ (\ id\: :ref:`RID<class_RID>`, description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_braille_role_description>`
 
-Sets element accessibility role description for Braille display.
+Imposta la descrizione del ruolo dell'elemento di accessibilità per i display Braille.
 
 .. rst-class:: classref-item-separator
 
@@ -1893,7 +1893,7 @@ Imposta l'orientazione del testo.
 
 |void| **update_set_text_selection**\ (\ id\: :ref:`RID<class_RID>`, text_start_id\: :ref:`RID<class_RID>`, start_char\: :ref:`int<class_int>`, text_end_id\: :ref:`RID<class_RID>`, end_char\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AccessibilityServer_method_update_set_text_selection>`
 
-Sets text selection to the text field. ``text_start_id`` and ``text_end_id`` should be elements created by :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`. Character offsets are relative to the corresponding element.
+Imposta la selezione del testo sul campo di testo. ``text_start_id`` e ``text_end_id`` devono essere elementi creati da :ref:`create_sub_text_edit_elements()<class_AccessibilityServer_method_create_sub_text_edit_elements>`. Gli offset dei caratteri sono relativi all'elemento corrispondente.
 
 .. rst-class:: classref-item-separator
 
@@ -1947,7 +1947,7 @@ Imposta il valore del testo dell'elemento.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

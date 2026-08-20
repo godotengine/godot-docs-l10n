@@ -12,13 +12,13 @@ RID
 Описание
 ----------------
 
-The RID :ref:`Variant<class_Variant>` type is used to access a low-level resource by its unique ID. RIDs are opaque, which means they do not grant access to the resource by themselves. They are used by the low-level server classes, such as :ref:`DisplayServer<class_DisplayServer>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`TextServer<class_TextServer>`, etc.
+Тип RID :ref:`Variant<class_Variant>` используется для доступа к низкоуровневому ресурсу по его уникальному идентификатору. RID непрозрачны, то есть сами по себе не предоставляют доступ к ресурсу. Они используются низкоуровневыми серверными классами, такими как :ref:`DisplayServer<class_DisplayServer>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`TextServer<class_TextServer>` и т. д.
 
-A low-level resource may correspond to a high-level :ref:`Resource<class_Resource>`, such as :ref:`Texture<class_Texture>` or :ref:`Mesh<class_Mesh>`.
+Низкоуровневый ресурс может соответствовать высокоуровневому :ref:`Resource<class_Resource>`, такому как :ref:`Texture<class_Texture>` или :ref:`Mesh<class_Mesh>`.
 
-\ **Note:** RIDs are only useful during the current session. It won't correspond to a similar resource if sent over a network, or loaded from a file at a later time.
+\ **Примечание:** RID полезны только во время текущего сеанса. Они не будут соответствовать похожему ресурсу, если будут отправлены по сети или загружены из файла позднее.
 
-\ **Note:** In a boolean context, an RID will evaluate to ``false`` if it has the invalid ID ``0``. Otherwise, an RID will always evaluate to ``true``. This is equivalent to calling :ref:`is_valid()<class_RID_method_is_valid>`.
+\ **Примечание:** В логическом контексте RID будет оцениваться как ``false``, если он имеет недействительный идентификатор ``0``. В противном случае RID всегда будет оцениваться как ``true``. Это эквивалентно вызову :ref:`is_valid()<class_RID_method_is_valid>`.
 
 .. note::
 

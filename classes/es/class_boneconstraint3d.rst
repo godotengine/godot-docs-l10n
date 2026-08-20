@@ -95,7 +95,7 @@ El objetivo de referencia es un hueso. En este caso, el espacio del objetivo de 
 
 El objetivo de referencia es un :ref:`Node3D<class_Node3D>`. En este caso, el espacio del objetivo de referencia es el espacio del modelo.
 
-En otras palabras, las coordenadas del objetivo de referencia se tratan como si estuviera ubicado directamente debajo de :ref:`Skeleton3D<class_Skeleton3D>`, que a su vez es padre de **BoneConstraint3D**.
+En otras palabras, las coordenadas del objetivo de referencia se tratan como si estuviera ubicado directamente debajo de :ref:`Skeleton3D<class_Skeleton3D>`, que a su vez es antecesor del **BoneConstraint3D**.
 
 .. rst-class:: classref-section-separator
 

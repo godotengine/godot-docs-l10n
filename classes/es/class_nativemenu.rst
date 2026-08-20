@@ -756,9 +756,9 @@ Devuelve el texto del elemento en el índice ``idx``.
 
 :ref:`String<class_String>` **get_item_tooltip**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_tooltip>`
 
-Returns the tooltip associated with the specified index ``idx``.
+Devuelve la información emergente asociada al índice especificado ``idx``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 

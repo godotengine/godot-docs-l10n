@@ -7,9 +7,9 @@ AudioEffectHardLimiter
 
 **Hérite de :** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a limiter audio effect to an audio bus.
+Ajoute un effet audio de limiteur à un bus audio.
 
-Prevents audio signals from exceeding a specified volume level.
+Empêche les signaux audio de dépasser un niveau sonore spécifique.
 
 .. rst-class:: classref-introduction-group
 

@@ -93,7 +93,7 @@ Descrizioni delle proprietà
 - |void| **set_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bias**\ (\ )
 
-Il bias di normali da utilizzare per l'illuminazione e i riflessi indiretti. I valori più elevati riducono le autoriflessioni visibili nei materiali non rugosi, al costo di penetrazione della luce più visibile e di un'illuminazione indiretta più piatta. Se si preferisce nascondere l'autoriflessione piuttosto che mantenere qualità dell'illuminazione, imposta :ref:`bias<class_VoxelGIData_property_bias>` a ``0.0`` e :ref:`normal_bias<class_VoxelGIData_property_normal_bias>` a un valore tra ``1.0`` e ``2.0``.
+Il bias di normali da utilizzare per l'illuminazione e i riflessi indiretti. I valori più elevati riducono le autoriflessioni visibili nei materiali non rugosi, al costo di penetrazione della luce più visibile e di un'illuminazione indiretta dall'aspetto più piatto. Se si preferisce nascondere l'autoriflessione piuttosto che mantenere qualità dell'illuminazione, imposta :ref:`bias<class_VoxelGIData_property_bias>` a ``0.0`` e :ref:`normal_bias<class_VoxelGIData_property_normal_bias>` a un valore tra ``1.0`` e ``2.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ Se ``true``, l'illuminazione dell':ref:`Environment<class_Environment>` è ignor
 - |void| **set_normal_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_normal_bias**\ (\ )
 
-Il bias di normali da utilizzare per l'illuminazione e i riflessi indiretti. I valori più elevati riducono le autoriflessioni visibili nei materiali non rugosi, al costo di penetrazione della luce più visibile e di un'illuminazione indiretta più piatta. Vedi anche :ref:`bias<class_VoxelGIData_property_bias>`. Se si preferisce nascondere l'autoriflessione piuttosto che mantenere qualità dell'illuminazione, imposta :ref:`bias<class_VoxelGIData_property_bias>` a ``0.0`` e :ref:`normal_bias<class_VoxelGIData_property_normal_bias>` a un valore tra ``1.0`` e ``2.0``.
+Il bias di normali da utilizzare per l'illuminazione e i riflessi indiretti. Valori più alti riducono gli auto-riflessi, visibili nei materiali non ruvidi, a costo di perdite di luce più evidenti e di un'illuminazione indiretta dall'aspetto più piatto. Vedi anche :ref:`bias<class_VoxelGIData_property_bias>`. Se preferisci nascondere gli auto-riflessi piuttosto che mantenere la qualità dell'illuminazione, imposta :ref:`bias<class_VoxelGIData_property_bias>` a ``0.0`` e :ref:`normal_bias<class_VoxelGIData_property_normal_bias>` su un valore compreso tra ``1.0`` e ``2.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Restituisce i dati precalcolati delle celle per questo **VoxelGIData**.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_level_counts**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_level_counts>`
 
-Returns the baked level counts for this **VoxelGIData**.
+Restituisce il numero dei livelli precalcolati per questo **VoxelGIData**.
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ Restituisce la trasformazione delle celle precalcolate per questo **VoxelGIData*
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

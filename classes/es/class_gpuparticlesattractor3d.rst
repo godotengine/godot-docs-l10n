@@ -79,11 +79,11 @@ La atenuación del atractor de partículas. Los valores más altos dan como resu
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-Las capas de renderizado de partículas (:ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`) que se verán afectadas por el atractor. De forma predeterminada, todas las partículas se ven afectadas por un atractor.
+The particle rendering layers (:ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`) that will be affected by the attractor. By default, all particles are affected by an attractor.
 
-Después de configurar los nodos de partículas de forma acorde, se pueden desmarcar capas específicas para evitar que ciertas partículas se vean afectadas por los atractores. Por ejemplo, esto se puede usar si estás usando un atractor como parte de un efecto de hechizo pero no quieres que el atractor afecte a partículas climáticas no relacionadas en la misma posición.
+After configuring particle nodes accordingly, specific layers can be unchecked to prevent certain particles from being affected by attractors. For example, this can be used if you're using an attractor as part of a spell effect but don't want the attractor to affect unrelated weather particles at the same position.
 
-La atracción de partículas también se puede desactivar por material de proceso estableciendo :ref:`ParticleProcessMaterial.attractor_interaction_enabled<class_ParticleProcessMaterial_property_attractor_interaction_enabled>` en el nodo :ref:`GPUParticles3D<class_GPUParticles3D>`.
+Particle attraction can also be disabled on a per-process material basis by setting :ref:`ParticleProcessMaterial.attractor_interaction_enabled<class_ParticleProcessMaterial_property_attractor_interaction_enabled>` on the :ref:`GPUParticles3D<class_GPUParticles3D>` node.
 
 .. rst-class:: classref-item-separator
 

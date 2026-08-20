@@ -14,7 +14,7 @@ Clase de reproducción utilizada para :ref:`AudioStreamPlaylist<class_AudioStrea
 Descripción
 ----------------------
 
-Playback component of :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`. Handles the playback of multiple :ref:`AudioStream<class_AudioStream>`\ s in sequence.
+Componente de reproducción de :ref:`AudioStreamPlaylist<class_AudioStreamPlaylist>`. Se encarga de la reproducción de varios :ref:`AudioStream<class_AudioStream>` en secuencia.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

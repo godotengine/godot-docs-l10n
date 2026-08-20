@@ -73,7 +73,7 @@ Se ``true``, sottrae il rimbalzo dal rimbalzo dell'oggetto in collisione invece 
 
 Il rimbalzo del corpo. I valori variano da ``0`` (nessun rimbalzo) a ``1`` (rimbalzo totale).
 
-\ **Nota:** Anche con :ref:`bounce<class_PhysicsMaterial_property_bounce>` impostato su ``1.0``, parte dell'energia sarà persa nel tempo a causa dello smorzamento lineare e angolare. Per avere un corpo fisico che conserva tutta la sua energia nel tempo, sul imposta :ref:`bounce<class_PhysicsMaterial_property_bounce>` su ``1.0``, la modalità di smorzamento lineare del corpo su **Override** (se applicabile), il suo smorzamento lineare su ``0.0``, la sua modalità di smorzamento angolare su **Override** (se applicabile) e il suo smorzamento angolare su ``0.0``.
+\ **Nota:** Anche con :ref:`bounce<class_PhysicsMaterial_property_bounce>` impostato su ``1.0``, parte dell'energia sarà persa nel tempo a causa dello smorzamento lineare e angolare. Per avere un corpo fisico che conserva tutta la sua energia nel tempo, imposta :ref:`bounce<class_PhysicsMaterial_property_bounce>` su ``1.0``, la modalità di smorzamento lineare del corpo su **Override** (se applicabile), il suo smorzamento lineare su ``0.0``, la sua modalità di smorzamento angolare su **Override** (se applicabile) e il suo smorzamento angolare su ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Se ``true``, il motore della fisica userà l'attrito dell'oggetto contrassegnato
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

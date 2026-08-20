@@ -9,14 +9,14 @@ StyleBox
 
 **Ereditato da:** :ref:`StyleBoxEmpty<class_StyleBoxEmpty>`, :ref:`StyleBoxFlat<class_StyleBoxFlat>`, :ref:`StyleBoxLine<class_StyleBoxLine>`, :ref:`StyleBoxTexture<class_StyleBoxTexture>`
 
-Classe di base astratta per definire box stilizzati per gli elementi dell'interfaccia utente.
+Classe base astratta per definire box stilizzati per gli elementi dell'interfaccia utente.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-**StyleBox** è una classe di base astratta per disegnare box stilizzati per elementi UI. È utilizzata per i pannelli, i pulsanti, gli sfondi dei :ref:`LineEdit<class_LineEdit>` e dei :ref:`Tree<class_Tree>`, ecc. e anche per testare una maschera di trasparenza per i segnali del cursore. Se il test della maschera fallisce su uno **StyleBox** assegnato come maschera a un controllo, i clic e i segnali di movimento gli passeranno attraverso per raggiungere il controllo sottostante.
+**StyleBox** è una classe base astratta per disegnare box stilizzati per elementi UI. È utilizzata per i pannelli, i pulsanti, gli sfondi dei :ref:`LineEdit<class_LineEdit>` e dei :ref:`Tree<class_Tree>`, ecc. e anche per testare una maschera di trasparenza per i segnali del cursore. Se il test della maschera fallisce su uno **StyleBox** assegnato come maschera a un controllo, i clic e i segnali di movimento gli passeranno attraverso per raggiungere il controllo sottostante.
 
 \ **Nota:** Per i nodi di controllo che hanno *Proprietà del tema*, lo **StyleBox** ``focus`` viene visualizzato sopra lo **StyleBox** ``normal``, ``hover`` o ``pressed``. Ciò rende lo **StyleBox** ``focus`` più riutilizzabile su nodi diversi.
 
@@ -334,7 +334,7 @@ Testa una posizione in un rettangolo, restituisce se supera il test della masche
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

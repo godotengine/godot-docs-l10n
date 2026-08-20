@@ -631,7 +631,7 @@ Percorso alla cartella di compilazione di Gradle. Se lasciato vuoto, verrà util
 
 :ref:`String<class_String>` **gradle_build/min_sdk** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/min_sdk>`
 
-Livello API Android minimo richiesto per l'esecuzione dell'applicazione (utilizzato durante la compilazione Gradle). Consulta `android:minSdkVersion <https://developer.android.com/guide/topics/manifest/uses-sdk-element#uses>`__.
+Livello API Android minimo richiesto per eseguire l'applicazione (utilizzato durante la compilazione Gradle). Consulta `android:minSdkVersion <https://developer.android.com/guide/topics/manifest/uses-sdk-element#uses>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -643,7 +643,7 @@ Livello API Android minimo richiesto per l'esecuzione dell'applicazione (utilizz
 
 :ref:`String<class_String>` **gradle_build/target_sdk** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/target_sdk>`
 
-Livello API Android su cui è progettata l'applicazione per essere eseguita (utilizzato durante la compilazione Gradle). Consulta `android:targetSdkVersion <https://developer.android.com/guide/topics/manifest/uses-sdk-element#uses>`__.
+Livello API Android su cui è progettata l'applicazione per eseguirla (utilizzato durante la compilazione Gradle). Consulta `android:targetSdkVersion <https://developer.android.com/guide/topics/manifest/uses-sdk-element#uses>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1835,7 +1835,7 @@ Consente a un'applicazione un ampio accesso all'archiviazione esterna in un arch
 
 :ref:`bool<class_bool>` **permissions/manage_media** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/manage_media>`
 
-Allows an application to modify and delete media files on this device or any connected storage device without user confirmation. Applications must already be granted the ``READ_EXTERNAL_STORAGE`` or ``MANAGE_EXTERNAL_STORAGE`` permissions for this permission to take effect. See `MANAGE_MEDIA <https://developer.android.com/reference/android/Manifest.permission#MANAGE_MEDIA>`__.
+Consente a un'applicazione di modificare ed eliminare i file multimediali su questo dispositivo o su qualsiasi dispositivo di archiviazione collegato, senza la conferma dell'utente. Le applicazioni devono già avere i permessi ``READ_EXTERNAL_STORAGE`` o ``MANAGE_EXTERNAL_STORAGE`` affinché questo permesso abbia effetto. Consulta `MANAGE_MEDIA <https://developer.android.com/reference/android/Manifest.permission#MANAGE_MEDIA>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2381,7 +2381,7 @@ Configura un'applicazione per il debug. Consulta `SET_DEBUG_APP <https://develop
 
 :ref:`bool<class_bool>` **permissions/set_orientation** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_orientation>`
 
-Consente l'accesso di basso livello all'impostazione dell'orientamento (in realtà della rotazione) dello schermo.
+Consente l'accesso di basso livello per impostare l'orientamento (in realtà della rotazione) dello schermo.
 
 .. rst-class:: classref-item-separator
 
@@ -2417,7 +2417,7 @@ Consente l'accesso di basso livello all'impostazione della velocità del puntato
 
 :ref:`bool<class_bool>` **permissions/set_process_limit** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/set_process_limit>`
 
-Consente a un'applicazione di impostare il numero massimo di processi dell'applicazione (non necessari) che possono essere in esecuzione. Vedere `SET_PROCESS_LIMIT <https://developer.android.com/reference/android/Manifest.permission#SET_PROCESS_LIMIT>`__.
+Consente a un'applicazione di impostare il numero massimo di processi dell'applicazione (non necessari) che possono essere in esecuzione. Vedi `SET_PROCESS_LIMIT <https://developer.android.com/reference/android/Manifest.permission#SET_PROCESS_LIMIT>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2801,7 +2801,7 @@ Il colore di sfondo utilizzato per la finestra principale. Predefinito su :ref:`
 
 :ref:`bool<class_bool>` **screen/edge_to_edge** :ref:`🔗<class_EditorExportPlatformAndroid_property_screen/edge_to_edge>`
 
-Se ``true``, le barre di navigazione e di stato diventano trasparenti e il contenuto dell'applicazione si estende da un bordo all'altro.
+Se ``true``, le barre di navigazione e di stato diventano traslucide e il contenuto dell'applicazione si estende da un bordo all'altro.
 
 \ **Nota:** È necessario assicurarsi che nessuno dei contenuti dell'applicazione sia nascosto da elementi di sistema utilizzando i metodi :ref:`DisplayServer.get_display_safe_area()<class_DisplayServer_method_get_display_safe_area>` e :ref:`DisplayServer.get_display_cutouts()<class_DisplayServer_method_get_display_cutouts>`.
 
@@ -2905,9 +2905,9 @@ Se non impostato, sarà utilizzato :ref:`launcher_icons/adaptive_background_432x
 
 :ref:`String<class_String>` **splash_screen/branding_image** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/branding_image>`
 
-System splash screen branding image file. If left empty, no branding image will be used. See `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
+File immagine di branding per la schermata di avvio di sistema. Se lasciato vuoto, nessuna immagine di branding sarà utilizzata. Consulta `dimensioni della schermata di avvio <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
 
-\ **Note:** Can be used to set an image to be shown at the bottom of the splash screen.
+\ **Nota:** Può servire per impostare un'immagine da mostrare in fondo alla schermata di avvio.
 
 .. rst-class:: classref-item-separator
 
@@ -2919,7 +2919,7 @@ System splash screen branding image file. If left empty, no branding image will 
 
 :ref:`bool<class_bool>` **splash_screen/disable_godot_boot_splash** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/disable_godot_boot_splash>`
 
-If ``true``, Godot's boot splash will not be shown, and the system boot splash will remain visible for a longer time, until the mainloop starts.
+Se ``true``, la schermata di avvio di Godot non verrà mostrata e la schermata di avvio del sistema rimarrà visibile più a lungo, fino all'avvio del ciclo principale.
 
 .. rst-class:: classref-item-separator
 
@@ -2931,9 +2931,9 @@ If ``true``, Godot's boot splash will not be shown, and the system boot splash w
 
 :ref:`String<class_String>` **splash_screen/icon** :ref:`🔗<class_EditorExportPlatformAndroid_property_splash_screen/icon>`
 
-System splash screen icon file. If left empty, it will fall back to :ref:`launcher_icons/adaptive_foreground_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_foreground_432x432>`. See `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
+File dell'icona della schermata di avvio del sistema. Se lasciato vuoto, ricorrerà a :ref:`launcher_icons/adaptive_foreground_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_foreground_432x432>`. Vedi `splash-screen dimensions <https://developer.android.com/develop/ui/views/launch/splash-screen#dimensions>`__.
 
-\ **Note:** You can provide an `AnimatedVectorDrawable (AVD) <https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable>`__ XML. However, the XML file will only be used if :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` is enabled. If not, it will fall back to :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
+\ **Nota:** È possibile fornire un file XML `AnimatedVectorDrawable (AVD) <https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable>`__. Tuttavia, il file XML sarà utilizzato solo se :ref:`gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` è abilitato. Se no, ricorrerà a :ref:`launcher_icons/adaptive_background_432x432<class_EditorExportPlatformAndroid_property_launcher_icons/adaptive_background_432x432>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2987,7 +2987,7 @@ Modalità di realtà estesa (XR) per questa applicazione.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

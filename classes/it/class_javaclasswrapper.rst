@@ -70,9 +70,9 @@ Descrizioni dei metodi
 
 :ref:`JavaObject<class_JavaObject>` **create_proxy**\ (\ object\: :ref:`Object<class_Object>`, interfaces\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_JavaClassWrapper_method_create_proxy>`
 
-Creates a :ref:`JavaObject<class_JavaObject>` implementing the given Java interfaces using the given :ref:`Object<class_Object>` as the implementation.
+Crea un :ref:`JavaObject<class_JavaObject>` che implementa le interfacce Java specificate, utilizzando l':ref:`Object<class_Object>` fornito come implementazione.
 
-The ``object`` must contain methods signatures matching the methods signatures from the passed Java ``interfaces``. Invoking methods from the Java ``interfaces`` will route to the matching ``object`` method.
+\ ``object`` deve contenere firme di metodi corrispondenti alle firme dei metodi delle ``interfaces`` Java passate. L'invocazione dei metodi dalle ``interfaces`` Java indirizzerà al metodo corrispondente dell'``object``.
 
 ::
 
@@ -84,7 +84,7 @@ The ``object`` must contain methods signatures matching the methods signatures f
     var printer_object = JavaClassWrapper.create_proxy(print_proxy, ["android.util.Printer"])
     printer_object.println("Hello Godot World!")
 
-\ **Note:** This method only works on Android. On every other platform, this method will always return ``null``.
+\ **Nota:** Questo metodo funziona solo su Android. Su tutte le altre piattaforme, questo metodo restituirà sempre ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -96,11 +96,11 @@ The ``object`` must contain methods signatures matching the methods signatures f
 
 :ref:`JavaObject<class_JavaObject>` **create_sam_callback**\ (\ sam_interface\: :ref:`String<class_String>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_JavaClassWrapper_method_create_sam_callback>`
 
-Creates a :ref:`JavaObject<class_JavaObject>` implementing the Java Single Abstract Method (SAM) interface using the Godot :ref:`Callable<class_Callable>` as the implementation.
+Crea un :ref:`JavaObject<class_JavaObject>` che implementa l'interfaccia Java Single Abstract Method (SAM) utilizzando il :ref:`Callable<class_Callable>` di Godot come implementazione.
 
-The ``sam_interface`` **must be** a Java SAM interface, meaning it must only have a single abstract method to implement.
+\ ``sam_interface`` **deve essere** un'interfaccia Java SAM, ovvero deve avere un solo metodo astratto da implementare.
 
-The ``callable`` must be able to handle the same parameter types as the SAM interface method, and must provide the same return type. The ``callable`` will be invoked as a callback, passing the arguments from the Java SAM interface method.
+\ ``callable`` deve essere in grado di gestire gli stessi tipi di parametri del metodo dell'interfaccia SAM e deve fornire lo stesso tipo di ritorno. ``callable`` verrà invocato come callback, passando gli argomenti dal metodo dell'interfaccia Java SAM.
 
 ::
 
@@ -109,7 +109,7 @@ The ``callable`` must be able to handle the same parameter types as the SAM inte
     var callback = JavaClassWrapper.create_sam_callback("android.util.Printer", cb)
     callback.println("Hello Godot World!")
 
-\ **Note:** This method only works on Android. On every other platform, this method will always return ``null``.
+\ **Nota:** Questo metodo funziona solo su Android. Su tutte le altre piattaforme, questo metodo restituirà sempre ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ Quando si effettua un wrapping sulle classi interne (annidate), utilizzare ``$``
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

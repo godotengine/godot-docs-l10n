@@ -7,18 +7,18 @@ AudioEffectCapture
 
 **Eredita:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Exposes audio samples from an audio bus in real-time, such that it can be accessed as data.
+Espone i campioni audio da un bus audio in tempo reale, così da poterli accedere come dati.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Copies all audio frames, also known as "samples" or "audio samples", from the attached audio bus into its internal ring buffer. This effect does not alter the audio. Can be used for storing real-time audio data for playback, and for creating real-time audio visualizations, like an oscilloscope.
+Copia tutti i frame audio, noti anche come "campioni" o "campioni audio", dal bus audio associato nel suo buffer circolare interno. Questo effetto non altera l'audio. Si può utilizzare per memorizzare dati audio in tempo reale per la riproduzione e per creare visualizzazioni audio in tempo reale, come un oscilloscopio.
 
-Application code should consume these audio frames from this ring buffer using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` and process it as needed, for example to capture data from an :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, implement application-defined effects, or to transmit audio over the network. When capturing audio data from a microphone, the format of the samples will be stereo 32-bit floating-point PCM.
+Il codice dell'applicazione dovrebbe prelevare questi frame audio da questo buffer circolare usando :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>` ed elaborarli come necessario, ad esempio per catturare i dati da un :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, implementare effetti definiti dall'applicazione o trasmettere audio in rete. Quando si catturano i dati audio da un microfono, il formato dei campioni sarà PCM stereo a virgola mobile a 32 bit.
 
-Unlike :ref:`AudioEffectRecord<class_AudioEffectRecord>`, this effect only returns the raw audio samples instead of encoding them into an :ref:`AudioStream<class_AudioStream>`.
+A differenza di :ref:`AudioEffectRecord<class_AudioEffectRecord>`, questo effetto restituisce solo i campioni audio grezzi invece di codificarli in un :ref:`AudioStream<class_AudioStream>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -102,7 +102,7 @@ Descrizioni dei metodi
 
 :ref:`bool<class_bool>` **can_get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_can_get_buffer>`
 
-Returns ``true`` if at least ``frames`` samples are available to read in the internal ring buffer.
+Restituisce ``true`` se almeno ``frames`` campioni sono disponibili da leggere nel buffer circolare interno.
 
 .. rst-class:: classref-item-separator
 
@@ -128,11 +128,11 @@ Pulisce il buffer circolare interno.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_buffer**\ (\ frames\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioEffectCapture_method_get_buffer>`
 
-Gets the next ``frames`` samples from the internal ring buffer.
+Ottiene i prossimi ``frames`` campioni dal buffer circolare interno.
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` samples if available, or an empty :ref:`PackedVector2Array<class_PackedVector2Array>` if insufficient data was available.
+Restituisce un :ref:`PackedVector2Array<class_PackedVector2Array>` contenente esattamente ``frames`` campioni se disponibili, o un :ref:`PackedVector2Array<class_PackedVector2Array>` vuoto se non erano disponibili abbastanza dati.
 
-The samples are signed floating-point PCM between ``-1`` and ``1``. You will have to scale them if you want to use them as 8 or 16-bit integer samples. (``v = 0x7fff * samples[0].x``)
+I campioni sono valori PCM in virgola mobile con segno tra ``-1`` e ``1``. Dovrai scalarli se vuoi utilizzarli come campioni interi da 8 o 16 bit. (``v = 0x7fff * samples[0].x``)
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ The samples are signed floating-point PCM between ``-1`` and ``1``. You will hav
 
 :ref:`int<class_int>` **get_buffer_length_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_buffer_length_frames>`
 
-Returns the total size of the internal ring buffer in number of samples.
+Restituisce la dimensione totale del buffer circolare interno, in numero di campioni.
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Returns the total size of the internal ring buffer in number of samples.
 
 :ref:`int<class_int>` **get_discarded_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_discarded_frames>`
 
-Returns the number of samples discarded from the audio bus due to full buffer.
+Restituisce il numero di campioni scartati dal bus audio a causa della memoria piena del buffer.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ Returns the number of samples discarded from the audio bus due to full buffer.
 
 :ref:`int<class_int>` **get_frames_available**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_frames_available>`
 
-Returns the number of samples available to read using :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
+Restituisce il numero di campioni disponibili da leggere usando :ref:`get_buffer()<class_AudioEffectCapture_method_get_buffer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -180,13 +180,13 @@ Returns the number of samples available to read using :ref:`get_buffer()<class_A
 
 :ref:`int<class_int>` **get_pushed_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_pushed_frames>`
 
-Returns the number of samples inserted from the audio bus.
+Restituisce il numero di campioni inseriti dal bus audio.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

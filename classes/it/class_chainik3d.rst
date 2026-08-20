@@ -9,7 +9,7 @@ ChainIK3D
 
 **Ereditato da:** :ref:`IterateIK3D<class_IterateIK3D>`, :ref:`SplineIK3D<class_SplineIK3D>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to apply inverse kinematics to bone chains containing an arbitrary number of bones.
+Uno :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` per applicare la cinematica inversa alle catene d'ossa contenenti un numero arbitrario di ossa.
 
 .. rst-class:: classref-introduction-group
 
@@ -91,7 +91,7 @@ Restituisce l'indice dell'osso finale della catena d'ossa.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_get_end_bone_direction>`
 
-Returns the tail direction of the end bone of the bone chain when :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` is ``true``.
+Restituisce la direzione della coda dell'osso finale della catena d'ossa quando :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` is ``true``.
+Restituisce la lunghezza della coda dell'osso finale della catena d'ossa quando :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` è ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Restituisce il nome dell'osso radice della catena d'ossa.
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+Restituisce ``true`` se l'osso finale è prolungato per avere una coda.
 
 .. rst-class:: classref-item-separator
 
@@ -235,9 +235,9 @@ Imposta la lunghezza della coda dell'osso finale della catena d'ossa quando :ref
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ChainIK3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+Imposta il nome dell'osso finale della coda d'ossa.
 
-\ **Note:** The end bone must be the root bone or a child of the root bone. If they are the same, the tail must be extended by :ref:`set_extend_end_bone()<class_ChainIK3D_method_set_extend_end_bone>` to modify the bone.
+\ **Nota:** L'osso finale deve essere l'osso radice o un figlio dell'osso radice. Se sono uguali, la coda deve essere prolungata da :ref:`set_extend_end_bone()<class_ChainIK3D_method_set_extend_end_bone>` per modificare l'osso.
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Imposta il nome dell'osso radice della catena d'ossa.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

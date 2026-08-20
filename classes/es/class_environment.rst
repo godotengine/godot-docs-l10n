@@ -426,7 +426,7 @@ enum **ToneMapper**: :ref:`🔗<enum_Environment_ToneMapper>`
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_LINEAR** = ``0``
 
-No modifica los datos de color, lo que resulta en una curva de mapeo tonal lineal que recorta de forma antinatural los valores brillantes, haciendo que la iluminación brillante se vea quemada. El mapeador tonal más simple y rápido.
+No modifica los datos de color, lo que resulta en una curva de mapeo tonal lineal que recorta de forma antinatural los valores brillantes, haciendo que la iluminación brillante se aparezca quemada. El mapeador tonal más simple y rápido.
 
 .. _class_Environment_constant_TONE_MAPPER_REINHARDT:
 
@@ -518,7 +518,7 @@ Replaces all pixels' color by the glow effect. This can be used to simulate a fu
 
 :ref:`GlowBlendMode<enum_Environment_GlowBlendMode>` **GLOW_BLEND_MODE_MIX** = ``4``
 
-Mixes the glow image with the scene image. Best used with :ref:`glow_bloom<class_Environment_property_glow_bloom>` to avoid darkening the scene.
+Combina la imagen de resplandor con la imagen de la escena. Se recomienda usarlo junto con :ref:`glow_bloom<class_Environment_property_glow_bloom>` para evitar oscurecer la escena.
 
 .. rst-class:: classref-item-separator
 
@@ -536,7 +536,7 @@ enum **FogMode**: :ref:`🔗<enum_Environment_FogMode>`
 
 :ref:`FogMode<enum_Environment_FogMode>` **FOG_MODE_EXPONENTIAL** = ``0``
 
-Use a physically-based fog model defined primarily by fog density.
+Utilice un modelo de niebla basado en principios físicos, definido principalmente por la densidad de la niebla.
 
 .. _class_Environment_constant_FOG_MODE_DEPTH:
 
@@ -544,7 +544,7 @@ Use a physically-based fog model defined primarily by fog density.
 
 :ref:`FogMode<enum_Environment_FogMode>` **FOG_MODE_DEPTH** = ``1``
 
-Use a simple fog model defined by start and end positions and a custom curve. While not physically accurate, this model can be useful when you need more artistic control.
+Utiliza un modelo de niebla sencillo definido por posiciones de inicio y fin y una curva personalizada. Aunque no es físicamente preciso, este modelo puede resultar útil cuando se necesita un mayor control artístico.
 
 .. rst-class:: classref-item-separator
 
@@ -935,7 +935,7 @@ The fog depth's intensity curve. A number of presets are available in the Inspec
 - |void| **set_fog_depth_end**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fog_depth_end**\ (\ )
 
-The fog's depth end distance from the camera. If this value is set to ``0``, it will be equal to the current camera's :ref:`Camera3D.far<class_Camera3D_property_far>` value. Only available when :ref:`fog_mode<class_Environment_property_fog_mode>` is set to :ref:`FOG_MODE_DEPTH<class_Environment_constant_FOG_MODE_DEPTH>`.
+La distancia de profundidad de la niebla con respecto a la cámara. Si este valor se establece en ``0``, será igual al valor :ref:`Camera3D.far<class_Camera3D_property_far>` de la cámara actual. Solo está disponible cuando :ref:`fog_mode<class_Environment_property_fog_mode>` está establecido en :ref:`FOG_MODE_DEPTH<class_Environment_constant_FOG_MODE_DEPTH>`.
 
 .. rst-class:: classref-item-separator
 
@@ -969,7 +969,7 @@ Si es ``true``, se habilitan los efectos de niebla.
 - |void| **set_fog_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fog_height**\ (\ )
 
-The height at which the height fog effect begins.
+La altura a la que comienza el efecto de niebla de altura.
 
 .. rst-class:: classref-item-separator
 
@@ -986,7 +986,7 @@ The height at which the height fog effect begins.
 - |void| **set_fog_height_density**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fog_height_density**\ (\ )
 
-The density used to increase fog as height decreases. To make fog increase as height increases, use a negative value.
+La densidad se utiliza para aumentar la niebla a medida que disminuye la altura. Para hacer que la niebla aumente a medida que aumenta la altura, utilice un valor negativo.
 
 .. rst-class:: classref-item-separator
 
@@ -1020,7 +1020,7 @@ El color de la niebla.
 - |void| **set_fog_light_energy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fog_light_energy**\ (\ )
 
-The fog's brightness. Higher values result in brighter fog.
+El brillo de la niebla. Valores más altos dan lugar a una niebla más brillante.
 
 .. rst-class:: classref-item-separator
 
@@ -1054,9 +1054,9 @@ El modo de niebla.
 - |void| **set_fog_sky_affect**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fog_sky_affect**\ (\ )
 
-The factor to use when affecting the sky with non-volumetric fog. ``1.0`` means that fog can fully obscure the sky. Lower values reduce the impact of fog on sky rendering, with ``0.0`` not affecting sky rendering at all.
+El factor a utilizar al afectar el cielo con niebla no volumétrica. ``1.0`` significa que la niebla puede oscurecer completamente el cielo. Los valores más bajos reducen el impacto de la niebla en la representación del cielo, y ``0.0`` no afecta la representación del cielo en absoluto.
 
-\ **Note:** :ref:`fog_sky_affect<class_Environment_property_fog_sky_affect>` has no visual effect if :ref:`fog_aerial_perspective<class_Environment_property_fog_aerial_perspective>` is ``1.0``.
+\ **Nota:** :ref:`fog_sky_affect<class_Environment_property_fog_sky_affect>` no tiene ningún efecto visual si :ref:`fog_aerial_perspective<class_Environment_property_fog_aerial_perspective>` es ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1073,7 +1073,7 @@ The factor to use when affecting the sky with non-volumetric fog. ``1.0`` means 
 - |void| **set_fog_sun_scatter**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fog_sun_scatter**\ (\ )
 
-If set above ``0.0``, renders the scene's directional light(s) in the fog color depending on the view angle. This can be used to give the impression that the sun is "piercing" through the fog.
+Si se establece un valor superior a ``0.0``, se renderizan las luces direccionales de la escena con el color de la niebla, en función del ángulo de visión. Esto puede utilizarse para dar la impresión de que el sol está "atravesando" la niebla.
 
 .. rst-class:: classref-item-separator
 
@@ -1409,9 +1409,9 @@ When using the :ref:`GLOW_BLEND_MODE_MIX<class_Environment_constant_GLOW_BLEND_M
 - |void| **set_glow_normalized**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_glow_normalized**\ (\ )
 
-If ``true``, glow levels will be normalized so that summed together their intensities equal ``1.0``.
+Si es ``true``, los niveles de resplandor se normalizarán de modo que la suma de sus intensidades sea igual a ``1.0``.
 
-\ **Note:** :ref:`glow_normalized<class_Environment_property_glow_normalized>` has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+\ **Nota:** :ref:`glow_normalized<class_Environment_property_glow_normalized>` no tiene efecto al utilizar el método de renderizado de compatibilidad, ya que este método emplea una implementación de resplandor más sencilla, optimizada para dispositivos de gama baja.
 
 .. rst-class:: classref-item-separator
 

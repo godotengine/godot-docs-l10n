@@ -736,7 +736,7 @@ Per motivi di prestazioni (le collisioni sono tutte elaborate allo stesso tempo)
 
 Restituisce una lista di :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` e :ref:`GridMap<class_GridMap>` intersecanti. Il :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` del corpo in sovrapposizione deve essere parte di :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` per essere rilevato.
 
-Per motivi di prestazioni (le collisioni sono tutte elaborate allo stesso tempo) questa lista viene modificata una sola volta durante la fase di fisica, non subito dopo che gli oggetti sono spostati. Considera utilizzare i segnali invece.
+Per motivi di prestazioni (le collisioni sono tutte elaborate allo stesso tempo) questa lista viene modificata una sola volta durante la fase di fisica, non subito dopo che gli oggetti si spostano. Considera invece di usare i segnali.
 
 \ **Nota:** Godot Physics non consente di riportare le sovrapposizioni con :ref:`SoftBody3D<class_SoftBody3D>`, quindi non restituirà alcun corpo di questo tipo.
 
@@ -766,7 +766,7 @@ Per motivi di prestazioni (le collisioni sono tutte elaborate allo stesso tempo)
 
 Restituisce ``true`` se sta intersecano qualsiasi :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` o :ref:`GridMap<class_GridMap>`, altrimenti restituisce ``false``. Il :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` del corpo in sovrapposizione deve essere parte di :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` per essere rilevato.
 
-Per motivi di prestazioni (le collisioni sono tutte elaborate allo stesso tempo) questa lista viene modificata una sola volta durante la fase di fisica, non subito dopo che gli oggetti sono spostati. Considera utilizzare i segnali invece.
+Per motivi di prestazioni (le collisioni sono tutte elaborate allo stesso tempo) questa lista viene modificata una sola volta durante la fase di fisica, non subito dopo che gli oggetti si spostano. Considera invece di usare i segnali.
 
 \ **Nota:** Godot Physics non consente di riportare le sovrapposizioni con :ref:`SoftBody3D<class_SoftBody3D>`, quindi non considererà alcun corpo di questo tipo.
 
@@ -794,11 +794,11 @@ Restituisce ``true`` se l'**Area3D** indicata interseca o si sovrappone a questa
 
 :ref:`bool<class_bool>` **overlaps_body**\ (\ body\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Area3D_method_overlaps_body>`
 
-Restituisce ``true`` se il corpo di fisica indicato interseca o si sovrappone a questa **Area3D**, altrimenti ``false``.
+Restituisce ``true`` se il corpo fisico specificato interseca o si sovrappone a questa **Area3D**, altrimenti ``false``.
 
-L'argomento ``body`` può essere un'istanza di :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` o :ref:`GridMap<class_GridMap>`. Sebbene i GridMap non siano corpi di fisica, essi registrano i loro tasselli aventi forme di collisione come un corpo di fisica virtuale.
+L'argomento ``body`` può essere un'istanza di :ref:`PhysicsBody3D<class_PhysicsBody3D>`, :ref:`SoftBody3D<class_SoftBody3D>` o :ref:`GridMap<class_GridMap>`. Sebbene i GridMap non siano corpi fisici, essi registrano i loro tasselli aventi forme di collisione come un corpo fisico virtuale.
 
-\ **Nota:** Il risultato di questo test non è immediato dopo aver spostato gli oggetti. Per motivi di prestazioni, la lista delle sovrapposizioni è aggiornato una sola volta per frame e prima della fase fisica. Considera utilizzare i segnali invece.
+\ **Nota:** Il risultato di questo test non è immediato dopo aver spostato gli oggetti. Per motivi di prestazioni, la lista delle sovrapposizioni è aggiornato una sola volta per frame e prima della fase di fisica. Considera invece di usare i segnali.
 
 \ **Nota:** Godot Physics non consente di riportare le sovrapposizioni con :ref:`SoftBody3D<class_SoftBody3D>`, quindi restituirà ``false`` in tali casi.
 
@@ -806,7 +806,7 @@ L'argomento ``body`` può essere un'istanza di :ref:`PhysicsBody3D<class_Physics
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

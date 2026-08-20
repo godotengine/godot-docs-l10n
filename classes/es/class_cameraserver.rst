@@ -91,7 +91,7 @@ Emitida cuando se retira una :ref:`CameraFeed<class_CameraFeed>` (por ejemplo, s
 
 **camera_feeds_updated**\ (\ ) :ref:`🔗<class_CameraServer_signal_camera_feeds_updated>`
 
-Emitted when camera feeds are updated.
+Emitida cuando se actualizan las transmisiones de la cámara.
 
 .. rst-class:: classref-section-separator
 

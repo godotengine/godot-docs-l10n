@@ -450,7 +450,7 @@ Devuelve los nombres de todas las clases disponibles en el motor .
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_inheriters_from_class**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_get_inheriters_from_class>`
 
-Returns the names of all engine classes that directly or indirectly inherit from ``class``.
+Devuelve los nombres de todas las clases del motor que heredan directa o indirectamente de ``class``.
 
 .. rst-class:: classref-item-separator
 

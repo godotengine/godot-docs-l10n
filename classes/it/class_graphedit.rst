@@ -257,7 +257,7 @@ Emesso all'inizio di un trascinamento di collegamento.
 
 **connection_from_empty**\ (\ to_node\: :ref:`StringName<class_StringName>`, to_port\: :ref:`int<class_int>`, release_position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_GraphEdit_signal_connection_from_empty>`
 
-Emesso quando l'utente trascina un collegamento da una porta di ingresso nello spazio vuoto del grafico.
+Emesso quando l'utente trascina un collegamento da una porta di ingresso verso lo spazio vuoto del grafico.
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Emesso al GraphEdit quando si tenta di creare il collegamento tra la porta ``fro
 
 **connection_to_empty**\ (\ from_node\: :ref:`StringName<class_StringName>`, from_port\: :ref:`int<class_int>`, release_position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_GraphEdit_signal_connection_to_empty>`
 
-Emesso quando l'utente trascina un collegamento da una porta di uscita nello spazio vuoto del grafico.
+Emesso quando l'utente trascina un collegamento da una porta di uscita verso lo spazio vuoto del grafico.
 
 .. rst-class:: classref-item-separator
 
@@ -687,7 +687,7 @@ Definisce lo schema di controllo per la panoramica con la rotellina del mouse.
 - |void| **set_right_disconnects**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_right_disconnects_enabled**\ (\ )
 
-Se ``true``, abilita lo scollegamento dei collegamenti esistenti nel GraphEdit trascinando l'estremità destra.
+Se ``true``, permette di scollegare i collegamenti esistenti nel GraphEdit trascinando l'estremità destra.
 
 .. rst-class:: classref-item-separator
 
@@ -874,7 +874,7 @@ Se ``true``, l'aggancio è abilitato.
 - |void| **set_type_names**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_type_names**\ (\ )
 
-:ref:`Dictionary<class_Dictionary>` of human-readable port type names.
+:ref:`Dictionary<class_Dictionary>` di nomi di tipi di porte leggibili in chiaro.
 
 .. rst-class:: classref-item-separator
 
@@ -1052,7 +1052,7 @@ In questo esempio, un collegamento allo stesso nodo viene soppresso:
 
 |void| **add_valid_connection_type**\ (\ from_type\: :ref:`int<class_int>`, to_type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_add_valid_connection_type>`
 
-Permette il collegamento tra due diversi tipi di porta. Il tipo di porta è definito individualmente per la porta sinistra e quella destra di ogni slot con il metodo :ref:`GraphNode.set_slot()<class_GraphNode_method_set_slot>`.
+Permette il collegamento tra due diversi tipi di porta. Il tipo di porta è definito individualmente per la porta sinistra e destra di ogni slot con il metodo :ref:`GraphNode.set_slot()<class_GraphNode_method_set_slot>`.
 
 Vedi anche :ref:`is_valid_connection_type()<class_GraphEdit_method_is_valid_connection_type>` e :ref:`remove_valid_connection_type()<class_GraphEdit_method_remove_valid_connection_type>`.
 
@@ -1066,7 +1066,7 @@ Vedi anche :ref:`is_valid_connection_type()<class_GraphEdit_method_is_valid_conn
 
 |void| **add_valid_left_disconnect_type**\ (\ type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_add_valid_left_disconnect_type>`
 
-Consente di disconnettere i nodi quando si trascina dalla porta sinistra dello slot del :ref:`GraphNode<class_GraphNode>` se ha il tipo specificato. Vedi anche :ref:`remove_valid_left_disconnect_type()<class_GraphEdit_method_remove_valid_left_disconnect_type>`.
+Permette di scollegare nodi quando si trascina dalla porta sinistra dello slot del :ref:`GraphNode<class_GraphNode>` se ha il tipo specificato. Vedi anche :ref:`remove_valid_left_disconnect_type()<class_GraphEdit_method_remove_valid_left_disconnect_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1078,7 +1078,7 @@ Consente di disconnettere i nodi quando si trascina dalla porta sinistra dello s
 
 |void| **add_valid_right_disconnect_type**\ (\ type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_add_valid_right_disconnect_type>`
 
-Consente di disconnettere i nodi quando si trascina dalla porta destra dello slot del :ref:`GraphNode<class_GraphNode>` se ha il tipo specificato. Vedi anche :ref:`remove_valid_right_disconnect_type()<class_GraphEdit_method_remove_valid_right_disconnect_type>`.
+Permette di scollegare nodi quando si trascina dalla porta destra dello slot del :ref:`GraphNode<class_GraphNode>` se ha il tipo specificato. Vedi anche :ref:`remove_valid_right_disconnect_type()<class_GraphEdit_method_remove_valid_right_disconnect_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1166,7 +1166,7 @@ Rimuove un collegamento tra la porta ``from_port`` del nodo :ref:`GraphNode<clas
 
 Termina la creazione del collegamento attuale. In altre parole, se si sta trascinando un collegamento è possibile usare questo metodo per interrompere il processo e rimuovere la linea che seguiva il cursore.
 
-È meglio usarlo insieme a :ref:`connection_drag_started<class_GraphEdit_signal_connection_drag_started>` e :ref:`connection_drag_ended<class_GraphEdit_signal_connection_drag_ended>` per implementare un comportamento personalizzato come l'aggiunta di nodi attraverso scorciatoie.
+È meglio usarlo insieme a :ref:`connection_drag_started<class_GraphEdit_signal_connection_drag_started>` e :ref:`connection_drag_ended<class_GraphEdit_signal_connection_drag_ended>` per implementare un comportamento personalizzato, come aggiungere nodi tramite scorciatoie.
 
 \ **Nota:** Questo metodo sopprime qualsiasi altro segnale di richiesta di collegamento tranne :ref:`connection_drag_ended<class_GraphEdit_signal_connection_drag_ended>`.
 
@@ -1296,7 +1296,7 @@ Un collegamento è rappresentata come un :ref:`Dictionary<class_Dictionary>` nel
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_connections_intersecting_with_rect**\ (\ rect\: :ref:`Rect2<class_Rect2>`\ ) |const| :ref:`🔗<class_GraphEdit_method_get_connections_intersecting_with_rect>`
 
-Restituisce un :ref:`Array<class_Array>` contenente la lista dei collegamenti che intersecano il :ref:`Rect2<class_Rect2>` fornito.
+Restituisce un :ref:`Array<class_Array>` contenente una lista di collegamenti che intersecano il :ref:`Rect2<class_Rect2>` fornito.
 
 Un collegamento è rappresentato come :ref:`Dictionary<class_Dictionary>` nel formato:
 
@@ -1386,7 +1386,7 @@ Vedi anche :ref:`is_valid_connection_type()<class_GraphEdit_method_is_valid_conn
 
 |void| **remove_valid_left_disconnect_type**\ (\ type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_remove_valid_left_disconnect_type>`
 
-Disallows to disconnect nodes when dragging from the left port of the :ref:`GraphNode<class_GraphNode>`'s slot if it has the specified type. Use this to disable a disconnection previously allowed with :ref:`add_valid_left_disconnect_type()<class_GraphEdit_method_add_valid_left_disconnect_type>`.
+Impedisce di scollegare i nodi trascinando dalla porta sinistra dello slot del :ref:`GraphNode<class_GraphNode>` se ha il tipo specificato. Usalo per disabilitare uno scollegamento consentito in precedenza con :ref:`add_valid_left_disconnect_type()<class_GraphEdit_method_add_valid_left_disconnect_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1398,7 +1398,7 @@ Disallows to disconnect nodes when dragging from the left port of the :ref:`Grap
 
 |void| **remove_valid_right_disconnect_type**\ (\ type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_remove_valid_right_disconnect_type>`
 
-Disallows to disconnect nodes when dragging from the right port of the :ref:`GraphNode<class_GraphNode>`'s slot if it has the specified type. Use this to disable a disconnection previously allowed with :ref:`add_valid_right_disconnect_type()<class_GraphEdit_method_add_valid_right_disconnect_type>`.
+Impedisce di scollegare i nodi trascinando dalla porta destra dello slot del :ref:`GraphNode<class_GraphNode>` se ha il tipo specificato. Usalo per disabilitare uno scollegamento consentito in precedenza con :ref:`add_valid_right_disconnect_type()<class_GraphEdit_method_add_valid_right_disconnect_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1463,7 +1463,7 @@ Colore che si fonde con la linea di collegamento quando si passa il mouse sopra 
 
 :ref:`Color<class_Color>` **connection_rim_color** = ``Color(0.1, 0.1, 0.1, 0.6)`` :ref:`🔗<class_GraphEdit_theme_color_connection_rim_color>`
 
-Colore del bordo attorno a ciascuna linea di collegamento utilizzato per rendere più distinguibili le linee che si intersecano.
+Colore del bordo attorno a ciascuna linea di collegamento, utilizzato per rendere più distinguibili le linee che si intersecano.
 
 .. rst-class:: classref-item-separator
 
@@ -1535,7 +1535,7 @@ Il colore del contorno del rettangolo di selezione.
 
 :ref:`int<class_int>` **connection_hover_thickness** = ``0`` :ref:`🔗<class_GraphEdit_theme_constant_connection_hover_thickness>`
 
-Widens the line of a connection when the mouse is hovering over it by a percentage factor. A value of ``0`` disables the highlight. A value of ``100`` doubles the line width.
+Aumenta lo spessore della linea di un collegamento quando il mouse ci passa sopra, di un fattore in percentuale. Un valore di ``0`` disattiva l'evidenziazione. Un valore di ``100`` raddoppia lo spessore della linea.
 
 .. rst-class:: classref-item-separator
 
@@ -1687,7 +1687,7 @@ Lo sfondo disegnato sotto la griglia.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

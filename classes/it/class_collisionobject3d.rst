@@ -9,14 +9,14 @@ CollisionObject3D
 
 **Ereditato da:** :ref:`Area3D<class_Area3D>`, :ref:`PhysicsBody3D<class_PhysicsBody3D>`
 
-Classe di base astratta per gli oggetti di fisica 3D.
+Classe base astratta per gli oggetti fisici 3D.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Classe base astratta per oggetti di fisica 3D. **CollisionObject3D** può contenere un numero qualsiasi di :ref:`Shape3D<class_Shape3D>` per la collisione. Ogni forma deve essere assegnata a un *proprietario di forme*. I proprietari di forme non sono nodi e non compaiono nell'editor, ma sono accessibili tramite codice attraverso i metodi ``shape_owner_*``.
+Classe base astratta per oggetti fisici 3D. **CollisionObject3D** può contenere un numero qualsiasi di :ref:`Shape3D<class_Shape3D>` per le collisioni. Ogni forma deve essere assegnata a un *proprietario di forme*. I proprietari di forme non sono nodi e non compaiono nell'editor, ma sono accessibili da codice attraverso i metodi ``shape_owner_*``.
 
 \ **Attenzione:** Con una scala non uniforme, questo nodo probabilmente non si comporterà come previsto. Si consiglia di mantenere la sua scala uguale su tutti gli assi e di regolare invece le sue forme di collisione.
 
@@ -584,7 +584,7 @@ Imposta il :ref:`Transform3D<class_Transform3D>` del proprietario di forme speci
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

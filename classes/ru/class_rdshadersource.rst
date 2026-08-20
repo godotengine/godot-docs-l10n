@@ -101,7 +101,7 @@ RDShaderSource
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's any hit stage.
+Исходный код этапа обработки любого попадания шейдера.
 
 .. rst-class:: classref-item-separator
 
@@ -118,7 +118,7 @@ Source code for the shader's any hit stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's closest hit stage.
+Исходный код этапа ближайшего попадания в шейдере.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ Source code for the shader's closest hit stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's intersection stage.
+Исходный код этапа пересечения шейдеров.
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ Source code for the shader's intersection stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's miss stage.
+Исходный код этапа обработки промаха в шейдере.
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ Source code for the shader's miss stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's ray generation stage.
+Исходный код этапа генерации лучей в шейдере.
 
 .. rst-class:: classref-item-separator
 

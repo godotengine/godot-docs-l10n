@@ -172,7 +172,7 @@ enum **SamplePartitionType**: :ref:`🔗<enum_NavigationPolygon_SamplePartitionT
 
 :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>` **SAMPLE_PARTITION_CONVEX_PARTITION** = ``0``
 
-Convex partitioning that results in a navigation mesh with convex polygons.
+Partizionamento convesso che produce una mesh di navigazione con poligoni convessi.
 
 .. _class_NavigationPolygon_constant_SAMPLE_PARTITION_TRIANGULATE:
 
@@ -180,7 +180,7 @@ Convex partitioning that results in a navigation mesh with convex polygons.
 
 :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>` **SAMPLE_PARTITION_TRIANGULATE** = ``1``
 
-Triangulation partitioning that results in a navigation mesh with triangle polygons.
+Partizionamento tramite triangolazione che produce una mesh di navigazione con poligoni triangolari.
 
 .. _class_NavigationPolygon_constant_SAMPLE_PARTITION_MAX:
 
@@ -582,7 +582,7 @@ Restituisce il numero di contorni che sono stati creati nell'editor o tramite sc
 
 :ref:`bool<class_bool>` **get_parsed_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NavigationPolygon_method_get_parsed_collision_mask_value>`
 
-Restituisce se lo strato specificato del :ref:`parsed_collision_mask<class_NavigationPolygon_property_parsed_collision_mask>` è abilitato, dato un ``layer_number`` tra 1 e 32.
+Restituisce se lo strato specificato in :ref:`parsed_collision_mask<class_NavigationPolygon_property_parsed_collision_mask>` è abilitato, fornito un ``layer_number`` tra 1 e 32.
 
 .. rst-class:: classref-item-separator
 
@@ -668,7 +668,7 @@ Modifica un contorno creato nell'editor o tramite script. È necessario chiamare
 
 |void| **set_parsed_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationPolygon_method_set_parsed_collision_mask_value>`
 
-Basato su ``value``, attiva o disattiva lo strato specificato nel :ref:`parsed_collision_mask<class_NavigationPolygon_property_parsed_collision_mask>`, dato un ``layer_number`` tra 1 e 32.
+In base a su ``value``, attiva o disattiva lo strato specificato in :ref:`parsed_collision_mask<class_NavigationPolygon_property_parsed_collision_mask>`, fornito un ``layer_number`` tra 1 e 32.
 
 .. rst-class:: classref-item-separator
 
@@ -686,7 +686,7 @@ Imposta i vertici che possono essere poi indicizzati per creare poligoni con il 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -322,7 +322,7 @@ Número de buses de audio disponibles.
 - |void| **set_input_device**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_input_device**\ (\ )
 
-Nombre del dispositivo actual para la entrada de audio (ver :ref:`get_input_device_list()<class_AudioServer_method_get_input_device_list>`). En sistemas con múltiples entradas de audio (como analógica, USB o HDMI), ésto se puede usar para seleccionar el dispositivo de entrada de audio. El valor ``"Default"`` grabará audio desde la entrada de audio predeterminada del sistema. Si se establece un nombre de dispositivo no válido, el valor se revertirá a ``"Default"``.
+Nombre del dispositivo actual para la entrada de audio (consulte :ref:`get_input_device_list()<class_AudioServer_method_get_input_device_list>`). En sistemas con múltiples entradas de audio (como analógica, USB o HDMI), esto se puede usar para seleccionar el dispositivo de entrada de audio. El valor ``"Default"`` grabará audio desde la entrada de audio predeterminada del sistema. Si se establece un nombre de dispositivo no válido, el valor se revertirá a ``"Default"``.
 
 \ **Nota:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` debe ser ``true`` para que la entrada de audio funcione. Véase también la descripción de esa configuración para advertencias relacionadas con permisos y ajustes de privacidad del sistema operativo.
 
@@ -573,7 +573,7 @@ Devuelve el tamaño absoluto del búfer de entrada del micrófono. Este valor se
 
 Devuelve los nombres de todos los dispositivos de entrada de audio detectados en el sistema.
 
-\ **Nota:** El valor de :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` debe ser ``true`` para que la entrada de audio funcione. Véase también la descripción de esta configuración para conocer las advertencias relacionadas con los permisos y la configuración de privacidad del sistema operativo.
+\ **Nota:** El valor de :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` debe ser ``true`` para que la entrada de audio funcione. Consulte también la descripción de esta configuración para conocer las advertencias relacionadas con los permisos y la configuración de privacidad del sistema operativo.
 
 .. rst-class:: classref-item-separator
 
@@ -679,7 +679,7 @@ Devuelve la configuración de los altavoces.
 
 :ref:`float<class_float>` **get_time_since_last_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_since_last_mix>`
 
-Returns the relative time since the last mix occurred, in seconds.
+Devuelve el tiempo transcurrido desde la última mezcla, en segundos.
 
 .. rst-class:: classref-item-separator
 
@@ -691,7 +691,7 @@ Returns the relative time since the last mix occurred, in seconds.
 
 :ref:`float<class_float>` **get_time_to_next_mix**\ (\ ) |const| :ref:`🔗<class_AudioServer_method_get_time_to_next_mix>`
 
-Returns the relative time until the next mix occurs, in seconds.
+Devuelve el tiempo relativo hasta que se produzca la siguiente mezcla, en segundos.
 
 .. rst-class:: classref-item-separator
 

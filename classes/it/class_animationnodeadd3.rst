@@ -24,7 +24,7 @@ Questo nodo di animazione ha tre ingressi:
 
 - Un'animazione "+add" con cui fondersi quando la quantità di fusione è positiva
 
-Se il valore assoluto della quantità è maggiore di ``1.0``, l'animazione collegata alla porta "in" viene fusa con l'animazione amplificata connessa alla porta "-add"/"+add".
+Se il valore assoluto della quantità è maggiore di ``1.0``, l'animazione collegata alla porta "in" viene fusa con l'animazione amplificata collegata alla porta "-add"/"+add".
 
 \ **Nota:** I segni servono solo per distinguere le porte e la fusione additiva avviene sempre in base ai valori assoluti, il che significa che l'animazione di una porta "-add" non viene sottratta dall'animazione di una porta "in".
 
@@ -41,7 +41,7 @@ Tutorial
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

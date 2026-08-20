@@ -7,24 +7,24 @@ AreaLight3D
 
 **Eredita:** :ref:`Light3D<class_Light3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-An area light, such as a neon light tube or a screen.
+Una luce d'area, come una lampada al neon o uno schermo.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-An area light is a type of :ref:`Light3D<class_Light3D>` node that emits light over a two-dimensional area, in the shape of a rectangle. The light is attenuated throughout the distance. This attenuation can be configured by changing the energy, :ref:`area_attenuation<class_AreaLight3D_property_area_attenuation>`, and :ref:`area_range<class_AreaLight3D_property_area_range>`.
+Una luce d'area è un tipo di nodo :ref:`Light3D<class_Light3D>` che emette luci in un'area bidimensionale, a forma di rettangolo. La luce è attenuata in base alla distanza. È possibile configurare questa attenuazione modificando l'energia, :ref:`area_attenuation<class_AreaLight3D_property_area_attenuation>` e :ref:`area_range<class_AreaLight3D_property_area_range>`.
 
-Light is emitted in the -Z direction of the node's global basis. For an unrotated light, this means that the light is emitted forwards, illuminating the front side of a 3D model (see :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` and :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`).
+La luce è emessa nella direzione -Z della base globale del nodo. Per una luce non ruotata, ciò significa che la luce è emessa in avanti, illuminando il lato frontale di un modello 3D (vedi :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` e :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`).
 
-Area lights can cast soft shadows using PCSS, which you can control by tweaking the size parameter. The shadow map is drawn from the center of the light.
+Le luci d'area possono proiettare ombre sfumate utilizzando PCSS, che è possibile controllare regolando il parametro size. La mappa delle ombre viene disegnata dal centro della luce.
 
-\ **Note:** Area lights have limited support in the Mobile and Compatibility renderers. In the Mobile renderer, the size of the penumbra doesn't vary as it should with PCSS. In Compatibility, area lights cannot cast shadows.
+\ **Nota:** Le luci d'area hanno un supporto limitato nei renderer Mobile e Compatibilità. Nel renderer Mobile, la dimensione della penombra non varia come dovrebbe con PCSS. In Compatibilità, le luci d'area non possono proiettare ombre.
 
-\ **Warning:** Shadows cast by an area light may look incorrect if the object casting shadows doesn't have enough subdivisions and it's very close to the area light. This is the same limitation as the Dual Paraboloid shadow mode on an :ref:`OmniLight3D<class_OmniLight3D>`.
+\ **Attenzione:** Le ombre proiettate da una luce d'area potrebbero apparire errate se l'oggetto da cui provengono non ha abbastanza suddivisioni ed è molto vicino alla luce d'area. Questa è la stessa limitazione della modalità d'ombra Dual Paraboloid su una :ref:`OmniLight3D<class_OmniLight3D>`.
 
-\ **Performance:** Area lights are more demanding on the GPU compared to omni and spot lights. In Forward+, there is an additional GPU cost on *all* rendered objects as soon as one area light is present in the view frustum (due to the nature of clustered lighting). Consider using them only for cinematics or when targeting high-end devices.
+\ **Prestazioni:** Le luci d'area sono più impegnative per la GPU rispetto alle luci omnidirezionali e spot. In Forward+, hanno un impatto in più per la GPU su *tutti* gli oggetti renderizzati non appena una luce d'area è presente nel frustum di visualizzazione (a causa della natura dell'illuminazione clusterizzata). Si consiglia di utilizzarle solo per le sequenze cinematiche o quando si punta a dispositivi di fascia alta.
 
 .. rst-class:: classref-introduction-group
 
@@ -77,13 +77,13 @@ Descrizioni delle proprietà
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-Controls the distance attenuation function for this area light.
+Controlla la funzione di attenuazione della distanza per questa luce d'area.
 
-A value of ``0.0`` will maintain a constant brightness through most of the range, but will smoothly attenuate the light at the edge of the range. Use a value of ``2.0`` for physically accurate lights as it results in the proper inverse square attenuation.
+Un valore di ``0.0`` manterrà una luminosità costante per la maggior parte della portata, ma attenuerà gradualmente la luce al limite del portata. Utilizza un valore di ``2.0`` per luci fisicamente accurate in quanto risulta nella corretta attenuazione inversa quadrata.
 
-\ **Note:** Setting attenuation to ``2.0`` or higher may result in distant objects receiving minimal light, even when within range. For example, with a range of ``4096``, an object at ``100`` units is attenuated by a factor of ``0.0001``. With a default brightness of ``1``, the light would not be visible at that distance.
+\ **Nota:** Impostare l'attenuazione su ``2.0`` o superiore può comportare che gli oggetti distanti ricevano una luce minima, anche entro la portata. Ad esempio, con una portata di ``4096``, un oggetto lontano di ``100`` unità è attenuato di un fattore di ``0.0001``. Con una luminosità predefinita di ``1``, la luce non sarebbe visibile a quella distanza.
 
-\ **Note:** Using negative values or values higher than ``10.0`` may lead to unexpected results.
+\ **Nota:** Utilizzare valori negativi o superiori a ``10.0`` può portare a risultati imprevisti.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ A value of ``0.0`` will maintain a constant brightness through most of the range
 - |void| **set_area_normalize_energy**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_area_normalizing_energy**\ (\ )
 
-Defines whether the energy is normalized (divided) by the surface area of the light. If set to ``true``, changing the size does not affect the total energy output, and does not dramatically alter the brightness of the scene.
+Definisce se l'energia è normalizzata (divisa) per l'area superficiale della luce. Se impostato su ``true``, la modifica delle dimensioni non influisce l'energia emessa totale e non altera fortemente la luminosità della scena.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ Defines whether the energy is normalized (divided) by the surface area of the li
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The range of the area in meters. This determines the maximum distance from any point on the area at which the area can still emit light.
+La portata dell'area in metri. Determina la distanza massima da qualsiasi punto dell'area alla quale l'area può ancora emettere luce.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ The range of the area in meters. This determines the maximum distance from any p
 - |void| **set_area_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_area_size**\ (\ )
 
-The extents (width and height) of the area in meters.
+Le estremità (larghezza e altezza) dell'area in metri.
 
 .. rst-class:: classref-item-separator
 
@@ -151,17 +151,17 @@ The extents (width and height) of the area in meters.
 - |void| **set_area_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_area_texture**\ (\ )
 
-An optional texture to use as a light source. Changing the texture at runtime might impact performance, as it needs to be drawn to the area light atlas with filtered mipmaps.
+Una texture opzionale da utilizzare come sorgente luminosa. Modificare la texture in fase di esecuzione potrebbe influire sulle prestazioni, poiché deve essere disegnata sull'atlante delle luci d'area con mipmap filtrate.
 
-If no texture is assigned, the area light emits uniform light across its surface.
+Se nessuna texture è assegnata, la luce d'area emette luce uniforme sulla sua superficie.
 
-\ **Note:** Area light textures are only supported in the Forward+ and Mobile rendering methods, not Compatibility. To reduce the performance impact of switching textures at runtime, make sure each dimension of an area texture is either a multiple of 128 pixels, or a power of two. This removes the need for a scaling pass, which slows down texture changes. The textures don't necessarily have to be square to be optimal. Examples of optimal texture sizes include 32x64, 128x128, and 256x384.
+\ **Nota:** Le texture per le luci d'area sono supportate solo nei metodi di rendering Forward+ e Mobile, non in Compatibilità. Per ridurre l'impatto sulle prestazioni del cambio di texture in fase di esecuzione, assicurarti che ogni dimensione di una texture d'area sia un multiplo di 128 pixel o una potenza di due. Questo elimina la necessità di un passaggio di ridimensionamento, il che rallenta il cambio della texture. Le texture non devono necessariamente essere quadrate per essere ottimali. Esempi di dimensioni ottimali per le texture includono 32x64, 128x128 e 256x384.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

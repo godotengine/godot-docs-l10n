@@ -110,7 +110,7 @@ Descrizioni delle proprietà
 - |void| **set_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_item_count**\ (\ )
 
-Il numero di elementi attualmente nell'elenco.
+Il numero di voci attualmente nell'elenco.
 
 .. rst-class:: classref-item-separator
 
@@ -122,9 +122,9 @@ Il numero di elementi attualmente nell'elenco.
 
 :ref:`int<class_int>` **popup/item_{index}/checkable** = ``0`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/checkable>`
 
-The checkable item type of the item at ``index``.
+Il tipo di voce spuntabile per la voce all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -136,9 +136,9 @@ The checkable item type of the item at ``index``.
 
 :ref:`bool<class_bool>` **popup/item_{index}/checked** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/checked>`
 
-Se ``true``, l'elemento all'indice ``index`` è spuntato.
+Se ``true``, la voce all'indice ``index`` è spuntata.
 
-\ **Note:** ``index`` è un valore compreso tra ``0 .. item_count - 1``.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -150,9 +150,9 @@ Se ``true``, l'elemento all'indice ``index`` è spuntato.
 
 :ref:`bool<class_bool>` **popup/item_{index}/disabled** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+Se ``true``, la voce all'indice ``index`` è disabilitata.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -164,9 +164,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **popup/item_{index}/icon** :ref:`🔗<class_MenuButton_property_popup/item_{index}/icon>`
 
-The icon of the item at ``index``.
+L'icona della voce all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -178,9 +178,9 @@ The icon of the item at ``index``.
 
 :ref:`int<class_int>` **popup/item_{index}/id** = ``0`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/id>`
 
-The ID of the item at ``index``.
+L'ID della voce all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -192,9 +192,9 @@ The ID of the item at ``index``.
 
 :ref:`bool<class_bool>` **popup/item_{index}/separator** = ``false`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/separator>`
 
-If ``true``, the item at ``index`` is a separator.
+Se ``true``, la voce all'indice ``index`` è un separatore.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -206,9 +206,9 @@ If ``true``, the item at ``index`` is a separator.
 
 :ref:`String<class_String>` **popup/item_{index}/text** = ``""`` :ref:`🔗<class_MenuButton_property_popup/item_{index}/text>`
 
-The text of the item at ``index``.
+Il testo della voce all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ Regola la posizione e le dimensioni di popup per il **MenuButton**, quindi mostr
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

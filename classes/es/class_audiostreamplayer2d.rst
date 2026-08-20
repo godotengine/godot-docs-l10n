@@ -337,7 +337,7 @@ Si es ``true``, la reproducción se pausa. Puede reanudarla estableciendo :ref:`
 - |void| **set_volume_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_db**\ (\ )
 
-Base volume before attenuation, in decibels.
+Volumen base antes de la atenuación, en decibelios.
 
 .. rst-class:: classref-item-separator
 

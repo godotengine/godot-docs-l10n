@@ -19,11 +19,11 @@ Descrizione
 
 Cattura l'ambiente circostante come una cubemap e ne memorizza versioni con livelli crescenti di sfocatura per simulare diverse rugosità dei materiali.
 
-\ **ReflectionProbe** serve per creare riflessi di alta qualità a basso costo sulle prestazioni (quando :ref:`update_mode<class_ReflectionProbe_property_update_mode>` è impostato su :ref:`UPDATE_ONCE<class_ReflectionProbe_constant_UPDATE_ONCE>`). È possibile fondere fluidamente i **ReflectionProbe** tra loro e con il resto della scena. È possibile anche combinare i **ReflectionProbe** con :ref:`VoxelGI<class_VoxelGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) e riflessioni sullo spazio dello schermo (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`) per ottenere riflessi più accurati in aree specifiche. I **ReflectionProbe** renderizzano tutti gli oggetti all'interno della loro :ref:`cull_mask<class_ReflectionProbe_property_cull_mask>`, quindi aggiornarli può essere piuttosto costoso. È consigliabile aggiornarli una sola volta con gli oggetti statici importanti e poi lasciarli così come sono.
+\ **ReflectionProbe** serve per creare riflessi di alta qualità a basso costo sulle prestazioni (quando :ref:`update_mode<class_ReflectionProbe_property_update_mode>` è impostato su :ref:`UPDATE_ONCE<class_ReflectionProbe_constant_UPDATE_ONCE>`). È possibile fondere fluidamente i **ReflectionProbe** tra loro e con il resto della scena. È possibile anche combinare i **ReflectionProbe** con :ref:`VoxelGI<class_VoxelGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) e riflessi nello spazio dello schermo (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`) per ottenere riflessi più accurati in aree specifiche. I **ReflectionProbe** renderizzano tutti gli oggetti all'interno della loro :ref:`cull_mask<class_ReflectionProbe_property_cull_mask>`, quindi aggiornarli può essere piuttosto costoso. È consigliabile aggiornarli una sola volta con gli oggetti statici importanti e poi lasciarli così come sono.
 
-\ **Nota:** A differenza di :ref:`VoxelGI<class_VoxelGI>` e SDFGI, le **ReflectionProbe** ricavano il loro ambiente solo da un nodo :ref:`WorldEnvironment<class_WorldEnvironment>`. Se si specifica una risorsa :ref:`Environment<class_Environment>` all'interno di un nodo :ref:`Camera3D<class_Camera3D>`, questa verrà ignorata da **ReflectionProbe**. Ciò può causare un'illuminazione errata all'interno di **ReflectionProbe**.
+\ **Nota:** A differenza di :ref:`VoxelGI<class_VoxelGI>` e SDFGI, i **ReflectionProbe** ricavano il loro ambiente solo da un nodo :ref:`WorldEnvironment<class_WorldEnvironment>`. Se si specifica una risorsa :ref:`Environment<class_Environment>` in un nodo :ref:`Camera3D<class_Camera3D>`, questa verrà ignorata dal **ReflectionProbe**. Ciò può causare un'illuminazione errata all'interno del **ReflectionProbe**.
 
-\ **Nota:** Quando si utilizza il metodo di rendering Mobile, è possibile visualizzare solo ``8`` sonde di riflessione su ciascuna risorsa mesh, mentre il metodo di rendering Compatibilità supporta solo fino a ``2`` sonde di riflessione su ciascuna mesh. Tentare di visualizzare più di ``8`` sonde su una singola risorsa mesh tramite il renderer Mobile provocherà uno sfarfallio tra sonde mentre la telecamera si muove, mentre il renderer Compatibilità non renderizzerà alcuna sonda in più se sono utilizzate più di ``2`` sonde.
+\ **Nota:** Quando si utilizza il metodo di rendering Mobile, è possibile visualizzare solo ``8`` sonde di riflessione su ciascuna risorsa mesh, mentre il metodo di rendering Compatibilità supporta solo fino a ``2`` sonde di riflessione su ciascuna mesh. Tentare di visualizzare più di ``8`` sonde su una singola risorsa mesh utilizzando il renderer Mobile farà sfarfallare le sonde mentre la telecamera si muove, mentre il renderer Compatibilità non renderizzerà alcuna sonda in più se sono utilizzate più di ``2`` sonde.
 
 \ **Nota:** Quando si utilizza il metodo di rendering Mobile, le sonde di riflessione influenzeranno correttamente solo le mesh il cui AABB di visibilità interseca l'AABB della sonda di riflessione. Se si usa uno shader per deformare la mesh in modo che esca dal suo AABB, è necessario aumentare il valore di :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` sulla mesh. Altrimenti, la sonda di riflessione potrebbe non essere visibile sulla mesh.
 
@@ -121,7 +121,7 @@ enum **AmbientMode**: :ref:`🔗<enum_ReflectionProbe_AmbientMode>`
 
 :ref:`AmbientMode<enum_ReflectionProbe_AmbientMode>` **AMBIENT_DISABLED** = ``0``
 
-Non applicare alcuna illuminazione ambientale all'interno della casella del **ReflectionProbe** definita dalle sue :ref:`size<class_ReflectionProbe_property_size>`.
+Non applicare alcuna illuminazione ambientale all'interno del riquadro del **ReflectionProbe** definito da :ref:`size<class_ReflectionProbe_property_size>`.
 
 .. _class_ReflectionProbe_constant_AMBIENT_ENVIRONMENT:
 
@@ -129,7 +129,7 @@ Non applicare alcuna illuminazione ambientale all'interno della casella del **Re
 
 :ref:`AmbientMode<enum_ReflectionProbe_AmbientMode>` **AMBIENT_ENVIRONMENT** = ``1``
 
-Applica l'illuminazione ambientale con sorgente automatica all'interno della casella del **ReflectionProbe** definita dalle sue :ref:`size<class_ReflectionProbe_property_size>`.
+Applica l'illuminazione ambientale con sorgente automatica all'interno del riquadro del **ReflectionProbe** definito da :ref:`size<class_ReflectionProbe_property_size>`.
 
 .. _class_ReflectionProbe_constant_AMBIENT_COLOR:
 
@@ -137,7 +137,7 @@ Applica l'illuminazione ambientale con sorgente automatica all'interno della cas
 
 :ref:`AmbientMode<enum_ReflectionProbe_AmbientMode>` **AMBIENT_COLOR** = ``2``
 
-Applica un'illuminazione ambientale personalizzata all'interno della casella del **ReflectionProbe** definita dalle sue :ref:`size<class_ReflectionProbe_property_size>`. Vedi :ref:`ambient_color<class_ReflectionProbe_property_ambient_color>` e :ref:`ambient_color_energy<class_ReflectionProbe_property_ambient_color_energy>`.
+Applica un'illuminazione ambientale personalizzata all'interno del riquadro del **ReflectionProbe** definito da :ref:`size<class_ReflectionProbe_property_size>`. Vedi :ref:`ambient_color<class_ReflectionProbe_property_ambient_color>` e :ref:`ambient_color_energy<class_ReflectionProbe_property_ambient_color_energy>`.
 
 .. rst-class:: classref-section-separator
 
@@ -159,7 +159,7 @@ Descrizioni delle proprietà
 - |void| **set_ambient_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_ambient_color**\ (\ )
 
-Il colore ambientale personalizzato da usare all'interno della casella del **ReflectionProbe** definita dalle sue :ref:`size<class_ReflectionProbe_property_size>`. Efficace solo se :ref:`ambient_mode<class_ReflectionProbe_property_ambient_mode>` è :ref:`AMBIENT_COLOR<class_ReflectionProbe_constant_AMBIENT_COLOR>`.
+Il colore ambientale personalizzato da usare all'interno del riquadro del **ReflectionProbe** definito da :ref:`size<class_ReflectionProbe_property_size>`. Efficace solo se :ref:`ambient_mode<class_ReflectionProbe_property_ambient_mode>` è :ref:`AMBIENT_COLOR<class_ReflectionProbe_constant_AMBIENT_COLOR>`.
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ Il colore ambientale personalizzato da usare all'interno della casella del **Ref
 - |void| **set_ambient_color_energy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ambient_color_energy**\ (\ )
 
-L'energia del colore ambientale personalizzata da usare all'interno della casella del **ReflectionProbe** definita dalle sue :ref:`size<class_ReflectionProbe_property_size>`. Efficace solo se :ref:`ambient_mode<class_ReflectionProbe_property_ambient_mode>` è :ref:`AMBIENT_COLOR<class_ReflectionProbe_constant_AMBIENT_COLOR>`.
+L'energia del colore ambientale personalizzata da usare all'interno del riquadro del **ReflectionProbe** definito da :ref:`size<class_ReflectionProbe_property_size>`. Efficace solo se :ref:`ambient_mode<class_ReflectionProbe_property_ambient_mode>` è :ref:`AMBIENT_COLOR<class_ReflectionProbe_constant_AMBIENT_COLOR>`.
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ L'energia del colore ambientale personalizzata da usare all'interno della casell
 - |void| **set_ambient_mode**\ (\ value\: :ref:`AmbientMode<enum_ReflectionProbe_AmbientMode>`\ )
 - :ref:`AmbientMode<enum_ReflectionProbe_AmbientMode>` **get_ambient_mode**\ (\ )
 
-Il colore ambientale da usare all'interno della casella del **ReflectionProbe** definita dalle sue :ref:`size<class_ReflectionProbe_property_size>`. Il colore ambientale si fonderà in modo uniforme con gli altri **ReflectionProbe** e con il resto della scena (al di fuori della casella di **ReflectionProbe** definita dalle sue :ref:`size<class_ReflectionProbe_property_size>`).
+Il colore ambientale da usare all'interno del riquadro del **ReflectionProbe** definito da :ref:`size<class_ReflectionProbe_property_size>`. Il colore ambientale si fonderà in modo uniforme con gli altri **ReflectionProbe** e con il resto della scena (al di fuori del riquadro del **ReflectionProbe** definito da :ref:`size<class_ReflectionProbe_property_size>`).
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ La distanza massima dal **ReflectionProbe** a cui può trovarsi un oggetto prima
 
 Il bias di LOD automatico da usare per le mesh renderizzate all'interno del **ReflectionProbe** (analogo a :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>`). Valori più alti useranno versioni meno dettagliate delle mesh che hanno variazioni di LOD generate. Se impostato su ``0.0``, il LOD automatico è disabilitato. Aumentare :ref:`mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>` per migliorare le prestazioni a scapito dei dettagli della geometria, specialmente quando si usa :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` :ref:`update_mode<class_ReflectionProbe_property_update_mode>`.
 
-\ **Nota:** :ref:`mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>` non influisce sugli intervalli di visibilità di :ref:`GeometryInstance3D<class_GeometryInstance3D>` (noti anche come LOD "manuale" o LOD gerarchico).
+\ **Nota:** :ref:`mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>` non influisce sui campi di visibilità di :ref:`GeometryInstance3D<class_GeometryInstance3D>` (noti anche come LOD "manuale" o LOD gerarchico).
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Imposta la frequenza con cui il **ReflectionProbe** viene aggiornato. Può esser
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

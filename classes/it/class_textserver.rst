@@ -802,7 +802,7 @@ enum **AutowrapMode**: :ref:`🔗<enum_TextServer_AutowrapMode>`
 
 :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **AUTOWRAP_OFF** = ``0``
 
-L'avvolgimento automatico è disattivato.
+Il ritorno a capo automatico è disattivato.
 
 .. _class_TextServer_constant_AUTOWRAP_ARBITRARY:
 
@@ -1098,7 +1098,7 @@ Tiene conto del fatto che il testo è giustificato prima di tentare di ritagliar
 
 :ref:`TextOverrunFlag<enum_TextServer_TextOverrunFlag>` **OVERRUN_SHORT_STRING_ELLIPSIS** = ``32``
 
-Determines whether the ellipsis should be added regardless of the string length, otherwise it is added only if the string is 6 characters or longer.
+Determina se i puntini di sospensione si debbano aggiungere a prescindere dalla lunghezza della stringa, altrimenti si aggiungono solo se la stringa è lunga 6 caratteri o più.
 
 .. rst-class:: classref-item-separator
 
@@ -1256,7 +1256,7 @@ Utilizza la modalità di hinting del font leggero.
 
 Usa la modalità di hinting predefinita (più nitida ma meno fluida).
 
-\ **Nota:** Questa modalità di hinting modifica sia le metriche dei glifi orizzontali sia quelle verticali. Se applicata a un font monospazio, alcuni glifi potrebbero avere una larghezza diversa.
+\ **Nota:** Questa modalità di hinting modifica sia le metriche dei glifi orizzontali sia quelle verticali. Se applicata a un font monospace, alcuni glifi potrebbero avere una larghezza diversa.
 
 .. rst-class:: classref-item-separator
 
@@ -1979,7 +1979,7 @@ Restituisce ``true`` se la generazione delle mipmap per la texture del font è a
 
 **Deprecato:** Use :ref:`Viewport<class_Viewport>` oversampling, or the ``oversampling`` argument of the ``draw_*`` methods instead.
 
-This method does nothing and always returns ``1.0``.
+Questo metodo non fa nulla e restituisce sempre ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -2205,7 +2205,7 @@ Restituisce la lista di sostituzioni di supporto di lingua.
 
 :ref:`int<class_int>` **font_get_msdf_pixel_range**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_msdf_pixel_range>`
 
-Returns the width of the range around the shape between the minimum and maximum representable signed distance.
+Restituisce la larghezza dell'intervallo attorno alla forma tra la distanza con segno (signed distance) minima e massima rappresentabile.
 
 .. rst-class:: classref-item-separator
 
@@ -2277,7 +2277,7 @@ Restituisce la sostituzione del fattore di sovracampionamento. Se impostato su u
 
 :ref:`PackedColorArray<class_PackedColorArray>` **font_get_palette_colors**\ (\ font_rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_palette_colors>`
 
-Returns the array in the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors. Colors can be overridden using :ref:`font_set_palette_custom_colors()<class_TextServer_method_font_set_palette_custom_colors>`.
+Restituisce l'array nella tavolozza predefinita di colori all'indice ``index``. La tavolozza contiene tutti i colori utilizzati per renderizzare i glifi del font. Ogni tavolozza ha lo stesso numero di colori. I colori si possono sovrascrivere tramite :ref:`font_set_palette_custom_colors()<class_TextServer_method_font_set_palette_custom_colors>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2289,7 +2289,7 @@ Returns the array in the predefined color palette at ``index``. Palette contains
 
 :ref:`int<class_int>` **font_get_palette_count**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_palette_count>`
 
-Returns the number of predefined color palettes. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+Restituisce il numero di tavolozze predefinite di colori. La tavolozza contiene tutti i colori utilizzati per renderizzare i glifi del font. Ogni tavolozza ha lo stesso numero di colori.
 
 .. rst-class:: classref-item-separator
 
@@ -2301,7 +2301,7 @@ Returns the number of predefined color palettes. Palette contains all colors use
 
 :ref:`PackedColorArray<class_PackedColorArray>` **font_get_palette_custom_colors**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_palette_custom_colors>`
 
-Returns array of custom colors to override predefined palette.
+Restituisce un array di colori personalizzati per sovrascrivere la tavolozza predefinita.
 
 .. rst-class:: classref-item-separator
 
@@ -2313,7 +2313,7 @@ Returns array of custom colors to override predefined palette.
 
 :ref:`String<class_String>` **font_get_palette_name**\ (\ font_rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_palette_name>`
 
-Returns the name of the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+Restituisce il nome della tavolozza predefinita di colori all'indice ``index``. La tavolozza contiene tutti i colori utilizzati per renderizzare i glifi del font. Ogni tavolozza ha lo stesso numero di colori.
 
 .. rst-class:: classref-item-separator
 
@@ -2397,7 +2397,7 @@ Restituisce la spaziatura per ``spacing`` in pixel (non relativa alla dimensione
 
 :ref:`int<class_int>` **font_get_stretch**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_stretch>`
 
-Restituisce la quantità di allungamento del font, rispetto a una larghezza normale. Un valore percentuale compreso tra ``50%`` e ``200%``.
+Restituisce la quantità di allargamento del font, rispetto a una larghezza normale. Un valore percentuale compreso tra ``50%`` e ``200%``.
 
 .. rst-class:: classref-item-separator
 
@@ -2541,7 +2541,7 @@ Restituisce lo spessore della sottolineatura in pixel.
 
 :ref:`int<class_int>` **font_get_used_palette**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_get_used_palette>`
 
-Returns used palette index.
+Restituisce l'indice della tavolozza utilizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -2613,7 +2613,7 @@ Restituisce ``true`` se l'hinting automatico è supportato e preferito rispetto 
 
 :ref:`bool<class_bool>` **font_is_language_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, language\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_language_supported>`
 
-Returns ``true`` if the font supports the given language (as a `ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__ code).
+Restituisce ``true``, se il font supporta la lingua specificata (in codice `ISO 639 <https://it.wikipedia.org/wiki/ISO_639-1>`__).
 
 .. rst-class:: classref-item-separator
 
@@ -2625,7 +2625,7 @@ Returns ``true`` if the font supports the given language (as a `ISO 639 <https:/
 
 :ref:`bool<class_bool>` **font_is_modulate_color_glyphs**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_modulate_color_glyphs>`
 
-Returns ``true`` if color modulation is applied when drawing the font's colored glyphs.
+Restituisce ``true`` se viene applicata la modulazione del colore quando si disegnano glifi colorati del font.
 
 .. rst-class:: classref-item-separator
 
@@ -2649,7 +2649,7 @@ Restituisce ``true`` se i glifi di tutte le dimensioni sono renderizzati utilizz
 
 :ref:`bool<class_bool>` **font_is_script_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, script\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_script_supported>`
 
-Returns ``true`` if the font supports the given script (as a `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__ code).
+Restituisce ``true``, se il font supporta l'alfabeto specificato (in codice `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__).
 
 .. rst-class:: classref-item-separator
 
@@ -3053,7 +3053,7 @@ Se impostato su ``true``, la modulazione del colore è applicata quando si diseg
 
 |void| **font_set_msdf_pixel_range**\ (\ font_rid\: :ref:`RID<class_RID>`, msdf_pixel_range\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_set_msdf_pixel_range>`
 
-Sets the width of the range around the shape between the minimum and maximum representable signed distance.
+Imposta la larghezza dell'intervallo attorno alla forma tra la distanza con segno (signed distance) minima e massima rappresentabile.
 
 .. rst-class:: classref-item-separator
 
@@ -3127,7 +3127,7 @@ Se impostato su un valore positivo, sostituisce il fattore di sovracampionamento
 
 |void| **font_set_palette_custom_colors**\ (\ font_rid\: :ref:`RID<class_RID>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`\ ) :ref:`🔗<class_TextServer_method_font_set_palette_custom_colors>`
 
-Sets array of custom colors to override predefined palette. Set to empty array to reset overrides. Use ``Color(0, 0, 0, 0)``, to keep predefined palette color at specific position.
+Imposta un array di colori per sovrascrivere la tavolozza predefinita. Usa ``Color(0, 0, 0, 0)`` per mantenere il colore della tavolozza predefinita in una posizione specifica.
 
 .. rst-class:: classref-item-separator
 
@@ -3175,7 +3175,7 @@ Imposta la spaziatura per ``spacing`` su ``value`` in pixel (non relativa alla d
 
 |void| **font_set_stretch**\ (\ font_rid\: :ref:`RID<class_RID>`, weight\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_set_stretch>`
 
-Imposta la quantità di allungamento del font, rispetto a una larghezza normale. Un valore percentuale compreso tra ``50%`` e ``200%``.
+Imposta la quantità di allargamento del font, rispetto a una larghezza normale. Un valore percentuale compreso tra ``50%`` e ``200%``.
 
 \ **Nota:** Questo valore è utilizzato solo per corrispondere i font e non influirà su come un font viene renderizzato. Utilizza invece :ref:`font_set_face_index()<class_TextServer_method_font_set_face_index>`, :ref:`font_set_variation_coordinates()<class_TextServer_method_font_set_variation_coordinates>` o :ref:`font_set_transform()<class_TextServer_method_font_set_transform>`.
 
@@ -3289,7 +3289,7 @@ Imposta lo spessore della sottolineatura in pixel.
 
 |void| **font_set_used_palette**\ (\ font_rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextServer_method_font_set_used_palette>`
 
-Sets used palette index.
+Imposta l'indice della tavolozza utilizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -3353,9 +3353,9 @@ Restituisce il dizionario delle coordinate delle variazioni OpenType supportate.
 
 **Deprecato:** Use :ref:`TranslationServer.format_number()<class_TranslationServer_method_format_number>` instead.
 
-Converts a number from Western Arabic (0..9) to the numeral system used in the given ``language``.
+Converte un numero dall'arabo occidentale (0..9) al sistema numerico utilizzato nella lingua ``language``.
 
-If ``language`` is an empty string, the active locale will be used.
+Se ``language`` viene omesso, verrà utilizzata la localizzazione attiva.
 
 .. rst-class:: classref-item-separator
 
@@ -3503,7 +3503,7 @@ Restituisce ``true`` se la localizzazione è di destra a sinistra.
 
 :ref:`bool<class_bool>` **is_locale_using_support_data**\ (\ locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_is_locale_using_support_data>`
 
-Returns ``true`` if the locale requires text server support data for line/word breaking.
+Restituisce ``true`` se le localizzazione richiede dati di supporto dal server di testo per le interruzioni di righe/parole.
 
 .. rst-class:: classref-item-separator
 
@@ -3569,7 +3569,7 @@ Carica il database facoltativo (ad esempio, iteratori di interruzione ICU e dizi
 
 :ref:`int<class_int>` **name_to_tag**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_name_to_tag>`
 
-Converts the given readable name of a feature, variation, script, or language to an OpenType tag.
+Converte il nome leggibile in chiaro di funzionalità, variazione, alfabeto o lingua in un tag OpenType.
 
 .. rst-class:: classref-item-separator
 
@@ -3583,9 +3583,9 @@ Converts the given readable name of a feature, variation, script, or language to
 
 **Deprecato:** Use :ref:`TranslationServer.parse_number()<class_TranslationServer_method_parse_number>` instead.
 
-Converts ``number`` from the numeral system used in the given ``language`` to Western Arabic (0..9).
+Converte il numero ``number`` dal sistema numerico utilizzato nella lingua ``language`` all'arabo occidentale (0..9).
 
-If ``language`` is an empty string, the active locale will be used.
+Se ``language`` viene omesso, verrà utilizzata la localizzazione attiva.
 
 .. rst-class:: classref-item-separator
 
@@ -3611,9 +3611,9 @@ Implementazione predefinita della funzione di sovrascrittura dell'algoritmo BiDi
 
 **Deprecato:** Use :ref:`TranslationServer.get_percent_sign()<class_TranslationServer_method_get_percent_sign>` instead.
 
-Returns the percent sign used in the given ``language``.
+Converte il simbolo di percentuale utilizzato nella lingua ``language``.
 
-If ``language`` is an empty string, the active locale will be used.
+Se ``language`` viene omesso, verrà utilizzata la localizzazione attiva.
 
 .. rst-class:: classref-item-separator
 
@@ -3687,7 +3687,7 @@ Restituisce la dimensione del font della sequenza di testo all'indice ``index`` 
 
 :ref:`Vector2i<class_Vector2i>` **shaped_get_run_glyph_range**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_glyph_range>`
 
-Returns the glyph range of the ``index`` text run (in visual order).
+Restituisce l'intervallo di glifi della sequenza di testo all'indice ``index`` (in ordine visuale).
 
 .. rst-class:: classref-item-separator
 
@@ -3907,7 +3907,7 @@ Disegna il contorno di un testo sagomato su un elemento canvas in una posizione 
 
 :ref:`RID<class_RID>` **shaped_text_duplicate**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_duplicate>`
 
-Duplicates shaped text buffer.
+Duplica il buffer di testo sagomato.
 
 .. rst-class:: classref-item-separator
 
@@ -4345,7 +4345,7 @@ Suddivide il testo in parole e restituisce un array di intervalli di caratteri. 
 
 :ref:`bool<class_bool>` **shaped_text_has_object**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this shaped text buffer.
+Restituisce ``true`` se un oggetto con la chiave ``key`` è incorporato in questo buffer di testo sagomato.
 
 .. rst-class:: classref-item-separator
 
@@ -4746,13 +4746,13 @@ Rimuove i segni diacritici dalla stringa.
 
 :ref:`String<class_String>` **tag_to_name**\ (\ tag\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_tag_to_name>`
 
-Converts the given OpenType tag to the readable name of a feature, variation, script, or language.
+Converte il tag OpenType in un nome leggibile in chiaro di funzionalità, variazione, alfabeto o lingua.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -14,9 +14,9 @@ Adds a band-limit filter to an audio bus.
 Descripción
 ----------------------
 
-A "band-limit" filter attenuates the frequencies at :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`, and allows frequencies outside the frequency threshold to pass unchanged. It is a wider and weaker version of :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`, and is the opposite of :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
+Un filtro "band-limit" atenúa las frecuencias en :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` y permite que las frecuencias fuera del umbral de frecuencia pasen sin cambios. Es una versión más ancha y débil de :ref:`AudioEffectNotchFilter<class_AudioEffectNotchFilter>`, y es el opuesto de :ref:`AudioEffectBandPassFilter<class_AudioEffectBandPassFilter>`.
 
-This filter can be used to give more room for other sounds to play at that frequency.
+Este filtro se puede usar para dar más espacio a otros sonidos para que se reproduzcan en esa frecuencia.
 
 .. rst-class:: classref-introduction-group
 

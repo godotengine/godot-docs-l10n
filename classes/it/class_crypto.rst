@@ -48,7 +48,7 @@ Attualmente, ciò include crittografia/decrittografia a chiave asimmetrica, firm
     # Verifica
     var verified = crypto.verify(HashingContext.HASH_SHA256, data.sha256_buffer(), signature, key)
 
-    # Controlli
+    # Test
     assert(verified)
     assert(data.to_utf8_buffer() == decrypted)
 
@@ -82,7 +82,7 @@ Attualmente, ciò include crittografia/decrittografia a chiave asimmetrica, firm
     // Verifica
     bool verified = crypto.Verify(HashingContext.HashType.Sha256, Data.Sha256Buffer(), signature, key);
 
-    // Controlli
+    // Test
     Debug.Assert(verified);
     Debug.Assert(data.ToUtf8Buffer() == decrypted);
 
@@ -264,7 +264,7 @@ Verifica che una determinata firma ``signature`` per l'``hash`` di tipo ``hash_t
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

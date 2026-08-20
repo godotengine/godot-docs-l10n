@@ -14,9 +14,9 @@ Segnaposto per il :ref:`Node<class_Node>` radice di un :ref:`PackedScene<class_P
 Descrizione
 ----------------------
 
-Turning on the option **Load As Placeholder** for an instantiated scene in the editor causes it to be replaced by an **InstancePlaceholder** when running the game, this will not replace the node in the editor. This makes it possible to delay actually loading the scene until calling :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>`. This is useful to avoid loading large scenes all at once by loading parts of it selectively.
+Attivando l'opzione **Carica come segnaposto** per una scena istanziata nell'editor, la scena sarà sostituita da un **InstancePlaceholder** all'esecuzione del gioco, il che non sostituirà il nodo nell'editor. Ciò rende possibile ritardare il caricamento effettivo della scena fino alla chiamata di :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>`. È utile per evitare di caricare scene grandi tutte in una volta, caricandone selettivamente in parti.
 
-\ **Note:** Like :ref:`Node<class_Node>`, **InstancePlaceholder** does not have a transform. This causes any child nodes to be positioned relatively to the :ref:`Viewport<class_Viewport>` origin, rather than their parent as displayed in the editor. Replacing the placeholder with a scene with a transform will transform children relatively to their parent again.
+\ **Nota:** Come :ref:`Node<class_Node>`, **InstancePlaceholder** non ha una trasformazione. Ciò significa che tutti i nodi figlio saranno posizionati relativamente all'origine della :ref:`Viewport<class_Viewport>`, anziché il loro genitore come visualizzato nell'editor. Sostituendo il segnaposto con una scena con una trasformazione trasformerà nuovamente i figli relativamente al loro genitore.
 
 .. rst-class:: classref-reftable-group
 
@@ -83,7 +83,7 @@ Se ``with_order`` è ``true``, una chiave denominata ``.order`` (nota il punto i
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

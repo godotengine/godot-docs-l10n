@@ -128,7 +128,7 @@ Sets whether this collision shape should only detect collision on one side (top 
 - |void| **set_one_way_collision_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_one_way_collision_direction**\ (\ )
 
-The direction used for one-way collision.
+La dirección utilizada para la colisión unidireccional.
 
 .. rst-class:: classref-item-separator
 

@@ -12,7 +12,7 @@ Costanti e funzioni di ambito globale.
 Descrizione
 ----------------------
 
-Una lista di costanti enumerate e funzioni di ambito globale. Questo è tutto ciò che risiede nei globali, le costanti riguardano gli errori di codice, codici di tasti, indicazioni di proprietà, ecc...
+Una lista di costanti enumerate e funzioni di ambito globale integrate. Questo è tutto ciò che risiede nei globali, le costanti riguardo i codici d'errore, codici di tasti, indicazioni di proprietà, ecc.
 
 Anche i singleton sono documentati qui, visto che sono accessibili da ovunque.
 
@@ -714,7 +714,7 @@ enum **EulerOrder**: :ref:`🔗<enum_@GlobalScope_EulerOrder>`
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_XYZ** = ``0``
 
-Specifies that Euler angles should be in intrinsic XYZ order. When composing, the rotations happen around the local X, Y, and Z axes, in that order. When decomposing, the order is reversed, first Z, then Y, and X last.
+Specifica che gli angoli di Eulero dovrebbero essere nell'ordine intrinseco XYZ. Componendoli, le rotazioni avvengono attorno agli assi locali X, Y, e Z, in quest'ordine. Scomponendoli, l'ordine è invertito, prima Z, poi Y, e X per ultimo.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_XZY:
 
@@ -722,7 +722,7 @@ Specifies that Euler angles should be in intrinsic XYZ order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_XZY** = ``1``
 
-Specifies that Euler angles should be in intrinsic XZY order. When composing, the rotations happen around the local X, Z, and Y axes, in that order. When decomposing, the order is reversed, first Y, then Z, and X last.
+Specifica che gli angoli di Eulero dovrebbero essere nell'ordine intrinseco XZY. Componendoli, le rotazioni avvengono attorno agli assi locali X, Z, e Y, in quest'ordine. Scomponendoli, l'ordine è invertito, prima Y, poi Z, e X per ultimo.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YXZ:
 
@@ -730,7 +730,7 @@ Specifies that Euler angles should be in intrinsic XZY order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YXZ** = ``2``
 
-Specifies that Euler angles should be in intrinsic YXZ order. When composing, the rotations happen around the local Y, X, and Z axes, in that order. When decomposing, the order is reversed, first Z, then X, and Y last.
+Specifica che gli angoli di Eulero dovrebbero essere nell'ordine intrinseco YXZ. Componendoli, le rotazioni avvengono attorno agli assi locali Y, X, e Z, in quest'ordine. Scomponendoli, l'ordine è invertito, prima Z, poi X, e Y per ultimo.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_YZX:
 
@@ -738,7 +738,7 @@ Specifies that Euler angles should be in intrinsic YXZ order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_YZX** = ``3``
 
-Specifies that Euler angles should be in intrinsic YZX order. When composing, the rotations happen around the local Y, Z, and X axes, in that order. When decomposing, the order is reversed, first X, then Z, and Y last.
+Specifica che gli angoli di Eulero dovrebbero essere nell'ordine intrinseco YZX. Componendoli, le rotazioni avvengono attorno agli assi locali Y, Z, e X, in quest'ordine. Scomponendoli, l'ordine è invertito, prima X, poi Z, e Y per ultimo.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZXY:
 
@@ -746,7 +746,7 @@ Specifies that Euler angles should be in intrinsic YZX order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_ZXY** = ``4``
 
-Specifies that Euler angles should be in intrinsic ZXY order. When composing, the rotations happen around the local Z, X, and Y axes, in that order. When decomposing, the order is reversed, first Y, then X, and Z last.
+Specifica che gli angoli di Eulero dovrebbero essere nell'ordine intrinseco ZXY. Componendoli, le rotazioni avvengono attorno agli assi locali Z, X, e Y, in quest'ordine. Scomponendoli, l'ordine è invertito, prima Y, poi X, e Z per ultimo.
 
 .. _class_@GlobalScope_constant_EULER_ORDER_ZYX:
 
@@ -754,7 +754,7 @@ Specifies that Euler angles should be in intrinsic ZXY order. When composing, th
 
 :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` **EULER_ORDER_ZYX** = ``5``
 
-Specifies that Euler angles should be in intrinsic ZYX order. When composing, the rotations happen around the local Z, Y, and X axes, in that order. When decomposing, the order is reversed, first X, then Y, and Z last.
+Specifica che gli angoli di Eulero dovrebbero essere nell'ordine intrinseco ZYX. Componendoli, le rotazioni avvengono attorno agli assi locali Z, Y, e X, in quest'ordine. Scomponendoli, l'ordine è invertito, prima X, poi Y, e Z per ultimo.
 
 .. rst-class:: classref-item-separator
 
@@ -2326,7 +2326,7 @@ flags **KeyModifierMask**: :ref:`🔗<enum_@GlobalScope_KeyModifierMask>`
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_CODE_MASK** = ``8388607``
 
-Bit mask with all bits enabled except for modifier keys. Apply it to remove modifiers.
+Maschera di bit con tutti i bit abilitati tranne i modificatori. Applicala per rimuovere i modificatori.
 
 ::
 
@@ -2340,7 +2340,7 @@ Bit mask with all bits enabled except for modifier keys. Apply it to remove modi
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_MODIFIER_MASK** = ``2130706432``
 
-Bit mask with all modifier bits enabled. Apply it to isolate modifiers.
+Maschera di bit con tutti i bit abilitati. Applicala per isolare i modificatori.
 
 ::
 
@@ -2772,7 +2772,7 @@ Pulsante del touchpad per un controller di gioco SDL.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC2** = ``21``
 
-Game controller SDL miscellaneous button. Used by Nintendo Switch 2 Pro Controller and Horipad Steam controllers.
+Pulsante multiuso per controller di gioco SDL. Utilizzato dal Nintendo Switch 2 Pro Controller e dai controller Steam Horipad.
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC3:
 
@@ -2780,7 +2780,7 @@ Game controller SDL miscellaneous button. Used by Nintendo Switch 2 Pro Controll
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC3** = ``22``
 
-Game controller SDL miscellaneous button.
+Pulsante multiuso per un controller di gioco SDL.
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC4:
 
@@ -2788,7 +2788,7 @@ Game controller SDL miscellaneous button.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC4** = ``23``
 
-Game controller SDL miscellaneous button.
+Pulsante multiuso per un controller di gioco SDL.
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC5:
 
@@ -2796,7 +2796,7 @@ Game controller SDL miscellaneous button.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC5** = ``24``
 
-Game controller SDL miscellaneous button.
+Pulsante multiuso per un controller di gioco SDL.
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_MISC6:
 
@@ -2804,7 +2804,7 @@ Game controller SDL miscellaneous button.
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_MISC6** = ``25``
 
-Game controller SDL miscellaneous button.
+Pulsante multiuso per un controller di gioco SDL.
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_SDL_MAX:
 
@@ -3112,7 +3112,7 @@ Poiché :ref:`OK<class_@GlobalScope_constant_OK>` ha valore di ``0``, e tutte le
     if errore:
         printerr("Ancora male!")
 
-\ **Note:** Molte funzioni non restituiscono un codice di errore, ma stampano messaggi d'errore sull'output standard.
+\ **Note:** Molte funzioni non restituiscono un codice d'errore, ma stampano messaggi d'errore sull'output standard.
 
 .. _class_@GlobalScope_constant_FAILED:
 
@@ -3498,7 +3498,7 @@ Errore di bug, causato da un problema di implementazione nel metodo.
 
 :ref:`Error<enum_@GlobalScope_Error>` **ERR_PRINTER_ON_FIRE** = ``48``
 
-Printer on fire error (this is an easter egg, no built-in methods return this error code).
+Errore stampante a fuoco (è un easter egg, nessun metodo integrato restituisce questo codice d'errore).
 
 .. rst-class:: classref-item-separator
 
@@ -3516,7 +3516,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_NONE** = ``0``
 
-The property has no hint for the editor. However, the hint string is still read, which can be used to specify a suffix for a property that has no range limit (see :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`'s description).
+La proprietà non ha alcuna indicazione per l'editor. Tuttavia, la stringa indicativa viene letta comunque, la quale può servire per specificare un suffisso per una proprietà che non ha limiti di intervallo (vedi la descrizione di :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`).
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_RANGE:
 
@@ -3524,7 +3524,7 @@ The property has no hint for the editor. However, the hint string is still read,
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_RANGE** = ``1``
 
-Indica che una proprietà :ref:`int<class_int>`, :ref:`float<class_float>` o :ref:`Array<class_Array>` impacchettato/tipizzato che contiene :ref:`int<class_int>` o :ref:`float<class_float>` dovrebbe essere all'interno di un intervallo specificato tramite la stringa indicativa ``"min,max"`` o ``"min,max,step"``. La stringa indicativa può, facoltativamente includere ``"or_greater"`` e/o ``"or_lesser"`` per permettere di inserire valori manualmente che vanno rispettivamente sopra il massimo o sotto il minimo.
+Indica che una proprietà :ref:`int<class_int>`, :ref:`float<class_float>` o :ref:`Array<class_Array>` impacchettato/tipizzato che contiene :ref:`int<class_int>` o :ref:`float<class_float>` dovrebbe essere entro un intervallo specificato tramite la stringa indicativa ``"min,max"`` o ``"min,max,step"``. La stringa indicativa può, facoltativamente includere ``"or_greater"`` e/o ``"or_lesser"`` per permettere di inserire valori manualmente che vanno rispettivamente sopra il massimo o sotto il minimo.
 
 \ **Esempio:** ``"-360,360,1,or_greater,or_lesser"``.
 
@@ -3536,9 +3536,9 @@ Inoltre, è possibile includere altre parole chiave: ``"exp"`` per modificare in
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_ENUM** = ``2``
 
-Hints that an :ref:`int<class_int>`, :ref:`String<class_String>`, or :ref:`StringName<class_StringName>` property is an enumerated value to pick in a list specified via a hint string.
+Indica che una proprietà :ref:`int<class_int>`, :ref:`String<class_String>` o :ref:`StringName<class_StringName>` sia un valore innumerato da scegliere tra una lista specificata tramite una stringa indicativa.
 
-The hint string is a comma separated list of names such as ``"Hello,Something,Else"``. Whitespace is **not** removed from either end of a name. For integer properties, the first name in the list has value 0, the next 1, and so on. Explicit values can also be specified by appending ``:integer`` to the name, e.g. ``"Zero,One,Three:3,Four,Six:6"``.
+La stringa indicativa è un elenco di nomi separati da virgola come ``"Ciao,Qualcosa,Altro"``. Gli spazi vuoti **non** sono rimossi da entrambe le estremità di un nome. Per le proprietà di tipo intero, il primo nome nella lista ha valore 0, il successivo 1, e così via. È possibile specificare valori espliciti aggiungendo ``:intero`` al nome, ad esempio ``"Zero,Uno,Tre:3,Quattro,Sei:6"``.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM_SUGGESTION:
 
@@ -3546,9 +3546,9 @@ The hint string is a comma separated list of names such as ``"Hello,Something,El
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_ENUM_SUGGESTION** = ``3``
 
-Hints that a :ref:`String<class_String>` or :ref:`StringName<class_StringName>` property can be an enumerated value to pick in a list specified via a hint string such as ``"Hello,Something,Else"``. See :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>` for details.
+Indica che una proprietà :ref:`String<class_String>` o :ref:`StringName<class_StringName>` può essere un valore enumerato da scegliere in un'elenco specificato tramite una stringa indicativa come ``"Hello,Something,Else"``.
 
-Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, a property with this hint still accepts arbitrary values and can be empty. The list of values serves to suggest possible values.
+A differenza di :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, una proprietà con questa indicazione accetta comunque valori arbitrari e può essere vuota. L'elenco dei valori serve a indicare i valori possibili.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_EXP_EASING:
 
@@ -3556,7 +3556,7 @@ Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_EXP_EASING** = ``4``
 
-Indica che una proprietà :ref:`float<class_float>` dovrebbe essere modificata tramite una funzione di allentamento esponenziale. La stringa indicativa può includere ``"attenuation"`` per capovolgere la curva orizzontalmente e/o ``"positive_only"`` per consentire soltanto che i valori dell'allentamento in/out e dei limiti siano maggiori o uguali a zero. Questo è visualizzato diversamente da una proprietà che utilizza :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` con la parola chiave ``"exp"``, poiché si modifica con uno slider anziché con un editor di curva.
+Indica che una proprietà :ref:`float<class_float>` dovrebbe essere modificata tramite una funzione di andamento esponenziale. La stringa indicativa può includere ``"attenuation"`` per capovolgere la curva orizzontalmente e/o ``"positive_only"`` per consentire soltanto che i valori dell'andamento in/out e dei limiti siano maggiori o uguali a zero. Questo è visualizzato diversamente da una proprietà che utilizza :ref:`PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>` con la parola chiave ``"exp"``, poiché si modifica con uno slider anziché con un editor di curva.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LINK:
 
@@ -3564,7 +3564,7 @@ Indica che una proprietà :ref:`float<class_float>` dovrebbe essere modificata t
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_LINK** = ``5``
 
-Hints that a vector property should allow its components to be linked. For example, this allows :ref:`Vector2.x<class_Vector2_property_x>` and :ref:`Vector2.y<class_Vector2_property_y>` to be edited together. This hint is supported on :ref:`Vector2<class_Vector2>`, :ref:`Vector2i<class_Vector2i>`, :ref:`Vector3<class_Vector3>`, :ref:`Vector3i<class_Vector3i>`, :ref:`Vector4<class_Vector4>`, and :ref:`Vector4i<class_Vector4i>`. The hint string can be used to specify a suffix indicating each value's unit with the ``"suffix:px/s"`` syntax.
+Suggerisce che una proprietà di tipo vettore dovrebbe consentire di collegare le sue componenti. Ad esempio, ciò consente di modificare :ref:`Vector2.x<class_Vector2_property_x>` e :ref:`Vector2.y<class_Vector2_property_y>` assieme. Questa indicazione è supportata su :ref:`Vector2<class_Vector2>`, :ref:`Vector2i<class_Vector2i>`, :ref:`Vector3<class_Vector3>`, :ref:`Vector3i<class_Vector3i>`, :ref:`Vector4<class_Vector4>` e :ref:`Vector4i<class_Vector4i>`. La stringa indicativa si può utilizzare per specificare un suffisso che indica l'unità di ciascun valore con la sintassi ``"suffix:px/s"``.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_FLAGS:
 
@@ -3572,13 +3572,13 @@ Hints that a vector property should allow its components to be linked. For examp
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_FLAGS** = ``6``
 
-Hints that an :ref:`int<class_int>` property is a bitmask with named bit flags.
+Indica che una proprietà :ref:`int<class_int>` è una maschera di bit con flag che hanno nomi.
 
-The hint string is a comma separated list of names such as ``"Bit0,Bit1,Bit2,Bit3"``. Whitespace is **not** removed from either end of a name. The first name in the list has value 1, the next 2, then 4, 8, 16 and so on. Explicit values can also be specified by appending ``:integer`` to the name, e.g. ``"A:4,B:8,C:16"``. You can also combine several flags (``"A:4,B:8,AB:12,C:16"``).
+La stringa indicativa è un elenco separato da virgole di nomi come ``"Bit0,Bit1,Bit2,Bit3"``. Gli spazi vuoti **non** sono rimossi da entrambe le estremità di un nome. Il primo nome nell'elenco ha un valore 1, il prossimo 2, poi 4, 8, 16 e così via. È possibile specificare valori espliciti appendendo ``:integer`` al nome, ad esempio ``"A:4,B:8,C:16"``. Si possono anche combinare diversi flag assieme (``"A:4,B:8,AB:12,C:16"``).
 
-\ **Note:** A flag value must be at least ``1`` and at most ``2 ** 32 - 1``.
+\ **Nota:** Un valore di flag deve essere almeno ``1`` e al massimo ``2 ** 32 - 1``.
 
-\ **Note:** Unlike :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, the previous explicit value is not taken into account. For the hint ``"A:16,B,C"``, A is 16, B is 2, C is 4.
+\ **Nota:** A differenza di :ref:`PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`, il valore esplicito precedente non è preso in considerazione. Per l'indicazione ``"A:16,B,C"``, A è 16, B è 2, C è 4.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_RENDER:
 
@@ -3634,7 +3634,7 @@ Indica che una proprietà :ref:`int<class_int>` è una maschera di bit che utili
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_LAYERS_AVOIDANCE** = ``37``
 
-Indica che una proprietà :ref:`int<class_int>` è una maschera di bit che utilizza gli strati di evasione con nomi facoltativi.
+Indica che una proprietà :ref:`int<class_int>` è una maschera di bit che utilizza gli strati di evitamento con nomi facoltativi.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_FILE:
 
@@ -3726,76 +3726,76 @@ Indica che il valore della proprietà è un oggetto codificato come ID di oggett
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_TYPE_STRING** = ``23``
 
-If a property is :ref:`String<class_String>`, hints that the property represents a particular type (class). This allows to select a type from the create dialog. The property will store the selected type as a string.
+Se una proprietà è :ref:`String<class_String>`, indica che la proprietà rappresenta un tipo particolare (classe). Questo consente di selezionare un tipo dalla finestra di dialogo di creazione. La proprietà memorizzerà il tipo selezionato come stringa.
 
-If a property is :ref:`Array<class_Array>`, hints the editor how to show elements. The ``hint_string`` must encode nested types using ``":"`` and ``"/"``.
+Se una proprietà è :ref:`Array<class_Array>`, indica all'editor come mostrare gli elementi. La ``hint_string`` deve codificare i tipi innestati usando ``":"`` e ``"/"``.
 
-If a property is :ref:`Dictionary<class_Dictionary>`, hints the editor how to show elements. The ``hint_string`` is the same as :ref:`Array<class_Array>`, with a ``";"`` separating the key and value.
+Se una proprietà è :ref:`Dictionary<class_Dictionary>`, indica all'editor come mostrare gli elementi. La ``hint_string`` è la stessa di :ref:`Array<class_Array>`, con ``";"`` che separa la chiave dal valore.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Array of elem_type.
+    # Array di elem_type.
     hint_string = "%d:" % [elem_type]
     hint_string = "%d/%d:%s" % [elem_type, elem_hint, elem_hint_string]
-    # Two-dimensional array of elem_type (array of arrays of elem_type).
+    # Array bidimensionale di elem_type (array di array di elem_type).
     hint_string = "%d:%d:" % [TYPE_ARRAY, elem_type]
     hint_string = "%d:%d/%d:%s" % [TYPE_ARRAY, elem_type, elem_hint, elem_hint_string]
-    # Three-dimensional array of elem_type (array of arrays of arrays of elem_type).
+    # Array tridimensionale di elem_type (array di array di array di elem_type).
     hint_string = "%d:%d:%d:" % [TYPE_ARRAY, TYPE_ARRAY, elem_type]
     hint_string = "%d:%d:%d/%d:%s" % [TYPE_ARRAY, TYPE_ARRAY, elem_type, elem_hint, elem_hint_string]
 
  .. code-tab:: csharp
 
-    // Array of elemType.
+    // Array di elemType.
     hintString = $"{elemType:D}:";
     hintString = $"{elemType:D}/{elemHint:D}:{elemHintString}";
-    // Two-dimensional array of elemType (array of arrays of elemType).
+    // Array bidimensionale di elemType (array di array di elemType).
     hintString = $"{Variant.Type.Array:D}:{elemType:D}:";
     hintString = $"{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
-    // Three-dimensional array of elemType (array of arrays of arrays of elemType).
+    // Array tridimensionale di elemType (array di array di array di elemType).
     hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}:";
     hintString = $"{Variant.Type.Array:D}:{Variant.Type.Array:D}:{elemType:D}/{elemHint:D}:{elemHintString}";
 
 
 
-\ **Examples:**\ 
+\ **Esempi:**\ 
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    hint_string = "%d:" % [TYPE_INT] # Array of integers.
-    hint_string = "%d/%d:1,10,1" % [TYPE_INT, PROPERTY_HINT_RANGE] # Array of integers (in range from 1 to 10).
-    hint_string = "%d/%d:Zero,One,Two" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array of integers (an enum).
-    hint_string = "%d/%d:Zero,One,Three:3,Six:6" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array of integers (an enum).
-    hint_string = "%d/%d:*.png" % [TYPE_STRING, PROPERTY_HINT_FILE] # Array of strings (file paths).
-    hint_string = "%d/%d:Texture2D" % [TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Array of textures.
+    hint_string = "%d:" % [TYPE_INT] # Array di interi.
+    hint_string = "%d/%d:1,10,1" % [TYPE_INT, PROPERTY_HINT_RANGE] # Array di interi (nell'intervallo da 1 a 10).
+    hint_string = "%d/%d:Zero,Uno,Due" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array di interi (un enum).
+    hint_string = "%d/%d:Zero,Uno,Tre:3,Sei:6" % [TYPE_INT, PROPERTY_HINT_ENUM] # Array di interi (un enum).
+    hint_string = "%d/%d:*.png" % [TYPE_STRING, PROPERTY_HINT_FILE] # Array di stringhe (percorsi di file).
+    hint_string = "%d/%d:Texture2D" % [TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Array di texture.
 
-    hint_string = "%d:%d:" % [TYPE_ARRAY, TYPE_FLOAT] # Two-dimensional array of floats.
-    hint_string = "%d:%d/%d:" % [TYPE_ARRAY, TYPE_STRING, PROPERTY_HINT_MULTILINE_TEXT] # Two-dimensional array of multiline strings.
-    hint_string = "%d:%d/%d:-1,1,0.1" % [TYPE_ARRAY, TYPE_FLOAT, PROPERTY_HINT_RANGE] # Two-dimensional array of floats (in range from -1 to 1).
-    hint_string = "%d:%d/%d:Texture2D" % [TYPE_ARRAY, TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Two-dimensional array of textures.
+    hint_string = "%d:%d:" % [TYPE_ARRAY, TYPE_FLOAT] # Array bidimensionale di float.
+    hint_string = "%d:%d/%d:" % [TYPE_ARRAY, TYPE_STRING, PROPERTY_HINT_MULTILINE_TEXT] # Array bidimensionale di stringhe multilinea.
+    hint_string = "%d:%d/%d:-1,1,0.1" % [TYPE_ARRAY, TYPE_FLOAT, PROPERTY_HINT_RANGE] # Array bidimensionale di float (nell'intervallo da -1 a 1).
+    hint_string = "%d:%d/%d:Texture2D" % [TYPE_ARRAY, TYPE_OBJECT, PROPERTY_HINT_RESOURCE_TYPE] # Array bidimensionale di texture.
 
  .. code-tab:: csharp
 
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // Array of integers (in range from 1 to 10).
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Two"; // Array of integers (an enum).
-    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,One,Three:3,Six:6"; // Array of integers (an enum).
-    hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // Array of strings (file paths).
-    hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Array of textures.
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Range:D}:1,10,1"; // Array di interi (nell'intervallo da 1 a 10).
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,Uno,Due"; // Array di interi (un enum).
+    hintString = $"{Variant.Type.Int:D}/{PropertyHint.Enum:D}:Zero,Uno,Tre:3,Sei:6"; // Array di interi (un enum).
+    hintString = $"{Variant.Type.String:D}/{PropertyHint.File:D}:*.png"; // Array di stringhe (percorsi di file).
+    hintString = $"{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Array di texture.
 
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}:"; // Two-dimensional array of floats.
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:"; // Two-dimensional array of multiline strings.
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1"; // Two-dimensional array of floats (in range from -1 to 1).
-    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Two-dimensional array of textures.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}:"; // Array bidimensionale di float.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.String:D}/{PropertyHint.MultilineText:D}:"; // Array bidimensionale di stringhe multilinea.
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Float:D}/{PropertyHint.Range:D}:-1,1,0.1"; // Array bidimensionale di float (nell'intervallo da -1 a 1).
+    hintString = $"{Variant.Type.Array:D}:{Variant.Type.Object:D}/{PropertyHint.ResourceType:D}:Texture2D"; // Array bidimensionale di texture.
 
 
 
-\ **Note:** The trailing colon is required for properly detecting built-in types.
+\ **Nota:** I due punti alla fine sono necessari per rilevare correttamente i tipi integrati.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_NODE_PATH_TO_EDITED_NODE:
 
@@ -4154,7 +4154,7 @@ La proprietà rappresenta il numero di elementi di un array di proprietà, ovver
 
 - ``unfoldable``: l'array non può essere ridotto.
 
-- ``swap_method=method_name``: Il metodo che verrà chiamato quando due elementi si scambiano di posto. Il metodo dovrebbe accettare 2 parametri :ref:`int<class_int>`, che saranno gli indici degli elementi da scambiare.
+- ``swap_method=method_name``: il metodo che verrà chiamato quando due elementi si scambiano di posto. Il metodo dovrebbe accettare 2 parametri :ref:`int<class_int>`, che saranno gli indici degli elementi da scambiare.
 
 Si noti che la creazione di un array di proprietà completo richiede codice boilerplate che coinvolge :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`.
 
@@ -4909,7 +4909,7 @@ Costanti
 
 **UINT8_MAX** = ``255`` :ref:`🔗<class_@GlobalScope_constant_UINT8_MAX>`
 
-Maximum value of an 8-bit unsigned integer.
+Valore massimo di un numero intero senza segno a 8 bit.
 
 .. _class_@GlobalScope_constant_UINT16_MAX:
 
@@ -4917,7 +4917,7 @@ Maximum value of an 8-bit unsigned integer.
 
 **UINT16_MAX** = ``65535`` :ref:`🔗<class_@GlobalScope_constant_UINT16_MAX>`
 
-Maximum value of a 16-bit unsigned integer.
+Valore massimo di un numero intero senza segno a 16 bit.
 
 .. _class_@GlobalScope_constant_UINT32_MAX:
 
@@ -4925,7 +4925,7 @@ Maximum value of a 16-bit unsigned integer.
 
 **UINT32_MAX** = ``4294967295`` :ref:`🔗<class_@GlobalScope_constant_UINT32_MAX>`
 
-Maximum value of a 32-bit unsigned integer.
+Valore massimo di un numero intero senza segno a 32 bit.
 
 .. _class_@GlobalScope_constant_INT8_MIN:
 
@@ -4933,7 +4933,7 @@ Maximum value of a 32-bit unsigned integer.
 
 **INT8_MIN** = ``-128`` :ref:`🔗<class_@GlobalScope_constant_INT8_MIN>`
 
-Minimum value of an 8-bit signed integer.
+Valore minimo di un numero intero con segno a 8 bit.
 
 .. _class_@GlobalScope_constant_INT8_MAX:
 
@@ -4941,7 +4941,7 @@ Minimum value of an 8-bit signed integer.
 
 **INT8_MAX** = ``127`` :ref:`🔗<class_@GlobalScope_constant_INT8_MAX>`
 
-Maximum value of an 8-bit signed integer.
+Valore massimo di un numero intero con segno a 8 bit.
 
 .. _class_@GlobalScope_constant_INT16_MIN:
 
@@ -4949,7 +4949,7 @@ Maximum value of an 8-bit signed integer.
 
 **INT16_MIN** = ``-32768`` :ref:`🔗<class_@GlobalScope_constant_INT16_MIN>`
 
-Minimum value of a 16-bit signed integer.
+Valore minimo di un numero intero con segno a 16 bit.
 
 .. _class_@GlobalScope_constant_INT16_MAX:
 
@@ -4957,7 +4957,7 @@ Minimum value of a 16-bit signed integer.
 
 **INT16_MAX** = ``32767`` :ref:`🔗<class_@GlobalScope_constant_INT16_MAX>`
 
-Maximum value of a 16-bit signed integer.
+Valore massimo di un numero intero con segno a 16 bit.
 
 .. _class_@GlobalScope_constant_INT32_MIN:
 
@@ -4965,7 +4965,7 @@ Maximum value of a 16-bit signed integer.
 
 **INT32_MIN** = ``-2147483648`` :ref:`🔗<class_@GlobalScope_constant_INT32_MIN>`
 
-Minimum value of a 32-bit signed integer.
+Valore minimo di un numero intero con segno a 32 bit.
 
 .. _class_@GlobalScope_constant_INT32_MAX:
 
@@ -4973,7 +4973,7 @@ Minimum value of a 32-bit signed integer.
 
 **INT32_MAX** = ``2147483647`` :ref:`🔗<class_@GlobalScope_constant_INT32_MAX>`
 
-Maximum value of a 32-bit signed integer.
+Valore massimo di un numero intero con segno a 32 bit.
 
 .. _class_@GlobalScope_constant_INT64_MIN:
 
@@ -4981,7 +4981,7 @@ Maximum value of a 32-bit signed integer.
 
 **INT64_MIN** = ``-9223372036854775808`` :ref:`🔗<class_@GlobalScope_constant_INT64_MIN>`
 
-Minimum value of a 64-bit signed integer.
+Valore minimo di un numero intero con segno a 64 bit.
 
 .. _class_@GlobalScope_constant_INT64_MAX:
 
@@ -4989,7 +4989,7 @@ Minimum value of a 64-bit signed integer.
 
 **INT64_MAX** = ``9223372036854775807`` :ref:`🔗<class_@GlobalScope_constant_INT64_MAX>`
 
-Maximum value of a 64-bit signed integer.
+Valore massimo di un numero intero con segno a 64 bit.
 
 .. rst-class:: classref-section-separator
 
@@ -5006,7 +5006,7 @@ Descrizioni delle proprietà
 
 :ref:`AccessibilityServer<class_AccessibilityServer>` **AccessibilityServer** :ref:`🔗<class_@GlobalScope_property_AccessibilityServer>`
 
-The :ref:`AccessibilityServer<class_AccessibilityServer>` singleton.
+Il singleton :ref:`AccessibilityServer<class_AccessibilityServer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5068,7 +5068,7 @@ Il singleton :ref:`DisplayServer<class_DisplayServer>`.
 
 Il singleton :ref:`EditorInterface<class_EditorInterface>`.
 
-\ **Note:** Disponibile solo in compilazioni dell'editor.
+\ **Note:** Disponibile solo nelle compilazioni dell'editor.
 
 .. rst-class:: classref-item-separator
 
@@ -5116,9 +5116,9 @@ Il singleton :ref:`GDExtensionManager<class_GDExtensionManager>`.
 
 :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` **GDScriptLanguageProtocol** :ref:`🔗<class_@GlobalScope_property_GDScriptLanguageProtocol>`
 
-The :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>` singleton.
+Il singleton :ref:`GDScriptLanguageProtocol<class_GDScriptLanguageProtocol>`.
 
-\ **Note:** Only available in editor builds.
+\ **Note:** Disponibile solo nelle compilazioni dell'editor.
 
 .. rst-class:: classref-item-separator
 
@@ -5268,7 +5268,7 @@ Il singleton :ref:`NavigationServer2D<class_NavigationServer2D>`.
 
 :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` **NavigationServer2DManager** :ref:`🔗<class_@GlobalScope_property_NavigationServer2DManager>`
 
-The :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` singleton.
+Il singleton :ref:`NavigationServer2DManager<class_NavigationServer2DManager>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5292,7 +5292,7 @@ Il singleton :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` **NavigationServer3DManager** :ref:`🔗<class_@GlobalScope_property_NavigationServer3DManager>`
 
-The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
+Il singleton :ref:`NavigationServer3DManager<class_NavigationServer3DManager>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6002,7 +6002,7 @@ Converte un angolo espresso in gradi in radianti.
 
 :ref:`float<class_float>` **ease**\ (\ x\: :ref:`float<class_float>`, curve\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_ease>`
 
-Restituisce un valore "allentato" di ``x`` basato su una funzione di allentamento definita con ``curve``. Questa funzione è basata su un esponente. ``curve`` può essere qualunque numero decimale, con valori specifici che portano ai seguenti comportamenti:
+Restituisce un valore "agevolato" di ``x`` basato su una funzione di andamento definita con ``curve``. Questa funzione è basata su un esponente. ``curve`` può essere qualunque numero decimale, con valori specifici che portano ai seguenti comportamenti:
 
 .. code:: text
 
@@ -6016,7 +6016,7 @@ Restituisce un valore "allentato" di ``x`` basato su una funzione di allentament
 
 \ `cheatsheet per i valori di curva di ease() <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/ease_cheatsheet.png>`__\ 
 
-Vedi anche :ref:`smoothstep()<class_@GlobalScope_method_smoothstep>`. Se hai bisogno di eseguire transizioni più avanzate, usa :ref:`Tween.interpolate_value()<class_Tween_method_interpolate_value>`.
+Vedi anche :ref:`smoothstep()<class_@GlobalScope_method_smoothstep>`. Se hai bisogno di effettuare transizioni più avanzate, usa :ref:`Tween.interpolate_value()<class_Tween_method_interpolate_value>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6028,7 +6028,7 @@ Vedi anche :ref:`smoothstep()<class_@GlobalScope_method_smoothstep>`. Se hai bis
 
 :ref:`String<class_String>` **error_string**\ (\ error\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_error_string>`
 
-Restituisce un nome leggibile in chiaro per il codice di errore (:ref:`Error<enum_@GlobalScope_Error>`) indicato.
+Restituisce un nome leggibile in chiaro per il codice d'errore (:ref:`Error<enum_@GlobalScope_Error>`) indicato.
 
 ::
 
@@ -6193,31 +6193,31 @@ Restituisce il valore hash intero di ``variable``.
 
 :ref:`Object<class_Object>` **instance_from_id**\ (\ instance_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_instance_from_id>`
 
-Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All Objects have a unique instance ID. See also :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
+Restituisce l'istanza di :ref:`Object<class_Object>` che corrisponde a ``instance_id``. Tutti gli oggetti hanno un ID univoco d'istanza. Vedi anche :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var drink = "water"
+    var bevanda = "acqua"
 
     func _ready():
         var id = get_instance_id()
         var instance = instance_from_id(id)
-        print(instance.drink) # Prints "water"
+        print(instance.bevanda) # Stampa "acqua"
 
  .. code-tab:: csharp
 
     public partial class MyNode : Node
     {
-        public string Drink { get; set; } = "water";
+        public string Bevanda { get; set; } = "acqua";
 
         public override void _Ready()
         {
             ulong id = GetInstanceId();
             var instance = (MyNode)InstanceFromId(Id);
-            GD.Print(instance.Drink); // Prints "water"
+            GD.Print(instance.Bevanda); // Stampa "acqua"
         }
     }
 
@@ -6259,7 +6259,7 @@ Vedi anche :ref:`lerp()<class_@GlobalScope_method_lerp>` che esegue l'inverso di
 
 Restituisce ``true`` se ``a`` e ``b`` sono approssimativamente uguali tra loro.
 
-Qui, approssimativamente uguale significa che ``a`` e ``b`` sono all'interno di un piccolo epsilon interno l'uno rispetto all'altro, che scala con la grandezza dei numeri.
+Qui, "approssimativamente uguali" significa che ``a`` e ``b`` sono entro un piccolo epsilon interno l'uno rispetto all'altro, che scala con la grandezza dei numeri.
 
 I valori di infinito con stesso segno sono considerati uguali.
 
@@ -6379,17 +6379,17 @@ Questo metodo è più veloce di :ref:`is_equal_approx()<class_@GlobalScope_metho
 
 :ref:`Variant<class_Variant>` **lerp**\ (\ from\: :ref:`Variant<class_Variant>`, to\: :ref:`Variant<class_Variant>`, weight\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GlobalScope_method_lerp>`
 
-Interpola linearmente tra due valori con un fattore definito in ``weight``. Per interpolare, ``weight`` dovrebbe rimanere tra ``0.0`` e ``1.0`` (inclusi). Tuttavia, i valori al di fuori di questo intervallo sono consentiti e possono essere utilizzati per eseguire un'*estrapolazione*. Se non è desiderato, utilizza :ref:`clamp()<class_@GlobalScope_method_clamp>` sul risultato di questa funzione.
+Interpola linearmente tra due valori con un fattore definito in ``weight``. Per un'interpolazione, ``weight`` dovrebbe rimanere tra ``0.0`` e ``1.0`` (inclusi). Tuttavia, i valori fuori da questo intervallo sono consentiti per effettuare un'*estrapolazione*. Se questo non è desiderato, utilizza :ref:`clamp()<class_@GlobalScope_method_clamp>` sul risultato di questa funzione.
 
-Sia ``from`` che ``to`` devono essere dello stesso tipo. I tipi supported sono: :ref:`int<class_int>`, :ref:`float<class_float>`, :ref:`Vector2<class_Vector2>`, :ref:`Vector3<class_Vector3>`, :ref:`Vector4<class_Vector4>`, :ref:`Color<class_Color>`, :ref:`Quaternion<class_Quaternion>`, :ref:`Basis<class_Basis>`, :ref:`Transform2D<class_Transform2D>`, :ref:`Transform3D<class_Transform3D>`.
+Entrambi ``from`` e ``to`` devono essere dello stesso tipo. I tipi supportati sono: :ref:`int<class_int>`, :ref:`float<class_float>`, :ref:`Vector2<class_Vector2>`, :ref:`Vector3<class_Vector3>`, :ref:`Vector4<class_Vector4>`, :ref:`Color<class_Color>`, :ref:`Quaternion<class_Quaternion>`, :ref:`Basis<class_Basis>`, :ref:`Transform2D<class_Transform2D>`, :ref:`Transform3D<class_Transform3D>`.
 
 ::
 
     lerp(0, 4, 0.75) # Restituisce 3.0
 
-Vedi anche :ref:`inverse_lerp()<class_@GlobalScope_method_inverse_lerp>` che esegue l'inverso di questa operazione. Per eseguire un'interpolazione alleggerita con :ref:`lerp()<class_@GlobalScope_method_lerp>`, combinalo con :ref:`ease()<class_@GlobalScope_method_ease>` o :ref:`smoothstep()<class_@GlobalScope_method_smoothstep>`. Vedi anche :ref:`remap()<class_@GlobalScope_method_remap>` per mappare una serie continua di valori a un altra.
+Vedi anche :ref:`inverse_lerp()<class_@GlobalScope_method_inverse_lerp>` che effettua l'inverso di questa operazione. Per effettuare un'interpolazione agevolata con :ref:`lerp()<class_@GlobalScope_method_lerp>`, combinalo con :ref:`ease()<class_@GlobalScope_method_ease>` o :ref:`smoothstep()<class_@GlobalScope_method_smoothstep>`. Vedi anche :ref:`remap()<class_@GlobalScope_method_remap>` per mappare una serie continua di valori a un altra.
 
-\ **Nota:** Per migliore sicurezza di tipo, usa :ref:`lerpf()<class_@GlobalScope_method_lerpf>`, :ref:`Vector2.lerp()<class_Vector2_method_lerp>`, :ref:`Vector3.lerp()<class_Vector3_method_lerp>`, :ref:`Vector4.lerp()<class_Vector4_method_lerp>`, :ref:`Color.lerp()<class_Color_method_lerp>`, :ref:`Quaternion.slerp()<class_Quaternion_method_slerp>`, :ref:`Basis.slerp()<class_Basis_method_slerp>`, :ref:`Transform2D.interpolate_with()<class_Transform2D_method_interpolate_with>`, o :ref:`Transform3D.interpolate_with()<class_Transform3D_method_interpolate_with>`.
+\ **Nota:** Per migliore sicurezza di tipo, usa :ref:`lerpf()<class_@GlobalScope_method_lerpf>`, :ref:`Vector2.lerp()<class_Vector2_method_lerp>`, :ref:`Vector3.lerp()<class_Vector3_method_lerp>`, :ref:`Vector4.lerp()<class_Vector4_method_lerp>`, :ref:`Color.lerp()<class_Color_method_lerp>`, :ref:`Quaternion.slerp()<class_Quaternion_method_slerp>`, :ref:`Basis.slerp()<class_Basis_method_slerp>`, :ref:`Transform2D.interpolate_with()<class_Transform2D_method_interpolate_with>` o :ref:`Transform3D.interpolate_with()<class_Transform3D_method_interpolate_with>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6403,7 +6403,7 @@ Vedi anche :ref:`inverse_lerp()<class_@GlobalScope_method_inverse_lerp>` che ese
 
 Interpola linearmente tra due angoli (in radianti) con un valore ``weight`` tra 0.0 e 1.0.
 
-Simile a :ref:`lerp()<class_@GlobalScope_method_lerp>`, ma interpola correttamente quando gli angoli sono attorno :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>`. Per eseguire un'interpolazione alleggerita con :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`, combinalo con :ref:`ease()<class_@GlobalScope_method_ease>` o :ref:`smoothstep()<class_@GlobalScope_method_smoothstep>`.
+Simile a :ref:`lerp()<class_@GlobalScope_method_lerp>`, ma interpola correttamente quando gli angoli sono attorno :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>`. Per effettuare un'interpolazione agevolata con :ref:`lerp_angle()<class_@GlobalScope_method_lerp_angle>`, combinalo con :ref:`ease()<class_@GlobalScope_method_ease>` o :ref:`smoothstep()<class_@GlobalScope_method_smoothstep>`.
 
 ::
 
@@ -6427,13 +6427,13 @@ Simile a :ref:`lerp()<class_@GlobalScope_method_lerp>`, ma interpola correttamen
 
 :ref:`float<class_float>` **lerpf**\ (\ from\: :ref:`float<class_float>`, to\: :ref:`float<class_float>`, weight\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_lerpf>`
 
-Interpola linearmente tra due valori con un fattore definito in ``weight``. Per interpolare, ``weight`` dovrebbe rimanere tra ``0.0`` e ``1.0`` (inclusi). Tuttavia, i valori al di fuori di questo intervallo sono consentiti e possono essere utilizzati per eseguire un'*estrapolazione*. Se non è desiderato, utilizza :ref:`clampf()<class_@GlobalScope_method_clampf>` sul risultato di questa funzione.
+Interpola linearmente tra due valori con un fattore definito in ``weight``. Per un'interpolazione, ``weight`` dovrebbe rimanere tra ``0.0`` e ``1.0`` (inclusi). Tuttavia, i valori fuori da questo intervallo sono consentiti per effettuare un'*estrapolazione*. Se questo non è desiderato, utilizza :ref:`clampf()<class_@GlobalScope_method_clampf>` sul risultato di questa funzione.
 
 ::
 
     lerp(0, 4, 0.75) # Restituisce 3.0
 
-Vedi anche :ref:`inverse_lerp()<class_@GlobalScope_method_inverse_lerp>` che esegue l'inverso di questa operazione. Per eseguire un'interpolazione alleggerita con :ref:`lerp()<class_@GlobalScope_method_lerp>`, combinalo con :ref:`ease()<class_@GlobalScope_method_ease>` o :ref:`smoothstep()<class_@GlobalScope_method_smoothstep>`.
+Vedi anche :ref:`inverse_lerp()<class_@GlobalScope_method_inverse_lerp>` che effettua l'inverso di questa operazione. Per effettuare un'interpolazione agevolata con :ref:`lerp()<class_@GlobalScope_method_lerp>`, combinalo con :ref:`ease()<class_@GlobalScope_method_ease>` o :ref:`smoothstep()<class_@GlobalScope_method_smoothstep>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6809,7 +6809,7 @@ Stampa uno o più argomenti come stringhe nel miglior modo possibile sulla linea
 
 Stampa uno o più argomenti come stringhe nel miglior modo possibile sulla linea di errore standard. A differenza di :ref:`print()<class_@GlobalScope_method_print>`, nessuna nuova linea viene automaticamente aggiunta alla fine.
 
-\ **Nota:** Il terminale del sistema operativo *non* è lo stesso del pannello di output nell'editor. È possibile vedere l'output inviato al terminale del sistema operativo quando Godot è eseguito da un terminale. Su Windows, ciò richiede l'eseguibile ``console.exe`` .
+\ **Nota:** Il terminale del sistema operativo *non* è lo stesso del pannello Output nell'editor. È possibile vedere l'output inviato al terminale del sistema operativo quando Godot è eseguito da un terminale. Su Windows, ciò richiede l'eseguibile ``console.exe`` .
 
 
 .. tabs::
@@ -7617,7 +7617,7 @@ Vedi anche :ref:`typeof()<class_@GlobalScope_method_typeof>`.
 
 :ref:`int<class_int>` **typeof**\ (\ variable\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GlobalScope_method_typeof>`
 
-Returns the internal type of the given ``variable``, using the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` values.
+Restituisce il tipo interno della variabile ``variable``, utilizzando i valori di :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`.
 
 ::
 
@@ -7625,11 +7625,11 @@ Returns the internal type of the given ``variable``, using the :ref:`Variant.Typ
     json.parse('["a", "b", "c"]')
     var result = json.get_data()
     if typeof(result) == TYPE_ARRAY:
-        print(result[0]) # Prints "a"
+        print(result[0]) # Stampa "a"
     else:
-        print("Unexpected result!")
+        print("Risultato inaspettato!")
 
-See also :ref:`type_string()<class_@GlobalScope_method_type_string>`.
+Vedi anche :ref:`type_string()<class_@GlobalScope_method_type_string>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7793,7 +7793,7 @@ Avvolge il valore intero ``value`` tra ``min`` e ``max``. ``min`` è *inclusivo*
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

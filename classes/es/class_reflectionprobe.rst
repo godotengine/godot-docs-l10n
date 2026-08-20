@@ -299,7 +299,7 @@ Define la intensidad del reflejo. La intensidad modula la fuerza de la reflexió
 - |void| **set_as_interior**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_set_as_interior**\ (\ )
 
-If ``true``, reflections will ignore sky contribution.
+Si es ``true``, los reflejos ignorarán la contribución del cielo.
 
 .. rst-class:: classref-item-separator
 

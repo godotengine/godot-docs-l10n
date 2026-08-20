@@ -242,7 +242,7 @@ La preparazione della Lightmap non è riuscita perché il percorso di salvataggi
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_NO_MESHES** = ``5``
 
-La preparazione della lightmap non è riuscita perché non ci sono mesh il cui :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` è :ref:`GeometryInstance3D.GI_MODE_STATIC<class_GeometryInstance3D_constant_GI_MODE_STATIC>` e con una valida mappatura UV2 nella scena attuale. Potrebbe essere necessario selezionare scene 3D nel pannello di importazione e modificare dunque la loro modalità di illuminazione globale.
+La preparazione della lightmap non è riuscita perché non ci sono mesh il cui :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` è :ref:`GeometryInstance3D.GI_MODE_STATIC<class_GeometryInstance3D_constant_GI_MODE_STATIC>` e con una valida mappatura UV2 nella scena attuale. Potrebbe essere necessario selezionare scene 3D nel pannello Importazione e modificare dunque la loro modalità di illuminazione globale.
 
 .. _class_LightmapGI_constant_BAKE_ERROR_MESHES_INVALID:
 
@@ -409,7 +409,7 @@ Numero di rimbalzi di luce presi in considerazione durante il precalcolo. Valori
 - |void| **set_camera_attributes**\ (\ value\: :ref:`CameraAttributes<class_CameraAttributes>`\ )
 - :ref:`CameraAttributes<class_CameraAttributes>` **get_camera_attributes**\ (\ )
 
-La risorsa :ref:`CameraAttributes<class_CameraAttributes>` che specifica i livelli di esposizione a cui precalcolare. Saranno ignorate le proprietà che non riguardano l'esposizione e l'esposizione automatica. Le impostazioni di esposizione dovrebbero essere utilizzate per ridurre la gamma dinamica presente durante il precalcolo. Se l'esposizione è troppo alta, **LightmapGI** avrà artefatti di banding o potrebbe avere artefatti di sovraesposizione.
+La risorsa :ref:`CameraAttributes<class_CameraAttributes>` che specifica i livelli di esposizione a cui precalcolare. Saranno ignorate le proprietà che non riguardano l'esposizione e l'esposizione automatica. Le impostazioni di esposizione si dovrebbero utilizzare per ridurre la gamma dinamica presente durante il precalcolo. Se l'esposizione è troppo alta, **LightmapGI** avrà artefatti di banding o potrebbe avere artefatti di sovraesposizione.
 
 .. rst-class:: classref-item-separator
 
@@ -644,9 +644,9 @@ Per aumentare ulteriormente la qualità, abilita :ref:`supersampling<class_Light
 
 Il criterio di shadowmasking da usare per le ombre direzionali sugli oggetti statici che sono calcolati con questa istanza di **LightmapGI**.
 
-La shadowmasking consente ai nodi :ref:`DirectionalLight3D<class_DirectionalLight3D>` di proiettare ombre anche al di fuori del campo definito dalla loro proprietà :ref:`DirectionalLight3D.directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Ciò viene effettuato calcolando una texture che contiene una shadowmap per la luce direzionale, quindi utilizzando questa texture in base alla modalità di shadowmasking attuale.
+Lo shadowmasking permette ai nodi :ref:`DirectionalLight3D<class_DirectionalLight3D>` di proiettare ombre anche fuori dalla portata definita dalla loro proprietà :ref:`DirectionalLight3D.directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Lo si fa calcolando una texture che contiene una shadowmap per la luce direzionale, poi utilizzando questa texture in base alla modalità di shadowmasking attuale.
 
-\ **Nota:** La texture di shadowmask viene creata solo se :ref:`shadowmask_mode<class_LightmapGI_property_shadowmask_mode>` non è :ref:`LightmapGIData.SHADOWMASK_MODE_NONE<class_LightmapGIData_constant_SHADOWMASK_MODE_NONE>`. Per notare la differenza, è necessario elaborare nuovamente le lightmap dopo essere passati da :ref:`LightmapGIData.SHADOWMASK_MODE_NONE<class_LightmapGIData_constant_SHADOWMASK_MODE_NONE>` a qualsiasi altra modalità.
+\ **Nota:** La texture di shadowmask viene creata solo se :ref:`shadowmask_mode<class_LightmapGI_property_shadowmask_mode>` non è :ref:`LightmapGIData.SHADOWMASK_MODE_NONE<class_LightmapGIData_constant_SHADOWMASK_MODE_NONE>`. Per notare differenze, bisogna rielaborare le lightmap dopo aver passato da :ref:`LightmapGIData.SHADOWMASK_MODE_NONE<class_LightmapGIData_constant_SHADOWMASK_MODE_NONE>` a qualsiasi altra modalità.
 
 .. rst-class:: classref-item-separator
 
@@ -739,7 +739,7 @@ Se ``true``, utilizza un algoritmo di rimozione del rumore basato su GPU sulla l
 - |void| **set_use_texture_for_bounces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_texture_for_bounces**\ (\ )
 
-Se ``true``, sarà generata una texture con le informazioni di illuminazione per velocizzare la generazione dell'illuminazione indiretta a scapito di accuratezza. La geometria potrebbe presentare ulteriori artefatti di perdita di luce quando si usano lightmap a bassa risoluzione o UV che allungano notevolmente la lightmap sulle superfici. Lascia :ref:`use_texture_for_bounces<class_LightmapGI_property_use_texture_for_bounces>` al suo valore predefinito di ``true`` se non sei sicuro.
+Se ``true``, sarà generata una texture con le informazioni di illuminazione per velocizzare la generazione dell'illuminazione indiretta, a scapito di una certa accuratezza. La geometria potrebbe mostrare infiltrazioni di luce in più con lightmap a bassa risoluzione o con UV che stirano molto la lightmap lungo le superfici. Lascia :ref:`use_texture_for_bounces<class_LightmapGI_property_use_texture_for_bounces>` al suo valore predefinito di ``true`` se non sei sicuro.
 
 \ **Nota:** :ref:`use_texture_for_bounces<class_LightmapGI_property_use_texture_for_bounces>` ha effetto solo se :ref:`bounces<class_LightmapGI_property_bounces>` è impostato su un valore maggiore o uguale a ``1``.
 
@@ -747,7 +747,7 @@ Se ``true``, sarà generata una texture con le informazioni di illuminazione per
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

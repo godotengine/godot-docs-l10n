@@ -1387,7 +1387,7 @@ El shader es un shader de niebla 3D.
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_TEXTURE_BLIT** = ``5``
 
-Shader is a texture_blit shader.
+El sombreador es un shader de tipo texture_blit.
 
 .. _class_RenderingServer_constant_SHADER_MAX:
 
@@ -2925,7 +2925,7 @@ Vector field attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_SPHERE_COLLIDE** = ``3``
 
-Sphere collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesCollisionSphere3D<class_GPUParticlesCollisionSphere3D>`).
+Tipo de colisión esférica para :ref:`GPUParticles3D<class_GPUParticles3D>` (véase :ref:`GPUParticlesCollisionSphere3D<class_GPUParticlesCollisionSphere3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_BOX_COLLIDE:
 
@@ -2933,7 +2933,7 @@ Sphere collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_BOX_COLLIDE** = ``4``
 
-Box collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesCollisionBox3D<class_GPUParticlesCollisionBox3D>`).
+Tipo de colisión de caja para :ref:`GPUParticles3D<class_GPUParticles3D>` (véase :ref:`GPUParticlesCollisionBox3D<class_GPUParticlesCollisionBox3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_SDF_COLLIDE:
 
@@ -4361,7 +4361,7 @@ enum **EnvironmentFogMode**: :ref:`🔗<enum_RenderingServer_EnvironmentFogMode>
 
 :ref:`EnvironmentFogMode<enum_RenderingServer_EnvironmentFogMode>` **ENV_FOG_MODE_EXPONENTIAL** = ``0``
 
-Use a physically-based fog model defined primarily by fog density.
+Utilice un modelo de niebla basado en principios físicos, definido principalmente por la densidad de la niebla.
 
 .. _class_RenderingServer_constant_ENV_FOG_MODE_DEPTH:
 
@@ -4369,7 +4369,7 @@ Use a physically-based fog model defined primarily by fog density.
 
 :ref:`EnvironmentFogMode<enum_RenderingServer_EnvironmentFogMode>` **ENV_FOG_MODE_DEPTH** = ``1``
 
-Use a simple fog model defined by start and end positions and a custom curve. While not physically accurate, this model can be useful when you need more artistic control.
+Utiliza un modelo de niebla sencillo definido por posiciones de inicio y fin y una curva personalizada. Aunque no es físicamente preciso, este modelo puede resultar útil cuando se necesita un mayor control artístico.
 
 .. rst-class:: classref-item-separator
 
@@ -4387,7 +4387,7 @@ enum **EnvironmentToneMapper**: :ref:`🔗<enum_RenderingServer_EnvironmentToneM
 
 :ref:`EnvironmentToneMapper<enum_RenderingServer_EnvironmentToneMapper>` **ENV_TONE_MAPPER_LINEAR** = ``0``
 
-No modifica los datos de color, lo que resulta en una curva de mapeo tonal lineal que recorta de forma antinatural los valores brillantes, haciendo que la iluminación brillante se vea quemada. El mapeador tonal más simple y rápido.
+No modifica los datos de color, lo que resulta en una curva de mapeo tonal lineal que recorta de forma antinatural los valores brillantes, haciendo que la iluminación brillante se aparezca quemada. El mapeador tonal más simple y rápido.
 
 .. _class_RenderingServer_constant_ENV_TONE_MAPPER_REINHARD:
 
@@ -4827,7 +4827,7 @@ Desactiva por completo la dispersión del subsuelo, incluso en materiales que ti
 
 :ref:`SubSurfaceScatteringQuality<enum_RenderingServer_SubSurfaceScatteringQuality>` **SUB_SURFACE_SCATTERING_QUALITY_LOW** = ``1``
 
-Low subsurface scattering quality.
+Calidad baja de dispersión subsuperficial.
 
 .. _class_RenderingServer_constant_SUB_SURFACE_SCATTERING_QUALITY_MEDIUM:
 
@@ -4835,7 +4835,7 @@ Low subsurface scattering quality.
 
 :ref:`SubSurfaceScatteringQuality<enum_RenderingServer_SubSurfaceScatteringQuality>` **SUB_SURFACE_SCATTERING_QUALITY_MEDIUM** = ``2``
 
-Medium subsurface scattering quality.
+Calidad media de dispersión subsuperficial.
 
 .. _class_RenderingServer_constant_SUB_SURFACE_SCATTERING_QUALITY_HIGH:
 
@@ -5311,7 +5311,7 @@ Usa el modo de filtro por defecto para este :ref:`Viewport<class_Viewport>`.
 
 :ref:`CanvasItemTextureFilter<enum_RenderingServer_CanvasItemTextureFilter>` **CANVAS_ITEM_TEXTURE_FILTER_NEAREST** = ``1``
 
-El filtro de textura lee solo del píxel más cercano. Esto hace que la textura se vea pixelada de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
+El filtro de textura lee solo del píxel más cercano. Esto hace que la textura se parezca pixelada de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_TEXTURE_FILTER_LINEAR:
 
@@ -5319,7 +5319,7 @@ El filtro de textura lee solo del píxel más cercano. Esto hace que la textura 
 
 :ref:`CanvasItemTextureFilter<enum_RenderingServer_CanvasItemTextureFilter>` **CANVAS_ITEM_TEXTURE_FILTER_LINEAR** = ``2``
 
-El filtro de textura mezcla entre los 4 píxeles más cercanos. Esto hace que la textura se vea suave de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
+El filtro de textura mezcla entre los 4 píxeles más cercanos. Esto hace que la textura se aparezca suave de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS:
 
@@ -6039,7 +6039,7 @@ Stretches image to fullscreen while preserving aspect ratio.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_KEEP_WIDTH** = ``2``
 
-Stretches the height of the image based on the width of the screen.
+Estira la altura de la imagen en función del ancho de la pantalla.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_KEEP_HEIGHT:
 
@@ -6047,7 +6047,7 @@ Stretches the height of the image based on the width of the screen.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_KEEP_HEIGHT** = ``3``
 
-Stretches the width of the image based on the height of the screen.
+Estira la anchura de la imagen en función de la altura de la pantalla.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_COVER:
 
@@ -9459,7 +9459,7 @@ Sets the maximum SDFGI cascade in which the 3D light's indirect lighting is rend
 
 |void| **light_set_negative**\ (\ light\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_light_set_negative>`
 
-If ``true``, the 3D light will subtract light instead of adding light. Equivalent to :ref:`Light3D.light_negative<class_Light3D_property_light_negative>`.
+Si es ``true``, la luz 3D restará luz en lugar de añadirla. Equivalente a :ref:`Light3D.light_negative<class_Light3D_property_light_negative>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12099,7 +12099,7 @@ Calculates new MipMaps for the given Drawable ``texture``.
 
 :ref:`RID<class_RID>` **texture_drawable_get_default_material**\ (\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_drawable_get_default_material>`
 
-Returns a ShaderMaterial with the default texture_blit Shader.
+Devuelve un ShaderMaterial con el shader texture_blit predeterminado.
 
 .. rst-class:: classref-item-separator
 
@@ -12384,7 +12384,7 @@ See also :ref:`get_rendering_info()<class_RenderingServer_method_get_rendering_i
 
 :ref:`RID<class_RID>` **viewport_get_render_target**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_viewport_get_render_target>`
 
-Returns the render target for the viewport.
+Devuelve el destino de renderizado para el viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -12422,7 +12422,7 @@ Returns the viewport's update mode.
 
 |void| **viewport_remove_canvas**\ (\ viewport\: :ref:`RID<class_RID>`, canvas\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_remove_canvas>`
 
-Detaches a viewport from a canvas.
+Desvincula un viewport de un canvas.
 
 .. rst-class:: classref-item-separator
 

@@ -14,7 +14,7 @@ Biblioteca de mallas.
 Descripción
 ----------------------
 
-Una librería de mallas. Contiene una lista de recursos de :ref:`Mesh<class_Mesh>`, cada uno con un nombre y una ID. Cada elemento también puede incluir formas de colisión y navegación. Este recurso se usa en :ref:`GridMap<class_GridMap>`.
+Una biblioteca de mallas. Contiene una lista de recursos de :ref:`Mesh<class_Mesh>`, cada uno con un nombre y una ID. Cada elemento también puede incluir formas de colisión y navegación. Este recurso se usa en :ref:`GridMap<class_GridMap>`.
 
 .. rst-class:: classref-introduction-group
 

@@ -16,7 +16,7 @@ Descrizione
 
 Questa è una versione semplice di :ref:`LookAtModifier3D<class_LookAtModifier3D>` che consente solo un osso come riferimento, senza opzioni avanzate come la limitazione dell'angolo o l'interpolazione nel tempo.
 
-La funzionalità è semplificata, ma è implementata con un tracciamento fluido senza Eulero, vedere :ref:`set_use_euler()<class_AimModifier3D_method_set_use_euler>`.
+La funzionalità è semplificata, ma è implementata con un tracciamento fluido senza Eulero, vedi :ref:`set_use_euler()<class_AimModifier3D_method_set_use_euler>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -181,11 +181,11 @@ Imposta l'asse della prima rotazione. È abilitato solo se :ref:`is_using_euler(
 
 |void| **set_relative**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AimModifier3D_method_set_relative>`
 
-Sets relative option in the setting at ``index`` to ``enabled``.
+Imposta l'opzione relativa nell'impostazione all'indice ``index`` su ``enabled``.
 
-If sets ``enabled`` to ``true``, the rotation is applied relative to the pose.
+Se ``enabled`` è impostato su ``true``, la rotazione è applicata relativa alla posa.
 
-If sets ``enabled`` to ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **AimModifier3D**'s result.
+Se ``enabled`` è impostato su ``false``, la rotazione è applicata relativa al riposo. Significa sostituire la posa attuale con il risultato di **AimModifier3D**.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Se ``enabled`` è impostato su ``true``, fornisce la rotazione su due assi. È a
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

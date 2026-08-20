@@ -9,14 +9,14 @@ Font
 
 **Ereditato da:** :ref:`FontFile<class_FontFile>`, :ref:`FontVariation<class_FontVariation>`, :ref:`SystemFont<class_SystemFont>`
 
-Classe di base astratta per font e variazioni di font.
+Classe base astratta per font e variazioni di font.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Classe di base astratta per diversi tipi di font. Ha metodi per disegnare testo e introspezione dei caratteri dei font.
+Classe base astratta per diversi tipi di font. Ha metodi per disegnare testo e introspezione dei caratteri dei font.
 
 .. rst-class:: classref-reftable-group
 
@@ -245,9 +245,9 @@ Restituisce il RID di :ref:`TextServer<class_TextServer>` della cache del font p
 
 :ref:`float<class_float>` **get_ascent**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_ascent>`
 
-Returns the maximum font ascent (number of pixels above the baseline) of this font and all fallback fonts.
+Restituisce l'ascesa media (numero di pixel sopra la linea di base) di questo font e di tutti i font di riserva.
 
-\ **Note:** Real ascent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the ascent of empty line).
+\ **Nota:** L'ascesa reale della stringa dipende dal contesto e può essere significativamente diversa dal valore restituito da questa funzione. Utilizzala solo come stima approssimativa (ad esempio come ascesa di una riga vuota).
 
 .. rst-class:: classref-item-separator
 
@@ -273,9 +273,9 @@ Restituisce le dimensioni di un carattere. Non tiene conto del kerning.
 
 :ref:`float<class_float>` **get_descent**\ (\ font_size\: :ref:`int<class_int>` = 16\ ) |const| :ref:`🔗<class_Font_method_get_descent>`
 
-Returns the maximum font descent (number of pixels below the baseline) of this font and all fallback fonts.
+Restituisce la discesa media (numero di pixel sotto la linea di base) di questo font e di tutti i font di riserva.
 
-\ **Note:** Real descent of the string is context-dependent and can be significantly different from the value returned by this function. Use it only as rough estimate (e.g. as the descent of empty line).
+\ **Nota:** La discesa reale della stringa dipende dal contesto e può essere significativamente diversa dal valore restituito da questa funzione. Utilizzala solo come stima approssimativa (ad esempio come discesa di una riga vuota).
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ Restituisce il nome della famiglia del font.
 
 :ref:`int<class_int>` **get_font_stretch**\ (\ ) |const| :ref:`🔗<class_Font_method_get_font_stretch>`
 
-Restituisce la quantità di allungamento del font, rispetto a una larghezza normale. Un valore percentuale compreso tra ``50%`` e ``200%``.
+Restituisce la quantità di allargamento del font, rispetto a una larghezza normale. Un valore percentuale compreso tra ``50%`` e ``200%``.
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ Restituisce un :ref:`Dictionary<class_Dictionary>` con le stringhe di nomi di fo
 
 :ref:`PackedColorArray<class_PackedColorArray>` **get_palette_colors**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Font_method_get_palette_colors>`
 
-Returns the array in the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors. Colors can be overridden using :ref:`FontVariation<class_FontVariation>`.
+Restituisce l'array nella tavolozza predefinita di colori all'indice ``index``. La tavolozza contiene tutti i colori utilizzati per renderizzare i glifi del font. Ogni tavolozza ha lo stesso numero di colori. I colori si possono sovrascrivere tramite :ref:`FontVariation<class_FontVariation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ Returns the array in the predefined color palette at ``index``. Palette contains
 
 :ref:`int<class_int>` **get_palette_count**\ (\ ) |const| :ref:`🔗<class_Font_method_get_palette_count>`
 
-Returns the number of predefined color palettes. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+Restituisce il numero di tavolozze predefinite di colori. La tavolozza contiene tutti i colori utilizzati per renderizzare i glifi del font. Ogni tavolozza ha lo stesso numero di colori.
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ Returns the number of predefined color palettes. Palette contains all colors use
 
 :ref:`String<class_String>` **get_palette_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Font_method_get_palette_name>`
 
-Returns the name of the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+Restituisce il nome della tavolozza predefinita di colori all'indice ``index``. La tavolozza contiene tutti i colori utilizzati per renderizzare i glifi del font. Ogni tavolozza ha lo stesso numero di colori.
 
 .. rst-class:: classref-item-separator
 
@@ -597,7 +597,7 @@ Restituisce ``true`` se il carattere Unicode ``char`` è disponibile nel font.
 
 :ref:`bool<class_bool>` **is_language_supported**\ (\ language\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Font_method_is_language_supported>`
 
-Returns ``true`` if the font supports the given language (as a `ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__ code).
+Restituisce ``true``, se il font supporta la lingua specificata (in codice `ISO 639 <https://it.wikipedia.org/wiki/ISO_639-1>`__).
 
 .. rst-class:: classref-item-separator
 
@@ -609,7 +609,7 @@ Returns ``true`` if the font supports the given language (as a `ISO 639 <https:/
 
 :ref:`bool<class_bool>` **is_script_supported**\ (\ script\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Font_method_is_script_supported>`
 
-Returns ``true`` if the font supports the given script (as a `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__ code).
+Restituisce ``true``, se il font supporta l'alfabeto specificato (in codice `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__).
 
 .. rst-class:: classref-item-separator
 
@@ -627,7 +627,7 @@ Imposta la capacità della cache LRU per i metodi ``draw_*``.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

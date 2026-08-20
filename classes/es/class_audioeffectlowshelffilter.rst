@@ -14,9 +14,9 @@ Adds a low-shelf filter to an audio bus.
 Descripción
 ----------------------
 
-A "low-shelf" filter controls the gain of all frequencies below :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+Un filtro de "estantería baja" controla la ganancia de todas las frecuencias inferiores a :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
-This filter can be used to adjust the "strength" of a sound, by increasing or decreasing its low-end.
+Este filtro puede utilizarse para ajustar la "intensidad" de un sonido, aumentando o reduciendo sus frecuencias bajas.
 
 .. rst-class:: classref-introduction-group
 

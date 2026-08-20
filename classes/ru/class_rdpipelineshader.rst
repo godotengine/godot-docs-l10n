@@ -9,16 +9,16 @@ RDPipelineShader
 
 **Наследует:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Pipeline shader (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+Конвейерный шейдер (используется :ref:`RenderingDevice<class_RenderingDevice>`).
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Wraps a shader resource and allows specialization constants to be applied at pipeline creation time.
+Оборачивает ресурс шейдера и позволяет применять константы специализации во время создания конвейера.
 
-Used by :ref:`RenderingDevice.raytracing_pipeline_create()<class_RenderingDevice_method_raytracing_pipeline_create>` for ray generation, miss, and hit shaders. The pipeline selects the required shader stage automatically.
+Используется методом :ref:`RenderingDevice.raytracing_pipeline_create()<class_RenderingDevice_method_raytracing_pipeline_create>` для генерации лучей, шейдеров промахов и попаданий. Конвейер автоматически выбирает необходимый этап шейдера.
 
 .. rst-class:: classref-reftable-group
 
@@ -54,7 +54,7 @@ Used by :ref:`RenderingDevice.raytracing_pipeline_create()<class_RenderingDevice
 - |void| **set_shader**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_shader**\ (\ )
 
-Shader resource. The required stage is selected by the pipeline.
+Ресурс шейдера. Необходимый этап выбирается конвейером.
 
 .. rst-class:: classref-item-separator
 
@@ -71,7 +71,7 @@ Shader resource. The required stage is selected by the pipeline.
 - |void| **set_specialization_constants**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RDPipelineSpecializationConstant<class_RDPipelineSpecializationConstant>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RDPipelineSpecializationConstant<class_RDPipelineSpecializationConstant>`\] **get_specialization_constants**\ (\ )
 
-Specialization constants applied to the selected shader stage at pipeline creation time.
+Константы специализации, применяемые к выбранному этапу шейдера во время создания конвейера.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

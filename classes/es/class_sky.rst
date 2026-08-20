@@ -93,7 +93,7 @@ El tamaño de la textura del resplandor es de 512×512 píxeles.
 
 :ref:`RadianceSize<enum_Sky_RadianceSize>` **RADIANCE_SIZE_1024** = ``5``
 
-Radiance texture size is 1024×1024 pixels.
+El tamaño de la textura de radiancia es de 1024 × 1024 píxeles.
 
 .. _class_Sky_constant_RADIANCE_SIZE_2048:
 
@@ -101,7 +101,7 @@ Radiance texture size is 1024×1024 pixels.
 
 :ref:`RadianceSize<enum_Sky_RadianceSize>` **RADIANCE_SIZE_2048** = ``6``
 
-Radiance texture size is 2048×2048 pixels.
+El tamaño de la textura de radiancia es de 2048 × 2048 píxeles.
 
 .. _class_Sky_constant_RADIANCE_SIZE_MAX:
 

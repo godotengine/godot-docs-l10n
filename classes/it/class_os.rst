@@ -226,7 +226,7 @@ enum **RenderingDriver**: :ref:`🔗<enum_OS_RenderingDriver>`
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_VULKAN** = ``0``
 
-The Vulkan rendering driver. It requires Vulkan 1.0 support and automatically uses features from Vulkan 1.1, 1.2, and 1.3 if available.
+Il driver di rendering Vulkan. Richiede il supporto per Vulkan 1.0 e utilizza automaticamente le funzionalità di Vulkan 1.1, 1.2 e 1.3, se disponibili.
 
 .. _class_OS_constant_RENDERING_DRIVER_OPENGL3:
 
@@ -242,7 +242,7 @@ Il driver di rendering OpenGL 3. Utilizza OpenGL 3.3 Core Profile su piattaforme
 
 :ref:`RenderingDriver<enum_OS_RenderingDriver>` **RENDERING_DRIVER_D3D12** = ``2``
 
-The Direct3D 12 rendering driver. It requires the 12_0 feature level and Shader Model 6.0 support.
+Il driver di rendering Direct3D 12. Richiede il livello di funzionalità 12_0 e il supporto per Shader Model 6.0.
 
 .. _class_OS_constant_RENDERING_DRIVER_METAL:
 
@@ -739,21 +739,21 @@ Da non confondere con :ref:`get_user_data_dir()<class_OS_method_get_user_data_di
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_cmdline_args**\ (\ ) :ref:`🔗<class_OS_method_get_cmdline_args>`
 
-Returns the command-line arguments passed to the engine, excluding arguments processed by the engine, such as ``--headless`` and ``--fullscreen``.
+Restituisce gli argomenti della riga di comando passati al motore, escludendo gli argomenti elaborati dal motore stesso, come ``--headless`` e ``--fullscreen``.
 
 ::
 
-    # Godot has been executed with the following command:
+    # Godot è stato eseguito con il seguente comando:
     # godot --headless --verbose --scene my_scene.tscn --custom
-    OS.get_cmdline_args() # Returns ["--scene", "my_scene.tscn", "--custom"]
+    OS.get_cmdline_args() # Restituisce ["--scene", "my_scene.tscn", "--custom"]
 
-Command-line arguments can be written in any form, including both ``--key value`` and ``--key=value`` forms so they can be properly parsed, as long as custom command-line arguments do not conflict with engine arguments.
+Gli argomenti della riga di comando possono essere scritti in qualsiasi formato, inclusi i formati ``--chiave valore`` e ``--chiave=valore``, in modo che possano essere analizzati correttamente, purché gli argomenti della riga di comando personalizzati non siano in conflitto con gli argomenti del motore.
 
-You can also incorporate environment variables using the :ref:`get_environment()<class_OS_method_get_environment>` method.
+Puoi anche incorporare variabili di ambiente usando il metodo :ref:`get_environment()<class_OS_method_get_environment>`.
 
-You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings_property_editor/run/main_run_args>` to define command-line arguments to be passed by the editor when running the project.
+Puoi impostare :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings_property_editor/run/main_run_args>` per definire gli argomenti della riga di comando che devono essere passati dall'editor durante l'esecuzione del progetto.
 
-\ **Example:** Parse command-line arguments into a :ref:`Dictionary<class_Dictionary>` using the ``--key=value`` form for arguments:
+\ **Esempio:** Interpreta gli argomenti della riga di comando in un :ref:`Dictionary<class_Dictionary>` usando il formato ``--chiave=valore`` per gli argomenti:
 
 
 .. tabs::
@@ -790,7 +790,7 @@ You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings
 
 
 
-\ **Note:** Passing custom user arguments directly is not recommended, as the engine may discard or modify them. Instead, pass the standard UNIX double dash (``--``) and then the custom arguments, which the engine will ignore by design. These can be read via :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
+\ **Nota:** Non è consigliabile passare direttamente argomenti utente personalizzati, poiché il motore potrebbe scartarli o modificarli. Invece, passa il doppio trattino UNIX standard (``--``) e poi gli argomenti personalizzati, che il motore ignorerà per impostazione predefinita. Questi possono essere letti tramite :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1742,17 +1742,17 @@ Apre uno o più file/cartelle con l'applicazione specificata. Il parametro ``pro
 
 :ref:`PackedByteArray<class_PackedByteArray>` **read_buffer_from_stdin**\ (\ buffer_size\: :ref:`int<class_int>` = 1024\ ) :ref:`🔗<class_OS_method_read_buffer_from_stdin>`
 
-Reads a user input as raw data from the standard input. This operation can be *blocking*, which causes the window to freeze if :ref:`read_buffer_from_stdin()<class_OS_method_read_buffer_from_stdin>` is called on the main thread.
+Legge l'input dell'utente dall'input standard come dati grezzi. Questa operazione può essere *bloccante*, il che causa il blocco della finestra se :ref:`read_buffer_from_stdin()<class_OS_method_read_buffer_from_stdin>` viene chiamato sul thread principale.
 
-- If standard input is console, this method will block until the program receives a line break in standard input (usually by the user pressing :kbd:`Enter`).
+- Se l'input standard è una console, questo metodo si bloccherà finché il programma non riceverà un'interruzione di riga nell'input standard (solitamente quando l'utente preme :kbd:`Invio`).
 
-- If standard input is pipe, this method will block until a specific amount of data is read or pipe is closed.
+- Se l'input standard è una pipe, questo metodo si bloccherà finché non verrà letta una quantità specifica di dati o la pipe verrà chiusa.
 
-- If standard input is a file, this method will read a specific amount of data (or less if end-of-file is reached) and return immediately.
+- Se l'input standard è un file, questo metodo leggerà una quantità specifica di dati (o meno se viene raggiunta la fine del file) e restituirà immediatamente.
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **Nota:** Questo metodo è implementato su Linux, macOS e Windows.
 
-\ **Note:** On exported Windows builds, run the console wrapper executable to access the terminal. If standard input is console, calling this method without console wrapped will freeze permanently. If standard input is pipe or file, it can be used without console wrapper. If you need a single executable with full console support, use a custom build compiled with the ``windows_subsystem=console`` flag.
+\ **Nota:** Nelle build Windows esportate, esegui l'eseguibile wrapper della console per accedere al terminale. Altrimenti, l'input standard non funzionerà correttamente. Se hai bisogno di un singolo eseguibile con supporto per la console, usa una build personalizzata compilata con il flag ``windows_subsystem=console``.
 
 .. rst-class:: classref-item-separator
 
@@ -1964,7 +1964,7 @@ Rimuove la variabile di ambiente specificata dall'ambiente corrente, se esiste. 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

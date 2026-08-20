@@ -83,7 +83,7 @@ Lo shadowmasking è disattivato. Non verrà creata alcuna texture di shadowmask 
 
 :ref:`ShadowmaskMode<enum_LightmapGIData_ShadowmaskMode>` **SHADOWMASK_MODE_REPLACE** = ``1``
 
-Lo shadowmasking è abilitato. Le ombre direzionali che si trovano al di fuori di :ref:`DirectionalLight3D.directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` saranno renderizzate utilizzando la texture di shadowmask. Le ombre che si trovano all'interno dell'intervallo saranno renderizzate esclusivamente utilizzando ombre in tempo reale. Questa modalità rende le ombre in tempo reale più precise da vicino, senza il potenziale effetto "smearing" che può verificarsi usando le lightmap con dimensioni elevate di texel . Lo svantaggio è che quando la telecamera si muove rapidamente, la transizione tra la luce in tempo reale e la shadowmask può essere evidente. Inoltre, gli oggetti che hanno solo ombre integrate nella shadowmask (e nessuna ombra in tempo reale) non mostreranno alcuna ombra da vicino.
+Lo shadowmasking è abilitato. Le ombre direzionali fuori dalla portata definita da :ref:`DirectionalLight3D.directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` saranno renderizzate utilizzando la texture di shadowmask. Le ombre entro questa portata saranno renderizzate esclusivamente utilizzando ombre in tempo reale. Questa modalità rende le ombre in tempo reale più precise da vicino, senza il potenziale effetto di "sbavatura" che può avvenire usando le lightmap con dimensioni elevate di texel . Lo svantaggio è che quando la telecamera si muove rapidamente, la transizione tra la luce in tempo reale e la shadowmask può essere molto evidente. Inoltre, gli oggetti che hanno solo ombre integrate nella shadowmask (e nessuna ombra in tempo reale) non mostreranno alcuna ombra da vicino.
 
 .. _class_LightmapGIData_constant_SHADOWMASK_MODE_OVERLAY:
 
@@ -234,7 +234,7 @@ Se ``uses_spherical_harmonics`` è ``true``, indica al motore di trattare i dati
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

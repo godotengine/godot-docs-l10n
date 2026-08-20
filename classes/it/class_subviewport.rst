@@ -16,7 +16,7 @@ Descrizione
 
 **SubViewport** isola una regione rettangolare di una scena da visualizzare in modo indipendente. Può essere utilizzato, ad esempio, per visualizzare l'interfaccia utente nello spazio 3D.
 
-\ **Nota:** **SubViewport** è un :ref:`Viewport<class_Viewport>` che non è un :ref:`Window<class_Window>`, ovvero non disegna nulla da solo. Per visualizzare qualcosa, **SubViewport** deve avere una dimensione diversa da zero ed essere inserito in un :ref:`SubViewportContainer<class_SubViewportContainer>` o assegnato a una :ref:`ViewportTexture<class_ViewportTexture>`.
+\ **Nota:** **SubViewport** è una :ref:`Viewport<class_Viewport>` che non è un :ref:`Window<class_Window>`, ovvero non disegna nulla da sola. Per visualizzare qualcosa, una **SubViewport** deve avere dimensioni diverse da zero ed essere inserita in un :ref:`SubViewportContainer<class_SubViewportContainer>` o assegnata a una :ref:`ViewportTexture<class_ViewportTexture>`.
 
 \ **Nota:** Gli :ref:`InputEvent<class_InputEvent>` non vengono passati a una **SubViewport** a sé stante, come predefinito. Per garantire la propagazione degli :ref:`InputEvent<class_InputEvent>`, una **SubViewport** può essere posizionata all'interno di un :ref:`SubViewportContainer<class_SubViewportContainer>`.
 
@@ -261,13 +261,13 @@ Se ``true``, la sostituzione delle dimensioni 2D influisce anche sull'allungamen
 - |void| **set_view_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_view_count**\ (\ )
 
-The number of view layers we are rendering to. Set this to ``2`` to enable stereo rendering.
+Il numero di livelli di vista su cui stiamo renderizzando. Impostalo su ``2`` per abilitare il rendering stereoscopico.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

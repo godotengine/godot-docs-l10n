@@ -7,26 +7,26 @@ AudioEffectDistortion
 
 **Eredita:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a distortion audio effect to an audio bus.
+Aggiunge un effetto audio di distorsione a un bus audio.
 
-Remaps audio samples using a nonlinear function to achieve a distorted sound.
+Rimappa i campioni audio attraversa una funzione non lineare per ottenere un suono distorto.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-A "distortion" effect modifies the waveform via a nonlinear mathematical function (see available ones in :ref:`Mode<enum_AudioEffectDistortion_Mode>`), based on the amplitude of the waveform's samples.
+Un effetto "distorsione" modifica la forma d'onda tramite una funzione matematica non lineare (vedi quelle disponibili in :ref:`Mode<enum_AudioEffectDistortion_Mode>`), basata sull'ampiezza dei campioni della forma d'onda.
 
-\ **Note:** In a nonlinear function, an input sample at *x* amplitude value, will either have its amplitude increased or decreased to a *y* value, based on the function value at *x*, which is why even at the same :ref:`drive<class_AudioEffectDistortion_property_drive>`, the output sound will vary depending on the input's volume. To change the volume while maintaining the output waveform, use :ref:`post_gain<class_AudioEffectDistortion_property_post_gain>`.
+\ **Nota:** In una funzione non lineare, un campione in ingresso con un valore di ampiezza *x* avrà la sua ampiezza aumentata o diminuita a un valore *y*, in base al valore della funzione in *x*, motivo per cui, anche con lo stesso :ref:`drive<class_AudioEffectDistortion_property_drive>`, il suono in uscita varierà a seconda del volume in ingresso. Per modificare il volume mantenendo la forma d'onda in uscita, usa :ref:`post_gain<class_AudioEffectDistortion_property_post_gain>`.
 
-In this effect, each type is a different nonlinear function. The different types available are: clip, atan, lofi (bitcrush), overdrive, and waveshape. Every distortion type available here is symmetric: negative amplitude values are affected the same way as positive ones.
+In questo effetto, ogni tipo corrisponde a una diversa funzione non lineare. I diversi tipi disponibili sono: clip, atan, lofi (bitcrush), overdrive e waveshape. Ogni tipo di distorsione disponibile è simmetrico: i valori di ampiezza negativi sono influenzati allo stesso modo di quelli positivi.
 
-Although distortion will always change frequency content, usually by introducing high harmonics, different distortion types offer a range of sound qualities; from "soft" and "warm", to "crunchy" and "abrasive".
+Sebbene la distorsione modifichi sempre il contenuto in una frequenza, solitamente introducendo armoniche acute, i diversi tipi di distorsione offrono una gamma di qualità sonore: da "soffice" e "accogliente" a "croccante" e "abrasivo".
 
-For games, it can help simulate sound coming from some saturated device or speaker very efficiently. It can also help the audio stand out in a mix, by introducing higher frequencies and increasing the volume.
+Nei videogiochi, può essere utile per simulare, in modo molto efficace, il suono proveniente da un dispositivo o un altoparlante saturo. Può anche aiutare a far risaltare l'audio in un mix, introducendo frequenze più alte e aumentandone il volume.
 
-\ **Note:** Although usually imperceptible, an enabled distortion effect still changes the sound even when :ref:`drive<class_AudioEffectDistortion_property_drive>` is set to 0. This is not a bug. If this behavior is undesirable, consider disabling the effect using :ref:`AudioServer.set_bus_effect_enabled()<class_AudioServer_method_set_bus_effect_enabled>`.
+\ **Nota:** Sebbene solitamente impercettibile, un effetto di distorsione abilitato modifica comunque il suono anche quando :ref:`drive<class_AudioEffectDistortion_property_drive>` è impostato su 0. Questo non è un bug. Se questo comportamento non è desiderato, si consiglia di disabilitare l'effetto usando :ref:`AudioServer.set_bus_effect_enabled()<class_AudioServer_method_set_bus_effect_enabled>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -35,7 +35,7 @@ Tutorial
 
 - :doc:`Bus audio <../tutorials/audio/audio_buses>`
 
-- :doc:`Audio effects <../tutorials/audio/audio_effects>`
+- :doc:`Effetti audio <../tutorials/audio/audio_effects>`
 
 .. rst-class:: classref-reftable-group
 
@@ -78,7 +78,7 @@ enum **Mode**: :ref:`🔗<enum_AudioEffectDistortion_Mode>`
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_CLIP** = ``0``
 
-Flattens the waveform at 0 dB in a sharp manner. :ref:`drive<class_AudioEffectDistortion_property_drive>` increases amplitude of samples exponentially. This mode functions as a hard clipper if :ref:`drive<class_AudioEffectDistortion_property_drive>` is set to 0, and is the only mode that clips audio signals at 0 dB.
+Appiattisce la forma d'onda a 0 dB in maniera netta. :ref:`drive<class_AudioEffectDistortion_property_drive>` aumenta l'ampiezza dei campioni esponenzialmente. Questa modalità funge da hard clipper se :ref:`drive<class_AudioEffectDistortion_property_drive>` è impostato su 0 ed è l'unica modalità che tronca i segnali audio a 0 dB.
 
 .. _class_AudioEffectDistortion_constant_MODE_ATAN:
 
@@ -86,7 +86,7 @@ Flattens the waveform at 0 dB in a sharp manner. :ref:`drive<class_AudioEffectDi
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_ATAN** = ``1``
 
-Flattens the waveform in a smooth manner, following an arctangent curve. The audio decreases in volume, before flattening peaks to ``PI * 4.0`` (linear value), if it was normalized beforehand.
+Appiattisce la forma d'onda in maniera graduale, seguendo una curva arcotangente. Il volume dell'audio diminuisce prima di appiattire i picchi a ``PI * 4.0`` (valore lineare), se è stato normalizzato in precedenza.
 
 .. _class_AudioEffectDistortion_constant_MODE_LOFI:
 
@@ -94,7 +94,7 @@ Flattens the waveform in a smooth manner, following an arctangent curve. The aud
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_LOFI** = ``2``
 
-Decreases audio bit depth to achieve a low-resolution audio signal, going from 16-bit to 2-bit. Can be used to emulate the sound of early digital audio devices.
+Riduce la profondità di bit dell'audio per ottenere un segnale audio a bassa risoluzione, passando da 16 bit a 2 bit. È possibile utilizzarlo per emulare il suono di vecchi dispositivi audio digitali.
 
 .. _class_AudioEffectDistortion_constant_MODE_OVERDRIVE:
 
@@ -102,7 +102,7 @@ Decreases audio bit depth to achieve a low-resolution audio signal, going from 1
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_OVERDRIVE** = ``3``
 
-Emulates the warm distortion produced by a field effect transistor, which is commonly used in solid-state musical instrument amplifiers. :ref:`drive<class_AudioEffectDistortion_property_drive>` has no effect in this mode.
+Emula l'accogliente distorsione prodotta da un transistor a effetto di campo, che è comunemente usato negli amplificatori per strumenti musicali a stato solido. La proprietà :ref:`drive<class_AudioEffectDistortion_property_drive>` non ha effetto in questa modalità.
 
 .. _class_AudioEffectDistortion_constant_MODE_WAVESHAPE:
 
@@ -110,7 +110,7 @@ Emulates the warm distortion produced by a field effect transistor, which is com
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_WAVESHAPE** = ``4``
 
-Flattens the waveform in a smooth manner, until it reaches a sharp peak at ``drive = 1``, following a generic absolute sigmoid function.
+Appiattisce la forma d'onda in maniera graduale, fino a raggiungere un picco netto a ``drive = 1``, seguendo una generica funzione sigmoide assoluta.
 
 .. rst-class:: classref-section-separator
 
@@ -132,7 +132,7 @@ Descrizioni delle proprietà
 - |void| **set_drive**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drive**\ (\ )
 
-Distortion intensity. Controls how much of the input audio is affected by the distortion curve by moving from a linear function to a nonlinear one. Value can range from 0 to 1.
+Intensità della distorsione. Controlla quanto il segnale audio in ingresso è influenzato dalla curva di distorsione, passando da una funzione lineare a una non lineare. Il valore può variare da 0 a 1.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Filtro a passa-alto, in Hz. Le frequenze superiori a questo valore non saranno i
 - |void| **set_mode**\ (\ value\: :ref:`Mode<enum_AudioEffectDistortion_Mode>`\ )
 - :ref:`Mode<enum_AudioEffectDistortion_Mode>` **get_mode**\ (\ )
 
-Distortion type. Changes the nonlinear function used to distort the waveform. See :ref:`Mode<enum_AudioEffectDistortion_Mode>`.
+Tipo di distorsione. Cambia la funzione non lineare utilizzata per distorcere la forma d'onda. Vedi :ref:`Mode<enum_AudioEffectDistortion_Mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ Distortion type. Changes the nonlinear function used to distort the waveform. Se
 - |void| **set_post_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_post_gain**\ (\ )
 
-Gain after the effect, in dB. Value can range from -80 to 24.
+Guadagno dopo l'effetto, in dB. Il valore può variare da -80 a 24.
 
 .. rst-class:: classref-item-separator
 
@@ -200,13 +200,13 @@ Gain after the effect, in dB. Value can range from -80 to 24.
 - |void| **set_pre_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain**\ (\ )
 
-Gain before the effect, in dB. Value can range from -60 to 60.
+Guadagno prima dell'effetto, in dB. Il valore può variare da -60 a 60.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

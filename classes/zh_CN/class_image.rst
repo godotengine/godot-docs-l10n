@@ -446,7 +446,7 @@ OpenGL 纹理格式 ``GL_RGBA16F``\ ，其中有四个分量，每个都是 16 �
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_R11** = ``26``
 
-`ETC2%E5%92%8CEAC]爱立信纹理压缩格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``R11_EAC`` 变体），它提供一个无符号数据通道。
+`爱立信纹理压缩格式 2 <https://zh.wikipedia.org/wiki/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#%5B3%5DETC2%E5%92%8CEAC>`__\ （\ ``R11_EAC`` 变体），它提供一个无符号数据通道。
 
 .. _class_Image_constant_FORMAT_ETC2_R11S:
 
@@ -454,7 +454,7 @@ OpenGL 纹理格式 ``GL_RGBA16F``\ ，其中有四个分量，每个都是 16 �
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_R11S** = ``27``
 
-`ETC2%E5%92%8CEAC]爱立信纹理压缩格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``SIGNED_R11_EAC`` 变体），它提供一个有符号数据通道。
+`爱立信纹理压缩格式 2 <https://zh.wikipedia.org/wiki/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#%5B3%5DETC2%E5%92%8CEAC>`__\ （\ ``SIGNED_R11_EAC`` 变体），它提供一个有符号数据通道。
 
 .. _class_Image_constant_FORMAT_ETC2_RG11:
 
@@ -462,7 +462,7 @@ OpenGL 纹理格式 ``GL_RGBA16F``\ ，其中有四个分量，每个都是 16 �
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RG11** = ``28``
 
-`ETC2%E5%92%8CEAC]爱立信纹理压缩格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``RG11_EAC`` 变体），它提供一个无符号数据通道。
+`爱立信纹理压缩格式 2 <https://zh.wikipedia.org/wiki/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#%5B3%5DETC2%E5%92%8CEAC>`__\ （\ ``RG11_EAC`` 变体），它提供一个无符号数据通道。
 
 .. _class_Image_constant_FORMAT_ETC2_RG11S:
 
@@ -470,7 +470,7 @@ OpenGL 纹理格式 ``GL_RGBA16F``\ ，其中有四个分量，每个都是 16 �
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RG11S** = ``29``
 
-`ETC2%E5%92%8CEAC]爱立信纹理压缩格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``SIGNED_RG11_EAC`` 变体），它提供两个有符号数据通道。
+`爱立信纹理压缩格式 2 <https://zh.wikipedia.org/wiki/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#%5B3%5DETC2%E5%92%8CEAC>`__\ （\ ``SIGNED_RG11_EAC`` 变体），它提供两个有符号数据通道。
 
 .. _class_Image_constant_FORMAT_ETC2_RGB8:
 
@@ -478,7 +478,7 @@ OpenGL 纹理格式 ``GL_RGBA16F``\ ，其中有四个分量，每个都是 16 �
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RGB8** = ``30``
 
-`ETC2%E5%92%8CEAC]爱立信纹理压缩格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``RGB8`` 变体），它是 ETC1 的后续版本，可压缩 RGB888 数据。
+`爱立信纹理压缩格式 2 <https://zh.wikipedia.org/wiki/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#%5B3%5DETC2%E5%92%8CEAC>`__\ （\ ``RGB8`` 变体），它是 ETC1 的后续版本，可压缩 RGB888 数据。
 
 \ **注意：**\ 创建 :ref:`ImageTexture<class_ImageTexture>` 时，会执行非线性 sRGB 到线性编码的转换。
 
@@ -488,7 +488,7 @@ OpenGL 纹理格式 ``GL_RGBA16F``\ ，其中有四个分量，每个都是 16 �
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RGBA8** = ``31``
 
-`ETC2%E5%92%8CEAC]爱立信纹理压缩格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``RGBA8`` 变体），它可以压缩 RGBA8888 数据，完全支持 Alpha。
+`爱立信纹理压缩格式 2 <https://zh.wikipedia.org/wiki/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#%5B3%5DETC2%E5%92%8CEAC>`__\ （\ ``RGBA8`` 变体），它可以压缩 RGBA8888 数据，完全支持 Alpha。
 
 \ **注意：**\ 创建 :ref:`ImageTexture<class_ImageTexture>` 时，会执行非线性 sRGB 到线性编码的转换。
 
@@ -498,7 +498,7 @@ OpenGL 纹理格式 ``GL_RGBA16F``\ ，其中有四个分量，每个都是 16 �
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RGB8A1** = ``32``
 
-`ETC2%E5%92%8CEAC]爱立信纹理压缩格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``RGB8_PUNCHTHROUGH_ALPHA1`` 变体），它可以压缩 RGBA 数据，使 Alpha 完全透明或完全不透明。
+`爱立信纹理压缩格式 2 <https://zh.wikipedia.org/wiki/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#%5B3%5DETC2%E5%92%8CEAC>`__\ （\ ``RGB8_PUNCHTHROUGH_ALPHA1`` 变体），它可以压缩 RGBA 数据，使 Alpha 完全透明或完全不透明。
 
 \ **注意：**\ 创建 :ref:`ImageTexture<class_ImageTexture>` 时，会执行非线性 sRGB 到线性编码的转换。
 
@@ -508,7 +508,7 @@ OpenGL 纹理格式 ``GL_RGBA16F``\ ，其中有四个分量，每个都是 16 �
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RA_AS_RG** = ``33``
 
-`ETC2%E5%92%8CEAC]爱立信纹理压缩格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``RGBA8`` 变体），能够压缩 RA 数据，将其解释为两个通道（红和绿）。另见 :ref:`FORMAT_ETC2_RGBA8<class_Image_constant_FORMAT_ETC2_RGBA8>`\ 。
+`爱立信纹理压缩格式 2 <https://zh.wikipedia.org/wiki/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#%5B3%5DETC2%E5%92%8CEAC>`__\ （\ ``RGBA8`` 变体），能够压缩 RA 数据，将其解释为两个通道（红和绿）。另见 :ref:`FORMAT_ETC2_RGBA8<class_Image_constant_FORMAT_ETC2_RGBA8>`\ 。
 
 .. _class_Image_constant_FORMAT_DXT5_RA_AS_RG:
 

@@ -431,7 +431,7 @@ Reinicia todos los sonidos que se reproducirán desde el ``to_position`` indicad
 
 |void| **stop**\ (\ ) :ref:`🔗<class_AudioStreamPlayer_method_stop>`
 
-Stops all sounds from this node.
+Detiene todos los sonidos de este nodo.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

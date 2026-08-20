@@ -252,9 +252,9 @@ Informa che la nostra sessione OpenXR è ora visibile, ad esempio l'output viene
 
 **user_presence_changed**\ (\ is_user_present\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_OpenXRInterface_signal_user_presence_changed>`
 
-Signal emitted when the user presence value changes.
+Segnale emesso quando cambia il valore di presenza dell'utente.
 
-\ **Note:** This signal will not be emitted during application startup and application shutdown. Developers should assume user presence is gained on startup and lost on shutdown.
+\ **Nota:** Questo segnale non verrà emesso all'avvio e alla chiusura dell'applicazione. Gli sviluppatori devono presumere che la presenza dell'utente venga acquisita all'avvio e persa alla chiusura.
 
 .. rst-class:: classref-section-separator
 
@@ -345,7 +345,7 @@ La sessione sta per perdersi. :ref:`session_loss_pending<class_OpenXRInterface_s
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_EXITING** = ``8``
 
-The OpenXR instance is about to be destroyed and we're exiting. :ref:`instance_exiting<class_OpenXRInterface_signal_instance_exiting>` is emitted when we change to this state.
+L'istanza OpenXR sta per distruggersi e si sta uscendo. :ref:`instance_exiting<class_OpenXRInterface_signal_instance_exiting>` viene emesso quando si passa a questo stato.
 
 .. rst-class:: classref-item-separator
 
@@ -930,7 +930,7 @@ Il livello di foveazione, da ``0`` (disabilitata) a ``3`` (alta). L'interfaccia 
 - |void| **set_foveation_with_subsampled_images**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_foveation_with_subsampled_images**\ (\ )
 
-If ``true``, enables subsampled images with foveation, which can provide a performance boost on Vulkan.
+Se ``true``, abilita il sottocampionamento delle immagini con foveazione, che può fornire un aumento delle prestazioni su Vulkan.
 
 .. rst-class:: classref-item-separator
 
@@ -1014,7 +1014,7 @@ Restituisce una lista di insiemi di azioni registrati con Godot (caricati dalla 
 
 :ref:`Array<class_Array>` **get_available_display_refresh_rates**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_get_available_display_refresh_rates>`
 
-Returns a list of display refresh rates supported by the current HMD. Only returned if this feature is supported by the OpenXR runtime and after the interface has been initialized.
+Restituisce una lista di frequenze di aggiornamento per i display supportate dall'HMD attuale. Restituito solo se questa funzionalità è supportata dall'OpenXR in fase l'esecuzione e dopo che l'interfaccia è stata inizializzata.
 
 .. rst-class:: classref-item-separator
 
@@ -1216,9 +1216,9 @@ Restituisce ``true`` se il tracciamento delle mani di OpenXR è supportato e abi
 
 :ref:`bool<class_bool>` **is_user_presence_supported**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_is_user_presence_supported>`
 
-Returns ``true`` if OpenXR's user presence extension is supported and enabled.
+Restituisce ``true`` se l'estensione di presenza dell'utente di OpenXR è supportata e abilitata.
 
-\ **Note:** This only returns a valid value after OpenXR has been initialized.
+\ **Nota:** Questo restituisce un valore valido solo dopo l'inizializzazione di OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -1230,7 +1230,7 @@ Returns ``true`` if OpenXR's user presence extension is supported and enabled.
 
 :ref:`bool<class_bool>` **is_user_present**\ (\ ) |const| :ref:`🔗<class_OpenXRInterface_method_is_user_present>`
 
-Returns ``true`` if system has detected the presence of a user in the XR experience.
+Restituisce ``true`` se il sistema ha rilevato la presenza di un utente nell'esperienza XR.
 
 .. rst-class:: classref-item-separator
 
@@ -1284,7 +1284,7 @@ Se il tracciamento della mano è abilitato e l'intervallo di movimento è suppor
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

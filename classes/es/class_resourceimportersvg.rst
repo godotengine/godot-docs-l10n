@@ -53,7 +53,7 @@ Descripciones de Propiedades
 
 :ref:`float<class_float>` **base_scale** = ``1.0`` :ref:`🔗<class_ResourceImporterSVG_property_base_scale>`
 
-Texture scale. ``1.0`` is the original SVG size. Higher values result in a larger image.
+Escala de la textura. ``1.0`` es el tamaño original del SVG. Valores más altos dan como resultado una imagen más grande.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ An alternative to fixing darkened borders with :ref:`fix_alpha_border<class_Reso
 
 :ref:`float<class_float>` **saturation** = ``1.0`` :ref:`🔗<class_ResourceImporterSVG_property_saturation>`
 
-Overrides texture saturation.
+Sobrescribe la saturación de la textura.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -2059,9 +2059,9 @@ If ``include_internal`` is ``false``, internal children are ignored (see :ref:`a
 
 :ref:`Array<class_Array>`\[:ref:`Node<class_Node>`\] **get_children**\ (\ include_internal\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Node_method_get_children>`
 
-返回本節點所有子節點的 :ref:`Array<class_Array>`\ 。
+將此節點的所有子節點回傳入一組 :ref:`Array<class_Array>`\ 。
 
-若 ``include_internal`` 為 ``false``\ ，則回傳陣列中不包含內部子節點（詳見 :ref:`add_child()<class_Node_method_add_child>` 的 ``internal`` 參數）。
+若 ``include_internal`` 爲 ``false``\ ，則從回傳的陣列中排除內部子節點（參見 :ref:`add_child()<class_Node_method_add_child>` 的 ``internal`` 參數）。
 
 .. rst-class:: classref-item-separator
 

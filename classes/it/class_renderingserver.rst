@@ -28,7 +28,7 @@ Allo stesso modo, in 2D, è necessario un canvas per disegnare tutti gli element
 
 \ **3D:** In 3D, tutti gli oggetti visibili sono composti da una risorsa e da un'istanza. Una risorsa può essere una mesh, un sistema di particelle, una luce o qualsiasi altro oggetto 3D. Per essere visibili, è necessario associare le risorse a un'istanza tramite :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>`. È necessario anche associare l'istanza allo scenario tramite :ref:`instance_set_scenario()<class_RenderingServer_method_instance_set_scenario>`. Di solito, i metodi del RenderingServer che non hanno un prefisso sono specificamente per il 3D (ma non sempre).
 
-\ **2D:** In 2D, tutti gli oggetti visibili sono un tipo di elemento canvas. Per essere visibile, un elemento canvas deve essere figlio di un canvas associato a una finestra, oppure deve essere figlio di un altro elemento canvas che viene infine associato al canvas. I metodi del RenderingServer specificamente per il 2D generalmente iniziano con ``canvas_*``.
+\ **2D:** In 2D, tutti gli oggetti visibili sono un tipo di elemento canvas. Per essere visibile, un elemento canvas deve essere figlio di un canvas associato a una viewport, oppure deve essere figlio di un altro elemento canvas che viene infine associato al canvas. I metodi del RenderingServer specificamente per il 2D generalmente iniziano con ``canvas_*``.
 
 \ **Modalità headless:** Avviare il motore con l':doc:`argomento della riga di comando <../tutorials/editor/command_line_tutorial>` ``--headless`` ] disabilita tutte le funzioni di rendering e di gestione delle finestre. La maggior parte delle funzioni del **RenderingServer** restituirà valori fittizi in questo caso.
 
@@ -1387,7 +1387,7 @@ Lo shader è utilizzato per la nebbia 3D.
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_TEXTURE_BLIT** = ``5``
 
-Shader is a texture_blit shader.
+Lo shader è utilizzato per il blitting sulle texture.
 
 .. _class_RenderingServer_constant_SHADER_MAX:
 
@@ -2101,7 +2101,7 @@ Luce omnidirezionale (vedi :ref:`OmniLight3D<class_OmniLight3D>`).
 
 :ref:`LightType<enum_RenderingServer_LightType>` **LIGHT_SPOT** = ``2``
 
-Riflettore (vedi :ref:`SpotLight3D<class_SpotLight3D>`).
+Luce spot (vedi :ref:`SpotLight3D<class_SpotLight3D>`).
 
 .. _class_RenderingServer_constant_LIGHT_AREA:
 
@@ -2109,7 +2109,7 @@ Riflettore (vedi :ref:`SpotLight3D<class_SpotLight3D>`).
 
 :ref:`LightType<enum_RenderingServer_LightType>` **LIGHT_AREA** = ``3``
 
-Area light (see :ref:`AreaLight3D<class_AreaLight3D>`).
+Luce d'area (vedi :ref:`AreaLight3D<class_AreaLight3D>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2183,7 +2183,7 @@ L'attenuazione della luce.
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SPOT_ANGLE** = ``7``
 
-L'angolazione del riflettore.
+L'angolazione della luce spot.
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SPOT_ATTENUATION:
 
@@ -2191,7 +2191,7 @@ L'angolazione del riflettore.
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SPOT_ATTENUATION** = ``8``
 
-L'attenuazione del riflettore.
+L'attenuazione della luce spot.
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SHADOW_MAX_DISTANCE:
 
@@ -2291,7 +2291,7 @@ Sfoca i bordi dell'ombra. Può essere usato per nascondere gli artefatti dei pix
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_INTENSITY** = ``20``
 
-Costante che rappresenta l'intensità della luce, misurata in lumen quando si usa uno :ref:`SpotLight3D<class_SpotLight3D>` o :ref:`OmniLight3D<class_OmniLight3D>`, oppure in lux con un :ref:`DirectionalLight3D<class_DirectionalLight3D>`. Utilizzata solo quando :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` è ``true``.
+Costante che rappresenta l'intensità della luce, misurata in lumen lavorando con uno :ref:`SpotLight3D<class_SpotLight3D>` o :ref:`OmniLight3D<class_OmniLight3D>`, oppure in lux con un :ref:`DirectionalLight3D<class_DirectionalLight3D>`. Utilizzata solo quando :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` è ``true``.
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_MAX:
 
@@ -2445,7 +2445,7 @@ enum **ShadowQuality**: :ref:`🔗<enum_RenderingServer_ShadowQuality>`
 
 :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>` **SHADOW_QUALITY_HARD** = ``0``
 
-Qualità minima di filtraggio delle ombre (la più veloce). Le ombre soffici non sono disponibili con questa configurazione di qualità, ovvero la proprietà :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` è ignorata se :ref:`Light3D.light_size<class_Light3D_property_light_size>` e :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` sono ``0.0``.
+Qualità minima di filtraggio delle ombre (la più veloce). Le ombre sfumate non sono disponibili con questa configurazione di qualità, ovvero la proprietà :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` è ignorata se :ref:`Light3D.light_size<class_Light3D_property_light_size>` e :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` sono ``0.0``.
 
 \ **Nota:** La sfocatura delle ombre variabile eseguita da :ref:`Light3D.light_size<class_Light3D_property_light_size>` e :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` funziona ancora quando si utilizza il filtraggio delle ombre nette. In questo caso, :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` *viene* preso in considerazione. Tuttavia, i risultati non saranno sfocati. Invece, la quantità di sfocatura viene trattata come un raggio massimo per la penombra.
 
@@ -2733,7 +2733,7 @@ enum **ParticlesTransformAlign**: :ref:`🔗<enum_RenderingServer_ParticlesTrans
 
 :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>` **PARTICLES_TRANSFORM_ALIGN_DISABLED** = ``0``
 
-Do not align particle transforms relative to the camera or velocity.
+Non allineare le trasformazioni delle particelle rispetto alla telecamera o alla velocità.
 
 .. _class_RenderingServer_constant_PARTICLES_TRANSFORM_ALIGN_Z_BILLBOARD:
 
@@ -2741,7 +2741,7 @@ Do not align particle transforms relative to the camera or velocity.
 
 :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>` **PARTICLES_TRANSFORM_ALIGN_Z_BILLBOARD** = ``1``
 
-Align each particle's Z axis to face the camera.
+Allinea L'asse Z di ogni particella per rivolgersi verso la telecamera.
 
 .. _class_RenderingServer_constant_PARTICLES_TRANSFORM_ALIGN_Y_TO_VELOCITY:
 
@@ -2749,7 +2749,7 @@ Align each particle's Z axis to face the camera.
 
 :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>` **PARTICLES_TRANSFORM_ALIGN_Y_TO_VELOCITY** = ``2``
 
-Align each particle's Y axis to the velocity vector.
+Allinea l'asse Y di ogni particella al vettore di velocità.
 
 .. _class_RenderingServer_constant_PARTICLES_TRANSFORM_ALIGN_Z_BILLBOARD_Y_TO_VELOCITY:
 
@@ -2757,7 +2757,7 @@ Align each particle's Y axis to the velocity vector.
 
 :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>` **PARTICLES_TRANSFORM_ALIGN_Z_BILLBOARD_Y_TO_VELOCITY** = ``3``
 
-Align each particle's Z axis to face the camera and Y axis to the velocity vector.
+Allinea l'asse Z di ciascuna particella in modo che sia rivolto verso la telecamera e l'asse Y al vettore di velocità.
 
 .. _class_RenderingServer_constant_PARTICLES_TRANSFORM_ALIGN_LOCAL_BILLBOARD:
 
@@ -2765,7 +2765,7 @@ Align each particle's Z axis to face the camera and Y axis to the velocity vecto
 
 :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>` **PARTICLES_TRANSFORM_ALIGN_LOCAL_BILLBOARD** = ``4``
 
-Billboard each particles around a local axis.
+Allinea (effetto billboard) ogni particella attorno un asse locale.
 
 .. rst-class:: classref-item-separator
 
@@ -2783,7 +2783,7 @@ enum **ParticlesTransformAlignCustomSrc**: :ref:`🔗<enum_RenderingServer_Parti
 
 :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **PARTICLES_ALIGN_CHANNEL_FILTER_DISABLED** = ``0``
 
-Do not read from CUSTOM when performing billboarding.
+Non leggere da CUSTOM quando per l'effetto billboard.
 
 .. _class_RenderingServer_constant_PARTICLES_ALIGN_CHANNEL_FILTER_X:
 
@@ -2791,7 +2791,7 @@ Do not read from CUSTOM when performing billboarding.
 
 :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **PARTICLES_ALIGN_CHANNEL_FILTER_X** = ``1``
 
-Read from ``CUSTOM.x`` when performing billboarding and use it as an angle, in radians.
+Leggi da ``CUSTOM.x`` per l'effetto billboard e utilizza il valore ottenuto come angolo, in radianti.
 
 .. _class_RenderingServer_constant_PARTICLES_ALIGN_CHANNEL_FILTER_Y:
 
@@ -2799,7 +2799,7 @@ Read from ``CUSTOM.x`` when performing billboarding and use it as an angle, in r
 
 :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **PARTICLES_ALIGN_CHANNEL_FILTER_Y** = ``2``
 
-Read from ``CUSTOM.y`` when performing billboarding and use it as an angle, in radians.
+Leggi da ``CUSTOM.y`` per l'effetto billboard e utilizza il valore ottenuto come angolo, in radianti.
 
 .. _class_RenderingServer_constant_PARTICLES_ALIGN_CHANNEL_FILTER_Z:
 
@@ -2807,7 +2807,7 @@ Read from ``CUSTOM.y`` when performing billboarding and use it as an angle, in r
 
 :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **PARTICLES_ALIGN_CHANNEL_FILTER_Z** = ``3``
 
-Read from ``CUSTOM.z`` when performing billboarding and use it as an angle, in radians.
+Leggi da ``CUSTOM.z`` per l'effetto billboard e utilizza il valore ottenuto come angolo, in radianti.
 
 .. _class_RenderingServer_constant_PARTICLES_ALIGN_CHANNEL_FILTER_W:
 
@@ -2815,7 +2815,7 @@ Read from ``CUSTOM.z`` when performing billboarding and use it as an angle, in r
 
 :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>` **PARTICLES_ALIGN_CHANNEL_FILTER_W** = ``4``
 
-Read from ``CUSTOM.w`` when performing billboarding and use it as an angle, in radians.
+Leggi da ``CUSTOM.w`` per l'effetto billboard e utilizza il valore ottenuto come angolo, in radianti.
 
 .. rst-class:: classref-item-separator
 
@@ -2833,7 +2833,7 @@ enum **ParticlesTransformAlignAxis**: :ref:`🔗<enum_RenderingServer_ParticlesT
 
 :ref:`ParticlesTransformAlignAxis<enum_RenderingServer_ParticlesTransformAlignAxis>` **PARTICLES_ALIGN_AXIS_X** = ``0``
 
-Use the X axis for local billboarding.
+Usa l'asse X per un effetto billboard locale.
 
 .. _class_RenderingServer_constant_PARTICLES_ALIGN_AXIS_Y:
 
@@ -2841,7 +2841,7 @@ Use the X axis for local billboarding.
 
 :ref:`ParticlesTransformAlignAxis<enum_RenderingServer_ParticlesTransformAlignAxis>` **PARTICLES_ALIGN_AXIS_Y** = ``1``
 
-Use the Y axis for local billboarding.
+Usa l'asse Y per un effetto billboard locale.
 
 .. rst-class:: classref-item-separator
 
@@ -2901,7 +2901,7 @@ enum **ParticlesCollisionType**: :ref:`🔗<enum_RenderingServer_ParticlesCollis
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_SPHERE_ATTRACT** = ``0``
 
-Sphere attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesAttractorSphere3D<class_GPUParticlesAttractorSphere3D>`).
+Tipo di attrattore sferico per :ref:`GPUParticles3D<class_GPUParticles3D>` (vedi :ref:`GPUParticlesAttractorSphere3D<class_GPUParticlesAttractorSphere3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_BOX_ATTRACT:
 
@@ -2909,7 +2909,7 @@ Sphere attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_BOX_ATTRACT** = ``1``
 
-Box attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesAttractorBox3D<class_GPUParticlesAttractorBox3D>`).
+Tipo di attrattore a scatola per :ref:`GPUParticles3D<class_GPUParticles3D>` (vedi :ref:`GPUParticlesAttractorBox3D<class_GPUParticlesAttractorBox3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_VECTOR_FIELD_ATTRACT:
 
@@ -2917,7 +2917,7 @@ Box attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GP
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_VECTOR_FIELD_ATTRACT** = ``2``
 
-Vector field attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>`).
+Tipo di attrattore a campo vettoriale per :ref:`GPUParticles3D<class_GPUParticles3D>` (vedi :ref:`GPUParticlesAttractorVectorField3D<class_GPUParticlesAttractorVectorField3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_SPHERE_COLLIDE:
 
@@ -2925,7 +2925,7 @@ Vector field attractor type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_SPHERE_COLLIDE** = ``3``
 
-Sphere collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesCollisionSphere3D<class_GPUParticlesCollisionSphere3D>`).
+Tipo di collisione sferica per :ref:`GPUParticles3D<class_GPUParticles3D>` (vedi :ref:`GPUParticlesCollisionSphere3D<class_GPUParticlesCollisionSphere3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_BOX_COLLIDE:
 
@@ -2933,7 +2933,7 @@ Sphere collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_BOX_COLLIDE** = ``4``
 
-Box collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesCollisionBox3D<class_GPUParticlesCollisionBox3D>`).
+Tipo di collisione a scatola per :ref:`GPUParticles3D<class_GPUParticles3D>` (vedi :ref:`GPUParticlesCollisionBox3D<class_GPUParticlesCollisionBox3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_SDF_COLLIDE:
 
@@ -2941,7 +2941,7 @@ Box collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GP
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_SDF_COLLIDE** = ``5``
 
-Signed distance field collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesCollisionSDF3D<class_GPUParticlesCollisionSDF3D>`).
+Tipo di collisione SDF per :ref:`GPUParticles3D<class_GPUParticles3D>` (vedi :ref:`GPUParticlesCollisionSDF3D<class_GPUParticlesCollisionSDF3D>`).
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_TYPE_HEIGHTFIELD_COLLIDE:
 
@@ -2949,7 +2949,7 @@ Signed distance field collision type for :ref:`GPUParticles3D<class_GPUParticles
 
 :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>` **PARTICLES_COLLISION_TYPE_HEIGHTFIELD_COLLIDE** = ``6``
 
-Heightfield collision type for :ref:`GPUParticles3D<class_GPUParticles3D>` (see :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`).
+Tipo di collisione a campo di altezza per :ref:`GPUParticles3D<class_GPUParticles3D>` (vedi :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2967,7 +2967,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_256** = ``0``
 
-256×256 heightfield resolution for :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
+Risoluzione 256×256 del campo di altezza per :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_512:
 
@@ -2975,7 +2975,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_512** = ``1``
 
-512×512 heightfield resolution for :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
+Risoluzione 512×512 del campo di altezza per :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_1024:
 
@@ -2983,7 +2983,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_1024** = ``2``
 
-1024×1024 heightfield resolution for :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
+Risoluzione 1024×1024 del campo di altezza per :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_2048:
 
@@ -2991,7 +2991,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_2048** = ``3``
 
-2048×2048 heightfield resolution for :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
+Risoluzione 2048×2048 del campo di altezza per :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_4096:
 
@@ -2999,7 +2999,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_4096** = ``4``
 
-4096×4096 heightfield resolution for :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
+Risoluzione 4096×4096 del campo di altezza per :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_8192:
 
@@ -3007,7 +3007,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_8192** = ``5``
 
-8192×8192 heightfield resolution for :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
+Risoluzione 8192×8192 del campo di altezza per :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`.
 
 .. _class_RenderingServer_constant_PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_MAX:
 
@@ -3107,7 +3107,7 @@ Utilizza l'upscaling AMD FidelityFX Super Resolution 1.0 per il buffer 3D della 
 
 :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` **VIEWPORT_SCALING_3D_MODE_FSR2** = ``2``
 
-Utilizza l'upscaling AMD FidelityFX Super Resolution 2.2 per il buffer 3D della viewport. La quantità di ridimensionamento può essere impostata tramite :ref:`Viewport.scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. I valori inferiori a ``1.0`` risulteranno nell'upscaling della viewport tramite FSR2. I valori superiori a ``1.0`` non sono supportati e sarà invece utilizzato il sottocampionamento bilineare. Un valore di ``1.0`` userà FSR2 alla risoluzione nativa come soluzione TAA.
+Utilizza l'upscaling AMD FidelityFX Super Resolution 2.2 per il buffer 3D della viewport. La quantità di ridimensionamento si può impostare tramite :ref:`Viewport.scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. I valori inferiori a ``1.0`` risulteranno nell'upscaling della viewport tramite FSR2. I valori superiori a ``1.0`` non sono supportati e sarà invece utilizzato il sottocampionamento bilineare. Un valore di ``1.0`` userà FSR2 alla risoluzione nativa come soluzione TAA.
 
 .. _class_RenderingServer_constant_VIEWPORT_SCALING_3D_MODE_METALFX_SPATIAL:
 
@@ -3125,7 +3125,7 @@ Utilizza l'upscaling MetalFX spaziale per il buffer 3D della viewport. La quanti
 
 :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` **VIEWPORT_SCALING_3D_MODE_METALFX_TEMPORAL** = ``4``
 
-Utilizza l'upscaling MetalFX temporale per il buffer 3D della viewport. La quantità di ridimensionamento può essere impostata tramite :ref:`Viewport.scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. I valori inferiori a ``1.0`` risulteranno in un upscaling della viewport tramite MetalFX. I valori superiori a ``1.0`` non sono supportati e sarà invece utilizzato il sottocampionamento bilineare. Un valore di ``1.0`` userà MetalFX alla risoluzione nativa come soluzione TAA.
+Utilizza l'upscaling MetalFX temporale per il buffer 3D della viewport. La quantità di ridimensionamento si può impostare tramite :ref:`Viewport.scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. I valori inferiori a ``1.0`` risulteranno in un upscaling della viewport tramite MetalFX. I valori superiori a ``1.0`` non sono supportati e sarà invece utilizzato un sottocampionamento bilineare. Un valore di ``1.0`` userà MetalFX alla risoluzione nativa come soluzione TAA.
 
 \ **Nota:** Supportato solo quando è in uso il driver di rendering Metal, il che limita questa modalità di ridimensionamento a macOS e iOS.
 
@@ -3289,7 +3289,7 @@ enum **ViewportSDFOversize**: :ref:`🔗<enum_RenderingServer_ViewportSDFOversiz
 
 :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>` **VIEWPORT_SDF_OVERSIZE_100_PERCENT** = ``0``
 
-Non sovradimensionare il campo di distanza con segno 2D. Gli occlusori potrebbero scomparire quando a contatto con i bordi della viewport e le collisioni per :ref:`GPUParticles3D<class_GPUParticles3D>` potrebbe smettere di funzionare prima del previsto. Ciò ha i requisiti sulla GPU più bassi.
+Non sovradimensionare il signed distance field 2D. Gli occlusori potrebbero scomparire quando a contatto con i bordi della viewport e le collisioni per :ref:`GPUParticles3D<class_GPUParticles3D>` potrebbero smettere di funzionare prima del previsto. Ha i requisiti sulla GPU più bassi.
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_OVERSIZE_120_PERCENT:
 
@@ -3297,7 +3297,7 @@ Non sovradimensionare il campo di distanza con segno 2D. Gli occlusori potrebber
 
 :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>` **VIEWPORT_SDF_OVERSIZE_120_PERCENT** = ``1``
 
-Il campo di distanza con segno 2D copre il 20% delle dimensioni della viewport all'esterno della viewport su ciascun lato (sopra, a destra, sotto, a sinistra).
+Il signed distance field 2D copre il 20% delle dimensioni della viewport fuori dalla viewport su ciascun lato (sopra, a destra, sotto, a sinistra).
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_OVERSIZE_150_PERCENT:
 
@@ -3305,7 +3305,7 @@ Il campo di distanza con segno 2D copre il 20% delle dimensioni della viewport a
 
 :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>` **VIEWPORT_SDF_OVERSIZE_150_PERCENT** = ``2``
 
-Il campo di distanza con segno 2D copre il 50% delle dimensioni della viewport all'esterno della viewport su ciascun lato (sopra, a destra, sotto, a sinistra).
+Il signed distance field 2D copre il 50% delle dimensioni della viewport fuori dalla viewport su ciascun lato (sopra, a destra, sotto, a sinistra).
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_OVERSIZE_200_PERCENT:
 
@@ -3313,7 +3313,7 @@ Il campo di distanza con segno 2D copre il 50% delle dimensioni della viewport a
 
 :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>` **VIEWPORT_SDF_OVERSIZE_200_PERCENT** = ``3``
 
-Il campo di distanza con segno 2D copre il 100% delle dimensioni della viewport all'esterno della viewport su ciascun lato (sopra, a destra, sotto, a sinistra). Ciò ha i requisiti sulla GPU più alti.
+Il signed distance field 2D copre il 100% delle dimensioni della viewport fuori dalla viewport su ciascun lato (sopra, a destra, sotto, a sinistra). Ha i requisiti sulla GPU più alti.
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_OVERSIZE_MAX:
 
@@ -3339,7 +3339,7 @@ enum **ViewportSDFScale**: :ref:`🔗<enum_RenderingServer_ViewportSDFScale>`
 
 :ref:`ViewportSDFScale<enum_RenderingServer_ViewportSDFScale>` **VIEWPORT_SDF_SCALE_100_PERCENT** = ``0``
 
-Scala a piena risoluzione per il campo di distanza con segno 2D. Ha i requisiti sulla GPU più elevati.
+Scala a piena risoluzione per il signed distance field 2D. Ha i requisiti sulla GPU più elevati.
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_SCALE_50_PERCENT:
 
@@ -3347,7 +3347,7 @@ Scala a piena risoluzione per il campo di distanza con segno 2D. Ha i requisiti 
 
 :ref:`ViewportSDFScale<enum_RenderingServer_ViewportSDFScale>` **VIEWPORT_SDF_SCALE_50_PERCENT** = ``1``
 
-Scala a mezza risoluzione per il campo di distanza con segno 2D, su ciascun asse (25% del numero di pixel nella viewport).
+Scala a mezza risoluzione per il signed distance field 2D, su ciascun asse (25% del numero di pixel nella viewport).
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_SCALE_25_PERCENT:
 
@@ -3355,7 +3355,7 @@ Scala a mezza risoluzione per il campo di distanza con segno 2D, su ciascun asse
 
 :ref:`ViewportSDFScale<enum_RenderingServer_ViewportSDFScale>` **VIEWPORT_SDF_SCALE_25_PERCENT** = ``2``
 
-Scala a un quarto della risoluzione per il campo di distanza con segno 2D, su ciascun asse (6.25% del numero di pixel nella viewport). Ciò ha i requisiti sulla GPU più bassi.
+Scala a un quarto della risoluzione per il signed distance field 2D, su ciascun asse (6.25% del numero di pixel nella viewport). Ha i requisiti sulla GPU più bassi.
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_SCALE_MAX:
 
@@ -3497,7 +3497,7 @@ Non eseguire alcun antialiasing nella post-elaborazione dell'intero schermo.
 
 :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` **VIEWPORT_SCREEN_SPACE_AA_FXAA** = ``1``
 
-Usa un antialiasing approssimativo veloce. FXAA è un metodo di antialiasing spazio-schermo popolare, che è veloce ma renderà l'immagine sfocata, specialmente a risoluzioni più basse. Può comunque funzionare abbastanza bene a risoluzioni elevate come 1440p e 4K.
+Usa un antialiasing approssimativo veloce. L'FXAA è un metodo popolare di antialiasing nello spazio dello schermo, che è veloce ma renderà l'immagine sfocata, specialmente a risoluzioni più basse. Può comunque funzionare abbastanza bene a risoluzioni elevate come 1440p e 4K.
 
 .. _class_RenderingServer_constant_VIEWPORT_SCREEN_SPACE_AA_SMAA:
 
@@ -3505,7 +3505,7 @@ Usa un antialiasing approssimativo veloce. FXAA è un metodo di antialiasing spa
 
 :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` **VIEWPORT_SCREEN_SPACE_AA_SMAA** = ``2``
 
-Utilizza l'antialiasing morfologico subpixel. SMAA può produrre risultati più nitidi di FXAA, ma con un costo in termini di prestazioni leggermente superiore.
+Utilizza l'antialiasing morfologico subpixel. SMAA può produrre risultati più nitidi di FXAA, ma con un impatto leggermente maggiore sulle prestazioni.
 
 .. _class_RenderingServer_constant_VIEWPORT_SCREEN_SPACE_AA_MAX:
 
@@ -3765,7 +3765,7 @@ Disegna la luminanza stimata della scena. Questa è una texture 1×1 che è gene
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_SSAO** = ``12``
 
-Disegna la texture di occlusione ambientale dello spazio dello schermo anziché la scena, in modo da poter vedere chiaramente come influisce sugli oggetti. Affinché questa modalità di visualizzazione funzioni, è necessario impostare :ref:`Environment.ssao_enabled<class_Environment_property_ssao_enabled>` nel proprio :ref:`WorldEnvironment<class_WorldEnvironment>`.
+Disegna la texture di occlusione ambientale nello spazio dello schermo anziché la scena, in modo da poter vedere chiaramente come influisce sugli oggetti. Affinché questa modalità di visualizzazione funzioni, è necessario impostare :ref:`Environment.ssao_enabled<class_Environment_property_ssao_enabled>` nel proprio :ref:`WorldEnvironment<class_WorldEnvironment>`.
 
 \ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
@@ -3775,7 +3775,7 @@ Disegna la texture di occlusione ambientale dello spazio dello schermo anziché 
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_SSIL** = ``13``
 
-Disegna la texture di illuminazione indiretta dello spazio dello schermo invece della scena, in modo da poter vedere chiaramente come influisce sugli oggetti. Affinché questa modalità di visualizzazione funzioni, è necessario impostare :ref:`Environment.ssil_enabled<class_Environment_property_ssil_enabled>` nel proprio :ref:`WorldEnvironment<class_WorldEnvironment>`.
+Disegna la texture di illuminazione indiretta nello spazio dello schermo anziché la scena, in modo da poter vedere chiaramente come influisce sugli oggetti. Affinché questa modalità di visualizzazione funzioni, è necessario impostare :ref:`Environment.ssil_enabled<class_Environment_property_ssil_enabled>` nel proprio :ref:`WorldEnvironment<class_WorldEnvironment>`.
 
 \ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
@@ -3817,11 +3817,11 @@ Disegna i dati delle cascate SDFGI. Questa è la struttura dati utilizzata per f
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_SDFGI_PROBES** = ``17``
 
-Draws SDFGI probe data. This is the data structure that is used to give indirect lighting dynamic objects moving within the scene.
+Disegna i dati di una sonda SDFGI. Questa è la struttura dati utilizzata per fornire un'illuminazione indiretta dinamica agli oggetti in movimento nella scena.
 
-When in the editor, left-clicking a probe will display additional bright dots that show its occlusion information. A white dot means the light is not occluded at all at the dot's position, while a red dot means the light is fully occluded. Intermediate values are possible.
+Nell'editor, facendo clic sinistro su una sonda, appariranno dei punti luminosi aggiuntivi che mostrano le informazioni sull'occlusione. Un punto bianco indica che la luce non è affatto occlusa in quella posizione, mentre un punto rosso indica che la luce è completamente occlusa. Sono possibili valori intermedi.
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_GI_BUFFER:
 
@@ -3847,7 +3847,7 @@ Disattiva gli LOD delle mesh. Tutte le mesh sono disegnate con dettagli completi
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_CLUSTER_OMNI_LIGHTS** = ``20``
 
-Disegna il cluster degli :ref:`OmniLight3D<class_OmniLight3D>`. Il clustering determina dove sono posizionate le luci nello spazio dello schermo, il che consente al motore di elaborare solo queste porzioni dello schermo per l'illuminazione.
+Disegna il cluster degli :ref:`OmniLight3D<class_OmniLight3D>`. Il clustering determina dove le luci sono posizionate nello spazio dello schermo, il che consente al motore di elaborare solo queste porzioni dello schermo per l'illuminazione.
 
 \ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
@@ -3857,7 +3857,7 @@ Disegna il cluster degli :ref:`OmniLight3D<class_OmniLight3D>`. Il clustering de
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_CLUSTER_SPOT_LIGHTS** = ``21``
 
-Disegna il cluster degli :ref:`SpotLight3D<class_SpotLight3D>`. Il clustering determina dove sono posizionate le luci nello spazio dello schermo, il che consente al motore di elaborare solo queste porzioni dello schermo per l'illuminazione.
+Disegna il cluster degli :ref:`SpotLight3D<class_SpotLight3D>`. Il clustering determina dove le luci sono posizionate nello spazio dello schermo, il che consente al motore di elaborare solo queste porzioni dello schermo per l'illuminazione.
 
 \ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
@@ -3867,7 +3867,7 @@ Disegna il cluster degli :ref:`SpotLight3D<class_SpotLight3D>`. Il clustering de
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_CLUSTER_DECALS** = ``22``
 
-Disegna il cluster dei :ref:`Decal<class_Decal>`. Il clustering determina dove sono posizionate le decalcomanie nello spazio dello schermo, il che consente al motore di elaborare solo queste porzioni dello schermo per le decalcomanie.
+Disegna il cluster dei :ref:`Decal<class_Decal>`. Il clustering determina dove le decalcomanie sono posizionate nello spazio dello schermo, il che consente al motore di elaborare solo queste porzioni dello schermo per le decalcomanie.
 
 \ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
@@ -3877,7 +3877,7 @@ Disegna il cluster dei :ref:`Decal<class_Decal>`. Il clustering determina dove s
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_CLUSTER_REFLECTION_PROBES** = ``23``
 
-Disegna il cluster dei :ref:`ReflectionProbe<class_ReflectionProbe>`. Il clustering determina dove sono posizionate le sonde di riflessi nello spazio dello schermo, il che consente al motore di elaborare solo queste porzioni dello schermo per le sonde di riflessi.
+Disegna il cluster dei :ref:`ReflectionProbe<class_ReflectionProbe>`. Il clustering determina dove le sonde di riflessione sono posizionate nello spazio dello schermo, il che consente al motore di elaborare solo queste porzioni dello schermo per le sonde di riflessi.
 
 \ **Nota:** Supportato solo quando si utilizza il metodo di rendering Forward+.
 
@@ -4055,7 +4055,7 @@ enum **CompositorEffectFlags**: :ref:`🔗<enum_RenderingServer_CompositorEffect
 
 :ref:`CompositorEffectFlags<enum_RenderingServer_CompositorEffectFlags>` **COMPOSITOR_EFFECT_FLAG_ACCESS_RESOLVED_COLOR** = ``1``
 
-L'effetto di rendering richiede che il buffer di colore sia risolto se il MSAA è abilitato.
+L'effetto di rendering richiede che il buffer di colore sia risolto se l'MSAA è abilitato.
 
 .. _class_RenderingServer_constant_COMPOSITOR_EFFECT_FLAG_ACCESS_RESOLVED_DEPTH:
 
@@ -4063,7 +4063,7 @@ L'effetto di rendering richiede che il buffer di colore sia risolto se il MSAA �
 
 :ref:`CompositorEffectFlags<enum_RenderingServer_CompositorEffectFlags>` **COMPOSITOR_EFFECT_FLAG_ACCESS_RESOLVED_DEPTH** = ``2``
 
-L'effetto di rendering richiede che il buffer di profondità sia risolto se il MSAA è abilitato.
+L'effetto di rendering richiede che il buffer di profondità sia risolto se l'MSAA è abilitato.
 
 .. _class_RenderingServer_constant_COMPOSITOR_EFFECT_FLAG_NEEDS_MOTION_VECTORS:
 
@@ -4121,7 +4121,7 @@ Il callback viene richiamato dopo il nostro passaggio di rendering opaco, ma pri
 
 :ref:`CompositorEffectCallbackType<enum_RenderingServer_CompositorEffectCallbackType>` **COMPOSITOR_EFFECT_CALLBACK_TYPE_POST_SKY** = ``2``
 
-Il callback viene chiamato dopo il rendering del cielo, ma prima che vengano creati i back buffer (e, se abilitato, prima del subsurface scattering e/o delle riflessioni nello spazio dello schermo).
+Il callback viene chiamato dopo aver renderizzato il cielo, ma prima di creare i back buffer (e, se abilitato, prima del subsurface scattering e/o dei riflessi nello spazio dello schermo).
 
 .. _class_RenderingServer_constant_COMPOSITOR_EFFECT_CALLBACK_TYPE_PRE_TRANSPARENT:
 
@@ -4309,7 +4309,7 @@ enum **EnvironmentGlowBlendMode**: :ref:`🔗<enum_RenderingServer_EnvironmentGl
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_ADDITIVE** = ``0``
 
-Adds the glow effect to the scene.
+Aggiunge un filtro bagliore alla scena.
 
 .. _class_RenderingServer_constant_ENV_GLOW_BLEND_MODE_SCREEN:
 
@@ -4317,7 +4317,7 @@ Adds the glow effect to the scene.
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_SCREEN** = ``1``
 
-Adds the glow effect to the scene after modifying the glow influence based on the scene value; dark values will be highly influenced by glow and bright values will not be influenced by glow. This approach avoids bright values becoming overly bright from the glow effect. :ref:`Environment.tonemap_white<class_Environment_property_tonemap_white>` is used to determine the maximum scene value where the glow should have no influence. When :ref:`Environment.tonemap_mode<class_Environment_property_tonemap_mode>` is set to :ref:`Environment.TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` and :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true``, the parent window's :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` will be used as the maximum scene value.
+Aggiunge l'effetto bagliore alla scena dopo aver modificato l'influenza del bagliore in base al valore della scena; i valori scuri saranno fortemente influenzati dal bagliore e i valori chiari non lo saranno. Questo approccio evita che i valori chiari diventino eccessivamente luminosi a causa dell'effetto bagliore. :ref:`Environment.tonemap_white<class_Environment_property_tonemap_white>` serve per determinare il valore massimo della scena in cui il bagliore non dovrebbe avere alcuna influenza. Quando :ref:`Environment.tonemap_mode<class_Environment_property_tonemap_mode>` è impostato su :ref:`Environment.TONE_MAPPER_LINEAR<class_Environment_constant_TONE_MAPPER_LINEAR>` e :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` è ``true``, il :ref:`Window.get_output_max_linear_value()<class_Window_method_get_output_max_linear_value>` della finestra genitore sarà utilizzato come valore massimo della scena.
 
 .. _class_RenderingServer_constant_ENV_GLOW_BLEND_MODE_SOFTLIGHT:
 
@@ -4325,9 +4325,9 @@ Adds the glow effect to the scene after modifying the glow influence based on th
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_SOFTLIGHT** = ``2``
 
-Adds the glow effect to the tonemapped image after modifying the glow influence based on the image value; dark values and bright values will not be influenced by glow and mid-range values will be highly influenced by glow. This approach avoids bright values becoming overly bright from the glow effect. The glow will have the largest influence on image values of ``0.25`` and will have no influence when applied to image values greater than ``1.0``.
+Aggiunge l'effetto bagliore all'immagine con mappatura dei toni, dopo averne modificato l'influenza in base al valore dell'immagine; i valori scuri e chiari non saranno influenzati dal bagliore, mentre i valori intermedi saranno fortemente influenzati. Questo approccio evita che i valori chiari diventino eccessivamente luminosi a causa dell'effetto bagliore. Il bagliore avrà la massima influenza sui valori dell'immagine pari a ``0.25`` e non avrà alcuna influenza se applicato a valori superiori a ``1.0``.
 
-\ **Note:** This blend mode does not support HDR output because expects a maximum output value of ``1.0``. It is recommended to use a different blend mode when rendering to an HDR screen.
+\ **Nota:** Questa modalità di fusione non supporta l'output HDR perché prevede un valore di output massimo di ``1.0``. Si consiglia di utilizzare una modalità di fusione diversa quando si renderizza su uno schermo HDR.
 
 .. _class_RenderingServer_constant_ENV_GLOW_BLEND_MODE_REPLACE:
 
@@ -4335,7 +4335,7 @@ Adds the glow effect to the tonemapped image after modifying the glow influence 
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_REPLACE** = ``3``
 
-Replaces all pixels' color by the glow effect. This can be used to simulate a full-screen blur effect by tweaking the glow parameters to match the original image's brightness or to preview glow configuration in the editor.
+Sostituisce il colore di tutti i pixel con l'effetto bagliore. Può essere utilizzato per simulare un effetto di sfocatura sull'intero schermo regolando i parametri del bagliore per adattarli alla luminosità dell'immagine originale o vedere in anteprima la configurazione del bagliore nell'editor.
 
 .. _class_RenderingServer_constant_ENV_GLOW_BLEND_MODE_MIX:
 
@@ -4343,7 +4343,7 @@ Replaces all pixels' color by the glow effect. This can be used to simulate a fu
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_MIX** = ``4``
 
-Mixes the glow image with the scene image. Best used with :ref:`Environment.glow_bloom<class_Environment_property_glow_bloom>` to avoid darkening the scene.
+Mescola l'immagine del bagliore con l'immagine della scena. Usato al meglio con :ref:`Environment.glow_bloom<class_Environment_property_glow_bloom>` per evitare di scurire la scena.
 
 .. rst-class:: classref-item-separator
 
@@ -4445,7 +4445,7 @@ enum **EnvironmentSSRRoughnessQuality**: :ref:`🔗<enum_RenderingServer_Environ
 
 :ref:`EnvironmentSSRRoughnessQuality<enum_RenderingServer_EnvironmentSSRRoughnessQuality>` **ENV_SSR_ROUGHNESS_QUALITY_DISABLED** = ``0``
 
-Qualità più bassa del filtro di ruvidità per i riflessi nello spazio dello schermo. I materiali ruvidi non avranno riflessi nello spazio dello schermo più sfocati rispetto ai materiali lisci (non ruvidi). Questa è l'opzione più rapida.
+Qualità più bassa del filtro di rugosità per i riflessi nello spazio dello schermo. I materiali rugosi avranno riflessi nello spazio dello schermo meno sfocati rispetto ai materiali lisci (non rugosi). Questa è l'opzione più rapida.
 
 .. _class_RenderingServer_constant_ENV_SSR_ROUGHNESS_QUALITY_LOW:
 
@@ -4453,7 +4453,7 @@ Qualità più bassa del filtro di ruvidità per i riflessi nello spazio dello sc
 
 :ref:`EnvironmentSSRRoughnessQuality<enum_RenderingServer_EnvironmentSSRRoughnessQuality>` **ENV_SSR_ROUGHNESS_QUALITY_LOW** = ``1``
 
-Qualità bassa del filtro di ruvidità per i riflessi nello spazio dello schermo.
+Qualità bassa del filtro di rugosità per i riflessi nello spazio dello schermo.
 
 .. _class_RenderingServer_constant_ENV_SSR_ROUGHNESS_QUALITY_MEDIUM:
 
@@ -4461,7 +4461,7 @@ Qualità bassa del filtro di ruvidità per i riflessi nello spazio dello schermo
 
 :ref:`EnvironmentSSRRoughnessQuality<enum_RenderingServer_EnvironmentSSRRoughnessQuality>` **ENV_SSR_ROUGHNESS_QUALITY_MEDIUM** = ``2``
 
-Qualità media del filtro di ruvidità per i riflessi nello spazio dello schermo.
+Qualità media del filtro di rugosità per i riflessi nello spazio dello schermo.
 
 .. _class_RenderingServer_constant_ENV_SSR_ROUGHNESS_QUALITY_HIGH:
 
@@ -4469,7 +4469,7 @@ Qualità media del filtro di ruvidità per i riflessi nello spazio dello schermo
 
 :ref:`EnvironmentSSRRoughnessQuality<enum_RenderingServer_EnvironmentSSRRoughnessQuality>` **ENV_SSR_ROUGHNESS_QUALITY_HIGH** = ``3``
 
-Qualità alta del filtro di ruvidità per i riflessi nello spazio dello schermo. Questa è l'opzione più lenta.
+Qualità alta del filtro di rugosità per i riflessi nello spazio dello schermo. Questa è l'opzione più lenta.
 
 .. rst-class:: classref-item-separator
 
@@ -4487,7 +4487,7 @@ enum **EnvironmentSSAOQuality**: :ref:`🔗<enum_RenderingServer_EnvironmentSSAO
 
 :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>` **ENV_SSAO_QUALITY_VERY_LOW** = ``0``
 
-Qualità più bassa dell'occlusione ambientale nello spazio dello schermo.
+Qualità più bassa per l'occlusione ambientale nello spazio dello schermo.
 
 .. _class_RenderingServer_constant_ENV_SSAO_QUALITY_LOW:
 
@@ -4495,7 +4495,7 @@ Qualità più bassa dell'occlusione ambientale nello spazio dello schermo.
 
 :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>` **ENV_SSAO_QUALITY_LOW** = ``1``
 
-Qualità bassa dell'occlusione ambientale nello spazio dello schermo.
+Qualità bassa per l'occlusione ambientale nello spazio dello schermo.
 
 .. _class_RenderingServer_constant_ENV_SSAO_QUALITY_MEDIUM:
 
@@ -4503,7 +4503,7 @@ Qualità bassa dell'occlusione ambientale nello spazio dello schermo.
 
 :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>` **ENV_SSAO_QUALITY_MEDIUM** = ``2``
 
-Qualità media dell'occlusione ambientale nello spazio dello schermo.
+Qualità media per l'occlusione ambientale nello spazio dello schermo.
 
 .. _class_RenderingServer_constant_ENV_SSAO_QUALITY_HIGH:
 
@@ -4511,7 +4511,7 @@ Qualità media dell'occlusione ambientale nello spazio dello schermo.
 
 :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>` **ENV_SSAO_QUALITY_HIGH** = ``3``
 
-Qualità alta dell'occlusione ambientale nello spazio dello schermo.
+Qualità alta per l'occlusione ambientale nello spazio dello schermo.
 
 .. _class_RenderingServer_constant_ENV_SSAO_QUALITY_ULTRA:
 
@@ -4519,7 +4519,7 @@ Qualità alta dell'occlusione ambientale nello spazio dello schermo.
 
 :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>` **ENV_SSAO_QUALITY_ULTRA** = ``4``
 
-Qualità più alta dell'occlusione ambientale nello spazio dello schermo. Utilizza l'impostazione dell'obiettivo adattivo, che è possibile regolare dinamicamente per bilanciare tra le prestazioni e la qualità visiva.
+Qualità più alta per l'occlusione ambientale nello spazio dello schermo. Utilizza l'impostazione dell'obiettivo adattivo, che è possibile regolare dinamicamente per bilanciare tra le prestazioni e la qualità visiva.
 
 .. rst-class:: classref-item-separator
 
@@ -4537,7 +4537,7 @@ enum **EnvironmentSSILQuality**: :ref:`🔗<enum_RenderingServer_EnvironmentSSIL
 
 :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>` **ENV_SSIL_QUALITY_VERY_LOW** = ``0``
 
-Qualità più bassa dell'illuminazione indiretta nello spazio dello schermo.
+Qualità più bassa per l'illuminazione indiretta nello spazio dello schermo.
 
 .. _class_RenderingServer_constant_ENV_SSIL_QUALITY_LOW:
 
@@ -4545,7 +4545,7 @@ Qualità più bassa dell'illuminazione indiretta nello spazio dello schermo.
 
 :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>` **ENV_SSIL_QUALITY_LOW** = ``1``
 
-Qualità bassa dell'illuminazione indiretta nello spazio dello schermo.
+Qualità bassa per l'illuminazione indiretta nello spazio dello schermo.
 
 .. _class_RenderingServer_constant_ENV_SSIL_QUALITY_MEDIUM:
 
@@ -4553,7 +4553,7 @@ Qualità bassa dell'illuminazione indiretta nello spazio dello schermo.
 
 :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>` **ENV_SSIL_QUALITY_MEDIUM** = ``2``
 
-Qualità alta dell'illuminazione indiretta nello spazio dello schermo.
+Qualità alta per l'illuminazione indiretta nello spazio dello schermo.
 
 .. _class_RenderingServer_constant_ENV_SSIL_QUALITY_HIGH:
 
@@ -4561,7 +4561,7 @@ Qualità alta dell'illuminazione indiretta nello spazio dello schermo.
 
 :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>` **ENV_SSIL_QUALITY_HIGH** = ``3``
 
-Qualità alta dell'illuminazione indiretta nello spazio dello schermo.
+Qualità alta per l'illuminazione indiretta nello spazio dello schermo.
 
 .. _class_RenderingServer_constant_ENV_SSIL_QUALITY_ULTRA:
 
@@ -4569,7 +4569,7 @@ Qualità alta dell'illuminazione indiretta nello spazio dello schermo.
 
 :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>` **ENV_SSIL_QUALITY_ULTRA** = ``4``
 
-Qualità più alta dell'illuminazione indiretta nello spazio dello schermo. Utilizza l'impostazione dell'obiettivo adattivo, che è possibile regolare dinamicamente per bilanciare tra le prestazioni e la qualità visiva.
+Qualità più alta per l'illuminazione indiretta nello spazio dello schermo. Utilizza l'impostazione dell'obiettivo adattivo, che è possibile regolare dinamicamente per bilanciare tra le prestazioni e la qualità visiva.
 
 .. rst-class:: classref-item-separator
 
@@ -4587,7 +4587,7 @@ enum **EnvironmentSDFGIYScale**: :ref:`🔗<enum_RenderingServer_EnvironmentSDFG
 
 :ref:`EnvironmentSDFGIYScale<enum_RenderingServer_EnvironmentSDFGIYScale>` **ENV_SDFGI_Y_SCALE_50_PERCENT** = ``0``
 
-Usa una scala del 50% per SDFGI sull'asse Y (verticale). Le celle SDFGI saranno corte il doppio della loro larghezza. Ciò consente di fornire maggiori dettagli di GI e perdite di luce ridotte tra pavimenti e soffitti sottili. Questa è solitamente la scelta migliore per scene che non presentano molta verticalità.
+Usa una scala del 50% per l'SDFGI sull'asse Y (verticale). Le celle SDFGI saranno corte il doppio della loro larghezza. Ciò consente di fornire maggiori dettagli di GI e perdite di luce ridotte tra pavimenti e soffitti sottili. Questa è solitamente la scelta migliore per scene che non presentano molta verticalità.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_Y_SCALE_75_PERCENT:
 
@@ -4595,7 +4595,7 @@ Usa una scala del 50% per SDFGI sull'asse Y (verticale). Le celle SDFGI saranno 
 
 :ref:`EnvironmentSDFGIYScale<enum_RenderingServer_EnvironmentSDFGIYScale>` **ENV_SDFGI_Y_SCALE_75_PERCENT** = ``1``
 
-Usa una scala del 75% per SDFGI sull'asse Y (verticale). Questo è una via di mezzo tra le scale Y SDFGI del 50% e del 100%.
+Usa una scala del 75% per SDFGI sull'asse Y (verticale). Questo è una via di mezzo tra le scale Y del 50% e del 100% per l'SDFGI.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_Y_SCALE_100_PERCENT:
 
@@ -4603,7 +4603,7 @@ Usa una scala del 75% per SDFGI sull'asse Y (verticale). Questo è una via di me
 
 :ref:`EnvironmentSDFGIYScale<enum_RenderingServer_EnvironmentSDFGIYScale>` **ENV_SDFGI_Y_SCALE_100_PERCENT** = ``2``
 
-Usa una scala del 100% per SDFGI sull'asse Y (verticale). Le celle SDFGI saranno alte quanto larghe. Questa è solitamente la scelta migliore per scene molto verticali. Lo svantaggio è che la perdita di luce potrebbe diventare più evidenti con pavimenti e soffitti sottili.
+Usa una scala del 100% per l'SDFGI sull'asse Y (verticale). Le celle SDFGI saranno alte quanto larghe. Questa è solitamente la scelta migliore per scene molto verticali. Lo svantaggio è che le perdite di luce potrebbero diventare più evidenti con pavimenti e soffitti sottili.
 
 .. rst-class:: classref-item-separator
 
@@ -4621,7 +4621,7 @@ enum **EnvironmentSDFGIRayCount**: :ref:`🔗<enum_RenderingServer_EnvironmentSD
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_4** = ``0``
 
-Proietta 4 raggi per frame per convergere il SDFGI. Questo ha i requisiti sulla GPU più bassi, ma produce il risultato più rumoroso.
+Proietta 4 raggi per frame per convergere l'SDFGI. Questo ha i requisiti sulla GPU più bassi, ma produce il risultato più rumoroso.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_8:
 
@@ -4629,7 +4629,7 @@ Proietta 4 raggi per frame per convergere il SDFGI. Questo ha i requisiti sulla 
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_8** = ``1``
 
-Proietta 8 raggi per frame per convergere il SDFGI.
+Proietta 8 raggi per frame per convergere l'SDFGI.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_16:
 
@@ -4637,7 +4637,7 @@ Proietta 8 raggi per frame per convergere il SDFGI.
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_16** = ``2``
 
-Proietta 16 raggi per frame per convergere il SDFGI.
+Proietta 16 raggi per frame per convergere l'SDFGI.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_32:
 
@@ -4645,7 +4645,7 @@ Proietta 16 raggi per frame per convergere il SDFGI.
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_32** = ``3``
 
-Proietta 32 raggi per frame per convergere il SDFGI.
+Proietta 32 raggi per frame per convergere l'SDFGI.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_64:
 
@@ -4653,7 +4653,7 @@ Proietta 32 raggi per frame per convergere il SDFGI.
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_64** = ``4``
 
-Proietta 64 raggi per frame per convergere il SDFGI.
+Proietta 64 raggi per frame per convergere l'SDFGI.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_96:
 
@@ -4661,7 +4661,7 @@ Proietta 64 raggi per frame per convergere il SDFGI.
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_96** = ``5``
 
-Proietta 96 raggi per frame per convergere il SDFGI. Questo ha requisiti sulla GPU elevati.
+Proietta 96 raggi per frame per convergere l'SDFGI. Questo ha requisiti sulla GPU elevati.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_128:
 
@@ -4669,7 +4669,7 @@ Proietta 96 raggi per frame per convergere il SDFGI. Questo ha requisiti sulla G
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_128** = ``6``
 
-Proietta 128 raggi per frame per convergere il SDFGI. Questo ha i requisiti sulla GPU molto elevati, ma produce il risultato meno rumoroso.
+Proietta 128 raggi per frame per convergere l'SDFGI. Questo ha requisiti sulla GPU molto elevati, ma produce il risultato meno rumoroso.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_MAX:
 
@@ -4695,7 +4695,7 @@ enum **EnvironmentSDFGIFramesToConverge**: :ref:`🔗<enum_RenderingServer_Envir
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_IN_5_FRAMES** = ``0``
 
-Converge il SDFGI in 5 frame. Questo è il più reattivo, ma produce il risultato più rumoroso con un determinato numero di raggi.
+Converge l'SDFGI in 5 frame. Questo è il più reattivo, ma produce il risultato più rumoroso con un determinato numero di raggi.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_CONVERGE_IN_10_FRAMES:
 
@@ -4703,7 +4703,7 @@ Converge il SDFGI in 5 frame. Questo è il più reattivo, ma produce il risultat
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_IN_10_FRAMES** = ``1``
 
-Configura il SDFGI per convergere completamente in 10 frame.
+Configura l'SDFGI per convergere completamente in 10 frame.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_CONVERGE_IN_15_FRAMES:
 
@@ -4711,7 +4711,7 @@ Configura il SDFGI per convergere completamente in 10 frame.
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_IN_15_FRAMES** = ``2``
 
-Configura il SDFGI per convergere completamente in 15 frame.
+Configura l'SDFGI per convergere completamente in 15 frame.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_CONVERGE_IN_20_FRAMES:
 
@@ -4719,7 +4719,7 @@ Configura il SDFGI per convergere completamente in 15 frame.
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_IN_20_FRAMES** = ``3``
 
-Configura il SDFGI per convergere completamente in 20 frame.
+Configura l'SDFGI per convergere completamente in 20 frame.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_CONVERGE_IN_25_FRAMES:
 
@@ -4727,7 +4727,7 @@ Configura il SDFGI per convergere completamente in 20 frame.
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_IN_25_FRAMES** = ``4``
 
-Configura il SDFGI per convergere completamente in 25 frame.
+Configura l'SDFGI per convergere completamente in 25 frame.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_CONVERGE_IN_30_FRAMES:
 
@@ -4735,7 +4735,7 @@ Configura il SDFGI per convergere completamente in 25 frame.
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_IN_30_FRAMES** = ``5``
 
-Configura il SDFGI per convergere completamente in 32 frame. Questo è il meno reattivo, ma produce il risultato meno rumoroso con un determinato numero di raggi.
+Configura l'SDFGI per convergere completamente in 32 frame. Questo è il meno reattivo, ma produce il risultato meno rumoroso con un determinato numero di raggi.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_CONVERGE_MAX:
 
@@ -4761,7 +4761,7 @@ enum **EnvironmentSDFGIFramesToUpdateLight**: :ref:`🔗<enum_RenderingServer_En
 
 :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` **ENV_SDFGI_UPDATE_LIGHT_IN_1_FRAME** = ``0``
 
-Aggiorna la luce indiretta dalle luci dinamiche nel SDFGI in 1 frame. Questa è la più reattiva, ma ha i requisiti sulla GPU più elevati.
+Aggiorna la luce indiretta dalle luci dinamiche nell'SDFGI in 1 frame. Questa è la più reattiva, ma ha i requisiti sulla GPU più elevati.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_UPDATE_LIGHT_IN_2_FRAMES:
 
@@ -4769,7 +4769,7 @@ Aggiorna la luce indiretta dalle luci dinamiche nel SDFGI in 1 frame. Questa è 
 
 :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` **ENV_SDFGI_UPDATE_LIGHT_IN_2_FRAMES** = ``1``
 
-Aggiorna la luce indiretta dalle luci dinamiche nel SDFGI in 2 frame.
+Aggiorna la luce indiretta dalle luci dinamiche nell'SDFGI in 2 frame.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_UPDATE_LIGHT_IN_4_FRAMES:
 
@@ -4777,7 +4777,7 @@ Aggiorna la luce indiretta dalle luci dinamiche nel SDFGI in 2 frame.
 
 :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` **ENV_SDFGI_UPDATE_LIGHT_IN_4_FRAMES** = ``2``
 
-Aggiorna la luce indiretta dalle luci dinamiche nel SDFGI in 4 frame.
+Aggiorna la luce indiretta dalle luci dinamiche nell'SDFGI in 4 frame.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_UPDATE_LIGHT_IN_8_FRAMES:
 
@@ -4785,7 +4785,7 @@ Aggiorna la luce indiretta dalle luci dinamiche nel SDFGI in 4 frame.
 
 :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` **ENV_SDFGI_UPDATE_LIGHT_IN_8_FRAMES** = ``3``
 
-Aggiorna la luce indiretta dalle luci dinamiche nel SDFGI in 8 frame.
+Aggiorna la luce indiretta dalle luci dinamiche nell'SDFGI in 8 frame.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_UPDATE_LIGHT_IN_16_FRAMES:
 
@@ -4793,7 +4793,7 @@ Aggiorna la luce indiretta dalle luci dinamiche nel SDFGI in 8 frame.
 
 :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` **ENV_SDFGI_UPDATE_LIGHT_IN_16_FRAMES** = ``4``
 
-Aggiorna la luce indiretta dalle luci dinamiche nel SDFGI in 16 frame. Questa è la meno reattiva, ma ha i requisiti sulla GPU più bassi.
+Aggiorna la luce indiretta dalle luci dinamiche nell'SDFGI in 16 frame. Questa è la meno reattiva, ma ha i requisiti sulla GPU più bassi.
 
 .. _class_RenderingServer_constant_ENV_SDFGI_UPDATE_LIGHT_MAX:
 
@@ -6023,7 +6023,7 @@ enum **SplashStretchMode**: :ref:`🔗<enum_RenderingServer_SplashStretchMode>`
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_DISABLED** = ``0``
 
-No stretching is applied.
+Nessuno stiramento viene applicato.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_KEEP:
 
@@ -6031,7 +6031,7 @@ No stretching is applied.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_KEEP** = ``1``
 
-Stretches image to fullscreen while preserving aspect ratio.
+Stira l'immagine a schermo intero mantenendone il rapporto d'aspetto.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_KEEP_WIDTH:
 
@@ -6039,7 +6039,7 @@ Stretches image to fullscreen while preserving aspect ratio.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_KEEP_WIDTH** = ``2``
 
-Stretches the height of the image based on the width of the screen.
+Stira l'altezza dell'immagine in base alla larghezza dello schermo.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_KEEP_HEIGHT:
 
@@ -6047,7 +6047,7 @@ Stretches the height of the image based on the width of the screen.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_KEEP_HEIGHT** = ``3``
 
-Stretches the width of the image based on the height of the screen.
+Stira la larghezza dell'immagine in base all'altezza dello schermo.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_COVER:
 
@@ -6055,7 +6055,7 @@ Stretches the width of the image based on the height of the screen.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_COVER** = ``4``
 
-Stretches the image to cover the entire screen while preserving aspect ratio.
+Stira l'immagine per coprire l'intero schermo mantenendo il rapporto d'aspetto.
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_IGNORE:
 
@@ -6063,7 +6063,7 @@ Stretches the image to cover the entire screen while preserving aspect ratio.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_IGNORE** = ``5``
 
-Stretches the image to cover the entire screen but doesn't preserve aspect ratio.
+Stira l'immagine per coprire l'intero schermo senza mantenere il rapporto d'aspetto.
 
 .. rst-class:: classref-item-separator
 
@@ -6287,13 +6287,13 @@ Descrizioni dei metodi
 
 :ref:`RID<class_RID>` **area_light_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_area_light_create>`
 
-Creates a new area light and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID can be used in most ``light_*`` RenderingServer functions.
+Crea una luce d'area e la aggiunge al RenderingServer. È possibile accedervi con il RID restituito. Questo RID può essere utilizzato nella maggior parte delle funzioni ``light_*`` del RenderingServer.
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingServer_method_free_rid>` del RenderingServer.
 
-To place in a scene, attach this area light to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` using the returned RID.
+Per posizionarla in una scena, associa questa luce d'area a un'istanza tramite :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` utilizzando il RID restituito.
 
-\ **Note:** The equivalent node is :ref:`AreaLight3D<class_AreaLight3D>`.
+\ **Nota:** Il nodo equivalente è :ref:`AreaLight3D<class_AreaLight3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6595,7 +6595,7 @@ Se ``ignore`` è ``true``, ignora il ritaglio sugli elementi disegnati con quest
 
 |void| **canvas_item_add_ellipse**\ (\ item\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, major\: :ref:`float<class_float>`, minor\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_ellipse>`
 
-Draws an ellipse with semi-major axis ``major`` and semi-minor axis ``minor`` on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`. See also :ref:`CanvasItem.draw_ellipse()<class_CanvasItem_method_draw_ellipse>`.
+Disegna un'ellisse con il semiasse maggiore ``major`` e il semiasse minore ``minor`` sul :ref:`CanvasItem<class_CanvasItem>` puntato dal :ref:`RID<class_RID>` ``item``. Vedi anche :ref:`CanvasItem.draw_ellipse()<class_CanvasItem_method_draw_ellipse>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6765,7 +6765,7 @@ Imposta un :ref:`Transform2D<class_Transform2D>` che sarà utilizzato per trasfo
 
 |void| **canvas_item_add_texture_rect**\ (\ item\: :ref:`RID<class_RID>`, rect\: :ref:`Rect2<class_Rect2>`, texture\: :ref:`RID<class_RID>`, tile\: :ref:`bool<class_bool>` = false, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_texture_rect>`
 
-Disegna un rettangolo con texture 2D sul :ref:`CanvasItem<class_CanvasItem>` puntato dal :ref:`RID<class_RID>` ``item``. Vedi anche :ref:`CanvasItem.draw_rect()<class_CanvasItem_method_draw_rect>` e :ref:`Texture2D.draw_rect()<class_Texture2D_method_draw_rect>`.
+Disegna un rettangolo texturizzato 2D sul :ref:`CanvasItem<class_CanvasItem>` puntato dal :ref:`RID<class_RID>` ``item``. Vedi anche :ref:`CanvasItem.draw_rect()<class_CanvasItem_method_draw_rect>` e :ref:`Texture2D.draw_rect()<class_Texture2D_method_draw_rect>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6777,7 +6777,7 @@ Disegna un rettangolo con texture 2D sul :ref:`CanvasItem<class_CanvasItem>` pun
 
 |void| **canvas_item_add_texture_rect_region**\ (\ item\: :ref:`RID<class_RID>`, rect\: :ref:`Rect2<class_Rect2>`, texture\: :ref:`RID<class_RID>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false, clip_uv\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_texture_rect_region>`
 
-Disegna una regione specifica di un rettangolo con texture 2D sul :ref:`CanvasItem<class_CanvasItem>` puntato dal :ref:`RID<class_RID>` ``item``. Vedi anche :ref:`CanvasItem.draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>` e :ref:`Texture2D.draw_rect_region()<class_Texture2D_method_draw_rect_region>`.
+Disegna una regione specifica di un rettangolo texturizzato 2D sul :ref:`CanvasItem<class_CanvasItem>` puntato dal :ref:`RID<class_RID>` ``item``. Vedi anche :ref:`CanvasItem.draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>` e :ref:`Texture2D.draw_rect_region()<class_Texture2D_method_draw_rect_region>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7273,7 +7273,7 @@ Ciò è utile quando si sposta un occlusore in una nuova posizione, per fornire 
 
 |void| **canvas_light_occluder_set_as_sdf_collision**\ (\ occluder\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_occluder_set_as_sdf_collision>`
 
-Enables or disables using the light occluder as a signed distance field for 2D particle collision.
+Abilita o disabilita l'utilizzo dell'occlusore di luce come un signed distance field per le collisioni di particelle 2D.
 
 .. rst-class:: classref-item-separator
 
@@ -7655,11 +7655,11 @@ Imposta la forma del poligono occlusore.
 
 |void| **canvas_set_disable_scale**\ (\ disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_set_disable_scale>`
 
-If ``disable`` is ``true``, makes 2D rendering ignore the canvas scale defined for each canvas layer. This affects :ref:`CanvasLayer<class_CanvasLayer>`\ s with the :ref:`CanvasLayer.follow_viewport_enabled<class_CanvasLayer_property_follow_viewport_enabled>` property set to ``true``.
+Se ``disable`` è ``true``, il rendering 2D ignora la scala del canvas definita per ogni livello canvas. Questo influisce sui :ref:`CanvasLayer<class_CanvasLayer>` con la proprietà :ref:`CanvasLayer.follow_viewport_enabled<class_CanvasLayer_property_follow_viewport_enabled>` impostata su ``true``.
 
-In the editor, this is set to ``true`` by default, and set to ``false`` when **View > Preview Canvas Scale** is enabled at the top of the 2D editor viewport.
+Nell'editor, è normalmente impostato su ``true`` e su ``false`` quando **Vista > Vedi anteprima di scala del canvas** è abilitato in cima alla viewport dell'editor 2D.
 
-\ **Note:** Setting this to ``true`` does not impact the behavior of :ref:`CanvasLayer.scale<class_CanvasLayer_property_scale>`, :ref:`Node2D.scale<class_Node2D_property_scale>`, or :ref:`Control.scale<class_Control_property_scale>`.
+\ **Nota:** Impostarlo su ``true`` non influisce sul comportamento di :ref:`CanvasLayer.scale<class_CanvasLayer_property_scale>`, :ref:`Node2D.scale<class_Node2D_property_scale>` o :ref:`Control.scale<class_Control_property_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -8069,11 +8069,11 @@ Imposta la qualità del filtro per le ombre delle luci direzionali in 3D su ``qu
 
 :ref:`Image<class_Image>` **environment_bake_panorama**\ (\ environment\: :ref:`RID<class_RID>`, bake_irradiance\: :ref:`bool<class_bool>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_RenderingServer_method_environment_bake_panorama>`
 
-Generates and returns an :ref:`Image<class_Image>` containing the radiance map for the specified ``environment`` RID's sky. This supports built-in sky material and custom sky shaders. If ``bake_irradiance`` is ``true``, the irradiance map is saved instead of the radiance map. The radiance map is used to render reflected light, while the irradiance map is used to render ambient light. See also :ref:`sky_bake_panorama()<class_RenderingServer_method_sky_bake_panorama>`.
+Genera e restituisce un':ref:`Image<class_Image>` contenente la mappa di radianza per il cielo dell'ambiente con il RID ``environment``. Supporta i materiali integrati di cielo e gli shader personalizzati di cielo. Se ``bake_irradiance`` è ``true``, viene salvata la mappa di irradianza invece di radianza. La mappa di radianza serve per renderizzare la luce riflessa, mentre la mappa di irradianza serve per renderizzare la luce ambientale. Vedi anche :ref:`sky_bake_panorama()<class_RenderingServer_method_sky_bake_panorama>`.
 
-\ **Note:** The image is saved using linear encoding without any tonemapping performed, which means it will look too dark if viewed directly in an image editor.
+\ **Nota:** L'immagine è salvata in codifica lineare senza alcuna mappatura dei toni, il che significa che apparirà troppo scura se visualizzata direttamente in un editor di immagini.
 
-\ **Note:** ``size`` should be a 2:1 aspect ratio for the generated panorama to have square pixels. For radiance maps, there is no point in using a height greater than :ref:`Sky.radiance_size<class_Sky_property_radiance_size>`, as it won't increase detail. Irradiance maps only contain low-frequency data, so there is usually no point in going past a size of 128×64 pixels when saving an irradiance map.
+\ **Nota:** ``size`` dovrebbe avere un rapporto di aspetto 2:1 affinché il panorama generato abbia pixel quadrati. Per le mappe di radianza, non ha senso utilizzare un'altezza maggiore di :ref:`Sky.radiance_size<class_Sky_property_radiance_size>`, perché ciò non ne aumenterebbe il dettaglio. Le mappe di irradianza contengono solo dati a bassa frequenza, quindi solitamente non ha senso superare le dimensioni di 128×64 pixel quando si salva una mappa di irradianza.
 
 .. rst-class:: classref-item-separator
 
@@ -8235,7 +8235,7 @@ Configura il bagliore per il RID dell'ambiente specificato. Vedi le proprietà `
 
 |void| **environment_set_sdfgi**\ (\ env\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`, cascades\: :ref:`int<class_int>`, min_cell_size\: :ref:`float<class_float>`, y_scale\: :ref:`EnvironmentSDFGIYScale<enum_RenderingServer_EnvironmentSDFGIYScale>`, use_occlusion\: :ref:`bool<class_bool>`, bounce_feedback\: :ref:`float<class_float>`, read_sky\: :ref:`bool<class_bool>`, energy\: :ref:`float<class_float>`, normal_bias\: :ref:`float<class_float>`, probe_bias\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_sdfgi>`
 
-Configura l'illuminazione globale del campo di distanza con segno per il RID dell'ambiente specificato. Vedi le proprietà ``sdfgi_*`` in :ref:`Environment<class_Environment>` per ulteriori informazioni.
+Configura l'illuminazione globale con signed distance field per il RID dell'ambiente specificato. Vedi le proprietà ``sdfgi_*`` in :ref:`Environment<class_Environment>` per ulteriori informazioni.
 
 .. rst-class:: classref-item-separator
 
@@ -8247,7 +8247,7 @@ Configura l'illuminazione globale del campo di distanza con segno per il RID del
 
 |void| **environment_set_sdfgi_frames_to_converge**\ (\ frames\: :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_sdfgi_frames_to_converge>`
 
-Imposta il numero di frame da utilizzare per convergere l'illuminazione globale del campo di distanza con segno. Equivale a :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>`.
+Imposta il numero di frame da utilizzare per convergere l'illuminazione globale con signed distance field. Equivale a :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>`.
 
 .. rst-class:: classref-item-separator
 
@@ -8259,7 +8259,7 @@ Imposta il numero di frame da utilizzare per convergere l'illuminazione globale 
 
 |void| **environment_set_sdfgi_frames_to_update_light**\ (\ frames\: :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_sdfgi_frames_to_update_light>`
 
-Imposta la frequenza di aggiornamento per l'illuminazione indiretta delle luci dinamiche durante il calcolo dell'illuminazione globale del campo di distanza con segno. Equivale a :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
+Imposta la velocità di aggiornamento per l'illuminazione indiretta delle luci dinamiche durante il calcolo dell'illuminazione globale con signed distance field. Equivale a :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
 
 .. rst-class:: classref-item-separator
 
@@ -8271,7 +8271,7 @@ Imposta la frequenza di aggiornamento per l'illuminazione indiretta delle luci d
 
 |void| **environment_set_sdfgi_ray_count**\ (\ ray_count\: :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_sdfgi_ray_count>`
 
-Imposta il numero di raggi da proiettare per frame quando si calcola l'illuminazione globale del campo di distanza con segno. Equivale a :ref:`ProjectSettings.rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`.
+Imposta il numero di raggi da proiettare per frame durante il calcolo dell'illuminazione globale con signed distance field. Equivale a :ref:`ProjectSettings.rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`.
 
 .. rst-class:: classref-item-separator
 
@@ -8331,7 +8331,7 @@ Imposta le variabili da usare con l'effetto di post-elaborazione dell'occlusione
 
 |void| **environment_set_ssao_quality**\ (\ quality\: :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>`, half_size\: :ref:`bool<class_bool>`, adaptive_target\: :ref:`float<class_float>`, blur_passes\: :ref:`int<class_int>`, fadeout_from\: :ref:`float<class_float>`, fadeout_to\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_ssao_quality>`
 
-Imposta il livello di qualità dell'effetto di post-elaborazione dell'occlusione ambientale dello spazio dello schermo (SSAO). Vedi :ref:`Environment<class_Environment>` per maggiori dettagli.
+Imposta il livello di qualità dell'effetto di post-elaborazione dell'occlusione ambientale nello spazio dello schermo (SSAO). Vedi :ref:`Environment<class_Environment>` per maggiori dettagli.
 
 .. rst-class:: classref-item-separator
 
@@ -8343,7 +8343,7 @@ Imposta il livello di qualità dell'effetto di post-elaborazione dell'occlusione
 
 |void| **environment_set_ssil_quality**\ (\ quality\: :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>`, half_size\: :ref:`bool<class_bool>`, adaptive_target\: :ref:`float<class_float>`, blur_passes\: :ref:`int<class_int>`, fadeout_from\: :ref:`float<class_float>`, fadeout_to\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_ssil_quality>`
 
-Imposta il livello di qualità dell'effetto post-processo dell'illuminazione indiretta dello spazio dello schermo (SSIL). Vedi :ref:`Environment<class_Environment>` per maggiori dettagli.
+Imposta il livello di qualità dell'effetto di post-elaborazione dell'illuminazione indiretta nello spazio dello schermo (SSIL). Vedi :ref:`Environment<class_Environment>` per maggiori dettagli.
 
 .. rst-class:: classref-item-separator
 
@@ -8367,7 +8367,7 @@ Imposta le variabili da usare con l'effetto di post-elaborazione dei riflessi ne
 
 |void| **environment_set_ssr_half_size**\ (\ half_size\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_ssr_half_size>`
 
-Sets whether screen-space reflections will be rendered at full or half size. Half size is faster, but may look pixelated or cause flickering.
+Imposta se i riflessi nello spazio dello schermo saranno renderizzati a piena o metà dimensioni. A metà è più veloce, ma potrebbe apparire pixellata o causare sfarfallii.
 
 .. rst-class:: classref-item-separator
 
@@ -8403,7 +8403,7 @@ Imposta le variabili da usare con l'effetto di post-elaborazione "tonemap". Vedi
 
 |void| **environment_set_tonemap_agx_contrast**\ (\ env\: :ref:`RID<class_RID>`, agx_contrast\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_tonemap_agx_contrast>`
 
-See :ref:`Environment.tonemap_agx_contrast<class_Environment_property_tonemap_agx_contrast>` for more details.
+Vedi :ref:`Environment.tonemap_agx_contrast<class_Environment_property_tonemap_agx_contrast>` per maggiori dettagli.
 
 .. rst-class:: classref-item-separator
 
@@ -8415,7 +8415,7 @@ See :ref:`Environment.tonemap_agx_contrast<class_Environment_property_tonemap_ag
 
 |void| **environment_set_volumetric_fog**\ (\ env\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`, density\: :ref:`float<class_float>`, albedo\: :ref:`Color<class_Color>`, emission\: :ref:`Color<class_Color>`, emission_energy\: :ref:`float<class_float>`, anisotropy\: :ref:`float<class_float>`, length\: :ref:`float<class_float>`, detail_spread\: :ref:`float<class_float>`, gi_inject\: :ref:`float<class_float>`, temporal_reprojection\: :ref:`bool<class_bool>`, temporal_reprojection_amount\: :ref:`float<class_float>`, ambient_inject\: :ref:`float<class_float>`, sky_affect\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_volumetric_fog>`
 
-Imposta le variabili da usare con l'effetto di post-elaborazione della nebbia volumetrica. Vedere :ref:`Environment<class_Environment>` per maggiori dettagli.
+Imposta le variabili da usare con l'effetto di post-elaborazione della nebbia volumetrica. Vedi :ref:`Environment<class_Environment>` per maggiori dettagli.
 
 .. rst-class:: classref-item-separator
 
@@ -9153,7 +9153,7 @@ Imposta un margine per ingrandire le dimensioni dell'AABB usato per effettuare i
 
 |void| **instance_set_ignore_culling**\ (\ instance\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_ignore_culling>`
 
-If ``true``, ignores all culling on the specified 3D geometry instance, including frustum culling, occlusion culling, and layer culling. This is not the same as :ref:`GeometryInstance3D.ignore_occlusion_culling<class_GeometryInstance3D_property_ignore_occlusion_culling>`, which only ignores occlusion culling but leaves frustum and layer culling intact.
+Se ``true``, ignora tutto il culling sull'istanza di geometria 3D specificata, incluso il frustum culling, l'occlusion culling e il culling tramite strati. Questo non è lo stesso di :ref:`GeometryInstance3D.ignore_occlusion_culling<class_GeometryInstance3D_property_ignore_occlusion_culling>`, che ignora solo l'occlusion culling e non influenza il frustum culling o il culling tramite strati.
 
 .. rst-class:: classref-item-separator
 
@@ -9315,7 +9315,7 @@ Restituisce ``true`` se il nostro codice sta attualmente eseguendo sul thread di
 
 |void| **light_area_set_normalize_energy**\ (\ light\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_light_area_set_normalize_energy>`
 
-Defines whether the energy of an :ref:`AreaLight3D<class_AreaLight3D>` is normalized (divided) by its area. If set to ``true``, changing the size does not affect the total energy output. Equivalent to :ref:`AreaLight3D.area_normalize_energy<class_AreaLight3D_property_area_normalize_energy>`.
+Definisce se l'energia di un :ref:`AreaLight3D<class_AreaLight3D>` è normalizzata (divisa) per la sua area. Se impostato su ``true``, la modifica delle dimensioni non influisce l'energia emessa totale. Equivalente a :ref:`AreaLight3D.area_normalize_energy<class_AreaLight3D_property_area_normalize_energy>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9327,7 +9327,7 @@ Defines whether the energy of an :ref:`AreaLight3D<class_AreaLight3D>` is normal
 
 |void| **light_area_set_size**\ (\ light\: :ref:`RID<class_RID>`, size\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_RenderingServer_method_light_area_set_size>`
 
-Sets the extents (width and height) in meters for this area light. Equivalent to :ref:`AreaLight3D.area_size<class_AreaLight3D_property_area_size>`.
+Imposta le estremità (larghezza e altezza) in metri per questa luce d'area. Equivalente a :ref:`AreaLight3D.area_size<class_AreaLight3D_property_area_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9547,7 +9547,7 @@ Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`f
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **lightmap_get_probe_capture_bsp_tree**\ (\ lightmap\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_lightmap_get_probe_capture_bsp_tree>`
 
-Returns the BSP tree data used for accelerating probe lookups. The BSP data is structured as a series of six signed 32-bit values per BSP node in this order: ``float plane_x``, ``float plane_y``, ``float plane_z``, ``float plane_distance``, ``int32_t over``, ``int32_t under``. An empty leaf is denoted by the value ``-2147483648`` (the minimum 32-bit signed integer). See also :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
+Restituisce i dati dell'albero BSP utilizzati per accelerare le ricerche sulle sonde. I dati BSP sono strutturati come una serie di sei valori a 32 bit con segno per ogni nodo BSP in questo ordine: ``float plane_x``, ``float plane_y``, ``float plane_z``, ``float plane_distance``, ``int32_t over``, ``int32_t under``. Una foglia vuota è denotata dal valore ``-2147483648`` (l'intero con segno minimo a 32 bit). Vedi anche :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9559,7 +9559,7 @@ Returns the BSP tree data used for accelerating probe lookups. The BSP data is s
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **lightmap_get_probe_capture_points**\ (\ lightmap\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_lightmap_get_probe_capture_points>`
 
-Returns the *local space* positions of each lightmap probe capture point. Keep in mind the lightmap instance may have a non-zero transform, which will affect the position of the probe capture points. See also :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
+Restituisce le posizioni dello *spazio locale* di ciascun punto di acquisizione delle sonde in una lightmap. Tieni presente che l'istanza della lightmap potrebbe avere una trasformazione diversa da zero, che influenzerà la posizione dei punti di acquisizione delle sonde. Vedi anche :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9571,7 +9571,7 @@ Returns the *local space* positions of each lightmap probe capture point. Keep i
 
 :ref:`PackedColorArray<class_PackedColorArray>` **lightmap_get_probe_capture_sh**\ (\ lightmap\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_lightmap_get_probe_capture_sh>`
 
-Returns the L0, L1, and L2 `spherical harmonics <https://en.wikipedia.org/wiki/Spherical_harmonics>`__ data for each lightmap probe capture point. This is specified as 9 :ref:`Color<class_Color>` values per probe, which means the size of the returned data is always 9 times the number of probe points. See also :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
+Restituisce i dati delle `armoniche sferiche <https://en.wikipedia.org/wiki/Spherical_harmonics>`__ L0, L1 e L2, per ciascun punto di cattura delle sonde in una lightmap. Questo è specificato come 9 valori :ref:`Color<class_Color>` per sonda, il che significa che la dimensione dei dati restituiti è sempre 9 volte il numero di punti sonda. Vedi anche :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9583,7 +9583,7 @@ Returns the L0, L1, and L2 `spherical harmonics <https://en.wikipedia.org/wiki/S
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **lightmap_get_probe_capture_tetrahedra**\ (\ lightmap\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_lightmap_get_probe_capture_tetrahedra>`
 
-Returns the tetrahedralization data used for interpolating between lightmap probe capture points. Each tetrahedron is specified as a series of 4 numbers, each being an index into the probe capture points array returned by :ref:`lightmap_get_probe_capture_points()<class_RenderingServer_method_lightmap_get_probe_capture_points>`. See also :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
+Restituisce i dati di tetraedralizzazione utilizzati per interpolare tra i punti di cattura delle sonde in una lightmap. Ogni tetraedro è specificato come una serie di 4 numeri, ciascuno dei quali è un indice nell'array dei punti di cattura delle sonde restituito da :ref:`lightmap_get_probe_capture_points()<class_RenderingServer_method_lightmap_get_probe_capture_points>`. Vedi anche :ref:`lightmap_set_probe_capture_data()<class_RenderingServer_method_lightmap_set_probe_capture_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9607,7 +9607,7 @@ Utilizzato per informare il renderer su quale valore di normalizzazione dell'esp
 
 |void| **lightmap_set_probe_bounds**\ (\ lightmap\: :ref:`RID<class_RID>`, bounds\: :ref:`AABB<class_AABB>`\ ) :ref:`🔗<class_RenderingServer_method_lightmap_set_probe_bounds>`
 
-Sets the bounds that this lightmap instance should visually affect, both in terms of static lightmap baking and probe-based global illumination.
+Imposta i limiti che questa istanza di lightmap dovrebbe influenzare visivamente, sia in termini di preparazione di lightmap statica sia di illuminazione globale basata su sonde.
 
 .. rst-class:: classref-item-separator
 
@@ -9619,7 +9619,7 @@ Sets the bounds that this lightmap instance should visually affect, both in term
 
 |void| **lightmap_set_probe_capture_data**\ (\ lightmap\: :ref:`RID<class_RID>`, points\: :ref:`PackedVector3Array<class_PackedVector3Array>`, point_sh\: :ref:`PackedColorArray<class_PackedColorArray>`, tetrahedra\: :ref:`PackedInt32Array<class_PackedInt32Array>`, bsp_tree\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_RenderingServer_method_lightmap_set_probe_capture_data>`
 
-Sets the probe capture data for the given lightmap instance. See :ref:`lightmap_get_probe_capture_points()<class_RenderingServer_method_lightmap_get_probe_capture_points>`, :ref:`lightmap_get_probe_capture_sh()<class_RenderingServer_method_lightmap_get_probe_capture_sh>`, :ref:`lightmap_get_probe_capture_tetrahedra()<class_RenderingServer_method_lightmap_get_probe_capture_tetrahedra>`, and :ref:`lightmap_get_probe_capture_bsp_tree()<class_RenderingServer_method_lightmap_get_probe_capture_bsp_tree>` for the expected data formats.
+Imposta i dati di cattura delle sonde per l'istanza di lightmap specificata. Vedi :ref:`lightmap_get_probe_capture_points()<class_RenderingServer_method_lightmap_get_probe_capture_points>`, :ref:`lightmap_get_probe_capture_sh()<class_RenderingServer_method_lightmap_get_probe_capture_sh>`, :ref:`lightmap_get_probe_capture_tetrahedra()<class_RenderingServer_method_lightmap_get_probe_capture_tetrahedra>` e :ref:`lightmap_get_probe_capture_bsp_tree()<class_RenderingServer_method_lightmap_get_probe_capture_bsp_tree>` per i formati di dati previsti.
 
 .. rst-class:: classref-item-separator
 
@@ -9631,7 +9631,7 @@ Sets the probe capture data for the given lightmap instance. See :ref:`lightmap_
 
 |void| **lightmap_set_probe_capture_update_speed**\ (\ speed\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_lightmap_set_probe_capture_update_speed>`
 
-The framerate-independent update speed when representing dynamic object lighting from :ref:`LightmapProbe<class_LightmapProbe>`\ s. Higher values make dynamic object lighting update faster. Higher values can prevent fast-moving objects from having "outdated" indirect lighting displayed on them, at the cost of possible flickering when an object moves from a bright area to a shaded area. See also :ref:`ProjectSettings.rendering/lightmapping/probe_capture/update_speed<class_ProjectSettings_property_rendering/lightmapping/probe_capture/update_speed>`.
+La velocità di aggiornamento, indipendente dal frame rate, quando si rappresenta l'illuminazione dinamica degli oggetti dai :ref:`LightmapProbe<class_LightmapProbe>`. Valori più alti velocizzano l'aggiornamento dell'illuminazione dinamica degli oggetti. Valori più alti possono evitare che gli oggetti in rapido movimento abbiano un'illuminazione indiretta "obsoleta" visualizzata su di essi, a scapito di un possibile sfarfallio quando un oggetto si sposta da un'area luminosa a un'area ombreggiata. Vedi anche :ref:`ProjectSettings.rendering/lightmapping/probe_capture/update_speed<class_ProjectSettings_property_rendering/lightmapping/probe_capture/update_speed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9643,7 +9643,7 @@ The framerate-independent update speed when representing dynamic object lighting
 
 |void| **lightmap_set_probe_interior**\ (\ lightmap\: :ref:`RID<class_RID>`, interior\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_lightmap_set_probe_interior>`
 
-Sets whether the lightmap instance should be considered as interior (when ``interior`` is ``true``). If the lightmap is marked as interior, environment lighting is ignored when baking lightmaps.
+Imposta se l'istanza di lightmap deve essere considerata per interni (quando ``interior`` è ``true``). Se la lightmap è contrassegnata per interni, l'illuminazione ambientale è ignorata durante la preparazione delle lightmap.
 
 .. rst-class:: classref-item-separator
 
@@ -9767,11 +9767,11 @@ Imposta lo shader di un materiale shader.
 
 |void| **material_set_use_debanding**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_material_set_use_debanding>`
 
-When using the Mobile renderer, :ref:`material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` can be used to enable or disable the debanding feature of 3D materials (:ref:`BaseMaterial3D<class_BaseMaterial3D>` and :ref:`ShaderMaterial<class_ShaderMaterial>`).
+Quando si utilizza il renderer Mobile, è possibile usare :ref:`material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` per abilitare o disabilitare la funzionalità di debanding nei materiali 3D (:ref:`BaseMaterial3D<class_BaseMaterial3D>` e :ref:`ShaderMaterial<class_ShaderMaterial>`).
 
-\ :ref:`material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` has no effect when using the Compatibility or Forward+ renderer. In Forward+, :ref:`Viewport<class_Viewport>` debanding can be used instead.
+\ :ref:`material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` non ha alcun effetto quando si utilizza il renderer Compatibilità o Forward+. In Forward+ è invece possibile utilizzare il debanding in :ref:`Viewport<class_Viewport>`.
 
-See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>` and :ref:`viewport_set_use_debanding()<class_RenderingServer_method_viewport_set_use_debanding>`.
+Vedi anche :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>` e :ref:`viewport_set_use_debanding()<class_RenderingServer_method_viewport_set_use_debanding>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9783,26 +9783,26 @@ See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<cla
 
 |void| **mesh_add_surface**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_add_surface>`
 
-Creates a new surface on the given ``mesh``. Equivalent to :ref:`mesh_add_surface_from_arrays()<class_RenderingServer_method_mesh_add_surface_from_arrays>`, but takes a single :ref:`Dictionary<class_Dictionary>` argument instead of separate arguments. The dictionary must follow this structure:
+Crea una nuova superficie sulla ``mesh`` specificata. Equivalente a :ref:`mesh_add_surface_from_arrays()<class_RenderingServer_method_mesh_add_surface_from_arrays>`, ma accetta un singolo argomento di tipo :ref:`Dictionary<class_Dictionary>` anziché argomenti separati. Il dizionario deve seguire questa struttura:
 
 ::
 
     {
-        # Required:
+        # Obbligatori:
         "primitive": RenderingServer.PrimitiveType,
         "format": RenderingServer.ArrayFormat,
         "vertex_data": PackedByteArray,
         "vertex_count": int,
         "aabb": AABB,
 
-        # Optional:
+        # Facoltativi:
         "attribute_data": PackedByteArray,
         "skin_data": PackedByteArray,
         "index_data": PackedByteArray,
-        "index_count": int, # Required if `index_data` is specified.
+        "index_count": int, # Necessario se `index_data` è specificato.
         "uv_scale": Vector4,
         "lods": [
-            # Both values are required for each LOD level.
+            # Sono necessari entrambi i valori per ogni livello di LOD.
             {
                 "edge_length": float,
                 "index_data": PackedByteArray,
@@ -9813,7 +9813,7 @@ Creates a new surface on the given ``mesh``. Equivalent to :ref:`mesh_add_surfac
         "material": Material,
     }
 
-See also :ref:`mesh_get_surface()<class_RenderingServer_method_mesh_get_surface>`, which returns data in the same structure defined above.
+Vedi anche :ref:`mesh_get_surface()<class_RenderingServer_method_mesh_get_surface>`, che restituisce i dati nella stessa struttura definita sopra.
 
 .. rst-class:: classref-item-separator
 
@@ -9937,7 +9937,7 @@ Restituisce l'aabb personalizzato di una mesh.
 
 :ref:`Dictionary<class_Dictionary>` **mesh_get_surface**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_get_surface>`
 
-Returns a mesh's surface as a dictionary following the same structure as described in :ref:`mesh_add_surface()<class_RenderingServer_method_mesh_add_surface>`.
+Restituisce la superficie di una mesh come dizionario seguendo la stessa struttura descritta in :ref:`mesh_add_surface()<class_RenderingServer_method_mesh_add_surface>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9985,9 +9985,9 @@ Imposta l'aabb personalizzato di una mesh.
 
 |void| **mesh_set_shadow_mesh**\ (\ mesh\: :ref:`RID<class_RID>`, shadow_mesh\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_set_shadow_mesh>`
 
-Sets an optional second mesh which can be used for rendering shadows and the depth prepass. Can be used to increase performance by supplying a mesh with fused vertices and only vertex position data (without normals, UVs, colors, etc.).
+Imposta una mesh facoltativa secondaria che può servire per renderizzare ombre e per il pre-passaggio di profondità. Può essere utile per aumentare le prestazioni fornendo una mesh con vertici fusi e con solo i dati di posizione dei vertici (senza normali, UV, colori, ecc.).
 
-\ **Note:** This mesh must have exactly the same vertex positions as the source mesh (including the source mesh's LODs, if present). If vertex positions differ, then the mesh will not draw correctly.
+\ **Nota:** Questa mesh deve avere esattamente le stesse posizioni dei vertici della mesh originale (compresi i LOD della mesh originale, se presenti). Se le posizioni dei vertici sono diverse, la mesh non verrà disegnata correttamente.
 
 .. rst-class:: classref-item-separator
 
@@ -10131,11 +10131,11 @@ Imposta il materiale della superficie di una mesh.
 
 |void| **mesh_surface_update_attribute_region**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_surface_update_attribute_region>`
 
-Updates the attribute buffer of the mesh surface with the given ``data``. The expected data per attribute is 8 or 12 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector2<class_Vector2>` or :ref:`Vector3<class_Vector3>` vertices. This value can be determined with :ref:`mesh_surface_get_format_attribute_stride()<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>` instead.
+Aggiorna il buffer degli attributi della superficie della mesh con i dati specificati in ``data``. La dimensione prevista dei dati per attributo è di 8 o 12 byte (4 byte per float, 2 float per :ref:`Vector2<class_Vector2>` e 3 float per :ref:`Vector3<class_Vector3>`), a seconda che la mesh utilizzi vertici :ref:`Vector2<class_Vector2>` o :ref:`Vector3<class_Vector3>`. È possibile determinare questo valore con :ref:`mesh_surface_get_format_attribute_stride()<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each attribute.
+Il punto di partenza degli aggiornamenti si può cambiare con ``offset``. Nella maggior parte dei casi, il valore di ``offset`` dovrebbe essere un multiplo di 12 byte per allinearsi a ciascun attributo.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of attribute locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+Un :ref:`PackedVector3Array<class_PackedVector3Array>` di posizioni di attributi può essere convertito in un :ref:`PackedByteArray<class_PackedByteArray>` tramite :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` per l'uso in ``data``.
 
 .. rst-class:: classref-item-separator
 
@@ -10159,11 +10159,11 @@ Aggiorna il buffer di indici della superficie della mesh con i dati ``data`` spe
 
 |void| **mesh_surface_update_skin_region**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_surface_update_skin_region>`
 
-Updates the skin buffer of the mesh surface with the given ``data``. The expected data per skin is 8 or 12 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector2<class_Vector2>` or :ref:`Vector3<class_Vector3>` vertices. This value can be determined with :ref:`mesh_surface_get_format_skin_stride()<class_RenderingServer_method_mesh_surface_get_format_skin_stride>` instead.
+Aggiorna il buffer delle skin della superficie della mesh con i dati specificati in ``data``. La dimensione prevista dei dati per attributo è di 8 o 12 byte (4 byte per float, 2 float per :ref:`Vector2<class_Vector2>` e 3 float per :ref:`Vector3<class_Vector3>`), a seconda che la mesh utilizzi vertici :ref:`Vector2<class_Vector2>` o :ref:`Vector3<class_Vector3>`. È possibile determinare questo valore con :ref:`mesh_surface_get_format_skin_stride()<class_RenderingServer_method_mesh_surface_get_format_skin_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each skin.
+Il punto di partenza degli aggiornamenti si può cambiare con ``offset``. Nella maggior parte dei casi, il valore di ``offset`` dovrebbe essere un multiplo di 12 byte per allinearsi a ciascun attributo.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of skin locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+Un :ref:`PackedVector3Array<class_PackedVector3Array>` di posizioni di attributi può essere convertito in un :ref:`PackedByteArray<class_PackedByteArray>` tramite :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` per l'uso in ``data``.
 
 .. rst-class:: classref-item-separator
 
@@ -10175,11 +10175,11 @@ A :ref:`PackedVector3Array<class_PackedVector3Array>` of skin locations can be c
 
 |void| **mesh_surface_update_vertex_region**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`, offset\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_surface_update_vertex_region>`
 
-Updates the vertex buffer of the mesh surface with the given ``data``. The expected data per vertex is 8 or 12 bytes (4 bytes per float, 2 floats per :ref:`Vector2<class_Vector2>`, and 3 floats per :ref:`Vector3<class_Vector3>`) depending on if the mesh is using :ref:`Vector2<class_Vector2>` or :ref:`Vector3<class_Vector3>` vertices. This value can be determined with :ref:`mesh_surface_get_format_vertex_stride()<class_RenderingServer_method_mesh_surface_get_format_vertex_stride>` instead.
+Aggiorna il buffer dei vertici della superficie della mesh con i dati specificati in ``data``. La dimensione prevista dei dati per attributo è di 8 o 12 byte (4 byte per float, 2 float per :ref:`Vector2<class_Vector2>` e 3 float per :ref:`Vector3<class_Vector3>`), a seconda che la mesh utilizzi vertici :ref:`Vector2<class_Vector2>` o :ref:`Vector3<class_Vector3>`. È possibile determinare questo valore con :ref:`mesh_surface_get_format_vertex_stride()<class_RenderingServer_method_mesh_surface_get_format_vertex_stride>`.
 
-The starting point of the updates can be changed with ``offset``. The value of ``offset`` should be a multiple of 12 bytes in most cases to align to each vertex.
+Il punto di partenza degli aggiornamenti si può cambiare con ``offset``. Nella maggior parte dei casi, il valore di ``offset`` dovrebbe essere un multiplo di 12 byte per allinearsi a ciascun attributo.
 
-A :ref:`PackedVector3Array<class_PackedVector3Array>` of vertex locations can be converted into a :ref:`PackedByteArray<class_PackedByteArray>` using :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` for use in ``data``.
+Un :ref:`PackedVector3Array<class_PackedVector3Array>` di posizioni di attributi può essere convertito in un :ref:`PackedByteArray<class_PackedByteArray>` tramite :ref:`PackedVector3Array.to_byte_array()<class_PackedVector3Array_method_to_byte_array>` per l'uso in ``data``.
 
 .. rst-class:: classref-item-separator
 
@@ -10191,7 +10191,7 @@ A :ref:`PackedVector3Array<class_PackedVector3Array>` of vertex locations can be
 
 |void| **multimesh_allocate_data**\ (\ multimesh\: :ref:`RID<class_RID>`, instances\: :ref:`int<class_int>`, transform_format\: :ref:`MultimeshTransformFormat<enum_RenderingServer_MultimeshTransformFormat>`, color_format\: :ref:`bool<class_bool>` = false, custom_data_format\: :ref:`bool<class_bool>` = false, use_indirect\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_multimesh_allocate_data>`
 
-Sets up the multimesh using the specified data. The number of instances is set by ``instances``. The format of the instance transforms is set by ``transform_format``, which should be set according to whether the multimesh is meant to be rendered in 2D or 3D. If ``color_format`` is ``true``, each instance will have a color associated with it. If ``custom_data_format`` is ``true``, each instance will have a custom data vector associated with it. If ``use_indirect`` is ``true``, an indirect command buffer will be created for this multimesh, allowing the instance count to be modified directly on the GPU. See also :ref:`multimesh_get_command_buffer_rd_rid()<class_RenderingServer_method_multimesh_get_command_buffer_rd_rid>`.
+Configura la multimesh utilizzando i dati specificati. Il numero di istanze è impostato da ``instances``. Il formato delle trasformazioni delle istanze è impostato da ``transform_format``, che si dovrebbe impostare a seconda che bisogna renderizzare il multimesh in 2D o 3D. Se ``color_format`` è ``true``, a ciascuna istanza sarà associato un colore. Se ``custom_data_format`` è ``true``, a ciascuna istanza sarà associato un vettore di dati personalizzati. Se ``use_indirect`` è ``true``, verrà creato un buffer di comandi indiretto per questa multimesh, consentendo di modificare il conteggio delle istanze direttamente sulla GPU. Vedi anche :ref:`multimesh_get_command_buffer_rd_rid()<class_RenderingServer_method_multimesh_get_command_buffer_rd_rid>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10259,26 +10259,26 @@ Restituisce il :ref:`RID<class_RID>` per il :ref:`RenderingDevice<class_Renderin
 
 :ref:`RID<class_RID>` **multimesh_get_command_buffer_rd_rid**\ (\ multimesh\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_multimesh_get_command_buffer_rd_rid>`
 
-Returns the :ref:`RenderingDevice<class_RenderingDevice>` :ref:`RID<class_RID>` handle of the :ref:`MultiMesh<class_MultiMesh>` command buffer. This :ref:`RID<class_RID>` is only valid if ``use_indirect`` is set to ``true`` when allocating data through :ref:`multimesh_allocate_data()<class_RenderingServer_method_multimesh_allocate_data>`. It can be used to directly modify the instance count via buffer.
+Restituisce il :ref:`RID<class_RID>` per il :ref:`RenderingDevice<class_RenderingDevice>` del gestore del buffer di comandi del :ref:`MultiMesh<class_MultiMesh>`. Questo :ref:`RID<class_RID>` è valido solo se ``use_indirect`` è impostato su ``true`` quando si assegnano i dati usando :ref:`multimesh_allocate_data()<class_RenderingServer_method_multimesh_allocate_data>`. Può essere utilizzato per modificare direttamente il numero delle istanze tramite buffer.
 
-The data structure is dependent on both how many surfaces the mesh contains and whether it is indexed or not, the buffer has 5 integers in it, with the last unused if the mesh is not indexed.
+La struttura dei dati dipende sia dal numero di superfici contenute nella mesh sia dal fatto che sia indicizzata o meno. Il buffer contiene 5 numeri interi, con l'ultimo inutilizzato se la mesh non è indicizzata.
 
-Each of the values in the buffer correspond to these options:
+Ciascuno dei valori nel buffer corrisponde a queste opzioni:
 
 .. code:: text
 
-    Indexed:
+    Indicizzata:
       0 - indexCount;
       1 - instanceCount;
       2 - firstIndex;
       3 - vertexOffset;
       4 - firstInstance;
-    Non-indexed:
+    Non-indicizzata:
       0 - vertexCount;
       1 - instanceCount;
       2 - firstVertex;
       3 - firstInstance;
-      4 - unused;
+      4 - inutilizzato;
 
 .. rst-class:: classref-item-separator
 
@@ -10448,9 +10448,9 @@ Imposta il :ref:`Transform2D<class_Transform2D>` per questa istanza. Da utilizza
 
 |void| **multimesh_instances_reset_physics_interpolation**\ (\ multimesh\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_multimesh_instances_reset_physics_interpolation>`
 
-Prevents physics interpolation for all instances during the current physics tick.
+Impedisce l'interpolazione della fisica per l'istanza specificata per il tick di fisica attuale.
 
-This is useful when moving all instances to new locations, to give instantaneous changes rather than interpolation from the previous locations.
+Ciò è utile quando si sposta un'istanza in una nuova posizione, per apportare una modifica istantanea anziché un'interpolazione dalla posizione precedente.
 
 .. rst-class:: classref-item-separator
 
@@ -10715,7 +10715,7 @@ Imposta la maschera di culling per la collisione o l'attrattore di particelle GP
 
 |void| **particles_collision_set_field_texture**\ (\ particles_collision\: :ref:`RID<class_RID>`, texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_collision_set_field_texture>`
 
-Imposta la texture del campo di distanza con segno per la collisione di particelle GPU 3D specificata dal RID ``particles_collision`` su ``texture``. Equivale a :ref:`GPUParticlesCollisionSDF3D.texture<class_GPUParticlesCollisionSDF3D_property_texture>` o :ref:`GPUParticlesAttractorVectorField3D.texture<class_GPUParticlesAttractorVectorField3D_property_texture>` a seconda del tipo di ``particles_collision``.
+Imposta la ``texture`` dell'SDF per la collisione di particelle GPU 3D specificata dal RID ``particles_collision`` su ``texture``. Equivale a :ref:`GPUParticlesCollisionSDF3D.texture<class_GPUParticlesCollisionSDF3D_property_texture>` o :ref:`GPUParticlesAttractorVectorField3D.texture<class_GPUParticlesAttractorVectorField3D_property_texture>` a seconda del tipo di ``particles_collision``.
 
 .. rst-class:: classref-item-separator
 
@@ -10831,7 +10831,7 @@ Restituisce ``true`` se le particelle non sono emesse e sono inattive.
 
 |void| **particles_request_process**\ (\ particles\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_request_process>`
 
-Aggiungi il sistema di particelle alla lista dei sistemi di particelle che devono essere aggiornati. L'aggiornamento avverrà nel frame successivo o nella chiamata successiva a :ref:`instances_cull_aabb()<class_RenderingServer_method_instances_cull_aabb>`, :ref:`instances_cull_convex()<class_RenderingServer_method_instances_cull_convex>` o :ref:`instances_cull_ray()<class_RenderingServer_method_instances_cull_ray>`.
+Aggiungi il sistema di particelle alla lista dei sistemi di particelle che bisogna aggiornare. L'aggiornamento avverrà nel frame successivo o nella chiamata successiva a :ref:`instances_cull_aabb()<class_RenderingServer_method_instances_cull_aabb>`, :ref:`instances_cull_convex()<class_RenderingServer_method_instances_cull_convex>` o :ref:`instances_cull_ray()<class_RenderingServer_method_instances_cull_ray>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10893,7 +10893,7 @@ Imposta il rapporto di quantità per le particelle da emettere. Equivalente a :r
 
 |void| **particles_set_collision_base_size**\ (\ particles\: :ref:`RID<class_RID>`, size\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_collision_base_size>`
 
-Sets the base size for particle collision. Equivalent to :ref:`GPUParticles3D.collision_base_size<class_GPUParticles3D_property_collision_base_size>`.
+Imposta le dimensioni base per le collisioni di particelle. Equivale a :ref:`GPUParticles3D.collision_base_size<class_GPUParticles3D_property_collision_base_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11037,7 +11037,7 @@ Imposta il valore che informa un :ref:`ParticleProcessMaterial<class_ParticlePro
 
 |void| **particles_set_interpolate**\ (\ particles\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_interpolate>`
 
-Sets whether particles should use interpolation between fixed steps. Equivalent to :ref:`GPUParticles3D.interpolate<class_GPUParticles3D_property_interpolate>`.
+Imposta se le particelle usano un'interpolazione tra i passi fissi. Equivale a :ref:`GPUParticles3D.interpolate<class_GPUParticles3D_property_interpolate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11135,7 +11135,7 @@ Imposta la scala di velocità del sistema di particelle. Equivale a :ref:`GPUPar
 
 |void| **particles_set_subemitter**\ (\ particles\: :ref:`RID<class_RID>`, subemitter_particles\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_subemitter>`
 
-Sets the subemitter particles for the particle system. Equivalent to :ref:`GPUParticles3D.sub_emitter<class_GPUParticles3D_property_sub_emitter>`.
+Imposta le particelle sottoemettitori per il sistema di particelle. Equivalente a :ref:`GPUParticles3D.sub_emitter<class_GPUParticles3D_property_sub_emitter>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11147,7 +11147,7 @@ Sets the subemitter particles for the particle system. Equivalent to :ref:`GPUPa
 
 |void| **particles_set_trail_bind_poses**\ (\ particles\: :ref:`RID<class_RID>`, bind_poses\: :ref:`Array<class_Array>`\[:ref:`Transform3D<class_Transform3D>`\]\ ) :ref:`🔗<class_RenderingServer_method_particles_set_trail_bind_poses>`
 
-Sets the trail bind poses for the particle system. This specified as an array of :ref:`Transform3D<class_Transform3D>`\ s representing the bind pose for each draw pass. See :ref:`GPUParticles3D.draw_skin<class_GPUParticles3D_property_draw_skin>`, :ref:`Skin.get_bind_count()<class_Skin_method_get_bind_count>`, and :ref:`Skin.get_bind_pose()<class_Skin_method_get_bind_pose>`. Set the value for each draw pass to :ref:`Transform3D.IDENTITY<class_Transform3D_constant_IDENTITY>` to use the default behavior, which is what built-in trails use (:ref:`RibbonTrailMesh<class_RibbonTrailMesh>` and :ref:`TubeTrailMesh<class_TubeTrailMesh>`).
+Imposta le pose di associazione della scia per il sistema di particelle. Questo è specificato come un array di :ref:`Transform3D<class_Transform3D>` che rappresentano la posa di associazione per ogni passaggio di disegno. Vedi :ref:`GPUParticles3D.draw_skin<class_GPUParticles3D_property_draw_skin>`, :ref:`Skin.get_bind_count()<class_Skin_method_get_bind_count>` e :ref:`Skin.get_bind_pose()<class_Skin_method_get_bind_pose>`. Imposta il valore per ogni passaggio di disegno su :ref:`Transform3D.IDENTITY<class_Transform3D_constant_IDENTITY>` per usare il comportamento predefinito, ovvero quello usato dalle scie integrate (:ref:`RibbonTrailMesh<class_RibbonTrailMesh>` e :ref:`TubeTrailMesh<class_TubeTrailMesh>`).
 
 .. rst-class:: classref-item-separator
 
@@ -11171,7 +11171,7 @@ Se ``enable`` è ``true``, abilita le scie per le particelle ``particles`` con l
 
 |void| **particles_set_transform_align**\ (\ particles\: :ref:`RID<class_RID>`, align\: :ref:`ParticlesTransformAlign<enum_RenderingServer_ParticlesTransformAlign>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_transform_align>`
 
-Sets the transform alignment for the particle system. Equivalent to :ref:`GPUParticles3D.transform_align<class_GPUParticles3D_property_transform_align>`.
+Imposta l'allineamento della trasformazione per il sistema di particelle. Equivale a :ref:`GPUParticles3D.transform_align<class_GPUParticles3D_property_transform_align>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11183,7 +11183,7 @@ Sets the transform alignment for the particle system. Equivalent to :ref:`GPUPar
 
 |void| **particles_set_transform_align_axis**\ (\ particles\: :ref:`RID<class_RID>`, rotation_axis\: :ref:`ParticlesTransformAlignAxis<enum_RenderingServer_ParticlesTransformAlignAxis>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_transform_align_axis>`
 
-Sets which axis to use for transform alignment.
+Imposta quale asse utilizzare per l'allineamento della trasformazione.
 
 .. rst-class:: classref-item-separator
 
@@ -11195,7 +11195,7 @@ Sets which axis to use for transform alignment.
 
 |void| **particles_set_transform_align_channel_filter**\ (\ particles\: :ref:`RID<class_RID>`, channel_filter\: :ref:`ParticlesTransformAlignCustomSrc<enum_RenderingServer_ParticlesTransformAlignCustomSrc>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_transform_align_channel_filter>`
 
-When using Z-Billboarding, which CUSTOM channel to read from.
+Quando si utilizza il Z-Billboarding, da quale canale CUSTOM leggere.
 
 .. rst-class:: classref-item-separator
 
@@ -11219,7 +11219,7 @@ Se ``true``, le particelle usano coordinate locali. Se ``false`` usano coordinat
 
 |void| **positional_soft_shadow_filter_set_quality**\ (\ quality\: :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>`\ ) :ref:`🔗<class_RenderingServer_method_positional_soft_shadow_filter_set_quality>`
 
-Imposta la qualità del filtro per le ombre delle luci omnidirezionali e riflettori in 3D. Vedi anche :ref:`ProjectSettings.rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality>`. Questo parametro è globale e non può essere impostato per ogni viewport.
+Imposta la qualità del filtro per le ombre delle luci omnidirezionali e spot in 3D. Vedi anche :ref:`ProjectSettings.rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality>`. Questo parametro è globale e non è possibile impostarlo per ogni viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -11519,7 +11519,7 @@ Imposta l'ambiente di riserva da utilizzare in questo scenario. L'ambiente di ri
 
 |void| **screen_space_roughness_limiter_set_active**\ (\ enable\: :ref:`bool<class_bool>`, amount\: :ref:`float<class_float>`, limit\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_screen_space_roughness_limiter_set_active>`
 
-Imposta i parametri del limitatore di ruvidità nello spazio dello schermo, ad esempio se deve essere abilitato e le sue soglie. Equivale a :ref:`ProjectSettings.rendering/anti_aliasing/screen_space_roughness_limiter/enabled<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`, :ref:`ProjectSettings.rendering/anti_aliasing/screen_space_roughness_limiter/amount<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/amount>` e :ref:`ProjectSettings.rendering/anti_aliasing/screen_space_roughness_limiter/limit<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/limit>`.
+Imposta i parametri del limitatore di rugosità nello spazio dello schermo, ad esempio se deve essere abilitato e le sue soglie. Equivale a :ref:`ProjectSettings.rendering/anti_aliasing/screen_space_roughness_limiter/enabled<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`, :ref:`ProjectSettings.rendering/anti_aliasing/screen_space_roughness_limiter/amount<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/amount>` e :ref:`ProjectSettings.rendering/anti_aliasing/screen_space_roughness_limiter/limit<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/limit>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11675,7 +11675,7 @@ Imposta l'indicazione del percorso per lo shader specificato. In genere dovrebbe
 
 |void| **skeleton_allocate_data**\ (\ skeleton\: :ref:`RID<class_RID>`, bones\: :ref:`int<class_int>`, is_2d_skeleton\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_skeleton_allocate_data>`
 
-Allocates data for this skeleton using the number of bones specified in ``bones``. If ``is_2d_skeleton`` is ``true``, the skeleton will be treated as a 2D skeleton instead of a 3D skeleton. See also :ref:`skeleton_get_bone_count()<class_RenderingServer_method_skeleton_get_bone_count>`.
+Alloca i dati per questo scheletro usando il numero di ossa specificato in ``bones``. Se ``is_2d_skeleton`` è ``true``, lo scheletro sarà trattato come uno scheletro 2D anziché uno scheletro 3D. Vedi anche :ref:`skeleton_get_bone_count()<class_RenderingServer_method_skeleton_get_bone_count>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11749,7 +11749,7 @@ Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`f
 
 :ref:`int<class_int>` **skeleton_get_bone_count**\ (\ skeleton\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_skeleton_get_bone_count>`
 
-Returns the number of bones allocated for this skeleton. See also :ref:`skeleton_allocate_data()<class_RenderingServer_method_skeleton_allocate_data>`.
+Restituisce il numero di ossa assegnate a questo scheletro. Vedi anche :ref:`skeleton_allocate_data()<class_RenderingServer_method_skeleton_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11761,7 +11761,7 @@ Returns the number of bones allocated for this skeleton. See also :ref:`skeleton
 
 |void| **skeleton_set_base_transform_2d**\ (\ skeleton\: :ref:`RID<class_RID>`, base_transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_RenderingServer_method_skeleton_set_base_transform_2d>`
 
-Sets the base :ref:`Transform2D<class_Transform2D>` to use for the specified skeleton.
+Imposta il :ref:`Transform2D<class_Transform2D>` base da usare per lo scheletro specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -11773,11 +11773,11 @@ Sets the base :ref:`Transform2D<class_Transform2D>` to use for the specified ske
 
 :ref:`Image<class_Image>` **sky_bake_panorama**\ (\ sky\: :ref:`RID<class_RID>`, energy\: :ref:`float<class_float>`, bake_irradiance\: :ref:`bool<class_bool>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_RenderingServer_method_sky_bake_panorama>`
 
-Generates and returns an :ref:`Image<class_Image>` containing the radiance map for the specified ``sky`` RID. This supports built-in sky material and custom sky shaders. If ``bake_irradiance`` is ``true``, the irradiance map is saved instead of the radiance map. The radiance map is used to render reflected light, while the irradiance map is used to render ambient light. See also :ref:`environment_bake_panorama()<class_RenderingServer_method_environment_bake_panorama>`.
+Genera e restituisce un':ref:`Image<class_Image>` contenente la mappa di radianza per il cielo con il RID ``sky``. Supporta i materiali integrati di cielo e gli shader personalizzati di cielo. Se ``bake_irradiance`` è ``true``, viene salvata la mappa di irradianza invece di radianza. La mappa di radianza serve per renderizzare la luce riflessa, mentre la mappa di irradianza serve per renderizzare la luce ambientale. Vedi anche :ref:`environment_bake_panorama()<class_RenderingServer_method_environment_bake_panorama>`.
 
-\ **Note:** The image is saved using linear encoding without any tonemapping performed, which means it will look too dark if viewed directly in an image editor. ``energy`` values above ``1.0`` can be used to brighten the resulting image.
+\ **Nota:** L'immagine viene salvata in codifica lineare senza alcuna mappatura dei toni, il che significa che apparirà troppo scura se visualizzata direttamente in un editor di immagini. È possibile usare valori per ``energy`` superiori a ``1.0`` per schiarire l'immagine risultante.
 
-\ **Note:** ``size`` should be a 2:1 aspect ratio for the generated panorama to have square pixels. For radiance maps, there is no point in using a height greater than :ref:`Sky.radiance_size<class_Sky_property_radiance_size>`, as it won't increase detail. Irradiance maps only contain low-frequency data, so there is usually no point in going past a size of 128×64 pixels when saving an irradiance map.
+\ **Nota:** ``size`` dovrebbe avere un rapporto di aspetto 2:1 affinché il panorama generato abbia pixel quadrati. Per le mappe di radianza, non ha senso utilizzare un'altezza maggiore di :ref:`Sky.radiance_size<class_Sky_property_radiance_size>`, perché ciò non ne aumenterebbe il dettaglio. Le mappe di irradianza contengono solo dati a bassa frequenza, quindi solitamente non ha senso superare le dimensioni di 128×64 pixel quando si salva una mappa di irradianza.
 
 .. rst-class:: classref-item-separator
 
@@ -11839,11 +11839,11 @@ Imposta la dimensione di radianza del cielo specificato dal RID ``sky`` su ``rad
 
 :ref:`RID<class_RID>` **spot_light_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_spot_light_create>`
 
-Crea una luce riflettore e la aggiunge al RenderingServer. È possibile accedervi con il RID restituito. Questo RID può essere utilizzato nella maggior parte delle funzioni ``light_*`` del RenderingServer.
+Crea una luce spot e la aggiunge al RenderingServer. È possibile accedervi con il RID restituito. Questo RID può essere utilizzato nella maggior parte delle funzioni ``light_*`` del RenderingServer.
 
 Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingServer_method_free_rid>` del RenderingServer.
 
-Per posizionarla in una scena, associa questa luce riflettore a un'istanza tramite :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` utilizzando il RID restituito.
+Per posizionarla in una scena, associa questa luce spot a un'istanza tramite :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` utilizzando il RID restituito.
 
 .. rst-class:: classref-item-separator
 
@@ -11867,7 +11867,7 @@ Imposta :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsur
 
 |void| **sub_surface_scattering_set_scale**\ (\ scale\: :ref:`float<class_float>`, depth_scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_sub_surface_scattering_set_scale>`
 
-Imposta :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>` e :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale>` da usare per renderizzare i materiali con lo subsurface scattering abilitato.
+Imposta :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>` e :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale>` da usare per renderizzare i materiali con il subsurface scattering abilitato.
 
 .. rst-class:: classref-item-separator
 
@@ -12043,9 +12043,9 @@ Aggiorna la texture specificata dai dati del :ref:`RID<class_RID>` ``texture`` c
 
 :ref:`RID<class_RID>` **texture_create_from_native_handle**\ (\ type\: :ref:`TextureType<enum_RenderingServer_TextureType>`, format\: :ref:`Format<enum_Image_Format>`, native_handle\: :ref:`int<class_int>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, depth\: :ref:`int<class_int>`, layers\: :ref:`int<class_int>` = 1, layered_type\: :ref:`TextureLayeredType<enum_RenderingServer_TextureLayeredType>` = 0\ ) :ref:`🔗<class_RenderingServer_method_texture_create_from_native_handle>`
 
-Creates a texture based on a native handle that was created outside of Godot's renderer.
+Crea una texture basata su un gestore nativo creato fuori dal renderer di Godot.
 
-\ **Note:** If using only the rendering device renderer, it's recommend to use :ref:`RenderingDevice.texture_create_from_extension()<class_RenderingDevice_method_texture_create_from_extension>` together with :ref:`texture_rd_create()<class_RenderingServer_method_texture_rd_create>`, rather than this method. This way, the texture's format and usage can be controlled more effectively.
+\ **Nota:** Se si utilizza solo il renderer del dispositivo di rendering, si consiglia di utilizzare :ref:`RenderingDevice.texture_create_from_extension()<class_RenderingDevice_method_texture_create_from_extension>` insieme a :ref:`texture_rd_create()<class_RenderingServer_method_texture_rd_create>`, invece di questo metodo. Ciò permette di controllare molto meglio il formato e l'utilizzo della texture.
 
 .. rst-class:: classref-item-separator
 
@@ -12057,9 +12057,9 @@ Creates a texture based on a native handle that was created outside of Godot's r
 
 |void| **texture_drawable_blit_rect**\ (\ textures\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], rect\: :ref:`Rect2i<class_Rect2i>`, material\: :ref:`RID<class_RID>`, modulate\: :ref:`Color<class_Color>`, source_textures\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], to_mipmap\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_RenderingServer_method_texture_drawable_blit_rect>`
 
-Draws to ``rect`` on up to 4 given Drawable ``textures``, using a TextureBlit Shader from ``material``. ``modulate`` and up to 4 ``source_textures`` are uniforms for the Shader to process with. ``to_mipmap`` can specify to perform this draw to a lower mipmap level.
+Disegna su ``rect`` utilizzando fino a 4 texture disegnabili specificate da ``textures``, applicando uno shader di TextureBlit da ``material``. ``modulate`` e fino a 4 ``source_textures`` sono uniformi con cui lo shader elaborerà. ``to_mipmap`` può specificare di disegnare a un livello di mipmap più basso.
 
-\ **Note:** All ``textures`` must be the same size and format.
+\ **Nota:** Tutte le ``textures`` devono avere le stesse dimensioni e lo stesso formato.
 
 .. rst-class:: classref-item-separator
 
@@ -12071,11 +12071,11 @@ Draws to ``rect`` on up to 4 given Drawable ``textures``, using a TextureBlit Sh
 
 :ref:`RID<class_RID>` **texture_drawable_create**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, format\: :ref:`TextureDrawableFormat<enum_RenderingServer_TextureDrawableFormat>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), with_mipmaps\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_texture_drawable_create>`
 
-Creates a 2-dimensional texture and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``texture_drawable*`` RenderingServer functions.
+Crea una texture bidimensionale e la aggiunge al RenderingServer. È possibile accedervi con il RID restituito. Questo RID sarà utilizzato in tutte le funzioni ``texture_drawable*`` del RenderingServer.
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingServer_method_free_rid>` del RenderingServer.
 
-\ **Note:** The equivalent resource is :ref:`DrawableTexture2D<class_DrawableTexture2D>`.
+\ **Nota:** La risorsa equivalente è :ref:`DrawableTexture2D<class_DrawableTexture2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12087,7 +12087,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **texture_drawable_generate_mipmaps**\ (\ texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_texture_drawable_generate_mipmaps>`
 
-Calculates new MipMaps for the given Drawable ``texture``.
+Calcola nuove mipmap per la texture disegnabile specificata da ``texture``.
 
 .. rst-class:: classref-item-separator
 
@@ -12099,7 +12099,7 @@ Calculates new MipMaps for the given Drawable ``texture``.
 
 :ref:`RID<class_RID>` **texture_drawable_get_default_material**\ (\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_drawable_get_default_material>`
 
-Returns a ShaderMaterial with the default texture_blit Shader.
+Restituisce uno ShaderMaterial con lo shader texture_blit predefinito.
 
 .. rst-class:: classref-item-separator
 
@@ -12151,9 +12151,9 @@ Restituisce il percorso di risorsa (che inizia con ``res://`` o ``uid://``) per 
 
 :ref:`RID<class_RID>` **texture_get_rd_texture**\ (\ texture\: :ref:`RID<class_RID>`, srgb\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_get_rd_texture>`
 
-Returns a texture :ref:`RID<class_RID>` that can be used with :ref:`RenderingDevice<class_RenderingDevice>`.
+Restituisce un :ref:`RID<class_RID>` di texture utilizzabile con :ref:`RenderingDevice<class_RenderingDevice>`.
 
-\ ``srgb`` should be ``true`` when the texture uses nonlinear sRGB encoding and ``false`` when the texture uses linear encoding.
+\ ``srgb`` deve essere ``true`` quando la texture utilizza una codifica sRGB non lineare e ``false`` quando utilizza una codifica lineare.
 
 .. rst-class:: classref-item-separator
 
@@ -12193,11 +12193,11 @@ Questo metodo non fa nulla.
 
 :ref:`RID<class_RID>` **texture_rd_create**\ (\ rd_texture\: :ref:`RID<class_RID>`, layer_type\: :ref:`TextureLayeredType<enum_RenderingServer_TextureLayeredType>` = 0\ ) :ref:`🔗<class_RenderingServer_method_texture_rd_create>`
 
-Creates a new texture object based on a texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>`. If the texture contains layers, ``layer_type`` is used to define the layer type.
+Crea un nuovo oggetto texture basato su una texture creata direttamente sul :ref:`RenderingDevice<class_RenderingDevice>`. Se la texture contiene livelli, ``layer_type`` serve per definire il tipo di livello.
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`free_rid()<class_RenderingServer_method_free_rid>` del RenderingServer.
 
-\ **Note:** The RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` won't free the underlying ``rd_texture``, you will want to free the ``rd_texture`` using :ref:`RenderingDevice.free_rid()<class_RenderingDevice_method_free_rid>`.
+\ **Nota:** :ref:`free_rid()<class_RenderingServer_method_free_rid>` del RenderingServer non libera la ``rd_texture`` sottostante; è necessario liberare la ``rd_texture`` tramite :ref:`RenderingDevice.free_rid()<class_RenderingDevice_method_free_rid>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12221,7 +12221,7 @@ Sostituisce i dati della texture ``texture`` con la texture specificata dal RID 
 
 |void| **texture_set_force_redraw_if_visible**\ (\ texture\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_texture_set_force_redraw_if_visible>`
 
-Sets whether the texture RID should force redrawing when it's visible on screen when :ref:`OS.low_processor_usage_mode<class_OS_property_low_processor_usage_mode>` is ``true``. This is used by :ref:`AnimatedTexture<class_AnimatedTexture>` to force redrawing.
+Imposta se il RID di texture deve forzare il ridisegno quando è visibile sullo schermo e quando :ref:`OS.low_processor_usage_mode<class_OS_property_low_processor_usage_mode>` è ``true``. Utilizzato da :ref:`AnimatedTexture<class_AnimatedTexture>` per forzare il ridisegno.
 
 .. rst-class:: classref-item-separator
 
@@ -12233,9 +12233,9 @@ Sets whether the texture RID should force redrawing when it's visible on screen 
 
 |void| **texture_set_path**\ (\ texture\: :ref:`RID<class_RID>`, path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_RenderingServer_method_texture_set_path>`
 
-Sets the resource path for this texture RID. See also :ref:`texture_get_path()<class_RenderingServer_method_texture_get_path>`.
+Imposta il percorso della risorsa per questo RID di texture. Vedi anche :ref:`texture_get_path()<class_RenderingServer_method_texture_get_path>`.
 
-\ **Note:** This is purely a hint and does not cause the texture to be automatically saved when set to a ``res://`` path.
+\ **Nota:** Questo è solo un suggerimento e non fa in modo che la texture sia salvata automaticamente quando viene impostato un percorso ``res://``.
 
 .. rst-class:: classref-item-separator
 
@@ -12247,7 +12247,7 @@ Sets the resource path for this texture RID. See also :ref:`texture_get_path()<c
 
 |void| **texture_set_size_override**\ (\ texture\: :ref:`RID<class_RID>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_texture_set_size_override>`
 
-Sets the size at which the texture should be *displayed* in 2D, ignoring its original size. This does not rescale the texture data itself, only how it is drawn in 2D. Set ``width`` and ``height`` to 0 to disable the size override.
+Imposta le dimensioni con cui la texture si dovrebbe *visualizzare* in 2D, ignorandone le dimensioni originali. Questo non ridimensiona i dati della texture stessa, ma solo il modo in cui è disegnata in 2D. Imposta ``width`` e ``height`` a 0 per disabilitare la sovrascrittura delle dimensioni.
 
 .. rst-class:: classref-item-separator
 
@@ -12734,7 +12734,7 @@ Imposta la modalità di scaling della risoluzione 3D. Lo scaling bilineare rende
 
 |void| **viewport_set_scaling_3d_scale**\ (\ viewport\: :ref:`RID<class_RID>`, scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_scaling_3d_scale>`
 
-Ridimensiona il buffer di rendering 3D in base alle dimensioni della viewport, utilizzando un filtro immagine specificato in :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` per ridimensionare l'immagine prodotta alle dimensioni complete della viewport. È possibile usare valori inferiori a ``1.0`` per velocizzare il rendering 3D a scapito della qualità (sottocampionamento). Valori superiori a ``1.0`` sono validi solo per la modalità bilineare ed è possibile usarli per migliorare la qualità del rendering 3D a un costo elevato in termini di prestazioni (sovracampionamento). Vedi anche :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` per l'antialiasing multi-campione, che è significativamente più performante ma smussa solo i bordi dei poligoni.
+Ridimensiona il buffer di rendering 3D in base alle dimensioni della viewport, utilizzando un filtro immagine specificato in :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` per ridimensionare l'immagine prodotta alle dimensioni complete della viewport. È possibile usare valori inferiori a ``1.0`` per velocizzare il rendering 3D a scapito della qualità (sottocampionamento). Valori superiori a ``1.0`` sono validi solo per la modalità bilineare ed è possibile usarli per migliorare la qualità del rendering 3D, a un costo elevato per le prestazioni (sovracampionamento). Vedi anche :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` per l'antialiasing multicampione, che è notevolmente più performante ma smussa solo i bordi dei poligoni.
 
 Quando si utilizza l'upscaling FSR, AMD consiglia di esporre i seguenti valori come opzioni preimpostate agli utenti "Ultra Qualità: 0.77", "Qualità: 0.67", "Bilanciato: 0.59", "Prestazioni: 0.5" anziché esporre l'intera scala.
 
@@ -12772,7 +12772,7 @@ Imposta la modalità di antialiasing nello spazio dello schermo della viewport. 
 
 |void| **viewport_set_sdf_oversize_and_scale**\ (\ viewport\: :ref:`RID<class_RID>`, oversize\: :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>`, scale\: :ref:`ViewportSDFScale<enum_RenderingServer_ViewportSDFScale>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>`
 
-Imposta :ref:`ProjectSettings.rendering/2d/sdf/oversize<class_ProjectSettings_property_rendering/2d/sdf/oversize>` e :ref:`ProjectSettings.rendering/2d/sdf/scale<class_ProjectSettings_property_rendering/2d/sdf/scale>` per il campo di distanza con segno 2D della viewport. È utilizzato quando si campiona il campo di distanza con segno negli shader :ref:`CanvasItem<class_CanvasItem>` e nelle collisioni dei :ref:`GPUParticles2D<class_GPUParticles2D>`. Questo *non* è utilizzato da SDFGI nel rendering 3D.
+Imposta :ref:`ProjectSettings.rendering/2d/sdf/oversize<class_ProjectSettings_property_rendering/2d/sdf/oversize>` e :ref:`ProjectSettings.rendering/2d/sdf/scale<class_ProjectSettings_property_rendering/2d/sdf/scale>` per il signed distance field 2D della viewport. È utilizzato quando si campiona il signed distance field negli shader :ref:`CanvasItem<class_CanvasItem>`, così come nelle collisioni dei :ref:`GPUParticles2D<class_GPUParticles2D>`. *Non* è utilizzato dall'SDFGI nel rendering 3D.
 
 .. rst-class:: classref-item-separator
 
@@ -12784,7 +12784,7 @@ Imposta :ref:`ProjectSettings.rendering/2d/sdf/oversize<class_ProjectSettings_pr
 
 |void| **viewport_set_size**\ (\ viewport\: :ref:`RID<class_RID>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, view_count\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_size>`
 
-Sets the viewport's ``width`` and ``height`` in pixels. Optionally the ``view_count`` can be set to increase the number of view layers for stereo rendering.
+Imposta la larghezza (``width``) e l'altezza (``height``) della viewport in pixel. Facoltativamente, è possibile impostare ``view_count`` per aumentare il numero di livelli di vista per il rendering stereoscopico.
 
 .. rst-class:: classref-item-separator
 
@@ -12978,7 +12978,7 @@ Per inserirlo in una scena, associa questo notificatore di visibilità a un'ista
 
 |void| **visibility_notifier_set_aabb**\ (\ notifier\: :ref:`RID<class_RID>`, aabb\: :ref:`AABB<class_AABB>`\ ) :ref:`🔗<class_RenderingServer_method_visibility_notifier_set_aabb>`
 
-Sets the AABB of the specified visibility notifier.
+Imposta l'AABB del notificatore di visibilità specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -12990,7 +12990,7 @@ Sets the AABB of the specified visibility notifier.
 
 |void| **visibility_notifier_set_callbacks**\ (\ notifier\: :ref:`RID<class_RID>`, enter_callable\: :ref:`Callable<class_Callable>`, exit_callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_RenderingServer_method_visibility_notifier_set_callbacks>`
 
-Sets the methods to be called when the notifier enters or exits the view.
+Imposta i metodi da chiamare quando il notificatore entra o esce dalla vista.
 
 .. rst-class:: classref-item-separator
 
@@ -13002,7 +13002,7 @@ Sets the methods to be called when the notifier enters or exits the view.
 
 |void| **voxel_gi_allocate_data**\ (\ voxel_gi\: :ref:`RID<class_RID>`, to_cell_xform\: :ref:`Transform3D<class_Transform3D>`, aabb\: :ref:`AABB<class_AABB>`, octree_size\: :ref:`Vector3i<class_Vector3i>`, octree_cells\: :ref:`PackedByteArray<class_PackedByteArray>`, data_cells\: :ref:`PackedByteArray<class_PackedByteArray>`, distance_field\: :ref:`PackedByteArray<class_PackedByteArray>`, level_counts\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_allocate_data>`
 
-Allocates and initializes the voxel GI data for the specified ``voxel_gi`` RID. ``octree_cells`` must be a multiple of 32. ``octree_cells`` must be double the size of ``data_cells``. The allocated data can be retrieved later using the various ``voxel_gi_get_*`` methods.
+Alloca e inizializza i dati voxel GI per il RID specificato da ``voxel_gi``. ``octree_cells`` deve essere un multiplo di 32. ``octree_cells`` deve essere il doppio della dimensione di ``data_cells``. I dati allocati si possono recuperare in seguito attraverso i vari metodi ``voxel_gi_get_*``.
 
 .. rst-class:: classref-item-separator
 
@@ -13030,7 +13030,7 @@ Una volta finito con il RID, si consiglia di liberarlo tramite il metodo :ref:`f
 
 :ref:`PackedByteArray<class_PackedByteArray>` **voxel_gi_get_data_cells**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_data_cells>`
 
-Returns the data cells for the specified voxel GI data instance. See also :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
+Restituisce le celle di dati per l'istanza specificata di dati voxel GI. Vedi anche :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13042,7 +13042,7 @@ Returns the data cells for the specified voxel GI data instance. See also :ref:`
 
 :ref:`PackedByteArray<class_PackedByteArray>` **voxel_gi_get_distance_field**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_distance_field>`
 
-Returns the distance field data for the specified voxel GI data instance. See also :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
+Restituisce i dati di campo di distanza per l'istanza specificata di dati voxel GI. Vedi anche :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13054,7 +13054,7 @@ Returns the distance field data for the specified voxel GI data instance. See al
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **voxel_gi_get_level_counts**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_level_counts>`
 
-Returns the level counts for the specified voxel GI data instance. See also :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
+Restituisce il numero di livelli per l'istanza specificata di dati voxel GI. Vedi anche :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13066,7 +13066,7 @@ Returns the level counts for the specified voxel GI data instance. See also :ref
 
 :ref:`PackedByteArray<class_PackedByteArray>` **voxel_gi_get_octree_cells**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_octree_cells>`
 
-Returns the octree cell data for the specified voxel GI data instance. See also :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
+Restituisce i dati di celle dell'octree per l'istanza specificata di dati voxel GI. Vedi anche :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13078,7 +13078,7 @@ Returns the octree cell data for the specified voxel GI data instance. See also 
 
 :ref:`Vector3i<class_Vector3i>` **voxel_gi_get_octree_size**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_octree_size>`
 
-Returns the octree size for the specified voxel GI data instance, which corresponds to the number of subdivisions per axis. This can be viewed in the editor by hovering the **Bake VoxelGI** button at the top of the 3D editor viewport when a :ref:`VoxelGI<class_VoxelGI>` node is selected and looking at the **Subdivisions** field in the tooltip.
+Restituisce la dimensione dell'octree per l'istanza di dati GI voxel specificata, che corrisponde al numero di suddivisioni per asse. È possibile vedere questo valore nell'editor passando il mouse sul pulsante **Precalcola VoxelGI** in cima la viewport dell'editor 3D quando è selezionato un nodo :ref:`VoxelGI<class_VoxelGI>` e osservando il campo **Suddivisioni** nel tooltip.
 
 .. rst-class:: classref-item-separator
 
@@ -13090,7 +13090,7 @@ Returns the octree size for the specified voxel GI data instance, which correspo
 
 :ref:`Transform3D<class_Transform3D>` **voxel_gi_get_to_cell_xform**\ (\ voxel_gi\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_voxel_gi_get_to_cell_xform>`
 
-Returns the transform to cell space for the specified voxel GI data instance. See also :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
+Restituisce la trasformazione nello spazio delle celle per l'istanza specificata di dati voxel GI. Vedi anche :ref:`voxel_gi_allocate_data()<class_RenderingServer_method_voxel_gi_allocate_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13204,7 +13204,7 @@ Imposta il valore di :ref:`VoxelGIData.use_two_bounces<class_VoxelGIData_propert
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

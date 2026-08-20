@@ -14,7 +14,7 @@ Nodo di sprite 2D nel mondo 3D, che può utilizzare più texture 2D per l'animaz
 Descrizione
 ----------------------
 
-**AnimatedSprite3D** è simile al nodo :ref:`Sprite3D<class_Sprite3D>`, eccetto che trasporta molteplici texture come fotogrammi di animazione. Le animazioni sono create usando una risorsa :ref:`SpriteFrames<class_SpriteFrames>`, che consente di importare i file di immagine (o una cartella contenente tali file) per fornire i fotogrammi di animazione per lo sprite. La risorsa :ref:`SpriteFrames<class_SpriteFrames>` può essere configurata nell'editor tramite il pannello inferiore di SpriteFrames.
+**AnimatedSprite3D** è simile al nodo :ref:`Sprite3D<class_Sprite3D>`, eccetto che trasporta molteplici texture come fotogrammi di animazione. Le animazioni sono create usando una risorsa :ref:`SpriteFrames<class_SpriteFrames>`, che consente di importare i file di immagine (o una cartella contenente tali file) per fornire i fotogrammi di animazione per lo sprite. La risorsa :ref:`SpriteFrames<class_SpriteFrames>` può essere configurata nell'editor tramite il pannello inferiore SpriteFrames.
 
 .. rst-class:: classref-introduction-group
 
@@ -360,7 +360,7 @@ Interrompe l'animazione attualmente in riproduzione. La posizione di animazione 
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

@@ -7,7 +7,7 @@ AreaLight3D
 
 **Hereda:** :ref:`Light3D<class_Light3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-An area light, such as a neon light tube or a screen.
+Una fuente de luz de área, como un tubo de luz de neón o una pantalla.
 
 .. rst-class:: classref-introduction-group
 
@@ -100,7 +100,7 @@ A value of ``0.0`` will maintain a constant brightness through most of the range
 - |void| **set_area_normalize_energy**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_area_normalizing_energy**\ (\ )
 
-Defines whether the energy is normalized (divided) by the surface area of the light. If set to ``true``, changing the size does not affect the total energy output, and does not dramatically alter the brightness of the scene.
+Define si la energía se normaliza (divide) por el área de superficie de la luz. Si se establece en ``true``, cambiar el size no afecta al output de energía total y no altera significativamente el brillo de la escena.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ The range of the area in meters. This determines the maximum distance from any p
 - |void| **set_area_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_area_size**\ (\ )
 
-The extents (width and height) of the area in meters.
+Las dimensiones (anchura y altura) del área en metros.
 
 .. rst-class:: classref-item-separator
 
@@ -151,11 +151,11 @@ The extents (width and height) of the area in meters.
 - |void| **set_area_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_area_texture**\ (\ )
 
-An optional texture to use as a light source. Changing the texture at runtime might impact performance, as it needs to be drawn to the area light atlas with filtered mipmaps.
+Una textura opcional para usar como fuente de luz. Cambiar la textura en tiempo de ejecución puede afectar al rendimiento, ya que debe dibujarse en el atlas de luz de área con mipmaps filtrados.
 
-If no texture is assigned, the area light emits uniform light across its surface.
+Si no se asigna textura, la luz del área emite luz uniforme a lo largo de su superficie.
 
-\ **Note:** Area light textures are only supported in the Forward+ and Mobile rendering methods, not Compatibility. To reduce the performance impact of switching textures at runtime, make sure each dimension of an area texture is either a multiple of 128 pixels, or a power of two. This removes the need for a scaling pass, which slows down texture changes. The textures don't necessarily have to be square to be optimal. Examples of optimal texture sizes include 32x64, 128x128, and 256x384.
+\ **Nota:** Las texturas de luz de área solo se soportan en los métodos de renderizado Forward+ y Móvil, no en Compatibilidad. Para reducir el impacto en el rendimiento de cambiar de textura en tiempo de ejecución, asegúrate de que cada dimensión de una textura de área sea un múltiplo de 128 píxeles o una potencia de dos. Esto elimina la necesidad de un escalado, que ralentiza los cambios de textura. Las texturas no tienen que ser necesariamente cuadradas para ser óptimas. Ejemplos de tamaños óptimos de textura incluyen 32x64, 128x128 y 256x384.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

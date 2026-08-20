@@ -649,9 +649,9 @@ enum **CloseButtonDisplayPolicy**: :ref:`🔗<enum_TabBar_CloseButtonDisplayPoli
 
 :ref:`bool<class_bool>` **tab_{index}/disabled** = ``false`` :ref:`🔗<class_TabBar_property_tab_{index}/disabled>`
 
-If ``true``, the tab at ``index`` is disabled.
+Если ``true``, вкладка с ``index`` отключена.
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **Примечание:** ``index`` находится в диапазоне ``0 .. tab_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -663,9 +663,9 @@ If ``true``, the tab at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **tab_{index}/icon** :ref:`🔗<class_TabBar_property_tab_{index}/icon>`
 
-If ``true``, the tab at ``index`` is hidden.
+Если ``true``, вкладка с ``index`` скрыта.
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **Примечание:** ``index`` находится в диапазоне ``0 .. tab_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -677,9 +677,9 @@ If ``true``, the tab at ``index`` is hidden.
 
 :ref:`String<class_String>` **tab_{index}/title** = ``""`` :ref:`🔗<class_TabBar_property_tab_{index}/title>`
 
-The title text of the tab at ``index``.
+Текст заголовка вкладки с ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **Примечание:** ``index`` находится в диапазоне ``0 .. tab_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -691,9 +691,9 @@ The title text of the tab at ``index``.
 
 :ref:`String<class_String>` **tab_{index}/tooltip** = ``""`` :ref:`🔗<class_TabBar_property_tab_{index}/tooltip>`
 
-The tooltip text of the tab at ``index``.
+Текст всплывающей подсказки для вкладки с ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. tab_count - 1`` range.
+\ **Примечание:** ``index`` находится в диапазоне ``0 .. tab_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -1362,7 +1362,7 @@ The tooltip text of the tab at ``index``.
 
 :ref:`Texture2D<class_Texture2D>` **drop_mark** :ref:`🔗<class_TabBar_theme_icon_drop_mark>`
 
-Icon shown to indicate where a dragged tab will be dropped (see :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`).
+Значок, показывающий, куда будет помещена перетаскиваемая вкладка (см. :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>`).
 
 .. rst-class:: classref-item-separator
 

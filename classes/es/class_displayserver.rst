@@ -1398,7 +1398,7 @@ Elemento de ventana de diálogo.
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Tooltip element.
+Elemento Tooltip.
 
 .. _class_DisplayServer_constant_ROLE_REGION:
 
@@ -1408,7 +1408,7 @@ Tooltip element.
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Region/landmark element. Screen readers can navigate between regions using landmark navigation.
+Elemento de región/punto de referencia. Los lectores de pantalla pueden navegar entre regiones usando la navegación por puntos de referencia.
 
 .. _class_DisplayServer_constant_ROLE_TEXT_RUN:
 
@@ -1418,9 +1418,9 @@ Region/landmark element. Screen readers can navigate between regions using landm
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Unifor text run.
+Ejecución de texto Unifor.
 
-Note: This role is used for internal text elements, and should not be assigned to nodes.
+Nota: Este rol se usa para elementos de texto internos y no debe asignarse a nodos.
 
 .. rst-class:: classref-item-separator
 
@@ -1690,15 +1690,15 @@ Acción de mostrar tooltip, el argumento de callback no está establecido.
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Set text selection action, callback argument is set to :ref:`Dictionary<class_Dictionary>` with the following keys:
+Establece la acción de selección de texto, el argumento de callback es un :ref:`Dictionary<class_Dictionary>` con las siguientes claves:
 
-- ``"start_element"`` accessibility element of the selection start.
+- ``"start_element"`` elemento de accesibilidad del inicio de la selección.
 
-- ``"start_char"`` character offset relative to the accessibility element of the selection start.
+- ``"start_char"`` desplazamiento de caracteres relativo al elemento de accesibilidad del inicio de la selección.
 
-- ``"end_element"`` accessibility element of the selection end.
+- ``"end_element"`` elemento de accesibilidad del final de la selección.
 
-- ``"end_char"`` character offset relative to the accessibility element of the selection end.
+- ``"end_char"`` desplazamiento de caracteres relativo al elemento de accesibilidad del final de la selección.
 
 .. _class_DisplayServer_constant_ACTION_REPLACE_SELECTED_TEXT:
 
@@ -1748,7 +1748,7 @@ Acción de desplazamiento hacia adelante, el argumento de callback no está esta
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Scroll left action, callback argument is set to :ref:`AccessibilityScrollUnit<enum_DisplayServer_AccessibilityScrollUnit>`.
+Acción de desplazamiento a la izquierda, el argumento de callback se establece en :ref:`AccessibilityScrollUnit<enum_DisplayServer_AccessibilityScrollUnit>`.
 
 .. _class_DisplayServer_constant_ACTION_SCROLL_RIGHT:
 
@@ -1758,7 +1758,7 @@ Scroll left action, callback argument is set to :ref:`AccessibilityScrollUnit<en
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Scroll right action, callback argument is set to :ref:`AccessibilityScrollUnit<enum_DisplayServer_AccessibilityScrollUnit>`.
+Acción de desplazamiento a la derecha, el argumento de callback se establece en :ref:`AccessibilityScrollUnit<enum_DisplayServer_AccessibilityScrollUnit>`.
 
 .. _class_DisplayServer_constant_ACTION_SCROLL_UP:
 
@@ -1768,7 +1768,7 @@ Scroll right action, callback argument is set to :ref:`AccessibilityScrollUnit<e
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Scroll up action, callback argument is set to :ref:`AccessibilityScrollUnit<enum_DisplayServer_AccessibilityScrollUnit>`.
+Acción de desplazamiento hacia arriba, el argumento de callback se establece en :ref:`AccessibilityScrollUnit<enum_DisplayServer_AccessibilityScrollUnit>`.
 
 .. _class_DisplayServer_constant_ACTION_SCROLL_INTO_VIEW:
 
@@ -1778,7 +1778,7 @@ Scroll up action, callback argument is set to :ref:`AccessibilityScrollUnit<enum
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Scroll into view action, callback argument is set to :ref:`AccessibilityScrollHint<enum_DisplayServer_AccessibilityScrollHint>`.
+Acción de desplazamiento a la vista, el argumento de callback se establece en :ref:`AccessibilityScrollHint<enum_DisplayServer_AccessibilityScrollHint>`.
 
 .. _class_DisplayServer_constant_ACTION_SCROLL_TO_POINT:
 
@@ -1808,7 +1808,7 @@ Acción de establecer el desplazamiento, el argumento de callback se establece e
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-Set value action, callback argument is set to :ref:`String<class_String>` or number with the new value.
+Acción de establecer valor, el argumento de callback se establece en :ref:`String<class_String>` o número con el nuevo valor.
 
 .. _class_DisplayServer_constant_ACTION_SHOW_CONTEXT_MENU:
 
@@ -1888,7 +1888,7 @@ enum **AccessibilityScrollUnit**: :ref:`🔗<enum_DisplayServer_AccessibilityScr
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-The amount by which to scroll. A single item of a list, line of text.
+La cantidad de desplazamiento. Representa un elemento de una lista o una línea de texto.
 
 .. _class_DisplayServer_constant_SCROLL_UNIT_PAGE:
 
@@ -1898,7 +1898,7 @@ The amount by which to scroll. A single item of a list, line of text.
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-The amount by which to scroll. A single page.
+La cantidad en la que desplazarse. Un único elemento de una lista, línea de texto.
 
 .. rst-class:: classref-item-separator
 
@@ -1918,7 +1918,7 @@ enum **AccessibilityScrollHint**: :ref:`🔗<enum_DisplayServer_AccessibilityScr
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-A preferred position for the node scrolled into view. Top-left edge of the scroll container.
+Una posición preferida para el nodo desplazado a la vista. Borde superior izquierdo del container de desplazamiento.
 
 .. _class_DisplayServer_constant_SCROLL_HINT_BOTTOM_RIGHT:
 
@@ -1928,7 +1928,7 @@ A preferred position for the node scrolled into view. Top-left edge of the scrol
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-A preferred position for the node scrolled into view. Bottom-right edge of the scroll container.
+Una posición preferida para el nodo desplazado a la vista. Borde inferior derecho del container de desplazamiento.
 
 .. _class_DisplayServer_constant_SCROLL_HINT_TOP_EDGE:
 
@@ -1938,7 +1938,7 @@ A preferred position for the node scrolled into view. Bottom-right edge of the s
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-A preferred position for the node scrolled into view. Top edge of the scroll container.
+Una posición preferida para el nodo desplazado a la vista. Borde superior del contenedor de desplazamiento.
 
 .. _class_DisplayServer_constant_SCROLL_HINT_BOTTOM_EDGE:
 
@@ -1948,7 +1948,7 @@ A preferred position for the node scrolled into view. Top edge of the scroll con
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-A preferred position for the node scrolled into view. Bottom edge of the scroll container.
+Una posición preferida para el nodo desplazado a la vista. Borde inferior del contenedor de desplazamiento.
 
 .. _class_DisplayServer_constant_SCROLL_HINT_LEFT_EDGE:
 
@@ -1958,7 +1958,7 @@ A preferred position for the node scrolled into view. Bottom edge of the scroll 
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-A preferred position for the node scrolled into view. Left edge of the scroll container.
+Una posición preferida para el nodo desplazado a la vista. Borde izquierdo del contenedor de desplazamiento.
 
 .. _class_DisplayServer_constant_SCROLL_HINT_RIGHT_EDGE:
 
@@ -1968,7 +1968,7 @@ A preferred position for the node scrolled into view. Left edge of the scroll co
 
 **Obsoleto:** Use :ref:`AccessibilityServer<class_AccessibilityServer>` instead.
 
-A preferred position for the node scrolled into view. Right edge of the scroll container.
+Una posición preferida para el nodo desplazado a la vista. Borde derecho del contenedor de desplazamiento.
 
 .. rst-class:: classref-item-separator
 
@@ -2474,9 +2474,9 @@ Stops displaying progress and returns the button to its normal state.
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_INDETERMINATE** = ``1``
 
-The progress indicator shows an indeterminate progress.
+El indicador de progreso muestra un progreso indeterminado.
 
-On Windows, the progress indicator does not grow in size, but cycles repeatedly along the length of the taskbar button by default.
+En Windows, el indicador de progreso no aumenta de tamaño, sino que se desplaza cíclicamente a lo largo del botón de la barra de tareas de forma predeterminada.
 
 .. _class_DisplayServer_constant_PROGRESS_STATE_NORMAL:
 
@@ -2484,7 +2484,7 @@ On Windows, the progress indicator does not grow in size, but cycles repeatedly 
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_NORMAL** = ``2``
 
-The progress indicator shows progress normally.
+El indicador de progreso muestra el progreso normalmente.
 
 .. _class_DisplayServer_constant_PROGRESS_STATE_ERROR:
 
@@ -2492,9 +2492,9 @@ The progress indicator shows progress normally.
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_ERROR** = ``3``
 
-The progress indicator shows that an error has occurred.
+El indicador de progreso muestra que se ha producido un error.
 
-On Windows, the progress indicator turns red by default to show that an error has occurred in one of the windows that is broadcasting progress.
+En Windows, el indicador de progreso se vuelve rojo por defecto para indicar que se ha producido un error en una de las ventanas que muestra el progreso.
 
 .. _class_DisplayServer_constant_PROGRESS_STATE_PAUSED:
 
@@ -2502,9 +2502,9 @@ On Windows, the progress indicator turns red by default to show that an error ha
 
 :ref:`ProgressState<enum_DisplayServer_ProgressState>` **PROGRESS_STATE_PAUSED** = ``4``
 
-The progress indicator shows it was paused.
+El indicador de progreso muestra que se ha pausado.
 
-On Windows, the progress indicator turns yellow by default to show that progress is currently stopped in one of the windows but can be resumed by the user.
+En Windows, el indicador de progreso cambia a color amarillo de forma predeterminada para señalar que el progreso está detenido actualmente en una de las ventanas, pero que el usuario puede reanudarlo.
 
 .. rst-class:: classref-item-separator
 
@@ -2552,13 +2552,13 @@ The window is floating on top of all other windows. This flag is ignored for ful
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_TRANSPARENT** = ``3``
 
-The window background can be transparent.
+El fondo de la ventana puede ser transparente.
 
-\ **Note:** This flag has no effect if :ref:`is_window_transparency_available()<class_DisplayServer_method_is_window_transparency_available>` returns ``false``.
+\ **Nota:** Esta bandera no tiene efecto si :ref:`is_window_transparency_available()<class_DisplayServer_method_is_window_transparency_available>` devuelve ``false``.
 
-\ **Note:** Transparency support is implemented on Linux (X11/Wayland), macOS, and Windows, but availability might vary depending on GPU driver, display manager, and compositor capabilities.
+\ **Nota:** La compatibilidad con transparencia está implementada en Linux (X11/Wayland), macOS y Windows, pero su disponibilidad puede variar según el controlador de la GPU, el gestor de pantalla y las capacidades del compositor.
 
-\ **Note:** Transparency support is implemented on Android, but can only be enabled via :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`. This flag has no effect on Android.
+\ **Nota:** La compatibilidad con transparencia está implementada en Android, pero solo puede habilitarse mediante :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`. Esta bandera no tiene efecto en Android.
 
 .. _class_DisplayServer_constant_WINDOW_FLAG_NO_FOCUS:
 
@@ -2972,11 +2972,11 @@ OpenGL context (only with the Compatibility renderer):
 
 :ref:`HandleType<enum_DisplayServer_HandleType>` **EGL_DISPLAY** = ``4``
 
-- Windows: ``EGLDisplay`` for the window (ANGLE).
+- Windows: ``EGLDisplay`` para la ventana (ANGLE).
 
-- macOS: ``EGLDisplay`` for the window (ANGLE).
+- macOS: ``EGLDisplay`` para la ventana (ANGLE).
 
-- Linux (Wayland): ``EGLDisplay`` for the window.
+- Linux (Wayland): ``EGLDisplay`` para la ventana.
 
 .. _class_DisplayServer_constant_EGL_CONFIG:
 
@@ -2984,11 +2984,11 @@ OpenGL context (only with the Compatibility renderer):
 
 :ref:`HandleType<enum_DisplayServer_HandleType>` **EGL_CONFIG** = ``5``
 
-- Windows: ``EGLConfig`` for the window (ANGLE).
+- Windows: ``EGLConfig`` para la ventana (ANGLE).
 
-- macOS: ``EGLConfig`` for the window (ANGLE).
+- macOS: ``EGLConfig`` para la ventana (ANGLE).
 
-- Linux (Wayland): ``EGLConfig`` for the window.
+- Linux (Wayland): ``EGLConfig`` para la ventana.
 
 .. _class_DisplayServer_constant_GLX_VISUALID:
 
@@ -3026,7 +3026,7 @@ enum **TTSUtteranceEvent**: :ref:`🔗<enum_DisplayServer_TTSUtteranceEvent>`
 
 :ref:`TTSUtteranceEvent<enum_DisplayServer_TTSUtteranceEvent>` **TTS_UTTERANCE_STARTED** = ``0``
 
-Utterance has begun to be spoken.
+La locución ha comenzado a ser pronunciada.
 
 .. _class_DisplayServer_constant_TTS_UTTERANCE_ENDED:
 
@@ -3042,7 +3042,7 @@ La expresión se completó con éxito.
 
 :ref:`TTSUtteranceEvent<enum_DisplayServer_TTSUtteranceEvent>` **TTS_UTTERANCE_CANCELED** = ``2``
 
-Utterance was canceled, or TTS service was unable to process it.
+La locución se canceló o el servicio de TTS no pudo procesarla.
 
 .. _class_DisplayServer_constant_TTS_UTTERANCE_BOUNDARY:
 
@@ -3050,7 +3050,7 @@ Utterance was canceled, or TTS service was unable to process it.
 
 :ref:`TTSUtteranceEvent<enum_DisplayServer_TTSUtteranceEvent>` **TTS_UTTERANCE_BOUNDARY** = ``3``
 
-Utterance reached a word or sentence boundary.
+La locución alcanzó un límite de palabra o de oración.
 
 .. rst-class:: classref-section-separator
 
@@ -4460,45 +4460,45 @@ Permite que el PID ``process_id`` robe el foco de esta ventana. En otras palabra
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_show**\ (\ title\: :ref:`String<class_String>`, current_directory\: :ref:`String<class_String>`, filename\: :ref:`String<class_String>`, show_hidden\: :ref:`bool<class_bool>`, mode\: :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>`, filters\: :ref:`PackedStringArray<class_PackedStringArray>`, callback\: :ref:`Callable<class_Callable>`, parent_window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_file_dialog_show>`
 
-Displays OS native dialog for selecting files or directories in the file system.
+Muestra un diálogo nativo del sistema operativo para seleccionar archivos o directorios en el sistema de archivos.
 
-Each filter string in the ``filters`` array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. It is recommended to set both file extension and MIME type. See also :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
+Cada cadena de filtro en el array ``filters`` debe tener este formato: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. El texto de descripción del filtro es opcional y puede omitirse. Se recomienda establecer tanto la extensión de archivo como el tipo MIME. Consulta también :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
 
-Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **On Android,** the third callback argument (``selected_filter_index``) is always ``0``.
+Los callbacks tienen los siguientes argumentos: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **En Android,** el tercer argumento del callback (``selected_filter_index``) es siempre ``0``.
 
-\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android.
+\ **Nota:** Este método está implementado si el servidor de visualización tiene la característica :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>`. Las plataformas compatibles incluyen Linux (X11/Wayland), Windows, macOS y Android.
 
-\ **Note:** ``current_directory`` might be ignored.
+\ **Nota:** ``current_directory`` podría ser ignorado.
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **Nota:** Los diálogos de archivo embebidos y los diálogos de archivo de Windows solo admiten extensiones de archivo, mientras que los diálogos de archivo de Android, Linux y macOS también admiten tipos MIME.
 
-\ **Note:** On Android and Linux, ``show_hidden`` is ignored.
+\ **Nota:** En Android y Linux, ``show_hidden`` se ignora.
 
-\ **Note:** On Android and macOS, native file dialogs have no title.
+\ **Nota:** En Android y macOS, los diálogos de archivo nativos no tienen título.
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **Nota:** En macOS, las aplicaciones en sandbox guardarán bookmarks con ámbito de seguridad para conservar el acceso a las carpetas abiertas en múltiples sesiones. Usa :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` para obtener una lista de los bookmarks guardados.
 
-\ **Note:** On Android, this method uses the Android Storage Access Framework (SAF).
+\ **Nota:** En Android, este método utiliza el Android Storage Access Framework (SAF).
 
-The file picker returns a URI instead of a filesystem path. This URI can be passed directly to :ref:`FileAccess<class_FileAccess>` to perform read/write operations.
+El selector de archivos devuelve una URI en lugar de una ruta del sistema de archivos. Esta URI se puede pasar directamente a :ref:`FileAccess<class_FileAccess>` para realizar operaciones de lectura/escritura.
 
-When using :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>`, it returns a tree URI that grants full access to the selected directory. File operations inside this directory can be performed by passing a path on the form ``treeUri#relative/path/to/file`` to :ref:`FileAccess<class_FileAccess>`.
+Al usar :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>`, devuelve una URI de árbol que otorga acceso completo al directorio seleccionado. Las operaciones de archivo dentro de este directorio se pueden realizar pasando una ruta con la forma ``treeUri#relative/path/to/file`` a :ref:`FileAccess<class_FileAccess>`.
 
-To avoid opening the file picker again after each app restart, you can take persistable URI permission as follows:
+Para evitar abrir el selector de archivos de nuevo después de cada reinicio de la aplicación, puedes obtener un permiso de URI persistente de la siguiente manera:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    val uri = "content://com.android..." # URI of the selected file or folder.
-    val persist = true # Set to false to release the persistable permission.
+    val uri = "content://com.android..." # URI del archivo o carpeta seleccionado.
+    val persist = true # Establece en false para liberar el permiso persistente.
     var android_runtime = Engine.get_singleton("AndroidRuntime")
     android_runtime.updatePersistableUriPermission(uri, persist)
 
 
 
-The persistable URI permission remains valid across app restarts as long as the directory is not moved, renamed, or deleted.
+El permiso de URI persistente sigue siendo válido a través de reinicios de la aplicación siempre que el directorio no se mueva, renombre o elimine.
 
 .. rst-class:: classref-item-separator
 
@@ -4510,31 +4510,31 @@ The persistable URI permission remains valid across app restarts as long as the 
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_with_options_show**\ (\ title\: :ref:`String<class_String>`, current_directory\: :ref:`String<class_String>`, root\: :ref:`String<class_String>`, filename\: :ref:`String<class_String>`, show_hidden\: :ref:`bool<class_bool>`, mode\: :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>`, filters\: :ref:`PackedStringArray<class_PackedStringArray>`, options\: :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\], callback\: :ref:`Callable<class_Callable>`, parent_window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_file_dialog_with_options_show>`
 
-Displays OS native dialog for selecting files or directories in the file system with additional user selectable options.
+Muestra un diálogo nativo del sistema operativo para seleccionar archivos o directorios en el sistema de archivos con opciones adicionales seleccionables por el usuario.
 
-Each filter string in the ``filters`` array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. It is recommended to set both file extension and MIME type. See also :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
+Cada cadena de filtro en el array ``filters`` debe tener este formato: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. El texto de descripción del filtro es opcional y puede omitirse. Se recomienda establecer tanto la extensión de archivo como el tipo MIME. Consulta también :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
 
-\ ``options`` is array of :ref:`Dictionary<class_Dictionary>`\ s with the following keys:
+\ ``options`` es un array de :ref:`Dictionary<class_Dictionary>`\ s con las siguientes claves:
 
-- ``"name"`` - option's name :ref:`String<class_String>`.
+- ``"name"`` - nombre de la opción :ref:`String<class_String>`.
 
-- ``"values"`` - :ref:`PackedStringArray<class_PackedStringArray>` of values. If empty, boolean option (check box) is used.
+- ``"values"`` - :ref:`PackedStringArray<class_PackedStringArray>` de valores. Si está vacío, se usa una opción booleana (casilla de verificación).
 
-- ``"default"`` - default selected option index (:ref:`int<class_int>`) or default boolean value (:ref:`bool<class_bool>`).
+- ``"default"`` - índice de la opción seleccionada por defecto (:ref:`int<class_int>`) o valor booleano por defecto (:ref:`bool<class_bool>`).
 
-Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int, selected_option: Dictionary``.
+Los callbacks tienen los siguientes argumentos: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int, selected_option: Dictionary``.
 
-\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE_EXTRA<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE_EXTRA>` feature. Supported platforms include Linux (X11/Wayland), Windows, and macOS.
+\ **Nota:** Este método está implementado si el servidor de visualización tiene la característica :ref:`FEATURE_NATIVE_DIALOG_FILE_EXTRA<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE_EXTRA>`. Las plataformas compatibles incluyen Linux (X11/Wayland), Windows y macOS.
 
-\ **Note:** ``current_directory`` might be ignored.
+\ **Nota:** ``current_directory`` podría ser ignorado.
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **Nota:** Los diálogos de archivo embebidos y los diálogos de archivo de Windows solo admiten extensiones de archivo, mientras que los diálogos de archivo de Android, Linux y macOS también admiten tipos MIME.
 
-\ **Note:** On Linux (X11), ``show_hidden`` is ignored.
+\ **Nota:** En Linux (X11), ``show_hidden`` se ignora.
 
-\ **Note:** On macOS, native file dialogs have no title.
+\ **Nota:** En macOS, los diálogos de archivo nativos no tienen título.
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **Nota:** En macOS, las aplicaciones en sandbox guardarán bookmarks con ámbito de seguridad para conservar el acceso a las carpetas abiertas en múltiples sesiones. Usa :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` para obtener una lista de los bookmarks guardados.
 
 .. rst-class:: classref-item-separator
 
@@ -4546,9 +4546,9 @@ Callbacks have the following arguments: ``status: bool, selected_paths: PackedSt
 
 |void| **force_process_and_drop_events**\ (\ ) :ref:`🔗<class_DisplayServer_method_force_process_and_drop_events>`
 
-Forces window manager processing while ignoring all :ref:`InputEvent<class_InputEvent>`\ s. See also :ref:`process_events()<class_DisplayServer_method_process_events>`.
+Fuerza el procesamiento del gestor de ventanas ignorando todos los :ref:`InputEvent<class_InputEvent>`\ s. Consulta también :ref:`process_events()<class_DisplayServer_method_process_events>`.
 
-\ **Note:** This method is implemented on Windows and macOS.
+\ **Nota:** Este método está implementado en Windows y macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4588,9 +4588,9 @@ Devuelve el color base del tema del sistema operativo (fondo de control predeter
 
 :ref:`Array<class_Array>`\[:ref:`Rect2<class_Rect2>`\] **get_display_cutouts**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_get_display_cutouts>`
 
-Returns an :ref:`Array<class_Array>` of :ref:`Rect2<class_Rect2>`, each of which is the bounding rectangle for a display cutout or notch. These are non-functional areas on edge-to-edge screens used by cameras and sensors. Returns an empty array if the device does not have cutouts. See also :ref:`get_display_safe_area()<class_DisplayServer_method_get_display_safe_area>`.
+Devuelve un :ref:`Array<class_Array>` de :ref:`Rect2<class_Rect2>`, cada uno de los cuales es el rectángulo delimitante para un recorte o muesca de la pantalla. Estas son áreas no funcionales en pantallas de borde a borde utilizadas por cámaras y sensores. Devuelve un array vacío si el dispositivo no tiene recortes. Véase también :ref:`get_display_safe_area()<class_DisplayServer_method_get_display_safe_area>`.
 
-\ **Note:** Currently only implemented on Android. Other platforms will return an empty array even if they do have display cutouts or notches.
+\ **Nota:** Actualmente solo implementado en Android. Otras plataformas devolverán un array vacío aunque tengan recortes o muescas para la pantalla.
 
 .. rst-class:: classref-item-separator
 
@@ -4602,9 +4602,9 @@ Returns an :ref:`Array<class_Array>` of :ref:`Rect2<class_Rect2>`, each of which
 
 :ref:`Rect2i<class_Rect2i>` **get_display_safe_area**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_get_display_safe_area>`
 
-Returns the unobscured area of the display where interactive controls should be rendered. See also :ref:`get_display_cutouts()<class_DisplayServer_method_get_display_cutouts>`.
+Devuelve el área sin obstrucciones de la pantalla donde se deben renderizar los controles interactivos. Consulta también :ref:`get_display_cutouts()<class_DisplayServer_method_get_display_cutouts>`.
 
-\ **Note:** Currently only implemented on Android and iOS. On other platforms, ``screen_get_usable_rect(SCREEN_OF_MAIN_WINDOW)`` will be returned as a fallback. See also :ref:`screen_get_usable_rect()<class_DisplayServer_method_screen_get_usable_rect>`.
+\ **Nota:** Actualmente solo implementado en Android e iOS. En otras plataformas, se devolverá ``screen_get_usable_rect(SCREEN_OF_MAIN_WINDOW)`` como fallback. Consulta también :ref:`screen_get_usable_rect()<class_DisplayServer_method_screen_get_usable_rect>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4630,9 +4630,9 @@ Devuelve el índice de la pantalla que contiene la ventana con el foco del tecla
 
 :ref:`String<class_String>` **get_name**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_get_name>`
 
-Returns the name of the **DisplayServer** currently in use. Most operating systems only have a single **DisplayServer**, but Linux has access to more than one **DisplayServer** (currently X11 and Wayland).
+Devuelve el nombre del **DisplayServer** actualmente en uso. La mayoría de los sistemas operativos solo tienen un único **DisplayServer**, pero Linux tiene acceso a más de uno (actualmente X11 y Wayland).
 
-The names of built-in display servers are ``Windows``, ``macOS``, ``X11`` (Linux), ``Wayland`` (Linux), ``Android``, ``iOS``, ``web`` (HTML5), and ``headless`` (when started with the ``--headless`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>`).
+Los nombres de los servidores de visualización integrados son ``Windows``, ``macOS``, ``X11`` (Linux), ``Wayland`` (Linux), ``Android``, ``iOS``, ``web`` (HTML5), y ``headless`` (cuando se inicia con el :doc:`argumento de línea de comandos <../tutorials/editor/command_line_tutorial>` ``--headless``).
 
 .. rst-class:: classref-item-separator
 
@@ -4684,9 +4684,9 @@ Devuelve el índice de la pantalla que más se superpone con el rectángulo dado
 
 :ref:`bool<class_bool>` **get_swap_cancel_ok**\ (\ ) :ref:`🔗<class_DisplayServer_method_get_swap_cancel_ok>`
 
-Returns ``true`` if positions of **OK** and **Cancel** buttons are swapped in dialogs. This is enabled by default on Windows to follow interface conventions, and be toggled by changing :ref:`ProjectSettings.gui/common/swap_cancel_ok<class_ProjectSettings_property_gui/common/swap_cancel_ok>`.
+Devuelve ``true`` si las posiciones de los botones **Aceptar** y **Cancelar** están intercambiadas en los diálogos. Esto está habilitado por defecto en Windows para seguir las convenciones de la interfaz, y se puede alternar cambiando :ref:`ProjectSettings.gui/common/swap_cancel_ok<class_ProjectSettings_property_gui/common/swap_cancel_ok>`.
 
-\ **Note:** This doesn't affect native dialogs such as the ones spawned by :ref:`dialog_show()<class_DisplayServer_method_dialog_show>`.
+\ **Nota:** Esto no afecta a los diálogos nativos como los generados por :ref:`dialog_show()<class_DisplayServer_method_dialog_show>`.
 
 .. rst-class:: classref-item-separator
 
@@ -4698,7 +4698,7 @@ Returns ``true`` if positions of **OK** and **Cancel** buttons are swapped in di
 
 :ref:`int<class_int>` **get_window_at_screen_position**\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_DisplayServer_method_get_window_at_screen_position>`
 
-Returns the ID of the window at the specified screen ``position`` (in pixels). On multi-monitor setups, the screen position is relative to the virtual desktop area. On multi-monitor setups with different screen resolutions or orientations, the origin may be located outside any display like this:
+Devuelve el ID de la ventana en la ``position`` de pantalla especificada (en píxeles). En configuraciones de múltiples monitores, la posición de pantalla es relativa al área de escritorio virtual. En configuraciones de múltiples monitores con diferentes resoluciones u orientaciones de pantalla, el origen puede ubicarse fuera de cualquier pantalla de esta manera:
 
 .. code:: text
 
@@ -4735,25 +4735,25 @@ Devuelve la lista de IDs de ventana de Godot que pertenecen a este proceso.
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Adds a new checkable item with text ``label`` to the global menu with ID ``menu_root``.
+Añade un nuevo elemento marcable con texto ``label`` al menú global con ID ``menu_root``.
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+Devuelve el índice del elemento insertado; no se garantiza que coincida con el valor de ``index``.
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+Opcionalmente se puede definir un ``accelerator``, que es un atajo de teclado que se puede presionar para activar el botón del menú incluso si no está abierto actualmente. El ``accelerator`` es generalmente una combinación de :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s y :ref:`Key<enum_@GlobalScope_Key>`\ s usando OR bit a bit, como ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **Nota:** Los Callables ``callback`` y ``key_callback`` deben aceptar exactamente un parámetro Variant; el parámetro que se pasa a los Callables será el valor pasado a ``tag``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método está implementado solo en macOS.
 
-\ **Supported system menu IDs:**\ 
+\ **IDs de menú del sistema soportados:**\ 
 
 .. code:: text
 
-    "_main" - Main menu (macOS).
-    "_dock" - Dock popup menu (macOS).
-    "_apple" - Apple menu (macOS, custom items added before "Services").
-    "_window" - Window menu (macOS, custom items added after "Bring All to Front").
-    "_help" - Help menu (macOS).
+    "_main" - Menú principal (macOS).
+    "_dock" - Menú emergente del Dock (macOS).
+    "_apple" - Menú Apple (macOS, los elementos personalizados se añaden antes de "Servicios").
+    "_window" - Menú Ventana (macOS, los elementos personalizados se añaden después de "Traer todo al frente").
+    "_help" - Menú Ayuda (macOS).
 
 .. rst-class:: classref-item-separator
 
@@ -4767,25 +4767,25 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Adds a new checkable item with text ``label`` and icon ``icon`` to the global menu with ID ``menu_root``.
+Añade un nuevo elemento marcable con texto ``label`` e icono ``icon`` al menú global con ID ``menu_root``.
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+Devuelve el índice del elemento insertado; no se garantiza que coincida con el valor de ``index``.
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+Opcionalmente se puede definir un ``accelerator``, que es un atajo de teclado que se puede presionar para activar el botón del menú incluso si no está abierto actualmente. El ``accelerator`` es generalmente una combinación de :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s y :ref:`Key<enum_@GlobalScope_Key>`\ s usando OR bit a bit, como ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **Nota:** Los Callables ``callback`` y ``key_callback`` deben aceptar exactamente un parámetro Variant; el parámetro que se pasa a los Callables será el valor pasado a ``tag``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método está implementado solo en macOS.
 
-\ **Supported system menu IDs:**\ 
+\ **IDs de menú del sistema soportados:**\ 
 
 .. code:: text
 
-    "_main" - Main menu (macOS).
-    "_dock" - Dock popup menu (macOS).
-    "_apple" - Apple menu (macOS, custom items added before "Services").
-    "_window" - Window menu (macOS, custom items added after "Bring All to Front").
-    "_help" - Help menu (macOS).
+    "_main" - Menú principal (macOS).
+    "_dock" - Menú emergente del Dock (macOS).
+    "_apple" - Menú Apple (macOS, los elementos personalizados se añaden antes de "Servicios").
+    "_window" - Menú Ventana (macOS, los elementos personalizados se añaden después de "Traer todo al frente").
+    "_help" - Menú Ayuda (macOS).
 
 .. rst-class:: classref-item-separator
 
@@ -4799,25 +4799,25 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Adds a new item with text ``label`` and icon ``icon`` to the global menu with ID ``menu_root``.
+Añade un nuevo elemento con texto ``label`` e icono ``icon`` al menú global con ID ``menu_root``.
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+Devuelve el índice del elemento insertado; no se garantiza que coincida con el valor de ``index``.
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+Opcionalmente se puede definir un ``accelerator``, que es un atajo de teclado que se puede presionar para activar el botón del menú incluso si no está abierto actualmente. El ``accelerator`` es generalmente una combinación de :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s y :ref:`Key<enum_@GlobalScope_Key>`\ s usando OR bit a bit, como ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **Nota:** Los Callables ``callback`` y ``key_callback`` deben aceptar exactamente un parámetro Variant; el parámetro que se pasa a los Callables será el valor pasado a ``tag``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método está implementado solo en macOS.
 
-\ **Supported system menu IDs:**\ 
+\ **IDs de menú del sistema soportados:**\ 
 
 .. code:: text
 
-    "_main" - Main menu (macOS).
-    "_dock" - Dock popup menu (macOS).
-    "_apple" - Apple menu (macOS, custom items added before "Services").
-    "_window" - Window menu (macOS, custom items added after "Bring All to Front").
-    "_help" - Help menu (macOS).
+    "_main" - Menú principal (macOS).
+    "_dock" - Menú emergente del Dock (macOS).
+    "_apple" - Menú Apple (macOS, los elementos personalizados se añaden antes de "Servicios").
+    "_window" - Menú Ventana (macOS, los elementos personalizados se añaden después de "Traer todo al frente").
+    "_help" - Menú Ayuda (macOS).
 
 .. rst-class:: classref-item-separator
 
@@ -4831,27 +4831,27 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Adds a new radio-checkable item with text ``label`` and icon ``icon`` to the global menu with ID ``menu_root``.
+Añade un nuevo elemento radio-marcable con texto ``label`` e icono ``icon`` al menú global con ID ``menu_root``.
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+Devuelve el índice del elemento insertado; no se garantiza que coincida con el valor de ``index``.
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+Opcionalmente se puede definir un ``accelerator``, que es un atajo de teclado que se puede presionar para activar el botón del menú incluso si no está abierto actualmente. El ``accelerator`` es generalmente una combinación de :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s y :ref:`Key<enum_@GlobalScope_Key>`\ s usando OR bit a bit, como ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
 
-\ **Note:** Radio-checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See :ref:`global_menu_set_item_checked()<class_DisplayServer_method_global_menu_set_item_checked>` for more info on how to control it.
+\ **Nota:** Los elementos radio-marcables solo muestran una marca de verificación, pero no tienen ningún comportamiento de marcado integrado y deben marcarse/desmarcarse manualmente. Consulta :ref:`global_menu_set_item_checked()<class_DisplayServer_method_global_menu_set_item_checked>` para más información sobre cómo controlarlo.
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **Nota:** Los Callables ``callback`` y ``key_callback`` deben aceptar exactamente un parámetro Variant; el parámetro que se pasa a los Callables será el valor pasado a ``tag``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método está implementado solo en macOS.
 
-\ **Supported system menu IDs:**\ 
+\ **IDs de menú del sistema soportados:**\ 
 
 .. code:: text
 
-    "_main" - Main menu (macOS).
-    "_dock" - Dock popup menu (macOS).
-    "_apple" - Apple menu (macOS, custom items added before "Services").
-    "_window" - Window menu (macOS, custom items added after "Bring All to Front").
-    "_help" - Help menu (macOS).
+    "_main" - Menú principal (macOS).
+    "_dock" - Menú emergente del Dock (macOS).
+    "_apple" - Menú Apple (macOS, los elementos personalizados se añaden antes de "Servicios").
+    "_window" - Menú Ventana (macOS, los elementos personalizados se añaden después de "Traer todo al frente").
+    "_help" - Menú Ayuda (macOS).
 
 .. rst-class:: classref-item-separator
 
@@ -4865,25 +4865,25 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Adds a new item with text ``label`` to the global menu with ID ``menu_root``.
+Añade un nuevo elemento con el texto ``label`` al menú global con ID ``menu_root``.
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+Devuelve el índice del elemento insertado, sin garantía de que sea el mismo que el valor ``index``.
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+Se puede definir opcionalmente un ``accelerator``, que es un atajo de teclado que se puede presionar para invocar el botón del menú incluso si no está actualmente abierto. El ``accelerator`` es generalmente una combinación de :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s y :ref:`Key<enum_@GlobalScope_Key>`\ s usando OR a nivel de bit como ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **Nota:** Los Callables ``callback`` y ``key_callback`` tienen que aceptar exactamente un parámetro de tipo Variant, el parámetro que se pase a los Callables será el valor que se pase a ``tag``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método está implementado sólo en macOS.
 
-\ **Supported system menu IDs:**\ 
+\ **IDs del menú de sistema soportados:**\ 
 
 .. code:: text
 
-    "_main" - Main menu (macOS).
-    "_dock" - Dock popup menu (macOS).
-    "_apple" - Apple menu (macOS, custom items added before "Services").
-    "_window" - Window menu (macOS, custom items added after "Bring All to Front").
-    "_help" - Help menu (macOS).
+    "_main" - Menú principal (macOS).
+    "_dock" - Menú popup del panel (dock) (macOS).
+    "_apple" - Menú de Apple (macOS, elementos personalizados añadidos antes de "Servicios").
+    "_window" - Menú de Ventana (Window) (macOS, elementos personalizados añadidos después de "Traer Todo al Frente").
+    "_help" - Menú de Ayuda (macOS).
 
 .. rst-class:: classref-item-separator
 
@@ -4897,29 +4897,29 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Adds a new item with text ``label`` to the global menu with ID ``menu_root``.
+Añade un nuevo elemento con el texto ``label`` al menú global con ID ``menu_root``.
 
-Contrarily to normal binary items, multistate items can have more than two states, as defined by ``max_states``. Each press or activate of the item will increase the state by one. The default value is defined by ``default_state``.
+A diferencia de los elementos binarios normales, los elementos de múltiples estados pueden tener más de dos estados, según lo definido por ``max_states``. Cada pulsación o activación del elemento aumentará el estado en uno. El valor predeterminado está definido por ``default_state``.
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+Devuelve el índice del elemento insertado; no se garantiza que sea el mismo que el valor de ``index``.
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+Opcionalmente, se puede definir un ``accelerator``, que es un atajo de teclado que puede pulsarse para activar el botón del menú incluso si este no está abierto actualmente. El ``accelerator`` generalmente es una combinación de :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` y :ref:`Key<enum_@GlobalScope_Key>` utilizando OR a nivel de bits, como ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
 
-\ **Note:** By default, there's no indication of the current item state, it should be changed manually.
+\ **Nota:** De forma predeterminada, no hay ninguna indicación del estado actual del elemento; debe cambiarse manualmente.
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **Nota:** Los Callables ``callback`` y ``key_callback`` deben aceptar exactamente un parámetro Variant. El parámetro pasado a los Callables será el valor pasado a ``tag``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
-\ **Supported system menu IDs:**\ 
+\ **ID de menús del sistema compatibles:**\ 
 
 .. code:: text
 
-    "_main" - Main menu (macOS).
-    "_dock" - Dock popup menu (macOS).
-    "_apple" - Apple menu (macOS, custom items added before "Services").
-    "_window" - Window menu (macOS, custom items added after "Bring All to Front").
-    "_help" - Help menu (macOS).
+    "_main" - Menú principal (macOS).
+    "_dock" - Menú emergente del Dock (macOS).
+    "_apple" - Menú Apple (macOS, los elementos personalizados añadidos aparecen antes de "Servicios").
+    "_window" - Menú Ventana (macOS, los elementos personalizados añadidos aparecen después de "Traer todo al frente").
+    "_help" - Menú Ayuda (macOS).
 
 .. rst-class:: classref-item-separator
 
@@ -4933,27 +4933,27 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Adds a new radio-checkable item with text ``label`` to the global menu with ID ``menu_root``.
+Añade un nuevo elemento seleccionable mediante radio con el texto ``label`` al menú global con ID ``menu_root``.
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+Devuelve el índice del elemento insertado; no se garantiza que sea el mismo que el valor de ``index``.
 
-An ``accelerator`` can optionally be defined, which is a keyboard shortcut that can be pressed to trigger the menu button even if it's not currently open. The ``accelerator`` is generally a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+Opcionalmente, se puede definir un ``accelerator``, que es un atajo de teclado que puede pulsarse para activar el botón del menú incluso si este no está abierto actualmente. El ``accelerator`` generalmente es una combinación de :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` y :ref:`Key<enum_@GlobalScope_Key>` utilizando OR a nivel de bits, como ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
 
-\ **Note:** Radio-checkable items just display a checkmark, but don't have any built-in checking behavior and must be checked/unchecked manually. See :ref:`global_menu_set_item_checked()<class_DisplayServer_method_global_menu_set_item_checked>` for more info on how to control it.
+\ **Nota:** Los elementos seleccionables mediante radio solo muestran una marca de verificación, pero no tienen ningún comportamiento de selección integrado y deben marcarse o desmarcarse manualmente. Consulta :ref:`global_menu_set_item_checked()<class_DisplayServer_method_global_menu_set_item_checked>` para obtener más información sobre cómo controlarlo.
 
-\ **Note:** The ``callback`` and ``key_callback`` Callables need to accept exactly one Variant parameter, the parameter passed to the Callables will be the value passed to ``tag``.
+\ **Nota:** Los Callables ``callback`` y ``key_callback`` deben aceptar exactamente un parámetro Variant. El parámetro pasado a los Callables será el valor pasado a ``tag``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
-\ **Supported system menu IDs:**\ 
+\ **ID de menús del sistema compatibles:**\ 
 
 .. code:: text
 
-    "_main" - Main menu (macOS).
-    "_dock" - Dock popup menu (macOS).
-    "_apple" - Apple menu (macOS, custom items added before "Services").
-    "_window" - Window menu (macOS, custom items added after "Bring All to Front").
-    "_help" - Help menu (macOS).
+    "_main" - Menú principal (macOS).
+    "_dock" - Menú emergente del Dock (macOS).
+    "_apple" - Menú Apple (macOS, los elementos personalizados añadidos aparecen antes de "Servicios").
+    "_window" - Menú Ventana (macOS, los elementos personalizados añadidos aparecen después de "Traer todo al frente").
+    "_help" - Menú Ayuda (macOS).
 
 .. rst-class:: classref-item-separator
 
@@ -4967,21 +4967,21 @@ An ``accelerator`` can optionally be defined, which is a keyboard shortcut that 
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Adds a separator between items to the global menu with ID ``menu_root``. Separators also occupy an index.
+Añade un separador entre elementos al menú global con ID ``menu_root``. Los separadores también ocupan un índice.
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+Devuelve el índice del elemento insertado; no se garantiza que sea el mismo que el valor de ``index``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
-\ **Supported system menu IDs:**\ 
+\ **ID de menús del sistema compatibles:**\ 
 
 .. code:: text
 
-    "_main" - Main menu (macOS).
-    "_dock" - Dock popup menu (macOS).
-    "_apple" - Apple menu (macOS, custom items added before "Services").
-    "_window" - Window menu (macOS, custom items added after "Bring All to Front").
-    "_help" - Help menu (macOS).
+    "_main" - Menú principal (macOS).
+    "_dock" - Menú emergente del Dock (macOS).
+    "_apple" - Menú Apple (macOS, los elementos personalizados añadidos aparecen antes de "Servicios").
+    "_window" - Menú Ventana (macOS, los elementos personalizados añadidos aparecen después de "Traer todo al frente").
+    "_help" - Menú Ayuda (macOS).
 
 .. rst-class:: classref-item-separator
 
@@ -4995,21 +4995,21 @@ Returns index of the inserted item, it's not guaranteed to be the same as ``inde
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Adds an item that will act as a submenu of the global menu ``menu_root``. The ``submenu`` argument is the ID of the global menu root that will be shown when the item is clicked.
+Añade un elemento que actuará como submenú del menú global ``menu_root``. El argumento ``submenu`` es el ID de la raíz del menú global que se mostrará cuando se haga clic en el elemento.
 
-Returns index of the inserted item, it's not guaranteed to be the same as ``index`` value.
+Devuelve el índice del elemento insertado; no se garantiza que sea el mismo que el valor de ``index``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
-\ **Supported system menu IDs:**\ 
+\ **ID de menús del sistema compatibles:**\ 
 
 .. code:: text
 
-    "_main" - Main menu (macOS).
-    "_dock" - Dock popup menu (macOS).
-    "_apple" - Apple menu (macOS, custom items added before "Services").
-    "_window" - Window menu (macOS, custom items added after "Bring All to Front").
-    "_help" - Help menu (macOS).
+    "_main" - Menú principal (macOS).
+    "_dock" - Menú emergente del Dock (macOS).
+    "_apple" - Menú Apple (macOS, los elementos personalizados añadidos aparecen antes de "Servicios").
+    "_window" - Menú Ventana (macOS, los elementos personalizados añadidos aparecen después de "Traer todo al frente").
+    "_help" - Menú Ayuda (macOS).
 
 .. rst-class:: classref-item-separator
 
@@ -5241,9 +5241,9 @@ Devuelve los metadatos del elemento especificado, que pueden ser de cualquier ti
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns the text of the item at index ``idx``.
+Devuelve el texto del elemento en el índice ``idx``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5257,9 +5257,9 @@ Returns the text of the item at index ``idx``.
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns the tooltip associated with the specified index ``idx``.
+Devuelve la información emergente asociada al índice especificado ``idx``.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5273,9 +5273,9 @@ Returns the tooltip associated with the specified index ``idx``.
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns Dictionary of supported system menu IDs and names.
+Devuelve un Dictionary de los ID y nombres de los menús del sistema admitidos.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5983,9 +5983,9 @@ Establece el modo actual del ratón. Véase también :ref:`mouse_get_mode()<clas
 
 |void| **pip_mode_enter**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_pip_mode_enter>`
 
-Enters picture-in-picture mode.
+Entra en el modo pantalla en pantalla.
 
-\ **Note:** This method is implemented on Android.
+\ **Nota:** Este método está implementado en Android.
 
 .. rst-class:: classref-item-separator
 
@@ -6011,9 +6011,9 @@ Specifies the aspect ratio for picture-in-picture mode.
 
 |void| **pip_mode_set_auto_enter_on_background**\ (\ auto_enter_on_background\: :ref:`bool<class_bool>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_pip_mode_set_auto_enter_on_background>`
 
-Specifies whether picture-in-picture mode should be entered automatically when the application goes in the background.
+Especifica si se debe activar automáticamente el modo pantalla en pantalla cuando la aplicación pasa a segundo plano.
 
-\ **Note:** This method is implemented on Android.
+\ **Nota:** Este método está implementado en Android.
 
 .. rst-class:: classref-item-separator
 
@@ -7479,11 +7479,11 @@ Establece el tamaño de la ventana dada a ``size`` (en píxeles). Véase tambié
 
 |void| **window_set_taskbar_progress_state**\ (\ state\: :ref:`ProgressState<enum_DisplayServer_ProgressState>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_taskbar_progress_state>`
 
-Sets the type and state of the progress bar on the taskbar/dock icon of the window specified by ``window_id``. See :ref:`ProgressState<enum_DisplayServer_ProgressState>` for possible values and how each mode behaves.
+Establece el tipo y el estado de la barra de progreso en el icono de la barra de tareas o del dock de la ventana especificada por ``window_id``. Consulta :ref:`ProgressState<enum_DisplayServer_ProgressState>` para conocer los valores posibles y el comportamiento de cada modo.
 
-\ **Note:** This method is implemented only on Windows and macOS.
+\ **Nota:** Este método solo está implementado en Windows y macOS.
 
-\ **Note:** On macOS, the progress bar is displayed only for the main window.
+\ **Nota:** En macOS, la barra de progreso solo se muestra para la ventana principal.
 
 .. rst-class:: classref-item-separator
 

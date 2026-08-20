@@ -178,7 +178,7 @@ ResourceImporterScene
 
 :ref:`bool<class_bool>` **array_mesh/deduplicate_surfaces** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_array_mesh/deduplicate_surfaces>`
 
-If the 3D model file contains only one mesh, this option has no effect. If ``true`` and the 3D model file contains multiple meshes with the same surface names and formats, the surfaces will be merged together when the meshes are merged. This is useful for reducing the number of surfaces in the resulting mesh, and avoids duplicating materials. If ``false`` and the 3D model file contains multiple meshes, the surfaces will always be kept separate.
+Если файл 3D-модели содержит только одну сетку, этот параметр не оказывает никакого эффекта. Если ``true`` и файл 3D-модели содержит несколько сеток с одинаковыми именами и форматами поверхностей, то при слиянии сеток поверхности будут объединены. Это полезно для уменьшения количества поверхностей в результирующей сетке и позволяет избежать дублирования материалов. Если ``false`` и файл 3D-модели содержит несколько сеток, то поверхности всегда будут оставаться отдельными.
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ If the 3D model file contains only one mesh, this option has no effect. If ``tru
 
 :ref:`bool<class_bool>` **mesh_library/use_node_names_as_mesh_names** = ``false`` :ref:`🔗<class_ResourceImporterScene_property_mesh_library/use_node_names_as_mesh_names>`
 
-If ``true``, the mesh names will be set to the names of the nodes in the 3D model file. If ``false``, the mesh names will be set to the names of the meshes in the 3D model file. Enabling this is a common work-around when the author of the 3D model file did not properly set the mesh names in Blender or other 3D modeling apps. For example, a file may have a node named "Turret" with a mesh named "Cube.002", so enabling this option will set the mesh name to "Turret" instead of "Cube_002".
+Если ``true``, имена мешей будут установлены в соответствии с именами узлов в файле 3D-модели. Если ``false``, имена мешей будут установлены в соответствии с именами мешей в файле 3D-модели. Включение этой опции — распространенный обходной путь, когда автор файла 3D-модели неправильно указал имена мешей в Blender или других приложениях для 3D-моделирования. Например, в файле может быть узел с именем "Turret" и сетка с именем "Cube.002", поэтому включение этой опции установит имя сетки на "Turret" вместо "Cube_002".
 
 .. rst-class:: classref-item-separator
 
@@ -434,15 +434,15 @@ If ``true``, the mesh names will be set to the names of the nodes in the 3D mode
 
 :ref:`bool<class_bool>` **skins/use_named_skins** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_skins/use_named_skins>`
 
-If checked, use named :ref:`Skin<class_Skin>`\ s for animation. The :ref:`MeshInstance3D<class_MeshInstance3D>` node contains 3 properties of relevance here: a skeleton :ref:`NodePath<class_NodePath>` pointing to the :ref:`Skeleton3D<class_Skeleton3D>` node (usually ``..``), a mesh, and a skin:
+Если этот параметр отмечен, используйте именованные :ref:`Skin<class_Skin>` для анимации. Узел :ref:`MeshInstance3D<class_MeshInstance3D>` содержит 3 важных свойства: скелет :ref:`NodePath<class_NodePath>`, указывающий на узел :ref:`Skeleton3D<class_Skeleton3D>` (обычно ``..``), сетку и скин:
 
-- The :ref:`Skeleton3D<class_Skeleton3D>` node contains a list of bones with names, their pose and rest, a name, and a parent bone.
+- Узел :ref:`Skeleton3D<class_Skeleton3D>` содержит список костей с именами, их позами и состояниями покоя, имя и родительскую кость.
 
-- The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
+- Сетка содержит все необходимые данные о вершинах для отображения сетки. С точки зрения сетки, она знает, как происходит распределение весов вершин, и использует некоторую внутреннюю нумерацию, часто импортируемую из программного обеспечения для 3D-моделирования.
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For each of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the :ref:`Skin<class_Skin>` contains each bone's name (if :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` is ``true``), or the bone's index within the :ref:`Skeleton3D<class_Skeleton3D>` list (if :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` is ``false``).
+- Скин содержит информацию, необходимую для привязки этой сетки к этому Skeleton3D. Для каждого из внутренних идентификаторов костей, выбранных программным обеспечением для 3D-моделирования, он содержит две вещи. Во-первых, матрицу, известную как матрица привязки позы, обратная матрица привязки или сокращенно IBM. Во-вторых, :ref:`Skin<class_Skin>` содержит имя каждой кости (если :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` равно ``true``) или индекс кости в списке :ref:`Skeleton3D<class_Skeleton3D>` (если :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` равно ``false``).
 
-Together, this information is enough to tell Godot how to use the bone poses in the :ref:`Skeleton3D<class_Skeleton3D>` node to render the mesh from each :ref:`MeshInstance3D<class_MeshInstance3D>`. Note that each :ref:`MeshInstance3D<class_MeshInstance3D>` may share binds, as is common in models exported from Blender, or each :ref:`MeshInstance3D<class_MeshInstance3D>` may use a separate :ref:`Skin<class_Skin>` object, as is common in models exported from other tools such as Maya.
+Вместе этой информации достаточно, чтобы сообщить Godot, как использовать позы костей в узле :ref:`Skeleton3D<class_Skeleton3D>` для рендеринга сетки из каждого :ref:`MeshInstance3D<class_MeshInstance3D>`. Обратите внимание, что каждый :ref:`MeshInstance3D<class_MeshInstance3D>` может использовать общие привязки, как это часто бывает в моделях, экспортированных из Blender, или каждый :ref:`MeshInstance3D<class_MeshInstance3D>` может использовать отдельный объект :ref:`Skin<class_Skin>`, как это часто бывает в моделях, экспортированных из других инструментов, таких как Maya.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

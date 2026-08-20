@@ -7,22 +7,22 @@ ItemList
 
 **Eredita:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Un elenco verticale di elementi selezionabili con una o più colonne.
+Un elenco verticale di voci selezionabili con una o più colonne.
 
 .. rst-class:: classref-introduction-group
 
 Descrizione
 ----------------------
 
-Questo controllo fornisce un elenco verticale di elementi selezionabili che possono essere in una o più colonne, con ogni elemento con opzioni per il testo e un'icona. I tooltip sono supportati e possono essere diversi per ogni elemento nell'elenco.
+Questo controllo fornisce un elenco verticale di voci selezionabili che possono essere in una o più colonne, con ogni voce con opzioni per il testo e un'icona. I tooltip sono supportati e possono essere diversi per ogni voce nell'elenco.
 
-È possibile selezionare o deselezionare gli elementi selezionabili nell'elenco, e abilitare la selezione multipla. La selezione con il pulsante destro del mouse può anche essere abilitata per consentire l'uso di menu contestuali a comparsa. È possibile inoltre "attivare" gli elementi cliccando due volte su di essi o premendo :kbd:`Invio`.
+È possibile selezionare o deselezionare le voci selezionabili nell'elenco, e abilitare la selezione multipla. La selezione con il pulsante destro del mouse può anche essere abilitata per consentire l'uso di menu contestuali a comparsa. È possibile inoltre "attivare" le voci cliccando due volte su di essi o premendo :kbd:`Invio`.
 
-Il testo di un elemento supporta solo stringhe a riga singola. I caratteri di nuova riga (ad esempio ``\n``) nella stringa non produrranno una nuova riga. L'avvolgimento del testo è abilitata in modalità :ref:`ICON_MODE_TOP<class_ItemList_constant_ICON_MODE_TOP>`, ma la larghezza della colonna è regolata per adattarsi completamente al suo contenuto per impostazione predefinita. È necessario impostare :ref:`fixed_column_width<class_ItemList_property_fixed_column_width>` maggiore di zero per avvolgere il testo.
+Il testo di una voce supporta solo stringhe a riga singola. I caratteri di nuova riga (ad esempio ``\n``) nella stringa non produrranno una nuova riga. L'avvolgimento del testo è abilitata in modalità :ref:`ICON_MODE_TOP<class_ItemList_constant_ICON_MODE_TOP>`, ma normalmente la larghezza della colonna è regolata per adattarsi completamente al suo contenuto. È necessario impostare :ref:`fixed_column_width<class_ItemList_property_fixed_column_width>` maggiore di zero per avvolgere il testo.
 
-Tutti i metodi ``set_*`` consentono gli indici negativi per gli elementi, ad esempio ``-1`` per accedere all'ultimo elemento, ``-2`` per accedere al penultimo elemento e così via.
+Tutti i metodi ``set_*`` consentono gli indici negativi per le voci, ad esempio ``-1`` per accedere all'ultima voce, ``-2`` per accedere alla penultima voce e così via.
 
-\ **Ricerca incrementale:** Come :ref:`PopupMenu<class_PopupMenu>` e :ref:`Tree<class_Tree>`, **ItemList** supporta la ricerca all'interno dell'elenco mentre il controllo è attivo. Premi un tasto che corrisponde alla prima lettera del nome di un elemento per selezionare il primo elemento che inizia con la lettera specificata. Dopo quel punto, ci sono due modi per eseguire la ricerca incrementale: 1) Premi di nuovo lo stesso tasto prima della durata del timeout per selezionare l'elemento successivo che inizia con la stessa lettera. 2) Premi i tasti delle lettere che corrispondono al resto della parola prima della durata del timeout per selezionare direttamente l'elemento in questione. Entrambe queste azioni verranno ripristinate all'inizio dell'elenco se la durata del timeout è trascorsa dall'ultima pressione di un tasto. È possibile regolare la durata del timeout modificando :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`.
+\ **Ricerca incrementale:** Come :ref:`PopupMenu<class_PopupMenu>` e :ref:`Tree<class_Tree>`, **ItemList** supporta la ricerca all'interno dell'elenco mentre il controllo è attivo. Premi un tasto che corrisponde alla prima lettera del nome di una voce per selezionare la prima voce che inizia con la lettera specificata. Dopo quel punto, ci sono due modi per eseguire la ricerca incrementale: 1) Premi di nuovo lo stesso tasto prima della durata del timeout per selezionare la voce successiva che inizia con la stessa lettera. 2) Premi i tasti delle lettere che corrispondono al resto della parola prima della durata del timeout per selezionare direttamente la voce in questione. Entrambe queste azioni verranno ripristinate all'inizio dell'elenco se la durata del timeout è trascorsa dall'ultima pressione di un tasto. È possibile regolare la durata del timeout modificando :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -277,7 +277,7 @@ Attivato quando si clicca con il mouse all'interno del rettangolo dell'elenco ma
 
 **item_activated**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_signal_item_activated>`
 
-Emesso quando un determinato elemento nell'elenco viene attivato tramite doppio clic o premendo :kbd:`Invio`.
+Emesso quando una determinata voce nell'elenco viene attivata tramite doppio clic o premendo :kbd:`Invio`.
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ Emesso quando un determinato elemento nell'elenco viene attivato tramite doppio 
 
 **item_clicked**\ (\ index\: :ref:`int<class_int>`, at_position\: :ref:`Vector2<class_Vector2>`, mouse_button_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_signal_item_clicked>`
 
-Emesso quando un determinato elemento nell'elenco è stato cliccato con un qualsiasi pulsante del mouse.
+Emesso quando una determinata voce nell'elenco è stata cliccata con un qualsiasi pulsante del mouse.
 
 \ ``at_position`` è la posizione del clic nel sistema di coordinate locali di questo controllo.
 
@@ -303,9 +303,9 @@ Emesso quando un determinato elemento nell'elenco è stato cliccato con un quals
 
 **item_selected**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_signal_item_selected>`
 
-Emesso quando un determinato elemento è stato selezionato. Applicabile solo in modalità di selezione singola.
+Emesso quando una determinata voce è stata selezionata. Applicabile solo in modalità di selezione singola.
 
-\ :ref:`allow_reselect<class_ItemList_property_allow_reselect>` deve essere abilitato per selezionare nuovamente lo stesso elemento.
+\ :ref:`allow_reselect<class_ItemList_property_allow_reselect>` deve essere abilitato per selezionare nuovamente la stessa voce.
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ enum **SelectMode**: :ref:`🔗<enum_ItemList_SelectMode>`
 
 :ref:`SelectMode<enum_ItemList_SelectMode>` **SELECT_SINGLE** = ``0``
 
-Permette la selezione di un solo elemento.
+Permette la selezione di una sola voce.
 
 .. _class_ItemList_constant_SELECT_MULTI:
 
@@ -374,7 +374,7 @@ Permette la selezione di un solo elemento.
 
 :ref:`SelectMode<enum_ItemList_SelectMode>` **SELECT_MULTI** = ``1``
 
-Consente di selezionare più elementi tenendo premuto :kbd:`Ctrl` o :kbd:`Maiusc`.
+Consente di selezionare più voci tenendo premuto :kbd:`Ctrl` o :kbd:`Maiusc`.
 
 .. _class_ItemList_constant_SELECT_TOGGLE:
 
@@ -382,7 +382,7 @@ Consente di selezionare più elementi tenendo premuto :kbd:`Ctrl` o :kbd:`Maiusc
 
 :ref:`SelectMode<enum_ItemList_SelectMode>` **SELECT_TOGGLE** = ``2``
 
-Consente di selezionare più elementi attivandoli e disattivandoli.
+Consente di selezionare più voci attivandole e disattivandole.
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ItemList_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_DISABLED** = ``0``
 
-Scroll hints will never be shown.
+Gli indicatori di scorrimento non appariranno mai.
 
 .. _class_ItemList_constant_SCROLL_HINT_MODE_BOTH:
 
@@ -408,7 +408,7 @@ Scroll hints will never be shown.
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_BOTH** = ``1``
 
-Scroll hints will be shown at the top and bottom.
+Gli indicatori di scorrimento appariranno in alto e in basso.
 
 .. _class_ItemList_constant_SCROLL_HINT_MODE_TOP:
 
@@ -416,7 +416,7 @@ Scroll hints will be shown at the top and bottom.
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_TOP** = ``2``
 
-Only the top scroll hint will be shown.
+Solo l'indicatore di scorrimento in alto apparirà.
 
 .. _class_ItemList_constant_SCROLL_HINT_MODE_BOTTOM:
 
@@ -424,7 +424,7 @@ Only the top scroll hint will be shown.
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_BOTTOM** = ``3``
 
-Only the bottom scroll hint will be shown.
+Solo l'indicatore di scorrimento in basso apparirà.
 
 .. rst-class:: classref-section-separator
 
@@ -446,7 +446,7 @@ Descrizioni delle proprietà
 - |void| **set_allow_reselect**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_allow_reselect**\ (\ )
 
-Se ``true``, l'elemento attualmente selezionato può essere selezionato nuovamente.
+Se ``true``, la voce attualmente selezionata può essere selezionata nuovamente.
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +463,7 @@ Se ``true``, l'elemento attualmente selezionato può essere selezionato nuovamen
 - |void| **set_allow_rmb_select**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_allow_rmb_select**\ (\ )
 
-Se ``true``, un clic destro può selezionare gli elementi.
+Se ``true``, un clic destro può selezionare le voci.
 
 .. rst-class:: classref-item-separator
 
@@ -533,7 +533,7 @@ Se ``true``, il controllo ridimensionerà automaticamente la sua larghezza per a
 
 La larghezza a cui saranno regolate tutte le colonne.
 
-Un valore di zero disabilita la regolazione, ogni elemento avrà una larghezza uguale alla larghezza del suo contenuto e le colonne avranno una larghezza non uniforme.
+Un valore di zero disabilita la regolazione, ogni voce avrà una larghezza uguale alla larghezza del suo contenuto e le colonne avranno una larghezza non uniforme.
 
 .. rst-class:: classref-item-separator
 
@@ -603,7 +603,7 @@ La scala dell'icona applicata dopo :ref:`fixed_icon_size<class_ItemList_property
 - |void| **set_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_item_count**\ (\ )
 
-Il numero di elementi attualmente nell'elenco.
+Il numero di voci attualmente nell'elenco.
 
 .. rst-class:: classref-item-separator
 
@@ -615,9 +615,9 @@ Il numero di elementi attualmente nell'elenco.
 
 :ref:`bool<class_bool>` **item_{index}/disabled** = ``false`` :ref:`🔗<class_ItemList_property_item_{index}/disabled>`
 
-If ``true``, the item at ``index`` is disabled.
+Se ``true``, la voce all'indice ``index`` è disabilitata.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -629,9 +629,9 @@ If ``true``, the item at ``index`` is disabled.
 
 :ref:`Texture2D<class_Texture2D>` **item_{index}/icon** :ref:`🔗<class_ItemList_property_item_{index}/icon>`
 
-The icon of the item at ``index``.
+L'icona della voce all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -643,9 +643,9 @@ The icon of the item at ``index``.
 
 :ref:`bool<class_bool>` **item_{index}/selectable** = ``true`` :ref:`🔗<class_ItemList_property_item_{index}/selectable>`
 
-If ``true``, the item at ``index`` is selectable.
+Se ``true``, la voce all'indice ``index`` è selezionabile.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -657,9 +657,9 @@ If ``true``, the item at ``index`` is selectable.
 
 :ref:`String<class_String>` **item_{index}/text** = ``""`` :ref:`🔗<class_ItemList_property_item_{index}/text>`
 
-The text of the item at ``index``.
+Il testo della voce all'indice ``index``.
 
-\ **Note:** ``index`` is a value in the ``0 .. item_count - 1`` range.
+\ **Note:** ``index`` è un valore compreso nell'intervallo ``0 .. item_count - 1``.
 
 .. rst-class:: classref-item-separator
 
@@ -680,7 +680,7 @@ Numero massimo di colonne che l'elenco avrà.
 
 Se maggiore di zero, il contenuto sarà suddiviso tra le colonne specificate.
 
-Un valore di zero significa colonne illimitate, ovvero tutti gli elementi saranno inseriti nella stessa riga.
+Un valore di zero significa colonne illimitate, ovvero tutte le voci saranno inserite nella stessa riga.
 
 .. rst-class:: classref-item-separator
 
@@ -697,7 +697,7 @@ Un valore di zero significa colonne illimitate, ovvero tutti gli elementi sarann
 - |void| **set_max_text_lines**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_text_lines**\ (\ )
 
-Numero massimo di righe di testo consentite in ogni elemento. Lo spazio sarà riservato anche quando non ci sono abbastanza righe di testo da visualizzare.
+Numero massimo di righe di testo consentite in ogni voce. Lo spazio sarà riservato anche quando non ci sono abbastanza righe di testo da visualizzare.
 
 \ **Nota:** Questa proprietà ha effetto solo quando :ref:`icon_mode<class_ItemList_property_icon_mode>` è :ref:`ICON_MODE_TOP<class_ItemList_constant_ICON_MODE_TOP>`. Per garantire che il testo si avvolga, :ref:`fixed_column_width<class_ItemList_property_fixed_column_width>` deve essere maggiore di zero.
 
@@ -735,7 +735,7 @@ Se ``true``, la larghezza è uguale alla larghezza della colonna più grande di 
 - |void| **set_scroll_hint_mode**\ (\ value\: :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>`\ )
 - :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **get_scroll_hint_mode**\ (\ )
 
-The way which scroll hints (indicators that show that the content can still be scrolled in a certain direction) will be shown.
+Il modo in cui appaiono gli indicatori di scorrimento (indicatori che mostrano che il contenuto si può ancora scorrere in una determinata direzione).
 
 .. rst-class:: classref-item-separator
 
@@ -752,7 +752,7 @@ The way which scroll hints (indicators that show that the content can still be s
 - |void| **set_select_mode**\ (\ value\: :ref:`SelectMode<enum_ItemList_SelectMode>`\ )
 - :ref:`SelectMode<enum_ItemList_SelectMode>` **get_select_mode**\ (\ )
 
-Permette la selezione di uno o più elementi. Vedi le costanti di :ref:`SelectMode<enum_ItemList_SelectMode>`.
+Permette la selezione di una o più voci. Vedi le costanti di :ref:`SelectMode<enum_ItemList_SelectMode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -769,7 +769,7 @@ Permette la selezione di uno o più elementi. Vedi le costanti di :ref:`SelectMo
 - |void| **set_text_overrun_behavior**\ (\ value\: :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>`\ )
 - :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **get_text_overrun_behavior**\ (\ )
 
-Il comportamento di ritaglio quando il testo supera il rettangolo di delimitazione di un elemento.
+Il comportamento di ritaglio quando il testo supera il rettangolo di delimitazione di una voce.
 
 .. rst-class:: classref-item-separator
 
@@ -786,7 +786,7 @@ Il comportamento di ritaglio quando il testo supera il rettangolo di delimitazio
 - |void| **set_tile_scroll_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_hint_tiled**\ (\ )
 
-If ``true``, the scroll hint texture will be tiled instead of stretched. See :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`.
+Se ``true``, la texture degli indicatori di scorrimento sarà ripetuta anziché allungata. Vedi :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -803,9 +803,9 @@ If ``true``, the scroll hint texture will be tiled instead of stretched. See :re
 - |void| **set_wraparound_items**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_wraparound_items**\ (\ )
 
-Se ``true``, il controllo sposterà automaticamente gli elementi in una nuova riga per adattarne il contenuto. Vedi anche :ref:`HFlowContainer<class_HFlowContainer>` per questo comportamento.
+Se ``true``, il controllo sposterà automaticamente le voci in una nuova riga per adattarne il contenuto. Vedi anche :ref:`HFlowContainer<class_HFlowContainer>` per questo comportamento.
 
-Se ``false``, il controllo aggiungerà una barra di scorrimento orizzontale per rendere visibili tutti gli elementi.
+Se ``false``, il controllo aggiungerà una barra di scorrimento orizzontale per rendere visibili tutte le voci.
 
 .. rst-class:: classref-section-separator
 
@@ -822,7 +822,7 @@ Descrizioni dei metodi
 
 :ref:`int<class_int>` **add_icon_item**\ (\ icon\: :ref:`Texture2D<class_Texture2D>`, selectable\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_add_icon_item>`
 
-Aggiunge un elemento all'elenco di elementi, senza testo, solo un'icona. Restituisce l'indice di un elemento aggiunto.
+Aggiunge una voce all'elenco delle voci, senza testo, solo un'icona. Restituisce l'indice di una voce aggiunta.
 
 .. rst-class:: classref-item-separator
 
@@ -834,11 +834,11 @@ Aggiunge un elemento all'elenco di elementi, senza testo, solo un'icona. Restitu
 
 :ref:`int<class_int>` **add_item**\ (\ text\: :ref:`String<class_String>`, icon\: :ref:`Texture2D<class_Texture2D>` = null, selectable\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_add_item>`
 
-Aggiunge un elemento all'elenco di elementi, con il testo specificato. Restituisce l'indice di un elemento aggiunto.
+Aggiunge una voce all'elenco delle voci, con il testo specificato. Restituisce l'indice di una voce aggiunta.
 
-Specifica un ``icon``, oppure usa ``null`` come ``icon`` per un elemento senza icona.
+Specifica un ``icon``, oppure usa ``null`` come ``icon`` per una voce senza icona.
 
-Se ``selectable`` è ``true``, l'elemento sarà selezionabile.
+Se ``selectable`` è ``true``, la voce sarà selezionabile.
 
 .. rst-class:: classref-item-separator
 
@@ -850,9 +850,9 @@ Se ``selectable`` è ``true``, l'elemento sarà selezionabile.
 
 |void| **center_on_current**\ (\ center_verically\: :ref:`bool<class_bool>` = true, center_horizontally\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_center_on_current>`
 
-Ensures the currently selected item (the first selected item if multiple selection is enabled) is visible, adjusting the scroll position as necessary to place the item at the center of the list if possible. See also :ref:`ensure_current_is_visible()<class_ItemList_method_ensure_current_is_visible>`.
+Garantisce la visibilità della voce attualmente selezionata (la prima voce selezionato se la selezione multipla è abilitata), regolando la posizione di scorrimento se necessario per posizionare la voce al centro dell'elenco, se possibile. Vedi anche :ref:`ensure_current_is_visible()<class_ItemList_method_ensure_current_is_visible>`.
 
-Fails and prints an error if both arguments are ``false``.
+Se entrambi gli argomenti sono ``false``, fallisce e stampa un errore.
 
 .. rst-class:: classref-item-separator
 
@@ -864,7 +864,7 @@ Fails and prints an error if both arguments are ``false``.
 
 |void| **clear**\ (\ ) :ref:`🔗<class_ItemList_method_clear>`
 
-Rimuove tutti gli elementi dall'elenco.
+Rimuove tutte le voci dall'elenco.
 
 .. rst-class:: classref-item-separator
 
@@ -876,7 +876,7 @@ Rimuove tutti gli elementi dall'elenco.
 
 |void| **deselect**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_method_deselect>`
 
-Assicura che l'elemento associato all'indice specificato non sia selezionato.
+Assicura che la voce associata all'indice specificato non sia selezionata.
 
 .. rst-class:: classref-item-separator
 
@@ -888,7 +888,7 @@ Assicura che l'elemento associato all'indice specificato non sia selezionato.
 
 |void| **deselect_all**\ (\ ) :ref:`🔗<class_ItemList_method_deselect_all>`
 
-Assicura che nessun elemento sia selezionato.
+Assicura che nessuna voce sia selezionata.
 
 .. rst-class:: classref-item-separator
 
@@ -900,7 +900,7 @@ Assicura che nessun elemento sia selezionato.
 
 |void| **ensure_current_is_visible**\ (\ ) :ref:`🔗<class_ItemList_method_ensure_current_is_visible>`
 
-Ensures the currently selected item (the first selected item if multiple selection is enabled) is visible, adjusting the scroll position as necessary. See also :ref:`center_on_current()<class_ItemList_method_center_on_current>`.
+Garantisce la visibilità della voce attualmente selezionata (la prima voce selezionata se la selezione multipla è abilitata), regolando la posizione di scorrimento se necessario. Vedi anche :ref:`center_on_current()<class_ItemList_method_center_on_current>`.
 
 .. rst-class:: classref-item-separator
 
@@ -912,7 +912,7 @@ Ensures the currently selected item (the first selected item if multiple selecti
 
 |void| **force_update_list_size**\ (\ ) :ref:`🔗<class_ItemList_method_force_update_list_size>`
 
-Forza un aggiornamento delle dimensioni dell'elenco in base ai suoi elementi. Ciò avviene automaticamente ogni volta che le dimensioni degli elementi o altre impostazioni rilevanti come :ref:`auto_height<class_ItemList_property_auto_height>` cambiano. Il metodo può essere utilizzato per attivare l'aggiornamento prima del passaggio successivo di disegno.
+Forza un aggiornamento delle dimensioni dell'elenco in base alle sue voci. Ciò avviene automaticamente ogni volta che le dimensioni delle voci o altre impostazioni rilevanti come :ref:`auto_height<class_ItemList_property_auto_height>` cambiano. Il metodo può servire per attivare l'aggiornamento prima del passaggio successivo di disegno.
 
 .. rst-class:: classref-item-separator
 
@@ -938,9 +938,9 @@ Restituisce la barra di scorrimento orizzontale.
 
 :ref:`int<class_int>` **get_item_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`, exact\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ItemList_method_get_item_at_position>`
 
-Restituisce l'indice dell'elemento nella posizione ``position``.
+Restituisce l'indice della voce nella posizione ``position``.
 
-Se non c'è alcun elemento in quel punto, verrà restituito -1 se ``exact`` è ``true``, altrimenti verrà restituito l'indice dell'elemento più vicino.
+Se non c'è alcuna voce in quel punto, verrà restituito -1 se ``exact`` è ``true``, altrimenti verrà restituito l'indice della voce più vicina.
 
 \ **Nota:** Il valore restituito non è affidabile se chiamato subito dopo aver modificato l'**ItemList**, prima che sia ridisegnato nel frame successivo.
 
@@ -954,7 +954,7 @@ Se non c'è alcun elemento in quel punto, verrà restituito -1 se ``exact`` è `
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_item_auto_translate_mode**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_auto_translate_mode>`
 
-Restituisce la modalità di traduzione automatica dell'elemento.
+Restituisce la modalità di traduzione automatica della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -966,7 +966,7 @@ Restituisce la modalità di traduzione automatica dell'elemento.
 
 :ref:`Color<class_Color>` **get_item_custom_bg_color**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_custom_bg_color>`
 
-Restituisce il colore di sfondo personalizzato dell'elemento specificato dall'indice ``idx``.
+Restituisce il colore di sfondo personalizzato della voce specificata dall'indice ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -978,7 +978,7 @@ Restituisce il colore di sfondo personalizzato dell'elemento specificato dall'in
 
 :ref:`Color<class_Color>` **get_item_custom_fg_color**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_custom_fg_color>`
 
-Restituisce il colore di primo piano personalizzato dell'elemento specificato dall'indice ``idx``.
+Restituisce il colore di primo piano personalizzato della voce specificata dall'indice ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -1002,7 +1002,7 @@ Restituisce l'icona associata all'indice specificato.
 
 :ref:`Color<class_Color>` **get_item_icon_modulate**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_icon_modulate>`
 
-Restituisce un :ref:`Color<class_Color>` che modula l'icona dell'elemento all'indice specificato.
+Restituisce il :ref:`Color<class_Color>` che modula l'icona della voce all'indice specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -1014,7 +1014,7 @@ Restituisce un :ref:`Color<class_Color>` che modula l'icona dell'elemento all'in
 
 :ref:`Rect2<class_Rect2>` **get_item_icon_region**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_icon_region>`
 
-Restituisce la regione dell'icona utilizzata dell'elemento. Se la regione non ha area, l'intera icona sarà utilizzata.
+Restituisce la regione utilizzata dell'icona della voce. Se la regione non ha area, l'intera icona sarà utilizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -1026,7 +1026,7 @@ Restituisce la regione dell'icona utilizzata dell'elemento. Se la regione non ha
 
 :ref:`String<class_String>` **get_item_language**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_language>`
 
-Restituisce il codice di lingua di testo dell'elemento.
+Restituisce il codice lingua del testo per la voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1050,7 +1050,7 @@ Restituisce il valore dei metadati dell'indice specificato.
 
 :ref:`Rect2<class_Rect2>` **get_item_rect**\ (\ idx\: :ref:`int<class_int>`, expand\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_ItemList_method_get_item_rect>`
 
-Restituisce la posizione e le dimensioni dell'elemento con l'indice specificato, nel sistema di coordinate del nodo **ItemList**. Se ``expand`` è ``true`` l'ultima colonna si espande per riempire il resto della riga.
+Restituisce la posizione e le dimensioni della voce con l'indice specificato, nel sistema di coordinate del nodo **ItemList**. Se ``expand`` è ``true`` l'ultima colonna si espande per riempire il resto della riga.
 
 \ **Nota:** Il valore restituito non è affidabile se chiamato subito dopo aver modificato l'**ItemList**, prima che sia ridisegnato nel frame successivo.
 
@@ -1076,7 +1076,7 @@ Restituisce il testo associato all'indice specificato.
 
 :ref:`TextDirection<enum_Control_TextDirection>` **get_item_text_direction**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_text_direction>`
 
-Restituisce la direzione di scrittura della base di testo dell'elemento.
+Restituisce la direzione base di scrittura per il testo della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1100,7 +1100,7 @@ Restituisce il testo del tooltip associato all'indice specificato.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_selected_items**\ (\ ) :ref:`🔗<class_ItemList_method_get_selected_items>`
 
-Restituisce un array con gli indici degli elementi selezionati.
+Restituisce un array con gli indici delle voci selezionate.
 
 .. rst-class:: classref-item-separator
 
@@ -1126,7 +1126,7 @@ Restituisce la barra di scorrimento verticale.
 
 :ref:`bool<class_bool>` **is_anything_selected**\ (\ ) :ref:`🔗<class_ItemList_method_is_anything_selected>`
 
-Restituisce ``true`` se uno o più elementi sono selezionati.
+Restituisce ``true`` se una o più voci sono selezionate.
 
 .. rst-class:: classref-item-separator
 
@@ -1138,7 +1138,7 @@ Restituisce ``true`` se uno o più elementi sono selezionati.
 
 :ref:`bool<class_bool>` **is_item_disabled**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_is_item_disabled>`
 
-Restituisce ``true`` se l'elemento all'indice specificato è disabilitato.
+Restituisce ``true`` se la voce all'indice specificato è disabilitata.
 
 .. rst-class:: classref-item-separator
 
@@ -1162,7 +1162,7 @@ Restituisce ``true`` se l'icona dell'oggetto sarà disegnata trasposta, ovvero g
 
 :ref:`bool<class_bool>` **is_item_selectable**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_is_item_selectable>`
 
-Restituisce ``true`` se l'elemento all'indice specificato è selezionabile.
+Restituisce ``true`` se la voce all'indice specificato è selezionabile.
 
 .. rst-class:: classref-item-separator
 
@@ -1174,7 +1174,7 @@ Restituisce ``true`` se l'elemento all'indice specificato è selezionabile.
 
 :ref:`bool<class_bool>` **is_item_tooltip_enabled**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_is_item_tooltip_enabled>`
 
-Restituisce ``true`` se il tooltip è abilitato per l'indice dell'elemento specificato.
+Restituisce ``true`` se il tooltip è abilitato per la voce all'indice specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -1186,7 +1186,7 @@ Restituisce ``true`` se il tooltip è abilitato per l'indice dell'elemento speci
 
 :ref:`bool<class_bool>` **is_selected**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_is_selected>`
 
-Restituisce ``true`` se l'elemento all'indice specificato è attualmente selezionato.
+Restituisce ``true`` se la voce all'indice specificato è attualmente selezionata.
 
 .. rst-class:: classref-item-separator
 
@@ -1198,7 +1198,7 @@ Restituisce ``true`` se l'elemento all'indice specificato è attualmente selezio
 
 |void| **move_item**\ (\ from_idx\: :ref:`int<class_int>`, to_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_method_move_item>`
 
-Sposta l'elemento dall'indice ``from_idx`` a ``to_idx``.
+Sposta la voce dall'indice ``from_idx`` all'indice ``to_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -1210,7 +1210,7 @@ Sposta l'elemento dall'indice ``from_idx`` a ``to_idx``.
 
 |void| **remove_item**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_method_remove_item>`
 
-Rimuove l'elemento specificato dall'indice ``idx`` dall'elenco.
+Rimuove la voce specificata dall'indice ``idx`` dall'elenco.
 
 .. rst-class:: classref-item-separator
 
@@ -1222,9 +1222,9 @@ Rimuove l'elemento specificato dall'indice ``idx`` dall'elenco.
 
 |void| **select**\ (\ idx\: :ref:`int<class_int>`, single\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_select>`
 
-Selects the item at the specified index.
+Seleziona la voce all'indice specificato.
 
-\ **Note:** This method does not trigger the item selection signal.
+\ **Nota:** Questo metodo non attiva il segnale di selezione della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1236,9 +1236,9 @@ Selects the item at the specified index.
 
 |void| **set_item_auto_translate_mode**\ (\ idx\: :ref:`int<class_int>`, mode\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ ) :ref:`🔗<class_ItemList_method_set_item_auto_translate_mode>`
 
-Imposta la modalità di traduzione automatica dell'elemento associato all'indice specificato.
+Imposta la modalità di traduzione automatica della voce associata all'indice specificato.
 
-Gli elementi utilizzano :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>` come predefinito, il quale utilizza la stessa modalità di traduzione automatica dell'**ItemList**.
+Le voci utilizzano :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>` come predefinito, la quale utilizza la stessa modalità di traduzione automatica dell'**ItemList**.
 
 .. rst-class:: classref-item-separator
 
@@ -1250,7 +1250,7 @@ Gli elementi utilizzano :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_consta
 
 |void| **set_item_custom_bg_color**\ (\ idx\: :ref:`int<class_int>`, custom_bg_color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ItemList_method_set_item_custom_bg_color>`
 
-Imposta il colore di sfondo dell'elemento specificato dall'indice ``idx`` sul :ref:`Color<class_Color>` specificato.
+Imposta il colore di sfondo della voce specificata dall'indice ``idx`` sul :ref:`Color<class_Color>` specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -1262,7 +1262,7 @@ Imposta il colore di sfondo dell'elemento specificato dall'indice ``idx`` sul :r
 
 |void| **set_item_custom_fg_color**\ (\ idx\: :ref:`int<class_int>`, custom_fg_color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ItemList_method_set_item_custom_fg_color>`
 
-Imposta il colore di primo piano dell'elemento specificato dall'indice ``idx`` sul :ref:`Color<class_Color>` specificato.
+Imposta il colore di primo piano della voce specificata dall'indice ``idx`` sul :ref:`Color<class_Color>` specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -1274,9 +1274,9 @@ Imposta il colore di primo piano dell'elemento specificato dall'indice ``idx`` s
 
 |void| **set_item_disabled**\ (\ idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ItemList_method_set_item_disabled>`
 
-Disabilita (o abilita) l'elemento all'indice specificato.
+Disabilita (o abilita) la voce all'indice specificato.
 
-Gli elementi disabilitati non possono essere selezionati e non attivano segnali di attivazione (quando si clicca due volte o si preme :kbd:`Invio`).
+Le voci disabilitate non possono essere selezionate e non attivano segnali di attivazione (quando si clicca due volte o si preme :kbd:`Invio`).
 
 .. rst-class:: classref-item-separator
 
@@ -1300,7 +1300,7 @@ Imposta (o sostituisce) l'icona :ref:`Texture2D<class_Texture2D>` associata all'
 
 |void| **set_item_icon_modulate**\ (\ idx\: :ref:`int<class_int>`, modulate\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ItemList_method_set_item_icon_modulate>`
 
-Imposta un :ref:`Color<class_Color>` di modulazione dell'elemento associato all'indice specificato.
+Imposta un :ref:`Color<class_Color>` di modulazione della voce associata all'indice specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -1312,7 +1312,7 @@ Imposta un :ref:`Color<class_Color>` di modulazione dell'elemento associato all'
 
 |void| **set_item_icon_region**\ (\ idx\: :ref:`int<class_int>`, rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_ItemList_method_set_item_icon_region>`
 
-Imposta la regione dell'icona dell'elemento utilizzata. Sarà utilizzata l'intera icona se la regione non ha area.
+Imposta la regione utilizzata dell'icona della voce. Sarà utilizzata l'intera icona se la regione non ha area.
 
 .. rst-class:: classref-item-separator
 
@@ -1324,7 +1324,7 @@ Imposta la regione dell'icona dell'elemento utilizzata. Sarà utilizzata l'inter
 
 |void| **set_item_icon_transposed**\ (\ idx\: :ref:`int<class_int>`, transposed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ItemList_method_set_item_icon_transposed>`
 
-Imposta se l'icona dell'elemento sarà disegnata trasposta.
+Imposta se l'icona della voce sarà disegnata trasposta.
 
 .. rst-class:: classref-item-separator
 
@@ -1336,7 +1336,7 @@ Imposta se l'icona dell'elemento sarà disegnata trasposta.
 
 |void| **set_item_language**\ (\ idx\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ItemList_method_set_item_language>`
 
-Sets the language code of the text for the item at the given index to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+Imposta il codice lingua del testo della voce all'indice specificato su ``language``. Serve per gli algoritmi di interruzione di riga e di formazione del testo. Se ``language`` è vuoto, viene utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -1348,7 +1348,7 @@ Sets the language code of the text for the item at the given index to ``language
 
 |void| **set_item_metadata**\ (\ idx\: :ref:`int<class_int>`, metadata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ItemList_method_set_item_metadata>`
 
-Imposta un valore (di qualsiasi tipo) da memorizzare con l'elemento associato all'indice specificato.
+Imposta un valore (di qualsiasi tipo) da memorizzare con la voce associata all'indice specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -1360,7 +1360,7 @@ Imposta un valore (di qualsiasi tipo) da memorizzare con l'elemento associato al
 
 |void| **set_item_selectable**\ (\ idx\: :ref:`int<class_int>`, selectable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ItemList_method_set_item_selectable>`
 
-Permette o impedisce la selezione dell'elemento associato all'indice specificato.
+Permette o impedisce la selezione della voce associata all'indice specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -1372,7 +1372,7 @@ Permette o impedisce la selezione dell'elemento associato all'indice specificato
 
 |void| **set_item_text**\ (\ idx\: :ref:`int<class_int>`, text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ItemList_method_set_item_text>`
 
-Imposta il testo dell'elemento associato all'indice specificato.
+Imposta il testo della voce associata all'indice specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -1384,7 +1384,7 @@ Imposta il testo dell'elemento associato all'indice specificato.
 
 |void| **set_item_text_direction**\ (\ idx\: :ref:`int<class_int>`, direction\: :ref:`TextDirection<enum_Control_TextDirection>`\ ) :ref:`🔗<class_ItemList_method_set_item_text_direction>`
 
-Imposta la direzione di scrittura della base di testo dell'elemento.
+Imposta la direzione base di scrittura del testo per la voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1396,7 +1396,7 @@ Imposta la direzione di scrittura della base di testo dell'elemento.
 
 |void| **set_item_tooltip**\ (\ idx\: :ref:`int<class_int>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ItemList_method_set_item_tooltip>`
 
-Imposta il testo del tooltip per l'elemento associato all'indice specificato.
+Imposta il testo del tooltip per la voce associata all'indice specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -1408,7 +1408,7 @@ Imposta il testo del tooltip per l'elemento associato all'indice specificato.
 
 |void| **set_item_tooltip_enabled**\ (\ idx\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ItemList_method_set_item_tooltip_enabled>`
 
-Imposta se il tooltip è abilitato per l'indice dell'elemento specificato.
+Imposta se il tooltip è abilitato per l'indice della voce specificata.
 
 .. rst-class:: classref-item-separator
 
@@ -1420,7 +1420,7 @@ Imposta se il tooltip è abilitato per l'indice dell'elemento specificato.
 
 |void| **sort_items_by_text**\ (\ ) :ref:`🔗<class_ItemList_method_sort_items_by_text>`
 
-Ordina gli elementi nell'elenco in base al loro testo.
+Ordina le voci nell'elenco in base al loro testo.
 
 .. rst-class:: classref-section-separator
 
@@ -1437,7 +1437,7 @@ Descrizioni delle proprietà del tema
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.65, 0.65, 0.65, 1)`` :ref:`🔗<class_ItemList_theme_color_font_color>`
 
-Il :ref:`Color<class_Color>` predefinito del testo dell'elemento.
+Il :ref:`Color<class_Color>` predefinito del testo della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1449,7 +1449,7 @@ Il :ref:`Color<class_Color>` predefinito del testo dell'elemento.
 
 :ref:`Color<class_Color>` **font_hovered_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_ItemList_theme_color_font_hovered_color>`
 
-Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse sull'elemento e non è ancora selezionato.
+Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse sulla voce e non è ancora selezionata.
 
 .. rst-class:: classref-item-separator
 
@@ -1461,7 +1461,7 @@ Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse sull'
 
 :ref:`Color<class_Color>` **font_hovered_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_ItemList_theme_color_font_hovered_selected_color>`
 
-Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse sull'elemento ed è selezionato.
+Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse sulla voce ed è selezionata.
 
 .. rst-class:: classref-item-separator
 
@@ -1473,7 +1473,7 @@ Il :ref:`Color<class_Color>` del testo utilizzato quando si passa il mouse sull'
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ItemList_theme_color_font_outline_color>`
 
-La tinta del contorno di testo dell'elemento.
+La tinta del contorno di testo della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1485,7 +1485,7 @@ La tinta del contorno di testo dell'elemento.
 
 :ref:`Color<class_Color>` **font_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_ItemList_theme_color_font_selected_color>`
 
-Il :ref:`Color<class_Color>` del testo utilizzato quando l'elemento è selezionato, ma il mouse non vi è sopra.
+Il :ref:`Color<class_Color>` del testo utilizzato quando la voce è selezionata, ma il mouse non vi è sopra.
 
 .. rst-class:: classref-item-separator
 
@@ -1497,7 +1497,7 @@ Il :ref:`Color<class_Color>` del testo utilizzato quando l'elemento è seleziona
 
 :ref:`Color<class_Color>` **guide_color** = ``Color(0.7, 0.7, 0.7, 0.25)`` :ref:`🔗<class_ItemList_theme_color_guide_color>`
 
-Il :ref:`Color<class_Color>` della linea guida. La linea guida è una linea tracciata tra ogni riga di elementi.
+Il :ref:`Color<class_Color>` della linea guida. La linea guida è una linea tracciata tra ogni riga di voci.
 
 .. rst-class:: classref-item-separator
 
@@ -1509,7 +1509,7 @@ Il :ref:`Color<class_Color>` della linea guida. La linea guida è una linea trac
 
 :ref:`Color<class_Color>` **scroll_hint_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ItemList_theme_color_scroll_hint_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint<class_ItemList_theme_icon_scroll_hint>` texture.
+:ref:`Color<class_Color>` utilizzato per modulare la texture :ref:`scroll_hint<class_ItemList_theme_icon_scroll_hint>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1521,7 +1521,7 @@ Il :ref:`Color<class_Color>` della linea guida. La linea guida è una linea trac
 
 :ref:`int<class_int>` **h_separation** = ``4`` :ref:`🔗<class_ItemList_theme_constant_h_separation>`
 
-La spaziatura orizzontale tra gli elementi.
+La spaziatura orizzontale tra le voci.
 
 .. rst-class:: classref-item-separator
 
@@ -1533,7 +1533,7 @@ La spaziatura orizzontale tra gli elementi.
 
 :ref:`int<class_int>` **icon_margin** = ``4`` :ref:`🔗<class_ItemList_theme_constant_icon_margin>`
 
-La spaziatura tra l'icona dell'elemento e il testo.
+La spaziatura tra l'icona della voce e il testo.
 
 .. rst-class:: classref-item-separator
 
@@ -1557,7 +1557,7 @@ La spaziatura verticale tra ogni riga di testo.
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_ItemList_theme_constant_outline_size>`
 
-La dimensione del contorno del testo dell'elemento.
+La dimensione del contorno del testo della voce.
 
 \ **Nota:** Se si utilizza un font con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` abilitato, il suo :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` deve essere impostato su almeno il *doppio* del valore di :ref:`outline_size<class_ItemList_theme_constant_outline_size>` affinché il rendering del contorno appaia corretto. Altrimenti, il contorno potrebbe apparire troncato prima del previsto.
 
@@ -1571,7 +1571,7 @@ La dimensione del contorno del testo dell'elemento.
 
 :ref:`int<class_int>` **v_separation** = ``4`` :ref:`🔗<class_ItemList_theme_constant_v_separation>`
 
-La spaziatura verticale tra gli elementi.
+La spaziatura verticale tra le voci.
 
 .. rst-class:: classref-item-separator
 
@@ -1583,7 +1583,7 @@ La spaziatura verticale tra gli elementi.
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_ItemList_theme_font_font>`
 
-Il :ref:`Font<class_Font>` del testo dell'elemento.
+Il :ref:`Font<class_Font>` del testo della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1595,7 +1595,7 @@ Il :ref:`Font<class_Font>` del testo dell'elemento.
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_ItemList_theme_font_size_font_size>`
 
-La dimensione del testo dell'elemento.
+La dimensione del testo della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1607,7 +1607,7 @@ La dimensione del testo dell'elemento.
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint** :ref:`🔗<class_ItemList_theme_icon_scroll_hint>`
 
-The indicator that will be shown when the content can still be scrolled. See :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`.
+L'indicatore che apparirà quando il contenuto si può ancora scorrere. Vedi :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1643,7 +1643,7 @@ Lo :ref:`StyleBox<class_StyleBox>` utilizzato per il cursore, quando l'**ItemLis
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_ItemList_theme_style_focus>`
 
-The focused style for the **ItemList**, drawn on top of everything.
+Lo stile focalizzato per l'**ItemList**, disegnato sopra ogni cosa.
 
 .. rst-class:: classref-item-separator
 
@@ -1655,7 +1655,7 @@ The focused style for the **ItemList**, drawn on top of everything.
 
 :ref:`StyleBox<class_StyleBox>` **hovered** :ref:`🔗<class_ItemList_theme_style_hovered>`
 
-Lo :ref:`StyleBox<class_StyleBox>` per gli elementi su cui si passa il mouse, ma non sono selezionati.
+Lo :ref:`StyleBox<class_StyleBox>` per le voci su cui si passa il mouse, ma non sono selezionate.
 
 .. rst-class:: classref-item-separator
 
@@ -1667,7 +1667,7 @@ Lo :ref:`StyleBox<class_StyleBox>` per gli elementi su cui si passa il mouse, ma
 
 :ref:`StyleBox<class_StyleBox>` **hovered_selected** :ref:`🔗<class_ItemList_theme_style_hovered_selected>`
 
-Lo :ref:`StyleBox<class_StyleBox>` per gli elementi selezionati e passati dal mouse, quando l'**ItemList** non è focalizzato.
+Lo :ref:`StyleBox<class_StyleBox>` per le voci selezionate e passate dal mouse, quando l'**ItemList** non è focalizzato.
 
 .. rst-class:: classref-item-separator
 
@@ -1679,7 +1679,7 @@ Lo :ref:`StyleBox<class_StyleBox>` per gli elementi selezionati e passati dal mo
 
 :ref:`StyleBox<class_StyleBox>` **hovered_selected_focus** :ref:`🔗<class_ItemList_theme_style_hovered_selected_focus>`
 
-Lo :ref:`StyleBox<class_StyleBox>` per gli elementi selezionati e passati dal mouse, quando l'**ItemList** è focalizzato.
+Lo :ref:`StyleBox<class_StyleBox>` per le voci selezionate e passate dal mouse, quando l'**ItemList** è focalizzato.
 
 .. rst-class:: classref-item-separator
 
@@ -1703,7 +1703,7 @@ Lo stile di sfondo per l'**ItemList**.
 
 :ref:`StyleBox<class_StyleBox>` **selected** :ref:`🔗<class_ItemList_theme_style_selected>`
 
-Lo :ref:`StyleBox<class_StyleBox>` per gli elementi selezionati, quando l'**ItemList** non è focalizzato.
+Lo :ref:`StyleBox<class_StyleBox>` per le voci selezionate, quando l'**ItemList** non è focalizzato.
 
 .. rst-class:: classref-item-separator
 
@@ -1715,13 +1715,13 @@ Lo :ref:`StyleBox<class_StyleBox>` per gli elementi selezionati, quando l'**Item
 
 :ref:`StyleBox<class_StyleBox>` **selected_focus** :ref:`🔗<class_ItemList_theme_style_selected_focus>`
 
-Lo :ref:`StyleBox<class_StyleBox>` per gli elementi selezionati, quando l'**ItemList** è focalizzato.
+Lo :ref:`StyleBox<class_StyleBox>` per le voci selezionate, quando l'**ItemList** è focalizzato.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

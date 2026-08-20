@@ -493,11 +493,11 @@ On other platforms, or if the requested drive does not exist, returns an empty S
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_files**\ (\ ) :ref:`🔗<class_DirAccess_method_get_files>`
 
-Returns a :ref:`PackedStringArray<class_PackedStringArray>` containing filenames of the directory contents, excluding directories. The array is sorted alphabetically.
+Devuelve un :ref:`PackedStringArray<class_PackedStringArray>` que contiene los nombres de archivo del contenido del directorio, excluyendo directorios. El array se ordena alfabéticamente.
 
-Affected by :ref:`include_hidden<class_DirAccess_property_include_hidden>`.
+Afectado por :ref:`include_hidden<class_DirAccess_property_include_hidden>`.
 
-\ **Note:** When used on a ``res://`` path in an exported project, only the files actually included in the PCK at the given folder level are returned. In practice, this means that since imported resources are stored in a top-level ``.godot/`` folder, only paths to ``*.gd`` and ``*.import`` files are returned (plus a few files such as ``project.godot`` or ``project.binary`` and the project icon). In an exported project, the list of returned files will also vary depending on whether :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` is ``true``.
+\ **Nota:** Cuando se usa en una ruta ``res://`` en un proyecto exportado, solo se devuelven los archivos realmente incluidos en el PCK en el nivel de carpeta dado. En la práctica, esto significa que, dado que los recursos importados se almacenan en una carpeta de nivel superior ``.godot/``, solo se devuelven las rutas a archivos ``*.gd`` y ``*.import`` (además de algunos archivos como ``project.godot`` o ``project.binary`` y el icono del proyecto). En un proyecto exportado, la lista de archivos devueltos también variará dependiendo de si :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` es ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -509,11 +509,11 @@ Affected by :ref:`include_hidden<class_DirAccess_property_include_hidden>`.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_files_at**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_DirAccess_method_get_files_at>`
 
-Returns a :ref:`PackedStringArray<class_PackedStringArray>` containing filenames of the directory contents, excluding directories, at the given ``path``. The array is sorted alphabetically.
+Devuelve un :ref:`PackedStringArray<class_PackedStringArray>` que contiene los nombres de archivo del contenido del directorio, excluyendo directorios, en la ``path`` dada. El array se ordena alfabéticamente.
 
-Use :ref:`get_files()<class_DirAccess_method_get_files>` if you want more control of what gets included.
+Usa :ref:`get_files()<class_DirAccess_method_get_files>` si quieres más control sobre lo que se incluye.
 
-\ **Note:** When used on a ``res://`` path in an exported project, only the files included in the PCK at the given folder level are returned. In practice, this means that since imported resources are stored in a top-level ``.godot/`` folder, only paths to ``.gd`` and ``.import`` files are returned (plus a few other files, such as ``project.godot`` or ``project.binary`` and the project icon). In an exported project, the list of returned files will also vary depending on :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>`.
+\ **Nota:** Cuando se usa en una ruta ``res://`` en un proyecto exportado, solo se devuelven los archivos incluidos en el PCK en el nivel de carpeta dado. En la práctica, esto significa que, dado que los recursos importados se almacenan en una carpeta de nivel superior ``.godot/``, solo se devuelven las rutas a archivos ``.gd`` y ``.import`` (además de algunos otros archivos, como ``project.godot`` o ``project.binary`` y el icono del proyecto). En un proyecto exportado, la lista de archivos devueltos también variará dependiendo de :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>`.
 
 .. rst-class:: classref-item-separator
 

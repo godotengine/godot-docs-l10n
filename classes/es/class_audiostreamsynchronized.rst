@@ -68,7 +68,7 @@ Constantes
 
 **MAX_STREAMS** = ``32`` :ref:`🔗<class_AudioStreamSynchronized_constant_MAX_STREAMS>`
 
-Maximum amount of streams that can be synchronized.
+Númeor máximo de transmisiones que se pueden sincronizar.
 
 .. rst-class:: classref-section-separator
 
@@ -143,7 +143,7 @@ Set one of the synchronized streams, by index.
 
 |void| **set_sync_stream_volume**\ (\ stream_index\: :ref:`int<class_int>`, volume_db\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioStreamSynchronized_method_set_sync_stream_volume>`
 
-Set the volume of one of the synchronized streams, by index.
+Establezca el volumen de una de las transmisiones sincronizadas, mediante su índice.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

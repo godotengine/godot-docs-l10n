@@ -14,9 +14,9 @@ Adds a high-shelf filter to an audio bus.
 Descripción
 ----------------------
 
-A "high-shelf" filter controls the gain of all frequencies above :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
+Un filtro de "estantería alta" controla la ganancia de todas las frecuencias superiores a :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>`.
 
-This filter can be used to increase or decrease clarity of a sound.
+Este filtro puede utilizarse para aumentar o reducir la claridad de un sonido.
 
 .. rst-class:: classref-introduction-group
 

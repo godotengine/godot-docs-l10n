@@ -91,7 +91,7 @@ Without requiring much code, a timer node can be added and configured in the edi
 
 **timeout**\ (\ ) :ref:`🔗<class_Timer_signal_timeout>`
 
-Emitted when the timer reaches the end.
+當計時器計時完成時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -144,11 +144,11 @@ Update the timer every process (rendered) frame (see :ref:`Node.NOTIFICATION_INT
 - |void| **set_autostart**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_autostart**\ (\ )
 
-If ``true``, the timer will start immediately when it enters the scene tree.
+若爲 ``true``\ ，計時器會在進入場景樹時自動啟動。
 
-\ **Note:** After the timer enters the tree, this property is automatically set to ``false``.
+\ **注意：** 計時器進入場景樹後，此屬性會自動設定爲 ``false``\ 。
 
-\ **Note:** This property does nothing when the timer is running in the editor.
+\ **注意：** 計時器在編輯器中執行時，此屬性沒有任何效果。
 
 .. rst-class:: classref-item-separator
 

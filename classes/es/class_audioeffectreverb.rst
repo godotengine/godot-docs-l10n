@@ -16,9 +16,9 @@ Emulates an echo by playing a blurred version of the input audio.
 Descripción
 ----------------------
 
-A "reverb" effect plays the input audio back continuously, decaying over a period of time. It simulates sounds in different kinds of spaces, ranging from small rooms, to big caverns.
+Un efecto "reverb" reproduce el audio de entrada de forma continua, con un decaimiento a lo largo del tiempo. Simula sonidos en diferentes tipos de espacios, desde habitaciones pequeñas hasta grandes cavernas.
 
-See also :ref:`AudioEffectDelay<class_AudioEffectDelay>` for a non-blurry type of echo.
+Consulta también :ref:`AudioEffectDelay<class_AudioEffectDelay>` para un tipo de echo no difuso.
 
 .. rst-class:: classref-introduction-group
 

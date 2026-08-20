@@ -14,13 +14,13 @@ Un corpo fisico 3D che simula il comportamento di un'auto.
 Descrizione
 ----------------------
 
-Questo corpo fisico implementa tutta la logica fisica necessaria per simulare un'auto. Si basa sul sistema di veicoli con proiezione di raggi comunemente presente nei motori fisici. Oltre a un :ref:`CollisionShape3D<class_CollisionShape3D>` per il corpo principale del veicolo, bisogna anche aggiungere un nodo :ref:`VehicleWheel3D<class_VehicleWheel3D>` per ogni ruota. Bisognerebbe anche aggiungere un :ref:`MeshInstance3D<class_MeshInstance3D>` a questo nodo per il modello 3D del veicolo, ma questo modello in genere non dovrebbe includere mesh per le ruote. È possibile controllare il veicolo attraverso le proprietà :ref:`brake<class_VehicleBody3D_property_brake>`, :ref:`engine_force<class_VehicleBody3D_property_engine_force>` e :ref:`steering<class_VehicleBody3D_property_steering>`. La posizione o l'orientamento di questo nodo non dovrebbero essere modificati direttamente.
+Questo corpo fisico implementa tutta la logica fisica necessaria per simulare un'auto. Si basa sul sistema di veicoli con proiezione di raggi comunemente presente nei motori fisici. Oltre a un :ref:`CollisionShape3D<class_CollisionShape3D>` per il corpo principale del veicolo, bisogna anche aggiungere un nodo :ref:`VehicleWheel3D<class_VehicleWheel3D>` per ogni ruota. Bisognerebbe anche aggiungere un :ref:`MeshInstance3D<class_MeshInstance3D>` a questo nodo per il modello 3D del veicolo, ma questo modello in genere non dovrebbe includere mesh per le ruote. È possibile controllare il veicolo attraverso le proprietà :ref:`brake<class_VehicleBody3D_property_brake>`, :ref:`engine_force<class_VehicleBody3D_property_engine_force>` e :ref:`steering<class_VehicleBody3D_property_steering>`. La posizione o l'orientamento di questo nodo non si dovrebbero modificare direttamente.
 
 \ **Nota:** La direzione in avanti locale per questo nodo è :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`.
 
 \ **Nota:** il punto di origine del VehicleBody3D determinerà il baricentro del veicolo. Per rendere il veicolo più ancorato, il punto di origine è solitamente mantenuto basso, spostando :ref:`CollisionShape3D<class_CollisionShape3D>` e :ref:`MeshInstance3D<class_MeshInstance3D>` verso l'alto.
 
-\ **Nota:** Questa classe presenta problemi noti e non è progettata per fornire una fisica realistica dei veicoli 3D. Se desideri una fisica avanzata dei veicoli, potresti dover scrivere la tua integrazione di fisica tramite :ref:`CharacterBody3D<class_CharacterBody3D>` o :ref:`RigidBody3D<class_RigidBody3D>`.
+\ **Nota:** Questa classe presenta problemi noti e non è progettata per fornire una fisica realistica dei veicoli 3D. Se desideri una fisica avanzata dei veicoli, potresti dover scrivere la tua integrazione fisica tramite :ref:`CharacterBody3D<class_CharacterBody3D>` o :ref:`RigidBody3D<class_RigidBody3D>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -117,7 +117,7 @@ L'angolo di sterzata per il veicolo. Impostando questo valore su un valore diver
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

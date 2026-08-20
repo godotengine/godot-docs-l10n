@@ -553,7 +553,7 @@ Restituisce la modalità di traduzione automatica della colonna.
 
 :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_autowrap_mode>`
 
-Restituisce la modalità di avvolgimento automatico del testo nella colonna ``column``. Per impostazione predefinita è :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`.
+Restituisce la modalità di ritorno a capo automatico del testo nella colonna ``column``. Per impostazione predefinita è :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`.
 
 .. rst-class:: classref-item-separator
 
@@ -759,7 +759,7 @@ Restituisce la dimensione personalizzata del font utilizzata per disegnare il te
 
 :ref:`StyleBox<class_StyleBox>` **get_custom_stylebox**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_custom_stylebox>`
 
-Returns the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the background.
+Restituisce lo :ref:`StyleBox<class_StyleBox>` personalizzato della colonna specificata, utilizzato per disegnare lo sfondo.
 
 .. rst-class:: classref-item-separator
 
@@ -879,7 +879,7 @@ Restituisce l'ordine del nodo nell'albero. Ad esempio, se chiamato sul primo ele
 
 :ref:`String<class_String>` **get_language**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_language>`
 
-Restituisce il codice di lingua di testo dell'elemento.
+Restituisce il codice lingua del testo per la voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1079,7 +1079,7 @@ Restituisce l'allineamento del testo della colonna specificata.
 
 :ref:`TextDirection<enum_Control_TextDirection>` **get_text_direction**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_text_direction>`
 
-Restituisce la direzione di scrittura della base di testo dell'elemento.
+Restituisce la direzione base di scrittura per il testo della voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1353,7 +1353,7 @@ Tutte le colonne utilizzano :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_co
 
 |void| **set_autowrap_mode**\ (\ column\: :ref:`int<class_int>`, autowrap_mode\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ ) :ref:`🔗<class_TreeItem_method_set_autowrap_mode>`
 
-Imposta la modalità di avvolgimento automatico nella colonna ``column``. Se impostato su un valore diverso da :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, il testo è inserito nel rettangolo di delimitazione della cella.
+Imposta la modalità di ritorno a capo automatico nella colonna ``column``. Se impostato su un valore diverso da :ref:`TextServer.AUTOWRAP_OFF<class_TextServer_constant_AUTOWRAP_OFF>`, il testo è inserito nel rettangolo di delimitazione della cella.
 
 .. rst-class:: classref-item-separator
 
@@ -1567,9 +1567,9 @@ Imposta la dimensione personalizzata del font utilizzata per disegnare il testo 
 
 |void| **set_custom_stylebox**\ (\ column\: :ref:`int<class_int>`, stylebox\: :ref:`StyleBox<class_StyleBox>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_stylebox>`
 
-Sets the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the background.
+Imposta lo :ref:`StyleBox<class_StyleBox>` personalizzato della colonna specificata, utilizzato per disegnare lo sfondo.
 
-\ **Note:** If a custom background color is set, the :ref:`StyleBox<class_StyleBox>` will be drawn in front of it.
+\ **Nota:** Se è impostato un colore di sfondo personalizzato, lo :ref:`StyleBox<class_StyleBox>` sarà disegnato davanti ad esso.
 
 .. rst-class:: classref-item-separator
 
@@ -1705,7 +1705,7 @@ Se ``indeterminate`` è ``true``, la colonna ``column`` è contrassegnata come i
 
 |void| **set_language**\ (\ column\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TreeItem_method_set_language>`
 
-Sets the language code of the given ``column``'s text to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+Imposta il codice lingua del testo della colonna ``column`` su ``language``. Serve per gli algoritmi di interruzione di riga e di formazione del testo. Se ``language`` è vuoto, viene utilizzata la localizzazione attuale.
 
 .. rst-class:: classref-item-separator
 
@@ -1827,7 +1827,7 @@ Imposta l'allineamento del testo della colonna specificata su ``text_alignment``
 
 |void| **set_text_direction**\ (\ column\: :ref:`int<class_int>`, direction\: :ref:`TextDirection<enum_Control_TextDirection>`\ ) :ref:`🔗<class_TreeItem_method_set_text_direction>`
 
-Imposta la direzione di scrittura della base di testo dell'elemento.
+Imposta la direzione base di scrittura del testo per la voce.
 
 .. rst-class:: classref-item-separator
 
@@ -1869,7 +1869,7 @@ Decomprime tutti i **TreeItem** necessari per rivelare questo **TreeItem**, ovve
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

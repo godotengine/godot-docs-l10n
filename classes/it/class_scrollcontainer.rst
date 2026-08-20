@@ -199,7 +199,7 @@ Combina :ref:`SCROLL_MODE_AUTO<class_ScrollContainer_constant_SCROLL_MODE_AUTO>`
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_MAXIMIZE_FIRST** = ``5``
 
-Behaves like :ref:`SCROLL_MODE_AUTO<class_ScrollContainer_constant_SCROLL_MODE_AUTO>`, but makes the **ScrollContainer** report a minimum size based on its content (limited by :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` when set on the corresponding axis). This allows it to grow first and only start scrolling once constrained.
+Si comporta come :ref:`SCROLL_MODE_AUTO<class_ScrollContainer_constant_SCROLL_MODE_AUTO>`, ma fa in modo che lo **ScrollContainer** riporti una dimensione minima in base al suo contenuto (limitata da :ref:`Control.custom_maximum_size<class_Control_property_custom_maximum_size>` quando impostato sull'asse corrispondente). Ciò lo consente di espandersi prima e di iniziare a scorrere solo una volta raggiunto il limite.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ScrollContainer_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_DISABLED** = ``0``
 
-Scroll hints will never be shown.
+Gli indicatori di scorrimento non appariranno mai.
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_ALL:
 
@@ -225,7 +225,7 @@ Scroll hints will never be shown.
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_ALL** = ``1``
 
-Scroll hints will be shown at the top and bottom (if vertical), or left and right (if horizontal).
+Gli indicatori di scorrimento appariranno in alto e in basso (se verticale) oppure a sinistra e a destra (se orizzontale).
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_TOP_AND_LEFT:
 
@@ -233,7 +233,7 @@ Scroll hints will be shown at the top and bottom (if vertical), or left and righ
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_TOP_AND_LEFT** = ``2``
 
-Scroll hints will be shown at the top (if vertical), or the left (if horizontal).
+Gli indicatori di scorrimento appariranno in alto (se verticale) oppure a sinistra (se orizzontale).
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_BOTTOM_AND_RIGHT:
 
@@ -241,7 +241,7 @@ Scroll hints will be shown at the top (if vertical), or the left (if horizontal)
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_BOTTOM_AND_RIGHT** = ``3``
 
-Scroll hints will be shown at the bottom (if horizontal), or the right (if horizontal).
+Gli indicatori di scorrimento appariranno in basso (se verticale) oppure a sinistra (se orizzontale).
 
 .. rst-class:: classref-section-separator
 
@@ -331,9 +331,9 @@ Zona morta per lo scorrimento touch. Una zona morta più bassa rende lo scorrime
 - |void| **set_scroll_hint_mode**\ (\ value\: :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>`\ )
 - :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **get_scroll_hint_mode**\ (\ )
 
-The way which scroll hints (indicators that show that the content can still be scrolled in a certain direction) will be shown.
+Il modo in cui appaiono gli indicatori di scorrimento (indicatori che mostrano che il contenuto si può ancora scorrere in una determinata direzione).
 
-\ **Note:** Hints won't be shown if the content can be scrolled both vertically and horizontally.
+\ **Nota:** Gli indicatori non appariranno se il contenuto si può scorrere sia verticalmente sia orizzontalmente.
 
 .. rst-class:: classref-item-separator
 
@@ -374,9 +374,9 @@ Il valore attuale dello scorrimento orizzontale.
 - |void| **set_scroll_horizontal_by_default**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_horizontal_by_default**\ (\ )
 
-If ``true``, the mouse wheel scrolls the view horizontally, and holding :kbd:`Shift` scrolls vertically.
+Se ``true``, la rotellina del mouse scorre la vista orizzontalmente, mentre tenendo premuto :kbd:`Shift` la scorre verticalmente.
 
-If ``false`` (default), the mouse wheel scrolls the view vertically, and holding :kbd:`Shift` scrolls horizontally.
+Se ``false`` (predefinito), la rotellina del mouse scorre la vista verticalmente, mentre tenendo premuto :kbd:`Shift` la scorre orizzontalmente.
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Sostituisce il :ref:`ScrollBar.custom_step<class_ScrollBar_property_custom_step>
 - |void| **set_tile_scroll_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_hint_tiled**\ (\ )
 
-If ``true``, the scroll hint texture will be tiled instead of stretched. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+Se ``true``, la texture degli indicatori di scorrimento sarà ripetuta anziché allungata. Vedi :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -538,7 +538,7 @@ Descrizioni delle proprietà del tema
 
 :ref:`Color<class_Color>` **scroll_hint_horizontal_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_horizontal_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>` texture.
+:ref:`Color<class_Color>` utilizzato per modulare la texture :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`.
 
 .. rst-class:: classref-item-separator
 
@@ -550,7 +550,7 @@ Descrizioni delle proprietà del tema
 
 :ref:`Color<class_Color>` **scroll_hint_vertical_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_vertical_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>` texture.
+:ref:`Color<class_Color>` utilizzato per modulare la texture :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>`.
 
 .. rst-class:: classref-item-separator
 
@@ -562,7 +562,7 @@ Descrizioni delle proprietà del tema
 
 :ref:`int<class_int>` **scrollbar_h_separation** = ``0`` :ref:`🔗<class_ScrollContainer_theme_constant_scrollbar_h_separation>`
 
-The space between the ScrollContainer's vertical scroll bar and its content, in pixels. No space will be added when the content's minimum size is larger than the ScrollContainer's size.
+Lo spazio tra la barra di scorrimento verticale dello ScrollContainer e il suo contenuto, in pixel. Nessuno spazio sarà aggiunto se la dimensione minima del contenuto è maggiore della dimensione dello ScrollContainer.
 
 .. rst-class:: classref-item-separator
 
@@ -574,7 +574,7 @@ The space between the ScrollContainer's vertical scroll bar and its content, in 
 
 :ref:`int<class_int>` **scrollbar_v_separation** = ``0`` :ref:`🔗<class_ScrollContainer_theme_constant_scrollbar_v_separation>`
 
-The space between the ScrollContainer's horizontal scroll bar and its content, in pixels. No space will be added when the content's minimum size is larger than the ScrollContainer's size.
+Lo spazio tra la barra di scorrimento orizzontale dello ScrollContainer e il suo contenuto, in pixel. Nessuno spazio sarà aggiunto se la dimensione minima del contenuto è maggiore della dimensione dello ScrollContainer.
 
 .. rst-class:: classref-item-separator
 
@@ -586,7 +586,7 @@ The space between the ScrollContainer's horizontal scroll bar and its content, i
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint_horizontal** :ref:`🔗<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`
 
-The indicator that will be shown when the content can still be scrolled horizontally. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+L'indicatore che apparirà quando il contenuto si può ancora scorrere orizzontalmente. Vedi :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -598,7 +598,7 @@ The indicator that will be shown when the content can still be scrolled horizont
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint_vertical** :ref:`🔗<class_ScrollContainer_theme_icon_scroll_hint_vertical>`
 
-The indicator that will be shown when the content can still be scrolled vertically. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+L'indicatore che apparirà quando il contenuto si può ancora scorrere verticalmente. Vedi :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +628,7 @@ Lo :ref:`StyleBox<class_StyleBox>` di sfondo del **ScrollContainer**.
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

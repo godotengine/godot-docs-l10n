@@ -14,11 +14,11 @@ TwoBoneIK3D
 Описание
 ----------------
 
-This :ref:`IKModifier3D<class_IKModifier3D>` requires a pole target. It provides deterministic results by constructing a plane from each joint and pole target and finding the intersection of two circles (disks in 3D).
+Этот :ref:`IKModifier3D<class_IKModifier3D>` требует наличия целевого полюса. Он обеспечивает детерминированные результаты, строя плоскость из каждого сустава и целевого полюса и находя пересечение двух окружностей (дисков в 3D).
 
-This IK can handle twist by setting the pole direction. If there are more than one bone between each set bone, their rotations are ignored, and the straight line connecting the root-middle and middle-end joints are treated as virtual bones.
+Этот IK может обрабатывать скручивание, задавая направление полюса. Если между каждой заданной костью находится более одной кости, их вращения игнорируются, а прямая линия, соединяющая корневой, средний и средний конечный суставы, рассматривается как виртуальная кость.
 
-\ **Note:** All the methods in this class take an ``index`` parameter. This parameter specifies which setting list entry to return if the IK has multiple entries (e.g. ``settings/<index>/root_bone_name``).
+\ **Примечание:** Все методы в этом классе принимают параметр ``index``. Этот параметр указывает, какую запись списка настроек возвращать, если IK имеет несколько записей (например, ``settings/<index>/root_bone_name``).
 
 .. rst-class:: classref-reftable-group
 

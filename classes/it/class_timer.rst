@@ -14,20 +14,20 @@ Un timer per il conto alla rovescia.
 Descrizione
 ----------------------
 
-The **Timer** node is a countdown timer and is the simplest way to handle time-based logic in the engine. When a timer reaches the end of its :ref:`wait_time<class_Timer_property_wait_time>`, it will emit the :ref:`timeout<class_Timer_signal_timeout>` signal.
+Il nodo **Timer** è un timer per il conto alla rovescia ed è il modo più semplice per gestire logica basata sul tempo nel motore. Quando un timer raggiunge la fine del suo :ref:`wait_time<class_Timer_property_wait_time>`, emetterà il segnale :ref:`timeout<class_Timer_signal_timeout>`.
 
-After a timer enters the scene tree, it can be manually started with :ref:`start()<class_Timer_method_start>`. A timer node is also started automatically if :ref:`autostart<class_Timer_property_autostart>` is ``true``.
+Dopo che un timer entra nell'albero di scene, lo si può avviare manualmente con :ref:`start()<class_Timer_method_start>`. Inoltre, un nodo timer viene avviato automaticamente se :ref:`autostart<class_Timer_property_autostart>` è ``true``.
 
-Without requiring much code, a timer node can be added and configured in the editor. The :ref:`timeout<class_Timer_signal_timeout>` signal it emits can also be connected through the Signals dock in the editor:
+Senza richiedere molto codice, un nodo timer può essere aggiunto e configurato nell'editor. Il segnale :ref:`timeout<class_Timer_signal_timeout>` che emette si può anche connettere attraverso il pannello Segnali nell'editor:
 
 ::
 
     func _on_timer_timeout():
-        print("Time to attack!")
+        print("È ora di attaccare!")
 
-\ **Note:** To create a one-shot timer without instantiating a node, use :ref:`SceneTree.create_timer()<class_SceneTree_method_create_timer>`.
+\ **Nota:** Per creare un timer a colpo singolo senza istanziare un nodo, usa :ref:`SceneTree.create_timer()<class_SceneTree_method_create_timer>`.
 
-\ **Note:** Timers are affected by :ref:`Engine.time_scale<class_Engine_property_time_scale>` unless :ref:`ignore_time_scale<class_Timer_property_ignore_time_scale>` is ``true``. The higher the time scale, the sooner timers will end. How often a timer processes may depend on the framerate or :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`.
+\ **Nota:** I timer sono influenzati da :ref:`Engine.time_scale<class_Engine_property_time_scale>` a meno che :ref:`ignore_time_scale<class_Timer_property_ignore_time_scale>` non sia ``true``. Più alta è la scala temporale, prima scadranno i timer. La frequenza con cui un timer elabora può dipendere dal frame rate o da :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -304,7 +304,7 @@ Arresta il timer. Vedi anche :ref:`paused<class_Timer_property_paused>`. A diffe
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

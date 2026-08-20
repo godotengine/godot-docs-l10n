@@ -1404,7 +1404,7 @@ F35 鍵。由於 Windows 限制，僅支援 macOS 和 Linux。
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_MENU** = ``4194370``
 
-本文選單鍵。
+環境選單鍵。
 
 .. _class_@GlobalScope_constant_KEY_HYPER:
 
@@ -3344,7 +3344,7 @@ enum **Error**: :ref:`🔗<enum_@GlobalScope_Error>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **ERR_CANT_FORK** = ``29``
 
-無法分叉程序錯誤。
+無法分支處理程序錯誤。
 
 .. _class_@GlobalScope_constant_ERR_INVALID_DATA:
 
@@ -6613,16 +6613,16 @@ Returns the `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>
 
 :ref:`float<class_float>` **move_toward**\ (\ from\: :ref:`float<class_float>`, to\: :ref:`float<class_float>`, delta\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_move_toward>`
 
-將 ``from`` 向 ``to`` 移動，移動的長度是 ``delta``\ 。不會超過 ``to``\ 。
+讓 ``from`` 以 ``delta`` 爲單位接近 ``to``\ 。且不超過 ``to``\ 。
 
-使用負的 ``delta`` 值則向遠離的方向移動。
+使用負的 ``delta`` 值則會遠離。
 
 ::
 
-    move_toward(5, 10, 4)    # Returns 9
-    move_toward(10, 5, 4)    # Returns 6
-    move_toward(5, 10, 9)    # Returns 10
-    move_toward(10, 5, -1.5) # Returns 11.5
+    move_toward(5, 10, 4)    # 回傳 9
+    move_toward(10, 5, 4)    # 回傳 6
+    move_toward(5, 10, 9)    # 回傳 10
+    move_toward(10, 5, -1.5) # 回傳 11.5
 
 .. rst-class:: classref-item-separator
 

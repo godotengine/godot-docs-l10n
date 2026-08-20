@@ -7,16 +7,16 @@ AudioEffectHighPassFilter
 
 **Hereda:** :ref:`AudioEffectFilter<class_AudioEffectFilter>` **<** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a high-pass filter to an audio bus.
+Añade un filtro de paso alto a un bus de audio.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A "high-pass" filter attenuates frequencies lower than :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` and allows higher frequencies to pass unchanged.
+Un filtro "pasa altos" atenúa las frecuencias inferiores a :ref:`AudioEffectFilter.cutoff_hz<class_AudioEffectFilter_property_cutoff_hz>` y permite que las frecuencias superiores pasen sin cambios.
 
-This filter can be used to remove "strength" from a sound, and give low-end space for basses and impact sounds.
+Este filtro puede utilizarse para reducir la "intensidad" de un sonido y dar espacio en las frecuencias bajas para los bajos y los sonidos de impacto.
 
 .. rst-class:: classref-introduction-group
 

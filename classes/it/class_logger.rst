@@ -121,17 +121,17 @@ Inoltre, ``script_backtraces`` fornisce backtrace per ciascuno dei linguaggi di 
 
 |void| **_log_message**\ (\ message\: :ref:`String<class_String>`, error\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_Logger_private_method__log_message>`
 
-Called when a message is logged. If ``error`` is ``true``, then this message was meant to be sent to ``stderr``.
+Chiamato quando viene registrato un messaggio. Se ``error`` è ``true``, significa che il messaggio era destinato a essere inviato a ``stderr``.
 
-\ **Warning:** This method will be called from threads other than the main thread, possibly at the same time, so you will need to have some kind of thread-safety in your implementation of it, like a :ref:`Mutex<class_Mutex>`.
+\ **Attenzione:** Questo metodo verrà chiamato da thread diversi dal thread principale, potenzialmente allo stesso tempo, quindi è necessario implementare un meccanismo di sicurezza per i thread, come ad esempio un :ref:`Mutex<class_Mutex>`.
 
-\ **Note:** Logging another message from this method using functions like :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>` is not supported, as it could cause infinite recursion. These messages will only show up in the console output.
+\ **Nota:** Registrare altri messaggi da questo metodo tramite funzioni come :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>` non è supportato, in quanto potrebbe causare una ricorsione infinita. Questi messaggi appariranno solo nell'output della console.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

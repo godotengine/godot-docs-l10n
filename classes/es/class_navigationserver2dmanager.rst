@@ -7,7 +7,7 @@ NavigationServer2DManager
 
 **Hereda:** :ref:`Object<class_Object>`
 
-A singleton for managing :ref:`NavigationServer2D<class_NavigationServer2D>` implementations.
+Un singleton para administrar implementaciones de :ref:`NavigationServer2D<class_NavigationServer2D>`.
 
 .. rst-class:: classref-introduction-group
 

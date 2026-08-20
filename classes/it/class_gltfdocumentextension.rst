@@ -16,11 +16,11 @@ Classe di estensione :ref:`GLTFDocument<class_GLTFDocument>`.
 Descrizione
 ----------------------
 
-Extends the functionality of the :ref:`GLTFDocument<class_GLTFDocument>` class by allowing you to run arbitrary code at various stages of glTF import or export.
+Estende la funzionalità della classe :ref:`GLTFDocument<class_GLTFDocument>` consentendo di eseguire codice arbitrario in varie fasi dell'importazione o dell'esportazione glTF.
 
-To use, make a new class extending GLTFDocumentExtension, override any methods you need, make an instance of your class, and register it using :ref:`GLTFDocument.register_gltf_document_extension()<class_GLTFDocument_method_register_gltf_document_extension>`.
+Per utilizzarla, crea una nuova classe che estende GLTFDocumentExtension, sovrascrivi tutti i metodi di cui hai bisogno, crea un'istanza della tua classe e registrala tramite :ref:`GLTFDocument.register_gltf_document_extension()<class_GLTFDocument_method_register_gltf_document_extension>`.
 
-\ **Note:** All GLTFDocumentExtension classes are duplicated when beginning the import or export process. Except for configuration values, these classes must be stateless in order to function properly. If you need to store data, use the ``set_additional_data`` and ``get_additional_data`` methods in :ref:`GLTFState<class_GLTFState>` or :ref:`GLTFNode<class_GLTFNode>`.
+\ **Nota:** Tutte le classi GLTFDocumentExtension vengono duplicate all'inizio del processo di importazione o esportazione. Tranne per i valori di configurazione, queste classi devono essere stateless per funzionare correttamente. Se è necessario memorizzare dati, usa i metodi ``set_additional_data`` e ``get_additional_data`` in :ref:`GLTFState<class_GLTFState>` o :ref:`GLTFNode<class_GLTFNode>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -116,9 +116,9 @@ Viene eseguito quando si convertono i dati da un nodo di una scena di Godot. Que
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_export_get_property_list**\ (\ root_node\: :ref:`Node<class_Node>`\ ) |virtual| :ref:`🔗<class_GLTFDocumentExtension_private_method__export_get_property_list>`
 
-Runs prior to the export process. This method is run before :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>` when exporting a scene from the editor, or it may not be run at all in other situations.
+Eseguito prima del processo di esportazione. Questo metodo viene eseguito prima di :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>` quando si esporta una scena dall'editor, oppure potrebbe non essere eseguito affatto in altre situazioni.
 
-Unlike the rest of the export methods, this does not run when calling a :ref:`GLTFDocument<class_GLTFDocument>`'s export methods in sequence with everything else, but rather runs before that entire process occurs, allowing configuration to occur beforehand, potentially minutes or hours in advance of :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>`. This allows extensions to decide which properties to show in the editor export settings dialog based on the contents of the scene, hiding any settings that are not relevant for that scene. The ``root_node`` parameter may be ``null``, in which case all properties should be shown.
+A differenza degli altri metodi di esportazione, questo non viene eseguito quando si chiamano i metodi di esportazione di un :ref:`GLTFDocument<class_GLTFDocument>` in sequenza con tutto il resto, ma viene eseguito prima che l'intero processo abbia inizio, consentendo la configurazione in anticipo, potenzialmente minuti o ore prima di :ref:`_export_preflight()<class_GLTFDocumentExtension_private_method__export_preflight>`. Permette alle estensioni di decidere quali proprietà mostrare nella finestra delle impostazioni di esportazione nell'editor in base al contenuto della scena, nascondendo le impostazioni non pertinenti per quella scena. Il parametro ``root_node`` può essere ``null``, nel qual caso tutte le proprietà si devono mostrare.
 
 .. rst-class:: classref-item-separator
 
@@ -438,7 +438,7 @@ Questo metodo può essere utilizzato per configurare le estensioni per la textur
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`

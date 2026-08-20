@@ -1035,7 +1035,7 @@ Restituisce la lista di sostituzioni di supporto di lingua.
 
 :ref:`int<class_int>` **_font_get_msdf_pixel_range**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_msdf_pixel_range>`
 
-Returns the width of the range around the shape between the minimum and maximum representable signed distance.
+Restituisce la larghezza dell'intervallo attorno alla forma tra la distanza con segno (signed distance) minima e massima rappresentabile.
 
 .. rst-class:: classref-item-separator
 
@@ -1119,7 +1119,7 @@ Restituisce l'array nella tavolozza predefinita di colori all'indice ``index``. 
 
 :ref:`int<class_int>` **_font_get_palette_count**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_palette_count>`
 
-Returns the number of predefined color palettes. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+Restituisce il numero di tavolozze predefinite di colori. La tavolozza contiene tutti i colori utilizzati per renderizzare i glifi del font. Ogni tavolozza ha lo stesso numero di colori.
 
 .. rst-class:: classref-item-separator
 
@@ -1131,7 +1131,7 @@ Returns the number of predefined color palettes. Palette contains all colors use
 
 :ref:`PackedColorArray<class_PackedColorArray>` **_font_get_palette_custom_colors**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_palette_custom_colors>`
 
-Returns array of custom colors to override predefined palette.
+Restituisce un array di colori personalizzati per sovrascrivere la tavolozza predefinita.
 
 .. rst-class:: classref-item-separator
 
@@ -1143,7 +1143,7 @@ Returns array of custom colors to override predefined palette.
 
 :ref:`String<class_String>` **_font_get_palette_name**\ (\ font_rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_palette_name>`
 
-Returns the name of the predefined color palette at ``index``. Palette contains all colors used to render font glyphs. Each palette has the same number of colors.
+Restituisce il nome della tavolozza predefinita di colori all'indice ``index``. La tavolozza contiene tutti i colori utilizzati per renderizzare i glifi del font. Ogni tavolozza ha lo stesso numero di colori.
 
 .. rst-class:: classref-item-separator
 
@@ -1227,7 +1227,7 @@ Restituisce la spaziatura per ``spacing`` in pixel (non relativa alla dimensione
 
 :ref:`int<class_int>` **_font_get_stretch**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_stretch>`
 
-Restituisce la quantità di allungamento del font, rispetto a una larghezza normale. Un valore percentuale compreso tra ``50%`` e ``200%``.
+Restituisce la quantità di allargamento del font, rispetto a una larghezza normale. Un valore percentuale compreso tra ``50%`` e ``200%``.
 
 .. rst-class:: classref-item-separator
 
@@ -1371,7 +1371,7 @@ Restituisce lo spessore della sottolineatura in pixel.
 
 :ref:`int<class_int>` **_font_get_used_palette**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_used_palette>`
 
-Returns used palette index.
+Restituisce l'indice della tavolozza utilizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -1443,7 +1443,7 @@ Restituisce ``true`` se l'hinting automatico è supportato e preferito rispetto 
 
 :ref:`bool<class_bool>` **_font_is_language_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, language\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_is_language_supported>`
 
-Returns ``true`` if the font supports the given language (as a `ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__ code).
+Restituisce ``true``, se il font supporta la lingua specificata (in codice `ISO 639 <https://it.wikipedia.org/wiki/ISO_639-1>`__).
 
 .. rst-class:: classref-item-separator
 
@@ -1455,7 +1455,7 @@ Returns ``true`` if the font supports the given language (as a `ISO 639 <https:/
 
 :ref:`bool<class_bool>` **_font_is_modulate_color_glyphs**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_is_modulate_color_glyphs>`
 
-Returns ``true`` if color modulation is applied when drawing the font's colored glyphs.
+Restituisce ``true`` se viene applicata la modulazione del colore quando si disegnano glifi colorati del font.
 
 .. rst-class:: classref-item-separator
 
@@ -1479,7 +1479,7 @@ Restituisce ``true`` se i glifi di tutte le dimensioni sono renderizzati utilizz
 
 :ref:`bool<class_bool>` **_font_is_script_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, script\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_is_script_supported>`
 
-Returns ``true`` if the font supports the given script (as a `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__ code).
+Restituisce ``true``, se il font supporta l'alfabeto specificato (in codice `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__).
 
 .. rst-class:: classref-item-separator
 
@@ -1887,7 +1887,7 @@ Se impostato su ``true``, la modulazione del colore è applicata quando si diseg
 
 |void| **_font_set_msdf_pixel_range**\ (\ font_rid\: :ref:`RID<class_RID>`, msdf_pixel_range\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_TextServerExtension_private_method__font_set_msdf_pixel_range>`
 
-Sets the width of the range around the shape between the minimum and maximum representable signed distance.
+Imposta la larghezza dell'intervallo attorno alla forma tra la distanza con segno (signed distance) minima e massima rappresentabile.
 
 .. rst-class:: classref-item-separator
 
@@ -1959,7 +1959,7 @@ Se impostato su un valore positivo, sostituisce il fattore di sovracampionamento
 
 |void| **_font_set_palette_custom_colors**\ (\ font_rid\: :ref:`RID<class_RID>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`\ ) |virtual| :ref:`🔗<class_TextServerExtension_private_method__font_set_palette_custom_colors>`
 
-Sets array of custom colors to override predefined palette. Set to empty array to reset overrides. Use ``Color(0, 0, 0, 0)``, to keep predefined palette color at specific position.
+Imposta un array di colori per sovrascrivere la tavolozza predefinita. Usa ``Color(0, 0, 0, 0)`` per mantenere il colore della tavolozza predefinita in una posizione specifica.
 
 .. rst-class:: classref-item-separator
 
@@ -2115,7 +2115,7 @@ Imposta lo spessore della sottolineatura in pixel.
 
 |void| **_font_set_used_palette**\ (\ font_rid\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_TextServerExtension_private_method__font_set_used_palette>`
 
-Sets used palette index.
+Imposta l'indice della tavolozza utilizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -2177,9 +2177,9 @@ Restituisce il dizionario delle coordinate delle variazioni OpenType supportate.
 
 **Deprecato:** Use :ref:`TranslationServer.format_number()<class_TranslationServer_method_format_number>` instead.
 
-Converts a number from Western Arabic (0..9) to the numeral system used in the given ``language``.
+Converte un numero dall'arabo occidentale (0..9) al sistema numerico utilizzato nella lingua ``language``.
 
-If ``language`` is an empty string, the active locale will be used.
+Se ``language`` viene omesso, verrà utilizzata la localizzazione attiva.
 
 .. rst-class:: classref-item-separator
 
@@ -2323,7 +2323,7 @@ Restituisce ``true`` se la localizzazione è di destra a sinistra.
 
 :ref:`bool<class_bool>` **_is_locale_using_support_data**\ (\ locale\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__is_locale_using_support_data>`
 
-Returns ``true`` if the locale requires text server support data for line/word breaking.
+Restituisce ``true`` se le localizzazione richiede dati di supporto dal server di testo per le interruzioni di righe/parole.
 
 .. rst-class:: classref-item-separator
 
@@ -2373,7 +2373,7 @@ Carica il database facoltativo (ad esempio, iteratori di interruzione ICU e dizi
 
 :ref:`int<class_int>` **_name_to_tag**\ (\ name\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__name_to_tag>`
 
-Converts the given readable name of a feature, variation, script, or language to an OpenType tag.
+Converte il nome leggibile in chiaro di funzionalità, variazione, alfabeto o lingua in un tag OpenType.
 
 .. rst-class:: classref-item-separator
 
@@ -2387,9 +2387,9 @@ Converts the given readable name of a feature, variation, script, or language to
 
 **Deprecato:** Use :ref:`TranslationServer.parse_number()<class_TranslationServer_method_parse_number>` instead.
 
-Converts ``number`` from the numeral system used in the given ``language`` to Western Arabic (0..9).
+Converte il numero ``number`` dal sistema numerico utilizzato nella lingua ``language`` all'arabo occidentale (0..9).
 
-If ``language`` is an empty string, the active locale will be used.
+Se ``language`` viene omesso, verrà utilizzata la localizzazione attiva.
 
 .. rst-class:: classref-item-separator
 
@@ -2415,7 +2415,7 @@ Implementazione predefinita della funzione di sovrascrittura dell'algoritmo BiDi
 
 **Deprecato:** Use :ref:`TranslationServer.get_percent_sign()<class_TranslationServer_method_get_percent_sign>` instead.
 
-Returns percent sign used in the given ``language``.
+Restituisce il simbolo di percentuale utilizzato nella lingua ``language``.
 
 .. rst-class:: classref-item-separator
 
@@ -2499,7 +2499,7 @@ Restituisce la dimensione del font della sequenza di testo all'indice ``index`` 
 
 :ref:`Vector2i<class_Vector2i>` **_shaped_get_run_glyph_range**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_get_run_glyph_range>`
 
-Returns the glyph range of the ``index`` text run (in visual order).
+Restituisce l'intervallo di glifi della sequenza di testo all'indice ``index`` (in ordine visuale).
 
 .. rst-class:: classref-item-separator
 
@@ -2715,7 +2715,7 @@ Disegna il contorno di un testo sagomato su un elemento canvas in una posizione 
 
 :ref:`RID<class_RID>` **_shaped_text_duplicate**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_duplicate>`
 
-Duplicates shaped text buffer.
+Duplica il buffer di testo sagomato.
 
 .. rst-class:: classref-item-separator
 
@@ -3147,7 +3147,7 @@ Suddivide il testo in parole e restituisce un array di intervalli di caratteri. 
 
 :ref:`bool<class_bool>` **_shaped_text_has_object**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`\ ) |virtual| |required| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this shaped text buffer.
+Restituisce ``true`` se un oggetto con la chiave ``key`` è incorporato in questo buffer di testo sagomato.
 
 .. rst-class:: classref-item-separator
 
@@ -3483,7 +3483,7 @@ Restituisce la stringa convertita in ``lowercase``.
 
 :ref:`String<class_String>` **_string_to_title**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__string_to_title>`
 
-Returns the string converted to ``Title Case``.
+Restituisce la stringa convertita in ``Title Case``.
 
 .. rst-class:: classref-item-separator
 
@@ -3519,7 +3519,7 @@ Rimuove i segni diacritici dalla stringa.
 
 :ref:`String<class_String>` **_tag_to_name**\ (\ tag\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__tag_to_name>`
 
-Converts the given OpenType tag to the readable name of a feature, variation, script, or language.
+Converte il tag OpenType in un nome leggibile in chiaro di funzionalità, variazione, alfabeto o lingua.
 
 .. rst-class:: classref-item-separator
 
@@ -3537,7 +3537,7 @@ Riduce il conteggio dei riferimenti del livello di sovracampionamento specificat
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`
 .. |vararg| replace:: :abbr:`vararg (Questo metodo accetta qualsiasi numero di argomenti oltre a quelli descritti qui.)`
-.. |constructor| replace:: :abbr:`constructor (Questo metodo è utilizzato per creare un tipo.)`
+.. |constructor| replace:: :abbr:`constructor (Questo metodo serve per costruire un tipo.)`
 .. |static| replace:: :abbr:`static (Questo metodo non necessita di alcun'istanza per essere chiamato, quindi può essere chiamato direttamente usando il nome della classe.)`
 .. |operator| replace:: :abbr:`operator (Questo metodo descrive un operatore valido da usare con questo tipo come operando di sinistra.)`
 .. |bitfield| replace:: :abbr:`BitField (Questo valore è un intero composto da una maschera di bit dei seguenti flag.)`
