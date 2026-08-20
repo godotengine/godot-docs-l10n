@@ -28,6 +28,13 @@ msgid "Advantages of upgrading"
 msgstr "As vantagens de atualizar"
 
 msgid ""
+"Along with the `new features present in 4.0 <https://godotengine.org/article/"
+"godot-4-0-sets-sail>`__, upgrading gives the following advantages:"
+msgstr ""
+"Além dos `novos recursos presentes no 4.0 <https://godotengine.org/article/"
+"godot-4-0-sets-sail>`__, a atualização oferece as seguintes vantagens:"
+
+msgid ""
 "Many bugs are fixed in 4.0, but cannot be resolved in 3.x for various "
 "reasons (such as graphics API differences or backwards compatibility)."
 msgstr ""
@@ -90,6 +97,16 @@ msgstr ""
 "quando :ref:`exportando para a Web<doc_exporting_for_web>`, já que o tamanho "
 "do binário influencia diretamente o quão rápido o motor pode inicializar "
 "(independente da velocidade de download)."
+
+msgid ""
+"Godot 4 does not and will not have support for GLES2 rendering. (There is "
+"still support for GLES3 rendering using the new Compatibility renderer, "
+"which means that devices without Vulkan support can still run Godot 4.)"
+msgstr ""
+"O Godot 4 não tem e não terá suporte para renderização GLES2. (Ainda há "
+"suporte para renderização GLES3 usando o novo renderizador Compatibility, o "
+"que significa que dispositivos sem suporte a Vulkan ainda podem executar o "
+"Godot 4.)"
 
 msgid ""
 "If you are targeting **very** old hardware such as Intel Sandy Bridge (2nd "
@@ -170,6 +187,20 @@ msgstr ""
 "upstream for aprimorado."
 
 msgid ""
+"You can find a more complete list of functional regressions by searching for "
+"`issues labeled \"regression\" but not \"bug\" on GitHub <https://github.com/"
+"godotengine/godot/issues?q=is%3Aissue+is%3Aopen+label%3Aregression+-"
+"label%3Abug>`__."
+msgstr ""
+"Você pode encontrar uma lista mais completa de regressões funcionais "
+"pesquisando por `issues marcadas como \"regression\", mas não \"bug\", no "
+"GitHub <https://github.com/godotengine/godot/issues?"
+"q=is%3Aissue+is%3Aopen+label%3Aregression+-label%3Abug>`__."
+
+msgid "Preparing before the upgrade (optional)"
+msgstr "Preparação antes da atualização (opcional)"
+
+msgid ""
 "If you want to be ready to upgrade to Godot 4 in the future, consider "
 "using :ref:`class_Tweener` and the :ref:`class_Time` singleton in your "
 "project. These classes are both available in Godot 3.5 and later."
@@ -194,6 +225,9 @@ msgstr ""
 "Também é uma boa ideia renomear os shaders externos para que sua extensão "
 "seja ``.gdshader`` em vez de ``.shader``. O Godot 3.x suporta ambas as "
 "extensões, mas somente ``.gdshader`` é suportado no Godot 4.0."
+
+msgid "Running the project upgrade tool"
+msgstr "Executando a ferramenta de atualização de projeto"
 
 msgid ""
 "**Make a full backup of your project** before upgrading! The project upgrade "
@@ -272,6 +306,9 @@ msgstr ""
 "atualizar o projeto (veja abaixo). Isso permitirá que você substitua os "
 "limites de tamanho do conversor."
 
+msgid "Using the command line"
+msgstr "Usando a linha de comando"
+
 msgid ""
 "To use the project upgrade tool from the :ref:`command line "
 "<doc_command_line_tutorial>`, it's recommended to validate the project "
@@ -348,6 +385,9 @@ msgstr ""
 "ferramenta de atualização do projeto não consegue atender a todas as "
 "situações. Portanto, grande parte do processo de atualização permanece "
 "manual."
+
+msgid "Automatically renamed nodes and resources"
+msgstr "Nós e recursos renomeados automaticamente"
 
 msgid ""
 "The list below refers to nodes which were simply renamed for consistency or "
@@ -430,6 +470,18 @@ msgstr "ARVRServer (Servidor de Realidade Aumentada e Realidade Virtual)"
 msgid "XRServer"
 msgstr "XRServer (Servidor de Realidade Estendida)"
 
+msgid "BoxShape"
+msgstr "BoxShape"
+
+msgid "BoxShape3D"
+msgstr "BoxShape3D"
+
+msgid "CapsuleShape"
+msgstr "CapsuleShape"
+
+msgid "CapsuleShape3D"
+msgstr "CapsuleShape3D"
+
 msgid "CubeMesh"
 msgstr "CubeMesh (Malha de Cubo)"
 
@@ -453,6 +505,9 @@ msgstr "GIProbe"
 
 msgid "VoxelGI"
 msgstr "VoxelGI"
+
+msgid "GIProbeData"
+msgstr "GIProbeData"
 
 msgid "VoxelGIData"
 msgstr "VoxelGIData"
@@ -550,6 +605,9 @@ msgstr "PhysicsDirectSpaceState2D"
 msgid "Physics2DServer"
 msgstr "Physics2DServer (Servidor de Física 2D)"
 
+msgid "PhysicsServer2D"
+msgstr "PhysicsServer2D"
+
 msgid "Physics2DShapeQueryParameters"
 msgstr "Physics2DShapeQueryParameters"
 
@@ -562,11 +620,20 @@ msgstr "Physics2DTestMotionResult"
 msgid "PhysicsTestMotionResult2D"
 msgstr "PhysicsTestMotionResult2D"
 
+msgid "PlaneShape"
+msgstr "PlaneShape"
+
 msgid "WorldBoundaryShape3D"
 msgstr "WorldBoundaryShape3D"
 
+msgid "Position2D"
+msgstr "Position2D"
+
 msgid "Marker2D"
 msgstr "Marker2D"
+
+msgid "Position3D"
+msgstr "Position3D"
 
 msgid "Marker3D"
 msgstr "Marker3D"
@@ -574,8 +641,14 @@ msgstr "Marker3D"
 msgid "ProceduralSky"
 msgstr "ProceduralSky (Céu Procedural)"
 
+msgid "RayShape"
+msgstr "RayShape"
+
 msgid "SeparationRayShape3D"
 msgstr "SeparationRayShape3D"
+
+msgid "RayShape2D"
+msgstr "RayShape2D"
 
 msgid "SeparationRayShape2D"
 msgstr "SeparationRayShape2D"
@@ -588,6 +661,9 @@ msgstr "Shortcut"
 
 msgid "Spatial"
 msgstr "Espacial"
+
+msgid "Node3D"
+msgstr "Node3D"
 
 msgid "SpatialGizmo"
 msgstr "SpatialGizmo (Gizmo Espacial)"
@@ -628,6 +704,9 @@ msgstr "VideoStreamPlayer (Reprodutor de Fluxo de Vídeo)"
 msgid "ViewportContainer"
 msgstr "ViewportContainer"
 
+msgid "SubViewportContainer"
+msgstr "SubViewportContainer"
+
 msgid "Viewport"
 msgstr "Viewport (Janela de Exibição)"
 
@@ -660,6 +739,27 @@ msgstr "VisualServer (Servidor Visual)"
 
 msgid "RenderingServer"
 msgstr "RenderingServer (Servidor de Renderização)"
+
+msgid "VisualShaderNodeScalarConstant"
+msgstr "VisualShaderNodeScalarConstant"
+
+msgid "VisualShaderNodeFloatConstant"
+msgstr "VisualShaderNodeFloatConstant"
+
+msgid "VisualShaderNodeScalarFunc"
+msgstr "VisualShaderNodeScalarFunc"
+
+msgid "VisualShaderNodeFloatFunc"
+msgstr "VisualShaderNodeFloatFunc"
+
+msgid "VisualShaderNodeScalarOp"
+msgstr "VisualShaderNodeScalarOp"
+
+msgid "VisualShaderNodeFloatOp"
+msgstr "VisualShaderNodeFloatOp"
+
+msgid "VisualShaderNodeScalarClamp"
+msgstr "VisualShaderNodeScalarClamp"
 
 msgid "VisualShaderNodeClamp"
 msgstr "VisualShaderNodeClamp (Nó Shader Visual de Alinhamento)"
@@ -710,17 +810,44 @@ msgstr "VisualShaderNodeSwitch (Nó Shader Visual de Interruptor)"
 msgid "VisualShaderNodeScalarTransformMult"
 msgstr "VisualShaderNodeScalarTransformMult"
 
+msgid "VisualShaderNodeTransformOp"
+msgstr "VisualShaderNodeTransformOp"
+
 msgid "VisualShaderNodeScalarDerivativeFunc"
 msgstr "VisualShaderNodeScalarDerivativeFunc"
+
+msgid "VisualShaderNodeDerivativeFunc"
+msgstr "VisualShaderNodeDerivativeFunc"
 
 msgid "VisualShaderNodeVectorDerivativeFunc"
 msgstr "VisualShaderNodeVectorDerivativeFunc"
 
+msgid "VisualShaderNodeBooleanUniform"
+msgstr "VisualShaderNodeBooleanUniform"
+
 msgid "VisualShaderNodeBooleanParameter"
 msgstr "VisualShaderNodeBooleanParameter"
 
+msgid "VisualShaderNodeColorUniform"
+msgstr "VisualShaderNodeColorUniform"
+
+msgid "VisualShaderNodeColorParameter"
+msgstr "VisualShaderNodeColorParameter"
+
+msgid "VisualShaderNodeScalarUniform"
+msgstr "VisualShaderNodeScalarUniform"
+
+msgid "VisualShaderNodeFloatParameter"
+msgstr "VisualShaderNodeFloatParameter"
+
+msgid "VisualShaderNodeCubeMapUniform"
+msgstr "VisualShaderNodeCubeMapUniform"
+
 msgid "VisualShaderNodeCubeMapParameter"
 msgstr "VisualShaderNodeCubeMapParameter"
+
+msgid "VisualShaderNodeTextureUniform"
+msgstr "VisualShaderNodeTextureUniform"
 
 msgid "VisualShaderNodeTexture2DParameter"
 msgstr "VisualShaderNodeTexture2DParameter"
@@ -731,11 +858,43 @@ msgstr "VisualShaderNodeTextureUniformTriplanar"
 msgid "VisualShaderNodeTextureParameterTriplanar"
 msgstr "VisualShaderNodeTextureParameterTriplanar"
 
+msgid "VisualShaderNodeTransformUniform"
+msgstr "VisualShaderNodeTransformUniform"
+
+msgid "VisualShaderNodeTransformParameter"
+msgstr "VisualShaderNodeTransformParameter"
+
+msgid "VisualShaderNodeVec3Uniform"
+msgstr "VisualShaderNodeVec3Uniform"
+
+msgid "VisualShaderNodeVec3Parameter"
+msgstr "VisualShaderNodeVec3Parameter"
+
 msgid "VisualShaderNodeUniform"
 msgstr "VisualShaderNodeUniform (Nó Shader Visual de ...)"
 
+msgid "VisualShaderNodeParameter"
+msgstr "VisualShaderNodeParameter"
+
+msgid "VisualShaderNodeUniformRef"
+msgstr "VisualShaderNodeUniformRef"
+
+msgid "VisualShaderNodeParameterRef"
+msgstr "VisualShaderNodeParameterRef"
+
 msgid "Manually renaming methods, properties, signals and constants"
 msgstr "Renomear manualmente, métodos, sinais e constantes"
+
+msgid ""
+"Due to how the project upgrade tool works, not all :abbr:`API (Application "
+"Programming Interface)` renames can be performed automatically. The list "
+"below contains all renames that must be performed manually using the script "
+"editor."
+msgstr ""
+"Devido à forma como a ferramenta de atualização de projeto funciona, nem "
+"todas as renomeações da :abbr:`API (Interface de Programação de Aplicações)` "
+"podem ser realizadas automaticamente. A lista abaixo contém todas as "
+"renomeações que devem ser feitas manualmente utilizando o editor de scripts."
 
 msgid ""
 "If you cannot find a node or resource in the list below, refer to the above "
@@ -836,14 +995,36 @@ msgstr ""
 "``add_animation()`` do AnimationPlayer agora é ``add_animation_library()`` e "
 "agora usa uma :ref:`class_AnimationLibrary`."
 
+msgid ""
+"AnimationTree's ``set_process_mode()`` is now ``set_process_callback()``."
+msgstr ""
+"``set_process_mode()`` de AnimationTree agora é ``set_process_callback()``."
+
+msgid "Array's ``empty()`` is now ``is_empty()``."
+msgstr "``empty()`` de Array agora é ``is_empty()``."
+
+msgid "Array's ``invert()`` is now ``reverse()``."
+msgstr "``invert()`` de Array agora é ``reverse()``."
+
+msgid "Array's ``remove()`` is now ``remove_at()``."
+msgstr "``remove()`` de Array agora é ``remove_at()``."
+
 msgid "AStar2D and AStar3D's ``get_points()`` is now ``get_points_id()``."
 msgstr "``get_points()`` do AStar2D e AStar3D agora é ``get_points_id()``."
 
 msgid "BaseButton's ``set_event()`` is now ``set_shortcut()``."
 msgstr "``set_event()`` do BaseButton agora é ``set_shortcut()``."
 
+msgid "Camera2D's ``get_h_offset()`` is now ``get_drag_horizontal_offset()``."
+msgstr ""
+"``get_h_offset()`` de Camera2D agora é ``get_drag_horizontal_offset()``."
+
 msgid "Camera2D's ``get_v_offset()`` is now ``get_drag_vertical_offset()``."
 msgstr "``get_v_offset()`` do Camera2D agora é ``get_drag_vertical_offset()``."
+
+msgid "Camera2D's ``set_h_offset()`` is now ``set_drag_horizontal_offset()``."
+msgstr ""
+"``set_h_offset()`` de Camera2D agora é ``set_drag_horizontal_offset()``."
 
 msgid "Camera2D's ``set_v_offset()`` is now ``set_drag_vertical_offset()``."
 msgstr "``set_v_offset()`` do Camera2D agora é ``set_drag_vertical_offset()``."
@@ -853,6 +1034,9 @@ msgstr "``raise()`` do CanvasItem agora é ``move_to_front()``."
 
 msgid "CanvasItem's ``update()`` is now ``queue_redraw()``."
 msgstr "``update()`` do CanvasItem agora é ``queue_redraw()``."
+
+msgid "Control's ``get_stylebox()`` is now ``get_theme_stylebox()``."
+msgstr "``get_stylebox()`` de Control agora é ``get_theme_stylebox()``."
 
 msgid "Control's ``set_tooltip()`` is now ``set_tooltip_text()``."
 msgstr "``set_tooltip()`` do controle agora é ``set_tooltip_text()``."
@@ -884,6 +1068,16 @@ msgstr "``world_to_map()`` do GridMap agora é ``local_to_map()``."
 
 msgid "Image's ``get_rect()`` is now ``get_region()``."
 msgstr "``get_rect()`` do Image agora é ``get_region()``."
+
+msgid "ImmediateGeometry's ``set_normal()`` is now ``surface_set_normal()``."
+msgstr ""
+"``set_normal()`` de ImmediateGeometry agora é ``surface_set_normal()``."
+
+msgid "ImmediateMesh's ``set_color()`` is now ``surface_set_color()``."
+msgstr "``set_color()`` de ImmediateMesh agora é ``surface_set_color()``."
+
+msgid "ImmediateMesh's ``set_uv()`` is now ``surface_set_uv()``."
+msgstr "``set_uv()`` de ImmediateMesh agora é ``surface_set_uv()``."
 
 msgid "ItemList's ``get_v_scroll()`` is now ``get_v_scroll_bar()``."
 msgstr "``get_v_scroll()`` do ItemList agora é ``get_v_scroll_bar()``."
@@ -924,6 +1118,16 @@ msgid ""
 msgstr ""
 "``set_flag()`` do ParticleProcessMaterial agora é ``set_particle_flag()``."
 
+msgid "PhysicsTestMotionResult2D's ``get_motion()`` is now ``get_travel()``."
+msgstr ""
+"``get_motion()`` de PhysicsTestMotionResult2D agora é ``get_travel()``."
+
+msgid ""
+"RenderingServer's ``get_render_info()`` is now ``get_rendering_info()``."
+msgstr ""
+"O método ``get_render_info()`` do RenderingServer agora é "
+"``get_rendering_info()``."
+
 msgid ""
 "ResourceFormatLoader's ``get_dependencies()`` is now ``_get_dependencies()`` "
 "(note the leading underscore, which denotes a virtual method)."
@@ -931,6 +1135,9 @@ msgstr ""
 "``get_dependencies()`` do ResourceFormatLoader agora é "
 "``_get_dependencies()`` (observe o sublinhado inicial, que denota um método "
 "virtual)."
+
+msgid "ResourceFormatLoader's ``load()`` is now ``_load()``."
+msgstr "``load()`` de ResourceFormatLoader agora é ``_load()``."
 
 msgid "SceneTree's ``change_scene()`` is now ``change_scene_to_file()``."
 msgstr "``change_scene()`` do SceneTree agora é ``change_scene_to_file()``."
@@ -949,6 +1156,15 @@ msgid ""
 "mat``."
 msgstr ""
 "``xform()`` do Transform2D é ``mat * vec`` e ``xform_inv()`` é ``vec * mat``."
+
+msgid "XRPositionalTracker's ``get_name()`` is now ``get_tracker_name()``."
+msgstr "``get_name()`` de XRPositionalTracker agora é ``get_tracker_name()``."
+
+msgid "XRPositionalTracker's ``get_type()`` is now ``get_tracker_type()``."
+msgstr "``get_type()`` de XRPositionalTracker agora é ``get_tracker_type()``."
+
+msgid "XRPositionalTracker's ``_set_name()`` is now ``get_tracker_name()``."
+msgstr "``_set_name()`` de XRPositionalTracker agora é ``get_tracker_name()``."
 
 msgid "**Properties**"
 msgstr "**Propriedades**"
@@ -1007,6 +1223,9 @@ msgid ""
 msgstr ""
 "``refuse_new_network_connections`` do MultiPlayerAPI agora é "
 "``refuse_new_connections``."
+
+msgid "Node's ``filename`` is now ``scene_file_path``."
+msgstr "``filename`` de Node agora é ``scene_file_path``."
 
 msgid "PathFollow2D's ``rotate`` is now ``rotates``."
 msgstr "``rotate`` do PathFollow2D agora é ``rotates``."
@@ -1106,6 +1325,9 @@ msgstr ""
 "``NOTIFICATION_WM_QUIT_REQUEST`` do MainLoop agora é "
 "``NOTIFICATION_WM_CLOSE_REQUEST``."
 
+msgid "Checking project settings"
+msgstr "Verificando as configurações do projeto"
+
 msgid ""
 "Several project settings were renamed, and some of them had their enums "
 "changed in incompatible ways (such as shadow filter quality). This means you "
@@ -1119,6 +1341,9 @@ msgstr ""
 "valores das configurações do projeto. Certifique-se de que a opção "
 "**Avançado** esteja habilitada na caixa de diálogo de configurações do "
 "projeto para que você possa ver todas as configurações do projeto."
+
+msgid "Checking Environment settings"
+msgstr "Verificando as configurações de Ambiente"
 
 msgid ""
 "Graphics quality settings were moved from Environment properties to project "
@@ -1153,6 +1378,9 @@ msgstr ""
 "métodos :ref:`class_RenderingServer` que afetam a qualidade dos efeitos do "
 "ambiente. Somente o botão de alternância \"base\" de cada efeito do ambiente "
 "e seus botões visuais permanecem no recurso do Environment."
+
+msgid "Updating shaders"
+msgstr "Atualizando shaders"
 
 msgid ""
 "There have been some changes to shaders that aren't covered by the upgrade "
@@ -1189,6 +1417,10 @@ msgstr "``hint_albedo`` agora é ``source_color``."
 
 msgid "``hint_color`` is now ``source_color``."
 msgstr "``hint_color`` agora é ``source_color``."
+
+msgid ":ref:`Built in matrix variables were renamed. <doc_spatial_shader>`"
+msgstr ""
+":ref:`Variáveis de matriz embutidas foram renomeadas. <doc_spatial_shader>`"
 
 msgid ""
 "Particles shaders no longer use the ``vertex()`` processor function. Instead "
@@ -1231,6 +1463,18 @@ msgstr ""
 "foi implementada, o que pode danificar shaders avançados. Veja `Apresentando "
 "o Z Reverso (também conhecido como \"Desculpe por danificar seu shader\") "
 "<https://godotengine.org/article/introducing-reverse-z/>`__."
+
+msgid "See :ref:`doc_shading_language` for more information."
+msgstr "Veja :ref:`doc_shading_language` para mais informações."
+
+msgid ""
+"This list is not exhaustive. If you made all the changes mentioned here and "
+"your shader still doesn't work, try asking for help in one of the `community "
+"channels <https://godotengine.org/community/>`__."
+msgstr ""
+"Esta lista não é exaustiva. Se você realizou todas as alterações mencionadas "
+"aqui e seu shader ainda não funciona, tente pedir ajuda em um dos `canais da "
+"comunidade <https://godotengine.org/community/>`__."
 
 msgid "Updating scripts to take backwards-incompatible changes into account"
 msgstr ""
@@ -1323,16 +1567,6 @@ msgstr ""
 "O nó Tween foi removido em favor dos Tweeners, que também estão disponíveis "
 "no Godot 3.5 e versões posteriores. Veja o `pull request original <https://"
 "github.com/godotengine/godot/pull/41794>`__ para mais detalhes."
-
-msgid ""
-"``randomize()`` is now automatically called on project load, so "
-"deterministic randomness with the global RandomNumberGenerate instance "
-"requires manually setting a seed in a script's ``_ready()`` function."
-msgstr ""
-"``randomize()`` agora é chamado automaticamente no carregamento do projeto, "
-"portanto a aleatoriedade determinística com a instância global "
-"RandomNumberGenerate requer a configuração manual de uma semente na função "
-"``_ready()`` de um script."
 
 msgid ""
 "``call_group()``, ``set_group()`` and ``notify_group()`` are now immediate "
@@ -1529,6 +1763,12 @@ msgstr ""
 "pois o conversor de projeto não suporta a atualização de configurações "
 "existentes:"
 
+msgid "Removed node"
+msgstr "Nó removido"
+
+msgid "Closest approximation"
+msgstr "Aproximação mais próxima"
+
 msgid "Comment"
 msgstr "Comente"
 
@@ -1543,6 +1783,9 @@ msgstr "AnimationTreePlayer está obsoleto desde Godot 3.1."
 
 msgid "BakedLightmap"
 msgstr "BakedLightmap (Lightmaps Pré-Calculados)"
+
+msgid "LightmapGI"
+msgstr "LightmapGI"
 
 msgid "See :ref:`doc_using_lightmap_gi`."
 msgstr "Veja :ref:`doc_using_lightmap_gi`."
@@ -1568,8 +1811,14 @@ msgstr "Fonte Dinâmica"
 msgid "DynamicFontData"
 msgstr "DynamicFontData (Dados de Fontes Dinâmicas)"
 
-msgid "Camera's pyramid shape was moved to :ref:'class_Camera3D'."
-msgstr "O formato de pirâmide da câmera foi movido para :ref:'class_Camera3D'."
+msgid "ClippedCamera"
+msgstr "ClippedCamera"
+
+msgid "Camera2D or Camera3D"
+msgstr "Camera2D ou Camera3D"
+
+msgid "InterpolatedCamera"
+msgstr "InterpolatedCamera"
 
 msgid "Navigation2D"
 msgstr "Navigation2D (Navegação 2D)"
@@ -1619,6 +1868,9 @@ msgstr ""
 msgid "YSort"
 msgstr "YSort"
 
+msgid "Node2D or Control"
+msgstr "Node2D ou Control"
+
 msgid "CanvasItem has a new **Y Sort Enabled** property in 4.0."
 msgstr "CanvasItem tem uma nova propriedade **Y Sort Enabled** na versão 4.0."
 
@@ -1627,6 +1879,9 @@ msgstr "ProximityGroup"
 
 msgid ":ref:`class_VisibleOnScreenNotifier3D` can act as a replacement."
 msgstr ":ref:`class_VisibleOnScreenNotifier3D` pode atuar como um substituto."
+
+msgid "Portal"
+msgstr "Portal"
 
 msgid ""
 "Portal and room occlusion culling was replaced by raster :ref:`occlusion "
@@ -1672,6 +1927,9 @@ msgstr ""
 "*Aproximação mais próxima* (mesmo que você não esteja usando a ferramenta de "
 "atualização do projeto)."
 
+msgid "**Threading changes**"
+msgstr "**Threading changes** (Mudanças em Threads)"
+
 msgid ""
 ":ref:`Threading <doc_using_multiple_threads>` APIs have changed in 4.0. For "
 "example, the following code snippet in Godot 3.x must be modified to work in "
@@ -1716,6 +1974,24 @@ msgstr ""
 "automaticamente"
 
 msgid ""
+"The `editor/project_upgrade/renames_map_3_to_4.cpp <https://github.com/"
+"godotengine/godot/blob/master/editor/project_upgrade/"
+"renames_map_3_to_4.cpp>`__ source file lists all automatic renames performed "
+"by the project upgrade tool. Lines that are commented out refer to API "
+"renames that :ref:`cannot be performed automatically "
+"<doc_upgrading_to_godot_4_manual_rename>`."
+msgstr ""
+"O arquivo-fonte `editor/project_upgrade/renames_map_3_to_4.cpp <https://"
+"github.com/godotengine/godot/blob/master/editor/project_upgrade/"
+"renames_map_3_to_4.cpp>`__ lista todas as renomeações automáticas realizadas "
+"pela ferramenta de atualização de projeto. Linhas comentadas referem-se a "
+"renomeações de API que :ref:`não podem ser executadas automaticamente "
+"<doc_upgrading_to_godot_4_manual_rename>`."
+
+msgid "Porting editor settings"
+msgstr "Portando configurações do editor"
+
+msgid ""
 "Godot 3.x and 4.0 use different editor settings files. This means their "
 "settings can be changed independently from each other."
 msgstr ""
@@ -1743,6 +2019,9 @@ msgstr ""
 "3.x. As configurações do editor cujo nome ou categoria foram alterados não "
 "serão transferidas para o Godot 4.0; você terá que definir seus valores "
 "novamente."
+
+msgid "Updating version control settings"
+msgstr "Atualizando configurações de controle de versão"
 
 msgid ""
 "Godot 3.x and 4.x have entirely different lists of files and folders that "

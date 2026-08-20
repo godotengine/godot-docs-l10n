@@ -11,6 +11,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.5 to Godot 4.6"
+msgstr "Atualizando do Godot 4.5 para o Godot 4.6"
+
+msgid ""
+"For most games and apps made with 4.5 it should be relatively safe to "
+"migrate to 4.6. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"Para a maioria dos jogos e aplicativos feitos com a versão 4.5, deve ser "
+"relativamente seguro migrar para a 4.6. Esta página tem como objetivo cobrir "
+"tudo o que você precisa observar ao migrar seu projeto."
+
+msgid "Breaking changes"
+msgstr "Alterações incompatíveis"
+
+msgid ""
+"If you are migrating from 4.5 to 4.6, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"Se você estiver migrando da 4.5 para a 4.6, as mudanças incompatíveis "
+"listadas aqui podem afetá-lo. As alterações estão agrupadas por áreas/"
+"sistemas."
+
 msgid ""
 "This article indicates whether each breaking change affects GDScript and "
 "whether the C# breaking change is *binary compatible* or *source compatible*:"
@@ -18,6 +41,14 @@ msgstr ""
 "Este artigo indica se cada alteração drástica afeta o GDScript e se a "
 "alteração drástica do C# é *compatível com o binário* ou *compatível com o "
 "código-fonte*:"
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the run-time behavior won't change."
+msgstr ""
+"**Compatível em nível binário** - Binários existentes serão carregados e "
+"executados com sucesso sem recompilação, e o comportamento em tempo de "
+"execução não será alterado."
 
 msgid ""
 "**Source compatible** - Source code will compile successfully without "
@@ -32,6 +63,9 @@ msgstr "Componentes Principais"
 msgid "Change"
 msgstr "Mudança"
 
+msgid "GDScript Compatible"
+msgstr "Compatível com GDScript"
+
 msgid "C# Binary Compatible"
 msgstr "Compatível com C# Binário"
 
@@ -44,20 +78,80 @@ msgstr "Introduzido"
 msgid "**FileAccess**"
 msgstr "**FileAccess**"
 
+msgid ""
+"Method ``create_temp`` changes ``mode_flags`` parameter type from ``int`` to "
+"``FileAccess.ModeFlags``"
+msgstr ""
+"Método ``create_temp`` altera o tipo do parâmetro ``mode_flags`` de ``int`` "
+"para ``FileAccess.ModeFlags``"
+
 msgid "|✔️|"
 msgstr "|✔️|"
 
 msgid "|✔️ with compat|"
 msgstr "|✔️ with compat|"
 
+msgid "`GH-114053`_"
+msgstr "`GH-114053`_"
+
+msgid "Method ``get_as_text`` removes ``skip_cr`` parameter"
+msgstr "Método ``get_as_text`` remove o parâmetro ``skip_cr``"
+
+msgid "`GH-110867`_"
+msgstr "`GH-110867`_"
+
 msgid "**Performance**"
 msgstr "**Desempenho**"
+
+msgid "Method ``add_custom_monitor`` adds a new ``type`` optional parameter"
+msgstr ""
+"Método ``add_custom_monitor`` adiciona um novo parâmetro opcional ``type``"
+
+msgid "`GH-110433`_"
+msgstr "`GH-110433`_"
 
 msgid "Animation"
 msgstr "Animação"
 
+msgid "**AnimationPlayer**"
+msgstr "**AnimationPlayer**"
+
+msgid ""
+"Property ``assigned_animation`` changes type from ``String`` to "
+"``StringName``"
+msgstr ""
+"Propriedade ``assigned_animation`` altera o tipo de ``String`` para "
+"``StringName``"
+
 msgid "|❌|"
 msgstr "|❌|"
+
+msgid "`GH-110767`_"
+msgstr "`GH-110767`_"
+
+msgid "Property ``autoplay`` changes type from ``String`` to ``StringName``"
+msgstr ""
+"Propriedade ``autoplay`` altera o tipo de ``String`` para ``StringName``"
+
+msgid ""
+"Property ``current_animation`` changes type from ``String`` to ``StringName``"
+msgstr ""
+"Propriedade ``current_animation`` altera o tipo de ``String`` para "
+"``StringName``"
+
+msgid ""
+"Method ``get_queue`` changes return type from ``PackedStringArray`` to "
+"``StringName[]``"
+msgstr ""
+"Método ``get_queue`` altera o tipo de retorno de ``PackedStringArray`` para "
+"``StringName[]``"
+
+msgid ""
+"Signal ``current_animation_changed`` changes ``name`` parameter type from "
+"``String`` to ``StringName``"
+msgstr ""
+"Sinal ``current_animation_changed`` altera o tipo do parâmetro ``name`` de "
+"``String`` para ``StringName``"
 
 msgid "3D"
 msgstr "3D"
@@ -65,11 +159,194 @@ msgstr "3D"
 msgid "**SpringBoneSimulator3D**"
 msgstr "**SpringBoneSimulator3D**"
 
+msgid ""
+"Method ``get_end_bone_direction`` changes return type from "
+"``SpringBoneSimulator3D.BoneDirection`` to "
+"``SkeletonModifier3D.BoneDirection``"
+msgstr ""
+"Método ``get_end_bone_direction`` altera o tipo de retorno de "
+"``SpringBoneSimulator3D.BoneDirection`` para "
+"``SkeletonModifier3D.BoneDirection``"
+
+msgid "`GH-110120`_"
+msgstr "`GH-110120`_"
+
+msgid ""
+"Method ``get_joint_rotation_axis`` changes return type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"Método ``get_joint_rotation_axis`` altera o tipo de retorno de "
+"``SpringBoneSimulator3D.RotationAxis`` para "
+"``SkeletonModifier3D.RotationAxis``"
+
+msgid ""
+"Method ``get_rotation_axis`` changes return type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"Método ``get_rotation_axis`` altera o tipo de retorno de "
+"``SpringBoneSimulator3D.RotationAxis`` para "
+"``SkeletonModifier3D.RotationAxis``"
+
+msgid ""
+"Method ``set_end_bone_direction`` changes ``bone_direction`` parameter type "
+"from ``SpringBoneSimulator3D.BoneDirection`` to "
+"``SkeletonModifier3D.BoneDirection``"
+msgstr ""
+"Método ``set_end_bone_direction`` altera o tipo do parâmetro "
+"``bone_direction`` de ``SpringBoneSimulator3D.BoneDirection`` para "
+"``SkeletonModifier3D.BoneDirection``"
+
+msgid ""
+"Method ``set_joint_rotation_axis`` changes ``axis`` parameter type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"Método ``set_joint_rotation_axis`` altera o tipo do parâmetro ``axis`` de "
+"``SpringBoneSimulator3D.RotationAxis`` para "
+"``SkeletonModifier3D.RotationAxis``"
+
+msgid ""
+"Method ``set_rotation_axis`` changes ``axis`` parameter type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"Método ``set_rotation_axis`` altera o tipo do parâmetro ``axis`` de "
+"``SpringBoneSimulator3D.RotationAxis`` para "
+"``SkeletonModifier3D.RotationAxis``"
+
 msgid "Rendering"
 msgstr "Renderização"
 
+msgid "**DisplayServer**"
+msgstr "**DisplayServer**"
+
+msgid ""
+"Method ``accessibility_create_sub_text_edit_elements`` adds a new "
+"``is_last_line`` optional parameter"
+msgstr ""
+"Método ``accessibility_create_sub_text_edit_elements`` adiciona um novo "
+"parâmetro opcional ``is_last_line``"
+
+msgid "`GH-113459`_"
+msgstr "`GH-113459`_"
+
+msgid ""
+"Method ``tts_speak`` changes ``utterance_id`` parameter type metadata from "
+"``int32`` to ``int64``"
+msgstr ""
+"Método ``tts_speak`` altera os metadados do tipo do parâmetro "
+"``utterance_id`` de ``int32`` para ``int64``"
+
+msgid "`GH-112379`_"
+msgstr "`GH-112379`_"
+
+msgid "GUI nodes"
+msgstr "Nós de GUI"
+
+msgid "**Control**"
+msgstr "**Control**"
+
+msgid "Method ``grab_focus`` adds a new ``hide_focus`` optional parameter"
+msgstr ""
+"Método ``grab_focus`` adiciona um novo parâmetro opcional ``hide_focus``"
+
+msgid "`GH-110250`_"
+msgstr "`GH-110250`_"
+
+msgid ""
+"Method ``has_focus`` adds a new ``ignore_hidden_focus`` optional parameter"
+msgstr ""
+"Método ``has_focus`` adiciona um novo parâmetro opcional "
+"``ignore_hidden_focus``"
+
+msgid "**FileDialog**"
+msgstr "**FileDialog**"
+
+msgid "Method ``add_filter`` adds a new ``mime_type`` optional parameter"
+msgstr ""
+"Método ``add_filter`` adiciona um novo parâmetro opcional ``mime_type``"
+
+msgid "`GH-111439`_"
+msgstr "`GH-111439`_"
+
+msgid "**LineEdit**"
+msgstr "**LineEdit**"
+
+msgid "Method ``edit`` adds a new ``hide_focus`` optional parameter"
+msgstr "Método ``edit`` adiciona um novo parâmetro opcional ``hide_focus``"
+
+msgid "`GH-111117`_"
+msgstr "`GH-111117`_"
+
+msgid "**SplitContainer**"
+msgstr "**SplitContainer**"
+
+msgid ""
+"Method ``clamp_split_offset`` adds a new ``priority_index`` optional "
+"parameter"
+msgstr ""
+"Método ``clamp_split_offset`` adiciona um novo parâmetro opcional "
+"``priority_index``"
+
+msgid "`GH-90411`_"
+msgstr "`GH-90411`_"
+
 msgid "Networking"
 msgstr "Redes"
+
+msgid "**StreamPeerTCP**"
+msgstr "**StreamPeerTCP**"
+
+msgid ""
+"Method ``disconnect_from_host`` moved to base class ``StreamPeerSocket``"
+msgstr ""
+"Método ``disconnect_from_host`` movido para a classe base "
+"``StreamPeerSocket``"
+
+msgid "`GH-107954`_"
+msgstr "`GH-107954`_"
+
+msgid "Method ``get_status`` moved to base class ``StreamPeerSocket``"
+msgstr "Método ``get_status`` movido para a classe base ``StreamPeerSocket``"
+
+msgid "Method ``poll`` moved to base class ``StreamPeerSocket``"
+msgstr "Método ``poll`` movido para a classe base ``StreamPeerSocket``"
+
+msgid "**TCPServer**"
+msgstr "**TCPServer**"
+
+msgid "Method ``is_connection_available`` moved to base class ``SocketServer``"
+msgstr ""
+"Método ``is_connection_available`` movido para a classe base ``SocketServer``"
+
+msgid "Method ``is_listening`` moved to base class ``SocketServer``"
+msgstr "Método ``is_listening`` movido para a classe base ``SocketServer``"
+
+msgid "Method ``stop`` moved to base class ``SocketServer``"
+msgstr "Método ``stop`` movido para a classe base ``SocketServer``"
+
+msgid "OpenXR"
+msgstr "OpenXR"
+
+msgid "**OpenXRExtensionWrapper**"
+msgstr "**OpenXRExtensionWrapper**"
+
+msgid ""
+"Method ``_get_requested_extensions`` adds a new ``xr_version`` parameter"
+msgstr ""
+"Método ``_get_requested_extensions`` adiciona um novo parâmetro "
+"``xr_version``"
+
+msgid "`GH-109302`_"
+msgstr "`GH-109302`_"
+
+msgid ""
+"Method ``_set_instance_create_info_and_get_next_pointer`` adds  a new "
+"``xr_version`` parameter"
+msgstr ""
+"Método ``_set_instance_create_info_and_get_next_pointer`` adiciona um novo "
+"parâmetro ``xr_version``"
+
+msgid "N/A"
+msgstr "N/D"
 
 msgid ""
 "The ``OpenXRExtensionWrapper`` type is intended to be subclassed from "
@@ -83,8 +360,132 @@ msgstr ""
 msgid "Editor"
 msgstr "Editor"
 
+msgid "**EditorExportPreset**"
+msgstr "**EditorExportPreset**"
+
+msgid ""
+"Method ``get_script_export_mode`` changes return type from ``int`` to "
+"``EditorExportPreset.ScriptExportMode``"
+msgstr ""
+"Método ``get_script_export_mode`` altera o tipo de retorno de ``int`` para "
+"``EditorExportPreset.ScriptExportMode``"
+
+msgid "`GH-107167`_"
+msgstr "`GH-107167`_"
+
+msgid "**EditorFileDialog**"
+msgstr "**EditorFileDialog**"
+
+msgid "Method ``add_filter`` moved to base class ``FileDialog``"
+msgstr "Método ``add_filter`` movido para a classe base ``FileDialog``"
+
+msgid "`GH-111212`_"
+msgstr "`GH-111212`_"
+
+msgid "Method ``add_option`` moved to base class ``FileDialog``"
+msgstr "Método ``add_option`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``add_side_menu`` removed"
+msgstr "Método ``add_side_menu`` removido"
+
 msgid "|❌ with stub|"
-msgstr "|❌ com stub|"
+msgstr "|❌ with stub|"
+
+msgid "`GH-111162`_"
+msgstr "`GH-111162`_"
+
+msgid "Method ``clear_filename_filter`` moved to base class ``FileDialog``"
+msgstr ""
+"Método ``clear_filename_filter`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``clear_filters`` moved to base class ``FileDialog``"
+msgstr "Método ``clear_filters`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``get_filename_filter`` moved to base class ``FileDialog``"
+msgstr ""
+"Método ``get_filename_filter`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``get_line_edit`` moved to base class ``FileDialog``"
+msgstr "Método ``get_line_edit`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``get_option_default`` moved to base class ``FileDialog``"
+msgstr "Método ``get_option_default`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``get_option_name`` moved to base class ``FileDialog``"
+msgstr "Método ``get_option_name`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``get_option_values`` moved to base class ``FileDialog``"
+msgstr "Método ``get_option_values`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``get_selected_options`` moved to base class ``FileDialog``"
+msgstr ""
+"Método ``get_selected_options`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``get_vbox`` moved to base class ``FileDialog``"
+msgstr "Método ``get_vbox`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``invalidate`` moved to base class ``FileDialog``"
+msgstr "Método ``invalidate`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``popup_file_dialog`` moved to base class ``FileDialog``"
+msgstr "Método ``popup_file_dialog`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``set_filename_filter`` moved to base class ``FileDialog``"
+msgstr ""
+"Método ``set_filename_filter`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``set_option_default`` moved to base class ``FileDialog``"
+msgstr "Método ``set_option_default`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``set_option_name`` moved to base class ``FileDialog``"
+msgstr "Método ``set_option_name`` movido para a classe base ``FileDialog``"
+
+msgid "Method ``set_option_values`` moved to base class ``FileDialog``"
+msgstr "Método ``set_option_values`` movido para a classe base ``FileDialog``"
+
+msgid "Property ``access`` moved to base class ``FileDialog``"
+msgstr "Propriedade ``access`` movida para a classe base ``FileDialog``"
+
+msgid "Property ``current_dir`` moved to base class ``FileDialog``"
+msgstr "Propriedade ``current_dir`` movida para a classe base ``FileDialog``"
+
+msgid "Property ``current_file`` moved to base class ``FileDialog``"
+msgstr "Propriedade ``current_file`` movida para a classe base ``FileDialog``"
+
+msgid "Property ``current_path`` moved to base class ``FileDialog``"
+msgstr "Propriedade ``current_path`` movida para a classe base ``FileDialog``"
+
+msgid "Property ``display_mode`` moved to base class ``FileDialog``"
+msgstr "Propriedade ``display_mode`` movida para a classe base ``FileDialog``"
+
+msgid "Property ``file_mode`` moved to base class ``FileDialog``"
+msgstr "Propriedade ``file_mode`` movida para a classe base ``FileDialog``"
+
+msgid "Property ``filters`` moved to base class ``FileDialog``"
+msgstr "Propriedade ``filters`` movida para a classe base ``FileDialog``"
+
+msgid "Property ``option_count`` moved to base class ``FileDialog``"
+msgstr "Propriedade ``option_count`` movida para a classe base ``FileDialog``"
+
+msgid "Property ``show_hidden_files`` moved to base class ``FileDialog``"
+msgstr ""
+"Propriedade ``show_hidden_files`` movida para a classe base ``FileDialog``"
+
+msgid "Signal ``dir_selected`` moved to base class ``FileDialog``"
+msgstr "Sinal ``dir_selected`` movido para a classe base ``FileDialog``"
+
+msgid "Signal ``filename_filter_changed`` moved to base class ``FileDialog``"
+msgstr ""
+"Sinal ``filename_filter_changed`` movido para a classe base ``FileDialog``"
+
+msgid "Signal ``file_selected`` moved to base class ``FileDialog``"
+msgstr "Sinal ``file_selected`` movido para a classe base ``FileDialog``"
+
+msgid "Signal ``files_selected`` moved to base class ``FileDialog``"
+msgstr "Sinal ``files_selected`` movido para a classe base ``FileDialog``"
+
+msgid "Behavior changes"
+msgstr "Mudanças de comportamento"
 
 msgid "Android"
 msgstr "Android"
@@ -123,8 +524,114 @@ msgid "The :ref:`doc_tscn_file_format` has changed in two ways in Godot 4.6:"
 msgstr ""
 "O :ref:`doc_tscn_file_format` foi alterado de duas maneiras na Godot 4.6:"
 
+msgid ""
+"``load_steps`` is no longer written in scene files (`GH-103352`_). This "
+"attribute wasn't used by the editor."
+msgstr ""
+"O atributo ``load_steps`` não é mais gravado nos arquivos de cena "
+"(`GH-103352`_). Esse atributo não era utilizado pelo editor."
+
+msgid ""
+"Unique node IDs are now saved to scene files to help track nodes when they "
+"are moved or renamed (`GH-106837`_). This makes scene refactoring "
+"significantly more robust."
+msgstr ""
+"Agora, os IDs de nós exclusivos são salvos nos arquivos de cena para ajudar "
+"a rastrear os nós quando eles são movidos ou renomeados (`GH-106837`_). Isso "
+"torna a refatoração de cenas significativamente mais robusta."
+
+msgid ""
+"As a result, when saving a scene that was last edited in Godot 4.5 in Godot "
+"4.6, significant diffs will occur in version control programs. These diffs "
+"are expected."
+msgstr ""
+"Consequentemente, ao salvar uma cena que foi editada pela última vez no "
+"Godot 4.5 no Godot 4.6, ocorrerão diferenças significativas nos programas de "
+"versionamento. Essas diferenças são esperadas."
+
+msgid ""
+"As a reminder, you can upgrade all files in a project to the latest format "
+"using :menu:`Project > Tools > Upgrade Project Files...` in the editor, then "
+"committing the changes to version control. This allows you to avoid large "
+"diffs later on when editing scenes."
+msgstr ""
+"Como lembrete, você pode atualizar todos os arquivos de um projeto para o "
+"formato mais recente usando :menu:`Project > Tools > Upgrade Project "
+"Files...` no editor e, em seguida, confirmar as alterações no versionamento. "
+"Isso permite evitar grandes diferenças posteriormente ao editar cenas."
+
+msgid ""
+"The default blend mode for Glow is now Screen, which looks more correct but "
+"is significantly brighter than the previous Soft Light mode (`GH-110671`_)."
+msgstr ""
+"O modo de mesclagem padrão para Glow agora é Screen, que parece mais "
+"correto, mas é significativamente mais brilhante do que o modo Soft Light "
+"anterior (`GH-110671`_)."
+
+msgid ""
+"Several other glow defaults were changed to ensure the glow didn't become "
+"too strong, but you will likely need to tweak glow properties in Environment "
+"after upgrading."
+msgstr ""
+"Diversas outras configurações padrão de brilho foram alteradas para garantir "
+"que o brilho não ficasse muito forte, mas provavelmente você precisará "
+"ajustar as propriedades de brilho nas configurações de Environment após a "
+"atualização."
+
+msgid ""
+"In addition, glow's Soft Light blend mode now always behaves as it did "
+"previously with ``use_hdr_2d``, regardless of the Viewport's ``use_hdr_2d`` "
+"setting (`GH-109971`_)."
+msgstr ""
+"Além disso, o modo de mesclagem Soft Light (Luz Suave) do glow agora sempre "
+"se comporta como fazia anteriormente com ``use_hdr_2d``, independentemente "
+"da configuração ``use_hdr_2d`` da Viewport (`GH-109971`_)."
+
+msgid ""
+"When using the Mobile renderer, the rewritten glow effect will look "
+"significantly different to the previous one for performance reasons "
+"(`GH-110077`_). You may need to further adjust glow settings in Environment "
+"to achieve a similar look to before."
+msgstr ""
+"Ao usar o renderizador Mobile, o efeito de brilho reescrito terá uma "
+"aparência significativamente diferente da anterior por motivos de desempenho "
+"(`GH-110077`_). Talvez seja necessário ajustar ainda mais as configurações "
+"de brilho no Environment para obter uma aparência semelhante à anterior."
+
+msgid ""
+"Volumetric fog blending has been changed to be more physically accurate "
+"(`GH-112494`_). This will cause volumetric fog to appear brighter in most "
+"scenes."
+msgstr ""
+"A mesclagem de névoa volumétrica foi alterada para ser mais fisicamente "
+"precisa (`GH-112494`_). Isso fará com que a névoa volumétrica pareça mais "
+"brilhante na maioria das cenas."
+
+msgid ""
+"To compensate for this, you will need to decrease volumetric fog density or "
+"brightness in Environment, or decrease the **Volumetric Fog Energy** "
+"property on specific lights."
+msgstr ""
+"Para compensar isso, você precisará diminuir a densidade ou o brilho da "
+"névoa volumétrica no Environment, ou diminuir a propriedade **Energia da "
+"Névoa Volumétrica** em luzes específicas."
+
 msgid "Navigation"
 msgstr "Navegação"
+
+msgid ""
+"``AStar2D.get_point_path``, ``AStar3D.get_point_path``, "
+"``AStarGrid2D.get_id_path`` and ``AStarGrid2D.get_point_path`` will now "
+"return an empty path when ``from_id`` is a disabled/solid point "
+"(`GH-113988`_)."
+msgstr ""
+"``AStar2D.get_point_path``, ``AStar3D.get_point_path``, "
+"``AStarGrid2D.get_id_path`` e ``AStarGrid2D.get_point_path`` agora "
+"retornarão um caminho vazio quando ``from_id`` for um ponto desabilitado/"
+"sólido (`GH-113988`_)."
+
+msgid "Changed defaults"
+msgstr "Valores padrão alterados"
 
 msgid ""
 "The following default values have been changed. If your project relies on "
@@ -153,8 +660,29 @@ msgstr ""
 "Jolt Physics (`GH-105737`_). Isso pode ser alterado nas Configurações do "
 "Projeto em ``physics/3d/physics_engine``."
 
+msgid "Member"
+msgstr "Membro"
+
+msgid "Old Value"
+msgstr "Valor Antigo"
+
+msgid "New Value"
+msgstr "Novo Valor"
+
 msgid "**MeshInstance3D**"
 msgstr "**Malha de Instância 3D**"
+
+msgid "Property ``skeleton``"
+msgstr "Propriedade ``skeleton``"
+
+msgid "NodePath(\"..\")"
+msgstr "NodePath(\"..\")"
+
+msgid "NodePath(\"\")"
+msgstr "NodePath(\"\")"
+
+msgid "`GH-112267`_"
+msgstr "`GH-112267`_"
 
 msgid ""
 "The default value of ``skeleton`` has changed. Enable ``animation/"
@@ -165,6 +693,9 @@ msgstr ""
 "default_parent_skeleton_in_mesh_instance_3d`` nas Configurações do Projeto "
 "se o velho comportamento for necessário para compatibilidade."
 
+msgid "**ProjectSettings**"
+msgstr "**ProjectSettings**"
+
 msgid "Property ``rendering/reflections/sky_reflections/roughness_layers``"
 msgstr "Propriedade ``rendering/reflections/sky_reflections/roughness_layers``"
 
@@ -174,8 +705,26 @@ msgstr "8"
 msgid "7"
 msgstr "7"
 
+msgid "`GH-107902`_"
+msgstr "`GH-107902`_"
+
 msgid "Property ``rendering/rendering_device/d3d12/agility_sdk_version``"
 msgstr "Propriedade ``rendering/rendering_device/d3d12/agility_sdk_version``"
+
+msgid "613"
+msgstr "613"
+
+msgid "618"
+msgstr "618"
+
+msgid "`GH-114043`_"
+msgstr "`GH-114043`_"
+
+msgid "**Environment**"
+msgstr "**Environment**"
+
+msgid "Property ``glow_blend_mode``"
+msgstr "Propriedade ``glow_blend_mode``"
 
 msgid "2"
 msgstr "2"
@@ -183,17 +732,41 @@ msgstr "2"
 msgid "1"
 msgstr "1"
 
+msgid "`GH-110671`_"
+msgstr "`GH-110671`_"
+
+msgid "Property ``glow_intensity``"
+msgstr "Propriedade ``glow_intensity``"
+
 msgid "0.8"
 msgstr "0.8"
 
 msgid "0.3"
 msgstr "0.3"
 
+msgid "Property ``glow_levels/2``"
+msgstr "Propriedade ``glow_levels/2``"
+
+msgid "0.0"
+msgstr "0.0"
+
+msgid "Property ``glow_levels/3``"
+msgstr "Propriedade ``glow_levels/3``"
+
+msgid "1.0"
+msgstr "1.0"
+
 msgid "0.4"
 msgstr "0.4"
 
+msgid "Property ``glow_levels/4``"
+msgstr "Propriedade ``glow_levels/4``"
+
 msgid "0.1"
 msgstr "0.1"
+
+msgid "Property ``glow_levels/5``"
+msgstr "Propriedade ``glow_levels/5``"
 
 msgid "Property ``ssr_depth_tolerance``"
 msgstr "Propriedade ``ssr_depth_tolerance``"
@@ -204,5 +777,29 @@ msgstr "0.2"
 msgid "0.5"
 msgstr "0.5"
 
+msgid "`GH-111210`_"
+msgstr "`GH-111210`_"
+
+msgid "Property/Parameter"
+msgstr "Propriedade/Parâmetro"
+
+msgid "**PopupMenu**"
+msgstr "**PopupMenu**"
+
+msgid "Property ``submenu_popup_delay``"
+msgstr "Propriedade ``submenu_popup_delay``"
+
+msgid "`GH-110256`_"
+msgstr "`GH-110256`_"
+
 msgid "**ResourceImporterCSVTranslation**"
 msgstr "**ResourceImporterCSVTranslation**"
+
+msgid "Property ``compress``"
+msgstr "Propriedade ``compress``"
+
+msgid "true"
+msgstr "true"
+
+msgid "`GH-112073`_"
+msgstr "`GH-112073`_"

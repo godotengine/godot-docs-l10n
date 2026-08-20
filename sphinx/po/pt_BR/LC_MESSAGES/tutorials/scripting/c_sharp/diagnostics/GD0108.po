@@ -11,5 +11,76 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0108: The exported tool button is not in a tool class"
+msgstr ""
+"GD0108: O botão de ferramenta exportado não está em uma classe de ferramenta "
+"(tool class)"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0108"
+msgstr "GD0108"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Non-breaking"
+msgstr "Não quebra compatibilidade (Non-breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"A property is annotated with the ``[ExportToolButton]`` attribute in a class "
+"that is **not** annotated with the ``[Tool]`` attribute."
+msgstr ""
+"Uma propriedade está anotada com o atributo ``[ExportToolButton]`` em uma "
+"classe que **não** está anotada com o atributo ``[Tool]``."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid ""
+"The ``[ExportToolButton]`` is used to create clickable buttons in the "
+"inspector so, like every other script that runs in the editor, it needs to "
+"be annotated with the ``[Tool]`` attribute."
+msgstr ""
+"O ``[ExportToolButton]`` é usado para criar botões clicáveis no inspetor, "
+"portanto, como qualquer outro script que roda no editor, ele precisa estar "
+"anotado com o atributo ``[Tool]``."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, add the ``[Tool]`` attribute to the class "
+"that contains the member annotated with the ``[ExportToolButton]`` attribute."
+msgstr ""
+"Para corrigir uma violação desta regra, adicione o atributo ``[Tool]`` à "
+"classe que contém o membro anotado com o atributo ``[ExportToolButton]``."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. The clickable buttons in the "
+"inspector won't be functional if their script is not annotated with the "
+"``[Tool]`` attribute."
+msgstr ""
+"Não suprima um aviso desta regra. Os botões clicáveis no inspetor não "
+"funcionarão se o script deles não estiver anotado com o atributo ``[Tool]``."

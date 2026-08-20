@@ -91,23 +91,6 @@ msgstr ""
 "**Forward+**, **Mobile** і **Compatibility**."
 
 msgid ""
-"The *rendering driver* tells the GPU what to do, using a graphics API. Godot "
-"can use the **OpenGL**, **Vulkan**, **Direct3D 12**, and **Metal** rendering "
-"drivers. Not every GPU supports every rendering driver, and therefore not "
-"every GPU supports all renderers. Vulkan, Direct3D 12, and Metal are modern, "
-"low-level graphics APIs, and requires newer hardware. OpenGL is an older "
-"graphics API that runs on most hardware."
-msgstr ""
-"*Драйвер візуалізації* повідомляє графічному процесору, що робити, "
-"використовуючи графічний API. Godot може використовувати драйвери "
-"візуалізації **OpenGL**, **Vulkan**, **Direct3D 12** і **Metal**. Не кожен "
-"графічний процесор підтримує всі драйвери візуалізації, а тому не кожен "
-"графічний процесор підтримує всі рендерери. Vulkan, Direct3D 12 і Metal — це "
-"сучасні низькорівневі графічні API, які потребують новішого апаратного "
-"забезпечення. OpenGL — це старіший графічний API, який працює на більшості "
-"апаратних засобів."
-
-msgid ""
 "RenderingDevice is a *rendering backend*, an abstraction layer between the "
 "renderer and the rendering driver. It is used by the Forward+ and Mobile "
 "renderers, and these renderers are sometimes called \"RenderingDevice-based "
@@ -120,13 +103,6 @@ msgstr ""
 
 msgid "Choosing a renderer"
 msgstr "Вибір рендерера"
-
-msgid ""
-"Choosing a renderer is a complex question, and depends on your hardware and "
-"the which platforms you are developing for. As a starting point:"
-msgstr ""
-"Вибір рендерера є складним питанням і залежить від вашого апаратного "
-"забезпечення та платформ, для яких ви розробляєте. Як відправна точка:"
 
 msgid "Choose **Forward+** if:"
 msgstr "Виберіть **Вперед+**, якщо:"
@@ -149,11 +125,6 @@ msgstr "Ви хочете використовувати найдосконал�
 msgid "Choose **Mobile** if:"
 msgstr "Виберіть **Мобільний**, якщо:"
 
-msgid "You are developing for newer mobile devices, desktop XR, or desktop."
-msgstr ""
-"Ви розробляєте для новіших мобільних пристроїв, настільного ПК XR або "
-"настільного комп’ютера."
-
 msgid ""
 "You want to use advanced rendering features, subject to the limitations of "
 "mobile hardware."
@@ -163,15 +134,6 @@ msgstr ""
 
 msgid "Choose **Compatibility** if:"
 msgstr "Виберіть **Сумісність**, якщо:"
-
-msgid ""
-"You are developing for older mobile devices, older desktop devices, or "
-"standalone XR. The Compatibility renderer supports the widest range of "
-"hardware."
-msgstr ""
-"Ви розробляєте для старих мобільних пристроїв, старих настільних пристроїв "
-"або автономних XR. Рендерер сумісності підтримує найширший діапазон "
-"обладнання."
 
 msgid ""
 "You are developing for web. In this case, Compatibility is the only choice."
@@ -352,12 +314,6 @@ msgstr ""
 
 msgid "XR"
 msgstr "XR"
-
-msgid "✔️ Yes. Recommended for standalone headsets."
-msgstr "✔️ Так Рекомендовано для автономних гарнітур."
-
-msgid "✔️ Yes. Recommended for desktop headsets."
-msgstr "✔️ Так. Рекомендовано для настільних гарнітур."
 
 msgid "Web"
 msgstr "Інтернет"
@@ -616,9 +572,6 @@ msgid "See :ref:`doc_standard_material_3d` for more information."
 msgstr ""
 "Перегляньте :ref:`doc_standard_material_3d` для отримання додаткової "
 "інформації."
-
-msgid "Sub-surface scattering"
-msgstr "Підповерхневе розсіювання"
 
 msgid "Shader features"
 msgstr "Особливості шейдера"

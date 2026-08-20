@@ -11,5 +11,79 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid ""
+"GD0003: Found multiple classes with the same name in the same script file"
+msgstr ""
+"GD0003: Encontradas múltiplas classes com o mesmo nome no mesmo arquivo de "
+"script"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0003"
+msgstr "GD0003"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Non-breaking"
+msgstr "Não quebra compatibilidade (Non-breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"A script file contains multiple types that derives from ``GodotObject`` with "
+"a name that matches the script file. Only one type in the script file should "
+"match the file name."
+msgstr ""
+"Um arquivo de script contém múltiplos tipos que derivam de ``GodotObject`` "
+"com um nome que corresponde ao arquivo de script. Apenas um tipo no arquivo "
+"de script deve corresponder ao nome do arquivo."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid ""
+"Godot requires scripts to have a unique path so every type must be defined "
+"on its own file and the type name must match the file name."
+msgstr ""
+"O Godot exige que os scripts tenham um caminho exclusivo, portanto, cada "
+"tipo deve ser definido em seu próprio arquivo e o nome do tipo deve "
+"corresponder ao nome do arquivo."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, move each type declaration to a different "
+"file."
+msgstr ""
+"Para corrigir uma violação desta regra, mova cada declaração de tipo para um "
+"arquivo diferente."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Types that derive from "
+"``GodotObject`` must have a unique path otherwise the engine can't load the "
+"script by path, resulting in unexpected runtime errors."
+msgstr ""
+"Não suprima um aviso desta regra. Tipos que derivam de ``GodotObject`` devem "
+"ter um caminho exclusivo, caso contrário, o motor não poderá carregar o "
+"script pelo caminho, resultando em erros inesperados em tempo de execução."

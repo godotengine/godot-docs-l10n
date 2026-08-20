@@ -232,9 +232,6 @@ msgstr ""
 msgid "as"
 msgstr "\\ as"
 
-msgid "Cast the value to a given type if possible."
-msgstr "可能であれば、指定した型に値をキャストします。"
-
 msgid "self"
 msgstr "\\ self"
 
@@ -255,9 +252,6 @@ msgstr "シグナルを定義します。 `Signals`_ を参照してください
 
 msgid "func"
 msgstr "\\ func"
-
-msgid "Defines a function.  See `Functions`_."
-msgstr "関数を定義します。 `Functions`_ を参照してください。"
 
 msgid "static"
 msgstr "\\ static"
@@ -350,15 +344,8 @@ msgstr "TAU定数。"
 msgid "INF"
 msgstr "\\ INF"
 
-msgid "Infinity constant. Used for comparisons and as result of calculations."
-msgstr "Infinity定数。比較や計算の結果として使用されます。"
-
 msgid "NAN"
 msgstr "\\ NAN"
-
-msgid ""
-"NAN (not a number) constant. Used as impossible result from calculations."
-msgstr "NAN (not a number)定数。計算上の不可能な結果として使用されます。"
 
 msgid "Operators"
 msgstr "オペレーター"
@@ -1854,14 +1841,6 @@ msgstr "`静的変数`_ と `静的コンストラクタ`_ も参照してくだ
 msgid "Statements and control flow"
 msgstr "ステートメントと制御フロー"
 
-msgid ""
-"Statements are standard and can be assignments, function calls, control flow "
-"structures, etc (see below). ``;`` as a statement separator is entirely "
-"optional."
-msgstr ""
-"文は標準的なもので、代入、関数呼び出し、制御フロー構造などです(下記参照)。 "
-"``;`` は文の区切り文字としては完全にオプションです。"
-
 msgid "Expressions"
 msgstr "式"
 
@@ -2102,20 +2081,6 @@ msgstr "クラス"
 msgid "Registering named classes"
 msgstr "クラスに名前を付けて登録する"
 
-msgid ""
-"SVG images that are used as custom node icons should have the **Editor > "
-"Scale With Editor Scale** and **Editor > Convert Icons With Editor "
-"Theme** :ref:`import options <doc_importing_images_editor_import_options>` "
-"enabled. This allows icons to follow the editor's scale and theming settings "
-"if the icons are designed with the same color palette as Godot's own icons."
-msgstr ""
-"カスタムノード アイコンとして使用されるSVG画像は、**エディタ > エディタ ス"
-"ケールで拡大縮小** および **エディタ > エディタ テーマでアイコンを変換"
-"** :ref:`インポートオプション <doc_importing_images_editor_import_options>` "
-"が有効になっている必要があります。これによりアイコンがGodot自身のアイコンと同"
-"じカラー パレットでデザインされている場合、アイコンはエディタのスケールとテー"
-"マ設定に従うことができます。"
-
 msgid "Here's a class file example:"
 msgstr "クラスファイルの例を次に示します:"
 
@@ -2226,14 +2191,6 @@ msgstr ""
 msgid "Inner classes"
 msgstr "内部クラス"
 
-msgid ""
-"A class file can contain inner classes. Inner classes are defined using the "
-"``class`` keyword. They are instanced using the ``ClassName.new()`` function."
-msgstr ""
-"クラスファイルには内部クラスを含めることができます。内部クラスは、 ``class`` "
-"キーワードを使用して定義されます。 ``ClassName.new()`` 関数を使用してインスタ"
-"ンス化されます。"
-
 msgid "Classes as resources"
 msgstr "リソースとしてのクラス"
 
@@ -2310,14 +2267,6 @@ msgstr ""
 msgid "When setter/getter is not called"
 msgstr "セッター/ゲッターが呼び出されない場合"
 
-msgid ""
-"When a variable is initialized, the value of the initializer will be written "
-"directly to the variable. Including if the ``@onready`` annotation is "
-"applied to the variable."
-msgstr ""
-"変数が初期化されると、イニシャライザの値が変数に直接書き込まれます。 "
-"``@onready`` アノテーションが変数に適用されているかどうかを含みます。"
-
 msgid "Tool mode"
 msgstr "ツールモード"
 
@@ -2362,17 +2311,6 @@ msgid ""
 msgstr ""
 ":ref:`class_Node` が ``free()`` または ``queue_free()`` によって削除される場"
 "合、その子もすべて再帰的に削除されます。"
-
-msgid ""
-"To avoid reference cycles that can't be freed, a :ref:`class_WeakRef` "
-"function is provided for creating weak references, which allow access to the "
-"object without preventing a :ref:`class_RefCounted` from freeing. Here is an "
-"example:"
-msgstr ""
-"参照カウンタで解放できない循環参照を回避するため、弱い参照を作成するため"
-"の :ref:`class_WeakRef` が提供されています。これによ"
-"り、 :ref:`class_RefCounted` の解放を妨げることなくオブジェクトへのアクセスが"
-"可能になります。以下に例を示します。"
 
 msgid ""
 "Alternatively, when not using references, the "

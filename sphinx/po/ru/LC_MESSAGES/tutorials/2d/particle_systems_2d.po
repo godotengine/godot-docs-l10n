@@ -429,6 +429,23 @@ msgstr ""
 msgid "Local Coords"
 msgstr "Локальные координаты"
 
+msgid ""
+"By default, this option is off. It means that the space that particles are "
+"emitted to is global, and **not** relative to the node. If the node is "
+"moved, existing particles are not moved with it:"
+msgstr ""
+"По умолчанию эта опция отключена. Это означает, что пространство, в которое "
+"испускаются частицы, является глобальным и **не** привязано к узлу. Если "
+"узел перемещается, существующие частицы не перемещаются вместе с ним:"
+
+msgid ""
+"If enabled, particles will emit to local space, meaning that if the node is "
+"moved, already emitted particles are also affected:"
+msgstr ""
+"Если включено, частицы будут испускаться в локальное пространство, что "
+"означает, что при перемещении узла уже испущенные частицы также будут "
+"затронуты:"
+
 msgid "Draw Order"
 msgstr "Порядок рисования"
 

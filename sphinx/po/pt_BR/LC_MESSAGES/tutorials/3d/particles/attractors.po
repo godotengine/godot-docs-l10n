@@ -53,6 +53,15 @@ msgstr ""
 "maioria das propriedades no Godot, você também pode alterar isso em tempo de "
 "execução."
 
+msgid "Common properties"
+msgstr "Propriedades comuns"
+
+msgid "Common particle attractor properties"
+msgstr "Propriedades comuns de atratores de partículas"
+
+msgid "Common attractor properties"
+msgstr "Propriedades comuns de atratores"
+
 msgid ""
 "There are some properties that you can find on all attractors. They're "
 "located in the ``GPUParticlesAttractor3D`` section in the inspector."
@@ -119,6 +128,9 @@ msgstr ""
 "global girando o atrator. Se o valor de ``Strength`` for negativo, as "
 "partículas serão puxadas ao longo do eixo ``+Z``."
 
+msgid "Different attractor directionality values"
+msgstr "Diferentes valores de direcionalidade de atratores"
+
 msgid ""
 "No directionality (left) vs. full directionality (right). Notice how the "
 "particles move along the attractor's local Z-axis."
@@ -138,6 +150,9 @@ msgstr ""
 "<class_VisualInstance3D>` de cada sistema. Um sistema de partículas só é "
 "afetado por um atrator se pelo menos uma das camadas de visibilidade do "
 "sistema estiver habilitada na cull mask do atrator."
+
+msgid "Box attractors"
+msgstr "Atratores de caixa"
 
 msgid "Particle attractor box"
 msgstr "Caixa atratora de partículas"
@@ -178,8 +193,14 @@ msgstr ""
 "Um box attractor com um valor negativo de força divide um campo de "
 "partículas conforme se move através dele."
 
+msgid "Sphere attractors"
+msgstr "Atratores esféricos"
+
 msgid "Particle attractor sphere"
 msgstr "Esfera atratora de partículas"
+
+msgid "Sphere attractor in the node list"
+msgstr "Atrator esférico na lista de nós"
 
 msgid ""
 "Sphere attractors have a spherical influence region. You control their size "
@@ -216,6 +237,9 @@ msgid ""
 msgstr ""
 "Um sphere attractor com um valor negativo de força divide um campo de "
 "partículas conforme se move através dele."
+
+msgid "Vector field attractors"
+msgstr "Atratores de campo vetorial"
 
 msgid "Particle attractor vector field"
 msgstr "Attractor de partículas por campo vetorial"

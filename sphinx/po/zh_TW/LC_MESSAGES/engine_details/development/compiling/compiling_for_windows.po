@@ -31,6 +31,9 @@ msgstr "在 Windows 下編譯需要下列條件："
 msgid "A C++ compiler. Use one of the following:"
 msgstr "需要一個 C++ 編譯器，請選擇以下其中一種："
 
+msgid "Visual Studio 2022"
+msgstr "Visual Studio 2022"
+
 msgid ""
 "If you have `Scoop <https://scoop.sh/>`_ installed, you can easily install "
 "MinGW and other dependencies using the following command:"
@@ -47,11 +50,6 @@ msgid ""
 msgstr ""
 "若有安裝 `MSYS2 <https://www.msys2.org/>`_，可用下列指令輕鬆安裝 MinGW 及其他"
 "相依套件："
-
-msgid ""
-"For each MSYS2 MinGW subsystem, you should then run `pip3 install scons` in "
-"its shell."
-msgstr "需在每個 MSYS2 MinGW 子系統的 Shell 中執行 `pip3 install scons`。"
 
 msgid ""
 "To get the Godot source code for compiling, see :ref:`doc_getting_source`."

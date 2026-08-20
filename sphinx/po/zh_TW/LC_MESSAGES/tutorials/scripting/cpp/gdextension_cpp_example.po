@@ -41,12 +41,6 @@ msgstr ""
 msgid "Build and test your code with the earliest compatible Godot version."
 msgstr "使用最早支援的 Godot 版本建置並測試你的程式碼。"
 
-msgid ""
-"Optional: Publish on the `Godot Asset Library <https://godotengine.org/asset-"
-"library/asset>`__."
-msgstr ""
-"可選：發佈到 `Godot 資產庫 <https://godotengine.org/asset-library/asset>`__。"
-
 msgid "Example project"
 msgstr "範例專案"
 
@@ -297,19 +291,6 @@ msgstr "gdextension_cpp_example/src/register_types.h"
 
 msgid "Compiling the plugin"
 msgstr "編譯外掛"
-
-msgid ""
-"To compile the project we need to define how SCons using should compile it "
-"using an ``SConstruct`` file which references the one in ``godot-cpp``. "
-"Writing it from scratch is outside the scope of this tutorial, but you "
-"can :download:`the SConstruct file we prepared <files/cpp_example/"
-"SConstruct>`. We'll cover a more customizable, detailed example on how to "
-"use these build files in a subsequent tutorial."
-msgstr ""
-"要編譯這個專案，我們需要以 ``SConstruct`` 檔案定義 SCons 應如何編譯，並引用 "
-"``godot-cpp`` 中的那一份。從零撰寫不在本教學範圍內，不過你可以 :download:`下"
-"載我們準備好的 SConstruct 檔 <files/cpp_example/SConstruct>`。在後續教學中，"
-"我們會介紹更可自訂、也更詳細的建置檔使用方式。"
 
 msgid ""
 "This ``SConstruct`` file was written to be used with the latest ``godot-"

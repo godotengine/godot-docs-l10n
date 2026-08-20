@@ -24,13 +24,6 @@ msgstr ""
 "apparaître au hasard aux bords de l'écran et se déplacer dans une direction "
 "aléatoire en ligne droite, puis disparaître lorsqu'ils sortent de l'écran."
 
-msgid ""
-"We'll create a ``Mob`` scene, which we can then *instance* to create any "
-"number of independent mobs in the game."
-msgstr ""
-"Nous allons créer une scène ``Mob``, que nous pouvons ensuite *instancier* "
-"pour créer un nombre quelconque de monstres indépendants dans le jeu."
-
 msgid "Node setup"
 msgstr "Configuration du nœud"
 
@@ -50,6 +43,19 @@ msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
 msgid ":ref:`VisibleOnScreenNotifier2D <class_VisibleOnScreenNotifier2D>`"
 msgstr ":ref:`VisibleOnScreenNotifier2D <class_VisibleOnScreenNotifier2D>`"
+
+msgid ""
+"Don't forget to set the children so they can't be selected, like you did "
+"with the Player scene. This is done by selecting the parent node "
+"(``RigidBody2D``) in the Scene tree dock, then using the :button:`Group` "
+"button at the top of the 2D editor (:kbd:`Ctrl + G` or :kbd:`Cmd + G` on "
+"macOS)."
+msgstr ""
+"N'oubliez pas de définir les nœuds enfants pour qu'ils ne soient pas "
+"sélectionnables, comme vous l'avez fait avec la scène Player. Pour cela, "
+"sélectionnez le nœud parent (``RigidBody2D``) dans le dock Scène, puis "
+"utilisez le bouton :button:`Grouper` en haut de l'éditeur 2D (:kbd:`Ctrl + "
+"G` ou :kbd:`Cmd + G` sur macOS)."
 
 msgid ""
 "Select the ``Mob`` node and set its ``Gravity Scale`` property in "
@@ -114,9 +120,6 @@ msgstr "Enregistrer la scène."
 msgid "Enemy script"
 msgstr "Script de l'ennemi"
 
-msgid "Add a script to the ``Mob`` like this:"
-msgstr "Ajoutez un script au ``Mob`` comme ceci :"
-
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we play the "
 "animation and randomly choose one of the three animation types:"
@@ -168,9 +171,6 @@ msgid ""
 msgstr ""
 "``queue_free()`` est une fonction qui essentiellement 'libère', ou supprime, "
 "le nœud à la fin de la trame."
-
-msgid "This completes the `Mob` scene."
-msgstr "Cela complète la scène `Mob`."
 
 msgid ""
 "With the player and enemies ready, in the next part, we'll bring them "

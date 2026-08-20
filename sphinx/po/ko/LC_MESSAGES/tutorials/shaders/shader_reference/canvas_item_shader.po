@@ -129,9 +129,10 @@ msgstr ""
 msgid "Global built-ins"
 msgstr "벡터 내장 타입"
 
-msgid "Global built-ins are available everywhere, including custom functions."
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
 msgstr ""
-"사용자 정의 기능을 포함하여 전역 내장 기능을 어디에서나 사용할 수 있습니다."
+"전역 내장 기능은 사용자 정의 기능을 포함하여 어디에서나 사용할 수 있습니다."
 
 msgid "Built-in"
 msgstr "내장"
@@ -258,20 +259,20 @@ msgstr ""
 "캔버스 공간을 클립 공간으로 변환합니다. 클립 공간 좌표 범위는 ``(-1.0, "
 "-1.0)``에서 ``(1.0, 1.0).``까지입니다."
 
-msgid "in int  **INSTANCE_ID**"
+msgid "in int **INSTANCE_ID**"
 msgstr "int **INSTANCE_ID**"
 
 msgid "Instance ID for instancing."
 msgstr "인스턴스화를 위한 인스턴스 ID입니다."
 
 msgid "in vec4 **INSTANCE_CUSTOM**"
-msgstr "vec4 **INSTANCE_CUSTOM**에서"
+msgstr "vec4 **INSTANCE_CUSTOM**\\에서"
 
 msgid "Instance custom data."
 msgstr "인스턴스 사용자 정의 데이터."
 
 msgid "in bool **AT_LIGHT_PASS**"
-msgstr "bool **AT_LIGHT_PASS**에서"
+msgstr "bool **AT_LIGHT_PASS**\\에서"
 
 msgid "Always ``false``."
 msgstr "``if x else``"
@@ -414,7 +415,7 @@ msgid "in vec4 **REGION_RECT**"
 msgstr "vec4 **REGION_RECT**에서"
 
 msgid "in vec2 **POINT_COORD**"
-msgstr "vec2 **POINT_COORD**에서"
+msgstr "vec2 **POINT_COORD**\\에서"
 
 msgid "sampler2D **TEXTURE**"
 msgstr "Sampler2D **텍스처**"
@@ -435,7 +436,7 @@ msgid "Specular shininess color, as sampled from the texture."
 msgstr "텍스처에서 샘플링된 반사광 광택 색상입니다."
 
 msgid "in vec2 **UV**"
-msgstr "vec2 **UV**에서"
+msgstr "vec2 **UV**\\에서"
 
 msgid ""
 "UV from the ``vertex()`` function. For a Sprite2D with region enabled, this "
@@ -575,15 +576,6 @@ msgstr "포인트 스프라이트의 UV."
 
 msgid "in vec4 **LIGHT_COLOR**"
 msgstr "vec4에서 **LIGHT_COLOR**"
-
-msgid ""
-":ref:`Color<class_Light2D_property_color>` of the :ref:`class_Light2D`. If "
-"the light is a :ref:`class_PointLight2D`, multiplied by the "
-"light's :ref:`texture<class_PointLight2D_property_texture>`."
-msgstr ""
-":ref:`class_Light2D`의 :ref:`Color<class_Light2D_property_color>`. 조명"
-"이 :ref:`class_PointLight2D`인 경우 조명"
-"의 :ref:`texture<class_PointLight2D_property_texture>`를 곱합니다."
 
 msgid "in float **LIGHT_ENERGY**"
 msgstr "부동 **LIGHT_ENERGY**"

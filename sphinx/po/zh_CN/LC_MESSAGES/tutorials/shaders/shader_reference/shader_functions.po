@@ -11,14 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Built-in functions"
-msgstr "内置函数"
-
-msgid ""
-"Godot supports a large number of built-in functions, conforming roughly to "
-"the GLSL ES 3.0 specification."
-msgstr "Godot 支持很多内置函数，大致遵循 GLSL ES 3.0 规范。"
-
 msgid ""
 "The following type aliases only used in documentation to reduce repetitive "
 "function declarations. They can each refer to any of several actual types."
@@ -932,9 +924,6 @@ msgstr ""
 msgid "Raises ``x`` to the power of ``y``."
 msgstr "计算 ``x`` 的 ``y`` 次幂。"
 
-msgid "The result is undefined if ``x < 0`` or  if ``x == 0`` and ``y <= 0``."
-msgstr "“如果 ``x < 0`` ，或者 ``x == 0`` 且 ``y <= 0`` ，则结果是未定义的。"
-
 msgid "The value to be raised to the power ``y``."
 msgstr "将被提升至 ``y`` 次幂的数值。"
 
@@ -949,9 +938,6 @@ msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml"
 
 msgid "|vec_type| **exp**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
 msgstr "|vec_type| **exp**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
-
-msgid "Raises ``e`` to the power of ``x``, or the the natural exponentiation."
-msgstr "计算 ``e`` 的 ``x`` 次幂，也就是自然指数运算。"
 
 msgid "Equivalent to ``pow(e, x)``."
 msgstr "等同于 ``pow(e, x)`` 。"
@@ -976,9 +962,6 @@ msgstr "等同于 ``pow(2.0, x)`` 。"
 
 msgid "The value of the power to which ``2`` will be raised."
 msgstr "``2`` 将被提升到的幂次。"
-
-msgid "``2`` raised to the power of x."
-msgstr "``2`` 的 x 次幂。"
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
@@ -1130,15 +1113,6 @@ msgstr "|vec_type| **round**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
 
 msgid "Rounds ``x`` to the nearest integer."
 msgstr "将 ``x`` 四舍五入到最接近的整数。"
-
-msgid ""
-"Rounding of values with a fractional part of ``0.5`` is implementation-"
-"dependent. This includes the possibility that ``round(x)`` returns the same "
-"value as ``roundEven(x)``for all values of ``x``."
-msgstr ""
-"对于小数部分恰好为 ``0.5`` 的数值，其舍入方式取决于具体的实现。 这也意味着， "
-"``round(x)`` 在所有 ``x`` 的取值下，都有可能返回与 ``roundEven(x)`` 完全相同"
-"的结果。"
 
 msgid "The value to round."
 msgstr "四舍五入。"
@@ -1526,15 +1500,6 @@ msgstr ""
 "回 ``b`` 对应的分量。此外， ``a`` 和 ``b`` 中那些没被选中的分量，允许是无效的"
 "浮点数值（比如 NaN 或无穷大），并且不会对最终结果产生任何影响。"
 
-msgid ""
-"If ``a``, ``b``, and ``c`` are vector types the operation is "
-"performed :ref:`component-wise <shading_componentwise>`. ie. ``mix(vec2(42, "
-"314), vec2(9.8, 6e23), bvec2(true, false)))`` will return ``vec2(9.8, 314)``."
-msgstr ""
-"如果 ``a`` 、 ``b`` 和 ``c`` 都是向量类型，该操作会按分量（ :ref:`component-"
-"wise <shading_componentwise>`）进行。也就是说， ``mix(vec2(42, 314), "
-"vec2(9.8, 6e23), bvec2(true, false)))`` 将会返回 ``vec2(9.8, 314)`` 。"
-
 msgid "Value returned when ``c`` is false."
 msgstr "当 ``c`` 为假（false）时返回的值。"
 
@@ -1573,14 +1538,6 @@ msgid ""
 msgstr "``fma()`` 的精度，可能会与表达式 ``a * b + c`` 的精度不同。"
 
 msgid ""
-"``fma()`` will be computed with the same precision as any other ``fma()`` "
-"consumed by a precise variable, giving invariant results for the same input "
-"values of a, b and c."
-msgstr ""
-"``fma()`` 的计算精度，将与被 precise 变量使用的任何其他 ``fma()`` 保持一致，"
-"从而保证在 a、b 和 c 的输入值相同时，得出的结果也是恒定不变的。"
-
-msgid ""
 "Otherwise, in the absence of precise consumption, there are no special "
 "constraints on the number of operations or difference in precision between "
 "``fma()`` and the expression ``a * b + c``."
@@ -1614,17 +1571,6 @@ msgid ""
 "|vec_type| **step**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
 msgstr ""
 "|vec_type| **step**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
-
-msgid "Generates a step function by comparing b to a."
-msgstr "通过将 b 与 a 进行比较，来生成一个阶跃函数。"
-
-msgid ""
-"Equivalent to ``if (b < a) { return 0.0; } else { return 1.0; }``. For "
-"element i of the return value, 0.0 is returned if b[i] < a[i], and 1.0 is "
-"returned otherwise."
-msgstr ""
-"它等价于 ``if (b < a) { return 0.0; } else { return 1.0; }`` 。对于返回值中的"
-"第 i 个元素，如果 b[i] < a[i]，则返回 0.0；否则返回 1.0。"
 
 msgid "The location of the edge of the step function."
 msgstr "阶跃函数边缘的位置。"
@@ -1684,16 +1630,6 @@ msgid ""
 "|vec_bool_type| **isnan**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
 msgstr ""
 "|vec_bool_type| **isnan**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
-
-msgid ""
-"For each element i of the result, returns ``true`` if x[i] is positive or "
-"negative floating-point NaN (Not a Number) and false otherwise."
-msgstr ""
-"对于结果中的每个元素 i，如果 x[i] 是正数或负数的 NaN（Not a Number，非数"
-"字），则返回 ``true`` ，否则返回 false。"
-
-msgid "The value to test for NaN."
-msgstr "要与 NaN 比较的值。"
 
 msgid "``true`` or ``false``."
 msgstr "``true`` 或 ``false``\\ 。"
@@ -1870,9 +1806,6 @@ msgstr ""
 ":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
 "I, |vec_type| Nref)"
 
-msgid "If ``dot(Nref, I)`` < 0, return ``N``, otherwise ``-N``."
-msgstr "如果 ``dot(Nref, I)`` < 0，则返回 ``N``\\ ，否则返回 ``-N``\\ 。"
-
 msgid "|mat_type|"
 msgstr "|mat_type|"
 
@@ -1920,12 +1853,6 @@ msgstr "几何函数描述"
 msgid "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
 msgstr "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
 
-msgid ""
-"Returns the length of the vector. ie. ``sqrt(x[0] * x[0] + x[1] * x[1] + ... "
-"+ x[n] * x[n])``"
-msgstr ""
-"返回向量的长度。即 ``sqrt(x[0] * x[0] + x[1] * x[1] + ... + x[n] * x[n])``"
-
 msgid "The vector"
 msgstr "向量"
 
@@ -1941,12 +1868,6 @@ msgid ""
 msgstr ""
 "float **distance**\\ (\\ |vec_type| a, |vec_type| "
 "b) :ref:`🔗<shader_func_distance>`"
-
-msgid "Returns the distance between the two points a and b."
-msgstr "返回 a、b 两点之间的距离。"
-
-msgid "i.e., ``length(b - a);``"
-msgstr "即 ``length(b - a);``"
 
 msgid "The first point."
 msgstr "第一个点。"
@@ -1967,11 +1888,6 @@ msgid ""
 msgstr ""
 "float **dot**\\ (\\ |vec_type| a, |vec_type| b) :ref:`🔗<shader_func_dot>`"
 
-msgid ""
-"Returns the dot product of two vectors, ``a`` and ``b``. i.e., ``a.x * b.x + "
-"a.y * b.y + ...``"
-msgstr "返回向量 ``a`` 和 ``b`` 的点积，即 ``a.x * b.x + a.y * b.y + ...``"
-
 msgid "The first vector."
 msgstr "第一个向量。"
 
@@ -1986,9 +1902,6 @@ msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
 
 msgid "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
 msgstr "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
-
-msgid "Returns the cross product of two vectors. i.e.:"
-msgstr "返回两个向量的叉积。即："
 
 msgid "The cross product of ``a`` and ``b``."
 msgstr "``a`` 和 ``b`` 的叉积。"
@@ -2270,16 +2183,10 @@ msgid ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 
-msgid "Bool vector comparison on < int/uint/float vectors."
-msgstr "Bool vector 对比 < int/uint/float vectors。"
-
 msgid ""
 ":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
-
-msgid "Bool vector comparison on > int/uint/float vectors."
-msgstr "Bool vector 对比 > int/uint/float vectors。"
 
 msgid ""
 ":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
@@ -2288,31 +2195,19 @@ msgstr ""
 ":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
 "vec_type| y)"
 
-msgid "Bool vector comparison on <= int/uint/float vectors."
-msgstr "Bool vector 对比 <= int/uint/float vectors。"
-
 msgid ""
 ":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
 "vec_type| y)"
 msgstr ""
 ":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
 "vec_type| y)"
-
-msgid "Bool vector comparison on >= int/uint/float vectors."
-msgstr "Bool vector 对比 >= int/uint/float vectors。"
 
 msgid ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
 
-msgid "Bool vector comparison on == int/uint/float vectors."
-msgstr "Bool vector 对比 == int/uint/float vectors。"
-
 msgid ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
-
-msgid "Bool vector comparison on != int/uint/float vectors."
-msgstr "Bool vector 对比 != int/uint/float vectors。"
 
 msgid "bool"
 msgstr "bool"
@@ -2472,12 +2367,6 @@ msgstr ""
 "对两个向量进行逐分量的不等于（not-equal-to）比较 :ref:`component-"
 "wise<shading_componentwise>` 。"
 
-msgid "The first vector for comparison."
-msgstr "要比较的第一个向量。"
-
-msgid "The second vector for comparison."
-msgstr "要比较的第二个向量。"
-
 msgid ""
 "A boolean vector in which each element ``i`` is computed as ``x[i] != y[i]``."
 msgstr "一个布尔向量，分量 ``i`` 的计算方法为 ``x[i] != y[i]``\\ 。"
@@ -2502,9 +2391,6 @@ msgstr "在功能上等同于："
 
 msgid "The vector to be tested for truth."
 msgstr "要检查真假的向量。"
-
-msgid "True if any element of x is true and false otherwise."
-msgstr "如果 x 中的任意分量为 true 则为 true，否则为 false。"
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
@@ -2531,14 +2417,8 @@ msgid ""
 msgstr ""
 "|vec_bool_type| **not**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_not>`"
 
-msgid "Logically invert a boolean vector."
-msgstr "对布尔向量进行逻辑取反。"
-
 msgid "The vector to be inverted."
 msgstr "需要取反的向量。"
-
-msgid "A new boolean vector for which each element i is computed as !x[i]."
-msgstr "生成一个新的布尔向量，其中每个元素 i 的值都等于 !x[i]。"
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
@@ -2581,16 +2461,13 @@ msgid ""
 msgstr ""
 ":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
 
-msgid "Get the size of a texture."
-msgstr "获取纹理的大小。"
-
 msgid ""
 "For performance reasons, this function should be avoided as it always "
 "performs a full texture read. When possible, you should pass the texture "
 "size as a uniform instead."
 msgstr ""
-"出于性能考虑，应尽量避免使用此函数，因为它总是会执行一次完整的纹理读取。如果"
-"可能的话，你应该改为将纹理尺寸作为一个 uniform（全局变量）传递进去。"
+"出于性能考虑，应避免使用此函数，因为它始终会执行完整的纹理读取。在可能的情况"
+"下，建议改为通过 uniform 传入纹理尺寸。"
 
 msgid "vec2"
 msgstr "vec2"
@@ -2623,10 +2500,6 @@ msgstr ""
 ":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ samplerCube s, "
 "vec3 p)"
 
-msgid ""
-"Compute the level-of-detail that would be used to sample from a texture."
-msgstr "计算对纹理进行采样时，将会使用的细节层级（level-of-detail）。"
-
 msgid "int"
 msgstr "int"
 
@@ -2657,9 +2530,6 @@ msgid ""
 msgstr ""
 ":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ samplerCube "
 "s)"
-
-msgid "Get the number of accessible mipmap levels of a texture."
-msgstr "获取纹理中可访问的 mipmap 层级的数量。"
 
 msgid "|gvec4_type|"
 msgstr "|gvec4_type|"
@@ -2856,9 +2726,6 @@ msgid ""
 msgstr ""
 ":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler3D| s, "
 "vec4 p, vec3 dPdx, vec3 dPdy)"
-
-msgid "Performs a texture read with projection/LOD and with explicit"
-msgstr "执行带投影/LOD、带显式渐变的纹理读取"
 
 msgid ""
 ":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2D| s, ivec2 p, int "
@@ -3068,6 +2935,10 @@ msgid "Available only in the fragment shader."
 msgstr "仅在片段着色器中可用。"
 
 msgid ""
+"Compute the level-of-detail that would be used to sample from a texture."
+msgstr "计算对纹理进行采样时，将会使用的细节层级（level-of-detail）。"
+
+msgid ""
 "The mipmap array(s) that would be accessed is returned in the x component of "
 "the return value. The computed level-of-detail relative to the base level is "
 "returned in the y component of the return value."
@@ -3263,20 +3134,6 @@ msgstr ""
 "|gvec4_type| **textureProj**\\ (\\ |gsampler3D| s, vec4 p [, float "
 "bias] ) :ref:`🔗<shader_func_textureProj>`"
 
-msgid "Perform a texture lookup with projection."
-msgstr "执行带投影的纹理读取。"
-
-msgid ""
-"The texture coordinates consumed from ``p``, not including the last "
-"component of ``p``, are divided by the last component of ``p``. The "
-"resulting 3rd component of ``p`` in the shadow forms is used as Dref. After "
-"these values are computed, the texture lookup proceeds as in texture."
-msgstr ""
-"从 ``p`` 中获取的纹理坐标（不包含 ``p`` 的最后一个分量），会先除以 ``p`` 的最"
-"后一个分量。在阴影采样形式中， ``p`` 经过这样计算后得到的第3个分量会被用作 "
-"Dref（深度参考值）。在这些数值计算完毕之后，纹理查找的过程就会像 texture 那样"
-"继续进行。"
-
 msgid "Optional bias to be applied during level-of-detail computation."
 msgstr "在进行细节层级（level-of-detail）计算时，可以应用的可选偏移量。"
 
@@ -3364,20 +3221,6 @@ msgstr ""
 "从明确指定的细节层级（level-of-detail）中，执行带有投影（projection）的纹理查"
 "找。"
 
-msgid ""
-"The texture coordinates consumed from P, not including the last component of "
-"``p``, are divided by the last component of ``p``. The resulting 3rd "
-"component of ``p`` in the shadow forms is used as Dref. After these values "
-"are computed, the texture lookup proceeds as in "
-"`textureLod<shader_func_textureLod>`, with ``lod`` used to specify the level-"
-"of-detail from which the texture will be sampled."
-msgstr ""
-"从 P 中获取的纹理坐标（不包含 ``p`` 的最后一个分量），会先除以 ``p`` 的最后一"
-"个分量。在阴影采样形式中， ``p`` 经过这样计算后得到的第3个分量会被用作 Dref"
-"（深度参考值）。在这些数值计算完毕之后，纹理查找的过程就会像 textureLod 那样"
-"继续进行，并使用 ``lod`` 来指定从哪个细节层级（level-of-detail）对纹理进行采"
-"样。"
-
 msgid "The explicit level-of-detail from which to fetch texels."
 msgstr "用于获取纹理元素（texels）的明确细节层级（level-of-detail）。"
 
@@ -3426,14 +3269,6 @@ msgstr ""
 "vec4 **textureGrad**\\ (\\ samplerCubeArray s, vec3 p, vec3 dPdx, vec3 "
 "dPdy) :ref:`🔗<shader_func_textureGrad>`"
 
-msgid ""
-"Performs a texture lookup at coordinate ``p`` from the texture bound to "
-"sampler with explicit texture coordinate gradiends as specified in ``dPdx`` "
-"and ``dPdy``. Set:"
-msgstr ""
-"以 ``dPdx`` 和 ``dPdy`` 中指定的显式纹理坐标梯度，从 sampler 绑定的纹理中，对"
-"坐标 ``p`` 处进行纹理查找。设置："
-
 msgid "``δs/δx=δp/δx`` for a 1D texture, ``δp.s/δx`` otherwise"
 msgstr "1D 纹理为 ``δs/δx=δp/δx``\\ ，其他为 ``δp.s/δx``"
 
@@ -3448,9 +3283,6 @@ msgstr "1D 纹理为 ``δt/δy=0.0``\\ ，其他为 ``δp.t/δy``"
 
 msgid "``δr/δx=0.0`` for a 1D or 2D texture, ``δp.p/δx`` otherwise"
 msgstr "1D 和 2D 纹理为 ``δr/δx=0.0``\\ ，其他为 ``δp.p/δx``"
-
-msgid "``δr/δy=0.0``  for a 1D or 2D texture, ``δp.p/δy`` otherwise"
-msgstr "1D 和 2D 纹理为 ``δr/δy=0.0``\\ ，其他为 ``δp.p/δy``"
 
 msgid ""
 "For the cube version, the partial derivatives of ``p`` are assumed to be in "
@@ -3497,21 +3329,6 @@ msgid ""
 msgstr ""
 "|gvec4_type| **textureProjGrad**\\ (\\ |gsampler3D| s, vec4 p, vec3 dPdx, "
 "vec3 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
-
-msgid "Perform a texture lookup with projection and explicit gradients."
-msgstr "执行带投影和显式梯度计算的纹理查找。"
-
-msgid ""
-"The texture coordinates consumed from ``p``, not including the last "
-"component of ``p``, are divided by the last component of ``p``. After these "
-"values are computed, the texture lookup proceeds as in "
-"`textureGrad<shader_func_textureGrad>`, passing ``dPdx`` and ``dPdy`` as "
-"gradients."
-msgstr ""
-"从 ``p`` 中获取的纹理坐标（不包含 ``p`` 的最后一个分量），会先除以 ``p`` 的最"
-"后一个分量。在算出这些值之后，纹理查找的过程就会像 "
-"`textureGrad<shader_func_textureGrad>` 那样继续进行，并把 ``dPdx`` 和 "
-"``dPdy`` 作为梯度参数传进去。"
 
 msgid "The partial derivative of ``p`` with respect to window x."
 msgstr "``p`` 相对于窗口 x 坐标的偏导数。"
@@ -3772,9 +3589,6 @@ msgstr ""
 
 msgid "Uses local differencing for the input argument p."
 msgstr "对输入参数 p 使用局部差分。"
-
-msgid "Equivalent  to ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``."
-msgstr "等价于 ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``\\ 。"
 
 msgid ""
 "|vec_type| **fwidthFine**\\ (\\ |vec_type| "
@@ -4581,17 +4395,6 @@ msgstr ""
 "|vec_uint_type| **uaddCarry**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
 "out |vec_uint_type| carry) :ref:`🔗<shader_func_uaddCarry>`"
 
-msgid "Add unsigned integers and generate carry."
-msgstr "对无符号整数进行加法运算，并产生进位。"
-
-msgid ""
-"adds two 32-bit unsigned integer variables (scalars or vectors) and "
-"generates a 32-bit unsigned integer result, along with a carry output. The "
-"value carry is ."
-msgstr ""
-"将两个 32 位无符号整数变量（标量或向量）相加，并生成一个 32 位无符号整数结"
-"果，同时输出进位值。其进位值为 。"
-
 msgid "The first operand."
 msgstr "第一个操作数。"
 
@@ -4600,9 +4403,6 @@ msgstr "第二个操作数。"
 
 msgid "param carry"
 msgstr "参数进位（Carry）"
-
-msgid "0 if the sum is less than 2\\ :sup:`32`, otherwise 1."
-msgstr "如果总和小于 2\\ :sup:`32`，结果为 0；否则结果为 1。"
 
 msgid "``(x + y) % 2^32``."
 msgstr "``(x + y) % 2^32``\\ 。"
@@ -4684,17 +4484,6 @@ msgid ""
 msgstr ""
 "将 ``x`` 拆分为一个范围在 ``[0.5, 1.0)`` 之间的浮点尾数，以及一个以 2 为底的"
 "整数指数，并且满足以下关系："
-
-msgid ""
-"For a floating-point value of zero, the significand and exponent are both "
-"zero."
-msgstr "对于值为零的浮点数，它的尾数和指数都为零。"
-
-msgid ""
-"For a floating-point value that is an infinity or a floating-point NaN, the "
-"results are undefined."
-msgstr ""
-"如果浮点数值是无穷大（infinity）或者非数（NaN），那么结果将是未定义的。"
 
 msgid "The value from which significand and exponent are to be extracted."
 msgstr "需要从中提取 尾数 和 指数 的那个数值。"

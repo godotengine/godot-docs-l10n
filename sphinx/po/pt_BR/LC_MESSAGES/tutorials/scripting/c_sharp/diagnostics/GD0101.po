@@ -11,5 +11,75 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0101: The exported member is static"
+msgstr "GD0101: O membro exportado é estático (static)"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0101"
+msgstr "GD0101"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Breaking - If the ``static`` keyword is removed"
+msgstr ""
+"Altera a compatibilidade (breaking) - Se a palavra-chave ``static`` for "
+"removida"
+
+msgid "Non-breaking - If the ``[Export]`` attribute is removed"
+msgstr ""
+"Não altera a compatibilidade (non-breaking) - Se o atributo ``[Export]`` for "
+"removido"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"A static member is annotated with the ``[Export]`` attribute. Static members "
+"can't be exported."
+msgstr ""
+"Um membro estático está anotado com o atributo ``[Export]``. Membros "
+"estáticos não podem ser exportados."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid "Godot doesn't allow exporting static members."
+msgstr "O Godot não permite a exportação de membros estáticos."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, remove the ``[Export]`` attribute or remove "
+"the ``static`` keyword."
+msgstr ""
+"Para corrigir uma violação desta regra, remova o atributo ``[Export]`` ou "
+"remova a palavra-chave ``static``."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Static members can't be exported "
+"so they will be ignored by Godot, resulting in runtime errors."
+msgstr ""
+"Não suprima um aviso desta regra. Membros estáticos não podem ser "
+"exportados, portanto serão ignorados pelo Godot, resultando em erros em "
+"tempo de execução."

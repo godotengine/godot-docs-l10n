@@ -11,5 +11,73 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0107: Types not derived from Node should not export Node members"
+msgstr "GD0107: Tipos não derivados de Node não devem exportar membros Node"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0107"
+msgstr "GD0107"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Breaking"
+msgstr "Quebra compatibilidade (Breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"A type that doesn't derive from ``Node`` contains an exported field or "
+"property of a type that derives from ``Node``."
+msgstr ""
+"Um tipo que não deriva de ``Node`` contém um campo ou propriedade exportada "
+"de um tipo que deriva de ``Node``."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid ""
+"Exported nodes are serialized as ``NodePath``. Only types derived from "
+"``Node`` are able to get the node instance from the ``NodePath``."
+msgstr ""
+"Nós exportados são serializados como ``NodePath``. Apenas tipos derivados de "
+"``Node`` são capazes de obter a instância do nó a partir do ``NodePath``."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, avoid exporting ``Node`` members on a type "
+"that doesn't derive from ``Node``, or consider exporting a ``NodePath``."
+msgstr ""
+"Para corrigir uma violação desta regra, evite exportar membros ``Node`` em "
+"um tipo que não deriva de ``Node``, ou considere exportar um ``NodePath``."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Types that don't derive from "
+"``Node`` will be unable to retrieve the right node instance for exported "
+"``Node`` members, resulting in unexpected runtime errors."
+msgstr ""
+"Não suprima um aviso desta regra. Tipos que não derivam de ``Node`` serão "
+"incapazes de recuperar a instância correta do nó para membros ``Node`` "
+"exportados, resultando em erros inesperados em tempo de execução."

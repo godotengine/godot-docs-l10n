@@ -132,12 +132,12 @@ msgstr "要添加供编译器查看的包含目录，可以将其追加到环境
 
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
-"to clone `env` first, so it won't add those flags to whole Godot build "
-"(which can cause errors). Example `SCsub` with custom flags:"
+"to clone ``env`` first, so it won't add those flags to whole Godot build "
+"(which can cause errors). Example ``SCsub`` with custom flags:"
 msgstr ""
-"如果要在构建模块时添加自定义编译器标志, 则需要首先克隆 `env`, 这样它就不会将"
-"这些标志添加到整个Godot构建中(这可能会导致错误). 带有自定义标志的示例 "
-"`SCsub`:"
+"如果你想在构建模块时添加自定义编译器标志，你需要先克隆 ``env`` ，这样它就不会"
+"把这些标志添加到整个Godot构建中（这可能导致错误）。例子 ``SCsub`` 带有自定义"
+"标志:"
 
 msgid "The final module should look like this:"
 msgstr "最终模块应如下所示:"

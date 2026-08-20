@@ -55,9 +55,6 @@ msgstr "Operador"
 msgid "Notes"
 msgstr "Notas"
 
-msgid "Addition ``+``"
-msgstr "Adición ``+``"
-
 msgid ""
 "Can also be used to concatenate strings and arrays: - ``\"hello\" + \" "
 "world\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
@@ -105,7 +102,7 @@ msgstr ""
 "Los espacios alrededor de los operadores son opcionales. Además, ten en "
 "cuenta que se aplica el `orden habitual de las operaciones <https://"
 "en.wikipedia.org/wiki/Order_of_operations>`__. Utiliza paréntesis para "
-"anular el orden de las operaciones si es necesario."
+"sobrescribir el orden de las operaciones si es necesario."
 
 msgid ""
 "All the Variant types supported in Godot can be used: integers, floating-"

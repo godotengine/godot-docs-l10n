@@ -11,6 +11,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.3 to Godot 4.4"
+msgstr "Atualizando do Godot 4.3 para o Godot 4.4"
+
+msgid ""
+"For most games and apps made with 4.3 it should be relatively safe to "
+"migrate to 4.4. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"Para a maioria dos jogos e aplicativos feitos com a versão 4.3, deve ser "
+"relativamente seguro migrar para a 4.4. Esta página tem como objetivo cobrir "
+"tudo o que você precisa observar ao migrar seu projeto."
+
+msgid "Breaking changes"
+msgstr "Alterações incompatíveis"
+
+msgid ""
+"If you are migrating from 4.3 to 4.4, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"Se você estiver migrando da 4.3 para a 4.4, as mudanças incompatíveis "
+"listadas aqui podem afetá-lo. As alterações estão agrupadas por áreas/"
+"sistemas."
+
 msgid ""
 "This article indicates whether each breaking change affects GDScript and "
 "whether the C# breaking change is *binary compatible* or *source compatible*:"
@@ -18,6 +41,14 @@ msgstr ""
 "Este artigo indica se cada alteração drástica afeta o GDScript e se a "
 "alteração drástica do C# é *compatível com o binário* ou *compatível com o "
 "código-fonte*:"
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the run-time behavior won't change."
+msgstr ""
+"**Compatível em nível binário** - Binários existentes serão carregados e "
+"executados com sucesso sem recompilação, e o comportamento em tempo de "
+"execução não será alterado."
 
 msgid ""
 "**Source compatible** - Source code will compile successfully without "
@@ -32,6 +63,9 @@ msgstr "Componentes Principais"
 msgid "Change"
 msgstr "Mudança"
 
+msgid "GDScript Compatible"
+msgstr "Compatível com GDScript"
+
 msgid "C# Binary Compatible"
 msgstr "Compatível com C# Binário"
 
@@ -44,28 +78,135 @@ msgstr "Introduzido"
 msgid "**FileAccess**"
 msgstr "**FileAccess**"
 
+msgid "Method ``open_encrypted`` adds a new ``iv`` optional parameter"
+msgstr "Método ``open_encrypted`` adiciona um novo parâmetro opcional ``iv``"
+
 msgid "|✔️|"
 msgstr "|✔️|"
 
 msgid "|✔️ with compat|"
 msgstr "|✔️ with compat|"
 
+msgid "`GH-98918`_"
+msgstr "`GH-98918`_"
+
+msgid "Method ``store_8`` changes return type from ``void`` to ``bool``"
+msgstr "Método ``store_8`` altera o tipo de retorno de ``void`` para ``bool``"
+
 msgid "|❌|"
 msgstr "|❌|"
 
-msgid ""
-"The behavior of ``@export_file`` changed in Godot 4.4. When assigning a new "
-"value from the Inspector, the path is now stored and returned as a ``uid://"
-"`` reference instead of the traditional ``res://`` path(`GH-97912`_). This "
-"is a **breaking change** and may cause issues if you're expecting ``res://``-"
-"based paths in scripts or serialized files."
+msgid "`GH-78289`_"
+msgstr "`GH-78289`_"
+
+msgid "Method ``store_16`` changes return type from ``void`` to ``bool``"
+msgstr "Método ``store_16`` altera o tipo de retorno de ``void`` para ``bool``"
+
+msgid "Method ``store_32`` changes return type from ``void`` to ``bool``"
+msgstr "Método ``store_32`` altera o tipo de retorno de ``void`` para ``bool``"
+
+msgid "Method ``store_64`` changes return type from ``void`` to ``bool``"
+msgstr "Método ``store_64`` altera o tipo de retorno de ``void`` para ``bool``"
+
+msgid "Method ``store_buffer`` changes return type from ``void`` to ``bool``"
 msgstr ""
-"O comportamento de ``@export_file`` mudou no Godot 4.4. Ao atribuir um novo "
-"valor a partir do Inspetor, o caminho agora é armazenado e retornado como "
-"uma referência ``uid://`` em vez do caminho tradicional ``res://`` "
-"(`GH-97912`_). Esta é uma **mudança drástica** e pode causar problemas se "
-"você estiver esperando caminhos baseados em ``res://`` em scripts ou "
-"arquivos serializados."
+"Método ``store_buffer`` altera o tipo de retorno de ``void`` para ``bool``"
+
+msgid "Method ``store_csv_line`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"Método ``store_csv_line`` altera o tipo de retorno de ``void`` para ``bool``"
+
+msgid "Method ``store_double`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"Método ``store_double`` altera o tipo de retorno de ``void`` para ``bool``"
+
+msgid "Method ``store_float`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"Método ``store_float`` altera o tipo de retorno de ``void`` para ``bool``"
+
+msgid "Method ``store_half`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"Método ``store_half`` altera o tipo de retorno de ``void`` para ``bool``"
+
+msgid "Method ``store_line`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"Método ``store_line`` altera o tipo de retorno de ``void`` para ``bool``"
+
+msgid ""
+"Method ``store_pascal_string`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"Método ``store_pascal_string`` altera o tipo de retorno de ``void`` para "
+"``bool``"
+
+msgid "Method ``store_real`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"Método ``store_real`` altera o tipo de retorno de ``void`` para ``bool``"
+
+msgid "Method ``store_string`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"Método ``store_string`` altera o tipo de retorno de ``void`` para ``bool``"
+
+msgid "Method ``store_var`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"Método ``store_var`` altera o tipo de retorno de ``void`` para ``bool``"
+
+msgid "**OS**"
+msgstr "**OS**"
+
+msgid "Method ``execute_with_pipe`` adds a new ``blocking`` optional parameter"
+msgstr ""
+"Método ``execute_with_pipe`` adiciona um novo parâmetro opcional ``blocking``"
+
+msgid "`GH-94434`_"
+msgstr "`GH-94434`_"
+
+msgid ""
+"Method ``read_string_from_stdin`` adds a new ``buffer_size`` parameter [#f1]_"
+msgstr ""
+"O método ``read_string_from_stdin`` adiciona um novo parâmetro "
+"``buffer_size`` [#f1]_"
+
+msgid "`GH-91201`_"
+msgstr "`GH-91201`_"
+
+msgid "**RegEx**"
+msgstr "**RegEx**"
+
+msgid "Method ``compile`` adds a new ``show_error`` optional parameter"
+msgstr "Método ``compile`` adiciona um novo parâmetro opcional ``show_error``"
+
+msgid "`GH-95212`_"
+msgstr "`GH-95212`_"
+
+msgid ""
+"Method ``create_from_string`` adds a new ``show_error`` optional parameter"
+msgstr ""
+"Método ``create_from_string`` adiciona um novo parâmetro opcional "
+"``show_error``"
+
+msgid "**Semaphore**"
+msgstr "**Semaphore**"
+
+msgid "Method ``post`` adds a new ``count`` optional parameter"
+msgstr "Método ``post`` adiciona um novo parâmetro opcional ``count``"
+
+msgid "`GH-93605`_"
+msgstr "`GH-93605`_"
+
+msgid "**TranslationServer**"
+msgstr "**TranslationServer**"
+
+msgid ""
+"Method ``standardize_locale`` adds a new ``add_defaults`` optional parameter"
+msgstr ""
+"Método ``standardize_locale`` adiciona um novo parâmetro opcional "
+"``add_defaults``"
+
+msgid "`GH-98972`_"
+msgstr "`GH-98972`_"
+
+msgid "**Export annotations**"
+msgstr "**Export annotations** (Anotações de exportação)"
 
 msgid ""
 "For example, exported arrays of files may now contain a mix of ``uid://`` "
@@ -76,41 +217,197 @@ msgstr ""
 "caminhos ``uid://`` e ``res://``, especialmente se eles foram parcialmente "
 "editados no Inspetor."
 
-msgid ""
-"In 4.4, the only way to retain the ``res://`` format is to **manually edit** "
-"the `.tscn` or `.tres` files in a text editor. Starting in Godot 4.5, a new "
-"annotation ``@export_file_path`` can be used to explicitly retain the old "
-"behavior and export raw ``res://`` paths."
-msgstr ""
-"Em 4.4, a única maneira de manter o formato ``res://`` é **editar "
-"manualmente** os arquivos `.tscn` ou `.tres` em um editor de texto. A partir "
-"do Godot 4.5, uma nova anotação ``@export_file_path`` pode ser usada para "
-"reter explicitamente o comportamento antigo e exportar os caminhos ``res://"
-"`` brutos."
-
 msgid "Default buffer size in 4.3 is ``1024``."
 msgstr "O tamanho padrão do buffer no 4.3 é ``1024``."
+
+msgid "GUI nodes"
+msgstr "Nós de GUI"
 
 msgid "**RichTextLabel**"
 msgstr "**Texto Formatado**"
 
+msgid "Method ``push_meta`` adds a new ``tooltip`` optional parameter"
+msgstr "Método ``push_meta`` adiciona um novo parâmetro opcional ``tooltip``"
+
+msgid "`GH-99481`_"
+msgstr "`GH-99481`_"
+
+msgid ""
+"Method ``set_table_column_expand`` adds a new ``shrink`` optional parameter"
+msgstr ""
+"Método ``set_table_column_expand`` adiciona um novo parâmetro opcional "
+"``shrink``"
+
+msgid "`GH-101482`_"
+msgstr "`GH-101482`_"
+
+msgid "**GraphEdit**"
+msgstr "**GraphEdit**"
+
+msgid "Method ``connect_node`` adds a new ``keep_alive`` optional parameter"
+msgstr ""
+"Método ``connect_node`` adiciona um novo parâmetro opcional ``keep_alive``"
+
+msgid "`GH-97449`_"
+msgstr "`GH-97449`_"
+
+msgid ""
+"Signal ``frame_rect_changed`` changes ``new_rect`` parameter type from "
+"``Vector2`` to ``Rect2``"
+msgstr ""
+"Sinal ``frame_rect_changed`` altera o tipo do parâmetro ``new_rect`` de "
+"``Vector2`` para ``Rect2``"
+
+msgid "`GH-102796`_"
+msgstr "`GH-102796`_"
+
 msgid "Physics"
 msgstr "Física"
+
+msgid "**SoftBody3D**"
+msgstr "**SoftBody3D**"
+
+msgid "Method ``set_point_pinned`` adds a new ``insert_at`` optional parameter"
+msgstr ""
+"Método ``set_point_pinned`` adiciona um novo parâmetro opcional ``insert_at``"
+
+msgid "`GH-94684`_"
+msgstr "`GH-94684`_"
 
 msgid "Rendering"
 msgstr "Renderização"
 
+msgid "**CPUParticles2D**"
+msgstr "**CPUParticles2D**"
+
+msgid "Method ``restart`` adds a new ``keep_seed`` optional parameter"
+msgstr "Método ``restart`` adiciona um novo parâmetro opcional ``keep_seed``"
+
+msgid "`GH-92089`_"
+msgstr "`GH-92089`_"
+
+msgid "**CPUParticles3D**"
+msgstr "**CPUParticles3D**"
+
+msgid "**GPUParticles2D**"
+msgstr "**GPUParticles2D**"
+
+msgid "**GPUParticles3D**"
+msgstr "**GPUParticles3D**"
+
 msgid "**RenderingDevice**"
 msgstr "**Dispositivo de Renderização**"
 
+msgid "Method ``draw_list_begin`` adds a new ``breadcrumb`` optional parameter"
+msgstr ""
+"Método ``draw_list_begin`` adiciona um novo parâmetro opcional ``breadcrumb``"
+
+msgid "`GH-90993`_"
+msgstr "`GH-90993`_"
+
+msgid "Method ``draw_list_begin`` removes many parameters"
+msgstr "O método ``draw_list_begin`` remove muitos parâmetros"
+
+msgid "`GH-98670`_"
+msgstr "`GH-98670`_"
+
+msgid ""
+"Method ``index_buffer_create`` adds a new ``enable_device_address`` optional "
+"parameter"
+msgstr ""
+"Método ``index_buffer_create`` adiciona um novo parâmetro opcional "
+"``enable_device_address``"
+
+msgid "`GH-100062`_"
+msgstr "`GH-100062`_"
+
+msgid ""
+"Method ``uniform_buffer_create`` adds a new ``enable_device_address`` "
+"optional parameter"
+msgstr ""
+"Método ``uniform_buffer_create`` adiciona um novo parâmetro opcional "
+"``enable_device_address``"
+
+msgid ""
+"Method ``vertex_buffer_create`` adds a new ``enable_device_address`` "
+"optional parameter"
+msgstr ""
+"Método ``vertex_buffer_create`` adiciona um novo parâmetro opcional "
+"``enable_device_address``"
+
 msgid "**RenderingServer**"
 msgstr "**Dispositivo de Servidor**"
+
+msgid ""
+"Method ``multimesh_allocate_data`` adds a new ``use_indirect`` optional "
+"parameter"
+msgstr ""
+"Método ``multimesh_allocate_data`` adiciona um novo parâmetro opcional "
+"``use_indirect``"
+
+msgid "`GH-99455`_"
+msgstr "`GH-99455`_"
+
+msgid "**Shader**"
+msgstr "**Shader**"
+
+msgid ""
+"Method ``get_default_texture_parameter`` changes return type from "
+"``Texture2D`` to ``Texture``"
+msgstr ""
+"Método ``get_default_texture_parameter`` altera o tipo de retorno de "
+"``Texture2D`` para ``Texture``"
+
+msgid "`GH-95126`_"
+msgstr "`GH-95126`_"
+
+msgid ""
+"Method ``set_default_texture_parameter`` changes ``texture`` parameter type "
+"from ``Texture2D`` to ``Texture``"
+msgstr ""
+"Método ``set_default_texture_parameter`` altera o tipo do parâmetro "
+"``texture`` de ``Texture2D`` para ``Texture``"
+
+msgid "**VisualShaderNodeCubemap**"
+msgstr "**VisualShaderNodeCubemap**"
+
+msgid ""
+"Property ``cube_map`` changes type from ``Cubemap`` to ``TextureLayered``"
+msgstr ""
+"Propriedade ``cube_map`` altera o tipo de ``Cubemap`` para ``TextureLayered``"
+
+msgid "**VisualShaderNodeTexture2DArray**"
+msgstr "**VisualShaderNodeTexture2DArray**"
+
+msgid ""
+"Property ``texture_array`` changes type from ``Texture2DArray`` to "
+"``TextureLayered``"
+msgstr ""
+"Propriedade ``texture_array`` altera o tipo de ``Texture2DArray`` para "
+"``TextureLayered``"
+
+msgid ""
+"In C#, the enum ``RenderingDevice.StorageBufferUsage`` breaks compatibility "
+"because of the way the bindings generator detects the enum prefix. New "
+"members where added in `GH-100062`_ to the enum that caused the enum members "
+"to be renamed."
+msgstr ""
+"No C#, o enum ``RenderingDevice.StorageBufferUsage`` quebra a "
+"compatibilidade por causa da maneira como o gerador de vínculos (bindings "
+"generator) detecta o prefixo do enum. Novos membros foram adicionados ao "
+"enum em `GH-100062`_, o que fez com que os membros do enum fossem renomeados."
 
 msgid "Navigation"
 msgstr "Navegação"
 
 msgid "**NavigationServer2D**"
 msgstr "**Servidor de Navegação 2D**"
+
+msgid "Method ``query_path`` adds a new ``callback`` optional parameter"
+msgstr "Método ``query_path`` adiciona um novo parâmetro opcional ``callback``"
+
+msgid "`GH-100129`_"
+msgstr "`GH-100129`_"
 
 msgid "**NavigationServer3D**"
 msgstr "**Servidor de Navegação 3D**"
@@ -122,11 +419,53 @@ msgid "**EditorInterface**"
 msgstr "**Interface do Editor**"
 
 msgid ""
+"Method ``open_scene_from_path`` adds a new ``set_inherited`` optional "
+"parameter"
+msgstr ""
+"Método ``open_scene_from_path`` adiciona um novo parâmetro opcional "
+"``set_inherited``"
+
+msgid "`GH-90057`_"
+msgstr "`GH-90057`_"
+
+msgid ""
+"Method ``popup_node_selector`` adds a new ``current_value`` optional "
+"parameter"
+msgstr ""
+"Método ``popup_node_selector`` adiciona um novo parâmetro opcional "
+"``current_value``"
+
+msgid "`GH-94323`_"
+msgstr "`GH-94323`_"
+
+msgid ""
+"Method ``popup_property_selector`` adds a new ``current_value`` optional "
+"parameter"
+msgstr ""
+"Método ``popup_property_selector`` adiciona um novo parâmetro opcional "
+"``current_value``"
+
+msgid "**EditorSceneFormatImporter**"
+msgstr "**EditorSceneFormatImporter**"
+
+msgid "Method ``_get_import_flags`` removed"
+msgstr "Método ``_get_import_flags`` removido"
+
+msgid "`GH-101531`_"
+msgstr "`GH-101531`_"
+
+msgid "**EditorTranslationParserPlugin**"
+msgstr "**EditorTranslationParserPlugin**"
+
+msgid ""
 "Method ``_parse_file`` changes return type to ``Array`` and removes "
 "``msgids`` and ``msgids_context_plural`` parameters"
 msgstr ""
 "O método ``_parse_file`` altera o tipo de retorno para ``Array`` e remove os "
 "parâmetros ``msgids`` e ``msgids_context_plural``"
+
+msgid "`GH-99297`_"
+msgstr "`GH-99297`_"
 
 msgid ""
 "The method ``_get_import_flags`` was never used by the engine. It was "
@@ -136,6 +475,9 @@ msgstr ""
 "O método ``_get_import_flags`` nunca foi usado pela engine. Ele foi removido "
 "apesar da quebra de compatibilidade, já que não havia como os usuários "
 "dependerem disso para afetar o comportamento da engine."
+
+msgid "Behavior changes"
+msgstr "Mudanças de comportamento"
 
 msgid ""
 "The ``Curve`` resource now enforces its value range, so ``min_value`` and "
@@ -153,6 +495,9 @@ msgstr ""
 "O nó de shader ``VisualShaderNodeVec4Constant`` teve seu tipo de entrada "
 "alterado para ``Vector4``. Os usuários precisam recriar os valores em suas "
 "constantes."
+
+msgid "CSG"
+msgstr "CSG"
 
 msgid ""
 "The CSG implementation now uses Emmett Lalish's `Manifold <https://"

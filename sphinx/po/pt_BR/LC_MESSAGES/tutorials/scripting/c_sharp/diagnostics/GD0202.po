@@ -11,5 +11,102 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid ""
+"GD0202: The parameter of the delegate signature of the signal is not "
+"supported"
+msgstr "GD0202: O parâmetro da assinatura do delegate do sinal não é suportado"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0202"
+msgstr "GD0202"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Breaking - If the parameter type is changed"
+msgstr ""
+"Altera a compatibilidade (breaking) - Se o tipo do parâmetro for alterado"
+
+msgid "Non-breaking - If the ``[Signal]`` attribute is removed"
+msgstr ""
+"Não altera a compatibilidade (non-breaking) - Se o atributo ``[Signal]`` for "
+"removido"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"An unsupported type is specified for a parameter of a delegate annotated "
+"with the ``[Signal]`` attribute when a :ref:`Variant-compatible type "
+"<c_sharp_variant_compatible_types>` is expected."
+msgstr ""
+"Um tipo não suportado foi especificado para um parâmetro de um delegate "
+"anotado com o atributo ``[Signal]`` quando um :ref:`tipo compatível com "
+"Variant <c_sharp_variant_compatible_types>` era esperado."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid ""
+"Every signal parameter must be Variant-compatible so it can be marshalled "
+"when emitting the signal and invoking the callbacks."
+msgstr ""
+"Todo parâmetro de sinal deve ser compatível com Variant para que possa "
+"passar pelo marshalling ao emitir o sinal e invocar os callbacks."
+
+msgid ""
+"Take a look at the :ref:`C# signals <doc_c_sharp_signals>` documentation for "
+"more information about how to declare and use signals."
+msgstr ""
+"Dê uma olhada na documentação de :ref:`sinais em C# <doc_c_sharp_signals>` "
+"para mais informações sobre como declarar e usar sinais."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, change the parameter type to be Variant-"
+"compatible or remove the ``[Signal]`` attribute from the delegate. Note that "
+"removing the attribute will mean the signal is not registered."
+msgstr ""
+"Para corrigir uma violação desta regra, altere o tipo do parâmetro para ser "
+"compatível com Variant ou remova o atributo ``[Signal]`` do delegate. Note "
+"que remover o atributo significará que o sinal não será registrado."
+
+msgid ""
+"If the signal doesn't need to interact with Godot, consider using `C# events "
+"<https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/events/"
+">`_ directly. Pure C# events allow you to use any C# type for its parameters."
+msgstr ""
+"Se o sinal não precisar interagir com o Godot, considere usar `eventos C# "
+"<https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/events/"
+">`_ diretamente. Eventos C# puros permitem que você use qualquer tipo C# em "
+"seus parâmetros."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Signal delegates with parameters "
+"that can't be marshalled will result in runtime errors when emitting the "
+"signal or invoking the callbacks."
+msgstr ""
+"Não suprima um aviso desta regra. Delegates de sinal com parâmetros que não "
+"podem passar por marshalling resultarão em erros em tempo de execução ao "
+"emitir o sinal ou invocar os callbacks."

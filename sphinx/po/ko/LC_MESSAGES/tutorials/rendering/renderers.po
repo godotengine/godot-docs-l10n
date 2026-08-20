@@ -86,21 +86,6 @@ msgstr ""
 "**Mobile**, **Compatibility**입니다."
 
 msgid ""
-"The *rendering driver* tells the GPU what to do, using a graphics API. Godot "
-"can use the **OpenGL**, **Vulkan**, **Direct3D 12**, and **Metal** rendering "
-"drivers. Not every GPU supports every rendering driver, and therefore not "
-"every GPU supports all renderers. Vulkan, Direct3D 12, and Metal are modern, "
-"low-level graphics APIs, and requires newer hardware. OpenGL is an older "
-"graphics API that runs on most hardware."
-msgstr ""
-"*렌더링 드라이버*는 그래픽 API를 사용하여 GPU에 수행할 작업을 알려줍니다. "
-"Godot는 **OpenGL**, **Vulkan**, **Direct3D 12** 및 **Metal** 렌더링 드라이버"
-"를 사용할 수 있습니다. 모든 GPU가 모든 렌더링 드라이버를 지원하는 것은 아니므"
-"로 모든 GPU가 모든 렌더러를 지원하는 것은 아닙니다. Vulkan, Direct3D 12 및 "
-"Metal은 최신 저수준 그래픽 API이며 최신 하드웨어가 필요합니다. OpenGL은 대부"
-"분의 하드웨어에서 실행되는 오래된 그래픽 API입니다."
-
-msgid ""
 "RenderingDevice is a *rendering backend*, an abstraction layer between the "
 "renderer and the rendering driver. It is used by the Forward+ and Mobile "
 "renderers, and these renderers are sometimes called \"RenderingDevice-based "
@@ -112,13 +97,6 @@ msgstr ""
 
 msgid "Choosing a renderer"
 msgstr "렌더러 선택하기"
-
-msgid ""
-"Choosing a renderer is a complex question, and depends on your hardware and "
-"the which platforms you are developing for. As a starting point:"
-msgstr ""
-"렌더러를 선택하는 것은 복잡한 질문이며 하드웨어와 개발 대상 플랫폼에 따라 다"
-"릅니다. 출발점:"
 
 msgid "Choose **Forward+** if:"
 msgstr "다음 경우는 **Forward+**\\ 를 선택하세요:"
@@ -141,10 +119,6 @@ msgstr "가장 고급 렌더링 기능을 사용하고 싶습니다."
 msgid "Choose **Mobile** if:"
 msgstr "다음 경우는 **모바일**\\ 을 선택하세요:"
 
-msgid "You are developing for newer mobile devices, desktop XR, or desktop."
-msgstr ""
-"더 새로운 모바일 기기, 데스크톱 XR 또는 데스크톱용으로 개발하고 있습니다."
-
 msgid ""
 "You want to use advanced rendering features, subject to the limitations of "
 "mobile hardware."
@@ -152,14 +126,6 @@ msgstr "모바일 하드웨어의 제한에 따라 고급 렌더링 기능을 �
 
 msgid "Choose **Compatibility** if:"
 msgstr "다음 경우는 **호환성**\\ 을 선택하세요:"
-
-msgid ""
-"You are developing for older mobile devices, older desktop devices, or "
-"standalone XR. The Compatibility renderer supports the widest range of "
-"hardware."
-msgstr ""
-"오래된 모바일 기기, 오래된 데스크톱 기기 또는 독립형 XR용으로 개발하고 있습니"
-"다. 호환성 렌더러는 가장 광범위한 하드웨어를 지원합니다."
 
 msgid ""
 "You are developing for web. In this case, Compatibility is the only choice."
@@ -333,12 +299,6 @@ msgstr ""
 
 msgid "XR"
 msgstr "XR"
-
-msgid "✔️ Yes. Recommended for standalone headsets."
-msgstr "✔️ 네. 독립형 헤드셋에 권장됩니다."
-
-msgid "✔️ Yes. Recommended for desktop headsets."
-msgstr "✔️ 네. 데스크탑 헤드셋에 권장됩니다."
 
 msgid "Web"
 msgstr "웹"
@@ -574,9 +534,6 @@ msgstr "StandardMaterial 기능"
 
 msgid "See :ref:`doc_standard_material_3d` for more information."
 msgstr "자세한 정보는 :ref:`doc_standard_material_3d`\\ 를 참조하세요."
-
-msgid "Sub-surface scattering"
-msgstr "서브서피스 산란"
 
 msgid "Shader features"
 msgstr "셰이더 기능"

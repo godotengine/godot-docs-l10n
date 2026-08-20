@@ -11,11 +11,41 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Deploying to Android"
+msgstr "Distribuire su Android"
+
 msgid "Setup"
 msgstr "Configura"
 
+msgid ""
+"Most standalone headsets run on Android and OpenXR support is making its way "
+"to these platforms."
+msgstr ""
+"La maggior parte dei visore autonomi funziona con Android e il supporto per "
+"OpenXR sta arrivando anche su queste piattaforme."
+
+msgid ""
+"Before following the OpenXR-specific instructions here, you'll need to first "
+"setup your system to export to Android in general, including:"
+msgstr ""
+"Prima di seguire le istruzioni specifiche per OpenXR, ci sarà bisogno di "
+"configurare il sistema per esportare su Android in generale, includendo:"
+
+msgid "Installing OpenJDK 17"
+msgstr "Installare OpenJDK 17"
+
 msgid "Installing Android Studio"
 msgstr "Installare Android Studio"
+
+msgid "Configuring the location of the Android SDK in Godot"
+msgstr "Configurare il percorso dell'Android SDK in Godot"
+
+msgid ""
+"See :ref:`doc_exporting_for_android` for the full details, and return here "
+"when you've finished these steps."
+msgstr ""
+"Consulta la pagina :ref:`doc_exporting_for_android` per tutti i dettagli, e "
+"torna qui quando hai finito questi passaggi."
 
 msgid ""
 "While the Mobile Vulkan renderer has many optimizations targeted at mobile "
@@ -27,6 +57,10 @@ msgstr ""
 "specifiche per i dispositivi mobili, stiamo ancora lavorando per risolvere i "
 "dettagli. Per il momento, è altamente consigliabile utilizzare il motore di "
 "rendering Compatibilità (OpenGL) per i dispositivi XR basati su Android."
+
+msgid "Select **Install Android Build Template...** from the **Project** menu:"
+msgstr ""
+"Seleziona **Installa modello di build Android...** dal menu **Progetto**:"
 
 msgid ""
 "You can read more about gradle builds here: :ref:`doc_android_gradle_build`."

@@ -37,14 +37,6 @@ msgstr ""
 "una build leggera priva di moduli aggiuntivi, o di un eseguibile destinato "
 "allo sviluppo del motore."
 
-msgid ""
-"The articles below should help you navigate configuration options available, "
-"as well as prerequisites required to compile Godot exactly the way you need."
-msgstr ""
-"Gli articoli seguenti aiuteranno a esplorare le opzioni di configurazione "
-"disponibili, oltre che i prerequisiti necessari per compilare Godot "
-"esattamente nel modo desiderato."
-
 msgid "Basics of building Godot"
 msgstr "Le basi per compilare Godot"
 
@@ -75,6 +67,18 @@ msgstr ""
 
 msgid "Other compilation targets and options"
 msgstr "Altre destinazioni e opzioni di compilazione"
+
+msgid ""
+"Some additional universal compilation options require further setup. Namely, "
+"while Godot does have C#/.NET support as a part of its main codebase, it "
+"does not get compiled by default to reduce the executable size for users who "
+"don't need C# for their projects."
+msgstr ""
+"Alcune opzioni universali in più per la compilazione richiedono un ulteriore "
+"configurazione. In particolare, sebbene Godot supporti C#/.NET come parte "
+"del suo codice principale, non viene compilato normalmente per ridurre le "
+"dimensioni dell'eseguibile per gli utenti che non hanno bisogno di C# per i "
+"loro progetti."
 
 msgid ""
 "Articles below explain how to configure the buildsystem for cases like this, "

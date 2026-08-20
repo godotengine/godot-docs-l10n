@@ -1,0 +1,117 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Render modes"
+msgstr "Modalità di rendering"
+
+msgid "Render mode"
+msgstr "Modalità di rendering"
+
+msgid "Description"
+msgstr "Descrizione"
+
+msgid "**blend_disabled**"
+msgstr "**blend_disabled**"
+
+msgid "**blend_mix**"
+msgstr "**blend_mix**"
+
+msgid "**blend_add**"
+msgstr "**blend_add**"
+
+msgid "Additive blend mode."
+msgstr "Modalità di fusione additiva."
+
+msgid "**blend_sub**"
+msgstr "**blend_sub**"
+
+msgid "Subtractive blend mode."
+msgstr "Modalità di fusione sottrattiva."
+
+msgid "**blend_mul**"
+msgstr "**blend_mul**"
+
+msgid "Multiplicative blend mode."
+msgstr "Modalità di fusione moltiplicativa."
+
+msgid "Built-ins"
+msgstr "Variabili integrate"
+
+msgid ""
+"Values marked as ``in`` are read-only. Values marked as ``out`` can "
+"optionally be written to and will not necessarily contain sensible values. "
+"Values marked as ``inout`` provide a sensible default value, and can "
+"optionally be written to. Samplers cannot be written to so they are not "
+"marked."
+msgstr ""
+"I valori marcati come ``in`` sono di sola lettura. I valori marcati come "
+"``out`` sono scrivibili facoltativamente e non contengono necessariamente "
+"valori sensati. I valori marcati come ``inout`` forniscono un valore "
+"predefinito sensato e sono scrivibili facoltativamente. I campionatori non "
+"sono scrivibili, quindi non sono marcati."
+
+msgid "Global built-ins"
+msgstr "Variabili integrate globali"
+
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr ""
+"Le variabili integrate globali sono disponibili ovunque, comprese le "
+"funzioni personalizzate."
+
+msgid "Built-in"
+msgstr "Integrato"
+
+msgid "in float **TIME**"
+msgstr "in float **TIME**"
+
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"Tempo globale dall'avvio del motore, in secondi. Si ripete ogni ``3.600`` "
+"secondi (che si può cambiare con "
+"l'impostazione :ref:`rollover<class_ProjectSettings_property_rendering/"
+"limits/time/time_rollover_secs>`). È influenzato "
+"da :ref:`time_scale<class_Engine_property_time_scale>` ma non dalla pausa. "
+"Se è necessaria una variabile ``TIME`` che non sia influenzata dalla scala "
+"temporale, aggiungere il proprio :ref:`uniforme di shader globale "
+"<doc_shading_language_global_uniforms>` e aggiornarlo a ogni frame."
+
+msgid "in float **PI**"
+msgstr "in float **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"Una costante ``PI`` (``3.141592``). Il rapporto tra la circonferenza di un "
+"cerchio e il suo diametro, e il numero di radianti in mezzo giro."
+
+msgid "in float **TAU**"
+msgstr "in float **TAU**"
+
+msgid "in float **E**"
+msgstr "in float **E**"
+
+msgid "in vec4 **FRAGCOORD**"
+msgstr "in vec4 **FRAGCOORD**"
+
+msgid "in vec2 **UV**"
+msgstr "in vec2 **UV**"

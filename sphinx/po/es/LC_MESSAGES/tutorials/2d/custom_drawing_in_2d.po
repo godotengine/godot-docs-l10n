@@ -269,7 +269,7 @@ msgid ""
 "execution- to load those coordinates into a variable:"
 msgstr ""
 "Para transformar estas coordenadas al formato correcto, crearemos un nuevo "
-"método ``float_array_to_Vector2Array()``. Luego anularemos la función "
+"método ``float_array_to_Vector2Array()``. Luego sobrescribiremos la función "
 "``_ready()``, que Godot llamará solo una vez -al inicio de la ejecución- "
 "para cargar esas coordenadas en una variable:"
 

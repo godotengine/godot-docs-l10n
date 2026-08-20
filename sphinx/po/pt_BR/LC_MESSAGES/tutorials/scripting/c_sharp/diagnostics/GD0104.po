@@ -11,5 +11,68 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0104: The exported property is write-only"
+msgstr "GD0104: A propriedade exportada é apenas de escrita (write-only)"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0104"
+msgstr "GD0104"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Non-breaking"
+msgstr "Não quebra compatibilidade (Non-breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"A write-only property is annotated with the ``[Export]`` attribute. Write-"
+"only properties can't be exported."
+msgstr ""
+"Uma propriedade apenas de escrita está anotada com o atributo ``[Export]``. "
+"Propriedades apenas de escrita não podem ser exportadas."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid "Godot doesn't allow exporting write-only properties."
+msgstr "O Godot não permite a exportação de propriedades apenas de escrita."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, make sure the property declares both a "
+"getter and a setter, or remove the ``[Export]`` attribute."
+msgstr ""
+"Para corrigir uma violação desta regra, certifique-se de que a propriedade "
+"declare tanto um getter quanto um setter, ou remova o atributo ``[Export]``."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Write-only members can't be "
+"exported so they will be ignored by Godot, resulting in runtime errors."
+msgstr ""
+"Não suprima um aviso desta regra. Membros apenas de escrita não podem ser "
+"exportados, portanto serão ignorados pelo Godot, resultando em erros em "
+"tempo de execução."

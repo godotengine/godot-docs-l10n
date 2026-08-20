@@ -14,8 +14,8 @@ msgstr ""
 msgid "Signal"
 msgstr "Sinal"
 
-msgid "Instancing with signals"
-msgstr "Instanciando com sinais"
+msgid "Below we'll consider an example of such a situation: firing bullets."
+msgstr "Abaixo consideraremos um exemplo de tal situação: disparar projéteis."
 
 msgid "Shooting example"
 msgstr "Exemplo de Disparo"
@@ -28,6 +28,13 @@ msgstr ""
 "Considere um personagem de jogador que possa girar e atirar em direção ao "
 "mouse. Toda vez que o botão do mouse é clicado, criamos uma instância do "
 "projétil no local do jogador. Veja :ref:`doc_instancing` para detalhes."
+
+msgid ""
+"We'll use an ``Area2D`` for the bullet, which moves in a straight line at a "
+"given velocity:"
+msgstr ""
+"Usaremos uma ``Area2D`` para o projétil, que se move em linha reta a uma "
+"determinada velocidade:"
 
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
@@ -83,6 +90,13 @@ msgstr ""
 
 msgid "Here is the code for the player using signals to emit the bullet:"
 msgstr "Aqui está o código para o jogador usar sinais para emitir a bala:"
+
+msgid ""
+"In the main scene, we then connect the player's signal (it will appear in "
+"the \"Node\" tab of the Inspector)"
+msgstr ""
+"Na cena principal, nós então conectamos o sinal do jogador (ele aparecerá na "
+"aba \"Node\" do Inspetor)"
 
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "

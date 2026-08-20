@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "3D Particle system properties"
+msgstr "Propriedades do sistema de partículas 3D"
+
 msgid "Emitter properties"
 msgstr "Emissor de propriedades"
 
@@ -59,6 +62,9 @@ msgstr ""
 "criado como um filho de cada partícula. Consulte a seção :ref:`Sub-emitters "
 "<doc_3d_particles_subemitters>` neste manual para uma explicação detalhada "
 "sobre como adicionar um sub-emissor a um sistema de partículas."
+
+msgid "Time properties"
+msgstr "Propriedades de tempo"
 
 msgid ""
 "The ``Lifetime`` property controls how long each particle exists before it "
@@ -246,6 +252,9 @@ msgstr ""
 "colisores forem finos. Isso pode ser remediado aumentando o ``Fixed FPS`` "
 "(com custo de desempenho)."
 
+msgid "Collision properties"
+msgstr "Propriedades de colisão"
+
 msgid ""
 "Setting up particle collision requires following further steps described "
 "in :ref:`doc_3d_particles_collision`."
@@ -267,6 +276,12 @@ msgstr ""
 "aproximadamente do mesmo tamanho da partícula. Pode fazer sentido aumentar "
 "este valor para partículas que são muito pequenas e se movem muito rápido "
 "para evitar que elas passem pela geometria de colisão."
+
+msgid "Drawing properties"
+msgstr "Propriedades de desenho"
+
+msgid "Particle drawing properties"
+msgstr "Propriedades de desenho de partículas"
 
 msgid ""
 "The ``Visibility AABB`` property defines a box around the particle system's "
@@ -359,8 +374,14 @@ msgstr ""
 "Velocity`` combina os dois modos anteriores. O eixo Z de cada partícula "
 "apontará para a câmera enquanto seu eixo Y se alinhará com sua velocidade."
 
+msgid "Trail properties"
+msgstr "Propriedades de trilha"
+
 msgid "Particle trails"
 msgstr "Rastros de partículas"
+
+msgid "Particle trail properties"
+msgstr "Propriedades de trilha de partículas"
 
 msgid ""
 "The ``Enabled`` property controls whether particles are rendered as trails. "

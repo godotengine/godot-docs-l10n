@@ -41,6 +41,9 @@ msgstr ""
 "Una descrizione più completa di tutti i sistemi di coordinate e delle "
 "trasformazioni 2D è disponibile in :ref:`doc_2d_coordinate_systems`."
 
+msgid "Canvas transform"
+msgstr "Trasformazione di canvas"
+
 msgid ""
 "As mentioned in the previous tutorial, :ref:`doc_canvas_layers`, every "
 "CanvasItem node (remember that Node2D and Control based nodes use CanvasItem "
@@ -63,6 +66,23 @@ msgstr ""
 "predefinito, nel Livello 0, nel canvas integrato. Per posizionare i nodi in "
 "un livello diverso, è possibile utilizzare un nodo :ref:`CanvasLayer "
 "<class_CanvasLayer>`."
+
+msgid "Global canvas transform"
+msgstr "Trasformazione globale di canvas"
+
+msgid ""
+"Viewports also have a Global Canvas transform (also a :ref:`Transform2D "
+"<class_Transform2D>`). This is the master transform and affects all "
+"individual *Canvas Layer* transforms. Generally, this is primarily used in "
+"Godot's CanvasItem Editor."
+msgstr ""
+"Le viewport hanno anche una trasformazione globale di canvas (anch'essa di "
+"tipo :ref:`Transform2D <class_Transform2D>`). Questa è la trasformazione "
+"principale e influenza tutte le singole trasformazioni di un *Canvas Layer*. "
+"Generalmente, è utilizzata principalmente nell'editor CanvasItem di Godot."
+
+msgid "Stretch transform"
+msgstr "Trasformazione di stiramento"
 
 msgid ""
 "Finally, viewports have a *Stretch Transform*, which is used when resizing "
@@ -88,6 +108,9 @@ msgstr ""
 "locali di CanvasItem, è stata aggiunta la "
 "funzione :ref:`CanvasItem.make_input_local() "
 "<class_CanvasItem_method_make_input_local>` per comodità."
+
+msgid "Window transform"
+msgstr "Trasformazione di finestra"
 
 msgid ""
 "The root viewport is a :ref:`Window <class_Window>`. In order to scale and "

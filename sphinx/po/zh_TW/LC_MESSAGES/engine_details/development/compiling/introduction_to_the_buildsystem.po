@@ -418,14 +418,6 @@ msgstr ""
 "``arch`` 支援的值有：**auto**、**x86_32**、**x86_64**、**arm32**、**arm64**、"
 "**rv64**、**ppc32**、**ppc64**、**wasm32**。"
 
-msgid ""
-"This flag appends the value of ``arch`` to resulting binaries when "
-"relevant.  The default value ``arch=auto`` detects the architecture that "
-"matches the host platform."
-msgstr ""
-"此選項會在產生的執行檔名稱後加上對應的 ``arch`` 字串。預設為 ``arch=auto``，"
-"會自動偵測與主機相符的架構。"
-
 msgid "Custom modules"
 msgstr "自訂模組"
 
@@ -584,18 +576,6 @@ msgstr ""
 
 msgid "To perform an SCU build, use the ``scu_build=yes`` SCons option."
 msgstr "要啟用 SCU 建置，請加上 ``scu_build=yes`` SCons 選項。"
-
-msgid ""
-"When developing a Pull Request using SCU builds, be sure to make a regular "
-"build prior to submitting the PR. This is because SCU builds by nature "
-"include headers from earlier ``.cpp`` files in the translation unit, "
-"therefore won't catch all the includes you will need in a regular build. The "
-"CI will catch these errors, but it will usually be faster to catch them on a "
-"local build on your machine."
-msgstr ""
-"若在開發 Pull Request 時使用 SCU 建置，務必在提交 PR 前進行一次傳統建置。因"
-"為 SCU 會共用先前 ``.cpp`` 檔的標頭，可能漏掉傳統建置會出錯的 include。雖然 "
-"CI 會檢查這些錯誤，但在本地提前發現會更有效率。"
 
 msgid "Export templates"
 msgstr "匯出樣板"

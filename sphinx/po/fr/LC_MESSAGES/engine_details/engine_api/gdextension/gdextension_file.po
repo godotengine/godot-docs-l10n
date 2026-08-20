@@ -29,6 +29,16 @@ msgstr "**entry_symbol**"
 msgid "String"
 msgstr "Chaîne de caractères"
 
+msgid ""
+"Name of the entry function for initializing the GDExtension. This function "
+"should be defined in the ``register_types.cpp`` file when using godot-cpp. "
+"Adding this is necessary for the extension to work."
+msgstr ""
+"Nom de la fonction d'entrée pour initialiser la GDExtension. Cette fonction "
+"devrait être définie dans le fichier ``register_type.cpp`` lors de "
+"l'utilisation de godot-cpp. Ajouter ceci est nécessaire pour que l'extension "
+"fonctionne."
+
 msgid "**compatibility_minimum**"
 msgstr "**compatibility_minimum**"
 

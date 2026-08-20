@@ -21,6 +21,15 @@ msgstr ""
 "Um die Performance von Godot zu optimieren, müssen Sie zunächst wissen, was "
 "zu optimieren ist. Zu diesem Zweck sind Profiler nützliche Werkzeuge."
 
+msgid ":ref:`VerySleepy <doc_profiler_very_sleepy>` (Windows only)"
+msgstr ":ref:`VerySleepy <doc_profiler_very_sleepy>` (nur Windows)"
+
+msgid ":ref:`Hotspot <doc_profiler_hotspot>` (Linux only)"
+msgstr ":ref:`Hotspot <doc_profiler_hotspot>` (nur Linux)"
+
+msgid ":ref:`Instruments <doc_profiler_instruments>` (Apple only)"
+msgstr ":ref:`Instruments <doc_profiler_instruments>` (nur Apple)"
+
 msgid ""
 "These profilers may not be the most powerful or flexible options, but their "
 "standalone operation and limited feature set tends to make them easier to "
@@ -59,8 +68,8 @@ msgid ""
 "representative of real world conditions."
 msgstr ""
 "Es ist möglich, einen Profiler auf weniger optimierten Builds laufen zu "
-"lassen (z.B. ``target=template_debug`` ohne LTO), aber die Ergebnisse werden "
-"natürlich weniger repräsentativ für die realen Bedingungen sein."
+"lassen (z. B. ``target=template_debug`` ohne LTO), aber die Ergebnisse "
+"werden natürlich weniger repräsentativ für die realen Bedingungen sein."
 
 msgid ""
 "Do *not* strip debugging symbols on the binaries using the ``strip`` command "
@@ -81,3 +90,18 @@ msgid ""
 msgstr ""
 "Siehe :ref:`doc_command_line_tutorial` für weitere von Godot unterstützte "
 "Kommandozeilenargumente."
+
+msgid "Tracing profilers"
+msgstr "Tracing-Profiler"
+
+msgid "Godot currently supports three tracing profilers:"
+msgstr "Godot unterstützt derzeit drei Tracing-Profiler:"
+
+msgid ":ref:`Tracy <doc_profiler_tracy>`"
+msgstr ":ref:`Tracy <doc_profiler_tracy>`"
+
+msgid ":ref:`Perfetto <doc_profiler_perfetto>`"
+msgstr ":ref:`Perfetto <doc_profiler_perfetto>`"
+
+msgid "All recommended profilers"
+msgstr "Alle empfohlenen Profiler"

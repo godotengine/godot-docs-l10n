@@ -431,10 +431,6 @@ msgid "Global arrays"
 msgstr "全域陣列"
 
 msgid ""
-"You can declare arrays in global space as either ``const`` or ``uniform``:"
-msgstr "你可以在全域範圍宣告陣列為 ``const`` 或 ``uniform``："
-
-msgid ""
 "Global arrays use the same syntax as local arrays, except with a ``const`` "
 "or ``uniform`` added to their declaration. Note that uniform arrays can't "
 "have a default value."
@@ -455,13 +451,6 @@ msgstr ""
 "在變數宣告前加上 ``const`` 關鍵字，該變數就會成為不可變（immutable），也就是"
 "無法被修改。所有基本型別（取樣器除外）都可以宣告為常數。存取常數比 uniform 略"
 "快。常數必須在宣告時初始化。"
-
-msgid ""
-"Constants cannot be modified and additionally cannot have hints, but "
-"multiple of them (if they have the same type) can be declared in a single "
-"expression e.g"
-msgstr ""
-"常數不可修改，也不能加提示，但相同型別的多個常數可以在同一行宣告，例如："
 
 msgid "Similar to variables, arrays can also be declared with ``const``."
 msgstr "陣列也可以像變數一樣用 ``const`` 宣告為常數。"
@@ -508,11 +497,6 @@ msgstr "宣告後，你可以這樣初始化實體："
 
 msgid "Or use struct constructor for same purpose:"
 msgstr "也可以直接用結構建構子來初始化："
-
-msgid ""
-"Structs may contain other struct or array, you can also instance them as "
-"global constant:"
-msgstr "結構可以包含其他結構或陣列，也可以宣告為全域常數："
 
 msgid "You can also pass them to functions:"
 msgstr "也可以將結構作為參數傳入函式："

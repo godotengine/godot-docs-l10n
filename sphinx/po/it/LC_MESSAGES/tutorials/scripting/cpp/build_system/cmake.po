@@ -233,6 +233,13 @@ msgid "The following three commands are equivalent:"
 msgstr "I seguenti tre comandi sono equivalenti:"
 
 msgid ""
+"The build directory is specified so that generated files do not clutter the "
+"source tree with build artifacts."
+msgstr ""
+"La cartella di compilazione è specificata in modo che i file generati non "
+"ingombrino la struttura dei sorgenti con artefatti di compilazione."
+
+msgid ""
 "CMake doesn't build the code, it generates the files that a build tool uses, "
 "in this case the ``Ninja`` generator creates Ninja_ build files."
 msgstr ""
@@ -394,6 +401,9 @@ msgstr ""
 "Si può aggiungere manualmente; il percorso è specificato all'interno del "
 "file ``emcmake.bat``"
 
+msgid "Android Cross Compile from Windows"
+msgstr "Android Cross Compile da Windows"
+
 msgid ""
 "There are two separate paths you can choose when configuring for android."
 msgstr ""
@@ -437,6 +447,13 @@ msgstr "Come descritto nella documentazione di CMake:"
 
 msgid "Doing the equivalent just using the command line:"
 msgstr "Facendo l'equivalente tramite solo la riga di comando:"
+
+msgid "Using the Android SDK toolchain file"
+msgstr "Utilizzare il file toolchain dell'SDK di Android"
+
+msgid "This defaults to the minimum supported version and armv7-a:"
+msgstr ""
+"È predefinita sulla versione minima supportata e sull'architettura armv7-a:"
 
 msgid "Specifying the Android platform and ABI:"
 msgstr "Specificare la piattaforma Android e ABI:"

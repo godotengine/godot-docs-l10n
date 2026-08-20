@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Using ImmediateMesh"
+msgstr "Usando ImmediateMesh"
+
 msgid ""
 "The :ref:`ImmediateMesh <class_ImmediateMesh>` is a convenient tool to "
 "create dynamic geometry using an OpenGL 1.x-style API. Which makes it both "
@@ -101,6 +104,11 @@ msgstr ""
 "sinalizar que terminou de gerar a superfície. Você pode chamar "
 "``surface_begin()`` e ``surface_end()`` várias vezes para gerar múltiplas "
 "superfícies para a malha."
+
+msgid ""
+"The example code below draws a single triangle in the ``_ready()`` function."
+msgstr ""
+"O código de exemplo abaixo desenha um único triângulo na função ``_ready()``."
 
 msgid ""
 "The ImmediateMesh can also be used across frames. Each time you call "

@@ -83,20 +83,6 @@ msgstr ""
 "**Compatibility**\\ 。"
 
 msgid ""
-"The *rendering driver* tells the GPU what to do, using a graphics API. Godot "
-"can use the **OpenGL**, **Vulkan**, **Direct3D 12**, and **Metal** rendering "
-"drivers. Not every GPU supports every rendering driver, and therefore not "
-"every GPU supports all renderers. Vulkan, Direct3D 12, and Metal are modern, "
-"low-level graphics APIs, and requires newer hardware. OpenGL is an older "
-"graphics API that runs on most hardware."
-msgstr ""
-"*渲染驱动*\\ 通过图形 API 告诉 GPU 该做什么。Godot 可以使用 **OpenGL**\\ 、"
-"\\ **Vulkan**\\ 、\\ **Direct3D 12** 和 **Metal** 渲染驱动。并非每个 GPU 都支"
-"持所有渲染驱动，因此并非每个 GPU 都支持所有渲染器。Vulkan、Direct3D 12 和 "
-"Metal 是现代的低级图形 API，需要较新的硬件支持。OpenGL 是一个较旧的图形 API，"
-"可在大多数硬件上运行。"
-
-msgid ""
 "RenderingDevice is a *rendering backend*, an abstraction layer between the "
 "renderer and the rendering driver. It is used by the Forward+ and Mobile "
 "renderers, and these renderers are sometimes called \"RenderingDevice-based "
@@ -108,11 +94,6 @@ msgstr ""
 
 msgid "Choosing a renderer"
 msgstr "选择渲染器"
-
-msgid ""
-"Choosing a renderer is a complex question, and depends on your hardware and "
-"the which platforms you are developing for. As a starting point:"
-msgstr "选择渲染器是一个复杂的问题，取决于你的硬件以及目标开发平台。作为参考："
 
 msgid "Choose **Forward+** if:"
 msgstr "以下情况选择 **Forward+**\\ ："
@@ -134,9 +115,6 @@ msgstr "你想使用最先进的渲染特性。"
 msgid "Choose **Mobile** if:"
 msgstr "以下情况选择 **Mobile**\\ ："
 
-msgid "You are developing for newer mobile devices, desktop XR, or desktop."
-msgstr "你的目标平台是较新的移动设备、桌面 XR 或桌面端。"
-
 msgid ""
 "You want to use advanced rendering features, subject to the limitations of "
 "mobile hardware."
@@ -144,14 +122,6 @@ msgstr "你想要使用高级渲染特性，但会受到移动硬件的限制。
 
 msgid "Choose **Compatibility** if:"
 msgstr "以下情况请选择 **Compatibility**\\ ："
-
-msgid ""
-"You are developing for older mobile devices, older desktop devices, or "
-"standalone XR. The Compatibility renderer supports the widest range of "
-"hardware."
-msgstr ""
-"你的目标平台是较旧的移动设备、较旧的桌面设备或独立式 XR 设备。Compatibility "
-"渲染器支持的硬件范围最广。"
 
 msgid ""
 "You are developing for web. In this case, Compatibility is the only choice."
@@ -311,12 +281,6 @@ msgstr "⚠️ 支持，但优化较差。请改用 Mobile 或 Compatibility。"
 
 msgid "XR"
 msgstr "XR"
-
-msgid "✔️ Yes. Recommended for standalone headsets."
-msgstr "✔️ 是。推荐用于独立头戴设备。"
-
-msgid "✔️ Yes. Recommended for desktop headsets."
-msgstr "✔️ 是。推荐用于桌面头戴设备。"
 
 msgid "Web"
 msgstr "Web"
@@ -561,9 +525,6 @@ msgstr "StandardMaterial 特性"
 
 msgid "See :ref:`doc_standard_material_3d` for more information."
 msgstr "详情见\\ :ref:`doc_standard_material_3d`\\ 。"
-
-msgid "Sub-surface scattering"
-msgstr "次表面散射"
 
 msgid "Shader features"
 msgstr "着色器特性"

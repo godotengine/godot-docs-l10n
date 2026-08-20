@@ -82,6 +82,12 @@ msgstr "**depth_test_disabled**"
 msgid "Disable depth testing."
 msgstr "Désactive le test de profondeur."
 
+msgid "**depth_test_default**"
+msgstr "**depth_test_default**"
+
+msgid "**depth_test_inverted**"
+msgstr "**depth_test_inverted**"
+
 msgid "**sss_mode_skin**"
 msgstr "**sss_mode_skin**"
 
@@ -190,16 +196,41 @@ msgstr "**alpha_to_coverage_and_one**"
 msgid "**fog_disabled**"
 msgstr "**fog_disabled**"
 
+msgid "**read**"
+msgstr "**read**"
+
+msgid "**write**"
+msgstr "**write**"
+
+msgid "**write_if_depth_fail**"
+msgstr "**write_if_depth_fail**"
+
+msgid "**compare_always**"
+msgstr "**compare_always**"
+
+msgid "**compare_equal**"
+msgstr "**compare_equal**"
+
+msgid "**compare_not_equal**"
+msgstr "**compare_not_equal**"
+
+msgid "**compare_less**"
+msgstr "**compare_less**"
+
+msgid "**compare_less_or_equal**"
+msgstr "**compare_less_or_equal**"
+
+msgid "**compare_greater**"
+msgstr "**compare_greater**"
+
+msgid "**compare_greater_or_equal**"
+msgstr "**compare_greater_or_equal**"
+
 msgid "Built-ins"
 msgstr "Variables intégrées"
 
 msgid "Global built-ins"
 msgstr "Variables intégrées Globales"
-
-msgid "Global built-ins are available everywhere, including custom functions."
-msgstr ""
-"Les modules intégrés globaux sont disponibles partout, y compris dans les "
-"fonctions personnalisées."
 
 msgid "Built-in"
 msgstr "Intégré"
@@ -221,6 +252,13 @@ msgstr "in bool **OUTPUT_IS_SRGB**"
 
 msgid "in float **CLIP_SPACE_FAR**"
 msgstr "in float **CLIP_SPACE_FAR**"
+
+msgid ""
+"``true`` when output is stereoscopic (XR), ``false`` when output is "
+"monoscopic."
+msgstr ""
+"``true`` quand la sortie est stéréoscopique (XR), ``false`` quand la sortie "
+"est monoscopique."
 
 msgid "Vertex built-ins"
 msgstr "Variables intégrées de sommet"
@@ -259,12 +297,6 @@ msgstr ""
 "D'autres variables intégrées, telles que ``UV``, ``UV2`` et ``COLOR``, sont "
 "aussi directement transmises à la fonction ``fragment()`` si elles ne sont "
 "pas modifiées."
-
-msgid "**x**: Rotation angle in radians."
-msgstr "**x** : Angle de rotation en radians."
-
-msgid "**z**: Animation frame."
-msgstr "**z** : Trame d'animation."
 
 msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr "in vec2 **VIEWPORT_SIZE**"
@@ -542,9 +574,6 @@ msgstr "out float **RIM_TINT**"
 
 msgid "out float **CLEARCOAT**"
 msgstr "out float **CLEARCOAT**"
-
-msgid "out float **CLEARCOAT_GLOSS**"
-msgstr "out float **CLEARCOAT_GLOSS**"
 
 msgid "out float **ANISOTROPY**"
 msgstr "out float **ANISOTROPY**"

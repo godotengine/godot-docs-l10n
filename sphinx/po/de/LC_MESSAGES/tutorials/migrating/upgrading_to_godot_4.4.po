@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.3 to Godot 4.4"
+msgstr "Upgrade von Godot 4.3 auf Godot 4.4"
+
 msgid "Breaking changes"
 msgstr "Änderungen, die etwas kaputtmachen können"
 
@@ -46,20 +49,67 @@ msgstr "C#-quellcode- kompatibel"
 msgid "Introduced"
 msgstr "Eingeführt in"
 
+msgid "**FileAccess**"
+msgstr "**FileAccess**"
+
 msgid "|✔️|"
 msgstr "|✔️|"
 
 msgid "|✔️ with compat|"
 msgstr "|✔️ with compat|"
 
+msgid "`GH-98918`_"
+msgstr "`GH-98918`_"
+
 msgid "|❌|"
 msgstr "|❌|"
+
+msgid "`GH-78289`_"
+msgstr "`GH-78289`_"
+
+msgid "**OS**"
+msgstr "**OS**"
+
+msgid "`GH-94434`_"
+msgstr "`GH-94434`_"
+
+msgid "`GH-91201`_"
+msgstr "`GH-91201`_"
+
+msgid "**RegEx**"
+msgstr "**RegEx**"
+
+msgid "Method ``compile`` adds a new ``show_error`` optional parameter"
+msgstr ""
+"Methode ``compile`` fügt einen neuen optionalen Parameter ``show_error`` "
+"hinzu"
+
+msgid "`GH-95212`_"
+msgstr "`GH-95212`_"
+
+msgid "**Semaphore**"
+msgstr "**Semaphore**"
+
+msgid "`GH-93605`_"
+msgstr "`GH-93605`_"
+
+msgid "**TranslationServer**"
+msgstr "**TranslationServer**"
+
+msgid "`GH-98972`_"
+msgstr "`GH-98972`_"
 
 msgid "GUI nodes"
 msgstr "GUI-Nodes"
 
 msgid "**RichTextLabel**"
 msgstr "**RichTextLabel**"
+
+msgid ""
+"Method ``set_table_column_expand`` adds a new ``shrink`` optional parameter"
+msgstr ""
+"Methode ``set_table_column_expand`` fügt einen neuen optionalen Parameter "
+"``shrink`` hinzu"
 
 msgid "**GraphEdit**"
 msgstr "**GraphEdit**"
@@ -68,7 +118,11 @@ msgid "Physics"
 msgstr "Physik"
 
 msgid "Rendering"
-msgstr "Rendern"
+msgstr "Rendering"
+
+msgid "Method ``restart`` adds a new ``keep_seed`` optional parameter"
+msgstr ""
+"Methode ``restart`` fügt einen neuen optionalen Parameter ``keep_seed`` hinzu"
 
 msgid "**RenderingDevice**"
 msgstr "**RenderingDevice**"
@@ -90,6 +144,13 @@ msgstr "Editor-Plugins"
 
 msgid "**EditorInterface**"
 msgstr "**EditorInterface**"
+
+msgid ""
+"Method ``popup_property_selector`` adds a new ``current_value`` optional "
+"parameter"
+msgstr ""
+"Methode ``popup_property_selector`` fügt einen neuen optionalen Parameter "
+"``current_value`` hinzu"
 
 msgid "Behavior changes"
 msgstr "Änderungen am Verhalten"

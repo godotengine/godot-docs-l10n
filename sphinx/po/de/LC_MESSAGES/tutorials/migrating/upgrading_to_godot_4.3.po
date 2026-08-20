@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.2 to Godot 4.3"
+msgstr "Upgrade von Godot 4.2 auf Godot 4.3"
+
 msgid "Breaking changes"
 msgstr "Änderungen, die etwas kaputtmachen können"
 
@@ -46,8 +49,23 @@ msgstr "C#-quellcode- kompatibel"
 msgid "Introduced"
 msgstr "Eingeführt in"
 
+msgid "**GDExtension**"
+msgstr "**GDExtension**"
+
+msgid "Method ``close_library`` removed"
+msgstr "Methode ``close_library`` entfernt"
+
 msgid "|❌|"
 msgstr "|❌|"
+
+msgid "`GH-88418`_"
+msgstr "`GH-88418`_"
+
+msgid "Method ``initialize_library`` removed"
+msgstr "Methode ``initialize_library`` entfernt"
+
+msgid "Method ``open_library`` removed"
+msgstr "Methode ``open_library`` entfernt"
 
 msgid "Animation"
 msgstr "Animation"
@@ -61,20 +79,98 @@ msgstr "|✔️|"
 msgid "|✔️ with compat|"
 msgstr "|✔️ with compat|"
 
+msgid "`GH-86629`_"
+msgstr "`GH-86629`_"
+
+msgid "`GH-86661`_"
+msgstr "`GH-86661`_"
+
+msgid "`GH-92861`_"
+msgstr "`GH-92861`_"
+
+msgid "**AnimationMixer**"
+msgstr "**AnimationMixer**"
+
+msgid "`GH-86687`_"
+msgstr "`GH-86687`_"
+
+msgid "**Skeleton3D**"
+msgstr "**Skeleton3D**"
+
+msgid "`GH-88791`_"
+msgstr "`GH-88791`_"
+
+msgid "`GH-90575`_"
+msgstr "`GH-90575`_"
+
+msgid "**BoneAttachment3D**"
+msgstr "**BoneAttachment3D**"
+
 msgid "GUI nodes"
 msgstr "GUI-Nodes"
+
+msgid "**AcceptDialog**"
+msgstr "**AcceptDialog**"
+
+msgid "`GH-89419`_"
+msgstr "`GH-89419`_"
 
 msgid "Physics"
 msgstr "Physik"
 
+msgid "`GH-85393`_"
+msgstr "`GH-85393`_"
+
 msgid "Rendering"
-msgstr "Rendern"
+msgstr "Rendering"
 
 msgid "**RenderingDevice**"
 msgstr "**RenderingDevice**"
 
+msgid "`GH-84976`_"
+msgstr "`GH-84976`_"
+
 msgid "**RenderingServer**"
 msgstr "**RenderingServer**"
+
+msgid "`GH-84792`_"
+msgstr "`GH-84792`_"
+
+msgid "**RenderSceneBuffersRD**"
+msgstr "**RenderSceneBuffersRD**"
+
+msgid "Method ``get_color_layer`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"Methode ``get_color_layer`` fügt einen neuen optionalen Parameter ``msaa`` "
+"hinzu"
+
+msgid "`GH-80214`_"
+msgstr "`GH-80214`_"
+
+msgid "Method ``get_depth_layer`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"Methode ``get_depth_layer`` fügt einen neuen optionalen Parameter ``msaa`` "
+"hinzu"
+
+msgid "Method ``get_velocity_layer`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"Methode ``get_velocity_layer`` fügt einen neuen optionalen Parameter "
+"``msaa`` hinzu"
+
+msgid "Method ``get_color_texture`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"Methode ``get_color_texture`` fügt einen neuen optionalen Parameter ``msaa`` "
+"hinzu"
+
+msgid "Method ``get_depth_texture`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"Methode ``get_depth_texture`` fügt einen neuen optionalen Parameter ``msaa`` "
+"hinzu"
+
+msgid "Method ``get_velocity_texture`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"Methode ``get_velocity_texture`` fügt einen neuen optionalen Parameter "
+"``msaa`` hinzu"
 
 msgid "Text"
 msgstr "Text"
@@ -82,29 +178,180 @@ msgstr "Text"
 msgid "**Font**"
 msgstr "**Font**"
 
+msgid "`GH-87668`_"
+msgstr "`GH-87668`_"
+
 msgid "**RichTextLabel**"
 msgstr "**RichTextLabel**"
+
+msgid "Method ``push_meta`` adds a new ``underline_mode`` optional parameter"
+msgstr ""
+"Methode ``push_meta`` fügt einen neuen optionalen Parameter "
+"``underline_mode`` hinzu"
+
+msgid "`GH-89024`_"
+msgstr "`GH-89024`_"
+
+msgid "**TextServer**"
+msgstr "**TextServer**"
+
+msgid ""
+"Method ``shaped_text_get_word_breaks`` adds a new optional "
+"``skip_grapheme_flags`` parameter"
+msgstr ""
+"Methode ``skip_grapheme_flags`` fügt einen neuen optionalen Parameter "
+"``skip_grapheme_flags`` hinzu"
+
+msgid "`GH-90732`_"
+msgstr "`GH-90732`_"
+
+msgid "**TextServerExtension**"
+msgstr "**TextServerExtension**"
+
+msgid ""
+"Method ``_shaped_text_get_word_breaks`` adds a new ``skip_grapheme_flags`` "
+"parameter"
+msgstr ""
+"Methode ``_shaped_text_get_word_breaks`` fügt einen neuen Parameter "
+"``skip_grapheme_flags`` hinzu"
 
 msgid "Audio"
 msgstr "Audio"
 
+msgid "**AudioStreamPlaybackPolyphonic**"
+msgstr "**AudioStreamPlaybackPolyphonic**"
+
+msgid ""
+"Method ``play_stream`` adds new ``playback_type``, and ``bus`` optional "
+"parameters"
+msgstr ""
+"Methode ``play_stream`` fügt die neuen optionalen Parameter ``tab_stops`` "
+"und ``bus`` hinzu"
+
+msgid "`GH-91382`_"
+msgstr "`GH-91382`_"
+
 msgid "Navigation"
 msgstr "Navigation"
+
+msgid "**AStar2D**"
+msgstr "**AStar2D**"
+
+msgid ""
+"Method ``get_id_path`` adds new ``allow_partial_path`` optional parameter"
+msgstr ""
+"Methode ``get_id_path`` fügt einen neuen optionalen Parameter "
+"``allow_partial_path`` hinzu"
+
+msgid "`GH-88047`_"
+msgstr "`GH-88047`_"
+
+msgid ""
+"Method ``get_point_path`` adds new ``allow_partial_path`` optional parameter"
+msgstr ""
+"Methode ``get_point_path`` fügt einen neuen optionalen Parameter "
+"``allow_partial_path`` hinzu"
+
+msgid "**AStar3D**"
+msgstr "**AStar3D**"
+
+msgid "**AStarGrid2D**"
+msgstr "**AStarGrid2D**"
+
+msgid "**NavigationRegion2D**"
+msgstr "**NavigationRegion2D**"
+
+msgid "Property ``avoidance_layers`` removed"
+msgstr "Eigenschaft ``avoidance_layers`` entfernt"
+
+msgid "`GH-90747`_"
+msgstr "`GH-90747`_"
+
+msgid "Property ``constrain_avoidance`` removed"
+msgstr "Eigenschaft ``constrain_avoidance`` entfernt"
+
+msgid "Method ``get_avoidance_layer_value`` removed"
+msgstr "Methode ``get_avoidance_layer_value`` entfernt"
+
+msgid "Method ``set_avoidance_layer_value`` removed"
+msgstr "Methode ``set_avoidance_layer_value`` entfernt"
 
 msgid "TileMap"
 msgstr "TileMap"
 
+msgid "**TileData**"
+msgstr "**TileData**"
+
+msgid ""
+"Method ``get_navigation_polygon`` adds new ``flip_h``, ``flip_v``, and "
+"``transpose`` optional parameters"
+msgstr ""
+"Methode ``get_navigation_polygon`` fügt neue optionale Parameter ``flip_h``, "
+"``flip_v`` und ``transpose`` hinzu"
+
+msgid "`GH-84660`_"
+msgstr "`GH-84660`_"
+
+msgid ""
+"Method ``get_occluder`` adds new ``flip_h``, ``flip_v``, and ``transpose`` "
+"optional parameters"
+msgstr ""
+"Methode ``get_occluder`` fügt neue optionale Parameter ``flip_h``, "
+"``flip_v`` und ``transpose`` hinzu"
+
 msgid "XR"
 msgstr "XR"
+
+msgid "**WebXRInterface**"
+msgstr "**WebXRInterface**"
+
+msgid "`GH-90645`_"
+msgstr "`GH-90645`_"
+
+msgid "**XRServer**"
+msgstr "**XRServer**"
 
 msgid "Editor plugins"
 msgstr "Editor-Plugins"
 
+msgid "**EditorInspectorPlugin**"
+msgstr "**EditorInspectorPlugin**"
+
+msgid "Method ``add_property_editor`` adds a new ``label`` optional parameter"
+msgstr ""
+"Methode ``add_property_editor`` fügt einen neuen optionalen Parameter "
+"``label`` hinzu"
+
+msgid "`GH-92322`_"
+msgstr "`GH-92322`_"
+
+msgid "**EditorPlugin**"
+msgstr "**EditorPlugin**"
+
+msgid "`GH-88081`_"
+msgstr "`GH-88081`_"
+
+msgid "**EditorSceneFormatImporterFBX**"
+msgstr "**EditorSceneFormatImporterFBX**"
+
+msgid "`GH-81746`_"
+msgstr "`GH-81746`_"
+
 msgid "Behavior changes"
 msgstr "Änderungen am Verhalten"
 
+msgid ""
+"In 4.3, some behavior changes have been introduced, which might require you "
+"to adjust your project."
+msgstr ""
+"In 4.3 wurden einige Änderungen am Verhalten eingeführt, die möglicherweise "
+"eine Anpassung Ihres Projekts erfordern."
+
 msgid "Core"
 msgstr "Kern"
+
+msgid "Multiplayer"
+msgstr "Multiplayer"
 
 msgid "Android"
 msgstr "Android"

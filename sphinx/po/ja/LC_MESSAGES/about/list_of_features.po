@@ -132,6 +132,13 @@ msgid "Scene tree editor."
 msgstr "シーンツリー エディタ。"
 
 msgid ""
+"Built-in script editor. Also supports editing text files and using custom "
+"syntax highlighters."
+msgstr ""
+"内蔵のスクリプトエディタ。テキストファイルの編集やカスタム構文ハイライト機能"
+"も利用可能。"
+
+msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
@@ -167,6 +174,20 @@ msgstr "エディタ内のカメラを移動し、実行プロジェクトで結
 msgid "Remote inspector."
 msgstr "リモート インスペクタ。"
 
+msgid ""
+"Run multiple simultaneous project instances from a single editor instance "
+"(useful for client/server testing)."
+msgstr ""
+"単一のエディタインスタンスから複数のプロジェクトインスタンスを同時に実行可能"
+"（クライアント/サーバーテストなどに有用）。"
+
+msgid ""
+"Optional :ref:`game embedding <doc_game_embedding>` to run the project in a "
+"panel within the editor."
+msgstr ""
+"プロジェクトを:ref:`エディターに埋め込んで <doc_game_embedding>`起動するオプ"
+"ション。"
+
 msgid "Built-in offline class reference documentation."
 msgstr "内蔵かつオフラインで読めるクラスリファレンスドキュメント。"
 
@@ -177,25 +198,11 @@ msgid "**Plugins:**"
 msgstr "**プラグイン:**"
 
 msgid ""
-"Editor plugins can be downloaded from the :ref:`asset library "
-"<doc_what_is_assetlib>` to extend editor functionality."
-msgstr ""
-":ref:`アセット ライブラリ <doc_what_is_assetlib>`\\ からエディタプラグインを"
-"ダウンロードして、エディタの機能を拡張することができます。"
-
-msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
 "新しい機能を追加したりワークフロー高速化するために、GDScript を使用して"
 "\\ :ref:`独自のプラグインを作成し<doc_making_plugins>`\\てください。"
-
-msgid ""
-":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
-"in the Project Manager and import them directly."
-msgstr ""
-"プロジェクトマネージャーの :ref:`アセットライブラリからプロジェクトをダウン"
-"ロード <doc_using_assetlib_editor>` し、直接インポートします。"
 
 msgid "Rendering"
 msgstr "レンダリング"
@@ -495,9 +502,6 @@ msgstr ""
 
 msgid "Detail mapping for the albedo and normal maps."
 msgstr "アルベドマップと法線マップの詳細マッピング。"
-
-msgid "Sub-surface scattering and transmittance."
-msgstr "表面下散乱 (Sub-surface scattering)、および透過率 (transmittance)。"
 
 msgid ""
 "Screen-space refraction with support for material roughness (resulting in "
@@ -1519,17 +1523,6 @@ msgid ""
 msgstr ""
 "注意を求める (ほとんどのプラットフォームではタイトルバーが点滅します)。"
 
-msgid "Fullscreen mode."
-msgstr "全画面表示モード。"
-
-msgid ""
-"Uses borderless fullscreen by default on Windows for fast alt-tabbing, but "
-"can optionally use exclusive fullscreen to reduce input lag."
-msgstr ""
-"Windows では alt-tab ショートカット使用時の高速化のため基本的にボーダーレスフ"
-"ルスクリーンを使用するが、入力遅延の軽減のためオプションで排他的フルスクリー"
-"ンも選択可能。"
-
 msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "ボーダーレスウィンドウ (全画面または非全画面)。"
 
@@ -1605,26 +1598,6 @@ msgstr "サードパーティモジュールを利用した広告に対応。"
 
 msgid "XR support (AR and VR)"
 msgstr "XR (ARおよびVR) に対応"
-
-msgid "Out of the box :ref:`support for OpenXR <doc_setting_up_xr>`."
-msgstr "標準で :ref:`OpenXRをサポート <doc_setting_up_xr>` 。"
-
-msgid ""
-"Including support for popular desktop headsets like the Valve Index, WMR "
-"headsets, and Quest over Link."
-msgstr ""
-"Valve Index、Windows Mixed Reality ヘッドセット、Link 接続の Quest のような主"
-"要なデスクトップヘッドセットに対応。"
-
-msgid ""
-"Support for :ref:`Android-based headsets <doc_deploying_to_android>` using "
-"OpenXR through a plugin."
-msgstr ""
-"プラグインを介して、OpenXRを採用する :ref:`Androidベースのヘッドセット "
-"<doc_deploying_to_android>` に対応。"
-
-msgid "Out of the box limited support for visionOS Apple headsets."
-msgstr "Appleヘッドセット(visionOS)の限定的なサポート。"
 
 msgid ""
 "Currently only exporting an application for use on a flat plane within the "

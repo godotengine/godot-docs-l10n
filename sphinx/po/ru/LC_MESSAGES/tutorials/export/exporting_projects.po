@@ -121,9 +121,6 @@ msgstr ""
 "не все платформы поддерживаются, но число поддерживаемых платформ продолжает "
 "расти."
 
-msgid "To open the export menu, click the **Export** button:"
-msgstr "Чтобы открыть меню экспорта, нажмите кнопку **Export** (экспорт):"
-
 msgid ""
 "The export menu will open. However, it will be completely empty. This is "
 "because we need to add an export preset."
@@ -198,26 +195,36 @@ msgstr ""
 msgid "Export templates"
 msgstr "Экспорт шаблонов"
 
-msgid ""
-"Apart from setting up the platform, the export templates must be installed "
-"to be able to export projects. They can be obtained as a TPZ file (which is "
-"a renamed ZIP archive) from the `download page of the website <https://"
-"www.godotengine.org/download>`_."
-msgstr ""
-"Помимо настройки платформы, необходимо установить шаблоны экспорта, чтобы "
-"иметь возможность экспортировать проекты. Их можно получить в виде файла TPZ "
-"(который представляет собой переименованный ZIP-архив) `на странице загрузки "
-"<https://www.godotengine.org/download>`_."
+msgid "Burmese"
+msgstr "Burmese"
 
-msgid ""
-"Once downloaded, they can be installed using the **Install Export "
-"Templates** option in the editor:"
-msgstr ""
-"После загрузки их можно установить с помощью параметра **Install Export "
-"Templates** (Установить шаблоны экспорта) в редакторе:"
+msgid "Chinese"
+msgstr "Chinese (Китайский)"
+
+msgid "Japanese"
+msgstr "Японский"
+
+msgid "Korean"
+msgstr "Корейский"
+
+msgid "Central Khmer"
+msgstr "Central Khmer"
+
+msgid "Lao"
+msgstr "Lao"
+
+msgid "Thai"
+msgstr "Thai"
 
 msgid "Resource options"
 msgstr "Варианты ресурсов"
+
+msgid ""
+"When exporting, Godot makes a list of all the files to export and then "
+"creates the package. There are 5 different modes for exporting:"
+msgstr ""
+"При экспорте Godot составляет список всех файлов для экспорта и затем "
+"создаёт пакет. Существует 5 различных режимов экспорта:"
 
 msgid "Export all resources in the project"
 msgstr "Экспорт всех ресурсов проекта"
@@ -227,6 +234,12 @@ msgstr "Экспорт выбранных сцен (включая зависи�
 
 msgid "Export selected resources (and dependencies)"
 msgstr "Экспорт выбранных ресурсов (включая зависимости)"
+
+msgid "Export all resources in the project except resources checked below"
+msgstr "Экспортировать все ресурсы проекта, кроме отмеченных ниже"
+
+msgid "Export as dedicated server"
+msgstr "Экспортировать как выделенный сервер"
 
 msgid ""
 "**Export all resources in the project** will export every resource in the "

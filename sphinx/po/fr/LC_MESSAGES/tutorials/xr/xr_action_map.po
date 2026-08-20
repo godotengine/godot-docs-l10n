@@ -80,11 +80,6 @@ msgid "The ``Bool`` type is used for discrete input like buttons."
 msgstr ""
 "Le type ``Bool`` est utilisé pour des entrées discrètes comme des boutons."
 
-msgid "The ``Float`` type is used for analogue input like triggers."
-msgstr ""
-"Le type ``Float`` est utilisé pour de l'entrée analogique comme les "
-"gâchettes."
-
 msgid ""
 "These two are special as they are the only ones that are interchangeable. "
 "OpenXR will handle conversions between ``Bool`` and ``Float`` inputs and "
@@ -137,13 +132,6 @@ msgstr ""
 "que vous pouvez lier la même action aux deux mains. Le "
 "nœud :ref:`XRController3D <class_xrcontroller3d>` approprié émettra le "
 "signal."
-
-msgid ""
-"For buttons like A/B/X/Y and similar where there is no analogue option, the "
-"``Bool`` type works fine."
-msgstr ""
-"Pour les boutons comme A/B/X/Y/etc... où il n'y a pas d'option analogique, "
-"le type ``Bool`` fonctionne bien."
 
 msgid ""
 "You can bind the same action to multiple inputs for the same controller on "
@@ -208,6 +196,12 @@ msgstr ""
 "dispositions pour les dispositifs tels que les tapis roulants, les gilets "
 "haptiques, etc..., même si ceux-ci ne font pas encore partie de la "
 "spécification."
+
+msgid "we could be using a Quest 1 controller,"
+msgstr "nous pourrions utiliser une manette de Quest 1,"
+
+msgid "we could be using a Quest 2 controller,"
+msgstr "nous pourrions utiliser une manette de Quest 2,"
 
 msgid ""
 "we could be using a Quest Pro controller but no Quest Pro profile was given "

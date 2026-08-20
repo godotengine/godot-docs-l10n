@@ -242,15 +242,6 @@ msgstr ""
 "之前，你需要分别加上 ``arch=x86_32`` 和 ``arch=x86_64`` 这两个参数，把 SCons "
 "编译命令再额外运行两次。举个例子，如果是编译发布版（release）模板的话："
 
-msgid ""
-"This will create template binaries that works on all platforms. The final "
-"binary size of exported projects will depend on the platforms you choose to "
-"support when exporting; in other words, unused platforms will be removed "
-"from the binary."
-msgstr ""
-"这将创建适用于所有平台的模板二进制文件。导出项目的最终二进制文件大小取决于你"
-"在导出时选择支持的平台；换句话说，未使用的平台将从二进制文件中移除。"
-
 msgid "Cleaning the generated export templates"
 msgstr "清理生成的导出模板"
 

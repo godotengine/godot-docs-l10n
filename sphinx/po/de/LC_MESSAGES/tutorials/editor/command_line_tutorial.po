@@ -20,9 +20,9 @@ msgid ""
 "command line. Given the engine relies on almost no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
-"Einige Entwickler verwenden gerne und ausgiebig die Befehlszeile. Godot ist "
+"Einige Entwickler verwenden gerne und ausgiebig die Kommandozeile. Godot ist "
 "so konzipiert, dass es mit ihnen kompatibel ist. Hier sind die Schritte, um "
-"vollständig über die Befehlszeile zu arbeiten. Da die Engine fast keine "
+"vollständig über die Kommandozeile zu arbeiten. Da die Engine fast keine "
 "externen Bibliotheken benötigt, sind die Initialisierungszeiten recht kurz, "
 "was sie für diesen Workflow geeignet macht."
 
@@ -143,7 +143,7 @@ msgid ""
 "e.g. ``tcp://127.0.0.1:6007``)"
 msgstr ""
 "|editor| Debug-Server des Editors starten (``<protocol>://<host/IP>[:"
-"<port>]``, z.B. ``tcp://127.0.0.1:6007``)"
+"<port>]``, z. B. ``tcp://127.0.0.1:6007``)"
 
 msgid "``--quit``"
 msgstr "``--quit``"
@@ -386,7 +386,7 @@ msgid ""
 "|release| Remote debug (``<protocol>://<host/IP>[:<port>]``, e.g. ``tcp://"
 "127.0.0.1:6007``)."
 msgstr ""
-"|release| Remote-Debug (``<protocol>://<host/IP>[:<port>]``, z.B. ``tcp://"
+"|release| Remote-Debug (``<protocol>://<host/IP>[:<port>]``, z. B. ``tcp://"
 "127.0.0.1:6007``)."
 
 msgid "``--single-threaded-scene``"
@@ -403,7 +403,7 @@ msgid "``--debug-collisions``"
 msgstr "``--debug-collisions``"
 
 msgid "|debug| Show collision shapes when running the scene."
-msgstr "|debug| Kollisions-Shapes beim Ausführen der Szene anzeigen."
+msgstr "|debug| Collision-Shapes beim Ausführen der Szene anzeigen."
 
 msgid "``--debug-paths``"
 msgstr "``--debug-paths``"
@@ -443,7 +443,7 @@ msgstr "``--time-scale <scale>``"
 msgid ""
 "|release| Force time scale (higher values are faster, 1.0 is normal speed)."
 msgstr ""
-"|release| Zeitskala erzwingen (höhere Werte sind schneller - 1,0 ist normale "
+"|release| Zeitskala erzwingen (höhere Werte sind schneller – 1,0 ist normale "
 "Geschwindigkeit)."
 
 msgid "``--disable-vsync``"
@@ -493,11 +493,17 @@ msgstr "``--print-fps``"
 msgid "|release| Print the frames per second to the stdout."
 msgstr "|release| Frames pro Sekunde auf stdout ausgeben."
 
+msgid "``--editor-pseudolocalization``"
+msgstr "``--editor-pseudolocalization``"
+
 msgid "**Standalone tools**"
 msgstr "**Eigenständige Tools**"
 
 msgid "``-s``, ``--script <script>``"
 msgstr "``-s``, ``--script <script>``"
+
+msgid "``--main-loop <main_loop_name>``"
+msgstr "``--main-loop <main_loop_name>``"
 
 msgid "``--check-only``"
 msgstr "``--check-only``"
@@ -537,6 +543,15 @@ msgstr ""
 "die angegebene Vorgabe. Die ``<path>``-Erweiterung bestimmt, ob es im PCK- "
 "oder ZIP-Format sein wird. Impliziert ``--import``."
 
+msgid "``--export-patch <preset> <path>``"
+msgstr "``--export-patch <preset> <path>``"
+
+msgid "``--patches <paths>``"
+msgstr "``--patches <paths>``"
+
+msgid "``--install-android-build-template``"
+msgstr "``--install-android-build-template``"
+
 msgid "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
 msgstr "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
 
@@ -570,6 +585,9 @@ msgid "|editor| Disallow dumping the base types (used with ``--doctool``)."
 msgstr ""
 "|editor| Dumping der Basistypen verbieten (verwendet mit ``--doctool``)."
 
+msgid "``--gdextension-docs``"
+msgstr "``--gdextension-docs``"
+
 msgid "``--gdscript-docs <path>``"
 msgstr "``--gdscript-docs <path>``"
 
@@ -580,14 +598,20 @@ msgid ""
 "|editor| Build the scripting solutions (e.g. for C# projects). Implies ``--"
 "editor`` and requires a valid project to edit."
 msgstr ""
-"|editor| Bauen der Skripting-Solutions (z.B. für C# Projekte). Impliziert "
+"|editor| Bauen der Skripting-Solutions (z. B. für C# Projekte). Impliziert "
 "``--editor`` und erfordert ein gültiges Projekt zum Bearbeiten."
 
 msgid "``--dump-gdextension-interface``"
 msgstr "``--dump-gdextension-interface``"
 
+msgid "``--dump-gdextension-interface-json``"
+msgstr "``--dump-gdextension-interface-json``"
+
 msgid "``--dump-extension-api``"
 msgstr "``--dump-extension-api``"
+
+msgid "``--dump-extension-api-with-docs``"
+msgstr "``--dump-extension-api-with-docs``"
 
 msgid "``--validate-extension-api <path>``"
 msgstr "``--validate-extension-api <path>``"
@@ -605,18 +629,11 @@ msgstr ""
 msgid "``--benchmark``"
 msgstr "``--benchmark``"
 
-msgid "|editor| Benchmark the run time and print it to console."
-msgstr "|editor| Benchmarking der Laufzeit und Ausgabe auf der Konsole."
-
 msgid "``--benchmark-file <path>``"
 msgstr "``--benchmark-file <path>``"
 
-msgid ""
-"|editor| Benchmark the run time and save it to a given file in JSON format. "
-"The path should be absolute."
-msgstr ""
-"|editor| Benchmarking der Laufzeit und Speichern in einer angegebenen Datei "
-"im JSON-Format. Der Pfad sollte absolut sein."
+msgid "``--test [--help]``"
+msgstr "``--test [--help]``"
 
 msgid "Path"
 msgstr "Pfad"
@@ -645,7 +662,7 @@ msgstr ""
 "von Godot automatisch im ``PATH`` verfügbar gemacht:"
 
 msgid "Setting the project path"
-msgstr "Projektpfad setzen"
+msgstr "Den Projektpfad setzen"
 
 msgid ""
 "Depending on where your Godot binary is located and what your current "
@@ -693,7 +710,7 @@ msgstr ""
 "selben Pfad befindet:"
 
 msgid "Creating a project"
-msgstr "Projekt erzeugen"
+msgstr "Ein Projekt erstellen"
 
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
@@ -707,7 +724,7 @@ msgid "The project can now be opened with Godot."
 msgstr "Das Projekt kann nun mit Godot geöffnet werden."
 
 msgid "Running the editor"
-msgstr "Editor starten"
+msgstr "Den Editor starten"
 
 msgid ""
 "Running the editor is done by executing Godot with the ``-e`` flag. This "
@@ -735,7 +752,7 @@ msgstr ""
 "werden, indem derselbe Code mit dieser Szene als Argument ausgeführt wird."
 
 msgid "Erasing a scene"
-msgstr "Szene löschen"
+msgstr "Eine Szene löschen"
 
 msgid ""
 "Godot is friends with your filesystem and will not create extra metadata "
@@ -748,7 +765,7 @@ msgstr ""
 "beim Öffnen des Projekts ein Fehler ausgelöst."
 
 msgid "Running the game"
-msgstr "Spiel starten"
+msgstr "Das Spiel starten"
 
 msgid ""
 "To run the game, execute Godot within the project directory or with the "
@@ -801,7 +818,7 @@ msgid ""
 "project is exporting."
 msgstr ""
 "Die Verwendung des Kommandozeilenarguments ``--headless`` ist "
-"**erforderlich** auf Plattformen, die keinen GPU-Zugriff haben (z.B. "
+"**erforderlich** auf Plattformen, die keinen GPU-Zugriff haben (z. B. "
 "Continuous Integration). Auf Plattformen mit GPU-Zugriff verhindert ``--"
 "headless``, dass ein Fenster erscheint, während das Projekt exportiert wird."
 
@@ -813,7 +830,7 @@ msgid ""
 msgstr ""
 "Der Name der Vorgabe muss mit dem Namen einer Exportvorgabe übereinstimmen, "
 "die in der Datei ``export_presets.cfg`` des Projekts definiert ist. Wenn der "
-"Vorgabenname Leerzeichen oder Sonderzeichen enthält (z. B. \"Windows "
+"Vorgabenname Leerzeichen oder Sonderzeichen enthält (z. B. \"Windows "
 "Desktop\"), muss er mit Anführungszeichen umgeben werden."
 
 msgid ""
@@ -855,8 +872,8 @@ msgid ""
 "is especially useful in large projects, e.g. for batch conversion of assets "
 "or custom import/export."
 msgstr ""
-"Es ist möglich, ein ``.gd``-Skript über die Befehlszeile auszuführen. Diese "
-"Funktion ist besonders bei großen Projekten nützlich, z.B. für die Batch-"
+"Es ist möglich, ein ``.gd``-Skript über die Kommandozeile auszuführen. Diese "
+"Funktion ist besonders bei großen Projekten nützlich, z. B. für die Batch-"
 "Konvertierung von Assets oder den benutzerdefinierten Import/Export."
 
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."

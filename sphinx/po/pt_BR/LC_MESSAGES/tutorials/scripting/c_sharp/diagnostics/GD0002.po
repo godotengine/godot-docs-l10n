@@ -11,5 +11,80 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid ""
+"GD0002: Missing partial modifier on declaration of type which contains "
+"nested classes that derive from GodotObject"
+msgstr ""
+"GD0002: Modificador partial ausente na declaração de tipo que contém classes "
+"aninhadas que derivam de GodotObject"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0002"
+msgstr "GD0002"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Non-breaking"
+msgstr "Não quebra compatibilidade (Non-breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"A type that derives from ``GodotObject`` is contained in a non-partial type "
+"declaration."
+msgstr ""
+"Un tipo que deriva de ``GodotObject`` está contido em uma declaração de tipo "
+"que não é partial."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid ""
+"Godot source generators add generated code to user-defined types to "
+"implement the integration with the engine. Source generators can't add "
+"generated code to types that aren't declared partial."
+msgstr ""
+"Os geradores de código-fonte (source generators) do Godot adicionam código "
+"gerado aos tipos definidos pelo usuário para implementar a integração com o "
+"motor. Os geradores de código-fonte não podem adicionar código gerado a "
+"tipos que não estejam declarados como partial."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, add the ``partial`` keyword to the type "
+"declaration."
+msgstr ""
+"Para corrigir uma violação desta regra, adicione a palavra-chave ``partial`` "
+"à declaração do tipo."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Types that derive from "
+"``GodotObject`` but aren't partial can't be enhanced by the source "
+"generators, resulting in unexpected runtime errors."
+msgstr ""
+"Não suprima um aviso desta regra. Tipos que derivam de ``GodotObject``, mas "
+"não são partial, não podem ser aprimorados pelos geradores de código-fonte, "
+"resultando em erros inesperados em tempo de execução."

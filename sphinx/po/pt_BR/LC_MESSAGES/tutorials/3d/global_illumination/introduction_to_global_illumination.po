@@ -11,6 +11,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Introduction to global illumination"
+msgstr "Introdução à iluminação global"
+
+msgid "What is global illumination?"
+msgstr "O que é iluminação global?"
+
 msgid ""
 "*Global illumination* is a catch-all term used to describe a system of "
 "lighting that uses both direct light (light that comes directly from a light "
@@ -127,6 +133,9 @@ msgstr ""
 "seção :ref:`doc_3d_rendering_limitations_color_banding` na documentação de "
 "limitações de renderização 3D para maneiras de reduzir esse efeito."
 
+msgid "Specular lighting"
+msgstr "Iluminação especular"
+
 msgid ""
 "Specular lighting is also referred to as *reflections*. This is the lighting "
 "that changes in intensity depending on the camera's angle. This specular "
@@ -159,6 +168,9 @@ msgstr ""
 "<doc_environment_and_post_processing>`. O SSR tem um custo de desempenho "
 "significativo (ainda maior que o do SSAO), portanto, certifique-se de "
 "desativá-lo ao direcionar para hardwares de baixo desempenho."
+
+msgid "Which global illumination technique should I use?"
+msgstr "Qual técnica de iluminação global devo usar?"
 
 msgid ""
 "When determining a global illumination (GI) technique to use, there are "
@@ -287,6 +299,9 @@ msgstr ""
 "significativamente o desempenho. **Não disponível** *ao usar os "
 "renderizadores Mobile ou Compatibility.*"
 
+msgid "**Screen-space indirect lighting (SSIL):**"
+msgstr "**Iluminação indireta em espaço de tela (SSIL):**"
+
 msgid ""
 "The SSIL quality and number of blur passes can be adjusted in the Project "
 "Settings. By default, SSIL rendering is performed at half resolution (and "
@@ -400,6 +415,9 @@ msgstr ""
 "rapidamente. Isso pode ser menos perceptível ajustando os tamanhos das "
 "cascatas ou usando neblina (fog)."
 
+msgid "SDFGI in action."
+msgstr "SDFGI em ação."
+
 msgid ""
 "**Screen-space indirect lighting (SSIL):** |average| Good *secondary* source "
 "of indirect lighting, but no reflections."
@@ -485,6 +503,9 @@ msgid ""
 msgstr ""
 "ReflectionProbe em ação (sem nenhuma outra técnica de GI). Observe a esfera "
 "reflexiva."
+
+msgid "Real-time ability"
+msgstr "Capacidade em tempo real"
 
 msgid "**VoxelGI:** |good| Fully real-time."
 msgstr "**VoxelGI:** |good| Totalmente em tempo real."
@@ -682,6 +703,15 @@ msgstr ""
 "compatíveis. Veja "
 "também :ref:`doc_introduction_to_global_illumination_alternatives`."
 
+msgid ""
+"You can compare global illumination techniques in action using the `Global "
+"Illumination demo project <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/3d/global_illumination>`__."
+msgstr ""
+"Você pode comparar técnicas de iluminação global em ação usando o projeto de "
+"demonstração `Global Illumination <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/3d/global_illumination>`__."
+
 msgid "Which global illumination mode should I use on meshes and lights?"
 msgstr "Qual modo de iluminação global devo usar em malhas e luzes?"
 
@@ -756,6 +786,9 @@ msgstr ""
 "use o modo de bake **Dynamic** para melhorar a qualidade *(padrão)*. Observe "
 "que isso só tem efeito com VoxelGI e SDFGI, pois o LightmapGI não oferece "
 "suporte a global illumination com luzes dinâmicas."
+
+msgid "Alternatives to GI techniques"
+msgstr "Alternativas às técnicas de GI"
 
 msgid ""
 "If none of the GI techniques mentioned above fits, it's still possible "

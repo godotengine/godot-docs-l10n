@@ -81,11 +81,21 @@ msgstr "0"
 msgid "``ARRAY_VERTEX``"
 msgstr "``ARRAY_VERTEX``"
 
+msgid ""
+":ref:`PackedVector3Array <class_PackedVector3Array>` "
+"or :ref:`PackedVector2Array <class_PackedVector2Array>`"
+msgstr ""
+":ref:`PackedVector3Array <class_PackedVector3Array>` "
+"ou :ref:`PackedVector2Array <class_PackedVector2Array>`"
+
 msgid "1"
 msgstr "1"
 
 msgid "``ARRAY_NORMAL``"
 msgstr "``ARRAY_NORMAL``"
+
+msgid ":ref:`PackedVector3Array <class_PackedVector3Array>`"
+msgstr ":ref:`PackedVector3Array <class_PackedVector3Array>`"
 
 msgid "2"
 msgstr "2"
@@ -110,11 +120,21 @@ msgstr "3"
 msgid "``ARRAY_COLOR``"
 msgstr "``ARRAY_COLOR``"
 
+msgid ":ref:`PackedColorArray <class_PackedColorArray>`"
+msgstr ":ref:`PackedColorArray <class_PackedColorArray>`"
+
 msgid "4"
 msgstr "4"
 
 msgid "``ARRAY_TEX_UV``"
 msgstr "``ARRAY_TEX_UV``"
+
+msgid ""
+":ref:`PackedVector2Array <class_PackedVector2Array>` "
+"or :ref:`PackedVector3Array <class_PackedVector3Array>`"
+msgstr ""
+":ref:`PackedVector2Array <class_PackedVector2Array>` "
+"ou :ref:`PackedVector3Array <class_PackedVector3Array>`"
 
 msgid "5"
 msgstr "5"
@@ -160,6 +180,9 @@ msgstr "12"
 msgid "``ARRAY_INDEX``"
 msgstr "``ARRAY_INDEX``"
 
+msgid ":ref:`PackedInt32Array <class_PackedInt32Array>`"
+msgstr ":ref:`PackedInt32Array <class_PackedInt32Array>`"
+
 msgid ""
 "In most cases when creating a mesh, we define it by its vertex positions. So "
 "usually, the array of vertices (at index 0) is required, while the index "
@@ -199,6 +222,9 @@ msgstr ""
 "<class_arraymesh_method_add_surface_from_arrays>` são geralmente deixados em "
 "branco."
 
+msgid "Setting up the ArrayMesh"
+msgstr "Configurando o ArrayMesh"
+
 msgid ""
 "In the editor, create a :ref:`MeshInstance3D <class_meshinstance3d>` and add "
 "an :ref:`ArrayMesh <class_arraymesh>` to it in the Inspector. Normally, "
@@ -210,8 +236,11 @@ msgstr ""
 "adicionar um ArrayMesh no editor não é útil, mas neste caso isso nos permite "
 "acessar o ArrayMesh pelo código sem precisar criar um."
 
+msgid "Next, add a script to the MeshInstance3D."
+msgstr "Em seguida, adicione um script ao MeshInstance3D."
+
 msgid "Under ``_ready()``, create a new Array."
-msgstr "Em ''_ready()'', crie uma nova Array."
+msgstr "Dentro de ``_ready()``, crie um novo Array."
 
 msgid ""
 "This will be the array that we keep our surface information in - it will "
@@ -244,6 +273,16 @@ msgstr ""
 
 msgid "Put together, the full code looks like:"
 msgstr "Juntos, o código completo se parece com:"
+
+msgid ""
+"The code that goes in the middle can be whatever you want. Below we will "
+"present some example code for generating shapes, starting with a rectangle."
+msgstr ""
+"O código que vai no meio pode ser o que você desejar. Abaixo apresentaremos "
+"alguns exemplos de código para geração de formas, começando com um retângulo."
+
+msgid "Generating a rectangle"
+msgstr "Gerando um retângulo"
 
 msgid ""
 "Since we are using ``Mesh.PRIMITIVE_TRIANGLES`` to render, we will construct "
@@ -312,11 +351,23 @@ msgstr ""
 "0, 2, e 1, no array ``vert``. Esses valores de índice são o que o array "
 "``indices`` define."
 
+msgid "``verts[Index]``"
+msgstr "``verts[Index]``"
+
+msgid "``uvs[Index]``"
+msgstr "``uvs[Index]``"
+
+msgid "``normals[Index]``"
+msgstr "``normals[Index]``"
+
 msgid "(0, 0, 0)"
 msgstr "(0, 0, 0)"
 
 msgid "(0, 0)"
 msgstr "(0, 0)"
+
+msgid "Vector3.UP"
+msgstr "Vector3.UP"
 
 msgid "(0, 0, 1)"
 msgstr "(0, 0, 1)"
@@ -336,9 +387,15 @@ msgstr "(1, 0, 1)"
 msgid "(1, 1)"
 msgstr "(1, 1)"
 
+msgid "Put together, the rectangle generation code looks like:"
+msgstr "Juntando tudo, o código de geração do retângulo fica assim:"
+
 msgid "For a more complex example, see the sphere generation section below."
 msgstr ""
 "Para um exemplo mais complexo, veja a seção de geração de esferas abaixo."
+
+msgid "Generating a sphere"
+msgstr "Gerando uma esfera"
 
 msgid ""
 "Here is sample code for generating a sphere. Although the code is presented "
@@ -358,3 +415,12 @@ msgstr ""
 
 msgid "Saving"
 msgstr "Salvando"
+
+msgid ""
+"Finally, we can use the :ref:`ResourceSaver <class_resourcesaver>` class to "
+"save the ArrayMesh. This is useful when you want to generate a mesh and then "
+"use it later without having to re-generate it."
+msgstr ""
+"Por fim, podemos usar a classe :ref:`ResourceSaver <class_resourcesaver>` "
+"para salvar o ArrayMesh. Isso é útil quando você deseja gerar uma malha e "
+"reutilizá-la posteriormente sem precisar gerá-la novamente."

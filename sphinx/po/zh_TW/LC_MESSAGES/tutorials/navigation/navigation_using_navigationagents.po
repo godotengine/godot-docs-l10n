@@ -205,18 +205,6 @@ msgstr "編寫代理體移動腳本時，需注意下列常見問題與重要事
 msgid "The path is returned empty"
 msgstr "取得的路徑為空"
 
-msgid ""
-"If an agent queries a path before the navigation map synchronisation, e.g. "
-"in a ``_ready()`` function, the path might return empty. In this case the "
-"``get_next_path_position()`` function will return the same position as the "
-"agent parent node and the agent will consider the path end reached. This is "
-"fixed by making a deferred call or using a callback e.g. waiting for the "
-"navigation map changed signal."
-msgstr ""
-"如果在導航地圖尚未同步前（如於 ``_ready()`` 中）查詢路徑，可能會取得空路徑。"
-"這時 ``get_next_path_position()`` 會回傳與代理體父節點相同的位置，並視為已到"
-"達終點。解決方式為延遲呼叫，或等待導航地圖變更訊號後再查詢路徑。"
-
 msgid "The agent is stuck dancing between two positions"
 msgstr "代理體卡在兩個位置來回抖動"
 
@@ -325,14 +313,6 @@ msgstr ""
 "``height`` 屬性僅供 3D 使用。高度結合代理體目前全域 y 軸位置，決定代理體在迴"
 "避模擬中的垂直層級。使用 2D 迴避時，會自動忽略高於或低於自身的其他代理體或障"
 "礙。"
-
-msgid ""
-"The property ``radius`` controls the size of the avoidance circle, or in "
-"case of 3D sphere, around the agent. This area describes the agents body and "
-"not the avoidance maneuver distance."
-msgstr ""
-"``radius`` 屬性設定代理體迴避圓的半徑（3D 為球體），代表代理體本身的碰撞體"
-"積，而非迴避動作的距離。"
 
 msgid ""
 "The property ``neighbor_distance`` controls the search radius of the agent "

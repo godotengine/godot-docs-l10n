@@ -151,16 +151,6 @@ msgstr ""
 msgid "Debugging"
 msgstr "调试"
 
-msgid ""
-"While the debugger and breakpoints cannot be used directly with tool "
-"scripts, it is possible to launch a new instance of the editor and debug "
-"from there. To do this, navigate to **Debug > Customize Run Instances...** "
-"and specify `--editor` in **Main Run Args**."
-msgstr ""
-"虽然调试器和断点不能直接用于工具脚本，但可以启动编辑器的新实例并从那里进行调"
-"试。为此，请前往\\ **调试 > 自定义运行实例...**\\ ，并在\\ **主运行参数**\\ "
-"中指定 `--editor`\\ 。"
-
 msgid "See :ref:`doc_overview_of_debugging_tools` for more information."
 msgstr "更多信息请参阅\\ :ref:`doc_overview_of_debugging_tools`\\ 。"
 
@@ -462,9 +452,6 @@ msgstr ""
 "场景。这会影响 :ref:`EditorInterface.get_edited_scene_root "
 "<class_EditorInterface_method_get_edited_scene_root>` 的返回值，因此在运行脚"
 "本之前，请务必确保你已经选中了打算进行操作（迭代）的那个场景。"
-
-msgid "Instancing scenes"
-msgstr "实例化场景"
 
 msgid ""
 "You can instantiate packed scenes normally and add them to the scene "

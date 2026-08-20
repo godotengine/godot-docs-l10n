@@ -434,15 +434,6 @@ msgstr ""
 "ist etwas schneller als die Verwendung einer Uniform. Konstanten müssen bei "
 "ihrer Deklaration initialisiert werden."
 
-msgid ""
-"Constants cannot be modified and additionally cannot have hints, but "
-"multiple of them (if they have the same type) can be declared in a single "
-"expression e.g"
-msgstr ""
-"Konstanten können nicht verändert werden und können auch keine Hints haben, "
-"aber mehrere von ihnen (wenn sie den gleichen Typ haben) können in einem "
-"einzigen Ausdruck deklariert werden, z.B"
-
 msgid "Similar to variables, arrays can also be declared with ``const``."
 msgstr ""
 "Ähnlich wie Variablen können Arrays auch mit ``const`` deklariert werden."
@@ -497,13 +488,6 @@ msgstr ""
 
 msgid "Or use struct constructor for same purpose:"
 msgstr "Oder verwenden Sie den Struct-Konstruktor für denselben Zweck:"
-
-msgid ""
-"Structs may contain other struct or array, you can also instance them as "
-"global constant:"
-msgstr ""
-"Strukturen können andere Strukturen oder Arrays enthalten, Sie können sie "
-"auch als globale Konstante instanziieren:"
 
 msgid "You can also pass them to functions:"
 msgstr "Sie können sie auch an Funktionen übergeben:"
@@ -969,7 +953,7 @@ msgid ""
 "or having objects move with the wind."
 msgstr ""
 "Globale Uniforms sind besonders nützlich für Umgebungseffekte, die sich auf "
-"viele Objekte in einer Szene auswirken, z.B. wenn sich das Laub biegt, wenn "
+"viele Objekte in einer Szene auswirken, z. B. wenn sich das Laub biegt, wenn "
 "der Spieler in der Nähe ist, oder wenn sich Objekte mit dem Wind bewegen."
 
 msgid ""
@@ -1204,6 +1188,9 @@ msgstr "**Cubemap**"
 
 msgid "**CubemapArray**"
 msgstr "**CubemapArray**"
+
+msgid "**ExternalTexture**"
+msgstr "**ExternalTexture**"
 
 msgid "Built-in variables"
 msgstr "Built-in-Variablen"

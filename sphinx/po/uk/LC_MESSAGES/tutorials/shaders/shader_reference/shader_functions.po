@@ -11,16 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Built-in functions"
-msgstr "Вбудовані функції"
-
-msgid ""
-"Godot supports a large number of built-in functions, conforming roughly to "
-"the GLSL ES 3.0 specification."
-msgstr ""
-"Godot підтримує велику кількість вбудованих функцій, що приблизно "
-"відповідають специфікації GLSL ES 3.0."
-
 msgid ""
 "The following type aliases only used in documentation to reduce repetitive "
 "function declarations. They can each refer to any of several actual types."
@@ -948,10 +938,6 @@ msgstr ""
 msgid "Raises ``x`` to the power of ``y``."
 msgstr "Підносить ``x`` до степеня ``y``."
 
-msgid "The result is undefined if ``x < 0`` or  if ``x == 0`` and ``y <= 0``."
-msgstr ""
-"Результат не визначений, якщо ``x < 0`` або якщо ``x == 0`` і ``y <= 0``."
-
 msgid "The value to be raised to the power ``y``."
 msgstr "Значення, яке потрібно підняти до степеня ``y``."
 
@@ -966,9 +952,6 @@ msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml"
 
 msgid "|vec_type| **exp**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
 msgstr "|vec_type| **exp**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
-
-msgid "Raises ``e`` to the power of ``x``, or the the natural exponentiation."
-msgstr "Підносить ``e`` до степеня ``x`` або натурального степеня."
 
 msgid "Equivalent to ``pow(e, x)``."
 msgstr "Еквівалент ``pow(e, x)``."
@@ -993,9 +976,6 @@ msgstr "Еквівалент ``pow(2.0, x)``."
 
 msgid "The value of the power to which ``2`` will be raised."
 msgstr "Значення степеня, до якого буде зведено число ``2``."
-
-msgid "``2`` raised to the power of x."
-msgstr "``2`` піднесені до степеня х."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
@@ -1149,15 +1129,6 @@ msgstr "|vec_type| **round**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
 
 msgid "Rounds ``x`` to the nearest integer."
 msgstr "Округлює ``x`` до найближчого цілого числа."
-
-msgid ""
-"Rounding of values with a fractional part of ``0.5`` is implementation-"
-"dependent. This includes the possibility that ``round(x)`` returns the same "
-"value as ``roundEven(x)``for all values of ``x``."
-msgstr ""
-"Округлення значень з дробовою частиною ``0.5`` залежить від реалізації. Це "
-"включає можливість того, що ``round(x)`` повертає те саме значення, що й "
-"``roundEven(x)``для всіх значень ``x``."
 
 msgid "The value to round."
 msgstr "Значення для округлення."
@@ -1551,16 +1522,6 @@ msgstr ""
 "компонент ``b``. Компоненти ``a`` та ``b``, які не вибрано, можуть бути "
 "недійсними значеннями з плаваючою комою та не впливатимуть на результати."
 
-msgid ""
-"If ``a``, ``b``, and ``c`` are vector types the operation is "
-"performed :ref:`component-wise <shading_componentwise>`. ie. ``mix(vec2(42, "
-"314), vec2(9.8, 6e23), bvec2(true, false)))`` will return ``vec2(9.8, 314)``."
-msgstr ""
-"Якщо ``a``, ``b`` і ``c`` є векторними типами, операція "
-"виконується :ref:`component-wise <shading_componentwise>`. тобто. "
-"``mix(vec2(42, 314), vec2(9.8, 6e23), bvec2(true, false)))`` поверне "
-"``vec2(9.8, 314)``."
-
 msgid "Value returned when ``c`` is false."
 msgstr "Значення, що повертається, коли ``c`` є false."
 
@@ -1600,15 +1561,6 @@ msgstr ""
 "Точність ``fma()`` може відрізнятися від точності виразу ``a * b + c``."
 
 msgid ""
-"``fma()`` will be computed with the same precision as any other ``fma()`` "
-"consumed by a precise variable, giving invariant results for the same input "
-"values of a, b and c."
-msgstr ""
-"``fma()`` обчислюватиметься з такою ж точністю, як і будь-який інший "
-"``fma()``, що споживається точною змінною, даючи незмінні результати для тих "
-"самих вхідних значень a, b і c."
-
-msgid ""
 "Otherwise, in the absence of precise consumption, there are no special "
 "constraints on the number of operations or difference in precision between "
 "``fma()`` and the expression ``a * b + c``."
@@ -1643,18 +1595,6 @@ msgid ""
 "|vec_type| **step**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
 msgstr ""
 "|vec_type| **step**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
-
-msgid "Generates a step function by comparing b to a."
-msgstr "Створює ступінчасту функцію шляхом порівняння b з a."
-
-msgid ""
-"Equivalent to ``if (b < a) { return 0.0; } else { return 1.0; }``. For "
-"element i of the return value, 0.0 is returned if b[i] < a[i], and 1.0 is "
-"returned otherwise."
-msgstr ""
-"Еквівалент ``if (b < a) { return 0.0; } else { return 1.0; }``. Для елемента "
-"i значення, що повертається, 0,0 повертається, якщо b[i] < a[i], і 1,0 "
-"повертається в іншому випадку."
 
 msgid "The location of the edge of the step function."
 msgstr "Розташування краю ступінчастої функції."
@@ -1714,16 +1654,6 @@ msgid ""
 "|vec_bool_type| **isnan**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
 msgstr ""
 "|vec_bool_type| **isnan**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
-
-msgid ""
-"For each element i of the result, returns ``true`` if x[i] is positive or "
-"negative floating-point NaN (Not a Number) and false otherwise."
-msgstr ""
-"Для кожного елемента i результату повертає ``true``, якщо x[i] є додатним "
-"або від’ємним NaN із плаваючою комою (не число), і false в іншому випадку."
-
-msgid "The value to test for NaN."
-msgstr "Значення для перевірки NaN."
 
 msgid "``true`` or ``false``."
 msgstr "``true`` або ``false``."
@@ -1901,9 +1831,6 @@ msgstr ""
 ":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
 "I, |vec_type| Nref)"
 
-msgid "If ``dot(Nref, I)`` < 0, return ``N``, otherwise ``-N``."
-msgstr "Якщо ``точка(Nref, I)`` < 0, повертається ``N``, інакше ``-N``."
-
 msgid "|mat_type|"
 msgstr "|mat_type|"
 
@@ -1951,13 +1878,6 @@ msgstr "Описи геометричних функцій"
 msgid "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
 msgstr "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
 
-msgid ""
-"Returns the length of the vector. ie. ``sqrt(x[0] * x[0] + x[1] * x[1] + ... "
-"+ x[n] * x[n])``"
-msgstr ""
-"Повертає довжину вектора. тобто. ``sqrt(x[0] * x[0] + x[1] * x[1] + ... + "
-"x[n] * x[n])``"
-
 msgid "The vector"
 msgstr "Вектор"
 
@@ -1973,12 +1893,6 @@ msgid ""
 msgstr ""
 "float **distance**\\ (\\ |vec_type| a, |vec_type| "
 "b) :ref:`🔗<shader_func_distance>`"
-
-msgid "Returns the distance between the two points a and b."
-msgstr "Повертає відстань між двома точками a і b."
-
-msgid "i.e., ``length(b - a);``"
-msgstr "тобто ``довжина (b - a);``"
 
 msgid "The first point."
 msgstr "Пункт перший."
@@ -1999,13 +1913,6 @@ msgid ""
 msgstr ""
 "float **dot**\\ (\\ |vec_type| a, |vec_type| b) :ref:`🔗<shader_func_dot>`"
 
-msgid ""
-"Returns the dot product of two vectors, ``a`` and ``b``. i.e., ``a.x * b.x + "
-"a.y * b.y + ...``"
-msgstr ""
-"Повертає скалярний добуток двох векторів, ``a`` та ``b``, тобто ``a.x * b.x "
-"+ a.y * b.y + ...``"
-
 msgid "The first vector."
 msgstr "Перший вектор."
 
@@ -2020,9 +1927,6 @@ msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
 
 msgid "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
 msgstr "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
-
-msgid "Returns the cross product of two vectors. i.e.:"
-msgstr "Повертає векторний добуток двох векторів, тобто:"
 
 msgid "The cross product of ``a`` and ``b``."
 msgstr "Перехресний добуток ``a`` і ``b``."
@@ -2313,16 +2217,10 @@ msgid ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 
-msgid "Bool vector comparison on < int/uint/float vectors."
-msgstr "Порівняння векторів Bool на векторах < int/uint/float."
-
 msgid ""
 ":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
-
-msgid "Bool vector comparison on > int/uint/float vectors."
-msgstr "Порівняння векторів Bool на векторах > int/uint/float."
 
 msgid ""
 ":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
@@ -2331,31 +2229,19 @@ msgstr ""
 ":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
 "vec_type| y)"
 
-msgid "Bool vector comparison on <= int/uint/float vectors."
-msgstr "Порівняння векторів Bool на векторах <= int/uint/float."
-
 msgid ""
 ":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
 "vec_type| y)"
 msgstr ""
 ":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
 "vec_type| y)"
-
-msgid "Bool vector comparison on >= int/uint/float vectors."
-msgstr "Порівняння векторів Bool на векторах >= int/uint/float."
 
 msgid ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
 
-msgid "Bool vector comparison on == int/uint/float vectors."
-msgstr "Порівняння векторів Bool на векторах == int/uint/float."
-
 msgid ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
-
-msgid "Bool vector comparison on != int/uint/float vectors."
-msgstr "Порівняння векторів Bool на векторах != int/uint/float."
 
 msgid "bool"
 msgstr "bool"
@@ -2526,12 +2412,6 @@ msgstr ""
 "Виконує а :ref:`component-wise<shading_componentwise>` не-рівно порівняння "
 "двох векторів."
 
-msgid "The first vector for comparison."
-msgstr "Перший вектор для порівняння."
-
-msgid "The second vector for comparison."
-msgstr "Другий вектор для порівняння."
-
 msgid ""
 "A boolean vector in which each element ``i`` is computed as ``x[i] != y[i]``."
 msgstr ""
@@ -2559,10 +2439,6 @@ msgstr "Функціонально еквівалентно:"
 msgid "The vector to be tested for truth."
 msgstr "Вектор, який потрібно перевірити на істинність."
 
-msgid "True if any element of x is true and false otherwise."
-msgstr ""
-"Істинний, якщо будь-який елемент x є істинним, і хибний в іншому випадку."
-
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
 
@@ -2587,15 +2463,8 @@ msgid ""
 msgstr ""
 "|vec_bool_type| **not**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_not>`"
 
-msgid "Logically invert a boolean vector."
-msgstr "Логічно інвертувати логічний вектор."
-
 msgid "The vector to be inverted."
 msgstr "Вектор, який потрібно інвертувати."
-
-msgid "A new boolean vector for which each element i is computed as !x[i]."
-msgstr ""
-"Новий логічний вектор, для якого кожен елемент i обчислюється як !x[i]."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
@@ -2638,9 +2507,6 @@ msgid ""
 msgstr ""
 ":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
 
-msgid "Get the size of a texture."
-msgstr "Отримайте розмір текстури."
-
 msgid ""
 "For performance reasons, this function should be avoided as it always "
 "performs a full texture read. When possible, you should pass the texture "
@@ -2681,12 +2547,6 @@ msgstr ""
 ":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ samplerCube s, "
 "vec3 p)"
 
-msgid ""
-"Compute the level-of-detail that would be used to sample from a texture."
-msgstr ""
-"Обчисліть рівень деталізації, який використовуватиметься для вибірки "
-"текстури."
-
 msgid "int"
 msgstr "int"
 
@@ -2717,9 +2577,6 @@ msgid ""
 msgstr ""
 ":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ samplerCube "
 "s)"
-
-msgid "Get the number of accessible mipmap levels of a texture."
-msgstr "Отримайте кількість доступних рівнів mipmap текстури."
 
 msgid "|gvec4_type|"
 msgstr "|gvec4_type|"
@@ -2916,9 +2773,6 @@ msgid ""
 msgstr ""
 ":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler3D| s, "
 "vec4 p, vec3 dPdx, vec3 dPdy)"
-
-msgid "Performs a texture read with projection/LOD and with explicit"
-msgstr "Виконує зчитування текстури з проекцією/LOD і з явним"
 
 msgid ""
 ":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2D| s, ivec2 p, int "
@@ -3130,6 +2984,12 @@ msgid "Available only in the fragment shader."
 msgstr "Доступно лише у фрагментному шейдері."
 
 msgid ""
+"Compute the level-of-detail that would be used to sample from a texture."
+msgstr ""
+"Обчисліть рівень деталізації, який використовуватиметься для вибірки "
+"текстури."
+
+msgid ""
 "The mipmap array(s) that would be accessed is returned in the x component of "
 "the return value. The computed level-of-detail relative to the base level is "
 "returned in the y component of the return value."
@@ -3331,20 +3191,6 @@ msgstr ""
 "|gvec4_type| **textureProj**\\ (\\ |gsampler3D| s, vec4 p [, float "
 "bias] ) :ref:`🔗<shader_func_textureProj>`"
 
-msgid "Perform a texture lookup with projection."
-msgstr "Виконайте пошук текстури за допомогою проекції."
-
-msgid ""
-"The texture coordinates consumed from ``p``, not including the last "
-"component of ``p``, are divided by the last component of ``p``. The "
-"resulting 3rd component of ``p`` in the shadow forms is used as Dref. After "
-"these values are computed, the texture lookup proceeds as in texture."
-msgstr ""
-"Координати текстури, отримані від ``p``, не включаючи останній компонент "
-"``p``, діляться на останній компонент ``p``. Отриманий 3-й компонент ``p`` у "
-"тіньових формах використовується як Dref. Після того, як ці значення "
-"обчислено, пошук текстури продовжується, як у текстурі."
-
 msgid "Optional bias to be applied during level-of-detail computation."
 msgstr "Під час обчислення рівня деталізації необов’язкове зміщення."
 
@@ -3431,21 +3277,6 @@ msgid ""
 "of-detail."
 msgstr "Виконує пошук текстури з проекцією з явно вказаного рівня деталізації."
 
-msgid ""
-"The texture coordinates consumed from P, not including the last component of "
-"``p``, are divided by the last component of ``p``. The resulting 3rd "
-"component of ``p`` in the shadow forms is used as Dref. After these values "
-"are computed, the texture lookup proceeds as in "
-"`textureLod<shader_func_textureLod>`, with ``lod`` used to specify the level-"
-"of-detail from which the texture will be sampled."
-msgstr ""
-"Координати текстури, отримані з P, не включаючи останній компонент ``p``, "
-"діляться на останній компонент ``p``. Отриманий 3-й компонент ``p`` у "
-"тіньових формах використовується як Dref. Після обчислення цих значень пошук "
-"текстури виконується так, як у `textureLod<shader_func_textureLod>`, з "
-"``lod``, що використовується для визначення рівня деталізації, з якого буде "
-"взято вибірку текстури."
-
 msgid "The explicit level-of-detail from which to fetch texels."
 msgstr "Явний рівень деталізації, з якого потрібно отримати текселі."
 
@@ -3494,15 +3325,6 @@ msgstr ""
 "vec4 **textureGrad**\\ (\\ samplerCubeArray s, vec3 p, vec3 dPdx, vec3 "
 "dPdy) :ref:`🔗<shader_func_textureGrad>`"
 
-msgid ""
-"Performs a texture lookup at coordinate ``p`` from the texture bound to "
-"sampler with explicit texture coordinate gradiends as specified in ``dPdx`` "
-"and ``dPdy``. Set:"
-msgstr ""
-"Виконує пошук текстури за координатою ``p`` з текстури, прив’язаної до "
-"семплера з явними градієнтами координат текстури, як зазначено в ``dPdx`` і "
-"``dPdy``. Набір:"
-
 msgid "``δs/δx=δp/δx`` for a 1D texture, ``δp.s/δx`` otherwise"
 msgstr "``δs/δx=δp/δx`` для одновимірної текстури, ``δp.s/δx`` інакше"
 
@@ -3517,9 +3339,6 @@ msgstr "``δt/δy=0.0`` для одновимірної текстури, ``δp.
 
 msgid "``δr/δx=0.0`` for a 1D or 2D texture, ``δp.p/δx`` otherwise"
 msgstr "``δr/δx=0.0`` для 1D або 2D текстури, ``δp.p/δx`` інакше"
-
-msgid "``δr/δy=0.0``  for a 1D or 2D texture, ``δp.p/δy`` otherwise"
-msgstr "``δr/δy=0.0`` для 1D або 2D текстури, ``δp.p/δy`` інакше"
 
 msgid ""
 "For the cube version, the partial derivatives of ``p`` are assumed to be in "
@@ -3567,21 +3386,6 @@ msgid ""
 msgstr ""
 "|gvec4_type| **textureProjGrad**\\ (\\ |gsampler3D| s, vec4 p, vec3 dPdx, "
 "vec3 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
-
-msgid "Perform a texture lookup with projection and explicit gradients."
-msgstr "Виконайте пошук текстури за допомогою проекції та явних градієнтів."
-
-msgid ""
-"The texture coordinates consumed from ``p``, not including the last "
-"component of ``p``, are divided by the last component of ``p``. After these "
-"values are computed, the texture lookup proceeds as in "
-"`textureGrad<shader_func_textureGrad>`, passing ``dPdx`` and ``dPdy`` as "
-"gradients."
-msgstr ""
-"Координати текстури, отримані від ``p``, не включаючи останній компонент "
-"``p``, діляться на останній компонент ``p``. Після обчислення цих значень "
-"пошук текстури виконується, як у `textureGrad<shader_func_textureGrad>`, "
-"передаючи ``dPdx`` і ``dPdy`` як градієнти."
 
 msgid "The partial derivative of ``p`` with respect to window x."
 msgstr "Часткова похідна від ``p`` відносно вікна x."
@@ -3852,9 +3656,6 @@ msgstr ""
 
 msgid "Uses local differencing for the input argument p."
 msgstr "Використовує локальну різницю для вхідного аргументу p."
-
-msgid "Equivalent  to ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``."
-msgstr "Еквівалент ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``."
 
 msgid ""
 "|vec_type| **fwidthFine**\\ (\\ |vec_type| "
@@ -4702,18 +4503,6 @@ msgstr ""
 "|vec_uint_type| **uaddCarry**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
 "out |vec_uint_type| carry) :ref:`🔗<shader_func_uaddCarry>`"
 
-msgid "Add unsigned integers and generate carry."
-msgstr "Додати цілі числа без знаку та створити перенесення."
-
-msgid ""
-"adds two 32-bit unsigned integer variables (scalars or vectors) and "
-"generates a 32-bit unsigned integer result, along with a carry output. The "
-"value carry is ."
-msgstr ""
-"додає дві 32-розрядні цілі змінні без знака (скаляри або вектори) і генерує "
-"32-розрядне ціле число без знаку разом із виводом переносу. Перенесення "
-"значення становить ."
-
 msgid "The first operand."
 msgstr "Перший операнд."
 
@@ -4722,9 +4511,6 @@ msgstr "Другий операнд."
 
 msgid "param carry"
 msgstr "param carry"
-
-msgid "0 if the sum is less than 2\\ :sup:`32`, otherwise 1."
-msgstr "0, якщо сума менша за 2\\ :sup:`32`, інакше 1."
 
 msgid "``(x + y) % 2^32``."
 msgstr "``(x + y) % 2^32``."
@@ -4807,20 +4593,6 @@ msgid ""
 msgstr ""
 "Перетворює ``x`` у число з плаваючою комою в діапазоні ``[0.5, 1.0)`` та в "
 "інтегральному показнику ступеня два, таким чином, що:"
-
-msgid ""
-"For a floating-point value of zero, the significand and exponent are both "
-"zero."
-msgstr ""
-"Для значення з плаваючою комою, що дорівнює нулю, і значуща, і експонента "
-"дорівнюють нулю."
-
-msgid ""
-"For a floating-point value that is an infinity or a floating-point NaN, the "
-"results are undefined."
-msgstr ""
-"Для значення з плаваючою комою, яке є нескінченністю, або NaN з плаваючою "
-"комою результати не визначені."
 
 msgid "The value from which significand and exponent are to be extracted."
 msgstr "Значення, з якого слід витягти значуще число та показник степеня."

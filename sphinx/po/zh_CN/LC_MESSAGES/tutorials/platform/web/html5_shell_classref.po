@@ -161,9 +161,6 @@ msgstr ""
 "初始化引擎实例. 如果引擎还没有被加载, 可以选择将基本路径传递给引擎来加载它. "
 "参见 :js:meth:`Engine.load` ."
 
-msgid "A ``Promise`` that resolves once the engine is loaded and initialized."
-msgstr "一旦引擎被加载和初始化, 一个 ``Promise`` 就会被解析."
-
 msgid ""
 "Load a file so it is available in the instance's file system once it runs. "
 "Must be called **before** starting the instance."
@@ -226,9 +223,6 @@ msgstr "如果在页面上找不到画布, 或者没有在配置中指定, 则�
 msgid "An optional configuration override."
 msgstr "一个可选的配置重写."
 
-msgid "Promise that resolves once the engine started."
-msgstr "引擎启动后解析的Promise."
-
 msgid ""
 "Start the game instance using the given configuration override (if any)."
 msgstr "使用给定的配置覆盖(如果有的话)启动游戏实例."
@@ -251,9 +245,6 @@ msgid ""
 msgstr ""
 "该方法将初始配置(或重写)时同时设置 :js:attr:`executable` "
 "和 :js:attr:`mainPack` 属性(通常由编辑器在导出过程中完成)."
-
-msgid "Promise that resolves once the game started."
-msgstr "一旦游戏开始就会解析Promise."
 
 msgid ""
 "Create a file at the specified ``path`` with the passed as ``buffer`` in the "
@@ -408,13 +399,6 @@ msgid ""
 "The canvas resize policy determines how the canvas should be resized by "
 "Godot."
 msgstr "画布大小调整策略决定了 Godot 应该如何调整画布的大小."
-
-msgid ""
-"``0`` means Godot won't do any resizing. This is useful if you want to "
-"control the canvas size from javascript code in your template."
-msgstr ""
-"``0`` 意味着 Godot 不做任何大小调整。如果你想通过模板中的 javascript 代码来控"
-"制画布的大小，这将很有用。"
 
 msgid ""
 "``1`` means Godot will resize the canvas on start, and when changing window "

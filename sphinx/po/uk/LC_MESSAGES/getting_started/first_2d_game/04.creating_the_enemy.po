@@ -23,13 +23,6 @@ msgstr ""
 "поведінка буде не дуже складною: вони будуть час від часу виникати по краях "
 "екрана і рухатися у випадковому напрямку по прямій лінії."
 
-msgid ""
-"We'll create a ``Mob`` scene, which we can then *instance* to create any "
-"number of independent mobs in the game."
-msgstr ""
-"Ми створимо сцену ``Mob``, яку ми зможемо потім *використати*, для створення "
-"будь-якої кількості незалежних мобів в грі."
-
 msgid "Node setup"
 msgstr "Налаштування вузлів"
 
@@ -133,9 +126,6 @@ msgstr "Збережіть сцену."
 msgid "Enemy script"
 msgstr "Скрипт ворога"
 
-msgid "Add a script to the ``Mob`` like this:"
-msgstr "Додайте такий скрипт до ``Mob``:"
-
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we play the "
 "animation and randomly choose one of the three animation types:"
@@ -187,9 +177,6 @@ msgid ""
 msgstr ""
 "``queue_free()`` — це функція, яка фактично «звільняє» або видаляє вузол у "
 "кінці кадру."
-
-msgid "This completes the `Mob` scene."
-msgstr "На цьому завершуємо сцену `Mob`."
 
 msgid ""
 "With the player and enemies ready, in the next part, we'll bring them "

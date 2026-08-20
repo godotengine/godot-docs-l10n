@@ -206,15 +206,6 @@ msgstr ""
 "若想同時支援 x86 與 x86_64 裝置，請於以 Gradle 建置 APK 前，分別以 "
 "``arch=x86_32`` 與 ``arch=x86_64`` 參數再次執行 SCons 指令。以釋出範本為例："
 
-msgid ""
-"This will create template binaries that works on all platforms. The final "
-"binary size of exported projects will depend on the platforms you choose to "
-"support when exporting; in other words, unused platforms will be removed "
-"from the binary."
-msgstr ""
-"這樣會建立能在所有平台運作的範本二進位檔。專案最終匯出的檔案大小會根據你選擇"
-"支援的平台而定，也就是未啟用的平台將自動被移除。"
-
 msgid "Cleaning the generated export templates"
 msgstr "清除產生的匯出範本"
 

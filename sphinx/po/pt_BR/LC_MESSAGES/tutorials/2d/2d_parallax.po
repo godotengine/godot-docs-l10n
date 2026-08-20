@@ -69,6 +69,9 @@ msgstr ""
 "um :ref:`Sprite2D <class_sprite2d>`, mas você pode facilmente usar vários "
 "nós espaçados para compor a camada."
 
+msgid "Scroll scale"
+msgstr "Escala de rolagem"
+
 msgid ""
 "The backbone of the parallax effect is the :ref:`scroll_scale "
 "<class_parallax2d_property_scroll_scale>` property. It works as a scroll-"
@@ -148,6 +151,9 @@ msgstr ""
 "cometerem erros de configuração. Vamos analisar o \"como\" e o \"porquê\" de "
 "alguns problemas comuns que os usuários encontram."
 
+msgid "Poor sizing"
+msgstr "Dimensionamento inadequado"
+
 msgid ""
 "The infinite repeat effect is easiest to work with when you have an image "
 "designed to repeat seamlessly and is the same size or larger than your "
@@ -163,6 +169,10 @@ msgstr ""
 "não for possível obter assets projetados para essa finalidade, há algumas "
 "outras coisas que você pode fazer para preparar melhor sua imagem em relação "
 "ao tamanho."
+
+msgid "Here is an example of a texture that is too small for its viewport:"
+msgstr ""
+"Aqui está um exemplo de uma textura pequena demais para o seu viewport:"
 
 msgid ""
 "We can see that the viewport size is 500x300 but the texture is 288x208. If "
@@ -216,6 +226,9 @@ msgstr ""
 "do :ref:`Parallax2D<class_parallax2d>`, e todas as texturas filhas serão "
 "escaladas com ele."
 
+msgid "Scale the child nodes"
+msgstr "Escalar os nós filhos"
+
 msgid ""
 "Similar to scaling the :ref:`Parallax2D<class_parallax2d>`, you can scale "
 "your :ref:`Sprite2D<class_sprite2d>` nodes to be large enough to cover the "
@@ -232,6 +245,9 @@ msgstr ""
 "e :ref:`Sprite2D.region_rect<class_sprite2d_property_region_rect>`, não "
 "levam a escala em consideração, portanto é necessário ajustar esses valores "
 "com base na escala."
+
+msgid "Repeat the textures"
+msgstr "Repetir as texturas"
 
 msgid ""
 "You can also start off on the right foot by preparing child nodes earlier in "
@@ -269,6 +285,9 @@ msgid ""
 msgstr ""
 "Abaixo, você pode ver que repetir a imagem duas vezes a torna grande o "
 "suficiente para cobrir a tela."
+
+msgid "Poor positioning"
+msgstr "Posicionamento inadequado"
 
 msgid ""
 "It's common to see users mistakenly set all of their textures to be centered "
@@ -373,6 +392,9 @@ msgstr ""
 "o :ref:`scroll_offset<class_parallax2d_property_scroll_offset>` como "
 "``(-144,0)`` ou ``(144,0)`` permite que ela comece no meio da imagem."
 
+msgid "Repeat times"
+msgstr "Quantidade de repetições"
+
 msgid ""
 "Ideally, following this guide, your parallax textures are large enough to "
 "cover the screen even when zoomed out. Until now, we have had a perfectly "
@@ -424,6 +446,9 @@ msgstr ""
 "esticamos o céu para cima e o sprite da grama para baixo. As texturas agora "
 "suportam tanto o nível de zoom normal quanto o zoom out para metade do "
 "tamanho."
+
+msgid "Split screen"
+msgstr "Tela dividida"
 
 msgid ""
 "Most tutorials for making a split screen game in Godot begin by writing a "
@@ -522,6 +547,9 @@ msgstr ""
 "renderização de nós de parallax cujo pai não possui "
 "uma :ref:`visibility_layer<class_canvasitem_property_visibility_layer>` "
 "compatível."
+
+msgid "Previewing in the editor"
+msgstr "Visualização no editor"
 
 msgid ""
 "Prior to 4.3, the recommendation was to place every layer in their "

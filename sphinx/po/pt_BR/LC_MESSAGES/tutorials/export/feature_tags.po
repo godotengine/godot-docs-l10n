@@ -50,6 +50,21 @@ msgstr ""
 msgid "Many more things."
 msgstr "Muitas outras coisas."
 
+msgid "Features can be queried at runtime from the singleton API by calling:"
+msgstr ""
+"Os recursos podem ser consultados em tempo de execução a partir da API "
+"singleton chamando:"
+
+msgid ""
+"OS feature tags are used by GDExtension to determine which libraries to "
+"load. For example, a library for ``linux.debug.editor.x86_64`` will be "
+"loaded only on a debug editor build for Linux x86_64."
+msgstr ""
+"Tags de recursos do SO (OS feature tags) são usadas pelo GDExtension para "
+"determinar quais bibliotecas carregar. Por exemplo, uma biblioteca para "
+"``linux.debug.editor.x86_64`` será carregada apenas em uma build de editor "
+"de depuração para Linux x86_64."
+
 msgid "Default features"
 msgstr "Recursos padrão"
 
@@ -69,23 +84,47 @@ msgstr "**Descrição**"
 msgid "**android**"
 msgstr "**android**"
 
+msgid "Running on Android (but not within a Web browser)"
+msgstr "Executando no Android (mas não dentro de um navegador Web)"
+
 msgid "**bsd**"
 msgstr "**bsd**"
+
+msgid "Running on \\*BSD (but not within a Web browser)"
+msgstr "Executando no \\*BSD (mas não dentro de um navegador Web)"
 
 msgid "**linux**"
 msgstr "**linux**"
 
+msgid "Running on Linux (but not within a Web browser)"
+msgstr "Executando no Linux (mas não dentro de um navegador Web)"
+
 msgid "**macos**"
 msgstr "**macos**"
 
+msgid "Running on macOS (but not within a Web browser)"
+msgstr "Executando no macOS (mas não dentro de um navegador Web)"
+
 msgid "**ios**"
 msgstr "**ios**"
+
+msgid "Running on iOS (but not within a Web browser)"
+msgstr "Executando no iOS (mas não dentro de um navegador Web)"
+
+msgid "**visionos**"
+msgstr "**visionos**"
+
+msgid "Running on visionOS (but not within a Web browser)"
+msgstr "Executando no visionOS (mas não dentro de um navegador Web)"
 
 msgid "**windows**"
 msgstr "**windows**"
 
 msgid "Running on Windows"
 msgstr "Executando no Windows"
+
+msgid "**linuxbsd**"
+msgstr "**linuxbsd**"
 
 msgid "Running on Linux or \\*BSD"
 msgstr "Executando no Linux ou \\*BSD"
@@ -108,6 +147,18 @@ msgstr "**editor**"
 msgid "Running on an editor build"
 msgstr "Executando em uma compilação de editor"
 
+msgid "**editor_hint**"
+msgstr "**editor_hint**"
+
+msgid "Running on an editor build, and inside the editor"
+msgstr "Executando em uma compilação do editor e dentro do editor"
+
+msgid "**editor_runtime**"
+msgstr "**editor_runtime**"
+
+msgid "Running on an editor build, and running the project"
+msgstr "Executando em uma compilação do editor e executando o projeto"
+
 msgid "**template**"
 msgstr "**template**"
 
@@ -117,8 +168,14 @@ msgstr "Executando em uma compilação não-editor (modelo de exportação)"
 msgid "**double**"
 msgstr "**dobro**"
 
+msgid "Running on a double-precision build"
+msgstr "Executando em uma compilação de precisão dupla"
+
 msgid "**single**"
 msgstr "**único**"
+
+msgid "Running on a single-precision build"
+msgstr "Executando em uma compilação de precisão simples"
 
 msgid "**64**"
 msgstr "**64**"
@@ -147,6 +204,9 @@ msgstr "Executando em uma compilação x86 de 32-bits"
 msgid "**x86**"
 msgstr "**x86**"
 
+msgid "Running on an x86 build (any bitness)"
+msgstr "Executando em uma compilação x86 (qualquer arquitetura)"
+
 msgid "**arm64**"
 msgstr "**arm64**"
 
@@ -162,29 +222,57 @@ msgstr "Executando uma compilação ARM de 32-bits"
 msgid "**arm**"
 msgstr "**arm**"
 
+msgid "Running on an ARM build (any bitness)"
+msgstr "Executando em uma compilação ARM (qualquer arquitetura)"
+
 msgid "**rv64**"
 msgstr "**rv64**"
+
+msgid "Running on a 64-bit RISC-V build"
+msgstr "Executando em uma compilação RISC-V de 64 bits"
 
 msgid "**riscv**"
 msgstr "**riscv**"
 
+msgid "Running on a RISC-V build (any bitness)"
+msgstr "Executando em uma compilação RISC-V (qualquer arquitetura)"
+
 msgid "**ppc64**"
 msgstr "**ppc64**"
+
+msgid "Running on a 64-bit PowerPC build"
+msgstr "Executando em uma compilação PowerPC de 64 bits"
 
 msgid "**ppc32**"
 msgstr "**ppc32**"
 
+msgid "Running on a 32-bit PowerPC build"
+msgstr "Executando em uma compilação PowerPC de 32 bits"
+
 msgid "**ppc**"
 msgstr "**ppc**"
+
+msgid "Running on a PowerPC build (any bitness)"
+msgstr "Executando em uma compilação PowerPC (qualquer arquitetura)"
 
 msgid "**wasm64**"
 msgstr "**wasm64**"
 
+msgid "Running on a 64-bit WebAssembly build (not yet possible)"
+msgstr ""
+"Executando em uma compilação WebAssembly de 64 bits (ainda não possível)"
+
 msgid "**wasm32**"
 msgstr "**wasm32**"
 
+msgid "Running on a 32-bit WebAssembly build"
+msgstr "Executando em uma compilação WebAssembly de 32 bits"
+
 msgid "**wasm**"
 msgstr "**wasm**"
+
+msgid "Running on a WebAssembly build (any bitness)"
+msgstr "Executando em uma compilação WebAssembly (qualquer arquitetura)"
 
 msgid "**mobile**"
 msgstr "**mobile**"
@@ -204,20 +292,51 @@ msgstr "**web**"
 msgid "Host OS is a Web browser"
 msgstr "SO hospedeiro é um navegador da Web"
 
+msgid "**nothreads**"
+msgstr "**nothreads**"
+
+msgid "Running without threading support"
+msgstr "Executando sem suporte a multithreading"
+
+msgid "**threads**"
+msgstr "**threads**"
+
+msgid "Running with threading support"
+msgstr "Executando com suporte a multithreading"
+
 msgid "**web_android**"
 msgstr "**web_android**"
+
+msgid "Host OS is a Web browser running on Android"
+msgstr ""
+"Sistema operacional hospedeiro é um navegador Web executando no Android"
 
 msgid "**web_ios**"
 msgstr "**web_ios**"
 
+msgid "Host OS is a Web browser running on iOS"
+msgstr "Sistema operacional hospedeiro é um navegador Web executando no iOS"
+
 msgid "**web_linuxbsd**"
 msgstr "**web_linuxbsd**"
+
+msgid "Host OS is a Web browser running on Linux or \\*BSD"
+msgstr ""
+"Sistema operacional hospedeiro é um navegador Web executando no Linux ou "
+"\\*BSD"
 
 msgid "**web_macos**"
 msgstr "**web_macos**"
 
+msgid "Host OS is a Web browser running on macOS"
+msgstr "Sistema operacional hospedeiro é um navegador Web executando no macOS"
+
 msgid "**web_windows**"
 msgstr "**web_windows**"
+
+msgid "Host OS is a Web browser running on Windows"
+msgstr ""
+"Sistema operacional hospedeiro é um navegador Web executando no Windows"
 
 msgid "**etc**"
 msgstr "**etc**"
@@ -240,6 +359,55 @@ msgstr "Texturas usando compactação S3TC (DXT/BC) são suportadas"
 msgid "**movie**"
 msgstr "**filme**"
 
+msgid ":ref:`Movie Maker mode <doc_creating_movies>` is active"
+msgstr "O modo :ref:`Movie Maker <doc_creating_movies>` está ativo"
+
+msgid "**shader_baker**"
+msgstr "**shader_baker**"
+
+msgid ""
+"Project was exported with :ref:`shader baking "
+"<doc_pipeline_compilations_shader_baker>` enabled (only applies to the "
+"exported project, not when running in the editor)"
+msgstr ""
+"O projeto foi exportado com o :ref:`cozimento de shaders "
+"<doc_pipeline_compilations_shader_baker>` ativado (aplica-se apenas ao "
+"projeto exportado, não ao rodar no editor)"
+
+msgid "**dedicated_server**"
+msgstr "**dedicated_server**"
+
+msgid ""
+"Project was exported as a :ref:`dedicated server "
+"<doc_exporting_for_dedicated_servers>` (only applies to the exported "
+"project, not when running in the editor)"
+msgstr ""
+"O projeto foi exportado como um :ref:`servidor dedicado "
+"<doc_exporting_for_dedicated_servers>` (aplica-se apenas ao projeto "
+"exportado, não ao rodar no editor)"
+
+msgid ""
+"With the exception of texture compression, ``web_<platform>`` and ``movie`` "
+"feature tags, default feature tags are **immutable**. This means that they "
+"will *not* change depending on runtime conditions. For example, "
+"``OS.has_feature(\"mobile\")`` will return ``false`` when running a project "
+"exported to Web on a mobile device."
+msgstr ""
+"Com exceção da compressão de textura, das tags de recursos "
+"``web_<platform>`` e ``movie``, as tags de recursos padrão são "
+"**imutáveis**. Isso significa que elas *não* mudarão dependendo das "
+"condições em tempo de execução. Por exemplo, ``OS.has_feature(\"mobile\")`` "
+"retornará ``false`` ao rodar um projeto exportado para a Web em um "
+"dispositivo móvel."
+
+msgid ""
+"To check whether a project exported to Web is running on a mobile device, "
+"use ``OS.has_feature(\"web_android\") or OS.has_feature(\"web_ios\")``."
+msgstr ""
+"Para verificar se um projeto exportado para a Web está sendo executado em um "
+"dispositivo móvel, use ``OS.has_feature(\"web_android\") ou "
+"OS.has_feature(\"web_ios\")``."
+
 msgid "Custom features"
 msgstr "Funções personalizadas"
 
@@ -249,6 +417,28 @@ msgid ""
 msgstr ""
 "É possível adicionar funções personalizados a uma compilação; usar o campo "
 "relevante no *conjunto prévio de exportação* usado para gerá-lo:"
+
+msgid ""
+"Custom feature tags are only used when running the exported project "
+"(including with :ref:`doc_one-click_deploy`). They are **not used** when "
+"running the project from the editor, even if the export preset marked as "
+"**Runnable** for your current platform has custom feature tags defined."
+msgstr ""
+"Tags de recursos personalizadas (Custom feature tags) só são usadas ao "
+"executar o projeto exportado (incluindo com :ref:`doc_one-click_deploy`). "
+"Elas **não são usadas** ao executar o projeto a partir do editor, mesmo que "
+"o preset de exportação marcado como **Runnable** para sua plataforma atual "
+"tenha tags de recursos personalizadas definidas."
+
+msgid ""
+"Custom feature tags are also not used in :ref:`class_EditorExportPlugin` "
+"scripts. Instead, feature tags in :ref:`class_EditorExportPlugin` will "
+"reflect the device the editor is currently running on."
+msgstr ""
+"Tags de recursos personalizadas também não são usadas em "
+"scripts :ref:`class_EditorExportPlugin`. Em vez disso, as tags de recursos "
+"no :ref:`class_EditorExportPlugin` refletirão o dispositivo no qual o editor "
+"está rodando no momento."
 
 msgid "Overriding project settings"
 msgstr "Substituindo configurações do projeto"
@@ -270,6 +460,18 @@ msgstr ""
 "No exemplo a seguir, um ícone diferente é adicionado para a construção demo "
 "do jogo (que foi personalizado em um conjunto prévio especial de exportação, "
 "que, por sua vez, inclui apenas níveis para demonstração)."
+
+msgid "The Project Settings panel"
+msgstr "O painel de Configurações do Projeto"
+
+msgid ""
+"The desired configuration is selected, which effectively copies its "
+"properties to the panel above (1). The \"demo_build\" feature tag is "
+"selected (2). The configuration is added to the project settings (3)."
+msgstr ""
+"A configuração desejada é selecionada, o que efetivamente copia suas "
+"propriedades para o painel acima (1). A tag de recurso \"demo_build\" é "
+"selecionada (2). A configuração é adicionada às configurações do projeto (3)."
 
 msgid "After overriding, a new field is added for this specific configuration."
 msgstr ""
@@ -299,6 +501,43 @@ msgid ""
 msgstr ""
 "Já existem muitas configurações que vêm com substituições por padrão; eles "
 "podem ser encontrados em muitas seções das configurações do projeto."
+
+msgid "Taking feature tags into account when reading project settings"
+msgstr ""
+"Levando em conta as tags de recursos ao ler as configurações do projeto"
+
+msgid ""
+"By default, feature tags are **not** taken into account when reading project "
+"settings using the typical approaches "
+"(:ref:`ProjectSettings.get_setting<class_ProjectSettings_method_get_setting>` "
+"or :ref:`ProjectSettings.get <class_Object_private_method__get>`). Instead, "
+"you must use :ref:`ProjectSettings.get_setting_with_override "
+"<class_ProjectSettings_method_get_setting>`."
+msgstr ""
+"Por padrão, as tags de recursos **não** são levadas em consideração ao ler "
+"as configurações do projeto usando as abordagens típicas "
+"(:ref:`ProjectSettings.get_setting<class_ProjectSettings_method_get_setting>` "
+"ou :ref:`ProjectSettings.get <class_Object_private_method__get>`). Em vez "
+"disso, você deve usar :ref:`ProjectSettings.get_setting_with_override "
+"<class_ProjectSettings_method_get_setting>`."
+
+msgid "For example, with the following project settings:"
+msgstr "Por exemplo, com as seguintes configurações de projeto:"
+
+msgid ""
+"Using ``ProjectSettings.get_setting(\"section/subsection/example\")`` will "
+"return ``\"Release\"`` regardless of whether a debug build is currently "
+"running. On the other hand, "
+"``ProjectSettings.get_setting_with_override(\"section/subsection/"
+"example\")`` will obey feature tags and will return ``\"Debug\"`` if using a "
+"debug build."
+msgstr ""
+"Usar ``ProjectSettings.get_setting(\"section/subsection/example\")`` "
+"retornará ``\"Release\"`` independentemente de uma build de depuração estar "
+"rodando no momento. Por outro lado, "
+"``ProjectSettings.get_setting_with_override(\"section/subsection/"
+"example\")`` obedecerá às tags de recursos e retornará ``\"Debug\"`` se "
+"estiver usando uma build de depuração."
 
 msgid "Customizing the build"
 msgstr "Personalizando a compilação"

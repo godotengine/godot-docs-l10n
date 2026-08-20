@@ -29,13 +29,6 @@ msgstr ""
 "クを扱うノードであり、これ自体に2D機能が不要であるためです)"
 
 msgid ""
-"Click the **Instance** button (represented by a chain link icon) and select "
-"your saved ``player.tscn``."
-msgstr ""
-"**インスタンス** ボタン（チェーンリンクアイコン）をクリックし、保存した "
-"``player.tscn`` を選択してください。"
-
-msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown:"
 msgstr "次に ``Main`` の子ノードとして以下のノードを追加し、名前を変更します:"
 
@@ -136,15 +129,6 @@ msgstr "シーンは次のようになります:"
 
 msgid "Main script"
 msgstr "Mainスクリプト"
-
-msgid ""
-"Add a script to ``Main``. At the top of the script, we use ``@export var "
-"mob_scene: PackedScene`` to allow us to choose the Mob scene we want to "
-"instance."
-msgstr ""
-"``Main`` にスクリプトをアタッチします。 スクリプトの上部に ``@export var "
-"mob_scene: PackedScene`` を追加して、インスタンス化するMobシーンを選択できる"
-"ようにします。"
 
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob Scene`` property in the "

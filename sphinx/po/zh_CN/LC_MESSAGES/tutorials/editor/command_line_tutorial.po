@@ -159,14 +159,6 @@ msgstr "|editor| 即使已经自动检测到项目，仍然启动项目管理器
 msgid "``--recovery-mode``"
 msgstr "``--recovery-mode``"
 
-msgid ""
-"|editor| \"Start the editor in recovery mode, which disables features that "
-"can typically cause startup crashes, such as tool scripts, editor plugins, "
-"GDExtension addons, and others."
-msgstr ""
-"|editor| 在恢复模式下启动编辑器，该模式将禁用可能导致启动崩溃的功能，如工具脚"
-"本、编辑器插件、GDExtension 扩展等。"
-
 msgid "``--debug-server <uri>``"
 msgstr "``--debug-server <uri>``"
 
@@ -440,13 +432,6 @@ msgstr "|release| 请求附加到窗口。"
 msgid "``--accessibility <mode>``"
 msgstr "``--accessibility <mode>``"
 
-msgid ""
-"|release| Select accessibility mode ['auto\" (when screen reader is running, "
-"default), \"always\", \"disabled']."
-msgstr ""
-"|release| 选择无障碍模式 [“auto”（当屏幕阅读器运行时，默认"
-"值）、“always”、“disabled”]。"
-
 msgid "**Debug options**"
 msgstr "**调试选项**"
 
@@ -516,18 +501,6 @@ msgstr ""
 
 msgid "``--extra-gpu-memory-tracking``"
 msgstr "``--extra-gpu-memory-tracking``"
-
-msgid ""
-"|debug| Enables additional memory tracking (see class reference for "
-"`RenderingDevice.get_driver_and_device_memory_report()` and linked methods). "
-"Currently only implemented for Vulkan. Enabling this feature may cause "
-"crashes on some systems due to buggy drivers or bugs in the Vulkan Loader. "
-"See https://github.com/godotengine/godot/issues/95967"
-msgstr ""
-"|debug| 启用额外内存追踪（参见 "
-"`RenderingDevice.get_driver_and_device_memory_report()` 及相关方法的类参"
-"考）。当前仅 Vulkan 后端支持。由于驱动或 Vulkan 加载器的潜在缺陷，启用此功能"
-"可能导致部分系统崩溃。详见 https://github.com/godotengine/godot/issues/95967"
 
 msgid "``--accurate-breadcrumbs``"
 msgstr "``--accurate-breadcrumbs``"
@@ -892,18 +865,8 @@ msgstr ""
 msgid "``--benchmark``"
 msgstr "``--benchmark``"
 
-msgid "|editor| Benchmark the run time and print it to console."
-msgstr "|editor| 对运行时间进行基准测试，并将其打印到控制台。"
-
 msgid "``--benchmark-file <path>``"
 msgstr "``--benchmark-file <path>``"
-
-msgid ""
-"|editor| Benchmark the run time and save it to a given file in JSON format. "
-"The path should be absolute."
-msgstr ""
-"|editor| 对运行时间进行基准测试，并以 JSON 格式保存到指定文件。路径应为绝对路"
-"径。"
 
 msgid "``--test [--help]``"
 msgstr "``--test [--help]``"

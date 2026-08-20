@@ -17,8 +17,25 @@ msgstr "Classe de variante"
 msgid "About"
 msgstr "Sobre"
 
+msgid ""
+"Variant is the most important datatype in Godot. A Variant takes up only 24 "
+"bytes on 64-bit platforms (20 bytes on 32-bit platforms) and can store "
+"almost any engine datatype inside of it. Variants are rarely used to hold "
+"information for long periods of time, instead they are used mainly for "
+"communication, editing, serialization and generally moving data around."
+msgstr ""
+"Variant é o tipo de dado mais importante no Godot. Um Variant ocupa apenas "
+"24 bytes em plataformas de 64 bits (20 bytes em plataformas de 32 bits) e "
+"pode armazenar quase qualquer tipo de dado do motor dentro dele. Variants "
+"são raramente usados para manter informações por longos períodos de tempo; "
+"em vez disso, são usados principalmente para comunicação, edição, "
+"serialização e, geralmente, para mover dados."
+
 msgid "A Variant can:"
 msgstr "Uma Variant pode:"
+
+msgid "Store almost any datatype."
+msgstr "Armazenar quase qualquer tipo de dado."
 
 msgid ""
 "Perform operations between many variants (GDScript uses Variant as its "
@@ -26,6 +43,21 @@ msgid ""
 msgstr ""
 "Executar operações entre muitas Variant (o GDScript usa Variant como seu "
 "tipo de dado atômico/nativo)."
+
+msgid "Be hashed, so it can be compared quickly to other variants."
+msgstr ""
+"Passar por um hash, para que possa ser comparado rapidamente com outros "
+"variants."
+
+msgid "Be used to convert safely between datatypes."
+msgstr "Ser usado para converter com segurança entre tipos de dados."
+
+msgid ""
+"Be used to abstract calling methods and their arguments (Godot exports all "
+"its functions through variants)."
+msgstr ""
+"Ser usado para abstrair chamadas de métodos e seus argumentos (o Godot expõe "
+"todas as suas funções por meio de variants)."
 
 msgid "Be used to defer calls or move data between threads."
 msgstr "Ser usado para adiar chamadas ou mover dados entre threads."
@@ -58,11 +90,206 @@ msgstr ""
 "mas muito mais fácil, pois esta permite construções altamente dinâmicas não "
 "comuns em C++ com menos esforço. Torne-se um amigo da Variant hoje."
 
+msgid ""
+"All types within Variant except Nil and Object **cannot** be ``null`` and "
+"must always store a valid value. These types within Variant are therefore "
+"called *non-nullable* types."
+msgstr ""
+"Todos os tipos dentro do Variant, exceto Nil e Object, **não podem** ser "
+"``null`` e devem sempre armazenar um valor válido. Esses tipos dentro do "
+"Variant são, portanto, chamados de tipos *não-anuláveis* (non-nullable)."
+
+msgid ""
+"One of the Variant types is *Nil* which can only store the value ``null``. "
+"Therefore, it is possible for a Variant to contain the value ``null``, even "
+"though all Variant types excluding Nil and Object are non-nullable."
+msgstr ""
+"One of the Variant types is *Nil* which can only store the value ``null``. "
+"Portanto, é possível que um Variant contenha o valor ``null``, embora todos "
+"os tipos Variant, excluindo Nil e Object, sejam não-anuláveis."
+
 msgid "References"
 msgstr "Referências"
+
+msgid ""
+"`core/variant/variant.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/variant.h>`__"
+msgstr ""
+"`core/variant/variant.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/variant.h>`__"
+
+msgid "List of variant types"
+msgstr "Lista de tipos Variant"
+
+msgid "These types are available in Variant:"
+msgstr "Esses tipos estão disponíveis em Variant:"
 
 msgid "Type"
 msgstr "Tipo"
 
 msgid "Notes"
 msgstr "Notas"
+
+msgid "Nil (can only store ``null``)"
+msgstr "Nil (pode armazenar apenas ``null``)"
+
+msgid "Nullable type"
+msgstr "Tipo anulável"
+
+msgid ":ref:`class_bool`"
+msgstr ":ref:`class_bool`"
+
+msgid ":ref:`class_int`"
+msgstr ":ref:`class_int`"
+
+msgid ":ref:`class_float`"
+msgstr ":ref:`class_float`"
+
+msgid ":ref:`class_string`"
+msgstr ":ref:`class_string`"
+
+msgid ":ref:`class_vector2`"
+msgstr ":ref:`class_vector2`"
+
+msgid ":ref:`class_vector2i`"
+msgstr ":ref:`class_vector2i`"
+
+msgid ":ref:`class_rect2`"
+msgstr ":ref:`class_rect2`"
+
+msgid "2D counterpart of AABB"
+msgstr "Contraparte 2D do AABB"
+
+msgid ":ref:`class_rect2i`"
+msgstr ":ref:`class_rect2i`"
+
+msgid ":ref:`class_vector3`"
+msgstr ":ref:`class_vector3`"
+
+msgid ":ref:`class_vector3i`"
+msgstr ":ref:`class_vector3i`"
+
+msgid ":ref:`class_transform2d`"
+msgstr ":ref:`class_transform2d`"
+
+msgid ":ref:`class_vector4`"
+msgstr ":ref:`class_vector4`"
+
+msgid ":ref:`class_vector4i`"
+msgstr ":ref:`class_vector4i`"
+
+msgid ":ref:`class_plane`"
+msgstr ":ref:`class_plane`"
+
+msgid ":ref:`class_quaternion`"
+msgstr ":ref:`class_quaternion`"
+
+msgid ":ref:`class_aabb`"
+msgstr ":ref:`class_aabb`"
+
+msgid "3D counterpart of Rect2"
+msgstr "Contraparte 3D do Rect2"
+
+msgid ":ref:`class_basis`"
+msgstr ":ref:`class_basis`"
+
+msgid ":ref:`class_transform3d`"
+msgstr ":ref:`class_transform3d`"
+
+msgid ":ref:`class_projection`"
+msgstr ":ref:`class_projection`"
+
+msgid ":ref:`class_color`"
+msgstr ":ref:`class_color`"
+
+msgid ":ref:`class_stringname`"
+msgstr ":ref:`class_stringname`"
+
+msgid ":ref:`class_nodepath`"
+msgstr ":ref:`class_nodepath`"
+
+msgid ":ref:`class_rid`"
+msgstr ":ref:`class_rid`"
+
+msgid ":ref:`class_object`"
+msgstr ":ref:`class_object`"
+
+msgid ":ref:`class_callable`"
+msgstr ":ref:`class_callable`"
+
+msgid ":ref:`class_signal`"
+msgstr ":ref:`class_signal`"
+
+msgid ":ref:`class_dictionary`"
+msgstr ":ref:`class_dictionary`"
+
+msgid ":ref:`class_array`"
+msgstr ":ref:`class_array`"
+
+msgid ":ref:`class_packedbytearray`"
+msgstr ":ref:`class_packedbytearray`"
+
+msgid ":ref:`class_packedint32array`"
+msgstr ":ref:`class_packedint32array`"
+
+msgid ":ref:`class_packedint64array`"
+msgstr ":ref:`class_packedint64array`"
+
+msgid ":ref:`class_packedfloat32array`"
+msgstr ":ref:`class_packedfloat32array`"
+
+msgid ":ref:`class_packedfloat64array`"
+msgstr ":ref:`class_packedfloat64array`"
+
+msgid ":ref:`class_packedstringarray`"
+msgstr ":ref:`class_packedstringarray`"
+
+msgid ":ref:`class_packedvector2array`"
+msgstr ":ref:`class_packedvector2array`"
+
+msgid ":ref:`class_packedvector3array`"
+msgstr ":ref:`class_packedvector3array`"
+
+msgid ":ref:`class_packedcolorarray`"
+msgstr ":ref:`class_packedcolorarray`"
+
+msgid ":ref:`class_packedvector4array`"
+msgstr ":ref:`class_packedvector4array`"
+
+msgid "Containers: Array and Dictionary"
+msgstr "Contêineres: Array e Dictionary"
+
+msgid ""
+"Both :ref:`class_array` and :ref:`class_dictionary` are implemented using "
+"variants. A Dictionary can match any datatype used as key to any other "
+"datatype. An Array just holds an array of Variants. Of course, a Variant can "
+"also hold a Dictionary or an Array inside, making it even more flexible."
+msgstr ""
+"Tanto :ref:`class_array` quanto :ref:`class_dictionary` são implementados "
+"usando variants. Um Dictionary pode corresponder a qualquer tipo de dado "
+"usado como chave para qualquer outro tipo de dado. Um Array apenas contém "
+"uma matriz de Variants. Claro, um Variant também pode conter um Dictionary "
+"ou um Array dentro dele, tornando-o ainda mais flexível."
+
+msgid ""
+"Modifications to a container will modify all references to it. A :ref:`Mutex "
+"<doc_core_concurrency_types>` should be created to lock it if :ref:`multi-"
+"threaded access <doc_using_multiple_threads>` is desired."
+msgstr ""
+"Modificações em um contêiner modificarão todas as referências a ele. "
+"Um :ref:`Mutex <doc_core_concurrency_types>` deve ser criado para bloqueá-lo "
+"se o :ref:`acesso multi-threaded <doc_using_multiple_threads>` for desejado."
+
+msgid ""
+"`core/variant/dictionary.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/dictionary.h>`__"
+msgstr ""
+"`core/variant/dictionary.h <https://github.com/godotengine/godot/blob/master/"
+"godot/blob/master/core/variant/dictionary.h>`__"
+
+msgid ""
+"`core/variant/array.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant/array.h>`__"
+msgstr ""
+"`core/variant/array.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant/array.h>`__"

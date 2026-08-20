@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Binding to external libraries"
+msgstr "Associazioni a librerie esterne"
+
 msgid "Modules"
 msgstr "Moduli"
 
@@ -148,13 +151,13 @@ msgstr ""
 
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
-"to clone `env` first, so it won't add those flags to whole Godot build "
-"(which can cause errors). Example `SCsub` with custom flags:"
+"to clone ``env`` first, so it won't add those flags to whole Godot build "
+"(which can cause errors). Example ``SCsub`` with custom flags:"
 msgstr ""
 "Se si desidera aggiungere flag personalizzati al compilatore durante la "
-"compilazione del modulo, è necessario prima clonare `env`, affinché non "
-"aggiunga quei flag all'intera compilazione di Godot (il che potrebbe causare "
-"errori). `SCsub` di esempio con flag personalizzati:"
+"compilazione del modulo, è necessario prima clonare ``env``, in maniera che "
+"non aggiunga quei flag all'intera compilazione di Godot (il che potrebbe "
+"causare errori). ``SCsub`` di esempio con flag personalizzati:"
 
 msgid "The final module should look like this:"
 msgstr "Il modulo finale dovrebbe apparire così:"

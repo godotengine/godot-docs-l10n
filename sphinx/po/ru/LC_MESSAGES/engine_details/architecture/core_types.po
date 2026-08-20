@@ -28,6 +28,15 @@ msgstr "Эта справка попытается перечислить их �
 msgid "Allocating memory"
 msgstr "Выделение памяти"
 
+msgid ""
+"Godot has many tricks for ensuring memory safety and tracking memory usage. "
+"Because of this, the regular C and C++ library calls should not be used. "
+"Instead, a few replacements are provided."
+msgstr ""
+"Godot имеет много инструментов для обеспечения безопасности памяти и "
+"отслеживания её использования. Поэтому обычные вызовы библиотек C и C++ не "
+"следует использовать. Вместо них предоставляются несколько замен."
+
 msgid "For C-style allocation, Godot provides a few macros:"
 msgstr "Для аллокации в стиле C, Godot предоставляет пару макросов:"
 
@@ -47,6 +56,16 @@ msgid ""
 msgstr ""
 "Они эквивалентны ``new``, ``delete``, ``new[]`` и ``delete[]`` "
 "соответственно."
+
+msgid ""
+"``memnew``/``memdelete`` also use a little C++ magic to automatically call "
+"post-init and pre-release functions. For example, this is used to notify "
+"Objects right after they are created, and right before they are deleted."
+msgstr ""
+"``memnew``/``memdelete`` также используют небольшую магию C++ для "
+"автоматического вызова функций после инициализации и перед освобождением. "
+"Например, это используется для уведомления объектов сразу после их создания "
+"и непосредственно перед их удалением."
 
 msgid ""
 "`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
@@ -90,6 +109,14 @@ msgstr "|string| 📜"
 
 msgid "``std::string``"
 msgstr "``std::string``"
+
+msgid ""
+"**Use this as the \"default\" string type.** ``String`` uses UTF-32 encoding "
+"to simplify processing thanks to its fixed character size."
+msgstr ""
+"**Используйте этот тип как «стандартный» строковый тип.** ``String`` "
+"использует кодировку UTF-32 для упрощения обработки благодаря фиксированному "
+"размеру символов."
 
 msgid "|vector|"
 msgstr "|vector|"
@@ -276,6 +303,15 @@ msgstr "|rb_map|"
 msgid "``std::map``"
 msgstr "``std::map``"
 
+msgid ""
+"Map type that uses a `red-black tree <https://en.wikipedia.org/wiki/Red-"
+"black_tree>`__ to find keys. The performance benefits of ``RBMap`` aren't "
+"established, so prefer using other types."
+msgstr ""
+"Тип карты, использующий `красно-чёрное дерево <https://en.wikipedia.org/wiki/"
+"Red-black_tree>`__ для поиска ключей. Преимущества ``RBMap`` в "
+"производительности не установлены, поэтому предпочитайте другие типы."
+
 msgid "|dictionary| 📜"
 msgstr "|dictionary| 📜"
 
@@ -302,6 +338,177 @@ msgstr "|pair|"
 
 msgid "``std::pair``"
 msgstr "``std::pair``"
+
+msgid ""
+"Stores a single pair. See also ``KeyValue`` in the same file, which uses "
+"read-only keys."
+msgstr ""
+"Хранит одну пару. См. также ``KeyValue`` в том же файле, в котором "
+"используются ключи только для чтения."
+
+msgid "Relocation safety"
+msgstr "Безопасность перемещения"
+
+msgid ""
+"Godot's containers assume their elements are `trivially relocatable <https://"
+"open-std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html>`__."
+msgstr ""
+"Контейнеры Godot предполагают, что их элементы являются `тривиально "
+"перемещаемыми <https://open-std.org/JTC1/SC22/WG21/docs/papers/2020/"
+"p1144r5.html>`__."
+
+msgid ""
+"This means that, if you store data types in it that have pointers to "
+"themselves, or are otherwise `not trivially relocatable <https://open-"
+"std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html#non-trivial-"
+"samples>`__, Godot might crash. Note that storing **pointers to** objects "
+"that are not trivially relocatable, such as some Object subclasses, is "
+"unproblematic and supported."
+msgstr ""
+"Это означает, что если вы храните в нём типы данных, которые содержат "
+"указатели на самих себя или иным образом `не являются тривиально "
+"перемещаемыми <https://open-std.org/JTC1/SC22/WG21/docs/papers/2020/"
+"p1144r5.html#non-trivial-samples>`__, Godot может аварийно завершиться. "
+"Обратите внимание, что хранение **указателей на** объекты, которые не "
+"являются тривиально перемещаемыми, например некоторые подклассы Object, не "
+"представляет проблемы и поддерживается."
+
+msgid ""
+"The reason to assume trivial relocatability is that it allows us to make use "
+"of important optimization techniques, such as relocation by ``memcpy`` or "
+"``realloc``."
+msgstr ""
+"Причина предполагать тривиальную перемещаемость заключается в том, что это "
+"позволяет нам использовать важные методы оптимизации, такие как перемещение "
+"с помощью ``memcpy`` или ``realloc``."
+
+msgid ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ tracks "
+"this decision."
+msgstr ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ "
+"отслеживает это решение."
+
+msgid "Multithreading / Concurrency"
+msgstr "Многопоточность / параллелизм"
+
+msgid ""
+"You can find more information on multithreading strategies "
+"at :ref:`doc_using_multiple_threads`."
+msgstr ""
+"Более подробную информацию о стратегиях многопоточности см. "
+"в :ref:`doc_using_multiple_threads`."
+
+msgid ""
+"None of Godot's containers are thread-safe. When you expect multiple threads "
+"to access them, you must use multithread protections."
+msgstr ""
+"Ни один из контейнеров Godot не является потокобезопасным. Если вы ожидаете, "
+"что несколько потоков будут обращаться к ним, вы должны использовать "
+"многопоточную защиту."
+
+msgid ""
+"Note that some of the types listed here are also available through the "
+"bindings, but the binding types are wrapped with :ref:`class_RefCounted` "
+"(found in the ``CoreBind::`` namespace). Prefer the primitives listed here "
+"when possible, for efficiency reasons."
+msgstr ""
+"Обратите внимание, что некоторые из перечисленных здесь типов также доступны "
+"через привязки, но типы привязок обёрнуты в :ref:`class_RefCounted` "
+"(находятся в пространстве имён ``CoreBind::``). По возможности отдавайте "
+"предпочтение примитивам, перечисленным здесь, по соображениям эффективности."
+
+msgid "|mutex|"
+msgstr "|mutex|"
+
+msgid "``std::recursive_mutex``"
+msgstr "``std::recursive_mutex``"
+
+msgid "Recursive mutex type. Use ``MutexLock lock(mutex)`` to lock it."
+msgstr ""
+"Рекурсивный тип мьютекса. Используйте ``MutexLock lock(mutex)`` для его "
+"блокировки."
+
+msgid "|binary_mutex|"
+msgstr "|binary_mutex|"
+
+msgid "``std::mutex``"
+msgstr "``std::mutex``"
+
+msgid "Non-recursive mutex type. Use ``MutexLock lock(mutex)`` to lock it."
+msgstr ""
+"Нерекурсивный тип мьютекса. Используйте ``MutexLock lock(mutex)`` для его "
+"блокировки."
+
+msgid "|rw_lock|"
+msgstr "|rw_lock|"
+
+msgid "``std::shared_mutex``"
+msgstr "``std::shared_mutex``"
+
+msgid ""
+"Read-write aware mutex type. Use ``RWLockRead lock(mutex)`` or ``RWLockWrite "
+"lock(mutex)`` to lock it."
+msgstr ""
+"Тип мьютекса с поддержкой чтения-записи. Используйте ``RWLockRead "
+"lock(mutex)`` или ``RWLockWrite lock(mutex)`` для его блокировки."
+
+msgid "|safe_binary_mutex|"
+msgstr "|safe_binary_mutex|"
+
+msgid ""
+"Recursive mutex type that can be used with ``ConditionVariable``. Use "
+"``MutexLock lock(mutex)`` to lock it."
+msgstr ""
+"Рекурсивный тип мьютекса, который можно использовать с "
+"``ConditionVariable``. Используйте ``MutexLock lock(mutex)`` для его "
+"блокировки."
+
+msgid "|condition_variable|"
+msgstr "|condition_variable|"
+
+msgid "``std::condition_variable``"
+msgstr "``std::condition_variable``"
+
+msgid "Condition variable type, used with ``SafeBinaryMutex``."
+msgstr "Тип условной переменной, используется с ``SafeBinaryMutex``."
+
+msgid "|semaphore|"
+msgstr "|semaphore|"
+
+msgid "``std::counting_semaphore``"
+msgstr "``std::counting_semaphore``"
+
+msgid "Counting semaphore type."
+msgstr "Тип счётного семафора."
+
+msgid "|safe_numeric|"
+msgstr "|safe_numeric|"
+
+msgid "``std::atomic``"
+msgstr "``std::atomic``"
+
+msgid "Templated atomic type, designed for numbers."
+msgstr "Шаблонный атомарный тип, предназначенный для чисел."
+
+msgid "|safe_flag|"
+msgstr "|safe_flag|"
+
+msgid "``std::atomic_bool``"
+msgstr "``std::atomic_bool``"
+
+msgid "Bool atomic type."
+msgstr "Атомарный тип bool."
+
+msgid "|safe_ref_count|"
+msgstr "|safe_ref_count|"
+
+msgid ""
+"Atomic type designed for reference counting. Will refuse to increment the "
+"reference count if it is 0."
+msgstr ""
+"Атомарный тип, предназначенный для подсчёта ссылок. Отказывается увеличивать "
+"счётчик ссылок, если он равен 0."
 
 msgid "Math types"
 msgstr "Математические типы"

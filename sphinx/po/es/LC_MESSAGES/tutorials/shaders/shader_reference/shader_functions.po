@@ -11,9 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Built-in functions"
-msgstr "Funciones integradas"
-
 msgid "vec_type"
 msgstr "vec_type"
 
@@ -998,9 +995,6 @@ msgstr ""
 ":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
 "I, |vec_type| Nref)"
 
-msgid "If ``dot(Nref, I)`` < 0, return ``N``, otherwise ``-N``."
-msgstr "Si ``dot(Nref, I)`` < 0, retorna ``N``, sino retorna ``-N``."
-
 msgid "|mat_type|"
 msgstr "|mat_type|"
 
@@ -1242,16 +1236,10 @@ msgid ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 
-msgid "Bool vector comparison on < int/uint/float vectors."
-msgstr "Comparación booleana de vectores en vectores < int/uint/float."
-
 msgid ""
 ":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
-
-msgid "Bool vector comparison on > int/uint/float vectors."
-msgstr "Comparación booleana vectorial > entre vectores int/uint/float."
 
 msgid ""
 ":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
@@ -1260,31 +1248,19 @@ msgstr ""
 ":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
 "vec_type| y)"
 
-msgid "Bool vector comparison on <= int/uint/float vectors."
-msgstr "Comparación booleana vectorial <= entre vectores int/uint/float."
-
 msgid ""
 ":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
 "vec_type| y)"
 msgstr ""
 ":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
 "vec_type| y)"
-
-msgid "Bool vector comparison on >= int/uint/float vectors."
-msgstr "Comparación booleana vectorial >= entre vectores int/uint/float."
 
 msgid ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
 
-msgid "Bool vector comparison on == int/uint/float vectors."
-msgstr "Comparación booleana vectorial == entre vectores int/uint/float."
-
 msgid ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
-
-msgid "Bool vector comparison on != int/uint/float vectors."
-msgstr "Comparación booleana vectorial != entre vectores int/uint/float."
 
 msgid "bool"
 msgstr "bool"
@@ -1420,9 +1396,6 @@ msgid ""
 msgstr ""
 ":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
 
-msgid "Get the size of a texture."
-msgstr "Obtiene el tamaño de una textura."
-
 msgid "vec2"
 msgstr "vec2"
 
@@ -1484,9 +1457,6 @@ msgid ""
 msgstr ""
 ":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ samplerCube "
 "s)"
-
-msgid "Get the number of accessible mipmap levels of a texture."
-msgstr "Obtiene número de niveles de mipmap accesibles de una textura."
 
 msgid "|gvec4_type|"
 msgstr "|gvec4_type|"
@@ -1674,9 +1644,6 @@ msgid ""
 msgstr ""
 ":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler3D| s, "
 "vec4 p, vec3 dPdx, vec3 dPdy)"
-
-msgid "Performs a texture read with projection/LOD and with explicit"
-msgstr "Realiza una lectura de textura con proyección/LOD y con explícitos"
 
 msgid ""
 ":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2D| s, ivec2 p, int "

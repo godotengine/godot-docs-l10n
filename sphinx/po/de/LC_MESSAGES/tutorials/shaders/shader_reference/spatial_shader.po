@@ -14,8 +14,32 @@ msgstr ""
 msgid "Spatial shaders"
 msgstr "Spatial-Shader"
 
+msgid ""
+"Spatial shaders are used for shading 3D objects. They are the most complex "
+"type of shader Godot offers. Spatial shaders are highly configurable with "
+"different render modes and different rendering options (e.g. Subsurface "
+"Scattering, Transmission, Ambient Occlusion, Rim lighting, etc.). Users can "
+"optionally write vertex, fragment, and light processor functions to affect "
+"how objects are drawn."
+msgstr ""
+"Spatial-Shader werden zur Schattierung von 3D-Objekten verwendet. Sie sind "
+"die komplexeste Art von Shadern, die Godot bietet. Räumliche Shader lassen "
+"sich mit verschiedenen Rendermodi und Renderoptionen (z. B. Subsurface "
+"Scattering, Transmission, Ambient Occlusion, Randbeleuchtung usw.) in hohem "
+"Maße konfigurieren. Benutzer können optional Vertex-, Fragment- und "
+"Lichtprozessorfunktionen schreiben, um zu beeinflussen, wie Objekte "
+"gezeichnet werden."
+
 msgid "Render modes"
-msgstr "Render-Modi"
+msgstr "Rendermodi"
+
+msgid ""
+"For visual examples of these render modes, see :ref:`Standard Material 3D "
+"and ORM Material 3D<doc_standard_material_3d>`."
+msgstr ""
+"Visuelle Beispiele für diese Rendermodi finden Sie "
+"unter :ref:`Standardmaterial 3D und ORM-Material "
+"3D<doc_standard_material_3d>`."
 
 msgid "Render mode"
 msgstr "Rendermodus"
@@ -190,15 +214,52 @@ msgstr "**alpha_to_coverage_and_one**"
 msgid "**fog_disabled**"
 msgstr "**fog_disabled**"
 
+msgid "Stencil modes"
+msgstr "Stencilmodi"
+
+msgid "Stencil mode"
+msgstr "Stencilmodus"
+
+msgid "**read**"
+msgstr "**read**"
+
+msgid "**write**"
+msgstr "**write**"
+
+msgid "**write_if_depth_fail**"
+msgstr "**write_if_depth_fail**"
+
+msgid "**compare_always**"
+msgstr "**compare_always**"
+
+msgid "**compare_equal**"
+msgstr "**compare_equal**"
+
+msgid "**compare_not_equal**"
+msgstr "**compare_not_equal**"
+
+msgid "**compare_less**"
+msgstr "**compare_less**"
+
+msgid "**compare_less_or_equal**"
+msgstr "**compare_less_or_equal**"
+
+msgid "**compare_greater**"
+msgstr "**compare_greater**"
+
+msgid "**compare_greater_or_equal**"
+msgstr "**compare_greater_or_equal**"
+
 msgid "Built-ins"
 msgstr "Built-ins"
 
 msgid "Global built-ins"
 msgstr "Globale Built-ins"
 
-msgid "Global built-ins are available everywhere, including custom functions."
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
 msgstr ""
-"Globale Built-ins sind überall verfügbar, einschließlich benutzerdefinierter "
+"Globale Built-ins sind überall verfügbar, auch in benutzerdefinierten "
 "Funktionen."
 
 msgid "Built-in"
@@ -218,6 +279,24 @@ msgstr "in float **E**"
 
 msgid "in bool **OUTPUT_IS_SRGB**"
 msgstr "in bool **OUTPUT_IS_SRGB**"
+
+msgid "in float **CLIP_SPACE_FAR**"
+msgstr "in float **CLIP_SPACE_FAR**"
+
+msgid "in bool **IS_MULTIVIEW**"
+msgstr "in bool **IS_MULTIVIEW**"
+
+msgid "in bool **IN_SHADOW_PASS**"
+msgstr "in bool **IN_SHADOW_PASS**"
+
+msgid ""
+"``true`` when the shader is being rendered in a shadow mapping pass, "
+"``false`` otherwise. This can be used to render objects differently in "
+"shadow maps compared to their regular rendering."
+msgstr ""
+"``true`` wenn der Shader in einem Shadow-Mapping-Durchgang gerendert wird, "
+"andernfalls ``false``. Damit lassen sich Objekte in Shadow Maps anders "
+"rendern als beim regulären Rendering."
 
 msgid "Vertex built-ins"
 msgstr "Vertex-Built-ins"
@@ -245,12 +324,6 @@ msgstr ""
 "``POSITION`` verwendet wird, wird der Wert von ``VERTEX`` ignoriert und es "
 "findet keine Projektion statt. Der Wert, der an den Fragment-Shader "
 "übergeben wird, stammt jedoch immer noch von ``VERTEX``."
-
-msgid "**x**: Rotation angle in radians."
-msgstr "**x**: Rotationswinkel in Bogenmaß."
-
-msgid "**z**: Animation frame."
-msgstr "**z**: Animations-Frame."
 
 msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr "in vec2 **VIEWPORT_SIZE**"
@@ -467,8 +540,8 @@ msgstr ""
 "Die Standardverwendung einer Godot-Fragmentprozessorfunktion besteht darin, "
 "die Materialeigenschaften Ihres Objekts einzurichten und den Built-in-"
 "Renderer die endgültige Schattierung vornehmen zu lassen. Sie müssen jedoch "
-"nicht alle diese Propertys verwenden, und wenn Sie sie nicht befüllen, wird "
-"Godot die entsprechenden Funktionalitäten wegoptimieren."
+"nicht alle diese Eigenschaften verwenden, und wenn Sie sie nicht befüllen, "
+"wird Godot die entsprechenden Funktionalitäten wegoptimieren."
 
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
@@ -577,9 +650,6 @@ msgstr "out float **RIM_TINT**"
 
 msgid "out float **CLEARCOAT**"
 msgstr "out float **CLEARCOAT**"
-
-msgid "out float **CLEARCOAT_GLOSS**"
-msgstr "out float **CLEARCOAT_GLOSS**"
 
 msgid "out float **ANISOTROPY**"
 msgstr "out float **ANISOTROPY**"

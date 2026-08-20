@@ -1454,15 +1454,6 @@ msgstr ""
 "41794>`__ 。"
 
 msgid ""
-"``randomize()`` is now automatically called on project load, so "
-"deterministic randomness with the global RandomNumberGenerate instance "
-"requires manually setting a seed in a script's ``_ready()`` function."
-msgstr ""
-"``randomize()`` 現在會在專案載入時自動呼叫，因此使用全域 "
-"RandomNumberGenerate 實例進行確定性隨機化需要在腳本的 ``_ready()`` 函式中手動"
-"設定種子。"
-
-msgid ""
 "``call_group()``, ``set_group()`` and ``notify_group()`` are now immediate "
 "by default. If calling an expensive function, this may result in stuttering "
 "when used on a group containing a large number of nodes. To use deferred "
@@ -1700,9 +1691,6 @@ msgstr "ClippedCamera"
 
 msgid "Camera2D or Camera3D"
 msgstr "Camera2D 或 Camera3D"
-
-msgid "Camera's pyramid shape was moved to :ref:'class_Camera3D'."
-msgstr "攝影機的金字塔形狀被移至 :ref:'class_Camera3D'."
 
 msgid "InterpolatedCamera"
 msgstr "InterpolatedCamera"

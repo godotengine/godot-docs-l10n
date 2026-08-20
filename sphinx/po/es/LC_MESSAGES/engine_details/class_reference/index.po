@@ -49,32 +49,6 @@ msgstr ""
 "de Godot. Luego, completa o mejora su documentación rellenando los textos en "
 "estas etiquetas:"
 
-msgid "`<brief_description>`"
-msgstr "`<brief_description>`"
-
-msgid "`<description>`"
-msgstr "`<description>`"
-
-msgid "`<constant>`"
-msgstr "`<constant>`"
-
-msgid ""
-"`<method>` (in its `<description>` tag; return types and arguments don't "
-"take separate documentation strings)"
-msgstr ""
-"`<method>` (en su etiqueta `<description>`; los tipos de retorno y los "
-"argumentos no requieren descripciones separadas)"
-
-msgid "`<member>`"
-msgstr "`<member>`"
-
-msgid ""
-"`<signal>` (in its `<description>` tag; arguments don't take separate "
-"documentation strings)"
-msgstr ""
-"`<signal>` (en su etiqueta `<description>`; los argumentos no requieren "
-"descripciones separadas)"
-
 msgid "How to edit class XML"
 msgstr "Cómo editar una clase XML"
 
@@ -97,16 +71,6 @@ msgstr ""
 "XML en el directorio ``modules/<nombre_del_modulo>/doc_classes/``."
 
 msgid ""
-"Edit it using your favorite text editor. If you use a code editor, make sure "
-"that it doesn't change the indent style: you should use tabs for the XML and "
-"four spaces inside BBCode-style blocks. More on that below."
-msgstr ""
-"Edítalo usando tu editor de texto favorito. Si utilizas un editor de código, "
-"asegúrate de que no cambie el estilo de sangría: debes usar tabulaciones "
-"para el XML y cuatro espacios dentro de bloques de estilo BBCode. Más "
-"detalles a continuación."
-
-msgid ""
 "To check that the modifications you've made are correct in the generated "
 "documentation, navigate to the ``doc/`` folder and run the command ``make "
 "rst``. This will convert the XML files to the online documentation's format "
@@ -116,15 +80,6 @@ msgstr ""
 "documentación generada, navega hasta la carpeta ``doc/`` y ejecuta el "
 "comando ``make rst``. Esto convertirá los archivos XML al formato de la "
 "documentación en línea y mostrará errores si algo está mal."
-
-msgid ""
-"Alternatively, you can build Godot and open the modified page in the built-"
-"in code reference. To learn how to compile the engine, read "
-"the :ref:`compilation guide <toc-devel-compiling>`."
-msgstr ""
-"Como alternativa, puedes compilar Godot y abrir la página modificada en la "
-"referencia de código integrada. Para aprender cómo compilar el motor, lee "
-"la :ref:`guía de compilación <toc-devel-compiling>`."
 
 msgid ""
 "We recommend using a code editor that supports XML files like Vim, Atom, "
@@ -224,17 +179,11 @@ msgstr "``[constructor Class.name]``"
 msgid "``Use [constructor Color.Color].``"
 msgstr "``Usa [constructor Color.Color].``"
 
-msgid "Use  :ref:`Color.Color <class_Color_constructor_Color>`."
-msgstr "Véase :ref:`Color.Color <class_Color_constructor_Color>`."
-
 msgid "``[operator Class.name]``"
 msgstr "``[operator Class.name]``"
 
 msgid "``Use [operator Color.operator *].``"
 msgstr "``Usa [operator Color.operator *].``"
-
-msgid "Use  :ref:`Color.operator * <class_Color_operator_mul_int>`."
-msgstr "Véase :ref:`Color.operator * <class_Color_operator_mul_int>`."
 
 msgid "``[signal Class.name]``"
 msgstr "``[signal Class.name]``"

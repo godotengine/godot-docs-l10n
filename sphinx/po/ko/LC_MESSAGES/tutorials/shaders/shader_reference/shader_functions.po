@@ -11,15 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Built-in functions"
-msgstr "내장 함수"
-
-msgid ""
-"Godot supports a large number of built-in functions, conforming roughly to "
-"the GLSL ES 3.0 specification."
-msgstr ""
-"Godot는 대략 GLSL ES 3.0 사양을 준수하는 다수의 내장 기능을 지원합니다."
-
 msgid ""
 "The following type aliases only used in documentation to reduce repetitive "
 "function declarations. They can each refer to any of several actual types."
@@ -938,10 +929,6 @@ msgstr ""
 msgid "Raises ``x`` to the power of ``y``."
 msgstr "``x``를 ``y``의 힘으로 올립니다."
 
-msgid "The result is undefined if ``x < 0`` or  if ``x == 0`` and ``y <= 0``."
-msgstr ""
-"``x < 0``이거나 ``x == 0`` 및 ``y <= 0``인 경우 결과는 정의되지 않습니다."
-
 msgid "The value to be raised to the power ``y``."
 msgstr "``y``만큼 거듭제곱되는 값입니다."
 
@@ -956,9 +943,6 @@ msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml"
 
 msgid "|vec_type| **exp**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
 msgstr "|vec_type| **특급**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
-
-msgid "Raises ``e`` to the power of ``x``, or the the natural exponentiation."
-msgstr "``e``를 ``x``의 거듭제곱, 즉 자연 지수로 올립니다."
 
 msgid "Equivalent to ``pow(e, x)``."
 msgstr "``pow(e, x)``와 동일합니다."
@@ -983,9 +967,6 @@ msgstr "``pow(2.0, x)``와 동일합니다."
 
 msgid "The value of the power to which ``2`` will be raised."
 msgstr "``2``가 상승할 파워의 값입니다."
-
-msgid "``2`` raised to the power of x."
-msgstr "위쪽 화살표 키에 매핑된 ``move_up``입니다."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
@@ -1138,15 +1119,6 @@ msgstr "|vec_type| **원형**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`
 
 msgid "Rounds ``x`` to the nearest integer."
 msgstr "``x``를 가장 가까운 정수로 반올림합니다."
-
-msgid ""
-"Rounding of values with a fractional part of ``0.5`` is implementation-"
-"dependent. This includes the possibility that ``round(x)`` returns the same "
-"value as ``roundEven(x)``for all values of ``x``."
-msgstr ""
-"``0.5``의 소수 부분으로 값을 반올림하는 것은 구현에 따라 다릅니다. 여기에는 "
-"``round(x)``가 ``x``의 모든 값에 대해 ``roundEven(x)``와 동일한 값을 반환할 "
-"가능성이 포함됩니다."
 
 msgid "The value to round."
 msgstr "최종 결과물"
@@ -1540,15 +1512,6 @@ msgstr ""
 "당 ``b`` 구성 요소가 반환됩니다. 선택되지 않은 ``a`` 및 ``b``의 구성 요소는 "
 "잘못된 부동 소수점 값이 될 수 있으며 결과에 영향을 주지 않습니다."
 
-msgid ""
-"If ``a``, ``b``, and ``c`` are vector types the operation is "
-"performed :ref:`component-wise <shading_componentwise>`. ie. ``mix(vec2(42, "
-"314), vec2(9.8, 6e23), bvec2(true, false)))`` will return ``vec2(9.8, 314)``."
-msgstr ""
-"``a``, ``b`` 및 ``c``가 벡터 유형인 경우 작업은 :ref:`comComponent-wise "
-"<shading_comComponentwise>`로 수행됩니다. 즉. ``mix(vec2(42, 314), vec2(9.8, "
-"6e23), bvec2(true, false)))``는 ``vec2(9.8, 314)``를 반환합니다."
-
 msgid "Value returned when ``c`` is false."
 msgstr "``c``가 false인 경우 반환되는 값입니다."
 
@@ -1588,14 +1551,6 @@ msgid ""
 msgstr "``fma()``의 정밀도는 ``a * b + c`` 표현식의 정밀도와 다를 수 있습니다."
 
 msgid ""
-"``fma()`` will be computed with the same precision as any other ``fma()`` "
-"consumed by a precise variable, giving invariant results for the same input "
-"values of a, b and c."
-msgstr ""
-"``fma()``는 정밀 변수가 사용하는 다른 ``fma()``와 동일한 정밀도로 계산되어 "
-"a, b 및 c의 동일한 입력 값에 대해 불변 결과를 제공합니다."
-
-msgid ""
 "Otherwise, in the absence of precise consumption, there are no special "
 "constraints on the number of operations or difference in precision between "
 "``fma()`` and the expression ``a * b + c``."
@@ -1629,17 +1584,6 @@ msgid ""
 "|vec_type| **step**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
 msgstr ""
 "|vec_type| **단계**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
-
-msgid "Generates a step function by comparing b to a."
-msgstr "b를 a와 비교하여 계단 함수를 생성합니다."
-
-msgid ""
-"Equivalent to ``if (b < a) { return 0.0; } else { return 1.0; }``. For "
-"element i of the return value, 0.0 is returned if b[i] < a[i], and 1.0 is "
-"returned otherwise."
-msgstr ""
-"``if (b < a) { return 0.0; } else { return 1.0; }``와 동일합니다. 반환 값의 "
-"요소 i에 대해 b[i] < a[i]이면 0.0이 반환되고 그렇지 않으면 1.0이 반환됩니다."
 
 msgid "The location of the edge of the step function."
 msgstr "스크립트 하단에, 아래와 같은 함수를 정의합니다:"
@@ -1699,16 +1643,6 @@ msgid ""
 "|vec_bool_type| **isnan**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
 msgstr ""
 "|vec_bool_type| **이스난**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
-
-msgid ""
-"For each element i of the result, returns ``true`` if x[i] is positive or "
-"negative floating-point NaN (Not a Number) and false otherwise."
-msgstr ""
-"결과의 각 요소 i에 대해 x[i]가 양수 또는 음수 부동 소수점 NaN(숫자가 아님)이"
-"면 ``true``를 반환하고 그렇지 않으면 false를 반환합니다."
-
-msgid "The value to test for NaN."
-msgstr "최종 결과물"
 
 msgid "``true`` or ``false``."
 msgstr "``true`` 또는 ``false``."
@@ -1885,10 +1819,6 @@ msgstr ""
 ":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
 "I, |vec_type| Nref)"
 
-msgid "If ``dot(Nref, I)`` < 0, return ``N``, otherwise ``-N``."
-msgstr ""
-"``dot(Nref, I)`` < 0이면 ``N``를 반환하고, 그렇지 않으면 ``-N``를 반환합니다."
-
 msgid "|mat_type|"
 msgstr "|mat_type|"
 
@@ -1936,13 +1866,6 @@ msgstr "설명"
 msgid "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
 msgstr "부동 소수점 **길이**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
 
-msgid ""
-"Returns the length of the vector. ie. ``sqrt(x[0] * x[0] + x[1] * x[1] + ... "
-"+ x[n] * x[n])``"
-msgstr ""
-"벡터의 길이를 반환합니다. 즉. ``sqrt(x[0] * x[0] + x[1] * x[1] + ... + x[n] "
-"* x[n])``"
-
 msgid "The vector"
 msgstr "원격 인스펙터."
 
@@ -1958,12 +1881,6 @@ msgid ""
 msgstr ""
 "부동 소수점 **거리**\\ (\\ |vec_type| a, |vec_type| "
 "b) :ref:`🔗<shader_func_distance>`"
-
-msgid "Returns the distance between the two points a and b."
-msgstr "두 점 a와 b 사이의 거리를 반환합니다."
-
-msgid "i.e., ``length(b - a);``"
-msgstr "즉, ``length(b - a);``"
 
 msgid "The first point."
 msgstr "최종 결과물"
@@ -1985,13 +1902,6 @@ msgstr ""
 "부동 소수점 **점**\\ (\\ |vec_type| a, |vec_type| "
 "b) :ref:`🔗<shader_func_dot>`"
 
-msgid ""
-"Returns the dot product of two vectors, ``a`` and ``b``. i.e., ``a.x * b.x + "
-"a.y * b.y + ...``"
-msgstr ""
-"두 벡터 ``a`` 및 ``b``의 내적을 반환합니다. 즉, ``a.x * b.x + a.y * b.y "
-"+ ...``"
-
 msgid "The first vector."
 msgstr "원격 인스펙터."
 
@@ -2006,9 +1916,6 @@ msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
 
 msgid "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
 msgstr "vec3 **십자가**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
-
-msgid "Returns the cross product of two vectors. i.e.:"
-msgstr "두 벡터의 외적을 반환합니다. 즉:"
 
 msgid "The cross product of ``a`` and ``b``."
 msgstr "``a``와 ``b``의 외적입니다."
@@ -2289,16 +2196,10 @@ msgid ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 
-msgid "Bool vector comparison on < int/uint/float vectors."
-msgstr "< int/uint/float 벡터에 대한 부울 벡터 비교."
-
 msgid ""
 ":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
-
-msgid "Bool vector comparison on > int/uint/float vectors."
-msgstr "int/uint/float 벡터에 대한 Bool 벡터 비교."
 
 msgid ""
 ":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
@@ -2306,9 +2207,6 @@ msgid ""
 msgstr ""
 ":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
 "vec_type| y)"
-
-msgid "Bool vector comparison on <= int/uint/float vectors."
-msgstr "<= int/uint/float 벡터에 대한 부울 벡터 비교."
 
 msgid ""
 ":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
@@ -2317,21 +2215,12 @@ msgstr ""
 ":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\ |vec_type| x, |"
 "vec_type| y)"
 
-msgid "Bool vector comparison on >= int/uint/float vectors."
-msgstr ">= int/uint/float 벡터에 대한 부울 벡터 비교."
-
 msgid ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
-
-msgid "Bool vector comparison on == int/uint/float vectors."
-msgstr "== int/uint/float 벡터에 대한 부울 벡터 비교."
 
 msgid ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
-
-msgid "Bool vector comparison on != int/uint/float vectors."
-msgstr "!= int/uint/float 벡터에 대한 부울 벡터 비교."
 
 msgid "bool"
 msgstr "bool"
@@ -2494,12 +2383,6 @@ msgstr ""
 "두 벡터의 :ref:`component-wise<shading_componentwise>` 같지 않음 비교를 수행"
 "합니다."
 
-msgid "The first vector for comparison."
-msgstr "비교를 위한 첫 번째 벡터입니다."
-
-msgid "The second vector for comparison."
-msgstr "비교를 위한 두 번째 벡터입니다."
-
 msgid ""
 "A boolean vector in which each element ``i`` is computed as ``x[i] != y[i]``."
 msgstr "각 요소 ``i``가 ``x[i] != y[i]``로 계산되는 부울 벡터입니다."
@@ -2524,9 +2407,6 @@ msgstr "기능적으로 다음과 동일합니다."
 
 msgid "The vector to be tested for truth."
 msgstr "진실 여부를 테스트할 벡터입니다."
-
-msgid "True if any element of x is true and false otherwise."
-msgstr "x의 요소 중 하나라도 참이면 참이고 그렇지 않으면 거짓입니다."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
@@ -2553,14 +2433,8 @@ msgid ""
 msgstr ""
 "|vec_bool_type| **아님**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_not>`"
 
-msgid "Logically invert a boolean vector."
-msgstr "Invert Color(색상 반전)"
-
 msgid "The vector to be inverted."
 msgstr "반전할 벡터입니다."
-
-msgid "A new boolean vector for which each element i is computed as !x[i]."
-msgstr "각 요소 i가 !x[i]로 계산되는 새로운 부울 벡터입니다."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
@@ -2603,9 +2477,6 @@ msgid ""
 msgstr ""
 ":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
 
-msgid "Get the size of a texture."
-msgstr "텍스처 가져오기"
-
 msgid ""
 "For performance reasons, this function should be avoided as it always "
 "performs a full texture read. When possible, you should pass the texture "
@@ -2645,10 +2516,6 @@ msgstr ""
 ":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ 샘플러큐브 s, vec3 "
 "p)"
 
-msgid ""
-"Compute the level-of-detail that would be used to sample from a texture."
-msgstr "텍스처에서 샘플링하는 데 사용될 세부 수준을 계산합니다."
-
 msgid "int"
 msgstr "타일 칠하기"
 
@@ -2678,9 +2545,6 @@ msgid ""
 "s)"
 msgstr ""
 ":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ 샘플러큐브 s)"
-
-msgid "Get the number of accessible mipmap levels of a texture."
-msgstr "텍스처의 접근 가능한 밉맵 레벨 수를 가져옵니다."
 
 msgid "|gvec4_type|"
 msgstr "|gvec4_type|"
@@ -2877,9 +2741,6 @@ msgid ""
 msgstr ""
 ":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler3D| s, "
 "vec4 p, vec3 dPdx, vec3 dPdy)"
-
-msgid "Performs a texture read with projection/LOD and with explicit"
-msgstr "투영/LOD 및 명시적을 사용하여 텍스처 읽기를 수행합니다."
 
 msgid ""
 ":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2D| s, ivec2 p, int "
@@ -3090,6 +2951,10 @@ msgid "Available only in the fragment shader."
 msgstr "프래그먼트 셰이더에서만 사용 가능합니다."
 
 msgid ""
+"Compute the level-of-detail that would be used to sample from a texture."
+msgstr "텍스처에서 샘플링하는 데 사용될 세부 수준을 계산합니다."
+
+msgid ""
 "The mipmap array(s) that would be accessed is returned in the x component of "
 "the return value. The computed level-of-detail relative to the base level is "
 "returned in the y component of the return value."
@@ -3285,19 +3150,6 @@ msgstr ""
 "|gvec4_type| **textureProj**\\ (\\ |gsampler3D| s, vec4 p [, float "
 "bias] ) :ref:`🔗<shader_func_textureProj>`"
 
-msgid "Perform a texture lookup with projection."
-msgstr "투영을 사용하여 텍스처 조회를 수행합니다."
-
-msgid ""
-"The texture coordinates consumed from ``p``, not including the last "
-"component of ``p``, are divided by the last component of ``p``. The "
-"resulting 3rd component of ``p`` in the shadow forms is used as Dref. After "
-"these values are computed, the texture lookup proceeds as in texture."
-msgstr ""
-"``p``의 마지막 구성 요소를 제외하고 ``p``에서 소비된 텍스처 좌표는 ``p``의 마"
-"지막 구성 요소로 나뉩니다. 그림자 형태의 ``p``의 세 번째 구성 요소가 Dref로 "
-"사용됩니다. 이러한 값이 계산된 후 텍스처 조회는 텍스처에서와 같이 진행됩니다."
-
 msgid "Optional bias to be applied during level-of-detail computation."
 msgstr "세부 수준 계산 중에 적용할 선택적 편향입니다."
 
@@ -3384,20 +3236,6 @@ msgid ""
 "of-detail."
 msgstr "명시적으로 지정된 세부 수준의 투영을 통해 텍스처 조회를 수행합니다."
 
-msgid ""
-"The texture coordinates consumed from P, not including the last component of "
-"``p``, are divided by the last component of ``p``. The resulting 3rd "
-"component of ``p`` in the shadow forms is used as Dref. After these values "
-"are computed, the texture lookup proceeds as in "
-"`textureLod<shader_func_textureLod>`, with ``lod`` used to specify the level-"
-"of-detail from which the texture will be sampled."
-msgstr ""
-"``p``의 마지막 구성 요소를 제외하고 P에서 소비된 텍스처 좌표는 ``p``의 마지"
-"막 구성 요소로 나뉩니다. 그림자 형태의 ``p``의 세 번째 구성요소가 Dref로 사용"
-"됩니다. 이러한 값이 계산된 후 텍스처 조회는 "
-"`textureLod<shader_func_textureLod>`에서와 같이 진행되며 ``lod``는 텍스처가 "
-"샘플링될 세부 수준을 지정하는 데 사용됩니다."
-
 msgid "The explicit level-of-detail from which to fetch texels."
 msgstr "텍셀을 가져올 명시적인 세부 수준입니다."
 
@@ -3446,14 +3284,6 @@ msgstr ""
 "vec4 **textureGrad**\\ (\\ SamplerCubeArray s, vec3 p, vec3 dPdx, vec3 "
 "dPdy) :ref:`🔗<shader_func_textureGrad>`"
 
-msgid ""
-"Performs a texture lookup at coordinate ``p`` from the texture bound to "
-"sampler with explicit texture coordinate gradiends as specified in ``dPdx`` "
-"and ``dPdy``. Set:"
-msgstr ""
-"``dPdx`` 및 ``dPdy``에 지정된 대로 명시적인 텍스처 좌표 그라데이션을 사용하"
-"여 샘플러에 바인딩된 텍스처의 ``p`` 좌표에서 텍스처 조회를 수행합니다. 설정:"
-
 msgid "``δs/δx=δp/δx`` for a 1D texture, ``δp.s/δx`` otherwise"
 msgstr "1D 텍스처의 경우 ``δs/δx=δp/δx``, 그렇지 않은 경우 ``δp.s/δx``"
 
@@ -3468,9 +3298,6 @@ msgstr "1D 텍스처의 경우 ``δt/δy=0.0``, 그렇지 않은 경우 ``δp.t/
 
 msgid "``δr/δx=0.0`` for a 1D or 2D texture, ``δp.p/δx`` otherwise"
 msgstr "1D 또는 2D 텍스처의 경우 ``δr/δx=0.0``, 그렇지 않은 경우 ``δp.p/δx``"
-
-msgid "``δr/δy=0.0``  for a 1D or 2D texture, ``δp.p/δy`` otherwise"
-msgstr "1D 또는 2D 텍스처의 경우 ``δr/δy=0.0``, 그렇지 않은 경우 ``δp.p/δy``"
 
 msgid ""
 "For the cube version, the partial derivatives of ``p`` are assumed to be in "
@@ -3517,21 +3344,6 @@ msgid ""
 msgstr ""
 "|gvec4_type| **textureProjGrad**\\ (\\ |gsampler3D| s, vec4 p, vec3 dPdx, "
 "vec3 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
-
-msgid "Perform a texture lookup with projection and explicit gradients."
-msgstr "투영 및 명시적 그라데이션을 사용하여 텍스처 조회를 수행합니다."
-
-msgid ""
-"The texture coordinates consumed from ``p``, not including the last "
-"component of ``p``, are divided by the last component of ``p``. After these "
-"values are computed, the texture lookup proceeds as in "
-"`textureGrad<shader_func_textureGrad>`, passing ``dPdx`` and ``dPdy`` as "
-"gradients."
-msgstr ""
-"``p``의 마지막 구성 요소를 제외하고 ``p``에서 소비된 텍스처 좌표는 ``p``의 마"
-"지막 구성 요소로 나뉩니다. 이러한 값이 계산된 후 "
-"`textureGrad<shader_func_textureGrad>`에서와 같이 텍스처 조회가 진행되어 "
-"``dPdx`` 및 ``dPdy``를 그라데이션으로 전달합니다."
 
 msgid "The partial derivative of ``p`` with respect to window x."
 msgstr "창 x에 대한 ``p``의 편도함수입니다."
@@ -3791,9 +3603,6 @@ msgstr ""
 
 msgid "Uses local differencing for the input argument p."
 msgstr "입력 인수 p에 대해 국소 차분을 사용합니다."
-
-msgid "Equivalent  to ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``."
-msgstr "``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``와 동일합니다."
 
 msgid ""
 "|vec_type| **fwidthFine**\\ (\\ |vec_type| "
@@ -4610,17 +4419,6 @@ msgstr ""
 "|vec_uint_type| **uaddCarry**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, 출"
 "력 |vec_uint_type| 캐리) :ref:`🔗<shader_func_uaddCarry>`"
 
-msgid "Add unsigned integers and generate carry."
-msgstr "Add unsigned integers and generate carry."
-
-msgid ""
-"adds two 32-bit unsigned integer variables (scalars or vectors) and "
-"generates a 32-bit unsigned integer result, along with a carry output. The "
-"value carry is ."
-msgstr ""
-"두 개의 32비트 부호 없는 정수 변수(스칼라 또는 벡터)를 추가하고 캐리 출력과 "
-"함께 32비트 부호 없는 정수 결과를 생성합니다. 캐리 값은 입니다."
-
 msgid "The first operand."
 msgstr "최종 결과물"
 
@@ -4629,9 +4427,6 @@ msgstr "최종 결과물"
 
 msgid "param carry"
 msgstr "매개변수 캐리"
-
-msgid "0 if the sum is less than 2\\ :sup:`32`, otherwise 1."
-msgstr "합계가 2\\ :sup:`32`보다 작으면 0이고, 그렇지 않으면 1입니다."
 
 msgid "``(x + y) % 2^32``."
 msgstr "``(x + y) % 2^32``."
@@ -4713,17 +4508,6 @@ msgid ""
 msgstr ""
 "다음과 같이 ``x``를 ``[0.5, 1.0)`` 범위와 2의 정수 지수의 부동 소수점 유효 숫"
 "자로 추출합니다."
-
-msgid ""
-"For a floating-point value of zero, the significand and exponent are both "
-"zero."
-msgstr "부동 소수점 값이 0인 경우 유효 숫자와 지수는 모두 0입니다."
-
-msgid ""
-"For a floating-point value that is an infinity or a floating-point NaN, the "
-"results are undefined."
-msgstr ""
-"무한대 또는 부동 소수점 NaN인 부동 소수점 값의 경우 결과는 정의되지 않습니다."
 
 msgid "The value from which significand and exponent are to be extracted."
 msgstr "유효숫자와 지수를 추출할 값입니다."

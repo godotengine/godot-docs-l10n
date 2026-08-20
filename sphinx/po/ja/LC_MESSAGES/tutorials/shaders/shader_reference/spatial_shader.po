@@ -194,8 +194,9 @@ msgstr "ビルトイン"
 msgid "Global built-ins"
 msgstr "グローバルビルトイン"
 
-msgid "Global built-ins are available everywhere, including custom functions."
-msgstr "グローバルビルトインは、カスタム関数を含め、どこでも使用できます。"
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr "グローバルビルトインはカスタム関数を含めあらゆる場所で使用できます。"
 
 msgid "Built-in"
 msgstr "ビルトイン"
@@ -239,12 +240,6 @@ msgstr ""
 "が使用される場合、 ``VERTEX`` の値は無視されプロジェクション計算は行われませ"
 "ん。ただしフラグメントシェーダーに渡される値は依然として ``VERTEX`` から取得"
 "されます。"
-
-msgid "**x**: Rotation angle in radians."
-msgstr "**x**: ラジアン単位の回転角度。"
-
-msgid "**z**: Animation frame."
-msgstr "**z**: アニメーションフレーム。"
 
 msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr "\\ in vec2 **VIEWPORT_SIZE**"
@@ -539,9 +534,6 @@ msgstr "\\ out float **RIM_TINT**"
 
 msgid "out float **CLEARCOAT**"
 msgstr "\\ out float **CLEARCOAT**"
-
-msgid "out float **CLEARCOAT_GLOSS**"
-msgstr "\\ out float **CLEARCOAT_GLOSS**"
 
 msgid "out float **ANISOTROPY**"
 msgstr "\\ out float **ANISOTROPY**"

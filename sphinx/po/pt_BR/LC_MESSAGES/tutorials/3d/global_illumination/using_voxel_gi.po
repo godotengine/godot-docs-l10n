@@ -49,6 +49,9 @@ msgstr "VoxelGI desativado."
 msgid "VoxelGI enabled."
 msgstr "VoxelGI habilitado."
 
+msgid "Setting up VoxelGI"
+msgstr "Configurando o VoxelGI"
+
 msgid ""
 "Make sure your static level geometry is imported with the Light Baking "
 "option set to **Static** or **Static Lightmaps** in the Import dock. For "
@@ -60,6 +63,9 @@ msgstr ""
 "painel de importação. Para os nós MeshInstance3D adicionados manualmente, "
 "verifique se a propriedade **Global Illumination > Mode** está definida como "
 "**Static** no inspetor."
+
+msgid "Create a VoxelGI node in the Scene tree dock."
+msgstr "Crie um nó VoxelGI no painel da árvore da cena."
 
 msgid ""
 "Move the VoxelGI node to the center of the area you want it to cover by "
@@ -109,6 +115,9 @@ msgstr ""
 "baseado em texto). Usar um recurso binário externo para o VoxelGIData "
 "manterá sua cena baseada em texto pequena, garantindo ao mesmo tempo que ela "
 "seja carregada e salva rapidamente."
+
+msgid "VoxelGI node properties"
+msgstr "Propriedades do nó VoxelGI"
 
 msgid ""
 "The following properties can be adjusted in the VoxelGI node inspector "
@@ -216,6 +225,9 @@ msgstr ""
 "considerada pelo VoxelGI. Isso deve ser habilitado em cenas internas para "
 "evitar vazamento de luz do ambiente."
 
+msgid "VoxelGI interaction with lights and objects"
+msgstr "Interação do VoxelGI com luzes e objetos"
+
 msgid ""
 "To ensure correct visuals when using VoxelGI, you must configure your meshes "
 "and lights' global illumination properties according to their *purpose* in "
@@ -224,6 +236,18 @@ msgstr ""
 "Para garantir visuais corretos ao usar o VoxelGI, você deve configurar as "
 "propriedades de iluminação global de suas malhas e luzes conforme o "
 "*propósito* delas na cena (estático ou dinâmico)."
+
+msgid "There are 3 global illumination modes available for meshes:"
+msgstr "Existem 3 modos de iluminação global disponíveis para malhas:"
+
+msgid ""
+"**Disabled:** The mesh won't be taken into account for VoxelGI baking. The "
+"mesh will *receive* indirect lighting from the scene, but it will not "
+"*contribute* indirect lighting to the scene."
+msgstr ""
+"**Desabilitado:** A malha não será considerada durante o bake do VoxelGI. A "
+"malha *receberá* iluminação indireta da cena, mas não *contribuirá* com "
+"iluminação indireta para a cena."
 
 msgid ""
 "**Static (default):** The mesh will be taken into account for VoxelGI "
@@ -272,15 +296,17 @@ msgstr ""
 "ignoradas durante o pré-cálculo. Isso pode impactar visuais se a textura do "
 "albedo ou de emissão do material foi projetada usando certos mapeamentos UV:"
 
+msgid "**UV1 > Offset**"
+msgstr "**UV1 > Offset**"
+
+msgid "**UV1 > Scale**"
+msgstr "**UV1 > Scale**"
+
+msgid "**UV1 > Triplanar**"
+msgstr "**UV1 > Triplanar**"
+
 msgid "**Emission > On UV2**"
 msgstr "**Emissão > No UV2**"
-
-msgid ""
-"Additionally, there are 3 bake modes available for lights "
-"(DirectionalLight3D, OmniLight3D and SpotLight3D):"
-msgstr ""
-"Além disso, existem 3 modos de bake disponíveis para luzes "
-"(DirectionalLight3D, OmniLight3D e SpotLight3D):"
 
 msgid ""
 "**Disabled:** The light won't be taken into account for VoxelGI baking. The "

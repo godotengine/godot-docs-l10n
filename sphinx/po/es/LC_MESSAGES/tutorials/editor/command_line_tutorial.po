@@ -237,6 +237,13 @@ msgstr ""
 msgid "``--rendering-method <renderer>``"
 msgstr "``--rendering-method <renderer>``"
 
+msgid ""
+"|release| Renderer name. Valid values are ``forward_plus``, ``mobile``, and "
+"``gl_compatibility``. Requires driver support."
+msgstr ""
+"|release| Nombre del renderizador. Los valores válidos son ``forward_plus``, "
+"``mobile`` y ``gl_compatibility``. Requiere soporte de controladores."
+
 msgid "``--rendering-driver <driver>``"
 msgstr "``--rendering-driver <driver>``"
 
@@ -706,20 +713,8 @@ msgstr ""
 msgid "``--benchmark``"
 msgstr "``--benchmark``"
 
-msgid "|editor| Benchmark the run time and print it to console."
-msgstr ""
-"|editor| Realiza una prueba de rendimiento del tiempo de ejecución y lo "
-"muestra en la consola."
-
 msgid "``--benchmark-file <path>``"
 msgstr "``--benchmark-file <ruta>``"
-
-msgid ""
-"|editor| Benchmark the run time and save it to a given file in JSON format. "
-"The path should be absolute."
-msgstr ""
-"|editor| Realiza una prueba de rendimiento del tiempo de ejecución y la "
-"guarda en un archivo especificado en formato JSON. La ruta debe ser absoluta."
 
 msgid "``--test [--help]``"
 msgstr "``--test [--help]``"

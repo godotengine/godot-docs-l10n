@@ -23,13 +23,6 @@ msgstr ""
 "chování nebude složité: náhodně se vynoří na okrajích obrazovky a vyberou "
 "náhodný směr, ve kterém se budou pohybovat po přímce."
 
-msgid ""
-"We'll create a ``Mob`` scene, which we can then *instance* to create any "
-"number of independent mobs in the game."
-msgstr ""
-"Vytvoříme scénu ``Mob``, pomocí jejíž *instancí* pak ve hře vytvoříme "
-"libovolný počet nezávislých nepřátel."
-
 msgid "Node setup"
 msgstr "Příprava uzlu"
 
@@ -114,9 +107,6 @@ msgstr "Uložte scénu."
 msgid "Enemy script"
 msgstr "Skript nepřítele"
 
-msgid "Add a script to the ``Mob`` like this:"
-msgstr "Přidejte skript ke scéně ``Mob``, který začne:"
-
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we play the "
 "animation and randomly choose one of the three animation types:"
@@ -163,9 +153,6 @@ msgid ""
 msgstr ""
 "``queue_free()`` (\"zavést do fronty pro uvolnění\") je funkce, která v "
 "podstatě 'uvolní', tedy odstraní uzel na konci snímku."
-
-msgid "This completes the `Mob` scene."
-msgstr "Tím je dokončena scéna `Mob`."
 
 msgid ""
 "With the player and enemies ready, in the next part, we'll bring them "

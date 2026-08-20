@@ -11,5 +11,76 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0103: The exported member is read-only"
+msgstr "GD0103: O membro exportado é somente leitura (read-only)"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0103"
+msgstr "GD0103"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Non-breaking"
+msgstr "Não quebra compatibilidade (Non-breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"A read-only member is annotated with the ``[Export]`` attribute. Read-only "
+"members can't be exported."
+msgstr ""
+"Um membro somente leitura está anotado com o atributo ``[Export]``. Membros "
+"somente leitura não podem ser exportados."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid "Godot doesn't allow exporting read-only members."
+msgstr "O Godot não permite a exportação de membros somente leitura."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule for fields, remove the ``readonly`` keyword "
+"or remove the ``[Export]`` attribute."
+msgstr ""
+"Para corrigir uma violação desta regra para campos (fields), remova a "
+"palavra-chave ``readonly`` ou remova o atributo ``[Export]``."
+
+msgid ""
+"To fix a violation of this rule for properties, make sure the property "
+"declares both a getter and a setter, or remove the ``[Export]`` attribute."
+msgstr ""
+"Para corrigir uma violação desta regra para propriedades, certifique-se de "
+"que a propriedade declare tanto um getter quanto um setter, ou remova o "
+"atributo ``[Export]``."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Read-only members can't be "
+"exported so they will be ignored by Godot, resulting in runtime errors."
+msgstr ""
+"Não suprima um aviso desta regra. Membros somente leitura não podem ser "
+"exportados, portanto serão ignorados pelo Godot, resultando em erros em "
+"tempo de execução."

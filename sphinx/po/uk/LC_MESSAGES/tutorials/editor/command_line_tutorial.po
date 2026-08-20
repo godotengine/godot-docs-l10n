@@ -174,15 +174,6 @@ msgstr ""
 msgid "``--recovery-mode``"
 msgstr "``--recovery-mode``"
 
-msgid ""
-"|editor| \"Start the editor in recovery mode, which disables features that "
-"can typically cause startup crashes, such as tool scripts, editor plugins, "
-"GDExtension addons, and others."
-msgstr ""
-"|editor| \"Запустіть редактор у режимі відновлення, що вимикає функції, які "
-"зазвичай можуть спричиняти збої під час запуску, такі як скрипти "
-"інструментів, плагіни редактора, доповнення GDExtension та інші."
-
 msgid "``--debug-server <uri>``"
 msgstr "``--debug-server <uri>``"
 
@@ -471,13 +462,6 @@ msgstr "|release| Запит, прив'язаний до вікна."
 msgid "``--accessibility <mode>``"
 msgstr "``--accessibility <mode>``"
 
-msgid ""
-"|release| Select accessibility mode ['auto\" (when screen reader is running, "
-"default), \"always\", \"disabled']."
-msgstr ""
-"|release| Виберіть режим доступності [«авто» (коли працює програма "
-"зчитування з екрана, за замовчуванням), «завжди», «вимкнено»]."
-
 msgid "**Debug options**"
 msgstr "**Команди налагодження**"
 
@@ -553,19 +537,6 @@ msgstr ""
 
 msgid "``--extra-gpu-memory-tracking``"
 msgstr "``--extra-gpu-memory-tracking``"
-
-msgid ""
-"|debug| Enables additional memory tracking (see class reference for "
-"`RenderingDevice.get_driver_and_device_memory_report()` and linked methods). "
-"Currently only implemented for Vulkan. Enabling this feature may cause "
-"crashes on some systems due to buggy drivers or bugs in the Vulkan Loader. "
-"See https://github.com/godotengine/godot/issues/95967"
-msgstr ""
-"|debug| Вмикає додаткове відстеження пам'яті (див. посилання на клас для "
-"`RenderingDevice.get_driver_and_device_memory_report()` та пов'язаних "
-"методів). Наразі реалізовано лише для Vulkan. Увімкнення цієї функції може "
-"спричинити збої в деяких системах через помилки драйверів або помилки в "
-"завантажувачі Vulkan. Див. https://github.com/godotengine/godot/issues/95967"
 
 msgid "``--accurate-breadcrumbs``"
 msgstr "``--accurate-breadcrumbs``"
@@ -970,18 +941,8 @@ msgstr ""
 msgid "``--benchmark``"
 msgstr "``--еталон``"
 
-msgid "|editor| Benchmark the run time and print it to console."
-msgstr "|editor| Порівняйте час виконання та роздрукуйте його на консолі."
-
 msgid "``--benchmark-file <path>``"
 msgstr "``--benchmark-file <шлях>``"
-
-msgid ""
-"|editor| Benchmark the run time and save it to a given file in JSON format. "
-"The path should be absolute."
-msgstr ""
-"|editor| Перевірте час виконання та збережіть його у заданому файлі у "
-"форматі JSON. Шлях повинен бути абсолютним."
 
 msgid "``--test [--help]``"
 msgstr "``--test [--help]``"

@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Particle sub-emitters"
+msgstr "Subemissores de partículas"
+
 msgid "Chained sub-emitters"
 msgstr "Subemissores encadeados"
 
@@ -34,6 +37,9 @@ msgstr "Atribuir subemissor"
 
 msgid "Click to assign a sub-emitter..."
 msgstr "Clique para atribuir um subemissor..."
+
+msgid "List particle systems"
+msgstr "Listar sistemas de partículas"
 
 msgid "\\...and select one from the scene"
 msgstr "\\...e selecione um da cena"
@@ -62,19 +68,6 @@ msgstr ""
 "confirmação."
 
 msgid ""
-"Particle systems from instanced scenes can be set as sub-emitters too, as "
-"long as the ``Editable Children`` property is enabled on the instanced "
-"scene. This also works the other way around: You can assign a sub-emitter to "
-"a particle system in an instanced scene, even one coming from a different "
-"instanced scene."
-msgstr ""
-"Sistemas de partículas de cenas instanciadas também podem ser definidos como "
-"sub-emissores, desde que a propriedade ``Editable Children`` esteja "
-"habilitada na cena instanciada. Isso também funciona ao contrário: Você pode "
-"atribuir um sub-emissor a um sistema de partículas em uma cena instanciada, "
-"mesmo que ele venha de uma cena instanciada diferente."
-
-msgid ""
 "When you set a particle system as the sub-emitter of another, the system "
 "stops emitting, even if the ``Emitting`` property was checked. Don't worry, "
 "it didn't break. This happens to every particle system as soon as it becomes "
@@ -99,6 +92,9 @@ msgstr ""
 "próprio sub-emissor não funciona no Godot. Ele simplesmente não será gerado. "
 "O mesmo é verdade para qualquer outro tipo de configuração de sub-emissor "
 "recursiva ou autorreferencial."
+
+msgid "Emitter mode"
+msgstr "Modo emissor"
 
 msgid ""
 "When you assign a sub-emitter, you don't see it spawn right away. Emitting "

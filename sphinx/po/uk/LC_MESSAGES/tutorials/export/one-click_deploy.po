@@ -163,13 +163,6 @@ msgid "Connect to the same Wi-Fi network on your mobile device and PC."
 msgstr "Підключіть мобільний пристрій і ПК до однієї мережі Wi-Fi."
 
 msgid ""
-"Click :button:`Pair device with pairing code: (can be accessed via long "
-"press on wireless debugging) to display IP, port, and pairing code.`"
-msgstr ""
-"Натисніть :button:`Pair device with pairing code: (can be accessed via long "
-"press on wireless debugging) to display IP, port, and pairing code.`"
-
-msgid ""
 "On your PC, enter the command ``adb pair <ip address>:<port>`` and provide "
 "the pairing code when prompted. If ``adb`` is not recognized, you may need "
 "to add the android-sdk's platform-tools folder to your ``PATH`` or execute "
@@ -197,15 +190,6 @@ msgstr ""
 "Встановіть Xcode, прийміть ліцензію Xcode та увійдіть у свій обліковий запис "
 "розробника Apple."
 
-msgid ""
-"If you are using Xcode 14 or earlier, install `ios-deploy <https://"
-"github.com/ios-control/ios-deploy>`__ and set path to `ios-deploy` in the "
-"Editor Settings (see `Export ⇾ iOS ⇾ iOS Deploy`)."
-msgstr ""
-"Якщо ви використовуєте Xcode 14 або ранішу версію, інсталюйте `ios-deploy "
-"<https://github.com/ios-control/ios-deploy>`__ та встановіть шлях до `ios-"
-"deploy` в налаштуваннях редактора (див. `Експортувати' ⇾ iOS ⇾ iOS Deploy`)."
-
 msgid "For running on device:"
 msgstr "Для запуску на пристрої:"
 
@@ -218,28 +202,11 @@ msgstr "Увімкніть режим розробника на своєму п�
 msgid "Device can be connected via USB or local network."
 msgstr "Пристрій можна підключити через USB або локальну мережу."
 
-msgid ""
-"Make sure the device is on the same local network and a correct network "
-"interface is selected in the editor settings (see `Network ⇾ Debug ⇾ Remote "
-"Host`). By default, the editor is listening for `localhost` connections only."
-msgstr ""
-"Переконайтеся, що пристрій у тій самій локальній мережі та в налаштуваннях "
-"редактора вибрано правильний мережевий інтерфейс (див. `Мережа ⇾ "
-"Налагодження ⇾ Віддалений хост`). За замовчуванням редактор прослуховує лише "
-"підключення `localhost`."
-
 msgid "Device screen should be unlocked."
 msgstr "Екран пристрою має бути розблоковано."
 
 msgid "**Desktop platforms:**"
 msgstr "**Настільні платформи:**"
-
-msgid ""
-"Enable `SSH Remote Deploy` and configure connection settings in the project "
-"export setting."
-msgstr ""
-"Увімкніть `SSH Remote Deploy` і налаштуйте параметри підключення в "
-"параметрах експорту проекту."
 
 msgid ""
 "Make sure there is an export preset marked as **Runnable** for the target "

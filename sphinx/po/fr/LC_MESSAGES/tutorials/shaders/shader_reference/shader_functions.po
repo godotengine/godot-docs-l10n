@@ -11,16 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Built-in functions"
-msgstr "Fonctions intégrées"
-
-msgid ""
-"Godot supports a large number of built-in functions, conforming roughly to "
-"the GLSL ES 3.0 specification."
-msgstr ""
-"Godot prend en charge un grand nombre de fonctions intégrées, se conformant "
-"globalement à la spécification GLSL ES 3.0."
-
 msgid "alias"
 msgstr "alias"
 
@@ -1184,9 +1174,6 @@ msgstr ""
 ":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
 "I, |vec_type| Nref)"
 
-msgid "If ``dot(Nref, I)`` < 0, return ``N``, otherwise ``-N``."
-msgstr "Si ``dot(Nref, I)`` < 0, retourne ``N``, sinon ``-N``."
-
 msgid "|mat_type|"
 msgstr "|mat_type|"
 
@@ -1244,9 +1231,6 @@ msgstr ""
 "float **distance**\\ (\\ |vec_type| a, |vec_type| "
 "b) :ref:`🔗<shader_func_distance>`"
 
-msgid "i.e., ``length(b - a);``"
-msgstr "c.-à-d., ``length(b - a);``"
-
 msgid "The second point."
 msgstr "Le second point."
 
@@ -1260,13 +1244,6 @@ msgid ""
 msgstr ""
 "float **dot**\\ (\\ |vec_type| a, |vec_type| b) :ref:`🔗<shader_func_dot>`"
 
-msgid ""
-"Returns the dot product of two vectors, ``a`` and ``b``. i.e., ``a.x * b.x + "
-"a.y * b.y + ...``"
-msgstr ""
-"Renvoie le produit scalaire de deux vecteurs, ``a`` et ``b``. i.e, ``a.x * "
-"b.x + a.y * b.y + ...``"
-
 msgid "The first vector."
 msgstr "Le premier vecteur."
 
@@ -1278,9 +1255,6 @@ msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
 
 msgid "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
 msgstr "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
-
-msgid "Returns the cross product of two vectors. i.e.:"
-msgstr "Retourne le produit vectoriel de deux vecteurs. C-à-d :"
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml"
@@ -1438,16 +1412,10 @@ msgid ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 
-msgid "Bool vector comparison on < int/uint/float vectors."
-msgstr "Comparaison de bool vector < sur des vectors int/uint/float."
-
 msgid ""
 ":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
-
-msgid "Bool vector comparison on > int/uint/float vectors."
-msgstr "Comparaison de bool vector > sur des vectors int/uint/float."
 
 msgid ""
 ":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
@@ -1455,9 +1423,6 @@ msgid ""
 msgstr ""
 ":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
 "vec_type| y)"
-
-msgid "Bool vector comparison on <= int/uint/float vectors."
-msgstr "Comparaison de bool vector <= sur des vectors int/uint/float."
 
 msgid ""
 ":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
@@ -1466,21 +1431,12 @@ msgstr ""
 ":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\ |vec_type| x, |"
 "vec_type| y)"
 
-msgid "Bool vector comparison on >= int/uint/float vectors."
-msgstr "Comparaison de bool vector >= sur des vectors int/uint/float."
-
 msgid ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
-
-msgid "Bool vector comparison on == int/uint/float vectors."
-msgstr "Comparaison de bool vector == sur des vectors int/uint/float."
 
 msgid ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
-
-msgid "Bool vector comparison on != int/uint/float vectors."
-msgstr "Comparaison de bool vector != sur des vectors int/uint/float."
 
 msgid "bool"
 msgstr "bool"
@@ -1567,9 +1523,6 @@ msgstr ""
 "|vec_bool_type| **notEqual**\\ (\\ |vec_type| x, |vec_type| "
 "y) :ref:`🔗<shader_func_notEqual>`"
 
-msgid "The first vector for comparison."
-msgstr "Le premier vecteur à comparer."
-
 msgid ""
 "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/notEqual.xhtml"
 msgstr ""
@@ -1629,9 +1582,6 @@ msgid ""
 ":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
 msgstr ""
 ":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
-
-msgid "Get the size of a texture."
-msgstr "Donne la taille d'une texture."
 
 msgid "vec2"
 msgstr "vec2"
@@ -1694,9 +1644,6 @@ msgid ""
 msgstr ""
 ":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ samplerCube "
 "s)"
-
-msgid "Get the number of accessible mipmap levels of a texture."
-msgstr "Donne le nombre de niveaux de mipmap accessibles d'une texture."
 
 msgid "|gvec4_type|"
 msgstr "|gvec4_type|"
@@ -1884,11 +1831,6 @@ msgid ""
 msgstr ""
 ":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler3D| s, "
 "vec4 p, vec3 dPdx, vec3 dPdy)"
-
-msgid "Performs a texture read with projection/LOD and with explicit"
-msgstr ""
-"Effectue une lecture de texture avec une projection/LOD et avec des "
-"gradients explicites."
 
 msgid ""
 ":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2D| s, ivec2 p, int "
@@ -2407,6 +2349,9 @@ msgstr ""
 "vec4 **textureGather**\\ (\\ samplerCube s, vec3 p [, int "
 "comps] ) :ref:`🔗<shader_func_textureGather>`"
 
+msgid "Returns the value:"
+msgstr "Renvoie la valeur :"
+
 msgid "param comps"
 msgstr "param comps"
 
@@ -2476,9 +2421,6 @@ msgid ""
 msgstr ""
 "|vec_type| **fwidthCoarse**\\ (\\ |vec_type| "
 "p) :ref:`🔗<shader_func_fwidthCoarse>`"
-
-msgid "Equivalent  to ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``."
-msgstr "Équivalent à ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``."
 
 msgid ""
 "|vec_type| **fwidthFine**\\ (\\ |vec_type| "

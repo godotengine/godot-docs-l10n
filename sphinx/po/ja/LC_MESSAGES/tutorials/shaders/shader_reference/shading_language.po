@@ -458,14 +458,6 @@ msgstr ""
 "クセスと使用は、ユニフォームの使用よりもわずかに高速です。定数は、宣言時に初"
 "期化する必要があります。"
 
-msgid ""
-"Constants cannot be modified and additionally cannot have hints, but "
-"multiple of them (if they have the same type) can be declared in a single "
-"expression e.g"
-msgstr ""
-"定数は変更できず、さらにヒントを持つことはできませんが、複数の(同じ型の場合)"
-"を単一の式で宣言できます。例:"
-
 msgid "Similar to variables, arrays can also be declared with ``const``."
 msgstr "変数と同様に、配列は ``const`` で宣言することもできます。"
 
@@ -513,13 +505,6 @@ msgstr "宣言後、次のようにインスタンス化して初期化できま
 
 msgid "Or use struct constructor for same purpose:"
 msgstr "また、同じ目的で構造体のコンストラクタを使用できます。"
-
-msgid ""
-"Structs may contain other struct or array, you can also instance them as "
-"global constant:"
-msgstr ""
-"構造体には他の構造体や配列を含めることができ、それらをグローバル定数としてイ"
-"ンスタンス化することもできます。"
 
 msgid "You can also pass them to functions:"
 msgstr "構造体のインスタンスを関数へ渡すこともできます。"

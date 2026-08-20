@@ -27,6 +27,9 @@ msgstr "Rastros de partículas"
 msgid "Particle trail params"
 msgstr "Parâmetros de rastros de partículas"
 
+msgid "Setting up particle trails"
+msgstr "Configurando trilhas de partículas"
+
 msgid ""
 "Godot provides several types of trails you can add to a particle system. "
 "Before you can work with trails, you need to set up a couple of parameters "
@@ -58,6 +61,12 @@ msgstr ""
 
 msgid "Ribbon trails"
 msgstr "Trilhas de fitas"
+
+msgid "Particle ribbon"
+msgstr "Fita de partículas"
+
+msgid "Important ribbon mesh parameters"
+msgstr "Parâmetros importantes da malha da fita"
 
 msgid ""
 "The simplest type of particle trail is the ribbon trail. Navigate to the "
@@ -119,6 +128,9 @@ msgstr ""
 "comprimento de cada seção. Multiplique este valor pelo número de seções para "
 "saber o comprimento total da trilha."
 
+msgid "Particle ribbon sections"
+msgstr "Seções da fita de partículas"
+
 msgid ""
 "3 sections, 1m section length (left) vs. 12 sections, 0.25m section length "
 "(right). Notice how the total length of the trails stays the same."
@@ -144,6 +156,9 @@ msgstr ""
 "exata da curva, com o valor da curva em ``0.0`` na cabeça da trilha e o "
 "valor da curva em ``1.0`` na cauda da trilha."
 
+msgid "Particle ribbon curves"
+msgstr "Curvas da fita de partículas"
+
 msgid ""
 "Particle trails shaped by different curves. The trails move from left to "
 "right."
@@ -164,6 +179,9 @@ msgstr ""
 "seção adiciona mais vértices aos lados da trilha para que ela possa seguir a "
 "curva mais de perto."
 
+msgid "Particle ribbon segments"
+msgstr "Segmentos da fita de partículas"
+
 msgid ""
 "Particle trail shape smoothness: 1 segment per section (top), 12 segments "
 "per section (bottom)"
@@ -182,6 +200,9 @@ msgstr ""
 "As trilhas de tubo compartilham muitas de suas propriedades com as trilhas "
 "de fita. A grande diferença entre elas é que as trilhas de tubo emitem "
 "malhas cilíndricas em vez de quads."
+
+msgid "Particle tube trails"
+msgstr "Trilhas tubulares de partículas"
 
 msgid "Tube trails emit cylindrical particles"
 msgstr "As trilhas de tubo emitem partículas cilíndricas"
@@ -203,6 +224,9 @@ msgstr ""
 "``Material`` e habilite ``Use Particle Trails`` no grupo de propriedades "
 "``Transform``. As partículas agora devem estar sendo emitidas em trilhas "
 "longas e cilíndricas."
+
+msgid "Particle tube"
+msgstr "Tubo de partículas"
 
 msgid "Important tube mesh parameters"
 msgstr "Parâmetros importantes da malha tubular"
@@ -253,6 +277,9 @@ msgstr ""
 "em ``0.0`` na cabeça da trilha e o valor da curva em ``1.0`` na cauda da "
 "trilha."
 
+msgid "Particle tubes"
+msgstr "Tubos de partículas"
+
 msgid ""
 "Particle tube trails with a custom curve shape: 4 radial steps, 3 sections, "
 "1 section ring (left), 12 radial steps, 9 sections, 3 section rings (right)"
@@ -276,6 +303,9 @@ msgstr ""
 "direção. Isso pode causar muitos artefatos de renderização. Defina a "
 "propriedade como ``Y to Velocity`` e cada rastro de partícula manterá seu "
 "eixo Y alinhado na direção do seu movimento."
+
+msgid "Particle tubes aligned"
+msgstr "Tubos de partículas alinhados"
 
 msgid ""
 "Particle tube trails without alignment (left) and with Y-axis aligned to "

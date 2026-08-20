@@ -291,8 +291,9 @@ msgstr ""
 msgid "Global built-ins"
 msgstr "全域內建變數"
 
-msgid "Global built-ins are available everywhere, including custom functions."
-msgstr "全域內建變數可於任何地方使用，包括自訂函式。"
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr "全域內建變數可於任何地方使用，包括自訂函式中。"
 
 msgid "Built-in"
 msgstr "內建變數"
@@ -380,15 +381,6 @@ msgid ""
 msgstr ""
 "在產生實體（instancing）時，``INSTANCE_CUSTOM`` 變數包含自訂實例資料。用於粒"
 "子時內容通常如下："
-
-msgid "**x**: Rotation angle in radians."
-msgstr "**x**：旋轉角度，單位為弧度。"
-
-msgid "**y**: Phase during lifetime (``0.0`` to ``1.0``)."
-msgstr "**y**：生命週期進度階段（0.0 ~ 1.0）。"
-
-msgid "**z**: Animation frame."
-msgstr "**z**：動畫影格索引。"
 
 msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr "in vec2 **VIEWPORT_SIZE**"
@@ -863,12 +855,6 @@ msgstr ""
 "在現有鏡面反射上新增小範圍的高光。如有使用，Godot 會自動計算 Clearcoat（透明"
 "漆層）。"
 
-msgid "out float **CLEARCOAT_GLOSS**"
-msgstr "out float **CLEARCOAT_GLOSS**"
-
-msgid "Gloss of clearcoat. If used, Godot calculates clearcoat."
-msgstr "Clearcoat 光澤度。如有使用，Godot 會自動計算 Clearcoat。"
-
 msgid "out float **ANISOTROPY**"
 msgstr "out float **ANISOTROPY**"
 
@@ -907,11 +893,6 @@ msgstr "次表面散射穿透深度，值越高效果越深入物件內部。"
 
 msgid "out float **SSS_TRANSMITTANCE_BOOST**"
 msgstr "out float **SSS_TRANSMITTANCE_BOOST**"
-
-msgid ""
-"Boosts the subsurface scattering transmittance if set above ``0.0``. This "
-"makes the effect show up even on directly lit surfaces"
-msgstr "如設為大於 ``0.0`` ，會加強次表面散射穿透，讓效果即使在直射光下也可見"
 
 msgid "inout vec3 **BACKLIGHT**"
 msgstr "inout vec3 **BACKLIGHT**"

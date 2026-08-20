@@ -11,6 +11,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Process material properties"
+msgstr "Propriedades do material de processamento"
+
+msgid "ParticleProcessMaterial properties"
+msgstr "Propriedades do ParticleProcessMaterial"
+
+msgid "Min, max, and curve properties"
+msgstr "Propriedades mínimas, máximas e curvas"
+
 msgid ""
 "The properties in this material control how particles behave and change over "
 "their lifetime. A lot of them have ``Min``, ``Max``, and ``Curve`` values "
@@ -43,6 +52,9 @@ msgstr ""
 "cenas 3D. Para informações sobre como usá-lo em uma cena 2D, "
 "veja :ref:`doc_particle_process_material_2d`."
 
+msgid "Time"
+msgstr "Tempo"
+
 msgid ""
 "The ``Lifetime Randomness`` property controls how much randomness to apply "
 "to each particle's lifetime. A value of ``0`` means there is no randomness "
@@ -58,6 +70,9 @@ msgstr ""
 "<doc_3d_particles_properties_time>`. Colocar o valor como ``1`` significa "
 "que o tempo de vida de uma partícula é completamente aleatório dentro do "
 "intervalo de [0,0, ``Lifetime``]."
+
+msgid "Particle flags"
+msgstr "Flags de partículas"
 
 msgid ""
 "The ``Align Y`` property aligns each particle's Y-axis with its velocity. "
@@ -107,6 +122,9 @@ msgstr ""
 msgid "Spawn"
 msgstr "Gerar"
 
+msgid "Emission shape"
+msgstr "Forma de emissão"
+
 msgid ""
 "Particles can emit from a single point in space or in a way that they fill "
 "out a shape. The ``Shape`` property controls that shape. ``Point`` is the "
@@ -125,12 +143,21 @@ msgstr ""
 "formas. ``Sphere Surface`` funciona como ``Sphere``, mas em vez de preenchê-"
 "la, todas as partículas surgem na superfície da esfera."
 
+msgid "Simple particle emission shapes"
+msgstr "Formas simples de emissão de partículas"
+
 msgid ""
 "Particles emitting from a point (left), in a sphere (middle), and in a box "
 "(right)"
 msgstr ""
 "Partículas emitidas de um ponto (esquerda), em uma esfera (meio) e em uma "
 "caixa (direita)"
+
+msgid "Ring-shaped particle system"
+msgstr "Sistema de partículas em forma de anel"
+
+msgid "A ring-shaped particle system"
+msgstr "Um sistema de partículas em forma de anel"
 
 msgid ""
 "The ``Ring`` emission shape makes particles emit in the shape of a ring. You "
@@ -263,6 +290,9 @@ msgstr ""
 "para as propriedades de velocidade e aceleração abaixo, então vamos dar uma "
 "olhada nelas a seguir."
 
+msgid "Initial velocity"
+msgstr "Velocidade inicial"
+
 msgid ""
 "While the ``Direction`` property controls a particle's movement direction, "
 "the ``Initial Velocity`` controls how fast it goes. It's separated into "
@@ -281,6 +311,9 @@ msgstr ""
 "descrito acima <#process-material-properties>`__, as partículas começam a se "
 "mover. A direção é multiplicada por esses valores, então você pode fazer as "
 "partículas se moverem na direção oposta definindo uma velocidade negativa."
+
+msgid "Accelerations"
+msgstr "Acelerações"
 
 msgid "Gravity"
 msgstr "Gravidade"
@@ -313,6 +346,9 @@ msgid ""
 msgstr ""
 "Esquerda: (X=0,Y=-9,8,Z=0), meio: (X=0,Y=9,8,Z=0), direita: (X=4,Y=2,Z=0)."
 
+msgid "Angular velocity"
+msgstr "Velocidade angular"
+
 msgid ""
 "``Angular Velocity`` controls a particle's speed of rotation `as described "
 "above <#process-material-properties>`__. You can reverse the direction by "
@@ -333,6 +369,9 @@ msgid ""
 "The `Damping <#damping>`__ property has no effect on the angular velocity."
 msgstr ""
 "A propriedade `Damping <#damping>`__ não tem efeito na velocidade angular."
+
+msgid "Linear acceleration"
+msgstr "Aceleração linear"
 
 msgid ""
 "A particle's velocity is a constant value: once it's set, it doesn't change "
@@ -371,6 +410,9 @@ msgstr ""
 "naquele momento, ela continuará se movendo com essa velocidade até que a "
 "aceleração seja alterada novamente."
 
+msgid "Radial acceleration"
+msgstr "Aceleração radial"
+
 msgid ""
 "The ``Radial Accel`` property adds a gravity-like force to all particles, "
 "with the origin of that force at the particle system's current location. "
@@ -390,6 +432,12 @@ msgstr "Diferentes valores para aceleração radial de partículas"
 
 msgid "Negative (left) and positive (right) radial acceleration"
 msgstr "Aceleração radial negativa (esquerda) e positiva (direita)"
+
+msgid "Tangential acceleration"
+msgstr "Aceleração tangencial"
+
+msgid "Tangents on a circle"
+msgstr "Tangentes em um círculo"
 
 msgid ""
 "This property adds particle acceleration in the direction of the tangent to "
@@ -415,6 +463,9 @@ msgstr ""
 "ângulo reto em relação ao raio do círculo no ponto de toque. Um círculo no "
 "plano XZ do sistema de partículas é o círculo que você vê quando olha "
 "diretamente para o sistema de partículas de cima."
+
+msgid "Tangential acceleration from above"
+msgstr "Aceleração tangencial vista de cima"
 
 msgid ""
 "``Tangential Accel`` is always limited to that plane and never move "
@@ -453,6 +504,9 @@ msgstr ""
 "aceleração total seja maior que o efeito de amortecimento. Se não for, a "
 "partícula continuará desacelerando até que não se mova mais. Quanto maior o "
 "valor, menos tempo leva para parar completamente as partículas."
+
+msgid "Attractor interaction"
+msgstr "Interação com atratores"
 
 msgid ""
 "If you want the particle system to interact with :ref:`particle attractors "
@@ -507,6 +561,9 @@ msgstr ""
 msgid "Particle color ramp"
 msgstr "Rampa de cores de partículas"
 
+msgid "Setting up a color ramp"
+msgstr "Configurando uma rampa de cores"
+
 msgid ""
 "There are two ``Ramp`` properties in the ``Color`` group. These allow you to "
 "define a range of colors that are used to set the particle's color. The "
@@ -541,6 +598,9 @@ msgstr ""
 "mover o marcador com o mouse e excluí-lo clicando com o botão direito do "
 "mouse. Quando um marcador está selecionado, você pode usar o seletor de "
 "cores ao lado do intervalo para mudar a cor dele."
+
+msgid "Hue variation"
+msgstr "Variação de matiz"
 
 msgid ""
 "Like the ``Color`` property, ``Hue Variation`` controls a particle's color, "
@@ -612,6 +672,9 @@ msgstr ""
 "usá-las para partículas animadas como fumaça ou fogo. Estes são os passos "
 "para criar um sistema de partículas animado:"
 
+msgid "A sprite sheet"
+msgstr "Uma folha de sprites"
+
 msgid "An 8x8 animated smoke sprite sheet"
 msgstr "Uma spritesheet de fumaça animada 8x8"
 
@@ -670,6 +733,9 @@ msgstr ""
 "uma partícula recém-gerada. Por padrão, será sempre a primeira imagem na "
 "sequência. Você pode adicionar alguma variedade alterando ``Offset Min`` e "
 "``Offset Max`` para randomizar a posição inicial."
+
+msgid "Animated particles"
+msgstr "Partículas animadas"
 
 msgid "Three different particle systems using the same smoke sprite sheet"
 msgstr ""
@@ -759,6 +825,9 @@ msgstr ""
 "partículas. Você pode encontrar uma explicação detalhada sobre elas na seção "
 "de :ref:`particle turbulence <doc_3d_particles_turbulence>`."
 
+msgid "Collision"
+msgstr "Colisão"
+
 msgid ""
 "The ``Mode`` property controls how and if emitters collide with particle "
 "collision nodes. Set it to ``Disabled`` to disable any collision for this "
@@ -809,6 +878,12 @@ msgstr ""
 "Você pode aprender mais sobre colisões de partículas na "
 "seção :ref:`Collisions <doc_3d_particles_collision>` deste manual."
 
+msgid "Sub-emitter"
+msgstr "Subemissor"
+
+msgid "Sub-emitter modes"
+msgstr "Modos de subemissor"
+
 msgid "The available sub-emitter modes"
 msgstr "Os modos subemitter disponíveis"
 
@@ -853,6 +928,9 @@ msgstr ""
 "Consulte a seção :ref:`Sub-emitters <doc_3d_particles_subemitters>` neste "
 "manual para uma explicação detalhada sobre como adicionar um sub-emissor a "
 "um sistema de partículas."
+
+msgid "Customizing the process material"
+msgstr "Personalizando o material de processamento"
 
 msgid ""
 "If you need to change or implement new behaviors in shader code, you can do "

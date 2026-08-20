@@ -67,9 +67,6 @@ msgid ""
 "generation:"
 msgstr "为 scons 提供额外的参数，以请求生成解决方案文件。"
 
-msgid "Add `vsproj=yes dev_build=yes` to the scons command"
-msgstr "在 scons 命令后面加上 `vsproj=yes dev_build=yes`"
-
 msgid ""
 "The ``vsproj`` parameter signals that you want Visual Studio solution "
 "generated. The ``dev_build`` parameter ensures the debug symbols are "
@@ -154,23 +151,6 @@ msgstr ""
 
 msgid "Debug visualizers"
 msgstr "调试观察器"
-
-msgid ""
-"Debug visualizers customize how complex data structures are displayed during "
-"debugging. For Windows \"natvis\" (short for \"Native Visualization\") built-"
-"in with Godot are automatically used. For other operating systems, similar "
-"functionality can be setup manually."
-msgstr ""
-"调试可视化器（Debug visualizers）可以自定义调试时复杂数据结构的显示方式。在 "
-"Windows 上，Godot 内置的 \"natvis\" （'Native Visualization' 的缩写）会自动生"
-"效。而在其他操作系统上，类似的功能则需要手动进行设置。"
-
-msgid ""
-"Please follow `RIDER-123535 <https://youtrack.jetbrains.com/issue/"
-"RIDER-123535/nix-Debug-Godot-Cpp-from-Rider-pretty-printers-usability>`_."
-msgstr ""
-"请关注 `RIDER-123535 <https://youtrack.jetbrains.com/issue/RIDER-123535/nix-"
-"Debug-Godot-Cpp-from-Rider-pretty-printers-usability>`_。"
 
 msgid "Unit testing"
 msgstr "单元测试"

@@ -11,5 +11,78 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0102: The type of the exported member is not supported"
+msgstr "GD0102: O tipo do membro exportado não é suportado"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0102"
+msgstr "GD0102"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Breaking - If the member type is changed"
+msgstr "Altera a compatibilidade (breaking) - Se o tipo do membro for alterado"
+
+msgid "Non-breaking - If the ``[Export]`` attribute is removed"
+msgstr ""
+"Não altera a compatibilidade (non-breaking) - Se o atributo ``[Export]`` for "
+"removido"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"An unsupported type is specified for a member annotated with the "
+"``[Export]`` attribute when a :ref:`Variant-compatible type "
+"<c_sharp_variant_compatible_types>` is expected."
+msgstr ""
+"Um tipo não suportado foi especificado para um membro anotado com o atributo "
+"``[Export]`` quando um :ref:`tipo compatível com Variant "
+"<c_sharp_variant_compatible_types>` era esperado."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid ""
+"Every exported member must be Variant-compatible so it can be marshalled by "
+"the engine."
+msgstr ""
+"Todo membro exportado deve ser compatível com Variant para que possa passar "
+"pelo marshalling do motor."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, change the member's type to be Variant-"
+"compatible or remove the ``[Export]`` attribute."
+msgstr ""
+"Para corrigir uma violação desta regra, altere o tipo do membro para ser "
+"compatível com Variant ou remova o atributo ``[Export]``."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Members with types that can't be "
+"marshalled will result in runtime errors."
+msgstr ""
+"Não suprima um aviso desta regra. Membros com tipos que não podem passar por "
+"marshalling resultarão em erros em tempo de execução."

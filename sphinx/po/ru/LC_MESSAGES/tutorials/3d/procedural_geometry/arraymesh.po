@@ -275,6 +275,16 @@ msgid "Put together, the full code looks like:"
 msgstr "В совокупности полный код выглядит следующим образом:"
 
 msgid ""
+"The code that goes in the middle can be whatever you want. Below we will "
+"present some example code for generating shapes, starting with a rectangle."
+msgstr ""
+"Код, который находится в середине, может быть любым. Ниже мы приведём пример "
+"кода для генерации фигур, начиная с прямоугольника."
+
+msgid "Generating a rectangle"
+msgstr "Генерация прямоугольника"
+
+msgid ""
 "Since we are using ``Mesh.PRIMITIVE_TRIANGLES`` to render, we will construct "
 "a rectangle with triangles."
 msgstr ""
@@ -341,11 +351,23 @@ msgstr ""
 "есть с индексами 0, 2 и 1, в массиве ``verts``. Эти значения индексов и "
 "определяет массив ``indices``."
 
+msgid "``verts[Index]``"
+msgstr "``verts[Index]``"
+
+msgid "``uvs[Index]``"
+msgstr "``uvs[Index]``"
+
+msgid "``normals[Index]``"
+msgstr "``normals[Index]``"
+
 msgid "(0, 0, 0)"
 msgstr "(0, 0, 0)"
 
 msgid "(0, 0)"
 msgstr "(0, 0)"
+
+msgid "Vector3.UP"
+msgstr "Vector3.UP"
 
 msgid "(0, 0, 1)"
 msgstr "(0, 0, 1)"
@@ -365,8 +387,14 @@ msgstr "(1, 0, 1)"
 msgid "(1, 1)"
 msgstr "(1, 1)"
 
+msgid "Put together, the rectangle generation code looks like:"
+msgstr "В совокупности код генерации прямоугольника выглядит так:"
+
 msgid "For a more complex example, see the sphere generation section below."
 msgstr "Более сложный пример приведен в разделе создание сферы ниже."
+
+msgid "Generating a sphere"
+msgstr "Генерация сферы"
 
 msgid ""
 "Here is sample code for generating a sphere. Although the code is presented "

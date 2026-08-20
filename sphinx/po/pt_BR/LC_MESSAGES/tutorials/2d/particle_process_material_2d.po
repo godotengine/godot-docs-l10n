@@ -11,6 +11,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "ParticleProcessMaterial 2D Usage"
+msgstr "Uso do ParticleProcessMaterial em 2D"
+
+msgid "Process material properties"
+msgstr "Propriedades do material de processamento"
+
+msgid "ParticleProcessMaterial properties"
+msgstr "Propriedades do ParticleProcessMaterial"
+
+msgid "Min, max, and curve properties"
+msgstr "Propriedades mínimas, máximas e curvas"
+
 msgid ""
 "The properties in this material control how particles behave and change over "
 "their lifetime. A lot of them have ``Min``, ``Max``, and ``Curve`` values "
@@ -43,6 +55,9 @@ msgstr ""
 "cenas 2D. Para obter informações sobre como usá-lo em uma cena 3D, "
 "consulte :ref:`doc_process_material_properties`."
 
+msgid "Lifetime Randomness"
+msgstr "Aleatoriedade do tempo de vida"
+
 msgid ""
 "The ``Lifetime Randomness`` property controls how much randomness to apply "
 "to each particle's lifetime. A value of ``0`` means there is no randomness "
@@ -59,6 +74,9 @@ msgstr ""
 "que o tempo de vida de uma partícula é completamente aleatório dentro do "
 "intervalo de [0,0, ``Lifetime``]."
 
+msgid "Particle Flags"
+msgstr "Flags de partículas"
+
 msgid "Spawn"
 msgstr "Gerar"
 
@@ -71,6 +89,9 @@ msgid ""
 msgstr ""
 "Determina o ângulo inicial da partícula (em graus). Este parâmetro é "
 "principalmente útil randomizado."
+
+msgid "Velocity"
+msgstr "Velocidade"
 
 msgid "Direction"
 msgstr "Direção"
@@ -127,8 +148,18 @@ msgstr ""
 "pixels/seg). A velocidade pode mais tarde ser modificada pela gravidade ou "
 "outras acelerações (conforme descrito mais adiante)."
 
+msgid "Animated Velocity"
+msgstr "Velocidade animada"
+
 msgid "Angular Velocity"
 msgstr "Velocidade Angular"
+
+msgid ""
+"Angular velocity is the speed at which particles rotate around their center "
+"(in degrees/sec)."
+msgstr ""
+"A velocidade angular é a velocidade com que as partículas giram em torno do "
+"próprio centro (em graus/segundo)."
 
 msgid "Orbit Velocity"
 msgstr "Velocidade Orbital"
@@ -137,6 +168,9 @@ msgid "Orbit velocity is used to make particles turn around their center."
 msgstr ""
 "A velocidade da órbita é usada para fazer as partículas girarem em torno de "
 "seu centro."
+
+msgid "Accelerations"
+msgstr "Acelerações"
 
 msgid "Gravity"
 msgstr "Gravidade"
@@ -191,11 +225,17 @@ msgstr "Escala"
 msgid "Determines the initial scale of the particles."
 msgstr "Determina a escala inicial das partículas."
 
+msgid "Color Curves"
+msgstr "Curvas de cor"
+
 msgid "Color"
 msgstr "Cor"
 
 msgid "Used to change the color of the particles being emitted."
 msgstr "Usado para alterar a cor das partículas que estão sendo emitidas."
+
+msgid "Hue Variation"
+msgstr "Variação de matiz"
 
 msgid ""
 "The ``Variation`` value sets the initial hue variation applied to each "
@@ -299,6 +339,23 @@ msgstr ""
 msgid "Emission Shapes"
 msgstr "Formas de Emissão"
 
+msgid ""
+"ParticleProcessMaterials allow you to set an Emission Mask, which dictates "
+"the area and direction in which particles are emitted. These can be "
+"generated from textures in your project."
+msgstr ""
+"Os ParticleProcessMaterials permitem definir uma Máscara de Emissão, que "
+"determina a área e a direção em que as partículas são emitidas. Essas "
+"máscaras podem ser geradas a partir de texturas do seu projeto."
+
+msgid ""
+"Ensure that a ParticleProcessMaterial is set, and the GPUParticles2D node is "
+"selected. A \"Particles\" menu should appear in the Toolbar:"
+msgstr ""
+"Certifique-se de que um ParticleProcessMaterial esteja definido e que o nó "
+"GPUParticles2D esteja selecionado. Um menu chamado \"Particles\" deverá "
+"aparecer na barra de ferramentas:"
+
 msgid "Open it and select \"Load Emission Mask\":"
 msgstr ""
 "Abra-a e selecione \"Load Emission Mask\" (Carregar Máscara de Emissões):"
@@ -370,6 +427,9 @@ msgstr ""
 "Uma imagem não deve ser adicionada a ``Point Texture`` ou ``Color Texture`` "
 "diretamente. O menu \"Load Emission Mask\" deve ser sempre utilizado em seu "
 "lugar."
+
+msgid "Customizing the process material"
+msgstr "Personalizando o material de processamento"
 
 msgid ""
 "If you need to change or implement new behaviors in shader code, you can do "

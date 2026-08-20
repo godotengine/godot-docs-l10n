@@ -67,11 +67,6 @@ msgstr "「頭戴式」裝置，例如 Meta Quest、Valve Index 或 Magic Leap�
 msgid "``Handheld`` devices such as phones."
 msgstr "「手持式」裝置，例如智慧型手機。"
 
-msgid ""
-"If the device on which you run your game does not match the selection here, "
-"OpenXR will fail to initialise."
-msgstr "若執行遊戲的裝置與此處選擇的類型不符，OpenXR 將無法初始化。"
-
 msgid "View Configuration"
 msgstr "視圖配置"
 
@@ -449,18 +444,6 @@ msgstr "可選擇要記錄哪些偵錯訊息。"
 
 msgid "Hand Tracking"
 msgstr "手部追蹤"
-
-msgid ""
-"This enables the hand tracking extension when supported by the device used. "
-"This is on by default for legacy reasons. The hand tracking extension "
-"provides access to data that allows you to visualise the user's hands with "
-"correct finger positions. Depending on platform capabilities the hand "
-"tracking data can be inferred from controller inputs, come from data gloves, "
-"come from optical hand tracking sensors or any other applicable source."
-msgstr ""
-"啟用後會在裝置支援時開啟手部追蹤擴充功能（預設為開啟，為了相容舊專案）。此擴"
-"充功能能取得資料，讓你能正確顯示用戶的手部與手指位置。依平台能力不同，手部追"
-"蹤資料可從控制器、資料手套、光學手部追蹤感測器或其他來源推算取得。"
 
 msgid "If your game only supports controllers this should be turned off."
 msgstr "若你的遊戲僅支援控制器，建議關閉此功能。"

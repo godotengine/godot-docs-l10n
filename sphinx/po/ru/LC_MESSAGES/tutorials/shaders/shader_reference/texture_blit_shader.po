@@ -1,0 +1,116 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Render modes"
+msgstr "Режимы визуализации"
+
+msgid "Render mode"
+msgstr "Режим рендеринга"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "**blend_disabled**"
+msgstr "**blend_disabled**"
+
+msgid "**blend_mix**"
+msgstr "**blеnd_mix**"
+
+msgid "**blend_add**"
+msgstr "**blеnd_add**"
+
+msgid "Additive blend mode."
+msgstr "Аддитивный режим наложения."
+
+msgid "**blend_sub**"
+msgstr "**blеnd_sub**"
+
+msgid "Subtractive blend mode."
+msgstr "Режим наложения с вычитанием."
+
+msgid "**blend_mul**"
+msgstr "**blеnd_mul**"
+
+msgid "Multiplicative blend mode."
+msgstr "Режим наложения с умножением."
+
+msgid "Built-ins"
+msgstr "Встроенные функции"
+
+msgid ""
+"Values marked as ``in`` are read-only. Values marked as ``out`` can "
+"optionally be written to and will not necessarily contain sensible values. "
+"Values marked as ``inout`` provide a sensible default value, and can "
+"optionally be written to. Samplers cannot be written to so they are not "
+"marked."
+msgstr ""
+"Значения, отмеченные как ``in``, доступны только для чтения. Значения, "
+"отмеченные как ``out``, могут быть записаны и не обязательно содержат "
+"осмысленные значения. Значения, отмеченные как ``inout``, предоставляют "
+"осмысленное значение по умолчанию и могут быть записаны. Сэмплеры не могут "
+"быть записаны, поэтому они не отмечены."
+
+msgid "Global built-ins"
+msgstr "Глобальные встроенные функции"
+
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr ""
+"Глобальные встроенные функции доступны везде, в том числе и в "
+"пользовательских функциях."
+
+msgid "Built-in"
+msgstr "Встроенный"
+
+msgid "in float **TIME**"
+msgstr "в плавающем **TIME**"
+
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"Глобальное время с момента запуска движка в секундах. Повторяется каждые "
+"``3,600`` секунд (это можно изменить с помощью параметра :ref:`rollover "
+"<class_ProjectSettings_property_rendering/limits/time/time_rollover_secs>`). "
+"На него влияет :ref:`time_scale <class_Engine_property_time_scale>`, но не "
+"пауза. Если вам нужна переменная ``TIME``, не зависящая от масштаба времени, "
+"добавьте свою собственную :ref:`глобальную униформу шейдера "
+"<doc_shading_language_global_uniforms>` и обновляйте её каждый кадр."
+
+msgid "in float **PI**"
+msgstr "в float **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"Константа ``PI`` (``3.141592``). Отношение длины окружности к её диаметру и "
+"количество радиан в полуобороте."
+
+msgid "in float **TAU**"
+msgstr "в float **TAU**"
+
+msgid "in float **E**"
+msgstr "В float **E**"
+
+msgid "in vec4 **FRAGCOORD**"
+msgstr "vec4 **FRAGCOORD**"
+
+msgid "in vec2 **UV**"
+msgstr "vec2 **UV**"

@@ -68,11 +68,6 @@ msgstr ""
 msgid "``Handheld`` devices such as phones."
 msgstr "``Handheld`` 手持设备，例如手机。"
 
-msgid ""
-"If the device on which you run your game does not match the selection here, "
-"OpenXR will fail to initialise."
-msgstr "如果运行游戏的设备与此处不匹配，OpenXR 将无法初始化。"
-
 msgid "View Configuration"
 msgstr "视图配置"
 
@@ -491,20 +486,6 @@ msgstr "仅适用于立体渲染。"
 
 msgid "Hand Tracking"
 msgstr "手部跟踪"
-
-msgid ""
-"This enables the hand tracking extension when supported by the device used. "
-"This is on by default for legacy reasons. The hand tracking extension "
-"provides access to data that allows you to visualise the user's hands with "
-"correct finger positions. Depending on platform capabilities the hand "
-"tracking data can be inferred from controller inputs, come from data gloves, "
-"come from optical hand tracking sensors or any other applicable source."
-msgstr ""
-"当使用的设备支持时，此选项将启用手部追踪扩展。出于历史遗留原因（legacy "
-"reasons），该选项默认是开启的。手部追踪扩展能够提供数据，让你可以按照正确的手"
-"指姿态来可视化（还原）用户的双手。根据平台能力的不同，手部追踪数据可以通过控"
-"制器输入推算得出，也可以来自数据手套、光学手部追踪传感器，或者其他任何适用的"
-"数据源。"
 
 msgid "If your game only supports controllers this should be turned off."
 msgstr "如果你的游戏只支持控制器，这应该被关闭。"

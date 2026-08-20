@@ -114,6 +114,11 @@ msgid "Scene tree editor."
 msgstr "場景樹編輯器。"
 
 msgid ""
+"Built-in script editor. Also supports editing text files and using custom "
+"syntax highlighters."
+msgstr "內建的腳本編輯器。也支援編輯文字檔與使用自定義語法突顯"
+
+msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
@@ -141,11 +146,61 @@ msgstr "即時腳本重載。"
 msgid "Live scene editing."
 msgstr "即時場景編輯。"
 
+msgid ""
+"Changes *will* reflect in the editor and *will* be kept after closing the "
+"running project."
+msgstr "更改*將*反應到編輯器上，並*會*在正在執行的專案關閉後保留。"
+
+msgid "Live camera replication (disabled by default)."
+msgstr "即時相機複製（預設停用）。"
+
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr "移動編輯器中的相機，並在執行中專案內檢視結果。"
 
 msgid "Remote inspector."
 msgstr "遠端檢視器。"
+
+msgid ""
+"Changes *won't* reflect in the editor and *won't* be kept after closing the "
+"running project."
+msgstr "更改將*不會*反應到編輯器上，且關閉正在執行的專案後將*不會*保留。"
+
+msgid ""
+"Run multiple simultaneous project instances from a single editor instance "
+"(useful for client/server testing)."
+msgstr "在一個編輯器實體下同時跑多個專案（測試客戶/伺服器端時很有用）"
+
+msgid ""
+"Optional :ref:`game embedding <doc_game_embedding>` to run the project in a "
+"panel within the editor."
+msgstr ""
+"可選：:ref:`遊戲內嵌 <doc_game_embedding>`，在編輯器裡面的一個面板運行專案"
+
+msgid ""
+"Select 2D and 3D nodes in the project's viewport to inspect them in the "
+"editor."
+msgstr "在專案檢視區中選擇2D 或 3D 的節點以在編輯器中檢視他們。"
+
+msgid ""
+"Move the camera within the project using the 2D and 3D camera overrides."
+msgstr "使用 2D 和 3D 相機覆寫功能在專案中移動相機"
+
+msgid "Supports time scale adjustments, pausing, and frame advance."
+msgstr "支援調整時間縮放、暫停與到下一個影格。"
+
+msgid "Supports muting the project."
+msgstr "支援把專案靜音。"
+
+msgid "Ruler tool to measure distances in 2D and 3D."
+msgstr "可以測量 2D 與 3D 中距離的量測工具。"
+
+msgid "Vertex snapping support in 3D."
+msgstr "3D 頂點吸附功能。"
+
+msgid ""
+"Support for following the selection as it moves in 3D by using Focus "
+"Selection twice."
+msgstr "支援使用「聚焦選擇」兩次以在 3D 中跟隨移動中的已選取物件。"
 
 msgid "Built-in offline class reference documentation."
 msgstr "內寘離線類參攷檔案。"
@@ -157,25 +212,11 @@ msgid "**Plugins:**"
 msgstr "**外掛程式：**"
 
 msgid ""
-"Editor plugins can be downloaded from the :ref:`asset library "
-"<doc_what_is_assetlib>` to extend editor functionality."
-msgstr ""
-"可以從 :ref:`素材庫 <doc_what_is_assetlib>` 中下載編輯器外掛來擴充編輯器的功"
-"能。"
-
-msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
 "使用 GDScript :ref:`自己建立外掛程式 <doc_making_plugins>` ，新增新功能或者加"
 "速你的工作流。"
-
-msgid ""
-":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
-"in the Project Manager and import them directly."
-msgstr ""
-"在專案管理器中， :ref:`從素材庫下載專案 <doc_using_assetlib_editor>` 並直接匯"
-"入。"
 
 msgid "Rendering"
 msgstr "算繪"
@@ -435,7 +476,7 @@ msgstr "使用粗糙度金屬度工作流，支援 ORM 紋理。"
 msgid ""
 "Uses horizon specular occlusion (Filament model) to improve material "
 "appearance."
-msgstr "使用地平綫镜面反射遮蔽（Filament 模型）提升材质外觀。"
+msgstr "使用地平線鏡面反射遮蔽（Filament 模型）提升材質外觀。"
 
 msgid "Normal mapping."
 msgstr "法線貼圖。"
@@ -446,9 +487,6 @@ msgstr "具有基於距離的自動細節級別的視差/浮雕貼圖。"
 
 msgid "Detail mapping for the albedo and normal maps."
 msgstr "反照率和法線貼圖的詳細貼圖。"
-
-msgid "Sub-surface scattering and transmittance."
-msgstr "次表面散射和透射率。"
 
 msgid ""
 "Screen-space refraction with support for material roughness (resulting in "
@@ -1331,16 +1369,6 @@ msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
 msgstr "喚起注意 (在大多數平台上，會使標題列閃爍)。"
 
-msgid "Fullscreen mode."
-msgstr "全螢幕模式。"
-
-msgid ""
-"Uses borderless fullscreen by default on Windows for fast alt-tabbing, but "
-"can optionally use exclusive fullscreen to reduce input lag."
-msgstr ""
-"在 Windows 上，預設情況下使用無邊框全屏進行快速切換，但也可以選擇使用獨佔全屏"
-"來減少輸入滯後。"
-
 msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "無邊框視窗 (可用於全螢幕或非全螢幕)。"
 
@@ -1379,24 +1407,6 @@ msgstr "支援以第三方模組來顯示廣告。"
 
 msgid "XR support (AR and VR)"
 msgstr "支援 XR (AR 與 VR)"
-
-msgid "Out of the box :ref:`support for OpenXR <doc_setting_up_xr>`."
-msgstr "開箱即用的 :ref:`OpenXR 支援 <doc_setting_up_xr>` 。"
-
-msgid ""
-"Including support for popular desktop headsets like the Valve Index, WMR "
-"headsets, and Quest over Link."
-msgstr "包含對 Meta Quest、Valve Index 等流行頭戴式裝置的支援。"
-
-msgid ""
-"Support for :ref:`Android-based headsets <doc_deploying_to_android>` using "
-"OpenXR through a plugin."
-msgstr ""
-"透過外掛程式支援使用 OpenXR 的 :ref:`Android 平台頭戴式裝置 "
-"<doc_deploying_to_android>`。"
-
-msgid "Out of the box limited support for visionOS Apple headsets."
-msgstr "對 Apple 的 visionOS 頭戴式裝置提供開箱即用但有限的支援。"
 
 msgid ""
 "Currently only exporting an application for use on a flat plane within the "

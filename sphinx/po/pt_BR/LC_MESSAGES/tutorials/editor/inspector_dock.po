@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Inspector Dock"
+msgstr "Aba de Inspetor"
+
 msgid ""
 "The Inspector dock lists all properties of an object, resource, or node. It "
 "will update the list of the properties as you select a different node from "
@@ -33,6 +36,18 @@ msgstr ""
 msgid "Usage"
 msgstr "Uso"
 
+msgid ""
+"If the inspector dock is visible, clicking on a node in the scene tree will "
+"automatically display its properties. If it is not visible, you can show it "
+"by navigating to **Editor > Editor Docks > Inspector**."
+msgstr ""
+"Se o painel Inspetor estiver visível, clicar em um nó na árvore da cena "
+"exibirá automaticamente suas propriedades. Caso não esteja visível, você "
+"pode mostrá-lo navegando até **Editor > Painéis do Editor > Inspetor**."
+
+msgid "At the top of the dock are the file and navigation buttons."
+msgstr "No topo do painel estão os botões de arquivo e navegação."
+
 msgid "From left to right:"
 msgstr "Da esquerda para a direita:"
 
@@ -45,11 +60,17 @@ msgstr ""
 msgid "Opens a resource from the FileSystem to edit."
 msgstr "Abre um recurso do Sistema de Arquivos para edição."
 
+msgid "Saves the currently edited resource to disk."
+msgstr "Salva o recurso atualmente editado no disco."
+
 msgid "Provides options to:"
 msgstr "Oferece opções para:"
 
 msgid "**Edit Resource from Clipboard** by pasting the copied resource."
 msgstr "**Editar Recurso da Área de Transferência** colando o recurso copiado."
+
+msgid "**Copy Resource** to clipboard."
+msgstr "**Copiar Recurso** para a área de transferência."
 
 msgid "**Show in FileSystem** if the resource is already saved."
 msgstr "**Mostrar no Sistema de Arquivos** se o recurso já estiver salvo."
@@ -261,13 +282,7 @@ msgstr ""
 "afeta o outro. Clicar nessa opção torna cada sub-recurso usado neste nó "
 "único, separado dos demais nós."
 
-msgid ""
-"If a node has exported variables in its attached script, you will also see "
-"these in the inspector. The first image in this section has one for the "
-"Player node: `Action Suffix`. See :ref:`doc_gdscript_exports` for more on "
-"this topic."
+msgid "Refer to :ref:`doc_customizing_editor` for dock customization options."
 msgstr ""
-"Se um nó tiver variáveis exportadas em seu script anexado, você também as "
-"verá no inspetor. A primeira imagem nesta seção mostra uma para o nó Player: "
-"`Action Suffix`. Veja :ref:`doc_gdscript_exports` para mais informações "
-"sobre esse tópico."
+"Consulte :ref:`doc_customizing_editor` para opções de personalização de abas "
+"(docks)."

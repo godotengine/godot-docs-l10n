@@ -121,11 +121,11 @@ msgstr "若要新增編譯器搜尋的 include 目錄，可將其附加至建置
 
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
-"to clone `env` first, so it won't add those flags to whole Godot build "
-"(which can cause errors). Example `SCsub` with custom flags:"
+"to clone ``env`` first, so it won't add those flags to whole Godot build "
+"(which can cause errors). Example ``SCsub`` with custom flags:"
 msgstr ""
-"若要為模組新增自訂編譯器旗標，請先複製 `env`，以避免將旗標加入整個 Godot 建置"
-"（否則可能導致錯誤）。以下是含自訂旗標的 `SCsub` 範例："
+"若要為模組新增自訂編譯器旗標，須先複製 ``env``，避免影響整個 Godot 編譯（否則"
+"可能導致錯誤）。以下為帶有自訂旗標的 ``SCsub`` 範例："
 
 msgid "The final module should look like this:"
 msgstr "最終的模組結構應如下："

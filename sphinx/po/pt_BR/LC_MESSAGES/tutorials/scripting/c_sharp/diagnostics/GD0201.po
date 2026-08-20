@@ -11,5 +11,93 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0201: The name of the delegate must end with 'EventHandler'"
+msgstr "GD0201: O nome do delegate deve terminar com 'EventHandler'"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0201"
+msgstr "GD0201"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Breaking"
+msgstr "Quebra compatibilidade (Breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"A delegate annotated with the ``[Signal]`` attribute has a name that doesn't "
+"end with 'EventHandler'."
+msgstr ""
+"Um delegate anotado com o atributo ``[Signal]`` possui um nome que não "
+"termina com 'EventHandler'."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid ""
+"Godot source generators will generate C# events using the name of the "
+"delegate with the 'EventHandler' suffix removed. Adding the 'EventHandler' "
+"suffix to the name of delegates used in events is a `.NET naming convention "
+"<https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/names-"
+"of-classes-structs-and-interfaces#names-of-common-types>`_."
+msgstr ""
+"Os geradores de código-fonte do Godot gerarão eventos C# usando o nome do "
+"delegate com o sufixo 'EventHandler' removido. Adicionar o sufixo "
+"'EventHandler' ao nome de delegates usados em eventos é uma `convenção de "
+"nomenclatura do .NET <https://learn.microsoft.com/en-us/dotnet/standard/"
+"design-guidelines/names-of-classes-structs-and-interfaces#names-of-common-"
+"types>`_."
+
+msgid ""
+"Using a suffix for the delegate allows the generated event to use the name "
+"without the suffix avoiding a naming conflict."
+msgstr ""
+"Usar um sufixo para o delegate permite que o evento gerado use o nome sem o "
+"sufixo, evitando um conflito de nomenclatura."
+
+msgid ""
+"Take a look at the :ref:`C# signals <doc_c_sharp_signals>` documentation for "
+"more information about how to declare and use signals."
+msgstr ""
+"Dê uma olhada na documentação de :ref:`sinais em C# <doc_c_sharp_signals>` "
+"para mais informações sobre como declarar e usar sinais."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, add 'EventHandler' to the end of the "
+"delegate name."
+msgstr ""
+"Para corrigir uma violação desta regra, adicione 'EventHandler' ao final do "
+"nome do delegate."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Signal delegates without the "
+"suffix will be ignored by the source generator, so the signal won't be "
+"registered."
+msgstr ""
+"Não suprima um aviso desta regra. Delegates de sinal sem o sufixo serão "
+"ignorados pelo gerador de código-fonte, portanto o sinal não será registrado."

@@ -91,22 +91,6 @@ msgstr ""
 "**Compatibility**."
 
 msgid ""
-"The *rendering driver* tells the GPU what to do, using a graphics API. Godot "
-"can use the **OpenGL**, **Vulkan**, **Direct3D 12**, and **Metal** rendering "
-"drivers. Not every GPU supports every rendering driver, and therefore not "
-"every GPU supports all renderers. Vulkan, Direct3D 12, and Metal are modern, "
-"low-level graphics APIs, and requires newer hardware. OpenGL is an older "
-"graphics API that runs on most hardware."
-msgstr ""
-"Il *driver di rendering* indica alla GPU cosa fare, tramite un'API grafica. "
-"Godot può utilizzare i driver di rendering **OpenGL**, **Vulkan**, "
-"**Direct3D 12** e **Metal**. Non tutte le GPU supportano tutti i driver di "
-"rendering e, di conseguenza, non tutte le GPU supportano tutti i renderer. "
-"Vulkan, Direct3D 12 e Metal sono API grafiche moderne e di basso livello, "
-"che richiedono hardware più recente. OpenGL è un'API grafica più vecchia, "
-"che funziona sulla maggioranza dell'hardware."
-
-msgid ""
 "RenderingDevice is a *rendering backend*, an abstraction layer between the "
 "renderer and the rendering driver. It is used by the Forward+ and Mobile "
 "renderers, and these renderers are sometimes called \"RenderingDevice-based "
@@ -119,14 +103,6 @@ msgstr ""
 
 msgid "Choosing a renderer"
 msgstr "Scegliere un renderer"
-
-msgid ""
-"Choosing a renderer is a complex question, and depends on your hardware and "
-"the which platforms you are developing for. As a starting point:"
-msgstr ""
-"La scelta di un renderer è una questione complessa, che dipende "
-"dall'hardware e dalle piattaforme per cui si sviluppa. Come punto di "
-"partenza:"
 
 msgid "Choose **Forward+** if:"
 msgstr "Scegli **Forward+** se:"
@@ -149,10 +125,6 @@ msgstr "Desideri utilizzare le funzionalità di rendering più avanzate."
 msgid "Choose **Mobile** if:"
 msgstr "Scegli **Mobile** se:"
 
-msgid "You are developing for newer mobile devices, desktop XR, or desktop."
-msgstr ""
-"Stai sviluppando per dispositivi mobili più recenti, desktop XR o desktop."
-
 msgid ""
 "You want to use advanced rendering features, subject to the limitations of "
 "mobile hardware."
@@ -162,15 +134,6 @@ msgstr ""
 
 msgid "Choose **Compatibility** if:"
 msgstr "Scegli **Compatibilità** se:"
-
-msgid ""
-"You are developing for older mobile devices, older desktop devices, or "
-"standalone XR. The Compatibility renderer supports the widest range of "
-"hardware."
-msgstr ""
-"Stai sviluppando per dispositivi mobili più vecchi, dispositivi desktop più "
-"vecchi o XR standalone. Il motore di rendering Compatibilità supporta la più "
-"ampia gamma di hardware."
 
 msgid ""
 "You are developing for web. In this case, Compatibility is the only choice."
@@ -354,12 +317,6 @@ msgstr ""
 msgid "XR"
 msgstr "XR"
 
-msgid "✔️ Yes. Recommended for standalone headsets."
-msgstr "✔️ Sì. Consigliato per visori autonomi."
-
-msgid "✔️ Yes. Recommended for desktop headsets."
-msgstr "✔️ Sì. Consigliato per visori su desktop."
-
 msgid "Web"
 msgstr "Web"
 
@@ -540,6 +497,12 @@ msgstr "VoxelGI"
 msgid "Screen-Space Indirect Lighting (SSIL)"
 msgstr "Illuminazione indiretta nello spazio dello schermo (SSIL)"
 
+msgid "Signed Distance Field Global Illumination (SDFGI)"
+msgstr "Illuminazione globale con signed distance field (SDFGI)"
+
+msgid "Environment and post-processing"
+msgstr "Ambiente e post-elaborazione"
+
 msgid "See :ref:`doc_environment_and_post_processing` for more information."
 msgstr ""
 "Consultare :ref:`doc_environment_and_post_processing` per maggiori "
@@ -547,6 +510,9 @@ msgstr ""
 
 msgid "Fog (Depth and Height)"
 msgstr "Nebbia (profondità e altezza)"
+
+msgid "Volumetric Fog"
+msgstr "Nebbia volumetrica"
 
 msgid "Tonemapping"
 msgstr "Mappatura dei toni"
@@ -596,14 +562,14 @@ msgstr "SMAA"
 msgid "SSAA"
 msgstr "SSAA"
 
+msgid "Screen-space roughness limiter"
+msgstr "Limitatore di rugosità nello spazio dello schermo"
+
 msgid "StandardMaterial features"
 msgstr "Funzionalità di StandardMaterial"
 
 msgid "See :ref:`doc_standard_material_3d` for more information."
 msgstr "Consultare :ref:`doc_standard_material_3d` per maggiori informazioni."
-
-msgid "Sub-surface scattering"
-msgstr "Subsurface scattering"
 
 msgid "Shader features"
 msgstr "Funzionalità di shader"

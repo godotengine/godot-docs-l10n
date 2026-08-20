@@ -23,13 +23,6 @@ msgstr ""
 "ん。モブは画面の端でランダムに生まれると、ランダムな方向を選び、一直線に進み"
 "ます。"
 
-msgid ""
-"We'll create a ``Mob`` scene, which we can then *instance* to create any "
-"number of independent mobs in the game."
-msgstr ""
-"これから ``Mob`` シーンを作り、それを\\ *インスタンス化*\\ して、ゲーム内に任"
-"意の数の独立したモブを作成します。"
-
 msgid "Node setup"
 msgstr "ノードの設定"
 
@@ -112,9 +105,6 @@ msgstr "シーンを保存します。"
 msgid "Enemy script"
 msgstr "敵のスクリプト"
 
-msgid "Add a script to the ``Mob`` like this:"
-msgstr "``Mob`` にスクリプトをアタッチします。以下のようになるはずです:"
-
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we play the "
 "animation and randomly choose one of the three animation types:"
@@ -165,9 +155,6 @@ msgid ""
 msgstr ""
 "``queue_free()`` は、基本的にフレームの最後にあるノードを「解放」または削除す"
 "る関数です。"
-
-msgid "This completes the `Mob` scene."
-msgstr "これで `Mob` シーンが完成します。"
 
 msgid ""
 "With the player and enemies ready, in the next part, we'll bring them "

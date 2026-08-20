@@ -11,5 +11,65 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0105: The exported property is an indexer"
+msgstr "GD0105: A propriedade exportada é um indexador"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0105"
+msgstr "GD0105"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Non-breaking"
+msgstr "Não quebra compatibilidade (Non-breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"An indexer is annotated with the ``[Export]`` attribute. Indexers can't be "
+"exported."
+msgstr ""
+"Um indexador está anotado com o atributo ``[Export]``. Indexadores não podem "
+"ser exportados."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid "Godot doesn't allow exporting indexer properties."
+msgstr "O Godot não permite a exportação de propriedades de indexador."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid "To fix a violation of this rule, remove the ``[Export]`` attribute."
+msgstr ""
+"Para corrigir uma violação desta regra, remova o atributo ``[Export]``."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Indexers can't be exported so they "
+"will be ignored by Godot, resulting in runtime errors."
+msgstr ""
+"Não suprima um aviso desta regra. Indexadores não podem ser exportados, "
+"portanto serão ignorados pelo Godot, resultando em erros em tempo de "
+"execução."

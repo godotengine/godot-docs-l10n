@@ -90,23 +90,6 @@ msgstr ""
 "рендереры **Forward+**, **Mobile** и **Compatibility**."
 
 msgid ""
-"The *rendering driver* tells the GPU what to do, using a graphics API. Godot "
-"can use the **OpenGL**, **Vulkan**, **Direct3D 12**, and **Metal** rendering "
-"drivers. Not every GPU supports every rendering driver, and therefore not "
-"every GPU supports all renderers. Vulkan, Direct3D 12, and Metal are modern, "
-"low-level graphics APIs, and requires newer hardware. OpenGL is an older "
-"graphics API that runs on most hardware."
-msgstr ""
-"*Драйвер рендеринга* сообщает графическому процессору, что делать, используя "
-"графический API. Godot может использовать драйверы рендеринга **OpenGL**, "
-"**Vulkan**, **Direct3D 12** и **Metal**. Не каждый графический процессор "
-"поддерживает все драйверы рендеринга, и, следовательно, не каждый "
-"графический процессор поддерживает все рендереры. Vulkan, Direct3D 12 и "
-"Metal — это современные низкоуровневые графические API, требующие более "
-"нового оборудования. OpenGL — это старый графический API, работающий на "
-"большинстве устройств."
-
-msgid ""
 "RenderingDevice is a *rendering backend*, an abstraction layer between the "
 "renderer and the rendering driver. It is used by the Forward+ and Mobile "
 "renderers, and these renderers are sometimes called \"RenderingDevice-based "
@@ -118,13 +101,6 @@ msgstr ""
 
 msgid "Choosing a renderer"
 msgstr "Выбор рендерера"
-
-msgid ""
-"Choosing a renderer is a complex question, and depends on your hardware and "
-"the which platforms you are developing for. As a starting point:"
-msgstr ""
-"Выбор рендерера — сложный вопрос, зависящий от вашего оборудования и "
-"платформ, для которых вы разрабатываете. Для начала:"
 
 msgid "Choose **Forward+** if:"
 msgstr "Выберите **Forward+**, если:"
@@ -148,11 +124,6 @@ msgstr "Вы хотите использовать самые передовые
 msgid "Choose **Mobile** if:"
 msgstr "Выберите **Mobile**, если:"
 
-msgid "You are developing for newer mobile devices, desktop XR, or desktop."
-msgstr ""
-"Вы разрабатываете приложения для новых мобильных устройств, настольных ПК "
-"или XR."
-
 msgid ""
 "You want to use advanced rendering features, subject to the limitations of "
 "mobile hardware."
@@ -162,15 +133,6 @@ msgstr ""
 
 msgid "Choose **Compatibility** if:"
 msgstr "Выберите **Compatibility**, если:"
-
-msgid ""
-"You are developing for older mobile devices, older desktop devices, or "
-"standalone XR. The Compatibility renderer supports the widest range of "
-"hardware."
-msgstr ""
-"Вы разрабатываете приложения для старых мобильных устройств, старых "
-"настольных компьютеров или отдельных XR. Модуль Compatibility Renderer "
-"поддерживает самый широкий спектр оборудования."
 
 msgid ""
 "You are developing for web. In this case, Compatibility is the only choice."
@@ -198,6 +160,19 @@ msgid ""
 msgstr ""
 "Вам нужна максимально возможная производительность на всех устройствах, и "
 "вам не нужны расширенные функции рендеринга."
+
+msgid ""
+"Keep in mind every game is unique, and this is only a starting point. For "
+"example, you might choose to use the Compatibility renderer even though you "
+"have the latest GPU, so you can support the widest range of hardware. Or you "
+"might want to use the Forward+ renderer for a 2D game, so you can use "
+"advanced features like compute shaders."
+msgstr ""
+"Помните, что каждая игра уникальна, и это лишь отправная точка. Например, вы "
+"можете выбрать рендерер Compatibility, даже если у вас новейший GPU, чтобы "
+"поддерживать максимально широкий спектр оборудования. Или вы можете "
+"использовать рендерер Forward+ для 2D-игры, чтобы использовать расширенные "
+"функции, такие как вычислительные шейдеры."
 
 msgid "Switching between renderers"
 msgstr "Переключение между рендерерами"
@@ -341,12 +316,6 @@ msgstr ""
 msgid "XR"
 msgstr "XR"
 
-msgid "✔️ Yes. Recommended for standalone headsets."
-msgstr "✔️ Да. Рекомендуется для автономных гарнитур."
-
-msgid "✔️ Yes. Recommended for desktop headsets."
-msgstr "✔️ Да. Рекомендуется для настольных гарнитур."
-
 msgid "Web"
 msgstr "Web"
 
@@ -439,6 +408,19 @@ msgstr "Более подробную информацию смотрите в :
 
 msgid "Lighting approach"
 msgstr "Подход к освещению"
+
+msgid ""
+"Forward single-pass. Lights with shadows use a multi-pass approach and less "
+"accurate blending."
+msgstr ""
+"Однопроходный форвард. Источники света с тенями используют многопроходный "
+"подход и менее точное смешивание."
+
+msgid "Forward single-pass."
+msgstr "Однопроходный форвард."
+
+msgid "Clustered forward."
+msgstr "Кластеризованный форвард."
 
 msgid "Maximum OmniLights"
 msgstr "Максимум OmniLights"
@@ -574,6 +556,9 @@ msgstr "FSR2"
 msgid "FXAA"
 msgstr "FXAA"
 
+msgid "SMAA"
+msgstr "SMAA"
+
 msgid "SSAA"
 msgstr "SSAA"
 
@@ -587,9 +572,6 @@ msgid "See :ref:`doc_standard_material_3d` for more information."
 msgstr ""
 "Более подробную информацию см. в документе :ref:`doc_standard_material_3d`."
 
-msgid "Sub-surface scattering"
-msgstr "Под-поверхностное рассеяние"
-
 msgid "Shader features"
 msgstr "Особенности шейдера"
 
@@ -602,6 +584,9 @@ msgstr "Текстура экрана"
 msgid "Depth texture"
 msgstr "Текстура глубины"
 
+msgid "Normal/Roughness buffer"
+msgstr "Буфер нормалей/шероховатости"
+
 msgid "Compute shaders"
 msgstr "Вычислительные шейдеры"
 
@@ -612,6 +597,36 @@ msgstr ""
 msgid "Other features"
 msgstr "Другие особенности"
 
+msgid "Color precision"
+msgstr "Точность цвета"
+
+msgid "RGBA8. Low dynamic range, medium precision."
+msgstr "RGBA8. Низкий динамический диапазон, средняя точность."
+
+msgid ""
+"RGB10A2. Medium dynamic range, low precision. RGBA16F if HDR 2D is enabled."
+msgstr ""
+"RGB10A2. Средний динамический диапазон, низкая точность. RGBA16F, если "
+"включён HDR 2D."
+
+msgid "RGBA16F. High dynamic range, good precision."
+msgstr "RGBA16F. Высокий динамический диапазон, хорошая точность."
+
+msgid "Depth precision"
+msgstr "Точность глубины"
+
+msgid "24-bit without reverse Z. Medium precision."
+msgstr "24 бита без обратного Z. Средняя точность."
+
+msgid "24-bit with reverse Z. Medium precision."
+msgstr "24 бита с обратным Z. Средняя точность."
+
+msgid "32-bit with reverse Z. Good precision."
+msgstr "32 бита с обратным Z. Хорошая точность."
+
+msgid "Debanding"
+msgstr "Удаление полос"
+
 msgid "Variable rate shading"
 msgstr "Затенение с переменной скоростью"
 
@@ -621,6 +636,9 @@ msgstr "Decals (Наклейки)"
 msgid "Particle trails"
 msgstr "Трейлы частиц"
 
+msgid "Particle SDF collision"
+msgstr "Столкновения частиц по SDF"
+
 msgid "Depth of field blur"
 msgstr "Размытие глубины резкости"
 
@@ -629,6 +647,9 @@ msgstr "Режимы Adaptive и Mailbox VSync"
 
 msgid "2D HDR Viewport"
 msgstr "2D HDR-Окно просмотра"
+
+msgid "HDR output"
+msgstr "Вывод HDR"
 
 msgid "RenderingDevice access"
 msgstr "Доступ к RenderingDevice"

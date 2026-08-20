@@ -11,8 +11,32 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "The .gdextension file"
+msgstr "O arquivo .gdextension"
+
 msgid "Introduction"
 msgstr "Introdução"
+
+msgid ""
+"The ``.gdextension`` file in your project contains the instructions for how "
+"to load the GDExtension. The instructions are separated into specific "
+"sections. This page should give you a quick overview of the different "
+"options available to you. For an introduction how to get started with C++ "
+"(godot-cpp), take a look at the :ref:`GDExtension C++ Example "
+"<doc_godot_cpp_getting_started>`."
+msgstr ""
+"O arquivo ``.gdextension`` no seu projeto contém as instruções de como "
+"carregar a GDExtension. As instruções são separadas em seções específicas. "
+"Esta página deve lhe dar uma visão geral rápida das diferentes opções "
+"disponíveis para você. Para uma introdução sobre como começar com C++ (godot-"
+"cpp), dê uma olhada no :ref:`Exemplo de C++ para GDExtension "
+"<doc_godot_cpp_getting_started>`."
+
+msgid "Configuration section"
+msgstr "Seção de configuração"
+
+msgid "Property"
+msgstr "Propriedade"
 
 msgid "Type"
 msgstr "Tipo"
@@ -20,59 +44,309 @@ msgstr "Tipo"
 msgid "Description"
 msgstr "Descrição"
 
+msgid "**entry_symbol**"
+msgstr "**entry_symbol**"
+
 msgid "String"
 msgstr "String"
+
+msgid ""
+"Name of the entry function for initializing the GDExtension. This function "
+"should be defined in the ``register_types.cpp`` file when using godot-cpp. "
+"Adding this is necessary for the extension to work."
+msgstr ""
+"Nome da função de entrada para inicializar a GDExtension. Esta função deve "
+"ser definida no arquivo ``register_types.cpp`` ao usar o godot-cpp. "
+"Adicionar isso é necessário para que a extensão funcione."
+
+msgid "**compatibility_minimum**"
+msgstr "**compatibility_minimum**"
+
+msgid ""
+"Minimum compatible version. This prevents older versions of Godot from "
+"loading extensions that depend on features from newer versions of Godot. "
+"**Only supported in Godot 4.1 or later**"
+msgstr ""
+"Versão mínima compatível. Isso impede que versões mais antigas do Godot "
+"carreguem extensões que dependem de recursos de versões mais novas do Godot. "
+"**Suportado apenas no Godot 4.1 ou posterior**"
+
+msgid "**compatibility_maximum**"
+msgstr "**compatibility_maximum**"
+
+msgid ""
+"Maximum compatible version. This prevents newer versions of Godot from "
+"loading the extension. **Only supported in Godot 4.3 or later**"
+msgstr ""
+"Versão máxima compatível. Isso impede que versões mais novas do Godot "
+"carreguem a extensão. **Suportado apenas no Godot 4.3 ou posterior**"
+
+msgid "**reloadable**"
+msgstr "**reloadable**"
+
+msgid "Boolean"
+msgstr "Booleano"
+
+msgid ""
+"Reloads the extension upon recompilation. Reloading is supported for the "
+"godot-cpp binding in Godot 4.2 or later. Other language bindings may or may "
+"not support it as well. This flag should be mainly used for developing or "
+"debugging an extension."
+msgstr ""
+"Recarrega a extensão após a recompilação. O recarregamento (reloading) é "
+"suportado para o binding godot-cpp no Godot 4.2 ou posterior. Outros "
+"bindings de linguagem podem ou não suportá-lo também. Esta flag deve ser "
+"usada principalmente para desenvolver ou depurar uma extensão."
+
+msgid "**android_aar_plugin**"
+msgstr "**android_aar_plugin**"
+
+msgid ""
+"The GDExtension is part of a :ref:`v2 Android plugin <doc_android_plugin>`. "
+"During export this flag will indicate to the editor that the GDExtension "
+"native shared libraries are exported by the Android plugin AAR binaries."
+msgstr ""
+"A GDExtension faz parte de um :ref:`plugin Android v2 <doc_android_plugin>`. "
+"Durante a exportação, esta flag indicará ao editor que as bibliotecas "
+"compartilhadas nativas da GDExtension são exportadas pelos binários AAR do "
+"plugin Android."
+
+msgid "Libraries section"
+msgstr "Seção de bibliotecas"
+
+msgid ""
+"In this section you can set the paths to the compiled binaries of your "
+"GDExtension libraries. By specifying feature flags you can filter which "
+"version should be loaded and exported with your game depending on which "
+"feature flags are active. Every feature flag must match to Godot's feature "
+"flags or your custom export flags to be loaded in an exported game. For "
+"instance ``macos.debug`` means that it will be loaded if Godot has both the "
+"``macos`` and ``debug`` flag active. Each line of the section is evaluated "
+"from top to bottom."
+msgstr ""
+"Nesta seção, você pode definir os caminhos para os binários compilados das "
+"suas bibliotecas GDExtension. Ao especificar flags de recursos (feature "
+"flags), você pode filtrar qual versão deve ser carregada e exportada com o "
+"seu jogo, dependendo de quais flags de recursos estão ativas. Cada flag de "
+"recurso deve corresponder às flags de recursos do Godot ou às suas flags de "
+"exportação personalizadas para ser carregada em um jogo exportado. Por "
+"exemplo, ``macos.debug`` significa que ela será carregada se o Godot tiver "
+"as flags ``macos`` e ``debug`` ativas. Cada linha da seção é avaliada de "
+"cima para baixo."
+
+msgid "Here is an example of what that can look like:"
+msgstr "Aqui está um exemplo de como isso pode parecer:"
+
+msgid ""
+"Paths can be relative or absolute (starting with ``res://``). Relative paths "
+"are recommended, as they allow the extension to keep working if it's "
+"installed to a different folder than what's specified in the path."
+msgstr ""
+"Os caminhos podem ser relativos ou absolutos (começando com ``res://``). "
+"Caminhos relativos são recomendados, pois permitem que a extensão continue "
+"funcionando se for instalada em uma pasta diferente daquela especificada no "
+"caminho."
+
+msgid ""
+"Entries are matched in order, so if two sets of feature tags could match the "
+"same system, be sure to put the more specific ones first:"
+msgstr ""
+"As entradas são correspondidas na ordem, portanto, se dois conjuntos de tags "
+"de recursos puderem corresponder ao mesmo sistema, certifique-se de colocar "
+"os mais específicos primeiro:"
+
+msgid ""
+"Here are lists of some of the available built-in options (for more look at "
+"the :ref:`feature tags <doc_feature_tags>`):"
+msgstr ""
+"Aqui estão listas de algumas das opções integradas disponíveis (para mais, "
+"veja as :ref:`tags de recursos / feature tags <doc_feature_tags>`):"
+
+msgid "Running system"
+msgstr "Sistema em execução"
+
+msgid "Flag"
+msgstr "Flag"
 
 msgid "**windows**"
 msgstr "**windows**"
 
+msgid "Windows operating system"
+msgstr "Sistema operacional Windows"
+
 msgid "**macos**"
 msgstr "**macos**"
+
+msgid "Mac operating system"
+msgstr "Sistema operacional Mac"
 
 msgid "**linux**"
 msgstr "**linux**"
 
+msgid "Linux operating system"
+msgstr "Sistema operacional Linux"
+
 msgid "**bsd**"
 msgstr "**bsd**"
+
+msgid "BSD operating system"
+msgstr "Sistema operacional BSD"
+
+msgid "**linuxbsd**"
+msgstr "**linuxbsd**"
+
+msgid "Linux or BSD operating system"
+msgstr "Sistema operacional Linux ou BSD"
 
 msgid "**android**"
 msgstr "**android**"
 
+msgid "Android operating system"
+msgstr "Sistema operacional Android"
+
 msgid "**ios**"
 msgstr "**ios**"
+
+msgid "iOS operating system"
+msgstr "Sistema operacional iOS"
 
 msgid "**web**"
 msgstr "**web**"
 
+msgid "Web browser"
+msgstr "Navegador"
+
+msgid "Build"
+msgstr "Build"
+
 msgid "**debug**"
 msgstr "**debug**"
+
+msgid ""
+"Build with debugging features (editor builds always have debugging features)"
+msgstr ""
+"Compilar com recursos de depuração (as compilações do editor sempre têm "
+"recursos de depuração)"
 
 msgid "**release**"
 msgstr "**release**"
 
+msgid "Optimized build without debugging features"
+msgstr "Compilação otimizada sem recursos de depuração"
+
 msgid "**editor**"
 msgstr "**editor**"
+
+msgid "Editor build"
+msgstr "Build do editor"
+
+msgid "Architecture"
+msgstr "Arquitetura"
 
 msgid "**double**"
 msgstr "**dobro**"
 
+msgid "double-precision build"
+msgstr "Build de dupla precisão"
+
 msgid "**single**"
 msgstr "**único**"
+
+msgid "single-precision build"
+msgstr "Build de precisão única"
 
 msgid "**x86_64**"
 msgstr "**x86_64**"
 
+msgid "64-bit x86 build"
+msgstr "Build x86 de 64 bits"
+
 msgid "**arm64**"
 msgstr "**arm64**"
+
+msgid "64-bit ARM build"
+msgstr "Build ARM de 64 bits"
 
 msgid "**rv64**"
 msgstr "**rv64**"
 
+msgid "64-bit RISC-V build"
+msgstr "Build RISC-V de 64 bits"
+
 msgid "**riscv**"
 msgstr "**riscv**"
+
+msgid "RISC-V build (any bitness)"
+msgstr "Build RISC-V (qualquer bitagem)"
 
 msgid "**wasm32**"
 msgstr "**wasm32**"
 
+msgid "32-bit WebAssembly build"
+msgstr "Build do WebAssembly de 32 bits"
+
+msgid "Icons section"
+msgstr "Seção de ícones"
+
+msgid ""
+"By default, Godot uses the Node icon in the scene dock for GDExtension "
+"nodes. A custom icon can be set by reference to its name and resource path "
+"of an SVG file."
+msgstr ""
+"Por padrão, o Godot usa o ícone do Node no painel de cena para nós "
+"GDExtension. Um ícone personalizado pode ser definido fazendo referência ao "
+"seu nome e ao caminho do recurso de um arquivo SVG."
+
 msgid "For example:"
 msgstr "Por exemplo:"
+
+msgid ""
+"The path should point to a 16×16 pixel SVG image, with two options enabled "
+"on the image in the Import dock:"
+msgstr ""
+"O caminho deve apontar para uma imagem SVG de 16×16 pixels, com duas opções "
+"ativadas para a imagem no painel de Importação:"
+
+msgid "**Editor > Scale with Editor Scale**."
+msgstr "**Editor > Escalonar com Escala do Editor**."
+
+msgid "**Editor > Convert Colors with Editor Theme**."
+msgstr "**Editor > Converter Cores com Tema do Editor**."
+
+msgid ""
+"Enabling both options ensures the icon behaves as closely as possible to the "
+"stock editor icons. Read the guide for :ref:`creating icons "
+"<doc_editor_icons>` for more information."
+msgstr ""
+"A ativação de ambas as opções garante que o ícone se comporte o mais próximo "
+"possível dos ícones padrão do editor. Leia o guia para :ref:`criar ícones "
+"<doc_editor_icons>` para mais informações."
+
+msgid "Dependencies section"
+msgstr "Seção de dependências"
+
+msgid ""
+"In this section, you set the paths of the GDExtension dependencies. This is "
+"used internally to export the dependencies when exporting your game "
+"executable. You are able to set which dependency is loaded depending on the "
+"feature flags of the exported executable. In addition, you are able to set "
+"an optional subdirectory to move your dependencies into. If no path is "
+"supplied, Godot will move the libraries into the same directory as your game "
+"executable."
+msgstr ""
+"Nesta seção, você define os caminhos das dependências da GDExtension. Isso é "
+"usado internamente para exportar as dependências ao exportar o executável do "
+"seu jogo. Você pode definir qual dependência será carregada dependendo das "
+"flags de recursos do executável exportado. Além disso, você pode definir um "
+"subdiretório opcional para mover suas dependências. Se nenhum caminho for "
+"fornecido, o Godot moverá as bibliotecas para o mesmo diretório do "
+"executável do seu jogo."
+
+msgid ""
+"On macOS, it is necessary to have shared libraries inside a folder called "
+"``Frameworks`` with a directory structure like this: ``Game.app/Contents/"
+"Frameworks``."
+msgstr ""
+"No macOS, é necessário ter bibliotecas compartilhadas dentro de uma pasta "
+"chamada ``Frameworks`` com uma estrutura de diretórios como esta: ``Game.app/"
+"Contents/Frameworks``."

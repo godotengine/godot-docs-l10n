@@ -53,30 +53,6 @@ msgstr ""
 "你会想要在 Godot 的源代码中学习它们都有什么用。然后补全或者完善这些标签中的文"
 "本："
 
-msgid "`<brief_description>`"
-msgstr "`<brief_description>`"
-
-msgid "`<description>`"
-msgstr "`<description>`"
-
-msgid "`<constant>`"
-msgstr "`<constant>`"
-
-msgid ""
-"`<method>` (in its `<description>` tag; return types and arguments don't "
-"take separate documentation strings)"
-msgstr ""
-"`<method>`\\ （在其 `<description>` 标签中；返回类型和参数不带单独的文档字符"
-"串）"
-
-msgid "`<member>`"
-msgstr "`<member>`"
-
-msgid ""
-"`<signal>` (in its `<description>` tag; arguments don't take separate "
-"documentation strings)"
-msgstr "`<signal>`\\ （在其 `<description>` 标签中；参数不带单独的文档字符串）"
-
 msgid ""
 "Write in a clear and simple language. Always follow the `writing guidelines "
 "<https://contributing.godotengine.org/en/latest/documentation/guidelines/"
@@ -110,14 +86,6 @@ msgstr ""
 "游戏引擎中某些模块的 XML 文件在 ``modules/<模块名称>/doc_classes/`` 目录下。"
 
 msgid ""
-"Edit it using your favorite text editor. If you use a code editor, make sure "
-"that it doesn't change the indent style: you should use tabs for the XML and "
-"four spaces inside BBCode-style blocks. More on that below."
-msgstr ""
-"用你喜欢的文本编辑器编辑它。如果你使用代码编辑器，请确保它不会改变缩进样式："
-"XML 使用制表符，而 BBCode 风格的块内使用 4 个空格。下面有更多这方面的内容。"
-
-msgid ""
 "To check that the modifications you've made are correct in the generated "
 "documentation, navigate to the ``doc/`` folder and run the command ``make "
 "rst``. This will convert the XML files to the online documentation's format "
@@ -126,14 +94,6 @@ msgstr ""
 "要检查你所做出的修改在生成后的文档中是否正确，请在 ``doc/`` 文件夹中执行命令 "
 "``make rst``\\ 。这样就会将 XML 文件转换为在线文档的格式，存在错误时会有错误"
 "报告。"
-
-msgid ""
-"Alternatively, you can build Godot and open the modified page in the built-"
-"in code reference. To learn how to compile the engine, read "
-"the :ref:`compilation guide <toc-devel-compiling>`."
-msgstr ""
-"你也可以自行构建 Godot 然后在内置的类参考手册中打开被修改的页面。引擎的编译方"
-"法请查看 :ref:`compilation guide <toc-devel-compiling>`\\ 。"
 
 msgid ""
 "We recommend using a code editor that supports XML files like Vim, Atom, "
@@ -265,9 +225,6 @@ msgstr "链接到内置构造函数"
 msgid "``Use [constructor Color.Color].``"
 msgstr "``使用 [constructor Color.Color].``"
 
-msgid "Use  :ref:`Color.Color <class_Color_constructor_Color>`."
-msgstr "使用  :ref:`Color.Color <class_Color_constructor_Color>`\\ 。"
-
 msgid "``[operator Class.name]``"
 msgstr "``[operator Class.name]``"
 
@@ -276,9 +233,6 @@ msgstr "链接到内置运算符"
 
 msgid "``Use [operator Color.operator *].``"
 msgstr "``使用 [operator Color.operator *].``"
-
-msgid "Use  :ref:`Color.operator * <class_Color_operator_mul_int>`."
-msgstr "使用  :ref:`Color.operator * <class_Color_operator_mul_int>`\\ 。"
 
 msgid "``[signal Class.name]``"
 msgstr "``[signal Class.name]``"
@@ -495,13 +449,6 @@ msgstr "``[codeblock lang=csharp]`` 高亮 C# 语法（仅.NET版本有效）。
 msgid ""
 "``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
 msgstr "``[codeblock]`` 与 ``[/codeblock]`` 之间的 BBCode 代码均无效。"
-
-msgid ""
-"Use ``[codeblock]`` for pre-formatted code blocks. Since Godot 4.5, **tabs** "
-"should be used for indentation."
-msgstr ""
-"请使用 ``[codeblock]`` 来包裹预先排版好的代码块。从 Godot 4.5 版本开始， **缩"
-"进** 应当使用 制表符（Tab）。"
 
 msgid "For example:"
 msgstr "例如："

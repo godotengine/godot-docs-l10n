@@ -29,12 +29,6 @@ msgstr ""
 "本身是不需要 2D 功能的。）"
 
 msgid ""
-"Click the **Instance** button (represented by a chain link icon) and select "
-"your saved ``player.tscn``."
-msgstr ""
-"点击\\ **实例化**\\ 按钮（由链条图标表示）并选择保存的 ``player.tscn``\\ 。"
-
-msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown:"
 msgstr "现在，将下列节点添加为 ``Main`` 的子节点，并按如下所示对它们进行命名："
 
@@ -134,14 +128,6 @@ msgstr "你的场景应如下所示:"
 
 msgid "Main script"
 msgstr "Main 脚本"
-
-msgid ""
-"Add a script to ``Main``. At the top of the script, we use ``@export var "
-"mob_scene: PackedScene`` to allow us to choose the Mob scene we want to "
-"instance."
-msgstr ""
-"将脚本添加到 ``Main``\\ 。在脚本的顶部，我们使用 ``@export var mob_scene: "
-"PackedScene`` 来允许我们选择要实例化的 Mob 场景。"
 
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob Scene`` property in the "

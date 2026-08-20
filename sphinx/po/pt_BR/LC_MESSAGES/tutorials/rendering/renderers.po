@@ -11,6 +11,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Overview of renderers"
+msgstr "Visão geral dos renderizadores"
+
+msgid ""
+"This page gives an overview of Godot's renderers, focusing on the "
+"differences between their rendering features. For more technical details on "
+"the renderers, see :ref:`doc_internal_rendering_architecture`."
+msgstr ""
+"Esta página fornece uma visão geral dos renderizadores do Godot, focando nas "
+"diferenças entre seus recursos de renderização. Para mais detalhes técnicos "
+"sobre os renderizadores, veja :ref:`doc_internal_rendering_architecture`."
+
 msgid "Introduction"
 msgstr "Introdução"
 
@@ -49,8 +61,121 @@ msgstr ""
 "baixo desempenho. Usado por padrão na plataforma web. Este renderizador usa "
 "**OpenGL** como driver de renderização."
 
+msgid "Renderers, rendering drivers, and RenderingDevice"
+msgstr "Renderizadores, drivers de renderização e RenderingDevice"
+
+msgid ""
+"Diagram of rendering layers. The Compatibility renderer runs on the OpenGL\n"
+"driver. The Forward+ and Mobile renderers run on RenderingDevice, which can "
+"use\n"
+"Vulkan, Direct3D 12, or Metal as a rendering driver."
+msgstr ""
+"Diagrama das camadas de renderização. O renderizador Compatibility roda "
+"sobre o driver OpenGL.\n"
+"Os renderizadores Forward+ e Mobile rodam sobre a RenderingDevice,\n"
+"que pode usar Vulkan, Direct3D 12 ou Metal como driver de renderização."
+
+msgid "Godot's rendering abstraction layers."
+msgstr "As camadas de abstração de renderização do Godot."
+
+msgid ""
+"The *renderer*, or *rendering method*, determines which features are "
+"available. Most of the time, this is the only thing you need to think about. "
+"Godot's renderers are **Forward+**, **Mobile**, and **Compatibility**."
+msgstr ""
+"O *renderizador*, ou *método de renderização*, determina quais recursos "
+"estão disponíveis. Na maioria das vezes, essa é a única coisa com a qual "
+"você precisa se preocupar. Os renderizadores do Godot são **Forward+**, "
+"**Mobile** e **Compatibility**."
+
+msgid ""
+"RenderingDevice is a *rendering backend*, an abstraction layer between the "
+"renderer and the rendering driver. It is used by the Forward+ and Mobile "
+"renderers, and these renderers are sometimes called \"RenderingDevice-based "
+"renderers\"."
+msgstr ""
+"O RenderingDevice é um *backend de renderização*, uma camada de abstração "
+"entre o renderizador e o driver de renderização. Ele é usado pelos "
+"renderizadores Forward+ e Mobile, e esses renderizadores às vezes são "
+"chamados de \"renderizadores baseados em RenderingDevice\"."
+
+msgid "Choosing a renderer"
+msgstr "Escolhendo um renderizador"
+
+msgid "Choose **Forward+** if:"
+msgstr "Escolha **Forward+** se:"
+
+msgid "You are developing for desktop."
+msgstr "Você está desenvolvendo para desktop."
+
+msgid ""
+"You have relatively new hardware which supports Vulkan, Direct3D 12, or "
+"Metal."
+msgstr ""
+"Você possui hardware relativamente novo que suporta Vulkan, Direct3D 12 ou "
+"Metal."
+
+msgid "You are developing a 3D game."
+msgstr "Você está desenvolvendo um jogo 3D."
+
+msgid "You want to use the most advanced rendering features."
+msgstr "Você deseja usar os recursos de renderização mais avançados."
+
+msgid "Choose **Mobile** if:"
+msgstr "Escolha **Mobile** se:"
+
+msgid ""
+"You want to use advanced rendering features, subject to the limitations of "
+"mobile hardware."
+msgstr ""
+"Você deseja usar recursos avançados de renderização, sujeito às limitações "
+"do hardware móvel."
+
 msgid "Choose **Compatibility** if:"
 msgstr "Escolha **Compatibilidade** se:"
+
+msgid ""
+"You are developing for web. In this case, Compatibility is the only choice."
+msgstr ""
+"Você está desenvolvendo para a web. Neste caso, o Compatibility é a única "
+"escolha."
+
+msgid ""
+"You have older hardware which does not support Vulkan. In this case, "
+"Compatibility is the only choice."
+msgstr ""
+"Você tem hardware antigo que não suporta Vulkan. Neste caso, o Compatibility "
+"é a única escolha."
+
+msgid ""
+"You are developing a 2D game, or a 3D game which does not need advanced "
+"rendering features."
+msgstr ""
+"Você está desenvolvendo um jogo 2D, ou um jogo 3D que não precisa de "
+"recursos avançados de renderização."
+
+msgid ""
+"You want the best performance possible on all devices and don't need "
+"advanced rendering features."
+msgstr ""
+"Você deseja o melhor desempenho possível em todos os dispositivos e não "
+"precisa de recursos avançados de renderização."
+
+msgid ""
+"Keep in mind every game is unique, and this is only a starting point. For "
+"example, you might choose to use the Compatibility renderer even though you "
+"have the latest GPU, so you can support the widest range of hardware. Or you "
+"might want to use the Forward+ renderer for a 2D game, so you can use "
+"advanced features like compute shaders."
+msgstr ""
+"Tenha em mente que cada jogo é único e este é apenas um ponto de partida. "
+"Por exemplo, você pode optar por usar o renderizador Compatibility mesmo "
+"tendo a GPU mais recente, para que possa suportar a maior variedade de "
+"hardware. Ou pode querer usar o renderizador Forward+ para um jogo 2D, para "
+"poder usar recursos avançados como compute shaders."
+
+msgid "Switching between renderers"
+msgstr "Alternando entre renderizadores"
 
 msgid ""
 "In the editor, you can always switch between renderers by clicking on the "
@@ -59,8 +184,133 @@ msgstr ""
 "No editor, você sempre pode alternar entre renderizadores clicando no nome "
 "do renderizador no canto superior direito do editor."
 
+msgid ""
+"Switching between renderers may require some manual tweaks to your scene, "
+"lighting, and environment, since each renderer is different. In general, "
+"switching between the Mobile and Forward+ renderers will require fewer "
+"adjustments than switching between the Compatibility renderer and the "
+"Forward+ or Mobile renderers."
+msgstr ""
+"Alternar entre renderizadores pode exigir alguns ajustes manuais na sua "
+"cena, iluminação e ambiente, já que cada renderizador é diferente. Em geral, "
+"alternar entre os renderizadores Mobile e Forward+ exigirá menos ajustes do "
+"que alternar entre o renderizador Compatibility e os renderizadores Forward+ "
+"ou Mobile."
+
+msgid ""
+"Since Godot 4.4, when using Forward+ or Mobile, if Vulkan is not supported, "
+"the engine will fall back to Direct3D 12 and vice versa. If the attempted "
+"fallback driver is not supported either, the engine will then fall back to "
+"Compatibility when the RenderingDevice backend is not supported. This allows "
+"the project to run anyway, but it may look different than the intended "
+"appearance due to the more limited renderer. This behavior can be disabled "
+"in the project settings by unchecking :ref:`Rendering > Rendering Device > "
+"Fallback to OpenGL 3<class_ProjectSettings_property_rendering/"
+"rendering_device/fallback_to_opengl3>`."
+msgstr ""
+"Desde o Godot 4.4, ao usar Forward+ ou Mobile, se o Vulkan não for "
+"suportado, o motor reverterá para o Direct3D 12 e vice-versa. Se o driver de "
+"fallback tentado também não for suportado, o motor reverterá para o "
+"Compatibility quando o backend RenderingDevice não for suportado. Isso "
+"permite que o projeto seja executado de qualquer forma, mas ele pode parecer "
+"diferente da aparência pretendida devido ao renderizador mais limitado. Esse "
+"comportamento pode ser desativado nas configurações do projeto "
+"desmarcando :ref:`Rendering > Rendering Device > Fallback to OpenGL 3 "
+"<class_ProjectSettings_property_rendering/rendering_device/"
+"fallback_to_opengl3>`."
+
+msgid "Feature comparison"
+msgstr "Comparação de recursos"
+
+msgid ""
+"This is not a complete list of the features of each renderer. If a feature "
+"is not listed here, it is available in all renderers, though it may be much "
+"faster on some renderers. For a list of *all* features in Godot, "
+"see :ref:`doc_list_of_features`."
+msgstr ""
+"Esta não é uma lista completa dos recursos de cada renderizador. Se um "
+"recurso não estiver listado aqui, ele está disponível em todos os "
+"renderizadores, embora possa ser muito mais rápido em alguns deles. Para uma "
+"lista de *todos* os recursos do Godot, veja :ref:`doc_list_of_features`."
+
+msgid ""
+"Hardware with RenderingDevice support is hardware which can run Vulkan, "
+"Direct3D 12, or Metal."
+msgstr ""
+"Hardware com suporte a RenderingDevice é o hardware que pode rodar Vulkan, "
+"Direct3D 12 ou Metal."
+
+msgid "Overall comparison"
+msgstr "Comparação geral"
+
+msgid "Feature"
+msgstr "Recurso"
+
+msgid "Compatibility"
+msgstr "Compatibilidade"
+
 msgid "Mobile"
 msgstr "Mobile"
+
+msgid "Forward+"
+msgstr "Forward+"
+
+msgid "**Required** **hardware**"
+msgstr "**Hardware** **necessário**"
+
+msgid "Older or low-end."
+msgstr "Antigo ou de baixo custo."
+
+msgid "Newer or high-end. Requires Vulkan, Direct3D 12, or Metal support."
+msgstr ""
+"Mais recente ou de alto desempenho. Requer suporte a Vulkan, Direct3D 12 ou "
+"Metal."
+
+msgid "Runs on new hardware"
+msgstr "Roda em hardware novo"
+
+msgid "✔️ Yes."
+msgstr "✔️ Sim."
+
+msgid "Runs on old and low-end hardware"
+msgstr "Roda em hardware antigo e de baixo custo"
+
+msgid "✔️ Yes, but slower than Compatibility."
+msgstr "✔️ Sim, mas mais lento que o Compatibility."
+
+msgid "✔️ Yes, but slowest of all renderers."
+msgstr "✔️ Sim, mas é o mais lento de todos os renderizadores."
+
+msgid "Runs on hardware without RenderingDevice support"
+msgstr "Roda em hardware sem suporte a RenderingDevice"
+
+msgid "❌ No."
+msgstr "❌ Não."
+
+msgid "**Target platforms**"
+msgstr "**Plataformas alvo**"
+
+msgid "Mobile, low-end desktop, web."
+msgstr "Dispositivos móveis, desktop de baixo custo, web."
+
+msgid "Mobile, desktop."
+msgstr "Dispositivos móveis, desktop."
+
+msgid "Desktop."
+msgstr "Desktop."
+
+msgid "Desktop"
+msgstr "Desktop"
+
+msgid "✔️ Yes (low-end)."
+msgstr "✔️ Sim (baixo custo)."
+
+msgid "✔️ Yes (high-end)."
+msgstr "✔️ Sim (alto desempenho)."
+
+msgid "⚠️ Supported, but poorly optimized. Use Mobile or Compatibility instead."
+msgstr ""
+"⚠️ Suportado, mas mal otimizado. Use Mobile ou Compatibility em seu lugar."
 
 msgid "XR"
 msgstr "Realidade Aumentada (XR)"
@@ -68,14 +318,201 @@ msgstr "Realidade Aumentada (XR)"
 msgid "Web"
 msgstr "Web"
 
+msgid "2D Games"
+msgstr "Jogos 2D"
+
+msgid "✔️ Yes, but Compatibility is usually good enough for 2D."
+msgstr "✔️ Sim, mas o Compatibility geralmente é bom o suficiente para 2D."
+
+msgid "3D Games"
+msgstr "Jogos 3D"
+
+msgid "**Feature set**"
+msgstr "**Conjunto de recursos**"
+
+msgid "2D and core 3D features."
+msgstr "Recursos 2D e recursos 3D principais."
+
+msgid "Most rendering features."
+msgstr "A maioria dos recursos de renderização."
+
+msgid "All rendering features."
+msgstr "Todos os recursos de renderização."
+
+msgid "2D rendering features"
+msgstr "Recursos de renderização 2D"
+
+msgid "Core 3D rendering features"
+msgstr "Recursos principais de renderização 3D"
+
+msgid "Advanced rendering features"
+msgstr "Recursos avançados de renderização 3D"
+
+msgid "⚠️ Yes, limited by mobile hardware."
+msgstr "⚠️ Sim, limitado pelo hardware móvel."
+
+msgid "✔️ Yes. All rendering features are supported."
+msgstr "✔️ Sim. Todos os recursos de renderização são suportados."
+
+msgid "New features"
+msgstr "Novos recursos"
+
+msgid ""
+"⚠️ Some new rendering features are added to Compatibility. Features are added "
+"after Mobile and Forward+."
+msgstr ""
+"⚠️ Alguns novos recursos de renderização são adicionados ao Compatibility. Os "
+"recursos são adicionados após o Mobile e o Forward+."
+
+msgid ""
+"✔️ Most new rendering features are added to Mobile. Mobile usually gets new "
+"features as Forward+ does."
+msgstr ""
+"✔️ A maioria dos novos recursos de renderização é adicionada ao Mobile. O "
+"Mobile geralmente recebe novos recursos ao mesmo tempo que o Forward+."
+
+msgid ""
+"✔️ All new features are added to Forward+. As the focus of new development, "
+"Forward+ gets features first."
+msgstr ""
+"✔️ Todos os novos recursos são adicionados ao Forward+. Como foco do novo "
+"desenvolvimento, o Forward+ recebe os recursos primeiro."
+
+msgid "Rendering cost"
+msgstr "Custo de renderização"
+
+msgid "Low base cost, but high scaling cost."
+msgstr "Custo base baixo, mas custo de dimensionamento alto."
+
+msgid "Medium base cost, and medium scaling cost."
+msgstr "Custo base médio e custo de dimensionamento médio."
+
+msgid "Highest base cost, and low scaling cost."
+msgstr "Custo base mais alto e custo de dimensionamento baixo."
+
+msgid "Rendering driver"
+msgstr "Driver de renderização"
+
+msgid "OpenGL."
+msgstr "OpenGL."
+
+msgid "Vulkan, Direct3D 12, or Metal."
+msgstr "Vulkan, Direct3D 12 ou Metal."
+
+msgid "Lights and shadows"
+msgstr "Luzes e sombras"
+
+msgid "See :ref:`doc_lights_and_shadows` for more information."
+msgstr "Veja :ref:`doc_lights_and_shadows` para mais informações."
+
+msgid "Lighting approach"
+msgstr "Abordagem de iluminação"
+
+msgid ""
+"Forward single-pass. Lights with shadows use a multi-pass approach and less "
+"accurate blending."
+msgstr ""
+"Forward single-pass. Luzes com sombras usam uma abordagem de múltiplos "
+"passes (multi-pass) e mistura menos precisa."
+
+msgid "Forward single-pass."
+msgstr "Forward de passo único."
+
+msgid "Clustered forward."
+msgstr "Clustered forward."
+
+msgid "Maximum OmniLights"
+msgstr "Máximo de OmniLights"
+
+msgid "8 per mesh. Can be increased."
+msgstr "8 por malha. Pode ser aumentado."
+
+msgid "8 per mesh, 256 per view."
+msgstr "8 por malha, 256 por visualização."
+
+msgid "512 per cluster. Can be increased."
+msgstr "512 por cluster. Pode ser aumentado."
+
+msgid "Maximum SpotLights"
+msgstr "Máximo de SpotLights"
+
+msgid "Maximum DirectionalLights"
+msgstr "Máximo de DirectionalLights"
+
 msgid "8"
 msgstr "8"
+
+msgid "PCSS for OmniLight and SpotLight"
+msgstr "PCSS para OmniLight e SpotLight"
+
+msgid "❌ Not supported."
+msgstr "❌ Não suportado."
+
+msgid "✔️ Supported."
+msgstr "✔️ Suportado."
+
+msgid "PCSS for DirectionalLight"
+msgstr "PCSS para DirectionalLight"
+
+msgid "Light projector textures"
+msgstr "Texturas de projetor de luz"
+
+msgid "Global Illumination"
+msgstr "Iluminação Global"
+
+msgid ""
+"See :ref:`doc_introduction_to_global_illumination` for more information."
+msgstr ""
+"Veja :ref:`doc_introduction_to_global_illumination` para mais informações."
+
+msgid "ReflectionProbe"
+msgstr "ReflectionProbe"
+
+msgid "✔️ Supported, 2 per mesh."
+msgstr "✔️ Suportado, 2 por malha."
+
+msgid "✔️ Supported, 8 per mesh."
+msgstr "✔️ Suportado, 8 por malha."
+
+msgid "✔️ Supported, unlimited."
+msgstr "✔️ Suportado, ilimitado."
+
+msgid "LightmapGI"
+msgstr "LightmapGI"
+
+msgid ""
+"⚠️ Rendering of baked lightmaps is supported. Baking requires hardware with "
+"RenderingDevice support."
+msgstr ""
+"⚠️ A renderização de lightmaps pré-calculados é suportada. O pré-cálculo "
+"requer hardware com suporte a RenderingDevice."
 
 msgid "VoxelGI"
 msgstr "VoxelGI"
 
+msgid "Screen-Space Indirect Lighting (SSIL)"
+msgstr "Iluminação Indireta em Espaço de Tela (SSIL)"
+
+msgid "Signed Distance Field Global Illumination (SDFGI)"
+msgstr "Iluminação Global por Campo de Distância Sinalizado (SDFGI)"
+
 msgid "Environment and post-processing"
 msgstr "Ambiente e pós-processamento"
+
+msgid "See :ref:`doc_environment_and_post_processing` for more information."
+msgstr "Veja :ref:`doc_environment_and_post_processing` para mais informações."
+
+msgid "Fog (Depth and Height)"
+msgstr "Névoa (Profundidade e Altura)"
+
+msgid "Volumetric Fog"
+msgstr "Névoa Volumétrica (Volumetric Fog)"
+
+msgid "Tonemapping"
+msgstr "Mapeamento de tons (Tonemapping)"
+
+msgid "Screen-Space Reflections"
+msgstr "Reflexos em Espaço de Tela"
 
 msgid "Screen-Space Ambient Occlusion (SSAO)"
 msgstr "Oclusão Ambiente em Espaço de Tela (SSAO)"
@@ -86,8 +523,127 @@ msgstr "Brilho"
 msgid "Adjustments"
 msgstr "Ajustes"
 
+msgid "Custom post-processing with fullscreen quad"
+msgstr "Pós-processamento personalizado com quad em tela cheia"
+
+msgid "Custom post-processing with CompositorEffects"
+msgstr "Pós-processamento personalizado com CompositorEffects"
+
+msgid "Antialiasing"
+msgstr "Antialiasing"
+
+msgid "See :ref:`doc_3d_antialiasing` for more information."
+msgstr "Veja :ref:`doc_3d_antialiasing` para mais informações."
+
+msgid "MSAA 3D"
+msgstr "MSAA 3D"
+
+msgid "MSAA 2D"
+msgstr "MSAA 2D"
+
+msgid "TAA"
+msgstr "TAA"
+
+msgid "FSR2"
+msgstr "FSR2"
+
+msgid "FXAA"
+msgstr "FXAA"
+
+msgid "SMAA"
+msgstr "SMAA"
+
+msgid "SSAA"
+msgstr "SSAA"
+
+msgid "Screen-space roughness limiter"
+msgstr "Limitador de rugosidade em espaço de tela"
+
+msgid "StandardMaterial features"
+msgstr "Recursos do StandardMaterial"
+
+msgid "See :ref:`doc_standard_material_3d` for more information."
+msgstr "Veja :ref:`doc_standard_material_3d` para mais informações."
+
+msgid "Shader features"
+msgstr "Recursos de shader"
+
+msgid "See :ref:`doc_shading_reference` for more information."
+msgstr "Veja :ref:`doc_shading_reference` para mais informações."
+
+msgid "Screen texture"
+msgstr "Textura de tela (Screen texture)"
+
 msgid "Depth texture"
 msgstr "Textura de profundidade"
 
+msgid "Normal/Roughness buffer"
+msgstr "Buffer de Normal/Roughness"
+
+msgid "Compute shaders"
+msgstr "Shaders de computação"
+
+msgid "⚠️ Supported, but comes with a performance penalty on older devices."
+msgstr ""
+"⚠️ Suportado, mas acarreta uma penalidade de desempenho em dispositivos mais "
+"antigos."
+
+msgid "Other features"
+msgstr "Outros recursos"
+
+msgid "Color precision"
+msgstr "Precisão de cor"
+
+msgid "RGBA8. Low dynamic range, medium precision."
+msgstr "RGBA8. Baixo alcance dinâmico, precisão média."
+
+msgid ""
+"RGB10A2. Medium dynamic range, low precision. RGBA16F if HDR 2D is enabled."
+msgstr ""
+"RGB10A2. Alcance dinâmico médio, precisão baixa. RGBA16F se o HDR 2D estiver "
+"ativado."
+
+msgid "RGBA16F. High dynamic range, good precision."
+msgstr "RGBA16F. Alto alcance dinâmico (HDR), boa precisão."
+
+msgid "Depth precision"
+msgstr "Precisão de profundidade"
+
+msgid "24-bit without reverse Z. Medium precision."
+msgstr "24 bits sem Z reverso. Precisão média."
+
+msgid "24-bit with reverse Z. Medium precision."
+msgstr "24 bits com Z reverso. Precisão média."
+
+msgid "32-bit with reverse Z. Good precision."
+msgstr "32 bits com Z reverso. Boa precisão."
+
+msgid "Debanding"
+msgstr "Debanding"
+
+msgid "Variable rate shading"
+msgstr "Variable rate shading (sombreamento de taxa variável)"
+
+msgid "Decals"
+msgstr "Decalques (Decals)"
+
 msgid "Particle trails"
 msgstr "Rastros de partículas"
+
+msgid "Particle SDF collision"
+msgstr "Colisão SDF de partículas"
+
+msgid "Depth of field blur"
+msgstr "Desfoque de profundidade de campo"
+
+msgid "Adaptive and Mailbox VSync modes"
+msgstr "Modos VSync Adaptive e Mailbox"
+
+msgid "2D HDR Viewport"
+msgstr "Viewport HDR 2D"
+
+msgid "HDR output"
+msgstr "Saída HDR"
+
+msgid "RenderingDevice access"
+msgstr "Acesso ao RenderingDevice"

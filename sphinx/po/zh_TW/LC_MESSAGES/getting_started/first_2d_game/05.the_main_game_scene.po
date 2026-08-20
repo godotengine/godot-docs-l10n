@@ -29,12 +29,6 @@ msgstr ""
 "身並不需 2D 的功能。）"
 
 msgid ""
-"Click the **Instance** button (represented by a chain link icon) and select "
-"your saved ``player.tscn``."
-msgstr ""
-"點擊 **產生實體** 按鈕（由鏈條圖示表示）並選擇保存的 ``player.tscn`` 。"
-
-msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown:"
 msgstr "現在，將下列節點新增為 ``Main`` 的子節點，並依照所示命名："
 
@@ -138,14 +132,6 @@ msgstr "現在場景看起來會這樣："
 
 msgid "Main script"
 msgstr "Main（主要）腳本"
-
-msgid ""
-"Add a script to ``Main``. At the top of the script, we use ``@export var "
-"mob_scene: PackedScene`` to allow us to choose the Mob scene we want to "
-"instance."
-msgstr ""
-"為 ``Main`` 新增一個腳本。在腳本的頂部，我們會用 ``export (PackedScene)`` 來"
-"選擇要實體化的 ``Mob`` 場景。"
 
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob Scene`` property in the "

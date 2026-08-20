@@ -14,14 +14,56 @@ msgstr ""
 msgid "KDevelop"
 msgstr "KDevelop"
 
+msgid ""
+"`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
+"desktop platforms."
+msgstr ""
+"O `KDevelop <https://www.kdevelop.org>`_ é uma IDE gratuita e de código "
+"aberto para todas as plataformas de desktop."
+
 msgid "Importing the project"
 msgstr "Importando o projeto"
+
+msgid "From the KDevelop's main screen select **Open Project**."
+msgstr "Na tela principal do KDevelop, selecione **Open Project**."
 
 msgid "KDevelop's main screen."
 msgstr "Tela principal do KDevelop."
 
+msgid "Navigate to the Godot root folder and select it."
+msgstr "Navegue até a pasta raiz do Godot e selecione-a."
+
+msgid ""
+"On the next screen, choose **Custom Build System** for the **Project "
+"Manager**."
+msgstr ""
+"Na próxima tela, escolha **Custom Build System** para o **Project Manager**."
+
+msgid ""
+"After the project has been imported, open the project configuration by right-"
+"clicking on it in the **Projects** panel and selecting **Open "
+"Configuration..** option."
+msgstr ""
+"Após o projeto ter sido importado, abra a configuração do projeto clicando "
+"com o botão direito nele no painel **Projects** e selecionando a opção "
+"**Open Configuration..**."
+
+msgid ""
+"Under **Language Support** open the **Includes/Imports** tab and add the "
+"following paths:"
+msgstr ""
+"Sob **Language Support**, abra a aba **Includes/Imports** e adicione os "
+"seguintes caminhos:"
+
 msgid "Apply the changes."
 msgstr "Aplique as alterações."
+
+msgid ""
+"Under **Custom Build System** add a new build configuration with the "
+"following settings:"
+msgstr ""
+"Sob **Custom Build System**, adicione uma nova configuração de compilação "
+"com as seguintes configurações:"
 
 msgid "Build Directory"
 msgstr "Construir Diretório"
@@ -50,8 +92,30 @@ msgstr ""
 "Veja :ref:`doc_introduction_to_the_buildsystem` para uma lista completa de "
 "parametros."
 
+msgid "Apply the changes and close the configuration window."
+msgstr "Aplique as alterações e feche a janela de configuração."
+
 msgid "Debugging the project"
 msgstr "Depurando o projeto"
+
+msgid "Select **Run > Configure Launches...** from the top menu."
+msgstr "Selecione **Run > Configure Launches...** no menu superior."
+
+msgid "Click **Add** to create a new launch configuration."
+msgstr "Clique em **Add** para criar uma nova configuração de lançamento."
+
+msgid ""
+"Select **Executable** option and specify the path to your executable located "
+"in the ``<Godot root directory>/bin`` folder. The name depends on your build "
+"configuration, e.g. ``godot.linuxbsd.editor.dev.x86_64`` for 64-bit LinuxBSD "
+"platform with ``platform=linuxbsd``, ``target=editor``, and "
+"``dev_build=yes``."
+msgstr ""
+"Selecione a opção **Executable** e especifique o caminho para o seu "
+"executável localizado na pasta ``<Diretório raiz do Godot>/bin``. O nome "
+"depende da sua configuração de compilação, por exemplo, "
+"``godot.linuxbsd.editor.dev.x86_64`` para a plataforma LinuxBSD de 64 bits "
+"com ``platform=linuxbsd``, ``target=editor`` e ``dev_build=yes``."
 
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "

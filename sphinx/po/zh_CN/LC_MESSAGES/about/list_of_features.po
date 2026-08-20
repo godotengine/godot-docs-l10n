@@ -121,6 +121,11 @@ msgid "Scene tree editor."
 msgstr "场景树编辑器。"
 
 msgid ""
+"Built-in script editor. Also supports editing text files and using custom "
+"syntax highlighters."
+msgstr "内置脚本编辑器。还支持编辑文本文件，并可使用自定义的语法高亮。"
+
+msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
@@ -129,6 +134,9 @@ msgstr ""
 
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript :ref:`调试器 <doc_debugger_panel>`\\ 。"
+
+msgid "Supports debugging in threads."
+msgstr "支持多线程调试。"
 
 msgid ""
 "Visual profiler with CPU and GPU time indications for each step of the "
@@ -143,17 +151,84 @@ msgstr ""
 "性能监视工具，包括\\ :ref:`自定义性能监视器 "
 "<doc_custom_performance_monitors>`\\ 。"
 
+msgid ""
+"Supports :ref:`tracing profilers <doc_tracing_profilers>` "
+"like :ref:`doc_profiler_tracy` and :ref:`doc_profiler_perfetto` for deeper "
+"optimization tasks."
+msgstr ""
+"支持诸如 :ref:`doc_profiler_tracy` 和 :ref:`doc_profiler_perfetto` 之类"
+"的 :ref:`tracing profilers <doc_tracing_profilers>` ，以进行更深入的优化任"
+"务。"
+
+msgid ""
+"Any script can be :ref:`run in the editor <doc_running_code_in_the_editor>` "
+"and provide custom functionality such as clickable buttons in the inspector, "
+"without needing to create an editor plugin."
+msgstr ""
+"任何脚本都可以在 :ref:`编辑器中运行 <doc_running_code_in_the_editor>` ，并提"
+"供自定义功能，例如在检查器中的可点击按钮，而无需创建编辑器插件。"
+
 msgid "Live script reloading."
 msgstr "脚本热重载。"
 
 msgid "Live scene editing."
 msgstr "场景热编辑。"
 
+msgid ""
+"Changes *will* reflect in the editor and *will* be kept after closing the "
+"running project."
+msgstr "更改 *将* 在编辑器中反映，并且在关闭运行中的项目后 *将* 保留。"
+
+msgid "Live camera replication (disabled by default)."
+msgstr "实时摄像头复制（默认禁用）。"
+
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr "移动编辑器中的相机，并在正在运行的项目中查看结果。"
 
 msgid "Remote inspector."
 msgstr "远程检查器。"
+
+msgid ""
+"Changes *won't* reflect in the editor and *won't* be kept after closing the "
+"running project."
+msgstr "更改 *不会* 在编辑器中反映，并且在关闭运行中的项目后 *不会* 被保留。"
+
+msgid ""
+"Run multiple simultaneous project instances from a single editor instance "
+"(useful for client/server testing)."
+msgstr ""
+"从单个编辑器实例中运行多个同时进行的项目实例（适用于客户端/服务器测试）。"
+
+msgid ""
+"Optional :ref:`game embedding <doc_game_embedding>` to run the project in a "
+"panel within the editor."
+msgstr "可选：在编辑器面板中运行项目 :ref:`游戏嵌入 <doc_game_embedding>`。"
+
+msgid ""
+"Select 2D and 3D nodes in the project's viewport to inspect them in the "
+"editor."
+msgstr "在项目的视图中选择2D和3D节点以在编辑器中检查它们。"
+
+msgid ""
+"Move the camera within the project using the 2D and 3D camera overrides."
+msgstr "使用 2D 和 3D 摄像机覆盖功能在项目中移动摄像机。"
+
+msgid "Supports time scale adjustments, pausing, and frame advance."
+msgstr "支持时间尺度调整、暂停和帧前进。"
+
+msgid "Supports muting the project."
+msgstr "支持屏蔽项目。"
+
+msgid "Ruler tool to measure distances in 2D and 3D."
+msgstr "一个用于测量二维和三维距离的尺子工具。"
+
+msgid "Vertex snapping support in 3D."
+msgstr "3D中的顶点合并支持。"
+
+msgid ""
+"Support for following the selection as it moves in 3D by using Focus "
+"Selection twice."
+msgstr "通过两次使用聚焦选择来支持跟随选择在3D空间中的移动。"
 
 msgid "Built-in offline class reference documentation."
 msgstr "内置离线类参考文档。"
@@ -165,25 +240,11 @@ msgid "**Plugins:**"
 msgstr "**插件：**"
 
 msgid ""
-"Editor plugins can be downloaded from the :ref:`asset library "
-"<doc_what_is_assetlib>` to extend editor functionality."
-msgstr ""
-"可以从\\ :ref:`资产库 <doc_what_is_assetlib>`\\ 下载编辑器插件，扩展编辑器的"
-"功能。"
-
-msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
 "使用 GDScript 来\\ :ref:`创建属于自己的插件 <doc_making_plugins>`\\ ，从而为"
 "引擎添加新功能或加速你的工作流。"
-
-msgid ""
-":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
-"in the Project Manager and import them directly."
-msgstr ""
-"在项目管理器中，\\ :ref:`从资产库下载项目 <doc_using_assetlib_editor>`\\ 并直"
-"接导入。"
 
 msgid "Rendering"
 msgstr "渲染"
@@ -360,6 +421,13 @@ msgstr ""
 "用于更好的辉光功能的可选 :ref:`2D HDR 渲染 "
 "<doc_environment_and_post_processing_using_glow_in_2d>`\\ 。"
 
+msgid "Optional debanding to reduce banding artifacts in gradients."
+msgstr "可选的去带以减少渐变中的带状伪影。"
+
+msgid ""
+":ref:`HDR output <doc_hdr_output>` on supported platforms and renderers."
+msgstr "在支持的平台和渲染器上 :ref:`HDR output <doc_hdr_output>`。"
+
 msgid "2D tools"
 msgstr "2D 工具"
 
@@ -407,6 +475,9 @@ msgstr "关节。"
 msgid "Areas to detect bodies entering or leaving it."
 msgstr "区域，用以检测实体进入或离开。"
 
+msgid ":ref:`Physics interpolation <doc_physics_interpolation>`."
+msgstr ":ref:`Physics interpolation <doc_physics_interpolation>`."
+
 msgid "**Collision detection:**"
 msgstr "**碰撞检测：**"
 
@@ -421,6 +492,9 @@ msgstr "碰撞多边形（可以人工绘制，或者在编辑器中根据精灵
 
 msgid "3D graphics"
 msgstr "3D 图形"
+
+msgid "Linear HDR internal lighting calculations."
+msgstr "线性HDR内部照明计算。"
 
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "透视、正交以及视锥偏移摄像机。"
@@ -471,9 +545,6 @@ msgstr "具有基于距离的自动细节层次的视差/浮雕贴图。"
 msgid "Detail mapping for the albedo and normal maps."
 msgstr "反照率及法线贴图的细节贴图。"
 
-msgid "Sub-surface scattering and transmittance."
-msgstr "次表面散射和透射率。"
-
 msgid ""
 "Screen-space refraction with support for material roughness (resulting in "
 "blurry refraction)."
@@ -494,9 +565,40 @@ msgid "**Real-time lighting:**"
 msgstr "**实时光照：**"
 
 msgid ""
+":ref:`Directional lights <doc_lights_and_shadows_directional_light>` (sun/"
+"moon)."
+msgstr ""
+":ref:`Directional lights <doc_lights_and_shadows_directional_light>` (太阳/月"
+"亮)."
+
+msgid ":ref:`Omnidirectional lights <doc_lights_and_shadows_omni_light>`."
+msgstr ":ref:`Omnidirectional lights <doc_lights_and_shadows_omni_light>`."
+
+msgid ""
+":ref:`Spot lights <doc_lights_and_shadows_spot_light>` with adjustable cone "
+"angle and attenuation."
+msgstr ""
+":ref:`Spot lights <doc_lights_and_shadows_spot_light>` 具有可调节的锥角和衰"
+"减。"
+
+msgid ""
+":ref:`Rectangular area lights <doc_lights_and_shadows_area_light>` with an "
+"optional texture to determine the shape and color."
+msgstr ""
+":ref:`Rectangular area lights <doc_lights_and_shadows_area_light>` 带有可选纹"
+"理以确定形状和颜色。"
+
+msgid ""
 "Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
 "light basis."
 msgstr "镜面反射、间接光和体积雾能量可以根据每个光源进行调整。"
+
+msgid ""
+"Adjustable light \"size\" for spherical omni and disc spot lights (will also "
+"make shadows blurrier with variable penumbra)."
+msgstr ""
+"可调节的 \"大小\" 适用于球形全向灯和碟形聚光灯（也会使阴影因可变本影而变得更"
+"模糊）。"
 
 msgid ""
 "Optional distance fade system to fade distant lights and their shadows, "
@@ -514,8 +616,37 @@ msgstr ""
 "使用 Forward+ 渲染器（桌面平台默认）时，光源通过集群前向优化渲染，以减少其单"
 "独的成本。集群渲染还消除了对网格上可使用的光源数量的任何限制。"
 
+msgid ""
+"When using the Mobile renderer, up to 8 omni lights, 8 spot lights, and 8 "
+"area lights can be displayed per mesh resource. Baked lighting can be used "
+"to overcome this limit if needed."
+msgstr ""
+"在移动渲染器中，每个网格资源最多可显示8个全向灯、8个聚光灯和8个区域灯。如有需"
+"要，可以使用烘焙照明来克服这个限制。"
+
 msgid "**Shadow mapping:**"
 msgstr "**阴影贴图：**"
+
+msgid ""
+"*DirectionalLight3D:* Orthogonal (fastest), PSSM 2-split and 4-split. "
+"Supports blending between splits."
+msgstr ""
+"*DirectionalLight3D:* 正交（最快），PSSM 2分割和4分割。支持分割之间的混合。"
+
+msgid ""
+"*OmniLight3D:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
+"Supports colored projector textures in the form of panoramas."
+msgstr ""
+"*OmniLight3D:* 双抛物面（快速）或立方体贴图（较慢但更准确）。支持以全景形式呈"
+"现的彩色投影纹理。"
+
+msgid "*SpotLight3D:* Single texture. Supports colored projector textures."
+msgstr "*SpotLight3D:* 单纹理。支持彩色投影纹理。"
+
+msgid ""
+"*AreaLight3D:* Single texture with dual paraboloid distortion to approximate "
+"the light's shape."
+msgstr "*AreaLight3D:* 使用单一纹理和双抛物面畸变来近似光线的形状。"
 
 msgid ""
 "Shadow normal offset bias and shadow pancaking to decrease the amount of "
@@ -523,6 +654,14 @@ msgid ""
 msgstr ""
 "要缓解可见的阴影失真和阴影悬浮的情况，可以调整阴影的法线偏移量偏置以及阴影压"
 "平。"
+
+msgid ""
+":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
+"light size and distance from the surface the shadow is cast on. Supported "
+"for all light types."
+msgstr ""
+":abbr:`PCSS (百分比更近的柔和阴影)`-类似于基于光源大小和阴影投射表面的距离的"
+"阴影模糊。支持所有光源类型。"
 
 msgid "Adjustable shadow blur on a per-light basis."
 msgstr "根据每个灯光调整阴影模糊。"
@@ -548,6 +687,40 @@ msgstr ""
 msgid ""
 "Supports lighting dynamic objects using automatic and manually placed probes."
 msgstr "支持使用自动和手动放置的探针照明动态物体。"
+
+msgid "Optionally supports directional lighting based on spherical harmonics."
+msgstr "可选择基于球谐函数的方向性照明支持。"
+
+msgid ""
+"Optionally supports baking a shadowmask for distant static directional "
+"shadows."
+msgstr "可选择性地为远处的静态定向阴影烘焙阴影掩码。"
+
+msgid ""
+"Optional supersampling at bake-time to improve quality and reduce light "
+"leaking at the cost of increased bake times and memory usage during baking."
+msgstr ""
+"可选的烘焙时超级采样以提高质量并减少光线泄漏，但会增加烘焙时间和内存使用。"
+
+msgid ""
+"Lightmaps are baked on the GPU using compute shaders (much faster than CPU "
+"lightmapping). Baking can only be performed from the editor, not in exported "
+"projects."
+msgstr ""
+"光照贴图是在GPU上使用计算着色器烘焙的（比CPU光照贴图快得多）。烘焙只能在编辑"
+"器中执行，不能在导出的项目中执行。"
+
+msgid ""
+"Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
+"JNLM out of the box, or higher-quality CPU/GPU-based denoising with OIDN "
+"(requires downloading OIDN separately)."
+msgstr ""
+"支持开箱即用的基于GPU的 :ref:`denoising <doc_using_lightmap_gi_denoising>`，"
+"使用JNLM，或者通过单独下载OIDN来实现更高质量的基于CPU/GPU的去噪。"
+
+msgid ""
+"Lightmaps are rendered with bicubic filtering to reduce scaling artifacts."
+msgstr "光照贴图使用双三次过滤渲染以减少缩放伪影。"
 
 msgid ""
 ":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
@@ -844,6 +1017,25 @@ msgid ""
 "Filtering options are defined on a per-use basis, not a per-texture basis."
 msgstr "过滤选项是根据每个用途定义的，而不是根据每个纹理定义的。"
 
+msgid "**Texture VRAM compression:**"
+msgstr "**Texture VRAM compression:**"
+
+msgid "BPTC (for high-quality compression targeting desktop platforms)."
+msgstr "BPTC (针对桌面平台的高质量压缩)."
+
+msgid "ASTC (for high-quality compression targeting mobile platforms)."
+msgstr "ASTC (针对移动平台的高质量压缩)."
+
+msgid "ETC2 (for fast compression targeting mobile platforms)."
+msgstr "ETC2 (针对移动平台的快速压缩)。"
+
+msgid "S3TC (for fast compression targeting desktop platforms)."
+msgstr "S3TC （针对桌面平台进行快速压缩）。"
+
+msgid ""
+"Basis Universal (slow, but only requires one encoding for all platforms)."
+msgstr "Basis Universal(慢速，但只需为所有平台进行一次编码)。"
+
 msgid "**Antialiasing:**"
 msgstr "**抗锯齿：**"
 
@@ -891,6 +1083,14 @@ msgid ""
 msgstr ""
 "支持\\ :ref:`以较低分辨率渲染 3D <doc_resolution_scaling>`\\ ，同时保持原始比"
 "例的 2D 渲染。 这可用于提高低端系统的性能或改善高端系统的视觉效果。"
+
+msgid ""
+"Resolution scaling uses nearest-neighbor filtering, bilinear filtering, AMD "
+"FidelityFX Super Resolution 1.0 (FSR1), or AMD FidelityFX Super Resolution "
+"2.2.1 (FSR2)."
+msgstr ""
+"分辨率缩放使用最近邻过滤、双线性过滤、AMD FidelityFX Super Resolution 1.0 "
+"(FSR1) 或 AMD FidelityFX Super Resolution 2.2.1 (FSR2)。"
 
 msgid ""
 "Texture mipmap LOD bias is adjusted automatically to improve quality at "
@@ -974,12 +1174,28 @@ msgstr "着色器"
 msgid "*2D:* Custom vertex, fragment, and light shaders."
 msgstr "*2D：*\\ 自定义顶点、片段和灯光着色器。"
 
+msgid "*3D:* Custom vertex, fragment, light, sky, and fog shaders."
+msgstr "*3D:* 自定义顶点、片元、光照、天空和雾化着色器。"
+
+msgid ""
+"Custom shaders can procedurally generate and modify textures in real-time "
+"using :ref:`class_DrawableTexture2D`."
+msgstr ""
+"自定义着色器可以使用 :ref:`class_DrawableTexture2D` 实时地程序化生成和修改纹"
+"理。"
+
 msgid ""
 "Text-based shaders using a :ref:`shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
 "基于文本的着色器，使用\\ :ref:`由 GLSL 启发的着色器语言 "
 "<doc_shading_language>`\\ 。"
+
+msgid ""
+"Syntax highlighting is provided on GitHub by using ``gdshader`` as the "
+"language name in a Markdown code block."
+msgstr ""
+"在GitHub上通过在Markdown代码块中使用 ``gdshader`` 作为语言名称提供语法高亮。"
 
 msgid "Visual shader editor."
 msgstr "可视化着色器编辑器。"
@@ -1020,6 +1236,13 @@ msgstr ""
 msgid ""
 "Syntax inspired by Python. However, GDScript is **not** based on Python."
 msgstr "语法受 Python 启发。但是，GDScript **并不**\\ 基于 Python。"
+
+msgid ""
+"Syntax highlighting is provided on GitHub by using ``gdscript`` as the "
+"language name in a Markdown code block."
+msgstr ""
+"语法高亮是通过在 Markdown 代码块中使用 ``gdscript`` 作为语言名称在 GitHub 上"
+"提供的。"
 
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
@@ -1112,6 +1335,11 @@ msgid ""
 msgstr ""
 "支持可重路由的\\ :ref:`音频总线 <doc_audio_buses>`\\ 和包含数十种效果的效果。"
 
+msgid ""
+"Support for polyphony (playing several sounds from a "
+"single :ref:`class_AudioStreamPlayer` node)."
+msgstr "支持复音（从单个 :ref:`class_AudioStreamPlayer` 节点播放多个声音）。"
+
 msgid "Support for random volume and pitch."
 msgstr "支持随机音量和音高。"
 
@@ -1122,6 +1350,13 @@ msgid ""
 "Support for sequential/random sample selection, including repetition "
 "prevention when using random sample selection."
 msgstr "支持顺序 / 随机采样，包括在随机采样时的重复预防。"
+
+msgid ""
+":ref:`class_AudioListener2D` and :ref:`class_AudioListener3D` nodes to "
+"listen from a position different from the camera."
+msgstr ""
+":ref:`class_AudioListener2D` 和 :ref:`class_AudioListener3D` 节点，用于从与相"
+"机不同的位置进行监听。"
 
 msgid ""
 "Support for :ref:`procedural audio generation <class_AudioStreamGenerator>`."
@@ -1167,6 +1402,10 @@ msgstr "*图片：*\\ 见\\ :ref:`doc_importing_images`\\ 。"
 
 msgid "*Audio:*"
 msgstr "*音频：*"
+
+msgid ""
+"WAV with optional :abbr:`QOA (Quite OK Audio)` or IMA-ADPCM compression."
+msgstr "WAV格式支持可选的 :abbr:`QOA (Quite OK Audio)` 或IMA-ADPCM压缩。"
 
 msgid "Ogg Vorbis."
 msgstr "Ogg Vorbis。"
@@ -1245,6 +1484,41 @@ msgid ""
 "The mouse cursor can be visible, hidden, captured or confined within the "
 "window."
 msgstr "鼠标光标可以是可见的、隐藏的、被捕获的或被限制在窗口内的。"
+
+msgid ""
+"The mouse cursor's appearance can be changed to a custom image or one of the "
+"system cursors."
+msgstr "鼠标光标的样式可以更改为自定义图像或系统光标之一。"
+
+msgid ""
+"When captured, raw input is used on Windows and Linux to sidestep the OS' "
+"mouse acceleration settings."
+msgstr ""
+"在捕获时，原始输入在 Windows 和 Linux 上用于绕过操作系统的鼠标加速设置。"
+
+msgid ""
+":ref:`Gamepad input <doc_controllers_gamepads_joysticks>` (up to 8 "
+"simultaneous controllers)."
+msgstr ""
+":ref:`Gamepad input <doc_controllers_gamepads_joysticks>` (最多8个同时控制"
+"器)."
+
+msgid ""
+"Support for :ref:`changing the LED color "
+"<doc_controller_features_led_color>` on supported controllers."
+msgstr ""
+"支持在支持的控制器上 :ref:`更改LED颜色 <doc_controller_features_led_color>`。"
+
+msgid ""
+"Support for :ref:`reading motion sensors "
+"<doc_controller_features_motion_sensors>` on supported controllers (used to "
+"implement gyro aiming)."
+msgstr ""
+"在支持的控制器上支持 :ref:`reading motion sensors "
+"<doc_controller_features_motion_sensors>` （用于实现陀螺瞄准）。"
+
+msgid "Pen/tablet input with pressure and tilt support."
+msgstr "带有压力和倾斜支持的手写笔/平板输入。"
 
 msgid "Navigation"
 msgstr "导航"
@@ -1366,6 +1640,13 @@ msgstr ""
 msgid "Automatic UI mirroring for right-to-left locales."
 msgstr "用于从右到左区域设置的自动 UI 镜像。"
 
+msgid ""
+"Support for :ref:`pseudolocalization <doc_pseudolocalization>` to test your "
+"project for i18n-friendliness."
+msgstr ""
+"支持 :ref:`pseudolocalization <doc_pseudolocalization>` 来测试你的项目是否国"
+"际友好。"
+
 msgid "Windowing and OS integration"
 msgstr "窗口功能与操作系统整合"
 
@@ -1387,16 +1668,6 @@ msgstr ""
 msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
 msgstr "吸引注意（在大多数平台上表现为标题栏闪烁）。"
-
-msgid "Fullscreen mode."
-msgstr "全屏模式。"
-
-msgid ""
-"Uses borderless fullscreen by default on Windows for fast alt-tabbing, but "
-"can optionally use exclusive fullscreen to reduce input lag."
-msgstr ""
-"在 Windows 上，默认情况下使用无边框全屏进行快速切换，但也可以选择使用独占全屏"
-"来减少输入滞后。"
 
 msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "无边框窗口（全屏或非全屏）。"
@@ -1461,6 +1732,13 @@ msgid "Mobile"
 msgstr "移动端"
 
 msgid ""
+":ref:`Virtual joystick <class_VirtualJoystick>` and :ref:`buttons "
+"<class_TouchScreenButton>` for touch input."
+msgstr ""
+":ref:`Virtual joystick <class_VirtualJoystick>` 和 :ref:`buttons "
+"<class_TouchScreenButton>` 用于触摸输入。"
+
+msgid ""
 "In-app purchases on :ref:`Android <doc_android_in_app_purchases>` and `iOS "
 "<https://github.com/godot-sdk-integrations/godot-storekit2>`_."
 msgstr ""
@@ -1470,28 +1748,11 @@ msgstr ""
 msgid "Support for advertisements using third-party modules."
 msgstr "支持使用第三方模块的广告。"
 
+msgid "Support for picture-in-picture mode on Android."
+msgstr "Android画中画模式支持。"
+
 msgid "XR support (AR and VR)"
 msgstr "XR 支持（AR 和 VR）"
-
-msgid "Out of the box :ref:`support for OpenXR <doc_setting_up_xr>`."
-msgstr "开箱即用的 :ref:`OpenXR 支持 <doc_setting_up_xr>`\\ 。"
-
-msgid ""
-"Including support for popular desktop headsets like the Valve Index, WMR "
-"headsets, and Quest over Link."
-msgstr ""
-"包括对流行的桌面 VR 头显的支持，例如 Valve Index、WMR 头显和 Quest over "
-"Link。"
-
-msgid ""
-"Support for :ref:`Android-based headsets <doc_deploying_to_android>` using "
-"OpenXR through a plugin."
-msgstr ""
-"通过插件，使用 OpenXR 支持\\ :ref:`基于 Android 的头显 "
-"<doc_deploying_to_android>`\\ 。"
-
-msgid "Out of the box limited support for visionOS Apple headsets."
-msgstr "对 Apple visionOS 头戴式设备的开箱即用支持有限。"
 
 msgid ""
 "Currently only exporting an application for use on a flat plane within the "
@@ -1525,6 +1786,21 @@ msgstr "按钮。"
 msgid "Checkboxes, check buttons, radio buttons."
 msgstr "复选框、复选按钮、单选按钮。"
 
+msgid ""
+"Text entry using :ref:`class_LineEdit` (single line), :ref:`class_TextEdit` "
+"(multiple lines), and :ref:`class_CodeEdit` (supports syntax highlighting, "
+"line numbers, and more)."
+msgstr ""
+"使用 :ref:`class_LineEdit` (单行)、:ref:`class_TextEdit` (多行) "
+"和 :ref:`class_CodeEdit` (支持语法高亮、行号等)。"
+
+msgid ""
+"Dropdown menus using :ref:`class_PopupMenu` and :ref:`class_OptionButton` "
+"with support for an optional search bar."
+msgstr ""
+"使用 :ref:`class_PopupMenu` 和 :ref:`class_OptionButton` 的下拉菜单，支持可选"
+"的搜索栏。"
+
 msgid "Scrollbars."
 msgstr "滚动条。"
 
@@ -1541,8 +1817,16 @@ msgstr ""
 msgid "Trees (can also be used to represent tables)."
 msgstr "树（也可用于显示表格）。"
 
+msgid ""
+"Color picker with RGB, HSV, and OKHSL modes, as well as custom color "
+"palettes."
+msgstr "带有RGB、HSV和OKHSL模式的颜色选择器，以及自定义调色板。"
+
 msgid "Controls can be rotated and scaled."
 msgstr "控件可以被旋转和缩放。"
+
+msgid "Drag-and-drop support."
+msgstr "拖放支持。"
 
 msgid "**Sizing:**"
 msgstr "**调整大小：**"
@@ -1574,6 +1858,9 @@ msgstr ""
 
 msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
 msgstr ":ref:`可拖拽分割器 <class_SplitContainer>`\\ 布局。"
+
+msgid ":ref:`Foldable section <class_FoldableContainer>` layouts."
+msgstr ":ref:`Foldable section <class_FoldableContainer>` 布局。"
 
 msgid ""
 "Scale to :ref:`multiple resolutions <doc_multiple_resolutions>` using the "

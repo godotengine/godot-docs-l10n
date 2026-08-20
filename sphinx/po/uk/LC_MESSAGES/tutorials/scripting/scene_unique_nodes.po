@@ -78,15 +78,6 @@ msgid "Same-scene limitation"
 msgstr "Обмеження однієї сцени"
 
 msgid ""
-"A scene unique node can only be retrieved by a node inside the same scene. "
-"To demonstrate this limitation, consider this example **Player** scene that "
-"instances a **Sword** scene:"
-msgstr ""
-"Унікальний вузол сцени може бути отриманий лише вузлом усередині тієї самої "
-"сцени. Щоб продемонструвати це обмеження, розглянемо цей приклад сцени "
-"**Гравець**, яка встановлює сцену **Меч**:"
-
-msgid ""
 "Here are the results of ``get_node()`` calls inside the **Player** script:"
 msgstr "Ось результати викликів ``get_node()`` всередині сценарію **Player**:"
 

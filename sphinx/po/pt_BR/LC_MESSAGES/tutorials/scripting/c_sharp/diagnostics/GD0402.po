@@ -11,5 +11,71 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0402: The class must not be generic"
+msgstr "GD0402: A classe não deve ser genérica"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0402"
+msgstr "GD0402"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Breaking"
+msgstr "Quebra compatibilidade (Breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid "A generic type is annotated with the ``[GlobalClass]`` attribute."
+msgstr "Um tipo genérico está anotado com o atributo ``[GlobalClass]``."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid ""
+"The Godot editor assumes every :ref:`global class "
+"<doc_c_sharp_global_classes>` is instantiable, but generic types can't be "
+"instantiated because the type parameters are unbound."
+msgstr ""
+"O editor do Godot assume que toda :ref:`classe global "
+"<doc_c_sharp_global_classes>` é instanciável, mas tipos genéricos não podem "
+"ser instanciados porque os parâmetros de tipo não estão vinculados."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, change the type to remove the generic type "
+"parameters or remove the ``[GlobalClass]`` attribute."
+msgstr ""
+"Para corrigir uma violação desta regra, altere o tipo para remover os "
+"parâmetros de tipo genérico ou remova o atributo ``[GlobalClass]``."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Adding the ``[GlobalClass]`` to a "
+"generic type is an easy mistake to make and this warning helps users realize "
+"that it may result in unexpected errors."
+msgstr ""
+"Não suprima um aviso desta regra. Adicionar o ``[GlobalClass]`` a um tipo "
+"genérico é um erro fácil de cometer e este aviso ajuda os usuários a "
+"perceberem que isso pode resultar em erros inesperados."

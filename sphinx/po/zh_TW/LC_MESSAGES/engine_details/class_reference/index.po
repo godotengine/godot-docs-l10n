@@ -53,29 +53,6 @@ msgstr ""
 "你需要先了解它們在 Godot 原始碼中的運作方式，然後在下列標籤中補充或完善其說"
 "明："
 
-msgid "`<brief_description>`"
-msgstr "`<brief_description>`"
-
-msgid "`<description>`"
-msgstr "`<description>`"
-
-msgid "`<constant>`"
-msgstr "`<constant>`"
-
-msgid ""
-"`<method>` (in its `<description>` tag; return types and arguments don't "
-"take separate documentation strings)"
-msgstr ""
-"`<method>`（在其 `<description>` 標籤內，回傳型別及參數不需另外寫說明）"
-
-msgid "`<member>`"
-msgstr "`<member>`"
-
-msgid ""
-"`<signal>` (in its `<description>` tag; arguments don't take separate "
-"documentation strings)"
-msgstr "`<signal>`（在其 `<description>` 標籤內，參數不需另外寫說明）"
-
 msgid ""
 "Write in a clear and simple language. Always follow the `writing guidelines "
 "<https://contributing.godotengine.org/en/latest/documentation/guidelines/"
@@ -109,15 +86,6 @@ msgstr ""
 "料夾中找到 XML 檔案。"
 
 msgid ""
-"Edit it using your favorite text editor. If you use a code editor, make sure "
-"that it doesn't change the indent style: you should use tabs for the XML and "
-"four spaces inside BBCode-style blocks. More on that below."
-msgstr ""
-"請用你喜歡的文字編輯器編輯這些檔案。若使用程式碼編輯器，請確保不要改變縮排格"
-"式：XML 應使用 Tab 字元縮排，BBCode 樣式區塊內則應使用四個空白縮排。詳情請見"
-"下方說明。"
-
-msgid ""
 "To check that the modifications you've made are correct in the generated "
 "documentation, navigate to the ``doc/`` folder and run the command ``make "
 "rst``. This will convert the XML files to the online documentation's format "
@@ -125,14 +93,6 @@ msgid ""
 msgstr ""
 "要確認你的修改在產生的文件中是否正確，請進入 ``doc/`` 資料夾並執行 ``make "
 "rst`` 指令。這會將 XML 檔案轉換為線上文件格式，若有錯誤會顯示錯誤訊息。"
-
-msgid ""
-"Alternatively, you can build Godot and open the modified page in the built-"
-"in code reference. To learn how to compile the engine, read "
-"the :ref:`compilation guide <toc-devel-compiling>`."
-msgstr ""
-"你也可以編譯 Godot，並在內建的類別參考中開啟你修改過的頁面。如需學習如何編譯"
-"引擎，請參考 :ref:`compilation guide <toc-devel-compiling>`。"
 
 msgid ""
 "We recommend using a code editor that supports XML files like Vim, Atom, "
@@ -263,9 +223,6 @@ msgstr "連結至建構子"
 msgid "``Use [constructor Color.Color].``"
 msgstr "``使用 [constructor Color.Color]。``"
 
-msgid "Use  :ref:`Color.Color <class_Color_constructor_Color>`."
-msgstr "使用 :ref:`Color.Color <class_Color_constructor_Color>`。"
-
 msgid "``[operator Class.name]``"
 msgstr "``[operator Class.name]``"
 
@@ -274,9 +231,6 @@ msgstr "連結至運算子"
 
 msgid "``Use [operator Color.operator *].``"
 msgstr "``使用 [operator Color.operator *]。``"
-
-msgid "Use  :ref:`Color.operator * <class_Color_operator_mul_int>`."
-msgstr "使用 :ref:`Color.operator * <class_Color_operator_mul_int>`。"
 
 msgid "``[signal Class.name]``"
 msgstr "``[signal Class.name]``"
@@ -493,13 +447,6 @@ msgstr "``[codeblock lang=csharp]`` 會高亮 C# 語法（僅 .NET 版本適用�
 msgid ""
 "``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
 msgstr "``[codeblock]`` 會停用 BBCode，直到解析器遇到 ``[/codeblock]`` 為止。"
-
-msgid ""
-"Use ``[codeblock]`` for pre-formatted code blocks. Since Godot 4.5, **tabs** "
-"should be used for indentation."
-msgstr ""
-"請用 ``[codeblock]`` 來標記預先格式化的程式碼區塊。自 Godot 4.5 起，縮排應使"
-"用 **Tab**。"
 
 msgid "For example:"
 msgstr "例如："

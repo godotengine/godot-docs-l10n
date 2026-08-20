@@ -516,9 +516,11 @@ msgstr ""
 msgid "Global built-ins"
 msgstr "Глобальні вбудовані функції"
 
-msgid "Global built-ins are available everywhere, including custom functions."
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
 msgstr ""
-"Глобальні вбудовані функції доступні скрізь, включаючи спеціальні функції."
+"Глобальні вбудовані засоби доступні скрізь, у тому числі в користувацьких "
+"функціях."
 
 msgid "Built-in"
 msgstr "Вбудований"
@@ -674,15 +676,6 @@ msgid ""
 msgstr ""
 "Для створення екземплярів змінна ``INSTANCE_CUSTOM`` містить користувацькі "
 "дані екземпляра. При використанні частинок ця інформація зазвичай така:"
-
-msgid "**x**: Rotation angle in radians."
-msgstr "**x**: Кут повороту в радіанах."
-
-msgid "**y**: Phase during lifetime (``0.0`` to ``1.0``)."
-msgstr "**y**: Фаза протягом життя (``0,0`` до ``1,0``)."
-
-msgid "**z**: Animation frame."
-msgstr "**z**: рамка анімації."
 
 msgid ""
 "This allows you to easily adjust the shader to a particle system using "
@@ -1349,12 +1342,6 @@ msgstr ""
 "Маленька дзеркальна крапка додана поверх існуючої. Якщо використовується, "
 "Godot розраховує прозорий лак."
 
-msgid "out float **CLEARCOAT_GLOSS**"
-msgstr "Out float **CLEARCOAT_GLOSS**"
-
-msgid "Gloss of clearcoat. If used, Godot calculates clearcoat."
-msgstr "Блиск лаку. Якщо використовується, Godot розраховує прозорий лак."
-
 msgid "out float **ANISOTROPY**"
 msgstr "Out float **ANISOTROPY**"
 
@@ -1399,14 +1386,6 @@ msgstr ""
 
 msgid "out float **SSS_TRANSMITTANCE_BOOST**"
 msgstr "Out float **SSS_TRANSMITTANCE_BOOST**"
-
-msgid ""
-"Boosts the subsurface scattering transmittance if set above ``0.0``. This "
-"makes the effect show up even on directly lit surfaces"
-msgstr ""
-"Збільшує пропускну здатність підповерхневого розсіювання, якщо встановлено "
-"вище ``0.0``. Завдяки цьому ефект помітний навіть на прямо освітлених "
-"поверхнях"
 
 msgid "inout vec3 **BACKLIGHT**"
 msgstr "Inout vec3 **BACKLIGHT**"

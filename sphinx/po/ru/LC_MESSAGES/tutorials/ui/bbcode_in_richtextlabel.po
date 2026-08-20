@@ -31,20 +31,6 @@ msgstr ""
 "использовать :ref:`class_RichTextLabel`."
 
 msgid ""
-":ref:`class_RichTextLabel` allows for complex formatting of text using a "
-"markup syntax or the built-in API. It uses BBCodes for the markup syntax, a "
-"system of tags that designate formatting rules for a part of the text. You "
-"may be familiar with them if you ever used forums (also known as `bulletin "
-"boards`, hence the \"BB\" in \"BBCode\")."
-msgstr ""
-":ref:`class_RichTextLabel` позволяет осуществлять сложное форматирование "
-"текста с помощью синтаксиса разметки или встроенного API. Для синтаксиса "
-"разметки используются BBCodes — система тегов, определяющих правила "
-"форматирования фрагментов текста. Возможно, вы знакомы с ними, если когда-"
-"либо пользовались форумами (также известными как `bulletin boards`, отсюда и "
-"«BB» в «BBCode»)."
-
-msgid ""
 "Unlike Label, RichTextLabel also comes with its own vertical scrollbar. This "
 "scrollbar is automatically displayed if the text does not fit within the "
 "control's size. The scrollbar can be disabled by unchecking the **Scroll "
@@ -94,6 +80,28 @@ msgstr ""
 
 msgid "Using BBCode"
 msgstr "Использование BBCode"
+
+msgid ""
+"By default, :ref:`class_RichTextLabel` functions like a "
+"normal :ref:`class_Label`. It has the :ref:`text "
+"<class_RichTextLabel_property_text>` property, which you can edit to have "
+"uniformly formatted text. To be able to use BBCode for rich text formatting, "
+"you need to turn on the BBCode mode by setting :ref:`bbcode_enabled "
+"<class_RichTextLabel_property_bbcode_enabled>`. After that, you can edit "
+"the :ref:`text <class_RichTextLabel_property_text>` property using available "
+"tags. Both properties are located at the top of the inspector after "
+"selecting a RichTextLabel node."
+msgstr ""
+"По умолчанию :ref:`class_RichTextLabel` функционирует как "
+"обычный :ref:`class_Label`. У него есть свойство :ref:`text "
+"<class_RichTextLabel_property_text>`, которое можно редактировать для "
+"получения единообразно отформатированного текста. Чтобы использовать BBCode "
+"для форматирования богатого текста, необходимо включить режим BBCode, "
+"установив :ref:`bbcode_enabled "
+"<class_RichTextLabel_property_bbcode_enabled>`. После этого можно "
+"редактировать свойство :ref:`text <class_RichTextLabel_property_text>` с "
+"помощью доступных тегов. Оба свойства расположены в верхней части инспектора "
+"после выбора узла RichTextLabel."
 
 msgid ""
 "For example, ``BBCode [color=green]test[/color]`` would render the word "
@@ -158,18 +166,6 @@ msgstr ""
 "форматирования, которое может привести к проблемам, если теги ``[url]`` "
 "обрабатываются вашим RichTextLabel (поскольку игроки могут создавать "
 "кликабельные ссылки на фишинговые сайты и т.п.)."
-
-msgid ""
-"Using RichTextLabel's ``[lb]`` and/or ``[rb]`` tags, we can replace the "
-"opening and/or closing brackets of any BBCode tag in a message with those "
-"escaped tags. This prevents users from using BBCode that will be parsed as "
-"tags – instead, the BBCode will be displayed as text."
-msgstr ""
-"Используя теги ``[lb]`` and/or ``[rb]`` класса RichTextLabel, мы можем "
-"заменить открывающие и/или закрывающие скобки любого тега BBCode в сообщении "
-"этими экранированными тегами. Это предотвращает использование пользователями "
-"BBCode, которые будут интерпретированы как теги — вместо этого BBCode будет "
-"отображаться как текст."
 
 msgid ""
 "Example of unescaped user input resulting in BBCode injection (2nd line) and "
@@ -352,11 +348,17 @@ msgstr "**u**"
 msgid "Makes ``{text}`` underlined."
 msgstr "Делает ``{text}`` подчеркнутым."
 
+msgid "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
+msgstr "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
+
 msgid "**s**"
 msgstr "**s**"
 
 msgid "Makes ``{text}`` strikethrough."
 msgstr "Делает ``{text}`` зачеркнутым."
+
+msgid "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
+msgstr "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
 
 msgid "**code**"
 msgstr "**code**"
@@ -490,6 +492,15 @@ msgid "**url**"
 msgstr "**url**"
 
 msgid ""
+"Creates a hyperlink (underlined and clickable text). Can contain optional "
+"``{text}`` or display ``{link}`` as is. Supports configuration options, "
+"see :ref:`doc_bbcode_in_richtextlabel_url_options`."
+msgstr ""
+"Создаёт гиперссылку (подчёркнутый и интерактивный текст). Может содержать "
+"необязательный ``{text}`` или отображать ``{link}`` как есть. Поддерживает "
+"параметры конфигурации, см. :ref:`doc_bbcode_in_richtextlabel_url_options`."
+
+msgid ""
 "**Must be handled with the \"meta_clicked\" signal to have an effect,** "
 "see :ref:`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
 msgstr ""
@@ -501,6 +512,9 @@ msgstr "``[url]{link}[/url]``"
 
 msgid "``[url={link}]{text}[/url]``"
 msgstr "``[url={link}]{text}[/url]``"
+
+msgid "``[url {options}]{text}[/url]``"
+msgstr "``[url {options}]{text}[/url]``"
 
 msgid "**hint**"
 msgstr "**hint**"
@@ -553,6 +567,15 @@ msgid ""
 msgstr ""
 "Добавьте ``%`` в конец значения ``{width}`` или ``{height}``, чтобы указать "
 "его в процентах от ширины элемента управления, а не в пикселях."
+
+msgid ""
+"Add ``em`` to the end of ``{width}`` or ``{height}`` value to specify it as "
+"a ratio of the current font size. For example, ``height=1em`` will make the "
+"image as tall as the surrounding text."
+msgstr ""
+"Добавьте ``em`` в конец значения ``{width}`` или ``{height}``, чтобы указать "
+"его как отношение к текущему размеру шрифта. Например, ``height=1em`` "
+"сделает изображение такой же высоты, как окружающий текст."
 
 msgid ""
 "If ``{valign}`` configuration is provided, the image will try to align to "
@@ -804,6 +827,10 @@ msgstr ""
 "Если используется выравнивание по базовой линии, таблица выравнивается по "
 "базовой линии строки с индексом ``{alignment_row}`` (с нуля)."
 
+msgid "``{name}`` is a table name for assistive apps (screen reader)."
+msgstr ""
+"``{name}`` — это имя таблицы для вспомогательных приложений (скринридер)."
+
 msgid "``[table={number}]{cells}[/table]``"
 msgstr "``[table={number}]{cells}[/table]``"
 
@@ -812,6 +839,11 @@ msgstr "``[table={number},{valign}]{cells}[/table]``"
 
 msgid "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
 msgstr "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
+
+msgid ""
+"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
+msgstr ""
+"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
 
 msgid "**cell**"
 msgstr "**cell**"
@@ -990,18 +1022,12 @@ msgstr "Параметры абзаца"
 msgid "**align**"
 msgstr "**align**"
 
-msgid "`Values`"
-msgstr "`Values`"
-
 msgid ""
 "``left`` (or ``l``), ``center`` (or ``c``), ``right`` (or ``r``), ``fill`` "
 "(or ``f``)"
 msgstr ""
 "``left`` (или ``l``), ``center`` (или ``c``), ``right`` (или ``r``), "
 "``fill`` (или ``f``)"
-
-msgid "`Default`"
-msgstr "`Default`"
 
 msgid "``left``"
 msgstr "``left``"
@@ -1028,17 +1054,6 @@ msgstr "Переопределение структурированного те
 
 msgid "**justification_flags**, **jst**"
 msgstr "**justification_flags**, **jst**"
-
-msgid ""
-"Comma-separated list of the following values (no space after each comma): "
-"``kashida`` (or ``k``), ``word`` (or ``w``), ``trim`` (or ``tr``), "
-"``after_last_tab`` (or ``lt``), ``skip_last`` (or ``sl``), "
-"``skip_last_with_chars`` (or ``sv``),  ``do_not_skip_single`` (or ``ns``)."
-msgstr ""
-"Список следующих значений, разделенных запятыми (без пробела после каждой "
-"запятой): ``kashida`` (или ``k``), ``word`` (или ``w``), ``trim`` (или "
-"``tr``), ``after_last_tab`` (или ``lt``), ``skip_last`` (или ``sl``), "
-"``skip_last_with_chars`` (или ``sv``), ``do_not_skip_single`` (или ``ns``)."
 
 msgid "``word,kashida,skip_last,do_not_skip_single``"
 msgstr "``word,kashida,skip_last,do_not_skip_single``"
@@ -1181,14 +1196,89 @@ msgstr "``left`` (или ``l``), ``center`` (или ``c``), ``right`` (или ``
 msgid "Horizontal alignment."
 msgstr "Горизонтальное выравнивание."
 
+msgid "URL options"
+msgstr "Параметры URL"
+
+msgid "**underline**"
+msgstr "**underline**"
+
+msgid "``always``, ``never``, ``hover``"
+msgstr "``always``, ``never``, ``hover``"
+
+msgid "``always``"
+msgstr "``always``"
+
+msgid "URL underlining mode."
+msgstr "Режим подчёркивания URL."
+
 msgid "**tooltip**"
 msgstr "**tooltip**"
+
+msgid "String."
+msgstr "Строка."
+
+msgid "URL tooltip."
+msgstr "Всплывающая подсказка URL."
+
+msgid "**href**"
+msgstr "**href**"
+
+msgid "URL target address."
+msgstr "Адрес назначения URL."
 
 msgid "Image options"
 msgstr "Image options"
 
 msgid "Color tint of the image (modulation)."
 msgstr "Цветовой оттенок изображения (модуляция)."
+
+msgid "Floating-point number"
+msgstr "Число с плавающей точкой"
+
+msgid "Target height of the image in pixels."
+msgstr "Целевая высота изображения в пикселях."
+
+msgid "Alternative units to pixels can be specified:"
+msgstr "Можно указать альтернативные единицы вместо пикселей:"
+
+msgid ""
+"Add ``%`` to the end of the value to specify it as a percentage of the "
+"control width instead of pixels. For example, ``height=50%`` will make the "
+"image half as tall as the control is wide."
+msgstr ""
+"Добавьте ``%`` в конец значения, чтобы указать его в процентах от ширины "
+"элемента управления, а не в пикселях. Например, ``height=50%`` сделает "
+"изображение высотой в половину ширины элемента управления."
+
+msgid ""
+"Add ``em`` to the end of the value to specify it as a ratio of the "
+"surrounding font size instead of pixels. For example, ``height=1em`` will "
+"make the image as tall as the surrounding text."
+msgstr ""
+"Добавьте ``em`` в конец значения, чтобы указать его как отношение к "
+"окружающему размеру шрифта вместо пикселей. Например, ``height=1em`` сделает "
+"изображение такой же высоты, как окружающий текст."
+
+msgid "Target width of the image in pixels."
+msgstr "Целевая ширина изображения в пикселях."
+
+msgid ""
+"Add ``%`` to the end of the value to specify it as a percentage of the "
+"control width instead of pixels. For example, ``width=50%`` will make the "
+"image take up half of the control width."
+msgstr ""
+"Добавьте ``%`` в конец значения, чтобы указать его в процентах от ширины "
+"элемента управления, а не в пикселях. Например, ``width=50%`` сделает "
+"изображение шириной в половину ширины элемента управления."
+
+msgid ""
+"Add ``em`` to the end of the value to specify it as a ratio of the "
+"surrounding font size instead of pixels. For example, ``width=1em`` will "
+"make the image as wide as the surrounding text is tall."
+msgstr ""
+"Добавьте ``em`` в конец значения, чтобы указать его как отношение к "
+"окружающему размеру шрифта вместо пикселей. Например, ``width=1em`` сделает "
+"изображение шириной, равной высоте окружающего текста."
 
 msgid "**region**"
 msgstr "**region**"
@@ -1226,6 +1316,21 @@ msgstr "Строка"
 
 msgid "Image tooltip."
 msgstr "Подсказка к изображению."
+
+msgid "see :ref:`doc_bbcode_in_richtextlabel_image_and_table_alignment`"
+msgstr "см. :ref:`doc_bbcode_in_richtextlabel_image_and_table_alignment`"
+
+msgid "``center,center``"
+msgstr "``center,center``"
+
+msgid "Image alignment to the surrounding text."
+msgstr "Выравнивание изображения относительно окружающего текста."
+
+msgid "**alt**"
+msgstr "**alt**"
+
+msgid "Image description for assistive apps (screen reader)."
+msgstr "Описание изображения для вспомогательных приложений (скринридер)."
 
 msgid "Image and table vertical alignment"
 msgstr "Вертикальное выравнивание изображения и таблицы"
@@ -1397,17 +1502,6 @@ msgstr ""
 msgid "Named colors"
 msgstr "Именованные цвета"
 
-msgid ""
-"For tags that allow specifying a color by name, you can use names of the "
-"constants from the built-in :ref:`class_Color` class. Named classes can be "
-"specified in a number of styles using different casings: ``DARK_RED``, "
-"``DarkRed``, and ``darkred`` will give the same exact result."
-msgstr ""
-"Для тегов, позволяющих задать цвет по имени, можно использовать имена "
-"констант из встроенного класса :ref:`class_Color`. Именованные классы можно "
-"указывать в различных стилях с использованием разных регистров: "
-"``DARK_RED``, ``DarkRed`` и ``darkred`` дадут один и тот же результат."
-
 msgid "See this image for a list of color constants:"
 msgstr "Список цветовых констант смотрите на этом изображении:"
 
@@ -1447,8 +1541,14 @@ msgstr ""
 msgid "Cell options"
 msgstr "Параметры ячеек"
 
+msgid "**shrink**"
+msgstr "**shrink**"
+
 msgid "``true``"
 msgstr "``true``"
+
+msgid "If ``true``, cell can shrink to its contents."
+msgstr "Если ``true``, ячейка может сжиматься до своего содержимого."
 
 msgid "**expand**"
 msgstr "**expand**"
@@ -1545,6 +1645,21 @@ msgstr "``i``, ``I`` - Строчные и прописные римские ц�
 
 msgid "Text effects"
 msgstr "Текстовые эффекты"
+
+msgid ""
+"BBCode can also be used to create different text effects that can optionally "
+"be animated. Several customizable effects are provided out of the box, and "
+"you can easily create your own. By default, animated effects will "
+"pause :ref:`when the SceneTree is paused <doc_pausing_games>`. You can "
+"change this behavior by adjusting the RichTextLabel's **Process > Mode** "
+"property."
+msgstr ""
+"BBCode также можно использовать для создания различных текстовых эффектов, "
+"которые при необходимости можно анимировать. Несколько настраиваемых "
+"эффектов доступны «из коробки», и вы можете легко создать свои собственные. "
+"По умолчанию анимированные эффекты приостанавливаются :ref:`при паузе "
+"SceneTree <doc_pausing_games>`. Вы можете изменить это поведение, настроив "
+"свойство **Process > Mode** объекта RichTextLabel."
 
 msgid ""
 "All examples below mention the default values for options in the listed tag "

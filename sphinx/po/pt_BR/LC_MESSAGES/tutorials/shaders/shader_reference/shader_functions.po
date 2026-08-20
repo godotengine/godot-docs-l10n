@@ -11,27 +11,1275 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Built-in functions"
-msgstr "Funções embutidas"
+msgid ""
+"The following type aliases only used in documentation to reduce repetitive "
+"function declarations. They can each refer to any of several actual types."
+msgstr ""
+"Os seguintes aliases de tipo são usados apenas na documentação para reduzir "
+"declarações repetitivas de funções. Cada um deles pode se referir a qualquer "
+"um de vários tipos reais."
+
+msgid "alias"
+msgstr "alias"
+
+msgid "actual types"
+msgstr "tipos reais"
+
+msgid "glsl documentation alias"
+msgstr "alias da documentação glsl"
+
+msgid "vec_type"
+msgstr "vec_type"
+
+msgid "float, vec2, vec3, or vec4"
+msgstr "float, vec2, vec3, ou vec4"
+
+msgid "genType"
+msgstr "genType"
+
+msgid "vec_int_type"
+msgstr "vec_int_type"
+
+msgid "int, ivec2, ivec3, or ivec4"
+msgstr "int, ivec2, ivec3, ou ivec4"
+
+msgid "genIType"
+msgstr "genIType"
+
+msgid "vec_uint_type"
+msgstr "vec_uint_type"
+
+msgid "uint, uvec2, uvec3, or uvec4"
+msgstr "uint, uvec2, uvec3, ou uvec4"
+
+msgid "genUType"
+msgstr "genUType"
+
+msgid "vec_bool_type"
+msgstr "vec_bool_type"
+
+msgid "bool, bvec2, bvec3, or bvec4"
+msgstr "bool, bvec2, bvec3, ou bvec4"
+
+msgid "genBType"
+msgstr "genBType"
+
+msgid "mat_type"
+msgstr "mat_type"
+
+msgid "mat2, mat3, or mat4"
+msgstr "mat2, mat3, ou mat4"
+
+msgid "mat"
+msgstr "mat"
+
+msgid "gvec4_type"
+msgstr "gvec4_type"
+
+msgid "vec4, ivec4, or uvec4"
+msgstr "vec4, ivec4, ou uvec4"
+
+msgid "gvec4"
+msgstr "gvec4"
+
+msgid "gsampler2D"
+msgstr "gsampler2D"
+
+msgid "sampler2D, isampler2D, or uSampler2D"
+msgstr "sampler2D, isampler2D, ou uSampler2D"
+
+msgid "gsampler2DArray"
+msgstr "gsampler2DArray"
+
+msgid "sampler2DArray, isampler2DArray, or uSampler2DArray"
+msgstr "sampler2DArray, isampler2DArray, ou uSampler2DArray"
+
+msgid "gsampler3D"
+msgstr "gsampler3D"
+
+msgid "sampler3D, isampler3D, or uSampler3D"
+msgstr "sampler3D, isampler3D, ou uSampler3D"
+
+msgid ""
+"If any of these are specified for multiple parameters, they must all be the "
+"same type unless otherwise noted."
+msgstr ""
+"Se qualquer um destes for especificado para múltiplos parâmetros, todos "
+"devem ser do mesmo tipo, a menos que indicado de outra forma."
+
+msgid ""
+"Many functions that accept one or more vectors or matrices perform the "
+"described function on each component of the vector/matrix. Some examples:"
+msgstr ""
+"Muitas funções que aceitam um ou mais vetores ou matrizes executam a função "
+"descrita em cada componente do vetor/matriz. Alguns exemplos:"
+
+msgid "Operation"
+msgstr "Operação"
+
+msgid "Equivalent Scalar Operation"
+msgstr "Operação Escalar Equivalente"
+
+msgid "``sqrt(vec2(4, 64))``"
+msgstr "``sqrt(vec2(4, 64))``"
+
+msgid "``vec2(sqrt(4), sqrt(64))``"
+msgstr "``vec2(sqrt(4), sqrt(64))``"
+
+msgid "``min(vec2(3, 4), 1)``"
+msgstr "``min(vec2(3, 4), 1)``"
+
+msgid "``vec2(min(3, 1), min(4, 1))``"
+msgstr "``vec2(min(3, 1), min(4, 1))``"
+
+msgid "``min(vec3(1, 2, 3),vec3(5, 1, 3))``"
+msgstr "``min(vec3(1, 2, 3),vec3(5, 1, 3))``"
+
+msgid "``vec3(min(1, 5), min(2, 1), min(3, 3))``"
+msgstr "``vec3(min(1, 5), min(2, 1), min(3, 3))``"
+
+msgid "``pow(vec3(3, 8, 5 ), 2)``"
+msgstr "``pow(vec3(3, 8, 5 ), 2)``"
+
+msgid "``vec3(pow(3, 2), pow(8, 2), pow(5, 2))``"
+msgstr "``vec3(pow(3, 2), pow(8, 2), pow(5, 2))``"
+
+msgid "``pow(vec3(3, 8, 5), vec3(1, 2, 4))``"
+msgstr "``pow(vec3(3, 8, 5), vec3(1, 2, 4))``"
+
+msgid "``vec3(pow(3, 1), pow(8, 2), pow(5, 4))``"
+msgstr "``vec3(pow(3, 1), pow(8, 2), pow(5, 4))``"
+
+msgid ""
+"The `GLSL Language Specification <http://www.opengl.org/registry/doc/"
+"GLSLangSpec.4.30.6.pdf>`_ says under section 5.10 Vector and Matrix "
+"Operations:"
+msgstr ""
+"A `Especificação da Linguagem GLSL <http://www.opengl.org/registry/doc/"
+"GLSLangSpec.4.30.6.pdf>`_ diz na seção 5.10 Operações de Vetores e Matrizes:"
+
+msgid ""
+"With a few exceptions, operations are component-wise. Usually, when an "
+"operator operates on a vector or matrix, it is operating independently on "
+"each component of the vector or matrix, in a component-wise fashion. [...] "
+"The exceptions are matrix multiplied by vector, vector multiplied by matrix, "
+"and matrix multiplied by matrix. These do not operate component-wise, but "
+"rather perform the correct linear algebraic multiply."
+msgstr ""
+"Com poucas exceções, as operações são componente por componente. "
+"Normalmente, quando um operador atua em um vetor ou matriz, ele está "
+"operando independentemente em cada componente do vetor ou matriz, de maneira "
+"componente por componente. [...] As exceções são matriz multiplicada por "
+"vetor, vetor multiplicado por matriz e matriz multiplicada por matriz. Estas "
+"não operam componente por componente, mas realizam a multiplicação algébrica "
+"linear correta."
+
+msgid ""
+"These function descriptions are adapted and modified from `official OpenGL "
+"documentation <https://registry.khronos.org/OpenGL-Refpages/gl4/>`__ "
+"originally published by Khronos Group under the `Open Publication License "
+"<https://opencontent.org/openpub>`__. Each function description links to the "
+"corresponding official OpenGL documentation. Modification history for this "
+"page can be found on `GitHub <https://github.com/godotengine/godot-docs/blob/"
+"master/tutorials/shaders/shader_reference/shader_functions.rst>`__."
+msgstr ""
+"Estas descrições de funções foram adaptadas e modificadas a partir da "
+"`documentação oficial do OpenGL <https://registry.khronos.org/OpenGL-"
+"Refpages/gl4/>`__ publicada originalmente pelo Khronos Group sob a `Open "
+"Publication License <https://opencontent.org/openpub>`__. Cada descrição de "
+"função possui um link para a documentação oficial correspondente do OpenGL. "
+"O histórico de modificações desta página pode ser encontrado no `GitHub "
+"<https://github.com/godotengine/godot-docs/blob/master/tutorials/shaders/"
+"shader_reference/shader_functions.rst>`__."
+
+msgid "Trigonometric functions"
+msgstr "Funções trigonométricas"
+
+msgid "Return Type"
+msgstr "Tipo de retorno"
 
 msgid "Function"
 msgstr "Função"
 
+msgid "Description / Return value"
+msgstr "Descrição / Valor de Retorno"
+
+msgid "|vec_type|"
+msgstr "|vec_type|"
+
+msgid ":ref:`radians<shader_func_radians>`\\ (\\ |vec_type| degrees)"
+msgstr ":ref:`radians<shader_func_radians>`\\ (\\ |vec_type| degrees)"
+
+msgid "Convert degrees to radians."
+msgstr "Converte graus para radianos."
+
+msgid ":ref:`degrees<shader_func_degrees>`\\ (\\ |vec_type| radians)"
+msgstr ":ref:`degrees<shader_func_degrees>`\\ (\\ |vec_type| radians)"
+
+msgid "Convert radians to degrees."
+msgstr "Converte radianos para graus."
+
+msgid ":ref:`sin<shader_func_sin>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`sin<shader_func_sin>`\\ (\\ |vec_type| x)"
+
+msgid "Sine."
+msgstr "Seno."
+
+msgid ":ref:`cos<shader_func_cos>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`cos<shader_func_cos>`\\ (\\ |vec_type| x)"
+
+msgid "Cosine."
+msgstr "Cosseno."
+
+msgid ":ref:`tan<shader_func_tan>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`tan<shader_func_tan>`\\ (\\ |vec_type| x)"
+
+msgid "Tangent."
+msgstr "Tangente."
+
+msgid ":ref:`asin<shader_func_asin>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`asin<shader_func_asin>`\\ (\\ |vec_type| x)"
+
+msgid "Arc sine."
+msgstr "Arco seno."
+
+msgid ":ref:`acos<shader_func_acos>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`acos<shader_func_acos>`\\ (\\ |vec_type| x)"
+
+msgid "Arc cosine."
+msgstr "Arco cosseno."
+
+msgid ":ref:`atan<shader_func_atan>`\\ (\\ |vec_type| y_over_x)"
+msgstr ":ref:`atan<shader_func_atan>`\\ (\\ |vec_type| y_over_x)"
+
+msgid ":ref:`atan<shader_func_atan2>`\\ (\\ |vec_type| y, |vec_type| x)"
+msgstr ":ref:`atan<shader_func_atan2>`\\ (\\ |vec_type| y, |vec_type| x)"
+
+msgid "Arc tangent."
+msgstr "Arco tangente."
+
+msgid ":ref:`sinh<shader_func_sinh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`sinh<shader_func_sinh>`\\ (\\ |vec_type| x)"
+
+msgid "Hyperbolic sine."
+msgstr "Seno hiperbólico."
+
+msgid ":ref:`cosh<shader_func_cosh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`cosh<shader_func_cosh>`\\ (\\ |vec_type| x)"
+
+msgid "Hyperbolic cosine."
+msgstr "Cosseno hiperbólico."
+
+msgid ":ref:`tanh<shader_func_tanh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`tanh<shader_func_tanh>`\\ (\\ |vec_type| x)"
+
+msgid "Hyperbolic tangent."
+msgstr "Tangente hiperbólica."
+
+msgid ":ref:`asinh<shader_func_asinh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`asinh<shader_func_asinh>`\\ (\\ |vec_type| x)"
+
+msgid "Arc hyperbolic sine."
+msgstr "Arco seno hiperbólico."
+
+msgid ":ref:`acosh<shader_func_acosh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`acosh<shader_func_acosh>`\\ (\\ |vec_type| x)"
+
+msgid "Arc hyperbolic cosine."
+msgstr "Arco cosseno hiperbólico."
+
+msgid ":ref:`atanh<shader_func_atanh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`atanh<shader_func_atanh>`\\ (\\ |vec_type| x)"
+
+msgid "Arc hyperbolic tangent."
+msgstr "Arco tangente hiperbólica."
+
+msgid "Trigonometric function descriptions"
+msgstr "Descrições das funções trigonométricas"
+
+msgid ""
+"|vec_type| **radians**\\ (\\ |vec_type| "
+"degrees) :ref:`🔗<shader_func_radians>`"
+msgstr ""
+"|vec_type| **radians**\\ (\\ |vec_type| "
+"degrees) :ref:`🔗<shader_func_radians>`"
+
+msgid "|componentwise|"
+msgstr "|componentwise|"
+
+msgid ""
+"Converts a quantity specified in degrees into radians, with the formula "
+"``degrees * (PI / 180)``."
+msgstr ""
+"Converte uma quantidade especificada em graus para radianos, com a fórmula "
+"``degrees * (PI / 180)``."
+
+msgid "param degrees"
+msgstr "param graus"
+
+msgid "The quantity, in degrees, to be converted to radians."
+msgstr "A quantidade, em graus, a ser convertida para radianos."
+
 msgid "return"
 msgstr "return"
+
+msgid "The input ``degrees`` converted to radians."
+msgstr "O valor de entrada em ``degrees`` convertido para radianos."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/radians.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/radians.xhtml"
+
+msgid ""
+"|vec_type| **degrees**\\ (\\ |vec_type| "
+"radians) :ref:`🔗<shader_func_degrees>`"
+msgstr ""
+"|vec_type| **degrees**\\ (\\ |vec_type| "
+"radians) :ref:`🔗<shader_func_degrees>`"
+
+msgid ""
+"Converts a quantity specified in radians into degrees, with the formula "
+"``radians * (180 / PI)``"
+msgstr ""
+"Converte uma quantidade especificada em radianos para graus, com a fórmula "
+"``radians * (180 / PI)``"
+
+msgid "param radians"
+msgstr "param radians (radianos)"
+
+msgid "The quantity, in radians, to be converted to degrees."
+msgstr "A quantidade, em radianos, a ser convertida para graus."
+
+msgid "The input ``radians`` converted to degrees."
+msgstr "O valor de entrada em ``radians`` convertido para graus."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/degrees.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/degrees.xhtml"
+
+msgid "|vec_type| **sin**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_sin>`"
+msgstr "|vec_type| **sin**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_sin>`"
+
+msgid "Returns the trigonometric sine of ``angle``."
+msgstr "Retorna o seno trigonométrico de ``angle``."
+
+msgid "param angle"
+msgstr "param angle (ângulo)"
+
+msgid "The quantity, in radians, of which to return the sine."
+msgstr "A quantidade, em radianos, da qual retornar o seno."
+
+msgid "The sine of ``angle``."
+msgstr "O seno de ``angle``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sin.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sin.xhtml"
+
+msgid "|vec_type| **cos**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_cos>`"
+msgstr "|vec_type| **cos**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_cos>`"
+
+msgid "Returns the trigonometric cosine of ``angle``."
+msgstr "Retorna o cosseno trigonométrico de ``angle``."
+
+msgid "The quantity, in radians, of which to return the cosine."
+msgstr "A quantidade, em radianos, da qual retornar o cosseno."
+
+msgid "The cosine of ``angle``."
+msgstr "O cosseno de ``angle``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cos.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cos.xhtml"
+
+msgid "|vec_type| **tan**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_tan>`"
+msgstr "|vec_type| **tan**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_tan>`"
+
+msgid "Returns the trigonometric tangent of ``angle``."
+msgstr "Retorna a tangente trigonométrica de ``angle``."
+
+msgid "The quantity, in radians, of which to return the tangent."
+msgstr "A quantidade, em radianos, da qual retornar a tangente."
+
+msgid "The tangent of ``angle``."
+msgstr "A tangente de ``angle``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tan.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tan.xhtml"
+
+msgid "|vec_type| **asin**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asin>`"
+msgstr "|vec_type| **asin**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asin>`"
+
+msgid ""
+"Arc sine, or inverse sine. Calculates the angle whose sine is ``x`` and is "
+"in the range ``[-PI/2, PI/2]``. The result is undefined if ``x < -1`` or ``x "
+"> 1``."
+msgstr ""
+"Arco seno, ou inverso do seno. Calcula o ângulo cujo seno é ``x`` e que está "
+"no intervalo ``[-PI/2, PI/2]``. O resultado é indefinido se ``x < -1`` ou "
+"``x > 1``."
+
+msgid "param x"
+msgstr "param x"
+
+msgid "The value whose arc sine to return."
+msgstr "O valor do qual retornar o arco seno."
+
+msgid "The angle whose trigonometric sine is ``x``."
+msgstr "O ângulo cujo seno trigonométrico é ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asin.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asin.xhtml"
+
+msgid "|vec_type| **acos**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acos>`"
+msgstr "|vec_type| **acos**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acos>`"
+
+msgid ""
+"Arc cosine, or inverse cosine. Calculates the angle whose cosine is ``x`` "
+"and is in the range ``[0, PI]``."
+msgstr ""
+"Arco cosseno, ou inverso do cosseno. Calcula o ângulo cujo cosseno é ``x`` e "
+"que está no intervalo ``[0, PI]``."
+
+msgid "The result is undefined if ``x < -1`` or ``x > 1``."
+msgstr "O resultado é indefinido se ``x < -1`` ou ``x > 1``."
+
+msgid "The value whose arc cosine to return."
+msgstr "O valor do qual retornar o arco cosseno."
+
+msgid "The angle whose trigonometric cosine is ``x``."
+msgstr "O ângulo cujo cosseno trigonométrico é ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acos.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acos.xhtml"
+
+msgid ""
+"|vec_type| **atan**\\ (\\ |vec_type| y_over_x) :ref:`🔗<shader_func_atan>`"
+msgstr ""
+"|vec_type| **atan**\\ (\\ |vec_type| y_over_x) :ref:`🔗<shader_func_atan>`"
+
+msgid "Calculates the arc tangent given a tangent value of ``y/x``."
+msgstr "Calcula o arco tangente dado um valor de tangente de ``y/x``."
+
+msgid ""
+"Because of the sign ambiguity, the function cannot determine with certainty "
+"in which quadrant the angle falls only by its tangent value. If you need to "
+"know the quadrant, use :ref:`atan(vec_type y, vec_type "
+"x)<shader_func_atan2>`."
+msgstr ""
+"Devido à ambiguidade do sinal, a função não pode determinar com certeza em "
+"qual quadrante o ângulo se encontra apenas pelo seu valor de tangente. Se "
+"você precisar saber o quadrante, use :ref:`atan(vec_type y, vec_type "
+"x)<shader_func_atan2>`."
+
+msgid "param y_over_x"
+msgstr "param y_over_x"
+
+msgid "The fraction whose arc tangent to return."
+msgstr "A fração da qual retornar o arco tangente."
+
+msgid ""
+"The trigonometric arc-tangent of ``y_over_x`` and is in the range ``[-PI/2, "
+"PI/2]``."
+msgstr ""
+"O arco tangente trigonométrico de ``y_over_x``, que está no intervalo ``[-PI/"
+"2, PI/2]``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atan.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atan.xhtml"
+
+msgid ""
+"|vec_type| **atan**\\ (\\ |vec_type| y, |vec_type| "
+"x) :ref:`🔗<shader_func_atan2>`"
+msgstr ""
+"|vec_type| **atan**\\ (\\ |vec_type| y, |vec_type| "
+"x) :ref:`🔗<shader_func_atan2>`"
+
+msgid ""
+"Calculates the arc tangent given a numerator and denominator. The signs of "
+"``y`` and ``x`` are used to determine the quadrant that the angle lies in. "
+"The result is undefined if ``x == 0``."
+msgstr ""
+"Calcula o arco tangente dados um numerador e um denominador. Os sinais de "
+"``y`` e ``x`` são usados para determinar o quadrante em que o ângulo se "
+"encontra. O resultado é indefinido se ``x == 0``."
+
+msgid ""
+"Equivalent to :ref:`atan2() <class_@GlobalScope_method_atan2>` in GDScript."
+msgstr ""
+"Equivalente a :ref:`atan2() <class_@GlobalScope_method_atan2>` no GDScript."
+
+msgid "param y"
+msgstr "param y"
+
+msgid "The numerator of the fraction whose arc tangent to return."
+msgstr "O numerador da fração da qual retornar o arco tangente."
+
+msgid "The denominator of the fraction whose arc tangent to return."
+msgstr "O denominador da fração da qual retornar o arco tangente."
+
+msgid ""
+"The trigonometric arc tangent of ``y/x`` and is in the range ``[-PI, PI]``."
+msgstr ""
+"O arco tangente trigonométrico de ``y/x``, que está no intervalo ``[-PI, "
+"PI]``."
+
+msgid "|vec_type| **sinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sinh>`"
+msgstr "|vec_type| **sinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sinh>`"
+
+msgid "Calculates the hyperbolic sine using ``(e^x - e^-x)/2``."
+msgstr "Calcula o seno hiperbólico usando ``(e^x - e^-x)/2``."
+
+msgid "The value whose hyperbolic sine to return."
+msgstr "O valor cujo seno hiperbólico será retornado."
+
+msgid "The hyperbolic sine of ``x``."
+msgstr "O seno hiperbólico de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sinh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sinh.xhtml"
+
+msgid "|vec_type| **cosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_cosh>`"
+msgstr "|vec_type| **cosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_cosh>`"
+
+msgid "Calculates the hyperbolic cosine using ``(e^x + e^-x)/2``."
+msgstr "Calcula o cosseno hiperbólico usando ``(e^x + e^-x)/2``."
+
+msgid "The value whose hyperbolic cosine to return."
+msgstr "O valor cujo cosseno hiperbólico será retornado."
+
+msgid "The hyperbolic cosine of ``x``."
+msgstr "O cosseno hiperbólico de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cosh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cosh.xhtml"
+
+msgid "|vec_type| **tanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_tanh>`"
+msgstr "|vec_type| **tanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_tanh>`"
+
+msgid "Calculates the hyperbolic tangent using ``sinh(x)/cosh(x)``."
+msgstr "Calcula a tangente hiperbólica usando ``sinh(x)/cosh(x)``."
+
+msgid "The value whose hyperbolic tangent to return."
+msgstr "O valor cuja tangente hiperbólica será retornada."
+
+msgid "The hyperbolic tangent of ``x``."
+msgstr "A tangente hiperbólica de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tanh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tanh.xhtml"
+
+msgid "|vec_type| **asinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asinh>`"
+msgstr "|vec_type| **asinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asinh>`"
+
+msgid ""
+"Calculates the arc hyperbolic sine of ``x``, or the inverse of ``sinh``."
+msgstr "Calcula o arco seno hiperbólico de ``x``, ou o inverso de ``sinh``."
+
+msgid "The value whose arc hyperbolic sine to return."
+msgstr "O valor cujo arco seno hiperbólico será retornado."
+
+msgid "The arc hyperbolic sine of ``x``."
+msgstr "O arco seno hiperbólico de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asinh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asinh.xhtml"
+
+msgid "|vec_type| **acosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acosh>`"
+msgstr "|vec_type| **acosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acosh>`"
+
+msgid ""
+"Calculates the arc hyperbolic cosine of ``x``, or the non-negative inverse "
+"of ``cosh``. The result is undefined if ``x < 1``."
+msgstr ""
+"Calcula o arco cosseno hiperbólico de ``x``, ou o inverso não negativo de "
+"``cosh``. O resultado é indefinido se ``x < 1``."
+
+msgid "The value whose arc hyperbolic cosine to return."
+msgstr "O valor cujo arco cosseno hiperbólico será retornado."
+
+msgid "The arc hyperbolic cosine of ``x``."
+msgstr "O arco cosseno hiperbólico de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acosh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acosh.xhtml"
+
+msgid "|vec_type| **atanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_atanh>`"
+msgstr "|vec_type| **atanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_atanh>`"
+
+msgid ""
+"Calculates the arc hyperbolic tangent of ``x``, or the inverse of ``tanh``. "
+"The result is undefined if ``abs(x) > 1``."
+msgstr ""
+"Calcula o arco tangente hiperbólica de ``x``, ou o inverso de ``tanh``. O "
+"resultado é indefinido se ``abs(x) > 1``."
+
+msgid "The value whose arc hyperbolic tangent to return."
+msgstr "O valor cujo arco tangente hiperbólica será retornada."
+
+msgid "The arc hyperbolic tangent of ``x``."
+msgstr "A arco tangente hiperbólica de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atanh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atanh.xhtml"
+
+msgid "Exponential and math functions"
+msgstr "Funções exponenciais e matemáticas"
+
+msgid ":ref:`pow<shader_func_pow>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ":ref:`pow<shader_func_pow>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Power (undefined if ``x < 0`` or if ``x == 0`` and ``y <= 0``)."
+msgstr "Potência (indefinido se ``x < 0`` ou se ``x == 0`` e ``y <= 0``)."
+
+msgid ":ref:`exp<shader_func_exp>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`exp<shader_func_exp>`\\ (\\ |vec_type| x)"
+
+msgid "Base-e exponential."
+msgstr "Exponencial de base e."
+
+msgid ":ref:`exp2<shader_func_exp2>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`exp2<shader_func_exp2>`\\ (\\ |vec_type| x)"
+
+msgid "Base-2 exponential."
+msgstr "Exponencial de base 2."
+
+msgid ":ref:`log<shader_func_log>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`log<shader_func_log>`\\ (\\ |vec_type| x)"
+
+msgid "Natural (base-e) logarithm."
+msgstr "Logaritmo natural (base e)."
+
+msgid ":ref:`log2<shader_func_log2>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`log2<shader_func_log2>`\\ (\\ |vec_type| x)"
+
+msgid "Base-2 logarithm."
+msgstr "Logaritmo de base 2."
+
+msgid ":ref:`sqrt<shader_func_sqrt>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`sqrt<shader_func_sqrt>`\\ (\\ |vec_type| x)"
+
+msgid "Square root."
+msgstr "Raiz quadrada."
+
+msgid ":ref:`inversesqrt<shader_func_inversesqrt>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`inversesqrt<shader_func_inversesqrt>`\\ (\\ |vec_type| x)"
+
+msgid "Inverse square root."
+msgstr "Inverso da raiz quadrada."
+
+msgid "|vec_int_type|"
+msgstr "|vec_int_type|"
+
+msgid ":ref:`abs<shader_func_abs>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`abs<shader_func_abs>`\\ (\\ |vec_type| x)"
+
+msgid ":ref:`abs<shader_func_abs>`\\ (\\ |vec_int_type| x)"
+msgstr ":ref:`abs<shader_func_abs>`\\ (\\ |vec_int_type| x)"
+
+msgid "Absolute value (returns positive value if negative)."
+msgstr "Valor absoluto (retorna valor positivo se for negativo)."
+
+msgid ":ref:`sign<shader_func_sign>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`sign<shader_func_sign>`\\ (\\ |vec_type| x)"
+
+msgid "Returns ``1.0`` if positive, ``-1.0`` if negative, ``0.0`` otherwise."
+msgstr ""
+"Retorna ``1.0`` se for positivo, ``-1.0`` se for negativo, ``0.0`` caso "
+"contrário."
+
+msgid ":ref:`sign<shader_func_sign>`\\ (\\ |vec_int_type| x)"
+msgstr ":ref:`sign<shader_func_sign>`\\ (\\ |vec_int_type| x)"
+
+msgid "Returns ``1`` if positive, ``-1`` if negative, ``0`` otherwise."
+msgstr ""
+"Retorna ``1`` se for positivo, ``-1`` se for negativo, ``0`` caso contrário."
+
+msgid ":ref:`floor<shader_func_floor>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`floor<shader_func_floor>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the integer below."
+msgstr "Arredonda para o número inteiro abaixo."
+
+msgid ":ref:`round<shader_func_round>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`round<shader_func_round>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the nearest integer."
+msgstr "Arredonda para o número inteiro mais próximo."
+
+msgid ":ref:`roundEven<shader_func_roundEven>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`roundEven<shader_func_roundEven>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the nearest even integer."
+msgstr "Arredonda para o número inteiro par mais próximo."
+
+msgid ":ref:`trunc<shader_func_trunc>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`trunc<shader_func_trunc>`\\ (\\ |vec_type| x)"
+
+msgid "Truncation."
+msgstr "Truncamento."
+
+msgid ":ref:`ceil<shader_func_ceil>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`ceil<shader_func_ceil>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the integer above."
+msgstr "Arredonda para o número inteiro acima."
+
+msgid ":ref:`fract<shader_func_fract>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`fract<shader_func_fract>`\\ (\\ |vec_type| x)"
+
+msgid "Fractional (returns ``x - floor(x)``)."
+msgstr "Fracionário (retorna ``x - floor(x)``)."
+
+msgid ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, float y)"
+msgstr ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, float y)"
+
+msgid "Modulo (division remainder)."
+msgstr "Módulo (resto da divisão)."
+
+msgid ":ref:`modf<shader_func_modf>`\\ (\\ |vec_type| x, out |vec_type| i)"
+msgstr ":ref:`modf<shader_func_modf>`\\ (\\ |vec_type| x, out |vec_type| i)"
+
+msgid "Fractional of ``x``, with ``i`` as integer part."
+msgstr "Parte fracionária de ``x``, com ``i`` como parte inteira."
+
+msgid "|vec_uint_type|"
+msgstr "|vec_uint_type|"
 
 msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_type| a, |vec_type| b)"
 msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_type| a, |vec_type| b)"
 
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_type| a, float b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_type| a, float b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_int_type| a, |vec_int_type| b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_int_type| a, |vec_int_type| b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_int_type| a, int b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_int_type| a, int b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_uint_type| a, |vec_uint_type| b)"
+msgstr ""
+":ref:`min<shader_func_min>`\\ (\\ |vec_uint_type| a, |vec_uint_type| b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_uint_type| a, uint b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_uint_type| a, uint b)"
+
+msgid "Lowest value between ``a`` and ``b``."
+msgstr "Menor valor entre ``a`` e ``b``."
+
 msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_type| a, |vec_type| b)"
 msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_type| a, |vec_type| b)"
 
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_type| a, float b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_type| a, float b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_int_type| a, |vec_int_type| b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_int_type| a, |vec_int_type| b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_int_type| a, int b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_int_type| a, int b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, |vec_uint_type| b)"
+msgstr ""
+":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, |vec_uint_type| b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, uint b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, uint b)"
+
+msgid "Highest value between ``a`` and ``b``."
+msgstr "Maior valor entre ``a`` e ``b``."
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, |vec_type| min, |"
+"vec_type| max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, |vec_type| min, |"
+"vec_type| max)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, float min, float max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, float min, float max)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, |vec_int_type| min, |"
+"vec_int_type| max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, |vec_int_type| min, |"
+"vec_int_type| max)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, int min, int max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, int min, int max)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, |vec_uint_type| "
+"min, |vec_uint_type| max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, |vec_uint_type| "
+"min, |vec_uint_type| max)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, uint min, uint max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, uint min, uint max)"
+
+msgid "Clamps ``x`` between ``min`` and ``max`` (inclusive)."
+msgstr "Limita ``x`` entre ``min`` e ``max`` (inclusive)."
+
+msgid ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, |vec_type| c)"
+msgstr ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, |vec_type| c)"
+
+msgid ":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, float c)"
+msgstr ":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, float c)"
+
+msgid ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, |"
+"vec_bool_type| c)"
+msgstr ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, |"
+"vec_bool_type| c)"
+
+msgid "Linear interpolate between ``a`` and ``b`` by ``c``."
+msgstr "Interpolação linear entre ``a`` e ``b`` por ``c``."
+
+msgid ""
+":ref:`fma<shader_func_fma>`\\ (\\ |vec_type| a, |vec_type| b, |vec_type| c)"
+msgstr ""
+":ref:`fma<shader_func_fma>`\\ (\\ |vec_type| a, |vec_type| b, |vec_type| c)"
+
+msgid "Fused multiply-add operation: ``(a * b + c)``"
+msgstr ""
+"Operação combinada de multiplicação e adição (fused multiply-add): ``(a * b "
+"+ c)``"
+
+msgid ":ref:`step<shader_func_step>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ":ref:`step<shader_func_step>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid ":ref:`step<shader_func_step>`\\ (\\ float a, |vec_type| b)"
+msgstr ":ref:`step<shader_func_step>`\\ (\\ float a, |vec_type| b)"
+
+msgid "``b < a ? 0.0 : 1.0``"
+msgstr "``b < a ? 0.0 : 1.0``"
+
+msgid ""
+":ref:`smoothstep<shader_func_smoothstep>`\\ (\\ |vec_type| a, |vec_type| b, |"
+"vec_type| c)"
+msgstr ""
+":ref:`smoothstep<shader_func_smoothstep>`\\ (\\ |vec_type| a, |vec_type| b, |"
+"vec_type| c)"
+
+msgid ""
+":ref:`smoothstep<shader_func_smoothstep>`\\ (\\ float a, float b, |vec_type| "
+"c)"
+msgstr ""
+":ref:`smoothstep<shader_func_smoothstep>`\\ (\\ float a, float b, |vec_type| "
+"c)"
+
+msgid "Hermite interpolate between ``a`` and ``b`` by ``c``."
+msgstr "Interpolação de Hermite entre ``a`` e ``b`` por ``c``."
+
+msgid "|vec_bool_type|"
+msgstr "|vec_bool_type|"
+
+msgid ":ref:`isnan<shader_func_isnan>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`isnan<shader_func_isnan>`\\ (\\ |vec_type| x)"
+
+msgid "Returns ``true`` if scalar or vector component is ``NaN``."
+msgstr "Retorna ``true`` se o escalar ou componente do vetor for ``NaN``."
+
+msgid ":ref:`isinf<shader_func_isinf>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`isinf<shader_func_isinf>`\\ (\\ |vec_type| x)"
+
+msgid "Returns ``true`` if scalar or vector component is ``INF``."
+msgstr "Retorna ``true`` se o escalar ou componente do vetor for ``INF``."
+
+msgid ":ref:`floatBitsToInt<shader_func_floatBitsToInt>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`floatBitsToInt<shader_func_floatBitsToInt>`\\ (\\ |vec_type| x)"
+
+msgid "``float`` to ``int`` bit copying, no conversion."
+msgstr "Cópia de bits de ``float`` para ``int``, sem conversão."
+
+msgid ":ref:`floatBitsToUint<shader_func_floatBitsToUint>`\\ (\\ |vec_type| x)"
+msgstr ""
+":ref:`floatBitsToUint<shader_func_floatBitsToUint>`\\ (\\ |vec_type| x)"
+
+msgid "``float`` to ``uint`` bit copying, no conversion."
+msgstr "Cópia de bits de ``float`` para ``uint``, sem conversão."
+
+msgid ""
+":ref:`intBitsToFloat<shader_func_intBitsToFloat>`\\ (\\ |vec_int_type| x)"
+msgstr ""
+":ref:`intBitsToFloat<shader_func_intBitsToFloat>`\\ (\\ |vec_int_type| x)"
+
+msgid "``int`` to ``float`` bit copying, no conversion."
+msgstr "Cópia de bits de ``int`` para ``float``, sem conversão."
+
+msgid ""
+":ref:`uintBitsToFloat<shader_func_uintBitsToFloat>`\\ (\\ |vec_uint_type| x)"
+msgstr ""
+":ref:`uintBitsToFloat<shader_func_uintBitsToFloat>`\\ (\\ |vec_uint_type| x)"
+
+msgid "``uint`` to ``float`` bit copying, no conversion."
+msgstr "Cópia de bits de ``uint`` para ``float``, sem conversão."
+
+msgid "Exponential and math function descriptions"
+msgstr "Descrições de funções exponenciais e matemáticas"
+
+msgid ""
+"|vec_type| **pow**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_pow>`"
+msgstr ""
+"|vec_type| **pow**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_pow>`"
+
+msgid "Raises ``x`` to the power of ``y``."
+msgstr "Eleva ``x`` à potência de ``y``."
+
+msgid "The value to be raised to the power ``y``."
+msgstr "O valor a ser elevado à potência ``y``."
+
+msgid "The power to which ``x`` will be raised."
+msgstr "A potência à qual ``x`` será elevado."
+
+msgid "The value of ``x`` raised to the ``y`` power."
+msgstr "O valor de ``x`` elevado à potência ``y``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml"
+
+msgid "|vec_type| **exp**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
+msgstr "|vec_type| **exp**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
+
+msgid "Equivalent to ``pow(e, x)``."
+msgstr "Equivalente a ``pow(e, x)``."
+
+msgid "The value to exponentiate."
+msgstr "O valor a ser exponenciado."
+
+msgid "The natural exponentiation of ``x``."
+msgstr "A exponenciação natural de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp.xhtml"
+
+msgid "|vec_type| **exp2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp2>`"
+msgstr "|vec_type| **exp2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp2>`"
+
+msgid "Raises ``2`` to the power of ``x``."
+msgstr "Eleva ``2`` à potência de ``x``."
+
+msgid "Equivalent to ``pow(2.0, x)``."
+msgstr "Equivalente a ``pow(2.0, x)``."
+
+msgid "The value of the power to which ``2`` will be raised."
+msgstr "O valor da potência à qual ``2`` será elevado."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
+
+msgid "|vec_type| **log**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log>`"
+msgstr "|vec_type| **log**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log>`"
+
+msgid ""
+"Returns the natural logarithm of ``x``, i.e. the value ``y`` which satisfies "
+"``x == pow(e, y)``. The result is undefined if ``x <= 0``."
+msgstr ""
+"Retorna o logaritmo natural de ``x``, ou seja, o valor ``y`` que satisfaz "
+"``x == pow(e, y)``. O resultado é indefinido se ``x <= 0``."
+
+msgid "The value of which to take the natural logarithm."
+msgstr "O valor do qual calcular o logaritmo natural."
+
+msgid "The natural logarithm of ``x``."
+msgstr "O logaritmo natural de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log.xhtml"
+
+msgid "|vec_type| **log2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log2>`"
+msgstr "|vec_type| **log2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log2>`"
+
+msgid ""
+"Returns the base-2 logarithm of ``x``, i.e. the value ``y`` which satisfies "
+"``x == pow(2, y)``. The result is undefined if ``x <= 0``."
+msgstr ""
+"Retorna o logaritmo na base 2 de ``x``, ou seja, o valor ``y`` que satisfaz "
+"``x == pow(2, y)``. O resultado é indefinido se ``x <= 0``."
+
+msgid "The value of which to take the base-2 logarithm."
+msgstr "O valor do qual calcular o logaritmo na base 2."
+
+msgid "The base-2 logarithm of ``x``."
+msgstr "O logaritmo de base 2 de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log2.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log2.xhtml"
+
+msgid "|vec_type| **sqrt**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sqrt>`"
+msgstr "|vec_type| **sqrt**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sqrt>`"
+
+msgid "Returns the square root of ``x``. The result is undefined if ``x < 0``."
+msgstr ""
+"Retorna a raiz quadrada de ``x``. O resultado é indefinido se ``x < 0``."
+
+msgid "The value of which to take the square root."
+msgstr "O valor do qual calcular a raiz quadrada."
+
+msgid "The square root of ``x``."
+msgstr "A raiz quadrada de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sqrt.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sqrt.xhtml"
+
+msgid ""
+"|vec_type| **inversesqrt**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_inversesqrt>`"
+msgstr ""
+"|vec_type| **inversesqrt**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_inversesqrt>`"
+
+msgid ""
+"Returns the inverse of the square root of ``x``, or ``1.0 / sqrt(x)``. The "
+"result is undefined if ``x <= 0``."
+msgstr ""
+"Retorna o inverso da raiz quadrada de ``x``, ou ``1.0 / sqrt(x)``. O "
+"resultado é indefinido se ``x <= 0``."
+
+msgid "The value of which to take the inverse of the square root."
+msgstr "O valor do qual calcular o inverso da raiz quadrada."
+
+msgid "The inverse of the square root of ``x``."
+msgstr "O inverso da raiz quadrada de ``x``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inversesqrt.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inversesqrt.xhtml"
+
+msgid "|vec_type| **abs**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_abs>`"
+msgstr "|vec_type| **abs**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_abs>`"
+
+msgid ""
+"|vec_int_type| **abs**\\ (\\ |vec_int_type| x) :ref:`🔗<shader_func_abs>`"
+msgstr ""
+"|vec_int_type| **abs**\\ (\\ |vec_int_type| x) :ref:`🔗<shader_func_abs>`"
+
+msgid ""
+"Returns the absolute value of ``x``. Returns ``x`` if ``x`` is positive, "
+"otherwise returns ``-1 * x``."
+msgstr ""
+"Retorna o valor absoluto de ``x``. Retorna ``x`` se ``x`` for positivo, caso "
+"contrário retorna ``-1 * x``."
+
+msgid "The value of which to return the absolute."
+msgstr "O valor do qual retornar o absoluto."
+
+msgid "The absolute value of ``x``."
+msgstr "O valor absoluto de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/abs.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/abs.xhtml"
+
+msgid "|vec_type| **sign**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sign>`"
+msgstr "|vec_type| **sign**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sign>`"
+
+msgid ""
+"|vec_int_type| **sign**\\ (\\ |vec_int_type| x) :ref:`🔗<shader_func_sign>`"
+msgstr ""
+"|vec_int_type| **sign**\\ (\\ |vec_int_type| x) :ref:`🔗<shader_func_sign>`"
+
+msgid ""
+"Returns ``-1`` if ``x < 0``, ``0`` if ``x == 0``, and ``1`` if ``x > 0``."
+msgstr "Retorna ``-1`` se ``x < 0``, ``0`` se ``x == 0`` e ``1`` se ``x > 0``."
+
+msgid "The value from which to extract the sign."
+msgstr "O valor do qual extrair o sinal."
+
+msgid "The sign of ``x``."
+msgstr "O sinal de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sign.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sign.xhtml"
+
+msgid "|vec_type| **floor**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_floor>`"
+msgstr "|vec_type| **floor**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_floor>`"
+
+msgid ""
+"Returns a value equal to the nearest integer that is less than or equal to "
+"``x``."
+msgstr ""
+"Retorna um valor igual ao número inteiro mais próximo que seja menor ou "
+"igual a ``x``."
+
+msgid "The value to floor."
+msgstr "O valor para arredondar para baixo."
+
+msgid "The nearest integer that is less than or equal to ``x``."
+msgstr "O número inteiro mais próximo que seja menor ou igual a ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/floor.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/floor.xhtml"
+
+msgid "|vec_type| **round**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
+msgstr "|vec_type| **round**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
+
+msgid "Rounds ``x`` to the nearest integer."
+msgstr "Arredonda ``x`` para o número inteiro mais próximo."
+
+msgid "The value to round."
+msgstr "O valor para arredondar."
+
+msgid "The rounded value."
+msgstr "O valor arredondado."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/round.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/round.xhtml"
+
+msgid ""
+"|vec_type| **roundEven**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_roundEven>`"
+msgstr ""
+"|vec_type| **roundEven**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_roundEven>`"
+
+msgid ""
+"Rounds ``x`` to the nearest integer. A value with a fractional part of "
+"``0.5`` will always round toward the nearest even integer. For example, both "
+"``3.5`` and ``4.5`` will round to ``4.0``."
+msgstr ""
+"Arredonda ``x`` para o número inteiro mais próximo. Um valor com uma parte "
+"fracionária de ``0.5`` sempre será arredondado em direção ao número inteiro "
+"par mais próximo. Por exemplo, tanto ``3.5`` quanto ``4.5`` serão "
+"arredondados para ``4.0``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/roundEven.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/roundEven.xhtml"
+
+msgid "|vec_type| **trunc**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_trunc>`"
+msgstr "|vec_type| **trunc**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_trunc>`"
+
+msgid ""
+"Truncates ``x``. Returns a value equal to the nearest integer to ``x`` whose "
+"absolute value is not larger than the absolute value of ``x``."
+msgstr ""
+"Trunca ``x``. Retorna um valor igual ao número inteiro mais próximo de ``x`` "
+"cujo valor absoluto não seja maior que o valor absoluto de ``x``."
+
+msgid "The value to evaluate."
+msgstr "O valor para avaliar."
+
+msgid "The truncated value."
+msgstr "O valor truncado."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/trunc.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/trunc.xhtml"
+
+msgid "|vec_type| **ceil**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_ceil>`"
+msgstr "|vec_type| **ceil**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_ceil>`"
+
+msgid ""
+"Returns a value equal to the nearest integer that is greater than or equal "
+"to ``x``."
+msgstr ""
+"Retorna um valor igual ao número inteiro mais próximo que seja maior ou "
+"igual a ``x``."
+
+msgid "The ceiling-ed value."
+msgstr "O valor teto (arredondado para cima)."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/ceil.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/ceil.xhtml"
+
+msgid "|vec_type| **fract**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_fract>`"
+msgstr "|vec_type| **fract**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_fract>`"
+
+msgid "Returns the fractional part of ``x``."
+msgstr "Retorna a parte fracionária de ``x``."
+
+msgid "This is calculated as ``x - floor(x)``."
+msgstr "Isso é calculado como ``x - floor(x)``."
+
+msgid "The fractional part of ``x``."
+msgstr "A parte fracionária de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fract.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fract.xhtml"
+
+msgid ""
+"|vec_type| **mod**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_mod>`"
+msgstr ""
+"|vec_type| **mod**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_mod>`"
+
+msgid ""
+"|vec_type| **mod**\\ (\\ |vec_type| x, float y) :ref:`🔗<shader_func_mod>`"
+msgstr ""
+"|vec_type| **mod**\\ (\\ |vec_type| x, float y) :ref:`🔗<shader_func_mod>`"
+
+msgid ""
+"Returns the value of ``x modulo y``. This is also sometimes called the "
+"remainder."
+msgstr ""
+"Retorna o valor de ``x modulo y``. Isso também é chamado às vezes de resto."
+
+msgid "This is computed as ``x - y * floor(x/y)``."
+msgstr "Isso é calculado como ``x - y * floor(x/y)``."
+
+msgid "The value of ``x modulo y``."
+msgstr "O valor de ``x modulo y``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mod.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mod.xhtml"
+
+msgid ""
+"|vec_type| **modf**\\ (\\ |vec_type| x, out |vec_type| "
+"i) :ref:`🔗<shader_func_modf>`"
+msgstr ""
+"|vec_type| **modf**\\ (\\ |vec_type| x, out |vec_type| "
+"i) :ref:`🔗<shader_func_modf>`"
+
+msgid ""
+"Separates a floating-point value ``x`` into its integer and fractional parts."
+msgstr ""
+"Separa um valor de ponto flutuante ``x`` em suas partes inteira e "
+"fracionária."
+
+msgid ""
+"The fractional part of the number is returned from the function. The integer "
+"part (as a floating-point quantity) is returned in the output parameter "
+"``i``."
+msgstr ""
+"A parte fracionária do número é retornada pela função. A parte inteira (como "
+"uma quantidade em ponto flutuante) é retornada no parâmetro de saída ``i``."
+
+msgid "The value to separate."
+msgstr "O valor para separar."
+
+msgid "param out i"
+msgstr "param out i"
+
+msgid "A variable that receives the integer part of ``x``."
+msgstr "Uma variável que recebe a parte inteira de ``x``."
+
+msgid "The fractional part of the number."
+msgstr "A parte fracionária do número."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/modf.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/modf.xhtml"
+
 msgid ""
 "|vec_type| **min**\\ (\\ |vec_type| a, |vec_type| "
 "b) :ref:`🔗<shader_func_min>`"
 msgstr ""
 "|vec_type| **min**\\ (\\ |vec_type| a, |vec_type| "
-"b):ref:`🔗<shader_func_min>`"
+"b) :ref:`🔗<shader_func_min>`"
 
 msgid ""
 "|vec_type| **min**\\ (\\ |vec_type| a, float b) :ref:`🔗<shader_func_min>`"
@@ -46,11 +1294,49 @@ msgstr ""
 "b) :ref:`🔗<shader_func_min>`"
 
 msgid ""
+"|vec_int_type| **min**\\ (\\ |vec_int_type| a, int "
+"b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_int_type| **min**\\ (\\ |vec_int_type| a, int "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid ""
 "|vec_uint_type| **min**\\ (\\ |vec_uint_type| a, |vec_uint_type| "
 "b) :ref:`🔗<shader_func_min>`"
 msgstr ""
 "|vec_uint_type| **min**\\ (\\ |vec_uint_type| a, |vec_uint_type| "
 "b) :ref:`🔗<shader_func_min>`"
+
+msgid ""
+"|vec_uint_type| **min**\\ (\\ |vec_uint_type| a, uint "
+"b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_uint_type| **min**\\ (\\ |vec_uint_type| a, uint "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid "Returns the minimum of two values ``a`` and ``b``."
+msgstr "Retorna o mínimo de dois valores ``a`` e ``b``."
+
+msgid "Returns ``b`` if ``b < a``, otherwise returns ``a``."
+msgstr "Retorna ``b`` se ``b < a``, caso contrário retorna ``a``."
+
+msgid "param a"
+msgstr "param a"
+
+msgid "The first value to compare."
+msgstr "O primeiro valor para comparar."
+
+msgid "param b"
+msgstr "param b"
+
+msgid "The second value to compare."
+msgstr "O segundo valor para comparar."
+
+msgid "The minimum value."
+msgstr "O valor mínimo."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/min.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/min.xhtml"
 
 msgid ""
 "|vec_type| **max**\\ (\\ |vec_type| a, |vec_type| "
@@ -60,10 +1346,22 @@ msgstr ""
 "b) :ref:`🔗<shader_func_max>`"
 
 msgid ""
+"|vec_type| **max**\\ (\\ |vec_type| a, float b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_type| **max**\\ (\\ |vec_type| a, float b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
 "|vec_uint_type| **max**\\ (\\ |vec_uint_type| a, |vec_uint_type| "
 "b) :ref:`🔗<shader_func_max>`"
 msgstr ""
 "|vec_uint_type| **max**\\ (\\ |vec_uint_type| a, |vec_uint_type| "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
+"|vec_uint_type| **max**\\ (\\ |vec_uint_type| a, uint "
+"b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_uint_type| **max**\\ (\\ |vec_uint_type| a, uint "
 "b) :ref:`🔗<shader_func_max>`"
 
 msgid ""
@@ -72,18 +1370,3300 @@ msgid ""
 msgstr ""
 "|vec_int_type| **max**\\ (\\ |vec_int_type| a, |vec_int_type| "
 "b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
+"|vec_int_type| **max**\\ (\\ |vec_int_type| a, int "
+"b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_int_type| **max**\\ (\\ |vec_int_type| a, int "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid "Returns the maximum of two values ``a`` and ``b``."
+msgstr "Retorna o máximo de dois valores ``a`` e ``b``."
+
+msgid "It returns ``b`` if ``b > a``, otherwise it returns ``a``."
+msgstr "Retorna ``b`` se ``b > a``, caso contrário retorna ``a``."
+
+msgid "The maximum value."
+msgstr "O valor máximo."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/max.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/max.xhtml"
+
+msgid ""
+"|vec_type| **clamp**\\ (\\ |vec_type| x, |vec_type| minVal, |vec_type| "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_type| **clamp**\\ (\\ |vec_type| x, |vec_type| minVal, |vec_type| "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_type| **clamp**\\ (\\ |vec_type| x, float minVal, float "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_type| **clamp**\\ (\\ |vec_type| x, float minVal, float "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, |vec_int_type| minVal, |"
+"vec_int_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, |vec_int_type| minVal, |"
+"vec_int_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, int minVal, int "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, int minVal, int "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, |vec_uint_type| minVal, |"
+"vec_uint_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, |vec_uint_type| minVal, |"
+"vec_uint_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, uint minVal, uint "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, uint minVal, uint "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"Returns the value of ``x`` constrained to the range ``minVal`` to ``maxVal``."
+msgstr ""
+"Retorna o valor de ``x`` limitado ao intervalo de ``minVal`` a ``maxVal``."
+
+msgid "The returned value is computed as ``min(max(x, minVal), maxVal)``."
+msgstr "O valor retornado é calculado como ``min(max(x, minVal), maxVal)``."
+
+msgid "The value to constrain."
+msgstr "O valor para restringir."
+
+msgid "param minVal"
+msgstr "param minVal"
+
+msgid "The lower end of the range into which to constrain ``x``."
+msgstr "O limite inferior do intervalo no qual limitar ``x``."
+
+msgid "param maxVal"
+msgstr "param maxVal"
+
+msgid "The upper end of the range into which to constrain ``x``."
+msgstr "O limite superior do intervalo no qual limitar ``x``."
+
+msgid "The clamped value."
+msgstr "O valor limitado (clamped)."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/clamp.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/clamp.xhtml"
+
+msgid ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_mix>`"
+msgstr ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_mix>`"
+
+msgid ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, float "
+"c) :ref:`🔗<shader_func_mix>`"
+msgstr ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, float "
+"c) :ref:`🔗<shader_func_mix>`"
+
+msgid ""
+"Performs a linear interpolation between ``a`` and ``b`` using ``c`` to "
+"weight between them."
+msgstr ""
+"Realiza uma interpolação linear entre ``a`` e ``b`` usando ``c`` para "
+"ponderar entre eles."
+
+msgid "Computed as ``a * (1 - c) + b * c``."
+msgstr "Calculado como ``a * (1 - c) + b * c``."
+
+msgid ""
+"Equivalent to :ref:`lerp() <class_@GlobalScope_method_lerp>` in GDScript."
+msgstr ""
+"Equivalente a :ref:`lerp() <class_@GlobalScope_method_lerp>` no GDScript."
+
+msgid "The start of the range in which to interpolate."
+msgstr "O início do intervalo no qual interpolar."
+
+msgid "The end of the range in which to interpolate."
+msgstr "O fim do intervalo no qual interpolar."
+
+msgid "param c"
+msgstr "param c"
+
+msgid "The value to use to interpolate between ``a`` and ``b``."
+msgstr "O valor a ser usado para interpolar entre ``a`` e ``b``."
+
+msgid "The interpolated value."
+msgstr "O valor interpolado."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mix.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mix.xhtml"
+
+msgid ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, |vec_bool_type| "
+"c) :ref:`🔗<shader_func_mix>`"
+msgstr ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, |vec_bool_type| "
+"c) :ref:`🔗<shader_func_mix>`"
+
+msgid ""
+"Selects either value ``a`` or value ``b`` based on the value of ``c``. For a "
+"component of ``c`` that is false, the corresponding component of ``a`` is "
+"returned. For a component of ``c`` that is true, the corresponding component "
+"of ``b`` is returned. Components of ``a`` and ``b`` that are not selected "
+"are allowed to be invalid floating-point values and will have no effect on "
+"the results."
+msgstr ""
+"Seleciona o valor ``a`` ou o valor ``b`` com base no valor de ``c``. Para um "
+"componente de ``c`` que seja falso, o componente correspondente de ``a`` é "
+"retornado. Para um componente de ``c`` que seja verdadeiro, o componente "
+"correspondente de ``b`` é retornado. Componentes de ``a`` e ``b`` que não "
+"forem selecionados podem ser valores de ponto flutuante inválidos e não "
+"terão efeito nos resultados."
+
+msgid "Value returned when ``c`` is false."
+msgstr "Valor retornado quando ``c`` é falso."
+
+msgid "Value returned when ``c`` is true."
+msgstr "Valor retornado quando ``c`` é verdadeiro."
+
+msgid "The value used to select between ``a`` and ``b``."
+msgstr "O valor usado para selecionar entre ``a`` e ``b``."
+
+msgid ""
+"|vec_type| **fma**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_fma>`"
+msgstr ""
+"|vec_type| **fma**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_fma>`"
+
+msgid ""
+"Performs, where possible, a fused multiply-add operation, returning ``a * b "
+"+ c``. In use cases where the return value is eventually consumed by a "
+"variable declared as precise:"
+msgstr ""
+"Realiza, onde possível, uma operação combinada de multiplicação e adição "
+"(fused multiply-add), retornando ``a * b + c``. Em casos de uso onde o valor "
+"de retorno é eventualmente consumido por uma variável declarada como precisa "
+"(precise):"
+
+msgid ""
+"``fma()`` is considered a single operation, whereas the expression ``a * b + "
+"c`` consumed by a variable declared as precise is considered two operations."
+msgstr ""
+"``fma()`` é considerada uma única operação, enquanto a expressão ``a * b + "
+"c`` consumida por uma variável declarada como precisa é considerada duas "
+"operações."
+
+msgid ""
+"The precision of ``fma()`` can differ from the precision of the expression "
+"``a * b + c``."
+msgstr ""
+"A precisão de ``fma()`` pode diferir da precisão da expressão ``a * b + c``."
+
+msgid ""
+"Otherwise, in the absence of precise consumption, there are no special "
+"constraints on the number of operations or difference in precision between "
+"``fma()`` and the expression ``a * b + c``."
+msgstr ""
+"Caso contrário, na ausência de consumo preciso, não há restrições especiais "
+"no número de operações ou diferença de precisão entre ``fma()`` e a "
+"expressão ``a * b + c``."
+
+msgid "The first value to be multiplied."
+msgstr "O primeiro valor a ser multiplicado."
+
+msgid "The second value to be multiplied."
+msgstr "O segundo valor a ser multiplicado."
+
+msgid "The value to be added to the result."
+msgstr "O valor a ser adicionado ao resultado."
+
+msgid "The value of ``a * b + c``."
+msgstr "O valor de ``a * b + c``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fma.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fma.xhtml"
+
+msgid ""
+"|vec_type| **step**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_step>`"
+msgstr ""
+"|vec_type| **step**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_step>`"
+
+msgid ""
+"|vec_type| **step**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
+msgstr ""
+"|vec_type| **step**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
+
+msgid "The location of the edge of the step function."
+msgstr "A localização da borda da função step."
+
+msgid "The value to be used to generate the step function."
+msgstr "O valor a ser usado para gerar a função degrau."
+
+msgid "``0.0`` or ``1.0``."
+msgstr "``0.0`` ou ``1.0``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/step.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/step.xhtml"
+
+msgid ""
+"|vec_type| **smoothstep**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_smoothstep>`"
+msgstr ""
+"|vec_type| **smoothstep**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_smoothstep>`"
+
+msgid ""
+"|vec_type| **smoothstep**\\ (\\ float a, float b, |vec_type| "
+"c) :ref:`🔗<shader_func_smoothstep>`"
+msgstr ""
+"|vec_type| **smoothstep**\\ (\\ float a, float b, |vec_type| "
+"c) :ref:`🔗<shader_func_smoothstep>`"
+
+msgid ""
+"Performs smooth Hermite interpolation between ``0`` and ``1`` when a < c < "
+"b. This is useful in cases where a threshold function with a smooth "
+"transition is desired."
+msgstr ""
+"Realiza uma interpolação suave de Hermite entre ``0`` e ``1`` quando a < c < "
+"b. Isso é útil em casos onde se deseja uma função de limiar com uma "
+"transição suave."
+
+msgid "Smoothstep is equivalent to:"
+msgstr "Smoothstep é equivalente a:"
+
+msgid "Results are undefined if ``a >= b``."
+msgstr "Os resultados são indefinidos se ``a >= b``."
+
+msgid "The value of the lower edge of the Hermite function."
+msgstr "O valor do limite inferior da função de Hermite."
+
+msgid "The value of the upper edge of the Hermite function."
+msgstr "O valor do limite superior da função de Hermite."
+
+msgid "The source value for interpolation."
+msgstr "O valor de origem para a interpolação."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/smoothstep.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/smoothstep.xhtml"
+
+msgid ""
+"|vec_bool_type| **isnan**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
+msgstr ""
+"|vec_bool_type| **isnan**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
+
+msgid "``true`` or ``false``."
+msgstr "``true`` ou ``false``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/isnan.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/isnan.xhtml"
+
+msgid ""
+"|vec_bool_type| **isinf**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isinf>`"
+msgstr ""
+"|vec_bool_type| **isinf**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isinf>`"
+
+msgid ""
+"For each element i of the result, returns ``true`` if x[i] is positive or "
+"negative floating-point infinity and false otherwise."
+msgstr ""
+"Para cada elemento i do resultado, retorna ``true`` se x[i] for um infinito "
+"de ponto flutuante positivo ou negativo, e falso caso contrário."
+
+msgid "The value to test for infinity."
+msgstr "O valor a ser testado para o infinito."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/isinf.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/isinf.xhtml"
+
+msgid ""
+"|vec_int_type| **floatBitsToInt**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_floatBitsToInt>`"
+msgstr ""
+"|vec_int_type| **floatBitsToInt**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_floatBitsToInt>`"
+
+msgid "Returns the encoding of the floating-point parameters as ``int``."
+msgstr "Retorna a codificação dos parâmetros de ponto flutuante como ``int``."
+
+msgid "The floating-point bit-level representation is preserved."
+msgstr "A representação a nível de bits do ponto flutuante é preservada."
+
+msgid "The value whose floating-point encoding to return."
+msgstr "O valor cuja codificação em ponto flutuante deve ser retornada."
+
+msgid "The floating-point encoding of ``x``."
+msgstr "A codificação em ponto flutuante de ``x``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"floatBitsToInt.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"floatBitsToInt.xhtml"
+
+msgid ""
+"|vec_uint_type| **floatBitsToUint**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_floatBitsToUint>`"
+msgstr ""
+"|vec_uint_type| **floatBitsToUint**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_floatBitsToUint>`"
+
+msgid "Returns the encoding of the floating-point parameters as ``uint``."
+msgstr "Retorna a codificação dos parâmetros de ponto flutuante como ``uint``."
+
+msgid ""
+"|vec_type| **intBitsToFloat**\\ (\\ |vec_int_type| "
+"x) :ref:`🔗<shader_func_intBitsToFloat>`"
+msgstr ""
+"|vec_type| **intBitsToFloat**\\ (\\ |vec_int_type| "
+"x) :ref:`🔗<shader_func_intBitsToFloat>`"
+
+msgid ""
+"Converts a bit encoding to a floating-point value. Opposite of "
+"`floatBitsToInt<shader_func_floatBitsToInt>`"
+msgstr ""
+"Converte uma codificação de bits em um valor de ponto flutuante. O oposto de "
+"`floatBitsToInt<shader_func_floatBitsToInt>`"
+
+msgid ""
+"If the encoding of a ``NaN`` is passed in ``x``, it will not signal and the "
+"resulting value will be undefined."
+msgstr ""
+"Se a codificação de um ``NaN`` for passada em ``x``, ela não gerará "
+"sinalização e o valor resultante será indefinido."
+
+msgid ""
+"If the encoding of a floating-point infinity is passed in parameter ``x``, "
+"the resulting floating-point value is the corresponding (positive or "
+"negative) floating-point infinity."
+msgstr ""
+"Se a codificação de um infinito de ponto flutuante for passada no parâmetro "
+"``x``, o valor de ponto flutuante resultante será o infinito correspondente "
+"(positivo ou negativo)."
+
+msgid "The bit encoding to return as a floating-point value."
+msgstr ""
+"A codificação de bits a ser retornada como um valor de ponto flutuante."
+
+msgid "A floating-point value."
+msgstr "Um valor de ponto flutuante."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"intBitsToFloat.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"intBitsToFloat.xhtml"
+
+msgid ""
+"|vec_type| **uintBitsToFloat**\\ (\\ |vec_uint_type| "
+"x) :ref:`🔗<shader_func_uintBitsToFloat>`"
+msgstr ""
+"|vec_type| **uintBitsToFloat**\\ (\\ |vec_uint_type| "
+"x) :ref:`🔗<shader_func_uintBitsToFloat>`"
+
+msgid ""
+"Converts a bit encoding to a floating-point value. Opposite of "
+"`floatBitsToUint<shader_func_floatBitsToUint>`"
+msgstr ""
+"Converte uma codificação de bits em um valor de ponto flutuante. O oposto de "
+"`floatBitsToUint<shader_func_floatBitsToUint>`"
+
+msgid "Geometric functions"
+msgstr "Funções geométricas"
 
 msgid "float"
 msgstr "float"
 
+msgid ":ref:`length<shader_func_length>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`length<shader_func_length>`\\ (\\ |vec_type| x)"
+
+msgid "Vector length."
+msgstr "Comprimento do vetor."
+
+msgid ":ref:`distance<shader_func_distance>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ""
+":ref:`distance<shader_func_distance>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid "Distance between vectors i.e ``length(a - b)``."
+msgstr "Distância entre vetores, ou seja, ``length(a - b)``."
+
+msgid ":ref:`dot<shader_func_dot>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ":ref:`dot<shader_func_dot>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid "Dot product."
+msgstr "Produto escalar (dot product)."
+
 msgid "vec3"
 msgstr "vec3"
+
+msgid ":ref:`cross<shader_func_cross>`\\ (\\ vec3 a, vec3 b)"
+msgstr ":ref:`cross<shader_func_cross>`\\ (\\ vec3 a, vec3 b)"
+
+msgid "Cross product."
+msgstr "Produto vetorial (cross product)."
+
+msgid ":ref:`normalize<shader_func_normalize>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`normalize<shader_func_normalize>`\\ (\\ |vec_type| x)"
+
+msgid "Normalize to unit length."
+msgstr "Normaliza para comprimento unitário."
+
+msgid ":ref:`reflect<shader_func_reflect>`\\ (\\ vec3 I, vec3 N)"
+msgstr ":ref:`reflect<shader_func_reflect>`\\ (\\ vec3 I, vec3 N)"
+
+msgid "Reflect."
+msgstr "Refletir (reflect)."
+
+msgid ":ref:`refract<shader_func_refract>`\\ (\\ vec3 I, vec3 N, float eta)"
+msgstr ":ref:`refract<shader_func_refract>`\\ (\\ vec3 I, vec3 N, float eta)"
+
+msgid "Refract."
+msgstr "Refratar (refract)."
+
+msgid ""
+":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
+"I, |vec_type| Nref)"
+msgstr ""
+":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
+"I, |vec_type| Nref)"
+
+msgid "|mat_type|"
+msgstr "|mat_type|"
+
+msgid ""
+":ref:`matrixCompMult<shader_func_matrixCompMult>`\\ (\\ |mat_type| x, |"
+"mat_type| y)"
+msgstr ""
+":ref:`matrixCompMult<shader_func_matrixCompMult>`\\ (\\ |mat_type| x, |"
+"mat_type| y)"
+
+msgid "Matrix component multiplication."
+msgstr "Multiplicação de componentes de matriz."
+
+msgid ""
+":ref:`outerProduct<shader_func_outerProduct>`\\ (\\ |vec_type| column, |"
+"vec_type| row)"
+msgstr ""
+":ref:`outerProduct<shader_func_outerProduct>`\\ (\\ |vec_type| column, |"
+"vec_type| row)"
+
+msgid "Matrix outer product."
+msgstr "Produto externo de matriz."
+
+msgid ":ref:`transpose<shader_func_transpose>`\\ (\\ |mat_type| m)"
+msgstr ":ref:`transpose<shader_func_transpose>`\\ (\\ |mat_type| m)"
+
+msgid "Transpose matrix."
+msgstr "Transpor matriz."
+
+msgid ":ref:`determinant<shader_func_determinant>`\\ (\\ |mat_type| m)"
+msgstr ":ref:`determinant<shader_func_determinant>`\\ (\\ |mat_type| m)"
+
+msgid "Matrix determinant."
+msgstr "Determinante da matriz."
+
+msgid ":ref:`inverse<shader_func_inverse>`\\ (\\ |mat_type| m)"
+msgstr ":ref:`inverse<shader_func_inverse>`\\ (\\ |mat_type| m)"
+
+msgid "Inverse matrix."
+msgstr "Inverter matriz."
+
+msgid "Geometric function descriptions"
+msgstr "Descrições de funções geométricas"
+
+msgid "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
+msgstr "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
+
+msgid "The vector"
+msgstr "O vetor"
+
+msgid "The length of the vector."
+msgstr "O comprimento do vetor."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/length.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/length.xhtml"
+
+msgid ""
+"float **distance**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_distance>`"
+msgstr ""
+"float **distance**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_distance>`"
+
+msgid "The first point."
+msgstr "O primeiro ponto."
+
+msgid "The second point."
+msgstr "O segundo ponto."
+
+msgid "The scalar distance between the points"
+msgstr "A distância escalar entre os pontos"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/distance.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/distance.xhtml"
+
+msgid ""
+"float **dot**\\ (\\ |vec_type| a, |vec_type| b) :ref:`🔗<shader_func_dot>`"
+msgstr ""
+"float **dot**\\ (\\ |vec_type| a, |vec_type| b) :ref:`🔗<shader_func_dot>`"
+
+msgid "The first vector."
+msgstr "O primeiro vetor."
+
+msgid "The second vector."
+msgstr "O segundo vetor."
+
+msgid "The dot product."
+msgstr "O produto escalar."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
+
+msgid "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
+msgstr "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
+
+msgid "The cross product of ``a`` and ``b``."
+msgstr "O produto vetorial de ``a`` e ``b``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml"
+
+msgid ""
+"|vec_type| **normalize**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_normalize>`"
+msgstr ""
+"|vec_type| **normalize**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_normalize>`"
+
+msgid ""
+"Returns a vector with the same direction as ``x`` but with length ``1.0``."
+msgstr ""
+"Retorna um vetor com a mesma direção que ``x``, mas com comprimento ``1.0``."
+
+msgid "The vector to normalize."
+msgstr "O vetor a ser normalizado."
+
+msgid "The normalized vector."
+msgstr "O vetor normalizado."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/normalize.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/normalize.xhtml"
+
+msgid "vec3 **reflect**\\ (\\ vec3 I, vec3 N) :ref:`🔗<shader_func_reflect>`"
+msgstr "vec3 **reflect**\\ (\\ vec3 I, vec3 N) :ref:`🔗<shader_func_reflect>`"
+
+msgid "Calculate the reflection direction for an incident vector."
+msgstr "Calcula a direção de reflexão para um vetor incidente."
+
+msgid ""
+"For a given incident vector ``I`` and surface normal ``N`` reflect returns "
+"the reflection direction calculated as ``I - 2.0 * dot(N, I) * N``."
+msgstr ""
+"Para um dado vetor incidente ``I`` e uma normal de superfície ``N``, reflect "
+"retorna a direção de reflexão calculada como ``I - 2.0 * dot(N, I) * N``."
+
+msgid "``N`` should be normalized in order to achieve the desired result."
+msgstr "``N`` deve estar normalizado para obter o resultado desejado."
+
+msgid "param I"
+msgstr "param I"
+
+msgid "The incident vector."
+msgstr "O vetor incidente."
+
+msgid "param N"
+msgstr "param N"
+
+msgid "The normal vector."
+msgstr "O vetor normal."
+
+msgid "The reflection vector."
+msgstr "O vetor de reflexão."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/reflect.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/reflect.xhtml"
+
+msgid ""
+"vec3 **refract**\\ (\\ vec3 I, vec3 N, float "
+"eta) :ref:`🔗<shader_func_refract>`"
+msgstr ""
+"vec3 **refract**\\ (\\ vec3 I, vec3 N, float "
+"eta) :ref:`🔗<shader_func_refract>`"
+
+msgid "Calculate the refraction direction for an incident vector."
+msgstr "Calcula a direção de refração para um vetor incidente."
+
+msgid ""
+"For a given incident vector ``I``, surface normal ``N`` and ratio of indices "
+"of refraction, ``eta``, refract returns the refraction vector, ``R``."
+msgstr ""
+"Para um dado vetor incidente ``I``, uma normal de superfície ``N`` e uma "
+"razão de índices de refração, ``eta``, refract retorna o vetor de refração, "
+"``R``."
+
+msgid "``R`` is calculated as:"
+msgstr "``R`` é calculado como:"
+
+msgid ""
+"The input parameters I and N should be normalized in order to achieve the "
+"desired result."
+msgstr ""
+"Os parâmetros de entrada I e N devem estar normalizados para obter o "
+"resultado desejado."
+
+msgid "param eta"
+msgstr "param eta"
+
+msgid "The ratio of indices of refraction."
+msgstr "A razão dos índices de refração."
+
+msgid "The refraction vector."
+msgstr "O vetor de refração."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/refract.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/refract.xhtml"
+
+msgid ""
+"|vec_type| **faceforward**\\ (\\ |vec_type| N, |vec_type| I, |vec_type| "
+"Nref) :ref:`🔗<shader_func_faceforward>`"
+msgstr ""
+"|vec_type| **faceforward**\\ (\\ |vec_type| N, |vec_type| I, |vec_type| "
+"Nref) :ref:`🔗<shader_func_faceforward>`"
+
+msgid "Returns a vector pointing in the same direction as another."
+msgstr "Retorna um vetor apontando na mesma direção que outro."
+
+msgid ""
+"Orients a vector to point away from a surface as defined by its normal. If "
+"``dot(Nref, I) < 0`` faceforward returns ``N``, otherwise it returns ``-N``."
+msgstr ""
+"Orienta um vetor para apontar na direção oposta a uma superfície, conforme "
+"definido por sua normal. Se ``dot(Nref, I) < 0``, faceforward retorna ``N``, "
+"caso contrário retorna ``-N``."
+
+msgid "The vector to orient."
+msgstr "O vetor a ser orientado."
+
+msgid "param Nref"
+msgstr "param Nref"
+
+msgid "The reference vector."
+msgstr "O vetor de referência."
+
+msgid "The oriented vector."
+msgstr "O vetor orientado."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/faceforward.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/faceforward.xhtml"
+
+msgid ""
+"|mat_type| **matrixCompMult**\\ (\\ |mat_type| x, |mat_type| "
+"y) :ref:`🔗<shader_func_matrixCompMult>`"
+msgstr ""
+"|mat_type| **matrixCompMult**\\ (\\ |mat_type| x, |mat_type| "
+"y) :ref:`🔗<shader_func_matrixCompMult>`"
+
+msgid ""
+"Perform a :ref:`component-wise <shading_componentwise>` multiplication of "
+"two matrices."
+msgstr ""
+"Realiza uma multiplicação :ref:`componente por componente "
+"<shading_componentwise>` (component-wise) de duas matrizes."
+
+msgid ""
+"Performs a component-wise multiplication of two matrices, yielding a result "
+"matrix where each component, ``result[i][j]`` is computed as the scalar "
+"product of ``x[i][j]`` and ``y[i][j]``."
+msgstr ""
+"Realiza uma multiplicação componente por componente de duas matrizes, "
+"gerando uma matriz de resultado onde cada componente, ``result[i][j]``, é "
+"computado como o produto escalar de ``x[i][j]`` e ``y[i][j]``."
+
+msgid "The first matrix multiplicand."
+msgstr "O primeiro multiplicando da matriz."
+
+msgid "The second matrix multiplicand."
+msgstr "O segundo multiplicando da matriz."
+
+msgid "The resultant matrix."
+msgstr "A matriz resultante."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"matrixCompMult.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"matrixCompMult.xhtml"
+
+msgid ""
+"|mat_type| **outerProduct**\\ (\\ |vec_type| column, |vec_type| "
+"row) :ref:`🔗<shader_func_outerProduct>`"
+msgstr ""
+"|mat_type| **outerProduct**\\ (\\ |vec_type| column, |vec_type| "
+"row) :ref:`🔗<shader_func_outerProduct>`"
+
+msgid "Calculate the outer product of a pair of vectors."
+msgstr "Calcula o produto externo de um par de vetores."
+
+msgid ""
+"Does a linear algebraic matrix multiply ``column * row``, yielding a matrix "
+"whose number of rows is the number of components in ``column`` and whose "
+"number of columns is the number of components in ``row``."
+msgstr ""
+"Realiza uma multiplicação de matrizes da álgebra linear ``column * row``, "
+"gerando uma matriz cujo número de linhas é o número de componentes em "
+"``column`` e cujo número de colunas é o número de componentes em ``row``."
+
+msgid "param column"
+msgstr "param column"
+
+msgid "The column vector for multiplication."
+msgstr "O vetor coluna para multiplicação."
+
+msgid "param row"
+msgstr "param row"
+
+msgid "The row vector for multiplication."
+msgstr "O vetor linha para multiplicação."
+
+msgid "The outer product matrix."
+msgstr "A matriz de produto externo."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/outerProduct.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/outerProduct.xhtml"
+
+msgid ""
+"|mat_type| **transpose**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_transpose>`"
+msgstr ""
+"|mat_type| **transpose**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_transpose>`"
+
+msgid "Calculate the transpose of a matrix."
+msgstr "Calcula a transposta de uma matriz."
+
+msgid "param m"
+msgstr "param m"
+
+msgid "The matrix to transpose."
+msgstr "A matriz para transpor."
+
+msgid "A new matrix that is the transpose of the input matrix ``m``."
+msgstr "A nova matriz que é a transposta da matriz de entrada ``m``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/transpose.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/transpose.xhtml"
+
+msgid ""
+"float **determinant**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_determinant>`"
+msgstr ""
+"float **determinant**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_determinant>`"
+
+msgid "Calculate the determinant of a matrix."
+msgstr "Calcula o determinante de uma matriz."
+
+msgid "The matrix."
+msgstr "A matriz."
+
+msgid "The determinant of the input matrix ``m``."
+msgstr "O determinante da matriz de entrada ``m``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/determinant.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/determinant.xhtml"
+
+msgid ""
+"|mat_type| **inverse**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_inverse>`"
+msgstr ""
+"|mat_type| **inverse**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_inverse>`"
+
+msgid "Calculate the inverse of a matrix."
+msgstr "Calcula a inversa de uma matriz."
+
+msgid ""
+"The values in the returned matrix are undefined if ``m`` is singular or "
+"poorly-conditioned (nearly singular)."
+msgstr ""
+"Os valores na matriz retornada são indefinidos se ``m`` for singular ou mal "
+"condicionada (quase singular)."
+
+msgid "The matrix of which to take the inverse."
+msgstr "A matriz da qual calcular a inversa."
+
+msgid "A new matrix which is the inverse of the input matrix ``m``."
+msgstr "Uma nova matriz que é a inversa da matriz de entrada ``m``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inverse.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inverse.xhtml"
+
+msgid "Comparison functions"
+msgstr "Funções de comparação"
+
+msgid ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ""
+":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid ""
+":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ""
+":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid ""
+":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
+"vec_type| y)"
+msgstr ""
+":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
+"vec_type| y)"
+
+msgid ""
+":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
+"vec_type| y)"
+msgstr ""
+":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
+"vec_type| y)"
+
+msgid ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ""
+":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
 
 msgid "bool"
 msgstr "bool"
 
+msgid ":ref:`any<shader_func_any>`\\ (\\ |vec_bool_type| x)"
+msgstr ":ref:`any<shader_func_any>`\\ (\\ |vec_bool_type| x)"
+
+msgid "``true`` if any component is ``true``, ``false`` otherwise."
+msgstr ""
+"``true`` se qualquer componente for ``true``, ``false`` caso contrário."
+
+msgid ":ref:`all<shader_func_all>`\\ (\\ |vec_bool_type| x)"
+msgstr ":ref:`all<shader_func_all>`\\ (\\ |vec_bool_type| x)"
+
+msgid "``true`` if all components are ``true``, ``false`` otherwise."
+msgstr ""
+"``true`` se todos os componentes forem ``true``, ``false`` caso contrário."
+
+msgid ":ref:`not<shader_func_not>`\\ (\\ |vec_bool_type| x)"
+msgstr ":ref:`not<shader_func_not>`\\ (\\ |vec_bool_type| x)"
+
+msgid "Invert boolean vector."
+msgstr "Inverter vetor booleano."
+
+msgid "Comparison function descriptions"
+msgstr "Descrições de funções de comparação"
+
+msgid ""
+"|vec_bool_type| **lessThan**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_lessThan>`"
+msgstr ""
+"|vec_bool_type| **lessThan**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_lessThan>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` less-than comparison "
+"of two vectors."
+msgstr ""
+"Realiza uma comparação menor que :ref:`componente por componente "
+"<shading_componentwise>` (component-wise) de dois vetores."
+
+msgid "The first vector to compare."
+msgstr "O primeiro vetor para comparar."
+
+msgid "The second vector to compare."
+msgstr "O segundo vetor para comparar."
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] < y[i]``."
+msgstr ""
+"Um vetor booleano no qual cada elemento ``i`` é computado como ``x[i] < "
+"y[i]``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/lessThan.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/lessThan.xhtml"
+
+msgid ""
+"|vec_bool_type| **greaterThan**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_greaterThan>`"
+msgstr ""
+"|vec_bool_type| **greaterThan**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_greaterThan>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` greater-than "
+"comparison of two vectors."
+msgstr ""
+"Realiza uma comparação maior que :ref:`componente por componente "
+"<shading_componentwise>` (component-wise) de dois vetores."
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] > y[i]``."
+msgstr ""
+"Um vetor booleano no qual cada elemento ``i`` é computado como ``x[i] > "
+"y[i]``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/greaterThan.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/greaterThan.xhtml"
+
+msgid ""
+"|vec_bool_type| **lessThanEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_lessThanEqual>`"
+msgstr ""
+"|vec_bool_type| **lessThanEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_lessThanEqual>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` less-than-or-equal "
+"comparison of two vectors."
+msgstr ""
+"Realiza uma comparação menor ou igual :ref:`componente por componente "
+"<shading_componentwise>` (component-wise) de dois vetores."
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] <= y[i]``."
+msgstr ""
+"Um vetor booleano no qual cada elemento ``i`` é computado como ``x[i] <= "
+"y[i]``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/lessThanEqual.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/lessThanEqual.xhtml"
+
+msgid ""
+"|vec_bool_type| **greaterThanEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_greaterThanEqual>`"
+msgstr ""
+"|vec_bool_type| **greaterThanEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_greaterThanEqual>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` greater-than-or-"
+"equal comparison of two vectors."
+msgstr ""
+"Realiza uma comparação maior ou igual :ref:`componente por componente "
+"<shading_componentwise>` (component-wise) de dois vetores."
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] >= y[i]``."
+msgstr ""
+"Um vetor booleano no qual cada elemento ``i`` é computado como ``x[i] >= "
+"y[i]``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"greaterThanEqual.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"greaterThanEqual.xhtml"
+
+msgid ""
+"|vec_bool_type| **equal**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_equal>`"
+msgstr ""
+"|vec_bool_type| **equal**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_equal>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` equal-to comparison "
+"of two vectors."
+msgstr ""
+"Realiza uma comparação de igualdade :ref:`componente por componente "
+"<shading_componentwise>` (component-wise) de dois vetores."
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] == y[i]``."
+msgstr ""
+"Um vetor booleano no qual cada elemento ``i`` é computado como ``x[i] == "
+"y[i]``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/equal.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/equal.xhtml"
+
+msgid ""
+"|vec_bool_type| **notEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_notEqual>`"
+msgstr ""
+"|vec_bool_type| **notEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_notEqual>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` not-equal-to "
+"comparison of two vectors."
+msgstr ""
+"Realiza uma comparação de diferença :ref:`componente por componente "
+"<shading_componentwise>` (component-wise) de dois vetores."
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] != y[i]``."
+msgstr ""
+"Um vetor booleano no qual cada elemento ``i`` é computado como ``x[i] != "
+"y[i]``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/notEqual.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/notEqual.xhtml"
+
+msgid "bool **any**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_any>`"
+msgstr "bool **any**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_any>`"
+
+msgid ""
+"Returns ``true`` if any element of a boolean vector is ``true``, ``false`` "
+"otherwise."
+msgstr ""
+"Retorna ``true`` se qualquer elemento de um vetor booleano for ``true``, "
+"caso contrário ``false``."
+
+msgid "Functionally equivalent to:"
+msgstr "Funcionalmente equivalente a:"
+
+msgid "The vector to be tested for truth."
+msgstr "O vetor a ser testado quanto à veracidade."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
+
+msgid "bool **all**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_all>`"
+msgstr "bool **all**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_all>`"
+
+msgid ""
+"Returns ``true`` if all elements of a boolean vector are ``true``, ``false`` "
+"otherwise."
+msgstr ""
+"Retorna ``true`` se todos os elementos de um vetor booleano forem ``true``, "
+"caso contrário ``false``."
+
+msgid "``true`` if all elements of ``x`` are ``true`` and ``false`` otherwise."
+msgstr ""
+"``true`` se todos os elementos de ``x`` forem ``true`` e ``false`` caso "
+"contrário."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/all.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/all.xhtml"
+
+msgid ""
+"|vec_bool_type| **not**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_not>`"
+msgstr ""
+"|vec_bool_type| **not**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_not>`"
+
+msgid "The vector to be inverted."
+msgstr "O vetor a ser invertido."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
+
+msgid "Texture functions"
+msgstr "Funções de textura"
+
+msgid "ivec2"
+msgstr "ivec2"
+
+msgid "ivec3"
+msgstr "ivec3"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler2D| s, int lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler2D| s, int lod)"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ samplerCube s, int lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ samplerCube s, int lod)"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ samplerCubeArray s, int "
+"lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ samplerCubeArray s, int "
+"lod)"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler2DArray| s, int "
+"lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler2DArray| s, int "
+"lod)"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
+
+msgid ""
+"For performance reasons, this function should be avoided as it always "
+"performs a full texture read. When possible, you should pass the texture "
+"size as a uniform instead."
+msgstr ""
+"Por razões de desempenho, esta função deve ser evitada, pois ela sempre "
+"realiza uma leitura completa da textura. Quando possível, você deve passar o "
+"tamanho da textura como um uniform."
+
 msgid "vec2"
 msgstr "vec2"
 
+msgid ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler2D| s, "
+"vec2 p)"
+msgstr ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler2D| s, "
+"vec2 p)"
+
+msgid ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler2DArray| "
+"s, vec2 p)"
+msgstr ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler2DArray| "
+"s, vec2 p)"
+
+msgid ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler3D| s, "
+"vec3 p)"
+msgstr ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler3D| s, "
+"vec3 p)"
+
+msgid ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ samplerCube s, "
+"vec3 p)"
+msgstr ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ samplerCube s, "
+"vec3 p)"
+
+msgid "int"
+msgstr "int"
+
+msgid ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |gsampler2D| "
+"s)"
+msgstr ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |gsampler2D| "
+"s)"
+
+msgid ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |"
+"gsampler2DArray| s)"
+msgstr ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |"
+"gsampler2DArray| s)"
+
+msgid ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |gsampler3D| "
+"s)"
+msgstr ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |gsampler3D| "
+"s)"
+
+msgid ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ samplerCube "
+"s)"
+msgstr ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ samplerCube "
+"s)"
+
+msgid "|gvec4_type|"
+msgstr "|gvec4_type|"
+
 msgid "vec4"
 msgstr "vec4"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler2D| s, vec2 p [, float "
+"bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler2D| s, vec2 p [, float "
+"bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler2DArray| s, vec3 p [, "
+"float bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler2DArray| s, vec3 p [, "
+"float bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler3D| s, vec3 p [, float "
+"bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler3D| s, vec3 p [, float "
+"bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerCube s, vec3 p [, float "
+"bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerCube s, vec3 p [, float "
+"bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerCubeArray s, vec4 p [, "
+"float bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerCubeArray s, vec4 p [, "
+"float bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerExternalOES s, vec2 p [, "
+"float bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerExternalOES s, vec2 p [, "
+"float bias] )"
+
+msgid "Performs a texture read."
+msgstr "Realiza uma leitura de textura."
+
+msgid ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler2D| s, vec3 p [, "
+"float bias] )"
+msgstr ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler2D| s, vec3 p [, "
+"float bias] )"
+
+msgid ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler2D| s, vec4 p [, "
+"float bias] )"
+msgstr ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler2D| s, vec4 p [, "
+"float bias] )"
+
+msgid ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler3D| s, vec4 p [, "
+"float bias] )"
+msgstr ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler3D| s, vec4 p [, "
+"float bias] )"
+
+msgid "Performs a texture read with projection."
+msgstr "Realiza uma leitura de textura com projeção."
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler2D| s, vec2 p, "
+"float lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler2D| s, vec2 p, "
+"float lod)"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler2DArray| s, vec3 p, "
+"float lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler2DArray| s, vec3 p, "
+"float lod)"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler3D| s, vec3 p, "
+"float lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler3D| s, vec3 p, "
+"float lod)"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ samplerCube s, vec3 p, float "
+"lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ samplerCube s, vec3 p, float "
+"lod)"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ samplerCubeArray s, vec4 p, "
+"float lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ samplerCubeArray s, vec4 p, "
+"float lod)"
+
+msgid "Performs a texture read at custom mipmap."
+msgstr "Realiza uma leitura de textura em um mipmap personalizado."
+
+msgid ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler2D| s, vec3 "
+"p, float lod)"
+msgstr ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler2D| s, vec3 "
+"p, float lod)"
+
+msgid ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler2D| s, vec4 "
+"p, float lod)"
+msgstr ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler2D| s, vec4 "
+"p, float lod)"
+
+msgid ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler3D| s, vec4 "
+"p, float lod)"
+msgstr ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler3D| s, vec4 "
+"p, float lod)"
+
+msgid "Performs a texture read with projection/LOD."
+msgstr "Realiza uma leitura de textura com projeção/LOD."
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler2D| s, vec2 p, "
+"vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler2D| s, vec2 p, "
+"vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler2DArray| s, vec3 "
+"p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler2DArray| s, vec3 "
+"p, vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler3D| s, vec3 p, "
+"vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler3D| s, vec3 p, "
+"vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ samplerCube s, vec3 p, "
+"vec3 dPdx, vec3 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ samplerCube s, vec3 p, "
+"vec3 dPdx, vec3 dPdy)"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ samplerCubeArray s, vec3 "
+"p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ samplerCubeArray s, vec3 "
+"p, vec3 dPdx, vec3 dPdy)"
+
+msgid "Performs a texture read with explicit gradients."
+msgstr "Realiza uma leitura de textura com gradientes explícitos."
+
+msgid ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler2D| s, "
+"vec3 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler2D| s, "
+"vec3 p, vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler2D| s, "
+"vec4 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler2D| s, "
+"vec4 p, vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler3D| s, "
+"vec4 p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler3D| s, "
+"vec4 p, vec3 dPdx, vec3 dPdy)"
+
+msgid ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2D| s, ivec2 p, int "
+"lod)"
+msgstr ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2D| s, ivec2 p, int "
+"lod)"
+
+msgid ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2DArray| s, ivec3 "
+"p, int lod)"
+msgstr ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2DArray| s, ivec3 "
+"p, int lod)"
+
+msgid ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler3D| s, ivec3 p, int "
+"lod)"
+msgstr ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler3D| s, ivec3 p, int "
+"lod)"
+
+msgid "Fetches a single texel using integer coordinates."
+msgstr "Busca um único texel usando coordenadas inteiras."
+
+msgid ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ |gsampler2D| s, vec2 p "
+"[, int comps] )"
+msgstr ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ |gsampler2D| s, vec2 p "
+"[, int comps] )"
+
+msgid ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ |gsampler2DArray| s, "
+"vec3 p [, int comps] )"
+msgstr ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ |gsampler2DArray| s, "
+"vec3 p [, int comps] )"
+
+msgid ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ samplerCube s, vec3 p "
+"[, int comps] )"
+msgstr ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ samplerCube s, vec3 p "
+"[, int comps] )"
+
+msgid "Gathers four texels from a texture."
+msgstr "Reúne quatro texels de uma textura."
+
+msgid ":ref:`dFdx<shader_func_dFdx>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdx<shader_func_dFdx>`\\ (\\ |vec_type| p)"
+
+msgid ""
+"Derivative with respect to ``x`` window coordinate, automatic granularity."
+msgstr ""
+"Derivada em relação à coordenada de janela ``x``, granularidade automática."
+
+msgid ":ref:`dFdxCoarse<shader_func_dFdxCoarse>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdxCoarse<shader_func_dFdxCoarse>`\\ (\\ |vec_type| p)"
+
+msgid "Derivative with respect to ``x`` window coordinate, course granularity."
+msgstr ""
+"Derivada em relação à coordenada de janela ``x``, granularidade grossa "
+"(coarse)."
+
+msgid "Not available when using the Compatibility renderer."
+msgstr ""
+"Não disponível ao usar o renderizador de Compatibilidade (Compatibility)."
+
+msgid ":ref:`dFdxFine<shader_func_dFdxFine>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdxFine<shader_func_dFdxFine>`\\ (\\ |vec_type| p)"
+
+msgid "Derivative with respect to ``x`` window coordinate, fine granularity."
+msgstr ""
+"Derivada em relação à coordenada de janela ``x``, granularidade fina (fine)."
+
+msgid ":ref:`dFdy<shader_func_dFdy>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdy<shader_func_dFdy>`\\ (\\ |vec_type| p)"
+
+msgid ""
+"Derivative with respect to ``y`` window coordinate, automatic granularity."
+msgstr ""
+"Derivada em relação à coordenada de janela ``y``, granularidade automática."
+
+msgid ":ref:`dFdyCoarse<shader_func_dFdyCoarse>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdyCoarse<shader_func_dFdyCoarse>`\\ (\\ |vec_type| p)"
+
+msgid "Derivative with respect to ``y`` window coordinate, course granularity."
+msgstr ""
+"Derivada em relação à coordenada de janela ``y``, granularidade grossa "
+"(coarse)."
+
+msgid ":ref:`dFdyFine<shader_func_dFdyFine>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdyFine<shader_func_dFdyFine>`\\ (\\ |vec_type| p)"
+
+msgid "Derivative with respect to ``y`` window coordinate, fine granularity."
+msgstr ""
+"Derivada em relação à coordenada de janela ``y``, granularidade fina (fine)."
+
+msgid ":ref:`fwidth<shader_func_fwidth>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`fwidth<shader_func_fwidth>`\\ (\\ |vec_type| p)"
+
+msgid "Sum of absolute derivative in ``x`` and ``y``."
+msgstr "Soma das derivadas absolutas em ``x`` e ``y``."
+
+msgid ":ref:`fwidthCoarse<shader_func_fwidthCoarse>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`fwidthCoarse<shader_func_fwidthCoarse>`\\ (\\ |vec_type| p)"
+
+msgid ":ref:`fwidthFine<shader_func_fwidthFine>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`fwidthFine<shader_func_fwidthFine>`\\ (\\ |vec_type| p)"
+
+msgid "Texture function descriptions"
+msgstr "Descrições das funções de textura"
+
+msgid ""
+"ivec2 **textureSize**\\ (\\ |gsampler2D| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec2 **textureSize**\\ (\\ |gsampler2D| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid ""
+"ivec2 **textureSize**\\ (\\ samplerCube s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec2 **textureSize**\\ (\\ samplerCube s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid ""
+"ivec2 **textureSize**\\ (\\ samplerCubeArray s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec2 **textureSize**\\ (\\ samplerCubeArray s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid ""
+"ivec3 **textureSize**\\ (\\ |gsampler2DArray| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec3 **textureSize**\\ (\\ |gsampler2DArray| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid ""
+"ivec3 **textureSize**\\ (\\ |gsampler3D| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec3 **textureSize**\\ (\\ |gsampler3D| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid "Retrieves the dimensions of a level of a texture."
+msgstr "Recupera as dimensões de um nível de uma textura."
+
+msgid ""
+"Returns the dimensions of level ``lod`` (if present) of the texture bound to "
+"sampler."
+msgstr ""
+"Retorna as dimensões do nível ``lod`` (se presente) da textura vinculada ao "
+"amostrador (sampler)."
+
+msgid ""
+"The components in the return value are filled in, in order, with the width, "
+"height and depth of the texture. For the array forms, the last component of "
+"the return value is the number of layers in the texture array."
+msgstr ""
+"Os componentes no valor de retorno são preenchidos, em ordem, com a largura, "
+"altura e profundidade da textura. Para os formatos de array, o último "
+"componente do valor de retorno é o número de camadas no array de texturas."
+
+msgid "param s"
+msgstr "param s"
+
+msgid "The sampler to which the texture whose dimensions to retrieve is bound."
+msgstr ""
+"O amostrador (sampler) ao qual a textura cujas dimensões serão recuperadas "
+"está vinculada."
+
+msgid "param lod"
+msgstr "param lod"
+
+msgid "The level of the texture for which to retrieve the dimensions."
+msgstr "O nível da textura do qual recuperar as dimensões."
+
+msgid ""
+"The dimensions of level ``lod`` (if present) of the texture bound to sampler."
+msgstr ""
+"As dimensões do nível ``lod`` (se presente) da textura vinculada ao "
+"amostrador (sampler)."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureSize.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureSize.xhtml"
+
+msgid ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler2D| s, vec2 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+msgstr ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler2D| s, vec2 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+
+msgid ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler2DArray| s, vec2 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+msgstr ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler2DArray| s, vec2 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+
+msgid ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler3D| s, vec3 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+msgstr ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler3D| s, vec3 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+
+msgid ""
+"vec2 **textureQueryLod**\\ (\\ samplerCube s, vec3 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+msgstr ""
+"vec2 **textureQueryLod**\\ (\\ samplerCube s, vec3 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+
+msgid "Available only in the fragment shader."
+msgstr "Disponível apenas no shader de fragmentos."
+
+msgid ""
+"Compute the level-of-detail that would be used to sample from a texture."
+msgstr ""
+"Calcula o nível de detalhe (level-of-detail) que seria usado para amostrar "
+"de uma textura."
+
+msgid ""
+"The mipmap array(s) that would be accessed is returned in the x component of "
+"the return value. The computed level-of-detail relative to the base level is "
+"returned in the y component of the return value."
+msgstr ""
+"O(s) array(s) de mipmap que seriam acessados são retornados no componente x "
+"do valor de retorno. O nível de detalhe computado em relação ao nível base é "
+"retornado no componente y do valor de retorno."
+
+msgid ""
+"If called on an incomplete texture, the result of the operation is undefined."
+msgstr ""
+"Se chamada em uma textura incompleta, o resultado da operação é indefinido."
+
+msgid ""
+"The sampler to which the texture whose level-of-detail will be queried is "
+"bound."
+msgstr ""
+"O amostrador (sampler) ao qual a textura cujo nível de detalhe será "
+"consultado está vinculada."
+
+msgid "param p"
+msgstr "param p"
+
+msgid "The texture coordinates at which the level-of-detail will be queried."
+msgstr ""
+"As coordenadas de textura nas quais o nível de detalhe será consultado."
+
+msgid "See description."
+msgstr "Veja a descrição."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureQueryLod.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureQueryLod.xhtml"
+
+msgid ""
+"int **textureQueryLevels**\\ (\\ |gsampler2D| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+msgstr ""
+"int **textureQueryLevels**\\ (\\ |gsampler2D| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+
+msgid ""
+"int **textureQueryLevels**\\ (\\ |gsampler2DArray| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+msgstr ""
+"int **textureQueryLevels**\\ (\\ |gsampler2DArray| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+
+msgid ""
+"int **textureQueryLevels**\\ (\\ |gsampler3D| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+msgstr ""
+"int **textureQueryLevels**\\ (\\ |gsampler3D| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+
+msgid ""
+"int **textureQueryLevels**\\ (\\ samplerCube "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+msgstr ""
+"int **textureQueryLevels**\\ (\\ samplerCube "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+
+msgid "Compute the number of accessible mipmap levels of a texture."
+msgstr "Calcula o número de níveis de mipmap acessíveis de uma textura."
+
+msgid ""
+"If called on an incomplete texture, or if no texture is associated with "
+"sampler, ``0`` is returned."
+msgstr ""
+"Se chamada em uma textura incompleta, ou se nenhuma textura estiver "
+"associada ao amostrador, ``0`` é retornado."
+
+msgid ""
+"The sampler to which the texture whose mipmap level count will be queried is "
+"bound."
+msgstr ""
+"O amostrador (sampler) ao qual a textura cuja contagem de níveis de mipmap "
+"será consultada está vinculada."
+
+msgid "The number of accessible mipmap levels in the texture, or ``0``."
+msgstr "O número de níveis de mipmap acessíveis na textura, ou ``0``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureQueryLevels.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureQueryLevels.xhtml"
+
+msgid ""
+"|gvec4_type| **texture**\\ (\\ |gsampler2D| s, vec2 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"|gvec4_type| **texture**\\ (\\ |gsampler2D| s, vec2 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"|gvec4_type| **texture**\\ (\\ |gsampler2DArray| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"|gvec4_type| **texture**\\ (\\ |gsampler2DArray| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"|gvec4_type| **texture**\\ (\\ |gsampler3D| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"|gvec4_type| **texture**\\ (\\ |gsampler3D| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"vec4 **texture**\\ (\\ samplerCube s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"vec4 **texture**\\ (\\ samplerCube s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"vec4 **texture**\\ (\\ samplerCubeArray s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"vec4 **texture**\\ (\\ samplerCubeArray s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"vec4 **texture**\\ (\\ samplerExternalOES s, vec2 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"vec4 **texture**\\ (\\ samplerExternalOES s, vec2 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid "Retrieves texels from a texture."
+msgstr "Recupera texels de uma textura."
+
+msgid ""
+"Samples texels from the texture bound to ``s`` at texture coordinate ``p``. "
+"An optional bias, specified in ``bias`` is included in the level-of-detail "
+"computation that is used to choose mipmap(s) from which to sample."
+msgstr ""
+"Amostra texels da textura vinculada a ``s`` na coordenada de textura ``p``. "
+"Um viés opcional, especificado em ``bias``, é incluído no cálculo do nível "
+"de detalhe que é usado para escolher o(s) mipmap(s) do(s) qual(is) amostrar."
+
+msgid ""
+"For shadow forms, the last component of ``p`` is used as Dsub and the array "
+"layer is specified in the second to last component of ``p``. (The second "
+"component of ``p`` is unused for 1D shadow lookups.)"
+msgstr ""
+"Para formas de sombra (shadow forms), o último componente de ``p`` é usado "
+"como Dsub e a camada do array é especificada no penúltimo componente de "
+"``p``. (O segundo componente de ``p`` não é usado para buscas de sombra 1D.)"
+
+msgid ""
+"For non-shadow variants, the array layer comes from the last component of P."
+msgstr ""
+"Para variantes que não são de sombra, a camada do array vem do último "
+"componente de P."
+
+msgid ""
+"The sampler to which the texture from which texels will be retrieved is "
+"bound."
+msgstr ""
+"O amostrador (sampler) ao qual a textura da qual os texels serão recuperados "
+"está vinculada."
+
+msgid "The texture coordinates at which texture will be sampled."
+msgstr "As coordenadas de textura nas quais a textura será amostrada."
+
+msgid "param bias"
+msgstr "param bias"
+
+msgid "An optional bias to be applied during level-of-detail computation."
+msgstr ""
+"Um viés (bias) opcional a ser aplicado durante o cálculo do nível de detalhe."
+
+msgid "A texel."
+msgstr "Um texel."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texture.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texture.xhtml"
+
+msgid ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler2D| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+msgstr ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler2D| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+
+msgid ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler2D| s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+msgstr ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler2D| s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+
+msgid ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler3D| s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+msgstr ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler3D| s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+
+msgid "Optional bias to be applied during level-of-detail computation."
+msgstr ""
+"Viés (bias) opcional a ser aplicado durante o cálculo do nível de detalhe."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureProj.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureProj.xhtml"
+
+msgid ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler2D| s, vec2 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler2D| s, vec2 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler2DArray| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler2DArray| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler3D| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler3D| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"vec4 **textureLod**\\ (\\ samplerCube s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"vec4 **textureLod**\\ (\\ samplerCube s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"vec4 **textureLod**\\ (\\ samplerCubeArray s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"vec4 **textureLod**\\ (\\ samplerCubeArray s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"Performs a texture lookup at coordinate ``p`` from the texture bound to "
+"sampler with an explicit level-of-detail as specified in ``lod``. ``lod`` "
+"specifies λbase and sets the partial derivatives as follows:"
+msgstr ""
+"Realiza uma busca de textura na coordenada ``p`` a partir da textura "
+"vinculada ao amostrador com um nível de detalhe explícito conforme "
+"especificado em ``lod``. ``lod`` especifica λbase e define as derivadas "
+"parciais da seguinte forma:"
+
+msgid "The explicit level-of-detail."
+msgstr "O nível de detalhe (lod) explícito."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureLod.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureLod.xhtml"
+
+msgid ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler2D| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+msgstr ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler2D| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+
+msgid ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler2D| s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+msgstr ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler2D| s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+
+msgid ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler3D| s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+msgstr ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler3D| s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+
+msgid ""
+"Performs a texture lookup with projection from an explicitly specified level-"
+"of-detail."
+msgstr ""
+"Realiza uma busca de textura com projeção a partir de um nível de detalhe "
+"explicitamente especificado."
+
+msgid "The explicit level-of-detail from which to fetch texels."
+msgstr "O nível de detalhe explícito do qual buscar os texels."
+
+msgid "a texel"
+msgstr "um texel"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureProjLod.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureProjLod.xhtml"
+
+msgid ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler2D| s, vec2 p, vec2 dPdx, vec2 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler2D| s, vec2 p, vec2 dPdx, vec2 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler2DArray| s, vec3 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler2DArray| s, vec3 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler3D| s, vec3 p, vec2 dPdx, vec2 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler3D| s, vec3 p, vec2 dPdx, vec2 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"vec4 **textureGrad**\\ (\\ samplerCube s, vec3 p, vec3 dPdx, vec3 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"vec4 **textureGrad**\\ (\\ samplerCube s, vec3 p, vec3 dPdx, vec3 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"vec4 **textureGrad**\\ (\\ samplerCubeArray s, vec3 p, vec3 dPdx, vec3 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"vec4 **textureGrad**\\ (\\ samplerCubeArray s, vec3 p, vec3 dPdx, vec3 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid "``δs/δx=δp/δx`` for a 1D texture, ``δp.s/δx`` otherwise"
+msgstr "``δs/δx=δp/δx`` para uma textura 1D, ``δp.s/δx`` caso contrário"
+
+msgid "``δs/δy=δp/δy`` for a 1D texture, ``δp.s/δy`` otherwise"
+msgstr "``δs/δy=δp/δy`` para uma textura 1D, ``δp.s/δy`` caso contrário"
+
+msgid "``δt/δx=0.0`` for a 1D texture, ``δp.t/δx`` otherwise"
+msgstr "``δt/δx=0.0`` para uma textura 1D, ``δp.t/δx`` caso contrário"
+
+msgid "``δt/δy=0.0`` for a 1D texture, ``δp.t/δy`` otherwise"
+msgstr "``δt/δy=0.0`` para uma textura 1D, ``δp.t/δy`` caso contrário"
+
+msgid "``δr/δx=0.0`` for a 1D or 2D texture, ``δp.p/δx`` otherwise"
+msgstr "``δr/δx=0.0`` para uma textura 1D ou 2D, ``δp.p/δx`` caso contrário"
+
+msgid ""
+"For the cube version, the partial derivatives of ``p`` are assumed to be in "
+"the coordinate system used before texture coordinates are projected onto the "
+"appropriate cube face."
+msgstr ""
+"Para a versão de cubo (cube), assume-se que as derivadas parciais de ``p`` "
+"estão no sistema de coordenadas usado antes de as coordenadas de textura "
+"serem projetadas na face apropriada do cubo."
+
+msgid "param dPdx"
+msgstr "param dPdx"
+
+msgid "The partial derivative of P with respect to window x."
+msgstr "A derivada parcial de P em relação ao x da janela."
+
+msgid "param dPdy"
+msgstr "param dPdy"
+
+msgid "The partial derivative of P with respect to window y."
+msgstr "A derivada parcial de P em relação ao y da janela."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGrad.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGrad.xhtml"
+
+msgid ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler2D| s, vec3 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+msgstr ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler2D| s, vec3 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+
+msgid ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler2D| s, vec4 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+msgstr ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler2D| s, vec4 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+
+msgid ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler3D| s, vec4 p, vec3 dPdx, "
+"vec3 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+msgstr ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler3D| s, vec4 p, vec3 dPdx, "
+"vec3 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+
+msgid "The partial derivative of ``p`` with respect to window x."
+msgstr "A derivada parcial de ``p`` em relação ao x da janela."
+
+msgid "The partial derivative of ``p`` with respect to window y."
+msgstr "A derivada parcial de ``p`` em relação ao y da janela."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureProjGrad.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureProjGrad.xhtml"
+
+msgid ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler2D| s, ivec2 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+msgstr ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler2D| s, ivec2 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+
+msgid ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler2DArray| s, ivec3 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+msgstr ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler2DArray| s, ivec3 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+
+msgid ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler3D| s, ivec3 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+msgstr ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler3D| s, ivec3 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+
+msgid ""
+"Performs a lookup of a single texel from texture coordinate ``p`` in the "
+"texture bound to sampler."
+msgstr ""
+"Realiza a busca de um único texel a partir da coordenada de textura ``p`` na "
+"textura vinculada ao amostrador (sampler)."
+
+msgid ""
+"Specifies the level-of-detail within the texture from which the texel will "
+"be fetched."
+msgstr ""
+"Especifica o nível de detalhe (level-of-detail) dentro da textura do qual o "
+"texel será buscado."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texelFetch.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texelFetch.xhtml"
+
+msgid ""
+"|gvec4_type| **textureGather**\\ (\\ |gsampler2D| s, vec2 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+msgstr ""
+"|gvec4_type| **textureGather**\\ (\\ |gsampler2D| s, vec2 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+
+msgid ""
+"|gvec4_type| **textureGather**\\ (\\ |gsampler2DArray| s, vec3 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+msgstr ""
+"|gvec4_type| **textureGather**\\ (\\ |gsampler2DArray| s, vec3 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+
+msgid ""
+"vec4 **textureGather**\\ (\\ samplerCube s, vec3 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+msgstr ""
+"vec4 **textureGather**\\ (\\ samplerCube s, vec3 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+
+msgid "Returns the value:"
+msgstr "Retorna o valor:"
+
+msgid "param comps"
+msgstr "param comps"
+
+msgid ""
+"*optional* the component of the source texture (0 -> x, 1 -> y, 2 -> z, 3 -> "
+"w) that will be used to generate the resulting vector. Zero if not specified."
+msgstr ""
+"*opcional* o componente da textura de origem (0 -> x, 1 -> y, 2 -> z, 3 -> "
+"w) que será usado para gerar o vetor resultante. Zero se não for "
+"especificado."
+
+msgid "The gathered texel."
+msgstr "O texel coletado."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGather.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGather.xhtml"
+
+msgid "|vec_type| **dFdx**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdx>`"
+msgstr "|vec_type| **dFdx**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdx>`"
+
+msgid ""
+"Returns the partial derivative of ``p`` with respect to the window x "
+"coordinate using local differencing."
+msgstr ""
+"Retorna a derivada parcial de ``p`` em relação à coordenada x da janela "
+"usando diferenciação local."
+
+msgid ""
+"Returns either :ref:`dFdxCoarse<shader_func_dFdxCoarse>` "
+"or :ref:`dFdxFine<shader_func_dfdxFine>`. The implementation may choose "
+"which calculation to perform based upon factors such as performance or the "
+"value of the API ``GL_FRAGMENT_SHADER_DERIVATIVE_HINT`` hint."
+msgstr ""
+"Retorna ou :ref:`dFdxCoarse<shader_func_dFdxCoarse>` "
+"ou :ref:`dFdxFine<shader_func_dfdxFine>`. A implementação pode escolher qual "
+"cálculo realizar com base em fatores como desempenho ou o valor do hint da "
+"API ``GL_FRAGMENT_SHADER_DERIVATIVE_HINT``."
+
+msgid ""
+"Expressions that imply higher order derivatives such as ``dFdx(dFdx(n))`` "
+"have undefined results, as do mixed-order derivatives such as "
+"``dFdx(dFdy(n))``."
+msgstr ""
+"Expressões que implicam derivadas de ordem superior, como ``dFdx(dFdx(n))``, "
+"têm resultados indefinidos, assim como derivadas de ordem mista, como "
+"``dFdx(dFdy(n))``."
+
+msgid "The expression of which to take the partial derivative."
+msgstr "A expressão da qual calcular a derivada parcial."
+
+msgid ""
+"It is assumed that the expression ``p`` is continuous and therefore "
+"expressions evaluated via non-uniform control flow may be undefined."
+msgstr ""
+"Assume-se que a expressão ``p`` é contínua e, portanto, expressões avaliadas "
+"por meio de fluxo de controle não uniforme podem ser indefinidas."
+
+msgid "The partial derivative of ``p``."
+msgstr "A derivada parcial de ``p``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dFdx.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dFdx.xhtml"
+
+msgid ""
+"|vec_type| **dFdxCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_dFdxCoarse>`"
+msgstr ""
+"|vec_type| **dFdxCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_dFdxCoarse>`"
+
+msgid ""
+"Available only in the fragment shader. Not available when using the "
+"Compatibility renderer."
+msgstr ""
+"Disponível apenas no fragment shader. Não disponível ao usar o renderizador "
+"de Compatibilidade (Compatibility)."
+
+msgid ""
+"Returns the partial derivative of ``p`` with respect to the window x "
+"coordinate."
+msgstr ""
+"Retorna a derivada parcial de ``p`` em relação à coordenada x da janela."
+
+msgid ""
+"Calculates derivatives using local differencing based on the value of ``p`` "
+"for the current fragment's neighbors, and will possibly, but not "
+"necessarily, include the value for the current fragment. That is, over a "
+"given area, the implementation can compute derivatives in fewer unique "
+"locations than would be allowed for the "
+"corresponding :ref:`dFdxFine<shader_func_dFdxFine>` function."
+msgstr ""
+"Calcula derivadas usando diferenciação local com base no valor de ``p`` para "
+"os vizinhos do fragmento atual, e possivelmente, mas não necessariamente, "
+"incluirá o valor para o fragmento atual. Ou seja, sobre uma determinada "
+"área, a implementação pode computar derivadas em menos locais únicos do que "
+"seria permitido para a função "
+"correspondente :ref:`dFdxFine<shader_func_dFdxFine>`."
+
+msgid "https://registry.khronos.org/OpenGL-Refpages/gl4/html/dFdx.xhtml"
+msgstr "https://registry.khronos.org/OpenGL-Refpages/gl4/html/dFdx.xhtml"
+
+msgid ""
+"|vec_type| **dFdxFine**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdxFine>`"
+msgstr ""
+"|vec_type| **dFdxFine**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdxFine>`"
+
+msgid ""
+"Calculates derivatives using local differencing based on the value of ``p`` "
+"for the current fragment and its immediate neighbor(s)."
+msgstr ""
+"Calcula derivadas usando diferenciação local com base no valor de ``p`` para "
+"o fragmento atual e seu(s) vizinho(s) imediato(s)."
+
+msgid "|vec_type| **dFdy**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdy>`"
+msgstr "|vec_type| **dFdy**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdy>`"
+
+msgid ""
+"Returns the partial derivative of ``p`` with respect to the window y "
+"coordinate using local differencing."
+msgstr ""
+"Retorna a derivada parcial de ``p`` em relação à coordenada y da janela "
+"usando diferenciação local."
+
+msgid ""
+"Returns either :ref:`dFdyCoarse<shader_func_dFdyCoarse>` "
+"or :ref:`dFdyFine<shader_func_dfdyFine>`. The implementation may choose "
+"which calculation to perform based upon factors such as performance or the "
+"value of the API ``GL_FRAGMENT_SHADER_DERIVATIVE_HINT`` hint."
+msgstr ""
+"Retorna ou :ref:`dFdyCoarse<shader_func_dFdyCoarse>` "
+"ou :ref:`dFdyFine<shader_func_dfdyFine>`. A implementação pode escolher qual "
+"cálculo realizar com base em fatores como desempenho ou o valor do hint da "
+"API ``GL_FRAGMENT_SHADER_DERIVATIVE_HINT``."
+
+msgid ""
+"|vec_type| **dFdyCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_dFdyCoarse>`"
+msgstr ""
+"|vec_type| **dFdyCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_dFdyCoarse>`"
+
+msgid ""
+"Returns the partial derivative of ``p`` with respect to the window y "
+"coordinate."
+msgstr ""
+"Retorna a derivada parcial de ``p`` em relação à coordenada y da janela."
+
+msgid ""
+"Calculates derivatives using local differencing based on the value of ``p`` "
+"for the current fragment's neighbors, and will possibly, but not "
+"necessarily, include the value for the current fragment. That is, over a "
+"given area, the implementation can compute derivatives in fewer unique "
+"locations than would be allowed for the corresponding dFdyFine and dFdyFine "
+"functions."
+msgstr ""
+"Calcula derivadas usando diferenciação local com base no valor de ``p`` para "
+"os vizinhos do fragmento atual, e possivelmente, mas não necessariamente, "
+"incluirá o valor para o fragmento atual. Ou seja, sobre uma determinada "
+"área, a implementação pode computar derivadas em menos locais únicos do que "
+"seria permitido para as funções correspondentes dFdyFine e dFdyFine."
+
+msgid ""
+"|vec_type| **dFdyFine**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdyFine>`"
+msgstr ""
+"|vec_type| **dFdyFine**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdyFine>`"
+
+msgid "|vec_type| **fwidth**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_fwidth>`"
+msgstr ""
+"|vec_type| **fwidth**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_fwidth>`"
+
+msgid "Returns the sum of the absolute value of derivatives in x and y."
+msgstr "Retorna a soma do valor absoluto das derivadas em x e y."
+
+msgid "Uses local differencing for the input argument ``p``."
+msgstr "Usa diferenciação local para o argumento de entrada ``p``."
+
+msgid "Equivalent to ``abs(dFdx(p)) + abs(dFdy(p))``."
+msgstr "Equivalente a ``abs(dFdx(p)) + abs(dFdy(p))``."
+
+msgid "The partial derivative."
+msgstr "A derivada parcial."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fwidth.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fwidth.xhtml"
+
+msgid ""
+"|vec_type| **fwidthCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_fwidthCoarse>`"
+msgstr ""
+"|vec_type| **fwidthCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_fwidthCoarse>`"
+
+msgid "Uses local differencing for the input argument p."
+msgstr "Usa diferenciação local para o argumento de entrada p."
+
+msgid ""
+"|vec_type| **fwidthFine**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_fwidthFine>`"
+msgstr ""
+"|vec_type| **fwidthFine**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_fwidthFine>`"
+
+msgid "Equivalent to ``abs(dFdxFine(p)) + abs(dFdyFine(p))``."
+msgstr "Equivalente a ``abs(dFdxFine(p)) + abs(dFdyFine(p))``."
+
+msgid "https://registry.khronos.org/OpenGL-Refpages/gl4/html/fwidth.xhtml"
+msgstr "https://registry.khronos.org/OpenGL-Refpages/gl4/html/fwidth.xhtml"
+
+msgid "Packing and unpacking functions"
+msgstr "Funções de empacotamento e desempacotamento"
+
+msgid ""
+"These functions convert floating-point numbers into various sized integers "
+"and then pack those integers into a single 32bit unsigned integer. The "
+"'unpack' functions perform the opposite operation, returning the original "
+"floating-point numbers."
+msgstr ""
+"Essas funções convertem números de ponto flutuante em inteiros de vários "
+"tamanhos e, em seguida, empacotam esses inteiros em um único inteiro não "
+"sinalizado de 32 bits. As funções 'unpack' realizam a operação oposta, "
+"retornando os números de ponto flutuante originais."
+
+msgid "uint"
+msgstr "uint"
+
+msgid ":ref:`packHalf2x16<shader_func_packHalf2x16>`\\ (\\ vec2 v)"
+msgstr ":ref:`packHalf2x16<shader_func_packHalf2x16>`\\ (\\ vec2 v)"
+
+msgid ":ref:`unpackHalf2x16<shader_func_unpackHalf2x16>`\\ (\\ uint v)"
+msgstr ":ref:`unpackHalf2x16<shader_func_unpackHalf2x16>`\\ (\\ uint v)"
+
+msgid "Convert two 32-bit floats to 16 bit floats and pack them."
+msgstr "Converte dois floats de 32 bits para floats de 16 bits e os empacota."
+
+msgid ":ref:`packUnorm2x16<shader_func_packUnorm2x16>`\\ (\\ vec2 v)"
+msgstr ":ref:`packUnorm2x16<shader_func_packUnorm2x16>`\\ (\\ vec2 v)"
+
+msgid ":ref:`unpackUnorm2x16<shader_func_unpackUnorm2x16>`\\ (\\ uint v)"
+msgstr ":ref:`unpackUnorm2x16<shader_func_unpackUnorm2x16>`\\ (\\ uint v)"
+
+msgid ""
+"Convert two normalized (range 0..1) 32-bit floats to 16-bit unsigned ints "
+"and pack them."
+msgstr ""
+"Converte dois floats de 32 bits normalizados (intervalo 0..1) para inteiros "
+"não sinalizados de 16 bits e os empacota."
+
+msgid ":ref:`packSnorm2x16<shader_func_packSnorm2x16>`\\ (\\ vec2 v)"
+msgstr ":ref:`packSnorm2x16<shader_func_packSnorm2x16>`\\ (\\ vec2 v)"
+
+msgid ":ref:`unpackSnorm2x16<shader_func_unpackSnorm2x16>`\\ (\\ uint v)"
+msgstr ":ref:`unpackSnorm2x16<shader_func_unpackSnorm2x16>`\\ (\\ uint v)"
+
+msgid ""
+"Convert two signed normalized (range -1..1) 32-bit floats to 16-bit signed "
+"ints and pack them."
+msgstr ""
+"Converte dois floats de 32 bits normalizados com sinal (intervalo -1..1) "
+"para inteiros sinalizados de 16 bits e os empacota."
+
+msgid ":ref:`packUnorm4x8<shader_func_packUnorm4x8>`\\ (\\ vec4 v)"
+msgstr ":ref:`packUnorm4x8<shader_func_packUnorm4x8>`\\ (\\ vec4 v)"
+
+msgid ":ref:`unpackUnorm4x8<shader_func_unpackUnorm4x8>`\\ (\\ uint v)"
+msgstr ":ref:`unpackUnorm4x8<shader_func_unpackUnorm4x8>`\\ (\\ uint v)"
+
+msgid ""
+"Convert four normalized (range 0..1) 32-bit floats into 8-bit unsigned ints "
+"and pack them."
+msgstr ""
+"Converte quatro floats de 32 bits normalizados (intervalo 0..1) em inteiros "
+"não sinalizados de 8 bits e os empacota."
+
+msgid ":ref:`packSnorm4x8<shader_func_packSnorm4x8>`\\ (\\ vec4 v)"
+msgstr ":ref:`packSnorm4x8<shader_func_packSnorm4x8>`\\ (\\ vec4 v)"
+
+msgid ":ref:`unpackSnorm4x8<shader_func_unpackSnorm4x8>`\\ (\\ uint v)"
+msgstr ":ref:`unpackSnorm4x8<shader_func_unpackSnorm4x8>`\\ (\\ uint v)"
+
+msgid ""
+"Convert four signed normalized (range -1..1) 32-bit floats into 8-bit signed "
+"ints and pack them."
+msgstr ""
+"Converte quatro floats de 32 bits normalizados com sinal (intervalo -1..1) "
+"em inteiros sinalizados de 8 bits e os empacota."
+
+msgid "Packing and unpacking function descriptions"
+msgstr ""
+"Descrições das funções de empacotamento (packing) e desempacotamento "
+"(unpacking)"
+
+msgid "uint **packHalf2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packHalf2x16>`"
+msgstr ""
+"uint **packHalf2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packHalf2x16>`"
+
+msgid ""
+"Converts two 32-bit floating-point quantities to 16-bit floating-point "
+"quantities and packs them into a single 32-bit integer."
+msgstr ""
+"Converte duas quantidades de ponto flutuante de 32 bits em quantidades de "
+"ponto flutuante de 16 bits e as empacota em um único inteiro de 32 bits."
+
+msgid ""
+"Returns an unsigned integer obtained by converting the components of a two-"
+"component floating-point vector to the 16-bit floating-point representation "
+"found in the OpenGL Specification, and then packing these two 16-bit "
+"integers into a 32-bit unsigned integer. The first vector component "
+"specifies the 16 least-significant bits of the result; the second component "
+"specifies the 16 most-significant bits."
+msgstr ""
+"Retorna um inteiro não sinalizado obtido ao converter os componentes de um "
+"vetor de ponto flutuante de dois componentes para a representação de ponto "
+"flutuante de 16 bits encontrada na Especificação do OpenGL, e então "
+"empacotando esses dois inteiros de 16 bits em um inteiro não sinalizado de "
+"32 bits. O primeiro componente do vetor especifica os 16 bits menos "
+"significativos do resultado; o segundo componente especifica os 16 bits mais "
+"significativos."
+
+msgid "param v"
+msgstr "param v"
+
+msgid ""
+"A vector of two 32-bit floating-point values that are to be converted to 16-"
+"bit representation and packed into the result."
+msgstr ""
+"Um vetor de dois valores de ponto flutuante de 32 bits que devem ser "
+"convertidos para a representação de 16 bits e empacotados no resultado."
+
+msgid "The packed value."
+msgstr "O valor empacotado."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/packHalf2x16.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/packHalf2x16.xhtml"
+
+msgid ""
+"vec2 **unpackHalf2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackHalf2x16>`"
+msgstr ""
+"vec2 **unpackHalf2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackHalf2x16>`"
+
+msgid "Inverse of :ref:`packHalf2x16<shader_func_packHalf2x16>`."
+msgstr "Inverso de :ref:`packHalf2x16<shader_func_packHalf2x16>`."
+
+msgid ""
+"Unpacks a 32-bit integer into two 16-bit floating-point values, converts "
+"them to 32-bit floating-point values, and puts them into a vector. The first "
+"component of the vector is obtained from the 16 least-significant bits of "
+"``v``; the second component is obtained from the 16 most-significant bits of "
+"``v``."
+msgstr ""
+"Desempacota um inteiro de 32 bits em dois valores de ponto flutuante de 16 "
+"bits, converte-os em valores de ponto flutuante de 32 bits e os coloca em um "
+"vetor. O primeiro componente do vetor é obtido a partir dos 16 bits menos "
+"significativos de ``v``; o segundo componente é obtido a partir dos 16 bits "
+"mais significativos de ``v``."
+
+msgid ""
+"A single 32-bit unsigned integer containing 2 packed 16-bit floating-point "
+"values."
+msgstr ""
+"Um único inteiro não sinalizado de 32 bits contendo 2 valores de ponto "
+"flutuante de 16 bits empacotados."
+
+msgid "Two unpacked floating-point values."
+msgstr "Dois valores de ponto flutuante descompactados."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"unpackHalf2x16.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"unpackHalf2x16.xhtml"
+
+msgid ""
+"uint **packUnorm2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packUnorm2x16>`"
+msgstr ""
+"uint **packUnorm2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packUnorm2x16>`"
+
+msgid "Pack floating-point values into an unsigned integer."
+msgstr "Empacota valores de ponto flutuante em um inteiro não sinalizado."
+
+msgid ""
+"Converts each component of the normalized floating-point value v into 16-bit "
+"integer values and then packs the results into a 32-bit unsigned integer."
+msgstr ""
+"Converte cada componente do valor de ponto flutuante normalizado v em "
+"valores inteiros de 16 bits e, em seguida, empacota os resultados em um "
+"inteiro não sinalizado de 32 bits."
+
+msgid ""
+"The conversion for component c of ``v`` to fixed-point is performed as "
+"follows:"
+msgstr ""
+"A conversão para o componente c de ``v`` para ponto fixo é realizada da "
+"seguinte forma:"
+
+msgid ""
+"The first component of the vector will be written to the least significant "
+"bits of the output; the last component will be written to the most "
+"significant bits."
+msgstr ""
+"O primeiro componente do vetor será gravado nos bits menos significativos da "
+"saída; o último componente será gravado nos bits mais significativos."
+
+msgid "A vector of values to be packed into an unsigned integer."
+msgstr "Um vetor de valores a serem empacotados em um inteiro não sinalizado."
+
+msgid "Unsigned 32 bit integer containing the packed encoding of the vector."
+msgstr ""
+"Inteiro não sinalizado de 32 bits contendo a codificação empacotada do vetor."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/packUnorm.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/packUnorm.xhtml"
+
+msgid ""
+"vec2 **unpackUnorm2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackUnorm2x16>`"
+msgstr ""
+"vec2 **unpackUnorm2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackUnorm2x16>`"
+
+msgid "Unpack floating-point values from an unsigned integer."
+msgstr ""
+"Desempacota valores de ponto flutuante a partir de um inteiro não sinalizado."
+
+msgid ""
+"Unpack single 32-bit unsigned integers into a pair of 16-bit unsigned "
+"integers. Then, each component is converted to a normalized floating-point "
+"value to generate the returned two-component vector."
+msgstr ""
+"Desempacota inteiros não sinalizados de 32 bits individuais em um par de "
+"inteiros não sinalizados de 16 bits. Em seguida, cada componente é "
+"convertido em um valor de ponto flutuante normalizado para gerar o vetor de "
+"dois componentes retornado."
+
+msgid ""
+"The conversion for unpacked fixed point value f to floating-point is "
+"performed as follows:"
+msgstr ""
+"A conversão para o valor de ponto fixo desempacotado f para ponto flutuante "
+"é realizada da seguinte forma:"
+
+msgid "f / 65535.0"
+msgstr "f / 65535.0"
+
+msgid ""
+"The first component of the returned vector will be extracted from the least "
+"significant bits of the input; the last component will be extracted from the "
+"most significant bits."
+msgstr ""
+"O primeiro componente do vetor retornado será extraído dos bits menos "
+"significativos da entrada; o último componente será extraído os bits mais "
+"significativos."
+
+msgid "An unsigned integer containing packed floating-point values."
+msgstr ""
+"Um inteiro não sinalizado contendo valores de ponto flutuante empacotados."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/unpackUnorm.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/unpackUnorm.xhtml"
+
+msgid ""
+"uint **packSnorm2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packSnorm2x16>`"
+msgstr ""
+"uint **packSnorm2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packSnorm2x16>`"
+
+msgid "Packs floating-point values into an unsigned integer."
+msgstr "Empacota valores de ponto flutuante em um inteiro não sinalizado."
+
+msgid ""
+"Convert each component of the normalized floating-point value ``v`` into 16-"
+"bit integer values and then packs the results into a 32-bit unsigned integer."
+msgstr ""
+"Converte cada componente do valor de ponto flutuante normalizado ``v`` em "
+"valores inteiros de 16 bits e, em seguida, empacota os resultados em um "
+"inteiro não sinalizado de 32 bits."
+
+msgid ""
+"vec2 **unpackSnorm2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackSnorm2x16>`"
+msgstr ""
+"vec2 **unpackSnorm2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackSnorm2x16>`"
+
+msgid "Unpacks floating-point values from an unsigned integer."
+msgstr ""
+"Desempacota valores de ponto flutuante a partir de um inteiro não sinalizado."
+
+msgid ""
+"Unpacks single 32-bit unsigned integers into a pair of 16-bit signed "
+"integers. Then, each component is converted to a normalized floating-point "
+"value to generate the returned two-component vector."
+msgstr ""
+"Desempacota inteiros não sinalizados de 32 bits individuais em um par de "
+"inteiros sinalizados de 16 bits. Em seguida, cada componente é convertido em "
+"um valor de ponto flutuante normalizado para gerar o vetor de dois "
+"componentes retornado."
+
+msgid "clamp(f / 32727.0, -1.0, 1.0)"
+msgstr "clamp(f / 32727.0, -1.0, 1.0)"
+
+msgid "uint **packUnorm4x8**\\ (\\ vec4 v) :ref:`🔗<shader_func_packUnorm4x8>`"
+msgstr ""
+"uint **packUnorm4x8**\\ (\\ vec4 v) :ref:`🔗<shader_func_packUnorm4x8>`"
+
+msgid ""
+"Converts each component of the normalized floating-point value ``v`` into 16-"
+"bit integer values and then packs the results into a 32-bit unsigned integer."
+msgstr ""
+"Converte cada componente do valor de ponto flutuante normalizado ``v`` em "
+"valores inteiros de 16 bits e, em seguida, empacota os resultados em um "
+"inteiro não sinalizado de 32 bits."
+
+msgid ""
+"vec4 **unpackUnorm4x8**\\ (\\ uint v) :ref:`🔗<shader_func_unpackUnorm4x8>`"
+msgstr ""
+"vec4 **unpackUnorm4x8**\\ (\\ uint v) :ref:`🔗<shader_func_unpackUnorm4x8>`"
+
+msgid ""
+"Unpacks single 32-bit unsigned integers into four 8-bit unsigned integers. "
+"Then, each component is converted to a normalized floating-point value to "
+"generate the returned four-component vector."
+msgstr ""
+"Desempacota inteiros não sinalizados de 32 bits individuais em quatro "
+"inteiros não sinalizados de 8 bits. Em seguida, cada componente é convertido "
+"em um valor de ponto flutuante normalizado para gerar o vetor de quatro "
+"componentes retornado."
+
+msgid "f / 255.0"
+msgstr "f / 255.0"
+
+msgid "uint **packSnorm4x8**\\ (\\ vec4 v) :ref:`🔗<shader_func_packSnorm4x8>`"
+msgstr ""
+"uint **packSnorm4x8**\\ (\\ vec4 v) :ref:`🔗<shader_func_packSnorm4x8>`"
+
+msgid ""
+"vec4 **unpackSnorm4x8**\\ (\\ uint v) :ref:`🔗<shader_func_unpackSnorm4x8>`"
+msgstr ""
+"vec4 **unpackSnorm4x8**\\ (\\ uint v) :ref:`🔗<shader_func_unpackSnorm4x8>`"
+
+msgid ""
+"Unpack single 32-bit unsigned integers into four 8-bit signed integers. "
+"Then, each component is converted to a normalized floating-point value to "
+"generate the returned four-component vector."
+msgstr ""
+"Desempacota inteiros não sinalizados de 32 bits individuais em quatro "
+"inteiros sinalizados de 8 bits. Em seguida, cada componente é convertido em "
+"um valor de ponto flutuante normalizado para gerar o vetor de quatro "
+"componentes retornado."
+
+msgid "clamp(f / 127.0, -1.0, 1.0)"
+msgstr "clamp(f / 127.0, -1.0, 1.0)"
+
+msgid "Bitwise functions"
+msgstr "Funções bitwise (bitwise)"
+
+msgid ""
+":ref:`bitfieldExtract<shader_func_bitfieldExtract>`\\ (\\ |vec_int_type| "
+"value, int offset, int bits)"
+msgstr ""
+":ref:`bitfieldExtract<shader_func_bitfieldExtract>`\\ (\\ |vec_int_type| "
+"value, int offset, int bits)"
+
+msgid ""
+":ref:`bitfieldExtract<shader_func_bitfieldExtract>`\\ (\\ |vec_uint_type| "
+"value, int offset, int bits)"
+msgstr ""
+":ref:`bitfieldExtract<shader_func_bitfieldExtract>`\\ (\\ |vec_uint_type| "
+"value, int offset, int bits)"
+
+msgid "Extracts a range of bits from an integer."
+msgstr "Extrai um intervalo de bits de um inteiro."
+
+msgid ""
+":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_int_type| base, "
+"|vec_int_type| insert, int offset, int bits)"
+msgstr ""
+":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_int_type| base, "
+"|vec_int_type| insert, int offset, int bits)"
+
+msgid ""
+":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_uint_type| "
+"base, |vec_uint_type| insert, int offset, int bits)"
+msgstr ""
+":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_uint_type| "
+"base, |vec_uint_type| insert, int offset, int bits)"
+
+msgid "Insert a range of bits into an integer."
+msgstr "Insere um intervalo de bits em um número inteiro."
+
+msgid ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_int_type| "
+"value)"
+msgstr ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_int_type| "
+"value)"
+
+msgid ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_uint_type| "
+"value)"
+msgstr ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_uint_type| "
+"value)"
+
+msgid "Reverse the order of bits in an integer."
+msgstr "Inverte a ordem dos bits em um número inteiro."
+
+msgid ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_int_type| value)"
+msgstr ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_int_type| value)"
+
+msgid ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_uint_type| value)"
+msgstr ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_uint_type| value)"
+
+msgid "Counts the number of 1 bits in an integer."
+msgstr "Conta o número de bits definidos como 1 em um número inteiro."
+
+msgid ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_int_type| value)"
+msgstr ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_int_type| value)"
+
+msgid ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_uint_type| value)"
+msgstr ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_uint_type| value)"
+
+msgid "Find the index of the least significant bit set to 1 in an integer."
+msgstr ""
+"Encontra o índice do bit menos significativo definido como 1 em um número "
+"inteiro."
+
+msgid ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_int_type| value)"
+msgstr ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_int_type| value)"
+
+msgid ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_uint_type| value)"
+msgstr ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_uint_type| value)"
+
+msgid "Find the index of the most significant bit set to 1 in an integer."
+msgstr ""
+"Encontra o índice do bit mais significativo definido como 1 em um número "
+"inteiro."
+
+msgid "|void|"
+msgstr "|void|"
+
+msgid ""
+":ref:`imulExtended<shader_func_imulExtended>`\\ (\\ |vec_int_type| x, |"
+"vec_int_type| y, out |vec_int_type| msb, out |vec_int_type| lsb)"
+msgstr ""
+":ref:`imulExtended<shader_func_imulExtended>`\\ (\\ |vec_int_type| x, |"
+"vec_int_type| y, out |vec_int_type| msb, out |vec_int_type| lsb)"
+
+msgid ""
+":ref:`umulExtended<shader_func_umulExtended>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| msb, out |vec_uint_type| lsb)"
+msgstr ""
+":ref:`umulExtended<shader_func_umulExtended>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| msb, out |vec_uint_type| lsb)"
+
+msgid "Multiplies two 32-bit numbers and produce a 64-bit result."
+msgstr "Multiplica dois números de 32 bits e produz um resultado de 64 bits."
+
+msgid ""
+":ref:`uaddCarry<shader_func_uaddCarry>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| carry)"
+msgstr ""
+":ref:`uaddCarry<shader_func_uaddCarry>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| carry)"
+
+msgid "Adds two unsigned integers and generates carry."
+msgstr ""
+"Adiciona dois números inteiros não sinalizados e gera um carry (transporte)."
+
+msgid ""
+":ref:`usubBorrow<shader_func_usubBorrow>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| borrow)"
+msgstr ""
+":ref:`usubBorrow<shader_func_usubBorrow>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| borrow)"
+
+msgid "Subtracts two unsigned integers and generates borrow."
+msgstr ""
+"Subtrai dois números inteiros não sinalizados e gera um borrow (empréstimo)."
+
+msgid ""
+":ref:`ldexp<shader_func_ldexp>`\\ (\\ |vec_type| x, out |vec_int_type| exp)"
+msgstr ""
+":ref:`ldexp<shader_func_ldexp>`\\ (\\ |vec_type| x, out |vec_int_type| exp)"
+
+msgid "Assemble a floating-point number from a value and exponent."
+msgstr ""
+"Monta um número de ponto flutuante a partir de um valor e de um expoente."
+
+msgid ""
+":ref:`frexp<shader_func_frexp>`\\ (\\ |vec_type| x, out |vec_int_type| exp)"
+msgstr ""
+":ref:`frexp<shader_func_frexp>`\\ (\\ |vec_type| x, out |vec_int_type| exp)"
+
+msgid ""
+"Splits a floating-point number (``x``) into significand integral components"
+msgstr ""
+"Divide um número de ponto flutuante (``x``) em componentes integrais de "
+"significando"
+
+msgid "Bitwise function descriptions"
+msgstr "Descrições das funções bitwise"
+
+msgid ""
+"|vec_int_type| **bitfieldExtract**\\ (\\ |vec_int_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldExtract>`"
+msgstr ""
+"|vec_int_type| **bitfieldExtract**\\ (\\ |vec_int_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldExtract>`"
+
+msgid ""
+"Extracts a subset of the bits of ``value`` and returns it in the least "
+"significant bits of the result. The range of bits extracted is ``[offset, "
+"offset + bits - 1]``."
+msgstr ""
+"Extrai um subconjunto dos bits de ``value`` e o retorna nos bits menos "
+"significativos do resultado. O intervalo de bits extraído é ``[offset, "
+"offset + bits - 1]``."
+
+msgid "The most significant bits of the result will be set to zero."
+msgstr "Os bits mais significativos do resultado serão definidos como zero."
+
+msgid "If bits is zero, the result will be zero."
+msgstr "Se bits for zero, o resultado será zero."
+
+msgid "The result will be undefined if:"
+msgstr "O resultado será indefinido se:"
+
+msgid "offset or bits is negative."
+msgstr "offset ou bits for negativo."
+
+msgid ""
+"if the sum of offset and bits is greater than the number of bits used to "
+"store the operand."
+msgstr ""
+"se a soma de offset e bits for maior que o número de bits usado para "
+"armazenar o operando."
+
+msgid "param value"
+msgstr "param value"
+
+msgid "The integer from which to extract bits."
+msgstr "O número inteiro do qual extrair os bits."
+
+msgid "param offset"
+msgstr "param offset"
+
+msgid "The index of the first bit to extract."
+msgstr "O índice do primeiro bit a ser extraído."
+
+msgid "param bits"
+msgstr "param bits"
+
+msgid "The number of bits to extract."
+msgstr "O número de bits a extrair."
+
+msgid "Integer with the requested bits."
+msgstr "Número inteiro com os bits solicitados."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldExtract.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldExtract.xhtml"
+
+msgid ""
+"|vec_uint_type| **bitfieldExtract**\\ (\\ |vec_uint_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldExtract>`"
+msgstr ""
+"|vec_uint_type| **bitfieldExtract**\\ (\\ |vec_uint_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldExtract>`"
+
+msgid ""
+"The most significant bits will be set to the value of ``offset + base - 1`` "
+"(i.e., it is sign extended to the width of the return type)."
+msgstr ""
+"Os bits mais significativos serão definidos com o valor de ``offset + base - "
+"1`` (ou seja, ele tem o sinal estendido para a largura do tipo de retorno)."
+
+msgid ""
+"|vec_uint_type| **bitfieldExtract**\\ (\\ |vec_uint_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldInsert>`"
+msgstr ""
+"|vec_uint_type| **bitfieldExtract**\\ (\\ |vec_uint_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldInsert>`"
+
+msgid ""
+"|vec_uint_type| **bitfieldInsert**\\ (\\ |vec_uint_type| base, |"
+"vec_uint_type| insert, int offset, int "
+"bits) :ref:`🔗<shader_func_bitfieldInsert>`"
+msgstr ""
+"|vec_uint_type| **bitfieldInsert**\\ (\\ |vec_uint_type| base, |"
+"vec_uint_type| insert, int offset, int "
+"bits) :ref:`🔗<shader_func_bitfieldInsert>`"
+
+msgid ""
+"Inserts the ``bits`` least significant bits of ``insert`` into ``base`` at "
+"offset ``offset``."
+msgstr ""
+"Insere os ``bits`` menos significativos de ``insert`` em ``base`` no "
+"deslocamento ``offset``."
+
+msgid ""
+"The returned value will have bits [offset, offset + bits + 1] taken from [0, "
+"bits - 1] of ``insert`` and all other bits taken directly from the "
+"corresponding bits of base."
+msgstr ""
+"O valor retornado terá os bits [offset, offset + bits + 1] obtidos de [0, "
+"bits - 1] de ``insert`` e todos os outros bits obtidos diretamente dos bits "
+"correspondentes de base."
+
+msgid "If bits is zero, the result will be the original value of base."
+msgstr "Se bits for zero, o resultado será o valor original de base."
+
+msgid "param base"
+msgstr "param base"
+
+msgid "The integer into which to insert ``insert``."
+msgstr "O número inteiro no qual inserir ``insert``."
+
+msgid "param insert"
+msgstr "param insert"
+
+msgid "The value of the bits to insert."
+msgstr "O valor de bits a inserir."
+
+msgid "The index of the first bit to insert."
+msgstr "O índice do primeiro bit a ser inserido."
+
+msgid "The number of bits to insert."
+msgstr "O número de bits a inserir."
+
+msgid "``base`` with inserted bits."
+msgstr "``base`` com os bits inseridos."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldInsert.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldInsert.xhtml"
+
+msgid ""
+"|vec_int_type| **bitfieldReverse**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_bitfieldReverse>`"
+msgstr ""
+"|vec_int_type| **bitfieldReverse**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_bitfieldReverse>`"
+
+msgid ""
+"|vec_uint_type| **bitfieldReverse**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_bitfieldReverse>`"
+msgstr ""
+"|vec_uint_type| **bitfieldReverse**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_bitfieldReverse>`"
+
+msgid ""
+"The bit numbered ``n`` will be taken from bit ``(bits - 1) - n`` of "
+"``value``, where bits is the total number of bits used to represent "
+"``value``."
+msgstr ""
+"O bit numerado como ``n`` será obtido do bit ``(bits - 1) - n`` de "
+"``value``, onde bits é o número total de bits usado para representar "
+"``value``."
+
+msgid "The value whose bits to reverse."
+msgstr "O valor cujos bits serão invertidos."
+
+msgid "``value`` but with its bits reversed."
+msgstr "``value`` mas com seus bits invertidos."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldReverse.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldReverse.xhtml"
+
+msgid ""
+"|vec_int_type| **bitCount**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_bitCount>`"
+msgstr ""
+"|vec_int_type| **bitCount**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_bitCount>`"
+
+msgid ""
+"|vec_uint_type| **bitCount**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_bitCount>`"
+msgstr ""
+"|vec_uint_type| **bitCount**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_bitCount>`"
+
+msgid "The value whose bits to count."
+msgstr "O valor cujos bits devem ser contados."
+
+msgid ""
+"The number of bits that are set to 1 in the binary representation of "
+"``value``."
+msgstr ""
+"O número de bits que estão definidos como 1 na representação binária de "
+"``value``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/bitCount.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/bitCount.xhtml"
+
+msgid ""
+"|vec_int_type| **findLSB**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_findLSB>`"
+msgstr ""
+"|vec_int_type| **findLSB**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_findLSB>`"
+
+msgid ""
+"|vec_uint_type| **findLSB**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_findLSB>`"
+msgstr ""
+"|vec_uint_type| **findLSB**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_findLSB>`"
+
+msgid "Find the index of the least significant bit set to ``1``."
+msgstr "Encontra o índice do bit menos significativo definido como ``1``."
+
+msgid "If ``value`` is zero, ``-1`` will be returned."
+msgstr "Se ``value`` for zero, ``-1`` será retornado."
+
+msgid "The value whose bits to scan."
+msgstr "O valor cujos bits serão varridos."
+
+msgid ""
+"The bit number of the least significant bit that is set to 1 in the binary "
+"representation of value."
+msgstr ""
+"O número do bit menos significativo que está definido como 1 na "
+"representação binária de value."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/findLSB.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/findLSB.xhtml"
+
+msgid ""
+"|vec_int_type| **findMSB**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_findMSB>`"
+msgstr ""
+"|vec_int_type| **findMSB**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_findMSB>`"
+
+msgid ""
+"|vec_uint_type| **findMSB**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_findMSB>`"
+msgstr ""
+"|vec_uint_type| **findMSB**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_findMSB>`"
+
+msgid "Find the index of the most significant bit set to 1."
+msgstr "Encontra o índice do bit mais significativo definido como 1."
+
+msgid "For signed integer types, the sign bit is checked first and then:"
+msgstr ""
+"Para tipos inteiros sinalizados, o bit de sinal é verificado primeiro e "
+"depois:"
+
+msgid ""
+"For positive integers, the result will be the bit number of the most "
+"significant bit that is set to 1."
+msgstr ""
+"Para inteiros positivos, o resultado será o número do bit mais significativo "
+"que está definido como 1."
+
+msgid ""
+"For negative integers, the result will be the bit number of the most "
+"significant bit set to 0."
+msgstr ""
+"Para inteiros negativos, o resultado será o número do bit mais significativo "
+"definido como 0."
+
+msgid "For a value of zero or negative 1, -1 will be returned."
+msgstr "Para um valor de zero ou 1 negativo, -1 será retornado."
+
+msgid ""
+"The bit number of the most significant bit that is set to 1 in the binary "
+"representation of value."
+msgstr ""
+"O número do bit mais significativo que está definido como 1 na "
+"representation binária de value."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/findMSB.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/findMSB.xhtml"
+
+msgid ""
+"|void| **imulExtended**\\ (\\ |vec_int_type| x, |vec_int_type| y, out |"
+"vec_int_type| msb, out |vec_int_type| "
+"lsb) :ref:`🔗<shader_func_imulExtended>`"
+msgstr ""
+"|void| **imulExtended**\\ (\\ |vec_int_type| x, |vec_int_type| y, out |"
+"vec_int_type| msb, out |vec_int_type| "
+"lsb) :ref:`🔗<shader_func_imulExtended>`"
+
+msgid ""
+"Perform 32-bit by 32-bit signed multiplication to produce a 64-bit result."
+msgstr ""
+"Realiza multiplicação sinalizada de 32 bits por 32 bits para produzir um "
+"resultado de 64 bits."
+
+msgid ""
+"The 32 least significant bits of this product are returned in ``lsb`` and "
+"the 32 most significant bits are returned in ``msb``."
+msgstr ""
+"Os 32 bits menos significativos deste produto são retornados em ``lsb`` e os "
+"32 bits mais significativos são retornados em ``msb``."
+
+msgid "The first multiplicand."
+msgstr "O primeiro multiplicando."
+
+msgid "The second multiplicand."
+msgstr "O segundo multiplicando."
+
+msgid "param msb"
+msgstr "param msb"
+
+msgid "The variable to receive the most significant word of the product."
+msgstr "A variável que receberá a palavra mais significativa do produto."
+
+msgid "param lsb"
+msgstr "param lsb"
+
+msgid "The variable to receive the least significant word of the product."
+msgstr "A variável que receberá a palavra menos significativa do produto."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/umulExtended.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/umulExtended.xhtml"
+
+msgid ""
+"|void| **umulExtended**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, out |"
+"vec_uint_type| msb, out |vec_uint_type| "
+"lsb) :ref:`🔗<shader_func_umulExtended>`"
+msgstr ""
+"|void| **umulExtended**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, out |"
+"vec_uint_type| msb, out |vec_uint_type| "
+"lsb) :ref:`🔗<shader_func_umulExtended>`"
+
+msgid ""
+"Perform 32-bit by 32-bit unsigned multiplication to produce a 64-bit result."
+msgstr ""
+"Realiza multiplicação não sinalizada de 32 bits por 32 bits para produzir um "
+"resultado de 64 bits."
+
+msgid ""
+"|vec_uint_type| **uaddCarry**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
+"out |vec_uint_type| carry) :ref:`🔗<shader_func_uaddCarry>`"
+msgstr ""
+"|vec_uint_type| **uaddCarry**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
+"out |vec_uint_type| carry) :ref:`🔗<shader_func_uaddCarry>`"
+
+msgid "The first operand."
+msgstr "O primeiro operando."
+
+msgid "The second operand."
+msgstr "O segundo operando."
+
+msgid "param carry"
+msgstr "param carry"
+
+msgid "``(x + y) % 2^32``."
+msgstr "``(x + y) % 2^32``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/uaddCarry.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/uaddCarry.xhtml"
+
+msgid ""
+"|vec_uint_type| **usubBorrow**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
+"out |vec_uint_type| borrow) :ref:`🔗<shader_func_usubBorrow>`"
+msgstr ""
+"|vec_uint_type| **usubBorrow**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
+"out |vec_uint_type| borrow) :ref:`🔗<shader_func_usubBorrow>`"
+
+msgid "Subtract unsigned integers and generate borrow."
+msgstr "Subtrai inteiros não sinalizados e gera borrow (empréstimo)."
+
+msgid "param borrow"
+msgstr "param borrow"
+
+msgid "``0`` if ``x >= y``, otherwise ``1``."
+msgstr "``0`` se ``x >= y``, caso contrário ``1``."
+
+msgid ""
+"The difference of ``x`` and ``y`` if non-negative, or 2\\ :sup:`32` plus "
+"that difference otherwise."
+msgstr ""
+"A diferença entre ``x`` e ``y`` se não for negativa, ou 2\\ :sup:`32` mais "
+"essa diferença caso contrário."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/usubBorrow.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/usubBorrow.xhtml"
+
+msgid ""
+"|vec_type| **ldexp**\\ (\\ |vec_type| x, out |vec_int_type| "
+"exp) :ref:`🔗<shader_func_ldexp>`"
+msgstr ""
+"|vec_type| **ldexp**\\ (\\ |vec_type| x, out |vec_int_type| "
+"exp) :ref:`🔗<shader_func_ldexp>`"
+
+msgid "Assembles a floating-point number from a value and exponent."
+msgstr "Monta um número de ponto flutuante a partir de um valor e expoente."
+
+msgid ""
+"If this product is too large to be represented in the floating-point type, "
+"the result is undefined."
+msgstr ""
+"Se este produto for grande demais para ser representado no tipo de ponto "
+"flutuante, o resultado é indefinido."
+
+msgid "The value to be used as a source of significand."
+msgstr "O valor a ser usado como fonte do significando."
+
+msgid "param exp"
+msgstr "param exp"
+
+msgid "The value to be used as a source of exponent."
+msgstr "O valor a ser usado como fonte do expoente."
+
+msgid "``x * 2^exp``"
+msgstr "``x * 2^exp``"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/ldexp.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/ldexp.xhtml"
+
+msgid ""
+"|vec_type| **frexp**\\ (\\ |vec_type| x, out |vec_int_type| "
+"exp) :ref:`🔗<shader_func_frexp>`"
+msgstr ""
+"|vec_type| **frexp**\\ (\\ |vec_type| x, out |vec_int_type| "
+"exp) :ref:`🔗<shader_func_frexp>`"
+
+msgid ""
+"Extracts ``x`` into a floating-point significand in the range ``[0.5, 1.0)`` "
+"and in integral exponent of two, such that:"
+msgstr ""
+"Extrai ``x`` em um significando de ponto flutuante no intervalo ``[0.5, "
+"1.0)`` e em um expoente integral de dois, de modo que:"
+
+msgid "The value from which significand and exponent are to be extracted."
+msgstr "O valor do qual o significando e o expoente devem ser extraídos."
+
+msgid "The variable into which to place the exponent of ``x``."
+msgstr "A variável na qual colocar o expoente de ``x``."
+
+msgid "The significand of ``x``."
+msgstr "O significando de ``x``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/frexp.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/frexp.xhtml"

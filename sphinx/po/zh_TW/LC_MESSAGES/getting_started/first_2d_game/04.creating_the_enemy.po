@@ -22,13 +22,6 @@ msgstr ""
 "是時候來做一些讓玩家閃躲的敵人了。這些敵人的行為不會很複雜：怪物會隨機在螢幕"
 "的邊緣產生，接著隨機選一個方向來直線移動。"
 
-msgid ""
-"We'll create a ``Mob`` scene, which we can then *instance* to create any "
-"number of independent mobs in the game."
-msgstr ""
-"我們來建立一個 ``Mob`` (怪物) 場景，我們利用這個場景來在遊戲中 **實體化** 多"
-"個獨立的怪物。"
-
 msgid "Node setup"
 msgstr "設定節點"
 
@@ -104,9 +97,6 @@ msgstr "保存場景。"
 msgid "Enemy script"
 msgstr "敵人腳本"
 
-msgid "Add a script to the ``Mob`` like this:"
-msgstr "為 ``Mob`` 新增一個腳本，並新增下列成員變數："
-
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we play the "
 "animation and randomly choose one of the three animation types:"
@@ -150,9 +140,6 @@ msgid ""
 "``queue_free()`` is a function that essentially 'frees', or deletes, the "
 "node at the end of the frame."
 msgstr "``queue_free()`` 是一個函式，其本質是在影格結束時「釋放」或刪除節點。"
-
-msgid "This completes the `Mob` scene."
-msgstr "這樣就完成了 `Mob` 場景。"
 
 msgid ""
 "With the player and enemies ready, in the next part, we'll bring them "

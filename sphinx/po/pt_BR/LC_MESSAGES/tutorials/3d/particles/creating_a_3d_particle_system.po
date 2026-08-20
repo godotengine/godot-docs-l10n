@@ -11,6 +11,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Creating a 3D particle system"
+msgstr "Criando um sistema de partículas 3D"
+
+msgid "Required particle node properties"
+msgstr "Propriedades obrigatórias do nó de partículas"
+
 msgid ""
 "To get started with particles, the first thing we need to do is add a "
 "``GPUParticles3D`` node to the scene. Before we can actually see any "
@@ -21,6 +27,22 @@ msgstr ""
 "adicionar um nó ``GPUParticles3D`` à cena. Antes de podermos realmente ver "
 "qualquer partícula, temos que configurar dois parâmetros no nó: o ``Process "
 "Material`` e pelo menos um ``Draw Pass``."
+
+msgid "The process material"
+msgstr "O material de processamento"
+
+msgid ""
+"To add a process material to your particles node, go to ``Process Material`` "
+"in the inspector panel. Click on the box next to ``Process Material`` and "
+"from the dropdown menu select ``New ParticleProcessMaterial``."
+msgstr ""
+"Para adicionar um material de processamento ao seu nó de partículas, vá até "
+"``Process Material`` no painel Inspector. Clique na caixa ao lado de "
+"``Process Material`` e, no menu suspenso, selecione ``New "
+"ParticleProcessMaterial``."
+
+msgid "Creating a process material"
+msgstr "Criando um material de processamento"
 
 msgid ""
 ":ref:`class_ParticleProcessMaterial` is a special kind of material. We don't "
@@ -35,6 +57,9 @@ msgstr ""
 "aumento de desempenho. Um clique no material recém-adicionado exibe uma "
 "longa lista de propriedades que você pode definir para controlar o "
 "comportamento de cada partícula."
+
+msgid "Draw passes"
+msgstr "Passes de desenho"
 
 msgid "At least one draw pass is required"
 msgstr "É necessário pelo menos um \"draw pass\""
@@ -92,6 +117,9 @@ msgstr ""
 "partículas <doc_process_material_properties>` para aprender como tornar os "
 "efeitos de partículas mais interessantes."
 
+msgid "Particle conversion"
+msgstr "Conversão de partículas"
+
 msgid "Turning GPU into CPU particles"
 msgstr "Transformando partículas de GPU em partículas de CPU"
 
@@ -122,11 +150,53 @@ msgstr ""
 "Alguns dos recursos mais notáveis que são perdidos durante a conversão "
 "incluem:"
 
+msgid "multiple draw passes"
+msgstr "múltiplas passagens de desenho"
+
 msgid "turbulence"
 msgstr "turbulência"
 
+msgid "sub-emitters"
+msgstr "subemissores"
+
 msgid "trails"
 msgstr "trilhas"
+
+msgid "attractors"
+msgstr "atratores"
+
+msgid "collision"
+msgstr "colisão"
+
+msgid "You also lose the following properties:"
+msgstr "Você também perde as seguintes propriedades:"
+
+msgid "``Amount Ratio``"
+msgstr "``Amount Ratio``"
+
+msgid "``Interp to End``"
+msgstr "``Interp to End``"
+
+msgid "``Damping as Friction``"
+msgstr "``Damping as Friction``"
+
+msgid "``Emission Shape Offset``"
+msgstr "``Emission Shape Offset``"
+
+msgid "``Emission Shape Scale``"
+msgstr "``Emission Shape Scale``"
+
+msgid "``Inherit Velocity Ratio``"
+msgstr "``Inherit Velocity Ratio``"
+
+msgid "``Velocity Pivot``"
+msgstr "``Velocity Pivot``"
+
+msgid "``Directional Velocity``"
+msgstr "``Directional Velocity``"
+
+msgid "``Radial Velocity``"
+msgstr "``Radial Velocity``"
 
 msgid "``Velocity Limit``"
 msgstr "``Velocidade Limite``"

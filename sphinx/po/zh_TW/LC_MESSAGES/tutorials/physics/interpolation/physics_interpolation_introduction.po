@@ -210,15 +210,6 @@ msgstr ""
 "我們只考慮位置，以及一種情況：我們知道前一個物理幀的 X 座標是 10 單位，而目前"
 "的物理幀的 X 座標是 30 單位。"
 
-msgid ""
-"Although the maths is explained here, you do not have to worry about the "
-"details, as this step will be performed for you. Under the hood, Godot may "
-"use more complex forms of interpolation, but linear interpolation is the "
-"easiest in terms of explanation."
-msgstr ""
-"雖然這裡解釋了數學原理，但你不需要擔心細節，因為這個步驟會自動為你執行。在底"
-"層，Godot 可能會使用更複雜的差值運算，但線性差值就解釋而言是最容易理解的。"
-
 msgid "The physics interpolation fraction"
 msgstr "物理插值比例"
 
@@ -344,17 +335,6 @@ msgstr ""
 
 msgid "Why look into the past? Why not predict the future?"
 msgstr "為何回顧過去？為何不預測未來？"
-
-msgid ""
-"There is an alternative to this scheme, which is: instead of interpolating "
-"between the previous and current tick, we use maths to *extrapolate* into "
-"the future. We try to predict where the object *will be*, rather than show "
-"it where it was. This can be done and may be offered as an option in future, "
-"but there are some significant downsides:"
-msgstr ""
-"這個方案有個替代做法：不是在先前和目前的刻度之間進行內插，而是使用數學來 *外"
-"插* 到未來。我們嘗試預測物體 *將會* 在哪裡，而不是顯示它過去在哪裡。這可以做"
-"到，未來也可能作為一個選項提供，但存在一些顯著的缺點："
 
 msgid ""
 "The prediction may not be correct, especially when an object collides with "

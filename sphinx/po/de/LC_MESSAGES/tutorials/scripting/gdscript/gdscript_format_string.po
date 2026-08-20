@@ -12,7 +12,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "GDScript format strings"
-msgstr "GDScript Format-Strings"
+msgstr "GDScript-Format-Strings"
+
+msgid ""
+"Godot offers multiple ways to dynamically change the contents of strings:"
+msgstr ""
+"Godot bietet verschiedene Möglichkeiten, den Inhalt von Strings dynamisch zu "
+"ändern:"
+
+msgid "Format strings: ``var string = \"I have %s cats.\" % \"3\"``"
+msgstr "Format-Strings: ``var string = \"Ich habe %s Katzen.\" % \"3\"``"
+
+msgid ""
+"The ``String.format()`` method: ``var string = \"I have {0} cats."
+"\".format([3])``"
+msgstr ""
+"Die ``String.format()``-Methode: ``var string = \"Ich habe {0} Katzen."
+"\".format([3])``"
+
+msgid ""
+"String concatenation: ``var string = \"I have \" + str(3) + \" cats.\"``"
+msgstr "Stringverkettung: ``var string = \"I habe \" + str(3) + \" Katzen.\"``"
+
+msgid ""
+"This page explains how to use format strings, and briefly explains the "
+"``format()`` method and string concatenation."
+msgstr ""
+"Auf dieser Seite wird das Verwenden von Format-Strings erläutert und es wird "
+"kurz auf die ``format()``-Methode sowie die Stringverkettung eingegangen."
+
+msgid "Format strings"
+msgstr "Format-Strings"
+
+msgid ""
+"*Format strings* are a way to reuse text templates to succinctly create "
+"different but similar strings."
+msgstr ""
+"*Format-Strings* sind eine Möglichkeit, Textvorlagen wiederzuverwenden, um "
+"auf prägnante Weise unterschiedliche, aber ähnliche Strings zu erstellen."
+
+msgid ""
+"Format strings are just like normal strings, except they contain certain "
+"placeholder character sequences such as ``%s``. These placeholders can then "
+"be replaced by parameters handed to the format string."
+msgstr ""
+"Format-Strings verhalten sich genau wie normale Strings, enthalten jedoch "
+"bestimmte Platzhalter für Zeichenfolgen wie beispielsweise ``%s``. Diese "
+"Platzhalter können dann durch Parameter ersetzt werden, die an den Format-"
+"String übergeben werden."
 
 msgid "Examine this concrete GDScript example:"
 msgstr "Versuchen Sie, das folgende GDScript-Beispiel zu verstehen:"
@@ -23,8 +70,11 @@ msgid ""
 "converted to a string."
 msgstr ""
 "Platzhalter starten immer mit einem ``%``, aber das nächste oder die "
-"nächsten Zeichen, der *Formatkennzeichner*, legt fest, wie der gegebene Wert "
+"nächsten Zeichen, der *Formatbezeichner*, legt fest, wie der gegebene Wert "
 "zu einem String konvertiert wird."
+
+msgid "There are other `format specifiers`_."
+msgstr "Es gibt noch weitere `Formatbezeichner`_."
 
 msgid "Multiple placeholders"
 msgstr "Mehrere Platzhalter"
@@ -63,7 +113,7 @@ msgstr ""
 "oder Zeichen."
 
 msgid "Placeholder types"
-msgstr "Platzhalter-Typen"
+msgstr "Platzhaltertypen"
 
 msgid ""
 "One and only one of these must always appear as the last character in a "
@@ -87,20 +137,56 @@ msgstr ""
 msgid "``c``"
 msgstr "``c``"
 
+msgid ""
+"A single **Unicode character**. Accepts a Unicode code point (integer) or a "
+"single-character string. Supports values beyond 255."
+msgstr ""
+"Ein einzelnes **Unicode-Zeichen**. Akzeptiert einen Unicode-Codepunkt "
+"(Ganzzahl) oder einen String mit einem Zeichen. Unterstützt Werte über 255 "
+"hinaus."
+
 msgid "``d``"
 msgstr "``d``"
+
+msgid ""
+"A **decimal integer**. Expects an integer or a real number (will be floored)."
+msgstr ""
+"Eine **dezimale Ganzzahl**. Erwartet eine ganze oder reelle Zahl (wird "
+"abgerundet)."
 
 msgid "``o``"
 msgstr "``o``"
 
+msgid ""
+"An **octal integer**. Expects an integer or a real number (will be floored)."
+msgstr ""
+"Eine **Oktalzahl**. Erwartet eine ganze oder reelle Zahl (wird abgerundet)."
+
 msgid "``x``"
 msgstr "``x``"
+
+msgid ""
+"A **hexadecimal integer** with **lower-case** letters. Expects an integer or "
+"a real number (will be floored)."
+msgstr ""
+"Eine **hexadezimale Ganzzahl** mit **Kleinbuchstaben**. Erwartet eine ganze "
+"oder reelle Zahl (wird abgerundet)."
 
 msgid "``X``"
 msgstr "``X``"
 
+msgid ""
+"A **hexadecimal integer** with **upper-case** letters. Expects an integer or "
+"a real number (will be floored)."
+msgstr ""
+"Eine **hexadezimale Ganzzahl** mit **Großbuchstaben**. Erwartet eine ganze "
+"oder reelle Zahl (wird abgerundet)."
+
 msgid "``f``"
 msgstr "``f``"
+
+msgid "A **decimal real** number. Expects an integer or a real number."
+msgstr "Eine **dezimale reelle** Zahl. Erwartet eine ganze oder reelle Zahl."
 
 msgid "``v``"
 msgstr "``v``"
@@ -294,8 +380,14 @@ msgstr ""
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 msgstr "``\"Hallo, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 
+msgid "``\"Hi, {name} v{0}!\".format([\"3.0\", [\"name\",\"Godette\"]])``"
+msgstr "``\"Hallo, {name} v{0}!\".format([\"3.0\", [\"name\",\"Godette\"]])``"
+
 msgid "no index"
 msgstr "kein Index"
+
+msgid "``\"Hi, {} v{}!\".format([\"Godette\", \"3.0\"], \"{}\")``"
+msgstr "``\"Hallo, {} v{}!\".format([\"Godette\", \"3.0\"], \"{}\")``"
 
 msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
@@ -343,3 +435,6 @@ msgstr ""
 
 msgid "Hi, Godette v3.11"
 msgstr "Hallo, Godette v3.11"
+
+msgid "String concatenation"
+msgstr "Stringverkettung"

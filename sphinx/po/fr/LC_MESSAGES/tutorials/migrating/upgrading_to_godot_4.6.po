@@ -141,6 +141,9 @@ msgstr ""
 msgid "3D"
 msgstr "3D"
 
+msgid "**SpringBoneSimulator3D**"
+msgstr "**SpringBoneSimulator3D**"
+
 msgid ""
 "Method ``get_end_bone_direction`` changes return type from "
 "``SpringBoneSimulator3D.BoneDirection`` to "
@@ -237,6 +240,9 @@ msgstr ""
 "La méthode ``has_focus`` ajoute un nouveau paramètre optionnel "
 "``free_submenus``"
 
+msgid "**FileDialog**"
+msgstr "**FileDialog**"
+
 msgid "Method ``add_filter`` adds a new ``mime_type`` optional parameter"
 msgstr ""
 "La méthode ``add_filter`` ajoute un nouveau paramètre optionnel ``mime_type``"
@@ -244,12 +250,18 @@ msgstr ""
 msgid "`GH-111439`_"
 msgstr "`GH-111439`_"
 
+msgid "**LineEdit**"
+msgstr "**LineEdit**"
+
 msgid "Method ``edit`` adds a new ``hide_focus`` optional parameter"
 msgstr ""
 "La méthode ``edit`` ajoute un nouveau paramètre optionnel ``hide_focus``"
 
 msgid "`GH-111117`_"
 msgstr "`GH-111117`_"
+
+msgid "**SplitContainer**"
+msgstr "**SplitContainer**"
 
 msgid ""
 "Method ``clamp_split_offset`` adds a new ``priority_index`` optional "
@@ -263,6 +275,9 @@ msgstr "`GH-90411`_"
 
 msgid "Networking"
 msgstr "Réseau"
+
+msgid "**StreamPeerTCP**"
+msgstr "**StreamPeerTCP**"
 
 msgid ""
 "Method ``disconnect_from_host`` moved to base class ``StreamPeerSocket``"
@@ -282,6 +297,9 @@ msgid "Method ``poll`` moved to base class ``StreamPeerSocket``"
 msgstr ""
 "La méthode ``poll`` a été déplacée dans la classe parente "
 "``StreamPeerSocket``"
+
+msgid "**TCPServer**"
+msgstr "**TCPServer**"
 
 msgid "Method ``is_connection_available`` moved to base class ``SocketServer``"
 msgstr ""
@@ -325,6 +343,9 @@ msgstr "N/A"
 msgid "Editor"
 msgstr "Éditeur"
 
+msgid "**EditorExportPreset**"
+msgstr "**EditorExportPreset**"
+
 msgid ""
 "Method ``get_script_export_mode`` changes return type from ``int`` to "
 "``EditorExportPreset.ScriptExportMode``"
@@ -334,6 +355,9 @@ msgstr ""
 
 msgid "`GH-107167`_"
 msgstr "`GH-107167`_"
+
+msgid "**EditorFileDialog**"
+msgstr "**EditorFileDialog**"
 
 msgid "Method ``add_filter`` moved to base class ``FileDialog``"
 msgstr ""
@@ -518,8 +542,20 @@ msgstr "**MeshInstance3D**"
 msgid "Property ``skeleton``"
 msgstr "Propriété ``skeleton``"
 
+msgid "NodePath(\"..\")"
+msgstr "NodePath(\"..\")"
+
+msgid "NodePath(\"\")"
+msgstr "NodePath(\"\")"
+
 msgid "`GH-112267`_"
 msgstr "`GH-112267`_"
+
+msgid "**ProjectSettings**"
+msgstr "**ProjectSettings**"
+
+msgid "Property ``rendering/reflections/sky_reflections/roughness_layers``"
+msgstr "Propriété ``rendering/reflections/sky_reflections/roughness_layers``"
 
 msgid "8"
 msgstr "8"
@@ -529,6 +565,15 @@ msgstr "7"
 
 msgid "`GH-107902`_"
 msgstr "`GH-107902`_"
+
+msgid "Property ``rendering/rendering_device/d3d12/agility_sdk_version``"
+msgstr "Propriété ``rendering/rendering_device/d3d12/agility_sdk_version``"
+
+msgid "613"
+msgstr "613"
+
+msgid "618"
+msgstr "618"
 
 msgid "`GH-114043`_"
 msgstr "`GH-114043`_"
@@ -548,17 +593,44 @@ msgstr "`GH-110671`_"
 msgid "Property ``glow_intensity``"
 msgstr "Propriété ``glow_intensity``"
 
+msgid "0.8"
+msgstr "0.8"
+
+msgid "0.3"
+msgstr "0.3"
+
 msgid "Property ``glow_levels/2``"
 msgstr "Propriété ``glow_levels/2``"
+
+msgid "0.0"
+msgstr "0.0"
 
 msgid "Property ``glow_levels/3``"
 msgstr "Propriété ``glow_levels/3``"
 
+msgid "1.0"
+msgstr "1.0"
+
+msgid "0.4"
+msgstr "0.4"
+
 msgid "Property ``glow_levels/4``"
 msgstr "Propriété ``glow_levels/4``"
 
+msgid "0.1"
+msgstr "0.1"
+
 msgid "Property ``glow_levels/5``"
 msgstr "Propriété ``glow_levels/5``"
+
+msgid "Property ``ssr_depth_tolerance``"
+msgstr "Propriété ``ssr_depth_tolerance``"
+
+msgid "0.2"
+msgstr "0.2"
+
+msgid "0.5"
+msgstr "0.5"
 
 msgid "`GH-111210`_"
 msgstr "`GH-111210`_"
@@ -575,8 +647,14 @@ msgstr "Propriété ``submenu_popup_delay``"
 msgid "`GH-110256`_"
 msgstr "`GH-110256`_"
 
+msgid "**ResourceImporterCSVTranslation**"
+msgstr "**ResourceImporterCSVTranslation**"
+
 msgid "Property ``compress``"
 msgstr "Propriété ``compress``"
+
+msgid "true"
+msgstr "true"
 
 msgid "`GH-112073`_"
 msgstr "`GH-112073`_"

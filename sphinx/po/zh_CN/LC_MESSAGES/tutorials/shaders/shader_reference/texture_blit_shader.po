@@ -1,0 +1,113 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Render modes"
+msgstr "渲染模式"
+
+msgid "Render mode"
+msgstr "渲染模式"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "**blend_disabled**"
+msgstr "**blend_disabled**"
+
+msgid "**blend_mix**"
+msgstr "**blend_mix**"
+
+msgid "**blend_add**"
+msgstr "**blend_add**"
+
+msgid "Additive blend mode."
+msgstr "添加混合模式。"
+
+msgid "**blend_sub**"
+msgstr "**blend_sub**"
+
+msgid "Subtractive blend mode."
+msgstr "减法混合模式。"
+
+msgid "**blend_mul**"
+msgstr "**blend_mul**"
+
+msgid "Multiplicative blend mode."
+msgstr "乘法混合模式。"
+
+msgid "Built-ins"
+msgstr "内置"
+
+msgid ""
+"Values marked as ``in`` are read-only. Values marked as ``out`` can "
+"optionally be written to and will not necessarily contain sensible values. "
+"Values marked as ``inout`` provide a sensible default value, and can "
+"optionally be written to. Samplers cannot be written to so they are not "
+"marked."
+msgstr ""
+"标记为 ``in`` （输入）的值是只读的。标记为 ``out`` （输出）的值可以被写入（赋"
+"值），但它们不一定包含有意义的初始值。标记为 ``inout`` （输入输出）的值会提供"
+"一个合理的默认值，并且可以被选择性地写入。采样器（Samplers）不能被写入，所以"
+"没有进行任何标记。"
+
+msgid "Global built-ins"
+msgstr "全局内置变量"
+
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr "全局内置变量在任何地方都可以使用，包括在自定义函数中。"
+
+msgid "Built-in"
+msgstr "内置"
+
+msgid "in float **TIME**"
+msgstr "in float **TIME**"
+
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"自引擎启动以来的全局时间，以秒为单位。它每经过 ``3,600`` 秒就会重置循环一次"
+"（这个时长可以通过 :ref:`rollover<class_ProjectSettings_property_rendering/"
+"limits/time/time_rollover_secs>` 设置来修改）。它"
+"受 :ref:`time_scale<class_Engine_property_time_scale>` （时间缩放/游戏速度）"
+"的影响，但不受暂停（pausing）的影响。如果你需要一个不受 time_scale 影响的 "
+"``TIME`` 变量，可以添加你自己的 :ref:`global shader "
+"uniform<doc_shading_language_global_uniforms>` ，并在每一帧更新它。"
+
+msgid "in float **PI**"
+msgstr "in float **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"常量 ``PI`` （值为 ``3.141592`` ）。它是圆的周长与直径的比值，也是转半圈（180"
+"度）所包含的弧度数。"
+
+msgid "in float **TAU**"
+msgstr "in float **TAU**"
+
+msgid "in float **E**"
+msgstr "in float **E**"
+
+msgid "in vec4 **FRAGCOORD**"
+msgstr "in vec4 **FRAGCOORD**"
+
+msgid "in vec2 **UV**"
+msgstr "in vec2 **UV**"

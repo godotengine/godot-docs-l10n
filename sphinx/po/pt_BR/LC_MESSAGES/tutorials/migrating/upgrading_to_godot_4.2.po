@@ -23,6 +23,9 @@ msgstr ""
 "relativamente seguro migrar para a versão 4.2. Esta página tem a intenção de "
 "cobrir tudo o que você precisa para prestar atenção ao migrar seu projeto."
 
+msgid "Breaking changes"
+msgstr "Alterações incompatíveis"
+
 msgid ""
 "If you are migrating from 4.1 to 4.2, the breaking changes listed here might "
 "affect you. Changes are grouped by areas/systems."
@@ -120,6 +123,9 @@ msgstr "Componentes Principais"
 msgid "Change"
 msgstr "Mudança"
 
+msgid "GDScript Compatible"
+msgstr "Compatível com GDScript"
+
 msgid "C# Binary Compatible"
 msgstr "Compatível com C# Binário"
 
@@ -128,6 +134,9 @@ msgstr "Compatível com fonte C#"
 
 msgid "Introduced"
 msgstr "Introduzido"
+
+msgid "**Node**"
+msgstr "**Node**"
 
 msgid "Constant ``NOTIFICATION_NODE_RECACHE_REQUESTED`` removed"
 msgstr "Constante ``NOTIFICATION_NODE_RECACHE_REQUESTED`` removida"
@@ -143,6 +152,9 @@ msgstr "`GH-84419`_"
 
 msgid "Animation"
 msgstr "Animação"
+
+msgid "**AnimationPlayer**"
+msgstr "**AnimationPlayer**"
 
 msgid ""
 "Method ``_post_process_key_value`` moved to base class ``AnimationMixer``"
@@ -275,6 +287,9 @@ msgstr ""
 msgid "Method ``seek`` adds a new ``update_only`` optional parameter"
 msgstr "O método ``seek`` adiciona um novo parâmetro opcional ``update_only``"
 
+msgid "**AnimationTree**"
+msgstr "**AnimationTree**"
+
 msgid "Property ``active`` moved to base class ``AnimationMixer``"
 msgstr "Propriedade ``active`` movida para a classe base ``AnimationMixer``"
 
@@ -322,17 +337,18 @@ msgstr ""
 "Propriedade ``process_callback`` renomeada para ``callback_mode_process`` e "
 "movida para a classe base ``AnimationMixer``"
 
-msgid "Property ``root_motion_track``  moved to base class ``AnimationMixer``"
-msgstr ""
-"Propriedade ``root_motion_track`` movida para a classe base "
-"``AnimationMixer``"
-
 msgid ""
 "Property ``tree_root`` changes type from ``AnimationNode`` to "
 "``AnimationRootNode``"
 msgstr ""
 "A propriedade ``tree_root`` altera o tipo de ``AnimationNode`` para "
 "``AnimationRootNode``"
+
+msgid "GUI nodes"
+msgstr "Nós de GUI"
+
+msgid "**PopupMenu**"
+msgstr "**PopupMenu**"
 
 msgid ""
 "Method ``add_icon_shortcut`` adds a new ``allow_echo`` optional parameter"
@@ -370,6 +386,9 @@ msgstr "`GH-80410`_"
 msgid "Rendering"
 msgstr "Renderização"
 
+msgid "**ImporterMesh**"
+msgstr "**ImporterMesh**"
+
 msgid ""
 "Method ``add_surface`` changes ``flags`` parameter type from ``uint32`` to "
 "``uint64``"
@@ -386,6 +405,9 @@ msgid ""
 msgstr ""
 "Alterado o tipo de retorno do método ``get_surface_format`` de ``uint32`` "
 "para ``uint64``"
+
+msgid "**MeshDataTool**"
+msgstr "**MeshDataTool**"
 
 msgid ""
 "Method ``commit_to_surface`` adds a new ``compression_flags`` optional "
@@ -453,6 +475,9 @@ msgstr ""
 "Alterado o tipo do parâmetro ``flags`` do método ``commit`` de ``uint32`` "
 "para ``uint64``"
 
+msgid "Text"
+msgstr "Texto"
+
 msgid "**Font**"
 msgstr "**Fonte**"
 
@@ -478,6 +503,9 @@ msgstr "`GH-80954`_"
 msgid "GraphEdit"
 msgstr "GraphEdit"
 
+msgid "**GraphEdit**"
+msgstr "**GraphEdit**"
+
 msgid ""
 "Property ``arrange_nodes_button_hidden`` renamed to ``show_arrange_button``"
 msgstr ""
@@ -498,6 +526,9 @@ msgstr "Propriedade ``snap_distance`` renomeada para ``snapping_distance``"
 
 msgid "Property ``use_snap`` renamed to ``snapping_enabled``"
 msgstr "Propriedade ``use_snap`` renomeada para ``snapping_enabled``"
+
+msgid "**GraphNode**"
+msgstr "**GraphNode**"
 
 msgid "Property ``comment`` removed"
 msgstr "Propriedade ``comment`` removida"
@@ -598,6 +629,12 @@ msgstr "Propriedade ``show_close`` removida"
 msgid "Property ``text_direction`` removed"
 msgstr "Propriedade ``text_direction`` removida"
 
+msgid "TileMap"
+msgstr "TileMap"
+
+msgid "**TileMap**"
+msgstr "**TileMap**"
+
 msgid "Property ``cell_quadrant_size`` renamed to ``rendering_quadrant_size``"
 msgstr ""
 "Propriedade ``cell_quadrant_size`` renomeada para ``rendering_quadrant_size``"
@@ -607,6 +644,9 @@ msgstr "`GH-81070`_"
 
 msgid "XR"
 msgstr "Realidade Aumentada (XR)"
+
+msgid "**XRInterface**"
+msgstr "**XRInterface**"
 
 msgid "Property ``environment_blend_mode`` added"
 msgstr "Propriedade ``environment_blend_mode`` adicionada"

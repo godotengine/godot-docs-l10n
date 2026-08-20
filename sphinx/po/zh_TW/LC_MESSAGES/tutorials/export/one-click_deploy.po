@@ -129,15 +129,6 @@ msgid ""
 "account."
 msgstr "安裝 Xcode，接受 Xcode 授權條款，並使用你的 Apple Developer 帳號登入。"
 
-msgid ""
-"If you are using Xcode 14 or earlier, install `ios-deploy <https://"
-"github.com/ios-control/ios-deploy>`__ and set path to `ios-deploy` in the "
-"Editor Settings (see `Export ⇾ iOS ⇾ iOS Deploy`)."
-msgstr ""
-"如果你使用的是 Xcode 14 或更早版本，請安裝 `ios-deploy <https://github.com/"
-"ios-control/ios-deploy>`__，並在編輯器設定中設定 `ios-deploy` 的路徑（請見"
-"「匯出 ⇾ iOS ⇾ iOS Deploy」）。"
-
 msgid "For running on device:"
 msgstr "如要在實體裝置上執行："
 
@@ -150,24 +141,11 @@ msgstr "在裝置上啟用開發者模式。"
 msgid "Device can be connected via USB or local network."
 msgstr "裝置可透過 USB 或區域網路連線。"
 
-msgid ""
-"Make sure the device is on the same local network and a correct network "
-"interface is selected in the editor settings (see `Network ⇾ Debug ⇾ Remote "
-"Host`). By default, the editor is listening for `localhost` connections only."
-msgstr ""
-"請確保裝置與電腦在同一區域網路，並於編輯器設定中選擇正確的網路介面（請見「網"
-"路 ⇾ 除錯 ⇾ 遠端主機」）。預設情況下，編輯器僅監聽 `localhost` 連線。"
-
 msgid "Device screen should be unlocked."
 msgstr "請確保裝置螢幕已解鎖。"
 
 msgid "**Desktop platforms:**"
 msgstr "**桌面平台：**"
-
-msgid ""
-"Enable `SSH Remote Deploy` and configure connection settings in the project "
-"export setting."
-msgstr "啟用 `SSH 遠端部署`，並於專案匯出設定中設定連線參數。"
 
 msgid ""
 "Make sure there is an export preset marked as **Runnable** for the target "

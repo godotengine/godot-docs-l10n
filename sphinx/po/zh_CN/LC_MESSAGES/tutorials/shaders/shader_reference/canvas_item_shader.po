@@ -130,8 +130,9 @@ msgstr ""
 msgid "Global built-ins"
 msgstr "全局内置变量"
 
-msgid "Global built-ins are available everywhere, including custom functions."
-msgstr "全局的内置在所有地方均可用，包括自定义函数中。"
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr "全局内置变量在任何地方都可以使用，包括在自定义函数中。"
 
 msgid "Built-in"
 msgstr "内置"
@@ -258,8 +259,8 @@ msgstr ""
 "从画布空间（Canvas space）到裁剪空间（Clip space）的变换。在裁剪空间中，坐标"
 "的取值范围是从 ``(-1.0, -1.0)`` 到 ``(1.0, 1.0).``"
 
-msgid "in int  **INSTANCE_ID**"
-msgstr "in int  **INSTANCE_ID**"
+msgid "in int **INSTANCE_ID**"
+msgstr "in int **INSTANCE_ID**"
 
 msgid "Instance ID for instancing."
 msgstr "实例化的实例 ID。"
@@ -433,7 +434,7 @@ msgid "Size of individual pixels. Equal to the inverse of resolution."
 msgstr "单个像素的尺寸。等于分辨率的倒数。"
 
 msgid "in vec4 **REGION_RECT**"
-msgstr "输入区域矩形（in vec4 **REGION_RECT**）"
+msgstr "in vec4 **REGION_RECT**"
 
 msgid ""
 "Visible area of the sprite region in format ``(x, y, width, height)``. "
@@ -624,15 +625,6 @@ msgstr "点精灵的UV."
 
 msgid "in vec4 **LIGHT_COLOR**"
 msgstr "in vec4 **LIGHT_COLOR**"
-
-msgid ""
-":ref:`Color<class_Light2D_property_color>` of the :ref:`class_Light2D`. If "
-"the light is a :ref:`class_PointLight2D`, multiplied by the "
-"light's :ref:`texture<class_PointLight2D_property_texture>`."
-msgstr ""
-"该 :ref:`class_Light2D` 的 :ref:`Color<class_Light2D_property_color>` 。如果"
-"这盏灯是 :ref:`class_PointLight2D` ，则该颜色会与灯光"
-"的 :ref:`texture<class_PointLight2D_property_texture>` 进行相乘。"
 
 msgid "in float **LIGHT_ENERGY**"
 msgstr "in float **LIGHT_ENERGY**"

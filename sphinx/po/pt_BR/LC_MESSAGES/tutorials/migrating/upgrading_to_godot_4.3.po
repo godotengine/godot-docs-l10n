@@ -11,6 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.2 to Godot 4.3"
+msgstr "Atualizando do Godot 4.2 para o Godot 4.3"
+
+msgid ""
+"For most games and apps made with 4.2 it should be relatively safe to "
+"migrate to 4.3. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"Para a maioria dos jogos e aplicativos feitos com a versão 4.2, a migração "
+"para a 4.3 tende a ser relativamente segura. Esta página tem como objetivo "
+"cobrir tudo o que você precisa observar ao migrar seu projeto."
+
+msgid "Breaking changes"
+msgstr "Alterações incompatíveis"
+
 msgid ""
 "If you are migrating from 4.2 to 4.3, the breaking changes listed here might "
 "affect you. Changes are grouped by areas/systems."
@@ -48,6 +63,9 @@ msgstr "GDExtension"
 msgid "Change"
 msgstr "Mudança"
 
+msgid "GDScript Compatible"
+msgstr "Compatível com GDScript"
+
 msgid "C# Binary Compatible"
 msgstr "Compatível com C# Binário"
 
@@ -57,11 +75,17 @@ msgstr "Compatível com fonte C#"
 msgid "Introduced"
 msgstr "Introduzido"
 
+msgid "**GDExtension**"
+msgstr "**GDExtension**"
+
 msgid "Method ``close_library`` removed"
 msgstr "Método ``close_library`` removido"
 
 msgid "|❌|"
 msgstr "|❌|"
+
+msgid "`GH-88418`_"
+msgstr "`GH-88418`_"
 
 msgid "Method ``initialize_library`` removed"
 msgstr "Método ``initialize_library`` removido"
@@ -86,11 +110,64 @@ msgstr "Animação"
 msgid "**Animation**"
 msgstr "**Animação**"
 
+msgid ""
+"Method ``position_track_interpolate`` adds a new ``backward`` optional "
+"parameter"
+msgstr ""
+"O método ``position_track_interpolate`` adiciona um novo parâmetro opcional "
+"``backward``"
+
 msgid "|✔️|"
 msgstr "|✔️|"
 
 msgid "|✔️ with compat|"
 msgstr "|✔️ with compat|"
+
+msgid "`GH-86629`_"
+msgstr "`GH-86629`_"
+
+msgid ""
+"Method ``rotation_track_interpolate`` adds a new ``backward`` optional "
+"parameter"
+msgstr ""
+"O método ``rotation_track_interpolate`` adiciona um novo parâmetro opcional "
+"``backward``"
+
+msgid ""
+"Method ``scale_track_interpolate`` adds a new ``backward`` optional parameter"
+msgstr ""
+"O método ``scale_track_interpolate`` adiciona um novo parâmetro opcional "
+"``backward``"
+
+msgid ""
+"Method ``blend_shape_track_interpolate`` adds a new ``backward`` optional "
+"parameter"
+msgstr ""
+"O método ``blend_shape_track_interpolate`` adiciona um novo parâmetro "
+"opcional ``backward``"
+
+msgid ""
+"Method ``value_track_interpolate`` adds a new ``backward`` optional parameter"
+msgstr ""
+"O método ``value_track_interpolate`` adiciona um novo parâmetro opcional "
+"``backward``"
+
+msgid "Method ``track_find_key`` adds a new ``limit`` optional parameter"
+msgstr ""
+"O método ``track_find_key`` adiciona um novo parâmetro opcional ``limit``"
+
+msgid "`GH-86661`_"
+msgstr "`GH-86661`_"
+
+msgid "Method ``track_find_key`` adds a new ``backward`` optional parameter"
+msgstr ""
+"O método ``track_find_key`` adiciona um novo parâmetro opcional ``backward``"
+
+msgid "`GH-92861`_"
+msgstr "`GH-92861`_"
+
+msgid "**AnimationMixer**"
+msgstr "**AnimationMixer**"
 
 msgid ""
 "Method ``_post_process_key_value`` changes ``object`` parameter type from "
@@ -99,15 +176,36 @@ msgstr ""
 "Alterado o tipo do parâmetro ``object`` do método "
 "``_post_process_key_value`` de ``Object`` para ``uint64``"
 
+msgid "`GH-86687`_"
+msgstr "`GH-86687`_"
+
+msgid "**Skeleton3D**"
+msgstr "**Skeleton3D**"
+
 msgid "Method ``add_bone`` changes return type from ``void`` to ``int32``"
 msgstr ""
 "Alterado o tipo de retorno do método ``add_bone`` de ``void`` para ``int32``"
 
+msgid "`GH-88791`_"
+msgstr "`GH-88791`_"
+
 msgid "Signal ``bone_pose_changed`` replaced by ``skeleton_updated``"
 msgstr "Sinal ``bone_pose_changed`` substituído por ``skeleton_updated``"
 
+msgid "`GH-90575`_"
+msgstr "`GH-90575`_"
+
+msgid "**BoneAttachment3D**"
+msgstr "**BoneAttachment3D**"
+
 msgid "Method ``on_bone_pose_update`` replaced by ``on_skeleton_update``"
 msgstr "Método ``on_bone_pose_update`` substituído por ``on_skeleton_update``"
+
+msgid "GUI nodes"
+msgstr "Nós de GUI"
+
+msgid "**AcceptDialog**"
+msgstr "**AcceptDialog**"
 
 msgid ""
 "Method ``register_text_enter`` changes parameter ``line_edit`` type from "
@@ -115,6 +213,9 @@ msgid ""
 msgstr ""
 "Alterado o tipo do parâmetro ``line_edit`` do método ``register_text_enter`` "
 "de ``Control`` para ``LineEdit``"
+
+msgid "`GH-89419`_"
+msgstr "`GH-89419`_"
 
 msgid ""
 "Method ``remove_button`` changes parameter ``button`` type from ``Control`` "
@@ -126,9 +227,15 @@ msgstr ""
 msgid "Physics"
 msgstr "Física"
 
+msgid "**PhysicsShapeQueryParameters3D**"
+msgstr "**PhysicsShapeQueryParameters3D**"
+
 msgid "Property ``motion`` changes type from ``Vector2`` to ``Vector3``"
 msgstr ""
 "Alterado o tipo da propriedade ``motion`` de ``Vector2`` para ``Vector3``"
+
+msgid "`GH-85393`_"
+msgstr "`GH-85393`_"
 
 msgid ""
 "In C#, the enum ``PhysicsServer3D.G6DofJointAxisFlag`` breaks compatibility "
@@ -153,6 +260,9 @@ msgid ""
 msgstr ""
 "O campo Enum ``FinalAction.FINAL_ACTION_CONTINUE`` altera o valor de ``2`` "
 "para ``0``"
+
+msgid "`GH-84976`_"
+msgstr "`GH-84976`_"
 
 msgid ""
 "Enum field ``InitialAction.INITIAL_ACTION_CLEAR`` changes value from ``0`` "
@@ -189,6 +299,12 @@ msgstr ""
 "O campo Enum ``InitialAction.INITIAL_ACTION_KEEP`` altera o valor de ``3`` "
 "para ``0``"
 
+msgid "Method ``buffer_clear`` removes ``post_barrier`` parameter"
+msgstr "O método ``buffer_clear`` remove o parâmetro ``post_barrier``"
+
+msgid "Method ``buffer_update`` removes ``post_barrier`` parameter"
+msgstr "O método ``buffer_update`` remove o parâmetro ``post_barrier``"
+
 msgid "Method ``compute_list_begin`` removes ``allow_draw_overlap`` parameter"
 msgstr ""
 "Removido parâmetro ``allow_draw_overlap`` do método ``compute_list_begin``"
@@ -201,6 +317,9 @@ msgstr "Removido parâmetro ``storage_textures`` do método ``draw_list_begin``"
 
 msgid "Method ``draw_list_end`` removes ``post_barrier`` parameter"
 msgstr "Removido parâmetro ``post_barrier`` do método ``draw_list_end``"
+
+msgid "Method ``texture_clear`` removes ``post_barrier`` parameter"
+msgstr "O método ``texture_clear`` remove o parâmetro ``post_barrier``"
 
 msgid "Method ``texture_copy`` removes ``post_barrier`` parameter"
 msgstr "Removido parâmetro ``post_barrier`` do método ``texture_copy``"
@@ -215,6 +334,46 @@ msgstr "Removido parâmetro ``post_barrier`` do método ``texture_update``"
 
 msgid "**RenderingServer**"
 msgstr "**Dispositivo de Servidor**"
+
+msgid ""
+"Method ``environment_set_fog`` adds a new ``fog_mode`` optional parameter"
+msgstr ""
+"O método ``environment_set_fog`` adiciona um novo parâmetro opcional "
+"``fog_mode``"
+
+msgid "`GH-84792`_"
+msgstr "`GH-84792`_"
+
+msgid "**RenderSceneBuffersRD**"
+msgstr "**RenderSceneBuffersRD**"
+
+msgid "Method ``get_color_layer`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"O método ``get_color_layer`` adiciona um novo parâmetro opcional ``msaa``"
+
+msgid "`GH-80214`_"
+msgstr "`GH-80214`_"
+
+msgid "Method ``get_depth_layer`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"O método ``get_depth_layer`` adiciona um novo parâmetro opcional ``msaa``"
+
+msgid "Method ``get_velocity_layer`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"O método ``get_velocity_layer`` adiciona um novo parâmetro opcional ``msaa``"
+
+msgid "Method ``get_color_texture`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"O método ``get_color_texture`` adiciona um novo parâmetro opcional ``msaa``"
+
+msgid "Method ``get_depth_texture`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"O método ``get_depth_texture`` adiciona um novo parâmetro opcional ``msaa``"
+
+msgid "Method ``get_velocity_texture`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"O método ``get_velocity_texture`` adiciona um novo parâmetro opcional "
+"``msaa``"
 
 msgid ""
 "While the values of the enum fields in ``RenderingDevice.InitialAction`` and "
@@ -234,25 +393,110 @@ msgid ""
 "members were added in `GH-83452`_ to the enum that caused the enum members "
 "to be renamed."
 msgstr ""
-"Em C#, o enum``RenderingDevice.DriverResource`` quebra a compatibilidade "
-"devido à forma como o gerador de vinculações detecta o prefixo do enum. "
-"Novos membros foram adicionados em `GH-83452`_ ào enum, o que fez com que os "
-"membros dele fossem renomeados."
+"Em C#, o enum ``RenderingDevice.DriverResource`` quebra a compatibilidade "
+"devido à maneira como o gerador de bindings detecta o prefixo do enum. Novos "
+"membros foram adicionados ao enum em `GH-83452`_, o que fez com que os "
+"membros do enum fossem renomeados."
+
+msgid "Text"
+msgstr "Texto"
 
 msgid "**Font**"
 msgstr "**Fonte**"
 
+msgid ""
+"Method ``find_variation`` adds a new ``baseline_offset`` optional parameter"
+msgstr ""
+"O método ``find_variation`` adiciona um novo parâmetro opcional "
+"``baseline_offset``"
+
+msgid "`GH-87668`_"
+msgstr "`GH-87668`_"
+
 msgid "**RichTextLabel**"
 msgstr "**Texto Formatado**"
+
+msgid "Method ``push_meta`` adds a new ``underline_mode`` optional parameter"
+msgstr ""
+"O método ``push_meta`` adiciona um novo parâmetro opcional ``underline_mode``"
+
+msgid "`GH-89024`_"
+msgstr "`GH-89024`_"
+
+msgid "**TextServer**"
+msgstr "**TextServer**"
+
+msgid ""
+"Method ``shaped_text_get_word_breaks`` adds a new optional "
+"``skip_grapheme_flags`` parameter"
+msgstr ""
+"O método ``shaped_text_get_word_breaks`` adiciona um novo parâmetro opcional "
+"``skip_grapheme_flags``"
+
+msgid "`GH-90732`_"
+msgstr "`GH-90732`_"
+
+msgid "**TextServerExtension**"
+msgstr "**TextServerExtension**"
+
+msgid ""
+"Method ``_shaped_text_get_word_breaks`` adds a new ``skip_grapheme_flags`` "
+"parameter"
+msgstr ""
+"O método ``_shaped_text_get_word_breaks`` adiciona um novo parâmetro "
+"``skip_grapheme_flags``"
 
 msgid "Audio"
 msgstr "Áudio"
 
+msgid "**AudioStreamPlaybackPolyphonic**"
+msgstr "**AudioStreamPlaybackPolyphonic**"
+
+msgid ""
+"Method ``play_stream`` adds new ``playback_type``, and ``bus`` optional "
+"parameters"
+msgstr ""
+"O método ``play_stream`` adiciona os novos parâmetros opcionais "
+"``playback_type`` e ``bus``"
+
+msgid "`GH-91382`_"
+msgstr "`GH-91382`_"
+
 msgid "Navigation"
 msgstr "Navegação"
 
+msgid "**AStar2D**"
+msgstr "**AStar2D**"
+
+msgid ""
+"Method ``get_id_path`` adds new ``allow_partial_path`` optional parameter"
+msgstr ""
+"O método ``get_id_path`` adiciona um novo parâmetro opcional "
+"``allow_partial_path``"
+
+msgid "`GH-88047`_"
+msgstr "`GH-88047`_"
+
+msgid ""
+"Method ``get_point_path`` adds new ``allow_partial_path`` optional parameter"
+msgstr ""
+"Método ``get_point_path`` adiciona o novo parâmetro opcional "
+"``allow_partial_path``"
+
+msgid "**AStar3D**"
+msgstr "**AStar3D**"
+
+msgid "**AStarGrid2D**"
+msgstr "**AStarGrid2D**"
+
+msgid "**NavigationRegion2D**"
+msgstr "**NavigationRegion2D**"
+
 msgid "Property ``avoidance_layers`` removed"
 msgstr "Propriedade ``avoidance_layers`` removida"
+
+msgid "`GH-90747`_"
+msgstr "`GH-90747`_"
 
 msgid "Property ``constrain_avoidance`` removed"
 msgstr "Propriedade ``constrain_avoidance`` removida"
@@ -270,12 +514,21 @@ msgstr ""
 "O recurso de prevenção de restrições em ``NavigationRegion2D`` era "
 "experimental, sendo descontinuado sem substituição."
 
+msgid "TileMap"
+msgstr "TileMap"
+
+msgid "**TileData**"
+msgstr "**TileData**"
+
 msgid ""
 "Method ``get_navigation_polygon`` adds new ``flip_h``, ``flip_v``, and "
 "``transpose`` optional parameters"
 msgstr ""
 "Adicionado novos parâmetros opcionais ``flip_h``, ``flip_v`` e ``transpose`` "
 "ao método ``get_navigation_polygon``"
+
+msgid "`GH-84660`_"
+msgstr "`GH-84660`_"
 
 msgid ""
 "Method ``get_occluder`` adds new ``flip_h``, ``flip_v``, and ``transpose`` "
@@ -287,12 +540,21 @@ msgstr ""
 msgid "XR"
 msgstr "Realidade Aumentada (XR)"
 
+msgid "**WebXRInterface**"
+msgstr "**WebXRInterface**"
+
 msgid ""
 "Method ``get_input_source_tracker`` changes return type from "
 "``XRPositionalTracker`` to ``XRControllerTracker``"
 msgstr ""
 "Alterado o tipo de retorno do método ``get_input_source_tracker`` de "
 "``XRPositionalTracker`` para ``XRControllerTracker``"
+
+msgid "`GH-90645`_"
+msgstr "`GH-90645`_"
+
+msgid "**XRServer**"
+msgstr "**XRServer**"
 
 msgid ""
 "Method ``get_tracker`` changes return type from ``XRPositionalTracker`` to "
@@ -304,11 +566,53 @@ msgstr ""
 msgid "Editor plugins"
 msgstr "Plugins do editor"
 
+msgid "**EditorInspectorPlugin**"
+msgstr "**EditorInspectorPlugin**"
+
+msgid "Method ``add_property_editor`` adds a new ``label`` optional parameter"
+msgstr ""
+"Método ``add_property_editor`` adiciona um novo parâmetro opcional ``label``"
+
+msgid "`GH-92322`_"
+msgstr "`GH-92322`_"
+
+msgid "**EditorPlugin**"
+msgstr "**EditorPlugin**"
+
+msgid ""
+"Method ``add_control_to_bottom_panel`` adds a new ``shortcut`` optional "
+"parameter"
+msgstr ""
+"Método ``add_control_to_bottom_panel`` adiciona um novo parâmetro opcional "
+"``shortcut``"
+
+msgid "`GH-88081`_"
+msgstr "`GH-88081`_"
+
+msgid ""
+"Method ``add_control_to_dock`` adds a new ``shortcut`` optional parameter"
+msgstr ""
+"Método ``add_control_to_dock`` adiciona um novo parâmetro opcional "
+"``shortcut``"
+
 msgid "**EditorSceneFormatImporterFBX**"
 msgstr "**EditorSceneFormatImporterFBX**"
 
 msgid "Type renamed to ``EditorSceneFormatImporterFBX2GLTF``"
 msgstr "Tipo renomeado para ``EditorSceneFormatImporterFBX2GLTF``"
+
+msgid "`GH-81746`_"
+msgstr "`GH-81746`_"
+
+msgid "Behavior changes"
+msgstr "Mudanças de comportamento"
+
+msgid ""
+"In 4.3, some behavior changes have been introduced, which might require you "
+"to adjust your project."
+msgstr ""
+"No 4.3, algumas mudanças de comportamento foram introduzidas, o que pode "
+"exigir ajustes no seu projeto."
 
 msgid "Core"
 msgstr "Componentes Principais"
@@ -400,6 +704,15 @@ msgstr ""
 "futuro (`GH-87171`_)."
 
 msgid ""
+"More information about the changes to Animation can be found in the "
+"`Migrating Animations from Godot 4.0 to 4.3 <https://godotengine.org/article/"
+"migrating-animations-from-godot-4-0-to-4-3>`__ article."
+msgstr ""
+"Mais informações sobre as mudanças na animação podem ser encontradas no "
+"artigo `Migrando animações do Godot 4.0 para 4.3 <https://godotengine.org/"
+"article/migrating-animations-from-godot-4-0-to-4-3>`__."
+
+msgid ""
 "The default font outline color was changed from white to black (`GH-54641`_)."
 msgstr ""
 "A cor do contorno da fonte padrão foi alterada de branco para preto "
@@ -421,6 +734,9 @@ msgstr ""
 "pais. Isso significa que nós existentes com a propriedade ``auto_translate`` "
 "definida como ``true`` não poderão mais ser traduzidos se forem filhos de um "
 "nó com a propriedade ``auto_translate`` definida como ``false``."
+
+msgid "Multiplayer"
+msgstr "Multijogador"
 
 msgid ""
 "The ``SceneMultiplayer`` caching protocol was changed to send the received "

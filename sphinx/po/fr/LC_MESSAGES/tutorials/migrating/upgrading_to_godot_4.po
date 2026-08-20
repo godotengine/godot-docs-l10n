@@ -1050,7 +1050,7 @@ msgstr ""
 
 msgid "ENetMultiplayerPeer's ``get_peer_port()`` is now ``get_peer()``."
 msgstr ""
-"``get_peer_port()`` de ENetMultiplayerPeer est maintenant ``get_peer()``."
+"``get_peer_port()`` de ENetMultiplayerPeer est dorénavant ``get_peer()``."
 
 msgid "FileDialog's ``get_mode()`` is now ``get_file_mode()``."
 msgstr "``get_mode()`` de FileDialog est maintenant ``get_file_mode()``."
@@ -1580,16 +1580,6 @@ msgstr ""
 "`pull request initiale <https://github.com/godotengine/godot/pull/41794>`__."
 
 msgid ""
-"``randomize()`` is now automatically called on project load, so "
-"deterministic randomness with the global RandomNumberGenerate instance "
-"requires manually setting a seed in a script's ``_ready()`` function."
-msgstr ""
-"``randomize()`` est maintenant automatiquement appelé lors du chargement du "
-"projet, donc l'aléatoire déterministe avec l'instance globale "
-"RandomNumberGenerate nécessite de définir manuellement une graine dans la "
-"fonction ``_ready()``."
-
-msgid ""
 "``call_group()``, ``set_group()`` and ``notify_group()`` are now immediate "
 "by default. If calling an expensive function, this may result in stuttering "
 "when used on a group containing a large number of nodes. To use deferred "
@@ -1842,10 +1832,6 @@ msgstr "ClippedCamera"
 
 msgid "Camera2D or Camera3D"
 msgstr "Camera2D ou Camera3D"
-
-msgid "Camera's pyramid shape was moved to :ref:'class_Camera3D'."
-msgstr ""
-"La forme pyramidale de caméra a été déplacée dans :ref:'class_Camera3D'."
 
 msgid "InterpolatedCamera"
 msgstr "InterpolatedCamera"

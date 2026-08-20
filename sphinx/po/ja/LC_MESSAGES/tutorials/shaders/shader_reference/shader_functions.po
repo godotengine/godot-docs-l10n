@@ -11,9 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Built-in functions"
-msgstr "ビルトイン関数"
-
 msgid "Function"
 msgstr "関数"
 
@@ -122,10 +119,6 @@ msgstr "反射。"
 msgid "Refract."
 msgstr "屈折。"
 
-msgid "If ``dot(Nref, I)`` < 0, return ``N``, otherwise ``-N``."
-msgstr ""
-"``dot(Nref, I)`` < 0 の場合は ``N`` を返し、それ以外の場合は ``-N`` を返す。"
-
 msgid "Matrix component multiplication."
 msgstr "行列要素の乗算。"
 
@@ -140,34 +133,6 @@ msgstr "行列式。"
 
 msgid "Inverse matrix."
 msgstr "逆行列。"
-
-msgid "Bool vector comparison on < int/uint/float vectors."
-msgstr ""
-"int/uint/floatベクトルの各要素を比較(x < y)した結果をboolベクトルとして返す。"
-
-msgid "Bool vector comparison on > int/uint/float vectors."
-msgstr ""
-"int/uint/floatベクトルの各要素を比較(x > y)した結果をboolベクトルとして返す。"
-
-msgid "Bool vector comparison on <= int/uint/float vectors."
-msgstr ""
-"int/uint/floatベクトルの各要素を比較(x <= y)した結果をboolベクトルとして返"
-"す。"
-
-msgid "Bool vector comparison on >= int/uint/float vectors."
-msgstr ""
-"int/uint/floatベクトルの各要素を比較(x >= y)した結果をboolベクトルとして返"
-"す。"
-
-msgid "Bool vector comparison on == int/uint/float vectors."
-msgstr ""
-"int/uint/floatベクトルの各要素を比較(x == y)した結果をboolベクトルとして返"
-"す。"
-
-msgid "Bool vector comparison on != int/uint/float vectors."
-msgstr ""
-"int/uint/floatベクトルの各要素を比較(x != y)した結果をboolベクトルとして返"
-"す。"
 
 msgid "bool"
 msgstr "\\ bool"
@@ -185,14 +150,8 @@ msgstr ""
 msgid "Invert boolean vector."
 msgstr "boolベクトルの反転。"
 
-msgid "Get the size of a texture."
-msgstr "テクスチャのサイズを取得する。"
-
 msgid "vec2"
 msgstr "\\ vec2"
-
-msgid "Get the number of accessible mipmap levels of a texture."
-msgstr "テクスチャのアクセス可能なミップマップレベルの数を取得する。"
 
 msgid "vec4"
 msgstr "\\ vec4"

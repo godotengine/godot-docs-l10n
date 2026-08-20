@@ -66,15 +66,6 @@ msgid "Same-scene limitation"
 msgstr "同一シーンの制限"
 
 msgid ""
-"A scene unique node can only be retrieved by a node inside the same scene. "
-"To demonstrate this limitation, consider this example **Player** scene that "
-"instances a **Sword** scene:"
-msgstr ""
-"シーン固有ノードは、同じシーン内のノードによってのみ取得できます。この制限を"
-"示すために、**Sword** シーンをインスタンス化する次の **Player** シーンの例を"
-"考えてみましょう。"
-
-msgid ""
 "Here are the results of ``get_node()`` calls inside the **Player** script:"
 msgstr "**Player** スクリプト内の ``get_node()`` 呼び出しの結果は次のとおり。"
 

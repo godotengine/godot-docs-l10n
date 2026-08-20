@@ -24,11 +24,32 @@ msgstr ""
 "Para codificar em C# usando um editor externo, consulte :ref:`o guia C# para "
 "configurar um editor externo <doc_c_sharp_setup_external_editor>`."
 
+msgid ""
+"Godot can be used with an external text editor, such as Sublime Text or "
+"Visual Studio Code. Browse to the relevant editor settings: **Editor > "
+"Editor Settings > Text Editor > External**"
+msgstr ""
+"A Godot pode ser usada com um editor de texto externo, como o Sublime Text "
+"ou o Visual Studio Code. Navegue até as configurações relevantes do editor: "
+"**Editor > Editor Settings > Text Editor > External** (Editor > "
+"Configurações do Editor > Editor de Texto > Externo)"
+
 msgid "Text Editor > External section of the Editor Settings"
 msgstr "Editor de texto > Seção externa das configurações do editor"
 
 msgid "**Text Editor > External** section of the Editor Settings"
 msgstr "Seção **Editor de texto > Externo** das Configurações do Editor"
+
+msgid ""
+"There are two text fields: the executable path and command-line flags. The "
+"flags allow you to integrate the editor with Godot, passing it the file path "
+"to open and other relevant arguments. Godot will replace the following "
+"placeholders in the flags string:"
+msgstr ""
+"Existem dois campos de texto: o caminho do executável e as flags da linha de "
+"comando. As flags permitem integrar o editor ao Godot, passando o caminho do "
+"arquivo a ser aberto e outros argumentos relevantes. O Godot substituirá os "
+"seguintes marcadores na string de flags:"
 
 msgid "Field in Exec Flags"
 msgstr "Campo em Exec Flags"
@@ -59,6 +80,11 @@ msgstr "``{linha}``"
 
 msgid "The line number of the error"
 msgstr "O número da linha do erro"
+
+msgid "Some example **Exec Flags** for various editors include:"
+msgstr ""
+"Alguns exemplos de **Exec Flags** (Sinalizadores de Execução) para vários "
+"editores incluem:"
 
 msgid "Editor"
 msgstr "Editor"
@@ -99,6 +125,21 @@ msgstr "``\"+call cursor({linha}, {coluna})\" {arquivo}``"
 msgid "Emacs"
 msgstr "Emacs"
 
+msgid "``emacs +{line}:{col} {file}``"
+msgstr "``emacs +{line}:{col} {file}``"
+
+msgid "Sublime Text/Zed"
+msgstr "Sublime Text/Zed"
+
+msgid "``{project} {file}:{line}:{col}``"
+msgstr "``{project} {file}:{line}:{col}``"
+
+msgid "Visual Studio*"
+msgstr "Visual Studio*"
+
+msgid "``/edit \"{file}\"``"
+msgstr "``/edit \"{file}\"``"
+
 msgid ""
 "\\*: Arguments are not automatically detected, so you must fill them in "
 "manually."
@@ -126,6 +167,13 @@ msgstr ""
 "``code.cmd``."
 
 msgid ""
+"For Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
+"server mode."
+msgstr ""
+"Para o Emacs, você pode chamar ``emacsclient`` em vez de ``emacs`` se usar o "
+"modo servidor."
+
+msgid ""
 "For Visual Studio, you will have to open the solution file ``.sln`` manually "
 "to get access to the IDE features. Additionally, it will not go to a "
 "specific line."
@@ -133,6 +181,9 @@ msgstr ""
 "No Visual Studio, você terá que abrir o arquivo de solução ``.sln`` "
 "manualmente para acessar os recursos do IDE. Além disso, ele não levará a "
 "uma linha específica."
+
+msgid "Automatically reloading your changes"
+msgstr "Recarregando automaticamente suas alterações"
 
 msgid ""
 "To have the Godot Editor automatically reload any script that has been "
@@ -143,6 +194,9 @@ msgstr ""
 "sido alterado por um editor de texto externo, ative **Editor > Configurações "
 "do Editor > Editor de Texto > Comportamento > Recarregar Scripts Quando "
 "Houver Alterações Externas**."
+
+msgid "Using External Editor in Debugger"
+msgstr "Usando Editor Externo no Depurador"
 
 msgid ""
 "Using external editor in debugger is determined by a separate option in "
@@ -166,6 +220,9 @@ msgstr ""
 
 msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
 msgstr "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
+
+msgid "LSP/DAP support"
+msgstr "Suporte a LSP/DAP"
 
 msgid ""
 "Godot supports the `Language Server Protocol <https://microsoft.github.io/"

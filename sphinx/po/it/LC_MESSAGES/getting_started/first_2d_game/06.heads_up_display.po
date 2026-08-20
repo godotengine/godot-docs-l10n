@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Heads up display"
-msgstr "Heads up display (HUD)"
+msgstr "Heads up display"
 
 msgid ""
 "The final piece our game needs is a User Interface (UI) to display things "
@@ -47,7 +47,7 @@ msgid "The HUD needs to display the following information:"
 msgstr "L'HUD deve mostrare le seguenti informazioni:"
 
 msgid "Score, changed by ``ScoreTimer``."
-msgstr "Punteggio, modificato da ''ScoreTimer''."
+msgstr "Punteggio, modificato da ``ScoreTimer``."
 
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
 msgstr "Un messaggio, ad esempio \"Game Over\" o \"Get Ready!\""
@@ -122,8 +122,8 @@ msgid ""
 "manually, or for more precise placement, use \"Anchor Presets\"."
 msgstr ""
 "Organizza i nodi come mostrato in seguito. Puoi trascinare i nodi per "
-"posizionarli manualmente o, per un posizionamento più preciso, utilizzare le "
-"\"preimpostazioni di ancoraggio\"."
+"posizionarli manualmente o, per farlo più precisamente, utilizzare i "
+"\"preset di ancoraggio\"."
 
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
@@ -138,7 +138,7 @@ msgstr ""
 "``Center``."
 
 msgid "Choose the \"Anchor Preset\" ``Center Top``."
-msgstr "Scegli la \"preimpostazione di ancoraggio\" ``Al centro in alto``."
+msgstr "Scegli il \"preset di ancoraggio\" ``Al centro in alto``."
 
 msgid "Message"
 msgstr "Messaggio"
@@ -161,7 +161,7 @@ msgstr ""
 "utilizzare l'intera larghezza dello schermo."
 
 msgid "Choose the \"Anchor Preset\" ``Center``."
-msgstr "Scegli la \"preimpostazione di ancoraggio\" ``Al centro``."
+msgstr "Scegli il \"preset di ancoraggio\" ``Al centro``."
 
 msgid "StartButton"
 msgstr "StartButton"
@@ -178,7 +178,7 @@ msgstr ""
 "testo."
 
 msgid "Choose the \"Anchor Preset\" ``Center Bottom``."
-msgstr "Scegli la \"preimpostazione di ancoraggio\" ``Al centro in basso``."
+msgstr "Scegli il \"preset di ancoraggio\" ``Al centro in basso``."
 
 msgid "Under \"Control - Layout/Transform\", set \"Position Y\" to ``580``."
 msgstr "In \"Control - Layout/Transform\", imposta \"Position Y\" su ``580``."
@@ -191,7 +191,7 @@ msgstr ""
 "proprietà ``Colpo singolo`` su \"On\"."
 
 msgid "Now add this script to ``HUD``:"
-msgstr "Ora aggiungi questo script a ''HUD'':"
+msgstr "Ora aggiungi questo script a ``HUD``:"
 
 msgid ""
 "We now want to display a message temporarily, such as \"Get Ready\", so we "
@@ -235,16 +235,6 @@ msgstr ""
 
 msgid "Connecting HUD to Main"
 msgstr "Collegamento di HUD a Main"
-
-msgid ""
-"Now that we're done creating the ``HUD`` scene, go back to ``Main``. "
-"Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. "
-"The scene tree should look like this, so make sure you didn't miss anything:"
-msgstr ""
-"Ora che abbiamo finito di creare la scena ``HUD``, tornare a ``Main``. "
-"Istanza la scena ``HUD`` in ``Main`` come hai fatto per la scena ``Player``. "
-"L'albero della scena completo dovrebbe essere simile a questo, quindi "
-"assicurati di non aver tralasciato nulla:"
 
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "

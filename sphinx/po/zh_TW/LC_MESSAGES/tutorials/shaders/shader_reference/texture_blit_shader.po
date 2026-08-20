@@ -1,0 +1,87 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Render modes"
+msgstr "算繪模式"
+
+msgid "Render mode"
+msgstr "算繪模式"
+
+msgid "Description"
+msgstr "說明"
+
+msgid "**blend_disabled**"
+msgstr "**blend_disabled**"
+
+msgid "**blend_mix**"
+msgstr "**blend_mix**"
+
+msgid "**blend_add**"
+msgstr "**blend_add**"
+
+msgid "Additive blend mode."
+msgstr "加法混合模式。"
+
+msgid "**blend_sub**"
+msgstr "**blend_sub**"
+
+msgid "Subtractive blend mode."
+msgstr "減法混合模式。"
+
+msgid "**blend_mul**"
+msgstr "**blend_mul**"
+
+msgid "Multiplicative blend mode."
+msgstr "乘法混合模式。"
+
+msgid "Built-ins"
+msgstr "內建變數"
+
+msgid ""
+"Values marked as ``in`` are read-only. Values marked as ``out`` can "
+"optionally be written to and will not necessarily contain sensible values. "
+"Values marked as ``inout`` provide a sensible default value, and can "
+"optionally be written to. Samplers cannot be written to so they are not "
+"marked."
+msgstr ""
+"標記為 ``in`` 的值為唯讀。標記為 ``out`` 的值可以選擇寫入，且不一定包含合理的"
+"預設值。標記為 ``inout`` 的值則有預設值，可以選擇寫入。取樣器（sampler）無法"
+"寫入，因此未標註。"
+
+msgid "Global built-ins"
+msgstr "全域內建變數"
+
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr "全域內建變數可於任何地方使用，包括自訂函式中。"
+
+msgid "Built-in"
+msgstr "內建變數"
+
+msgid "in float **TIME**"
+msgstr "in float **TIME**"
+
+msgid "in float **PI**"
+msgstr "in float **PI**"
+
+msgid "in float **TAU**"
+msgstr "in float **TAU**"
+
+msgid "in float **E**"
+msgstr "in float **E**"
+
+msgid "in vec4 **FRAGCOORD**"
+msgstr "in vec4 **FRAGCOORD**"
+
+msgid "in vec2 **UV**"
+msgstr "in vec2 **UV**"

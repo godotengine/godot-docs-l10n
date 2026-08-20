@@ -11,5 +11,85 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0301: The generic type argument must be a Variant compatible type"
+msgstr ""
+"GD0301: O argumento de tipo genérico deve ser um tipo compatível com Variant"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0301"
+msgstr "GD0301"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Breaking"
+msgstr "Quebra compatibilidade (Breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"An unsupported type is specified for a generic type argument when "
+"a :ref:`Variant-compatible type <c_sharp_variant_compatible_types>` is "
+"expected."
+msgstr ""
+"Um tipo não suportado foi especificado para um argumento de tipo genérico "
+"quando um :ref:`tipo compatível com Variant "
+"<c_sharp_variant_compatible_types>` era esperado."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid ""
+"When a generic type parameter is annotated with the ``[MustBeVariant]`` "
+"attribute, the generic type is required to be a Variant-compatible type. For "
+"example, the generic ``Godot.Collections.Array<T>`` type only supports items "
+"of a type that can be converted to Variant."
+msgstr ""
+"Quando um parâmetro de tipo genérico é anotado com o atributo "
+"``[MustBeVariant]``, o tipo genérico deve obrigatoriamente ser um tipo "
+"compatível com Variant. Por exemplo, o tipo genérico "
+"``Godot.Collections.Array<T>`` suporta apenas itens de um tipo que possa ser "
+"convertido para Variant."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, change the generic type argument to be a "
+"Variant-compatible type or use a different API that doesn't require the "
+"generic type argument to be a Variant-compatible type."
+msgstr ""
+"Para corrigir uma violação desta regra, altere o argumento de tipo genérico "
+"para ser um tipo compatível com Variant ou use uma API diferente que não "
+"exija que o argumento de tipo genérico seja um tipo compatível com Variant."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. API that contains generic type "
+"arguments annotated with the ``[MustBeVariant]`` attribute usually has this "
+"requirement because the values will be passed to the engine, if the type "
+"can't be marshalled it will result in runtime errors."
+msgstr ""
+"Não suprima um aviso desta regra. APIs que contêm argumentos de tipo "
+"genérico anotados com o atributo ``[MustBeVariant]`` geralmente possuem essa "
+"exigência porque os valores serão passados para o motor; se o tipo não puder "
+"passar por marshalling, isso resultará em erros em tempo de execução."

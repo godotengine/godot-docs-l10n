@@ -11,5 +11,85 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0111: The exported tool button must be an expression-bodied property"
+msgstr ""
+"GD0111: O botão de ferramenta exportado deve ser uma propriedade com corpo "
+"de expressão (expression-bodied property)"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0111"
+msgstr "GD0111"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Non-breaking"
+msgstr "Não quebra compatibilidade (Non-breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"A property is annotated with the ``[ExportToolButton]`` attribute but it's "
+"not an `expression-bodied property`_."
+msgstr ""
+"Uma propriedade está anotada com o atributo ``[ExportToolButton]``, mas não "
+"é uma `propriedade com corpo de expressão`_."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid ""
+"When reloading the .NET assembly, Godot will attempt to serialize exported "
+"members to preserve their values. A field or a property with a backing field "
+"that stores a ``Callable`` may prevent the unloading of the assembly."
+msgstr ""
+"Ao recarregar o assembly .NET, o Godot tentará serializar os membros "
+"exportados para preservar seus valores. Um campo ou uma propriedade com um "
+"campo de suporte (backing field) que armazena um ``Callable`` pode impedir o "
+"descarregamento (unloading) do assembly."
+
+msgid ""
+"An expression-bodied property doesn't have a backing field and won't store "
+"the ``Callable``, so Godot won't attempt to serialize it, which should "
+"result in the successful reloading of the .NET assembly."
+msgstr ""
+"Uma propriedade com corpo de expressão não possui um campo de suporte e não "
+"armazenará o ``Callable``, portanto o Godot não tentará serializá-la, o que "
+"deve resultar no recarregamento bem-sucedido do assembly .NET."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, replace the property implementation with an "
+"`expression-bodied property`_."
+msgstr ""
+"Para corrigir uma violação desta regra, substitua a implementação da "
+"propriedade por uma `propriedade com corpo de expressão`_."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. ``Callable`` instances may prevent "
+"the .NET assembly from unloading."
+msgstr ""
+"Não suprima um aviso desta regra. Instâncias de ``Callable`` podem impedir o "
+"descarregamento do assembly .NET."

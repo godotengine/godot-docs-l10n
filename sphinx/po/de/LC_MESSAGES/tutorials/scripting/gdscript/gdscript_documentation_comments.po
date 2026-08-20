@@ -97,7 +97,7 @@ msgid "``@deprecated``"
 msgstr "``@deprecated``"
 
 msgid "``@deprecated: Use [AnotherClass] instead.``"
-msgstr "``@deprecated: Verwenden Sie stattdessen [AnotherClass].``"
+msgstr "``@deprecated: Stattdessen [AnotherClass] verwenden.``"
 
 msgid "Experimental"
 msgstr "Experimentell"
@@ -115,7 +115,7 @@ msgid ""
 "If there is any space in between the tag name and colon, for example "
 "``@tutorial  :``, it won't be treated as a valid tag and will be ignored."
 msgstr ""
-"Wenn zwischen dem Tag-Namen und dem Doppelpunkt ein Leerzeichen steht, z.B. "
+"Wenn zwischen dem Tag-Namen und dem Doppelpunkt ein Leerzeichen steht, z. B. "
 "``@tutorial  :``, wird es nicht als gültiger Tag behandelt und ignoriert."
 
 msgid ""
@@ -170,10 +170,13 @@ msgid "No tag."
 msgstr "Kein Tag."
 
 msgid "``@deprecated: Use [member another] instead.``"
-msgstr "``@deprecated: Verwenden Sie stattdessen [member another].``"
+msgstr "``@deprecated: Stattdessen [member another] verwenden.``"
 
 msgid "``@experimental: This method is incomplete.``"
 msgstr "``@experimental: Diese Methode ist unvollständig.``"
+
+msgid "Alternatively, you can use inline documentation comments:"
+msgstr "Alternativ können Sie auch Inline-Dokumentationskommentare verwenden:"
 
 msgid ""
 "The script documentation will update in the editor help window every time "
@@ -190,7 +193,7 @@ msgid "Complete script example"
 msgstr "Vollständiges Skript-Beispiel"
 
 msgid "``@deprecated`` and ``@experimental`` tags"
-msgstr "``@deprecated`` und``@experimental``-Tags"
+msgstr "``@deprecated``- und ``@experimental``-Tags"
 
 msgid ""
 "You can mark a class or any of its members as deprecated or experimental. "
@@ -324,7 +327,7 @@ msgid "``[member Class.name]``"
 msgstr "``[member Class.name]``"
 
 msgid "Link to member (property)"
-msgstr "Link zum Member (Property)"
+msgstr "Link zum Member (Eigenschaft)"
 
 msgid "``Get [member Node2D.scale].``"
 msgstr "``Get [member Node2D.scale].``"
@@ -353,9 +356,6 @@ msgstr "Link zum Built-in-Konstruktor"
 msgid "``Use [constructor Color.Color].``"
 msgstr "``Verwenden Sie [constructor Color.Color].``"
 
-msgid "Use  :ref:`Color.Color <class_Color_constructor_Color>`."
-msgstr "Verwenden Sie :ref:`Color.Color <class_Color_constructor_Color>`."
-
 msgid "``[operator Class.name]``"
 msgstr "``[operator Class.name]``"
 
@@ -364,9 +364,6 @@ msgstr "Link zum Built-in-Operator"
 
 msgid "``Use [operator Color.operator *].``"
 msgstr "``Verwenden Sie [operator Color.operator *].``"
-
-msgid "Use  :ref:`Color.operator * <class_Color_operator_mul_int>`."
-msgstr "Verwenden Sie :ref:`Color.operator * <class_Color_operator_mul_int>`."
 
 msgid "``[signal Class.name]``"
 msgstr "``[signal Class.name]``"

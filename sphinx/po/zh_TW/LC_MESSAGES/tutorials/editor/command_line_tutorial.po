@@ -149,14 +149,6 @@ msgstr "|editor|即使自動偵測到專案，也要啟動專案管理器。"
 msgid "``--recovery-mode``"
 msgstr "``--recovery-mode``"
 
-msgid ""
-"|editor| \"Start the editor in recovery mode, which disables features that "
-"can typically cause startup crashes, such as tool scripts, editor plugins, "
-"GDExtension addons, and others."
-msgstr ""
-"|editor| 以復原模式啟動編輯器，此模式會停用可能導致啟動當機的功能，例如工具腳"
-"本、編輯器外掛、GDExtension 外掛等 。"
-
 msgid "``--debug-server <uri>``"
 msgstr "``--video-driver <driver>``"
 
@@ -435,18 +427,6 @@ msgstr ""
 msgid "``--extra-gpu-memory-tracking``"
 msgstr "``--extra-gpu-memory-tracking``"
 
-msgid ""
-"|debug| Enables additional memory tracking (see class reference for "
-"`RenderingDevice.get_driver_and_device_memory_report()` and linked methods). "
-"Currently only implemented for Vulkan. Enabling this feature may cause "
-"crashes on some systems due to buggy drivers or bugs in the Vulkan Loader. "
-"See https://github.com/godotengine/godot/issues/95967"
-msgstr ""
-"|debug| 啟用額外的記憶體追蹤（詳見類別參考中的 "
-"`RenderingDevice.get_driver_and_device_memory_report()` 及相關方法） 。目前僅"
-"在 Vulkan 上實作。由於驅動或 Vulkan Loader 的問題，在部分系統上啟用此功能可能"
-"導致當機。請參考 https://github.com/godotengine/godot/issues/95967"
-
 msgid "``--accurate-breadcrumbs``"
 msgstr "``--accurate-breadcrumbs``"
 
@@ -699,18 +679,8 @@ msgstr ""
 msgid "``--benchmark``"
 msgstr "``--benchmark``"
 
-msgid "|editor| Benchmark the run time and print it to console."
-msgstr "|editor|對運作時間進行基準測試並將其列印到控制台。"
-
 msgid "``--benchmark-file <path>``"
 msgstr "``--doctool <path>``"
-
-msgid ""
-"|editor| Benchmark the run time and save it to a given file in JSON format. "
-"The path should be absolute."
-msgstr ""
-"|editor|對運作時間進行基準測試並將其以 JSON 格式儲存到給定檔案中。該路徑應該"
-"是絕對的。"
 
 msgid "``--test [--help]``"
 msgstr "``--test [--help]``"

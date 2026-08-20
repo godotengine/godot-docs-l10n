@@ -11,5 +11,85 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0106: The exported property is an explicit interface implementation"
+msgstr ""
+"GD0106: A propriedade exportada é uma implementação de interface explícita"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0106"
+msgstr "GD0106"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Non-breaking"
+msgstr "Não quebra compatibilidade (Non-breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"An explicit interface property implementation is annotated with the "
+"``[Export]`` attribute. Properties that implement an interface explicitly "
+"can't be exported."
+msgstr ""
+"Uma implementação explícita de propriedade de interface está anotada com o "
+"atributo ``[Export]``. Propriedades que implementam uma interface "
+"explicitamente não podem ser exportadas."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid ""
+"Godot doesn't allow exporting explicit interface property implementations. "
+"When an interface member is implemented explicitly, the member is hidden and "
+"consumers can't access them unless the type is converted to the interface "
+"first. Explicitly implemented members can also share the same name of other "
+"members in the type, so it could create naming conflicts with other exported "
+"members."
+msgstr ""
+"O Godot não permite a exportação de implementações explícitas de "
+"propriedades de interface. Quando um membro de interface é implementado "
+"explicitamente, o membro fica oculto e os consumidores não podem acessá-lo, "
+"a menos que o tipo seja convertido para a interface primeiro. Membros "
+"implementados explicitamente também podem compartilhar o mesmo nome de "
+"outros membros no tipo, o que poderia criar conflitos de nomenclatura com "
+"outros membros exportados."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid ""
+"To fix a violation of this rule, implement the interface implicitly or "
+"remove the ``[Export]`` attribute."
+msgstr ""
+"Para corrigir uma violação desta regra, implemente a interface "
+"implicitamente ou remova o atributo ``[Export]``."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Explicit interface property "
+"implementations can't be exported so they will be ignored by Godot, "
+"resulting in runtime errors."
+msgstr ""
+"Não suprima um aviso desta regra. Implementações explícitas de propriedades "
+"de interface não podem ser exportadas, portanto serão ignoradas pelo Godot, "
+"resultando em erros em tempo de execução."

@@ -29,6 +29,14 @@ msgstr ""
 "anteriormente será referenciado. Naturalmente, os recursos carregados devem "
 "ser sem estado (stateless)."
 
+msgid ""
+"This guide assumes the reader knows how to create C++ modules and Godot data "
+"types. If not, refer to this guide: :ref:`doc_custom_modules_in_cpp`"
+msgstr ""
+"Este guia pressupõe que o leitor saiba como criar módulos C++ e tipos de "
+"dados do Godot. Se não souber, consulte este "
+"guia: :ref:`doc_custom_modules_in_cpp`"
+
 msgid "References"
 msgstr "Referências"
 
@@ -83,6 +91,15 @@ msgstr ""
 "``ResourceFormatLoader``."
 
 msgid ""
+"ResourceFormatLoaders are classes which return all the necessary metadata "
+"for supporting new extensions in Godot. The class must return the format "
+"name and the extension string."
+msgstr ""
+"ResourceFormatLoaders são classes que retornam todos os metadados "
+"necessários para suportar novas extensões no Godot. A classe deve retornar o "
+"nome do formato e a string da extensão."
+
+msgid ""
 "In addition, ResourceFormatLoaders must convert file paths into resources "
 "with the ``load`` function. To load a resource, ``load`` must read and "
 "handle data serialization."
@@ -91,8 +108,27 @@ msgstr ""
 "recursos com a função ``load``. Para carregar um recurso, a função ``load`` "
 "deve ler e manipular a serialização de dados."
 
+msgid "resource_loader_json.h"
+msgstr "resource_loader_json.h"
+
+msgid "resource_loader_json.cpp"
+msgstr "resource_loader_json.cpp"
+
 msgid "Creating a ResourceFormatSaver"
 msgstr "Criando um ResourceFormatSaver"
+
+msgid ""
+"If you'd like to be able to edit and save a resource, you can implement a "
+"``ResourceFormatSaver``:"
+msgstr ""
+"Se você quiser ser capaz de editar e salvar um recurso, você pode "
+"implementar um ``ResourceFormatSaver``:"
+
+msgid "resource_saver_json.h"
+msgstr "resource_saver_json.h"
+
+msgid "resource_saver_json.cpp"
+msgstr "resource_saver_json.cpp"
 
 msgid "Creating custom data types"
 msgstr "Criando tipos de dados personalizados"
@@ -110,8 +146,21 @@ msgstr ""
 msgid "Here is an example of creating a custom datatype:"
 msgstr "Eis um exemplo de como criar um tipo de dados personalizado:"
 
+msgid "resource_json.h"
+msgstr "resource_json.h"
+
+msgid "resource_json.cpp"
+msgstr "resource_json.cpp"
+
 msgid "Considerations"
 msgstr "Considerações"
+
+msgid ""
+"Some libraries may not define certain common routines such as IO handling. "
+"Therefore, Godot call translations are required."
+msgstr ""
+"Algumas bibliotecas podem não definir certas rotinas comuns, como "
+"manipulação de E/S. Portanto, são necessárias traduções de chamadas do Godot."
 
 msgid ""
 "For example, here is the code for translating ``FileAccess`` calls into "
@@ -120,6 +169,23 @@ msgstr ""
 "Por exemplo, aqui está o código para traduzir chamadas de ``FileAccess`` em "
 "``std::istream``."
 
+msgid "`istream <https://cplusplus.com/reference/istream/istream/>`_"
+msgstr "`istream <https://cplusplus.com/reference/istream/istream/>`_"
+
+msgid ""
+"`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
+msgstr ""
+"`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
+
+msgid ""
+"`core/io/file_access.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/file_access.h>`_"
+msgstr ""
+"`core/io/file_access.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/file_access.h>`_"
+
 msgid "Registering the new file format"
 msgstr "Registrando o novo formato de arquivo"
 
@@ -127,9 +193,25 @@ msgid ""
 "Godot registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` handler. "
 "The handler selects the proper loader automatically when ``load`` is called."
 msgstr ""
-"O Godot registra um ``ResourcesFormatLoader`` com um identificador (handler) "
-"do tipo``ResourceLoader``. O handler seleciona o carregamento apropriado "
-"automaticamente quando a função ``load`` é chamada."
+"O Godot registra o ``ResourcesFormatLoader`` com um manipulador "
+"``ResourceLoader``. O manipulador seleciona automaticamente o carregador "
+"adequado quando ``load`` é chamado."
+
+msgid "register_types.h"
+msgstr "register_types.h"
+
+msgid "register_types.cpp"
+msgstr "register_types.cpp"
 
 msgid "Loading it on GDScript"
 msgstr "Carregando no GDScript"
+
+msgid ""
+"Save a file called ``demo.json`` with the following contents and place it in "
+"the project's root folder:"
+msgstr ""
+"Salve um arquivo chamado ``demo.json`` com o conteúdo a seguir e coloque-o "
+"na pasta raiz do projeto:"
+
+msgid "Then attach the following script to any node:"
+msgstr "Em seguida, anexe o seguinte script a qualquer nó:"

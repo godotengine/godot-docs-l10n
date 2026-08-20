@@ -94,7 +94,7 @@ msgid ""
 "whether the C# breaking change is *binary compatible* or *source compatible*:"
 msgstr ""
 "이 문서에서는 각 주요 변경 사항이 GDScript에 영향을 미치는지 여부와 C# 주요 "
-"변경 사항이 *바이너리 호환* 또는 *소스 호환*인지 여부를 나타냅니다."
+"변경 사항이 *바이너리 호환* \\또는 *소스 호환*\\인지 여부를 나타냅니다."
 
 msgid ""
 "**Binary compatible** - Existing binaries will load and execute successfully "
@@ -343,10 +343,6 @@ msgstr ""
 "속성 ``process_callback``가 ``callback_mode_process``로 이름이 바뀌고 기본 클"
 "래스 ``AnimationMixer``로 이동되었습니다."
 
-msgid "Property ``root_motion_track``  moved to base class ``AnimationMixer``"
-msgstr ""
-"``root_motion_track`` 속성이 기본 클래스 ``AnimationMixer``로 이동되었습니다."
-
 msgid ""
 "Property ``tree_root`` changes type from ``AnimationNode`` to "
 "``AnimationRootNode``"
@@ -381,7 +377,7 @@ msgid "`GH-79965`_"
 msgstr "`GH-79965`_"
 
 msgid "**RichTextLabel**"
-msgstr "ScoreLabel"
+msgstr "**RichTextLabel**"
 
 msgid ""
 "Method ``add_image`` adds new ``key``, ``pad``, ``tooltip``, and "

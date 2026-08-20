@@ -23,6 +23,9 @@ msgstr ""
 "relativamente seguro migrar para a versão 4.1. Esta página tem a intenção de "
 "cobrir tudo o que você precisa para prestar atenção ao migrar seu projeto."
 
+msgid "Breaking changes"
+msgstr "Alterações incompatíveis"
+
 msgid ""
 "If you are migrating from 4.0 to 4.1, the breaking changes listed here might "
 "affect you. Changes are grouped by areas/systems."
@@ -70,6 +73,9 @@ msgstr "Componentes Principais"
 
 msgid "Change"
 msgstr "Mudança"
+
+msgid "GDScript Compatible"
+msgstr "Compatível com GDScript"
 
 msgid "C# Binary Compatible"
 msgstr "Compatível com C# Binário"
@@ -171,6 +177,9 @@ msgstr ""
 "Alterado o tipo do retorno do método ``get_travel_path`` de "
 "``PackedStringArray`` para ``Array[StringName]``"
 
+msgid "2D nodes"
+msgstr "Nós 2D"
+
 msgid "**PathFollow2D**"
 msgstr "**PathFollow2D**"
 
@@ -179,6 +188,9 @@ msgstr "Propriedade ``lookahead`` removida"
 
 msgid "`GH-72842`_"
 msgstr "`GH-72842`_"
+
+msgid "3D nodes"
+msgstr "Nós 3D"
 
 msgid "**Geometry3D**"
 msgstr "**Geometria 3D**"
@@ -216,6 +228,9 @@ msgid ""
 msgstr ""
 "Adicionado novo parâmetro opcional ``use_model_front`` ao método "
 "``look_at_from_position``"
+
+msgid "GUI nodes"
+msgstr "Nós de GUI"
 
 msgid "**CodeEdit**"
 msgstr "**CodeEdit**"
@@ -432,6 +447,9 @@ msgstr "Plugins do editor"
 msgid "**AnimationTrackEditPlugin**"
 msgstr "**AnimationTrackEditPlugin**"
 
+msgid "Type ``AnimationTrackEditPlugin`` removed"
+msgstr "Tipo ``AnimationTrackEditPlugin`` removido"
+
 msgid "`GH-76413`_"
 msgstr "`GH-76413`_"
 
@@ -475,6 +493,16 @@ msgstr ""
 
 msgid "**EditorUndoRedoManager**"
 msgstr "**EditorUndoRedoManager**"
+
+msgid "Behavior changes"
+msgstr "Mudanças de comportamento"
+
+msgid ""
+"In 4.1, some behavior changes have been introduced, which might require you "
+"to adjust your project."
+msgstr ""
+"Na versão 4.1, algumas mudanças de comportamento foram introduzidas, o que "
+"pode exigir ajustes no seu projeto."
 
 msgid "**SubViewportContainer**"
 msgstr "**Contêiner de Sub Janela de Exibição**"
@@ -535,8 +563,14 @@ msgstr ""
 "recompiladas para o Godot 4.1 (usando a ramificação ``4.1`` do godot-cpp), "
 "com uma pequena alteração em seu código-fonte."
 
+msgid "In Godot 4.0, your \"entry_symbol\" function looks something like this:"
+msgstr "No Godot 4.0, sua função \"entry_symbol\" se parece com isto:"
+
 msgid "However, for Godot 4.1, it should look like:"
 msgstr "Entretanto, para o Godot 4.1, deve ficar assim:"
+
+msgid "There are two small changes:"
+msgstr "Existem duas pequenas alterações:"
 
 msgid ""
 "The first argument changes from ``const GDExtensionInterface *p_interface`` "
@@ -546,11 +580,11 @@ msgstr ""
 "para ``GDExtensionInterfaceGetProcAddress p_get_proc_address``"
 
 msgid ""
-"The constructor for the `init_obj` variable now receives "
-"``p_get_proc_address`` as its first parameter"
+"You also need to add an extra ``compatibility_minimum`` line to your "
+"``.gdextension`` file, so that it looks something like:"
 msgstr ""
-"O construtor da variável `init_obj` agora recebe ``p_get_proc_address`` como "
-"seu primeiro parâmetro"
+"Você também precisa adicionar uma linha ``compatibility_minimum`` extra ao "
+"seu arquivo ``.gdextension``, para que ele se pareça com:"
 
 msgid ""
 "This lets Godot know that your GDExtension has been updated and is safe to "

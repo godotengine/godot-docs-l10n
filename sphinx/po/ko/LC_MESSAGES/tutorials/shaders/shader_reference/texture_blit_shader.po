@@ -1,0 +1,115 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Render modes"
+msgstr "렌더러 모드"
+
+msgid "Render mode"
+msgstr "렌더링 모드"
+
+msgid "Description"
+msgstr "설명"
+
+msgid "**blend_disabled**"
+msgstr "**blend_disabled**"
+
+msgid "**blend_mix**"
+msgstr "**블렌드_믹스**"
+
+msgid "**blend_add**"
+msgstr "**블렌드_추가**"
+
+msgid "Additive blend mode."
+msgstr "덧셈 블렌드 모드."
+
+msgid "**blend_sub**"
+msgstr "**blend_sub**"
+
+msgid "Subtractive blend mode."
+msgstr "빼기 블렌드 모드."
+
+msgid "**blend_mul**"
+msgstr "**blend_mul**"
+
+msgid "Multiplicative blend mode."
+msgstr "곱셈 블렌드 모드."
+
+msgid "Built-ins"
+msgstr "Built-In(내장)"
+
+msgid ""
+"Values marked as ``in`` are read-only. Values marked as ``out`` can "
+"optionally be written to and will not necessarily contain sensible values. "
+"Values marked as ``inout`` provide a sensible default value, and can "
+"optionally be written to. Samplers cannot be written to so they are not "
+"marked."
+msgstr ""
+"``in``로 표시된 값은 읽기 전용입니다. ``out``로 표시된 값은 선택적으로 쓸 수 "
+"있으며 반드시 합리적인 값을 포함하지는 않습니다. ``inout``로 표시된 값은 적절"
+"한 기본값을 제공하며 선택적으로 쓸 수 있습니다. 샘플러는 기록할 수 없으므로 "
+"표시되지 않습니다."
+
+msgid "Global built-ins"
+msgstr "벡터 내장 타입"
+
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr ""
+"전역 내장 기능은 사용자 정의 기능을 포함하여 어디에서나 사용할 수 있습니다."
+
+msgid "Built-in"
+msgstr "내장"
+
+msgid "in float **TIME**"
+msgstr "부동 소수점 **TIME**"
+
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"엔진이 시작된 이후의 전역 시간(초)입니다. ``3,600``초마다 반복됩니다"
+"(:ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` 설정으로 변경 가"
+"능). :ref:`time_scale<class_Engine_property_time_scale>`의 영향을 받지만 일"
+"시 중지의 영향을 받지는 않습니다. 시간 척도의 영향을 받지 않는 ``TIME`` 변수"
+"가 필요한 경우 고유한 :ref:`global shader "
+"uniform<doc_shading_language_global_uniforms>`를 추가하고 각 프레임을 업데이"
+"트하세요."
+
+msgid "in float **PI**"
+msgstr "부동 소수점 **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"``PI`` 상수(``3.141592``). 원의 지름과 반 바퀴의 라디안 수에 대한 원주 비율입"
+"니다."
+
+msgid "in float **TAU**"
+msgstr "부동 **TAU**"
+
+msgid "in float **E**"
+msgstr "부동 **E**"
+
+msgid "in vec4 **FRAGCOORD**"
+msgstr "vec4에서 **FRAGCOORD**"
+
+msgid "in vec2 **UV**"
+msgstr "vec2 **UV**\\에서"

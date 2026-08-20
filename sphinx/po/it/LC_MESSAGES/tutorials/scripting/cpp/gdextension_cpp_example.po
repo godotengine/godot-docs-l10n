@@ -55,13 +55,6 @@ msgstr ""
 "attraverso `GitHub Actions <https://github.com/godotengine/godot-cpp-"
 "template/blob/main/.github/workflows/builds.yml>`__)."
 
-msgid ""
-"Optional: Publish on the `Godot Asset Library <https://godotengine.org/asset-"
-"library/asset>`__."
-msgstr ""
-"Facoltativo: pubblicarla sulla `Libreria dei contenuti di Godot <https://"
-"godotengine.org/asset-library/asset>`__."
-
 msgid "Example project"
 msgstr "Progetto d'esempio"
 
@@ -393,22 +386,6 @@ msgstr "gdextension_cpp_example/src/register_types.h"
 
 msgid "Compiling the plugin"
 msgstr "Compilare l'estensione"
-
-msgid ""
-"To compile the project we need to define how SCons using should compile it "
-"using an ``SConstruct`` file which references the one in ``godot-cpp``. "
-"Writing it from scratch is outside the scope of this tutorial, but you "
-"can :download:`the SConstruct file we prepared <files/cpp_example/"
-"SConstruct>`. We'll cover a more customizable, detailed example on how to "
-"use these build files in a subsequent tutorial."
-msgstr ""
-"Per compilare il progetto, dobbiamo definire come SCons deve compilarlo "
-"utilizzando un file ``SConstruct`` che fa riferimento a quello presente in "
-"``godot-cpp``. Scriverlo da zero è fuori lo scopo di questo tutorial, ma è "
-"possibile scaricare il :download:`file SConstruct che abbiamo preparato "
-"<files/cpp_example/SConstruct>`. Tratteremo un esempio più dettagliato e "
-"personalizzabile su come utilizzare questi file di build in un tutorial "
-"successivo."
 
 msgid ""
 "This ``SConstruct`` file was written to be used with the latest ``godot-"
@@ -768,6 +745,9 @@ msgstr ""
 
 msgid "Every second, we output our position to the console."
 msgstr "Ogni secondo, stampiamo la nostra posizione nella console."
+
+msgid "Next steps"
+msgstr "I prossimi passaggi"
 
 msgid ""
 "We hope the above example showed you the basics. You can build upon this "

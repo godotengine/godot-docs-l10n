@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Customizing the interface"
+msgstr "Personalizando a interface"
+
 msgid ""
 "Godot's interface lives in a single window by default. Since Godot 4.0, you "
 "can split several elements to separate windows to better make use of multi-"
@@ -20,12 +23,18 @@ msgstr ""
 "4.0, é possível dividir vários elementos em janelas separadas para melhor "
 "aproveitar configurações com vários monitores."
 
+msgid "Moving and resizing docks"
+msgstr "Movendo e redimensionando painéis"
+
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically:"
 msgstr ""
 "Clique e arraste a borda de qualquer painel de encaixe para redimensioná-lo "
 "horizontal ou verticalmente:"
+
+msgid "Resizing a dock in the editor"
+msgstr "Redimensionando um painel no editor"
 
 msgid ""
 "Click the \"3 vertical dots\" icon at the top of any dock to change its "
@@ -35,6 +44,9 @@ msgstr ""
 "Clique no ícone de \"3 pontos verticais\" no topo de qualquer painel para "
 "alterar sua localização ou dividi-lo em uma janela separada escolhendo "
 "**Tornar Flutuante** no submenu que aparecer:"
+
+msgid "Moving a dock in the editor"
+msgstr "Movendo um painel no editor"
 
 msgid ""
 "To move a floating dock back to the editor window, close the dock window "
@@ -103,6 +115,9 @@ msgstr ""
 "Alternativamente, você pode pressionar :kbd:`Alt + F4` enquanto a janela "
 "separada estiver em foco."
 
+msgid "Customizing editor layouts"
+msgstr "Personalizando layouts do editor"
+
 msgid ""
 "You may want to save and load a dock configuration depending on the kind of "
 "task you're working on. For instance, when working on animating a character, "
@@ -125,6 +140,15 @@ msgstr ""
 "que você gostaria de salvar. As seguintes alterações são mantidas no layout "
 "salvo:"
 
+msgid "Moving a dock."
+msgstr "Movendo um painel."
+
+msgid "Resizing a dock."
+msgstr "Redimensionando um painel."
+
+msgid "Making a dock floating."
+msgstr "Tornando um painel flutuante."
+
 msgid "Changing a floating dock's position or size."
 msgstr "Alterando a posição ou o tamanho de um painel flutuante."
 
@@ -146,6 +170,28 @@ msgstr ""
 "**Layout do Editor > Salvar Layout...**. Digite um nome para o layout e "
 "clique em **Salvar**. Se você já salvou um layout do editor, pode optar por "
 "substituir um layout existente usando a lista."
+
+msgid ""
+"After making changes, open the **Editor** menu at the top of the editor then "
+"choose **Editor Layouts**. In the dropdown list, you will see a list of "
+"saved editor layouts, plus **Default** which is a hardcoded editor layout "
+"that can't be removed. The default layout matches a fresh Godot installation "
+"with no changes made to the docks' positions and sizes, and no floating "
+"docks."
+msgstr ""
+"Após fazer alterações, abra o menu **Editor** no topo do editor e escolha "
+"**Editor Layouts**. Na lista suspensa, você verá uma lista de layouts de "
+"editor salvos, além de **Default** (Padrão), que é um layout de editor fixo "
+"que não pode ser removido. O layout padrão corresponde a uma instalação nova "
+"do Godot sem alterações feitas nas posições e tamanhos das docas, e sem "
+"docas flutuantes."
+
+msgid ""
+"You can remove a layout using the **Delete** option in the **Editor "
+"Layouts** dropdown."
+msgstr ""
+"Você pode remover um layout usando a opção **Excluir** no menu suspenso "
+"**Layouts do Editor**."
 
 msgid ""
 "If you name the saved layout ``Default`` (case-sensitive), the default "
@@ -174,6 +220,9 @@ msgstr ""
 "Os layouts do editor são salvos em um arquivo chamado ``editor_layouts.cfg`` "
 "no caminho de configuração do :ref:`doc_data_paths_editor_data_paths`."
 
+msgid "Customizing editor settings"
+msgstr "Personalizando as configurações do editor"
+
 msgid ""
 "In the **Editor** menu at the top of the editor, you can find an **Editor "
 "Settings** option. This opens a window similar to the Project Settings, but "
@@ -185,6 +234,9 @@ msgstr ""
 "Configurações do Projeto, mas com configurações usadas pelo editor. Essas "
 "configurações são compartilhadas em todos os projetos e não são salvas nos "
 "arquivos do projeto."
+
+msgid "The Editor Settings window"
+msgstr "A janela Configurações do Editor"
 
 msgid "Some commonly changed settings are:"
 msgstr "Algumas configurações comumente alteradas são:"

@@ -11,5 +11,73 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid ""
+"GD0109: The '[ExportToolButton]' attribute cannot be used with another "
+"'[Export]' attribute"
+msgstr ""
+"GD0109: O atributo '[ExportToolButton]' não pode ser usado junto com outro "
+"atributo '[Export]'"
+
+msgid "**Rule ID**"
+msgstr "**ID da Regra**"
+
+msgid "GD0109"
+msgstr "GD0109"
+
+msgid "**Category**"
+msgstr "**Categoria**"
+
 msgid "Usage"
 msgstr "Uso"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+"**A correção altera a compatibilidade (breaking) ou não altera (non-"
+"breaking)**"
+
+msgid "Non-breaking"
+msgstr "Não quebra compatibilidade (Non-breaking)"
+
+msgid "**Enabled by default**"
+msgstr "**Ativado por padrão**"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Cause"
+msgstr "Causa"
+
+msgid ""
+"A property is annotated with both the ``[ExportToolButton]`` and the "
+"``[Export]`` attributes."
+msgstr ""
+"Uma propriedade está anotada tanto com o atributo ``[ExportToolButton]`` "
+"quanto com o ``[Export]``."
+
+msgid "Rule description"
+msgstr "Descrição da regra"
+
+msgid ""
+"The ``[ExportToolButton]`` attribute already implies exporting the member, "
+"so the ``[Export]`` is unnecessary."
+msgstr ""
+"O atributo ``[ExportToolButton]`` já implica a exportação do membro, "
+"portanto o ``[Export]`` é desnecessário."
+
+msgid "How to fix violations"
+msgstr "Como corrigir violações"
+
+msgid "To fix a violation of this rule, remove the ``[Export]`` attribute."
+msgstr ""
+"Para corrigir uma violação desta regra, remova o atributo ``[Export]``."
+
+msgid "When to suppress warnings"
+msgstr "Quando suprimir avisos"
+
+msgid ""
+"Do not suppress a warning from this rule. Multiple export attributes may "
+"lead to duplicated members, resulting in unexpected runtime errors."
+msgstr ""
+"Não suprima um aviso desta regra. Múltiplos atributos de exportação podem "
+"levar a membros duplicados, resultando em erros inesperados em tempo de "
+"execução."

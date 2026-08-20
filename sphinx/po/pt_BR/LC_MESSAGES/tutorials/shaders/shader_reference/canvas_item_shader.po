@@ -14,6 +14,23 @@ msgstr ""
 msgid "CanvasItem shaders"
 msgstr "Shaders CanvasItem"
 
+msgid ""
+"CanvasItem shaders are used to draw all 2D elements in Godot. These include "
+"all nodes that inherit from CanvasItems, and all GUI elements."
+msgstr ""
+"Shaders de CanvasItem são usados para desenhar todos os elementos 2D no "
+"Godot. Isso inclui todos os nós que herdam de CanvasItems e todos os "
+"elementos de GUI."
+
+msgid ""
+"CanvasItem shaders contain fewer built-in variables and functionality "
+"than :ref:`Spatial shaders<doc_spatial_shader>`, but they maintain the same "
+"basic structure with vertex, fragment, and light processor functions."
+msgstr ""
+"Shaders de CanvasItem contêm menos variáveis integradas e funcionalidades do "
+"que os :ref:`Shaders espaciais (Spatial)<doc_spatial_shader>`, mas mantêm a "
+"mesma estrutura básica com funções processadoras de vértice, fragmento e luz."
+
 msgid "Render modes"
 msgstr "Modos de renderização"
 
@@ -26,14 +43,26 @@ msgstr "Descrição"
 msgid "**blend_mix**"
 msgstr "**blend_mix**"
 
+msgid "Mix blend mode (alpha is transparency), default."
+msgstr "Modo de mesclagem Mix (alfa é transparência), padrão."
+
 msgid "**blend_add**"
 msgstr "**blend_add**"
+
+msgid "Additive blend mode."
+msgstr "Modo de mesclagem Aditivo (additive)."
 
 msgid "**blend_sub**"
 msgstr "**blend_sub**"
 
+msgid "Subtractive blend mode."
+msgstr "Modo de mesclagem Subtrativo (subtractive)."
+
 msgid "**blend_mul**"
 msgstr "**blend_mul**"
+
+msgid "Multiplicative blend mode."
+msgstr "Modo de mesclagem Multiplicativo (multiplicative)."
 
 msgid "**blend_premul_alpha**"
 msgstr "**blend_premul_alpha**"
@@ -44,47 +73,697 @@ msgstr "Alfa previamente multiplicado."
 msgid "**blend_disabled**"
 msgstr "**blend_disabled**"
 
+msgid "Disable blending, values (including alpha) are written as-is."
+msgstr ""
+"Desativa a mesclagem (blending), os valores (incluindo o alfa) são gravados "
+"como estão."
+
 msgid "**unshaded**"
 msgstr "**unshaded**"
+
+msgid "Result is just albedo. No lighting/shading happens in material."
+msgstr ""
+"O resultado é apenas o albedo. Nenhum cálculo de iluminação/sombreamento "
+"acontece no material."
 
 msgid "**light_only**"
 msgstr "**light_only**"
 
+msgid "Only draw in the light pass."
+msgstr "Desenha apenas na passagem de luz (light pass)."
+
 msgid "**skip_vertex_transform**"
 msgstr "**skip_vertex_transform**"
+
+msgid ""
+"``VERTEX`` needs to be transformed manually in the ``vertex()`` function."
+msgstr ""
+"``VERTEX`` precisa ser transformado manualmente na função ``vertex()``."
 
 msgid "**world_vertex_coords**"
 msgstr "**world_vertex_coords**"
 
+msgid "``VERTEX`` is modified in world coordinates instead of local."
+msgstr ""
+"``VERTEX`` é modificado em coordenadas do mundo (world coordinates) em vez "
+"de locais."
+
 msgid "Built-ins"
 msgstr "Embutidos"
+
+msgid ""
+"Values marked as ``in`` are read-only. Values marked as ``out`` can "
+"optionally be written to and will not necessarily contain sensible values. "
+"Values marked as ``inout`` provide a sensible default value, and can "
+"optionally be written to. Samplers cannot be written to so they are not "
+"marked."
+msgstr ""
+"Valores marcados como ``in`` são somente leitura. Valores marcados como "
+"``out`` podem opcionalmente ser gravados e não conterão necessariamente "
+"valores sensíveis. Valores marcados como ``inout`` fornecem um valor padrão "
+"sensível e podem opcionalmente ser gravados. Samplers não podem ser "
+"gravados, portanto não são marcados."
+
+msgid ""
+"Not all built-ins are available in all processing functions. To access a "
+"vertex built-in from the ``fragment()`` function, you can use "
+"a :ref:`varying <doc_shading_language_varyings>`. The same applies for "
+"accessing fragment built-ins from the ``light()`` function."
+msgstr ""
+"Nem todas as funções integradas (built-ins) estão disponíveis em todas as "
+"funções de processamento. Para acessar uma função integrada de vértice a "
+"partir da função ``fragment()``, você pode usar um :ref:`varying "
+"<doc_shading_language_varyings>`. O mesmo se aplica para acessar funções "
+"integradas de fragmento a partir da função ``light()``."
 
 msgid "Global built-ins"
 msgstr "Built-ins globais"
 
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr ""
+"As funções integradas globais estão disponíveis em todos os lugares, "
+"incluindo em funções personalizadas."
+
 msgid "Built-in"
 msgstr "Integrado"
+
+msgid "in float **TIME**"
+msgstr "in float **TIME**"
+
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"Tempo global desde que o motor foi iniciado, em segundos. Ele se repete a "
+"cada ``3.600`` segundos (o que pode ser alterado com a "
+"configuração :ref:`rollover<class_ProjectSettings_property_rendering/limits/"
+"time/time_rollover_secs>`). É afetado "
+"pelo :ref:`time_scale<class_Engine_property_time_scale>`, mas não pelo "
+"congelamento (pausa). Se você precisar de uma variável ``TIME`` que não seja "
+"afetada pela escala de tempo, adicione seu próprio :ref:`uniform global de "
+"shader<doc_shading_language_global_uniforms>` e atualize-o a cada quadro."
+
+msgid "in float **PI**"
+msgstr "in float **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"Uma constante ``PI`` (``3.141592``). A razão entre a circunferência de um "
+"círculo e seu diâmetro e o número de radianos em uma meia volta."
+
+msgid "in float **TAU**"
+msgstr "in float **TAU**"
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). Equivalent to ``PI * 2`` and the number "
+"of radians in a full turn."
+msgstr ""
+"Uma constante ``TAU`` (``6.283185``). Equivalente a ``PI * 2`` e o número de "
+"radianos em uma volta completa."
+
+msgid "in float **E**"
+msgstr "in float **E**"
+
+msgid ""
+"An ``E`` constant (``2.718281``). Euler's number, the base of the natural "
+"logarithm."
+msgstr ""
+"Uma constante ``E`` (``2.718281``). O número de Euler, a base do logaritmo "
+"natural."
 
 msgid "Vertex built-ins"
 msgstr "Vertex embutidos"
 
+msgid ""
+"Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
+"relative to the Node2D's origin). If not written to, these values will not "
+"be modified and be passed through as they came."
+msgstr ""
+"Os dados dos vértices (``VERTEX``) são apresentados no espaço local "
+"(coordenadas de pixel, relativas à origem do Node2D). Se não forem gravados, "
+"esses valores não serão modificados e serão passados adiante exatamente como "
+"vieram."
+
+msgid ""
+"The user can disable the built-in model to world transform (world to screen "
+"and projection will still happen later) and do it manually with the "
+"following code:"
+msgstr ""
+"O usuário pode desativar a transformação integrada de modelo para o mundo "
+"(as transformações de mundo para a tela e de projeção ainda ocorrerão mais "
+"tarde) e fazê-la manualmente com o seguinte código:"
+
+msgid ""
+"Other built-ins, such as ``UV`` and ``COLOR``, are also passed through to "
+"the ``fragment()`` function if not modified."
+msgstr ""
+"Outros elementos integrados, como ``UV`` e ``COLOR``, também são passados "
+"para a função ``fragment()`` se não forem modificados."
+
+msgid ""
+"For instancing, the ``INSTANCE_CUSTOM`` variable contains the instance "
+"custom data. When using particles, this information is usually:"
+msgstr ""
+"Para instanciação, a variável ``INSTANCE_CUSTOM`` contém os dados "
+"personalizados da instância. Ao usar partículas, essa informação geralmente "
+"é:"
+
+msgid "**x**: Rotation angle in radians."
+msgstr "**x**: Ângulo de rotação em radianos."
+
+msgid "**y**: Phase during lifetime (``0.0`` to ``1.0``)."
+msgstr "**y**: Fase durante o tempo de vida (``0.0`` a ``1.0``)."
+
+msgid "**z**: Animation frame."
+msgstr "**z**: Quadro da animação."
+
+msgid "in mat4 **MODEL_MATRIX**"
+msgstr "in mat4 **MODEL_MATRIX**"
+
+msgid ""
+"Local space to world space transform. World space is the coordinates you "
+"normally use in the editor."
+msgstr ""
+"Transformação do espaço local para o espaço do mundo. O espaço do mundo "
+"corresponde às coordenadas que você normalmente usa no editor."
+
+msgid "in mat4 **CANVAS_MATRIX**"
+msgstr "in mat4 **CANVAS_MATRIX**"
+
+msgid ""
+"World space to canvas space transform. In canvas space the origin is the "
+"upper-left corner of the screen and coordinates range from ``(0.0, 0.0)`` to "
+"viewport size."
+msgstr ""
+"Transformação do espaço do mundo para o espaço da tela (canvas space). No "
+"espaço da tela, a origem fica no canto superior esquerdo da tela e as "
+"coordenadas variam de ``(0.0, 0.0)`` até o tamanho da viewport."
+
+msgid "in mat4 **SCREEN_MATRIX**"
+msgstr "in mat4 **SCREEN_MATRIX**"
+
+msgid ""
+"Canvas space to clip space transform. In clip space coordinates range from "
+"``(-1.0, -1.0)`` to ``(1.0, 1.0).``"
+msgstr ""
+"Transformação do espaço de tela (canvas space) para o espaço de corte (clip "
+"space). No espaço de corte, as coordenadas variam de ``(-1.0, -1.0)`` a "
+"``(1.0, 1.0).``"
+
+msgid "in int **INSTANCE_ID**"
+msgstr "in int **INSTANCE_ID**"
+
+msgid "Instance ID for instancing."
+msgstr "ID da instância para instanciação."
+
+msgid "in vec4 **INSTANCE_CUSTOM**"
+msgstr "in vec4 **INSTANCE_CUSTOM**"
+
+msgid "Instance custom data."
+msgstr "Dados personalizados da instância."
+
+msgid "in bool **AT_LIGHT_PASS**"
+msgstr "in bool **AT_LIGHT_PASS**"
+
+msgid "Always ``false``."
+msgstr "Sempre ``false``."
+
+msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
+msgstr "in vec2 **TEXTURE_PIXEL_SIZE**"
+
+msgid ""
+"Normalized pixel size of the default 2D texture. For a Sprite2D with a "
+"texture of size 64×32 pixels, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / 64.0, "
+"1.0 / 32.0)``."
+msgstr ""
+"Tamanho de pixel normalizado da textura 2D padrão. Para um Sprite2D com uma "
+"textura de tamanho 64×32 pixels, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / 64.0, "
+"1.0 / 32.0)``."
+
+msgid "inout vec2 **VERTEX**"
+msgstr "inout vec2 **VERTEX**"
+
+msgid "Vertex position, in local space."
+msgstr "Posição do vértice, no espaço local."
+
+msgid "in int **VERTEX_ID**"
+msgstr "in int **VERTEX_ID**"
+
+msgid "The index of the current vertex in the vertex buffer."
+msgstr "O índice do vértice atual no buffer de vértices."
+
+msgid "inout vec2 **UV**"
+msgstr "inout vec2 **UV**"
+
+msgid "Normalized texture coordinates. Range from ``0.0`` to ``1.0``."
+msgstr "Coordenadas de textura normalizadas. Variam de ``0.0`` a ``1.0``."
+
+msgid "inout vec4 **COLOR**"
+msgstr "inout vec4 **COLOR**"
+
+msgid ""
+"Color from vertex primitive multiplied by the "
+"CanvasItem's :ref:`modulate<class_CanvasItem_property_modulate>` multiplied "
+"by "
+"CanvasItem's :ref:`self_modulate<class_CanvasItem_property_self_modulate>`."
+msgstr ""
+"Cor proveniente da primitiva do vértice multiplicada pela "
+"propriedade :ref:`modulate<class_CanvasItem_property_modulate>` do "
+"CanvasItem multiplicada pela "
+"propriedade :ref:`self_modulate<class_CanvasItem_property_self_modulate>` do "
+"CanvasItem."
+
+msgid "inout float **POINT_SIZE**"
+msgstr "inout float **POINT_SIZE**"
+
+msgid "Point size for point drawing."
+msgstr "Tamanho do ponto para desenho de pontos."
+
+msgid "in vec4 **CUSTOM0**"
+msgstr "in vec4 **CUSTOM0**"
+
+msgid "Custom value from vertex primitive."
+msgstr "Valor personalizado da primitiva do vértice."
+
+msgid "in vec4 **CUSTOM1**"
+msgstr "in vec4 **CUSTOM1**"
+
 msgid "Fragment built-ins"
 msgstr "Fragmentos embutidos"
+
+msgid "COLOR and TEXTURE"
+msgstr "COLOR e TEXTURE"
+
+msgid "The built-in variable ``COLOR`` is used for a few things:"
+msgstr "A variável integrada ``COLOR`` é usada para algumas coisas:"
+
+msgid ""
+"In the ``vertex()`` function, ``COLOR`` contains the color from the vertex "
+"primitive multiplied by the "
+"CanvasItem's :ref:`modulate<class_CanvasItem_property_modulate>` multiplied "
+"by the "
+"CanvasItem's :ref:`self_modulate<class_CanvasItem_property_self_modulate>`."
+msgstr ""
+"Na função ``vertex()``, ``COLOR`` contém a cor da primitiva do vértice "
+"multiplicada pela "
+"propriedade :ref:`modulate<class_CanvasItem_property_modulate>` do "
+"CanvasItem multiplicada pela "
+"propriedade :ref:`self_modulate<class_CanvasItem_property_self_modulate>` do "
+"CanvasItem."
+
+msgid ""
+"In the ``fragment()`` function, the input value ``COLOR`` is that same value "
+"multiplied by the color from the default ``TEXTURE`` (if present)."
+msgstr ""
+"Na função ``fragment()``, o valor de entrada ``COLOR`` é esse mesmo valor "
+"multiplicado pela cor da ``TEXTURE`` padrão (se houver)."
+
+msgid "In the ``fragment()`` function, ``COLOR`` is also the final output."
+msgstr "Na função ``fragment()``, ``COLOR`` também é a saída final."
+
+msgid ""
+"Certain nodes (for example, :ref:`Sprite2D <class_Sprite2D>`) display a "
+"texture by default, for example :ref:`texture "
+"<class_Sprite2D_property_texture>`. When using a custom ``fragment()`` "
+"function, you have a few options on how to sample this texture."
+msgstr ""
+"Certos nós (por exemplo, :ref:`Sprite2D <class_Sprite2D>`) exibem uma "
+"textura por padrão, por exemplo, :ref:`texture "
+"<class_Sprite2D_property_texture>`. Ao usar uma função ``fragment()`` "
+"personalizada, você tem algumas opções de como amostrar essa textura."
+
+msgid ""
+"To read only the contents of the default texture, ignoring the vertex "
+"``COLOR``:"
+msgstr ""
+"Para ler apenas o conteúdo da textura padrão, ignorando a ``COLOR`` do "
+"vértice:"
+
+msgid ""
+"To read the contents of the default texture multiplied by vertex ``COLOR``:"
+msgstr ""
+"Para ler o conteúdo da textura padrão multiplicado pela ``COLOR`` do vértice:"
+
+msgid ""
+"To read only the vertex ``COLOR`` in ``fragment()``, ignoring the main "
+"texture, you must pass ``COLOR`` as a varying, then read it in "
+"``fragment()``:"
+msgstr ""
+"Para ler apenas a ``COLOR`` do vértice na função ``fragment()``, ignorando a "
+"textura principal, você deve passar ``COLOR`` como uma varying e, em "
+"seguida, lê-la na função ``fragment()``:"
+
+msgid "NORMAL"
+msgstr "NORMAL"
+
+msgid ""
+"Similarly, if a normal map is used in the :ref:`CanvasTexture "
+"<class_CanvasTexture>`, Godot uses it by default and assigns its value to "
+"the built-in ``NORMAL`` variable. If you are using a normal map meant for "
+"use in 3D, it will appear inverted. In order to use it in your shader, you "
+"must assign it to the ``NORMAL_MAP`` property. Godot will handle converting "
+"it for use in 2D and overwriting ``NORMAL``."
+msgstr ""
+"Da mesma forma, se um mapa de normais for usado no :ref:`CanvasTexture "
+"<class_CanvasTexture>`, o Godot o usará por padrão e atribuirá seu valor à "
+"variável integrada ``NORMAL``. Se você estiver usando um mapa de normais "
+"voltado para 3D, ele aparecerá invertido. Para usá-lo em seu shader, você "
+"deve atribuí-lo à propriedade ``NORMAL_MAP``. O Godot cuidará de convertê-lo "
+"para uso em 2D e de sobrescrever a variável ``NORMAL``."
+
+msgid "in vec4 **FRAGCOORD**"
+msgstr "in vec4 **FRAGCOORD**"
+
+msgid ""
+"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
+"viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``. Bottom-"
+"right of the viewport is ``(1.0, 1.0)``."
+msgstr ""
+"Coordenada do centro do pixel. No espaço da tela. ``xy`` especifica a "
+"posição na viewport. O canto superior esquerdo da viewport é a origem, "
+"``(0.0, 0.0)``. O canto inferior direito da viewport é ``(1.0, 1.0)``."
+
+msgid "in vec2 **SCREEN_PIXEL_SIZE**"
+msgstr "in vec2 **SCREEN_PIXEL_SIZE**"
+
+msgid "Size of individual pixels. Equal to the inverse of resolution."
+msgstr "Tamanho dos pixels individuais. Equivalente ao inverso da resolução."
+
+msgid "in vec4 **REGION_RECT**"
+msgstr "in vec4 **REGION_RECT**"
+
+msgid ""
+"Visible area of the sprite region in format ``(x, y, width, height)``. "
+"Varies according to Sprite2D's ``region_enabled`` property. Values are "
+"normalized; for example, a 600×400 region on a 1000×800 texture with a "
+"100×100 offset would be ``vec4(0.1, 0.125, 0.6, 0.5)``. Values may exceed "
+"the 0.0 to 1.0 range if the X/Y offset is negative, or if the size exceeds "
+"the texture's size."
+msgstr ""
+"Área visível da região do sprite no formato ``(x, y, largura, altura)``. "
+"Varia de acordo com a propriedade ``region_enabled`` do Sprite2D. Os valores "
+"são normalizados; por exemplo, uma região de 600×400 em uma textura de "
+"1000×800 com um deslocamento (offset) de 100×100 seria ``vec4(0.1, 0.125, "
+"0.6, 0.5)``. Os valores podem exceder o intervalo de 0.0 a 1.0 se o "
+"deslocamento X/Y for negativo ou se o tamanho exceder o tamanho da textura."
+
+msgid "in vec2 **POINT_COORD**"
+msgstr "in vec2 **POINT_COORD**"
+
+msgid "Coordinate for drawing points in the 0.0 to 1.0 range."
+msgstr "Coordenada para desenhar pontos no intervalo de 0.0 a 1.0."
 
 msgid "sampler2D **TEXTURE**"
 msgstr "sampler2D **TEXTURE**"
 
+msgid "Default 2D texture."
+msgstr "Textura 2D padrão."
+
+msgid "sampler2D **SPECULAR_SHININESS_TEXTURE**"
+msgstr "sampler2D **SPECULAR_SHININESS_TEXTURE**"
+
+msgid "Specular shininess texture of this object."
+msgstr "Textura de brilho especular (specular shininess) deste objeto."
+
+msgid "in vec4 **SPECULAR_SHININESS**"
+msgstr "in vec4 **SPECULAR_SHININESS**"
+
+msgid "Specular shininess color, as sampled from the texture."
+msgstr "Cor do brilho especular, conforme amostrada da textura."
+
+msgid "in vec2 **UV**"
+msgstr "in vec2 **UV**"
+
+msgid ""
+"UV from the ``vertex()`` function. For a Sprite2D with region enabled, this "
+"will sample the entire texture. Use ``REGION_RECT`` instead to sample only "
+"the region defined in the Sprite2D's properties."
+msgstr ""
+"UV vinda da função ``vertex()``. Para um Sprite2D com a região ativada "
+"(region enabled), isso amostrará a textura inteira. Use ``REGION_RECT`` em "
+"vez disso para amostrar apenas a região definida nas propriedades do "
+"Sprite2D."
+
+msgid "in vec2 **SCREEN_UV**"
+msgstr "in vec2 **SCREEN_UV**"
+
+msgid "Screen UV coordinate for the current pixel."
+msgstr "Coordenada UV da tela para o pixel atual."
+
 msgid "sampler2D **SCREEN_TEXTURE**"
 msgstr "sampler2D **SCREEN_TEXTURE**"
+
+msgid ""
+"Removed in Godot 4. Use a ``sampler2D`` with ``hint_screen_texture`` instead."
+msgstr ""
+"Removido no Godot 4. Use um ``sampler2D`` com ``hint_screen_texture`` em vez "
+"disso."
+
+msgid "inout vec3 **NORMAL**"
+msgstr "inout vec3 **NORMAL**"
+
+msgid "Normal read from ``NORMAL_TEXTURE``. Writable."
+msgstr "Normal lida de ``NORMAL_TEXTURE``. Gravável."
+
+msgid "sampler2D **NORMAL_TEXTURE**"
+msgstr "sampler2D **NORMAL_TEXTURE**"
+
+msgid "Default 2D normal texture."
+msgstr "Textura de normais 2D padrão."
+
+msgid "out vec3 **NORMAL_MAP**"
+msgstr "out vec3 **NORMAL_MAP**"
+
+msgid ""
+"Configures normal maps meant for 3D for use in 2D. If used, overrides "
+"``NORMAL``."
+msgstr ""
+"Configura mapas de normais voltados para 3D para uso em 2D. Se usado, "
+"substitui ``NORMAL``."
+
+msgid "out float **NORMAL_MAP_DEPTH**"
+msgstr "out float **NORMAL_MAP_DEPTH**"
+
+msgid "Normal map depth for scaling."
+msgstr "Profundidade do mapa de normais para escalonamento."
+
+msgid "Pixel position in screen space."
+msgstr "Posição do pixel no espaço da tela."
+
+msgid "inout vec2 **SHADOW_VERTEX**"
+msgstr "inout vec2 **SHADOW_VERTEX**"
+
+msgid "Same as ``VERTEX`` but can be written to alter shadows."
+msgstr "O mesmo que ``VERTEX``, mas pode ser gravado para alterar as sombras."
+
+msgid "inout vec3 **LIGHT_VERTEX**"
+msgstr "inout vec3 **LIGHT_VERTEX**"
+
+msgid ""
+"Same as ``VERTEX`` but can be written to alter lighting. Z component "
+"represents height."
+msgstr ""
+"O mesmo que ``VERTEX``, mas pode ser gravado para alterar a iluminação. O "
+"componente Z representa a altura."
+
+msgid ""
+"``COLOR`` from the ``vertex()`` function multiplied by the ``TEXTURE`` "
+"color. Also output color value."
+msgstr ""
+"``COLOR`` vinda da função ``vertex()`` multiplicada pela cor da ``TEXTURE``. "
+"Também é o valor da cor de saída."
 
 msgid "Light built-ins"
 msgstr "Built-ins de iluminação"
 
+msgid ""
+"Light processor functions work differently in Godot 4.x than they did in "
+"Godot 3.x. In Godot 4.x all lighting is done during the regular draw pass. "
+"In other words, Godot no longer draws the object again for each light."
+msgstr ""
+"As funções processadoras de luz funcionam de maneira diferente no Godot 4.x "
+"em comparação ao Godot 3.x. No Godot 4.x, toda a iluminação é feita durante "
+"a passagem de desenho regular. Em outras palavras, o Godot não desenha mais "
+"o objeto novamente para cada luz."
+
+msgid ""
+"Use the ``unshaded`` render mode if you do not want the ``light()`` function "
+"to run. Use the ``light_only`` render mode if you only want to see the "
+"impact of lighting on an object; this can be useful when you only want the "
+"object visible where it is covered by light."
+msgstr ""
+"Use o modo de renderização ``unshaded`` se você não quiser que a função "
+"``light()`` seja executada. Use o modo de renderização ``light_only`` se "
+"você quiser ver apenas o impacto da iluminação em um objeto; isso pode ser "
+"útil quando você quer que o objeto seja visível apenas onde for coberto pela "
+"luz."
+
+msgid ""
+"If you define a ``light()`` function it will replace the built-in light "
+"function, even if your light function is empty."
+msgstr ""
+"Se você definir uma função ``light()``, ela substituirá a função de luz "
+"integrada, mesmo que sua função de luz esteja vazia."
+
+msgid ""
+"Below is an example of a light shader that takes a CanvasItem's normal map "
+"into account:"
+msgstr ""
+"Abaixo está um exemplo de um shader de luz que leva em consideração o mapa "
+"de normais de um CanvasItem:"
+
 msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
+
+msgid "Input normal."
+msgstr "Normal de entrada."
+
+msgid "in vec4 **COLOR**"
+msgstr "in vec4 **COLOR**"
+
+msgid "Input color. This is the output of the ``fragment()`` function."
+msgstr "Cor de entrada. Esta é a saída da função ``fragment()``."
+
+msgid ""
+"UV from the ``vertex()`` function, equivalent to the UV in the "
+"``fragment()`` function."
+msgstr ""
+"UV vinda da função ``vertex()``, equivalente à UV na função ``fragment()``."
+
+msgid "Current texture in use for the CanvasItem."
+msgstr "Textura atual em uso para o CanvasItem."
+
+msgid ""
+"Normalized pixel size of ``TEXTURE``. For a Sprite2D with a ``TEXTURE`` of "
+"size 64×32 pixels, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / 64.0, 1.0 / 32.0)``."
+msgstr ""
+"Tamanho de pixel normalizado da ``TEXTURE``. Para um Sprite2D com uma "
+"``TEXTURE`` de tamanho 64×32 pixels, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / "
+"64.0, 1.0 / 32.0)``."
+
+msgid "UV for Point Sprite."
+msgstr "UV para o Point Sprite."
+
+msgid "in vec4 **LIGHT_COLOR**"
+msgstr "in vec4 **LIGHT_COLOR**"
+
+msgid "in float **LIGHT_ENERGY**"
+msgstr "in float **LIGHT_ENERGY**"
+
+msgid ""
+":ref:`Energy multiplier<class_Light2D_property_energy>` of "
+"the :ref:`class_Light2D`."
+msgstr ""
+":ref:`Multiplicador de energia<class_Light2D_property_energy>` "
+"da :ref:`class_Light2D`."
+
+msgid "in vec3 **LIGHT_POSITION**"
+msgstr "in vec3 **LIGHT_POSITION**"
+
+msgid ""
+"Position of the :ref:`class_Light2D` in screen space. If using "
+"a :ref:`class_DirectionalLight2D` this is always ``(0.0, 0.0, 0.0)``."
+msgstr ""
+"Posição da :ref:`class_Light2D` no espaço da tela. Se estiver usando "
+"uma :ref:`class_DirectionalLight2D`, isso será sempre ``(0.0, 0.0, 0.0)``."
+
+msgid "in vec3 **LIGHT_DIRECTION**"
+msgstr "in vec3 **LIGHT_DIRECTION**"
+
+msgid "Direction of the :ref:`class_Light2D` in screen space."
+msgstr "Direção da :ref:`class_Light2D` no espaço da tela."
+
+msgid "in bool **LIGHT_IS_DIRECTIONAL**"
+msgstr "in bool **LIGHT_IS_DIRECTIONAL**"
+
+msgid "``true`` if this pass is a :ref:`class_DirectionalLight2D`."
+msgstr "``true`` se esta passagem for uma :ref:`class_DirectionalLight2D`."
+
+msgid "in vec3 **LIGHT_VERTEX**"
+msgstr "in vec3 **LIGHT_VERTEX**"
+
+msgid ""
+"Pixel position, in screen space as modified in the ``fragment()`` function."
+msgstr ""
+"Posição do pixel, no espaço da tela conforme modificado na função "
+"``fragment()``."
 
 msgid "inout vec4 **LIGHT**"
 msgstr "inout vec4 **LIGHT**"
 
+msgid "Output color for this :ref:`class_Light2D`."
+msgstr "Cor de saída para este :ref:`class_Light2D`."
+
+msgid "Specular shininess, as set in the object's texture."
+msgstr "Brilho especular, conforme definido na textura do objeto."
+
+msgid "out vec4 **SHADOW_MODULATE**"
+msgstr "out vec4 **SHADOW_MODULATE**"
+
+msgid "Multiply shadows cast at this point by this color."
+msgstr "Multiplica as sombras projetadas neste ponto por esta cor."
+
+msgid "SDF functions"
+msgstr "Funções SDF"
+
+msgid ""
+"There are a few additional functions implemented to sample an automatically "
+"generated Signed Distance Field texture. These functions are available in "
+"the ``fragment()`` and ``light()`` functions of CanvasItem shaders. Custom "
+"functions may also use them as long as they are called from supported "
+"functions."
+msgstr ""
+"Existem algumas funções adicionais implementadas para amostrar uma textura "
+"de Campo de Distância Assinado gerada automaticamente. Essas funções estão "
+"disponíveis nas funções ``fragment()`` e ``light()`` dos shaders de "
+"CanvasItem. Funções personalizadas também podem usá-las, desde que sejam "
+"chamadas a partir de funções suportadas."
+
+msgid ""
+"The signed distance field is generated from :ref:`class_LightOccluder2D` "
+"nodes present in the scene with the **SDF Collision** property enabled "
+"(which is the default). See the :ref:`2D lights and shadows "
+"<doc_2d_lights_and_shadows_setting_up_shadows>` documentation for more "
+"information."
+msgstr ""
+"O campo de distância sinalizado é gerado a partir dos "
+"nós :ref:`class_LightOccluder2D` presentes na cena com a propriedade **SDF "
+"Collision** ativada (que é o padrão). Veja a documentação de :ref:`Luzes e "
+"sombras 2D <doc_2d_lights_and_shadows_setting_up_shadows>` para mais "
+"informações."
+
 msgid "Function"
 msgstr "Função"
+
+msgid "float **texture_sdf** (vec2 sdf_pos)"
+msgstr "float **texture_sdf** (vec2 sdf_pos)"
+
+msgid "Performs an SDF texture lookup."
+msgstr "Realiza uma busca na textura SDF."
+
+msgid "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
+msgstr "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
+
+msgid "Calculates a normal from the SDF texture."
+msgstr "Calcula uma normal a partir da textura SDF."
+
+msgid "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"
+msgstr "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"
+
+msgid "Converts an SDF to screen UV."
+msgstr "Converte um SDF para UV de tela."
+
+msgid "vec2 **screen_uv_to_sdf** (vec2 uv)"
+msgstr "vec2 **screen_uv_to_sdf** (vec2 uv)"
+
+msgid "Converts screen UV to an SDF."
+msgstr "Converte UV de tela para um SDF."
