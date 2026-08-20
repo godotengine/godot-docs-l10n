@@ -148,7 +148,7 @@ msgid "TimeSeek"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:127
-msgid "This node allows you to seek to a time in the animation connected to its `in` input. Use this node to play an ``Animation`` starting from a certain playback position. Note that the seek request value is measured in seconds, so if you would like to play an animation from the beginning, set the value to ``0.0``, or if you would like to play an animation from 3 seconds in, set the value to ``3.0``."
+msgid "This node allows you to seek to a time in the animation connected to its ``in`` input. Use this node to play an ``Animation`` starting from a certain playback position. Note that the seek request value is measured in seconds, so if you would like to play an animation from the beginning, set the value to ``0.0``, or if you would like to play an animation from 3 seconds in, set the value to ``3.0``."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:155
@@ -156,313 +156,321 @@ msgid "TimeScale"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:157
-msgid "This node allows you to scale the speed of the animation connected to its `in` input. The speed of the animation will be multiplied by the number in the `scale` parameter. Setting the scale to 0 will pause the animation. Setting the scale to a negative number will play the animation backwards."
-msgstr ""
-
-#: ../../docs/tutorials/animation/animation_tree.rst:163
-msgid "Transition"
+msgid "This node allows you to scale the speed of the animation connected to its ``in`` input. The speed of the animation will be multiplied by the number in the ``scale`` parameter. Setting the scale to ``0.0`` will pause the animation. Setting the scale to a negative number will play the animation backwards."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:165
+msgid "Transition"
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:167
 msgid "This node is a simplified version of a StateMachine. You connect animations to the inputs, and the current state index determines which animation to play. You may specify a crossfade transition time. In the Inspector, you may change the number of input ports, rearrange inputs, or delete inputs."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:201
+#: ../../docs/tutorials/animation/animation_tree.rst:203
 msgid "StateMachine"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:203
+#: ../../docs/tutorials/animation/animation_tree.rst:205
 msgid "When you make an ``AnimationNodeStateMachine``, you get an empty 2d graph in the bottom panel, under the AnimationTree tab. It contains a ``Start`` and ``End`` state by default."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:208
+#: ../../docs/tutorials/animation/animation_tree.rst:210
 msgid "To add states, right click or use the **create new nodes** button, whose icon is a plus in a box. You can add animations, blendspaces, blendtrees, or even another StateMachine. To edit one of these more complex sub-nodes, click on the pencil icon on the right of the state. To return to the original StateMachine, click **Root** on the top left of the panel."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:212
+#: ../../docs/tutorials/animation/animation_tree.rst:214
 msgid "Before the StateMachine can do anything useful, the states must be connected with transitions. To add a transition, click the **connect nodes** button, which is a line with a right-facing arrow, and drag between two states. You can create 2 transitions between states, one going in each direction."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:217
+#: ../../docs/tutorials/animation/animation_tree.rst:219
 msgid "There are 3 types of transitions:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:221
+#: ../../docs/tutorials/animation/animation_tree.rst:223
 msgid "*Immediate*: Will switch to the next state immediately."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:222
+#: ../../docs/tutorials/animation/animation_tree.rst:224
 msgid "*Sync*: Will switch to the next state immediately, but will seek the new state to the playback position of the old state."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:223
+#: ../../docs/tutorials/animation/animation_tree.rst:225
 msgid "*At End*: Will wait for the current state playback to end, then switch to the beginning of the next state animation."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:225
+#: ../../docs/tutorials/animation/animation_tree.rst:227
 msgid "Transitions also have a few properties. Click a transition and it will be displayed in the inspector:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:229
+#: ../../docs/tutorials/animation/animation_tree.rst:231
 msgid "*Xfade Time* is the time to cross-fade between this state and the next."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:230
+#: ../../docs/tutorials/animation/animation_tree.rst:232
 msgid "*Xfade Curve* is a cross-fade following a curve rather than a linear blend."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:231
+#: ../../docs/tutorials/animation/animation_tree.rst:233
 msgid "*Reset* determines whether the state you are switching into plays from the beginning (true) or not (false)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:232
+#: ../../docs/tutorials/animation/animation_tree.rst:234
 msgid "*Priority* is used together with the ``travel()`` function from code (more on this later). Lower priority transitions are preferred when travelling through the tree."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:233
+#: ../../docs/tutorials/animation/animation_tree.rst:235
 msgid "*Switch Mode* is the transition type (see above). It can be changed after creation here."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:234
+#: ../../docs/tutorials/animation/animation_tree.rst:236
 msgid "*Advance Mode* determines the advance mode. If ``Disabled``, the transition will not be used. If ``Enabled``, the transition will only be used during ``travel()``. If ``Auto``, the transition will be used if the advance condition and expression are true, or if there are no advance conditions/expressions."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:237
+#: ../../docs/tutorials/animation/animation_tree.rst:239
 msgid "Advance Condition and Advance Expression"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:239
+#: ../../docs/tutorials/animation/animation_tree.rst:241
 msgid "The last 2 properties in a StateMachine transition are ``Advance Condition`` and ``Advance Expression.`` When the Advance Mode is set to *Auto*, these determine if the transition will advance or not."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:242
+#: ../../docs/tutorials/animation/animation_tree.rst:244
 msgid "Advance Condition is a true/false check. You may put a custom variable name in the text field, and when the StateMachine reaches this transition, it will check if your variable is *true*. If so, the transition continues. Note that the advance condition **only** checks if a variable is *true*, and it cannot check for falseness."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:246
+#: ../../docs/tutorials/animation/animation_tree.rst:248
 msgid "This gives the Advance Condition a very limited capability. If you wanted to make a transition back and forth based on one property, you would need to make 2 variables that have opposite values, and check if either of them are true. This is why, in Godot 4, the Advance Expression was added."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:249
+#: ../../docs/tutorials/animation/animation_tree.rst:251
 msgid "The Advance Expression works similar to the Advance Condition, but instead of checking if one variable is true, it evaluates any expression. An expression is anything you could put in an ``if`` statement. These are all examples of expressions that would work in the Advance Expression:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:252
+#: ../../docs/tutorials/animation/animation_tree.rst:254
 msgid "``is_walking``"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:253
+#: ../../docs/tutorials/animation/animation_tree.rst:255
 msgid "``is_walking == true`` (behaves the same as the one above)"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:254
+#: ../../docs/tutorials/animation/animation_tree.rst:256
 msgid "``is_walking && !is_idle``"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:255
+#: ../../docs/tutorials/animation/animation_tree.rst:257
 msgid "``velocity > 0``"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:256
+#: ../../docs/tutorials/animation/animation_tree.rst:258
 msgid "``player.is_on_floor()``"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:260
+#: ../../docs/tutorials/animation/animation_tree.rst:262
 msgid "The expression is **case-sensitive**. If you reference engine properties, such as ``velocity`` on a :ref:`class_CharacterBody3D` node, you should use ``snake_case`` naming conventions. If you reference script properties, you should match the style used in the script, which is typically ``snake_case`` in GDScript and ``PascalCase`` in C#."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:266
+#: ../../docs/tutorials/animation/animation_tree.rst:268
 msgid "Here is an example of an improperly-set-up StateMachine transition using Advance Condition:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:271
+#: ../../docs/tutorials/animation/animation_tree.rst:273
 msgid "This is not working because there is a ``!`` variable in the Advance Condition, which cannot be checked."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:273
+#: ../../docs/tutorials/animation/animation_tree.rst:275
 msgid "Here is the same example, set up properly, using two opposite variables:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:278
+#: ../../docs/tutorials/animation/animation_tree.rst:280
 msgid "Here is the same example, but using Advance Expression rather than Advance Condition, which eliminates the need for two variables:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:284
+#: ../../docs/tutorials/animation/animation_tree.rst:286
 msgid "In order to use Advance Expressions, the Advance Expression Base Node has to be set from the Inspector of the AnimationTree node. By default, it is set to the AnimationTree node itself, but it needs to point to whatever node contains the script with your animation variables."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:289
+#: ../../docs/tutorials/animation/animation_tree.rst:291
 msgid "The Advance Expression is evaluated using Godot's :ref:`class_expression` class. See :ref:`doc_evaluating_expressions` for more information on writing expressions."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:293
+#: ../../docs/tutorials/animation/animation_tree.rst:295
 msgid "StateMachine travel"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:295
+#: ../../docs/tutorials/animation/animation_tree.rst:297
 msgid "One of the nice features in Godot's ``StateMachine`` implementation is the ability to travel. You can instruct the graph to go from the current state to another one, while visiting all the intermediate ones. This is done via the A\\* algorithm. If there is no path of transitions starting at the current state and finishing at the destination state, the graph teleports to the destination state."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:299
+#: ../../docs/tutorials/animation/animation_tree.rst:301
 msgid "To use the travel ability, you should first retrieve the :ref:`AnimationNodeStateMachinePlayback <class_AnimationNodeStateMachinePlayback>` object from the ``AnimationTree`` node (it is exported as a property), and then call one of its many functions:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:313
+#: ../../docs/tutorials/animation/animation_tree.rst:315
 msgid "The StateMachine must be running before you can travel. Make sure to either call ``start()`` or connect a node to **Start**."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:316
+#: ../../docs/tutorials/animation/animation_tree.rst:318
 msgid "BlendSpace2D and BlendSpace1D"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:318
+#: ../../docs/tutorials/animation/animation_tree.rst:320
 msgid "``BlendSpace2D`` is a node to do advanced blending in two dimensions. Points representing animations are added to a 2D space and then a position between them is controlled to determine the blending:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:323
-msgid "You may place these points anywhere on the graph by right clicking or using the **add point** button, whose icon is a pen and point. Wherever you place the points, the triangle between them will be generated automatically using Delaunay. You may also control and label the ranges in X and Y."
+#: ../../docs/tutorials/animation/animation_tree.rst:325
+msgid "You may insert these points anywhere on the graph by right-clicking or using the **add point** button in the toolbar. On creation, a point gets its name from the chosen animation or :ref:`AnimationRootNode<class_AnimationRootNode>` type. This point can then be renamed by clicking on its name, or repositioned by clicking and dragging the name or the point. If **Auto Triangles** is enabled, a blend triangle between inserted points will be automatically generated using `Delaunay triangulation <https://en.wikipedia.org/wiki/Delaunay_triangulation>`__."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:329
-msgid "Finally, you may also change the blend mode. By default, blending happens by interpolating points inside the closest triangle. When dealing with 2D animations (frame by frame), you may want to switch to *Discrete* mode. Alternatively, if you want to keep the current play position when switching between discrete animations, there is a *Carry* mode. This mode can be changed in the *Blend* menu:"
+#: ../../docs/tutorials/animation/animation_tree.rst:331
+msgid "This node's animation blend target can be manipulated in the editor by pressing Shift while dragging the left mouse button, or using the dedicated tool."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:335
-msgid "BlendSpace1D works just like BlendSpace2D, but in one dimension (a line). Triangles are not used."
+#: ../../docs/tutorials/animation/animation_tree.rst:333
+msgid "``BlendSpace1D`` works just like ``BlendSpace2D``, but in a single dimension (a horizontal line). Since triangles are not used, it is able to function with fewer than three blend points."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:340
+#: ../../docs/tutorials/animation/animation_tree.rst:338
 msgid "Sync mode"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:342
+#: ../../docs/tutorials/animation/animation_tree.rst:340
 msgid "Both ``BlendSpace1D`` and ``BlendSpace2D`` have a **Sync Mode** property that controls how animations advance when they are blended. This replaces the older boolean ``sync`` property and offers more precise control."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:347
+#: ../../docs/tutorials/animation/animation_tree.rst:345
 msgid "There are four modes available:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:349
+#: ../../docs/tutorials/animation/animation_tree.rst:347
 msgid "**None** (default): Inactive animations are frozen and do not advance. Only the currently active (highest-weight) animation moves forward."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:350
+#: ../../docs/tutorials/animation/animation_tree.rst:348
 msgid "**Independent**: Inactive animations advance with a weight of ``0``. This matches the behavior of the old ``sync = true`` setting."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:351
+#: ../../docs/tutorials/animation/animation_tree.rst:349
 msgid "**Cyclic Mutable**: All animations are time-scaled so their phases stay aligned. The shared cycle length is computed dynamically from the active blend weights, which means a single unblended animation plays at its normal speed. This is useful when all your animations have the same logical cycle (e.g. locomotion loops) but may differ slightly in length."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:354
+#: ../../docs/tutorials/animation/animation_tree.rst:352
 msgid "**Cyclic Constant**: All animations are time-scaled to complete one full cycle in exactly **Cyclic Length** seconds, regardless of their individual lengths. Set the ``cyclic_length`` property to your desired cycle duration (must be greater than ``0``)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:359
+#: ../../docs/tutorials/animation/animation_tree.rst:357
 msgid "Cyclic sync modes require that all blend points use :ref:`AnimationNodeAnimation <class_AnimationNodeAnimation>` with a finite, immutable length. If any blend point uses a different node type, a warning will be shown and cyclic sync will not take effect:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:367
+#: ../../docs/tutorials/animation/animation_tree.rst:365
 msgid "When using either cyclic mode with animations of different lengths, applying an :ref:`AnimationNodeTimeSeek <class_AnimationNodeTimeSeek>` to the output will break synchronization. In that case, use :ref:`AnimationNodeAnimation.use_custom_timeline <class_AnimationNodeAnimation_property_use_custom_timeline>` to normalize animation lengths before syncing."
 msgstr ""
 
+#: ../../docs/tutorials/animation/animation_tree.rst:371
+msgid "Blend mode"
+msgstr ""
+
 #: ../../docs/tutorials/animation/animation_tree.rst:373
+msgid "By default, blending happens in the *Continuous* mode, by interpolating points inside the closest triangle in ``BlendSpace2D``, or in the line between points in ``BlendSpace1D``. However, this may not always be the best choice. For instance, when dealing with frame-by-frame 2D animations, you may want to switch to the *Discrete* mode, in which the intermediate states of the blend do not appear in the result. Alternatively, if you want to retain the current play position when switching between discrete animations, the *Carry* mode allows you to do so. These modes can be set with the *Blend* menu."
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:381
 msgid "For better blending"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:375
+#: ../../docs/tutorials/animation/animation_tree.rst:383
 msgid "For the blending results to be deterministic (reproducible and always consistent), the blended property values must have a specific initial value. For example, in the case of two animations to be blended, if one animation has a property track and the other does not, the blended animation is calculated as if the latter animation had a property track with the initial value."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:380
+#: ../../docs/tutorials/animation/animation_tree.rst:388
 msgid "When using Position/Rotation/Scale 3D tracks for Skeleton3D bones, the initial value is Bone Rest. For other properties, the initial value is ``0`` and if the track is present in the ``RESET`` animation, the value of its first keyframe is used instead."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:384
+#: ../../docs/tutorials/animation/animation_tree.rst:392
 msgid "For example, the following AnimationPlayer has two animations, but one of them lacks a Property track for Position."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:388
+#: ../../docs/tutorials/animation/animation_tree.rst:396
 msgid "This means that the animation lacking that will treat those Positions as ``Vector2(0, 0)``."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:392
+#: ../../docs/tutorials/animation/animation_tree.rst:400
 msgid "This problem can be solved by adding a Property track for Position as an initial value to the ``RESET`` animation."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:398
+#: ../../docs/tutorials/animation/animation_tree.rst:406
 msgid "Be aware that the ``RESET`` animation exists to define the default pose when loading an object originally. It is assumed to have only one frame and is not expected to be played back using the timeline."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:401
+#: ../../docs/tutorials/animation/animation_tree.rst:409
 msgid "Also keep in mind that the Rotation 3D tracks and the Property tracks for 2D rotation with Interpolation Type set to Linear Angle or Cubic Angle will prevent rotations greater than 180 degrees from the initial value as blended animation."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:405
+#: ../../docs/tutorials/animation/animation_tree.rst:413
 msgid "This can be useful for Skeleton3Ds to prevent the bones penetrating the body when blending animations. Therefore, Skeleton3D's Bone Rest values should be as close to the midpoint of the movable range as possible. **This means that for humanoid models, it is preferable to import them in a T-pose**."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:411
+#: ../../docs/tutorials/animation/animation_tree.rst:419
 msgid "You can see that the shortest rotation path from Bone Rests is prioritized rather than the shortest rotation path between animations."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:413
+#: ../../docs/tutorials/animation/animation_tree.rst:421
 msgid "If you need to rotate Skeleton3D itself more than 180 degrees by blend animations for movement, you can use Root Motion."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:416
+#: ../../docs/tutorials/animation/animation_tree.rst:424
 msgid "Root motion"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:418
+#: ../../docs/tutorials/animation/animation_tree.rst:426
 msgid "When working with 3D animations, a popular technique is for animators to use the root skeleton bone to give motion to the rest of the skeleton. This allows animating characters in a way where steps actually match the floor below. It also allows precise interaction with objects during cinematics."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:421
+#: ../../docs/tutorials/animation/animation_tree.rst:429
 msgid "When playing back the animation in Godot, it is possible to select this bone as the *root motion track*. Doing so will cancel the bone transformation visually (the animation will stay in place)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:426
+#: ../../docs/tutorials/animation/animation_tree.rst:434
 msgid "Afterwards, the actual motion can be retrieved via the :ref:`AnimationTree <class_AnimationTree>` API as a transform:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:453
+#: ../../docs/tutorials/animation/animation_tree.rst:461
 msgid "This can be fed to functions such as :ref:`CharacterBody3D.move_and_slide <class_CharacterBody3D_method_move_and_slide>` to control the character movement."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:455
+#: ../../docs/tutorials/animation/animation_tree.rst:463
 msgid "There is also a tool node, ``RootMotionView``, you can place a scene that will act as a custom floor for your character and animations (this node is disabled by default during the game)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:461
+#: ../../docs/tutorials/animation/animation_tree.rst:469
 msgid "Controlling from code"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:463
+#: ../../docs/tutorials/animation/animation_tree.rst:471
 msgid "After building the tree and previewing it, the only question remaining is \"How is all this controlled from code?\"."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:465
+#: ../../docs/tutorials/animation/animation_tree.rst:473
 msgid "Keep in mind that the animation nodes are just resources, so they are shared between all instances using them. Setting values in the nodes directly will affect all instances of the scene that uses this ``AnimationTree``. This is generally undesirable, but does have some cool use cases, e.g. you can copy and paste parts of your animation tree, or reuse nodes with a complex layout (such as a StateMachine or blend space) in different animation trees."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:470
+#: ../../docs/tutorials/animation/animation_tree.rst:478
 msgid "The actual animation data is contained in the ``AnimationTree`` node and is accessed via properties. Check the \"Parameters\" section of the ``AnimationTree`` node to see all the parameters that can be modified in real-time:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:475
+#: ../../docs/tutorials/animation/animation_tree.rst:483
 msgid "This is handy because it makes it possible to animate them from an ``AnimationPlayer``, or even the ``AnimationTree`` itself, allowing very complex animation logic."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:478
+#: ../../docs/tutorials/animation/animation_tree.rst:486
 msgid "To modify these values from code, you must obtain the property path. You can find them by hovering your mouse over any of the parameters:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:482
+#: ../../docs/tutorials/animation/animation_tree.rst:490
 msgid "Then you can set or read them:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:495
-msgid "Advance Expressions from a StateMachine will not be found under the parameters. This is because they are held in another script rather than the AnimationTree itself. Advance `Conditions` will be found under parameters."
+#: ../../docs/tutorials/animation/animation_tree.rst:505
+msgid "Advance Expressions from a StateMachine will not be found under the parameters. This is because they are held in another script rather than the AnimationTree itself. Advance :ui:`Conditions` will be found under parameters."
 msgstr ""

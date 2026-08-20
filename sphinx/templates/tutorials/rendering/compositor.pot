@@ -55,166 +55,162 @@ msgstr ""
 msgid "We start by creating a new script called ``post_process_shader.gd``. We'll make this a tool script so we can see the compositor effect work in the editor. We need to extend our node from :ref:`CompositorEffect <class_CompositorEffect>`. We must also give our script a class name."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:47
-msgid "post_process_shader.gd"
-msgstr ""
-
-#: ../../docs/tutorials/rendering/compositor.rst:54
+#: ../../docs/tutorials/rendering/compositor.rst:59
 msgid "Next we're going to define a constant for our shader template code. This is the boilerplate code that makes our compute shader work."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:90
+#: ../../docs/tutorials/rendering/compositor.rst:129
 msgid "For more information on how compute shaders work, please check :ref:`Using compute shaders <doc_compute_shaders>`."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:93
+#: ../../docs/tutorials/rendering/compositor.rst:132
 msgid "The important bit here is that for every pixel on our screen, our ``main`` function is executed and inside of this we load the current color value of our pixel, execute our user code, and write our modified color back to our color image."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:98
+#: ../../docs/tutorials/rendering/compositor.rst:137
 msgid "``#COMPUTE_CODE`` gets replaced by our user code."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:100
+#: ../../docs/tutorials/rendering/compositor.rst:139
 msgid "In order to set our user code, we need an export variable. We'll also define a few script variables we'll be using:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:120
+#: ../../docs/tutorials/rendering/compositor.rst:183
 msgid "Note the use of a :ref:`Mutex <class_Mutex>` in our code. Most of our implementation gets called from the rendering engine and thus runs within our rendering thread."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:124
+#: ../../docs/tutorials/rendering/compositor.rst:187
 msgid "We need to ensure that we set our new shader code, and mark our shader code as dirty, without our render thread accessing this data at the same time."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:128
+#: ../../docs/tutorials/rendering/compositor.rst:191
 msgid "Next we initialize our effect."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:138
+#: ../../docs/tutorials/rendering/compositor.rst:210
 msgid "The main thing here is setting our ``effect_callback_type`` which tells the rendering engine at what stage of the render pipeline to call our code."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:143
+#: ../../docs/tutorials/rendering/compositor.rst:215
 msgid "Currently we only have access to the stages of the 3D rendering pipeline!"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:145
+#: ../../docs/tutorials/rendering/compositor.rst:217
 msgid "We also get a reference to our rendering device, which will come in very handy."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:147
+#: ../../docs/tutorials/rendering/compositor.rst:219
 msgid "We also need to clean up after ourselves, for this we react to the ``NOTIFICATION_PREDELETE`` notification:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:160
+#: ../../docs/tutorials/rendering/compositor.rst:249
 msgid "Note that we do not use our mutex here even though we create our shader inside of our render thread. The methods on our rendering server are thread safe and ``free_rid`` will be postponed cleaning up the shader until after any frames currently being rendered are finished."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:166
+#: ../../docs/tutorials/rendering/compositor.rst:255
 msgid "Also note that we are not freeing our pipeline. The rendering device does dependency tracking and as the pipeline is dependent on the shader, it will be automatically freed when the shader is destructed."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:170
+#: ../../docs/tutorials/rendering/compositor.rst:259
 msgid "From this point onwards our code will run on the rendering thread."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:172
+#: ../../docs/tutorials/rendering/compositor.rst:261
 msgid "Our next step is a helper function that will recompile the shader if the user code was changed."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:222
+#: ../../docs/tutorials/rendering/compositor.rst:372
 msgid "At the top of this method we again use our mutex to protect accessing our user shader code and our is dirty flag. We make a local copy of the user shader code if our user shader code is dirty."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:226
+#: ../../docs/tutorials/rendering/compositor.rst:376
 msgid "If we don't have a new code fragment, we return true if we already have a valid pipeline."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:229
+#: ../../docs/tutorials/rendering/compositor.rst:379
 msgid "If we do have a new code fragment we embed it in our template code and then compile it."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:233
+#: ../../docs/tutorials/rendering/compositor.rst:383
 msgid "The code shown here compiles our new code in runtime. This is great for prototyping as we can immediately see the effect of the changed shader."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:237
+#: ../../docs/tutorials/rendering/compositor.rst:387
 msgid "This prevents precompiling and caching this shader which may be an issues on some platforms such as consoles. Note that the demo project comes with an alternative example where a ``glsl`` file contains the entire compute shader and this is used. Godot is able to precompile and cache the shader with this approach."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:243
+#: ../../docs/tutorials/rendering/compositor.rst:393
 msgid "Finally we need to implement our effect callback, the rendering engine will call this at the right stage of rendering."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:294
+#: ../../docs/tutorials/rendering/compositor.rst:503
 msgid "At the start of this method we check if we have a rendering device, if our callback type is the correct one, and check if we have our shader."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:299
+#: ../../docs/tutorials/rendering/compositor.rst:508
 msgid "The check for the effect type is only a safety mechanism. We've set this in our ``_init`` function, however it is possible for the user to change this in the UI."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:303
+#: ../../docs/tutorials/rendering/compositor.rst:512
 msgid "Our ``p_render_data`` parameter gives us access to an object that holds data specific to the frame we're currently rendering. We're currently only interested in our render scene buffers, which provide us access to all the internal buffers used by the rendering engine. Note that we cast this to :ref:`RenderSceneBuffersRD <class_RenderSceneBuffersRD>` to expose the full API to this data."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:310
+#: ../../docs/tutorials/rendering/compositor.rst:519
 msgid "Next we obtain our ``internal size`` which is the resolution of our 3D render buffers before they are upscaled (if applicable), upscaling happens after our post processes have run."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:314
+#: ../../docs/tutorials/rendering/compositor.rst:523
 msgid "From our internal size we calculate our group size, see our local size in our template shader."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:320
+#: ../../docs/tutorials/rendering/compositor.rst:529
 msgid "We also populate our push constant so our shader knows our size. Godot does not support structs here **yet** so we use a ``PackedFloat32Array`` to store this data into. Note that we have to pad this array with a 16 byte alignment. In other words, the length of our array needs to be a multiple of 4."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:326
+#: ../../docs/tutorials/rendering/compositor.rst:535
 msgid "Now we loop through our views, this is in case we're using multiview rendering which is applicable for stereo rendering (XR). In most cases we will only have one view."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:332
+#: ../../docs/tutorials/rendering/compositor.rst:541
 msgid "There is no performance benefit to use multiview for post processing here, handling the views separately like this will still enable the GPU to use parallelism if beneficial."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:336
+#: ../../docs/tutorials/rendering/compositor.rst:545
 msgid "Next we obtain the color buffer for this view. This is the buffer into which our 3D scene has been rendered."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:339
+#: ../../docs/tutorials/rendering/compositor.rst:548
 msgid "We then prepare a uniform set so we can communicate the color buffer to our shader."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:342
+#: ../../docs/tutorials/rendering/compositor.rst:551
 msgid "Note the use of our :ref:`UniformSetCacheRD <class_UniformSetCacheRD>` cache which ensures we can check for our uniform set each frame. As our color buffer can change from frame to frame and our uniform cache will automatically clean up uniform sets when buffers are freed, this is the safe way to ensure we do not leak memory or use an outdated set."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:348
+#: ../../docs/tutorials/rendering/compositor.rst:557
 msgid "Finally we build our compute list by binding our pipeline, binding our uniform set, pushing our push constant data, and calling dispatch for our groups."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:352
+#: ../../docs/tutorials/rendering/compositor.rst:561
 msgid "With our compositor effect completed, we now need to add it to our compositor."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:354
+#: ../../docs/tutorials/rendering/compositor.rst:563
 msgid "On our compositor we expand the compositor effects property and press ``Add Element``."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:357
+#: ../../docs/tutorials/rendering/compositor.rst:566
 msgid "Now we can add our compositor effect:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:361
+#: ../../docs/tutorials/rendering/compositor.rst:570
 msgid "After selecting our ``PostProcessShader`` we need to set our user shader code:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:368
+#: ../../docs/tutorials/rendering/compositor.rst:577
 msgid "With that all done, our output is in grayscale."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/compositor.rst:374
+#: ../../docs/tutorials/rendering/compositor.rst:583
 msgid "For a more advanced example of post effects, check out the `Radial blur based sky rays <https://github.com/BastiaanOlij/RERadialSunRays>`_ example project created by Bastiaan Olij."
 msgstr ""

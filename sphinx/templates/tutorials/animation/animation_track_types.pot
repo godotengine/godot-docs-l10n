@@ -112,86 +112,86 @@ msgstr ""
 msgid "A bezier curve track is similar to a property track, except it allows you to animate a property's value using a bezier curve."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:140
-msgid "Bezier curve track and property track cannot be blended in :ref:`AnimationPlayer <class_AnimationPlayer>` and :ref:`AnimationTree <class_AnimationTree>`."
+#: ../../docs/tutorials/animation/animation_track_types.rst:142
+msgid "Bezier curve tracks and property tracks cannot be blended in :ref:`AnimationPlayer <class_AnimationPlayer>` and :ref:`AnimationTree <class_AnimationTree>`."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:142
+#: ../../docs/tutorials/animation/animation_track_types.rst:144
 msgid "To create one, click \"Add Track -> Bezier Curve Track\". As with property tracks, you need to select a node and a property to animate. To open the bezier curve editor, click the curve icon to the right of the animation track."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:148
+#: ../../docs/tutorials/animation/animation_track_types.rst:150
 msgid "In the editor, keys are represented by filled diamonds and the outlined diamonds connected to them by a line control curve's shape."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:153
+#: ../../docs/tutorials/animation/animation_track_types.rst:155
 msgid "For better precision while manually working with curves, you might want to alter the zoom levels of the editor. The slider on the bottom right of the editor can be used to zoom in and out on the time axis, you can also do that with :kbd:`Ctrl + Shift + Mouse wheel`. Using :kbd:`Ctrl + Alt + Mouse wheel` will zoom in and out on the Y axis"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:160
+#: ../../docs/tutorials/animation/animation_track_types.rst:162
 msgid "While a keyframe is selected (not the handle), in the right click panel of the editor, you can select the handle mode:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:163
+#: ../../docs/tutorials/animation/animation_track_types.rst:165
 msgid "Free: Allows you to orient a manipulator in any direction without affecting the other's position."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:165
+#: ../../docs/tutorials/animation/animation_track_types.rst:167
 msgid "Linear: Does not allow rotation of the manipulator and draws a linear graph."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:166
+#: ../../docs/tutorials/animation/animation_track_types.rst:168
 msgid "Balanced: Makes it so manipulators rotate together, but the distance between the key and a manipulator is not mirrored."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:168
+#: ../../docs/tutorials/animation/animation_track_types.rst:170
 msgid "Mirrored: Makes the position of one manipulator perfectly mirror the other, including their distance to the key."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:174
+#: ../../docs/tutorials/animation/animation_track_types.rst:176
 msgid "Audio Playback Track"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:176
+#: ../../docs/tutorials/animation/animation_track_types.rst:178
 msgid "If you want to create an animation with audio, you need to create an audio playback track. To create one, your scene must have either an AudioStreamPlayer, AudioStreamPlayer2D, or AudioStreamPlayer3D node. When creating the track, you must select one of those nodes."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:181
+#: ../../docs/tutorials/animation/animation_track_types.rst:183
 msgid "To play a sound in your animation, drag and drop an audio file from the file system dock onto the animation track. You should see the waveform of your audio file in the track."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:187
+#: ../../docs/tutorials/animation/animation_track_types.rst:189
 msgid "To remove a sound from the animation, you can right-click it and select \"Delete Key(s)\" or click on it and press the :kbd:`Del` key."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:190
+#: ../../docs/tutorials/animation/animation_track_types.rst:192
 msgid "The blend mode allows you to choose whether or not to adjust the audio volume when blending in the :ref:`AnimationTree <class_AnimationTree>`."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:195
+#: ../../docs/tutorials/animation/animation_track_types.rst:197
 msgid "Animation Playback Track"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:197
+#: ../../docs/tutorials/animation/animation_track_types.rst:199
 msgid "Animation playback tracks allow you to sequence the animations of other animation player nodes in a scene. For example, you can use it to animate several characters in a cut-scene."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:201
+#: ../../docs/tutorials/animation/animation_track_types.rst:203
 msgid "To create an animation playback track, select \"New Track -> Animation Playback Track.\""
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:204
+#: ../../docs/tutorials/animation/animation_track_types.rst:206
 msgid "Then, select the animation player you want to associate with the track."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:206
+#: ../../docs/tutorials/animation/animation_track_types.rst:208
 msgid "To add an animation to the track, right-click on it and insert a key. Select the key you just created to select an animation in the inspector dock."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:211
-msgid "If an animation is already playing and you want to stop it early, you can create a key and have it set to `[STOP]` in the inspector."
+#: ../../docs/tutorials/animation/animation_track_types.rst:213
+msgid "If an animation is already playing and you want to stop it early, you can create a key and have it set to ``[STOP]`` in the inspector."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_track_types.rst:214
-msgid "If you instanced a scene that contains an animation player into your scene, you need to enable \"Editable Children\" in the scene tree to access its animation player. Also, an animation player cannot reference itself."
+#: ../../docs/tutorials/animation/animation_track_types.rst:216
+msgid "If you instantiate a scene that contains an animation player into your scene, you need to enable \"Editable Children\" in the scene tree to access its animation player. Also, an animation player cannot reference itself."
 msgstr ""

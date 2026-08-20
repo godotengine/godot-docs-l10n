@@ -28,7 +28,7 @@ msgid ":ref:`class_Label` nodes are great for displaying basic text, but they ha
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:14
-msgid ":ref:`class_RichTextLabel` allows for complex formatting of text using a markup syntax or the built-in API. It uses BBCodes for the markup syntax, a system of tags that designate formatting rules for a part of the text. You may be familiar with them if you ever used forums (also known as `bulletin boards`, hence the \"BB\" in \"BBCode\")."
+msgid ":ref:`class_RichTextLabel` allows for complex formatting of text using a markup syntax or the built-in API. It uses BBCodes for the markup syntax, a system of tags that designate formatting rules for a part of the text. You may be familiar with them if you ever used forums (also known as *bulletin boards*, hence the \"BB\" in \"BBCode\")."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:19
@@ -92,7 +92,7 @@ msgid "In a scenario where users may freely input text (such as chat in a multip
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:100
-msgid "Using RichTextLabel's ``[lb]`` and/or ``[rb]`` tags, we can replace the opening and/or closing brackets of any BBCode tag in a message with those escaped tags. This prevents users from using BBCode that will be parsed as tags – instead, the BBCode will be displayed as text."
+msgid "Using RichTextLabel's ``[lb]`` and/or ``[rb]`` tags, we can replace the opening and/or closing brackets of any BBCode tag in a message with those escaped tags. This prevents users from using BBCode that will be parsed as tags – instead, the BBCode will be displayed as text."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:105
@@ -821,7 +821,7 @@ msgstr ""
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1026
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1036
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1047
-msgid "`Values`"
+msgid "**Values**"
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:524
@@ -865,11 +865,10 @@ msgstr ""
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1028
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1038
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1049
-msgid "`Default`"
+msgid "**Default**"
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:526
-#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:660
 msgid "``left``"
 msgstr ""
 
@@ -898,7 +897,7 @@ msgid "**justification_flags**, **jst**"
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:545
-msgid "Comma-separated list of the following values (no space after each comma): ``kashida`` (or ``k``), ``word`` (or ``w``), ``trim`` (or ``tr``), ``after_last_tab`` (or ``lt``), ``skip_last`` (or ``sl``), ``skip_last_with_chars`` (or ``sv``),  ``do_not_skip_single`` (or ``ns``)."
+msgid "Comma-separated list of the following values (no space after each comma): ``kashida`` (or ``k``), ``word`` (or ``w``), ``trim`` (or ``tr``), ``after_last_tab`` (or ``lt``), ``skip_last`` (or ``sl``), ``skip_last_with_chars`` (or ``sv``), ``do_not_skip_single`` (or ``ns``)."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:549
@@ -1039,6 +1038,10 @@ msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:658
 msgid "``left`` (or ``l``), ``center`` (or ``c``), ``right`` (or ``r``)"
+msgstr ""
+
+#: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:660
+msgid "``center``"
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:663
@@ -1347,7 +1350,7 @@ msgid "Named colors"
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:972
-msgid "For tags that allow specifying a color by name, you can use names of the constants from the built-in :ref:`class_Color` class. Named classes can be specified in a number of styles using different casings: ``DARK_RED``, ``DarkRed``, and ``darkred`` will give the same exact result."
+msgid "For tags that allow specifying a color by name, you can use names of the constants from the built-in :ref:`class_Color` class. Named colors can be specified in a number of styles using different casings: ``DARK_RED``, ``DarkRed``, and ``darkred`` will give the same exact result."
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:977

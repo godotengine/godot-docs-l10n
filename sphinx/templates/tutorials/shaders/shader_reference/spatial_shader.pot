@@ -474,7 +474,7 @@ msgid "Global built-ins"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:169
-msgid "Global built-ins are available everywhere, including custom functions."
+msgid "Global built-ins are available everywhere, including in custom functions."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:172
@@ -577,15 +577,15 @@ msgid "For instancing, the ``INSTANCE_CUSTOM`` variable contains the instance cu
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:237
-msgid "**x**: Rotation angle in radians."
+msgid "**x**: Current rotation angle in radians."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:238
-msgid "**y**: Phase during lifetime (``0.0`` to ``1.0``)."
+msgid "**z**: Current animation frame."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:239
-msgid "**z**: Animation frame."
+msgid "**y / w** (division): Lifetime fraction from ``0.0`` to ``1.0``."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:241
@@ -1212,11 +1212,11 @@ msgid "Small specular blob added on top of the existing one. If used, Godot calc
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:499
-msgid "out float **CLEARCOAT_GLOSS**"
+msgid "out float **CLEARCOAT_ROUGHNESS**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:499
-msgid "Gloss of clearcoat. If used, Godot calculates clearcoat."
+msgid "The roughness of the clearcoat. If used, Godot calculates clearcoat."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:501
@@ -1264,7 +1264,7 @@ msgid "out float **SSS_TRANSMITTANCE_BOOST**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:513
-msgid "Boosts the subsurface scattering transmittance if set above ``0.0``. This makes the effect show up even on directly lit surfaces"
+msgid "Boosts the subsurface scattering transmittance if set above ``0.0``. This makes the effect show up even on directly lit surfaces."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:516

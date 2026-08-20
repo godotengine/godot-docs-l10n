@@ -268,7 +268,7 @@ msgid "Supported values for the ``arch`` option are **auto**, **x86_32**, **x86_
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:281
-msgid "This flag appends the value of ``arch`` to resulting binaries when relevant.  The default value ``arch=auto`` detects the architecture that matches the host platform."
+msgid "This flag appends the value of ``arch`` to resulting binaries when relevant. The default value ``arch=auto`` detects the architecture that matches the host platform."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:288
@@ -385,7 +385,7 @@ msgid "To perform an SCU build, use the ``scu_build=yes`` SCons option."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:425
-msgid "When developing a Pull Request using SCU builds, be sure to make a regular build prior to submitting the PR. This is because SCU builds by nature include headers from earlier ``.cpp`` files in the translation unit, therefore won't catch all the includes you will need in a regular build. The CI will catch these errors, but it will usually be faster to catch them on a local build on your machine."
+msgid "When developing a pull request using SCU builds, be sure to make a regular build prior to submitting the PR. This is because SCU builds by nature include headers from earlier ``.cpp`` files in the translation unit, therefore won't catch all the includes you will need in a regular build. The CI will catch these errors, but it will usually be faster to catch them on a local build on your machine."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:433

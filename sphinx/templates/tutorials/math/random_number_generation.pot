@@ -48,157 +48,157 @@ msgid "Global scope methods are easier to set up, but they don't offer as much c
 msgstr ""
 
 #: ../../docs/tutorials/math/random_number_generation.rst:33
-msgid "RandomNumberGenerator requires more code to use, but allows creating multiple instances, each with their own seed and state."
+msgid "RandomNumberGenerator requires more code to use, but allows creating multiple instances, each with their own seed and state. This is useful in certain scenarios like networked multiplayer, replay systems, games that feature rewind mechanics, and more."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:36
+#: ../../docs/tutorials/math/random_number_generation.rst:38
 msgid "This tutorial uses global scope methods, except when the method only exists in the RandomNumberGenerator class."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:40
-msgid "The randomize() method"
+#: ../../docs/tutorials/math/random_number_generation.rst:42
+msgid "Random seed and internal state"
 msgstr ""
 
 #: ../../docs/tutorials/math/random_number_generation.rst:44
-msgid "Since Godot 4.0, the random seed is automatically set to a random value when the project starts. This means you don't need to call ``randomize()`` in ``_ready()`` anymore to ensure that results are random across project runs. However, you can still use ``randomize()`` if you want to use a specific seed number, or generate it using a different method."
+msgid "By default, Godot uses a random seed set according to the device's local time. This means that results will be different on every run. To get deterministic results, you can set a fixed seed using the :ref:`seed() <class_@GlobalScope_method_seed>` method. The *seed* is an integer that initializes the random number generator's state. If you use the same seed, you'll get the same sequence of random numbers every run."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:50
-msgid "In global scope, you can find a :ref:`randomize() <class_@GlobalScope_method_randomize>` method. **This method should be called only once when your project starts to initialize the random seed.** Calling it multiple times is unnecessary and may impact performance negatively."
+#: ../../docs/tutorials/math/random_number_generation.rst:68
+msgid "When using the RandomNumberGenerator class, you can set the :ref:`RandomNumberGenerator.seed <class_RandomNumberGenerator_property_seed>` property on individual instances:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:55
-msgid "Putting it in your main scene script's ``_ready()`` method is a good choice:"
+#: ../../docs/tutorials/math/random_number_generation.rst:83
+msgid "You can set the seed back to a randomly generated value using the :ref:`randomize() <class_@GlobalScope_method_randomize>` global scope method. This is also available as the :ref:`RandomNumberGenerator.randomize() <class_RandomNumberGenerator_method_randomize>` method on RandomNumberGenerator instances."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:70
-msgid "You can also set a fixed random seed instead using :ref:`seed() <class_@GlobalScope_method_seed>`. Doing so will give you *deterministic* results across runs:"
+#: ../../docs/tutorials/math/random_number_generation.rst:89
+msgid "Random number generators also feature an internal *state* that changes every time a random number is generated. This state is used to generate the next random number in the sequence."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:91
-msgid "When using the RandomNumberGenerator class, you should call ``randomize()`` on the instance since it has its own seed:"
+#: ../../docs/tutorials/math/random_number_generation.rst:93
+msgid "Unlike global scope random number generation, RandomNumberGenerator features a :ref:`state <class_RandomNumberGenerator_property_state>` property. This is useful if you are performing multiple random number operations, and you want to return to a previous state of the random number generator without changing the seed. To do so, store the current state in a variable, and then set the state property back to that variable when needed:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:106
+#: ../../docs/tutorials/math/random_number_generation.rst:130
 msgid "Getting a random number"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:108
+#: ../../docs/tutorials/math/random_number_generation.rst:132
 msgid "Let's look at some of the most commonly used functions and methods to generate random numbers in Godot."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:111
+#: ../../docs/tutorials/math/random_number_generation.rst:135
 msgid "The function :ref:`randi() <class_@GlobalScope_method_randi>` returns a random number between ``0`` and ``2^32 - 1``. Since the maximum value is huge, you most likely want to use the modulo operator (``%``) to bound the result between 0 and the denominator:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:133
+#: ../../docs/tutorials/math/random_number_generation.rst:157
 msgid ":ref:`randf() <class_@GlobalScope_method_randf>` returns a random floating-point number between 0 and 1. This is useful to implement a :ref:`doc_random_number_generation_weighted_random_probability` system, among other things."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:138
+#: ../../docs/tutorials/math/random_number_generation.rst:162
 msgid ":ref:`randfn() <class_@GlobalScope_method_randfn>` returns a random floating-point number following a `normal distribution <https://en.wikipedia.org/wiki/Normal_distribution>`__. This means the returned value is more likely to be around the mean (0.0 by default), varying by the deviation (1.0 by default):"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:155
+#: ../../docs/tutorials/math/random_number_generation.rst:179
 msgid ":ref:`randf_range() <class_@GlobalScope_method_randf_range>` takes two arguments ``from`` and ``to``, and returns a random floating-point number between ``from`` and ``to``:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:170
+#: ../../docs/tutorials/math/random_number_generation.rst:194
 msgid ":ref:`randi_range() <class_@GlobalScope_method_randi_range>` takes two arguments ``from`` and ``to``, and returns a random integer between ``from`` and ``to``:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:185
+#: ../../docs/tutorials/math/random_number_generation.rst:209
 msgid "Get a random array element"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:187
+#: ../../docs/tutorials/math/random_number_generation.rst:211
 msgid "We can use random integer generation to get a random element from an array, or use the :ref:`Array.pick_random<class_Array_method_pick_random>` method to do it for us:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:241
+#: ../../docs/tutorials/math/random_number_generation.rst:265
 msgid "To prevent the same fruit from being picked more than once in a row, we can add more logic to the above method. In this case, we can't use :ref:`Array.pick_random<class_Array_method_pick_random>` since it lacks a way to prevent repetition:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:304
+#: ../../docs/tutorials/math/random_number_generation.rst:328
 msgid "This approach can be useful to make random number generation feel less repetitive. Still, it doesn't prevent results from \"ping-ponging\" between a limited set of values. To prevent this, use the :ref:`shuffle bag <doc_random_number_generation_shuffle_bags>` pattern instead."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:310
+#: ../../docs/tutorials/math/random_number_generation.rst:334
 msgid "Get a random dictionary value"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:312
+#: ../../docs/tutorials/math/random_number_generation.rst:336
 msgid "We can apply similar logic from arrays to dictionaries as well:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:363
+#: ../../docs/tutorials/math/random_number_generation.rst:387
 msgid "Weighted random probability"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:365
+#: ../../docs/tutorials/math/random_number_generation.rst:389
 msgid "The :ref:`randf() <class_@GlobalScope_method_randf>` method returns a floating-point number between 0.0 and 1.0. We can use this to create a \"weighted\" probability where different outcomes have different likelihoods:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:421
-msgid "You can also get a weighted random *index* using the :ref:`rand_weighted() <class_RandomNumberGenerator_method_rand_weighted>` method on a RandomNumberGenerator instance. This returns a random integer between 0 and the size of the array that is passed as a parameter. Each value in the array is a floating-point number that represents the *relative* likelihood that it will be returned as an index. A higher value means the value is more likely to be returned as an index, while a value of ``0`` means it will never be returned as an index."
+#: ../../docs/tutorials/math/random_number_generation.rst:445
+msgid "You can also get a weighted random *index* using the :ref:`RandomNumberGenerator.rand_weighted() <class_RandomNumberGenerator_method_rand_weighted>` method on a RandomNumberGenerator instance. This returns a random integer between 0 and the size of the array that is passed as a parameter. Each value in the array is a floating-point number that represents the *relative* likelihood that it will be returned as an index. A higher value means the value is more likely to be returned as an index, while a value of ``0`` means it will never be returned as an index."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:429
+#: ../../docs/tutorials/math/random_number_generation.rst:453
 msgid "For example, if ``[0.5, 1, 1, 2]`` is passed as a parameter, then the method is twice as likely to return ``3`` (the index of the value ``2``) and twice as unlikely to return ``0`` (the index of the value ``0.5``) compared to the indices ``1`` and ``2``."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:433
+#: ../../docs/tutorials/math/random_number_generation.rst:457
 msgid "Since the returned value matches the array's size, it can be used as an index to get a value from another array as follows:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:462
+#: ../../docs/tutorials/math/random_number_generation.rst:486
 msgid "\"Better\" randomness using shuffle bags"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:464
+#: ../../docs/tutorials/math/random_number_generation.rst:488
 msgid "Taking the same example as above, we would like to pick fruits at random. However, relying on random number generation every time a fruit is selected can lead to a less *uniform* distribution. If the player is lucky (or unlucky), they could get the same fruit three or more times in a row."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:469
+#: ../../docs/tutorials/math/random_number_generation.rst:493
 msgid "You can accomplish this using the *shuffle bag* pattern. It works by removing an element from the array after choosing it. After multiple selections, the array ends up empty. When that happens, you reinitialize it to its default value:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:537
+#: ../../docs/tutorials/math/random_number_generation.rst:561
 msgid "When running the above code, there is a chance to get the same fruit twice in a row. Once we picked a fruit, it will no longer be a possible return value unless the array is now empty. When the array is empty, we reset it back to its default value, making it possible to have the same fruit again, but only once."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:543
+#: ../../docs/tutorials/math/random_number_generation.rst:567
 msgid "Random noise"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:545
+#: ../../docs/tutorials/math/random_number_generation.rst:569
 msgid "The random number generation shown above can show its limits when you need a value that *slowly* changes depending on the input. The input can be a position, time, or anything else."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:549
+#: ../../docs/tutorials/math/random_number_generation.rst:573
 msgid "To achieve this, you can use random *noise* functions. Noise functions are especially popular in procedural generation to generate realistic-looking terrain. Godot provides :ref:`class_fastnoiselite` for this, which supports 1D, 2D and 3D noise. Here's an example with 1D noise:"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:590
+#: ../../docs/tutorials/math/random_number_generation.rst:614
 msgid "Cryptographically secure pseudorandom number generation"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:592
+#: ../../docs/tutorials/math/random_number_generation.rst:616
 msgid "So far, the approaches mentioned above are **not** suitable for *cryptographically secure* pseudorandom number generation (CSPRNG). This is fine for games, but this is not sufficient for scenarios where encryption, authentication or signing is involved."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:597
+#: ../../docs/tutorials/math/random_number_generation.rst:621
 msgid "Godot offers a :ref:`class_Crypto` class for this. This class can perform asymmetric key encryption/decryption, signing/verification, while also generating cryptographically secure random bytes, RSA keys, HMAC digests, and self-signed :ref:`class_X509Certificate`\\ s."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:602
+#: ../../docs/tutorials/math/random_number_generation.rst:626
 msgid "The downside of :abbr:`CSPRNG (Cryptographically secure pseudorandom number generation)` is that it's much slower than standard pseudorandom number generation. Its API is also less convenient to use. As a result, :abbr:`CSPRNG (Cryptographically secure pseudorandom number generation)` should be avoided for gameplay elements."
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:608
+#: ../../docs/tutorials/math/random_number_generation.rst:632
 msgid "Example of using the Crypto class to generate 2 random integers between ``0`` and ``2^32 - 1`` (inclusive):"
 msgstr ""
 
-#: ../../docs/tutorials/math/random_number_generation.rst:630
+#: ../../docs/tutorials/math/random_number_generation.rst:654
 msgid "See :ref:`class_PackedByteArray`'s documentation for other methods you can use to decode the generated bytes into various types of data, such as integers or floats."
 msgstr ""

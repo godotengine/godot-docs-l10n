@@ -40,28 +40,28 @@ msgid "For each, you want to learn how they work in Godot's source code. Then, f
 msgstr ""
 
 #: ../../docs/engine_details/class_reference/index.rst:73
-msgid "`<brief_description>`"
+msgid "``<brief_description>``"
 msgstr ""
 
 #: ../../docs/engine_details/class_reference/index.rst:74
-msgid "`<description>`"
+msgid "``<description>``"
 msgstr ""
 
 #: ../../docs/engine_details/class_reference/index.rst:75
 #: ../../docs/engine_details/class_reference/index.rst:80
-msgid "`<constant>`"
+msgid "``<constant>``"
 msgstr ""
 
 #: ../../docs/engine_details/class_reference/index.rst:76
-msgid "`<method>` (in its `<description>` tag; return types and arguments don't take separate documentation strings)"
+msgid "``<method>`` (in its ``<description>`` tag; return types and arguments don't take separate documentation strings)"
 msgstr ""
 
 #: ../../docs/engine_details/class_reference/index.rst:78
-msgid "`<member>`"
+msgid "``<member>``"
 msgstr ""
 
 #: ../../docs/engine_details/class_reference/index.rst:79
-msgid "`<signal>` (in its `<description>` tag; arguments don't take separate documentation strings)"
+msgid "``<signal>`` (in its ``<description>`` tag; arguments don't take separate documentation strings)"
 msgstr ""
 
 #: ../../docs/engine_details/class_reference/index.rst:82
@@ -81,53 +81,53 @@ msgid "For some modules in the engine's source code, you'll find the XML files i
 msgstr ""
 
 #: ../../docs/engine_details/class_reference/index.rst:101
-msgid "Edit it using your favorite text editor. If you use a code editor, make sure that it doesn't change the indent style: you should use tabs for the XML and four spaces inside BBCode-style blocks. More on that below."
+msgid "Edit it using your favorite text editor. If you use a code editor, make sure that tabs are used for the indentation."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:105
+#: ../../docs/engine_details/class_reference/index.rst:104
 msgid "To check that the modifications you've made are correct in the generated documentation, navigate to the ``doc/`` folder and run the command ``make rst``. This will convert the XML files to the online documentation's format and output errors if anything's wrong."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:110
-msgid "Alternatively, you can build Godot and open the modified page in the built-in code reference. To learn how to compile the engine, read the :ref:`compilation guide <toc-devel-compiling>`."
+#: ../../docs/engine_details/class_reference/index.rst:109
+msgid "Alternatively, you can build Godot and open the modified page in the built-in class reference. To learn how to compile the engine, read the :ref:`compilation guide <toc-devel-compiling>`."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:114
+#: ../../docs/engine_details/class_reference/index.rst:113
 msgid "We recommend using a code editor that supports XML files like Vim, Atom, Visual Studio Code, Notepad++, or another to comfortably edit the file. You can also use their search feature to find classes and properties quickly."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:120
+#: ../../docs/engine_details/class_reference/index.rst:119
 msgid "If you use Visual Studio Code, you can install the `vscode-xml extension <https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml>`__ to get linting for class reference XML files."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:127
+#: ../../docs/engine_details/class_reference/index.rst:126
 msgid "Improve formatting with BBCode style tags"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:129
+#: ../../docs/engine_details/class_reference/index.rst:128
 msgid "Godot's XML class reference supports BBCode-like tags for linking as well as formatting text and code. In the tables below you can find the available tags, usage examples and the results after conversion to reStructuredText."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:133
+#: ../../docs/engine_details/class_reference/index.rst:132
 msgid "Linking"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:135
+#: ../../docs/engine_details/class_reference/index.rst:134
 msgid "Whenever you link to a member of another class, you need to specify the class name. For links to the same class, the class name is optional and can be omitted."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:139
-#: ../../docs/engine_details/class_reference/index.rst:183
+#: ../../docs/engine_details/class_reference/index.rst:138
+#: ../../docs/engine_details/class_reference/index.rst:182
 msgid "Tag and Description"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:139
-#: ../../docs/engine_details/class_reference/index.rst:183
+#: ../../docs/engine_details/class_reference/index.rst:138
+#: ../../docs/engine_details/class_reference/index.rst:182
 msgid "Example"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:139
-#: ../../docs/engine_details/class_reference/index.rst:183
+#: ../../docs/engine_details/class_reference/index.rst:138
+#: ../../docs/engine_details/class_reference/index.rst:182
 msgid "Result"
 msgstr ""
 
@@ -139,11 +139,11 @@ msgstr ""
 msgid "Link to class"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:141
+#: ../../docs/engine_details/class_reference/index.rst:140
 msgid "``Move the [Sprite2D].``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:141
+#: ../../docs/engine_details/class_reference/index.rst:140
 msgid "Move the :ref:`class_Sprite2D`."
 msgstr ""
 
@@ -155,11 +155,11 @@ msgstr ""
 msgid "Link to annotation"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:144
+#: ../../docs/engine_details/class_reference/index.rst:143
 msgid "``See [annotation @GDScript.@rpc].``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:144
+#: ../../docs/engine_details/class_reference/index.rst:143
 msgid "See :ref:`@GDScript.@rpc <class_@GDScript_annotation_@rpc>`."
 msgstr ""
 
@@ -171,11 +171,11 @@ msgstr ""
 msgid "Link to constant"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:147
+#: ../../docs/engine_details/class_reference/index.rst:146
 msgid "``See [constant Color.RED].``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:147
+#: ../../docs/engine_details/class_reference/index.rst:146
 msgid "See :ref:`Color.RED <class_Color_constant_RED>`."
 msgstr ""
 
@@ -187,11 +187,11 @@ msgstr ""
 msgid "Link to enum"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:150
+#: ../../docs/engine_details/class_reference/index.rst:149
 msgid "``See [enum Mesh.ArrayType].``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:150
+#: ../../docs/engine_details/class_reference/index.rst:149
 msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
 msgstr ""
 
@@ -203,11 +203,11 @@ msgstr ""
 msgid "Link to member"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:153
+#: ../../docs/engine_details/class_reference/index.rst:152
 msgid "``Get [member Node2D.scale].``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:153
+#: ../../docs/engine_details/class_reference/index.rst:152
 msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
 msgstr ""
 
@@ -219,11 +219,11 @@ msgstr ""
 msgid "Link to method"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:156
+#: ../../docs/engine_details/class_reference/index.rst:155
 msgid "``Call [method Node3D.hide].``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:156
+#: ../../docs/engine_details/class_reference/index.rst:155
 msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
 msgstr ""
 
@@ -235,12 +235,12 @@ msgstr ""
 msgid "Link to built-in constructor"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:159
+#: ../../docs/engine_details/class_reference/index.rst:158
 msgid "``Use [constructor Color.Color].``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:159
-msgid "Use  :ref:`Color.Color <class_Color_constructor_Color>`."
+#: ../../docs/engine_details/class_reference/index.rst:158
+msgid "Use :ref:`Color.Color <class_Color_constructor_Color>`."
 msgstr ""
 
 #: ../../docs/engine_details/class_reference/index.rst:0
@@ -251,12 +251,12 @@ msgstr ""
 msgid "Link to built-in operator"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:162
+#: ../../docs/engine_details/class_reference/index.rst:161
 msgid "``Use [operator Color.operator *].``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:162
-msgid "Use  :ref:`Color.operator * <class_Color_operator_mul_int>`."
+#: ../../docs/engine_details/class_reference/index.rst:161
+msgid "Use :ref:`Color.operator * <class_Color_operator_mul_int>`."
 msgstr ""
 
 #: ../../docs/engine_details/class_reference/index.rst:0
@@ -267,11 +267,11 @@ msgstr ""
 msgid "Link to signal"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:165
+#: ../../docs/engine_details/class_reference/index.rst:164
 msgid "``Emit [signal Node.renamed].``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:165
+#: ../../docs/engine_details/class_reference/index.rst:164
 msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
 msgstr ""
 
@@ -283,11 +283,11 @@ msgstr ""
 msgid "Link to theme item"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:168
+#: ../../docs/engine_details/class_reference/index.rst:167
 msgid "``See [theme_item Label.font].``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:168
+#: ../../docs/engine_details/class_reference/index.rst:167
 msgid "See :ref:`Label.font <class_Label_theme_font_font>`."
 msgstr ""
 
@@ -299,19 +299,19 @@ msgstr ""
 msgid "Parameter name (as code)"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:171
+#: ../../docs/engine_details/class_reference/index.rst:170
 msgid "``Takes [param size] for the size.``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:171
+#: ../../docs/engine_details/class_reference/index.rst:170
 msgid "Takes ``size`` for the size."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:177
+#: ../../docs/engine_details/class_reference/index.rst:176
 msgid "Currently only :ref:`class_@GDScript` has annotations."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:180
+#: ../../docs/engine_details/class_reference/index.rst:179
 msgid "Formatting text"
 msgstr ""
 
@@ -347,11 +347,11 @@ msgstr ""
 msgid "``[`` and ``]`` respectively"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:188
+#: ../../docs/engine_details/class_reference/index.rst:187
 msgid "``[lb]b[rb]text[lb]/b[rb]``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:188
+#: ../../docs/engine_details/class_reference/index.rst:187
 msgid "[b]text[/b]"
 msgstr ""
 
@@ -363,11 +363,11 @@ msgstr ""
 msgid "Bold"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:191
+#: ../../docs/engine_details/class_reference/index.rst:190
 msgid "``Do [b]not[/b] call this method.``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:191
+#: ../../docs/engine_details/class_reference/index.rst:190
 msgid "Do **not** call this method."
 msgstr ""
 
@@ -379,11 +379,11 @@ msgstr ""
 msgid "Italic"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:194
+#: ../../docs/engine_details/class_reference/index.rst:193
 msgid "``Returns the [i]global[/i] position.``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:194
+#: ../../docs/engine_details/class_reference/index.rst:193
 msgid "Returns the *global* position."
 msgstr ""
 
@@ -395,7 +395,7 @@ msgstr ""
 msgid "Underline"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:197
+#: ../../docs/engine_details/class_reference/index.rst:196
 msgid "``[u]Always[/u] use this method.``"
 msgstr ""
 
@@ -407,7 +407,7 @@ msgstr ""
 msgid "Strikethrough"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:201
+#: ../../docs/engine_details/class_reference/index.rst:200
 msgid "``[s]Outdated information.[/s]``"
 msgstr ""
 
@@ -443,7 +443,7 @@ msgstr ""
 msgid "Horizontal centering"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:208
+#: ../../docs/engine_details/class_reference/index.rst:207
 msgid "``[center]2 + 2 = 4[/center]``"
 msgstr ""
 
@@ -455,11 +455,11 @@ msgstr ""
 msgid "Keyboard/mouse shortcut"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:212
+#: ../../docs/engine_details/class_reference/index.rst:211
 msgid "``Press [kbd]Ctrl + C[/kbd].``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:212
+#: ../../docs/engine_details/class_reference/index.rst:211
 msgid "Press :kbd:`Ctrl + C`."
 msgstr ""
 
@@ -471,106 +471,102 @@ msgstr ""
 msgid "Inline code fragment"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:215
+#: ../../docs/engine_details/class_reference/index.rst:214
 msgid "``Returns [code]true[/code].``"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:215
+#: ../../docs/engine_details/class_reference/index.rst:214
 msgid "Returns ``true``."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:221
+#: ../../docs/engine_details/class_reference/index.rst:220
 msgid "Some supported tags like ``[color]`` and ``[font]`` are not listed here because they are not recommended in the engine documentation."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:222
+#: ../../docs/engine_details/class_reference/index.rst:221
 msgid "``[kbd]`` disables BBCode until the parser encounters ``[/kbd]``."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:223
+#: ../../docs/engine_details/class_reference/index.rst:222
 msgid "``[code]`` disables BBCode until the parser encounters ``[/code]``."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:226
+#: ../../docs/engine_details/class_reference/index.rst:225
 msgid "Formatting code blocks"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:228
+#: ../../docs/engine_details/class_reference/index.rst:227
 msgid "There are two options for formatting code blocks:"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:230
+#: ../../docs/engine_details/class_reference/index.rst:229
 msgid "Use ``[codeblock]`` if you want to add an example for a specific language."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:231
+#: ../../docs/engine_details/class_reference/index.rst:230
 msgid "Use ``[codeblocks]``, ``[gdscript]``, and ``[csharp]`` if you want to add the same example for both languages, GDScript and C#."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:233
+#: ../../docs/engine_details/class_reference/index.rst:232
 msgid "By default, ``[codeblock]`` highlights GDScript syntax. You can change it using the ``lang`` attribute. Currently supported options are:"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:236
+#: ../../docs/engine_details/class_reference/index.rst:235
 msgid "``[codeblock lang=text]`` disables syntax highlighting;"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:237
+#: ../../docs/engine_details/class_reference/index.rst:236
 msgid "``[codeblock lang=gdscript]`` highlights GDScript syntax;"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:238
+#: ../../docs/engine_details/class_reference/index.rst:237
 msgid "``[codeblock lang=csharp]`` highlights C# syntax (only in .NET version)."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:242
+#: ../../docs/engine_details/class_reference/index.rst:241
 msgid "``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:246
-msgid "Use ``[codeblock]`` for pre-formatted code blocks. Since Godot 4.5, **tabs** should be used for indentation."
-msgstr ""
-
-#: ../../docs/engine_details/class_reference/index.rst:249
+#: ../../docs/engine_details/class_reference/index.rst:243
 msgid "For example:"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:259
+#: ../../docs/engine_details/class_reference/index.rst:253
 msgid "Will display as:"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:267
+#: ../../docs/engine_details/class_reference/index.rst:261
 msgid "If you need to have different code version in GDScript and C#, use ``[codeblocks]`` instead. If you use ``[codeblocks]``, you also need to have at least one of the language-specific tags, ``[gdscript]`` and ``[csharp]``."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:271
+#: ../../docs/engine_details/class_reference/index.rst:265
 msgid "Always write GDScript code examples first! You can use this `experimental code translation tool <https://github.com/HaSa1002/codetranslator>`_ to speed up your workflow."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:292
+#: ../../docs/engine_details/class_reference/index.rst:286
 msgid "The above will display as:"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:310
+#: ../../docs/engine_details/class_reference/index.rst:304
 msgid "Formatting notes and warnings"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:312
+#: ../../docs/engine_details/class_reference/index.rst:306
 msgid "To denote important information, add a paragraph starting with \"[b]Note:[/b]\" at the end of the description:"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:319
+#: ../../docs/engine_details/class_reference/index.rst:313
 msgid "To denote crucial information that could cause security issues or loss of data if not followed carefully, add a paragraph starting with \"[b]Warning:[/b]\" at the end of the description:"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:327
+#: ../../docs/engine_details/class_reference/index.rst:321
 msgid "In all the paragraphs described above, make sure the punctuation is part of the BBCode tags for consistency."
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:331
+#: ../../docs/engine_details/class_reference/index.rst:325
 msgid "Marking API as deprecated/experimental"
 msgstr ""
 
-#: ../../docs/engine_details/class_reference/index.rst:333
+#: ../../docs/engine_details/class_reference/index.rst:327
 msgid "To mark an API as deprecated or experimental, you need to add the corresponding XML attribute. The attribute value must be a message explaining why the API is not recommended (BBCode markup is supported) or an empty string (the default message will be used). If an API element is marked as deprecated/experimental, then it is considered documented even if the description is empty."
 msgstr ""

@@ -184,15 +184,15 @@ msgid "A suffix can also be defined to make the value more self-explanatory in t
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:250
-msgid "For angles that are stored in radians but displayed as degrees to the user, use the `\"radians_as_degrees\"` hint:"
+msgid "For angles that are stored in radians but displayed as degrees to the user, use the ``\"radians_as_degrees\"`` hint:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:257
-msgid "This performs automatic conversion when the value is displayed or modified in the inspector and also displays a degree (``°``) suffix. This approach is used by Godot's own `rotation` properties throughout the editor."
+msgid "This performs automatic conversion when the value is displayed or modified in the inspector and also displays a degree (``°``) suffix. This approach is used by Godot's own ``rotation`` properties throughout the editor."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:261
-msgid "If the angle is stored in degrees instead, use the `\"degrees\"` hint to display the degree symbol while disabling the automatic degrees-to-radians conversion when the value is modified from the inspector."
+msgid "If the angle is stored in degrees instead, use the ``\"degrees\"`` hint to display the degree symbol while disabling the automatic degrees-to-radians conversion when the value is modified from the inspector."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:266
@@ -359,7 +359,7 @@ msgid "Arrays with specified types which inherit from resource can be set by dra
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:514
-msgid "Packed type arrays also work, but only initialized empty:"
+msgid "Packed arrays also work, but only if initialized empty:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:521

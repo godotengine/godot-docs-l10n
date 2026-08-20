@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:4
+msgid "WebXR"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:6
+msgid "WebXR is a web standard for delivering XR experiences right from a web browser, without the user needing to install anything. Godot has built-in support for WebXR."
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:11
+msgid "As this uses the HTML export WebXR requires the use of the compatibility renderer. Godot currently requires multiview support for stereo rendering which is not available on all WebXR capable devices."
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:15
+msgid "Setup"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:17
+msgid "Setting up WebXR is a little different because your application always starts as a normal non-XR webpage. We thus define a 2D UI on our main page that includes a button that will switch to XR."
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:20
+msgid "We will need the following code to make things work:"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:117
+msgid "Make sure the \"Enable WebXR\" button's ``button_pressed`` signal calls the ``_on_enter_webxr_button_pressed`` method."
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:121
+msgid "In the code above we attempt to use the ``local-floor`` reference spaces. This reference spaces assumes gameplay where we need to know the player's height from the floor."
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:124
+msgid "For games where the player is seated inside of a vehicle, such as flight sims or racing games, the reference space ``local`` may be more appropriate."
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:128
+msgid "Controller input"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:130
+msgid "The input system in WebXR works against a fixed set of inputs that obfuscate the actual hardware being used. In order to allow for code to be portable between a WebXR and OpenXR application these inputs are mapped to actions that overlap with the default action map used by our OpenXR interface."
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:132
+msgid "There are small differences such as WebXR separating touchpad and thumbsticks as separate inputs, instead of the primary and secondary input setup found in our default OpenXR action map."
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:134
+msgid "The core inputs are available for WebXR:"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:141
+msgid "Name"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:141
+msgid "Type"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:141
+msgid "Description"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:143
+msgid "trigger_click"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:143
+#: ../../docs/tutorials/xr/webxr_intro.rst:147
+#: ../../docs/tutorials/xr/webxr_intro.rst:151
+#: ../../docs/tutorials/xr/webxr_intro.rst:153
+#: ../../docs/tutorials/xr/webxr_intro.rst:155
+#: ../../docs/tutorials/xr/webxr_intro.rst:157
+msgid "Boolean"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:143
+msgid "``true`` if the trigger is pressed"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:145
+msgid "trigger"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:145
+#: ../../docs/tutorials/xr/webxr_intro.rst:149
+#: ../../docs/tutorials/xr/webxr_intro.rst:159
+#: ../../docs/tutorials/xr/webxr_intro.rst:161
+#: ../../docs/tutorials/xr/webxr_intro.rst:165
+#: ../../docs/tutorials/xr/webxr_intro.rst:167
+msgid "Float"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:145
+msgid "Trigger value between 0.0 and 1.0"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:147
+msgid "grip_click"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:147
+msgid "``true`` if the grip button is pressed"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:149
+msgid "grip"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:149
+msgid "Grip value between 0.0 and 1.0"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:151
+msgid "touchpad_click"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:151
+msgid "``true`` if the touchpad is pressed"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:153
+msgid "thumbstick_click"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:153
+msgid "``true`` if the thumbstick is pressed"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:155
+msgid "ax_button"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:155
+msgid "``true`` if the A or X button is pressed"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:157
+msgid "by_button"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:157
+msgid "``true`` if the B or Y button is pressed"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:159
+msgid "touchpad_x"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:159
+msgid "Finger movement on the touchpad in the X direction"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:161
+msgid "touchpad_y"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:161
+msgid "Finger movement on the touchpad in the Y direction"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:163
+msgid "touchpad"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:163
+#: ../../docs/tutorials/xr/webxr_intro.rst:169
+msgid "Vector2"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:163
+msgid "Touchpad input as a Vector2"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:165
+msgid "thumbstick_x"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:165
+msgid "Thumbstick movement in the X direction"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:167
+msgid "thumbstick_y"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:167
+msgid "Thumbstick movement in the Y direction"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:169
+msgid "thumbstick"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:169
+msgid "Thumbstick input as a Vector2"
+msgstr ""
+
+#: ../../docs/tutorials/xr/webxr_intro.rst:172
+msgid "WebXR also exposes ``aim`` and ``grip`` poses that respectively identify a forward facing location at the tip of the controller and a position on the controller grip."
+msgstr ""

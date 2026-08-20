@@ -32,7 +32,6 @@ msgid "Godot is a game engine first and foremost. This means that creating appli
 msgstr ""
 
 #: ../../docs/tutorials/ui/creating_applications.rst:20
-#: ../../docs/tutorials/ui/creating_applications.rst:724
 msgid "Check out `Material Maker <https://github.com/RodZill4/material-maker>`__ and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for examples of open source applications made with Godot."
 msgstr ""
 
@@ -516,170 +515,170 @@ msgstr ""
 msgid "Consider setting :ref:`display/window/vsync/vsync_mode <class_ProjectSettings_property_display/window/vsync/vsync_mode>` to **Disabled** to reduce input lag. This is particularly helpful in latency-sensitive projects such as drawing applications. This may increase power usage and cause screen tearing, so it's recommended to provide an option for the user to toggle V-Sync as needed."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:729
+#: ../../docs/tutorials/ui/creating_applications.rst:725
 msgid "Mobile"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:731
+#: ../../docs/tutorials/ui/creating_applications.rst:727
 msgid "When designing an application for mobile platforms, there are several settings you can enable to improve usability:"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:734
+#: ../../docs/tutorials/ui/creating_applications.rst:730
 msgid "**Android:**"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:736
+#: ../../docs/tutorials/ui/creating_applications.rst:732
 msgid "Enable :ref:`input_devices/pointing/android/enable_long_press_as_right_click <class_ProjectSettings_property_input_devices/pointing/android/enable_long_press_as_right_click>` to allow users to perform right-click actions using a long press gesture."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:739
+#: ../../docs/tutorials/ui/creating_applications.rst:735
 msgid "Enable :ref:`input_devices/pointing/android/enable_pan_and_scale_gestures <class_ProjectSettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures>` to allow users to pan and zoom using touch gestures. This will emulate :ref:`class_InputEventPanGesture` and :ref:`class_InputEventMagnifyGesture` events, which can be handled in your project's code and are normally emitted by laptop trackpads."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:745
+#: ../../docs/tutorials/ui/creating_applications.rst:741
 msgid "Disable :menu:`Screen > Immersive Mode` in the Android export preset to show the system status and navigation bars while the application is active. Additionally, enable :menu:`Screen > Edge to Edge` to make status bars and navigation icons translucent and draw on top of the application. If you do so, make sure your application leaves enough space available for the status bar and navigation icons. You can use :ref:`DisplayServer.get_display_safe_area <class_DisplayServer_method_get_display_safe_area>` and :ref:`DisplayServer.get_display_cutouts <class_DisplayServer_method_get_display_cutouts>` to query the area in which your application can safely draw."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:755
+#: ../../docs/tutorials/ui/creating_applications.rst:751
 msgid "**iOS:**"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:757
+#: ../../docs/tutorials/ui/creating_applications.rst:753
 msgid "Disable :ref:`display/window/ios/hide_home_indicator <class_ProjectSettings_property_display/window/ios/hide_home_indicator>` to show the home indicator on top of the application."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:760
+#: ../../docs/tutorials/ui/creating_applications.rst:756
 msgid "Disable :ref:`display/window/ios/hide_status_bar <class_ProjectSettings_property_display/window/ios/hide_status_bar>` to keep the status bar visible when the application is active."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:763
+#: ../../docs/tutorials/ui/creating_applications.rst:759
 msgid "Disable :ref:`display/window/ios/suppress_ui_gesture <class_ProjectSettings_property_display/window/ios/suppress_ui_gesture>` to allow UI gestures to work immediately, without requiring them to be done twice."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:768
+#: ../../docs/tutorials/ui/creating_applications.rst:764
 msgid "Adding unit tests"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:770
+#: ../../docs/tutorials/ui/creating_applications.rst:766
 msgid "In an application, there is often more value in having a `unit testing <https://en.wikipedia.org/wiki/Unit_testing>`__ setup compared to a game. This can be used to catch regressions in an automated manner, which tends to be easier to do in an application scenario where logic can be cleanly separated."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:776
+#: ../../docs/tutorials/ui/creating_applications.rst:772
 msgid "GDScript does not feature an integrated unit testing framework, but several plugins for unit testing maintained by the community exist:"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:779
+#: ../../docs/tutorials/ui/creating_applications.rst:775
 msgid "`Gut <https://github.com/bitwes/Gut>`__"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:780
+#: ../../docs/tutorials/ui/creating_applications.rst:776
 msgid "`GdUnit4 <https://github.com/godot-gdunit-labs/gdUnit4>`__ (also supports C#)"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:782
+#: ../../docs/tutorials/ui/creating_applications.rst:778
 msgid "With C# and GDExtension (C++, Rust, etc.), you can use standard testing frameworks such as NUnit or `doctest <https://github.com/doctest/doctest>`__."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:786
+#: ../../docs/tutorials/ui/creating_applications.rst:782
 msgid "Optimizing distribution size"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:788
+#: ../../docs/tutorials/ui/creating_applications.rst:784
 msgid "Since non-game applications generally avoid using large parts of the engine, such as audio or 3D functionality, you can compile an optimized export template to reduce its file size. This will also improve startup times, especially on the web platform where binary size is directly linked to initialization speeds."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:794
+#: ../../docs/tutorials/ui/creating_applications.rst:790
 msgid "The size reduction is often significant (relative to the project's size), since applications contain fewer large assets compared to games. See :ref:`doc_optimizing_for_size` for more information on how to do this."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:799
+#: ../../docs/tutorials/ui/creating_applications.rst:795
 msgid "Creating a single-executable distribution"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:801
+#: ../../docs/tutorials/ui/creating_applications.rst:797
 msgid "By default, Godot creates a PCK file containing the project data next to the executable. This means that if the executable is moved without moving the PCK file at the same time, the application will not run. This is not ideal for applications, which are increasingly being distributed as a single executable file."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:807
+#: ../../docs/tutorials/ui/creating_applications.rst:803
 msgid "To make the application entirely self-contained to a single executable, you can enable **Embed PCK** in the export preset options. This will embed the PCK data within the executable, so that the application can be moved around without breaking. This also makes it possible to run the application directly from a ZIP archive without having to extract it first."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:815
+#: ../../docs/tutorials/ui/creating_applications.rst:811
 msgid "PCK embedding has a size limitation depending on the platform. Very large applications (several GBs) may not be able to use this feature on all platforms. Check the export documentation for the target platform for more details."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:820
+#: ../../docs/tutorials/ui/creating_applications.rst:816
 msgid "Creating portable applications"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:822
+#: ../../docs/tutorials/ui/creating_applications.rst:818
 msgid "An application is called *portable* when it can be run without installation, and when its configuration is entirely self-contained to the folder it was extracted to. This allows placing the application files on an USB drive or similar, and running it on different machines without having to go through an installation process."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:828
+#: ../../docs/tutorials/ui/creating_applications.rst:824
 msgid "The Godot editor's own :ref:`self-contained mode <doc_data_paths_self_contained_mode>` currently can't be used within projects. However, you can still choose to save your own configuration files to the folder containing the executable as follows:"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:837
+#: ../../docs/tutorials/ui/creating_applications.rst:833
 msgid "You may want to make portable mode optional as it's not always desired. Typically, this is performed by detecting the presence of a specific file in the executable's folder (e.g. a file named ``portable.txt``), and only using the executable's folder for configuration if that file is present."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:844
+#: ../../docs/tutorials/ui/creating_applications.rst:840
 msgid "Remember that this will only work if the application is extracted to a writable location. This will result in permission errors if the executable is run from a read-only location, such as ``C:\\Program Files`` on Windows."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:849
+#: ../../docs/tutorials/ui/creating_applications.rst:845
 msgid "Creating installers"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:851
+#: ../../docs/tutorials/ui/creating_applications.rst:847
 msgid "While games are typically installed through launchers such as Steam or downloaded as a ZIP, applications are often distributed as installers for better desktop integration. The installer can perform actions like adding shortcuts to the Start Menu or desktop, setting up file associations, and more. Installers can also be run automatically through the command line, which makes them more desirable for corporate environments."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:858
+#: ../../docs/tutorials/ui/creating_applications.rst:854
 msgid "Godot does not have built-in support for creating installers for exported projects. However, it is still possible to create your own installers using third-party tools."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:861
+#: ../../docs/tutorials/ui/creating_applications.rst:857
 msgid "Here is a non-exhaustive list of tools that can be used to create installers:"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:863
+#: ../../docs/tutorials/ui/creating_applications.rst:859
 msgid "**Windows:** `Inno Setup <https://jrsoftware.org/isinfo.php>`__, `NSIS <https://nsis.sourceforge.io/Main_Page>`__"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:866
+#: ../../docs/tutorials/ui/creating_applications.rst:862
 msgid "If you have a code signing certificate, remember to sign *both* the installer and project executable. To do so, :ref:`sign the exported project executable <doc_exporting_for_windows_code_signing>`, create the installer containing the exported project, then manually sign the installer that you just created."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:872
+#: ../../docs/tutorials/ui/creating_applications.rst:868
 msgid "**macOS:** `create-dmg <https://github.com/create-dmg/create-dmg>`__"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:874
+#: ../../docs/tutorials/ui/creating_applications.rst:870
 msgid "**Linux:** `Flatpak <https://docs.flatpak.org/en/latest/first-build.html>`__"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:876
+#: ../../docs/tutorials/ui/creating_applications.rst:872
 msgid "There is a `Godot BaseApp <https://github.com/flathub/org.godotengine.Godot.BaseApp>`__ that can be used as a base for creating Flatpak packages for Godot projects. See `the Pixelorama Flatpak <https://github.com/flathub/com.orama_interactive.Pixelorama>`__ for an example Flatpak that makes use of this BaseApp."
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:882
+#: ../../docs/tutorials/ui/creating_applications.rst:878
 msgid "Resources"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:884
+#: ../../docs/tutorials/ui/creating_applications.rst:880
 msgid "These pages cover tasks commonly performed in non-game applications:"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:886
+#: ../../docs/tutorials/ui/creating_applications.rst:882
 msgid ":ref:`doc_runtime_loading_and_saving`"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:887
+#: ../../docs/tutorials/ui/creating_applications.rst:883
 msgid ":ref:`doc_http_request_class`"
 msgstr ""
 
-#: ../../docs/tutorials/ui/creating_applications.rst:888
+#: ../../docs/tutorials/ui/creating_applications.rst:884
 msgid ":ref:`class_ConfigFile` (used to save user preferences)"
 msgstr ""

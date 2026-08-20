@@ -52,7 +52,7 @@ msgid "Provide scons with additional arguments to request a solution file genera
 msgstr ""
 
 #: ../../docs/engine_details/development/configuring_an_ide/rider.rst:29
-msgid "Add `vsproj=yes dev_build=yes` to the scons command"
+msgid "Add ``vsproj=yes dev_build=yes`` to the scons command"
 msgstr ""
 
 #: ../../docs/engine_details/development/configuring_an_ide/rider.rst:31
@@ -60,101 +60,105 @@ msgid "The ``vsproj`` parameter signals that you want Visual Studio solution gen
 msgstr ""
 
 #: ../../docs/engine_details/development/configuring_an_ide/rider.rst:34
+msgid "Each SCons run only generates the ``.generated.props`` file for a single Solution Configuration. Please run SCons once per target you plan to use:"
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:43
 msgid "Open the generated ``godot.sln`` in Rider."
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:36
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:45
 msgid "Ensure that the appropriate Solution configuration is selected on the Rider toolbar. It affects resolve of the SDKs, code analysis, build, run, etc."
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:41
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:50
 msgid "Compiling and debugging the project"
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:42
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:51
 msgid "Rider comes with a built-in debugger that can be used to debug the Godot project. You can launch the debugger by pressing the **Debug** icon at the top of the screen, this only works for the Project Manager, if you want to debug the editor, you need to configure the debugger first."
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:49
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:58
 msgid "Click on the **Godot > Edit Configurations** option at the top of the screen."
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:54
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:63
 msgid "Ensure the following values for the C++ Project Run Configuration:"
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:56
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:65
 msgid "Exe Path : ``$(LocalDebuggerCommand)``"
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:57
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:66
 msgid "Program Arguments: ``-e --path <path to the Godot project>``"
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:58
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:67
 msgid "Working Directory: ``$(LocalDebuggerWorkingDirectory)``"
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:59
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:68
 msgid "Before Launch has a value of \"Build Project\""
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:61
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:70
 msgid "This will tell the executable to debug the specified project without opening the Project Manager. Use the root path to the project folder, not ``project.godot`` file path."
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:67
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:76
 msgid "Finally click on \"Apply\" and \"OK\" to save the changes."
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:69
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:78
 msgid "When you press the **Debug** icon at the top of the screen, JetBrains Rider will launch the Godot editor with the debugger attached."
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:71
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:80
 msgid "Alternatively you can use **Run > Attach to Process** to attach the debugger to a running Godot instance."
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:76
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:85
 msgid "You can find the Godot instance by searching for ``godot.editor`` and then clicking ``Attach with LLDB``"
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:84
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:93
 msgid "Debug visualizers"
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:85
-msgid "Debug visualizers customize how complex data structures are displayed during debugging. For Windows \"natvis\" (short for \"Native Visualization\") built-in with Godot are automatically used. For other operating systems, similar functionality can be setup manually."
-msgstr ""
-
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:89
-msgid "Please follow `RIDER-123535 <https://youtrack.jetbrains.com/issue/RIDER-123535/nix-Debug-Godot-Cpp-from-Rider-pretty-printers-usability>`_."
-msgstr ""
-
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:92
-msgid "Unit testing"
-msgstr ""
-
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:93
-msgid "Leverage Rider :ref:`doctest<doc_unit_testing>` support. Please refer to `the instructions <https://github.com/JetBrains/godot-support/wiki/Godot-doctest-Unit-Tests>`_."
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:94
+msgid "Debug visualizers customize how complex data structures are displayed during debugging. The \"natvis\" (short for \"Native Visualization\") files built-in with Godot are automatically used."
 msgstr ""
 
 #: ../../docs/engine_details/development/configuring_an_ide/rider.rst:97
-msgid "Profiling"
-msgstr ""
-
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:98
-msgid "Please refer to `the profiling instructions <https://github.com/JetBrains/godot-support/wiki/Profiling-Godot-engine-(native-code)-with-dotTrace-or-JetBrains-Rider>`_."
+msgid "On macOS and Linux, natvis support requires Rider 2026.2 or later."
 msgstr ""
 
 #: ../../docs/engine_details/development/configuring_an_ide/rider.rst:100
+msgid "Unit testing"
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:101
+msgid "Leverage Rider :ref:`doctest<doc_unit_testing>` support. Please refer to `the instructions <https://github.com/JetBrains/godot-support/wiki/Godot-doctest-Unit-Tests>`_."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:105
+msgid "Profiling"
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:106
+msgid "Please refer to `the profiling instructions <https://github.com/JetBrains/godot-support/wiki/Profiling-Godot-engine-(native-code)-with-dotTrace-or-JetBrains-Rider>`_."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:108
 msgid "Please consult the `JetBrains Rider documentation <https://www.jetbrains.com/rider/documentation/>`_ for any specific information about the JetBrains IDE."
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:103
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:111
 msgid "Known issues"
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:104
+#: ../../docs/engine_details/development/configuring_an_ide/rider.rst:112
 msgid "Debugging Windows MinGV build - symbols are not loaded. Reported `RIDER-106816 <https://youtrack.jetbrains.com/issue/RIDER-106816/Upgrade-LLDB-to-actual-version>`_."
 msgstr ""

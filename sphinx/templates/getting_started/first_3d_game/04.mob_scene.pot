@@ -104,7 +104,7 @@ msgid "Once a monster leaves the screen, we don't need it anymore, so we should 
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:68
-msgid "When you keep instancing an object, there's a technique you can use to avoid the cost of creating and destroying instances all the time called pooling. It consists of pre-creating an array of objects and reusing them over and over."
+msgid "When you keep instantiating an object, there's a technique you can use to avoid the cost of creating and destroying instances all the time called pooling. It consists of pre-creating an array of objects and reusing them over and over."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:73
@@ -176,7 +176,7 @@ msgid "We position the mob at ``start_position`` and turn it towards the player 
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:181
-msgid "We got a random position, now we need a ``random_speed``. ``randi_range()`` will be useful as it gives random int values, and we will use ``min_speed`` and ``max_speed``. ``random_speed`` is just an integer, and we just use it to multiply our ``CharacterBody3D.velocity``. After ``random_speed`` is applied, we rotate ``CharacterBody3D.velocity`` Vector3 towards the player."
+msgid "We got a random position, now we need a ``random_speed``. ``randf_range()`` will be useful as it gives random float values, and we will use ``min_speed`` and ``max_speed``. ``random_speed`` is just an float, and we just use it to multiply our ``CharacterBody3D.velocity``. After ``random_speed`` is applied, we rotate ``CharacterBody3D.velocity`` Vector3 towards the player."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:214

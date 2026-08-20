@@ -32,297 +32,325 @@ msgid "Projects written in C# can be exported to Android as of Godot 4.2, but su
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:22
-msgid "Install OpenJDK 17"
+msgid "Setup on Android"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:24
-msgid "Download and install `OpenJDK 17 <https://adoptium.net/temurin/releases/?variant=openjdk17&version=17&os=any&arch=any>`__."
+msgid "When exporting to Android from the Android editor, you do **not** need to install OpenJDK or the Android SDK when exporting to Android, regardless of the export method used (pre-built APK or Gradle build)."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:28
-msgid "Higher versions of the JDK are also supported, but we recommend using JDK 17 for optimal compatibility and stability."
+msgid "However, if you are performing a Gradle build, you will need to follow some steps described in :ref:`doc_android_gradle_build`."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:31
-msgid "Download the Android SDK"
+msgid "You can then skip to :ref:`doc_exporting_for_android_providing_launcher_icons`."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:33
-msgid "Download and install the Android SDK."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:35
-msgid "You can install the Android SDK using `Android Studio Iguana (version 2023.2.1) or later <https://developer.android.com/studio/>`__."
+#: ../../docs/tutorials/export/exporting_for_android.rst:34
+msgid "Setup on Windows, macOS, and Linux"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:37
-msgid "Run it once to complete the SDK setup using these `instructions <https://developer.android.com/studio/intro/update#sdk-manager>`__."
+msgid "Install OpenJDK 17"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:38
-msgid "Ensure that the `required packages <https://developer.android.com/studio/intro/update#required>`__ are installed as well."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:40
-msgid "Android SDK Platform-Tools version 35.0.0 or later"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:41
-msgid "Android SDK Build-Tools version 35.0.1"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:42
-msgid "Android SDK Platform 35"
+#: ../../docs/tutorials/export/exporting_for_android.rst:39
+msgid "Download and install `OpenJDK 17 <https://adoptium.net/temurin/releases/?variant=openjdk17&version=17&os=any&arch=any>`__."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:43
-msgid "Android SDK Command-line Tools (latest)"
+msgid "Higher versions of the JDK are also supported, but we recommend using JDK 17 for optimal compatibility and stability."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:45
-msgid "Ensure that the `NDK and CMake are installed and configured <https://developer.android.com/studio/projects/install-ndk>`__."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:47
-msgid "CMake version 3.10.2.4988404"
+#: ../../docs/tutorials/export/exporting_for_android.rst:46
+msgid "Download the Android SDK"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:48
-msgid "NDK version r28b (28.1.13356709)"
+msgid "Download and install the Android SDK."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:50
-msgid "Alternatively, you can install the Android SDK with the `sdkmanager` command line tool."
+msgid "You can install the Android SDK using `Android Studio Iguana (version 2023.2.1) or later <https://developer.android.com/studio/>`__."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:52
-msgid "Install the command line tools package using these `instructions <https://developer.android.com/tools/sdkmanager>`__."
+msgid "Run it once to complete the SDK setup using these `instructions <https://developer.android.com/studio/intro/update#sdk-manager>`__."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:53
-msgid "Once the command line tools are installed, run the following `sdkmanager` command to complete the setup process:"
+msgid "Ensure that the `required packages <https://developer.android.com/studio/intro/update#required>`__ are installed as well."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:61
-msgid "If you are using Linux, **do not use an Android SDK provided by your distribution's repositories as it will often be outdated**."
+#: ../../docs/tutorials/export/exporting_for_android.rst:55
+msgid "Android SDK Platform-Tools version 35.0.0 or later"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:66
-msgid "Setting it up in Godot"
+#: ../../docs/tutorials/export/exporting_for_android.rst:56
+msgid "Android SDK Build-Tools version 35.0.1"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:57
+msgid "Android SDK Platform 35"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:58
+msgid "Android SDK Command-line Tools (latest)"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:60
+msgid "Ensure that the `NDK and CMake are installed and configured <https://developer.android.com/studio/projects/install-ndk>`__."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:62
+msgid "CMake version 3.10.2.4988404"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:63
+msgid "NDK version r28b (28.1.13356709)"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:65
+msgid "Alternatively, you can install the Android SDK with the ``sdkmanager`` command line tool."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:67
+msgid "Install the command line tools package using these `instructions <https://developer.android.com/tools/sdkmanager>`__."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:68
-msgid "Enter the Editor Settings screen (under the Godot tab for macOS, or the Editor tab for other platforms). This screen contains the editor settings for the user account in the computer (it's independent of the project)."
+msgid "Once the command line tools are installed, run the following ``sdkmanager`` command to complete the setup process:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:74
-msgid "Scroll down to the section where the Android settings are located:"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:78
-msgid "In that screen, 2 paths need to be set:"
+#: ../../docs/tutorials/export/exporting_for_android.rst:76
+msgid "If you are using Linux, **do not use an Android SDK provided by your distribution's repositories as it will often be outdated**."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:80
-msgid "``Java SDK Path`` should be the location where OpenJDK 17 was installed."
+msgid "Setting it up in Godot"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:82
+msgid "Enter the Editor Settings screen (under the Godot tab for macOS, or the Editor tab for other platforms). This screen contains the editor settings for the user account in the computer (it's independent of the project)."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:88
+msgid "Scroll down to the section where the Android settings are located:"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:92
+msgid "In that screen, 2 paths need to be set:"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:94
+msgid "``Java SDK Path`` should be the location where OpenJDK 17 was installed."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:96
 msgid "``Android SDK Path`` should be the location where the Android SDK was installed. This directory should contain ``platform-tools/adb``. - For example ``%LOCALAPPDATA%\\Android\\Sdk\\`` on Windows or ``/Users/$USER/Library/Android/sdk/`` on macOS."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:85
+#: ../../docs/tutorials/export/exporting_for_android.rst:99
 msgid "Once that is configured, everything is ready to export to Android!"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:89
+#: ../../docs/tutorials/export/exporting_for_android.rst:103
 msgid "If you get an error saying *\"Could not install to device.\"*, make sure you do not have an application with the same Android package name already installed on the device (but signed with a different key)."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:93
+#: ../../docs/tutorials/export/exporting_for_android.rst:107
 msgid "If you have an application with the same Android package name but a different signing key already installed on the device, you **must** remove the application in question from the Android device before exporting to Android again."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:99
+#: ../../docs/tutorials/export/exporting_for_android.rst:115
 msgid "Providing launcher icons"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:101
+#: ../../docs/tutorials/export/exporting_for_android.rst:117
 msgid "Launcher icons are used by Android launcher apps to represent your application to users. Godot only requires high-resolution icons (for ``xxxhdpi`` density screens) and will automatically generate lower-resolution variants."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:103
+#: ../../docs/tutorials/export/exporting_for_android.rst:119
 msgid "There are three types of icons:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:105
+#: ../../docs/tutorials/export/exporting_for_android.rst:121
 msgid "**Main Icon:** The \"classic\" icon. This will be used on all Android versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:106
+#: ../../docs/tutorials/export/exporting_for_android.rst:122
 msgid "**Adaptive Icons:** Starting from Android 8 (inclusive), `Adaptive Icons <https://developer.android.com/develop/ui/compose/system/icon_design_adaptive>`_ were introduced. Applications will need to include separate background and foreground icons to have a native look. The user's launcher application will control the icon's animation and masking. Must be at least 432×432 px."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:107
+#: ../../docs/tutorials/export/exporting_for_android.rst:123
 msgid "**Themed Icons (optional):** Starting from Android 13 (inclusive), Themed Icons were introduced. Applications will need to include a monochrome icon to enable this feature. The user's launcher application will control the icon's theme. Must be at least 432×432 px."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:109
+#: ../../docs/tutorials/export/exporting_for_android.rst:125
 msgid "It's important to adhere to some rules when designing adaptive icons. `Google Design has provided a nice article <https://medium.com/google-design/designing-adaptive-icons-515af294c783>`_ that helps to understand those rules and some of the capabilities of adaptive icons."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:111
+#: ../../docs/tutorials/export/exporting_for_android.rst:127
 msgid "The most important adaptive icon design rule is to have your icon critical elements inside the safe zone: a centered circle with a diameter of 66dp (264 pixels on ``xxxhdpi``) to avoid being clipped by the launcher."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:113
+#: ../../docs/tutorials/export/exporting_for_android.rst:129
 msgid "If you don't provide the requested icons (except for Monochrome), Godot will replace them using a fallback chain, trying the next in line when the current one fails:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:115
+#: ../../docs/tutorials/export/exporting_for_android.rst:131
 msgid "**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:116
+#: ../../docs/tutorials/export/exporting_for_android.rst:132
 msgid "**Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon -> Project icon -> Default Godot foreground icon."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:117
+#: ../../docs/tutorials/export/exporting_for_android.rst:133
 msgid "**Adaptive Icon Background:** Provided background icon -> Default Godot background icon."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:119
+#: ../../docs/tutorials/export/exporting_for_android.rst:135
 msgid "It's highly recommended to provide all the requested icons with their specified resolutions. This way, your application will look great on all Android devices and versions."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:123
+#: ../../docs/tutorials/export/exporting_for_android.rst:139
 msgid "Exporting for Google Play Store"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:125
-msgid "All new apps uploaded to Google Play after August 2021 must be an AAB (Android App Bundle) file."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:128
-msgid "Uploading an AAB or APK to Google's Play Store requires you to sign using a non-debug keystore file; such a file can be generated like this:"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:135
-msgid "This keystore and key are used to verify your developer identity, remember the password and keep it in a safe place! It is suggested to use only upper and lowercase letters and numbers. Special characters may cause errors. Use Google's Android Developer guides to learn more about `app signing <https://developer.android.com/studio/publish/app-signing>`__."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:139
-msgid "Now fill in the following forms in your Android Export Presets:"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:143
-msgid "**Release:** Enter the path to the keystore file you just generated."
+#: ../../docs/tutorials/export/exporting_for_android.rst:141
+msgid "All new apps uploaded to Google Play after August 2021 must be an AAB (Android App Bundle) file. To export an AAB file you need to set up :ref:`doc_android_gradle_build`."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:144
+msgid "Uploading an AAB or APK to Google's Play Store requires you to sign using a non-debug keystore file; such a file can be generated like this:"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:151
+msgid "This keystore and key are used to verify your developer identity, remember the password and keep it in a safe place! It is suggested to use only upper and lowercase letters and numbers. Special characters may cause errors. Use Google's Android Developer guides to learn more about `app signing <https://developer.android.com/studio/publish/app-signing>`__."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:155
+msgid "Now fill in the following forms in your Android Export Presets:"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:159
+msgid "**Release:** Enter the path to the keystore file you just generated."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:160
 msgid "**Release User:** Replace with the key alias."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:145
+#: ../../docs/tutorials/export/exporting_for_android.rst:161
 msgid "**Release Password:** Key password. Note that the keystore password and the key password currently have to be the same."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:147
+#: ../../docs/tutorials/export/exporting_for_android.rst:163
 msgid "Don't forget to uncheck the **Export With Debug** checkbox while exporting."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:152
+#: ../../docs/tutorials/export/exporting_for_android.rst:168
 msgid "Optimizing the file size"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:154
-msgid "If you're working with APKs and not AABs, by default, the APK will contain native libraries for both ARMv7 and ARMv8 architectures. This increases its size significantly. To create a smaller file, uncheck either **Armeabi-v 7a** or **Arm 64 -v 8a** in your project's Android export preset. This will create an APK that only contains a library for a single architecture. Note that applications targeting ARMv7 can also run on ARMv8 devices, but the opposite is not true. The reason you don't do this to save space with AABs is that Google automatically splits up the AAB on their backend, so the user only downloads what they need."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:163
-msgid "You can optimize the size further by compiling an Android export template with only the features you need. See :ref:`doc_optimizing_for_size` for more information."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:168
-msgid "Environment variables"
-msgstr ""
-
 #: ../../docs/tutorials/export/exporting_for_android.rst:170
-msgid "You can use the following environment variables to set export options outside of the editor. During the export process, these override the values that you set in the export menu."
+msgid "You can optimize the size of your application by compiling an Android export template with only the features you need. See :ref:`doc_optimizing_for_size` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_android.rst:174
-msgid "Android export environment variables"
+#: ../../docs/tutorials/export/exporting_for_android.rst:175
+msgid "Performing a custom Gradle build"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:177
-msgid "Export option"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:178
-msgid "Environment variable"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:179
-msgid "Encryption / Encryption Key"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:180
-msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:181
-msgid "Options / Keystore / Debug"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:182
-msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PATH``"
+msgid "If you need to modify the template's Java code or integrate with third-party Android SDKs, you may want to use a custom Gradle build instead of the default pre-built APK template. This allows you to have more control over the build process and the generated project, and you can use it as a base for further customization."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:183
-msgid "Options / Keystore / Debug User"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:184
-msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_USER``"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:185
-msgid "Options / Keystore / Debug Password"
+msgid "See :ref:`doc_android_gradle_build` for guidance on setting up a custom Gradle build."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:186
-msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD``"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:187
-msgid "Options / Keystore / Release"
+msgid "Environment variables"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:188
-msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PATH``"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:189
-msgid "Options / Keystore / Release User"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:190
-msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_USER``"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_android.rst:191
-msgid "Options / Keystore / Release Password"
+msgid "You can use the following environment variables to set export options outside of the editor. During the export process, these override the values that you set in the export menu."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:192
-msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``"
+msgid "Android export environment variables"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:195
-msgid "Export options"
+msgid "Export option"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:196
+msgid "Environment variable"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:197
+msgid "Encryption / Encryption Key"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:198
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:199
+msgid "Options / Keystore / Debug"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:200
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PATH``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:201
+msgid "Options / Keystore / Debug User"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:202
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_USER``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:203
+msgid "Options / Keystore / Debug Password"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:204
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:205
+msgid "Options / Keystore / Release"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:206
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PATH``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:207
+msgid "Options / Keystore / Release User"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:208
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_USER``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:209
+msgid "Options / Keystore / Release Password"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:210
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:213
+msgid "Export options"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_android.rst:215
 msgid "You can find a full list of export options available in the :ref:`class_EditorExportPlatformAndroid` class reference."
 msgstr ""

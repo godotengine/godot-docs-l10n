@@ -72,17 +72,17 @@ msgid "A 📜 icon denotes the type is part of :ref:`Variant <doc_variant_class>
 msgstr ""
 
 #: ../../docs/engine_details/architecture/core_types.rst:61
-#: ../../docs/engine_details/architecture/core_types.rst:185
+#: ../../docs/engine_details/architecture/core_types.rst:190
 msgid "Godot datatype"
 msgstr ""
 
 #: ../../docs/engine_details/architecture/core_types.rst:61
-#: ../../docs/engine_details/architecture/core_types.rst:185
+#: ../../docs/engine_details/architecture/core_types.rst:190
 msgid "Closest C++ STL datatype"
 msgstr ""
 
 #: ../../docs/engine_details/architecture/core_types.rst:61
-#: ../../docs/engine_details/architecture/core_types.rst:185
+#: ../../docs/engine_details/architecture/core_types.rst:190
 msgid "Comment"
 msgstr ""
 
@@ -104,10 +104,10 @@ msgid "|vector|"
 msgstr ""
 
 #: ../../docs/engine_details/architecture/core_types.rst:66
-#: ../../docs/engine_details/architecture/core_types.rst:79
-#: ../../docs/engine_details/architecture/core_types.rst:83
-#: ../../docs/engine_details/architecture/core_types.rst:87
+#: ../../docs/engine_details/architecture/core_types.rst:82
+#: ../../docs/engine_details/architecture/core_types.rst:86
 #: ../../docs/engine_details/architecture/core_types.rst:90
+#: ../../docs/engine_details/architecture/core_types.rst:93
 msgid "``std::vector``"
 msgstr ""
 
@@ -132,9 +132,9 @@ msgid "|a_hash_map|"
 msgstr ""
 
 #: ../../docs/engine_details/architecture/core_types.rst:72
-#: ../../docs/engine_details/architecture/core_types.rst:114
-#: ../../docs/engine_details/architecture/core_types.rst:123
-#: ../../docs/engine_details/architecture/core_types.rst:127
+#: ../../docs/engine_details/architecture/core_types.rst:117
+#: ../../docs/engine_details/architecture/core_types.rst:126
+#: ../../docs/engine_details/architecture/core_types.rst:130
 msgid "``std::unordered_map``"
 msgstr ""
 
@@ -151,315 +151,327 @@ msgid "Uses string interning for fast comparisons. Use this for static strings t
 msgstr ""
 
 #: ../../docs/engine_details/architecture/core_types.rst:79
-msgid "|local_vector|"
+msgid "|char_string|, |char16_string|"
 msgstr ""
 
 #: ../../docs/engine_details/architecture/core_types.rst:79
+msgid "``std::u8string`` ``std::u16string``"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/core_types.rst:79
+msgid "``String``-likes that use ``char`` and ``char16_t``, respectively. These are aliases of ``CharStringT<T>``; ``wchar_t`` and others are also supported."
+msgstr ""
+
+#: ../../docs/engine_details/architecture/core_types.rst:82
+msgid "|local_vector|"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/core_types.rst:82
 msgid "Closer to ``std::vector`` in semantics, doesn't use copy-on-write (COW) thus it's faster than ``Vector``. Prefer it over ``Vector`` when copying it cheaply is not needed."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:83
+#: ../../docs/engine_details/architecture/core_types.rst:86
 msgid "|array| 📜"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:83
+#: ../../docs/engine_details/architecture/core_types.rst:86
 msgid "Values can be of any Variant type. No static typing is imposed. Uses shared reference counting, similar to ``std::shared_ptr``. Uses Vector<Variant> internally."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:87
+#: ../../docs/engine_details/architecture/core_types.rst:90
 msgid "|typed_array| 📜"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:87
+#: ../../docs/engine_details/architecture/core_types.rst:90
 msgid "Subclass of ``Array`` but with static typing for its elements. Not to be confused with ``Packed*Array``, which is internally a ``Vector``."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:90
+#: ../../docs/engine_details/architecture/core_types.rst:93
 msgid "|packed_array| 📜"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:90
+#: ../../docs/engine_details/architecture/core_types.rst:93
 msgid "Alias of ``Vector``, e.g. ``PackedColorArray = Vector<Color>``. Only a limited list of packed array types are available (use ``TypedArray`` otherwise)."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:94
+#: ../../docs/engine_details/architecture/core_types.rst:97
 msgid "|list|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:94
+#: ../../docs/engine_details/architecture/core_types.rst:97
 msgid "``std::list``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:94
+#: ../../docs/engine_details/architecture/core_types.rst:97
 msgid "Linked list type. Generally slower than other array/vector types. Prefer using other types in new code, unless using ``List`` avoids the need for type conversions."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:97
+#: ../../docs/engine_details/architecture/core_types.rst:100
 msgid "|fixed_vector|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:97
+#: ../../docs/engine_details/architecture/core_types.rst:100
 msgid "``std::array``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:97
+#: ../../docs/engine_details/architecture/core_types.rst:100
 msgid "Vector with a fixed capacity (more similar to ``boost::container::static_vector``). This container type is more efficient than other vector-like types because it makes no heap allocations."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:101
+#: ../../docs/engine_details/architecture/core_types.rst:104
 msgid "|span|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:101
+#: ../../docs/engine_details/architecture/core_types.rst:104
 msgid "``std::span``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:101
-msgid "Represents read-only access to a contiguous array without needing to copy any data. Note that ``Span`` is designed to be a high performance API: It does not perform parameter correctness checks in the same way you might be used to with other Godot containers. Use with care. `Span` can be constructed from most array-like containers (e.g. ``vector.span()``)."
+#: ../../docs/engine_details/architecture/core_types.rst:104
+msgid "Represents read-only access to a contiguous array without needing to copy any data. Note that ``Span`` is designed to be a high performance API: It does not perform parameter correctness checks in the same way you might be used to with other Godot containers. Use with care. ``Span`` can be constructed from most array-like containers (e.g. ``vector.span()``)."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:107
+#: ../../docs/engine_details/architecture/core_types.rst:110
 msgid "|rb_set|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:107
+#: ../../docs/engine_details/architecture/core_types.rst:110
 msgid "``std::set``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:107
+#: ../../docs/engine_details/architecture/core_types.rst:110
 msgid "Uses a `red-black tree <https://en.wikipedia.org/wiki/Red-black_tree>`__ for faster access."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:110
+#: ../../docs/engine_details/architecture/core_types.rst:113
 msgid "|v_set|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:110
+#: ../../docs/engine_details/architecture/core_types.rst:113
 msgid "``std::flat_set``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:110
+#: ../../docs/engine_details/architecture/core_types.rst:113
 msgid "Uses copy-on-write (COW) semantics. This means it's generally slower but can be copied around almost for free. The performance benefits of ``VSet`` aren't established, so prefer using other types."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:114
+#: ../../docs/engine_details/architecture/core_types.rst:117
 msgid "|hash_map|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:114
+#: ../../docs/engine_details/architecture/core_types.rst:117
 msgid "Defensive (robust but slow) map type. Preserves insertion order. Pointers to keys and values, as well as iterators, are stable under mutation. Use this map type when either of these affordances are needed. Use ``AHashMap`` otherwise."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:119
+#: ../../docs/engine_details/architecture/core_types.rst:122
 msgid "|rb_map|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:119
+#: ../../docs/engine_details/architecture/core_types.rst:122
 msgid "``std::map``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:119
+#: ../../docs/engine_details/architecture/core_types.rst:122
 msgid "Map type that uses a `red-black tree <https://en.wikipedia.org/wiki/Red-black_tree>`__ to find keys. The performance benefits of ``RBMap`` aren't established, so prefer using other types."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:123
+#: ../../docs/engine_details/architecture/core_types.rst:126
 msgid "|dictionary| 📜"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:123
+#: ../../docs/engine_details/architecture/core_types.rst:126
 msgid "Keys and values can be of any Variant type. No static typing is imposed. Uses shared reference counting, similar to ``std::shared_ptr``. Preserves insertion order. Uses ``HashMap<Variant>`` internally."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:127
+#: ../../docs/engine_details/architecture/core_types.rst:130
 msgid "|typed_dictionary| 📜"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:127
+#: ../../docs/engine_details/architecture/core_types.rst:130
 msgid "Subclass of ``Dictionary`` but with static typing for its keys and values."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:129
+#: ../../docs/engine_details/architecture/core_types.rst:132
 msgid "|pair|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:129
+#: ../../docs/engine_details/architecture/core_types.rst:132
 msgid "``std::pair``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:129
+#: ../../docs/engine_details/architecture/core_types.rst:132
 msgid "Stores a single pair. See also ``KeyValue`` in the same file, which uses read-only keys."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:154
+#: ../../docs/engine_details/architecture/core_types.rst:159
 msgid "Relocation safety"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:156
+#: ../../docs/engine_details/architecture/core_types.rst:161
 msgid "Godot's containers assume their elements are `trivially relocatable <https://open-std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html>`__."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:158
+#: ../../docs/engine_details/architecture/core_types.rst:163
 msgid "This means that, if you store data types in it that have pointers to themselves, or are otherwise `not trivially relocatable <https://open-std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html#non-trivial-samples>`__, Godot might crash. Note that storing **pointers to** objects that are not trivially relocatable, such as some Object subclasses, is unproblematic and supported."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:163
+#: ../../docs/engine_details/architecture/core_types.rst:168
 msgid "The reason to assume trivial relocatability is that it allows us to make use of important optimization techniques, such as relocation by ``memcpy`` or ``realloc``."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:166
+#: ../../docs/engine_details/architecture/core_types.rst:171
 msgid "`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ tracks this decision."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:171
+#: ../../docs/engine_details/architecture/core_types.rst:176
 msgid "Multithreading / Concurrency"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:175
+#: ../../docs/engine_details/architecture/core_types.rst:180
 msgid "You can find more information on multithreading strategies at :ref:`doc_using_multiple_threads`."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:177
+#: ../../docs/engine_details/architecture/core_types.rst:182
 msgid "None of Godot's containers are thread-safe. When you expect multiple threads to access them, you must use multithread protections."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:180
+#: ../../docs/engine_details/architecture/core_types.rst:185
 msgid "Note that some of the types listed here are also available through the bindings, but the binding types are wrapped with :ref:`class_RefCounted` (found in the ``CoreBind::`` namespace). Prefer the primitives listed here when possible, for efficiency reasons."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:187
+#: ../../docs/engine_details/architecture/core_types.rst:192
 msgid "|mutex|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:187
+#: ../../docs/engine_details/architecture/core_types.rst:192
 msgid "``std::recursive_mutex``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:187
+#: ../../docs/engine_details/architecture/core_types.rst:192
 msgid "Recursive mutex type. Use ``MutexLock lock(mutex)`` to lock it."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:189
+#: ../../docs/engine_details/architecture/core_types.rst:194
 msgid "|binary_mutex|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:189
 #: ../../docs/engine_details/architecture/core_types.rst:194
+#: ../../docs/engine_details/architecture/core_types.rst:199
 msgid "``std::mutex``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:189
+#: ../../docs/engine_details/architecture/core_types.rst:194
 msgid "Non-recursive mutex type. Use ``MutexLock lock(mutex)`` to lock it."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:191
+#: ../../docs/engine_details/architecture/core_types.rst:196
 msgid "|rw_lock|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:191
+#: ../../docs/engine_details/architecture/core_types.rst:196
 msgid "``std::shared_mutex``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:191
+#: ../../docs/engine_details/architecture/core_types.rst:196
 msgid "Read-write aware mutex type. Use ``RWLockRead lock(mutex)`` or ``RWLockWrite lock(mutex)`` to lock it."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:194
+#: ../../docs/engine_details/architecture/core_types.rst:199
 msgid "|safe_binary_mutex|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:194
+#: ../../docs/engine_details/architecture/core_types.rst:199
 msgid "Recursive mutex type that can be used with ``ConditionVariable``. Use ``MutexLock lock(mutex)`` to lock it."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:197
+#: ../../docs/engine_details/architecture/core_types.rst:202
 msgid "|condition_variable|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:197
+#: ../../docs/engine_details/architecture/core_types.rst:202
 msgid "``std::condition_variable``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:197
+#: ../../docs/engine_details/architecture/core_types.rst:202
 msgid "Condition variable type, used with ``SafeBinaryMutex``."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:199
+#: ../../docs/engine_details/architecture/core_types.rst:204
 msgid "|semaphore|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:199
+#: ../../docs/engine_details/architecture/core_types.rst:204
 msgid "``std::counting_semaphore``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:199
+#: ../../docs/engine_details/architecture/core_types.rst:204
 msgid "Counting semaphore type."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:201
+#: ../../docs/engine_details/architecture/core_types.rst:206
 msgid "|safe_numeric|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:201
-#: ../../docs/engine_details/architecture/core_types.rst:205
+#: ../../docs/engine_details/architecture/core_types.rst:206
+#: ../../docs/engine_details/architecture/core_types.rst:210
 msgid "``std::atomic``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:201
+#: ../../docs/engine_details/architecture/core_types.rst:206
 msgid "Templated atomic type, designed for numbers."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:203
+#: ../../docs/engine_details/architecture/core_types.rst:208
 msgid "|safe_flag|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:203
+#: ../../docs/engine_details/architecture/core_types.rst:208
 msgid "``std::atomic_bool``"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:203
+#: ../../docs/engine_details/architecture/core_types.rst:208
 msgid "Bool atomic type."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:205
+#: ../../docs/engine_details/architecture/core_types.rst:210
 msgid "|safe_ref_count|"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:205
+#: ../../docs/engine_details/architecture/core_types.rst:210
 msgid "Atomic type designed for reference counting. Will refuse to increment the reference count if it is 0."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:220
+#: ../../docs/engine_details/architecture/core_types.rst:225
 msgid "Math types"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:222
+#: ../../docs/engine_details/architecture/core_types.rst:227
 msgid "There are several linear math types available in the ``core/math`` directory:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:225
+#: ../../docs/engine_details/architecture/core_types.rst:230
 msgid "`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:228
+#: ../../docs/engine_details/architecture/core_types.rst:233
 msgid "NodePath"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:230
+#: ../../docs/engine_details/architecture/core_types.rst:235
 msgid "This is a special datatype used for storing paths in a scene tree and referencing them in an optimized manner:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:233
+#: ../../docs/engine_details/architecture/core_types.rst:238
 msgid "`core/string/node_path.h <https://github.com/godotengine/godot/blob/master/core/string/node_path.h>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:236
+#: ../../docs/engine_details/architecture/core_types.rst:241
 msgid "RID"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:238
+#: ../../docs/engine_details/architecture/core_types.rst:243
 msgid "RIDs are *Resource IDs*. Servers use these to reference data stored in them. RIDs are opaque, meaning that the data they reference can't be accessed directly. RIDs are unique, even for different types of referenced data:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/core_types.rst:243
+#: ../../docs/engine_details/architecture/core_types.rst:248
 msgid "`core/templates/rid.h <https://github.com/godotengine/godot/blob/master/core/templates/rid.h>`__"
 msgstr ""

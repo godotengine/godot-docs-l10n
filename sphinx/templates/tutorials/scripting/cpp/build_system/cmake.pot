@@ -143,200 +143,212 @@ msgstr ""
 msgid "CMake controls linking to Windows runtime libraries by copying the value of ``CMAKE_MSVC_RUNTIME_LIBRARIES`` to targets as they are defined. godot-cpp will set this variable if it isn't already set. So, include it before other dependencies to have the value propagate across the projects."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:106
-msgid "Basic Walk-Through"
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:105
+msgid "Additionally, the :ref:`hook system <doc_godot_cpp_modifying_generated_files>` works a bit differently with CMake:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:108
+msgid "Your subclass has to be named ``CustomBindingGeneratorHooks``."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:109
+msgid "Pass the filepath of the python file containing your subclass with the ``GODOTCPP_BINDING_HOOK_FILE`` option to CMake."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:112
+msgid "Basic Walk-Through"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:115
 msgid "Clone the git repository"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:118
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:124
 msgid "Configure the build"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:124
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:130
 msgid "``-S`` Specifies the source directory as ``godot-cpp``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:125
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:131
 msgid "``-B`` Specifies the build directory as ``cmake-build``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:126
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:132
 msgid "``-G`` Specifies the Generator as ``Ninja``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:128
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:134
 msgid "The source directory in this example is the source root for the freshly cloned godot-cpp. CMake will also interpret the first path in the command as the source path, or if an existing build path is specified it will deduce the source path from the build cache."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:133
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:139
 msgid "The following three commands are equivalent:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:146
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:152
 msgid "The build directory is specified so that generated files do not clutter the source tree with build artifacts."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:149
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:155
 msgid "CMake doesn't build the code, it generates the files that a build tool uses, in this case the ``Ninja`` generator creates Ninja_ build files."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:152
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:158
 msgid "To see the list of generators run ``cmake --help``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:157
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:163
 msgid "Build Options"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:159
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:165
 msgid "To list the available options use the ``-L[AH]`` command flags. ``A`` is for advanced, and ``H`` is for help strings:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:166
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:172
 msgid "Options are specified on the command line when configuring, for example:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:174
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:180
 msgid "See setting-build-variables_ and build-configurations_ for more information."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:180
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:186
 msgid "A non-exhaustive list of options:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:203
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:215
 msgid "Compiling"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:205
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:217
 msgid "Tell CMake to invoke the build system it generated in the specified directory. The default target is ``template_debug`` and the default build configuration is Debug."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:214
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:226
 msgid "Examples"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:216
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:228
 msgid "These examples, while intended for godot-cpp developers, package maintainers, and CI/CD may help you configure your own extension project."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:219
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:231
 msgid "Practical examples for how to consume the godot-cpp library as part of an extension project are listed in the `Introduction`_."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:223
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:235
 msgid "Enabling Integration Testing"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:225
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:237
 msgid "The testing target ``godot-cpp-test`` is guarded by ``GODOTCPP_ENABLE_TESTING`` which is off by default."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:228
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:240
 msgid "To configure and build the godot-cpp project to enable the integration testing targets the command will look something like:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:237
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:249
 msgid "Windows and MSVC - Release"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:239
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:251
 msgid "So long as CMake is installed from the `CMake Downloads`_ page and in the PATH, and Microsoft Visual Studio is installed with C++ support, CMake will detect the MSVC compiler."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:243
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:255
 msgid "Note that Visual Studio is a Multi-Config Generator so the build configuration needs to be specified at build time, for example, ``--config Release``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:254
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:266
 msgid "MSys2/clang64, \"Ninja\" - Debug"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:256
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:272
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:268
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:284
 msgid "Assumes the ``ming-w64-clang-x86_64``-toolchain is installed."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:258
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:270
 msgid "Note that Ninja is a Single-Config Generator so the build type needs to be specified at configuration time."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:261
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:277
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:273
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:289
 msgid "Using the ``msys2/clang64`` shell:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:270
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:282
 msgid "MSys2/clang64, \"Ninja Multi-Config\" - dev_build, Debug Symbols"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:274
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:286
 msgid "This time we are choosing the 'Ninja Multi-Config' generator, so the build type is specified at build time."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:286
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:298
 msgid "Emscripten for web platform"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:288
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:300
 msgid "This has only been tested on Windows so far. You can use this example workflow:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:290
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:302
 msgid "Clone and install the latest Emscripten tools to ``c:\\emsdk``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:291
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:303
 msgid "Use ``C:\\emsdk\\emsdk.ps1 activate latest`` to enable the environment from powershell in the current shell."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:293
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:305
 msgid "The ``emcmake.bat`` utility adds the emscripten toolchain to the CMake command. It can also be added manually; the location is listed inside the ``emcmake.bat`` file"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:304
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:316
 msgid "Android Cross Compile from Windows"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:306
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:318
 msgid "There are two separate paths you can choose when configuring for android."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:308
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:320
 msgid "Use the ``CMAKE_ANDROID_*`` variables specified on the command line or in your own toolchain file as listed in the cmake-toolchains_ documentation."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:313
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:325
 msgid "Or use the toolchain and scripts provided by the Android SDK and make changes using the ``ANDROID_*`` variables listed there. Where ``<version>`` is whatever NDK version you have installed (tested with `28.1.13356709`) and ``<platform>`` is for the Android sdk platform, (tested with ``android-29``)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:320
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:332
 msgid "The Android SDK website_ explicitly states that they do not support using the CMake built-in method, and recommends you stick with their toolchain files."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:327
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:339
 msgid "Using your own toolchain file"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:329
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:341
 msgid "As described in the CMake documentation:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:336
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:348
 msgid "Doing the equivalent just using the command line:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:348
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:360
 msgid "Using the Android SDK toolchain file"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:350
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:362
 msgid "This defaults to the minimum supported version and armv7-a:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:358
+#: ../../docs/tutorials/scripting/cpp/build_system/cmake.rst:370
 msgid "Specifying the Android platform and ABI:"
 msgstr ""

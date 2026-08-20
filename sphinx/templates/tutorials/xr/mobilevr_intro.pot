@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/xr/mobilevr_intro.rst:4
+msgid "Mobile VR"
+msgstr ""
+
+#: ../../docs/tutorials/xr/mobilevr_intro.rst:6
+msgid "Godot has a mobile VR implementation that is meant to be used with phones placed inside of a VR holder. It is implemented through the :ref:`MobileVRInterface <class_mobilevrinterface>`. This is a bare bones implementation that outputs a side by side stereoscopic image. It supports basic 3DOF tracking on phones that provide gyroscope and accelerometer data."
+msgstr ""
+
+#: ../../docs/tutorials/xr/mobilevr_intro.rst:13
+msgid "This implementation is not actively maintained. As it allows maintainers and reviewers the ability to test stereoscopic rendering without the need for expensive XR hardware, this XR interface is mostly used for diagnostic purposes."
+msgstr ""
+
+#: ../../docs/tutorials/xr/mobilevr_intro.rst:60
+msgid "The mobile VR interface has various settings that control the output provided to screen. The most important two are the ``k1`` and ``k2`` constants that affect the amount of barrel distortion that is applied to counter the lens distortion of the VR phone holder used. Many have a QR code you can scan that provides this information."
+msgstr ""
+
+#: ../../docs/tutorials/xr/mobilevr_intro.rst:65
+msgid "It is also important to provide the correct dimensions of the device and the phone's display, these metrics are stored in centimeters."
+msgstr ""

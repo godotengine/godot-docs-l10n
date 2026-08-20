@@ -40,7 +40,7 @@ msgid "`Visual Studio Community <https://www.visualstudio.com/vs/community/>`_, 
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:26
-msgid "Visaul Studio 2019"
+msgid "Visual Studio 2019"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:27
@@ -52,7 +52,7 @@ msgid "**Windows 11 SDK (10.0.22621.0)** (exact version)."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:30
-msgid "Visaul Studio 2022"
+msgid "Visual Studio 2022"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:31
@@ -65,7 +65,7 @@ msgid "**Windows 11 SDK (10.0.22621.0)** or newer."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:34
-msgid "Visaul Studio 2026"
+msgid "Visual Studio 2026"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:35
@@ -104,426 +104,426 @@ msgstr ""
 msgid "Scons will still need to be installed via pip"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:65
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:67
 msgid "If you have `MSYS2 <https://www.msys2.org/>`_ installed, you can easily install MinGW and other dependencies using the following command:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:72
-msgid "For each MSYS2 MinGW subsystem, you should then run `pip3 install scons` in its shell."
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:74
+msgid "For each MSYS2 MinGW subsystem, you should then run ``pip3 install scons`` in its shell."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:75
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:77
 msgid "To get the Godot source code for compiling, see :ref:`doc_getting_source`."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:78
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:80
 msgid "For a general overview of SCons usage for Godot, see :ref:`doc_introduction_to_the_buildsystem`."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:82
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:84
 msgid "Setting up SCons"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:84
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:86
 msgid "To install SCons, open the command prompt and run the following command:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:90
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:92
 msgid "If you are prompted with the message ``Defaulting to user installation because normal site-packages is not writeable``, you may have to run that command again using elevated permissions. Open a new command prompt as an Administrator then run the command again to ensure that SCons is available from the ``PATH``."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:96
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:98
 msgid "To check whether you have installed Python and SCons correctly, you can type ``python --version`` and ``scons --version`` into a command prompt (``cmd.exe``)."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:100
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:102
 msgid "If the commands above don't work, make sure to add Python to your ``PATH`` environment variable after installing it, then check again. You can do so by running the Python installer again and enabling the option to add Python to the ``PATH``."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:105
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:107
 msgid "If SCons cannot detect your Visual Studio installation, it might be that your SCons version is too old. Update it to the latest version with ``python -m pip install --upgrade scons``."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:112
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:114
 msgid "Downloading Godot's source"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:114
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:116
 msgid "Refer to :ref:`doc_getting_source` for detailed instructions."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:116
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:118
 msgid "The tutorial will assume from now on that you placed the source code in ``C:\\godot``."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:121
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:123
 msgid "To prevent slowdowns caused by continuous virus scanning during compilation, add the Godot source folder to the list of exceptions in your antivirus software."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:125
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:127
 msgid "For Windows Defender, hit the :kbd:`Windows` key, type \"Windows Security\" then hit :kbd:`Enter`. Click on **Virus & threat protection** on the left panel. Under **Virus & threat protection settings** click on **Manage Settings** and scroll down to **Exclusions**. Click **Add or remove exclusions** then add the Godot source folder."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:132
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:134
 msgid "Compiling"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:135
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:137
 msgid "Selecting a compiler"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:137
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:139
 msgid "SCons will automatically find and use an existing Visual Studio installation. If you do not have Visual Studio installed, it will attempt to use MinGW instead. If you already have Visual Studio installed and want to use MinGW-w64, pass ``use_mingw=yes`` to the SCons command line. Note that MSVC builds cannot be performed from the MSYS2 or MinGW shells. Use either ``cmd.exe`` or PowerShell instead. If you are using MinGW-LLVM, pass both ``use_mingw=yes`` and ``use_llvm=yes`` to the SCons command line."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:147
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:149
 msgid "During development, using the Visual Studio compiler is usually a better idea, as it links the Godot binary much faster than MinGW. However, MinGW can produce more optimized binaries using link-time optimization (see below), making it a better choice for production use. This is particularly the case for the GDScript VM which performs much better with MinGW compared to MSVC. Therefore, it's recommended to use MinGW to produce builds that you distribute to players."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:155
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:157
 msgid "All official Godot binaries are built in `custom containers <https://github.com/godotengine/build-containers>`__ using MinGW."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:160
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:162
 msgid "Running SCons"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:162
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:164
 msgid "After opening a command prompt, change to the root directory of the engine source code (using ``cd``) and type:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:169
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:171
 msgid "When compiling with multiple CPU threads, SCons may warn about pywin32 being missing. You can safely ignore this warning."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:173
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:175
 msgid "If you are compiling Godot to make changes or contribute to the engine, you may want to use the SCons options ``dev_build=yes`` or ``dev_mode=yes``. See :ref:`doc_introduction_to_the_buildsystem_development_and_production_aliases` for more info."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:178
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:180
 msgid "If all goes well, the resulting binary executable will be placed in ``C:\\godot\\bin\\`` with the name ``godot.windows.editor.x86_32.exe`` or ``godot.windows.editor.x86_64.exe``. By default, SCons will build a binary matching your CPU architecture, but this can be overridden using ``arch=x86_64``, ``arch=x86_32``, or ``arch=arm64``."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:184
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:186
 msgid "This executable file contains the whole engine and runs without any dependencies. Running it will bring up the Project Manager."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:187
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:189
 msgid "If you are compiling Godot for production use, you can make the final executable smaller and faster by adding the SCons option ``production=yes``. This enables additional compiler optimizations and link-time optimization."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:192
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:194
 msgid "LTO takes some time to run and requires up to 30 GB of available RAM while compiling (depending on toolchain). If you're running out of memory with the above option, use ``production=yes lto=none`` or ``production=yes lto=thin`` (LLVM only) for a lightweight but less effective form of LTO."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:197
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:199
 msgid "If you want to use separate editor settings for your own Godot builds and official releases, you can enable :ref:`doc_data_paths_self_contained_mode` by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:205
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:207
 msgid "Installing Direct3D 12 requirements"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:207
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:209
 msgid "By default, Windows builds of Godot contain support for the Direct3D 12 graphics API. Compiling with Direct3D 12 support requires additional dependencies to be installed. If you wish to skip this step, you can use the ``d3d12=no`` SCons option; Vulkan and OpenGL support will remain available if you do so."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:212
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:214
 msgid "You can install the required dependencies by running ``python misc/scripts/install_d3d12_sdk_windows.py`` in the Godot source repository. After running this script, compile Godot as usual. This will use the default paths for the various dependencies, which match the ones used in the script."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:218
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:220
 msgid "You can find the detailed steps below if you wish to set up dependencies manually, but the above script handles everything for you (including the optional PIX and Agility SDK components)."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:222
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:224
 msgid "`godot-nir-static library <https://github.com/godotengine/godot-nir-static/releases/>`_. We compile the Mesa libraries you will need into a static library. Download it anywhere, unzip it and remember the path to the unzipped folder, you will need it below."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:227
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:229
 msgid "You can optionally build the godot-nir-static libraries yourself with the following steps:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:230
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:232
 msgid "Install the Python package `mako <https://www.makotemplates.org>`_ which is needed to generate some files."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:232
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:234
 msgid "Clone the `godot-nir-static <https://github.com/godotengine/godot-nir-static>`_ directory and navigate to it."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:234
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:236
 msgid "Run the following:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:242
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:244
 msgid "If you are building with MinGW-w64, add ``use_mingw=yes`` to the ``scons`` command, you can also specify the build architecture using ``arch={architecture}``. If you are building with MinGW-LLVM, add both ``use_mingw=yes`` and ``use_llvm=yes`` to the ``scons`` command."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:247
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:414
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:249
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:416
 msgid "If you are building with MinGW and the binaries are not located in the ``PATH``, add ``mingw_prefix=\"/path/to/mingw\"`` to the ``scons`` command."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:251
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:253
 msgid "The Mesa static library should be built using the same compiler and the same CRT (if you are building with MinGW) you are using for building Godot."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:255
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:257
 msgid "Optionally, you can compile with the following for additional features:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:257
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:259
 msgid "`PIX <https://devblogs.microsoft.com/pix/download>`_ is a performance tuning and debugging application for Direct3D12 applications. If you compile-in support for it, you can get much more detailed information through PIX that will help you optimize your game and troubleshoot graphics bugs. To use it, download the WinPixEventRuntime package. You will be taken to a NuGet package page where you can click \"Download package\" to get it. Once downloaded, change the file extension to .zip and unzip the file to some path."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:264
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:266
 msgid "`Agility SDK <https://devblogs.microsoft.com/directx/directx12agility>`_ can be used to provide access to the latest Direct3D 12 features without relying on driver updates. To use it, download the latest Agility SDK package. You will be taken to a NuGet package page where you can click \"Download package\" to get it. Once downloaded, change the file extension to .zip and unzip the file to some path."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:271
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:273
 msgid "If you use a preview version of the Agility SDK, remember to enable developer mode in Windows; otherwise it won't be used."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:274
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:276
 msgid "If you want to use a PIX with MinGW build, navigate to PIX runtime directory and use the following commands to generate import library:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:287
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:289
 msgid "When building Godot, you will need to tell SCons where to look for the additional libraries:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:293
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:295
 msgid "Or, with all options enabled:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:301
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:303
 msgid "PIX support is disabled by default, even if you have it installed. To enable it, pass ``use_pix=yes`` to SCons."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:306
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:308
 msgid "For the Agility SDK's DLLs, you have to explicitly choose the kind of workflow. Single-arch is the default (DLLs copied to ``bin/``). If you pass ``agility_sdk_multi_arch=yes`` to SCons, you'll opt-in for multi-arch. DLLs will be copied to the appropriate ``bin/<arch>/`` subdirectories and at runtime, the right one will be loaded."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:313
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:315
 msgid "Compiling with AccessKit support"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:315
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:317
 msgid "AccessKit provides support for screen readers."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:317
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:319
 msgid "Compiling with AccessKit requires additional dependencies to be installed. If you wish to skip this step, you can use the ``accesskit=no`` SCons option."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:320
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:322
 msgid "You can install the required dependencies by running ``python misc/scripts/install_accesskit.py`` in the Godot source repository. After running this script, compile Godot as usual."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:324
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:326
 msgid "You can optionally build the AccessKit libraries yourself with the following steps:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:327
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:329
 msgid "Clone the `godot-accesskit-c-static <https://github.com/godotengine/godot-accesskit-c-static/>`_ directory and navigate to it."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:329
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:366
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:401
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:331
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:368
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:403
 msgid "Run the following command:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:338
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:340
 msgid "The AccessKit static library should be built using the same compiler and the same CRT (if you are building with MinGW) you are using for building Godot."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:342
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:344
 msgid "To compile Godot with a custom build of AccessKit, add ``accesskit_sdk_path={path}`` to tell SCons where to look for the AccessKit libraries:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:350
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:352
 msgid "Compiling with WinRT support"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:352
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:354
 msgid "WinRT provides support for OneCore TTS (accessing Windows 10+ voices), HDR color information monitoring, and emoji picker."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:354
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:356
 msgid "If you are building with MinGW, compiling with WinRT requires additional dependencies to be installed. If you wish to skip this step, you can use the ``winrt=no`` SCons option."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:357
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:359
 msgid "You can install the required dependencies by running ``python misc/scripts/install_winrt.py`` in the Godot source repository. After running this script, compile Godot as usual."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:361
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:363
 msgid "You can optionally build the WinRT headers yourself with the following steps:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:364
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:366
 msgid "Clone the `winrt-mingw <https://github.com/godotengine/winrt-mingw>`_ directory and navigate to it."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:375
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:377
 msgid "To compile Godot with a custom build of WinRT, add ``winrt_path={path}`` to tell SCons where to look for the AccessKit headers:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:383
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:385
 msgid "Compiling with ANGLE support"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:385
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:387
 msgid "ANGLE provides a translation layer from OpenGL ES 3.x to Direct3D 11 and can be used to improve support for the Compatibility renderer on some older GPUs with outdated OpenGL drivers and on Windows for ARM."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:389
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:391
 msgid "Compiling with ANGLE requires additional dependencies to be installed. If you wish to skip this step, you can use the ``angle=no`` SCons option."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:392
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:394
 msgid "You can install the required dependencies by running ``python misc/scripts/install_angle.py`` in the Godot source repository. After running this script, compile Godot as usual."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:396
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:398
 msgid "You can optionally build the godot-angle-static libraries yourself with the following steps:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:399
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:401
 msgid "Clone the `godot-angle-static <https://github.com/godotengine/godot-angle-static>`_ directory and navigate to it."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:409
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:411
 msgid "If you are buildng with MinGW, add ``use_mingw=yes`` to the command, you can also specify the build architecture using ``arch={architecture}``. If you are building with MinGW-LLVM, add both ``use_mingw=yes`` and ``use_llvm=yes`` to the ``scons`` command."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:418
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:420
 msgid "The ANGLE static library should be built using the same compiler and the same CRT (if you are building with MinGW) you are using for building Godot."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:422
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:424
 msgid "To compile Godot with a custom build of ANGLE, add ``angle_libs={path}`` to tell SCons where to look for the ANGLE libraries:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:430
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:432
 msgid "Development in Visual Studio"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:432
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:434
 msgid "Using an IDE is not required to compile Godot, as SCons takes care of everything. But if you intend to do engine development or debugging of the engine's C++ code, you may be interested in configuring a code editor or an IDE."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:436
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:438
 msgid "Folder-based editors don't require any particular setup to start working with Godot's codebase. To edit projects with Visual Studio they need to be set up as a solution."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:439
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:441
 msgid "You can create a Visual Studio solution via SCons by running SCons with the ``vsproj=yes`` parameter, like this:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:446
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:448
 msgid "You will be able to open Godot's source in a Visual Studio solution now, and able to build Godot using Visual Studio's **Build** button."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:449
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:451
 msgid "See :ref:`doc_configuring_an_ide_vs` for further details."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:452
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:534
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:454
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:536
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:454
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:456
 msgid "If you get a compilation failure when using MSVC, make sure to apply the latest updates. You can do so by starting the Visual Studio IDE and using :button:`Continue without code`, then :menu:`Help > Check for Updates` in the menu bar at the top. Install all updates, then try compiling again."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:460
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:462
 msgid "Cross-compiling for Windows from other operating systems"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:462
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:464
 msgid "If you are a Linux or macOS user, you need to install `MinGW-w64 <https://www.mingw-w64.org/>`__, which typically comes in 32-bit and 64-bit variants, or `MinGW-LLVM <https://github.com/mstorsjo/llvm-mingw/releases>`_, which comes as a single archive for all target architectures. The package names may differ based on your distribution, here are some known ones:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:469
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:471
 msgid "**Arch Linux**"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:473
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:475
 msgid "**Debian** / **Ubuntu**"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:477
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:479
 msgid "**Fedora**"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:482
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:484
 msgid "**macOS**"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:486
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:488
 msgid "**Mageia**"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:492
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:494
 msgid "Before attempting the compilation, SCons will check for the following binaries in your ``PATH`` environment variable:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:506
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:508
 msgid "If the binaries are not located in the ``PATH`` (e.g. ``/usr/bin``), you can define the following environment variable to give a hint to the build system:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:514
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:516
 msgid "Where ``/path/to/mingw`` is the path containing the ``bin`` directory where ``i686-w64-mingw32-gcc`` and ``x86_64-w64-mingw32-gcc`` are located (e.g. ``/opt/mingw-w64`` if the binaries are located in ``/opt/mingw-w64/bin``)."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:518
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:520
 msgid "To make sure you are doing things correctly, executing the following in the shell should result in a working compiler (the version output may differ based on your system):"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:527
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:529
 msgid "If you are building with MinGW-LLVM, add ``use_llvm=yes`` to the ``scons`` command."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:528
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:530
 msgid "When cross-compiling for Windows using MinGW-w64, keep in mind only ``x86_64`` and ``x86_32`` architectures are supported. MinGW-LLVM supports ``arm64`` as well. Be sure to specify the right ``arch=`` option when invoking SCons if building from a different architecture."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:536
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:538
 msgid "Cross-compiling from some Ubuntu versions may lead to `this bug <https://github.com/godotengine/godot/issues/9258>`_, due to a default configuration lacking support for POSIX threading."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:540
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:542
 msgid "You can change that configuration following those instructions, for 64-bit:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:549
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:551
 msgid "And for 32-bit:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:559
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:561
 msgid "Creating Windows export templates"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:561
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:563
 msgid "Windows export templates are created by compiling Godot without the editor, with the following flags:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:573
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:575
 msgid "If you plan on replacing the standard export templates, copy these to the following location, replacing ``<version>`` with the version identifier (such as ``4.2.1.stable`` or ``4.3.dev``):"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:581
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:583
 msgid "With the following names:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:598
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:600
 msgid "However, if you are using custom modules or custom engine code, you may instead want to configure your binaries as custom export templates in the project export menu. You must have **Advanced Options** enabled to set this."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:605
+#: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:607
 msgid "You don't need to copy them in this case, just reference the resulting files in the ``bin\\`` directory of your Godot source folder, so the next time you build, you will automatically have the custom templates referenced."
 msgstr ""

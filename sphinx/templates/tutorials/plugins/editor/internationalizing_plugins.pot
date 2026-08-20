@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/plugins/editor/internationalizing_plugins.rst:4
+msgid "Internationalizing plugins"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/internationalizing_plugins.rst:6
+msgid "In the same way :ref:`doc_internationalizing_games` works, you can create translations for editor plugins. Everything that applies to games also applies to plugins, but the process of enabling translations for plugins is slightly different."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/internationalizing_plugins.rst:10
+msgid "After generating your CSV or POT file and creating translations, you cannot simply load the translations in the project settings; instead, you must go through the :ref:`class_TranslationServer` to add a new :ref:`class_TranslationDomain`."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/internationalizing_plugins.rst:26
+msgid "The above code will load all available translations for your plugin, assuming the translations are located in the ``addons/my_plugin/locale`` directory. You should also choose a unique translation domain name to avoid collisions with other domains; using your plugin's path as the domain name ensures this."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/internationalizing_plugins.rst:31
+msgid "If we consider the dock from :ref:`doc_making_plugins_custom_dock`, you now need to tell the dock to use this translation domain:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/internationalizing_plugins.rst:38
+msgid "The last thing you need to do is remove the translation domain when the plugin is disabled:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/internationalizing_plugins.rst:46
+msgid "With all of this done, you can change the editor's language to check your translations."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/internationalizing_plugins.rst:50
+msgid "You will need to disable and re-enable your plugin once, as it needs to call :ref:`_enter_tree() <class_Node_private_method__enter_tree>` in order to load translations."
+msgstr ""

@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:4
+msgid "Using DrawableTextures"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:6
+msgid "DrawableTextures are a type of Texture2D with additional functions for modifying the texture via the GPU. This can be used for procedural texturing, real-time effects, and much more."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:11
+msgid "Basic rectangle blitting"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:13
+msgid "The most basic operation on a drawable texture is :ref:`blit_rect() <class_DrawableTexture2D_method_blit_rect>`. Blitting (copying) the whole of one texture into the given rectangle on the ``DrawableTexture``."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:29
+msgid "The code above blits the circle texture into the rectangle ``(20, 50, 60, 60)`` on the ``DrawableTexture``. ``(20, 50)`` is the top left corner of the rectangle being drawn to, and ``(60, 60)`` is its size. If you wanted to draw over the whole texture, simply match the ``rect`` parameter to the ``DrawableTexture``'s size."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:35
+msgid "The third parameter in ``blit_rect()`` is an optional parameter, ``modulate``. This is a color that the output is multiplied by (in the default behavior). This can be used to recolor, or even mask the drawn output of ``blit_rect()``. For example, using a modulate of ``Color(0, 0, 1, 0)`` will only draw to and update the blue values of each pixel on the ``DrawableTexture``."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:41
+msgid "``blit_rect()``'s fourth parameter, ``mipmap``, can specify a mipmap level to draw to. You only need to use this if you want fine control over each mipmap layer. Keep in mind, you do not need to adjust the rectangle size; it is converted to a portion of the texture's whole size. If you just want to update all the mipmap layers, you should draw to the texture, then call ``generate_mipmaps()`` on it."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:49
+msgid "Blend modes and texture blit shaders"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:51
+msgid "The drawing process for ``blit_rect()`` and DrawableTextures is controlled by a :ref:`texture blit shader <doc_texture_blit_shader>`. Even when the user does not supply one, the engine has a default texture blit shader it uses."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:75
+msgid "The blend mode specified in ``render_mode`` defines how the output color value is blended with the current color of the pixel on the DrawableTexture. The engine defaults to ``blend_mix`` if no blend mode is specified in ``render_mode``. Texture blit shaders also support ``blend_add`` (additive), ``blend_sub`` (subtractive), ``blend_mul`` (multiply), and ``blend_disabled`` (alpha does not act as transparency and is written as-is). The premultiplied alpha blend mode is *not* supported here."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:83
+msgid "It is also possible to use a different blend mode than the one specified in the shader. To do so, you can instantiate and pass in a new :ref:`class_BlitMaterial` in the script."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:103
+msgid "If you want more complex behavior, you can write your own texture blit shader. Create a new shader with the ``texture_blit`` shader type, write your shader code, and load it into a material to pass to the function."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:109
+msgid "The material is passed as a function parameter, rather than bound to the resource. This makes it easier to perform multiple types of draws to the same texture."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:114
+msgid "Using multiple blits in a single texture"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:116
+msgid "DrawableTextures also have a :ref:`blit_rect_multi() <class_DrawableTexture2D_method_blit_rect_multi>` method, which allows for up to 4 inputs and outputs in the same step."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:136
+msgid "The default behavior of this is to just match each input and output in order. For example, this can be useful for drawing to an albedo, normal, and height texture simultaneously."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:140
+msgid "Of course, this behavior can also be customized via the texture blit shader. In the shader, the extra outputs are written to via ``COLOR1``, ``COLOR2``, and ``COLOR3`` (with ``COLOR0`` being the primary output). The extra inputs can be read as uniforms with ``hint_blit_source1``, ``hint_blit_source2``, and ``hint_blit_source3``."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:149
+msgid "Example 1: Simple painting"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:151
+msgid "One of the most intuitive uses for DrawableTextures is for, well, drawing! For this example, we're going to start a new project, and create a new UI scene with a Control node at its root."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:155
+msgid "Next, you'll need to create a :ref:`class_TextureRect` node, which is going to be our user's canvas. Size it appropriately for your screen, and then attach a new script to it. The start of this script should initialize the TextureRect's texture to a new DrawableTexture."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:183
+msgid "Next, we need the TextureRect to respond to the player clicking and dragging as if they are painting. To do this, we can override the ``_gui_input()`` method from the TextureRect in our script, and parse InputMouseButton and InputMouseMotion events:"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:226
+msgid "This should now draw black squares as you click and drag around the TextureRect. For more natural drawing, we probably want to be drawing a circle shape, and actually coloring it."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:230
+msgid "We can adjust what's being drawn by using a Texture to copy from, and the modulate parameter. We will use this :download:`plain white circle texture <img/circle.svg>`, which we load as the ``texture`` parameter in ``blit_rect()``, and use a red color as the ``modulate`` parameter."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/drawable_textures.rst:257
+msgid "The drawing now looks much more natural and colorful. To further customize this, you could connect a :ref:`class_ColorPickerButton` node to the script to store the user's color choice for the ``modulate`` parameter of ``blit_rect()``. You could also store a brush size variable, give the user a way to adjust it, and incorporate it into the rectangle calculation so the user can draw larger or smaller strokes."
+msgstr ""

@@ -20,11 +20,11 @@ msgid "Creating instances"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:8
-msgid "This tutorial refers to instancing scenes in the editor. To learn how to instance scenes from code, see :ref:`doc_nodes_and_scene_instances`."
+msgid "This tutorial refers to instantiating scenes in the editor. To learn how to instantiate scenes from code, see :ref:`doc_nodes_and_scene_instances`."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:11
-msgid "Godot's approach to *instancing* described below should not be confused with hardware instancing that can be used to render large amounts of similar objects quickly. See :ref:`doc_using_multimesh` instead."
+msgid "Godot's approach to *instantiation* described below should not be confused with hardware instancing that can be used to render large amounts of similar objects quickly. See :ref:`doc_using_multimesh` instead."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
@@ -40,11 +40,11 @@ msgid "Here's an example of a ball. It's composed of a :ref:`RigidBody2D <class_
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:32
-msgid "Once you have saved a scene, it works as a blueprint: you can reproduce it in other scenes as many times as you'd like. Replicating an object from a template like this is called **instancing**."
+msgid "Once you have saved a scene, it works as a blueprint: you can reproduce it in other scenes as many times as you'd like. Replicating an object from a template like this is called **instantiation**."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:38
-msgid "As we mentioned in the previous part, instanced scenes behave like a node: the editor hides their content by default. When you instance the Ball, you only see the Ball node. Notice also how each duplicate has a unique name."
+msgid "As we mentioned in the previous part, instantiated scenes behave like a node: the editor hides their content by default. When you instantiate the Ball, you only see the Ball node. Notice also how each duplicate has a unique name."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:42
@@ -56,7 +56,7 @@ msgid "In practice"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:50
-msgid "Let's use instancing in practice to see how it works in Godot. We invite you to download the ball's sample project we prepared for you: `instancing_starter.zip <https://github.com/godotengine/godot-docs-project-starters/releases/download/latest-4.x/instancing_starter.zip>`_."
+msgid "Let's use instantiation in practice to see how it works in Godot. We invite you to download the ball's sample project we prepared for you: `instancing_starter.zip <https://github.com/godotengine/godot-docs-project-starters/releases/download/latest-4.x/instancing_starter.zip>`_."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:54
@@ -64,15 +64,15 @@ msgid "Extract the archive on your computer. To import it, you need the Project 
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:58
-msgid "In the Project Manager, click the :button:`Import` button to import the project."
+msgid "In the Project Manager, click the :button:`Import` button."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:62
-msgid "In the pop-up that appears navigate to the folder you extracted. Double-click the ``project.godot`` file to open it."
+msgid "In the file dialog that appears, navigate to the folder you extracted. Double-click the ``project.godot`` file to select it."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
-msgid "Finally, click the :button:`Import` button."
+msgid "Finally, click the :button:`Import` button to import the project."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:71
@@ -80,7 +80,7 @@ msgid "A window notifying you that the project was last opened in an older Godot
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:74
-msgid "The project contains two packed scenes: ``main.tscn``, containing walls against which the ball collides, and ``ball.tscn``. The Main scene should open automatically. If you're seeing an empty 3D scene instead of the main scene, click the 2D button at the top of the screen."
+msgid "The project contains two packed scenes: ``main.tscn``, containing walls against which the ball collides, and ``ball.tscn``. The main scene should open automatically. If you're seeing an empty 3D scene instead of the main scene, click the 2D button at the top of the screen."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:82
@@ -88,7 +88,7 @@ msgid "Let's add a ball as a child of the Main node. In the Scene dock, select t
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:88
-msgid "Double-click the ball scene to instance it."
+msgid "Double-click the ball scene to instantiate it."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:92
@@ -104,7 +104,7 @@ msgid "Play the game by pressing :kbd:`F5` (:kbd:`Cmd + B` on macOS). You should
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:102
-msgid "Now, we want to create more instances of the Ball node. With the ball still selected, press :kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) to call the duplicate command. Click and drag to move the new ball to a different location."
+msgid "Now, we want to create more instances of the Ball node. With the ball still selected, press :kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) to duplicate it. Click and drag the new ball to a different location."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:108
@@ -152,15 +152,15 @@ msgid "Play the game by pressing :kbd:`F5` (:kbd:`Cmd + B` on macOS) and notice 
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:148
-msgid "Let's now adjust an individual instance. Head back to the Main scene by clicking on the corresponding tab above the viewport."
+msgid "Let's now adjust an individual instance. Head back to the main scene by clicking on the corresponding tab above the viewport."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:153
-msgid "Select one of the instanced Ball nodes and, in the :ui:`Inspector`, set its :inspector:`Gravity Scale` value to ``10``."
+msgid "Select one of the instantiated Ball nodes and, in the :ui:`Inspector`, set its :inspector:`Gravity Scale` value to ``10``."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:158
-msgid "A grey \"revert\" button appears next to the adjusted property."
+msgid "A gray \"revert\" button appears next to the adjusted property."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:162
@@ -200,7 +200,7 @@ msgid "You can come up with a diagram like this for almost any type of game. Eac
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:201
-msgid "Once you have a diagram, we recommend creating a scene for each element listed in it to develop your game. You'll use instancing, either by code or directly in the editor, to build your tree of scenes."
+msgid "Once you have a diagram, we recommend creating a scene for each element listed in it to develop your game. You'll use instantiation, either by code or directly in the editor, to build your tree of scenes."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:205
@@ -212,7 +212,7 @@ msgid "Here's the example of a scene diagram for an open-world game with tons of
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:216
-msgid "Imagine we started by creating the room. We could make a couple of different room scenes, with unique arrangements of furniture in them. Later, we could make a house scene that uses multiple room instances for the interior. We would create a citadel out of many instanced houses and a large terrain on which we would place the citadel. Each of these would be a scene instancing one or more sub-scenes."
+msgid "Imagine we started by creating the room. We could make a couple of different room scenes, with unique arrangements of furniture in them. Later, we could make a house scene that uses multiple room instances for the interior. We would create a citadel out of many instantiated houses and a large terrain on which we would place the citadel. Each of these would be a scene instantiating one or more sub-scenes."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:222
@@ -228,7 +228,7 @@ msgid "Summary"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:234
-msgid "Instancing, the process of producing an object from a blueprint, has many handy uses. With scenes, it gives you:"
+msgid "Instantiation, the process of producing an object from a blueprint, has many handy uses. With scenes, it gives you:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:237

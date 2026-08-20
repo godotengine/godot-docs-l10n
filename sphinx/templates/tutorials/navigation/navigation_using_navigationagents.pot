@@ -140,7 +140,7 @@ msgid "The path is returned empty"
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:82
-msgid "If an agent queries a path before the navigation map synchronisation, e.g. in a ``_ready()`` function, the path might return empty. In this case the ``get_next_path_position()`` function will return the same position as the agent parent node and the agent will consider the path end reached. This is fixed by making a deferred call or using a callback e.g. waiting for the navigation map changed signal."
+msgid "If an agent queries a path before the navigation map synchronization, e.g. in a ``_ready()`` function, the path might return empty. In this case the ``get_next_path_position()`` function will return the same position as the agent parent node and the agent will consider the path end reached. This is fixed by making a deferred call or using a callback e.g. waiting for the navigation map changed signal."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:84
@@ -208,7 +208,7 @@ msgid "The property ``height`` is available in 3D only. The height together with
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:124
-msgid "The property ``radius`` controls the size of the avoidance circle, or in case of 3D sphere, around the agent. This area describes the agents body and not the avoidance maneuver distance."
+msgid "The property ``radius`` controls the radius of the avoidance circle, or sphere in 3D, around the agent. This area describes the agents body and not the avoidance maneuver distance."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:125

@@ -44,7 +44,7 @@ msgid "The plugin script will come with ``_enter_tree()`` and ``_exit_tree()`` m
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:98
-msgid "The important part in this script is the ``_has_main_screen()`` function, which is overloaded so it returns ``true``. This function is automatically called by the editor on plugin activation, to tell it that this plugin adds a new center view to the editor. For now, we'll leave this script as-is and we'll come back to it later."
+msgid "The important part in this script is the ``_has_main_screen()`` function, which is overridden to return ``true``. This function is automatically called by the editor on plugin activation, to tell it that this plugin adds a new center view to the editor. For now, we'll leave this script as-is and we'll come back to it later."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:105
@@ -72,15 +72,15 @@ msgid "Update the plugin script"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:150
-msgid "We need to update the ``main_screen_plugin.gd`` script so the plugin instances our main panel scene and places it where it needs to be. Here is the full plugin script:"
+msgid "We need to update the ``main_screen_plugin.gd`` script so the plugin instantiates our main panel scene and places it where it needs to be. Here is the full plugin script:"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:250
-msgid "A couple of specific lines were added. ``MainPanel`` is a constant that holds a reference to the scene, and we instance it into `main_panel_instance`."
+msgid "A couple of specific lines were added. ``MainPanel`` is a constant that holds a reference to the scene, and we instantiate it into ``main_panel_instance``."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:253
-msgid "The ``_enter_tree()`` function is called before ``_ready()``. This is where we instance the main panel scene, and add them as children of specific parts of the editor. We use ``EditorInterface.get_editor_main_screen()`` to obtain the main editor screen and add our main panel instance as a child to it. We call the ``_make_visible(false)`` function to hide the main panel so it doesn't compete for space when first activating the plugin."
+msgid "The ``_enter_tree()`` function is called before ``_ready()``. This is where we instantiate the main panel scene, and add them as children of specific parts of the editor. We use ``EditorInterface.get_editor_main_screen()`` to obtain the main editor screen and add our main panel instance as a child to it. We call the ``_make_visible(false)`` function to hide the main panel so it doesn't compete for space when first activating the plugin."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:260
@@ -96,21 +96,37 @@ msgid "The ``_get_plugin_name()`` and ``_get_plugin_icon()`` functions control t
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:271
-msgid "Another function you can add is the ``handles()`` function, which allows you to handle a node type, automatically focusing the main screen when the type is selected. This is similar to how clicking on a 3D node will automatically switch to the 3D viewport."
+msgid "Another function you can add is the ``_handles()`` function, which allows you to handle a node type, automatically focusing the main screen when the type is selected. This is similar to how clicking on a 3D node will automatically switch to the 3D viewport."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:277
-msgid "Try the plugin"
+msgid "Main screen icons"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:279
-msgid "Activate the plugin in the Project Settings. You'll observe a new button next to 2D, 3D, Script above the main viewport. Clicking it will take you to your new main screen plugin, and the button in the middle will print text."
+msgid "You can either use one of the built-in icons from the editor, or provide your own icon for the main screen plugin. In both cases, this is done by overriding the ``_get_plugin_icon()`` method in the plugin script."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:283
+msgid "To use a built-in icon, copy an icon name from the `Godot editor icons <https://godotengine.github.io/editor-icons/>`__ website. Use the name copied from the website as the *first* parameter of ``EditorInterface.get_editor_theme().get_icon()`` (the second parameter should remain ``\"EditorIcons\"``)."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:289
+msgid "You can use a custom icon by returning something such as ``preload(\"res://addons/main_screen/icon.svg\")``. When designing your own icon, you should follow the same guidelines as for node icons (SVG format recommended, 16×16 size). See :ref:`doc_editor_icons` for information on how to create icons for your plugin."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:296
+msgid "Try the plugin"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:298
+msgid "Activate the plugin in the Project Settings. You'll observe a new button next to 2D, 3D, Script above the main viewport. Clicking it will take you to your new main screen plugin, and the button in the middle will print text."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:302
 msgid "If you would like to try a finished version of this plugin, check out the plugin demos here: https://github.com/godotengine/godot-demo-projects/tree/master/plugins"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:287
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:306
 msgid "If you would like to see a more complete example of what main screen plugins are capable of, check out the 2.5D demo projects here: https://github.com/godotengine/godot-demo-projects/tree/master/misc/2.5d"
 msgstr ""

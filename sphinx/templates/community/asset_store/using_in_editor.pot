@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/community/asset_store/using_in_editor.rst:4
+msgid "Using the Asset Store in the Engine"
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:7
+msgid "Accessing it"
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:9
+msgid "The Asset Store can be accessed from within Godot from the project manager."
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:13
+msgid "As well as within the editor."
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:17
+msgid "The Project Manager's :button:`Asset Store` tab will only display assets that are standalone projects. This is denoted on the Asset Store with the *Template* tag."
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:20
+msgid "The editor's :button:`Asset Store` tab will only display assets that are *not* standalone projects. In other words, it will display assets from all categories except *Templates*."
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:23
+msgid "If this is the first time you've ever needed the engine to access the internet, you'll need to click the :button:`Go Online` button."
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:29
+msgid "Downloading and installing assets"
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:31
+msgid "Click on an asset, and Godot will fetch info about it from the Asset Store. Once it's finished, you will see a window similar to what the Asset Store website looks like, with some differences:"
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:37
+msgid "Similarly to the web version of the Asset Store, here you can search for assets by category or name, and sort them by things such as name or edit date. Unlike when using the web frontend, the search results are updated in real-time (you do not have to press :button:`Search` after every change to your search query for the changes to take effect)."
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:43
+msgid "When you click on an asset, you will see more information about it."
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:47
+msgid "If you click on the :button:`Download` button, Godot will fetch an archive of the asset, and will track download progress of it at the bottom of the editor window. If the download fails, you can retry it using the :button:`Retry` button."
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:51
+msgid "When it finishes downloading, the Configure Asset window will open automatically."
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:55
+msgid "Here you can see a list of all the files that will be installed. If you click on the arrow on the top left, it will open a window where you can tick off any of the files that you do not wish to install. Any files that can't be installed will be shown in red, and hovering over them will show you a message stating why it cannot be installed."
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:63
+msgid "Once you are done, you can press the :button:`Install` button, which will unzip all the files in the archive, and import any assets contained in it, such as images or 3D models. Once this is done, you should see a message stating that the package installation is complete."
+msgstr ""
+
+#: ../../docs/community/asset_store/using_in_editor.rst:70
+msgid "You may also use the :button:`Import` button to import asset archives obtained elsewhere (such as downloading them directly from the Asset Store web frontend), which will take you through the same package installation procedure as with the assets downloaded directly via Godot that we just covered."
+msgstr ""

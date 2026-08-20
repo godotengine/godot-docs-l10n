@@ -92,7 +92,7 @@ msgid "From the left-side menu select **Projects** and open the **Run** tab."
 msgstr ""
 
 #: ../../docs/engine_details/development/configuring_an_ide/qt_creator.rst:76
-msgid "Under **Executable** specify the path to your executable located in the ``<Godot root directory>/bin`` folder. The name depends on your build configuration, e.g. ``godot.linuxbsd.editor.dev.x86_64`` for 64-bit LinuxBSD platform with ``platform=editor`` and ``dev_build=yes``. You can use ``%{buildDir}`` to reference the project root, e.g: ``%{buildDir}/bin/godot.linuxbsd.editor.dev.x86_64``."
+msgid "Under **Executable** specify the path to your executable located in the ``<Godot root directory>/bin`` folder. The name depends on your build configuration, e.g. ``godot.linuxbsd.editor.dev.x86_64`` for 64-bit LinuxBSD platform with ``platform=editor`` and ``dev_build=yes``. You can use ``%{buildDir}`` to reference the project root, e.g., ``%{buildDir}/bin/godot.linuxbsd.editor.dev.x86_64``."
 msgstr ""
 
 #: ../../docs/engine_details/development/configuring_an_ide/qt_creator.rst:81
@@ -112,13 +112,21 @@ msgid "Code style configuration"
 msgstr ""
 
 #: ../../docs/engine_details/development/configuring_an_ide/qt_creator.rst:94
-msgid "Developers must follow the project's `code style <https://contributing.godotengine.org/en/latest/engine/guidelines/code_style.html>`__ and the IDE should help them follow it. By default, Qt Creator uses spaces for indentation which doesn't match the Godot code style guidelines. You can change this behavior by changing the **Code Style** in **Tools > Options > C++**."
+msgid "Developers must follow the project's `code style <https://contributing.godotengine.org/en/latest/engine/guidelines/code_style.html>`__ and the IDE should help them follow it."
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/qt_creator.rst:103
-msgid "Click on **Edit** to change the current settings, then click on **Copy Built-in Code Style** button to set a new code style. Set a name for it (e.g. Godot) and change the Tab policy to be **Tabs Only**."
+#: ../../docs/engine_details/development/configuring_an_ide/qt_creator.rst:97
+msgid "Open **Preferences > C++ > Code Style**."
 msgstr ""
 
-#: ../../docs/engine_details/development/configuring_an_ide/qt_creator.rst:111
+#: ../../docs/engine_details/development/configuring_an_ide/qt_creator.rst:98
+msgid "Set the **Formatting mode** to **Full formatting** to instruct Qt Creator to use the ``.clang-format`` file supplied in Godot's root folder:"
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/qt_creator.rst:104
+msgid "Specify when you want ``clang-format`` to run (either while typing or when you saving the file). It is recommended to enable formatting on save at least."
+msgstr ""
+
+#: ../../docs/engine_details/development/configuring_an_ide/qt_creator.rst:106
 msgid "If you run into any issues, ask for help in one of `Godot's community channels <https://godotengine.org/community>`__."
 msgstr ""

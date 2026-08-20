@@ -1,0 +1,782 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:4
+msgid "Upgrading from Godot 4.6 to Godot 4.7"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:6
+msgid "For most games and apps made with 4.6 it should be relatively safe to migrate to 4.7. This page intends to cover everything you need to pay attention to when migrating your project."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:11
+msgid "Breaking changes"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:13
+msgid "If you are migrating from 4.6 to 4.7, the breaking changes listed here might affect you. Changes are grouped by areas/systems."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:16
+msgid "This article indicates whether each breaking change affects GDScript and whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:19
+msgid "**Binary compatible** - Existing binaries will load and execute successfully without recompilation, and the runtime behavior won't change."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:21
+msgid "**Source compatible** - Source code will compile successfully without changes when upgrading Godot."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:25
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:309
+msgid "Core"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:28
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:42
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:54
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:66
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:86
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:98
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:116
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:130
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:152
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:164
+msgid "Change"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:28
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:42
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:54
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:66
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:86
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:98
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:116
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:130
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:152
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:164
+msgid "GDScript Compatible"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:28
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:42
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:54
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:66
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:86
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:98
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:116
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:130
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:152
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:164
+msgid "C# Binary Compatible"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:28
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:42
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:54
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:66
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:86
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:98
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:116
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:130
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:152
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:164
+msgid "C# Source Compatible"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:28
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:42
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:54
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:66
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:86
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:98
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:116
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:130
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:152
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:164
+msgid "Introduced"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:30
+msgid "**Object**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:31
+msgid "Method ``is_class`` changes ``class`` parameter type from ``String`` to ``StringName``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:31
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:33
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:35
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:45
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:47
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:57
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:59
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:69
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:71
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:72
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:73
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:74
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:75
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:76
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:77
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:78
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:79
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:89
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:91
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:101
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:102
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:104
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:106
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:108
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:109
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:119
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:121
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:123
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:133
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:157
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:167
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:168
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:169
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:170
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:171
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:172
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:173
+msgid "|✔️|"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:31
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:33
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:45
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:47
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:57
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:59
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:72
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:73
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:74
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:75
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:76
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:77
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:78
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:79
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:89
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:91
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:101
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:102
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:108
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:109
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:121
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:123
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:133
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:157
+msgid "|✔️ with compat|"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:31
+msgid "`GH-118582`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:32
+msgid "**ZIPPacker**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:33
+msgid "Method ``start_file`` adds new ``permissions`` and ``modified_time`` optional parameters"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:33
+msgid "`GH-115946`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:34
+msgid "**OptimizedTranslation**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:35
+msgid "Method ``generate`` changes return type from ``void`` to ``bool``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:35
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:69
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:71
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:74
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:75
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:78
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:79
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:108
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:119
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:135
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:145
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:155
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:167
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:168
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:169
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:170
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:171
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:172
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:173
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:175
+msgid "|❌|"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:35
+msgid "`GH-119563`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:39
+msgid "2D"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:44
+msgid "**CPUParticles2D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:45
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:47
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:57
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:59
+msgid "Method ``request_particles_process`` adds new ``process_time_residual`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:45
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:47
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:57
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:59
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:108
+msgid "`GH-109142`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:46
+msgid "**GPUParticles2D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:51
+msgid "3D"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:56
+msgid "**CPUParticles3D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:58
+msgid "**GPUParticles3D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:63
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:319
+msgid "GUI nodes"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:68
+msgid "**Control**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:69
+msgid "Property ``accessibility_live`` changes type from ``DisplayServer.AccessibilityLiveMode`` to ``AccessibilityServer.AccessibilityLiveMode``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:69
+msgid "`GH-116839`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:70
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:324
+msgid "**RichTextLabel**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:71
+msgid "Enum field ``ImageUpdateMask.UPDATE_WIDTH_IN_PERCENT`` renamed to ``ImageUpdateMask.UPDATE_WIDTH_UNIT``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:71
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:72
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:73
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:74
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:75
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:76
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:77
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:78
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:79
+msgid "`GH-112617`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:72
+msgid "Method ``add_image`` changes ``width`` parameter type from ``int`` to ``float``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:73
+msgid "Method ``add_image`` changes ``height`` parameter type from ``int`` to ``float``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:74
+msgid "Method ``add_image`` renames ``width_in_percent`` parameter to ``width_unit`` and changes type from ``bool`` to ``RichTextLabel.ImageUnit``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:75
+msgid "Method ``add_image`` renames ``height_in_percent`` parameter to ``height_unit`` and changes type from ``bool`` to ``RichTextLabel.ImageUnit``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:76
+msgid "Method ``update_image`` changes ``width`` parameter type from ``int`` to ``float``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:77
+msgid "Method ``update_image`` changes ``height`` parameter type from ``int`` to ``float``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:78
+msgid "Method ``update_image`` renames ``width_in_percent`` parameter to ``width_unit`` and changes type from ``bool`` to ``RichTextLabel.ImageUnit``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:79
+msgid "Method ``update_image`` renames ``height_in_percent`` parameter to ``height_unit`` and changes type from ``bool`` to ``RichTextLabel.ImageUnit``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:83
+msgid "Text"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:88
+msgid "**Font**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:89
+msgid "Method ``find_variation`` adds new ``palette_index`` and ``custom_colors`` optional parameters"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:89
+msgid "`GH-117149`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:90
+msgid "**TreeItem**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:91
+msgid "Method ``select`` adds new ``set_as_cursor`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:91
+msgid "`GH-119367`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:95
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:197
+msgid "Rendering"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:100
+msgid "**Image**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:101
+msgid "Method ``save_exr`` adds new ``color_image`` and ``max_linear_value`` optional parameters"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:101
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:102
+msgid "`GH-117800`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:102
+msgid "Method ``save_exr_to_buffer`` adds new ``color_image`` and ``max_linear_value`` optional parameters"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:103
+msgid "**ImageTexture**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:104
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:106
+msgid "Method ``get_format`` moved to base class ``Texture2D``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:104
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:106
+msgid "`GH-109004`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:105
+msgid "**PortableCompressedTexture2D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:107
+msgid "**RenderingServer**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:108
+msgid "Method ``particles_request_process_time`` renames ``time`` parameter to ``process_time`` and adds new ``process_time_residual`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:109
+msgid "Method ``viewport_set_size`` adds new ``view_count`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:109
+msgid "`GH-115799`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:113
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:182
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:299
+msgid "Animation"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:118
+msgid "**Animation**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:119
+msgid "Property ``length`` changes type metadata from ``float`` to ``double``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:119
+msgid "`GH-116394`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:120
+msgid "**AnimationNodeBlendSpace1D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:121
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:123
+msgid "Method ``add_blend_point`` adds new ``name`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:121
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:123
+msgid "`GH-110369`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:122
+msgid "**AnimationNodeBlendSpace2D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:127
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:211
+msgid "Physics"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:132
+msgid "**PhysicsServer2D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:133
+msgid "Method ``body_set_shape_as_one_way_collision`` adds new ``direction`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:133
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:135
+msgid "`GH-104736`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:134
+msgid "**PhysicsServer2DExtension**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:135
+msgid "Method ``_body_set_shape_as_one_way_collision`` adds new ``direction`` parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:139
+msgid "Audio"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:144
+msgid "**AudioEffectSpectrumAnalyzer**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:145
+msgid "Property ``tap_back_pos`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:145
+msgid "`GH-114355`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:149
+msgid "XR"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:154
+msgid "**OpenXRExtensionWrapper**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:155
+msgid "Method ``_on_register_metadata`` adds new ``interaction_profile_metadata`` parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:155
+msgid "`GH-117399`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:156
+msgid "**OpenXRSpatialAnchorCapability**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:157
+msgid "Method ``create_new_anchor`` adds new ``next`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:157
+msgid "`GH-118128`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:161
+msgid "Editor"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:166
+msgid "**EditorSceneFormatImporter**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:167
+msgid "Constant ``IMPORT_ANIMATION`` moved to enum ``ImportFlags``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:167
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:168
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:169
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:170
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:171
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:172
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:173
+msgid "`GH-115788`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:168
+msgid "Constant ``IMPORT_DISCARD_MESHES_AND_MATERIALS`` moved to enum ``ImportFlags``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:169
+msgid "Constant ``IMPORT_FAIL_ON_MISSING_DEPENDENCIES`` moved to enum ``ImportFlags``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:170
+msgid "Constant ``IMPORT_FORCE_DISABLE_MESH_COMPRESSION`` moved to enum ``ImportFlags``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:171
+msgid "Constant ``IMPORT_GENERATE_TANGENT_ARRAYS`` moved to enum ``ImportFlags``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:172
+msgid "Constant ``IMPORT_SCENE`` moved to enum ``ImportFlags``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:173
+msgid "Constant ``IMPORT_USE_NAMED_SKIN_BINDS`` moved to enum ``ImportFlags``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:174
+msgid "**EditorVCSInterface**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:175
+msgid "Method ``_commit`` adds new ``amend`` parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:175
+msgid "`GH-117968`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:179
+msgid "Behavior changes"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:186
+msgid "AnimationNodeBlendSpace1D and AnimationNodeBlendSpace2D have a new SyncMode enum that replaces the previous boolean ``sync`` property. If you are using an AnimationTree and your animations aren't transitioning correctly after upgrading, you may need to set that value in each of your blend spaces to get the desired behavior back."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:192
+msgid "The new sync modes are documented in :ref:`AnimationNodeBlendSpace1D.sync_mode <class_AnimationNodeBlendSpace1D_property_sync_mode>` and :ref:`AnimationNodeBlendSpace2D.sync_mode <class_AnimationNodeBlendSpace2D_property_sync_mode>`."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:201
+msgid "The ``LinearToSRGB`` visual shader no longer clamps to the range ``[0.0, 1.0]`` when using the Mobile or Forward+ renderer (`GH-113956`_)."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:206
+msgid "``CanvasItem`` now avoids adding the antialiasing feather when drawing lines (`GH-105122`_). The feather made lines appear thicker than intended, projects that relied on this behavior will have to be updated to draw a thicker line width."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:215
+msgid "The default ``area_mask`` for ``AudioStreamPlayer`` was changed from ``1`` to ``0`` (disabled) (`GH-107679`_). If you use the ``audio_bus_override`` feature on ``Area2D`` or ``Area3D``, **and** you use the ``AudioStreamPlayer`` default ``area_mask`` (just layer ``1`` ticked), you will need to reset the mask to layer ``1`` — otherwise, the bus overrides will stop working. If the mask was set to anything except layer ``1``, it will continue to work as expected."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:223
+msgid "When using Jolt Physics as the 3D physics engine, ``WorldBoundaryShape3D`` will now use the same convention as Godot when applying ``WorldBoundaryShape3D.plane.d``, resulting in the sign of the plane distance being interpreted in the opposite way compared to Godot 4.6 (`GH-118948`_). You will need to flip the sign yourself to get the same behavior as in Godot 4.6."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:230
+msgid "When using Jolt Physics as the 3D physics engine, ``SoftBody3D`` will no longer default its mass to ``0``, which resulted in an automatically calculated weight of 1 kg per point, resulting in a very high total mass for the body. Now instead it will default to 1 kg for the entire ``SoftBody3D``, same as Godot Physics (`GH-116041`_)."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:237
+msgid "When using Jolt Physics as the 3D physics engine, ``SoftBody3D`` will now apply ``SoftBody3D.linear_stiffness`` in a way that better matches Godot Physics, and in a way that's more appropriate in general (`GH-116041`_). This will affect every ``SoftBody3D`` instance in one way or another, meaning you will need to re-tweak properties like ``SoftBody3D.linear_stiffness`` and ``SoftBody3D.damping_coefficient`` to achieve your desired behavior."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:245
+msgid "When using Jolt Physics as the 3D physics engine, ``Area3D`` will now report overlaps with ``SoftBody3D`` from its various signals and methods (`GH-114198`_). To work around this breaking change, configure your collision layers/masks such that any undesirable interactions between ``Area3D`` and ``SoftBody3D`` are ignored."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:251
+msgid "Input"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:255
+msgid "The device IDs for mouse and keyboard were changed from ``0`` to ``InputEvent.DEVICE_ID_MOUSE`` and ``InputEvent.DEVICE_ID_KEYBOARD`` because some joypads may use ``0`` as their ID (`GH-116274`_). Check the input event by type or compare the device ID ``InputEvent.device`` to the constants ``InputEvent.DEVICE_ID_MOUSE`` and ``InputEvent.DEVICE_ID_KEYBOARD`` instead."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:262
+msgid "GDScript"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:266
+msgid "Setting the element of packed arrays no longer calls the setter for the entire packed array property (`GH-113228`_)."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:271
+msgid "Methods that inherit from a method with a typed return now inherit the return type as well, requiring an explicit return statement in the override (`GH-115763`_). Add ``return null`` to the end of the method to fix the error."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:276
+msgid "Platforms"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:280
+msgid "The minimum macOS version required to run Godot was increased from macOS 10.13 (High Sierra) to macOS 11 (Big Sur)."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:284
+msgid "Changed defaults"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:286
+msgid "The following default values have been changed. If your project uses any of these properties with their default value, you can achieve a similar behavior to the previous version by manually setting the values to match the old defaults."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:293
+msgid "The default stretch mode and stretch aspect for **newly created** projects is now ``canvas_items`` and ``expand`` respectively (previously ``disabled`` and ``keep``). This can be changed in the Project Settings under ``display/window/stretch/mode`` and ``display/window/stretch/aspect``."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:302
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:312
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:322
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:335
+msgid "Property/Parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:302
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:312
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:322
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:335
+msgid "Old Default"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:302
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:312
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:322
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:335
+msgid "New Default"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:304
+msgid "**LookAtModifier3D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:305
+msgid "Property ``relative``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:305
+msgid "true"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:305
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:325
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:326
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:327
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:328
+msgid "false"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:314
+msgid "**ProjectSettings**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:315
+msgid "Property ``rendering/reflections/sky_reflections/roughness_layers``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:315
+msgid "7"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:315
+msgid "8"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:325
+msgid "Method ``add_image`` parameter ``width_in_percent``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:325
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:326
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:327
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:328
+msgid "0"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:326
+msgid "Method ``add_image`` parameter ``height_in_percent``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:327
+msgid "Method ``update_image`` parameter ``width_in_percent``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:328
+msgid "Method ``update_image`` parameter ``height_in_percent``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:332
+msgid "Import"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:337
+msgid "**ResourceImporterDynamicFont**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:338
+msgid "Property ``hinting``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:338
+msgid "1"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:338
+msgid "3"
+msgstr ""

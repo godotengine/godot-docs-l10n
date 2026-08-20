@@ -121,7 +121,7 @@ msgid "The effect of setting this option is that all meshes within the scene wil
 msgstr ""
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:127
-msgid "When reusing a mesh within a scene, keep in mind that UVs will be generated for the first instance found. If the mesh is re-used with different scales (and the scales are wildly different, more than half or twice), this will result in inefficient lightmaps. To avoid this, adjust the **Lightmap Scale** property in the GeometryInstance3D section of a MeshInstance3D node. This lets you *increase* the level of lightmap detail for specific MeshInstance3D nodes (but not decrease it)."
+msgid "When reusing a mesh within a scene, keep in mind that UVs will be generated for the first instance found. If the mesh is reused with different scales (and the scales are wildly different, more than half or twice), this will result in inefficient lightmaps. To avoid this, adjust the **Lightmap Scale** property in the GeometryInstance3D section of a MeshInstance3D node. This lets you *increase* the level of lightmap detail for specific MeshInstance3D nodes (but not decrease it)."
 msgstr ""
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:135
@@ -225,11 +225,11 @@ msgid "Setting up the scene"
 msgstr ""
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:235
-msgid "Before anything is done, a **LightmapGI** node needs to be added to a scene. This will enable light baking on all nodes (and sub-nodes) in that scene, even on instanced scenes."
+msgid "Before anything is done, a **LightmapGI** node needs to be added to a scene. This will enable light baking on all nodes (and sub-nodes) in that scene, even on instantiated scenes."
 msgstr ""
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:241
-msgid "A sub-scene can be instanced several times, as this is supported by the baker. Each instance will be assigned a lightmap of its own. To avoid issues with inconsistent lightmap texel scaling, make sure to respect the rule about mesh scaling mentioned before."
+msgid "A sub-scene can be instantiated several times, as this is supported by the baker. Each instance will be assigned a lightmap of its own. To avoid issues with inconsistent lightmap texel scaling, make sure to respect the rule about mesh scaling mentioned before."
 msgstr ""
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:247

@@ -32,7 +32,7 @@ msgid "From the material itself, in the form of the emission color (though it do
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:14
-msgid "Light nodes: DirectionalLight3D, OmniLight3D and SpotLight3D."
+msgid "Light nodes: DirectionalLight3D, OmniLight3D, SpotLight3D, and AreaLight3D."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:15
@@ -56,7 +56,7 @@ msgid "Light nodes"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:31
-msgid "There are three types of light nodes: :ref:`class_DirectionalLight3D`, :ref:`class_OmniLight3D` and :ref:`class_SpotLight3D`. Let's take a look at the common parameters for lights:"
+msgid "There are four types of light nodes: :ref:`class_DirectionalLight3D`, :ref:`class_OmniLight3D`, :ref:`class_SpotLight3D`, and :ref:`class_AreaLight3D`. Let's take a look at the common parameters for lights:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:37
@@ -104,7 +104,7 @@ msgid "Light number limits"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:59
-msgid "When using the Forward+ renderer, Godot uses a *clustering* approach for real-time lighting. As many lights as desired can be added (as long as performance allows). However, there's still a default limit of 512 *clustered elements* that can be present in the current camera view. A clustered element is an omni light, a spot light, a :ref:`decal <doc_using_decals>` or a :ref:`reflection probe <doc_reflection_probes>`. This limit can be increased by adjusting :ref:`Max Clustered Elements<class_ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements>` in **Project Settings > Rendering > Limits > Cluster Builder**."
+msgid "When using the Forward+ renderer, Godot uses a *clustering* approach for real-time lighting. As many lights as desired can be added (as long as performance allows). However, there's still a default limit of 512 *clustered elements* that can be present in the current camera view. A clustered element is an omni light, a spot light, an area light, a :ref:`decal <doc_using_decals>`, or a :ref:`reflection probe <doc_reflection_probes>`. This limit can be increased by adjusting :ref:`Max Clustered Elements<class_ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements>` in **Project Settings > Rendering > Limits > Cluster Builder**."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:68
@@ -317,7 +317,7 @@ msgid "With the projector texture below, the following result is obtained:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:331
-msgid "If you've acquired omni projectors in the form of cubemap images, you can use `this web-based conversion tool <https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html>`__ to convert them to a single panorama image."
+msgid "If you have omni projectors in the form of cubemap images, you can use `this web-based conversion tool <https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html>`__ to convert them to a single panorama image."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:338
@@ -441,7 +441,7 @@ msgid "Shadow atlas"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:489
-msgid "Unlike Directional lights, which have their own shadow texture, omni and spot lights are assigned to slots of a shadow atlas. This atlas can be configured in the advanced Project Settings (**Rendering > Lights And Shadows > Positional Shadow**)."
+msgid "Unlike Directional lights, which have their own shadow texture, omni, spot, and area lights are assigned to slots of a shadow atlas. This atlas can be configured in the advanced Project Settings (**Rendering > Lights And Shadows > Positional Shadow**)."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:493
@@ -525,7 +525,7 @@ msgid "Directional shadow quality settings can be changed at runtime by calling 
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:546
-msgid "Positional (omni/spot) shadow quality settings can be changed at runtime on the root :ref:`class_Viewport`."
+msgid "Positional (omni/spot/area) shadow quality settings can be changed at runtime on the root :ref:`class_Viewport`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:550
@@ -573,7 +573,7 @@ msgid "Light/shadow distance fade"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:599
-msgid "OmniLight3D and SpotLight3D offer several properties to hide distant lights. This can improve performance significantly in large scenes with dozens of lights or more."
+msgid "OmniLight3D, SpotLight3D, and AreaLight3D offer several properties to hide distant lights. This can improve performance significantly in large scenes with dozens of lights or more."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:603

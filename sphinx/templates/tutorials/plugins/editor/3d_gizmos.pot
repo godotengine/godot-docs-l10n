@@ -64,7 +64,7 @@ msgid "Then we can override methods like :ref:`_redraw()<class_EditorNode3DGizmo
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/3d_gizmos.rst:116
-msgid "Note that we created a material in the `_init` method, and retrieved it in the `_redraw` method using :ref:`get_material()<class_EditorNode3DGizmoPlugin_method_get_material>`. This method retrieves one of the material's variants depending on the state of the gizmo (selected and/or editable)."
+msgid "Note that we created a material in the ``_init`` method, and retrieved it in the ``_redraw`` method using :ref:`get_material() <class_EditorNode3DGizmoPlugin_method_get_material>`. This method retrieves one of the material's variants depending on the state of the gizmo (selected and/or editable)."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/3d_gizmos.rst:121
@@ -72,7 +72,7 @@ msgid "So the final plugin would look somewhat like this:"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/3d_gizmos.rst:162
-msgid "Note that we just added some handles in the `_redraw` method, but we still need to implement the rest of handle-related callbacks in :ref:`EditorNode3DGizmoPlugin <class_EditorNode3DGizmoPlugin>` to get properly working handles."
+msgid "Note that we just added some handles in the ``_redraw`` method, but we still need to implement the rest of handle-related callbacks in :ref:`EditorNode3DGizmoPlugin <class_EditorNode3DGizmoPlugin>` to get properly working handles."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/3d_gizmos.rst:167
@@ -92,5 +92,5 @@ msgid "This way all the gizmo logic and drawing methods can be implemented in a 
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/3d_gizmos.rst:236
-msgid "Note that we just added some handles in the `_redraw` method, but we still need to implement the rest of handle-related callbacks in :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` to get properly working handles."
+msgid "Note that we just added some handles in the ``_redraw`` method, but we still need to implement the rest of handle-related callbacks in :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` to get properly working handles."
 msgstr ""

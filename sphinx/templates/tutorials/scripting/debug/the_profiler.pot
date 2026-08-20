@@ -76,89 +76,89 @@ msgid "**Physics frame** is the time Godot has allocated between physics updates
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/the_profiler.rst:58
-msgid "**Idle time** is the time Godot took to update logic other than physics, such as code that lives in `_process` or timers and cameras set to update on **Idle**."
+msgid "**Idle time** is the time Godot took to update logic other than physics, such as code that lives in :ref:`_process() <class_node_private_method__process>` or timers and cameras set to update on **Idle**."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/the_profiler.rst:61
-msgid "**Physics time** is the time Godot took to update physics tasks, like `_physics_process` and built-in nodes set to **Physics** update."
+msgid "**Physics time** is the time Godot took to update physics tasks, like :ref:`_physics_process() <class_node_private_method__physics_process>` and built-in nodes set to update on **Physics**."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:64
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:65
 msgid "**Frame Time** includes rendering time. Say you find a mysterious spike of lag in your game, but your physics and scripts are all running fast. The delay could be due to the appearance of particles or visual effects!"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:69
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:70
 msgid "By default, Godot ticks on Frame Time and Physics Time. This gives you an overview of how long each frame takes relative to the allocated desired physics FPS. You can toggle functions on and off by clicking the checkboxes on the left. Other facilities make appearances as you go down the list, like Physics 2D, Physics, and Audio, before reaching Script functions, where your code appears."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:75
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:76
 msgid "If you click on the graph, you change which frame's information appears on the left. In the top right, there is also a frame counter where you can manually adjust the frame you are looking at more granularly."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:80
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:81
 msgid "Scope of measurement and measurement windows"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:82
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:83
 msgid "You can change what measurement you are looking at using the **Measure** drop-down menu. By default, it starts with Frame Time and lists the time it takes to go through the frame in milliseconds. The average time is the average time any given function took when called more than once. For example, a function that took 0.05 milliseconds to run five times should give you an average of 0.01 milliseconds."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:89
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:90
 msgid "If accurate milliseconds count is not important, and you want to see proportions of time relative to the rest of the frame, use percentage measurements. Frame % is relative to Frame Time, and Physics % is relative to Physics Time."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:93
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:94
 msgid "The last option is the scope of the time. **Inclusive** measures the time a function took **with** any nested function calls. For example:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:98
-msgid "`get_neighbors`, `find_nearest_neighbor` and `move_subject` all took a lot of time. You could be fooled into thinking that this is because all three of them are slow."
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:99
+msgid "``get_neighbors``, ``find_nearest_neighbor``, and ``move_subject`` all took a lot of time. You could be fooled into thinking that this is because all three of them are slow."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:102
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:103
 msgid "But when changed to **Self**, Godot measures the time spent in the function body without considering function calls it made itself."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:107
-msgid "You can see that `get_neighbors` and `move_subject` have lost a lot of their importance. In effect, that means that `get_neighbors` and `move_subject` have spent more time waiting for some other function call to finish than not, and `find_nearest_neighbor` is **actually** slow."
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:108
+msgid "You can see that ``get_neighbors`` and ``move_subject`` have lost a lot of their importance. In effect, that means that ``get_neighbors`` and ``move_subject`` have spent more time waiting for some other function call to finish than not, and ``find_nearest_neighbor`` is **actually** slow."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:113
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:114
 msgid "Debugging slow code with the profiler"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:115
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:116
 msgid "Finding slow code with the profiler boils down to running your game and watching the performance graph as it draws. When an unacceptable spike occurs in the frame time, you can click on the graph to pause your game and narrow the _Frame #_ to the spike's start. You may need to jump back and forth between frames and functions to find the root cause."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:121
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:122
 msgid "Under the Script functions, turn on the checkboxes for some functions to find which take time. These are the functions you need to review and optimize."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:125
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:126
 msgid "Measuring manually in microseconds"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:127
-msgid "If your function is complex, it could be challenging to figure out which part needs optimization. Is it your math or the way you access other pieces of data to do the math with? Is it the `for` loop? The `if` statements?"
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:128
+msgid "If your function is complex, it could be challenging to figure out which part needs optimization. Is it your math or the way you access other pieces of data to do the math with? Is it the ``for`` loop? The ``if`` statements?"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:131
-msgid "You can narrow down the measurement by manually counting ticks as the code runs with some temporary functions. The two functions are part of the `Time` class object. They are `get_ticks_msec` and `get_ticks_usec`. The first measures in milliseconds (1,000 per second), and the second measures in microseconds (1,000,000 per second)."
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:132
+msgid "You can narrow down the measurement by manually counting ticks as the code runs with some temporary functions. The two functions are part of the ``Time`` class object. They are :ref:`get_ticks_msec() <class_time_method_get_ticks_msec>` and :ref:`get_ticks_usec() <class_time_method_get_ticks_usec>`. The first measures in milliseconds (1,000 per second), and the second measures in microseconds (1,000,000 per second)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:137
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:139
 msgid "Either one returns the amount of time since the game engine started in their respective time frame."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:140
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:142
 msgid "If you wrap a piece of code with a start and end count of microseconds, the difference between the two is the amount of time it took to run that piece of code."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:162
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:164
 msgid "As you become a more experienced programmer, this technique becomes less necessary. You begin to learn what parts of a running program are slow. Knowing that loops and branches can be slow comes from experience, and you gain experience by measuring and doing research."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/the_profiler.rst:167
+#: ../../docs/tutorials/scripting/debug/the_profiler.rst:169
 msgid "But between the profiler and the ticks functions, you should have enough to get started finding which parts of your code need optimization."
 msgstr ""

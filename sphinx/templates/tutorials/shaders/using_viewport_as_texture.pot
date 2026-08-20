@@ -64,7 +64,7 @@ msgid "Create a new scene and add the following nodes exactly as shown below."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:37
-msgid "Go into the the MeshInstance3D and make the mesh a SphereMesh"
+msgid "Go into the :ref:`MeshInstance3D <class_MeshInstance3D>` and make the mesh a :ref:`SphereMesh <class_SphereMesh>`."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:40
@@ -163,86 +163,86 @@ msgstr ""
 msgid "Now that we can calculate the 3D position of the surface of the sphere, we can use 3D noise to make the planet. We will be using this noise function directly from a `Shadertoy <https://www.shadertoy.com/view/Xsl3Dl>`_:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:189
-msgid "All credit goes to the author, Inigo Quilez. It is published under the ``MIT`` licence."
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:191
+msgid "All credit goes to the author, Inigo Quilez. It is published under the ``MIT`` license."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:191
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:193
 msgid "Now to use ``noise``, add the following to the    ``fragment`` function:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:200
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:202
 msgid "In order to highlight the texture, we set the material to unshaded."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:202
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:204
 msgid "You can see now that the noise indeed wraps seamlessly around the sphere. Although this looks nothing like the planet you were promised. So let's move onto something more colorful."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:206
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:208
 msgid "Coloring the planet"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:208
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:210
 msgid "Now to make the planet colors. While there are many ways to do this, for now, we will stick with a gradient between water and land."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:211
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:213
 msgid "To make a gradient in GLSL, we use the ``mix`` function. ``mix`` takes two values to interpolate between and a third argument to choose how much to interpolate between them; in essence, it *mixes* the two values together. In other APIs, this function is often called ``lerp``. However, ``lerp`` is typically reserved for mixing two floats together; ``mix`` can take any values whether it be floats or vector types."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:221
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:223
 msgid "The first color is blue for the ocean. The second color is a kind of reddish color (because all alien planets need red terrain). And finally, they are mixed together by ``n * 0.5 + 0.5``. ``n`` smoothly varies between ``-1`` and ``1``. So we map it into the ``0-1`` range that ``mix`` expects. Now you can see that the colors change between blue and red."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:228
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:230
 msgid "That is a little more blurry than we want. Planets typically have a relatively clear separation between land and sea. In order to do that, we will change the last term to ``smoothstep(-0.1, 0.0, n)``. And thus the whole line becomes:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:236
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:238
 msgid "What ``smoothstep`` does is return ``0`` if the third argument is below the first and ``1`` if the third argument is larger than the second and smoothly blends between ``0`` and ``1`` if the third number is between the first and the second. So in this line, ``smoothstep`` returns ``0`` whenever ``n`` is less than ``-0.1`` and it returns ``1`` whenever ``n`` is above ``0``."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:243
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:245
 msgid "One more thing to make this a little more planet-y. The land shouldn't be so blobby; let's make the edges a little rougher. A trick that is often used in shaders to make rough looking terrain with noise is to layer levels of noise over one another at various frequencies. We use one layer to make the overall blobby structure of the continents. Then another layer breaks up the edges a bit, and then another, and so on. What we will do is calculate ``n`` with four lines of shader code instead of just one. ``n`` becomes:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:257
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:259
 msgid "And now the planet looks like:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:262
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:264
 msgid "Making an ocean"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:264
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:266
 msgid "One final thing to make this look more like a planet. The ocean and the land reflect light differently. So we want the ocean to shine a little more than the land. We can do this by passing a fourth value into the ``alpha`` channel of our output ``COLOR`` and using it as a Roughness map."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:272
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:274
 msgid "This line returns ``0.3`` for water and ``1.0`` for land. This means that the land is going to be quite rough, while the water will be quite smooth."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:275
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:277
 msgid "And then, in the material, under the \"Metallic\" section, make sure ``Metallic`` is set to ``0`` and ``Specular`` is set to ``1``. The reason for this is the water reflects light really well, but isn't metallic. These values are not physically accurate, but they are good enough for this demo."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:279
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:281
 msgid "Next, under the \"Roughness\" section set the roughness texture to a :ref:`Viewport Texture <class_ViewportTexture>` pointing to our planet texture :ref:`SubViewport <class_SubViewport>`. Finally, set the ``Texture Channel`` to ``Alpha``. This instructs the renderer to use the ``alpha`` channel of our output ``COLOR`` as the ``Roughness`` value."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:286
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:288
 msgid "You'll notice that very little changes except that the planet is no longer reflecting the sky. This is happening because, by default, when something is rendered with an alpha value, it gets drawn as a transparent object over the background. And since the default background of the :ref:`SubViewport <class_SubViewport>` is opaque, the ``alpha`` channel of the :ref:`Viewport Texture <class_ViewportTexture>` is ``1``, resulting in the planet texture being drawn with slightly fainter colors and a ``Roughness`` value of ``1`` everywhere. To correct this, we go into the :ref:`SubViewport <class_SubViewport>` and enable the \"Transparent Bg\" property. Since we are now rendering one transparent object on top of another, we want to enable ``blend_premul_alpha``:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:299
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:301
 msgid "This pre-multiplies the colors by the ``alpha`` value and then blends them correctly together. Typically, when blending one transparent color on top of another, even if the background has an ``alpha`` of ``0`` (as it does in this case), you end up with weird color bleed issues. Setting ``blend_premul_alpha`` fixes that."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:303
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:305
 msgid "Now the planet should look like it is reflecting light on the ocean but not the land. move around the :ref:`OmniLight3D <class_OmniLight3D>` in the scene so you can see the effect of the reflections on the ocean."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:308
+#: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:310
 msgid "And there you have it. A procedural planet generated using a :ref:`SubViewport <class_SubViewport>`."
 msgstr ""

@@ -68,7 +68,7 @@ msgid "Autoloading nodes and scripts can give us these characteristics."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/singletons_autoload.rst:40
-msgid "Godot won't make an Autoload a \"true\" singleton as per the singleton design pattern. It may still be instanced more than once by the user if desired."
+msgid "Godot won't make an Autoload a \"true\" singleton as per the singleton design pattern. It may still be instantiated more than once by the user if desired."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/singletons_autoload.rst:45
@@ -152,7 +152,7 @@ msgid "Now whenever we run any scene in the project, this script will always be 
 msgstr ""
 
 #: ../../docs/tutorials/scripting/singletons_autoload.rst:163
-msgid "Returning to the script, it needs to fetch the current scene in the `_ready()` function. Both the current scene (the one with the button) and ``global.gd`` are children of root, but autoloaded nodes are always first. This means that the last child of root is always the loaded scene."
+msgid "Returning to the script, it needs to fetch the current scene in the ``_ready()`` function. Both the current scene (the one with the button) and ``global.gd`` are children of root, but autoloaded nodes are always first. This means that the last child of root is always the loaded scene."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/singletons_autoload.rst:196

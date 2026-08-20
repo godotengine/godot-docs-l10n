@@ -208,41 +208,121 @@ msgid "Hardware/OS-specific"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:252
-msgid "If your monitor supports it, consider enabling variable refresh rate (G-Sync/FreeSync) while leaving V-Sync enabled, then cap the framerate in the project settings to a slightly lower value than your monitor's maximum refresh rate as per `this page <https://blurbusters.com/howto-low-lag-vsync-on/>`__. For example, on a 144 Hz monitor, you can set the project's framerate cap to ``141``. This may be counterintuitive at first, but capping the FPS below the maximum refresh rate range ensures that the OS never has to wait for vertical blanking to finish. This leads to *similar* input lag as V-Sync disabled with the same framerate cap (usually less than 1 ms greater), but without any tearing."
+msgid "If your monitor supports it, consider enabling variable refresh rate (G-Sync/FreeSync) while leaving V-Sync enabled, then cap the framerate in the project settings to a slightly lower value than your monitor's maximum refresh rate as per `this page <https://blurbusters.com/howto-low-lag-vsync-on/>`__."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:257
+msgid "This may be counterintuitive at first, but capping the FPS below the maximum refresh rate range ensures that the OS never has to wait for vertical blanking to finish. This leads to *similar* input lag as V-Sync disabled with the same framerate cap (usually less than 1 ms greater), but without any tearing."
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:263
-msgid "This can be done by changing the **Application > Run > Max FPS** project setting or assigning ``Engine.max_fps`` at runtime in a script."
+msgid "The formula used to determine the framerate cap is ``refresh - (refresh * refresh / 3600.0)`` where ``refresh`` is the monitor's refresh rate in Hz. This table shows the framerate cap to use for common refresh rates (the cap is rounded down to the nearest integer):"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:266
-msgid "On some platforms, you can also opt into a low-latency mode in the graphics driver options (such as the NVIDIA Control Panel on Windows). The **Ultra** setting will give you the lowest possible latency, at the cost of slightly lower average framerates. Forcing the GPU to use the maximum performance profile can also further reduce input lag, at the cost of higher power consumption (and resulting heat/fan noise)."
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:269
+msgid "Refresh rate"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:269
+msgid "Framerate cap"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:271
+msgid "60 Hz"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:271
+msgid "58 FPS"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:273
-msgid "Finally, make sure your monitor is running at its highest possible refresh rate in the OS' display settings."
+msgid "75 Hz"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:276
-msgid "Also, ensure that your mouse is configured to use its highest polling rate (typically 1,000 Hz for gaming mice, sometimes more). High USB polling rates can however result in high CPU usage, so 500 Hz may be a safer bet on low-end CPUs. If your mouse offers multiple :abbr:`DPI (Dots Per Inch)` settings, consider also `using the highest possible setting and reducing in-game sensitivity to reduce mouse latency <https://www.youtube.com/watch?v=6AoRfv9W110>`__."
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:273
+msgid "73 FPS"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:282
-msgid "On Linux when using X11, disabling compositing in window managers that allow it (such as KWin or Xfwm) can reduce input lag significantly."
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:275
+msgid "120 Hz"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:286
-msgid "Reporting jitter, stutter or input lag problems"
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:275
+msgid "115 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:277
+msgid "144 Hz"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:277
+msgid "138 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:279
+msgid "165 Hz"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:279
+msgid "157 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:281
+msgid "240 Hz"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:281
+msgid "224 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:283
+msgid "360 Hz"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:283
+msgid "324 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:285
+msgid "480 Hz"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:285
+msgid "416 FPS"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:288
-msgid "If you are reporting a stutter or jitter problem (opening an issue) not caused by any of the above reasons, please specify very clearly all the information possible about device, operating system, driver versions, etc. This may help to better troubleshoot it."
+msgid "This framerate cap can be set by changing the **Application > Run > Max FPS** project setting or assigning ``Engine.max_fps`` at runtime in a script. At higher refresh rates, a lower cap is needed to ensure timing inaccuracies don't cause the display to engage V-Sync (which would increase input lag)."
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:293
-msgid "If you are reporting input lag problems, please include a capture made with a high speed camera (such as your phone's slow motion video mode). The capture **must** have both the screen and the input device visible so that the number of frames between an input and the on-screen result can be counted. Also, make sure to mention your monitor's refresh rate and your input device's polling rate (especially for mice)."
+msgid "On some platforms, you can also opt into a low-latency mode in the graphics driver options (such as the NVIDIA Control Panel on Windows). The **Ultra** setting will give you the lowest possible latency, at the cost of slightly lower average framerates. Forcing the GPU to use the maximum performance profile can also further reduce input lag, at the cost of higher power consumption (and resulting heat/fan noise)."
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:300
+msgid "Finally, make sure your monitor is running at its highest possible refresh rate in the OS' display settings."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:303
+msgid "Also, ensure that your mouse is configured to use its highest polling rate (typically 1,000 Hz for gaming mice, sometimes more). High USB polling rates can however result in high CPU usage, so 500 Hz may be a safer bet on low-end CPUs. If your mouse offers multiple :abbr:`DPI (Dots Per Inch)` settings, consider also `using the highest possible setting and reducing in-game sensitivity to reduce mouse latency <https://www.youtube.com/watch?v=6AoRfv9W110>`__."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:309
+msgid "On Linux when using X11, disabling compositing in window managers that allow it (such as KWin or Xfwm) can reduce input lag significantly."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:313
+msgid "Reporting jitter, stutter or input lag problems"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:315
+msgid "If you are reporting a stutter or jitter problem (opening an issue) not caused by any of the above reasons, please specify very clearly all the information possible about device, operating system, driver versions, etc. This may help to better troubleshoot it."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:320
+msgid "If you are reporting input lag problems, please include a capture made with a high speed camera (such as your phone's slow motion video mode). The capture **must** have both the screen and the input device visible so that the number of frames between an input and the on-screen result can be counted. Also, make sure to mention your monitor's refresh rate and your input device's polling rate (especially for mice)."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:327
 msgid "Also, make sure to use the correct term (jitter, stutter, input lag) based on the exhibited behavior. This will help understand your issue much faster. Provide a project that can be used to reproduce the issue, and if possible, include a screen capture demonstrating the bug."
 msgstr ""

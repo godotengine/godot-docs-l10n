@@ -332,57 +332,57 @@ msgid "Advanced dialog when double-clicking an Ogg Vorbis or MP3 file in the Fil
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:260
-msgid "This dialog allows you to edit the audio's loop point with a real-time preview, in addition to the :abbr:`BPM (Beats Per Minute)`, beat count and bar beats. These 3 settings are currently unused, but they will be used in the future for interactive music support (which allows smoothly transitioning between different music tracks)."
+msgid "This dialog allows you to edit the audio's loop point with a real-time preview, in addition to the :abbr:`BPM (Beats Per Minute)`, beat count, and bar beats. These 3 settings are used for interactive music, to smoothly transition between different music tracks."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:268
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:267
 msgid "Unlike WAV files, Ogg Vorbis and MP3 only support a \"loop begin\" loop point, not a \"loop end\" point. Looping can also be only be standard forward looping, not ping-pong or backward."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:275
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:274
 msgid "Best practices"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:278
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:277
 msgid "Use appropriate quality settings"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:280
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:279
 msgid "While keeping pristine-quality audio sources is important if you're performing editing, using the same quality in the exported project is not necessary. For WAV files, Godot offers several import options to reduce the final file size without modifying the source file on disk."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:285
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:284
 msgid "To reduce memory usage and file size, choose an appropriate quantization, sample rate and number of channels for your audio:"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:288
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:287
 msgid "There's no *audible* benefit to using 24-bit audio, especially in a game where several sounds are often playing at the same time (which makes it harder to appreciate individual sounds)."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:291
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:290
 msgid "Unless you are slowing down the audio at runtime, there's no *audible* benefit to using a sample rate greater than 48 kHz. If you wish to keep a source with a higher sample rate for editing, use the **Force > Max Rate** import option to limit the sample rate of the imported sound (only available for WAV files)."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:296
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:295
 msgid "Many sound effects can generally be converted to mono as opposed to stereo. If you wish to keep a source with stereo for editing, use the **Force > Mono** import option to convert the imported sound to mono (only available for WAV files)."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:299
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:298
 msgid "Voices can generally be converted to mono, but can also have their sample rate reduced to 22 kHz without a noticeable loss in quality (unless the voice is very high-pitched). This is because most human voices never go past 11 kHz."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:304
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:303
 msgid "Use real-time audio effects to reduce file size"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:306
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:305
 msgid "Godot has an :ref:`extensive bus system <doc_audio_buses>` with built-in effects. This saves SFX artists the need to add reverb to the sound effects, reducing their size greatly and ensuring correct trimming."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:312
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:311
 msgid "As you can see above, sound effects become much larger in file size with reverb added."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:317
+#: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:316
 msgid "Audio samples can be loaded and saved at runtime using :ref:`runtime file loading and saving <doc_runtime_file_loading_and_saving_audio_video_files>`, including from an exported project."
 msgstr ""

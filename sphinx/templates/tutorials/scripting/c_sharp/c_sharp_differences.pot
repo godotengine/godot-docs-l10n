@@ -1194,7 +1194,7 @@ msgid "``signal`` keyword"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:310
-msgid "Use the ``[Signal]`` attribute to declare a signal instead of the GDScript ``signal`` keyword. This attribute should be used on a `delegate`, whose name signature will be used to define the signal. The `delegate` must have the ``EventHandler`` suffix, an `event` will be generated in the class with the same name but without the suffix, use that event's name with ``EmitSignal``."
+msgid "Use the ``[Signal]`` attribute to declare a signal instead of the GDScript ``signal`` keyword. This attribute should be used on a ``delegate``, whose name signature will be used to define the signal. The ``delegate`` must have the ``EventHandler`` suffix, an ``event`` will be generated in the class with the same name but without the suffix, use that event's name with ``EmitSignal``."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:319
@@ -1202,11 +1202,11 @@ msgid "See also: :ref:`doc_c_sharp_signals`."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:322
-msgid "`@onready` annotation"
+msgid "``@onready`` annotation"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:324
-msgid "GDScript has the ability to defer the initialization of a member variable until the ready function is called with `@onready` (cf. :ref:`doc_gdscript_onready_annotation`). For example:"
+msgid "GDScript has the ability to defer the initialization of a member variable until the ready function is called with :ref:`@onready <doc_gdscript_onready_annotation>`. For example:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:332

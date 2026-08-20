@@ -68,7 +68,7 @@ msgid "Which Renderer to use"
 msgstr ""
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:39
-msgid "Godot has 3 renderer options for projects: Compatibility, Mobile, and Forward+. The current recommendation is to use the Mobile renderer for any desktop VR project, and use the Compatibility renderer for any project running on a standalone headset like the Meta Quest 3. XR projects will run with the Forward+ renderer, but it isn't well optimized for XR right now compared to the other two."
+msgid "Godot has 3 renderer options for projects: Compatibility, Mobile, and Forward+. The current recommendation is to use the Mobile renderer for any desktop VR project, or any project running on a standalone headset like the Meta Quest 3. XR projects will run with the Forward+ renderer, but it isn't well optimized for XR right now compared to the other two."
 msgstr ""
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:46
@@ -76,81 +76,89 @@ msgid "OpenXR"
 msgstr ""
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:48
-msgid "OpenXR is a new industry standard that allows different XR platforms to present themselves through a standardized API to XR applications. This standard is an open standard maintained by the Khronos Group and thus aligns very well with Godot's interests."
+msgid "OpenXR is the industry standard API that allows different XR platforms to interact with XR applications. This standard is an open standard maintained by the Khronos Group and thus aligns very well with Godot's interests. We are thus using this as the example in this introduction. Check the respective chapters for differences in other APIs."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:50
+#: ../../docs/tutorials/xr/setting_up_xr.rst:51
 msgid "The Vulkan implementation of OpenXR is closely integrated with Vulkan, taking over part of the Vulkan system. This requires tight integration of certain core graphics features in the Vulkan renderer which are needed before the XR system is setup. This was one of the main deciding factors to include OpenXR as a core interface."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:52
+#: ../../docs/tutorials/xr/setting_up_xr.rst:53
 msgid "This also means OpenXR needs to be enabled when Godot starts in order to set things up correctly. Check the :ref:`Enabled<class_ProjectSettings_property_xr/openxr/enabled>` setting in your project settings under **XR > OpenXR**."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:58
+#: ../../docs/tutorials/xr/setting_up_xr.rst:59
 msgid "You can find several other settings related to OpenXR here as well. These can't be changed while your application is running. The default settings will get us started, but for more information on what's here see :ref:`doc_openxr_settings`."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:62
+#: ../../docs/tutorials/xr/setting_up_xr.rst:63
 msgid "You'll also need to go to **XR > Shaders** in the project settings and check the :ref:`Enabled<class_ProjectSettings_property_xr/shaders/enabled>` box to enable them. Once you've done that click the **Save & Restart** button."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:69
+#: ../../docs/tutorials/xr/setting_up_xr.rst:70
 msgid "Many post process effects have not yet been updated to support stereoscopic rendering. Using these will have adverse effects."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:73
+#: ../../docs/tutorials/xr/setting_up_xr.rst:74
 msgid "Setting up the XR scene"
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:75
+#: ../../docs/tutorials/xr/setting_up_xr.rst:76
 msgid "Every XR application needs at least an :ref:`XROrigin3D <class_xrorigin3d>` and an :ref:`XRCamera3D <class_xrcamera3d>` node. Most will have two :ref:`XRController3D <class_xrcontroller3d>`, one for the left hand and one for the right. Keep in mind that the camera and controller nodes should be children of the origin node. Add these nodes to a new scene and rename the controller nodes to ``LeftHand`` and ``RightHand``, your scene should look something like this:"
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:79
+#: ../../docs/tutorials/xr/setting_up_xr.rst:80
 msgid "The warning icons are expected and should go away after you configure the controllers. Select the left hand and set it up as follows:"
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:84
+#: ../../docs/tutorials/xr/setting_up_xr.rst:85
 msgid "And the right hand:"
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:88
+#: ../../docs/tutorials/xr/setting_up_xr.rst:89
 msgid "Right now all these nodes are on the floor, they will be positioned correctly in runtime. To help during development, it can be helpful to move the camera upwards so its ``y`` is set to ``1.7``, and move the controller nodes to ``-0.5, 1.0, -0.5`` and ``0.5, 1.0, -0.5`` for respectively the left and right hand."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:90
+#: ../../docs/tutorials/xr/setting_up_xr.rst:91
 msgid "Next we need to add a script to our root node. Add the following code into this script:"
 msgstr ""
 
+#: ../../docs/tutorials/xr/setting_up_xr.rst:138
+msgid "There is no restriction to where this code is executed from. It is common to add this script to the :ref:`XROrigin3D <class_xrorigin3d>` node or as a :ref:`Node3D <class_node3d>` child of the root node."
+msgstr ""
+
 #: ../../docs/tutorials/xr/setting_up_xr.rst:140
-msgid "This code fragment assumes we are using OpenXR, if you wish to use any of the other interfaces you can change the ``find_interface`` call."
+msgid "The OpenXR interface is unique in that we have to start it before the project loads, hence ``is_initialized`` is checked here. Most interfaces require a call to their ``initialize`` function instead."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:144
-msgid "As you can see in the code snippet above, we turn off v-sync. When using OpenXR you are outputting the rendering results to an HMD that often requires us to run at 90Hz or higher. If your monitor is a 60hz monitor and v-sync is turned on, you will limit the output to 60 frames per second."
+#: ../../docs/tutorials/xr/setting_up_xr.rst:142
+msgid "If you wish to support multiple XR interfaces, say release a game both targeting OpenXR hardware and deploy over WebXR, you can check one after the other until a functioning interface is found."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:148
-msgid "XR interfaces like OpenXR perform their own sync."
+#: ../../docs/tutorials/xr/setting_up_xr.rst:147
+msgid "As OpenXR outputs the rendering result to an HMD, which often runs at a higher framerate than the monitor, Godot's V-Sync settings are ignored and V-sync will always be disabled."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:150
+#: ../../docs/tutorials/xr/setting_up_xr.rst:149
+msgid "Instead, OpenXR perform its own frame timing to ensure a consistent framerate."
+msgstr ""
+
+#: ../../docs/tutorials/xr/setting_up_xr.rst:151
 msgid "Also note that by default the physics engine runs at 60Hz as well and this can result in choppy physics. You should set ``Engine.physics_ticks_per_second`` to a higher value."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:153
-msgid "If you run your project at this point in time, everything will work but you will be in a dark world. So to finish off our starting point add a :ref:`DirectionalLight3D <class_directionallight3d>` and a :ref:`WorldEnvironment <class_worldenvironment>` node to your scene. You may wish to also add a mesh instance as a child to each controller node just to temporarily visualise them. Make sure you configure a sky in your world environment."
+#: ../../docs/tutorials/xr/setting_up_xr.rst:155
+msgid "If you run your project at this point in time, everything will work but you will be in a dark world. So to finish off our starting point add a :ref:`DirectionalLight3D <class_directionallight3d>` and a :ref:`WorldEnvironment <class_worldenvironment>` node to your scene. You may wish to also add a mesh instance as a child to each controller node just to temporarily visualize them. Make sure you configure a sky in your world environment."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:157
+#: ../../docs/tutorials/xr/setting_up_xr.rst:159
 msgid "Now run your project, you should be floating somewhere in space and be able to look around."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:161
+#: ../../docs/tutorials/xr/setting_up_xr.rst:163
 msgid "While traditional level switching can definitely be used with XR applications, where this scene setup is repeated in each level, most find it easier to set this up once and loading levels as a subscene. If you do switch scenes and replicate the XR setup in each one, do make sure you do not run ``initialize`` multiple times. The effect can be unpredictable depending on the XR interface used."
 msgstr ""
 
-#: ../../docs/tutorials/xr/setting_up_xr.rst:163
+#: ../../docs/tutorials/xr/setting_up_xr.rst:165
 msgid "For the rest of this basic tutorial series we will create a game that uses a single scene."
 msgstr ""

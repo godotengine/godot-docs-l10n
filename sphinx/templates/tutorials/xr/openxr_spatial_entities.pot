@@ -156,7 +156,7 @@ msgid "Each type of spatial entity will implement its own subclass and we can th
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:86
-msgid "Generally speaking we will instance different subscenes for each type of entity. As the tracker objects can be used with :ref:`XRAnchor3D<class_XRAnchor3D>` nodes, these subscenes should have such a node as their root node."
+msgid "Generally speaking we will instantiate different subscenes for each type of entity. As the tracker objects can be used with :ref:`XRAnchor3D<class_XRAnchor3D>` nodes, these subscenes should have such a node as their root node."
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:90
@@ -324,7 +324,7 @@ msgid "The core spatial entity functionality is exposed through the :ref:`OpenXR
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:614
-msgid "Specific logic is exposed through capabilities that introduce specialised component types, and give access to specific types of entities, however they all use the same mechanisms for accessing the entity data managed by the spatial entity system."
+msgid "Specific logic is exposed through capabilities that introduce specialized component types, and give access to specific types of entities, however they all use the same mechanisms for accessing the entity data managed by the spatial entity system."
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:618
@@ -520,7 +520,7 @@ msgid "PERSISTENCE_SCOPE_LOCAL_ANCHORS"
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:975
-msgid "Persistence operations and data access is limited to spatial anchors, on the same device, for the same user and app (using `persist_anchor` and `unpersist_anchor` functions)"
+msgid "Persistence operations and data access is limited to spatial anchors, on the same device, for the same user and app (using :ref:`persist_anchor() <class_openxrspatialanchorcapability_method_persist_anchor>` and :ref:`unpersist_anchor() <class_openxrspatialanchorcapability_method_persist_anchor>` functions)"
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_spatial_entities.rst:979

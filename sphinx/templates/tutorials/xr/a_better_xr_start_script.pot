@@ -20,7 +20,7 @@ msgid "A better XR start script"
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:6
-msgid "In :ref:`doc_setting_up_xr` we introduced a startup script that initialises our setup which we used as our script on our main node. This script performs the minimum steps required for any given interface."
+msgid "In :ref:`doc_setting_up_xr` we introduced a startup script that initializes our setup which we used as our script on our main node. This script performs the minimum steps required for any given interface."
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:9
@@ -68,7 +68,7 @@ msgid "We introduce a few new variables to our script as well:"
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:62
-msgid "``maximum_refresh_rate`` will control the headsets refresh rate if this is supported by the headset."
+msgid "``maximum_refresh_rate`` will control the headset's refresh rate if this is supported by the headset."
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:63
@@ -84,7 +84,7 @@ msgid "Our updated ready function"
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:94
-msgid "We add a few things to the ready function."
+msgid "We add a few things to the ``_ready`` function."
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:96
@@ -100,7 +100,7 @@ msgid "We hook up a number of signals that will be emitted by the :ref:`XRInterf
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:106
-msgid "We also quit our application if we couldn't successfully initialise OpenXR. Now this can be a choice. If you are making a mixed mode game you setup the VR mode of your game on success, and setup the non-VR mode of your game on failure. However, when running a VR only application on a standalone headset, it is nicer to exit on failure than to hang the system."
+msgid "We also quit our application if we couldn't successfully initialize OpenXR. Now this can be a choice. If you are making a mixed mode game you setup the VR mode of your game on success, and setup the non-VR mode of your game on failure. However, when running a VR only application on a standalone headset, it is nicer to exit on failure than to hang the system."
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:200
@@ -140,7 +140,7 @@ msgid "While your game is in visible state because the user has opened a system 
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:375
-msgid "On focussed state"
+msgid "On focused state"
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:377
@@ -188,5 +188,5 @@ msgid "All we do here is emit the ``pose_recentered`` signal. You can connect to
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:509
-msgid "And that finished our script. It was written so that it can be re-used over multiple projects. Just add it as the script on your main node (and extend it if needed) or add it on a child node specific for this script."
+msgid "And that finished our script. It was written so that it can be reused over multiple projects. Just add it as the script on your main node (and extend it if needed) or add it on a child node specific for this script."
 msgstr ""

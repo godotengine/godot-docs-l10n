@@ -471,11 +471,10 @@ msgid "Additionally, you can adjust the quality of SSAO in the project settings'
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:464
-msgid "**Quality:** Sets the quality of the screen-space ambient occlusion effect. Higher values take more samples and so will result in better quality at the cost of performance. Setting this to Ultra will use the **Adaptive Target** setting (see below)."
+msgid "**Quality:** Sets the quality of the screen-space ambient occlusion effect. Higher values take more samples and so will result in better quality, at the cost of performance. Setting this to Ultra will use the **Adaptive Target** setting (see below)."
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:468
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:546
 msgid "**Half Size:** If ``true``, screen-space ambient occlusion will be rendered at half size and then upscaled before being added to the scene. This is significantly faster but may miss small details. If ``false``, screen-space ambient occlusion will be rendered at full size."
 msgstr ""
 
@@ -544,7 +543,11 @@ msgid "Additionally, you can adjust the quality of SSIL in the project settings'
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:542
-msgid "**Quality:** Sets the quality of the screen-space ambient occlusion effect. Higher values take more samples and so will result in better quality, at the cost of performance. Setting to Ultra will use the **Adaptive Target** setting (see below)."
+msgid "**Quality:** Sets the quality of the screen-space indirect lighting effect. Higher values take more samples and so will result in better quality, at the cost of performance. Setting this to Ultra will use the **Adaptive Target** setting (see below)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:546
+msgid "**Half Size:** If ``true``, screen-space indirect lighting will be rendered at half size and then upscaled before being added to the scene. This is significantly faster but may miss small details. If ``false``, screen-space indirect lighting will be rendered at full size."
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:550

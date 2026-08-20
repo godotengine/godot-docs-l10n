@@ -24,7 +24,7 @@ msgid "This guide explains how to get nodes, create nodes, add them as a child, 
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:11
-msgid "Check the :ref:`doc_instancing` tutorial to learn about Godot's approach to scene instancing."
+msgid "Check the :ref:`doc_instancing` tutorial to learn about Godot's approach to scene instantiation."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:14
@@ -36,7 +36,7 @@ msgid "You can get a reference to a node by calling the :ref:`Node.get_node() <c
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:21
-msgid "If, for example,  you have a scene tree like this, and you want to get a reference to the Sprite2D and Camera2D nodes to access them in your script."
+msgid "If, for example, you have a scene tree like this, and you want to get a reference to the Sprite2D and Camera2D nodes to access them in your script."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:26
@@ -108,7 +108,7 @@ msgid "After the engine freed the node, the remote scene tree doesn't display th
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:173
-msgid "You can alternatively call ``free()`` to immediately destroy the node. You should do this with care as any reference to it will instantly become ``null``. We recommend using ``queue_free()`` unless you know what you're doing."
+msgid "You can alternatively call ``free()`` to immediately destroy the node. You should do this with care as any reference to it will instantly become invalid. We recommend using ``queue_free()`` unless you know what you're doing."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:177
@@ -116,11 +116,11 @@ msgid "When you free a node, it also frees all its children. Thanks to this, to 
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:182
-msgid "Instancing scenes"
+msgid "Instantiating scenes"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:184
-msgid "Scenes are templates from which you can create as many reproductions as you'd like. This operation is called instancing, and doing it from code happens in two steps:"
+msgid "Scenes are templates from which you can create as many reproductions as you'd like. This operation is called instantiation, and doing it from code happens in two steps:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:188
@@ -140,5 +140,5 @@ msgid "At that point, ``scene`` is a packed scene resource, not a node. To creat
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:226
-msgid "The advantage of this two-step process is you can keep a packed scene loaded and create new instances on the fly. For example, to quickly instance several enemies or bullets."
+msgid "The advantage of this two-step process is you can keep a packed scene loaded and create new instances on the fly. For example, to quickly instantiate several enemies or bullets."
 msgstr ""

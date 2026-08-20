@@ -116,7 +116,7 @@ msgid "To provide further understanding, here is a break-down of the steps used 
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:73
-msgid "Create an Android library module using `these instructions <https://developer.android.com/studio/projects/android-library>`_"
+msgid "Create an Android library module by following `these instructions <https://developer.android.com/studio/projects/android-library>`_."
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:75
@@ -235,166 +235,230 @@ msgstr ""
 msgid "The export tool script is used to configure the Android plugin and hook it within the Godot Editor's export process. It should look something like this:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:219
+#: ../../docs/tutorials/platform/android/android_plugin.rst:205
+msgid "Here are the set of `EditorExportPlugin APIs <https://docs.godotengine.org/en/stable/classes/class_editorexportplugin.html>`_ most relevant to use in this tool script:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "`_supports_platform <https://docs.godotengine.org/en/latest/classes/class_editorexportplugin.html#class-editorexportplugin-method-supports-platform>`_:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "Return ``true`` if the plugin supports the given platform. For Android plugins, this must return ``true`` when ``platform`` is `EditorExportPlatformAndroid <https://docs.godotengine.org/en/stable/classes/class_editorexportplatformandroid.html>`_"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "`_get_android_libraries <https://docs.godotengine.org/en/latest/classes/class_editorexportplugin.html#class-editorexportplugin-method-get-android-libraries>`_:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "Retrieve the local paths of the Android libraries binaries (AAR files) provided by the plugin"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "`_get_android_dependencies <https://docs.godotengine.org/en/latest/classes/class_editorexportplugin.html#class-editorexportplugin-method-get-android-dependencies>`_:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "Retrieve the set of Android maven dependencies (e.g. `org.godot.example:my-plugin:0.0.0`) provided by the plugin"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "`_get_android_dependencies_maven_repos <https://docs.godotengine.org/en/latest/classes/class_editorexportplugin.html#class-editorexportplugin-method-get-android-dependencies-maven-repos>`_:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "Retrieve the urls of the maven repos for the android dependencies provided by ``_get_android_dependencies``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "`_get_android_manifest_activity_element_contents <https://docs.godotengine.org/en/latest/classes/class_editorexportplugin.html#class-editorexportplugin-method-get-android-manifest-activity-element-contents>`_:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "Update the contents of the ``<activity>`` element in the generated Android manifest"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "`_get_android_manifest_application_element_contents <https://docs.godotengine.org/en/latest/classes/class_editorexportplugin.html#class-editorexportplugin-method-get-android-manifest-application-element-contents>`_:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "Update the contents of the ``<application>`` element in the generated Android manifest"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "`_get_android_manifest_element_contents <https://docs.godotengine.org/en/latest/classes/class_editorexportplugin.html#class-editorexportplugin-method-get-android-manifest-element-contents>`_:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:0
+msgid "Update the contents of the ``<manifest>`` element in the generated Android manifest"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:223
+msgid "The ``_get_android_manifest_*`` methods allow the plugin to automatically provide changes to the app's manifest which are preserved when the Godot Editor is updated, resolving a long standing issue with v1 Android plugins."
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:227
 msgid "Create a ``plugin.cfg``. This is an INI file with metadata about your plugin:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:231
+#: ../../docs/tutorials/platform/android/android_plugin.rst:239
 msgid "For reference, here is the `folder structure for the Godot Android plugin project template <https://github.com/m4gr3d/Godot-Android-Plugin-Template/tree/main/plugin/export_scripts_template>`_. At build time, the contents of the ``export_scripts_template`` directory as well as the generated plugin binaries are copied to the ``addons/<plugin_name>`` directory:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:244
+#: ../../docs/tutorials/platform/android/android_plugin.rst:252
 msgid "Packaging a v2 Android plugin with GDExtension capabilities"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:246
+#: ../../docs/tutorials/platform/android/android_plugin.rst:254
 msgid "For GDExtension, we follow the same steps as for `Packaging a v2 Android plugin`_ and add the `GDExtension config file <https://docs.godotengine.org/en/stable/tutorials/scripting/cpp/gdextension_cpp_example.html#using-the-gdextension-module>`_ in the same location as ``plugin.cfg``."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:249
+#: ../../docs/tutorials/platform/android/android_plugin.rst:257
 msgid "For reference, here is the `folder structure for the GDExtension Android plugin project template <https://github.com/m4gr3d/GDExtension-Android-Plugin-Template/tree/main/plugin/export_scripts_template>`_. At build time, the contents of the ``export_scripts_template`` directory as well as the generated plugin binaries are copied to the ``addons/<plugin_name>`` directory:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:263
+#: ../../docs/tutorials/platform/android/android_plugin.rst:271
 msgid "Here is what the ``plugin.gdextension`` config file should look like:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:280
+#: ../../docs/tutorials/platform/android/android_plugin.rst:288
 msgid "Of note is the ``android_aar_plugin`` field that specifies this GDExtension module is provided as part of a v2 Android plugin. During the export process, this will indicate to the Godot Editor that the GDExtension native shared libraries are exported by the Android plugin AAR binaries."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:283
+#: ../../docs/tutorials/platform/android/android_plugin.rst:291
 msgid "For GDExtension Android plugins, the plugin init class must override `GodotPlugin::getPluginGDExtensionLibrariesPaths() <https://github.com/godotengine/godot/blob/0a7f75ec7b465604b6496c8f5f1d638aed250d6d/platform/android/java/lib/src/org/godotengine/godot/plugin/GodotPlugin.java#L277>`_, and return the paths to the bundled GDExtension libraries config files (``*.gdextension``)."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:286
+#: ../../docs/tutorials/platform/android/android_plugin.rst:294
 msgid "The paths must be relative to the Android library's ``assets`` directory. At runtime, the plugin will provide these paths to the Godot engine which will use them to load and initialize the bundled GDExtension libraries."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:290
+#: ../../docs/tutorials/platform/android/android_plugin.rst:298
 msgid "Using a v2 Android plugin"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:294
+#: ../../docs/tutorials/platform/android/android_plugin.rst:302
 msgid "Godot 4.2 or higher is required"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:296
+#: ../../docs/tutorials/platform/android/android_plugin.rst:304
 msgid "v2 Android plugin requires the use of the `Gradle build process <https://docs.godotengine.org/en/stable/classes/class_editorexportplatformandroid.html#class-editorexportplatformandroid-property-gradle-build-use-gradle-build>`_."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:298
+#: ../../docs/tutorials/platform/android/android_plugin.rst:306
 msgid "The provided github project templates include demo Godot projects for quick testing."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:301
+#: ../../docs/tutorials/platform/android/android_plugin.rst:309
 msgid "Copy the plugin's output directory (``addons/<plugin_name>``) to the target Godot project's directory"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:303
+#: ../../docs/tutorials/platform/android/android_plugin.rst:311
 msgid "Open the project in the Godot Editor; the Editor should detect the plugin"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:305
+#: ../../docs/tutorials/platform/android/android_plugin.rst:313
 msgid "Navigate to ``Project`` -> ``Project Settings...`` -> ``Plugins``, and ensure the plugin is enabled"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:307
+#: ../../docs/tutorials/platform/android/android_plugin.rst:315
 msgid "Install the Godot Android build template by clicking on ``Project`` -> ``Install Android Build Template...``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:309
+#: ../../docs/tutorials/platform/android/android_plugin.rst:317
 msgid "Navigate to ``Project`` -> ``Export...``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:311
+#: ../../docs/tutorials/platform/android/android_plugin.rst:319
 msgid "In the ``Export`` window, create an ``Android export preset``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:313
+#: ../../docs/tutorials/platform/android/android_plugin.rst:321
 msgid "In the ``Android export preset``, scroll to ``Gradle Build`` and set ``Use Gradle Build`` to ``true``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:315
+#: ../../docs/tutorials/platform/android/android_plugin.rst:323
 msgid "Update the project's scripts as needed to access the plugin's functionality. For example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:323
+#: ../../docs/tutorials/platform/android/android_plugin.rst:331
 msgid "Connect an Android device to your machine and run the project on it"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:327
+#: ../../docs/tutorials/platform/android/android_plugin.rst:335
 msgid "Using a v2 Android plugin as an Android library"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:329
+#: ../../docs/tutorials/platform/android/android_plugin.rst:337
 msgid "Since they are also Android libraries, Godot v2 Android plugins can be stripped from their ``EditorExportPlugin`` packaging and provided as raw ``AAR`` binaries for use as libraries alongside the :ref:`Godot Android library <doc_android_library>` by Android apps."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:331
+#: ../../docs/tutorials/platform/android/android_plugin.rst:339
 msgid "If targeting this use-case, make sure to include additional instructions for how the ``AAR`` binaries should be included (e.g: custom additions to the Android app's manifest)."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:334
+#: ../../docs/tutorials/platform/android/android_plugin.rst:342
 msgid "Reference implementations"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:336
+#: ../../docs/tutorials/platform/android/android_plugin.rst:344
 msgid "`Godot Android Plugins Samples <https://github.com/m4gr3d/Godot-Android-Samples/tree/master/plugins>`_"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:337
+#: ../../docs/tutorials/platform/android/android_plugin.rst:345
 msgid "`Godot Android Plugin Template <https://github.com/m4gr3d/Godot-Android-Plugin-Template>`_"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:338
+#: ../../docs/tutorials/platform/android/android_plugin.rst:346
 msgid "`GDExtension Android Plugin Template <https://github.com/m4gr3d/GDExtension-Android-Plugin-Template>`_"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:339
+#: ../../docs/tutorials/platform/android/android_plugin.rst:347
 msgid "`Godot OpenXR Loaders <https://github.com/GodotVR/godot_openxr_loaders>`_"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:343
+#: ../../docs/tutorials/platform/android/android_plugin.rst:351
 msgid "Tips and Guidelines"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:346
+#: ../../docs/tutorials/platform/android/android_plugin.rst:354
 msgid "Simplify access to the exposed Java / Kotlin APIs"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:348
+#: ../../docs/tutorials/platform/android/android_plugin.rst:356
 msgid "To make it easier to access the exposed Java / Kotlin APIs in the Godot Editor, it's recommended to provide one (or multiple) gdscript wrapper class(es) for your plugin users to interface with."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:351
+#: ../../docs/tutorials/platform/android/android_plugin.rst:359
 msgid "For example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:376
+#: ../../docs/tutorials/platform/android/android_plugin.rst:384
 msgid "Support using the GDExtension functionality in the Godot Editor"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:378
+#: ../../docs/tutorials/platform/android/android_plugin.rst:386
 msgid "If planning to use the GDExtension functionality in the Godot Editor, it is recommended that the GDExtension's native binaries are compiled not just for Android, but also for the OS onto which developers / users intend to run the Godot Editor. Not doing so may prevent developers / users from writing code that accesses the plugin from within the Godot Editor."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:383
+#: ../../docs/tutorials/platform/android/android_plugin.rst:391
 msgid "This may involve creating dummy plugins for the host OS just so the API is published to the editor. You can use the `godot-cpp-template <https://github.com/godotengine/godot-cpp-template>`__ github template for reference on how to do so."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:388
+#: ../../docs/tutorials/platform/android/android_plugin.rst:396
 msgid "Supported data types"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:390
+#: ../../docs/tutorials/platform/android/android_plugin.rst:398
 msgid "All data types are supported. Common types are mapped to their Godot equivalents (for example, ``String[]`` is mapped to ``PackedStringArray()``), but for other types, you can use `JavaClassWrapper <https://docs.godotengine.org/en/stable/tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin.html#javaclasswrapper-godot-singleton>`_ to access it."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:394
+#: ../../docs/tutorials/platform/android/android_plugin.rst:402
 msgid "Godot crashes upon load"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:396
+#: ../../docs/tutorials/platform/android/android_plugin.rst:404
 msgid "Check `adb logcat <https://developer.android.com/tools/logcat>`_ for possible problems."
 msgstr ""

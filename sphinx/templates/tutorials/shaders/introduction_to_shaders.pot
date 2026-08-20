@@ -43,146 +43,150 @@ msgstr ""
 msgid "Your code is already part of a loop in a shader, so the corresponding code would look like this."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:45
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:47
 msgid "The graphics card calls the ``fragment()`` function once or more for each pixel it has to draw. More on that below."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:49
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:51
 msgid "Shaders in Godot"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:51
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:53
 msgid "Godot provides a shading language based on the popular OpenGL Shading Language (GLSL) but simplified. The engine handles some of the lower-level initialization work for you, making it easier to write complex shaders."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:55
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:57
 msgid "In Godot, shaders are made up of main functions called \"processor functions\". Processor functions are the entry point for your shader into the program. There are seven different processor functions."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:59
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:61
 msgid "The ``vertex()`` function runs over all the vertices in the mesh and sets their positions and some other per-vertex variables. Used in :ref:`canvas_item shaders <doc_canvas_item_shader>` and :ref:`spatial shaders <doc_spatial_shader>`."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:64
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:66
 msgid "The ``fragment()`` function runs for every pixel covered by the mesh. It uses values output by the ``vertex()`` function, interpolated between the vertices. Used in :ref:`canvas_item shaders <doc_canvas_item_shader>` and :ref:`spatial shaders <doc_spatial_shader>`."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:69
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:71
 msgid "The ``light()`` function runs for every pixel and for every light. It takes variables from the ``fragment()`` function and from its previous runs. Used in :ref:`canvas_item shaders <doc_canvas_item_shader>` and :ref:`spatial shaders <doc_spatial_shader>`."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:74
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:76
 msgid "The ``start()`` function runs for every particle in a particle system once when the particle is first spawned. Used in :ref:`particles shaders <doc_particle_shader>`."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:78
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:80
 msgid "The ``process()`` function runs for every particle in a particle system for each frame. Used in :ref:`particles shaders <doc_particle_shader>`."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:81
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:83
 msgid "The ``sky()`` function runs for every pixel in the radiance cubemap when the radiance cubemap needs to be updated, and for every pixel on the current screen. Used in :ref:`sky shaders <doc_sky_shader>`."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:85
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:87
 msgid "The ``fog()`` function runs for every froxel in the volumetric fog froxel buffer that intersects with the :ref:`FogVolume <class_FogVolume>`. Used by :ref:`fog shaders <doc_fog_shader>`."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:91
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:93
 msgid "The ``light()`` function won't run if the ``vertex_lighting`` render mode is enabled, or if **Rendering > Quality > Shading > Force Vertex Shading** is enabled in the Project Settings. It's enabled by default on mobile platforms."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:98
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:100
 msgid "Godot also exposes an API for users to write totally custom GLSL shaders. For more information see :ref:`doc_compute_shaders`."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:102
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:104
 msgid "Shader types"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:104
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:106
 msgid "Instead of supplying a general-purpose configuration for all uses (2D, 3D, particles, sky, fog), you must specify the type of shader you're writing. Different types support different render modes, built-in variables, and processing functions."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:109
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:111
 msgid "In Godot, all shaders need to specify their type in the first line, like so:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:115
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:117
 msgid "Here are the available types:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:117
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:119
 msgid ":ref:`spatial <doc_spatial_shader>` for 3D rendering."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:118
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:120
 msgid ":ref:`canvas_item <doc_canvas_item_shader>` for 2D rendering."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:119
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:121
 msgid ":ref:`particles <doc_particle_shader>` for particle systems."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:120
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:122
 msgid ":ref:`sky <doc_sky_shader>` to render :ref:`Skies <class_Sky>`."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:121
-msgid ":ref:`fog <doc_fog_shader>` to render :ref:`FogVolumes <class_FogVolume>`"
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:123
+msgid ":ref:`fog <doc_fog_shader>` to render :ref:`FogVolumes <class_FogVolume>`."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:124
+msgid ":ref:`texture_blit <doc_texture_blit_shader>` to render :ref:`DrawableTexture2Ds <class_DrawableTexture2D>`."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:127
 msgid "Render modes"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:126
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:129
 msgid "Shaders have optional render modes you can specify on the second line, after the shader type, like so:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:134
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:137
 msgid "Render modes alter the way Godot applies the shader. For example, the ``unshaded`` mode makes the engine skip the built-in light processor function."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:137
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:140
 msgid "Each shader type has different render modes. See the reference for each shader type for a complete list of render modes."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:141
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:144
 msgid "Vertex processor"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:143
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:146
 msgid "The ``vertex()`` processing function is called once for every vertex in ``spatial`` and ``canvas_item`` shaders."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:146
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:149
 msgid "Each vertex in your world's geometry has properties like a position and color. The function modifies those values and passes them to the fragment function. You can also use it to send extra data to the fragment function using varyings."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:150
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:153
 msgid "By default, Godot transforms your vertex information for you, which is necessary to project geometry onto the screen. You can use render modes to transform the data yourself; see the :ref:`Spatial shader doc <doc_spatial_shader>` for an example."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:156
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:159
 msgid "Fragment processor"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:158
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:161
 msgid "The ``fragment()`` processing function is used to set up the Godot material parameters per pixel. This code runs on every visible pixel the object or primitive draws. It is only available in ``spatial`` and ``canvas_item`` shaders."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:162
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:165
 msgid "The standard use of the fragment function is to set up material properties used to calculate lighting. For example, you would set values for ``ROUGHNESS``, ``RIM``, or ``TRANSMISSION``, which would tell the light function how the lights respond to that fragment. This makes it possible to control a complex shading pipeline without the user having to write much code. If you don't need this built-in functionality, you can ignore it and write your own light processing function, and Godot will optimize it away. For example, if you do not write a value to ``RIM``, Godot will not calculate rim lighting. During compilation, Godot checks to see if ``RIM`` is used; if not, it cuts all the corresponding code out. Therefore, you will not waste calculations on the effects that you do not use."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:175
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:178
 msgid "Light processor"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:177
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:180
 msgid "The ``light()`` processor runs per pixel too, and it runs once for every light that affects the object. It does not run if no lights affect the object. It exists as a function called inside the ``fragment()`` processor and typically operates on the material properties setup inside the ``fragment()`` function."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:182
+#: ../../docs/tutorials/shaders/introduction_to_shaders.rst:185
 msgid "The ``light()`` processor works differently in 2D than it does in 3D; for a description of how it works in each, see their documentation, :ref:`CanvasItem shaders <doc_canvas_item_shader>` and :ref:`Spatial shaders <doc_spatial_shader>`, respectively."
 msgstr ""

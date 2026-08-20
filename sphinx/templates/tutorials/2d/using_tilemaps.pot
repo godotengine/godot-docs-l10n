@@ -120,402 +120,402 @@ msgstr ""
 msgid "After designing the TileMap consider baking it to a more optimized navigation mesh (and disabling the TileMap NavigationLayer) using a :ref:`NavigationRegion2D <class_NavigationRegion2D>` or the :ref:`NavigationServer2D <class_NavigationServer2D>`. See :ref:`doc_navigation_using_navigationmeshes` for additional information."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:91
-msgid "2D navigation meshes can not be \"layered\" or stacked on top of each other like visuals or physic shapes. Attempting to stack navigation meshes on the same navigation map will result in merge and logical errors that break the pathfinding."
+#: ../../docs/tutorials/2d/using_tilemaps.rst:92
+msgid "2D navigation meshes can not be \"layered\" or stacked on top of each other like visuals or physics shapes. Attempting to stack navigation meshes on the same navigation map will result in merge and logical errors that break the pathfinding."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:94
+#: ../../docs/tutorials/2d/using_tilemaps.rst:95
 msgid "Reordering layers"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:96
+#: ../../docs/tutorials/2d/using_tilemaps.rst:97
 msgid "You can reorder layers by drag-and-dropping their node in the Scene tab. You can also switch between which TileMapLayer node you're working on by using the buttons in the top right corner of the TileMap editor."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:102
+#: ../../docs/tutorials/2d/using_tilemaps.rst:103
 msgid "You can create, rename or reorder layers in the future without affecting existing tiles. Be careful though, as *removing* a layer will also remove all tiles that were placed on the layer."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:107
+#: ../../docs/tutorials/2d/using_tilemaps.rst:108
 msgid "Opening the TileMap editor"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:109
+#: ../../docs/tutorials/2d/using_tilemaps.rst:110
 msgid "Select the TileMapLayer node, then open the TileMap panel at the bottom of the editor:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:112
-#: ../../docs/tutorials/2d/using_tilemaps.rst:116
+#: ../../docs/tutorials/2d/using_tilemaps.rst:113
+#: ../../docs/tutorials/2d/using_tilemaps.rst:117
 msgid "Opening the TileMap panel at the bottom of the editor. The TileMapLayer node must be selected first."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:119
+#: ../../docs/tutorials/2d/using_tilemaps.rst:120
 msgid "Selecting tiles to use for painting"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:121
+#: ../../docs/tutorials/2d/using_tilemaps.rst:122
 msgid "First, if you've created additional layers above, make sure you've selected the layer you wish to paint on:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:124
-#: ../../docs/tutorials/2d/using_tilemaps.rst:128
+#: ../../docs/tutorials/2d/using_tilemaps.rst:125
+#: ../../docs/tutorials/2d/using_tilemaps.rst:129
 msgid "Selecting a layer to paint on in the TileMap editor"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:132
+#: ../../docs/tutorials/2d/using_tilemaps.rst:133
 msgid "In the 2D editor, the layers you aren't currently editing from the same TileMapLayer node will appear grayed out while in the TileMap editor. You can disable this behavior by clicking the icon next to the layer selection menu (**Highlight Selected TileMap Layer** tooltip)."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:137
+#: ../../docs/tutorials/2d/using_tilemaps.rst:138
 msgid "You can skip the above step if you haven't created additional layers, as the first layer is automatically selected when entering the TileMap editor."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:140
+#: ../../docs/tutorials/2d/using_tilemaps.rst:141
 msgid "Before you can place tiles in the 2D editor, you must select one or more tiles in the TileMap panel located at the bottom of the editor. To do so, click a tile in the TileMap panel, or hold down the mouse button to select multiple tiles:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:144
-#: ../../docs/tutorials/2d/using_tilemaps.rst:148
+#: ../../docs/tutorials/2d/using_tilemaps.rst:145
+#: ../../docs/tutorials/2d/using_tilemaps.rst:149
 msgid "Selecting a tile in the TileMap editor by clicking it"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:152
+#: ../../docs/tutorials/2d/using_tilemaps.rst:153
 msgid "Like in the 2D and TileSet editors, you can pan across the TileMap panel using the middle or right mouse buttons, and zoom using the mouse wheel or buttons in the top-left corner."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:156
+#: ../../docs/tutorials/2d/using_tilemaps.rst:157
 msgid "You can also hold down :kbd:`Shift` to append to the current selection. When selecting more than one tile, multiple tiles will be placed every time you perform a painting operation. This can be used to paint structures composed of multiple tiles in a single click (such as large platforms or trees)."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:161
+#: ../../docs/tutorials/2d/using_tilemaps.rst:162
 msgid "The final selection does not have to be contiguous: if there is empty space between selected tiles, it will be left empty in the pattern that will be painted in the 2D editor."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:165
-#: ../../docs/tutorials/2d/using_tilemaps.rst:169
+#: ../../docs/tutorials/2d/using_tilemaps.rst:166
+#: ../../docs/tutorials/2d/using_tilemaps.rst:170
 msgid "Selecting multiple tiles in the TileMap editor by holding down the left mouse button"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:171
+#: ../../docs/tutorials/2d/using_tilemaps.rst:172
 msgid "If you've created alternative tiles in your TileSet, you can select them for painting on the right of the base tiles:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:174
-#: ../../docs/tutorials/2d/using_tilemaps.rst:178
+#: ../../docs/tutorials/2d/using_tilemaps.rst:175
+#: ../../docs/tutorials/2d/using_tilemaps.rst:179
 msgid "Selecting an alternative tile in the TileMap editor"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:180
+#: ../../docs/tutorials/2d/using_tilemaps.rst:181
 msgid "Lastly, if you've created a *scenes collection* in the TileSet, you can place scene tiles in the TileMap:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:182
-#: ../../docs/tutorials/2d/using_tilemaps.rst:186
+#: ../../docs/tutorials/2d/using_tilemaps.rst:183
+#: ../../docs/tutorials/2d/using_tilemaps.rst:187
 msgid "Placing a scene tile containing particles using the TileMap editor"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:189
+#: ../../docs/tutorials/2d/using_tilemaps.rst:190
 msgid "Painting modes and tools"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:191
+#: ../../docs/tutorials/2d/using_tilemaps.rst:192
 msgid "Using the toolbar at the top of the TileMap editor, you can choose between several painting modes and tools. These modes affect operation when clicking in the 2D editor, **not** the TileMap panel itself."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:195
+#: ../../docs/tutorials/2d/using_tilemaps.rst:196
 msgid "From left to right, the painting modes and tools you can choose are:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:198
+#: ../../docs/tutorials/2d/using_tilemaps.rst:199
 msgid "Selection"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:200
+#: ../../docs/tutorials/2d/using_tilemaps.rst:201
 msgid "Select tiles by clicking a single tile, or by holding down the left mouse button to select multiple with a rectangle in the 2D editor. Note that empty space cannot be selected: if you create a rectangle selection, only non-empty tiles will be selected."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:204
+#: ../../docs/tutorials/2d/using_tilemaps.rst:205
 msgid "To append to the current selection, hold :kbd:`Shift` then select a tile. To remove from the current selection, hold :kbd:`Ctrl` then select a tile."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:207
+#: ../../docs/tutorials/2d/using_tilemaps.rst:208
 msgid "The selection can then be used in any other painting mode to quickly create copies of an already-placed pattern."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:210
+#: ../../docs/tutorials/2d/using_tilemaps.rst:211
 msgid "You can remove the selected tiles from the TileMap by pressing :kbd:`Del`."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:212
+#: ../../docs/tutorials/2d/using_tilemaps.rst:213
 msgid "You can toggle this mode temporarily while in Paint mode by holding :kbd:`Ctrl` then performing a selection."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:217
+#: ../../docs/tutorials/2d/using_tilemaps.rst:218
 msgid "You can copy and paste tiles that were already placed by performing a selection, pressing :kbd:`Ctrl + C` then pressing :kbd:`Ctrl + V`. The selection will be pasted after left-clicking. You can press :kbd:`Ctrl + V` another time to perform more pastes this way. Right-click or press :kbd:`Escape` to cancel pasting."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:224
+#: ../../docs/tutorials/2d/using_tilemaps.rst:225
 msgid "Paint"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:226
+#: ../../docs/tutorials/2d/using_tilemaps.rst:227
 msgid "The standard Paint mode allows you to place tiles by clicking or holding down the left mouse button."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:229
+#: ../../docs/tutorials/2d/using_tilemaps.rst:230
 msgid "If you right-click, the currently selected tile will be erased from the tilemap. In other words, it will be replaced by empty space."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:232
+#: ../../docs/tutorials/2d/using_tilemaps.rst:233
 msgid "If you have selected multiple tiles in the TileMap or using the Selection tool, they will be placed every time you click or drag the mouse while holding down the left mouse button."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:238
+#: ../../docs/tutorials/2d/using_tilemaps.rst:239
 msgid "While in Paint mode, you can draw a line by holding :kbd:`Shift` *before* holding down the left mouse button, then dragging the mouse to the line's end point. This is identical to using the Line tool described below."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:242
+#: ../../docs/tutorials/2d/using_tilemaps.rst:243
 msgid "You can also draw a rectangle by holding :kbd:`Ctrl` and :kbd:`Shift` *before* holding down the left mouse button, then dragging the mouse to the rectangle's end point. This is identical to using the Rectangle tool described below."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:247
+#: ../../docs/tutorials/2d/using_tilemaps.rst:248
 msgid "Lastly, you can pick existing tiles in the 2D editor by holding :kbd:`Ctrl` then clicking on a tile (or holding and dragging the mouse). This will switch the currently painted tile(s) to the tile(s) you've just clicked. This is identical to using the Picker tool described below."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:253
+#: ../../docs/tutorials/2d/using_tilemaps.rst:254
 msgid "Line"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:255
+#: ../../docs/tutorials/2d/using_tilemaps.rst:256
 msgid "After selecting Line Paint mode, you can draw in a line that is always 1 tile thick (no matter its orientation)."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:258
+#: ../../docs/tutorials/2d/using_tilemaps.rst:259
 msgid "If you right-click while in Line Paint mode, you will erase in a line."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:260
+#: ../../docs/tutorials/2d/using_tilemaps.rst:261
 msgid "If you have selected multiple tiles in the TileMap or using the Selection tool, you can place them in a repeating pattern across the line."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:263
+#: ../../docs/tutorials/2d/using_tilemaps.rst:264
 msgid "You can toggle this mode temporarily while in Paint or Eraser mode by holding :kbd:`Shift` then drawing."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:266
-#: ../../docs/tutorials/2d/using_tilemaps.rst:270
+#: ../../docs/tutorials/2d/using_tilemaps.rst:267
+#: ../../docs/tutorials/2d/using_tilemaps.rst:271
 msgid "Using the line tool after selecting two tiles to draw platforms diagonally"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:273
+#: ../../docs/tutorials/2d/using_tilemaps.rst:274
 msgid "Rectangle"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:275
+#: ../../docs/tutorials/2d/using_tilemaps.rst:276
 msgid "After selecting Rectangle Paint mode, you can draw in an axis-aligned rectangle."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:278
+#: ../../docs/tutorials/2d/using_tilemaps.rst:279
 msgid "If you right-click while in Rectangle Paint mode, you will erase in an axis-aligned rectangle."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:281
+#: ../../docs/tutorials/2d/using_tilemaps.rst:282
 msgid "If you have selected multiple tiles in the TileMap or using the Selection tool, you can place them in a repeating pattern within the rectangle."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:284
+#: ../../docs/tutorials/2d/using_tilemaps.rst:285
 msgid "You can toggle this mode temporarily while in Paint or Eraser mode by holding :kbd:`Ctrl` and :kbd:`Shift` then drawing."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:288
+#: ../../docs/tutorials/2d/using_tilemaps.rst:289
 msgid "Bucket Fill"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:290
+#: ../../docs/tutorials/2d/using_tilemaps.rst:291
 msgid "After selecting Bucket Fill mode, you can choose whether painting should be limited to contiguous areas only by toggling the **Contiguous** checkbox that appears on the right of the toolbar."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:294
+#: ../../docs/tutorials/2d/using_tilemaps.rst:295
 msgid "If you enable **Contiguous** (the default), only matching tiles that touch the current selection will be replaced. This contiguous check is performed horizontally and vertically, but *not* diagonally."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:298
+#: ../../docs/tutorials/2d/using_tilemaps.rst:299
 msgid "If you disable **Contiguous**, all tiles with the same ID in the entire TileMap will be replaced by the currently selected tile. If selecting an empty tile with **Contiguous** unchecked, all tiles in the rectangle that encompasses the TileMap's effective area will be replaced instead."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:303
+#: ../../docs/tutorials/2d/using_tilemaps.rst:304
 msgid "If you right-click while in Bucket Fill mode, you will replace matching tiles with empty tiles."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:306
+#: ../../docs/tutorials/2d/using_tilemaps.rst:307
 msgid "If you have selected multiple tiles in the TileMap or using the Selection tool, you can place them in a repeating pattern within the filled area."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:309
-#: ../../docs/tutorials/2d/using_tilemaps.rst:313
+#: ../../docs/tutorials/2d/using_tilemaps.rst:310
+#: ../../docs/tutorials/2d/using_tilemaps.rst:314
 msgid "Using the Bucket Fill tool"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:316
+#: ../../docs/tutorials/2d/using_tilemaps.rst:317
 msgid "Picker"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:318
+#: ../../docs/tutorials/2d/using_tilemaps.rst:319
 msgid "After selecting Picker mode, you can pick existing tiles in the 2D editor by holding :kbd:`Ctrl` then clicking on a tile. This will switch the currently painted tile to the tile you've just clicked. You can also pick multiple tiles at once by holding down the left mouse button and forming a rectangle selection. Only non-empty tiles can be picked."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:324
+#: ../../docs/tutorials/2d/using_tilemaps.rst:325
 msgid "You can toggle this mode temporarily while in Paint mode by holding :kbd:`Ctrl` then clicking or dragging the mouse."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:328
+#: ../../docs/tutorials/2d/using_tilemaps.rst:329
 msgid "Eraser"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:330
+#: ../../docs/tutorials/2d/using_tilemaps.rst:331
 msgid "This mode is combined with any other painting mode (Paint, Line, Rectangle, Bucket Fill). When eraser mode is enabled, tiles will be replaced by empty tiles instead of drawing new lines when left-clicking."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:334
+#: ../../docs/tutorials/2d/using_tilemaps.rst:335
 msgid "You can toggle this mode temporarily while in any other mode by right-clicking instead of left-clicking."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:338
+#: ../../docs/tutorials/2d/using_tilemaps.rst:339
 msgid "Painting randomly using scattering"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:340
+#: ../../docs/tutorials/2d/using_tilemaps.rst:341
 msgid "While painting, you can optionally enable *randomization*. When enabled, a random tile will be chosen between all the currently selected tiles when painting. This is supported with the Paint, Line, Rectangle and Bucket Fill tools. For effective paint randomization, you must select multiple tiles in the TileMap editor or use scattering (both approaches can be combined)."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:346
+#: ../../docs/tutorials/2d/using_tilemaps.rst:347
 msgid "If **Scattering** is set to a value greater than 0, there is a chance that no tile will be placed when painting. This can be used to add occasional, non-repeating detail to large areas (such as adding grass or crumbs on a large top-down TileMap)."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:351
+#: ../../docs/tutorials/2d/using_tilemaps.rst:352
 msgid "Example when using Paint mode:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:353
-#: ../../docs/tutorials/2d/using_tilemaps.rst:357
+#: ../../docs/tutorials/2d/using_tilemaps.rst:354
+#: ../../docs/tutorials/2d/using_tilemaps.rst:358
 msgid "Selecting from several times to randomly choose, then painting by holding down the left mouse button"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:359
+#: ../../docs/tutorials/2d/using_tilemaps.rst:360
 msgid "Example when using Bucket Fill mode:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:361
-#: ../../docs/tutorials/2d/using_tilemaps.rst:365
+#: ../../docs/tutorials/2d/using_tilemaps.rst:362
+#: ../../docs/tutorials/2d/using_tilemaps.rst:366
 msgid "Using Bucket Fill tool with a single tile, but with randomization and scattering enabled"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:369
+#: ../../docs/tutorials/2d/using_tilemaps.rst:370
 msgid "Eraser mode does not take randomization and scattering into account. All tiles within the selection are always removed."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:373
+#: ../../docs/tutorials/2d/using_tilemaps.rst:374
 msgid "Saving and loading premade tile placements using patterns"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:375
+#: ../../docs/tutorials/2d/using_tilemaps.rst:376
 msgid "While you can copy and paste tiles while in Select mode, you may wish to save premade *patterns* of tiles to place together in a go. This can be done on a per-TileMap basis by choosing the **Patterns** tab of the TileMap editor."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:379
+#: ../../docs/tutorials/2d/using_tilemaps.rst:380
 msgid "To create a new pattern, switch to Select mode, perform a selection and press :kbd:`Ctrl + C`. Click on empty space within the Patterns tab (a blue focus rectangle should appear around the empty space), then press :kbd:`Ctrl + V`:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:383
-#: ../../docs/tutorials/2d/using_tilemaps.rst:387
+#: ../../docs/tutorials/2d/using_tilemaps.rst:384
+#: ../../docs/tutorials/2d/using_tilemaps.rst:388
 msgid "Creating a new pattern from a selection in the TileMap editor"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:389
+#: ../../docs/tutorials/2d/using_tilemaps.rst:390
 msgid "To use an existing pattern, click its image in the **Patterns** tab, switch to any painting mode, then left-click somewhere in the 2D editor:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:392
-#: ../../docs/tutorials/2d/using_tilemaps.rst:396
+#: ../../docs/tutorials/2d/using_tilemaps.rst:393
+#: ../../docs/tutorials/2d/using_tilemaps.rst:397
 msgid "Placing an existing pattern using the TileMap editor"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:398
+#: ../../docs/tutorials/2d/using_tilemaps.rst:399
 msgid "Like multi-tile selections, patterns will be repeated if used with the Line, Rectangle or Bucket Fill painting modes."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:403
+#: ../../docs/tutorials/2d/using_tilemaps.rst:404
 msgid "Despite being edited in the TileMap editor, patterns are stored in the TileSet resource. This allows reusing patterns in different TileMapLayer nodes after loading a TileSet resource saved to an external file."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:408
+#: ../../docs/tutorials/2d/using_tilemaps.rst:409
 msgid "Handling tile connections automatically using terrains"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:410
+#: ../../docs/tutorials/2d/using_tilemaps.rst:411
 msgid "To use terrains, the TileMapLayer node must feature at least one terrain set and a terrain within this terrain set. See :ref:`doc_using_tilesets_creating_terrain_sets` if you haven't created a terrain set for the TileSet yet."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:415
+#: ../../docs/tutorials/2d/using_tilemaps.rst:416
 msgid "There are 3 kinds of painting modes available for terrain connections:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:417
+#: ../../docs/tutorials/2d/using_tilemaps.rst:418
 msgid "**Connect**, where tiles are connected to surrounding tiles on the same TileMapLayer."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:419
+#: ../../docs/tutorials/2d/using_tilemaps.rst:420
 msgid "**Path**, where tiles are connected to tiles painted in the same stroke (until the mouse button is released)."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:421
+#: ../../docs/tutorials/2d/using_tilemaps.rst:422
 msgid "Tile-specific overrides to resolve conflicts or handle situations not covered by the terrain system."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:424
+#: ../../docs/tutorials/2d/using_tilemaps.rst:425
 msgid "The Connect mode is easier to use, but Path is more flexible as it allows for more artist control during painting. For instance, Path can allow roads to be directly adjacent to each other without being connected to each other, while Connect will force both roads to be connected."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:429
-#: ../../docs/tutorials/2d/using_tilemaps.rst:433
+#: ../../docs/tutorials/2d/using_tilemaps.rst:430
+#: ../../docs/tutorials/2d/using_tilemaps.rst:434
 msgid "Selecting Connect mode in the TileMap editor's Terrains tab"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:435
-#: ../../docs/tutorials/2d/using_tilemaps.rst:439
+#: ../../docs/tutorials/2d/using_tilemaps.rst:436
+#: ../../docs/tutorials/2d/using_tilemaps.rst:440
 msgid "Selecting Path mode in the TileMap editor's Terrains tab"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:441
+#: ../../docs/tutorials/2d/using_tilemaps.rst:442
 msgid "Lastly, you can select specific tiles from the terrain to resolve conflicts in certain situations:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:444
-#: ../../docs/tutorials/2d/using_tilemaps.rst:448
+#: ../../docs/tutorials/2d/using_tilemaps.rst:445
+#: ../../docs/tutorials/2d/using_tilemaps.rst:449
 msgid "Painting with specific tiles in the TileMap editor's Terrains tab"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:450
+#: ../../docs/tutorials/2d/using_tilemaps.rst:451
 msgid "Any tile that has at least one of its bits set to a value set to the corresponding terrain ID will appear in the list of tiles to choose from."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:454
+#: ../../docs/tutorials/2d/using_tilemaps.rst:455
 msgid "Handling missing tiles"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:456
+#: ../../docs/tutorials/2d/using_tilemaps.rst:457
 msgid "If you remove tiles in the TileSet that are referenced in a TileMap, the TileMap will display a placeholder to indicate that an invalid tile ID is placed:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:459
-#: ../../docs/tutorials/2d/using_tilemaps.rst:463
+#: ../../docs/tutorials/2d/using_tilemaps.rst:460
+#: ../../docs/tutorials/2d/using_tilemaps.rst:464
 msgid "Missing tiles in the TileMap editor due to the TileSet reference being broken"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:465
+#: ../../docs/tutorials/2d/using_tilemaps.rst:466
 msgid "These placeholders are **not** visible in the running project, but the tile data is still persisted to disk. This allows you to safely close and reopen such scenes. Once you re-add a tile with the matching ID, the tiles will appear with the new tile's appearance."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:472
+#: ../../docs/tutorials/2d/using_tilemaps.rst:473
 msgid "Missing tile placeholders may not be visible until you select the TileMapLayer node and open the TileMap editor."
 msgstr ""
