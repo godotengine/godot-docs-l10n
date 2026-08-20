@@ -49,7 +49,7 @@
 # jolene xu <loqwqol@163.com>, 2023.
 # Youuin Wang <los2516lir@gmail.com>, 2023.
 # Skyter Lin <linskyter@gmail.com>, 2023, 2026.
-# powder <hhurhxhdyruw@gmail.com>, 2023, 2025.
+# powder <hhurhxhdyruw@gmail.com>, 2023, 2025, 2026.
 # snow-The <qq1346126834@gmail.com>, 2023.
 # LNF <enfu.liao.cs10@nycu.edu.tw>, 2023.
 # lemtea8 <polylemtea@gmail.com>, 2024.
@@ -78,13 +78,15 @@
 # Wei-Fu Chen <410477jimmy@gmail.com>, 2026.
 # Xiang990293 <990293kwi@gmail.com>, 2026.
 # "Chen,Wei-Ting" <benson94879453@gmail.com>, 2026.
+# ELEPOT <elepotmail0@gmail.com>, 2026.
+# 李奕寯 <eugenelego88@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-06-16 21:19+0200\n"
-"PO-Revision-Date: 2026-06-12 08:03+0000\n"
-"Last-Translator: Bogay Chuang <pojay11523@gmail.com>\n"
+"PO-Revision-Date: 2026-08-04 06:24+0000\n"
+"Last-Translator: 李奕寯 <eugenelego88@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/godot-engine/godot-docs/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -92,7 +94,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.7.dev0\n"
+"X-Generator: Weblate 2026.8.1.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -105,7 +107,7 @@ msgstr "下一頁"
 #: ../../docs/_templates/versions.html:26
 #: ../../docs/tutorials/performance/cpu_optimization.rst:160
 msgid "Languages"
-msgstr "程式語言"
+msgstr "語言"
 
 #: ../../docs/_templates/versions.html:32
 msgid "Versions"
@@ -117,11 +119,11 @@ msgstr "在 Read the Docs 上"
 
 #: ../../docs/_templates/versions.html:41
 msgid "Project Home"
-msgstr "設定專案"
+msgstr "專案首頁"
 
 #: ../../docs/_templates/versions.html:44
 msgid "Builds"
-msgstr "建構"
+msgstr "建置"
 
 #: ../../docs/_templates/versions.html:47
 msgid "Downloads"
@@ -159,9 +161,8 @@ msgid "Class reference"
 msgstr "類別參照手冊"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Godot 文件 – *4.6* 分支"
+msgstr "Godot 文件 – *master* 分支"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -747,7 +748,7 @@ msgstr "場景樹編輯器。"
 msgid ""
 "Built-in script editor. Also supports editing text files and using custom "
 "syntax highlighters."
-msgstr ""
+msgstr "內建的腳本編輯器。也支援編輯文字檔與使用自定義語法突顯"
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
@@ -803,16 +804,14 @@ msgid "Live scene editing."
 msgstr "即時場景編輯。"
 
 #: ../../docs/about/list_of_features.rst:90
-#, fuzzy
 msgid ""
 "Changes *will* reflect in the editor and *will* be kept after closing the "
 "running project."
-msgstr "更改將反應到編輯器上，並會在正在執行的專案關閉後保留。"
+msgstr "更改*將*反應到編輯器上，並*會*在正在執行的專案關閉後保留。"
 
 #: ../../docs/about/list_of_features.rst:92
-#, fuzzy
 msgid "Live camera replication (disabled by default)."
-msgstr "即時相機複製。"
+msgstr "即時相機複製（預設停用）。"
 
 #: ../../docs/about/list_of_features.rst:94
 msgid "Move the in-editor camera and see the result in the running project."
@@ -823,57 +822,55 @@ msgid "Remote inspector."
 msgstr "遠端檢視器。"
 
 #: ../../docs/about/list_of_features.rst:98
-#, fuzzy
 msgid ""
 "Changes *won't* reflect in the editor and *won't* be kept after closing the "
 "running project."
-msgstr "更改將不會反應到編輯器上，且關閉正在執行的專案後將不會保留。"
+msgstr "更改將*不會*反應到編輯器上，且關閉正在執行的專案後將*不會*保留。"
 
 #: ../../docs/about/list_of_features.rst:100
 msgid ""
 "Run multiple simultaneous project instances from a single editor instance "
 "(useful for client/server testing)."
-msgstr ""
+msgstr "在一個編輯器實體下同時跑多個專案（測試客戶/伺服器端時很有用）"
 
 #: ../../docs/about/list_of_features.rst:102
 msgid ""
 "Optional :ref:`game embedding <doc_game_embedding>` to run the project in a "
 "panel within the editor."
-msgstr ""
+msgstr "可選：:ref:`遊戲內嵌 <doc_game_embedding>`，在編輯器裡面的一個面板運行專案"
 
 #: ../../docs/about/list_of_features.rst:104
 msgid ""
 "Select 2D and 3D nodes in the project's viewport to inspect them in the "
 "editor."
-msgstr ""
+msgstr "在專案檢視區中選擇2D 或 3D 的節點以在編輯器中檢視他們。"
 
 #: ../../docs/about/list_of_features.rst:105
 msgid ""
 "Move the camera within the project using the 2D and 3D camera overrides."
-msgstr ""
+msgstr "使用 2D 和 3D 相機覆寫功能在專案中移動相機"
 
 #: ../../docs/about/list_of_features.rst:106
 msgid "Supports time scale adjustments, pausing, and frame advance."
-msgstr ""
+msgstr "支援調整時間縮放、暫停與到下一個影格。"
 
 #: ../../docs/about/list_of_features.rst:107
-#, fuzzy
 msgid "Supports muting the project."
-msgstr "匯入專案"
+msgstr "支援把專案靜音。"
 
 #: ../../docs/about/list_of_features.rst:109
 msgid "Ruler tool to measure distances in 2D and 3D."
-msgstr ""
+msgstr "可以測量 2D 與 3D 中距離的量測工具。"
 
 #: ../../docs/about/list_of_features.rst:110
 msgid "Vertex snapping support in 3D."
-msgstr ""
+msgstr "3D 頂點吸附功能。"
 
 #: ../../docs/about/list_of_features.rst:111
 msgid ""
 "Support for following the selection as it moves in 3D by using Focus "
 "Selection twice."
-msgstr ""
+msgstr "支援使用「聚焦選擇」兩次以在 3D 中跟隨移動中的已選取物件。"
 
 #: ../../docs/about/list_of_features.rst:112
 msgid "Built-in offline class reference documentation."
@@ -1293,7 +1290,7 @@ msgstr "使用粗糙度金屬度工作流，支援 ORM 紋理。"
 msgid ""
 "Uses horizon specular occlusion (Filament model) to improve material "
 "appearance."
-msgstr "使用地平綫镜面反射遮蔽（Filament 模型）提升材质外觀。"
+msgstr "使用地平線鏡面反射遮蔽（Filament 模型）提升材質外觀。"
 
 #: ../../docs/about/list_of_features.rst:246
 msgid "Normal mapping."
@@ -11264,7 +11261,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:436
 msgid "Custom signals"
-msgstr "自定訊號"
+msgstr "自訂訊號"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:438
 msgid ""
@@ -23595,7 +23592,7 @@ msgstr "``editor/play_scene``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:88
 msgid "Play Custom Scene"
-msgstr "執行自定義場景"
+msgstr "執行自訂場景"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:88
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -26245,7 +26242,7 @@ msgstr "``project_manager/remove_project``"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:4
 msgid "Customizing the interface"
-msgstr "自定建置"
+msgstr "自訂介面"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:6
 msgid ""
@@ -26353,7 +26350,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:81
 msgid "Customizing editor layouts"
-msgstr "自定建置"
+msgstr "自訂編輯器佈局"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:83
 msgid ""
@@ -26459,7 +26456,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:128
 msgid "Customizing editor settings"
-msgstr "編輯器設定"
+msgstr "自訂編輯器設定"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:130
 msgid ""
@@ -26475,7 +26472,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/customizing_editor.rst:135
 #: ../../docs/tutorials/editor/customizing_editor.rst:139
 msgid "The Editor Settings window"
-msgstr "編輯器設定"
+msgstr "編輯器設定視窗"
 
 #: ../../docs/tutorials/editor/customizing_editor.rst:141
 msgid "Some commonly changed settings are:"
@@ -44810,8 +44807,8 @@ msgid ""
 "clicked position as a context menu, if there is more than one node in the "
 "clicked area."
 msgstr ""
-"**顯示點擊位置可選節點清單**：如其名，當點擊處有多個節點時，會以右鍵選單方式"
-"列出可選節點清單。"
+"**列出點選位置的所有可選節點**：如描述所示，當點選處有多個節點時，會以環境選"
+"單的形式，提供可選節點列表。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:70
 msgid ""
@@ -61253,7 +61250,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/volumetric_fog.rst:187
 msgid "FogVolume properties"
-msgstr "節點屬性"
+msgstr "FogVolume 屬性"
 
 #: ../../docs/tutorials/3d/volumetric_fog.rst:189
 msgid ""
@@ -61356,7 +61353,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/volumetric_fog.rst:227
 msgid "Using 3D noise density textures"
-msgstr "使用原型紋理"
+msgstr "使用 3D 雜訊密度紋理"
 
 #: ../../docs/tutorials/3d/volumetric_fog.rst:229
 msgid ""
@@ -61423,7 +61420,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/volumetric_fog.rst:261
 msgid "Custom FogVolume shaders"
-msgstr "自定功能"
+msgstr "自訂 FogVolume 著色器"
 
 #: ../../docs/tutorials/3d/volumetric_fog.rst:263
 msgid ""
@@ -79009,7 +79006,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/feature_tags.rst:154
 msgid "Custom features"
-msgstr "自定功能"
+msgstr "自訂功能"
 
 #: ../../docs/tutorials/export/feature_tags.rst:156
 msgid ""
@@ -79140,7 +79137,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/feature_tags.rst:230
 msgid "Customizing the build"
-msgstr "自定建置"
+msgstr "自訂建置"
 
 #: ../../docs/tutorials/export/feature_tags.rst:232
 msgid ""

@@ -61,7 +61,7 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-06-16 21:19+0200\n"
-"PO-Revision-Date: 2026-06-10 06:03+0000\n"
+"PO-Revision-Date: 2026-06-17 23:31+0000\n"
 "Last-Translator: User2068 <user603849745775@proton.me>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
@@ -71,7 +71,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.6\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -769,6 +769,8 @@ msgid ""
 "Built-in script editor. Also supports editing text files and using custom "
 "syntax highlighters."
 msgstr ""
+"Вбудований редактор скриптів. Також підтримує редагування текстових файлів "
+"та використання власних засобів підсвічування синтаксису."
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
@@ -783,9 +785,8 @@ msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "'GDScript :ref:`debugger <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:76
-#, fuzzy
 msgid "Supports debugging in threads."
-msgstr "Підтримка дебагінгу в потоках доступна з версії 4.2."
+msgstr "Підтримує налагодження в потоках."
 
 #: ../../docs/about/list_of_features.rst:78
 msgid ""
@@ -809,6 +810,9 @@ msgid ""
 "like :ref:`doc_profiler_tracy` and :ref:`doc_profiler_perfetto` for deeper "
 "optimization tasks."
 msgstr ""
+"Підтримує :ref:`профілювальники з трасуванням <doc_tracing_profilers>`, такі "
+"як :ref:`doc_profiler_tracy` та :ref:`doc_profiler_perfetto`, для виконання "
+"завдань з більш глибокої оптимізації."
 
 #: ../../docs/about/list_of_features.rst:84
 msgid ""
@@ -816,6 +820,10 @@ msgid ""
 "and provide custom functionality such as clickable buttons in the inspector, "
 "without needing to create an editor plugin."
 msgstr ""
+"Будь-який скрипт можна :ref:`запустити в редакторі "
+"<doc_running_code_in_the_editor>` і реалізувати в ньому власні функції, "
+"наприклад, кнопки, на які можна натискати в інспекторі, без необхідності "
+"створювати плагін для редактора."
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Live script reloading."
@@ -826,17 +834,18 @@ msgid "Live scene editing."
 msgstr "Редагування сцени в реальному часі."
 
 #: ../../docs/about/list_of_features.rst:90
-#, fuzzy
 msgid ""
 "Changes *will* reflect in the editor and *will* be kept after closing the "
 "running project."
 msgstr ""
-"Зміни одразу відобразяться в редакторі і збережуться після закриття проєкту."
+"Зміни *обов’язково* відображатимуться в редакторі та *обов’язково* "
+"зберігатимуться після закриття активного проєкту."
 
 #: ../../docs/about/list_of_features.rst:92
-#, fuzzy
 msgid "Live camera replication (disabled by default)."
-msgstr "Реплікація камери в реальному часі."
+msgstr ""
+"Реплікація зображення з камери в режимі реального часу (за замовчуванням "
+"вимкнено)."
 
 #: ../../docs/about/list_of_features.rst:94
 msgid "Move the in-editor camera and see the result in the running project."
@@ -848,59 +857,68 @@ msgid "Remote inspector."
 msgstr "Дистанційний інспектор."
 
 #: ../../docs/about/list_of_features.rst:98
-#, fuzzy
 msgid ""
 "Changes *won't* reflect in the editor and *won't* be kept after closing the "
 "running project."
 msgstr ""
-"Зміни не відобразяться в редакторі і не збережуться після закриття робочого "
-"проєкту."
+"Зміни *не* відображатимуться в редакторі та *не* зберігатимуться після "
+"закриття запущеного проєкту."
 
 #: ../../docs/about/list_of_features.rst:100
 msgid ""
 "Run multiple simultaneous project instances from a single editor instance "
 "(useful for client/server testing)."
 msgstr ""
+"Запускайте кілька екземплярів проєкту одночасно з одного екземпляра "
+"редактора (це зручно для тестування в режимі «клієнт/сервер»)."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid ""
 "Optional :ref:`game embedding <doc_game_embedding>` to run the project in a "
 "panel within the editor."
 msgstr ""
+"Опціонально: :ref:`вбудовування гри <doc_game_embedding>` для запуску "
+"проєкту у панелі в редакторі."
 
 #: ../../docs/about/list_of_features.rst:104
 msgid ""
 "Select 2D and 3D nodes in the project's viewport to inspect them in the "
 "editor."
 msgstr ""
+"Виберіть 2D- та 3D-вузли у вікні перегляду проєкту, щоб переглянути їх у "
+"редакторі."
 
 #: ../../docs/about/list_of_features.rst:105
 msgid ""
 "Move the camera within the project using the 2D and 3D camera overrides."
 msgstr ""
+"Переміщайте камеру в межах проєкту за допомогою налаштувань 2D- та 3D-камери."
 
 #: ../../docs/about/list_of_features.rst:106
 msgid "Supports time scale adjustments, pausing, and frame advance."
 msgstr ""
+"Підтримує регулювання часової шкали, призупинення відтворення та перехід до "
+"наступного кадру."
 
 #: ../../docs/about/list_of_features.rst:107
-#, fuzzy
 msgid "Supports muting the project."
-msgstr "Імпорт проекту"
+msgstr "Підтримує вимкнення звуку в проєкті."
 
 #: ../../docs/about/list_of_features.rst:109
 msgid "Ruler tool to measure distances in 2D and 3D."
-msgstr ""
+msgstr "Інструмент «Лінійка» для вимірювання відстаней у 2D та 3D."
 
 #: ../../docs/about/list_of_features.rst:110
 msgid "Vertex snapping support in 3D."
-msgstr ""
+msgstr "Підтримка прив'язки до вершин у 3D."
 
 #: ../../docs/about/list_of_features.rst:111
 msgid ""
 "Support for following the selection as it moves in 3D by using Focus "
 "Selection twice."
 msgstr ""
+"Підтримка відстеження виділеного об’єкта під час його переміщення у 3D за "
+"допомогою подвійного натискання кнопки «Виділення фокусу»."
 
 #: ../../docs/about/list_of_features.rst:112
 msgid "Built-in offline class reference documentation."
@@ -1198,12 +1216,16 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:232
 msgid "Optional debanding to reduce banding artifacts in gradients."
 msgstr ""
+"Опціональне усунення смугастості для зменшення артефактів смугастості в "
+"градієнтах."
 
 #: ../../docs/about/list_of_features.rst:196
 #: ../../docs/about/list_of_features.rst:233
 msgid ""
 ":ref:`HDR output <doc_hdr_output>` on supported platforms and renderers."
 msgstr ""
+":ref:`Вивід HDR <doc_hdr_output>` на підтримуваних платформах та у "
+"підтримуваних рендерерах."
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "2D tools"
@@ -1282,9 +1304,8 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:221
 #: ../../docs/about/list_of_features.rst:483
-#, fuzzy
 msgid ":ref:`Physics interpolation <doc_physics_interpolation>`."
-msgstr ":ref:`doc_physics_interpolation`"
+msgstr ":ref:`Фізична інтерполяція <doc_physics_interpolation>`."
 
 #: ../../docs/about/list_of_features.rst:223
 #: ../../docs/about/list_of_features.rst:485
@@ -1312,7 +1333,7 @@ msgstr "3D графіка"
 
 #: ../../docs/about/list_of_features.rst:231
 msgid "Linear HDR internal lighting calculations."
-msgstr ""
+msgstr "Розрахунки внутрішнього освітлення з використанням лінійного HDR."
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "Perspective, orthographic and frustum-offset cameras."
@@ -1415,30 +1436,33 @@ msgid "**Real-time lighting:**"
 msgstr "**Освітлення в режимі реального часу:**"
 
 #: ../../docs/about/list_of_features.rst:258
-#, fuzzy
 msgid ""
 ":ref:`Directional lights <doc_lights_and_shadows_directional_light>` (sun/"
 "moon)."
 msgstr ""
-":ref:`DirectionalLight2D <class_DirectionalLight2D>` (для сонячного або "
-"місячного світла)"
+":ref:`Направлені джерела світла <doc_lights_and_shadows_directional_light>` "
+"(сонце/місяць)."
 
 #: ../../docs/about/list_of_features.rst:259
 msgid ":ref:`Omnidirectional lights <doc_lights_and_shadows_omni_light>`."
 msgstr ""
+":ref:`Всенаправлені джерела світла <doc_lights_and_shadows_omni_light>`."
 
 #: ../../docs/about/list_of_features.rst:260
-#, fuzzy
 msgid ""
 ":ref:`Spot lights <doc_lights_and_shadows_spot_light>` with adjustable cone "
 "angle and attenuation."
-msgstr "Точкове світло з регульованим кутом конуса і загасанням."
+msgstr ""
+":ref:`Точкові світильники <doc_lights_and_shadows_spot_light>` з "
+"регульованим кутом світлового конуса та ступенем ослаблення світла."
 
 #: ../../docs/about/list_of_features.rst:261
 msgid ""
 ":ref:`Rectangular area lights <doc_lights_and_shadows_area_light>` with an "
 "optional texture to determine the shape and color."
 msgstr ""
+":ref:`Прямокутні площинні джерела світла <doc_lights_and_shadows_area_light>"
+"` з можливістю використання текстури для визначення форми та кольору."
 
 #: ../../docs/about/list_of_features.rst:263
 msgid ""
@@ -1449,13 +1473,13 @@ msgstr ""
 "окремо для кожного джерела світла."
 
 #: ../../docs/about/list_of_features.rst:264
-#, fuzzy
 msgid ""
 "Adjustable light \"size\" for spherical omni and disc spot lights (will also "
 "make shadows blurrier with variable penumbra)."
 msgstr ""
-"Регульований \"розмір\" світла для штучного освітлення області (також "
-"зробить тіні більш розмитими)."
+"Регульований «розмір» світла для сферичних всенаправлених та дискових "
+"точкових світильників (також робить тіні розмитішими завдяки змінній півтіні)"
+"."
 
 #: ../../docs/about/list_of_features.rst:266
 msgid ""
@@ -1479,49 +1503,48 @@ msgstr ""
 "використовувати в сітці."
 
 #: ../../docs/about/list_of_features.rst:270
-#, fuzzy
 msgid ""
 "When using the Mobile renderer, up to 8 omni lights, 8 spot lights, and 8 "
 "area lights can be displayed per mesh resource. Baked lighting can be used "
 "to overcome this limit if needed."
 msgstr ""
-"Під час використання Mobile Renderer можна відображати до 8 універсальних і "
-"8 точкових світильників на ресурс сітки. Щоб подолати цю межу, якщо "
-"необхідно, можна використовувати запечене освітлення."
+"При використанні мобільного рендерера для кожного ресурсу сітки можна "
+"відобразити до 8 всенаправлених джерел світла, 8 точкових джерел світла та 8 "
+"площинних джерел світла. За необхідності для подолання цього обмеження можна "
+"використовувати запечене освітлення."
 
 #: ../../docs/about/list_of_features.rst:274
 msgid "**Shadow mapping:**"
 msgstr "**Карта затінень:**"
 
 #: ../../docs/about/list_of_features.rst:276
-#, fuzzy
 msgid ""
 "*DirectionalLight3D:* Orthogonal (fastest), PSSM 2-split and 4-split. "
 "Supports blending between splits."
 msgstr ""
-"*DirectionalLight (Спрямовуване світло):* Ортогональний (найшвидший), PSSM 2-"
-"split та 4-split. Підтримується змішування між розщепленнями."
+"*DirectionalLight3D:* Ортогональне (найшвидше), PSSM з 2-ма та 4-ма "
+"розділеннями. Підтримує плавне перехід між розділеннями."
 
 #: ../../docs/about/list_of_features.rst:278
-#, fuzzy
 msgid ""
 "*OmniLight3D:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
-"*OmniLight (Всебічне світло):* Подвійний параболід (швидкий), або кубічна "
-"карта (повільніша, але точніша). Підтримує кольорові текстури проєктора у "
-"вигляді панорам."
+"*OmniLight3D:* Подвійний параболоїд (швидкий) або куб-мапа (повільніший, але "
+"точніший). Підтримує кольорові текстури проектора у вигляді панорам."
 
 #: ../../docs/about/list_of_features.rst:280
-#, fuzzy
 msgid "*SpotLight3D:* Single texture. Supports colored projector textures."
-msgstr "*SpotLight:* Окрема текстура. Підтримує кольорові текстури проектора."
+msgstr ""
+"*SpotLight3D:* Одинарна текстура. Підтримує кольорові текстури проєкторів."
 
 #: ../../docs/about/list_of_features.rst:281
 msgid ""
 "*AreaLight3D:* Single texture with dual paraboloid distortion to approximate "
 "the light's shape."
 msgstr ""
+"*AreaLight3D:* Одна текстура з подвійним параболоїдним спотворенням для "
+"апроксимації форми джерела світла."
 
 #: ../../docs/about/list_of_features.rst:283
 msgid ""
@@ -1532,14 +1555,14 @@ msgstr ""
 "тіньових дефектів і панорамування."
 
 #: ../../docs/about/list_of_features.rst:285
-#, fuzzy
 msgid ""
 ":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
 "light size and distance from the surface the shadow is cast on. Supported "
 "for all light types."
 msgstr ""
-":abbr:`PCSS (Percentage Closer Soft Shadows)`- схоже на розмиття тіні на "
-"основі розміру світла та відстані до поверхні, на яку відкидається тінь."
+":abbr:`PCSS (Percentage Closer Soft Shadows)` — ефект розмиття тіні, що "
+"базується на розмірі джерела світла та відстані від поверхні, на яку падає "
+"тінь. Підтримується для всіх типів джерел світла."
 
 #: ../../docs/about/list_of_features.rst:288
 msgid "Adjustable shadow blur on a per-light basis."
@@ -1575,50 +1598,56 @@ msgstr ""
 "зондів."
 
 #: ../../docs/about/list_of_features.rst:298
-#, fuzzy
 msgid "Optionally supports directional lighting based on spherical harmonics."
 msgstr ""
-"Додатково підтримує спрямоване освітлення та грубі відбиття на основі "
-"сферичних обертонів."
+"Опціонально підтримує спрямоване освітлення на основі сферичних гармонік."
 
 #: ../../docs/about/list_of_features.rst:299
-#, fuzzy
 msgid ""
 "Optionally supports baking a shadowmask for distant static directional "
 "shadows."
-msgstr "Використання тіньового маскування для віддалених спрямованих тіней"
+msgstr ""
+"Опціонально підтримує випікання маски тіней для віддалених статичних "
+"спрямованих тіней."
 
 #: ../../docs/about/list_of_features.rst:300
 msgid ""
 "Optional supersampling at bake-time to improve quality and reduce light "
 "leaking at the cost of increased bake times and memory usage during baking."
 msgstr ""
+"Опціональне наддискретизування під час випікання для підвищення якості та "
+"зменшення витоку світла за рахунок збільшення часу випікання та споживання "
+"пам’яті під час цього процесу."
 
 #: ../../docs/about/list_of_features.rst:302
-#, fuzzy
 msgid ""
 "Lightmaps are baked on the GPU using compute shaders (much faster than CPU "
 "lightmapping). Baking can only be performed from the editor, not in exported "
 "projects."
 msgstr ""
-"Карти світла запікаються на GPU за допомогою обчислювальних шейдерів "
-"(набагато швидше порівняно з картою освітлення CPU). Запікання можна "
-"виконувати лише з редактора, а не в експортованих проектах."
+"Карти освітлення випікаються на графічному процесорі за допомогою "
+"обчислювальних шейдерів (що набагато швидше, ніж випікання карт освітлення "
+"на центральному процесорі). Випікання можна виконувати лише в редакторі, а "
+"не в експортованих проєктах."
 
 #: ../../docs/about/list_of_features.rst:305
-#, fuzzy
 msgid ""
 "Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
 "JNLM out of the box, or higher-quality CPU/GPU-based denoising with OIDN "
 "(requires downloading OIDN separately)."
 msgstr ""
-"Підтримує :ref:`denoising <doc_using_lightmap_gi_denoising>` на основі GPU "
-"за допомогою JNLM або на основі CPU/GPU за допомогою OIDN."
+"Підтримує обробку шуму на базі графічного процесора :ref:`denoising "
+"<doc_using_lightmap_gi_denoising>` із використанням JNLM без додаткових "
+"налаштувань, а також обробку шуму вищої якості на базі центрального "
+"процесора або графічного процесора за допомогою OIDN (потрібно окремо "
+"завантажити OIDN)."
 
 #: ../../docs/about/list_of_features.rst:308
 msgid ""
 "Lightmaps are rendered with bicubic filtering to reduce scaling artifacts."
 msgstr ""
+"Карти освітлення візуалізуються з використанням бікубічної фільтрації для "
+"зменшення артефактів масштабування."
 
 #: ../../docs/about/list_of_features.rst:310
 msgid ""
@@ -2032,35 +2061,33 @@ msgstr ""
 "текстури."
 
 #: ../../docs/about/list_of_features.rst:420
-#, fuzzy
 msgid "**Texture VRAM compression:**"
-msgstr "**Стиснення текстур:**"
+msgstr "**Стиснення текстур у VRAM:**"
 
 #: ../../docs/about/list_of_features.rst:422
-#, fuzzy
 msgid "BPTC (for high-quality compression targeting desktop platforms)."
-msgstr "BPTC для якісного стиснення (не підтримується на macOS)."
+msgstr ""
+"BPTC (для високоякісного стиснення, призначеного для настільних платформ)."
 
 #: ../../docs/about/list_of_features.rst:423
-#, fuzzy
 msgid "ASTC (for high-quality compression targeting mobile platforms)."
-msgstr "BPTC для якісного стиснення (не підтримується на macOS)."
+msgstr ""
+"ASTC (для високоякісного стиснення, орієнтованого на мобільні платформи)."
 
 #: ../../docs/about/list_of_features.rst:424
-#, fuzzy
 msgid "ETC2 (for fast compression targeting mobile platforms)."
-msgstr "S3TC (не підтримується на мобільних/веб-платформах)."
+msgstr "ETC2 (для швидкого стиснення, призначеного для мобільних платформ)."
 
 #: ../../docs/about/list_of_features.rst:425
-#, fuzzy
 msgid "S3TC (for fast compression targeting desktop platforms)."
-msgstr "Підтримувані алгоритми стиснення текстур на платформі."
+msgstr "S3TC (для швидкого стиснення, призначеного для настільних платформ)."
 
 #: ../../docs/about/list_of_features.rst:426
-#, fuzzy
 msgid ""
 "Basis Universal (slow, but only requires one encoding for all platforms)."
-msgstr "Basis Universal (повільне, але в результаті файли менші)."
+msgstr ""
+"Basis Universal (працює повільно, але вимагає лише одного кодування для всіх "
+"платформ)."
 
 #: ../../docs/about/list_of_features.rst:428
 msgid "**Antialiasing:**"
@@ -2124,15 +2151,15 @@ msgstr ""
 "класу або покращення візуальних ефектів у системах високого класу."
 
 #: ../../docs/about/list_of_features.rst:443
-#, fuzzy
 msgid ""
 "Resolution scaling uses nearest-neighbor filtering, bilinear filtering, AMD "
 "FidelityFX Super Resolution 1.0 (FSR1), or AMD FidelityFX Super Resolution "
 "2.2.1 (FSR2)."
 msgstr ""
-"Масштабування роздільної здатності використовує білінійну фільтрацію, AMD "
-"FidelityFX Super Resolution 1.0 (FSR1), або AMD FidelityFX Super Resolution "
-"2.2 (FSR2)."
+"Для масштабування роздільної здатності використовуються такі методи: "
+"фільтрація за принципом найближчого сусіда, білінійна фільтрація, AMD "
+"FidelityFX Super Resolution 1.0 (FSR1) або AMD FidelityFX Super Resolution "
+"2.2.1 (FSR2)."
 
 #: ../../docs/about/list_of_features.rst:446
 msgid ""
@@ -2256,15 +2283,17 @@ msgid "*2D:* Custom vertex, fragment, and light shaders."
 msgstr "*2D:* Користувацькі вершинні, фрагментні та світлові шейдери."
 
 #: ../../docs/about/list_of_features.rst:495
-#, fuzzy
 msgid "*3D:* Custom vertex, fragment, light, sky, and fog shaders."
-msgstr "*3D:* Користувацькі вершинні, фрагментні, світлові та шейдери неба."
+msgstr ""
+"*3D:* Налаштовані шейдери вершин, фрагментів, освітлення, неба та туману."
 
 #: ../../docs/about/list_of_features.rst:496
 msgid ""
 "Custom shaders can procedurally generate and modify textures in real-time "
 "using :ref:`class_DrawableTexture2D`."
 msgstr ""
+"Користувацькі шейдери можуть процедурно генерувати та модифікувати текстури "
+"в режимі реального часу за допомогою :ref:`class_DrawableTexture2D`."
 
 #: ../../docs/about/list_of_features.rst:498
 msgid ""
@@ -2279,6 +2308,8 @@ msgid ""
 "Syntax highlighting is provided on GitHub by using ``gdshader`` as the "
 "language name in a Markdown code block."
 msgstr ""
+"Підсвічування синтаксису на GitHub забезпечується шляхом використання "
+"``gdshader`` як назви мови в блоці коду Markdown."
 
 #: ../../docs/about/list_of_features.rst:501
 msgid "Visual shader editor."
@@ -2349,6 +2380,8 @@ msgid ""
 "Syntax highlighting is provided on GitHub by using ``gdscript`` as the "
 "language name in a Markdown code block."
 msgstr ""
+"Підсвічування синтаксису на GitHub забезпечується шляхом використання "
+"``gdscript`` як назви мови в блоці коду Markdown."
 
 #: ../../docs/about/list_of_features.rst:522
 msgid ""
@@ -2479,13 +2512,12 @@ msgstr ""
 "десятками включених ефектів."
 
 #: ../../docs/about/list_of_features.rst:570
-#, fuzzy
 msgid ""
 "Support for polyphony (playing several sounds from a "
 "single :ref:`class_AudioStreamPlayer` node)."
 msgstr ""
 "Підтримка поліфонії (відтворення декількох звуків з одного вузла "
-"AudioStreamPlayer)."
+":ref:`class_AudioStreamPlayer`)."
 
 #: ../../docs/about/list_of_features.rst:572
 msgid "Support for random volume and pitch."
@@ -2504,13 +2536,12 @@ msgstr ""
 "повторенню при використанні випадкової вибірки."
 
 #: ../../docs/about/list_of_features.rst:576
-#, fuzzy
 msgid ""
 ":ref:`class_AudioListener2D` and :ref:`class_AudioListener3D` nodes to "
 "listen from a position different from the camera."
 msgstr ""
-"Вузли Listener2D та Listener3D для прослуховування з іншої позиції, ніж "
-"камера."
+":ref:`class_AudioListener2D` та :ref:`class_AudioListener3D` — вузли для "
+"прослуховування звуку з позиції, відмінної від позиції камери."
 
 #: ../../docs/about/list_of_features.rst:578
 msgid ""
@@ -2576,10 +2607,10 @@ msgid "*Audio:*"
 msgstr "*Аудіо:*"
 
 #: ../../docs/about/list_of_features.rst:601
-#, fuzzy
 msgid ""
 "WAV with optional :abbr:`QOA (Quite OK Audio)` or IMA-ADPCM compression."
-msgstr "WAV з опціональним стисненням IMA-ADPCM."
+msgstr ""
+"WAV із опціональним стисненням :abbr:`QOA (Quite OK Audio)` або IMA-ADPCM."
 
 #: ../../docs/about/list_of_features.rst:602
 msgid "Ogg Vorbis."
@@ -2697,28 +2728,33 @@ msgid ""
 "The mouse cursor's appearance can be changed to a custom image or one of the "
 "system cursors."
 msgstr ""
+"Зовнішній вигляд курсора миші можна змінити на власне зображення або на один "
+"із системних курсорів."
 
 #: ../../docs/about/list_of_features.rst:635
-#, fuzzy
 msgid ""
 "When captured, raw input is used on Windows and Linux to sidestep the OS' "
 "mouse acceleration settings."
 msgstr ""
-"При захопленні необроблений ввід буде використовуватися в Windows і Linux "
-"для обходу налаштувань прискорення мишки ОС."
+"Під час зчитування необроблених даних у Windows та Linux використовується "
+"метод, що дозволяє обійти налаштування прискорення руху миші в операційній "
+"системі."
 
 #: ../../docs/about/list_of_features.rst:638
-#, fuzzy
 msgid ""
 ":ref:`Gamepad input <doc_controllers_gamepads_joysticks>` (up to 8 "
 "simultaneous controllers)."
-msgstr "Ввід з геймпаду (до 8 одночасних контролерів)."
+msgstr ""
+":ref:`Введення з геймпада <doc_controllers_gamepads_joysticks>` (до 8 "
+"контролерів одночасно)."
 
 #: ../../docs/about/list_of_features.rst:641
 msgid ""
 "Support for :ref:`changing the LED color "
 "<doc_controller_features_led_color>` on supported controllers."
 msgstr ""
+"Підтримка :ref:`зміни кольору світлодіода <doc_controller_features_led_color>"
+"` на сумісних контролерах."
 
 #: ../../docs/about/list_of_features.rst:643
 msgid ""
@@ -2726,11 +2762,15 @@ msgid ""
 "<doc_controller_features_motion_sensors>` on supported controllers (used to "
 "implement gyro aiming)."
 msgstr ""
+"Підтримка :ref:`датчиків руху <doc_controller_features_motion_sensors>` на "
+"сумісних контролерах (використовуються для реалізації наведення за допомогою "
+"гіроскопа)."
 
 #: ../../docs/about/list_of_features.rst:646
-#, fuzzy
 msgid "Pen/tablet input with pressure and tilt support."
-msgstr "Ввід пера/планшета з підтримкою тиску."
+msgstr ""
+"Введення за допомогою пера/планшета з підтримкою чутливості до тиску та "
+"нахилу."
 
 #: ../../docs/about/list_of_features.rst:649
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:136
@@ -2908,13 +2948,12 @@ msgstr ""
 "справа наліво."
 
 #: ../../docs/about/list_of_features.rst:697
-#, fuzzy
 msgid ""
 "Support for :ref:`pseudolocalization <doc_pseudolocalization>` to test your "
 "project for i18n-friendliness."
 msgstr ""
-"Підтримка псевдолокалізації для перевірки вашого проекту на дружність до "
-"i18n."
+"Підтримка :ref:`псевдолокалізації <doc_pseudolocalization>` для перевірки "
+"вашого проєкту на сумісність з i18n."
 
 #: ../../docs/about/list_of_features.rst:701
 msgid "Windowing and OS integration"
@@ -3064,6 +3103,8 @@ msgid ""
 ":ref:`Virtual joystick <class_VirtualJoystick>` and :ref:`buttons "
 "<class_TouchScreenButton>` for touch input."
 msgstr ""
+":ref:`Віртуальний джойстик <class_VirtualJoystick>` та :ref:`кнопки "
+"<class_TouchScreenButton>` для сенсорного введення."
 
 #: ../../docs/about/list_of_features.rst:742
 msgid ""
@@ -3079,7 +3120,7 @@ msgstr "Підтримка реклами з використанням стор
 
 #: ../../docs/about/list_of_features.rst:745
 msgid "Support for picture-in-picture mode on Android."
-msgstr ""
+msgstr "Підтримка режиму «картинка в картинці» на Android."
 
 #: ../../docs/about/list_of_features.rst:750
 msgid "XR support (AR and VR)"
@@ -3106,13 +3147,12 @@ msgstr ""
 "допомогою OpenXR через плагін."
 
 #: ../../docs/about/list_of_features.rst:758
-#, fuzzy
 msgid ""
 "Including support for popular standalone headsets like the Meta Quest 1/2/3 "
 "and Pro, Pico 4, Magic Leap 2, and Lynx R1."
 msgstr ""
-"Включаючи підтримку популярних автономних гарнітур, таких як Meta Quest "
-"1/2/3 і Pro, Pico 4, Magic Leap 2 і Lynx R1."
+"У тому числі підтримка популярних автономних гарнітур, таких як Meta Quest 1/"
+"2/3 та Pro, Pico 4, Magic Leap 2 та Lynx R1."
 
 #: ../../docs/about/list_of_features.rst:760
 msgid "Out of the box limited support for visionOS Apple headsets."
@@ -3165,25 +3205,22 @@ msgid "Checkboxes, check buttons, radio buttons."
 msgstr "Галочки (прапорці), перемикачі, радіокнопки."
 
 #: ../../docs/about/list_of_features.rst:778
-#, fuzzy
 msgid ""
 "Text entry using :ref:`class_LineEdit` (single line), :ref:`class_TextEdit` "
 "(multiple lines), and :ref:`class_CodeEdit` (supports syntax highlighting, "
 "line numbers, and more)."
 msgstr ""
-"Введення тексту за допомогою :ref:`class_LineEdit` (один рядок) "
-"і :ref:`class_TextEdit` (кілька рядків). TextEdit також підтримує функції "
-"редагування коду, такі як відображення номерів рядків та підсвічування "
-"синтаксису."
+"Введення тексту за допомогою :ref:`class_LineEdit` (один рядок), "
+":ref:`class_TextEdit` (кілька рядків) та :ref:`class_CodeEdit` (підтримує "
+"підсвічування синтаксису, нумерацію рядків тощо)."
 
 #: ../../docs/about/list_of_features.rst:781
-#, fuzzy
 msgid ""
 "Dropdown menus using :ref:`class_PopupMenu` and :ref:`class_OptionButton` "
 "with support for an optional search bar."
 msgstr ""
-"Випадаючі меню з використанням :ref:`class_PopupMenu` "
-"та :ref:`class_OptionButton`."
+"Випадаючі меню, що використовують :ref:`class_PopupMenu` та "
+":ref:`class_OptionButton`, з можливістю додавання панелі пошуку."
 
 #: ../../docs/about/list_of_features.rst:783
 msgid "Scrollbars."
@@ -3207,11 +3244,12 @@ msgid "Trees (can also be used to represent tables)."
 msgstr "Дерева (також можуть використовуватися для створення таблиць)."
 
 #: ../../docs/about/list_of_features.rst:788
-#, fuzzy
 msgid ""
 "Color picker with RGB, HSV, and OKHSL modes, as well as custom color "
 "palettes."
-msgstr "Палітра кольорів з режимами RGB та HSV."
+msgstr ""
+"Інструмент вибору кольорів із режимами RGB, HSV та OKHSL, а також із "
+"можливістю створення власних палітр кольорів."
 
 #: ../../docs/about/list_of_features.rst:789
 msgid "Controls can be rotated and scaled."
@@ -3219,7 +3257,7 @@ msgstr "Елементи контролю можна повертати та м�
 
 #: ../../docs/about/list_of_features.rst:790
 msgid "Drag-and-drop support."
-msgstr ""
+msgstr "Підтримка функції «перетягування»."
 
 #: ../../docs/about/list_of_features.rst:792
 msgid "**Sizing:**"
@@ -3266,9 +3304,8 @@ msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
 msgstr ":ref:`Draggable splitter <class_SplitContainer>` макети."
 
 #: ../../docs/about/list_of_features.rst:803
-#, fuzzy
 msgid ":ref:`Foldable section <class_FoldableContainer>` layouts."
-msgstr ":ref:`Stack <class_BoxContainer>` макети."
+msgstr ":ref:`Розкладні макети розділу <class_FoldableContainer>`."
 
 #: ../../docs/about/list_of_features.rst:805
 msgid ""
@@ -88336,10 +88373,11 @@ msgid "To notarize exported app"
 msgstr "Нотаріально завірити експортований додаток"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:63
-#, fuzzy
 msgid ""
 "Select ``Xcode notarytool`` in the ``Notarization > Notarization`` option."
-msgstr "Виберіть ``Xcode altool`` у опції ``Нотаріальне засвідчення``."
+msgstr ""
+"У меню ``Xcode notarytool`` > ``Нотаріальне засвідчення» виберіть Xcode "
+"notarytool``."
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:64
 #: ../../docs/tutorials/export/exporting_for_macos.rst:88
@@ -88400,20 +88438,18 @@ msgstr ""
 "Windows"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:76
-#, fuzzy
 msgid ""
 "Install `rcodesign <https://github.com/indygreg/apple-platform-rs/tree/main/"
 "apple-codesign>`__, and configure the path to ``rcodesign`` in the ``Editor "
 "Settings > Export > macOS > rcodesign`` option."
 msgstr ""
-"Установіть `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-"
-"rs/tree/main/apple-codesign>`__ та налаштуйте шлях до ``rcodesign`` у "
+"Встановіть `rcodesign <https://github.com/indygreg/apple-platform-rs/tree/"
+"main/apple-codesign>`__ та налаштуйте шлях до ``rcodesign`` у розділі "
 "``Налаштування редактора > Експорт > macOS > rcodesign``."
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:81
-#, fuzzy
 msgid "Select ``rcodesign`` in the ``Code Signing > Codesign`` option."
-msgstr "Виберіть ``Xcode codesign`` у опції ``Code Signing > Codesign``."
+msgstr "Виберіть ``rcodesign`` у меню ``Підписання коду > Codesign``."
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:82
 msgid ""
@@ -88424,11 +88460,10 @@ msgstr ""
 "``Code Signing``."
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:87
-#, fuzzy
 msgid "Select ``rcodesign`` in the ``Notarization > Notarization`` option."
 msgstr ""
-"Виберіть ``PyOxidizer rcodesign`` у опції ``Нотаріальне засвідчення > "
-"Нотаріальне засвідчення``."
+"Виберіть ``rcodesign`` у меню ``Нотаріальне засвідчення > Нотаріальне "
+"засвідчення``."
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:89
 msgid ""
@@ -88543,11 +88578,9 @@ msgid "This option is visible only when signing with Xcode codesign."
 msgstr "Ця опція відображається лише під час підписання кодом Xcode."
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:122
-#, fuzzy
 msgid "These options are visible only when signing with rcodesign."
 msgstr ""
-"Ці параметри видимі лише під час підписання за допомогою PyOxidizer "
-"rcodesign."
+"Ці параметри відображаються лише під час підписання за допомогою rcodesign."
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:125
 msgid "Notarization Options"
@@ -88629,11 +88662,10 @@ msgstr ""
 "API."
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:147
-#, fuzzy
 msgid "These options are visible only when notarizing with Xcode notarytool."
 msgstr ""
-"Ці параметри видимі лише під час нотаріального посвідчення за допомогою "
-"інструменту Xcode."
+"Ці параметри відображаються лише під час нотаріального засвідчення за "
+"допомогою інструменту notarytool у Xcode."
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:149
 msgid ""
@@ -207593,7 +207625,6 @@ msgstr ""
 "підвибірку поширених та корисних способів зробити це."
 
 #: ../../docs/engine_details/engine_api/index.rst:13
-#, fuzzy
 msgid ""
 "Alternatively, some of the functions presented here are also available "
 "through the :ref:`GDExtension <doc_what_is_gdextension>` API. You can use "
@@ -207603,14 +207634,13 @@ msgid ""
 "the code or directory structures may be different in GDExtension compared to "
 "the module APIs."
 msgstr ""
-"Крім того, деякі з представлених тут функцій також доступні через "
-"API :ref:`GDExtension <doc_what_is_gdextension>`. Ви можете використовувати "
-"їх у C++, створивши GDExtension на основі :ref:`godot-cpp "
-"<doc_about_godot_cpp>` або за допомогою будь-якої з реалізацій GDExtension, "
-"створених спільнотою :ref:`community-created GDExtension implementations "
-"<doc_scripting_languages>`. Однак зауважте, що деякі аспекти коду або "
-"структури каталогів можуть відрізнятися в GDExtension порівняно з API "
-"модулів."
+"Крім того, деякі з представлених тут функцій також доступні через API "
+":ref:`GDExtension <doc_what_is_gdextension>`. Ви можете використовувати їх у "
+"C++, створивши GDExtension на основі :ref:`godot-cpp <doc_about_godot_cpp>`, "
+"або за допомогою будь-якої з :ref:`реалізацій GDExtension, створених "
+"спільнотою <doc_scripting_languages>`. Однак зверніть увагу, що деякі "
+"аспекти коду або структури каталогів у GDExtension можуть відрізнятися від "
+"API модулів."
 
 #: ../../docs/engine_details/engine_api/custom_modules_in_cpp.rst:4
 msgid "Custom modules in C++"
@@ -208410,7 +208440,7 @@ msgstr ""
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:4
 msgid "Vendor Runtime Module"
-msgstr ""
+msgstr "Модуль виконання постачальника"
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:6
 msgid ""
@@ -208421,12 +208451,21 @@ msgid ""
 "functionality it provides easily accessible and usable within a *stock* "
 "Godot project."
 msgstr ""
+"Модуль виконання постачальника — це :ref:`модуль Godot "
+"<doc_custom_modules_in_cpp>`, який застосовується виключно під час виконання "
+"в запущеному проєкті. Він створюється так само, як звичайний :ref:`власний "
+"модуль на C++ <doc_custom_modules_in_cpp>`, але упаковується за допомогою "
+":ref:`плагіна редактора <doc_making_plugins>`, щоб зробити його функціонал "
+"легкодоступним та зручним у використанні в *стандартному* проєкті Godot."
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:15
 msgid ""
 "Vendor runtime modules provide developers with access to vendor-specific "
 "optimizations, features, and/or platforms for their running projects."
 msgstr ""
+"Модулі виконання від постачальників надають розробникам доступ до "
+"оптимізацій, функцій та/або платформ, характерних для конкретного "
+"постачальника, для їхніх поточних проєктів."
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:18
 msgid ""
@@ -208436,22 +208475,27 @@ msgid ""
 "are able to access and use a diverse range of vendor technologies to improve "
 "their games."
 msgstr ""
+"Це дає переваги постачальникам, які мають змогу надати доступ до своїх "
+"технологій усім розробникам, а також вдосконалювати та оптимізувати їх "
+"швидко, ітеративно та без перешкод. Це також дає переваги розробникам і "
+"користувачам, які мають змогу отримувати доступ до різноманітних технологій "
+"постачальників та використовувати їх для вдосконалення своїх ігор."
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:24
-#, fuzzy
 msgid "Creating a vendor runtime module"
-msgstr "Створення модуля"
+msgstr "Створення модуля виконання постачальника"
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:27
-#, fuzzy
 msgid "Generating export templates"
-msgstr "Збірка шаблонів експорту"
+msgstr "Створення шаблонів для експорту"
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:29
 msgid ""
 "Make sure to follow the :ref:`instructions for creating a custom C++ module "
 "<doc_creating_custom_modules_in_cpp>`."
 msgstr ""
+"Обов’язково дотримуйтесь :ref:`інструкцій щодо створення власного модуля на "
+"C++ <doc_creating_custom_modules_in_cpp>`."
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:31
 msgid ""
@@ -208460,11 +208504,15 @@ msgid ""
 "every platform you plan to support. See the :ref:`Compiling <toc-devel-"
 "compiling>` pages for more information."
 msgstr ""
+"Оскільки це модуль часу виконання, функціонал якого призначений для "
+"використання виключно в рамках поточного проєкту, вам необхідно створити "
+"шаблон експорту для кожної платформи, яку ви плануєте підтримувати. "
+"Докладнішу інформацію див. на сторінках :ref:`Компіляція <toc-devel-"
+"compiling>`."
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:36
-#, fuzzy
 msgid "Creating the wrapper editor plugin"
-msgstr "Створення плагіна iOS"
+msgstr "Створення плагіна-редактора обгортки"
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:38
 msgid ""
@@ -208472,12 +208520,18 @@ msgid ""
 "package them and make them easily accessible to end users via the `Godot "
 "Asset Store <https://store.godotengine.org/>`_."
 msgstr ""
+"Після створення шаблонів експорту необхідно розробити плагін для редактора, "
+"щоб об’єднати їх у пакет і зробити легкодоступними для кінцевих користувачів "
+"через `Godot Asset Store <https://store.godotengine.org/>`_."
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:41
 msgid ""
 "Follow :ref:`these instructions <doc_making_plugins_template>` to start "
 "creating the plugin. Your base plugin script should look like the following:"
 msgstr ""
+"Дотримуйтесь :ref:`цих інструкцій <doc_making_plugins_template>`, щоб "
+"розпочати створення плагіна. Ваш базовий скрипт плагіна повинен виглядати "
+"приблизно так:"
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:59
 msgid ""
@@ -208487,12 +208541,19 @@ msgid ""
 "hook into the export flow and replace the default export templates with the "
 "ones generated from the vendor runtime module."
 msgstr ""
+"Наступним кроком є визначення та створення екземпляра "
+":ref:`EditorExportPlugin<class_EditorExportPlugin>`. Екземпляр "
+":ref:`EditorExportPlugin<class_EditorExportPlugin>` використовується для "
+"підключення до процесу експорту та заміни шаблонів експорту за замовчуванням "
+"на ті, що генеруються модулем виконання постачальника."
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:63
 msgid ""
 "Using our base editor plugin template code above, an example implementation "
 "looks like this:"
 msgstr ""
+"Використовуючи наведений вище код шаблону плагіна редактора бази даних, "
+"приклад реалізації виглядає так:"
 
 #: ../../docs/engine_details/engine_api/vendor_runtime_module.rst:115
 msgid ""
@@ -208502,6 +208563,13 @@ msgid ""
 "leverage those functionalities <toc-tutorials-plugins>` to improve the user "
 "experience for your vendor runtime module."
 msgstr ""
+"У цьому розділі розглянуто основні принципи обгорнення та надання доступу до "
+"модуля середовища виконання стороннього розробника за допомогою плагіна "
+"редактора, однак плагіни редактора мають набагато більше функціональних "
+"можливостей, які можна використовувати для подальшої настройки редактора. Не "
+"соромтеся :ref:`досліджувати та використовувати ці функції <toc-tutorials-"
+"plugins>`, щоб покращити користувацький досвід роботи з вашим модулем "
+"середовища виконання стороннього розробника."
 
 #: ../../docs/engine_details/engine_api/gdextension/index.rst:6
 msgid "The GDExtension system"

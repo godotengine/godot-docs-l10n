@@ -19,13 +19,15 @@
 # Espea Tiviq <espea.tiviq@gmail.com>, 2025.
 # "Drussentis@gmail.com" <drussentis@gmail.com>, 2026.
 # Júlia Rosell Saldaña <contacte@juliars.cat>, 2026.
+# Miguel Rodriguez <miguelrod31082013@gmail.com>, 2026.
+# hazel <davidhuertasem08@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-06-16 21:19+0200\n"
-"PO-Revision-Date: 2026-06-16 06:07+0000\n"
-"Last-Translator: Júlia Rosell Saldaña <contacte@juliars.cat>\n"
+"PO-Revision-Date: 2026-08-19 10:51+0000\n"
+"Last-Translator: hazel <davidhuertasem08@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ca/>\n"
 "Language: ca\n"
@@ -33,7 +35,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.7.dev0\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -742,6 +744,8 @@ msgid ""
 "Built-in script editor. Also supports editing text files and using custom "
 "syntax highlighters."
 msgstr ""
+"Llenguatge de programació integrat a l'editor. A més suporta editar arxius "
+"de text i utilitzar resaltadors de la sintaxi personalitzada."
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
@@ -782,6 +786,9 @@ msgid ""
 "like :ref:`doc_profiler_tracy` and :ref:`doc_profiler_perfetto` for deeper "
 "optimization tasks."
 msgstr ""
+"Suporta:ref:`analitzador d'alt rendiment <doc_tracing_profilers>"
+"`com:ref:`doc_profiler_tracy` i :ref:`doc_profiler_perfetto` per tasques "
+"d'optimització més complicades."
 
 #: ../../docs/about/list_of_features.rst:84
 msgid ""
@@ -789,6 +796,10 @@ msgid ""
 "and provide custom functionality such as clickable buttons in the inspector, "
 "without needing to create an editor plugin."
 msgstr ""
+"Qualsevol script pot ser :ref:`executat a l'editor "
+"<doc_running_code_in_the_editor>` i proveïr funcions personalitzades tal com "
+"botons que es poden clickar a l'inspector, sense la necesitat de crear un "
+"plugin a l'editor."
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Live script reloading."
@@ -799,18 +810,16 @@ msgid "Live scene editing."
 msgstr "Edició d'escenes en directe."
 
 #: ../../docs/about/list_of_features.rst:90
-#, fuzzy
 msgid ""
 "Changes *will* reflect in the editor and *will* be kept after closing the "
 "running project."
 msgstr ""
-"Els canvis es reflectiran a l'editor i es mantindran després de tancar el "
-"projecte en execució."
+"Els canvis *es reflectiran* a l'editor i *es mantindran* després de tancar "
+"el projecte en execució."
 
 #: ../../docs/about/list_of_features.rst:92
-#, fuzzy
 msgid "Live camera replication (disabled by default)."
-msgstr "Replicació de càmeres en directe."
+msgstr "Replicació de càmeres en viu (desactivada per defecte)."
 
 #: ../../docs/about/list_of_features.rst:94
 msgid "Move the in-editor camera and see the result in the running project."
@@ -853,21 +862,24 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:106
+#, fuzzy
 msgid "Supports time scale adjustments, pausing, and frame advance."
 msgstr ""
+"Suporta modificacions a la escala del temps, pausar, i avanç del fotograma."
 
 #: ../../docs/about/list_of_features.rst:107
-#, fuzzy
 msgid "Supports muting the project."
-msgstr "Importar el projecte"
+msgstr "Suporta silenciar el projecte."
 
 #: ../../docs/about/list_of_features.rst:109
+#, fuzzy
 msgid "Ruler tool to measure distances in 2D and 3D."
-msgstr ""
+msgstr "Regle per mesurar distancies tant en 2D com en 3D."
 
 #: ../../docs/about/list_of_features.rst:110
+#, fuzzy
 msgid "Vertex snapping support in 3D."
-msgstr ""
+msgstr "Admet fixació de vèrtex al 3D."
 
 #: ../../docs/about/list_of_features.rst:111
 msgid ""
@@ -26849,7 +26861,7 @@ msgstr "``script_text_editor/paste``"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:263
 msgid "Select All"
-msgstr "Selecciona-ho Tot"
+msgstr "Selecciona-ho tot"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:263
 #: ../../docs/tutorials/editor/default_key_mapping.rst:461

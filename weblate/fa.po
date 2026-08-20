@@ -42,7 +42,7 @@
 # محمد ایرانی <mohamadir10g01@gmail.com>, 2023.
 # Amirhossein Basirat <amir.basirat.2004@gmail.com>, 2023.
 # Arshia <karitzoki@gmail.com>, 2023.
-# "LordProfo (Nima)" <nimaentity30@gmail.com>, 2023.
+# "LordProfo (Nima)" <nimaentity30@gmail.com>, 2023, 2026.
 # theBSH <bloodshot1387@hotmail.com>, 2023.
 # یونس اسحاقی <oicxff@gmail.com>, 2023.
 # Hussein Alipoor <alipourhossein333@gmail.com>, 2023.
@@ -61,13 +61,14 @@
 # "Mahdi B. Jahani" <kelbowonl@gmail.com>, 2025.
 # عرشیا سادات رسول <arsheyasadat@gmail.com>, 2025.
 # Sajjad Zavar <zavarsajjad98@gmail.com>, 2026.
+# MedProgAyat <hosseinmehriyari1383@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-06-16 21:19+0200\n"
-"PO-Revision-Date: 2026-02-27 15:09+0000\n"
-"Last-Translator: Sajjad Zavar <zavarsajjad98@gmail.com>\n"
+"PO-Revision-Date: 2026-08-03 11:01+0000\n"
+"Last-Translator: \"LordProfo (Nima)\" <nimaentity30@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fa/>\n"
 "Language: fa\n"
@@ -75,7 +76,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.16.1-dev\n"
+"X-Generator: Weblate 2026.8.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -142,9 +143,8 @@ msgid "Class reference"
 msgstr "منبع کلاس"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "مستندات گودوت – شاخهٔ *۴.۶*"
+msgstr "مستندات گودوت – شاخهٔ *master*"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -171,9 +171,9 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
-"بسته به میزان تکمیل فرایند ترجمه، ممکن است با بندها یا حتی صفحه‌هایی روبه‌رو "
-"شوید که هنوز به انگلیسی هستند. شما می‌توانید با ارائهٔ ترجمه‌های جدید یا "
-"بازبینی ترجمه‌های موجود در Weblate به انجمن کمک کنید."
+"بسته به میزان تلاش های صورت گرفته برای تکمیل فرایند ترجمه، ممکن است با بندها "
+"یا حتی صفحه‌هایی روبه‌رو شوید که هنوز به انگلیسی هستند. شما می‌توانید با ارائهٔ "
+"ترجمه‌های جدید یا بازبینی ترجمه‌های موجود در Weblate به انجمن کمک کنید."
 
 #: ../../docs/index.rst:23
 msgid ""
@@ -768,6 +768,8 @@ msgid ""
 "Built-in script editor. Also supports editing text files and using custom "
 "syntax highlighters."
 msgstr ""
+"ویرایشگر اسکریپت داخلی. همچنین از ویرایش فایل های متنی و برجسته کننده های "
+"نحوی شخصی سازی شده نیز پشتیبانی می کند."
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
@@ -782,9 +784,8 @@ msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr ":ref:`اشکال یاب <doc_debugger_panel>` جی دی اسکریپت."
 
 #: ../../docs/about/list_of_features.rst:76
-#, fuzzy
 msgid "Supports debugging in threads."
-msgstr "پشتیبانی از اشکال‌زدایی در ریسه‌ها از ۴.۲ در دسترس است."
+msgstr "از اشکال‌زدایی در ریسه‌ها پشتیبانی می‌کند."
 
 #: ../../docs/about/list_of_features.rst:78
 msgid ""
@@ -806,6 +807,9 @@ msgid ""
 "like :ref:`doc_profiler_tracy` and :ref:`doc_profiler_perfetto` for deeper "
 "optimization tasks."
 msgstr ""
+"از :ref:`نمایه‌گرهای ردیابی <doc_tracing_profilers>` مانند "
+":ref:`doc_profiler_tracy` و :ref:`doc_profiler_perfetto` برای بهینه‌سازی‌های "
+"عمیق‌تر پشتیبانی می‌کند."
 
 #: ../../docs/about/list_of_features.rst:84
 msgid ""
@@ -813,6 +817,9 @@ msgid ""
 "and provide custom functionality such as clickable buttons in the inspector, "
 "without needing to create an editor plugin."
 msgstr ""
+"هر اسکریپتی می‌تواند :ref:`در ویرایشگر اجرا شود "
+"<doc_running_code_in_the_editor>` و عملکردهای سفارشی مانند دکمه‌های قابل کلیک "
+"در بازرس را ارائه دهد، بدون این که نیازی به ساخت افزونهٔ ویرایشگر باشد."
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Live script reloading."
@@ -820,21 +827,19 @@ msgstr "بارگذاری مجدد اسکریپت به صورت زنده."
 
 #: ../../docs/about/list_of_features.rst:88
 msgid "Live scene editing."
-msgstr "ویرایش صحنه زنده"
+msgstr "ویرایش صحنه زنده."
 
 #: ../../docs/about/list_of_features.rst:90
-#, fuzzy
 msgid ""
 "Changes *will* reflect in the editor and *will* be kept after closing the "
 "running project."
 msgstr ""
-"تغییرات در ویرایشگر منعکس می شود و پس از بسته شدن پروژه در حال اجرا حفظ می "
-"شود."
+"تغییرات *حتماً* در ویرایشگر منعکس می‌شوند و *حتماً* پس از بستن پروژهٔ در حال "
+"اجرا حفظ می‌شوند."
 
 #: ../../docs/about/list_of_features.rst:92
-#, fuzzy
 msgid "Live camera replication (disabled by default)."
-msgstr "تکثیر دوربین زنده."
+msgstr "باز تولید دوربین زنده (غیر فعال به طور پیش فرض)."
 
 #: ../../docs/about/list_of_features.rst:94
 msgid "Move the in-editor camera and see the result in the running project."
@@ -846,59 +851,66 @@ msgid "Remote inspector."
 msgstr "بازرسی از راه دور."
 
 #: ../../docs/about/list_of_features.rst:98
-#, fuzzy
 msgid ""
 "Changes *won't* reflect in the editor and *won't* be kept after closing the "
 "running project."
 msgstr ""
-"تغییرات در ویرایشگر منعکس نمی‌شوند و پس از بسته شدن پروژه در حال اجرا نگهداری "
-"نمی‌شوند."
+"تغییرات *قطعاً* در ویرایشگر منعکس نمی‌شوند و *قطعاً* پس از بستن پروژهٔ در حال "
+"اجرا حفظ نمی‌شوند."
 
 #: ../../docs/about/list_of_features.rst:100
 msgid ""
 "Run multiple simultaneous project instances from a single editor instance "
 "(useful for client/server testing)."
 msgstr ""
+"اجرای هم‌زمان چندین بار از پروژه با یک ویرایشگر واحد (مفید برای کلاینت/سرور)."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid ""
 "Optional :ref:`game embedding <doc_game_embedding>` to run the project in a "
 "panel within the editor."
 msgstr ""
+":ref:`جاسازی بازی <doc_game_embedding>` به صورت اختیاری برای اجرای پروژه "
+"درون یک پنل در ویرایشگر."
 
 #: ../../docs/about/list_of_features.rst:104
 msgid ""
 "Select 2D and 3D nodes in the project's viewport to inspect them in the "
 "editor."
-msgstr ""
+msgstr "انتخاب گره های دوبعدی و سه‌بعدی در ویوپورت پروژه به منظور بررسی شان."
 
 #: ../../docs/about/list_of_features.rst:105
 msgid ""
 "Move the camera within the project using the 2D and 3D camera overrides."
 msgstr ""
+"جابه‌جایی دوربین درون پروژه با استفاده از بازنویسی های دوربین های دوبعدی و "
+"سه‌بعدی."
 
 #: ../../docs/about/list_of_features.rst:106
 msgid "Supports time scale adjustments, pausing, and frame advance."
-msgstr ""
+msgstr "از تنظیم مقیاس زمان، توقف، و پیش روی فریم به فریم پشتیبانی‌ می‌کند."
 
 #: ../../docs/about/list_of_features.rst:107
-#, fuzzy
 msgid "Supports muting the project."
-msgstr "پیکربندی پروژه"
+msgstr "پیکربندی پروژه."
 
 #: ../../docs/about/list_of_features.rst:109
 msgid "Ruler tool to measure distances in 2D and 3D."
-msgstr ""
+msgstr "ابزار خط‌کش برای اندازه گیری فواصل در محیط های دوبعدی و سه‌بعدی."
 
 #: ../../docs/about/list_of_features.rst:110
+#, fuzzy
 msgid "Vertex snapping support in 3D."
-msgstr ""
+msgstr "پشتیبانی از چسبیدن vertex در محیط سه‌بعدی."
 
 #: ../../docs/about/list_of_features.rst:111
+#, fuzzy
 msgid ""
 "Support for following the selection as it moves in 3D by using Focus "
 "Selection twice."
 msgstr ""
+"پشتیبانی از دنبال کردن شیء انتخاب‌شده هنگام حرکت در نمای سه‌بعدی، با دوبار "
+"استفاده از Focus Selection."
 
 #: ../../docs/about/list_of_features.rst:112
 msgid "Built-in offline class reference documentation."
@@ -963,7 +975,7 @@ msgstr "رندرینگ"
 #: ../../docs/about/list_of_features.rst:127
 #: ../../docs/tutorials/rendering/renderers.rst:15
 msgid "Godot 4 includes three renderers:"
-msgstr "Godot 4 شامل سه رندر است:"
+msgstr "Godot 4 شامل سه رندرکننده است:"
 
 #: ../../docs/about/list_of_features.rst:129
 #: ../../docs/tutorials/rendering/renderers.rst:17
@@ -1044,8 +1056,8 @@ msgid ""
 ":ref:`2D lighting <doc_2d_lights_and_shadows>` with normal maps and specular "
 "maps."
 msgstr ""
-":ref:` 2D lighting <doc_2d_lights_and_shadows>` با نورمال مپ و نقشه‌های "
-"اسپکولار."
+":ref:`نور دوبعدی <doc_2d_lights_and_shadows>` با نقشه‌های نرمال و نقشه های "
+"اسپکیولار(نقطه ای)."
 
 #: ../../docs/about/list_of_features.rst:159
 msgid "Point (omni/spot) and directional 2D lights."
@@ -1062,10 +1074,10 @@ msgid ""
 "which can be used for improved 2D lighting effects including 2D global "
 "illumination."
 msgstr ""
-"سایه‌زن‌های سفارشی می‌توانند به نمایش بی‌درنگ :abbr:`SDF (Signed Distance "
-"Field)` از صحنه دوبعدی بر اساس گره‌های :ref:`class_LightOccluder2D`دسترسی "
-"داشته باشند، که می‌تواند برای جلوه‌های نورپردازی دوبعدی بهبودیافته از جمله "
-"روشنایی جهانی دوبعدی استفاده شود."
+"سایه‌زن های سفارشی می‌توانند به یک بازنمایی بی‌درنگ :abbr:`SDF (میدان فاصلهٔ "
+"علامت‌دار)` از صحنهٔ دوبعدی بر اساس گره‌های :ref:`class_LightOccluder2D` دسترسی "
+"داشته باشند، که می‌تواند برای جلوه‌های بهبودیافتهٔ نورپردازی دوبعدی از جمله "
+"روشنایی سراسری دوبعدی استفاده شود."
 
 #: ../../docs/about/list_of_features.rst:165
 msgid ""
@@ -1167,8 +1179,8 @@ msgid ""
 "GPU-based :ref:`particles <doc_particle_systems_2d>` with support "
 "for :ref:`custom particle shaders <doc_particle_shader>`."
 msgstr ""
-"مبتنی بر پردازنده گرافیکی :ref:`particles <doc_particle_systems_2d>` با "
-"پشتیبانی از:ref:`custom particle shaders <doc_particle_shader>`."
+":ref:`ذرات <doc_particle_systems_2d>` مبتنی بر GPU با پشتیبانی از "
+":ref:`شیدرهای ذرات سفارشی <doc_particle_shader>`."
 
 #: ../../docs/about/list_of_features.rst:192
 #: ../../docs/about/list_of_features.rst:399
@@ -1224,7 +1236,7 @@ msgstr "گره PathFollow2D برای دنبال کردن Path2D توسط سای�
 
 #: ../../docs/about/list_of_features.rst:208
 msgid ":ref:`2D geometry helper class <class_Geometry2D>`."
-msgstr ":ref:`2D geometry helper class <class_Geometry2D>`."
+msgstr ":ref:`کلاس کمکی هندسه دوبعدی <class_Geometry2D>`."
 
 #: ../../docs/about/list_of_features.rst:211
 msgid "2D physics"
@@ -1271,9 +1283,8 @@ msgstr "محیط هایی که تشخیص می دهند اجسام به آن ه�
 
 #: ../../docs/about/list_of_features.rst:221
 #: ../../docs/about/list_of_features.rst:483
-#, fuzzy
 msgid ":ref:`Physics interpolation <doc_physics_interpolation>`."
-msgstr ":ref:`doc_interpolation`"
+msgstr ":ref:`درون‌یابی فیزیک <doc_physics_interpolation>`."
 
 #: ../../docs/about/list_of_features.rst:223
 #: ../../docs/about/list_of_features.rst:485
@@ -1310,8 +1321,8 @@ msgid ""
 "When using the Forward+ renderer, a depth prepass is used to improve "
 "performance in complex scenes by reducing the cost of overdraw."
 msgstr ""
-"هنگام استفاده از Forward+ ,یک پیش گذر عمق برای بهبود عملکرد در صحنه های "
-"پیچیده با کاهش هزینه اضافه برداشت استفاده می شود"
+"هنگام استفاده از رندرکننده Forward+، یک پیش‌پردازش عمق برای بهبود عملکرد در "
+"صحنه‌های پیچیده با کاهش هزینهٔ ترسیم اضافی استفاده می‌شود."
 
 #: ../../docs/about/list_of_features.rst:237
 msgid ""
@@ -1321,9 +1332,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:239
 msgid "**Physically-based rendering (built-in material features):**"
-msgstr ""
-"** رندر مبتنی بر فیزیکی(Physically-based ) (ویژگی های متریال داخلی (built-in "
-"material)):**"
+msgstr "**رندرینگ مبتنی بر فیزیک (ویژگی‌های پیش‌ساخته ی متریال‌):**"
 
 #: ../../docs/about/list_of_features.rst:241
 msgid "Follows the Disney PBR model."
@@ -1334,8 +1343,8 @@ msgid ""
 "Supports Burley, Lambert, Lambert Wrap (half-Lambert) and Toon diffuse "
 "shading modes."
 msgstr ""
-"از حالت های سایه پراکنده Burley، Lambert، Lambert Wrap (نیمه لامبرت (half-"
-"Lambert)) و Toon پشتیبانی می کند."
+"از حالت‌های سایه‌زنی دیفیوز Burley، Lambert، Lambert Wrap (نیمه-Lambert) و "
+"Toon پشتیبانی می‌کند."
 
 #: ../../docs/about/list_of_features.rst:243
 msgid "Supports Schlick-GGX, Toon and Disabled specular shading modes."
@@ -1401,7 +1410,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:256
 msgid "**Real-time lighting:**"
-msgstr "**نورپردازیِ بلادرنگ:**"
+msgstr "**نورپردازیِ بی‌درنگ:**"
 
 #: ../../docs/about/list_of_features.rst:258
 #, fuzzy
@@ -1637,9 +1646,9 @@ msgid ""
 "decals)."
 msgstr ""
 ":ref:`Screen-space indirect lighting (SSIL) "
-"<doc_environment_and_post_processing_ssil>`- در وضوح نیمه یا کامل قابل "
-"استفاده است. کاملاً بلادرنگ بوده و از هر نوع منبع نور گسیلنده پشتیبانی می‌کند "
-"(از جمله دیکال‌ها)."
+"<doc_environment_and_post_processing_ssil>`- در وضوح نیمه یا کامل کاربردپذیر "
+"است. کاملاً بی‌درنگ بوده و از هر نوع منبع نور گسیلنده پشتیبانی می‌کند (از جمله "
+"دیکال‌ها)."
 
 #: ../../docs/about/list_of_features.rst:320
 msgid ""
@@ -2188,7 +2197,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:465
 msgid ":ref:`3D geometry helper class <class_Geometry3D>`."
-msgstr ":ref:`3D geometry helper class <class_Geometry3D>`."
+msgstr ":ref:`کلاس کمکی هندسه سه‌بعدی <class_Geometry3D>`."
 
 #: ../../docs/about/list_of_features.rst:466
 msgid ""
@@ -2312,7 +2321,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:515
 msgid ":ref:`GDScript: <doc_gdscript>`"
-msgstr ":ref:`GDScript: <doc_gdscript>`"
+msgstr ":ref:`جی‌دی اسکریپت <doc_gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:517
 msgid ""
@@ -2474,7 +2483,7 @@ msgstr "پشتیبانی از ولوم (volume) و پیچ (pitch) تصادفی."
 
 #: ../../docs/about/list_of_features.rst:573
 msgid "Support for real-time pitch scaling."
-msgstr "پشتیبانی از اسکیل‌کردن پیچ (pitch) به‌صورت بلادرنگ."
+msgstr "پشتیبانی از مقیاس‌بندی پیچِ صدا به‌صورت بی‌درنگ."
 
 #: ../../docs/about/list_of_features.rst:574
 msgid ""
@@ -4311,8 +4320,8 @@ msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"شما به هر صورتی که دلتان بخواهد، چه غیرتجاری و چه تجاری، آزادانه قادر به "
-"ویرایش، توزیع، توزیع مجدد و ریمیکس گودو هستید."
+"شما آزادید که گودوت را به هر شکلی که می‌خواهید تغییر دهید، توزیع کنید، "
+"بازتوزیع کنید و بازترکیب نمایید، برای هر منظوری، چه تجاری و چه غیرتجاری."
 
 #: ../../docs/about/faq.rst:24
 msgid ""
@@ -5847,9 +5856,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:96
-#, fuzzy
 msgid "Licenses screen"
-msgstr "مجوز"
+msgstr "صفحه مجوز ها"
 
 #: ../../docs/about/complying_with_licenses.rst:98
 msgid ""
@@ -5882,7 +5890,7 @@ msgstr ""
 
 #: ../../docs/about/complying_with_licenses.rst:116
 msgid "Printed manual"
-msgstr ""
+msgstr "راهنمای چاپ شده"
 
 #: ../../docs/about/complying_with_licenses.rst:118
 msgid ""
@@ -5901,6 +5909,9 @@ msgid ""
 "license`` in your game documentation or credits would be an acceptable way "
 "to satisfy the license terms."
 msgstr ""
+"توسعه‌دهندگان موتور گودو بر این باورند که درج پیوندی به ``godotengine.org/"
+"license`` در مستندات بازی یا بخش تقدیر و تشکر، روش قابل قبولی برای رعایت "
+"شرایط مجوز خواهد بود."
 
 #: ../../docs/about/complying_with_licenses.rst:129
 msgid ""
@@ -5909,10 +5920,14 @@ msgid ""
 "license information directly from the engine binary, which prevents the "
 "information from becoming outdated if you update engine versions."
 msgstr ""
+"گودوت چندین روش برای دریافت اطلاعات مجوز در صفحه ی یکتای :ref:`Engine "
+"<class_Engine>` فراهم می‌کند. این به شما امکان می‌دهد اطلاعات مجوز را مستقیماً "
+"از فایل باینری موتور دریافت کنید، که از قدیمی شدن این اطلاعات هنگام "
+"به‌روزرسانی نسخهٔ موتور جلوگیری می‌کند."
 
 #: ../../docs/about/complying_with_licenses.rst:134
 msgid "For the engine itself:"
-msgstr ""
+msgstr "برای خود موتوربازی:"
 
 #: ../../docs/about/complying_with_licenses.rst:136
 msgid ":ref:`Engine.get_license_text<class_Engine_method_get_license_text>`"
@@ -5920,7 +5935,7 @@ msgstr ":ref:`Engine.get_license_text<class_Engine_method_get_license_text>`"
 
 #: ../../docs/about/complying_with_licenses.rst:138
 msgid "For third-party components used by the engine:"
-msgstr ""
+msgstr "برای کامپوننت‌های شخص‌ثالث استفاده شده توسط موتور بازی:"
 
 #: ../../docs/about/complying_with_licenses.rst:140
 msgid ":ref:`Engine.get_license_info<class_Engine_method_get_license_info>`"
@@ -5932,7 +5947,7 @@ msgstr ":ref:`Engine.get_copyright_info<class_Engine_method_get_copyright_info>`
 
 #: ../../docs/about/complying_with_licenses.rst:146
 msgid "Third-party licenses"
-msgstr ""
+msgstr "مجوز های شخص‌ثالث"
 
 #: ../../docs/about/complying_with_licenses.rst:148
 msgid ""
@@ -5940,6 +5955,9 @@ msgid ""
 "godotengine/godot/blob/master/thirdparty/README.md>`_, which is compatible "
 "with, but not covered by Godot's MIT license."
 msgstr ""
+"گودوت به خودی خود شامل نرم‌افزارهایی است که توسط `اشخاص ثالث <https://"
+"github.com/godotengine/godot/blob/master/thirdparty/README.md>`_ نوشته شده‌اند"
+"، که با مجوز MIT گودوت سازگار هستند اما تحت پوشش آن نیستند."
 
 #: ../../docs/about/complying_with_licenses.rst:152
 msgid ""
@@ -5947,6 +5965,9 @@ msgid ""
 "licenses which require attribution by explicitly citing their copyright "
 "statement and license text in the final product's documentation."
 msgstr ""
+"بسیاری از این وابستگی‌ها تحت مجوزهای متن‌باز سهل‌گیرانه‌ای توزیع شده‌اند که "
+"مستلزم آن اند که صراحتا بیانیهٔ حق تکثیر و متن مجوزشان، در مستندات محصول "
+"نهایی ذکر شود."
 
 #: ../../docs/about/complying_with_licenses.rst:156
 msgid ""
@@ -5955,14 +5976,23 @@ msgid ""
 "copyrights and licenses is provided in the `COPYRIGHT.txt <https://"
 "github.com/godotengine/godot/blob/master/COPYRIGHT.txt>`_ file."
 msgstr ""
+"با توجه به گستردگی پروژهٔ گودوت، انجام این کار به‌طور کامل، نسبتاً دشوار است. "
+"برای ویرایشگر گودوت، مستندات کامل حق تکثیر و مجوزهای اشخاص ثالث در پروندهٔ "
+"`COPYRIGHT.txt <https://github.com/godotengine/godot/blob/master/"
+"COPYRIGHT.txt>`_ ارائه شده است."
 
 #: ../../docs/about/complying_with_licenses.rst:161
+#, fuzzy
 msgid ""
 "A good option for end users to document third-party licenses is to include "
 "this file in your project's distribution, which you can e.g. rename to "
 "``GODOT_COPYRIGHT.txt`` to prevent any confusion with your own code and "
 "assets."
 msgstr ""
+"گزینهٔ مناسبی برای کاربران نهایی جهت مستندسازی مجوزهای اشخاص ثالث این است که "
+"این پرونده را در توزیع پروژهٔ خود بگنجانند، که می‌توانید مثلاً نام آنرا به "
+"``GODOT_COPYRIGHT.txt`` تغییر دهید تا از هرگونه سردرگمی با کدها و asset های "
+"خودتان جلوگیری کنید."
 
 #: ../../docs/about/release_policy.rst:6
 msgid "Godot release policy"
@@ -7463,7 +7493,7 @@ msgstr "سری هندسه رویه:"
 
 #: ../../docs/about/docs_changelog.rst:468
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr ":ref:`Procedural geometry <toc-procedural_geometry>`"
+msgstr ":ref:`هندسه رویه ای <toc-procedural_geometry>`"
 
 #: ../../docs/about/docs_changelog.rst:469
 msgid ":ref:`doc_arraymesh`"
@@ -9008,11 +9038,11 @@ msgid ""
 "update as well. It helps you build your projects so that their structure "
 "matches the game's design."
 msgstr ""
-"از پِری‌فب‌هایی که در چندین موتور سه‌بعدی خواهید یافت متفاوت است، چنان که "
-"می‌توانید پس از آن، آن صحنه‌ها را ارث ببرید. شاید جادوگری بسازید که از شخصیت "
-"شما ارث می‌برد. شخصیت را درون ویراستار دگرگون کنید تا جادوگر نیز به روز برسد. "
-"به شما کمک می‌کند تا به گونه‌ای پروژهٔ خود را بسازید تا ساختارشان با طراحی بازی "
-"مطابقت داشته باشد."
+"این با پِری‌فب‌هایی که در بسیاری از موتورهای سه‌بعدی می‌بینید تفاوت دارد، چون "
+"می‌توانید از آن صحنه‌ها ارث‌بری کنید و آن‌ها را گسترش دهید. می‌توانید یک جادوگر "
+"بسازید که از شخصیت شما ارث‌بری می‌کند. شخصیت را در ویرایشگر تغییر دهید، جادوگر "
+"هم به‌طور خودکار به‌روز می‌شود. این ویژگی کمک می‌کند پروژه‌هایتان را طوری بسازید "
+"که ساختارشان با طراحی بازی هماهنگ باشد."
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:50
 #: ../../docs/getting_started/first_2d_game/index.rst:12
@@ -16967,7 +16997,7 @@ msgstr "چندین دلیل برای اینکار وجود دارد:"
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:87
 msgid ":ref:`Custom Types <doc_making_plugins>`"
-msgstr ":ref:`Custom Types <doc_making_plugins>`"
+msgstr ":ref:`انواع سفارشی <doc_making_plugins>`"
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:89
 msgid "Editor-only. Typenames are not accessible at runtime."
@@ -17006,7 +17036,7 @@ msgstr ""
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:104
 msgid ":ref:`Script Classes <doc_gdscript_basics_class_name>`"
-msgstr ":ref:`Script Classes <doc_gdscript_basics_class_name>`"
+msgstr ":ref:`كلاس های اسکریپت <doc_gdscript_basics_class_name>`"
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:106
 msgid "Editor and runtime accessible."
@@ -20194,9 +20224,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/script_editor.rst:4
-#, fuzzy
 msgid "Script Editor"
-msgstr "ویراستار اسکریپت"
+msgstr "ویرایشگر اسکریپت"
 
 #: ../../docs/tutorials/editor/script_editor.rst:11
 msgid ""
@@ -20328,6 +20357,16 @@ msgid ""
 "the current position of the caret in terms of line and column, and whether "
 "the indentation is done using tabs, or spaces."
 msgstr ""
+"در زیر منوها در سمت چپ، پنل اسکریپت را می‌بینید. در مرکز، در کنار پنل اسکریپت"
+"، ناحیهٔ کدنویسی قرار دارد. در پایین ناحیهٔ کدنویسی، نوار وضعیت است که تعداد "
+"خطاها و هشدارهای کد را نمایش می‌دهد. کلیک روی نمادهای خطا یا هشدار، فهرست "
+"خطاها را به همراه شماره خطوط نشان می‌دهد. با کلیک روی هر یک از آن‌ها به آن خط "
+"پرش می‌کنید. همچنین می‌توانید با باز کردن فهرست و کلیک روی ``Ignore`` از "
+"هشدارها چشم‌پوشی کنید. نوار وضعیت همچنین به شما امکان می‌دهد با کلیک روی درصد "
+"نمایش‌داده‌شده، بزرگنمایی کد را تغییر دهید. همچنین می‌توانید از :kbd:`Ctrl + "
+"Mouse Wheel` (در مک :kbd:`Cmd + Mouse Wheel`) برای همین اثر استفاده کنید. "
+"نوار وضعیت موقعیت فعلی نشانگر را از نظر شماره خط و ستون نشان می‌دهد و مشخص "
+"می‌کند که تورفتگی با استفاده از تب انجام شده است یا فاصله."
 
 #: ../../docs/tutorials/editor/script_editor.rst:94
 msgid ""
@@ -29048,7 +29087,7 @@ msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:566
 msgid ":ref:`Built in matrix variables were renamed. <doc_spatial_shader>`"
-msgstr ":ref:`Built in matrix variables were renamed. <doc_spatial_shader>`"
+msgstr ":ref:`نام متغیر های ماتریکس پیش‌ساخته تغییر کرد. <doc_spatial_shader>`"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:567
 msgid ""
@@ -34868,6 +34907,16 @@ msgid ""
 "center of selected nodes. If any of the snap options are enabled, the pivot "
 "will also snap to them when dragged."
 msgstr ""
+"**محور چرخش**: محور چرخشی را تعیین می‌کند که گره(ها) حول آن بچرخند. یک گرهٔ "
+"اضافه‌شده به‌طور پیش‌فرض محور چرخش خود را در ``x: 0``, ``y: 0`` دارد، به جز "
+"موارد استثنا. برای مثال، محور پیش‌فرض یک :ref:`Sprite2D <class_Sprite2D>` در "
+"مرکزش قرار دارد اگر ویژگی ``centered`` روی ``true`` تنظیم شده باشد. اگر "
+"می‌خواهید محور چرخش یک گره را تغییر دهید، روی این دکمه کلیک کرده و با کلیک چپ "
+"مکان جدیدی انتخاب کنید. گره با در نظر گرفتن این نقطه می‌چرخد. اگر چندین گره "
+"انتخاب کرده باشید، این آیکن یک محور موقت اضافه می‌کند که به‌طور مشترک توسط همهٔ "
+"گره‌های انتخاب‌شده استفاده می‌شود. فشردن :kbd:`Shift` و کلیک روی این دکمه، محور "
+"را در مرکز گره‌های انتخاب‌شده ایجاد می‌کند. اگر هر یک از گزینه‌های چسبیدن فعال "
+"باشند، محور هنگام کشیدن به آن‌ها خواهد چسبید."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:88
 msgid ""
@@ -37007,6 +37056,15 @@ msgid ""
 "change a property over the particle lifetime. Very complex behavior can be "
 "expressed this way."
 msgstr ""
+"ویژگی‌های این متریال نحوهٔ رفتار و تغییر ذرات را در طول عمرشان کنترل می‌کنند. "
+"بسیاری از آن‌ها دارای مقادیر ``Min``، ``Max`` و ``Curve`` هستند که به شما "
+"امکان تنظیم دقیق رفتارشان را می‌دهند. رابطهٔ بین این مقادیر به این صورت است: "
+"هنگامی که یک ذره تولید می‌شود، ویژگی با یک مقدار تصادفی بین ``Min`` و ``Max`` "
+"تنظیم می‌گردد. اگر ``Min`` و ``Max`` برابر باشند، مقدار برای هر ذره همیشه "
+"یکسان خواهد بود. اگر ``Curve`` نیز تنظیم شده باشد، مقدار ویژگی در هر لحظه از "
+"عمر ذره در مقدار منحنی در آن نقطه ضرب می‌شود. از منحنی برای تغییر یک ویژگی در "
+"طول عمر ذره استفاده کنید. رفتارهای بسیار پیچیده را می‌توان به این شکل بیان "
+"کرد."
 
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:25
 msgid ""
@@ -44207,7 +44265,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:673
 msgid "Repeat"
-msgstr "Repeat"
+msgstr "تکرار"
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:675
 msgid ""
@@ -44930,6 +44988,16 @@ msgid ""
 "understanding this behavior is important for optimizing your scene and "
 "managing performance expectations."
 msgstr ""
+"برای رفع این مشکل، تکنیکی با نام *نقشه‌های سایه با تقسیم موازی* (PSSM) "
+"استفاده می‌شود. در این روش، مخروط دید به ۲ یا ۴ ناحیه تقسیم می‌شود. هر ناحیه "
+"نقشهٔ سایهٔ مخصوص به خود را دارد. این کار باعث می‌شود که نواحی کوچک نزدیک به "
+"بیننده، وضوح سایه‌ای برابر با نواحی بزرگ دوردست داشته باشند. وقتی سایه‌ها برای "
+"DirectionalLight3D فعال باشند، حالت پیش‌فرض سایه، PSSM با ۴ تقسیم است. در "
+"شرایطی که یک شیء به اندازه‌ای بزرگ باشد که در هر چهار تقسیم دیده شود، "
+"فراخوانی‌های ترسیم افزایش می‌یابد. به‌طور دقیق‌تر، چنین شیئی مجموعاً پنج بار رندر "
+"می‌شود: یک بار برای هر یک از چهار تقسیم سایه، و یک بار برای رندر نهایی صحنه. "
+"این موضوع می‌تواند بر عملکرد تأثیر بگذارد، و دانستن این رفتار برای بهینه‌سازی "
+"صحنه و مدیریت انتظارات عملکردی اهمیت دارد."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:225
 msgid "With this, shadows become more detailed:"
@@ -46973,6 +47041,15 @@ msgid ""
 "system is preprocessed for ``4`` seconds. The dust is fully visible from the "
 "very beginning because we skipped the first four seconds of \"setup\" time."
 msgstr ""
+"این می‌تواند زمانی مفید باشد که بخواهید سیستم ذرات به‌گونه‌ای به نظر برسد که "
+"انگار برای مدتی فعال بوده است، حتی اگر به‌تازگی در صحنه بارگذاری شده باشد. "
+"مثال زیر را در نظر بگیرید. هر دو سیستم ذرات، گردوغباری را که در محیط پخش "
+"می‌شود شبیه‌سازی می‌کنند. با مقدار پیش‌پردازش ``0``، در چند ثانیهٔ اول هیچ "
+"گردوغباری وجود نخواهد داشت، زیرا سیستم هنوز به اندازهٔ کافی ذرات برای محسوس "
+"شدن افکت منتشر نکرده است. این موضوع در ویدیوی سمت چپ قابل مشاهده است. آن را "
+"با ویدیوی سمت راست مقایسه کنید که در آن سیستم ذرات به مدت ``4`` ثانیه "
+"پیش‌پردازش شده است. گردوغبار از همان ابتدا کاملاً قابل مشاهده است، زیرا ما چهار "
+"ثانیهٔ اول زمان «راه‌اندازی» را رد کرده‌ایم."
 
 #: ../../docs/tutorials/3d/particles/properties.rst:75
 msgid "No preprocess (left) vs. 4 seconds of preprocess (right)"
@@ -49323,9 +49400,8 @@ msgid "Introduction to global illumination"
 msgstr "معرفی"
 
 #: ../../docs/tutorials/3d/global_illumination/introduction_to_global_illumination.rst:7
-#, fuzzy
 msgid "What is global illumination?"
-msgstr "درباره مستندات"
+msgstr "توهم سراسری چیست؟"
 
 #: ../../docs/tutorials/3d/global_illumination/introduction_to_global_illumination.rst:9
 msgid ""
@@ -69402,6 +69478,17 @@ msgid ""
 "version. Prism emulation is far from perfect, and Godot does not require you "
 "to build or design your game in any special way to run on ARM."
 msgstr ""
+"پردازنده‌های arm64 مدرن هستند اما در مقایسه با x86_64 کمتر رایج‌اند و ویندوز "
+"روی ARM را اجرا می‌کنند. Snapdragon X Elite نمونه‌ای از یک پردازندهٔ مدرن "
+"Windows ARM است. استفاده از این گزینهٔ خروجی به پروژهٔ شما امکان می‌دهد به‌طور "
+"بومی روی پردازنده‌های ARM، بدون شبیه‌ساز Prism مایکروسافت اجرا شود. فایل‌های "
+"اجرایی ساخته‌شده با این گزینه روی ویندوز معمولی با پردازندهٔ x86_64 اجرا "
+"**نخواهند شد**. اگر پروژهٔ خود را روی پلتفرمی آپلود می‌کنید که امکان ارائهٔ "
+"چندین فایل اجرایی را می‌دهد (مانند itch.io) و اطمینان دارید که پردازندهٔ "
+"Snapdragon X Elite به اندازهٔ کافی قدرتمند هست تا آن را اجرا کند، توصیه "
+"می‌کنیم نسخهٔ ARM را نیز ارائه دهید. شبیه‌سازی Prism به هیچ وجه بی‌نقص نیست، و "
+"گودو نیازی ندارد که بازی خود را به روش خاصی بسازید یا طراحی کنید تا روی ARM "
+"اجرا شود."
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:51
 #, fuzzy
@@ -74645,7 +74732,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:192
 msgid "6: :ref:`Rect2<class_rect2>`"
-msgstr "6: :ref:`Rect2<class_rect2>`"
+msgstr "۶: :ref:`Rect2<class_rect2>`"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:201
 #: ../../docs/tutorials/io/binary_serialization_api.rst:280
@@ -74669,7 +74756,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:220
 msgid "8: :ref:`Transform2D<class_transform2d>`"
-msgstr "8: :ref:`Transform2D<class_transform2d>`"
+msgstr "۸: :ref:`Transform2D<class_transform2d>`"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:225
 #: ../../docs/tutorials/io/binary_serialization_api.rst:293
@@ -74705,7 +74792,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:239
 msgid "9: :ref:`Plane<class_plane>`"
-msgstr "9: :ref:`Plane<class_plane>`"
+msgstr "۹: :ref:`Plane<class_plane>`"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:244
 msgid "Normal X"
@@ -74753,7 +74840,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:288
 msgid "12: :ref:`Basis<class_basis>`"
-msgstr "12: :ref:`Basis<class_basis>`"
+msgstr "۱۲: :ref:`Basis<class_basis>`"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:297
 #: ../../docs/tutorials/io/binary_serialization_api.rst:322
@@ -75859,7 +75946,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:50
 msgid "こんにちは"
-msgstr "こんにちは"
+msgstr "こんにちは(سلام)"
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:52
 msgid "ASK"
@@ -75875,7 +75962,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:52
 msgid "元気ですか"
-msgstr "元気ですか"
+msgstr "元気ですか(حالت چطوره)"
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:54
 msgid "BYE"
@@ -75887,11 +75974,11 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:54
 msgid "Adiós"
-msgstr "Adiós"
+msgstr "Adiós(خداحافظ)"
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:54
 msgid "さようなら"
-msgstr "さようなら"
+msgstr "さようなら(خداحافظ)"
 
 #: ../../docs/tutorials/i18n/localization_using_spreadsheets.rst:56
 msgid "QUOTE"
@@ -86231,6 +86318,16 @@ msgid ""
 "dead zone value is high enough to ignore the input caused by joystick "
 "drifting, but is low enough to not ignore actual input from the player."
 msgstr ""
+"بیایید یک بازی مسابقه‌ای را به عنوان یک مثال واقعی در نظر بگیریم. به لطف "
+"ورودی‌های آنالوگ، می‌توانیم خودرو را به آرامی در یک جهت یا جهت دیگر هدایت "
+"کنیم. با این حال، بدون یک سیستم منطقهٔ مرده، خودرو حتی اگر بازیکن جوی‌استیک را "
+"لمس نکند، به آرامی خودبه‌خود منحرف می‌شود. دلیلش این است که شدت محور جهتی وقتی "
+"انتظار داریم برابر با ``0.0`` باشد، نخواهد بود. از آنجایی که در این حالت "
+"نمی‌خواهیم خودرویمان خودبه‌خود منحرف شود، یک مقدار «منطقهٔ مرده» به اندازهٔ "
+"``0.2`` تعریف می‌کنیم که تمام ورودی‌هایی که شدتشان کمتر از ``0.2`` است را "
+"نادیده می‌گیرد. یک مقدار ایده‌آل برای منطقهٔ مرده به اندازه‌ای بالا هست که ورودی "
+"ناشی از دریفت جوی‌استیک را نادیده بگیرد، اما به اندازه‌ای پایین هست که ورودی "
+"واقعی بازیکن را نادیده نگیرد."
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:202
 msgid ""
@@ -92357,6 +92454,16 @@ msgid ""
 "might be even worse and the mesh parsing might freeze the entire game for a "
 "few seconds on complex meshes."
 msgstr ""
+"ترجیح دهید از اشکال سادهٔ برخورد فیزیکی به‌جای مش‌های بصری، به‌عنوان هندسهٔ منبع "
+"برای پخت مش‌های ناوبری استفاده کنید. اشکال فیزیکی به‌طور پیش‌فرض بسیار محدود و "
+"بهینه‌شده هستند و تجزیهٔ آن‌ها آسان و سریع است. در مقابل، یک مش بصری می‌تواند از "
+"ساده تا پیچیده متغیر باشد. علاوه بر این، برای دسترسی به داده‌های مش بصری، "
+"تجزیه‌گر نیاز دارد آرایه‌های دادهٔ مش را از RenderingServer درخواست کند، زیرا "
+"داده‌های مش بصری مستقیماً روی GPU ذخیره می‌شوند و روی CPU کش نمی‌شوند. این کار "
+"مستلزم قفل کردن نخ RenderingServer است و می‌تواند نرخ فریم را در زمان اجرا، "
+"در حالی که رندرینگ به‌صورت چندنخی اجرا می‌شود، به‌شدت تحت تأثیر قرار دهد. اگر "
+"رندرینگ به‌صورت تک‌نخی اجرا شود، تأثیر بر نرخ فریم ممکن است حتی بدتر باشد و "
+"تجزیهٔ مش‌های پیچیده می‌تواند کل بازی را برای چند ثانیه منجمد کند."
 
 #: ../../docs/tutorials/navigation/navigation_optimizing_performance.rst:38
 msgid "Performance problems with navigation mesh baking"
@@ -92411,6 +92518,18 @@ msgid ""
 "monotone or layers mode that are a lot faster to bake (e.g. because they "
 "require no distance field pass)."
 msgstr ""
+"پیچیدگی داده‌های هندسهٔ منبع که از گره‌های درخت صحنه استخراج می‌شوند، تأثیر "
+"زیادی بر عملکرد پخت دارد، زیرا همه چیز باید به یک شبکه/وکسل نگاشت شود. برای "
+"عملکرد پخت در زمان اجرا، اندازهٔ سلول و ارتفاع سلول NavigationMesh باید تا حد "
+"ممکن بزرگ در نظر گرفته شوند، بدون آنکه مشکلی در کیفیت مش ناوبری برای بازی "
+"ایجاد شود. اگر اندازهٔ سلول یا ارتفاع سلول خیلی کم تنظیم شود، فرایند پخت "
+"مجبور می‌شود تعداد زیادی وکسل برای پردازش هندسهٔ منبع ایجاد کند. اگر هندسهٔ "
+"منبع یک دنیای بازی بسیار بزرگ را پوشش دهد، حتی ممکن است فرایند پخت در میانهٔ "
+"کار با کمبود حافظه مواجه شود و بازی را دچار فروپاشی کند. بسته به میزان "
+"پیچیدگی هندسهٔ منبع بازی، می‌توان نوع پارتیشن را نیز کاهش داد تا عملکرد بهتری "
+"به‌دست آید. برای مثال، بازی‌هایی که سطوح غالباً تخت و هندسهٔ بلوکی دارند، "
+"می‌توانند با حالت monotone یا layers کار کنند که پخت بسیار سریع‌تری دارند "
+"(زیرا مثلاً نیازی به مرحلهٔ میدان فاصله ندارند)."
 
 #: ../../docs/tutorials/navigation/navigation_optimizing_performance.rst:60
 msgid ""
@@ -94715,6 +94834,17 @@ msgid ""
 "slowly load in some data. This delay can result in the CPU sitting around "
 "idle for a long time, and is referred to as a \"cache miss\"."
 msgstr ""
+"حافظه‌های کش CPU نکته دیگری هستند که باید به آن توجه ویژه داشت، به‌ویژه هنگام "
+"مقایسه نتایج زمان‌بندی دو نسخه متفاوت از یک تابع. نتایج می‌توانند به‌شدت وابسته "
+"به این باشند که آیا داده در کش CPU قرار دارد یا خیر. پردازنده‌ها داده را "
+"مستقیماً از RAM سیستم بارگیری نمی‌کنند، حتی اگر حجم آن در مقایسه با کش CPU "
+"بسیار بزرگتر باشد (چندین گیگابایت به جای چند مگابایت). دلیل آن این است که "
+"دسترسی به RAM سیستم بسیار کند است. در عوض، پردازنده‌ها داده را از یک بانک "
+"حافظه کوچکتر و سریعتر به نام کش بارگیری می‌کنند. بارگیری داده از کش بسیار "
+"سریع است، اما هر بار که سعی کنید آدرسی از حافظه را که در کش ذخیره نشده است "
+"بارگیری کنید، کش مجبور است به حافظه اصلی مراجعه کند و مقداری داده را به‌کندی "
+"بارگیری کند. این تأخیر می‌تواند باعث شود پردازنده برای مدت طولانی بیکار بماند، "
+"و به آن 'خطای کش' (cache miss) گفته می‌شود."
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:141
 msgid ""
@@ -95589,6 +95719,15 @@ msgid ""
 "unable to experience them yourself without deleting your driver cache or "
 "testing on a weaker system."
 msgstr ""
+"اشکال‌زدای گودو مانیتورهایی برای ردیابی تعداد خطوط لولهٔ ایجادشده توسط بازی و "
+"مرحله‌ای که کامپایل آن‌ها را آغاز کرده است ارائه می‌دهد. می‌توانید هنگام اجرای "
+"بازی این مانیتورها را زیر نظر داشته باشید تا منابع احتمالی لکنت‌های شیدر را "
+"شناسایی کنید، بدون اینکه نیازی باشد هر بار که قصد آزمایش دارید کش درایور خود "
+"را پاک کنید. افزایش ناگهانی این مقادیر در خارج از صفحات بارگذاری می‌تواند "
+"به‌صورت مکث‌هایی در حین بازی، اولین باری که شخصی بازی را روی سیستم خود اجرا "
+"می‌کند، ظاهر شود. **توصیه می‌شود نگاهی به این مانیتورها بیندازید تا منابع "
+"احتمالی لکنت را برای بازیکنان خود شناسایی کنید**، زیرا ممکن است خودتان بدون "
+"پاک کردن کش درایور یا آزمایش روی یک سیستم ضعیف‌تر قادر به تجربهٔ آن‌ها نباشید."
 
 #: ../../docs/tutorials/performance/pipeline_compilations.rst:101
 msgid "Screenshot of the Godot pipeline compilations monitor"
@@ -107109,6 +107248,18 @@ msgid ""
 "restriction does not apply to static methods, which can be called regardless "
 "of whether the target script is in tool mode."
 msgstr ""
+"قانون کلی این است که **هر GDScript دیگری که اسکریپت ابزار شما استفاده می‌کند، "
+"باید *همچنین* یک ابزار باشد**. ویرایشگر قادر به ساختن نمونه‌هایی از فایل‌های "
+"GDScript بدون ``@tool`` نیست، به این معنی که در غیر این صورت نمی‌توانید متدها "
+"را فراخوانی کنید یا به متغیرهای عضو از آن‌ها ارجاع دهید. با این حال، از "
+"آنجایی که متدهای استاتیک، ثابت‌ها و enumها می‌توانند بدون ایجاد یک نمونه "
+"استفاده شوند، می‌توان آن‌ها را از یک اسکریپت دارای ``@tool`` بر روی اسکریپت‌های "
+"غیر ابزاری دیگر فراخوانی کرد یا به آن‌ها ارجاع داد. یک استثنا برای این مورد "
+":ref:`متغیرهای استاتیک <doc_gdscript_basics_static_variables>` هستند. اگر "
+"سعی کنید مقدار یک متغیر استاتیک را در اسکریپتی که ``@tool`` ندارد بخوانید، "
+"همیشه ``null`` بازگردانده می‌شود اما هنگام انجام این کار اخطار یا خطایی چاپ "
+"نمی‌کند. این محدودیت برای متدهای استاتیک اعمال نمی‌شود، که می‌توانند صرف‌نظر از "
+"اینکه اسکریپت هدف در حالت ابزار است یا خیر فراخوانی شوند."
 
 #: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:125
 msgid ""
@@ -109137,13 +109288,12 @@ msgid "Common use case scenarios"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:377
-#, fuzzy
 msgid ""
 "The following settings are recommended to support multiple resolutions and "
 "aspect ratios well."
 msgstr ""
-"چگونه باید دارایی یا (assets) ایجاد شود تا چندین رزولیشن و نسبت ابعاد را "
-"کنترل کند؟"
+"برای پشتیبانی مناسب از وضوح‌ها و نسبت‌های تصویر گوناگون، تنظیمات زیر توصیه "
+"می‌شود."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:381
 msgid "Desktop game"
@@ -109832,6 +109982,17 @@ msgid ""
 "buffered V-Sync is only recommended if you can *consistently* reach the "
 "display refresh rate on the target hardware."
 msgstr ""
+"هنگام استفاده از روش‌های رندر Forward+ یا Mobile، راه دیگر برای کاهش تأخیر "
+"بصری هنگام فعال بودن V-Sync، استفاده از V-Sync دو میان‌گیره به جای V-Sync سه "
+"میان‌گیرهٔ پیش‌فرض است. از Godot 4.3 به بعد، این کار با کاهش تنظیمات پروژهٔ "
+"**Display > Window > V-Sync > Swapchain Image Count** به ``2`` قابل انجام "
+"است.  نقطه ضعف استفاده از دو میان‌گیره این است که اگر به دلیل گلوگاه CPU یا "
+"GPU نتوان به نرخ تازه‌سازی نمایشگر رسید، نرخ فریم ناپایدارتر خواهد بود. برای "
+"مثال، روی یک نمایشگر 60 هرتز، اگر نرخ فریم در حالت عادی با سه میان‌گیره به 55 "
+"فریم بر ثانیه افت کند، با دو میان‌گیره ناچار خواهد بود لحظه‌ای به 30 فریم بر "
+"ثانیه سقوط کند (و سپس در صورت امکان دوباره به 60 فریم بر ثانیه بازگردد). در "
+"نتیجه، V-Sync دو میان‌گیره تنها زمانی توصیه می‌شود که بتوانید *به‌طور پیوسته* "
+"به نرخ تازه‌سازی نمایشگر روی سخت‌افزار هدف دست یابید."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:214
 msgid ""
@@ -110544,6 +110705,18 @@ msgid ""
 "`HDR and User Interfaces <https://android-developers.googleblog.com/2025/09/"
 "hdr-and-user-interfaces.html>`__ post of the Android Developers Blog."
 msgstr ""
+"بهتر است از این :ref:`حداکثر مقدار خطی "
+"خروجی<class_Window_method_get_output_max_linear_value>` برای «هایلایت‌ها» و "
+"جلوه‌های ویژه‌ای استفاده کنید که یا کوتاه‌مدت هستند یا بخش کوچکی از صفحه را در "
+"بر می‌گیرند؛ اگر بخش عمدهٔ صفحه برای بیش از مدت کوتاهی در این حداکثر روشنایی "
+"نمایش داده شود، بازی را به‌طور ناخوشایندی روشن نشان می‌دهد، گویی که بازی "
+"تنظیمات روشنایی دستگاه را نادیده می‌گیرد. همچنین ممکن است متوجه شوید که برخی "
+"افکت‌ها زمانی بهترین ظاهر را دارند که به حداکثر مقدار خطی بزرگ‌تر از ``1.0`` "
+"اما کمتر از :ref:`حداکثر مقدار خطی "
+"خروجی<class_Window_method_get_output_max_linear_value>` محدود شوند. می‌توانید "
+"اطلاعات بیشتری در مورد اینکه چرا گاهی مطلوب است حداکثر مقدار HDR محدود شود را "
+"در پست `HDR و رابط‌های کاربری <https://android-developers.googleblog.com/2025/"
+"09/hdr-and-user-interfaces.html>`__ وبلاگ توسعه‌دهندگان اندروید مطالعه کنید."
 
 #: ../../docs/tutorials/rendering/hdr_output.rst:147
 msgid ""
@@ -110803,13 +110976,26 @@ msgid ""
 "dark or saturated colors differently than others; this difference in "
 "appearance is often the result of the screen technologies."
 msgstr ""
+"در عمل، این بدان معناست که صفحه‌نمایش‌های رایج HDR ممکن است عملیات تن‌مپینگ، "
+"نگاشت گاموت یا تن‌مپینگ پویا (DTM) داخلی خود را برای پشتیبانی از محتوایی "
+"انجام دهند که گسترهٔ گاموت و درخشندگی آن فراتر از آن چیزی است که سخت‌افزار "
+"فیزیکی می‌تواند به آن دست یابد. برخی صفحه‌نمایش‌ها قادر به نمایش مقادیر رنگ "
+"بسیار روشنی که بیش از بخش کوچکی (۱٪ تا ۱۰٪) از صفحه را پر می‌کنند نیستند و "
+"هنگامی که این اتفاق رخ دهد، کل تصویر یا بخشی از آن را به‌طور موقت کم‌نور "
+"می‌کنند. این ویژگی‌ها ممکن است رنگ‌هایی تولید کنند که معرف دیگر صفحه‌نمایش‌ها "
+"نباشند، بنابراین بهتر است در هنگام توسعهٔ بازی HDR خود، در صورت امکان آن‌ها را "
+"غیرفعال کنید. ممکن است بتوانید با فعال کردن حالت HGiG روی صفحه‌نمایش یا تنظیم "
+"حالت صفحه‌نمایش روی \"clip\" و/یا \"stable\"، برخی یا همهٔ این ویژگی‌ها را "
+"غیرفعال کنید. برخی صفحه‌نمایش‌های HDR ممکن است رنگ‌های تیره یا اشباع را متفاوت "
+"از دیگران نمایش دهند؛ این تفاوت در ظاهر اغلب ناشی از فناوری‌های صفحه‌نمایش است."
 
 #: ../../docs/tutorials/scripting/index.rst:6
-#, fuzzy
 msgid ""
 "This section covers programming languages and core features to code your "
 "games in Godot."
-msgstr "از کدام زبان‌های برنامه نویسی در گودوت پشتیبانی می‌شود؟"
+msgstr ""
+"این بخش به زبان‌های برنامه‌نویسی و ویژگی‌های اصلی برای کدنویسی بازی‌هایتان در "
+"گودوت می‌پردازد."
 
 #: ../../docs/tutorials/scripting/index.rst:9
 msgid ""
@@ -112442,6 +112628,17 @@ msgid ""
 "as it may yield better performance in iteration and modification compared to "
 "an untyped Array."
 msgstr ""
+"در حالی که همهٔ آرایه‌ها در صورت بزرگ شدن کافی می‌توانند باعث قطعه‌قطعه شدن "
+"حافظه شوند، اگر میزان مصرف حافظه و عملکرد (سرعت پیمایش و تغییر) برایتان "
+"اهمیت دارد و نوع داده‌ای که ذخیره می‌کنید با یکی از انواع آرایهٔ ``Packed`` "
+"سازگار است، استفاده از آن‌ها ممکن است بهبودهایی به همراه داشته باشد. با این "
+"حال، اگر چنین نگرانی‌هایی ندارید (مثلاً اندازهٔ آرایهٔ شما به ده‌ها هزار عنصر "
+"نمی‌رسد)، احتمالاً استفاده از آرایه‌های معمولی یا نوع‌دار مفیدتر خواهد بود، زیرا "
+"آن‌ها متدهای کاربردی‌ای فراهم می‌کنند که نوشتن و نگهداری کد را آسان‌تر می‌سازند "
+"(و اگر داده‌هایتان به دفعات به چنین عملیات‌هایی نیاز داشته باشند، حتی می‌توانند "
+"سریع‌تر باشند). اگر داده‌ای که ذخیره خواهید کرد از نوع مشخصی است (از جمله "
+"کلاس‌های تعریف‌شدهٔ خودتان)، ترجیحاً از آرایهٔ نوع‌دار استفاده کنید، زیرا ممکن است "
+"عملکرد بهتری در پیمایش و تغییر نسبت به آرایهٔ بدون نوع ارائه دهد."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:933
 msgid ""
@@ -118617,9 +118814,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:104
-#, fuzzy
 msgid "In Visual Studio Code:"
-msgstr "تولید محتوا"
+msgstr "در ویژوال استودیو کد:"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:106
 msgid ""
@@ -118711,6 +118907,18 @@ msgid ""
 "arrow on the debug profile dropdown, and select your new launch profile. Hit "
 "the green start button, and your game will begin playing in debug mode."
 msgstr ""
+"برای اشکال‌زدایی اسکریپت‌های #C خود با استفاده از Visual Studio، فایل `sln.` "
+"را که پس از باز کردن اولین اسکریپت #C در ویرایشگر تولید می‌شود باز کنید. در "
+"منوی **Debug**، به گزینهٔ **Debug Properties** برای پروژهٔ خود بروید. روی دکمهٔ "
+"**Create a new profile** کلیک کرده و **Executable** را انتخاب کنید. در قسمت "
+"**Executable**، مسیر نسخهٔ #C ویرایشگر Godot را جستجو کرده و وارد کنید، یا "
+"اگر یک متغیر محیطی برای مسیر اجرایی Godot ساخته‌اید، ``%GODOT4%`` را تایپ "
+"کنید. این مسیر باید به فایل اجرایی اصلی Godot اشاره کند، نه نسخهٔ 'console'. "
+"برای **Working Directory**، یک نقطه (``.``) به معنای دایرکتوری جاری تایپ "
+"کنید. همچنین تیک **Enable native code debugging** را بزنید. حالا می‌توانید این "
+"پنجره را ببندید، روی فلش رو به پایین در کشوی پروفایل اشکال‌زدایی کلیک کرده و "
+"پروفایل راه‌اندازی جدید خود را انتخاب کنید. دکمهٔ سبز شروع را بزنید تا بازی "
+"شما در حالت اشکال‌زدایی اجرا شود."
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:195
 msgid "Creating a C# script"
@@ -132378,6 +132586,17 @@ msgid ""
 "is used; if not, it cuts all the corresponding code out. Therefore, you will "
 "not waste calculations on the effects that you do not use."
 msgstr ""
+"استفادهٔ استاندارد از تابع fragment برای تنظیم ویژگی‌های متریالی است که برای "
+"محاسبهٔ نورپردازی به کار می‌روند. برای مثال، شما مقادیری را برای "
+"``ROUGHNESS``، ``RIM`` یا ``TRANSMISSION`` تعیین می‌کنید که به تابع نور "
+"می‌گویند نورها چگونه به آن قطعه واکنش نشان دهند. این کار امکان کنترل یک "
+"خط‌لولهٔ سایه‌زنی پیچیده را بدون نیاز به نوشتن کد زیاد توسط کاربر فراهم می‌کند. "
+"اگر به این قابلیت درون‌ساخت نیازی ندارید، می‌توانید آن را نادیده بگیرید و تابع "
+"پردازش نور خودتان را بنویسید، و گودو آن را بهینه‌سازی خواهد کرد. برای مثال، "
+"اگر مقداری برای ``RIM`` ننویسید، گودو نورپردازی لبه را محاسبه نخواهد کرد. در "
+"حین کامپایل، گودو بررسی می‌کند که آیا ``RIM`` استفاده شده است یا خیر؛ اگر "
+"استفاده نشده باشد، تمام کد مربوط به آن را حذف می‌کند. بنابراین، محاسبات را "
+"روی افکت‌هایی که استفاده نمی‌کنید هدر نخواهید داد."
 
 #: ../../docs/tutorials/shaders/introduction_to_shaders.rst:175
 msgid "Light processor"
@@ -149066,9 +149285,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:447
-#, fuzzy
 msgid "It's possible to use a system font as a fallback font too."
-msgstr "آیا استفاده از گودو به عنوان کتابخانه امکان پذیر است؟"
+msgstr "همچنین می‌توان از یک قلم سیستمی به‌عنوان قلم جایگزین استفاده کرد."
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:450
 #, fuzzy
@@ -153543,9 +153761,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:37
-#, fuzzy
 msgid "Which Renderer to use"
-msgstr "کدام‌یک را باید بکار ببرم؟"
+msgstr "استفاده کردن از کدام رندرکننده"
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:39
 msgid ""

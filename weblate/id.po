@@ -76,13 +76,15 @@
 # Sapatekno <sapatekno@gmail.com>, 2026.
 # BOTTOMFRAGGER523 <dastancoding@gmail.com>, 2026.
 # "Oscar :D" <robloxgamingindonesia7@gmail.com>, 2026.
+# Faiz Hidayat <faiz06hidayat@gmail.com>, 2026.
+# "Ahmad E. Nugraha" <ahmaderdiansha.9a@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-06-16 21:19+0200\n"
-"PO-Revision-Date: 2026-05-26 03:27+0000\n"
-"Last-Translator: \"Oscar :D\" <robloxgamingindonesia7@gmail.com>\n"
+"PO-Revision-Date: 2026-07-16 08:01+0000\n"
+"Last-Translator: \"Ahmad E. Nugraha\" <ahmaderdiansha.9a@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -90,7 +92,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.6.dev0\n"
+"X-Generator: Weblate 2026.8.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -157,9 +159,8 @@ msgid "Class reference"
 msgstr "Referensi Kelas"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Dokumentasi Godot – cabang *4.6*"
+msgstr "Dokumentasi Godot – cabang *master*"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -221,7 +222,7 @@ msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
 msgstr ""
-"Untuk mulai membaca dokumentasi  relevan, pilih judul yang sesuai dengan "
+"Untuk mulai membaca dokumentasi relevan, pilih judul yang sesuai dengan "
 "profil Anda:"
 
 #: ../../docs/index.rst:111
@@ -445,10 +446,10 @@ msgid ""
 "consider checking them out. Otherwise, :ref:`Getting Started "
 "<doc_getting_started_intro>` is a great starting point."
 msgstr ""
-"Bagian :ref:`Tutorial dan resources <doc_community_tutorials>`berisi daftar "
-"halaman video tutorial yang dikontribusikan oleh komunitas. Jika anda lebih "
-"memilih menonton video dibandingkan membaca teks, silahkan untuk melihatnya. "
-"Jika tidak, :ref:`Memulai <sec-learn>` adalah titik awal yang bagus."
+"Halaman :ref:`Panduan dan resources <doc_community_tutorials>`berisi daftar "
+"halaman video panduan yang dikontribusikan oleh komunitas. Jika Anda suka "
+"menonton video dibanding membaca, silahkan dilihat. Jika tidak, Silahkan "
+":ref:`lanjut <doc_getting_started_intro>` ke bab pendahuluan."
 
 #: ../../docs/about/introduction.rst:38
 msgid ""
@@ -679,13 +680,12 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:25
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:24
-#, fuzzy
 msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
-"Selain itu, lihat pula `halaman lisensi di situs Godot <https://"
-"godotengine.org/license>`_."
+"Untuk informasi tentang console, lihat situs  <https://godotengine.org/"
+"consoles/>`_."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
@@ -804,6 +804,8 @@ msgid ""
 "Built-in script editor. Also supports editing text files and using custom "
 "syntax highlighters."
 msgstr ""
+"Editor skrip bawaan. Juga mendukung pengeditan berkas teks dan menggunakan "
+"penyorot sintaks kustom."
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
@@ -844,6 +846,9 @@ msgid ""
 "like :ref:`doc_profiler_tracy` and :ref:`doc_profiler_perfetto` for deeper "
 "optimization tasks."
 msgstr ""
+"Dukungan :ref:`tracing profilers <doc_tracing_profilers>` seperti "
+":ref:`doc_profiler_tracy` dan :ref:`doc_profiler_perfetto` untuk tugas "
+"optimalisasi yang lebih dalam."
 
 #: ../../docs/about/list_of_features.rst:84
 msgid ""
@@ -851,6 +856,10 @@ msgid ""
 "and provide custom functionality such as clickable buttons in the inspector, "
 "without needing to create an editor plugin."
 msgstr ""
+"Setiap skrip dapat menjalankan :ref:`di dalam editor "
+"<doc_running_code_in_the_editor>`dan menyediakan fungsionalitas kustom "
+"seperti tombol yang dapat diklik di inspektor tanpa perlu membuat plugin "
+"editor."
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Live script reloading."
@@ -898,6 +907,8 @@ msgid ""
 "Run multiple simultaneous project instances from a single editor instance "
 "(useful for client/server testing)."
 msgstr ""
+"Menjalankan beberapa instance proyek secara bersamaan dari satu editor "
+"instance."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid ""
@@ -178193,3 +178204,5 @@ msgid ""
 "`Godot Shaders: A community-driven shader library <https://godotshaders.com/"
 ">`_"
 msgstr ""
+"`Godot Shader: Pustaka shader yang dikembangkan komunitas <https://"
+"godotshaders.com/>`_"
