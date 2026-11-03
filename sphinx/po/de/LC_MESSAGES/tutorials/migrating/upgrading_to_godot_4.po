@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Upgrading from Godot 3 to Godot 4"
-msgstr "Von Godot 3 auf Godot 4 upgraden"
+msgstr "Upgrade von Godot 3 auf Godot 4"
 
 msgid "Should I upgrade to Godot 4?"
 msgstr "Sollte ich auf Godot 4 upgraden?"
@@ -181,10 +181,10 @@ msgid ""
 "using :ref:`class_Tweener` and the :ref:`class_Time` singleton in your "
 "project. These classes are both available in Godot 3.5 and later."
 msgstr ""
-"Wenn Sie für ein künftiges Upgrade auf Godot 4 gerüstet sein wollen, sollten "
-"Sie die Verwendung von :ref:`class_Tweener` und dem :ref:`class_Time`-"
-"Singleton in Ihrem Projekt in Betracht ziehen. Diese Klassen sind beide in "
-"Godot 3.5 und höher verfügbar."
+"Wenn Sie für ein künftiges Upgrade auf Godot 4 gerüstet sein möchten, "
+"sollten Sie die Verwendung von :ref:`class_Tweener` und "
+"dem :ref:`class_Time`-Singleton in Ihrem Projekt in Betracht ziehen. Diese "
+"Klassen sind beide in Godot 3.5 und höher verfügbar."
 
 msgid ""
 "This way, you won't be relying on the deprecated Tween node and OS time "
@@ -203,15 +203,15 @@ msgstr ""
 "beide Erweiterungen, aber nur ``.gdshader`` wird in Godot 4.0 unterstützt."
 
 msgid "Running the project upgrade tool"
-msgstr "Ausführen des Projekt-Upgrade-Tools"
+msgstr "Das Projekt-Upgrade-Tool ausführen"
 
 msgid ""
 "**Make a full backup of your project** before upgrading! The project upgrade "
 "tool will *not* perform any backups of the project that is being upgraded."
 msgstr ""
-"**Erstellen Sie vor dem Upgrade ein vollständiges Backup Ihres Projekts!** "
-"Das Projekt-Upgrade-Tool führt *keine* Sicherungen des zu aktualisierenden "
-"Projekts durch."
+"**Erstellen Sie vor dem Upgrade eine vollständige Sicherung Ihres Projekts!"
+"** Das Projekt-Upgrade-Tool führt *keine* Sicherungen des zu "
+"aktualisierenden Projekts durch."
 
 msgid ""
 "You can backup a project by using version control, or by copying the project "
@@ -227,13 +227,13 @@ msgid "To use the project upgrade tool:"
 msgstr "So verwenden Sie das Projekt-Upgrade-Tool:"
 
 msgid "Open the Godot 4 Project Manager."
-msgstr "Öffnen Sie den Godot 4-Projektmanager."
+msgstr "Öffnen Sie den Godot-4-Projektmanager."
 
 msgid ""
 "Import the Godot 3.x project using the **Import** button, or use the "
 "**Scan** button to find the project within a folder."
 msgstr ""
-"Importieren Sie das Godot 3.x-Projekt mit dem **Importieren**-Button, oder "
+"Importieren Sie das Godot-3.x-Projekt mit dem **Importieren**-Button, oder "
 "verwenden Sie den **Suchen**-Button, um das Projekt in einem Ordner zu "
 "finden."
 
@@ -242,7 +242,7 @@ msgid ""
 "**Edit**)."
 msgstr ""
 "Doppelklicken Sie auf das importierte Projekt (oder markieren Sie das "
-"Projekt und wählen Sie **Bearbeiten**)."
+"Projekt und wählen Sie **Bearbeiten** aus)."
 
 msgid ""
 "You will see a dialog appearing with two options: **Convert project.godot "
@@ -254,7 +254,7 @@ msgstr ""
 "Es wird ein Dialog mit zwei Optionen angezeigt: **Nur project.godot "
 "konvertieren** und **Gesamtes Projekt konvertieren**. Nachdem Sie "
 "sichergestellt haben, dass Ihr Projekt gesichert ist (siehe die obige "
-"Warnung), wählen Sie **Gesamtes Projekt konvertieren**. Die Option **Nur "
+"Warnung), wählen Sie **Gesamtes Projekt konvertieren** aus. Die Option **Nur "
 "Projekt.godot konvertieren** ist *nur* für fortgeschrittene Anwendungsfälle "
 "gedacht, für den Fall, dass das Konvertierungstool fehlschlägt."
 
@@ -272,7 +272,7 @@ msgid ""
 msgstr ""
 "Wenn die Oberfläche des Projektmanagers wieder verfügbar ist, doppelklicken "
 "Sie auf das Projekt (oder markieren Sie das Projekt und wählen Sie "
-"**Bearbeiten**), um es im Editor zu öffnen."
+"**Bearbeiten**) aus, um es im Editor zu öffnen."
 
 msgid ""
 "If you hit conversion issues due to some project files being too large or "
@@ -285,7 +285,7 @@ msgstr ""
 "Konverters außer Kraft setzen."
 
 msgid "Using the command line"
-msgstr "Verwendung der Kommandozeile"
+msgstr "Die Kommandozeile verwenden"
 
 msgid ""
 "To use the project upgrade tool from the :ref:`command line "
@@ -347,7 +347,7 @@ msgstr ""
 "der stable Version 3.x ist, bevor Sie das Projekt-Upgrade-Tool ausführen."
 
 msgid "Fixing the project after running the project upgrade tool"
-msgstr "Reparieren des Projekts nach Ausführung des Projekt-Upgrade-Tools"
+msgstr "Das Projekt nach dem Ausführen des Projekt-Upgrade-Tools reparieren"
 
 msgid ""
 "After upgrading the project, you may notice that certain things don't look "
@@ -883,7 +883,7 @@ msgstr ""
 "zu machen. Verwenden Sie die Versionsverwaltung, um Ihre "
 "Aktualisierungsarbeiten regelmäßig zu committen. Kommandozeilentools wie `sd "
 "<https://github.com/chmln/sd>`__ können ebenfalls verwendet werden, wenn Sie "
-"etwas flexibler sein wollen als der Dialog \"In Dateien ersetzen\" des "
+"etwas flexibler sein möchten als der Dialog \"In Dateien ersetzen\" des "
 "Editors."
 
 msgid ""
@@ -956,6 +956,15 @@ msgstr ""
 "(beachten Sie den führenden Unterstrich, der eine virtuelle Methode "
 "kennzeichnet)."
 
+msgid "Array's ``empty()`` is now ``is_empty()``."
+msgstr "Die Methode ``empty()`` von Array ist jetzt ``is_empty()``."
+
+msgid "Array's ``invert()`` is now ``reverse()``."
+msgstr "Die Methode ``invert()`` von Array ist jetzt ``reverse()``."
+
+msgid "Array's ``remove()`` is now ``remove_at()``."
+msgstr "Die Methode ``remove()`` von Array ist jetzt ``remove_at()``."
+
 msgid "AStar2D and AStar3D's ``get_points()`` is now ``get_points_id()``."
 msgstr ""
 "Die Methode ``get_points()`` von AStar2D und AStar3D ist jetzt "
@@ -965,18 +974,36 @@ msgid "BaseButton's ``set_event()`` is now ``set_shortcut()``."
 msgstr ""
 "Die Methode ``set_event()`` von BaseButton ist jetzt ``set_shortcut()``."
 
+msgid "Camera2D's ``get_h_offset()`` is now ``get_drag_horizontal_offset()``."
+msgstr ""
+"Die Methode ``get_v_offset()`` von Camera2D ist jetzt "
+"``get_drag_vertical_offset()``."
+
 msgid "Camera2D's ``get_v_offset()`` is now ``get_drag_vertical_offset()``."
 msgstr ""
 "Die Methode ``get_v_offset()`` von Camera2D ist jetzt "
 "``get_drag_vertical_offset()``."
+
+msgid "Camera2D's ``set_h_offset()`` is now ``set_drag_horizontal_offset()``."
+msgstr ""
+"Die Methode ``set_h_offset()`` von Camera2D ist jetzt "
+"``set_drag_horizontal_offset()``."
 
 msgid "Camera2D's ``set_v_offset()`` is now ``set_drag_vertical_offset()``."
 msgstr ""
 "Die Methode ``set_v_offset()`` von Camera2D ist jetzt "
 "``set_drag_vertical_offset()``."
 
+msgid "CanvasItem's ``raise()`` is now ``move_to_front()``."
+msgstr "Die Methode ``raise()`` von CanvasItem ist jetzt ``move_to_front()``."
+
 msgid "CanvasItem's ``update()`` is now ``queue_redraw()``."
 msgstr "Die Methode ``update()`` von CanvasItem ist jetzt ``queue_redraw()``."
+
+msgid "Control's ``get_stylebox()`` is now ``get_theme_stylebox()``."
+msgstr ""
+"Die Methode ``get_stylebox()`` von Control ist jetzt "
+"``get_theme_stylebox()``."
 
 msgid "Control's ``set_tooltip()`` is now ``set_tooltip_text()``."
 msgstr ""
@@ -1018,6 +1045,21 @@ msgstr ""
 
 msgid "Image's ``get_rect()`` is now ``get_region()``."
 msgstr "Die Methode ``get_rect()`` von Image ist jetzt ``get_region()``."
+
+msgid "ImmediateGeometry's ``set_normal()`` is now ``surface_set_normal()``."
+msgstr ""
+"Die Methode ``set_normal()`` von ImmediateGeometry ist jetzt "
+"``surface_set_normal()``."
+
+msgid "ImmediateMesh's ``set_color()`` is now ``surface_set_color()``."
+msgstr ""
+"Die Methode ``set_color()`` von ImmediateGeometry ist jetzt "
+"``surface_set_color()``."
+
+msgid "ImmediateMesh's ``set_uv()`` is now ``surface_set_uv()``."
+msgstr ""
+"Die Methode ``set_uv()`` von ImmediateGeometry ist jetzt "
+"``surface_set_uv()``."
 
 msgid "ItemList's ``get_v_scroll()`` is now ``get_v_scroll_bar()``."
 msgstr ""
@@ -1066,6 +1108,17 @@ msgstr ""
 "Die Methode ``set_flag()`` von ParticleProcessMaterial ist jetzt "
 "``set_particle_flag()``."
 
+msgid "PhysicsTestMotionResult2D's ``get_motion()`` is now ``get_travel()``."
+msgstr ""
+"Die Methode ``get_motion()`` von PhysicsTestMotionResult2D ist jetzt "
+"``get_travel()``."
+
+msgid ""
+"RenderingServer's ``get_render_info()`` is now ``get_rendering_info()``."
+msgstr ""
+"Die Methode ``get_render_info()`` von RenderingServer ist jetzt "
+"``get_rendering_info()``."
+
 msgid ""
 "ResourceFormatLoader's ``get_dependencies()`` is now ``_get_dependencies()`` "
 "(note the leading underscore, which denotes a virtual method)."
@@ -1073,6 +1126,9 @@ msgstr ""
 "Die Methode ``get_dependencies()`` von ResourceFormatLoader heißt jetzt "
 "``_get_dependencies()`` (beachten Sie den führenden Unterstrich, der eine "
 "virtuelle Methode kennzeichnet)."
+
+msgid "ResourceFormatLoader's ``load()`` is now ``_load()``."
+msgstr "Die Methode ``load()`` von ResourceFormatLoader ist jetzt ``_load()``."
 
 msgid "SceneTree's ``change_scene()`` is now ``change_scene_to_file()``."
 msgstr ""
@@ -1098,6 +1154,21 @@ msgstr ""
 "Transform2Ds ``xform()`` ist ``mat * vec`` und ``xform_inv()`` ist ``vec * "
 "mat``."
 
+msgid "XRPositionalTracker's ``get_name()`` is now ``get_tracker_name()``."
+msgstr ""
+"Die Methode ``get_name()`` von XRPositionalTracker ist jetzt "
+"``get_tracker_name()``."
+
+msgid "XRPositionalTracker's ``get_type()`` is now ``get_tracker_type()``."
+msgstr ""
+"Die Methode ``get_type()`` von XRPositionalTracker ist jetzt "
+"``get_tracker_type()``."
+
+msgid "XRPositionalTracker's ``_set_name()`` is now ``get_tracker_name()``."
+msgstr ""
+"Die Methode ``_set_name()`` von XRPositionalTracker ist jetzt "
+"``get_tracker_name()``."
+
 msgid "**Properties**"
 msgstr "**Eigenschaften**"
 
@@ -1113,6 +1184,13 @@ msgstr ""
 "``get_offset()`` von PathFollow2D und PathFollow3D umbenannt werden in "
 "``set_progress()`` bzw. ``get_progress()``."
 
+msgid "AudioServer's ``device`` is now ``output_device``."
+msgstr ""
+"Die Eigenschaft ``device`` von AudioServer ist jetzt ``output_device``."
+
+msgid "BaseButton's ``group`` is now ``button_group``."
+msgstr "Die Methode ``group`` von BaseButton ist jetzt ``button_group``."
+
 msgid "Camera3D's ``zfar`` is now ``far``."
 msgstr "Die Eigenschaft ``margin`` von Control ist jetzt ``offset``."
 
@@ -1121,6 +1199,36 @@ msgstr "Die Eigenschaft ``znear`` von Camera3D ist jetzt ``near``."
 
 msgid "Control's ``margin`` is now ``offset``."
 msgstr "Die Eigenschaft ``margin`` von Control ist jetzt ``offset``."
+
+msgid "InputEventMouseButton's ``doubleclick`` is now ``double_click``."
+msgstr ""
+"Die Eigenschaft ``doubleclick`` von InputEventMouseButton ist jetzt "
+"``double_click``."
+
+msgid "InputEventWithModifiers's ``alt`` is now ``alt_pressed``."
+msgstr ""
+"Die Eigenschaft ``alt`` von InputEventWithModifiers ist jetzt "
+"``alt_pressed``."
+
+msgid "InputEventWithModifiers's ``command`` is now ``command_pressed``."
+msgstr ""
+"Die Eigenschaft ``command`` von InputEventWithModifiers ist jetzt "
+"``command_pressed``."
+
+msgid "InputEventWithModifiers's ``control`` is now ``ctrl_pressed``."
+msgstr ""
+"Die Eigenschaft ``control`` von InputEventWithModifiers ist jetzt "
+"``ctrl_pressed``."
+
+msgid "InputEventWithModifiers's ``meta`` is now ``meta_pressed``."
+msgstr ""
+"Die Eigenschaft ``meta`` von InputEventWithModifiers ist jetzt "
+"``meta_pressed``."
+
+msgid "InputEventWithModifiers's ``shift`` is now ``shift_pressed``."
+msgstr ""
+"Die Eigenschaft ``shift`` von InputEventWithModifiers ist jetzt "
+"``shift_pressed``."
 
 msgid "Label's ``percent_visible`` is now ``visible_ratio``."
 msgstr ""
@@ -1133,6 +1241,9 @@ msgstr ""
 "Die Eigenschaft ``refuse_new_network_connections`` von MultiPlayerAPI ist "
 "jetzt ``refuse_new_connections``."
 
+msgid "Node's ``filename`` is now ``scene_file_path``."
+msgstr "Die Eigenschaft ``filename`` von Node ist jetzt ``scene_file_path``."
+
 msgid "PathFollow2D's ``rotate`` is now ``rotates``."
 msgstr ""
 "Die Eigenschaft ``offset`` von PathFollow2D und PathFollow3D ist jetzt "
@@ -1143,16 +1254,28 @@ msgstr ""
 "Die Eigenschaft ``offset`` von PathFollow2D und PathFollow3D ist jetzt "
 "``progress``."
 
+msgid "RectangleShape2D's ``extents`` is now ``size``"
+msgstr "Die Eigenschaft ``extents`` von RectangleShape2D ist jetzt ``size``."
+
 msgid "TextureProgressBar's ``percent_visible`` is now ``show_percentage``."
 msgstr ""
 "Die Eigenschaft ``percent_visible`` von TextureProgressBar ist jetzt "
 "``show_percentage``."
+
+msgid "Theme's ``off`` is now ``unchecked``."
+msgstr "Die Eigenschaft ``off`` von Theme ist jetzt ``unchecked``."
 
 msgid "Theme's ``ofs`` is now ``offset``."
 msgstr "Die Eigenschaft ``ofs`` von Theme ist jetzt ``offset``."
 
 msgid "Theme's ``on`` is now ``checked``."
 msgstr "Die Eigenschaft ``on`` von Theme ist jetzt ``checked``."
+
+msgid "Window's ``window_title`` is now ``title``."
+msgstr "Die Eigenschaft ``window_title`` von Window ist jetzt ``title``."
+
+msgid "WorldMarginShape2D's ``d`` is now ``distance``."
+msgstr "Die Eigenschaft ``d`` von WorldMarginShape2D ist jetzt ``distance``."
 
 msgid ""
 "The ``extents`` property on CSG nodes and VoxelGI will have to be replaced "
@@ -1294,7 +1417,7 @@ msgstr ""
 "nicht mehr für die Texturdateien selbst festgelegt."
 
 msgid "``hint_albedo`` is now ``source_color``."
-msgstr "Die Eigenschaft ``hint_albedo`` ist jetzt ``source_color``."
+msgstr "``hint_albedo`` ist jetzt ``source_color``."
 
 msgid "``hint_color`` is now ``source_color``."
 msgstr "``hint_color`` ist jetzt ``source_color`` ."
@@ -1398,7 +1521,7 @@ msgid ""
 "with ``set_group()`` and ``notify_group()`` respectively)."
 msgstr ""
 "``call_group()``, ``set_group()`` und ``notify_group()`` sind nun "
-"standardmäßig \"immediate\". Wenn eine teure Funktion aufgerufen wird, kann "
+"standardmäßig „immediate“. Wenn eine teure Funktion aufgerufen wird, kann "
 "dies bei einer Gruppe, die eine große Anzahl von Nodes enthält, zu "
 "Stuttering führen. Um aufgeschobene Aufrufe wie bisher zu verwenden, "
 "ersetzen Sie ``call_group(...)`` durch "
@@ -1604,7 +1727,7 @@ msgid "AnimationTree"
 msgstr "AnimationTree"
 
 msgid "AnimationTreePlayer was deprecated since Godot 3.1."
-msgstr "Der AnimationTreePlayer ist seit Godot 3.1 deprecated."
+msgstr "AnimationTreePlayer ist seit Godot 3.1 veraltet."
 
 msgid "BakedLightmap"
 msgstr "BakedLightmap"
@@ -1635,6 +1758,15 @@ msgstr "DynamicFont"
 
 msgid "DynamicFontData"
 msgstr "DynamicFontData"
+
+msgid "ClippedCamera"
+msgstr "ClippedCamera"
+
+msgid "Camera2D or Camera3D"
+msgstr "Camera2D oder Camera3D"
+
+msgid "InterpolatedCamera"
+msgstr "InterpolatedCamera"
 
 msgid "Navigation2D"
 msgstr "Navigation2D"
@@ -1769,7 +1901,7 @@ msgid ""
 "CHANGELOG.md>`__ for a full list of changes between Godot 3.x and 4."
 msgstr ""
 "Eine vollständige Liste der Änderungen zwischen Godot 3.x und 4 finden Sie "
-"im `Changelog <https://github.com/godotengine/godot/blob/master/"
+"im `Änderungsprotokoll <https://github.com/godotengine/godot/blob/master/"
 "CHANGELOG.md>`__."
 
 msgid "ArrayMesh resource compatibility breakage"

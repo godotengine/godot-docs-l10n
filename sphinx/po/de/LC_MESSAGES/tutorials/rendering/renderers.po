@@ -236,23 +236,68 @@ msgstr ""
 msgid "Rendering cost"
 msgstr "Rendering-Kosten"
 
+msgid "Low base cost, but high scaling cost."
+msgstr "Niedrige Grundkosten, aber hohe Skalierungskosten."
+
+msgid "Medium base cost, and medium scaling cost."
+msgstr "Mittlere Grundkosten und mittlere Skalierungskosten."
+
+msgid "Highest base cost, and low scaling cost."
+msgstr "Höchste Grundkosten und niedrige Skalierungskosten."
+
+msgid "Rendering driver"
+msgstr "Rendering-Treiber"
+
+msgid "OpenGL."
+msgstr "OpenGL."
+
+msgid "Vulkan, Direct3D 12, or Metal."
+msgstr "Vulkan, Direct3D 12 oder Metal."
+
+msgid "Lights and shadows"
+msgstr "Beleuchtung und Schatten"
+
+msgid "See :ref:`doc_lights_and_shadows` for more information."
+msgstr "Siehe :ref:`doc_lights_and_shadows` für weitere Informationen."
+
+msgid "8 per mesh. Can be increased."
+msgstr "8 pro Mesh. Kann erhöht werden."
+
+msgid "8 per mesh, 256 per view."
+msgstr "8 pro Mesh, 256 pro Ansicht."
+
+msgid "512 per cluster. Can be increased."
+msgstr "512 pro Cluster. Kann erhöht werden."
+
 msgid "8"
 msgstr "8"
+
+msgid "❌ Not supported."
+msgstr "❌ Nicht unterstützt."
 
 msgid "✔️ Supported."
 msgstr "✔️ Unterstützt."
 
+msgid "PCSS for DirectionalLight"
+msgstr "PCSS für DirectionalLight"
+
 msgid "Global Illumination"
 msgstr "Globale Beleuchtung (Global Illumination)"
+
+msgid ""
+"See :ref:`doc_introduction_to_global_illumination` for more information."
+msgstr ""
+"Siehe :ref:`doc_introduction_to_global_illumination` für weitere "
+"Informationen."
+
+msgid "ReflectionProbe"
+msgstr "ReflectionProbe"
 
 msgid "✔️ Supported, 2 per mesh."
 msgstr "✔️ Unterstützt, 2 pro Mesh."
 
 msgid "✔️ Supported, 8 per mesh."
 msgstr "✔️ Unterstützt, 8 pro Mesh."
-
-msgid "✔️ Supported, unlimited."
-msgstr "✔️ Unterstützt, unbegrenzt."
 
 msgid "LightmapGI"
 msgstr "LightmapGI"
@@ -269,11 +314,18 @@ msgstr "Signed Distance Field Global Illumination (SDFGI)"
 msgid "Environment and post-processing"
 msgstr "Environment und Post-Processing"
 
+msgid "See :ref:`doc_environment_and_post_processing` for more information."
+msgstr ""
+"Siehe :ref:`doc_environment_and_post_processing` für weitere Informationen."
+
 msgid "Volumetric Fog"
 msgstr "Volumetrischer Nebel"
 
 msgid "Tonemapping"
 msgstr "Tonemapping"
+
+msgid "Screen-Space Reflections"
+msgstr "Screen-Space-Reflexionen"
 
 msgid "Screen-Space Ambient Occlusion (SSAO)"
 msgstr "Screen-Space-Ambient Occlusion (SSAO)"
@@ -287,6 +339,9 @@ msgstr "Anpassungen"
 msgid "Antialiasing"
 msgstr "Antialiasing"
 
+msgid "See :ref:`doc_3d_antialiasing` for more information."
+msgstr "Siehe :ref:`doc_3d_antialiasing` für weitere Informationen."
+
 msgid "MSAA 3D"
 msgstr "MSAA 3D"
 
@@ -299,6 +354,18 @@ msgstr "SMAA"
 msgid "Screen-space roughness limiter"
 msgstr "Screen-Space-Rauheitsbegrenzer"
 
+msgid "StandardMaterial features"
+msgstr "StandardMaterial-Features"
+
+msgid "See :ref:`doc_standard_material_3d` for more information."
+msgstr "Siehe :ref:`doc_standard_material_3d` für weitere Informationen."
+
+msgid "Shader features"
+msgstr "Shader-Funktionen"
+
+msgid "See :ref:`doc_shading_reference` for more information."
+msgstr "Siehe :ref:`doc_shading_reference` für weitere Informationen."
+
 msgid "Screen texture"
 msgstr "Bildschirmtextur"
 
@@ -308,14 +375,50 @@ msgstr "Tiefentextur"
 msgid "Compute shaders"
 msgstr "Compute-Shader"
 
+msgid "Other features"
+msgstr "Weitere Funktionen"
+
+msgid "Color precision"
+msgstr "Farbgenauigkeit"
+
+msgid "RGBA8. Low dynamic range, medium precision."
+msgstr "RGBA8. Geringer Dynamikbereich, mittlere Genauigkeit."
+
+msgid ""
+"RGB10A2. Medium dynamic range, low precision. RGBA16F if HDR 2D is enabled."
+msgstr ""
+"RGB10A2. Mittlerer Dynamikbereich, geringe Genauigkeit. RGBA16F, wenn 2D-HDR "
+"aktiviert ist."
+
+msgid "RGBA16F. High dynamic range, good precision."
+msgstr "RGBA16F. Hoher Dynamikbereich, gute Genauigkeit."
+
+msgid "Depth precision"
+msgstr "Tiefengenauigkeit"
+
 msgid "Debanding"
 msgstr "Debanding"
 
 msgid "Variable rate shading"
 msgstr "Variable Rate Shading"
 
+msgid "Decals"
+msgstr "Decals"
+
 msgid "Particle trails"
 msgstr "Partikel-Trails"
 
+msgid "Particle SDF collision"
+msgstr "SDF-Partikelkollisionen"
+
+msgid "Depth of field blur"
+msgstr "Schärfentiefe-Unschärfe"
+
+msgid "2D HDR Viewport"
+msgstr "2D-HDR-Viewport"
+
 msgid "HDR output"
 msgstr "HDR-Ausgabe"
+
+msgid "RenderingDevice access"
+msgstr "RenderingDevice-Zugriff"

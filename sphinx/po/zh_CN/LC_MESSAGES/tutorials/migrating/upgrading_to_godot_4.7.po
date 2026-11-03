@@ -11,8 +11,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.6 to Godot 4.7"
+msgstr "从 Godot 4.6 升级至 Godot 4.7"
+
+msgid ""
+"For most games and apps made with 4.6 it should be relatively safe to "
+"migrate to 4.7. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"对于基于 4.6 版本开发的大多数游戏和应用程序而言，迁移到 4.7 版本应相对安全。"
+"本页面旨在涵盖您在迁移项目时需要关注的所有事项。"
+
 msgid "Breaking changes"
 msgstr "破坏性更改"
+
+msgid ""
+"If you are migrating from 4.6 to 4.7, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"若您从版本 4.6 迁移到版本 4.7，此处列出的重大变更可能对您产生影响。这些变更按"
+"领域/系统进行分类。"
 
 msgid ""
 "This article indicates whether each breaking change affects GDScript and "
@@ -54,20 +72,59 @@ msgstr "引入"
 msgid "**Object**"
 msgstr "**Object**"
 
+msgid ""
+"Method ``is_class`` changes ``class`` parameter type from ``String`` to "
+"``StringName``"
+msgstr ""
+"Method ``is_class`` 将 ``class`` 参数类型从 ``String`` 更改为 ``StringName``"
+
 msgid "|✔️|"
 msgstr "|✔️|"
 
 msgid "|✔️ with compat|"
 msgstr "|✔️ with compat|"
 
+msgid "`GH-118582`_"
+msgstr "`GH-118582`_"
+
+msgid "**ZIPPacker**"
+msgstr "**ZIPPacker**"
+
+msgid ""
+"Method ``start_file`` adds new ``permissions`` and ``modified_time`` "
+"optional parameters"
+msgstr ""
+"方法 ``start_file`` 新增了 ``permissions`` 和 ``modified_time`` 两个可选参数"
+
+msgid "`GH-115946`_"
+msgstr "`GH-115946`_"
+
+msgid "**OptimizedTranslation**"
+msgstr "**OptimizedTranslation**"
+
+msgid "Method ``generate`` changes return type from ``void`` to ``bool``"
+msgstr "Method ``generate`` 将返回类型从 ``void`` 更改为 ``bool``"
+
 msgid "|❌|"
 msgstr "|❌|"
+
+msgid "`GH-119563`_"
+msgstr "`GH-119563`_"
 
 msgid "2D"
 msgstr "2D"
 
 msgid "**CPUParticles2D**"
 msgstr "**CPUParticles2D**"
+
+msgid ""
+"Method ``request_particles_process`` adds new ``process_time_residual`` "
+"optional parameter"
+msgstr ""
+"方法 ``request_particles_process`` 新增了可选参数 ``process_time_residual``"
+
+msgid "`GH-109142`_"
+msgstr "`GH-109142`_"
 
 msgid "**GPUParticles2D**"
 msgstr "**GPUParticles2D**"
@@ -87,8 +144,78 @@ msgstr "GUI 节点"
 msgid "**Control**"
 msgstr "**Control**"
 
+msgid ""
+"Property ``accessibility_live`` changes type from "
+"``DisplayServer.AccessibilityLiveMode`` to "
+"``AccessibilityServer.AccessibilityLiveMode``"
+msgstr ""
+"属性 ``accessibility_live`` 的类型从 ``DisplayServer. "
+"AccessibilityLiveMode`` 更改为 ``AccessibilityServer. AccessibilityLiveMode``"
+
+msgid "`GH-116839`_"
+msgstr "`GH-116839`_"
+
 msgid "**RichTextLabel**"
 msgstr "**RichTextLabel**"
+
+msgid ""
+"Enum field ``ImageUpdateMask.UPDATE_WIDTH_IN_PERCENT`` renamed to "
+"``ImageUpdateMask.UPDATE_WIDTH_UNIT``"
+msgstr ""
+"Enum 字段 ``ImageUpdateMask. UPDATE_WIDTH_IN_PERCENT`` 更名为 "
+"``ImageUpdateMask. UPDATE_WIDTH_UNIT``"
+
+msgid "`GH-112617`_"
+msgstr "`GH-112617`_"
+
+msgid ""
+"Method ``add_image`` changes ``width`` parameter type from ``int`` to "
+"``float``"
+msgstr "方法 ``add_image`` 将 ``width`` 参数类型从 ``int`` 更改为 ``float``"
+
+msgid ""
+"Method ``add_image`` changes ``height`` parameter type from ``int`` to "
+"``float``"
+msgstr "方法 ``add_image`` 将 ``height`` 参数类型从 ``int`` 更改为 ``float``"
+
+msgid ""
+"Method ``add_image`` renames ``width_in_percent`` parameter to "
+"``width_unit`` and changes type from ``bool`` to ``RichTextLabel.ImageUnit``"
+msgstr ""
+"方法 ``add_image`` 将 ``width_in_percent`` 参数重命名为 ``width_unit`` ，并将"
+"类型从 ``bool`` 更改为 ``RichTextLabel. ImageUnit``"
+
+msgid ""
+"Method ``add_image`` renames ``height_in_percent`` parameter to "
+"``height_unit`` and changes type from ``bool`` to ``RichTextLabel.ImageUnit``"
+msgstr ""
+"方法 ``add_image`` 将 ``height_in_percent`` 参数重命名为 ``height_unit`` ，并"
+"将类型从 ``bool`` 更改为 ``RichTextLabel. ImageUnit``"
+
+msgid ""
+"Method ``update_image`` changes ``width`` parameter type from ``int`` to "
+"``float``"
+msgstr "方法 ``update_image`` 将 ``width`` 参数类型从 ``int`` 更改为 ``float``"
+
+msgid ""
+"Method ``update_image`` changes ``height`` parameter type from ``int`` to "
+"``float``"
+msgstr ""
+"方法 ``update_image`` 将 ``height`` 参数类型从 ``int`` 更改为 ``float``"
+
+msgid ""
+"Method ``update_image`` renames ``width_in_percent`` parameter to "
+"``width_unit`` and changes type from ``bool`` to ``RichTextLabel.ImageUnit``"
+msgstr ""
+"方法 ``update_image`` 将 ``width_in_percent`` 参数重命名为 ``width_unit`` ，"
+"并将类型从 ``bool`` 更改为 ``RichTextLabel. ImageUnit``"
+
+msgid ""
+"Method ``update_image`` renames ``height_in_percent`` parameter to "
+"``height_unit`` and changes type from ``bool`` to ``RichTextLabel.ImageUnit``"
+msgstr ""
+"方法 ``update_image`` 将 ``height_in_percent`` 参数重命名为 "
+"``height_unit`` ，并将类型从 ``bool`` 更改为 ``RichTextLabel. ImageUnit``"
 
 msgid "Text"
 msgstr "文本"
@@ -96,14 +223,74 @@ msgstr "文本"
 msgid "**Font**"
 msgstr "**字体**"
 
+msgid ""
+"Method ``find_variation`` adds new ``palette_index`` and ``custom_colors`` "
+"optional parameters"
+msgstr ""
+"方法 ``find_variation`` 新增了 ``palette_index`` 和 ``custom_colors`` 两个可"
+"选参数"
+
+msgid "`GH-117149`_"
+msgstr "`GH-117149`_"
+
 msgid "**TreeItem**"
 msgstr "**TreeItem**"
+
+msgid "Method ``select`` adds new ``set_as_cursor`` optional parameter"
+msgstr "方法 ``select`` 新增了 ``set_as_cursor`` 选项参数"
+
+msgid "`GH-119367`_"
+msgstr "`GH-119367`_"
 
 msgid "Rendering"
 msgstr "渲染"
 
+msgid "**Image**"
+msgstr "**Image**"
+
+msgid ""
+"Method ``save_exr`` adds new ``color_image`` and ``max_linear_value`` "
+"optional parameters"
+msgstr ""
+"方法 ``save_exr`` 新增了 ``color_image`` 和 ``max_linear_value`` 两个可选参数"
+
+msgid "`GH-117800`_"
+msgstr "`GH-117800`_"
+
+msgid ""
+"Method ``save_exr_to_buffer`` adds new ``color_image`` and "
+"``max_linear_value`` optional parameters"
+msgstr ""
+"方法 ``save_exr_to_buffer`` 新增了 ``color_image`` 和 ``max_linear_value`` 两"
+"个可选参数"
+
+msgid "**ImageTexture**"
+msgstr "**ImageTexture**"
+
+msgid "Method ``get_format`` moved to base class ``Texture2D``"
+msgstr "方法 ``get_format`` 移至基类 ``Texture2D``"
+
+msgid "`GH-109004`_"
+msgstr "`GH-109004`_"
+
+msgid "**PortableCompressedTexture2D**"
+msgstr "**PortableCompressedTexture2D**"
+
 msgid "**RenderingServer**"
 msgstr "**RenderingServer**"
+
+msgid ""
+"Method ``particles_request_process_time`` renames ``time`` parameter to "
+"``process_time`` and adds new ``process_time_residual`` optional parameter"
+msgstr ""
+"方法 ``particles_request_process_time`` 将 ``time`` 参数重命名为 "
+"``process_time`` ，并新增一个名为 ``process_time_residual`` 的可选参数"
+
+msgid "Method ``viewport_set_size`` adds new ``view_count`` optional parameter"
+msgstr "方法 ``viewport_set_size`` 新增了 ``view_count`` 选项参数"
+
+msgid "`GH-115799`_"
+msgstr "`GH-115799`_"
 
 msgid "Animation"
 msgstr "动画"
@@ -111,11 +298,59 @@ msgstr "动画"
 msgid "**Animation**"
 msgstr "**动画**"
 
+msgid "Property ``length`` changes type metadata from ``float`` to ``double``"
+msgstr "属性 ``length`` 将类型元数据从 ``float`` 更改为 ``double``"
+
+msgid "`GH-116394`_"
+msgstr "`GH-116394`_"
+
+msgid "**AnimationNodeBlendSpace1D**"
+msgstr "**AnimationNodeBlendSpace1D**"
+
+msgid "Method ``add_blend_point`` adds new ``name`` optional parameter"
+msgstr "方法 ``add_blend_point`` 新增了 ``name`` 选项参数"
+
+msgid "`GH-110369`_"
+msgstr "`GH-110369`_"
+
+msgid "**AnimationNodeBlendSpace2D**"
+msgstr "**AnimationNodeBlendSpace2D**"
+
 msgid "Physics"
 msgstr "物理"
 
+msgid "**PhysicsServer2D**"
+msgstr "**PhysicsServer2D**"
+
+msgid ""
+"Method ``body_set_shape_as_one_way_collision`` adds new ``direction`` "
+"optional parameter"
+msgstr ""
+"方法 ``body_set_shape_as_one_way_collision`` 新增了可选参数 ``direction``"
+
+msgid "`GH-104736`_"
+msgstr "`GH-104736`_"
+
+msgid "**PhysicsServer2DExtension**"
+msgstr "**PhysicsServer2DExtension**"
+
+msgid ""
+"Method ``_body_set_shape_as_one_way_collision`` adds new ``direction`` "
+"parameter"
+msgstr ""
+"方法 ``_body_set_shape_as_one_way_collision`` 新增了 ``direction`` 参数"
+
 msgid "Audio"
 msgstr "音频"
+
+msgid "**AudioEffectSpectrumAnalyzer**"
+msgstr "**AudioEffectSpectrumAnalyzer**"
+
+msgid "Property ``tap_back_pos`` removed"
+msgstr "属性 ``tap_back_pos`` 已移除"
+
+msgid "`GH-114355`_"
+msgstr "`GH-114355`_"
 
 msgid "XR"
 msgstr "XR"
@@ -123,32 +358,276 @@ msgstr "XR"
 msgid "**OpenXRExtensionWrapper**"
 msgstr "**OpenXRExtensionWrapper**"
 
+msgid ""
+"Method ``_on_register_metadata`` adds new ``interaction_profile_metadata`` "
+"parameter"
+msgstr ""
+"方法 ``_on_register_metadata`` 添加了新的 ``interaction_profile_metadata`` 参"
+"数"
+
+msgid "`GH-117399`_"
+msgstr "`GH-117399`_"
+
+msgid "**OpenXRSpatialAnchorCapability**"
+msgstr "**OpenXRSpatialAnchorCapability**"
+
+msgid "Method ``create_new_anchor`` adds new ``next`` optional parameter"
+msgstr "方法 ``create_new_anchor`` 新增了 ``next`` 选项参数"
+
+msgid "`GH-118128`_"
+msgstr "`GH-118128`_"
+
 msgid "Editor"
 msgstr "编辑器"
 
 msgid "**EditorSceneFormatImporter**"
 msgstr "**EditorSceneFormatImporter**"
 
+msgid "Constant ``IMPORT_ANIMATION`` moved to enum ``ImportFlags``"
+msgstr "Constant ``IMPORT_ANIMATION`` 已移至 enum ``ImportFlags``"
+
+msgid "`GH-115788`_"
+msgstr "`GH-115788`_"
+
+msgid ""
+"Constant ``IMPORT_DISCARD_MESHES_AND_MATERIALS`` moved to enum "
+"``ImportFlags``"
+msgstr ""
+"Constant ``IMPORT_DISCARD_MESHES_AND_MATERIALS`` 已移至 enum ``ImportFlags``"
+
+msgid ""
+"Constant ``IMPORT_FAIL_ON_MISSING_DEPENDENCIES`` moved to enum "
+"``ImportFlags``"
+msgstr ""
+"Constant ``IMPORT_FAIL_ON_MISSING_DEPENDENCIES`` 移至 enum ``ImportFlags``"
+
+msgid ""
+"Constant ``IMPORT_FORCE_DISABLE_MESH_COMPRESSION`` moved to enum "
+"``ImportFlags``"
+msgstr ""
+"Constant ``IMPORT_FORCE_DISABLE_MESH_COMPRESSION`` 已移至 enum "
+"``ImportFlags``"
+
+msgid ""
+"Constant ``IMPORT_GENERATE_TANGENT_ARRAYS`` moved to enum ``ImportFlags``"
+msgstr "Constant ``IMPORT_GENERATE_TANGENT_ARRAYS`` 移至 enum ``ImportFlags``"
+
+msgid "Constant ``IMPORT_SCENE`` moved to enum ``ImportFlags``"
+msgstr "Constant ``IMPORT_SCENE`` 移至 enum ``ImportFlags``"
+
+msgid "Constant ``IMPORT_USE_NAMED_SKIN_BINDS`` moved to enum ``ImportFlags``"
+msgstr "Constant ``IMPORT_USE_NAMED_SKIN_BINDS`` 已移至 enum ``ImportFlags``"
+
+msgid "**EditorVCSInterface**"
+msgstr "**EditorVCSInterface**"
+
+msgid "Method ``_commit`` adds new ``amend`` parameter"
+msgstr "方法 ``_commit`` 添加了新的 ``amend`` 参数"
+
+msgid "`GH-117968`_"
+msgstr "`GH-117968`_"
+
 msgid "Behavior changes"
 msgstr "行为更改"
+
+msgid ""
+"AnimationNodeBlendSpace1D and AnimationNodeBlendSpace2D have a new SyncMode "
+"enum that replaces the previous boolean ``sync`` property. If you are using "
+"an AnimationTree and your animations aren't transitioning correctly after "
+"upgrading, you may need to set that value in each of your blend spaces to "
+"get the desired behavior back."
+msgstr ""
+"AnimationNodeBlendSpace1D 和 AnimationNodeBlendSpace2D 现引入了新的 SyncMode "
+"枚举类型，用以替代原有的 boolean ``sync`` 属性。若您在升级后发现使用 "
+"AnimationTree 时动画过渡效果异常，可能需要在每个混合空间中手动设置该值，以恢"
+"复预期的动画行为。"
+
+msgid ""
+"The new sync modes are documented "
+"in :ref:`AnimationNodeBlendSpace1D.sync_mode "
+"<class_AnimationNodeBlendSpace1D_property_sync_mode>` "
+"and :ref:`AnimationNodeBlendSpace2D.sync_mode "
+"<class_AnimationNodeBlendSpace2D_property_sync_mode>`."
+msgstr ""
+"新的同步模式详见 :ref:`AnimationNodeBlendSpace1D. sync_mode "
+"<class_AnimationNodeBlendSpace1D_property_sync_mode>` "
+"与 :ref:`AnimationNodeBlendSpace2D. sync_mode "
+"<class_AnimationNodeBlendSpace2D_property_sync_mode>`。"
+
+msgid ""
+"The ``LinearToSRGB`` visual shader no longer clamps to the range ``[0.0, "
+"1.0]`` when using the Mobile or Forward+ renderer (`GH-113956`_)."
+msgstr ""
+"当使用 Mobile 或 Forward+ 渲染器（ `GH-113956`_ ）时， ``LinearToSRGB`` 视觉"
+"着色器不再被限制在 ``[0.0,1.0]`` 范围内。"
+
+msgid ""
+"``CanvasItem`` now avoids adding the antialiasing feather when drawing lines "
+"(`GH-105122`_). The feather made lines appear thicker than intended, "
+"projects that relied on this behavior will have to be updated to draw a "
+"thicker line width."
+msgstr ""
+"``CanvasItem`` 现在在绘制直线（`GH-105122`_）时不再添加抗锯齿羽化效果。由于该"
+"羽化效果会使直线看起来比实际设计的更粗，因此依赖此行为的项目需进行相应更新，"
+"以绘制出更粗的线宽。"
+
+msgid ""
+"The default ``area_mask`` for ``AudioStreamPlayer`` was changed from ``1`` "
+"to ``0`` (disabled) (`GH-107679`_). If you use the ``audio_bus_override`` "
+"feature on ``Area2D`` or ``Area3D``, **and** you use the "
+"``AudioStreamPlayer`` default ``area_mask`` (just layer ``1`` ticked), you "
+"will need to reset the mask to layer ``1`` — otherwise, the bus overrides "
+"will stop working. If the mask was set to anything except layer ``1``, it "
+"will continue to work as expected."
+msgstr ""
+"``AudioStreamPlayer`` 的默认 ``area_mask`` 已从 ``1`` 更改为 ``0`` （禁用）"
+"（参见 `GH-107679`_ ）。若您在 ``Area2D`` 或 ``Area3D`` 上使用了 "
+"``audio_bus_override`` 功能， **且** 同时启用了 ``AudioStreamPlayer`` 的默认 "
+"``area_mask`` （仅勾选第 ``1`` 层），则需将掩码重置为第 ``1`` 层——否则，总线"
+"覆盖功能将无法正常工作。若掩码设置为除第 ``1`` 层以外的其他层，则该功能仍可按"
+"预期运行。"
+
+msgid ""
+"When using Jolt Physics as the 3D physics engine, ``WorldBoundaryShape3D`` "
+"will now use the same convention as Godot when applying "
+"``WorldBoundaryShape3D.plane.d``, resulting in the sign of the plane "
+"distance being interpreted in the opposite way compared to Godot 4.6 "
+"(`GH-118948`_). You will need to flip the sign yourself to get the same "
+"behavior as in Godot 4.6."
+msgstr ""
+"当使用 Jolt Physics 作为 3D 物理引擎时， ``WorldBoundaryShape3D`` 现在在应用 "
+"``WorldBoundaryShape3D. plane.d`` 时将采用与 Godot 相同的约定，这导致平面距离"
+"的符号含义与 Godot 4.6（`GH-118948`_）中的处理方式相反。您需要自行翻转该符"
+"号，才能获得与 Godot 4.6 相同的行为效果。"
+
+msgid ""
+"When using Jolt Physics as the 3D physics engine, ``SoftBody3D`` will no "
+"longer default its mass to ``0``, which resulted in an automatically "
+"calculated weight of 1 kg per point, resulting in a very high total mass for "
+"the body. Now instead it will default to 1 kg for the entire ``SoftBody3D``, "
+"same as Godot Physics (`GH-116041`_)."
+msgstr ""
+"当使用 Jolt Physics 作为 3D 物理引擎时， ``SoftBody3D`` 不再将质量默认设"
+"为“0”；此前这一设置会导致每个点的自动计算重量为 1 kg，从而使物体的总质量变得"
+"非常大。现在， ``SoftBody3D`` 将默认为整个 ``SoftBody3D`` 的质量为 1 kg，这"
+"与 Godot Physics ( `GH-116041`_ ) 的设置一致。"
+
+msgid ""
+"When using Jolt Physics as the 3D physics engine, ``SoftBody3D`` will now "
+"apply ``SoftBody3D.linear_stiffness`` in a way that better matches Godot "
+"Physics, and in a way that's more appropriate in general (`GH-116041`_). "
+"This will affect every ``SoftBody3D`` instance in one way or another, "
+"meaning you will need to re-tweak properties like "
+"``SoftBody3D.linear_stiffness`` and ``SoftBody3D.damping_coefficient`` to "
+"achieve your desired behavior."
+msgstr ""
+"当使用 Jolt Physics 作为 3D 物理引擎时， ``SoftBody3D`` 现将 ``SoftBody3D. "
+"linear_stiffness`` 的应用方式调整为更符合 Godot Physics 的设计，并使其在总体"
+"上更为恰当（参见 `GH-116041`_ ）。这一变化将以某种方式影响到所有 "
+"``SoftBody3D`` 实例，因此您需要重新微调诸如 ``SoftBody3D. linear_stiffness`` "
+"和 ``SoftBody3D. damping_coefficient`` 等属性，以实现预期的物理行为。"
+
+msgid ""
+"When using Jolt Physics as the 3D physics engine, ``Area3D`` will now report "
+"overlaps with ``SoftBody3D`` from its various signals and methods "
+"(`GH-114198`_). To work around this breaking change, configure your "
+"collision layers/masks such that any undesirable interactions between "
+"``Area3D`` and ``SoftBody3D`` are ignored."
+msgstr ""
+"当使用 Jolt Physics 作为 3D 物理引擎时， ``Area3D`` 现将通过其各类信号与方法"
+"（如 `GH-114198`_ ）报告与 ``SoftBody3D`` 之间的重叠情况。为适应该项破坏性变"
+"更，请配置您的碰撞层/掩码，使 ``Area3D`` 与 ``SoftBody3D`` 之间任何不希望发生"
+"的交互作用均被忽略。"
 
 msgid "Input"
 msgstr "输入"
 
+msgid ""
+"The device IDs for mouse and keyboard were changed from ``0`` to "
+"``InputEvent.DEVICE_ID_MOUSE`` and ``InputEvent.DEVICE_ID_KEYBOARD`` because "
+"some joypads may use ``0`` as their ID (`GH-116274`_). Check the input event "
+"by type or compare the device ID ``InputEvent.device`` to the constants "
+"``InputEvent.DEVICE_ID_MOUSE`` and ``InputEvent.DEVICE_ID_KEYBOARD`` instead."
+msgstr ""
+"鼠标和键盘的设备 ID 已从 ``0`` 更改为 ``InputEvent. DEVICE_ID_MOUSE`` 和 "
+"``InputEvent. DEVICE_ID_KEYBOARD`` ，因为部分游戏手柄可能将 ``0`` 作为其设备 "
+"ID 使用（参见 `GH-116274`_ ）。请根据输入事件类型进行检查，或将设备 ID "
+"``InputEvent.device`` 与常量 ``InputEvent. DEVICE_ID_MOUSE`` 和 "
+"``InputEvent. DEVICE_ID_KEYBOARD`` 进行比对。"
+
 msgid "GDScript"
 msgstr "GDScript"
+
+msgid ""
+"Setting the element of packed arrays no longer calls the setter for the "
+"entire packed array property (`GH-113228`_)."
+msgstr ""
+"设置打包数组中的单个元素时，不再调用整个打包数组属性（ `GH-113228`_ ）的 "
+"setter 方法。"
+
+msgid ""
+"Methods that inherit from a method with a typed return now inherit the "
+"return type as well, requiring an explicit return statement in the override "
+"(`GH-115763`_). Add ``return null`` to the end of the method to fix the "
+"error."
+msgstr ""
+"从具有类型化返回值的方法继承的方法，现在也会继承该返回类型，因此在重写方法"
+"（ `GH-115763`_ ）中需添加显式返回语句。请将 ` ``return null`` ` 添加到该方法"
+"末尾以修复此错误。"
 
 msgid "Platforms"
 msgstr "平台"
 
+msgid ""
+"The minimum macOS version required to run Godot was increased from macOS "
+"10.13 (High Sierra) to macOS 11 (Big Sur)."
+msgstr ""
+"运行 Godot 所需的最低 macOS 版本已从 macOS 10.13（High Sierra）提升至 macOS "
+"11（Big Sur）。"
+
 msgid "Changed defaults"
 msgstr "默认值更改"
+
+msgid ""
+"The following default values have been changed. If your project uses any of "
+"these properties with their default value, you can achieve a similar "
+"behavior to the previous version by manually setting the values to match the "
+"old defaults."
+msgstr ""
+"以下默认值已发生变更。若您在项目中使用了这些属性及其默认值，可通过手动将相关"
+"值设置为与旧版默认值一致来实现与旧版本相似的行为。"
+
+msgid ""
+"The default stretch mode and stretch aspect for **newly created** projects "
+"is now ``canvas_items`` and ``expand`` respectively (previously ``disabled`` "
+"and ``keep``). This can be changed in the Project Settings under ``display/"
+"window/stretch/mode`` and ``display/window/stretch/aspect``."
+msgstr ""
+"对于 **新创建** 的项目，其默认的拉伸模式与拉伸比例分别设为 ``canvas_items`` "
+"和 ``expand`` （此前分别为 ``disabled`` 和 ``keep`` ）。此设置可前往“项目设"
+"置”中的 ``display/window/stretch/mode`` 与 ``display/window/stretch/aspect`` "
+"选项卡进行修改。"
 
 msgid "Property/Parameter"
 msgstr "属性/参数"
 
+msgid "Old Default"
+msgstr "旧默认值"
+
+msgid "New Default"
+msgstr "新默认值"
+
+msgid "**LookAtModifier3D**"
+msgstr "**LookAtModifier3D**"
+
+msgid "Property ``relative``"
+msgstr "属性 ``relative``"
+
 msgid "true"
 msgstr "true"
+
+msgid "false"
+msgstr "false"
 
 msgid "**ProjectSettings**"
 msgstr "**ProjectSettings**"
@@ -162,11 +641,29 @@ msgstr "7"
 msgid "8"
 msgstr "8"
 
+msgid "Method ``add_image`` parameter ``width_in_percent``"
+msgstr "方法 ``add_image`` 参数 ``width_in_percent``"
+
 msgid "0"
 msgstr "0"
 
+msgid "Method ``add_image`` parameter ``height_in_percent``"
+msgstr "方法 ``add_image`` 参数 ``height_in_percent``"
+
+msgid "Method ``update_image`` parameter ``width_in_percent``"
+msgstr "方法 ``update_image`` 参数 ``width_in_percent``"
+
+msgid "Method ``update_image`` parameter ``height_in_percent``"
+msgstr "方法 ``update_image`` 参数 ``height_in_percent``"
+
 msgid "Import"
 msgstr "导入"
+
+msgid "**ResourceImporterDynamicFont**"
+msgstr "**ResourceImporterDynamicFont**"
+
+msgid "Property ``hinting``"
+msgstr "属性 ``hinting``"
 
 msgid "1"
 msgstr "1"

@@ -33,6 +33,24 @@ msgstr ""
 "Unter Windows und Linux können Sie eine Godot-Binärdatei in einem Terminal "
 "ausführen, indem Sie den relativen oder absoluten Pfad angeben."
 
+msgid ""
+"On macOS, the process is different due to Godot being contained within a "
+"``.app`` bundle (which is a *folder*, not a file). To run a Godot binary "
+"from a terminal on macOS, you have to ``cd`` to the folder where the Godot "
+"application bundle is located, then run ``Godot.app/Contents/MacOS/Godot`` "
+"followed by any command line arguments. If you've renamed the application "
+"bundle from ``Godot`` to another name, make sure to edit this command line "
+"accordingly."
+msgstr ""
+"Unter macOS ist der Prozess anders, da Godot in einem ``.app``-Bundle "
+"enthalten ist (was ein *Ordner* ist, keine Datei). Um eine Godot-Binärdatei "
+"von einem Terminal unter macOS aus zu starten, müssen Sie mit ``cd`` in den "
+"Ordner wechseln, in dem sich das Godot-Anwendungspaket befindet, und dann "
+"``Godot.app/Contents/MacOS/Godot`` gefolgt von beliebigen "
+"Kommandozeilenargumenten ausführen. Wenn Sie das Anwendungspaket ``Godot`` "
+"umbenannt haben, stellen Sie sicher, dass Sie diese Kommandozeile "
+"entsprechend ändern."
+
 msgid "Command line reference"
 msgstr "Kommandozeilen-Referenz"
 
@@ -107,19 +125,14 @@ msgstr ""
 "|release| Stummer Modus, unterdrückt stdout-Meldungen. Fehler werden "
 "weiterhin angezeigt."
 
+msgid "``--no-header``"
+msgstr "``--no-header``"
+
 msgid "**Run options**"
 msgstr "**Ausführen-Optionen**"
 
 msgid "``--``, ``++``"
 msgstr "``--``, ``++``"
-
-msgid ""
-"|release| Separator for user-provided arguments. Following arguments are not "
-"used by the engine, but can be read from ``OS.get_cmdline_user_args()``."
-msgstr ""
-"|release| Trennzeichen für vom Benutzer bereitgestellte Argumente. Die "
-"folgenden Argumente werden nicht von der Engine verwendet, können aber von "
-"``OS.get_cmdline_user_args()`` gelesen werden."
 
 msgid "``-e``, ``--editor``"
 msgstr "``-e``, ``--editor``"
@@ -135,6 +148,9 @@ msgstr ""
 "|editor| Projektmanager starten, auch wenn ein Projekt automatisch erkannt "
 "wird."
 
+msgid "``--recovery-mode``"
+msgstr "``--recovery-mode``"
+
 msgid "``--debug-server <uri>``"
 msgstr "``--debug-server <uri>``"
 
@@ -144,6 +160,12 @@ msgid ""
 msgstr ""
 "|editor| Debug-Server des Editors starten (``<protocol>://<host/IP>[:"
 "<port>]``, z. B. ``tcp://127.0.0.1:6007``)"
+
+msgid "``--dap-port <port>``"
+msgstr "``--dap-port <port>``"
+
+msgid "``--lsp-port <port>``"
+msgstr "``--lsp-port <port>``"
 
 msgid "``--quit``"
 msgstr "``--quit``"
@@ -176,6 +198,9 @@ msgstr ""
 
 msgid "``--path <directory>``"
 msgstr "``--path <Verzeichnis>``"
+
+msgid "``--scene <path>``"
+msgstr "``--scene <path>``"
 
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <file>``"
@@ -215,6 +240,9 @@ msgstr ""
 "|release| Display-Treiber (und Rendering-Treiber). Verwenden Sie zuerst ``--"
 "help``, um die Liste der verfügbaren Treiber anzuzeigen."
 
+msgid "``--audio-output-latency <ms>``"
+msgstr "``--audio-output-latency <ms>``"
+
 msgid "``--rendering-method <renderer>``"
 msgstr "``--rendering-method <renderer>``"
 
@@ -252,6 +280,9 @@ msgid ""
 msgstr ""
 "|release| Aktivieren Sie den Headless-Modus (``--display-driver headless --"
 "audio-driver Dummy``). Nützlich für Server und mit ``--script``."
+
+msgid "``--log-file``"
+msgstr "``--log-file``"
 
 msgid "``--write-movie <file>``"
 msgstr "``--write-movie <file>``"
@@ -324,6 +355,12 @@ msgstr "|release| Einzelnes Fenster verwenden (keine separaten Unterfenster)."
 msgid "``--xr-mode <mode>``"
 msgstr "``--xr-mode <mode>``"
 
+msgid "``--wid <window_id>``"
+msgstr "``--wid <window_id>``"
+
+msgid "``--accessibility <mode>``"
+msgstr "``--accessibility <mode>``"
+
 msgid "**Debug options**"
 msgstr "**Debug-Optionen**"
 
@@ -342,6 +379,9 @@ msgid ""
 msgstr ""
 "|release| Haltepunktliste als source::line Komma-getrennte Paare, keine "
 "Leerzeichen (stattdessen ``%20`` verwenden)."
+
+msgid "``--ignore-error-breaks``"
+msgstr "``--ignore-error-breaks``"
 
 msgid "``--profiling``"
 msgstr "``--profiling``"
@@ -376,8 +416,17 @@ msgid ""
 "|debug| Abort on GPU errors (usually validation layer errors), may help see "
 "the problem if your system freezes."
 msgstr ""
-"|debug| Abbruch bei GPU-Fehlern (in der Regel Validation Layer-Fehler), kann "
+"|debug| Abbruch bei GPU-Fehlern (in der Regel Validation-Layer-Fehler), kann "
 "helfen, das Problem zu erkennen, wenn Ihr System einfriert."
+
+msgid "``--generate-spirv-debug-info``"
+msgstr "``--generate-spirv-debug-info``"
+
+msgid "``--extra-gpu-memory-tracking``"
+msgstr "``--extra-gpu-memory-tracking``"
+
+msgid "``--accurate-breadcrumbs``"
+msgstr "``--accurate-breadcrumbs``"
 
 msgid "``--remote-debug <uri>``"
 msgstr "``--remote-debug <uri>``"
@@ -433,6 +482,12 @@ msgid ""
 msgstr ""
 "|debug| Alle StringName-Zuweisungen auf stdout ausgeben, wenn die Engine "
 "beendet wird."
+
+msgid "``--debug-canvas-item-redraw``"
+msgstr "``--debug-canvas-item-redraw``"
+
+msgid "``--max-fps <fps>``"
+msgstr "``--max-fps <fps>``"
 
 msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
@@ -631,6 +686,13 @@ msgstr "``--benchmark``"
 
 msgid "``--benchmark-file <path>``"
 msgstr "``--benchmark-file <path>``"
+
+msgid ""
+"|editor| Benchmark the runtime and save it to the given file path, in JSON "
+"format. ``<path>`` should be absolute."
+msgstr ""
+"|editor| Benchmarking der Laufzeit und im angegebenen Dateipfad im JSON-"
+"Format speichern. ``<path>`` sollte ein absoluter Pfad sein."
 
 msgid "``--test [--help]``"
 msgstr "``--test [--help]``"
@@ -902,13 +964,13 @@ msgstr ""
 "Die erste Zeile von ``sayhello.gd`` oben wird allgemein als *shebang* "
 "bezeichnet. Wenn sich die Godot-Binärdatei in Ihrem ``PATH`` als ``godot`` "
 "befindet, können Sie das Skript in modernen Linux-Distributionen sowie unter "
-"MacOS wie folgt ausführen:"
+"macOS wie folgt ausführen:"
 
 msgid ""
 "If the above doesn't work in your current version of Linux or macOS, you can "
 "always have the shebang run Godot straight from where it is located as "
 "follows:"
 msgstr ""
-"Wenn das oben genannte unter Ihrer aktuellen Linux- oder MacOS-Version nicht "
+"Wenn das oben genannte unter Ihrer aktuellen Linux- oder macOS-Version nicht "
 "funktioniert, können Sie den \"Shebang\" immer wie folgt direkt von Godot "
 "ausführen lassen:"

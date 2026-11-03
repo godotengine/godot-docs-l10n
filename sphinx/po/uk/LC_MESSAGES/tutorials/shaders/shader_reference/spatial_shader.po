@@ -677,6 +677,16 @@ msgstr ""
 "Для створення екземплярів змінна ``INSTANCE_CUSTOM`` містить користувацькі "
 "дані екземпляра. При використанні частинок ця інформація зазвичай така:"
 
+msgid "**x**: Current rotation angle in radians."
+msgstr "**x**: Поточний кут повороту в радіанах."
+
+msgid "**z**: Current animation frame."
+msgstr "**z**: Поточний кадр анімації."
+
+msgid "**y / w** (division): Lifetime fraction from ``0.0`` to ``1.0``."
+msgstr ""
+"**y / w** (ділення): Частка за весь час існування від ``0,0`` до ``1,0``."
+
 msgid ""
 "This allows you to easily adjust the shader to a particle system using "
 "default particle material. When writing a custom particle shader, this value "
@@ -1017,19 +1027,6 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "In vec4 **FRAGCOORD**"
 
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window. Upper-left of the viewport is the origin, ``(0.0, 0.0)``. Bottom-"
-"right of the viewport is ``(1.0, 1.0)``. ``z`` specifies fragment depth. It "
-"is also used as the output value for the fragment depth unless ``DEPTH`` is "
-"written to."
-msgstr ""
-"Координати центру пікселя в просторі екрана. ``xy`` визначають положення у "
-"вікні. Лівий верхній кут області відображення є початком координат, ``(0.0, "
-"0.0)``. Правий нижній кут області відображення — ``(1.0, 1.0)``. ``z`` "
-"визначає глибину фрагмента. Цей параметр також використовується як вихідне "
-"значення глибини фрагмента, якщо не вказано значення для параметра ``DEPTH``."
-
 msgid "in bool **FRONT_FACING**"
 msgstr "In bool **FRONT_FACING**"
 
@@ -1342,6 +1339,14 @@ msgstr ""
 "Маленька дзеркальна крапка додана поверх існуючої. Якщо використовується, "
 "Godot розраховує прозорий лак."
 
+msgid "out float **CLEARCOAT_ROUGHNESS**"
+msgstr "out float **CLEARCOAT_ROUGHNESS**"
+
+msgid "The roughness of the clearcoat. If used, Godot calculates clearcoat."
+msgstr ""
+"Шорсткість прозорого покриття. У разі його застосування Godot розраховує "
+"параметри прозорого покриття."
+
 msgid "out float **ANISOTROPY**"
 msgstr "Out float **ANISOTROPY**"
 
@@ -1386,6 +1391,14 @@ msgstr ""
 
 msgid "out float **SSS_TRANSMITTANCE_BOOST**"
 msgstr "Out float **SSS_TRANSMITTANCE_BOOST**"
+
+msgid ""
+"Boosts the subsurface scattering transmittance if set above ``0.0``. This "
+"makes the effect show up even on directly lit surfaces."
+msgstr ""
+"Якщо значення встановлено вище за ``0,0``, це збільшує коефіцієнт "
+"пропускання підповерхневого розсіювання. Завдяки цьому ефект стає помітним "
+"навіть на поверхнях, що освітлюються безпосередньо."
 
 msgid "inout vec3 **BACKLIGHT**"
 msgstr "Inout vec3 **BACKLIGHT**"

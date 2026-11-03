@@ -292,23 +292,6 @@ msgstr ""
 msgid "String format method"
 msgstr "字串格式化方法"
 
-msgid ""
-"There is also another way to format text in GDScript, namely "
-"the :ref:`String.format() <class_String_method_format>` method. It replaces "
-"all occurrences of a key in the string with the corresponding value. The "
-"method can handle arrays or dictionaries for the key/value pairs."
-msgstr ""
-"GDScript 也支援另一種格式化字串的方式，就是 :ref:`String.format() "
-"<class_String_method_format>` 方法。它會將字串中出現的所有索引鍵，替換為對應"
-"的值。這個方法可以處理陣列或字典型態的索引鍵／值組。"
-
-msgid ""
-"Arrays can be used as key, index, or mixed style (see below examples). Order "
-"only matters when the index or mixed style of Array is used."
-msgstr ""
-"陣列可以作為索引鍵、索引，或混合樣式使用（請見下方範例）。只有在用索引或混合"
-"樣式時才需注意順序。"
-
 msgid "A quick example in GDScript:"
 msgstr "GDScript 的簡易範例："
 
@@ -366,18 +349,8 @@ msgstr ""
 msgid "Array"
 msgstr "陣列"
 
-msgid ""
-"``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
-"\"Godette\"]])``"
-msgstr ""
-"``\"你好，{name} v{version}！\".format([[\"version\",\"3.0\"], [\"name\","
-"\"Godette\"]])``"
-
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 msgstr "``\"你好，{0} v{1}！\".format([\"Godette\",\"3.0\"])``"
-
-msgid "``\"Hi, {name} v{0}!\".format([\"3.0\", [\"name\",\"Godette\"]])``"
-msgstr "``\"你好，{name} v{0}！\".format([\"3.0\", [\"name\",\"Godette\"]])``"
 
 msgid "no index"
 msgstr "無索引"

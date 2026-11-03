@@ -431,6 +431,104 @@ msgid "Hardware/OS-specific"
 msgstr "针对硬件/操作系统"
 
 msgid ""
+"If your monitor supports it, consider enabling variable refresh rate (G-Sync/"
+"FreeSync) while leaving V-Sync enabled, then cap the framerate in the "
+"project settings to a slightly lower value than your monitor's maximum "
+"refresh rate as per `this page <https://blurbusters.com/howto-low-lag-vsync-"
+"on/>`__."
+msgstr ""
+"若您的显示器支持该功能，可考虑启用可变刷新率（G-Sync/FreeSync）同时保持 V-"
+"Sync 为开启状态；随后根据 `this page <https://blurbusters.com/howto-low-lag-"
+"vsync-on/>`__. 的建议，在项目设置中将帧率上限设为略低于显示器最大刷新率的数"
+"值。"
+
+msgid ""
+"This may be counterintuitive at first, but capping the FPS below the maximum "
+"refresh rate range ensures that the OS never has to wait for vertical "
+"blanking to finish. This leads to *similar* input lag as V-Sync disabled "
+"with the same framerate cap (usually less than 1 ms greater), but without "
+"any tearing."
+msgstr ""
+"这乍看可能有违直觉，但将 FPS 限制在最大刷新率范围之下，可确保操作系统无需等待"
+"垂直同步完成。由此产生的输入延迟与禁用 V-Sync 且采用相同帧率限制时的延迟 *相"
+"近* （通常相差不到 1 毫秒），且不会出现画面撕裂现象。"
+
+msgid ""
+"The formula used to determine the framerate cap is ``refresh - (refresh * "
+"refresh / 3600.0)`` where ``refresh`` is the monitor's refresh rate in Hz. "
+"This table shows the framerate cap to use for common refresh rates (the cap "
+"is rounded down to the nearest integer):"
+msgstr ""
+"用于确定帧率上限的计算公式为 ``refresh - (refresh * refresh / 3600.0)`` ，其"
+"中 ``refresh`` 表示显示器的刷新率（单位：Hz）。本表列出了适用于常见刷新率的帧"
+"率上限值（该值已向下取整至最接近的整数）："
+
+msgid "Refresh rate"
+msgstr "刷新率"
+
+msgid "Framerate cap"
+msgstr "帧率上限"
+
+msgid "60 Hz"
+msgstr "60 Hz"
+
+msgid "58 FPS"
+msgstr "58 FPS"
+
+msgid "75 Hz"
+msgstr "75 Hz"
+
+msgid "73 FPS"
+msgstr "73 FPS"
+
+msgid "120 Hz"
+msgstr "120 Hz"
+
+msgid "115 FPS"
+msgstr "115 FPS"
+
+msgid "144 Hz"
+msgstr "144 Hz"
+
+msgid "138 FPS"
+msgstr "138 FPS"
+
+msgid "165 Hz"
+msgstr "165 Hz"
+
+msgid "157 FPS"
+msgstr "157 FPS"
+
+msgid "240 Hz"
+msgstr "240 Hz"
+
+msgid "224 FPS"
+msgstr "224 FPS"
+
+msgid "360 Hz"
+msgstr "360 Hz"
+
+msgid "324 FPS"
+msgstr "324 FPS"
+
+msgid "480 Hz"
+msgstr "480 Hz"
+
+msgid "416 FPS"
+msgstr "416 FPS"
+
+msgid ""
+"This framerate cap can be set by changing the **Application > Run > Max "
+"FPS** project setting or assigning ``Engine.max_fps`` at runtime in a "
+"script. At higher refresh rates, a lower cap is needed to ensure timing "
+"inaccuracies don't cause the display to engage V-Sync (which would increase "
+"input lag)."
+msgstr ""
+"此帧率上限可通过修改 **应用程序 > 运行 > 最大 FPS** 项目设置，或在运行时通过"
+"脚本为 ``Engine.max_fps`` 设置该上限来设定。在较高刷新率下，需设置较低的帧率"
+"上限，以确保时序误差不会导致显示器启用垂直同步（这会增加输入延迟）。"
+
+msgid ""
 "On some platforms, you can also opt into a low-latency mode in the graphics "
 "driver options (such as the NVIDIA Control Panel on Windows). The **Ultra** "
 "setting will give you the lowest possible latency, at the cost of slightly "
@@ -457,11 +555,12 @@ msgid ""
 "game sensitivity to reduce mouse latency <https://www.youtube.com/watch?"
 "v=6AoRfv9W110>`__."
 msgstr ""
-"此外，请确保你的鼠标被配置为使用其最高轮询率（游戏鼠标通常为 1,000 Hz，有时更"
-"高）。但是，高 USB 轮询率可能会导致 CPU 使用率过高，因此对于低端 CPU，500 Hz "
-"可能是更安全的选择。如果你的鼠标提供多个 :abbr:`DPI (Dots Per Inch，每英寸点"
-"数)` 设置，请考虑`使用尽可能最高的设置并降低游戏内灵敏度以减少鼠标延迟 "
-"<https://www.youtube.com/watch?v=6AoRfv9W110>`__\\ 。"
+"此外，请确保您的鼠标已设置为使用其最高轮询率（对于游戏鼠标，通常为 1,000 Hz，"
+"有时甚至更高）。然而，较高的 USB 轮询率可能会导致 CPU 占用率升高，因此对于低"
+"端 CPU，选择 500 Hz 可能是更稳妥的选择。如果您的鼠标提供多种 :abbr:`DPI "
+"(Dots Per Inch)` 设置，也可考虑使用 `using the highest possible setting and "
+"reducing in-game sensitivity to reduce mouse latency <https://"
+"www.youtube.com/watch?v=6AoRfv9W110>`__. 。"
 
 msgid ""
 "On Linux when using X11, disabling compositing in window managers that allow "

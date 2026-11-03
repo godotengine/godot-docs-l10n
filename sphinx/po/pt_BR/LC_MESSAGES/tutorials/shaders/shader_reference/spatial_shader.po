@@ -683,6 +683,15 @@ msgstr ""
 "personalizados da instância. Ao usar partículas, essa informação geralmente "
 "é:"
 
+msgid "**x**: Current rotation angle in radians."
+msgstr "**x**: Ângulo de rotação atual em radianos."
+
+msgid "**z**: Current animation frame."
+msgstr "**z**: Quadro (frame) de animação atual."
+
+msgid "**y / w** (division): Lifetime fraction from ``0.0`` to ``1.0``."
+msgstr "**y / w** (divisão): Fração do tempo de vida de ``0.0`` a ``1.0``."
+
 msgid ""
 "This allows you to easily adjust the shader to a particle system using "
 "default particle material. When writing a custom particle shader, this value "
@@ -1033,19 +1042,6 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
 
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window. Upper-left of the viewport is the origin, ``(0.0, 0.0)``. Bottom-"
-"right of the viewport is ``(1.0, 1.0)``. ``z`` specifies fragment depth. It "
-"is also used as the output value for the fragment depth unless ``DEPTH`` is "
-"written to."
-msgstr ""
-"Coordenada do centro do pixel no espaço da tela. ``xy`` especifica a posição "
-"na janela. O canto superior esquerdo da viewport é a origem, ``(0.0, 0.0)``. "
-"O canto inferior direito da viewport é ``(1.0, 1.0)``. ``z`` especifica a "
-"profundidade do fragmento. Também é usado como o valor de saída para a "
-"profundidade do fragmento, a menos que ``DEPTH`` seja escrito."
-
 msgid "in bool **FRONT_FACING**"
 msgstr "in bool **FRONT_FACING**"
 
@@ -1363,6 +1359,14 @@ msgstr ""
 "Pequeno lobo especular adicionado no topo do já existente. Se usado, o Godot "
 "calcula o clearcoat."
 
+msgid "out float **CLEARCOAT_ROUGHNESS**"
+msgstr "out float **CLEARCOAT_ROUGHNESS**"
+
+msgid "The roughness of the clearcoat. If used, Godot calculates clearcoat."
+msgstr ""
+"A rugosidade do clearcoat (camada de verniz). Se usado, o Godot calcula o "
+"clearcoat."
+
 msgid "out float **ANISOTROPY**"
 msgstr "out float **ANISOTROPY**"
 
@@ -1407,6 +1411,14 @@ msgstr ""
 
 msgid "out float **SSS_TRANSMITTANCE_BOOST**"
 msgstr "out float **SSS_TRANSMITTANCE_BOOST**"
+
+msgid ""
+"Boosts the subsurface scattering transmittance if set above ``0.0``. This "
+"makes the effect show up even on directly lit surfaces."
+msgstr ""
+"Aumenta a transmitância do espalhamento subsuperficial (subsurface "
+"scattering) se definido acima de ``0.0``. Isso faz com que o efeito apareça "
+"mesmo em superfícies diretamente iluminadas."
 
 msgid "inout vec3 **BACKLIGHT**"
 msgstr "inout vec3 **BACKLIGHT**"

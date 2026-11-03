@@ -12,10 +12,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Debugging on macOS"
-msgstr "Debuggen unter macOS"
+msgstr "Unter macOS debuggen"
 
 msgid "Debugging Godot editor"
-msgstr "Debuggen des Godot Editors"
+msgstr "Godot-Editor debuggen"
 
 msgid ""
 "Attaching a debugger to the signed macOS process requires the "
@@ -28,7 +28,7 @@ msgstr ""
 "Berechtigung \"com.apple.security.get-task-allow\" erforderlich, die "
 "standardmäßig nicht aktiviert ist, da Anwendungen nicht notarisiert werden "
 "können, solange sie aktiviert ist. Wenn Sie einen offiziellen Build des "
-"Editors debuggen wollen, sollte er mit den richtigen Berechtigungen neu "
+"Editors debuggen möchten, sollte er mit den richtigen Berechtigungen neu "
 "signiert werden."
 
 msgid ""
@@ -37,8 +37,13 @@ msgstr ""
 "Erstellen Sie eine Textdatei ``editor.entitlements`` mit dem folgenden "
 "Inhalt:"
 
+msgid "Then use the following command to re-sign the editor:"
+msgstr ""
+"Verwenden Sie anschließend den folgenden Befehl, um den Editor erneut zu "
+"signieren:"
+
 msgid "Debugging exported project"
-msgstr "Debuggen eines exportierten Projekts"
+msgstr "Exportiertes Projekt debuggen"
 
 msgid ""
 "To allow debugging, select the ``codesign\\debugging`` "

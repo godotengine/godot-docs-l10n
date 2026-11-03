@@ -511,6 +511,113 @@ msgid "Hardware/OS-specific"
 msgstr "Аппаратное/ОС-специфическое"
 
 msgid ""
+"If your monitor supports it, consider enabling variable refresh rate (G-Sync/"
+"FreeSync) while leaving V-Sync enabled, then cap the framerate in the "
+"project settings to a slightly lower value than your monitor's maximum "
+"refresh rate as per `this page <https://blurbusters.com/howto-low-lag-vsync-"
+"on/>`__."
+msgstr ""
+"Если ваш монитор поддерживает переменную частоту обновления (G-Sync/"
+"FreeSync), оставьте V-Sync (вертикальную синхронизацию) включённой, а затем "
+"ограничьте частоту кадров в настройках проекта до значения, немного "
+"меньшего, чем максимальная частота обновления вашего монитора, как указано "
+"на `этой странице <https://blurbusters.com/howto-low-lag-vsync-on/>`__."
+
+msgid ""
+"This may be counterintuitive at first, but capping the FPS below the maximum "
+"refresh rate range ensures that the OS never has to wait for vertical "
+"blanking to finish. This leads to *similar* input lag as V-Sync disabled "
+"with the same framerate cap (usually less than 1 ms greater), but without "
+"any tearing."
+msgstr ""
+"На первый взгляд это может показаться нелогичным, но ограничение FPS ниже "
+"максимального диапазона частоты обновления гарантирует, что операционной "
+"системе никогда не придётся ждать завершения вертикального гашения. Это "
+"приводит к *аналогичной* задержке ввода, как и при отключенной V-Sync с тем "
+"же ограничением частоты кадров (обычно менее чем на 1 мс больше), но без "
+"разрывов изображения."
+
+msgid ""
+"The formula used to determine the framerate cap is ``refresh - (refresh * "
+"refresh / 3600.0)`` where ``refresh`` is the monitor's refresh rate in Hz. "
+"This table shows the framerate cap to use for common refresh rates (the cap "
+"is rounded down to the nearest integer):"
+msgstr ""
+"Формула для определения ограничения частоты кадров: ``refresh - (refresh * "
+"refresh / 3600.0)``, где ``refresh`` — частота обновления монитора в Гц. В "
+"таблице показано ограничение частоты кадров для распространенных частот "
+"обновления (ограничение округляется до ближайшего целого числа в меньшую "
+"сторону):"
+
+msgid "Refresh rate"
+msgstr "Частота обновления"
+
+msgid "Framerate cap"
+msgstr "Ограничение частоты кадров"
+
+msgid "60 Hz"
+msgstr "60 Hz"
+
+msgid "58 FPS"
+msgstr "58 FPS"
+
+msgid "75 Hz"
+msgstr "75 Hz"
+
+msgid "73 FPS"
+msgstr "73 FPS"
+
+msgid "120 Hz"
+msgstr "120 Hz"
+
+msgid "115 FPS"
+msgstr "115 FPS"
+
+msgid "144 Hz"
+msgstr "144 Hz"
+
+msgid "138 FPS"
+msgstr "138 FPS"
+
+msgid "165 Hz"
+msgstr "165 Hz"
+
+msgid "157 FPS"
+msgstr "157 FPS"
+
+msgid "240 Hz"
+msgstr "240 Hz"
+
+msgid "224 FPS"
+msgstr "224 FPS"
+
+msgid "360 Hz"
+msgstr "360 Hz"
+
+msgid "324 FPS"
+msgstr "324 FPS"
+
+msgid "480 Hz"
+msgstr "480 Hz"
+
+msgid "416 FPS"
+msgstr "416 FPS"
+
+msgid ""
+"This framerate cap can be set by changing the **Application > Run > Max "
+"FPS** project setting or assigning ``Engine.max_fps`` at runtime in a "
+"script. At higher refresh rates, a lower cap is needed to ensure timing "
+"inaccuracies don't cause the display to engage V-Sync (which would increase "
+"input lag)."
+msgstr ""
+"Ограничение частоты кадров можно установить, изменив параметр проекта "
+"**Application > Run > Max FPS (Приложение > Запуск > Максимальная частота "
+"кадров)** или назначив значение ``Engine.max_fps`` во время выполнения в "
+"скрипте. При более высоких частотах обновления требуется меньшее "
+"ограничение, чтобы гарантировать, что неточности синхронизации не приведут к "
+"включению V-Sync на дисплее (что увеличит задержку ввода)."
+
+msgid ""
 "On some platforms, you can also opt into a low-latency mode in the graphics "
 "driver options (such as the NVIDIA Control Panel on Windows). The **Ultra** "
 "setting will give you the lowest possible latency, at the cost of slightly "

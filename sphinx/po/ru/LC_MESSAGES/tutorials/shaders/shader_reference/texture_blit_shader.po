@@ -11,6 +11,35 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Texture blit shaders"
+msgstr "Шейдеры блитинга текстур"
+
+msgid ""
+"Texture blit shaders are used to define the behavior of blit calls on "
+"a :ref:`DrawableTexture2D <doc_drawable_textures>`."
+msgstr ""
+"Шейдеры для операций копирования текстур (blit saders) используются для "
+"определения поведения вызовов копирования (blit calls) применительно к "
+"объекту :ref:`DrawableTexture2D <doc_drawable_textures>`."
+
+msgid ""
+"Texture blit shaders only have one processing function, the ``blit()`` "
+"function, which runs for every pixel of the source texture inside the rect "
+"given to ``blit_rect()``."
+msgstr ""
+"Шейдеры для копирования текстур (texture blit shaders) содержат только одну "
+"функцию обработки ``blit()``, которая выполняется для каждого пикселя "
+"исходной текстуры в пределах прямоугольной области, заданной в "
+"``blit_rect()``."
+
+msgid ""
+"See :ref:`doc_drawable_textures` for more information on how to use texture "
+"blit shaders as part of a DrawableTexture."
+msgstr ""
+"Дополнительные сведения об использовании шейдеров для копирования текстур "
+"(texture blit shaders) в составе DrawableTexture см. в "
+"разделе :ref:`doc_drawable_textures`."
+
 msgid "Render modes"
 msgstr "Режимы визуализации"
 
@@ -23,8 +52,16 @@ msgstr "Описание"
 msgid "**blend_disabled**"
 msgstr "**blend_disabled**"
 
+msgid "Disable blending, values (including alpha) are written as-is. Default."
+msgstr ""
+"Отключить смешивание, значения (в том числе альфа) записываются как есть. По "
+"умолчанию."
+
 msgid "**blend_mix**"
 msgstr "**blеnd_mix**"
+
+msgid "Mix blend mode (alpha is transparency)."
+msgstr "Режим смешивания Mix (альфа как прозрачность)."
 
 msgid "**blend_add**"
 msgstr "**blеnd_add**"
@@ -43,6 +80,11 @@ msgstr "**blеnd_mul**"
 
 msgid "Multiplicative blend mode."
 msgstr "Режим наложения с умножением."
+
+msgid "There is no premultiplied alpha blend mode for Texture blit shaders."
+msgstr ""
+"Режим смешивания с предварительным умножением альфа для шейдеров блитинга "
+"текстур отсутствует."
 
 msgid "Built-ins"
 msgstr "Встроенные функции"
@@ -106,11 +148,80 @@ msgstr ""
 msgid "in float **TAU**"
 msgstr "в float **TAU**"
 
+msgid ""
+"A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
+"radians in full turn."
+msgstr ""
+"Константа ``TAU`` (``6.283185``). Эквивалент ``PI * 2`` и количество радиан "
+"в полном обороте."
+
 msgid "in float **E**"
 msgstr "В float **E**"
+
+msgid ""
+"An ``E`` constant (``2.718281``). Euler's number and a base of the natural "
+"logarithm."
+msgstr ""
+"Константа ``E`` (``2.718281``). Число Эйлера, основание натурального "
+"логарифма."
+
+msgid "Blit built-ins"
+msgstr "Встроенные переменные блитинга"
+
+msgid "Source textures"
+msgstr "Исходные текстуры"
+
+msgid ""
+"Texture blit shaders have up to 4 source textures bound as inputs. These can "
+"be accessed with a ``sampler2D`` using ``hint_blit_source0``, "
+"``hint_blit_source1``, ``hint_blit_source2``, and ``hint_blit_source3``."
+msgstr ""
+"Шейдеры для копирования текстур (texture blit shaders) могут иметь до 4 "
+"исходных текстур, привязанных в качестве входных данных. Доступ к ним "
+"осуществляется через `sampler2D` с использованием подсказок "
+"`hint_blit_source0`, `hint_blit_source1`, `hint_blit_source2` и "
+"`hint_blit_source3`."
 
 msgid "in vec4 **FRAGCOORD**"
 msgstr "vec4 **FRAGCOORD**"
 
 msgid "in vec2 **UV**"
 msgstr "vec2 **UV**"
+
+msgid ""
+"UV from the ``vertex()`` function. This is set to sample all of a source "
+"texture."
+msgstr ""
+"UV из функции ``vertex()``. Настроено на выборку всей исходной текстуры."
+
+msgid "in vec4 **MODULATE**"
+msgstr "in vec4 **MODULATE**"
+
+msgid "``MODULATE`` color passed in by RenderingServer API."
+msgstr "Цвет ``MODULATE``, передаваемый через API RenderingServer."
+
+msgid "out vec4 **COLOR0**"
+msgstr "out vec4 **COLOR0**"
+
+msgid ""
+"Output color to blended with the DrawableTexture target. Initialized to "
+"``(0.0, 0.0, 0.0, 0.0)``."
+msgstr ""
+"Выходной цвет, который будет смешиваться с целевым объектом DrawableTexture. "
+"Изначально установлен в значение ``(0.0, 0.0, 0.0, 0.0)``."
+
+msgid "out vec4 **COLOR1**"
+msgstr "out vec4 **COLOR1**"
+
+msgid ""
+"Output color to blended with an extra DrawableTexture target. Initialized to "
+"``(0.0, 0.0, 0.0, 0.0)``."
+msgstr ""
+"Выходной цвет, который будет смешиваться с дополнительным целевым объектом "
+"DrawableTexture. Изначально установлен в значение ``(0.0, 0.0, 0.0, 0.0)``."
+
+msgid "out vec4 **COLOR2**"
+msgstr "out vec4 **COLOR2**"
+
+msgid "out vec4 **COLOR3**"
+msgstr "out vec4 **COLOR3**"

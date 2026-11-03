@@ -67,6 +67,9 @@ msgid ""
 "generation:"
 msgstr "为 scons 提供额外的参数，以请求生成解决方案文件。"
 
+msgid "Add ``vsproj=yes dev_build=yes`` to the scons command"
+msgstr "在 scons 命令中添加 ``vsproj=yes dev_build=yes``"
+
 msgid ""
 "The ``vsproj`` parameter signals that you want Visual Studio solution "
 "generated. The ``dev_build`` parameter ensures the debug symbols are "
@@ -75,6 +78,13 @@ msgstr ""
 "``vsproj`` 参数表示要生成 Visual Studio 项目文件。而 ``dev_build`` 参数则能确"
 "保在生成过程中包含调试符号（debug symbols），这样你就可以执行一系列调试操作"
 "了，比如使用断点来逐步执行代码。"
+
+msgid ""
+"Each SCons run only generates the ``.generated.props`` file for a single "
+"Solution Configuration. Please run SCons once per target you plan to use:"
+msgstr ""
+"每次运行 SCons 仅为单个解决方案配置生成 ``.generated. props`` 文件。请针对您"
+"计划使用的每个目标分别运行一次 SCons："
 
 msgid "Open the generated ``godot.sln`` in Rider."
 msgstr "在 Rider 中打开生成的 ``godot.sln`` 文件。"
@@ -151,6 +161,18 @@ msgstr ""
 
 msgid "Debug visualizers"
 msgstr "调试观察器"
+
+msgid ""
+"Debug visualizers customize how complex data structures are displayed during "
+"debugging. The \"natvis\" (short for \"Native Visualization\") files built-"
+"in with Godot are automatically used."
+msgstr ""
+"调试可视化工具可自定义在调试过程中复杂数据结构的显示方式。Godot 内置的 "
+"“natvis”（“Native Visualization” 的缩写）文件将被自动使用。"
+
+msgid "On macOS and Linux, natvis support requires Rider 2026.2 or later."
+msgstr ""
+"在 macOS 和 Linux 系统上，使用 natvis 功能需安装 Rider 2026.2 或更高版本。"
 
 msgid "Unit testing"
 msgstr "单元测试"

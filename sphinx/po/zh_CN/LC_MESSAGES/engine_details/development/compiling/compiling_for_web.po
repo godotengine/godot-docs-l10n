@@ -28,12 +28,6 @@ msgstr "需求"
 msgid "To compile export templates for the Web, the following is required:"
 msgstr "编译 Web 的导出模板需要以下内容："
 
-msgid "`Emscripten 4.0.0+ <https://emscripten.org>`__."
-msgstr "`Emscripten 4.0.0+ <https://emscripten.org>`__ 。"
-
-msgid "`Python 3.9+ <https://www.python.org/>`__."
-msgstr "`Python 3.9+ <https://www.python.org/>`__。"
-
 msgid "`SCons 4.4+ <https://scons.org/pages/download.html>`__ build system."
 msgstr "`SCons 4.4+ <https://scons.org/pages/download.html>`__ 构建系统。"
 
@@ -113,25 +107,11 @@ msgid "GDExtension"
 msgstr "GDExtension"
 
 msgid ""
-"The default export templates do not include GDExtension support for "
-"performance and compatibility reasons. See the :ref:`export page "
-"<doc_javascript_export_options>` for more info."
-msgstr ""
-"由于性能和兼容性的原因，默认的导出模板不包含对 GDExtension 的支持。详见"
-"\\ :ref:`导出页面 <doc_javascript_export_options>`\\ 。"
-
-msgid ""
 "You can build the export templates using the option ``dlink_enabled=yes`` to "
 "enable GDExtension support:"
 msgstr ""
 "构建导出模板时使用选项 ``dlink_enabled=yes`` 选项即可启用对 GDExtension 的支"
 "持："
-
-msgid ""
-"Once finished, the resulting file will be placed in the ``bin`` "
-"subdirectory. Its name will have ``_dlink`` added."
-msgstr ""
-"完成后，可以将得到的文件放入子目录 ``bin`` 中。名称中带有 ``_dlink``\\ 。"
 
 msgid ""
 "Finally, rename the zip archives to ``web_dlink_release.zip`` and "
@@ -161,13 +141,6 @@ msgstr ""
 "编译完成后，生成的文件会被放在 ``bin`` 子文件夹里。它的名字会是 "
 "``godot.web.editor.wasm32.zip`` 。你只需要把这个压缩包里的内容上传到你的网页"
 "服务器上，然后用浏览器访问它，就可以直接使用这个编辑器啦。"
-
-msgid ""
-"Refer to the :ref:`export page <doc_javascript_export_options>` for the web "
-"server requirements."
-msgstr ""
-"关于网页服务器的要求，请参考 :ref:`export page "
-"<doc_javascript_export_options>` 。"
 
 msgid ""
 "The Godot repository includes a `Python script to host a local web server "

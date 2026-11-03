@@ -91,7 +91,7 @@ msgstr "Signieren der exportierten App"
 
 msgid "Select ``Xcode codesign`` in the ``Code Signing > Codesign`` option."
 msgstr ""
-"Wählen Sie ``Xcode Codesign`` in der Option ``Code Signing > Codesign``."
+"Wählen Sie ``Xcode Codesign`` in der Option ``Code Signing > Codesign`` aus."
 
 msgid ""
 "Set valid Apple ID certificate identity (certificate \"Common Name\") in the "
@@ -102,6 +102,12 @@ msgstr ""
 
 msgid "To notarize exported app"
 msgstr "Notarisieren der exportierten App"
+
+msgid ""
+"Select ``Xcode notarytool`` in the ``Notarization > Notarization`` option."
+msgstr ""
+"Wählen Sie ``Xcode notarytool`` in der Option ``Notarization > "
+"Notarization`` aus."
 
 msgid "Disable the ``Debugging`` entitlement."
 msgstr "Deaktivieren Sie die Berechtigung ``Debugging``."
@@ -154,12 +160,20 @@ msgstr ""
 "Wenn Sie ein Apple Developer ID-Zertifikat haben und von Linux oder Windows "
 "exportieren"
 
+msgid "Select ``rcodesign`` in the ``Code Signing > Codesign`` option."
+msgstr ""
+"Wählen Sie ``rcodesign`` in der Option ``Code Signing > Codesign`` aus."
+
 msgid ""
 "Set valid Apple ID PKCS #12 certificate file and password in the ``Code "
 "Signing`` section."
 msgstr ""
 "Setzen Sie eine gültige Apple ID PKCS #12 Zertifikatsdatei und ein Passwort "
 "im Abschnitt ``Code Signing``."
+
+msgid "Select ``rcodesign`` in the ``Notarization > Notarization`` option."
+msgstr ""
+"Wählen Sie ``rcodesign`` in der Option ``Notarization > Notarization`` aus."
 
 msgid ""
 "Set valid `App Store Connect <https://developer.apple.com/documentation/"
@@ -190,11 +204,11 @@ msgid ""
 "Select ``Built-in (ad-hoc only)`` in the ``Code Signing > Codesign`` option."
 msgstr ""
 "Wählen Sie ``Built-in (nur ad-hoc)`` in der Option ``Code Signing > "
-"Codesign``."
+"Codesign`` aus."
 
 msgid "Select ``Disabled`` in the ``Notarization > Notarization`` option."
 msgstr ""
-"Wählen Sie ``Deaktiviert`` in der Option ``Notarization > Notarization``."
+"Wählen Sie ``Deaktiviert`` in der Option ``Notarization > Notarization`` aus."
 
 msgid ""
 "In this case Godot will use an ad-hoc signature, which will make running an "

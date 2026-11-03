@@ -419,14 +419,6 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
 
-msgid ""
-"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
-"viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``. Bottom-"
-"right of the viewport is ``(1.0, 1.0)``."
-msgstr ""
-"像素中心的坐标。在屏幕空间中。``xy`` 指定视口中的位置。视口的左上角是原点 "
-"``(0.0, 0.0)`` 。视口的右下角是 ``(1.0, 1.0)``。"
-
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "in vec2 **SCREEN_PIXEL_SIZE**"
 
@@ -591,6 +583,14 @@ msgstr ""
 "下面是一个光照着色器（light shader）的示例，它会将 CanvasItem（画布项）的法线"
 "贴图（normal map）也纳入计算："
 
+msgid ""
+"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
+"viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``. Bottom-"
+"right of the viewport is ``(1.0, 1.0)``."
+msgstr ""
+"像素中心的坐标。在屏幕空间中。``xy`` 指定视口中的位置。视口的左上角是原点 "
+"``(0.0, 0.0)`` 。视口的右下角是 ``(1.0, 1.0)``。"
+
 msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
 
@@ -625,6 +625,15 @@ msgstr "点精灵的UV."
 
 msgid "in vec4 **LIGHT_COLOR**"
 msgstr "in vec4 **LIGHT_COLOR**"
+
+msgid ""
+":ref:`Color<class_Light2D_property_color>` of the :ref:`class_Light2D`. If "
+"the light is a :ref:`class_PointLight2D`, it's multiplied by the "
+"light's :ref:`texture<class_PointLight2D_property_texture>`."
+msgstr ""
+":ref:`class_Light2D` 的 :ref:`Color<class_Light2D_property_color>` 。若该光"
+"为 :ref:`class_PointLight2D` ，则将其乘以该光"
+"的 :ref:`texture<class_PointLight2D_property_texture>` 。"
 
 msgid "in float **LIGHT_ENERGY**"
 msgstr "in float **LIGHT_ENERGY**"

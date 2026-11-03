@@ -148,6 +148,9 @@ msgstr ""
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript\\ :ref:`デバッガー <doc_debugger_panel>`\\ 。"
 
+msgid "Supports debugging in threads."
+msgstr "スレッドでのデバッグをサポートします。"
+
 msgid ""
 "Visual profiler with CPU and GPU time indications for each step of the "
 "rendering pipeline."
@@ -188,6 +191,9 @@ msgstr ""
 "プロジェクトを:ref:`エディターに埋め込んで <doc_game_embedding>`起動するオプ"
 "ション。"
 
+msgid "Ruler tool to measure distances in 2D and 3D."
+msgstr "2Dと3Dで距離を測るための定規ツール。"
+
 msgid "Built-in offline class reference documentation."
 msgstr "内蔵かつオフラインで読めるクラスリファレンスドキュメント。"
 
@@ -198,11 +204,25 @@ msgid "**Plugins:**"
 msgstr "**プラグイン:**"
 
 msgid ""
+"Editor plugins can be downloaded from the :ref:`Asset Store "
+"<doc_what_is_asset_store>` to extend editor functionality."
+msgstr ""
+":ref:`アセットストア<doc_what_is_asset_store>` からエディタプラグインをダウン"
+"ロードして、エディタの機能を拡張できます。"
+
+msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
 "新しい機能を追加したりワークフロー高速化するために、GDScript を使用して"
 "\\ :ref:`独自のプラグインを作成し<doc_making_plugins>`\\てください。"
+
+msgid ""
+":ref:`Download projects from the Asset Store <doc_using_asset_store_editor>` "
+"in the Project Manager and import them directly."
+msgstr ""
+"プロジェクトマネージャーで :ref:`アセットストアからプロジェクトをダウンロー"
+"ド <doc_using_asset_store_editor>` し、直接インポートします。"
 
 msgid "Rendering"
 msgstr "レンダリング"
@@ -261,9 +281,6 @@ msgid ""
 msgstr ""
 ":ref:`class_Polygon2D` や :ref:`class_Line2D` のような線やポリゴンを描くため"
 "の高レベルなツールのテクスチャリングへの対応。"
-
-msgid "AnimatedSprite2D as a helper for creating animated sprites."
-msgstr "アニメーションするスプライトを作るのに役立つAnimatedSprite2D。"
 
 msgid "Parallax layers."
 msgstr "視差レイヤー。"
@@ -1126,12 +1143,6 @@ msgstr ""
 "ファイルサイズと依存関係を抑えるために、異なるバイナリでパッケージ化されてい"
 "ます。"
 
-msgid "Supports .NET 8 and higher."
-msgstr ".NET8 以上に対応。"
-
-msgid "Full support for the C# 12.0 syntax and features."
-msgstr "C# 12.0 構文と機能を完全サポート。"
-
 msgid ""
 "Supports Windows, Linux, and macOS. Since Godot 4.2, experimental support "
 "for Android and iOS is also available."
@@ -1916,14 +1927,6 @@ msgstr ""
 
 msgid "Licensed under the permissive MIT license."
 msgstr "ライセンスは、寛容な MIT ライセンスです。"
-
-msgid ""
-"Open development process with `contributions welcome <https://"
-"contributing.godotengine.org/en/latest/organization/"
-"how_to_contribute.html>`__."
-msgstr ""
-"オープンな開発プロセスで、 `あらゆる貢献を歓迎します "
-"<doc_ways_to_contribute>`__ 。"
 
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"

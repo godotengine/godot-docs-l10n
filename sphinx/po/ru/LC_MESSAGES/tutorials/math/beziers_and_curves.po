@@ -136,13 +136,6 @@ msgstr ""
 msgid "``point0 = p0``: Is the first point, the source"
 msgstr "`point0 = p0`: Это первая точка, источник"
 
-msgid "``control0 = p1 - p0``: Is a vector relative to the first control point"
-msgstr "`control0 = p1 - p0`: Это вектор относительно первой контрольной точки"
-
-msgid ""
-"``control1 = p3 - p2``: Is a vector relative to the second control point"
-msgstr "`control1 = p3 - p2`: Это вектор относительно второй контрольной точки"
-
 msgid "``point1 = p3``: Is the second point, the destination"
 msgstr "`point1 = p3`: Это вторая точка, пункт назначения"
 
@@ -155,6 +148,32 @@ msgstr ""
 "являются относительными векторами к соответствующим точкам. Если вы раньше "
 "использовали графические или анимационные программы, это может показаться "
 "знакомым:"
+
+msgid ""
+"This is how graphics software present Bezier curves to the users, and how "
+"they work and look in Godot."
+msgstr ""
+"Именно так графическое программное обеспечение представляет пользователям "
+"кривые Безье, а также то, как они работают и выглядят в Godot."
+
+msgid "Curve2D, Curve3D, Path2D, and Path3D"
+msgstr "Curve2D, Curve3D, Path2D и Path3D"
+
+msgid ""
+"In Godot, there are two resources types to efficiently store curves of any "
+"length: :ref:`Curve2D <class_Curve2D>` and :ref:`Curve3D <class_Curve3D>` "
+"(for 2D and 3D respectively)."
+msgstr ""
+"В Godot есть два типа ресурсов для эффективного хранения кривых любой "
+"длины: :ref:`Curve2D <class_Curve2D>` и :ref:`Curve3D <class_Curve3D>` (для "
+"2D и 3D соответственно)."
+
+msgid ""
+"They are often associated with their respective nodes: :ref:`Path2D "
+"<class_Path2D>` and :ref:`Path3D <class_Path3D>`."
+msgstr ""
+"Они часто связаны с соответствующими узлами: :ref:`Path2D <class_Path2D>` "
+"и :ref:`Path3D <class_Path3D>`."
 
 msgid ""
 "Using them, however, may not be completely obvious, so following is a "

@@ -24,6 +24,13 @@ msgstr ""
 "случайно по краям экрана, выбирать случайное направление и двигаться по "
 "прямой линии."
 
+msgid ""
+"We'll create a ``Mob`` scene, which we can then *instantiate* to create any "
+"number of independent mobs in the game."
+msgstr ""
+"Мы создадим сцену ``Mob``, которую затем сможем *инстанцировать*, чтобы "
+"создать в игре любое количество независимых мобов."
+
 msgid "Node setup"
 msgstr "Настройка узла"
 
@@ -128,6 +135,9 @@ msgstr "Сохраните сцену."
 msgid "Enemy script"
 msgstr "Скрипт врага"
 
+msgid "Attach a script to the ``Mob`` node like this:"
+msgstr "Прикрепите скрипт к узлу ``Mob`` следующим образом:"
+
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we play the "
 "animation and randomly choose one of the three animation types:"
@@ -179,6 +189,9 @@ msgid ""
 msgstr ""
 "``queue_free()`` — это функция, которая по сути «освобождает» или удаляет "
 "узел в конце кадра."
+
+msgid "This completes the ``Mob`` scene."
+msgstr "На этом завершается работа над сценой ``Mob``."
 
 msgid ""
 "With the player and enemies ready, in the next part, we'll bring them "

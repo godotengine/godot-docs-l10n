@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Godot puede utilizarse con un editor de texto externo, como Sublime Text o "
 "Visual Studio Code. Vaya a la configuración del editor correspondiente: "
-"``Editor -> Configuración del Editor -> Editor de Textos -> Externo``"
+"**Editor > Configuración del Editor > Editor de Textos > Externo**"
 
 msgid "Text Editor > External section of the Editor Settings"
 msgstr "Sección Editor de Textos > Externo de la Configuración del Editor"
@@ -51,7 +51,7 @@ msgstr ""
 "los siguientes marcadores en la cadena de flags:"
 
 msgid "Field in Exec Flags"
-msgstr "Campo en Exec Flags"
+msgstr "Campo en indicadores de ejecución"
 
 msgid "Is replaced with"
 msgstr "Es reemplazado por"
@@ -81,19 +81,21 @@ msgid "The line number of the error"
 msgstr "El número de línea del error"
 
 msgid "Some example **Exec Flags** for various editors include:"
-msgstr "Algunos ejemplos de **Exec Flags** para varios editores incluyen:"
+msgstr ""
+"Algunos ejemplos de **indicadores de ejecución** para varios editores "
+"incluyen:"
 
 msgid "Editor"
 msgstr "Editor"
 
 msgid "Exec Flags"
-msgstr "Ejecutar Banderas"
+msgstr "Indicadores de ejecución"
 
 msgid "Geany/Kate"
 msgstr "Geany / Kate"
 
 msgid "``{file} --line {line} --column {col}``"
-msgstr "{file} -\\-line {line} -\\-column {col}"
+msgstr "``{file} --line {line} --column {col}``"
 
 msgid "Atom"
 msgstr "Atom"
@@ -111,7 +113,7 @@ msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
 msgid "``{project} --goto {file}:{line}:{col}``"
-msgstr "{project} -\\-goto {file}:{line}:{col}"
+msgstr "``{project} --goto {file}:{line}:{col}``"
 
 msgid "Vim (gVim)"
 msgstr "Vim (gVim)"
@@ -184,7 +186,7 @@ msgid "Automatically reloading your changes"
 msgstr "Recarga automática de sus cambios"
 
 msgid "Using External Editor in Debugger"
-msgstr "Usar el Editor Externo en el Depurador"
+msgstr "Uso del editor externo en el depurador"
 
 msgid ""
 "Using external editor in debugger is determined by a separate option in "

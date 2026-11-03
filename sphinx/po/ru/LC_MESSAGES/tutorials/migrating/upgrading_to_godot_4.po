@@ -1583,6 +1583,16 @@ msgstr ""
 "godotengine/godot/pull/41794>`__."
 
 msgid ""
+"``randomize()`` is now automatically called on project load, so "
+"deterministic randomness with the global RandomNumberGenerator instance "
+"requires manually setting a seed in a script's ``_ready()`` function."
+msgstr ""
+"``randomize()`` теперь автоматически вызывается при загрузке проекта, так "
+"что детерминированная случайность с глобальным экземпляром "
+"RandomNumberGenerator требует ручной установки начального значения в функции "
+"``_ready()`` скрипта."
+
+msgid ""
 "``call_group()``, ``set_group()`` and ``notify_group()`` are now immediate "
 "by default. If calling an expensive function, this may result in stuttering "
 "when used on a group containing a large number of nodes. To use deferred "
@@ -1831,6 +1841,9 @@ msgstr "ClippedCamera"
 
 msgid "Camera2D or Camera3D"
 msgstr "Camera2D или Camera3D"
+
+msgid "Camera's pyramid shape was moved to :ref:`class_Camera3D`."
+msgstr "Пирамидальная форма камеры была перемещена в :ref:`class_Camera3D`."
 
 msgid "InterpolatedCamera"
 msgstr "InterpolatedCamera"

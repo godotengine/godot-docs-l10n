@@ -14,6 +14,15 @@ msgstr ""
 msgid "Upgrading from Godot 4.3 to Godot 4.4"
 msgstr "Upgrade von Godot 4.3 auf Godot 4.4"
 
+msgid ""
+"For most games and apps made with 4.3 it should be relatively safe to "
+"migrate to 4.4. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"Für die meisten Spiele und Anwendungen, die mit 4.3 entwickelt wurden, "
+"sollte es relativ sicher sein, auf 4.4 zu migrieren. Diese Seite soll alles "
+"abdecken, worauf Sie bei der Migration Ihres Projekts achten müssen."
+
 msgid "Breaking changes"
 msgstr "Änderungen, die etwas kaputtmachen können"
 
@@ -22,13 +31,13 @@ msgid ""
 "whether the C# breaking change is *binary compatible* or *source compatible*:"
 msgstr ""
 "Dieser Artikel gibt an, ob die einzelnen Änderungen GDScript betreffen und "
-"ob die C#-Änderung *binärkompatibel* oder *quelltextkompatibel* ist:"
+"ob die C#-Änderung *binärkompatibel* oder *quellcodekompatibel* ist:"
 
 msgid ""
 "**Source compatible** - Source code will compile successfully without "
 "changes when upgrading Godot."
 msgstr ""
-"**Quellcodekompatibel** - Der Quellcode wird beim Upgrade von Godot ohne "
+"**Quellcodekompatibel** – Der Quellcode wird beim Upgrade von Godot ohne "
 "Änderungen erfolgreich kompiliert."
 
 msgid "Core"
@@ -44,7 +53,7 @@ msgid "C# Binary Compatible"
 msgstr "C#-binär- kompatibel"
 
 msgid "C# Source Compatible"
-msgstr "C#-quellcode- kompatibel"
+msgstr "C#-quellcodekompatibel"
 
 msgid "Introduced"
 msgstr "Eingeführt in"
@@ -99,11 +108,17 @@ msgstr "**TranslationServer**"
 msgid "`GH-98972`_"
 msgstr "`GH-98972`_"
 
+msgid "**Export annotations**"
+msgstr "**Anmerkungen exportieren**"
+
 msgid "GUI nodes"
 msgstr "GUI-Nodes"
 
 msgid "**RichTextLabel**"
 msgstr "**RichTextLabel**"
+
+msgid "`GH-99481`_"
+msgstr "`GH-99481`_"
 
 msgid ""
 "Method ``set_table_column_expand`` adds a new ``shrink`` optional parameter"
@@ -111,30 +126,87 @@ msgstr ""
 "Methode ``set_table_column_expand`` fügt einen neuen optionalen Parameter "
 "``shrink`` hinzu"
 
+msgid "`GH-101482`_"
+msgstr "`GH-101482`_"
+
 msgid "**GraphEdit**"
 msgstr "**GraphEdit**"
+
+msgid "`GH-97449`_"
+msgstr "`GH-97449`_"
+
+msgid "`GH-102796`_"
+msgstr "`GH-102796`_"
 
 msgid "Physics"
 msgstr "Physik"
 
+msgid "**SoftBody3D**"
+msgstr "**SoftBody3D**"
+
+msgid "`GH-94684`_"
+msgstr "`GH-94684`_"
+
 msgid "Rendering"
 msgstr "Rendering"
+
+msgid "**CPUParticles2D**"
+msgstr "**CPUParticles2D**"
 
 msgid "Method ``restart`` adds a new ``keep_seed`` optional parameter"
 msgstr ""
 "Methode ``restart`` fügt einen neuen optionalen Parameter ``keep_seed`` hinzu"
 
+msgid "`GH-92089`_"
+msgstr "`GH-92089`_"
+
+msgid "**CPUParticles3D**"
+msgstr "**CPUParticles3D**"
+
+msgid "**GPUParticles2D**"
+msgstr "**GPUParticles2D**"
+
+msgid "**GPUParticles3D**"
+msgstr "**GPUParticles3D**"
+
 msgid "**RenderingDevice**"
 msgstr "**RenderingDevice**"
 
+msgid "`GH-90993`_"
+msgstr "`GH-90993`_"
+
+msgid "`GH-98670`_"
+msgstr "`GH-98670`_"
+
+msgid "`GH-100062`_"
+msgstr "`GH-100062`_"
+
 msgid "**RenderingServer**"
 msgstr "**RenderingServer**"
+
+msgid "`GH-99455`_"
+msgstr "`GH-99455`_"
+
+msgid "**Shader**"
+msgstr "**Shader**"
+
+msgid "`GH-95126`_"
+msgstr "`GH-95126`_"
+
+msgid "**VisualShaderNodeCubemap**"
+msgstr "**VisualShaderNodeCubemap**"
+
+msgid "**VisualShaderNodeTexture2DArray**"
+msgstr "**VisualShaderNodeTexture2DArray**"
 
 msgid "Navigation"
 msgstr "Navigation"
 
 msgid "**NavigationServer2D**"
 msgstr "**NavigationServer2D**"
+
+msgid "`GH-100129`_"
+msgstr "`GH-100129`_"
 
 msgid "**NavigationServer3D**"
 msgstr "**NavigationServer3D**"
@@ -145,6 +217,12 @@ msgstr "Editor-Plugins"
 msgid "**EditorInterface**"
 msgstr "**EditorInterface**"
 
+msgid "`GH-90057`_"
+msgstr "`GH-90057`_"
+
+msgid "`GH-94323`_"
+msgstr "`GH-94323`_"
+
 msgid ""
 "Method ``popup_property_selector`` adds a new ``current_value`` optional "
 "parameter"
@@ -152,8 +230,23 @@ msgstr ""
 "Methode ``popup_property_selector`` fügt einen neuen optionalen Parameter "
 "``current_value`` hinzu"
 
+msgid "**EditorSceneFormatImporter**"
+msgstr "**EditorSceneFormatImporter**"
+
+msgid "`GH-101531`_"
+msgstr "`GH-101531`_"
+
+msgid "**EditorTranslationParserPlugin**"
+msgstr "**EditorTranslationParserPlugin**"
+
+msgid "`GH-99297`_"
+msgstr "`GH-99297`_"
+
 msgid "Behavior changes"
 msgstr "Änderungen am Verhalten"
+
+msgid "CSG"
+msgstr "CSG"
 
 msgid "Android"
 msgstr "Android"

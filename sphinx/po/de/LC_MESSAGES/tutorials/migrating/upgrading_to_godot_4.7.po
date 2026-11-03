@@ -11,21 +11,41 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.6 to Godot 4.7"
+msgstr "Upgrade von Godot 4.6 auf Godot 4.7"
+
+msgid ""
+"For most games and apps made with 4.6 it should be relatively safe to "
+"migrate to 4.7. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"Für die meisten Spiele und Anwendungen, die mit 4.6 entwickelt wurden, "
+"sollte es relativ sicher sein, auf 4.7 zu migrieren. Diese Seite soll alles "
+"abdecken, worauf Sie bei der Migration Ihres Projekts achten müssen."
+
 msgid "Breaking changes"
 msgstr "Änderungen, die etwas kaputtmachen können"
+
+msgid ""
+"If you are migrating from 4.6 to 4.7, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"Wenn Sie von 4.6 auf 4.7 migrieren, könnten Sie von den hier aufgeführten "
+"Änderungen betroffen sein. Die Änderungen sind nach Bereichen/Systemen "
+"gruppiert."
 
 msgid ""
 "This article indicates whether each breaking change affects GDScript and "
 "whether the C# breaking change is *binary compatible* or *source compatible*:"
 msgstr ""
 "Dieser Artikel gibt an, ob die einzelnen Änderungen GDScript betreffen und "
-"ob die C#-Änderung *binärkompatibel* oder *quelltextkompatibel* ist:"
+"ob die C#-Änderung *binärkompatibel* oder *quellcodekompatibel* ist:"
 
 msgid ""
 "**Source compatible** - Source code will compile successfully without "
 "changes when upgrading Godot."
 msgstr ""
-"**Quellcodekompatibel** - Der Quellcode wird beim Upgrade von Godot ohne "
+"**Quellcodekompatibel** – Der Quellcode wird beim Upgrade von Godot ohne "
 "Änderungen erfolgreich kompiliert."
 
 msgid "Core"
@@ -41,7 +61,7 @@ msgid "C# Binary Compatible"
 msgstr "C#-binär- kompatibel"
 
 msgid "C# Source Compatible"
-msgstr "C#-quellcode- kompatibel"
+msgstr "C#-quellcodekompatibel"
 
 msgid "Introduced"
 msgstr "Eingeführt in"
@@ -55,20 +75,104 @@ msgstr "|✔️|"
 msgid "|✔️ with compat|"
 msgstr "|✔️ with compat|"
 
+msgid "`GH-118582`_"
+msgstr "`GH-118582`_"
+
+msgid "**ZIPPacker**"
+msgstr "**ZIPPacker**"
+
+msgid ""
+"Method ``start_file`` adds new ``permissions`` and ``modified_time`` "
+"optional parameters"
+msgstr ""
+"Methode ``start_file`` fügt neue optionale Parameter ``permissions`` und "
+"``modified_time`` hinzu"
+
+msgid "`GH-115946`_"
+msgstr "`GH-115946`_"
+
+msgid "**OptimizedTranslation**"
+msgstr "**OptimizedTranslation**"
+
+msgid "Method ``generate`` changes return type from ``void`` to ``bool``"
+msgstr "Methode ``generate`` ändert Rückgabetyp von ``void`` auf ``bool``"
+
 msgid "|❌|"
 msgstr "|❌|"
+
+msgid "`GH-119563`_"
+msgstr "`GH-119563`_"
 
 msgid "2D"
 msgstr "2D"
 
+msgid "**CPUParticles2D**"
+msgstr "**CPUParticles2D**"
+
+msgid ""
+"Method ``request_particles_process`` adds new ``process_time_residual`` "
+"optional parameter"
+msgstr ""
+"Methode ``request_particles_process`` fügt einen neuen optionalen Parameter "
+"``process_time_residual`` hinzu"
+
+msgid "`GH-109142`_"
+msgstr "`GH-109142`_"
+
+msgid "**GPUParticles2D**"
+msgstr "**GPUParticles2D**"
+
 msgid "3D"
 msgstr "3D"
+
+msgid "**CPUParticles3D**"
+msgstr "**CPUParticles3D**"
+
+msgid "**GPUParticles3D**"
+msgstr "**GPUParticles3D**"
 
 msgid "GUI nodes"
 msgstr "GUI-Nodes"
 
+msgid "**Control**"
+msgstr "**Control**"
+
+msgid "`GH-116839`_"
+msgstr "`GH-116839`_"
+
 msgid "**RichTextLabel**"
 msgstr "**RichTextLabel**"
+
+msgid "`GH-112617`_"
+msgstr "`GH-112617`_"
+
+msgid ""
+"Method ``add_image`` changes ``width`` parameter type from ``int`` to "
+"``float``"
+msgstr ""
+"Methode ``add_image`` ändert den Typ des Parameters ``width`` von ``int`` "
+"auf ``float``"
+
+msgid ""
+"Method ``add_image`` changes ``height`` parameter type from ``int`` to "
+"``float``"
+msgstr ""
+"Methode ``add_image`` ändert den Typ des Parameters ``height`` von ``int`` "
+"auf ``float``"
+
+msgid ""
+"Method ``update_image`` changes ``width`` parameter type from ``int`` to "
+"``float``"
+msgstr ""
+"Methode ``update_image`` ändert den Typ des Parameters ``width`` von ``int`` "
+"auf ``float``"
+
+msgid ""
+"Method ``update_image`` changes ``height`` parameter type from ``int`` to "
+"``float``"
+msgstr ""
+"Methode ``update_image`` ändert den Typ des Parameters ``height`` von "
+"``int`` auf ``float``"
 
 msgid "Text"
 msgstr "Text"
@@ -76,11 +180,64 @@ msgstr "Text"
 msgid "**Font**"
 msgstr "**Font**"
 
+msgid ""
+"Method ``find_variation`` adds new ``palette_index`` and ``custom_colors`` "
+"optional parameters"
+msgstr ""
+"Methode ``find_variation`` fügt neue optionale Parameter ``palette_index`` "
+"und ``custom_colors`` hinzu"
+
+msgid "`GH-117149`_"
+msgstr "`GH-117149`_"
+
+msgid "**TreeItem**"
+msgstr "**TreeItem**"
+
+msgid "Method ``select`` adds new ``set_as_cursor`` optional parameter"
+msgstr ""
+"Methode ``select`` fügt einen neuen optionalen Parameter ``set_as_cursor`` "
+"hinzu"
+
+msgid "`GH-119367`_"
+msgstr "`GH-119367`_"
+
 msgid "Rendering"
 msgstr "Rendering"
 
+msgid "**Image**"
+msgstr "**Image**"
+
+msgid ""
+"Method ``save_exr`` adds new ``color_image`` and ``max_linear_value`` "
+"optional parameters"
+msgstr ""
+"Methode ``save_exr`` fügt neue optionale Parameter ``color_image`` und "
+"``max_linear_value`` hinzu"
+
+msgid "`GH-117800`_"
+msgstr "`GH-117800`_"
+
+msgid ""
+"Method ``save_exr_to_buffer`` adds new ``color_image`` and "
+"``max_linear_value`` optional parameters"
+msgstr ""
+"Methode ``save_exr_to_buffer`` fügt neue optionale Parameter ``color_image`` "
+"und ``max_linear_value`` hinzu"
+
+msgid "**ImageTexture**"
+msgstr "**ImageTexture**"
+
+msgid "`GH-109004`_"
+msgstr "`GH-109004`_"
+
+msgid "**PortableCompressedTexture2D**"
+msgstr "**PortableCompressedTexture2D**"
+
 msgid "**RenderingServer**"
 msgstr "**RenderingServer**"
+
+msgid "`GH-115799`_"
+msgstr "`GH-115799`_"
 
 msgid "Animation"
 msgstr "Animation"
@@ -88,17 +245,86 @@ msgstr "Animation"
 msgid "**Animation**"
 msgstr "**Animation**"
 
+msgid "`GH-116394`_"
+msgstr "`GH-116394`_"
+
+msgid "**AnimationNodeBlendSpace1D**"
+msgstr "**AnimationNodeBlendSpace1D**"
+
+msgid "`GH-110369`_"
+msgstr "`GH-110369`_"
+
+msgid "**AnimationNodeBlendSpace2D**"
+msgstr "**AnimationNodeBlendSpace2D**"
+
 msgid "Physics"
 msgstr "Physik"
+
+msgid "**PhysicsServer2D**"
+msgstr "**PhysicsServer2D**"
+
+msgid "`GH-104736`_"
+msgstr "`GH-104736`_"
+
+msgid "**PhysicsServer2DExtension**"
+msgstr "**PhysicsServer2DExtension**"
 
 msgid "Audio"
 msgstr "Audio"
 
+msgid "**AudioEffectSpectrumAnalyzer**"
+msgstr "**AudioEffectSpectrumAnalyzer**"
+
+msgid "Property ``tap_back_pos`` removed"
+msgstr "Eigenschaft ``tap_back_pos`` entfernt"
+
+msgid "`GH-114355`_"
+msgstr "`GH-114355`_"
+
 msgid "XR"
 msgstr "XR"
 
+msgid "**OpenXRExtensionWrapper**"
+msgstr "**OpenXRExtensionWrapper**"
+
+msgid ""
+"Method ``_on_register_metadata`` adds new ``interaction_profile_metadata`` "
+"parameter"
+msgstr ""
+"Methode ``_on_register_metadata`` fügt einen neuen Parameter ``metadata`` "
+"hinzu"
+
+msgid "`GH-117399`_"
+msgstr "`GH-117399`_"
+
+msgid "**OpenXRSpatialAnchorCapability**"
+msgstr "**OpenXRSpatialAnchorCapability**"
+
+msgid "Method ``create_new_anchor`` adds new ``next`` optional parameter"
+msgstr ""
+"Methode ``create_new_anchor`` fügt einen neuen optionalen Parameter ``next`` "
+"hinzu"
+
+msgid "`GH-118128`_"
+msgstr "`GH-118128`_"
+
 msgid "Editor"
 msgstr "Editor"
+
+msgid "**EditorSceneFormatImporter**"
+msgstr "**EditorSceneFormatImporter**"
+
+msgid "`GH-115788`_"
+msgstr "`GH-115788`_"
+
+msgid "**EditorVCSInterface**"
+msgstr "**EditorVCSInterface**"
+
+msgid "Method ``_commit`` adds new ``amend`` parameter"
+msgstr "Methode ``_commit`` fügt einen neuen Parameter ``amend`` hinzu"
+
+msgid "`GH-117968`_"
+msgstr "`GH-117968`_"
 
 msgid "Behavior changes"
 msgstr "Änderungen am Verhalten"
@@ -112,6 +338,27 @@ msgstr "GDScript"
 msgid "Platforms"
 msgstr "Plattformen"
 
+msgid "Changed defaults"
+msgstr "Geänderte Standardeinstellungen"
+
+msgid "Property/Parameter"
+msgstr "Eigenschaft/Parameter"
+
+msgid "**LookAtModifier3D**"
+msgstr "**LookAtModifier3D**"
+
+msgid "Property ``relative``"
+msgstr "Eigenschaft ``relative``"
+
+msgid "true"
+msgstr "true"
+
+msgid "**ProjectSettings**"
+msgstr "**ProjectSettings**"
+
+msgid "Property ``rendering/reflections/sky_reflections/roughness_layers``"
+msgstr "Eigenschaft ``rendering/reflections/sky_reflections/roughness_layers``"
+
 msgid "7"
 msgstr "7"
 
@@ -123,6 +370,12 @@ msgstr "0"
 
 msgid "Import"
 msgstr "Importieren"
+
+msgid "**ResourceImporterDynamicFont**"
+msgstr "**ResourceImporterDynamicFont**"
+
+msgid "Property ``hinting``"
+msgstr "Eigenschaft ``hinting``"
 
 msgid "1"
 msgstr "1"

@@ -340,6 +340,9 @@ msgstr "|vec_type| **cosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_cosh>`"
 msgid "Calculates the hyperbolic cosine using ``(e^x + e^-x)/2``."
 msgstr "Calcule la cosinus hyperbolique en utilisant ``(e^x + e^-x)/2``."
 
+msgid "The hyperbolic cosine of ``x``."
+msgstr "Le cosinus hyperbolique de ``x``."
+
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cosh.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cosh.xhtml"
 
@@ -349,11 +352,17 @@ msgstr "|vec_type| **tanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_tanh>`"
 msgid "Calculates the hyperbolic tangent using ``sinh(x)/cosh(x)``."
 msgstr "Calcule la tangente hyperbolique en utilisant ``sinh(x)/cosh(x)``."
 
+msgid "The hyperbolic tangent of ``x``."
+msgstr "La tangente hyperbolique de ``x``."
+
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tanh.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tanh.xhtml"
 
 msgid "|vec_type| **asinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asinh>`"
 msgstr "|vec_type| **asinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asinh>`"
+
+msgid "The arc hyperbolic sine of ``x``."
+msgstr "Le sinus hyperbolique inverse de ``x``."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asinh.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asinh.xhtml"
@@ -361,11 +370,17 @@ msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asinh.xhtml"
 msgid "|vec_type| **acosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acosh>`"
 msgstr "|vec_type| **acosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acosh>`"
 
+msgid "The arc hyperbolic cosine of ``x``."
+msgstr "Le cosinus hyperbolique inverse de ``x``."
+
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acosh.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acosh.xhtml"
 
 msgid "|vec_type| **atanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_atanh>`"
 msgstr "|vec_type| **atanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_atanh>`"
+
+msgid "The arc hyperbolic tangent of ``x``."
+msgstr "La tangente hyperbolique inverse de ``x``."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atanh.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atanh.xhtml"
@@ -375,6 +390,9 @@ msgstr "Fonctions mathématiques et exponentielles"
 
 msgid ":ref:`pow<shader_func_pow>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ":ref:`pow<shader_func_pow>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Power (undefined if ``x < 0`` or if ``x == 0`` and ``y <= 0``)."
+msgstr "Puissance (indéfinie si ``x < 0`` ou si ``x == 0`` et ``y <= 0``)."
 
 msgid ":ref:`exp<shader_func_exp>`\\ (\\ |vec_type| x)"
 msgstr ":ref:`exp<shader_func_exp>`\\ (\\ |vec_type| x)"
@@ -430,11 +448,20 @@ msgstr ":ref:`sign<shader_func_sign>`\\ (\\ |vec_int_type| x)"
 msgid ":ref:`floor<shader_func_floor>`\\ (\\ |vec_type| x)"
 msgstr ":ref:`floor<shader_func_floor>`\\ (\\ |vec_type| x)"
 
+msgid "Rounds to the integer below."
+msgstr "Arrondit à l’entier inférieur."
+
 msgid ":ref:`round<shader_func_round>`\\ (\\ |vec_type| x)"
 msgstr ":ref:`round<shader_func_round>`\\ (\\ |vec_type| x)"
 
+msgid "Rounds to the nearest integer."
+msgstr "Arrondit à l’entier le plus proche."
+
 msgid ":ref:`roundEven<shader_func_roundEven>`\\ (\\ |vec_type| x)"
 msgstr ":ref:`roundEven<shader_func_roundEven>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the nearest even integer."
+msgstr "Arrondit à l’entier pair le plus proche."
 
 msgid ":ref:`trunc<shader_func_trunc>`\\ (\\ |vec_type| x)"
 msgstr ":ref:`trunc<shader_func_trunc>`\\ (\\ |vec_type| x)"
@@ -445,8 +472,14 @@ msgstr "Troncature."
 msgid ":ref:`ceil<shader_func_ceil>`\\ (\\ |vec_type| x)"
 msgstr ":ref:`ceil<shader_func_ceil>`\\ (\\ |vec_type| x)"
 
+msgid "Rounds to the integer above."
+msgstr "Arrondit à l’entier supérieur."
+
 msgid ":ref:`fract<shader_func_fract>`\\ (\\ |vec_type| x)"
 msgstr ":ref:`fract<shader_func_fract>`\\ (\\ |vec_type| x)"
+
+msgid "Fractional (returns ``x - floor(x)``)."
+msgstr "Partie fractionnelle (renvoie ``x - floor(x)``)."
 
 msgid ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, |vec_type| y)"
@@ -506,6 +539,9 @@ msgstr ""
 
 msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, uint b)"
 msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, uint b)"
+
+msgid "Highest value between ``a`` and ``b``."
+msgstr "Valeur la plus grande entre ``a`` et ``b``."
 
 msgid ""
 ":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, |vec_type| min, |"
@@ -628,6 +664,12 @@ msgstr ""
 "|vec_type| **pow**\\ (\\ |vec_type| x, |vec_type| "
 "y) :ref:`🔗<shader_func_pow>`"
 
+msgid "The result is undefined if ``x < 0``, or if ``x == 0`` and ``y <= 0``."
+msgstr "Le résultat est indéfini si ``x < 0``, ou si ``x == 0`` et ``y <= 0``."
+
+msgid "The power to which ``x`` will be raised."
+msgstr "La puissance à laquelle ``x`` sera élevé."
+
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml"
 
@@ -649,11 +691,17 @@ msgstr "|vec_type| **exp2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp2>`"
 msgid "Equivalent to ``pow(2.0, x)``."
 msgstr "Équivalent à ``pow(2.0,x)``."
 
+msgid "``2`` raised to the power of ``x``."
+msgstr "``2`` élevé à la puissance ``x``."
+
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
 
 msgid "|vec_type| **log**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log>`"
 msgstr "|vec_type| **log**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log>`"
+
+msgid "The natural logarithm of ``x``."
+msgstr "Le logarithme naturel de ``x``."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log.xhtml"
@@ -661,11 +709,17 @@ msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log.xhtml"
 msgid "|vec_type| **log2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log2>`"
 msgstr "|vec_type| **log2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log2>`"
 
+msgid "The base-2 logarithm of ``x``."
+msgstr "Le logarithme de base 2 de ``x``."
+
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log2.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log2.xhtml"
 
 msgid "|vec_type| **sqrt**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sqrt>`"
 msgstr "|vec_type| **sqrt**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sqrt>`"
+
+msgid "The square root of ``x``."
+msgstr "La racine carrée de ``x``."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sqrt.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sqrt.xhtml"
@@ -676,6 +730,9 @@ msgid ""
 msgstr ""
 "|vec_type| **inversesqrt**\\ (\\ |vec_type| "
 "x) :ref:`🔗<shader_func_inversesqrt>`"
+
+msgid "The inverse of the square root of ``x``."
+msgstr "L'inverse de la racine carrée de ``x``."
 
 msgid ""
 "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inversesqrt.xhtml"
@@ -719,6 +776,12 @@ msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/floor.xhtml"
 msgid "|vec_type| **round**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
 msgstr "|vec_type| **round**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
 
+msgid "Rounds ``x`` to the nearest integer."
+msgstr "Arrondit ``x`` à l’entier le plus proche."
+
+msgid "The value to round."
+msgstr "La valeur à arrondir."
+
 msgid "The rounded value."
 msgstr "La valeur arrondie."
 
@@ -737,6 +800,9 @@ msgstr ""
 
 msgid "|vec_type| **trunc**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_trunc>`"
 msgstr "|vec_type| **trunc**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_trunc>`"
+
+msgid "The value to evaluate."
+msgstr "La valeur à évaluer."
 
 msgid "The truncated value."
 msgstr "La valeur tronquée."
@@ -780,6 +846,9 @@ msgid ""
 msgstr ""
 "|vec_type| **modf**\\ (\\ |vec_type| x, out |vec_type| "
 "i) :ref:`🔗<shader_func_modf>`"
+
+msgid "The value to separate."
+msgstr "La valeur à séparer."
 
 msgid "param out i"
 msgstr "param out i"
@@ -982,6 +1051,9 @@ msgstr ""
 msgid "param c"
 msgstr "param c"
 
+msgid "The value to use to interpolate between ``a`` and ``b``."
+msgstr "La valeur à utiliser pour interpoler entre ``a`` et ``b``."
+
 msgid "The interpolated value."
 msgstr "La valeur interpolée."
 
@@ -995,12 +1067,18 @@ msgstr ""
 "|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, |vec_bool_type| "
 "c) :ref:`🔗<shader_func_mix>`"
 
+msgid "The value used to select between ``a`` and ``b``."
+msgstr "La valeur utilisée pour sélectionner entre ``a`` et ``b``."
+
 msgid ""
 "|vec_type| **fma**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
 "c) :ref:`🔗<shader_func_fma>`"
 msgstr ""
 "|vec_type| **fma**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
 "c) :ref:`🔗<shader_func_fma>`"
+
+msgid "The first value to be multiplied."
+msgstr "La première valeur à multiplier."
 
 msgid "The value to be added to the result."
 msgstr "La valeur à être ajoutée au résultat."
@@ -1042,6 +1120,9 @@ msgid ""
 msgstr ""
 "|vec_type| **smoothstep**\\ (\\ float a, float b, |vec_type| "
 "c) :ref:`🔗<shader_func_smoothstep>`"
+
+msgid "Smoothstep is equivalent to:"
+msgstr "Smoothstep est équivalent à :"
 
 msgid ""
 "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/smoothstep.xhtml"
@@ -1100,6 +1181,9 @@ msgid ""
 msgstr ""
 "|vec_type| **intBitsToFloat**\\ (\\ |vec_int_type| "
 "x) :ref:`🔗<shader_func_intBitsToFloat>`"
+
+msgid "A floating-point value."
+msgstr "Une valeur à virgule flottante."
 
 msgid ""
 "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
@@ -1174,6 +1258,9 @@ msgstr ""
 ":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
 "I, |vec_type| Nref)"
 
+msgid "If ``dot(Nref, I) < 0``, returns ``N``, otherwise ``-N``."
+msgstr "Si ``dot(Nref, I) < 0``, renvoie ``N``, sinon ``-N``."
+
 msgid "|mat_type|"
 msgstr "|mat_type|"
 
@@ -1221,6 +1308,9 @@ msgstr "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
 msgid "The vector"
 msgstr "Le vecteur"
 
+msgid "The length of the vector."
+msgstr "La longueur du vecteur."
+
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/length.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/length.xhtml"
 
@@ -1231,9 +1321,22 @@ msgstr ""
 "float **distance**\\ (\\ |vec_type| a, |vec_type| "
 "b) :ref:`🔗<shader_func_distance>`"
 
+msgid ""
+"Returns the distance between the two points ``a`` and ``b``, i.e., "
+"``length(b - a);``"
+msgstr ""
+"Renvoie la distance entre les deux points ``a`` et ``b``. i.e, ``length(b - "
+"a);``"
+
+msgid "The first point."
+msgstr "Le premier point."
+
 msgid "The second point."
 msgstr "Le second point."
 
+msgid "The scalar distance between the points"
+msgstr "La distance scalaire entre les points"
+
 msgid ""
 "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/distance.xhtml"
 msgstr ""
@@ -1243,6 +1346,13 @@ msgid ""
 "float **dot**\\ (\\ |vec_type| a, |vec_type| b) :ref:`🔗<shader_func_dot>`"
 msgstr ""
 "float **dot**\\ (\\ |vec_type| a, |vec_type| b) :ref:`🔗<shader_func_dot>`"
+
+msgid ""
+"Returns the dot product of two vectors, ``a`` and ``b``, i.e., ``a.x * b.x + "
+"a.y * b.y + ...``"
+msgstr ""
+"Renvoie le produit scalaire de deux vecteurs, ``a`` et ``b``, i.e, ``a.x * "
+"b.x + a.y * b.y + ...``"
 
 msgid "The first vector."
 msgstr "Le premier vecteur."
@@ -1250,11 +1360,20 @@ msgstr "Le premier vecteur."
 msgid "The second vector."
 msgstr "Le second vecteur."
 
+msgid "The dot product."
+msgstr "Le produit scalaire."
+
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
 
 msgid "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
 msgstr "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
+
+msgid "Returns the cross product of two vectors, i.e.:"
+msgstr "Renvoie le produit vectoriel de deux vecteurs, i.e. :"
+
+msgid "The cross product of ``a`` and ``b``."
+msgstr "Le produit vectoriel de ``a`` et ``b``."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml"
@@ -1531,6 +1650,13 @@ msgstr ""
 msgid "bool **any**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_any>`"
 msgstr "bool **any**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_any>`"
 
+msgid "Functionally equivalent to:"
+msgstr "Équivalent fonctionnellement à :"
+
+msgid "``true`` if any element of ``x`` is ``true`` and ``false`` otherwise."
+msgstr ""
+"``true`` si au moins un élément de ``x`` vaut ``true`` et ``false`` sinon."
+
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
 
@@ -1544,6 +1670,9 @@ msgid ""
 "|vec_bool_type| **not**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_not>`"
 msgstr ""
 "|vec_bool_type| **not**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_not>`"
+
+msgid "The vector to be inverted."
+msgstr "Le vecteur à inverser."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
@@ -1582,6 +1711,9 @@ msgid ""
 ":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
 msgstr ""
 ":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
+
+msgid "Gets the size of a texture."
+msgstr "Obtient la taille d'une texture."
 
 msgid "vec2"
 msgstr "vec2"

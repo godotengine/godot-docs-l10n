@@ -172,6 +172,20 @@ msgstr ""
 "метод для статических строк, которые часто используются и используются в "
 "нескольких местах движка."
 
+msgid "|char_string|, |char16_string|"
+msgstr "|char_string|, |char16_string|"
+
+msgid "``std::u8string`` ``std::u16string``"
+msgstr "``std::u8string`` ``std::u16string``"
+
+msgid ""
+"``String``-likes that use ``char`` and ``char16_t``, respectively. These are "
+"aliases of ``CharStringT<T>``; ``wchar_t`` and others are also supported."
+msgstr ""
+"Объекты, подобные ``String``, использующие соответственно ``char`` и "
+"``char16_t``. Они представляют собой псевдонимы для ``CharStringT<T>``; "
+"также поддерживаются ``wchar_t`` и другие типы."
+
 msgid "|local_vector|"
 msgstr "|local_vector|"
 
@@ -253,6 +267,20 @@ msgstr "|span|"
 
 msgid "``std::span``"
 msgstr "``std::span``"
+
+msgid ""
+"Represents read-only access to a contiguous array without needing to copy "
+"any data. Note that ``Span`` is designed to be a high performance API: It "
+"does not perform parameter correctness checks in the same way you might be "
+"used to with other Godot containers. Use with care. ``Span`` can be "
+"constructed from most array-like containers (e.g. ``vector.span()``)."
+msgstr ""
+"Представляет доступ только для чтения к непрерывному массиву без "
+"необходимости копирования данных. Обратите внимание, что ``Span`` "
+"спроектирован как высокопроизводительный API: он не выполняет проверки "
+"корректности параметров так, как вы могли бы привыкнуть с другими "
+"контейнерами Godot. Используйте с осторожностью. ``Span`` можно создать из "
+"большинства контейнеров, подобных массивам (например, ``vector.span()``)."
 
 msgid "|rb_set|"
 msgstr "|rb_set|"

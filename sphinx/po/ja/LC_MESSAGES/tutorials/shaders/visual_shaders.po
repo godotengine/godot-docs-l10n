@@ -170,9 +170,6 @@ msgstr ""
 "ビジュアル シェーダーノードには入力ポートと出力ポートがあります。入力ポートは"
 "ノードの左側にあり、出力ポートはノードの右側にあります。"
 
-msgid "These ports are colored to differentiate type of port:"
-msgstr "これらのポートは、ポートの型を区別するために色分けされています。"
-
 msgid "Port types"
 msgstr "ポートの型"
 
@@ -305,17 +302,6 @@ msgstr ""
 msgid "Fresnel node"
 msgstr "フレネルノード"
 
-msgid ""
-"The ``Fresnel`` node is designed to accept normal and view vectors and "
-"produces a scalar which is the saturated dot product between them. "
-"Additionally, you can setup the inversion and the power of equation. The "
-"``Fresnel`` node is great for adding a rim-like lighting effect to objects."
-msgstr ""
-"``Fresnel`` ノードは、法線ベクトルとビューベクトルを受け入れ、それらの間の飽"
-"和ドット積であるスカラーを生成するように設計されています。さらに、反転と方程"
-"式の力を設定できます。\\ ``Fresnel``ノードは、オブジェクトに縁取りのような照"
-"明効果を追加するのに最適です。"
-
 msgid "Boolean node"
 msgstr "ブール型ノード"
 
@@ -332,18 +318,6 @@ msgstr ""
 
 msgid "If node"
 msgstr "ifノード"
-
-msgid ""
-"The ``If`` node allows you to setup a vector which will be returned the "
-"result of the comparison between ``a`` and ``b``. There are three vectors "
-"which can be returned: ``a == b`` (in that case the tolerance parameter is "
-"provided as a comparison threshold – by default it is equal to the minimal "
-"value, i.e. ``0.00001``), ``a > b`` and ``a < b``."
-msgstr ""
-"``If`` ノードを使用すると、\\ ``a`` と ``b`` の比較結果を返すベクトルを設定で"
-"きます。返される可能性のあるベクトルは3つあります: ``a == b`` (この場合、許容"
-"範囲パラメーターは比較のしきい値として提供されます - デフォルトでは最小値、つ"
-"まり ``0.00001``に等しい)、\\ ``a> b`` および ``a <b`` です。"
 
 msgid "Switch node"
 msgstr "スイッチノード(Switch node)"

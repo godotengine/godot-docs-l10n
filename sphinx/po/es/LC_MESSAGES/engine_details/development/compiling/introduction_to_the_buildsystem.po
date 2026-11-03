@@ -47,7 +47,7 @@ msgid "Example for using 12 threads:"
 msgstr "Ejemplo de uso con 12 hilos:"
 
 msgid "Platform selection"
-msgstr "Seleccion de plataforma"
+msgstr "Selección de plataforma"
 
 msgid ""
 "Godot's build system will begin by detecting the platforms it can build for. "
@@ -86,6 +86,25 @@ msgstr ""
 
 msgid "Target"
 msgstr "Objetivo"
+
+msgid ""
+"``target=editor``: Build an editor binary (defines ``TOOLS_ENABLED`` and "
+"``DEBUG_ENABLED``)"
+msgstr ""
+"``target=editor``: Compila un binario del editor (define ``TOOLS_ENABLED`` y "
+"``DEBUG_ENABLED``)"
+
+msgid ""
+"``target=template_debug``: Build a debug export template (defines "
+"``DEBUG_ENABLED``)"
+msgstr ""
+"``target=template_debug``: Compila una plantilla de exportación de "
+"depuración (define ``DEBUG_ENABLED``)"
+
+msgid "``target=template_release``: Build a release export template"
+msgstr ""
+"``target=template_release``: Compila una plantilla de exportación para "
+"versiones de lanzamiento"
 
 msgid ""
 "When creating builds for development (running debugging/:ref:`profiling "

@@ -161,6 +161,19 @@ msgstr ""
 "采用了字符串驻留（string interning）技术，以实现快速的比较操作。推荐将其用于"
 "那些在引擎多个位置被频繁引用的静态字符串。"
 
+msgid "|char_string|, |char16_string|"
+msgstr "|char_string|, |char16_string|"
+
+msgid "``std::u8string`` ``std::u16string``"
+msgstr "``std::u8string`` ``std::u16string``"
+
+msgid ""
+"``String``-likes that use ``char`` and ``char16_t``, respectively. These are "
+"aliases of ``CharStringT<T>``; ``wchar_t`` and others are also supported."
+msgstr ""
+"``String`` -like 类型分别使用 ``char`` 和 ``char16_t`` ；这些均为 "
+"``CharStringT<T>`` 的别名；此外还支持 ``wchar_t`` 等其他类型。"
+
 msgid "|local_vector|"
 msgstr "|local_vector|"
 
@@ -239,6 +252,17 @@ msgstr "|span|"
 
 msgid "``std::span``"
 msgstr "``std::span``"
+
+msgid ""
+"Represents read-only access to a contiguous array without needing to copy "
+"any data. Note that ``Span`` is designed to be a high performance API: It "
+"does not perform parameter correctness checks in the same way you might be "
+"used to with other Godot containers. Use with care. ``Span`` can be "
+"constructed from most array-like containers (e.g. ``vector.span()``)."
+msgstr ""
+"用于对连续数组进行只读访问，且无需复制任何数据。请注意， ``Span`` 是一款高性"
+"能 API：它不采用您在其他 Godot 容器中常见的参数正确性检查方式；请谨慎使用。 "
+"``Span`` 可通过大多数类数组容器（例如 ``vector.span()`` ）构建。"
 
 msgid "|rb_set|"
 msgstr "|rb_set|"
@@ -336,8 +360,8 @@ msgid ""
 "Godot's containers assume their elements are `trivially relocatable <https://"
 "open-std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html>`__."
 msgstr ""
-"Godot 的容器（Containers）假设其内部元素是`trivially relocatable <https://"
-"open-std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html>`__。"
+"Godot 的容器假定其元素为 `trivially relocatable <https://open-std.org/JTC1/"
+"SC22/WG21/docs/papers/2020/p1144r5.html>`__. 。"
 
 msgid ""
 "This means that, if you store data types in it that have pointers to "

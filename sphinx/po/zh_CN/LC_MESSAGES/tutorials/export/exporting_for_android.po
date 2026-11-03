@@ -38,6 +38,31 @@ msgstr ""
 "Godot 4.2 中，使用 C# 编写的项目可以导出到 Android，但这种支持是实验性的，"
 "\\ :ref:`存在某些限制 <doc_c_sharp_platforms>`\\ 。"
 
+msgid "Setup on Android"
+msgstr "Android 系统安装"
+
+msgid ""
+"When exporting to Android from the Android editor, you do **not** need to "
+"install OpenJDK or the Android SDK when exporting to Android, regardless of "
+"the export method used (pre-built APK or Gradle build)."
+msgstr ""
+"从 Android 编辑器导出至 Android 平台时，无论采用何种导出方式（预构建的 APK "
+"或 Gradle 构建），均 **无需** 安装 OpenJDK 或 Android SDK。"
+
+msgid ""
+"However, if you are performing a Gradle build, you will need to follow some "
+"steps described in :ref:`doc_android_gradle_build`."
+msgstr ""
+"然而，如果您正在执行 Gradle 构建，则需要按照 :ref:`doc_android_gradle_build` "
+"中描述的步骤操作。"
+
+msgid ""
+"You can then skip "
+"to :ref:`doc_exporting_for_android_providing_launcher_icons`."
+msgstr ""
+"随后您可以直接跳转"
+"至 :ref:`doc_exporting_for_android_providing_launcher_icons`."
+
 msgid "Install OpenJDK 17"
 msgstr "安装 OpenJDK 17"
 
@@ -55,62 +80,6 @@ msgstr "更高版本的 JDK 也可使用，但建议使用 JDK 17 以获得最�
 
 msgid "Download the Android SDK"
 msgstr "下载 Android SDK"
-
-msgid "Download and install the Android SDK."
-msgstr "下载并安装 Android SDK。"
-
-msgid ""
-"You can install the Android SDK using `Android Studio Iguana (version "
-"2023.2.1) or later <https://developer.android.com/studio/>`__."
-msgstr ""
-"你可以使用 `Android Studio Iguana (version 2023.2.1) 或更高版本 <https://"
-"developer.android.com/studio/>`__\\ 来安装 Android SDK。"
-
-msgid ""
-"Run it once to complete the SDK setup using these `instructions <https://"
-"developer.android.com/studio/intro/update#sdk-manager>`__."
-msgstr ""
-"运行一次，使用这些\\ `说明 <https://developer.android.com/studio/intro/"
-"update#sdk-manager>`__\\ 完成 SDK 设置。"
-
-msgid ""
-"Ensure that the `required packages <https://developer.android.com/studio/"
-"intro/update#required>`__ are installed as well."
-msgstr ""
-"确保安装了\\ `必要的软件包 <https://developer.android.com/studio/intro/"
-"update#required>`__\\ 。"
-
-msgid "Android SDK Platform-Tools version 35.0.0 or later"
-msgstr "Android SDK Platform-Tools 35.0.0 或更高版本"
-
-msgid "Android SDK Build-Tools version 35.0.1"
-msgstr "Android SDK Build-Tools 35.0.1"
-
-msgid "Android SDK Platform 35"
-msgstr "Android SDK Platform 35"
-
-msgid "Android SDK Command-line Tools (latest)"
-msgstr "Android SDK Command-line Tools（最新）"
-
-msgid ""
-"Ensure that the `NDK and CMake are installed and configured <https://"
-"developer.android.com/studio/projects/install-ndk>`__."
-msgstr ""
-"确保\\ `NDK 和 CMake 已安装并配置好 <https://developer.android.com/studio/"
-"projects/install-ndk>`__\\ 。"
-
-msgid "CMake version 3.10.2.4988404"
-msgstr "CMake 版本 3.10.2.4988404"
-
-msgid "NDK version r28b (28.1.13356709)"
-msgstr "NDK 版本 r28b（28.1.13356709）"
-
-msgid ""
-"Install the command line tools package using these `instructions <https://"
-"developer.android.com/tools/sdkmanager>`__."
-msgstr ""
-"使用以下\\ `说明 <https://developer.android.com/tools/sdkmanager>`__\\ 完成命"
-"令行工具安装。"
 
 msgid ""
 "If you are using Linux, **do not use an Android SDK provided by your "
@@ -271,6 +240,14 @@ msgid "Exporting for Google Play Store"
 msgstr "为 Google Play 商店导出"
 
 msgid ""
+"All new apps uploaded to Google Play after August 2021 must be an AAB "
+"(Android App Bundle) file. To export an AAB file you need to set "
+"up :ref:`doc_android_gradle_build`."
+msgstr ""
+"2021年8月之后上传至 Google Play 的所有新应用程序必须为 AAB（Android 应用包）"
+"文件。如需导出 AAB 文件，您需要配置 :ref:`doc_android_gradle_build` 。"
+
+msgid ""
 "Uploading an AAB or APK to Google's Play Store requires you to sign using a "
 "non-debug keystore file; such a file can be generated like this:"
 msgstr ""
@@ -308,6 +285,34 @@ msgstr "在导出时，不要忘记取消勾选\\ **使用调试导出**\\ 。"
 
 msgid "Optimizing the file size"
 msgstr "优化文件大小"
+
+msgid ""
+"You can optimize the size of your application by compiling an Android export "
+"template with only the features you need. See :ref:`doc_optimizing_for_size` "
+"for more information."
+msgstr ""
+"您可以通过编译仅包含所需功能的 Android 导出模板来优化应用程序的大小。更多信息"
+"请参阅 :ref:`doc_optimizing_for_size` 。"
+
+msgid "Performing a custom Gradle build"
+msgstr "执行自定义 Gradle 构建"
+
+msgid ""
+"If you need to modify the template's Java code or integrate with third-party "
+"Android SDKs, you may want to use a custom Gradle build instead of the "
+"default pre-built APK template. This allows you to have more control over "
+"the build process and the generated project, and you can use it as a base "
+"for further customization."
+msgstr ""
+"若您需要修改模板中的 Java 代码或集成第三方 Android SDK，可选择使用自定义 "
+"Gradle 构建环境，而非默认的预构建 APK 模板。这样您可以更灵活地控制构建过程及"
+"生成的项目，并可将其作为进行进一步定制的基础。"
+
+msgid ""
+"See :ref:`doc_android_gradle_build` for guidance on setting up a custom "
+"Gradle build."
+msgstr ""
+"有关设置自定义 Gradle 构建的指导，请参阅 :ref:`doc_android_gradle_build` 。"
 
 msgid "Environment variables"
 msgstr "环境变量"

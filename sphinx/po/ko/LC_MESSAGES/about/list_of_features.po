@@ -262,11 +262,25 @@ msgid "**Plugins:**"
 msgstr "**플러그인:**"
 
 msgid ""
+"Editor plugins can be downloaded from the :ref:`Asset Store "
+"<doc_what_is_asset_store>` to extend editor functionality."
+msgstr ""
+"편집기 플러그인은 :ref:`Asset Store <doc_what_is_asset_store>`\\에서 다운로드"
+"받아 편집기 기능을 확장할 수 있습니다."
+
+msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
 "GDScript를 사용하여 :ref:`자신의 플러그인을 만들어 <doc_making_plugins>` 새로"
 "운 기능을 추가하거나 작업 흐름을 가속화하하세요."
+
+msgid ""
+":ref:`Download projects from the Asset Store <doc_using_asset_store_editor>` "
+"in the Project Manager and import them directly."
+msgstr ""
+"프로젝트 매니저의 :ref:`에셋 스토어에서 프로젝트를 다운로드 "
+"<doc_using_asset_store_editor>`\\하고 직접 가져옵니다."
 
 msgid "Rendering"
 msgstr "렌더링"
@@ -321,9 +335,6 @@ msgid ""
 msgstr ""
 ":ref:`class_Polygon2D`\\ 와 :ref:`class_Line2D` 같은 직선이나 폴리곤을 그리"
 "는 고수준 툴. 텍스처링도 지원합니다."
-
-msgid "AnimatedSprite2D as a helper for creating animated sprites."
-msgstr "애니메이션 스프라이트 제작 도우미 AnimatedSprite2D."
 
 msgid "Parallax layers."
 msgstr "패럴랙스 레이어."
@@ -744,6 +755,14 @@ msgid ""
 msgstr ""
 "자동 및 수동으로 배치된 프로브를 사용하여 동적 오브젝트에 라이팅을 지원합니"
 "다."
+
+msgid ""
+"Optional supersampling at bake-time to improve quality and reduce light "
+"leaking at the cost of increased bake times and memory usage during baking."
+msgstr ""
+"굽기(bake) 시간과 메모리 사용량이 증가하는 대신, 품질을 향상시키고 빛 샘"
+"(light leaking)을 줄이기 위한 선택적 베이크 타임(bake-time) 슈퍼샘플링을 지원"
+"합니다."
 
 msgid ""
 ":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
@@ -1268,12 +1287,6 @@ msgid "Packaged in a separate binary to keep file sizes and dependencies down."
 msgstr ""
 "파일 크기를 줄이고 의존성을 낮추기 위해 별도의 바이너리로 패키징했습니다."
 
-msgid "Supports .NET 8 and higher."
-msgstr ".NET 8 및 상위 버전을 지원합니다."
-
-msgid "Full support for the C# 12.0 syntax and features."
-msgstr "C# 12.0의 구문과 기능을 모두 지원합니다."
-
 msgid ""
 "Supports Windows, Linux, and macOS. Since Godot 4.2, experimental support "
 "for Android and iOS is also available."
@@ -1762,6 +1775,9 @@ msgstr "서드 파티 모듈을 사용한 광고 지원."
 msgid "XR support (AR and VR)"
 msgstr "XR 지원 (AR 및 VR)"
 
+msgid "Android XR headsets"
+msgstr "Android XR 헤드셋"
+
 msgid ""
 "Currently only exporting an application for use on a flat plane within the "
 "headset is supported. Immersive experiences are not supported."
@@ -1858,6 +1874,9 @@ msgstr ""
 
 msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
 msgstr ":ref:`Draggable splitter <class_SplitContainer>` 레이아웃."
+
+msgid ":ref:`Foldable section <class_FoldableContainer>` layouts."
+msgstr ":ref:`폴더블 섹션 <class_FoldableContainer>` 레이아웃."
 
 msgid ""
 "Scale to :ref:`multiple resolutions <doc_multiple_resolutions>` using the "
@@ -2070,13 +2089,6 @@ msgstr ""
 
 msgid "Licensed under the permissive MIT license."
 msgstr "라이선스는 MIT 라이선스입니다."
-
-msgid ""
-"Open development process with `contributions welcome <https://"
-"contributing.godotengine.org/en/latest/organization/"
-"how_to_contribute.html>`__."
-msgstr ""
-":ref:`contributions welcome <doc_ways_to_contribute>` 공개된 개발 프로세스."
 
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"

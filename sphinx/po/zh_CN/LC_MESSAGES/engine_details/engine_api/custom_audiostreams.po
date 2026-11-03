@@ -116,11 +116,8 @@ msgid ""
 "memory allocation are forbidden."
 msgstr "由于AudioStreamPlayback由音频线程控制, 因此禁止进行i/o和动态内存分配."
 
-msgid "audiostreamplayer_mytone.h"
-msgstr "audiostreamplayer_mytone.h"
-
-msgid "audiostreamplayer_mytone.cpp"
-msgstr "audiostreamplayer_mytone.cpp"
+msgid "Usage"
+msgstr "用法"
 
 msgid "Resampling"
 msgstr "重采样"
@@ -141,12 +138,6 @@ msgid ""
 msgstr ""
 "AudioStreamPlaybackResampled不是重载 ``mix`` , 而是使用 ``_mix_internal`` 来"
 "查询AudioFrames, 并使用 ``get_stream_sampling_rate`` 来查询当前的混合率."
-
-msgid "mytone_audiostream_resampled.h"
-msgstr "mytone_audiostream_resampled.h"
-
-msgid "mytone_audiostream_resampled.cpp"
-msgstr "mytone_audiostream_resampled.cpp"
 
 msgid ""
 "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"

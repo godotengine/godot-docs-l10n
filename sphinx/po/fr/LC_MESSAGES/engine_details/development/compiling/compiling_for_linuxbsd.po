@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Compiling for Linux, \\*BSD"
+msgstr "Compilation pour Linux, \\*BSD"
+
 msgid ""
 "This page describes how to compile Linux editor and export template binaries "
 "from source. If you're looking to export your project to Linux instead, "
@@ -31,6 +34,9 @@ msgstr ""
 
 msgid "GCC 9+ or Clang 6+."
 msgstr "GCC 9+ ou Clang 6+."
+
+msgid "`Python 3.9+ <https://www.python.org/downloads/>`_."
+msgstr "`Python 3.9+ <https://www.python.org/downloads/>`_."
 
 msgid "Development libraries:"
 msgstr "Bibliothèques de développement :"
@@ -202,5 +208,11 @@ msgstr ""
 "Une fois la compilation terminée, un nouveau binaire avec un suffixe "
 "``.llvm`` sera créé dans le dossier ``bin/``."
 
+msgid "If this error occurs:"
+msgstr "Si cette erreur se produit :"
+
 msgid "There are two solutions:"
 msgstr "Il y a deux façon de faire cela :"
+
+msgid "Using mold for faster development"
+msgstr "Utiliser mold pour un développement plus rapide"

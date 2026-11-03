@@ -11,8 +11,95 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "WebXR"
+msgstr "WebXR"
+
+msgid ""
+"WebXR is a web standard for delivering XR experiences right from a web "
+"browser, without the user needing to install anything. Godot has built-in "
+"support for WebXR."
+msgstr ""
+"WebXR — це веб-стандарт, що дозволяє надавати XR-досвід безпосередньо у веб-"
+"браузері, без необхідності встановлення будь-яких додатків користувачем. "
+"Godot має вбудовану підтримку WebXR."
+
+msgid ""
+"As this uses the HTML export WebXR requires the use of the compatibility "
+"renderer. Godot currently requires multiview support for stereo rendering "
+"which is not available on all WebXR capable devices."
+msgstr ""
+"Оскільки тут використовується експорт у форматі HTML, WebXR вимагає "
+"застосування рендерера сумісності. Наразі Godot потребує підтримки "
+"багатовидового режиму для стереорендерингу, яка доступна не на всіх "
+"пристроях, що підтримують WebXR."
+
 msgid "Setup"
 msgstr "Налаштування"
+
+msgid ""
+"Setting up WebXR is a little different because your application always "
+"starts as a normal non-XR webpage. We thus define a 2D UI on our main page "
+"that includes a button that will switch to XR."
+msgstr ""
+"Налаштування WebXR дещо відрізняється, оскільки ваш додаток завжди "
+"запускається як звичайна веб-сторінка, що не підтримує XR. Тому ми створюємо "
+"на головній сторінці 2D-інтерфейс, який містить кнопку для переходу в режим "
+"XR."
+
+msgid "We will need the following code to make things work:"
+msgstr "Щоб все запрацювало, нам знадобиться такий код:"
+
+msgid ""
+"Make sure the \"Enable WebXR\" button's ``button_pressed`` signal calls the "
+"``_on_enter_webxr_button_pressed`` method."
+msgstr ""
+"Переконайтеся, що сигнал ``button_pressed`` кнопки «Увімкнути WebXR» "
+"викликає метод ``_on_enter_webxr_button_pressed``."
+
+msgid ""
+"In the code above we attempt to use the ``local-floor`` reference spaces. "
+"This reference spaces assumes gameplay where we need to know the player's "
+"height from the floor."
+msgstr ""
+"У наведеному вище коді ми намагаємося використовувати референтні простори "
+"``local-floor``. Ці референтні простори передбачають ігровий процес, у якому "
+"нам потрібно знати відстань від підлоги до гравця."
+
+msgid ""
+"For games where the player is seated inside of a vehicle, such as flight "
+"sims or racing games, the reference space ``local`` may be more appropriate."
+msgstr ""
+"Для ігор, у яких гравець перебуває всередині транспортного засобу, "
+"наприклад, у симуляторах польотів або гоночних іграх, більш доречним може "
+"бути опорний простір ``local``."
+
+msgid "Controller input"
+msgstr "Вхід контролера"
+
+msgid ""
+"The input system in WebXR works against a fixed set of inputs that obfuscate "
+"the actual hardware being used. In order to allow for code to be portable "
+"between a WebXR and OpenXR application these inputs are mapped to actions "
+"that overlap with the default action map used by our OpenXR interface."
+msgstr ""
+"Система введення даних у WebXR працює на основі фіксованого набору вхідних "
+"даних, які приховують фактичне апаратне забезпечення, що використовується. "
+"Щоб забезпечити переносимість коду між додатками WebXR та OpenXR, ці вхідні "
+"дані зіставляються з діями, які перетинаються зі стандартною картою дій, що "
+"використовується нашим інтерфейсом OpenXR."
+
+msgid ""
+"There are small differences such as WebXR separating touchpad and "
+"thumbsticks as separate inputs, instead of the primary and secondary input "
+"setup found in our default OpenXR action map."
+msgstr ""
+"Існують незначні відмінності, наприклад, у WebXR тачпад і джойстики "
+"розглядаються як окремі пристрої введення, на відміну від налаштування "
+"основного та додаткового пристроїв введення, яке використовується у нашій "
+"стандартній карті дій OpenXR."
+
+msgid "The core inputs are available for WebXR:"
+msgstr "Для WebXR доступні такі основні вхідні дані:"
 
 msgid "Name"
 msgstr "Ім'я"
@@ -23,8 +110,104 @@ msgstr "Тип"
 msgid "Description"
 msgstr "Опис"
 
+msgid "trigger_click"
+msgstr "trigger_click"
+
 msgid "Boolean"
 msgstr "Логічний"
 
+msgid "``true`` if the trigger is pressed"
+msgstr "``true``, якщо тригер натиснуто"
+
+msgid "trigger"
+msgstr "тригер"
+
 msgid "Float"
 msgstr "Поплавок"
+
+msgid "Trigger value between 0.0 and 1.0"
+msgstr "Значення спрацьовування в діапазоні від 0,0 до 1,0"
+
+msgid "grip_click"
+msgstr "grip_click"
+
+msgid "``true`` if the grip button is pressed"
+msgstr "``true``, якщо натиснуто кнопку захвату"
+
+msgid "grip"
+msgstr "grip"
+
+msgid "Grip value between 0.0 and 1.0"
+msgstr "Значення зчеплення в діапазоні від 0,0 до 1,0"
+
+msgid "touchpad_click"
+msgstr "touchpad_click"
+
+msgid "``true`` if the touchpad is pressed"
+msgstr "``true``, якщо тачпад натиснуто"
+
+msgid "thumbstick_click"
+msgstr "thumbstick_click"
+
+msgid "``true`` if the thumbstick is pressed"
+msgstr "``true``, якщо джойстик натиснуто"
+
+msgid "ax_button"
+msgstr "ax_button"
+
+msgid "``true`` if the A or X button is pressed"
+msgstr "``true``, якщо натиснуто кнопку A або X"
+
+msgid "by_button"
+msgstr "by_button"
+
+msgid "``true`` if the B or Y button is pressed"
+msgstr "``true``, якщо натиснуто кнопку B або Y"
+
+msgid "touchpad_x"
+msgstr "touchpad_x"
+
+msgid "Finger movement on the touchpad in the X direction"
+msgstr "Рух пальця по тачпаду у напрямку X"
+
+msgid "touchpad_y"
+msgstr "touchpad_y"
+
+msgid "Finger movement on the touchpad in the Y direction"
+msgstr "Рух пальця по тачпаду у напрямку Y"
+
+msgid "touchpad"
+msgstr "touchpad"
+
+msgid "Vector2"
+msgstr "Vector2"
+
+msgid "Touchpad input as a Vector2"
+msgstr "Введення з тачпада у вигляді Vector2"
+
+msgid "thumbstick_x"
+msgstr "thumbstick_x"
+
+msgid "Thumbstick movement in the X direction"
+msgstr "Рух джойстика у напрямку X"
+
+msgid "thumbstick_y"
+msgstr "thumbstick_y"
+
+msgid "Thumbstick movement in the Y direction"
+msgstr "Рух джойстика у напрямку Y"
+
+msgid "thumbstick"
+msgstr "thumbstick"
+
+msgid "Thumbstick input as a Vector2"
+msgstr "Введення за допомогою джойстика у вигляді Vector2"
+
+msgid ""
+"WebXR also exposes ``aim`` and ``grip`` poses that respectively identify a "
+"forward facing location at the tip of the controller and a position on the "
+"controller grip."
+msgstr ""
+"WebXR також надає доступ до поз ``aim`` та ``grip``, які відповідно "
+"визначають точку на кінчику контролера, спрямовану вперед, та положення на "
+"ручці контролера."

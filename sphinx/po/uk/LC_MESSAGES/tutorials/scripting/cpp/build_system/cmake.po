@@ -203,6 +203,24 @@ msgstr ""
 "Тому додайте її перед іншими залежностями, щоб значення поширювалося на всі "
 "проекти."
 
+msgid ""
+"Additionally, the :ref:`hook system "
+"<doc_godot_cpp_modifying_generated_files>` works a bit differently with "
+"CMake:"
+msgstr ""
+"Крім того, :ref:`система хуків <doc_godot_cpp_modifying_generated_files>` "
+"працює з CMake дещо інакше:"
+
+msgid "Your subclass has to be named ``CustomBindingGeneratorHooks``."
+msgstr "Ваш підклас має називатися ``CustomBindingGeneratorHooks``."
+
+msgid ""
+"Pass the filepath of the python file containing your subclass with the "
+"``GODOTCPP_BINDING_HOOK_FILE`` option to CMake."
+msgstr ""
+"Передайте CMake шлях до файлу Python, що містить ваш підклас, за допомогою "
+"опції ``GODOTCPP_BINDING_HOOK_FILE``."
+
 msgid "Basic Walk-Through"
 msgstr "Базовий покроковий посібник"
 

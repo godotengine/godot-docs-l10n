@@ -269,6 +269,13 @@ msgstr ""
 "图块放置 AudioStreamPlayer2D（用于环境音效）、粒子特效等。"
 
 msgid ""
+"Scene tiles come with a greater performance overhead compared to atlases, as "
+"every scene is instantiated individually for every placed tile."
+msgstr ""
+"与图集相比，场景图块会带来更高的性能开销，因为每个场景都会针对每个放置的图块"
+"单独实例化。"
+
+msgid ""
 "It's recommended to only use scene tiles when necessary. To draw sprites in "
 "a tile without any kind of advanced manipulation, :ref:`use atlases instead "
 "<doc_creating_tilesets_using_tilesheet>`."

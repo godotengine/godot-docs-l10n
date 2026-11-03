@@ -188,6 +188,20 @@ msgstr ""
 "Доступ к этим свойствам можно получить как из функций ``start()``, так и из "
 "``process()``."
 
+msgid ""
+"When using the built-in :ref:`class_ParticleProcessMaterial`, ``USERDATA1`` "
+"is defined with the following value in the built-in:"
+msgstr ""
+"При использовании встроенного :ref:`class_ParticleProcessMaterial` параметр "
+"``USERDATA1`` определяется со следующим значением:"
+
+msgid ""
+"**w**: Accumulated angle from angular velocity in radians, as applied by the "
+"angular velocity texture."
+msgstr ""
+"**w**: Накопленный угол, полученный из угловой скорости (в радианах) — в "
+"соответствии с тем, как он задается текстурой угловой скорости."
+
 msgid "Function"
 msgstr "Функция"
 
@@ -223,6 +237,10 @@ msgstr "Преобразование эмиттера (используется 
 
 msgid "in uint **RANDOM_SEED**"
 msgstr "in uint **RANDOM_SEED**"
+
+msgid "Random seed used as a base for randomness."
+msgstr ""
+"Случайное начальное число, используемое в качестве основы для случайности."
 
 msgid "inout bool **ACTIVE**"
 msgstr "inout bool **ACTIVE**"

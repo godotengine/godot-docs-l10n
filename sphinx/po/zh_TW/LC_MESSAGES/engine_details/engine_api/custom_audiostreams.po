@@ -118,11 +118,8 @@ msgstr ""
 "由於 AudioStreamPlayback 受音訊執行緒控制，因此禁止進行 I/O 或動態記憶體分"
 "配。"
 
-msgid "audiostreamplayer_mytone.h"
-msgstr "audiostreamplayer_mytone.h"
-
-msgid "audiostreamplayer_mytone.cpp"
-msgstr "audiostreamplayer_mytone.cpp"
+msgid "Usage"
+msgstr "用法"
 
 msgid "Resampling"
 msgstr "重新取樣"
@@ -144,12 +141,6 @@ msgid ""
 msgstr ""
 "AudioStreamPlaybackResampled 並非複寫 ``mix``，而是使用 ``_mix_internal`` 查"
 "詢 AudioFrame，並以 ``get_stream_sampling_rate`` 取得目前混音取樣率。"
-
-msgid "mytone_audiostream_resampled.h"
-msgstr "mytone_audiostream_resampled.h"
-
-msgid "mytone_audiostream_resampled.cpp"
-msgstr "mytone_audiostream_resampled.cpp"
 
 msgid ""
 "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"

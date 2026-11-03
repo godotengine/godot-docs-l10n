@@ -133,15 +133,6 @@ msgstr ""
 msgid "``point0 = p0``: Is the first point, the source"
 msgstr "``point0 = p0``: É o primeiro ponto, a origem"
 
-msgid "``control0 = p1 - p0``: Is a vector relative to the first control point"
-msgstr ""
-"``control0 = p1 - p0``: É um vetor relativo ao primeiro ponto de controle"
-
-msgid ""
-"``control1 = p3 - p2``: Is a vector relative to the second control point"
-msgstr ""
-"``control1 = p3 - p2``: É um vetor relativo ao segundo ponto de controle"
-
 msgid "``point1 = p3``: Is the second point, the destination"
 msgstr "``point1 = p3``: É o segundo ponto, o destino"
 
@@ -153,6 +144,32 @@ msgstr ""
 "Dessa forma, temos dois pontos e dois pontos de controle que são vetores "
 "relativos aos seus respectivos pontos. Se você já usou softwares de gráficos "
 "ou animação antes, isso deve parecer familiar:"
+
+msgid ""
+"This is how graphics software present Bezier curves to the users, and how "
+"they work and look in Godot."
+msgstr ""
+"É assim que os softwares de gráficos apresentam as curvas de Bézier para os "
+"usuários, e é assim que elas funcionam e se parecem no Godot."
+
+msgid "Curve2D, Curve3D, Path2D, and Path3D"
+msgstr "Curve2D, Curve3D, Path2D e Path3D"
+
+msgid ""
+"In Godot, there are two resources types to efficiently store curves of any "
+"length: :ref:`Curve2D <class_Curve2D>` and :ref:`Curve3D <class_Curve3D>` "
+"(for 2D and 3D respectively)."
+msgstr ""
+"No Godot, existem dois tipos de recursos para armazenar eficientemente "
+"curvas de qualquer comprimento: :ref:`Curve2D <class_Curve2D>` "
+"e :ref:`Curve3D <class_Curve3D>` (para 2D e 3D, respectivamente)."
+
+msgid ""
+"They are often associated with their respective nodes: :ref:`Path2D "
+"<class_Path2D>` and :ref:`Path3D <class_Path3D>`."
+msgstr ""
+"Eles geralmente estão associados aos seus respectivos nós: :ref:`Path2D "
+"<class_Path2D>` e :ref:`Path3D <class_Path3D>`."
 
 msgid ""
 "Using them, however, may not be completely obvious, so following is a "

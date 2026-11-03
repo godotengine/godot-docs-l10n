@@ -623,6 +623,15 @@ msgstr ""
 "对于实例化（Instancing）， ``INSTANCE_CUSTOM`` 变量包含了实例的自定义数据。当"
 "使用粒子系统时，这些信息通常是："
 
+msgid "**x**: Current rotation angle in radians."
+msgstr "**x**：当前旋转角度（弧度）。"
+
+msgid "**z**: Current animation frame."
+msgstr "**z**：当前动画帧。"
+
+msgid "**y / w** (division): Lifetime fraction from ``0.0`` to ``1.0``."
+msgstr "**y / w** （除法）：从 ``0.0`` 到 ``1.0`` 的寿命占比。"
+
 msgid ""
 "This allows you to easily adjust the shader to a particle system using "
 "default particle material. When writing a custom particle shader, this value "
@@ -941,18 +950,6 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
 
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window. Upper-left of the viewport is the origin, ``(0.0, 0.0)``. Bottom-"
-"right of the viewport is ``(1.0, 1.0)``. ``z`` specifies fragment depth. It "
-"is also used as the output value for the fragment depth unless ``DEPTH`` is "
-"written to."
-msgstr ""
-"屏幕空间中像素中心的坐标。其中 ``xy`` 指定了该像素在窗口中的位置，坐标原点位"
-"于左上角 ``(0.0, 0.0)`` ，右下角为 ``(1.0, 1.0)`` 。``z`` 则指定了片段的深度"
-"值。除非你在代码中显式地写入了 ``DEPTH`` 变量，否则 z 的值也会直接被当作该片"
-"段的最终深度输出值。"
-
 msgid "in bool **FRONT_FACING**"
 msgstr "in bool **FRONT_FACING**"
 
@@ -1252,6 +1249,12 @@ msgid ""
 msgstr ""
 "在现有高光之上，额外叠加的一小块高光光斑。如果使用，Godot 将计算clearcoat层。"
 
+msgid "out float **CLEARCOAT_ROUGHNESS**"
+msgstr "out float **CLEARCOAT_ROUGHNESS**"
+
+msgid "The roughness of the clearcoat. If used, Godot calculates clearcoat."
+msgstr "面漆的粗糙度；若启用，Godot 将计算面漆参数。"
+
 msgid "out float **ANISOTROPY**"
 msgstr "out float **ANISOTROPY**"
 
@@ -1292,6 +1295,13 @@ msgstr "次表面散射透射的深度。数值越高，该效果就能穿透到
 
 msgid "out float **SSS_TRANSMITTANCE_BOOST**"
 msgstr "out float **SSS_TRANSMITTANCE_BOOST**"
+
+msgid ""
+"Boosts the subsurface scattering transmittance if set above ``0.0``. This "
+"makes the effect show up even on directly lit surfaces."
+msgstr ""
+"当该参数设置为高于 ``0.0`` 时，可增强地下散射透射率；这样一来，即使在直射光照"
+"射的表面上也能观察到该效果。"
 
 msgid "inout vec3 **BACKLIGHT**"
 msgstr "inout vec3 **BACKLIGHT**"

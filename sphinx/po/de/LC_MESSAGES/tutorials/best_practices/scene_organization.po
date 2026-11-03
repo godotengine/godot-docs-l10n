@@ -32,6 +32,15 @@ msgstr ""
 "Praktiken in der Szenenstruktur und der Skriptverwendung."
 
 msgid ""
+"**If at all possible, you should design scenes to have no dependencies.** "
+"That is, you should create scenes that keep everything they need within "
+"themselves."
+msgstr ""
+"**Wenn möglich, sollte man Szenen so gestalten, dass sie keine "
+"Abhängigkeiten aufweisen.** Das heißt, man sollte Szenen schaffen, die "
+"alles, was sie benötigen, in sich selbst enthalten."
+
+msgid ""
 "If a scene must interact with an external context, experienced developers "
 "recommend the use of `Dependency Injection <https://en.wikipedia.org/wiki/"
 "Dependency_injection>`_. This technique involves having a high-level API "
@@ -63,15 +72,15 @@ msgid ""
 "Initialize a :ref:`Callable <class_Callable>` property. Safer than a method "
 "as ownership of the method is unnecessary. Used to start behavior."
 msgstr ""
-"Initialisieren einer :ref:`Callable <class_Callable>`-Eigenschaft. Sicherer "
+"eine :ref:`Callable <class_Callable>`-Eigenschaft initialisieren. Sicherer "
 "als eine Methode, da es nicht nötig ist, die Methode zu besitzen. Wird "
 "verwendet, um ein Verhalten einzuleiten."
 
 msgid "Initialize a Node or other Object reference."
-msgstr "Initialisieren eines Nodes oder einer anderen Objektreferenz."
+msgstr "Ein Node oder eine andere Objektreferenz initialisieren."
 
 msgid "Initialize a NodePath."
-msgstr "Initialisieren eines NodePath."
+msgstr "Ein NodePath initialisieren."
 
 msgid ""
 "Scripts and scenes, as extensions of engine classes, should abide by *all* "
@@ -80,17 +89,72 @@ msgstr ""
 "Skripte und Szenen als Erweiterungen von Engine-Klassen sollten *allen* OOP-"
 "Prinzipien folgen. Beispiele beinhalten …"
 
+msgid "`SOLID: <https://en.wikipedia.org/wiki/SOLID>`_"
+msgstr ""
+"`SOLID: <https://de.wikipedia.org/wiki/"
+"Prinzipien_objektorientierten_Designs>`_"
+
+msgid ""
+"`Single responsibility <https://en.wikipedia.org/wiki/Single-"
+"responsibility_principle>`_"
+msgstr ""
+"`Single-Responsibility-Prinzip <https://de.wikipedia.org/wiki/Single-"
+"Responsibility-Prinzip>`_"
+
+msgid ""
+"`Open for extension, closed for modification <https://en.wikipedia.org/wiki/"
+"Open%E2%80%93closed_principle>`_"
+msgstr ""
+"`Open-Closed-Prinzip <https://de.wikipedia.org/wiki/Open-Closed-Prinzip>`_"
+
+msgid ""
+"`Liskov substitution <https://en.wikipedia.org/wiki/"
+"Liskov_substitution_principle>`_"
+msgstr ""
+"`Liskovsches Substitutionsprinzip <https://de.wikipedia.org/wiki/"
+"Liskovsches_Substitutionsprinzip>`_"
+
+msgid ""
+"`Interface segregation <https://en.wikipedia.org/wiki/"
+"Interface_segregation_principle>`_"
+msgstr ""
+"`Interface-Segregation-Prinzip <https://de.wikipedia.org/wiki/Interface-"
+"Segregation-Prinzip>`_"
+
+msgid ""
+"`Dependency inversion <https://en.wikipedia.org/wiki/"
+"Dependency_inversion_principle>`_"
+msgstr ""
+"`Dependency-Inversion-Prinzip <https://de.wikipedia.org/wiki/Dependency-"
+"Inversion-Prinzip>`_"
+
+msgid ""
+"`DRY: Don't Repeat Yourself <https://en.wikipedia.org/wiki/"
+"Don%27t_repeat_yourself>`_"
+msgstr ""
+"`DRY: Don’t repeat yourself <https://de.wikipedia.org/wiki/"
+"Don%E2%80%99t_repeat_yourself>`_"
+
+msgid ""
+"`KISS: Keep It Simple Stupid <https://en.wikipedia.org/wiki/KISS_principle>`_"
+msgstr "`KISS-Prinzip <https://de.wikipedia.org/wiki/KISS-Prinzip>`_"
+
+msgid ""
+"`YAGNI: You Aren't Gonna Need It <https://en.wikipedia.org/wiki/"
+"You_aren%27t_gonna_need_it>`_"
+msgstr "`YAGNI <https://de.wikipedia.org/wiki/YAGNI>`_"
+
 msgid "Choosing a node tree structure"
-msgstr "Auswahl einer Node-Baum-Struktur"
+msgstr "Eine Node-Baumstruktur auswählen"
 
 msgid "Node \"Main\" (main.gd)"
-msgstr "Node \"Main\" (main.gd)"
+msgstr "Node „Main“ (main.gd)"
 
 msgid "Node2D/Node3D \"World\" (game_world.gd)"
-msgstr "Node2D/Node3D \"Welt\" (game_world.gd)"
+msgstr "Node2D/Node3D „World“ (game_world.gd)"
 
 msgid "Control \"GUI\" (gui.gd)"
-msgstr "Control \"GUI\" (gui.gd)"
+msgstr "Control „GUI“ (gui.gd)"
 
 msgid ""
 "The next step is to consider what gameplay systems your project requires. If "
@@ -146,10 +210,24 @@ msgstr ""
 "bewegen muss, um sich selbst am Leben zu erhalten. Zum Beispiel …"
 
 msgid "Add a \"player\" node to a \"room\"."
-msgstr "Fügen Sie einen \"Spieler\"-Node zu einem \"Raum\" hinzu."
+msgstr "Einen „Player“-Node zu einem „Raum“ hinzufügen."
+
+msgid "If memory is not a concern, you can..."
+msgstr "Wenn Speicher kein Problem darstellt, können Sie …"
+
+msgid "Create the new room."
+msgstr "Den neuen Raum erstellen."
+
+msgid "Move the player to the new room."
+msgstr "Den Spieler in den neuen Raum bewegen."
+
+msgid "Delete the old room."
+msgstr "Den alten Raum löschen."
 
 msgid "If memory is a concern, instead you will need to..."
-msgstr "Falls doch, muss man …"
+msgstr ""
+"Sollte der verfügbare Speicher ein Problem darstellen, müssen Sie "
+"stattdessen …"
 
 msgid "Move the player somewhere else in the tree."
 msgstr "Den Spieler an eine andere Stelle im Baum bewegen."
@@ -159,6 +237,9 @@ msgstr "Den Raum löschen."
 
 msgid "Instantiate and add the new room."
 msgstr "Den neuen Raum instanziieren und hinzufügen."
+
+msgid "Re-add the player to the new room."
+msgstr "Den Spieler dem neuen Raum erneut hinzufügen."
 
 msgid "More consistency."
 msgstr "Mehr Konsistenz."

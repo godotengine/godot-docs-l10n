@@ -512,6 +512,11 @@ msgid "Global arrays"
 msgstr "Arrays globais"
 
 msgid ""
+"You can declare arrays in global scope as either ``const`` or ``uniform``:"
+msgstr ""
+"Você pode declarar arrays no escopo global como ``const`` ou ``uniform``:"
+
+msgid ""
 "Global arrays use the same syntax as local arrays, except with a ``const`` "
 "or ``uniform`` added to their declaration. Note that uniform arrays can't "
 "have a default value."
@@ -535,6 +540,15 @@ msgstr ""
 "básicos, exceto samplers, podem ser declarados como constantes. Acessar e "
 "usar um valor constante é ligeiramente mais rápido do que usar um uniform. "
 "As constantes devem ser inicializadas em sua declaração."
+
+msgid ""
+"Constants cannot be modified and additionally cannot have hints, but "
+"multiple of them (if they have the same type) can be declared in a single "
+"expression."
+msgstr ""
+"Constantes não podem ser modificadas e também não podem ter dicas (hints), "
+"mas múltiplas constantes (se tiverem o mesmo tipo) podem ser declaradas em "
+"uma única expressão."
 
 msgid "Similar to variables, arrays can also be declared with ``const``."
 msgstr ""
@@ -587,6 +601,13 @@ msgstr "Após a declaração, você pode instanciá-los e inicializá-los assim:
 
 msgid "Or use struct constructor for same purpose:"
 msgstr "Ou usar o construtor da struct para o mesmo propósito:"
+
+msgid ""
+"Structs may contain other struct or array, you can also instantiate them as "
+"global constant:"
+msgstr ""
+"Estruturas (structs) podem conter outra estrutura ou array; você também pode "
+"instanciá-las como uma constante global:"
 
 msgid "You can also pass them to functions:"
 msgstr "Você também pode passá-los para funções:"

@@ -118,11 +118,8 @@ msgstr ""
 "AudioStreamPlayback은 오디오 스레드에 의해 제어되므로 i/o 및 동적 메모리 할당"
 "이 금지됩니다."
 
-msgid "audiostreamplayer_mytone.h"
-msgstr "audiostreamplayer_mytone.h"
-
-msgid "audiostreamplayer_mytone.cpp"
-msgstr "audiostreamplayer_mytone.cpp"
+msgid "Usage"
+msgstr "사용례"
 
 msgid "Resampling"
 msgstr "리샘플링"
@@ -145,12 +142,6 @@ msgstr ""
 "``mix``\\를 오버로드하는 대신 AudioStreamPlaybackResampled는 "
 "``_mix_internal``\\를 사용하여 AudioFrame을 쿼리하고 "
 "``get_stream_sampling_rate``\\를 사용하여 현재 믹스 속도를 쿼리합니다."
-
-msgid "mytone_audiostream_resampled.h"
-msgstr "mytone_audiostream_resampled.h"
-
-msgid "mytone_audiostream_resampled.cpp"
-msgstr "mytone_audiostream_resampled.cpp"
 
 msgid ""
 "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"

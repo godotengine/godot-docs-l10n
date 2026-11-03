@@ -38,6 +38,13 @@ msgstr ""
 "propio AudioStreamPlayback interno personalizado que traduce AudioStream en "
 "datos PCM."
 
+msgid ""
+"This guide assumes the reader knows how to create C++ modules. If not, refer "
+"to this guide :ref:`doc_custom_modules_in_cpp`."
+msgstr ""
+"Esta guía asume que el lector sabe como crear modulos en C++. Si no, "
+"consulta la guía :ref:`doc_custom_modules_in_cpp`."
+
 msgid "References:"
 msgstr "Referencias:"
 
@@ -58,7 +65,7 @@ msgid "Adding custom audio queues"
 msgstr "Agregar colas de audio personalizados"
 
 msgid "Adding support for more audio formats"
-msgstr "Agregar soporte para mas formatos de audio"
+msgstr "Agregar soporte para más formatos de audio"
 
 msgid "Create an AudioStream"
 msgstr "Crear un AudioStream"
@@ -112,11 +119,8 @@ msgstr ""
 "operaciones de entrada/salida y la asignación dinámica de memoria están "
 "prohibidas."
 
-msgid "audiostreamplayer_mytone.h"
-msgstr "audiostreamplayer_mytone.h"
-
-msgid "audiostreamplayer_mytone.cpp"
-msgstr "audiostreamplayer_mytone.cpp"
+msgid "Usage"
+msgstr "Uso"
 
 msgid "Resampling"
 msgstr "Remuestreo"
@@ -141,12 +145,6 @@ msgstr ""
 "En lugar de sobrecargar ``mix``, AudioStreamPlaybackResampled utiliza "
 "``_mix_internal`` para obtener AudioFrames y ``get_stream_sampling_rate`` "
 "para obtener la frecuencia de mezcla actual."
-
-msgid "mytone_audiostream_resampled.h"
-msgstr "mytone_audiostream_resampled.h"
-
-msgid "mytone_audiostream_resampled.cpp"
-msgstr "mytone_audiostream_resampled.cpp"
 
 msgid ""
 "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"

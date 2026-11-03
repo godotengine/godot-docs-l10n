@@ -49,6 +49,9 @@ msgstr "*示例：Intel Core 2 Duo E8200、AMD FX-4100、Snapdragon X Elite*"
 msgid "**macOS:** x86_64 or ARM CPU (Apple Silicon)"
 msgstr "**macOS：**\\ x86_64 或 ARM CPU（Apple Silicon）"
 
+msgid "*Example: Intel 7th Gen (Kaby Lake) CPU, Apple M1*"
+msgstr "*示例：英特尔第七代（Kaby Lake）处理器、苹果M1芯片*"
+
 msgid ""
 "**Linux:** x86_32 CPU with SSE2 support, x86_64 CPU with SSE4.2 support, "
 "ARMv7 or ARMv8 CPU"
@@ -92,6 +95,14 @@ msgstr "**Web 编辑器：**\\ 8 GB"
 
 msgid "**Storage**"
 msgstr "**存储**"
+
+msgid ""
+"200 MB (used for the executable, project files, and cache). Exporting "
+"projects requires downloading export templates separately (up to 1.5 GB "
+"after installation, depending on the target platforms chosen)."
+msgstr ""
+"200 MB（用于可执行文件、项目文件及缓存）。导出项目需单独下载导出模板（安装后"
+"总量可达 1.5 GB，具体取决于所选目标平台）。"
 
 msgid "**Operating system**"
 msgstr "**操作系统**"
@@ -227,6 +238,11 @@ msgstr "**原生编辑器：**\\ 8 GB"
 msgid "**Web editor:** 12 GB"
 msgstr "**Web 编辑器：**\\ 12 GB"
 
+msgid ""
+"2 GB (used for the executable, project files, all export templates, and "
+"cache)"
+msgstr "2 GB（用于可执行文件、项目文件、所有导出模板及缓存）"
+
 msgid "**Web editor:** Latest version of Firefox, Chrome, Edge, Safari, Opera"
 msgstr "**Web 编辑器：**\\ 最新版本的 Firefox、Chrome、Edge、Safari、Opera"
 
@@ -329,11 +345,11 @@ msgstr "**原生导出：**\\ 2 GB"
 msgid "**For web exports:** 4 GB"
 msgstr "**Web 导出：**\\ 4 GB"
 
-msgid "**iOS:** SoC with any 64-bit ARM CPU"
-msgstr "**iOS：**\\ 芯片使用任何 64 位 ARM CPU"
+msgid "150 MB (used for the executable, project files, and cache)"
+msgstr "150 MB（用于可执行文件、项目文件及缓存）"
 
-msgid "*Example: Apple A7 (iPhone 5S)*"
-msgstr "*示例：Apple A7（iPhone 5S）*"
+msgid "**iOS:** SoC with 64-bit ARM CPU"
+msgstr "**iOS：**\\ 芯片使用 64 位 ARM CPU"
 
 msgid ""
 "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.0 support, or "
@@ -358,14 +374,20 @@ msgstr ""
 "**移动渲染器：** 适用于搭载完整支持 Vulkan 1.0 的 GPU 的系统级芯片（SoC），或"
 "支持 Metal 3 的设备（iOS/iPadOS）"
 
-msgid "*Example: Qualcomm Adreno 306, Mali-T628 MP6, Apple A7 (iPhone 5S)*"
-msgstr "*示例：Qualcomm Adreno 306、Mali-T628 MP6、Apple A7（iPhone 5S）*"
-
 msgid "**For native exports:** 1 GB"
 msgstr "**原生导出：**\\ 1 GB"
 
 msgid "**For web exports:** 2 GB"
 msgstr "**Web 导出：**\\ 2 GB"
+
+msgid ""
+"**For native exports:** Android 7.0 (Compatibility), Android 9.0 (Forward+/"
+"Mobile), iOS 15.0 (Forward+/Mobile with Vulkan), iOS 16.0 (Forward+/Mobile "
+"with Metal)"
+msgstr ""
+"**原生导出支持：** Android 7.0（兼容）、Android 9.0（Forward+/Mobile）、iOS "
+"15.0（Forward+/Mobile（支持 Vulkan））、iOS 16.0（Forward+/Mobile（支持 "
+"Metal））"
 
 msgid ""
 "These are the **recommended** specifications to get a smooth experience with "
@@ -405,9 +427,6 @@ msgid ""
 "**For web exports:** Latest version of Firefox, Chrome, Edge, Safari, Opera"
 msgstr "**Web 导出：**\\ 最新版本的 Firefox、Chrome、Edge、Safari、Opera"
 
-msgid "**iOS:** SoC with 64-bit ARM CPU"
-msgstr "**iOS：**\\ 芯片使用 64 位 ARM CPU"
-
 msgid "*Example: Apple A14 (iPhone 12)*"
 msgstr "*示例：Apple A14（iPhone 12）*"
 
@@ -427,6 +446,9 @@ msgid ""
 msgstr ""
 "**移动渲染器：** 配备支持 Vulkan 1.2 或 Metal 3（iOS/iPadOS）的 GPU 的系统级"
 "芯片（SoC）"
+
+msgid "**For native exports:** Android 9.0, iOS 16.0"
+msgstr "**适用于原生导出：** Android 9.0、iOS 16.0"
 
 msgid ""
 "**For web exports:** Latest version of Firefox, Chrome, Edge, Safari, Opera, "

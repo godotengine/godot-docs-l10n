@@ -137,13 +137,6 @@ msgstr "**运行选项**"
 msgid "``--``, ``++``"
 msgstr "``--``, ``++``"
 
-msgid ""
-"|release| Separator for user-provided arguments. Following arguments are not "
-"used by the engine, but can be read from ``OS.get_cmdline_user_args()``."
-msgstr ""
-"|release| 用户提供参数时使用的分隔符。引擎不会使用这些参数，但可以通过 "
-"``OS.get_cmdline_user_args()`` 读取到。"
-
 msgid "``-e``, ``--editor``"
 msgstr "``-e``, ``--editor``"
 
@@ -158,6 +151,14 @@ msgstr "|editor| 即使已经自动检测到项目，仍然启动项目管理器
 
 msgid "``--recovery-mode``"
 msgstr "``--recovery-mode``"
+
+msgid ""
+"|editor| Start the editor in recovery mode, which disables features that can "
+"typically cause startup crashes, such as tool scripts, editor plugins, and "
+"GDExtension addons."
+msgstr ""
+"|editor| 在恢复模式下启动编辑器；该模式会禁用可能引发系统启动崩溃的功能（例如"
+"工具脚本、编辑器插件及 GDExtension 插件）。"
 
 msgid "``--debug-server <uri>``"
 msgstr "``--debug-server <uri>``"
@@ -432,6 +433,13 @@ msgstr "|release| 请求附加到窗口。"
 msgid "``--accessibility <mode>``"
 msgstr "``--accessibility <mode>``"
 
+msgid ""
+"|release| Select accessibility mode [\"auto\" (when screen reader is "
+"running, default), \"always\", \"disabled\"]."
+msgstr ""
+"|release| 选择无障碍模式 [\"auto\"（当屏幕阅读器运行时，默认）、\"always\"、"
+"\"disabled\"]。"
+
 msgid "**Debug options**"
 msgstr "**调试选项**"
 
@@ -501,6 +509,21 @@ msgstr ""
 
 msgid "``--extra-gpu-memory-tracking``"
 msgstr "``--extra-gpu-memory-tracking``"
+
+msgid ""
+"|debug| Enables additional memory tracking "
+"(see :ref:`RenderingDevice.get_driver_and_device_memory_report() "
+"<class_RenderingDevice_method_get_driver_and_device_memory_report>` and "
+"linked methods). Currently only implemented for Vulkan. Enabling this "
+"feature may cause crashes on some systems due to buggy drivers or bugs in "
+"the Vulkan Loader. See https://github.com/godotengine/godot/issues/95967"
+msgstr ""
+"|debug| 启用额外的内存跟踪功能（参"
+"见 :ref:`RenderingDevice.get_driver_and_device_memory_report() "
+"<class_RenderingDevice_method_get_driver_and_device_memory_report>` 及相关方"
+"法）。目前该功能仅支持 Vulkan。启用此功能可能会因驱动程序存在缺陷或 Vulkan "
+"Loader 中存在漏洞而在某些系统上导致程序崩溃。请参阅 https://github.com/"
+"godotengine/godot/issues/95967"
 
 msgid "``--accurate-breadcrumbs``"
 msgstr "``--accurate-breadcrumbs``"
@@ -865,8 +888,18 @@ msgstr ""
 msgid "``--benchmark``"
 msgstr "``--benchmark``"
 
+msgid "|editor| Benchmark the runtime and print it to console."
+msgstr "|editor| 对运行时性能进行基准测试并将其输出到控制台。"
+
 msgid "``--benchmark-file <path>``"
 msgstr "``--benchmark-file <path>``"
+
+msgid ""
+"|editor| Benchmark the runtime and save it to the given file path, in JSON "
+"format. ``<path>`` should be absolute."
+msgstr ""
+"|editor| 对运行时性能进行基准测试，并将结果保存到指定的文件路径中，格式为 "
+"JSON 。``<path>`` 应为绝对路径。"
 
 msgid "``--test [--help]``"
 msgstr "``--test [--help]``"

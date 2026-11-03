@@ -197,6 +197,17 @@ msgstr ""
 "Veja :ref:`doc_navigation_using_navigationmeshes` para informações "
 "adicionais."
 
+msgid ""
+"2D navigation meshes can not be \"layered\" or stacked on top of each other "
+"like visuals or physics shapes. Attempting to stack navigation meshes on the "
+"same navigation map will result in merge and logical errors that break the "
+"pathfinding."
+msgstr ""
+"Malhas de navegação 2D não podem ser empilhadas ou dispostas em \"camadas\" "
+"umas sobre as outras como elementos visuais ou formas de física. Tentar "
+"empilhar malhas de navegação no mesmo mapa de navegação resultará em erros "
+"de mesclagem e de lógica que quebram a busca de caminhos (pathfinding)."
+
 msgid "Reordering layers"
 msgstr "Reordenando camadas"
 

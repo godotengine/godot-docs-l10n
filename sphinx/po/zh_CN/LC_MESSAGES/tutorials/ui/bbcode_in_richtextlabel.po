@@ -30,6 +30,18 @@ msgstr ""
 "用 :ref:`class_RichTextLabel` 。"
 
 msgid ""
+":ref:`class_RichTextLabel` allows for complex formatting of text using a "
+"markup syntax or the built-in API. It uses BBCodes for the markup syntax, a "
+"system of tags that designate formatting rules for a part of the text. You "
+"may be familiar with them if you ever used forums (also known as *bulletin "
+"boards*, hence the \"BB\" in \"BBCode\")."
+msgstr ""
+":ref:`class_RichTextLabel` 支持通过标记语法或内置 API 对文本进行复杂格式化。"
+"它采用 BBCodes 作为标记语法——这是一套用于为文本片段指定格式化规则的标签系统。"
+"如果您曾使用过论坛（也称为 *bulletin boards* ，因此“BBCode”中的“BB”即源于"
+"此），那么您可能对这些标签并不陌生。"
+
+msgid ""
 "Unlike Label, RichTextLabel also comes with its own vertical scrollbar. This "
 "scrollbar is automatically displayed if the text does not fit within the "
 "control's size. The scrollbar can be disabled by unchecking the **Scroll "
@@ -97,12 +109,6 @@ msgstr ""
 "RichTextLabel 节点后，这两个属性都位于检查器（Inspector）的最上方。"
 
 msgid ""
-"For example, ``BBCode [color=green]test[/color]`` would render the word "
-"\"test\" with a green color."
-msgstr ""
-"例如， ``BBCode [color=green]test[/color]`` 会将单词 \"test\" 渲染成绿色。"
-
-msgid ""
 "Most BBCodes consist of 3 parts: the opening tag, the content and the "
 "closing tag. The opening tag delimits the start of the formatted part, and "
 "can also carry some configuration options. Some opening tags, like the "
@@ -139,19 +145,6 @@ msgstr "请使用："
 
 msgid "Handling user input safely"
 msgstr "安全地处理用户输入"
-
-msgid ""
-"In a scenario where users may freely input text (such as chat in a "
-"multiplayer game), you should make sure users cannot use arbitrary BBCode "
-"tags that will be parsed by RichTextLabel. This is to avoid inappropriate "
-"use of formatting, which can be problematic if ``[url]`` tags are handled by "
-"your RichTextLabel (as players may be able to create clickable links to "
-"phishing sites or similar)."
-msgstr ""
-"在用户可以自由输入文本的场景下（比如多人游戏的聊天系统），你应该确保用户无法"
-"随意输入能被 RichTextLabel 解析的 BBCode 标签。这是为了避免格式被不当利用，特"
-"别是当你的 RichTextLabel 支持处理 ``[url]`` 标签时，这可能会带来安全隐患（比"
-"如玩家可能会创建出指向钓鱼网站或类似恶意页面的可点击链接）。"
 
 msgid ""
 "Example of unescaped user input resulting in BBCode injection (2nd line) and "
@@ -264,13 +257,6 @@ msgstr ""
 "此使用 ``pop()`` 时，会优先关闭最近才开始（也就是最里层）的标签。"
 
 msgid ""
-"The following script will result in the same visual output as using ``BBCode "
-"[color=green]test [i]example[/i][/color]``:"
-msgstr ""
-"运行下面的脚本，将会得到与使用 ``BBCode [color=green]test [i]example[/i][/"
-"color]`` 完全相同的视觉效果："
-
-msgid ""
 "Do **not** set the ``text`` property directly when using formatting "
 "functions. Appending to the ``text`` property will erase all modifications "
 "made to the RichTextLabel using the ``append_text()``, ``push_[tag]()`` and "
@@ -305,9 +291,6 @@ msgid ""
 "Makes ``{text}`` use the bold (or bold italics) font of ``RichTextLabel``."
 msgstr "让 ``{text}`` 使用 ``RichTextLabel`` 的粗体（或者粗斜体）字体。"
 
-msgid "``[b]{text}[/b]``"
-msgstr "``[b]{text}[/b]``"
-
 msgid "**i**"
 msgstr "**i**"
 
@@ -315,17 +298,11 @@ msgid ""
 "Makes ``{text}`` use the italics (or bold italics) font of ``RichTextLabel``."
 msgstr "让 ``{text}`` 使用 ``RichTextLabel`` 的斜体（或者粗斜体）字体。"
 
-msgid "``[i]{text}[/i]``"
-msgstr "``[i]{text}[/i]``"
-
 msgid "**u**"
 msgstr "**u**"
 
 msgid "Makes ``{text}`` underlined."
 msgstr "在 ``{text}`` 上显示下划线。"
-
-msgid "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
-msgstr "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
 
 msgid "**s**"
 msgstr "**s**"
@@ -333,26 +310,17 @@ msgstr "**s**"
 msgid "Makes ``{text}`` strikethrough."
 msgstr "在 ``{text}`` 上显示删除线。"
 
-msgid "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
-msgstr "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
-
 msgid "**code**"
 msgstr "**code**"
 
 msgid "Makes ``{text}`` use the mono font of ``RichTextLabel``."
 msgstr "让 ``{text}`` 使用 ``RichTextLabel`` 的等宽字体。"
 
-msgid "``[code]{text}[/code]``"
-msgstr "``[code]{text}[/code]``"
-
 msgid "**char**"
 msgstr "**char**"
 
 msgid "Adds Unicode character with hexadecimal UTF-32 ``{codepoint}``."
 msgstr "将十六进制的 UTF-32 码位 ``{codepoint}`` 添加为 Unicode 字符。"
-
-msgid "``[char={codepoint}]``"
-msgstr "``[char={codepoint}]``"
 
 msgid "**p**"
 msgstr "**p**"
@@ -363,12 +331,6 @@ msgid ""
 msgstr ""
 "将 ``{text}`` 添加为新的段落。支持配置选项，"
 "见 :ref:`doc_bbcode_in_richtextlabel_paragraph_options`\\ 。"
-
-msgid "``[p]{text}[/p]``"
-msgstr "``[p]{text}[/p]``"
-
-msgid "``[p {options}]{text}[/p]``"
-msgstr "``[p {options}]{text}[/p]``"
 
 msgid "**br**"
 msgstr "**br**"
@@ -381,9 +343,6 @@ msgstr ""
 "在文本中添加换行符，但不创建新段落。若在列表中使用，不会生成新的列表项，而是"
 "在当前项内插入换行。"
 
-msgid "``[br]``"
-msgstr "``[br]``"
-
 msgid "**hr**"
 msgstr "**hr**"
 
@@ -394,23 +353,11 @@ msgstr ""
 "添加一条新的水平分割线（horizontal rule）来分隔内容。支持配置选项，详情请"
 "见 :ref:`doc_bbcode_in_richtextlabel_hr_options` 。"
 
-msgid "``[hr]``"
-msgstr "``[hr]``"
-
-msgid "``[hr {options}]``"
-msgstr "``[hr {options}]``"
-
 msgid "**center**"
 msgstr "**center**"
 
 msgid "Makes ``{text}`` horizontally centered."
 msgstr "使得 ``{text}`` 水平居中。"
-
-msgid "Same as ``[p align=center]``."
-msgstr "等价于 ``[p align=center]``\\ 。"
-
-msgid "``[center]{text}[/center]``"
-msgstr "``[center]{text}[/center]``"
 
 msgid "**left**"
 msgstr "**left**"
@@ -418,23 +365,11 @@ msgstr "**left**"
 msgid "Makes ``{text}`` horizontally left-aligned."
 msgstr "使得 ``{text}`` 左对齐。"
 
-msgid "Same as ``[p align=left]``."
-msgstr "等价于 ``[p align=left]``\\ 。"
-
-msgid "``[left]{text}[/left]``"
-msgstr "``[left]{text}[/left]``"
-
 msgid "**right**"
 msgstr "**right**"
 
 msgid "Makes ``{text}`` horizontally right-aligned."
 msgstr "使得 ``{text}`` 右对齐。"
-
-msgid "Same as ``[p align=right]``."
-msgstr "等价于 ``[p align=right]``\\ 。"
-
-msgid "``[right]{text}[/right]``"
-msgstr "``[right]{text}[/right]``"
 
 msgid "**fill**"
 msgstr "**fill**"
@@ -442,24 +377,8 @@ msgstr "**fill**"
 msgid "Makes ``{text}`` fill the full width of ``RichTextLabel``."
 msgstr "让 ``{text}`` 填满整个 ``RichTextLabel`` 的宽度。"
 
-msgid "Same as ``[p align=fill]``."
-msgstr "等价于 ``[p align=fill]``\\ 。"
-
-msgid "``[fill]{text}[/fill]``"
-msgstr "``[fill]{text}[/fill]``"
-
 msgid "**indent**"
 msgstr "**indent**"
-
-msgid ""
-"Indents ``{text}`` once. The indentation width is the same as with ``[ul]`` "
-"or ``[ol]``, but without a bullet point."
-msgstr ""
-"单次缩进 ``{text}``\\ 。缩进宽度与 ``[ul]`` 或 ``[ol]`` 中相同，但不创建列表"
-"点。"
-
-msgid "``[indent]{text}[/indent]``"
-msgstr "``[indent]{text}[/indent]``"
 
 msgid "**url**"
 msgstr "**url**"
@@ -480,15 +399,6 @@ msgstr ""
 "**必须配合 \"meta_clicked\" 信号来处理才能生效,** "
 "看 :ref:`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
 
-msgid "``[url]{link}[/url]``"
-msgstr "``[url]{link}[/url]``"
-
-msgid "``[url={link}]{text}[/url]``"
-msgstr "``[url={link}]{text}[/url]``"
-
-msgid "``[url {options}]{text}[/url]``"
-msgstr "``[url {options}]{text}[/url]``"
-
 msgid "**hint**"
 msgstr "**hint**"
 
@@ -503,9 +413,6 @@ msgstr ""
 "建议使用双引号或单引号将提示文本括起来。需要注意的是，无法使用 ``\\\"`` 或 "
 "``\\'`` 来转义引号。因此，如果你需要在提示文本中使用单引号（比如表示英文中的"
 "撇号或缩写），就必须使用双引号来包裹整个字符串。"
-
-msgid "``[hint=\"{tooltip text displayed on hover}\"]{text}[/hint]``"
-msgstr "``[hint=\"{tooltip text displayed on hover}\"]{text}[/hint]``"
 
 msgid "**img**"
 msgstr "**img**"
@@ -554,21 +461,6 @@ msgid ""
 "see :ref:`doc_bbcode_in_richtextlabel_image_options`."
 msgstr "支持配置选项，见 :ref:`doc_bbcode_in_richtextlabel_image_options`\\ 。"
 
-msgid "``[img]{path}[/img]``"
-msgstr "``[img]{路径}[/img]``"
-
-msgid "``[img={width}]{path}[/img]``"
-msgstr "``[img={宽度}]{路径}[/img]``"
-
-msgid "``[img={width}x{height}]{path}[/img]``"
-msgstr "``[img=<宽度>x<高度>]{路径}[/img]``"
-
-msgid "``[img={valign}]{path}[/img]``"
-msgstr "``[img={垂直对齐}]{路径}[/img]``"
-
-msgid "``[img {options}]{path}[/img]``"
-msgstr "``[img {选项}]{路径}[/img]``"
-
 msgid "**font**"
 msgstr "**font**"
 
@@ -580,20 +472,11 @@ msgid ""
 "see :ref:`doc_bbcode_in_richtextlabel_font_options`."
 msgstr "支持配置选项，见 :ref:`doc_bbcode_in_richtextlabel_font_options`\\ 。"
 
-msgid "``[font={path}]{text}[/font]``"
-msgstr "``[font={路径}]{文本}[/font]``"
-
-msgid "``[font {options}]{text}[/font]``"
-msgstr "``[font {选项}]{文本}[/font]``"
-
 msgid "**font_size**"
 msgstr "**font_size**"
 
 msgid "Use custom font size for ``{text}``."
 msgstr "为 ``{text}`` 使用自定义字体大小。"
-
-msgid "``[font_size={size}]{text}[/font_size]``"
-msgstr "``[font_size={大小}]{文本}[/font_size]``"
 
 msgid "**dropcap**"
 msgstr "**dropcap**"
@@ -604,31 +487,6 @@ msgid ""
 msgstr ""
 "为 ``{text}`` 使用不同的字号和颜色；如果内容足够长，标签内的文字会自动跨行"
 "（换行）显示。"
-
-msgid ""
-"A `drop cap <https://www.computerhope.com/jargon/d/dropcap.htm>`__ is "
-"typically one uppercase character, but ``[dropcap]`` supports containing "
-"multiple characters. ``margins`` values are comma-separated and can be "
-"positive, zero or negative. Values must **not** be separated by spaces; "
-"otherwise, the values won't be parsed correctly. Negative top and bottom "
-"margins are particularly useful to allow the rest of the paragraph to "
-"display below the dropcap."
-msgstr ""
-"首字下沉（ `drop cap <https://www.computerhope.com/jargon/d/"
-"dropcap.htm>`__ ）通常只包含一个大写字母，但 ``[dropcap]`` 标签支持包含多个字"
-"符。 ``margins`` （外边距）的数值需要用逗号分隔，可以是正数、零或负数。数值之"
-"间绝对 **不能** 用空格隔开，否则这些数值将无法被正确解析。将顶部和底部的外边"
-"距设置为负数会特别有用，因为这可以让段落中的其他文字显示在首字下沉字符的下方"
-"（实现更紧凑的环绕效果）。"
-
-msgid ""
-"``[dropcap font={font} font_size={size} color={color} outline_size={size} "
-"outline_color={color} margins={left},{top},{right},{bottom}]{text}[/"
-"dropcap]``"
-msgstr ""
-"``[dropcap font={font} font_size={size} color={color} outline_size={size} "
-"outline_color={color} margins={left},{top},{right},{bottom}]{text}[/"
-"dropcap]``"
 
 msgid "**opentype_features**"
 msgstr "**opentype_features**"
@@ -642,14 +500,8 @@ msgstr ""
 "隔的 ``{list}`` （列表）。数值之间绝对 **不能** 用空格隔开，否则列表将无法被"
 "正确解析。"
 
-msgid "``[opentype_features={list}]``"
-msgstr "``[opentype_features={list}]``"
-
 msgid "``{text}``"
 msgstr "``{text}``"
-
-msgid "``[/opentype_features]``"
-msgstr "``[/opentype_features]``"
 
 msgid "**lang**"
 msgstr "**lang**"
@@ -667,9 +519,6 @@ msgstr ""
 "以在不另起新段落的情况下，强制对某段文字使用特定的书写系统（script）。某些字"
 "体文件可能包含针对特定书写系统的替换字形，在这种情况下，它们将会被调用。"
 
-msgid "``[lang={code}]{text}[/lang]``"
-msgstr "``[lang={code}]{text}[/lang]``"
-
 msgid "**color**"
 msgstr "**color**"
 
@@ -681,9 +530,6 @@ msgstr ""
 "修改 ``{text}`` 的颜色。设置的颜色必须使用通用名称"
 "（见 :ref:`doc_bbcode_in_richtextlabel_named_colors`\\ ）或十六进制格式（例"
 "如 ``#ff00ff``\\ ，见 :ref:`doc_bbcode_in_richtextlabel_hex_colors`\\ ）。"
-
-msgid "``[color={code/name}]{text}[/color]``"
-msgstr "``[color={code/name}]{text}[/color]``"
 
 msgid "**bgcolor**"
 msgstr "**bgcolor**"
@@ -701,9 +547,6 @@ msgstr ""
 "RichTextLabel 节点中的 ``text_highlight_h_padding`` （水平内边距）和 "
 "``text_highlight_v_padding`` （垂直内边距）这两个主题属性来控制。如果将内边距"
 "设置为 ``0`` ，可以避免当相邻的行或列也存在背景色时，可能出现的重叠问题。"
-
-msgid "``[bgcolor={code/name}]{text}[/bgcolor]``"
-msgstr "``[bgcolor={code/name}]{text}[/bgcolor]``"
 
 msgid "**fgcolor**"
 msgstr "**fgcolor**"
@@ -723,20 +566,11 @@ msgstr ""
 "控制。如果将内边距设置为 ``0`` ，可以避免在相邻的行或列存在前景色时可能出现的"
 "重叠问题。"
 
-msgid "``[fgcolor={code/name}]{text}[/fgcolor]``"
-msgstr "``[fgcolor={code/name}]{text}[/fgcolor]``"
-
 msgid "**outline_size**"
 msgstr "**outline_size**"
 
 msgid "Use custom font outline size for ``{text}``."
 msgstr "为 ``{text}`` 使用自定义字体轮廓大小。"
-
-msgid "``[outline_size={size}]``"
-msgstr "``[outline_size={size}]``"
-
-msgid "``[/outline_size]``"
-msgstr "``[/outline_size]``"
 
 msgid "**outline_color**"
 msgstr "**outline_color**"
@@ -745,12 +579,6 @@ msgid ""
 "Use custom outline color for ``{text}``. Accepts same values as the "
 "``color`` tag."
 msgstr "为 ``{text}`` 使用自定义轮廓颜色。接受的值和 ``color`` 标签一致。"
-
-msgid "``[outline_color={code/name}]``"
-msgstr "``[outline_color={code/name}]``"
-
-msgid "``[/outline_color]``"
-msgstr "``[/outline_color]``"
 
 msgid "**table**"
 msgstr "**table**"
@@ -779,20 +607,6 @@ msgstr ""
 msgid "``{name}`` is a table name for assistive apps (screen reader)."
 msgstr "``{name}`` 是供辅助应用（屏幕阅读器）使用的表格名称。"
 
-msgid "``[table={number}]{cells}[/table]``"
-msgstr "``[table={number}]{cells}[/table]``"
-
-msgid "``[table={number},{valign}]{cells}[/table]``"
-msgstr "``[table={number},{valign}]{cells}[/table]``"
-
-msgid "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
-msgstr "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
-
-msgid ""
-"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
-msgstr ""
-"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
-
 msgid "**cell**"
 msgstr "**cell**"
 
@@ -812,15 +626,6 @@ msgid ""
 msgstr ""
 "支持配置选项，详情请见： :ref:`doc_bbcode_in_richtextlabel_cell_options` 。"
 
-msgid "``[cell]{text}[/cell]``"
-msgstr "``[cell]{text}[/cell]``"
-
-msgid "``[cell={ratio}]{text}[/cell]``"
-msgstr "``[cell={ratio}]{text}[/cell]``"
-
-msgid "``[cell {options}]{text}[/cell]``"
-msgstr "``[cell {options}]{text}[/cell]``"
-
 msgid "**ul**"
 msgstr "**ul**"
 
@@ -836,12 +641,6 @@ msgstr ""
 "项目符号可以使用 ``{bullet}`` 参数自定义，"
 "见 :ref:`doc_bbcode_in_richtextlabel_unordered_list_bullet`\\ 。"
 
-msgid "``[ul]{items}[/ul]``"
-msgstr "``[ul]{items}[/ul]``"
-
-msgid "``[ul bullet={bullet}]{items}[/ul]``"
-msgstr "``[ul bullet={bullet}]{items}[/ul]``"
-
 msgid "**ol**"
 msgstr "**ol**"
 
@@ -853,9 +652,6 @@ msgstr ""
 "添加有序（编号）列表，类型由 ``{type}`` 给定"
 "（见 :ref:`doc_bbcode_in_richtextlabel_list_types`\\ ）。列表项 ``{items}`` "
 "必须以一行一个的形式提供。"
-
-msgid "``[ol type={type}]{items}[/ol]``"
-msgstr "``[ol type={type}]{items}[/ol]``"
 
 msgid "**lb**, **rb**"
 msgstr "**lb**\\ 、\\ **rb**"
@@ -870,9 +666,6 @@ msgstr ""
 "这些是自闭合标签，不需要手动关闭（不存在 ``[/lb]`` 和 ``[/rb]`` 这种关闭标"
 "签）。"
 
-msgid "``[lb]b[rb]text[lb]/b[rb]`` will display as ``[b]text[/b]``."
-msgstr "``[lb]b[rb]text[lb]/b[rb]`` 会被显示为 ``[b]text[/b]``\\ 。"
-
 msgid ""
 "Several Unicode control characters can be added using their own self-closing "
 "tags."
@@ -883,67 +676,6 @@ msgstr "相比于直接在文本中粘贴这些控制字符，"
 
 msgid "control characters directly in the text."
 msgstr "这种方法更方便维护。"
-
-msgid ""
-"``[lrm]`` (left-to-right mark), ``[rlm]`` (right-to-left mark), ``[lre]`` "
-"(left-to-right embedding),"
-msgstr ""
-"``[lrm]`` （左到右标记）、 ``[rlm]`` （右到左标记）、 ``[lre]`` （左到右嵌"
-"入）、"
-
-msgid ""
-"``[rle]`` (right-to-left embedding), ``[lro]`` (left-to-right override), "
-"``[rlo]`` (right-to-left override),"
-msgstr ""
-"``[rle]`` （从右到左嵌入）， ``[lro]`` （从左到右覆盖）， ``[rlo]`` （从右到"
-"左覆盖），"
-
-msgid ""
-"``[pdf]`` (pop directional formatting), ``[alm]`` (Arabic letter mark), "
-"``[lri]`` (left-to-right isolate),"
-msgstr ""
-"``[pdf]`` （弹出方向格式）， ``[alm]`` （阿拉伯字母标记）， ``[lri]`` （从左"
-"到右隔离），"
-
-msgid ""
-"``[rli]`` (right-to-left isolate), ``[fsi]`` (first strong isolate), "
-"``[pdi]`` (pop directional isolate),"
-msgstr ""
-"``[rli]`` (从右向左隔离符), ``[fsi]`` (首个强字符隔离符), ``[pdi]`` (弹出方向"
-"隔离符),"
-
-msgid ""
-"``[zwj]`` (zero-width joiner), ``[zwnj]`` (zero-width non-joiner), ``[wj]`` "
-"(word joiner),"
-msgstr ""
-"``[zwj]`` (零宽连接符), ``[zwnj]`` (零宽非连接符), ``[wj]`` (词连接符),"
-
-msgid "``[shy]`` (soft hyphen)"
-msgstr "``[shy]`` (软连字符)"
-
-msgid ""
-"Tags for bold (``[b]``) and italics (``[i]``) formatting work best if the "
-"appropriate custom fonts are set up in the RichTextLabelNode's theme "
-"overrides. If no custom bold or italic fonts are defined, `faux bold and "
-"italic fonts <https://fonts.google.com/knowledge/glossary/"
-"faux_fake_pseudo_synthesized>`__ will be generated by Godot. These fonts "
-"rarely look good in comparison to hand-made bold/italic font variants."
-msgstr ""
-"如果想要让粗体（ ``[b]`` ）和斜体（ ``[i]`` ）标签达到最好的显示效果，最好在 "
-"RichTextLabel 节点的主题覆盖（theme overrides）中设置好对应的自定义字体。如果"
-"没有定义专门的粗体或斜体字体，Godot 就会自动生成 `faux bold and italic fonts "
-"<https://fonts.google.com/knowledge/glossary/"
-"faux_fake_pseudo_synthesized>`__ 。和专门手工设计的粗体/斜体字体变体相比，这"
-"些自动生成的字体效果通常都不太好看。"
-
-msgid ""
-"The monospaced (``[code]``) tag **only** works if a custom font is set up in "
-"the RichTextLabel node's theme overrides. Otherwise, monospaced text will "
-"use the regular font."
-msgstr ""
-"等宽（ ``[code]`` ）标签 **只有** 在 RichTextLabel 节点的主题覆盖（theme "
-"overrides）中设置了自定义字体时才会生效。否则，等宽文本将直接使用普通的常规字"
-"体。"
 
 msgid "There are no BBCode tags to control vertical centering of text yet."
 msgstr "目前还没有用于控制文本垂直居中的BBCode标签."
@@ -957,12 +689,18 @@ msgstr "段落选项"
 msgid "**align**"
 msgstr "**align**"
 
+msgid "**Values**"
+msgstr "**值**"
+
 msgid ""
 "``left`` (or ``l``), ``center`` (or ``c``), ``right`` (or ``r``), ``fill`` "
 "(or ``f``)"
 msgstr ""
 "``left`` (or ``l``), ``center`` (or ``c``), ``right`` (or ``r``), ``fill`` "
 "(or ``f``)"
+
+msgid "**Default**"
+msgstr "**默认**"
 
 msgid "``left``"
 msgstr "``left``"
@@ -988,6 +726,17 @@ msgstr "结构化文本覆盖。"
 
 msgid "**justification_flags**, **jst**"
 msgstr "**justification_flags**\\ 、\\ **jst**"
+
+msgid ""
+"Comma-separated list of the following values (no space after each comma): "
+"``kashida`` (or ``k``), ``word`` (or ``w``), ``trim`` (or ``tr``), "
+"``after_last_tab`` (or ``lt``), ``skip_last`` (or ``sl``), "
+"``skip_last_with_chars`` (or ``sv``), ``do_not_skip_single`` (or ``ns``)."
+msgstr ""
+"以下数值以逗号分隔的列表（每个逗号后均无空格）： ``kashida`` （或 ``k``）、 "
+"``word`` （或 ``w``）、 ``trim`` （或 ``tr``)， ``after_last_tab`` ( 、 "
+"``lt``)， ``skip_last`` ( 、 ``sl``)， ``skip_last_with_chars`` ( 、 "
+"``sv``)， ``do_not_skip_single`` ( 或 ``ns`` ）。"
 
 msgid "``word,kashida,skip_last,do_not_skip_single``"
 msgstr "``word,kashida,skip_last,do_not_skip_single``"
@@ -1044,40 +793,12 @@ msgstr ""
 "会停在 ``10 + 30 = 40`` 像素处，而第三个制表符会停在 ``10 + 30 + 10 = 50`` 像"
 "素处。"
 
-msgid "Handling ``[url]`` tag clicks"
-msgstr "处理 ``[url]`` 标签点击"
-
-msgid ""
-"By default, ``[url]`` tags do nothing when clicked. This is to allow "
-"flexible use of ``[url]`` tags rather than limiting them to opening URLs in "
-"a web browser."
-msgstr ""
-"默认情况下，\\ ``[url]`` 标签在单击时不执行任何操作.这是为了允许灵活使用 "
-"``[url]`` 标签，而不是限制它们在Web浏览器中打开URL."
-
-msgid ""
-"To handle clicked ``[url]`` tags, connect the ``RichTextLabel`` "
-"node's :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` signal "
-"to a script function."
-msgstr ""
-"要处理被点击的 ``[url]`` 标签，需要将 ``RichTextLabel`` 节点"
-"的 :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` 信号连接到一"
-"个脚本函数上。"
-
 msgid ""
 "For example, the following method can be connected to ``meta_clicked`` to "
 "open clicked URLs using the user's default web browser:"
 msgstr ""
 "例如，可以将以下方法连接到 ``meta_clicked`` 信号，从而使用用户默认的网页浏览"
 "器来打开被点击的链接（URL）："
-
-msgid ""
-"For more advanced use cases, it's also possible to store JSON in a ``[url]`` "
-"tag's option and parse it in the function that handles the ``meta_clicked`` "
-"signal. For example:"
-msgstr ""
-"对于更高级的用例，也可以将 JSON 数据存储在 ``[url]`` 标签的选项（option）里，"
-"然后在处理 ``meta_clicked`` 信号的函数中对其进行解析。例如："
 
 msgid "Horizontal rule options"
 msgstr "水平分隔线选项"
@@ -1122,6 +843,9 @@ msgstr ""
 
 msgid "``left`` (or ``l``), ``center`` (or ``c``), ``right`` (or ``r``)"
 msgstr "``left`` (或 ``l``), ``center`` (或 ``c``), ``right`` (或 ``r``)"
+
+msgid "``center``"
+msgstr "``center``"
 
 msgid "Horizontal alignment."
 msgstr "水平对齐。"
@@ -1261,21 +985,6 @@ msgid "Image and table vertical alignment"
 msgstr "图像和表格的垂直对齐"
 
 msgid ""
-"When a vertical alignment value is provided with the ``[img]`` or "
-"``[table]`` tag the image/table will try to align itself against the "
-"surrounding text. Alignment is performed using a vertical point of the image "
-"and a vertical point of the text. There are 3 possible points on the image "
-"(``top``, ``center``, and ``bottom``) and 4 possible points on the text and "
-"table (``top``, ``center``, ``baseline``, and ``bottom``), which can be used "
-"in any combination."
-msgstr ""
-"当在 ``[img]`` 或 ``[table]`` 标签中提供垂直对齐值时，图片/表格会尝试根据周围"
-"的文本进行对齐。这种对齐是通过结合图片上的一个垂直点和文本上的一个垂直点来实"
-"现的。图片上有 3 个可选的点（ ``top`` 顶部、 ``center`` 居中、 ``bottom`` 底"
-"部），而文本和表格上有 4 个可选的点（ ``top`` 顶部、 ``center`` 居中、 "
-"``baseline`` 基线、 ``bottom`` 底部），你可以将它们进行任意组合使用。"
-
-msgid ""
 "To specify both points, use their full or short names as a value of the "
 "image/table tag:"
 msgstr ""
@@ -1413,6 +1122,16 @@ msgstr ""
 msgid "Named colors"
 msgstr "具名颜色"
 
+msgid ""
+"For tags that allow specifying a color by name, you can use names of the "
+"constants from the built-in :ref:`class_Color` class. Named colors can be "
+"specified in a number of styles using different casings: ``DARK_RED``, "
+"``DarkRed``, and ``darkred`` will give the same exact result."
+msgstr ""
+"对于支持通过名称指定颜色的标签，您可以使用内置 :ref:`class_Color` 类中的常量"
+"名称；命名颜色可通过多种样式以不同的大小写形式指定： ``DARK_RED`` 、 "
+"``DarkRed`` 和 ``darkred`` 均会产生完全相同的结果。"
+
 msgid "See this image for a list of color constants:"
 msgstr "关于颜色常量的列表，请查看这张图片："
 
@@ -1425,27 +1144,6 @@ msgstr ""
 
 msgid "Hexadecimal color codes"
 msgstr "十六进制颜色代码"
-
-msgid ""
-"For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
-"``[color=#ffffff]white[/color]``. Shorthand RGB color codes such as ``#6f2`` "
-"(equivalent to ``#66ff22``) are also supported."
-msgstr ""
-"对于不透明的 RGB 颜色，支持任何有效的 6 位十六进制代码，例如 "
-"``[color=#ffffff]white[/color]`` 。同时也支持简写的 RGB 颜色代码，比如 "
-"``#6f2`` （它等同于 ``#66ff22`` ）。"
-
-msgid ""
-"For transparent RGB colors, any RGBA 8-digit hexadecimal code can be used, "
-"e.g. ``[color=#ffffff88]translucent white[/color]``. Note that the alpha "
-"channel is the **last** component of the color code, not the first one. "
-"Short RGBA color codes such as ``#6f28`` (equivalent to ``#66ff2288``) are "
-"supported as well."
-msgstr ""
-"对于带透明度的 RGB 颜色，可以使用任何 8 位的 RGBA 十六进制代码，例如 "
-"``[color=#ffffff88]translucent white[/color]`` 。需要注意的是，Alpha 通道（即"
-"透明度）是颜色代码的 **最后** 一部分，而不是第一部分。此外，也支持简写的 "
-"RGBA 颜色代码，比如 ``#6f28`` （等同于 ``#66ff2288`` ）。"
 
 msgid "Cell options"
 msgstr "单元格选项"
@@ -1504,27 +1202,13 @@ msgid "Unordered list bullet"
 msgstr "无序列表项目符号"
 
 msgid ""
-"By default, the ``[ul]`` tag uses the ``U+2022`` \"Bullet\" Unicode glyph as "
-"the bullet character. This behavior is similar to web browsers. The bullet "
-"character can be customized using ``[ul bullet={bullet}]``. If provided, "
-"this ``{bullet}`` parameter must be a string with no enclosing quotes (for "
-"example, ``[bullet=*]``). You can add trailing spaces after the bullet "
-"character to increase the spacing between the bullet and the list item text."
-msgstr ""
-"默认情况下， ``[ul]`` 标签会使用 Unicode 字符 ``U+2022`` （即 \"Bullet\" 实心"
-"圆点）作为列表的项目符号。这个表现和网页浏览器里的默认效果非常相似。你可以通"
-"过 ``[ul bullet={bullet}]`` 的格式来自定义项目符号。如果提供了这个 ``{bullet}"
-"`` 参数，它必须是一个没有加引号的字符串（例如 ``[bullet=*]`` ）。你还可以在项"
-"目符号后面加上空格，来增加符号和列表文字之间的间距。"
-
-msgid ""
 "See `Bullet (typography) on Wikipedia <https://en.wikipedia.org/wiki/"
 "Bullet_(typography)>`__ for a list of common bullet characters that you can "
 "paste directly in the ``bullet`` parameter."
 msgstr ""
-"关于可以直接复制并粘贴到 ``bullet`` 参数中的常用项目符号列表，请参阅维基百科"
-"上的 项目符号（排版） <https://en.wikipedia.org/wiki/Bullet_(typography)>__ "
-"页面。"
+"请参阅 `Bullet (typography) on Wikipedia <https://en.wikipedia.org/wiki/"
+"Bullet_(typography)>`__ ，了解您可以直接粘贴到 ``bullet`` 参数中的常用项目符"
+"号字符列表。"
 
 msgid "Ordered list types"
 msgstr "有序列表类型"
@@ -1587,15 +1271,6 @@ msgid "Pulse"
 msgstr "脉冲"
 
 msgid ""
-"Pulse creates an animated pulsing effect that multiplies each character's "
-"opacity and color. It can be used to bring attention to specific text. Its "
-"tag format is ``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]``."
-msgstr ""
-"Pulse（脉冲）特效能创建一个动态的脉冲效果，它会同时改变（乘算）每个字符的透明"
-"度和颜色。这个特效非常适合用来突出显示某些特定的文本。它的标签格式为 "
-"``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]`` 。"
-
-msgid ""
 "``freq`` controls the frequency of the half-pulsing cycle (higher is "
 "faster). A full pulsing cycle takes ``2 * (1.0 / freq)`` seconds. ``color`` "
 "is the target color multiplier for blinking. The default mostly fades out "
@@ -1609,13 +1284,6 @@ msgstr ""
 
 msgid "Wave"
 msgstr "波浪"
-
-msgid ""
-"Wave makes the text go up and down. Its tag format is ``[wave amp=50.0 "
-"freq=5.0 connected=1]{text}[/wave]``."
-msgstr ""
-"Wave（波浪）特效能让文字上下起伏移动。它的标签格式为 ``[wave amp=50.0 "
-"freq=5.0 connected=1]{text}[/wave]`` 。"
 
 msgid ""
 "``amp`` controls how high and low the effect goes, and ``freq`` controls how "
@@ -1637,13 +1305,6 @@ msgid "Tornado"
 msgstr "旋风"
 
 msgid ""
-"Tornado makes the text move around in a circle. Its tag format is ``[tornado "
-"radius=10.0 freq=1.0 connected=1]{text}[/tornado]``."
-msgstr ""
-"Tornado（龙卷风）特效会让文字绕着圈移动。它的标签格式为 ``[tornado "
-"radius=10.0 freq=1.0 connected=1]{text}[/tornado]`` 。"
-
-msgid ""
 "``radius`` is the radius of the circle that controls the offset, ``freq`` is "
 "how fast the text moves in a circle. A ``freq`` value of ``0`` will pause "
 "the animation, while negative ``freq`` will play the animation backwards. If "
@@ -1663,13 +1324,6 @@ msgid "Shake"
 msgstr "抖动"
 
 msgid ""
-"Shake makes the text shake. Its tag format is ``[shake rate=20.0 level=5 "
-"connected=1]{text}[/shake]``."
-msgstr ""
-"Shake（抖动）特效能让文字产生抖动的效果。它的标签格式为 ``[shake rate=20.0 "
-"level=5 connected=1]{text}[/shake]`` 。"
-
-msgid ""
 "``rate`` controls how fast the text shakes, ``level`` controls how far the "
 "text is offset from the origin. If ``connected`` is ``1`` (default), glyphs "
 "with ligatures will be moved together. If ``connected`` is ``0``, each glyph "
@@ -1686,13 +1340,6 @@ msgid "Fade"
 msgstr "渐隐"
 
 msgid ""
-"Fade creates a static fade effect that multiplies each character's opacity. "
-"Its tag format is ``[fade start=4 length=14]{text}[/fade]``."
-msgstr ""
-"Fade（淡出）特效会创建一个静态的淡出效果，它会直接对每个字符的透明度（不透明"
-"度）进行乘法混合。它的标签格式为 ``[fade start=4 length=14]{text}[/fade]`` 。"
-
-msgid ""
 "``start`` controls the starting position of the falloff relative to where "
 "the fade command is inserted, ``length`` controls over how many characters "
 "should the fade out take place."
@@ -1702,13 +1349,6 @@ msgstr ""
 
 msgid "Rainbow"
 msgstr "彩虹"
-
-msgid ""
-"Rainbow gives the text a rainbow color that changes over time. Its tag "
-"format is ``[rainbow freq=1.0 sat=0.8 val=0.8 speed=1.0]{text}[/rainbow]``."
-msgstr ""
-"Rainbow（彩虹）特效能让文字呈现出随时间变化的彩虹色。它的标签格式为 "
-"``[rainbow freq=1.0 sat=0.8 val=0.8 speed=1.0]{text}[/rainbow]`` 。"
 
 msgid ""
 "``freq`` determines how many letters the rainbow extends over before it "
@@ -1834,21 +1474,6 @@ msgid ""
 msgstr ""
 "``glyph_index`` 和 ``font`` 分别代表正在被绘制的字符（字形）索引，以及用来绘"
 "制它的字体数据资源。"
-
-msgid ""
-"Finally, ``env`` is a :ref:`class_Dictionary` of parameters assigned to a "
-"given custom effect. You can use :ref:`get() <class_Dictionary_method_get>` "
-"with an optional default value to retrieve each parameter, if specified by "
-"the user. For example ``[custom_fx spread=0.5 color=#FFFF00]test[/"
-"custom_fx]`` would have a float ``spread`` and Color ``color`` parameters in "
-"its ``env`` Dictionary. See below for more usage examples."
-msgstr ""
-"最后， ``env`` 是一个 :ref:`class_Dictionary` （字典），里面存放着分配给某个"
-"自定义特效的参数。你可以使用 :ref:`get() <class_Dictionary_method_get>` 方法"
-"（并带上一个可选的默认值）来提取每一个参数——前提是用户确实指定了它。举个例"
-"子，如果你写了 ``[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]`` ，那"
-"么它的 ``env`` 字典里就会包含一个浮点型的 ``spread`` 参数和一个 Color 类型的 "
-"``color`` 参数。具体的更多使用示例，可以接着往下看哦。"
 
 msgid ""
 "The last thing to note about this function is that it is necessary to return "

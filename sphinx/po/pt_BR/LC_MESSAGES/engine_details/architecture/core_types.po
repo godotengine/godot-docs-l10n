@@ -176,6 +176,20 @@ msgstr ""
 "Use isto para strings estáticas que são referenciadas frequentemente e "
 "usadas em múltiplos locais na engine."
 
+msgid "|char_string|, |char16_string|"
+msgstr "|char_string|, |char16_string|"
+
+msgid "``std::u8string`` ``std::u16string``"
+msgstr "``std::u8string`` ``std::u16string``"
+
+msgid ""
+"``String``-likes that use ``char`` and ``char16_t``, respectively. These are "
+"aliases of ``CharStringT<T>``; ``wchar_t`` and others are also supported."
+msgstr ""
+"Tipos semelhantes a ``String`` que usam ``char`` e ``char16_t``, "
+"respectivamente. Esses são aliases de ``CharStringT<T>``; ``wchar_t`` e "
+"outros também são suportados."
+
 msgid "|local_vector|"
 msgstr "|local_vector|"
 
@@ -258,6 +272,20 @@ msgstr "|span|"
 
 msgid "``std::span``"
 msgstr "``std::span``"
+
+msgid ""
+"Represents read-only access to a contiguous array without needing to copy "
+"any data. Note that ``Span`` is designed to be a high performance API: It "
+"does not perform parameter correctness checks in the same way you might be "
+"used to with other Godot containers. Use with care. ``Span`` can be "
+"constructed from most array-like containers (e.g. ``vector.span()``)."
+msgstr ""
+"Representa acesso somente leitura a um array contíguo sem a necessidade de "
+"copiar nenhum dado. Observe que o ``Span`` foi projetado para ser uma API de "
+"alto desempenho: ele não realiza verificações de correção de parâmetros da "
+"mesma forma que você pode estar acostumado com outros contêineres do Godot. "
+"Use com cuidado. O ``Span`` pode ser construído a partir da maioria dos "
+"contêineres do tipo array (por exemplo, ``vector.span()``)."
 
 msgid "|rb_set|"
 msgstr "|rb_set|"

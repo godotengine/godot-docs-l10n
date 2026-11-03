@@ -233,14 +233,6 @@ msgstr ""
 "faut l'échapper pour éviter de le lire comme un caractère de remplacement. "
 "Cela se fait en doublant le caractère :"
 
-msgid ""
-"Arrays can be used as key, index, or mixed style (see below examples). Order "
-"only matters when the index or mixed style of Array is used."
-msgstr ""
-"Les tableaux peuvent être utilisés par clé, index ou en style mixte (voir "
-"les exemples ci-dessous). L'ordre n'a d'importance que lorsqu'on utilise "
-"l'index ou le style mixte de Array."
-
 msgid "A quick example in GDScript:"
 msgstr "Un bref exemple en GDScript :"
 
@@ -293,18 +285,14 @@ msgstr ""
 msgid "Array"
 msgstr "Tableau"
 
-msgid ""
-"``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
-"\"Godette\"]])``"
-msgstr ""
-"``\"Salut, {nom} v{version} !\".format([[\"version\":\"3.0\"],[\"nom\":"
-"\"Godette\"]])``"
-
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 msgstr "``\"Salut, {0} v{1} !\".format([\"Godette\",\"3.0\"])``"
 
 msgid "no index"
 msgstr "pas d'index"
+
+msgid "``\"Hi, {} v{}!\".format([\"Godette\", \"3.0\"], \"{}\")``"
+msgstr "``\"Salut, {} v{}\".format([\"Godette\", \"3.0\"], \"{}\")``"
 
 msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "

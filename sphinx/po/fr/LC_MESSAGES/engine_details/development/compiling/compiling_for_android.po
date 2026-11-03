@@ -36,15 +36,6 @@ msgstr ""
 "Android est surtout utile pour les constructions personnalisées ou les "
 "paquets personnalisés pour le déployeur."
 
-msgid ""
-"Also, you still need to follow the steps mentioned in "
-"the :ref:`doc_exporting_for_android` tutorial before attempting to build a "
-"custom export template."
-msgstr ""
-"Vous devez également suivre les étapes mentionnées dans le "
-"tutoriel :ref:`doc_exporting_for_android` avant de tenter de créer un modèle "
-"d'exportation personnalisé."
-
 msgid "Requirements"
 msgstr "Pré-requis"
 
@@ -53,8 +44,14 @@ msgstr ""
 "Pour la compilation sous Windows, Linux ou macOS, les éléments suivants sont "
 "nécessaires :"
 
+msgid "`Python 3.9+ <https://www.python.org/downloads/>`_."
+msgstr "`Python 3.9+ <https://www.python.org/downloads/>`_."
+
 msgid "Gradle (will be downloaded and installed automatically if missing)."
 msgstr "Gradle (sera téléchargé et installé automatiquement s'il manque)."
+
+msgid "JDK 17 (either OpenJDK or Oracle JDK)."
+msgstr "JDK 17 (OpenJDK ou bien Oracle JDK)."
 
 msgid ""
 "To get the Godot source code for compiling, see :ref:`doc_getting_source`."
@@ -156,6 +153,13 @@ msgstr ""
 "le fichier résultant dans le répertoire ``bin\\`` de votre dossier source "
 "Godot, de sorte que la prochaine fois que vous construirez, vous aurez "
 "automatiquement les modèles personnalisés référencés."
+
+msgid ""
+"Compiling the editor is done by calling SCons from the Godot root directory "
+"with the following arguments:"
+msgstr ""
+"Compiler l'éditeur se fait en appelant SCons depuis le répertoire racine de "
+"Godot avec les arguments suivants :"
 
 msgid ""
 "The resulting binaries will be located under ``bin/android_editor_builds/``."

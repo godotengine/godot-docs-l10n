@@ -11,9 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "HTML5 shell class reference"
-msgstr "Посилання на клас оболонки HTML5"
-
 msgid ""
 "Projects exported for the Web expose the :js:class:`Engine` class to the "
 "JavaScript environment, that allows fine control over the engine's start-up "
@@ -52,9 +49,6 @@ msgstr "Статичні методи"
 msgid "Promise"
 msgstr "Обіцяю"
 
-msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-msgstr ":js:attr:`load <Engine.load>` **(** рядок basePath **)**"
-
 msgid "void"
 msgstr "Void"
 
@@ -70,6 +64,9 @@ msgid ""
 msgstr ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
+
+msgid "Array.<string>"
+msgstr "Array.<string>"
 
 msgid "Instance Methods"
 msgstr "Методи екземплярів"
@@ -169,6 +166,9 @@ msgstr ""
 "механізму, щоб завантажити його, якщо він ще не завантажений. "
 "Перегляньте :js:meth:`Engine.load`."
 
+msgid "A Promise that resolves once the engine is loaded and initialized."
+msgstr "Promise, який виконується після завантаження та ініціалізації двигуна."
+
 msgid ""
 "Load a file so it is available in the instance's file system once it runs. "
 "Must be called **before** starting the instance."
@@ -239,6 +239,9 @@ msgstr ""
 msgid "An optional configuration override."
 msgstr "Додаткова зміна конфігурації."
 
+msgid "A Promise that resolves once the engine started."
+msgstr "Promise, яка виконується після запуску двигуна."
+
 msgid ""
 "Start the game instance using the given configuration override (if any)."
 msgstr ""
@@ -266,6 +269,9 @@ msgstr ""
 "Цей метод очікує, що початкова конфігурація (або перевизначення) матиме "
 "обидві властивості: :js:attr:`executable` і :js:attr:`mainPack` (зазвичай "
 "робиться редактором під час експорту)."
+
+msgid "A Promise that resolves once the game started."
+msgstr "Promise, яка виконується після початку гри."
 
 msgid ""
 "Create a file at the specified ``path`` with the passed as ``buffer`` in the "
@@ -337,9 +343,6 @@ msgstr "номер"
 msgid ":js:attr:`canvasResizePolicy`"
 msgstr ":js:attr:`canvasResizePolicy`"
 
-msgid "Array.<string>"
-msgstr "Array.<string>"
-
 msgid ":js:attr:`args`"
 msgstr ":js:attr:`args`"
 
@@ -373,11 +376,6 @@ msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
 
 msgid "**Property Descriptions**"
 msgstr "**Опис нерухомості**"
-
-msgid ""
-"Whether the unload the engine automatically after the instance is "
-"initialized."
-msgstr "Чи розвантажувати механізм автоматично після ініціалізації екземпляра."
 
 msgid "value"
 msgstr "значення"
@@ -432,6 +430,13 @@ msgstr ""
 "Політика зміни розміру полотна визначає, як Godot має змінити розмір полотна."
 
 msgid ""
+"``0`` means Godot won't do any resizing. This is useful if you want to "
+"control the canvas size from JavaScript code in your template."
+msgstr ""
+"``0`` означає, що Godot не змінюватиме розміри. Це корисно, якщо ви хочете "
+"керувати розміром полотна за допомогою коду JavaScript у своєму шаблоні."
+
+msgid ""
 "``1`` means Godot will resize the canvas on start, and when changing window "
 "size via engine functions."
 msgstr ""
@@ -463,6 +468,12 @@ msgstr ""
 
 msgid "``[]``"
 msgstr "``[]``"
+
+msgid "``false``"
+msgstr "``false``"
+
+msgid "``0``"
+msgstr "``0``"
 
 msgid "A callback function for handling Godot's ``OS.execute`` calls."
 msgstr "Функція зворотного виклику для обробки викликів ``OS.execute`` Godot."

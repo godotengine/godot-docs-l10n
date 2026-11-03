@@ -212,9 +212,6 @@ msgid ""
 msgstr ""
 "視覺化著色器節點擁有輸入與輸出端口。輸入端口在節點左側，輸出端口在右側。"
 
-msgid "These ports are colored to differentiate type of port:"
-msgstr "端口有不同顏色以區分資料型態："
-
 msgid "Port types"
 msgstr "端口型態"
 
@@ -375,15 +372,6 @@ msgstr "將滑鼠游標移到 Reroute 節點上，點按出現的把手即可移
 msgid "Fresnel node"
 msgstr "Fresnel 節點"
 
-msgid ""
-"The ``Fresnel`` node is designed to accept normal and view vectors and "
-"produces a scalar which is the saturated dot product between them. "
-"Additionally, you can setup the inversion and the power of equation. The "
-"``Fresnel`` node is great for adding a rim-like lighting effect to objects."
-msgstr ""
-"Fresnel 節點用於接收法線向量與視角向量，並產生它們的飽和點積（純量）。你也可"
-"以設定反相與冪次。Fresnel 節點常用來為物件加上邊緣光效果。"
-
 msgid "Boolean node"
 msgstr "Boolean 節點"
 
@@ -398,16 +386,6 @@ msgstr ""
 
 msgid "If node"
 msgstr "If 節點"
-
-msgid ""
-"The ``If`` node allows you to setup a vector which will be returned the "
-"result of the comparison between ``a`` and ``b``. There are three vectors "
-"which can be returned: ``a == b`` (in that case the tolerance parameter is "
-"provided as a comparison threshold – by default it is equal to the minimal "
-"value, i.e. ``0.00001``), ``a > b`` and ``a < b``."
-msgstr ""
-"If 節點讓你設定根據比較結果回傳的向量。可回傳三種情況：`a == b`（此時容差參數"
-"為比較門檻，預設值為最小值 0.00001）、`a > b` 及 `a < b`。"
 
 msgid "Switch node"
 msgstr "Switch 節點"
@@ -429,14 +407,6 @@ msgid ""
 msgstr ""
 "Mesh Emitter 節點用於從網格頂點發射粒子。此節點僅適用於「粒子」模式下的著色"
 "器。"
-
-msgid ""
-"Keep in mind that not all 3D objects are mesh files. a glTF file can't be "
-"dragged and dropped into the graph. However, you can create an inherited "
-"scene from it, save the mesh in that scene as its own file, and use that."
-msgstr ""
-"請注意，並非所有 3D 物件都是網格檔案。glTF 檔無法直接拖曳到圖形中。你可以從 "
-"glTF 建立繼承場景，將該場景中的網格另存為獨立檔案後再使用。"
 
 msgid ""
 "You can also drag and drop obj files into the graph editor to add the node "

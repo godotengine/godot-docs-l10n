@@ -11,9 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "HTML5 shell class reference"
-msgstr "Referencia de la clase HTML5"
-
 msgid ""
 "Projects exported for the Web expose the :js:class:`Engine` class to the "
 "JavaScript environment, that allows fine control over the engine's start-up "
@@ -53,9 +50,6 @@ msgstr "Métodos estáticos"
 msgid "Promise"
 msgstr "Promesa"
 
-msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-msgstr ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-
 msgid "void"
 msgstr "void"
 
@@ -71,6 +65,9 @@ msgid ""
 msgstr ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
+
+msgid "Array.<string>"
+msgstr "Array.<string>"
 
 msgid "Instance Methods"
 msgstr "Métodos de Instancia"
@@ -342,9 +339,6 @@ msgstr "número"
 msgid ":js:attr:`canvasResizePolicy`"
 msgstr ":js:attr:`canvasResizePolicy`"
 
-msgid "Array.<string>"
-msgstr "Array.<string>"
-
 msgid ":js:attr:`args`"
 msgstr ":js:attr:`args`"
 
@@ -378,13 +372,6 @@ msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
 
 msgid "**Property Descriptions**"
 msgstr "**Descripción de Propiedad**"
-
-msgid ""
-"Whether the unload the engine automatically after the instance is "
-"initialized."
-msgstr ""
-"Si se debe descargar automáticamente el motor después de que se inicialice "
-"la instancia."
 
 msgid "value"
 msgstr "valor"
@@ -439,7 +426,7 @@ msgid ""
 "The canvas resize policy determines how the canvas should be resized by "
 "Godot."
 msgstr ""
-"La política de redimensionamiento del lienzo determina cómo Godot debe "
+"La política de redimensionamiento del canvas determina cómo Godot debe "
 "redimensionar el lienzo."
 
 msgid ""
@@ -478,9 +465,22 @@ msgstr ""
 msgid "``[]``"
 msgstr "``[]``"
 
+msgid "``false``"
+msgstr "``false``"
+
+msgid "``0``"
+msgstr "``0``"
+
 msgid "A callback function for handling Godot's ``OS.execute`` calls."
 msgstr ""
 "Una función de callback para manejar las llamadas de ``OS.execute`` de Godot."
+
+msgid ""
+"This is for example used in the Web Editor template to switch between "
+"Project Manager and editor, and for running the game."
+msgstr ""
+"Esto se utiliza, por ejemplo, en la plantilla del editor web para cambiar "
+"entre el administrador de proyectos y el editor, y para ejecutar el juego."
 
 msgid "The path that Godot's wants executed."
 msgstr "La ruta que Godot desea ejecutar."

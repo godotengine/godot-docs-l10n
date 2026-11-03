@@ -80,13 +80,6 @@ msgid "Using BBCode"
 msgstr "RigidBody2D 사용하기"
 
 msgid ""
-"For example, ``BBCode [color=green]test[/color]`` would render the word "
-"\"test\" with a green color."
-msgstr ""
-"예를 들어, ``BBCode [color=green]test[/color]``는 \"test\"라는 단어를 녹색으"
-"로 렌더링합니다."
-
-msgid ""
 "Most BBCodes consist of 3 parts: the opening tag, the content and the "
 "closing tag. The opening tag delimits the start of the formatted part, and "
 "can also carry some configuration options. Some opening tags, like the "
@@ -125,21 +118,6 @@ msgstr "사용:"
 
 msgid "Handling user input safely"
 msgstr "사용자 입력을 안전하게 처리하기"
-
-msgid ""
-"In a scenario where users may freely input text (such as chat in a "
-"multiplayer game), you should make sure users cannot use arbitrary BBCode "
-"tags that will be parsed by RichTextLabel. This is to avoid inappropriate "
-"use of formatting, which can be problematic if ``[url]`` tags are handled by "
-"your RichTextLabel (as players may be able to create clickable links to "
-"phishing sites or similar)."
-msgstr ""
-"사용자가 자유롭게 텍스트를 입력할 수 있는 시나리오(예: 멀티플레이어 게임의 채"
-"팅)에서는 사용자가 RichTextLabel에서 구문 분석할 임의의 BBCode 태그를 사용할 "
-"수 없도록 해야 합니다. 이는 ``[url]`` 태그가 RichTextLabel에 의해 처리되는 경"
-"우 문제가 될 수 있는 형식의 부적절한 사용을 방지하기 위한 것입니다(플레이어"
-"가 피싱 사이트 또는 유사한 사이트에 대한 클릭 가능한 링크를 생성할 수 있기 때"
-"문)."
 
 msgid ""
 "Example of unescaped user input resulting in BBCode injection (2nd line) and "
@@ -252,13 +230,6 @@ msgstr ""
 "므로 ``pop()``를 사용하면 가장 최근에 시작된 태그가 먼저 닫힙니다."
 
 msgid ""
-"The following script will result in the same visual output as using ``BBCode "
-"[color=green]test [i]example[/i][/color]``:"
-msgstr ""
-"다음 스크립트는 ``BBCode [color=green]test [i]example[/i][/color]``를 사용하"
-"는 것과 동일한 시각적 출력을 생성합니다."
-
-msgid ""
 "Do **not** set the ``text`` property directly when using formatting "
 "functions. Appending to the ``text`` property will erase all modifications "
 "made to the RichTextLabel using the ``append_text()``, ``push_[tag]()`` and "
@@ -295,9 +266,6 @@ msgstr ""
 "``{text}``가 ``RichTextLabel``의 굵은 글꼴(또는 굵은 이탤릭체)을 사용하도록 "
 "만듭니다."
 
-msgid "``[b]{text}[/b]``"
-msgstr "``[b]{text}[/b]``"
-
 msgid "**i**"
 msgstr "**나는**"
 
@@ -307,17 +275,11 @@ msgstr ""
 "``{text}``가 ``RichTextLabel``의 기울임꼴(또는 굵은 기울임꼴) 글꼴을 사용하도"
 "록 만듭니다."
 
-msgid "``[i]{text}[/i]``"
-msgstr "``[i]{text}[/i]``"
-
 msgid "**u**"
 msgstr "**유**"
 
 msgid "Makes ``{text}`` underlined."
 msgstr "``{text}``에 밑줄을 표시합니다."
-
-msgid "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
-msgstr "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
 
 msgid "**s**"
 msgstr "**들**"
@@ -325,26 +287,17 @@ msgstr "**들**"
 msgid "Makes ``{text}`` strikethrough."
 msgstr "``{text}``를 취소선으로 만듭니다."
 
-msgid "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
-msgstr "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
-
 msgid "**code**"
 msgstr "**코드**"
 
 msgid "Makes ``{text}`` use the mono font of ``RichTextLabel``."
 msgstr "``{text}``가 ``RichTextLabel``의 모노 글꼴을 사용하도록 합니다."
 
-msgid "``[code]{text}[/code]``"
-msgstr "``[code]{text}[/code]``"
-
 msgid "**char**"
 msgstr "**문자**"
 
 msgid "Adds Unicode character with hexadecimal UTF-32 ``{codepoint}``."
 msgstr "16진수 UTF-32 ``{codepoint}``를 사용하여 유니코드 문자를 추가합니다."
-
-msgid "``[char={codepoint}]``"
-msgstr "``[char={codepoint}]``"
 
 msgid "**p**"
 msgstr "**쉿**"
@@ -355,12 +308,6 @@ msgid ""
 msgstr ""
 "``{text}``를 사용하여 새 단락을 추가합니다. 구성 옵션을 지원합니"
 "다. :ref:`doc_bbcode_in_richtextlabel_paragraph_options`를 참조하세요."
-
-msgid "``[p]{text}[/p]``"
-msgstr "``[p]{text}[/p]``"
-
-msgid "``[p {options}]{text}[/p]``"
-msgstr "``[p {options}]{text}[/p]``"
 
 msgid "**br**"
 msgstr "**br**"
@@ -373,9 +320,6 @@ msgstr ""
 "새 단락을 추가하지 않고 텍스트에 줄 바꿈을 추가합니다. 목록 내에서 사용하면 "
 "새 목록 항목이 생성되지 않지만 대신 현재 항목 내에 줄 바꿈이 추가됩니다."
 
-msgid "``[br]``"
-msgstr "``[br]``"
-
 msgid "**hr**"
 msgstr "**시간**"
 
@@ -386,23 +330,11 @@ msgstr ""
 "콘텐츠를 구분하기 위해 새로운 수평선을 추가합니다. 구성 옵션을 지원합니"
 "다. :ref:`doc_bbcode_in_richtextlabel_hr_options`를 참조하세요."
 
-msgid "``[hr]``"
-msgstr "``[Editor]``"
-
-msgid "``[hr {options}]``"
-msgstr "연결(Connections)"
-
 msgid "**center**"
 msgstr "**중앙**"
 
 msgid "Makes ``{text}`` horizontally centered."
 msgstr "``{text}``를 수평 중앙에 맞춥니다."
-
-msgid "Same as ``[p align=center]``."
-msgstr "``[p align=center]``와 동일합니다."
-
-msgid "``[center]{text}[/center]``"
-msgstr "``[center]{text}[/center]``"
 
 msgid "**left**"
 msgstr "**왼쪽**"
@@ -410,23 +342,11 @@ msgstr "**왼쪽**"
 msgid "Makes ``{text}`` horizontally left-aligned."
 msgstr "``{text}``를 가로 왼쪽 정렬로 만듭니다."
 
-msgid "Same as ``[p align=left]``."
-msgstr "``[p align=left]``와 동일합니다."
-
-msgid "``[left]{text}[/left]``"
-msgstr "``[left]{text}[/left]``"
-
 msgid "**right**"
 msgstr "**맞아**"
 
 msgid "Makes ``{text}`` horizontally right-aligned."
 msgstr "``{text}``를 수평으로 오른쪽 정렬합니다."
-
-msgid "Same as ``[p align=right]``."
-msgstr "``[p align=right]``와 동일합니다."
-
-msgid "``[right]{text}[/right]``"
-msgstr "``[right]{text}[/right]``"
 
 msgid "**fill**"
 msgstr "**채우기**"
@@ -434,24 +354,8 @@ msgstr "**채우기**"
 msgid "Makes ``{text}`` fill the full width of ``RichTextLabel``."
 msgstr "``{text}``가 ``RichTextLabel``의 전체 너비를 채우도록 만듭니다."
 
-msgid "Same as ``[p align=fill]``."
-msgstr "``[p align=fill]``와 동일합니다."
-
-msgid "``[fill]{text}[/fill]``"
-msgstr "``[fill]{text}[/fill]``"
-
 msgid "**indent**"
 msgstr "**들여쓰기**"
-
-msgid ""
-"Indents ``{text}`` once. The indentation width is the same as with ``[ul]`` "
-"or ``[ol]``, but without a bullet point."
-msgstr ""
-"``{text}``를 한 번 들여씁니다. 들여쓰기 너비는 ``[ul]`` 또는 ``[ol]``와 동일"
-"하지만 글머리 기호가 없습니다."
-
-msgid "``[indent]{text}[/indent]``"
-msgstr "``[indent]{text}[/indent]``"
 
 msgid "**url**"
 msgstr "**URL**"
@@ -473,15 +377,6 @@ msgstr ""
 "다.** :ref:`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`를 참조하세"
 "요."
 
-msgid "``[url]{link}[/url]``"
-msgstr "``[url]{link}[/url]``"
-
-msgid "``[url={link}]{text}[/url]``"
-msgstr "``[url={link}]{text}[/url]``"
-
-msgid "``[url {options}]{text}[/url]``"
-msgstr "연결(Connections)"
-
 msgid "**hint**"
 msgstr "**안개:**"
 
@@ -497,9 +392,6 @@ msgstr ""
 "\"`` 또는 ``\\'``를 사용하여 따옴표를 이스케이프하는 것은 불가능합니다. 힌트 "
 "문자열에서 아포스트로피에 작은따옴표를 사용하려면 큰따옴표를 사용하여 문자열"
 "을 묶어야 합니다."
-
-msgid "``[hint=\"{tooltip text displayed on hover}\"]{text}[/hint]``"
-msgstr "``[hint=\"{tooltip text displayed on hover}\"]{text}[/hint]``"
 
 msgid "**img**"
 msgstr "**img**"
@@ -548,21 +440,6 @@ msgstr ""
 "구성 옵션을 지원합니다. :ref:`doc_bbcode_in_richtextlabel_image_options`를 참"
 "조하세요."
 
-msgid "``[img]{path}[/img]``"
-msgstr "``[img]{path}[/img]``"
-
-msgid "``[img={width}]{path}[/img]``"
-msgstr "``[img={width}]{path}[/img]``"
-
-msgid "``[img={width}x{height}]{path}[/img]``"
-msgstr "``[img={width}x{height}]{path}[/img]``"
-
-msgid "``[img={valign}]{path}[/img]``"
-msgstr "``[img={valign}]{path}[/img]``"
-
-msgid "``[img {options}]{path}[/img]``"
-msgstr "``[img {options}]{path}[/img]``"
-
 msgid "**font**"
 msgstr "**글꼴**"
 
@@ -576,20 +453,11 @@ msgstr ""
 "구성 옵션을 지원합니다. :ref:`doc_bbcode_in_richtextlabel_font_options`를 참"
 "조하세요."
 
-msgid "``[font={path}]{text}[/font]``"
-msgstr "``[font={path}]{text}[/font]``"
-
-msgid "``[font {options}]{text}[/font]``"
-msgstr "``[font {options}]{text}[/font]``"
-
 msgid "**font_size**"
 msgstr "**글꼴_크기**"
 
 msgid "Use custom font size for ``{text}``."
 msgstr "``{text}``에는 사용자 정의 글꼴 크기를 사용하십시오."
-
-msgid "``[font_size={size}]{text}[/font_size]``"
-msgstr "``[font_size={size}]{text}[/font_size]``"
 
 msgid "**dropcap**"
 msgstr "**드롭캡**"
@@ -600,31 +468,6 @@ msgid ""
 msgstr ""
 "``{text}``에는 다른 글꼴 크기와 색상을 사용하고 태그 내용이 충분히 큰 경우 여"
 "러 줄에 걸쳐 표시되도록 합니다."
-
-msgid ""
-"A `drop cap <https://www.computerhope.com/jargon/d/dropcap.htm>`__ is "
-"typically one uppercase character, but ``[dropcap]`` supports containing "
-"multiple characters. ``margins`` values are comma-separated and can be "
-"positive, zero or negative. Values must **not** be separated by spaces; "
-"otherwise, the values won't be parsed correctly. Negative top and bottom "
-"margins are particularly useful to allow the rest of the paragraph to "
-"display below the dropcap."
-msgstr ""
-"`첫 글자 장식 <https://www.computerhope.com/jargon/d/dropcap.htm>`__은 일반적"
-"으로 하나의 대문자이지만 ``[dropcap]``는 여러 문자 포함을 지원합니다. "
-"``margins`` 값은 쉼표로 구분되며 양수, 0 또는 음수일 수 있습니다. 값은 공백으"
-"로 구분되어서는 **안 됩니다**. 그렇지 않으면 값이 올바르게 구문 분석되지 않습"
-"니다. 음수 상단 및 하단 여백은 단락의 나머지 부분이 첫 글자 장식 아래에 표시"
-"되도록 하는 데 특히 유용합니다."
-
-msgid ""
-"``[dropcap font={font} font_size={size} color={color} outline_size={size} "
-"outline_color={color} margins={left},{top},{right},{bottom}]{text}[/"
-"dropcap]``"
-msgstr ""
-"``[dropcap font={font} font_size={size} color={color} outline_size={size} "
-"outline_color={color} margins={left},{top},{right},{bottom}]{text}[/"
-"dropcap]``"
 
 msgid "**opentype_features**"
 msgstr "**기능:**"
@@ -638,14 +481,8 @@ msgstr ""
 "로 구분된 ``{list}``로 제공되어야 합니다. 값은 공백으로 구분되어서는 **안 됩"
 "니다**. 그렇지 않으면 목록이 올바르게 구문 분석되지 않습니다."
 
-msgid "``[opentype_features={list}]``"
-msgstr "``[opentype_features={list}]``"
-
 msgid "``{text}``"
 msgstr "``{project}``"
-
-msgid "``[/opentype_features]``"
-msgstr "``[/opentype_features]``"
 
 msgid "**lang**"
 msgstr "**랭**"
@@ -664,9 +501,6 @@ msgstr ""
 "데 사용할 수 있습니다. 일부 글꼴 파일에는 스크립트 관련 대체 항목이 포함될 "
 "수 있으며, 이 경우 해당 대체 항목이 사용됩니다."
 
-msgid "``[lang={code}]{text}[/lang]``"
-msgstr "``[lang={code}]{text}[/lang]``"
-
 msgid "**color**"
 msgstr "**색상**"
 
@@ -679,9 +513,6 @@ msgstr ""
 "(:ref:`doc_bbcode_in_richtextlabel_named_colors` 참조) 또는 HEX 형식(예: "
 "``#ff00ff``, :ref:`doc_bbcode_in_richtextlabel_hex_colors` 참조)을 사용하여 "
 "제공되어야 합니다."
-
-msgid "``[color={code/name}]{text}[/color]``"
-msgstr "``[color={code/name}]{text}[/color]``"
 
 msgid "**bgcolor**"
 msgstr "색깔"
@@ -699,9 +530,6 @@ msgstr ""
 "``text_highlight_h_padding`` 및 ``text_highlight_v_padding`` 테마 항목에 의"
 "해 제어되는 약간의 패딩이 있습니다. 인접한 줄/열에 배경색이 있을 때 잠재적인 "
 "중복 문제를 방지하려면 패딩을 ``0``로 설정하세요."
-
-msgid "``[bgcolor={code/name}]{text}[/bgcolor]``"
-msgstr "``[bgcolor={code/name}]{text}[/bgcolor]``"
 
 msgid "**fgcolor**"
 msgstr "색깔"
@@ -721,20 +549,11 @@ msgstr ""
 "다. 인접한 줄/열에 전경색이 있을 때 잠재적인 중복 문제를 방지하려면 패딩을 "
 "``0``로 설정하세요."
 
-msgid "``[fgcolor={code/name}]{text}[/fgcolor]``"
-msgstr "``[fgcolor={code/name}]{text}[/fgcolor]``"
-
 msgid "**outline_size**"
 msgstr "**개요_크기**"
 
 msgid "Use custom font outline size for ``{text}``."
 msgstr "``{text}``에는 사용자 정의 글꼴 윤곽선 크기를 사용합니다."
-
-msgid "``[outline_size={size}]``"
-msgstr "``[outline_size={size}]``"
-
-msgid "``[/outline_size]``"
-msgstr "``[/outline_size]``"
 
 msgid "**outline_color**"
 msgstr "색깔"
@@ -745,12 +564,6 @@ msgid ""
 msgstr ""
 "``{text}``에는 사용자 정의 윤곽선 색상을 사용합니다. ``color`` 태그와 동일한 "
 "값을 허용합니다."
-
-msgid "``[outline_color={code/name}]``"
-msgstr "``[outline_color={code/name}]``"
-
-msgid "``[/outline_color]``"
-msgstr "``[/outline_color]``"
 
 msgid "**table**"
 msgstr "**스타일**"
@@ -781,20 +594,6 @@ msgstr ""
 msgid "``{name}`` is a table name for assistive apps (screen reader)."
 msgstr "``{name}`` 은(는) 보조 앱(화면 판독기)의 테이블 이름입니다."
 
-msgid "``[table={number}]{cells}[/table]``"
-msgstr "``[table={number}]{cells}[/table]``"
-
-msgid "``[table={number},{valign}]{cells}[/table]``"
-msgstr "``[table={number},{valign}]{cells}[/table]``"
-
-msgid "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
-msgstr "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
-
-msgid ""
-"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
-msgstr ""
-"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
-
 msgid "**cell**"
 msgstr "**셀**"
 
@@ -815,15 +614,6 @@ msgstr ""
 "구성 옵션을 지원합니다. :ref:`doc_bbcode_in_richtextlabel_cell_options`를 참"
 "조하세요."
 
-msgid "``[cell]{text}[/cell]``"
-msgstr "``[cell]{text}[/cell]``"
-
-msgid "``[cell={ratio}]{text}[/cell]``"
-msgstr "``[cell={ratio}]{text}[/cell]``"
-
-msgid "``[cell {options}]{text}[/cell]``"
-msgstr "``[cell {options}]{text}[/cell]``"
-
 msgid "**ul**"
 msgstr "**울**"
 
@@ -841,12 +631,6 @@ msgstr ""
 "글머리 기호는 ``{bullet}`` 매개변수를 사용하여 사용자 정의할 수 있습니"
 "다. :ref:`doc_bbcode_in_richtextlabel_unordered_list_bullet`를 참조하세요."
 
-msgid "``[ul]{items}[/ul]``"
-msgstr "``[ul]{items}[/ul]``"
-
-msgid "``[ul bullet={bullet}]{items}[/ul]``"
-msgstr "``[ul bullet={bullet}]{items}[/ul]``"
-
 msgid "**ol**"
 msgstr "**올**"
 
@@ -858,9 +642,6 @@ msgstr ""
 "지정된 ``{type}``의 순서가 지정된(번호가 매겨진) 목록을 추가합니다"
 "(:ref:`doc_bbcode_in_richtextlabel_list_types` 참조). 목록 ``{items}``는 텍스"
 "트 한 줄에 하나의 항목을 넣어 제공되어야 합니다."
-
-msgid "``[ol type={type}]{items}[/ol]``"
-msgstr "``[ol type={type}]{items}[/ol]``"
 
 msgid "**lb**, **rb**"
 msgstr "**lb**, **rb**"
@@ -876,9 +657,6 @@ msgstr ""
 "이는 자체 닫는 태그이므로 닫을 필요가 없습니다(``[/lb]`` 또는 ``[/rb]`` 닫는 "
 "태그가 없음)."
 
-msgid "``[lb]b[rb]text[lb]/b[rb]`` will display as ``[b]text[/b]``."
-msgstr "``[lb]b[rb]text[lb]/b[rb]``는 ``[b]text[/b]``로 표시됩니다."
-
 msgid ""
 "Several Unicode control characters can be added using their own self-closing "
 "tags."
@@ -890,68 +668,6 @@ msgstr "이렇게 하면 붙여넣는 것보다 유지 관리가 더 쉬워집�
 
 msgid "control characters directly in the text."
 msgstr "텍스트에서 문자를 직접 제어합니다."
-
-msgid ""
-"``[lrm]`` (left-to-right mark), ``[rlm]`` (right-to-left mark), ``[lre]`` "
-"(left-to-right embedding),"
-msgstr ""
-"``[lrm]``(왼쪽에서 오른쪽 방향 마크), ``[rlm]``(오른쪽에서 왼쪽 방향 마크), "
-"``[lre]``(왼쪽에서 오른쪽 임베딩),"
-
-msgid ""
-"``[rle]`` (right-to-left embedding), ``[lro]`` (left-to-right override), "
-"``[rlo]`` (right-to-left override),"
-msgstr ""
-"``[rle]``(오른쪽에서 왼쪽 임베딩), ``[lro]``(왼쪽에서 오른쪽 재정의), "
-"``[rlo]``(오른쪽에서 왼쪽 재정의),"
-
-msgid ""
-"``[pdf]`` (pop directional formatting), ``[alm]`` (Arabic letter mark), "
-"``[lri]`` (left-to-right isolate),"
-msgstr ""
-"``[pdf]``(팝 방향 형식), ``[alm]``(아라비아 문자 표시), ``[lri]``(왼쪽에서 오"
-"른쪽으로 분리),"
-
-msgid ""
-"``[rli]`` (right-to-left isolate), ``[fsi]`` (first strong isolate), "
-"``[pdi]`` (pop directional isolate),"
-msgstr ""
-"``[rli]``(오른쪽에서 왼쪽으로 격리), ``[fsi]``(첫 번째 강력한 격리), "
-"``[pdi]``(팝 방향 격리),"
-
-msgid ""
-"``[zwj]`` (zero-width joiner), ``[zwnj]`` (zero-width non-joiner), ``[wj]`` "
-"(word joiner),"
-msgstr ""
-"``[zwj]``(폭이 0인 조이너), ``[zwnj]``(폭이 0인 조이너), ``[wj]``(워드 조이"
-"너),"
-
-msgid "``[shy]`` (soft hyphen)"
-msgstr "``[shy]``(소프트 하이픈)"
-
-msgid ""
-"Tags for bold (``[b]``) and italics (``[i]``) formatting work best if the "
-"appropriate custom fonts are set up in the RichTextLabelNode's theme "
-"overrides. If no custom bold or italic fonts are defined, `faux bold and "
-"italic fonts <https://fonts.google.com/knowledge/glossary/"
-"faux_fake_pseudo_synthesized>`__ will be generated by Godot. These fonts "
-"rarely look good in comparison to hand-made bold/italic font variants."
-msgstr ""
-"굵게(``[b]``) 및 기울임꼴(``[i]``) 서식 지정을 위한 태그는 RichTextLabelNode"
-"의 테마 재정의에 적절한 사용자 정의 글꼴이 설정된 경우 가장 잘 작동합니다. 사"
-"용자 정의 볼드체 또는 이탤릭체 글꼴이 정의되지 않은 경우 `faux 볼드체 및 이탤"
-"릭체 글꼴 <https://fonts.google.com/knowledge/glossary/"
-"faux_fake_pseudo_synthesized>`__이 Godot에 의해 생성됩니다. 이러한 글꼴은 손"
-"으로 만든 굵은/기울임꼴 글꼴 변형에 비해 보기에 좋지 않습니다."
-
-msgid ""
-"The monospaced (``[code]``) tag **only** works if a custom font is set up in "
-"the RichTextLabel node's theme overrides. Otherwise, monospaced text will "
-"use the regular font."
-msgstr ""
-"고정 폭(``[code]``) 태그는 **만** RichTextLabel 노드 테마 재정의에 사용자 정"
-"의 글꼴이 설정된 경우에만 작동합니다. 그렇지 않으면 고정 폭 텍스트에 일반 글"
-"꼴이 사용됩니다."
 
 msgid "There are no BBCode tags to control vertical centering of text yet."
 msgstr "텍스트의 수직 중앙 배치를 제어하는 BBCode 태그는 아직 없습니다."
@@ -1054,42 +770,12 @@ msgstr ""
 "픽셀에 있고 두 번째 탭은 ``10 + 30 = 40`` 픽셀에 있으며 세 번째 탭은 "
 "RichTextLabel 원점에서 ``10 + 30 + 10 = 50`` 픽셀에 있습니다."
 
-msgid "Handling ``[url]`` tag clicks"
-msgstr "``[url]`` 태그 클릭 처리"
-
-msgid ""
-"By default, ``[url]`` tags do nothing when clicked. This is to allow "
-"flexible use of ``[url]`` tags rather than limiting them to opening URLs in "
-"a web browser."
-msgstr ""
-"기본적으로 ``[url]`` 태그는 클릭해도 아무 작업도 수행되지 않습니다. 이는 웹 "
-"브라우저에서 URL을 열도록 제한하는 대신 ``[url]`` 태그를 유연하게 사용할 수 "
-"있도록 하기 위한 것입니다."
-
-msgid ""
-"To handle clicked ``[url]`` tags, connect the ``RichTextLabel`` "
-"node's :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` signal "
-"to a script function."
-msgstr ""
-"클릭한 ``[url]`` 태그를 처리하려면 ``RichTextLabel`` 노드"
-"의 :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` 시그널를 스"
-"크립트 함수에 연결하세요."
-
 msgid ""
 "For example, the following method can be connected to ``meta_clicked`` to "
 "open clicked URLs using the user's default web browser:"
 msgstr ""
 "예를 들어, 다음 방법을 ``meta_clicked``에 연결하여 사용자의 기본 웹 브라우저"
 "를 사용하여 클릭한 URL을 열 수 있습니다."
-
-msgid ""
-"For more advanced use cases, it's also possible to store JSON in a ``[url]`` "
-"tag's option and parse it in the function that handles the ``meta_clicked`` "
-"signal. For example:"
-msgstr ""
-"고급 사용 사례의 경우 JSON을 ``[url]`` 태그의 옵션에 저장하고 "
-"``meta_clicked`` 시그널를 처리하는 함수에서 구문 분석하는 것도 가능합니다. 예"
-"를 들면:"
 
 msgid "Horizontal rule options"
 msgstr "가로 센터링"
@@ -1227,22 +913,6 @@ msgstr "보조 앱(화면 판독기)에 대한 이미지 설명입니다."
 
 msgid "Image and table vertical alignment"
 msgstr "이미지 및 표 수직 정렬"
-
-msgid ""
-"When a vertical alignment value is provided with the ``[img]`` or "
-"``[table]`` tag the image/table will try to align itself against the "
-"surrounding text. Alignment is performed using a vertical point of the image "
-"and a vertical point of the text. There are 3 possible points on the image "
-"(``top``, ``center``, and ``bottom``) and 4 possible points on the text and "
-"table (``top``, ``center``, ``baseline``, and ``bottom``), which can be used "
-"in any combination."
-msgstr ""
-"``[img]`` 또는 ``[table]`` 태그와 함께 수직 정렬 값이 제공되면 이미지/테이블"
-"은 주변 텍스트에 맞춰 정렬하려고 시도합니다. 이미지의 수직점과 텍스트의 수직"
-"점을 이용하여 정렬이 이루어집니다. 이미지에는 3개의 가능한 포인트(``top``, "
-"``center`` 및 ``bottom``)가 있고 텍스트와 테이블에는 4개의 가능한 포인트"
-"(``top``, ``center``, ``baseline`` 및 ``bottom``)가 있으며 어떤 조합으로도 사"
-"용할 수 있습니다."
 
 msgid ""
 "To specify both points, use their full or short names as a value of the "
@@ -1400,27 +1070,6 @@ msgstr "https://github.com/godotengine/godot-demo-projects"
 msgid "Hexadecimal color codes"
 msgstr "16진수 색상 코드"
 
-msgid ""
-"For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
-"``[color=#ffffff]white[/color]``. Shorthand RGB color codes such as ``#6f2`` "
-"(equivalent to ``#66ff22``) are also supported."
-msgstr ""
-"불투명한 RGB 색상의 경우 유효한 6자리 16진수 코드가 지원됩니다. "
-"``[color=#ffffff]white[/color]``. ``#6f2``(``#66ff22``와 동일)와 같은 단축형 "
-"RGB 색상 코드도 지원됩니다."
-
-msgid ""
-"For transparent RGB colors, any RGBA 8-digit hexadecimal code can be used, "
-"e.g. ``[color=#ffffff88]translucent white[/color]``. Note that the alpha "
-"channel is the **last** component of the color code, not the first one. "
-"Short RGBA color codes such as ``#6f28`` (equivalent to ``#66ff2288``) are "
-"supported as well."
-msgstr ""
-"투명한 RGB 색상의 경우 RGBA 8자리 16진수 코드를 사용할 수 있습니다. "
-"``[color=#ffffff88]translucent white[/color]``. 알파 채널은 색상 코드의 첫 번"
-"째 구성 요소가 아니라 **마지막** 구성 요소라는 점에 유의하세요. "
-"``#6f28``(``#66ff2288``와 동일)와 같은 짧은 RGBA 색상 코드도 지원됩니다."
-
 msgid "Cell options"
 msgstr "셀 옵션"
 
@@ -1476,21 +1125,6 @@ msgstr "왼쪽, 위쪽, 오른쪽, 아래쪽 셀 패딩입니다."
 
 msgid "Unordered list bullet"
 msgstr "또는 순서가 없는 집합(unordered set)이 될 수도 있습니다:"
-
-msgid ""
-"By default, the ``[ul]`` tag uses the ``U+2022`` \"Bullet\" Unicode glyph as "
-"the bullet character. This behavior is similar to web browsers. The bullet "
-"character can be customized using ``[ul bullet={bullet}]``. If provided, "
-"this ``{bullet}`` parameter must be a string with no enclosing quotes (for "
-"example, ``[bullet=*]``). You can add trailing spaces after the bullet "
-"character to increase the spacing between the bullet and the list item text."
-msgstr ""
-"기본적으로 ``[ul]`` 태그는 ``U+2022`` \"Bullet\" 유니코드 문자 모양을 글머리 "
-"기호 문자로 사용합니다. 이 동작은 웹 브라우저와 유사합니다. 글머리 기호 문자"
-"는 ``[ul bullet={bullet}]``를 사용하여 사용자 정의할 수 있습니다. 제공된 경"
-"우 이 ``{bullet}`` 매개변수는 묶는 따옴표가 없는 문자열이어야 합니다(예: "
-"``[bullet=*]``). 글머리 기호 문자 뒤에 후행 공백을 추가하여 글머리 기호와 목"
-"록 항목 텍스트 사이의 간격을 늘릴 수 있습니다."
 
 msgid ""
 "See `Bullet (typography) on Wikipedia <https://en.wikipedia.org/wiki/"
@@ -1565,15 +1199,6 @@ msgid "Pulse"
 msgstr "펄스"
 
 msgid ""
-"Pulse creates an animated pulsing effect that multiplies each character's "
-"opacity and color. It can be used to bring attention to specific text. Its "
-"tag format is ``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]``."
-msgstr ""
-"Pulse는 각 캐릭터의 불투명도와 색상을 배가시키는 애니메이션 펄스 효과를 만듭"
-"니다. 특정 텍스트에 주의를 집중시키는 데 사용할 수 있습니다. 태그 형식은 "
-"``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]``입니다."
-
-msgid ""
 "``freq`` controls the frequency of the half-pulsing cycle (higher is "
 "faster). A full pulsing cycle takes ``2 * (1.0 / freq)`` seconds. ``color`` "
 "is the target color multiplier for blinking. The default mostly fades out "
@@ -1588,13 +1213,6 @@ msgstr ""
 
 msgid "Wave"
 msgstr "웨이브"
-
-msgid ""
-"Wave makes the text go up and down. Its tag format is ``[wave amp=50.0 "
-"freq=5.0 connected=1]{text}[/wave]``."
-msgstr ""
-"Wave는 텍스트를 위아래로 움직입니다. 태그 형식은 ``[wave amp=50.0 freq=5.0 "
-"connected=1]{text}[/wave]``입니다."
 
 msgid ""
 "``amp`` controls how high and low the effect goes, and ``freq`` controls how "
@@ -1616,13 +1234,6 @@ msgid "Tornado"
 msgstr "토네이도"
 
 msgid ""
-"Tornado makes the text move around in a circle. Its tag format is ``[tornado "
-"radius=10.0 freq=1.0 connected=1]{text}[/tornado]``."
-msgstr ""
-"토네이도는 텍스트를 원 모양으로 움직입니다. 태그 형식은 ``[tornado "
-"radius=10.0 freq=1.0 connected=1]{text}[/tornado]``입니다."
-
-msgid ""
 "``radius`` is the radius of the circle that controls the offset, ``freq`` is "
 "how fast the text moves in a circle. A ``freq`` value of ``0`` will pause "
 "the animation, while negative ``freq`` will play the animation backwards. If "
@@ -1642,13 +1253,6 @@ msgid "Shake"
 msgstr "흔들어"
 
 msgid ""
-"Shake makes the text shake. Its tag format is ``[shake rate=20.0 level=5 "
-"connected=1]{text}[/shake]``."
-msgstr ""
-"흔들면 텍스트가 흔들립니다. 태그 형식은 ``[shake rate=20.0 level=5 "
-"connected=1]{text}[/shake]``입니다."
-
-msgid ""
 "``rate`` controls how fast the text shakes, ``level`` controls how far the "
 "text is offset from the origin. If ``connected`` is ``1`` (default), glyphs "
 "with ligatures will be moved together. If ``connected`` is ``0``, each glyph "
@@ -1665,13 +1269,6 @@ msgid "Fade"
 msgstr "페이드"
 
 msgid ""
-"Fade creates a static fade effect that multiplies each character's opacity. "
-"Its tag format is ``[fade start=4 length=14]{text}[/fade]``."
-msgstr ""
-"페이드는 각 문자의 불투명도를 배가시키는 정적 페이드 효과를 만듭니다. 태그 형"
-"식은 ``[fade start=4 length=14]{text}[/fade]``입니다."
-
-msgid ""
 "``start`` controls the starting position of the falloff relative to where "
 "the fade command is inserted, ``length`` controls over how many characters "
 "should the fade out take place."
@@ -1681,14 +1278,6 @@ msgstr ""
 
 msgid "Rainbow"
 msgstr "무지개"
-
-msgid ""
-"Rainbow gives the text a rainbow color that changes over time. Its tag "
-"format is ``[rainbow freq=1.0 sat=0.8 val=0.8 speed=1.0]{text}[/rainbow]``."
-msgstr ""
-"Rainbow는 텍스트에 시간이 지남에 따라 변하는 무지개 색상을 제공합니다. 태그 "
-"형식은 ``[rainbow freq=1.0 sat=0.8 val=0.8 speed=1.0]{text}[/rainbow]``입니"
-"다."
 
 msgid ""
 "``freq`` determines how many letters the rainbow extends over before it "
@@ -1819,21 +1408,6 @@ msgid ""
 msgstr ""
 "``glyph_index`` 및 ``font``는 그려지는 글리프와 이를 그리는 데 사용되는 글꼴 "
 "데이터 리소스입니다."
-
-msgid ""
-"Finally, ``env`` is a :ref:`class_Dictionary` of parameters assigned to a "
-"given custom effect. You can use :ref:`get() <class_Dictionary_method_get>` "
-"with an optional default value to retrieve each parameter, if specified by "
-"the user. For example ``[custom_fx spread=0.5 color=#FFFF00]test[/"
-"custom_fx]`` would have a float ``spread`` and Color ``color`` parameters in "
-"its ``env`` Dictionary. See below for more usage examples."
-msgstr ""
-"마지막으로 ``env``는 지정된 사용자 정의 효과에 할당된 매개변수"
-"의 :ref:`class_Dictionary`입니다. 사용자가 지정한 경우 선택적 기본값과 함"
-"께 :ref:`get() <class_Dictionary_method_get>`을 사용하여 각 매개 변수를 검색"
-"할 수 있습니다. 예를 들어 ``[custom_fx spread=0.5 color=#FFFF00]test[/"
-"custom_fx]``는 ``env`` 사전에 부동 ``spread`` 및 색상 ``color`` 매개변수를 갖"
-"습니다. 더 많은 사용 예를 보려면 아래를 참조하세요."
 
 msgid ""
 "The last thing to note about this function is that it is necessary to return "

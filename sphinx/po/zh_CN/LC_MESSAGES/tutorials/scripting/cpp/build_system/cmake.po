@@ -186,6 +186,24 @@ msgstr ""
 "Windows 运行时库的链接。如果该变量尚未设置，godot-cpp 将会设置它。因此，请在"
 "引入其他依赖项之前包含 godot-cpp，以确保该值在所有项目中生效。"
 
+msgid ""
+"Additionally, the :ref:`hook system "
+"<doc_godot_cpp_modifying_generated_files>` works a bit differently with "
+"CMake:"
+msgstr ""
+"此外， :ref:`hook system <doc_godot_cpp_modifying_generated_files>` 在与 "
+"CMake 一起使用时的工作方式略有不同："
+
+msgid "Your subclass has to be named ``CustomBindingGeneratorHooks``."
+msgstr "您的子类名称必须为 ``CustomBindingGeneratorHooks`` 。"
+
+msgid ""
+"Pass the filepath of the python file containing your subclass with the "
+"``GODOTCPP_BINDING_HOOK_FILE`` option to CMake."
+msgstr ""
+"将包含您自定义子类的 Python 文件的路径通过 ` ``GODOTCPP_BINDING_HOOK_FILE`` "
+"` 选项传递给 CMake。"
+
 msgid "Basic Walk-Through"
 msgstr "基本操作流程"
 

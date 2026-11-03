@@ -11,9 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "HTML5 shell class reference"
-msgstr "Справочник классов оболочки HTML5"
-
 msgid ""
 "Projects exported for the Web expose the :js:class:`Engine` class to the "
 "JavaScript environment, that allows fine control over the engine's start-up "
@@ -53,9 +50,6 @@ msgstr "Статические методы"
 msgid "Promise"
 msgstr "Обещание"
 
-msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-msgstr ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-
 msgid "void"
 msgstr "void"
 
@@ -71,6 +65,9 @@ msgid ""
 msgstr ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ номер "
 "majorVersion=1 ]* **)**"
+
+msgid "Array.<string>"
+msgstr "Array (Массив).<string (строка)>"
 
 msgid "Instance Methods"
 msgstr "Методы экземпляра"
@@ -170,6 +167,10 @@ msgstr ""
 "Инициализируйте экземпляр движка. При необходимости передайте базовый путь к "
 "движку для его загрузки, если он ещё не загружен. См. :js:meth:`Engine.load`."
 
+msgid "A Promise that resolves once the engine is loaded and initialized."
+msgstr ""
+"``Promise``, которое разрешается после загрузки и инициализации движка."
+
 msgid ""
 "Load a file so it is available in the instance's file system once it runs. "
 "Must be called **before** starting the instance."
@@ -241,6 +242,9 @@ msgstr ""
 msgid "An optional configuration override."
 msgstr "Необязательное переопределение конфигурации."
 
+msgid "A Promise that resolves once the engine started."
+msgstr "``Promise``, которое разрешается после запуска движка."
+
 msgid ""
 "Start the game instance using the given configuration override (if any)."
 msgstr ""
@@ -268,6 +272,9 @@ msgstr ""
 "Этот метод ожидает, что начальная конфигурация (или переопределение) будет "
 "иметь установленные свойства :js:attr:`executable` и :js:attr:`mainPack` "
 "(обычно это делается редактором во время экспорта)."
+
+msgid "A Promise that resolves once the game started."
+msgstr "``Promise``, которое разрешается после запуска игры."
 
 msgid ""
 "Create a file at the specified ``path`` with the passed as ``buffer`` in the "
@@ -339,9 +346,6 @@ msgstr "число"
 msgid ":js:attr:`canvasResizePolicy`"
 msgstr ":js:attr:`canvasResizePolicy`"
 
-msgid "Array.<string>"
-msgstr "Array (Массив).<string (строка)>"
-
 msgid ":js:attr:`args`"
 msgstr ":js:attr:`args`"
 
@@ -376,12 +380,6 @@ msgstr ""
 
 msgid "**Property Descriptions**"
 msgstr "**Описания свойства**"
-
-msgid ""
-"Whether the unload the engine automatically after the instance is "
-"initialized."
-msgstr ""
-"Будет ли автоматически выгружаться двигатель после инициализации экземпляра."
 
 msgid "value"
 msgstr "значение"
@@ -437,6 +435,13 @@ msgstr ""
 "размер холста."
 
 msgid ""
+"``0`` means Godot won't do any resizing. This is useful if you want to "
+"control the canvas size from JavaScript code in your template."
+msgstr ""
+"``0`` означает, что Godot не будет изменять размер. Это полезно, если вы "
+"хотите управлять размером холста с помощью кода JavaScript в шаблоне."
+
+msgid ""
 "``1`` means Godot will resize the canvas on start, and when changing window "
 "size via engine functions."
 msgstr ""
@@ -470,6 +475,12 @@ msgstr ""
 
 msgid "``[]``"
 msgstr "``[]``"
+
+msgid "``false``"
+msgstr "``false``"
+
+msgid "``0``"
+msgstr "``0``"
 
 msgid "A callback function for handling Godot's ``OS.execute`` calls."
 msgstr "Функция обратного вызова для обработки вызовов Godot ``OS.execute``."

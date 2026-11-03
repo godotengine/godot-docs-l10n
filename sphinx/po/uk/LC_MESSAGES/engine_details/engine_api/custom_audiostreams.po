@@ -124,11 +124,8 @@ msgstr ""
 "Оскільки AudioStreamPlayback контролюється звуковим потоком, введення/"
 "виведення та динамічний розподіл пам’яті заборонені."
 
-msgid "audiostreamplayer_mytone.h"
-msgstr "audiostreamplayer_mytone.h"
-
-msgid "audiostreamplayer_mytone.cpp"
-msgstr "audiostreamplayer_mytone.cpp"
+msgid "Usage"
+msgstr "Використання"
 
 msgid "Resampling"
 msgstr "Зміна частоти"
@@ -152,12 +149,6 @@ msgstr ""
 "Замість перевантаження ``mix`` AudioStreamPlaybackResampled використовує "
 "``_mix_internal`` для запиту AudioFrames і ``get_stream_sampling_rate`` для "
 "запиту поточної швидкості мікшування."
-
-msgid "mytone_audiostream_resampled.h"
-msgstr "mytone_audiostream_resampled.h"
-
-msgid "mytone_audiostream_resampled.cpp"
-msgstr "mytone_audiostream_resampled.cpp"
 
 msgid ""
 "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"

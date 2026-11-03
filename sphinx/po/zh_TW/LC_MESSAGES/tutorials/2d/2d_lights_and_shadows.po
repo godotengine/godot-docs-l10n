@@ -449,6 +449,20 @@ msgstr ""
 "**Item Cull Mask：** 專案剔除遮罩。控制的是哪些 LightOccluder2D 節點能夠投射"
 "陰影，取決於對應的 **Occluder Light Mask** （遮擋器燈光遮罩）屬性。"
 
+msgid "**Lighting and shadow resolution in pixel-art games**"
+msgstr "**像素藝術遊戲中的光照與陰影解析度**"
+
+msgid ""
+"If you create a pixel-art game and want pixelated or blocky lighting and "
+"shadows that match your art style, **Nearest** texture filtering will "
+"**not** achieve this effect. Nearest filtering affects only how the engine "
+"samples textures — it does not change how the engine renders lighting and "
+"shadows."
+msgstr ""
+"如果你製作的是像素藝術遊戲，並且希望對光照與陰影加入像素化或塊狀化效果以符合"
+"你的藝術風格，你 **無法** 使用 **最近鄰** 紋理過濾實現此效果。最近鄰紋理過濾"
+"僅影響引擎採樣紋理的方式，不會改變引擎算繪光照與陰影的方式。"
+
 msgid "Hard shadows"
 msgstr "硬陰影"
 

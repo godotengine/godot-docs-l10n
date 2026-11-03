@@ -17,14 +17,8 @@ msgstr "Сборки Gradle для Android"
 msgid "There are some reasons why you may want to do this:"
 msgstr "Есть несколько причин, по которым вы можете захотеть это сделать:"
 
-msgid "Modify the project before it's built."
-msgstr "Изменение проекта до его сборки."
-
-msgid "Add external SDKs that build with your project."
-msgstr "Добавление внешнего SDK, которые собираются вместе с вашим проектом."
-
-msgid "Go to the Project menu, and install the *Gradle Build* template:"
-msgstr "Перейдите в меню \"Project\" и установите шаблон *Gradle Build*:"
+msgid "Set up the Gradle build environment"
+msgstr "Настройка среды сборки Gradle"
 
 msgid ""
 "Make sure export templates are downloaded. If not, this menu will help you "
@@ -42,12 +36,61 @@ msgstr ""
 "Редактировать эти файлы не требуется, если только вам действительно не нужно "
 "вносить изменения в проект."
 
+msgid "Performing Gradle builds from the Android editor"
+msgstr "Выполнение сборок Gradle из редактора Android"
+
+msgid ""
+"This application is *not* required when exporting from the Android editor "
+"with pre-built APK templates, or when exporting to other platforms."
+msgstr ""
+"Данное приложение *не* требуется при экспорте из редактора Android с "
+"использованием предварительно созданных шаблонов APK, а также при экспорте "
+"на другие платформы."
+
+msgid ""
+"To set up the build environment, open the app and follow these instructions:"
+msgstr ""
+"Чтобы настроить окружение сборки, откройте приложение и следуйте инструкциям:"
+
+msgid "Ensure you have an active Internet connection."
+msgstr "Убедитесь, что у Вас есть действующее интернет соединение."
+
+msgid "Open the :menu:`Rootfs` tab from the bottom navigation bar."
+msgstr "Откройте вкладку :menu:`Rootfs` в нижней панели навигации."
+
+msgid "Click :button:`Install Rootfs`."
+msgstr "Нажмите :button:`Install Rootfs`."
+
+msgid "Enabling the Gradle build and exporting"
+msgstr "Включение сборки Gradle и экспорт"
+
 msgid ""
 "When setting up the Android project in the **Project > Export** dialog, "
 "**Gradle Build** needs to be enabled:"
 msgstr ""
 "При настройке проекта Android в диалоговом окне **Project > Export** "
 "необходимо включить **Gradle Build**:"
+
+msgid ""
+"From now on, attempting to export the project or one-click deploy will call "
+"the Gradle build system to generate fresh templates. The templates built "
+"will be used automatically afterwards, so no further configuration is needed."
+msgstr ""
+"Отныне при попытке экспортировать проект или выполнить развёртывание в один "
+"клик будет вызываться система сборки Gradle для создания свежих шаблонов. "
+"Скомпилированные шаблоны будут использоваться автоматически в дальнейшем, "
+"поэтому никакая дополнительная настройка не требуется."
+
+msgid ""
+"When using the Gradle Android build system, assets that are placed within a "
+"folder whose name begins with an underscore will not be included in the "
+"generated APK. This does not apply to assets whose *file* name begins with "
+"an underscore."
+msgstr ""
+"При использовании системы сборки Android Gradle ресурсы, размещённые в "
+"папке, имя которой начинается с символа подчёркивания, не будут включены в "
+"сгенерированный APK-файл. Это не относится к ресурсам, имя файла которых "
+"начинается с символа подчёркивания."
 
 msgid ""
 "For example, ``_example/image.png`` will **not** be included as an asset, "

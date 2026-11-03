@@ -240,11 +240,25 @@ msgid "**Plugins:**"
 msgstr "**插件：**"
 
 msgid ""
+"Editor plugins can be downloaded from the :ref:`Asset Store "
+"<doc_what_is_asset_store>` to extend editor functionality."
+msgstr ""
+"编辑器插件可从 :ref:`Asset Store <doc_what_is_asset_store>` 下载，用于扩展编"
+"辑器的功能。"
+
+msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
 "使用 GDScript 来\\ :ref:`创建属于自己的插件 <doc_making_plugins>`\\ ，从而为"
 "引擎添加新功能或加速你的工作流。"
+
+msgid ""
+":ref:`Download projects from the Asset Store <doc_using_asset_store_editor>` "
+"in the Project Manager and import them directly."
+msgstr ""
+"在 Project Manager 中使用 :ref:`从 Asset Store 下载项目 "
+"<doc_using_asset_store_editor>` 并直接导入。"
 
 msgid "Rendering"
 msgstr "渲染"
@@ -297,9 +311,6 @@ msgid ""
 msgstr ""
 "用于绘制线和多边形的高级工具，例如 :ref:`class_Polygon2D` "
 "和 :ref:`class_Line2D`\\ ，支持纹理。"
-
-msgid "AnimatedSprite2D as a helper for creating animated sprites."
-msgstr "AnimatedSprite2D 辅助制作动画精灵。"
 
 msgid "Parallax layers."
 msgstr "视差层。"
@@ -441,10 +452,10 @@ msgid "Path2D node to represent a path in 2D space."
 msgstr "Path2D 节点，用于代表 2D 空间中的一条路径。"
 
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr "可以在编辑器中绘制或者程序化生成。"
+msgstr "可以在编辑器中绘制或程序化生成。"
 
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr "PathFollow2D 节点，用于使节点跟随一个 Path2D。"
+msgstr "PathFollow2D 节点，用于使节点跟随一个 Path2D 节点。"
 
 msgid ":ref:`2D geometry helper class <class_Geometry2D>`."
 msgstr ":ref:`2D 几何辅助类 <class_Geometry2D>`\\ 。"
@@ -461,7 +472,7 @@ msgstr "静态物体。"
 msgid ""
 "Animatable bodies (for objects moving only by script or animation, such as "
 "doors and platforms)."
-msgstr "可动画物体（用于仅通过脚本或动画移动的物体，如门和平台）。"
+msgstr "可动画物体（仅用于通过脚本或动画移动的物体，如门或平台）。"
 
 msgid "Rigid bodies."
 msgstr "刚体。"
@@ -488,7 +499,7 @@ msgstr "内置形状：线条、框体、圆圈、胶囊、世界边界（无限
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
-msgstr "碰撞多边形（可以人工绘制，或者在编辑器中根据精灵生成）。"
+msgstr "碰撞多边形（可以人工绘制或在编辑器中根据精灵生成）。"
 
 msgid "3D graphics"
 msgstr "3D 图形"
@@ -544,6 +555,9 @@ msgstr "具有基于距离的自动细节层次的视差/浮雕贴图。"
 
 msgid "Detail mapping for the albedo and normal maps."
 msgstr "反照率及法线贴图的细节贴图。"
+
+msgid "Subsurface scattering and transmittance."
+msgstr "次表面散射（Subsurface Scattering）和透射（Transmittance）。"
 
 msgid ""
 "Screen-space refraction with support for material roughness (resulting in "
@@ -1257,12 +1271,6 @@ msgstr ":ref:`C#: <doc_c_sharp>`"
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
 msgstr "打包成单个单独的二进制文件，以降低文件大小和依赖关系。"
 
-msgid "Supports .NET 8 and higher."
-msgstr "支持 .NET 8 及更高版本。"
-
-msgid "Full support for the C# 12.0 syntax and features."
-msgstr "完全支持 C# 12.0 语法和特性。"
-
 msgid ""
 "Supports Windows, Linux, and macOS. Since Godot 4.2, experimental support "
 "for Android and iOS is also available."
@@ -1669,6 +1677,9 @@ msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
 msgstr "吸引注意（在大多数平台上表现为标题栏闪烁）。"
 
+msgid "Fullscreen mode (borderless and exclusive)."
+msgstr "全屏模式（无边框且独占）。"
+
 msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "无边框窗口（全屏或非全屏）。"
 
@@ -1753,6 +1764,50 @@ msgstr "Android画中画模式支持。"
 
 msgid "XR support (AR and VR)"
 msgstr "XR 支持（AR 和 VR）"
+
+msgid ""
+"Support for desktop headsets using :ref:`OpenXR <doc_setting_up_xr>`. If a "
+"headset works with SteamVR, it should work with Godot."
+msgstr ""
+"支持使用 :ref:`OpenXR <doc_setting_up_xr>` 的桌面头显。若某款头显兼容 "
+"SteamVR，则应兼容 Godot。"
+
+msgid ""
+"Godot also supports Quest over Link, AndroidXR Direct Preview, and Pico "
+"Connect."
+msgstr ""
+"Godot 还支持 Quest（替代 Link）、AndroidXR Direct Preview 以及 Pico Connect。"
+
+msgid ""
+"Support for :ref:`Android-based headsets <doc_deploying_to_android>` using "
+"OpenXR. Including support for the following standalone headsets:"
+msgstr ""
+"支持通过 :ref:`Android-based headsets <doc_deploying_to_android>` 的支持。包"
+"含对以下独立头显设备的支持："
+
+msgid "Meta Quest 1/2/3 and Pro"
+msgstr "Meta Quest 1/2/3 and Pro"
+
+msgid "Pico 4/4 Ultra"
+msgstr "Pico 4/4 Ultra"
+
+msgid "Magic Leap 2"
+msgstr "Magic Leap 2"
+
+msgid "Lynx R1"
+msgstr "Lynx R1"
+
+msgid "HTC Vive Focus Vision"
+msgstr "HTC Vive Focus Vision"
+
+msgid "Android XR headsets"
+msgstr "Android XR头显"
+
+msgid "Support for the Linux-based standalone Steam Frame using OpenXR."
+msgstr "支持基于 Linux 的独立 Steam Frame，采用 OpenXR 技术。"
+
+msgid "Limited support for visionOS Apple headsets."
+msgstr "对 VisionOS 苹果耳机的支持有限。"
 
 msgid ""
 "Currently only exporting an application for use on a flat plane within the "
@@ -2061,14 +2116,6 @@ msgstr ""
 
 msgid "Licensed under the permissive MIT license."
 msgstr "使用宽松的 MIT 许可。"
-
-msgid ""
-"Open development process with `contributions welcome <https://"
-"contributing.godotengine.org/en/latest/organization/"
-"how_to_contribute.html>`__."
-msgstr ""
-"开放的开发过程，\\ `欢迎贡献 <https://contributing.godotengine.org/en/latest/"
-"organization/how_to_contribute.html>`__\\ 。"
 
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"

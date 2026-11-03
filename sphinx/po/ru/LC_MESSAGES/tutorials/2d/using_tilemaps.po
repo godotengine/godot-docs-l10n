@@ -196,6 +196,17 @@ msgstr ""
 "или :ref:`NavigationServer2D <class_NavigationServer2D>`. Дополнительную "
 "информацию см. в :ref:`doc_navigation_using_navigationmeshes`."
 
+msgid ""
+"2D navigation meshes can not be \"layered\" or stacked on top of each other "
+"like visuals or physics shapes. Attempting to stack navigation meshes on the "
+"same navigation map will result in merge and logical errors that break the "
+"pathfinding."
+msgstr ""
+"2D-сетки навигации нельзя «наслаивать» или складывать друг на друга, как "
+"визуальные элементы или физические фигуры. Попытка сложить сетки навигации "
+"на одной и той же навигационной карте приведёт к ошибкам объединения и "
+"логическим ошибкам, которые нарушат поиск пути."
+
 msgid "Reordering layers"
 msgstr "Переопределение порядка слоев"
 

@@ -110,6 +110,23 @@ msgstr "in float **E**"
 msgid "Vertex built-ins"
 msgstr "Variables intégrées de sommet"
 
+msgid ""
+"Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
+"relative to the Node2D's origin). If not written to, these values will not "
+"be modified and be passed through as they came."
+msgstr ""
+"Les données des sommets (``VERTEX``) sont présentées dans l'espace local "
+"(coordonnées des pixels, par rapport à l'origine du Node2D). Si elles ne "
+"sont pas écrites, ces valeurs ne seront pas modifiées et seront transmises "
+"comme elles sont venues."
+
+msgid ""
+"Other built-ins, such as ``UV`` and ``COLOR``, are also passed through to "
+"the ``fragment()`` function if not modified."
+msgstr ""
+"D'autres types intégrés, comme ``UV`` et ``COLOR``, sont aussi passés tels "
+"quels à la fonction ``fragment()`` s'ils ne sont pas modifiés."
+
 msgid "**x**: Rotation angle in radians."
 msgstr "**x** : Angle de rotation en radians."
 
@@ -146,8 +163,20 @@ msgstr "Toujours ``false``."
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgstr "in vec2 **TEXTURE_PIXEL_SIZE**"
 
+msgid ""
+"Normalized pixel size of the default 2D texture. For a Sprite2D with a "
+"texture of size 64×32 pixels, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / 64.0, "
+"1.0 / 32.0)``."
+msgstr ""
+"Taille de pixel normalisée de la texture 2D par défaut. Pour un Sprite2D "
+"d'une résolution de 64x32px, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / 64.0, "
+"1.0 / 32.0)``."
+
 msgid "inout vec2 **VERTEX**"
 msgstr "inout vec2 **VERTEX**"
+
+msgid "Vertex position, in local space."
+msgstr "Position du sommet, dans l'espace local."
 
 msgid "in int **VERTEX_ID**"
 msgstr "in int **VERTEX_ID**"
@@ -188,6 +217,12 @@ msgstr "in vec4 **FRAGCOORD**"
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "in vec2 **SCREEN_PIXEL_SIZE**"
 
+msgid "Size of individual pixels. Equal to the inverse of resolution."
+msgstr "Taille des pixels individuels. Égale à l'inverse de la résolution."
+
+msgid "in vec4 **REGION_RECT**"
+msgstr "in vec4 **REGION_RECT**"
+
 msgid "in vec2 **POINT_COORD**"
 msgstr "in vec2 **POINT_COORD**"
 
@@ -218,6 +253,9 @@ msgstr "sampler2D **SCREEN_TEXTURE**"
 msgid "inout vec3 **NORMAL**"
 msgstr "inout vec3 **NORMAL**"
 
+msgid "Normal read from ``NORMAL_TEXTURE``. Writable."
+msgstr "Normale lue à partir de ``NORMAL_TEXTURE``. Accessible en écriture."
+
 msgid "sampler2D **NORMAL_TEXTURE**"
 msgstr "sampler2D **NORMAL_TEXTURE**"
 
@@ -239,11 +277,45 @@ msgstr "inout vec3 **LIGHT_VERTEX**"
 msgid "Light built-ins"
 msgstr "Variables intégrées de lumière"
 
+msgid ""
+"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
+"viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``. Bottom-"
+"right of the viewport is ``(1.0, 1.0)``."
+msgstr ""
+"Coordonnées du centre du pixel. Dans l'espace écran. ``xy`` indiquent la "
+"position dans le viewport. Le coin en haut à gauche du viewport est "
+"l'origine, ``(0.0, 0.0)``. Le coin en bas à droite vaut ``(1.0, 1.0)``."
+
 msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
 
+msgid "Input normal."
+msgstr "Normale d'entrée."
+
 msgid "in vec4 **COLOR**"
 msgstr "in vec4 **COLOR**"
+
+msgid "Input color. This is the output of the ``fragment()`` function."
+msgstr ""
+"Couleur d'entrée. Il s'agit de la sortie de la fonction ``fragment()``."
+
+msgid ""
+"UV from the ``vertex()`` function, equivalent to the UV in the "
+"``fragment()`` function."
+msgstr ""
+"UV de la fonction ``vertex()``, équivalent à l'UV dans la fonction "
+"``fragment()``."
+
+msgid "Current texture in use for the CanvasItem."
+msgstr "Texture actuelle utilisée pour le CanvasItem."
+
+msgid ""
+"Normalized pixel size of ``TEXTURE``. For a Sprite2D with a ``TEXTURE`` of "
+"size 64×32 pixels, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / 64.0, 1.0 / 32.0)``."
+msgstr ""
+"Taille de pixel normalisée de la ``TEXTURE``. Pour un Sprite2D avec une "
+"``TEXTURE`` d'une résolution de 64x32px, ``TEXTURE_PIXEL_SIZE`` "
+"= ``vec2(1.0 / 64.0, 1.0 / 32.0)``."
 
 msgid "UV for Point Sprite."
 msgstr "UV pour Point Sprite."
@@ -298,3 +370,6 @@ msgstr "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
 
 msgid "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"
 msgstr "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"
+
+msgid "vec2 **screen_uv_to_sdf** (vec2 uv)"
+msgstr "vec2 **screen_uv_to_sdf** (vec2 uv)"

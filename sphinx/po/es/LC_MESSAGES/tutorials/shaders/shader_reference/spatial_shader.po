@@ -87,6 +87,13 @@ msgstr "**depth_test_default**"
 msgid "**depth_test_inverted**"
 msgstr "**depth_test_inverted**"
 
+msgid ""
+"Depth test will discard the pixel if it is in front of other pixels. Useful "
+"for stencil effects."
+msgstr ""
+"La prueba de profundidad descartará el píxel si está delante de otros "
+"píxeles. Útil para los efectos de esténcil."
+
 msgid "**sss_mode_skin**"
 msgstr "**sss_mode_skin**"
 
@@ -194,35 +201,133 @@ msgstr "**alpha_to_coverage_and_one**"
 msgid "**fog_disabled**"
 msgstr "**fog_disabled**"
 
+msgid "Stencil modes"
+msgstr "Modos de esténcil"
+
+msgid ""
+"Stencil support is experimental, use at your own risk. We will try to not "
+"break compatibility as much as possible, but if significant flaws are found "
+"in the API, it may change in the next minor version."
+msgstr ""
+"La compatibilidad con esténcil es experimental; úsala bajo tu propia "
+"responsabilidad. Intentaremos evitar cambios que rompan la compatibilidad en "
+"la medida de lo posible, pero si se detectan defectos importantes en la API, "
+"esta podría cambiar en la próxima versión menor."
+
+msgid ""
+"Stencil operations are a set of operations that allow writing to an "
+"efficient buffer in an hardware-accelerated manner. This is generally used "
+"to mask in or out parts of the scene."
+msgstr ""
+"Las operaciones de esténcil son un conjunto de operaciones que permiten "
+"escribir en un búfer de forma eficiente mediante aceleración por hardware. "
+"Generalmente, se utilizan para enmascarar partes de la escena o excluirlas "
+"de ella."
+
+msgid ""
+"You can only read from the stencil buffer in the transparent pass. Any "
+"attempt to read in the opaque pass will fail, as it's currently not "
+"supported behavior."
+msgstr ""
+"Solo se puede leer del búfer de esténcil durante la pasada de transparencia. "
+"Cualquier intento de lectura durante la pasada opaca fallará, ya que este "
+"comportamiento no está admitido actualmente."
+
+msgid ""
+"Note that for compositor effects, the main renderer's stencil buffer can't "
+"be copied to a custom texture."
+msgstr ""
+"Ten en cuenta que, en los efectos de compositor, el búfer de esténcil del "
+"renderizador principal no se puede copiar a una textura personalizada."
+
+msgid "Stencil mode"
+msgstr "Modo de esténcil"
+
 msgid "**read**"
 msgstr "**read**"
+
+msgid "Read from the stencil buffer."
+msgstr "Leer del búfer de esténcil."
 
 msgid "**write**"
 msgstr "**write**"
 
+msgid "Write reference value to the stencil buffer."
+msgstr "Escribir el valor de referencia en el búfer de esténcil."
+
 msgid "**write_if_depth_fail**"
 msgstr "**write_if_depth_fail**"
+
+msgid "Write reference value to the stencil buffer if the depth test fails."
+msgstr ""
+"Escribir el valor de referencia en el búfer de esténcil si falla la prueba "
+"de profundidad."
 
 msgid "**compare_always**"
 msgstr "**compare_always**"
 
+msgid "Always pass stencil test."
+msgstr "Superar siempre la prueba de esténcil."
+
 msgid "**compare_equal**"
 msgstr "**compare_equal**"
+
+msgid ""
+"Pass stencil test if the reference value is equal to the stencil buffer "
+"value."
+msgstr ""
+"Superar la prueba de esténcil si el valor de referencia es igual al valor "
+"del búfer de esténcil."
 
 msgid "**compare_not_equal**"
 msgstr "**compare_not_equal**"
 
+msgid ""
+"Pass stencil test if the reference value is not equal to the stencil buffer "
+"value."
+msgstr ""
+"Superar la prueba de esténcil si el valor de referencia es distinto del "
+"valor del búfer de esténcil."
+
 msgid "**compare_less**"
 msgstr "**compare_less**"
+
+msgid ""
+"Pass stencil test if the reference value is less than the stencil buffer "
+"value."
+msgstr ""
+"Superar la prueba de esténcil si el valor de referencia es menor que el "
+"valor del búfer de esténcil."
 
 msgid "**compare_less_or_equal**"
 msgstr "**compare_less_or_equal**"
 
+msgid ""
+"Pass stencil test if the reference value is less than or equal to the "
+"stencil buffer value."
+msgstr ""
+"Superar la prueba de esténcil si el valor de referencia es menor o igual que "
+"el valor del búfer de esténcil."
+
 msgid "**compare_greater**"
 msgstr "**compare_greater**"
 
+msgid ""
+"Pass stencil test if the reference value is greater than the stencil buffer "
+"value."
+msgstr ""
+"Superar la prueba de esténcil si el valor de referencia es mayor que el "
+"valor del búfer de esténcil."
+
 msgid "**compare_greater_or_equal**"
 msgstr "**compare_greater_or_equal**"
+
+msgid ""
+"Pass stencil test if the reference value is greater than or equal to the "
+"stencil buffer value."
+msgstr ""
+"Superar la prueba de esténcil si el valor de referencia es mayor o igual que "
+"el valor del búfer de esténcil."
 
 msgid "Built-ins"
 msgstr "Funciones propias"

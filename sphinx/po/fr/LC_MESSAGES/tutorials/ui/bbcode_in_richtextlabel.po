@@ -64,13 +64,6 @@ msgstr "Performance"
 msgid "There are several ways to alleviate this:"
 msgstr "Il y a plusieurs façons de réduire cela :"
 
-msgid ""
-"The following script will result in the same visual output as using ``BBCode "
-"[color=green]test [i]example[/i][/color]``:"
-msgstr ""
-"Le script suivant produira la même sortie visuelle que celle obtenue en "
-"utilisant ``BBCode [color=green]test [i]example[/i][/color]`` :"
-
 msgid "Reference"
 msgstr "Référence"
 
@@ -83,14 +76,8 @@ msgstr "Exemple"
 msgid "**b**"
 msgstr "**b**"
 
-msgid "``[b]{text}[/b]``"
-msgstr "``[b]{texte}[/b]``"
-
 msgid "**i**"
 msgstr "**i**"
-
-msgid "``[i]{text}[/i]``"
-msgstr "``[i]{texte}[/i]``"
 
 msgid "**u**"
 msgstr "**u**"
@@ -107,92 +94,44 @@ msgstr "Barre le ``{texte}``."
 msgid "**code**"
 msgstr "**code**"
 
-msgid "``[code]{text}[/code]``"
-msgstr "``[code]{texte}[/code]``"
-
 msgid "**char**"
 msgstr "**char**"
-
-msgid "``[char={codepoint}]``"
-msgstr "``[char={codepoint}]``"
 
 msgid "**p**"
 msgstr "**p**"
 
-msgid "``[p]{text}[/p]``"
-msgstr "``[p]{text}[/p]``"
-
-msgid "``[p {options}]{text}[/p]``"
-msgstr "``[p {options}]{texet}[/p]``"
-
 msgid "**br**"
 msgstr "**br**"
-
-msgid "``[br]``"
-msgstr "``[br]``"
 
 msgid "**hr**"
 msgstr "**hr**"
 
-msgid "``[hr]``"
-msgstr "``[hr]``"
-
-msgid "``[hr {options}]``"
-msgstr "``[hr {options}]``"
-
 msgid "**center**"
 msgstr "**centré**"
 
-msgid "Same as ``[p align=center]``."
-msgstr "Comme ``[p align=center]`` ."
-
-msgid "``[center]{text}[/center]``"
-msgstr "``[center]{texte}[/center]``"
+msgid "Makes ``{text}`` horizontally centered."
+msgstr "Centre le ``{texte}`` horizontalement."
 
 msgid "**left**"
 msgstr "**gauche**"
 
-msgid "Same as ``[p align=left]``."
-msgstr "Identique à ``[p align=left]``."
-
-msgid "``[left]{text}[/left]``"
-msgstr "``[left]{text}[/left]``"
+msgid "Makes ``{text}`` horizontally left-aligned."
+msgstr "Aligne le ``{texte}`` horizontalement à droite."
 
 msgid "**right**"
 msgstr "**droite**"
 
-msgid "Same as ``[p align=right]``."
-msgstr "Identique à ``[p align=right]``."
-
-msgid "``[right]{text}[/right]``"
-msgstr "``[right]{texte}[/right]``"
+msgid "Makes ``{text}`` horizontally right-aligned."
+msgstr "Aligne le ``{texte}`` horizontalement à droite."
 
 msgid "**fill**"
 msgstr "**remplir**"
 
-msgid "Same as ``[p align=fill]``."
-msgstr "Identique à ``[p align=fill]``."
-
-msgid "``[fill]{text}[/fill]``"
-msgstr "``[fill]{texte}[/fill]``"
-
 msgid "**indent**"
 msgstr "**indenter**"
 
-msgid "``[indent]{text}[/indent]``"
-msgstr "``[indent]{texte}[/indent]``"
-
 msgid "**url**"
 msgstr "**url**"
-
-msgid "``[url]{link}[/url]``"
-msgstr "``[url]{lien}[/url]``"
-
-msgid "``[url={link}]{text}[/url]``"
-msgstr "``[url={lien}]{texte}[/url]``"
-
-msgid "``[url {options}]{text}[/url]``"
-msgstr "``[url {options}]{texte}[/url]``"
 
 msgid "**hint**"
 msgstr "**hint**"
@@ -207,21 +146,6 @@ msgstr ""
 "Supporte les options de configuration, "
 "voir :ref:`doc_bbcode_in_richtextlabel_image_options`."
 
-msgid "``[img]{path}[/img]``"
-msgstr "``[img]{chemin}[/img]``"
-
-msgid "``[img={width}]{path}[/img]``"
-msgstr "``[img={largeur}]{chemin}[/img]``"
-
-msgid "``[img={width}x{height}]{path}[/img]``"
-msgstr "``[img={largeur}x{hauteur}]{chemin}[/img]``"
-
-msgid "``[img={valign}]{path}[/img]``"
-msgstr "``[img={valign}]{chemin}[/img]``"
-
-msgid "``[img {options}]{path}[/img]``"
-msgstr "``[img {options}]{chemin}[/img]``"
-
 msgid "**font**"
 msgstr "**police**"
 
@@ -232,95 +156,38 @@ msgstr ""
 "Supporte les options de configuration, "
 "voir :ref:`doc_bbcode_in_richtextlabel_font_options`."
 
-msgid "``[font={path}]{text}[/font]``"
-msgstr "``[font={chemin}]{texte}[/font]``"
-
-msgid "``[font {options}]{text}[/font]``"
-msgstr "``[font {options}]{texte}[/font]``"
-
 msgid "**font_size**"
 msgstr "**font_size**"
-
-msgid "``[font_size={size}]{text}[/font_size]``"
-msgstr "``[font_size={taille}]{texte}[/font_size]``"
 
 msgid "**dropcap**"
 msgstr "**lettrine**"
 
-msgid ""
-"``[dropcap font={font} font_size={size} color={color} outline_size={size} "
-"outline_color={color} margins={left},{top},{right},{bottom}]{text}[/"
-"dropcap]``"
-msgstr ""
-"``[dropcap font={police} font_size={taille} color={couleur} "
-"outline_size={taille} outline_color={couleur} margins={gauche},{haut},"
-"{droite},{bas}]{texte}[/dropcap]``"
-
 msgid "**opentype_features**"
 msgstr "**opentype_features**"
-
-msgid "``[opentype_features={list}]``"
-msgstr "``[opentype_features={list}]``"
 
 msgid "``{text}``"
 msgstr "``{texte}``"
 
-msgid "``[/opentype_features]``"
-msgstr "``[/opentype_features]``"
-
 msgid "**lang**"
 msgstr "**lang**"
-
-msgid "``[lang={code}]{text}[/lang]``"
-msgstr "``[lang={code}]{texte}[/lang]``"
 
 msgid "**color**"
 msgstr "**couleur**"
 
-msgid "``[color={code/name}]{text}[/color]``"
-msgstr "``[color={code/nom}]{texte}[/color]``"
-
 msgid "**bgcolor**"
 msgstr "**bgcolor**"
-
-msgid "``[bgcolor={code/name}]{text}[/bgcolor]``"
-msgstr "``[bgcolor={code/nom}]{text}[/bgcolor]``"
 
 msgid "**fgcolor**"
 msgstr "**fgcolor**"
 
-msgid "``[fgcolor={code/name}]{text}[/fgcolor]``"
-msgstr "``[fgcolor={code/nom}]{text}[/fgcolor]``"
-
 msgid "**outline_size**"
 msgstr "**outline_size**"
-
-msgid "``[outline_size={size}]``"
-msgstr "``[outline_size={size}]``"
-
-msgid "``[/outline_size]``"
-msgstr "``[/outline_size]``"
 
 msgid "**outline_color**"
 msgstr "**outline_color**"
 
-msgid "``[outline_color={code/name}]``"
-msgstr "``[outline_color={code/nom}]``"
-
-msgid "``[/outline_color]``"
-msgstr "``[/outline_color]``"
-
 msgid "**table**"
 msgstr "**table**"
-
-msgid "``[table={number}]{cells}[/table]``"
-msgstr "``[table={nombre}]{cellules}[/table]``"
-
-msgid "``[table={number},{valign}]{cells}[/table]``"
-msgstr "``[table={nombre},{valign}]{cellules}[/table]``"
-
-msgid "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
-msgstr "``[table={nombre},{valign},{ligne_alignement}]{cellules}[/table]``"
 
 msgid "**cell**"
 msgstr "**cell**"
@@ -332,41 +199,17 @@ msgstr ""
 "Supporte les options de configuration, "
 "voir :ref:`doc_bbcode_in_richtextlabel_cell_options`."
 
-msgid "``[cell]{text}[/cell]``"
-msgstr "``[cell]{text}[/cell]``"
-
-msgid "``[cell={ratio}]{text}[/cell]``"
-msgstr "``[cell={ratio}]{texte}[/cell]``"
-
-msgid "``[cell {options}]{text}[/cell]``"
-msgstr "``[cell {options}]{texte}[/cell]``"
-
 msgid "**ul**"
 msgstr "**ul**"
-
-msgid "``[ul]{items}[/ul]``"
-msgstr "``[ul]{items}[/ul]``"
-
-msgid "``[ul bullet={bullet}]{items}[/ul]``"
-msgstr "``[ul bullet={puce}]{objets}[/ul]``"
 
 msgid "**ol**"
 msgstr "**ol**"
 
-msgid "``[ol type={type}]{items}[/ol]``"
-msgstr "``[ol type={type}]{items}[/ol]``"
-
 msgid "**lb**, **rb**"
 msgstr "**lb**, **rb**"
 
-msgid "``[lb]b[rb]text[lb]/b[rb]`` will display as ``[b]text[/b]``."
-msgstr "``[lb]b[rb]texte[lb]/b[rb]`` va s'afficher en ``[b]texte[/b]``."
-
 msgid "control characters directly in the text."
 msgstr "caractères de contrôle directement dans le texte."
-
-msgid "``[shy]`` (soft hyphen)"
-msgstr "``[shy]`` (trait d'union doux)"
 
 msgid "There are no BBCode tags to control vertical centering of text yet."
 msgstr ""
@@ -415,27 +258,6 @@ msgstr "Codes de langue ISO. Voir :ref:`doc_locales`"
 msgid "**tab_stops**"
 msgstr "**tab_stops**"
 
-msgid "Handling ``[url]`` tag clicks"
-msgstr "Gestion des clics de la balise ``[url]``"
-
-msgid ""
-"By default, ``[url]`` tags do nothing when clicked. This is to allow "
-"flexible use of ``[url]`` tags rather than limiting them to opening URLs in "
-"a web browser."
-msgstr ""
-"Par défaut, les balises ``[url]`` ne font rien lorsqu'on clique dessus. Ceci "
-"afin de permettre une utilisation flexible des balises ``[url]`` plutôt que "
-"de les limiter à l'ouverture des URL dans un navigateur Web."
-
-msgid ""
-"To handle clicked ``[url]`` tags, connect the ``RichTextLabel`` "
-"node's :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` signal "
-"to a script function."
-msgstr ""
-"Pour gérer les balises ``[url]`` cliquées, connectez le "
-"signal :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` du nœud "
-"``RichTextLabel`` à une fonction de script."
-
 msgid "``Color(1, 1, 1, 1)``"
 msgstr "``Color(1, 1, 1, 1)``"
 
@@ -453,6 +275,12 @@ msgstr "**width**"
 
 msgid "``90%``"
 msgstr "``90%``"
+
+msgid "``left`` (or ``l``), ``center`` (or ``c``), ``right`` (or ``r``)"
+msgstr "``left`` (ou ``l``), ``center`` (ou ``c``), ``right`` (ou ``r``)"
+
+msgid "``center``"
+msgstr "``center``"
 
 msgid "**underline**"
 msgstr "**underline**"
@@ -477,6 +305,9 @@ msgstr "**href**"
 
 msgid "Image options"
 msgstr "Options d'image"
+
+msgid "Target width of the image in pixels."
+msgstr "Largeur cible de l'image en pixels."
 
 msgid "**region**"
 msgstr "**region**"
@@ -575,6 +406,13 @@ msgstr ""
 msgid "Named colors"
 msgstr "Couleurs nommées"
 
+msgid ""
+"`View at full size <https://raw.githubusercontent.com/godotengine/godot-docs/"
+"master/img/color_constants.png>`__"
+msgstr ""
+"`Voir en taille réelle <https://raw.githubusercontent.com/godotengine/godot-"
+"docs/master/img/color_constants.png>`__"
+
 msgid "Hexadecimal color codes"
 msgstr "Codes de couleur héxadécimaux"
 
@@ -666,6 +504,9 @@ msgid ""
 "``elapsed_time`` is the total amount of time the text effect has been "
 "running."
 msgstr "``elapsed_time`` est la durée totale d'exécution de l'effet texte."
+
+msgid "``color`` is the color of a given glyph."
+msgstr "``color`` est la couleur d'un glyphe donné."
 
 msgid "Here are some examples of custom effects:"
 msgstr "Voici quelques exemples d'effets personnalisés :"

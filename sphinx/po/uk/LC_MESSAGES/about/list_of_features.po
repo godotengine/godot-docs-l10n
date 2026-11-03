@@ -42,8 +42,8 @@ msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
-"Щоб отримати інформацію про підтримку консолей, див. веб-сайт Godot <https://"
-"godotengine.org/consoles/>`_."
+"Щоб отримати інформацію про підтримку консолей, див. `веб-сайт Godot "
+"<https://godotengine.org/consoles/>`_."
 
 msgid "**Can run both the editor and exported projects:**"
 msgstr "**Можливо запустити як редактор так і експортовані проєкти :**"
@@ -271,11 +271,25 @@ msgid "**Plugins:**"
 msgstr "**Плагіни (додатки):**"
 
 msgid ""
+"Editor plugins can be downloaded from the :ref:`Asset Store "
+"<doc_what_is_asset_store>` to extend editor functionality."
+msgstr ""
+"Плагіни для редактора можна завантажити з :ref:`Asset Store "
+"<doc_what_is_asset_store>`, щоб розширити функціонал редактора."
+
+msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
 ":ref:`Create your own plugins <doc_making_plugins>` за допомогою GDScript, "
 "щоб додати нові функції, чи прискорити свою роботу."
+
+msgid ""
+":ref:`Download projects from the Asset Store <doc_using_asset_store_editor>` "
+"in the Project Manager and import them directly."
+msgstr ""
+":ref:`Завантажте проєкти з Asset Store <doc_using_asset_store_editor>` у "
+"диспетчері проєктів та імпортуйте їх безпосередньо."
 
 msgid "Rendering"
 msgstr "Рендеринг"
@@ -334,9 +348,6 @@ msgid ""
 msgstr ""
 "Високорівневі інструменти для малювання ліній та полігонів, такі "
 "як :ref:`class_Polygon2D` та :ref:`class_Line2D`, з підтримкою текстурування."
-
-msgid "AnimatedSprite2D as a helper for creating animated sprites."
-msgstr "AnimatedSprite2D як помічник для створення анімованих спрайтів."
 
 msgid "Parallax layers."
 msgstr "Шари паралакса."
@@ -622,6 +633,9 @@ msgstr ""
 
 msgid "Detail mapping for the albedo and normal maps."
 msgstr "Детальне відображення альбедо і карт нормалей."
+
+msgid "Subsurface scattering and transmittance."
+msgstr "Розсіювання та пропускання в підповерхневому шарі."
 
 msgid ""
 "Screen-space refraction with support for material roughness (resulting in "
@@ -1461,12 +1475,6 @@ msgid "Packaged in a separate binary to keep file sizes and dependencies down."
 msgstr ""
 "Упаковано в окремий бінарний файл, щоб зменшити розміри файлів та залежності."
 
-msgid "Supports .NET 8 and higher."
-msgstr "Підтримує .NET 8 і вище."
-
-msgid "Full support for the C# 12.0 syntax and features."
-msgstr "Повна підтримка синтаксису та функцій C# 12.0."
-
 msgid ""
 "Supports Windows, Linux, and macOS. Since Godot 4.2, experimental support "
 "for Android and iOS is also available."
@@ -1931,6 +1939,9 @@ msgid ""
 msgstr ""
 "Запит уваги (на більшості платформ призведе до мерехтіння шкали заголовку)."
 
+msgid "Fullscreen mode (borderless and exclusive)."
+msgstr "Повноекранний режим (без рамок та ексклюзивний)."
+
 msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "Вікна без меж (повноекранні або неповноекранні)."
 
@@ -2024,6 +2035,53 @@ msgstr "Підтримка режиму «картинка в картинці»
 
 msgid "XR support (AR and VR)"
 msgstr "Підтримка XR (AR та VR)"
+
+msgid ""
+"Support for desktop headsets using :ref:`OpenXR <doc_setting_up_xr>`. If a "
+"headset works with SteamVR, it should work with Godot."
+msgstr ""
+"Підтримка настільних шоломів віртуальної реальності за "
+"допомогою :ref:`OpenXR <doc_setting_up_xr>`. Якщо шолом працює з SteamVR, "
+"він повинен працювати і з Godot."
+
+msgid ""
+"Godot also supports Quest over Link, AndroidXR Direct Preview, and Pico "
+"Connect."
+msgstr ""
+"Godot також підтримує Quest через Link, AndroidXR Direct Preview та Pico "
+"Connect."
+
+msgid ""
+"Support for :ref:`Android-based headsets <doc_deploying_to_android>` using "
+"OpenXR. Including support for the following standalone headsets:"
+msgstr ""
+"Підтримка :ref:`гарнітур на базі Android <doc_deploying_to_android>` з "
+"використанням OpenXR. У тому числі підтримка таких автономних гарнітур:"
+
+msgid "Meta Quest 1/2/3 and Pro"
+msgstr "Meta Quest 1/2/3 і Pro"
+
+msgid "Pico 4/4 Ultra"
+msgstr "Pico 4/4 Ultra"
+
+msgid "Magic Leap 2"
+msgstr "Magic Leap 2"
+
+msgid "Lynx R1"
+msgstr "Lynx R1"
+
+msgid "HTC Vive Focus Vision"
+msgstr "HTC Vive Focus Vision"
+
+msgid "Android XR headsets"
+msgstr "Шоломи віртуальної реальності на базі Android XR"
+
+msgid "Support for the Linux-based standalone Steam Frame using OpenXR."
+msgstr ""
+"Підтримка автономного Steam Frame на базі Linux із використанням OpenXR."
+
+msgid "Limited support for visionOS Apple headsets."
+msgstr "Обмежена підтримка гарнітур Apple на базі visionOS."
 
 msgid ""
 "Currently only exporting an application for use on a flat plane within the "
@@ -2372,15 +2430,6 @@ msgstr ""
 
 msgid "Licensed under the permissive MIT license."
 msgstr "Ліцензовано відповідно до дозволу MIT."
-
-msgid ""
-"Open development process with `contributions welcome <https://"
-"contributing.godotengine.org/en/latest/organization/"
-"how_to_contribute.html>`__."
-msgstr ""
-"Відкритий процес розробки з `вітанням внесків <https://"
-"contributing.godotengine.org/en/latest/organization/"
-"how_to_contribute.html>`__."
 
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"

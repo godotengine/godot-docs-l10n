@@ -467,6 +467,10 @@ msgid "Global arrays"
 msgstr "全局数组"
 
 msgid ""
+"You can declare arrays in global scope as either ``const`` or ``uniform``:"
+msgstr "您可以在全局作用域中将数组声明为 ``const`` 或 ``uniform`` ："
+
+msgid ""
 "Global arrays use the same syntax as local arrays, except with a ``const`` "
 "or ``uniform`` added to their declaration. Note that uniform arrays can't "
 "have a default value."
@@ -487,6 +491,13 @@ msgstr ""
 "在变量声明前使用 ``const`` 关键字，可以使该变量不可变，这意味着它不能被修改。"
 "除采样器外的所有基本类型都可以被声明为常量。访问和使用常量值的速度比使用 "
 "uniform 的速度略快。常量必须在其声明时被初始化。"
+
+msgid ""
+"Constants cannot be modified and additionally cannot have hints, but "
+"multiple of them (if they have the same type) can be declared in a single "
+"expression."
+msgstr ""
+"常量不可被修改，且不能包含注解；但多个相同类型的常量可声明于同一个表达式中。"
 
 msgid "Similar to variables, arrays can also be declared with ``const``."
 msgstr "与变量类似，数组也可以用 ``const`` 来声明。"
@@ -533,6 +544,11 @@ msgstr "声明后，你可以像这样实例化和初始化它们："
 
 msgid "Or use struct constructor for same purpose:"
 msgstr "或者使用结构体的构造函数达到同样的效果："
+
+msgid ""
+"Structs may contain other struct or array, you can also instantiate them as "
+"global constant:"
+msgstr "结构体可包含其他结构体或数组；您也可以将它们作为全局常量进行实例化："
 
 msgid "You can also pass them to functions:"
 msgstr "也可以把它们传递给函数："

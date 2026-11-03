@@ -268,11 +268,25 @@ msgid "**Plugins:**"
 msgstr "**Plugins:**"
 
 msgid ""
+"Editor plugins can be downloaded from the :ref:`Asset Store "
+"<doc_what_is_asset_store>` to extend editor functionality."
+msgstr ""
+"Plugins do editor podem ser baixados da :ref:`Asset Store "
+"<doc_what_is_asset_store>` para estender a funcionalidade do editor."
+
+msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
 ":ref:`Crie seus próprios plugins <doc_making_plugins>` usando GDScript para "
 "adicionar novas funcionalidades ou agilizar seu trabalho."
+
+msgid ""
+":ref:`Download projects from the Asset Store <doc_using_asset_store_editor>` "
+"in the Project Manager and import them directly."
+msgstr ""
+":ref:`Baixe projetos da Asset Store <doc_using_asset_store_editor>` no "
+"Gerenciador de Projetos e importe-os diretamente."
 
 msgid "Rendering"
 msgstr "Renderização"
@@ -331,9 +345,6 @@ msgstr ""
 "Ferramentas de alto nível para desenhar linhas e polígonos "
 "como :ref:`class_Polygon2D` e :ref:`class_Line2D`, com suporte para "
 "texturização."
-
-msgid "AnimatedSprite2D as a helper for creating animated sprites."
-msgstr "AnimatedSprite2D para criação de sprites animados."
 
 msgid "Parallax layers."
 msgstr "Camadas de parallax."
@@ -613,6 +624,9 @@ msgstr ""
 
 msgid "Detail mapping for the albedo and normal maps."
 msgstr "Mapas de detalhe para os mapas albedo e normal."
+
+msgid "Subsurface scattering and transmittance."
+msgstr "Espalhamento subsuperficial e transmitância."
 
 msgid ""
 "Screen-space refraction with support for material roughness (resulting in "
@@ -1439,12 +1453,6 @@ msgstr ""
 "Distribuído em um binário separado para diminuir os tamanhos de arquivo e "
 "dependências."
 
-msgid "Supports .NET 8 and higher."
-msgstr "Suporta .NET 8 e superior."
-
-msgid "Full support for the C# 12.0 syntax and features."
-msgstr "Suporte completo para a sintaxe e funcionalidades do C# 12.0."
-
 msgid ""
 "Supports Windows, Linux, and macOS. Since Godot 4.2, experimental support "
 "for Android and iOS is also available."
@@ -1906,6 +1914,9 @@ msgstr ""
 "Solicitar atenção (fará com que a barra de título pisque na maioria das "
 "plataformas)."
 
+msgid "Fullscreen mode (borderless and exclusive)."
+msgstr "Modo tela cheia (sem bordas e exclusivo)."
+
 msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "Janela sem bordas (tela cheia ou modo janela)."
 
@@ -1998,6 +2009,53 @@ msgstr "Suporte para o modo picture-in-picture no Android."
 
 msgid "XR support (AR and VR)"
 msgstr "Suporte a XR (AR e VR)"
+
+msgid ""
+"Support for desktop headsets using :ref:`OpenXR <doc_setting_up_xr>`. If a "
+"headset works with SteamVR, it should work with Godot."
+msgstr ""
+"Suporte para headsets de desktop usando :ref:`OpenXR <doc_setting_up_xr>`. "
+"Se um headset funciona com o SteamVR, ele deve funcionar com a Godot."
+
+msgid ""
+"Godot also supports Quest over Link, AndroidXR Direct Preview, and Pico "
+"Connect."
+msgstr ""
+"A Godot também suporta o Quest via Link, AndroidXR Direct Preview e Pico "
+"Connect."
+
+msgid ""
+"Support for :ref:`Android-based headsets <doc_deploying_to_android>` using "
+"OpenXR. Including support for the following standalone headsets:"
+msgstr ""
+"Suporte para :ref:`óculos baseados em Android <doc_deploying_to_android>` "
+"usando OpenXR. Incluindo suporte para os seguintes óculos autônomos:"
+
+msgid "Meta Quest 1/2/3 and Pro"
+msgstr "Meta Quest 1/2/3 e Pro"
+
+msgid "Pico 4/4 Ultra"
+msgstr "Pico 4/4 Ultra"
+
+msgid "Magic Leap 2"
+msgstr "Magic Leap 2"
+
+msgid "Lynx R1"
+msgstr "Lynx R1"
+
+msgid "HTC Vive Focus Vision"
+msgstr "HTC Vive Focus Vision"
+
+msgid "Android XR headsets"
+msgstr "Óculos Android XR"
+
+msgid "Support for the Linux-based standalone Steam Frame using OpenXR."
+msgstr ""
+"Suporte para o dispositivo autônomo Steam Frame baseado em Linux usando "
+"OpenXR."
+
+msgid "Limited support for visionOS Apple headsets."
+msgstr "Suporte limitado para óculos Apple visionOS."
 
 msgid ""
 "Currently only exporting an application for use on a flat plane within the "
@@ -2347,15 +2405,6 @@ msgstr ""
 
 msgid "Licensed under the permissive MIT license."
 msgstr "Licenciado sob a licença permissiva MIT."
-
-msgid ""
-"Open development process with `contributions welcome <https://"
-"contributing.godotengine.org/en/latest/organization/"
-"how_to_contribute.html>`__."
-msgstr ""
-"Processo de desenvolvimento aberto com `contribuições bem vindas <https://"
-"contributing.godotengine.org/en/latest/organization/"
-"how_to_contribute.html>`__."
 
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"

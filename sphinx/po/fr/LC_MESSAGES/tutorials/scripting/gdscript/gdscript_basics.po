@@ -255,6 +255,9 @@ msgstr "Définit un signal. Voir `Signals`_."
 msgid "func"
 msgstr "func"
 
+msgid "Defines a function. See `Functions`_."
+msgstr "Définit une fonction. Voir `Fonctions`_."
+
 msgid "static"
 msgstr "static"
 
@@ -349,6 +352,12 @@ msgstr "INF"
 
 msgid "NAN"
 msgstr "NAN"
+
+msgid ""
+"NaN (Not a Number) constant. Used as an impossible result from calculations."
+msgstr ""
+"Constante NaN (pas un nombre, Not a Number en anglais). Utilisée comme "
+"résultat impossible de lors de calculs."
 
 msgid "Operators"
 msgstr "Opérateurs"
@@ -1241,18 +1250,6 @@ msgstr ""
 msgid ":ref:`float <class_float>`"
 msgstr ":ref:`float <class_float>`"
 
-msgid ""
-"Stores real numbers, including decimals, using floating-point values. It is "
-"stored as a 64-bit value, equivalent to ``double`` in C++. Note: Currently, "
-"data structures such as ``Vector2``, ``Vector3``, and ``PackedFloat32Array`` "
-"store 32-bit single-precision ``float`` values."
-msgstr ""
-"Contient un nombre réel (avec décimales), en tant que valeur à virgule "
-"flottante. Celui-ci est stocké comme valeur 64 bits, équivalent à ``double`` "
-"en C++. Note : Actuellement, les structures de données comme ``Vector2``, "
-"``Vector3`` et ``PackedFloat32Array`` stockent des valeurs 32 bits à "
-"virgules flottantes de précision unique (``float``)."
-
 msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
@@ -1330,13 +1327,6 @@ msgstr ""
 
 msgid ":ref:`Vector3i <class_Vector3i>`"
 msgstr ":ref:`Vector3i <class_Vector3i>`"
-
-msgid ""
-"Same as Vector3 but the components are integers. Can be use for indexing "
-"items in a 3D grid."
-msgstr ""
-"Identique à Vector3 mais les composants sont des entiers. Peut être utilisé "
-"pour indexer des éléments dans une grille 3D."
 
 msgid ":ref:`Transform2D <class_Transform2D>`"
 msgstr ":ref:`Transform2D <class_Transform2D>`"
@@ -2137,13 +2127,6 @@ msgstr ""
 "<class_Callable>` est créé et assigné directement à une variable. Cela peut "
 "être utile pour créer des objets Callable à transmettre sans polluer la "
 "portée de la classe."
-
-msgid ""
-"To call the created lambda you can use the :ref:`call() "
-"<class_Callable_method_call>` method:"
-msgstr ""
-"Pour appeler la fonction lambda créée, vous pouvez utiliser la "
-"méthode :ref:`call() <class_Callable_method_call>` :"
 
 msgid ""
 "Lambda functions can be named for debugging purposes (the name is displayed "

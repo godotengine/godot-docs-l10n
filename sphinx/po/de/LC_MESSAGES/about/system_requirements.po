@@ -23,7 +23,7 @@ msgstr ""
 "Diese Seite enthält die Systemanforderungen für den Editor und die "
 "exportierten Projekte. Diese Angaben dienen nur zu Informationszwecken, "
 "können aber herangezogen werden, wenn Sie ein System für die Verwendung von "
-"Godot aufbauen oder aufrüsten wollen."
+"Godot aufbauen oder aufrüsten möchten."
 
 msgid "Godot editor"
 msgstr "Godot-Editor"
@@ -37,7 +37,7 @@ msgstr ""
 "sind:"
 
 msgid "Desktop or laptop PC - Minimum"
-msgstr "Desktop- oder Laptop-PC - Minimum"
+msgstr "Desktop- oder Laptop-PC – Minimum"
 
 msgid "**CPU**"
 msgstr "**CPU**"
@@ -54,6 +54,9 @@ msgstr "*Beispiel: Intel Core 2 Duo E8200, AMD FX-4100, Snapdragon X Elite*"
 
 msgid "**macOS:** x86_64 or ARM CPU (Apple Silicon)"
 msgstr "**macOS:** x86_64 oder ARM CPU (Apple Silicon)"
+
+msgid "*Example: Intel 7th Gen (Kaby Lake) CPU, Apple M1*"
+msgstr "*Beispiel: Intel 7th Gen (Kaby Lake) CPU, Apple M1*"
 
 msgid ""
 "**Linux:** x86_32 CPU with SSE2 support, x86_64 CPU with SSE4.2 support, "
@@ -108,6 +111,16 @@ msgstr "**Web-Editor:** 8 GB"
 msgid "**Storage**"
 msgstr "**Festplattenspeicher**"
 
+msgid ""
+"200 MB (used for the executable, project files, and cache). Exporting "
+"projects requires downloading export templates separately (up to 1.5 GB "
+"after installation, depending on the target platforms chosen)."
+msgstr ""
+"200 MB (für die ausführbare Datei, die Projektdateien und den Cache). Zum "
+"Exportieren von Projekten müssen Exportvorlagen separat heruntergeladen "
+"werden (bis zu 1,5 GB nach der Installation, abhängig von den ausgewählten "
+"Zielplattformen)."
+
 msgid "**Operating system**"
 msgstr "**Betriebssystem**"
 
@@ -145,7 +158,7 @@ msgstr ""
 "finden Sie auf der Seite :ref:`doc_compiling_for_linuxbsd`."
 
 msgid "Mobile device (smartphone/tablet) - Minimum"
-msgstr "Mobiles Gerät (Smartphone/Tablet) - Minimum"
+msgstr "Mobiles Gerät (Smartphone/Tablet) – Minimum"
 
 msgid "**Android:** SoC with any 32-bit or 64-bit ARM or x86 CPU"
 msgstr "**Android:** SoC mit beliebiger 32-Bit oder 64-Bit ARM oder x86 CPU"
@@ -181,6 +194,13 @@ msgid "**Web editor:** 6 GB"
 msgstr "**Web-Editor:** 6 GB"
 
 msgid ""
+"**Native editor:** Android 7.0 (Compatibility) or Android 9.0 (Forward+/"
+"Mobile)"
+msgstr ""
+"**Nativer Editor:** Android 7.0 (Kompatibilität) oder Android 9.0 (Forward+/"
+"Mobile)"
+
+msgid ""
 "These are the **recommended** specifications to get a smooth experience with "
 "the Godot editor on a simple 2D or 3D project:"
 msgstr ""
@@ -188,7 +208,7 @@ msgstr ""
 "einfachen 2D- oder 3D-Projekt reibungslos nutzen zu können:"
 
 msgid "Desktop or laptop PC - Recommended"
-msgstr "Desktop- oder Laptop-PC - Empfohlen"
+msgstr "Desktop- oder Laptop-PC – Empfohlen"
 
 msgid ""
 "**Windows:** x86_64 CPU with SSE4.2 support, with 4 physical cores or more, "
@@ -245,12 +265,19 @@ msgstr "**Nativer Editor:** 8 GB"
 msgid "**Web editor:** 12 GB"
 msgstr "**Web-Editor:** 12 GB"
 
+msgid ""
+"2 GB (used for the executable, project files, all export templates, and "
+"cache)"
+msgstr ""
+"2 GB (für die ausführbare Datei, Projektdateien, alle Exportvorlagen und den "
+"Cache)"
+
 msgid "**Web editor:** Latest version of Firefox, Chrome, Edge, Safari, Opera"
 msgstr ""
 "**Web-Editor:** Neueste Version von Firefox, Chrome, Edge, Safari, Opera"
 
 msgid "Mobile device (smartphone/tablet) - Recommended"
-msgstr "Mobiles Gerät (Smartphone/Tablet) - Empfohlen"
+msgstr "Mobiles Gerät (Smartphone/Tablet) – Empfohlen"
 
 msgid ""
 "**Android:** SoC with 64-bit ARM or x86 CPU, with 3 \"performance\" cores or "
@@ -360,11 +387,11 @@ msgstr "**Für native Exporte:** 2 GB"
 msgid "**For web exports:** 4 GB"
 msgstr "**Für Web-Exporte:** 4 GB"
 
-msgid "**iOS:** SoC with any 64-bit ARM CPU"
-msgstr "**iOS:** SoC mit beliebiger 64-Bit-ARM-CPU"
+msgid "150 MB (used for the executable, project files, and cache)"
+msgstr "150 MB (für die ausführbare Datei, die Projektdateien und den Cache)"
 
-msgid "*Example: Apple A7 (iPhone 5S)*"
-msgstr "*Beispiel: Apple A7 (iPhone 5S)*"
+msgid "**iOS:** SoC with 64-bit ARM CPU"
+msgstr "**iOS:** SoC mit 64-bit ARM CPU"
 
 msgid ""
 "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.0 support, or "
@@ -390,14 +417,20 @@ msgstr ""
 "**Mobile-Renderer:** SoC mit GPU mit voller Vulkan 1.0-Unterstützung, oder "
 "Metal 3-Unterstützung (iOS/iPadOS)"
 
-msgid "*Example: Qualcomm Adreno 306, Mali-T628 MP6, Apple A7 (iPhone 5S)*"
-msgstr "*Beispiel: Qualcomm Adreno 306, Mali-T628 MP6, Apple A7 (iPhone 5S)*"
-
 msgid "**For native exports:** 1 GB"
 msgstr "**Für native Exporte:** 1 GB"
 
 msgid "**For web exports:** 2 GB"
 msgstr "**Für Web-Exporte:** 2 GB"
+
+msgid ""
+"**For native exports:** Android 7.0 (Compatibility), Android 9.0 (Forward+/"
+"Mobile), iOS 15.0 (Forward+/Mobile with Vulkan), iOS 16.0 (Forward+/Mobile "
+"with Metal)"
+msgstr ""
+"**Für native Exporte:** Android 7.0 (Kompatibilität), Android 9.0 (Forward+/"
+"Mobile), iOS 15.0 (Forward+/Mobile mit Vulkan), iOS 16.0 (Forward+/Mobile "
+"mit Metal)"
 
 msgid ""
 "These are the **recommended** specifications to get a smooth experience with "
@@ -441,9 +474,6 @@ msgid ""
 msgstr ""
 "**Für Web-Exporte:** Neueste Version von Firefox, Chrome, Edge, Safari, Opera"
 
-msgid "**iOS:** SoC with 64-bit ARM CPU"
-msgstr "**iOS:** SoC mit 64-bit ARM CPU"
-
 msgid "*Example: Apple A14 (iPhone 12)*"
 msgstr "*Beispiel: Apple A14 (iPhone 12)*"
 
@@ -463,6 +493,9 @@ msgid ""
 msgstr ""
 "**Mobile-Renderer:** SoC mit GPU mit voller Vulkan 1.2-Unterstützung, oder "
 "Metal 3-Unterstützung (iOS/iPadOS)"
+
+msgid "**For native exports:** Android 9.0, iOS 16.0"
+msgstr "**Für native Exporte:** Android 9.0, iOS 16.0"
 
 msgid ""
 "**For web exports:** Latest version of Firefox, Chrome, Edge, Safari, Opera, "

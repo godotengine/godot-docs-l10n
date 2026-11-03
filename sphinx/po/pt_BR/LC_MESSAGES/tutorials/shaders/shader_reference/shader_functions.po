@@ -11,6 +11,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Built-in shader functions"
+msgstr "Funções embutidas de shader"
+
+msgid ""
+"Godot supports a large number of built-in shader functions, conforming "
+"roughly to the GLSL ES 3.0 specification."
+msgstr ""
+"O Godot suporta um grande número de funções embutidas de shader, em "
+"conformidade aproximada com a especificação GLSL ES 3.0."
+
 msgid ""
 "The following type aliases only used in documentation to reduce repetitive "
 "function declarations. They can each refer to any of several actual types."
@@ -941,6 +951,9 @@ msgstr ""
 msgid "Raises ``x`` to the power of ``y``."
 msgstr "Eleva ``x`` à potência de ``y``."
 
+msgid "The result is undefined if ``x < 0``, or if ``x == 0`` and ``y <= 0``."
+msgstr "O resultado é indefinido se ``x < 0``, ou se ``x == 0`` e ``y <= 0``."
+
 msgid "The value to be raised to the power ``y``."
 msgstr "O valor a ser elevado à potência ``y``."
 
@@ -955,6 +968,11 @@ msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml"
 
 msgid "|vec_type| **exp**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
 msgstr "|vec_type| **exp**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
+
+msgid ""
+"Raises ``e`` to the power of ``x``. Also known as the natural exponentiation."
+msgstr ""
+"Eleva ``e`` à potência de ``x``. Também conhecido como exponenciação natural."
 
 msgid "Equivalent to ``pow(e, x)``."
 msgstr "Equivalente a ``pow(e, x)``."
@@ -979,6 +997,9 @@ msgstr "Equivalente a ``pow(2.0, x)``."
 
 msgid "The value of the power to which ``2`` will be raised."
 msgstr "O valor da potência à qual ``2`` será elevado."
+
+msgid "``2`` raised to the power of ``x``."
+msgstr "``2`` elevado à potência de ``x``."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
@@ -1131,6 +1152,15 @@ msgstr "|vec_type| **round**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
 
 msgid "Rounds ``x`` to the nearest integer."
 msgstr "Arredonda ``x`` para o número inteiro mais próximo."
+
+msgid ""
+"Rounding of values with a fractional part of ``0.5`` is implementation-"
+"dependent. This includes the possibility that ``round(x)`` returns the same "
+"value as ``roundEven(x)`` for all values of ``x``."
+msgstr ""
+"O arredondamento de valores com parte fracionária igual a ``0.5`` depende da "
+"implementação. Isso inclui a possibilidade de ``round(x)`` retornar o mesmo "
+"valor que ``roundEven(x)`` para todos os valores de ``x``."
 
 msgid "The value to round."
 msgstr "O valor para arredondar."
@@ -1530,6 +1560,17 @@ msgstr ""
 "forem selecionados podem ser valores de ponto flutuante inválidos e não "
 "terão efeito nos resultados."
 
+msgid ""
+"If ``a``, ``b``, and ``c`` are vector types the operation is "
+"performed :ref:`component-wise <shading_componentwise>`. For example, "
+"``mix(vec2(42, 314), vec2(9.8, 6e23), bvec2(true, false)))`` will return "
+"``vec2(9.8, 314)``."
+msgstr ""
+"Se ``a``, ``b`` e ``c`` forem tipos vetoriais, a operação é "
+"realizada :ref:`componente a componente <shading_componentwise>`. Por "
+"exemplo, ``mix(vec2(42, 314), vec2(9.8, 6e23), bvec2(true, false)))`` "
+"retornará ``vec2(9.8, 314)``."
+
 msgid "Value returned when ``c`` is false."
 msgstr "Valor retornado quando ``c`` é falso."
 
@@ -1571,6 +1612,15 @@ msgstr ""
 "A precisão de ``fma()`` pode diferir da precisão da expressão ``a * b + c``."
 
 msgid ""
+"``fma()`` will be computed with the same precision as any other ``fma()`` "
+"consumed by a precise variable, giving invariant results for the same input "
+"values of ``a``, ``b``, and ``c``."
+msgstr ""
+"``fma()`` será calculado com a mesma precisão de qualquer outro ``fma()`` "
+"consumido por uma variável precisa, fornecendo resultados invariantes para "
+"os mesmos valores de entrada de ``a``, ``b`` e ``c``."
+
+msgid ""
 "Otherwise, in the absence of precise consumption, there are no special "
 "constraints on the number of operations or difference in precision between "
 "``fma()`` and the expression ``a * b + c``."
@@ -1605,6 +1655,18 @@ msgid ""
 "|vec_type| **step**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
 msgstr ""
 "|vec_type| **step**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
+
+msgid "Generates a step function by comparing ``b`` to ``a``."
+msgstr "Gera uma função degrau comparando ``b`` com ``a``."
+
+msgid ""
+"Equivalent to ``if (b < a) { return 0.0; } else { return 1.0; }``. For "
+"element ``i`` of the return value, ``0.0`` is returned if ``b[i] < a[i]``, "
+"and ``1.0`` is returned otherwise."
+msgstr ""
+"Equivalente a ``if (b < a) { return 0.0; } else { return 1.0; }``. Para o "
+"elemento ``i`` do valor de retorno, ``0.0`` é retornado se ``b[i] < a[i]``, "
+"e ``1.0`` é retornado caso contrário."
 
 msgid "The location of the edge of the step function."
 msgstr "A localização da borda da função step."
@@ -1665,6 +1727,18 @@ msgid ""
 "|vec_bool_type| **isnan**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
 msgstr ""
 "|vec_bool_type| **isnan**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
+
+msgid ""
+"For each element ``i`` of the result, returns ``true`` if ``x[i]`` is a "
+"positive or negative floating-point ``NaN`` (Not a Number) and ``false`` "
+"otherwise."
+msgstr ""
+"Para cada elemento ``i`` do resultado, retorna ``true`` se ``x[i]`` for um "
+"ponto flutuante positivo ou negativo ``NaN`` (Not a Number) e ``false`` caso "
+"contrário."
+
+msgid "The value to test for ``NaN``."
+msgstr "O valor a testar para ``NaN``."
 
 msgid "``true`` or ``false``."
 msgstr "``true`` ou ``false``."
@@ -1843,6 +1917,9 @@ msgstr ""
 ":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
 "I, |vec_type| Nref)"
 
+msgid "If ``dot(Nref, I) < 0``, returns ``N``, otherwise ``-N``."
+msgstr "Se ``dot(Nref, I) < 0``, retorna ``N``, caso contrário ``-N``."
+
 msgid "|mat_type|"
 msgstr "|mat_type|"
 
@@ -1890,6 +1967,13 @@ msgstr "Descrições de funções geométricas"
 msgid "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
 msgstr "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
 
+msgid ""
+"Returns the length of the vector, i.e., ``sqrt(x[0] * x[0] + x[1] * x[1] "
+"+ ... + x[n] * x[n])``"
+msgstr ""
+"Retorna o comprimento (magnitude) do vetor, ou seja, ``sqrt(x[0] * x[0] + "
+"x[1] * x[1] + ... + x[n] * x[n])``"
+
 msgid "The vector"
 msgstr "O vetor"
 
@@ -1905,6 +1989,13 @@ msgid ""
 msgstr ""
 "float **distance**\\ (\\ |vec_type| a, |vec_type| "
 "b) :ref:`🔗<shader_func_distance>`"
+
+msgid ""
+"Returns the distance between the two points ``a`` and ``b``, i.e., "
+"``length(b - a);``"
+msgstr ""
+"Retorna a distância entre os dois pontos ``a`` e ``b``, ou seja, ``length(b "
+"- a);``"
 
 msgid "The first point."
 msgstr "O primeiro ponto."
@@ -1925,6 +2016,13 @@ msgid ""
 msgstr ""
 "float **dot**\\ (\\ |vec_type| a, |vec_type| b) :ref:`🔗<shader_func_dot>`"
 
+msgid ""
+"Returns the dot product of two vectors, ``a`` and ``b``, i.e., ``a.x * b.x + "
+"a.y * b.y + ...``"
+msgstr ""
+"Retorna o produto escalar (dot product) de dois vetores, ``a`` e ``b``, ou "
+"seja, ``a.x * b.x + a.y * b.y + ...``"
+
 msgid "The first vector."
 msgstr "O primeiro vetor."
 
@@ -1939,6 +2037,9 @@ msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
 
 msgid "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
 msgstr "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
+
+msgid "Returns the cross product of two vectors, i.e.:"
+msgstr "Retorna o produto vetorial (cross product) de dois vetores, ou seja:"
 
 msgid "The cross product of ``a`` and ``b``."
 msgstr "O produto vetorial de ``a`` e ``b``."
@@ -2229,10 +2330,16 @@ msgid ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 
+msgid "Bool vector > comparison on int/uint/float vectors."
+msgstr "Comparação > de vetor booleano em vetores de int/uint/float."
+
 msgid ""
 ":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Bool vector < comparison on int/uint/float vectors."
+msgstr "Comparação < de vetor booleano em vetores de int/uint/float."
 
 msgid ""
 ":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
@@ -2241,12 +2348,18 @@ msgstr ""
 ":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
 "vec_type| y)"
 
+msgid "Bool vector <= comparison on int/uint/float vectors."
+msgstr "Comparação <= de vetor booleano em vetores de int/uint/float."
+
 msgid ""
 ":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
 "vec_type| y)"
 msgstr ""
 ":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
 "vec_type| y)"
+
+msgid "Bool vector >= comparison on int/uint/float vectors."
+msgstr "Comparação >= de vetor booleano em vetores de int/uint/float."
 
 msgid ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
@@ -2254,6 +2367,9 @@ msgstr ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgid ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ""
 ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Bool vector != comparison on int/uint/float vectors."
+msgstr "Comparação != de vetor booleano em vetores de int/uint/float."
 
 msgid "bool"
 msgstr "bool"
@@ -2453,6 +2569,11 @@ msgstr "Funcionalmente equivalente a:"
 msgid "The vector to be tested for truth."
 msgstr "O vetor a ser testado quanto à veracidade."
 
+msgid "``true`` if any element of ``x`` is ``true`` and ``false`` otherwise."
+msgstr ""
+"``true`` se qualquer elemento de ``x`` for ``true`` e ``false`` caso "
+"contrário."
+
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
 
@@ -2479,8 +2600,15 @@ msgid ""
 msgstr ""
 "|vec_bool_type| **not**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_not>`"
 
+msgid "Logically inverts a boolean vector."
+msgstr "Inverte logicamente um vetor booleano."
+
 msgid "The vector to be inverted."
 msgstr "O vetor a ser invertido."
+
+msgid "A boolean vector in which each element ``i`` is computed as ``!x[i]``."
+msgstr ""
+"Um vetor booleano no qual cada elemento ``i`` é calculado como ``!x[i]``."
 
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
@@ -2523,6 +2651,9 @@ msgid ""
 msgstr ""
 ":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
 
+msgid "Gets the size of a texture."
+msgstr "Obtém o tamanho de uma textura."
+
 msgid ""
 "For performance reasons, this function should be avoided as it always "
 "performs a full texture read. When possible, you should pass the texture "
@@ -2563,6 +2694,11 @@ msgstr ""
 ":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ samplerCube s, "
 "vec3 p)"
 
+msgid ""
+"Computes the level of detail that would be used to sample from a texture."
+msgstr ""
+"Calcula o nível de detalhe que seria usado para amostrar de uma textura."
+
 msgid "int"
 msgstr "int"
 
@@ -2593,6 +2729,9 @@ msgid ""
 msgstr ""
 ":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ samplerCube "
 "s)"
+
+msgid "Gets the number of accessible mipmap levels of a texture."
+msgstr "Obtém o número de níveis de mipmap acessíveis de uma textura."
 
 msgid "|gvec4_type|"
 msgstr "|gvec4_type|"
@@ -2789,6 +2928,11 @@ msgid ""
 msgstr ""
 ":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler3D| s, "
 "vec4 p, vec3 dPdx, vec3 dPdy)"
+
+msgid ""
+"Performs a texture read with projection/LOD and with explicit gradients."
+msgstr ""
+"Realiza uma leitura de textura com projeção/LOD e com gradientes explícitos."
 
 msgid ""
 ":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2D| s, ivec2 p, int "
@@ -3226,6 +3370,22 @@ msgstr ""
 "|gvec4_type| **textureProj**\\ (\\ |gsampler3D| s, vec4 p [, float "
 "bias] ) :ref:`🔗<shader_func_textureProj>`"
 
+msgid "Performs a texture lookup with projection."
+msgstr "Realiza uma busca de textura (texture lookup) com projeção."
+
+msgid ""
+"The texture coordinates consumed from ``p``, not including the last "
+"component of ``p``, are divided by the last component of ``p``. The "
+"resulting 3rd component of ``p`` in the shadow forms is used as Dref. After "
+"these values are computed, the texture lookup proceeds as "
+"in :ref:`texture<shader_func_texture>`."
+msgstr ""
+"As coordenadas de textura consumidas de ``p``, não incluindo o último "
+"componente de ``p``, são divididas pelo último componente de ``p``. O "
+"terceiro componente resultante de ``p`` nas formas de sombra é usado como "
+"Dref. Após o cálculo desses valores, a busca de textura prossegue como "
+"em :ref:`texture<shader_func_texture>`."
+
 msgid "Optional bias to be applied during level-of-detail computation."
 msgstr ""
 "Viés (bias) opcional a ser aplicado durante o cálculo do nível de detalhe."
@@ -3316,6 +3476,22 @@ msgstr ""
 "Realiza uma busca de textura com projeção a partir de um nível de detalhe "
 "explicitamente especificado."
 
+msgid ""
+"The texture coordinates consumed from ``p``, not including the last "
+"component of ``p``, are divided by the last component of ``p``. The "
+"resulting 3rd component of ``p`` in the shadow forms is used as Dref. After "
+"these values are computed, the texture lookup proceeds as "
+"in :ref:`textureLod<shader_func_textureLod>`, with ``lod`` used to specify "
+"the level-of-detail from which the texture will be sampled."
+msgstr ""
+"As coordenadas de textura consumidas de ``p``, não incluindo o último "
+"componente de ``p``, são divididas pelo último componente de ``p``. O "
+"terceiro componente resultante de ``p`` nas formas de sombra é usado como "
+"Dref. Após o cálculo desses valores, a busca de textura prossegue como "
+"em :ref:`textureLod<shader_func_textureLod>`, com ``lod`` sendo usado para "
+"especificar o nível de detalhe (level-of-detail) a partir do qual a textura "
+"será amostrada."
+
 msgid "The explicit level-of-detail from which to fetch texels."
 msgstr "O nível de detalhe explícito do qual buscar os texels."
 
@@ -3364,6 +3540,15 @@ msgstr ""
 "vec4 **textureGrad**\\ (\\ samplerCubeArray s, vec3 p, vec3 dPdx, vec3 "
 "dPdy) :ref:`🔗<shader_func_textureGrad>`"
 
+msgid ""
+"Performs a texture lookup at coordinate ``p`` from the texture bound to "
+"sampler with explicit texture coordinate gradients as specified in ``dPdx`` "
+"and ``dPdy``. Set:"
+msgstr ""
+"Realiza uma busca de textura na coordenada ``p`` a partir da textura "
+"vinculada ao sampler com gradientes de coordenadas de textura explícitos "
+"conforme especificado em ``dPdx`` e ``dPdy``. Defina:"
+
 msgid "``δs/δx=δp/δx`` for a 1D texture, ``δp.s/δx`` otherwise"
 msgstr "``δs/δx=δp/δx`` para uma textura 1D, ``δp.s/δx`` caso contrário"
 
@@ -3378,6 +3563,9 @@ msgstr "``δt/δy=0.0`` para uma textura 1D, ``δp.t/δy`` caso contrário"
 
 msgid "``δr/δx=0.0`` for a 1D or 2D texture, ``δp.p/δx`` otherwise"
 msgstr "``δr/δx=0.0`` para uma textura 1D ou 2D, ``δp.p/δx`` caso contrário"
+
+msgid "``δr/δy=0.0`` for a 1D or 2D texture, ``δp.p/δy`` otherwise"
+msgstr "``δr/δy=0.0`` para uma textura 1D ou 2D, ``δp.p/δy`` caso contrário"
 
 msgid ""
 "For the cube version, the partial derivatives of ``p`` are assumed to be in "
@@ -3425,6 +3613,22 @@ msgid ""
 msgstr ""
 "|gvec4_type| **textureProjGrad**\\ (\\ |gsampler3D| s, vec4 p, vec3 dPdx, "
 "vec3 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+
+msgid "Performs a texture lookup with projection and explicit gradients."
+msgstr "Realiza uma busca de textura com projeção e gradientes explícitos."
+
+msgid ""
+"The texture coordinates consumed from ``p``, not including the last "
+"component of ``p``, are divided by the last component of ``p``. After these "
+"values are computed, the texture lookup proceeds as "
+"in :ref:`textureGrad<shader_func_textureGrad>`, passing ``dPdx`` and "
+"``dPdy`` as gradients."
+msgstr ""
+"As coordenadas de textura consumidas de ``p``, não incluindo o último "
+"componente de ``p``, são divididas pelo último componente de ``p``. Após o "
+"cálculo desses valores, a busca de textura prossegue como "
+"em :ref:`textureGrad<shader_func_textureGrad>`, passando ``dPdx`` e ``dPdy`` "
+"como gradientes."
 
 msgid "The partial derivative of ``p`` with respect to window x."
 msgstr "A derivada parcial de ``p`` em relação ao x da janela."
@@ -3699,6 +3903,9 @@ msgstr ""
 
 msgid "Uses local differencing for the input argument p."
 msgstr "Usa diferenciação local para o argumento de entrada p."
+
+msgid "Equivalent to ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``."
+msgstr "Equivalente a ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``."
 
 msgid ""
 "|vec_type| **fwidthFine**\\ (\\ |vec_type| "
@@ -4565,6 +4772,14 @@ msgstr ""
 "|vec_uint_type| **uaddCarry**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
 "out |vec_uint_type| carry) :ref:`🔗<shader_func_uaddCarry>`"
 
+msgid ""
+"Adds two 32-bit unsigned integer values (scalars or vectors) and returns a "
+"32-bit unsigned integer, along with a carry output stored in ``carry``."
+msgstr ""
+"Adiciona dois valores inteiros não assinados de 32 bits (escalares ou "
+"vetores) e retorna um inteiro não assinado de 32 bits, juntamente com uma "
+"saída de transporte (carry) armazenada em ``carry``."
+
 msgid "The first operand."
 msgstr "O primeiro operando."
 
@@ -4573,6 +4788,9 @@ msgstr "O segundo operando."
 
 msgid "param carry"
 msgstr "param carry"
+
+msgid "``0`` if the sum is less than 2\\ :sup:`32`, otherwise ``1``."
+msgstr "``0`` se a soma for menor que 2\\ :sup:`32`, caso contrário ``1``."
 
 msgid "``(x + y) % 2^32``."
 msgstr "``(x + y) % 2^32``."
@@ -4655,6 +4873,20 @@ msgid ""
 msgstr ""
 "Extrai ``x`` em um significando de ponto flutuante no intervalo ``[0.5, "
 "1.0)`` e em um expoente integral de dois, de modo que:"
+
+msgid ""
+"For a floating-point value of ``0.0``, the significand and exponent are both "
+"``0.0``."
+msgstr ""
+"Para um valor de ponto flutuante de ``0.0``, a significância e o expoente "
+"são ambos ``0.0``."
+
+msgid ""
+"For a floating-point value that is an infinity or a floating-point ``NaN``, "
+"the results are undefined."
+msgstr ""
+"Para um valor de ponto flutuante que é infinito ou um ``NaN`` de ponto "
+"flutuante, os resultados são indefinidos."
 
 msgid "The value from which significand and exponent are to be extracted."
 msgstr "O valor do qual o significando e o expoente devem ser extraídos."

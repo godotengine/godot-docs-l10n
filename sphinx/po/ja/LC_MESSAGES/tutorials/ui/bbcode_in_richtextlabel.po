@@ -54,13 +54,6 @@ msgid "Using BBCode"
 msgstr "BBCodeを使用する"
 
 msgid ""
-"For example, ``BBCode [color=green]test[/color]`` would render the word "
-"\"test\" with a green color."
-msgstr ""
-"たとえば ``BBCode [color=green]test[/color]`` は、単語 \"test\" を緑色で描画"
-"します。"
-
-msgid ""
 "Most BBCodes consist of 3 parts: the opening tag, the content and the "
 "closing tag. The opening tag delimits the start of the formatted part, and "
 "can also carry some configuration options. Some opening tags, like the "
@@ -100,21 +93,6 @@ msgstr "代わりにこのようなコードを使います:"
 
 msgid "Handling user input safely"
 msgstr "ユーザー入力を安全に処理する"
-
-msgid ""
-"In a scenario where users may freely input text (such as chat in a "
-"multiplayer game), you should make sure users cannot use arbitrary BBCode "
-"tags that will be parsed by RichTextLabel. This is to avoid inappropriate "
-"use of formatting, which can be problematic if ``[url]`` tags are handled by "
-"your RichTextLabel (as players may be able to create clickable links to "
-"phishing sites or similar)."
-msgstr ""
-"ユーザーが自由にテキストを入力できるシナリオ (マルチプレイヤーゲームでの"
-"チャットなど) では、RichTextLabel によって解析される任意の BBCode タグをユー"
-"ザーが使用できないようにする必要があります。これは書式構文の不適切な使用を避"
-"けるためです。書式構文の不適切な使用は ``[url]`` タグが RichTextLabel によっ"
-"て処理される場合に問題となる可能性があります (プレーヤーがフィッシングサイト"
-"などへのクリック可能なリンクを作成できる可能性があるため)。"
 
 msgid ""
 "Example of unescaped user input resulting in BBCode injection (2nd line) and "
@@ -230,13 +208,6 @@ msgstr ""
 "られます。"
 
 msgid ""
-"The following script will result in the same visual output as using ``BBCode "
-"[color=green]test [i]example[/i][/color]``:"
-msgstr ""
-"次のスクリプトは ``BBCode [color=green]test [i]example[/i][/color]`` を使用し"
-"た場合と同じ見た目になります。"
-
-msgid ""
 "Do **not** set the ``text`` property directly when using formatting "
 "functions. Appending to the ``text`` property will erase all modifications "
 "made to the RichTextLabel using the ``append_text()``, ``push_[tag]()`` and "
@@ -275,9 +246,6 @@ msgstr ""
 "``{text}`` に ``RichTextLabel`` の太字 (または太字斜体) フォントを適用しま"
 "す。"
 
-msgid "``[b]{text}[/b]``"
-msgstr "``[b]{text}[/b]``"
-
 msgid "**i**"
 msgstr "**i**"
 
@@ -286,9 +254,6 @@ msgid ""
 msgstr ""
 "``{text}`` に ``RichTextLabel`` の斜体 (または太字斜体) フォントを適用しま"
 "す。"
-
-msgid "``[i]{text}[/i]``"
-msgstr "``[i]{text}[/i]``"
 
 msgid "**u**"
 msgstr "**u**"
@@ -308,17 +273,11 @@ msgstr "**code**"
 msgid "Makes ``{text}`` use the mono font of ``RichTextLabel``."
 msgstr "``{text}`` に ``RichTextLabel`` の等幅フォントを適用します。"
 
-msgid "``[code]{text}[/code]``"
-msgstr "``[code]{text}[/code]``"
-
 msgid "**char**"
 msgstr "\\ **char**"
 
 msgid "Adds Unicode character with hexadecimal UTF-32 ``{codepoint}``."
 msgstr "16進数のUTF-32 ``{codepoint}`` を持つUnicode文字を追加します。"
-
-msgid "``[char={codepoint}]``"
-msgstr "``[char={codepoint}]``"
 
 msgid "**p**"
 msgstr "**p**"
@@ -330,26 +289,11 @@ msgstr ""
 "``{text}`` を含む新しい段落を追加します。設定オプションをサポートしていま"
 "す。:ref:`doc_bbcode_in_richtextlabel_paragraph_options` を参照してください。"
 
-msgid "``[p]{text}[/p]``"
-msgstr "``[p]{text}[/p]``"
-
-msgid "``[p {options}]{text}[/p]``"
-msgstr "``[p {options}]{text}[/p]``"
-
-msgid "``[br]``"
-msgstr "``[br]``"
-
 msgid "**center**"
 msgstr "**center**"
 
 msgid "Makes ``{text}`` horizontally centered."
 msgstr "``{text}`` を水平方向の中央揃えにします。"
-
-msgid "Same as ``[p align=center]``."
-msgstr "``[p align=center]`` と同じです。"
-
-msgid "``[center]{text}[/center]``"
-msgstr "``[center]{text}[/center]``"
 
 msgid "**left**"
 msgstr "**left**"
@@ -357,23 +301,11 @@ msgstr "**left**"
 msgid "Makes ``{text}`` horizontally left-aligned."
 msgstr "``{text}`` を水平方向に左揃えにします。"
 
-msgid "Same as ``[p align=left]``."
-msgstr "``[p align=left]`` と同じです。"
-
-msgid "``[left]{text}[/left]``"
-msgstr "``[left]{text}[/left]``"
-
 msgid "**right**"
 msgstr "**right**"
 
 msgid "Makes ``{text}`` horizontally right-aligned."
 msgstr "``{text}`` を水平方向に右揃えにします。"
-
-msgid "Same as ``[p align=right]``."
-msgstr "``[p align=right]`` と同じです。"
-
-msgid "``[right]{text}[/right]``"
-msgstr "``[right]{text}[/right]``"
 
 msgid "**fill**"
 msgstr "**fill**"
@@ -381,24 +313,8 @@ msgstr "**fill**"
 msgid "Makes ``{text}`` fill the full width of ``RichTextLabel``."
 msgstr "``{text}`` を ``RichTextLabel`` の幅いっぱいに広げます。"
 
-msgid "Same as ``[p align=fill]``."
-msgstr "``[p align=fill]`` と同じです。"
-
-msgid "``[fill]{text}[/fill]``"
-msgstr "``[fill]{text}[/fill]``"
-
 msgid "**indent**"
 msgstr "**indent**"
-
-msgid ""
-"Indents ``{text}`` once. The indentation width is the same as with ``[ul]`` "
-"or ``[ol]``, but without a bullet point."
-msgstr ""
-"``{text}`` を1回インデントします。インデント幅は ``[ul]`` または ``[ol]`` と"
-"同じですが、箇条書きではありません。"
-
-msgid "``[indent]{text}[/indent]``"
-msgstr "``[indent]{text}[/indent]``"
 
 msgid "**url**"
 msgstr "**url**"
@@ -410,12 +326,6 @@ msgstr ""
 "**効果を発揮するには\"meta_clicked\"シグナルで処理する必要があります。"
 "** :ref:`doc_bbcode_in_richtextlabel_handling_url_tag_clicks` を参照してくだ"
 "さい。"
-
-msgid "``[url]{link}[/url]``"
-msgstr "``[url]{link}[/url]``"
-
-msgid "``[url={link}]{text}[/url]``"
-msgstr "``[url={link}]{text}[/url]``"
 
 msgid "**hint**"
 msgstr "**hint**"
@@ -467,21 +377,6 @@ msgstr ""
 "設定オプションをサポートしていま"
 "す。:ref:`doc_bbcode_in_richtextlabel_image_options` を参照してください。"
 
-msgid "``[img]{path}[/img]``"
-msgstr "``[img]{path}[/img]``"
-
-msgid "``[img={width}]{path}[/img]``"
-msgstr "``[img={width}]{path}[/img]``"
-
-msgid "``[img={width}x{height}]{path}[/img]``"
-msgstr "``[img={width}x{height}]{path}[/img]``"
-
-msgid "``[img={valign}]{path}[/img]``"
-msgstr "``[img={valign}]{path}[/img]``"
-
-msgid "``[img {options}]{path}[/img]``"
-msgstr "``[img {options}]{path}[/img]``"
-
 msgid "**font**"
 msgstr "**font**"
 
@@ -495,20 +390,11 @@ msgstr ""
 "設定オプションをサポートしていま"
 "す。:ref:`doc_bbcode_in_richtextlabel_font_options` を参照してください。"
 
-msgid "``[font={path}]{text}[/font]``"
-msgstr "``[font={path}]{text}[/font]``"
-
-msgid "``[font {options}]{text}[/font]``"
-msgstr "``[font {options}]{text}[/font]``"
-
 msgid "**font_size**"
 msgstr "**font_size**"
 
 msgid "Use custom font size for ``{text}``."
 msgstr "``{text}`` にカスタムフォントサイズを適用します。"
-
-msgid "``[font_size={size}]{text}[/font_size]``"
-msgstr "``[font_size={size}]{text}[/font_size]``"
 
 msgid "**dropcap**"
 msgstr "**dropcap**"
@@ -520,26 +406,11 @@ msgstr ""
 "``{text}`` に異なるフォントサイズと色を使用します。その際タグの内容が大きい場"
 "合は複数行にまたがるようにします。"
 
-msgid ""
-"``[dropcap font={font} font_size={size} color={color} outline_size={size} "
-"outline_color={color} margins={left},{top},{right},{bottom}]{text}[/"
-"dropcap]``"
-msgstr ""
-"``[dropcap font={font} font_size={size} color={color} outline_size={size} "
-"outline_color={color} margins={left},{top},{right},{bottom}]{text}[/"
-"dropcap]``"
-
 msgid "**opentype_features**"
 msgstr "**opentype_features**"
 
-msgid "``[opentype_features={list}]``"
-msgstr "``[opentype_features={list}]``"
-
 msgid "``{text}``"
 msgstr "``{text}``"
-
-msgid "``[/opentype_features]``"
-msgstr "``[/opentype_features]``"
 
 msgid "**lang**"
 msgstr "**lang**"
@@ -559,9 +430,6 @@ msgstr ""
 "ファイルにはスクリプト固有の代替文字が含まれている場合があり、その場合はそれ"
 "らが使用されます。"
 
-msgid "``[lang={code}]{text}[/lang]``"
-msgstr "``[lang={code}]{text}[/lang]``"
-
 msgid "**color**"
 msgstr "**color**"
 
@@ -575,32 +443,17 @@ msgstr ""
 "``#ff00ff`` 、:ref:`doc_bbcode_in_richtextlabel_hex_colors` を参照) で指定す"
 "る必要があります。"
 
-msgid "``[color={code/name}]{text}[/color]``"
-msgstr "``[color={code/name}]{text}[/color]``"
-
 msgid "**bgcolor**"
 msgstr "**bgcolor**"
 
-msgid "``[bgcolor={code/name}]{text}[/bgcolor]``"
-msgstr "``[bgcolor={code/name}]{text}[/bgcolor]``"
-
 msgid "**fgcolor**"
 msgstr "**fgcolor**"
-
-msgid "``[fgcolor={code/name}]{text}[/fgcolor]``"
-msgstr "``[fgcolor={code/name}]{text}[/fgcolor]``"
 
 msgid "**outline_size**"
 msgstr "**outline_size**"
 
 msgid "Use custom font outline size for ``{text}``."
 msgstr "``{text}`` にカスタムのフォントアウトラインサイズを適用します。"
-
-msgid "``[outline_size={size}]``"
-msgstr "``[outline_size={size}]``"
-
-msgid "``[/outline_size]``"
-msgstr "``[/outline_size]``"
 
 msgid "**outline_color**"
 msgstr "**outline_color**"
@@ -611,12 +464,6 @@ msgid ""
 msgstr ""
 "``{text}`` にカスタムのアウトライン色を使用します。 ``color`` タグと同じ値を"
 "設定します。"
-
-msgid "``[outline_color={code/name}]``"
-msgstr "``[outline_color={code/name}]``"
-
-msgid "``[/outline_color]``"
-msgstr "``[/outline_color]``"
 
 msgid "**table**"
 msgstr "**table**"
@@ -644,15 +491,6 @@ msgstr ""
 "ベースライン配置が使用されている場合、表はインデックス ``{alignment_row}`` "
 "(ゼロベース) を持つ行のベースラインに合わせて配置されます。"
 
-msgid "``[table={number}]{cells}[/table]``"
-msgstr "``[table={number}]{cells}[/table]``"
-
-msgid "``[table={number},{valign}]{cells}[/table]``"
-msgstr "``[table={number},{valign}]{cells}[/table]``"
-
-msgid "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
-msgstr "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
-
 msgid "**cell**"
 msgstr "**cell**"
 
@@ -673,15 +511,6 @@ msgstr ""
 "設定オプションをサポートしていま"
 "す。:ref:`doc_bbcode_in_richtextlabel_cell_options` を参照してください。"
 
-msgid "``[cell]{text}[/cell]``"
-msgstr "``[cell]{text}[/cell]``"
-
-msgid "``[cell={ratio}]{text}[/cell]``"
-msgstr "``[cell]{text}[/cell]``"
-
-msgid "``[cell {options}]{text}[/cell]``"
-msgstr "``[cell {options}]{text}[/cell]``"
-
 msgid "**ul**"
 msgstr "**ul**"
 
@@ -700,12 +529,6 @@ msgstr ""
 "す。 :ref:`doc_bbcode_in_richtextlabel_unowned_list_bullet` を参照してくださ"
 "い。"
 
-msgid "``[ul]{items}[/ul]``"
-msgstr "``[ul]{items}[/ul]``"
-
-msgid "``[ul bullet={bullet}]{items}[/ul]``"
-msgstr "``[ul bullet={bullet}]{items}[/ul]``"
-
 msgid "**ol**"
 msgstr "**ol**"
 
@@ -717,9 +540,6 @@ msgstr ""
 "指定された ``{type}`` の順序付き (番号付き) リストを追加します "
 "(:ref:`doc_bbcode_in_richtextlabel_list_types` を参照)。リスト ``{items}`` "
 "は、テキスト1行に1つの項目を入力して指定する必要があります。"
-
-msgid "``[ol type={type}]{items}[/ol]``"
-msgstr "``[ol type={type}]{items}[/ol]``"
 
 msgid "**lb**, **rb**"
 msgstr "**lb**, **rb**"
@@ -736,9 +556,6 @@ msgstr ""
 "これらは自己終了タグで、閉じる必要はありません (また ``[/lb]`` や ``[/rb]`` "
 "の終了タグはありません)。"
 
-msgid "``[lb]b[rb]text[lb]/b[rb]`` will display as ``[b]text[/b]``."
-msgstr "``[lb]b[rb]text[lb]/b[rb]`` は ``[b]text[/b]`` と表示されます。"
-
 msgid ""
 "Several Unicode control characters can be added using their own self-closing "
 "tags."
@@ -750,68 +567,6 @@ msgstr "貼り付けるよりもメンテナンスが容易になります"
 
 msgid "control characters directly in the text."
 msgstr "テキスト内に直接文字を制御します。"
-
-msgid ""
-"``[lrm]`` (left-to-right mark), ``[rlm]`` (right-to-left mark), ``[lre]`` "
-"(left-to-right embedding),"
-msgstr ""
-"``[lrm]`` (左から右のマーク)、 ``[rlm]`` (右から左のマーク)、 ``[lre]`` (左か"
-"ら右の埋め込み)、"
-
-msgid ""
-"``[rle]`` (right-to-left embedding), ``[lro]`` (left-to-right override), "
-"``[rlo]`` (right-to-left override),"
-msgstr ""
-"``[rle]`` (右から左への埋め込み)、``[lro]`` (左から右へのオーバーライド)、"
-"``[rlo]`` (右から左へのオーバーライド)、"
-
-msgid ""
-"``[pdf]`` (pop directional formatting), ``[alm]`` (Arabic letter mark), "
-"``[lri]`` (left-to-right isolate),"
-msgstr ""
-"``[pdf]`` (ポップ方向の書式設定)、 ``[alm]`` (アラビア文字マーク)、 "
-"``[lri]`` (左から右への分離)、"
-
-msgid ""
-"``[rli]`` (right-to-left isolate), ``[fsi]`` (first strong isolate), "
-"``[pdi]`` (pop directional isolate),"
-msgstr ""
-"``[rli]`` (右から左への分離)、 ``[fsi]`` (最初の強い分離)、 ``[pdi]`` (ポップ"
-"方向の分離)、"
-
-msgid ""
-"``[zwj]`` (zero-width joiner), ``[zwnj]`` (zero-width non-joiner), ``[wj]`` "
-"(word joiner),"
-msgstr ""
-"``[zwj]`` (ゼロ幅結合子)、 ``[zwnj]`` (ゼロ幅非結合子)、 ``[wj]`` (単語結合"
-"子)、"
-
-msgid "``[shy]`` (soft hyphen)"
-msgstr "``[shy]`` (ソフトハイフン)"
-
-msgid ""
-"Tags for bold (``[b]``) and italics (``[i]``) formatting work best if the "
-"appropriate custom fonts are set up in the RichTextLabelNode's theme "
-"overrides. If no custom bold or italic fonts are defined, `faux bold and "
-"italic fonts <https://fonts.google.com/knowledge/glossary/"
-"faux_fake_pseudo_synthesized>`__ will be generated by Godot. These fonts "
-"rarely look good in comparison to hand-made bold/italic font variants."
-msgstr ""
-"太字 (``[b]``) および斜体 (``[i]``) の書式設定のタグは、RichTextLabel のテー"
-"マのオーバーライドで適切なカスタムフォントが設定されている場合に最適に機能し"
-"ます。カスタムの太字または斜体フォントが定義されていない場合、 `疑似太字およ"
-"び斜体フォント<https://fonts.google.com/knowledge/glossary/"
-"faux_fake_pseudo_synthesize>`__ がGodotによって生成されます。これらのフォント"
-"は、手作りの太字/斜体フォントと比較して見栄えはあまり良くないです。"
-
-msgid ""
-"The monospaced (``[code]``) tag **only** works if a custom font is set up in "
-"the RichTextLabel node's theme overrides. Otherwise, monospaced text will "
-"use the regular font."
-msgstr ""
-"等幅 (``[code]``) タグは、RichTextLabel ノードのテーマのオーバーライドでカス"
-"タムフォントが設定されている場合にのみ機能します。それ以外の場合、等幅テキス"
-"トには通常のフォントが使用されます。"
 
 msgid "There are no BBCode tags to control vertical centering of text yet."
 msgstr "テキストの垂直方向の中央揃えを制御する BBCode タグはまだありません。"
@@ -913,27 +668,6 @@ msgstr ""
 "設定すると、最初のタブは ``10`` ピクセル、2番目のタブは ``10 + 30 = 40`` ピク"
 "セルになります。3番目のタブは、RichTextLabel の原点から ``10 + 30 + 10 = "
 "50`` ピクセルの位置にあります。"
-
-msgid "Handling ``[url]`` tag clicks"
-msgstr "``[url]`` タグのクリックの処理"
-
-msgid ""
-"By default, ``[url]`` tags do nothing when clicked. This is to allow "
-"flexible use of ``[url]`` tags rather than limiting them to opening URLs in "
-"a web browser."
-msgstr ""
-"デフォルトでは ``[url]`` タグをクリックしても何も起こりません。これはWebブラ"
-"ウザでURLを開くことに限定するのではなく、 ``[url]`` タグを柔軟に使用できるよ"
-"うにするためです。"
-
-msgid ""
-"To handle clicked ``[url]`` tags, connect the ``RichTextLabel`` "
-"node's :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` signal "
-"to a script function."
-msgstr ""
-"クリックされた ``[url]`` タグを処理するには、 ``RichTextLabel`` ノード"
-"の :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` シグナルをス"
-"クリプト関数に接続します。"
 
 msgid "Color name or color in HEX format"
 msgstr "色の名前またはHEX形式の色"
@@ -1132,28 +866,6 @@ msgstr "カラーの名前"
 msgid "Hexadecimal color codes"
 msgstr "16進カラーコード"
 
-msgid ""
-"For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
-"``[color=#ffffff]white[/color]``. Shorthand RGB color codes such as ``#6f2`` "
-"(equivalent to ``#66ff22``) are also supported."
-msgstr ""
-"不透明なRGBカラーの場合は、有効な6桁の16進コードがサポートされます。 "
-"``[color=#ffffff]白[/color]`` 。 ``#6f2`` (``#66ff22`` に相当) などの短縮形の"
-"RGBカラーコードもサポートされています。"
-
-msgid ""
-"For transparent RGB colors, any RGBA 8-digit hexadecimal code can be used, "
-"e.g. ``[color=#ffffff88]translucent white[/color]``. Note that the alpha "
-"channel is the **last** component of the color code, not the first one. "
-"Short RGBA color codes such as ``#6f28`` (equivalent to ``#66ff2288``) are "
-"supported as well."
-msgstr ""
-"透明を含むRGBカラーの場合は、任意のRGBA 8桁の16進コードを使用できます。 "
-"``[color=#ffffff88]半透明の白[/color]`` 。アルファチャネルはカラー コードの最"
-"初のコンポーネントではなく、**最後の** コンポーネントであることに注意してくだ"
-"さい。 ``#6f28`` (``#66ff2288`` に相当）などの短いRGBAカラーコードもサポート"
-"されています。"
-
 msgid "Cell options"
 msgstr "セルのオプション"
 
@@ -1247,15 +959,6 @@ msgid "Pulse"
 msgstr "Pulse (点滅)"
 
 msgid ""
-"Pulse creates an animated pulsing effect that multiplies each character's "
-"opacity and color. It can be used to bring attention to specific text. Its "
-"tag format is ``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]``."
-msgstr ""
-"Pulse は各文字の不透明値とカラー値を増幅するアニメーションのパルス効果を作成"
-"します。特定のテキストに注目を集めるために使用できます。タグの形式は "
-"``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]`` です。"
-
-msgid ""
 "``freq`` controls the frequency of the half-pulsing cycle (higher is "
 "faster). A full pulsing cycle takes ``2 * (1.0 / freq)`` seconds. ``color`` "
 "is the target color multiplier for blinking. The default mostly fades out "
@@ -1271,13 +974,6 @@ msgstr ""
 
 msgid "Wave"
 msgstr "Wave (波)"
-
-msgid ""
-"Wave makes the text go up and down. Its tag format is ``[wave amp=50.0 "
-"freq=5.0 connected=1]{text}[/wave]``."
-msgstr ""
-"Waveはテキストを上下に動かします。タグの形式は ``[wave amp=50.0 freq=5.0 "
-"connected=1]{text}[/wave]`` です。"
 
 msgid ""
 "``amp`` controls how high and low the effect goes, and ``freq`` controls how "
@@ -1299,13 +995,6 @@ msgid "Tornado"
 msgstr "Tornado (竜巻)"
 
 msgid ""
-"Tornado makes the text move around in a circle. Its tag format is ``[tornado "
-"radius=10.0 freq=1.0 connected=1]{text}[/tornado]``."
-msgstr ""
-"Tornado はテキストを円を描くように動き回らせます。タグの形式は ``[tornado "
-"radius=10.0 freq=1.0 connected=1]{text}[/tornado]`` です。"
-
-msgid ""
 "``radius`` is the radius of the circle that controls the offset, ``freq`` is "
 "how fast the text moves in a circle. A ``freq`` value of ``0`` will pause "
 "the animation, while negative ``freq`` will play the animation backwards. If "
@@ -1325,13 +1014,6 @@ msgid "Shake"
 msgstr "Shake (シェイク)"
 
 msgid ""
-"Shake makes the text shake. Its tag format is ``[shake rate=20.0 level=5 "
-"connected=1]{text}[/shake]``."
-msgstr ""
-"Shakeはテキストが揺らします。タグの形式は `[shake rate=20.0 level=5 "
-"connected=1]{text}[/shake]`` です。"
-
-msgid ""
 "``rate`` controls how fast the text shakes, ``level`` controls how far the "
 "text is offset from the origin. If ``connected`` is ``1`` (default), glyphs "
 "with ligatures will be moved together. If ``connected`` is ``0``, each glyph "
@@ -1346,13 +1028,6 @@ msgstr ""
 
 msgid "Fade"
 msgstr "Fade (フェード)"
-
-msgid ""
-"Fade creates a static fade effect that multiplies each character's opacity. "
-"Its tag format is ``[fade start=4 length=14]{text}[/fade]``."
-msgstr ""
-"Fadeは各文字の不透明値を制御するフェード効果を作成します。タグの形式は "
-"``[fade start=4 length=14]{text}[/fade]`` です。"
 
 msgid ""
 "``start`` controls the starting position of the falloff relative to where "
@@ -1472,22 +1147,6 @@ msgid ""
 msgstr ""
 "``glyph_index`` と ``font`` は描画されるグリフと、それを描画するために使用さ"
 "れるフォントデータリソースです。"
-
-msgid ""
-"Finally, ``env`` is a :ref:`class_Dictionary` of parameters assigned to a "
-"given custom effect. You can use :ref:`get() <class_Dictionary_method_get>` "
-"with an optional default value to retrieve each parameter, if specified by "
-"the user. For example ``[custom_fx spread=0.5 color=#FFFF00]test[/"
-"custom_fx]`` would have a float ``spread`` and Color ``color`` parameters in "
-"its ``env`` Dictionary. See below for more usage examples."
-msgstr ""
-"最後に ``env`` は、特定のカスタムエフェクトに割り当てられたパラメータ"
-"の :ref:`class_Dictionary` です。ユーザーが指定した場合は、 :ref:`get() "
-"<class_Dictionary_method_get>` をオプションのデフォルト値とともに使用して、各"
-"パラメータを取得できます。たとえば ``[custom_fx Spread=0.5 "
-"color=#FFFF00]test[/custom_fx]`` は、その ``env`` 辞書に ``spread`` および "
-"``color`` パラメータを持ちます。その他の使用例については、以下を参照してくだ"
-"さい。"
 
 msgid ""
 "The last thing to note about this function is that it is necessary to return "

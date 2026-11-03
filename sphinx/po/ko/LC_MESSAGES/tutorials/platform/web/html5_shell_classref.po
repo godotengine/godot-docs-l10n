@@ -11,9 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "HTML5 shell class reference"
-msgstr "HTML5 쉘 클래스 참조"
-
 msgid ""
 "Projects exported for the Web expose the :js:class:`Engine` class to the "
 "JavaScript environment, that allows fine control over the engine's start-up "
@@ -51,9 +48,6 @@ msgstr "정적 메서드"
 msgid "Promise"
 msgstr "약속"
 
-msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-msgstr ":js:attr:`load <Engine.load>` **(** 문자열 basePath **)**"
-
 msgid "void"
 msgstr "무효"
 
@@ -69,6 +63,9 @@ msgid ""
 msgstr ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
+
+msgid "Array.<string>"
+msgstr "문자열"
 
 msgid "Instance Methods"
 msgstr "씬 인스턴스하기"
@@ -327,9 +324,6 @@ msgstr "멤버"
 msgid ":js:attr:`canvasResizePolicy`"
 msgstr ":js:attr:`canvasResizePolicy`"
 
-msgid "Array.<string>"
-msgstr "문자열"
-
 msgid ":js:attr:`args`"
 msgstr ":js:attr:`args`"
 
@@ -362,11 +356,6 @@ msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
 
 msgid "**Property Descriptions**"
 msgstr "**설명**"
-
-msgid ""
-"Whether the unload the engine automatically after the instance is "
-"initialized."
-msgstr "인스턴스 초기화 후 엔진을 자동으로 언로드할지 여부입니다."
 
 msgid "value"
 msgstr "값"
@@ -450,6 +439,12 @@ msgstr ""
 
 msgid "``[]``"
 msgstr "``int[]``"
+
+msgid "``false``"
+msgstr "``if x else``"
+
+msgid "``0``"
+msgstr "``0``"
 
 msgid "A callback function for handling Godot's ``OS.execute`` calls."
 msgstr "Godot의 ``OS.execute`` 호출을 처리하기 위한 콜백 함수입니다."

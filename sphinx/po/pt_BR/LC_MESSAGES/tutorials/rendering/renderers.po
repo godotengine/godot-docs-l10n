@@ -89,6 +89,22 @@ msgstr ""
 "**Mobile** e **Compatibility**."
 
 msgid ""
+"The *rendering driver* tells the GPU what to do, using a graphics API. Godot "
+"can use the **OpenGL**, **Vulkan**, **Direct3D 12**, and **Metal** rendering "
+"drivers. Not every GPU supports every rendering driver, and therefore not "
+"every GPU supports all renderers. Vulkan, Direct3D 12, and Metal are modern, "
+"low-level graphics APIs, and require newer hardware. OpenGL is an older "
+"graphics API that runs on most hardware."
+msgstr ""
+"O *driver de renderização* diz à GPU o que fazer, usando uma API gráfica. O "
+"Godot pode usar os drivers de renderização **OpenGL**, **Vulkan**, "
+"**Direct3D 12** e **Metal**. Nem toda GPU suporta todos os drivers de "
+"renderização e, portanto, nem toda GPU suporta todos os renderizadores. "
+"Vulkan, Direct3D 12 e Metal são APIs gráficas modernas e de baixo nível, "
+"exigindo hardware mais recente. O OpenGL é uma API gráfica mais antiga que "
+"roda na maioria dos hardwares."
+
+msgid ""
 "RenderingDevice is a *rendering backend*, an abstraction layer between the "
 "renderer and the rendering driver. It is used by the Forward+ and Mobile "
 "renderers, and these renderers are sometimes called \"RenderingDevice-based "
@@ -101,6 +117,13 @@ msgstr ""
 
 msgid "Choosing a renderer"
 msgstr "Escolhendo um renderizador"
+
+msgid ""
+"Choosing a renderer is a complex question, and depends on your hardware and "
+"which platforms you are developing for. As a starting point:"
+msgstr ""
+"Escolher um renderizador é uma questão complexa e depende do seu hardware e "
+"de quais plataformas você está desenvolvendo. Como ponto de partida:"
 
 msgid "Choose **Forward+** if:"
 msgstr "Escolha **Forward+** se:"
@@ -125,6 +148,13 @@ msgid "Choose **Mobile** if:"
 msgstr "Escolha **Mobile** se:"
 
 msgid ""
+"You are developing for newer mobile devices, desktop XR, standalone XR, or "
+"desktop."
+msgstr ""
+"Você está desenvolvendo para dispositivos móveis mais recentes, XR para "
+"desktop, XR autônomo ou desktop."
+
+msgid ""
 "You want to use advanced rendering features, subject to the limitations of "
 "mobile hardware."
 msgstr ""
@@ -133,6 +163,14 @@ msgstr ""
 
 msgid "Choose **Compatibility** if:"
 msgstr "Escolha **Compatibilidade** se:"
+
+msgid ""
+"You are developing for older mobile devices, or older desktop devices. The "
+"Compatibility renderer supports the widest range of hardware."
+msgstr ""
+"Você está desenvolvendo para dispositivos móveis mais antigos ou "
+"dispositivos desktop mais antigos. O renderizador Compatibility suporta a "
+"mais ampla variedade de hardware."
 
 msgid ""
 "You are developing for web. In this case, Compatibility is the only choice."
@@ -315,6 +353,12 @@ msgstr ""
 msgid "XR"
 msgstr "Realidade Aumentada (XR)"
 
+msgid "⚠️ Supported, but not recommended. Use Mobile instead."
+msgstr "⚠️ Suportado, mas não recomendado. Use Mobile em seu lugar."
+
+msgid "✔️ Yes. Recommended for desktop and standalone headsets."
+msgstr "✔️ Sim. Recomendado para desktop e óculos autônomos."
+
 msgid "Web"
 msgstr "Web"
 
@@ -474,9 +518,6 @@ msgstr "✔️ Suportado, 2 por malha."
 msgid "✔️ Supported, 8 per mesh."
 msgstr "✔️ Suportado, 8 por malha."
 
-msgid "✔️ Supported, unlimited."
-msgstr "✔️ Suportado, ilimitado."
-
 msgid "LightmapGI"
 msgstr "LightmapGI"
 
@@ -564,6 +605,9 @@ msgstr "Recursos do StandardMaterial"
 
 msgid "See :ref:`doc_standard_material_3d` for more information."
 msgstr "Veja :ref:`doc_standard_material_3d` para mais informações."
+
+msgid "Subsurface scattering"
+msgstr "Espalhamento subsuperficial"
 
 msgid "Shader features"
 msgstr "Recursos de shader"

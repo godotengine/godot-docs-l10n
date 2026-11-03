@@ -83,6 +83,20 @@ msgstr ""
 "**Compatibility**\\ 。"
 
 msgid ""
+"The *rendering driver* tells the GPU what to do, using a graphics API. Godot "
+"can use the **OpenGL**, **Vulkan**, **Direct3D 12**, and **Metal** rendering "
+"drivers. Not every GPU supports every rendering driver, and therefore not "
+"every GPU supports all renderers. Vulkan, Direct3D 12, and Metal are modern, "
+"low-level graphics APIs, and require newer hardware. OpenGL is an older "
+"graphics API that runs on most hardware."
+msgstr ""
+"*渲染驱动程序* 通过图形 API 向 GPU 指示应执行的操作。Godot 支持使用 "
+"**OpenGL** 、 **Vulkan** 、**Direct3D 12** 和 **Metal** 等渲染驱动程序。并非"
+"所有 GPU 都支持所有渲染驱动程序，因此并非所有 GPU 都支持所有渲染器。Vulkan、"
+"Direct3D 12 和 Metal 是现代的低级图形 API，需要更新型的硬件支持；而 OpenGL 是"
+"一款较早的图形 API，可在大多数硬件上运行。"
+
+msgid ""
 "RenderingDevice is a *rendering backend*, an abstraction layer between the "
 "renderer and the rendering driver. It is used by the Forward+ and Mobile "
 "renderers, and these renderers are sometimes called \"RenderingDevice-based "
@@ -94,6 +108,13 @@ msgstr ""
 
 msgid "Choosing a renderer"
 msgstr "选择渲染器"
+
+msgid ""
+"Choosing a renderer is a complex question, and depends on your hardware and "
+"which platforms you are developing for. As a starting point:"
+msgstr ""
+"选择渲染器是一个复杂的问题，其具体选择取决于您的硬件配置以及您所针对的开发平"
+"台。作为入门参考："
 
 msgid "Choose **Forward+** if:"
 msgstr "以下情况选择 **Forward+**\\ ："
@@ -116,12 +137,24 @@ msgid "Choose **Mobile** if:"
 msgstr "以下情况选择 **Mobile**\\ ："
 
 msgid ""
+"You are developing for newer mobile devices, desktop XR, standalone XR, or "
+"desktop."
+msgstr "您正在为新型移动设备、桌面 XR、独立 XR 或桌面端进行开发。"
+
+msgid ""
 "You want to use advanced rendering features, subject to the limitations of "
 "mobile hardware."
 msgstr "你想要使用高级渲染特性，但会受到移动硬件的限制。"
 
 msgid "Choose **Compatibility** if:"
 msgstr "以下情况请选择 **Compatibility**\\ ："
+
+msgid ""
+"You are developing for older mobile devices, or older desktop devices. The "
+"Compatibility renderer supports the widest range of hardware."
+msgstr ""
+"您正在为较旧的移动设备或较旧的桌面设备进行开发。兼容性渲染器支持最广泛的硬件"
+"设备范围。"
 
 msgid ""
 "You are developing for web. In this case, Compatibility is the only choice."
@@ -282,6 +315,12 @@ msgstr "⚠️ 支持，但优化较差。请改用 Mobile 或 Compatibility。"
 msgid "XR"
 msgstr "XR"
 
+msgid "⚠️ Supported, but not recommended. Use Mobile instead."
+msgstr "⚠ 支持，但不推荐。请使用 Mobile。"
+
+msgid "✔️ Yes. Recommended for desktop and standalone headsets."
+msgstr "✔ 是。推荐用于台式机及独立式耳机。"
+
 msgid "Web"
 msgstr "Web"
 
@@ -437,9 +476,6 @@ msgstr "✔️ 支持，每个网格 2 个。"
 msgid "✔️ Supported, 8 per mesh."
 msgstr "✔️ 支持，每个网格 8 个。"
 
-msgid "✔️ Supported, unlimited."
-msgstr "✔️ 支持，无限制。"
-
 msgid "LightmapGI"
 msgstr "LightmapGI"
 
@@ -525,6 +561,9 @@ msgstr "StandardMaterial 特性"
 
 msgid "See :ref:`doc_standard_material_3d` for more information."
 msgstr "详情见\\ :ref:`doc_standard_material_3d`\\ 。"
+
+msgid "Subsurface scattering"
+msgstr "次表面散射"
 
 msgid "Shader features"
 msgstr "着色器特性"

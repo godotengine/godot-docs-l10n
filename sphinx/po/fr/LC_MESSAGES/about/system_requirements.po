@@ -54,6 +54,9 @@ msgstr "*Exemple : Intel Core 2 Duo E8200, AMD FX-4100, Snapdragon X Elite*"
 msgid "**macOS:** x86_64 or ARM CPU (Apple Silicon)"
 msgstr "**macOS :** processeur x86_64 ou processeur ARM (Apple Silicon)"
 
+msgid "*Example: Intel 7th Gen (Kaby Lake) CPU, Apple M1*"
+msgstr "*Exemple : processeur Intel de 7e génération (Kaby Lake), Apple M1*"
+
 msgid ""
 "**Linux:** x86_32 CPU with SSE2 support, x86_64 CPU with SSE4.2 support, "
 "ARMv7 or ARMv8 CPU"
@@ -106,6 +109,16 @@ msgstr "**Éditeur Web :** 8 Go"
 
 msgid "**Storage**"
 msgstr "**Stockage**"
+
+msgid ""
+"200 MB (used for the executable, project files, and cache). Exporting "
+"projects requires downloading export templates separately (up to 1.5 GB "
+"after installation, depending on the target platforms chosen)."
+msgstr ""
+"200 Mo (utilisé pour l'exécutable, les fichiers de projet et le cache). "
+"L'exportation de projets nécessite le téléchargement de modèles "
+"d'exportation séparément (1,5 GB après installation, en fonction de la "
+"platforme cible voulue)."
 
 msgid "**Operating system**"
 msgstr "**Système d'exploitation**"
@@ -257,6 +270,13 @@ msgstr "**Éditeur natif :** 8 Go"
 msgid "**Web editor:** 12 GB"
 msgstr "**Éditeur Web :** 12 Go"
 
+msgid ""
+"2 GB (used for the executable, project files, all export templates, and "
+"cache)"
+msgstr ""
+"2 GB (utilisé pour les exécutables, les fichiers de projets, tous les "
+"modèles d'exportation et le cache)"
+
 msgid "**Web editor:** Latest version of Firefox, Chrome, Edge, Safari, Opera"
 msgstr ""
 "**Editeur Web:** Dernière version de Firefox, Chrome, Edge, Safari, Opera"
@@ -376,11 +396,11 @@ msgstr "**Pour exportations natives:** 2 GB"
 msgid "**For web exports:** 4 GB"
 msgstr "**Pour exportations web:** 4 GB"
 
-msgid "**iOS:** SoC with any 64-bit ARM CPU"
-msgstr "**iOS :** SoC avec n'importe quel processeur ARM 64 bits"
+msgid "150 MB (used for the executable, project files, and cache)"
+msgstr "150 Mo (utilisé pour l'exécutable, les fichiers du projet et le cache)"
 
-msgid "*Example: Apple A7 (iPhone 5S)*"
-msgstr "*Exemple : Apple A7 (iPhone 5S)*"
+msgid "**iOS:** SoC with 64-bit ARM CPU"
+msgstr "**iOS :** SoC avec processeur ARM 64 bits"
 
 msgid ""
 "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.0 support, or "
@@ -406,14 +426,20 @@ msgstr ""
 "**Moteur de rendu Mobile :** SoC doté d'un GPU avec prise en charge complète "
 "de Vulkan 1.0 ou Metal 3 (iOS/iPadOS)"
 
-msgid "*Example: Qualcomm Adreno 306, Mali-T628 MP6, Apple A7 (iPhone 5S)*"
-msgstr "*Exemple : Qualcomm Adreno 306, Mali-T628 MP6, Apple A7 (iPhone 5S)*"
-
 msgid "**For native exports:** 1 GB"
 msgstr "**Pour exportations natives:** 1 GB"
 
 msgid "**For web exports:** 2 GB"
 msgstr "**Pour exportations web:** 2 GB"
+
+msgid ""
+"**For native exports:** Android 7.0 (Compatibility), Android 9.0 (Forward+/"
+"Mobile), iOS 15.0 (Forward+/Mobile with Vulkan), iOS 16.0 (Forward+/Mobile "
+"with Metal)"
+msgstr ""
+"**Pour les exports natifs :** Android 7.0 (Compatibilité), Android 9.0 "
+"(Forward+/Mobile), iOS 15.0 (Forward+/Mobile avec Vulkan), iOS 16.0 "
+"(Forward+/Mobile avec Metal)"
 
 msgid ""
 "These are the **recommended** specifications to get a smooth experience with "
@@ -458,9 +484,6 @@ msgstr ""
 "**Pour les exportations Web :** Dernière version de Firefox, Chrome, Edge, "
 "Safari, Opera"
 
-msgid "**iOS:** SoC with 64-bit ARM CPU"
-msgstr "**iOS :** SoC avec processeur ARM 64 bits"
-
 msgid "*Example: Apple A14 (iPhone 12)*"
 msgstr "*Exemple : Apple A14 (iPhone 12)*"
 
@@ -480,6 +503,9 @@ msgid ""
 msgstr ""
 "**Moteur de rendu Mobile :** SoC doté d'un GPU avec prise en charge complète "
 "de Vulkan 1.2 ou Metal 3 (iOS/iPadOS)"
+
+msgid "**For native exports:** Android 9.0, iOS 16.0"
+msgstr "**Pour les exportations natives :** Android 9.0, iOS 16.0"
 
 msgid ""
 "**For web exports:** Latest version of Firefox, Chrome, Edge, Safari, Opera, "

@@ -74,19 +74,12 @@ msgid ""
 "Label with BBCode demo project <https://github.com/godotengine/godot-demo-"
 "projects/tree/master/gui/rich_text_bbcode>`__."
 msgstr ""
-"Puede ver cómo funciona BBCode en RichTextLabel en acción utilizando el "
+"Puedes ver cómo funciona BBCode en RichTextLabel en acción utilizando el "
 "proyecto de demostración `Rich Text Label con BBCode <https://github.com/"
 "godotengine/godot-demo-projects/tree/master/gui/rich_text_bbcode>`__."
 
 msgid "Using BBCode"
 msgstr "Usar BBCode"
-
-msgid ""
-"For example, ``BBCode [color=green]test[/color]`` would render the word "
-"\"test\" with a green color."
-msgstr ""
-"Por ejemplo, ``BBCode [color=green]test[/color]`` representaría la palabra "
-"\"test\" con un color verde."
 
 msgid ""
 "Most BBCodes consist of 3 parts: the opening tag, the content and the "
@@ -131,21 +124,6 @@ msgstr "Usar:"
 
 msgid "Handling user input safely"
 msgstr "Manejo seguro de la entrada del usuario"
-
-msgid ""
-"In a scenario where users may freely input text (such as chat in a "
-"multiplayer game), you should make sure users cannot use arbitrary BBCode "
-"tags that will be parsed by RichTextLabel. This is to avoid inappropriate "
-"use of formatting, which can be problematic if ``[url]`` tags are handled by "
-"your RichTextLabel (as players may be able to create clickable links to "
-"phishing sites or similar)."
-msgstr ""
-"En un escenario donde los usuarios pueden introducir texto libremente (como "
-"en el chat de una partida multijugador), debe asegurarse de que no puedan "
-"usar etiquetas BBCode arbitrarias que RichTextLabel analizará. Esto evita el "
-"uso inapropiado del formato, que puede ser problemático si RichTextLabel "
-"gestiona las etiquetas ``[url]`` (ya que los jugadores podrían crear enlaces "
-"clicables a sitios de phishing o similares)."
 
 msgid ""
 "Example of unescaped user input resulting in BBCode injection (2nd line) and "
@@ -228,7 +206,7 @@ msgid ""
 "variables as well as in the XML source of the class reference. For more "
 "information, see :ref:`Class reference BBCode <doc_class_reference_bbcode>`."
 msgstr ""
-"Algunas de estas etiquetas BBCode se pueden usar en la información sobre "
+"*Algunas* de estas etiquetas BBCode se pueden usar en la información sobre "
 "herramientas de las variables de script ``@export``, así como en el código "
 "fuente XML de la referencia de clase. Para más información, "
 "véase :ref:`Referencia de clase BBCode <doc_class_reference_bbcode>`."
@@ -242,14 +220,8 @@ msgstr "Ejemplo"
 msgid "**b**"
 msgstr "**b**"
 
-msgid "``[b]{text}[/b]``"
-msgstr "``[b]{text}[/b]``"
-
 msgid "**i**"
 msgstr "**i**"
-
-msgid "``[i]{text}[/i]``"
-msgstr "``[i]{text}[/i]``"
 
 msgid "**u**"
 msgstr "**u**"
@@ -263,119 +235,51 @@ msgstr "**code**"
 msgid "Makes ``{text}`` use the mono font of ``RichTextLabel``."
 msgstr "Hace que ``{text}`` utilice la fuente mono de ``RichTextLabel``."
 
-msgid "``[code]{text}[/code]``"
-msgstr "``[code]{text}[/code]``"
-
 msgid "**char**"
 msgstr "**char**"
-
-msgid "``[char={codepoint}]``"
-msgstr "``[char={codepoint}]``"
 
 msgid "**p**"
 msgstr "**p**"
 
-msgid "``[p]{text}[/p]``"
-msgstr "``[p]{text}[/p]``"
-
-msgid "``[p {options}]{text}[/p]``"
-msgstr "``[p {options}]{text}[/p]``"
-
 msgid "**br**"
 msgstr "**br**"
-
-msgid "``[br]``"
-msgstr "``[br]``"
-
-msgid "``[hr]``"
-msgstr "``[hr]``"
-
-msgid "``[hr {options}]``"
-msgstr "``[hr {options}]``"
 
 msgid "**center**"
 msgstr "**centrado**"
 
-msgid "``[center]{text}[/center]``"
-msgstr "``[center]{text}[/center]``"
-
-msgid "``[left]{text}[/left]``"
-msgstr "``[left]{text}[/left]``"
-
 msgid "**right**"
 msgstr "**derecho**"
-
-msgid "``[right]{text}[/right]``"
-msgstr "``[right]{text}[/right]``"
 
 msgid "**fill**"
 msgstr "**llenar**"
 
-msgid "``[fill]{text}[/fill]``"
-msgstr "``[fill]{text}[/fill]``"
-
 msgid "**indent**"
 msgstr "**indentar**"
-
-msgid "``[indent]{text}[/indent]``"
-msgstr "``[indent]{text}[/indent]``"
 
 msgid "**url**"
 msgstr "**url**"
 
+msgid ""
+"**Must be handled with the \"meta_clicked\" signal to have an effect,** "
+"see :ref:`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
+msgstr ""
+"**Debe manejarse con la señal \"meta_clicked\" para tener efecto,** "
+"consulta :ref:`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
+
 msgid "**img**"
 msgstr "**img**"
-
-msgid "``[img]{path}[/img]``"
-msgstr "``[img]{path}[/img]``"
 
 msgid "**font**"
 msgstr "**fuente**"
 
-msgid "``[opentype_features={list}]``"
-msgstr "``[opentype_features={list}]``"
-
-msgid "``[/opentype_features]``"
-msgstr "``[/opentype_features]``"
-
-msgid "``[lang={code}]{text}[/lang]``"
-msgstr "``[lang={code}]{text}[/lang]``"
-
 msgid "**color**"
 msgstr "**color**"
-
-msgid "``[outline_size={size}]``"
-msgstr "``[outline_size={size}]``"
-
-msgid "``[/outline_size]``"
-msgstr "``[/outline_size]``"
-
-msgid "``[/outline_color]``"
-msgstr "``[/outline_color]``"
 
 msgid "**table**"
 msgstr "**tabla**"
 
-msgid "``[table={number},{valign}]{cells}[/table]``"
-msgstr "``[table={number},{valign}]{cells}[/table]``"
-
-msgid "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
-msgstr "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
-
 msgid "**cell**"
 msgstr "**celda**"
-
-msgid "``[cell]{text}[/cell]``"
-msgstr "``[cell]{text}[/cell]``"
-
-msgid "``[ul]{items}[/ul]``"
-msgstr "``[ul]{items}[/ul]``"
-
-msgid "``[ul bullet={bullet}]{items}[/ul]``"
-msgstr "``[url=<url>]{text}[/url]``"
-
-msgid "``[ol type={type}]{items}[/ol]``"
-msgstr "``[ol type={type}]{items}[/ol]``"
 
 msgid "There are no BBCode tags to control vertical centering of text yet."
 msgstr ""
@@ -385,17 +289,13 @@ msgstr ""
 msgid "ISO language codes. See :ref:`doc_locales`"
 msgstr "Códigos ISO de idiomas. Véase :ref:`doc_locales`"
 
-msgid "Handling ``[url]`` tag clicks"
-msgstr "El manejo de clics de la etiqueta ``[url]``"
-
 msgid ""
-"By default, ``[url]`` tags do nothing when clicked. This is to allow "
-"flexible use of ``[url]`` tags rather than limiting them to opening URLs in "
-"a web browser."
+"For example, the following method can be connected to ``meta_clicked`` to "
+"open clicked URLs using the user's default web browser:"
 msgstr ""
-"Por defecto, las etiquetas ``[url]`` no hacen nada cuando se hace clic en "
-"ellas. Esto permite un uso flexible de las etiquetas ``[url]`` en lugar de "
-"limitarlas a la apertura de URL en un navegador web."
+"Por ejemplo, el siguiente método puede ser conectado a ``meta_clicked`` para "
+"abrir las URLs clicadas utilizando el navegador web predeterminado del "
+"usuario:"
 
 msgid "``Color(1, 1, 1, 1)``"
 msgstr "``Color(1, 1, 1, 1)``"

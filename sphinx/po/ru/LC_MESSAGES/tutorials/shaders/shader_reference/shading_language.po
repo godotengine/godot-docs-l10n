@@ -525,6 +525,12 @@ msgid "Global arrays"
 msgstr "Глобальные массивы"
 
 msgid ""
+"You can declare arrays in global scope as either ``const`` or ``uniform``:"
+msgstr ""
+"Массивы в глобальном пространстве можно объявлять как ``const`` или "
+"``uniform``:"
+
+msgid ""
 "Global arrays use the same syntax as local arrays, except with a ``const`` "
 "or ``uniform`` added to their declaration. Note that uniform arrays can't "
 "have a default value."
@@ -550,6 +556,15 @@ msgstr ""
 "использование константного значения происходит немного быстрее, чем "
 "использование uniform-переменных. Константы должны быть инициализированы при "
 "их объявлении."
+
+msgid ""
+"Constants cannot be modified and additionally cannot have hints, but "
+"multiple of them (if they have the same type) can be declared in a single "
+"expression."
+msgstr ""
+"Константы не могут быть изменены и, кроме того, не могут иметь подсказок, но "
+"несколько из них (если они имеют один и тот же тип) могут быть объявлены в "
+"одном выражении."
 
 msgid "Similar to variables, arrays can also be declared with ``const``."
 msgstr ""
@@ -602,6 +617,13 @@ msgstr "После объявления их можно инстанцирова
 
 msgid "Or use struct constructor for same purpose:"
 msgstr "Или используйте конструктор struct для той же цели:"
+
+msgid ""
+"Structs may contain other struct or array, you can also instantiate them as "
+"global constant:"
+msgstr ""
+"Структуры могут содержать другие структуры или массивы, вы также можете "
+"использовать их в качестве глобальных констант:"
 
 msgid "You can also pass them to functions:"
 msgstr "Вы также можете передавать их в функции:"

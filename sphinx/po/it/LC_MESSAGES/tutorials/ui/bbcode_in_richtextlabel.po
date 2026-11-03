@@ -105,13 +105,6 @@ msgstr ""
 "all'ispettore dopo aver selezionato un nodo RichTextLabel."
 
 msgid ""
-"For example, ``BBCode [color=green]test[/color]`` would render the word "
-"\"test\" with a green color."
-msgstr ""
-"Ad esempio, ``BBCode [color=green]test[/color]`` renderebbe la parola "
-"\"test\" in verde."
-
-msgid ""
 "Most BBCodes consist of 3 parts: the opening tag, the content and the "
 "closing tag. The opening tag delimits the start of the formatted part, and "
 "can also carry some configuration options. Some opening tags, like the "
@@ -153,22 +146,6 @@ msgstr "Usa:"
 
 msgid "Handling user input safely"
 msgstr "Gestione in modo sicuro dell'input utente"
-
-msgid ""
-"In a scenario where users may freely input text (such as chat in a "
-"multiplayer game), you should make sure users cannot use arbitrary BBCode "
-"tags that will be parsed by RichTextLabel. This is to avoid inappropriate "
-"use of formatting, which can be problematic if ``[url]`` tags are handled by "
-"your RichTextLabel (as players may be able to create clickable links to "
-"phishing sites or similar)."
-msgstr ""
-"In uno scenario in cui gli utenti possono inserire liberamente testo (ad "
-"esempio, nella chat di un gioco multigiocatore), è necessario assicurarsi "
-"che non possano utilizzare tag BBCode arbitrari che saranno interpretati da "
-"un RichTextLabel. Questo per evitare un uso improprio della formattazione, "
-"che può essere problematico se i tag ``[url]`` sono gestiti dal proprio "
-"RichTextLabel (poiché i giocatori potrebbero essere in grado di creare "
-"collegamenti cliccabili a siti di phishing o simili)."
 
 msgid ""
 "Example of unescaped user input resulting in BBCode injection (2nd line) and "
@@ -287,13 +264,6 @@ msgstr ""
 "recentemente per primi."
 
 msgid ""
-"The following script will result in the same visual output as using ``BBCode "
-"[color=green]test [i]example[/i][/color]``:"
-msgstr ""
-"Lo script seguente produrrà lo stesso risultato visivo ottenuto tramite "
-"``BBCode [color=green]test [i]example[/i][/color]``:"
-
-msgid ""
 "Do **not** set the ``text`` property directly when using formatting "
 "functions. Appending to the ``text`` property will erase all modifications "
 "made to the RichTextLabel using the ``append_text()``, ``push_[tag]()`` and "
@@ -332,9 +302,6 @@ msgstr ""
 "Fa in modo che ``{testo}`` utilizzi il font grassetto (o grassetto corsivo) "
 "di ``RichTextLabel``."
 
-msgid "``[b]{text}[/b]``"
-msgstr "``[b]{testo}[/b]``"
-
 msgid "**i**"
 msgstr "**i**"
 
@@ -344,26 +311,17 @@ msgstr ""
 "Fa in modo che ``{testo}`` utilizzi il font corsivo (o grassetto corsivo) di "
 "``RichTextLabel``."
 
-msgid "``[i]{text}[/i]``"
-msgstr "``[i]{testo}[/i]``"
-
 msgid "**u**"
 msgstr "**u**"
 
 msgid "Makes ``{text}`` underlined."
 msgstr "Rende ``{testo}`` sottolineato."
 
-msgid "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
-msgstr "``[u]{testo}[/u]`` ``[u color={colore}]{testo}[/u]``"
-
 msgid "**s**"
 msgstr "**s**"
 
 msgid "Makes ``{text}`` strikethrough."
 msgstr "Rende ``{testo}`` barrato."
-
-msgid "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
-msgstr "``[s]{testo}[/s]`` ``[s color={colore}]{testo}[/s]``"
 
 msgid "**code**"
 msgstr "**code**"
@@ -373,18 +331,12 @@ msgstr ""
 "Fa in modo che ``{testo}`` utilizzi il font a spaziatura fissa di "
 "``RichTextLabel``."
 
-msgid "``[code]{text}[/code]``"
-msgstr "``[code]{testo}[/code]``"
-
 msgid "**char**"
 msgstr "**char**"
 
 msgid "Adds Unicode character with hexadecimal UTF-32 ``{codepoint}``."
 msgstr ""
 "Aggiunge il carattere Unicode con il ``{codepoint}`` UTF-32 esadecimale."
-
-msgid "``[char={codepoint}]``"
-msgstr "``[char={codepoint}]``"
 
 msgid "**p**"
 msgstr "**p**"
@@ -396,12 +348,6 @@ msgstr ""
 "Aggiunge un nuovo paragrafo con ``{testo}``. Supporta opzioni di "
 "configurazione, "
 "consultare :ref:`doc_bbcode_in_richtextlabel_paragraph_options`."
-
-msgid "``[p]{text}[/p]``"
-msgstr "``[p]{testo}[/p]``"
-
-msgid "``[p {options}]{text}[/p]``"
-msgstr "``[p {opzioni}]{testo}[/p]``"
 
 msgid "**br**"
 msgstr "**br**"
@@ -415,9 +361,6 @@ msgstr ""
 "paragrafo. Se utilizzato dentro una lista, non crea un nuovo elemento di "
 "lista, ma aggiunge un'interruzione di riga dentro l'elemento attuale."
 
-msgid "``[br]``"
-msgstr "``[br]``"
-
 msgid "**hr**"
 msgstr "**hr**"
 
@@ -429,23 +372,11 @@ msgstr ""
 "opzioni di configurazione, "
 "consulta :ref:`doc_bbcode_in_richtextlabel_hr_options`."
 
-msgid "``[hr]``"
-msgstr "``[hr]``"
-
-msgid "``[hr {options}]``"
-msgstr "``[hr {opzioni}]``"
-
 msgid "**center**"
 msgstr "**center**"
 
 msgid "Makes ``{text}`` horizontally centered."
 msgstr "Rende ``{testo}`` centrato orizzontalmente."
-
-msgid "Same as ``[p align=center]``."
-msgstr "Uguale a ``[p align=center]``."
-
-msgid "``[center]{text}[/center]``"
-msgstr "``[center]{testo}[/center]``"
 
 msgid "**left**"
 msgstr "**left**"
@@ -453,23 +384,11 @@ msgstr "**left**"
 msgid "Makes ``{text}`` horizontally left-aligned."
 msgstr "Rende ``{testo}`` orizzontalmente allineato a sinistra."
 
-msgid "Same as ``[p align=left]``."
-msgstr "Uguale a ``[p align=left]``."
-
-msgid "``[left]{text}[/left]``"
-msgstr "``[left]{testo}[/left]``"
-
 msgid "**right**"
 msgstr "**right**"
 
 msgid "Makes ``{text}`` horizontally right-aligned."
 msgstr "Rende ``{testo}`` orizzontalmente allineato a destra."
-
-msgid "Same as ``[p align=right]``."
-msgstr "Uguale a ``[p align=right]``."
-
-msgid "``[right]{text}[/right]``"
-msgstr "``[right]{testo}[/right]``"
 
 msgid "**fill**"
 msgstr "**fill**"
@@ -478,24 +397,8 @@ msgid "Makes ``{text}`` fill the full width of ``RichTextLabel``."
 msgstr ""
 "Fa in modo che ``{testo}`` riempia l'intera larghezza di ``RichTextLabel``."
 
-msgid "Same as ``[p align=fill]``."
-msgstr "Uguale a ``[p align=fill]``."
-
-msgid "``[fill]{text}[/fill]``"
-msgstr "``[fill]{testo}[/fill]``"
-
 msgid "**indent**"
 msgstr "**indent**"
-
-msgid ""
-"Indents ``{text}`` once. The indentation width is the same as with ``[ul]`` "
-"or ``[ol]``, but without a bullet point."
-msgstr ""
-"Rientra ``{testo}`` una volta. La larghezza del rientro è la stessa di "
-"``[ul]`` o ``[ol]``, ma senza un punto elenco."
-
-msgid "``[indent]{text}[/indent]``"
-msgstr "``[indent]{testo}[/indent]``"
 
 msgid "**url**"
 msgstr "**url**"
@@ -517,15 +420,6 @@ msgstr ""
 "**Deve essere gestito con il segnale \"meta_clicked\" per avere effetto,** "
 "consulta :ref:`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
 
-msgid "``[url]{link}[/url]``"
-msgstr "``[url]{link}[/url]``"
-
-msgid "``[url={link}]{text}[/url]``"
-msgstr "``[url=<link>]{testo}[/url]``"
-
-msgid "``[url {options}]{text}[/url]``"
-msgstr "``[url {opzioni}]{testo}[/url]``"
-
 msgid "**hint**"
 msgstr "**hint**"
 
@@ -542,11 +436,6 @@ msgstr ""
 "``\\'`` come escape per le virgolette. Per utilizzare le virgolette singole "
 "per gli apostrofi nella stringa del suggerimento, è necessario utilizzare le "
 "virgolette doppie per racchiudere la stringa."
-
-msgid "``[hint=\"{tooltip text displayed on hover}\"]{text}[/hint]``"
-msgstr ""
-"``[hint=\"{suggerimento visualizzato al passaggio del mouse}\"]{testo}[/"
-"hint]``"
 
 msgid "**img**"
 msgstr "**img**"
@@ -605,21 +494,6 @@ msgstr ""
 "Supporta opzioni di configurazione, "
 "consultare :ref:`doc_bbcode_in_richtextlabel_image_options`."
 
-msgid "``[img]{path}[/img]``"
-msgstr "``[img]{percorso}[/img]``"
-
-msgid "``[img={width}]{path}[/img]``"
-msgstr "``[img=<larghezza>]{percorso}[/img]``"
-
-msgid "``[img={width}x{height}]{path}[/img]``"
-msgstr "``[img=<larghezza>x<altezza>]{percorso}[/img]``"
-
-msgid "``[img={valign}]{path}[/img]``"
-msgstr "``[img={valign}]{percorso}[/img]``"
-
-msgid "``[img {options}]{path}[/img]``"
-msgstr "``[img {opzioni}]{percorso}[/img]``"
-
 msgid "**font**"
 msgstr "**font**"
 
@@ -634,20 +508,11 @@ msgstr ""
 "Supporta opzioni di configurazione, "
 "consultare :ref:`doc_bbcode_in_richtextlabel_font_options`."
 
-msgid "``[font={path}]{text}[/font]``"
-msgstr "``[font={percorso}]{testo}[/font]``"
-
-msgid "``[font {options}]{text}[/font]``"
-msgstr "``[font {opzioni}]{testo}[/font]``"
-
 msgid "**font_size**"
 msgstr "**font_size**"
 
 msgid "Use custom font size for ``{text}``."
 msgstr "Utilizza una dimensione di font personalizzata per ``{testo}``."
-
-msgid "``[font_size={size}]{text}[/font_size]``"
-msgstr "``[font_size={dimensione}]{testo}[/font_size]``"
 
 msgid "**dropcap**"
 msgstr "**dropcap**"
@@ -658,33 +523,6 @@ msgid ""
 msgstr ""
 "Utilizza una dimensione di font e un colore diversi per ``{text}``, "
 "estendendo il contenuto del tag su più righe se è grande abbastanza."
-
-msgid ""
-"A `drop cap <https://www.computerhope.com/jargon/d/dropcap.htm>`__ is "
-"typically one uppercase character, but ``[dropcap]`` supports containing "
-"multiple characters. ``margins`` values are comma-separated and can be "
-"positive, zero or negative. Values must **not** be separated by spaces; "
-"otherwise, the values won't be parsed correctly. Negative top and bottom "
-"margins are particularly useful to allow the rest of the paragraph to "
-"display below the dropcap."
-msgstr ""
-"Un `capolettera <https://www.computerhope.com/jargon/d/dropcap.htm>`__ è in "
-"genere costituito da un solo carattere maiuscolo, ma ``[dropcap]`` supporta "
-"più di un carattere. I valori di ``margins`` sono separati da virgole e "
-"possono essere positivi, zero o negativi. I valori **non** si devono "
-"separare da spazi; altrimenti, i valori non saranno analizzati "
-"correttamente. I margini superiori e inferiori negativi sono particolarmente "
-"utili per permettere di visualizzare il resto del paragrafo sotto il "
-"capolettera."
-
-msgid ""
-"``[dropcap font={font} font_size={size} color={color} outline_size={size} "
-"outline_color={color} margins={left},{top},{right},{bottom}]{text}[/"
-"dropcap]``"
-msgstr ""
-"``[dropcap font={font} font_size={dimensione} color={colore} "
-"outline_size={dimensione} outline_color={colore} margins={sinistra},"
-"{superiore},{destro},{inferiore}]{testo}[/dropcap]``"
 
 msgid "**opentype_features**"
 msgstr "**opentype_features**"
@@ -699,14 +537,8 @@ msgstr ""
 "virgole. I valori **non** si devono separare da spazi; altrimenti, la lista "
 "non sarà analizzata correttamente."
 
-msgid "``[opentype_features={list}]``"
-msgstr "``[opentype_features={lista}]``"
-
 msgid "``{text}``"
 msgstr "``{testo}``"
-
-msgid "``[/opentype_features]``"
-msgstr "``[/opentype_features]``"
 
 msgid "**lang**"
 msgstr "**lang**"
@@ -726,9 +558,6 @@ msgstr ""
 "paragrafo. Alcuni file di font potrebbero contenere sostituti specifici per "
 "un alfabeto, nel qual caso saranno utilizzati essi."
 
-msgid "``[lang={code}]{text}[/lang]``"
-msgstr "``[lang={codice}]{testo}[/lang]``"
-
 msgid "**color**"
 msgstr "**color**"
 
@@ -741,9 +570,6 @@ msgstr ""
 "nome comune (consulta :ref:`doc_bbcode_in_richtextlabel_named_colors`) o in "
 "formato HEX (ad esempio ``#ff00ff``, "
 "consulta :ref:`doc_bbcode_in_richtextlabel_hex_colors`)."
-
-msgid "``[color={code/name}]{text}[/color]``"
-msgstr "``[color={codice/nome}]{testo}[/color]``"
 
 msgid "**bgcolor**"
 msgstr "**bgcolor**"
@@ -764,9 +590,6 @@ msgstr ""
 "eventuali problemi di sovrapposizione quando ci sono colori di sfondo su "
 "righe/colonne adiacenti."
 
-msgid "``[bgcolor={code/name}]{text}[/bgcolor]``"
-msgstr "``[bgcolor={codice/nome}]{testo}[/bgcolor]``"
-
 msgid "**fgcolor**"
 msgstr "**fgcolor**"
 
@@ -786,9 +609,6 @@ msgstr ""
 "interna su ``0`` per evitare eventuali problemi di sovrapposizione quando ci "
 "sono colori in primo piano su righe/colonne adiacenti."
 
-msgid "``[fgcolor={code/name}]{text}[/fgcolor]``"
-msgstr "``[fgcolor={codice/nome}]{testo}[/fgcolor]``"
-
 msgid "**outline_size**"
 msgstr "**outline_size**"
 
@@ -796,12 +616,6 @@ msgid "Use custom font outline size for ``{text}``."
 msgstr ""
 "Utilizza una dimensione personalizzata per il contorno del font di ``{text}"
 "``."
-
-msgid "``[outline_size={size}]``"
-msgstr "``[outline_size={dimensione}]``"
-
-msgid "``[/outline_size]``"
-msgstr "``[/outline_size]``"
 
 msgid "**outline_color**"
 msgstr "**outline_color**"
@@ -812,12 +626,6 @@ msgid ""
 msgstr ""
 "Utilizza un colore personalizzato per il contorno del font di ``{text}``. "
 "Accetta gli stessi valori del tag ``color``."
-
-msgid "``[outline_color={code/name}]``"
-msgstr "``[outline_color={codice/nome}]``"
-
-msgid "``[/outline_color]``"
-msgstr "``[/outline_color]``"
 
 msgid "**table**"
 msgstr "**table**"
@@ -851,20 +659,6 @@ msgstr ""
 "``{name}`` è un nome della tabella per le applicazioni assistive (lettore di "
 "schermo)."
 
-msgid "``[table={number}]{cells}[/table]``"
-msgstr "``[table={numero}]{celle}[/table]``"
-
-msgid "``[table={number},{valign}]{cells}[/table]``"
-msgstr "``[table={numero},{valign}]{celle}[/table]``"
-
-msgid "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
-msgstr "``[table={numero},{valign},{riga_allineamento}]{celle}[/table]``"
-
-msgid ""
-"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
-msgstr ""
-"``[table={number},{valign},{alignment_row} name={name}]{celle}[/table]``"
-
 msgid "**cell**"
 msgstr "**cell**"
 
@@ -886,15 +680,6 @@ msgstr ""
 "Supporta opzioni di configurazione, "
 "consultare :ref:`doc_bbcode_in_richtextlabel_cell_options`."
 
-msgid "``[cell]{text}[/cell]``"
-msgstr "``[cell]{testo}[/cell]``"
-
-msgid "``[cell={ratio}]{text}[/cell]``"
-msgstr "``[cell={rapporto}]{testo}[/cell]``"
-
-msgid "``[cell {options}]{text}[/cell]``"
-msgstr "``[cell {opzioni}]{testo}[/cell]``"
-
 msgid "**ul**"
 msgstr "**ul**"
 
@@ -912,12 +697,6 @@ msgstr ""
 "È possibile personalizzare il punto elenco attraverso il parametro ``{punto}"
 "``, consulta :ref:`doc_bbcode_in_richtextlabel_unordered_list_bullet`."
 
-msgid "``[ul]{items}[/ul]``"
-msgstr "``[ul]{elementi}[/ul]``"
-
-msgid "``[ul bullet={bullet}]{items}[/ul]``"
-msgstr "``[ul bullet={punto}]{elementi}[/ul]``"
-
 msgid "**ol**"
 msgstr "**ol**"
 
@@ -930,9 +709,6 @@ msgstr ""
 "(consulta :ref:`doc_bbcode_in_richtextlabel_list_types`). Gli ``{elementi}`` "
 "dell'elenco devono essere specificati inserendo un elemento per riga di "
 "testo."
-
-msgid "``[ol type={type}]{items}[/ol]``"
-msgstr "``[ol type={tipo}]{elementi}[/ol]``"
 
 msgid "**lb**, **rb**"
 msgstr "**lb**, **rb**"
@@ -948,9 +724,6 @@ msgstr ""
 "Questi sono tag a chiusura automatica, il che significa che non è necessario "
 "chiuderli (e non esiste alcun tag di chiusura ``[/lb]`` o ``[/rb]``)."
 
-msgid "``[lb]b[rb]text[lb]/b[rb]`` will display as ``[b]text[/b]``."
-msgstr "``[lb]b[rb]testo[lb]/b[rb]`` verrà visualizzato come ``[b]testo[/b]``."
-
 msgid ""
 "Several Unicode control characters can be added using their own self-closing "
 "tags."
@@ -963,69 +736,6 @@ msgstr "Ciò può facilitare la manutenzione rispetto a incollare i"
 
 msgid "control characters directly in the text."
 msgstr "caratteri di controllo direttamente nel testo."
-
-msgid ""
-"``[lrm]`` (left-to-right mark), ``[rlm]`` (right-to-left mark), ``[lre]`` "
-"(left-to-right embedding),"
-msgstr ""
-"``[lrm]`` (segno da sinistra a destra), ``[rlm]`` (segno da destra a "
-"sinistra), ``[lre]`` (integrazione da sinistra a destra),"
-
-msgid ""
-"``[rle]`` (right-to-left embedding), ``[lro]`` (left-to-right override), "
-"``[rlo]`` (right-to-left override),"
-msgstr ""
-"``[rle]`` (integrazione da destra a sinistra), ``[lro]`` (sovrascrittura da "
-"sinistra a destra), ``[rlo]`` (sovrascrittura da destra a sinistra),"
-
-msgid ""
-"``[pdf]`` (pop directional formatting), ``[alm]`` (Arabic letter mark), "
-"``[lri]`` (left-to-right isolate),"
-msgstr ""
-"``[pdf]`` (pop di formattazione direzionale), ``[alm]`` (segno di lettera "
-"araba), ``[lri]`` (isolamento da sinistra a destra),"
-
-msgid ""
-"``[rli]`` (right-to-left isolate), ``[fsi]`` (first strong isolate), "
-"``[pdi]`` (pop directional isolate),"
-msgstr ""
-"``[rli]`` (isolamento da destra a sinistra), ``[fsi]`` (primo isolamento "
-"forte), ``[pdi]`` (pop di isolamento direzionale),"
-
-msgid ""
-"``[zwj]`` (zero-width joiner), ``[zwnj]`` (zero-width non-joiner), ``[wj]`` "
-"(word joiner),"
-msgstr ""
-"``[zwj]`` (joiner di larghezza zero), ``[zwnj]`` (non-joiner di larghezza "
-"zero), ``[wj]`` (joiner di parole),"
-
-msgid "``[shy]`` (soft hyphen)"
-msgstr "``[shy]`` (trattino dolce)"
-
-msgid ""
-"Tags for bold (``[b]``) and italics (``[i]``) formatting work best if the "
-"appropriate custom fonts are set up in the RichTextLabelNode's theme "
-"overrides. If no custom bold or italic fonts are defined, `faux bold and "
-"italic fonts <https://fonts.google.com/knowledge/glossary/"
-"faux_fake_pseudo_synthesized>`__ will be generated by Godot. These fonts "
-"rarely look good in comparison to hand-made bold/italic font variants."
-msgstr ""
-"I tag per la formattazione in grassetto (``[b]``) e corsivo (``[i]``) "
-"funzionano meglio se i font personalizzati appropriati sono impostati nelle "
-"sostituzione del tema del nodo RichTextLabel. Se non sono definiti font "
-"personalizzati in grassetto o corsivo, Godot genererà `font fittizi in "
-"grassetto e corsivo <https://fonts.google.com/knowledge/glossary/"
-"faux_fake_pseudo_synthesized>`__. Questi font raramente hanno un aspetto "
-"gradevole rispetto alle varianti in grassetto/corsivo create a mano."
-
-msgid ""
-"The monospaced (``[code]``) tag **only** works if a custom font is set up in "
-"the RichTextLabel node's theme overrides. Otherwise, monospaced text will "
-"use the regular font."
-msgstr ""
-"Il tag monospace (``[code]``) funziona **solo** se è impostato un font "
-"personalizzato nelle sostituzioni del tema del nodo RichTextLabel. "
-"Altrimenti, il testo monospace utilizzerà il font regolare."
 
 msgid "There are no BBCode tags to control vertical centering of text yet."
 msgstr ""
@@ -1130,42 +840,12 @@ msgstr ""
 "prima tabulazione sarà a ``10`` pixel, la seconda a ``10 + 30 = 40`` pixel e "
 "la terza a ``10 + 30 + 10 = 50`` pixel dall'origine del RichTextLabel."
 
-msgid "Handling ``[url]`` tag clicks"
-msgstr "Gestione dei clic sul tag ``[url]``"
-
-msgid ""
-"By default, ``[url]`` tags do nothing when clicked. This is to allow "
-"flexible use of ``[url]`` tags rather than limiting them to opening URLs in "
-"a web browser."
-msgstr ""
-"Come predefinito, i tag ``[url]`` non fanno nulla quando vengono cliccati. "
-"Ciò rende flessibile l'uso dei tag ``[url]`` anziché limitarli all'apertura "
-"di URL in un browser web."
-
-msgid ""
-"To handle clicked ``[url]`` tags, connect the ``RichTextLabel`` "
-"node's :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` signal "
-"to a script function."
-msgstr ""
-"Per gestire i tag ``[url]`` cliccati, collega il segnale :ref:`meta_clicked "
-"<class_RichTextLabel_signal_meta_clicked>` del nodo ``RichTextLabel`` a una "
-"funzione di script."
-
 msgid ""
 "For example, the following method can be connected to ``meta_clicked`` to "
 "open clicked URLs using the user's default web browser:"
 msgstr ""
 "Ad esempio, il seguente metodo si può connettere a ``meta_clicked`` per "
 "aprire gli URL cliccati tramite il browser web predefinito dell'utente:"
-
-msgid ""
-"For more advanced use cases, it's also possible to store JSON in a ``[url]`` "
-"tag's option and parse it in the function that handles the ``meta_clicked`` "
-"signal. For example:"
-msgstr ""
-"Per casi d'uso più avanzati, è anche possibile memorizzare un JSON "
-"nell'opzione di un tag ``[url]`` e analizzarlo nella funzione che gestisce "
-"il segnale ``meta_clicked``. Ad esempio:"
 
 msgid "Horizontal rule options"
 msgstr "Opzioni di linea orizzontale"
@@ -1358,23 +1038,6 @@ msgid "Image and table vertical alignment"
 msgstr "Allineamento verticale di immagini e tabelle"
 
 msgid ""
-"When a vertical alignment value is provided with the ``[img]`` or "
-"``[table]`` tag the image/table will try to align itself against the "
-"surrounding text. Alignment is performed using a vertical point of the image "
-"and a vertical point of the text. There are 3 possible points on the image "
-"(``top``, ``center``, and ``bottom``) and 4 possible points on the text and "
-"table (``top``, ``center``, ``baseline``, and ``bottom``), which can be used "
-"in any combination."
-msgstr ""
-"Quando si specifica un valore di allineamento verticale con il tag ``[img]`` "
-"o ``[table]``, l'immagine/tabella tenterà di allinearsi al testo "
-"circostante. L'allineamento viene effettuato tramite un punto verticale "
-"dell'immagine e un punto verticale del testo. Sono disponibili 3 punti "
-"sull'immagine (``top``, ``center`` e ``bottom``) e 4 punti sul testo e sulla "
-"tabella (``top``, ``center``, ``baseline`` e ``bottom``), che si possono "
-"usare in qualsiasi combinazione."
-
-msgid ""
 "To specify both points, use their full or short names as a value of the "
 "image/table tag:"
 msgstr ""
@@ -1537,28 +1200,6 @@ msgstr ""
 msgid "Hexadecimal color codes"
 msgstr "Codici colori esadecimali"
 
-msgid ""
-"For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
-"``[color=#ffffff]white[/color]``. Shorthand RGB color codes such as ``#6f2`` "
-"(equivalent to ``#66ff22``) are also supported."
-msgstr ""
-"Per i colori RGB opachi, è supportato qualsiasi codice esadecimale valido a "
-"6 cifre, ad esempio ``[color=#ffffff]bianco[/color]``. Sono supportati anche "
-"i codici colore RGB abbreviati come ``#6f2`` (equivalente a ``#66ff22``)."
-
-msgid ""
-"For transparent RGB colors, any RGBA 8-digit hexadecimal code can be used, "
-"e.g. ``[color=#ffffff88]translucent white[/color]``. Note that the alpha "
-"channel is the **last** component of the color code, not the first one. "
-"Short RGBA color codes such as ``#6f28`` (equivalent to ``#66ff2288``) are "
-"supported as well."
-msgstr ""
-"Per i colori RGB trasparenti, è possibile usare qualsiasi codice esadecimale "
-"RGBA a 8 cifre, ad esempio ``[color=#ffffff88]bianco traslucido[/color]``. "
-"Si noti che il canale alfa è l'**ultimo** componente del codice colore, non "
-"il primo. Sono supportati anche codici colore RGBA brevi come ``#6f28`` "
-"(equivalente a ``#66ff2288``)."
-
 msgid "Cell options"
 msgstr "Opzioni di cella"
 
@@ -1617,23 +1258,6 @@ msgstr "Spaziatura sinistra, superiore, destra e inferiore della cella."
 
 msgid "Unordered list bullet"
 msgstr "Punto di elenco non ordinato"
-
-msgid ""
-"By default, the ``[ul]`` tag uses the ``U+2022`` \"Bullet\" Unicode glyph as "
-"the bullet character. This behavior is similar to web browsers. The bullet "
-"character can be customized using ``[ul bullet={bullet}]``. If provided, "
-"this ``{bullet}`` parameter must be a string with no enclosing quotes (for "
-"example, ``[bullet=*]``). You can add trailing spaces after the bullet "
-"character to increase the spacing between the bullet and the list item text."
-msgstr ""
-"Come predefinito, il tag ``[ul]`` utilizza il glifo Unicode ``U+2022`` "
-"\"Bullet\" come carattere di punto elenco. Questo comportamento è simile a "
-"quello dei browser web. È possibile personalizzare il punto utilizzando "
-"``[ul bullet={bullet}]``. Se specificato, il parametro ``{bullet}`` deve "
-"essere una stringa senza virgolette (ad esempio, ``[bullet=*]``). È "
-"possibile aggiungere spazi finali dopo il carattere di punto elenco per "
-"aumentare la spaziatura tra il punto elenco e il testo dell'elemento "
-"dell'elenco."
 
 msgid ""
 "See `Bullet (typography) on Wikipedia <https://en.wikipedia.org/wiki/"
@@ -1715,16 +1339,6 @@ msgid "Pulse"
 msgstr "Pulsazione"
 
 msgid ""
-"Pulse creates an animated pulsing effect that multiplies each character's "
-"opacity and color. It can be used to bring attention to specific text. Its "
-"tag format is ``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]``."
-msgstr ""
-"Crea un effetto pulsante animato che moltiplica l'opacità e il colore di "
-"ogni carattere. Può servire per attirare l'attenzione su un testo specifico. "
-"Il formato del tag è ``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/"
-"pulse]``."
-
-msgid ""
 "``freq`` controls the frequency of the half-pulsing cycle (higher is "
 "faster). A full pulsing cycle takes ``2 * (1.0 / freq)`` seconds. ``color`` "
 "is the target color multiplier for blinking. The default mostly fades out "
@@ -1741,13 +1355,6 @@ msgstr ""
 
 msgid "Wave"
 msgstr "Onda"
-
-msgid ""
-"Wave makes the text go up and down. Its tag format is ``[wave amp=50.0 "
-"freq=5.0 connected=1]{text}[/wave]``."
-msgstr ""
-"Fa muovere il testo su e giù. Il suo formato del tag è ``[wave amp=50.0 "
-"freq=5.0 connected=1]{text}[/wave]``."
 
 msgid ""
 "``amp`` controls how high and low the effect goes, and ``freq`` controls how "
@@ -1771,13 +1378,6 @@ msgid "Tornado"
 msgstr "Tornado"
 
 msgid ""
-"Tornado makes the text move around in a circle. Its tag format is ``[tornado "
-"radius=10.0 freq=1.0 connected=1]{text}[/tornado]``."
-msgstr ""
-"Fa muovere il testo in modo circolare. Il formato del tag è ``[tornado "
-"radius=10.0 freq=1.0 connected=1]{text}[/tornado]``."
-
-msgid ""
 "``radius`` is the radius of the circle that controls the offset, ``freq`` is "
 "how fast the text moves in a circle. A ``freq`` value of ``0`` will pause "
 "the animation, while negative ``freq`` will play the animation backwards. If "
@@ -1799,13 +1399,6 @@ msgid "Shake"
 msgstr "Scuoti"
 
 msgid ""
-"Shake makes the text shake. Its tag format is ``[shake rate=20.0 level=5 "
-"connected=1]{text}[/shake]``."
-msgstr ""
-"Fa tremare il testo. Il formato del tag è ``[shake rate=20.0 level=5 "
-"connected=1]{text}[/shake]``."
-
-msgid ""
 "``rate`` controls how fast the text shakes, ``level`` controls how far the "
 "text is offset from the origin. If ``connected`` is ``1`` (default), glyphs "
 "with ligatures will be moved together. If ``connected`` is ``0``, each glyph "
@@ -1823,13 +1416,6 @@ msgid "Fade"
 msgstr "Dissolvi"
 
 msgid ""
-"Fade creates a static fade effect that multiplies each character's opacity. "
-"Its tag format is ``[fade start=4 length=14]{text}[/fade]``."
-msgstr ""
-"Crea un effetto di dissolvenza statico che moltiplica l'opacità di ogni "
-"carattere. Il formato del tag è ``[fade start=4 length=14]{text}[/fade]``."
-
-msgid ""
 "``start`` controls the starting position of the falloff relative to where "
 "the fade command is inserted, ``length`` controls over how many characters "
 "should the fade out take place."
@@ -1840,13 +1426,6 @@ msgstr ""
 
 msgid "Rainbow"
 msgstr "Arcobaleno"
-
-msgid ""
-"Rainbow gives the text a rainbow color that changes over time. Its tag "
-"format is ``[rainbow freq=1.0 sat=0.8 val=0.8 speed=1.0]{text}[/rainbow]``."
-msgstr ""
-"Assegna al testo un colore arcobaleno che cambia nel tempo. Il formato del "
-"tag è ``[rainbow freq=1.0 sat=0.8 val=0.8 speed=1.0]{text}[/rainbow]``."
 
 msgid ""
 "``freq`` determines how many letters the rainbow extends over before it "
@@ -1987,22 +1566,6 @@ msgid ""
 msgstr ""
 "``glyph_index`` e ``font`` sono il glifo che viene disegnato e la risorsa "
 "font utilizzata per disegnarlo."
-
-msgid ""
-"Finally, ``env`` is a :ref:`class_Dictionary` of parameters assigned to a "
-"given custom effect. You can use :ref:`get() <class_Dictionary_method_get>` "
-"with an optional default value to retrieve each parameter, if specified by "
-"the user. For example ``[custom_fx spread=0.5 color=#FFFF00]test[/"
-"custom_fx]`` would have a float ``spread`` and Color ``color`` parameters in "
-"its ``env`` Dictionary. See below for more usage examples."
-msgstr ""
-"Infine, ``env`` è un :ref:`class_Dictionary` di parametri assegnati a un "
-"determinato effetto personalizzato. È possibile usare :ref:`get() "
-"<class_Dictionary_method_get>` con un valore predefinito facoltativo per "
-"recuperare ciascun parametro, se specificato dall'utente. Ad esempio, "
-"``[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]`` avrebbe i parametri "
-"float ``spread`` e Color ``color`` nel suo dizionario ``env``. Vedere in "
-"seguito per ulteriori esempi di utilizzo."
 
 msgid ""
 "The last thing to note about this function is that it is necessary to return "

@@ -17,14 +17,8 @@ msgstr "Android 的 Gradle 构建"
 msgid "There are some reasons why you may want to do this:"
 msgstr "需要使用这种方法的原因可能有："
 
-msgid "Modify the project before it's built."
-msgstr "在构建项目前进行修改。"
-
-msgid "Add external SDKs that build with your project."
-msgstr "添加需要与项目一同构建的外部 SDK。"
-
-msgid "Go to the Project menu, and install the *Gradle Build* template:"
-msgstr "前往“项目”菜单，安装 *Gradle 构建*\\ 模板："
+msgid "Set up the Gradle build environment"
+msgstr "配置 Gradle 构建环境"
 
 msgid ""
 "Make sure export templates are downloaded. If not, this menu will help you "
@@ -39,12 +33,55 @@ msgstr ""
 "``res://android/build`` 下会生成一个基于 Gradle 的 Android 项目。你不需要编辑"
 "里面的文件，除非真的有修改这个项目的需求。"
 
+msgid "Performing Gradle builds from the Android editor"
+msgstr "在 Android 编辑器中执行 Gradle 构建"
+
+msgid ""
+"This application is *not* required when exporting from the Android editor "
+"with pre-built APK templates, or when exporting to other platforms."
+msgstr ""
+"当从支持预置 APK 模板的 Android 编辑器进行导出，或向其他平台导出时， *无需* "
+"安装此应用程序。"
+
+msgid ""
+"To set up the build environment, open the app and follow these instructions:"
+msgstr "如需设置构建环境，请打开应用程序并按照以下步骤操作："
+
+msgid "Ensure you have an active Internet connection."
+msgstr "请确保您拥有有效的互联网连接。"
+
+msgid "Open the :menu:`Rootfs` tab from the bottom navigation bar."
+msgstr "从底部导航栏中打开 :menu:`Rootfs` 选项卡。"
+
+msgid "Click :button:`Install Rootfs`."
+msgstr "点击 :button:`Install Rootfs` 。"
+
+msgid "Enabling the Gradle build and exporting"
+msgstr "启用 Gradle 构建与导出"
+
 msgid ""
 "When setting up the Android project in the **Project > Export** dialog, "
 "**Gradle Build** needs to be enabled:"
 msgstr ""
 "在\\ **项目 > 导出**\\ 对话框中设置 Android 项目时，需要启用 **Gradle 构建"
 "**\\ ："
+
+msgid ""
+"From now on, attempting to export the project or one-click deploy will call "
+"the Gradle build system to generate fresh templates. The templates built "
+"will be used automatically afterwards, so no further configuration is needed."
+msgstr ""
+"从现在起，尝试导出项目或执行一键部署时，系统将调用 Gradle 构建系统来生成新的"
+"模板。生成的模板将自动生效，因此无需进行任何额外配置。"
+
+msgid ""
+"When using the Gradle Android build system, assets that are placed within a "
+"folder whose name begins with an underscore will not be included in the "
+"generated APK. This does not apply to assets whose *file* name begins with "
+"an underscore."
+msgstr ""
+"在使用 Gradle Android 构建系统时，置于名称以下划线开头的文件夹中的资源将不会"
+"被包含在生成的 APK 文件中；但此规则不适用于 *文件* 名本身以下划线开头的资源。"
 
 msgid ""
 "For example, ``_example/image.png`` will **not** be included as an asset, "

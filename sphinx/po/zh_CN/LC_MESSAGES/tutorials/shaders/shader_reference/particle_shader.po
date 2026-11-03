@@ -179,6 +179,18 @@ msgid ""
 msgstr ""
 "这些属性既可以在 ``start()`` 函数中访问，也可以在 ``process()`` 函数中访问。"
 
+msgid ""
+"When using the built-in :ref:`class_ParticleProcessMaterial`, ``USERDATA1`` "
+"is defined with the following value in the built-in:"
+msgstr ""
+"当使用内置的 :ref:`class_ParticleProcessMaterial` 时， ``USERDATA1`` 在该内置"
+"模块中被定义为以下值："
+
+msgid ""
+"**w**: Accumulated angle from angular velocity in radians, as applied by the "
+"angular velocity texture."
+msgstr "**w**：由角速度（以弧度为单位）累积而成的角度，由角速度纹理应用。"
+
 msgid "Function"
 msgstr "函数"
 
@@ -214,6 +226,9 @@ msgstr "发射器变换（用于非本地坐标系）。"
 
 msgid "in uint **RANDOM_SEED**"
 msgstr "in uint **RANDOM_SEED**"
+
+msgid "Random seed used as a base for randomness."
+msgstr "随机数种子，用作生成随机数的基础。"
 
 msgid "inout bool **ACTIVE**"
 msgstr "inout bool **ACTIVE**"

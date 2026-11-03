@@ -11,9 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "HTML5 shell class reference"
-msgstr "Référence de classe shell HTML5"
-
 msgid ""
 "Projects exported for the Web expose the :js:class:`Engine` class to the "
 "JavaScript environment, that allows fine control over the engine's start-up "
@@ -53,9 +50,6 @@ msgstr "Méthodes statiques"
 msgid "Promise"
 msgstr "Promise"
 
-msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-msgstr ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-
 msgid "void"
 msgstr "void"
 
@@ -71,6 +65,9 @@ msgid ""
 msgstr ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
+
+msgid "Array.<string>"
+msgstr "Array.<string>"
 
 msgid "Instance Methods"
 msgstr "Méthodes d'instance"
@@ -345,9 +342,6 @@ msgstr "number"
 msgid ":js:attr:`canvasResizePolicy`"
 msgstr ":js:attr:`canvasResizePolicy`"
 
-msgid "Array.<string>"
-msgstr "Array.<string>"
-
 msgid ":js:attr:`args`"
 msgstr ":js:attr:`args`"
 
@@ -381,13 +375,6 @@ msgstr "``const MaConfig = { executable: 'godot', unloadAfterInit: false }``"
 
 msgid "**Property Descriptions**"
 msgstr "**Description des propriétés**"
-
-msgid ""
-"Whether the unload the engine automatically after the instance is "
-"initialized."
-msgstr ""
-"Indique si le moteur est déchargé automatiquement après l'initialisation de "
-"l'instance."
 
 msgid "value"
 msgstr "valeur"
@@ -477,6 +464,12 @@ msgstr ""
 
 msgid "``[]``"
 msgstr "``[]``"
+
+msgid "``false``"
+msgstr "``false``"
+
+msgid "``0``"
+msgstr "``0``"
 
 msgid "A callback function for handling Godot's ``OS.execute`` calls."
 msgstr "Une fonction de rappel pour gérer les appels ``OS.execute`` de Godot."

@@ -124,11 +124,8 @@ msgstr ""
 "Como o AudioStreamPlayback é controlado pela thread de áudio, a E/S e a "
 "alocação dinâmica de memória são proibidas."
 
-msgid "audiostreamplayer_mytone.h"
-msgstr "audiostreamplayer_mytone.h"
-
-msgid "audiostreamplayer_mytone.cpp"
-msgstr "audiostreamplayer_mytone.cpp"
+msgid "Usage"
+msgstr "Uso"
 
 msgid "Resampling"
 msgstr "Reamostragem"
@@ -152,12 +149,6 @@ msgstr ""
 "Em vez de sobrecarregar ``mix``, o AudioStreamPlaybackResampled usa "
 "``_mix_internal`` para consultar os AudioFrames e "
 "``get_stream_sampling_rate`` para consultar a taxa de mixagem atual."
-
-msgid "mytone_audiostream_resampled.h"
-msgstr "mytone_audiostream_resampled.h"
-
-msgid "mytone_audiostream_resampled.cpp"
-msgstr "mytone_audiostream_resampled.cpp"
 
 msgid ""
 "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"

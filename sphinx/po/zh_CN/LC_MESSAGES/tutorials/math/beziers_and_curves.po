@@ -120,13 +120,6 @@ msgstr ""
 msgid "``point0 = p0``: Is the first point, the source"
 msgstr "``point0 = p0``\\ ：是第一个点，即源"
 
-msgid "``control0 = p1 - p0``: Is a vector relative to the first control point"
-msgstr "``control0 = p1 - p0``\\ ：是相对于第一个控制点的向量"
-
-msgid ""
-"``control1 = p3 - p2``: Is a vector relative to the second control point"
-msgstr "``control1 = p3 - p2``\\ ：是相对于第二个控制点的向量"
-
 msgid "``point1 = p3``: Is the second point, the destination"
 msgstr "``point1 = p3``\\ ：是第二个点，即终点"
 
@@ -137,6 +130,32 @@ msgid ""
 msgstr ""
 "使用这种方式, 有两个点和两个控制点, 它们是各自点的相对向量. 如果你以前用过图"
 "形或动画软件, 这可能看起来很熟悉:"
+
+msgid ""
+"This is how graphics software present Bezier curves to the users, and how "
+"they work and look in Godot."
+msgstr ""
+"这就是图形软件向用户展示贝塞尔曲线的方式，也是这些曲线在 Godot 中的运作原理与"
+"显示效果。"
+
+msgid "Curve2D, Curve3D, Path2D, and Path3D"
+msgstr "Curve2D, Curve3D, Path2D, and Path3D"
+
+msgid ""
+"In Godot, there are two resources types to efficiently store curves of any "
+"length: :ref:`Curve2D <class_Curve2D>` and :ref:`Curve3D <class_Curve3D>` "
+"(for 2D and 3D respectively)."
+msgstr ""
+"在Godot中，提供了两种资源类型用于高效存储任意长度的曲线：:ref:`Curve2D "
+"<class_Curve2D>` 和 :ref:`Curve3D <class_Curve3D>` （分别对应二维和三维曲"
+"线）。"
+
+msgid ""
+"They are often associated with their respective nodes: :ref:`Path2D "
+"<class_Path2D>` and :ref:`Path3D <class_Path3D>`."
+msgstr ""
+"它们通常与各自的节点相关联：:ref:`Path2D <class_Path2D>` 和 :ref:`Path3D "
+"<class_Path3D>` 。"
 
 msgid ""
 "Using them, however, may not be completely obvious, so following is a "

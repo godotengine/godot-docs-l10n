@@ -150,6 +150,14 @@ msgstr ""
 "可以使用 ``--success`` (``-s``) 选项启用成功断言输出，并且可以与上面的任意过"
 "滤选项组合使用，例如："
 
+msgid ""
+"Specific tests can be skipped with corresponding ``-exclude`` options. As of "
+"now, some tests include random stress tests which take a while to execute. "
+"In order to skip those kinds of tests, run the following command:"
+msgstr ""
+"通过相应的 ``-exclude`` 选项可跳过特定测试。目前，部分测试包含随机压力测试，"
+"这些测试执行时间较长。如需跳过此类测试，请运行以下命令："
+
 msgid "Writing tests"
 msgstr "编写测试"
 

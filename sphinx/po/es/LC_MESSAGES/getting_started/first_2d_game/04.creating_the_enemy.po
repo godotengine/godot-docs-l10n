@@ -23,6 +23,13 @@ msgstr ""
 "comportamiento no será muy complejo: los enemigos aparecerán al azar en los "
 "bordes de la pantalla y se moverán en una dirección al azar en línea recta."
 
+msgid ""
+"We'll create a ``Mob`` scene, which we can then *instantiate* to create any "
+"number of independent mobs in the game."
+msgstr ""
+"Crearemos una escena ``Mob`` que después podremos *instanciar* para crear "
+"cualquier número de enemigos independientes en el juego."
+
 msgid "Node setup"
 msgstr "Configuración del Nodo"
 
@@ -130,6 +137,9 @@ msgstr "Guarda la escena."
 msgid "Enemy script"
 msgstr "Script del enemigo"
 
+msgid "Attach a script to the ``Mob`` node like this:"
+msgstr "Añade un script al nodo ``Mob`` de esta manera:"
+
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we play the "
 "animation and randomly choose one of the three animation types:"
@@ -181,6 +191,9 @@ msgid ""
 msgstr ""
 "``queue_free()`` es una función que esencialmente 'libera' o elimina el nodo "
 "al final del marco."
+
+msgid "This completes the ``Mob`` scene."
+msgstr "Esto completa la escena ``Mob``."
 
 msgid ""
 "With the player and enemies ready, in the next part, we'll bring them "

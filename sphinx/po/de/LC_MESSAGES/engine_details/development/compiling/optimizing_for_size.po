@@ -64,9 +64,9 @@ msgid ""
 "from your distribution then running:"
 msgstr ""
 "Wenn Sie Windows- (MinGW), Linux- oder macOS-Binärdateien aus dem Quellcode "
-"erstellen, denken Sie daran, Debug-Symbole aus den Binärdateien zu "
-"entfernen, indem Sie das Paket ``strip`` aus Ihrer Distribution installieren "
-"und dann ausführen:"
+"erstellen, denken Sie daran, Debug-Icons aus den Binärdateien zu entfernen, "
+"indem Sie das Paket ``strip`` aus Ihrer Distribution installieren und dann "
+"ausführen:"
 
 msgid "On Windows, ``strip.exe`` is included in most MinGW toolchain setups."
 msgstr ""
@@ -98,7 +98,7 @@ msgstr ""
 "stattdessen ``debug_symbols=no`` in der SCons-Kommandozeile beim Kompilieren."
 
 msgid "Compiling with link-time optimization"
-msgstr "Kompilieren mit Link-Time Optimierung"
+msgstr "Mit Link-Time-Optimierung kompilieren"
 
 msgid "**Space savings:** High"
 msgstr "**Platzersparnis:** Hoch"
@@ -116,7 +116,7 @@ msgstr ""
 "verwendet werden:"
 
 msgid "Optimizing for size instead of speed"
-msgstr "Optimieren auf Größe statt Geschwindigkeit"
+msgstr "Auf Größe statt Geschwindigkeit optimieren"
 
 msgid "**Performed in official builds:** Yes, but only for web builds"
 msgstr "**Durchgeführt in offiziellen Builds:** Ja, aber nur für Web-Builds"
@@ -127,10 +127,10 @@ msgstr ""
 "standardmäßig."
 
 msgid "**Performed in official builds:** No"
-msgstr "**Durchgeführt in offiziellen Builds:** Nein"
+msgstr "**In offiziellen Builds ausgeführt:** Nein"
 
 msgid "Disabling advanced text server"
-msgstr "Deaktivieren des erweiterten Text-Servers"
+msgstr "Erweiterten Textserver deaktivieren"
 
 msgid ""
 "By default, Godot uses an advanced text server with the support for the "
@@ -158,7 +158,7 @@ msgid ""
 "text server can be used as a lightweight alternative to the default advanced "
 "text server:"
 msgstr ""
-"Godot bietet einen Fallback-Text-Server, der standardmäßig nicht kompiliert "
+"Godot bietet einen Fallback-Textserver, der standardmäßig nicht kompiliert "
 "ist. Dieser Textserver kann als leichtgewichtige Alternative zum "
 "standardmäßig verwendeten erweiterten Textserver genutzt werden:"
 
@@ -167,14 +167,14 @@ msgid ""
 "in your project, the fallback text server should suffice."
 msgstr ""
 "Wenn Sie in Ihrem Projekt nur lateinische, griechische und kyrillische "
-"Sprachen unterstützen wollen, sollte der Fallback-Text-Server ausreichen."
+"Sprachen unterstützen möchten, sollte der Fallback-Textserver ausreichen."
 
 msgid ""
 "This fallback text server can also process large amounts of text more "
 "quickly than the advanced text server. This makes the fallback text server a "
 "good fit for mobile/web projects."
 msgstr ""
-"Dieser Fallback-Text-Server kann auch große Mengen an Text schneller "
+"Dieser Fallback-Textserver kann auch große Mengen an Text schneller "
 "verarbeiten als der erweiterte Textserver. Dadurch eignet sich der Fallback-"
 "Textserver gut für Mobile-/Webprojekte."
 
@@ -195,25 +195,8 @@ msgstr "3D abschalten"
 msgid "**Space savings:** Moderate"
 msgstr "**Platzersparnis:** Mäßig"
 
-msgid ""
-"For 2D games, having the whole 3D engine available usually makes no sense. "
-"Because of this, there is a build flag to disable it:"
-msgstr ""
-"Bei 2D-Spielen macht es normalerweise keinen Sinn, die gesamte 3D-Engine zur "
-"Verfügung zu haben. Aus diesem Grund gibt es ein Build-Flag, um dies zu "
-"deaktivieren:"
-
-msgid ""
-"Tools must be disabled in order to use this flag, as the editor is not "
-"designed to operate without 3D support. Without it, the binary size can be "
-"reduced by about 15%."
-msgstr ""
-"Die Tools müssen deaktiviert werden, um dieses Flag zu verwenden, da der "
-"Editor nicht für den Betrieb ohne 3D-Unterstützung ausgelegt ist. Ohne "
-"dieses Flag kann die Binärgröße um etwa 15 % reduziert werden."
-
 msgid "Disabling advanced GUI objects"
-msgstr "Deaktivieren erweiterter GUI-Objekte"
+msgstr "Erweiterte GUI-Objekte deaktivieren"
 
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
@@ -226,11 +209,101 @@ msgstr ""
 msgid "This is everything that will be disabled:"
 msgstr "Dies ist alles, was deaktiviert werden wird:"
 
+msgid ":ref:`class_AcceptDialog`"
+msgstr ":ref:`class_AcceptDialog`"
+
+msgid ":ref:`class_CharFXTransform`"
+msgstr ":ref:`class_CharFXTransform`"
+
+msgid ":ref:`class_CodeEdit`"
+msgstr ":ref:`class_CodeEdit`"
+
+msgid ":ref:`class_CodeHighlighter`"
+msgstr ":ref:`class_CodeHighlighter`"
+
+msgid ":ref:`class_ColorPicker`"
+msgstr ":ref:`class_ColorPicker`"
+
+msgid ":ref:`class_ColorPickerButton`"
+msgstr ":ref:`class_ColorPickerButton`"
+
+msgid ":ref:`class_ConfirmationDialog`"
+msgstr ":ref:`class_ConfirmationDialog`"
+
+msgid ":ref:`class_FileDialog`"
+msgstr ":ref:`class_FileDialog`"
+
+msgid ":ref:`class_FoldableContainer`"
+msgstr ":ref:`class_FoldableContainer`"
+
+msgid ":ref:`class_FoldableGroup`"
+msgstr ":ref:`class_FoldableGroup`"
+
+msgid ":ref:`class_GraphEdit`"
+msgstr ":ref:`class_GraphEdit`"
+
+msgid ":ref:`class_GraphElement`"
+msgstr ":ref:`class_GraphElement`"
+
+msgid ":ref:`class_GraphFrame`"
+msgstr ":ref:`class_GraphFrame`"
+
+msgid ":ref:`class_GraphNode`"
+msgstr ":ref:`class_GraphNode`"
+
+msgid ":ref:`class_HSplitContainer`"
+msgstr ":ref:`class_HSplitContainer`"
+
+msgid ":ref:`class_MenuBar`"
+msgstr ":ref:`class_MenuBar`"
+
+msgid ":ref:`class_MenuButton`"
+msgstr ":ref:`class_MenuButton`"
+
+msgid ":ref:`class_OptionButton`"
+msgstr ":ref:`class_OptionButton`"
+
+msgid ":ref:`class_RichTextEffect`"
+msgstr ":ref:`class_RichTextEffect`"
+
+msgid ":ref:`class_RichTextLabel`"
+msgstr ":ref:`class_RichTextLabel`"
+
+msgid ":ref:`class_SpinBox`"
+msgstr ":ref:`class_SpinBox`"
+
+msgid ":ref:`class_SplitContainer`"
+msgstr ":ref:`class_SplitContainer`"
+
+msgid ":ref:`class_SubViewportContainer`"
+msgstr ":ref:`class_SubViewportContainer`"
+
+msgid ":ref:`class_SyntaxHighlighter`"
+msgstr ":ref:`class_SyntaxHighlighter`"
+
+msgid ":ref:`class_TextEdit`"
+msgstr ":ref:`class_TextEdit`"
+
+msgid ":ref:`class_Tree`"
+msgstr ":ref:`class_Tree`"
+
+msgid ":ref:`class_TreeItem`"
+msgstr ":ref:`class_TreeItem`"
+
+msgid ":ref:`class_VSplitContainer`"
+msgstr ":ref:`class_VSplitContainer`"
+
+msgid "Disabling physics engines"
+msgstr "Physik-Engines deaktivieren"
+
+msgid "**Space savings:** Low to moderate"
+msgstr "**Platzersparnis:** Gering bis mäßig"
+
 msgid "Disabling unwanted modules"
 msgstr "Unerwünschte Module deaktivieren"
 
 msgid "**Space savings:** Very low to moderate depending on modules"
-msgstr "**Platzersparnis:** Sehr gering bis mäßig je nach Modulen"
+msgstr "**Platzersparnis:** Sehr gering bis mäßig, je nach Modulen"
 
 msgid "**Difficulty:** Medium to hard depending on modules"
 msgstr "**Schwierigkeit:** Mittel bis schwer, je nach Modulen"
@@ -257,14 +330,14 @@ msgid ""
 "following:"
 msgstr ""
 "Alternativ können Sie eine Liste von deaktivierten Modulen bereitstellen, "
-"indem Sie ``custom.py`` im Stammverzeichnis des Quelltextes erstellen, mit "
+"indem Sie ``custom.py`` im Stammverzeichnis des Quellcodees erstellen, mit "
 "einem Inhalt ähnlich wie folgt:"
 
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:`doc_overriding_build_options`."
 
 msgid "Optimizing the distribution of your project"
-msgstr "Optimierung der Erstellung Ihres Projekts"
+msgstr "Die Verteilung Ihres Projekts optimieren"
 
 msgid "Desktop"
 msgstr "Desktop"

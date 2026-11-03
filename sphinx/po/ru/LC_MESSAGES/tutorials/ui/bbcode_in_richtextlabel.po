@@ -31,6 +31,20 @@ msgstr ""
 "использовать :ref:`class_RichTextLabel`."
 
 msgid ""
+":ref:`class_RichTextLabel` allows for complex formatting of text using a "
+"markup syntax or the built-in API. It uses BBCodes for the markup syntax, a "
+"system of tags that designate formatting rules for a part of the text. You "
+"may be familiar with them if you ever used forums (also known as *bulletin "
+"boards*, hence the \"BB\" in \"BBCode\")."
+msgstr ""
+":ref:`class_RichTextLabel` позволяет осуществлять сложное форматирование "
+"текста с помощью синтаксиса разметки или встроенного API. Для синтаксиса "
+"разметки используются BBCodes — система тегов, определяющих правила "
+"форматирования фрагментов текста. Возможно, вы знакомы с ними, если когда-"
+"либо пользовались форумами (также известными как *bulletin boards*, отсюда и "
+"«BB» в «BBCode»)."
+
+msgid ""
 "Unlike Label, RichTextLabel also comes with its own vertical scrollbar. This "
 "scrollbar is automatically displayed if the text does not fit within the "
 "control's size. The scrollbar can be disabled by unchecking the **Scroll "
@@ -104,13 +118,6 @@ msgstr ""
 "после выбора узла RichTextLabel."
 
 msgid ""
-"For example, ``BBCode [color=green]test[/color]`` would render the word "
-"\"test\" with a green color."
-msgstr ""
-"Например, ``BBCode [color=green]test[/color]`` отобразит слово \"test\" "
-"зеленым цветом."
-
-msgid ""
 "Most BBCodes consist of 3 parts: the opening tag, the content and the "
 "closing tag. The opening tag delimits the start of the formatted part, and "
 "can also carry some configuration options. Some opening tags, like the "
@@ -150,22 +157,6 @@ msgstr "Используйте:"
 
 msgid "Handling user input safely"
 msgstr "Безопасная обработка пользовательского ввода"
-
-msgid ""
-"In a scenario where users may freely input text (such as chat in a "
-"multiplayer game), you should make sure users cannot use arbitrary BBCode "
-"tags that will be parsed by RichTextLabel. This is to avoid inappropriate "
-"use of formatting, which can be problematic if ``[url]`` tags are handled by "
-"your RichTextLabel (as players may be able to create clickable links to "
-"phishing sites or similar)."
-msgstr ""
-"В ситуации, когда пользователи могут свободно вводить текст (например, в "
-"чате многопользовательской игры), следует убедиться, что пользователи не "
-"могут использовать произвольные теги BBCode, которые будут обработаны "
-"RichTextLabel. Это необходимо для предотвращения ненадлежащего использования "
-"форматирования, которое может привести к проблемам, если теги ``[url]`` "
-"обрабатываются вашим RichTextLabel (поскольку игроки могут создавать "
-"кликабельные ссылки на фишинговые сайты и т.п.)."
 
 msgid ""
 "Example of unescaped user input resulting in BBCode injection (2nd line) and "
@@ -283,13 +274,6 @@ msgstr ""
 "последние начатые теги."
 
 msgid ""
-"The following script will result in the same visual output as using ``BBCode "
-"[color=green]test [i]example[/i][/color]``:"
-msgstr ""
-"Следующий скрипт даст тот же визуальный результат, что и при использовании "
-"``BBCode [color=green]test [i]example[/i][/color]``:"
-
-msgid ""
 "Do **not** set the ``text`` property directly when using formatting "
 "functions. Appending to the ``text`` property will erase all modifications "
 "made to the RichTextLabel using the ``append_text()``, ``push_[tag]()`` and "
@@ -327,9 +311,6 @@ msgstr ""
 "Заставляет ``{text}`` использовать жирный (или жирный курсив) шрифт "
 "``RichTextLabel``."
 
-msgid "``[b]{text}[/b]``"
-msgstr "``[b]{text}[/b]``"
-
 msgid "**i**"
 msgstr "**i**"
 
@@ -339,26 +320,17 @@ msgstr ""
 "Заставляет ``{text}`` использовать курсив (или полужирный курсив) шрифта "
 "``RichTextLabel``."
 
-msgid "``[i]{text}[/i]``"
-msgstr "``[i]{text}[/i]``"
-
 msgid "**u**"
 msgstr "**u**"
 
 msgid "Makes ``{text}`` underlined."
 msgstr "Делает ``{text}`` подчеркнутым."
 
-msgid "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
-msgstr "``[u]{text}[/u]`` ``[u color={color}]{text}[/u]``"
-
 msgid "**s**"
 msgstr "**s**"
 
 msgid "Makes ``{text}`` strikethrough."
 msgstr "Делает ``{text}`` зачеркнутым."
-
-msgid "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
-msgstr "``[s]{text}[/s]`` ``[s color={color}]{text}[/s]``"
 
 msgid "**code**"
 msgstr "**code**"
@@ -367,18 +339,12 @@ msgid "Makes ``{text}`` use the mono font of ``RichTextLabel``."
 msgstr ""
 "Заставляет ``{text}`` использовать монохромный шрифт ``RichTextLabel``."
 
-msgid "``[code]{text}[/code]``"
-msgstr "``[code]{text}[/code]``"
-
 msgid "**char**"
 msgstr "**char**"
 
 msgid "Adds Unicode character with hexadecimal UTF-32 ``{codepoint}``."
 msgstr ""
 "Добавляет символ Unicode с шестнадцатеричным кодом UTF-32 ``{codepoint}``."
-
-msgid "``[char={codepoint}]``"
-msgstr "``[char={codepoint}]``"
 
 msgid "**p**"
 msgstr "**p**"
@@ -389,12 +355,6 @@ msgid ""
 msgstr ""
 "Добавляет новый абзац с ``{text}``. Поддерживает параметры конфигурации, "
 "см. :ref:`doc_bbcode_in_richtextlabel_paragraph_options`."
-
-msgid "``[p]{text}[/p]``"
-msgstr "``[p]{text}[/p]``"
-
-msgid "``[p {options}]{text}[/p]``"
-msgstr "``[p {options}]{text}[/p]``"
 
 msgid "**br**"
 msgstr "**br**"
@@ -408,9 +368,6 @@ msgstr ""
 "использовании в списке новый элемент списка не создаётся, а вместо этого "
 "добавляет перенос строки в текущий элемент."
 
-msgid "``[br]``"
-msgstr "``[br]``"
-
 msgid "**hr**"
 msgstr "**hr**"
 
@@ -421,23 +378,11 @@ msgstr ""
 "Добавляет новую горизонтальную линию для разделения контента. Поддерживает "
 "параметры конфигурации, см. :ref:`doc_bbcode_in_richtextlabel_hr_options`."
 
-msgid "``[hr]``"
-msgstr "``[hr]``"
-
-msgid "``[hr {options}]``"
-msgstr "``[hr {options}]``"
-
 msgid "**center**"
 msgstr "**center**"
 
 msgid "Makes ``{text}`` horizontally centered."
 msgstr "Выравнивает ``{text}`` по горизонтали и центрирует."
-
-msgid "Same as ``[p align=center]``."
-msgstr "То же, что и ``[p align=center]``."
-
-msgid "``[center]{text}[/center]``"
-msgstr "``[center]{text}[/center]``"
 
 msgid "**left**"
 msgstr "**left**"
@@ -445,23 +390,11 @@ msgstr "**left**"
 msgid "Makes ``{text}`` horizontally left-aligned."
 msgstr "Выравнивает ``{text}`` по горизонтали и по левому краю."
 
-msgid "Same as ``[p align=left]``."
-msgstr "То же, что и ``[p align=left]``."
-
-msgid "``[left]{text}[/left]``"
-msgstr "``[left]{text}[/left]``"
-
 msgid "**right**"
 msgstr "**right**"
 
 msgid "Makes ``{text}`` horizontally right-aligned."
 msgstr "Выравнивает ``{text}`` по горизонтали и по правому краю."
-
-msgid "Same as ``[p align=right]``."
-msgstr "То же, что и ``[p align=right]``."
-
-msgid "``[right]{text}[/right]``"
-msgstr "``[right]{text}[/right]``"
 
 msgid "**fill**"
 msgstr "**fill**"
@@ -469,24 +402,8 @@ msgstr "**fill**"
 msgid "Makes ``{text}`` fill the full width of ``RichTextLabel``."
 msgstr "Заставляет ``{text}`` заполнять всю ширину ``RichTextLabel``."
 
-msgid "Same as ``[p align=fill]``."
-msgstr "То же, что и ``[p align=fill]``."
-
-msgid "``[fill]{text}[/fill]``"
-msgstr "``[fill]{text}[/fill]``"
-
 msgid "**indent**"
 msgstr "**indent**"
-
-msgid ""
-"Indents ``{text}`` once. The indentation width is the same as with ``[ul]`` "
-"or ``[ol]``, but without a bullet point."
-msgstr ""
-"Добавляет отступ ``{text}`` один раз. Ширина отступа такая же, как у "
-"``[ul]`` или ``[ol]``, но без маркера."
-
-msgid "``[indent]{text}[/indent]``"
-msgstr "``[indent]{text}[/indent]``"
 
 msgid "**url**"
 msgstr "**url**"
@@ -507,15 +424,6 @@ msgstr ""
 "**Для достижения эффекта необходимо обрабатывать сигнал \"meta_clicked\",** "
 "см. :ref:`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
 
-msgid "``[url]{link}[/url]``"
-msgstr "``[url]{link}[/url]``"
-
-msgid "``[url={link}]{text}[/url]``"
-msgstr "``[url={link}]{text}[/url]``"
-
-msgid "``[url {options}]{text}[/url]``"
-msgstr "``[url {options}]{text}[/url]``"
-
 msgid "**hint**"
 msgstr "**hint**"
 
@@ -531,11 +439,6 @@ msgstr ""
 "или одинарные кавычки. Обратите внимание, что экранировать кавычки с помощью "
 "``\\\"`` или ``\\'`` невозможно. Чтобы использовать одинарные кавычки для "
 "апострофов в строке подсказки, необходимо заключить строку в двойные кавычки."
-
-msgid "``[hint=\"{tooltip text displayed on hover}\"]{text}[/hint]``"
-msgstr ""
-"``[hint=\"{текст подсказки, отображаемый при наведении курсора}\"]{text}[/"
-"hint]``"
 
 msgid "**img**"
 msgstr "**img**"
@@ -593,21 +496,6 @@ msgstr ""
 "Поддерживает параметры конфигурации, "
 "см. :ref:`doc_bbcode_in_richtextlabel_image_options`."
 
-msgid "``[img]{path}[/img]``"
-msgstr "``[img]{path}[/img]``"
-
-msgid "``[img={width}]{path}[/img]``"
-msgstr "``[img={width}]{path}[/img]``"
-
-msgid "``[img={width}x{height}]{path}[/img]``"
-msgstr "``[img={width}x{height}]{path}[/img]``"
-
-msgid "``[img={valign}]{path}[/img]``"
-msgstr "``[img={valign}]{path}[/img]``"
-
-msgid "``[img {options}]{path}[/img]``"
-msgstr "``[img {options}]{path}[/img]``"
-
 msgid "**font**"
 msgstr "**font**"
 
@@ -621,20 +509,11 @@ msgstr ""
 "Поддерживает параметры конфигурации, "
 "см. :ref:`doc_bbcode_in_richtextlabel_font_options`."
 
-msgid "``[font={path}]{text}[/font]``"
-msgstr "``[font={path}]{text}[/font]``"
-
-msgid "``[font {options}]{text}[/font]``"
-msgstr "``[font {options}]{text}[/font]``"
-
 msgid "**font_size**"
 msgstr "**font_size**"
 
 msgid "Use custom font size for ``{text}``."
 msgstr "Используйте нестандартный размер шрифта для ``{text}``."
-
-msgid "``[font_size={size}]{text}[/font_size]``"
-msgstr "``[font_size={size}]{text}[/font_size]``"
 
 msgid "**dropcap**"
 msgstr "**dropcap**"
@@ -645,32 +524,6 @@ msgid ""
 msgstr ""
 "Используйте другой размер и цвет шрифта для ``{text}``, а содержимое тега, "
 "если оно достаточно большое, должно занимать несколько строк."
-
-msgid ""
-"A `drop cap <https://www.computerhope.com/jargon/d/dropcap.htm>`__ is "
-"typically one uppercase character, but ``[dropcap]`` supports containing "
-"multiple characters. ``margins`` values are comma-separated and can be "
-"positive, zero or negative. Values must **not** be separated by spaces; "
-"otherwise, the values won't be parsed correctly. Negative top and bottom "
-"margins are particularly useful to allow the rest of the paragraph to "
-"display below the dropcap."
-msgstr ""
-"`Буквица <https://www.computerhope.com/jargon/d/dropcap.htm>`__ обычно "
-"состоит из одного заглавного символа, но ``[dropcap]`` поддерживает "
-"несколько символов. Значения ``margins`` разделяются запятыми и могут быть "
-"положительными, нулевыми или отрицательными. Значения **не** должны быть "
-"разделены пробелами; в противном случае они будут обработаны неправильно. "
-"Отрицательные верхние и нижние поля особенно полезны, поскольку позволяют "
-"отображать оставшуюся часть абзаца под буквицей."
-
-msgid ""
-"``[dropcap font={font} font_size={size} color={color} outline_size={size} "
-"outline_color={color} margins={left},{top},{right},{bottom}]{text}[/"
-"dropcap]``"
-msgstr ""
-"``[dropcap font={font} font_size={size} color={color} outline_size={size} "
-"outline_color={color} margins={left},{top},{right},{bottom}]{text}[/"
-"dropcap]``"
 
 msgid "**opentype_features**"
 msgstr "**opentype_features**"
@@ -685,14 +538,8 @@ msgstr ""
 "Значения **не** должны быть разделены пробелами; в противном случае список "
 "не будет обработан корректно."
 
-msgid "``[opentype_features={list}]``"
-msgstr "``[opentype_features={list}]``"
-
 msgid "``{text}``"
 msgstr "``{text}``"
-
-msgid "``[/opentype_features]``"
-msgstr "``[/opentype_features]``"
 
 msgid "**lang**"
 msgstr "**lang**"
@@ -712,9 +559,6 @@ msgstr ""
 "нового абзаца. Некоторые файлы шрифтов могут содержать замены, специфичные "
 "для конкретной письменности, и в этом случае они будут использоваться."
 
-msgid "``[lang={code}]{text}[/lang]``"
-msgstr "``[lang={code}]{text}[/lang]``"
-
 msgid "**color**"
 msgstr "**color**"
 
@@ -726,9 +570,6 @@ msgstr ""
 "Изменяет цвет ``{text}``. Цвет должен быть задан общим именем "
 "(см. :ref:`doc_bbcode_in_richtextlabel_named_colors`) или в HEX формате "
 "(например, ``#ff00ff``, см. :ref:`doc_bbcode_in_richtextlabel_hex_colors`)."
-
-msgid "``[color={code/name}]{text}[/color]``"
-msgstr "``[color={code/name}]{text}[/color]``"
 
 msgid "**bgcolor**"
 msgstr "**bgcolor**"
@@ -747,9 +588,6 @@ msgstr ""
 "``text_highlight_h_padding`` и ``text_highlight_v_padding`` в узле "
 "RichTextLabel. Установите отступ на ``0``, чтобы избежать возможных проблем "
 "с наложением фоновых цветов в соседних строках/столбцах."
-
-msgid "``[bgcolor={code/name}]{text}[/bgcolor]``"
-msgstr "``[bgcolor={code/name}]{text}[/bgcolor]``"
 
 msgid "**fgcolor**"
 msgstr "**fgcolor**"
@@ -770,20 +608,11 @@ msgstr ""
 "``0``, чтобы избежать возможных проблем с наложением при наличии цветов "
 "переднего плана в соседних строках/столбцах."
 
-msgid "``[fgcolor={code/name}]{text}[/fgcolor]``"
-msgstr "``[fgcolor={code/name}]{text}[/fgcolor]``"
-
 msgid "**outline_size**"
 msgstr "**outline_size**"
 
 msgid "Use custom font outline size for ``{text}``."
 msgstr "Используйте пользовательский размер контура шрифта для ``{text}``."
-
-msgid "``[outline_size={size}]``"
-msgstr "``[outline_size={size}]``"
-
-msgid "``[/outline_size]``"
-msgstr "``[/outline_size]``"
 
 msgid "**outline_color**"
 msgstr "**outline_color**"
@@ -794,12 +623,6 @@ msgid ""
 msgstr ""
 "Использовать пользовательский цвет контура для ``{text}``. Принимает те же "
 "значения, что и тег ``color``."
-
-msgid "``[outline_color={code/name}]``"
-msgstr "``[outline_color={code/name}]``"
-
-msgid "``[/outline_color]``"
-msgstr "``[/outline_color]``"
 
 msgid "**table**"
 msgstr "**table**"
@@ -831,20 +654,6 @@ msgid "``{name}`` is a table name for assistive apps (screen reader)."
 msgstr ""
 "``{name}`` — это имя таблицы для вспомогательных приложений (скринридер)."
 
-msgid "``[table={number}]{cells}[/table]``"
-msgstr "``[table={number}]{cells}[/table]``"
-
-msgid "``[table={number},{valign}]{cells}[/table]``"
-msgstr "``[table={number},{valign}]{cells}[/table]``"
-
-msgid "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
-msgstr "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
-
-msgid ""
-"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
-msgstr ""
-"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
-
 msgid "**cell**"
 msgstr "**cell**"
 
@@ -865,15 +674,6 @@ msgstr ""
 "Поддерживает параметры конфигурации, "
 "см. :ref:`doc_bbcode_in_richtextlabel_cell_options`."
 
-msgid "``[cell]{text}[/cell]``"
-msgstr "``[cell]{text}[/cell]``"
-
-msgid "``[cell={ratio}]{text}[/cell]``"
-msgstr "``[cell={ratio}]{text}[/cell]``"
-
-msgid "``[cell {options}]{text}[/cell]``"
-msgstr "``[cell {options}]{text}[/cell]``"
-
 msgid "**ul**"
 msgstr "**ul**"
 
@@ -891,12 +691,6 @@ msgstr ""
 "Маркер можно настроить с помощью параметра ``{bullet}``, "
 "см. :ref:`doc_bbcode_in_richtextlabel_unordered_list_bullet`."
 
-msgid "``[ul]{items}[/ul]``"
-msgstr "``[ul]{items}[/ul]``"
-
-msgid "``[ul bullet={bullet}]{items}[/ul]``"
-msgstr "``[ul bullet={bullet}]{items}[/ul]``"
-
 msgid "**ol**"
 msgstr "**ol**"
 
@@ -909,9 +703,6 @@ msgstr ""
 "(см. :ref:`doc_bbcode_in_richtextlabel_list_types`). Список ``{items}`` "
 "должен быть представлен путем размещения одного элемента на каждой строке "
 "текста."
-
-msgid "``[ol type={type}]{items}[/ol]``"
-msgstr "``[ol type={type}]{items}[/ol]``"
 
 msgid "**lb**, **rb**"
 msgstr "**lb**, **rb**"
@@ -928,9 +719,6 @@ msgstr ""
 "Это самозакрывающиеся теги, то есть вам не нужно их закрывать (и "
 "закрывающего тега ``[/lb]`` или ``[/rb]`` не существует)."
 
-msgid "``[lb]b[rb]text[lb]/b[rb]`` will display as ``[b]text[/b]``."
-msgstr "``[lb]b[rb]text[lb]/b[rb]`` будет отображаться как ``[b]text[/b]``."
-
 msgid ""
 "Several Unicode control characters can be added using their own self-closing "
 "tags."
@@ -946,69 +734,6 @@ msgstr ""
 msgid "control characters directly in the text."
 msgstr "управляющие символы непосредственно в тексте."
 
-msgid ""
-"``[lrm]`` (left-to-right mark), ``[rlm]`` (right-to-left mark), ``[lre]`` "
-"(left-to-right embedding),"
-msgstr ""
-"``[lrm]`` (знак слева направо), ``[rlm]`` (знак справа налево), ``[lre]`` "
-"(встраивание слева направо),"
-
-msgid ""
-"``[rle]`` (right-to-left embedding), ``[lro]`` (left-to-right override), "
-"``[rlo]`` (right-to-left override),"
-msgstr ""
-"``[rle]`` (встраивание справа налево), ``[lro]`` (переопределение слева "
-"направо), ``[rlo]`` (переопределение справа налево),"
-
-msgid ""
-"``[pdf]`` (pop directional formatting), ``[alm]`` (Arabic letter mark), "
-"``[lri]`` (left-to-right isolate),"
-msgstr ""
-"``[pdf]`` (поп-направленное форматирование), ``[alm]`` (арабский буквенный "
-"знак), ``[lri]`` (изолят слева направо),"
-
-msgid ""
-"``[rli]`` (right-to-left isolate), ``[fsi]`` (first strong isolate), "
-"``[pdi]`` (pop directional isolate),"
-msgstr ""
-"``[rli]`` (изолят справа налево), ``[fsi]`` (первый сильный изолят), "
-"``[pdi]`` (поп-направленный изолят),"
-
-msgid ""
-"``[zwj]`` (zero-width joiner), ``[zwnj]`` (zero-width non-joiner), ``[wj]`` "
-"(word joiner),"
-msgstr ""
-"``[zwj]`` (объединитель нулевой ширины), ``[zwnj]`` (необъединитель нулевой "
-"ширины), ``[wj]`` (объединитель слов),"
-
-msgid "``[shy]`` (soft hyphen)"
-msgstr "``[shy]`` (мягкий дефис)"
-
-msgid ""
-"Tags for bold (``[b]``) and italics (``[i]``) formatting work best if the "
-"appropriate custom fonts are set up in the RichTextLabelNode's theme "
-"overrides. If no custom bold or italic fonts are defined, `faux bold and "
-"italic fonts <https://fonts.google.com/knowledge/glossary/"
-"faux_fake_pseudo_synthesized>`__ will be generated by Godot. These fonts "
-"rarely look good in comparison to hand-made bold/italic font variants."
-msgstr ""
-"Теги для форматирования жирным шрифтом (``[b]``) и курсивом (``[i]``) "
-"работают лучше всего, если соответствующие пользовательские шрифты настроены "
-"в переопределениях темы RichTextLabelNode. Если пользовательские полужирные "
-"или курсивные шрифты не определены, Godot сгенерирует `поддельные жирные и "
-"курсивные шрифты <https://fonts.google.com/knowledge/glossary/"
-"faux_fake_pseudo_synthesized>`__. Такие шрифты редко выглядят хорошо по "
-"сравнению с вариантами жирного или курсивного шрифтов, созданными вручную."
-
-msgid ""
-"The monospaced (``[code]``) tag **only** works if a custom font is set up in "
-"the RichTextLabel node's theme overrides. Otherwise, monospaced text will "
-"use the regular font."
-msgstr ""
-"Моноширинный тег (``[code]``) работает **только**, если в переопределениях "
-"темы узла RichTextLabel настроен пользовательский шрифт. В противном случае "
-"для моноширинного текста будет использоваться обычный шрифт."
-
 msgid "There are no BBCode tags to control vertical centering of text yet."
 msgstr ""
 "Тегов BBCode для управления вертикальным центрированием текста пока нет."
@@ -1022,12 +747,18 @@ msgstr "Параметры абзаца"
 msgid "**align**"
 msgstr "**align**"
 
+msgid "**Values**"
+msgstr "**Значения**"
+
 msgid ""
 "``left`` (or ``l``), ``center`` (or ``c``), ``right`` (or ``r``), ``fill`` "
 "(or ``f``)"
 msgstr ""
 "``left`` (или ``l``), ``center`` (или ``c``), ``right`` (или ``r``), "
 "``fill`` (или ``f``)"
+
+msgid "**Default**"
+msgstr "**По умолчанию**"
 
 msgid "``left``"
 msgstr "``left``"
@@ -1054,6 +785,17 @@ msgstr "Переопределение структурированного те
 
 msgid "**justification_flags**, **jst**"
 msgstr "**justification_flags**, **jst**"
+
+msgid ""
+"Comma-separated list of the following values (no space after each comma): "
+"``kashida`` (or ``k``), ``word`` (or ``w``), ``trim`` (or ``tr``), "
+"``after_last_tab`` (or ``lt``), ``skip_last`` (or ``sl``), "
+"``skip_last_with_chars`` (or ``sv``), ``do_not_skip_single`` (or ``ns``)."
+msgstr ""
+"Список следующих значений, разделённых запятыми (без пробела после каждой "
+"запятой): ``kashida`` (или ``k``), ``word`` (или ``w``), ``trim`` (или "
+"``tr``), ``after_last_tab`` (или ``lt``), ``skip_last`` (или ``sl``), "
+"``skip_last_with_chars`` (или ``sv``), ``do_not_skip_single`` (или ``ns``)."
 
 msgid "``word,kashida,skip_last,do_not_skip_single``"
 msgstr "``word,kashida,skip_last,do_not_skip_single``"
@@ -1112,42 +854,12 @@ msgstr ""
 "40`` пикселей, а третья — на отметке ``10 + 30 + 10 = 50`` пикселей от "
 "начала RichTextLabel."
 
-msgid "Handling ``[url]`` tag clicks"
-msgstr "Обработка кликов по тегу ``[url]``"
-
-msgid ""
-"By default, ``[url]`` tags do nothing when clicked. This is to allow "
-"flexible use of ``[url]`` tags rather than limiting them to opening URLs in "
-"a web browser."
-msgstr ""
-"По умолчанию теги ``[url]`` не выполняют никаких действий при нажатии. Это "
-"сделано для того, чтобы обеспечить гибкое использование тегов ``[url]``, а "
-"не ограничивать их открытием URL-адресов в веб-браузере."
-
-msgid ""
-"To handle clicked ``[url]`` tags, connect the ``RichTextLabel`` "
-"node's :ref:`meta_clicked <class_RichTextLabel_signal_meta_clicked>` signal "
-"to a script function."
-msgstr ""
-"Для обработки нажатых тегов ``[url]`` подключите сигнал :ref:`meta_clicked "
-"<class_RichTextLabel_signal_meta_clicked>` узла ``RichTextLabel`` к функции "
-"скрипта."
-
 msgid ""
 "For example, the following method can be connected to ``meta_clicked`` to "
 "open clicked URLs using the user's default web browser:"
 msgstr ""
 "Например, следующий метод можно подключить к ``meta_clicked`` для открытия "
 "выбранных URL-адресов с помощью веб-браузера пользователя по умолчанию:"
-
-msgid ""
-"For more advanced use cases, it's also possible to store JSON in a ``[url]`` "
-"tag's option and parse it in the function that handles the ``meta_clicked`` "
-"signal. For example:"
-msgstr ""
-"Для более сложных случаев использования можно также сохранить JSON в "
-"параметре тега ``[url]`` и проанализировать его в функции, обрабатывающей "
-"сигнал ``meta_clicked``. Например:"
 
 msgid "Horizontal rule options"
 msgstr "Параметры горизонтальной линейки"
@@ -1192,6 +904,9 @@ msgstr ""
 
 msgid "``left`` (or ``l``), ``center`` (or ``c``), ``right`` (or ``r``)"
 msgstr "``left`` (или ``l``), ``center`` (или ``c``), ``right`` (или ``r``)"
+
+msgid "``center``"
+msgstr "``center``"
 
 msgid "Horizontal alignment."
 msgstr "Горизонтальное выравнивание."
@@ -1334,23 +1049,6 @@ msgstr "Описание изображения для вспомогатель�
 
 msgid "Image and table vertical alignment"
 msgstr "Вертикальное выравнивание изображения и таблицы"
-
-msgid ""
-"When a vertical alignment value is provided with the ``[img]`` or "
-"``[table]`` tag the image/table will try to align itself against the "
-"surrounding text. Alignment is performed using a vertical point of the image "
-"and a vertical point of the text. There are 3 possible points on the image "
-"(``top``, ``center``, and ``bottom``) and 4 possible points on the text and "
-"table (``top``, ``center``, ``baseline``, and ``bottom``), which can be used "
-"in any combination."
-msgstr ""
-"Если значение вертикального выравнивания указано с помощью тега ``[img]`` "
-"или ``[table]``, изображение/таблица попытается выровняться относительно "
-"окружающего текста. Выравнивание выполняется по вертикальной точке "
-"изображения и вертикальной точке текста. Возможны три точки на изображении "
-"(``top``, ``center`` и ``bottom``) и четыре точки на тексте и таблице "
-"(``top``, ``center``, ``baseline`` и ``bottom``), которые можно использовать "
-"в любой комбинации."
 
 msgid ""
 "To specify both points, use their full or short names as a value of the "
@@ -1502,6 +1200,17 @@ msgstr ""
 msgid "Named colors"
 msgstr "Именованные цвета"
 
+msgid ""
+"For tags that allow specifying a color by name, you can use names of the "
+"constants from the built-in :ref:`class_Color` class. Named colors can be "
+"specified in a number of styles using different casings: ``DARK_RED``, "
+"``DarkRed``, and ``darkred`` will give the same exact result."
+msgstr ""
+"Для тегов, позволяющих задать цвет по имени, можно использовать имена "
+"констант из встроенного класса :ref:`class_Color`. Именованные цвета можно "
+"указывать в различных стилях с использованием разных регистров: "
+"``DARK_RED``, ``DarkRed`` и ``darkred`` дадут один и тот же результат."
+
 msgid "See this image for a list of color constants:"
 msgstr "Список цветовых констант смотрите на этом изображении:"
 
@@ -1514,29 +1223,6 @@ msgstr ""
 
 msgid "Hexadecimal color codes"
 msgstr "Шестнадцатеричные цветовые коды"
-
-msgid ""
-"For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
-"``[color=#ffffff]white[/color]``. Shorthand RGB color codes such as ``#6f2`` "
-"(equivalent to ``#66ff22``) are also supported."
-msgstr ""
-"Для непрозрачных цветов RGB поддерживается любой допустимый 6-значный "
-"шестнадцатеричный код, например, ``[color=#ffffff]white[/color]``. Также "
-"поддерживаются сокращённые коды цветов RGB, такие как ``#6f2`` (эквивалентно "
-"``#66ff22``)."
-
-msgid ""
-"For transparent RGB colors, any RGBA 8-digit hexadecimal code can be used, "
-"e.g. ``[color=#ffffff88]translucent white[/color]``. Note that the alpha "
-"channel is the **last** component of the color code, not the first one. "
-"Short RGBA color codes such as ``#6f28`` (equivalent to ``#66ff2288``) are "
-"supported as well."
-msgstr ""
-"Для прозрачных цветов RGB можно использовать любой 8-значный "
-"шестнадцатеричный код RGBA, например, ``[color=#ffffff88]прозрачный белый[/"
-"color]``. Обратите внимание, что альфа-канал — это **последний** компонент "
-"кода цвета, а не первый. Также поддерживаются короткие коды цветов RGBA, "
-"такие как ``#6f28`` (эквивалент ``#66ff2288``)."
 
 msgid "Cell options"
 msgstr "Параметры ячеек"
@@ -1596,21 +1282,6 @@ msgstr "Отступы ячеек слева, сверху, справа и сн
 
 msgid "Unordered list bullet"
 msgstr "Маркер неупорядоченного списка"
-
-msgid ""
-"By default, the ``[ul]`` tag uses the ``U+2022`` \"Bullet\" Unicode glyph as "
-"the bullet character. This behavior is similar to web browsers. The bullet "
-"character can be customized using ``[ul bullet={bullet}]``. If provided, "
-"this ``{bullet}`` parameter must be a string with no enclosing quotes (for "
-"example, ``[bullet=*]``). You can add trailing spaces after the bullet "
-"character to increase the spacing between the bullet and the list item text."
-msgstr ""
-"По умолчанию тег ``[ul]`` использует в качестве символа маркера глиф Unicode "
-"``U+2022`` \"Bullet\". Это поведение аналогично веб-браузерам. Символ "
-"маркера можно настроить с помощью ``[ul bullet={bullet}]``. Если указан "
-"параметр ``{bullet}``, он должен быть строкой без кавычек (например, "
-"``[bullet=*]``). Вы можете добавить пробелы после символа маркера, чтобы "
-"увеличить расстояние между маркером и текстом элемента списка."
 
 msgid ""
 "See `Bullet (typography) on Wikipedia <https://en.wikipedia.org/wiki/"
@@ -1690,16 +1361,6 @@ msgid "Pulse"
 msgstr "Pulse (Эффект пульсации)"
 
 msgid ""
-"Pulse creates an animated pulsing effect that multiplies each character's "
-"opacity and color. It can be used to bring attention to specific text. Its "
-"tag format is ``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]``."
-msgstr ""
-"Эффект пульсации создаёт анимированный пульсирующий эффект, который "
-"увеличивает прозрачность и цвет каждого символа. Его можно использовать для "
-"привлечения внимания к определённому тексту. Формат тега: ``[pulse freq=1.0 "
-"color=#ffffff40 ease=-2.0]{text}[/pulse]``."
-
-msgid ""
 "``freq`` controls the frequency of the half-pulsing cycle (higher is "
 "faster). A full pulsing cycle takes ``2 * (1.0 / freq)`` seconds. ``color`` "
 "is the target color multiplier for blinking. The default mostly fades out "
@@ -1715,13 +1376,6 @@ msgstr ""
 
 msgid "Wave"
 msgstr "Wave (Волна)"
-
-msgid ""
-"Wave makes the text go up and down. Its tag format is ``[wave amp=50.0 "
-"freq=5.0 connected=1]{text}[/wave]``."
-msgstr ""
-"Wave заставляет текст двигаться вверх и вниз. Формат тега: ``[wave amp=50.0 "
-"freq=5.0 connected=1]{text}[/wave]``."
 
 msgid ""
 "``amp`` controls how high and low the effect goes, and ``freq`` controls how "
@@ -1742,13 +1396,6 @@ msgstr ""
 
 msgid "Tornado"
 msgstr "Tornado (Торнадо)"
-
-msgid ""
-"Tornado makes the text move around in a circle. Its tag format is ``[tornado "
-"radius=10.0 freq=1.0 connected=1]{text}[/tornado]``."
-msgstr ""
-"Торнадо заставляет текст двигаться по кругу. Формат тега: ``[tornado "
-"radius=10.0 freq=1.0 connected=1]{text}[/tornado]``."
 
 msgid ""
 "``radius`` is the radius of the circle that controls the offset, ``freq`` is "
@@ -1772,13 +1419,6 @@ msgid "Shake"
 msgstr "Shake (Встряхнуть)"
 
 msgid ""
-"Shake makes the text shake. Its tag format is ``[shake rate=20.0 level=5 "
-"connected=1]{text}[/shake]``."
-msgstr ""
-"Shake заставляет текст дрожать. Формат тега: ``[shake rate=20.0 level=5 "
-"connected=1]{text}[/shake]``."
-
-msgid ""
 "``rate`` controls how fast the text shakes, ``level`` controls how far the "
 "text is offset from the origin. If ``connected`` is ``1`` (default), glyphs "
 "with ligatures will be moved together. If ``connected`` is ``0``, each glyph "
@@ -1795,14 +1435,6 @@ msgid "Fade"
 msgstr "Fade (Тускнеть)"
 
 msgid ""
-"Fade creates a static fade effect that multiplies each character's opacity. "
-"Its tag format is ``[fade start=4 length=14]{text}[/fade]``."
-msgstr ""
-"Эффект плавного перехода создаёт статический эффект плавного перехода, "
-"увеличивая прозрачность каждого символа. Формат тега: ``[fade start=4 "
-"length=14]{text}[/fade]``."
-
-msgid ""
 "``start`` controls the starting position of the falloff relative to where "
 "the fade command is inserted, ``length`` controls over how many characters "
 "should the fade out take place."
@@ -1813,13 +1445,6 @@ msgstr ""
 
 msgid "Rainbow"
 msgstr "Rainbow (Радуга)"
-
-msgid ""
-"Rainbow gives the text a rainbow color that changes over time. Its tag "
-"format is ``[rainbow freq=1.0 sat=0.8 val=0.8 speed=1.0]{text}[/rainbow]``."
-msgstr ""
-"Rainbow придаёт тексту радужный цвет, который меняется со временем. Формат "
-"тега: ``[rainbow freq=1.0 sat=0.8 val=0.8 speed=1.0]{text}[/rainbow]``."
 
 msgid ""
 "``freq`` determines how many letters the rainbow extends over before it "
@@ -1959,22 +1584,6 @@ msgid ""
 msgstr ""
 "``glyph_index`` — это индекс отрисовываемого глифа, а ``font`` — ресурс "
 "шрифта, используемый для его отрисовки."
-
-msgid ""
-"Finally, ``env`` is a :ref:`class_Dictionary` of parameters assigned to a "
-"given custom effect. You can use :ref:`get() <class_Dictionary_method_get>` "
-"with an optional default value to retrieve each parameter, if specified by "
-"the user. For example ``[custom_fx spread=0.5 color=#FFFF00]test[/"
-"custom_fx]`` would have a float ``spread`` and Color ``color`` parameters in "
-"its ``env`` Dictionary. See below for more usage examples."
-msgstr ""
-"Наконец, ``env`` — это :ref:`class_Dictionary` параметров, назначенных "
-"данному пользовательскому эффекту. Вы можете использовать метод :ref:`get() "
-"<class_Dictionary_method_get>` с необязательным значением по умолчанию для "
-"извлечения каждого параметра, если он указан пользователем. Например, "
-"``[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]`` будет иметь "
-"параметры ``spread`` типа float и ``color`` типа Color в своём словаре "
-"``env``. Дополнительные примеры использования смотрите ниже."
 
 msgid ""
 "The last thing to note about this function is that it is necessary to return "

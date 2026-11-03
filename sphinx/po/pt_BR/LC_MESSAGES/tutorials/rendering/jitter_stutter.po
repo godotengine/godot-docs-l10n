@@ -510,6 +510,113 @@ msgid "Hardware/OS-specific"
 msgstr "Específico de Hardware/SO"
 
 msgid ""
+"If your monitor supports it, consider enabling variable refresh rate (G-Sync/"
+"FreeSync) while leaving V-Sync enabled, then cap the framerate in the "
+"project settings to a slightly lower value than your monitor's maximum "
+"refresh rate as per `this page <https://blurbusters.com/howto-low-lag-vsync-"
+"on/>`__."
+msgstr ""
+"Se o seu monitor oferecer suporte, considere ativar a taxa de atualização "
+"variável (G-Sync/FreeSync) deixando o V-Sync ativado e, em seguida, limite a "
+"taxa de quadros nas configurações do projeto para um valor ligeiramente "
+"inferior à taxa de atualização máxima do seu monitor, conforme `esta página "
+"<https://blurbusters.com/howto-low-lag-vsync-on/>`__."
+
+msgid ""
+"This may be counterintuitive at first, but capping the FPS below the maximum "
+"refresh rate range ensures that the OS never has to wait for vertical "
+"blanking to finish. This leads to *similar* input lag as V-Sync disabled "
+"with the same framerate cap (usually less than 1 ms greater), but without "
+"any tearing."
+msgstr ""
+"Isso pode ser contraintuitivo a princípio, mas limitar o FPS abaixo do "
+"intervalo de taxa de atualização máxima garante que o sistema operacional "
+"nunca precise esperar a sincronização vertical terminar. Isso resulta em um "
+"atraso de entrada (input lag) *semelhante* ao do V-Sync desativado com o "
+"mesmo limite de taxa de quadros (geralmente menos de 1 ms maior), mas sem "
+"qualquer toring (rasgo na imagem)."
+
+msgid ""
+"The formula used to determine the framerate cap is ``refresh - (refresh * "
+"refresh / 3600.0)`` where ``refresh`` is the monitor's refresh rate in Hz. "
+"This table shows the framerate cap to use for common refresh rates (the cap "
+"is rounded down to the nearest integer):"
+msgstr ""
+"A fórmula usada para determinar o limite da taxa de quadros (framerate cap) "
+"é ``refresh - (refresh * refresh / 3600.0)`` onde ``refresh`` é a taxa de "
+"atualização do monitor em Hz. Esta tabela mostra o limite da taxa de quadros "
+"a ser usado para taxas de atualização comuns (o limite é arredondado para "
+"baixo para o número inteiro mais próximo):"
+
+msgid "Refresh rate"
+msgstr "Taxa de atualização"
+
+msgid "Framerate cap"
+msgstr "Limite da taxa de quadros"
+
+msgid "60 Hz"
+msgstr "60 Hz"
+
+msgid "58 FPS"
+msgstr "58 FPS"
+
+msgid "75 Hz"
+msgstr "75 Hz"
+
+msgid "73 FPS"
+msgstr "73 FPS"
+
+msgid "120 Hz"
+msgstr "120 Hz"
+
+msgid "115 FPS"
+msgstr "115 FPS"
+
+msgid "144 Hz"
+msgstr "144 Hz"
+
+msgid "138 FPS"
+msgstr "138 FPS"
+
+msgid "165 Hz"
+msgstr "165 Hz"
+
+msgid "157 FPS"
+msgstr "157 FPS"
+
+msgid "240 Hz"
+msgstr "240 Hz"
+
+msgid "224 FPS"
+msgstr "224 FPS"
+
+msgid "360 Hz"
+msgstr "360 Hz"
+
+msgid "324 FPS"
+msgstr "324 FPS"
+
+msgid "480 Hz"
+msgstr "480 Hz"
+
+msgid "416 FPS"
+msgstr "416 FPS"
+
+msgid ""
+"This framerate cap can be set by changing the **Application > Run > Max "
+"FPS** project setting or assigning ``Engine.max_fps`` at runtime in a "
+"script. At higher refresh rates, a lower cap is needed to ensure timing "
+"inaccuracies don't cause the display to engage V-Sync (which would increase "
+"input lag)."
+msgstr ""
+"Esse limite de taxa de quadros (framerate cap) pode ser definido alterando a "
+"configuração de projeto **Aplicação > Executar > FPS Máximo** ou atribuindo "
+"``Engine.max_fps`` em tempo de execução em um script. Em taxas de "
+"atualização mais altas, é necessário um limite menor para garantir que "
+"imprecisões de tempo não façam com que a tela ative o V-Sync (o que "
+"aumentaria o atraso de entrada/input lag)."
+
+msgid ""
 "On some platforms, you can also opt into a low-latency mode in the graphics "
 "driver options (such as the NVIDIA Control Panel on Windows). The **Ultra** "
 "setting will give you the lowest possible latency, at the cost of slightly "

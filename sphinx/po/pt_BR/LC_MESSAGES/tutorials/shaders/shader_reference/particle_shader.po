@@ -191,6 +191,20 @@ msgstr ""
 "Estas propriedades podem ser acessadas tanto das funções ``start()`` quanto "
 "``process()``."
 
+msgid ""
+"When using the built-in :ref:`class_ParticleProcessMaterial`, ``USERDATA1`` "
+"is defined with the following value in the built-in:"
+msgstr ""
+"Ao usar o :ref:`class_ParticleProcessMaterial` nativo, ``USERDATA1`` é "
+"definido com o seguinte valor no recurso nativo:"
+
+msgid ""
+"**w**: Accumulated angle from angular velocity in radians, as applied by the "
+"angular velocity texture."
+msgstr ""
+"**w**: Ângulo acumulado da velocidade angular em radianos, conforme aplicado "
+"pela textura de velocidade angular."
+
 msgid "Function"
 msgstr "Função"
 
@@ -226,6 +240,9 @@ msgstr "Transformação do emissor (usada para sistemas não locais)."
 
 msgid "in uint **RANDOM_SEED**"
 msgstr "in uint **RANDOM_SEED**"
+
+msgid "Random seed used as a base for randomness."
+msgstr "Semente aleatória usada como base para a aleatoriedade."
 
 msgid "inout bool **ACTIVE**"
 msgstr "inout bool **ACTIVE**"

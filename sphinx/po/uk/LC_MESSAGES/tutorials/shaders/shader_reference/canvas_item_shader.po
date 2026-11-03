@@ -428,15 +428,6 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "In vec4 **FRAGCOORD**"
 
-msgid ""
-"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
-"viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``. Bottom-"
-"right of the viewport is ``(1.0, 1.0)``."
-msgstr ""
-"Координати центру пікселя. У просторі екрана. ``xy`` визначає положення у "
-"вікні перегляду. Лівий верхній кут вікна перегляду є початком координат, "
-"``(0.0, 0.0)``. Правий нижній кут вікна перегляду — ``(1.0, 1.0)``."
-
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "In vec2 **SCREEN_PIXEL_SIZE**"
 
@@ -604,6 +595,15 @@ msgstr ""
 "Нижче наведено приклад світлого шейдера, який враховує карту нормалей "
 "CanvasItem:"
 
+msgid ""
+"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
+"viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``. Bottom-"
+"right of the viewport is ``(1.0, 1.0)``."
+msgstr ""
+"Координати центру пікселя. У просторі екрана. ``xy`` визначає положення у "
+"вікні перегляду. Лівий верхній кут вікна перегляду є початком координат, "
+"``(0.0, 0.0)``. Правий нижній кут вікна перегляду — ``(1.0, 1.0)``."
+
 msgid "in vec3 **NORMAL**"
 msgstr "In vec3 **NORMAL**"
 
@@ -636,6 +636,16 @@ msgstr "УФ для точкового спрайта."
 
 msgid "in vec4 **LIGHT_COLOR**"
 msgstr "In vec4 **LIGHT_COLOR**"
+
+msgid ""
+":ref:`Color<class_Light2D_property_color>` of the :ref:`class_Light2D`. If "
+"the light is a :ref:`class_PointLight2D`, it's multiplied by the "
+"light's :ref:`texture<class_PointLight2D_property_texture>`."
+msgstr ""
+":ref:`Color<class_Light2D_property_color>` класу :ref:`class_Light2D`. Якщо "
+"джерело світла є об’єктом типу :ref:`class_PointLight2D`, то це значення "
+"множиться на :ref:`texture<class_PointLight2D_property_texture>` джерела "
+"світла."
 
 msgid "in float **LIGHT_ENERGY**"
 msgstr "In float **LIGHT_ENERGY**"

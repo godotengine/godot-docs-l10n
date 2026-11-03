@@ -11,21 +11,41 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.5 to Godot 4.6"
+msgstr "Upgrade von Godot 4.5 auf Godot 4.6"
+
+msgid ""
+"For most games and apps made with 4.5 it should be relatively safe to "
+"migrate to 4.6. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"Für die meisten Spiele und Anwendungen, die mit 4.5 entwickelt wurden, "
+"sollte es relativ sicher sein, auf 4.6 zu migrieren. Diese Seite soll alles "
+"abdecken, worauf Sie bei der Migration Ihres Projekts achten müssen."
+
 msgid "Breaking changes"
 msgstr "Änderungen, die etwas kaputtmachen können"
+
+msgid ""
+"If you are migrating from 4.5 to 4.6, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"Wenn Sie von 4.5 auf 4.6 migrieren, könnten Sie von den hier aufgeführten "
+"Änderungen betroffen sein. Die Änderungen sind nach Bereichen/Systemen "
+"gruppiert."
 
 msgid ""
 "This article indicates whether each breaking change affects GDScript and "
 "whether the C# breaking change is *binary compatible* or *source compatible*:"
 msgstr ""
 "Dieser Artikel gibt an, ob die einzelnen Änderungen GDScript betreffen und "
-"ob die C#-Änderung *binärkompatibel* oder *quelltextkompatibel* ist:"
+"ob die C#-Änderung *binärkompatibel* oder *quellcodekompatibel* ist:"
 
 msgid ""
 "**Source compatible** - Source code will compile successfully without "
 "changes when upgrading Godot."
 msgstr ""
-"**Quellcodekompatibel** - Der Quellcode wird beim Upgrade von Godot ohne "
+"**Quellcodekompatibel** – Der Quellcode wird beim Upgrade von Godot ohne "
 "Änderungen erfolgreich kompiliert."
 
 msgid "Core"
@@ -41,7 +61,7 @@ msgid "C# Binary Compatible"
 msgstr "C#-binär- kompatibel"
 
 msgid "C# Source Compatible"
-msgstr "C#-quellcode- kompatibel"
+msgstr "C#-quellcodekompatibel"
 
 msgid "Introduced"
 msgstr "Eingeführt in"
@@ -55,6 +75,12 @@ msgstr "|✔️|"
 msgid "|✔️ with compat|"
 msgstr "|✔️ with compat|"
 
+msgid "`GH-114053`_"
+msgstr "`GH-114053`_"
+
+msgid "`GH-110867`_"
+msgstr "`GH-110867`_"
+
 msgid "**Performance**"
 msgstr "**Performance**"
 
@@ -62,6 +88,9 @@ msgid "Method ``add_custom_monitor`` adds a new ``type`` optional parameter"
 msgstr ""
 "Methode ``add_custom_monitor`` fügt einen neuen optionalen Parameter "
 "``type`` hinzu"
+
+msgid "`GH-110433`_"
+msgstr "`GH-110433`_"
 
 msgid "Animation"
 msgstr "Animation"
@@ -72,14 +101,35 @@ msgstr "**AnimationPlayer**"
 msgid "|❌|"
 msgstr "|❌|"
 
+msgid "`GH-110767`_"
+msgstr "`GH-110767`_"
+
 msgid "3D"
 msgstr "3D"
+
+msgid "**SpringBoneSimulator3D**"
+msgstr "**SpringBoneSimulator3D**"
+
+msgid "`GH-110120`_"
+msgstr "`GH-110120`_"
 
 msgid "Rendering"
 msgstr "Rendering"
 
+msgid "**DisplayServer**"
+msgstr "**DisplayServer**"
+
+msgid "`GH-113459`_"
+msgstr "`GH-113459`_"
+
+msgid "`GH-112379`_"
+msgstr "`GH-112379`_"
+
 msgid "GUI nodes"
 msgstr "GUI-Nodes"
+
+msgid "**Control**"
+msgstr "**Control**"
 
 msgid ""
 "Method ``has_focus`` adds a new ``ignore_hidden_focus`` optional parameter"
@@ -87,16 +137,49 @@ msgstr ""
 "Methode ``has_focus`` fügt einen neuen optionalen Parameter "
 "``ignore_hidden_focus`` hinzu"
 
+msgid "**FileDialog**"
+msgstr "**FileDialog**"
+
 msgid "Method ``add_filter`` adds a new ``mime_type`` optional parameter"
 msgstr ""
 "Methode ``add_filter`` fügt einen neuen optionalen Parameter ``mime_type`` "
 "hinzu"
 
+msgid "`GH-111439`_"
+msgstr "`GH-111439`_"
+
+msgid "**LineEdit**"
+msgstr "**LineEdit**"
+
+msgid "`GH-111117`_"
+msgstr "`GH-111117`_"
+
+msgid "**SplitContainer**"
+msgstr "**SplitContainer**"
+
+msgid "`GH-90411`_"
+msgstr "`GH-90411`_"
+
 msgid "Networking"
 msgstr "Netzwerkfunktionen"
 
+msgid "**StreamPeerTCP**"
+msgstr "**StreamPeerTCP**"
+
+msgid "`GH-107954`_"
+msgstr "`GH-107954`_"
+
+msgid "**TCPServer**"
+msgstr "**TCPServer**"
+
 msgid "OpenXR"
 msgstr "OpenXR"
+
+msgid "**OpenXRExtensionWrapper**"
+msgstr "**OpenXRExtensionWrapper**"
+
+msgid "`GH-109302`_"
+msgstr "`GH-109302`_"
 
 msgid ""
 "Method ``_set_instance_create_info_and_get_next_pointer`` adds  a new "
@@ -111,6 +194,21 @@ msgstr "N/A"
 msgid "Editor"
 msgstr "Editor"
 
+msgid "**EditorExportPreset**"
+msgstr "**EditorExportPreset**"
+
+msgid "`GH-107167`_"
+msgstr "`GH-107167`_"
+
+msgid "**EditorFileDialog**"
+msgstr "**EditorFileDialog**"
+
+msgid "`GH-111212`_"
+msgstr "`GH-111212`_"
+
+msgid "`GH-111162`_"
+msgstr "`GH-111162`_"
+
 msgid "Behavior changes"
 msgstr "Änderungen am Verhalten"
 
@@ -120,8 +218,38 @@ msgstr "Android"
 msgid "Navigation"
 msgstr "Navigation"
 
+msgid "Changed defaults"
+msgstr "Geänderte Standardeinstellungen"
+
+msgid "Member"
+msgstr "Attribut"
+
+msgid "Old Value"
+msgstr "Alter Wert"
+
+msgid "New Value"
+msgstr "Neuer Wert"
+
 msgid "**MeshInstance3D**"
 msgstr "**MeshInstance3D**"
+
+msgid "Property ``skeleton``"
+msgstr "Eigenschaft ``skeleton``"
+
+msgid "NodePath(\"..\")"
+msgstr "NodePath(\"..\")"
+
+msgid "NodePath(\"\")"
+msgstr "NodePath(\"\")"
+
+msgid "`GH-112267`_"
+msgstr "`GH-112267`_"
+
+msgid "**ProjectSettings**"
+msgstr "**ProjectSettings**"
+
+msgid "Property ``rendering/reflections/sky_reflections/roughness_layers``"
+msgstr "Eigenschaft ``rendering/reflections/sky_reflections/roughness_layers``"
 
 msgid "8"
 msgstr "8"
@@ -129,11 +257,98 @@ msgstr "8"
 msgid "7"
 msgstr "7"
 
+msgid "`GH-107902`_"
+msgstr "`GH-107902`_"
+
+msgid "Property ``rendering/rendering_device/d3d12/agility_sdk_version``"
+msgstr "Eigenschaft ``rendering/rendering_device/d3d12/agility_sdk_version``"
+
+msgid "613"
+msgstr "613"
+
+msgid "618"
+msgstr "618"
+
+msgid "`GH-114043`_"
+msgstr "`GH-114043`_"
+
+msgid "**Environment**"
+msgstr "**Environment**"
+
+msgid "Property ``glow_blend_mode``"
+msgstr "Eigenschaft ``glow_blend_mode``"
+
 msgid "2"
 msgstr "2"
 
 msgid "1"
 msgstr "1"
 
+msgid "`GH-110671`_"
+msgstr "`GH-110671`_"
+
+msgid "Property ``glow_intensity``"
+msgstr "Eigenschaft ``glow_intensity``"
+
+msgid "0.8"
+msgstr "0.8"
+
+msgid "0.3"
+msgstr "0.3"
+
+msgid "Property ``glow_levels/2``"
+msgstr "Eigenschaft ``glow_levels/2``"
+
+msgid "0.0"
+msgstr "0.0"
+
+msgid "Property ``glow_levels/3``"
+msgstr "Eigenschaft ``glow_levels/3``"
+
+msgid "1.0"
+msgstr "1.0"
+
+msgid "0.4"
+msgstr "0.4"
+
+msgid "Property ``glow_levels/4``"
+msgstr "Eigenschaft ``glow_levels/4``"
+
+msgid "0.1"
+msgstr "0.1"
+
+msgid "Property ``glow_levels/5``"
+msgstr "Eigenschaft ``glow_levels/5``"
+
+msgid "Property ``ssr_depth_tolerance``"
+msgstr "Eigenschaft ``ssr_depth_tolerance``"
+
+msgid "0.2"
+msgstr "0.2"
+
+msgid "0.5"
+msgstr "0.5"
+
+msgid "`GH-111210`_"
+msgstr "`GH-111210`_"
+
+msgid "Property/Parameter"
+msgstr "Eigenschaft/Parameter"
+
 msgid "**PopupMenu**"
-msgstr "**PopupMenu**"
+msgstr "**Pop-upMenu**"
+
+msgid "Property ``submenu_popup_delay``"
+msgstr "Eigenschaft ``submenu_popup_delay``"
+
+msgid "`GH-110256`_"
+msgstr "`GH-110256`_"
+
+msgid "Property ``compress``"
+msgstr "Eigenschaft ``compress``"
+
+msgid "true"
+msgstr "true"
+
+msgid "`GH-112073`_"
+msgstr "`GH-112073`_"

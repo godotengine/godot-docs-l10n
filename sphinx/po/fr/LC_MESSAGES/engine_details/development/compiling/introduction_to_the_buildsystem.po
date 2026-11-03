@@ -32,6 +32,9 @@ msgstr ":ref:`doc_compiling_for_web`"
 msgid ":ref:`doc_compiling_for_windows`"
 msgstr ":ref:`doc_compiling_for_windows`"
 
+msgid "Example for using 12 threads:"
+msgstr "Exemple pour utiliser 12 threads :"
+
 msgid "Platform selection"
 msgstr "Choix de la plate-forme"
 
@@ -56,6 +59,18 @@ msgstr ""
 "n'est spécifiée, SCons détectera automatiquement la plate-forme cible en "
 "fonction de la plate-forme hôte. Il commencera alors immédiatement à "
 "construire pour la plate-forme cible."
+
+msgid "To list the available target platforms, use ``scons platform=list``:"
+msgstr ""
+"Pour lister les plates-formes cibles disponibles, utilisez ``scons "
+"platform=list`` :"
+
+msgid ""
+"To build for a platform (for example, ``linuxbsd``), run with the "
+"``platform=`` (or ``p=`` to make it short) argument:"
+msgstr ""
+"Pour compiler pour une plate-forme (par exemple, ``linuxbsd``), utilisez "
+"l'argument ``platform=`` (ou ``p=`` pour faire court) :"
 
 msgid "Resulting binary"
 msgstr "Binaire résultant"

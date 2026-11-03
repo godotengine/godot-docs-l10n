@@ -11,6 +11,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.4 to Godot 4.5"
+msgstr "Upgrade von Godot 4.4 auf Godot 4.5"
+
+msgid ""
+"For most games and apps made with 4.4 it should be relatively safe to "
+"migrate to 4.5. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"Für die meisten Spiele und Anwendungen, die mit 4.4 entwickelt wurden, "
+"sollte es relativ sicher sein, auf 4.5 zu migrieren. Diese Seite soll alles "
+"abdecken, worauf Sie bei der Migration Ihres Projekts achten müssen."
+
 msgid "Breaking changes"
 msgstr "Änderungen, die etwas kaputtmachen können"
 
@@ -19,13 +31,13 @@ msgid ""
 "whether the C# breaking change is *binary compatible* or *source compatible*:"
 msgstr ""
 "Dieser Artikel gibt an, ob die einzelnen Änderungen GDScript betreffen und "
-"ob die C#-Änderung *binärkompatibel* oder *quelltextkompatibel* ist:"
+"ob die C#-Änderung *binärkompatibel* oder *quellcodekompatibel* ist:"
 
 msgid ""
 "**Source compatible** - Source code will compile successfully without "
 "changes when upgrading Godot."
 msgstr ""
-"**Quellcodekompatibel** - Der Quellcode wird beim Upgrade von Godot ohne "
+"**Quellcodekompatibel** – Der Quellcode wird beim Upgrade von Godot ohne "
 "Änderungen erfolgreich kompiliert."
 
 msgid "Core"
@@ -41,13 +53,19 @@ msgid "C# Binary Compatible"
 msgstr "C#-binär- kompatibel"
 
 msgid "C# Source Compatible"
-msgstr "C#-quellcode- kompatibel"
+msgstr "C#-quellcodekompatibel"
 
 msgid "Introduced"
 msgstr "Eingeführt in"
 
+msgid "**JSONRPC**"
+msgstr "**JSONRPC**"
+
 msgid "|❌|"
 msgstr "|❌|"
+
+msgid "`GH-104890`_"
+msgstr "`GH-104890`_"
 
 msgid "**Node**"
 msgstr "**Node**"
@@ -55,25 +73,61 @@ msgstr "**Node**"
 msgid "|✔️ with compat|"
 msgstr "|✔️ with compat|"
 
+msgid "`GH-106848`_"
+msgstr "`GH-106848`_"
+
 msgid "|✔️|"
 msgstr "|✔️|"
+
+msgid "`GH-76560`_"
+msgstr "`GH-76560`_"
 
 msgid "Rendering"
 msgstr "Rendering"
 
+msgid "**DisplayServer**"
+msgstr "**DisplayServer**"
+
+msgid "`GH-98194`_"
+msgstr "`GH-98194`_"
+
 msgid "**RenderingDevice**"
 msgstr "**RenderingDevice**"
+
+msgid "`GH-105570`_"
+msgstr "`GH-105570`_"
 
 msgid "**RenderingServer**"
 msgstr "**RenderingServer**"
 
+msgid "`GH-104269`_"
+msgstr "`GH-104269`_"
+
+msgid "GLTF"
+msgstr "GLTF"
+
+msgid "**GLTFAccessor**"
+msgstr "**GLTFAccessor**"
+
+msgid "`GH-106220`_"
+msgstr "`GH-106220`_"
+
+msgid "**GLTFBufferView**"
+msgstr "**GLTFBufferView**"
+
 msgid "Text"
 msgstr "Text"
+
+msgid "**CanvasItem**"
+msgstr "**CanvasItem**"
 
 msgid "Method ``draw_char`` adds a new ``oversampling`` optional parameter"
 msgstr ""
 "Methode ``draw_char`` fügt einen neuen optionalen Parameter ``oversampling`` "
 "hinzu"
+
+msgid "`GH-104872`_"
+msgstr "`GH-104872`_"
 
 msgid "**Font**"
 msgstr "**Font**"
@@ -86,8 +140,26 @@ msgstr ""
 "Methode ``add_image`` fügt einen neuen optionalen Parameter ``alt_text`` "
 "hinzu"
 
+msgid "`GH-76829`_"
+msgstr "`GH-76829`_"
+
+msgid "`GH-107347`_"
+msgstr "`GH-107347`_"
+
+msgid "`GH-106300`_"
+msgstr "`GH-106300`_"
+
+msgid "**TextLine**"
+msgstr "**TextLine**"
+
+msgid "**TextParagraph**"
+msgstr "**TextParagraph**"
+
 msgid "**TextServer**"
 msgstr "**TextServer**"
+
+msgid "**TreeItem**"
+msgstr "**TreeItem**"
 
 msgid "Method ``add_button`` adds a new ``alt_text`` optional parameter"
 msgstr ""
@@ -100,14 +172,57 @@ msgstr "**TextServerExtension**"
 msgid "XR"
 msgstr "XR"
 
+msgid "**OpenXRAPIExtension**"
+msgstr "**OpenXRAPIExtension**"
+
+msgid "`GH-104087`_"
+msgstr "`GH-104087`_"
+
+msgid "**OpenXRBindingModifierEditor**"
+msgstr "**OpenXRBindingModifierEditor**"
+
+msgid "`GH-103869`_"
+msgstr "`GH-103869`_"
+
+msgid "**OpenXRInteractionProfileEditor**"
+msgstr "**OpenXRInteractionProfileEditor**"
+
+msgid "**OpenXRInteractionProfileEditorBase**"
+msgstr "**OpenXRInteractionProfileEditorBase**"
+
 msgid "Editor plugins"
 msgstr "Editor-Plugins"
+
+msgid "**EditorExportPlatform**"
+msgstr "**EditorExportPlatform**"
+
+msgid "`GH-71542`_"
+msgstr "`GH-71542`_"
 
 msgid "**EditorUndoRedoManager**"
 msgstr "**EditorUndoRedoManager**"
 
+msgid "`GH-106121`_"
+msgstr "`GH-106121`_"
+
+msgid "**EditorExportPlatformExtension**"
+msgstr "**EditorExportPlatformExtension**"
+
+msgid "`GH-108825`_"
+msgstr "`GH-108825`_"
+
 msgid "Behavior changes"
 msgstr "Änderungen am Verhalten"
+
+msgid ""
+"In 4.5, some behavior changes have been introduced, which might require you "
+"to adjust your project."
+msgstr ""
+"In 4.5 wurden einige Änderungen am Verhalten eingeführt, die möglicherweise "
+"eine Anpassung Ihres Projekts erfordern."
+
+msgid "TileMapLayer"
+msgstr "TileMapLayer"
 
 msgid "Navigation"
 msgstr "Navigation"

@@ -136,6 +136,12 @@ msgstr ""
 "要定义变量、参数、常量的类型，请在名称后写一个英文冒号，再写上类型。例如 "
 "``var health: int``\\ 。这样就能够让变量的类型始终保持一致："
 
+msgid ""
+"Godot will try to infer the type when you write a colon, but omit the type:"
+msgstr ""
+"当您编写包含冒号的代码时，Godot 会尝试推断类型；但若省略类型，则不会进行推"
+"断："
+
 msgid "There is no difference between ``=`` and ``:=`` for constants."
 msgstr "对于常量而言，\\ ``=`` 和 ``:=`` 没有区别。"
 

@@ -11,9 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "HTML5 shell class reference"
-msgstr "HTML5 Shell 類別參考"
-
 msgid ""
 "Projects exported for the Web expose the :js:class:`Engine` class to the "
 "JavaScript environment, that allows fine control over the engine's start-up "
@@ -50,9 +47,6 @@ msgstr "靜態方法"
 msgid "Promise"
 msgstr "Promise"
 
-msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-msgstr ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-
 msgid "void"
 msgstr "void"
 
@@ -68,6 +62,9 @@ msgid ""
 msgstr ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
+
+msgid "Array.<string>"
+msgstr "字串陣列"
 
 msgid "Instance Methods"
 msgstr "實例方法"
@@ -314,9 +311,6 @@ msgstr "數值"
 msgid ":js:attr:`canvasResizePolicy`"
 msgstr ":js:attr:`canvasResizePolicy`"
 
-msgid "Array.<string>"
-msgstr "字串陣列"
-
 msgid ":js:attr:`args`"
 msgstr ":js:attr:`args`"
 
@@ -348,11 +342,6 @@ msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
 
 msgid "**Property Descriptions**"
 msgstr "**屬性說明**"
-
-msgid ""
-"Whether the unload the engine automatically after the instance is "
-"initialized."
-msgstr "實例初始化後是否自動解除載入引擎。"
 
 msgid "value"
 msgstr "值"
@@ -428,6 +417,12 @@ msgstr ""
 
 msgid "``[]``"
 msgstr "``[]``"
+
+msgid "``false``"
+msgstr "``false``"
+
+msgid "``0``"
+msgstr "``0``"
 
 msgid "A callback function for handling Godot's ``OS.execute`` calls."
 msgstr "處理 Godot ``OS.execute`` 呼叫的回呼函式。"
