@@ -34,12 +34,13 @@
 # Joel A <joeax910@student.liu.se>, 2025.
 # Mona Lisa <monalisa@users.noreply.hosted.weblate.org>, 2026.
 # Jonatan Nyberg <nickwick@users.noreply.hosted.weblate.org>, 2026.
+# Ricer <twinbljm@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-08-20 11:36+0200\n"
-"PO-Revision-Date: 2026-07-29 18:07+0000\n"
+"PO-Revision-Date: 2026-10-29 06:51+0000\n"
 "Last-Translator: Jonatan Nyberg <nickwick@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/sv/>\n"
@@ -48,7 +49,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.8.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -515,7 +516,6 @@ msgstr ""
 "redigeraren och utveckla C++-moduler."
 
 #: ../../docs/about/introduction.rst:83
-#, fuzzy
 msgid ""
 "**Community** is dedicated to the life of Godot's community and contains a "
 "list of recommended third-party tutorials and materials outside of this "
@@ -909,13 +909,13 @@ msgid "**Plugins:**"
 msgstr "**Insticksmoduler:**"
 
 #: ../../docs/about/list_of_features.rst:117
-#, fuzzy
 msgid ""
 "Editor plugins can be downloaded from the :ref:`Asset Store "
 "<doc_what_is_asset_store>` to extend editor functionality."
 msgstr ""
-"Editor‑insticksmoduler kan laddas ned från :ref:`asset library "
-"<doc_what_is_assetlib>` för att utöka editorns funktionalitet."
+"Insticksmoduler till redigeraren kan laddas ned från "
+":ref:`tillgångsbiblioteket <doc_what_is_asset_store>` för att utöka "
+"redigerarens funktioner."
 
 #: ../../docs/about/list_of_features.rst:119
 msgid ""
@@ -926,13 +926,12 @@ msgstr ""
 "lägga till nya funktioner eller snabba upp ditt arbetsflöde."
 
 #: ../../docs/about/list_of_features.rst:121
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the Asset Store <doc_using_asset_store_editor>` "
 "in the Project Manager and import them directly."
 msgstr ""
-":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
-"i Projekthanteraren och importera dem direkt."
+":ref:`Hämta projekt från tillgångsbiblioteket <doc_using_asset_store_editor>"
+"` i projekthanteraren och importera dem direkt."
 
 #: ../../docs/about/list_of_features.rst:125
 #: ../../docs/about/docs_changelog.rst:123
@@ -1372,9 +1371,8 @@ msgid "Detail mapping for the albedo and normal maps."
 msgstr "Detaljmappning för albedo- och normalmappar."
 
 #: ../../docs/about/list_of_features.rst:249
-#, fuzzy
 msgid "Subsurface scattering and transmittance."
-msgstr "Subsurface scattering och transmittans."
+msgstr "Ljusspridning under ytan och transmittans."
 
 #: ../../docs/about/list_of_features.rst:250
 msgid ""
@@ -2918,7 +2916,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:709
 msgid "Fullscreen mode (borderless and exclusive)."
-msgstr ""
+msgstr "Fullskärmsläge (kantlös och exklusiv)."
 
 #: ../../docs/about/list_of_features.rst:710
 msgid "Borderless windows (fullscreen or non-fullscreen)."
@@ -3051,56 +3049,58 @@ msgid ""
 "Support for desktop headsets using :ref:`OpenXR <doc_setting_up_xr>`. If a "
 "headset works with SteamVR, it should work with Godot."
 msgstr ""
+"Stöd för datoranslutna headset som använder :ref:`OpenXR <doc_setting_up_xr>"
+"`. Om ett headset fungerar med SteamVR bör det fungera med Godot."
 
 #: ../../docs/about/list_of_features.rst:751
 msgid ""
 "Godot also supports Quest over Link, AndroidXR Direct Preview, and Pico "
 "Connect."
 msgstr ""
+"Godot stödjer också Quest over Link, AndroidXR Direct Preview, och Pico "
+"Connect."
 
 #: ../../docs/about/list_of_features.rst:754
-#, fuzzy
 msgid ""
 "Support for :ref:`Android-based headsets <doc_deploying_to_android>` using "
 "OpenXR. Including support for the following standalone headsets:"
 msgstr ""
 "Stöd för :ref:`Android-baserade headset <doc_deploying_to_android>` med "
-"OpenXR genom en insticksmodul."
+"OpenXR genom en insticksmodul. Inkluderande det följande stödet för "
+"fristående headset:"
 
 #: ../../docs/about/list_of_features.rst:757
-#, fuzzy
 msgid "Meta Quest 1/2/3 and Pro"
-msgstr "Meta Quest Pro"
+msgstr "Meta Quest 1/2/3 och Pro"
 
 #: ../../docs/about/list_of_features.rst:758
 msgid "Pico 4/4 Ultra"
-msgstr ""
+msgstr "Pico 4/4 Ultra"
 
 #: ../../docs/about/list_of_features.rst:759
 msgid "Magic Leap 2"
-msgstr ""
+msgstr "Magic Leap 2"
 
 #: ../../docs/about/list_of_features.rst:760
 msgid "Lynx R1"
-msgstr ""
+msgstr "Lynx R1"
 
 #: ../../docs/about/list_of_features.rst:761
 msgid "HTC Vive Focus Vision"
-msgstr ""
+msgstr "HTC Vive Focus Vision"
 
 #: ../../docs/about/list_of_features.rst:762
-#, fuzzy
 msgid "Android XR headsets"
-msgstr "Android-redigeraren"
+msgstr "Android XR-headset"
 
 #: ../../docs/about/list_of_features.rst:764
 msgid "Support for the Linux-based standalone Steam Frame using OpenXR."
 msgstr ""
+"Stöd för det fristående, Linux-baserade headsetet Steam Frame via OpenXR."
 
 #: ../../docs/about/list_of_features.rst:766
-#, fuzzy
 msgid "Limited support for visionOS Apple headsets."
-msgstr "Begränsat inbyggt stöd för Apples visionOS-headset."
+msgstr "Begränsat stöd för Apples headset med visionOS."
 
 #: ../../docs/about/list_of_features.rst:768
 msgid ""
@@ -3615,9 +3615,8 @@ msgstr "**macOS:** x86_64- eller ARM-processor (Apple Silicon)"
 
 #: ../../docs/about/system_requirements.rst:32
 #: ../../docs/about/system_requirements.rst:217
-#, fuzzy
 msgid "*Example: Intel 7th Gen (Kaby Lake) CPU, Apple M1*"
-msgstr "*Exempel: Intel Core 2 Duo SU9400, Apple M1*"
+msgstr "*Exempel: Intel-processor av 7:e generationen (Kaby Lake), Apple M1*"
 
 #: ../../docs/about/system_requirements.rst:34
 #: ../../docs/about/system_requirements.rst:219
@@ -3713,15 +3712,14 @@ msgstr "**Lagring**"
 
 #: ../../docs/about/system_requirements.rst:54
 #: ../../docs/about/system_requirements.rst:100
-#, fuzzy
 msgid ""
 "200 MB (used for the executable, project files, and cache). Exporting "
 "projects requires downloading export templates separately (up to 1.5 GB "
 "after installation, depending on the target platforms chosen)."
 msgstr ""
-"200 MB (används för den körbara filen, projektfiler och cacheminne). För att "
-"exportera projekt måste exportmallarna hämtas separat (1,3 GB efter "
-"installationen)."
+"200 MB (används för den körbara filen, projektfiler och cache). För att "
+"exportera projekt måste exportmallarna hämtas separat (upp till 1,5 GB efter "
+"installationen, beroende på vilka målplattformar som väljs)."
 
 #: ../../docs/about/system_requirements.rst:58
 #: ../../docs/about/system_requirements.rst:104
@@ -3735,13 +3733,13 @@ msgid "**Operating system**"
 msgstr "**Operativsystem**"
 
 #: ../../docs/about/system_requirements.rst:58
-#, fuzzy
 msgid ""
 "**Native editor:** Windows 10, macOS 11 (Intel Macs), macOS 13 (Apple "
 "Silicon Macs), Linux distribution released after 2018"
 msgstr ""
-"**Inbyggd redigerare:** Windows 10, macOS 10.13 (Compatibility) eller macOS "
-"10.15 (Forward+/Mobile), eller en Linux-distribution som gavs ut efter 2018"
+"**Plattformsspecifik redigerare:** Windows 10, macOS 11 (Mac-datorer med "
+"Intel-processor), macOS 13 (Mac-datorer med Apple Silicon), Linux-"
+"distribution som gavs ut efter 2018"
 
 #: ../../docs/about/system_requirements.rst:60
 #: ../../docs/about/system_requirements.rst:105
@@ -3937,21 +3935,19 @@ msgstr "**Webbredigerare:** 12 GB"
 
 #: ../../docs/about/system_requirements.rst:143
 #: ../../docs/about/system_requirements.rst:174
-#, fuzzy
 msgid ""
 "2 GB (used for the executable, project files, all export templates, and "
 "cache)"
 msgstr ""
-"1,5 GB (används för den körbara filen, projektfiler, samtliga exportmallar "
-"och cacheminne)"
+"2 GB (används för den körbara filen, projektfiler, samtliga exportmallar och "
+"cache)"
 
 #: ../../docs/about/system_requirements.rst:145
-#, fuzzy
 msgid ""
 "**Native editor:** Windows 11, macOS 13, Linux distribution released after "
 "2020"
 msgstr ""
-"**Inbyggd redigerare:** Windows 10, macOS 10.15 eller en Linux-distribution "
+"**Plattformsspecifik redigerare:** Windows 11, macOS 13, Linux-distribution "
 "som gavs ut efter 2020"
 
 #: ../../docs/about/system_requirements.rst:146
@@ -4103,19 +4099,17 @@ msgstr "**För webbexporter:** 4 GB"
 #: ../../docs/about/system_requirements.rst:281
 #: ../../docs/about/system_requirements.rst:326
 #: ../../docs/about/system_requirements.rst:361
-#, fuzzy
 msgid "150 MB (used for the executable, project files, and cache)"
-msgstr "150 MB (används för den körbara filen, projektfiler och cacheminne)"
+msgstr "150 MB (används för den körbara filen, projektfiler och cache)"
 
 #: ../../docs/about/system_requirements.rst:244
-#, fuzzy
 msgid ""
 "**For native exports:** Windows 10, macOS 11 (Intel Macs), macOS 13 (Apple "
 "Silicon Macs), Linux distribution released after 2018"
 msgstr ""
-"**För inbyggda exporter:** Windows 10, macOS 10.15 (Forward+/Mobile, "
-"Vulkan), macOS 13.0 (Forward+/Mobile, Metal) eller en Linux-distribution som "
-"gavs ut efter 2020"
+"**För plattformsspecifika exporter:** Windows 10, macOS 11 (Mac-datorer med "
+"Intel-processor), macOS 13 (Mac-datorer med Apple Silicon), Linux-"
+"distribution som gavs ut efter 2018"
 
 #: ../../docs/about/system_requirements.rst:258
 msgid "**iOS:** SoC with any 64-bit ARM CPU"
@@ -4168,15 +4162,14 @@ msgid "**For web exports:** 2 GB"
 msgstr "**För webbexporter:** 2 GB"
 
 #: ../../docs/about/system_requirements.rst:283
-#, fuzzy
 msgid ""
 "**For native exports:** Android 7.0 (Compatibility), Android 9.0 (Forward+/"
 "Mobile), iOS 15.0 (Forward+/Mobile with Vulkan), iOS 16.0 (Forward+/Mobile "
 "with Metal)"
 msgstr ""
-"**För inbyggda exporter:** Android 7.0 (Compatibility), Android 9.0 "
-"(Forward+/Mobile), iOS 12.0 (Forward+/Mobile, Vulkan) eller iOS 16.0 "
-"(Forward+/Mobile, Metal)"
+"**För plattformsspecifika exporter:** Android 7.0 (Compatibility), Android "
+"9.0 (Forward+/Mobile), iOS 15.0 (Forward+/Mobile med Vulkan), iOS 16.0 "
+"(Forward+/Mobile med Metal)"
 
 #: ../../docs/about/system_requirements.rst:289
 msgid ""
@@ -4222,13 +4215,12 @@ msgid "**For web exports:** 8 GB"
 msgstr "**För webbexporter:** 8 GB"
 
 #: ../../docs/about/system_requirements.rst:328
-#, fuzzy
 msgid ""
 "**For native exports:** Windows 11, macOS 13, Linux distribution released "
 "after 2020"
 msgstr ""
-"**Inbyggd redigerare:** Windows 10, macOS 10.15 eller en Linux-distribution "
-"som gavs ut efter 2020"
+"**För plattformsspecifika exporter:** Windows 11, macOS 13, Linux-"
+"distribution som gavs ut efter 2020"
 
 #: ../../docs/about/system_requirements.rst:329
 msgid ""
@@ -4268,9 +4260,8 @@ msgstr ""
 "stöd för Vulkan 1.2 eller stöd för Metal 3 (iOS/iPadOS)"
 
 #: ../../docs/about/system_requirements.rst:363
-#, fuzzy
 msgid "**For native exports:** Android 9.0, iOS 16.0"
-msgstr "**För inbyggda exporter:** 2 GB"
+msgstr "**För plattformsspecifika exporter:** Android 9.0, iOS 16.0"
 
 #: ../../docs/about/system_requirements.rst:364
 msgid ""
@@ -4712,13 +4703,12 @@ msgstr ""
 "Python, JavaScript, ActionScript med flera)."
 
 #: ../../docs/about/faq.rst:162
-#, fuzzy
 msgid ""
 "Difficulty integrating with the code editor for providing code completion, "
 "live editing, etc. (all languages)."
 msgstr ""
-"Svårigheter att integrera med kodredigeraren för att tillhandahålla "
-"kodkomplettering, liveredigering etc. (alla)."
+"Svårigheter att integrera med kodredigeraren för att erbjuda "
+"kodkomplettering, redigering i realtid med mera (alla språk)."
 
 #: ../../docs/about/faq.rst:165
 msgid "GDScript was designed to curtail the issues above, and more."
@@ -5845,7 +5835,6 @@ msgstr ""
 "fortfarande följa den ursprungliga licensen."
 
 #: ../../docs/about/complying_with_licenses.rst:28
-#, fuzzy
 msgid ""
 "This section covers compliance with licenses from a user perspective. If you "
 "are interested in license compliance as a contributor, you can find "
@@ -5853,11 +5842,11 @@ msgid ""
 "latest/engine/guidelines/best_practices.html#don-t-use-complex-canned-"
 "solutions-for-simple-problems>`__ page."
 msgstr ""
-"Det här avsnittet beskriver hur användare följer licenser. Riktlinjer för "
-"licensefterlevnad som bidragsgivare finns `här <https://"
-"contributing.godotengine.org/en/latest/engine/guidelines/"
-"best_practices.html#don-t-use-complex-canned-solutions-for-simple-"
-"problems>`__."
+"Det här avsnittet handlar om licensefterlevnad ur ett användarperspektiv. Om "
+"du vill veta hur du som bidragsgivare följer licenserna hittar du riktlinjer "
+"på sidan `Bästa praxis <https://contributing.godotengine.org/en/latest/"
+"engine/guidelines/best_practices.html#don-t-use-complex-canned-solutions-for-"
+"simple-problems>`__."
 
 #: ../../docs/about/complying_with_licenses.rst:34
 msgid ""
@@ -6272,14 +6261,12 @@ msgid "**Support level**"
 msgstr "**Stödnivå**"
 
 #: ../../docs/about/release_policy.rst:87
-#, fuzzy
 msgid "Godot 4.8 (`master`)"
-msgstr "Godot 4.7 (`master`)"
+msgstr "Godot 4.8 (`master`)"
 
 #: ../../docs/about/release_policy.rst:87
-#, fuzzy
 msgid "Q4 2026 (estimate)"
-msgstr "Kvartal 2/3 2026 (uppskattning)"
+msgstr "Kvartal 4 2026 (uppskattning)"
 
 #: ../../docs/about/release_policy.rst:87
 msgid ""
@@ -6294,14 +6281,12 @@ msgid "unstable"
 msgstr "instabil"
 
 #: ../../docs/about/release_policy.rst:90
-#, fuzzy
 msgid "Godot 4.7"
-msgstr "Godot 4.6"
+msgstr "Godot 4.7"
 
 #: ../../docs/about/release_policy.rst:90
-#, fuzzy
 msgid "June 2026"
-msgstr "januari 2026"
+msgstr "juni 2026"
 
 #: ../../docs/about/release_policy.rst:90
 #: ../../docs/about/release_policy.rst:93
@@ -8273,7 +8258,6 @@ msgid "Scenes"
 msgstr "Scener"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:24
-#, fuzzy
 msgid ""
 "In Godot, you break down your game into reusable scenes. A scene can be a "
 "character, a weapon, a menu in the user interface, a single house, an entire "
@@ -8342,15 +8326,15 @@ msgstr ""
 "interna struktur döljs i redigeraren."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:56
-#, fuzzy
 msgid ""
 "Godot provides an extensive library of base node types you can combine and "
 "extend to build more powerful ones. You'll use these nodes for most things "
 "you build, whether that's 2D, 3D, or UI."
 msgstr ""
 "Godot tillhandahåller ett omfattande bibliotek med grundläggande nodtyper "
-"som kan kombineras och utökas till kraftfullare noder. De flesta uppgifter i "
-"2D, 3D och användargränssnitt utförs med dessa noder."
+"som du kan kombinera och utöka för att bygga kraftfullare noder. Du använder "
+"dessa noder till det mesta du bygger, oavsett om det är 2D, 3D eller "
+"användargränssnitt."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:63
 #: ../../docs/engine_details/file_formats/tscn.rst:97
@@ -8450,13 +8434,12 @@ msgstr ""
 "av scensträdet."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:105
-#, fuzzy
 msgid ""
 "After this short breakdown, you probably have many questions. Bear with us "
 "as you will get many answers throughout the Getting Started series."
 msgstr ""
-"Efter den här korta genomgången har du förmodligen många frågor. Ha tålamod "
-"– du får många svar under nybörjarserien."
+"Efter den här korta genomgången har du förmodligen många frågor. Fortsätt "
+"läsa, så får du många svar i serien Komma igång."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:10
 msgid "First look at Godot's interface"
@@ -8728,29 +8711,28 @@ msgstr ""
 "här sparas inte när spelet slutar köras."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:147
-#, fuzzy
 msgid ""
 "The **Script screen** is a complete code editor with a debugger, rich auto-"
 "completion, and built-in class reference."
 msgstr ""
 "**Skriptskärmen** är en fullständig kodredigerare med felsökare, avancerad "
-"automatisk komplettering och inbyggd kodreferens."
+"automatisk komplettering och inbyggd klassreferens."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:152
-#, fuzzy
 msgid ""
 "Finally, the **Asset Store** is a repository of user-submitted addons, "
 "scripts, tools, and other resources to use in your projects."
 msgstr ""
-"Slutligen är **Tillgångsbiblioteket** ett bibliotek med kostnadsfria "
-"tillägg, skript och tillgångar med öppen källkod som kan användas i projekt."
+"Slutligen innehåller **tillgångsbiblioteket** tillägg, skript, verktyg och "
+"andra resurser som användare har bidragit med och som du kan använda i dina "
+"projekt."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:159
-#, fuzzy
 msgid ""
 "You can learn more about the Asset Store in ref:`doc_what_is_asset_store`."
 msgstr ""
-"Mer information om tillgångsbiblioteket finns i :ref:`doc_what_is_assetlib`."
+"Mer information om tillgångsbiblioteket finns i "
+":ref:`doc_what_is_asset_store`."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:164
 msgid "Integrated class reference"
@@ -8840,15 +8822,15 @@ msgid "Learning new features"
 msgstr "Lära sig nya funktioner"
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:10
-#, fuzzy
 msgid ""
 "Godot is a feature-rich game engine. There is a lot to learn about it. This "
 "page explains how you can use the online manual, built-in class reference, "
 "and join online communities to learn new features and techniques."
 msgstr ""
-"Godot är en funktionsrik spelmotor med mycket att lära sig. Den här sidan "
-"förklarar hur du kan använda onlinehandboken och den inbyggda kodreferensen "
-"samt delta i nätgemenskaper för att lära dig nya funktioner och tekniker."
+"Godot är en funktionsrik spelmotor. Det finns mycket att lära sig om den. "
+"Den här sidan förklarar hur du kan använda handboken på nätet och den "
+"inbyggda klassreferensen samt delta i nätgemenskaper för att lära dig nya "
+"funktioner och tekniker."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:15
 msgid "Making the most of this manual"
@@ -10011,25 +9993,23 @@ msgid "Creating instances"
 msgstr "Skapa instanser"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:8
-#, fuzzy
 msgid ""
 "This tutorial refers to instantiating scenes in the editor. To learn how to "
 "instantiate scenes from code, see :ref:`doc_nodes_and_scene_instances`."
 msgstr ""
 "Den här handledningen behandlar instansiering av scener i redigeraren. "
-"Information om hur scener instansieras från kod finns "
-"i :ref:`doc_nodes_and_scene_instances`."
+"Information om hur scener instansieras från kod finns i "
+":ref:`doc_nodes_and_scene_instances`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:11
-#, fuzzy
 msgid ""
 "Godot's approach to *instantiation* described below should not be confused "
 "with hardware instancing that can be used to render large amounts of similar "
 "objects quickly. See :ref:`doc_using_multimesh` instead."
 msgstr ""
-"Godots metod för *instansiering* nedan ska inte förväxlas med "
-"maskinvaruinstansiering, som används för att snabbt rendera stora mängder "
-"liknande objekt. Se i stället :ref:`doc_using_multimesh`."
+"Godots metod för *instansiering* som beskrivs nedan ska inte förväxlas med "
+"maskinvaruinstansiering, som kan användas för att snabbt rendera stora "
+"mängder liknande objekt. Se i stället :ref:`doc_using_multimesh`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
@@ -10068,7 +10048,6 @@ msgstr ""
 "nod och en :ref:`CollisionShape2D <class_CollisionShape2D>`-nod."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:32
-#, fuzzy
 msgid ""
 "Once you have saved a scene, it works as a blueprint: you can reproduce it "
 "in other scenes as many times as you'd like. Replicating an object from a "
@@ -10079,7 +10058,6 @@ msgstr ""
 "mall kallas **instansiering**."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:38
-#, fuzzy
 msgid ""
 "As we mentioned in the previous part, instantiated scenes behave like a "
 "node: the editor hides their content by default. When you instantiate the "
@@ -10087,8 +10065,8 @@ msgid ""
 "unique name."
 msgstr ""
 "Som vi nämnde i föregående del fungerar instansierade scener som noder: "
-"redigeraren döljer deras innehåll som standard. När Ball instansieras visas "
-"endast noden Ball. Observera också att varje kopia får ett unikt namn."
+"redigeraren döljer deras innehåll som standard. När du instansierar Ball "
+"visas endast noden Ball. Observera också att varje kopia får ett unikt namn."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:42
 msgid ""
@@ -10106,15 +10084,14 @@ msgid "In practice"
 msgstr "I praktiken"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:50
-#, fuzzy
 msgid ""
 "Let's use instantiation in practice to see how it works in Godot. We invite "
 "you to download the ball's sample project we prepared for you: "
 "`instancing_starter.zip <https://github.com/godotengine/godot-docs-project-"
 "starters/releases/download/latest-4.x/instancing_starter.zip>`_."
 msgstr ""
-"Låt oss använda instansiering i praktiken för att se hur den fungerar i "
-"Godot. Hämta exempelprojektet med bollen som vi har förberett: "
+"Låt oss använda instansiering i praktiken för att se hur det fungerar i "
+"Godot. Hämta exempelprojektet med bollen som vi har förberett åt dig: "
 "`instancing_starter.zip <https://github.com/godotengine/godot-docs-project-"
 "starters/releases/download/latest-4.x/instancing_starter.zip>`_."
 
@@ -10131,27 +10108,21 @@ msgstr ""
 "Q`, :kbd:`Ctrl + Option + Cmd + Q` i macOS)."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:58
-#, fuzzy
 msgid "In the Project Manager, click the :button:`Import` button."
-msgstr ""
-"Klicka på knappen :button:`Importera` i Projekthanteraren för att importera "
-"projektet."
+msgstr "Klicka på knappen :button:`Importera` i projekthanteraren."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:62
-#, fuzzy
 msgid ""
 "In the file dialog that appears, navigate to the folder you extracted. "
 "Double-click the ``project.godot`` file to select it."
 msgstr ""
-"Gå till den uppackade mappen i popupfönstret. Dubbelklicka på filen "
-"``project.godot`` för att öppna den."
+"Gå till mappen som du packade upp i fildialogrutan som visas. Dubbelklicka "
+"på filen ``project.godot`` för att välja den."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
-#, fuzzy
 msgid "Finally, click the :button:`Import` button to import the project."
 msgstr ""
-"Klicka på knappen :button:`Importera` i Projekthanteraren för att importera "
-"projektet."
+"Klicka slutligen på knappen :button:`Importera` för att importera projektet."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:71
 msgid ""
@@ -10164,7 +10135,6 @@ msgstr ""
 "öppna projektet."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:74
-#, fuzzy
 msgid ""
 "The project contains two packed scenes: ``main.tscn``, containing walls "
 "against which the ball collides, and ``ball.tscn``. The main scene should "
@@ -10172,7 +10142,7 @@ msgid ""
 "scene, click the 2D button at the top of the screen."
 msgstr ""
 "Projektet innehåller två packade scener: ``main.tscn``, som innehåller "
-"väggar som bollen kolliderar med, och ``ball.tscn``. Scenen Main ska öppnas "
+"väggar som bollen kolliderar med, och ``ball.tscn``. Huvudscenen ska öppnas "
 "automatiskt. Om en tom 3D-scen visas i stället för huvudscenen klickar du på "
 "knappen 2D längst upp på skärmen."
 
@@ -10189,7 +10159,6 @@ msgstr ""
 "underordnad nod till den markerade noden."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:88
-#, fuzzy
 msgid "Double-click the ball scene to instantiate it."
 msgstr "Dubbelklicka på bollscenen för att instansiera den."
 
@@ -10210,16 +10179,14 @@ msgstr ""
 "ska falla."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:102
-#, fuzzy
 msgid ""
 "Now, we want to create more instances of the Ball node. With the ball still "
 "selected, press :kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) to duplicate it. "
 "Click and drag the new ball to a different location."
 msgstr ""
-"Nu vill vi skapa fler instanser av noden Ball. Håll bollen markerad och "
-"tryck på :kbd:`Ctrl + D` (:kbd:`Cmd + D` i macOS) för att köra "
-"dupliceringskommandot. Klicka och dra för att flytta den nya bollen till en "
-"annan plats."
+"Nu vill vi skapa fler instanser av noden Ball. Med bollen fortfarande "
+"markerad trycker du på :kbd:`Ctrl + D` (:kbd:`Cmd + D` på macOS) för att "
+"duplicera den. Klicka på den nya bollen och dra den till en annan plats."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:108
 msgid "You can repeat this process until you have several in the scene."
@@ -10306,28 +10273,24 @@ msgstr ""
 "och sparas."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:148
-#, fuzzy
 msgid ""
 "Let's now adjust an individual instance. Head back to the main scene by "
 "clicking on the corresponding tab above the viewport."
 msgstr ""
-"Låt oss nu justera en enskild instans. Gå tillbaka till scenen Main genom "
-"att klicka på motsvarande flik ovanför visningsområdet."
+"Låt oss nu justera en enskild instans. Gå tillbaka till huvudscenen genom "
+"att klicka på motsvarande flik ovanför visningsytan."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:153
-#, fuzzy
 msgid ""
 "Select one of the instantiated Ball nodes and, in the :ui:`Inspector`, set "
 "its :inspector:`Gravity Scale` value to ``10``."
 msgstr ""
-"Markera en av de instansierade Ball-noderna och ställ in "
-"värdet :inspector:`Gravity Scale` på ``10`` i :ui:`Inspektören`."
+"Markera en av de instansierade Ball-noderna och ställ in värdet "
+":inspector:`Gravity Scale` på ``10`` i :ui:`Inspektören`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:158
-#, fuzzy
 msgid "A gray \"revert\" button appears next to the adjusted property."
-msgstr ""
-"En grå knapp för ”återställning” visas bredvid den justerade egenskapen."
+msgstr "En grå knapp för återställning visas bredvid den ändrade egenskapen."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:162
 msgid ""
@@ -10414,16 +10377,15 @@ msgstr ""
 "Pilarna pekar mot den scen som instansierar respektive scen."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:201
-#, fuzzy
 msgid ""
 "Once you have a diagram, we recommend creating a scene for each element "
 "listed in it to develop your game. You'll use instantiation, either by code "
 "or directly in the editor, to build your tree of scenes."
 msgstr ""
-"När diagrammet är klart rekommenderar vi att du skapar en scen för varje "
-"element som visas och använder dem för att utveckla spelet. Instansiering, "
-"antingen i kod eller direkt i redigeraren, används sedan för att bygga "
-"scensträdet."
+"När du har ett diagram rekommenderar vi att du skapar en scen för varje "
+"element i det för att utveckla spelet. Du använder sedan instansiering, "
+"antingen via kod eller direkt i redigeraren, för att bygga ditt träd av "
+"scener."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:205
 msgid ""
@@ -10449,7 +10411,6 @@ msgstr ""
 "av tillgångar och kapslade element:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:216
-#, fuzzy
 msgid ""
 "Imagine we started by creating the room. We could make a couple of different "
 "room scenes, with unique arrangements of furniture in them. Later, we could "
@@ -10489,7 +10450,6 @@ msgstr ""
 "Godot-redigeraren."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:234
-#, fuzzy
 msgid ""
 "Instantiation, the process of producing an object from a blueprint, has many "
 "handy uses. With scenes, it gives you:"
@@ -11822,15 +11782,15 @@ msgstr ""
 "kopplat till sig och skapar en ny återanropsfunktion i dem."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:144
-#, fuzzy
 msgid ""
 "The advanced view lets you connect to any node and any built-in function, "
 "add arguments to the callback, and set options. You can toggle the mode in "
 "the window's bottom-left by clicking the :button:`Advanced` button."
 msgstr ""
 "Den avancerade vyn låter dig ansluta till valfri nod och inbyggd funktion, "
-"lägga till argument i återanropet och ange alternativ. Växla läge med "
-"knappen :button:`Avancerat` längst ned till höger i fönstret."
+"lägga till argument i återanropet och ange alternativ. Du kan växla läge "
+"genom att klicka på knappen :button:`Avancerat` längst ned till vänster i "
+"fönstret."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:151
 msgid ""
@@ -12729,13 +12689,12 @@ msgstr ""
 "oförändrade. Klicka bara på ”Skapa”:"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:20
-#, fuzzy
 msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the :menu:`Language` drop down menu before hitting create."
 msgstr ""
-"Om du skapar ett C#-skript eller använder ett annat språk väljer du språket "
-"i listrutan `language` innan du klickar på Skapa."
+"Om du skapar ett skript i C# eller något annat språk väljer du språket i "
+"rullgardinsmenyn :menu:`Språk` innan du klickar på Skapa."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:25
 msgid ""
@@ -12991,16 +12950,16 @@ msgstr ""
 "inte är indraget under `else`:"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:249
-#, fuzzy
 msgid ""
 "The ``delta`` parameter in the ``_process()`` function refers to the *frame "
 "length*, which is the amount of time that the previous frame took to "
 "complete. Using this value ensures that your movement will remain consistent "
 "even if the frame rate changes."
 msgstr ""
-"Parametern `delta` i funktionen `_process()` avser *bildrutans längd*, "
-"alltså tiden som den föregående bildrutan tog att slutföra. Värdet gör att "
-"rörelsen förblir konsekvent även om bildfrekvensen ändras."
+"Parametern ``delta`` i funktionen ``_process()`` avser *bildrutans "
+"varaktighet*, alltså den tid det tog att slutföra föregående bildruta. Genom "
+"att använda detta värde ser du till att rörelsehastigheten förblir densamma "
+"även om bildfrekvensen ändras."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:254
 msgid ""
@@ -13130,7 +13089,6 @@ msgstr ""
 "skicka:"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:376
-#, fuzzy
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered(body: "
@@ -13138,19 +13096,18 @@ msgid ""
 "player. Click :button:`Connect...` and the :ui:`Connect a Signal` window "
 "appears."
 msgstr ""
-"Observera att vår egen signal ”hit” också finns där. Eftersom fienderna blir "
-"``RigidBody2D``-noder använder vi signalen ``body_entered(body: Node2D)``. "
-"Den skickas när en kropp kommer i kontakt med spelaren. Klicka på "
-"”Connect..” så visas fönstret ”Connect a Signal”."
+"Observera att vår egen signal ”hit” också finns där! Eftersom fienderna "
+"kommer att vara ``RigidBody2D``-noder använder vi signalen ``body_entered"
+"(body: Node2D)``. Den skickas när en kropp kommer i kontakt med spelaren. "
+"Klicka på :button:`Anslut...` så visas fönstret :ui:`Anslut en signal`."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:381
-#, fuzzy
 msgid ""
 "Godot will create a function with that exact name directly in the script for "
 "you. You don't need to change the default settings right now."
 msgstr ""
 "Godot skapar automatiskt en funktion med exakt det namnet direkt i skriptet. "
-"Du behöver inte ändra de förvalda inställningarna nu."
+"Du behöver inte ändra standardinställningarna just nu."
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:388
 msgid ""
@@ -13230,7 +13187,6 @@ msgstr ""
 "kanter, väljer en slumpmässig riktning och rör sig i en rak linje."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:10
-#, fuzzy
 msgid ""
 "We'll create a ``Mob`` scene, which we can then *instantiate* to create any "
 "number of independent mobs in the game."
@@ -13359,9 +13315,8 @@ msgid "Enemy script"
 msgstr "Fiendeskript"
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:67
-#, fuzzy
 msgid "Attach a script to the ``Mob`` node like this:"
-msgstr "Koppla ett skript till ``Mob`` så här:"
+msgstr "Koppla ett skript till noden ``Mob`` så här:"
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:83
 msgid ""
@@ -13421,9 +13376,8 @@ msgstr ""
 "noden i slutet av bildrutan."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:134
-#, fuzzy
 msgid "This completes the ``Mob`` scene."
-msgstr "Därmed är scenen `Mob` färdig."
+msgstr "Därmed är scenen ``Mob`` färdig."
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:136
 msgid ""
@@ -13456,7 +13410,6 @@ msgstr ""
 "en behållare för spellogiken och inte själv behöver 2D-funktionalitet."
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:12
-#, fuzzy
 msgid ""
 "Click the **Instantiate** button (represented by a chain link icon) and "
 "select your saved ``player.tscn``."
@@ -13602,7 +13555,6 @@ msgid "Main script"
 msgstr "Huvudskript"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:75
-#, fuzzy
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``@export var "
 "mob_scene: PackedScene`` to allow us to choose the Mob scene we want to "
@@ -14068,15 +14020,14 @@ msgid "Connecting HUD to Main"
 msgstr "Ansluta HUD till Main"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:214
-#, fuzzy
 msgid ""
 "Now that we're done creating the ``HUD`` scene, go back to ``Main``. "
 "Instantiate the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. "
 "The scene tree should look like this, so make sure you didn't miss anything:"
 msgstr ""
 "När scenen ``HUD`` är färdig går du tillbaka till ``Main``. Instansiera "
-"scenen ``HUD`` i ``Main`` på samma sätt som scenen ``Player``. Scensträdet "
-"ska se ut så här. Kontrollera att inget saknas:"
+"scenen ``HUD`` i ``Main`` på samma sätt som du gjorde med scenen ``Player``. "
+"Scensträdet ska se ut så här, så kontrollera att du inte har missat något:"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:220
 msgid ""
@@ -14468,7 +14419,6 @@ msgstr ""
 "entiteter."
 
 #: ../../docs/getting_started/first_3d_game/index.rst:25
-#, fuzzy
 msgid ""
 "Code basic procedural gameplay by instantiating monsters at regular time "
 "intervals."
@@ -14750,13 +14700,12 @@ msgstr ""
 "resursen och ställ in dess *Size* på ``60``, ``2`` och ``60``."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:104
-#, fuzzy
 msgid ""
 "You should see a wide gray slab that covers the grid, as well as blue and "
 "red axes in the viewport."
 msgstr ""
-"Nu ska en bred grå platta synas över rutnätet och de blå och röda axlarna i "
-"visningsområdet."
+"Du bör se en bred grå platta som täcker rutnätet, samt blå och röda axlar i "
+"visningsytan."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:107
 msgid ""
@@ -14810,12 +14759,10 @@ msgstr ""
 "*CollisionShape3D*."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:136
-#, fuzzy
 msgid "Ultimately, ``Ground``'s Y position should be ``-1``."
-msgstr "Till slut ska ``Ground`` ha transform.position.y lika med -1."
+msgstr "Slutligen ska Y-positionen för ``Ground`` vara ``-1``."
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:140
-#, fuzzy
 msgid ""
 "Let's add a directional light so our scene isn't all gray. Select the "
 "``Main`` node and add a child node :ref:`DirectionalLight3D "
@@ -15838,7 +15785,6 @@ msgstr ""
 "skärmen. Vi använder den för att förstöra fienderna."
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:68
-#, fuzzy
 msgid ""
 "When you keep instantiating an object, there's a technique you can use to "
 "avoid the cost of creating and destroying instances all the time called "
@@ -15847,8 +15793,8 @@ msgid ""
 msgstr ""
 "När ett objekt instansieras upprepade gånger kan en teknik som kallas "
 "objektpoolning användas för att undvika kostnaden för att hela tiden skapa "
-"och förstöra instanser. Tekniken innebär att en samling objekt skapas i "
-"förväg och återanvänds."
+"och förstöra instanser. Tekniken innebär att en array med objekt skapas i "
+"förväg och återanvänds gång på gång."
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:73
 msgid ""
@@ -15955,7 +15901,6 @@ msgstr ""
 "``PI / 4`` radianer."
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:181
-#, fuzzy
 msgid ""
 "We got a random position, now we need a ``random_speed``. ``randf_range()`` "
 "will be useful as it gives random float values, and we will use "
@@ -15964,12 +15909,12 @@ msgid ""
 "``random_speed`` is applied, we rotate ``CharacterBody3D.velocity`` Vector3 "
 "towards the player."
 msgstr ""
-"När positionen är slumpmässig behöver vi även en ``random_speed``. "
-"Funktionen ``randi_range()`` är användbar eftersom den returnerar "
-"slumpmässiga heltal, och vi använder ``min_speed`` och ``max_speed``. "
-"``random_speed`` är ett heltal som multipliceras med "
-"``CharacterBody3D.velocity``. När ``random_speed`` har tillämpats roterar vi "
-"vektorn ``CharacterBody3D.velocity`` mot spelaren."
+"Nu har vi en slumpmässig position och behöver en ``random_speed``. "
+"Funktionen ``randf_range()`` är användbar eftersom den returnerar "
+"slumpmässiga flyttal, och vi använder ``min_speed`` och ``max_speed``. "
+"``random_speed`` är ett flyttal som vi multiplicerar "
+"``CharacterBody3D.velocity`` med. När ``random_speed`` har tillämpats "
+"roterar vi Vector3-vektorn ``CharacterBody3D.velocity`` mot spelaren."
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:214
 msgid "Leaving the screen"
@@ -16289,15 +16234,14 @@ msgid "image14"
 msgstr "image14"
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:122
-#, fuzzy
 msgid ""
 "We can now use the cylinders as guides. Fold them in the *Scene* dock by "
 "clicking the gray arrow next to them. Moving forward, you can also toggle "
 "their visibility by clicking the eye icon next to *Cylinders*."
 msgstr ""
-"Nu kan cylindrarna användas som stöd. Fäll ihop dem i scenpanelen genom att "
-"klicka på den grå pilen bredvid dem. Framöver kan du även växla deras "
-"synlighet med ögonikonen bredvid *Cylinders*."
+"Nu kan vi använda cylindrarna som riktmärken. Fäll ihop dem i panelen *Scen* "
+"genom att klicka på den grå pilen bredvid dem. Framöver kan du också visa "
+"eller dölja dem genom att klicka på ögonikonen bredvid *Cylinders*."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:126
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:310
@@ -17075,14 +17019,13 @@ msgstr ""
 "signalen och förstör monstret."
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:365
-#, fuzzy
 msgid ""
 "When using C#, Godot will create the appropriate events automatically for "
 "all Signals ending with ``EventHandler``, see :ref:`C# Signals "
 "<doc_c_sharp_signals>`."
 msgstr ""
 "När C# används skapar Godot automatiskt lämpliga händelser för alla signaler "
-"vars namn slutar med `EventHandler`. Se :ref:`C#-signaler "
+"vars namn slutar med ``EventHandler``. Se :ref:`C#-signaler "
 "<doc_c_sharp_signals>`."
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:367
@@ -18745,7 +18688,6 @@ msgstr ""
 "problem:"
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:16
-#, fuzzy
 msgid ""
 "They create their first scene and fill it with content only to eventually "
 "end up saving branches of their scene into separate scenes as the nagging "
@@ -19195,7 +19137,6 @@ msgstr ""
 "egen plats i hierarkin som syskon eller i en annan relation."
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:417
-#, fuzzy
 msgid ""
 "In some cases, you need these separated nodes to *also* position themselves "
 "relative to each other. You can use the :ref:`RemoteTransform2D "
@@ -19206,9 +19147,9 @@ msgid ""
 "the following:"
 msgstr ""
 "I vissa fall behöver dessa separerade noder *också* positionera sig i "
-"förhållande till varandra. För detta kan du använda "
-"noderna :ref:`RemoteTransform <class_RemoteTransform3D>` "
-"och :ref:`RemoteTransform2D <class_RemoteTransform2D>`. De låter en målnod "
+"förhållande till varandra. För detta kan du använda noderna "
+":ref:`RemoteTransform2D <class_RemoteTransform2D>` och "
+":ref:`RemoteTransform3D <class_RemoteTransform3D>`. De låter en målnod "
 "villkorligt ärva valda transformeringselement från Remote\\*-noden. Tilldela "
 "``target`` en :ref:`NodePath <class_NodePath>` på något av följande sätt:"
 
@@ -19680,7 +19621,6 @@ msgid "In the end, the best approach is to consider the following:"
 msgstr "I slutändan är det bäst att överväga följande:"
 
 #: ../../docs/tutorials/best_practices/scenes_versus_scripts.rst:199
-#, fuzzy
 msgid ""
 "If one wishes to create a basic tool that is going to be reused in several "
 "different projects and which people of all skill levels will likely use "
@@ -20117,7 +20057,6 @@ msgstr ""
 "funktioner. Processen består av två delar:"
 
 #: ../../docs/tutorials/best_practices/godot_interfaces.rst:9
-#, fuzzy
 msgid "Obtaining a reference to the object that presumably has the features."
 msgstr "Hämta en referens till objektet som antas innehålla funktionerna."
 
@@ -20130,12 +20069,10 @@ msgid "The rest of this tutorial outlines the various ways of doing all this."
 msgstr "Resten av handledningen beskriver olika sätt att göra detta."
 
 #: ../../docs/tutorials/best_practices/godot_interfaces.rst:16
-#, fuzzy
 msgid "Obtaining object references"
 msgstr "Hämta objektreferenser"
 
 #: ../../docs/tutorials/best_practices/godot_interfaces.rst:18
-#, fuzzy
 msgid ""
 "For all :ref:`Object <class_Object>`\\s, the most basic way of referencing "
 "them is to get a reference to an existing object from another obtained "
@@ -21339,7 +21276,6 @@ msgid "A mix of the above."
 msgstr "En blandning av ovanstående."
 
 #: ../../docs/tutorials/best_practices/data_preferences.rst:359
-#, fuzzy
 msgid ""
 "While one needs an AnimationPlayer to design each of the individual "
 "animation sequences for a game, it can also be useful to combine animations "
@@ -21349,12 +21285,13 @@ msgid ""
 "<class_AnimationTree>` shines. See the :ref:`in-depth guide on using the "
 "AnimationTree <doc_animation_tree>` for more details."
 msgstr ""
-"AnimationPlayer behövs för att utforma varje enskild animationssekvens i ett "
-"spel, men det kan också vara användbart att kombinera animeringar genom "
-"blandning och därmed möjliggöra mjuka övergångar. Objektets animeringar kan "
-"dessutom ha en planerad hierarkisk struktur. I sådana fall "
-"är :ref:`AnimationTree <class_AnimationTree>` särskilt användbart. En "
-"djupgående guide om AnimationTree finns :ref:`här <doc_animation_tree>`."
+"AnimationPlayer behövs för att utforma spelets enskilda animationssekvenser, "
+"men det kan också vara användbart att blanda animationer, det vill säga "
+"skapa mjuka övergångar mellan dem. Objektets animationer kan dessutom ha en "
+"planerad hierarkisk struktur. I sådana fall är :ref:`AnimationTree "
+"<class_AnimationTree>` särskilt användbart. Mer information finns i "
+":ref:`den utförliga guiden om hur du använder AnimationTree "
+"<doc_animation_tree>`."
 
 #: ../../docs/tutorials/best_practices/logic_preferences.rst:4
 msgid "Logic preferences"
@@ -23547,17 +23484,16 @@ msgstr ""
 "underresurs som används av noden unik och fristående från andra noder."
 
 #: ../../docs/tutorials/editor/inspector_dock.rst:121
-#, fuzzy
 msgid ""
 "If a node has exported variables in its attached script, you will also see "
 "these in the Inspector. The first image in this section has one for the "
 "Player node: :ui:`Action Suffix`. See :ref:`doc_gdscript_exports` for more "
 "on this topic."
 msgstr ""
-"Om en nods anslutna skript har exporterade variabler visas även de i "
-"Inspektören. Den första bilden i det här avsnittet visar en sådan variabel "
-"för Player-noden: `Action Suffix`. Mer information finns "
-"i :ref:`doc_gdscript_exports`."
+"Om en nod har exporterade variabler i sitt kopplade skript visas även dessa "
+"i inspektören. Den första bilden i det här avsnittet visar en sådan variabel "
+"för noden Player: :ui:`Action Suffix`. Mer information finns i "
+":ref:`doc_gdscript_exports`."
 
 #: ../../docs/tutorials/editor/inspector_dock.rst:125
 msgid "Refer to :ref:`doc_customizing_editor` for dock customization options."
@@ -23939,7 +23875,6 @@ msgstr ""
 "eller blanksteg."
 
 #: ../../docs/tutorials/editor/script_editor.rst:94
-#, fuzzy
 msgid ""
 "Many of the actions performed in the text editor can also be executed using "
 "shortcuts. The actions show their corresponding shortcuts next to them. "
@@ -23947,9 +23882,9 @@ msgid ""
 "to :menu:`Editor > Editor Settings... > Shortcuts`."
 msgstr ""
 "Många åtgärder i textredigeraren kan även utföras med kortkommandon. "
-"Motsvarande kortkommando visas bredvid åtgärden. En fullständig lista finns "
-"i :ref:`textredigerarens kortkommandon "
-"<doc_default_key_mapping_shortcuts_text_editor>`."
+"Motsvarande kortkommando visas bredvid åtgärden. I Godot hittar du alla "
+"kortkommandon och kan ändra dem via :menu:`Redigerare > "
+"Redigerarinställningar... > Kortkommandon`."
 
 #: ../../docs/tutorials/editor/script_editor.rst:99
 msgid ""
@@ -24060,7 +23995,6 @@ msgstr ""
 "spara eller stänga filer eller kopiera filens relativa sökväg. På menyn:"
 
 #: ../../docs/tutorials/editor/script_editor.rst:149
-#, fuzzy
 msgid ""
 "You can also use **Move Up** and **Move Down** to change the order of the "
 "file, or use **Sort** to sort all files alphabetically. **Toggle Files "
@@ -24071,7 +24005,7 @@ msgid ""
 msgstr ""
 "Du kan även använda **Flytta upp** och **Flytta ned** för att ändra filens "
 "placering eller **Sortera** för att sortera alla filer alfabetiskt. **Visa/"
-"dölj skriptpanelen** döljer panelen, som kan visas igen med högerpilen i "
+"dölj filpanelen** döljer panelen, som kan visas igen med högerpilen i "
 "statusfältet. **Stäng dokumentation** stänger alla öppna dokument i "
 "klassreferensen och lämnar endast skriptfiler öppna. **Visa i filsystemet** "
 "söker efter och markerar filen i filsystemspanelen."
@@ -24234,7 +24168,6 @@ msgstr ""
 "samma fil."
 
 #: ../../docs/tutorials/editor/script_editor.rst:211
-#, fuzzy
 msgid ""
 "**History Next**: After using **History Previous** to go back to an earlier "
 "script, this feature allows you to move forward through the script history, "
@@ -24242,21 +24175,20 @@ msgid ""
 "also changed the caret position more than 10 lines, you will first move it "
 "to its next location in the same file."
 msgstr ""
-"**Nästa i historiken**: När du har använt `Föregående i historiken` för att "
-"gå tillbaka till ett tidigare skript kan du med den här funktionen gå framåt "
-"i skripthistoriken och växla till skript som du tidigare har öppnat. Som "
-"ovan flyttas markören först till nästa position i samma fil om du även har "
-"flyttat den mer än tio rader."
+"**Nästa i historiken**: När du har använt **Föregående i historiken** för "
+"att gå tillbaka till ett tidigare skript kan du med den här funktionen gå "
+"framåt i skripthistoriken och växla till skript som du tidigare har öppnat. "
+"Som ovan flyttas markören först till nästa position i samma fil om du även "
+"har flyttat den mer än 10 rader."
 
 #: ../../docs/tutorials/editor/script_editor.rst:216
-#, fuzzy
 msgid ""
 "**Theme**: Provides options to import an existing theme, save, or reload it. "
 "Changing theme settings is performed via :ui:`Editor Settings`."
 msgstr ""
 "**Tema**: Innehåller alternativ för att importera ett befintligt tema samt "
 "spara eller läsa in det på nytt. Temainställningar ändras i "
-"`Redigerarinställningar`."
+":ui:`Redigerarinställningar`."
 
 #: ../../docs/tutorials/editor/script_editor.rst:218
 msgid "**Close**: Closes the active script."
@@ -24294,16 +24226,15 @@ msgstr ""
 "i :ref:`doc_running_code_in_the_editor_editorscript`."
 
 #: ../../docs/tutorials/editor/script_editor.rst:226
-#, fuzzy
 msgid ""
 "**Toggle Files Panel**: Shows or hides the script panel located on the left "
 "side of the text editor, allowing you to expand the available coding area. "
 "More on the :ui:`Scripts Panel` is explained :ref:`above "
 "<doc_script_editor_script_panel>`."
 msgstr ""
-"**Växla skriptpanelen**: Visar eller döljer skriptpanelen till vänster om "
-"textredigeraren så att den tillgängliga kodningsytan kan utökas. Mer "
-"information om `skriptpanelen` finns :ref:`ovan "
+"**Visa/dölj filpanelen**: Visar eller döljer skriptpanelen till vänster om "
+"textredigeraren, så att du kan utöka utrymmet för att skriva kod. Mer "
+"information om :ui:`Skriptpanelen` finns :ref:`ovan "
 "<doc_script_editor_script_panel>`."
 
 #: ../../docs/tutorials/editor/script_editor.rst:230
@@ -24339,7 +24270,6 @@ msgstr ""
 "**Klistra in***: Klistrar in innehållet i urklipp om det innehåller text."
 
 #: ../../docs/tutorials/editor/script_editor.rst:241
-#, fuzzy
 msgid "**Select All***: Selects all code in the text editor."
 msgstr "**Markera allt***: Markerar all kod i textredigeraren."
 
@@ -24473,15 +24403,14 @@ msgstr ""
 "dokumentet."
 
 #: ../../docs/tutorials/editor/script_editor.rst:272
-#, fuzzy
 msgid ""
 "**Create Code Region***: Wraps the selected text in a foldable code region "
 "to improve the readability of larger scripts. "
 "See :ref:`doc_gdscript_code_regions` for more."
 msgstr ""
 "**Skapa kodområde***: Omsluter den markerade texten med ett vikbart "
-"kodområde för att göra större skript mer lättlästa. Mer information finns "
-"i :ref:`doc_gdscript_builtin_types`."
+"kodområde för att göra större skript mer lättlästa. Mer information finns i "
+":ref:`doc_gdscript_code_regions`."
 
 #: ../../docs/tutorials/editor/script_editor.rst:275
 msgid ""
@@ -24544,13 +24473,12 @@ msgstr ""
 "hela filen enligt indragsinställningen."
 
 #: ../../docs/tutorials/editor/script_editor.rst:289
-#, fuzzy
 msgid ""
 "**Convert Case**: Changes the case of the selected text to :ui:`Upper "
 "Case`, :ui:`Lower Case`, or capitalizes each initial letter of the words."
 msgstr ""
-"**Ändra skiftläge**: Ändrar den markerade texten till `VERSALER*`, "
-"`gemener*` eller gör varje ords första bokstav till versal."
+"**Ändra skiftläge**: Ändrar den markerade texten till :ui:`Versaler`, "
+":ui:`Gemener` eller gör varje ords första bokstav till versal."
 
 #: ../../docs/tutorials/editor/script_editor.rst:291
 msgid "**Syntax Highlighter**: Allows you to choose the syntax highlighter."
@@ -24866,15 +24794,14 @@ msgstr ""
 "<doc_overview_of_debugging_tools>`."
 
 #: ../../docs/tutorials/editor/script_editor.rst:409
-#, fuzzy
 msgid ""
 "Many of the colors of the text editor such as highlighting colors, or even "
 "breakpoint or bookmark icon colors can be customized. You can experiment "
 "with them by opening the text editor settings and navigating to the **Editor "
 "> Editor Settings > Text Editor** section."
 msgstr ""
-"Många av textredigerarens färger, exempelvis färger för syntaxmarkering samt "
-"ikoner för brytpunkter och bokmärken, kan anpassas. Du kan prova "
+"Många av textredigerarens färger, exempelvis färger för syntaxmarkering och "
+"färgerna på ikoner för brytpunkter och bokmärken, kan anpassas. Du kan prova "
 "inställningarna genom att öppna **Redigerare > Redigerarinställningar > "
 "Textredigerare**."
 
@@ -26960,7 +26887,6 @@ msgid "``--recovery-mode``"
 msgstr "``--recovery-mode``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:73
-#, fuzzy
 msgid ""
 "|editor| Start the editor in recovery mode, which disables features that can "
 "typically cause startup crashes, such as tool scripts, editor plugins, and "
@@ -26968,7 +26894,7 @@ msgid ""
 msgstr ""
 "|editor| Starta redigeraren i återställningsläge, vilket inaktiverar "
 "funktioner som vanligtvis kan orsaka krascher vid start, exempelvis "
-"verktygsskript, redigerarpluginer och GDExtension-tillägg."
+"verktygsskript, tillägg till redigeraren och GDExtension-tillägg."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:76
 msgid "``--debug-server <uri>``"
@@ -27326,7 +27252,6 @@ msgid "``--accessibility <mode>``"
 msgstr "``--accessibility <mode>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:155
-#, fuzzy
 msgid ""
 "|release| Select accessibility mode [\"auto\" (when screen reader is "
 "running, default), \"always\", \"disabled\"]."
@@ -27429,7 +27354,6 @@ msgid "``--extra-gpu-memory-tracking``"
 msgstr "``--extra-gpu-memory-tracking``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:180
-#, fuzzy
 msgid ""
 "|debug| Enables additional memory tracking "
 "(see :ref:`RenderingDevice.get_driver_and_device_memory_report() "
@@ -27438,10 +27362,11 @@ msgid ""
 "feature may cause crashes on some systems due to buggy drivers or bugs in "
 "the Vulkan Loader. See https://github.com/godotengine/godot/issues/95967"
 msgstr ""
-"|debug| Aktiverar ytterligare minnesspårning (se klassreferensen för "
-"`RenderingDevice.get_driver_and_device_memory_report()` och länkade "
-"metoder). För närvarande endast implementerat för Vulkan. Aktivering av "
-"funktionen kan orsaka krascher på vissa system på grund av felaktiga "
+"|debug| Aktiverar ytterligare minnesspårning (se "
+":ref:`RenderingDevice.get_driver_and_device_memory_report() "
+"<class_RenderingDevice_method_get_driver_and_device_memory_report>` och "
+"länkade metoder). För närvarande endast implementerat för Vulkan. Aktivering "
+"av funktionen kan orsaka krascher på vissa system på grund av felaktiga "
 "drivrutiner eller fel i Vulkan Loader. Se https://github.com/godotengine/"
 "godot/issues/95967"
 
@@ -27928,7 +27853,6 @@ msgid "``--benchmark``"
 msgstr "``--benchmark``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:287
-#, fuzzy
 msgid "|editor| Benchmark the runtime and print it to console."
 msgstr "|editor| Mät körningstiden och skriv ut den i konsolen."
 
@@ -27937,13 +27861,12 @@ msgid "``--benchmark-file <path>``"
 msgstr "``--benchmark-file <path>``"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:289
-#, fuzzy
 msgid ""
 "|editor| Benchmark the runtime and save it to the given file path, in JSON "
 "format. ``<path>`` should be absolute."
 msgstr ""
-"|editor| Mät körningstiden och spara den i en angiven fil i JSON-format. "
-"Sökvägen ska vara absolut."
+"|editor| Mät körningstiden och spara den på den angivna filsökvägen i JSON-"
+"format. ``<path>`` ska vara absolut."
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:291
 msgid "``--test [--help]``"
@@ -30853,7 +30776,6 @@ msgstr ""
 "github.com/godotengine/godot/pull/41794>`__."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:618
-#, fuzzy
 msgid ""
 "``randomize()`` is now automatically called on project load, so "
 "deterministic randomness with the global RandomNumberGenerator instance "
@@ -31163,9 +31085,8 @@ msgid "Camera2D or Camera3D"
 msgstr "Camera2D eller Camera3D"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:697
-#, fuzzy
 msgid "Camera's pyramid shape was moved to :ref:`class_Camera3D`."
-msgstr "Kamerans pyramidform flyttades till :ref:'class_Camera3D'."
+msgstr "Kamerans pyramidform flyttades till :ref:`class_Camera3D`."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:699
 msgid "InterpolatedCamera"
@@ -33198,13 +33119,12 @@ msgstr ""
 "*p_interface`` till ``GDExtensionInterfaceGetProcAddress p_get_proc_address``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:282
-#, fuzzy
 msgid ""
 "The constructor for the ``init_obj`` variable now receives "
 "``p_get_proc_address`` as its first parameter"
 msgstr ""
-"Konstruktorn för variabeln `init_obj` tar nu emot ``p_get_proc_address`` som "
-"sin första parameter"
+"Konstruktorn för variabeln ``init_obj`` tar nu emot ``p_get_proc_address`` "
+"som sin första parameter"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:284
 msgid ""
@@ -33600,7 +33520,6 @@ msgstr ""
 "flyttats till basklassen ``AnimationMixer``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:109
-#, fuzzy
 msgid "Property ``root_motion_track`` moved to base class ``AnimationMixer``"
 msgstr ""
 "Egenskapen ``root_motion_track`` har flyttats till basklassen "
@@ -35115,7 +35034,6 @@ msgid "**Export annotations**"
 msgstr "**Exportannoteringar**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.4.rst:62
-#, fuzzy
 msgid ""
 "The behavior of ``@export_file`` changed in Godot 4.4. When assigning a new "
 "value from the Inspector, the path is now stored and returned as a ``uid://"
@@ -35124,7 +35042,7 @@ msgid ""
 "based paths in scripts or serialized files."
 msgstr ""
 "Beteendet för ``@export_file`` ändrades i Godot 4.4. När ett nytt värde "
-"tilldelas i Inspektören lagras och returneras sökvägen nu som en ``uid://``-"
+"tilldelas i inspektören lagras och returneras sökvägen nu som en ``uid://``-"
 "referens i stället för den traditionella ``res://``-sökvägen (`GH-97912`_). "
 "Det är en **bakåtinkompatibel ändring** och kan orsaka problem om skript "
 "eller serialiserade filer förväntar sig sökvägar som baseras på ``res://``."
@@ -35140,17 +35058,16 @@ msgstr ""
 "redigerats i Inspektören."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.4.rst:71
-#, fuzzy
 msgid ""
 "In 4.4, the only way to retain the ``res://`` format is to **manually edit** "
 "the ``.tscn`` or ``.tres`` files in a text editor. Starting in Godot 4.5, a "
 "new annotation ``@export_file_path`` can be used to explicitly retain the "
 "old behavior and export raw ``res://`` paths."
 msgstr ""
-"I 4.4 är det enda sättet att behålla formatet ``res://`` att **redigera "
-"manuellt** `.tscn`- eller `.tres`-filerna i en textredigerare. Från och med "
-"Godot 4.5 kan den nya annoteringen ``@export_file_path`` användas för att "
-"uttryckligen behålla det gamla beteendet och exportera rena ``res://``-"
+"I 4.4 är det enda sättet att behålla formatet ``res://`` att **manuellt "
+"redigera** ``.tscn``- eller ``.tres``-filerna i en textredigerare. Från och "
+"med Godot 4.5 kan den nya annoteringen ``@export_file_path`` användas för "
+"att uttryckligen behålla det gamla beteendet och exportera rena ``res://``-"
 "sökvägar."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.4.rst:76
@@ -36263,7 +36180,6 @@ msgstr ""
 "(`GH-107618`_)."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:261
-#, fuzzy
 msgid ""
 "By default, the regions in a NavigationServer map update asynchronously "
 "using threads to improve performance. This can cause additional delay in the "
@@ -36278,7 +36194,6 @@ msgstr ""
 "``navigation/world/region_use_async_iterations``."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:266
-#, fuzzy
 msgid ""
 "The merging of navmeshes in the NavigationServer has changed processing "
 "order. Regions now merge and cache internal navmeshes first, then the "
@@ -36300,10 +36215,10 @@ msgstr ""
 "förskjutits, vilket gör redan befintliga layoutfel mer märkbara vid "
 "vägberäkningen. Projektinställningen ``navigation/2d_or_3d/"
 "merge_rasterizer_cell_scale`` kan ges ett lägre värde för att öka "
-"detaljnivån i rastreringsrutnätet (där `0.01` är minsta möjliga "
-"cellstorlek). Om fel vid kantsammanslagning kvarstår även med den lägsta "
-"möjliga rastreringsskalan kan felet bero på överlappning: två "
-"navigeringsmeshar ligger ovanpå varandra och orsakar en geometrikonflikt."
+"detaljnivån i rastreringsrutnätet (där `0.01` är minsta möjliga cellstorlek)"
+". Om fel vid kantsammanslagning kvarstår även med den lägsta möjliga "
+"rastreringsskalan kan felet bero på överlappning: två navigeringsmeshar "
+"ligger ovanpå varandra och orsakar en geometrikonflikt."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.5.rst:280
 msgid ""
@@ -36968,7 +36883,6 @@ msgstr ""
 "refaktorisering av scener betydligt robustare."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.6.rst:198
-#, fuzzy
 msgid ""
 "The changes are backwards-compatible and forwards-compatible, which means "
 "scenes saved in Godot 4.5 can still be loaded in Godot 4.6 and vice-versa "
@@ -37353,12 +37267,10 @@ msgid "`GH-112073`_"
 msgstr "`GH-112073`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:4
-#, fuzzy
 msgid "Upgrading from Godot 4.6 to Godot 4.7"
 msgstr "Uppgradera från Godot 4.5 till Godot 4.6"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:6
-#, fuzzy
 msgid ""
 "For most games and apps made with 4.6 it should be relatively safe to "
 "migrate to 4.7. This page intends to cover everything you need to pay "
@@ -37369,7 +37281,6 @@ msgstr ""
 "uppmärksam på när du migrerar projektet."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:13
-#, fuzzy
 msgid ""
 "If you are migrating from 4.6 to 4.7, the breaking changes listed here might "
 "affect you. Changes are grouped by areas/systems."
@@ -37378,7 +37289,6 @@ msgstr ""
 "listas här påverka dig. Ändringarna är grupperade efter områden/system."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:31
-#, fuzzy
 msgid ""
 "Method ``is_class`` changes ``class`` parameter type from ``String`` to "
 "``StringName``"
@@ -37387,39 +37297,32 @@ msgstr ""
 "till ``StringName``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:31
-#, fuzzy
 msgid "`GH-118582`_"
 msgstr "`GH-81582`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:32
-#, fuzzy
 msgid "**ZIPPacker**"
 msgstr "**Shader**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:33
-#, fuzzy
 msgid ""
 "Method ``start_file`` adds new ``permissions`` and ``modified_time`` "
 "optional parameters"
 msgstr "Metoden ``add_filter`` får den nya valfria parametern ``mime_type``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:33
-#, fuzzy
 msgid "`GH-115946`_"
 msgstr "`GH-113459`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:34
-#, fuzzy
 msgid "**OptimizedTranslation**"
 msgstr "**TranslationServer**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:35
-#, fuzzy
 msgid "Method ``generate`` changes return type from ``void`` to ``bool``"
 msgstr "Returtypen för metoden ``store_8`` ändras från ``void`` till ``bool``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:35
-#, fuzzy
 msgid "`GH-119563`_"
 msgstr "`GH-114053`_"
 
@@ -37427,7 +37330,6 @@ msgstr "`GH-114053`_"
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:47
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:57
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:59
-#, fuzzy
 msgid ""
 "Method ``request_particles_process`` adds new ``process_time_residual`` "
 "optional parameter"
@@ -37438,7 +37340,6 @@ msgstr "Metoden ``restart`` får den nya valfria parametern ``keep_seed``"
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:57
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:59
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:108
-#, fuzzy
 msgid "`GH-109142`_"
 msgstr "`GH-101482`_"
 
@@ -37450,7 +37351,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:69
-#, fuzzy
 msgid "`GH-116839`_"
 msgstr "`GH-111439`_"
 
@@ -37469,12 +37369,10 @@ msgstr ""
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:77
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:78
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:79
-#, fuzzy
 msgid "`GH-112617`_"
 msgstr "`GH-112267`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:72
-#, fuzzy
 msgid ""
 "Method ``add_image`` changes ``width`` parameter type from ``int`` to "
 "``float``"
@@ -37483,7 +37381,6 @@ msgstr ""
 "``uint32`` till ``uint64``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:73
-#, fuzzy
 msgid ""
 "Method ``add_image`` changes ``height`` parameter type from ``int`` to "
 "``float``"
@@ -37492,7 +37389,6 @@ msgstr ""
 "``uint32`` till ``uint64``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:74
-#, fuzzy
 msgid ""
 "Method ``add_image`` renames ``width_in_percent`` parameter to "
 "``width_unit`` and changes type from ``bool`` to ``RichTextLabel.ImageUnit``"
@@ -37501,7 +37397,6 @@ msgstr ""
 "``width_in_percent`` och ``height_in_percent``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:75
-#, fuzzy
 msgid ""
 "Method ``add_image`` renames ``height_in_percent`` parameter to "
 "``height_unit`` and changes type from ``bool`` to ``RichTextLabel.ImageUnit``"
@@ -37510,7 +37405,6 @@ msgstr ""
 "``width_in_percent`` och ``height_in_percent``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:76
-#, fuzzy
 msgid ""
 "Method ``update_image`` changes ``width`` parameter type from ``int`` to "
 "``float``"
@@ -37519,7 +37413,6 @@ msgstr ""
 "``uint32`` till ``uint64``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:77
-#, fuzzy
 msgid ""
 "Method ``update_image`` changes ``height`` parameter type from ``int`` to "
 "``float``"
@@ -37528,7 +37421,6 @@ msgstr ""
 "``uint32`` till ``uint64``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:78
-#, fuzzy
 msgid ""
 "Method ``update_image`` renames ``width_in_percent`` parameter to "
 "``width_unit`` and changes type from ``bool`` to ``RichTextLabel.ImageUnit``"
@@ -37537,7 +37429,6 @@ msgstr ""
 "``width_in_percent`` och ``height_in_percent``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:79
-#, fuzzy
 msgid ""
 "Method ``update_image`` renames ``height_in_percent`` parameter to "
 "``height_unit`` and changes type from ``bool`` to ``RichTextLabel.ImageUnit``"
@@ -37546,7 +37437,6 @@ msgstr ""
 "``width_in_percent`` och ``height_in_percent``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:89
-#, fuzzy
 msgid ""
 "Method ``find_variation`` adds new ``palette_index`` and ``custom_colors`` "
 "optional parameters"
@@ -37554,27 +37444,22 @@ msgstr ""
 "Metoden ``find_variation`` får den nya valfria parametern ``baseline_offset``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:89
-#, fuzzy
 msgid "`GH-117149`_"
 msgstr "`GH-111439`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:91
-#, fuzzy
 msgid "Method ``select`` adds new ``set_as_cursor`` optional parameter"
 msgstr "Metoden ``edit`` får den nya valfria parametern ``hide_focus``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:91
-#, fuzzy
 msgid "`GH-119367`_"
 msgstr "`GH-110867`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:100
-#, fuzzy
 msgid "**Image**"
 msgstr "Bild"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:101
-#, fuzzy
 msgid ""
 "Method ``save_exr`` adds new ``color_image`` and ``max_linear_value`` "
 "optional parameters"
@@ -37584,12 +37469,10 @@ msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:101
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:102
-#, fuzzy
 msgid "`GH-117800`_"
 msgstr "`GH-110120`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:102
-#, fuzzy
 msgid ""
 "Method ``save_exr_to_buffer`` adds new ``color_image`` and "
 "``max_linear_value`` optional parameters"
@@ -37597,24 +37480,20 @@ msgstr ""
 "Metoden ``shaped_text_draw`` får den nya valfria parametern ``oversampling``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:103
-#, fuzzy
 msgid "**ImageTexture**"
 msgstr "**ExternalTexture**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:104
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:106
-#, fuzzy
 msgid "Method ``get_format`` moved to base class ``Texture2D``"
 msgstr "Metoden ``get_vbox`` har flyttats till basklassen ``FileDialog``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:104
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:106
-#, fuzzy
 msgid "`GH-109004`_"
 msgstr "`GH-109302`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:105
-#, fuzzy
 msgid "**PortableCompressedTexture2D**"
 msgstr "CompressedTexture2D"
 
@@ -37625,56 +37504,46 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:109
-#, fuzzy
 msgid "Method ``viewport_set_size`` adds new ``view_count`` optional parameter"
 msgstr "Metoden ``post`` får den nya valfria parametern ``count``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:109
-#, fuzzy
 msgid "`GH-115799`_"
 msgstr "`GH-113459`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:119
-#, fuzzy
 msgid "Property ``length`` changes type metadata from ``float`` to ``double``"
 msgstr ""
 "Typmetadata för egenskapen ``byte_length`` ändras från ``int32`` till "
 "``int64``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:119
-#, fuzzy
 msgid "`GH-116394`_"
 msgstr "`GH-113459`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:120
-#, fuzzy
 msgid "**AnimationNodeBlendSpace1D**"
 msgstr "**AnimationNode**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:121
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:123
-#, fuzzy
 msgid "Method ``add_blend_point`` adds new ``name`` optional parameter"
 msgstr "Metoden ``push_table`` får den nya valfria parametern ``name``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:121
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:123
-#, fuzzy
 msgid "`GH-110369`_"
 msgstr "`GH-103869`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:122
-#, fuzzy
 msgid "**AnimationNodeBlendSpace2D**"
 msgstr "**AnimationNode**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:132
-#, fuzzy
 msgid "**PhysicsServer2D**"
 msgstr "PhysicsServer2D"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:133
-#, fuzzy
 msgid ""
 "Method ``body_set_shape_as_one_way_collision`` adds new ``direction`` "
 "optional parameter"
@@ -37684,17 +37553,14 @@ msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:133
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:135
-#, fuzzy
 msgid "`GH-104736`_"
 msgstr "`GH-104269`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:134
-#, fuzzy
 msgid "**PhysicsServer2DExtension**"
 msgstr "**TextServerExtension**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:135
-#, fuzzy
 msgid ""
 "Method ``_body_set_shape_as_one_way_collision`` adds new ``direction`` "
 "parameter"
@@ -37703,29 +37569,24 @@ msgstr ""
 "``settings``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:144
-#, fuzzy
 msgid "**AudioEffectSpectrumAnalyzer**"
 msgstr "SpectrumAnalyzer"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:145
-#, fuzzy
 msgid "Property ``tap_back_pos`` removed"
 msgstr "Egenskapen ``show_close`` har tagits bort"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:145
-#, fuzzy
 msgid "`GH-114355`_"
 msgstr "`GH-114053`_"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:155
-#, fuzzy
 msgid ""
 "Method ``_on_register_metadata`` adds new ``interaction_profile_metadata`` "
 "parameter"
 msgstr "Metoden ``_generate`` får den nya parametern ``metadata``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:155
-#, fuzzy
 msgid "`GH-117399`_"
 msgstr "`GH-113459`_"
 
@@ -37734,13 +37595,11 @@ msgid "**OpenXRSpatialAnchorCapability**"
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:157
-#, fuzzy
 msgid "Method ``create_new_anchor`` adds new ``next`` optional parameter"
 msgstr ""
 "Metoden ``create_action`` får den nya valfria parametern ``mark_unsaved``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:157
-#, fuzzy
 msgid "`GH-118128`_"
 msgstr "`GH-110120`_"
 
@@ -37755,7 +37614,6 @@ msgstr ""
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:171
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:172
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:173
-#, fuzzy
 msgid "`GH-115788`_"
 msgstr "`GH-76688`_"
 
@@ -37791,17 +37649,14 @@ msgid "Constant ``IMPORT_USE_NAMED_SKIN_BINDS`` moved to enum ``ImportFlags``"
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:174
-#, fuzzy
 msgid "**EditorVCSInterface**"
 msgstr "**EditorInterface**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:175
-#, fuzzy
 msgid "Method ``_commit`` adds new ``amend`` parameter"
 msgstr "Metoden ``_generate`` får den nya parametern ``metadata``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:175
-#, fuzzy
 msgid "`GH-117968`_"
 msgstr "`GH-110767`_"
 
@@ -37917,7 +37772,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:286
-#, fuzzy
 msgid ""
 "The following default values have been changed. If your project uses any of "
 "these properties with their default value, you can achieve a similar "
@@ -37939,7 +37793,6 @@ msgstr ""
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:312
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:322
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:335
-#, fuzzy
 msgid "Old Default"
 msgstr "Standard"
 
@@ -37947,17 +37800,14 @@ msgstr "Standard"
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:312
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:322
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:335
-#, fuzzy
 msgid "New Default"
 msgstr "Standard"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:304
-#, fuzzy
 msgid "**LookAtModifier3D**"
 msgstr "**Node3D**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:305
-#, fuzzy
 msgid "Property ``relative``"
 msgstr "Egenskapen ``skeleton``"
 
@@ -37966,12 +37816,10 @@ msgstr "Egenskapen ``skeleton``"
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:326
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:327
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:328
-#, fuzzy
 msgid "false"
 msgstr "``false``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:325
-#, fuzzy
 msgid "Method ``add_image`` parameter ``width_in_percent``"
 msgstr ""
 "Metoden ``add_image`` har ersatt parametern ``size_in_percent`` med "
@@ -37989,33 +37837,28 @@ msgid "0"
 msgstr "0"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:326
-#, fuzzy
 msgid "Method ``add_image`` parameter ``height_in_percent``"
 msgstr ""
 "Metoden ``add_image`` har ersatt parametern ``size_in_percent`` med "
 "``width_in_percent`` och ``height_in_percent``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:327
-#, fuzzy
 msgid "Method ``update_image`` parameter ``width_in_percent``"
 msgstr ""
 "Metoden ``update_image`` har ersatt parametern ``size_in_percent`` med "
 "``width_in_percent`` och ``height_in_percent``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:328
-#, fuzzy
 msgid "Method ``update_image`` parameter ``height_in_percent``"
 msgstr ""
 "Metoden ``update_image`` har ersatt parametern ``size_in_percent`` med "
 "``width_in_percent`` och ``height_in_percent``"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:337
-#, fuzzy
 msgid "**ResourceImporterDynamicFont**"
 msgstr "**ResourceImporterCSVTranslation**"
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:338
-#, fuzzy
 msgid "Property ``hinting``"
 msgstr "Egenskapen ``skeleton``"
 
@@ -38358,7 +38201,6 @@ msgstr ""
 "rutnätet tillfälligt med ``x: 1, y: 1`` när alternativet aktiveras."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:118
-#, fuzzy
 msgid ""
 "**Use Pixel Snap**: Toggles the use of subpixels for snapping. If enabled, "
 "the position values will be integers, disabling will enable subpixel "
@@ -38508,7 +38350,6 @@ msgstr ""
 "att klicka på hänglåset."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:159
-#, fuzzy
 msgid ""
 "**Group selected nodes** (:kbd:`Ctrl + G`). This allows selection of the "
 "root node if any of the children are selected. Using :kbd:`Ctrl + Shift + G` "
@@ -38592,7 +38433,6 @@ msgstr ""
 "``x: 0, y: 0``."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:191
-#, fuzzy
 msgid ""
 "A root node will have its origin at this position once added. Switching to "
 "the :ui:`move` or :ui:`scale` modes after selecting a node will display the "
@@ -38632,7 +38472,6 @@ msgstr ""
 "utforma nivåer eller användargränssnitt visuellt:"
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:212
-#, fuzzy
 msgid ""
 "Middle-clicking and dragging the mouse will pan the view. The scrollbars on "
 "the right or bottom of the viewport also move the view. Alternatively, "
@@ -38664,7 +38503,6 @@ msgstr ""
 "mushjulet: rulla uppåt för att zooma in och nedåt för att zooma ut."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:225
-#, fuzzy
 msgid ""
 "The black bars at the viewport's left and top edges are the **rulers**. You "
 "can use them to orient yourself in the viewport. By default, the rulers will "
@@ -38707,7 +38545,6 @@ msgstr ""
 "respektive linjal."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:244
-#, fuzzy
 msgid ""
 "You can also enable snapping to the created guides using the :ui:`Smart "
 "Snap` menu."
@@ -38716,7 +38553,6 @@ msgstr ""
 "fästning`."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:248
-#, fuzzy
 msgid ""
 "If you cannot create a line, or do not see previously created guides, make "
 "sure that they are visible by checking the :menu:`View` menu of the "
@@ -38729,7 +38565,6 @@ msgstr ""
 "minst en nod."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:252
-#, fuzzy
 msgid ""
 "Depending on the tool chosen in the toolbar, left-clicking will have a "
 "primary action in the viewport. For example, the :ui:`Select Mode` will "
@@ -38742,10 +38577,10 @@ msgstr ""
 "Beroende på vilket verktyg som är valt i verktygsfältet utför ett "
 "vänsterklick en primär åtgärd i visningsområdet. I `Markeringsläge` markeras "
 "exempelvis noden som du vänsterklickar på. Ibland kan ett vänsterklick "
-"kombineras med en modifieringstangent, exempelvis :kbd:`Ctrl` "
-"eller :kbd:`Shift`, för att utföra sekundära åtgärder. Om du exempelvis "
-"håller :kbd:`Shift` nedtryckt medan du drar en nod i markerings- eller "
-"flyttläget försöker noden fästas vid en enda axel under förflyttningen."
+"kombineras med en modifieringstangent, exempelvis :kbd:`Ctrl` eller "
+":kbd:`Shift`, för att utföra sekundära åtgärder. Om du exempelvis håller "
+":kbd:`Shift` nedtryckt medan du drar en nod i markerings- eller flyttläget "
+"försöker noden fästas vid en enda axel under förflyttningen."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:260
 msgid ""
@@ -38777,7 +38612,6 @@ msgstr ""
 "alternativet."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:270
-#, fuzzy
 msgid ""
 "**Show Helpers**: Toggles the temporary display of an outline of the node, "
 "with the previous transform properties (position, scaling, or rotation) if a "
@@ -38815,7 +38649,6 @@ msgstr ""
 "0, y: 0``."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:278
-#, fuzzy
 msgid ""
 "**Show Viewport**: Toggles the visibility of the game's default viewport, "
 "indicated by an indigo-colored rectangle. It is also the default window size "
@@ -38830,7 +38663,6 @@ msgstr ""
 "Storlek` genom att ange `Visningsområdets bredd` och `Visningsområdets höjd`."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:282
-#, fuzzy
 msgid ""
 "**Gizmos**: Toggles the visibility of :ui:`Position` (shown with cross "
 "icon), :ui:`Lock` (shown with padlock), :ui:`Groups` (shown with two "
@@ -38851,15 +38683,14 @@ msgstr ""
 "och centrerar de markerade noderna i vyn. Standardkortkommandot är :kbd:`F`."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:287
-#, fuzzy
 msgid ""
 "**Frame to Selection**: Similar to :ui:`Center Selection`, but also changes "
 "the zoom factor to fit the contents in the screen. :kbd:`Shift + F` is the "
 "default shortcut."
 msgstr ""
 "**Rama in markering**: Liknar `Centrera markering`, men ändrar även "
-"zoomfaktorn så att innehållet ryms på skärmen. Standardkortkommandot "
-"är :kbd:`Shift + F`."
+"zoomfaktorn så att innehållet ryms på skärmen. Standardkortkommandot är "
+":kbd:`Shift + F`."
 
 #: ../../docs/tutorials/2d/introduction_to_2d.rst:289
 msgid ""
@@ -42400,7 +42231,6 @@ msgid "Drawing text"
 msgstr "Rita text"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:615
-#, fuzzy
 msgid ""
 "While using the :ref:`Label <class_Label>` Node is the most common way to "
 "add text to your application, the low-level ``_draw`` function includes "
@@ -43426,7 +43256,6 @@ msgstr ""
 "röra sig diagonalt genom att trycka på två tangenter samtidigt."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:45
-#, fuzzy
 msgid "Attach a script to the character body and add the following code:"
 msgstr "Lägg till ett skript på figurnoden och lägg till följande kod:"
 
@@ -43914,7 +43743,6 @@ msgstr ""
 "AudioStreamPlayer2D-noder (för omgivningsljud), partikeleffekter med mera."
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:168
-#, fuzzy
 msgid ""
 "Scene tiles come with a greater performance overhead compared to atlases, as "
 "every scene is instantiated individually for every placed tile."
@@ -45097,7 +44925,6 @@ msgstr ""
 "finns i :ref:`doc_navigation_using_navigationmeshes`."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
-#, fuzzy
 msgid ""
 "2D navigation meshes can not be \"layered\" or stacked on top of each other "
 "like visuals or physics shapes. Attempting to stack navigation meshes on the "
@@ -45893,7 +45720,6 @@ msgstr ""
 "i :ref:`Tillgångsbiblioteket <doc_project_manager_downloading_demos>`."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:22
-#, fuzzy
 msgid ""
 "In 3D, math is a little more complex than in 2D. For an introduction to the "
 "relevant math written for game developers, not mathematicians or engineers, "
@@ -45901,8 +45727,8 @@ msgid ""
 msgstr ""
 "Matematiken i 3D är något mer komplicerad än i 2D. En introduktion till den "
 "relevanta matematiken, skriven för spelutvecklare i stället för matematiker "
-"eller ingenjörer, finns i :ref:`doc_vector_math` "
-"och :ref:`doc_using_transforms`."
+"eller ingenjörer, finns i :ref:`doc_vector_math` och "
+":ref:`doc_using_transforms`."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:27
 msgid "3D workspace"
@@ -45990,7 +45816,6 @@ msgstr ""
 "i :ref:`doc_introduction_to_3d_space_and_manipulation`."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:61
-#, fuzzy
 msgid ""
 "**Select Mode** (:kbd:`V`): Allows selection of nodes in the viewport. Left "
 "clicking on a node to select one. Left clicking and dragging a rectangle "
@@ -46003,9 +45828,9 @@ msgstr ""
 "visningsområdet. Vänsterklicka på en nod för att markera den. Vänsterklicka "
 "och dra en rektangel för att markera alla noder inom rektangelns gränser när "
 "musknappen släpps. Håll ned :kbd:`Skift` medan du markerar för att lägga "
-"till fler noder i markeringen. Klicka på en markerad nod medan du håller "
-"ned :kbd:`Skift` för att avmarkera den. I det här läget kan du använda "
-"gizmor för att flytta eller rotera."
+"till fler noder i markeringen. Klicka på en markerad nod medan du håller ned "
+":kbd:`Skift` för att avmarkera den. I det här läget kan du använda gizmor "
+"för att flytta eller rotera."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:67
 msgid ""
@@ -48385,7 +48210,6 @@ msgstr ""
 "``Mesh.PRIMITIVE_TRIANGLES``."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:16
-#, fuzzy
 msgid ""
 "We initialize the MeshDataTool from an ArrayMesh by "
 "calling :ref:`create_from_surface() "
@@ -48394,12 +48218,11 @@ msgid ""
 "clear it for you. Alternatively, you can call :ref:`clear() "
 "<class_meshdatatool_method_clear>` yourself before reusing the MeshDataTool."
 msgstr ""
-"Vi initierar MeshDataTool från en ArrayMesh genom att "
-"anropa :ref:`create_from_surface() "
-"<class_meshdatatool_method_create_from_surface>`. Om data redan har "
-"initierats i MeshDataTool rensas de när ``create_from_surface()`` anropas. "
-"Du kan även själv anropa :ref:`clear() <class_meshdatatool_method_clear>` "
-"innan du återanvänder MeshDataTool."
+"Vi initierar MeshDataTool från en ArrayMesh genom att anropa "
+":ref:`create_from_surface() <class_meshdatatool_method_create_from_surface>"
+"`. Om data redan har initierats i MeshDataTool rensas de när "
+"``create_from_surface()`` anropas. Du kan även själv anropa :ref:`clear() "
+"<class_meshdatatool_method_clear>` innan du återanvänder MeshDataTool."
 
 #: ../../docs/tutorials/3d/procedural_geometry/meshdatatool.rst:19
 msgid ""
@@ -51329,7 +51152,6 @@ msgstr ""
 "är aktiverad."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:14
-#, fuzzy
 msgid ""
 "Light nodes: DirectionalLight3D, OmniLight3D, SpotLight3D, and AreaLight3D."
 msgstr "Ljusnoder: DirectionalLight3D, OmniLight3D och SpotLight3D."
@@ -51374,17 +51196,15 @@ msgid "Light nodes"
 msgstr "Ljusnoder"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:31
-#, fuzzy
 msgid ""
 "There are four types of light "
 "nodes: :ref:`class_DirectionalLight3D`, :ref:`class_OmniLight3D`, :ref:`class_SpotLight3D`, "
 "and :ref:`class_AreaLight3D`. Let's take a look at the common parameters for "
 "lights:"
 msgstr ""
-"Det finns tre typer av "
-"ljusnoder: :ref:`class_DirectionalLight3D`, :ref:`class_OmniLight3D` "
-"och :ref:`class_SpotLight3D`. Vi börjar med att titta på de gemensamma "
-"parametrarna för ljus:"
+"Det finns tre typer av ljusnoder: :ref:`class_DirectionalLight3D`, "
+":ref:`class_OmniLight3D` och :ref:`class_SpotLight3D`. Vi börjar med att "
+"titta på de gemensamma parametrarna för ljus:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:37
 msgid "Each property has a specific function:"
@@ -51469,7 +51289,6 @@ msgid "Light number limits"
 msgstr "Gränser för antal ljus"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:59
-#, fuzzy
 msgid ""
 "When using the Forward+ renderer, Godot uses a *clustering* approach for "
 "real-time lighting. As many lights as desired can be added (as long as "
@@ -51490,8 +51309,8 @@ msgstr ""
 "en :ref:`reflektionssond <doc_reflection_probes>`. Gränsen kan höjas genom "
 "att justera :ref:`Max Clustered "
 "Elements<class_ProjectSettings_property_rendering/limits/cluster_builder/"
-"max_clustered_elements>` under **Projektinställningar > Rendering > Gränser "
-"> Klusterbyggare**."
+"max_clustered_elements>` under **Projektinställningar > Rendering > "
+"Gränser > Klusterbyggare**."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:68
 msgid ""
@@ -52064,7 +51883,6 @@ msgid "With the projector texture below, the following result is obtained:"
 msgstr "Med projektortexturen nedan erhålls följande resultat:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:331
-#, fuzzy
 msgid ""
 "If you have omni projectors in the form of cubemap images, you can use `this "
 "web-based conversion tool <https://danilw.github.io/GLSL-howto/"
@@ -52073,9 +51891,8 @@ msgid ""
 msgstr ""
 "Om du har fått projektorer för rundstrålande ljus i form av kubmappsbilder "
 "kan du använda `det här webbaserade konverteringsverktyget <https://"
-"danilw.github.io/GLSL-howto/cubemap_to_panorama_js/"
-"cubemap_to_panorama.html>`__ för att konvertera dem till en enda "
-"panoramabild."
+"danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html>"
+"`__ för att konvertera dem till en enda panoramabild."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:338
 msgid "Spot light"
@@ -52381,7 +52198,6 @@ msgid "Shadow atlas"
 msgstr "Skuggatlas"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:489
-#, fuzzy
 msgid ""
 "Unlike Directional lights, which have their own shadow texture, omni, spot, "
 "and area lights are assigned to slots of a shadow atlas. This atlas can be "
@@ -52543,7 +52359,6 @@ msgstr ""
 "att anropa lämpliga metoder i :ref:`class_RenderingServer`."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:546
-#, fuzzy
 msgid ""
 "Positional (omni/spot/area) shadow quality settings can be changed at "
 "runtime on the root :ref:`class_Viewport`."
@@ -52651,7 +52466,6 @@ msgid "Light/shadow distance fade"
 msgstr "Avståndsborttoning för ljus och skuggor"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:599
-#, fuzzy
 msgid ""
 "OmniLight3D, SpotLight3D, and AreaLight3D offer several properties to hide "
 "distant lights. This can improve performance significantly in large scenes "
@@ -53358,7 +53172,6 @@ msgstr ""
 "ovanpå dem, exempelvis råhet och metalliskhet."
 
 #: ../../docs/tutorials/3d/using_decals.rst:261
-#, fuzzy
 msgid ""
 "When using the Forward+ renderer, Godot uses a *clustering* approach for "
 "decal rendering. As many decals as desired can be added (as long as "
@@ -53758,16 +53571,15 @@ msgstr ""
 "i Light3D-noder:"
 
 #: ../../docs/tutorials/3d/physical_light_and_camera_units.rst:167
-#, fuzzy
 msgid ""
 "**Intensity:** The light's intensity in `lux <https://en.wikipedia.org/wiki/"
 "Lux>`__ (DirectionalLight3D) or `lumens <https://en.wikipedia.org/wiki/"
 "Lumen_(unit)>`__ (OmniLight3D/SpotLight3D/AreaLight3D). If a custom "
 "**Energy** is set, this energy is multiplied by the intensity."
 msgstr ""
-"**Intensitet:** Ljusets intensitet i `lux <https://en.wikipedia.org/wiki/"
-"Lux>`__ för DirectionalLight3D eller `lumen <https://en.wikipedia.org/wiki/"
-"Lumen_(unit)>`__ för OmniLight3D och SpotLight3D. Om ett anpassat värde för "
+"**Intensitet:** Ljusets intensitet i `lux <https://en.wikipedia.org/wiki/Lux>"
+"`__ för DirectionalLight3D eller `lumen <https://en.wikipedia.org/wiki/Lumen_"
+"(unit)>`__ för OmniLight3D och SpotLight3D. Om ett anpassat värde för "
 "**Energy** har angetts multipliceras energin med intensiteten."
 
 #: ../../docs/tutorials/3d/physical_light_and_camera_units.rst:171
@@ -53779,7 +53591,6 @@ msgstr ""
 "har angetts multipliceras färgen med färgtemperaturen."
 
 #: ../../docs/tutorials/3d/physical_light_and_camera_units.rst:174
-#, fuzzy
 msgid "**OmniLight3D/SpotLight3D/AreaLight3D intensity**"
 msgstr "**Intensitet för OmniLight3D/SpotLight3D**"
 
@@ -53817,7 +53628,6 @@ msgid "**DirectionalLight3D intensity**"
 msgstr "**Intensitet för DirectionalLight3D**"
 
 #: ../../docs/tutorials/3d/physical_light_and_camera_units.rst:188
-#, fuzzy
 msgid ""
 "Lux is a measure pf luminous flux per unit area and it is the measure of how "
 "much light hits a surface at a given time. It is equal to one lumen per "
@@ -53888,7 +53698,6 @@ msgid ""
 msgstr "Fysiska kameraenheter kan aktiveras oberoende av fysiska ljusenheter."
 
 #: ../../docs/tutorials/3d/physical_light_and_camera_units.rst:223
-#, fuzzy
 msgid ""
 "After adding a :ref:`class_CameraAttributesPhysical` resource to the "
 "**Camera Attributes** property of a Camera3D node, some properties such as "
@@ -55836,7 +55645,6 @@ msgstr ""
 "partikelsystem i scenen visas. Välj ett och klicka på bekräftelseknappen."
 
 #: ../../docs/tutorials/3d/particles/subemitters.rst:35
-#, fuzzy
 msgid ""
 "Particle systems from instantiated scenes can be set as sub-emitters too, as "
 "long as ``Editable Children`` is enabled on the instantiated scene. This "
@@ -57616,7 +57424,6 @@ msgstr ""
 "på sidan :ref:`doc_hdr_output`."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:42
-#, fuzzy
 msgid ""
 "For advanced users, it is possible to get a non-tonemapped image of the "
 "viewport with full HDR data, which can then be saved to an OpenEXR file."
@@ -59005,7 +58812,6 @@ msgstr "**Emission > On UV2**"
 
 #: ../../docs/tutorials/3d/global_illumination/using_voxel_gi.rst:141
 #: ../../docs/tutorials/3d/global_illumination/using_sdfgi.rst:142
-#, fuzzy
 msgid ""
 "Additionally, there are 3 bake modes available for lights "
 "(DirectionalLight3D, OmniLight3D, SpotLight3D, and AreaLight3D):"
@@ -59491,7 +59297,6 @@ msgid "SDFGI interaction with lights and objects"
 msgstr "SDFGI:s interaktion med ljus och objekt"
 
 #: ../../docs/tutorials/3d/global_illumination/using_sdfgi.rst:117
-#, fuzzy
 msgid ""
 "The amount of indirect energy emitted by a light is defined by its color, "
 "energy *and* indirect energy properties. To make a specific light emit more "
@@ -59540,7 +59345,6 @@ msgstr ""
 "belysningen felaktig ut."
 
 #: ../../docs/tutorials/3d/global_illumination/using_sdfgi.rst:137
-#, fuzzy
 msgid ""
 "**Dynamic (not supported with SDFGI):** The mesh won't be taken into account "
 "in SDFGI generation. The mesh will receive indirect lighting from the scene, "
@@ -59561,7 +59365,6 @@ msgstr ""
 "indirekt belysning till scenen."
 
 #: ../../docs/tutorials/3d/global_illumination/using_sdfgi.rst:147
-#, fuzzy
 msgid ""
 "**Static:** The light will be taken into account for SDFGI baking. The light "
 "will contribute indirect lighting to the scene. If the light is changed in "
@@ -59715,7 +59518,6 @@ msgstr ""
 "minskat."
 
 #: ../../docs/tutorials/3d/global_illumination/using_sdfgi.rst:218
-#, fuzzy
 msgid ""
 "When SDFGI is enabled, it will also take some time for global illumination "
 "to be fully converged (30 frames by default). This can create a noticeable "
@@ -60002,7 +59804,6 @@ msgstr ""
 "scenen."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:127
-#, fuzzy
 msgid ""
 "When reusing a mesh within a scene, keep in mind that UVs will be generated "
 "for the first instance found. If the mesh is reused with different scales "
@@ -60231,7 +60032,6 @@ msgid "Setting up the scene"
 msgstr "Konfigurera scenen"
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:235
-#, fuzzy
 msgid ""
 "Before anything is done, a **LightmapGI** node needs to be added to a scene. "
 "This will enable light baking on all nodes (and sub-nodes) in that scene, "
@@ -60242,7 +60042,6 @@ msgstr ""
 "instansierade scener."
 
 #: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:241
-#, fuzzy
 msgid ""
 "A sub-scene can be instantiated several times, as this is supported by the "
 "baker. Each instance will be assigned a lightmap of its own. To avoid issues "
@@ -61563,7 +61362,6 @@ msgstr ""
 "(vanligen några få enheter i 3D-rymden)."
 
 #: ../../docs/tutorials/3d/global_illumination/reflection_probes.rst:180
-#, fuzzy
 msgid ""
 "When using the Forward+ renderer, Godot uses a *clustering* approach for "
 "reflection probe rendering. As many reflection probes as desired can be "
@@ -61580,8 +61378,8 @@ msgstr ""
 "rendering av reflektionsprober. Hur många reflektionsprober som helst kan "
 "läggas till, så länge prestandan tillåter det. Det finns dock fortfarande en "
 "standardgräns på 512 *klustrade element* som kan finnas i den aktuella "
-"kameravyn. Ett klustrat element är ett rundstrålande ljus, ett spotljus, "
-"en :ref:`dekal <doc_using_decals>` eller en :ref:`reflektionsprob "
+"kameravyn. Ett klustrat element är ett rundstrålande ljus, ett spotljus, en "
+":ref:`dekal <doc_using_decals>` eller en :ref:`reflektionsprob "
 "<doc_reflection_probes>`. Gränsen kan höjas genom att justera :ref:`Största "
 "antal klustrade element<class_ProjectSettings_property_rendering/limits/"
 "cluster_builder/max_clustered_elements>` under **Projektinställningar > "
@@ -62926,7 +62724,6 @@ msgstr ""
 "SSAO** i projektinställningarna:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:464
-#, fuzzy
 msgid ""
 "**Quality:** Sets the quality of the screen-space ambient occlusion effect. "
 "Higher values take more samples and so will result in better quality, at the "
@@ -63124,7 +62921,6 @@ msgstr ""
 "SSIL** i projektinställningarna:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:542
-#, fuzzy
 msgid ""
 "**Quality:** Sets the quality of the screen-space indirect lighting effect. "
 "Higher values take more samples and so will result in better quality, at the "
@@ -63137,7 +62933,6 @@ msgstr ""
 "mål**, som beskrivs nedan."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:546
-#, fuzzy
 msgid ""
 "**Half Size:** If ``true``, screen-space indirect lighting will be rendered "
 "at half size and then upscaled before being added to the scene. This is "
@@ -66599,7 +66394,6 @@ msgstr ""
 "För att konfigurera HLOD i exemplet behöver vi bara göra två saker:"
 
 #: ../../docs/tutorials/3d/visibility_ranges.rst:167
-#, fuzzy
 msgid ""
 "Set **Visibility Range Begin** to a number greater than ``0.0`` so that "
 "*BatchOfHouses* only appears when far away enough from the camera. Below "
@@ -67013,7 +66807,6 @@ msgid "Setting up occlusion culling"
 msgstr "Konfigurera ocklusionsgallring"
 
 #: ../../docs/tutorials/3d/occlusion_culling.rst:101
-#, fuzzy
 msgid ""
 "The first step to using occlusion culling is to enable the **Rendering > "
 "Occlusion Culling > Use Occlusion Culling** project setting. (Make sure the "
@@ -70138,17 +69931,14 @@ msgstr ""
 "följer tre barnnoder:"
 
 #: ../../docs/tutorials/3d/spring_arm.rst:66
-#, fuzzy
 msgid "``Node3D`` (the \"pivot point\" for the camera)"
 msgstr "`Node3D` (kamerans ”vridpunkt”)"
 
 #: ../../docs/tutorials/3d/spring_arm.rst:68
-#, fuzzy
 msgid "``SpringArm3D``"
 msgstr "`SpringArm3D`"
 
 #: ../../docs/tutorials/3d/spring_arm.rst:70
-#, fuzzy
 msgid "``Camera3D``"
 msgstr "`Camera3D`"
 
@@ -71250,7 +71040,6 @@ msgstr ""
 "animera en egenskaps värde med en Bézierkurva."
 
 #: ../../docs/tutorials/animation/animation_track_types.rst:142
-#, fuzzy
 msgid ""
 "Bezier curve tracks and property tracks cannot be blended "
 "in :ref:`AnimationPlayer <class_AnimationPlayer>` and :ref:`AnimationTree "
@@ -71408,7 +71197,6 @@ msgstr ""
 "dockningspanelen Inspektören."
 
 #: ../../docs/tutorials/animation/animation_track_types.rst:213
-#, fuzzy
 msgid ""
 "If an animation is already playing and you want to stop it early, you can "
 "create a key and have it set to ``[STOP]`` in the inspector."
@@ -71417,7 +71205,6 @@ msgstr ""
 "skapa en nyckel och ställa in den på `[STOP]` i Inspektören."
 
 #: ../../docs/tutorials/animation/animation_track_types.rst:216
-#, fuzzy
 msgid ""
 "If you instantiate a scene that contains an animation player into your "
 "scene, you need to enable \"Editable Children\" in the scene tree to access "
@@ -72858,7 +72645,6 @@ msgid "TimeSeek"
 msgstr "TimeSeek"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:127
-#, fuzzy
 msgid ""
 "This node allows you to seek to a time in the animation connected to its "
 "``in`` input. Use this node to play an ``Animation`` starting from a certain "
@@ -72878,7 +72664,6 @@ msgid "TimeScale"
 msgstr "TimeScale"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:157
-#, fuzzy
 msgid ""
 "This node allows you to scale the speed of the animation connected to its "
 "``in`` input. The speed of the animation will be multiplied by the number in "
@@ -73245,7 +73030,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:333
-#, fuzzy
 msgid ""
 "``BlendSpace1D`` works just like ``BlendSpace2D``, but in a single dimension "
 "(a horizontal line). Since triangles are not used, it is able to function "
@@ -73350,7 +73134,6 @@ msgid "Blend mode"
 msgstr "Blandningsläge"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:373
-#, fuzzy
 msgid ""
 "By default, blending happens in the *Continuous* mode, by interpolating "
 "points inside the closest triangle in ``BlendSpace2D``, or in the line "
@@ -73591,7 +73374,6 @@ msgid "Then you can set or read them:"
 msgstr "Därefter kan du ange eller läsa dem:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:505
-#, fuzzy
 msgid ""
 "Advance Expressions from a StateMachine will not be found under the "
 "parameters. This is because they are held in another script rather than the "
@@ -73914,7 +73696,6 @@ msgid "Video decoding conditions and recommended resolutions"
 msgstr "Villkor för videoavkodning och rekommenderade upplösningar"
 
 #: ../../docs/tutorials/animation/playing_videos.rst:134
-#, fuzzy
 msgid ""
 "Video decoding is performed on the CPU, as GPUs don't have hardware "
 "acceleration for decoding Theora videos. Modern desktop CPUs can decode Ogg "
@@ -74205,7 +73986,6 @@ msgstr ""
 "att sömlöst komponera samman olika element."
 
 #: ../../docs/tutorials/animation/playing_videos.rst:275
-#, fuzzy
 msgid ""
 "We will achieve the chroma key effect by writing a custom shader in GDScript "
 "and using a ``VideoStreamPlayer`` node to display the video content."
@@ -74218,7 +73998,6 @@ msgid "Scene Setup"
 msgstr "Scenkonfiguration"
 
 #: ../../docs/tutorials/animation/playing_videos.rst:280
-#, fuzzy
 msgid ""
 "Ensure that the scene contains a ``VideoStreamPlayer`` node to play the "
 "video and a ``Control`` node to hold the UI elements for controlling the "
@@ -80560,7 +80339,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:63
-#, fuzzy
 msgid "To open the export menu, click the :button:`Export` button:"
 msgstr "Klicka slutligen på knappen :button:`Importera`."
 
@@ -83066,7 +82844,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:22
-#, fuzzy
 msgid "Setup on Android"
 msgstr "Distribuera till Android"
 
@@ -83090,7 +82867,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:34
-#, fuzzy
 msgid "Setup on Windows, macOS, and Linux"
 msgstr "Stöd för skärmläsare i Windows, macOS och Linux."
 
@@ -83381,15 +83157,14 @@ msgid "Optimizing the file size"
 msgstr "Optimera filstorleken"
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:170
-#, fuzzy
 msgid ""
 "You can optimize the size of your application by compiling an Android export "
 "template with only the features you need. See :ref:`doc_optimizing_for_size` "
 "for more information."
 msgstr ""
 "Du kan minska storleken ytterligare genom att ange andra alternativ som "
-"minskar binärfilens storlek. Mer information finns "
-"i :ref:`doc_optimizing_for_size`."
+"minskar binärfilens storlek. Mer information finns i "
+":ref:`doc_optimizing_for_size`."
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:175
 msgid "Performing a custom Gradle build"
@@ -84890,7 +84665,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/android_gradle_build.rst:27
-#, fuzzy
 msgid "Set up the Gradle build environment"
 msgstr "Använda Gradle-byggmallen"
 
@@ -84912,7 +84686,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/android_gradle_build.rst:40
-#, fuzzy
 msgid "Performing Gradle builds from the Android editor"
 msgstr "Gradle-byggen för Android"
 
@@ -84961,7 +84734,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/android_gradle_build.rst:65
-#, fuzzy
 msgid "Enabling the Gradle build and exporting"
 msgstr "Använda Gradle-byggmallen"
 
@@ -100937,7 +100709,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:197
-#, fuzzy
 msgid ""
 "They are often associated with their respective nodes: :ref:`Path2D "
 "<class_Path2D>` and :ref:`Path3D <class_Path3D>`."
@@ -110383,7 +110154,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:227
-#, fuzzy
 msgid ""
 "``collisions/areas_detect_static_bodies`` is now ``simulation/"
 "areas_detect_static_bodies``."
@@ -110398,7 +110168,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:229
-#, fuzzy
 msgid ""
 "``collisions/soft_body_point_margin`` is now ``simulation/"
 "soft_body_point_radius``."
@@ -110407,7 +110176,6 @@ msgstr ""
 "body_pair_contact_cache_enabled.``"
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:230
-#, fuzzy
 msgid ""
 "``collisions/body_pair_cache_enabled`` is now ``simulation/"
 "body_pair_contact_cache_enabled``."
@@ -110416,7 +110184,6 @@ msgstr ""
 "body_pair_contact_cache_enabled.``"
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:231
-#, fuzzy
 msgid ""
 "``collisions/body_pair_cache_distance_threshold`` is now ``simulation/"
 "body_pair_contact_cache_distance_threshold``."
@@ -110425,7 +110192,6 @@ msgstr ""
 "body_pair_contact_cache_angle_threshold.``"
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:232
-#, fuzzy
 msgid ""
 "``collisions/body_pair_cache_angle_threshold`` is now ``simulation/"
 "body_pair_contact_cache_angle_threshold``."
@@ -114716,7 +114482,6 @@ msgid "Ubuntu"
 msgstr ""
 
 #: ../../docs/tutorials/platform/linux/wayland_x11.rst:41
-#, fuzzy
 msgid "OpenSUSE"
 msgstr "openSUSE"
 
@@ -114727,7 +114492,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/linux/wayland_x11.rst:49
-#, fuzzy
 msgid "Changing the display server setting"
 msgstr "Ändra inställningen"
 
@@ -114772,7 +114536,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/linux/wayland_x11.rst:83
-#, fuzzy
 msgid "High dynamic range support"
 msgstr "Belysning med stort dynamiskt omfång"
 
@@ -115591,7 +115354,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:0
-#, fuzzy
 msgid ""
 "`_get_android_dependencies <https://docs.godotengine.org/en/latest/classes/"
 "class_editorexportplugin.html#class-editorexportplugin-method-get-android-"
@@ -118306,7 +118068,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:277
-#, fuzzy
 msgid "Main screen icons"
 msgstr "Huvudskript"
 
@@ -119183,7 +118944,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/internationalizing_plugins.rst:4
-#, fuzzy
 msgid "Internationalizing plugins"
 msgstr "Internationalisering"
 
@@ -119652,7 +119412,6 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:716
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:182
-#, fuzzy
 msgid "Instantiating scenes"
 msgstr "Instansiera monsterscenen."
 
@@ -120316,7 +120075,6 @@ msgid "See :ref:`doc_standard_material_3d` for more information."
 msgstr "Se :ref:`doc_standard_material_3d` för mer information."
 
 #: ../../docs/tutorials/rendering/renderers.rst:323
-#, fuzzy
 msgid "Subsurface scattering"
 msgstr "Ljusspridning under ytan"
 
@@ -122089,7 +121847,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:269
-#, fuzzy
 msgid "Refresh rate"
 msgstr "Uppdatera"
 
@@ -122102,7 +121859,6 @@ msgid "60 Hz"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:271
-#, fuzzy
 msgid "58 FPS"
 msgstr "384 FPS"
 
@@ -122111,7 +121867,6 @@ msgid "75 Hz"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:273
-#, fuzzy
 msgid "73 FPS"
 msgstr "473 FPS"
 
@@ -122120,7 +121875,6 @@ msgid "120 Hz"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:275
-#, fuzzy
 msgid "115 FPS"
 msgstr "3136 FPS"
 
@@ -122129,7 +121883,6 @@ msgid "144 Hz"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:277
-#, fuzzy
 msgid "138 FPS"
 msgstr "384 FPS"
 
@@ -122138,7 +121891,6 @@ msgid "165 Hz"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:279
-#, fuzzy
 msgid "157 FPS"
 msgstr "473 FPS"
 
@@ -122147,7 +121899,6 @@ msgid "240 Hz"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:281
-#, fuzzy
 msgid "224 FPS"
 msgstr "2832 FPS"
 
@@ -122156,7 +121907,6 @@ msgid "360 Hz"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:283
-#, fuzzy
 msgid "324 FPS"
 msgstr "384 FPS"
 
@@ -122165,7 +121915,6 @@ msgid "480 Hz"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:285
-#, fuzzy
 msgid "416 FPS"
 msgstr "3136 FPS"
 
@@ -122567,7 +122316,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/drawable_textures.rst:4
-#, fuzzy
 msgid "Using DrawableTextures"
 msgstr "Använda prototyptexturer"
 
@@ -122579,7 +122327,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/drawable_textures.rst:11
-#, fuzzy
 msgid "Basic rectangle blitting"
 msgstr "Belysning med stort dynamiskt omfång"
 
@@ -122664,7 +122411,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/drawable_textures.rst:114
-#, fuzzy
 msgid "Using multiple blits in a single texture"
 msgstr "Använda markering av flera rutor"
 
@@ -128130,7 +127876,6 @@ msgstr "``Use [constructor Color.Color].``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:269
 #: ../../docs/engine_details/class_reference/index.rst:158
-#, fuzzy
 msgid "Use :ref:`Color.Color <class_Color_constructor_Color>`."
 msgstr "Se :ref:`Color.RED <class_Color_constant_RED>`."
 
@@ -128151,7 +127896,6 @@ msgstr "``Use [operator Color.operator *].``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:272
 #: ../../docs/engine_details/class_reference/index.rst:161
-#, fuzzy
 msgid "Use :ref:`Color.operator * <class_Color_operator_mul_int>`."
 msgstr ":ref:`Color.lerp() <class_Color_method_lerp>`"
 
@@ -137599,7 +137343,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:16
-#, fuzzy
 msgid ""
 "Optional: Publish on the `Godot Asset Store <https://store.godotengine.org/"
 ">`__."
@@ -138341,7 +138084,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/build_system/scons.rst:114
-#, fuzzy
 msgid "Modifying generated files"
 msgstr "Rensa genererade filer"
 
@@ -138369,7 +138111,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/build_system/scons.rst:133
-#, fuzzy
 msgid "custom_generator.py"
 msgstr "custom.py"
 
@@ -139147,7 +138888,6 @@ msgid "`Go <https://github.com/grow-graphics/gd>`__"
 msgstr "`Go <https://github.com/grow-graphics/gd>`__"
 
 #: ../../docs/tutorials/scripting/other_languages.rst:26
-#, fuzzy
 msgid "`Kotlin/JVM <https://github.com/utopia-rise/godot-kotlin-jvm>`__"
 msgstr "`Java/Kotlin <https://github.com/utopia-rise/godot-kotlin-jvm>`__"
 
@@ -142282,7 +142022,6 @@ msgid "Notes"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:39
-#, fuzzy
 msgid "Addition (``+``)"
 msgstr "Addition ``+``"
 
@@ -142638,7 +142377,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/instancing_with_signals.rst:7
-#, fuzzy
 msgid "Instantiation with signals"
 msgstr "Ansluta till signaler"
 
@@ -146274,7 +146012,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:4
-#, fuzzy
 msgid "Built-in shader functions"
 msgstr "Bitvisa funktioner"
 
@@ -148317,7 +148054,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1389
-#, fuzzy
 msgid "The value to test for ``NaN``."
 msgstr "Värdet som ska testas för oändlighet."
 
@@ -149338,7 +149074,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2253
-#, fuzzy
 msgid "Gets the size of a texture."
 msgstr "Hämta storleken på en textur."
 
@@ -149415,7 +149150,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2264
-#, fuzzy
 msgid "Gets the number of accessible mipmap levels of a texture."
 msgstr "Hämtar dimensionerna för en nivå i en textur."
 
@@ -155335,7 +155069,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:4
-#, fuzzy
 msgid "Texture blit shaders"
 msgstr "Texturstorlek"
 
@@ -155383,12 +155116,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:76
-#, fuzzy
 msgid "Blit built-ins"
 msgstr "Inbyggda startvariabler"
 
 #: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:79
-#, fuzzy
 msgid "Source textures"
 msgstr "Skärmtextur"
 
@@ -158356,7 +158087,6 @@ msgid "Create a new scene and add the following nodes exactly as shown below."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:37
-#, fuzzy
 msgid ""
 "Go into the :ref:`MeshInstance3D <class_MeshInstance3D>` and make the mesh "
 "a :ref:`SphereMesh <class_SphereMesh>`."
@@ -159846,7 +159576,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/custom_gui_controls.rst:155
-#, fuzzy
 msgid ""
 "For more information about events themselves, see the :ref:`doc_inputevent` "
 "tutorial."
@@ -163293,7 +163022,6 @@ msgstr ""
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1026
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1036
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1047
-#, fuzzy
 msgid "**Values**"
 msgstr "**Värde**"
 
@@ -163340,7 +163068,6 @@ msgstr ""
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1028
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1038
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1049
-#, fuzzy
 msgid "**Default**"
 msgstr "Standard"
 
@@ -163543,7 +163270,6 @@ msgid "``left`` (or ``l``), ``center`` (or ``c``), ``right`` (or ``r``)"
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:660
-#, fuzzy
 msgid "``center``"
 msgstr "``center,center``"
 
@@ -165456,12 +165182,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/xr/index.rst:16
-#, fuzzy
 msgid "Getting Started"
 msgstr "Komma igång"
 
 #: ../../docs/tutorials/xr/index.rst:27
-#, fuzzy
 msgid "XR Interfaces"
 msgstr "XRInterface"
 
@@ -165471,7 +165195,6 @@ msgid "WebXR"
 msgstr ""
 
 #: ../../docs/tutorials/xr/index.rst:56
-#, fuzzy
 msgid "Others"
 msgstr "Andra funktioner"
 
@@ -165480,7 +165203,6 @@ msgid "Godot XR Tools"
 msgstr "Godot XR Tools"
 
 #: ../../docs/tutorials/xr/index.rst:78
-#, fuzzy
 msgid "Advanced Topics"
 msgstr "Avancerade ämnen"
 
@@ -166377,7 +166099,6 @@ msgid "Our updated ready function"
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:94
-#, fuzzy
 msgid "We add a few things to the ``_ready`` function."
 msgstr "Exempelkoden nedan ritar en enda triangel i funktionen ``_ready()``."
 
@@ -166475,7 +166196,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/xr/a_better_xr_start_script.rst:375
-#, fuzzy
 msgid "On focused state"
 msgstr "I tillståndet Stopping"
 
@@ -166645,7 +166365,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/xr/deploying_to_android.rst:49
-#, fuzzy
 msgid ""
 "You will find the installed files inside the ``addons`` folder. "
 "Alternatively you can manually install the vendors plugin by downloading it "
@@ -169733,7 +169452,6 @@ msgid "The core methods for working with this API are listed below:"
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_render_models.rst:234
-#, fuzzy
 msgid "Render model extension functions"
 msgstr "render_model_get_subaction_paths"
 
@@ -170969,7 +170687,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/xr/webxr_intro.rst:20
-#, fuzzy
 msgid "We will need the following code to make things work:"
 msgstr "Använd sedan följande kommando för att signera om redigeraren:"
 
@@ -170993,7 +170710,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/xr/webxr_intro.rst:128
-#, fuzzy
 msgid "Controller input"
 msgstr "Funktioner för spelkontroller"
 
@@ -171017,7 +170733,6 @@ msgid "The core inputs are available for WebXR:"
 msgstr ""
 
 #: ../../docs/tutorials/xr/webxr_intro.rst:143
-#, fuzzy
 msgid "trigger_click"
 msgstr "timeline_05_click"
 
@@ -171066,7 +170781,6 @@ msgid "``true`` if the thumbstick is pressed"
 msgstr ""
 
 #: ../../docs/tutorials/xr/webxr_intro.rst:155
-#, fuzzy
 msgid "ax_button"
 msgstr "Button"
 
@@ -171075,7 +170789,6 @@ msgid "``true`` if the A or X button is pressed"
 msgstr ""
 
 #: ../../docs/tutorials/xr/webxr_intro.rst:157
-#, fuzzy
 msgid "by_button"
 msgstr "Button"
 
@@ -171105,7 +170818,6 @@ msgstr ""
 
 #: ../../docs/tutorials/xr/webxr_intro.rst:163
 #: ../../docs/tutorials/xr/webxr_intro.rst:169
-#, fuzzy
 msgid "Vector2"
 msgstr "Vektor"
 
@@ -171118,7 +170830,6 @@ msgid "thumbstick_x"
 msgstr ""
 
 #: ../../docs/tutorials/xr/webxr_intro.rst:165
-#, fuzzy
 msgid "Thumbstick movement in the X direction"
 msgstr "Förflytta i den angivna riktningen."
 
@@ -171127,7 +170838,6 @@ msgid "thumbstick_y"
 msgstr ""
 
 #: ../../docs/tutorials/xr/webxr_intro.rst:167
-#, fuzzy
 msgid "Thumbstick movement in the Y direction"
 msgstr "Förflytta i den angivna riktningen."
 
@@ -171147,7 +170857,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/xr/mobilevr_intro.rst:4
-#, fuzzy
 msgid "Mobile VR"
 msgstr "Mobil"
 
@@ -171184,7 +170893,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/xr/arcore_intro.rst:4
-#, fuzzy
 msgid "ARCore"
 msgstr "Kärna"
 
@@ -171210,7 +170918,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/xr/openvr_intro.rst:4
-#, fuzzy
 msgid "OpenVR"
 msgstr "OpenXR"
 
@@ -180623,7 +180330,6 @@ msgid "Navigate to **Settings > Build, Execution, Deployment > Toolchains**"
 msgstr ""
 
 #: ../../docs/engine_details/development/configuring_an_ide/clion.rst:31
-#, fuzzy
 msgid "Click the **+** button and select ``Visual Studio``"
 msgstr "Klicka på knappen **+** och välj ``Visual Studio``"
 
@@ -182671,7 +182377,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:26
-#, fuzzy
 msgid "Visual Studio 2019"
 msgstr "Visual Studio 2019"
 
@@ -182697,7 +182402,6 @@ msgid "**Windows 11 SDK (10.0.22621.0)** or newer."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:34
-#, fuzzy
 msgid "Visual Studio 2026"
 msgstr "Visual Studio 2022"
 
@@ -186695,7 +186399,6 @@ msgid "All recommended profilers"
 msgstr ""
 
 #: ../../docs/engine_details/development/profiling/index.rst:118
-#, fuzzy
 msgid "Microbenchmarks"
 msgstr "``--benchmark``"
 
@@ -186732,7 +186435,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/profiling/index.rst:141
-#, fuzzy
 msgid "GDScript benchmarks"
 msgstr "GDScript-referens"
 
@@ -186757,7 +186459,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/profiling/index.rst:172
-#, fuzzy
 msgid "C++ benchmarks"
 msgstr "``--benchmark``"
 
@@ -187922,18 +187623,15 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/class_reference/index.rst:73
-#, fuzzy
 msgid "``<brief_description>``"
 msgstr "`<brief_description>`"
 
 #: ../../docs/engine_details/class_reference/index.rst:74
-#, fuzzy
 msgid "``<description>``"
 msgstr "`<description>`"
 
 #: ../../docs/engine_details/class_reference/index.rst:75
 #: ../../docs/engine_details/class_reference/index.rst:80
-#, fuzzy
 msgid "``<constant>``"
 msgstr "`<constant>`"
 
@@ -189516,7 +189214,6 @@ msgid "Asset Store"
 msgstr ""
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:4
-#, fuzzy
 msgid "About the Asset Store"
 msgstr "Räkna poängen."
 
@@ -189563,7 +189260,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:36
-#, fuzzy
 msgid "The old Asset library"
 msgstr "Tillgångsbibliotek"
 
@@ -189576,7 +189272,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/using_asset_store_website.rst:4
-#, fuzzy
 msgid "Using the Asset Store Website"
 msgstr "Använda Tillgångsbiblioteket"
 
@@ -189642,7 +189337,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/using_in_editor.rst:4
-#, fuzzy
 msgid "Using the Asset Store in the Engine"
 msgstr "Så fungerar skript i motorn"
 
@@ -189651,7 +189345,6 @@ msgid "Accessing it"
 msgstr ""
 
 #: ../../docs/community/asset_store/using_in_editor.rst:9
-#, fuzzy
 msgid ""
 "The Asset Store can be accessed from within Godot from the project manager."
 msgstr ""
@@ -189659,7 +189352,6 @@ msgstr ""
 "projekthanteraren"
 
 #: ../../docs/community/asset_store/using_in_editor.rst:13
-#, fuzzy
 msgid "As well as within the editor."
 msgstr "Inbyggd temaredigerare."
 
@@ -189684,7 +189376,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/using_in_editor.rst:29
-#, fuzzy
 msgid "Downloading and installing assets"
 msgstr "Hämta demonstrationer och mallar"
 
@@ -189745,7 +189436,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:4
-#, fuzzy
 msgid "Submitting to the Asset Store"
 msgstr "Konfigurera scenen"
 
@@ -189881,12 +189571,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:174
-#, fuzzy
 msgid "Asset Summary"
 msgstr "Summering"
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:175
-#, fuzzy
 msgid "Detailed description"
 msgstr "Detaljerad beskrivning."
 
@@ -189895,12 +189583,10 @@ msgid "Asset type (Full Project or Addon)"
 msgstr ""
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:178
-#, fuzzy
 msgid "License"
 msgstr "Licensskärm"
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:179
-#, fuzzy
 msgid "Link to source code"
 msgstr "Länk till metod"
 
@@ -189955,7 +189641,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/faq.rst:7
-#, fuzzy
 msgid "General store questions"
 msgstr "Allmänna redigeringsåtgärder"
 
@@ -189964,7 +189649,6 @@ msgid "I found a bug in the store website, where do I report it?"
 msgstr ""
 
 #: ../../docs/community/asset_store/faq.rst:12
-#, fuzzy
 msgid ""
 "Please report it in the `asset store tracker repository <https://github.com/"
 "godotengine/godot-asset-store-tracker>`_."
@@ -189978,7 +189662,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/faq.rst:17
-#, fuzzy
 msgid ""
 "Yes! Please open an issue in the `asset store tracker repository <https://"
 "github.com/godotengine/godot-asset-store-tracker>`_."
@@ -190012,7 +189695,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/faq.rst:34
-#, fuzzy
 msgid "Asset submission questions"
 msgstr "Ange emissionstäthet"
 
@@ -190076,7 +189758,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/faq.rst:69
-#, fuzzy
 msgid "Is there a size limit?"
 msgstr "Begränsningar för texturstorlek"
 
@@ -190233,7 +189914,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/tutorials.rst:42
-#, fuzzy
 msgid "`Godot Asset Store <https://store.godotengine.org/>`_"
 msgstr "`Webb <https://editor.godotengine.org/>`__ (experimentellt)"
 

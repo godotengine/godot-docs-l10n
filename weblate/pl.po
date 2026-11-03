@@ -144,13 +144,16 @@
 # Mikołaj Mądrzyk <matvete@hotmail.com>, 2026.
 # Adam <xjooker11@gmail.com>, 2026.
 # MedProgAyat <hosseinmehriyari1383@gmail.com>, 2026.
+# ferafiks <ferafiks@proton.me>, 2026.
+# No Normal <d.jochymek12@gmail.com>, 2026.
+# Mask <MaskError66@proton.me>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-08-20 11:36+0200\n"
-"PO-Revision-Date: 2026-07-07 03:33+0000\n"
-"Last-Translator: MedProgAyat <hosseinmehriyari1383@gmail.com>\n"
+"PO-Revision-Date: 2026-10-26 21:45+0000\n"
+"Last-Translator: Mask <MaskError66@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -159,7 +162,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.7.1.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -228,7 +231,7 @@ msgstr "Referencja klas"
 #: ../../docs/index.rst:4
 #, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Dokumentacja Godot – gałąź *4.6*"
+msgstr "Dokumentacja Godot – gałąź *główna*"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -594,9 +597,9 @@ msgid ""
 "engine, its history, its licensing, authors, etc. It also contains "
 "the :ref:`doc_faq`."
 msgstr ""
-"**O** zawiera to wprowadzenie, jak również informacje o silniku, jego "
-"historii, licencji, autorach, itd. Zawiera również :ref:`Często Zadawane "
-"Pytania <doc_faq>`."
+"**O Godocie** zawiera to wprowadzenie, jak również informacje o silniku, "
+"jego historii, licencji, autorach, itd. Zawiera również :ref:`Często "
+"Zadawane Pytania <doc_faq>`."
 
 #: ../../docs/about/introduction.rst:74
 msgid ""
@@ -605,19 +608,20 @@ msgid ""
 "which should be the entry point for all new users. **This is the best place "
 "to start if you're new!**"
 msgstr ""
-"**Rozpoczynanie** zawiera wszystkie wymagane informacje do używania tego "
-"silnika w celu tworzenia gier. Zaczyna się od "
-"poradnika :ref:`doc_getting_started_intro`, który powinien być punktem "
-"wyjścia dla wszystkich nowych użytkowników. **To jest najlepsze miejsce na "
-"początek jeśli jesteś nowy!**"
+"**Jak rozpocząć** zawiera wszystkie wymagane informacje do używania tego "
+"silnika w celu tworzenia gier. Zaczyna się od poradnika "
+":ref:`doc_getting_started_intro`, który powinien być punktem wyjścia dla "
+"wszystkich nowych użytkowników. **To jest najlepsze miejsce na początek "
+"jeśli jesteś nowy!**"
 
 #: ../../docs/about/introduction.rst:78
 msgid ""
 "The **Manual** can be read or referenced as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-"**Poradnik** może być czytany lub sprawdzany w miarę potrzeby, w dowolnej "
-"kolejności. Zawiera poradniki i dokumentację do konkretnych funkcjonalności."
+"**Instrukcja obsługi** może być czytana lub sprawdzana w miarę potrzeby, w "
+"dowolnej kolejności. Zawiera poradniki i dokumentację do konkretnych "
+"funkcjonalności."
 
 #: ../../docs/about/introduction.rst:80
 msgid ""
@@ -630,7 +634,6 @@ msgstr ""
 "edytora, czy rozwijaniu modułów C++."
 
 #: ../../docs/about/introduction.rst:83
-#, fuzzy
 msgid ""
 "**Community** is dedicated to the life of Godot's community and contains a "
 "list of recommended third-party tutorials and materials outside of this "
@@ -638,10 +641,10 @@ msgid ""
 "list Godot communities, which are now listed on the `Godot website <https://"
 "godotengine.org/community/>`_."
 msgstr ""
-"**Społeczność** jest dedykowana życiu społeczności Godota i zawiera listę "
-"rekomendowanych zewnętrznych samouczków i materiałów spoza tej dokumentacji. "
-"Zapewnia też szczegóły na temat Biblioteki Zasobów. Była tu też lista "
-"społeczności Godota, która znajduje się teraz na `stronie Godota <https://"
+"**Społeczność** jest poświęcona życiu społeczności Godota i zawiera listę "
+"polecanych zewnętrznych samouczków oraz materiałów spoza tej dokumentacji. "
+"Opisuje też Asset Store. Dawniej zawierała również listę społeczności "
+"Godota, która jest teraz dostępna na `stronie Godota <https://"
 "godotengine.org/community/>`_."
 
 #: ../../docs/about/introduction.rst:87
@@ -650,9 +653,9 @@ msgid ""
 "available directly within the engine's script editor. You can find "
 "information on all classes, functions, signals and so on here."
 msgstr ""
-"W końcu, **Opis klas** dokumentuje całe API Godota, jest również dostępny "
-"bezpośrednio z edytora skryptów w silniku. Możesz tu znaleźć informacje o "
-"wszystkich klasach, funkcjach, sygnałach i tak dalej."
+"W końcu, **Referencja klas** dokumentuje całe API Godota, jest również "
+"dostępny bezpośrednio z edytora skryptów w silniku. Możesz tu znaleźć "
+"informacje o wszystkich klasach, funkcjach, sygnałach i tak dalej."
 
 #: ../../docs/about/introduction.rst:91
 msgid ""
@@ -746,8 +749,8 @@ msgid ""
 "For information about console support, see the `Godot website <https://"
 "godotengine.org/consoles/>`_."
 msgstr ""
-"Po więcej informacji o wsparciu dla konsoli, wejdź na`stronę Godota <https://"
-"godotengine.org/consoles/>`_."
+"Aby uzyskać więcej informacji o wsparciu dla konsol, zobacz `stronę Godota "
+"<https://godotengine.org/consoles/>`_."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "**Can run both the editor and exported projects:**"
@@ -867,6 +870,8 @@ msgid ""
 "Built-in script editor. Also supports editing text files and using custom "
 "syntax highlighters."
 msgstr ""
+"Wbudowany edytor skryptów. Obsługuje również edycję plików tekstowych oraz "
+"korzystanie z własnych podświetlań składni."
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
@@ -881,9 +886,8 @@ msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr ":ref:`Debuger <doc_debugger_panel>` GDScript."
 
 #: ../../docs/about/list_of_features.rst:76
-#, fuzzy
 msgid "Supports debugging in threads."
-msgstr "Wsparcie dla debugowania w wątkach jest dostępne od wersji 4.2."
+msgstr "Wspiera debugowanie w wątkach."
 
 #: ../../docs/about/list_of_features.rst:78
 msgid ""
@@ -907,6 +911,9 @@ msgid ""
 "like :ref:`doc_profiler_tracy` and :ref:`doc_profiler_perfetto` for deeper "
 "optimization tasks."
 msgstr ""
+"Obsługuje :ref:`profilery śledzące <doc_tracing_profilers>`, takie jak "
+":ref:`doc_profiler_tracy` i :ref:`doc_profiler_perfetto`, przydatne przy "
+"bardziej zaawansowanych zadaniach optymalizacyjnych."
 
 #: ../../docs/about/list_of_features.rst:84
 msgid ""
@@ -914,6 +921,10 @@ msgid ""
 "and provide custom functionality such as clickable buttons in the inspector, "
 "without needing to create an editor plugin."
 msgstr ""
+"Każdy skrypt może być :ref:`uruchamiany w edytorze "
+"<doc_running_code_in_the_editor>` i zapewniać własną funkcjonalność, na "
+"przykład klikalne przyciski w inspektorze, bez potrzeby tworzenia wtyczki "
+"edytora."
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Live script reloading."
@@ -924,18 +935,16 @@ msgid "Live scene editing."
 msgstr "Edycja scen podczas działania programu."
 
 #: ../../docs/about/list_of_features.rst:90
-#, fuzzy
 msgid ""
 "Changes *will* reflect in the editor and *will* be kept after closing the "
 "running project."
 msgstr ""
-"Zmiany zostaną odzwierciedlone w edytorze i zostaną zachowane po zamknięciu "
+"Zmiany *będą* widoczne w edytorze i *zostaną* zachowane po zamknięciu "
 "uruchomionego projektu."
 
 #: ../../docs/about/list_of_features.rst:92
-#, fuzzy
 msgid "Live camera replication (disabled by default)."
-msgstr "Przejęcie kontroli nad kamerą."
+msgstr "Replikacja kamery na żywo (domyślnie wyłączona)."
 
 #: ../../docs/about/list_of_features.rst:94
 msgid "Move the in-editor camera and see the result in the running project."
@@ -946,12 +955,11 @@ msgid "Remote inspector."
 msgstr "Zdalny inspektor."
 
 #: ../../docs/about/list_of_features.rst:98
-#, fuzzy
 msgid ""
 "Changes *won't* reflect in the editor and *won't* be kept after closing the "
 "running project."
 msgstr ""
-"Zmiany nie zostaną odzwierciedlone w edytorze i nie zostaną zapisane po "
+"Zmiany *nie* będą widoczne w edytorze i *nie* zostaną zachowane po "
 "zamknięciu uruchomionego projektu."
 
 #: ../../docs/about/list_of_features.rst:100
@@ -959,46 +967,54 @@ msgid ""
 "Run multiple simultaneous project instances from a single editor instance "
 "(useful for client/server testing)."
 msgstr ""
+"Uruchamianie wielu instancji projektu jednocześnie z poziomu pojedynczego "
+"edytora (przydatne podczas testowania relacji klient-serwer)."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid ""
 "Optional :ref:`game embedding <doc_game_embedding>` to run the project in a "
 "panel within the editor."
 msgstr ""
+"Opcjonalne :ref:`osadzanie gry <doc_game_embedding>` pozwalające na "
+"uruchamianie projektu w panelu wewnątrz edytora."
 
 #: ../../docs/about/list_of_features.rst:104
 msgid ""
 "Select 2D and 3D nodes in the project's viewport to inspect them in the "
 "editor."
 msgstr ""
+"Zaznaczaj węzły 2D i 3D w oknie widoku projektu, aby przejrzeć je w edytorze."
 
 #: ../../docs/about/list_of_features.rst:105
 msgid ""
 "Move the camera within the project using the 2D and 3D camera overrides."
-msgstr ""
+msgstr "Steruj kamerą w projekcie za pomocą nadpisania kamery 2D i 3D."
 
 #: ../../docs/about/list_of_features.rst:106
 msgid "Supports time scale adjustments, pausing, and frame advance."
 msgstr ""
+"Obsługuje zmianę skali czasu, wstrzymywanie rozgrywki oraz przechodzenie "
+"klatka po klatce."
 
 #: ../../docs/about/list_of_features.rst:107
-#, fuzzy
 msgid "Supports muting the project."
-msgstr "Tworzenie nowego projektu"
+msgstr "Wspiera wyciszanie projektu."
 
 #: ../../docs/about/list_of_features.rst:109
 msgid "Ruler tool to measure distances in 2D and 3D."
-msgstr ""
+msgstr "Narzędzie linijki do mierzenia odległości w 2D i 3D."
 
 #: ../../docs/about/list_of_features.rst:110
 msgid "Vertex snapping support in 3D."
-msgstr ""
+msgstr "Obsługa przyciągania do wierzchołków w 3D."
 
 #: ../../docs/about/list_of_features.rst:111
 msgid ""
 "Support for following the selection as it moves in 3D by using Focus "
 "Selection twice."
 msgstr ""
+"Obsługa śledzenia zaznaczenia podczas jego ruchu w 3D poprzez dwukrotne "
+"użycie funkcji Focus Selection (Skup na zaznaczeniu)."
 
 #: ../../docs/about/list_of_features.rst:112
 msgid "Built-in offline class reference documentation."
@@ -1013,13 +1029,12 @@ msgid "**Plugins:**"
 msgstr "**Wtyczki:**"
 
 #: ../../docs/about/list_of_features.rst:117
-#, fuzzy
 msgid ""
 "Editor plugins can be downloaded from the :ref:`Asset Store "
 "<doc_what_is_asset_store>` to extend editor functionality."
 msgstr ""
-"Wtyczki edytora można pobrać z :ref:`biblioteki zasobów "
-"<doc_what_is_assetlib>`, aby rozszerzyć funkcjonalność edytora."
+"Wtyczki do edytora można pobierać z :ref:`Asset Store "
+"<doc_what_is_asset_store>`, aby rozszerzać jego funkcjonalność."
 
 #: ../../docs/about/list_of_features.rst:119
 msgid ""
@@ -1030,13 +1045,12 @@ msgstr ""
 "GDScript, by dodać nowe funkcjonalności lub przyspieszyć swoją pracę."
 
 #: ../../docs/about/list_of_features.rst:121
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the Asset Store <doc_using_asset_store_editor>` "
 "in the Project Manager and import them directly."
 msgstr ""
-":ref:`Pobierz projekty z biblioteki zasobów <doc_using_assetlib_editor>` w "
-"Menadżerze Projektów i importuj je bezpośrednio."
+":ref:`Pobieraj projekty z Asset Store <doc_using_asset_store_editor>` w "
+"Menedżerze projektów i importuj je bezpośrednio."
 
 #: ../../docs/about/list_of_features.rst:125
 #: ../../docs/about/docs_changelog.rst:123
@@ -1141,13 +1155,12 @@ msgid "Pseudo-3D support including preview in the editor."
 msgstr "Obsługa pseudo-3D wraz z podglądem w edytorze."
 
 #: ../../docs/about/list_of_features.rst:157
-#, fuzzy
 msgid ""
 ":ref:`2D lighting <doc_2d_lights_and_shadows>` with normal maps and specular "
 "maps."
 msgstr ""
-":ref:`Oświetlenie 2D <doc_2d_lights_and_shadows>` z mapami normalnymi i "
-"mapami lustrzanymi."
+":ref:`Oświetlenie 2D <doc_2d_lights_and_shadows>` z mapami normalnych i "
+"mapami odbić."
 
 #: ../../docs/about/list_of_features.rst:159
 msgid "Point (omni/spot) and directional 2D lights."
@@ -1170,14 +1183,12 @@ msgstr ""
 "ulepszonych efektów oświetlenia 2D, w tym globalnego oświetlenia 2D."
 
 #: ../../docs/about/list_of_features.rst:165
-#, fuzzy
 msgid ""
 ":ref:`Font rendering <doc_gui_using_fonts>` using bitmaps, rasterization "
 "using FreeType or multi-channel signed distance fields (MSDF)."
 msgstr ""
-":ref:`Renderowanie czcionek <doc_gui_using_fonts>` przy użyciu bitmap, "
-"rasteryzacja przy użyciu FreeType lub wielokanałowych podpisanych pól "
-"odległości (MSDF)."
+":ref:`Renderowanie czcionek <doc_gui_using_fonts>` za pomocą bitmap, "
+"rasteryzacji FreeType lub wielokanałowych pól odległości ze znakiem (MSDF)."
 
 #: ../../docs/about/list_of_features.rst:168
 msgid ""
@@ -1259,12 +1270,20 @@ msgid ""
 "for sharper results when scaling up the texture by re-rasterizing the SVG "
 "source image to a new resolution at run-time."
 msgstr ""
+":ref:`Nadpróbkowanie <doc_multiple_resolutions_font_and_image_oversampling>` "
+"obrazów SVG z wykorzystaniem typu importu :ref:`class_DPITexture`. Pozwala "
+"to uzyskać ostrzejszy obraz podczas powiększania tekstury poprzez ponowną "
+"rasteryzację źródłowego pliku SVG do nowej rozdzielczości w trakcie "
+"działania gry."
 
 #: ../../docs/about/list_of_features.rst:187
 msgid ""
 "Oversampling can optionally take individual :ref:`class_CanvasItem` scales "
 "into account for crisper rendering when scaling nodes."
 msgstr ""
+"Nadpróbkowanie może opcjonalnie uwzględniać skalę poszczególnych obiektów "
+":ref:`class_CanvasItem`, zapewniając ostrzejsze renderowanie podczas "
+"powiększania węzłów."
 
 #: ../../docs/about/list_of_features.rst:190
 msgid ""
@@ -1293,23 +1312,26 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:232
 msgid "Optional debanding to reduce banding artifacts in gradients."
 msgstr ""
+"Opcjonalne usuwanie prążkowania (debanding) w celu redukcji artefaktów na "
+"gradientach."
 
 #: ../../docs/about/list_of_features.rst:196
 #: ../../docs/about/list_of_features.rst:233
 msgid ""
 ":ref:`HDR output <doc_hdr_output>` on supported platforms and renderers."
 msgstr ""
+":ref:`Obsługa wyjścia HDR <doc_hdr_output>` na wspieranych platformach i "
+"silnikach renderujących."
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "2D tools"
 msgstr "Narzędzia 2D"
 
 #: ../../docs/about/list_of_features.rst:201
-#, fuzzy
 msgid ":ref:`TileMaps <doc_using_tilemaps>` for 2D tile-based level design."
 msgstr ""
-":ref:`TileMaps <doc_using_tilemaps>` do projektowania poziomów opartych na "
-"kafelkach 2D."
+":ref:`TileMaps <doc_using_tilemaps>` do tworzenia poziomów 2D opartych na "
+"kafelkach."
 
 #: ../../docs/about/list_of_features.rst:202
 msgid "2D camera with built-in smoothing and drag margins."
@@ -1378,9 +1400,8 @@ msgstr "Obszary wykrywające wchodzące lub opuszczające obiekty."
 
 #: ../../docs/about/list_of_features.rst:221
 #: ../../docs/about/list_of_features.rst:483
-#, fuzzy
 msgid ":ref:`Physics interpolation <doc_physics_interpolation>`."
-msgstr ":ref:`doc_interpolation`"
+msgstr ":ref:`Interpolacja fizyki <doc_physics_interpolation>`."
 
 #: ../../docs/about/list_of_features.rst:223
 #: ../../docs/about/list_of_features.rst:485
@@ -1408,7 +1429,7 @@ msgstr "Grafika 3D"
 
 #: ../../docs/about/list_of_features.rst:231
 msgid "Linear HDR internal lighting calculations."
-msgstr ""
+msgstr "Wewnętrzne obliczenia oświetlenia w liniowym HDR."
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "Perspective, orthographic and frustum-offset cameras."
@@ -1483,9 +1504,8 @@ msgstr ""
 "(wypukłość)."
 
 #: ../../docs/about/list_of_features.rst:249
-#, fuzzy
 msgid "Subsurface scattering and transmittance."
-msgstr "Pod-powierzchowne rozpraszanie i przepuszczalność."
+msgstr "Rozpraszanie podpowierzchniowe i przepuszczalność."
 
 #: ../../docs/about/list_of_features.rst:250
 msgid ""
@@ -1520,23 +1540,28 @@ msgid ""
 ":ref:`Directional lights <doc_lights_and_shadows_directional_light>` (sun/"
 "moon)."
 msgstr ""
+":ref:`Światła kierunkowe <doc_lights_and_shadows_directional_light>` (słońce/"
+"księżyc)."
 
 #: ../../docs/about/list_of_features.rst:259
 msgid ":ref:`Omnidirectional lights <doc_lights_and_shadows_omni_light>`."
-msgstr ""
+msgstr ":ref:`Światła punktowe <doc_lights_and_shadows_omni_light>`."
 
 #: ../../docs/about/list_of_features.rst:260
-#, fuzzy
 msgid ""
 ":ref:`Spot lights <doc_lights_and_shadows_spot_light>` with adjustable cone "
 "angle and attenuation."
-msgstr "Światła punktowe z modyfikowalnym kątem stożka i osłabianiem."
+msgstr ""
+":ref:`Światła reflektorowe <doc_lights_and_shadows_spot_light>` z "
+"regulowanym kątem stożka i zanikaniem."
 
 #: ../../docs/about/list_of_features.rst:261
 msgid ""
 ":ref:`Rectangular area lights <doc_lights_and_shadows_area_light>` with an "
 "optional texture to determine the shape and color."
 msgstr ""
+":ref:`Prostokątne światła powierzchniowe <doc_lights_and_shadows_area_light>"
+"` z opcjonalną teksturą określającą kształt i kolor."
 
 #: ../../docs/about/list_of_features.rst:263
 msgid ""
@@ -1547,13 +1572,13 @@ msgstr ""
 "regulowana odzielnie dla każdego źródła światła."
 
 #: ../../docs/about/list_of_features.rst:264
-#, fuzzy
 msgid ""
 "Adjustable light \"size\" for spherical omni and disc spot lights (will also "
 "make shadows blurrier with variable penumbra)."
 msgstr ""
-"Regulowany \"rozmiar\" światła dla sztucznego obszaru światła (spowoduje że "
-"cienie będą rozmyte)."
+"Regulowany „rozmiar” światła dla sferycznych świateł punktowych i dyskowych "
+"świateł reflektorowych (spowoduje to również większe rozmycie cieni ze "
+"zmiennym półcieniem)."
 
 #: ../../docs/about/list_of_features.rst:266
 msgid ""
@@ -1576,49 +1601,49 @@ msgstr ""
 "liczbę świateł które mogły być użyte na siatce."
 
 #: ../../docs/about/list_of_features.rst:270
-#, fuzzy
 msgid ""
 "When using the Mobile renderer, up to 8 omni lights, 8 spot lights, and 8 "
 "area lights can be displayed per mesh resource. Baked lighting can be used "
 "to overcome this limit if needed."
 msgstr ""
-"W przypadku używania backendu Mobile, aż do 8 wszech świateł i 8 punktowych "
-"świateł może być wyświetlane na zasób sieci. Wbudowane światło może być "
-"użyte do przekroczenia tego limitu."
+"W przypadku używania silnika renderującego Mobile na jeden zasób siatki "
+"można wyświetlić maksymalnie do 8 świateł punktowych, 8 świateł "
+"reflektorowych i 8 świateł powierzchniowych. W razie potrzeby można użyć "
+"zapieczonego oświetlenia, aby obejść ten limit."
 
 #: ../../docs/about/list_of_features.rst:274
 msgid "**Shadow mapping:**"
 msgstr "**Mapowanie cieni**"
 
 #: ../../docs/about/list_of_features.rst:276
-#, fuzzy
 msgid ""
 "*DirectionalLight3D:* Orthogonal (fastest), PSSM 2-split and 4-split. "
 "Supports blending between splits."
 msgstr ""
-"*DirectionalLight:* Ortogonalny (najszybszy), PSSM 2-częściowy i 4-"
-"częściowy. Obsługuje mieszanie między podziałami."
+"*DirectionalLight3D:* Ortogonalne (najszybsze), PSSM z 2 i 4 podziałami. "
+"Obsługuje mieszanie przejść między podziałami."
 
 #: ../../docs/about/list_of_features.rst:278
-#, fuzzy
 msgid ""
 "*OmniLight3D:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
-"*OmniLight:* Podwójna paraboloida (szybka) lub cubemapa (wolniejsza, ale "
-"dokładniejsza). Obsługuje kolorowe tekstury nakładane w postaci panoram."
+"*OmniLight3D:* Podwójna paraboloida (szybka) lub mapa sześcienna "
+"(wolniejsza, ale dokładniejsza). Obsługuje kolorowe tekstury projektora w "
+"postaci panoram."
 
 #: ../../docs/about/list_of_features.rst:280
-#, fuzzy
 msgid "*SpotLight3D:* Single texture. Supports colored projector textures."
 msgstr ""
-"*Reflektor:* Pojedyncza tekstura. Wspiera kolorowe tekstury projektora."
+"*SpotLight3D:* Pojedyncza tekstura. Obsługuje kolorowe tekstury projektora."
 
 #: ../../docs/about/list_of_features.rst:281
 msgid ""
 "*AreaLight3D:* Single texture with dual paraboloid distortion to approximate "
 "the light's shape."
 msgstr ""
+"*AreaLight3D:* Pojedyncza tekstura ze zniekształceniem podwójnie "
+"parabolicznym w celu przybliżenia kształtu światła."
 
 #: ../../docs/about/list_of_features.rst:283
 msgid ""
@@ -1629,15 +1654,14 @@ msgstr ""
 "ilości widocznych zanieczyszceń obrazu, a tak że peter-panning."
 
 #: ../../docs/about/list_of_features.rst:285
-#, fuzzy
 msgid ""
 ":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
 "light size and distance from the surface the shadow is cast on. Supported "
 "for all light types."
 msgstr ""
-":abbr:`PCSS (Percentage Closer Soft Shadows)`- podobnie do rozmycia cienia "
-"jest opartegy na rozmiarze swiatła i odległości od powierzchni na, którą "
-"pada cień."
+"Rozmycie cieni w stylu :abbr:`PCSS (Percentage Closer Soft Shadows)` na "
+"podstawie rozmiaru światła oraz odległości od powierzchni, na którą pada "
+"cień. Obsługiwane dla wszystkich typów świateł."
 
 #: ../../docs/about/list_of_features.rst:288
 msgid "Adjustable shadow blur on a per-light basis."
@@ -1673,62 +1697,67 @@ msgstr ""
 "ręcznie ustawionych próbników."
 
 #: ../../docs/about/list_of_features.rst:298
-#, fuzzy
 msgid "Optionally supports directional lighting based on spherical harmonics."
 msgstr ""
-"Okazjonalnie wspiera oświetlenie skierowane i surowe odbicia oparte na "
-"harmoni sferycznej."
+"Opcjonalnie obsługuje oświetlenie kierunkowe oparte na harmoniach "
+"sferycznych."
 
 #: ../../docs/about/list_of_features.rst:299
 msgid ""
 "Optionally supports baking a shadowmask for distant static directional "
 "shadows."
 msgstr ""
+"Opcjonalnie obsługuje zapiekanie maski cieni dla odległych statycznych cieni "
+"kierunkowych."
 
 #: ../../docs/about/list_of_features.rst:300
 msgid ""
 "Optional supersampling at bake-time to improve quality and reduce light "
 "leaking at the cost of increased bake times and memory usage during baking."
 msgstr ""
+"Opcjonalny supersampling podczas zapiekania poprawia jakość i zmniejsza "
+"przenikanie światła kosztem dłuższego czasu zapiekania oraz większego "
+"zużycia pamięci w jego trakcie."
 
 #: ../../docs/about/list_of_features.rst:302
-#, fuzzy
 msgid ""
 "Lightmaps are baked on the GPU using compute shaders (much faster than CPU "
 "lightmapping). Baking can only be performed from the editor, not in exported "
 "projects."
 msgstr ""
-"Mapy oświetlenia są wypalane(wyliczne) na GPU za pomocą shaderów (jest to "
-"szybsze w porównaniu do mapowania oświetlenia na CPU). Wypalania można "
-"dokonać tylko w edytorze, nie w wyeksportowanym projekcie."
+"Mapy oświetlenia są zapiekane na GPU za pomocą shaderów obliczeniowych "
+"(znacznie szybciej niż w przypadku zapiekania na CPU). Zapiekanie można "
+"przeprowadzić tylko z poziomu edytora, a nie w wyeksportowanych projektach."
 
 #: ../../docs/about/list_of_features.rst:305
-#, fuzzy
 msgid ""
 "Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
 "JNLM out of the box, or higher-quality CPU/GPU-based denoising with OIDN "
 "(requires downloading OIDN separately)."
 msgstr ""
-"Wspiera :ref:`denoising <doc_using_lightmap_gi_denoising>` oparty na GPU za "
-"pomocą JNLM lub denoising oparty na CPU/GPU za pomocą OIDN."
+"Obsługuje opierające się na GPU :ref:`odszumianie "
+"<doc_using_lightmap_gi_denoising>` za pomocą JNLM prosto z pudełka lub "
+"wyższej jakości odszumianie na CPU/GPU przy użyciu OIDN (wymaga osobnego "
+"pobrania OIDN)."
 
 #: ../../docs/about/list_of_features.rst:308
 msgid ""
 "Lightmaps are rendered with bicubic filtering to reduce scaling artifacts."
 msgstr ""
+"Mapy oświetlenia są renderowane z filtrowaniem dwusześciennym, aby "
+"zmniejszyć artefakty skalowania."
 
 #: ../../docs/about/list_of_features.rst:310
-#, fuzzy
 msgid ""
 ":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
 "*and* dynamic occluders, while also supporting reflections. Requires a fast "
 "baking step which can be performed in the editor or at runtime (including "
 "from an exported project)."
 msgstr ""
-":ref:`Sondy GI oparte na Wokselach <doc_using_voxel_gi>`. Wspiera dynamiczne "
-"światła *jak i* okludery, *a tak że* i odbicia. Wymaga szybkiego wypalenia, "
-"które może zostać wykonane w edytorze lub w czasie działania programu(w tym "
-"także tego wyeksportowanego)."
+":ref:`Sondy GI oparte na wokselach <doc_using_voxel_gi>`. Obsługuje "
+"dynamiczne światła *oraz* dynamiczne okludery, jednocześnie obsługując "
+"odbicia. Wymaga szybkiego kroku zapiekania, który można wykonać w edytorze "
+"lub podczas działania gry (w tym w wyeksportowanym projekcie)."
 
 #: ../../docs/about/list_of_features.rst:314
 msgid ""
@@ -1801,27 +1830,27 @@ msgstr ""
 "dokładności."
 
 #: ../../docs/about/list_of_features.rst:333
-#, fuzzy
 msgid ""
 "When using the Forward+ renderer (default on desktop), reflection probes are "
 "rendered with clustered forward optimizations to decrease their individual "
 "cost. Clustered rendering also lifts any limits on the number of reflection "
 "probes that can be used on a mesh."
 msgstr ""
-"Kiedy używając backendu Forward+ (domyślny dla pulpitu), światła są "
-"renderowane przy użyciu grupowych optymalizacji aby zredukować ich "
-"indywidualny koszt. Grupowe renderowanie także podnosi każdy limit na liczbę "
-"świateł które mogły być użyte na siatce."
+"Podczas używania silnika renderującego Forward+ (domyślnego na komputerach "
+"stacjonarnych), sondy odbić są renderowane z optymalizacjami klastrowego "
+"forward, aby zmniejszyć ich indywidualny koszt. Renderowanie klastrowe znosi "
+"również wszelkie limity dotyczące liczby sond odbić, które mogą być użyte na "
+"siatce."
 
 #: ../../docs/about/list_of_features.rst:337
-#, fuzzy
 msgid ""
 "When using the Mobile renderer, up to 8 reflection probes can be displayed "
 "per mesh resource. When using the Compatibility renderer, up to 2 reflection "
 "probes can be displayed per mesh resource."
 msgstr ""
-"Podczas używania silnika Forward Mobile, do 8 próbników odbiciowych może być "
-"wyświetlonych na każdy zasób siatki."
+"Podczas używania silnika renderującego Mobile na jeden zasób siatki można "
+"wyświetlić do 8 sond odbić. Podczas używania silnika renderującego "
+"Compatibility na jeden zasób siatki można wyświetlić do 2 sond odbić."
 
 #: ../../docs/about/list_of_features.rst:341
 msgid "**Decals:**"
@@ -1875,26 +1904,25 @@ msgstr ""
 "wydajność."
 
 #: ../../docs/about/list_of_features.rst:352
-#, fuzzy
 msgid ""
 "When using the Forward+ renderer (default on desktop), decals are rendered "
 "with clustered forward optimizations to decrease their individual cost. "
 "Clustered rendering also lifts any limits on the number of decals that can "
 "be used on a mesh."
 msgstr ""
-"Kiedy używając backendu Forward+ (domyślny dla pulpitu), światła są "
-"renderowane przy użyciu grupowych optymalizacji aby zredukować ich "
-"indywidualny koszt. Grupowe renderowanie także podnosi każdy limit na liczbę "
-"świateł które mogły być użyte na siatce."
+"Podczas używania silnika renderującego Forward+ (domyślnego na komputerach "
+"stacjonarnych), kalkomanie są renderowane z optymalizacjami klastrowego "
+"forward, aby zmniejszyć ich indywidualny koszt. Renderowanie klastrowe znosi "
+"również wszelkie limity dotyczące liczby kalkomanii, które mogą być użyte na "
+"siatce."
 
 #: ../../docs/about/list_of_features.rst:355
-#, fuzzy
 msgid ""
 "When using the Mobile renderer, up to 8 decals can be displayed per mesh "
 "resource."
 msgstr ""
-"Podczas używania silnika Forward Mobile, do 8 próbników odbiciowych może być "
-"wyświetlonych na każdy zasób siatki."
+"Podczas używania silnika renderującego Mobile na jeden zasób siatki można "
+"wyświetlić do 8 kalkomanii."
 
 #: ../../docs/about/list_of_features.rst:358
 msgid "**Sky:**"
@@ -1967,7 +1995,7 @@ msgstr "Wsparcie dla ignorowania mgły przez wybrane materiały."
 
 #: ../../docs/about/list_of_features.rst:376
 msgid "**Volumetric fog:**"
-msgstr "**Mgła objętościowa:**"
+msgstr "**Mgła wolumetryczna:**"
 
 #: ../../docs/about/list_of_features.rst:378
 msgid ""
@@ -1991,9 +2019,9 @@ msgid ""
 "fog from specific areas). Supported shapes include box, ellipse, cone, "
 "cylinder, and 3D texture-based density maps."
 msgstr ""
-"Węzły objętości mgły, które mogą być rozmieszczane żeby dodać mgłę do danego "
-"miejsca (lub usunąć mgłę z danego miejsca). Wspierane kształty to: sześcian, "
-"elipsa, stożek, cylinder, oraz"
+"Węzły objętości mgły, które można umieszczać, żeby dodać mgłę w wybranych "
+"miejscach (lub ją z nich usunąć). Obsługiwane kształty to: prostopadłościan, "
+"elipsoida, stożek, walec oraz mapy gęstości oparte na teksturach 3D."
 
 #: ../../docs/about/list_of_features.rst:382
 msgid "Each fog volume can have its own custom shader."
@@ -2012,61 +2040,75 @@ msgid ""
 "GPU-based particles with support for subemitters (2D + 3D), trails (2D + "
 "3D), attractors (3D only) and collision (2D + 3D)."
 msgstr ""
+"Cząsteczki oparte na GPU z obsługą podemiterów (2D + 3D), smug (2D + 3D), "
+"atraktorów (tylko 3D) oraz kolizji (2D + 3D)."
 
 #: ../../docs/about/list_of_features.rst:390
 msgid ""
 "3D particle attractor shapes supported: box, sphere and 3D vector fields."
 msgstr ""
+"Obsługiwane kształty atraktorów cząsteczek 3D: prostopadłościan, kula oraz "
+"pola wektorowe 3D."
 
 #: ../../docs/about/list_of_features.rst:391
 msgid ""
 "3D particle collision shapes supported: box, sphere, baked signed distance "
 "field and real-time heightmap (suited for open world weather effects)."
 msgstr ""
+"Obsługiwane kształty kolizji cząsteczek 3D: prostopadłościan, kula, "
+"wypiekane pole odległości ze znakiem oraz mapa wysokości w czasie "
+"rzeczywistym (odpowiednia do efektów pogodowych w grach z otwartym światem)."
 
 #: ../../docs/about/list_of_features.rst:393
 msgid ""
 "2D particle collision is handled using a signed distance field generated in "
 "real-time based on :ref:`class_LightOccluder2D` nodes in the scene."
 msgstr ""
+"Kolizje cząsteczek 2D są obsługiwane za pomocą pola odległości ze znakiem, "
+"generowanego w czasie rzeczywistym na podstawie węzłów "
+":ref:`class_LightOccluder2D` w scenie."
 
 #: ../../docs/about/list_of_features.rst:395
 msgid ""
 "Trails can use the built-in ribbon trail and tube trail meshes, or custom "
 "meshes with skeletons."
 msgstr ""
+"Smugi mogą używać wbudowanych siatek smugi wstęgowej i smugi rurowej albo "
+"własnych siatek ze szkieletami."
 
 #: ../../docs/about/list_of_features.rst:397
 msgid "Support for custom particle shaders with manual emission."
-msgstr ""
+msgstr "Obsługa niestandardowych shaderów cząsteczek z ręczną emisją."
 
 #: ../../docs/about/list_of_features.rst:401
 msgid "**Post-processing:**"
 msgstr "**Post-processing:***"
 
 #: ../../docs/about/list_of_features.rst:403
-#, fuzzy
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES, AgX)."
-msgstr "Mapowanie tonów (liniowe, Reinharda, filmowe, ACES)."
+msgstr "Mapowanie tonów (Linear, Reinhard, Filmic, ACES, AgX)."
 
 #: ../../docs/about/list_of_features.rst:404
-#, fuzzy
 msgid ""
 "Automatic exposure adjustments based on viewport brightness (and manual "
 "exposure override)."
 msgstr ""
-"*GLES3:* Automatyczne dostosowanie ekspozycji bazujące na jasności ekranu."
+"Automatyczne dostosowanie ekspozycji na podstawie jasności viewportu (oraz "
+"ręczne nadpisanie ekspozycji)."
 
 #: ../../docs/about/list_of_features.rst:405
 msgid ""
 "Near and far depth of field with adjustable bokeh simulation (box, hexagon, "
 "circle)."
 msgstr ""
+"Głębia ostrości dla bliskiego i dalekiego planu z regulowaną symulacją bokeh "
+"(kwadrat, sześciokąt, koło)."
 
 #: ../../docs/about/list_of_features.rst:406
-#, fuzzy
 msgid "Screen-space ambient occlusion (SSAO) at half or full resolution."
-msgstr "*GLES3:* Okluzja otoczenia w przestrzeni ekranu (SSAO)."
+msgstr ""
+"Okluzja otoczenia w przestrzeni ekranu (SSAO) w połowie lub pełnej "
+"rozdzielczości."
 
 #: ../../docs/about/list_of_features.rst:407
 msgid ""
@@ -2080,21 +2122,26 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:409
 msgid "Glow can have a colored dirt map texture, acting as a lens dirt effect."
 msgstr ""
+"Poświata może mieć kolorową teksturę mapy zabrudzeń, która działa jak efekt "
+"zabrudzonej soczewki."
 
 #: ../../docs/about/list_of_features.rst:410
 msgid ""
 "Glow can be :ref:`used as a screen-space blur effect "
 "<doc_environment_and_post_processing_using_glow_to_blur_the_screen>`."
 msgstr ""
+"Poświata może być :ref:`używana jako efekt rozmycia w przestrzeni ekranu "
+"<doc_environment_and_post_processing_using_glow_to_blur_the_screen>`."
 
 #: ../../docs/about/list_of_features.rst:411
-#, fuzzy
 msgid "Color correction using a one-dimensional ramp or a 3D LUT texture."
-msgstr "Korekcja kolory wykorzystując jednowymiarową krzywą."
+msgstr "Korekcja kolorów z użyciem jednowymiarowej rampy lub tekstury 3D LUT."
 
 #: ../../docs/about/list_of_features.rst:412
 msgid "Roughness limiter to reduce the impact of specular aliasing."
 msgstr ""
+"Ogranicznik chropowatości, który zmniejsza wpływ aliasingu odbić "
+"zwierciadlanych."
 
 #: ../../docs/about/list_of_features.rst:413
 msgid "Brightness, contrast and saturation adjustments."
@@ -2109,48 +2156,48 @@ msgid "Nearest, bilinear, trilinear or anisotropic filtering."
 msgstr "Filtrowanie, bliskie, dwuliniowe, trójliniowe lub anizotropiczne."
 
 #: ../../docs/about/list_of_features.rst:418
-#, fuzzy
 msgid ""
 "Filtering options are defined on a per-use basis, not a per-texture basis."
-msgstr "Dithering można określić na podstawie co-piksel lub co-obiekt."
+msgstr ""
+"Opcje filtrowania są definiowane osobno dla każdego użycia, a nie dla każdej "
+"tekstury."
 
 #: ../../docs/about/list_of_features.rst:420
-#, fuzzy
 msgid "**Texture VRAM compression:**"
-msgstr "**Kompresja tekstur:**"
+msgstr "**Kompresja tekstur w VRAM:**"
 
 #: ../../docs/about/list_of_features.rst:422
-#, fuzzy
 msgid "BPTC (for high-quality compression targeting desktop platforms)."
-msgstr "BPTC dla wysokiej jakości kompresji (nie wspierane w systemie macOS)."
+msgstr ""
+"BPTC (dla kompresji wysokiej jakości, przeznaczonej na platformy desktopowe)."
 
 #: ../../docs/about/list_of_features.rst:423
-#, fuzzy
 msgid "ASTC (for high-quality compression targeting mobile platforms)."
-msgstr "BPTC dla wysokiej jakości kompresji (nie wspierane w systemie macOS)."
+msgstr ""
+"ASTC (dla kompresji wysokiej jakości, przeznaczonej na platformy mobilne)."
 
 #: ../../docs/about/list_of_features.rst:424
-#, fuzzy
 msgid "ETC2 (for fast compression targeting mobile platforms)."
-msgstr "S3TC (nie wspierane w platformach mobilnych oraz webowych)."
+msgstr "ETC2 (dla szybkiej kompresji, przeznaczonej na platformy mobilne)."
 
 #: ../../docs/about/list_of_features.rst:425
 msgid "S3TC (for fast compression targeting desktop platforms)."
-msgstr ""
+msgstr "S3TC (dla szybkiej kompresji, przeznaczonej na platformy desktopowe)."
 
 #: ../../docs/about/list_of_features.rst:426
 msgid ""
 "Basis Universal (slow, but only requires one encoding for all platforms)."
 msgstr ""
+"Basis Universal (powolna, ale wymaga tylko jednego kodowania dla wszystkich "
+"platform)."
 
 #: ../../docs/about/list_of_features.rst:428
-#, fuzzy
 msgid "**Antialiasing:**"
 msgstr "**Wygładzanie krawędzi:**"
 
 #: ../../docs/about/list_of_features.rst:430
 msgid "Temporal :ref:`antialiasing <doc_3d_antialiasing>` (TAA)."
-msgstr ""
+msgstr "­Czasowe :ref:`wygładzanie krawędzi <doc_3d_antialiasing>` (TAA)."
 
 #: ../../docs/about/list_of_features.rst:431
 msgid ""
@@ -2158,12 +2205,18 @@ msgid ""
 "<doc_3d_antialiasing>` (FSR2), which can be used at native resolution as a "
 "form of high-quality temporal antialiasing."
 msgstr ""
+"AMD FidelityFX Super Resolution 2.2 :ref:`wygładzanie krawędzi "
+"<doc_3d_antialiasing>` (FSR2), które można używać w natywnej rozdzielczości "
+"jako formy wysokiej jakości czasowego wygładzania krawędzi."
 
 #: ../../docs/about/list_of_features.rst:433
 msgid ""
 "Multi-sample antialiasing (MSAA), for both :ref:`doc_2d_antialiasing` "
 "and :ref:`doc_3d_antialiasing`."
 msgstr ""
+"Wielopróbkowe wygładzanie krawędzi (MSAA), dla :ref:`wygładzania krawędzi w "
+"2D <doc_2d_antialiasing>` i :ref:`wygładzania krawędzi w 3D "
+"<doc_3d_antialiasing>`."
 
 #: ../../docs/about/list_of_features.rst:434
 msgid "Fast approximate antialiasing (FXAA)."
@@ -2174,12 +2227,16 @@ msgid ""
 "Super-sample antialiasing (SSAA) using bilinear 3D scaling and a 3D "
 "resolution scale above 1.0."
 msgstr ""
+"Superpróbkowe wygładzanie krawędzi (SSAA) z użyciem dwuliniowego skalowania "
+"3D i skalą rozdzielczości 3D powyżej 1.0."
 
 #: ../../docs/about/list_of_features.rst:436
 msgid ""
 "Alpha antialiasing, MSAA alpha to coverage and alpha hashing on a per-"
 "material basis."
 msgstr ""
+"Wygładzanie krawędzi alfa, MSAA z alfa do pokrycia (alpha to coverage) i "
+"haszowanie alfa, ustawiane osobno dla każdego materiału."
 
 #: ../../docs/about/list_of_features.rst:438
 msgid "**Resolution scaling:**"
@@ -2192,6 +2249,10 @@ msgid ""
 "This can be used to improve performance on low-end systems or improve "
 "visuals on high-end systems."
 msgstr ""
+"Obsługa :ref:`renderowania 3D w niższej rozdzielczości "
+"<doc_resolution_scaling>` przy zachowaniu renderowania 2D w oryginalnej "
+"skali. Może to poprawić wydajność na słabszych systemach albo jakość obrazu "
+"na mocniejszych."
 
 #: ../../docs/about/list_of_features.rst:443
 msgid ""
@@ -2199,23 +2260,28 @@ msgid ""
 "FidelityFX Super Resolution 1.0 (FSR1), or AMD FidelityFX Super Resolution "
 "2.2.1 (FSR2)."
 msgstr ""
+"Skalowanie rozdzielczości korzysta z filtrowania najbliższego sąsiada, "
+"filtrowania dwuliniowego, AMD FidelityFX Super Resolution 1.0 (FSR1) albo "
+"AMD FidelityFX Super Resolution 2.2.1 (FSR2)."
 
 #: ../../docs/about/list_of_features.rst:446
 msgid ""
 "Texture mipmap LOD bias is adjusted automatically to improve quality at "
 "lower resolution scales. It can also be modified with a manual offset."
 msgstr ""
+"Odchylenie poziomu szczegółowości mipmap tekstur (LOD) jest dostosowywane "
+"automatycznie, aby poprawić jakość przy niższych skalach rozdzielczości. "
+"Można je też zmienić ręcznie, za pomocą przesunięcia."
 
 #: ../../docs/about/list_of_features.rst:449
-#, fuzzy
 msgid ""
 "Most effects listed above can be adjusted for better performance or to "
 "further improve quality. This can be helpful when :ref:`using Godot for "
 "offline rendering <doc_creating_movies>`."
 msgstr ""
-"Większość wymienionych wyżej efektów może być dostosowana by poprawić "
-"wydajność lub jakość grafiki. Może być to pomocne podczas używania Godota do "
-"renderowania offline."
+"Większość wymienionych wyżej efektów może zostać dostosowana, aby poprawić "
+"wydajność lub jeszcze bardziej poprawić jakość grafiki. Może to być pomocne "
+"podczas :ref:`renderowania offline w Godocie <doc_creating_movies>`."
 
 #: ../../docs/about/list_of_features.rst:454
 msgid "3D tools"
@@ -2232,6 +2298,8 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:457
 msgid ":ref:`GridMaps <doc_using_gridmaps>` for 3D tile-based level design."
 msgstr ""
+":ref:`GridMaps <doc_using_gridmaps>` do projektowania poziomów 3D opartych "
+"na kafelkach."
 
 #: ../../docs/about/list_of_features.rst:458
 msgid ""
@@ -2241,10 +2309,11 @@ msgstr ""
 ":ref:`Konstruktywna geometria <doc_csg_tools>` (przydatne prototypowaniu)."
 
 #: ../../docs/about/list_of_features.rst:459
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr ":ref:`Geometria generowana procedularnie <doc_procedural_geometry>`."
+msgstr ""
+"Narzędzia do :ref:`proceduralnego generowania geometrii "
+"<doc_procedural_geometry>`."
 
 #: ../../docs/about/list_of_features.rst:460
 msgid "Path3D node to represent a path in 3D space."
@@ -2257,9 +2326,8 @@ msgstr ""
 "(Ścieżka3D)."
 
 #: ../../docs/about/list_of_features.rst:465
-#, fuzzy
 msgid ":ref:`3D geometry helper class <class_Geometry3D>`."
-msgstr "Klasa pomocnicza geometrii 3D."
+msgstr ":ref:`Klasa pomocnicza geometrii 3D <class_Geometry3D>`."
 
 #: ../../docs/about/list_of_features.rst:466
 #, fuzzy
@@ -8765,7 +8833,7 @@ msgstr ""
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:78
 #, fuzzy
 msgid "Below is the 3D one:"
-msgstr "A tak dla okna 3D."
+msgstr "A tak dla okna 3D:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:82
 msgid ""

@@ -140,13 +140,15 @@
 # jumpei okazaki <pokegames1578@gmail.com>, 2026.
 # taisan11 <131413638+taisan11@users.noreply.github.com>, 2026.
 # AOKI Yuuto <aoki@u-ne.co>, 2026.
+# taiyaki32lp64 <matsudotaiyaki@gmail.com>, 2026.
+# meteor0w0 <125735487+meteor0w0@users.noreply.github.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-08-20 11:36+0200\n"
-"PO-Revision-Date: 2026-08-11 16:38+0000\n"
-"Last-Translator: ChocolaMint <peterconnected@gmail.com>\n"
+"PO-Revision-Date: 2026-09-27 11:53+0000\n"
+"Last-Translator: meteor0w0 <125735487+meteor0w0@users.noreply.github.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ja/>\n"
 "Language: ja\n"
@@ -154,7 +156,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -221,9 +223,8 @@ msgid "Class reference"
 msgstr "クラス リファレンス"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Godot Docs - *4.6* ブランチ"
+msgstr "Godot Docs - *master* ブランチ"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -272,10 +273,10 @@ msgid ""
 "read the :ref:`introduction page <doc_about_intro>` to get an overview of "
 "what this documentation has to offer."
 msgstr ""
-"`Godot Engine <https://godotengine.org>`__ の公式ドキュメントへようこそ。フ"
-"リーかつオープンソースで、コミュニティが運営する 2D/3D ゲームエンジンです！こ"
-"のドキュメントが初めての方は、 概要である\\ :ref:`『はじめに』のページ "
-"<doc_about_intro>`\\ を読まれることをおすすめします。"
+"`Godot Engine <https://godotengine.org>`__ の公式ドキュメントへようこそ。"
+"フリーかつオープンソースで、コミュニティが運営する 2D/3D ゲームエンジンです！"
+"このドキュメントが初めての方は、 概要である :ref:`『はじめに』のページ "
+"<doc_about_intro>` を読まれることをおすすめします。"
 
 #: ../../docs/index.rst:34
 msgid ""
@@ -612,7 +613,6 @@ msgstr ""
 "ています。"
 
 #: ../../docs/about/introduction.rst:83
-#, fuzzy
 msgid ""
 "**Community** is dedicated to the life of Godot's community and contains a "
 "list of recommended third-party tutorials and materials outside of this "
@@ -621,9 +621,9 @@ msgid ""
 "godotengine.org/community/>`_."
 msgstr ""
 "**コミュニティ** は Godot のコミュニティ活動に専念しており、このドキュメント"
-"外でも推奨されるサードパーティのチュートリアルと資料のリストが含まれていま"
-"す。そしてアセット ライブラリの詳細も提供します。また、以前は Godot コミュニ"
-"ティのリストも掲載されていましたが、現在は `Godot Webサイト <https://"
+"外でも推奨されるサードパーティのチュートリアルと資料のリストが含まれています"
+"。そしてアセット ストアの詳細も提供します。また、以前は Godot コミュニティの"
+"リストも掲載されていましたが、現在は `Godot Webサイト <https://"
 "godotengine.org/community/>`_ にリストされています。"
 
 #: ../../docs/about/introduction.rst:87
@@ -864,9 +864,8 @@ msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript\\ :ref:`デバッガー <doc_debugger_panel>`\\ 。"
 
 #: ../../docs/about/list_of_features.rst:76
-#, fuzzy
 msgid "Supports debugging in threads."
-msgstr "スレッドでのデバッグのサポートは4.2から利用できます。"
+msgstr "スレッドでのデバッグをサポートします。"
 
 #: ../../docs/about/list_of_features.rst:78
 msgid ""
@@ -973,7 +972,7 @@ msgstr "プロジェクトのインポート"
 
 #: ../../docs/about/list_of_features.rst:109
 msgid "Ruler tool to measure distances in 2D and 3D."
-msgstr ""
+msgstr "2Dと3Dで距離を測るための定規ツール。"
 
 #: ../../docs/about/list_of_features.rst:110
 msgid "Vertex snapping support in 3D."
@@ -998,13 +997,12 @@ msgid "**Plugins:**"
 msgstr "**プラグイン:**"
 
 #: ../../docs/about/list_of_features.rst:117
-#, fuzzy
 msgid ""
 "Editor plugins can be downloaded from the :ref:`Asset Store "
 "<doc_what_is_asset_store>` to extend editor functionality."
 msgstr ""
-":ref:`アセット ライブラリ <doc_what_is_assetlib>`\\ からエディタプラグインを"
-"ダウンロードして、エディタの機能を拡張することができます。"
+":ref:`アセットストア<doc_what_is_asset_store>` からエディタプラグインを"
+"ダウンロードして、エディタの機能を拡張できます。"
 
 #: ../../docs/about/list_of_features.rst:119
 msgid ""
@@ -1015,13 +1013,12 @@ msgstr ""
 "\\ :ref:`独自のプラグインを作成し<doc_making_plugins>`\\てください。"
 
 #: ../../docs/about/list_of_features.rst:121
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the Asset Store <doc_using_asset_store_editor>` "
 "in the Project Manager and import them directly."
 msgstr ""
-"プロジェクトマネージャーの :ref:`アセットライブラリからプロジェクトをダウン"
-"ロード <doc_using_assetlib_editor>` し、直接インポートします。"
+"プロジェクトマネージャーで :ref:`アセットストアからプロジェクトを"
+"ダウンロード <doc_using_asset_store_editor>` し、直接インポートします。"
 
 #: ../../docs/about/list_of_features.rst:125
 #: ../../docs/about/docs_changelog.rst:123
@@ -6323,14 +6320,12 @@ msgid "**Support level**"
 msgstr "**サポートレベル**"
 
 #: ../../docs/about/release_policy.rst:87
-#, fuzzy
 msgid "Godot 4.8 (`master`)"
-msgstr "Godot 4.5 (`master`)"
+msgstr "Godot 4.8 (`master`)"
 
 #: ../../docs/about/release_policy.rst:87
-#, fuzzy
 msgid "Q4 2026 (estimate)"
-msgstr "2025年 第3四半期 (予定)"
+msgstr "2026年 第4四半期 (予定)"
 
 #: ../../docs/about/release_policy.rst:87
 msgid ""
@@ -6345,14 +6340,12 @@ msgid "unstable"
 msgstr "不安定"
 
 #: ../../docs/about/release_policy.rst:90
-#, fuzzy
 msgid "Godot 4.7"
-msgstr "Godot 4.4"
+msgstr "Godot 4.7"
 
 #: ../../docs/about/release_policy.rst:90
-#, fuzzy
 msgid "June 2026"
-msgstr "2020年1月"
+msgstr "2026年6月"
 
 #: ../../docs/about/release_policy.rst:90
 #: ../../docs/about/release_policy.rst:93
@@ -6369,24 +6362,20 @@ msgid "supported"
 msgstr "サポート"
 
 #: ../../docs/about/release_policy.rst:93
-#, fuzzy
 msgid "Godot 4.6"
-msgstr "Godot 4.4"
+msgstr "Godot 4.6"
 
 #: ../../docs/about/release_policy.rst:93
-#, fuzzy
 msgid "January 2026"
-msgstr "2020年1月"
+msgstr "2026年1月"
 
 #: ../../docs/about/release_policy.rst:96
-#, fuzzy
 msgid "Godot 4.5"
-msgstr "Godot 4.4"
+msgstr "Godot 4.5"
 
 #: ../../docs/about/release_policy.rst:96
-#, fuzzy
 msgid "September 2025"
-msgstr "2024年9月"
+msgstr "2025年9月"
 
 #: ../../docs/about/release_policy.rst:96
 msgid "|partial| Receives fixes for security and platform support issues only."
@@ -6407,9 +6396,8 @@ msgid "March 2025"
 msgstr "2025年3月"
 
 #: ../../docs/about/release_policy.rst:98
-#, fuzzy
 msgid "|eol| No longer supported (last update: 4.4.1)."
-msgstr "|eol| サポート終了 (最後のアップデート: 2.0.4.1)。"
+msgstr "|eol| サポート終了 (最後のアップデート: 4.4.1)。"
 
 #: ../../docs/about/release_policy.rst:137
 msgid "eol"
@@ -6424,9 +6412,8 @@ msgid "August 2024"
 msgstr "2024年8月"
 
 #: ../../docs/about/release_policy.rst:100
-#, fuzzy
 msgid "|eol| No longer supported (last update: 4.3)."
-msgstr "|eol| サポート終了 (最後のアップデート: 4.1.4)。"
+msgstr "|eol| サポート終了 (最後のアップデート: 4.3)。"
 
 #: ../../docs/about/release_policy.rst:102
 msgid "Godot 4.2"
@@ -6437,9 +6424,8 @@ msgid "November 2023"
 msgstr "2023年11月"
 
 #: ../../docs/about/release_policy.rst:102
-#, fuzzy
 msgid "|eol| No longer supported (last update: 4.2.2)."
-msgstr "|eol| サポート終了 (最後のアップデート: 4.1.4)。"
+msgstr "|eol| サポート終了 (最後のアップデート: 4.2.2)。"
 
 #: ../../docs/about/release_policy.rst:104
 msgid "Godot 4.1"
@@ -6498,9 +6484,8 @@ msgid "August 2022"
 msgstr "2022年8月"
 
 #: ../../docs/about/release_policy.rst:114
-#, fuzzy
 msgid "|eol| No longer supported (last update: 3.5.3)."
-msgstr "|eol| サポート終了 (最後のアップデート: 3.2.3)。"
+msgstr "|eol| サポート終了 (最後のアップデート: 3.5.3)。"
 
 #: ../../docs/about/release_policy.rst:116
 msgid "Godot 3.4"
@@ -8236,11 +8221,11 @@ msgid ""
 "`desktop application <https://gdquest.itch.io/learn-godot-gdscript>`__ or "
 "`in the browser <https://gdquest.github.io/learn-gdscript>`__."
 msgstr ""
-"GDQuestの *Learn GDScript From Zero* は完全な初心者がGodotのGDScript言語によ"
-"るプログラムを学ぶための無料かつオープンソースのインタラクティブチュートリア"
-"ルです。 `デスクトップアプリケーション <https://gdquest.itch.io/learn-godot-"
-"gdscript>`_ または `ブラウザ上で <https://gdquest.github.io/learn-"
-"gdscript>`_ 利用できます。"
+"GDQuestの *Learn GDScript From Zero* （ゼロから学ぶGDScript）は、完全な初心者"
+"がGodotのGDScript言語によるプログラムを学ぶための無料かつオープンソースの対話"
+"型チュートリアルです。 `デスクトップアプリケーション <https://"
+"gdquest.itch.io/learn-godot-gdscript>`_ または `ブラウザ上で <https://"
+"gdquest.github.io/learn-gdscript>`_ 利用できます。"
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:117
 msgid ""
@@ -8306,9 +8291,9 @@ msgid ""
 "complete beginner course with interactive practices you can do right in your "
 "browser."
 msgstr ""
-"GDScript の学習に、アプリ「0から学ぶ GDScript」を使用できます。これは、完全な"
-"初心者向けコースで、ブラウザ上で直接実行できるインタラクティブな練習項目を備"
-"えています。"
+"GDScript の学習に、アプリ「ゼロから学ぶ GDScript」を使用できます。これは、完"
+"全な初心者向けコースで、ブラウザ上で直接実行できる対話型の練習項目を備えてい"
+"ます。"
 
 #: ../../docs/getting_started/introduction/learn_to_code_with_gdscript.rst:28
 msgid "Click here to access the app: `Learn GDScript From Zero app`_"
@@ -8356,7 +8341,6 @@ msgid "Scenes"
 msgstr "シーン"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:24
-#, fuzzy
 msgid ""
 "In Godot, you break down your game into reusable scenes. A scene can be a "
 "character, a weapon, a menu in the user interface, a single house, an entire "
@@ -8365,8 +8349,8 @@ msgid ""
 msgstr ""
 "Godot では、ゲームを再利用可能なシーンに分割します。シーンは、キャラクター、"
 "武器、ユーザーインターフェースのメニュー、個々の建物、レベル全体など、考えら"
-"れるあらゆるものに成り得ます。Godot のシーンはフレキシブルであり、他のゲーム"
-"エンジンでいうプレハブとシーン両方の役割を果たします。"
+"れるあらゆるものに成り得ます。Godot のシーンは柔軟で、他のゲームエンジンでい"
+"うプレハブとシーン両方の役割を果たします。"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:31
 msgid ""
@@ -8426,15 +8410,14 @@ msgstr ""
 "からは内部構造が見えなくなります。"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:56
-#, fuzzy
 msgid ""
 "Godot provides an extensive library of base node types you can combine and "
 "extend to build more powerful ones. You'll use these nodes for most things "
 "you build, whether that's 2D, 3D, or UI."
 msgstr ""
-"Godotエンジンでは広範囲のタイプの基本ノードを提供しており、組み合わせたり、拡"
-"張してよりパワフルなものを作ったりすることが出来ます。2D、3D、UIなど、たいて"
-"いのものを基本ノードで表現できます。"
+"Godotエンジンでは広範囲のタイプの基本ノードを提供しており、組み合わせたり拡張"
+"したりして、よりパワフルなものを作れます。これらを使って、2D、3D、UIなど、た"
+"いていのものを表現できます。"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:63
 #: ../../docs/engine_details/file_formats/tscn.rst:97
@@ -8534,14 +8517,12 @@ msgstr ""
 "ントに反応させるために、シグナルを使うことが出来ます。"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:105
-#, fuzzy
 msgid ""
 "After this short breakdown, you probably have many questions. Bear with us "
 "as you will get many answers throughout the Getting Started series."
 msgstr ""
-"この短い概要を読んだことで、たくさんの疑問が浮かんでいるかもしれません。この"
-"「はじめに」シリーズを通して多くの答えが得られると思いますので、もう少しお付"
-"き合いください。"
+"この短い概要を読んで、たくさんの疑問があるかもしれません。この「はじめに」"
+"シリーズで多くの答えが得られると思いますので、もう少しお付き合いください。"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:10
 msgid "First look at Godot's interface"
@@ -8818,30 +8799,27 @@ msgstr ""
 "であり、ゲームが停止するとここでの変更は保存されないことに注意してください。"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:147
-#, fuzzy
 msgid ""
 "The **Script screen** is a complete code editor with a debugger, rich auto-"
 "completion, and built-in class reference."
 msgstr ""
-"**スクリプト画面** ではオートコンプリートと組み込みのコードリファレンス、デ"
-"バッガーを備えた、完全なコードエディタが使用できます。"
+"**スクリプト画面** は、デバッガー、オートコンプリート、組み込みクラスの"
+"リファレンスを完備したコードエディタです。"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:152
-#, fuzzy
 msgid ""
 "Finally, the **Asset Store** is a repository of user-submitted addons, "
 "scripts, tools, and other resources to use in your projects."
 msgstr ""
-"最後に、 **アセットライブラリ** はあなたのプロジェクトで使えるフリーでオープ"
-"ンソースのアドオン、スクリプト、アセットのライブラリです。"
+"最後に、 **アセットストア** はユーザーが投稿したアドオン、スクリプト、ツール"
+"、その他の、あなたのプロジェクトで使えるリソースのレポジトリです。"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:159
-#, fuzzy
 msgid ""
 "You can learn more about the Asset Store in ref:`doc_what_is_asset_store`."
 msgstr ""
-"アセットライブラリーの詳細については、\\ :ref:`doc_what_is_assetlib` を参照し"
-"てください。"
+"アセットストアの詳細については、 ref:`doc_what_is_asset_store` を参照してくだ"
+"さい。"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:164
 msgid "Integrated class reference"
@@ -8907,13 +8885,12 @@ msgid "Alternatively,"
 msgstr "代替アプローチ"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:191
-#, fuzzy
 msgid ""
 "Clicking while pressing :kbd:`Ctrl` (:kbd:`Cmd` on macOS) on a class name, "
 "function name, or built-in variable in the script editor."
 msgstr ""
-"スクリプトエディター内で、クラス名、関数名、または組み込み変数を :kbd:`Ctrl` "
-"キーを押しながらクリックします。"
+"スクリプトエディター内で、 :kbd:`Ctrl` キー（macOSでは :kbd:`Cmd` ）を押しな"
+"がらクラス名、関数名、または組み込み変数をクリックします。"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:193
 msgid ""
@@ -8930,16 +8907,15 @@ msgid "Learning new features"
 msgstr "新しい機能を学ぶには"
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:10
-#, fuzzy
 msgid ""
 "Godot is a feature-rich game engine. There is a lot to learn about it. This "
 "page explains how you can use the online manual, built-in class reference, "
 "and join online communities to learn new features and techniques."
 msgstr ""
 "Godotは、機能豊富なゲームエンジンです。そのため、学ぶべきことがたくさんありま"
-"す。このページでは、新しい機能やテクニックを学ぶために、オンライン・マニュア"
-"ルや内蔵のコード・リファレンスを利用したり、オンライン・コミュニティに参加す"
-"る方法を説明します。"
+"す。このページでは、新しい機能やテクニックを学ぶために、オンライン・"
+"マニュアルや組み込みクラスのリファレンスを利用したり、オンライン・"
+"コミュニティに参加する方法を説明します。"
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:15
 msgid "Making the most of this manual"
@@ -9443,10 +9419,10 @@ msgid ""
 "shader editor, a debugger, a profiler, the ability to hot-reload locally and "
 "on remote devices, etc."
 msgstr ""
-"Godotは最も一般的なニーズに答えるために、備えているツールを提供しようとしま"
-"す。専用のスクリプトワークスペース、アニメーションエディタ、タイルマップエ"
-"ディタ、シェーダエディタ、デバッガー、プロファイラー、ローカルおよびリモート"
-"デバイス上でのホットリロードなどが可能です。"
+"Godotは、よくあるニーズに対応できるように独自のツールを提供しています。専用の"
+"スクリプト ワークスペース、アニメーション エディタ、タイルマップ エディタ、"
+"シェーダ エディタ、デバッガー、プロファイラー、ローカルおよびリモートデバイス"
+"上でのホットリロードなどが可能です。"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:75
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:369
@@ -9479,8 +9455,8 @@ msgid ""
 "import plugin available in Godot for it."
 msgstr ""
 "目標は、ゲーム作成のための完全なパッケージと継続的なユーザーエクスペリエンス"
-"を提供することです。Godot にインポートプラグインが用意されている限り、外部プ"
-"ログラムとの連携も可能です。"
+"を提供することです。Godot にインポートプラグインが用意されていれば、外部"
+"プログラムとの連携も可能です。"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:81
 msgid ""
@@ -9500,9 +9476,9 @@ msgid ""
 "Colors."
 msgstr ""
 "GDScriptでは、インデントベースの構文を使ってコードを書くことができ、しかも型"
-"を検出して静的型付け言語並の品質のオートコンプリートを提供します。また、ベク"
-"ターやカラーなどの組み込み型を使ったゲーム開発用のコードに最適化されていま"
-"す。"
+"を検出して静的型付け言語並の品質のオートコンプリートを提供します。また、"
+"Vector (ベクトル) や Color (色) などの組み込み型を使ったゲーム開発用のコード"
+"に最適化されています。"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:90
 msgid ""
@@ -9525,8 +9501,8 @@ msgstr ""
 "3Dワークスペースには、2Dワークスペースほど多くのツールはありません。地形を編"
 "集したり、複雑なキャラクターをアニメーション化したりするには、外部プログラム"
 "やアドオンが必要です。Godotは、ゲームコードを使用してエディタの機能を拡張する"
-"ための完全なAPIを提供しています。下の `The Godot editor is a Godot game`_ を"
-"参照してください。"
+"ための完全なAPIを提供しています。後述の `Godotエディタ自身がGodotのゲーム "
+"<The Godot editor is a Godot game>`_ を参照してください。"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:99
 msgid "Open source"
@@ -9682,10 +9658,10 @@ msgid ""
 "can render 2D in 3D, 3D in 2D, and overlay 2D sprites and interfaces over "
 "your 3D world."
 msgstr ""
-"Godotには2Dと3Dでそれぞれ別の描写エンジンを搭載しています。その結果、\\ **2D"
-"シーンの基本単位はピクセルです。**\\ 描写エンジンは分離していますが、3D内で2D"
-"レンダーも、2D内で3Dレンダーも、3Dワールドの画面に2Dスプライトやインター"
-"フェースをオーバーレイすることもできます。"
+"Godotには2Dと3Dでそれぞれ別の描画エンジンを搭載しています。そのため、\\ **2D"
+"シーンの基本単位はピクセルになります。**\\ 描画エンジンは分離していますが、3D"
+"内で2D描画することも、2D内で3D描画することも、3Dワールドに2Dのスプライトや"
+"インターフェースを重ねて描画することもできます。"
 
 #: ../../docs/getting_started/step_by_step/index.rst:8
 msgid ""
@@ -9762,7 +9738,6 @@ msgid "You can add them to another node as a child."
 msgstr "別のノードを子として追加できます。"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:30
-#, fuzzy
 msgid ""
 "The last characteristic is important. **Together, nodes form a tree**, which "
 "is a powerful feature to organize projects. Since different nodes have "
@@ -9772,13 +9747,13 @@ msgid ""
 "<class_Sprite2D>` node, a :ref:`Camera2D <class_Camera2D>` node, and "
 "a :ref:`CollisionShape2D <class_CollisionShape2D>` node."
 msgstr ""
-"最後の特性が重要です。 **ノードは集まってツリーを形成します** 。これは、プロ"
-"ジェクトを構成するための強力な機能です。 異なるノードには異なる機能があるた"
-"め、それらを組み合わせるとより複雑な動作が実現できます。 前に説明したように、"
-"カメラが追従するプレイアブルキャラクターを、 :ref:`CharacterBody2D "
-"<class_CharacterBody2D>` ノード、 :ref:`Sprite2D <class_Sprite2D>` ノー"
-"ド、 :ref:`Camera2D <class_Camera2D>` ノード、および :ref:`CollisionShape2D "
-"<class_CollisionShape2D>` ノードを使って作成することができます。"
+"最後の特性が重要です。 **ノードを組み合わせることで、ツリーを形成できます** "
+"。これは、プロジェクトを構成するための強力な機能になります。 異なるノードには"
+"異なる機能があるため、組み合わせるとより複雑な動作を実現できます。 前に説明し"
+"たように、カメラが追従する操作可能なキャラクターを作成するには、 "
+":ref:`CharacterBody2D <class_CharacterBody2D>` ノード、 :ref:`Sprite2D "
+"<class_Sprite2D>` ノード、 :ref:`Camera2D <class_Camera2D>` ノード、および "
+":ref:`CollisionShape2D <class_CollisionShape2D>` ノードを使えます。"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:42
 msgid ""
@@ -141347,11 +141322,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:16
-#, fuzzy
 msgid ""
 "Optional: Publish on the `Godot Asset Store <https://store.godotengine.org/"
 ">`__."
-msgstr "`Godot Asset Library <https://godotengine.org/asset-library/asset>`_"
+msgstr ""
+"オプション: `Godotアセットストア <https://store.godotengine.org/>`__ で公開す"
+"る。"
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:21
 msgid ""
@@ -175372,13 +175348,12 @@ msgid "Installing the vendors plugin"
 msgstr "外部プラグインのインストール"
 
 #: ../../docs/tutorials/xr/deploying_to_android.rst:44
-#, fuzzy
 msgid ""
 "The vendors plugin can be downloaded from the Asset Store, search for "
 "\"OpenXR vendors\"."
 msgstr ""
-":ref:`アセット ライブラリ <doc_what_is_assetlib>`\\ からエディタプラグインを"
-"ダウンロードして、エディタの機能を拡張することができます。"
+"ベンダープラグインをアセットストアからダウンロードできます。「OpenXR vendors"
+"」を検索して下さい。"
 
 #: ../../docs/tutorials/xr/deploying_to_android.rst:49
 #, fuzzy
@@ -200444,17 +200419,14 @@ msgstr ""
 "られるので、適切な変更を加えて再度アセットの提出をすることも可能です。"
 
 #: ../../docs/community/asset_store/index.rst:4
-#, fuzzy
 msgid "Asset Store"
-msgstr "Assertキーワード"
+msgstr "アセットストア"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:4
-#, fuzzy
 msgid "About the Asset Store"
-msgstr "アセットライブラリについて"
+msgstr "アセットストアについて"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:9
-#, fuzzy
 msgid ""
 "The Godot Asset Store is a repository of user-submitted Godot addons, "
 "scripts, tools, and other resources, collectively referred to as assets. "
@@ -200462,21 +200434,19 @@ msgid ""
 "engine, but can also be accessed at Godot's `official website <https://"
 "store.godotengine.org>`_."
 msgstr ""
-"GodotアセットライブラリはAssetLibとも呼ばれ、ユーザーが送信したアセットのリポ"
-"ジトリです。Godotアドオン、スクリプト、ツール、その他のリソースをまとめてア"
-"セットと呼びます。エンジン内からすべてのGodotユーザーが直接ダウンロードでき、"
-"Godotの `公式webサイト <https://godotengine.org/asset-library/asset>`_ からも"
-"アクセスできます。"
+"Godotアセットストアは、ユーザーが送信したアセットのリポジトリです。Godot"
+"アドオン、スクリプト、ツール、その他のリソースをまとめてアセットと呼びます。"
+"すべてのGodotユーザーはエンジン内から直接ダウンロードできますし、Godotの `公"
+"式webサイト <https://store.godotengine.org>`_ からもアクセスできます。"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:14
-#, fuzzy
 msgid ""
 "This set of pages will cover how to use the Asset Store (both from inside "
 "Godot, and on the website), how you can submit your own assets, and what the "
 "guidelines for submission are."
 msgstr ""
-"この一連のページでは、AssetLibの使用方法(Godot内とWebサイトの両方)、独自のア"
-"セットの送信方法、および送信のガイドラインについて説明します。"
+"この一連のページでは、アセットストアの使用方法(Godot内とWebサイトの両方)、あ"
+"なた独自のアセットの送信方法、および送信のガイドラインについて説明します。"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:18
 msgid ""
@@ -200485,40 +200455,38 @@ msgid ""
 "currently private, you can however submit bug reports and discuss new "
 "features `here <https://github.com/godotengine/godot-asset-store-tracker>`_."
 msgstr ""
+"現在、アセットストアはベータ版であることにご注意ください。様々な不具合やバグ"
+"、使い勝手の問題が含まれている可能性があります。現在、ストア自体のコードは非"
+"公開ですが、バグ報告や新機能に関する議論は `こちら <https://github.com/"
+"godotengine/godot-asset-store-tracker>`_ で行えます。"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:25
-#, fuzzy
 msgid "There are, broadly, two different types of assets you can post."
-msgstr ""
-"投稿できるアセットには、大きく分けて2つのタイプがあることに注意してください。"
+msgstr "投稿できるアセットには、大きく分けて2つのタイプがあります。"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:27
-#, fuzzy
 msgid ""
 "Assets labeled as \"Templates\" appear under the \"Asset Store\" tab in the "
 "Godot Project Manager. These assets are standalone Godot projects that can "
 "run by themselves."
 msgstr ""
-"\"Templates\"、\"Projects\"、または\"Demos\"というラベルの付いたアセットは、"
-"Godotプロジェクトマネージャーの[Asset Library Projects]タブの下に表示されま"
-"す。これらのアセットは、単独で実行できるスタンドアロンのGodotプロジェクトで"
-"す。"
+"\"Templates\" というラベルの付いたアセットは、Godotプロジェクトマネージャーの"
+"「アセットストア」タブの下に表示されます。これらのアセットは、単独で実行でき"
+"るスタンドアロンのGodotプロジェクトです。"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:31
-#, fuzzy
 msgid ""
 "Other assets show up inside the Godot editor under the \"Asset Store\" main "
 "screen tab, next to \"2D\", \"3D\", and \"Script\". These assets are meant "
 "to be downloaded and placed into an existing Godot project."
 msgstr ""
-"他のアセットは、Godotエディタの[2D]、[3D]、および[Script]の横の[AssetLib]メイ"
-"ン画面タブの下に表示されるます。これらのアセットは、ダウンロードして既存の"
-"Godotプロジェクトに配置することを目的としています。"
+"他のアセットはGodotエディタ中の、[2D]、[3D]、[Script]の横にある"
+"、[アセットストア]メイン画面タブの下に表示されます。これらのアセットは、"
+"ダウンロードして既存のGodotプロジェクトに配置することを目的としています。"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:36
-#, fuzzy
 msgid "The old Asset library"
-msgstr "アセットライブラリ"
+msgstr "旧アセットライブラリ"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:38
 msgid ""
@@ -200527,11 +200495,14 @@ msgid ""
 "new Asset Store automatically. All authors must re-upload their assets to "
 "the new store."
 msgstr ""
+"アセットストアは、アセットライブラリの後継です。今のところは、ライブラリも"
+"オンラインでありアクセス可能です。アセットは新しいアセットストアに自動的に移"
+"動されて **いません** 。すべての作者はアセットを新しいストアに再アップロード"
+"する必要があります。"
 
 #: ../../docs/community/asset_store/using_asset_store_website.rst:4
-#, fuzzy
 msgid "Using the Asset Store Website"
-msgstr "AssetLibライブラリの使用"
+msgstr "アセットストア ウェブサイトの使用"
 
 #: ../../docs/community/asset_store/using_asset_store_website.rst:9
 #, fuzzy
@@ -200579,17 +200550,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/using_asset_store_website.rst:51
-#, fuzzy
 msgid ""
 "In order to upload assets to the Asset Store, leave reviews on assets, and "
 "report assets, you need to login. You do **not** need to be logged in to "
 "browse and download the assets."
 msgstr ""
-"AssetLibにアセットをアップロードするには、ログインする必要があります。ログイ"
-"ンするには、登録済みのユーザーアカウントが必要です。将来的には、これにより、"
-"既存のアセットに対するコメントや評価など、他の機能にアクセスできるようになる"
-"可能性もあります。アセットを参照およびダウンロードするためにログインする必要"
-"はありません。"
+"アセットストアにアセットをアップロードしたり、レビューをしたり、レポートをし"
+"たりするには、ログインする必要があります。アセットを参照やダウンロードするに"
+"は、ログインする 必要は **ありません** 。"
 
 #: ../../docs/community/asset_store/using_asset_store_website.rst:55
 msgid ""
@@ -200605,14 +200573,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/using_in_editor.rst:4
-#, fuzzy
 msgid "Using the Asset Store in the Engine"
-msgstr "エンジン内のスクリプトの働き"
+msgstr "アセットストアをエンジン内から使用"
 
 #: ../../docs/community/asset_store/using_in_editor.rst:7
-#, fuzzy
 msgid "Accessing it"
-msgstr "フィールドへのアクセス"
+msgstr "アクセスするには"
 
 #: ../../docs/community/asset_store/using_in_editor.rst:9
 #, fuzzy
@@ -200656,9 +200622,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/using_in_editor.rst:29
-#, fuzzy
 msgid "Downloading and installing assets"
-msgstr "デモとテンプレートのダウンロード"
+msgstr "アセットのダウンロードとインストール"
 
 #: ../../docs/community/asset_store/using_in_editor.rst:31
 #, fuzzy
@@ -200749,9 +200714,8 @@ msgstr ""
 "同じパッケージインストール手順が実行されます。"
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:4
-#, fuzzy
 msgid "Submitting to the Asset Store"
-msgstr "アセットライブラリへの送信"
+msgstr "アセットストアへの送信"
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:9
 #, fuzzy
@@ -201233,7 +201197,6 @@ msgstr ""
 "初心者にはやさしい入門書としてよく勧められています。"
 
 #: ../../docs/community/tutorials.rst:18
-#, fuzzy
 msgid ""
 "GDQuest's *Learn GDScript From Zero* is a free and open source interactive "
 "tutorial for absolute beginners to learn to program with Godot's GDScript "
@@ -201241,11 +201204,11 @@ msgid ""
 "learn-godot-gdscript>`__  or `in the browser <https://gdquest.github.io/"
 "learn-gdscript>`__."
 msgstr ""
-"GDQuestの *Learn GDScript From Zero* は完全な初心者がGodotのGDScript言語によ"
-"るプログラムを学ぶための無料かつオープンソースのインタラクティブチュートリア"
-"ルです。 `デスクトップアプリケーション <https://gdquest.itch.io/learn-godot-"
-"gdscript>`_  または `ブラウザ上で <https://gdquest.github.io/learn-"
-"gdscript>`_ 利用できます。"
+"GDQuestの *Learn GDScript From Zero* （ゼロから学ぶGDScript）は完全な初心者が"
+"GodotのGDScript言語によるプログラムを学ぶための無料かつオープンソースの対話型"
+"のチュートリアルです。 `デスクトップアプリケーション <https://"
+"gdquest.itch.io/learn-godot-gdscript>`_ または `ブラウザ上で <https://"
+"gdquest.github.io/learn-gdscript>`_ 利用できます。"
 
 #: ../../docs/community/tutorials.rst:20
 msgid ""

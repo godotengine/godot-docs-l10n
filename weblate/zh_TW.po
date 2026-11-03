@@ -80,13 +80,14 @@
 # "Chen,Wei-Ting" <benson94879453@gmail.com>, 2026.
 # ELEPOT <elepotmail0@gmail.com>, 2026.
 # 李奕寯 <eugenelego88@gmail.com>, 2026.
+# 鄭凱元 <kevin4312cpes@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-08-20 11:36+0200\n"
-"PO-Revision-Date: 2026-08-04 06:24+0000\n"
-"Last-Translator: 李奕寯 <eugenelego88@gmail.com>\n"
+"PO-Revision-Date: 2026-10-05 00:29+0000\n"
+"Last-Translator: 鄭凱元 <kevin4312cpes@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/godot-engine/godot-docs/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -94,7 +95,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.8.1.dev0\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -23759,7 +23760,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/game_embedding.rst:174
 msgid "Show list of selectable nodes at position clicked"
-msgstr ""
+msgstr "顯示在點擊位置的可選節點列表"
 
 #: ../../docs/tutorials/editor/game_embedding.rst:178
 msgid ""
@@ -23767,6 +23768,8 @@ msgid ""
 "clicked. This is useful when multiple nodes are overlapping and you want to "
 "select a specific one. When enabling this option, select mode is disabled."
 msgstr ""
+"和在編輯器中相似，這會在點擊位置顯示一個可選節點列表。此功能在你想要從多個重"
+"疊的節點裡選擇其中一個時十分實用。啟用此選項時，選擇模式會被停用。"
 
 #: ../../docs/tutorials/editor/game_embedding.rst:183
 msgid "Toggle selection visibility"
@@ -37056,7 +37059,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:241
 msgid "**Lighting and shadow resolution in pixel-art games**"
-msgstr ""
+msgstr "**像素藝術遊戲中的光照與陰影解析度**"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:243
 msgid ""
@@ -37074,6 +37077,9 @@ msgid ""
 "samples textures — it does not change how the engine renders lighting and "
 "shadows."
 msgstr ""
+"如果你製作的是像素藝術遊戲，並且希望對光照與陰影加入像素化或塊狀化效果以符合"
+"你的藝術風格，你 **無法** 使用 **最近鄰** 紋理過濾實現此效果。最近鄰紋理過濾"
+"僅影響引擎採樣紋理的方式，不會改變引擎算繪光照與陰影的方式。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:253
 msgid ""
@@ -111160,7 +111166,7 @@ msgstr ""
 msgid ""
 "Disable the preview environment by clicking the globe icon at the top of the "
 "3D editor viewport."
-msgstr ""
+msgstr "點擊3D編輯器檢視區上方的地球圖標以停用預覽環境。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:107
 msgid ""
@@ -113359,6 +113365,8 @@ msgid ""
 "it. Although linear interpolation is described here for simplicity, Godot "
 "itself may use different, more complex forms of interpolation."
 msgstr ""
+"無需過度糾結於數學計算，因為引擎會幫你自動處理大部分的計算。這裡我們為簡單起"
+"見而說明了線性插值法，但Godot本身可能會使用更複雜的不同插值方式。"
 
 #: ../../docs/tutorials/physics/interpolation/physics_interpolation_introduction.rst:123
 msgid "The physics interpolation fraction"
@@ -198832,7 +198840,7 @@ msgstr ""
 
 #: ../../docs/engine_details/development/profiling/tracy.rst:110
 msgid "Right click and drag to move forward/backward on the timeline"
-msgstr ""
+msgstr "右鍵點擊並拖曳以在時間軸上向前或向後移動"
 
 #: ../../docs/engine_details/development/profiling/tracy.rst:111
 msgid ""
@@ -202008,7 +202016,7 @@ msgstr "通用編輯器動作"
 
 #: ../../docs/community/asset_store/faq.rst:10
 msgid "I found a bug in the store website, where do I report it?"
-msgstr ""
+msgstr "我在商店官網上發現了一個Bug，應該到哪裡報告呢？"
 
 #: ../../docs/community/asset_store/faq.rst:12
 #, fuzzy
@@ -202035,7 +202043,7 @@ msgstr ""
 #: ../../docs/community/asset_store/faq.rst:20
 msgid ""
 "How do I report an asset for theft/copyright infringement/malicious code?"
-msgstr ""
+msgstr "我應如何報告被盜用、侵權或包含惡意代碼的素材？"
 
 #: ../../docs/community/asset_store/faq.rst:22
 msgid ""
@@ -202133,19 +202141,23 @@ msgstr ""
 
 #: ../../docs/community/asset_store/faq.rst:74
 msgid "Can I upload AI generated assets or code?"
-msgstr ""
+msgstr "我可以上傳AI生成的素材或程式碼嗎？"
 
 #: ../../docs/community/asset_store/faq.rst:76
 msgid ""
 "Yes, however you must disclose what is AI generated, and how AI was used "
 "during the creation process when submitting the asset."
 msgstr ""
+"可以，但你必須在提交素材時公開說明哪些部分是AI生成的，以及你在製作過程中如何"
+"使用AI。"
 
 #: ../../docs/community/asset_store/faq.rst:79
 msgid ""
 "\"AI\" refers to any LLM/generative AI model like ChatGPT, Claude, Grok, "
 "etc., or any other models that fulfill the same role."
 msgstr ""
+"「AI」指代任何大型語言模型（LLM）或生成式AI模型（如ChatGPT、Claude、Grok等）"
+"，或其他功能相同的模型。"
 
 #: ../../docs/community/asset_store/faq.rst:82
 msgid ""

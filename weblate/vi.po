@@ -43,13 +43,14 @@
 # Orus Or <orus3732@gmail.com>, 2025.
 # Nguyen Ngoc Thai <thaidev247@gmail.com>, 2026.
 # Maximilian Schönl <maximilianschonl793@gmail.com>, 2026.
+# xanhAD <tnhuthao919@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-08-20 11:36+0200\n"
-"PO-Revision-Date: 2026-02-28 21:10+0000\n"
-"Last-Translator: Maximilian Schönl <maximilianschonl793@gmail.com>\n"
+"PO-Revision-Date: 2026-10-17 07:51+0000\n"
+"Last-Translator: xanhAD <tnhuthao919@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/vi/>\n"
 "Language: vi\n"
@@ -57,7 +58,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.16.1-dev\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -124,9 +125,8 @@ msgid "Class reference"
 msgstr "Tham khảo Class"
 
 #: ../../docs/index.rst:4
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Tài liệu Godot - nhánh *4.6*"
+msgstr "Tài liệu Godot - nhánh *4.7*"
 
 #: ../../docs/index.rst:8
 msgid ""
@@ -224,15 +224,11 @@ msgid ""
 "language, or talk to us on the ``#documentation`` channel on the `Godot "
 "Contributors Chat <https://chat.godotengine.org/>`_!"
 msgstr ""
-":abbr:`Gửi báo cáo sự cố (Submit an issue)` hoặc :abbr:`Pull Request (Là một "
-"tính năng trên GitHub cho phép bạn đề xuất thay đổi nội dung trên một "
-"repository mà bạn không có quyền ghi vào. Chủ repository có thể xem xét "
-"những thay đổi này và merge chúng vào repository nếu họ thấy hợp lý)` trên "
-"`GitHub repository <https://github.com/godotengine/godot-docs/issues>`_, "
-"giúp chúng tôi `dịch tài liệu <https://hosted.weblate.org/engage/godot-"
-"engine/>`_ sang ngôn ngữ của bạn, hoặc thảo luận với chúng tôi trên kênh "
-"``#documentation`` tại `Godot Contributors Chat <https://"
-"chat.godotengine.org/>`_!"
+"Hãy gửi một issue hoặc pull request trên `kho lưu trữ GitHub <https://"
+"github.com/godotengine/godot-docs/issues>`_, giúp chúng tôi `dịch tài liệu "
+"<https://hosted.weblate.org/engage/godot-engine/>`_ sang ngôn ngữ của bạn, "
+"hoặc trò chuyện với chúng tôi trên kênh ``#documentation`` trong `Godot "
+"Contributors Chat <https://chat.godotengine.org/>`_!"
 
 #: ../../docs/index.rst:130
 msgid "weblate_widget"
@@ -419,9 +415,10 @@ msgid ""
 "community/>`_, especially the Godot `Discord <https://discord.gg/"
 "godotengine>`_ community and `Forum <https://forum.godotengine.org/>`_."
 msgstr ""
-"Nếu gặp khó khăn, bạn có thể nhờ giúp đỡ trên :ref:`Các kênh Cộng đồng "
-"<doc_community_channels>`, đặc biệt là kênh Godot `Discord`_ và `Diễn đàn "
-"<https://forum.godotengine.org/>`_."
+"Nếu bạn gặp khó khăn với một trong các hướng dẫn hoặc dự án của mình, bạn có "
+"thể tìm trợ giúp trên nhiều `kênh cộng đồng <https://godotengine.org/"
+"community/>`_, đặc biệt là cộng đồng `Discord <https://discord.gg/"
+"godotengine>`_ và `Diễn đàn <https://forum.godotengine.org/>`_ của Godot."
 
 #: ../../docs/about/introduction.rst:44
 msgid "About Godot Engine"
@@ -497,10 +494,10 @@ msgid ""
 "which should be the entry point for all new users. **This is the best place "
 "to start if you're new!**"
 msgstr ""
-"**Phần bắt đầu** chứa những thông tin cần thiết để bắt tay vào việc làm game "
-"bằng Godot. Nó mở đầu với :ref:`Hướng dẫn từng bước <toc-learn-"
-"step_by_step>` mà những bạn mới bắt đầu nên đọc. **Đây là trang chuẩn nhất "
-"để đọc qua nếu bạn là người mới!**"
+"**Bắt đầu** chứa tất cả thông tin cần thiết về việc sử dụng engine để tạo "
+"game. Nó bắt đầu với phần :ref:`doc_getting_started_intro`, đây sẽ là điểm "
+"khởi đầu cho tất cả người dùng mới. **Đây là nơi tốt nhất để bắt đầu nếu bạn "
+"là người mới!**"
 
 #: ../../docs/about/introduction.rst:78
 msgid ""
@@ -521,7 +518,6 @@ msgstr ""
 "module C++."
 
 #: ../../docs/about/introduction.rst:83
-#, fuzzy
 msgid ""
 "**Community** is dedicated to the life of Godot's community and contains a "
 "list of recommended third-party tutorials and materials outside of this "
@@ -529,10 +525,11 @@ msgid ""
 "list Godot communities, which are now listed on the `Godot website <https://"
 "godotengine.org/community/>`_."
 msgstr ""
-"Chào mừng đến với tài liệu chính thức của **Godot Engine**, game engine 2D/"
-"3D tự do và mã nguồn mở vì cộng đồng! Đây là một công cụ mạnh mẽ nhưng thân "
-"thiện với người dùng để bạn có thể tạo mọi loại game, cho mọi nền tảng với "
-"không một hạn chế sử dụng nào."
+"**Cộng đồng** được dành riêng cho đời sống cộng đồng của Godot và chứa danh "
+"sách các hướng dẫn cũng như tài liệu của bên thứ ba được đề xuất bên ngoài "
+"tài liệu này. Nó cũng cung cấp thông tin chi tiết về Asset Store. Trước đây "
+"nó cũng liệt kê các cộng đồng Godot, nhưng hiện nay những cộng đồng này được "
+"liệt kê trên `trang web Godot <https://godotengine.org/community/>`_."
 
 #: ../../docs/about/introduction.rst:87
 msgid ""
@@ -570,14 +567,16 @@ msgid ""
 "#documentation>`_ on `Godot Contributors Chat <https://chat.godotengine.org/"
 ">`_."
 msgstr ""
-"Thành viên cộng đồng Godot Engine liên tục biên soạn, chỉnh lý, bổ sung và "
-"cải thiện tài liệu này. Chúng tôi luôn mong muốn thêm nhiều sự giúp đỡ. Bạn "
-"có thể đóng góp bằng cách mở các Github issue hoặc dịch tài liệu sang ngôn "
-"ngữ của bạn. Nếu bạn quan tâm đến việc giúp đỡ, vui lòng xem :ref:`Các cách "
-"để đóng góp <doc_ways_to_contribute>` và :ref:`Biên soạn tài liệu "
-"<doc_contributing_writing_documentation>`, hoặc liên lạc với :ref:`Đội ngũ "
-"chuyên trách tài liệu<https://godotengine.org/teams/#documentation>`_ "
-"trên :ref:`Godot Contributors Chat <https://chat.godotengine.org/>`_."
+"Các thành viên của cộng đồng Godot Engine liên tục viết, sửa lỗi, chỉnh sửa "
+"và cải thiện tài liệu này. Chúng tôi luôn tìm kiếm thêm sự giúp đỡ. Bạn cũng "
+"có thể đóng góp bằng cách mở các issue trên Github hoặc dịch tài liệu sang "
+"ngôn ngữ của bạn. Nếu bạn quan tâm đến việc giúp đỡ, hãy xem `Cách đóng góp "
+"<https://contributing.godotengine.org/en/latest/organization/"
+"how_to_contribute.html>`__ và `Viết tài liệu <https://"
+"contributing.godotengine.org/en/latest/documentation/manual/index.html>`__, "
+"hoặc liên hệ với `Đội ngũ tài liệu <https://godotengine.org/teams/"
+"#documentation>`_ trên `Godot Contributors Chat <https://"
+"chat.godotengine.org/>`_."
 
 #: ../../docs/about/introduction.rst:105
 msgid ""
@@ -611,9 +610,9 @@ msgid ""
 "Some of these features are not available in the `3.x release series <https://"
 "docs.godotengine.org/en/3.6/about/list_of_features.html>`__."
 msgstr ""
-"Trang này liệt kê các tính năng trên phiên bản stable của Godot. Một vài "
-"tính năng có thể không khả dụng trong `các phiên bản LTS (3.x) <https://"
-"docs.godotengine.org/en/3.5/about/list_of_features.html>`__."
+"Trang này liệt kê các tính năng được hỗ trợ bởi phiên bản ổn định hiện tại "
+"của Godot. Một số tính năng trong số này không có sẵn trong `dòng phát hành "
+"3.x <https://docs.godotengine.org/en/3.6/about/list_of_features.html>`__."
 
 #: ../../docs/about/list_of_features.rst:17
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.7.rst:276
@@ -658,9 +657,8 @@ msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
-"Các :abbr:`Binary (file thực thi/file nhị phân)` được liên kết tĩnh và có "
-"thể chạy trên bất kỳ distro nào miễn là nó được biên dịch trên một distro cũ "
-"cũ chút."
+"Các tệp nhị phân được liên kết tĩnh và có thể chạy trên bất kỳ bản phân phối "
+"nào nếu được biên dịch trên một bản phân phối nền đủ cũ."
 
 #: ../../docs/about/list_of_features.rst:35
 msgid ""
@@ -668,9 +666,9 @@ msgid ""
 "github.com/godotengine/buildroot>`__, allowing for binaries that work across "
 "common Linux distributions."
 msgstr ""
-"Các Binary chính thức được biên dịch bằng `Godot Engine buildroot <https://"
-"github.com/godotengine/buildroot>`__, để những Binary này hoạt động trên bất "
-"kỳ distro Linux phổ thông nào (bao gồm các bản LTS)."
+"Các tệp nhị phân chính thức được biên dịch bằng cách sử dụng `Godot Engine "
+"buildroot <https://github.com/godotengine/buildroot>`__, cho phép tạo ra các "
+"tệp nhị phân hoạt động trên nhiều bản phân phối Linux phổ biến."
 
 #: ../../docs/about/list_of_features.rst:39
 msgid "Android (editor support is experimental)."
@@ -754,23 +752,24 @@ msgid ""
 "Built-in script editor. Also supports editing text files and using custom "
 "syntax highlighters."
 msgstr ""
+"Trình soạn thảo Built-in script. Cũng hỗ trợ chỉnh sửa tệp văn bản và sử "
+"dụng bộ tô sáng cú pháp tùy chỉnh."
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
-"Hỗ trợ :ref:`các trình gõ code bên ngoài <doc_external_editor>` như Visual "
-"Studio Code hay Vim."
+"Hỗ trợ :ref:`trình soạn thảo script bên ngoài <doc_external_editor>` chẳng "
+"hạn như Visual Studio Code hoặc Vi..."
 
 #: ../../docs/about/list_of_features.rst:74
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ":ref:`Debugger <doc_debugger_panel>` cho GDScript."
+msgstr "GDScript :ref:`trình gỡ lỗi <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:76
-#, fuzzy
 msgid "Supports debugging in threads."
-msgstr "Hỗ trợ debug trong các Thread kể từ phiên bản 4.2."
+msgstr "Hỗ trợ debugging trong các luồng."
 
 #: ../../docs/about/list_of_features.rst:78
 msgid ""
@@ -794,6 +793,9 @@ msgid ""
 "like :ref:`doc_profiler_tracy` and :ref:`doc_profiler_perfetto` for deeper "
 "optimization tasks."
 msgstr ""
+"Hỗ trợ :ref:`các trình phân tích theo dõi <doc_tracing_profilers>` như "
+":ref:`doc_profiler_tracy` và :ref:`doc_profiler_perfetto` cho các tác vụ tối "
+"ưu hóa chuyên sâu hơn."
 
 #: ../../docs/about/list_of_features.rst:84
 msgid ""
@@ -801,28 +803,30 @@ msgid ""
 "and provide custom functionality such as clickable buttons in the inspector, "
 "without needing to create an editor plugin."
 msgstr ""
+"Bất kỳ script nào cũng có thể được :ref:`chạy trong trình soạn thảo "
+"<doc_running_code_in_the_editor>` và cung cấp chức năng tùy chỉnh, chẳng hạn "
+"như các nút có thể nhấp trong inspector, mà không cần tạo một plugin trình "
+"soạn thảo."
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Live script reloading."
-msgstr "Load lại script trực tiếp."
+msgstr "Tải lại script trực tiếp."
 
 #: ../../docs/about/list_of_features.rst:88
 msgid "Live scene editing."
-msgstr "Load lại scene trực tiếp."
+msgstr "Chỉnh sửa scene trực tiếp."
 
 #: ../../docs/about/list_of_features.rst:90
-#, fuzzy
 msgid ""
 "Changes *will* reflect in the editor and *will* be kept after closing the "
 "running project."
 msgstr ""
-"Các thay đổi được hiển thị trong editor và được giữ lại sau khi đóng project "
-"đang chạy."
+"Các thay đổi *sẽ* được phản ánh trong trình soạn thảo và *sẽ* được giữ lại "
+"sau khi đóng dự án đang chạy."
 
 #: ../../docs/about/list_of_features.rst:92
-#, fuzzy
 msgid "Live camera replication (disabled by default)."
-msgstr "Điều chỉnh camera trực tiếp."
+msgstr "Sao chép camera trực tiếp (bị tắt theo mặc định)."
 
 #: ../../docs/about/list_of_features.rst:94
 msgid "Move the in-editor camera and see the result in the running project."
@@ -830,66 +834,73 @@ msgstr "Di chuyển camera trong editor và xem kết quả trong project đang 
 
 #: ../../docs/about/list_of_features.rst:96
 msgid "Remote inspector."
-msgstr "Remote inspector."
+msgstr "Inspector từ xa."
 
 #: ../../docs/about/list_of_features.rst:98
-#, fuzzy
 msgid ""
 "Changes *won't* reflect in the editor and *won't* be kept after closing the "
 "running project."
 msgstr ""
-"Các thay đổi không hiển thị trong editor và không được giữ lại sau khi đóng "
-"project đang chạy."
+"Các thay đổi *sẽ không* được phản ánh trong trình soạn thảo và *sẽ không* "
+"được giữ lại sau khi đóng dự án đang chạy."
 
 #: ../../docs/about/list_of_features.rst:100
 msgid ""
 "Run multiple simultaneous project instances from a single editor instance "
 "(useful for client/server testing)."
 msgstr ""
+"Chạy đồng thời nhiều phiên bản dự án từ một instance trình soạn thảo duy "
+"nhất (hữu ích cho việc kiểm thử client/server)."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid ""
 "Optional :ref:`game embedding <doc_game_embedding>` to run the project in a "
 "panel within the editor."
 msgstr ""
+"Tùy chọn :ref:`nhúng trò chơi <doc_game_embedding>` để chạy dự án trong một "
+"panel bên trong trình soạn thảo."
 
 #: ../../docs/about/list_of_features.rst:104
 msgid ""
 "Select 2D and 3D nodes in the project's viewport to inspect them in the "
 "editor."
 msgstr ""
+"Chọn các node 2D và 3D trong khung nhìn của dự án để kiểm tra chúng trong "
+"trình soạn thảo."
 
 #: ../../docs/about/list_of_features.rst:105
 msgid ""
 "Move the camera within the project using the 2D and 3D camera overrides."
 msgstr ""
+"Di chuyển camera trong dự án bằng cách sử dụng các ghi đè camera 2D và 3D."
 
 #: ../../docs/about/list_of_features.rst:106
 msgid "Supports time scale adjustments, pausing, and frame advance."
-msgstr ""
+msgstr "Hỗ trợ điều chỉnh tỉ lệ thời gian, tạm dừng và tiến từng frame."
 
 #: ../../docs/about/list_of_features.rst:107
-#, fuzzy
 msgid "Supports muting the project."
-msgstr "Tổ chức dự án"
+msgstr "Hỗ trợ tắt tiếng dự án."
 
 #: ../../docs/about/list_of_features.rst:109
 msgid "Ruler tool to measure distances in 2D and 3D."
-msgstr ""
+msgstr "Công cụ thước kẻ để đo khoảng cách trong 2D và 3D."
 
 #: ../../docs/about/list_of_features.rst:110
 msgid "Vertex snapping support in 3D."
-msgstr ""
+msgstr "Hỗ trợ bắt dính đỉnh (vertex snapping) trong 3D."
 
 #: ../../docs/about/list_of_features.rst:111
 msgid ""
 "Support for following the selection as it moves in 3D by using Focus "
 "Selection twice."
 msgstr ""
+"Hỗ trợ theo dõi vùng chọn khi nó di chuyển trong 3D bằng cách sử dụng Focus "
+"Selection hai lần."
 
 #: ../../docs/about/list_of_features.rst:112
 msgid "Built-in offline class reference documentation."
-msgstr "Tích hợp sẵn thao khảo Class để tra cứu offline."
+msgstr "Tài liệu tham khảo class ngoại tuyến Built-in."
 
 #: ../../docs/about/list_of_features.rst:113
 msgid "Use the editor in dozens of languages contributed by the community."
@@ -901,13 +912,12 @@ msgid "**Plugins:**"
 msgstr "**Các Plugin:**"
 
 #: ../../docs/about/list_of_features.rst:117
-#, fuzzy
 msgid ""
 "Editor plugins can be downloaded from the :ref:`Asset Store "
 "<doc_what_is_asset_store>` to extend editor functionality."
 msgstr ""
-"Các plugin có thể được tải về từ :ref:`asset library <doc_what_is_assetlib>` "
-"để mở rộng tính năng của editor."
+"Các plugin trình soạn thảo có thể được tải xuống từ :ref:`Asset Store "
+"<doc_what_is_asset_store>` để mở rộng chức năng của trình soạn thảo."
 
 #: ../../docs/about/list_of_features.rst:119
 msgid ""
@@ -918,13 +928,12 @@ msgstr ""
 "mới hoặc tăng tốc quy trình làm việc của bạn."
 
 #: ../../docs/about/list_of_features.rst:121
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the Asset Store <doc_using_asset_store_editor>` "
 "in the Project Manager and import them directly."
 msgstr ""
-":ref:`Tải các project từ asset library <doc_using_assetlib_editor>` trong "
-"Project Manager rồi import tụi nó trực tiếp."
+":ref:`Tải các dự án từ Asset Store <doc_using_asset_store_editor>` trong "
+"Project Manager và import chúng trực tiếp;"
 
 #: ../../docs/about/list_of_features.rst:125
 #: ../../docs/about/docs_changelog.rst:123
@@ -1153,12 +1162,18 @@ msgid ""
 "for sharper results when scaling up the texture by re-rasterizing the SVG "
 "source image to a new resolution at run-time."
 msgstr ""
+":ref:`Oversampling <doc_multiple_resolutions_font_and_image_oversampling>` "
+"cho hình ảnh SVG khi sử dụng kiểu import :ref:`class_DPITexture`. Điều này "
+"cho phép đạt kết quả sắc nét hơn khi phóng to texture bằng cách kết xuất lại "
+"hình ảnh nguồn SVG sang một độ phân giải mới vào lúc run-time."
 
 #: ../../docs/about/list_of_features.rst:187
 msgid ""
 "Oversampling can optionally take individual :ref:`class_CanvasItem` scales "
 "into account for crisper rendering when scaling nodes."
 msgstr ""
+"Oversampling có thể tùy chọn tính đến tỉ lệ riêng của từng "
+":ref:`class_CanvasItem` để kết xuất sắc nét hơn khi thay đổi tỉ lệ nodes."
 
 #: ../../docs/about/list_of_features.rst:190
 msgid ""
@@ -1187,12 +1202,15 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:232
 msgid "Optional debanding to reduce banding artifacts in gradients."
 msgstr ""
+"Tùy chọn khử dải màu để giảm hiện tượng dải màu trong các dải chuyển sắc."
 
 #: ../../docs/about/list_of_features.rst:196
 #: ../../docs/about/list_of_features.rst:233
 msgid ""
 ":ref:`HDR output <doc_hdr_output>` on supported platforms and renderers."
 msgstr ""
+":ref:`HDR output <doc_hdr_output>` trên các nền tảng và trình kết xuất được "
+"hỗ trợ."
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "2D tools"
@@ -1269,9 +1287,8 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:221
 #: ../../docs/about/list_of_features.rst:483
-#, fuzzy
 msgid ":ref:`Physics interpolation <doc_physics_interpolation>`."
-msgstr ":ref:`doc_interpolation`"
+msgstr ":ref:`Nội suy vật lý <doc_physics_interpolation>`."
 
 #: ../../docs/about/list_of_features.rst:223
 #: ../../docs/about/list_of_features.rst:485
@@ -1299,7 +1316,7 @@ msgstr "Đồ họa 3D"
 
 #: ../../docs/about/list_of_features.rst:231
 msgid "Linear HDR internal lighting calculations."
-msgstr ""
+msgstr "Các phép tính chiếu sáng nội bộ HDR tuyến tính."
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "Perspective, orthographic and frustum-offset cameras."
@@ -1373,12 +1390,8 @@ msgstr ""
 "chi tiết nhỏ lên texture chính, giúp cải thiện độ chân thực của vật liệu)`."
 
 #: ../../docs/about/list_of_features.rst:249
-#, fuzzy
 msgid "Subsurface scattering and transmittance."
-msgstr ""
-":abbr:`Sub-surface scattering và transmittance (Kỹ thuật này mô phỏng cách "
-"ánh sáng xuyên qua vật liệu bán trong suốt, tạo ra hiệu ứng chân thực hơn "
-"cho da, ngọc bích hoặc các vật liệu khác)`."
+msgstr "Subsurface scattering và transmittance."
 
 #: ../../docs/about/list_of_features.rst:250
 msgid ""
@@ -1419,17 +1432,20 @@ msgid ""
 ":ref:`Directional lights <doc_lights_and_shadows_directional_light>` (sun/"
 "moon)."
 msgstr ""
+":ref:`Đèn hướng <doc_lights_and_shadows_directional_light>` (mặt trời/mặt "
+"trăng)."
 
 #: ../../docs/about/list_of_features.rst:259
 msgid ":ref:`Omnidirectional lights <doc_lights_and_shadows_omni_light>`."
-msgstr ""
+msgstr ":ref:`Đèn đa hướng <doc_lights_and_shadows_omni_light>`."
 
 #: ../../docs/about/list_of_features.rst:260
-#, fuzzy
 msgid ""
 ":ref:`Spot lights <doc_lights_and_shadows_spot_light>` with adjustable cone "
 "angle and attenuation."
-msgstr "Ánh sáng điểm có thể điều chỉnh được cường độ và góc mở."
+msgstr ""
+":ref:`Đèn rọi <doc_lights_and_shadows_spot_light>` với góc hình nón và độ "
+"suy giảm có thể điều chỉnh."
 
 #: ../../docs/about/list_of_features.rst:261
 msgid ""
@@ -13691,7 +13707,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:166
 msgid "(For ScoreTimer): ``_on_score_timer_timeout()``"
-msgstr ""
+msgstr "(Đối với ScoreTimer): ``_on_score_timer_timeout()``"
 
 #: ../../docs/getting_started/first_2d_game/05.the_main_game_scene.rst:167
 msgid "(For StartTimer): ``_on_start_timer_timeout()``"
@@ -13823,10 +13839,10 @@ msgid ""
 "for \"heads-up display\", an informational display that appears as an "
 "overlay on top of the game view."
 msgstr ""
-"Tạo một cảnh mới, nhấp vào nút \"Other Node\" và thêm một "
-"nút :ref:`CanvasLayer <class_CanvasLayer>` có tên là ``HUD``. \"HUD\" là "
-"viết tắt của \"heads-up display\", một màn hình hiển thị thông tin xuất hiện "
-"dưới dạng lớp phủ trên cùng của chế độ xem trò chơi."
+"Tạo một scene mới, nhấp vào nút \"Other Node\" và thêm một node "
+":ref:`CanvasLayer <class_CanvasLayer>` có tên ``HUD``. \"HUD\" là viết tắt "
+"của \"heads-up display\", một màn hình thông tin hiển thị dưới dạng lớp phủ "
+"đè lên trên khung nhìn trò chơi."
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:13
 msgid ""

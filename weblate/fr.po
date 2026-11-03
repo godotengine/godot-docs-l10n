@@ -304,13 +304,16 @@
 # FrancoisA <fassens@hotmail.fr>, 2026.
 # Cyril Bissey <cykyrios@gmail.com>, 2026.
 # Icodak <spootch78@gmail.com>, 2026.
+# Lewis Bertin <lewis@tactiqual.tech>, 2026.
+# Valentin <vava236@users.noreply.hosted.weblate.org>, 2026.
+# aioshiro <aioshiro@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-08-20 11:36+0200\n"
-"PO-Revision-Date: 2026-08-19 17:24+0000\n"
-"Last-Translator: aioshiro <aioshiro57@proton.me>\n"
+"PO-Revision-Date: 2026-11-03 22:52+0000\n"
+"Last-Translator: Lewis Bertin <lewis@tactiqual.tech>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -318,7 +321,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.11.1.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -795,7 +798,6 @@ msgstr ""
 "moteur, travailler sur l'éditeur ou développer des modules C++."
 
 #: ../../docs/about/introduction.rst:83
-#, fuzzy
 msgid ""
 "**Community** is dedicated to the life of Godot's community and contains a "
 "list of recommended third-party tutorials and materials outside of this "
@@ -806,9 +808,9 @@ msgstr ""
 "**Communauté** est dédiée à la vie de la communauté Godot et contient une "
 "liste de tutoriels et de ressources externes recommandés. Cette section "
 "fournit aussi des détails sur la Bibliothèque de ressources. Elle est "
-"également utilisée pour lister les communautés Godot qui sont maintenant "
-"répertoriées sur le `site Web de Godot <https://godotengine.org/community/"
-">`_."
+"également utilisée pour lister les communautés Godot, qui sont maintenant "
+"répertoriées sur le `site Web de Godot <https://godotengine.org/community/>"
+"`_."
 
 #: ../../docs/about/introduction.rst:87
 msgid ""
@@ -1203,14 +1205,12 @@ msgid "**Plugins:**"
 msgstr "**Plugins :**"
 
 #: ../../docs/about/list_of_features.rst:117
-#, fuzzy
 msgid ""
 "Editor plugins can be downloaded from the :ref:`Asset Store "
 "<doc_what_is_asset_store>` to extend editor functionality."
 msgstr ""
-"Les plugins de l'éditeur peuvent être téléchargés depuis "
-"la :ref:`bibliothèque de ressources <doc_what_is_assetlib>` pour étendre les "
-"fonctionnalités de l'éditeur."
+"Des plugins de l'éditeur peuvent être téléchargés depuis :ref:`Asset Store "
+"<doc_what_is_asset_store>` pour étendre les fonctionnalités de l'éditeur."
 
 #: ../../docs/about/list_of_features.rst:119
 msgid ""
@@ -1221,14 +1221,13 @@ msgstr ""
 "pour ajouter de nouvelles fonctionnalités ou accélérer votre flux de travail."
 
 #: ../../docs/about/list_of_features.rst:121
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the Asset Store <doc_using_asset_store_editor>` "
 "in the Project Manager and import them directly."
 msgstr ""
-":ref:`Téléchargez les projets depuis la bibliothèque de ressources "
-"<doc_using_assetlib_editor>` dans le gestionnaire de projet et importez-les "
-"directement."
+":ref:`Téléchargez les projets depuis l'Asset Store "
+"<doc_using_asset_store_editor>` dans le gestionnaire de projets et importez-"
+"les directement."
 
 #: ../../docs/about/list_of_features.rst:125
 #: ../../docs/about/docs_changelog.rst:123
@@ -1683,7 +1682,6 @@ msgid "Detail mapping for the albedo and normal maps."
 msgstr "Cartographie détaillée des cartes d'albédo et de normales."
 
 #: ../../docs/about/list_of_features.rst:249
-#, fuzzy
 msgid "Subsurface scattering and transmittance."
 msgstr "Diffusion sous-surface et transmittance."
 
@@ -1729,20 +1727,20 @@ msgstr ""
 ":ref:`Lumières omnidirectionnelles <doc_lights_and_shadows_omni_light>`."
 
 #: ../../docs/about/list_of_features.rst:260
-#, fuzzy
 msgid ""
 ":ref:`Spot lights <doc_lights_and_shadows_spot_light>` with adjustable cone "
 "angle and attenuation."
-msgstr "Projecteurs dont l'angle du cône et l'atténuation sont réglables."
+msgstr ""
+":ref:`Projecteurs <doc_lights_and_shadows_spot_light>` dont l'angle du cône "
+"et l'atténuation sont réglables."
 
 #: ../../docs/about/list_of_features.rst:261
-#, fuzzy
 msgid ""
 ":ref:`Rectangular area lights <doc_lights_and_shadows_area_light>` with an "
 "optional texture to determine the shape and color."
 msgstr ""
-"zone d'éclairage rectangulaire avec une texture optionnelle qui détermine la "
-"forme et la couleur"
+":ref:`Lumières de zone rectangulaires <doc_lights_and_shadows_area_light>` "
+"avec une texture facultative pour déterminer la forme et la couleur."
 
 #: ../../docs/about/list_of_features.rst:263
 msgid ""
@@ -1782,16 +1780,15 @@ msgstr ""
 "sur un maillage."
 
 #: ../../docs/about/list_of_features.rst:270
-#, fuzzy
 msgid ""
 "When using the Mobile renderer, up to 8 omni lights, 8 spot lights, and 8 "
 "area lights can be displayed per mesh resource. Baked lighting can be used "
 "to overcome this limit if needed."
 msgstr ""
-"Lors de l'utilisation du moteur de rendu Mobile, jusqu'à 8 lumières "
-"omnidirectionnelles et 8 lumières ponctuelles peuvent être affichées par "
-"ressource de maillage. L'éclairage précalculé peut être utilisé pour "
-"surmonter cette limite si nécessaire."
+"Avec le moteur de rendu Mobile, jusqu'à 8 lumières omnidirectionnelles, 8 "
+"projecteurs et 8 lumières de zone peuvent être affichés par ressource de "
+"maillage. L'éclairage pré-calculé peut être utilisé pour contourner cette "
+"limite si nécessaire."
 
 #: ../../docs/about/list_of_features.rst:274
 msgid "**Shadow mapping:**"
@@ -1806,13 +1803,12 @@ msgstr ""
 "split. Supporte le mélange entre les écarts."
 
 #: ../../docs/about/list_of_features.rst:278
-#, fuzzy
 msgid ""
 "*OmniLight3D:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
 "*OmniLight3D :* Double paraboloïde (rapide) ou cubemap (plus lent mais plus "
-"précis). Supporte les textures de projection colorées sous forme de "
+"précis). Prend en charge les textures de projection colorées sous forme de "
 "panoramas."
 
 #: ../../docs/about/list_of_features.rst:280
@@ -1916,14 +1912,14 @@ msgstr ""
 "effectué à partir de l'éditeur, pas dans les projets exportés."
 
 #: ../../docs/about/list_of_features.rst:305
-#, fuzzy
 msgid ""
 "Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
 "JNLM out of the box, or higher-quality CPU/GPU-based denoising with OIDN "
 "(requires downloading OIDN separately)."
 msgstr ""
-"Supporte le :ref:`débruitage <doc_using_lightmap_gi_denoising>` avec JNLM ou "
-"le débruitage basé sur le CPU/GPU avec OIDN."
+"Prend en charge le :ref:`débruitage <doc_using_lightmap_gi_denoising>` sur "
+"GPU avec JNLM, sans configuration supplémentaire, ou un débruitage de "
+"meilleure qualité sur CPU/GPU avec OIDN (à télécharger séparément)."
 
 #: ../../docs/about/list_of_features.rst:308
 msgid ""
@@ -2092,18 +2088,16 @@ msgstr ""
 "éloignés, améliorant ainsi les performances."
 
 #: ../../docs/about/list_of_features.rst:352
-#, fuzzy
 msgid ""
 "When using the Forward+ renderer (default on desktop), decals are rendered "
 "with clustered forward optimizations to decrease their individual cost. "
 "Clustered rendering also lifts any limits on the number of decals that can "
 "be used on a mesh."
 msgstr ""
-"Lorsque le moteur de rendu Forward+ est utilisé (par défaut sur PC), les "
-"décalques sont rendus avec des optimisations groupées en amont (clustered "
-"forward optimization) pour diminuer leur coût individuel. Le rendu groupé "
-"retire également toute limite sur le nombre de décalques qui peuvent être "
-"utilisés sur un maillage."
+"Avec le moteur de rendu Forward+ (par défaut sur PC), les décalques sont "
+"rendus avec des optimisations groupées (clustered forward) pour réduire leur "
+"coût individuel. Le rendu groupé lève également toute limite sur le nombre "
+"de décalques pouvant être utilisés sur un maillage."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid ""
@@ -2359,9 +2353,8 @@ msgstr ""
 "en fonction de la texture."
 
 #: ../../docs/about/list_of_features.rst:420
-#, fuzzy
 msgid "**Texture VRAM compression:**"
-msgstr "**Compression de texture :**"
+msgstr "**Compression des textures en VRAM :**"
 
 #: ../../docs/about/list_of_features.rst:422
 msgid "BPTC (for high-quality compression targeting desktop platforms)."
@@ -2452,15 +2445,14 @@ msgstr ""
 "gamme ou pour améliorer les visuels des systèmes haut de gamme."
 
 #: ../../docs/about/list_of_features.rst:443
-#, fuzzy
 msgid ""
 "Resolution scaling uses nearest-neighbor filtering, bilinear filtering, AMD "
 "FidelityFX Super Resolution 1.0 (FSR1), or AMD FidelityFX Super Resolution "
 "2.2.1 (FSR2)."
 msgstr ""
-"La mise à l'échelle de la résolution utilise un filtrage bilinéaire, AMD "
-"FidelityFX Super Resolution 1.0 (FSR1) ou AMD FidelityFX Super Resolution "
-"2.2 (FSR2)."
+"La mise à l'échelle de la résolution utilise un filtrage par plus proche "
+"voisin, un filtrage bilinéaire, AMD FidelityFX Super Resolution 1.0 (FSR1) "
+"ou AMD FidelityFX Super Resolution 2.2.1 (FSR2)."
 
 #: ../../docs/about/list_of_features.rst:446
 msgid ""
@@ -3158,10 +3150,8 @@ msgid "High-level HTTP requests using :ref:`class_HTTPRequest`."
 msgstr "Requêtes HTTP de haut niveau utilisant :ref:`class_HTTPRequest`."
 
 #: ../../docs/about/list_of_features.rst:664
-#, fuzzy
 msgid "Supports HTTPS out of the box using bundled certificates."
-msgstr ""
-"Prend immédiatement en charge HTTPS en utilisant des certificats groupés."
+msgstr "Prend en charge HTTPS d'emblée, grâce à des certificats inclus."
 
 #: ../../docs/about/list_of_features.rst:666
 msgid ""
@@ -3319,7 +3309,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:709
 msgid "Fullscreen mode (borderless and exclusive)."
-msgstr ""
+msgstr "Mode plein écran (sans bordure et exclusif)."
 
 #: ../../docs/about/list_of_features.rst:710
 msgid "Borderless windows (fullscreen or non-fullscreen)."
@@ -3454,56 +3444,59 @@ msgid ""
 "Support for desktop headsets using :ref:`OpenXR <doc_setting_up_xr>`. If a "
 "headset works with SteamVR, it should work with Godot."
 msgstr ""
+"Prise en charge des casques pour ordinateur via :ref:`OpenXR "
+"<doc_setting_up_xr>`. Si un casque fonctionne avec SteamVR, il devrait "
+"fonctionner avec Godot."
 
 #: ../../docs/about/list_of_features.rst:751
 msgid ""
 "Godot also supports Quest over Link, AndroidXR Direct Preview, and Pico "
 "Connect."
 msgstr ""
+"Godot prend également en charge Quest via Link, AndroidXR Direct Preview et "
+"Pico Connect."
 
 #: ../../docs/about/list_of_features.rst:754
-#, fuzzy
 msgid ""
 "Support for :ref:`Android-based headsets <doc_deploying_to_android>` using "
 "OpenXR. Including support for the following standalone headsets:"
 msgstr ""
 "Prise en charge des :ref:`casques basés sur Android "
-"<doc_deploying_to_android>` utilisant OpenXR via un plugin."
+"<doc_deploying_to_android>` utilisant OpenXR. Inclut le support pour les "
+"casques standalone suivants :"
 
 #: ../../docs/about/list_of_features.rst:757
-#, fuzzy
 msgid "Meta Quest 1/2/3 and Pro"
-msgstr "Meta Quest Pro"
+msgstr "Meta Quest 1/2/3 et Pro"
 
 #: ../../docs/about/list_of_features.rst:758
 msgid "Pico 4/4 Ultra"
-msgstr ""
+msgstr "Pico 4/4 Ultra"
 
 #: ../../docs/about/list_of_features.rst:759
 msgid "Magic Leap 2"
-msgstr ""
+msgstr "Magic Leap 2"
 
 #: ../../docs/about/list_of_features.rst:760
 msgid "Lynx R1"
-msgstr ""
+msgstr "Lynx R1"
 
 #: ../../docs/about/list_of_features.rst:761
 msgid "HTC Vive Focus Vision"
-msgstr ""
+msgstr "HTC Vive Focus Vision"
 
 #: ../../docs/about/list_of_features.rst:762
-#, fuzzy
 msgid "Android XR headsets"
-msgstr "Éditeur Android"
+msgstr "Casques Android XR"
 
 #: ../../docs/about/list_of_features.rst:764
 msgid "Support for the Linux-based standalone Steam Frame using OpenXR."
 msgstr ""
+"Prise en charge du Steam Frame autonome fonctionnant sous Linux, via OpenXR."
 
 #: ../../docs/about/list_of_features.rst:766
-#, fuzzy
 msgid "Limited support for visionOS Apple headsets."
-msgstr "Prise en charge limitée pour le casque Apple visionOS."
+msgstr "Prise en charge limitée des casques Apple visionOS."
 
 #: ../../docs/about/list_of_features.rst:768
 msgid ""
@@ -3553,16 +3546,14 @@ msgid "Checkboxes, check buttons, radio buttons."
 msgstr "Cases à cocher, boutons à cocher, boutons radio."
 
 #: ../../docs/about/list_of_features.rst:784
-#, fuzzy
 msgid ""
 "Text entry using :ref:`class_LineEdit` (single line), :ref:`class_TextEdit` "
 "(multiple lines), and :ref:`class_CodeEdit` (supports syntax highlighting, "
 "line numbers, and more)."
 msgstr ""
-"Saisie de texte à l'aide de :ref:`class_LineEdit` (une seule ligne) "
-"et :ref:`class_TextEdit` (plusieurs lignes). TextEdit prend également en "
-"charge les fonctions d'édition de code telles que l'affichage des numéros de "
-"ligne et la coloration syntaxique."
+"Saisie de texte à l'aide de :ref:`class_LineEdit` (une seule ligne), "
+":ref:`class_TextEdit` (plusieurs lignes) et :ref:`class_CodeEdit` (prend en "
+"charge la coloration syntaxique, les numéros de ligne et plus encore)."
 
 #: ../../docs/about/list_of_features.rst:787
 msgid ""
@@ -3657,9 +3648,9 @@ msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
 msgstr "Disposition avec un :ref:`Conteneur divisable <class_SplitContainer>`."
 
 #: ../../docs/about/list_of_features.rst:809
-#, fuzzy
 msgid ":ref:`Foldable section <class_FoldableContainer>` layouts."
-msgstr "Agencement en :ref:`Pile <class_BoxContainer>`."
+msgstr ""
+":ref:`Sections pliables <class_FoldableContainer>` pour les dispositions."
 
 #: ../../docs/about/list_of_features.rst:811
 msgid ""
@@ -4044,9 +4035,8 @@ msgstr "**macOS :** processeur x86_64 ou processeur ARM (Apple Silicon)"
 
 #: ../../docs/about/system_requirements.rst:32
 #: ../../docs/about/system_requirements.rst:217
-#, fuzzy
 msgid "*Example: Intel 7th Gen (Kaby Lake) CPU, Apple M1*"
-msgstr "*Exemple : Intel Core 2 Duo SU9400, Apple M1*"
+msgstr "*Exemple : processeur Intel de 7e génération (Kaby Lake), Apple M1*"
 
 #: ../../docs/about/system_requirements.rst:34
 #: ../../docs/about/system_requirements.rst:219
@@ -4143,7 +4133,6 @@ msgstr "**Stockage**"
 
 #: ../../docs/about/system_requirements.rst:54
 #: ../../docs/about/system_requirements.rst:100
-#, fuzzy
 msgid ""
 "200 MB (used for the executable, project files, and cache). Exporting "
 "projects requires downloading export templates separately (up to 1.5 GB "
@@ -4151,7 +4140,8 @@ msgid ""
 msgstr ""
 "200 Mo (utilisé pour l'exécutable, les fichiers de projet et le cache). "
 "L'exportation de projets nécessite le téléchargement de modèles "
-"d'exportation séparément (1,3 Go après installation)."
+"d'exportation séparément (1,5 GB après installation, en fonction de la "
+"platforme cible voulue)."
 
 #: ../../docs/about/system_requirements.rst:58
 #: ../../docs/about/system_requirements.rst:104
@@ -4165,13 +4155,12 @@ msgid "**Operating system**"
 msgstr "**Système d'exploitation**"
 
 #: ../../docs/about/system_requirements.rst:58
-#, fuzzy
 msgid ""
 "**Native editor:** Windows 10, macOS 11 (Intel Macs), macOS 13 (Apple "
 "Silicon Macs), Linux distribution released after 2018"
 msgstr ""
-"**Editeur natif :** Windows 10, macOS 10.13 (Compatibilité) ou macOS 10.15 "
-"(Forward+/Mobile), distributions Linux après 2018"
+"**Editeur natif :** Windows 10, macOS 11 (Intel Mac) ou macOS 13 (Apple "
+"Silicon Macs), distributions Linux sorties après 2018"
 
 #: ../../docs/about/system_requirements.rst:60
 #: ../../docs/about/system_requirements.rst:105
@@ -4370,21 +4359,20 @@ msgstr "**Éditeur Web :** 12 Go"
 
 #: ../../docs/about/system_requirements.rst:143
 #: ../../docs/about/system_requirements.rst:174
-#, fuzzy
 msgid ""
 "2 GB (used for the executable, project files, all export templates, and "
 "cache)"
 msgstr ""
-"1.5 GB (utilisé pour les fichiers exécutables, projets, tous les modèles "
-"d'exportation et cache)"
+"2 GB (utilisé pour les exécutables, les fichiers de projets, tous les "
+"modèles d'exportation et le cache)"
 
 #: ../../docs/about/system_requirements.rst:145
-#, fuzzy
 msgid ""
 "**Native editor:** Windows 11, macOS 13, Linux distribution released after "
 "2020"
 msgstr ""
-"**Editeur natif :** Windows 10, macOS 10.15, distributions Linux d'après 2020"
+"**Éditeur natif :** Windows 11, macOS 13, distribution Linux publiée après "
+"2020"
 
 #: ../../docs/about/system_requirements.rst:146
 msgid "**Web editor:** Latest version of Firefox, Chrome, Edge, Safari, Opera"
@@ -4537,18 +4525,16 @@ msgstr "**Pour exportations web:** 4 GB"
 #: ../../docs/about/system_requirements.rst:281
 #: ../../docs/about/system_requirements.rst:326
 #: ../../docs/about/system_requirements.rst:361
-#, fuzzy
 msgid "150 MB (used for the executable, project files, and cache)"
-msgstr "150 Mo (utilisé pour l'exécutable, les fichiers de projet et le cache)"
+msgstr "150 Mo (utilisé pour l'exécutable, les fichiers du projet et le cache)"
 
 #: ../../docs/about/system_requirements.rst:244
-#, fuzzy
 msgid ""
 "**For native exports:** Windows 10, macOS 11 (Intel Macs), macOS 13 (Apple "
 "Silicon Macs), Linux distribution released after 2018"
 msgstr ""
-"**Pour les exportations natives :** Windows 10, macOS 10.15 (Compatibilité), "
-"macOS 13.0 (Forward+/Mobile, Metal), distribution Linux publiée après 2020"
+"**Pour les exports natifs :** Windows 10, macOS 11 (Mac Intel), macOS 13 "
+"(Macs Apple Silicon), distribution Linux publiée après 2018"
 
 #: ../../docs/about/system_requirements.rst:258
 msgid "**iOS:** SoC with any 64-bit ARM CPU"
@@ -4601,15 +4587,14 @@ msgid "**For web exports:** 2 GB"
 msgstr "**Pour exportations web:** 2 GB"
 
 #: ../../docs/about/system_requirements.rst:283
-#, fuzzy
 msgid ""
 "**For native exports:** Android 7.0 (Compatibility), Android 9.0 (Forward+/"
 "Mobile), iOS 15.0 (Forward+/Mobile with Vulkan), iOS 16.0 (Forward+/Mobile "
 "with Metal)"
 msgstr ""
 "**Pour les exports natifs :** Android 7.0 (Compatibilité), Android 9.0 "
-"(Forward+/Mobile), iOS 12.0 (Forward+/Mobile, Vulkan), iOS 16.0 (Forward+/"
-"Mobile, Metal)"
+"(Forward+/Mobile), iOS 15.0 (Forward+/Mobile avec Vulkan), iOS 16.0 "
+"(Forward+/Mobile avec Metal)"
 
 #: ../../docs/about/system_requirements.rst:289
 msgid ""
@@ -4655,12 +4640,12 @@ msgid "**For web exports:** 8 GB"
 msgstr "**Pour exportations web:** 8 GB"
 
 #: ../../docs/about/system_requirements.rst:328
-#, fuzzy
 msgid ""
 "**For native exports:** Windows 11, macOS 13, Linux distribution released "
 "after 2020"
 msgstr ""
-"**Editeur natif :** Windows 10, macOS 10.15, distributions Linux d'après 2020"
+"**Pour les exportations natives:** Windows 11, macOS 13, distributions Linux "
+"sorties après 2020"
 
 #: ../../docs/about/system_requirements.rst:329
 msgid ""
@@ -4700,9 +4685,8 @@ msgstr ""
 "de Vulkan 1.2 ou Metal 3 (iOS/iPadOS)"
 
 #: ../../docs/about/system_requirements.rst:363
-#, fuzzy
 msgid "**For native exports:** Android 9.0, iOS 16.0"
-msgstr "**Pour exportations natives:** 2 GB"
+msgstr "**Pour les exportations natives :** Android 9.0, iOS 16.0"
 
 #: ../../docs/about/system_requirements.rst:364
 msgid ""
@@ -5164,13 +5148,12 @@ msgstr ""
 "importante de la mémoire (Lua, Python, JavaScript, ActionScript, etc.)."
 
 #: ../../docs/about/faq.rst:162
-#, fuzzy
 msgid ""
 "Difficulty integrating with the code editor for providing code completion, "
 "live editing, etc. (all languages)."
 msgstr ""
 "Difficulté d'intégration avec l'éditeur de code pour la complétion du code, "
-"l'édition en direct, etc."
+"l'édition en direct, etc. (tous les langages)."
 
 #: ../../docs/about/faq.rst:165
 msgid "GDScript was designed to curtail the issues above, and more."
@@ -6373,7 +6356,6 @@ msgstr ""
 "différente, mais il doit toujours être conforme à la licence originale."
 
 #: ../../docs/about/complying_with_licenses.rst:28
-#, fuzzy
 msgid ""
 "This section covers compliance with licenses from a user perspective. If you "
 "are interested in license compliance as a contributor, you can find "
@@ -6381,12 +6363,12 @@ msgid ""
 "latest/engine/guidelines/best_practices.html#don-t-use-complex-canned-"
 "solutions-for-simple-problems>`__ page."
 msgstr ""
-"Cette section couvre la conformité avec les licences du point de vue de "
-"l'utilisateur. Si la conformité des licences vous intéresse en tant que "
-"contributeur, vous pouvez en trouver les directives `ici <https://"
-"contributing.godotengine.org/en/latest/engine/guidelines/"
-"best_practices.html#don-t-use-complex-canned-solutions-for-simple-"
-"problems>`__."
+"Cette section traite de la conformité aux licences du point de vue de "
+"l'utilisateur. Si la conformité aux licences vous intéresse en tant que "
+"contributeur, vous trouverez des recommandations dans la page `Bonnes "
+"pratiques <https://contributing.godotengine.org/en/latest/engine/guidelines/"
+"best_practices.html#don-t-use-complex-canned-solutions-for-simple-problems>"
+"`__."
 
 #: ../../docs/about/complying_with_licenses.rst:34
 msgid ""
@@ -6820,14 +6802,12 @@ msgid "**Support level**"
 msgstr "**Niveau de support**"
 
 #: ../../docs/about/release_policy.rst:87
-#, fuzzy
 msgid "Godot 4.8 (`master`)"
-msgstr "Godot 4.7 (`master`)"
+msgstr "Godot 4.8 (`master`)"
 
 #: ../../docs/about/release_policy.rst:87
-#, fuzzy
 msgid "Q4 2026 (estimate)"
-msgstr "Q2/Q3 2026 (estimation)"
+msgstr "T4 2026 (estimation)"
 
 #: ../../docs/about/release_policy.rst:87
 msgid ""
@@ -6843,14 +6823,12 @@ msgid "unstable"
 msgstr "instable"
 
 #: ../../docs/about/release_policy.rst:90
-#, fuzzy
 msgid "Godot 4.7"
-msgstr "Godot 4.6"
+msgstr "Godot 4.7"
 
 #: ../../docs/about/release_policy.rst:90
-#, fuzzy
 msgid "June 2026"
-msgstr "Janvier 2026"
+msgstr "Juin 2026"
 
 #: ../../docs/about/release_policy.rst:90
 #: ../../docs/about/release_policy.rst:93
@@ -8640,7 +8618,7 @@ msgstr ""
 "et Usagi Shima. Quant aux applications, le programme de dessin de pixel art "
 "libre (sous licence MIT) Pixelorama est propulsé par Godot, ainsi que le "
 "créateur de voxel RPG \"RPG in a Box\". Vous pouvez trouver beaucoup "
-"d'autres exemples dans les exemples officiels <https://godotengine.org/"
+"d'autres exemples dans les `Exemples Officiels <https://godotengine.org/"
 "showcase/>`_."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:42
@@ -8782,9 +8760,9 @@ msgstr ""
 "Si vous êtes totalement novice en programmation, GDQuest propose *Learn "
 "GDScript From Zero*, un tutoriel interactif gratuit et open source destiné "
 "aux débutants absolus qui souhaitent apprendre à programmer avec le langage "
-"GDScript de Godot. Il est disponible sous forme d'application de bureau "
-"<https://gdquest.itch.io/learn-godot-gdscript>__ ou dans le navigateur "
-"<https://gdquest.github.io/learn-gdscript>__."
+"GDScript de Godot. Il est disponible sous forme `d'application de bureau "
+"<https://gdquest.itch.io/learn-godot-gdscript>`__ ou `dans le navigateur "
+"<https://gdquest.github.io/learn-gdscript>`__."
 
 #: ../../docs/getting_started/introduction/introduction_to_godot.rst:117
 msgid ""
@@ -13863,7 +13841,7 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:257
 msgid "If you get an error in the \"Debugger\" panel that says"
-msgstr "Si vous obtenez une erreur le panneau \"Debugger\" qui dit"
+msgstr "Si vous rencontrez une erreur dans le panneau de débogage qui dit"
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:259
 msgid ""
@@ -26127,6 +26105,8 @@ msgid ""
 "The **Go To** menu lets you navigate within the code at ease with these "
 "options:"
 msgstr ""
+"Le menu **Aller Vers** permet de naviguer dans le code simplement avec ces "
+"options :"
 
 #: ../../docs/tutorials/editor/script_editor.rst:342
 msgid ""
@@ -26196,14 +26176,14 @@ msgid ""
 "number. It will show a faded red circle. Clicking it will add a breakpoint "
 "and the circle will stay there. Clicking on a circle removes the breakpoint."
 msgstr ""
-"**Points d'arrêts** : Les points d'arrêts sont utiles lorsque vous débuggez "
-"votre code. Comme pour le menu **Signets**, ce menu permet d'ajouter ou de "
-"supprimer des points d'arrêts, les parcourir et vous rendre directement à un "
-"point d'arrêt spécifique. Un moyen simple d'ajouter un point d'arrêt "
-"consiste à survoler la zone vierge à gauche du numéro de ligne. Un cercle "
-"sombre va alors s'afficher. Cliquer dessus va ajouter un point d'arrêt, le "
-"cercle devient rouge et va persister. Cliquer de nouveau dessus va supprimer "
-"le point d'arrêt."
+"**Points d'arrêt** : Les points d'arrêt sont utiles lors du débogage de "
+"votre code. Similaire au menu **Signets**, ce menu vous permet d'ajouter ou "
+"de retirer des points d'arrêt, de naviguer entre eux et d'aller directement "
+"à un point d'arrêt spécifique. Un moyen simple d'ajouter un point d'arrêt "
+"est de survoler à la souris la zone vide à gauche du numéro d'une ligne. Un "
+"cercle rouge estompé apparaîtra. Cliquer sur ce cercle ajoutera un point "
+"d'arrêt et le cercle restera en place. Cliquer sur le cercle retire le point "
+"d'arrêt."
 
 #: ../../docs/tutorials/editor/script_editor.rst:363
 msgid ""
@@ -30275,7 +30255,6 @@ msgid "Migrating to a new version"
 msgstr "Migrer vers une nouvelle version"
 
 #: ../../docs/tutorials/migrating/index.rst:6
-#, fuzzy
 msgid ""
 "Godot :ref:`loosely follows <doc_release_policy>` a semantic versioning "
 "system, where compatibility is assumed between minor and patch releases, "
@@ -30283,12 +30262,12 @@ msgid ""
 "to move projects between major versions during their development, especially "
 "if you've been working on them for a significant amount of time."
 msgstr ""
-"Godot :ref:`suit globalement <doc_release_policy>` un système de version "
-"sémantique, où la compatibilité est assurée entre les versions mineures et "
-"les sorties de patch, alors que les versions majeures peuvent la briser. En "
-"tant que tel, il n'est généralement pas recommandé de déplacer des projets "
-"entre des versions majeures pendant leur développement, surtout si vous "
-"travaillez sur ceux-ci depuis un certain temps."
+"Godot :ref:`suit dans les grandes lignes <doc_release_policy>` la gestion "
+"sémantique de version : la compatibilité est censée être préservée entre les "
+"versions mineures et correctives, tandis que les versions majeures peuvent "
+"la rompre. Il est donc généralement déconseillé de faire passer un projet "
+"d'une version majeure à une autre en cours de développement, surtout si vous "
+"y travaillez depuis longtemps."
 
 #: ../../docs/tutorials/migrating/index.rst:12
 msgid ""
@@ -32744,7 +32723,7 @@ msgid ""
 "See the `changelog <https://github.com/godotengine/godot/blob/master/"
 "CHANGELOG.md>`__ for a full list of changes between Godot 3.x and 4."
 msgstr ""
-"Voir le`changelog <https://github.com/godotengine/godot/blob/master/"
+"Voir le `changelog <https://github.com/godotengine/godot/blob/master/"
 "CHANGELOG.md>`__ pour la liste complète des changements entre Godot 3.x et 4."
 
 #: ../../docs/tutorials/migrating/upgrading_to_godot_4.rst:757
@@ -44912,9 +44891,10 @@ msgid ""
 "\"Abstract Platformer\" pack <https://kenney.nl/assets/abstract-"
 "platformer>`__. We'll use this particular *tilesheet* from the set:"
 msgstr ""
-"Cette démonstration utilisera les tuiles suivantes tirées du pack « Abstract "
-"Platformer » de Kenney <https://kenney.nl/assets/abstract-platformer>`__. "
-"Nous utiliserons cette *feuille de tuiles* particulière de l'ensemble :"
+"Cette démonstration utilisera les tuiles suivantes tirées du pack `« "
+"Abstract Platformer » de Kenney <https://kenney.nl/assets/abstract-"
+"platformer>`__. Nous utiliserons cette *feuille de tuiles* particulière de "
+"l'ensemble :"
 
 #: ../../docs/tutorials/2d/using_tilesets.rst:40
 #, fuzzy
@@ -48093,6 +48073,10 @@ msgid ""
 "``Vector3.RIGHT`` for the X-axis, ``Vector3.UP`` for the Y-axis, and "
 "``Vector3.FORWARD`` for the Z-axis."
 msgstr ""
+"L'axe doit être défini dans le système de coordonnées local de l'objet. Par "
+"exemple, pour effectuer une rotation autour des axes locaux X, Y ou Z de "
+"l'objet, utilisez ``Vector3.RIGHT`` pour l'axe X, ``Vector3.UP`` pour l'axe "
+"Y et ``Vector3.FORWARD`` pour l'axe Z."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:207
 msgid "Precision errors"
@@ -62083,8 +62067,8 @@ msgid ""
 "en.wikipedia.org/wiki/Miniature_faking>`__."
 msgstr ""
 "Il est courant d'utiliser les deux flous ensemble pour concentrer "
-"l'attention du spectateur sur un objet donné, ou créer un effet dit de "
-"« tilt shift » <https://en.wikipedia.org/wiki/Miniature_faking>`__."
+"l'attention du spectateur sur un objet donné, ou créer un effet dit de `« "
+"tilt shift » <https://en.wikipedia.org/wiki/Miniature_faking>`__."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:938
 msgid "Exposure"
@@ -63483,13 +63467,12 @@ msgstr ""
 "et deux nœuds MeshInstance3D."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:30
-#, fuzzy
 msgid ""
 "One node is used as the target, the surface mesh that you want to place "
 "multiple meshes on. In the tree example, this would be the landscape."
 msgstr ""
-"Un nœud est utilisé comme cible, le maillage sur lequel vous voulez placer "
-"plusieurs maillages. Dans l'exemple de l'arbre, ce serait le paysage."
+"Un nœud sert de cible : c'est le maillage de surface sur lequel vous voulez "
+"placer plusieurs maillages. Dans l'exemple des arbres, ce serait le paysage."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:33
 msgid ""
@@ -67296,13 +67279,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/index.rst:6
-#, fuzzy
 msgid ""
 "This section of the tutorial covers using the two animation nodes in Godot "
 "and the animation editor."
 msgstr ""
-"Cliquez sur l'icône crayon en bas à droite du panneau d'animation. Cela "
-"ouvrira l'éditeur de transition."
+"Cette section du tutoriel traite de l'utilisation des deux nœuds d'animation "
+"de Godot et de l'éditeur d'animation."
 
 #: ../../docs/tutorials/animation/index.rst:21
 msgid ""
@@ -78548,9 +78530,8 @@ msgstr ""
 "``Editor > Manage Export Templates``."
 
 #: ../../docs/tutorials/export/exporting_projects.rst:109
-#, fuzzy
 msgid "This will open the export template manager."
-msgstr "Utilisation des modèles d'exportation"
+msgstr "Cela ouvrira le gestionnaire de modèles d'export."
 
 #: ../../docs/tutorials/export/exporting_projects.rst:113
 msgid ""
@@ -81813,7 +81794,6 @@ msgstr ""
 "fichier peut être généré comme ceci :"
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:151
-#, fuzzy
 msgid ""
 "This keystore and key are used to verify your developer identity, remember "
 "the password and keep it in a safe place! It is suggested to use only upper "
@@ -81822,10 +81802,12 @@ msgid ""
 "developer.android.com/studio/publish/app-signing>`__."
 msgstr ""
 "Ce keystore et cette clé sont utilisés pour vérifier votre identité de "
-"développeur, mémorisez le mot de passe et le conserver dans un endroit sûr ! "
-"Utilisez les guides de développement Android de Google pour en savoir plus "
-"sur `la signature APK <https://developer.android.com/studio/publish/app-"
-"signing>`__."
+"développeur, mémorisez le mot de passe et conservez le dans un endroit sûr ! "
+"Il est conseillé d'utiliser seulement des lettres majuscules et minuscules "
+"ainsi que des chiffres. Les caractères spéciaux peuvent créer des erreurs. "
+"Utilisez les guides de développeur Android de Google pour en savoir plus sur "
+"`la signature d'application <https://developer.android.com/studio/publish/"
+"app-signing>`__."
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:155
 msgid "Now fill in the following forms in your Android Export Presets:"
@@ -81859,20 +81841,19 @@ msgstr ""
 "exportez."
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:168
-#, fuzzy
 msgid "Optimizing the file size"
-msgstr "Optimiser la taille du fichier APK"
+msgstr "Optimiser la taille du fichier"
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:170
-#, fuzzy
 msgid ""
 "You can optimize the size of your application by compiling an Android export "
 "template with only the features you need. See :ref:`doc_optimizing_for_size` "
 "for more information."
 msgstr ""
-"Vous pouvez encore plus optimiser la taille de votre APK en compilant un "
-"modèle d'export Android qui ne contient que les fonctionnalités dont vous "
-"avez besoin. Voir :ref:`doc_optimizing_for_size` pour plus d'informations."
+"Vous pouvez encore plus optimiser la taille de votre application en "
+"compilant un modèle d'export Android qui ne contient que les fonctionnalités "
+"dont vous avez besoin. Voir :ref:`doc_optimizing_for_size` pour plus "
+"d'informations."
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:175
 msgid "Performing a custom Gradle build"
@@ -83667,9 +83648,8 @@ msgstr ""
 "Il y a certaines raisons pour lesquelles vous pourriez vouloir le faire :"
 
 #: ../../docs/tutorials/export/android_gradle_build.rst:13
-#, fuzzy
 msgid "Export an AAB file for Google Play."
-msgstr "Exporter pour le Google Play Store"
+msgstr "Exporter un fichier AAB pour Google Play."
 
 #: ../../docs/tutorials/export/android_gradle_build.rst:14
 msgid "Modify the project before it's built."
@@ -83792,15 +83772,15 @@ msgstr ""
 "**Project > Export**, **Custom Build** doit être activé :"
 
 #: ../../docs/tutorials/export/android_gradle_build.rst:72
-#, fuzzy
 msgid ""
 "From now on, attempting to export the project or one-click deploy will call "
 "the Gradle build system to generate fresh templates. The templates built "
 "will be used automatically afterwards, so no further configuration is needed."
 msgstr ""
 "Désormais, tenter d'exporter le projet ou de déployer en un clic appellera "
-"le système de compilation `Gradle <https://gradle.org/>`__ pour générer de "
-"nouveaux modèles (cette fenêtre apparaîtra à chaque fois) :"
+"le système de compilation Gradle pour générer de nouveaux modèles. Les "
+"modèles compilés seront utilisés automatiquement après, aucune autre "
+"configuration n'est nécessaire."
 
 #: ../../docs/tutorials/export/android_gradle_build.rst:78
 msgid ""
@@ -84274,13 +84254,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_dedicated_servers.rst:41
-#, fuzzy
 msgid ""
 "Both methods should result in identical output. The rest of the page will "
 "focus on the first approach."
 msgstr ""
-"Les deux méthodes devraient donner un résultat identique. Le texte ci-"
-"dessous décrit l'approche du fichier PCK."
+"Les deux méthodes devraient donner un résultat identique. Le reste de la "
+"page sera centré sur la première approche."
 
 #: ../../docs/tutorials/export/exporting_for_dedicated_servers.rst:44
 msgid "See :ref:`doc_exporting_projects` for more information."
@@ -105250,11 +105229,12 @@ msgid "Navigation link script templates"
 msgstr "Création de modèles de script"
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationlinks.rst:58
-#, fuzzy
 msgid ""
 "The following script uses the NavigationServer to create a new navigation "
 "link."
-msgstr "Les types RID NavigationServer suivants sont disponibles."
+msgstr ""
+"Le script suivant utilise le NavigationServer pour créer un nouveau lien de "
+"navigation."
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationlayers.rst:4
 msgid "Using NavigationLayers"
@@ -106854,7 +106834,6 @@ msgstr ""
 "utiliser ce qui suit :"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:148
-#, fuzzy
 msgid ""
 "Be aware that someone might analyze and decompile your released application "
 "and thus may gain access to any embedded authorization information like "
@@ -106862,13 +106841,12 @@ msgid ""
 "embed things such as database access credentials inside your game. Avoid "
 "providing information useful to an attacker whenever possible."
 msgstr ""
-"De plus, lorsque vous appelez des API en utilisant une autorisation, sachez "
-"que quelqu'un pourrait analyser et décompiler votre application publiée et "
-"ainsi avoir accès à toute information d'autorisation intégrée comme des "
-"jetons, des noms d'utilisateur ou des mots de passe. Cela signifie que ce "
-"n'est généralement pas une bonne idée d'intégrer dans votre jeu des éléments "
-"tels que les identifiants d'accès aux bases de données. Évitez autant que "
-"possible de fournir des informations utiles à un agresseur."
+"Sachez que quelqu'un pourrait analyser et décompiler votre application "
+"publiée et ainsi avoir accès à toute information d'autorisation intégrée "
+"comme des jetons, des noms d'utilisateur ou des mots de passe. Cela signifie "
+"que ce n'est généralement pas une bonne idée d'intégrer dans votre jeu des "
+"éléments tels que des identifiants d'accès aux bases de données. Évitez "
+"autant que possible de fournir des informations utiles à un agresseur."
 
 #: ../../docs/tutorials/networking/http_client_class.rst:6
 msgid "HTTP client class"
@@ -111780,7 +111758,6 @@ msgid "Scene tree"
 msgstr "Scene tree (Arbre de scène)"
 
 #: ../../docs/tutorials/performance/thread_safe_apis.rst:30
-#, fuzzy
 msgid ""
 "Interacting with the active scene tree is **not** thread-safe. Make sure to "
 "use mutexes when sending data between threads. If you want to call functions "
@@ -111788,10 +111765,11 @@ msgid ""
 "<class_Object_method_call_deferred>` or :ref:`set_deferred "
 "<class_Object_method_set_deferred>`:"
 msgstr ""
-"L'interaction avec l'arbre des scènes actif n'est **PAS** thread-safe. "
+"L'interaction avec l'arborescence de scène active n'est **pas** thread-safe. "
 "Veillez à utiliser des mutexes lors de l'envoi de données entre les threads. "
 "Si vous souhaitez appeler des fonctions ou définir des propriétés à partir "
-"d'un thread, vous pouvez utiliser <class_Object_method_call_deferred>` ou "
+"d'un thread, vous pouvez utiliser :ref:`call_deferred "
+"<class_Object_method_call_deferred>` ou :ref:`set_deferred "
 "<class_Object_method_set_deferred>` :"
 
 #: ../../docs/tutorials/performance/thread_safe_apis.rst:50
@@ -114034,13 +114012,12 @@ msgstr ""
 "équivalent à ``45`` degrés)"
 
 #: ../../docs/tutorials/physics/using_character_body_2d.rst:110
-#, fuzzy
 msgid ""
 "This property is the minimum angle where the body is allowed to slide when "
 "it hits a slope."
 msgstr ""
-"Ce paramètre est l'angle maximum avant qu'une surface ne soit plus "
-"considérée comme un \"sol.\""
+"Cette propriété est l'angle minimum auquel le corps est autorisé de glisser "
+"quand il touche une pente."
 
 #: ../../docs/tutorials/physics/using_character_body_2d.rst:113
 msgid ""
@@ -119007,13 +118984,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:73
-#, fuzzy
 msgid ""
 "Create an Android library module by following `these instructions <https://"
 "developer.android.com/studio/projects/android-library>`_."
 msgstr ""
 "Créez un module de bibliothèque Android en utilisant `ces instructions "
-"<https://developer.android.com/studio/projects/android-library>`_"
+"<https://developer.android.com/studio/projects/android-library>`_."
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:75
 msgid ""
@@ -119249,16 +119225,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:0
-#, fuzzy
 msgid ""
 "`_get_android_dependencies <https://docs.godotengine.org/en/latest/classes/"
 "class_editorexportplugin.html#class-editorexportplugin-method-get-android-"
 "dependencies>`_:"
 msgstr ""
-"Le mode image dans l'image peut être activé via le paramètre d'éditeur `run/"
-"window_placement/play_window_pip_mode <https://docs.godotengine.org/fr/4.x/"
-"classes/class_editorsettings.html#class-editorsettings-property-run-window-"
-"placement-play-window-pip-mode>`__."
+"`_get_android_dependencies <https://docs.godotengine.org/en/latest/classes/"
+"class_editorexportplugin.html#class-editorexportplugin-method-get-android-"
+"dependencies>`_ :"
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:0
 msgid ""
@@ -119508,7 +119482,7 @@ msgid ""
 "`GDExtension Android Plugin Template <https://github.com/m4gr3d/GDExtension-"
 "Android-Plugin-Template>`_"
 msgstr ""
-"` Modèle Plugin Android GDExtension <https://github.com/m4gr3d/GDExtension-"
+"`Modèle de Plugin Android GDExtension <https://github.com/m4gr3d/GDExtension-"
 "Android-Plugin-Template>`_"
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:347
@@ -121900,19 +121874,17 @@ msgid "Enabling a plugin"
 msgstr "Activation d'un plugin"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:61
-#, fuzzy
 msgid ""
 "To enable the freshly installed plugin, open **Project > Project Settings** "
 "at the top of the editor then go the **Plugins** tab. If the plugin was "
 "packaged correctly, you should see it in the list of plugins. Click on the "
 "**Enable** checkbox to enable the plugin."
 msgstr ""
-"Pour activer le plugin fraîchement installé, ouvrez **Projet > Paramètres du "
-"projet** en haut de l'éditeur puis allez dans l'onglet **Plugins**. Si le "
-"plugin a été correctement empaqueté, vous devriez le voir dans la liste des "
-"plugins. Cliquez sur le texte gris **Inactif** et choisissez **Actif** pour "
-"activer le plugin. Le mot **Actif** s'affichera en vert pour confirmer que "
-"le plugin a été activé."
+"Pour activer le plugin que vous venez d'installer, ouvrez **Projet > "
+"Paramètres du projet** en haut de l'éditeur, puis allez dans l'onglet "
+"**Extensions**. Si le plugin a été correctement empaqueté, il devrait "
+"apparaître dans la liste des plugins. Cochez la case **Activer** pour "
+"l'activer."
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:69
 msgid ""
@@ -124603,14 +124575,13 @@ msgid "Choose **Compatibility** if:"
 msgstr "Choisissez **Compatibilité** si :"
 
 #: ../../docs/tutorials/rendering/renderers.rst:78
-#, fuzzy
 msgid ""
 "You are developing for older mobile devices, or older desktop devices. The "
 "Compatibility renderer supports the widest range of hardware."
 msgstr ""
-"Vous développez pour des appareils mobiles plus anciens, des appareils de "
-"bureau plus anciens ou des appareils XR autonomes. Le moteur de rendu "
-"Compatibilité prend en charge la plus large gamme de matériel."
+"Vous développez pour des appareils mobiles plus anciens ou des appareils de "
+"bureau plus anciens. Le moteur de rendu Compatibilité prend en charge la "
+"plus large gamme de matériel."
 
 #: ../../docs/tutorials/rendering/renderers.rst:80
 msgid ""
@@ -129056,9 +129027,8 @@ msgid "func"
 msgstr "func"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:189
-#, fuzzy
 msgid "Defines a function. See `Functions`_."
-msgstr "Définit une fonction.  Voir `Functions`_."
+msgstr "Définit une fonction. Voir `Fonctions`_."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:191
 msgid "static"
@@ -129188,12 +129158,11 @@ msgid "NAN"
 msgstr "NAN"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:218
-#, fuzzy
 msgid ""
 "NaN (Not a Number) constant. Used as an impossible result from calculations."
 msgstr ""
-"Constante NAN (pas un nombre, Not A Number en anglais). Utilisée comme "
-"résultat quand les calculs sont impossibles."
+"Constante NaN (pas un nombre, Not a Number en anglais). Utilisée comme "
+"résultat impossible de lors de calculs."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:222
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:496
@@ -136885,17 +136854,15 @@ msgstr ""
 "vers :ref:`doc_gdscript_warning_system`."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:465
-#, fuzzy
 msgid ""
 "Godot gives you warnings about your code as you write it. The engine "
 "identifies sections of your code that may lead to issues at runtime, but "
 "lets you decide whether or not you want to leave the code as it is."
 msgstr ""
-"À partir de la version 3.1, Godot vous donne des avertissements sur votre "
-"code au fur et à mesure que vous l'écrivez : le moteur identifie les "
-"sections de votre code qui peuvent entraîner des problèmes lors de "
-"l'exécution, mais vous laisse décider si vous souhaitez ou non laisser le "
-"code tel quel."
+"Godot vous donne des avertissements sur votre code au fur et à mesure que "
+"vous l'écrivez. Le moteur identifie les sections de votre code qui peuvent "
+"entraîner des problèmes lors de l'exécution, mais vous laisse décider si "
+"vous souhaitez ou non laisser le code tel quel."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:469
 msgid ""
@@ -137086,18 +137053,16 @@ msgid ":ref:`Vector2.lerp() <class_Vector2_method_lerp>`"
 msgstr ":ref:`Vector2.lerp() <class_Vector2_method_lerp>`"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:0
-#, fuzzy
 msgid ":ref:`Vector3.lerp() <class_Vector3_method_lerp>`"
-msgstr ":ref:`Vector3 <class_Vector3>`"
+msgstr ":ref:`Vector3.lerp() <class_Vector3_method_lerp>`"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:0
 msgid ":ref:`Vector4.lerp() <class_Vector4_method_lerp>`"
 msgstr ":ref:`Vector4.lerp() <class_Vector4_method_lerp>`"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:0
-#, fuzzy
 msgid ":ref:`Color.lerp() <class_Color_method_lerp>`"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ":ref:`Color.lerp() <class_Color_method_lerp>`"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:0
 msgid ":ref:`Quaternion.slerp() <class_Quaternion_method_slerp>`"
@@ -137255,15 +137220,14 @@ msgstr ""
 "ses méthodes ::"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:594
-#, fuzzy
 msgid ""
 "Alternatively, you can declare a variable and use the ``as`` operator to try "
 "to cast the object. You'll then want to check whether the cast was "
 "successful by confirming that the variable was assigned:"
 msgstr ""
 "Autrement, vous pouvez déclarer une variable et utiliser l'opérateur ``as`` "
-"pour essayer de convertir l'objet. Vous devrez ensuite vérifier si le "
-"transtypage a réussi en confirmant que la variable a été affectée ::"
+"pour essayer de cast l'objet. Vous devrez ensuite vérifier si le cast a "
+"réussi en confirmant que la variable a été assignée :"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:606
 msgid "``UNSAFE_CAST`` warning"
@@ -137286,7 +137250,6 @@ msgstr ""
 "comme ceci ::"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:619
-#, fuzzy
 msgid ""
 "This piece of code produces an ``UNSAFE_PROPERTY_ACCESS`` warning because "
 "``label`` is not defined in ``Node2D``. To solve this, we could first check "
@@ -137295,11 +137258,10 @@ msgid ""
 msgstr ""
 "Ce morceau de code génère un avertissement ``UNSAFE_PROPERTY_ACCESS`` car "
 "``label`` n'est pas défini dans ``Node2D``. Pour résoudre ce problème, nous "
-"pourrions d'abord vérifier si la propriété ``label`` existe et la convertir "
-"en type ``Label`` avant de définir sa propriété de texte comme suit ::"
+"pourrions d'abord vérifier si la propriété ``label`` existe et la cast en le "
+"type ``Label`` avant de définir sa propriété de texte comme suit :"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:630
-#, fuzzy
 msgid ""
 "However, this produces an ``UNSAFE_CAST`` warning because ``body.label`` is "
 "of a ``Variant`` type. To safely get the property in the type you want, you "
@@ -137315,7 +137277,7 @@ msgstr ""
 "l'objet sous forme de valeur ``Variant`` ou renvoie ``null`` si la propriété "
 "n'existe pas. Vous pouvez ensuite déterminer si la propriété contient un "
 "objet du bon type à l'aide du mot-clé ``is`` et enfin déclarer une variable "
-"typée statiquement avec l'objet ::"
+"typée statiquement avec l'objet :"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:646
 msgid "Cases where you can't specify types"
@@ -137330,18 +137292,16 @@ msgstr ""
 "utiliser les indications de type. Cela déclenchera une **erreur de syntaxe**."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:653
-#, fuzzy
 msgid ""
 "You can't specify the type of individual elements in an array or a "
 "dictionary:"
 msgstr ""
-"Vous ne pouvez pas spécifier le type de membres individuels dans un tableau "
-"ou dans un dictionnaire ::"
+"Vous ne pouvez pas spécifier le type d'éléments individuels dans un tableau "
+"ou dans un dictionnaire :"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:664
-#, fuzzy
 msgid "Nested types are not currently supported:"
-msgstr "Les types imbriqués ne sont actuellement pas pris en charge ::"
+msgstr "Les types imbriqués ne sont actuellement pas pris en charge :"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:676
 msgid ""
@@ -137985,7 +137945,6 @@ msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 msgstr "``\"Salut, {0} v{1} !\".format([\"Godette\",\"3.0\"])``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:266
-#, fuzzy
 msgid "``\"Hi, {name} v{0}!\".format([\"3.0\", [\"name\",\"Godette\"]])``"
 msgstr "``\"Salut, {nom} v{0} !\".format([3.0, [\"nom\":\"Godette\"]])``"
 
@@ -137994,7 +137953,6 @@ msgid "no index"
 msgstr "pas d'index"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:268
-#, fuzzy
 msgid "``\"Hi, {} v{}!\".format([\"Godette\", \"3.0\"], \"{}\")``"
 msgstr "``\"Salut, {} v{}\".format([\"Godette\", \"3.0\"], \"{}\")``"
 
@@ -138121,9 +138079,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/index.rst:46
-#, fuzzy
 msgid "C# platform support"
-msgstr "Page HTML custom pour un export Web"
+msgstr "Support de la plateforme C#"
 
 #: ../../docs/tutorials/scripting/c_sharp/index.rst:50
 #, fuzzy
@@ -143396,9 +143353,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:11
-#, fuzzy
 msgid "Choose a collection"
-msgstr "Ports et connexions"
+msgstr "Choisir une collection"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:13
 msgid ""
@@ -145473,15 +145429,14 @@ msgid "Differences between godot-cpp and C++ modules"
 msgstr "Différences entre les modules godot-cpp et C++"
 
 #: ../../docs/tutorials/scripting/cpp/about_godot_cpp.rst:19
-#, fuzzy
 msgid ""
 "You can use both `godot-cpp <https://github.com/godotengine/godot-cpp>`__ "
 "and :ref:`C++ modules <doc_custom_modules_in_cpp>` to run C or C++ code in a "
 "Godot project."
 msgstr ""
-"Vous pouvez utiliser les modules GDNative et les :ref:`modules C++ "
-"<doc_custom_modules_in_c++>` pour exécuter du code C ou C++ dans un projet "
-"Godot."
+"Vous pouvez utiliser à la fois `godot-cpp <https://github.com/godotengine/"
+"godot-cpp>`__ et :ref:`des modules C++ <doc_custom_modules_in_cpp>` pour "
+"exécuter du code C ou C++ dans un projet Godot."
 
 #: ../../docs/tutorials/scripting/cpp/about_godot_cpp.rst:22
 msgid ""
@@ -147647,9 +147602,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:100
-#, fuzzy
 msgid "``vararg``: the method can accept an arbitrary number of arguments."
-msgstr "Hach chaque clé un nombre arbitraire de fois."
+msgstr "``vararg`` : la méthode peut accepter un nombre arbitraire d'arguments."
 
 #: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:107
 msgid ""
@@ -150201,20 +150155,18 @@ msgstr ""
 "libérer le nœud parent le plus élevé."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:184
-#, fuzzy
 msgid ""
 "Scenes are templates from which you can create as many reproductions as "
 "you'd like. This operation is called instantiation, and doing it from code "
 "happens in two steps:"
 msgstr ""
-"Les scènes sont des modèles à partir desquels vous pouvez créer autant de "
+"Les scènes sont des modèles à partir desquelles vous pouvez créer autant de "
 "reproductions que vous le souhaitez. Cette opération s'appelle "
-"l'instanciation et se fait en deux étapes à partir du code :"
+"l'instanciation, et se fait en deux étapes à partir du code :"
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:188
-#, fuzzy
 msgid "Loading the scene from the local drive."
-msgstr "Chargement de la scène depuis le disque dur."
+msgstr "Charger la scène depuis le disque dur."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:189
 msgid ""
@@ -150286,13 +150238,12 @@ msgstr ""
 "consultez :ref:`doc_godot_notifications`."
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:15
-#, fuzzy
 msgid ""
 "Two functions allow you to initialize and get nodes besides the class's "
 "constructor: ``_enter_tree()`` and ``_ready()``."
 msgstr ""
-"Deux fonctions vous permettent d'initialiser et de récupérer les noeuds, en "
-"plus du constructeur de la classe : ``_enter_tree()`` et ``_ready()``."
+"Deux fonctions vous permettent d'initialiser et de récupérer des nœuds, en "
+"plus du constructeur de la classe : ``_enter_tree()`` et ``_ready()``."
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:18
 msgid ""
@@ -150308,7 +150259,6 @@ msgstr ""
 "être appelée plusieurs fois pendant la durée de vie d'un nœud."
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:23
-#, fuzzy
 msgid ""
 "Most of the time, you'll use ``_ready()`` instead. This function is called "
 "only once in a node's lifetime, after ``_enter_tree()``. ``_ready()`` "
@@ -150316,10 +150266,10 @@ msgid ""
 "safely call ``get_node()`` on them."
 msgstr ""
 "La plupart du temps, vous utiliserez ``_ready()`` à la place. Cette fonction "
-"n'est appelée qu'une seule fois dans la vie d'un noeud, après "
-"``_enter_tree()``. ``_ready()`` s'assure que tous les enfants sont entrés "
-"dans l'arbre de la scène en premier, de sorte que vous pouvez en toute "
-"sécurité appeler ``get_node()`` sur lui."
+"n'est appelée qu'une seule fois dans la vie d'un nœud, après ``_enter_tree()"
+"``. ``_ready()`` s'assure que tous les enfants sont entrés dans "
+"l'arborescence de la scène en premier, de sorte que vous pouvez en toute "
+"sécurité appeler ``get_node()`` sur eux."
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:27
 msgid ""
@@ -150330,7 +150280,6 @@ msgstr ""
 "lisez :ref:`doc_nodes_and_scene_instances`."
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:30
-#, fuzzy
 msgid ""
 "Another related callback is ``_exit_tree()``, which the engine calls every "
 "time a node is about to exit the scene tree. This can be when you "
@@ -150338,9 +150287,9 @@ msgid ""
 "free a node."
 msgstr ""
 "Un autre callback lié est ``_exit_tree()``, que le moteur appelle chaque "
-"fois qu'un nœud sort de l'arbre de scène. Cela peut être lorsque vous "
-"appelez :ref:`Node.remove_child() <class_Node_method_remove_child>` ou "
-"lorsque vous libérez un noeud."
+"fois qu'un nœud sort de l'arborescence de la scène. Cela peut être lorsque "
+"vous appelez :ref:`Node.remove_child() <class_Node_method_remove_child>` ou "
+"lorsque vous libérez un nœud."
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:71
 msgid ""
@@ -150596,9 +150545,8 @@ msgstr ""
 "suivants sont passés à la méthode en question."
 
 #: ../../docs/tutorials/scripting/cross_language_scripting.rst:227
-#, fuzzy
 msgid "Connecting to signals"
-msgstr "Connecter le HUD à Main"
+msgstr "Se connecter à des signaux"
 
 #: ../../docs/tutorials/scripting/cross_language_scripting.rst:230
 #, fuzzy
@@ -150943,9 +150891,10 @@ msgid "``_CLASS_SNAKE_CASE_``"
 msgstr "``_CLASS_SNAKE_CASE_``"
 
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:208
-#, fuzzy
 msgid "The name of the new class as ``snake_case`` (used in GDScript only)."
-msgstr "Le nom de la nouvelle classe (uniquement utilisé en C#)."
+msgstr ""
+"Le nom de la nouvelle classe en ``snake_case`` (utilisé en GDScript "
+"seulement)."
 
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:211
 msgid "``_BASE_``"
@@ -151165,9 +151114,9 @@ msgid ""
 "Use parentheses to override the order of operations if needed."
 msgstr ""
 "Les espaces autour des opérateurs sont facultatifs. Gardez également à "
-"l'esprit que l'ordre habituel des opérations <https://en.wikipedia.org/wiki/"
-"Order_of_operations>`__ s'applique. Utilisez les parenthèses pour remplacer "
-"l'ordre des opérations si nécessaire."
+"l'esprit que l'`ordre habituel des opérations <https://fr.wikipedia.org/wiki/"
+"Ordre_des_op%C3%A9rations>`__ s'applique. Utilisez des parenthèses pour "
+"redéfinir l'ordre des opérations si nécessaire."
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:64
 msgid ""
@@ -151292,15 +151241,14 @@ msgid "Built-in functions"
 msgstr "Fonctions intégrées"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:228
-#, fuzzy
 msgid ""
 "All methods in the :ref:`Global Scope<class_@GlobalScope>` are available in "
 "the Expression class, even if no base instance is bound to the expression. "
 "The same parameters and return types are available."
 msgstr ""
-"La plupart des méthodes disponibles dans la portée :ref:`class_@GDScript` "
-"sont disponibles dans la classe Expression, même si aucune instance de base "
-"n'est liée à l'expression. Les mêmes paramètres et types de retour sont "
+"Toutes les méthodes de la :ref:`Portée Globale<class_@GlobalScope>` sont "
+"disponibles dans la classe Expression, même si aucune instance de base n'est "
+"liée à l'expression. Les mêmes paramètres et types de renvoi sont "
 "disponibles."
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:232
@@ -151455,7 +151403,6 @@ msgstr ""
 "les données."
 
 #: ../../docs/tutorials/scripting/change_scenes_manually.rst:86
-#, fuzzy
 msgid ""
 "Con: More data is being kept in memory, which will become a problem on "
 "memory-sensitive platforms like web or mobile."
@@ -151498,7 +151445,6 @@ msgstr ""
 "qu'on lui impose."
 
 #: ../../docs/tutorials/scripting/change_scenes_manually.rst:103
-#, fuzzy
 msgid ""
 "**Remove the existing scene from the tree.** Assign a variable to the "
 "existing scene's root node. Then use :ref:`Node.remove_child(Node) "
@@ -151506,9 +151452,11 @@ msgid ""
 "To attach it later, use :ref:`Node.add_child(Node) "
 "<class_Node_method_add_child>`."
 msgstr ""
-"**Supprimer la scène existante de l'arbre** Assignez une variable au nœud "
+"**Supprimer la scène existante de l'arbre.** Assignez une variable au nœud "
 "racine de la scène existante. Utilisez ensuite :ref:`Node.remove_child(Node) "
-"<class_Node_method_remove_child>` pour détacher la scène entière de l'arbre."
+"<class_Node_method_remove_child>` pour détacher la scène entière de l'arbre. "
+"Pour l'attacher plus tard, utilisez :ref:`Node.add_child(Node) "
+"<class_Node_method_add_child>`."
 
 #: ../../docs/tutorials/scripting/change_scenes_manually.rst:109
 msgid "Memory still exists (similar pros/cons as hiding it from view)."
@@ -151580,7 +151528,6 @@ msgstr ""
 "correspond le mieux à une situation particulière."
 
 #: ../../docs/tutorials/scripting/instancing_with_signals.rst:7
-#, fuzzy
 msgid "Instantiation with signals"
 msgstr "Instanciation avec des signaux"
 
@@ -152367,7 +152314,6 @@ msgstr ""
 "peut être ajouté comme enfant à n'importe quel autre nœud."
 
 #: ../../docs/tutorials/scripting/resources.rst:144
-#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instantiate() "
 "<class_PackedScene_method_instantiate>` function is fast, you can create new "
@@ -152375,47 +152321,46 @@ msgid ""
 "each time. Remember that, as always, images, meshes, etc. are all shared "
 "between the scene instances."
 msgstr ""
-"Cette approche présente plusieurs avantages. Comme la "
-"fonction :ref:`PackedScene.instance() <class_PackedScene_method_instance>` "
-"est rapide, vous pouvez créez de nouveaux ennemis, balles, effets, etc... "
-"sans avoir à les recharger à chaque fois à partir du disque dur. Il est "
-"important de se rappeler que, comme toujours, les images, les maillages, etc "
-"sont tous partagés entre les instances de la scène."
+"Cette approche présente plusieurs avantages. Comme la fonction "
+":ref:`PackedScene.instantiate() <class_PackedScene_method_instantiate>` est "
+"rapide, vous pouvez créez de nouveaux ennemis, balles, effets, etc... sans "
+"avoir à les recharger à chaque fois à partir du disque dur. Il est important "
+"de se rappeler que, comme toujours, les images, les maillages, etc sont tous "
+"partagés entre les instances de la scène."
 
 #: ../../docs/tutorials/scripting/resources.rst:151
 msgid "Freeing resources"
 msgstr "Libérer des ressources"
 
 #: ../../docs/tutorials/scripting/resources.rst:153
-#, fuzzy
 msgid ""
 "When a :ref:`Resource <class_Resource>` is no longer in use, it will "
 "automatically free itself. Since, in most cases, Resources are contained in "
 "Nodes, when you free a node, the engine frees all the resources it owns as "
 "well if no other node uses them."
 msgstr ""
-"Lorsqu'une ``Resource`` n'est plus utilisée, elle se libère automatiquement. "
-"Puisque, dans la plupart des cas, les ressources sont contenues dans des "
-"Nœuds, quand un nœud est libéré, le moteur libère également toutes les "
-"ressources de ce nœud si aucun autres nœuds ne les utilisent."
+"Lorsqu'une :ref:`Resource <class_Resource>` n'est plus utilisée, elle se "
+"libère automatiquement. Puisque, dans la plupart des cas, les ressources "
+"sont contenues dans des Nodes, quand un nœud est libéré, le moteur libère "
+"également toutes les ressources de ce nœud si aucun autres nœud ne les "
+"utilise."
 
 #: ../../docs/tutorials/scripting/resources.rst:158
 msgid "Creating your own resources"
 msgstr "Créer vos propres ressources"
 
 #: ../../docs/tutorials/scripting/resources.rst:160
-#, fuzzy
 msgid ""
 "Like any Object in Godot, users can also script Resources. Resource scripts "
 "inherit the ability to freely translate between object properties and "
 "serialized text or binary data (\\*.tres, \\*.res). They also inherit the "
 "reference-counting memory management from the RefCounted type."
 msgstr ""
-"Comme tout Object de Godot, les utilisateurs peuvent également scripter les "
-"Resources. Les scripts de Resource héritent de la possibilité de traduire "
-"librement les propriétés d'objet vers le texte sérialisé ou les données "
+"Comme tout Object de Godot, les utilisateurs peuvent également scripter des "
+"ressources. Les scripts de ressources héritent de la possibilité de traduire "
+"librement les propriétés d'objet vers du texte sérialisé ou des données "
 "binaires (\\*.tres, \\*.res) et inversement. Ils héritent également de la "
-"gestion de la mémoire par comptage de référence du type Référence."
+"gestion de la mémoire par comptage de référence du type RefCounted."
 
 #: ../../docs/tutorials/scripting/resources.rst:165
 #, fuzzy
@@ -152948,13 +152893,12 @@ msgid "Creating the script"
 msgstr "Création d'un script"
 
 #: ../../docs/tutorials/scripting/singletons_autoload.rst:146
-#, fuzzy
 msgid ""
 "Open the **Script** window and create a new script called ``global.gd``. "
 "Make sure it inherits from ``Node``:"
 msgstr ""
-"Passez à l'onglet **Script** et créez un nouveau script appelé "
-"``Global.gd``. Assurez-vous qu'il hérite de ``Node`` :"
+"Ouvrez la fenêtre **Script** et créez un nouveau script appelé "
+"``global.gd``. Assurez-vous qu'il hérite de ``Node`` :"
 
 #: ../../docs/tutorials/scripting/singletons_autoload.rst:151
 #, fuzzy
@@ -154733,7 +154677,6 @@ msgstr ""
 "dimension. Il y a deux règles :"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:211
-#, fuzzy
 msgid ""
 "1. If a larger matrix is constructed from a smaller matrix, the additional "
 "rows and columns are set to the values they would have in an identity "
@@ -154900,7 +154843,6 @@ msgstr ""
 "doivent être initialisées lors de leur déclaration."
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:377
-#, fuzzy
 msgid ""
 "Constants cannot be modified and additionally cannot have hints, but "
 "multiple of them (if they have the same type) can be declared in a single "
@@ -154908,7 +154850,7 @@ msgid ""
 msgstr ""
 "Les constantes ne peuvent pas être modifiées et ne peuvent pas non plus "
 "avoir d'indices, mais plusieurs d'entre elles (si elles ont le même type) "
-"peuvent être déclarées dans une seule expression, par exemple"
+"peuvent être déclarées dans une même expression."
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:384
 msgid "Similar to variables, arrays can also be declared with ``const``."
@@ -154975,13 +154917,12 @@ msgid "Or use struct constructor for same purpose:"
 msgstr "Ou utiliser le constructeur de struct à la même fin :"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:458
-#, fuzzy
 msgid ""
 "Structs may contain other struct or array, you can also instantiate them as "
 "global constant:"
 msgstr ""
 "Les structures peuvent contenir d'autres structures ou tableaux, vous pouvez "
-"également les considérer comme une constante globale :"
+"également les instancier comme une constante globale :"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:478
 msgid "You can also pass them to functions:"
@@ -155263,15 +155204,16 @@ msgstr ""
 "utilisent la syntaxe suivante :"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:680
-#, fuzzy
 msgid ""
 "You can only use functions that have been defined above (higher in the "
 "editor) the function from which you are calling them. Redefining a function "
 "that has already been defined above (or is a built-in function name) will "
 "cause an error."
 msgstr ""
-"Vous pouvez uniquement utiliser les fonctions qui ont été définies au-dessus "
-"(plus haut dans l'éditeur) la fonction à partir de laquelle vous les appelez."
+"Vous pouvez uniquement utiliser des fonctions qui ont été définies au-dessus "
+"(plus haut dans l'éditeur) de la fonction à partir de laquelle vous les "
+"appelez. Redéfinir une fonction qui a déjà été définie au-dessus (ou a le "
+"même nom qu'une fonction intégrée) causera une erreur."
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:684
 msgid "Function arguments can have special qualifiers:"
@@ -156008,13 +155950,12 @@ msgid "**Cubemap**"
 msgstr "**Cubemap**"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:1263
-#, fuzzy
 msgid ""
 "See :ref:`doc_importing_images_changing_import_type` for instructions on "
 "importing cubemaps for use in Godot."
 msgstr ""
-"Voir :ref:`doc_internationalizing_games` pour plus d'informations sur "
-"l'importation et le test des traductions dans Godot."
+"Voir :ref:`doc_importing_images_changing_import_type` pour des instructions "
+"sur l'importation de cubemaps à utiliser dans Godot."
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:1266
 msgid "**CubemapArray**"
@@ -156856,9 +156797,8 @@ msgid "The value whose hyperbolic cosine to return."
 msgstr "Cosinus hyperbolique inverse."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:395
-#, fuzzy
 msgid "The hyperbolic cosine of ``x``."
-msgstr "Cosinus hyperbolique inverse."
+msgstr "Le cosinus hyperbolique de ``x``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:397
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cosh.xhtml"
@@ -156878,9 +156818,8 @@ msgid "The value whose hyperbolic tangent to return."
 msgstr "Tangente hyperbolique inverse."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:418
-#, fuzzy
 msgid "The hyperbolic tangent of ``x``."
-msgstr "Tangente hyperbolique inverse."
+msgstr "La tangente hyperbolique de ``x``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:420
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tanh.xhtml"
@@ -156901,9 +156840,8 @@ msgid "The value whose arc hyperbolic sine to return."
 msgstr "Sinus hyperbolique inverse."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:441
-#, fuzzy
 msgid "The arc hyperbolic sine of ``x``."
-msgstr "Sinus hyperbolique inverse."
+msgstr "Le sinus hyperbolique inverse de ``x``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:443
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asinh.xhtml"
@@ -156925,9 +156863,8 @@ msgid "The value whose arc hyperbolic cosine to return."
 msgstr "Cosinus hyperbolique inverse."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:465
-#, fuzzy
 msgid "The arc hyperbolic cosine of ``x``."
-msgstr "Cosinus hyperbolique inverse."
+msgstr "Le cosinus hyperbolique inverse de ``x``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:467
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acosh.xhtml"
@@ -156949,9 +156886,8 @@ msgid "The value whose arc hyperbolic tangent to return."
 msgstr "Tangente hyperbolique inverse."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:489
-#, fuzzy
 msgid "The arc hyperbolic tangent of ``x``."
-msgstr "Tangente hyperbolique inverse."
+msgstr "La tangente hyperbolique inverse de ``x``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:491
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atanh.xhtml"
@@ -156966,9 +156902,8 @@ msgid ":ref:`pow<shader_func_pow>`\\ (\\ |vec_type| x, |vec_type| y)"
 msgstr ":ref:`pow<shader_func_pow>`\\ (\\ |vec_type| x, |vec_type| y)"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:517
-#, fuzzy
 msgid "Power (undefined if ``x < 0`` or if ``x == 0`` and ``y <= 0``)."
-msgstr "Puissance (indéfinie si ``x`` < 0 ou si ``x`` == 0 et ``y`` <= 0)."
+msgstr "Puissance (indéfinie si ``x < 0`` ou si ``x == 0`` et ``y <= 0``)."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:519
 msgid ":ref:`exp<shader_func_exp>`\\ (\\ |vec_type| x)"
@@ -157057,7 +156992,6 @@ msgid ":ref:`floor<shader_func_floor>`\\ (\\ |vec_type| x)"
 msgstr ":ref:`floor<shader_func_floor>`\\ (\\ |vec_type| x)"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:540
-#, fuzzy
 msgid "Rounds to the integer below."
 msgstr "Arrondit à l’entier inférieur."
 
@@ -157066,7 +157000,6 @@ msgid ":ref:`round<shader_func_round>`\\ (\\ |vec_type| x)"
 msgstr ":ref:`round<shader_func_round>`\\ (\\ |vec_type| x)"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:542
-#, fuzzy
 msgid "Rounds to the nearest integer."
 msgstr "Arrondit à l’entier le plus proche."
 
@@ -157075,7 +157008,6 @@ msgid ":ref:`roundEven<shader_func_roundEven>`\\ (\\ |vec_type| x)"
 msgstr ":ref:`roundEven<shader_func_roundEven>`\\ (\\ |vec_type| x)"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:544
-#, fuzzy
 msgid "Rounds to the nearest even integer."
 msgstr "Arrondit à l’entier pair le plus proche."
 
@@ -157092,7 +157024,6 @@ msgid ":ref:`ceil<shader_func_ceil>`\\ (\\ |vec_type| x)"
 msgstr ":ref:`ceil<shader_func_ceil>`\\ (\\ |vec_type| x)"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:548
-#, fuzzy
 msgid "Rounds to the integer above."
 msgstr "Arrondit à l’entier supérieur."
 
@@ -157101,9 +157032,8 @@ msgid ":ref:`fract<shader_func_fract>`\\ (\\ |vec_type| x)"
 msgstr ":ref:`fract<shader_func_fract>`\\ (\\ |vec_type| x)"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:550
-#, fuzzy
 msgid "Fractional (returns ``x - floor(x)``)."
-msgstr "Fractional (renvoie ``x - floor(x)``)."
+msgstr "Partie fractionnelle (renvoie ``x - floor(x)``)."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:0
 msgid ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, |vec_type| y)"
@@ -157187,10 +157117,8 @@ msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, uint b)"
 msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, uint b)"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:564
-#, fuzzy
 msgid "Highest value between ``a`` and ``b``."
-msgstr ""
-"Cela donnera à chaque poisson une vitesse unique entre ``2`` et ``10``."
+msgstr "Valeur la plus grande entre ``a`` et ``b``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:0
 msgid ""
@@ -157388,18 +157316,16 @@ msgid "Raises ``x`` to the power of ``y``."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:620
-#, fuzzy
 msgid "The result is undefined if ``x < 0``, or if ``x == 0`` and ``y <= 0``."
-msgstr "Puissance (indéfinie si ``x`` < 0 ou si ``x`` == 0 et ``y`` <= 0)."
+msgstr "Le résultat est indéfini si ``x < 0``, ou si ``x == 0`` et ``y <= 0``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:623
 msgid "The value to be raised to the power ``y``."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:626
-#, fuzzy
 msgid "The power to which ``x`` will be raised."
-msgstr "L'emplacement où le fichier sera créé."
+msgstr "La puissance à laquelle ``x`` sera élevé."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:629
 msgid "The value of ``x`` raised to the ``y`` power."
@@ -157452,9 +157378,8 @@ msgid "The value of the power to which ``2`` will be raised."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:679
-#, fuzzy
 msgid "``2`` raised to the power of ``x``."
-msgstr "``move_up`` lié à la touche flèche haut."
+msgstr "``2`` élevé à la puissance ``x``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:681
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
@@ -157475,9 +157400,8 @@ msgid "The value of which to take the natural logarithm."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:703
-#, fuzzy
 msgid "The natural logarithm of ``x``."
-msgstr "Logarithme naturel."
+msgstr "Le logarithme naturel de ``x``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:705
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log.xhtml"
@@ -157498,9 +157422,8 @@ msgid "The value of which to take the base-2 logarithm."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:727
-#, fuzzy
 msgid "The base-2 logarithm of ``x``."
-msgstr "Logarithme de base 2."
+msgstr "Le logarithme de base 2 de ``x``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:729
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log2.xhtml"
@@ -157519,9 +157442,8 @@ msgid "The value of which to take the square root."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:751
-#, fuzzy
 msgid "The square root of ``x``."
-msgstr "Racine carrée inverse."
+msgstr "La racine carrée de ``x``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:753
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sqrt.xhtml"
@@ -157546,9 +157468,8 @@ msgid "The value of which to take the inverse of the square root."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:775
-#, fuzzy
 msgid "The inverse of the square root of ``x``."
-msgstr "Racine carrée inverse."
+msgstr "L'inverse de la racine carrée de ``x``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:777
 msgid ""
@@ -157640,9 +157561,8 @@ msgid "|vec_type| **round**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
 msgstr "|vec_type| **round**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:869
-#, fuzzy
 msgid "Rounds ``x`` to the nearest integer."
-msgstr "Arrondit à l’entier le plus proche."
+msgstr "Arrondit ``x`` à l’entier le plus proche."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:872
 msgid ""
@@ -157653,9 +157573,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:877
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:902
-#, fuzzy
 msgid "The value to round."
-msgstr "Le fichier à précharger."
+msgstr "La valeur à arrondir."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:880
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:905
@@ -157699,9 +157618,8 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:949
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:974
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1004
-#, fuzzy
 msgid "The value to evaluate."
-msgstr "La valeur n'est pas interpolée."
+msgstr "La valeur à évaluer."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:929
 msgid "The truncated value."
@@ -157802,9 +157720,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1030
-#, fuzzy
 msgid "The value to separate."
-msgstr "La valeur n'est pas interpolée."
+msgstr "La valeur à séparer."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:0
 msgid "param out i"
@@ -158096,10 +158013,8 @@ msgid "param c"
 msgstr "param c"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1217
-#, fuzzy
 msgid "The value to use to interpolate between ``a`` and ``b``."
-msgstr ""
-"Cela donnera à chaque poisson une vitesse unique entre ``2`` et ``10``."
+msgstr "La valeur à utiliser pour interpoler entre ``a`` et ``b``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1220
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1251
@@ -158147,10 +158062,8 @@ msgid "Value returned when ``c`` is true."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1248
-#, fuzzy
 msgid "The value used to select between ``a`` and ``b``."
-msgstr ""
-"Cela donnera à chaque poisson une vitesse unique entre ``2`` et ``10``."
+msgstr "La valeur utilisée pour sélectionner entre ``a`` et ``b``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1264
 msgid ""
@@ -158194,9 +158107,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1282
-#, fuzzy
 msgid "The first value to be multiplied."
-msgstr "Le fichier à précharger."
+msgstr "La première valeur à multiplier."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1285
 msgid "The second value to be multiplied."
@@ -158279,9 +158191,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1348
-#, fuzzy
 msgid "Smoothstep is equivalent to:"
-msgstr "Cette commande est équivalente :"
+msgstr "Smoothstep est équivalent à :"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1356
 msgid "Results are undefined if ``a >= b``."
@@ -158438,9 +158349,8 @@ msgstr "Vecteur à trois composantes de valeurs à virgule flottante."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1494
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1522
-#, fuzzy
 msgid "A floating-point value."
-msgstr "Nombres à virgule flottante."
+msgstr "Une valeur à virgule flottante."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1496
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1524
@@ -158544,9 +158454,8 @@ msgstr ""
 "I, |vec_type| Nref)"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1573
-#, fuzzy
 msgid "If ``dot(Nref, I) < 0``, returns ``N``, otherwise ``-N``."
-msgstr "Si ``dot(Nref, I)`` < 0, retourne ``N``, sinon ``-N``."
+msgstr "Si ``dot(Nref, I) < 0``, renvoie ``N``, sinon ``-N``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1575
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1577
@@ -158623,9 +158532,8 @@ msgid "The vector"
 msgstr "Le vecteur"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1606
-#, fuzzy
 msgid "The length of the vector."
-msgstr "Le contenu du fichier."
+msgstr "La longueur du vecteur."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1608
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/length.xhtml"
@@ -158640,27 +158548,24 @@ msgstr ""
 "b) :ref:`🔗<shader_func_distance>`"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1621
-#, fuzzy
 msgid ""
 "Returns the distance between the two points ``a`` and ``b``, i.e., "
 "``length(b - a);``"
 msgstr ""
-"Renvoie le produit scalaire de deux vecteurs, ``a`` et ``b``. i.e, ``a.x * "
-"b.x + a.y * b.y + ...``"
+"Renvoie la distance entre les deux points ``a`` et ``b``. i.e, ``length(b - "
+"a);``"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1625
-#, fuzzy
 msgid "The first point."
-msgstr "Le fichier à précharger."
+msgstr "Le premier point."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1628
 msgid "The second point."
 msgstr "Le second point."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1631
-#, fuzzy
 msgid "The scalar distance between the points"
-msgstr "Dessiner une ligne droite entre 2 points"
+msgstr "La distance scalaire entre les points"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1633
 msgid ""
@@ -158675,12 +158580,11 @@ msgstr ""
 "float **dot**\\ (\\ |vec_type| a, |vec_type| b) :ref:`🔗<shader_func_dot>`"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1646
-#, fuzzy
 msgid ""
 "Returns the dot product of two vectors, ``a`` and ``b``, i.e., ``a.x * b.x + "
 "a.y * b.y + ...``"
 msgstr ""
-"Renvoie le produit scalaire de deux vecteurs, ``a`` et ``b``. i.e, ``a.x * "
+"Renvoie le produit scalaire de deux vecteurs, ``a`` et ``b``, i.e, ``a.x * "
 "b.x + a.y * b.y + ...``"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1650
@@ -158694,9 +158598,8 @@ msgid "The second vector."
 msgstr "Le second vecteur."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1656
-#, fuzzy
 msgid "The dot product."
-msgstr "Produit scalaire."
+msgstr "Le produit scalaire."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1658
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
@@ -158707,15 +158610,12 @@ msgid "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
 msgstr "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1671
-#, fuzzy
 msgid "Returns the cross product of two vectors, i.e.:"
-msgstr "Retourne le produit vectoriel de deux vecteurs. C-à-d :"
+msgstr "Renvoie le produit vectoriel de deux vecteurs, i.e. :"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1686
-#, fuzzy
 msgid "The cross product of ``a`` and ``b``."
-msgstr ""
-"Cela donnera à chaque poisson une vitesse unique entre ``2`` et ``10``."
+msgstr "Le produit vectoriel de ``a`` et ``b``."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:1688
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml"
@@ -159328,9 +159228,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2149
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2185
-#, fuzzy
 msgid "Functionally equivalent to:"
-msgstr "Équivalent fonctionnement à ::"
+msgstr "Équivalent fonctionnellement à :"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2163
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2201
@@ -159338,9 +159237,9 @@ msgid "The vector to be tested for truth."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2166
-#, fuzzy
 msgid "``true`` if any element of ``x`` is ``true`` and ``false`` otherwise."
-msgstr "``true`` si la face actuelle est la face avant."
+msgstr ""
+"``true`` si au moins un élément de ``x`` vaut ``true`` et ``false`` sinon."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2168
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
@@ -159376,9 +159275,8 @@ msgid "Logically inverts a boolean vector."
 msgstr "Inverser le vecteur booléen."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2222
-#, fuzzy
 msgid "The vector to be inverted."
-msgstr "La valeur n'est pas interpolée."
+msgstr "Le vecteur à inverser."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2225
 msgid "A boolean vector in which each element ``i`` is computed as ``!x[i]``."
@@ -159436,9 +159334,8 @@ msgstr ""
 ":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2253
-#, fuzzy
 msgid "Gets the size of a texture."
-msgstr "Donne la taille d'une texture."
+msgstr "Obtient la taille d'une texture."
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_functions.rst:2255
 msgid ""
@@ -163359,14 +163256,12 @@ msgstr ""
 "habituellement :"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:237
-#, fuzzy
 msgid "**x**: Current rotation angle in radians."
-msgstr "**x** : Angle de rotation en radians."
+msgstr "**x** : Angle de rotation actuel en radians."
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:238
-#, fuzzy
 msgid "**z**: Current animation frame."
-msgstr "**z** : Trame d'animation."
+msgstr "**z** : Trame d'animation actuelle."
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:239
 #, fuzzy
@@ -164629,16 +164524,15 @@ msgstr ""
 "locales."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:82
-#, fuzzy
 msgid ""
 "Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
 "relative to the Node2D's origin). If not written to, these values will not "
 "be modified and be passed through as they came."
 msgstr ""
 "Les données des sommets (``VERTEX``) sont présentées dans l'espace local "
-"(coordonnées des pixels, par rapport à la caméra). Si elles ne sont pas "
-"écrites, ces valeurs ne seront pas modifiées et seront transmises comme "
-"elles sont venues."
+"(coordonnées des pixels, par rapport à l'origine du Node2D). Si elles ne "
+"sont pas écrites, ces valeurs ne seront pas modifiées et seront transmises "
+"comme elles sont venues."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:85
 #, fuzzy
@@ -164652,13 +164546,12 @@ msgstr ""
 "le code suivant :"
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:98
-#, fuzzy
 msgid ""
 "Other built-ins, such as ``UV`` and ``COLOR``, are also passed through to "
 "the ``fragment()`` function if not modified."
 msgstr ""
-"D'autres types intégrées, comme UV et COLOR, sont aussi passé tel quel à la "
-"fonction fragment s'ils ne sont pas modifiés."
+"D'autres types intégrés, comme ``UV`` et ``COLOR``, sont aussi passés tels "
+"quels à la fonction ``fragment()`` s'ils ne sont pas modifiés."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:103
 msgid "**x**: Rotation angle in radians."
@@ -164722,14 +164615,14 @@ msgstr "in vec2 **TEXTURE_PIXEL_SIZE**"
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:128
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:240
-#, fuzzy
 msgid ""
 "Normalized pixel size of the default 2D texture. For a Sprite2D with a "
 "texture of size 64×32 pixels, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / 64.0, "
 "1.0 / 32.0)``."
 msgstr ""
 "Taille de pixel normalisée de la texture 2D par défaut. Pour un Sprite2D "
-"d'une résolution de 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
+"d'une résolution de 64x32px, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / 64.0, "
+"1.0 / 32.0)``."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:132
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:269
@@ -164737,9 +164630,8 @@ msgid "inout vec2 **VERTEX**"
 msgstr "inout vec2 **VERTEX**"
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:132
-#, fuzzy
 msgid "Vertex position, in local space."
-msgstr "Sommet, dans l'espace Image."
+msgstr "Position du sommet, dans l'espace local."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:137
 msgid "Normalized texture coordinates. Range from ``0.0`` to ``1.0``."
@@ -164833,29 +164725,26 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:220
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:307
-#, fuzzy
 msgid ""
 "Coordinate of pixel center. In screen space. ``xy`` specifies position in "
 "viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``. Bottom-"
 "right of the viewport is ``(1.0, 1.0)``."
 msgstr ""
 "Coordonnées du centre du pixel. Dans l'espace écran. ``xy`` indiquent la "
-"position dans la fenêtre, ``z`` retourne la profondeur du fragment si "
-"``DEPTH`` n'est pas utilisé. L'origine est en bas à gauche."
+"position dans le viewport. Le coin en haut à gauche du viewport est "
+"l'origine, ``(0.0, 0.0)``. Le coin en bas à droite vaut ``(1.0, 1.0)``."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:225
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "in vec2 **SCREEN_PIXEL_SIZE**"
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:225
-#, fuzzy
 msgid "Size of individual pixels. Equal to the inverse of resolution."
-msgstr "Taille des pixels individuels. Égal à l'inverse de la résolution."
+msgstr "Taille des pixels individuels. Égale à l'inverse de la résolution."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:227
-#, fuzzy
 msgid "in vec4 **REGION_RECT**"
-msgstr "in vec4 **FRAGCOORD**"
+msgstr "in vec4 **REGION_RECT**"
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:227
 msgid ""
@@ -164906,9 +164795,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:260
-#, fuzzy
 msgid "Normal read from ``NORMAL_TEXTURE``. Writable."
-msgstr "Normale lue à partir de **NORMAL_TEXTURE**. Accessible en écriture."
+msgstr "Normale lue à partir de ``NORMAL_TEXTURE``. Accessible en écriture."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:262
 msgid "sampler2D **NORMAL_TEXTURE**"
@@ -164997,40 +164885,33 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:311
-#, fuzzy
 msgid "Input normal."
-msgstr "Entrée de la Normale."
+msgstr "Normale d'entrée."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:313
-#, fuzzy
 msgid "Input color. This is the output of the ``fragment()`` function."
-msgstr ""
-"Input Color. C'est la sortie de la fonction de fragment (avec la modulation "
-"finale appliquée, si **MODULATE** n'est utilisé dans aucune fonction du "
-"shader)."
+msgstr "Couleur d'entrée. Il s'agit de la sortie de la fonction ``fragment()``."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:315
-#, fuzzy
 msgid ""
 "UV from the ``vertex()`` function, equivalent to the UV in the "
 "``fragment()`` function."
 msgstr ""
-"UV de la fonction vertex, équivalent à l'UV dans la fonction de fragment."
+"UV de la fonction ``vertex()``, équivalent à l'UV dans la fonction ``fragment"
+"()``."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:318
-#, fuzzy
 msgid "Current texture in use for the CanvasItem."
 msgstr "Texture actuelle utilisée pour le CanvasItem."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:320
-#, fuzzy
 msgid ""
 "Normalized pixel size of ``TEXTURE``. For a Sprite2D with a ``TEXTURE`` of "
 "size 64×32 pixels, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1.0 / 64.0, 1.0 / 32.0)``."
 msgstr ""
-"Taille de pixel normalisée de la **TEXTURE**. Pour un Sprite2D avec une "
-"**TEXTURE** d'une résolution de 64x32px, **TEXTURE_PIXEL_SIZE** "
-"= :code:`vec2(1/64, 1/32)`"
+"Taille de pixel normalisée de la ``TEXTURE``. Pour un Sprite2D avec une "
+"``TEXTURE`` d'une résolution de 64x32px, ``TEXTURE_PIXEL_SIZE`` = ``vec2"
+"(1.0 / 64.0, 1.0 / 32.0)``."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:326
 msgid "UV for Point Sprite."
@@ -165160,9 +165041,8 @@ msgid "Converts an SDF to screen UV."
 msgstr "Convertit une SDF en coordonnées écran UV."
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:373
-#, fuzzy
 msgid "vec2 **screen_uv_to_sdf** (vec2 uv)"
-msgstr "vec3 **cross** (vec3 a, vec3 b)"
+msgstr "vec2 **screen_uv_to_sdf** (vec2 uv)"
 
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:373
 #, fuzzy
@@ -165254,9 +165134,8 @@ msgid "**collision_use_scale**"
 msgstr "**collision_use_scale**"
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:42
-#, fuzzy
 msgid "Scale the particle's size for collisions."
-msgstr "Mise à l'échelle de la taille des particules pour les collisions."
+msgstr "Mise à l'échelle de la taille de la particule pour les collisions."
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:79
 #, fuzzy
@@ -166186,9 +166065,8 @@ msgid "``MODULATE`` color passed in by RenderingServer API."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:97
-#, fuzzy
 msgid "out vec4 **COLOR0**"
-msgstr "inout vec4 **COLOR**"
+msgstr "out vec4 **COLOR0**"
 
 #: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:97
 msgid ""
@@ -166197,9 +166075,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:100
-#, fuzzy
 msgid "out vec4 **COLOR1**"
-msgstr "inout vec4 **COLOR**"
+msgstr "out vec4 **COLOR1**"
 
 #: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:100
 #: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:103
@@ -166210,14 +166087,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:103
-#, fuzzy
 msgid "out vec4 **COLOR2**"
-msgstr "inout vec4 **COLOR**"
+msgstr "out vec4 **COLOR2**"
 
 #: ../../docs/tutorials/shaders/shader_reference/texture_blit_shader.rst:106
-#, fuzzy
 msgid "out vec4 **COLOR3**"
-msgstr "inout vec4 **COLOR**"
+msgstr "out vec4 **COLOR3**"
 
 #: ../../docs/tutorials/shaders/your_first_shader/index.rst:4
 msgid "Your first shader"
@@ -170073,9 +169948,10 @@ msgstr ""
 "<class_ViewportTexture>`"
 
 #: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:33
-#, fuzzy
 msgid "Create a new scene and add the following nodes exactly as shown below."
-msgstr "Créez un nœud et attachez lui le script suivant."
+msgstr ""
+"Créez une nouvelle scène et ajoutez les nœuds suivants comme montré ci-"
+"dessous."
 
 #: ../../docs/tutorials/shaders/using_viewport_as_texture.rst:37
 #, fuzzy
@@ -170634,9 +170510,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/custom_postprocessing.rst:34
 #: ../../docs/tutorials/shaders/custom_postprocessing.rst:111
-#, fuzzy
 msgid "Your scene tree will look something like this:"
-msgstr "Votre hiérarchie de scène devrait ressembler à cela :"
+msgstr "Votre arborescence de scène devrait ressembler à cela :"
 
 #: ../../docs/tutorials/shaders/custom_postprocessing.rst:40
 msgid ""
@@ -171975,14 +171850,12 @@ msgid "Creating custom Containers"
 msgstr "Création de conteneurs personnalisés"
 
 #: ../../docs/tutorials/ui/gui_containers.rst:217
-#, fuzzy
 msgid ""
 "It is possible to create a custom container using a script. Here is an "
 "example of a container that fits children to its size:"
 msgstr ""
-"Il est possible de créer facilement un conteneur personnalisé à l'aide d'un "
-"script. Voici un exemple d'un conteneur simple qui adaptent ses enfants à sa "
-"rect size :"
+"Il est possible de créer un conteneur personnalisé à l'aide d'un script. "
+"Voici un exemple d'un conteneur qui adapte ses enfants à sa taille :"
 
 #: ../../docs/tutorials/ui/custom_gui_controls.rst:6
 msgid "Custom GUI controls"
@@ -173521,9 +173394,8 @@ msgid "Web Open Font Format 1 (``.woff``)"
 msgstr "Web Open Font Format 1 (``.woff``)"
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:57
-#, fuzzy
 msgid "Web Open Font Format 2 (``.woff2``)"
-msgstr "Web Open Font Format 1 (``.woff``)"
+msgstr "Web Open Font Format 2 (``.woff2``)"
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:59
 msgid ""
@@ -174663,9 +174535,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:799
-#, fuzzy
 msgid "Creating a SystemFont resource"
-msgstr "Créer une ressource ``BitmapFont``"
+msgstr "Créer une ressource SystemFont"
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:804
 msgid "Specifying a font name to use in a SystemFont resource"
@@ -175465,9 +175336,8 @@ msgid "**center**"
 msgstr "**centré**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
-#, fuzzy
 msgid "Makes ``{text}`` horizontally centered."
-msgstr "Centre le {texte} horizontalement."
+msgstr "Centre le ``{texte}`` horizontalement."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid "Same as ``[p align=center]``."
@@ -175482,9 +175352,8 @@ msgid "**left**"
 msgstr "**gauche**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
-#, fuzzy
 msgid "Makes ``{text}`` horizontally left-aligned."
-msgstr "Aligne le {texte} horizontalement à droite."
+msgstr "Aligne le ``{texte}`` horizontalement à droite."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid "Same as ``[p align=left]``."
@@ -175492,16 +175361,15 @@ msgstr "Identique à ``[p align=left]``."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:306
 msgid "``[left]{text}[/left]``"
-msgstr "``[left]{text}[/left]``"
+msgstr "``[left]{texte}[/left]``"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid "**right**"
 msgstr "**droite**"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
-#, fuzzy
 msgid "Makes ``{text}`` horizontally right-aligned."
-msgstr "Aligne le {texte} horizontalement à droite."
+msgstr "Aligne le ``{texte}`` horizontalement à droite."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:0
 msgid "Same as ``[p align=right]``."
@@ -176389,14 +176257,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:658
-#, fuzzy
 msgid "``left`` (or ``l``), ``center`` (or ``c``), ``right`` (or ``r``)"
-msgstr "``ltr`` (ou ``l``), ``rtl`` (ou ``r``), ``auto`` (ou ``a``)"
+msgstr "``left`` (ou ``l``), ``center`` (ou ``c``), ``right`` (ou ``r``)"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:660
-#, fuzzy
 msgid "``center``"
-msgstr "``center,center``"
+msgstr "``center``"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:663
 #, fuzzy
@@ -176485,9 +176351,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:743
-#, fuzzy
 msgid "Target width of the image in pixels."
-msgstr "x, y, largeur, hauteur en pixels"
+msgstr "Largeur cible de l'image en pixels."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:747
 msgid ""
@@ -176760,14 +176625,12 @@ msgid "See this image for a list of color constants:"
 msgstr ""
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:981
-#, fuzzy
 msgid ""
 "`View at full size <https://raw.githubusercontent.com/godotengine/godot-docs/"
 "master/img/color_constants.png>`__"
 msgstr ""
 "`Voir en taille réelle <https://raw.githubusercontent.com/godotengine/godot-"
-"docs/master/contributing/development/core_and_modules/img/"
-"rendering_architecture_diagram.webp>`__"
+"docs/master/img/color_constants.png>`__"
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:986
 msgid "Hexadecimal color codes"
@@ -177201,9 +177064,8 @@ msgstr ""
 "donné devrait être rendu dans des circonstances normales."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1239
-#, fuzzy
 msgid "``color`` is the color of a given glyph."
-msgstr "``color`` est la couleur d'un caractère donné."
+msgstr "``color`` est la couleur d'un glyphe donné."
 
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:1240
 msgid ""
@@ -177308,13 +177170,12 @@ msgid "Spawning multiple windows"
 msgstr "Utiliser plusieurs fils d'exécution"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:30
-#, fuzzy
 msgid ""
 "*This is only supported on Windows, macOS, and Linux (X11/XWayland only, not "
 "in native Wayland mode).*"
 msgstr ""
-"Les contrôleurs(manettes, etc) sont pris en charge sur Windows, macOS, "
-"Linux, Android, iOS et HTML5."
+"*Ceci n'est pris en charge que sous Windows, macOS et Linux (X11/XWayland "
+"seulement, pas en mode Wayland natif).*"
 
 #: ../../docs/tutorials/ui/creating_applications.rst:33
 msgid ""
@@ -183076,7 +182937,7 @@ msgid ""
 "`Julian Todd's Auto hands library <https://github.com/Godot-Dojo/Godot-XR-"
 "AH>`_"
 msgstr ""
-"` La bibliothèque Auto hands de Julian Todd <https://github.com/Godot-Dojo/"
+"`La bibliothèque Auto hands de Julian Todd <https://github.com/Godot-Dojo/"
 "Godot-XR-AH>`_"
 
 #: ../../docs/tutorials/xr/openxr_hand_tracking.rst:355
@@ -186811,8 +186672,8 @@ msgid ""
 "Uses a `red-black tree <https://en.wikipedia.org/wiki/Red-black_tree>`__ for "
 "faster access."
 msgstr ""
-"Utilise un arbre rouge-noir <https://en.wikipedia.org/wiki/Red-"
-"black_tree>`__ pour un accès plus rapide."
+"Utilise un `arbre bicolore <https://fr.wikipedia.org/wiki/Arbre_bicolore>`__ "
+"pour un accès plus rapide."
 
 #: ../../docs/engine_details/architecture/core_types.rst:113
 msgid "|v_set|"
@@ -195289,14 +195150,14 @@ msgid "**app** module:"
 msgstr "Module **app** :"
 
 #: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:43
-#, fuzzy
 msgid ""
 "Located under ``<Godot root directory>/platform/android/java/app``, this is "
 "an **application module** that holds the source code for the Android build "
 "templates."
 msgstr ""
-"Situé sous ``<Godot root directory>/platform/android/java/app``, il s'agit "
-"d'un **module d'application** qui contient"
+"Situé sous ``<Répertoire racine de Godot>/platform/android/java/app``, il "
+"s'agit d'un **module d'application** qui contient le code source pour les "
+"modèles de compilation Android."
 
 #: ../../docs/engine_details/development/configuring_an_ide/android_studio.rst:47
 #, fuzzy
@@ -196456,12 +196317,12 @@ msgstr ""
 "commande ou une fenêtre PowerShell."
 
 #: ../../docs/engine_details/development/configuring_an_ide/visual_studio.rst:0
-#, fuzzy
 msgid ""
 "Run ``scons platform=windows vsproj=yes dev_build=yes`` to generate the "
 "solution with debug symbols."
 msgstr ""
-"Exécutez ``scons platform=windows vsproj=yes`` pour générer la solution."
+"Exécutez ``scons platform=windows vsproj=yes dev_build=yes`` pour générer la "
+"solution avec les symboles de débogage."
 
 #: ../../docs/engine_details/development/configuring_an_ide/visual_studio.rst:0
 msgid ""
@@ -197026,27 +196887,25 @@ msgid "Check **Debug executable**."
 msgstr "Cochez **Debug executable**."
 
 #: ../../docs/engine_details/development/configuring_an_ide/xcode.rst:100
-#, fuzzy
 msgid ""
 "You can add two arguments on the **Arguments** tab: the ``-e`` flag opens "
 "the editor instead of the Project Manager, and the ``--path`` argument tells "
 "the executable to open the specified project (must be provided as an "
 "*absolute* path to the project root, not the ``project.godot`` file)."
 msgstr ""
-"Vous pouvez ajouter deux arguments dans l'onglet **Arguments** : le drapeau "
+"Vous pouvez ajouter deux arguments dans l'onglet **Arguments** : le drapeau "
 "``-e`` ouvre l'éditeur au lieu du gestionnaire de projet, et l'argument ``--"
 "path`` indique à l'exécutable d'ouvrir le projet spécifié (doit être fourni "
-"comme un chemin *absolu* vers la racine du projet, et non le fichier "
+"en tant que chemin *absolu* vers la racine du projet, et non le fichier "
 "``project.godot``)."
 
 #: ../../docs/engine_details/development/configuring_an_ide/xcode.rst:105
-#, fuzzy
 msgid ""
 "To check that everything is working, put a breakpoint in ``platform/macos/"
 "godot_main_macos.mm`` and run the project."
 msgstr ""
-"Pour vérifier que tout fonctionne, mettez un breakpoint dans ``platform/osx/"
-"godot_main_osx.mm`` et lancez le projet."
+"Pour vérifier que tout fonctionne, mettez un point d'arrêt dans ``platform/"
+"macos/godot_main_macos.mm`` et exécutez le projet."
 
 #: ../../docs/engine_details/development/compiling/index.rst:6
 #, fuzzy
@@ -197207,13 +197066,12 @@ msgstr ""
 "source à partir du lien de téléchargement sur la page."
 
 #: ../../docs/engine_details/development/compiling/getting_source.rst:42
-#, fuzzy
 msgid ""
 "With ``git``, you can also clone a stable release by specifying its branch "
 "or tag after the ``--branch`` (or just ``-b``) argument:"
 msgstr ""
 "Avec ``git``, vous pouvez aussi cloner une version stable en spécifiant sa "
-"branche ou son tag après l'argument ``--branch`` (ou juste ``-b``) :"
+"branche ou son tag après l'argument ``--branch`` (ou juste ``-b``) :"
 
 #: ../../docs/engine_details/development/compiling/getting_source.rst:59
 msgid ""
@@ -197324,9 +197182,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:57
-#, fuzzy
 msgid "Example for using 12 threads:"
-msgstr "Exemple pour l'utilisation de 4 cœurs :"
+msgstr "Exemple pour utiliser 12 threads :"
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:64
 msgid "Platform selection"
@@ -197357,20 +197214,18 @@ msgstr ""
 "construire pour la plate-forme cible."
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:75
-#, fuzzy
 msgid "To list the available target platforms, use ``scons platform=list``:"
 msgstr ""
 "Pour lister les plates-formes cibles disponibles, utilisez ``scons "
 "platform=list`` :"
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:92
-#, fuzzy
 msgid ""
 "To build for a platform (for example, ``linuxbsd``), run with the "
 "``platform=`` (or ``p=`` to make it short) argument:"
 msgstr ""
-"Pour construire pour une plate-forme (par exemple, x11), utilisez l'argument "
-"``platform=`` (ou ``p=`` pour faire court) :"
+"Pour compiler pour une plate-forme (par exemple, ``linuxbsd``), utilisez "
+"l'argument ``platform=`` (ou ``p=`` pour faire court) :"
 
 #: ../../docs/engine_details/development/compiling/introduction_to_the_buildsystem.rst:102
 msgid "Resulting binary"
@@ -197998,9 +197853,8 @@ msgid "For compiling under Windows, the following is required:"
 msgstr "Pour la compilation sous Windows, ce qui suit est nécessaire :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:18
-#, fuzzy
 msgid "A C++ compiler. Use one of the following:"
-msgstr "Pour contourner le problème, vous pouvez procéder comme suit :"
+msgstr "Un compilateur C++. Utilisez l'un des compilateurs suivants :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:20
 msgid ""
@@ -198011,9 +197865,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:26
-#, fuzzy
 msgid "Visual Studio 2019"
-msgstr "Visual Studio 2022"
+msgstr "Visual Studio 2019"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:27
 msgid ""
@@ -198037,9 +197890,8 @@ msgid "**Windows 11 SDK (10.0.22621.0)** or newer."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:34
-#, fuzzy
 msgid "Visual Studio 2026"
-msgstr "Visual Studio 2022"
+msgstr "Visual Studio 2026"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:35
 msgid "**MSVC Build Tools for {arch} (Latest)** for the target architectures."
@@ -198082,13 +197934,13 @@ msgstr ""
 "besoin de GCC 9 ou plus. Support de ``x86_64`` et ``x86_32`` seulement."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:49
-#, fuzzy
 msgid ""
 "`Python 3.9+ <https://www.python.org/downloads/windows/>`_. **Make sure to "
 "enable the option to add Python to the** ``PATH`` **in the installer.**"
 msgstr ""
-"`Python 3.5+ <https://www.python.org/downloads/windows/>`_. **Assurez-vous "
-"d'activer l'option de l'installateur pour ajouter Python dans le ``PATH``.**"
+"`Python 3.9+ <https://www.python.org/downloads/windows/>`_. **Assurez-vous "
+"d'activer l'option de l'installateur pour ajouter Python dans le** ``PATH`` "
+"**.**"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:51
 #, fuzzy
@@ -198913,9 +198765,8 @@ msgstr ""
 "l'identificateur de version (tel que ``3.1.1.stable`` ou ``3.2.dev``) :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:583
-#, fuzzy
 msgid "With the following names:"
-msgstr "Avec les noms suivants :"
+msgstr "Avec les noms suivants :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_windows.rst:600
 msgid ""
@@ -198940,9 +198791,8 @@ msgstr ""
 "automatiquement les modèles personnalisés référencés."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:4
-#, fuzzy
 msgid "Compiling for Linux, \\*BSD"
-msgstr "Compilation pour X11 (Linux, \\*BSD)"
+msgstr "Compilation pour Linux, \\*BSD"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:10
 msgid ""
@@ -198967,9 +198817,8 @@ msgstr "GCC 9+ ou Clang 6+."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:20
 #: ../../docs/engine_details/development/compiling/compiling_for_android.rst:29
-#, fuzzy
 msgid "`Python 3.9+ <https://www.python.org/downloads/>`_."
-msgstr "`Python 3.8+ <https://www.python.org/downloads/>`_."
+msgstr "`Python 3.9+ <https://www.python.org/downloads/>`_."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:21
 #: ../../docs/engine_details/development/compiling/compiling_for_macos.rst:19
@@ -199460,9 +199309,8 @@ msgstr ""
 "rapides."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:537
-#, fuzzy
 msgid "If this error occurs:"
-msgstr "Si cette erreur se produit :"
+msgstr "Si cette erreur se produit :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:543
 msgid "There are two solutions:"
@@ -199484,9 +199332,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:552
-#, fuzzy
 msgid "Using mold for faster development"
-msgstr "Utiliser Pyston pour un développement plus rapide"
+msgstr "Utiliser mold pour un développement plus rapide"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:554
 msgid ""
@@ -199587,9 +199434,8 @@ msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_macos.rst:18
 #: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:16
-#, fuzzy
 msgid "`Python 3.9+ <https://www.python.org/downloads/macos/>`_."
-msgstr "`Python 3.8+ <https://www.python.org/downloads/macos/>`_."
+msgstr "`Python 3.9+ <https://www.python.org/downloads/macos/>`_."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_macos.rst:20
 msgid ""
@@ -199609,13 +199455,12 @@ msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_macos.rst:27
 #: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:26
-#, fuzzy
 msgid ""
 "If you have `Homebrew <https://brew.sh/>`_ installed, you can easily install "
 "SCons using the following command:"
 msgstr ""
-"Si vous avez installé `Homebrew <https://brew.sh/>`_, vous pouvez facilement "
-"installer SCons et yasm en utilisant la commande suivante :"
+"Si vous avez `Homebrew <https://brew.sh/>`_ d'installé, vous pouvez "
+"facilement installer SCons en utilisant la commande suivante :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_macos.rst:34
 #: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:33
@@ -199628,13 +199473,12 @@ msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_macos.rst:37
 #: ../../docs/engine_details/development/compiling/compiling_for_ios.rst:36
-#, fuzzy
 msgid ""
 "Similarly, if you have `MacPorts <https://www.macports.org/>`_ installed, "
 "you can easily install SCons using the following command:"
 msgstr ""
 "De même, si vous avez `MacPorts <https://www.macports.org/>`_ installé, vous "
-"pouvez facilement installer SCons et yasm en utilisant la commande suivante :"
+"pouvez facilement installer SCons en utilisant la commande suivante :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_macos.rst:54
 msgid "Start a terminal, go to the root directory of the engine source code."
@@ -199642,14 +199486,13 @@ msgstr ""
 "Démarrez un terminal et allez au répertoire racine du code source du moteur."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_macos.rst:56
-#, fuzzy
 msgid "To compile for Intel (x86-64) powered Macs, use:"
-msgstr "Pour compiler pour les Macs équipés Intel (x86-64), utilisez :"
+msgstr "Pour compiler pour les Macs équipés avec Intel (x86-64), utilisez :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_macos.rst:62
-#, fuzzy
 msgid "To compile for Apple Silicon (ARM64) powered Macs, use:"
-msgstr "Pour compiler pour les Macs équipés Apple Silicon (ARM64), utilisez :"
+msgstr ""
+"Pour compiler pour les Macs équipés avec Apple Silicon (ARM64), utilisez :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_macos.rst:74
 #, fuzzy
@@ -200024,9 +199867,8 @@ msgid "Gradle (will be downloaded and installed automatically if missing)."
 msgstr "Gradle (sera téléchargé et installé automatiquement s'il manque)."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_android.rst:38
-#, fuzzy
 msgid "JDK 17 (either OpenJDK or Oracle JDK)."
-msgstr "JDK 11 (soit OpenJDK ou Oracle JDK)."
+msgstr "JDK 17 (OpenJDK ou bien Oracle JDK)."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_android.rst:40
 #, fuzzy
@@ -200327,13 +200169,12 @@ msgid "Building the Godot editor"
 msgstr "Compilation de l'éditeur"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_android.rst:197
-#, fuzzy
 msgid ""
 "Compiling the editor is done by calling SCons from the Godot root directory "
 "with the following arguments:"
 msgstr ""
-"La compilation des modèles d'exportation standard se fait en appelant SCons "
-"depuis le répertoire racine de Godot avec les arguments suivants :"
+"Compiler l'éditeur se fait en appelant SCons depuis le répertoire racine de "
+"Godot avec les arguments suivants :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_android.rst:207
 msgid ""
@@ -200680,7 +200521,6 @@ msgstr ""
 "soit ``release_debug`` pour une version de débogage :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:44
-#, fuzzy
 msgid ""
 "By default, the :ref:`JavaScriptBridge singleton "
 "<doc_web_javascript_bridge>` will be built into the engine. Official export "
@@ -200689,10 +200529,10 @@ msgid ""
 "build without the singleton:"
 msgstr ""
 "Par défaut, le :ref:`singleton JavaScriptBridge <doc_web_javascript_bridge>` "
-"sera compilé dans le moteur. Les modèles d'exportation officiels ont "
-"également le JavaScript singleton activé. Comme les appels ``eval()`` "
-"peuvent être un problème de sécurité, l'option ``javascript_eval`` peut être "
-"utilisée pour compiler sans le singleton ::"
+"sera compilé dans le moteur. Les modèles d'export officiels ont également le "
+"singleton JavaScript activé. Comme les appels ``eval()`` peuvent être un "
+"problème de sécurité, l'option ``javascript_eval`` peut être utilisée pour "
+"compiler sans le singleton :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:54
 msgid ""
@@ -200702,7 +200542,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:62
-#, fuzzy
 msgid ""
 "The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
 "the resulting file will be placed in the ``bin`` subdirectory. Its name is "
@@ -200711,22 +200550,21 @@ msgid ""
 msgstr ""
 "Le moteur sera maintenant compilé en WebAssembly par Emscripten. Une fois "
 "terminé, le fichier résultant sera placé dans le sous-répertoire ``bin``. "
-"Son nom est ``godot.javascript.opt.zip`` pour une version release ou "
-"``godot.javascript.opt.debug.zip`` pour une version de débogage."
+"Son nom est ``godot.web.template_release.wasm32.zip`` pour une version "
+"release ou ``godot.web.template_debug.wasm32.zip`` pour une version de "
+"débogage."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:67
-#, fuzzy
 msgid ""
 "Finally, rename the zip archive to ``web_release.zip`` for the release "
 "template:"
 msgstr ""
-"Enfin, renommez l'archive zip en ``webassembly_release.zip`` pour le modèle "
-"release :"
+"Enfin, renommez l'archive zip en ``web_release.zip`` pour le modèle de "
+"release :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:74
-#, fuzzy
 msgid "And ``web_debug.zip`` for the debug template:"
-msgstr "Et ``webassembly_debug.zip`` pour le modèle de débogage :"
+msgstr "Et ``web_debug.zip`` pour le modèle de débogage :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:83
 #, fuzzy
@@ -200740,51 +200578,45 @@ msgstr ""
 "page :ref:`export <doc_javascript_export_options>` pour plus d'informations."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:87
-#, fuzzy
 msgid ""
 "You can build the export templates using the option ``dlink_enabled=yes`` to "
 "enable GDExtension support:"
 msgstr ""
-"Vous pouvez compiler les modèles d'exportation en utilisant l'option "
-"``threads_enabled=yes`` ou ``gdnative_enabled=yes`` pour activer les threads "
-"ou le support GDNative :"
+"Vous pouvez compiler les modèles d'export en utilisant l'option "
+"``dlink_enabled=yes`` pour activer le support de GDExtension :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:95
-#, fuzzy
 msgid ""
 "Once finished, the resulting file will be placed in the ``bin`` "
 "subdirectory. Its name will have ``_dlink`` added."
 msgstr ""
 "Une fois terminé, le fichier résultant sera placé dans le sous-répertoire "
-"``bin``. Son nom aura le suffixe ``.threads`` ou ``.gdnative``."
+"``bin``. Son nom aura ``_dlink`` ajouté."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:98
-#, fuzzy
 msgid ""
 "Finally, rename the zip archives to ``web_dlink_release.zip`` and "
 "``web_dlink_release.zip`` for the release template:"
 msgstr ""
-"Enfin, renommez les archives zip en ``webassembly_release_threads.zip`` et "
-"``webassembly_release_gdnative.zip`` pour le modèle release :"
+"Enfin, renommez les archives zip en ``web_dlink_release.zip`` et "
+"``web_dlink_release.zip`` pour le modèle de release :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:107
 msgid "Building the editor"
 msgstr "Compiler l'éditeur"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:109
-#, fuzzy
 msgid ""
 "It is also possible to build a version of the Godot editor that can run in "
 "the browser. The editor version is not recommended over the native build. "
 "You can build the editor with:"
 msgstr ""
 "Il est également possible de compiler une version de l'éditeur Godot qui "
-"peut fonctionner dans le navigateur. La version de l'éditeur nécessite le "
-"support des threads et n'est pas recommandée par rapport à la version "
-"native. Vous pouvez compiler l'éditeur avec :"
+"peut fonctionner dans le navigateur. La version de l'éditeur n'est pas "
+"recommandée par rapport à la version native. Vous pouvez compiler l'éditeur "
+"avec :"
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:117
-#, fuzzy
 msgid ""
 "Once finished, the resulting file will be placed in the ``bin`` "
 "subdirectory. Its name will be ``godot.web.editor.wasm32.zip``. You can "
@@ -200792,9 +200624,9 @@ msgid ""
 "use the editor."
 msgstr ""
 "Une fois terminé, le fichier résultant sera placé dans le sous-répertoire "
-"``bin``. Son nom sera ``godot.javascript.opt.tools.threads.zip``. Vous "
-"pouvez télécharger le contenu du zip sur votre serveur web et le visiter "
-"avec votre navigateur pour utiliser l'éditeur."
+"``bin``. Son nom sera ``godot.web.editor.wasm32.zip``. Vous pouvez téléverse "
+"le contenu du zip sur votre serveur web et le visiter avec votre navigateur "
+"pour utiliser l'éditeur."
 
 #: ../../docs/engine_details/development/compiling/compiling_for_web.rst:121
 msgid ""
@@ -200829,7 +200661,6 @@ msgid "Cross-compiling for iOS on Linux"
 msgstr "Compilation croisée pour iOS sur Linux"
 
 #: ../../docs/engine_details/development/compiling/cross-compiling_for_ios_on_linux.rst:8
-#, fuzzy
 msgid ""
 "The procedure for this is somewhat complex and requires a lot of steps, but "
 "once you have the environment properly configured you can compile Godot for "
@@ -200837,7 +200668,7 @@ msgid ""
 msgstr ""
 "La procédure pour cela est quelque peu complexe et nécessite de nombreuses "
 "étapes, mais une fois que vous aurez correctement configuré l'environnement, "
-"il sera facile de compiler Godot pour iOS à tout moment."
+"vous pourrez compiler Godot pour iOS à tout moment."
 
 #: ../../docs/engine_details/development/compiling/cross-compiling_for_ios_on_linux.rst:13
 msgid "Disclaimer"
@@ -201700,9 +201531,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:120
-#, fuzzy
 msgid "Disabling advanced text server"
-msgstr "Désactiver les objets GUI avancés"
+msgstr "Désactiver le serveur de texte avancé"
 
 #: ../../docs/engine_details/development/compiling/optimizing_for_size.rst:126
 msgid ""
@@ -202632,9 +202462,8 @@ msgstr ""
 "créez-le."
 
 #: ../../docs/engine_details/development/debugging/vulkan/vulkan_validation_layers.rst:187
-#, fuzzy
 msgid "Compile and run the Android app"
-msgstr "Compilation pour Android"
+msgstr "Compiler et exécuter l'application Android"
 
 #: ../../docs/engine_details/development/debugging/vulkan/vulkan_validation_layers.rst:189
 msgid ""
@@ -203318,10 +203147,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/engine_details/development/profiling/perfetto.rst:86
-#, fuzzy
 msgid "Create a file called ``godot.config`` with this content:"
-msgstr ""
-"Créez un fichier texte \"editor.entitlements\" avec le contenu suivant :"
+msgstr "Créez un fichier appelé ``godot.config`` avec ce contenu :"
 
 #: ../../docs/engine_details/development/profiling/perfetto.rst:114
 msgid "Godot records two categories of track events:"
@@ -204413,16 +204240,13 @@ msgstr ""
 "XML dans le répertoire ``modules/<module_name>/doc_classes/`` à la place."
 
 #: ../../docs/engine_details/class_reference/index.rst:101
-#, fuzzy
 msgid ""
 "Edit it using your favorite text editor. If you use a code editor, make sure "
 "that tabs are used for the indentation."
 msgstr ""
 "Modifiez-le en utilisant votre éditeur de texte préféré. Si vous utilisez un "
-"éditeur de code, assurez-vous qu'il ne modifie pas le style d'indentation : "
-"vous devez utiliser des tabulations pour le XML et quatre espaces à "
-"l'intérieur des blocs de style BBCode. Plus d'informations à ce sujet ci-"
-"dessous."
+"éditeur de code, assurez-vous que des tabulations sont utilisées pour "
+"l’indentation."
 
 #: ../../docs/engine_details/class_reference/index.rst:104
 msgid ""
@@ -205428,28 +205252,26 @@ msgstr ""
 "pouvez publier."
 
 #: ../../docs/community/asset_library/what_is_assetlib.rst:33
-#, fuzzy
 msgid ""
 "Assets labeled as \"Templates\", \"Projects\", or \"Demos\" appear under the "
 "\"Asset Library\" tab in the Godot Project Manager. These assets are "
 "standalone Godot projects that can run by themselves."
 msgstr ""
-"Les assets intitulés « Templates », « Projects » ou « Demos » apparaissent "
-"sous l’onglet « Projets de la bibliothèque de ressources » du gestionnaire "
-"de projets de Godot. Ces ressources sont des projets Godot indépendants qui "
-"peuvent fonctionner tout seuls."
+"Les assets intitulés \"Templates\", \"Projects\" ou \"Demos\" apparaissent "
+"sous l'onglet \"Bibliothèque d'Assets\" du gestionnaire de projets de Godot. "
+"Ces assets sont des projets Godot autonomes qui peuvent fonctionner par eux-"
+"mêmes."
 
 #: ../../docs/community/asset_library/what_is_assetlib.rst:37
-#, fuzzy
 msgid ""
 "Other assets show up inside of the Godot editor under the \"Asset Library\" "
 "main screen tab, next to \"2D\", \"3D\", and \"Script\". These assets are "
 "meant to be downloaded and placed into an existing Godot project."
 msgstr ""
-"D’autres assets sont présents dans l’éditeur de Godot sous l’onglet "
-"« AssetLib » de l’écran principal, à côté de « 2D », « 3D » et « Script ». "
-"Ces assets sont destinés à être téléchargés et placés dans un projet Godot "
-"existant."
+"Les autres assets apparaissent dans l'éditeur de Godot, sous l'onglet "
+"\"Bibliothèque d'Assets\" de l'écran principal, à côté de \"2D\", \"3D\" et "
+"\"Script\". Ces assets sont destinés à être téléchargés et placés dans un "
+"projet Godot existant."
 
 #: ../../docs/community/asset_library/what_is_assetlib.rst:45
 msgid "Can paid assets be uploaded to the asset library?"
@@ -205500,7 +205322,6 @@ msgid "Searching"
 msgstr "Recherche"
 
 #: ../../docs/community/asset_library/using_assetlib.rst:24
-#, fuzzy
 msgid ""
 "In the left sidebar is the **search bar + settings** section, and the "
 "**assets** section takes up the main content area on the right. Below the "
@@ -205508,12 +205329,12 @@ msgid ""
 "and demos), **support level**, **engine version**, and **license**. You can "
 "also change the **sorting order** to sort by license, name, or update date."
 msgstr ""
-"Au centre se trouve la section **barre de recherche + paramètres**, et la "
-"section **assets** en dessous - cela vous permet de filtrer certains types "
-"d'assets en fonction d'une foule de critères. Il s'agit notamment de la "
-"**catégorie d'assets** (tels que les outils 2D, les scripts et les démos), "
-"de la **version du moteur** à laquelle ils sont destinés, de l'**ordre de "
-"tri** (par date de mise à jour, par nom, etc.) et du **niveau de support**."
+"Dans la barre latérale de gauche se trouve la section **barre de recherche + "
+"paramètres**, et la section **assets** occupe la zone principale à droite. "
+"Sous la barre de recherche, vous pouvez filtrer les assets par **catégorie** "
+"(comme les outils 2D, les scripts et les démos), **niveau de support**, "
+"**version du moteur** et **licence**. Vous pouvez aussi changer l'**ordre de "
+"tri** pour trier par licence, nom ou date de mise à jour."
 
 #: ../../docs/community/asset_library/using_assetlib.rst:31
 msgid ""
@@ -205946,7 +205767,6 @@ msgstr ""
 "a besoin du contenu du sous-module, votre asset ne fonctionnera pas."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:41
-#, fuzzy
 msgid ""
 "The **license** needs to be correct. The license listed on the asset library "
 "must match the license in the repository. The repository **must** have a "
@@ -205955,11 +205775,10 @@ msgid ""
 "year(s) and copyright holder."
 msgstr ""
 "La **licence** doit être correcte. La licence indiquée sur la bibliothèque "
-"de ressources doit correspondre à la licence dans le répertoire. Le dépôt "
-"DOIT avoir un fichier de licence, appelé soit \"LICENSE\" soit "
-"\"LICENSE.md\". Ce fichier doit contenir le texte de la licence lui-même et "
-"une déclaration de copyright qui inclut l'année (les années) et le détenteur "
-"du copyright."
+"de ressources doit correspondre à celle du dépôt. Le dépôt **doit** contenir "
+"un fichier de licence, nommé soit \"LICENSE\", soit \"LICENSE.md\". Ce "
+"fichier doit contenir le texte de la licence elle-même et une déclaration de "
+"copyright incluant l'année (ou les années) et le titulaire du copyright."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:47
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:47
@@ -206029,22 +205848,19 @@ msgstr ""
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:71
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:71
-#, fuzzy
 msgid ""
 "Make your code conform to the official **style guides**. Having a consistent "
 "style helps other people read your code, and it also helps if other people "
 "wish to contribute to your asset. See the :ref:`doc_gdscript_styleguide` or "
 "the :ref:`doc_c_sharp_styleguide`."
 msgstr ""
-"Faites en sorte que votre code soit conforme aux **guides de style** "
-"officiels. Un style cohérent aide les autres personnes à lire votre code, et "
-"il est également utile si d'autres personnes souhaitent contribuer à votre "
-"asset. Voir : le :ref:`doc_gdscript_styleguide` ou "
-"le :ref:`doc_c_sharp_styleguide`."
+"Faites en sorte que votre code respecte les **guides de style** officiels. "
+"Un style cohérent aide les autres personnes à lire votre code, et facilite "
+"aussi les contributions d'autres personnes à votre asset. Voir le "
+":ref:`doc_gdscript_styleguide` ou le :ref:`doc_c_sharp_styleguide`."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:76
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:76
-#, fuzzy
 msgid ""
 "If you have screenshots in your repository, place them in their own "
 "subfolder and add an empty **.gdignore** file in the same folder (note: "
@@ -206052,10 +205868,10 @@ msgid ""
 "On Windows, open a command prompt in the project folder and run ``type nul "
 "> .gdignore`` to create a file whose name starts with a period."
 msgstr ""
-"Si vous avez des captures d'écran dans votre repo, placez-les dans leur "
+"Si vous avez des captures d'écran dans votre dépôt, placez-les dans leur "
 "propre sous-dossier et ajoutez un fichier **.gdignore** dans le même dossier "
-"(note : **gd**, pas **git**). Cela empêche Godot d'importer vos captures "
-"d'écran. Sous Windows, ouvrez une invite de commande dans le dossier du "
+"(note : **gd**, pas **git**). Cela empêche Godot d'importer vos captures "
+"d'écran. Sous Windows, ouvrez un invité de commandes dans le dossier du "
 "projet et lancez ``type nul > .gdignore`` pour créer un fichier dont le nom "
 "commence par un point."
 
@@ -206069,7 +205885,6 @@ msgstr ""
 "pensez à inclure des **fichiers exemples** dans votre asset."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:85
-#, fuzzy
 msgid ""
 "Consider adding a **.gitattributes** file to your repository. This file "
 "allows giving extra instructions to Git, such as specifying line endings and "
@@ -206078,13 +205893,13 @@ msgid ""
 "file, preventing them from being downloaded by the asset library users. "
 "These are common examples of **.gitattributes**:"
 msgstr ""
-"Pensez à ajouter un fichier **.gitattributes** à votre repo. Ce fichier "
+"Pensez à ajouter un fichier **.gitattributes** à votre dépôt. Ce fichier "
 "permet de donner des instructions supplémentaires à Git, comme spécifier les "
 "fins de lignes et lister les fichiers non nécessaires au fonctionnement de "
-"votre asset avec la directive ``export-ignore``. Cette directive supprime "
-"ces fichiers du fichier ZIP résultant et les empêche d'être téléchargés par "
-"les utilisateurs de la bibliothèque d'asset. Pour un plugin typique, "
-"**.gitattributes** peut ressembler à ceci :"
+"votre ressource avec la directive ``export-ignore``. Cette directive "
+"supprime ces fichiers du fichier ZIP résultant, les empêchant d'être "
+"téléchargés par les utilisateurs de la bibliothèque de ressources. Voici des "
+"exemples communs de **.gitattributes** :"
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:94
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:94
@@ -206239,22 +206054,20 @@ msgid "**Repository URL**:"
 msgstr "**Repository URL** :"
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:162
-#, fuzzy
 msgid ""
 "The URL to your asset's files/webpage. This will vary based on your choice "
 "of provider, but it should look similar to ``https://github.com/<user>/"
 "<project>``."
 msgstr ""
-"L'URL des fichiers/de la page web de votre asset. Cela variera en fonction "
-"de votre choix de fournisseur, mais cela devrait ressembler à `https://"
-"github.com/<user>/<project>`."
+"L'URL vers la page web/les fichiers de votre ressource. Cela variera en "
+"fonction de votre choix de fournisseur, mais cela devrait ressembler à "
+"``https://github.com/<utilisateur>/<projet>``."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:164
 msgid "**Issues URL**:"
 msgstr "**Issues URL** :"
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:165
-#, fuzzy
 msgid ""
 "The URL to your asset's issue tracker. Again, this will differ from "
 "repository host to repository host, but will likely look similar to "
@@ -206262,26 +206075,25 @@ msgid ""
 "empty if you use your provider's issue tracker, and it's part of the same "
 "repository."
 msgstr ""
-"L'URL de l'outil de suivi des problèmes de votre asset. Encore une fois, ce "
-"sera différent d'un hôte de dépôt à l'autre, mais ressemblera probablement à "
-"`https://github.com/<utilisateur>/<projet>/questions`. Vous pouvez laisser "
-"ce champ vide si vous utilisez l'outil de suivi des problèmes de votre "
-"fournisseur, et s'il fait partie du même dépôt."
+"L'URL de l'outil de suivi des problèmes de votre asset. Là encore, elle "
+"varie d'un hébergeur à l'autre, mais ressemble probablement à ``https://"
+"github.com/<user>/<project>/issues``. Vous pouvez laisser ce champ vide si "
+"vous utilisez l'outil de suivi des problèmes de votre fournisseur et qu'il "
+"fait partie du même dépôt."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:169
 msgid "**Download Commit**:"
 msgstr "**Download Commit** :"
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:170
-#, fuzzy
 msgid ""
 "The commit of the asset. For example, "
 "``b1d3172f89b86e52465a74f63a74ac84c491d3e1``. The site computes the actual "
 "download URL from this."
 msgstr ""
 "Le commit de l'asset. Par exemple, "
-"`b1d3172f89b86e52465a74f63a74ac84c491d3e1`. Le site calcule l'URL de "
-"téléchargement réel à partir de cette information."
+"``b1d3172f89b86e52465a74f63a74ac84c491d3e1``. Le site calcule l'URL de "
+"téléchargement réelle à partir de celui-ci."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:173
 msgid "**Icon URL**:"
@@ -206306,14 +206118,13 @@ msgstr ""
 "devrait également avoir une résolution minimale de 128x128 pixels."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:183
-#, fuzzy
 msgid ""
 "For icons hosted on GitHub, URLs must be provided in the form of ``https://"
 "raw.githubusercontent.com/<user>/<project>/<branch>/Icon.png``."
 msgstr ""
-"Pour les icônes hébergées sur GitHub, les URLs doivent être fournies sous la "
-"forme `https://raw.githubusercontent.com/<utilisateur>/<projet>/<branche>/"
-"Icône.png`."
+"Pour les icônes hébergées sur GitHub, les URL doivent être fournies sous la "
+"forme ``https://raw.githubusercontent.com/<user>/<project>/<branch>/"
+"Icon.png``."
 
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:185
 msgid "**License**:"
@@ -206586,22 +206397,19 @@ msgid "Using the Asset Store in the Engine"
 msgstr "Comment les scripts fonctionnent dans le moteur"
 
 #: ../../docs/community/asset_store/using_in_editor.rst:7
-#, fuzzy
 msgid "Accessing it"
-msgstr "Accès aux champs"
+msgstr "Y accéder"
 
 #: ../../docs/community/asset_store/using_in_editor.rst:9
-#, fuzzy
 msgid ""
 "The Asset Store can be accessed from within Godot from the project manager."
 msgstr ""
-"Le projet plante fréquemment ou instantanément après l'ouverture du "
-"gestionnaire de projet"
+"L'Asset Store peut être consulté à partir de Godot depuis le gestionnaire de "
+"projet."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:13
-#, fuzzy
 msgid "As well as within the editor."
-msgstr "Éditeur de thèmes intégré."
+msgstr "Ainsi que depuis l'éditeur."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:17
 #, fuzzy
@@ -206633,9 +206441,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/using_in_editor.rst:29
-#, fuzzy
 msgid "Downloading and installing assets"
-msgstr "Télécharger des démos et des modèles"
+msgstr "Télécharger et installer des ressources"
 
 #: ../../docs/community/asset_store/using_in_editor.rst:31
 #, fuzzy
@@ -206913,9 +206720,8 @@ msgid "Asset Summary"
 msgstr "Résumé"
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:175
-#, fuzzy
 msgid "Detailed description"
-msgstr "Une description détaillée."
+msgstr "Une description détaillée"
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:177
 msgid "Asset type (Full Project or Addon)"
@@ -206989,13 +206795,12 @@ msgstr ""
 "nouveau avec les modifications appropriées."
 
 #: ../../docs/community/asset_store/faq.rst:7
-#, fuzzy
 msgid "General store questions"
-msgstr "Actions générales de l'éditeur"
+msgstr "Questions générales sur la boutique"
 
 #: ../../docs/community/asset_store/faq.rst:10
 msgid "I found a bug in the store website, where do I report it?"
-msgstr ""
+msgstr "J'ai trouvé un bug sur le site de la boutique, où dois-je le signaler ?"
 
 #: ../../docs/community/asset_store/faq.rst:12
 #, fuzzy
@@ -207110,29 +206915,33 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/faq.rst:69
-#, fuzzy
 msgid "Is there a size limit?"
-msgstr "Limites de taille des textures"
+msgstr "Y a-t-il une limite de taille ?"
 
 #: ../../docs/community/asset_store/faq.rst:71
 msgid "Yes, a single version of an asset has a maximum size of 1GB."
-msgstr ""
+msgstr "Oui, une seule version d'une ressource a une taille maximale de 1Go."
 
 #: ../../docs/community/asset_store/faq.rst:74
 msgid "Can I upload AI generated assets or code?"
-msgstr ""
+msgstr "Puis-je upload des ressources ou du code généré par IA ?"
 
 #: ../../docs/community/asset_store/faq.rst:76
 msgid ""
 "Yes, however you must disclose what is AI generated, and how AI was used "
 "during the creation process when submitting the asset."
 msgstr ""
+"Oui, mais vous devez déclarer ce qui est généré par IA, et comment l'IA a "
+"été utilisée pendant le processus de création lors de la soumission de la "
+"ressource."
 
 #: ../../docs/community/asset_store/faq.rst:79
 msgid ""
 "\"AI\" refers to any LLM/generative AI model like ChatGPT, Claude, Grok, "
 "etc., or any other models that fulfill the same role."
 msgstr ""
+"\"IA\" se réfère à tout modèle d'IA générative / LLM, comme ChatGPT, Claude, "
+"Grok, etc., ou tout autre modèle qui remplit le même rôle."
 
 #: ../../docs/community/asset_store/faq.rst:82
 msgid ""
@@ -207142,6 +206951,12 @@ msgid ""
 "manually afterwards. Or if you AI generate an image and put it inside a "
 "human created image, for example an AI painting in a drawing of a room."
 msgstr ""
+"Si vous altérez quelque chose généré par IA, ou utilisez quelque chose "
+"généré par IA au milieu de quelque chose créé à la main, cela compte "
+"toujours et vous devez le déclarer. Par exemple, si vous générez par IA une "
+"image, et la modifiez à la main après. Ou si vous générez par IA une image "
+"et mettez dedans une image créé par un humain, comme une peinture par IA "
+"dans un dessin d'une pièce."
 
 #: ../../docs/community/channels.rst:4
 msgid "Community channels"
@@ -207195,15 +207010,14 @@ msgstr ""
 "asset>`_, également remplie de ressources officielles et communautaires !"
 
 #: ../../docs/community/tutorials.rst:11
-#, fuzzy
 msgid ""
 "Think there is something missing here? Feel free to submit a `pull request "
 "<https://github.com/godotengine/godot-docs/blob/master/community/"
 "tutorials.rst>`_ as always."
 msgstr ""
-"Vous pensez qu'il manque quelque chose ? N'hésitez pas à soumettre une `Pull "
-"Request <https://github.com/godotengine/godot-docs/blob/master/community/"
-"tutorials.rst>`_ comme toujours."
+"Vous pensez qu'il manque quelque chose ici ? N'hésitez pas à soumettre une "
+"`Pull Request <https://github.com/godotengine/godot-docs/blob/master/"
+"community/tutorials.rst>`_ comme toujours."
 
 #: ../../docs/community/tutorials.rst:14
 msgid "Where to start"

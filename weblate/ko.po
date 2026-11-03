@@ -134,13 +134,15 @@
 # 김경호 <rlarudgh1337@gmail.com>, 2026.
 # MIYA <nightmiya827@gmail.com>, 2026.
 # kerrie so <sunstation.dev@gmail.com>, 2026.
+# 박건우 <parkgeonwoo42@gmail.com>, 2026.
+# 윤태웅 <wgisu123@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-08-20 11:36+0200\n"
-"PO-Revision-Date: 2026-08-17 12:03+0000\n"
-"Last-Translator: kerrie so <sunstation.dev@gmail.com>\n"
+"PO-Revision-Date: 2026-10-29 06:51+0000\n"
+"Last-Translator: 윤태웅 <wgisu123@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
 "Language: ko\n"
@@ -148,7 +150,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
@@ -602,7 +604,6 @@ msgstr ""
 "파일, 편집기 작업, C++ 모듈 개발 등에 관한 정보를 제공합니다."
 
 #: ../../docs/about/introduction.rst:83
-#, fuzzy
 msgid ""
 "**Community** is dedicated to the life of Godot's community and contains a "
 "list of recommended third-party tutorials and materials outside of this "
@@ -610,10 +611,10 @@ msgid ""
 "list Godot communities, which are now listed on the `Godot website <https://"
 "godotengine.org/community/>`_."
 msgstr ""
-"**커뮤니티**\\ 는 Godot 커뮤니티의 활동을 지원하며, 이 문서 외에도 추천하는 "
-"서드 파티 튜토리얼과 자료 목록을 포함합니다. 또한 애셋 라이브러리에 대한 자세"
-"한 정보도 제공합니다. 이전에는 Godot 커뮤니티를 나열했으나, 현재는 `Godot 웹"
-"사이트 <https://godotengine.org/community/>`_\\ 에 나열되어 있습니다."
+"**커뮤니티**\\는 Godot 커뮤니티의 활동을 지원하며, 이 문서 외에도 추천하는 "
+"서드 파티 튜토리얼과 자료 목록을 포함합니다. 또한 애셋 라이브러리에 대한 "
+"자세한 정보도 제공합니다. 이전에는 Godot 커뮤니티를 나열했으나, 현재는 "
+"`Godot 웹사이트 <https://godotengine.org/community/>`_\\에 나열되어 있습니다."
 
 #: ../../docs/about/introduction.rst:87
 msgid ""
@@ -989,13 +990,12 @@ msgid "**Plugins:**"
 msgstr "**플러그인:**"
 
 #: ../../docs/about/list_of_features.rst:117
-#, fuzzy
 msgid ""
 "Editor plugins can be downloaded from the :ref:`Asset Store "
 "<doc_what_is_asset_store>` to extend editor functionality."
 msgstr ""
-"편집기 플러그인은 :ref:`애셋 라이브러리 <doc_what_is_assetlib>`\\ 에서 다운로"
-"드받아 편집기 기능을 확장할 수 있습니다."
+"편집기 플러그인은 :ref:`Asset Store <doc_what_is_asset_store>`\\에서 "
+"다운로드받아 편집기 기능을 확장할 수 있습니다."
 
 #: ../../docs/about/list_of_features.rst:119
 msgid ""
@@ -1006,13 +1006,12 @@ msgstr ""
 "운 기능을 추가하거나 작업 흐름을 가속화하하세요."
 
 #: ../../docs/about/list_of_features.rst:121
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the Asset Store <doc_using_asset_store_editor>` "
 "in the Project Manager and import them directly."
 msgstr ""
-"프로젝트 매니저의 :ref:`애셋 라이브러리에서 프로젝트를 다운로드 "
-"<doc_using_assetlib_editor>`\\ 하고 직접 가져옵니다."
+"프로젝트 매니저의 :ref:`에셋 스토어에서 프로젝트를 다운로드 "
+"<doc_using_asset_store_editor>`\\하고 직접 가져옵니다."
 
 #: ../../docs/about/list_of_features.rst:125
 #: ../../docs/about/docs_changelog.rst:123
@@ -1643,6 +1642,9 @@ msgid ""
 "Optional supersampling at bake-time to improve quality and reduce light "
 "leaking at the cost of increased bake times and memory usage during baking."
 msgstr ""
+"굽기(bake) 시간과 메모리 사용량이 증가하는 대신, 품질을 향상시키고 빛 샘"
+"(light leaking)을 줄이기 위한 선택적 베이크 타임(bake-time) 슈퍼샘플링을 "
+"지원합니다."
 
 #: ../../docs/about/list_of_features.rst:302
 #, fuzzy
@@ -3099,9 +3101,8 @@ msgid "HTC Vive Focus Vision"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:762
-#, fuzzy
 msgid "Android XR headsets"
-msgstr "Android SDK"
+msgstr "Android XR 헤드셋"
 
 #: ../../docs/about/list_of_features.rst:764
 msgid "Support for the Linux-based standalone Steam Frame using OpenXR."
@@ -3252,9 +3253,8 @@ msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
 msgstr ":ref:`Draggable splitter <class_SplitContainer>` 레이아웃."
 
 #: ../../docs/about/list_of_features.rst:809
-#, fuzzy
 msgid ":ref:`Foldable section <class_FoldableContainer>` layouts."
-msgstr ":ref:`Stack <class_BoxContainer>` 레이아웃."
+msgstr ":ref:`폴더블 섹션 <class_FoldableContainer>` 레이아웃."
 
 #: ../../docs/about/list_of_features.rst:811
 msgid ""
@@ -3821,12 +3821,10 @@ msgid "**Web editor:** 6 GB"
 msgstr "**웹 편집기:** 6 GB"
 
 #: ../../docs/about/system_requirements.rst:104
-#, fuzzy
 msgid ""
 "**Native editor:** Android 7.0 (Compatibility) or Android 9.0 (Forward+/"
 "Mobile)"
-msgstr ""
-"**네이티브 편집기:** Android 6.0 (호환성) 또는 Android 9.0 (Forward+/모바일)"
+msgstr "**네이티브 편집기:** Android 7.0 (호환성) 또는 Android 9.0 (Forward+/모바일)"
 
 #: ../../docs/about/system_requirements.rst:109
 msgid ""
@@ -3910,19 +3908,16 @@ msgstr "**웹 편집기:** 12 GB"
 
 #: ../../docs/about/system_requirements.rst:143
 #: ../../docs/about/system_requirements.rst:174
-#, fuzzy
 msgid ""
 "2 GB (used for the executable, project files, all export templates, and "
 "cache)"
-msgstr "1.5 GB (실행 파일, 프로젝트 파일, 모든 내보내기 템플릿 및 캐시에 사용)"
+msgstr "2 GB (실행 파일, 프로젝트 파일, 모든 내보내기 템플릿 및 캐시에 사용)"
 
 #: ../../docs/about/system_requirements.rst:145
-#, fuzzy
 msgid ""
 "**Native editor:** Windows 11, macOS 13, Linux distribution released after "
 "2020"
-msgstr ""
-"**네이티브 편집기:** Windows 10, macOS 10.15, 2020년 이후 출시된 Linux 배포판"
+msgstr "**네이티브 편집기:** Windows 11, macOS 13, 2020년 이후 출시된 Linux 배포판"
 
 #: ../../docs/about/system_requirements.rst:146
 msgid "**Web editor:** Latest version of Firefox, Chrome, Edge, Safari, Opera"
@@ -3972,9 +3967,8 @@ msgid "**Native editor:** 6 GB"
 msgstr "**네이티브 편집기:** 6 GB"
 
 #: ../../docs/about/system_requirements.rst:176
-#, fuzzy
 msgid "**Native editor:** Android 11.0"
-msgstr "**네이티브 편집기:** Android 9.0"
+msgstr "**네이티브 편집기:** Android 11.0"
 
 #: ../../docs/about/system_requirements.rst:177
 msgid ""
@@ -4218,9 +4212,8 @@ msgstr ""
 "3 지원 (iOS/iPadOS)"
 
 #: ../../docs/about/system_requirements.rst:363
-#, fuzzy
 msgid "**For native exports:** Android 9.0, iOS 16.0"
-msgstr "**네이티브 내보내기:** 2 GB"
+msgstr "**네이티브 내보내기:** Android 9.0, iOS 16.0"
 
 #: ../../docs/about/system_requirements.rst:364
 msgid ""
@@ -6166,14 +6159,12 @@ msgid "**Support level**"
 msgstr "**지원 수준**"
 
 #: ../../docs/about/release_policy.rst:87
-#, fuzzy
 msgid "Godot 4.8 (`master`)"
-msgstr "Godot 4.4 (`master`)"
+msgstr "Godot 4.8 (`master`)"
 
 #: ../../docs/about/release_policy.rst:87
-#, fuzzy
 msgid "Q4 2026 (estimate)"
-msgstr "2025년 1분기 (예상)"
+msgstr "2026년 4분기 (예상)"
 
 #: ../../docs/about/release_policy.rst:87
 msgid ""
@@ -6188,14 +6179,12 @@ msgid "unstable"
 msgstr "불안정"
 
 #: ../../docs/about/release_policy.rst:90
-#, fuzzy
 msgid "Godot 4.7"
-msgstr "Godot 4.3"
+msgstr "Godot 4.7"
 
 #: ../../docs/about/release_policy.rst:90
-#, fuzzy
 msgid "June 2026"
-msgstr "2020년 1월"
+msgstr "2026년 6월"
 
 #: ../../docs/about/release_policy.rst:90
 #: ../../docs/about/release_policy.rst:93
@@ -6806,9 +6795,8 @@ msgstr ""
 "지 않습니다."
 
 #: ../../docs/about/docs_changelog.rst:19
-#, fuzzy
 msgid "New pages since version 4.6"
-msgstr "버전 4.3 이후 새로운 페이지"
+msgstr "버전 4.6 이후 새로운 페이지"
 
 #: ../../docs/about/docs_changelog.rst:24
 msgid ":ref:`doc_game_embedding`"
@@ -6824,9 +6812,8 @@ msgid ":ref:`doc_creating_applications`"
 msgstr ":ref:`doc_creating_applications`"
 
 #: ../../docs/about/docs_changelog.rst:32
-#, fuzzy
 msgid "New pages since version 4.5"
-msgstr "버전 4.3 이후 새로운 페이지"
+msgstr "버전 4.5 이후 새로운 페이지"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid ":ref:`doc_controller_features`"
@@ -8230,15 +8217,14 @@ msgstr ""
 "저장하면, 편집기에서는 내부 구조가 숨겨진 단일 노드로 표시됩니다."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:56
-#, fuzzy
 msgid ""
 "Godot provides an extensive library of base node types you can combine and "
 "extend to build more powerful ones. You'll use these nodes for most things "
 "you build, whether that's 2D, 3D, or UI."
 msgstr ""
-"Godot는 결합하고 확장하여 보다 강력한 노드를 구축할 수 있는 광범위한 기본 노"
-"드 유형 라이브러리를 제공합니다. 2D, 3D 또는 사용자 인터페이스를 사용하면 대"
-"부분의 작업을 이 노드에서 수행할 수 있습니다."
+"Godot는 결합하고 확장하여 보다 강력한 노드를 구축할 수 있는 광범위한 기본 "
+"노드 유형 라이브러리를 제공합니다. 2D, 3D 또는 사용자 인터페이스를 사용하면 "
+"대부분의 작업을 이 노드에서 수행할 수 있습니다."
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:63
 #: ../../docs/engine_details/file_formats/tscn.rst:97
@@ -8343,7 +8329,7 @@ msgid ""
 "as you will get many answers throughout the Getting Started series."
 msgstr ""
 "이 간략한 설명 이후에 여러분이 궁금증을 가질 수도 있습니다. 이 시리즈를 통해 "
-"많은 질문에 대한 답을 얻게 될 것이니 조금만 참고 계시기 바랍니다."
+"많은 질문에 대한 답을 얻게 될 것이니 조금만 참고 기다려주시기 바랍니다."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:10
 msgid "First look at Godot's interface"
@@ -8387,11 +8373,11 @@ msgid ""
 "To change this click the \"Go Online\" button. You can change this option "
 "later in the settings."
 msgstr ""
-"창 상단에는 **애셋 라이브러리**\\ 라는 또 다른 탭이 있습니다. 이 탭에 처음 이"
-"동하면 \"온라인으로 이동\" 버튼을 보게 됩니다. 개인정보 보호를 위해 Godot 프"
-"로젝트 매니저는 기본적으로 인터넷에 접속하지 않습니다. 이를 변경하려면 \"온라"
-"인으로 이동\" 버튼을 클릭하세요. 이 옵션은 나중에 설정에서 변경할 수 있습니"
-"다."
+"창 상단에는 **애셋 라이브러리**\\ 라는 또 다른 탭이 있습니다. 이 탭에 처음 "
+"이동하면 \"온라인으로 이동\" 버튼을 보게 됩니다. 개인정보 보호를 위해 Godot "
+"프로젝트 매니저는 기본적으로 인터넷에 접속하지 않습니다. 이를 변경하려면 "
+"\"온라인으로 이동\" 버튼을 클릭하세요. 이 옵션은 나중에 설정에서 변경할 수 "
+"있습니다."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:32
 msgid ""
@@ -8413,8 +8399,8 @@ msgid ""
 "language), interface theme, display scale, network mode, and also the "
 "directory naming convention."
 msgstr ""
-"여기에서 편집기의 언어(디폴트는 시스템 언어), 인터페이스 테마, 표시 배율, 네"
-"트워크 모드, 그리고 디렉터리 명명 규칙을 변경할 수 있습니다."
+"여기에서 편집기의 언어(디폴트는 시스템 언어), 인터페이스 테마(스타일), 표시 "
+"배율, 네트워크 모드, 그리고 디렉터리 명명 규칙을 변경할 수 있습니다."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:44
 msgid ""
@@ -8432,8 +8418,8 @@ msgid ""
 "When you open a new or an existing project, the editor's interface appears. "
 "Let's look at its main areas:"
 msgstr ""
-"새로운 프로젝트나 기존 프로젝트를 열 때편집기의 인터페이스가 나타납니다. 주"
-"요 영역을 살펴보겠습니다:"
+"새로운 프로젝트나 기존 프로젝트를 열 때 편집기의 인터페이스가 나타납니다. "
+"주요 영역을 살펴보겠습니다:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:56
 msgid ""
@@ -8531,8 +8517,8 @@ msgid ""
 "Docks can be customized. Read more "
 "on :ref:`doc_customizing_editor_moving_docks`."
 msgstr ""
-"독은 사용자 지정할 수 있습니다. :ref:`doc_customizing_editor_moving_docks`\\ "
-"에서 자세히 읽으세요."
+"독은 사용자 지정 설정이 가능합니다. "
+":ref:`doc_customizing_editor_moving_docks`\\ 에서 자세히 읽으세요."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:106
 msgid ""
@@ -8585,8 +8571,8 @@ msgid ""
 "In the **3D screen**, you can work with meshes, lights, and design levels "
 "for 3D games."
 msgstr ""
-"**3D 화면**\\ 에서는 3D 게임에 대한 메시, 조명, 그리고 레벨 설계를 다룰 수 있"
-"습니다."
+"**3D 화면**\\ 에서는 3D 게임에 대한 메시, 조명, 그리고 레벨 디자인을 다룰 수 "
+"있습니다."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:137
 msgid ""
@@ -8609,30 +8595,28 @@ msgstr ""
 "용은 저장되지 않습니다."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:147
-#, fuzzy
 msgid ""
 "The **Script screen** is a complete code editor with a debugger, rich auto-"
 "completion, and built-in class reference."
 msgstr ""
-"**스크립트 화면**\\ 은 완전한 코드 편집기로서 디버거, 풍부한 자동완성 기능 "
-"및 내장된 코드 참조 기능을 제공합니다."
+"**스크립트 화면**\\은 완전한 코드 편집기로서 디버거, 풍부한 자동 완성 기능 "
+"및 내장 클래스 참조 기능을 제공합니다."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:152
-#, fuzzy
 msgid ""
 "Finally, the **Asset Store** is a repository of user-submitted addons, "
 "scripts, tools, and other resources to use in your projects."
 msgstr ""
-"마지막으로 **애셋 라이브러리**\\ 는 프로젝트에 사용할 자유 및 오픈 소스 애드"
-"온, 스크립트, 그리고 애셋이 있는 라이브러리입니다."
+"마지막으로 **애셋 스토어**\\ 는 유저 창작 애드온, 스크립트, 도구, 그리고 "
+"기타 리소스들이 모여있는 저장소이며, 당신의 프로젝트에서 이 애셋들을 사용할 "
+"수 있습니다."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:159
-#, fuzzy
 msgid ""
 "You can learn more about the Asset Store in ref:`doc_what_is_asset_store`."
 msgstr ""
-":ref:`doc_what_is_assetlib`\\ 에서 애셋 라이브러리에 대해 자세히 알아볼 수 있"
-"습니다."
+"애셋 스토어에 대해 더 자세한 사항을 알아보려면 "
+":ref:`doc_what_is_asset_store`\\ 를 참조하세요."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:164
 msgid "Integrated class reference"
@@ -8757,13 +8741,13 @@ msgid ""
 "offline, from within the Godot editor. To do so, go to Help -> Search Help "
 "or press :kbd:`F1`."
 msgstr ""
-"이 매뉴얼에는 프로그래밍할 때 각 Godot 클래스의 사용 가능한 함수와 속성을 설"
-"명하는 클래스 참조가 함께 제공됩니다. 매뉴얼은 일반적인 기능, 개념 및 편집기 "
-"사용 방법을 다루는 반면, 참조는 Godot의 스크립팅 API (응용 프로그래밍 인터페"
-"이스)를 사용하는 데 관한 것입니다. 이 참조는 온라인 및 오프라인에서 모두 이용"
-"할 수 있습니다. 클래스 참조는 Godot 편집기 안에서 오프라인으로 살펴보는 것을 "
-"권장합니다. 이를 위해 도움말 -> 도움말 검색으로 이동하거나 :kbd:`F1`\\을 누르"
-"세요."
+"이 매뉴얼에는 프로그래밍할 때 각 Godot 클래스의 사용 가능한 함수와 속성을 "
+"설명하는 클래스 참조가 함께 제공됩니다. 매뉴얼은 일반적인 기능, 개념 및 "
+"편집기 사용 방법을 다루는 반면, 참조는 Godot의 스크립팅 API (Application "
+"Programming Interface)를 사용하는 데 관한 것입니다. 이 참조는 온라인 및 "
+"오프라인에서 모두 이용할 수 있습니다. 클래스 참조는 Godot 편집기 안에서 "
+"오프라인으로 살펴보는 것을 권장합니다. 이를 위해 도움말 -> 도움말 검색으로 "
+"이동하거나 :kbd:`F1`\\을 누르세요."
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:36
 msgid ""
@@ -63439,12 +63423,12 @@ msgid ""
 "click **Reimport** at the bottom of the Import dock after setting the path "
 "to the normal map."
 msgstr ""
-"가져오기 시 러프니스 제한은 러프니스 제한을 위한 가이드로 사용할 노멀 맵을 지"
-"정하여 작동합니다. 이는 FileSystem 도크에서 거칠기 맵을 선택한 다음 가져오기 "
-"도크로 이동하여 거칠기 맵이 저장된 색상 채널(일반적으로 **녹색**)로 **거칠기 "
-"> 모드**를 설정한 다음 재질의 노멀 맵에 대한 경로를 설정하여 수행됩니다. 노"
-"멀 맵에 대한 경로를 설정한 후 가져오기 도크 하단에 있는 **다시 가져오기**를 "
-"클릭하는 것을 잊지 마세요."
+"가져오기 시 러프니스 제한은 러프니스 제한을 위한 가이드로 사용할 노멀 맵을 "
+"지정하여 작동합니다. 이는 FileSystem 도크에서 거칠기 맵을 선택한 다음 "
+"가져오기 도크로 이동하여 거칠기 맵이 저장된 색상 채널(일반적으로 **녹색**)로 "
+"**거칠기 > 모드**\\를 설정한 다음 재질의 노멀 맵에 대한 경로를 설정하여 "
+"수행됩니다. 노멀 맵에 대한 경로를 설정한 후 가져오기 도크 하단에 있는 **다시 "
+"가져오기**\\를 클릭하는 것을 잊지 마세요."
 
 #: ../../docs/tutorials/3d/3d_antialiasing.rst:282
 msgid ""
@@ -64045,9 +64029,9 @@ msgid ""
 "FileSystem dock, go to the Import dock, change its **Import As** option to "
 "**Scene** then click **Reimport**:"
 msgstr ""
-"OBJ 파일에 메시 LOD가 생성되도록 하려면 FileSystem 도크에서 해당 파일을 선택"
-"하고 가져오기 도크로 이동하여 **다른 이름으로 가져오기** 옵션을 **씬**로 변경"
-"한 다음 **다시 가져오기**를 클릭합니다."
+"OBJ 파일에 메시 LOD가 생성되도록 하려면 FileSystem 도크에서 해당 파일을 "
+"선택하고 가져오기 도크로 이동하여 **다른 이름으로 가져오기** 옵션을 "
+"**씬**\\으로 변경한 다음 **다시 가져오기**\\를 클릭합니다."
 
 #: ../../docs/tutorials/3d/mesh_lod.rst:84
 #: ../../docs/tutorials/3d/mesh_lod.rst:88
@@ -64056,7 +64040,7 @@ msgstr "가져오기 도크에서 OBJ 파일의 가져오기 유형 변경"
 
 #: ../../docs/tutorials/3d/mesh_lod.rst:90
 msgid "This will require restarting the editor after clicking **Reimport**."
-msgstr "**다시 가져오기**를 클릭한 후 편집기를 다시 시작해야 합니다."
+msgstr "**다시 가져오기** 를 클릭한 후 편집기를 다시 시작해야 합니다."
 
 #: ../../docs/tutorials/3d/mesh_lod.rst:94
 msgid ""
@@ -87313,10 +87297,10 @@ msgid ""
 "JSON can't parse are: ``Vector2``, ``Vector3``, ``Color``, ``Rect2``, and "
 "``Quaternion``."
 msgstr ""
-"**데이터 유형:** JSON은 제한된 데이터 유형 세트만 제공합니다. JSON에 없는 데"
-"이터 유형이 있는 경우 JSON이 처리할 수 있는 유형 간에 데이터를 변환해야 합니"
-"다. 예를 들어 JSON이 구문 분석할 수 없는 몇 가지 중요한 유형은 ``Vector2``, "
-"``Vector3``, ``Color``, ``Rect2`` 및 ``Quaternion``입니다."
+"**데이터 유형:** JSON은 제한된 데이터 유형 세트만 제공합니다. JSON에 없는 "
+"데이터 유형이 있는 경우 JSON이 처리할 수 있는 유형 간에 데이터를 변환해야 "
+"합니다. 예를 들어 JSON이 구문 분석할 수 없는 몇 가지 중요한 유형은 "
+"``Vector2``, ``Vector3``, ``Color``, ``Rect2`` 및 ``Quaternion`` 입니다."
 
 #: ../../docs/tutorials/io/saving_games.rst:360
 msgid ""
@@ -88564,7 +88548,7 @@ msgstr "거리"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:254
 msgid "10: :ref:`Quaternion<class_quaternion>`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr "10: :ref:`Quaternion<class_quaternion>`"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:259
 msgid "Imaginary X"
@@ -103005,8 +102989,8 @@ msgid ""
 "previous transform. This can be useful in some situations. Let's take a look "
 "at a few examples."
 msgstr ""
-"\"affine_inverse\" 함수는 이전 변환을 \"실행 취소\"하는 변환을 반환합니다. 이"
-"는 일부 상황에서 유용할 수 있습니다. 몇 가지 예를 살펴보겠습니다."
+"``affine_inverse`` 함수는 이전 변환을 ``실행 취소``\\하는 변환을 반환합니다. "
+"이는 일부 상황에서 유용할 수 있습니다. 몇 가지 예를 살펴보겠습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:552
 msgid ""
@@ -103510,9 +103494,8 @@ msgstr ""
 "서 작동하고 보이는 방법입니다."
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:192
-#, fuzzy
 msgid "Curve2D, Curve3D, Path2D, and Path3D"
-msgstr "Curve2D, Curve3D, 경로 및 Path2D"
+msgstr "Curve2D, Curve3D, Path2D 그리고 Path3D"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:194
 #, fuzzy
@@ -109455,14 +109438,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:688
-#, fuzzy
 msgid "On the server:"
-msgstr "웹사이트에서"
+msgstr "서버에서"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:703
-#, fuzzy
 msgid "On the client:"
-msgstr "웹사이트에서"
+msgstr "클라이언트에서"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:723
 msgid ""
@@ -115996,40 +115977,36 @@ msgstr ""
 "같습니다."
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:226
-#, fuzzy
 msgid ""
 "``collisions/use_enhanced_internal_edge_removal`` is now ``simulation/"
 "use_enhanced_internal_edge_removal``."
 msgstr ""
-"``collisions/use_enhanced_internal_edge_removal``는 이제 ``simulation/"
-"use_enhanced_internal_edge_removal.``입니다."
+"``collisions/use_enhanced_internal_edge_removal``\\는 이제 ``simulation/"
+"use_enhanced_internal_edge_removal.``\\입니다."
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:227
-#, fuzzy
 msgid ""
 "``collisions/areas_detect_static_bodies`` is now ``simulation/"
 "areas_detect_static_bodies``."
 msgstr ""
-"``collisions/areas_detect_static_bodies``는 이제 ``simulation/"
-"areas_detect_static_bodies.``입니다."
+"``collisions/areas_detect_static_bodies``\\는 이제 ``simulation/"
+"areas_detect_static_bodies.``\\입니다."
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:228
-#, fuzzy
 msgid ""
 "``collisions/report_all_kinematic_contacts`` is now ``simulation/"
 "generate_all_kinematic_contacts``."
 msgstr ""
-"``collisions/report_all_kinematic_contacts``는 이제 ``simulation/"
-"generate_all_kinematic_contacts.``입니다."
+"``collisions/report_all_kinematic_contacts``\\는 이제 ``simulation/"
+"generate_all_kinematic_contacts.``\\입니다."
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:229
-#, fuzzy
 msgid ""
 "``collisions/soft_body_point_margin`` is now ``simulation/"
 "soft_body_point_radius``."
 msgstr ""
-"``collisions/soft_body_point_margin``는 이제 ``simulation/"
-"soft_body_point_radius.``입니다."
+"``collisions/soft_body_point_margin``\\는 이제 ``simulation/"
+"soft_body_point_radius.``\\입니다."
 
 #: ../../docs/tutorials/physics/using_jolt_physics.rst:230
 #, fuzzy
@@ -116302,13 +116279,13 @@ msgid ""
 "control is needed, solutions such as ones relying on :ref:`class_Quaternion` "
 "may be required, as discussed in :ref:`doc_using_transforms`."
 msgstr ""
-"이 방법은 강체의 ``angular_velocity`` 속성을 사용하여 몸체를 회전합니다. 회전"
-"할 축은 현재 순방향과 보고자 하는 방향 사이의 외적에 의해 제공됩니다. "
-"``clamp``는 필요한 총 회전량이 내적의 아크코사인에 의해 제공되므로 회전량이 "
-"보고 싶은 방향을 벗어나는 것을 방지하는 데 사용되는 간단한 방법입니다. 이 방"
-"법은 ``axis_lock_angular_*``에서도 사용할 수 있습니다. 보다 정밀한 제어가 필"
-"요한 경우 :ref:`doc_using_transforms`에서 설명한 대로 :ref:`class_Quaternion`"
-"를 사용하는 솔루션과 같은 솔루션이 필요할 수 있습니다."
+"이 방법은 강체의 ``angular_velocity`` 속성을 사용하여 몸체를 회전합니다. "
+"회전할 축은 현재 순방향과 보고자 하는 방향 사이의 외적에 의해 제공됩니다. "
+"``clamp`` 는 필요한 총 회전량이 내적의 아크코사인에 의해 제공되므로 회전량이 "
+"보고 싶은 방향을 벗어나는 것을 방지하는 데 사용되는 간단한 방법입니다. 이 "
+"방법은 ``axis_lock_angular_*`` 에서도 사용할 수 있습니다. 보다 정밀한 제어가 "
+"필요한 경우 :ref:`doc_using_transforms`에서 설명한 대로 "
+":ref:`class_Quaternion`를 사용하는 솔루션과 같은 솔루션이 필요할 수 있습니다."
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:4
 msgid "Using Area2D"
@@ -116669,15 +116646,14 @@ msgstr ""
 "먼저 :ref:`doc_physics_introduction`\\ 를 읽어주세요."
 
 #: ../../docs/tutorials/physics/using_character_body_2d.rst:38
-#, fuzzy
 msgid ""
 "A ``CharacterBody2D`` can be affected by gravity and other forces, but you "
 "must calculate the movement in code. The physics engine will not move a "
 "``CharacterBody2D``."
 msgstr ""
-"`KinematicBody2D`\\ 는 중력과 다른 힘에 의해 영향을 받을 수 있지만 코드로 움"
-"직임을 계산해야 합니다. 물리 엔진이 `KinematicBody2D`\\ 를 움직이게 하진 않습"
-"니다."
+"``CharacterBody2D``\\ 는 중력과 다른 힘에 의해 영향을 받을 수 있지만 코드로 "
+"움직임을 계산해야 합니다. 물리 엔진이 ``CharacterBody2D``\\ 를 움직이게 하진 "
+"않습니다."
 
 #: ../../docs/tutorials/physics/using_character_body_2d.rst:43
 msgid "Movement and collision"
@@ -121640,9 +121616,8 @@ msgid "Fedora Silverblue"
 msgstr ""
 
 #: ../../docs/tutorials/platform/linux/wayland_x11.rst:40
-#, fuzzy
 msgid "Ubuntu"
-msgstr "Debian/Ubuntu"
+msgstr "우분투"
 
 #: ../../docs/tutorials/platform/linux/wayland_x11.rst:41
 #, fuzzy
@@ -134113,7 +134088,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:797
 msgid ":ref:`Quaternion <class_Quaternion>`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`Quaternion <class_Quaternion>`"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:799
 msgid ""
@@ -139235,7 +139210,7 @@ msgstr "파일 이름"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:653
 msgid "``Camera3D``, ``Player``"
-msgstr "``-e``, ``--editor``"
+msgstr "``Camera3D``, ``Player``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:655
 msgid "``func load_level():``"
@@ -139247,7 +139222,7 @@ msgstr "``var particle_effect``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:659
 msgid "``signal door_opened``"
-msgstr "Signal 키워드"
+msgstr "``signal door_opened``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:661
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:665
@@ -139264,7 +139239,7 @@ msgstr "열거형 이름"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:663
 msgid "``enum Element``"
-msgstr "Android (시험용)"
+msgstr "``enum Element``"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:665
 msgid "Enum members"
@@ -139653,9 +139628,9 @@ msgid ""
 "mismatch at runtime, without an error/warning."
 msgstr ""
 "이 옵션은 유형 힌트보다 :ref:`type-"
-"safe<doc_gdscript_static_typing_safe_lines>`로 간주되지만 런타임에 유형이 일"
-"치하지 않는 경우 오류/경고 없이 변수를 ``null``로 자동 캐스팅하므로 null 안전"
-"성이 낮습니다."
+"safe<doc_gdscript_static_typing_safe_lines>` 로 간주되지만 런타임에 유형이 "
+"일치하지 않는 경우 오류/경고 없이 변수를 ``null`` 로 자동 캐스팅하므로 null "
+"안전성이 낮습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:4
 msgid "Static typing in GDScript"
@@ -139756,9 +139731,9 @@ msgid ""
 "Completion > Add Type Hints** editor setting. Also consider enabling `some "
 "warnings <Warning system_>`_ that are disabled by default."
 msgstr ""
-"정적 입력을 선호하는 경우 **텍스트 편집기 > 완성 > 유형 힌트 추가** 편집기 설"
-"정을 활성화하는 것이 좋습니다. 또한 기본적으로 비활성화되어 있는 `일부 경고 <"
-"경고 시스템_>`_을 활성화하는 것도 고려해보세요."
+"정적 입력을 선호하는 경우 **텍스트 편집기 > 완성 > 유형 힌트 추가** 편집기 "
+"설정을 활성화하는 것이 좋습니다. 또한 기본적으로 비활성화되어 있는 `일부 "
+"경고 <경고 시스템_>` 을 활성화하는 것도 고려해보세요."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:66
 msgid ""
@@ -139811,9 +139786,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:103
 msgid "There is no difference between ``=`` and ``:=`` for constants."
-msgstr ""
-"내보내기에서 버퍼 섀도우(buffer shadow)와 레이 섀도우(ray shadow)간의 차이는 "
-"없습니다."
+msgstr "상수에서 ``=`` 와 ``:=`` 간의 차이는 없습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:104
 msgid ""
@@ -139875,7 +139848,7 @@ msgid ""
 "``int``, there is no guarantee that the value belongs to the set of enum "
 "values."
 msgstr ""
-"전역, 기본 및 사용자 지정 명명된 열거형입니다. 열거형 유형은 단지 ``int``일 "
+"전역, 기본 및 사용자 지정 명명된 열거형입니다. 열거형 유형은 단지 ``int`` 일 "
 "뿐이며 값이 열거형 값 집합에 속한다는 보장은 없습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:124
@@ -139969,7 +139942,7 @@ msgstr "-> 화살표로 함수의 반환 타입 정의하기"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:218
 msgid "To define the type of an ``Array``, enclose the type name in ``[]``."
-msgstr "``Array``의 유형을 정의하려면 ``[]``에 유형 이름을 넣으십시오."
+msgstr "``Array`` 의 유형을 정의하려면 ``[]`` 에 유형 이름을 넣으십시오."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:220
 msgid ""
@@ -139979,11 +139952,11 @@ msgid ""
 "in types, native and custom classes, and enums may be used as element types. "
 "Nested array types (like ``Array[Array[int]]``) are not supported."
 msgstr ""
-"배열 유형은 ``for`` 루프 변수뿐만 아니라 ``[]``, ``[...] =``(할당) 및 ``+``"
-"와 같은 일부 연산자에도 적용됩니다. 배열 메서드(예: ``push_back``) 및 기타 연"
-"산자(예: ``==``)는 아직 유형이 지정되지 않았습니다. 내장 유형, 기본 및 사용"
-"자 정의 클래스, 열거형을 요소 유형으로 사용할 수 있습니다. 중첩된 배열 유형"
-"(예: ``Array[Array[int]]``)은 지원되지 않습니다."
+"배열 유형은 ``for`` 루프 변수뿐만 아니라 ``[]``, ``[...] =`` (할당) 및 ``+`` "
+"와 같은 일부 연산자에도 적용됩니다. 배열 메서드(예: ``push_back``) 및 기타 "
+"연산자(예: ``==``)는 아직 유형이 지정되지 않았습니다. 내장 유형, 기본 및 "
+"사용자 정의 클래스, 열거형을 요소 유형으로 사용할 수 있습니다. 중첩된 배열 "
+"유형(예: ``Array[Array[int]]``)은 지원되지 않습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:244
 msgid ""
@@ -140010,7 +139983,7 @@ msgid ""
 "To define the type of a ``Dictionary``'s keys and values, enclose the type "
 "name in ``[]`` and separate the key and value type with a comma."
 msgstr ""
-"``Dictionary``의 키 및 값 유형을 정의하려면 유형 이름을 ``[]``로 묶고 키와 "
+"``Dictionary`` 의 키 및 값 유형을 정의하려면 유형 이름을 ``[]`` 로 묶고 키와 "
 "값 유형을 쉼표로 구분하세요."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:262
@@ -140022,10 +139995,10 @@ msgid ""
 "Nested typed collections (like ``Dictionary[String, Dictionary[String, "
 "int]]``) are not supported."
 msgstr ""
-"사전의 값 유형은 ``for`` 루프 변수뿐만 아니라 ``[]`` 및 ``[...] =``(할당)와 "
+"사전의 값 유형은 ``for`` 루프 변수뿐만 아니라 ``[]`` 및 ``[...] =`` (할당)와 "
 "같은 일부 연산자에도 적용됩니다. 값을 반환하는 사전 메서드와 기타 연산자(예: "
-"``==``)는 아직 형식화되어 있지 않습니다. 내장 유형, 기본 및 사용자 정의 클래"
-"스, 열거형을 요소 유형으로 사용할 수 있습니다. 중첩된 유형의 컬렉션(예: "
+"``==``)는 아직 형식화되어 있지 않습니다. 내장 유형, 기본 및 사용자 정의 "
+"클래스, 열거형을 요소 유형으로 사용할 수 있습니다. 중첩된 유형의 컬렉션(예: "
 "``Dictionary[String, Dictionary[String, int]]``)은 지원되지 않습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:286
@@ -140085,9 +140058,9 @@ msgid ""
 "behavior is intended. A safer alternative is to use the ``is`` keyword:"
 msgstr ""
 "``as`` 키워드는 런타임에 유형이 일치하지 않는 경우 오류/경고 없이 변수를 "
-"``null``로 자동 캐스팅합니다. 어떤 경우에는 이것이 편리할 수도 있지만 버그가 "
-"발생할 수도 있습니다. 이 동작을 의도한 경우에만 ``as`` 키워드를 사용하십시"
-"오. 더 안전한 대안은 ``is`` 키워드를 사용하는 것입니다."
+"``null`` 로 자동 캐스팅합니다. 어떤 경우에는 이것이 편리할 수도 있지만 "
+"버그가 발생할 수도 있습니다. 이 동작을 의도한 경우에만 ``as`` 키워드를 "
+"사용하십시오. 더 안전한 대안은 ``is`` 키워드를 사용하는 것입니다."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:333
 msgid "You can also simplify the code by using the ``is not`` operator:"
@@ -140255,9 +140228,10 @@ msgid ""
 "By default, these warnings are disabled, you can enable them in Project "
 "Settings (**Debug > GDScript**, make sure **Advanced Settings** is enabled)."
 msgstr ""
-"우리는 특히 형식화된 GDScript 사용자를 겨냥한 여러 가지 경고를 가지고 있습니"
-"다. 기본적으로 이러한 경고는 비활성화되어 있으며 프로젝트 설정에서 활성화할 "
-"수 있습니다(**디버그 > GDScript**, **고급 설정**이 활성화되어 있는지 확인)."
+"우리는 특히 형식화된 GDScript 사용자를 겨냥한 여러 가지 경고를 가지고 "
+"있습니다. 기본적으로 이러한 경고는 비활성화되어 있으며 프로젝트 설정에서 "
+"활성화할 수 있습니다(**디버그 > GDScript**, **고급 설정** 이 활성화되어 "
+"있는지 확인)."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:473
 msgid ""
@@ -140405,7 +140379,7 @@ msgstr ":ref:`Color <class_Color>`"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:0
 msgid "(untyped ``clamp()`` does not work on Color)"
-msgstr "(유형이 지정되지 않은 ``clamp()``는 Color에서 작동하지 않습니다.)"
+msgstr "(유형이 지정되지 않은 ``clamp()`` 는 Color에서 작동하지 않습니다.)"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:518
 msgid ":ref:`floor() <class_@GlobalScope_method_floor>`"
@@ -140457,7 +140431,7 @@ msgstr ":ref:`Color <class_Color>`"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:0
 msgid ":ref:`Quaternion.slerp() <class_Quaternion_method_slerp>`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`Quaternion.slerp() <class_Quaternion_method_slerp>`"
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:0
 msgid ":ref:`Basis.slerp() <class_Basis_method_slerp>`"
@@ -140599,11 +140573,11 @@ msgid ""
 "instance, as it was passed to us by the physics system), we can first check "
 "if the property and method exist and then set and call them if they do:"
 msgstr ""
-"이 예에서는 ``class_name MyScript``가 첨부된 스크립트 및 ``extends Node2D``"
-"가 있는 객체에 대해 속성을 설정하고 메서드를 호출하는 것을 목표로 합니다. 객"
-"체에 대한 참조가 ``Node2D``인 경우(예를 들어 물리 시스템에 의해 전달된 경우) "
-"먼저 속성과 메서드가 존재하는지 확인한 다음 존재하는 경우 설정하고 호출할 수 "
-"있습니다."
+"이 예에서는 ``class_name MyScript`` 가 첨부된 스크립트 및 ``extends Node2D`` "
+"가 있는 객체에 대해 속성을 설정하고 메서드를 호출하는 것을 목표로 합니다. "
+"객체에 대한 참조가 ``Node2D`` 인 경우(예를 들어 물리 시스템에 의해 전달된 "
+"경우) 먼저 속성과 메서드가 존재하는지 확인한 다음 존재하는 경우 설정하고 "
+"호출할 수 있습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:580
 msgid ""
@@ -140670,12 +140644,12 @@ msgid ""
 "using the ``is`` keyword, and finally declare a statically typed variable "
 "with the object:"
 msgstr ""
-"그러나 ``body.label``는 ``Variant`` 유형이므로 ``UNSAFE_CAST`` 경고가 생성됩"
-"니다. 원하는 유형의 속성을 안전하게 가져오려면 객체를 ``Variant`` 값으로 반환"
-"하거나 속성이 존재하지 않는 경우 ``null``를 반환하는 ``Object.get()`` 메서드"
-"를 사용할 수 있습니다. 그런 다음 ``is`` 키워드를 사용하여 속성에 올바른 유형"
-"의 개체가 포함되어 있는지 확인하고 마지막으로 개체를 사용하여 정적으로 유형"
-"이 지정된 변수를 선언할 수 있습니다."
+"그러나 ``body.label`` 는 ``Variant`` 유형이므로 ``UNSAFE_CAST`` 경고가 "
+"생성됩니다. 원하는 유형의 속성을 안전하게 가져오려면 객체를 ``Variant`` "
+"값으로 반환하거나 속성이 존재하지 않는 경우 ``null`` 를 반환하는 ``Object.get"
+"()`` 메서드를 사용할 수 있습니다. 그런 다음 ``is`` 키워드를 사용하여 속성에 "
+"올바른 유형의 개체가 포함되어 있는지 확인하고 마지막으로 개체를 사용하여 "
+"정적으로 유형이 지정된 변수를 선언할 수 있습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:646
 msgid "Cases where you can't specify types"
@@ -140740,7 +140714,7 @@ msgid ""
 "in the sidebar. You can also search for \"GDScript\" when Advanced Settings "
 "is off."
 msgstr ""
-"사이드바에서 GDScript 섹션을 보려면 **고급 설정**을 활성화해야 합니다. 고급 "
+"사이드바에서 GDScript 섹션을 보려면 **고급 설정** 을 활성화해야 합니다. 고급 "
 "설정이 꺼져 있으면 \"GDScript\"를 검색할 수도 있습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/warning_system.rst:21
@@ -140774,11 +140748,11 @@ msgid ""
 "types until the end of the file."
 msgstr ""
 "파일 내의 한 영역에서 여러 경고를 무시하려면 :ref:`@warning_ignore_start "
-"<class_@GDScript_annotation_@warning_ignore_start>` "
-"및 :ref:`@warning_ignore_restore "
-"<class_@GDScript_annotation_@warning_ignore_restore>` 주석을 사용하세요. 파"
-"일 끝까지 지정된 경고 유형을 무시하려면 ``@warning_ignore_restore``를 생략할 "
-"수 있습니다."
+"<class_@GDScript_annotation_@warning_ignore_start>` 및 "
+":ref:`@warning_ignore_restore "
+"<class_@GDScript_annotation_@warning_ignore_restore>` 주석을 사용하세요. "
+"파일 끝까지 지정된 경고 유형을 무시하려면 ``@warning_ignore_restore`` 를 "
+"생략할 수 있습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/warning_system.rst:40
 msgid ""
@@ -140891,7 +140865,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:49
 msgid "There are other `format specifiers`_."
-msgstr "다른 `format specifiers`_도 있습니다."
+msgstr "다른 `format specifiers` 도 있습니다."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:52
 msgid "Multiple placeholders"
@@ -141029,8 +141003,8 @@ msgid ""
 msgstr ""
 "**벡터**. float 또는 int 기반 벡터 객체(``Vector2``, ``Vector3``, "
 "``Vector4``, ``Vector2i``, ``Vector3i`` 또는 ``Vector4i``)가 필요합니다. "
-"``%f``인 것처럼 각 좌표의 형식을 지정하고 동일한 수정자를 사용하여 벡터 좌표"
-"를 괄호 안에 표시합니다."
+"``%f`` 인 것처럼 각 좌표의 형식을 지정하고 동일한 수정자를 사용하여 벡터 "
+"좌표를 괄호 안에 표시합니다."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:115
 msgid "Placeholder modifiers"
@@ -141058,8 +141032,8 @@ msgid ""
 "if ``-`` is present. When used after ``.``, see ``.``."
 msgstr ""
 "**패딩** 를 설정합니다. 정수 플레이스 홀더에서 정수가 ``0`` 으로 시작한다면 "
-"그곳을 0이나 공백으로 채웁니다. ``.`` 뒤에서 쓰는 경우는, ``.`` 를 참고하세"
-"요."
+"그곳을 ``0`` 이나 공백으로 채웁니다. ``.`` 뒤에서 쓰는 경우는, ``.`` 를 "
+"참고하세요."
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:128
 msgid "``.``"
@@ -141115,7 +141089,7 @@ msgstr "문자열을 최소 길이로 패딩하기 위해선, 지정자에 정�
 msgid ""
 "If the integer starts with ``0``, integer values are padded with zeroes "
 "instead of white space:"
-msgstr "정수가 ``0``으로 시작한다면, 적분 값은 공백 대신 0으로 패딩됩니다:"
+msgstr "정수가 ``0`` 으로 시작한다면, 정수 값은 공백 대신 0으로 패딩됩니다:"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_format_string.rst:162
 msgid ""
@@ -147943,11 +147917,11 @@ msgstr "``Godot.Plane``"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_variant.rst:110
 msgid "``Quaternion``"
-msgstr "``Rotation``"
+msgstr "``Quaternion``"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_variant.rst:110
 msgid "``Godot.Quaternion``"
-msgstr "``Rotation``"
+msgstr "``Godot.Quaternion``"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_variant.rst:111
 msgid "``Aabb``"
@@ -175722,7 +175696,7 @@ msgstr "일반적인 콘텐츠 제어에는 다음이 포함됩니다."
 
 #: ../../docs/tutorials/ui/index.rst:21
 msgid ":ref:`Buttons <class_Button>`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`Buttons <class_Button>`"
 
 #: ../../docs/tutorials/ui/index.rst:22
 msgid ":ref:`Labels <class_Label>`"
@@ -177875,8 +177849,9 @@ msgid ""
 "its import type to **Font Data (Image Font)** then click **Reimport**:"
 msgstr ""
 "또는 비트맵 글꼴로 사용할 이미지를 가져올 수 있습니다. 이렇게 하려면 "
-"FileSystem 도크에서 이미지를 선택하고 가져오기 도크로 이동하여 가져오기 유형"
-"을 **글꼴 데이터(이미지 글꼴)**로 변경한 다음 **다시 가져오기**를 클릭합니다."
+"FileSystem 도크에서 이미지를 선택하고 가져오기 도크로 이동하여 가져오기 "
+"유형을 **글꼴 데이터(이미지 글꼴)**\\로 변경한 다음 **다시 가져오기**\\를 "
+"클릭합니다."
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:76
 msgid "Changing import type to Font Data (Image Font)"
@@ -178488,8 +178463,8 @@ msgid ""
 "click **Reimport**:"
 msgstr ""
 "특정 글꼴에 대해 MSDF 렌더링을 활성화하려면 FileSystem 도크에서 해당 글꼴을 "
-"선택하고 가져오기 도크로 이동하여 **Multichannel Signed Distance Field**를 활"
-"성화한 다음 **Reimport**를 클릭합니다."
+"선택하고 가져오기 도크로 이동하여 **Multichannel Signed Distance Field**\\를 "
+"활성화한 다음 **Reimport**\\를 클릭합니다."
 
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:391
 #: ../../docs/tutorials/ui/gui_using_fonts.rst:395
@@ -193403,7 +193378,7 @@ msgstr ":ref:`Plane <class_Plane>`"
 
 #: ../../docs/engine_details/architecture/variant_class.rst:89
 msgid ":ref:`class_quaternion`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`class_quaternion`"
 
 #: ../../docs/engine_details/architecture/variant_class.rst:91
 msgid ":ref:`class_aabb`"
@@ -212429,7 +212404,7 @@ msgstr "``position``: 벡터3"
 
 #: ../../docs/engine_details/file_formats/tscn.rst:205
 msgid "``rotation``: Quaternion"
-msgstr "``Rotation``"
+msgstr "``rotation``: Quaternion"
 
 #: ../../docs/engine_details/file_formats/tscn.rst:206
 msgid "``scale``: Vector3"
@@ -212888,10 +212863,10 @@ msgid ""
 "Vector3's coordinates. For 3D rotation tracks, ``X``, ``Y``, ``Z`` and ``W`` "
 "are the Quaternion's coordinates."
 msgstr ""
-"아래 시각적 가이드에서 ``T``는 애니메이션 시작 이후의 키프레임 시간(초)이고, "
-"``E``는 키프레임의 전환입니다(현재는 항상 ``1``). 3D 위치 및 배율 트랙의 경"
-"우 ``X``, ``Y``, ``Z``는 Vector3의 좌표입니다. 3D 회전 트랙의 경우 ``X``, "
-"``Y``, ``Z`` 및 ``W``는 쿼터니언의 좌표입니다."
+"아래 시각적 가이드에서 ``T`` 는 애니메이션 시작 이후의 키프레임 시간(초)"
+"이고, ``E``는 키프레임의 전환입니다(현재는 항상 ``1``). 3D 위치 및 배율 "
+"트랙의 경우 ``X``, ``Y``, ``Z`` 는 Vector3의 좌표입니다. 3D 회전 트랙의 경우 "
+"``X``, ``Y``, ``Z`` 및 ``W`` 는 쿼터니언의 좌표입니다."
 
 #: ../../docs/community/asset_library/index.rst:4
 msgid "Asset Library"
@@ -213107,7 +213082,7 @@ msgstr ""
 #: ../../docs/community/asset_library/using_assetlib.rst:53
 #: ../../docs/community/asset_store/using_asset_store_website.rst:30
 msgid "Breakdown of an asset"
-msgstr "애셋 분석"
+msgstr "애셋 살펴보기"
 
 #: ../../docs/community/asset_library/using_assetlib.rst:55
 #: ../../docs/community/asset_store/using_asset_store_website.rst:32
@@ -213159,7 +213134,7 @@ msgstr "애셋을 보여주는 이미지와 비디오."
 #: ../../docs/community/asset_library/using_assetlib.rst:71
 #: ../../docs/community/asset_store/using_asset_store_website.rst:49
 msgid "Registering and logging in"
-msgstr "등록하기 및 로그인하기"
+msgstr "회원가입 및 로그인"
 
 #: ../../docs/community/asset_library/using_assetlib.rst:73
 msgid ""
@@ -213883,9 +213858,8 @@ msgstr ""
 "수 있는지 알려드리며, 적절한 수정 후 다시 제출할 수 있습니다."
 
 #: ../../docs/community/asset_store/index.rst:4
-#, fuzzy
 msgid "Asset Store"
-msgstr "Assert 키워드"
+msgstr "애셋 스토어"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:4
 #, fuzzy
@@ -213893,7 +213867,6 @@ msgid "About the Asset Store"
 msgstr "애셋 라이브러리에 대하여"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:9
-#, fuzzy
 msgid ""
 "The Godot Asset Store is a repository of user-submitted Godot addons, "
 "scripts, tools, and other resources, collectively referred to as assets. "
@@ -213901,21 +213874,19 @@ msgid ""
 "engine, but can also be accessed at Godot's `official website <https://"
 "store.godotengine.org>`_."
 msgstr ""
-"애셋라이브라고도 알려진 Godot 애셋 라이브러리는 사용자가 제출한 Godot 애드"
-"온, 스크립트, 도구 및 기타 리소스(총체적으로 애셋이라고 함)의 저장소입니다. "
-"모든 Godot 사용자는 엔진 내에서 직접 다운로드할 수 있지만 Godot의 `공식 웹사"
-"이트 <https://godotengine.org/asset-library/asset>`_\\ 에서도 액세스할 수 있"
-"습니다."
+"Godot 애셋 스토어는 사용자들이 공유한 Godot 애드온, 스크립트, 도구, 그리고 "
+"기타 리소스들(통칭: 애셋)의 저장소입니다. 모든 Godot 사용자들은 애셋을 Godot "
+"엔진 안에서 바로 다운로드 할 수 있을 뿐만 아니라, Godot의 `공식 웹사이트 "
+"<https://store.godotengine.org>`_\\에서도 확인할 수 있습니다."
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:14
-#, fuzzy
 msgid ""
 "This set of pages will cover how to use the Asset Store (both from inside "
 "Godot, and on the website), how you can submit your own assets, and what the "
 "guidelines for submission are."
 msgstr ""
-"이 페이지의 집합에서는 애셋라이브을 사용하는 방법(Godot 안과 웹사이트 모두에"
-"서), 자신의 애셋을 제출하는 방법, 제출 지침이 무엇인지 다룹니다."
+"이 문서에서는 Godot 내부 및 웹사이트에서 애셋 스토어를 사용하는 방법, 직접 "
+"제작한 애셋을 등록(제출)하는 방법, 그리고 제출 가이드라인에 대해 다룹니다."
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:18
 msgid ""
@@ -213924,38 +213895,39 @@ msgid ""
 "currently private, you can however submit bug reports and discuss new "
 "features `here <https://github.com/godotengine/godot-asset-store-tracker>`_."
 msgstr ""
+"애셋 스토어는 현재 베타 단계라는 점에 유의하시기 바랍니다. 이에 따라 다양한 "
+"불편 사항이나 버그, 사용성 문제가 발생할 수 있습니다. 스토어 자체의 소스 "
+"코드는 현재 비공개이지만, `여기 <https://github.com/godotengine/godot-asset-"
+"store-tracker>`_\\에서 버그를 제보하거나 새로운 기능에 대해 논의하실 수 "
+"있습니다."
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:25
-#, fuzzy
 msgid "There are, broadly, two different types of assets you can post."
-msgstr "게시할 수 있는 애셋에는 크게 두 가지 유형이 있습니다."
+msgstr "등록할 수 있는 애셋은 크게 두 가지 유형으로 나뉩니다."
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:27
-#, fuzzy
 msgid ""
 "Assets labeled as \"Templates\" appear under the \"Asset Store\" tab in the "
 "Godot Project Manager. These assets are standalone Godot projects that can "
 "run by themselves."
 msgstr ""
-"\"템플릿\", \"프로젝트\" 또는 \"데모\"라고 표시된 애셋은 Godot 프로젝트 관리"
-"자의 \"애셋 라이브러리\" 탭 아래에 나타납니다. 이러한 애셋은 스스로 실행할 "
-"수 있는 독립형 Godot 프로젝트입니다."
+"\"템플릿\"이라고 표시된 애셋은 Godot 프로젝트 관리자의 \"애셋 스토어\" 탭 "
+"아래에 나타납니다. 이러한 애셋은 스스로 실행할 수 있는 독립형 Godot "
+"프로젝트입니다."
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:31
-#, fuzzy
 msgid ""
 "Other assets show up inside the Godot editor under the \"Asset Store\" main "
 "screen tab, next to \"2D\", \"3D\", and \"Script\". These assets are meant "
 "to be downloaded and placed into an existing Godot project."
 msgstr ""
-"다른 애셋은 \"애셋 라이브러리\" 메인 화면 탭 아래 Godot 편집기 내부의 "
-"\"2D\", \"3D\" 및 \"스크립트\" 옆에 표시됩니다. 이러한 애셋은 다운로드되어 기"
-"존 Godot 프로젝트에 배치됩니다."
+"다른 애셋은 \"애셋 스토어\" 메인 화면 탭 아래 Godot 편집기 내부의 \"2D\", "
+"\"3D\" 및 \"스크립트\" 옆에 표시됩니다. 이러한 애셋은 다운로드되어 기존 "
+"Godot 프로젝트에 배치됩니다."
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:36
-#, fuzzy
 msgid "The old Asset library"
-msgstr "애셋 라이브러리"
+msgstr "(구) 애셋 라이브러리"
 
 #: ../../docs/community/asset_store/what_is_asset_store.rst:38
 msgid ""
@@ -213964,22 +213936,24 @@ msgid ""
 "new Asset Store automatically. All authors must re-upload their assets to "
 "the new store."
 msgstr ""
+"애셋 스토어는 애셋 라이브러리의 후속 서비스입니다. 현재는 기존 애셋 "
+"라이브러리도 온라인 상태로 유지되어 계속 이용할 수 있습니다. 그러나 기존 "
+"라이브러리에 있던 애셋은 새로운 애셋 스토어에 자동으로 이전되지 "
+"**않았습니다**. 따라서 모든 애셋 제작자는 새로운 스토어에 다시 업로드해야 "
+"합니다."
 
 #: ../../docs/community/asset_store/using_asset_store_website.rst:4
-#, fuzzy
 msgid "Using the Asset Store Website"
-msgstr "애셋 라이브러리 사용하기"
+msgstr "웹사이트에서 애셋 스토어 사용하기"
 
 #: ../../docs/community/asset_store/using_asset_store_website.rst:9
-#, fuzzy
 msgid ""
 "As mentioned before, you can access the web frontend of the Asset Store on "
 "`Godot's official website <https://store.godotengine.org>`_. This is what it "
 "looks like when you first visit it:"
 msgstr ""
-"앞서 언급했듯이 `Godot 공식 웹사이트 <https://godotengine.org/asset-library/"
-"asset>`_\\ 에서 애셋 라이브러리의 웹 프론트엔드에 접근할 수 있습니다. 처음 방"
-"문했을 때의 모습은 이렇습니다."
+"앞서 언급했듯, `Godot 공식 웹사이트 <https://store.godotengine.org>`_\\ 에서 "
+"애셋 스토어에 접속할 수 있습니다. 처음 접속했을 때의 화면은 다음과 같습니다:"
 
 #: ../../docs/community/asset_store/using_asset_store_website.rst:18
 msgid ""
@@ -213987,12 +213961,16 @@ msgid ""
 "either type in the name of something specific you're looking for, or a tag "
 "such as ``2D``."
 msgstr ""
+"페이지 상단의 검색창은 애셋을 찾을 때 사용됩니다. 찾으려는 특정한 애셋 "
+"유형을 입력하거나, ``2D`` 와 같은 태그를 입력하여 검색할 수 있습니다."
 
 #: ../../docs/community/asset_store/using_asset_store_website.rst:26
 msgid ""
 "You can also click on any tag a project has to pull up a search of other "
 "assets with that tag."
 msgstr ""
+"또한 프로젝트에 표시된 태그를 클릭하여 같은 태그를 가진 다른 애셋을 검색할 "
+"수 있습니다."
 
 #: ../../docs/community/asset_store/using_asset_store_website.rst:36
 msgid ""
@@ -214041,72 +214019,65 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/asset_store/using_in_editor.rst:4
-#, fuzzy
 msgid "Using the Asset Store in the Engine"
-msgstr "스크립트가 엔진에서 동작하는 방식"
+msgstr "엔진에서 애셋 스토어 사용하기"
 
 #: ../../docs/community/asset_store/using_in_editor.rst:7
-#, fuzzy
 msgid "Accessing it"
-msgstr "멤버 변수 접근하기"
+msgstr "애셋 스토어 접근하기"
 
 #: ../../docs/community/asset_store/using_in_editor.rst:9
-#, fuzzy
 msgid ""
 "The Asset Store can be accessed from within Godot from the project manager."
-msgstr "프로젝트 관리자에서 프로젝트를 연 후 자주 또는 즉시 충돌이 발생합니다."
+msgstr "애셋 스토어는 Godot의 프로젝트 매니저에서 접근할 수 있습니다."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:13
-#, fuzzy
 msgid "As well as within the editor."
-msgstr "내장 테마 편집기."
+msgstr "마찬가지로 편집기 내에서도 접근할 수 있습니다."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:17
-#, fuzzy
 msgid ""
 "The Project Manager's :button:`Asset Store` tab will only display assets "
 "that are standalone projects. This is denoted on the Asset Store with the "
 "*Template* tag."
 msgstr ""
-"프로젝트 관리자의 **애셋 라이브러리 프로젝트** 탭에는 독립형 프로젝트인 애셋"
-"만 표시됩니다. 이는 *템플릿*, *데모* 및 *프로젝트* 카테고리가 있는 애셋 라이"
-"브러리에 표시됩니다."
+"프로젝트 관리자의 :button:`애셋 스토어` 탭에는 독립형 프로젝트인 애셋만 "
+"표시됩니다. 독립형 프로젝트 애셋은 애셋 스토어에서 *템플릿* 태그로 "
+"표시됩니다."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:20
-#, fuzzy
 msgid ""
 "The editor's :button:`Asset Store` tab will only display assets that are "
 "*not* standalone projects. In other words, it will display assets from all "
 "categories except *Templates*."
 msgstr ""
-"편집기의 **애셋라이브** 탭에는 독립형 프로젝트가 *아닌* 애셋만 표시됩니다. "
-"즉, *템플릿*, *데모*, *프로젝트*\\ 를 제외한 모든 카테고리의 애셋이 표시됩니"
-"다."
+"편집기의 :button:`애셋 스토어` 탭은 독립형 프로젝트가 *아닌* 애셋만 "
+"표시합니다. 다른 말로는, 편집기에서는 *템플릿* 카테고리를 제외한 모든 "
+"카테고리의 애셋들을 표시합니다."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:23
 msgid ""
 "If this is the first time you've ever needed the engine to access the "
 "internet, you'll need to click the :button:`Go Online` button."
 msgstr ""
+"엔진이 인터넷에 접속하도록 해야 하는 것이 처음이라면, :button:`Go Online` "
+"버튼을 클릭해야 합니다."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:29
-#, fuzzy
 msgid "Downloading and installing assets"
-msgstr "템플릿 위치시키기"
+msgstr "애셋 다운로드 및 설치"
 
 #: ../../docs/community/asset_store/using_in_editor.rst:31
-#, fuzzy
 msgid ""
 "Click on an asset, and Godot will fetch info about it from the Asset Store. "
 "Once it's finished, you will see a window similar to what the Asset Store "
 "website looks like, with some differences:"
 msgstr ""
-"그것을 클릭하면 Godot는 애셋라이브에서 애셋에 대한 정보를 가져올 것입니다. 완"
-"료되면 애셋라이브 웹사이트와 비슷한 창이 표시되지만 몇 가지 차이점이 있습니"
-"다."
+"애셋을 클릭하면 Godot는 애셋 스토어에서 애셋에 대한 정보를 가져올 것입니다. "
+"완료되면 애셋 스토어 웹사이트와 비슷한 창이 표시되지만, 몇 가지 차이점이 "
+"있습니다."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:37
-#, fuzzy
 msgid ""
 "Similarly to the web version of the Asset Store, here you can search for "
 "assets by category or name, and sort them by things such as name or edit "
@@ -214114,33 +214085,29 @@ msgid ""
 "real-time (you do not have to press :button:`Search` after every change to "
 "your search query for the changes to take effect)."
 msgstr ""
-"특히, 현재 실행 중인 Godot 버전의 애셋만 가져올 수 있습니다. 프로젝트, 데모 "
-"및 템플릿은 애셋라이브의 프로젝트 관리자 보기에서 다운로드할 수 있습니다. 애"
-"드온(툴, 스크립트, 머티리얼 등)은 프로젝트 내 애셋라이브에서 다운로드하여 현"
-"재 프로젝트에 추가할 수 있습니다. 또한 웹 프런트엔드를 사용할 때와 달리 검색 "
-"결과가 실시간으로 업데이트됩니다 (변경사항이 적용되도록 검색어가 변경될 때마"
-"다 검색을 누를 필요가 없습니다)."
+"웹 버전과 비슷하게, 여기서도 카테고리나 이름으로 애셋을 검색할 수 있고, "
+"수정한 날짜나 이름으로 정렬할 수 있습니다. 웹 프론트엔드에서 사용할 때와 "
+"다르게, 검색 결과는 실시간으로 업데이트 됩니다 (검색어를 바꿀 때마다 매번 "
+":button:`검색` 을 누를 필요가 없습니다.)."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:47
-#, fuzzy
 msgid ""
 "If you click on the :button:`Download` button, Godot will fetch an archive "
 "of the asset, and will track download progress of it at the bottom of the "
 "editor window. If the download fails, you can retry it using "
 "the :button:`Retry` button."
 msgstr ""
-"설치 버튼을 클릭하면 Godot는 애셋 아카이브를 가져오고 편집기 창 하단에서 다운"
-"로드 진행 상황을 추적합니다. 다운로드에 실패한 경우 재시도 버튼을 사용하여 다"
-"시 시도할 수 있습니다."
+":button:`다운로드` 버튼을 클릭하면 Godot가 애셋 압축 파일을 가져오며, 편집기 "
+"창 하단에 다운로드 진행 상황이 표시됩니다. 다운로드에 실패한 경우 "
+":button:`재시도` 버튼을 눌러 다시 시도할 수 있습니다."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:51
 msgid ""
 "When it finishes downloading, the Configure Asset window will open "
 "automatically."
-msgstr ""
+msgstr "다운로드가 완료되면 애셋 구성 창이 자동으로 열립니다."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:55
-#, fuzzy
 msgid ""
 "Here you can see a list of all the files that will be installed. If you "
 "click on the arrow on the top left, it will open a window where you can tick "
@@ -214148,25 +214115,23 @@ msgid ""
 "be installed will be shown in red, and hovering over them will show you a "
 "message stating why it cannot be installed."
 msgstr ""
-"여기에서 설치될 모든 파일 목록을 볼 수 있습니다. 설치하고 싶지 않은 파일을 선"
-"택하면 Godot는 설치할 수 없는 파일 관련 문제에 대해서도 알려줄 것입니다. 해"
-"당 파일은 빨간색으로 표시되며 해당 파일 위로 마우스를 가져가면 해당 파일을 설"
-"치할 수 없는 이유를 설명하는 메시지가 표시됩니다."
+"이곳에서 설치될 모든 파일 목록을 확인할 수 있습니다. 좌측 상단의 화살표를 "
+"클릭하면 창이 펼쳐지며, 설치하고 싶지 않은 파일의 선택을 해제할 수 있습니다. "
+"설치할 수 없는 파일은 빨간색으로 표시되며, 해당 파일 위에 마우스를 올리면 "
+"설치할 수 없는 이유를 설명하는 메시지가 표시됩니다."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:63
-#, fuzzy
 msgid ""
 "Once you are done, you can press the :button:`Install` button, which will "
 "unzip all the files in the archive, and import any assets contained in it, "
 "such as images or 3D models. Once this is done, you should see a message "
 "stating that the package installation is complete."
 msgstr ""
-"작업이 완료되면 설치 버튼을 눌러 아카이브에 있는 모든 파일의 압축을 풀고 이미"
-"지나 3D 모델과 같이 그 안에 포함된 모든 애셋을 가져올 수 있습니다. 이 작업이 "
-"완료되면 패키지 설치가 완료되었다는 메시지가 표시됩니다."
+"모든 설정이 완료되면 :button:`설치` 버튼을 눌러 아카이브에 있는 모든 파일의 "
+"압축을 풀고, 이미지나 3D 모델과 같이 그 안에 포함된 애셋을 가져옵니다. "
+"설치가 완료되면 패키지 설치가 완료되었다는 메시지가 표시됩니다."
 
 #: ../../docs/community/asset_store/using_in_editor.rst:70
-#, fuzzy
 msgid ""
 "You may also use the :button:`Import` button to import asset archives "
 "obtained elsewhere (such as downloading them directly from the Asset Store "
@@ -214174,8 +214139,8 @@ msgid ""
 "procedure as with the assets downloaded directly via Godot that we just "
 "covered."
 msgstr ""
-"또한 가져오기 버튼을 사용하여 다른 곳에서 얻은 애셋 아카이브를 가져올 수도 있"
-"습니다 (예: 애셋라이브 웹 프론트엔드에서 직접 다운로드). 그러면 방금 다룬 "
+"또한 :button:`가져오기` 버튼을 사용하면 다른 곳에서 구한 애셋 아카이브(애셋 "
+"스토어 웹사이트에서 직접 다운로드한 파일 등)를 가져올 수 있으며, 방금 살펴본 "
 "Godot를 통해 직접 다운로드한 애셋과 동일한 패키지 설치 절차를 거치게 됩니다."
 
 #: ../../docs/community/asset_store/submitting_to_asset_store.rst:4
@@ -214537,7 +214502,7 @@ msgstr ""
 
 #: ../../docs/community/asset_store/faq.rst:60
 msgid "Yes."
-msgstr ""
+msgstr "네."
 
 #: ../../docs/community/asset_store/faq.rst:63
 msgid ""
@@ -214739,9 +214704,8 @@ msgstr ""
 "github.com/godotengine/awesome-godot>`_"
 
 #: ../../docs/community/tutorials.rst:42
-#, fuzzy
 msgid "`Godot Asset Store <https://store.godotengine.org/>`_"
-msgstr "`Godot 애셋 라이브러리 <https://godotengine.org/asset-library/asset>`_"
+msgstr "`Godot 애셋 스토어 <https://store.godotengine.org>`_"
 
 #: ../../docs/community/tutorials.rst:43
 msgid ""

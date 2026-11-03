@@ -7,13 +7,14 @@
 # Младен Габић <cupakabra@protonmail.com>, 2020.
 # Црнобог <68vuletic@gmail.com>, 2024.
 # Myeongjin Lee <aranet100@gmail.com>, 2025.
+# david <dnbluelion2@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2026-08-20 11:36+0200\n"
-"PO-Revision-Date: 2025-04-23 07:52+0000\n"
-"Last-Translator: Myeongjin Lee <aranet100@gmail.com>\n"
+"PO-Revision-Date: 2026-09-04 16:51+0000\n"
+"Last-Translator: david <dnbluelion2@gmail.com>\n"
 "Language-Team: Serbian (Cyrillic script) <https://hosted.weblate.org/"
 "projects/godot-engine/godot-docs/sr_Cyrl/>\n"
 "Language: sr_Cyrl\n"
@@ -22,15 +23,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 2026.9.1.dev0\n"
 
 #: ../../docs/_templates/layout.html:58
 msgid "Previous"
-msgstr ""
+msgstr "Претходно"
 
 #: ../../docs/_templates/layout.html:61
 msgid "Next"
-msgstr ""
+msgstr "Следеће"
 
 #: ../../docs/_templates/versions.html:26
 #: ../../docs/tutorials/performance/cpu_optimization.rst:160
@@ -78,7 +79,7 @@ msgstr "Приручник"
 
 #: ../../docs/index.rst:206
 msgid "Engine details"
-msgstr ""
+msgstr "Језици"
 
 #: ../../docs/index.rst:220
 msgid "Community"
@@ -154,9 +155,10 @@ msgid ""
 "To begin reading the relevant documentation, select the tile that matches "
 "your profile:"
 msgstr ""
+"Да би Сте почели са читањем релевантне документације, изаберите поље које се "
+"подудара са вашим профилом:"
 
 #: ../../docs/index.rst:111
-#, fuzzy
 msgid ""
 "You can also use the table of contents in the sidebar to easily access any "
 "section of the documentation for your topic of interest. You can also use "
@@ -168,10 +170,9 @@ msgstr ""
 
 #: ../../docs/index.rst:116
 msgid "Get involved"
-msgstr "Укључи се"
+msgstr "Укључите се"
 
 #: ../../docs/index.rst:118
-#, fuzzy
 msgid ""
 "Godot Engine is an open source project developed by a community of "
 "volunteers. The documentation team can always use your feedback and help to "
@@ -179,11 +180,11 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
-"Годот Мотор је пројекат отвореног кода развијен од стране заједнице "
-"добровољаца. Тиму који ради на документацији је увек добродошла подршка и "
-"помоћ на побољшању туторијала и референци класа. Ако нешто не разумеш, или "
-"не можеш да пронађеш документацију која ти треба, помози нам да направимо "
-"бољу документацију тако што ћеш нас обавестити!"
+"Годот (енг. Godot Engine) је пројекат отвореног кода развијен од стране "
+"заједнице добровољаца. Тиму који ради на документацији је увек добродошла "
+"подршка и помоћ на побољшању туторијала и референци класа. Ако нешто не "
+"разумеш, или не можеш да пронађеш документацију која ти треба, помози нам да "
+"направимо бољу документацију тако што ћеш нас обавестити!"
 
 #: ../../docs/index.rst:124
 #, fuzzy
@@ -210,12 +211,10 @@ msgid "Translation status"
 msgstr "Статус превода"
 
 #: ../../docs/index.rst:132
-#, fuzzy
 msgid "Offline documentation"
-msgstr "Организација документације"
+msgstr "Офлајн документација"
 
 #: ../../docs/index.rst:134
-#, fuzzy
 msgid ""
 "To browse the documentation offline, you can download an HTML copy (updated "
 "every Monday): `stable <https://nightly.link/godotengine/godot-docs/"
@@ -226,13 +225,16 @@ msgid ""
 "html-3.6.zip>`__. Extract the ZIP archive then open the top-level "
 "``index.html`` in a web browser."
 msgstr ""
-"Такође можете да 'преузмете ХТМЛ цопy < https://nightly.link/godotengine/"
-"godot-docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip "
-">'__ за читање ван мреже (ажурирано сваког понедељка). Издвојите ЗИП архиву, "
-"а затим отворите \"index.html'' у Веб прегледачу."
+"Како бисте прегледали офлајн документацију, можете преузети HTML копију "
+"(која се ажурира сваког понедељка): `stable <https://nightly.link/"
+"godotengine/godot-docs/workflows/build_offline_docs/master/godot-docs-html-"
+"stable.zip>`__, `latest <https://nightly.link/godotengine/godot-docs/"
+"workflows/build_offline_docs/master/godot-docs-html-master.zip>`__, `3.6 "
+"<https://nightly.link/godotengine/godot-docs/workflows/build_offline_docs/"
+"master/godot-docs-html-3.6.zip>`__. Распакујте архиву, а затим отворите "
+"``index.html`` у веб претраживачу."
 
 #: ../../docs/index.rst:137
-#, fuzzy
 msgid ""
 "For mobile devices or e-readers, you can also download an ePub copy (updated "
 "every Monday): `stable <https://nightly.link/godotengine/godot-docs/"
@@ -243,14 +245,18 @@ msgid ""
 "epub-3.6.zip>`__. Extract the ZIP archive then open the ``GodotEngine.epub`` "
 "file in an e-book reader application."
 msgstr ""
-"Такође можете да 'преузмете ХТМЛ цопy < https://nightly.link/godotengine/"
-"godot-docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip "
-">'__ за читање ван мреже (ажурирано сваког понедељка). Издвојите ЗИП архиву, "
-"а затим отворите \"index.html'' у Веб прегледачу."
+"За мобилне уређаје или е-читаче, можете преузети и ePub копију (која се "
+"ажурира сваког понедељка): `stable <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-epub-stable.zip>`__, "
+"`latest <https://nightly.link/godotengine/godot-docs/workflows/"
+"build_offline_docs/master/godot-docs-epub-master.zip>`__, `3.6 <https://"
+"nightly.link/godotengine/godot-docs/workflows/build_offline_docs/master/"
+"godot-docs-epub-3.6.zip>`__. Распакујте архиву, а затим "
+"отворите``GodotEngine.epub`` дадотеку у апликацији за читање е-књига."
 
 #: ../../docs/404.rst:5
 msgid "Page not found"
-msgstr ""
+msgstr "Страница није пронађена"
 
 #: ../../docs/about/introduction.rst:6
 #: ../../docs/getting_started/introduction/index.rst:10
@@ -338,27 +344,24 @@ msgid "Introduction"
 msgstr "Увод"
 
 #: ../../docs/about/introduction.rst:21
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of **Godot Engine**, the free and open "
 "source community-driven 2D and 3D game engine! Behind this mouthful, you "
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"Добродошли у званичну документацију Годот Мотора, заједнице вођене слободним "
-"и отвореним извором 2Д и 3Д играчког мотора! Иза ове залогајчине, наићи ћеш "
-"на моћан алат пријатељски настројен ка кориснику који можеш користити да "
-"правиш све врсте игара, за било коју платформу и без икаквих ограничења "
-"употребе."
+"Добродошли у званичну документацију Годота, бесплатног погона за 2D и 3D "
+"видео игре! Иза овог дугог објашњења, наићи ћеш на моћан алат, али "
+"пријатељски настројен ка кориснику, који можеш користити да правиш све врсте "
+"игара, за било коју платформу и без икаквих ограничења употребе."
 
 #: ../../docs/about/introduction.rst:26
-#, fuzzy
 msgid ""
 "This page gives a broad overview of the engine and of this documentation, so "
 "that you know where to start if you are a beginner or where to look if you "
 "need information on a specific feature."
 msgstr ""
-"Ова страница даје опширну презентацију мотора и садржаја ове документације, "
+"Ова страница даје опширну презентацију погона и садржаја ове документације, "
 "тако да знате где почети ако сте почетник или где да потражити информације о "
 "специфичној функцији."
 
